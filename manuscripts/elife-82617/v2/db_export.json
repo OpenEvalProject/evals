@@ -1,0 +1,2083 @@
+{
+  "submission": {
+    "id": "299596e7-634e-4e43-9a80-2d5f8b835538",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T20:50:53.273220Z",
+    "updated_at": "2025-12-03T20:50:53.273220Z"
+  },
+  "content": [
+    {
+      "id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "submission_id": "299596e7-634e-4e43-9a80-2d5f8b835538",
+      "content_type": "manuscript",
+      "content_text": "# Mouse B2 SINE elements function as IFN-inducible enhancers\n\n## Authors\n\n- Isabella Horton<sup>1</sup>\n- Conor J Kelly<sup>1</sup> ([ORCID: 0000-0003-2410-7892](https://orcid.org/0000-0003-2410-7892))\n- Adam Dziulko<sup>1</sup>\n- David M Simpson<sup>1</sup>\n- Edward B Chuong<sup>1</sup> ([ORCID: 0000-0002-5392-937X](https://orcid.org/0000-0002-5392-937X)) \u2020\n\n### Affiliations\n\n1. Department of Molecular, Cellular, and Developmental Biology and BioFrontiers Institute, University of Colorado Boulder Boulder United States ([ROR:02ttsq026](https://ror.org/02ttsq026))\n\n\u2020 Corresponding author\n\n## Abstract\n\nRegulatory networks underlying innate immunity continually face selective pressures to adapt to new and evolving pathogens. Transposable elements (TEs) can affect immune gene expression as a source of inducible regulatory elements, but the significance of these elements in facilitating evolutionary diversification of innate immunity remains largely unexplored. Here, we investigated the mouse epigenomic response to type II interferon (IFN) signaling and discovered that elements from a subfamily of B2 SINE (B2_Mm2) contain STAT1 binding sites and function as IFN-inducible enhancers. CRISPR deletion experiments in mouse cells demonstrated that a B2_Mm2 element has been co-opted as an enhancer driving IFN-inducible expression of Dicer1. The rodent-specific B2 SINE family is highly abundant in the mouse genome and elements have been previously characterized to exhibit promoter, insulator, and non-coding RNA activity. Our work establishes a new role for B2 elements as inducible enhancer elements that influence mouse immunity, and exemplifies how lineage-specific TEs can facilitate evolutionary turnover and divergence of innate immune regulatory networks.\n\n## Introduction\n\nThe cellular innate immune response is the first line of defense against an infection and is initiated by the activation of transcriptional networks that include antiviral and pro-inflammatory genes. While innate immune signaling pathways are generally conserved across mammalian species, the specific transcriptional networks are increasingly recognized to show differences across lineages (Chuong et al., 2017; Shaw et al., 2017). These differences are widely attributed to independent evolutionary histories and continual selective pressures to adapt to new pathogens (Daugherty and Malik, 2012). Understanding how innate immune systems have evolved in different host genomes is critical for accurately characterizing and modeling responses that are related to autoimmunity or involved in disease susceptibility.\n\nTransposable elements (TEs) are increasingly recognized as a source of genetic elements that shape the evolution of mammalian innate immune responses (Chuong et al., 2017; Cordaux and Batzer, 2009). TE-derived sequences constitute roughly half of the genome content of most mammals, and are the predominant source of lineage-specific DNA. While most TE-derived sequences are degraded and presumed nonfunctional, TEs have occasionally been co-opted to function as genes or regulatory elements that benefit the host organism. In the context of host innate immunity, there are several reported examples of species-specific restriction factors that are encoded by TEs co-opted for host defense, including Friend Virus 1, Syncytin, Suppressyn, and Jaagsiekte sheep retrovirus (JSRV) (Arnaud et al., 2008; Aswad and Katzourakis, 2012; Frank et al., 2022; Lavialle et al., 2013). In many cases, TEs derived from ancient viral infections are poised for co-option since they already have the ability to bind to receptors, therefore blocking infection as a dominant negative mechanism (Frank and Feschotte, 2017).\n\nMore recently, TEs have also been identified as a source of non-coding regulatory elements that control inducible expression of cellular innate immunity genes (Buttler and Chuong, 2022). In the human genome, we previously showed that MER41 elements have been co-opted as enhancer elements to regulate multiple immune genes in human cells, including the AIM2 inflammasome genes (Chuong et al., 2016). Elements belonging to other transposon families, including LTR12, MER44, and THE1C, have also been co-opted to regulate inducible expression of immune genes (Bogdan et al., 2020; Donnard et al., 2018; Srinivasachar Badarinarayan et al., 2020). Notably, the majority of these families are primate-specific, supporting the co-option of TEs as a driver of primate-specific divergence of immune regulatory networks.\n\nA key open question is whether the co-option of TEs as immune regulatory elements is evolutionarily widespread as a mechanism driving divergence of innate immune responses. Most research in this area has focused on human cells and primate-specific TE families, but different mammalian species harbor highly distinct and lineage-specific repertoires of TEs in their genomes. Due to the independent origin of most of these TEs in different species, it remains unclear whether the co-option of TEs is a rare or common mechanism contributing to the evolution of immune gene regulatory networks.\n\nHere, we focused on the role of TEs in regulating murine innate immune responses. Mice are a commonly used model for human diseases but their immune system is appreciated to have significant differences. Transcriptomic studies have revealed that mouse and human immune transcriptomes show substantial divergence (Shaw et al., 2017; Shay et al., 2013), consistent with functional differences in inflammatory responses (Seok et al., 2013). The rodent and primate lineages diverged roughly 90 million years ago (Hedges et al., 2006; Mestas and Hughes, 2004) and 32% of the mouse genome consists of rodent-specific repeats (Waterston et al., 2002). Therefore, we sought to define the potential role of TEs in shaping lineage-specific features of the murine innate immune response.\n\nIn our study, we re-analyzed transcriptomic and epigenomic datasets profiling the type II interferon (IFN) response in primary mouse macrophage cells. We screened for TEs showing epigenetic signatures of inducible regulatory activity, and identified a rodent-specific B2 subfamily as a substantial source of IFN-inducible regulatory elements in the mouse genome. As a case example, we used CRISPR to characterize a B2-derived IFN-inducible enhancer that regulates mouse Dicer1. These findings uncover a novel cis-regulatory role for the SINE B2 element in shaping the evolution of mouse-specific IFN responses.\n\n## Results\n\n### Species-specific TEs shape the epigenomic response to type II IFN in mouse\n\nTo examine how TEs contribute to mouse type II IFN signaling regulation, we re-analyzed two independent transcriptomic and epigenomic datasets of primary bone-marrow-derived macrophages (BMDMs) that were stimulated with recombinant interferon gamma (IFNG) or untreated for 2 or 4 hr (Platanitis et al., 2019). These datasets included matched RNA-seq and ChIP-seq for STAT1 and H3K27ac. The STAT1 transcription factor mediates the type II IFN response (Platanias, 2005) by binding to enhancers and promoters containing the Gamma-IFN activation site (GAS) motif, and the H3K27ac modification is strongly associated with active enhancers (Creyghton et al., 2010). Using these datasets, we mapped both IFNG-inducible enhancers and IFNG-stimulated genes (ISGs).\n\nOur analysis of the RNA-seq data identified a total of 1,896 ISGs (FDR adjusted p-value <0.05, log2 fold change (log2FC)>1), which enriched for canonical genes associated with the IFNG response (GO:0034341, adjusted p-value = 9.394 \u00d7 10\u201335; Supplementary file 1). We predicted IFNG-inducible enhancers based on occupancy by the enhancer-associated histone mark H3K27ac and the transcription factor STAT1, which mediates type II IFN signaling. We identified 22,921 regions bound by STAT1 in IFNG-induced cells, 18,337 (80.0%) of which also resided within H3K27ac-enriched regions, indicating they are putative enhancers. Specificity of pulldown was confirmed by enrichment of canonical STAT1 binding motifs including the Gamma-IFN activation site (GAS; E-value=1.11 \u00d7 10\u2013746) and IFN-stimulated response element (ISRE; E-value=1.01 \u00d7 10\u2013442) motifs within the STAT1 ChIP-seq peaks (Supplementary file 2).\n\nUsing this set of STAT1 binding sites, we next asked what fraction of binding sites were derived from mouse TEs. Using the summits of the STAT1 ChIP-seq peaks, we found that 26.6% resided within TEs, 71.1% of which contain significant matches (p-value <1 \u00d7 10\u20134) to either ISRE or GAS motifs (Supplementary file 3). These TEs likely represent direct binding sites of STAT1 with potential regulatory activity. We next asked whether any TE families were overrepresented within the set of predicted IFNG-inducible binding sites, using GIGGLE colocalization analysis (Layer et al., 2018). We identified three subfamilies enriched for STAT1 binding sites, including the rodent-specific B2_Mm2 subfamily (p-value = 7.18 \u00d7 10\u2013201) as well as the RLTR30B_MM (p-value = 9.61 \u00d7 10\u201377) and RLTR30E_MM (p-value = 7.32 \u00d7 10\u201331) endogenous retrovirus subfamilies (Figure 1A, Supplementary file 4). This indicates that the expansion of rodent-specific TE families has shaped the innate immune regulatory landscape in mouse.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/82617/elife-82617-fig1-v2.jpg)\n\n**Figure 1.:** (A) Bubble plot showing family-level enrichment of transposons within ChIP-seq peak regions. TE families enriched for STAT1 and H3K27ac ChIP-seq peaks are sorted by descending median Kimura distance. GIGGLE enrichment score is a composite of the product of both -log10(p-value) and log2(odds ratio). (B) Frequency histogram of absolute distances from STAT1-bound B2_Mm2 (blue, n=2,122), randomly shuffled B2_Mm2 (black, n=2,122), and randomly subset unbound B2_Mm2 (green, n=2,122), B2_Mm1a (red, n=2,122), and B2_Mm1t (yellow, n=2,122) elements to the nearest ISG (n=750), IRG (n=750), or nonresponsive gene (n=750). Data shown for (Piccolo et al., 2017) comparing expression in BMDMs stimulated with IFNG for 4 hr relative to untreated. (C) DESeq2 normalized counts showing immune-stimulated expression of unbound B2_Mm2 (top, n=78,419) and STAT1-bound B2_Mm2 (bottom, n=2122) elements in murine BMDMs. Data shown for untreated (n=2) BMDMs and BMDMs stimulated with IFNG for 2 hr (n=3) or 4 hr (n=3). Treatments are indicated by color. ***DESeq2 FDR adjusted p-value <0.0001. Error bars designate SEM. Data shown for (Piccolo et al., 2017). ISG: Interferon-stimulated gene; IRG: Interferon-repressed gene. BMDMs: Bone marrow derived macrophages. SEM: Standard error of mean.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82617/elife-82617-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Frequency histogram of absolute distances from size-normalized sets of B2 elements to the nearest ISG (n=750), IRG (n=750), or nonresponsive gene (n=750). STAT1-bound B2_Mm2 (blue, n=2,122), randomly shuffled B2_Mm2 (black, n=2,122), and randomly subset unbound B2_Mm2 (green, n=2122), B2_Mm1a (red, n=2,122), and B2_Mm1t (yellow, n=2,122) elements. Data shown for Piccolo et al., 2017 where bone-marrow-derived macrophages were stimulated with IFNG for 2 hr. (B) Same as in (A) but for a subset of B2 elements (n=838) marked by STAT1. Data shown for Platanitis et al., 2019 where macrophages were stimulated with IFNG for 2 hr. ISG: Interferon Stimulated Gene.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/82617/elife-82617-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) MA plot visualizing immune-stimulated changes in TE family-level expression according to DESeq2-normalized RNA-seq data from murine BMDMs stimulated with IFNG for 4 hr. Unbound B2_Mm2 (n=78,419) and STAT1-bound B2_Mm2 (n=2,122, defined through Piccolo et al., 2017 IFNG 2 hr ChIP-seq) are designated separately. Significantly downregulated (log2FC <\u20130.50, FDR <0.05) families are shown in red while significantly upregulated (log2FC >0.50, FDR <0.05) families are shown in blue. (B) Same as in (A) but using RNA-seq from BMDMs stimulated with IFNG for 2 hr. (C) MA plot (left) and DESeq2 normalized counts (right) visualizing immune-stimulated changes in TE family-level expression according to RNA-seq from murine BMDMs stimulated with IFNG for 2 hr. Unbound B2_Mm2 (n=79,703) and STAT1-bound B2_Mm2 (n=838, defined through Platanitis et al., 2019 IFNG 1.5 hr ChIP-seq) are designated separately. Individual points are colored as in (A). DESeq2-normalized counts shown for untreated (n=2) BMDMs and BMDMs stimulated with IFNG for 2 hr (n=3). Error bars designate SEM. BMDM: Bone-marrow-derived macrophage.\n\nWe previously identified enrichment of RLTR30 elements within STAT1-binding sites in IFNG and IFNB-stimulated mouse macrophages based on analysis of a different ChIP-seq dataset (Chuong et al., 2016; Ng et al., 2011). However, our previous analysis did not capture enrichment of B2_Mm2, likely because the dataset was generated using 36 bp short reads. In contrast, the more recent datasets analyzed here used 50 bp reads (Platanitis et al., 2019), which improves mappability to individual copies of evolutionarily young TE families such as B2_Mm2 (Sundaram et al., 2014).\n\n### B2_Mm2 elements contain STAT1 binding sites and show inducible enhancer activity\n\nB2_Mm2 is a murine-specific subfamily of the B2 short interspersed nuclear element (SINE) family, which is highly abundant in the mouse genome. B2 SINE elements are divided into three subfamilies, including B2_Mm2 (80,541 copies), B2_Mm1a (16,321 copies), and B2_Mm1t (35,812 copies). B2 SINE elements have been characterized to show a wide range of regulatory activities in mice, including acting as promoters (Ferrigno et al., 2001), insulator elements bound by CTCF (Ichiyanagi et al., 2021; Lunyak et al., 2007; Schmidt et al., 2012), or regulatory non-coding RNAs (Hernandez et al., 2020; Karijolich et al., 2017; Karijolich et al., 2015; Schaller et al., 2020; Yakovchuk et al., 2009). As the potential for B2_Mm2 SINEs to act as inducible enhancers has not yet been investigated, we decided to further investigate B2 SINEs in this context.\n\nThe B2_Mm2 subfamily showed strong evidence of enrichment within regions bound by STAT1, providing 2,122 total binding sites (odds ratio = 4.85). These B2_Mm2 elements show significantly higher localization near ISGs (p-value = 5.03 \u00d7 10\u201352, odds ratio = 9.13) than interferon-repressed genes (IRGs) or nonresponsive genes, compared to unbound B2 elements or random genomic regions (Figure 1B, Figure 1\u2014figure supplement 1A\u2013B). We did not observe consistent enrichment of the B2_Mm1a and B2_Mm1t subfamilies over STAT1-bound regions (Supplementary file 4). Additionally, STAT1-bound B2_Mm2 elements are transcriptionally upregulated at the family level in response to IFNG stimulation (Figure 1C, Figure 1\u2014figure supplement 2, Supplementary file 5). Although unbound B2_Mm2 elements are also transcriptionally active, we did not observe a significant increase in expression in response to IFNG stimulation. Taken together, these data indicate that thousands of B2_Mm2 elements show epigenetic and transcriptional evidence of IFNG-inducible regulatory activity in primary murine bone marrow derived macrophages.\n\nWe investigated the sequence features of each B2 SINE subfamily to determine the basis of IFNG-inducible activity. Given that B2 SINE elements have previously been associated with CTCF binding due to the presence of a CTCF motif harbored by most copies (Schmidt et al., 2012), we subdivided elements from each family based on occupancy by STAT1, CTCF, both factors, or neither factor based on ChIP-seq. Across each of these subsets, we looked for the presence of GAS or CTCF motifs (Figure 2A, Figure 2\u2014figure supplement 1). As expected, all B2 subfamilies showed extensive ChIP-seq binding evidence of CTCF and the RAD21 cohesin subunit, coinciding with a CTCF motif (Figure 2\u2014figure supplement 1). In contrast, only a subset of elements from the B2_Mm2 subfamily showed inducible binding of STAT1 (Figure 2A). Consistent with ChIP-seq evidence, STAT1-bound B2_Mm2 elements contain both GAS and CTCF motifs, while B2_Mm1a/t elements only harbor CTCF motifs (Figure 2B, Figure 2\u2014figure supplement 2). Within B2_Mm2, elements that are bound by STAT1 are significantly enriched for GAS motifs when compared against unbound elements (E-value 2.08\u00d710\u201371, Supplementary file 6). In addition, STAT1-bound B2_Mm2 elements contain stronger sequence matches to GAS motifs compared to unbound B2_Mm2 elements and B2_Mm1a/t elements (Figure 2A, Figure 2\u2014figure supplement 3). While B1_Mm1a elements show a partial match to the GAS motif, they show no evidence of STAT1 binding (Figure 2B, Figure 2\u2014figure supplement 2). Therefore, elements of the B2_Mm2 subfamily are uniquely characterized by containing strong matches to GAS motifs that are associated with STAT1 binding activity.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/82617/elife-82617-fig2-v2.jpg)\n\n**Figure 2.:** (A) Heatmaps showing CPM-normalized ChIP-seq signal and motif signal centered over B2_Mm2 elements bound only by STAT1 (n=1,203); B2_Mm2 bound by both STAT1 and CTCF (n=893); B2_Mm2 bound only by CTCF (n=4,143); and a random subset of unbound B2_Mm2 (n=1,000). Regions are sorted by descending mean CPM signal. Signal intensity is indicated below. CTCF track derived from Gualdrini et al., 2022. RAD21 track derived from Cuartero et al., 2018. (B) Schematic of GAS (blue) and CTCF (green) motifs present within extant B2_Mm2 (left, n=80,541), B2_Mm1a (middle, n=16,321), and B2_Mm1t (right, n=35,812) sequences. Heatmap intensity corresponds to motif matches based on the log likelihood ratio. Heatmaps are sorted by descending mean signal. Position weight matrices were obtained from JASPAR (Fornes et al., 2020). CPM: Counts per million. GAS: Gamma-IFN activated sequence.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82617/elife-82617-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Heatmaps showing CPM-normalized ChIP-seq signal over B2_Mm2 (n=79,073), B2_Mm1a (n=16,223), and B2_Mm1t elements (n=35,428) over a 4 kb window. Elements without overlapping ChIP-seq signal were excluded. Regions are sorted by descending mean CPM signal. Signal intensity is indicated to the right. STAT1 tracks derived from Piccolo et al., 2017. CTCF track derived from Gualdrini et al., 2022. CPM: Counts per million.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/82617/elife-82617-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Multiple sequence alignment of consensus sequences for B2_Mm2, B2_Mm1a, and B2_Mm1t as well as the sequence for a B2_Mm2 element intronic to Dicer1. Predicted GAS and CTCF motifs (FIMO p-value <1 \u00d7 10\u20134) are indicated above. Base changes relative to the motif consensus corresponding to poorly weighted positions in the motif position weight matrix are highlighted in green. Base changes in positions that are canonically important for transcription factor binding and weighted heavily in the position weight matrix are highlighted in red. GAS: Gamma-interferon activated site motif.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/82617/elife-82617-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Box-and-whisker plot visualizing the distribution of FIMO p-values for GAS motifs overlapping B2 elements. B2 elements were classified as follows: STAT1-bound B2_Mm2 (n=2,122, blue); B2_Mm2 not bound by CTCF nor STAT1 (n=5,000, green); B2_Mm2 bound by CTCF but not STAT1 (n=4,205, yellow); unbound B2_Mm1a (n=5,000, red); and unbound B2_Mm1t (n=5,000, orange). Each dot represents the p-value for the most significant predicted GAS motif overlapping one B2 element. The median, lower quartile, and upper quartile are as indicated. GAS: Gamma-IFN activated site motif.\n\nNotably, we found that STAT1-bound B2_Mm2 elements are the only B2 elements that show an inducible H3K27ac signal associated with enhancer activity. In contrast, B2_Mm2 elements bound only by CTCF or unbound elements show minimal H3K27ac signal (Figure 2A). B2_Mm1a/t elements also show minimal STAT1 signal regardless of CTCF binding (Figure 2\u2014figure supplement 2). This suggests that the binding of STAT1 to B2_Mm2 elements causes activation of enhancer activity including acetylation of H3K27. Thus, B2_Mm2 elements represent a distinct subclass of B2 SINE elements that exhibit IFNG-inducible enhancer activity.\n\n### An intronic B2_Mm2 element functions as an inducible enhancer of Dicer1\n\nHaving established that B2_Mm2 elements are an abundant source of IFNG-inducible STAT1 binding sites in the mouse genome, we asked whether any of these elements have been co-opted to regulate expression of individual ISGs. We first assigned predicted enhancers to their predicted targets using the Activity by Contact (ABC) model (Fulco et al., 2019), which incorporates both epigenomic signal and Hi-C 3D interaction data to predict enhancer-gene targets. As input into the ABC model, we used publicly available ATAC-seq and Hi-C data from murine BMDMs stimulated with IFNG for 2 hours (Platanitis et al., 2022) and H3K27ac ChIP-seq and RNA-seq data (Piccolo et al., 2017). Focusing on a permissive set of 2,720 ISGs (FDR adjusted p-value <0.05, log2FC >0), we identified 530 B2_Mm2 elements predicted to interact with 457 mouse ISGs (16.8% of the set of 2720 in this analysis; Supplementary file 7). Compared with a set of human ISGs from human CD14+ monocytes (Qiao et al., 2016), 393 of these 457 (86%) genes were only ISGs in mouse, and the remaining 64 (14%) were ISGs in both mouse and human.\n\nThe 393 mouse-specific ISGs predicted to be regulated by B2_Mm2 elements were significantly enriched for multiple immune related functions (GO:0002376, adjusted p-value = 6.023 \u00d7 10\u20139; Supplementary file 7). We identified multiple examples of predicted B2_Mm2 target genes with established immune functions that showed mouse-specific IFNG-inducible expression (Figure 3\u2014figure supplement 1, Figure 3\u2014figure supplement 2), including dicer 1 ribonuclease III (Dicer1) (Poirier et al., 2021; Figure 3A), SET domain containing 6, protein lysine methyltransferase (SETD6) (Levy et al., 2011), DOT1-like histone lysine methyltransferase (Kealy et al., 2020), fumarate hydratase 1 (Fh1) (Zecchini et al., 2023), heat shock protein family A (Hsp70) member 1B (Hspa1b) (Jolesch et al., 2012), and NFKB inhibitor delta (Nfkbid) (Souza et al., 2021).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/82617/elife-82617-fig3-v2.jpg)\n\n**Figure 3.:** (A) DESeq2 normalized counts showing immune-stimulated expression of Dicer1 in primary murine BMDMs. Data shown for untreated (n=3) BMDMs and BMDMs stimulated with IFNG for 2 hr (n=3) or 4 hr (n=3). ***DESeq2 FDR adjusted p-value <0.001, *DESeq2 FDR adjusted p-value <0.05. Error bars designate SEM. (B) Genome browser screenshot (http://genome.ucsc.edu) of the Dicer1 locus (Chr12:104,681,897\u2013104,757,421) showing CPM-normalized ChIP-seq tracks for primary murine BMDMs and immortalized macrophage line J774A.1. B2_Mm2.Dicer1 (Chr12:104,742,467\u2013104,742,646) is highlighted in gray. Values on the right of each track correspond to signal maxima. Bottom inset shows B2_Mm2.Dicer1 with accompanying STAT1 (IFNG 2 h Piccolo et al.) ChIP-seq signal and conservation tracks for rat, rabbit, human, cow, and dog. CTCF track derived from Gualdrini et al., 2022. RAD21 track derived from Cuartero et al., 2018. (C) RT-qPCR of wild type untreated (gray, n=3) J774A.1 cells and J774A.1 cells stimulated with IFNG (blue, n=3), IFNA (green, n=3), IL-2 (orange, n=3), IL-4 (light blue, n=3), or IL-15 (purple, n=3) for 4 hr. Treatments are indicated by color. *p-value <0.05, Student\u2019s paired two-tailed t-test. BMDM: Bone-marrow-derived macrophage. SEM: Standard error of mean. CPM: Counts per million.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82617/elife-82617-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Genome browser screenshot (left) of mouse Setd6 (Chr8:95,715,198\u201395,724,097) visualizing H3K27ac and STAT1 (Piccolo et al., 2017), CTCF (Gualdrini et al., 2022), and RAD21 (Cuartero et al., 2018) ChIP-seq signal from murine BMDM cells that were either untreated or stimulated with IFNG for 2 hr or 4 hr. B2_Mm2 elements that are bound by STAT1 in IFNG-stimulated BMDM cells and predicted by the Activity-by-Contact model to interact with Setd6 are highlighted in gray. Values on the right of each track correspond to signal maxima. DESeq2 normalized counts (right) showing immune-stimulated expression of Setd6 in primary murine BMDMs that were unstimulated (n=3) or stimulated with IFNG for 2 hr (n=3) or 4 hr (n=3) and the human ortholog, SETD6, in primary human CD14+ monocytes that were unstimulated (n=2) or stimulated with IFNG for 24 hr (n=2). (B) and (C) same as in (A) but visualizing data for mouse Dot1l and Fh1 relative to human orthologs DOT1L and FH. ***DESeq2 FDR adjusted p-value <0.001. Error bars designate SEM. BMDM: Bone-marrow-derived macrophage. ISG: Interferon Stimulated Gene. CPM: Counts per million.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/82617/elife-82617-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Genome browser screenshot (left) of mouse Hspa1b (Chr17:34,941,594\u201334,964,393) visualizing H3K27ac and STAT1 (Piccolo et al., 2017), CTCF (Gualdrini et al., 2022), and RAD21 (Cuartero et al., 2018) ChIP-seq signal from murine BMDM cells that were either untreated or stimulated with IFNG for 2 hr or 4 hr. B2_Mm2 elements that are bound by STAT1 in IFNG-stimulated BMDM cells and predicted by the Activity-by-Contact model to interact with Hspa1b are highlighted in gray. Values on the right of each track correspond to signal maxima. DESeq2 normalized counts (right) showing immune-stimulated expression of Hspa1b in primary murine BMDMs that were unstimulated (n=3) or stimulated with IFNG for 2 hr (n=3) or 4 hr (n=3) and the human ortholog, HSPA1B, in primary human CD14+ monocytes that were unstimulated (n=2) or stimulated with IFNG for 24 hr (n=2). (B) same as in (A) but visualizing data for mouse Nfkbid relative to human ortholog NFKBID. ***DESeq2 FDR adjusted p-value <0.001, *DESeq2 FDR adjusted p-value <0.05. Error bars designate SEM. BMDM: Bone-marrow-derived macrophage. ISG: Interferon Stimulated Gene. CPM: Counts per million.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/82617/elife-82617-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Genome browser shot of the human DICER1 locus (Chr14:95,036,228\u201395,208,010) visualizing CPM-normalized RNA-seq (Qiao et al., 2016) and STAT1 ChIP-seq (Qiao et al., 2013) data from human CD14+ monocytes stimulated with IFNG for 24 hr. Bottom inset (Chr14:95,145,845\u201395,147,033) shows intronic LTR27C element with accompanying STAT1 ChIP-seq signal and conservation tracks for chimp, rhesus, marmoset, bushbaby, mouse, cow, and dog. Values on the right of each track correspond to signal maxima. CPM: Counts per million.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/82617/elife-82617-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** (A) Schematic showing design of guide RNAs (gRNAs) flanking the B2_Mm2.Dicer1 element. (B) PCR validation of CRISPR/Cas9-mediated knockout of B2_Mm2.Dicer1 in bulk J774A.1 cells. HPRT- serves as a control with an expected WT band at 627 bp. Successful KO is shown as indicated by the expected gEC005xgEC007 amplicon at 127 bp. (C) Genome browser track showing Sanger sequencing results from the bulk cell population aligned using BLAT (Kent, 2002). Sequencing of different E. coli clones derived from the same bulk cell population reflects presence of two distinct KO alleles. Positions of gRNAs and PCR primers are indicated in red and blue, respectively. (D, E) PCR validation of B2_Mm2.Dicer1 KO in clonal J774A.1 cells using two distinct primer sets external to B2_Mm2.Dicer1. (F) Same as in (D) and (E) but using a pair of internal and external primers.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/82617/elife-82617-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** (A) Genome browser shot showing Sanger sequencing validation from WT and KO1 J774A.1 cells aligned using BLAT (Kent, 2002). (B) Scatter plot showing changes in gene expression within a 5 Mb window of B2_Mm2.Dicer1 in untreated KO #1 cells relative to pooled WT cells. (C) As in (B) but with untreated KO #2 cells relative to pooled WT cells. (D) As in (B) but with IFNG-treated KO #1 cells relative to pooled WT cells. (E) As in (B) but with IFNG-treated KO #2 cells relative to pooled WT cells. (D) Significantly downregulated (log2FC <0, FDR <0.05) genes are shown in red, and significantly upregulated (log2FC >0, FDR <0.05) genes are shown in blue. B2_Mm2.Dicer1 is represented as a black box (not drawn to scale). UT: Untreated. KO: Knockout.\n\nFrom this set, we decided to focus on a specific B2_Mm2 element located on Chromosome 12 within the first intron of Dicer1, which is an endonuclease responsible for recognizing and cleaving foreign and double stranded RNA that has been linked to innate immunity (Chiappinelli et al., 2012; Gurung et al., 2021; MacKay et al., 2014; Poirier et al., 2021). While the human ortholog DICER1 does not show IFNG-inducible expression in human primary macrophages (Qiao et al., 2016; Figure 3\u2014figure supplement 3, Supplementary file 1), mouse Dicer1 shows a significant 50% upregulation in response to IFNG in primary mouse BMDMs (Figure 3A). This indicates that Dicer1 is a mouse-specific ISG and likely acquired IFNG-inducible expression in the mouse lineage, potentially due to the co-option of the B2_Mm2 element as a species-specific IFNG-inducible enhancer. The intronic B2_Mm2 element (B2_Mm2.Dicer1) shows biochemical hallmarks of enhancer activity including inducible STAT1 and H3K27ac signal as well as constitutive binding by CTCF and RAD21 (Figure 3B). The element provides the only prominent nearby STAT1 binding site and is not present in rat or other mammals (Figure 3B). Therefore, we hypothesized that the B2_Mm2.Dicer1 element was co-opted as an IFNG-inducible enhancer of mouse Dicer1.\n\nTo experimentally test the potential enhancer activity of B2_Mm2.Dicer1, we used the mouse J774A.1 macrophage-like cell line, a commonly used model of murine immunity (Lam et al., 2009; Ralph and Nakoinz, 1975). We first confirmed using RT-qPCR that Dicer1 shows 30\u201340% upregulation after 4 hr of IFNG treatment (Figure 3C). Given the STAT1 binding site and motif present in B2_Mm2.Dicer1, we also tested other cytokines that act through STAT-family transcription factors. We found that 4 hr treatment of J774A.1 cells with IFNA, IL6, and IL4 all induced Dicer1 expression to similar levels (30\u201340%), consistent with inducible regulation of Dicer1 by JAK-STAT signaling, potentially through the STAT binding site present in B2_Mm2.Dicer1.\n\nWe next used CRISPR to generate clonal J774A.1 lines harboring homozygous deletions of the B2_Mm2.Dicer1 element. We delivered guide RNAs targeting the flanking boundaries of B2_Mm2.Dicer1 along with recombinant Cas9 by electroporation (Figure 3\u2014figure supplement 4A\u2013C), isolated clones by limiting dilution, and screened clonal lines for homozygous deletions by PCR (Figure 3\u2014figure supplement 4D\u2013F). We isolated two clonal cell lines with a homozygous knockout of B2_Mm2.Dicer1, along with multiple wild-type (WT) J774A.1 clonal lines that were not electroporated to control for potential effects of clonal expansion (Figure 3\u2014figure supplement 4F). We used RT-qPCR to compare Dicer1 expression levels and inducibility by IFNG in knockout and WT clones. WT clones showed consistent inducible expression, while both knockout clonal lines showed a complete lack of inducible expression (Figure 4A). These experiments demonstrate that B2_Mm2.Dicer1 acts as an IFNG-inducible enhancer of Dicer1 in J774A.1 cells.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/82617/elife-82617-fig4-v2.jpg)\n\n**Figure 4.:** (A) RT-qPCR of Dicer1 expression in untreated and IFNG-treated cell lines across 3 clonal WT lines J774A.1 cells and 2 B2_Mm2.Dicer1 knockout (KO) lines, with three replicate treatments per cell line. Dicer1 expression was normalized relative to CTCF. Treatments are indicated by color. *p-value <0.05, **p-value <0.01, ***p-value <0.001, Student\u2019s paired two-tailed t-test. (B) DESeq2 normalized counts of Dicer1 expression in each clonal WT and B2_Mm2.Dicer1 KO J774A.1 cell line. Treatments are indicated by color. ***DESeq2 FDR adjusted p-value <0.001. (C) Distance plot visualizing changes in gene expression in wild type J774A.1 cells in response to IFNG over a 5 Mb window centered on B2_Mm2.Dicer1. Significantly downregulated (log2FC <0, FDR adjusted p-value <0.05) genes are shown in red while significantly upregulated (log2FC >0, FDR adjusted p-value <0.05) genes are shown in blue. Dicer1 is labeled, as well as significantly IFNG-regulated genes within 1 Mb. (D) Same as in (C) but visualizing changes in gene expression in KO J774A.1 cells in response to IFNG.\n\n### B2_Mm2.Dicer1 impact on the genomic regulatory landscape\n\nWe used RNA-seq to study the genome-wide effects of the B2_Mm2.Dicer1 element in both knockout clones and three control wild-type clones which were also isolated by limiting dilution. Consistent with the RT-qPCR results, we found that Dicer1 showed significant IFNG-inducible upregulation in all WT clones but that this induction was completely ablated in B2_Mm2.Dicer1 KO clones (Figure 4B). Notably, the RNA-seq normalized count data revealed that expression of Dicer1 were also significantly reduced in untreated KO cells (log2FC = \u20130.43, FDR-adjusted p-value = 9.246 \u00d7 10\u20134) (Figures 4B and 5A, Figure 3\u2014figure supplement 5B\u2013C). Focusing on the IFNG-treated condition, Dicer1 was significantly downregulated in KO cells compared to WT cells (log2FC = \u20130.80, FDR-adjusted p-value = 3.393 \u00d7 10\u201315). The deletion of the element did not affect inducibility of other ISGs in the 5 Mb locus including the nearby highly induced SerpinA3 ISGs locus (Figure 4C\u2013D). This indicates that the B2_Mm2.Dicer1 element specifically regulates both basal expression levels of Dicer1 and inducible expression by IFNG. While the enhancer deletion on Dicer1 expression levels had a modest downregulating effect, this effect was specific and consistent across individually edited clones, particularly under IFNG-stimulated conditions (Figure 4C\u2013D, Figure 3\u2014figure supplement 5D\u2013E).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/82617/elife-82617-fig5-v2.jpg)\n\n**Figure 5.:** (A) Genome browser screenshot of the Dicer1 locus visualizing CPM-normalized expression in WT and B2_Mm2.Dicer1 KO J774A.1 cells. Values on the right of each track correspond to signal maxima. B2_Mm2.Dicer1 is represented as a black box (not drawn to scale). (B) Genome browser screenshot of the Dicer1 locus showing CUT&TAG data from bulk WT and B2_Mm2.Dicer1 KO J774A.1 cells. CPM: Counts per million.\n\nGenome-wide, there were 101 genes that showed greater significance than Dicer1 when testing for differential expression between IFNG-treated KO and WT cells (out of 3,567 genes with FDR-adjusted p-value <0.05; Supplementary file 8). Out of these 101 genes, 24 showed higher variability than Dicer1 (based on DESeq2 log2FC standard error) between individual clones (Figure 3\u2014figure supplement 5B\u2013E), consistent with intrinsic clonal transcriptional variation revealed by the limiting dilution and/or CRISPR editing process (Nahmad et al., 2022; Westermann et al., 2022). Thirty-five of these genes showed upregulation in the KO cells, suggesting that they could be silencing targets of Dicer1 that become upregulated upon Dicer1 downregulation. However, given the relatively modest effect of Dicer1 especially in the untreated condition, further experiments would be necessary to establish these genes as targets of Dicer1.\n\nWe confirmed the absence of intronic enhancer activity in B2_Mm2.Dicer1 knockout cells. We used CUT&TAG (Kaya-Okur et al., 2020) to profile H3K27ac, phosphorylated RNA polymerase II subunit A (POLR2A), and STAT1. In IFNG-stimulated WT cells, the B2_Mm2.Dicer1 element shows prominent H3K27ac, STAT1, and POLR2A signal. However, these signals are completely lost in the knockout clone (Figure 5B). Collectively, these experiments confirm that B2_Mm2.Dicer1 has been co-opted to function as an IFNG-inducible enhancer that regulates Dicer1.\n\nGiven the B2_Mm2.Dicer1 element is bound by POLR2A in WT cells, we asked whether the B2_Mm2.Dicer1 element may alter transcription by affecting usage of different splice sites or polyadenylation sites, which would be consistent with pause site activity (Jonkers and Lis, 2015). We examined transcript isoform-level expression changes in KO cells in both untreated and treated conditions and found multiple transcripts that showed the same trend as the gene-level analysis, where most expressed transcripts are downregulated in both basal and IFNG-treated conditions and show lack of inducibility in KO cells (Supplementary file 9). These findings are consistent with the element acting primarily as an IFNG-inducible enhancer without any major effect on alternative splicing. However, further experiments such as CDK9 inhibition and profiling of nascent transcription in stimulated conditions (Gressel et al., 2017; Laitem et al., 2015) are necessary to establish whether the element affects transcriptional elongation.\n\nConsidering that the B2_Mm2 enhancer is specific to rodents, we examined the regulatory landscape of the human DICER1 locus. Our analysis of RNA-seq data from human primary monocytes treated with IFNG for 24 hr (Qiao et al., 2016) indicated that human DICER1 expression is not induced by IFNG (Supplementary file 1, Figure 3\u2014figure supplement 3). However, ChIP-seq data from IFN-treated monocytes from the same group (Qiao et al., 2013) showed multiple inducible STAT1 binding sites within the human DICER1 locus, including one originating from a primate-specific TE (LTR27) (Figure 3\u2014figure supplement 3). Although these binding sites do not correlate with inducible DICER1 expression in the matched RNA-seq dataset, they suggest human DICER1 may be inducible under different conditions. An analysis of an independent dataset generated from another donor (McCann et al., 2022) supported the inducible expression of DICER1 (log2FC = 0.91 and FDR adjusted P-value = 3.0 \u00d7 10\u20134; Supplementary file 1). Thus, while the evidence for inducible human DICER1 expression is inconsistent, our analyses indicate that human DICER1 has independently evolved primate-specific binding STAT1 binding sites, which may also confer inducible regulation.\n\n## Discussion\n\nB2 SINE elements are abundant in the mouse genome and they have been widely studied due to their substantial influence on genome regulation and evolution. B2 elements have contributed non-coding RNAs inducible by stress or infection (Allen et al., 2004; Karijolich et al., 2017; Karijolich et al., 2015; Li et al., 1999; Schaller et al., 2020; Walters et al., 2009; Wick et al., 2003; Williams et al., 2004), splicing signals (Kress et al., 1984), promoter elements (Ferrigno et al., 2001), and CTCF-bound insulator elements (Ichiyanagi et al., 2021; Lunyak et al., 2007; Schmidt et al., 2012). Our study reveals a new subclass of B2 elements that have IFNG-inducible enhancer activity. These elements, which belong to the B2_Mm2 subfamily, contain strong binding sites for both STAT1 and CTCF, are marked by H3K27ac, and have the potential to exert inducible enhancer activity on nearby genes.\n\nGiven the abundance of B2 elements and their potential to cause pathological regulatory rewiring, many B2 elements are targeted for SETDB1/H3K9me3-mediated epigenetic repression which inhibits their regulatory potential (Gualdrini et al., 2022). Therefore, the functional impact of B2 elements on the mouse epigenome remains unclear. By using CRISPR to generate knockout cells of a B2_Mm2 element, we demonstrated that B2 elements can be co-opted to act as inducible enhancer elements in the context of IFNG stimulation. While our experiments were conducted in the J774.A1 immortalized cell line, we confirmed that thousands of B2_Mm2 elements including B2_Mm2.Dicer1 show strong transcriptional and epigenetic signatures of inducible enhancer activity in multiple primary macrophage epigenomic datasets.\n\nWe identified hundreds of B2_Mm2-derived enhancers that are predicted to regulate genes displaying IFNG-inducible expression in mouse cells but not human cells, which supports their role in facilitating lineage-specific evolution of the IFNG-inducible regulatory network. However, we also identified a subset of target genes that show inducible expression in both species, suggesting independent evolution or turnover of regulatory elements that could serve similar regulatory functions as the B2_Mm2 enhancers. For instance, we identified an intronic STAT1 binding site derived from a primate-specific TE in the human DICER1 locus. While we did not uncover consistent evidence supporting IFNG-inducible regulation of human DICER1, these observations align with the concept of convergent regulatory evolution, in which similar expression patterns are perpetuated by the co-option of lineage-specific TEs (Choudhary et al., 2020; Sundaram et al., 2014). Therefore, as B2_Mm2 elements shaped the evolution of rodent immune regulatory networks, individual co-option events may have mediated either divergence or preservation of gene expression patterns.\n\nOur identification of a B2_Mm2 element as an intronic enhancer of Dicer1 potentially uncovers a novel regulatory feedback loop that controls Dicer1 function related to TE silencing. Previous studies have demonstrated that Dicer1 cleaves double-stranded RNAs including those derived from B2 SINE transcripts (Fan et al., 2021). In Dicer1 knockout embryonic stem cells, TE-derived transcripts are upregulated (Bodak et al., 2017), and upregulation of B2-derived double-stranded RNAs causes activation of the IFN response (Gurung et al., 2021). Therefore, Dicer1 is important for defense against aberrant TE upregulation. We speculate that co-option of the B2_Mm2 element as an enhancer of Dicer1 facilitates upregulation of Dicer1 in response to conditions that drive TE upregulation, such as infection or stress.\n\nIn human, dysregulation of DICER1 is associated with a wide range of pathologies ranging from DICER1 syndrome, cancer, neurological diseases such as Parkinson\u2019s disease, and autoimmune disorders such as rheumatoid arthritis (Theotoki et al., 2020). While DICER1 has a highly conserved function as an endonuclease involved in RNA interference, our work highlights that orthologs of DICER1 have undergone lineage- or species-specific regulatory evolution that may drive underappreciated differences in function across species. While we found that both human and mouse orthologs of DICER1 have STAT1 binding sites, the underlying cis-regulatory architecture is not conserved and likely results in different expression patterns. This could have significant implications when developing and testing RNA-based therapeutics in mouse genetic models, which may elicit distinct Dicer1-mediated responses due to species-specific enhancers such as B2_Mm2.Dicer1.\n\nIn conclusion, our work adds to a growing body of evidence highlighting the co-option of lineage-specific TEs for the regulation of ISGs. Previous genomic and experimental studies in human (Chuong et al., 2016) and cow cells (Kelly et al., 2022) have revealed independent co-option of TEs as IFNG-inducible enhancer elements. Interestingly, while endogenous retroviruses have been described as a prevalent source of TE-derived inducible enhancers in human, their contribution is relatively minor in cows and mice. Instead, we found that the B2_Mm2 SINE subfamily is the predominant source of TE-derived inducible enhancers in mouse, and the Bov-A2 SINE subfamily is the predominant source in cow (Kelly et al., 2022). These findings indicate that the acquisition of STAT1-associated GAS motifs and enhancer activity is not limited to a specific type of TE. In human cells, Alu SINE sequences are transcriptionally activated upon infection (Jang and Latchman, 1989; Panning and Smiley, 1993), although their epigenetic impact remains unexplored. It remains unclear whether the infection-inducible regulatory activity promotes SINE replication, and it is possible that the emergence of these motifs is coincidental and does not affect TE fitness. Nevertheless, our work supports the idea that TEs have been repeatedly co-opted as IFNG-inducible enhancers throughout mammalian evolution, contributing to the rewiring of immune regulatory networks.\n\n## Materials and methods\n\n### Sequences\n\nA list of all primer sequences and gRNA sequences can be found in Supplementary file 10.\n\n### RNA-seq re-analysis\n\nRNA-seq data (single-end reads) from primary murine BMDMs stimulated with 100 ng/mL IFNG for 2 or 4 hr (Piccolo et al., 2017) or 10 ng/mL IFNG for 2 hr (Platanitis et al., 2019) were downloaded from SRA using fasterq-dump v2.10.5 (NCBI, 2022 ). Adapters and low-quality reads were trimmed using BBDuk v38.05 (Bushnell, 2018) using options \u2018ktrim = r k=34 mink = 11 hdist = 1 qtrim = r trimq = 10 tpe tbo\u2019. Library quality was assessed using FastQC v0.11.8 (Andrews, 2018) and MultiQC v1.7 (Ewels et al., 2016), and trimmed reads were aligned to the mm10 assembly using HISAT2 v2.1.0 (Kim et al., 2019) with option \u2018--no-softclip\u2019. Only uniquely aligned fragments (MAPQ \u2265 10) were retained using samtools v1.10 (Li et al., 2009). Aligned fragments were assigned to the complete mm10 Gencode vM18 (Frankish et al., 2021) annotation in an unstranded manner using featureCounts v1.6.2 (Liao et al., 2014) with options \u2018-p -O -s 0 t exon -g gene_id\u2019, and differentially expressed genes between IFNG-stimulated and unstimulated cells were called using DESeq2 v1.26.0 (Love et al., 2014). For most analyses, ISGs and IRGs were defined as genes with a false discovery rate (FDR) adjusted p-value of at least 0.05 and log2FC greater than 0 and less than zero, respectively. Nonresponsive genes were defined using the following cutoffs: baseMean greater than 100; FDR adjusted p-value greater than 0.90; and absolute log2FC less than 0.10. Interferon stimulation was confirmed by gene ontology analysis using gProfiler (last updated 05/18/2022) with FDR adjusted p-value <0.05 (Raudvere et al., 2019). We additionally aligned RNA-seq data from human CD14+ monocytes stimulated with 100 U/mL IFNG for 24 hr to the hg38 assembly and identified differentially expressed genes using Gencode v38 (Frankish et al., 2021) with the methods described above.\n\n### ChIP-seq re-analysis\n\nChIP-seq data (single-end reads) from primary murine BMDMs (Cuartero et al., 2018; Gualdrini et al., 2022; Piccolo et al., 2017; Platanitis et al., 2019) were downloaded from SRA using fasterq-dump v2.10.5 (NCBI, 2022). Adapters and low-quality reads were trimmed using BBDuk v38.05 (Bushnell, 2018) using options \u2018ktrim = r k=34 mink = 11 hdist = 1 qtrim = r trimq = 10 tpe tbo\u2019. Library quality was assessed using FastQC v0.11.8 (Andrews, 2018) and MultiQC v1.7 (Ewels et al., 2016), and trimmed reads were aligned to the mm10 assembly using BWA-MEM v0.7.15 (Li, 2013). Low quality and unmapped reads were filtered using samtools v1.10 (Li et al., 2009), and duplicates were removed with Picard MarkDuplicates v2.6.0 (Broad Institute, 2016). Peak calling was performed with MACS2 v2.1.1 (Liu, 2014) using options \u2018--gsize mm \u2013pvalue 0.01 \u2013bdg \u2013SPMR \u2013call-summits\u2019. bigWigs corresponding to read pileup per million reads for visualization on the UCSC Genome Browser (Kent et al., 2002). Where possible, only peaks overlapping more than one replicate were retained for further analysis. To confirm whether STAT1 peaks were enriched for their associated binding motifs, we ran XSTREME v5.4.1 (Grant and Bailey, 2021) using options \u2018--minw 6 --maxw 20 \u2013streme-nmotifs 20 \u2013align center\u2019 querying against the JASPAR CORE 2018 vertebrates database (Fornes et al., 2020).\n\n### Transposable element analysis\n\nTo identify TE families enriched for STAT1 and H3K27ac peaks, we used GIGGLE v0.6.3 (Layer et al., 2018) to create a database of all TE families annotated in the mm10 genome according to Dfam v2.0 (Storer et al., 2021) annotation. STAT1 and H3K27ac ChIP-seq peaks were then queried against each TE family in the database. GIGGLE applies the Fisher\u2019s exact test to assess family-level enrichment, attributing an odds ratio, Fisher\u2019s two tailed p-value, and a GIGGLE combo score combining the two values. We only retained TE families that met the following criteria: (1) number of total annotated elements >100; (2) number of elements overlapping a ChIP-seq peak >30; (3) odds ratio >3; and (4) a GIGGLE combo score >100. Results were visualized as a bubble plot where the filtered TE families were sorted by ascending Kimura divergence according to RepeatMasker (Smit et al., 2019) output. Reported odds ratios and p-values are derived from Fisher\u2019s exact test. For further analysis, we intersected STAT1 peaks with the full TE annotation or B2 elements specifically using BEDTools v2.28.0 (Quinlan and Hall, 2010). For the heatmap visualizations using deepTools v3.0.1 (Ram\u00edrez et al., 2016), signal from counts per million- (CPM) normalized bigWigs was plotted over a subset of B2_Mm2 elements that are bound only by STAT1, CTCF, both, or neither. We additionally visualized ChIP-seq signal over all B2_Mm2, B2_Mm1a, and B2_Mm1t elements by descending average signal, excluding elements with zero overlapping signal.\n\nTo assess whether STAT1-bound B2_Mm2 elements are enriched near ISGs, we sorted all ISGs and IRGs by descending and ascending log2FC, respectively, and retained the top 750 genes. We additionally randomly subset for 750 nonresponsive genes. The absolute distance to the nearest ISG, IRG, or nonresponsive gene was determined for all STAT1-bound B2_Mm2 elements using BEDTools v2.28.0 (Quinlan and Hall, 2010). Randomly shuffled STAT1-bound B2_Mm2 as well as randomly subset, unbound B2_Mm2, B2_Mm1a, and B2_Mm1t were included as controls. Statistical significance was determined for the first 20 kb bin using Fisher\u2019s exact test with BEDTools v2.28.0 (Quinlan and Hall, 2010).\n\nTo identify TE families that are differentially expressed in response to IFNG in primary murine BMDMs, we realigned the RNA-seq data to the mm10 reference genome using HISAT2 v2.1.0 (Kim et al., 2019) with options \u2018-k100 \u2013no-softclip\u2019. Aligned reads were assigned to TE families using TEtranscripts v2.1.4 (Jin et al., 2015) with options \u2018--sortByPos \u2013mode multi \u2013iteration 100 \u2013stranded no\u2019. TEtranscripts allows for quantification of TE expression at the family level and does not discriminate between individual elements within a family. To differentiate unbound and STAT1-bound B2_Mm2 elements, we generated a custom TE annotation file compatible with TEtranscripts that includes all TEs annotated in Dfam v2.0 (Storer et al., 2021) but annotates STAT1-bound B2_Mm2 elements as an independent subfamily. Differentially expressed TE families between IFNG-stimulated and unstimulated cells were identified using DESeq2 v1.26.0 (Love et al., 2014). TE families with an FDR less than 0.05 and an absolute log2FC greater than 0.50 were considered as differentially expressed. These relaxed thresholds were used to better enable the identification of differentially expressed TE families where only a subset of elements are inducibly expressed and the majority are only lowly expressed.\n\nWe identified putative STAT1 and CTCF binding sites genome-wide using FIMO v5.0.3 (Grant et al., 2011) with a p-value cutoff of 1\u00d710\u20134 (heatmaps) or 1 (B2 box-and-whisker). For all motif analyses, binding motif position-weight matrices for STAT1 and CTCF were obtained from the JASPAR CORE 2018 vertebrate database (Fornes et al., 2020). To visualize motif presence over all B2 elements, repeat 5\u2019 start coordinates were recalculated based on their alignment to the consensus according to RepeatMasker annotations. Motif presence was visualized as a heatmap using deepTools v3.0.1 (Ram\u00edrez et al., 2016), and elements were sorted by descending average signal. We additionally aligned the consensus sequences for B2_Mm2, B2_Mm1a, and B2_Mm1t from Repbase v24.02 and the sequence for B2_Mm2.Dicer1 using MUSCLE v3.8.1551 (Edgar, 2004). Predicted STAT1 and CTCF motifs were identified using FIMO v.5.0.3 (Grant et al., 2011), and base changes relative to the canonical binding motifs were highlighted according to the weight of each individual base in the position-weight matrices. Finally, we filtered for STAT1-bound B2_Mm2 elements that were non-overlapping, non-nested, and unique and ran AME v5.4.1 (McLeay and Bailey, 2010) using a subset of unbound B2_Mm2 elements as the background control with options \u2018--kmer 2 \u2013method fisher \u2013scoring avg\u2019.\n\n### ATAC-seq re-analysis\n\nPaired-end ATAC-seq data from primary murine BMDMs stimulated with 10 ng/mL IFNG for 2 hr (Platanitis et al., 2022) were downloaded from SRA using fasterq-dump v2.10.5 (NCBI, 2022). Adapters and low-quality reads were trimmed using BBDuk v38.05 (Bushnell, 2018) with options \u2018ktrim = r k=34 mink = 11 hdist = 1 tpe tbo qtrim = r trimq = 10\u2019. Library quality was assessed using FastQC v0.11.8 (Andrews, 2018) and MultiQC v1.7 (Ewels et al., 2016), and trimmed r eads were aligned to the mm10 assembly using Bowtie 2 v2.2.9 (Langmead and Salzberg, 2012) with options \u2018--end-to-end --very-sensitive -X 1000 --fr\u2019, and only uniquely mapping reads with a minimum MAPQ of 10 were retained. Fragments aligning to the mitochondrial genome were removed, and duplicates were removed using Picard MarkDuplicates v2.6.0 (Broad Institute, 2016). Aligned fragments were shifted +4/\u20135 using deepTools alignmentSieve v3.0.1 with option \u2018--ATACshift\u2019 (Ram\u00edrez et al., 2016) and used to call ATAC-seq peaks with an FDR <0.05 using MACS2 v2.1.1 (Liu, 2014) with options \u2018--SPMR -B --keep-dup all --format BAMPE \u2013call-summits\u2019.\n\n### Hi-C re-analysis\n\nPaired-end Hi-C data from primary murine BMDMs stimulated with 10 ng/mL IFNG for 2 hr (Platanitis et al., 2022) were downloaded from SRA using fasterq-dump v2.10.5 (NCBI, 2022). Library quality was assessed using FastQC v0.11.8 (Andrews, 2018) and MultiQC v1.7 (Ewels et al., 2016), and reads were aligned to the mm10 assembly using BWA-MEM 0.7.17 (Li, 2013) with arguments \u2018-SP\u2019, and the resulting bam file was converted to pairsam format pairtools parse v0.2.2 (https://github.com/mirnylab/pairtools; Goloborodko, 2019). Technical replicates were merged using pairtools merge v0.2.2. Duplicate reads were marked using pairtools dedup v0.2.2, and only aligned fragments with pairtools classification \u2018UU\u2019 or \u2018UC\u2019 were retained using pairtools filter v0.2.2 resulting in approximately 600 M pairs. A Knight Ruiz (KR)-normalized, Arima restriction site-aware Hi-C matrix was prepared using juicer pre v1.22.01 (Dudchenko et al., 2017) at 5 kb resolution and fitted to a powerlaw distribution in preparation for running the Activity-by-Contact (ABC) model (Fulco et al., 2019).\n\n### Gene-enhancer target prediction by Activity-by-Contact (ABC) analysis\n\nWe applied the Hi-C matrix (Platanitis et al., 2022) in conjunction with ATAC-seq (Platanitis et al., 2022) and H3K27ac (Piccolo et al., 2017) data from IFNG-stimulated BMDMs to predict enhancer activity using the Activity-by-Contact (ABC) model (Fulco et al., 2019). The ABC model predicts enhancer-gene contacts by leveraging epigenomic and chromatin interaction capture data. Each potential enhancer-gene contact is assigned an ABC interaction score that depends on the activity of the enhancer by ATAC-seq and H3K27ac ChIP-seq in addition to the likelihood of contact by Hi-C. We ran the ABC model as previously described (Fulco et al., 2019). In brief, we first identified candidate enhancer elements using makeCandidateRegions.py with options \u2018--peakExtendFromSummit 250 \u2013nStrongestPeaks 150000\u2019 and quantified activity using run.neighborhoods.py. Predicted enhancer-gene pairs were attributed an ABC interaction score using predict.py with options \u2018--hic_type juicebox \u2013hic_resolution 5000 \u2013scale_hic_using_powerlaw \u2013threshold 0.02 \u2013make_all_putative\u2019. Only enhancer regions with an ABC interaction score over 0.001 were considered for subsequent analysis.\n\n### Orthology analysis\n\nWe used BioMart with human Ensembl v105 annotation (Cunningham et al., 2022) to identify high confidence, one-to-one orthologs in mouse for each identified human ISG (log2FC >0, FDR adjusted p-value <0.05). A union set consisting of mouse and human-to-mouse ISGs was generated, and each ISG was identified as mouse-specific, human-specific, or shared according to induction status. To determine how broadly B2_Mm2 has shaped murine innate immune responses, we identified 344 unique B2_Mm2 elements fully overlapping enhancers predicted to interact with 706 ISGs using the ABC model with a minimum ABC score of 0.001. The proportion of ISGs predicted to interact with a putative B2_Mm2 enhancer were plotted according to species status. We independently identified 926 ISGs with at least one of 655 STAT1-bound B2_Mm2 elements (irrespective of ABC) within 50 kb of the transcriptional start site.\n\n### Cell line passing and interferon treatments\n\nJ774A.1 mouse cells were purchased from ATCC and were cultured in DMEM supplemented with 1 X penicillin-streptomycin and 10% fetal bovine serum. J774A.1 cells were routinely passaged using 0.25% Trypsin-EDTA and cultured at 37 \u00b0C and 5% CO2. All IFNG treatments were performed using 100 ng/mL recombinant mouse IFNG (R&D Systems #485-MI-100). Cells were confirmed to be Mycoplasma-free by the Barbara Davis Center for Childhood Diabetes BioResources Core Molecular Biology Unit at the University of Colorado Anschutz Medical Center. The identity of the cells was verified using the ATCC Cell Line Authentication Service (STR profiling).\n\n### Cytokine panel\n\nAll treatments were carried out using a 4 hr time period. IL-4 (Sigma-Aldrich #I1020-5UG) was added to a final concentration of 1 ng/mL, recombinant IFNA (R&D Systems #12100\u20131) to a final concentration of 1000 U/mL, recombinant IL-2 (R&D Systems #402 ML-020) to a final concentration of 100 ng/mL, and recombinant IL-6 (Sigma-Aldrich #I9646-5UG) to a final concentration of 20 ng/mL in accordance with manufacturers\u2019 recommendations. RNA was extracted using an Omega Mag-Bind Total RNA Kit (Omega Bio-Tek #M6731-00) and analyzed via RT-qPCR.\n\n### Design of gRNA constructs\n\nTwo gRNA sequences were designed to flank each side of B2_Mm2.Dicer1 in order to delete the element and generate knockout J774A.1 cells via SpCas9 (Integrated DNA Technologies #1081060). All gRNA sequences were also verified to uniquely target the locus of interest using the UCSC BLAT tool (Kent, 2002) against the mm10 genome assembly.\n\n### Generation of CRISPR KO cell lines\n\nAfter gRNAs were designed, we used Alt-R Neon electroporation (1400 V pulse voltage, 10 ms pulse width, 3 pulses total) with four different combinations of the gRNAs to target B2_Mm2. One set of guides was found to produce the expected doubles-stranded cuts on both sides of the element in the bulk electroporated cell populating using gel electrophoresis. Clonal lines were isolated using the array dilution method and screened for the expected homozygous deletion using primers flanking the B2_Mm2.Dicer1 element. Clonal lines homozygous for the deletion were further validated using one flanking primer and one primer internal to B2_Mm2.Dicer1. To determine deletion breakpoint sequences, PCR products flanking each deletion site were cloned into a sequencing vector using the CloneJET PCR Cloning Kit (Thermo Fisher Scientific #K1231) and transformed into 5-alpha Competent E. coli (New England Biolabs #C2987H). Plasmid DNA was harvested using the EZNA Omega Plasmid DNA Mini Kit I (Omega Bio-Tek #D6942-02), and the sequence of each construct was verified by Sanger sequencing (Quintara Biosciences, Fort Collins, CO; Genewiz, South Plainfield, NJ). Sequencing results were visualized by aligning to the mm10 reference genome using BLAT (Kent, 2002). We identified two clonal lines homozygous for the B2_Mm2.Dicer1 deletion for further experimentation.\n\n### Quantifying Dicer1 expression using RT-qPCR\n\nReal-time quantitative polymerase chain reaction (RT-qPCR) was used to quantify Dicer1 expression in WT and knockout cell lines. WT J774A.1 cells used in RT-qPCR are all biological replicates that underwent the same single cell seeding process as the KOs to serve as a control. Forward and reverse primers were designed for CTCF, Dicer1, and Gbp2b. Each set of primers was designed using a combination of tools from NCBI Primer BLAST (Ye et al., 2012), Benchling (Benchling), and IDT RT-qPCR Primer Design. The final primer sequences chosen were confirmed to uniquely bind to the desired target sequence using BLAT (Kent, 2002). RT-qPCR reactions were prepared using the Luna Universal One-Step RT-qPCR Kit (New England Biolabs #E3005S) according to the manufacturer\u2019s instructions. RT-qPCR data were analyzed using CTCF as a housekeeping gene. A Cq, deltaCq, and deltaDeltaCq value were obtained for each well. These values were averaged to arrive at a mean deltaDeltaCq expression value for each treatment and genotype condition. Standard deviation and a two-tailed Student\u2019s t-test were then calculated for each treatment and genotype condition. A p-value of less than 0.05 demonstrates there is a statistically significant difference in gene expression levels between two treatment and/or genotype conditions.\n\n### J774A.1 RNA-seq library preparation\n\nThe Zymo Quick RNA Miniprep Plus Kit (Zymo Research #R1504) was used to extract RNA from J774A.1 cells for all treatments except for the cytokine panel which used the Omega RNA Extraction Kit (Omega Bio-Tek #M6731-00). WT J774A.1 cells used in RNA-seq and all downstream analysis were clones that underwent single-cell expansions of from wild-type J774A.1 cells. All RNA lysates and single-use aliquots of extracted RNA were stored at \u201380 \u00b0C until library preparation. RNA integrity was quantified with High Sensitivity RNA TapeStation 4200 (Agilent). Libraries were generated using the KAPA mRNA HyperPrep Kit (KAPA Biosystems #08098123702) according to the manufacturer\u2019s protocol. The final libraries were pooled and sequenced on a NovaSeq 6000 as 150 bp paired-end reads (University of Colorado Genomics Core).\n\n### J774A.1 RNA-seq analysis\n\nAdapters and low quality reads were first trimmed using BBDuk v38.05 (Bushnell, 2018). Library quality was assessed using FastQC v0.11.8 (Andrews, 2018) and MultiQC v1.7 (Ewels et al., 2016) and trimmed reads were aligned to the mm10 assembly using HISAT2 v2.1.0 (Kim et al., 2019) with option \u2018--rna-strandness RF\u2019. Only uniquely aligned fragments were retained, and technical replicates were merged using samtools v1.10 (Li et al., 2009). CPM-normalized, stranded bigWigs were generated using deepTools bamCoverage v3.0.1 (Ram\u00edrez et al., 2016) and visualized using the UCSC Genome Browser (Kent et al., 2002). Aligned fragments were assigned to the mm10 refseq gene annotation in a reversely stranded manner using featureCounts v1.6.2 (Liao et al., 2014) with options \u2018-t exon -s 2\u2019, and differentially expressed genes were called using DESeq2 v1.26.0 (Ram\u00edrez et al., 2016). We analyzed every individual pairwise comparison to determine the effects due to both treatment and genotype. Untreated and wild type conditions were defined as the reference level. Log2FC values were shrunken using the apeglm function v1.8.0 (Zhu et al., 2019) for visualization across Chromosome 12 as a distance plot.\n\nTo determine whether the B2_Mm2.Dicer1 element acts as a regulator of splicing, we conducted transcriptome-guided transcript assembly on all WT and B2_Mm2.Dicer1 KO J774 RNA-seq alignments individually using Stringtie v1.3.3b with options \u2018--rf -j 5\u2019. Individual GTF files were merged into a single file with option \u2018--merge\u2019. Reads were subsequently aligned against the merged transcriptome using Salmon v1.9.0 with options \u2018--validateMappings \u2013rangeFactorizationBins4 \u2013gcBias\u2019. Transcript-level quantification data for each WT and KO sample were used for differential expression analysis with DESeq2 v1.26.0 (Ram\u00edrez et al., 2016).\n\n### CUT&Tag\n\nCUT&Tag datasets were generated using a protocol from Kaya-Okur and Henikoff, 2020; Kaya-Okur et al., 2020 with an input of 100\u2013500 k cells and the following modifications: pAG-Tn5 (EpiCypher #15\u20131017) was diluted 1:40 in nuclease-free water containing 20 mM HEPES pH 7.5, 300 mM NaCl, 0.5 mM spermidine, 0.01% digitonin, and a protease inhibitor tablet, and libraries were amplified for 14 cycles. The following primary antibodies were used: rabbit IgG (1:1000, EpiCypher #13\u20130042), rabbit anti-H3K27ac (1:100), rabbit anti-pRPB1-Ser5 (1:100, Cell Signaling Technology #13523 S), rabbit anti-STAT1 (1:100, Cohesion Biosciences #CPA3322), rabbit anti-pSTAT1-Ser727 (1:100, Active Motif #39634), rabbit anti-CTCF (1:100, EMD Millipore #07-729-25UL). Guinea pig anti-rabbit IgG (1:100, Antibodies-Online #ABIN101961) was used as a secondary antibody. CUTANA pAG-Tn5 (EpiCypher #15\u20131017) was added to each sample following primary and secondary antibody incubation. Pulldown success was measured by Qubit dsDNA High Sensitivity (Invitrogen) and TapeStation 4200 HSD5000 (Agilent) before proceeding to library preparation. Pulldowns were concentrated and pooled using KAPA Pure Beads (Roche). The final pooled libraries were quantities with TapeStation 4200 HSD5000 and sequences on an Illumina NovaSeq 6000 as 150 bp paired-end reads (University of Colorado Genomics Core).\n\n### CUT&Tag analysis\n\nAdapters and low quality reads were first trimmed using BBDuk v38.05 (Bushnell, 2018). Library quality was assessed using FastQC v0.11.8 (Andrews, 2018) and MultiQC v1.7 (Ewels et al., 2016). Trimmed reads were then aligned to the mm10 assembly using BWA-MEM v0.7.15 (Li, 2013) and samtools (Li et al., 2009) retained only uniquely aligned fragments (MAPQ \u2265 10). Peaks were called without a control file using MACS2 v2.1.1 (Liu, 2014). bigWigs corresponding to read pileup per million reads for visualization on the UCSC Genome Browser (Kent et al., 2002).\n\n### External datasets\n\nPublicly available data were downloaded from public repositories using fasterq-dump from the NCBI SRA Toolkit. RNA-seq datasets were obtained from GSE84517, GSE115434, GSE84691, GSE176562, and GSE43036. ChIP-seq datasets were obtained from GSE84518, GSE108805, GSE189971, and GSE115433. Hi-C and ATAC-seq datasets were obtained from SRA using accession PRJNA694816.\n\n### Data access\n\nRaw and processed sequencing data generated in this study have been submitted to the NCBI Gene Expression Omnibus (GEO) with accession number GSE202574.\n\n### Code Availability\n\nUCSC Genome browser sessions and all code available at https://genome.ucsc.edu/s/coke6162/B2_SINE_enhancers_Horton_et_al and https://github.com/coke6162/B2_SINE_enhancers (copy archived at Kelly, 2023).\n",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "2b009e4b-09d6-47e5-a1e1-3894ef59414a",
+      "submission_id": "299596e7-634e-4e43-9a80-2d5f8b835538",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mia T Levine, https://ror.org/00b30xv10 University of Pennsylvania United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82617.sa0](https://doi.org/10.7554/eLife.82617.sa0)\n\nThis important paper will be of interest to scientists studying evolutionary divergence of immune responses and those studying how transposable elements rewire transcriptional regulatory networks. Using a combination of computational and experimental approaches, this work describes a new class of rodent-specific transposons that can act as enhancers of immune genes in mice.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Mia T Levine, https://ror.org/00b30xv10 University of Pennsylvania United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82617.sa1](https://doi.org/10.7554/eLife.82617.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Mouse B2 SINE elements function as IFN-inducible enhancers\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Molly Przeworski as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Kenji Ichiyanagi (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nThere was consensus among the reviewers that the topic is of broad interest and the data were rigorously generated. The reviewers, however, also felt that some of the claims require additional support. A request for new analyses of the current dataset in hand could potentially blunt these concerns. Depending on the results of these additional analyses, a single new experiment would be required to support the inference that the focal B2 element acts as a Dicer1 enhancer. Please see below for specific revisions requested.\n\nEssential revisions:\n\n1) It is not clear whether the Dicer1 locus is unique. Are there other loci that have both a nearby B2_Mm2 element and a binary difference between inducibility in mouse versus human cells? It would be helpful to understand whether there other B2_Mm2 insertions that could contribute to a mouse-specific IFGN-sensitivity. Adding DEseq values from human RNAseq data the authors already use (current references 10 and/or 37) for identifiable human orthologs to Table S7 would thus strengthen their conclusions. If there are many potential candidates, the authors should discuss the rationale for selecting Dicer1 in particular.\n\n2) The results of Serpina3g and Serpina3F gene expression in the authors' knockout cells are very interesting. However, the authors focus almost exclusively on Serpina3g and Serpina3F, which makes it difficult to understand what is happening genome wide. Are other IFN\u0393-induced genes (including those not on chromosome 12) similarly affected at the level of basal or induced transcription? How many genes are different in WT versus KO cells, both at basal and induced states? Does this correlate with their CUT&TAG data shown in Figure 5? By focusing only on nearby genes (Serpina3g and Serpina3F), the authors hint that this may be a long-range regulatory effect, \"potentially mediated by the CTCF binding activity of the element\" that they removed. But by only focusing on two nearby IFN\u0393-induced genes, their data do not rule out the (also potentially quite interesting) possibility that there may be a more indirect role for this TE site or Dicer1 in basal transcription of IFN\u0393-induced genes or IFN\u0393-mediated gene expression.\n\n3) The specificity of the KO effect on the Dicer1-Serpina region of chromosome 12 is not clear. Without analysis of the complete RNA-seq and CUT&RUN datasets, it is difficult to rule out a more global effect (i.e., beyond chromosome 12). If these new analyses yield evidence of specificity of the KO lines, the reviewers will be satisfied. If not, the reviewers request an additional manipulation: KO of an intron element of equivalent size to the original deletion, KO of a different B2 element \u2013 apparently there is one 2kb away, or even better, replacement of the B2 element with one that lacks cGAS motifs (though the final suggestion is likely too technically challenging). Determining whether there are changes in the basal or induced levels of Dicer1/Serpina genes in this additional line would serve as an important control for the KO experiment. Providing more data on other genes throughout the genome in WT and KO cells, which the authors have generated but do not include in the manuscript, would help distinguish between these models.\n\n4) There are high levels of POLR2A occupancy at the B2_Mm2.Dicer1 element in induced WT cells. Could this be a Pol2 pause site? Could deletion of this element lead to a change in Pol2 occupancy and change Dicer1 expression independent of enhancer activity? To probe such questions, the reviewers requested that the authors directly test the possibility that the intronic B2 element actually acts as a regulator of splicing or transcriptional elongation. Careful analysis of the Dicer1-mapping reads from the RNA-seq data \u2013 or RT-qPCR \u2013 could resolve this concern.\n\n5) Figure 4F \u2013 The authors claim that \"deletion of B2_Mm2.Dicer1 also has a significant repressive effect on the IFN\u0393-inducible expression of Serpina genes.\" However, the basal levels of Serpina3f/Serpina3g are significantly reduced upon this deletion compared to WT. Furthermore, expression of Serpina genes in the KO cell lines significantly increase upon IFN\u0393 stimulation, suggesting that they still show inducible expression despite the B2_Mm2.Dicer1 deletion. The authors should compare the magnitude of induction before and after stimulation between the WT and KO cell lines to determine if there is indeed a repressive effect on inducible expression of Serpina genes.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Mouse B2 SINE elements function as IFN-inducible enhancers\" for further consideration by eLife. Your revised article has been evaluated by Molly Przeworski (Senior Editor) and a Reviewing Editor.\n\nThe reviewers appreciated your many additional experiments/analyses as well as the edits to the text. The manuscript has been improved substantially but there are some remaining issues that need to be addressed.\n\n1. All three reviewers felt that the response to Critique#1 was insufficient. There are several places in the manuscript referring to the significance of the Mouse B2 SINE elements contributing to lineage-specific immune response. For example, the introduction highlights that \"a key open question is whether the co-option of TEs as immune regulatory elements is evolutionarily widespread as a mechanism driving divergence of innate immune responses.\"\n\nThe reviewers (or at least two of them) did not expect to see additional KO experiments but did expect the authors to highlight a handful of other examples where STAT1 binding to a proximal B2 SINE element is found in a mouse-specific ISG only. If no other such examples are available to highlight, then it's currently difficult to discern how generalizable this relationship is between rodent-specific B2 SINE elements and mouse-specific ISGs.\n\nFurthermore, the authors highlight a limitation of the current human cell dataset \u2013 specifically the limitation of sampling gene expression only 24 hours after interferon treatment (new paragraph starting line 310) in human cells. However, in line 232, the same dataset is used to support the earlier statement that \"the human ortholog DICER1 does not show IFN\u0393-inducible expression in human primary macrophages (Qiao et al. 2016)\u2026mouse DICER1 shows a significant 50% upregulation in response to IFN\u0393 in primary mouse BMDMs\u2026.\"\n\nThis earlier statement is substantially weakened by the final Results paragraph. This issue needs to be resolved to support the major claim of the paper that a lineage-specific TE is responsible for a lineage-specific immune response, echoed in the abstract: \"B2 elements\u2026exemplifies how lineage-specific TEs can facilitate evolutionary divergence of innate immune regulatory networks.\"\n\n2. In the response to reviewer comments under critique#2, it was stated that \"\u2026the other differentially expressed genes in the KOs most likely represent off-target/stochastic changes, that are commonly seen across separate clonal isolations.\" And as communicated in the manuscript: Line 288: \"The other dysregulated genes showed no discernable physical or functional pattern and also showed high variability between individual clones\u2026consistent with intrinsic clonal transcriptional variation\u2026\" Whether this is true for all 101 genes should be clarified. It seems surprising given that at least some genes should be indirect targets of Dicer1. Finally, does Dicer1 show less variability than these other genes? If so, that should be stated.\n\n3. Finally, one reviewer was concerned that the intronic location of B2 SINE means that the authors cannot delineate whether the element acts as an enhancer or instead a regulator of transcriptional elongation.\n",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6ba3c3a9-d389-473b-9012-06371ace8fa6",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C1",
+      "claim": "The rodent and primate lineages diverged roughly 90 million years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "The rodent and primate lineages diverged roughly 90 million years ago (Hedges et al., 2006; Mestas and Hughes, 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research (Hedges et al., 2006; Mestas and Hughes, 2004).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "84cd365b-461d-4dd8-bafb-7ddf3815da69",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C2",
+      "claim": "32% of the mouse genome consists of rodent-specific repeats.",
+      "claim_type": "EXPLICIT",
+      "source": "32% of the mouse genome consists of rodent-specific repeats (Waterston et al., 2002)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Waterston et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "998ef970-8a5e-4628-9472-fcecb1b7c937",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C3",
+      "claim": "Analysis of RNA-seq data identified a total of 1,896 ISGs (FDR adjusted p-value <0.05, log2 fold change (log2FC)>1).",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis of the RNA-seq data identified a total of 1,896 ISGs (FDR adjusted p-value <0.05, log2 fold change (log2FC)>1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on computational analysis of RNA-seq data from the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "e471d0d6-5709-4408-ab19-81a5afe05a33",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C4",
+      "claim": "ISGs enriched for canonical genes associated with the IFNG response (GO:0034341, adjusted p-value = 9.394 \u00d7 10\u201335).",
+      "claim_type": "EXPLICIT",
+      "source": "which enriched for canonical genes associated with the IFNG response (GO:0034341, adjusted p-value = 9.394 \u00d7 10\u201335; Supplementary file 1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by gene ontology enrichment analysis results with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "931dcf73-a267-4be0-80f7-2ee645b5a949",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C5",
+      "claim": "22,921 regions were identified as bound by STAT1 in IFNG-induced cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 22,921 regions bound by STAT1 in IFNG-induced cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on ChIP-seq data analysis from the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "f1625736-3653-42ac-8981-202159299b25",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C6",
+      "claim": "18,337 (80.0%) of STAT1-bound regions also resided within H3K27ac-enriched regions, indicating they are putative enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "18,337 (80.0%) of which also resided within H3K27ac-enriched regions, indicating they are putative enhancers",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on overlap analysis of ChIP-seq data and draws on established knowledge that H3K27ac marks active enhancers.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "682a1cee-bf37-4fa9-b032-fe6249e3c441",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C7",
+      "claim": "STAT1 ChIP-seq peaks were enriched for the Gamma-IFN activation site (GAS) motif (E-value=1.11 \u00d7 10\u2013746).",
+      "claim_type": "EXPLICIT",
+      "source": "Specificity of pulldown was confirmed by enrichment of canonical STAT1 binding motifs including the Gamma-IFN activation site (GAS; E-value=1.11 \u00d7 10\u2013746)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on motif enrichment analysis of ChIP-seq peaks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "4868ef5a-1f58-4fa8-bfd3-aebf63002d51",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C8",
+      "claim": "STAT1 ChIP-seq peaks were enriched for the IFN-stimulated response element (ISRE) motif (E-value=1.01 \u00d7 10\u2013442).",
+      "claim_type": "EXPLICIT",
+      "source": "IFN-stimulated response element (ISRE; E-value=1.01 \u00d7 10\u2013442) motifs within the STAT1 ChIP-seq peaks",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on motif enrichment analysis of ChIP-seq peaks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "01646206-f076-45df-88d1-266d82cbbf65",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C9",
+      "claim": "26.6% of STAT1 ChIP-seq peak summits resided within TEs.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the summits of the STAT1 ChIP-seq peaks, we found that 26.6% resided within TEs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on computational analysis of ChIP-seq peak locations relative to TE annotations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "442f668e-046d-475a-acf4-9ba7a124f071",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C10",
+      "claim": "71.1% of STAT1 binding sites within TEs contain significant matches (p-value <1 \u00d7 10\u20134) to either ISRE or GAS motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "71.1% of which contain significant matches (p-value <1 \u00d7 10\u20134) to either ISRE or GAS motifs (Supplementary file 3)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on motif analysis of TE sequences overlapping STAT1 binding sites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "dc34d486-23a2-4cc5-a9e0-237b05e0abb1",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C11",
+      "claim": "The B2_Mm2 subfamily is enriched for STAT1 binding sites (p-value = 7.18 \u00d7 10\u2013201).",
+      "claim_type": "EXPLICIT",
+      "source": "including the rodent-specific B2_Mm2 subfamily (p-value = 7.18 \u00d7 10\u2013201)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on GIGGLE colocalization analysis with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "c9d0dab8-b3da-4bcf-aba1-0f6dc1654eca",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C12",
+      "claim": "The RLTR30B_MM subfamily is enriched for STAT1 binding sites (p-value = 9.61 \u00d7 10\u201377).",
+      "claim_type": "EXPLICIT",
+      "source": "RLTR30B_MM (p-value = 9.61 \u00d7 10\u201377)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on GIGGLE colocalization analysis with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "7d0285da-947c-44cd-a9c8-c243ec1ecbff",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C13",
+      "claim": "The RLTR30E_MM subfamily is enriched for STAT1 binding sites (p-value = 7.32 \u00d7 10\u201331).",
+      "claim_type": "EXPLICIT",
+      "source": "RLTR30E_MM (p-value = 7.32 \u00d7 10\u201331) endogenous retrovirus subfamilies",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on GIGGLE colocalization analysis with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "8bb3c664-658e-4dc7-9504-3c48ecd357ed",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C14",
+      "claim": "The expansion of rodent-specific TE families has shaped the innate immune regulatory landscape in mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the expansion of rodent-specific TE families has shaped the innate immune regulatory landscape in mouse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation based on the enrichment analysis results presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "cd3ecd4e-1303-4955-9ee8-d70efac85a41",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C15",
+      "claim": "B2_Mm2 is a murine-specific subfamily of the B2 short interspersed nuclear element (SINE) family.",
+      "claim_type": "EXPLICIT",
+      "source": "B2_Mm2 is a murine-specific subfamily of the B2 short interspersed nuclear element (SINE) family, which is highly abundant in the mouse genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about B2 SINE classification.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "bea50669-8aa6-4b43-b446-1a4ae38f8e0e",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C16",
+      "claim": "B2_Mm2 has 80,541 copies in the mouse genome.",
+      "claim_type": "EXPLICIT",
+      "source": "B2_Mm2 (80,541 copies)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on genome annotation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "7a09d83d-f652-4886-8654-00785ae18220",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C17",
+      "claim": "B2_Mm1a has 16,321 copies in the mouse genome.",
+      "claim_type": "EXPLICIT",
+      "source": "B2_Mm1a (16,321 copies)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on genome annotation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "3f5ef761-0b2f-4cc8-82ae-f6eb1795e406",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C18",
+      "claim": "B2_Mm1t has 35,812 copies in the mouse genome.",
+      "claim_type": "EXPLICIT",
+      "source": "B2_Mm1t (35,812 copies)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on genome annotation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "dd907332-0102-4c92-8c85-6760612a07c7",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C19",
+      "claim": "B2 SINE elements have been characterized to act as promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "B2 SINE elements have been characterized to show a wide range of regulatory activities in mice, including acting as promoters (Ferrigno et al., 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "3d7a21ee-3c18-41e9-9523-a1e4d70a6e5a",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C20",
+      "claim": "B2 SINE elements have been characterized to act as insulator elements bound by CTCF.",
+      "claim_type": "EXPLICIT",
+      "source": "insulator elements bound by CTCF (Ichiyanagi et al., 2021; Lunyak et al., 2007; Schmidt et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "a39a09e5-9b37-4633-85aa-47465857eb40",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C21",
+      "claim": "B2 SINE elements have been characterized to act as regulatory non-coding RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "or regulatory non-coding RNAs (Hernandez et al., 2020; Karijolich et al., 2017; Karijolich et al., 2015; Schaller et al., 2020; Yakovchuk et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "0c8b3d75-2beb-4d9f-a864-554ba6638217",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C22",
+      "claim": "The B2_Mm2 subfamily provided 2,122 total STAT1 binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "The B2_Mm2 subfamily showed strong evidence of enrichment within regions bound by STAT1, providing 2,122 total binding sites (odds ratio = 4.85).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on analysis of ChIP-seq data overlapping with TE annotations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "8b22b88c-6fdf-4f78-95e5-1aced8e534f5",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C23",
+      "claim": "B2_Mm2 elements show significantly higher localization near ISGs (p-value = 5.03 \u00d7 10\u201352, odds ratio = 9.13) than interferon-repressed genes or nonresponsive genes.",
+      "claim_type": "EXPLICIT",
+      "source": "These B2_Mm2 elements show significantly higher localization near ISGs (p-value = 5.03 \u00d7 10\u201352, odds ratio = 9.13) than interferon-repressed genes (IRGs) or nonresponsive genes, compared to unbound B2 elements or random genomic regions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on statistical analysis of genomic distances between B2_Mm2 elements and different gene categories.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "c3de1873-036f-422f-97fa-1ac0f63bf003",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C24",
+      "claim": "STAT1-bound B2_Mm2 elements are transcriptionally upregulated at the family level in response to IFNG stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, STAT1-bound B2_Mm2 elements are transcriptionally upregulated at the family level in response to IFNG stimulation (Figure 1C, Figure 1\u2014figure supplement 2, Supplementary file 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on RNA-seq analysis and is supported by figures showing expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "bae9cf11-1162-4ac8-98b4-ba4e9def3ee3",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C25",
+      "claim": "Unbound B2_Mm2 elements did not show a significant increase in expression in response to IFNG stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although unbound B2_Mm2 elements are also transcriptionally active, we did not observe a significant increase in expression in response to IFNG stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on RNA-seq analysis comparing expression levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "23b3bd33-d904-4c31-bbe5-a88944e2c570",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C26",
+      "claim": "Thousands of B2_Mm2 elements show epigenetic and transcriptional evidence of IFNG-inducible regulatory activity in primary murine bone marrow derived macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data indicate that thousands of B2_Mm2 elements show epigenetic and transcriptional evidence of IFNG-inducible regulatory activity in primary murine bone marrow derived macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary interpretation of multiple lines of evidence presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "e6c92aae-1942-44ca-bdad-34c553a616f1",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C27",
+      "claim": "All B2 subfamilies showed extensive ChIP-seq binding evidence of CTCF and the RAD21 cohesin subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, all B2 subfamilies showed extensive ChIP-seq binding evidence of CTCF and the RAD21 cohesin subunit, coinciding with a CTCF motif (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on ChIP-seq data analysis shown in the figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "f77e08ee-cb6c-4dd4-915c-6ea1b3c26f35",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C28",
+      "claim": "Only a subset of elements from the B2_Mm2 subfamily showed inducible binding of STAT1.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, only a subset of elements from the B2_Mm2 subfamily showed inducible binding of STAT1 (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on ChIP-seq data analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "a1b47f59-0f10-4395-a124-3d1190059ca8",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C29",
+      "claim": "STAT1-bound B2_Mm2 elements contain both GAS and CTCF motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with ChIP-seq evidence, STAT1-bound B2_Mm2 elements contain both GAS and CTCF motifs, while B2_Mm1a/t elements only harbor CTCF motifs (Figure 2B, Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on motif analysis shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "839589b5-badb-49b1-a108-cbc8a512995b",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C30",
+      "claim": "B2_Mm1a/t elements only harbor CTCF motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "STAT1-bound B2_Mm2 elements contain both GAS and CTCF motifs, while B2_Mm1a/t elements only harbor CTCF motifs (Figure 2B, Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on motif analysis shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "1e38f86b-34b5-400e-b1de-f967fabf40dd",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C31",
+      "claim": "Within B2_Mm2, elements that are bound by STAT1 are significantly enriched for GAS motifs when compared against unbound elements (E-value 2.08\u00d710\u201371).",
+      "claim_type": "EXPLICIT",
+      "source": "Within B2_Mm2, elements that are bound by STAT1 are significantly enriched for GAS motifs when compared against unbound elements (E-value 2.08\u00d710\u201371, Supplementary file 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on motif enrichment analysis with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "7c4772cd-65ac-405c-a1fd-71e929d07647",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C32",
+      "claim": "STAT1-bound B2_Mm2 elements contain stronger sequence matches to GAS motifs compared to unbound B2_Mm2 elements and B2_Mm1a/t elements.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, STAT1-bound B2_Mm2 elements contain stronger sequence matches to GAS motifs compared to unbound B2_Mm2 elements and B2_Mm1a/t elements (Figure 2A, Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on motif match quality analysis shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "9ca0cfba-8353-4873-8914-fb5a7104f40f",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C33",
+      "claim": "B1_Mm1a elements show a partial match to the GAS motif but show no evidence of STAT1 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "While B1_Mm1a elements show a partial match to the GAS motif, they show no evidence of STAT1 binding (Figure 2B, Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on motif analysis and ChIP-seq data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "f6fc28c1-497a-4f5a-af2e-4a1b6feec1fc",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C34",
+      "claim": "Elements of the B2_Mm2 subfamily are uniquely characterized by containing strong matches to GAS motifs that are associated with STAT1 binding activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, elements of the B2_Mm2 subfamily are uniquely characterized by containing strong matches to GAS motifs that are associated with STAT1 binding activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation based on the motif and ChIP-seq analyses presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "c26540d8-183d-4bc5-af73-973d8c0dfeda",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C35",
+      "claim": "STAT1-bound B2_Mm2 elements are the only B2 elements that show an inducible H3K27ac signal associated with enhancer activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we found that STAT1-bound B2_Mm2 elements are the only B2 elements that show an inducible H3K27ac signal associated with enhancer activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on H3K27ac ChIP-seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "a0aa65ef-b17d-4867-b375-6827366862a2",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C36",
+      "claim": "B2_Mm2 elements bound only by CTCF or unbound elements show minimal H3K27ac signal.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, B2_Mm2 elements bound only by CTCF or unbound elements show minimal H3K27ac signal (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on H3K27ac ChIP-seq data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "c21812b2-216f-4a68-9cdc-0a7939b2c556",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C37",
+      "claim": "B2_Mm1a/t elements show minimal STAT1 signal regardless of CTCF binding.",
+      "claim_type": "EXPLICIT",
+      "source": "B2_Mm1a/t elements also show minimal STAT1 signal regardless of CTCF binding (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on STAT1 ChIP-seq data shown in the figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "adf5abb9-489e-43c2-82b5-ca1003fff5e3",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C38",
+      "claim": "The binding of STAT1 to B2_Mm2 elements causes activation of enhancer activity including acetylation of H3K27.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the binding of STAT1 to B2_Mm2 elements causes activation of enhancer activity including acetylation of H3K27.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation based on the correlation between STAT1 binding and H3K27ac signal.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "bde39076-558f-48df-9f5e-ecf692143a3b",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C39",
+      "claim": "B2_Mm2 elements represent a distinct subclass of B2 SINE elements that exhibit IFNG-inducible enhancer activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, B2_Mm2 elements represent a distinct subclass of B2 SINE elements that exhibit IFNG-inducible enhancer activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary interpretation of the analyses presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "c8265df7-fd08-4886-ac86-3f9e46fbd28f",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C40",
+      "claim": "530 B2_Mm2 elements were predicted to interact with 457 mouse ISGs (16.8% of the set of 2720 in this analysis).",
+      "claim_type": "EXPLICIT",
+      "source": "Focusing on a permissive set of 2,720 ISGs (FDR adjusted p-value <0.05, log2FC >0), we identified 530 B2_Mm2 elements predicted to interact with 457 mouse ISGs (16.8% of the set of 2720 in this analysis; Supplementary file 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on Activity by Contact (ABC) model predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "ccb8b2ad-f29c-4236-90e1-3ee5d566ed80",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C41",
+      "claim": "393 of 457 (86%) genes predicted to be regulated by B2_Mm2 elements were only ISGs in mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with a set of human ISGs from human CD14+ monocytes (Qiao et al., 2016), 393 of these 457 (86%) genes were only ISGs in mouse",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparative analysis of mouse and human ISG datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "3b0dd0d3-c068-4df4-bbef-58fd7e9c4e71",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C42",
+      "claim": "64 of 457 (14%) genes predicted to be regulated by B2_Mm2 elements were ISGs in both mouse and human.",
+      "claim_type": "EXPLICIT",
+      "source": "and the remaining 64 (14%) were ISGs in both mouse and human",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparative analysis of mouse and human ISG datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "7a2c2e7a-bf7e-4544-9701-3e9b4ad247d3",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C43",
+      "claim": "The 393 mouse-specific ISGs predicted to be regulated by B2_Mm2 elements were significantly enriched for multiple immune related functions (GO:0002376, adjusted p-value = 6.023 \u00d7 10\u20139).",
+      "claim_type": "EXPLICIT",
+      "source": "The 393 mouse-specific ISGs predicted to be regulated by B2_Mm2 elements were significantly enriched for multiple immune related functions (GO:0002376, adjusted p-value = 6.023 \u00d7 10\u20139; Supplementary file 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on gene ontology enrichment analysis with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "4a2f249c-e9ed-451c-a6c4-f5e721d5cedc",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C44",
+      "claim": "Mouse Dicer1 shows a significant 50% upregulation in response to IFNG in primary mouse BMDMs.",
+      "claim_type": "EXPLICIT",
+      "source": "While the human ortholog DICER1 does not show IFNG-inducible expression in human primary macrophages (Qiao et al., 2016; Figure 3\u2014figure supplement 3, Supplementary file 1), mouse Dicer1 shows a significant 50% upregulation in response to IFNG in primary mouse BMDMs (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on RNA-seq data analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "f216de20-97db-4a98-9af3-11c8ac945ffb",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C45",
+      "claim": "Human DICER1 does not show IFNG-inducible expression in human primary macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "While the human ortholog DICER1 does not show IFNG-inducible expression in human primary macrophages (Qiao et al., 2016; Figure 3\u2014figure supplement 3, Supplementary file 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on analysis of published RNA-seq data and shown in the figure supplement.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "e395a540-0f92-4bdc-af46-18fbdf6bb6fb",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C46",
+      "claim": "Dicer1 is a mouse-specific ISG.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that Dicer1 is a mouse-specific ISG",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation based on the differential expression patterns between mouse and human.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "f8b3ca40-43c3-459c-a0d2-9f4a662ec3af",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C47",
+      "claim": "The intronic B2_Mm2 element (B2_Mm2.Dicer1) shows biochemical hallmarks of enhancer activity including inducible STAT1 and H3K27ac signal as well as constitutive binding by CTCF and RAD21.",
+      "claim_type": "EXPLICIT",
+      "source": "The intronic B2_Mm2 element (B2_Mm2.Dicer1) shows biochemical hallmarks of enhancer activity including inducible STAT1 and H3K27ac signal as well as constitutive binding by CTCF and RAD21 (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on ChIP-seq data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "df0d9fc4-9e1b-48bc-bae3-facf88a041c1",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C48",
+      "claim": "The B2_Mm2.Dicer1 element provides the only prominent nearby STAT1 binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "The element provides the only prominent nearby STAT1 binding site and is not present in rat or other mammals (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on ChIP-seq data and conservation analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "8a179735-47c9-4f11-a0b5-efbda6940486",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C49",
+      "claim": "The B2_Mm2.Dicer1 element is not present in rat or other mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "The element provides the only prominent nearby STAT1 binding site and is not present in rat or other mammals (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on conservation analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "55b36824-7e5e-4552-a3fd-54c0ada020b0",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C50",
+      "claim": "Dicer1 shows 30\u201340% upregulation after 4 hr of IFNG treatment in J774A.1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We first confirmed using RT-qPCR that Dicer1 shows 30\u201340% upregulation after 4 hr of IFNG treatment (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on RT-qPCR experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "abec3b92-73f3-41a4-913f-78f271ac90bf",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C51",
+      "claim": "4 hr treatment of J774A.1 cells with IFNA, IL6, and IL4 all induced Dicer1 expression to similar levels (30\u201340%).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 4 hr treatment of J774A.1 cells with IFNA, IL6, and IL4 all induced Dicer1 expression to similar levels (30\u201340%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on RT-qPCR experimental data from cytokine treatments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "4129d186-721f-4492-820a-aba32adfd5ee",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C52",
+      "claim": "WT clones showed consistent inducible expression of Dicer1, while both knockout clonal lines showed a complete lack of inducible expression.",
+      "claim_type": "EXPLICIT",
+      "source": "WT clones showed consistent inducible expression, while both knockout clonal lines showed a complete lack of inducible expression (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on RT-qPCR experimental data comparing WT and KO clones shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "67ec4ce3-fd6d-47c7-a994-c0ca9a30e885",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C53",
+      "claim": "B2_Mm2.Dicer1 acts as an IFNG-inducible enhancer of Dicer1 in J774A.1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments demonstrate that B2_Mm2.Dicer1 acts as an IFNG-inducible enhancer of Dicer1 in J774A.1 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion based on the CRISPR deletion experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "7e36a5c0-e44e-443e-adde-8a9210d2bbcd",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C54",
+      "claim": "Dicer1 showed significant IFNG-inducible upregulation in all WT clones but this induction was completely ablated in B2_Mm2.Dicer1 KO clones.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the RT-qPCR results, we found that Dicer1 showed significant IFNG-inducible upregulation in all WT clones but that this induction was completely ablated in B2_Mm2.Dicer1 KO clones (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on RNA-seq data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "61fe567a-d6ee-4261-b8cd-aea83d038723",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C55",
+      "claim": "Expression of Dicer1 was significantly reduced in untreated KO cells (log2FC = \u20130.43, FDR-adjusted p-value = 9.246 \u00d7 10\u20134).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the RNA-seq normalized count data revealed that expression of Dicer1 were also significantly reduced in untreated KO cells (log2FC = \u20130.43, FDR-adjusted p-value = 9.246 \u00d7 10\u20134)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on RNA-seq data analysis with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "d6fd742b-6a34-462b-af2a-7813e0f838a2",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C56",
+      "claim": "Dicer1 was significantly downregulated in IFNG-treated KO cells compared to WT cells (log2FC = \u20130.80, FDR-adjusted p-value = 3.393 \u00d7 10\u201315).",
+      "claim_type": "EXPLICIT",
+      "source": "Focusing on the IFNG-treated condition, Dicer1 was significantly downregulated in KO cells compared to WT cells (log2FC = \u20130.80, FDR-adjusted p-value = 3.393 \u00d7 10\u201315).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on RNA-seq data analysis with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "122537e1-5b1c-4331-a1b9-a372f4b7f2a5",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C57",
+      "claim": "The deletion of the B2_Mm2.Dicer1 element did not affect inducibility of other ISGs in the 5 Mb locus including the nearby highly induced SerpinA3 ISGs locus.",
+      "claim_type": "EXPLICIT",
+      "source": "The deletion of the element did not affect inducibility of other ISGs in the 5 Mb locus including the nearby highly induced SerpinA3 ISGs locus (Figure 4C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on RNA-seq data analysis shown in Figures 4C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "3d8a064c-178c-4e9a-8433-5fc22f101f7e",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C58",
+      "claim": "The B2_Mm2.Dicer1 element specifically regulates both basal expression levels of Dicer1 and inducible expression by IFNG.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the B2_Mm2.Dicer1 element specifically regulates both basal expression levels of Dicer1 and inducible expression by IFNG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation based on the RNA-seq results from KO experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "54df408d-5770-4c2d-bb19-b5dd930bdf4a",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C59",
+      "claim": "There were 101 genes that showed greater significance than Dicer1 when testing for differential expression between IFNG-treated KO and WT cells (out of 3,567 genes with FDR-adjusted p-value <0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide, there were 101 genes that showed greater significance than Dicer1 when testing for differential expression between IFNG-treated KO and WT cells (out of 3,567 genes with FDR-adjusted p-value <0.05; Supplementary file 8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on genome-wide RNA-seq differential expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "7270b675-0db7-4953-982c-a24201df780b",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C60",
+      "claim": "Out of 101 genes showing greater significance than Dicer1, 24 showed higher variability than Dicer1 between individual clones.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of these 101 genes, 24 showed higher variability than Dicer1 (based on DESeq2 log2FC standard error) between individual clones (Figure 3\u2014figure supplement 5B\u2013E), consistent with intrinsic clonal transcriptional variation revealed by the limiting dilution and/or CRISPR editing process (Nahmad et al., 2022; Westermann et al., 2022).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on RNA-seq data analysis and is consistent with published observations about clonal variation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "a73a3a86-3fd2-4db3-89c0-f7b7972ec74c",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C61",
+      "claim": "In IFNG-stimulated WT cells, the B2_Mm2.Dicer1 element shows prominent H3K27ac, STAT1, and POLR2A signal.",
+      "claim_type": "EXPLICIT",
+      "source": "In IFNG-stimulated WT cells, the B2_Mm2.Dicer1 element shows prominent H3K27ac, STAT1, and POLR2A signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on CUT&TAG experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "e1a8465a-6249-44ad-92d7-c9d92556ecd4",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C62",
+      "claim": "H3K27ac, STAT1, and POLR2A signals at B2_Mm2.Dicer1 are completely lost in the knockout clone.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these signals are completely lost in the knockout clone (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on CUT&TAG experimental data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "4de9225d-fe95-45b8-a0c8-5025bcdbbd17",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C63",
+      "claim": "B2_Mm2.Dicer1 has been co-opted to function as an IFNG-inducible enhancer that regulates Dicer1.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these experiments confirm that B2_Mm2.Dicer1 has been co-opted to function as an IFNG-inducible enhancer that regulates Dicer1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion based on multiple experimental results including CRISPR deletion, RT-qPCR, RNA-seq, and CUT&TAG.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "1ee695f4-8918-4b38-bbc6-a95400f0ca88",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C64",
+      "claim": "Human DICER1 locus contains multiple inducible STAT1 binding sites, including one originating from a primate-specific TE (LTR27).",
+      "claim_type": "EXPLICIT",
+      "source": "However, ChIP-seq data from IFN-treated monocytes from the same group (Qiao et al., 2013) showed multiple inducible STAT1 binding sites within the human DICER1 locus, including one originating from a primate-specific TE (LTR27) (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on analysis of published ChIP-seq data shown in the figure supplement.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "0cb98c94-eca0-49a3-b126-cc856d4503f9",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C65",
+      "claim": "B2 elements have contributed non-coding RNAs inducible by stress or infection.",
+      "claim_type": "EXPLICIT",
+      "source": "B2 elements have contributed non-coding RNAs inducible by stress or infection (Allen et al., 2004; Karijolich et al., 2017; Karijolich et al., 2015; Li et al., 1999; Schaller et al., 2020; Walters et al., 2009; Wick et al., 2003; Williams et al., 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "2c2c1a0c-ee64-449c-a0bd-eed62609dda7",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C66",
+      "claim": "B2 elements have contributed splicing signals.",
+      "claim_type": "EXPLICIT",
+      "source": "splicing signals (Kress et al., 1984)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "e53ba2ea-c11b-4502-8534-422b9889bd15",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C67",
+      "claim": "B2 elements have contributed promoter elements.",
+      "claim_type": "EXPLICIT",
+      "source": "promoter elements (Ferrigno et al., 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "b55091ef-06cd-413f-8c68-1e0e22280e41",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C68",
+      "claim": "B2 elements have contributed CTCF-bound insulator elements.",
+      "claim_type": "EXPLICIT",
+      "source": "and CTCF-bound insulator elements (Ichiyanagi et al., 2021; Lunyak et al., 2007; Schmidt et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "55f61d9d-3a1b-4f58-bee9-89208591a174",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C69",
+      "claim": "This study reveals a new subclass of B2 elements that have IFNG-inducible enhancer activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study reveals a new subclass of B2 elements that have IFNG-inducible enhancer activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary of the main finding of the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "3b277af4-e2ef-4d82-8e3c-72e1035af92b",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C70",
+      "claim": "Many B2 elements are targeted for SETDB1/H3K9me3-mediated epigenetic repression which inhibits their regulatory potential.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the abundance of B2 elements and their potential to cause pathological regulatory rewiring, many B2 elements are targeted for SETDB1/H3K9me3-mediated epigenetic repression which inhibits their regulatory potential (Gualdrini et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "fd1fb5e6-4281-4a0b-b95a-095a31df120b",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C71",
+      "claim": "By using CRISPR to generate knockout cells of a B2_Mm2 element, we demonstrated that B2 elements can be co-opted to act as inducible enhancer elements in the context of IFNG stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "By using CRISPR to generate knockout cells of a B2_Mm2 element, we demonstrated that B2 elements can be co-opted to act as inducible enhancer elements in the context of IFNG stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary of the experimental findings from CRISPR deletion experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "d02a23d3-14cc-4714-b7ae-e931a55b4f00",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C72",
+      "claim": "Thousands of B2_Mm2 elements including B2_Mm2.Dicer1 show strong transcriptional and epigenetic signatures of inducible enhancer activity in multiple primary macrophage epigenomic datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "While our experiments were conducted in the J774.A1 immortalized cell line, we confirmed that thousands of B2_Mm2 elements including B2_Mm2.Dicer1 show strong transcriptional and epigenetic signatures of inducible enhancer activity in multiple primary macrophage epigenomic datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on analysis of multiple published datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "7efddc4c-6cc2-41f2-8a0a-50a8cd0dfda0",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C73",
+      "claim": "Hundreds of B2_Mm2-derived enhancers are predicted to regulate genes displaying IFNG-inducible expression in mouse cells but not human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified hundreds of B2_Mm2-derived enhancers that are predicted to regulate genes displaying IFNG-inducible expression in mouse cells but not human cells, which supports their role in facilitating lineage-specific evolution of the IFNG-inducible regulatory network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on ABC model predictions and comparative analysis between mouse and human.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "9778a74c-bef3-4c0e-926a-7e3a2f90b3a3",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C74",
+      "claim": "An intronic STAT1 binding site derived from a primate-specific TE was identified in the human DICER1 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, we identified an intronic STAT1 binding site derived from a primate-specific TE in the human DICER1 locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on analysis of ChIP-seq data from human cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "e5a35035-5e6f-47ca-a973-d6c10d44dd6f",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C75",
+      "claim": "Dicer1 cleaves double-stranded RNAs including those derived from B2 SINE transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have demonstrated that Dicer1 cleaves double-stranded RNAs including those derived from B2 SINE transcripts (Fan et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "425bb4fe-ca31-47fd-8962-58113c40a22a",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C76",
+      "claim": "In Dicer1 knockout embryonic stem cells, TE-derived transcripts are upregulated.",
+      "claim_type": "EXPLICIT",
+      "source": "In Dicer1 knockout embryonic stem cells, TE-derived transcripts are upregulated (Bodak et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "11349889-8793-487f-9178-1a1bb7c71ffa",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C77",
+      "claim": "Upregulation of B2-derived double-stranded RNAs causes activation of the IFN response.",
+      "claim_type": "EXPLICIT",
+      "source": "and upregulation of B2-derived double-stranded RNAs causes activation of the IFN response (Gurung et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "bcc7bdaf-f5e9-4b21-bd3d-feabf6e9d0e1",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C78",
+      "claim": "Dicer1 is important for defense against aberrant TE upregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, Dicer1 is important for defense against aberrant TE upregulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the cited studies about Dicer1's role in cleaving TE-derived RNAs.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "735fe8a9-c4e9-474b-b6fd-77f0c681c299",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C79",
+      "claim": "Co-option of the B2_Mm2 element as an enhancer of Dicer1 facilitates upregulation of Dicer1 in response to conditions that drive TE upregulation, such as infection or stress.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that co-option of the B2_Mm2 element as an enhancer of Dicer1 facilitates upregulation of Dicer1 in response to conditions that drive TE upregulation, such as infection or stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as speculation by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "eb3f7087-0bdd-45ea-87c2-8cf5c5b6b1be",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C80",
+      "claim": "Dysregulation of DICER1 is associated with a wide range of pathologies ranging from DICER1 syndrome, cancer, neurological diseases such as Parkinson's disease, and autoimmune disorders such as rheumatoid arthritis.",
+      "claim_type": "EXPLICIT",
+      "source": "In human, dysregulation of DICER1 is associated with a wide range of pathologies ranging from DICER1 syndrome, cancer, neurological diseases such as Parkinson's disease, and autoimmune disorders such as rheumatoid arthritis (Theotoki et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "00b3a37e-26fb-4b46-990f-f2ebf6a3a340",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C81",
+      "claim": "DICER1 has a highly conserved function as an endonuclease involved in RNA interference.",
+      "claim_type": "EXPLICIT",
+      "source": "While DICER1 has a highly conserved function as an endonuclease involved in RNA interference, our work highlights that orthologs of DICER1 have undergone lineage- or species-specific regulatory evolution that may drive underappreciated differences in function across species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about DICER1 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "049c7637-0a00-451b-aba7-68793ffe4cdc",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C82",
+      "claim": "Orthologs of DICER1 have undergone lineage- or species-specific regulatory evolution that may drive underappreciated differences in function across species.",
+      "claim_type": "EXPLICIT",
+      "source": "our work highlights that orthologs of DICER1 have undergone lineage- or species-specific regulatory evolution that may drive underappreciated differences in function across species",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation based on the findings of the manuscript showing different regulatory mechanisms in mouse vs human.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "1bea6c60-2c9e-4dbe-afef-da9eeb37dba2",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C83",
+      "claim": "Both human and mouse orthologs of DICER1 have STAT1 binding sites, but the underlying cis-regulatory architecture is not conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "While we found that both human and mouse orthologs of DICER1 have STAT1 binding sites, the underlying cis-regulatory architecture is not conserved and likely results in different expression patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparative analysis of ChIP-seq data from mouse and human.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "3d8744d3-6001-4019-9e07-b6a805a653cf",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C84",
+      "claim": "MER41 elements have been co-opted as enhancer elements to regulate multiple immune genes in human cells, including the AIM2 inflammasome genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In the human genome, we previously showed that MER41 elements have been co-opted as enhancer elements to regulate multiple immune genes in human cells, including the AIM2 inflammasome genes (Chuong et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to the authors' previous published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "d6a16ffa-ef2a-45fd-a7e1-71ff6a4716f1",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C85",
+      "claim": "Elements belonging to LTR12, MER44, and THE1C transposon families have been co-opted to regulate inducible expression of immune genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Elements belonging to other transposon families, including LTR12, MER44, and THE1C, have also been co-opted to regulate inducible expression of immune genes (Bogdan et al., 2020; Donnard et al., 2018; Srinivasachar Badarinarayan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "f789cb8c-30de-41ba-bd69-d9247853d7b1",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C86",
+      "claim": "The majority of TE families co-opted as immune regulatory elements in primates are primate-specific.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the majority of these families are primate-specific, supporting the co-option of TEs as a driver of primate-specific divergence of immune regulatory networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the cited studies and represents an interpretation about the evolutionary pattern.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "7dd4af74-9ea6-4283-8dd9-19db0551dca3",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C87",
+      "claim": "Mouse and human immune transcriptomes show substantial divergence.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcriptomic studies have revealed that mouse and human immune transcriptomes show substantial divergence (Shaw et al., 2017; Shay et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "92350bf3-0e10-48c3-9694-a618d8219cc9",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C88",
+      "claim": "The STAT1 transcription factor mediates the type II IFN response by binding to enhancers and promoters containing the Gamma-IFN activation site (GAS) motif.",
+      "claim_type": "EXPLICIT",
+      "source": "The STAT1 transcription factor mediates the type II IFN response (Platanias, 2005) by binding to enhancers and promoters containing the Gamma-IFN activation site (GAS) motif",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge and supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "21781cdc-13e3-420d-9d65-96dfd3611e7e",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C89",
+      "claim": "The H3K27ac modification is strongly associated with active enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "and the H3K27ac modification is strongly associated with active enhancers (Creyghton et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge and supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "66bb182c-d93c-4bbb-9359-d43a929a3f8d",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C90",
+      "claim": "TEs have been repeatedly co-opted as IFNG-inducible enhancers throughout mammalian evolution, contributing to the rewiring of immune regulatory networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, our work supports the idea that TEs have been repeatedly co-opted as IFNG-inducible enhancers throughout mammalian evolution, contributing to the rewiring of immune regulatory networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion based on the findings of this manuscript and comparison with previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "62378c13-0c7c-4315-bfec-d7aae56a46cb",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C91",
+      "claim": "In the human genome, we previously showed enrichment of RLTR30 elements within STAT1-binding sites in IFNG and IFNB-stimulated mouse macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously identified enrichment of RLTR30 elements within STAT1-binding sites in IFNG and IFNB-stimulated mouse macrophages based on analysis of a different ChIP-seq dataset (Chuong et al., 2016; Ng et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to the authors' previous published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "6f5f0a97-4d22-4747-aaa2-bb237d27375d",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C92",
+      "claim": "The previous analysis did not capture enrichment of B2_Mm2, likely because the dataset was generated using 36 bp short reads.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our previous analysis did not capture enrichment of B2_Mm2, likely because the dataset was generated using 36 bp short reads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference about why B2_Mm2 enrichment was not detected in previous analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "49a37a56-8262-4a61-8be7-e407c9d5b63c",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C93",
+      "claim": "The more recent datasets analyzed here used 50 bp reads, which improves mappability to individual copies of evolutionarily young TE families such as B2_Mm2.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the more recent datasets analyzed here used 50 bp reads (Platanitis et al., 2019), which improves mappability to individual copies of evolutionarily young TE families such as B2_Mm2 (Sundaram et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on technical knowledge about sequencing read length and mappability, supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "2ce11226-4824-4de2-b192-a269040143d8",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C94",
+      "claim": "Endogenous retroviruses have been described as a prevalent source of TE-derived inducible enhancers in human.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, while endogenous retroviruses have been described as a prevalent source of TE-derived inducible enhancers in human, their contribution is relatively minor in cows and mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge from previous studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "61f6d0bc-493f-4be1-9fdf-9ebb6db6d1b3",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C95",
+      "claim": "The contribution of endogenous retroviruses as TE-derived inducible enhancers is relatively minor in cows and mice.",
+      "claim_type": "EXPLICIT",
+      "source": "while endogenous retroviruses have been described as a prevalent source of TE-derived inducible enhancers in human, their contribution is relatively minor in cows and mice",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on findings from this manuscript and comparison with other species.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "77dd49ee-a335-465e-9073-acaf99722294",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C96",
+      "claim": "The B2_Mm2 SINE subfamily is the predominant source of TE-derived inducible enhancers in mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, we found that the B2_Mm2 SINE subfamily is the predominant source of TE-derived inducible enhancers in mouse",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the enrichment analysis results from this manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "68d7077d-ddff-4b9c-99d6-970741a8b2ea",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C97",
+      "claim": "The Bov-A2 SINE subfamily is the predominant source of TE-derived inducible enhancers in cow.",
+      "claim_type": "EXPLICIT",
+      "source": "and the Bov-A2 SINE subfamily is the predominant source in cow (Kelly et al., 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "92cf122b-20e6-4c93-9a4a-ce9bd6cae02e",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C98",
+      "claim": "The acquisition of STAT1-associated GAS motifs and enhancer activity is not limited to a specific type of TE.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings indicate that the acquisition of STAT1-associated GAS motifs and enhancer activity is not limited to a specific type of TE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation based on the observation that different TE types in different species have acquired similar functions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "c13a9aa0-fa15-4d97-bbc0-9d3d6f3ecbf4",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "claim_id": "C99",
+      "claim": "Alu SINE sequences are transcriptionally activated upon infection in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In human cells, Alu SINE sequences are transcriptionally activated upon infection (Jang and Latchman, 1989; Panning and Smiley, 1993)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "917afa30-b7fc-410f-aded-3a78083de5bd",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Analysis of RNA-seq and ChIP-seq data from IFNG-stimulated primary mouse BMDMs identified 1,896 ISGs enriched for IFNG response genes, and 22,921 STAT1-bound regions (80% overlapping H3K27ac), with peaks enriched for canonical GAS and ISRE motifs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C8 provide convergent evidence from RNA-seq and ChIP-seq analyses with appropriate statistical thresholds and motif enrichment validation. The identification of ISGs, STAT1 binding sites, and motif enrichment are internally consistent and use standard bioinformatic approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "cdc1f21c-49ea-4f79-ae83-9c3aa58b385e",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "26.6% of STAT1 binding sites reside within TEs, with 71.1% containing GAS or ISRE motifs. The rodent-specific B2_Mm2 subfamily and RLTR30B_MM and RLTR30E_MM endogenous retrovirus subfamilies are significantly enriched for STAT1 binding, indicating that rodent-specific TE families have shaped the mouse innate immune regulatory landscape.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C13 present statistically significant enrichment data from GIGGLE analysis with highly significant p-values. The interpretation in C14 is reasonable given the enrichment of rodent-specific TE families, though it represents an inference from the data rather than direct experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "12145eef-3f62-4d2b-8ac8-00cdb7c36207",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "B2_Mm2 elements provide 2,122 STAT1 binding sites, show significantly higher localization near ISGs compared to other gene categories, and are transcriptionally upregulated in response to IFNG stimulation, indicating IFNG-inducible regulatory activity in primary mouse BMDMs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C25 provide multiple lines of evidence including ChIP-seq overlap analysis, genomic distance analysis with statistical significance, and RNA-seq expression data. The summary interpretation in C26 is well-supported by the convergent evidence from epigenetic and transcriptional analyses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "963b01f6-e9a5-46bd-b59d-465e0401c34a",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "B2_Mm2 elements are uniquely characterized by containing strong GAS motifs associated with STAT1 binding activity, while other B2 subfamilies (B2_Mm1a/t) only harbor CTCF motifs. STAT1-bound B2_Mm2 elements are significantly enriched for GAS motifs compared to unbound elements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C34 present comprehensive motif analysis with statistical validation (E-value 2.08\u00d710\u207b\u2077\u00b9) and ChIP-seq evidence. The distinction between B2 subfamilies based on motif content and binding patterns is well-documented with multiple complementary analyses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "99f53db4-0327-447f-908e-768e04cdd89d",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "STAT1-bound B2_Mm2 elements are the only B2 elements showing inducible H3K27ac signal associated with enhancer activity, suggesting that STAT1 binding causes activation of enhancer activity. B2_Mm2 elements represent a distinct subclass exhibiting IFNG-inducible enhancer activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 present H3K27ac ChIP-seq data distinguishing B2_Mm2 from other B2 subfamilies. However, C38 makes a causal claim based on correlation, which is an overinterpretation. The conclusion in C39 is reasonable but the causal mechanism requires experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "4af776e1-9b5b-4f22-b8e8-f06b6e9f8c21",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Using the ABC model, 530 B2_Mm2 elements were predicted to interact with 457 mouse ISGs, of which 393 (86%) were mouse-specific ISGs enriched for immune-related functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C40-C43 rely on computational predictions from the ABC model rather than experimental validation. While the model is established, the predictions require experimental confirmation. The enrichment analysis (C43) supports functional relevance, but the enhancer-gene assignments remain predictions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "74748f2f-f316-4e29-bf83-a5a2d4bd54ac",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Mouse Dicer1 shows 50% upregulation in response to IFNG in primary BMDMs while human DICER1 does not, indicating Dicer1 is a mouse-specific ISG. An intronic B2_Mm2 element (B2_Mm2.Dicer1) shows biochemical hallmarks of enhancer activity and is the only prominent nearby STAT1 binding site, not present in rat or other mammals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C49 present RNA-seq data from mouse and human, ChIP-seq evidence of enhancer marks, and conservation analysis. The comparative analysis between species is appropriate, though the human data interpretation may be complicated by dataset variability (see C64).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "c72bd7af-144e-42e2-9039-8918c9f915b6",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "RT-qPCR experiments in J774A.1 cells confirmed 30-40% upregulation of Dicer1 after 4 hr IFNG treatment, with similar induction by IFNA, IL6, and IL4. CRISPR knockout of B2_Mm2.Dicer1 completely ablated inducible expression, demonstrating it acts as an IFNG-inducible enhancer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C53 present RT-qPCR validation in cell culture and CRISPR deletion experiments with appropriate controls. The complete loss of inducible expression in both KO clones provides strong evidence for enhancer function, though experiments were conducted in an immortalized cell line rather than primary cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "8d45957c-1213-487b-bf72-63418f1c9f01",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "RNA-seq analysis confirmed that B2_Mm2.Dicer1 deletion completely ablated IFNG-inducible upregulation of Dicer1 and significantly reduced basal expression, without affecting other ISGs in the 5 Mb locus, indicating the element specifically regulates both basal and inducible Dicer1 expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C58 present RNA-seq validation with statistical significance and demonstrate specificity by showing no effect on neighboring ISGs. The effect size is modest but consistent across clones. The interpretation of specific regulation is well-supported by the locus-wide analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "e034af70-8243-4227-b0f2-7931e7d3087a",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Genome-wide analysis identified 101 genes with greater differential expression significance than Dicer1 between KO and WT cells, of which 24 showed higher variability consistent with clonal transcriptional variation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 acknowledge genome-wide effects and appropriately attribute some changes to clonal variation based on published observations. This transparent reporting of off-target or indirect effects strengthens confidence in the specificity of the Dicer1 result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "7b7775ee-025e-4394-87a3-27c7f6027c89",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "CUT&TAG experiments confirmed that B2_Mm2.Dicer1 shows prominent H3K27ac, STAT1, and POLR2A signal in IFNG-stimulated WT cells, with complete loss of these signals in the knockout clone, confirming co-option as an IFNG-inducible enhancer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C63 present orthogonal validation using CUT&TAG, confirming loss of enhancer marks upon deletion. This provides strong supporting evidence for the enhancer function conclusion, integrating multiple experimental approaches (CRISPR, RT-qPCR, RNA-seq, CUT&TAG).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "37befadb-3dcf-4612-9057-91e431c828d2",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The human DICER1 locus contains multiple inducible STAT1 binding sites including one from a primate-specific TE (LTR27). Both human and mouse DICER1 orthologs have STAT1 binding sites, but the underlying cis-regulatory architecture is not conserved.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C64, C74, and C83 present ChIP-seq evidence for STAT1 binding in human DICER1, but the functional significance is unclear given inconsistent evidence for IFNG-inducible expression of human DICER1 (C45 vs. supplementary data mentioned in methods). The non-conservation of regulatory architecture is an inference requiring more rigorous comparative analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "442f016f-14f2-4b13-ba03-2afdb2702ae1",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Thousands of B2_Mm2 elements show inducible enhancer signatures in multiple primary macrophage datasets. Hundreds of B2_Mm2-derived enhancers are predicted to regulate genes with IFNG-inducible expression in mouse but not human cells, supporting their role in lineage-specific regulatory evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C73 validate findings across multiple independent datasets and provide comparative analysis between species. However, the evolutionary interpretation relies on computational predictions (ABC model) rather than experimental validation of enhancer-gene relationships.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "a3a33f10-345e-4eea-94e1-cdfb00e00799",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Dicer1 cleaves TE-derived RNAs including B2 transcripts, and Dicer1 knockout leads to TE upregulation and IFN response activation. The authors speculate that B2_Mm2 co-option as a Dicer1 enhancer facilitates upregulation in response to conditions driving TE upregulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C75-C78 are supported by citations to prior work establishing Dicer1's role in TE silencing. However, C79 is explicitly stated as speculation and lacks experimental validation. The proposed feedback loop is plausible but remains hypothetical.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "b5647625-a540-4536-98ec-6e27e74813d4",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "DICER1 orthologs have undergone lineage-specific regulatory evolution that may drive underappreciated functional differences across species. TEs have been repeatedly co-opted as IFNG-inducible enhancers throughout mammalian evolution, contributing to immune regulatory network rewiring.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82 and C90 represent broad conclusions integrating findings from this study with prior work. The evidence for lineage-specific regulatory evolution of DICER1 is supported by the differential regulation between mouse and human. The broader conclusion about TE co-option is supported by comparison with prior studies in other species.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "e279a876-af04-4097-9795-46459aaa0d46",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Previous analysis identified RLTR30 enrichment but not B2_Mm2, likely because earlier datasets used 36 bp reads while current datasets used 50 bp reads, which improves mappability to young TE families like B2_Mm2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C93 provide a reasonable technical explanation for why B2_Mm2 enrichment was missed in prior work, supported by citation to literature on read length and mappability. This demonstrates appropriate consideration of technical limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "e7235c13-ea50-4b56-89ce-bb98267ebdbc",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "While endogenous retroviruses are prevalent sources of TE-derived inducible enhancers in humans, their contribution is minor in cows and mice. Instead, B2_Mm2 SINEs predominate in mouse and Bov-A2 SINEs in cow, indicating that acquisition of STAT1-associated GAS motifs and enhancer activity is not limited to a specific TE type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C98 synthesize findings from this study with prior work in other species, demonstrating convergent evolution of enhancer function across different TE types. The comparative analysis across species strengthens the evolutionary conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "00964b30-7c8e-4494-b11c-a5272d4ac221",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background information on evolutionary divergence and TE content: rodent and primate lineages diverged ~90 million years ago, 32% of the mouse genome consists of rodent-specific repeats, and B2_Mm2 is a murine-specific SINE subfamily with 80,541 copies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C15-C18 provide established background information supported by citations and genome annotations. These contextual claims are well-documented in the literature and genome databases.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "dc2f3791-7409-4c43-8d88-71cb533d4e7c",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "B2 SINE elements have been previously characterized to exhibit diverse regulatory activities including promoter, insulator, and non-coding RNA functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C21 and C65-C68 summarize prior work on B2 element functions, supported by multiple citations. This establishes the context for the novel finding of enhancer activity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "89967b73-5fec-476a-a3b4-35c9f25d2890",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "This study reveals a new subclass of B2 elements with IFNG-inducible enhancer activity, demonstrated through CRISPR knockout experiments showing B2 elements can be co-opted as inducible enhancers in the context of IFNG stimulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69 and C71 represent the main conclusions of the manuscript, well-supported by the comprehensive experimental evidence including bioinformatic analysis, CRISPR deletion, RT-qPCR, RNA-seq, and CUT&TAG experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "a599f443-7e59-40d2-8d46-862b214397cd",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "DICER1 dysregulation is associated with various pathologies and has a highly conserved endonuclease function in RNA interference.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C81 provide established background on DICER1 function and clinical relevance, supported by citations. This contextualizes the significance of the regulatory findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "664e96ac-76f6-4bfe-b943-6a74976fa430",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Prior work has shown that primate-specific TE families (MER41, LTR12, MER44, THE1C) have been co-opted as immune regulatory elements in humans, and mouse and human immune transcriptomes show substantial divergence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C87 summarize prior work establishing the precedent for TE co-option in immune regulation and species-specific divergence, providing context for the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "16919423-8b13-4af6-8eef-55b0186e39ec",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "STAT1 mediates type II IFN response by binding to enhancers/promoters containing GAS motifs, and H3K27ac modification is strongly associated with active enhancers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C89 state established principles of IFN signaling and chromatin biology, supported by citations. These provide the conceptual framework for the experimental approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "c5b889ef-6a72-48d9-af3b-4b539a7b8d46",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Many B2 elements are targeted for SETDB1/H3K9me3-mediated epigenetic repression which inhibits their regulatory potential.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C70 cites prior work on B2 element repression, providing context for why only a subset of B2_Mm2 elements show enhancer activity despite widespread motif presence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    },
+    {
+      "id": "6f222fcd-848f-456b-a2ba-fb9f49200b25",
+      "content_id": "283d0d69-13ad-41a1-be3f-f61ee5908da9",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "Alu SINE sequences are transcriptionally activated upon infection in human cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C99 cites prior work on Alu activation, drawing a parallel to B2 elements and suggesting potential conservation of SINE regulatory mechanisms across species.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:50:53.273220Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "998ef970-8a5e-4628-9472-fcecb1b7c937",
+      "result_id": "917afa30-b7fc-410f-aded-3a78083de5bd"
+    },
+    {
+      "claim_id": "e471d0d6-5709-4408-ab19-81a5afe05a33",
+      "result_id": "917afa30-b7fc-410f-aded-3a78083de5bd"
+    },
+    {
+      "claim_id": "931dcf73-a267-4be0-80f7-2ee645b5a949",
+      "result_id": "917afa30-b7fc-410f-aded-3a78083de5bd"
+    },
+    {
+      "claim_id": "f1625736-3653-42ac-8981-202159299b25",
+      "result_id": "917afa30-b7fc-410f-aded-3a78083de5bd"
+    },
+    {
+      "claim_id": "682a1cee-bf37-4fa9-b032-fe6249e3c441",
+      "result_id": "917afa30-b7fc-410f-aded-3a78083de5bd"
+    },
+    {
+      "claim_id": "4868ef5a-1f58-4fa8-bfd3-aebf63002d51",
+      "result_id": "917afa30-b7fc-410f-aded-3a78083de5bd"
+    },
+    {
+      "claim_id": "01646206-f076-45df-88d1-266d82cbbf65",
+      "result_id": "cdc1f21c-49ea-4f79-ae83-9c3aa58b385e"
+    },
+    {
+      "claim_id": "442f668e-046d-475a-acf4-9ba7a124f071",
+      "result_id": "cdc1f21c-49ea-4f79-ae83-9c3aa58b385e"
+    },
+    {
+      "claim_id": "dc34d486-23a2-4cc5-a9e0-237b05e0abb1",
+      "result_id": "cdc1f21c-49ea-4f79-ae83-9c3aa58b385e"
+    },
+    {
+      "claim_id": "c9d0dab8-b3da-4bcf-aba1-0f6dc1654eca",
+      "result_id": "cdc1f21c-49ea-4f79-ae83-9c3aa58b385e"
+    },
+    {
+      "claim_id": "7d0285da-947c-44cd-a9c8-c243ec1ecbff",
+      "result_id": "cdc1f21c-49ea-4f79-ae83-9c3aa58b385e"
+    },
+    {
+      "claim_id": "8bb3c664-658e-4dc7-9504-3c48ecd357ed",
+      "result_id": "cdc1f21c-49ea-4f79-ae83-9c3aa58b385e"
+    },
+    {
+      "claim_id": "0c8b3d75-2beb-4d9f-a864-554ba6638217",
+      "result_id": "12145eef-3f62-4d2b-8ac8-00cdb7c36207"
+    },
+    {
+      "claim_id": "8b22b88c-6fdf-4f78-95e5-1aced8e534f5",
+      "result_id": "12145eef-3f62-4d2b-8ac8-00cdb7c36207"
+    },
+    {
+      "claim_id": "c3de1873-036f-422f-97fa-1ac0f63bf003",
+      "result_id": "12145eef-3f62-4d2b-8ac8-00cdb7c36207"
+    },
+    {
+      "claim_id": "bae9cf11-1162-4ac8-98b4-ba4e9def3ee3",
+      "result_id": "12145eef-3f62-4d2b-8ac8-00cdb7c36207"
+    },
+    {
+      "claim_id": "23b3bd33-d904-4c31-bbe5-a88944e2c570",
+      "result_id": "12145eef-3f62-4d2b-8ac8-00cdb7c36207"
+    },
+    {
+      "claim_id": "e6c92aae-1942-44ca-bdad-34c553a616f1",
+      "result_id": "963b01f6-e9a5-46bd-b59d-465e0401c34a"
+    },
+    {
+      "claim_id": "f77e08ee-cb6c-4dd4-915c-6ea1b3c26f35",
+      "result_id": "963b01f6-e9a5-46bd-b59d-465e0401c34a"
+    },
+    {
+      "claim_id": "a1b47f59-0f10-4395-a124-3d1190059ca8",
+      "result_id": "963b01f6-e9a5-46bd-b59d-465e0401c34a"
+    },
+    {
+      "claim_id": "839589b5-badb-49b1-a108-cbc8a512995b",
+      "result_id": "963b01f6-e9a5-46bd-b59d-465e0401c34a"
+    },
+    {
+      "claim_id": "1e38f86b-34b5-400e-b1de-f967fabf40dd",
+      "result_id": "963b01f6-e9a5-46bd-b59d-465e0401c34a"
+    },
+    {
+      "claim_id": "7c4772cd-65ac-405c-a1fd-71e929d07647",
+      "result_id": "963b01f6-e9a5-46bd-b59d-465e0401c34a"
+    },
+    {
+      "claim_id": "9ca0cfba-8353-4873-8914-fb5a7104f40f",
+      "result_id": "963b01f6-e9a5-46bd-b59d-465e0401c34a"
+    },
+    {
+      "claim_id": "f6fc28c1-497a-4f5a-af2e-4a1b6feec1fc",
+      "result_id": "963b01f6-e9a5-46bd-b59d-465e0401c34a"
+    },
+    {
+      "claim_id": "c26540d8-183d-4bc5-af73-973d8c0dfeda",
+      "result_id": "99f53db4-0327-447f-908e-768e04cdd89d"
+    },
+    {
+      "claim_id": "a0aa65ef-b17d-4867-b375-6827366862a2",
+      "result_id": "99f53db4-0327-447f-908e-768e04cdd89d"
+    },
+    {
+      "claim_id": "c21812b2-216f-4a68-9cdc-0a7939b2c556",
+      "result_id": "99f53db4-0327-447f-908e-768e04cdd89d"
+    },
+    {
+      "claim_id": "adf5abb9-489e-43c2-82b5-ca1003fff5e3",
+      "result_id": "99f53db4-0327-447f-908e-768e04cdd89d"
+    },
+    {
+      "claim_id": "bde39076-558f-48df-9f5e-ecf692143a3b",
+      "result_id": "99f53db4-0327-447f-908e-768e04cdd89d"
+    },
+    {
+      "claim_id": "c8265df7-fd08-4886-ac86-3f9e46fbd28f",
+      "result_id": "4af776e1-9b5b-4f22-b8e8-f06b6e9f8c21"
+    },
+    {
+      "claim_id": "ccb8b2ad-f29c-4236-90e1-3ee5d566ed80",
+      "result_id": "4af776e1-9b5b-4f22-b8e8-f06b6e9f8c21"
+    },
+    {
+      "claim_id": "3b0dd0d3-c068-4df4-bbef-58fd7e9c4e71",
+      "result_id": "4af776e1-9b5b-4f22-b8e8-f06b6e9f8c21"
+    },
+    {
+      "claim_id": "7a2c2e7a-bf7e-4544-9701-3e9b4ad247d3",
+      "result_id": "4af776e1-9b5b-4f22-b8e8-f06b6e9f8c21"
+    },
+    {
+      "claim_id": "4a2f249c-e9ed-451c-a6c4-f5e721d5cedc",
+      "result_id": "74748f2f-f316-4e29-bf83-a5a2d4bd54ac"
+    },
+    {
+      "claim_id": "f216de20-97db-4a98-9af3-11c8ac945ffb",
+      "result_id": "74748f2f-f316-4e29-bf83-a5a2d4bd54ac"
+    },
+    {
+      "claim_id": "e395a540-0f92-4bdc-af46-18fbdf6bb6fb",
+      "result_id": "74748f2f-f316-4e29-bf83-a5a2d4bd54ac"
+    },
+    {
+      "claim_id": "f8b3ca40-43c3-459c-a0d2-9f4a662ec3af",
+      "result_id": "74748f2f-f316-4e29-bf83-a5a2d4bd54ac"
+    },
+    {
+      "claim_id": "df0d9fc4-9e1b-48bc-bae3-facf88a041c1",
+      "result_id": "74748f2f-f316-4e29-bf83-a5a2d4bd54ac"
+    },
+    {
+      "claim_id": "8a179735-47c9-4f11-a0b5-efbda6940486",
+      "result_id": "74748f2f-f316-4e29-bf83-a5a2d4bd54ac"
+    },
+    {
+      "claim_id": "55b36824-7e5e-4552-a3fd-54c0ada020b0",
+      "result_id": "c72bd7af-144e-42e2-9039-8918c9f915b6"
+    },
+    {
+      "claim_id": "abec3b92-73f3-41a4-913f-78f271ac90bf",
+      "result_id": "c72bd7af-144e-42e2-9039-8918c9f915b6"
+    },
+    {
+      "claim_id": "4129d186-721f-4492-820a-aba32adfd5ee",
+      "result_id": "c72bd7af-144e-42e2-9039-8918c9f915b6"
+    },
+    {
+      "claim_id": "67ec4ce3-fd6d-47c7-a994-c0ca9a30e885",
+      "result_id": "c72bd7af-144e-42e2-9039-8918c9f915b6"
+    },
+    {
+      "claim_id": "7e36a5c0-e44e-443e-adde-8a9210d2bbcd",
+      "result_id": "8d45957c-1213-487b-bf72-63418f1c9f01"
+    },
+    {
+      "claim_id": "61fe567a-d6ee-4261-b8cd-aea83d038723",
+      "result_id": "8d45957c-1213-487b-bf72-63418f1c9f01"
+    },
+    {
+      "claim_id": "d6fd742b-6a34-462b-af2a-7813e0f838a2",
+      "result_id": "8d45957c-1213-487b-bf72-63418f1c9f01"
+    },
+    {
+      "claim_id": "122537e1-5b1c-4331-a1b9-a372f4b7f2a5",
+      "result_id": "8d45957c-1213-487b-bf72-63418f1c9f01"
+    },
+    {
+      "claim_id": "3d8a064c-178c-4e9a-8433-5fc22f101f7e",
+      "result_id": "8d45957c-1213-487b-bf72-63418f1c9f01"
+    },
+    {
+      "claim_id": "54df408d-5770-4c2d-bb19-b5dd930bdf4a",
+      "result_id": "e034af70-8243-4227-b0f2-7931e7d3087a"
+    },
+    {
+      "claim_id": "7270b675-0db7-4953-982c-a24201df780b",
+      "result_id": "e034af70-8243-4227-b0f2-7931e7d3087a"
+    },
+    {
+      "claim_id": "a73a3a86-3fd2-4db3-89c0-f7b7972ec74c",
+      "result_id": "7b7775ee-025e-4394-87a3-27c7f6027c89"
+    },
+    {
+      "claim_id": "e1a8465a-6249-44ad-92d7-c9d92556ecd4",
+      "result_id": "7b7775ee-025e-4394-87a3-27c7f6027c89"
+    },
+    {
+      "claim_id": "4de9225d-fe95-45b8-a0c8-5025bcdbbd17",
+      "result_id": "7b7775ee-025e-4394-87a3-27c7f6027c89"
+    },
+    {
+      "claim_id": "1ee695f4-8918-4b38-bbc6-a95400f0ca88",
+      "result_id": "37befadb-3dcf-4612-9057-91e431c828d2"
+    },
+    {
+      "claim_id": "9778a74c-bef3-4c0e-926a-7e3a2f90b3a3",
+      "result_id": "37befadb-3dcf-4612-9057-91e431c828d2"
+    },
+    {
+      "claim_id": "1bea6c60-2c9e-4dbe-afef-da9eeb37dba2",
+      "result_id": "37befadb-3dcf-4612-9057-91e431c828d2"
+    },
+    {
+      "claim_id": "d02a23d3-14cc-4714-b7ae-e931a55b4f00",
+      "result_id": "442f016f-14f2-4b13-ba03-2afdb2702ae1"
+    },
+    {
+      "claim_id": "7efddc4c-6cc2-41f2-8a0a-50a8cd0dfda0",
+      "result_id": "442f016f-14f2-4b13-ba03-2afdb2702ae1"
+    },
+    {
+      "claim_id": "e5a35035-5e6f-47ca-a973-d6c10d44dd6f",
+      "result_id": "a3a33f10-345e-4eea-94e1-cdfb00e00799"
+    },
+    {
+      "claim_id": "425bb4fe-ca31-47fd-8962-58113c40a22a",
+      "result_id": "a3a33f10-345e-4eea-94e1-cdfb00e00799"
+    },
+    {
+      "claim_id": "11349889-8793-487f-9178-1a1bb7c71ffa",
+      "result_id": "a3a33f10-345e-4eea-94e1-cdfb00e00799"
+    },
+    {
+      "claim_id": "bcc7bdaf-f5e9-4b21-bd3d-feabf6e9d0e1",
+      "result_id": "a3a33f10-345e-4eea-94e1-cdfb00e00799"
+    },
+    {
+      "claim_id": "735fe8a9-c4e9-474b-b6fd-77f0c681c299",
+      "result_id": "a3a33f10-345e-4eea-94e1-cdfb00e00799"
+    },
+    {
+      "claim_id": "049c7637-0a00-451b-aba7-68793ffe4cdc",
+      "result_id": "b5647625-a540-4536-98ec-6e27e74813d4"
+    },
+    {
+      "claim_id": "66bb182c-d93c-4bbb-9359-d43a929a3f8d",
+      "result_id": "b5647625-a540-4536-98ec-6e27e74813d4"
+    },
+    {
+      "claim_id": "62378c13-0c7c-4315-bfec-d7aae56a46cb",
+      "result_id": "e279a876-af04-4097-9795-46459aaa0d46"
+    },
+    {
+      "claim_id": "6f5f0a97-4d22-4747-aaa2-bb237d27375d",
+      "result_id": "e279a876-af04-4097-9795-46459aaa0d46"
+    },
+    {
+      "claim_id": "49a37a56-8262-4a61-8be7-e407c9d5b63c",
+      "result_id": "e279a876-af04-4097-9795-46459aaa0d46"
+    },
+    {
+      "claim_id": "2ce11226-4824-4de2-b192-a269040143d8",
+      "result_id": "e7235c13-ea50-4b56-89ce-bb98267ebdbc"
+    },
+    {
+      "claim_id": "61f6d0bc-493f-4be1-9fdf-9ebb6db6d1b3",
+      "result_id": "e7235c13-ea50-4b56-89ce-bb98267ebdbc"
+    },
+    {
+      "claim_id": "77dd49ee-a335-465e-9073-acaf99722294",
+      "result_id": "e7235c13-ea50-4b56-89ce-bb98267ebdbc"
+    },
+    {
+      "claim_id": "68d7077d-ddff-4b9c-99d6-970741a8b2ea",
+      "result_id": "e7235c13-ea50-4b56-89ce-bb98267ebdbc"
+    },
+    {
+      "claim_id": "92cf122b-20e6-4c93-9a4a-ce9bd6cae02e",
+      "result_id": "e7235c13-ea50-4b56-89ce-bb98267ebdbc"
+    },
+    {
+      "claim_id": "6ba3c3a9-d389-473b-9012-06371ace8fa6",
+      "result_id": "00964b30-7c8e-4494-b11c-a5272d4ac221"
+    },
+    {
+      "claim_id": "84cd365b-461d-4dd8-bafb-7ddf3815da69",
+      "result_id": "00964b30-7c8e-4494-b11c-a5272d4ac221"
+    },
+    {
+      "claim_id": "cd3ecd4e-1303-4955-9ee8-d70efac85a41",
+      "result_id": "00964b30-7c8e-4494-b11c-a5272d4ac221"
+    },
+    {
+      "claim_id": "bea50669-8aa6-4b43-b446-1a4ae38f8e0e",
+      "result_id": "00964b30-7c8e-4494-b11c-a5272d4ac221"
+    },
+    {
+      "claim_id": "7a09d83d-f652-4886-8654-00785ae18220",
+      "result_id": "00964b30-7c8e-4494-b11c-a5272d4ac221"
+    },
+    {
+      "claim_id": "3f5ef761-0b2f-4cc8-82ae-f6eb1795e406",
+      "result_id": "00964b30-7c8e-4494-b11c-a5272d4ac221"
+    },
+    {
+      "claim_id": "dd907332-0102-4c92-8c85-6760612a07c7",
+      "result_id": "dc2f3791-7409-4c43-8d88-71cb533d4e7c"
+    },
+    {
+      "claim_id": "3d7a21ee-3c18-41e9-9523-a1e4d70a6e5a",
+      "result_id": "dc2f3791-7409-4c43-8d88-71cb533d4e7c"
+    },
+    {
+      "claim_id": "a39a09e5-9b37-4633-85aa-47465857eb40",
+      "result_id": "dc2f3791-7409-4c43-8d88-71cb533d4e7c"
+    },
+    {
+      "claim_id": "0cb98c94-eca0-49a3-b126-cc856d4503f9",
+      "result_id": "dc2f3791-7409-4c43-8d88-71cb533d4e7c"
+    },
+    {
+      "claim_id": "2c2c1a0c-ee64-449c-a0bd-eed62609dda7",
+      "result_id": "dc2f3791-7409-4c43-8d88-71cb533d4e7c"
+    },
+    {
+      "claim_id": "e53ba2ea-c11b-4502-8534-422b9889bd15",
+      "result_id": "dc2f3791-7409-4c43-8d88-71cb533d4e7c"
+    },
+    {
+      "claim_id": "b55091ef-06cd-413f-8c68-1e0e22280e41",
+      "result_id": "dc2f3791-7409-4c43-8d88-71cb533d4e7c"
+    },
+    {
+      "claim_id": "55f61d9d-3a1b-4f58-bee9-89208591a174",
+      "result_id": "89967b73-5fec-476a-a3b4-35c9f25d2890"
+    },
+    {
+      "claim_id": "fd1fb5e6-4281-4a0b-b95a-095a31df120b",
+      "result_id": "89967b73-5fec-476a-a3b4-35c9f25d2890"
+    },
+    {
+      "claim_id": "eb3f7087-0bdd-45ea-87c2-8cf5c5b6b1be",
+      "result_id": "a599f443-7e59-40d2-8d46-862b214397cd"
+    },
+    {
+      "claim_id": "00b3a37e-26fb-4b46-990f-f2ebf6a3a340",
+      "result_id": "a599f443-7e59-40d2-8d46-862b214397cd"
+    },
+    {
+      "claim_id": "3d8744d3-6001-4019-9e07-b6a805a653cf",
+      "result_id": "664e96ac-76f6-4bfe-b943-6a74976fa430"
+    },
+    {
+      "claim_id": "d6a16ffa-ef2a-45fd-a7e1-71ff6a4716f1",
+      "result_id": "664e96ac-76f6-4bfe-b943-6a74976fa430"
+    },
+    {
+      "claim_id": "f789cb8c-30de-41ba-bd69-d9247853d7b1",
+      "result_id": "664e96ac-76f6-4bfe-b943-6a74976fa430"
+    },
+    {
+      "claim_id": "7dd4af74-9ea6-4283-8dd9-19db0551dca3",
+      "result_id": "664e96ac-76f6-4bfe-b943-6a74976fa430"
+    },
+    {
+      "claim_id": "92350bf3-0e10-48c3-9694-a618d8219cc9",
+      "result_id": "16919423-8b13-4af6-8eef-55b0186e39ec"
+    },
+    {
+      "claim_id": "21781cdc-13e3-420d-9d65-96dfd3611e7e",
+      "result_id": "16919423-8b13-4af6-8eef-55b0186e39ec"
+    },
+    {
+      "claim_id": "3b277af4-e2ef-4d82-8e3c-72e1035af92b",
+      "result_id": "c5b889ef-6a72-48d9-af3b-4b539a7b8d46"
+    },
+    {
+      "claim_id": "c13a9aa0-fa15-4d97-bbc0-9d3d6f3ecbf4",
+      "result_id": "6f222fcd-848f-456b-a2ba-fb9f49200b25"
+    }
+  ],
+  "comparisons": []
+}

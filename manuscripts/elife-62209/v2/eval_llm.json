@@ -1,0 +1,225 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "PASC is a rare pancreatic cancer subtype constituting 1-4% of pancreatic exocrine tumors with a median survival of 8 months.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 accurately report established epidemiological data about PASC from the literature (Madura et al., 1999; Simone et al., 2013). These are well-documented background facts about the disease.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C8",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C42",
+      "C54",
+      "C55",
+      "C59",
+      "C60"
+    ],
+    "result": "Liu et al. (2014) reported high-frequency UPF1 mutations in 78% of PASC patients that were tumor-specific, caused exon 10-11 skipping, and disrupted NMD function based on minigene assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C8, C21-C25, C42, C54-C55, C59-C60 accurately summarize the findings reported by Liu et al. (2014). These are appropriately cited descriptions of prior work, though the current manuscript questions their validity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C68",
+      "C69"
+    ],
+    "result": "Three subsequent independent studies found no UPF1 mutations in their PASC cohorts (0/34 samples), which is statistically significantly different (p<10\u207b\u2078) from Liu et al.'s reported rate (18/23 samples).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C68-C69 accurately report the absence of UPF1 mutations in three subsequent studies and provide appropriate statistical analysis. The binomial proportion test is appropriate for comparing mutation frequencies between cohorts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Inducing Upf1 exon 10-11 deletion in KPC mouse pancreatic cancer cells had no effect on tumor growth, survival, histopathology, or acquisition of adenosquamous features in orthotopic xenograft experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C19 are supported by the experimental data in Figure 1 and supplementary figures showing successful exon deletion, no differences in tumor volume or survival (n=10 per group), and absence of squamous differentiation markers. However, the authors appropriately note important caveats about model system limitations and inability to track splicing changes during tumorigenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Two UPF1 mutations (IVS10+31G>A and IVS10-17G>A) introduced into their endogenous genomic contexts in 293T cells did not impair NMD efficiency as measured by beta-globin reporter assays and RNA-seq analysis of endogenous NMD substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 are supported by multiple complementary assays shown in Figure 2A-D. The beta-globin reporter data and transcriptome-wide analysis of NMD substrates both indicate no loss of NMD function. The use of multiple independent measurements strengthens these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C43"
+    ],
+    "result": "The two tested UPF1 mutations did not cause loss of full-length UPF1 protein or produce mis-spliced UPF1 mRNA lacking exons 10-11 when introduced into endogenous genomic contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33, C43 are supported by immunoblot data (Figure 2E), RT-PCR (Figure 2F), and RNA-seq splice junction analysis (Figure 2G). The positive control with spiked-in DNA demonstrates the assays could detect mis-splicing if present. This directly contradicts the minigene-based findings from Liu et al.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C20",
+      "C61",
+      "C62"
+    ],
+    "result": "Minigenes are frequently spliced less efficiently than endogenous genes because they lack important sequence features and incompletely capture chromatin-splicing relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C61-C62 accurately cite established knowledge about minigene limitations (Luco et al., 2011; Naftelberg et al., 2015). This provides important context for why the authors' endogenous genome editing approach may yield different results than Liu et al.'s minigene assays.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C51"
+    ],
+    "result": "45% (18/40) of UPF1 mutations reported by Liu et al. are identical to standing genetic variants in human population databases, with 89% (16/18) of patients having at least one such variant, predominantly in intronic regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38, C51 are supported by systematic comparison with multiple genetic variant databases (1000 Genomes, ExAC, gnomAD). The finding that nearly half of reported somatic mutations match germline variants raises serious questions about their pathogenic nature. The context-dependent distribution (intronic vs. exonic) is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "UPF1 is essential for embryonic viability and development in mammals, zebrafish, and Drosophila.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 accurately cite established findings about UPF1 essentiality across multiple model organisms (Medghalchi et al., 2001; Wittkopp et al., 2009; Avery et al., 2011). This provides important biological context for why function-disrupting mutations should not exist as viable germline variants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C63",
+      "C64"
+    ],
+    "result": "Primary sequencing data and samples from Liu et al. were not available for independent verification, and GenBank accessions contained only short sequences without patient-matched controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C63-C64 document the authors' attempts to obtain primary data and the limitations of publicly available data. This is appropriately transparent about data availability issues that prevent direct verification of the original findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Reanalysis of Fang et al. sequencing data identified UPF1 mutations in 6/17 PASC samples, but these had characteristics of passenger mutations (low allelic frequency, median 12% vs. 34% for KRAS), did not match Liu et al.'s mutations, and were also found in non-adenosquamous tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 describe a systematic reanalysis with appropriate methodology. The comparison of UPF1 vs. KRAS allelic frequencies provides important context, as KRAS is a known driver. The finding of UPF1 mutations in non-adenosquamous tumors contradicts the tumor-type specificity reported by Liu et al. The conclusion that UPF1 is not a frequent PASC driver is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "Other UPF1 mutations reported by Liu et al. could represent non-pathogenic genetic differences that do not functionally contribute to PASC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C52 is explicitly speculative, extrapolating from the two tested mutations to all reported mutations. While the logic is reasonable given UPF1 essentiality and the presence of many variants in population databases, this remains a hypothesis that would require testing each mutation individually to confirm.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C10",
+      "C57"
+    ],
+    "result": "KPC cells (with KRAS and p53 mutations) are a genetically appropriate model for PASC, as these mutations occur in the vast majority of PASC cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C57 appropriately justify the choice of model system with citations to three studies (Borazanci et al., 2015; Fang et al., 2017; Hayashi et al., 2020). The genetic similarity to human PASC supports the model's relevance, though the authors appropriately note limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C53",
+      "C9",
+      "C58",
+      "C56",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Background biological and technical context about UPF1 function, NMD substrates, sequencing coverage, and KRAS as a driver mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C9, C58, C56, C65-C67 provide appropriate background information and technical context, supported by citations or established knowledge. These support the experimental design and interpretation but are not primary findings.",
+    "result_type": "MINOR"
+  }
+]

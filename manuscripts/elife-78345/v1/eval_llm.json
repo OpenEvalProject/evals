@@ -1,0 +1,237 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C59"
+    ],
+    "result": "A new little skate genome assembly was generated with substantially improved quality metrics compared to the previous assembly. The new assembly is 2.13 Gb (36.5% larger), represents ~93% of estimated genome size, has 300-fold improved contiguity (contig N50 of 214 Kb), scaffold N50 of 61.3 Mb, and dramatically improved BUSCO completeness (89.1% complete vs. 7.0% in old assembly). The assembly contains 17,230 protein-coding genes and 17,952 transcripts, with the top 49 scaffolds constituting 97.8% of the genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C15, C18-C21, and C59 collectively provide comprehensive assembly statistics with multiple quality metrics (size, contiguity, completeness, gene content) that are well-documented in Figure 1 and supplementary figures. The improvements are quantified with specific numbers and validated through multiple independent measures (K-mer analysis, BUSCO scores, BAC clone alignment), providing strong convergent evidence for assembly quality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "Approximately 63.6% of the little skate genome is occupied by repetitive elements, with long interspersed nuclear elements (LINE) being the most abundant repeat class, similar to thorny skate and shark genomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 are supported by repeat analysis shown in Figure 1\u2014figure supplement 3B and comparison with related species. The high repeat content is consistent with the large genome size and is validated through standard repeat annotation methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C5"
+    ],
+    "result": "Complete loss of the Hoxc cluster was confirmed in the little skate genome, consistent with previous reports and observations in thorny skate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22 and C5 are supported by genome analysis and multiple citations (King et al., 2011; Rhie et al., 2021; Criswell et al., 2021). The finding is validated in the new high-quality assembly and corroborated by observations in related species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23"
+    ],
+    "result": "BUSCO gene synteny analysis revealed that little skate shows more similar patterns with chicken and mammals than with zebrafish.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C23 is supported by synteny analysis shown in Figure 1C. The visual evidence clearly demonstrates synteny patterns, though the claim would benefit from quantitative metrics to support the qualitative observation of 'more similar patterns.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "CTCF binding site analysis in the Hoxa cluster revealed both conserved and divergent regulatory elements. Two CTCF sites (between Hoxa7-Hoxa9 and Hoxa10-Hoxa11) are conserved across species including little skate, while sites near Hoxa13 and between Hoxa5-Hoxa6 are absent in cartilaginous fish. The absence of the Hoxa5-Hoxa6 CTCF site may contribute to expanded Hoxa9 expression domains in fin motor neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C24-C25 are supported by CTCF motif analysis (Figure 1D) and citations. However, C26 is explicitly speculative ('may contribute') and lacks direct experimental validation. The mechanistic link between CTCF site absence and Hoxa9 domain expansion is inferred rather than demonstrated, requiring functional validation through perturbation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C32"
+    ],
+    "result": "Differential gene expression analysis between pectoral fin motor neurons and tail spinal cord identified 411 differentially expressed genes (135 upregulated in pec-MNs, 276 in tail-SC). The rostral Hox gene Hoxa7 was highly expressed in pec-MNs, consistent with previous immunohistochemical analyses. The larger number of DEGs in tail-SC may reflect comparison of heterogeneous cell types in tail-SC versus homogeneous pec-MNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 and C32 are well-supported by RNA-seq data shown in Figure 2, with validation from prior work (Jung et al., 2018). C30 provides reasonable speculation about the asymmetry in DEG numbers based on known differences in cellular composition. The statistical analysis appears appropriate with adjusted p-values, though specific statistical test details and multiple testing correction methods should be more explicitly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Comparative analysis with mouse markers showed that more mouse motor neuron-expressed genes were enriched in pec-MNs (17 genes) than tail-SC (9 genes), while more interneuron markers were enriched in tail-SC (29 genes) versus pec-MNs (8 genes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 are supported by comparative gene expression analysis shown in Figure 2C. The findings are consistent with expected cellular composition (MNs in pec-MNs sample, mixed cell types including interneurons in tail-SC), providing internal validation of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Cross-species transcriptome comparison identified 1,038 genes commonly expressed in motor neurons across mouse, little skate, and chick, along with species-specific genes (53 in skate, 32 in mouse, 7 in chick) and species-specific paralog genes (12 in skate, 171 in mouse, 6 in chick).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 are supported by comprehensive comparative transcriptome analysis shown in Figure 3 and supplementary figures. The identification of both shared and species-specific genes is validated through RNA in situ hybridization for selected genes. The analysis appropriately accounts for both ortholog and paralog relationships, though the criteria for 'species-specific' (>70th percentile in one species, <30th in others) is somewhat arbitrary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "ATAC-seq analysis identified 61,997 total accessible chromatin regions (ACRs) in fin motor neurons and tail spinal cord, with 7,869 shared ACRs, 35,741 fin-MN-specific ACRs, and 18,387 tail-SC-specific ACRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 are supported by ATAC-seq peak calling analysis shown in Figure 4A. Quality control metrics (Figure 4\u2014figure supplement 1) demonstrate appropriate ATAC-seq data characteristics. The large number of fin-MN-specific ACRs is notable, though the biological interpretation requires consideration of potential technical factors (e.g., cell number differences, sample purity).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "Genome-wide distribution analysis showed that ACRs are predominantly located in introns (35.0%) and intergenic regions (45.1%), but when normalized by region length, ACR density is highest in promoters and 5'UTRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 are supported by ACR distribution analysis shown in Figure 4B-C. The normalization by region length is appropriate and reveals biologically meaningful enrichment patterns. The findings are consistent with expected regulatory element distributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "Genes with greater ATAC-seq depth in promoter regions are generally expressed at higher levels than genes with closed chromatin in both fin-MNs and tail-SC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 is supported by correlation analysis shown in Figure 4\u2014figure supplement 3. The positive correlation between promoter accessibility and gene expression validates the biological relevance of the ATAC-seq data, though the correlation appears modest and would benefit from quantitative correlation coefficients.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Transcription factor motif enrichment analysis identified 19, 25, and 32 predicted TF motifs in fin-MN-specific, shared, and tail-SC-specific ACRs, respectively. Fin-MN-specific ACRs were enriched for Hoxa5 and Hoxd9 motifs (expressed in fin-MNs), while tail-SC-specific ACRs were enriched for Hoxd11 and Hoxa13 motifs (expressed in tail-SC). Motifs for known MN regulators Foxp1, Pbx1, and Lhx3 were also identified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 are supported by TF motif enrichment analysis with appropriate statistical testing (adjusted p-values). The correlation between motif enrichment and known expression patterns (C46-C47, validated by Jung et al., 2018) provides biological validation. However, motif predictions are computational and require experimental validation to confirm actual TF binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Comparative analysis of TF motifs in ACRs of MN-expressed genes revealed 14 shared motifs between mouse and skate, with a significantly greater total number of predicted TF motifs in mouse (115) compared to skate. Four motifs (Pknox1, Pbx3, Hoxa5, Cux1) were specific to spinal MNs and not found in cortical neurons. The greater number of predicted TFs in mouse may enable more intricate regulation of MN-expressed genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49-C53 are supported by comparative TF motif analysis shown in Figure 5. However, C49 acknowledges potential database bias toward mouse TFs, which undermines confidence in the quantitative comparison. C54 is explicitly speculative ('would potentially') and the mechanistic interpretation requires experimental validation. The comparison with cortical neurons (C51) provides some specificity control, but the conclusion about regulatory complexity (C54) remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Foxp1 expression patterns differ between species and motor neuron subtypes. While Foxp1 is expressed in and required for all limb MNs in tetrapods, it is downregulated in Pea3-positive MN pools during mouse maturation. Preganglionic motor column neurons in mouse and chick express less than half the Foxp1 level of limb MNs. In little skate, Foxp1 is not expressed in MNs that express pSmad.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 are well-supported by citations to prior work. C57 is supported by data from this study. C58 is supported by expression analysis in Figure 5\u2014figure supplement 1. However, the interpretation regarding PGC neurons in skate should be cautious, as the authors acknowledge that pSmad is a tetrapod PGC marker and PGC neurons have not been definitively identified in skate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Little skate displays walking-like behavior resembling limb-based locomotion despite sharing a common ancestor with tetrapods 473 MYA, suggesting that genetic programs and neural subtypes essential for walking existed in the common ancestor. Little skate has conserved Hox gene expression patterns (Hoxa6/7 in pectoral fins, Hoxa10 in pelvic fins) and a spinal cord occupied by fin MNs without an inter-fin region. Little skate has ~10 pelvic fin muscles compared to ~50 limb muscles in tetrapods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C4, C6-C8 are well-supported by multiple citations to prior work. C3 represents a reasonable evolutionary inference based on the behavioral and molecular similarities, though it remains a hypothesis about ancestral states that cannot be directly tested. The claims collectively establish the biological context and rationale for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C9",
+      "C60"
+    ],
+    "result": "Previous genome assemblies of little skate were severely fragmented, limiting genome-wide studies. A concurrent study by Marletaz et al. generated a chromosome-scale genome using PacBio, Illumina, and Hi-C sequencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C60 are supported by citations. C9 establishes the motivation for generating a new assembly. C60 acknowledges concurrent work, though the relationship and comparison between the two assemblies could be more thoroughly discussed.",
+    "result_type": "MINOR"
+  }
+]

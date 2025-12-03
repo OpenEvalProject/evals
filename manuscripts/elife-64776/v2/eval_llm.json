@@ -1,0 +1,279 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C4",
+      "C5",
+      "C8",
+      "C9",
+      "C10",
+      "C72"
+    ],
+    "result": "The ANCHOR system successfully detects both integrated and unintegrated HIV-1 cDNA in the nucleus. The ANCH sequence is retained during reverse transcription, and eGFP.OR3 punctae are stable for weeks, indicating detection of integrated DNA. The system also detects unintegrated cDNA from integration-deficient virus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of evidence support this result: stable eGFP.OR3 signals over 4+ weeks when unintegrated DNA degrades (C2, C8), Alu-PCR confirmation of integration (C5), detection with both integration-competent and integration-deficient viruses (C9, C10), and direct observation of nuclear punctae (C4). The combination of temporal stability, molecular validation, and functional controls provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C105"
+    ],
+    "result": "Formation of eGFP.OR3 punctae requires viral fusion, reverse transcription, and nuclear entry. The appearance of OR3 punctae coincides temporally with 2-LTR circle formation, with both requiring completed cDNA synthesis and nuclear localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dependence on fusion (C11) and reverse transcription (C12) is demonstrated by appropriate controls with RT inhibitors and fusion-deficient virus. The temporal correlation with 2-LTR circles (C13, C105) provides independent validation of nuclear cDNA detection. The mechanistic requirement for NHEJ components in 2-LTR formation (C14) is supported by citation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The majority of HIV-1 reverse transcription products, including ~80% in the cytoplasm, are not detected by the ANCHOR system. Nuclear eGFP.OR3 punctae (~4 per cell) contain significantly more nascent DNA (EdU signal) than cytoplasmic or nuclear IN-positive complexes lacking OR3 signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "FISH quantification (C15-C17) shows discrepancy between total RT products (~14 nuclear FISH signals, ~12 IN.SNAP signals) and OR3 punctae (~4 per cell). EdU incorporation experiments (C19-C24) provide quantitative evidence that OR3-positive punctae have significantly higher DNA content (p<0.0001), with appropriate statistical analysis and confidence intervals reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C73",
+      "C83",
+      "C106"
+    ],
+    "result": "Reverse transcription is completed in the nucleus, and viral cDNA only becomes detectable to eGFP.OR3 after completion of RT. Nuclear OR3 punctae contain significantly higher DNA amounts than complexes lacking OR3 signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "EdU data showing highest signal on OR3 punctae (C22-C24, C73) combined with temporal correlation with 2-LTR formation (C13) and citations to recent literature (C25) support nuclear RT completion. The inference that OR3 detection requires complete RT (C26, C106) is logical given the size of the fusion protein and requirement for DNA accessibility (C78).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C74",
+      "C75"
+    ],
+    "result": "HIV-1 cDNA separates from IN-FP inside the nucleus over time. At 8h post-infection, 70% of OR3 punctae colocalize with IN.SNAP, but this decreases to 14% by 24h. Live cell imaging directly demonstrates gradual separation of these markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Quantitative colocalization data at two time points (C27, C28) with appropriate error estimates, spatial proximity observations (C29), and direct live cell imaging evidence (C30) provide strong support. The observation of multiple OR3 punctae from single IN.SNAP complexes (C31) suggests clustering. The conclusion that IN-FP is unsuitable for tracking nuclear cDNA (C75) follows logically from the separation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C76",
+      "C77"
+    ],
+    "result": "Nuclear IN-FP punctae are strongly positive for both CA and CPSF6. CPSF6 shields CA from antibody detection in the nucleus, but can be displaced by PF74 treatment, revealing strong CA signals comparable to cytoplasmic complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Methanol extraction reveals CA on nuclear complexes (C32), CPSF6 colocalization is demonstrated (C33), and PF74 dose-dependently displaces CPSF6 (C37) while revealing CA signal (C38) within 30 minutes (C39). The specificity is confirmed by lack of PF74 effect on extranuclear particles (C40). The conclusion that CPSF6 masks CA epitopes (C41) is well-supported by the experimental manipulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Intact or largely intact HIV-1 capsids can enter the nucleus through intact nuclear pores. Nuclear complexes display CA intensities equal to or higher than cytoplasmic complexes, and this was confirmed in non-dividing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Live imaging of non-dividing cells combined with IF staining (C43) provides direct evidence for nuclear entry through intact pores. CA intensity quantification (C79, C42, C47) shows comparable or higher signals on nuclear complexes. The conclusion is supported by citation to recent work on NPC dimensions (C81) and CLEM-ET data showing intact capsids in nucleus (C49, C53).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "STED nanoscopy and CLEM-ET reveal that IN-positive/OR3-negative nuclear punctae correspond to clustered cone-shaped structures resembling intact HIV-1 capsids, while OR3-positive punctae correspond to elongated chromatin-like structures. Most structures (95%) are found in clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "STED microscopy resolves multiple CA signals within diffraction-limited spots (C48). CLEM-ET of 21 structures across 6 nuclei (C51) shows 10 cone-shaped capsids and 8 deformed structures at IN-positive positions (C53, C54), with internal densities in cones (C55) but not remnants (C56). OR3-positive positions show elongated chromatin-like structures (C57-C59). The sample size is modest but the morphological observations are clear and consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C90",
+      "C91"
+    ],
+    "result": "The pathway of nuclear capsid entry and cDNA separation is conserved across cell types including SupT1, primary CD4+ T cells, and MDM. In T cells, detection of nuclear CA requires both PF74 treatment and methanol extraction, but strong CA signals are detected in all cell types after appropriate treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Similar phenotypes observed in SupT1 (C60), primary CD4+ T cells (C61, C69, C70), and MDM (C71) support conservation. The cell-type-specific requirements for CA detection (C65, C109, C110) are systematically documented. The conclusion that prior failure to detect CA in T cells was due to CPSF6 masking (C67, C91) is supported by PF74 displacement experiments (C64). Strong CA signals detected in all cell types after appropriate treatment (C111) supports common pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C89",
+      "C92"
+    ],
+    "result": "HIV-1 uncoating occurs by physical disruption of the capsid in the nucleus rather than cooperative disassembly. Reverse transcription initiates in the cytoplasm inside an intact capsid, the capsid enters the nucleus where RT is completed, and the growing dsDNA may trigger local capsid rupture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model is supported by multiple lines of evidence: intact capsids in nucleus (C49, C53, C81), broken capsid remnants near cDNA (C54, C85), separation of cDNA from CA-containing structures (C85), and CLEM-ET showing physical breaks rather than gradual disassembly (C86). The proposed mechanism of dsDNA-induced rupture (C89) is speculative but consistent with observations and cited theoretical models. The integration of timing, localization, and structural data provides strong support for the overall model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C112",
+      "C113"
+    ],
+    "result": "Viral cDNA emerging from broken capsids resembles chromatinized DNA and may facilitate complete uncoating. Clustering of capsids in the nucleus indicates preferred trafficking routes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The observation of clustering (C87) is supported by CLEM-ET data (C52) and citations. The chromatin-like appearance of cDNA structures (C59, C113) is supported by morphology and citation to biochemical evidence. However, the proposal that chromatinization facilitates uncoating (C112) is explicitly speculative and lacks direct experimental support. The resemblance to in vitro ruptured cores (C88) is based on citation and morphological comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "The HIV-1 capsid plays an active role throughout early replication up to chromosomal integration and is the key orchestrator of early HIV-1 replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This broad conclusion (C93, C94) is supported by the cumulative evidence showing capsid presence and function at multiple stages: cytoplasmic trafficking, reverse transcription, nuclear entry, and intranuclear trafficking. The data demonstrating intact capsids in the nucleus and their persistence until uncoating support the capsid's central role. However, some functional aspects (e.g., shielding from innate immunity) are inferred from literature rather than directly demonstrated in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C45",
+      "C46",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Prior literature on HIV-1 capsid dimensions, NPC size, uncoating location, and CA detection in nuclear complexes is accurately cited and contextualized to establish the controversial nature of capsid uncoating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims accurately represent cited literature on CPSF6 function (C34, C35), PF74 mechanism (C36), capsid composition (C45, C46), size constraints (C95), conflicting reports on uncoating location (C96), and CA detection in nuclear complexes (C97-C99). These citations appropriately establish the context and controversy in the field (C100, C101).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The ANCHOR system is based on the prokaryotic ParB-parS system and has been previously applied to visualize DNA from multiple viruses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The description of the ANCHOR system mechanism (C102, C103) is accurate and the prior applications to other viruses (C104) are appropriately cited. This provides necessary methodological context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C78",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Technical observations about HIV-1 cDNA kinetics, OR3 accessibility requirements, and cell-type-specific differences in CA immunostaining efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The kinetics of total cDNA and 2-LTR circles (C6, C7) are quantified by ddPCR. The requirement for capsid opening for OR3 access (C78) is a logical inference from protein size. Cell-type differences in staining requirements (C107-C110) are systematically documented with appropriate controls. These technical observations support the main findings.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,493 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Ci-Bra is required for notochord-specific expression of Cr-Xbp1 in Ciona. Cr-Xbp1 is expressed in notochord and epidermis, and its notochord expression depends on Ci-Bra, as demonstrated by loss of notochord expression in Ci-Bra null mutants while epidermal expression remains intact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide converging evidence from expression analysis (C1), prior work (C2-C3), and genetic mutant analysis (C4-C6) demonstrating that Ci-Bra is required for Cr-Xbp1 notochord expression. The WMISH data in Ci-Bra-/- mutants (Figure 1C) directly demonstrates tissue-specific requirement, with normal expression in epidermis and sensory vesicle but loss in notochord.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Expression of a dominant-negative form of Cr-Xbp1 (Xbp1DBD::GFP) causes severe notochord defects including shorter tails, irregularly shaped cells, and aberrant intercalation. shRNA-mediated knockdown produces milder phenotypes at lower penetrance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 are supported by confocal microscopy data (Figure 2B-D) showing consistent phenotypes across multiple embryos. The comparison between dominant-negative and shRNA approaches provides internal validation, with the stronger perturbation (Xbp1DBD) producing more severe phenotypes as expected.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "Overexpression of full-length Xbp1 in notochord, CNS, and endoderm causes upward tail bending and notochord cells to be smaller and arranged in multiple rows.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 are supported by microscopy images (Figure 2E-F) showing consistent morphological changes. The phenotype is distinct from loss-of-function, suggesting gain-of-function effects rather than dominant-negative activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Expression of a hyperactive Xbp1 fusion protein (Xbp1DBD::VP16::GFP) causes changes in notochord cell shape and localization, with an abnormally high number of transgenic cells in the tail. The mechanism may involve cell repositioning or loss of cell division control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C13-C14 are supported by microscopy data (Figure 2H-I'), but C15-C16 are speculative mechanistic explanations without experimental validation. The phenotype is documented but the underlying cause remains unclear and would require additional experiments (e.g., cell lineage tracing, proliferation markers) to distinguish between proposed mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "Microarray screens identified 109 putative Cr-Xbp1 target genes, of which 71 (71%) are expressed in notochord cells, their precursors, or broader territories encompassing the notochord.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 are supported by triplicate microarray experiments with appropriate controls (GFP-expressing embryos). The high percentage of notochord-expressed genes (71%) validates the approach and is consistent with Cr-Xbp1's known notochord function. Expression patterns were verified by in situ hybridization (Figure 3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Cr-Xbp1 target genes are expressed in multiple tissues including notochord, epidermis, endoderm, mesenchyme, and sensory vesicle during embryogenesis, and in endostyle, hemocytes, and digestive tract after metamorphosis. These patterns are consistent with Cr-Xbp1 expression and include functionally characterized genes like Pitx and Nodal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C29 are supported by in situ hybridization data (Figures 1, 3) and citations to previous work characterizing these genes and expression patterns. The consistency between Cr-Xbp1 expression domains and target gene expression provides validation of the microarray results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "There is no overlap between Cr-Xbp1 downstream genes and those controlled by Bhlh-tun1, another notochord transcription factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 is supported by comparison with published Bhlh-tun1 targets (Kugler et al., 2019). This finding suggests distinct regulatory modules within the notochord GRN, though the lack of overlap could also reflect differences in experimental approaches or developmental timing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The repressor form of Cr-Xbp1 (Xbp1DBD::GFP) represses Ci-Bra expression in notochord cells, as demonstrated by lack of Ci-Bra mRNA in transgenic cells and disrupted notochord morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 are supported by fluorescent in situ hybridization data (Figure 4A-F) showing complete lack of overlap between transgene-expressing cells and Ci-Bra-expressing cells. This demonstrates a positive feedback loop where Xbp1 maintains Bra expression. The morphological defects are consistent with loss of Ci-Bra function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Fibrillin is uniformly expressed in control notochords but restricted to non-transgenic cells in Xbp1DBD::VP16::GFP embryos. The repression mechanism is likely indirect, possibly through activation of a repressor or competitive binding site occupancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C37-C38 are supported by in situ hybridization data (Figure 4G-H), but C39-C40 are speculative mechanistic explanations without experimental validation. The repression of fibrillin by a VP16 fusion (typically an activator) is unexpected and requires further investigation to determine the mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "In Xenopus, Xbra/Tbxt is expressed throughout mesoderm during gastrulation and in prospective notochord at neurula stages, while Xbp1 is first detected in the dorsal lip at early gastrula and persists in involuting dorsal mesoderm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 are supported by citations to established literature (Smith et al., 1991; Zhao et al., 2003). These are well-documented expression patterns that provide context for the regulatory experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Xbra and Xbp1 exhibit reciprocal positive regulation in Xenopus dorsal mesoderm. Xbra morphants show reduced Xbp1 expression (nearly all embryos), while Xbp1 morphants show reduced Xbra expression (approximately 65% of embryos).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are supported by morpholino knockdown experiments with quantification (Figure 5A-H). The reciprocal regulation demonstrates a positive feedback loop. The asymmetry in penetrance (nearly 100% vs 65%) may reflect differences in morpholino efficiency or the presence of additional Xbra regulators.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Splice-blocking morpholinos (XbraMOS and Xbp1MOS) produce phenotypes identical to translation-blocking morpholinos, validating the specificity of the knockdown effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by comparison of phenotypes (Figure 5E-H) and RT-PCR validation showing aberrant splicing (Figure 5\u2014figure supplement 1). The use of two independent morpholinos with different mechanisms provides strong evidence for specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Xbra and Xbp1 morphant Xenopus embryos display axis elongation defects, posterior truncations, and discontinuous Shh expression in the notochord, indicating impaired notochord differentiation. These phenotypes resemble those caused by dominant-interfering Xbra::Engrailed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 are supported by morphological analysis (Figure 6) and Shh in situ hybridization (Figure 6\u2014figure supplement 1). Claim C55 is a reasonable inference from the Shh data, as Shh is a well-established notochord differentiation marker. The similarity to Xbra-EnR phenotypes (C52) provides additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "Xbp1 and Xbra form a regulatory loop controlling dorsal mesoderm formation and notochord development/differentiation in Xenopus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are well-supported inferences from the reciprocal regulation experiments (C45-C47) and developmental phenotypes (C50-C55). The data demonstrate that both genes are required for proper notochord development and regulate each other's expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Brachyury and Foxa2 are indispensable for notochord development and constitute an evolutionarily conserved subcircuit of the notochord gene regulatory network across chordates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are supported by extensive citations to work across multiple chordate species (Stott et al., 1993; Ang and Rossant, 1994; Passamaneck et al., 2009; Tamplin et al., 2011; Di Gregorio, 2020). This represents established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The Ciona notochord develops within approximately 1 day, during which notochord cells secrete ECM to form the notochordal sheath and a fluid-filled lumen forms centrally. The lumen pressure on the rigid sheath provides a hydrostatic skeleton for larval swimming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 are supported by citations to established literature (Hotta et al., 2007; Denker, 2012; Dong et al., 2009; Deng et al., 2013; Bone, 1992; Kier, 2012). These represent well-documented aspects of Ciona notochord development and function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Xbp1 is a basic leucine-zipper transcription factor that regulates the unfolded protein response (UPR), an evolutionarily conserved mechanism for managing ER stress. The UPR involves three ER-stress sensors (Ire1, Perk, Atf6) that activate transcription factors (Xbp1, Atf4, Atf6-alpha) to restore proteostasis. Physiological processes like elevated secretory activity can also activate the UPR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 are supported by extensive citations to established UPR literature (Mai and Breeden, 1997; Yoshida et al., 2001; Yap et al., 2021; Hollien, 2013; Mitra and Ryoo, 2019; Walter and Ron, 2011; Han and Kaufman, 2017; Reimold et al., 2001; Iwakoshi et al., 2003; Shaffer et al., 2004; Tanegashima et al., 2009). This represents foundational knowledge about Xbp1 function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Loss of Xbp1 is embryonic lethal in Drosophila and in mice (beginning at E12.5), with mouse mutants developing hypoplastic livers and dying from anemia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 are supported by citations to previous work (Souid et al., 2007; Reimold et al., 2000). These are well-established findings demonstrating the essential nature of Xbp1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Xenopus Xbp1 regulates chaperone proteins (Hsp5A/Bip, DNAJ9B, HSP90B1), forms a regulatory loop with BMP-4 in mesoderm and neural differentiation, and is required for pancreas development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 are supported by citations to previous work (Tanegashima et al., 2009; Zhao et al., 2003; Cao et al., 2006; Yang et al., 2020). These represent established functions of Xenopus Xbp1 that provide context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "The regulation of BMP-4 by Xbp1 is conserved in the Ciona notochord, and DnaJc7 (a chaperone protein) is identified as a notochord target of Cr-Xbp1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 are supported by the microarray data identifying these genes as Cr-Xbp1 targets and expression analysis confirming notochord expression. This demonstrates conservation of Xbp1 function between Xenopus and Ciona.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "The regulatory connection between Brachyury and Xbp1 is maintained in Xenopus and is required for proper notochord development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 are supported by the morpholino experiments in Xenopus (Figures 5-6) demonstrating reciprocal regulation and notochord defects when either gene is knocked down. This represents a major finding of evolutionary conservation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "A ChIP-on-chip study identified 545 XBP1 targets in mouse cells, and at least half of the Cr-Xbp1 downstream genes with vertebrate orthologs can be predicted to participate in the UPR based on gene ontology correlation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 is supported by citation (Acosta-Alvear et al., 2007). Claim C79 is a reasonable inference based on comparison of gene ontologies between Ciona targets and known mouse XBP1 targets, though the prediction would benefit from experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "In mouse, Xbp1 is expressed in osteoblasts, chondroblasts, and node/notochord cells. Xbp1-/- mutation is embryonic lethal beginning at E12.5, which may indicate notochord defects, though this remains speculative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80-C82 are supported by citations (Clauss et al., 1993; Mittnenzweig et al., 2021; Reimold et al., 2000), but C83 is speculation without experimental validation. The timing of lethality and expression pattern are suggestive but not conclusive evidence for notochord defects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Xbp1 is expressed in the chick notochord, and Xbp1/UPR genes have been incorporated into notochord formation early during chordate evolution and retained in vertebrates as components of the essential notochord developmental program.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 is supported by citations (Bell et al., 2004; Darnell et al., 2007). Claims C85-C86 are well-supported inferences based on the conservation of Xbp1 expression and function in notochord across Ciona, Xenopus, zebrafish, medaka, and chick, as demonstrated throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "Brachyury and Xbp1 form a cross-regulatory subcircuit of the notochord gene regulatory network that has been consolidated during chordate evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 is supported by the reciprocal regulation experiments in both Ciona (C35) and Xenopus (C45-C47), demonstrating conservation of this regulatory interaction across ~500 million years of evolution. This represents the central conclusion of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "50.7% of Cr-Xbp1 downstream notochord genes had been previously reported as Ci-Bra targets, suggesting that Cr-Xbp1 might act as a transcriptional intermediary of Ci-Bra during late notochord development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 is supported by citations to multiple previous studies (Takahashi et al., 1999; Hotta et al., 1999, 2000; Kubo et al., 2010; Reeves et al., 2017). Claim C89 is a reasonable inference from the extensive overlap, though the intermediary role would be strengthened by temporal expression analysis and direct binding studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "At least 50% of Cr-Xbp1 downstream notochord genes participate in the UPR in other organisms. UPR genes are activated under physiological conditions in secretory cells. Cr-Xbp1 controls evolutionarily conserved UPR effectors including proteases, chaperones, trafficking mediators, and autophagy regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 are supported by comparison with known UPR genes (C90), extensive citations to UPR in secretory cells (C91), and the microarray data identifying specific UPR effectors as Cr-Xbp1 targets (C92). This demonstrates co-option of UPR machinery for notochord development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Autophagy allows selective degradation of misfolded proteins and defective organelles in response to stress, including hyperosmotic stress in intervertebral disc notochord cells. Ubiquitin ligases and histone HIST1C/H1.2 are autophagy regulators controlled by Cr-Xbp1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 are supported by citations to established autophagy literature (Kania et al., 2015; Jiang et al., 2015; Grumati and Dikic, 2018; Wang et al., 2017) and identification of these genes as Cr-Xbp1 targets in the microarray data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "The UPR can induce compensatory changes in mitochondrial function, and the presence of mitochondrial metabolic enzymes among Cr-Xbp1 targets suggests this strategy may be present in Ciona.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C97 is supported by citation (Senft and Ronai, 2015), but C98 is speculative inference from the presence of mitochondrial enzymes in the target gene list without functional validation of their role in UPR-mitochondrial crosstalk.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "TGF-\u03b2 activates Xbp1 expression in fibroblasts. Cr-Xbp1 regulates olfactomedin 2, which acts downstream of TGF-\u03b2 in smooth muscle. This regulation is likely indirect based on the absence of Xbp1 binding sites in the olfactomedin 2 enhancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 are supported by citations (Baek et al., 2012; Shi et al., 2014) and microarray data. Claim C102 is a reasonable inference based on previous enhancer characterization (Jos\u00e9-Edwards et al., 2015) showing reliance on Fox, homeodomain, and AP1 sites rather than Xbp1 sites.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Cr-Xbp1 regulates ECM components including hemicentins (cell adhesion regulators), fibronectin-1 (ECM assembly and TGF-\u03b2 modulation), and fibrinogen-like (neuronal positioning via Notch signaling). These findings suggest Cr-Xbp1 is involved in ECM secretion, a crucial step of notochord morphogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106 are supported by citations to previous work (Xu et al., 2013; Halper and Kjaer, 2014; Davidson et al., 2006; Zilberberg et al., 2012; Hotta et al., 2000; Yamada et al., 2009) and identification of these genes as Cr-Xbp1 targets. Claim C107 is a well-supported inference from the ECM gene targets and notochord phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The Xbp1DBD-induced notochord intercalation defect resembles Ci-Bra mutants and can be explained by altered expression of Noto4/PID1 (required for intercalation), ECM components, Gnai1/2/3 (vesicle trafficking), and Nek1/3/5 (cell cycle regulation). Upregulation of Nek1/3/5 may explain abnormal cell numbers in Xbp1DBD::VP16 embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C108-C109 are supported by comparison with Ci-Bra mutants (Chiba et al., 2009; Yamada et al., 2011). Claims C110-C112 are supported by citations (Kim et al., 2020; Fry et al., 2012) and microarray data. However, C113 is speculation without functional validation that Nek1/3/5 upregulation causes the increased cell number phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "Cr-Xbp1 participates in lumen formation and tubulogenesis by regulating Slc26 and four additional solute carriers. Slc26 is the transmembrane transporter necessary for central lumen expansion in the Ciona notochord.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 are supported by the microarray data identifying these transporters as Cr-Xbp1 targets and citation to previous work (Deng et al., 2013) demonstrating Slc26's essential role in lumen formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Among lower vertebrates, Xbp1 is expressed in zebrafish notochord, UPR effectors are required for notochord vacuolization in medaka, and Xbp1 knockdown causes smaller notochords in Xenopus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C118 are supported by citations to previous work (Liang et al., 2001; Ishikawa et al., 2017; Tanegashima et al., 2009). These findings demonstrate conservation of Xbp1 function in notochord development across lower vertebrates.",
+    "result_type": "MINOR"
+  }
+]

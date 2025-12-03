@@ -1,0 +1,1240 @@
+{
+  "submission": {
+    "id": "34ee3016-cb6a-462b-9d5c-4ec7130f2643",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T17:55:11.001147Z",
+    "updated_at": "2025-12-03T17:55:11.001147Z"
+  },
+  "content": [
+    {
+      "id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "submission_id": "34ee3016-cb6a-462b-9d5c-4ec7130f2643",
+      "content_type": "manuscript",
+      "content_text": "# Population codes enable learning from few examples by shaping inductive bias\n\n## Authors\n\n- Blake Bordelon<sup>1</sup> ([ORCID: 0000-0003-0455-9445](https://orcid.org/0000-0003-0455-9445))\n- Cengiz Pehlevan<sup>1</sup> ([ORCID: 0000-0001-9767-6063](https://orcid.org/0000-0001-9767-6063)) \u2020\n\n### Affiliations\n\n1. John A Paulson School of Engineering and Applied Sciences, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))\n2. Center for Brain Science, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))\n\n\u2020 Corresponding author\n\n## Abstract\n\nLearning from a limited number of experiences requires suitable inductive biases. To identify how inductive biases are implemented in and shaped by neural codes, we analyze sample-efficient learning of arbitrary stimulus-response maps from arbitrary neural codes with biologically-plausible readouts. We develop an analytical theory that predicts the generalization error of the readout as a function of the number of observed examples. Our theory illustrates in a mathematically precise way how the structure of population codes shapes inductive bias, and how a match between the code and the task is crucial for sample-efficient learning. It elucidates a bias to explain observed data with simple stimulus-response maps. Using recordings from the mouse primary visual cortex, we demonstrate the existence of an efficiency bias towards low-frequency orientation discrimination tasks for grating stimuli and low spatial frequency reconstruction tasks for natural images. We reproduce the discrimination bias in a simple model of primary visual cortex, and further show how invariances in the code to certain stimulus variations alter learning performance. We extend our methods to time-dependent neural codes and predict the sample efficiency of readouts from recurrent networks. We observe that many different codes can support the same inductive bias. By analyzing recordings from the mouse primary visual cortex, we demonstrate that biological codes have lower total activity than other codes with identical bias. Finally, we discuss implications of our theory in the context of recent developments in neuroscience and artificial intelligence. Overall, our study provides a concrete method for elucidating inductive biases of the brain and promotes sample-efficient learning as a general normative coding principle.\n\n## Introduction\n\nThe ability to learn quickly is crucial for survival in a complex and an everchanging environment, and the brain effectively supports this capability. Often, only a few experiences are sufficient to learn a task, whether acquiring a new word (Carey and Bartlett, 1978) or recognizing a new face (Peterson et al., 2009). Despite the importance and ubiquity of sample efficient learning, our understanding of the brain\u2019s information encoding strategies that support this faculty remains poor (Tenenbaum et al., 2011; Lake et al., 2017; Sinz et al., 2019).\n\nIn particular, when learning and generalizing from past experiences, and especially from few experiences, the brain relies on implicit assumptions it carries about the world, or its inductive biases (Wolpert, 1996; Sinz et al., 2019). Reliance on inductive bias is not a choice: inferring a general rule from finite observations is an ill-posed problem which requires prior assumptions since many hypotheses can explain the same observed experiences (Hume, 1998). Consider learning a rule that maps photoreceptor responses to a prediction of whether an observed object is a threat or is neutral. Given a limited number of visual experiences of objects and their threat status, many threat-detection rules are consistent with these experiences. By choosing one of these threat-detection rules, the nervous system reveals an inductive bias. Without the right biases that suit the task at hand, successful generalization is impossible (Wolpert, 1996; Sinz et al., 2019). In order to understand why we can quickly learn to perform certain tasks accurately but not others, we must understand the brain\u2019s inductive biases (Tenenbaum et al., 2011; Lake et al., 2017; Sinz et al., 2019).\n\nIn this paper, we study sample efficient learning and inductive biases in a general neural circuit model which comprises of a population of sensory neurons and a readout neuron learning a stimulus-response map with a biologically-plausible learning rule (Figure 1A). For this circuit and learning rule, inductive bias arises from the nature of the neural code for sensory stimuli, specifically its similarity structure. While different population codes can encode the same stimulus variables and allow learning of the same output with perfect performance given infinitely many samples, learning performance can depend dramatically on the code when restricted to a small number of samples, where the reliance on and the effect of inductive bias are strong (Figure 1B, C and D). Given the same sensory examples and their associated response values, the readout neuron may make drastically different predictions depending on the inductive bias set by the nature of the code, leading to successful or failing generalizations (Figure 1C and D). We say that a code and a learning rule, together, have a good inductive bias for a task if the task can be learned from a small number of examples.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/78606/elife-78606-fig1-v2.jpg)\n\n**Figure 1.:** (A) The readout weights from the population to a downstream neuron, shown in blue, are updated to fit target values $y$, using the local, biologically plausible delta rule. (B) Examples of tuning curves for two different population codes: Smooth tuning curves (Code 1) and rapidly varying tuning curves (Code 2). (C) (Left) A target function with low frequency content is approximated through the learning rule shown in A using these two codes. The readout from Code 1 (turquoise) fits the target function (black) almost perfectly with only $P=12$ training examples, while readout from Code 2 (purple) does not accurately approximate the target function. (Right) However, when the number of training examples is sufficiently large ($P=120$), the target function is estimated perfectly by both codes, indicating that both codes are equally expressive. (D) The same experiment is performed on a task with higher frequency content. (Left) Code 1 fails to perform well with $P=12$ samples indicating mismatch between inductive bias and the task can prevent sample efficient learning while Code 2 accurately fits the target. (Right) Again, provided enough data $P=120$, both models can accurately estimate the target function. Details of these simulations are given in Methods Generating example codes (Figure 1).\n\nIn order to understand how population codes shape inductive bias and allow fast learning of certain tasks over others with a biologically plausible learning rule, we develop an analytical theory of the readout neuron\u2019s learning performance as a function of the number of sampled examples, or sample size. We find that the readout\u2019s performance is completely determined by the code\u2019s kernel, a function which takes in pairs of population response vectors and outputs a representational similarity defined by the inner product of these vectors. We demonstrate that the spectral properties of the kernel introduce an inductive bias toward explaining sampled data with simple stimulus-response maps and determine compatibility of the population code with the learning task, and hence the sample-efficiency of learning. We apply this theory to data from the mouse primary visual cortex (V1) (Stringer et al., 2021; Pachitariu et al., 2019; Stringer et al., 2018a; Stringer et al., 2018b), and show that mouse V1 responses support sample-efficient learning of low frequency orientation discrimination and low spatial frequency reconstruction tasks over high frequency ones. We demonstrate the discrimination bias in a simple model of V1 and show how response nonlinearity, sparsity, and relative proportion of simple and complex cells influence the code\u2019s bias and performance on learning tasks, including ones that involve invariances. We extend our theory to temporal population codes, including codes generated by recurrent neural networks learning a delayed response task. We observe that many codes could support the same kernel function, however, by analyzing data from mouse primary visual cortex (V1) (Stringer et al., 2021; Pachitariu et al., 2019; Stringer et al., 2018a; Stringer et al., 2018b), we find that the biological code is metabolically more efficient than others.\n\nOverall, our results demonstrate that for a fixed learning rule, the neural sensory representation imposes an inductive bias over the space of learning tasks, allowing some tasks to be learned by a downstream neuron more sample-efficiently than others. Our work provides a concrete method for elucidating inductive biases of populations of neurons and suggest sample-efficient learning as a novel functional role for population codes.\n\n## Results\n\n### Problem setup\n\nWe denote vectors with bold lower-case symbols $r$ and matrices $K$ with bold upper-case symbols. We denote an average of a function $g\u2062(\\theta)$ over random variable $\\theta$ as $\u27e8g(\\theta)\u27e9_{\\theta}$. Euclidean inner products between vectors are denoted either as $x\u22c5y$ or $x^{\u22a4}\u2062y$ and real Euclidean $n$-space is denoted $\u211d^{n}$. Sets of variables are represented with ${\u22c5}$.\n\nWe consider a population of $N$ neurons whose responses, ${r_{1}\u2062(\\theta),r_{2}\u2062(\\theta),\u2026,r_{N}\u2062(\\theta)}$, vary with the input stimuli, which is parameterized by a vector variable $\\theta\\in\u211d^{d}$, such as the orientation and the phase of a grating (Figure 1A). These responses define the population code. Throughout this work, we will mostly assume that this population code is deterministic: that identical stimuli generate identical neural responses.\n\nFrom the population responses, a readout neuron learns its weights $w$ to approximate a stimulus-response map, or a target function $y\u2062(\\theta)$, such as one that classifies stimuli as apetitive ($y=1$) or aversive ($y=-1$), or a more smooth one that attaches intermediate values of valence. We emphasize that in our model only the readout neuron performs learning, and the population code is assumed to be static through learning. Our theory is general in its assumptions about the structure of the population code and the stimulus-response map considered (Methods Theory of generalization), and can apply to many scenarios.\n\nThe readout neuron learns from $P$ stimulus-response examples with the goal of generalizing to previously unseen ones. Example stimuli $\\theta^{\\mu}$, ($\\mu=1,\u2026,P$) are sampled from a probability distribution describing stimulus statistics $p\u2062(\\theta)$. This distribution can be natural or artificially created, for example, for a laboratory experiment (Appendix Discrete stimulus spaces: finding eigenfunctions with matrix eigendecomposition). From the set of learning examples, $D={\\theta^{\\mu},y(\\theta^{\\mu})}_{\\mu=1}^{P}$, the readout weights are learned with the local, biologically-plausible delta-rule, $\u0394\u2062w_{j}=\u03b7\u2062\\sum_{\\mu}r_{j}\u2062(\\theta^{\\mu})\u2062(y\u2062(\\theta^{\\mu})-r\u2062(\\theta^{\\mu})\u22c5w)$,where $\u03b7$ is a learning rate (Figure 1A). Learning with weight decay, which privileges readouts with smaller norm, can also be accommodated in our theory as we discuss in (Appendix Weight decay and ridge regression). With or without weight decay, the learning rule converges to a unique set of weights $w^{\u2217}(D)$ (Appendix Convergence of the delta-rule without weight decay). Generalization error with these weights is given by\n\n$$\nE_{g}(D)=\\intp(\\theta)\u00a0(w^{\u2217}(D)\u22c5r(\\theta)\u2212y(\\theta))^{2}d\\theta,\n$$\n\nwhich quantifies the expected error of the trained readout over the entire stimulus distribution $p\u2062(\\theta)$. This quantity will depend on the population code $r\u2062(\\theta)$, the target function $y\u2062(\\theta)$ and the set of training examples $D$. Our theoretical analysis of this model provides insights into how populations of neurons encode information and allow sample-efficient learning.\n\n### Kernel structure of population codes controls learning performance\n\nFirst, we note that the generalization performance of the learned readout on a given task depends entirely on the inner product kernel, defined by $K\u2062(\\theta,\\theta^{\u2032})=\\frac{1}{N}\u2062\\sum_{i=1}^{N}r_{i}\u2062(\\theta)\u2062r_{i}\u2062(\\theta^{\u2032})$, which quantifies the similarity of population responses to two different stimuli $\\theta$ and $\\theta^{\u2032}$. The kernel, or similarity matrix, encodes the geometry of the neural responses. Concretely, distances (in neural space) between population vectors for stimuli $\\theta,\\theta^{\u2032}$ can be computed from the kernel $\\frac{1}{N}\u2062||r\u2062(\\theta)-r\u2062(\\theta^{\u2032})||^{2}=K\u2062(\\theta,\\theta)+K\u2062(\\theta^{\u2032},\\theta^{\u2032})-2\u2062K\u2062(\\theta,\\theta^{\u2032})$ (Edelman, 1998; Kriegeskorte et al., 2008; Laakso and Cottrell, 2000; Kornblith et al., 2019; Cadieu et al., 2014; Pehlevan et al., 2018). The fact that the solution to the learning problem only depends on the kernel is due to the convergence of the learning rule to a unique solution $w^{\u2217}(D)$ for the training set $D$ (Neal, 1994; Girosi et al., 1995). The dataset-dependent fixed point $w^{\u2217}(D)$ of the learning rule is a linear combination of the population vectors on the dataset $w^{\u2217}(D)=\\frac{1}{N}\\sum\\mu=1P\\alpha^{\\mu}r(\\theta^{\\mu})$. Thus, the learned function computed by the readout neuron is\n\n$$\nf(\\theta)=w^{\u2217}(D)\u22c5r(\\theta)=\\sum\\mu=1P\\alpha^{\\mu}(\\frac{1}{N}r(\\theta^{\\mu})\u22c5r(\\theta))=\\sum\\mu=1P\\alpha^{\\mu}K(\\theta^{\\mu},\\theta),\n$$\n\nwhere the coefficient vector satisfies $\\alpha=K^{+}\u2062y$ (Appendix Convergence of the delta-rule without weight decay), and the matrix $K$ has entries $K_{\\mu\u2062\u03bd}=K\u2062(\\theta^{\\mu},\\theta^{\u03bd})$ and $y_{\\mu}=y(\\theta^{\\mu})$. The matrix K+ is the pseudo-inverse of $K$. In these expressions the population code only appears through the kernel $K$, showing that the kernel alone controls the learned response pattern. This result applies also to nonlinear readouts (Appendix Convergence of Delta-rule for nonlinear readouts), showing that the kernel can control the learned solution in a variety of cases.\n\nSince predictions only depend on the kernel, a large set of codes achieve identical desired performance on learning tasks. This is because the kernel is invariant with respect to rotation of the population code. An orthogonal transformation $Q$ applied to a population code $r\u2062(\\theta)$ generates a new code $r~\u2062(\\theta)=Qr\u2062(\\theta)$ with an identical kernel (Appendix Alternative neural codes with same kernel) since $\\frac{1}{N}\u2062r~\u2062(\\theta)\u22c5r~\u2062(\\theta^{\u2032})=\\frac{1}{N}\u2062r\u2062(\\theta)^{\u22a4}\u2062Q^{\u22a4}\u2062Qr\u2062(\\theta^{\u2032})=\\frac{1}{N}\u2062r\u2062(\\theta)\u22c5r\u2062(\\theta^{\u2032})$. Codes $r\u2062(\\theta)$ and $r~\u2062(\\theta)$ will have identical readout performance on all possible learning tasks. We illustrate this degeneracy in Figure 2 using a publicly available dataset which consists of activity recorded from \u223c20,000 neurons from the primary visual cortex of a mouse while shown static gratings (Stringer et al., 2021; Pachitariu et al., 2019). An original code $r\u2062(\\theta)$ is rotated to generate $r~\u2062(\\theta)$ (Figure 2A) which have the same kernels (Figure 2B) and the same performance on a learning task (Figure 2C).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/78606/elife-78606-fig2-v2.jpg)\n\n**Figure 2.:** (A) Tuning curves $r\u2062(\\theta)$ for three example recorded Mouse V1 neurons to varying static grating stimuli oriented at angle $\\theta$ (Stringer et al., 2021; Pachitariu et al., 2019) (Left) are compared with a randomly rotated version (Middle) $r~\u2062(\\theta)$ of the same population code. (Right) These two codes, original (Ori.) and rotated (Rot.) can be visualized as parametric trajectories in neural space. (B) The inner product kernel matrix has elements $K\u2062(\\theta_{1},\\theta_{2})$. The original V1 code and its rotated counterpart have identical kernels. (C) In a learning task involving uniformly sampled angles, readouts from the two codes perform identically, resulting in identical approximations of the target function (shown on the left as blue and red curves) and consequently identical generalization performance as a function of training set size $P$ (shown on right with blue and red points). The theory curve will be described in the main text.\n\n### Code-task alignment governs generalization\n\nWe next examine how the population code affects generalization performance of the readout. We calculated analytical expressions of the average generalization error in a task defined by the target response $y\u2062(\\theta)$ after observing $P$ stimuli using methods from statistical physics (Methods Theory of generalization). Because the relevant quantity in learning performance is the kernel, we leveraged results from our previous work studying generalization in kernel regression (Bordelon et al., 2020; Canatar et al., 2021), and approximated the generalization error averaged over all possible realizations of the training dataset composed of $P$ stimuli, $E_{g}=\u27e8E_{g}(D)\u27e9_{D}$. As $P$ increases, the variance in $E_{g}$ due to the composition of the dataset decreases, and our expressions become descriptive of the typical case. Our final analytical result is given in Equation (11) in Methods Theory of generalization. We provide details of our calculations in Methods Theory of generalization and Appendix Theory of generalization, and focus on their implications here.\n\nOne of our main observations is that given a population code $r\u2062(\\theta)$, the singular value decomposition of the code gives the appropriate basis to analyze the inductive biases of the readouts (Figure 3A). The tuning curves for individual neurons $r_{i}\u2062(\\theta)$ form an $N$-by-$M$ matrix $R$, where $M$, possibly infinite, is the number of all possible stimuli. We discuss the SVD for continuous stimulus spaces in Appendix Singular value decomposition of continuous population responses. The left-singular vectors (or principal axes) and singular values of this matrix have been used in neuroscience for describing lower dimensional structure in the neural activity and estimating its dimensionality, see e.g. (Stopfer et al., 2003; Kato et al., 2015; Bathellier et al., 2008; Gallego et al., 2017; Sadtler et al., 2014; Stringer et al., 2018b, Stringer et al., 2021; Litwin-Kumar et al., 2017; Gao et al., 2017; Gao and Ganguli, 2015). We found that the function approximation properties of the code are controlled by the singular values, or rather their squares ${\\lambda_{k}}$ which give variances along principal axes, indexed in decreasing order, and the corresponding right singular vectors ${\u03c8_{k}\u2062(\\theta)}$, which are also the kernel eigenfunctions (Methods Theory of generalization and Appendix Singular value decomposition of continuous population responses). This follows from the fact that learned response (Equation (2)) is only a function of the kernel $K$, and the eigenvalues $\\lambda_{k}$ and orthonormal (uncorrelated) eigenfunctions $\u03c8_{k}\u2062(\\theta)$ collectively define the code\u2019s inner-product kernel $K\u2062(\\theta,\\theta^{\u2032})$ through an eigendecomposition $K\u2062(\\theta,\\theta^{\u2032})=\\frac{1}{N}\u2062\\sum_{i=1}^{N}r_{i}\u2062(\\theta)\u2062r_{i}\u2062(\\theta^{\u2032})=\\sum_{k}\\lambda_{k}\u2062\u03c8_{k}\u2062(\\theta)\u2062\u03c8_{k}\u2062(\\theta^{\u2032})$ (Mercer, 1909) (Methods Theory of generalization and Appendix Theory of generalization).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/78606/elife-78606-fig3-v2.jpg)\n\n**Figure 3.:** (A) SVD of the response matrix $R$ gives left singular vectors $u_{k}$ (principal axes), kernel eigenvalues $\\lambda_{k}$, and kernel eigenfunctions $\u03c8_{k}\u2062(\\theta)$. The ordering of eigenvalues provides an ordering of which modes $\u03c8_{k}$ can be learned by the code from few training examples. The eigenfunctions were offset by 0.5 for visibility. (B) (Left) Two different learning tasks $y\u2062(\\theta)$, a low frequency (blue) and high frequency (red) function, are shown. (Middle) The cumulative power distribution rises more rapidly for the low frequency task than the high frequency, indicating better alignment with top kernel eigenfunctions and consequently more sample-efficient learning as shown in the learning curves (right). Dashed lines show theoretical generalization error while dots and solid vertical lines are experimental average and standard deviation over 30 repeats. (C) The feature space representations of the low (left) and high (middle and right) frequency tasks. Each point represents the embedding of a stimulus response vector along the $k$-th principal axis $r(\\theta^{\\mu})\u22c5u_{k}=\\sqrt{\\lambda_{k}}\u03c8_{k}(\\theta^{\\mu})$. The binary target value ${\\pm1}$ is indicated with the color of the point. The easy (left), low frequency task is well separated along the top two dimensions, while the hard, high frequency task is not linearly separable in two (middle) or even with four feature dimensions (right). (D) On an image discrimination task (recognizing birds vs mice), V1 has an entangled representation which does not allow good performance of linear readouts. This is evidenced by the top principal components (middle) and the slowly rising $C\u2062(k)$ curve (right).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78606/elife-78606-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) The kernels for the V1 code where trial averaging is performed with 50, 100, 200 bins. (B) Despite the different bin values, the top eigenvalues are all very close, however, effects at the tail are visible. This is likely due to the reduction of trials per bin as the number of bins is increased. (C) Further, the top eigenfunctions are very similar for all bin counts. Since a higher number of bins means fewer trials to average over, the eigenfunctions for large bin count experiments are noisier.\n\nOur analysis shows the existence of a bias in the readout towards learning certain target responses faster than others. The target response $y\u2062(\\theta)=\\sum_{k}v_{k}\u2062\u03c8_{k}\u2062(\\theta)$ and the learned readout response $f(\\theta)=\\sumkv^_{k}(D)\u03c8_{k}(\\theta)$ can be expressed in terms of these eigenfunctions $\u03c8_{k}$. Our theory shows that the readout\u2019s generalization is better if the target function $y\u2062(\\theta)$ is aligned with the top eigenfunctions $\u03c8_{k}$, equivalent to $v_{k}^{2}$ decaying rapidly with $k$ (Appendix Spectral bias and code-task alignment). We formalize this notion by the following metric. Mathematically, generalization error $\u27e8E_{g}\u27e9$ can be decomposed into normalized estimation errors $E_{k}$ for the coefficients of these eigenfunctions $\u03c8_{k}$, $\u27e8E_{g}\u27e9_{D}=\\sumkv_{k}^{2}E_{k}$, where $E_{k}=\u27e8(v^_{k}(D)\u2212v_{k})^{2}\u27e9_{D}/v_{k}^{2}$. We found that the ordering of the eigenvalues $\\lambda_{k}$ controls the rates at which these mode errors $E_{k}$ decrease as $P$ increases (Methods Theory of generalization, Appendix Spectral bias and code-task alignment), (Bordelon et al., 2020): $\\lambda_{k}>\\lambda_{\u2113}\u27f9E_{k}<E_{\u2113}$. Hence, larger eigenvalues mean lower generalization error for those normalized mode errors $E_{k}$. We term this phenomenon the spectral bias of the readout. Based on this observation, we propose code-task alignment as a principle for good generalization. To quantify code-task alignment, we use a metric which was introduced in Canatar et al., 2021 to measure the compatibility of a kernel with a learning task. This is the cumulative power distribution $C\u2062(k)$ which measures the total power of the target function in the top $k$ eigenmodes, normalized by the total power (Canatar et al., 2021):\n\n$$\nC\u2062(k)=\\frac{\\sum_{\u2113=1}^{k}v_{\u2113}^{2}}{\\sum_{\u2113=1}^{\u221e}v_{\u2113}^{2}}.\n$$\n\nStimulus-response maps that have high alignment with the population code\u2019s kernel will have quickly rising cumulative power distributions $C\u2062(k)$, since a large proportion of power is placed in the top modes. Target responses with high $C\u2062(k)$ can be learned with fewer training samples than target responses with low $C\u2062(k)$ since the mode errors $E_{k}$ are ordered for all $P$ (Appendix Spectral bias and code-task alignment).\n\n### Probing learning biases in neural data\n\nOur theory can be used to probe the learning biases of neural populations. Here, we provide various examples of this using publicly available calcium imaging recordings from mouse primary visual cortex (V1). Our examples illustrate how our theory can be used to analyze neural data.\n\nWe first analyzed population responses to static grating stimuli oriented at an angle $\\theta$ (Stringer et al., 2021; Pachitariu et al., 2019). We found that the kernel eigenfunctions have sinusoidal shape with differing frequency. The ordering of the eigenvalues and eigenfunctions in Figure 3A (and Figure 3\u2014figure supplement 1) indicates a frequency bias: lower frequency functions of $\\theta$ are easier to estimate at small sample sizes.\n\nWe tested this idea by constructing two different orientation discrimination tasks shown in Figure 3B and C, where we assign static grating orientations to positive or negative valence with different frequency square-wave functions of $\\theta$. We trained the readout using a subset of the experimentally measured neural responses, and measured the readout\u2019s generalization performance. We found that the cumulative power distribution for the low frequency task has a more rapidly rising $C\u2062(k)$ (Figure 3B). Using our theory of generalization, we predicted learning curves for these two tasks, which express the generalization error as a function of the number of sampled stimuli $P$. The error for the low frequency task is lower at all sample sizes than the hard, high-frequency task. The theoretical predictions and numerical experiments show perfect agreement (Figure 3B). More intuition can be gained by visualizing the projection of the neural response along the top principal axes (Figure 3C). For the low-frequency task, the two target values are well separated along the top two axes. However, the high-frequency task is not well separated along even the top four axes (Figure 3C).\n\nUsing the same ideas, we can use our theory to get insight into tasks which the V1 population code is ill-suited to learn. For the task of identifying mice and birds (Stringer et al., 2018b, Stringer et al., 2018a) the linear rise in cumulative power indicates that there is roughly equal power along all kernel eigenfunctions, indicating that the representation is poorly aligned to this task (Figure 3D).\n\nTo illustrate how our approach can be used for different learning problems, we evaluate the ability of linear readouts to reconstruct natural images from neural responses to those images (Figure 4). The ability to reconstruct sensory stimuli from a neural code is an influential normative principle for primary visual cortex (Olshausen and Field, 1997). Here, we ask which aspects of the presented natural scene stimuli are easiest to learn to reconstruct. Since mouse V1 neurons tend to be selective towards low spatial frequency bands (Niell and Stryker, 2008Bonin et al., 2011; Vreysen et al., 2012), we consider reconstruction of band-pass filtered images with spatial frequency wave-vector $k\\in\u211d^{2}$ constrained to an annulus $|k|\\in[\\sqrt{max(s_{max}^{2}\u2212r^{2},0)},s_{max}]$ for $r=0.2$ (in units of $pixels^{-1}$) and plot the cumulative power $C\u2062(k)$ associated with each choice of the upper limit $s_{m\u2062a\u2062x}$ (Figure 4C and D). The frequency cutoffs were chosen in this way to preserve the volume in Fourier space to $V_{k}=\\pi\u2062r^{2}$ for $r<s_{max}$, which quantifies the dimension of the function space. We see that the lower frequency band-limited images are easier to reconstruct, as evidenced by their cumulative power $C\u2062(k)$ and learning curves $E_{g}$ (Figure 4D and E). This reflects the fact that the population preferentially encodes low spatial frequency content in the image (Figure 4F). Experiments with additional values of $r$ are provided in the Figure 4\u2014figure supplement 1 with additional details found in the Appendix Visual scene reconstruction task.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/78606/elife-78606-fig4-v2.jpg)\n\n**Figure 4.:** (A) Natural scene stimuli $\\theta$ were presented to mice and V1 cells were recorded. (B) The images weighted by the top eigenfunctions $v_{k}=\u27e8\u03c8_{k}(\\theta)\\theta\u27e9_{\\theta}$. These \u201ceigenimages\" collectively define the difficulty of reconstructing images through readout. (C) The kernel spectrum of the V1 code for natural images. (D) The cumulative power curves for reconstruction of band-pass filtered images. Filters preserve spatial frequencies in the range $|k|\\in[\\sqrt{max(s_{max}^{2}\u22120.2^{2},0)},s_{max}]$, chosen to preserve volume in Fourier space as $s_{m\u2062a\u2062x}$ is varied. (E) The learning curves obey the ordering of the cumulative power curves. The images filtered with the lowest band-pass cutoff are easiest to reconstruct from the neural responses. (F) Examples of a band-pass filtered image with different preserved frequency bands.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78606/elife-78606-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The inductive bias to reconstruct low spatial frequency components of natural scenes from the population responses holds over several band-pass filters of the form $|k|\\in[\\sqrt{max(s_{max}^{2}\u2212r^{2},0)},s_{max}]$.(A) The cumulative power curves for reconstruction of the filtered images with different values of $c$ and $s_{m\u2062a\u2062x}$. Lower values of $s_{m\u2062a\u2062x}$ and higher values of $c$ preserve mostly low frequency content in the images and are easier to reconstruct from the neural responses. (B) The learning curves respect the ordering of the cumulative power metric $C\u2062(k)$.\n\n### Mechanisms of spectral bias and code-task alignment in a simple model of V1\n\nHow do population level inductive biases arise from properties of single neurons? To illustrate that a variety of mechanisms may be involved in a complex manner, we study a simple model of V1 to elucidate neural mechanisms that lead to the low frequency bias at the population level. In particular, we focus on neural nonlinearities and selectivity profiles.\n\nWe model responses of V1 neurons as photoreceptor inputs passed through Gabor filters and a subsequent experimentally motivated power-law nonlinearity (Adelson and Bergen, 1985; Olshausen and Field, 1997; Rumyantsev et al., 2020), modeling a population of orientation selective simple cells (Figure 5A) (see Appendix A simple feedforward model of V1). In this model, the kernel for static gratings with orientation $\\theta\\in[0,\\pi]$ is of the form $K\u2062(\\theta,\\theta^{\u2032})=\u03ba\u2062(|\\theta-\\theta^{\u2032}|)$, and, as a consequence, the eigenfunctions of the kernel in this setting are Fourier modes. The eigenvalues, and hence the strength of the spectral bias, are determined by the nonlinearity as we discuss in Appendix Gabor model spectral bias and fit to V1 data. We numerically fit the parameters of the nonlinearity to the V1 responses and use these parameters our investigations in Figure 5\u2014figure supplement 1.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/78606/elife-78606-fig5-v2.jpg)\n\n**Figure 5.:** (A) Gabor filtered inputs are mapped through nonlinearity. A grating stimulus (left) with orientation $\\theta$ and phase $\u03d5$ is mapped through a circuit of simple and complex cells (middle). Some examples of randomly sampled Gabor filters (right) generate preferred orientation tuning of neurons in the population. (B) We plot the top 12 eigenfunctions $\u03c8_{k}\u2062(\\theta,\u03d5)$ (modes) for pure simple cell population, pure complex cell population and a mixture population with half simple and half complex cells. The pure complex cell population has all eigenfunctions independent of phase $\u03d5$. A pure simple cell population $s=1$ or mixture codes $0<1$ depend on both orientation phase in a nontrivial way. (C) Three tasks are visualized, where color indicates the binary target value \u00b1 1. The left task only depends on orientation stimulus variable $\\theta$, the middle only depends on phase $\u03d5$, the hybrid task (right) depends on both. (D) (top) Generalization error and cumulative power distributions for the three tasks as a function of the simple-complex cell mixture parameter $s$.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78606/elife-78606-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) The fit nonlinearity has exponent $q^=1.7$ and sparsifying threshold $a^=0.2$. These parameters are consistent with similar measurements in the cat visual cortex. We compare this nonlinearity to alternative codes with higher and lower $q$ and a code with the same $q$ but no threshold $a=0$. (B) The fit parameters (blue) accurately fit the experimental kernel (black dots). (C) The spectra are also well predicted by the fit model.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/78606/elife-78606-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) The choice of nonlinearity has influence on the kernel and its spectrum. If the nonlinearity is $g\u2062(z)=max\u2061(0,z^{q})$, then $\\lambda_{k}\u223ck^{\u22122q\u22122}$. (B) The sparsity can be increased by shifting the nonlinearity $g\u2062(z)\u2192g\u2062(z-a)$. Sparser codes have higher dimensionality. Note that $a=0$ is a special case where the neurons behave in the linear regime for all inputs $\\theta$ since the currents $w\u22c5h$ are positive. Thus, for $a=0$, the spectrum decays like a Bessel Function $\\lambda_{k}=I_{k}\u2062(\\beta)$ for a constant $\\beta$. (C-D) Easy and hard orientation discrimination tasks with varying nonlinear polynomial order $q$. At low sample sizes, large $q$ performs better, whereas at large $P$, the step function nonlinearity $q=0$ achieves the best performance.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/78606/elife-78606-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** The modified energy based model with partial selectivity to phase $\u03d5$ reproduces the inductive bias of partial invariance.(A) Some example F1/F0 distributions for various values of $\\alpha$ (Appendix Energy model with partially phase-selective cells). As $\\alpha\u2192\u221e$ the code becomes comprised entirely of complex cells. (B) Randomly selected tuning curves $r_{i}\u2062(\\theta,\u03d5)$ and the top 12 eigenfunctions $\u03c8_{k}\u2062(\\theta,\u03d5)$ for the modified energy model with $\\alpha=1$ and $\\alpha=75$. As expected the code with smaller $\\alpha$ gives tuning curves with a variety of selectivity to phase variable $\u03d5$, with some cells appearing more complex like and some appearing more like simple cells. At larger $\\alpha$, all cells are approximately phase invariant. This heterogeneity in phase tuning at small $\\alpha$ and homogeneity at large $\\alpha$ are also reflected in the top eigenfunctions, which are phase dependent in the $\\alpha=1$ code but phase-invariant in the $\\alpha=75$ code. (C) The learning curves for the three tasks as a function of $\\alpha$.\n\nNext, to further illustrate the importance of code-task alignment, we study how invariances in the code to stimulus variations may affect the learning performance. We introduce complex cells in addition to simple cells in our model with proportion $s\\in[0,1]$ of simple cells (Appendix Gabor model spectral bias and fit to V1 data; Figure 5A), and allow phase, $\u03d5$, variations in static gratings. We use the energy model (Adelson and Bergen, 1985; Simoncelli and Heeger, 1998) to capture the phase invariant complex cell responses (Appendix Phase variation, complex cells and invariance, complex cell populations are phase invariant). We reason that in tasks that do not depend on phase information, complex cells should improve sample efficiency.\n\nIn this model, the kernel for the V1 population is a convex combination of the kernels for the simple and complex cell populations $K_{V\u20621}\u2062(\\theta,\\theta^{\u2032},\u03d5,\u03d5^{\u2032})=s\u2062K_{s}\u2062(\\theta,\\theta^{\u2032},\u03d5,\u03d5^{\u2032})+(1-s)\u2062K_{c}\u2062(\\theta,\\theta^{\u2032})$ where $K_{s}$ is the kernel for a pure simple cell population that depends on both orientation and phase, and $K_{c}$ is the kernel of a pure complex cell population that is invariant to phase (Appendix Complex cell populations are phase invariant). Figure 5C shows top kernel eigenfunctions for various values of $s$ elucidating inductive bias of the readout.\n\nFigure 5D and E show generalization performance on tasks with varying levels of dependence on phase and orientation. On pure orientation discrimination tasks, increasing the proportion of complex cells by decreasing $s$ improves generalization. Increasing the sensitivity to the nuisance phase variable, $\u03d5$, only degrades performance. The cumulative power curve is also maximized at $s=0$. However, on a task which only depends on the phase, a pure complex cell population cannot generalize, since variation in the target function due to changes in phase cannot be explained in the codes\u2019 responses. In this setting, a pure simple cell population attains optimal performance. The cumulative power curve is maximized at $s=1$. Lastly, in a nontrivial hybrid task which requires utilization of both variables $\\theta,\u03d5$, an optimal mixture $s$ exists for each sample budget $P$ which minimizes the generalization error. The cumulative power curve is maximized at different $s$ values depending on $k$, the component of the target function. This is consistent with an optimal heterogenous mix, because components of the target are learned successively with increasing sample size. V1 must code for a variety of possible tasks and we can expect a nontrivial optimal simple cell fraction $s$. We conclude that the degree of invariance required for the set of natural tasks, and the number of samples determine the optimal simple cell, complex cell mix. We also considered a more realistic model where the relative selectivity of each visual cortex neuron to phase $\u03d5$, measured with the F1/F0 ratio takes on a continuum of possible values with some cells more invariant to phase and some less invariant. In (Appendix Energy model with partially phase-selective cells, Figure 5\u2014figure supplement 3) we discuss a simple adaptation of the energy model which can interpolate between a population of entirely simple cells and a population of entirely complex cells, giving diverse selectivity for the intermediate regime. We show that this model reproduces the inductive bias of Figure 5.\n\n### Small and large sample size behaviors of generalization\n\nRecently, Stringer et al., 2018b argued that the input-output differentiability of the code, governed by the asymptotic rate of spectral decay, may be enabling better generalization. Our results provide a more nuanced view of the relation between generalization and kernel spectra. First, generalization with low sample sizes crucially depend on the top eigenvalues and eigenfunctions of the code\u2019s kernel, not the tail. Second, generalization requires alignment of the code with the task of interest. Non-differentiable codes can generalize well if there is such an alignment. To illustrate these points, here, we provide examples where asymptotic conditions on the kernel spectrum are insufficient to describe generalization performance for small sample sizes (Figure 6, Figure 6\u2014figure supplement 1 and Appendix Asymptotic power law scaling of learning curves), and where non-differentiable kernels generalize better than differentiable kernels (Figure 6\u2014figure supplement 2).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/78606/elife-78606-fig6-v2.jpg)\n\n**Figure 6.:** The top eigensystem of a code determines its low-$P$ generalization error.(A) A periodic variable is coded by a population of neurons with tuning curves of different widths (top). Narrow, wide and optimal refers to the example in C. These codes are all smooth (infinitely differentiable) but have very different feature space representations of the stimulus variable $\\theta$, as random projections reveal (below). (B) (left) The population codes in the above figure induce von Mises kernels $K\u2062(\\theta)\u221de^{cos\u2061(\\theta)/\\sigma^{2}}$ with different bandwidths $\\sigma$. (right) Eigenvalues of the three kernels. (C) (left) As an example learning task, we consider estimating a \u2018bump\u2019 target function. The optimal kernel (red, chosen as optimal bandwidth for $P=10$) achieves a better generalization error than either the wide (green) or narrow (blue) kernels. (middle) A contour plot shows generalization error for varying bandwidth $\\sigma$ and sample size $P$. (right) The large $P$ generalization error scales in a power law. Solid lines are theory, dots are simulations averaged over 15 repeats, dashed lines are asymptotic power law scalings described in main text. Same color code as B and C-left.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78606/elife-78606-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A, B) Kernel regression experiments are performed with Laplace kernels of varying bandwidth on a non-differentiable target function. The top eigenvalues are modified by changing the bandwidth, but the asymptotic power law scaling is preserved. Generalization at low $P$ is shown in the contour plot while the large $P$ scaling is provided in the generalization. In A-right and B-right, color code is the same as in the main text.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/78606/elife-78606-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) An infinitely differentiable von-Mises kernel (blue) will be compared to a non-differentiable Laplace kernel (green). (B) For a non-differentiable target function $y\u2062(\\theta)$ with a cusp, the non-smooth kernel can provide a better fit to the target function at $P=30$ samples. (C) The learning curves for this task. Solid lines are theory, circles are simulations. (D) The lengthscale of the kernel can be more important than local smoothness. We will now compare a narrow von-Mises kernel (still infinitely differentiable) with a non-differentiable wide kernel. (E) The non-smooth kernel generalizes on a smooth task almost perfectly whereas the narrow smooth kernel only locally interpolates. (F) The learning curves for this smooth task.\n\nOur example demonstrates how a code allowing good generalization for large sample sizes can be disadvantageous for small sizes. In Figure 6A, we plot three different populations of neurons with smooth (infinitely differentiable) tuning curves that tile a periodic stimulus variable, such as the direction of a moving grating. The tuning width, $\\sigma$, of the tuning curves strongly influences the structure of these codes: narrower widths have more high frequency content as we illustrate in a random 3D projection of the population code for $\\theta\\in[0,2\u2062\\pi]$ (Figure 6A). Visualization of the corresponding (von Mises) kernels and their spectra are provided in Figure 6B. The width of the tuning curves control bandwidths of the kernel spectra Figure 6B, with narrower curves having an later decay in the spectrum and higher high frequency eigenvalues. These codes can have dramatically different generalization performance, which we illustrate with a simple \u201cbump\" target response (Figure 6C). In this example, for illustration purposes, we let the network learn with a delta-rule with a weight decay, leading to a regularized kernel regression solution (Appendix Weight decay and ridge regression). For a sample size of $P=10$, we observe that codes with too wide or too narrow tuning curves (and kernels) do not perform well, and there is a well-performing code with an optimal tuning curve width $\\sigma$, which is compatible with the width of the target bump, $\\sigma_{T}$. We found that optimal $\\sigma$ is different for each $P$ (Figure 6C). In the large-$P$ regime, the ordering of the performance of the three codes are reversed (Figure 6C). In this regime generalization error scales in a power law (Appendix Asymptotic power law scaling of learning curves) and the narrow code, which performed worst for $P\u223c10$, performs the best. This example demonstrates that asymptotic conditions on the tail of the spectra are insufficient to understand generalization in the small sample size limit. The bulk of the kernel\u2019s spectrum needs to match the spectral structure of the task to generalize efficiently in the low-sample size regime. However, for large sample sizes, the tail of the eigenvalue spectrum becomes important. We repeat the same exercise and draw the same conclusions for a non-differentiable kernel (Laplace) (Figure 6\u2014figure supplement 1) showing that these results are not an artifact of the infinite differentiability of von Mises kernels. We further provide examples where non-differentiable kernels generalizing better than differentiable kernels in Figure 6\u2014figure supplement 2.\n\n### Time-dependent neural codes\n\nOur framework can directly be extended to learning of arbitrary time-varying functions of time-varying inputs from an arbitrary spatiotemporal population code (Methods RNN experiment, Appendix Time dependent neural codes). In this setting, the population code $r\u2062({\\theta\u2062(t)},t)$ is a function of an input stimulus sequence $\\theta\u2062(t)$ and possibly its entire history, and time $t$. A downstream linear readout $f\u2062({\\theta},t)=w\u22c5r\u2062({\\theta},t)$ learns a target sequence $y\u2062({\\theta},t)$ from a total of $P$ examples that can come at any time during any sequence.\n\nAs a concrete example, we focus on readout from a temporal population code generated by a recurrent neural network in a task motivated by a delayed reach task (Ames et al., 2019; Figure 7A and B). In this task, the network is presented for a short time an input cue sequence coding an angular variable which is drawn randomly from a distribution (Figure 7C). The recurrent neural network must remember this angle and reproduce an output sequence which is a simple step function whose height depends on the angle which begins after a time delay from the cessation of input stimulus and lasts for a short time (Figure 7D).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/78606/elife-78606-fig7-v2.jpg)\n\n**Figure 7.:** (A) We study the performance of time dependent codes on a delayed response task which requires memory retrieval. A cue (black dot) is presented at an angle $\\gamma^{\\mu}$. After a delay time $d$, the cursor position (blue triangle) must be moved to the remembered cue position and then subsequently moved back to the origin after a short time. (B) The readout weights (blue) of a time dependent code can be learned through a modified delta rule. (C) Input is presented to the network as a time series which terminates at $t=1$. The sequences are generated by drawing an angle $\\gamma^{\\mu}\u223cUniform\u2062[0,2\u2062\\pi]$ and using two step functions as input time-series that code for the cosine and the sine of the angle (Methods RNN experiment, Appendix Time dependent neural codes). We show an example of the one of the variables in a input sequence. (D) The target functions for the memory retrieval task are step functions delayed by a time $d$. (E) The kernel $K_{t,t^{\u2032}}^{\\mu,\\mu^{\u2032}}$ compares the code for two sequences at two distinct time points. We show the time dependent kernel for identical sequences (left) and the stimulus dependent kernel for equal time points (middle left) as well as for non-equal stimuli (middle right) and non-equal time (right). (F) The kernel can be diagonalized, and the eigenvalues $\\lambda_{k}$ determine the spectral bias of the reservoir computer (left). We see that higher gain $g$ networks have higher dimensional representations. The \u2018eigensystems\u2019 $\u03c8_{k}\u2062(\\theta^{\\mu},t)$ are functions of time and cue angle. We plot only $\\mu=0$ components of top systems $k=1,2,3,4$ (right). (G) The readout is trained to approximate a target function $y^{\\mu}\u2062(t)$, which requires memory of the presented cue angle. (left) The theoretical (solid) and experimental (vertical errorbar, 100 trials) generalization error $E_{g}$ are plotted for the three delays $d$ against training sample size $P$. (right) The ordering of $E_{g}$ matches the ordering of the $C\u2062(k)$ curves as expected.\n\nThe kernel induced by the spatiotemporal code is shown in Figure 7E. The high dimensional nature of the activity in the recurrent network introduces complex and rich spatiotemporal similarity structure. Figure 7F shows the kernel\u2019s eigensystem, which consists of stimulus dependent time-series $\u03c8_{k}\u2062({\\theta};t)$ for each eigenvalue $\\lambda_{k}$. An interesting link can be made with this eigensystem and linear low-dimensional manifold dynamics observed in several cortical areas (Stopfer et al., 2003; Kato et al., 2015; Gallego et al., 2017; Cunningham and Yu, 2014; Sadtler et al., 2014; Gao and Ganguli, 2015; Gallego et al., 2018; Chapin and Nicolelis, 1999; Bathellier et al., 2008). The kernel eigenfunctions also define the latent variables obtained through a singular value decomposition of the neural activity $r\u2062({\\theta};t)=\\sum_{k}\\sqrt{\\lambda_{k}}\u2062u_{k}\u2062\u03c8_{k}\u2062({\\theta};t)$ (Gallego et al., 2017). With enough samples, the readout neuron can learn to output the desired angle with high fidelity (Figure 7G). Unsurprisingly, tasks involving long time delays are more difficult and exhibit lower cumulative power curves. Consequently, the generalization error for small delay tasks drops much more quickly with increasing samples $P$.\n\n### Biological codes are metabolically more efficient and more selective than other codes with identical kernels\n\nAlthough, the performance of linear readouts may be invariant to rotations that preserve kernels (Figure 2), metabolic efficiency may favor certain codes over others (Barlow, 1961; Atick and Redlich, 1992; Attneave, 1954; Olshausen and Field, 1997; Simoncelli and Olshausen, 2001), reducing degeneracy in the space of codes with identical kernels. To formalize this idea, we define $\\delta$ to be the vector of spontaneous firing rates of a population of neurons, and $s^{\\mu}=r\u2062(\\theta^{\\mu})+\\delta$ be the spiking rate vector in response to a stimulus $\\theta^{\\mu}$. The vector $\\delta$ ensures that neural responses are non-negative. The modulation with respect to the spontaneous activity, $r\u2062(\\theta^{\\mu})$, gives the population code and defines the kernel, $K\u2062(\\theta^{\\mu},\\theta^{\\mu})=\\frac{1}{N}\u2062r\u2062(\\theta^{\\mu})\u22c5r\u2062(\\theta^{\u03bd})$. To avoid confusion with $r\u2062(\\theta^{\\mu})$, we will refer to $s^{\\mu}$ as total spiking activity. We propose that population codes prefer smaller spiking activity subject to a fixed kernel. In other words, because the kernel is invariant to any change of the spontaneous firing rates and left rotations of $r\u2062(\\theta)$, the orientation and shift of the population code $r\u2062(\\theta)$ should be chosen such that the resulting total spike count $\\sum_{i=1}^{N}\\sum_{\\mu=1}^{P}s_{i}^{\\mu}$ is small.\n\nWe tested whether biological codes exhibit lower total spiking activity than others exhibiting the same kernel on mouse V1 recordings, using deconvolved calcium activity as a proxy for spiking events (Stringer et al., 2021; Pachitariu et al., 2019; Pachitariu et al., 2018) (Methods Data analysis; Figure 8). To compare the experimental total spiking activity to other codes with identical kernels, we computed random rotations of the neural responses around spontaneous activity, $r~\u2062(\\theta^{\\mu})=Qr\u2062(\\theta^{\\mu})$, and added the $\\delta$ that minimizes total spiking activity and maintains its nonnegativity (Methods Generating RROS codes). We refer to such an operation as RROS (random rotation and optimal shift), and a code generated by an RROS operation as an RROS code. The matrix $Q$ is a randomly sampled orthogonal matrix (Anderson et al., 1987). In other words, we compare the true code to the most metabolically efficient realizations of its random rotations. This procedure may result in an increased or decreased total spike count in the code, and is illustrated in a synthetic dataset in Figure 8A. We conducted this procedure on subsets of various sizes of mouse V1 neuron populations, as our proposal should hold for any subset of neurons (Methods Generating RROS codes), and found that the true V1 code is much more metabolically efficient than randomly rotated versions of the code (Figure 8B and C). This finding holds for both responses to static gratings and to natural images as we show in Figure 8B and C respectively.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/78606/elife-78606-fig8-v2.jpg)\n\n**Figure 8.:** (A) We illustrate our procedure in a synthetic example. A non-negative population code (left) can be randomly rotated about its spontaneous firing rate (middle), illustrated as a purple dot, and optimally shifted to a new non-negative population code (right). If the kernel is measured about the spontaneous firing rate, these transformations leave the inductive bias of the code invariant but can change the total spiking activity of the neural responses. We refer to such an operation as random rotation + optimal shift (RROS). We also perform gradient descent over rotations and shifts, generating an optimized code (opt). (B) Performing RROS on $N$ neuron subsamples of experimental Mouse V1 recordings (Stringer et al., 2021; Pachitariu et al., 2019), shows that the true code has much lower average cost $\\frac{1}{N\u2062P}\u2062\\sum_{i\u2062\\mu}s_{i}^{\\mu}$ compared to random rotations of the code. The set of possible RROS transformations (Methods Generating RROS codes, and Methods Comparing sparsity of population codes) generates a distribution over average cost, which has higher mean than the true code. We also optimize metabolic cost over the space of RROS transformations, which resulted in the red dashed lines. We plot the distance (in units of standard deviations) between the cost of the true and optimal codes and the cost of randomly rotated codes for different neuron subsample sizes $N$. (C) The same experiment performed on Mouse V1 responses to ImageNet images from 10 relevant classes (Stringer et al., 2018a; Stringer et al., 2018b). (D) The lifetime (LS) and population sparseness (PS) levels (Methods Lifetime and population sparseness) are higher for the Mouse V1 code than for a RROS code. The distance between average LS and PS of true code and RROS codes increases with $N$.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78606/elife-78606-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (A) We show the same result as Figure 8 except we use raw (non $z$-scored) estimate of responses for each stimulus. (B) Our result is robust to imposition of firing rate upper bounds ub on each neuron. This result uses the $z$-scored responses to be consistent with the rest of the paper. The biological code achieves a maximum $z$-score values in the range $[3.2,4.7]$, which motivated the range of our tested upper bound values ${3,4,5}$. (C) Our finding is robust to the number of sampled stimuli $P$ as we show in an experiment where rotations in $N=500$ dimensional subspace.\n\n![Figure 8\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/78606/elife-78606-fig8-figsupp2-v2.jpg)\n\n**Figure 8\u2014figure supplement 2.:** (A) Distribution of average spike count for a random selection of $N=10$ neurons. (B) The same for $N=500$ randomly selected neurons. (C) Since the distribution of average spike count for the randomly rotated codes concentrates with $N$ the number of standard deviations the true code is from the mean increases with $N$. We show that this scaling is approximately like $\\sqrt{N}$ which suggests that the variability in average spike count for randomly rotated codes goes scales with neuron count like $\\frac{1}{\\sqrt{N}}$. This is intuitive since the average spike count over the rotated code is an empirical average over $N$ random variables. (D) The lifetime sparseness of neurons in the true code are spread out over a large range. (E) The lifetime sparseness distribution for an example RROS code does not have the same range. (F) The average (over neurons) lifetime sparseness of RROS codes over random rotations is significantly lower than the average lifetime sparseness of the true code. (G-I) The true visual cortex code has much higher population sparseness over each grating stimulus as well.\n\nTo further explore metabolic efficiency, we posed an optimization problem which identifies the most efficient code with the same kernel as the biological V1 code. This problem searches over rotation matrices $Q$ and finds the $Q$ matrix and off-set vector $\\delta$ which gives the lowest cost $\\sum_{i\u2062\\mu}s_{i}^{\\mu}$ (Methods Comparing sparsity of population codes) (Figure 8). Although the local optimum identified with the algorithm is lower in cost than the biological code, both the optimal and biological codes are significantly displaced from the distribution of random codes with same kernel. Our findings do not change when data is preprocessed with an alternative strategy, an upper bound on neural responses is imposed on rotated codes, or subsets of stimuli are considered (Figure 8\u2014figure supplement 1). We further verified these results on electrophysiological recordings of mouse visual cortex from the Allen Institute Brain Observatory (de Vries et al., 2020), (Figure 8\u2014figure supplement 2). Overall, the large disparity in total spiking activity between the true and randomly generated codes with identical kernels suggests that metabolic constraints may favor the biological code over others that realize the same kernel.\n\nThe disparity between the true biological code and the RROS code is not only manifested in terms of total activity level, but also in terms of single neuron and single stimulus sparseness measures, specifically lifetime and population sparseness distributions (Methods Lifetime and population sparseness) (Willmore and Tolhurst, 2001; Lehky et al., 2005; Treves and Rolls, 1991; Pehlevan and Sompolinsky, 2014). In Figure 8D, we compare the lifetime and population sparseness distributions of the true biological code with a RROS version of the same code, revealing biological neurons have significantly higher lifetime sparseness. In Appendix Necessary conditions for optimally sparse codes, we provide analytical arguments which suggest that tuning curves of optimally sparse non-negative codes with full-rank kernels will have selective tuning.\n\n## Discussion\n\nElucidating inductive biases of the brain is fundamentally important for understanding natural intelligence (Tenenbaum et al., 2011; Lake et al., 2017; Sinz et al., 2019; Zador, 2019). These biases are coded into the brain by the dynamics of its neurons, the architecture of its networks, its representations and plasticity rules. Finding ways to extract the inductive biases from neuroscience datasets requires a deeper theoretical understanding of how all these factors shape the biases, and is an open problem. In this work, we attempted to take a step towards filling this gap by focusing on how the structure of static neural population codes shape inductive biases for learning of a linear readout neuron under a biologically plausible learning rule. If the readout neuron\u2019s output is correlated with behavior, and that correlation is known, then our theory could possibly be modified to predict what behavioral tasks can be learned faster.\n\nUnder the delta rule, the generalization performance of the readout is entirely dependent on the code\u2019s inner product kernel; the kernel is a determinant of inductive bias. In its finite dimensional form, the kernel is an example of a representational similarity matrix and is a commonly used tool to study neural representations (Edelman, 1998; Kriegeskorte et al., 2008; Laakso and Cottrell, 2000; Kornblith et al., 2019; Cadieu et al., 2014; Pehlevan et al., 2018). Our work elucidates a concrete link between this experimentally measurable mathematical object, and sample-efficient learning.\n\nWe derived an analytical expression for the generalization error as a function of sample-size under very general conditions, for an arbitrary stimulus distribution, arbitrary population code and an arbitrary target stimulus-response map. We used our findings in both theoretical and experimental analysis of primary visual cortex, and temporal codes in a delayed reach task. This generality of our theory is a particular strength.\n\nOur analysis elucidated two principles that define the inductive bias. The first one is spectral bias: kernel eigenfunctions with large eigenvalues can be estimated using a smaller number of samples. The second principle is the code-task alignment: target functions with most of their power in top kernel eigenfunctions can be estimated efficiently and are compatible with the code. The cumulative power distribution, $C\u2062(k)$ (Canatar et al., 2021), provides a measure of this alignment. These findings define a notion of \u2018simplicity\u2019 bias in learning from examples, and provides a solution to the question of what stimulus-response maps are easier to learn. A similar simplicity bias has been also observed in training deep neural networks (Rahaman et al., 2019; Xu et al., 2019; Kalimeris et al., 2019). Due to a correspondence between gradient-descent trained neural networks in the infinite-width limit and kernel machines (Jacot et al., 2018), results on the spectral bias of kernel machines may shed light onto these findings (Bordelon et al., 2020; Canatar et al., 2021). Though our present analysis focused on learning a single layer weight vector with the biologically plausible delta-rule, future work could explore the learning curves of other learning rules for deep networks (Bordelon and Pehlevan, 2022a), such as feedback alignment (Lillicrap et al., 2016) or perturbation methods (Jabri and Flower, 1992). Such analysis could explore how inductive bias is also shaped by choice of learning rule, as well as the structure of the initial population code.\n\nWe applied our findings in both theoretical and experimental analysis of mouse primary visual cortex. We demonstrated a bias of neural populations towards low frequency orientation discrimination and low spatial frequency reconstruction tasks. The latter finding is consistent with the finding that mouse visual cortex neurons are selective for low spatial frequency (Niell and Stryker, 2008; Vreysen et al., 2012). The toy model of the visual cortex as a mixture of simple and complex cells demonstrated how invariances, specifically the phase invariance of the complex cells, in the population code can facilitate learning some tasks involving phase invariant responses at the expense of performance on others. The role of invariances in learning with kernel methods and deep networks have recently been investigated in machine learning literature, showing that invariant representations can improve capacity (Farrell et al., 2021) and sample efficiency for invariant learning problems (Mei et al., 2021; Li et al., 2019; Xiao and Pennington, 2022).\n\nA recent proposal considered the possibility that the brain acts as an overparameterized interpolator (Hasson et al., 2020). Suitable inductive biases are crucial to prevent overfitting and generalize well in such a regime (Belkin et al., 2019). Our theory can explain these inductive biases since, when the kernel is full-rank, which typically is the case when there are more neurons in the population than the number of learning examples, the delta rule without weight decay converges to an interpolator of the learning examples. Modern deep learning architectures also operate in an overparameterized regime, but generalize well (Zhang et al., 2016; Belkin et al., 2019), and an inductive bias towards simple functions has been proposed as an explanation (Bordelon et al., 2020; Canatar et al., 2021; Kalimeris et al., 2019; Valle-Perez et al., 2018). However, we also showed that interpolation can be harmful to prediction accuracy when the target function has some variance unexplained by the neural code or if the neural responses are significantly noisy, motivating use of explicit regularization.\n\nOur work promotes sample efficiency as a general coding principle for neural populations, relating neural representations to the kinds of problems they are well suited to solve. These codes may be shaped through evolution or themselves be learned through prior experience (Zador, 2019). Prior related work in this area demonstrated the dependence of sample-efficient learning of a two-angle estimation task on the width of the individual neural tuning curves (Meier et al., 2020) and on additive function approximation properties of sparsely connected random networks (Harris, 2019).\n\nA sample efficiency approach to population coding differs from the classical efficient coding theories (Attneave, 1954; Barlow, 1961; Atick and Redlich, 1992; Srinivasan et al., 1982; van Hateren, 1992; Rao and Ballard, 1999; Olshausen and Field, 1997; Chalk et al., 2018), which postulate that populations of neurons optimize information content of their code subject to metabolic constraints or noise. While these theories emphasize different aspects of the code\u2019s information content (such as reduced redundancy, predictive power, or sparsity), they do not address sample efficiency demands on learning. Further, recent studies demonstrated hallmarks of redundancy and correlation in population responses (Chapin and Nicolelis, 1999; Bathellier et al., 2008; Pitkow and Meister, 2012; Gao and Ganguli, 2015; Abbasi-Asl et al., 2016; Gallego et al., 2018; Stringer et al., 2018b), violating a generic prediction of efficient coding theories that responses of different neurons should be uncorrelated across input stimuli in high signal-to-noise regimes to reduce redundancy in the code and maximize information content (Barlow, 1961; Atick and Redlich, 1992; Srinivasan et al., 1982; van Hateren, 1992; Haft and van Hemmen, 1998; Huang and Rao, 2011). In our theory, the structured correlations of neural responses correspond to the decay in the spectrum of the kernel, and play a key role in biasing learned readouts towards simple functions.\n\nIn recent related studies, the asymptotic decay rate of the kernel\u2019s eigenspectrum was argued to be important for generalization (Stringer et al., 2018b) and robustness (Nassar et al., 2020). The spectral decay rate in the mouse V1 was found to be consistent with a high dimensional (power law) but smooth (differentiable) code, and smoothness was argued to be an enabler of generalization (Stringer et al., 2018b). While we also identify power law spectral decays, we show that sample-efficient learning requires more than smoothness conditions in the form of asymptotic decay rates on the kernel\u2019s spectrum. The interplay between the stimulus distribution, target response and the code gives rise to sample efficient learning. Because of spectral bias, the top eigenvalues govern the small sample size behavior. The tail of the spectrum becomes important at large sample sizes.\n\nThough the kernel is degenerate with respect to rotations of the code in the neural activity space, we demonstrated that the true V1 code has much lower average activity than random codes with the same kernel, suggesting that evolution and learning may be selecting neural codes with low average spike rates which preserve sample-efficiency demands for downstream learning tasks. We predict that metabolic efficiency may be a determinant in the orientation and placement of the ubiquitously observed low-dimensional coding manifolds in neural activity space in other parts of the brain (Gallego et al., 2018). The demand of metabolic efficiency is consistent with prior sparse coding theories (Niven and Laughlin, 2008; Olshausen and Field, 1997; Simoncelli and Olshausen, 2001; Hrom\u00e1dka et al., 2008), however, our theory emphasizes sample-efficient learning as the primary normative objective for the code. As a note of caution, while our analysis holds under the assumption that the neural code is deterministic, real neurons exhibit variability in their responses to repeated stimuli. Such noisy population codes do not generally achieve identical generalization performance under RROS transformations. For example, if each neuron is constrained to produce i.i.d. Poisson noise, then simple shifts of the baseline firing rate reduce the information content of the code. However, if the neural noise is Gaussian (even with stimulus dependent noise covariance), then the generalization error is conserved under RROS operations (Appendix Effect of noise on RROS symmetry). Further studies could focus on revealing the space of codes with equivalent inductive biases under realistic noise models.\n\nOur work constitutes a first step towards understanding inductive biases in neuronal circuits. To achieve this, we focused on a linear, delta-rule readout of a static population code. More work is need to study other factors that affect inductive bias. Importantly, sensory neuron tuning curves can adapt during perceptual learning tasks (Gilbert, 1994; Goltstein et al., 2021; Ghose et al., 2002; Schoups et al., 2001) with the strength of adaptation dependent on brain area (Yang and Maunsell, 2004; Adab et al., 2014; Op de Beeck et al., 2007). In many experiments, these changes to tuning in sensory areas are small (Schoups et al., 2001; Ghose et al., 2002), satisfying the assumptions of our theory. For example monkeys trained on noisy visual motion detection exhibit changes in sensory-motor (LIP) but not sensory areas (MT), consistent with a model of readout from a static sensory population code (Law and Gold, 2008; Shadlen and Newsome, 2001). However, other perceptual learning tasks and other brain areas can exhibit significant changes in neural tuning (Recanzone et al., 1993; Pleger et al., 2003; Furmanski et al., 2004). This diversity of results motivates more general analysis of learning in multi-layer networks, where representations in each layer can adapt flexibly to task structure (Shan and Sompolinsky, 2021; Mastrogiuseppe et al., 2022; Bordelon and Pehlevan, 2022b; Ahissar and Hochstein, 2004). Alternatively, our current analysis of inductive bias can still be consistent with multi-layer learning if the network is sufficiently overparameterized and tuning curves change very little (Jacot et al., 2018; Lee et al., 2018; Shan and Sompolinsky, 2021). In this case, network training is equivalent to kernel learning with a kernel that depends on the learning rule and architecture (Bordelon and Pehlevan, 2022a). However, in the regime of neural network training where tuning curves change significantly, more sophisticated analytical tools are needed to predict generalization (Flesch et al., 2021; Yang and Hu, 2021; Bordelon and Pehlevan, 2022b). Although our work focused on linear readouts, arbitrary nonlinear readouts which generate convex learning objectives have been recently studied in the high dimensional limit, giving qualitatively similar learning curves which depend on kernel eigenvalues and task model alignment (Loureiro et al., 2021b; Cui et al., 2022) (see Appendix Typical case analysis of nonlinear readouts).\n\nOur work focused on how signal correlations influence inductive bias (Averbeck et al., 2006; Cohen and Kohn, 2011). However, since real neurons do exhibit variability in their responses to identical stimuli, one should consider the effect of neural noise and noise correlations in learning. We provide a preliminary analysis of learning with neural noise in Appendix Impact of neural noise and unlearnable targets on learning, where we show that neural noise can lead to irreducible asymptotic error which depends on the geometry of the signal and noise correlations. Further, if the target function is not fully expressible as linear combinations of neural responses, overfitting peaks in the learning curves are possible, but can be mitigated with regularization implemented by a weight decay in the learning rule (see Appendix 1\u2014figure 1). Future work could extend our analysis to study how signal and noise correlations interact to shape inductive bias and generalization performance in the case where the noise correlation matrices are non-isotropic, including the role of differential correlations (Moreno-Bote et al., 2014). Overall, future work could build on the present analysis to incorporate a greater degree of realism in a theory of inductive bias.\n\nFinally, we discuss possible applications of our work to experimental neuroscience. Our theory has potential implications for experimental studies of task learning. First, in cases where the population selective to stimuli can be measured directly, an experimenter could design easy or difficult tasks for an animal to learn from few examples, under a hypothesis that the behavioral output is a linear function of the observed neurons. Second, in cases where it is unclear which neural population contributes to learning, one could utilize our theory to solve the inverse problem of inferring the relevant kernel from observed learning curves on different tasks (Wilson et al., 2015). From these tasks, the experimenter could compare the inferred kernel to those of different recorded populations. For instance, one could compare the kernels from separate populations to the inferred kernel obtained from learning curves on certain visual learning tasks. This could provide new ways to test theories of perceptual learning (Gilbert, 1994). Lastly, extensions of our framework could quantify the role of neural variability on task learning and the limitation it imposes on accuracy and sample efficiency.\n\n## Methods\n\n### Generating example codes (Figure 1)\n\nThe two codes in Figure 1 were constructed to produce two different kernels for $\\theta\\inS^{1}$:\n\n$$\nK_{1}(\\theta,\\theta^{\u2032})=exp\u2061(0.25cos\u2061(\\theta\u2212\\theta^{\u2032}))\u00a0,\u00a0K_{2}(\\theta,\\theta^{\u2032})=\\sumk=120cos\u2061(k(\\theta\u2212\\theta^{\u2032})).\n$$\n\nAn infinite number of codes could generate either of these kernels. After diagonalizing the kernel into its eigenfunctions on a grid of 120 points, $K_{1}=\u03a8_{1}\u039b_{1}\u03a8_{1}^{\u22a4},K_{2}=\u03a8_{2}\u039b_{2}\u03a8_{2}^{\u22a4}$, we used a random rotation matrix $Q\\in\u211d^{N\\timesN}$ (which satisfies $QQ^{\u22a4}=Q^{\u22a4}\u2062Q=I$) to generate a valid code\n\n$$\nR_{1}=Q\u039b_{1}^{1/2}\u03a8_{1}^{\u22a4}\u00a0,\u00a0R_{2}=Q\u039b_{2}^{1/2}\u03a8_{2}^{\u22a4}.\n$$\n\nThis construction guarantees that $R_{1}^{\u22a4}\u2062R_{1}=K_{1}$ and $R_{2}^{\u22a4}\u2062R_{2}=K_{2}$. We plot the tuning curves for the first three neurons. The target function in the first experiment is $y=cos\u2061(\\theta)-0.6\u2062cos\u2061(4\u2062\\theta)$, while the second experiment used $y=cos\u2061(6\u2062\\theta)-cos\u2061(8\u2062\\theta)$.\n\n### Theory of generalization\n\nRecent work has established analytic results that predict the average case generalization error for kernel regression\n\n$$\nE_{g}=\u27e8E_{g}(D)\u27e9_{D}=\u27e8[f(\\theta,D)\u2212y(\\theta)]^{2}\u27e9_{\\theta,D}\n$$\n\nwhere $E_{g}(D)=\u27e8[f(\\theta,D)\u2212y(\\theta)]^{2}\u27e9_{\\theta}$ is the generalization error for a certain sample $D$ of size $P$ and $f(\\theta,D)=w\u22c5r(\\theta)$ is the kernel regression solution for $D$ (Appendix Convergence of the delta-rule without weight decay) (Bordelon et al., 2020; Canatar et al., 2021). The typical or average case error $E_{g}$ is obtained by averaging over all possible datasets of size $P$. This average case generalization error is determined solely by the decomposition of the target function $y\u2062(x)$ along the eigenbasis of the kernel and the eigenspectrum of the kernel. This continuous diagonalization again takes the form (Appendix Singular value decomposition of continuous population responses) (Rasmussen and Williams, 2005)\n\n$$\n\\intp\u2062(\\theta)\u2062K\u2062(\\theta,\\theta^{\u2032})\u2062\u03c8_{k}\u2062(\\theta)\u2062d\\theta=\\lambda_{k}\u2062\u03c8_{k}\u2062(\\theta^{\u2032}).\n$$\n\nOur theory is also applicable to discrete stimuli if $p\u2062(\\theta)$ is a Dirac measure as we describe in (Appendix Discrete stimulus spaces: finding eigenfunctions with matrix eigendecomposition). Since the eigenfunctions form a complete set of square integrable functions (Rasmussen and Williams, 2005), we expand both the target function $y\u2062(\\theta)$ and the learned function $f(\\theta,D)$ in this basis $y(\\theta)=\\sumkv_{k}\u03c8_{k}(\\theta)\u00a0,\u00a0f(\\theta,D)=\\sumkv^_{k}\u03c8_{k}(\\theta)$, where $v^_{k}$ are understood to be functions of the dataset $D$. The eigenfunctions are orthonormal $\\intd\\theta\u2062p\u2062(\\theta)\u2062\u03c8_{k}\u2062(\\theta)\u2062\u03c8_{\u2113}\u2062(\\theta)=\\delta_{k,\u2113}$, which implies that the generalization error for any set of coefficients $v^$ is\n\n$$\nE_{g}(D)=\u27e8(y(\\theta)\u2212f(\\theta,D))^{2}\u27e9_{\\theta}=\\sumk,\u2113(v^_{k}\u2212v_{k})(v^_{\u2113}\u2212v_{\u2113})\u27e8\u03c8_{k}(\\theta)\u03c8_{\u2113}(\\theta)\u27e9_{\\theta}=||v^\u2212v||^{2}\n$$\n\nWe now introduce the equivalent training error, or empirical loss, written directly in terms of eigenfunction coefficients $v^$, which depends on the random dataset $D={(\\theta^{\\mu},y^{\\mu})}_{\\mu=1}^{P}$\n\n$$\nH(v^,D)=\\sum\\mu[(v^\u2212v)\u22c5\u03c8(\\theta^{\\mu})]^{2}+\\lambda\\sumk\\frac{v^_{k}^{2}}{\\lambda_{k}}\n$$\n\nThis loss function is minimized by delta rule updates with weight decay constant $\\lambda$. It is straightforward to verify that the $H$-minimizing coefficients are $v^^{\u2217}=(\u03a8\u03a8^{\u22a4}+\\lambda\u039b^{\u22121})^{\u22121}\u03a8\u03a8^{\u22a4}v$, giving the learned function $f(\\theta,D)=v^^{\u2217}\u22c5\u03c8(\\theta)=k(\\theta)^{\u22a4}(K+\\lambdaI)^{\u22121}y$ where the vectors $k$ and $y$ have entries $[k(\\theta)]_{\\mu}=K(\\theta,\\theta^{\\mu})$ and $[y]_{\\mu}=y(\\theta^{\\mu})$ for each training stimulus $\\theta^{\\mu}\\inD$. The $P\\timesP$ kernel gram matrix $K$ has entries $[K]_{\\mu\u03bd}=K(\\theta^{\\mu},\\theta^{\u03bd})$. The $\\lambda\u21920$ limit of the minimizer of $H$ coincides with kernel interpolation. This allows us to characterize generalization without reference to learned readout weights $w$. The generalization error for this optimal function is\n\n$$\nE_{g}(D)=||v^^{\u2217}\u2212v||^{2}=v^{\u22a4}\u039b^{\u22121}G(D)^{2}\u039b^{\u22121}vG(D)=(\\frac{1}{\\lambda}\u03a8\u03a8^{\u22a4}+\u039b^{\u22121})^{\u22121}.\n$$\n\nWe note that the dependence on the randomly sampled dataset $D$ only appears through the matrix $G(D)$. Thus to compute the typical generalization error we need to average this matrix over realizations of datasets, i.e.$\u27e8G(D)\u27e9_{D}$. There are multiple strategies to perform such an average and we will study one here based on a partial differential equation which was introduced in Sollich, 1998; Sollich, 2002 and studied further in Bordelon et al., 2020. We describe in detail one method for performing such an average in Appendix Computation of learning curves. After this computation, we find that the generalization error can be approximated at large $P$ as\n\n$$\nE_{g}=\\frac{\u03ba^{2}}{1-\\gamma}\u2062\\sum_{k}\\frac{v_{k}^{2}}{(\\lambda_{k}\u2062P+\u03ba)^{2}},\u03ba=\\lambda+\u03ba\u2062\\sum_{k}\\frac{\\lambda_{k}}{\\lambda_{k}\u2062P+\u03ba},\n$$\n\nwhere $\\gamma=P\u2062\\sum_{k}\\frac{\\lambda_{k}^{2}}{(\\lambda_{k}\u2062p+\u03ba)^{2}}$, giving the desired result. We note that (11) defines the function $\u03ba$ implicitly in terms of the sample size $P$. Taking $\\lambda\u21920$ gives the generalization error of the minimum norm interpolant, which desribes the generalization error of the solution. This result was recently reproduced using the replica method from statistical mechanics in an asymptotic limit where the number of neurons and samples are large (Bordelon et al., 2020; Canatar et al., 2021). Other recent works have verified our theoretical expressions on a variety of kernels and datasets (Loureiro et al., 2021b; Simon et al., 2021).\n\nAdditional intuition for the spectral bias phenomenon can be gained from the expected learned function $\u27e8f(\\theta,D)\u27e9_{D}=\\sumk\\frac{\\lambda_{k}P}{\\lambda_{k}P+\u03ba}v_{k}\u03c8_{k}(\\theta)$, which is the average readout prediction over possible datasets $D$. The function $\u03ba\u2062(P)$ is defined implicitly as $\u03ba=\\lambda+\u03ba\u2062\\sum_{k}\\frac{\\lambda_{k}}{\\lambda_{k}\u2062P+\u03ba}$ and decreases with $P$ from $\u03ba\u2062(0)=\\lambda+\\sum_{k}\\lambda_{k}$ to its asymptotic value $lim_{P\u2192\u221e}\u2061\u03ba\u2062(P)=\\lambda$. The coefficient for the $k$-th eigenfunction $\\frac{\\lambda_{k}\u2062P}{\\lambda_{k}\u2062P+\u03ba}\u2062v_{k}$ approaches the true coefficient vk as $P\u2192\u221e$. The $k$-th eigenfunction $\u03c8_{k}$ is effectively learned when $P\u226b\\frac{\u03ba}{\\lambda_{k}}$. For large eigenvalues $\\lambda_{k}$, fewer samples $P$ are needed to satisfy this condition, while small eigenvalue modes will require more samples.\n\n### RNN experiment\n\nFor the simulations in Figure 7, we integrated a rate-based recurrent network model with $N=6000$ neurons, time constant $\\tau=0.05$ and gain $g=1.5$. Each of the $P=80$ randomly chosen angles $\\gamma^{\\mu}$ generates a trajectory over $T=100$ equally spaced points in $t\\in[0,3]$. The two dimensional input sequence is simply $\\theta\u2062(t)=H\u2062(t)\u2062H\u2062(1-t)\u2062[cos\u2061(\\gamma^{\\mu}),sin\u2061(\\gamma^{\\mu})]^{\u22a4}\\in\u211d^{2}$. Target function for a delay $d$ is $y\u2062(\\theta^{\\mu},t)=H\u2062(1.5+d-t)\u2062H\u2062(t-d-1)\u2062[cos\u2061(\\gamma^{\\mu}),sin\u2061(\\gamma^{\\mu})]^{\u22a4}$ which is nonzero for times $t\\in[1+d,1.5+d]$. In each simulation, the activity in the network is initialized to $u\u2062(0)=0$. The kernel gram matrix $K\\in\u211d^{P\u2062T\\timesP\u2062T}$ is computed by taking inner products of the time varying code at for different inputs $\\gamma^{\\mu}$ and at different times. Learning curves represent the generalization error obtained by randomly sampling $P$ time points from the $P\u2062T$ total time points generated in the simulation process and training readout weights $w$ to convergence with gradient descent.\n\n### Data analysis\n\n#### Data source and processing\n\nMouse V1 neuron responses to orientation gratings were obtained from a publicly available dataset (Stringer et al., 2021; Pachitariu et al., 2019). Two-photon calcium microscopy fluorescence traces were deconvolved into spike trains and spikes were counted for each stimulus, as described in Stringer et al., 2021. The presented grating angles were distributed uniformly over $[0,2\u2062\\pi]$ radians. Data pre-processing, which included z-scoring against the mean and standard deviation of null stimulus responses, utilized the provided code for this experiment, which also publicly available at https://github.com/MouseLand/stringer-et-al-2019 (Stringer, 2019). This preprocessing technique was used in all Figures in the paper. To reduce corruption of the estimated kernel from neural noise (trial-to-trial variability), we first trial average responses, binning the grating stimuli oriented at different angles $\\theta$ into a collection of 100 bins over the interval from $[0,2\u2062\\pi]$ and averaging over all of the available responses from each bin. Since grating angles were sampled uniformly, there is a roughly even distribution of about 45 responses in each bin. After trial averaging, SVD was performed on the response matrix $R$, generating the eigenspectrum and kernel eigenfunctions as illustrated in Figure 3. Figures 2, 3 and 8, all used this data anytime responses to grating stimuli were mentioned.\n\nIn Figures 3D, 4 and 8C, the responses of mouse V1 neurons to ImageNet images (Deng et al., 2009) were obtained from a different publicly available dataset (Stringer et al., 2018a). The images were taken from 15 different classes from the Imagenet dataset with ethological relevance to mice (birds, cats, flowers, hamsters, holes, insects, mice, mushrooms, nests, pellets, snakes, wildcats, other animals, other natural, other man made). In the experiment in Figure 3D we use all images from the mice and birds category for which responses were recorded. The preprocessing code and image category information were obtained from the publicly available code base at https://github.com/MouseLand/stringer-pachitariu-et-al-2018b (Stringer, 2018c). Again, spike counts were obtained from deconvolved and z-scored calcium fluorescence traces. In the reconstruction experiment shown in Figure 4 we use the entire set of images for which neural responses were recorded.\n\n#### Generating RROS codes\n\nIn Figure 8, the randomly rotated codes are generated by sampling a matrix $Q$ from the Haar measure on the set of $N$-by-$N$ orthogonal matrices (Anderson et al., 1987), and chosing a $\\delta$ by solving the following optimization problem:\n\n$$\nmin\\delta\\in\u211d^{N}\u2062\\sumi=1N\\sum\\mu=1Ps_{i}^{\\mu},s.t.\u2003s^{\\mu}=Qr\u2062(\\theta^{\\mu})+\\delta,s_{i}^{\\mu}\\geq0,i\\in[N],\\mu\\in[P],\n$$\n\nwhich minimizes the total spike count subject to the kernel and nonnegativity of firing rates. The solution to this problem is given by $\\delta_{i}^{*}=-min_{\\mu=1,\u2026,P}[Qr(\\theta^{\\mu})]_{i}$.\n\n#### Comparing sparsity of population codes\n\nTo explore the metabolic cost among the set of codes with the same inductive biases, we estimate the distribution of average spike counts of codes with the same inner product kernel as the biological code. These codes are generated in the form $s^{\\mu}=Qr^{\\mu}+\\delta$ where $\\delta$ solves the optimization problem\n\n$$\nmin\\delta\\inR^{N}\\sumi,\\mus_{i}^{\\mu}\u00a0,\u00a0s.t.\u00a0s^{\\mu}=Qr^{\\mu}+\\delta\u00a0,\u00a0s_{i}^{\\mu}\\geq0\n$$\n\nTo quantify the distribution of such codes, we randomly sample $Q$ from the invariant (Haar) measure for $N\\timesN$ orthogonal matrices and compute the optimal $\\delta$ as described above. This generates the aqua colored distribution in Figure 8B and C.\n\nWe also attempt to characterize the most efficient code with the same inner product kernel\n\n$$\nminQ,\\delta\\sumi,\\mus_{i}^{\\mu}\u00a0,\u00a0s.t.\u00a0s^{\\mu}=Qr^{\\mu}+\\delta\u00a0,\u00a0s_{i}^{\\mu}\\geq0.\n$$\n\nSince this optimization problem is non-convex in $Q$, there is no theoretical guarantee that minima are unique. Nonetheless, we attempt to optimize the code by starting $Q$ at the identity matrix and conduct gradient descent over orthogonal matrices (Plumbley, 2004). Such updates take the form\n\n$$\nQ_{t+1}=exp\u2061(-\u03b7\u2062\\nabla\u2061\u2112)\u2062Q_{t},\\nabla\u2061\u2112=\\frac{\\partial\u2061\u2112}{\\partial\u2061Q}\u2062Q^{\u22a4}-Q\u2062\\frac{\\partial\u2061\u2112}{\\partial\u2061Q}^{\u22a4}\n$$\n\nwhere $exp\u2061(\u22c5)$ is the matrix exponential. To make the loss function differentiable, we incorporate the non-negativity constraint with a soft-minimum:\n\n$$\nL=\\sumi\\mu(q_{i}^{\u22a4}r^{\\mu}\u2212softmin_{\u03bd}(q_{i}^{\u22a4}r^{\u03bd},\\beta))softmin(a^{1},a^{2},...,a^{P};\\beta)=\\frac{1}{Z}\\sum\\mu=1Pa^{\\mu}exp\u2061(\u2212\\betaa^{\\mu}),\n$$\n\nwhere $Z=\\sum\u03bdexp\u2061(\u2212\\betaa^{\u03bd})$ is a normalizing constant and $Q=[q_{1},\u2026\u2062q_{N}]$. In the $\\beta\u2192\u221e$ limit, this cost function converges to the exact optimization problem with non-negativity constraint. Finite $\\beta$, however, allows learning with gradient descent. Gradients are computed with automatic differentiation in JAX (Bradbury et al., 2018). This optimization routine is run until convergence and the optimal value is plotted as dashed red lines labeled \u2018opt\u2019. in Figure 8.\n\nWe show that our result is robust to different pre-processing techniques and to imposing bounds on neural firing rates in the Figure 8\u2014figure supplement 1. To demonstrate that our result is not an artifact of z-scoring the deconvolved signals against the spontaneous baseline activity level, we also conduct the random rotation experiment on the raw deconvolved signals. In addition, we show that imposing realistic constraints on the upper bound of the each neuron\u2019s responses does not change our findings. We used a subset of $N=100$ neurons and computed random rotations. However, we only accepted a code as valid if it\u2019s maximum value was less than some upper bound ub. Subsets of $N=100$ neurons in the biological code achieve maxima in the range between 3.2 and 4.7. We performed this experiment for $u_{b}\\in{3,4,5}$ so that the artificial codes would have maxima that lie in the same range as the biological code.\n\n#### Lifetime and population sparseness\n\nWe compute two more refined measures of sparseness in a population code. For each neuron $i$ we compute the lifetime sparseness $L\u2062S_{i}$ (also known as selectivity) and for each stimulus $\\theta$ we compute the population sparseness $P\u2062S_{\\theta}$ which are defined as the following two ratios (Willmore and Tolhurst, 2001; Lehky et al., 2005; Treves and Rolls, 1991; Pehlevan and Sompolinsky, 2014)\n\n$$\nLS_{i}=\\frac{1}{1\u2212\\frac{1}{P}}\\frac{Var_{\\theta}\u00a0r_{i}(\\theta)}{\u27e8r_{i}(\\theta)^{2}\u27e9_{\\theta}}\u00a0,\u00a0PS_{\\theta}=\\frac{1}{1\u2212\\frac{1}{N}}\\frac{Var_{i}\u00a0r_{i}(\\theta)}{\u27e8r_{i}(\\theta)^{2}\u27e9_{i}}\n$$\n\nThe normalization factors ensure that these quantities lie in the interval between $(0,1)$. Intuitively, lifetime sparseness quantifies the variability of each neuron\u2019s responses over the full set of stimuli, whereas population sparseness quantifies the variability of responses in the code for a given stimulus $\\theta$.\n\n#### Fitting a Gabor model to mouse V1 kernel\n\nUnder the assumption of translation symmetry in the kernel $K\u2062(\\theta,\\theta^{\u2032})$, we averaged the elements of the over rows of the empirical mouse V1 kernel (Pachitariu et al., 2019)\n\n$$\nK\u2062(\u0394)=\\frac{1}{P}\u2062\\sum\\mu=1PK\u2062(\\theta^{\\mu},\\theta^{\\mu}+\u0394)\n$$\n\nwhere angular addition is taken mod $\\pi$. This generates the black dots in Figure 5B. We aimed to fit a threshold-power law nonlinearity of the form $g_{q,a}(z)=max{0,z-a}^{q}$ to the kernel. Based on the Gabor model discussed above, we parameterized tuning curves as\n\n$$\nr_{\\sigma^{2},q,a}\u2062(\\theta,\\theta_{i})=g_{q,a}\u2062(\\frac{cosh\u2061(\\sigma^{-2}\u2062cos\u2061(\\theta-\\theta_{i}))}{cosh\u2061(\\sigma^{-2})}),\n$$\n\nwhere $\\theta_{i}$ is the preferred angle of the $i$-th neuron\u2019s tuning curve. Rather than attempting to perform a fit of $\\sigma^{2},a,q,{\\theta_{i}}_{i=1}^{N}$ of this form to the responses of each of the $\u223c20$-k neurons, we instead simply attempt to fit to the population kernel by optimizing over $(\\sigma^{2},a,q)$ under the assumption of uniform tiling of $\\theta_{i}$. However, we noticed that two of these variables $\\sigma^{2},a$ are constrained by the sparsity level of the code. If each neuron, on average, fires for only a fraction $f$ of the uniformly sampled angles $\\theta$, then the following relationship holds between $\\sigma^{2}$ and\n\n$$\na=\\frac{cosh\u2061(\\sigma^{\u22122}cos\u2061(\\frac{\\pi}{2}f))}{cosh\u2061(\\sigma^{\u22122})}.\n$$\n\nCalculation of the coding level $f$ for the recorded responses allowed us to infer $a$ from $\\sigma^{2}$ during optimization. This reduced the free parameter set to $(\\sigma^{2},q)$. We then solve the following optimization problem\n\n$$\nmin\\sigma^{2},q\u27e8(K^_{\\sigma^{2},q}(\\theta)\u2212K(\\theta))^{2}\u27e9_{\\theta}\u00a0K^_{\\sigma^{2},q}(\\theta)=\u27e8r_{\\sigma^{2},q}(\\theta,\\theta^{\u2032})r_{\\sigma^{2},q}(0,\\theta^{\u2032})\u27e9_{\\theta^{\u2032}},\n$$\n\nwhere integration over $\\theta_{i}$ is performed numerically. Using the Scipy Trust-Region constrained optimizer, we found $(q,\\sigma^{-2},a)=(1.7,5.0,0.2)$ which we use as the fit parameters in Figure 5.\n\n### Lead contact\n\nRequests for information should be directed to the lead contact, Cengiz Pehlevan (cpehlevan@seas.harvard.edu).\n\n### Data and code availability\n\nMouse V1 neuron responses to orientation gratings and preprocessing code were obtained from a publicly available dataset: https://github.com/MouseLand/stringer-et-al-2019, (Stringer et al., 2021; Pachitariu et al., 2019).\n\nResponses to ImageNet images and preprocessing code were obtained from another publicly available dataset, https://github.com/MouseLand/stringer-pachitariu-et-al-2018b (Stringer et al., 2018a).\n\nThe code generated by the authors for this paper is also available https://github.com/Pehlevan-Group/sample_efficient_pop_codes (Pehlevan-Group, 2022).\n",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "2ca1588d-6816-4a52-82c5-785ce6877b3f",
+      "submission_id": "34ee3016-cb6a-462b-9d5c-4ec7130f2643",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Thomas Serre, https://ror.org/05gq02987 Brown University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.78606.sa0](https://doi.org/10.7554/eLife.78606.sa0)\n\nThis important study presents a theory of generalization in neural population codes and proposes sample efficiency as a new normative principle. The theory can be used to identify the set of 'easily learnable' stimulus-response mappings from neural data and makes strong behavioral predictions that can be evaluated experimentally. Overall, the new method for elucidating inductive biases of the brain is highly compelling and will be of interest to theoretical and experimental neuroscientists working towards understanding how the cortex works.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Thomas Serre, https://ror.org/05gq02987 Brown University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.78606.sa1](https://doi.org/10.7554/eLife.78606.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Population codes enable learning from few examples by shaping inductive bias\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Michael Frank as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Fabio Anselmi (Reviewer #1); Jeff Beck (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe consensus among all 3 reviewers is that the manuscript describes an insightful and novel mathematical framework for evaluating the ability of a downstream linear decoder to learn new stimulus-response mappings from relatively few training examples. However, there is also broad consensus among the 3 reviewers that (1) the manuscript is too technical and written in a way that may not be palatable to the eLife readership (to paraphrase one of the reviewers \"I don't think that many experimentalists will immediately see the sheer utility of having a tool like this in their arsenal\" and that 2) some of the assumptions made are overly simplistic and the theory needs to be extended with more realistic neural assumptions regarding noise, readout and kernels.\n\nWrt (1), before the manuscript can be accepted for publication, it is necessary that the authors expand on possible applications to neural and behavioral experiments. The authors also need to distill the math better, provide more intuitive explanations, and reduce the jargon. Wrt (2) R2 provided a detailed lists of comments with suggestions for more realistic assumptions.\n\nReviewer #1 (Recommendations for the authors):\n\nThe authors provide a simple and clear way to understand an aspect of the implicit bias of a neural population code linking it with well-known machine learning methods and concepts such as kernel regression, sample complexity and efficiency.\n\nAlthough the mathematical results the authors employ are not novel, the way they apply them to the problem of neural coding is novel and interesting to a broad audience.\n\nIn particular, the computational neuroscience community can benefit from this work being it is one of the few dealing with the impact of the model implicit bias in explaining real data.\n\nReviewer #2 (Recommendations for the authors):\n\nIt is my opinion that the principle utility of this approach lies in its ability to identify the set of 'easily learnable' stimulus-response mappings from neural data which makes strong behavioral predictions that can be easily evaluated. I envision a simple experiment in which empirically obtained kernel functions are used to rank stimulus-response mappings according to their learnability which can then be plotted against measures of performance like the observed learning rate and saturated performance. Because kernel functions are empirically obtained, there is even the potential for meaningful cross-species comparisons. If behaviorally validated, one could also use this approach to label cortical populations by the set of easily learned stimulus-response mappings for that population. This allows for the identification of task-relevant neurons or regions which can be subsequently manipulated to enhance or degrade learning rates.\n\nOf course, any theoretical approach is only as good as the underlying assumptions and so while the primary strength is the simplicity and generality of this approach, the primary weakness is its neglect of some very real and very relevant aspects of neural data in particular and statistical learning in general. In particular, the three principle limitations of this work are tied to its reliance on the assumptions that (1) neurons are noiseless, (2) decoders are linear, and (3) learned weights are unbiased.\n\n(1) Within this framework, a realistic stimulus-dependent noise model can be easily introduced and its effects on the kernel and set of easily learned stimulus-response mappings investigated. So while the kernel would be substantially altered via the addition of a realistic noise model, the applications of the approach outlined above would not be affected. The same cannot be said for the efficient coding application described in this manuscript. There, the authors note that rotations and constant shifts of neural activity do not affect the kernel and thus do not affect the generalization error. This kernel invariance is not present when a non-trivial (i.e. non-isotropic) noise model is added. For example, suppose that neurons are independent and Poisson so that noise scales with the mean of the neural response. In this case, adding a baseline firing rate to a population of unimodal neurons representing orientation necessarily reduces the information content of the population while rotations can affect the fidelity with which certain stimulus values are represented. It is important to note, however, that while this particular efficiency result is not compelling, I believe that it is possible to perform a similar analysis that takes into account realistic noise models and focuses on a broad set of 'biologically plausible' kernels instead of particular invariant ones. For example, one could consider noise covariance structures with differential correlations (Moreno-Bote 2014). Since the magnitude of differential correlations controls the redundancy of the population code this would enable an analysis of the role of redundancy in suppressing (or enhancing) generalization error.\n\n(2) Similarly, the linearity assumption is somewhat restrictive. Global linear decoders of neural activity are known to be highly inefficient and completely fail when decoding orientation in the primary visual cortex in the presence of contrast fluctuations. This is because contrast modulates the amplitude of the neural response and doubling the amplitude means doubling an estimate obtained from a linear decoder even when the underlying orientation has not changed. While the contrast issue could be partially addressed by simply considering normalized neural responses, it is not yet clear how to extend this approach to account for other sources of neural variability and co-variability that cause global linear decoders to fail so badly.\n\n(3) This analysis relies on the assumption that decoder weights learned in the presence of finite data are efficient and unbiased. This assumption is problematic particularly when it comes to inductive bias and generalization error. This is because a standard way to reduce generalization error is to introduce bias into the learned decoder weights through a penalization scheme that privileges decoder weights with small magnitudes. This kind of regularization is particularly important when neurons are noisy. Fortunately, this issue could be addressed by parameterizing changes in the kernel function by the degree and type of regularization potentially leading to a more general result.\n\nFinally, I would like to conclude by explicitly stating that while the limitations imposed by the assumptions listed above temper my enthusiasm in regards to conclusions drawn in this work, I do not believe there is some fundamental problem with the general theoretical framework. Indeed, items 1 and 3 above can be easily addressed through straightforward extensions of the authors approach and I look forward to their implementation. Item 2 is a bit more troublesome, but my intuition tells me that an information-theoretic extension based upon Fisher information may be capable of eliminating all three of these limiting assumptions by exploiting the relationship between FI(\\theta) and FI(y=f(\\theta)).\n\nUltimately, all I felt the need to say is in the public part of the review. But I wanted to use this space to insure that it was clear that I feel that this approach has a lot of potential and that I very much hope to see it extended/generalized.\n\nIf I were to make any suggestions they would be:\n\n(1) a discussion of the consequences of biologically plausible noise models. I believe that this only requires simply augmenting K by a stimulus dependent noise covariance matrix.\n\n(2) using this addition of a noise model to enable a discussion of the role of redundancy in generalization. This could be accomplished by considering perturbations to the noise covariance matrix that introduce differential correlations (Moreno-Bote 2014) of varying magnitude. More differential correlations means more redundancy and, I suspect, better generalization.\n\n(3) the addition of a paragraph or two outlining some of the other ways that this learnability/generalization measure could be of use to physiologists and behavioral scientists. Training a mouse to do anything more complicated simple orientation detection is challenging to say the least. So having any tool that can be used to identify functions $y=f(\\theta)$ that a mouse has a good chance of learning quickly would be highly advantageous. Similarly, by strategically subsampling neurons by tuning properties I suspect it may be possible to identify subpopulations of neurons that are particular important for learning certain functions. This is also cool because it allows physiologists to then target those populations for manipulation.\n\nOf these (3) is probably the most important for this manuscript, because I don't think that many experimentalists will immediately see the sheer utility of having a tool like this in their arsenal.\n\nReviewer #3 (Recommendations for the authors):\n\nThe manuscript presents a theory of generalization performance in deterministic population codes, that applies to the case of small numbers of training examples. The main technical result, as far as I understand, is that generalization performance (the expected classification or regression error) of a population code depends exclusively on the 'kernel', i.e. a measure of the pairwise similarity between population activity patterns corresponding to different inputs. The main conceptual results are that, using this theory, one can understand the inductive biases of the code just from analyzing the kernel, particularly the top eigenfunctions; and that sample-efficient learning (low generalization performance with few samples) depends on whether the task is aligned with the population's inductive bias, that is, whether the target function (i.e. the true map from inputs to outputs) is aligned with the top eigenfunctions of the kernel. For instance, in mouse V1 data, they show that the top eigenfunctions correspond to low frequency functions of visual orientation (i.e. functions that map a broad range of similar orientations to similar output value), and that consistent with the theory, the generalization performance for small sample sizes is better for tasks defined by low frequency target functions. In my opinion, perhaps the most significant finding from a neuroscience perspective, is that the conditions for good generalization at low samples are markedly different from those in the large-sample asymptotic regime studies in Stringer et al. 2018 Nature: rather than a trade-off between high-dimensionality and differentiability proposed by Stringer et al., this manuscript shows that in the low-sample regime such codes can be disadvantageous for small sample sizes, that differentiability is not required, that the top eigenvalues matter more than the tail of the spectrum, and what matters is the alignment between the task and the top eigenfunctions. The authors propose sample-efficient learning/generalization as a new principle of neural coding, replacing or complementing efficient coding.\n\nOverall, in my opinion this is a remarkable manuscript, presenting truly innovative theory with somewhat limited but convincing application to neural data. My main concern is that this is highly technical, dense, and long; the mathematical proofs for the theory are buried in the supplement and require knowledge of disparate techniques from statistical physics. Although some of that material on the theory of generalization is covered in previous publications by the authors, it was not clear to me if that is true for all of the technical results or only some.\n\nFixed population code, learnable linear readout: the authors acknowledge in the very last sentences of the manuscript that this is a limitation, given that neural tuning curves (the population neural code) are adaptable. I imagine extending the theory to both learnable codes and learnable readouts is hard and I understand it's beyond the scope of this paper. But perhaps the authors could motivate and discuss this choice, not just because of its mathematical convenience but also in relation to actual neural systems: when are these assumptions expected to be a good approximation of the real system?\n\nThe analysis of V1 data, showing a bias for low-frequency functions of orientation is convincing. But it could help if the authors provided some considerations on the kind of ethological behavioral context where this is relevant, or at least the design of an experimental behavioral task to probe it. Also related, it would be useful to construct and show a counter-example, a synthetic code for which the high-frequency task is easier.\n\nLine 519, data preprocessing: related to the above, is it possible that binning together the V1 responses to gratings with different orientations (a range of 3.6 deg per bin, if I understood correctly) influences the finding of a low-frequency bias?\n\nI found the study of invariances interesting, where the theory provides a normative prediction for the proportion of simple and complex cells. However, I would suggest the authors attempt to bring this analysis a step closer to the actual data: there are no pure simple and complex cells, usually the classification is based on responses to gratings phases (F1/F0) and real neurons take a continuum of values. Could the theory qualitatively predict that distribution?\n",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c736908d-79e7-464d-8819-c196173c8c53",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C1",
+      "claim": "Learning from a limited number of experiences requires suitable inductive biases.",
+      "claim_type": "EXPLICIT",
+      "source": "Learning from a limited number of experiences requires suitable inductive biases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract about the necessity of inductive biases for sample-efficient learning.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "df9b1cb1-5d17-49a3-aae0-6892d3177287",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C2",
+      "claim": "The structure of population codes shapes inductive bias.",
+      "claim_type": "EXPLICIT",
+      "source": "Our theory illustrates in a mathematically precise way how the structure of population codes shapes inductive bias, and how a match between the code and the task is crucial for sample-efficient learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main theoretical result stated in the abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "bf000e27-616e-4554-9708-995cc8657ceb",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C3",
+      "claim": "A match between the code and the task is crucial for sample-efficient learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Our theory illustrates in a mathematically precise way how the structure of population codes shapes inductive bias, and how a match between the code and the task is crucial for sample-efficient learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main theoretical result stated in the abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "6d1e6aaa-5134-4765-b535-dec2f8026616",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C4",
+      "claim": "Mouse primary visual cortex exhibits an efficiency bias towards low-frequency orientation discrimination tasks for grating stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Using recordings from the mouse primary visual cortex, we demonstrate the existence of an efficiency bias towards low-frequency orientation discrimination tasks for grating stimuli and low spatial frequency reconstruction tasks for natural images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from mouse V1 recordings analyzed in the paper.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "aac77c8b-856d-4e7d-b714-758ebafccb5e",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C5",
+      "claim": "Mouse primary visual cortex exhibits an efficiency bias towards low spatial frequency reconstruction tasks for natural images.",
+      "claim_type": "EXPLICIT",
+      "source": "Using recordings from the mouse primary visual cortex, we demonstrate the existence of an efficiency bias towards low-frequency orientation discrimination tasks for grating stimuli and low spatial frequency reconstruction tasks for natural images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from mouse V1 recordings analyzed in the paper.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "41789b3d-9a63-4c4f-95e4-f3f3ed94e140",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C6",
+      "claim": "Biological codes have lower total activity than other codes with identical bias.",
+      "claim_type": "EXPLICIT",
+      "source": "By analyzing recordings from the mouse primary visual cortex, we demonstrate that biological codes have lower total activity than other codes with identical bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analysis of mouse V1 data comparing biological codes to randomly rotated codes with the same kernel.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "efb63cdd-f91c-43b6-a8f9-af7059d74034",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C7",
+      "claim": "Only a few experiences are sufficient to learn a task in many cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Often, only a few experiences are sufficient to learn a task, whether acquiring a new word (Carey and Bartlett, 1978) or recognizing a new face (Peterson et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work on word learning and face recognition.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "f1eb8d43-3443-4b9f-8e53-f1b3bf8156be",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C8",
+      "claim": "The brain relies on implicit assumptions about the world (inductive biases) when learning from few experiences.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, when learning and generalizing from past experiences, and especially from few experiences, the brain relies on implicit assumptions it carries about the world, or its inductive biases (Wolpert, 1996; Sinz et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior theoretical work on inductive biases.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "cdc9b873-1ac1-4f26-97fc-4cb69eab29db",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C9",
+      "claim": "Inferring a general rule from finite observations is an ill-posed problem which requires prior assumptions.",
+      "claim_type": "EXPLICIT",
+      "source": "Reliance on inductive bias is not a choice: inferring a general rule from finite observations is an ill-posed problem which requires prior assumptions since many hypotheses can explain the same observed experiences (Hume, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental principle in learning theory, supported by a citation to Hume.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "35568bd0-b4e6-479a-925a-941a6d0aac85",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C10",
+      "claim": "Without the right biases that suit the task at hand, successful generalization is impossible.",
+      "claim_type": "EXPLICIT",
+      "source": "Without the right biases that suit the task at hand, successful generalization is impossible (Wolpert, 1996; Sinz et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "4a655858-48dc-4135-a9f5-00f5744e6281",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C11",
+      "claim": "Inductive bias arises from the nature of the neural code for sensory stimuli, specifically its similarity structure.",
+      "claim_type": "EXPLICIT",
+      "source": "For this circuit and learning rule, inductive bias arises from the nature of the neural code for sensory stimuli, specifically its similarity structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main theoretical result of the paper.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "fb8bc068-f765-4516-9282-3b89bd4e0b9e",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C12",
+      "claim": "Different population codes can encode the same stimulus variables and allow learning of the same output with perfect performance given infinitely many samples.",
+      "claim_type": "EXPLICIT",
+      "source": "While different population codes can encode the same stimulus variables and allow learning of the same output with perfect performance given infinitely many samples, learning performance can depend dramatically on the code when restricted to a small number of samples, where the reliance on and the effect of inductive bias are strong (Figure 1B, C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is illustrated in Figure 1 and is a key observation of the paper.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "dd6c8dcd-e1b4-4764-9558-3eb890eecd18",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C13",
+      "claim": "Learning performance can depend dramatically on the code when restricted to a small number of samples.",
+      "claim_type": "EXPLICIT",
+      "source": "While different population codes can encode the same stimulus variables and allow learning of the same output with perfect performance given infinitely many samples, learning performance can depend dramatically on the code when restricted to a small number of samples, where the reliance on and the effect of inductive bias are strong (Figure 1B, C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is illustrated in Figure 1 and is a key observation of the paper.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "c050d997-7612-4281-8951-fee48500c918",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C14",
+      "claim": "A code and a learning rule have a good inductive bias for a task if the task can be learned from a small number of examples.",
+      "claim_type": "EXPLICIT",
+      "source": "We say that a code and a learning rule, together, have a good inductive bias for a task if the task can be learned from a small number of examples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition provided by the authors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "176d0cfb-299c-41f6-b66a-1cc28e50beaf",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C16",
+      "claim": "The kernel encodes the geometry of the neural responses.",
+      "claim_type": "EXPLICIT",
+      "source": "The kernel, or similarity matrix, encodes the geometry of the neural responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the kernel function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "c9bc9abf-665c-4711-9d84-a96899e3ca01",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C19",
+      "claim": "A large set of codes achieve identical desired performance on learning tasks because the kernel is invariant with respect to rotation of the population code.",
+      "claim_type": "EXPLICIT",
+      "source": "Since predictions only depend on the kernel, a large set of codes achieve identical desired performance on learning tasks. This is because the kernel is invariant with respect to rotation of the population code.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical result derived in the paper.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "b55b4458-cc7d-41f4-923f-db18e6cece34",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C21",
+      "claim": "The original V1 code and its rotated counterpart have identical kernels.",
+      "claim_type": "EXPLICIT",
+      "source": "The original V1 code and its rotated counterpart have identical kernels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 2B using mouse V1 data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "11723a74-4b4e-42cb-ad3d-6539b834c82b",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C26",
+      "claim": "There exists a bias in the readout towards learning certain target responses faster than others.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis shows the existence of a bias in the readout towards learning certain target responses faster than others.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main theoretical result of the paper.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "335d6a52-0c16-4de6-8cb5-5dc7d32b406f",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C30",
+      "claim": "Kernel eigenfunctions with large eigenvalues can be estimated using a smaller number of samples.",
+      "claim_type": "EXPLICIT",
+      "source": "The first one is spectral bias: kernel eigenfunctions with large eigenvalues can be estimated using a smaller number of samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main principle derived from the theoretical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "d1ff69da-bc34-4a7e-a10e-4091a68b1fd8",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C31",
+      "claim": "Target functions with most of their power in top kernel eigenfunctions can be estimated efficiently and are compatible with the code.",
+      "claim_type": "EXPLICIT",
+      "source": "The second principle is the code-task alignment: target functions with most of their power in top kernel eigenfunctions can be estimated efficiently and are compatible with the code.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main principle derived from the theoretical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "b933b5d4-ea01-487e-9e67-c2ff2b93f3ab",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C39",
+      "claim": "The theoretical predictions and numerical experiments for orientation discrimination tasks show perfect agreement.",
+      "claim_type": "EXPLICIT",
+      "source": "The theoretical predictions and numerical experiments show perfect agreement (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "0f988b13-b6cc-4124-ace5-66114608625d",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C40",
+      "claim": "For the low-frequency orientation discrimination task, the two target values are well separated along the top two principal axes.",
+      "claim_type": "EXPLICIT",
+      "source": "For the low-frequency task, the two target values are well separated along the top two axes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "96f5a10d-31e4-4521-bafc-c867181099c1",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C41",
+      "claim": "The high-frequency orientation discrimination task is not well separated along even the top four principal axes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the high-frequency task is not well separated along even the top four axes (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "9b6ca2f3-a569-4658-8f96-7180928c9103",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C42",
+      "claim": "For the task of identifying mice and birds, the linear rise in cumulative power indicates that there is roughly equal power along all kernel eigenfunctions.",
+      "claim_type": "EXPLICIT",
+      "source": "For the task of identifying mice and birds (Stringer et al., 2018b, Stringer et al., 2018a) the linear rise in cumulative power indicates that there is roughly equal power along all kernel eigenfunctions, indicating that the representation is poorly aligned to this task (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3D using mouse V1 data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "58f75c6b-0184-4345-8f87-b1f131643159",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C45",
+      "claim": "The population preferentially encodes low spatial frequency content in the image.",
+      "claim_type": "EXPLICIT",
+      "source": "This reflects the fact that the population preferentially encodes low spatial frequency content in the image (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4F using mouse V1 data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "3431efc7-e3ad-48f5-a727-6c74f2353d52",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C47",
+      "claim": "The width of the tuning curves control bandwidths of the kernel spectra.",
+      "claim_type": "EXPLICIT",
+      "source": "The width of the tuning curves control bandwidths of the kernel spectra Figure 6B, with narrower curves having an later decay in the spectrum and higher high frequency eigenvalues.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6B using a simple model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "13e3380f-f7ec-469c-a2d0-53f0c33b0b19",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C52",
+      "claim": "Asymptotic conditions on the tail of the spectra are insufficient to understand generalization in the small sample size limit.",
+      "claim_type": "EXPLICIT",
+      "source": "This example demonstrates that asymptotic conditions on the tail of the spectra are insufficient to understand generalization in the small sample size limit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the analysis in Figure 6.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "70cae254-247a-4388-a7ba-ad12f4d6ade0",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C53",
+      "claim": "The bulk of the kernel's spectrum needs to match the spectral structure of the task to generalize efficiently in the low-sample size regime.",
+      "claim_type": "EXPLICIT",
+      "source": "The bulk of the kernel's spectrum needs to match the spectral structure of the task to generalize efficiently in the low-sample size regime.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the analysis in Figure 6.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "36be3b6e-d40d-400b-86d6-58453ed22c5f",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C54",
+      "claim": "For large sample sizes, the tail of the eigenvalue spectrum becomes important.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for large sample sizes, the tail of the eigenvalue spectrum becomes important.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the analysis in Figure 6.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "486ec633-c7b0-4802-971a-01abb8ad51bc",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C55",
+      "claim": "The kernel induced by the spatiotemporal code in recurrent networks introduces complex and rich spatiotemporal similarity structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The kernel induced by the spatiotemporal code is shown in Figure 7E. The high dimensional nature of the activity in the recurrent network introduces complex and rich spatiotemporal similarity structure.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7E using simulations of recurrent networks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "698fe3bb-2bfd-470e-832d-149081afcf6a",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C57",
+      "claim": "Tasks involving long time delays are more difficult and exhibit lower cumulative power curves in the delayed response task.",
+      "claim_type": "EXPLICIT",
+      "source": "Unsurprisingly, tasks involving long time delays are more difficult and exhibit lower cumulative power curves.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7G using simulations of recurrent networks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "c2ad3264-d433-446d-bbb0-d642c88598cc",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C59",
+      "claim": "Many different codes can support the same inductive bias.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe that many different codes can support the same inductive bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main observation of the paper regarding the degeneracy of codes with the same kernel.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "8f7689ef-bd72-42ea-a4cb-39a4e10cc860",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C60",
+      "claim": "The true V1 code is metabolically more efficient than other codes with identical bias.",
+      "claim_type": "EXPLICIT",
+      "source": "Although, the performance of linear readouts may be invariant to rotations that preserve kernels (Figure 2), metabolic efficiency may favor certain codes over others (Barlow, 1961; Atick and Redlich, 1992; Attneave, 1954; Olshausen and Field, 1997; Simoncelli and Olshausen, 2001), reducing degeneracy in the space of codes with identical kernels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis tested in the paper using mouse V1 data.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "f02b1c8d-1402-4344-ae5a-2d9b24b80ac9",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C62",
+      "claim": "The biological code achieves significantly higher lifetime sparseness than RROS codes.",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 8D, we compare the lifetime and population sparseness distributions of the true biological code with a RROS version of the same code, revealing biological neurons have significantly higher lifetime sparseness.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 8D using mouse V1 data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "db197e98-37fd-4cd9-9f8f-7c5b8db37554",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C63",
+      "claim": "Elucidating inductive biases of the brain is fundamentally important for understanding natural intelligence.",
+      "claim_type": "EXPLICIT",
+      "source": "Elucidating inductive biases of the brain is fundamentally important for understanding natural intelligence (Tenenbaum et al., 2011; Lake et al., 2017; Sinz et al., 2019; Zador, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "5fd10bb1-3103-4bfe-ba57-44f2f14e518c",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C64",
+      "claim": "Under the delta rule, the generalization performance of the readout is entirely dependent on the code's inner product kernel.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the delta rule, the generalization performance of the readout is entirely dependent on the code's inner product kernel; the kernel is a determinant of inductive bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main theoretical result of the paper.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "2e1f52f2-fbf2-4e52-9c3e-9356fddab80c",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C65",
+      "claim": "The kernel is an example of a representational similarity matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "In its finite dimensional form, the kernel is an example of a representational similarity matrix and is a commonly used tool to study neural representations (Edelman, 1998; Kriegeskorte et al., 2008; Laakso and Cottrell, 2000; Kornblith et al., 2019; Cadieu et al., 2014; Pehlevan et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the kernel supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "e170a7e1-474e-412c-ad5a-052f55da42f5",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C66",
+      "claim": "A similar simplicity bias has been observed in training deep neural networks.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar simplicity bias has been also observed in training deep neural networks (Rahaman et al., 2019; Xu et al., 2019; Kalimeris et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about related work supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "c675e0dc-bb3c-4a6e-89b2-e882605bd9dc",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C67",
+      "claim": "The low spatial frequency reconstruction bias is consistent with the finding that mouse visual cortex neurons are selective for low spatial frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter finding is consistent with the finding that mouse visual cortex neurons are selective for low spatial frequency (Niell and Stryker, 2008; Vreysen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement connecting the paper's findings to prior work, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "ca388127-e4f5-4905-b448-fd2781de5b7e",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C68",
+      "claim": "Invariances in the population code can facilitate learning some tasks at the expense of performance on others.",
+      "claim_type": "EXPLICIT",
+      "source": "The toy model of the visual cortex as a mixture of simple and complex cells demonstrated how invariances, specifically the phase invariance of the complex cells, in the population code can facilitate learning some tasks involving phase invariant responses at the expense of performance on others.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the analysis of the simple/complex cell model in Figure 5.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "f82ac6bf-144a-44cb-9ba4-93316f1dcf97",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C69",
+      "claim": "Sample efficiency is promoted as a general coding principle for neural populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work promotes sample efficiency as a general coding principle for neural populations, relating neural representations to the kinds of problems they are well suited to solve.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main conclusion of the paper.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "8c8cc193-8770-40f4-a17a-bccc3674fecb",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C70",
+      "claim": "A sample efficiency approach to population coding differs from the classical efficient coding theories.",
+      "claim_type": "EXPLICIT",
+      "source": "A sample efficiency approach to population coding differs from the classical efficient coding theories (Attneave, 1954; Barlow, 1961; Atick and Redlich, 1992; Srinivasan et al., 1982; van Hateren, 1992; Rao and Ballard, 1999; Olshausen and Field, 1997; Chalk et al., 2018), which postulate that populations of neurons optimize information content of their code subject to metabolic constraints or noise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement comparing the paper's approach to prior work, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "bdeaf7dc-1112-41e0-9714-3e8f2777d9b6",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C71",
+      "claim": "Classical efficient coding theories do not address sample efficiency demands on learning.",
+      "claim_type": "EXPLICIT",
+      "source": "While these theories emphasize different aspects of the code's information content (such as reduced redundancy, predictive power, or sparsity), they do not address sample efficiency demands on learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critique of prior work.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "6688a16e-fa15-4c46-83a1-3fc6bc4cde1d",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C72",
+      "claim": "Recent studies demonstrated hallmarks of redundancy and correlation in population responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, recent studies demonstrated hallmarks of redundancy and correlation in population responses (Chapin and Nicolelis, 1999; Bathellier et al., 2008; Pitkow and Meister, 2012; Gao and Ganguli, 2015; Abbasi-Asl et al., 2016; Gallego et al., 2018; Stringer et al., 2018b), violating a generic prediction of efficient coding theories that responses of different neurons should be uncorrelated across input stimuli in high signal-to-noise regimes to reduce redundancy in the code and maximize information content (Barlow, 1961; Atick and Redlich, 1992; Srinivasan et al., 1982; van Hateren, 1992; Haft and van Hemmen, 1998; Huang and Rao, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about recent findings supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "38e1880c-b7df-4979-af58-ab6d9e3f7988",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C73",
+      "claim": "Structured correlations of neural responses correspond to the decay in the spectrum of the kernel.",
+      "claim_type": "EXPLICIT",
+      "source": "In our theory, the structured correlations of neural responses correspond to the decay in the spectrum of the kernel, and play a key role in biasing learned readouts towards simple functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the paper's theoretical results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "c9a69293-af75-4bc5-a6c1-10ba687ace7d",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C74",
+      "claim": "Sample-efficient learning requires more than smoothness conditions in the form of asymptotic decay rates on the kernel's spectrum.",
+      "claim_type": "EXPLICIT",
+      "source": "While we also identify power law spectral decays, we show that sample-efficient learning requires more than smoothness conditions in the form of asymptotic decay rates on the kernel's spectrum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main conclusion of the paper contrasting with prior work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "b0163c26-6e59-4361-b3f5-22e0da81f712",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C75",
+      "claim": "The interplay between the stimulus distribution, target response and the code gives rise to sample efficient learning.",
+      "claim_type": "EXPLICIT",
+      "source": "The interplay between the stimulus distribution, target response and the code gives rise to sample efficient learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main conclusion of the paper.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "b8c254f8-837c-492d-989a-57cbe2ad9149",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C76",
+      "claim": "The top eigenvalues govern the small sample size behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of spectral bias, the top eigenvalues govern the small sample size behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the theoretical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "4bb96e5e-345e-461e-96c4-4ea5c5a01683",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C77",
+      "claim": "The tail of the spectrum becomes important at large sample sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "The tail of the spectrum becomes important at large sample sizes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the theoretical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "c4cbde54-b9ce-4c76-8444-19b7858348bf",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C78",
+      "claim": "The true V1 code has much lower average activity than random codes with the same kernel.",
+      "claim_type": "EXPLICIT",
+      "source": "Though the kernel is degenerate with respect to rotations of the code in the neural activity space, we demonstrated that the true V1 code has much lower average activity than random codes with the same kernel, suggesting that evolution and learning may be selecting neural codes with low average spike rates which preserve sample-efficiency demands for downstream learning tasks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main finding of the paper using mouse V1 data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "548797a3-1f08-474a-9c53-20ab079928b4",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C79",
+      "claim": "Evolution and learning may be selecting neural codes with low average spike rates which preserve sample-efficiency demands for downstream learning tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Though the kernel is degenerate with respect to rotations of the code in the neural activity space, we demonstrated that the true V1 code has much lower average activity than random codes with the same kernel, suggesting that evolution and learning may be selecting neural codes with low average spike rates which preserve sample-efficiency demands for downstream learning tasks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the findings of the paper.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "af2da51c-0409-4e2f-9921-737b5e8be0af",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C80",
+      "claim": "Metabolic efficiency may be a determinant in the orientation and placement of the ubiquitously observed low-dimensional coding manifolds in neural activity space.",
+      "claim_type": "EXPLICIT",
+      "source": "We predict that metabolic efficiency may be a determinant in the orientation and placement of the ubiquitously observed low-dimensional coding manifolds in neural activity space in other parts of the brain (Gallego et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the findings of the paper.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "dcd0c936-6140-4df7-938b-09079b0aef71",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C81",
+      "claim": "The demand of metabolic efficiency is consistent with prior sparse coding theories.",
+      "claim_type": "EXPLICIT",
+      "source": "The demand of metabolic efficiency is consistent with prior sparse coding theories (Niven and Laughlin, 2008; Olshausen and Field, 1997; Simoncelli and Olshausen, 2001; Hrom\u00e1dka et al., 2008), however, our theory emphasizes sample-efficient learning as the primary normative objective for the code.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement connecting the paper's findings to prior work, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "e5eb72a7-a062-44f5-a2f7-dff7e6ee497a",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C82",
+      "claim": "Sensory neuron tuning curves can adapt during perceptual learning tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, sensory neuron tuning curves can adapt during perceptual learning tasks (Gilbert, 1994; Goltstein et al., 2021; Ghose et al., 2002; Schoups et al., 2001) with the strength of adaptation dependent on brain area (Yang and Maunsell, 2004; Adab et al., 2014; Op de Beeck et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about prior work supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "1afa3db5-8393-4d9e-804a-c02156f47b6e",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C83",
+      "claim": "In many experiments, changes to tuning in sensory areas are small.",
+      "claim_type": "EXPLICIT",
+      "source": "In many experiments, these changes to tuning in sensory areas are small (Schoups et al., 2001; Ghose et al., 2002), satisfying the assumptions of our theory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about prior work supported by citations, used to justify the paper's assumptions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "27130f12-200c-41fb-a118-9a686dbb58ab",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "claim_id": "C84",
+      "claim": "Monkeys trained on noisy visual motion detection exhibit changes in sensory-motor (LIP) but not sensory areas (MT).",
+      "claim_type": "EXPLICIT",
+      "source": "For example monkeys trained on noisy visual motion detection exhibit changes in sensory-motor (LIP) but not sensory areas (MT), consistent with a model of readout from a static sensory population code (Law and Gold, 2008; Shadlen and Newsome, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about prior work supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "dc1d0e70-e55d-45a3-afd9-93bcfa9c4567",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors develop a theoretical framework showing that population code structure shapes inductive bias through the kernel function, and that code-task alignment is crucial for sample-efficient learning. This theory demonstrates that under the delta rule, generalization performance depends entirely on the code's inner product kernel, promoting sample efficiency as a general coding principle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C11, C64, and C69 collectively establish the core theoretical contribution. The mathematical derivation showing kernel dependence (C64) is rigorous, the connection to inductive bias (C2, C11) is clearly demonstrated, and the importance of code-task matching (C3) is both theoretically derived and empirically validated. The promotion of sample efficiency as a coding principle (C69) follows logically from the theory.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "3e3b5fff-da3e-4e2f-893d-7381e898a630",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The theory identifies two key principles governing inductive bias: spectral bias (kernel eigenfunctions with large eigenvalues can be estimated with fewer samples) and code-task alignment (target functions with power concentrated in top eigenfunctions are learned efficiently). The interplay between stimulus distribution, target response, and code structure determines sample efficiency, with top eigenvalues governing small sample behavior and the tail becoming important at large sample sizes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26, C30, C31, C73, C75, C76, and C77 describe the mechanistic principles derived from the theory. The spectral bias principle (C30) and code-task alignment (C31) are mathematically derived and empirically validated. The role of structured correlations (C73) and the differential importance of spectrum regions at different sample sizes (C76, C77) are well-supported by both theory and experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "ce6a06ed-2010-436e-bfb5-136759d2e92e",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Analysis of mouse V1 responses to grating stimuli reveals an efficiency bias toward low-frequency orientation discrimination tasks. Low-frequency tasks show rapid cumulative power rise and good separation along top principal axes, while high-frequency tasks do not, with theoretical predictions matching experimental results perfectly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C39, C40, C41, and C67 are well-supported by experimental data from mouse V1 recordings. Figure 3 shows clear agreement between theory and experiment, with proper controls and visualization of the underlying geometric structure. The connection to prior findings about low spatial frequency selectivity (C67) strengthens the result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "c031d875-88a7-4c2d-b9aa-511363a43011",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Mouse V1 exhibits an efficiency bias toward low spatial frequency reconstruction of natural images, with the population preferentially encoding low spatial frequency content. This is evidenced by cumulative power distributions and learning curves for band-pass filtered image reconstruction tasks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C42, and C45 are supported by analysis of V1 responses to natural images shown in Figure 4. The experimental design appropriately controls for dimensionality by preserving volume in Fourier space, and the results are consistent with known V1 properties. However, the number of images and trial averaging details could affect robustness.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "145d3793-8bad-43a8-82f2-ca49a4d931ad",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The biological V1 code has significantly lower total activity and higher lifetime sparseness than randomly rotated codes with identical kernels (RROS codes). This suggests metabolic efficiency as a constraint that breaks the degeneracy among codes with the same inductive bias.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C60, C62, and C78 are supported by systematic comparison of biological codes to RROS codes across multiple neuron subset sizes (Figure 8). The statistical significance increases with neuron count as expected. However, the use of deconvolved calcium signals as a proxy for spiking may introduce systematic biases, and the optimization procedure for finding the most efficient code only guarantees local optima.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "728b97c4-b743-4f26-a5cd-bd792a4815c8",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Many different population codes can achieve identical learning performance because the kernel is invariant to orthogonal rotations of the code. This degeneracy is demonstrated both theoretically and empirically with mouse V1 data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19, C21, and C59 are well-supported. The mathematical proof of rotation invariance is straightforward, and Figure 2 provides clear empirical demonstration using V1 data. This result is important for understanding the space of equivalent codes and motivates the metabolic efficiency analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "6a6d62de-06e6-48a2-a482-ac1f2e9eba7d",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A toy model of V1 with simple and complex cells demonstrates that invariances in the population code (specifically phase invariance of complex cells) can facilitate learning some tasks at the expense of others, with optimal simple/complex cell mixtures depending on task structure and sample size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C68 is supported by the Gabor model analysis in Figure 5. The model appropriately captures key features of simple and complex cells, and the results clearly show task-dependent optimal mixtures. The extension to continuous F1/F0 distributions (Figure 5\u2014figure supplement 3) strengthens the biological relevance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "6769d124-28e4-405a-b3cb-916c14239222",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Sample-efficient learning requires more than asymptotic spectral decay rates. The bulk of the kernel spectrum must match the task structure for low-sample efficiency, while the tail becomes important only at large sample sizes. This contrasts with prior work emphasizing only asymptotic smoothness conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52, C53, C54, and C74 are supported by the von Mises kernel analysis in Figure 6. The examples clearly demonstrate that codes with identical asymptotic decay can have dramatically different small-sample performance, and that optimal bandwidth depends on sample size. This is an important theoretical contribution distinguishing this work from prior studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "17583b77-ef64-4814-b206-5d59136613ee",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The theory extends to time-dependent codes, with recurrent networks generating kernels with complex spatiotemporal structure. In a delayed response task, longer delays result in lower cumulative power and worse sample efficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55 and C57 are supported by the RNN simulations in Figure 7. The extension to temporal codes is mathematically sound, and the delayed response task provides a clear demonstration. However, only one network architecture and task are tested, limiting generalizability. The agreement between theory and simulation is good.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "fe7f9430-19f0-429e-88cc-a33601be3bb4",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Different population codes can encode the same stimulus variables and achieve perfect performance with infinite samples, but learning performance depends dramatically on the code when restricted to small sample sizes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12 and C13 are supported by the synthetic examples in Figure 1 and the theoretical framework. The examples clearly illustrate how codes with different structure lead to different small-sample performance despite asymptotic equivalence. This motivates the entire study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "b9489afb-b9c6-4440-95ec-8cefa28e59d2",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In a Gabor model of V1, the width of tuning curves controls the bandwidth of kernel spectra, with narrower curves having later spectral decay and higher high-frequency eigenvalues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C47 is supported by Figure 6B and the Gabor model analysis. The relationship between tuning width and spectral properties is clearly demonstrated. However, this is a relatively straightforward consequence of Fourier analysis and serves mainly to illustrate the broader principles.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "116afb55-7e22-4a01-ab6b-b9ca33bb1069",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Learning from limited experiences requires suitable inductive biases because inferring general rules from finite observations is ill-posed. The brain relies on implicit assumptions when learning from few examples, and without appropriate biases, successful generalization is impossible.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7, C8, C9, and C10 establish the motivation and background. These are well-established principles in learning theory and neuroscience, properly cited. They provide important context but are not novel contributions of this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "09b1d51c-c9de-488c-be04-cf9dfe446126",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors define good inductive bias as enabling learning from few examples, and identify the kernel as encoding the geometry of neural responses and serving as a representational similarity matrix.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14, C16, and C65 provide definitions and conceptual framework. These are clearly stated and properly connected to prior work on representational similarity analysis. They are foundational for the study but represent clarification rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "a1f74bf1-ef53-491c-b3af-7d7553c4c537",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The sample efficiency approach to population coding differs from classical efficient coding theories, which emphasize information content but do not address sample efficiency. Recent studies show redundancy and correlation in population responses, violating predictions of classical theories.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63, C70, C71, and C72 position the work relative to prior theories. The distinctions are clearly articulated and properly cited. This contextualizes the contribution but is primarily a literature review component.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "eeec1916-47d7-4255-9380-8bc45b471420",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Similar simplicity bias has been observed in training deep neural networks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C66 connects the findings to machine learning literature with appropriate citations. This is a valid observation but represents a brief connection to related work rather than a substantive result of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "0c179656-237c-4706-a659-81c2b3fe6fb6",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Evolution and learning may be selecting neural codes with low spike rates that preserve sample-efficiency, and metabolic efficiency may determine the orientation of low-dimensional coding manifolds throughout the brain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C79 and C80 are speculative predictions based on the findings. While the metabolic efficiency of V1 codes is demonstrated (C78), the evolutionary and broader brain-wide claims require additional evidence. These are reasonable hypotheses for future work but are not directly tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    },
+    {
+      "id": "db5384ad-6e9b-4aaf-b777-e7ecd1a59bab",
+      "content_id": "bd84567d-cb75-483f-8806-7ce06e3ad607",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The metabolic efficiency finding is consistent with sparse coding theories, and the assumption of static sensory codes during learning is justified by prior work showing small tuning changes in many perceptual learning experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81, C82, C83, and C84 connect findings to prior work and justify modeling assumptions. The citations are appropriate and the arguments are sound. These provide important context for interpreting the results and their limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:55:11.001147Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "df9b1cb1-5d17-49a3-aae0-6892d3177287",
+      "result_id": "dc1d0e70-e55d-45a3-afd9-93bcfa9c4567"
+    },
+    {
+      "claim_id": "bf000e27-616e-4554-9708-995cc8657ceb",
+      "result_id": "dc1d0e70-e55d-45a3-afd9-93bcfa9c4567"
+    },
+    {
+      "claim_id": "4a655858-48dc-4135-a9f5-00f5744e6281",
+      "result_id": "dc1d0e70-e55d-45a3-afd9-93bcfa9c4567"
+    },
+    {
+      "claim_id": "5fd10bb1-3103-4bfe-ba57-44f2f14e518c",
+      "result_id": "dc1d0e70-e55d-45a3-afd9-93bcfa9c4567"
+    },
+    {
+      "claim_id": "f82ac6bf-144a-44cb-9ba4-93316f1dcf97",
+      "result_id": "dc1d0e70-e55d-45a3-afd9-93bcfa9c4567"
+    },
+    {
+      "claim_id": "11723a74-4b4e-42cb-ad3d-6539b834c82b",
+      "result_id": "3e3b5fff-da3e-4e2f-893d-7381e898a630"
+    },
+    {
+      "claim_id": "335d6a52-0c16-4de6-8cb5-5dc7d32b406f",
+      "result_id": "3e3b5fff-da3e-4e2f-893d-7381e898a630"
+    },
+    {
+      "claim_id": "d1ff69da-bc34-4a7e-a10e-4091a68b1fd8",
+      "result_id": "3e3b5fff-da3e-4e2f-893d-7381e898a630"
+    },
+    {
+      "claim_id": "38e1880c-b7df-4979-af58-ab6d9e3f7988",
+      "result_id": "3e3b5fff-da3e-4e2f-893d-7381e898a630"
+    },
+    {
+      "claim_id": "b0163c26-6e59-4361-b3f5-22e0da81f712",
+      "result_id": "3e3b5fff-da3e-4e2f-893d-7381e898a630"
+    },
+    {
+      "claim_id": "b8c254f8-837c-492d-989a-57cbe2ad9149",
+      "result_id": "3e3b5fff-da3e-4e2f-893d-7381e898a630"
+    },
+    {
+      "claim_id": "4bb96e5e-345e-461e-96c4-4ea5c5a01683",
+      "result_id": "3e3b5fff-da3e-4e2f-893d-7381e898a630"
+    },
+    {
+      "claim_id": "6d1e6aaa-5134-4765-b535-dec2f8026616",
+      "result_id": "ce6a06ed-2010-436e-bfb5-136759d2e92e"
+    },
+    {
+      "claim_id": "b933b5d4-ea01-487e-9e67-c2ff2b93f3ab",
+      "result_id": "ce6a06ed-2010-436e-bfb5-136759d2e92e"
+    },
+    {
+      "claim_id": "0f988b13-b6cc-4124-ace5-66114608625d",
+      "result_id": "ce6a06ed-2010-436e-bfb5-136759d2e92e"
+    },
+    {
+      "claim_id": "96f5a10d-31e4-4521-bafc-c867181099c1",
+      "result_id": "ce6a06ed-2010-436e-bfb5-136759d2e92e"
+    },
+    {
+      "claim_id": "c675e0dc-bb3c-4a6e-89b2-e882605bd9dc",
+      "result_id": "ce6a06ed-2010-436e-bfb5-136759d2e92e"
+    },
+    {
+      "claim_id": "aac77c8b-856d-4e7d-b714-758ebafccb5e",
+      "result_id": "c031d875-88a7-4c2d-b9aa-511363a43011"
+    },
+    {
+      "claim_id": "9b6ca2f3-a569-4658-8f96-7180928c9103",
+      "result_id": "c031d875-88a7-4c2d-b9aa-511363a43011"
+    },
+    {
+      "claim_id": "58f75c6b-0184-4345-8f87-b1f131643159",
+      "result_id": "c031d875-88a7-4c2d-b9aa-511363a43011"
+    },
+    {
+      "claim_id": "41789b3d-9a63-4c4f-95e4-f3f3ed94e140",
+      "result_id": "145d3793-8bad-43a8-82f2-ca49a4d931ad"
+    },
+    {
+      "claim_id": "8f7689ef-bd72-42ea-a4cb-39a4e10cc860",
+      "result_id": "145d3793-8bad-43a8-82f2-ca49a4d931ad"
+    },
+    {
+      "claim_id": "f02b1c8d-1402-4344-ae5a-2d9b24b80ac9",
+      "result_id": "145d3793-8bad-43a8-82f2-ca49a4d931ad"
+    },
+    {
+      "claim_id": "c4cbde54-b9ce-4c76-8444-19b7858348bf",
+      "result_id": "145d3793-8bad-43a8-82f2-ca49a4d931ad"
+    },
+    {
+      "claim_id": "c9bc9abf-665c-4711-9d84-a96899e3ca01",
+      "result_id": "728b97c4-b743-4f26-a5cd-bd792a4815c8"
+    },
+    {
+      "claim_id": "b55b4458-cc7d-41f4-923f-db18e6cece34",
+      "result_id": "728b97c4-b743-4f26-a5cd-bd792a4815c8"
+    },
+    {
+      "claim_id": "c2ad3264-d433-446d-bbb0-d642c88598cc",
+      "result_id": "728b97c4-b743-4f26-a5cd-bd792a4815c8"
+    },
+    {
+      "claim_id": "ca388127-e4f5-4905-b448-fd2781de5b7e",
+      "result_id": "6a6d62de-06e6-48a2-a482-ac1f2e9eba7d"
+    },
+    {
+      "claim_id": "13e3380f-f7ec-469c-a2d0-53f0c33b0b19",
+      "result_id": "6769d124-28e4-405a-b3cb-916c14239222"
+    },
+    {
+      "claim_id": "70cae254-247a-4388-a7ba-ad12f4d6ade0",
+      "result_id": "6769d124-28e4-405a-b3cb-916c14239222"
+    },
+    {
+      "claim_id": "36be3b6e-d40d-400b-86d6-58453ed22c5f",
+      "result_id": "6769d124-28e4-405a-b3cb-916c14239222"
+    },
+    {
+      "claim_id": "c9a69293-af75-4bc5-a6c1-10ba687ace7d",
+      "result_id": "6769d124-28e4-405a-b3cb-916c14239222"
+    },
+    {
+      "claim_id": "486ec633-c7b0-4802-971a-01abb8ad51bc",
+      "result_id": "17583b77-ef64-4814-b206-5d59136613ee"
+    },
+    {
+      "claim_id": "698fe3bb-2bfd-470e-832d-149081afcf6a",
+      "result_id": "17583b77-ef64-4814-b206-5d59136613ee"
+    },
+    {
+      "claim_id": "fb8bc068-f765-4516-9282-3b89bd4e0b9e",
+      "result_id": "fe7f9430-19f0-429e-88cc-a33601be3bb4"
+    },
+    {
+      "claim_id": "dd6c8dcd-e1b4-4764-9558-3eb890eecd18",
+      "result_id": "fe7f9430-19f0-429e-88cc-a33601be3bb4"
+    },
+    {
+      "claim_id": "3431efc7-e3ad-48f5-a727-6c74f2353d52",
+      "result_id": "b9489afb-b9c6-4440-95ec-8cefa28e59d2"
+    },
+    {
+      "claim_id": "c736908d-79e7-464d-8819-c196173c8c53",
+      "result_id": "116afb55-7e22-4a01-ab6b-b9ca33bb1069"
+    },
+    {
+      "claim_id": "efb63cdd-f91c-43b6-a8f9-af7059d74034",
+      "result_id": "116afb55-7e22-4a01-ab6b-b9ca33bb1069"
+    },
+    {
+      "claim_id": "f1eb8d43-3443-4b9f-8e53-f1b3bf8156be",
+      "result_id": "116afb55-7e22-4a01-ab6b-b9ca33bb1069"
+    },
+    {
+      "claim_id": "cdc9b873-1ac1-4f26-97fc-4cb69eab29db",
+      "result_id": "116afb55-7e22-4a01-ab6b-b9ca33bb1069"
+    },
+    {
+      "claim_id": "35568bd0-b4e6-479a-925a-941a6d0aac85",
+      "result_id": "116afb55-7e22-4a01-ab6b-b9ca33bb1069"
+    },
+    {
+      "claim_id": "c050d997-7612-4281-8951-fee48500c918",
+      "result_id": "09b1d51c-c9de-488c-be04-cf9dfe446126"
+    },
+    {
+      "claim_id": "176d0cfb-299c-41f6-b66a-1cc28e50beaf",
+      "result_id": "09b1d51c-c9de-488c-be04-cf9dfe446126"
+    },
+    {
+      "claim_id": "2e1f52f2-fbf2-4e52-9c3e-9356fddab80c",
+      "result_id": "09b1d51c-c9de-488c-be04-cf9dfe446126"
+    },
+    {
+      "claim_id": "db197e98-37fd-4cd9-9f8f-7c5b8db37554",
+      "result_id": "a1f74bf1-ef53-491c-b3af-7d7553c4c537"
+    },
+    {
+      "claim_id": "8c8cc193-8770-40f4-a17a-bccc3674fecb",
+      "result_id": "a1f74bf1-ef53-491c-b3af-7d7553c4c537"
+    },
+    {
+      "claim_id": "bdeaf7dc-1112-41e0-9714-3e8f2777d9b6",
+      "result_id": "a1f74bf1-ef53-491c-b3af-7d7553c4c537"
+    },
+    {
+      "claim_id": "6688a16e-fa15-4c46-83a1-3fc6bc4cde1d",
+      "result_id": "a1f74bf1-ef53-491c-b3af-7d7553c4c537"
+    },
+    {
+      "claim_id": "e170a7e1-474e-412c-ad5a-052f55da42f5",
+      "result_id": "eeec1916-47d7-4255-9380-8bc45b471420"
+    },
+    {
+      "claim_id": "548797a3-1f08-474a-9c53-20ab079928b4",
+      "result_id": "0c179656-237c-4706-a659-81c2b3fe6fb6"
+    },
+    {
+      "claim_id": "af2da51c-0409-4e2f-9921-737b5e8be0af",
+      "result_id": "0c179656-237c-4706-a659-81c2b3fe6fb6"
+    },
+    {
+      "claim_id": "dcd0c936-6140-4df7-938b-09079b0aef71",
+      "result_id": "db5384ad-6e9b-4aaf-b777-e7ecd1a59bab"
+    },
+    {
+      "claim_id": "e5eb72a7-a062-44f5-a2f7-dff7e6ee497a",
+      "result_id": "db5384ad-6e9b-4aaf-b777-e7ecd1a59bab"
+    },
+    {
+      "claim_id": "1afa3db5-8393-4d9e-804a-c02156f47b6e",
+      "result_id": "db5384ad-6e9b-4aaf-b777-e7ecd1a59bab"
+    },
+    {
+      "claim_id": "27130f12-200c-41fb-a118-9a686dbb58ab",
+      "result_id": "db5384ad-6e9b-4aaf-b777-e7ecd1a59bab"
+    }
+  ],
+  "comparisons": []
+}

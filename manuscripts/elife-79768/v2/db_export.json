@@ -1,0 +1,2341 @@
+{
+  "submission": {
+    "id": "ce5dda18-dd54-471a-b0ad-ecc3e493e663",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T18:59:36.739002Z",
+    "updated_at": "2025-12-03T18:59:36.739002Z"
+  },
+  "content": [
+    {
+      "id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "submission_id": "ce5dda18-dd54-471a-b0ad-ecc3e493e663",
+      "content_type": "manuscript",
+      "content_text": "# miRNA-27a is essential for bone remodeling by modulating p62-mediated osteoclast signaling\n\n## Authors\n\n- Shumin Wang<sup>1</sup> ([ORCID: 0000-0003-0217-6600](https://orcid.org/0000-0003-0217-6600))\n- Eri O Maruyama<sup>2</sup>\n- John Martinez<sup>1</sup> ([ORCID: 0000-0003-0040-8519](https://orcid.org/0000-0003-0040-8519))\n- Justin Lopes<sup>2</sup>\n- Trunee Hsu<sup>3</sup> ([ORCID: 0000-0001-5790-1836](https://orcid.org/0000-0001-5790-1836))\n- Wencheng Wu<sup>1</sup>\n- Wei Hsu<sup>1</sup> ([ORCID: 0000-0001-6738-6030](https://orcid.org/0000-0001-6738-6030)) \u2020\n- Takamitsu Maruyama<sup>1</sup> ([ORCID: 0000-0001-7322-8821](https://orcid.org/0000-0001-7322-8821)) \u2020\n\n### Affiliations\n\n1. University of Rochester Medical Center Rochester United States ([ROR:00trqv719](https://ror.org/00trqv719))\n2. The Forsyth Institute Cambridge United States\n3. Case Western Reserve University Cleveland United States ([ROR:051fd9666](https://ror.org/051fd9666))\n4. Faculty of Medicine, Harvard University Boston United States ([ROR:03vek6s52](https://ror.org/03vek6s52))\n5. Harvard School of Dental Medicine Boston United States\n6. Harvard Stem Cell Institute Cambridge United States ([ROR:04kj1hn59](https://ror.org/04kj1hn59))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe ability to simultaneously modulate a set of genes for lineage-specific development has made miRNA an ideal master regulator for organogenesis. However, most miRNA deletions do not exhibit obvious phenotypic defects possibly due to functional redundancy. miRNAs are known to regulate skeletal lineages as the loss of their maturation enzyme Dicer impairs bone remodeling processes. Therefore, it is important to identify specific miRNA essential for bone homeostasis. We report the loss of MIR27a causing severe osteoporosis in mice. MIR27a affects osteoclast-mediated bone resorption but not osteoblast-mediated bone formation during skeletal remodeling. Gene profiling and bioinformatics further identify the specific targets of MIR27a in osteoclast cells. MIR27a exerts its effects on osteoclast differentiation through modulation of Squstm1/p62 whose mutations have been linked to Paget\u2019s disease of bone. Our findings reveal a new MIR27a-p62 axis necessary and sufficient to mediate osteoclast differentiation and highlight a therapeutic implication for osteoporosis.\n\n## Introduction\n\nmiRNA is a small non-coding RNA, base-pairing with complementary sequences of mRNA to control gene expression at post-transcriptional and translational levels (Bartel, 2004; Baek et al., 2008). In animals, miRNA recognizes the 3\u2019 untranslated region of their targets via a small stretch of seed sequences. A single miRNA may simultaneously affect the expression of hundreds of genes (Hausser and Zavolan, 2014; Stark et al., 2005). Because of its potential to modulate the same biological process at various steps, miRNA has been postulated to function as a master regulator for organogenesis (Ebert and Sharp, 2012; Li and Rana, 2014), similar to the transcription factor capable of turning on a set of genes for lineage-specific development. However, possibly due to functional redundancy, most of the miRNA deletions do not cause phenotypic alterations (Miska et al., 2007; Park et al., 2012). With only limited evidence (Croce, 2009; Shenoy and Blelloch, 2014), it has been difficult to prove this concept.\n\nThe skeleton is constantly remodeled to maintain a healthy structure after its formation (Manolagas and Jilka, 1995). This lifelong process is called bone remodeling in which old bone is removed from the skeleton, followed by replaced with new bone. Therefore, a balance of osteoclast-mediated bone resorption and osteoblast-mediated bone formation is essential for bone metabolism (Manolagas and Jilka, 1995). Dysregulation of bone remodeling causes metabolic disorders, e.g., osteopetrosis, osteoporosis, and Paget\u2019s disease (Feng and McDonald, 2011). The current treatments have major limitations leading to the exploration of new therapeutic strategies. Studies of Dicer, an RNase III endonuclease involved in the maturation of miRNAs, suggest their importance in the development of the skeletal lineages during bone remodeling (Gaur et al., 2010; Mizoguchi et al., 2010). However, the specific miRNA(s) required for the differentiation of osteoclasts and osteoblasts remains largely unclear. The Mir23a cluster consists of Mir23a, Mir27a, and Mir24-2. Aberrant regulation of Mir23a and Mir27a has been associated with osteoporotic patients and increased bone fracture risks (Seeliger et al., 2014; Guo et al., 2016; You et al., 2016). The effect of MIR23a and MIR27a on the differentiation of osteoblast or osteoclast cells has been shown by in vitro overexpression studies (Guo et al., 2016; Hassan et al., 2010; Guo et al., 2018). Interference of MIR23a or MIR27a by the use of inhibitor/sponge has implied their role in osteoblast and osteoclast cells (Hassan et al., 2010; Zeng et al., 2017). However, due to the cross-reactivity of the RNA inhibitor among family members that share common seed motifs (Androsavich et al., 2016; Ebert et al., 2007), the inhibitor assay may not truthfully reflect the function of the target miRNA. Therefore, the genetic loss-of-function study remains the most rigorous method for determining the endogenous function of MIR23a and MIR27a as well as testing the removal of Mir23a~27a sufficient to cause bone loss.\n\nWe have performed mouse genetic analyses to definitively assess the requirement of MIR23a and MIR27a for skeletogenesis and homeostasis. Surprisingly, the skeletal phenotypes developed in newly established loss-of-function mouse models reveal findings different from previous reports based on the gain-of-function analyses. Severe loss of bone mass developed in mice with the deletion of Mir23a~27a or Mir27a. MIR23a~27a is dispensable for osteoblast-mediated bone formation. However, compelling evidence supports that MIR27a is essential for osteoclastogenesis and osteoclast-mediated bone resorption during bone remodeling. Gene expression profiling and bioinformatics analyses further identify osteoclast-specific targets of MIR27a. We demonstrated that MIR27a exerts its effects on osteoclast differentiation through modulation of a new and essential target Squstm1/p62. MIR27a is necessary and sufficient to mediate osteoclast differentiation and as a biomarker and therapeutic target for osteoporosis.\n\n## Results\n\n### The loss of MIR23a~27a in mice causes low bone mass phenotypes\n\nTo determine the requirement of MIR23a~27a for skeletal development and maintenance, we created a new mouse model with the deletion of Mir27a and Mir23a. The CRISPR/Cas9 gene edition method was used to establish the mouse strain carrying the \u2206Mir23a~27a allele (Figure 1A). PCR analysis of the Mir23a cluster demonstrated the sgRNA(single guide RNA)-mediated deletion and the reduction of 500 bp in the wild-type to 303 bp in the mutants (Figure 1B). Sequencing analysis also confirmed the expected genome editing (data not shown). Next, we tested if the deletions affect the expression of other miRNA molecules, generated from the same RNA precursor, within the same cluster. Semi-quantitative RT-PCR (qRT-PCR) analysis revealed that only MIR23a~27a are disrupted in the \u2206Mir23a~27a mutants (Figure 1C). These results indicated our success in establishing mouse models deficient for Mir23a~27a.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/79768/elife-79768-fig1-v2.jpg)\n\n**Figure 1.:** (A) Diagrams illustrate the Mir23a cluster, consisting of Mir23a, Mir27a, and Mir24-2 (WT), and the creation of mouse strains deficient for Mir23a~27a (\u2206Mir23a~27a) by CRISPR/Cas9 genome editing. Broken lines and arrows indicate the deleted genomic regions and primers used for PCR genotyping analysis, respectively. (B) PCR analysis examines the Mir23a cluster for genotyping the wild-type (+/+), heterozygous (+/\u2212), and homozygous (\u2212/\u2212) for miR-23a~27 a mice. The mutant (\u2206) alleles with deletion of Mir23a~27a result in the generation of shorter PCR products. (C) RT-PCR analysis of the MIR23a, MIR27a, and MIR24-2 RNAs reveals the disruption of specific miRNA(s) in the mutants. The analysis of small non-coding RNA U6 is used as an internal control. Femurs of the 3-month-old (3 M) wild-type (+/+) and mutant (\u2212/\u2212) males and females were analyzed by \u03bcCT scanning (E\u2013F), followed by sectioning and von Kossa staining (D). Reconstructed \u03bcCT images of the distal femur (E) and femoral metaphysis (F) were subject to quantitative analysis for trabecular bone volume (G). (H) Spines of the 3-month-old (3 M) \u2206Mir23a~27a males and females were analyzed by \u03bcCT scanning. Images show the \u03bcCT scanned wild-type (+/+) and mutant (\u2212/\u2212) L5 vertebrae (top) and three dimensional (3D)-rendered trabecular bone (bottom). Quantitative analyses of trabecular bone volume per total volume in the femurs (BV/TV(bone volume to total volume fraction), n=7, mean \u00b1 SD; student t-test) and vertebrates (BV/TV, n=4 for female and n=3 for male, mean \u00b1 SD; student t-test) are shown in graphs. Images (D\u2013F and H) are representatives of three independent experiments. Scale bars, 500 \u00b5m (D\u2013F and H).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79768/elife-79768-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A\u2013D) Skeletal staining of control (n=9) and \u2206Mir23a~27a (n=8) mice reveals no skeletal deformities in the skull (A and B), forelimb (A and C), and hindlimb (A and D) at postnatal day 0 (P0). The statistical evaluation shows no significant difference between the control and mutant in the skull width (B; n=8, mean \u00b1 SD mm, p-value>0.24, two-sided student t-test) and length (B; n=8, mean \u00b1 SD mm, p>0.16), in the humerus (C; n=8, mean \u00b1 SD mm, p-value>0.77) and radius (C; n=8, mean \u00b1 SD mm, p-value>0.28), in the femur (D; n=8, mean \u00b1 SD mm, p-value>0.76) and tibia (D; n=8, mean \u00b1 SD mm, p-value>0.99). (E) \u00b5CT analysis of femur trabecular bone volume shows no significant changes in \u2206Mir23a~27a mice compared to the control (n=8, mean \u00b1 SD %, p-value>0.77, two-sided student t-test). Scale bars, 5 mm (A); 2 mm (B\u2013D).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/79768/elife-79768-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Femurs of the 7-month-old (7 M) wild-type (+/+) and mutant (\u2212/\u2212) females were analyzed by \u03bcCT scanning, followed by hematoxylin and eosin (H&E) staining (A). The three dimensional (3D) rendering \u03bcCT images of the distal femur (B) and femoral metaphysis (C) were subject to quantitative analysis (D) for BV/TV (trabecular bone volume per tissue volume, n=3, *, p-value<0.05, mean \u00b1 SD; student t-test). Scale bars, 500 \u00b5m (A\u2013C).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/79768/elife-79768-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Femurs of the 3-month-old (3 M) \u2206Mir23a~27a males and females were analyzed by \u03bcCT scanning. Images show the reconstructed cortical bone of wild-type (+/+) and mutant (\u2212/\u2212). Quantitative analyses of cortical (Ct.) thickness (Th) are shown in graphs (n=5, mean + SD; student t-test, ns, non-significant). Images are representatives of five independent experiments. Scale bars, 500 \u00b5m.\n\nMice heterozygous for \u2206Mir23a~27a are viable and fertile. Intercross between the heterozygotes successfully obtained the homozygous mutants without any noticeable skeletal deformity, suggesting that MIR23a~27a are not required for the developmental processes (Figure 1\u2014figure supplement 1). Next, we examined if their deletions affect the homeostatic maintenance of the bone in adults. At 3 months, von Kossa staining and three-dimensional (3D) \u00b5CT analyses of the \u2206Mir23a~27a femurs revealed significant loss of the trabecular bone volume in both sexes (Figure 1D\u2013G; BV/TV, n=3, mean \u00b1 SD; student t-test). Much more severe osteoporotic defects were detected in the 7-month-old mutant females of \u2206Mir23a~27a (Figure 1\u2014figure supplement 2; BV/TV, n=3, mean + SD; student t-test). However, cortical bone thickness does not seem to be affected by the deletion of Mir23a~27a (Figure 1\u2014figure supplement 3). Next, we examined if similar bone loss phenotypes can be detected in the vertebrae where age-related changes in the trabecular architecture are minimal. Therefore, we examined the vertebrae of \u2206Mir23a~27a and identified drastic reductions in vertebral bone mass associated with the mutations (Figure 1H). These data demonstrated that MIR23a~27a is required for homeostatic maintenance of the bone.\n\n### Osteoblast-mediated bone formation is not affected by the loss of MIR23a~27a\n\nProper maintenance of the skeleton requires balanced bone formation and resorption during bone remodeling. The bone loss phenotypes caused by the deletion of Mir23a~27a are likely to be associated with an imbalanced bone formation and resorption mediated by osteoblasts and osteoclasts, respectively. Therefore, we examined if bone formation and osteoblast activities are affected by the loss of MIR23a~27a. New bone formation was analyzed by double labeling with alizarin red and calcein at 3 months. Quantitative analyses did not reveal a significant difference in bone formation rate per unit of bone surface (BFR/BS) caused by the mutation (Figure 2\u2014figure supplement 1A). In addition, the numbers of osteoblast cells positive for type 1 collagen (Col1) and Osteopontin (OPN) lining the trabecular BS remain comparable between the wild-type and homozygous littermates (Figure 2\u2014figure supplement 1B), indicating that osteoblast-mediated bone formation is not affected by the Mir23a~27a deletion. The results suggested that MIR27a and MIR23a are not required for osteoblastogenesis and osteoblasts-mediated bone formation.\n\n### MIR23a~27a regulates osteoclast differentiation\n\nTo determine if the loss of MIR23~27a affects bone resorption, we first examined osteoclast number by tartrate-resistant acid phosphatase (TRAP) staining. An increase of TRAP+ osteoclasts was detected in the 3-month-old \u2206Mir23a~27 a males and females (Figure 2). When the number of TARP+ osteoclast cells in the total bone area (N.Oc/T.Ar), the ratio of TRAP + BS (Oc.S/BS), and the number of TRAP +osteoclast cells lining the BS (N.Oc/BS) were measured, we found that these parameters associated with bone resorption are significantly elevated in the mutants (Figure 2; n=5, mean \u00b1 SD; student t-test). In addition, there is a ~threefold increase in the number of Cathepsin K-expressing osteoclast cells lining the trabecular BS (Figure 2; n=5, mean \u00b1 SD; student t-test). These results support that the loss of MIR23a~27a stimulates osteoclastogenesis, leading to an elevation of bone resorption.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/79768/elife-79768-fig2-v2.jpg)\n\n**Figure 2.:** Sections of the 3-month-old (3 M) \u2206Mir23a~27a males and females were analyzed by tartrate-resistant acid phosphatase (TRAP) staining and immunostaining of Cathepsin K (CTSK). Graphs show quantitative analyses of positively stained cells in the wild-type (+/+) and mutant (\u2212/\u2212) distal femurs (No. of cell+/BS, n=5, mean \u00b1 SD; student t-test). Histomorphometric parameters of bone resorption are evaluated by the number of osteoclast/bone area (N.OC/T.Ar), osteoclast surface/bone surface (OC.S/BS), and osteoclast number/bone surface (N.OC/BS, n=5, mean \u00b1 SD; student t-test). Images are representatives of five independent experiments. Scale bars, 100 \u00b5m.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79768/elife-79768-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Sections of the 3-month-old (3 M) \u2206Mir23a~27a males and females were analyzed by (A) double labeling of alizarin red and calcein, and (B) immunostaining of type 1 collagen (Col1) and Osteopontin (OPN). Quantitative analyses of (A) bone formation rate per bone surface (BFR/BS, n=3, mean + SD; student t-test) and (B) number of positively stained cells over the bone surface (No. +/BS, n=5, mean + SD; student t-test, ns, non-significant) in the wild-type (+/+) and mutant (\u2212/\u2212) distal femurs are shown in graphs. Eb, endosteal; Tb, trabecular. Images are representatives of three independent experiments. Scale bar, 100 \u00b5m.\n\nNext, to determine the role of MIR23a~27a in osteoclastogenesis, we analyzed cell populations associated with the differentiation of the osteoclast cells. During hematopoiesis, a common myeloid progenitor gives rise to monocytes that are precursors of several cell types, including dendritic cells, macrophages, and osteoclasts (Charles and Nakamura, 2014). Osteoclast precursors are known to derive from a monocyte population positive for CD11b and negative for Gr-1 (Yao et al., 2006). Therefore, we examined CD11b+ and Gr-1\u2013 monocytes to see if the Mir23a~27a deletion affects the osteoclast precursor population. Fluorescence-activated cell sorting(FACS) analysis revealed that the CD11b+ and Gr-1\u2013 population was not affected in the \u2206Mir23a~27a bone marrow of both male and female mice (Figure 3A and B). The CD11b+/CD11c+ dendritic cell population, derived from the monocytes, was also unaffected by the Mir23a~27a deletion (Figure 3A and B). Although the precursors are not affected, MIR23a~27a may play a role in osteoclast differentiation.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/79768/elife-79768-fig3-v2.jpg)\n\n**Figure 3.:** (A) FACS analysis examines the CD11b+/Gr-1\u2212 and CD11b+/CD11c+ populations for monocyte precursors and dendritic cells, respectively. Images are representatives of three independent experiments. (B) The bone marrow of 3-month-old (3 M) wild-type (+/+) and \u2206Mir23a~27a (\u2212/\u2212) males and females show no significant difference (ns; n=3, mean \u00b1 SD; student t-test). (C) Cells isolated from the bone marrow were induced for OC differentiation with Receptor activator of nuclear factor kappa-\u0392 ligand(RANLK) and macrophage colony-stimulating factor(MCSF) for 5 days (top, 2.5\u00d7104 cells/well and bottom, 5\u00d7104 cells/well). The number of OC cells positive for tartrate-resistant acid phosphatase (TRAP) staining is significantly enhanced in the mutant cultures (n=3, mean \u00b1 SD; student t-test). Scale bars, 1 mm (C).\n\nTo test osteoclast differentiation affected by the loss of MIR23a~27a, an ex vivo analysis was performed with cultures of cells seeding at two different densities. Cells isolated from the bone marrow were cultured in the presence of M-CSF to obtain bone marrow-derived macrophages, followed by differentiation into osteoclasts with the treatment of RANKL. TRAP staining was then used to assess the extent of osteoclast differentiation. The number of TRAP+ cells was significantly increased by the loss of MIR23a~27a (Figure 3C; n=5, mean \u00b1 SD; student t-test).\n\n### MIR27a is an essential regulator for osteoclast-mediated skeletal remodeling\n\nUsing the miRPath Reverse-Search module, we searched and ranked miRNAs whose targets are accumulated in osteoclast differentiation-related genes based on the enrichment of the targets in the Kyoto Encyclopedia of Genes ad Genomics (KEGG: mmu04380; Kanehisa and Goto, 2000; Kanehisa et al., 2008). Among them, MIR27a was predicted as the top three candidates to regulate osteoclast differentiation (Figure 4\u2014figure supplement 1, p<2.0\u00d710\u201371). Its sister gene MIR27b contains the same seed sequences also ranked in the top three. However, MIR23a had a lower estimated rank, suggesting that MIR27a alone may be sufficient to exert osteoclast regulation (Figure 4\u2014figure supplement 1, p<4.9\u00d710\u201329). To test this hypothesis, we created another mouse strain with the deletion of only MIR27a using CRISPR/Cas9 genome editing (Figure 4A). PCR analysis revealed the sgRNA-mediated deletion causes the reduction of 500 bp in the wild-type to 474 bp in the mutants (Figure 4B). Sequencing of the PCR products confirmed the genomic deletion (data not shown). Next, semi-qRT-PCR analysis indicated that only MIR27a are disrupted in the \u2206Mir27a mutants, suggesting the deletions does not affect the expression of other miRNA generated from the same RNA precursor (Figure 4C). These results demonstrated our success in establishing mouse models deficient for MIR27a.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/79768/elife-79768-fig4-v2.jpg)\n\n**Figure 4.:** (A) Diagrams illustrate the Mir23a cluster (WT), and the creation of mouse strains deficient for Mir27a (\u2206Mir27a) by CRISPR/Cas9 genome editing. Broken lines and arrows indicate the deleted genomic regions and primers used for PCR genotyping analysis, respectively. (B) PCR-based genotyping identifies the wild-type (+/+), heterozygous (+/\u2013), and homozygous (\u2013/\u2013) for miR-27a mice showing the mutant (\u2206) alleles with deletion of Mir27a result in the generation of shorter PCR products. (C) RT-PCR analysis reveals the disruption of MIR27a but not MIR23a and MIR24-2 RNAs in \u2206Mir27a mutants. The analysis of small non-coding RNA U6 is used as an internal control. Femurs of the 3-month-old (3 M) wild-type (+/+) and mutant (\u2013/\u2013) males and females were analyzed by \u03bcCT scanning (E\u2013F), followed by sectioning and von Kossa staining (D). The three dimensional (3D) rendered \u03bcCT images of the distal femur (E) and femoral metaphysis (F) were subject to quantitative analysis for trabecular bone volume (G). (H) Spines of the 3-month-old (3 M) \u2206Mir27a males and females were analyzed by \u03bcCT scanning. Images show the \u03bcCT scanned wild-type (+/+) and mutant (\u2013/\u2013) L5 vertebrae (top) and 3D-rendered trabecular bone (bottom). Quantitative analyses of trabecular bone volume per total volume in the femurs (BV/TV, n=5 for female and n=4 for male, mean \u00b1 SD; student t-test) and vertebrates (BV/TV, n=3, mean \u00b1 SD; student t-test) are shown in graphs. Images (D\u2013F and H) are representatives of three independent experiments. Scale bars, 500 \u00b5m (D\u2013F and H).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79768/elife-79768-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The diagram illustrates the top candidates identified by the miRPath Reverse-Search module based on the target accumulation in osteoclast differentiation-related genes in the Kyoto Encyclopedia of Genes ad Genomics (KEGG: mmu04380).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/79768/elife-79768-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Femurs of the 3-month-old (3 M) and \u2206Mir27a males and females were analyzed by \u03bcCT scanning. Images show the reconstructed cortical bone of wild-type (+/+) and mutant (\u2013/\u2013). Quantitative analyses of cortical (Ct.) thickness (Th) are shown in graphs (n=5 for females and n=4 for males, mean + SD; student t-test, ns, non-significant). Images are representatives of five independent experiments. Scale bars, 500 \u00b5m.\n\nMice heterozygous and homozygous for \u2206Mir27a are viable and fertile similar to the Mir23a~27a deletion. As anticipated, there was no noticeable skeletal deformity associated with the loss of MIR27a, suggesting its dispensable role in the developmental processes. However, von Kossa staining and 3D \u00b5CT analyses of the 3-month-old male and female femurs of \u2206Mir27a revealed significant loss of the trabecular bone volume (Figure 4D\u2013G; BV/TV, n=3, mean \u00b1 SD; student t-test), while cortical bone thickness was not affected (Figure 4\u2014figure supplement 2). Drastic bone loss phenotypes can also be detected in the \u2206Mir27a vertebrae where age-related changes in the trabecular architecture are minimal (Figure 4H). These data demonstrated the essential role of MIR27a in skeletal remodeling.\n\nUsing double labeling with alizarin red and calcein for quantitative analyses, we did not reveal a significant difference in BFR/BS (Figure 5\u2014figure supplement 1A), and Col1+ and OPN+ osteoblast cells lining the trabecular BS (Figure 5\u2014figure supplement 1B) at 3 months, suggesting that osteoblast-mediated bone formation is not affected by the Mir27a deletion. However, we detected a significant increase of TRAP+ and Cathepsin K-expressing osteoclast cells lining the trabecular BS in the 3-month-old \u2206Mir27a males and females (Figure 5A and Figure 5\u2014figure supplement 2; n=5, mean \u00b1 SD; student t-test), supporting that the loss of MIR27a stimulates osteoclastogenesis, leading to elevated bone resorption. While the CD11b+/Gr-1\u2013 and CD11b+/CD11c+ osteoclast precursor populations were not affected by the Mir27a deletion (Figure 5\u2014figure supplement 3A, B), osteoclast differentiation was significantly increased by the loss of MIR27a (Figure 5B; n=5, mean \u00b1 SD; student t-test). Furthermore, the loss of a single MIR27a recapitulates the osteoporotic phenotypes caused by the double deletion of Mir23a and Mir27a, suggesting that MIR27a is responsible for skeletal maintenance through the modulation of bone remodeling processes. The results suggested that MIR27a functions as a negative regulator in osteoclast differentiation. To test this possibility, we overexpressed MIR27a in cells undergoing osteoclast differentiation. High levels of MIR27a significantly reduce the number of differentiated osteoclast cells (Figure 5C). Our findings demonstrated that MIR27a is necessary and sufficient to modulate osteoclast differentiation. Osteoclastogenesis mediated by MIR27a is essential for bone remodeling and homeostasis.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/79768/elife-79768-fig5-v2.jpg)\n\n**Figure 5.:** (A) Graphs show quantitative analyses of tartrate-resistant acid phosphatase (TRAP)+ and CTST + cells in the wild-type (+/+) and mutant (\u2212/\u2212) distal femurs detected in the stained section of the 3-month-old (3 M) \u2206Mir27a males and females (n=5 for female and n=4 for male, mean \u00b1 SD; student t-test). Histomorphometric parameters of bone resorption are evaluated by the number of OC/bone area (N.OC/T.Ar), OC surface/bone surface (OC.S/BS), OC number/bone surface (N.OC/BS), and CTSK + cells/bone surface (No. CTSK+/BS). (B) Cells isolated from the wild-type (+/+) and mutant (\u2212/\u2212) bone marrows were induced for OC differentiation with RANLK and MCSF for 5 days (top, 2.5\u00d7104 cells/well and bottom, 5\u00d7104 cells/well). Graphs indicate the number of TRAP+ OC cells (n=3, mean \u00b1 SD; student t-test). (C) Cells isolated from the bone marrow were seeded (5\u00d7104 cells/well) and induced for OC differentiation using RANLK and MCSF for 5 days with the lentivirus-mediated expression of green fluorescent protein(GFP) (control) or MIR27a. The TRAP+ OC cell number is significantly decreased in the MIR27 overexpression cultures (n=3, p<0.05, mean \u00b1 SD; student t-test). Scale bars, 1 mm (B and C).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79768/elife-79768-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Sections of the 3-month-old (3 M) \u2206Mir27a males and females were analyzed by (A) double labeling of alizarin red and calcein, and (B) immunostaining of type 1 collagen (Col1) and Osteopontin (OPN). Quantitative analyses of (A) bone formation rate per bone surface (BFR/BS, n=3, mean + SD; student t-test) and (B) number of positively stained cells over the bone surface (No. +/BS, n=5 for female and n=4 for male, mean + SD; student t-test, ns, non-significant) in the wild-type (+/+) and mutant (\u2013/\u2013) distal femurs are shown in graphs. Eb, endosteal; Tb, trabecular. Images are representatives of three independent experiments. Scale bar, 100 \u00b5m.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/79768/elife-79768-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Sections of the 3-month-old (3 M) \u2206Mir27a males and females were analyzed by tartrate-resistant acid phosphatase (TRAP) staining and immunostaining of Cathepsin K (CTSK). Arrowheads indicate differentiated osteoclast cells positive for TRAP and CTSK. Images are representatives of five independent experiments. Scale bars, 100 \u00b5m.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/79768/elife-79768-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (A) FACS analysis examines the CD11b+/Gr-1\u2013 and CD11b+/CD11c+ populations for monocyte precursors and dendritic cells, respectively. Images are representatives of three independent experiments. (B) No significant difference in the bone marrow of 3-month-old (3 M) wild-type (+/+) and \u2206Mir23a~27 a (\u2013/\u2013) mice (n=3, mean + SD; student t-test).\n\n### MIR27a regulates osteoclast differentiation through the modulation of p62\n\nTo elucidate the mechanism underlying osteoclast differentiation regulated by MIR27a, we first used a bioinformatics approach to identify its potential targets (Figure 6A). The TarBase computationally predicted 2312 target genes for MIR27a (Vlachos et al., 2015a). Furthermore, there were 154 genes associated with osteoclast differentiation based on the Kyoto Encyclopedia of Genes ad Genomics (KEGG: mmu04380; Kanehisa and Goto, 2000; Kanehisa et al., 2008). The miRPath software further identified 26 targets overlapping with the osteoclast-related genes (Vlachos et al., 2015b). Next, we examined the transcript level of these 26 targets in wild-type and \u2206Mir27a osteoclast cells. qRT-PCR analyses revealed that five of these targets, Snx10, Map2k7, Ctsk, Tgfbr1, and Sqstm1, are significantly upregulated by the loss of MIR27a (Figure 6B, p<0.05, n=3; two-sided student t-test). To test if these genes were the direct targets of MIR27a, we performed 3\u2019UTR-reporter assays. The expression of MIR27a significantly downregulated the luciferase activity associated with the 3\u2019UTR of Sqstm1, Tgfbr1, Snx10, and Map2k7 but not Ctsk (Figure 6C, *; p<0.01, n=3, mean \u00b1 SD; two-sided student t-test). As Cathepsin K is a protease expressed in the mature osteoclast cells, its alteration at the transcript level is likely ascribed to indirect effects of increased osteoclastogenesis in \u2206Mir27a. The data indicated Sqstm1, Tgfbr1, Snx10, and Map2k7 as direct targets of MIR27a.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/79768/elife-79768-fig6-v2.jpg)\n\n**Figure 6.:** (A) Venn diagrams illustrate our strategy to identify the OC differentiation-associated genes (KEGG: mmu04380) that are directly regulated by MIR27a. (B) The 26 potential targets are examined by quantitative RT-PCR (qRT-PCR) analysis to detect the change of transcript levels in wild-type and \u2206Mir27a OC cells (n=3; *, p-value<0.05, two-sided student\u2019s t-test). (C) The 3\u2019UTR-reporter assay examines five potential genes that are direct targets of MIR27a (n=3; *, p-value <0.01, means \u00b1 SD, two-sided student\u2019s t-test). (D) A functional study of Sqstm1 also known as p62 reveals the enhancement of OC differentiation caused by the loss of miR-27a is alleviated by lentiviral-shRNA-mediated knockdown. Tartrate-resistant acid phosphatase (TRAP) staining examines the number of mature OC cells in the control, \u2206Mir27a, and \u2206Mir27a plus shRNA-mediated knockdown of p62 (\u2206Mir27a+p62 shRNA) cultures (n=3; *, p-value<0.05, means \u00b1 SD, two-sided student\u2019s t-test). (E) Pit assay examined OC cells-mediated bone resorption rate of control, \u2206Mir27a, \u2206Mir27a plus shRNA-mediated p62 knockdown 5 days after differentiation (n=3; *, p-value<0.05, mean \u00b1 SD, two-sided student t-test). OC progenitors isolated from \u2206Mir27a mice were cultured without RANKL and MCSF as negative control (Top raw). (F) qRT-PCR examined the expression of OC markers after 3 days (Rank and Dcstamp) or 7 days (Ctsk and Calcr) culture of the control, \u2206Mir27a, and \u2206Mir27a plus shRNA-mediated knockdown of p62 OC cells (n=3; *, p-value<0.05, mean \u00b1 SD, student t-test). Scale bars, 500 \u00b5m.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79768/elife-79768-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** The actin ring formation in the OC cells of control, \u0394Mir27a, and \u0394Mir27a plus shRNA-mediated p62 knockdown is examined by phalloidin staining after 5 days of differentiation with RANKL and MCSF. Scale bars, 500 \u00b5m.\n\nSqstm1 also known as p62 whose gain of function mutations were linked to Paget\u2019s disease of bone with disruption of bone renewal cycle causing weakening and deformity (Rea et al., 2006). The deletion of p62 in mice also impaired osteoclast differentiation (Dur\u00e1n et al., 2004). Therefore, we performed a functional study to test the importance of the MIR27a-p62 regulatory axis during osteoblastogenesis. Cells isolated from the bone marrow were induced for osteoclast differentiation and the number of osteoclast cells positive for TRAP staining was counted to determine the outcome of the differentiation. The enhanced osteoclast differentiation in the \u2206Mir27a culture was significantly alleviated by the shRNA-mediated knockdown of p62 (Figure 6D, p<0.05, n=3, mean \u00b1 SD; two-sided student t-test). To assess osteoclast function, we first performed phalloidin staining to ensure actin ring formation was not affected by Mir27a deletion and p62 knockdown in OC cells (Figure 6\u2014figure supplement 1). Bone resorption pit assay then revealed enhanced bone resorption activity of \u2206Mir27a osteoclasts that can be alleviated by p62 knockdown (Figure 6E, p<0.05, n=3, mean \u00b1 SD; two-sided student t-test). Next, qRT-PCR of osteoclast markers was performed to decipher the regulatory process of MIR27a-mediated osteoclast differentiation. The deletion of Mir27a elevated the expression of Rank, but this elevation could be alleviated by p62 knockdown (Figure 6F, p<0.05, n=3, mean \u00b1 SD; two-sided student t-test), indicating the importance of the MIR27a-p62 axis for RANKL signaling. The expression of Dcstamp, essential for cell-cell fusion during osteoclastogenesis, was increased in \u2206Mir27a osteoclasts (Figure 6F, p<0.05, n=3, mean \u00b1 SD; two-sided student t-test). However, the increased level of Dcstamp in \u2206Mir27a osteoclasts could not be affected by p62 knockdown, implying that MIR27a-mediated regulation of osteoclast fusion is independent of p62. Mature osteoclast markers, e.g., Ctsk and Calcr, were significantly upregulated in \u2206Mir27a osteoclasts but reduced by p62 knockdown (Figure 6F, p<0.05, n=3, mean \u00b1 SD; two-sided student t-test). The results demonstrated that MIR27a-dependent osteoclast differentiation is mediated through the regulation of p62. The MIR27a-p62 regulatory axis plays an important role in osteoclastogenesis during bone remodeling.\n\n## Discussion\n\nThe dysregulation of miRNA has been implicated in osteoporosis in menopausal women. Among 851 miRNAs tested MIR27a is one of the most significant genes downregulated in postmenopausal osteoporosis patients (You et al., 2016). However, it\u2019s not clear whether the alteration of miRNAs is the cause or consequence of the disease. Our genetic study presented here has demonstrated the loss of MIR23a~27a or MIR27a results in significant bone loss. The findings suggest a single miRNA deficiency can lead to severe osteoporotic defects, indicating an essential role of MIR27a in bone remodeling. Because osteoporosis is caused by an imbalance of osteoblast-mediated bone formation and osteoclast-mediated bone resorption, the conventional knockout model is ideal to decipher the regulatory processes underlying MIR27a-dependent pathogenesis. Our data also suggest that MIR27a is dispensable for osteoblast differentiation and bone formation as its deletion does not affect the number of osteoblast cells and BFRs. The results do not agree with the previous gain-of-function study indicating an inhibitory role of MIR27a in osteoblastogenesis (Hassan et al., 2010). Therefore, the association of osteoporosis with both upregulation and downregulation is possibly mediated through distinct mechanisms underlying the regulatory process of the Mir23a cluster.\n\nThis study provides compelling evidence to first demonstrate that MIR27a is essential for regulating the bone resorption process through modulation of osteoclast differentiation. The loss of MIR27a in mice leads to elevated numbers of osteoclast cells as well as increases in bone resorption activity. The inhibitory function of MIR27a on osteoclastogenesis is also in agreement with previous in vitro culture data showing its crucial downregulation among miRNAs associated with osteoclast differentiation (Ma et al., 2016). Furthermore, MIR23a upregulation has been detected in osteopetrosis patients (Ou et al., 2014). Although the number of osteoclast progenitors is comparable between the control and mutant, the deletion of Mir27a strongly accelerates the process of osteoclastogenesis. The isolated \u2206Mir27a exhibits a highly potent ability in differentiation and maturation, indicating cell-autonomous regulations of MIR27a in the osteoclast cell.\n\nThe gain-of-function mutations have linked p62 to the cause of Paget\u2019s disease of bone \u2013 a genetic disorder characterized by aberrant osteoclastic activity (Rea et al., 2006; Laurin et al., 2002). The knockout of p62 in mice further supports its critical role in osteoclastogenesis (Rea et al., 2006). Our identification and characterization of p62 as a direct downstream regulator of MIR27a established a new osteoclast signaling axis. Not only osteoclast differentiation and maturation are suppressed by high levels of p62 but also its reduction can alleviate excessive osteoclastogenesis caused by the loss of MIR27a. Our findings suggest the MIR27a-p62 regulatory axis is necessary and sufficient to regulate bone remodeling through the modulation of osteoclastogenesis. In addition, circulatory miRNAs were released in the cell-free form either bound with protein components or encapsulated with microvesicles. They are quite stable and found with variations in miRNA signature as biomarkers (Garnero, 2008). Therefore, the identification of MIR27a as essential for bone remodeling promises its use as a biomarker for early detection of bone destruction-associated diseases, risk prediction for bone fracture, as well as personalized treatment and monitoring of the treatment efficacy.\n\nHormone therapy is effective for the prevention and treatment of postmenopausal osteoporosis as estrogen reduction is a crucial pathogenic factor. Because of the well-documented side effects, e.g., cardiovascular events and breast cancer risk, estrogen-based therapies are now limited to short-term use (Rossouw et al., 2002; Khosla and Hofbauer, 2017). Another widely used treatment for osteoporosis is bisphosphonates, which possess a high affinity for bone minerals with inhibitory effects on osteoclast cells (Khosla and Hofbauer, 2017; Russell et al., 2008). However, there is a need for alternative treatments due to the side effects of bisphosphonates, e.g., atypical femur fracture and osteonecrosis of the jaw (Russell et al., 2008; Shane et al., 2014). In addition, the treatment effectiveness after 5 years remains uncertain (Izano et al., 2020). A better understanding of the bone remodeling process can help maximize anti-fracture efficacy and minimize adverse skeletal effects.\n\nThe clear demonstration of osteoporotic bone loss caused by the disruption of MIR27a suggests its supplementation be explored as a new therapeutic approach. The clinical application requires a system for osteoclast delivery of MIR27a. However, this may be complicated by the negative effects of the MIR23a cluster on osteoblast-mediated bone formation (Zeng et al., 2017). High levels of MIR23a in the mast cells also lead to bone loss through the release of extracellular vesicles by neoplastic mast cells (Kim et al., 2021). Therefore, targeting MIR27a to the bone resorption surfaces with synthetic compounds such as bisphosphonates or osteoclast-targeting molecules such as acid octapeptides with aspartic acid is critical for future clinical applications (Dang et al., 2016).\n\n## Materials and methods\n\n### Animals\n\nThe CRISPR/Cas9 gene edition strategy was used to generate \u2206Mir23a~27a and \u2206Mir27a mouse strains (Cong et al., 2013; Mali et al., 2013). Complementary oligonucleotides containing the Mir23a or Mir27a sgRNA target sequences were designed by CRISPR Design Tool (http://crispr.mit.edu) and inserted into the pX335 plasmid (Addgene, Cambridge, MA, USA), followed by DNA sequencing to verify the correct cloning. A mixture of sgRNA plasmid, Cas9 protein (NEB, Ipswich, MA, USA), and ssODN (Integrated DNA Technologies, Coralville, IA, USA) was injected into the pronuclei and cytoplasm of fertilized eggs (Mashiko et al., 2013; Wu et al., 2016). The survived embryos were transferred into the oviduct of pseudopregnant females for carrying to term. The founder lines were genotyped by PCR analysis using primers 5\u2019-GAC CCA GCC TGG TCA AGA TA-3\u2019 and 5\u2019-GGA CTC CTG TTC CTG CTG AA-3\u2019 to determine the success of the gene edition and germline transmission. Both male and female mice were used in this study. Care and use of experimental animals described in this work comply with the guidelines and policies of the University Committee on Animal Resources at the University of Rochester and IACUC at the Forsyth Institute.\n\n### Genes\n\nTotal RNAs including miRNAs were isolated using a mirVana miRNA isolation kit (Thermo Fisher Scientific, Waltham, MA, USA), followed by polyadenylation using Escherichia coli Poly(A) polymerase (NEB), and reserve transcribed into DNA using Reverse Transcriptase (Thermo Fisher Scientific) and an anchor primer. Based on the dominant mature miRNA sequences, four to six nucleotides were added to the 5\u2019 end to enhance the annealing specificity. To detect the expression of the miRNAs, the reverse transcription products were subject to PCR analysis using forward and reverse primers listed in Supplementary file 1. The PCR was performed by denaturation at 95\u00b0C for 2 min and 27 cycles of amplification (95\u00b0C for 20 s, 60\u00b0C for 10 s, and 70\u00b0C for 10 s). The Lentivirus-Mir27a (Cat #MmiR3347MR03, GeneCopoeia, Rockville, MD) and Lentivirus-shRNA Sqstm1 (Product ID: MSH093992, Accession: NM_011018.3, GeneCopoeia) were used to express Mir27a and knockdown Sqstm1, respectively.\n\n### Cells\n\nPrimary cells were harvested from bone marrows of the bilateral femur to obtain bone marrow cells. These cells were incubated with Mouse BD Fc Block (Cat #553142, BD Biosciences, San Jose, CA, USA) to reduce non-specific antibody staining caused by receptors for IgG, followed by FACS analysis with anti-CD11b/Mac-1 (M1/70)-APC (17-0112-81, eBioscience/Thermo Fisher Scientific; 1:400), anti-granulocyte mAb: anti-Ly-6G/Gr-1 (RB6-8C5)-PE (12-5931-81, eBioscience; 1:10000), and anti-dendritic cell mAb: anti-CD11c (N418)-FITC (11-0114-81, eBioscience; 1:20) using LSR II (BD Biosciences). For osteoclast differentiation, isolated cells were cultured in \u03b1MEM containing 10% FBS, 1% L-glutamine, 1% non-essential amino acids, and 5 ng/ml M-CSF for 2 days, followed by the addition of RANKL 10 ng/ml (R&D, Minneapolis, MN, USA). The differentiated cells were then fixed with 10% formalin followed by TRAP staining (Yao et al., 2006). For bone resorption assay, 5\u00d7104 primary osteoclast progenitors isolated from 3-month-old control and \u2206Mir27a femur were seeded in 96 well Corning Osteo Assay Surface plate (Cat #3988, Corning, Glendale, AZ, USA) and cultured in 5% CO2 with differentiation media at 37\u00b0C. After culturing for 5 days, the resorbed areas on the plates were imaged by a Nikon SMZ1500 microscope, followed by ImageJ analysis. For actin ring formation assay, 5\u00d7104 primary osteoclast progenitors isolated from 3-month-old control and \u2206Mir27a femur were seeded in 96 well plates. After 5 days of culture, the cells were fixed with 4% Paraformaldehyde(PFA) in PBS for 15 min, permeabilized with 0.1% Triton X-100 in PBS, and incubated with Phalloidin-Alexa 488 (Cat #A12379 Invitrogen) for 1 hr at room temperature. Nuclear counterstaining was performed by DAPI (4\u2019,6-diamidino-2-phenylindole).\n\n### 3\u2019UTR assay\n\nThe LUC-3\u2019UTR reporter DNA plasmids contain the 3'UTR from Sqstm1, Tgfbr1, Snx10, Map2k7, and Ctsk fused to the end of a luciferase reporter gene (MmiT079315-MT06, MmiT096143-MT06, MmiT073076-MT06, MmiT099033-MT06, MmiT091679-MT06, and GeneCopoeia). C3H10T1/2 mesenchymal cells were transfected by the LUC-3\u2019UTR without or with co-transfection of Mir27a (MmiR3347-MR04-50 and GeneCopoeia) using Lipofectamine 200 (Cat #11668027, Invitrogen, Waltham, MA, USA). The transcript stability and its translation efficiency in the presence or absence of Mir27a were determined by the luciferase assay 72 hr after the transfection using the Dual-Luciferase Reporter Assay System (Cat #1910, Promega, Madison, WI, USA). The luminescent intensity was measured by the SpectraMax iD3 Multi-Mode Microplate Reader (Molecular Devices, San Jose, CA, USA). Firefly luciferase activities were normalized by the values of Renilla luciferase.\n\n### Bone analysis and staining\n\nMouse limbs and spines were collected for ex vivo \u03bcCT imaging using a vivaCT40 scanner (Scanco USA, Wayne, PA, USA). The scanned images were segmented for reconstruction to access the relative bone volume (BV/TV, %) by 3D visualization and analysis using Amira (FEI, Thermo Fisher Scientific). To perform quantitative measurements, 170 and 200 slices were used for the femur trabecular bone and L5 spine, respectively. Cortical bone thickness (Ct. Th, mm) was analyzed at a standardized location of 30 slices near the midshaft. Skeletal preparation, fixation, and embedding for paraffin sections were performed as described (Maruyama et al., 2010; Yu et al., 2005a; Mirando et al., 2010; Maruyama et al., 2013a; Yu et al., 2010; Yu et al., 2005b; Yu et al., 2007; Maruyama et al., 2013b; Maruyama et al., 2016; Maruyama et al., 2017). Samples were subject to hematoxylin and eosin staining for histology, TRAP staining, van Kossa staining, or immunological staining with avidin: biotinylated enzyme complex (Maruyama et al., 2010; Yu et al., 2005a; Maruyama et al., 2013a; Yu et al., 2005b; Yu et al., 2007; Maruyama et al., 2016; Maruyama et al., 2017; Chiu et al., 2008; Fu and Hsu, 2013; Russell, 1972; Fu et al., 2014). The immunological staining was visualized by enzymatic color reaction or fluorescence according to the manufacturer\u2019s specification (Vector Laboratories, Burlingame, CA, USA). After TRAP staining, N.Oc/T.Ar, N.Oc/BS, and Oc.S/BS (%) were determined for statistical significance. Rabbit antibodies Collagen I (LSL-LB-1190, Cosmo Bio Co., LTD., Japan; 1:2000), Cathepsin K (ab19027, Abcam, Cambridge, MA, USA; 1:50); mouse antibodies Osteopontin (MPIIIB10, Hybridoma Bank, IA, USA; 1:500) were used in these analyses. Images were taken using Leica DM2500 and DFC310FX imaging system (Leica, Bannockburn, IL, USA) and Zeiss Axio Observer microscope (Carl Zeiss, Thornwood, NY, USA). BFR was examined by double labeling of Alizarin Red S and Calcein Green, injected intraperitoneally with a 7 day interval. The labeled samples were embedded without decalcification for frozen sections (SECTION-LAB Co. Ltd, Japan; Maruyama et al., 2013a; Maruyama et al., 2016; Maruyama et al., 2017), followed by analyzed under a fluorescent microscope using an OsteoMeasure morphometry system (OsteoMetrics, Atlanta, GA, USA) to determine Mineral Apposition Rate (MAR, BFR/BS).\n\n### Statistics and reproducibility\n\nMicrosoft Excel 2010 was used for statistical analysis. The significance was determined by two-sided student t-tests. A p-value less than 0.05 was considered statistically significant. Before performing the t-tests, the normality of the data distribution was first validated by the Shapiro-Wilk normality test. Analysis of samples by \u00b5CT was performed by a technician who is blinded to the condition. No randomization, statistical method to predetermine the sample size, and inclusion/exclusion criteria defining criteria for samples were used. At least three independent experiments were performed for statistical analyses of the animal tissues described in figure legends. Statistical data were presented as mean \u00b1 SD. The miPath v.3 KEGG Reverse Search with Search Pathway: mmu04380 and Method: TarBase v7.0 was used to identify the candidates that are both miR-27a targets (TarBase v7.0) and genes associated with osteoclast differentiation (KEGG: mmu04380).\n\n### Materials and correspondence\n\nCorrespondence and material requests should be addressed to W.H. and T.M.\n",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "70bc666c-e1f0-43bc-84d2-3ecea4feb938",
+      "submission_id": "ce5dda18-dd54-471a-b0ad-ecc3e493e663",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ritu Trivedi, https://ror.org/021wm7p51 CSIR-Central Drug Research Institute India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79768.sa0](https://doi.org/10.7554/eLife.79768.sa0)\n\nThe study has been constructively revised with compelling evidence. The addition of pit resorption and actin formation assay along with the status of expression of osteoclast fusion markers have made the article more systematic making the findings fundamentally impactful. The study is novel and contributes significantly to bone biology research.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Ritu Trivedi, https://ror.org/021wm7p51 CSIR-Central Drug Research Institute India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79768.sa1](https://doi.org/10.7554/eLife.79768.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"MicroRNA-27a is essential for bone remodeling by modulating p62-mediated osteoclast signaling\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Mone Zaidi as the Senior Editor. The reviewers have opted to remain anonymous.\n\nEssential Revisions\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission. Please address the reviewer recommendations and provide a point-to-point rebuttal.\n\nReviewer #1 (Recommendations for the authors):\n\n1. The authors suggest miR-27a supplementation as a new therapeutic approach toward osteoporosis but authors should ensure that the supplementation or overexpression of miR27a would not alter any other physiological process and the status of expression in different tissues should also be taken into account.\n\n2. miR27a did not downregulate the luciferase activity associated with the 3'UTR of Cathepsin K but \u2206miR-23a~27a show a ~3-fold increase in the number of Cathepsin K-expressing osteoclast cells lining the trabecular bone surface. What could be the possible reason for that?\n\n3. The authors should also indicate the underlying pits or resorption pit area in TRAP-positive cells.\n\nReviewer #2 (Recommendations for the authors):\n\nI have a few queries and suggestions to improve the quality of the manuscript.\n\n1. Authors mentioned that \"miR-23a~27a are not required for the developmental processes\" but didn't show any data for this claim. How do authors assess the effect of miR-23a~27a on skeletal development?\n\n2. In figure 1 authors showed that \"\u0394miR-23a~27a\" animals showed a significant bone loss at 3 months. Do these animals start losing bone at an early stage or during the developmental stage these animals have less trabecular bone?\n\n3. From the micro-CT data (Figure 1) it's clearly visible that female animal loses more femur trabecular bone compared to male animals. What could be the possible explanation?\n\n4. Does miR-27a expression altered in different pathological conditions, like osteoporosis or osteopetrosis?\n\n5. What will be the clinical advantage of miR-27a over standard antiresorptive like bisphosphonate?\n\nReviewer #3 (Recommendations for the authors):\n\nThe author should show a mechanism by which miR27a regulates p62 signaling in osteoclast cells.\n",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "51cc89a0-470c-4130-ab6d-ac262dafb844",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C1",
+      "claim": "miRNA is a small non-coding RNA that base-pairs with complementary sequences of mRNA to control gene expression at post-transcriptional and translational levels.",
+      "claim_type": "EXPLICIT",
+      "source": "miRNA is a small non-coding RNA, base-pairing with complementary sequences of mRNA to control gene expression at post-transcriptional and translational levels (Bartel, 2004; Baek et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Bartel, 2004 and Baek et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "bc41ffb8-6fac-4a5f-a5d4-fc511d8adb24",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C2",
+      "claim": "In animals, miRNA recognizes the 3' untranslated region of their targets via a small stretch of seed sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "In animals, miRNA recognizes the 3' untranslated region of their targets via a small stretch of seed sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about miRNA function in animals.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "6d2399a6-478c-42b6-8b40-a82f928ea154",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C3",
+      "claim": "A single miRNA may simultaneously affect the expression of hundreds of genes.",
+      "claim_type": "EXPLICIT",
+      "source": "A single miRNA may simultaneously affect the expression of hundreds of genes (Hausser and Zavolan, 2014; Stark et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Hausser and Zavolan, 2014 and Stark et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "ffd651a5-f1d8-4d0a-9ede-e21bc66f8f35",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C4",
+      "claim": "miRNA has been postulated to function as a master regulator for organogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of its potential to modulate the same biological process at various steps, miRNA has been postulated to function as a master regulator for organogenesis (Ebert and Sharp, 2012; Li and Rana, 2014), similar to the transcription factor capable of turning on a set of genes for lineage-specific development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Ebert and Sharp, 2012 and Li and Rana, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "de7fff8b-94a7-4c10-87ce-5708d7f8e787",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C5",
+      "claim": "Most miRNA deletions do not cause phenotypic alterations, possibly due to functional redundancy.",
+      "claim_type": "EXPLICIT",
+      "source": "However, possibly due to functional redundancy, most of the miRNA deletions do not cause phenotypic alterations (Miska et al., 2007; Park et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Miska et al., 2007 and Park et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "09a9ba28-de7e-4068-923e-35495aef5199",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C6",
+      "claim": "The skeleton is constantly remodeled to maintain a healthy structure after its formation.",
+      "claim_type": "EXPLICIT",
+      "source": "The skeleton is constantly remodeled to maintain a healthy structure after its formation (Manolagas and Jilka, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Manolagas and Jilka, 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "67c1bb0b-fe96-4d0c-ba8a-716c2db4208a",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C7",
+      "claim": "Bone remodeling is a lifelong process in which old bone is removed from the skeleton, followed by replacement with new bone.",
+      "claim_type": "EXPLICIT",
+      "source": "This lifelong process is called bone remodeling in which old bone is removed from the skeleton, followed by replaced with new bone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about bone remodeling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "2be17544-10b0-4a80-9d2f-c6a362800742",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C8",
+      "claim": "A balance of osteoclast-mediated bone resorption and osteoblast-mediated bone formation is essential for bone metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, a balance of osteoclast-mediated bone resorption and osteoblast-mediated bone formation is essential for bone metabolism (Manolagas and Jilka, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Manolagas and Jilka, 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "934f6202-c511-4634-a269-d329409dbed9",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C9",
+      "claim": "Dysregulation of bone remodeling causes metabolic disorders, e.g., osteopetrosis, osteoporosis, and Paget's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Dysregulation of bone remodeling causes metabolic disorders, e.g., osteopetrosis, osteoporosis, and Paget's disease (Feng and McDonald, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Feng and McDonald, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "6998fdb7-8fe5-4438-a95f-b107a42cda51",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C10",
+      "claim": "Studies of Dicer suggest the importance of miRNAs in the development of skeletal lineages during bone remodeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies of Dicer, an RNase III endonuclease involved in the maturation of miRNAs, suggest their importance in the development of the skeletal lineages during bone remodeling (Gaur et al., 2010; Mizoguchi et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Gaur et al., 2010 and Mizoguchi et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "9762d496-2380-46e5-88ae-cda84ac35513",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C11",
+      "claim": "The Mir23a cluster consists of Mir23a, Mir27a, and Mir24-2.",
+      "claim_type": "EXPLICIT",
+      "source": "The Mir23a cluster consists of Mir23a, Mir27a, and Mir24-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the composition of the Mir23a cluster.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "3071cfeb-50ba-45f1-9c60-6cc7e4212aec",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C12",
+      "claim": "Aberrant regulation of Mir23a and Mir27a has been associated with osteoporotic patients and increased bone fracture risks.",
+      "claim_type": "EXPLICIT",
+      "source": "Aberrant regulation of Mir23a and Mir27a has been associated with osteoporotic patients and increased bone fracture risks (Seeliger et al., 2014; Guo et al., 2016; You et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Seeliger et al., 2014, Guo et al., 2016, and You et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "48417802-4e3c-41a0-9d1d-a76853a458d7",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C13",
+      "claim": "The effect of MIR23a and MIR27a on the differentiation of osteoblast or osteoclast cells has been shown by in vitro overexpression studies.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect of MIR23a and MIR27a on the differentiation of osteoblast or osteoclast cells has been shown by in vitro overexpression studies (Guo et al., 2016; Hassan et al., 2010; Guo et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Guo et al., 2016, Hassan et al., 2010, and Guo et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "8e607790-f7f0-49b3-aff9-39b1651265e3",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C14",
+      "claim": "Interference of MIR23a or MIR27a by the use of inhibitor/sponge has implied their role in osteoblast and osteoclast cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interference of MIR23a or MIR27a by the use of inhibitor/sponge has implied their role in osteoblast and osteoclast cells (Hassan et al., 2010; Zeng et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Hassan et al., 2010 and Zeng et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "45dc0892-c84b-4278-8524-001180c527bb",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C15",
+      "claim": "The inhibitor assay may not truthfully reflect the function of the target miRNA due to cross-reactivity of the RNA inhibitor among family members that share common seed motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, due to the cross-reactivity of the RNA inhibitor among family members that share common seed motifs (Androsavich et al., 2016; Ebert et al., 2007), the inhibitor assay may not truthfully reflect the function of the target miRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Androsavich et al., 2016 and Ebert et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "0d3645ac-4b22-4bdc-bea7-99baa588abc7",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C16",
+      "claim": "The genetic loss-of-function study remains the most rigorous method for determining the endogenous function of MIR23a and MIR27a.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the genetic loss-of-function study remains the most rigorous method for determining the endogenous function of MIR23a and MIR27a as well as testing the removal of Mir23a~27a sufficient to cause bone loss.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the limitations of other methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "7a81d3b2-0bc5-4f89-8cc6-e71b5570798b",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C17",
+      "claim": "Severe loss of bone mass developed in mice with the deletion of Mir23a~27a or Mir27a.",
+      "claim_type": "EXPLICIT",
+      "source": "Severe loss of bone mass developed in mice with the deletion of Mir23a~27a or Mir27a.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "fd12ffbd-cef3-4b92-806b-f32d1962ca14",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C18",
+      "claim": "MIR23a~27a is dispensable for osteoblast-mediated bone formation.",
+      "claim_type": "EXPLICIT",
+      "source": "MIR23a~27a is dispensable for osteoblast-mediated bone formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "cc784ec5-07b6-4360-9f4f-85fe573ba58b",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C19",
+      "claim": "MIR27a is essential for osteoclastogenesis and osteoclast-mediated bone resorption during bone remodeling.",
+      "claim_type": "EXPLICIT",
+      "source": "However, compelling evidence supports that MIR27a is essential for osteoclastogenesis and osteoclast-mediated bone resorption during bone remodeling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "7b0f78cf-9299-41ff-9386-46ee74447b09",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C20",
+      "claim": "MIR27a exerts its effects on osteoclast differentiation through modulation of Squstm1/p62.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrated that MIR27a exerts its effects on osteoclast differentiation through modulation of a new and essential target Squstm1/p62.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "6dd1db7b-2138-47a2-ae8b-69e5a8377a91",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C21",
+      "claim": "Mutations in p62 have been linked to Paget's disease of bone.",
+      "claim_type": "EXPLICIT",
+      "source": "MIR27a exerts its effects on osteoclast differentiation through modulation of Squstm1/p62 whose mutations have been linked to Paget's disease of bone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about p62 mutations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "01b44342-3587-4f11-b796-b081ba65620a",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C22",
+      "claim": "MIR27a is necessary and sufficient to mediate osteoclast differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "MIR27a is necessary and sufficient to mediate osteoclast differentiation and as a biomarker and therapeutic target for osteoporosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "5ebf0961-e6d0-41c3-bae2-d188ec84a216",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C23",
+      "claim": "The CRISPR/Cas9 gene edition method was used to establish the mouse strain carrying the \u2206Mir23a~27a allele.",
+      "claim_type": "EXPLICIT",
+      "source": "The CRISPR/Cas9 gene edition method was used to establish the mouse strain carrying the \u2206Mir23a~27a allele (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological statement supported by Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "846f2dca-7502-4be3-bb24-291403f9e778",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C24",
+      "claim": "PCR analysis of the Mir23a cluster demonstrated the sgRNA-mediated deletion and the reduction of 500 bp in the wild-type to 303 bp in the mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "PCR analysis of the Mir23a cluster demonstrated the sgRNA(single guide RNA)-mediated deletion and the reduction of 500 bp in the wild-type to 303 bp in the mutants (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "0cd88d50-9569-48ad-bbef-b08f96551521",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C25",
+      "claim": "Only MIR23a~27a are disrupted in the \u2206Mir23a~27a mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Semi-quantitative RT-PCR (qRT-PCR) analysis revealed that only MIR23a~27a are disrupted in the \u2206Mir23a~27a mutants (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "3f9ddc8e-1807-4040-b9fc-ce241537f1f9",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C26",
+      "claim": "Mice heterozygous for \u2206Mir23a~27a are viable and fertile.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice heterozygous for \u2206Mir23a~27a are viable and fertile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "c351ebf8-b27c-46b2-9b83-46b2e7707734",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C27",
+      "claim": "Intercross between the heterozygotes successfully obtained the homozygous mutants without any noticeable skeletal deformity.",
+      "claim_type": "EXPLICIT",
+      "source": "Intercross between the heterozygotes successfully obtained the homozygous mutants without any noticeable skeletal deformity, suggesting that MIR23a~27a are not required for the developmental processes (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "14ea6498-1b2f-44d0-920a-647e93484385",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C28",
+      "claim": "MIR23a~27a are not required for the developmental processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Intercross between the heterozygotes successfully obtained the homozygous mutants without any noticeable skeletal deformity, suggesting that MIR23a~27a are not required for the developmental processes (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the lack of skeletal deformity in mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "45668cf1-7491-41f1-b11e-05a7660f737f",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C29",
+      "claim": "At 3 months, von Kossa staining and 3D \u00b5CT analyses of the \u2206Mir23a~27a femurs revealed significant loss of the trabecular bone volume in both sexes.",
+      "claim_type": "EXPLICIT",
+      "source": "At 3 months, von Kossa staining and three-dimensional (3D) \u00b5CT analyses of the \u2206Mir23a~27a femurs revealed significant loss of the trabecular bone volume in both sexes (Figure 1D\u2013G; BV/TV, n=3, mean \u00b1 SD; student t-test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 1D-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "e71b1e0a-a1c5-417a-ab28-d8830e419e71",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C30",
+      "claim": "Much more severe osteoporotic defects were detected in the 7-month-old mutant females of \u2206Mir23a~27a.",
+      "claim_type": "EXPLICIT",
+      "source": "Much more severe osteoporotic defects were detected in the 7-month-old mutant females of \u2206Mir23a~27a (Figure 1\u2014figure supplement 2; BV/TV, n=3, mean + SD; student t-test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "baab4030-6528-4542-81c0-2978b1f3f148",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C31",
+      "claim": "Cortical bone thickness does not seem to be affected by the deletion of Mir23a~27a.",
+      "claim_type": "EXPLICIT",
+      "source": "However, cortical bone thickness does not seem to be affected by the deletion of Mir23a~27a (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "722c735d-4dda-4aee-bb46-2dac78df76b4",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C32",
+      "claim": "Drastic reductions in vertebral bone mass were identified in the vertebrae of \u2206Mir23a~27a.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we examined the vertebrae of \u2206Mir23a~27a and identified drastic reductions in vertebral bone mass associated with the mutations (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "25389548-29a4-4c98-8190-e8402ef1d73c",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C33",
+      "claim": "MIR23a~27a is required for homeostatic maintenance of the bone.",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrated that MIR23a~27a is required for homeostatic maintenance of the bone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the bone loss phenotypes observed in mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "5f05e770-4064-4037-a912-8f074823d797",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C34",
+      "claim": "Proper maintenance of the skeleton requires balanced bone formation and resorption during bone remodeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Proper maintenance of the skeleton requires balanced bone formation and resorption during bone remodeling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about bone homeostasis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "96d2983d-d508-4e54-bd41-074f8f930782",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C35",
+      "claim": "Quantitative analyses did not reveal a significant difference in bone formation rate per unit of bone surface (BFR/BS) caused by the Mir23a~27a mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative analyses did not reveal a significant difference in bone formation rate per unit of bone surface (BFR/BS) caused by the mutation (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "2b006a2e-c0bb-4c48-9b02-2b62e3b18620",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C36",
+      "claim": "The numbers of osteoblast cells positive for type 1 collagen (Col1) and Osteopontin (OPN) lining the trabecular BS remain comparable between the wild-type and homozygous littermates.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the numbers of osteoblast cells positive for type 1 collagen (Col1) and Osteopontin (OPN) lining the trabecular BS remain comparable between the wild-type and homozygous littermates (Figure 2\u2014figure supplement 1B), indicating that osteoblast-mediated bone formation is not affected by the Mir23a~27a deletion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "195afebd-9e28-4b52-9643-47c9fbbbdd20",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C37",
+      "claim": "Osteoblast-mediated bone formation is not affected by the Mir23a~27a deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the numbers of osteoblast cells positive for type 1 collagen (Col1) and Osteopontin (OPN) lining the trabecular BS remain comparable between the wild-type and homozygous littermates (Figure 2\u2014figure supplement 1B), indicating that osteoblast-mediated bone formation is not affected by the Mir23a~27a deletion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion based on the comparable numbers of osteoblast cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "7c5a03af-1464-425e-a63d-9aeda93e95f0",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C38",
+      "claim": "MIR27a and MIR23a are not required for osteoblastogenesis and osteoblasts-mediated bone formation.",
+      "claim_type": "EXPLICIT",
+      "source": "The results suggested that MIR27a and MIR23a are not required for osteoblastogenesis and osteoblasts-mediated bone formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the lack of effect on osteoblast parameters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "11d00a79-95bc-4042-9157-cbac7f5af428",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C39",
+      "claim": "An increase of TRAP+ osteoclasts was detected in the 3-month-old \u2206Mir23a~27a males and females.",
+      "claim_type": "EXPLICIT",
+      "source": "An increase of TRAP+ osteoclasts was detected in the 3-month-old \u2206Mir23a~27 a males and females (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "d43a9373-21e4-4e7e-9a49-1e0f802d7793",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C40",
+      "claim": "The number of TARP+ osteoclast cells in the total bone area (N.Oc/T.Ar), the ratio of TRAP + BS (Oc.S/BS), and the number of TRAP +osteoclast cells lining the BS (N.Oc/BS) are significantly elevated in the \u2206Mir23a~27a mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "When the number of TARP+ osteoclast cells in the total bone area (N.Oc/T.Ar), the ratio of TRAP + BS (Oc.S/BS), and the number of TRAP +osteoclast cells lining the BS (N.Oc/BS) were measured, we found that these parameters associated with bone resorption are significantly elevated in the mutants (Figure 2; n=5, mean \u00b1 SD; student t-test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "b69212d4-2ffb-444c-8244-cab0fee9e18a",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C41",
+      "claim": "There is a ~threefold increase in the number of Cathepsin K-expressing osteoclast cells lining the trabecular BS in \u2206Mir23a~27a mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, there is a ~threefold increase in the number of Cathepsin K-expressing osteoclast cells lining the trabecular BS (Figure 2; n=5, mean \u00b1 SD; student t-test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "b07adb2a-8aac-4c4c-a845-0b1785c7bc4e",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C42",
+      "claim": "The loss of MIR23a~27a stimulates osteoclastogenesis, leading to an elevation of bone resorption.",
+      "claim_type": "EXPLICIT",
+      "source": "These results support that the loss of MIR23a~27a stimulates osteoclastogenesis, leading to an elevation of bone resorption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the increased osteoclast numbers and markers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "96738c08-20f0-4246-8bd0-66ab1b8decb6",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C43",
+      "claim": "During hematopoiesis, a common myeloid progenitor gives rise to monocytes that are precursors of several cell types, including dendritic cells, macrophages, and osteoclasts.",
+      "claim_type": "EXPLICIT",
+      "source": "During hematopoiesis, a common myeloid progenitor gives rise to monocytes that are precursors of several cell types, including dendritic cells, macrophages, and osteoclasts (Charles and Nakamura, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Charles and Nakamura, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "8e2d0165-21e1-4253-8ee3-6128da20f075",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C44",
+      "claim": "Osteoclast precursors are known to derive from a monocyte population positive for CD11b and negative for Gr-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Osteoclast precursors are known to derive from a monocyte population positive for CD11b and negative for Gr-1 (Yao et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Yao et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "44d35de8-3d0f-49aa-ae56-3eb22b50ee2c",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C45",
+      "claim": "FACS analysis revealed that the CD11b+ and Gr-1\u2013 population was not affected in the \u2206Mir23a~27a bone marrow of both male and female mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluorescence-activated cell sorting(FACS) analysis revealed that the CD11b+ and Gr-1\u2013 population was not affected in the \u2206Mir23a~27a bone marrow of both male and female mice (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 3A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "5128a9bb-c532-4ab7-ad32-3a8f21641c62",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C46",
+      "claim": "The CD11b+/CD11c+ dendritic cell population was also unaffected by the Mir23a~27a deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "The CD11b+/CD11c+ dendritic cell population, derived from the monocytes, was also unaffected by the Mir23a~27a deletion (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 3A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "b6a14b85-db77-4fac-9839-849431f01673",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C47",
+      "claim": "MIR23a~27a may play a role in osteoclast differentiation although the precursors are not affected.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the precursors are not affected, MIR23a~27a may play a role in osteoclast differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the lack of effect on precursors but presence of differentiation defects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "02621859-c59d-46c8-9ee6-72cdf30f35be",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C48",
+      "claim": "The number of TRAP+ cells was significantly increased by the loss of MIR23a~27a in ex vivo osteoclast differentiation cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of TRAP+ cells was significantly increased by the loss of MIR23a~27a (Figure 3C; n=5, mean \u00b1 SD; student t-test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "165be134-4bdb-481a-916b-4a2c848ce4b0",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C49",
+      "claim": "MIR27a was predicted as the top three candidates to regulate osteoclast differentiation using the miRPath Reverse-Search module.",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, MIR27a was predicted as the top three candidates to regulate osteoclast differentiation (Figure 4\u2014figure supplement 1, p<2.0\u00d710\u201371).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by bioinformatics analysis shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "bbd7810b-2002-4083-b8b0-96f0a8c53554",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C50",
+      "claim": "MIR27b contains the same seed sequences as MIR27a and also ranked in the top three candidates.",
+      "claim_type": "EXPLICIT",
+      "source": "Its sister gene MIR27b contains the same seed sequences also ranked in the top three.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on bioinformatics analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "4cae16ff-6f0a-4e3f-9553-a0b66d5cc244",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C51",
+      "claim": "MIR23a had a lower estimated rank than MIR27a in regulating osteoclast differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, MIR23a had a lower estimated rank, suggesting that MIR27a alone may be sufficient to exert osteoclast regulation (Figure 4\u2014figure supplement 1, p<4.9\u00d710\u201329).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by bioinformatics analysis shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "d4a5f8d5-8da6-43fb-b3b3-91551544b2e1",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C52",
+      "claim": "MIR27a alone may be sufficient to exert osteoclast regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, MIR23a had a lower estimated rank, suggesting that MIR27a alone may be sufficient to exert osteoclast regulation (Figure 4\u2014figure supplement 1, p<4.9\u00d710\u201329).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the bioinformatics ranking.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "5c605951-297d-4206-ba8a-fb915f38c09c",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C53",
+      "claim": "A mouse strain with the deletion of only MIR27a was created using CRISPR/Cas9 genome editing.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this hypothesis, we created another mouse strain with the deletion of only MIR27a using CRISPR/Cas9 genome editing (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological statement supported by Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "507d8323-a46c-4297-bb8e-38985f78a36f",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C54",
+      "claim": "PCR analysis revealed the sgRNA-mediated deletion causes the reduction of 500 bp in the wild-type to 474 bp in the \u2206Mir27a mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "PCR analysis revealed the sgRNA-mediated deletion causes the reduction of 500 bp in the wild-type to 474 bp in the mutants (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "94bd581c-8763-4a21-8984-bc26f9ae1e76",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C55",
+      "claim": "Only MIR27a are disrupted in the \u2206Mir27a mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, semi-qRT-PCR analysis indicated that only MIR27a are disrupted in the \u2206Mir27a mutants, suggesting the deletions does not affect the expression of other miRNA generated from the same RNA precursor (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "9e033039-7eca-494e-88c0-f35867730f85",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C56",
+      "claim": "The deletion of MIR27a does not affect the expression of other miRNA generated from the same RNA precursor.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, semi-qRT-PCR analysis indicated that only MIR27a are disrupted in the \u2206Mir27a mutants, suggesting the deletions does not affect the expression of other miRNA generated from the same RNA precursor (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the qRT-PCR analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "c02b3e09-e887-446f-9755-07dcd4499f68",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C57",
+      "claim": "Mice heterozygous and homozygous for \u2206Mir27a are viable and fertile.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice heterozygous and homozygous for \u2206Mir27a are viable and fertile similar to the Mir23a~27a deletion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "b29566a6-080b-4186-b935-9f3efeb6627e",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C58",
+      "claim": "There was no noticeable skeletal deformity associated with the loss of MIR27a.",
+      "claim_type": "EXPLICIT",
+      "source": "As anticipated, there was no noticeable skeletal deformity associated with the loss of MIR27a, suggesting its dispensable role in the developmental processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "2632e93b-d247-4f4e-ae09-893326a198f6",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C59",
+      "claim": "MIR27a has a dispensable role in the developmental processes.",
+      "claim_type": "EXPLICIT",
+      "source": "As anticipated, there was no noticeable skeletal deformity associated with the loss of MIR27a, suggesting its dispensable role in the developmental processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the lack of skeletal deformity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "3669fd45-27c0-4f83-be22-b9c0124e7fd7",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C60",
+      "claim": "Von Kossa staining and 3D \u00b5CT analyses of the 3-month-old male and female femurs of \u2206Mir27a revealed significant loss of the trabecular bone volume.",
+      "claim_type": "EXPLICIT",
+      "source": "However, von Kossa staining and 3D \u00b5CT analyses of the 3-month-old male and female femurs of \u2206Mir27a revealed significant loss of the trabecular bone volume (Figure 4D\u2013G; BV/TV, n=3, mean \u00b1 SD; student t-test), while cortical bone thickness was not affected (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 4D-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "1a37148c-a7d5-4fab-a1fd-bc35a366a01f",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C61",
+      "claim": "Cortical bone thickness was not affected by the deletion of MIR27a.",
+      "claim_type": "EXPLICIT",
+      "source": "However, von Kossa staining and 3D \u00b5CT analyses of the 3-month-old male and female femurs of \u2206Mir27a revealed significant loss of the trabecular bone volume (Figure 4D\u2013G; BV/TV, n=3, mean \u00b1 SD; student t-test), while cortical bone thickness was not affected (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "6402a194-97c5-44c3-830e-b5838aa5b270",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C62",
+      "claim": "Drastic bone loss phenotypes can be detected in the \u2206Mir27a vertebrae.",
+      "claim_type": "EXPLICIT",
+      "source": "Drastic bone loss phenotypes can also be detected in the \u2206Mir27a vertebrae where age-related changes in the trabecular architecture are minimal (Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "7db164e0-0538-4038-8004-1b8d73b402d4",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C63",
+      "claim": "MIR27a has an essential role in skeletal remodeling.",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrated the essential role of MIR27a in skeletal remodeling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the bone loss phenotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "c623902d-4494-469e-bb23-c1fd08db66ef",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C64",
+      "claim": "Double labeling with alizarin red and calcein did not reveal a significant difference in BFR/BS in \u2206Mir27a mice at 3 months.",
+      "claim_type": "EXPLICIT",
+      "source": "Using double labeling with alizarin red and calcein for quantitative analyses, we did not reveal a significant difference in BFR/BS (Figure 5\u2014figure supplement 1A), and Col1+ and OPN+ osteoblast cells lining the trabecular BS (Figure 5\u2014figure supplement 1B) at 3 months, suggesting that osteoblast-mediated bone formation is not affected by the Mir27a deletion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "d2f1cd1a-1cc3-44e7-9a23-205503606284",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C65",
+      "claim": "Col1+ and OPN+ osteoblast cells lining the trabecular BS were not significantly different in \u2206Mir27a mice at 3 months.",
+      "claim_type": "EXPLICIT",
+      "source": "Using double labeling with alizarin red and calcein for quantitative analyses, we did not reveal a significant difference in BFR/BS (Figure 5\u2014figure supplement 1A), and Col1+ and OPN+ osteoblast cells lining the trabecular BS (Figure 5\u2014figure supplement 1B) at 3 months, suggesting that osteoblast-mediated bone formation is not affected by the Mir27a deletion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "146f8d5e-70e5-4704-8df9-9a93ed0544b0",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C66",
+      "claim": "Osteoblast-mediated bone formation is not affected by the Mir27a deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Using double labeling with alizarin red and calcein for quantitative analyses, we did not reveal a significant difference in BFR/BS (Figure 5\u2014figure supplement 1A), and Col1+ and OPN+ osteoblast cells lining the trabecular BS (Figure 5\u2014figure supplement 1B) at 3 months, suggesting that osteoblast-mediated bone formation is not affected by the Mir27a deletion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion based on the lack of changes in osteoblast parameters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "fc1cf667-c368-4dd0-87c3-41b35925453d",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C67",
+      "claim": "A significant increase of TRAP+ and Cathepsin K-expressing osteoclast cells lining the trabecular BS was detected in the 3-month-old \u2206Mir27a males and females.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we detected a significant increase of TRAP+ and Cathepsin K-expressing osteoclast cells lining the trabecular BS in the 3-month-old \u2206Mir27a males and females (Figure 5A and Figure 5\u2014figure supplement 2; n=5, mean \u00b1 SD; student t-test), supporting that the loss of MIR27a stimulates osteoclastogenesis, leading to elevated bone resorption.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5A and Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "b249cab9-b3f3-4b40-a9c7-df26442ee1d6",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C68",
+      "claim": "The loss of MIR27a stimulates osteoclastogenesis, leading to elevated bone resorption.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we detected a significant increase of TRAP+ and Cathepsin K-expressing osteoclast cells lining the trabecular BS in the 3-month-old \u2206Mir27a males and females (Figure 5A and Figure 5\u2014figure supplement 2; n=5, mean \u00b1 SD; student t-test), supporting that the loss of MIR27a stimulates osteoclastogenesis, leading to elevated bone resorption.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion based on the increased osteoclast numbers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "ceac6909-34e6-481c-8d6c-0cb3fa5050e4",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C69",
+      "claim": "The CD11b+/Gr-1\u2013 and CD11b+/CD11c+ osteoclast precursor populations were not affected by the Mir27a deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "While the CD11b+/Gr-1\u2013 and CD11b+/CD11c+ osteoclast precursor populations were not affected by the Mir27a deletion (Figure 5\u2014figure supplement 3A, B), osteoclast differentiation was significantly increased by the loss of MIR27a (Figure 5B; n=5, mean \u00b1 SD; student t-test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5\u2014figure supplement 3A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "1058a397-ee7c-4bae-a41b-32545e35315a",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C70",
+      "claim": "Osteoclast differentiation was significantly increased by the loss of MIR27a.",
+      "claim_type": "EXPLICIT",
+      "source": "While the CD11b+/Gr-1\u2013 and CD11b+/CD11c+ osteoclast precursor populations were not affected by the Mir27a deletion (Figure 5\u2014figure supplement 3A, B), osteoclast differentiation was significantly increased by the loss of MIR27a (Figure 5B; n=5, mean \u00b1 SD; student t-test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "66c0ad6b-7b3a-4158-b74e-290f3b130e65",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C71",
+      "claim": "The loss of a single MIR27a recapitulates the osteoporotic phenotypes caused by the double deletion of Mir23a and Mir27a.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the loss of a single MIR27a recapitulates the osteoporotic phenotypes caused by the double deletion of Mir23a and Mir27a, suggesting that MIR27a is responsible for skeletal maintenance through the modulation of bone remodeling processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the similarity of phenotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "c1f061a9-9da1-47a4-be39-589eaa298202",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C72",
+      "claim": "MIR27a is responsible for skeletal maintenance through the modulation of bone remodeling processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the loss of a single MIR27a recapitulates the osteoporotic phenotypes caused by the double deletion of Mir23a and Mir27a, suggesting that MIR27a is responsible for skeletal maintenance through the modulation of bone remodeling processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the phenotypic analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "7d993595-b96c-4e2d-997c-1efc2352f02d",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C73",
+      "claim": "MIR27a functions as a negative regulator in osteoclast differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "The results suggested that MIR27a functions as a negative regulator in osteoclast differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the increased osteoclast differentiation upon MIR27a loss.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "df4f3e56-202f-4469-914d-d92acc0d2e13",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C74",
+      "claim": "High levels of MIR27a significantly reduce the number of differentiated osteoclast cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this possibility, we overexpressed MIR27a in cells undergoing osteoclast differentiation. High levels of MIR27a significantly reduce the number of differentiated osteoclast cells (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "89d9fc21-58c8-44a5-bbdd-89d92b3b55b2",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C75",
+      "claim": "MIR27a is necessary and sufficient to modulate osteoclast differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings demonstrated that MIR27a is necessary and sufficient to modulate osteoclast differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on both loss-of-function and gain-of-function experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "1ca57c6c-72a5-4fa3-b013-d97dbff0d5ce",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C76",
+      "claim": "Osteoclastogenesis mediated by MIR27a is essential for bone remodeling and homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Osteoclastogenesis mediated by MIR27a is essential for bone remodeling and homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the overall findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "5a4dfad6-2304-4ad0-82a3-9b4818c95def",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C77",
+      "claim": "TarBase computationally predicted 2312 target genes for MIR27a.",
+      "claim_type": "EXPLICIT",
+      "source": "The TarBase computationally predicted 2312 target genes for MIR27a (Vlachos et al., 2015a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on bioinformatics analysis using TarBase.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "977dbd56-4e33-4929-98b7-42454823ee63",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C78",
+      "claim": "There were 154 genes associated with osteoclast differentiation based on the Kyoto Encyclopedia of Genes ad Genomics.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, there were 154 genes associated with osteoclast differentiation based on the Kyoto Encyclopedia of Genes ad Genomics (KEGG: mmu04380; Kanehisa and Goto, 2000; Kanehisa et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the KEGG database.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "f974425d-5e1f-4a8e-a149-a084a34d4006",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C79",
+      "claim": "The miRPath software identified 26 targets overlapping with the osteoclast-related genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The miRPath software further identified 26 targets overlapping with the osteoclast-related genes (Vlachos et al., 2015b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on bioinformatics analysis using miRPath.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "b8070629-a86e-4381-bf6a-31b8f31c67d1",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C80",
+      "claim": "qRT-PCR analyses revealed that five targets (Snx10, Map2k7, Ctsk, Tgfbr1, and Sqstm1) are significantly upregulated by the loss of MIR27a.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we examined the transcript level of these 26 targets in wild-type and \u2206Mir27a osteoclast cells. qRT-PCR analyses revealed that five of these targets, Snx10, Map2k7, Ctsk, Tgfbr1, and Sqstm1, are significantly upregulated by the loss of MIR27a (Figure 6B, p<0.05, n=3; two-sided student t-test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "2d9da616-78f9-4d83-8bfd-0d1741e2e87e",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C81",
+      "claim": "The expression of MIR27a significantly downregulated the luciferase activity associated with the 3'UTR of Sqstm1, Tgfbr1, Snx10, and Map2k7 but not Ctsk.",
+      "claim_type": "EXPLICIT",
+      "source": "To test if these genes were the direct targets of MIR27a, we performed 3'UTR-reporter assays. The expression of MIR27a significantly downregulated the luciferase activity associated with the 3'UTR of Sqstm1, Tgfbr1, Snx10, and Map2k7 but not Ctsk (Figure 6C, *; p<0.01, n=3, mean \u00b1 SD; two-sided student t-test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "01686f13-053a-4029-b365-d7288ad833bc",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C82",
+      "claim": "The alteration of Cathepsin K at the transcript level is likely ascribed to indirect effects of increased osteoclastogenesis in \u2206Mir27a.",
+      "claim_type": "EXPLICIT",
+      "source": "As Cathepsin K is a protease expressed in the mature osteoclast cells, its alteration at the transcript level is likely ascribed to indirect effects of increased osteoclastogenesis in \u2206Mir27a.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the lack of direct 3'UTR regulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "7611f468-37b6-4341-90bf-91071012cd86",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C83",
+      "claim": "Sqstm1, Tgfbr1, Snx10, and Map2k7 are direct targets of MIR27a.",
+      "claim_type": "EXPLICIT",
+      "source": "The data indicated Sqstm1, Tgfbr1, Snx10, and Map2k7 as direct targets of MIR27a.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the 3'UTR-reporter assays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "497c284a-4c25-4871-873e-86cbb1fb0970",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C84",
+      "claim": "Gain of function mutations in p62 were linked to Paget's disease of bone with disruption of bone renewal cycle causing weakening and deformity.",
+      "claim_type": "EXPLICIT",
+      "source": "Sqstm1 also known as p62 whose gain of function mutations were linked to Paget's disease of bone with disruption of bone renewal cycle causing weakening and deformity (Rea et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Rea et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "e3133bbf-55ec-42f9-a398-f30fd3c59526",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C85",
+      "claim": "The deletion of p62 in mice impaired osteoclast differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "The deletion of p62 in mice also impaired osteoclast differentiation (Dur\u00e1n et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Dur\u00e1n et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "6aa5444a-ad05-4fc1-b1a2-a76d55d7b7c8",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C86",
+      "claim": "The enhanced osteoclast differentiation in the \u2206Mir27a culture was significantly alleviated by the shRNA-mediated knockdown of p62.",
+      "claim_type": "EXPLICIT",
+      "source": "The enhanced osteoclast differentiation in the \u2206Mir27a culture was significantly alleviated by the shRNA-mediated knockdown of p62 (Figure 6D, p<0.05, n=3, mean \u00b1 SD; two-sided student t-test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "eb6d4ade-ede6-4f0b-bab7-85193a442c11",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C87",
+      "claim": "Bone resorption pit assay revealed enhanced bone resorption activity of \u2206Mir27a osteoclasts that can be alleviated by p62 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Bone resorption pit assay then revealed enhanced bone resorption activity of \u2206Mir27a osteoclasts that can be alleviated by p62 knockdown (Figure 6E, p<0.05, n=3, mean \u00b1 SD; two-sided student t-test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "b4ad5748-fbf7-402f-8eea-94360b562229",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C88",
+      "claim": "The deletion of Mir27a elevated the expression of Rank, but this elevation could be alleviated by p62 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "The deletion of Mir27a elevated the expression of Rank, but this elevation could be alleviated by p62 knockdown (Figure 6F, p<0.05, n=3, mean \u00b1 SD; two-sided student t-test), indicating the importance of the MIR27a-p62 axis for RANKL signaling.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "26e1cd03-b47b-4567-b343-588d8f88babc",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C89",
+      "claim": "The MIR27a-p62 axis is important for RANKL signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "The deletion of Mir27a elevated the expression of Rank, but this elevation could be alleviated by p62 knockdown (Figure 6F, p<0.05, n=3, mean \u00b1 SD; two-sided student t-test), indicating the importance of the MIR27a-p62 axis for RANKL signaling.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion based on the Rank expression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "4360b378-3300-47f7-a6d7-e140f886e91b",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C90",
+      "claim": "The expression of Dcstamp was increased in \u2206Mir27a osteoclasts.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of Dcstamp, essential for cell-cell fusion during osteoclastogenesis, was increased in \u2206Mir27a osteoclasts (Figure 6F, p<0.05, n=3, mean \u00b1 SD; two-sided student t-test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "aa8b9bf8-91b6-4854-bce0-1b542927fcde",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C91",
+      "claim": "The increased level of Dcstamp in \u2206Mir27a osteoclasts could not be affected by p62 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the increased level of Dcstamp in \u2206Mir27a osteoclasts could not be affected by p62 knockdown, implying that MIR27a-mediated regulation of osteoclast fusion is independent of p62.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "9699bc12-0497-4476-9c0b-4c50cd8e3f79",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C92",
+      "claim": "MIR27a-mediated regulation of osteoclast fusion is independent of p62.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the increased level of Dcstamp in \u2206Mir27a osteoclasts could not be affected by p62 knockdown, implying that MIR27a-mediated regulation of osteoclast fusion is independent of p62.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the lack of effect of p62 knockdown on Dcstamp.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "ed95544b-4d52-4a2f-b348-343d302449e9",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C93",
+      "claim": "Mature osteoclast markers, e.g., Ctsk and Calcr, were significantly upregulated in \u2206Mir27a osteoclasts but reduced by p62 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Mature osteoclast markers, e.g., Ctsk and Calcr, were significantly upregulated in \u2206Mir27a osteoclasts but reduced by p62 knockdown (Figure 6F, p<0.05, n=3, mean \u00b1 SD; two-sided student t-test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "d27f2adc-91cc-4159-bbba-bf10d9af9982",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C94",
+      "claim": "MIR27a-dependent osteoclast differentiation is mediated through the regulation of p62.",
+      "claim_type": "EXPLICIT",
+      "source": "The results demonstrated that MIR27a-dependent osteoclast differentiation is mediated through the regulation of p62.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the p62 knockdown rescue experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "eab788b3-8c41-4074-b727-b48e3d9e1cee",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C95",
+      "claim": "The MIR27a-p62 regulatory axis plays an important role in osteoclastogenesis during bone remodeling.",
+      "claim_type": "EXPLICIT",
+      "source": "The MIR27a-p62 regulatory axis plays an important role in osteoclastogenesis during bone remodeling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the overall findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "90f2bf6d-44a3-4792-8a1d-c74a685e1bf2",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C96",
+      "claim": "MIR27a is one of the most significant genes downregulated in postmenopausal osteoporosis patients among 851 miRNAs tested.",
+      "claim_type": "EXPLICIT",
+      "source": "The dysregulation of miRNA has been implicated in osteoporosis in menopausal women. Among 851 miRNAs tested MIR27a is one of the most significant genes downregulated in postmenopausal osteoporosis patients (You et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to You et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "b7dcb413-919b-4b43-8969-3c132436d3f1",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C97",
+      "claim": "The loss of MIR23a~27a or MIR27a results in significant bone loss.",
+      "claim_type": "EXPLICIT",
+      "source": "Our genetic study presented here has demonstrated the loss of MIR23a~27a or MIR27a results in significant bone loss.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "ecedf519-103b-4d40-9967-7eb74ccd0b33",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C98",
+      "claim": "A single miRNA deficiency can lead to severe osteoporotic defects.",
+      "claim_type": "EXPLICIT",
+      "source": "The findings suggest a single miRNA deficiency can lead to severe osteoporotic defects, indicating an essential role of MIR27a in bone remodeling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the phenotypic analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "47e3e5ec-e6c2-4723-b0cc-5c407dd6aed9",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C99",
+      "claim": "MIR27a has an essential role in bone remodeling.",
+      "claim_type": "EXPLICIT",
+      "source": "The findings suggest a single miRNA deficiency can lead to severe osteoporotic defects, indicating an essential role of MIR27a in bone remodeling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the phenotypic analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "95182dcb-112a-4ad5-9538-9ea6a5c4feb1",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C100",
+      "claim": "MIR27a is dispensable for osteoblast differentiation and bone formation as its deletion does not affect the number of osteoblast cells and BFRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data also suggest that MIR27a is dispensable for osteoblast differentiation and bone formation as its deletion does not affect the number of osteoblast cells and BFRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the osteoblast analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "2b5b5855-98dc-4fc1-88d6-4e58e372e907",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C101",
+      "claim": "The results do not agree with the previous gain-of-function study indicating an inhibitory role of MIR27a in osteoblastogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The results do not agree with the previous gain-of-function study indicating an inhibitory role of MIR27a in osteoblastogenesis (Hassan et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with previous literature supported by citation to Hassan et al., 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "7e62a55b-7274-4f2f-8f89-6b3f28db4a5a",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C102",
+      "claim": "MIR27a is essential for regulating the bone resorption process through modulation of osteoclast differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "This study provides compelling evidence to first demonstrate that MIR27a is essential for regulating the bone resorption process through modulation of osteoclast differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "eb9622ab-8c4e-49e2-9fc6-4cf2b938e13c",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C103",
+      "claim": "The loss of MIR27a in mice leads to elevated numbers of osteoclast cells as well as increases in bone resorption activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The loss of MIR27a in mice leads to elevated numbers of osteoclast cells as well as increases in bone resorption activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "50155f83-a2cf-475c-936c-8714461d5955",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C104",
+      "claim": "The inhibitory function of MIR27a on osteoclastogenesis is in agreement with previous in vitro culture data showing its crucial downregulation among miRNAs associated with osteoclast differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "The inhibitory function of MIR27a on osteoclastogenesis is also in agreement with previous in vitro culture data showing its crucial downregulation among miRNAs associated with osteoclast differentiation (Ma et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Ma et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "b62fa0a1-c040-478d-9758-346f60928219",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C105",
+      "claim": "MIR23a upregulation has been detected in osteopetrosis patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, MIR23a upregulation has been detected in osteopetrosis patients (Ou et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Ou et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "a9107c1e-824e-402d-b896-c4e7d443ea85",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C106",
+      "claim": "The number of osteoclast progenitors is comparable between the control and \u2206Mir27a mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the number of osteoclast progenitors is comparable between the control and mutant, the deletion of Mir27a strongly accelerates the process of osteoclastogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "0dcc972c-aaa0-41e2-b362-a4384eb41ca7",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C107",
+      "claim": "The deletion of Mir27a strongly accelerates the process of osteoclastogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the number of osteoclast progenitors is comparable between the control and mutant, the deletion of Mir27a strongly accelerates the process of osteoclastogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "c92db5a8-44e5-4101-8671-0859a6d3bf2b",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C108",
+      "claim": "The isolated \u2206Mir27a cells exhibit a highly potent ability in differentiation and maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "The isolated \u2206Mir27a exhibits a highly potent ability in differentiation and maturation, indicating cell-autonomous regulations of MIR27a in the osteoclast cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "ae2c6a18-f8d2-4e0d-ae20-02374a6e6b52",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C109",
+      "claim": "MIR27a has cell-autonomous regulations in the osteoclast cell.",
+      "claim_type": "EXPLICIT",
+      "source": "The isolated \u2206Mir27a exhibits a highly potent ability in differentiation and maturation, indicating cell-autonomous regulations of MIR27a in the osteoclast cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the ex vivo differentiation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "bb257e5c-c576-4b61-9c44-9503be1ce053",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C110",
+      "claim": "The identification of p62 as a direct downstream regulator of MIR27a established a new osteoclast signaling axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our identification and characterization of p62 as a direct downstream regulator of MIR27a established a new osteoclast signaling axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "963aac10-2b2d-486c-a30d-a5ce5747b8b5",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C111",
+      "claim": "Osteoclast differentiation and maturation are suppressed by high levels of p62.",
+      "claim_type": "EXPLICIT",
+      "source": "Not only osteoclast differentiation and maturation are suppressed by high levels of p62 but also its reduction can alleviate excessive osteoclastogenesis caused by the loss of MIR27a.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "a9619498-6375-48f2-af4d-2a486236e354",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C112",
+      "claim": "Reduction of p62 can alleviate excessive osteoclastogenesis caused by the loss of MIR27a.",
+      "claim_type": "EXPLICIT",
+      "source": "Not only osteoclast differentiation and maturation are suppressed by high levels of p62 but also its reduction can alleviate excessive osteoclastogenesis caused by the loss of MIR27a.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "b372c605-46b6-47c6-b5b5-d718dad4b7f1",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C113",
+      "claim": "The MIR27a-p62 regulatory axis is necessary and sufficient to regulate bone remodeling through the modulation of osteoclastogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest the MIR27a-p62 regulatory axis is necessary and sufficient to regulate bone remodeling through the modulation of osteoclastogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the overall findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "fdece630-8296-46db-b8de-53ca5a9435ca",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C114",
+      "claim": "Circulatory miRNAs are released in the cell-free form either bound with protein components or encapsulated with microvesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, circulatory miRNAs were released in the cell-free form either bound with protein components or encapsulated with microvesicles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about circulatory miRNAs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "09edd2f1-3e11-4589-aeff-c0a633638d8a",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C115",
+      "claim": "Circulatory miRNAs are quite stable and found with variations in miRNA signature as biomarkers.",
+      "claim_type": "EXPLICIT",
+      "source": "They are quite stable and found with variations in miRNA signature as biomarkers (Garnero, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Garnero, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "e547bbef-6792-407f-bc78-2db7441bfa71",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C116",
+      "claim": "MIR27a can be used as a biomarker for early detection of bone destruction-associated diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the identification of MIR27a as essential for bone remodeling promises its use as a biomarker for early detection of bone destruction-associated diseases, risk prediction for bone fracture, as well as personalized treatment and monitoring of the treatment efficacy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "43caa581-f6c3-4be9-a7be-08c2c240d84c",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C117",
+      "claim": "MIR27a can be used for risk prediction for bone fracture.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the identification of MIR27a as essential for bone remodeling promises its use as a biomarker for early detection of bone destruction-associated diseases, risk prediction for bone fracture, as well as personalized treatment and monitoring of the treatment efficacy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "c49e06dd-a2b1-481c-acb4-e641a857c429",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C118",
+      "claim": "MIR27a can be used for personalized treatment and monitoring of the treatment efficacy.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the identification of MIR27a as essential for bone remodeling promises its use as a biomarker for early detection of bone destruction-associated diseases, risk prediction for bone fracture, as well as personalized treatment and monitoring of the treatment efficacy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "68c98245-6a34-4b24-ae09-6632d9cfce2a",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C119",
+      "claim": "Hormone therapy is effective for the prevention and treatment of postmenopausal osteoporosis as estrogen reduction is a crucial pathogenic factor.",
+      "claim_type": "EXPLICIT",
+      "source": "Hormone therapy is effective for the prevention and treatment of postmenopausal osteoporosis as estrogen reduction is a crucial pathogenic factor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about hormone therapy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "4b943463-7c20-4001-bcd1-27fa988c9586",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C120",
+      "claim": "Estrogen-based therapies are now limited to short-term use because of well-documented side effects, e.g., cardiovascular events and breast cancer risk.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of the well-documented side effects, e.g., cardiovascular events and breast cancer risk, estrogen-based therapies are now limited to short-term use (Rossouw et al., 2002; Khosla and Hofbauer, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Rossouw et al., 2002 and Khosla and Hofbauer, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "81e6f503-01c8-488b-82b7-4e54d703511b",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C121",
+      "claim": "Bisphosphonates possess a high affinity for bone minerals with inhibitory effects on osteoclast cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Another widely used treatment for osteoporosis is bisphosphonates, which possess a high affinity for bone minerals with inhibitory effects on osteoclast cells (Khosla and Hofbauer, 2017; Russell et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Khosla and Hofbauer, 2017 and Russell et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "a45bd5ac-294f-4861-8559-44cbc0e8873b",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C122",
+      "claim": "There is a need for alternative treatments due to the side effects of bisphosphonates, e.g., atypical femur fracture and osteonecrosis of the jaw.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there is a need for alternative treatments due to the side effects of bisphosphonates, e.g., atypical femur fracture and osteonecrosis of the jaw (Russell et al., 2008; Shane et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Russell et al., 2008 and Shane et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "f0a15e78-5db6-436e-97d2-39c2712e38f3",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C123",
+      "claim": "The treatment effectiveness of bisphosphonates after 5 years remains uncertain.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the treatment effectiveness after 5 years remains uncertain (Izano et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Izano et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "2d1e7f10-dd9a-4477-afb2-08bf938e3bb7",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C124",
+      "claim": "The disruption of MIR27a causes osteoporotic bone loss.",
+      "claim_type": "EXPLICIT",
+      "source": "The clear demonstration of osteoporotic bone loss caused by the disruption of MIR27a suggests its supplementation be explored as a new therapeutic approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "94e2eee5-2f7c-4251-8ba3-f646073fa7c2",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C125",
+      "claim": "Supplementation of MIR27a should be explored as a new therapeutic approach.",
+      "claim_type": "EXPLICIT",
+      "source": "The clear demonstration of osteoporotic bone loss caused by the disruption of MIR27a suggests its supplementation be explored as a new therapeutic approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "c165f9ca-f7dc-411d-a787-b3191c55ffd0",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C126",
+      "claim": "High levels of MIR23a in the mast cells lead to bone loss through the release of extracellular vesicles by neoplastic mast cells.",
+      "claim_type": "EXPLICIT",
+      "source": "High levels of MIR23a in the mast cells also lead to bone loss through the release of extracellular vesicles by neoplastic mast cells (Kim et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Kim et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "a4745d3d-c6da-48ee-8c97-1884ed5f9520",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "claim_id": "C127",
+      "claim": "Targeting MIR27a to the bone resorption surfaces is critical for future clinical applications.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, targeting MIR27a to the bone resorption surfaces with synthetic compounds such as bisphosphonates or osteoclast-targeting molecules such as acid octapeptides with aspartic acid is critical for future clinical applications (Dang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future applications supported by citation to Dang et al., 2016.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7c72c2ba-fdcf-4849-8181-824a5ac8ba83",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "CRISPR/Cas9-mediated deletion of the Mir23a~27a cluster was successfully established in mice. PCR and qRT-PCR analyses confirmed specific disruption of MIR23a and MIR27a without affecting MIR24-2. Homozygous mutants are viable, fertile, and show no skeletal deformities, suggesting MIR23a~27a are dispensable for skeletal development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C28 provide converging molecular (PCR, qRT-PCR) and phenotypic evidence for successful generation of the \u0394Mir23a~27a mouse model. The lack of developmental skeletal defects is well-documented with appropriate controls and imaging (Figure 1\u2014figure supplement 1).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "9e06fe41-781e-4ed0-9097-e3dbda27eb1e",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Deletion of Mir23a~27a causes significant trabecular bone loss in adult mice at 3 and 7 months of age in both sexes, affecting femurs and vertebrae. Cortical bone thickness remains unaffected. These findings demonstrate that MIR23a~27a is required for bone homeostasis but not skeletal development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C33 are supported by multiple complementary analyses (von Kossa staining, \u03bcCT, quantitative BV/TV measurements) with appropriate statistical testing (n=3-5, student t-test). The age-progressive phenotype and anatomical specificity (trabecular vs. cortical) strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "ab1f25eb-8728-4dbb-8259-6187c836c8a1",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Osteoblast-mediated bone formation is not affected by Mir23a~27a deletion. Bone formation rate (BFR/BS) and numbers of Col1+ and OPN+ osteoblast cells remain comparable between wild-type and mutant mice, indicating MIR23a~27a are dispensable for osteoblastogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38 are supported by quantitative histomorphometry (BFR/BS) and immunostaining data (Figure 2\u2014figure supplement 1) with appropriate sample sizes (n=3-5). The lack of significant differences in multiple osteoblast markers provides strong evidence for the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "b3da834c-ab57-4c6c-91ef-38c413b89261",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Loss of MIR23a~27a significantly increases osteoclast numbers and bone resorption markers. TRAP+ osteoclast cells and Cathepsin K-expressing cells are elevated in mutant mice, with significant increases in N.Oc/T.Ar, Oc.S/BS, and N.Oc/BS parameters, demonstrating that MIR23a~27a negatively regulates osteoclastogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42 are well-supported by quantitative histomorphometric analyses with appropriate statistical testing (n=5, student t-test, p<0.05). Multiple independent markers of osteoclast activity converge on the same conclusion (Figure 2).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "60f1d3a2-d188-4b0d-addc-2963c3265a69",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The Mir23a~27a deletion does not affect osteoclast precursor populations (CD11b+/Gr-1\u2212 monocytes and CD11b+/CD11c+ dendritic cells) but significantly increases ex vivo osteoclast differentiation, suggesting MIR23a~27a regulates osteoclast differentiation rather than precursor specification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48 are supported by FACS analysis and ex vivo differentiation assays with appropriate controls and replicates (n=3-5). The dissociation between precursor populations and differentiation capacity is clearly demonstrated (Figure 3).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "95bcd9f5-ef3c-4697-874c-ff397f874ca1",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Bioinformatics analysis using miRPath Reverse-Search identified MIR27a (and its sister gene MIR27b with identical seed sequences) as top candidates for regulating osteoclast differentiation, ranking higher than MIR23a. This suggests MIR27a alone may be sufficient for osteoclast regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C52 are supported by computational prediction with highly significant p-values (p<2.0\u00d710\u207b\u2077\u00b9 for MIR27a vs. p<4.9\u00d710\u207b\u00b2\u2079 for MIR23a). The bioinformatics approach is appropriate and provides strong rationale for subsequent genetic experiments (Figure 4\u2014figure supplement 1).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "95d659e5-dea0-47fe-92fb-b536987e81cf",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A \u0394Mir27a mouse strain was successfully generated using CRISPR/Cas9, with specific disruption of MIR27a confirmed by PCR and qRT-PCR without affecting MIR23a or MIR24-2 expression. Mutant mice are viable, fertile, and show no skeletal deformities, indicating MIR27a is dispensable for skeletal development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C59 provide comprehensive molecular and phenotypic characterization of the \u0394Mir27a model with appropriate controls. The specificity of the deletion is well-documented (Figure 4A-C), establishing a clean genetic system for testing MIR27a function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "c3782374-f5f4-4451-879a-9c0f395ad798",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Deletion of Mir27a alone recapitulates the bone loss phenotype observed in \u0394Mir23a~27a mice. Significant trabecular bone loss occurs in femurs and vertebrae of 3-month-old mice of both sexes, while cortical bone is unaffected, demonstrating MIR27a is essential for skeletal remodeling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C63 are strongly supported by \u03bcCT and histological analyses with appropriate statistics (n=3-5, student t-test). The phenocopy of the double deletion by single MIR27a deletion provides compelling genetic evidence for MIR27a as the critical regulator (Figure 4D-H).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "c8533b94-757a-437b-a7c1-59b79962a33b",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Osteoblast-mediated bone formation is not affected by Mir27a deletion, as evidenced by unchanged BFR/BS and comparable numbers of Col1+ and OPN+ osteoblast cells in \u0394Mir27a mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C66 are supported by quantitative bone formation analyses and immunostaining (Figure 5\u2014figure supplement 1) with appropriate sample sizes. The consistency with \u0394Mir23a~27a results strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "f27b7fad-58b2-4589-8a10-230d761fdc35",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Loss of MIR27a significantly increases TRAP+ and Cathepsin K+ osteoclast cells and enhances ex vivo osteoclast differentiation without affecting precursor populations. The single MIR27a deletion recapitulates the \u0394Mir23a~27a phenotype, demonstrating MIR27a is responsible for skeletal maintenance through regulation of osteoclastogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C72 are well-supported by multiple complementary analyses (histomorphometry, FACS, ex vivo differentiation) with appropriate statistics (n=4-5, student t-test). The phenocopy provides strong genetic evidence for MIR27a as the critical factor (Figure 5).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "ace2b902-2839-47db-ac53-72406542b329",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "MIR27a functions as a negative regulator of osteoclast differentiation and is both necessary and sufficient for this regulation. Loss-of-function increases osteoclast differentiation, while overexpression significantly reduces it, demonstrating MIR27a is essential for bone remodeling homeostasis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C76 are strongly supported by complementary loss-of-function and gain-of-function experiments (Figure 5B-C). The bidirectional genetic evidence (deletion increases, overexpression decreases osteoclasts) provides compelling support for necessity and sufficiency.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "f5c1aa99-6a0f-46fe-85c0-4cb311112d1d",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Bioinformatics and experimental validation identified four direct targets of MIR27a in osteoclast differentiation: Sqstm1/p62, Tgfbr1, Snx10, and Map2k7. These genes are upregulated in \u0394Mir27a osteoclasts and their 3'UTRs are directly regulated by MIR27a in luciferase assays. Ctsk upregulation is likely indirect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C83 combine computational prediction, qRT-PCR validation, and 3'UTR-reporter assays to identify direct targets. The multi-tiered approach with appropriate controls (n=3, p<0.05) provides strong evidence. The distinction between direct (3'UTR-responsive) and indirect (Ctsk) targets is appropriately made (Figure 6A-C).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "38a79360-26f5-4a60-b869-87ddfe6f0552",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The MIR27a-p62 regulatory axis is critical for osteoclast differentiation. shRNA-mediated p62 knockdown significantly rescues the enhanced osteoclast differentiation, bone resorption activity, and mature osteoclast marker expression (Ctsk, Calcr) in \u0394Mir27a cells. The axis also regulates RANKL signaling through modulation of Rank expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C89, C93-C95 are strongly supported by rescue experiments showing p62 knockdown alleviates multiple \u0394Mir27a phenotypes (differentiation, resorption, marker expression) with appropriate statistics (n=3, p<0.05). The rescue approach provides compelling evidence for p62 as a key mediator (Figure 6D-F).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "ccc5f7c4-c0d3-4aff-9889-180274db2edf",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "MIR27a regulates osteoclast fusion independently of p62. Dcstamp expression is increased in \u0394Mir27a osteoclasts but is not affected by p62 knockdown, indicating MIR27a has p62-independent functions in osteoclastogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C92 are supported by qRT-PCR data showing Dcstamp upregulation in \u0394Mir27a is not rescued by p62 knockdown (Figure 6F). This demonstrates MIR27a has multiple regulatory mechanisms, though the alternative pathway is not fully characterized.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "4c010cfa-a41f-4d86-8863-dac10bc8c833",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "MIR27a is significantly downregulated in postmenopausal osteoporosis patients, and genetic deletion in mice causes severe bone loss, demonstrating that single miRNA deficiency can cause osteoporotic defects and that MIR27a has an essential role in bone remodeling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C99 connect human disease association (C96, supported by citation) with mouse genetic evidence (C97, supported by experimental data). The convergence of human and mouse data strengthens the translational relevance, though causality in humans remains correlative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "f88e262e-bcdc-407e-84ba-387ea940e660",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "MIR27a is dispensable for osteoblast differentiation and bone formation, contradicting previous gain-of-function studies that suggested an inhibitory role in osteoblastogenesis. The genetic loss-of-function approach provides more definitive evidence than overexpression studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100-C101 are supported by consistent negative results across multiple osteoblast parameters (BFR, Col1+, OPN+ cells) in both \u0394Mir23a~27a and \u0394Mir27a mice. The discrepancy with prior literature (Hassan et al., 2010) is appropriately noted and may reflect artifacts of overexpression approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "a536e59d-f6f5-4922-b820-73a3279d4abf",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "MIR27a is essential for regulating bone resorption through cell-autonomous modulation of osteoclast differentiation. Loss of MIR27a leads to elevated osteoclast numbers and bone resorption activity without affecting precursor populations, and isolated \u0394Mir27a cells show enhanced differentiation capacity ex vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C109 synthesize in vivo and ex vivo evidence demonstrating MIR27a's cell-autonomous role in osteoclast differentiation. The combination of phenotypic analysis, precursor characterization, and ex vivo differentiation assays provides comprehensive support. Agreement with prior in vitro data (Ma et al., 2016) strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "b272d723-32ce-4339-8e76-d12ed1f6f766",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The MIR27a-p62 regulatory axis represents a new osteoclast signaling pathway that is necessary and sufficient to regulate bone remodeling. High p62 levels suppress osteoclast differentiation, while p62 reduction rescues excessive osteoclastogenesis caused by MIR27a loss.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C110-C113 are supported by the identification of p62 as a direct target (3'UTR assays) and functional rescue experiments. The bidirectional evidence (p62 overexpression suppresses, p62 knockdown rescues) supports necessity and sufficiency, though additional in vivo validation would strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "efb5b257-6824-47d9-91da-b1c9f9e88124",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "MIR27a has potential as a biomarker for early detection of bone destruction-associated diseases, risk prediction for bone fracture, and personalized treatment monitoring.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C116-C118 are speculative (evidence_type: SPECULATION) and not directly tested in this study. While the essential role of MIR27a in bone remodeling is established, clinical utility as a biomarker requires validation studies examining circulatory MIR27a levels, sensitivity, specificity, and predictive value in patient cohorts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    },
+    {
+      "id": "591d712b-59e9-4bea-9154-0c32ad06fe1a",
+      "content_id": "4838d26a-e9a9-4e34-88e4-037b8be9c504",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "MIR27a supplementation should be explored as a therapeutic approach for osteoporosis, with targeted delivery to bone resorption surfaces using bisphosphonates or osteoclast-targeting molecules being critical for clinical applications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C125 and C127 are speculative proposals for future therapeutic development. While the genetic evidence supports MIR27a's role in bone homeostasis, therapeutic efficacy, delivery methods, dosing, and potential off-target effects have not been tested. The suggestion is reasonable but requires extensive preclinical and clinical validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:59:36.739002Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5ebf0961-e6d0-41c3-bae2-d188ec84a216",
+      "result_id": "7c72c2ba-fdcf-4849-8181-824a5ac8ba83"
+    },
+    {
+      "claim_id": "846f2dca-7502-4be3-bb24-291403f9e778",
+      "result_id": "7c72c2ba-fdcf-4849-8181-824a5ac8ba83"
+    },
+    {
+      "claim_id": "0cd88d50-9569-48ad-bbef-b08f96551521",
+      "result_id": "7c72c2ba-fdcf-4849-8181-824a5ac8ba83"
+    },
+    {
+      "claim_id": "3f9ddc8e-1807-4040-b9fc-ce241537f1f9",
+      "result_id": "7c72c2ba-fdcf-4849-8181-824a5ac8ba83"
+    },
+    {
+      "claim_id": "c351ebf8-b27c-46b2-9b83-46b2e7707734",
+      "result_id": "7c72c2ba-fdcf-4849-8181-824a5ac8ba83"
+    },
+    {
+      "claim_id": "14ea6498-1b2f-44d0-920a-647e93484385",
+      "result_id": "7c72c2ba-fdcf-4849-8181-824a5ac8ba83"
+    },
+    {
+      "claim_id": "45668cf1-7491-41f1-b11e-05a7660f737f",
+      "result_id": "9e06fe41-781e-4ed0-9097-e3dbda27eb1e"
+    },
+    {
+      "claim_id": "e71b1e0a-a1c5-417a-ab28-d8830e419e71",
+      "result_id": "9e06fe41-781e-4ed0-9097-e3dbda27eb1e"
+    },
+    {
+      "claim_id": "baab4030-6528-4542-81c0-2978b1f3f148",
+      "result_id": "9e06fe41-781e-4ed0-9097-e3dbda27eb1e"
+    },
+    {
+      "claim_id": "722c735d-4dda-4aee-bb46-2dac78df76b4",
+      "result_id": "9e06fe41-781e-4ed0-9097-e3dbda27eb1e"
+    },
+    {
+      "claim_id": "25389548-29a4-4c98-8190-e8402ef1d73c",
+      "result_id": "9e06fe41-781e-4ed0-9097-e3dbda27eb1e"
+    },
+    {
+      "claim_id": "96d2983d-d508-4e54-bd41-074f8f930782",
+      "result_id": "ab1f25eb-8728-4dbb-8259-6187c836c8a1"
+    },
+    {
+      "claim_id": "2b006a2e-c0bb-4c48-9b02-2b62e3b18620",
+      "result_id": "ab1f25eb-8728-4dbb-8259-6187c836c8a1"
+    },
+    {
+      "claim_id": "195afebd-9e28-4b52-9643-47c9fbbbdd20",
+      "result_id": "ab1f25eb-8728-4dbb-8259-6187c836c8a1"
+    },
+    {
+      "claim_id": "7c5a03af-1464-425e-a63d-9aeda93e95f0",
+      "result_id": "ab1f25eb-8728-4dbb-8259-6187c836c8a1"
+    },
+    {
+      "claim_id": "11d00a79-95bc-4042-9157-cbac7f5af428",
+      "result_id": "b3da834c-ab57-4c6c-91ef-38c413b89261"
+    },
+    {
+      "claim_id": "d43a9373-21e4-4e7e-9a49-1e0f802d7793",
+      "result_id": "b3da834c-ab57-4c6c-91ef-38c413b89261"
+    },
+    {
+      "claim_id": "b69212d4-2ffb-444c-8244-cab0fee9e18a",
+      "result_id": "b3da834c-ab57-4c6c-91ef-38c413b89261"
+    },
+    {
+      "claim_id": "b07adb2a-8aac-4c4c-a845-0b1785c7bc4e",
+      "result_id": "b3da834c-ab57-4c6c-91ef-38c413b89261"
+    },
+    {
+      "claim_id": "44d35de8-3d0f-49aa-ae56-3eb22b50ee2c",
+      "result_id": "60f1d3a2-d188-4b0d-addc-2963c3265a69"
+    },
+    {
+      "claim_id": "5128a9bb-c532-4ab7-ad32-3a8f21641c62",
+      "result_id": "60f1d3a2-d188-4b0d-addc-2963c3265a69"
+    },
+    {
+      "claim_id": "b6a14b85-db77-4fac-9839-849431f01673",
+      "result_id": "60f1d3a2-d188-4b0d-addc-2963c3265a69"
+    },
+    {
+      "claim_id": "02621859-c59d-46c8-9ee6-72cdf30f35be",
+      "result_id": "60f1d3a2-d188-4b0d-addc-2963c3265a69"
+    },
+    {
+      "claim_id": "165be134-4bdb-481a-916b-4a2c848ce4b0",
+      "result_id": "95bcd9f5-ef3c-4697-874c-ff397f874ca1"
+    },
+    {
+      "claim_id": "bbd7810b-2002-4083-b8b0-96f0a8c53554",
+      "result_id": "95bcd9f5-ef3c-4697-874c-ff397f874ca1"
+    },
+    {
+      "claim_id": "4cae16ff-6f0a-4e3f-9553-a0b66d5cc244",
+      "result_id": "95bcd9f5-ef3c-4697-874c-ff397f874ca1"
+    },
+    {
+      "claim_id": "d4a5f8d5-8da6-43fb-b3b3-91551544b2e1",
+      "result_id": "95bcd9f5-ef3c-4697-874c-ff397f874ca1"
+    },
+    {
+      "claim_id": "5c605951-297d-4206-ba8a-fb915f38c09c",
+      "result_id": "95d659e5-dea0-47fe-92fb-b536987e81cf"
+    },
+    {
+      "claim_id": "507d8323-a46c-4297-bb8e-38985f78a36f",
+      "result_id": "95d659e5-dea0-47fe-92fb-b536987e81cf"
+    },
+    {
+      "claim_id": "94bd581c-8763-4a21-8984-bc26f9ae1e76",
+      "result_id": "95d659e5-dea0-47fe-92fb-b536987e81cf"
+    },
+    {
+      "claim_id": "9e033039-7eca-494e-88c0-f35867730f85",
+      "result_id": "95d659e5-dea0-47fe-92fb-b536987e81cf"
+    },
+    {
+      "claim_id": "c02b3e09-e887-446f-9755-07dcd4499f68",
+      "result_id": "95d659e5-dea0-47fe-92fb-b536987e81cf"
+    },
+    {
+      "claim_id": "b29566a6-080b-4186-b935-9f3efeb6627e",
+      "result_id": "95d659e5-dea0-47fe-92fb-b536987e81cf"
+    },
+    {
+      "claim_id": "2632e93b-d247-4f4e-ae09-893326a198f6",
+      "result_id": "95d659e5-dea0-47fe-92fb-b536987e81cf"
+    },
+    {
+      "claim_id": "3669fd45-27c0-4f83-be22-b9c0124e7fd7",
+      "result_id": "c3782374-f5f4-4451-879a-9c0f395ad798"
+    },
+    {
+      "claim_id": "1a37148c-a7d5-4fab-a1fd-bc35a366a01f",
+      "result_id": "c3782374-f5f4-4451-879a-9c0f395ad798"
+    },
+    {
+      "claim_id": "6402a194-97c5-44c3-830e-b5838aa5b270",
+      "result_id": "c3782374-f5f4-4451-879a-9c0f395ad798"
+    },
+    {
+      "claim_id": "7db164e0-0538-4038-8004-1b8d73b402d4",
+      "result_id": "c3782374-f5f4-4451-879a-9c0f395ad798"
+    },
+    {
+      "claim_id": "c623902d-4494-469e-bb23-c1fd08db66ef",
+      "result_id": "c8533b94-757a-437b-a7c1-59b79962a33b"
+    },
+    {
+      "claim_id": "d2f1cd1a-1cc3-44e7-9a23-205503606284",
+      "result_id": "c8533b94-757a-437b-a7c1-59b79962a33b"
+    },
+    {
+      "claim_id": "146f8d5e-70e5-4704-8df9-9a93ed0544b0",
+      "result_id": "c8533b94-757a-437b-a7c1-59b79962a33b"
+    },
+    {
+      "claim_id": "fc1cf667-c368-4dd0-87c3-41b35925453d",
+      "result_id": "f27b7fad-58b2-4589-8a10-230d761fdc35"
+    },
+    {
+      "claim_id": "b249cab9-b3f3-4b40-a9c7-df26442ee1d6",
+      "result_id": "f27b7fad-58b2-4589-8a10-230d761fdc35"
+    },
+    {
+      "claim_id": "ceac6909-34e6-481c-8d6c-0cb3fa5050e4",
+      "result_id": "f27b7fad-58b2-4589-8a10-230d761fdc35"
+    },
+    {
+      "claim_id": "1058a397-ee7c-4bae-a41b-32545e35315a",
+      "result_id": "f27b7fad-58b2-4589-8a10-230d761fdc35"
+    },
+    {
+      "claim_id": "66c0ad6b-7b3a-4158-b74e-290f3b130e65",
+      "result_id": "f27b7fad-58b2-4589-8a10-230d761fdc35"
+    },
+    {
+      "claim_id": "c1f061a9-9da1-47a4-be39-589eaa298202",
+      "result_id": "f27b7fad-58b2-4589-8a10-230d761fdc35"
+    },
+    {
+      "claim_id": "7d993595-b96c-4e2d-997c-1efc2352f02d",
+      "result_id": "ace2b902-2839-47db-ac53-72406542b329"
+    },
+    {
+      "claim_id": "df4f3e56-202f-4469-914d-d92acc0d2e13",
+      "result_id": "ace2b902-2839-47db-ac53-72406542b329"
+    },
+    {
+      "claim_id": "89d9fc21-58c8-44a5-bbdd-89d92b3b55b2",
+      "result_id": "ace2b902-2839-47db-ac53-72406542b329"
+    },
+    {
+      "claim_id": "1ca57c6c-72a5-4fa3-b013-d97dbff0d5ce",
+      "result_id": "ace2b902-2839-47db-ac53-72406542b329"
+    },
+    {
+      "claim_id": "5a4dfad6-2304-4ad0-82a3-9b4818c95def",
+      "result_id": "f5c1aa99-6a0f-46fe-85c0-4cb311112d1d"
+    },
+    {
+      "claim_id": "977dbd56-4e33-4929-98b7-42454823ee63",
+      "result_id": "f5c1aa99-6a0f-46fe-85c0-4cb311112d1d"
+    },
+    {
+      "claim_id": "f974425d-5e1f-4a8e-a149-a084a34d4006",
+      "result_id": "f5c1aa99-6a0f-46fe-85c0-4cb311112d1d"
+    },
+    {
+      "claim_id": "b8070629-a86e-4381-bf6a-31b8f31c67d1",
+      "result_id": "f5c1aa99-6a0f-46fe-85c0-4cb311112d1d"
+    },
+    {
+      "claim_id": "2d9da616-78f9-4d83-8bfd-0d1741e2e87e",
+      "result_id": "f5c1aa99-6a0f-46fe-85c0-4cb311112d1d"
+    },
+    {
+      "claim_id": "01686f13-053a-4029-b365-d7288ad833bc",
+      "result_id": "f5c1aa99-6a0f-46fe-85c0-4cb311112d1d"
+    },
+    {
+      "claim_id": "7611f468-37b6-4341-90bf-91071012cd86",
+      "result_id": "f5c1aa99-6a0f-46fe-85c0-4cb311112d1d"
+    },
+    {
+      "claim_id": "6aa5444a-ad05-4fc1-b1a2-a76d55d7b7c8",
+      "result_id": "38a79360-26f5-4a60-b869-87ddfe6f0552"
+    },
+    {
+      "claim_id": "eb6d4ade-ede6-4f0b-bab7-85193a442c11",
+      "result_id": "38a79360-26f5-4a60-b869-87ddfe6f0552"
+    },
+    {
+      "claim_id": "b4ad5748-fbf7-402f-8eea-94360b562229",
+      "result_id": "38a79360-26f5-4a60-b869-87ddfe6f0552"
+    },
+    {
+      "claim_id": "26e1cd03-b47b-4567-b343-588d8f88babc",
+      "result_id": "38a79360-26f5-4a60-b869-87ddfe6f0552"
+    },
+    {
+      "claim_id": "ed95544b-4d52-4a2f-b348-343d302449e9",
+      "result_id": "38a79360-26f5-4a60-b869-87ddfe6f0552"
+    },
+    {
+      "claim_id": "d27f2adc-91cc-4159-bbba-bf10d9af9982",
+      "result_id": "38a79360-26f5-4a60-b869-87ddfe6f0552"
+    },
+    {
+      "claim_id": "eab788b3-8c41-4074-b727-b48e3d9e1cee",
+      "result_id": "38a79360-26f5-4a60-b869-87ddfe6f0552"
+    },
+    {
+      "claim_id": "4360b378-3300-47f7-a6d7-e140f886e91b",
+      "result_id": "ccc5f7c4-c0d3-4aff-9889-180274db2edf"
+    },
+    {
+      "claim_id": "aa8b9bf8-91b6-4854-bce0-1b542927fcde",
+      "result_id": "ccc5f7c4-c0d3-4aff-9889-180274db2edf"
+    },
+    {
+      "claim_id": "9699bc12-0497-4476-9c0b-4c50cd8e3f79",
+      "result_id": "ccc5f7c4-c0d3-4aff-9889-180274db2edf"
+    },
+    {
+      "claim_id": "90f2bf6d-44a3-4792-8a1d-c74a685e1bf2",
+      "result_id": "4c010cfa-a41f-4d86-8863-dac10bc8c833"
+    },
+    {
+      "claim_id": "b7dcb413-919b-4b43-8969-3c132436d3f1",
+      "result_id": "4c010cfa-a41f-4d86-8863-dac10bc8c833"
+    },
+    {
+      "claim_id": "ecedf519-103b-4d40-9967-7eb74ccd0b33",
+      "result_id": "4c010cfa-a41f-4d86-8863-dac10bc8c833"
+    },
+    {
+      "claim_id": "47e3e5ec-e6c2-4723-b0cc-5c407dd6aed9",
+      "result_id": "4c010cfa-a41f-4d86-8863-dac10bc8c833"
+    },
+    {
+      "claim_id": "95182dcb-112a-4ad5-9538-9ea6a5c4feb1",
+      "result_id": "f88e262e-bcdc-407e-84ba-387ea940e660"
+    },
+    {
+      "claim_id": "2b5b5855-98dc-4fc1-88d6-4e58e372e907",
+      "result_id": "f88e262e-bcdc-407e-84ba-387ea940e660"
+    },
+    {
+      "claim_id": "7e62a55b-7274-4f2f-8f89-6b3f28db4a5a",
+      "result_id": "a536e59d-f6f5-4922-b820-73a3279d4abf"
+    },
+    {
+      "claim_id": "eb9622ab-8c4e-49e2-9fc6-4cf2b938e13c",
+      "result_id": "a536e59d-f6f5-4922-b820-73a3279d4abf"
+    },
+    {
+      "claim_id": "50155f83-a2cf-475c-936c-8714461d5955",
+      "result_id": "a536e59d-f6f5-4922-b820-73a3279d4abf"
+    },
+    {
+      "claim_id": "a9107c1e-824e-402d-b896-c4e7d443ea85",
+      "result_id": "a536e59d-f6f5-4922-b820-73a3279d4abf"
+    },
+    {
+      "claim_id": "0dcc972c-aaa0-41e2-b362-a4384eb41ca7",
+      "result_id": "a536e59d-f6f5-4922-b820-73a3279d4abf"
+    },
+    {
+      "claim_id": "c92db5a8-44e5-4101-8671-0859a6d3bf2b",
+      "result_id": "a536e59d-f6f5-4922-b820-73a3279d4abf"
+    },
+    {
+      "claim_id": "ae2c6a18-f8d2-4e0d-ae20-02374a6e6b52",
+      "result_id": "a536e59d-f6f5-4922-b820-73a3279d4abf"
+    },
+    {
+      "claim_id": "bb257e5c-c576-4b61-9c44-9503be1ce053",
+      "result_id": "b272d723-32ce-4339-8e76-d12ed1f6f766"
+    },
+    {
+      "claim_id": "963aac10-2b2d-486c-a30d-a5ce5747b8b5",
+      "result_id": "b272d723-32ce-4339-8e76-d12ed1f6f766"
+    },
+    {
+      "claim_id": "a9619498-6375-48f2-af4d-2a486236e354",
+      "result_id": "b272d723-32ce-4339-8e76-d12ed1f6f766"
+    },
+    {
+      "claim_id": "b372c605-46b6-47c6-b5b5-d718dad4b7f1",
+      "result_id": "b272d723-32ce-4339-8e76-d12ed1f6f766"
+    },
+    {
+      "claim_id": "e547bbef-6792-407f-bc78-2db7441bfa71",
+      "result_id": "efb5b257-6824-47d9-91da-b1c9f9e88124"
+    },
+    {
+      "claim_id": "43caa581-f6c3-4be9-a7be-08c2c240d84c",
+      "result_id": "efb5b257-6824-47d9-91da-b1c9f9e88124"
+    },
+    {
+      "claim_id": "c49e06dd-a2b1-481c-acb4-e641a857c429",
+      "result_id": "efb5b257-6824-47d9-91da-b1c9f9e88124"
+    },
+    {
+      "claim_id": "94e2eee5-2f7c-4251-8ba3-f646073fa7c2",
+      "result_id": "591d712b-59e9-4bea-9154-0c32ad06fe1a"
+    },
+    {
+      "claim_id": "a4745d3d-c6da-48ee-8c97-1884ed5f9520",
+      "result_id": "591d712b-59e9-4bea-9154-0c32ad06fe1a"
+    }
+  ],
+  "comparisons": []
+}

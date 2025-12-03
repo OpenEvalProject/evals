@@ -1,0 +1,1072 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Living cells often need to measure chemical concentrations that vary in time.",
+    "claim_type": "EXPLICIT",
+    "source": "Living cells often need to measure chemical concentrations that vary in time, yet how accurately they can do so is poorly understood.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the abstract as a motivation for the study.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "There exists an optimal integration time for cellular sensing systems, which is determined by the input statistics and the number of receptors.",
+    "claim_type": "EXPLICIT",
+    "source": "(1) there exists an optimal integration time, which is determined by the input statistics and the number of receptors",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a primary finding stated in the abstract and derived theoretically in the manuscript.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "In the optimally designed system, the number of independent concentration measurements equals the number of readout molecules that store these measurements and equals the work to store these measurements reliably.",
+    "claim_type": "EXPLICIT",
+    "source": "(2) in the optimally designed system, the number of independent concentration measurements as set by the number of receptors and the optimal integration time equals the number of readout molecules that store these measurements and equals the work to store these measurements reliably; no resource is then in excess and hence wasted.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a primary finding stated in the abstract and formalized in Equation 12.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "The integration time of the Escherichia coli chemotaxis system is optimal for sensing shallow gradients.",
+    "claim_type": "EXPLICIT",
+    "source": "Applying our theory to the Escherichia coli chemotaxis system indicates that its integration time is not only optimal for sensing shallow gradients but also necessary to enable navigation in these gradients.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated by applying the theory to E. coli parameters and comparing with experimental data.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "The integration time of the E. coli chemotaxis system is necessary to enable navigation in shallow gradients.",
+    "claim_type": "EXPLICIT",
+    "source": "Applying our theory to the Escherichia coli chemotaxis system indicates that its integration time is not only optimal for sensing shallow gradients but also necessary to enable navigation in these gradients.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated by showing that the measured integration time matches the predicted optimal value.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "Cells shape the statistics of the input signal through their movement such that the timescale of input fluctuations becomes comparable to that of the response.",
+    "claim_type": "EXPLICIT",
+    "source": "These cells shape, via their movement, the statistics of the input signal, such that the timescale of the input fluctuations becomes comparable to that of the response.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a general principle for cells that navigate through their environment.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "Cells measure chemical concentrations via receptors on their surface.",
+    "claim_type": "EXPLICIT",
+    "source": "Cells measure chemical concentrations via receptors on their surface.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as established knowledge about cellular sensing mechanisms.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "Measurements of chemical concentrations are corrupted by the stochastic arrival of ligand molecules by diffusion and by the stochastic binding of ligand to receptor.",
+    "claim_type": "EXPLICIT",
+    "source": "These measurements are inevitably corrupted by the stochastic arrival of the ligand molecules by diffusion and by the stochastic binding of the ligand to the receptor.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a fundamental limitation of cellular sensing.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "Wiener-Kolmogorov and Kalman filtering theories have been employed to show that time integration can improve sensing of time-varying signals by reducing receptor noise.",
+    "claim_type": "EXPLICIT",
+    "source": "They have been used to show that time integration can improve the sensing of time-varying signals by reducing receptor noise, although it cannot remove this input noise completely because of signal distortion (Andrews et al., 2006; Hinczewski and Thirumalai, 2014; Becker et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to previous work applying filtering theory to cellular sensing.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "Time integration cannot remove input noise completely because of signal distortion.",
+    "claim_type": "EXPLICIT",
+    "source": "They have been used to show that time integration can improve the sensing of time-varying signals by reducing receptor noise, although it cannot remove this input noise completely because of signal distortion (Andrews et al., 2006; Hinczewski and Thirumalai, 2014; Becker et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a limitation of time integration and supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Circadian systems can adapt their response to the statistics of the input signal, as predicted by Kalman filtering theory.",
+    "claim_type": "EXPLICIT",
+    "source": "It has been shown that circadian systems can adapt their response to the statistics of the input signal, as predicted by Kalman filtering theory (Husain et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation to experimental work on circadian systems.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "Negative feedback and incoherent feedforward are common motifs in cell signaling.",
+    "claim_type": "EXPLICIT",
+    "source": "Negative feedback and incoherent feedforward, which are common motifs in cell signaling (Alon, 2007), make it possible to predict future signal values via signal extrapolation, which is useful when the past signal contains information about the future in addition to the current signal (Becker et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as established knowledge and supported by a citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "Negative feedback and incoherent feedforward make it possible to predict future signal values via signal extrapolation.",
+    "claim_type": "EXPLICIT",
+    "source": "Negative feedback and incoherent feedforward, which are common motifs in cell signaling (Alon, 2007), make it possible to predict future signal values via signal extrapolation, which is useful when the past signal contains information about the future in addition to the current signal (Becker et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation to previous theoretical work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "Receptors and time are needed to take concentration measurements.",
+    "claim_type": "EXPLICIT",
+    "source": "Receptors and time are needed to take the concentration measurements (Berg and Purcell, 1977), downstream molecules are necessary to store the ligand-binding states of the receptor in the past, and energy is required to store these states reliably (Govern and Ten Wolde, 2014a).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a fundamental requirement and supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "Downstream molecules are necessary to store the ligand-binding states of the receptor in the past.",
+    "claim_type": "EXPLICIT",
+    "source": "Receptors and time are needed to take the concentration measurements (Berg and Purcell, 1977), downstream molecules are necessary to store the ligand-binding states of the receptor in the past, and energy is required to store these states reliably (Govern and Ten Wolde, 2014a).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a fundamental requirement and supported by a citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "Energy is required to store ligand-binding states reliably.",
+    "claim_type": "EXPLICIT",
+    "source": "Receptors and time are needed to take the concentration measurements (Berg and Purcell, 1977), downstream molecules are necessary to store the ligand-binding states of the receptor in the past, and energy is required to store these states reliably (Govern and Ten Wolde, 2014a).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a fundamental requirement and supported by a citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "Push-pull networks constitute a simple exponential filter.",
+    "claim_type": "EXPLICIT",
+    "source": "Push\u2013pull networks constitute a simple exponential filter (Hinczewski and Thirumalai, 2014; Becker et al., 2015), in which the current output depends on the current and past input (with past input values contributing to the output with a weight that decays exponentially with time back into the past).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a property of push-pull networks and supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "In push-pull networks, the current output depends on the current and past input with past input values contributing with a weight that decays exponentially with time.",
+    "claim_type": "EXPLICIT",
+    "source": "Push\u2013pull networks constitute a simple exponential filter (Hinczewski and Thirumalai, 2014; Becker et al., 2015), in which the current output depends on the current and past input (with past input values contributing to the output with a weight that decays exponentially with time back into the past).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a defining characteristic of exponential filters.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "Wiener-Kolmogorov filtering theory shows that push-pull networks are optimal for estimating signals that are memoryless.",
+    "claim_type": "EXPLICIT",
+    "source": "Wiener\u2013Kolmogorov filtering theory (Extrapolation, 1950; Kolmogorov, 1992) shows that these networks are optimal for estimating signals that are memoryless (Becker et al., 2015), meaning that the past input does not contain information that is not already present in the current input.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a theoretical result from filtering theory and supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "Push-pull networks act as low-pass filters, removing high-frequency receptor-ligand-binding noise.",
+    "claim_type": "EXPLICIT",
+    "source": "These networks are useful because they act as low-pass filters, removing the high-frequency receptor\u2013ligand-binding noise (Andrews et al., 2006; Hinczewski and Thirumalai, 2014; Becker et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a functional property of push-pull networks and supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "The cell estimates the current ligand concentration from the average receptor occupancy over an integration time.",
+    "claim_type": "EXPLICIT",
+    "source": "This framework is based on the observation that the cell estimates the current ligand concentration not from the current number of active readout molecules directly, but rather via the receptor: the cell uses its push\u2013pull network to estimate the receptor occupancy from which the ligand concentration is then inferred (see Figure 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated as a key concept of the sampling framework and illustrated in Figure 2.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "The push-pull network is viewed as a device that discretely samples the state of the receptor via collisions of readout molecules with receptor proteins.",
+    "claim_type": "EXPLICIT",
+    "source": "To elucidate the resource requirements for time integration, the push\u2013pull network is viewed as a device that employs the mechanism of time integration by discretely sampling, rather than continuously integrating, the state of the receptor via collisions of the readout molecules with the receptor proteins (see Figure 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated as a key conceptual framework of the theory and illustrated in Figure 2.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "During each collision, the ligand-binding state of the receptor protein is copied into the activation state of the readout molecule.",
+    "claim_type": "EXPLICIT",
+    "source": "During each collision, the ligand-binding state of the receptor protein is copied into the activation state of the readout molecule (Ouldridge et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a mechanism of information transfer and supported by a citation.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "The readout molecules constitute samples of the receptor state, and the fraction of active readout molecules provides an estimate of the average receptor occupancy.",
+    "claim_type": "EXPLICIT",
+    "source": "The readout molecules thus constitute samples of the receptor state, and the fraction of active readout molecules provides an estimate of the average receptor occupancy.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a consequence of the discrete sampling framework.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "The sampling error depends on the number of receptor samples, their independence, and their reliability.",
+    "claim_type": "EXPLICIT",
+    "source": "One term, the sampling error, describes the sensing error that arises from the finite accuracy by which the receptor occupancy is estimated. This error depends on the number of receptor samples, as set by the number of receptors, readout molecules, and the integration time; their independence, as given by the receptor-sampling interval and the timescale of the receptor\u2013ligand-binding noise; and their reliability, as determined by how much the system is driven out of thermodynamic equilibrium via fuel turnover.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a decomposition of the sampling error into its contributing factors.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "The dynamical error depends on the integration time and timescale of the input fluctuations.",
+    "claim_type": "EXPLICIT",
+    "source": "The other term is the dynamical error and is determined by how much the concentration in the past integration time reflects the current concentration that the cell aims to estimate; it depends on the integration time and timescale of the input fluctuations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a characterization of the dynamical error.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "There exist three fundamental resource classes that each fundamentally limit the accuracy of sensing: receptors and their integration time, readout molecules, and power and integration time.",
+    "claim_type": "EXPLICIT",
+    "source": "There exist three fundamental resource classes \u2013 receptors and their integration time, readout molecules, and power and integration time \u2013 which each fundamentally limit the accuracy of sensing",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a key theoretical finding and demonstrated in Equations 8 and 9.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "In an optimally designed system, each resource class is equally limiting so that none of them is in excess and thus wasted.",
+    "claim_type": "EXPLICIT",
+    "source": "and, in an optimally designed system, each resource class is equally limiting so that none of them is in excess and thus wasted.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as the resource allocation principle.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "The optimal integration time decreases as the number of receptors is increased.",
+    "claim_type": "EXPLICIT",
+    "source": "The optimal integration time decreases as the number of receptors is increased because this allows for more instantaneous measurements.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a specific prediction and demonstrated in Figure 3c.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "When the input varies more rapidly, both the number of receptors and the power must increase to maintain a desired sensing precision, while the number of readout molecules does not.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, the allocation principle reveals that when the input varies more rapidly both the number of receptors and the power must increase to maintain a desired sensing precision, while the number of readout molecules does not.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a specific prediction of the theory.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "E. coli searches for food via a run-and-tumble strategy, yielding a fluctuating input signal.",
+    "claim_type": "EXPLICIT",
+    "source": "This bacterium searches for food via a run-and-tumble strategy (Berg and Brown, 1972), yielding a fluctuating input signal.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as established knowledge about E. coli behavior and supported by a citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "In small gradients, the timescale of input fluctuations for E. coli is set by the typical run time, which is on the order of a few seconds.",
+    "claim_type": "EXPLICIT",
+    "source": "In small gradients, the timescale of these input fluctuations is set by the typical run time of the bacterium, which is on the order of a few seconds (Berg and Brown, 1972; Taute et al., 2015)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a characteristic of E. coli behavior and supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "E. coli can sense extremely shallow gradients with a length scale of approximately 10^4 \u03bcm.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, experiments have revealed that E. coli can sense extremely shallow gradients, with a length scale of approximately 104\u00b5m (Shimizu et al., 2010)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as an experimental observation and supported by a citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "The chemotaxis system of E. coli employs a push-pull network to filter out high-frequency receptor-ligand-binding noise.",
+    "claim_type": "EXPLICIT",
+    "source": "To measure the concentration, the chemotaxis system employs a push\u2013pull network to filter out the high-frequency receptor\u2013ligand-binding noise (Sartori and Tu, 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a known mechanism of the E. coli chemotaxis system and supported by a citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "The measured integration time of E. coli is on the order of 100 ms based on its attractant and repellent response.",
+    "claim_type": "EXPLICIT",
+    "source": "Applying our theory to this system predicts that the measured integration time, on the order of 100 ms (Sourjik and Berg, 2002), is not only sufficient to enable navigation in these shallow gradients but also necessary.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as an experimental measurement and supported by a citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "The E. coli chemotaxis system has evolved to optimally sense shallow concentration gradients.",
+    "claim_type": "EXPLICIT",
+    "source": "This suggests that this system has evolved to optimally sense shallow concentration gradients.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as an interpretation of the agreement between theory and experiment.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "The ligand concentration obeys Gaussian statistics.",
+    "claim_type": "EXPLICIT",
+    "source": "It obeys Gaussian statistics (Tostevin and ten Wolde, 2010).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a modeling assumption and supported by a citation.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "The receptor correlation time determines the timescale on which independent concentration measurements can be made.",
+    "claim_type": "EXPLICIT",
+    "source": "It determines the timescale on which independent concentration measurements can be made.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as an interpretation of the receptor correlation time.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "The average in the dynamic input-output relation is over the noise in receptor-ligand binding and readout activation, and over the subensemble of past input trajectories that each end at the same current concentration L.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, the average is not only over the noise in receptor\u2013ligand binding and readout activation (Figure 2b) but also over the subensemble of past input trajectories that each end at the same current concentration L (Figure 2c; Tostevin and ten Wolde, 2010; Hilfinger and Paulsson, 2011; Bowsher et al., 2013).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated as a clarification of the averaging procedure and supported by citations and figures.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "Equation 1 generalizes the expression for the error in sensing static concentrations to that of time-varying concentrations.",
+    "claim_type": "EXPLICIT",
+    "source": "Equation 1 generalizes the expression for the error in sensing static concentrations (Berg and Purcell, 1977; Bialek and Setayeshgar, 2005; Wang et al., 2007; Mehta and Schwab, 2012; Kaizu et al., 2014; Govern and Ten Wolde, 2014a; Ten Wolde et al., 2016) to that of time-varying concentrations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a contribution of the work and supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "The dynamical error yields a systematic error that cannot be eliminated by increasing the number of receptor samples, their independence, or their accuracy.",
+    "claim_type": "EXPLICIT",
+    "source": "This contribution yields a systematic error, which cannot be eliminated by increasing the number of receptor samples, their independence, or their accuracy.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a fundamental property of the dynamical error.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "The dynamics of the input signal affects the sensing precision via both the dynamical error and the sampling error.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, the dynamics of the input signal not only affects the sensing precision via the dynamical error but also via the sampling error.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as an important observation about the dual role of input dynamics.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "The resources receptors, readout molecules, and energy cannot compensate each other.",
+    "claim_type": "EXPLICIT",
+    "source": "Clearly, the resources receptors, readout molecules, and energy cannot compensate each other: the sensing precision is bounded by the limiting resource.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a conclusion from the analysis of fundamental resources.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "For sensing time-varying signals, time integration can never eliminate the sensing error completely.",
+    "claim_type": "EXPLICIT",
+    "source": "However, Equation 8 reveals that for sensing time-varying signals time integration can never eliminate the sensing error completely, as predicted also by filtering theories (Extrapolation, 1950; Kolmogorov, 1992; Kalman, 1960).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a finding from Equation 8 and supported by citations to filtering theory.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C111",
+    "claim": "Time integration relies on copying the ligand-binding state of the receptor into the chemical modification states of the readout molecules, which requires work input.",
+    "claim_type": "EXPLICIT",
+    "source": "Time integration relies on copying the ligand-binding state of the receptor into the chemical modification states of the readout molecules (Mehta and Schwab, 2012; Govern and Ten Wolde, 2014a). This copy process correlates the state of the receptor with that of the readout, which requires work input (Ouldridge et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a fundamental requirement for time integration and supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C119",
+    "claim": "The sensing precision for a given power and time constraint is higher in the quasi-reversible regime, but more readout molecules are required in this regime.",
+    "claim_type": "EXPLICIT",
+    "source": "While the sensing precision for a given power and time constraint is higher in the quasi-reversible regime, more readout molecules are required to store the concentration measurements in this regime.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a trade-off between sensing precision and readout molecule requirements.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C138",
+    "claim": "The resource allocation principle, together with the optimal integration time, completely specifies the optimal design of the sensing system.",
+    "claim_type": "EXPLICIT",
+    "source": "The resource allocation principle, together with the optimal integration time, thus completely specifies the optimal design of the sensing system.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a key conclusion about the completeness of the theory.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C139",
+    "claim": "The E. coli chemotaxis system obeys the resource allocation principle.",
+    "claim_type": "EXPLICIT",
+    "source": "Applying our theory to the E. coli chemotaxis system shows that this system not only obeys the resource allocation principle (Govern and Ten Wolde, 2014a) but also that the predicted optimal integration time to measure shallow gradients is in agreement with that measured experimentally (Figure 4a).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated as a finding from applying the theory to E. coli and supported by a citation and Figure 4a.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C140",
+    "claim": "There is not a single fit parameter in the theory applied to E. coli.",
+    "claim_type": "EXPLICIT",
+    "source": "This is remarkable because there is not a single fit parameter in our theory.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a notable feature of the theoretical predictions.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C141",
+    "claim": "The optimal integration time for E. coli is not only sufficient but also necessary to enable sensing of shallow gradients.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, Figure 4b shows that the optimal integration time is not only sufficient to enable the sensing of these shallow gradients but also necessary.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated as a finding and demonstrated in Figure 4b.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C142",
+    "claim": "The sensing precision could be increased by increasing the number of receptors, readout molecules, and energy, but this would be costly.",
+    "claim_type": "EXPLICIT",
+    "source": "This is interesting because the sensing precision could also be increased by increasing the number of receptors, readout molecules, and energy devoted to sensing \u2013 but this would be costly.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as an interpretation of why the system operates at the optimal design.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C143",
+    "claim": "There is a strong selection pressure to design sensing systems optimally, that is, to maximize sensing precision given resource constraints.",
+    "claim_type": "EXPLICIT",
+    "source": "Our results thus demonstrate not only that the chemotaxis system obeys the design principles as revealed by our theory but also that there is a strong selection pressure to design sensing systems optimally, that is, to maximize the sensing precision given the resource constraints.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a conclusion from the agreement between theory and experiment.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C144",
+    "claim": "The theory is based on a Gaussian model and describes the optimal sensing system that minimizes the mean square error in the estimate of the ligand concentration.",
+    "claim_type": "EXPLICIT",
+    "source": "Our theory is based on a Gaussian model and describes the optimal sensing system that minimizes the mean square error in the estimate of the ligand concentration (see Equation 1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a description of the theoretical framework.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C145",
+    "claim": "The performance criterion of minimizing mean square error is precisely that of Wiener-Kolmogorov and Kalman filtering theory.",
+    "claim_type": "EXPLICIT",
+    "source": "The latter is precisely the performance criterion of Wiener\u2013Kolmogorov (Extrapolation, 1950; Kolmogorov, 1992) and Kalman, 1960 filtering theory, which, moreover, become exact for systems that obey Gaussian statistics.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a connection to filtering theory and supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C146",
+    "claim": "Wiener-Kolmogorov and Kalman filtering theories predict the same optimal filter for stationary systems, which is an exponential filter for memoryless signals.",
+    "claim_type": "EXPLICIT",
+    "source": "In fact, since our system (including the input signal) is stationary, they predict the same optimal filter, which is an exponential filter for signals that are memoryless.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a property of filtering theories for stationary systems.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C147",
+    "claim": "The signals studied belong to the class of memoryless signals, and the push-pull network forms an exponential filter.",
+    "claim_type": "EXPLICIT",
+    "source": "The signals studied here belong to this class, and the push\u2013pull network forms an exponential filter (Hinczewski and Thirumalai, 2014; Becker et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a characterization of the system and supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C148",
+    "claim": "The theory gives a complete description, in terms of all required resources, for the optimal design of cellular sensing systems that need to estimate memoryless signals.",
+    "claim_type": "EXPLICIT",
+    "source": "This underscores the idea that our theory gives a complete description, in terms of all the required resources, for the optimal design of cellular sensing systems that need to estimate this type of signals.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a claim about the completeness of the theory.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C150",
+    "claim": "Optimal sensing systems match the response to the statistics of the input.",
+    "claim_type": "EXPLICIT",
+    "source": "A key concept in these theories is that optimal sensing systems match the response to the statistics of the input.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a key concept from filtering and information theory.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C151",
+    "claim": "When the noise is weak, maximizing the entropy of the output distribution becomes paramount, which entails matching the shape of the input-output relation to the shape of the input distribution.",
+    "claim_type": "EXPLICIT",
+    "source": "When the noise is weak, maximizing the entropy of the output distribution becomes paramount, which entails matching the shape of the input\u2013output relation to the shape of the input distribution to generate a flat output distribution (Laughlin, 1981; Tkacik et al., 2008; Monti et al., 2018a).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a principle from information theory and supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C152",
+    "claim": "When the noise is large, the optimal response is shaped by the requirement to tame the propagation of noise in the input signal or to lift the signal above the intrinsic noise in the response system.",
+    "claim_type": "EXPLICIT",
+    "source": "Yet, when the noise is large, the optimal response is also shaped by the requirement to tame the propagation of noise in the input signal (Andrews et al., 2006; Hinczewski and Thirumalai, 2014; Becker et al., 2015; Monti et al., 2018a; Monti et al., 2018b; Mora and Nemenman, 2019) or to lift the signal above the intrinsic noise in the response system (Tostevin and ten Wolde, 2010; Bowsher et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a principle for noisy systems and supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C154",
+    "claim": "The discrete sampling framework gives a detailed description of how the optimal design depends on input statistics in terms of all required cellular resources: protein copies, time, and energy.",
+    "claim_type": "EXPLICIT",
+    "source": "Yet, our discrete sampling framework gives a detailed description of how the optimal design of sensing systems depends on the statistics of the input signal in terms of all the required cellular resources: protein copies, time, and energy.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a contribution of the sampling framework.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C161",
+    "claim": "When the input varies more rapidly, the number of receptors and power must rise to maintain a required sensing precision, while the number of readout molecules does not.",
+    "claim_type": "EXPLICIT",
+    "source": "Our theory thus predicts that when the input varies more rapidly the number of receptors and the power must rise to maintain a required sensing precision, while the number of readout molecules does not.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a specific prediction of the theory.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C162",
+    "claim": "The fitness benefit of a sensing system depends on both the sensing precision and the energetic cost of maintaining and running the system.",
+    "claim_type": "EXPLICIT",
+    "source": "The fitness benefit of a sensing system does not only depend on the sensing precision but also on the energetic cost of maintaining and running the system.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a consideration for biological systems.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C164",
+    "claim": "Improving sensing precision comes at a cost: more copies of sensing system components need to be synthesized, and more energy is needed to run the system.",
+    "claim_type": "EXPLICIT",
+    "source": "Clearly, improving the sensing precision comes at a cost: more copies of the components of the sensing system need to be synthesized every cell cycle, and more energy is needed to run the system.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a general principle about the cost of sensing.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C165",
+    "claim": "The theory makes it possible to derive the Pareto front that quantifies the trade-off between maximal sensing precision and the cost of making the sensing system.",
+    "claim_type": "EXPLICIT",
+    "source": "Our theory (i.e., Equation 6) makes it possible to derive the Pareto front that quantifies the trade-off between the maximal sensing precision and the cost of making the sensing system (see Figure 5).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated as an application of the theory and illustrated in Figure 5.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C166",
+    "claim": "The design of the optimal system at the Pareto front obeys, to a good approximation, the resource allocation principle.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, the design of the optimal system at the Pareto front obeys, to a good approximation, our resource allocation principle (Equation 12).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated as a finding about systems at the Pareto front and illustrated in Figure 5.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C168",
+    "claim": "The theory, without any fit parameters, predicts not only the integration time but also the number of receptor and readout molecules for E. coli.",
+    "claim_type": "EXPLICIT",
+    "source": "It probably explains why our theory, without any fit parameters, not only predicts the integration time that allows E. coli to sense shallow gradients (Figure 4) but also the number of receptor and readout molecules (Govern and Ten Wolde, 2014a).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated as an explanation for the predictive power of the theory and supported by a citation and Figure 4.",
+    "evidence_type": [
+      "CITATION",
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C169",
+    "claim": "The results hold more generally for systems that employ cooperativity, negative or positive feedback, or multiple layers.",
+    "claim_type": "EXPLICIT",
+    "source": "Yet, the work of Govern and Ten Wolde, 2014a indicates that our results hold more generally, pertaining also to systems that employ cooperativity, negative or positive feedback, or multiple layers, as the MAPK cascade.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a claim about the generality of the results and supported by a citation.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C170",
+    "claim": "Multiple layers and feedback change the response time but do not make time integration more efficient in terms of readout molecules or energy.",
+    "claim_type": "EXPLICIT",
+    "source": "While multiple layers and feedback change the response time, they do not make time integration more efficient in terms of readout molecules or energy (Govern and Ten Wolde, 2014a).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a finding about the effect of network architecture and supported by a citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C171",
+    "claim": "Cooperative ligand binding can reduce the sensing error per sample, but the resource requirements per sample do not change.",
+    "claim_type": "EXPLICIT",
+    "source": "And provided it does not increase the input correlation time (Skoge et al., 2011; Ten Wolde et al., 2016), cooperative ligand binding can reduce the sensing error per sample, but the resource requirements in terms of readout molecules and energy per sample do not change (Govern and Ten Wolde, 2014a).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a finding about cooperative binding and supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C172",
+    "claim": "In all sensing systems, time integration requires that the history of the receptor is stored, which demands protein copies and energy.",
+    "claim_type": "EXPLICIT",
+    "source": "In all these systems, time integration requires that the history of the receptor is stored, which demands protein copies and energy.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a general principle for time integration.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C173",
+    "claim": "The adaptation system in E. coli exhibits a trade-off between accuracy, speed, and power.",
+    "claim_type": "EXPLICIT",
+    "source": "This adaptation system also exhibits a trade-off between accuracy, speed, and power (Lan et al., 2012; Sartori and Tu, 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a property of the adaptation system and supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C174",
+    "claim": "Simulations indicate that the combination of sensing and adaptation allows E. coli to accurately estimate not only the current concentration but also the future ligand concentration.",
+    "claim_type": "EXPLICIT",
+    "source": "Intriguingly, simulations indicate that the combination of sensing and adaptation allows E. coli not only to accurately estimate the current concentration but also the future ligand concentration (Becker et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a finding from simulations and supported by a citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C183",
+    "claim": "Shallow gradients allow for a larger integration time while steep gradients necessitate a shorter one.",
+    "claim_type": "EXPLICIT",
+    "source": "Shallow ingredients thus allow for a larger integration time while steep gradients necessitate a shorter one.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a consequence of the trade-off between sampling and dynamical errors.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C185",
+    "claim": "The integration time of E. coli (50-500 ms) is optimal for detecting shallow gradients.",
+    "claim_type": "EXPLICIT",
+    "source": "Figure 4a shows that this integration time is optimal for detecting shallow gradients.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in Figure 4a by comparing the measured integration time with the predicted optimal value.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C186",
+    "claim": "The E. coli chemotaxis system has been optimized for sensing shallow gradients.",
+    "claim_type": "EXPLICIT",
+    "source": "Our theory thus predicts that the E. coli chemotaxis system has been optimized for sensing shallow gradients.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a conclusion from the agreement between predicted and measured integration times.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C194",
+    "claim": "The predictions of the theory concern the shallowest gradient that the system with the optimal integration time can resolve.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, the predictions of our theory (Figure 4) concern the shallowest gradient that the system with the optimal integration time can resolve.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated as a clarification of what the theory predicts.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C195",
+    "claim": "The observations indicate that the optimal integration time is not only sufficient but also necessary to make navigation in very shallow gradients possible.",
+    "claim_type": "EXPLICIT",
+    "source": "These observations indicate that the optimal integration time is not only sufficient to make navigation in these very shallow gradients possible but also necessary.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a conclusion from the agreement between theory and experiment.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C197",
+    "claim": "The copy numbers of chemotaxis proteins in E. coli vary with the growth rate.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, the data of Li and Hazelbauer, 2004 shows that the copy numbers of the chemotaxis proteins vary with the growth rate.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as an experimental observation and supported by a citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  }
+]

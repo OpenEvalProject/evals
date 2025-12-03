@@ -1,0 +1,392 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "RNA-seq analysis of GMR > Rh1G69D eye discs revealed enrichment of genes related to glutathione metabolism and redox homeostasis, with gstD1 being the most significantly upregulated gene. This was accompanied by ROS accumulation as detected by the cyto-roGFP2-Orp1 reporter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C44 collectively demonstrate that ER stress induced by Rh1G69D leads to upregulation of antioxidant genes and ROS accumulation. The RNA-seq data (C38-C41), GO term analysis with significant p-values, and ROS reporter activation (C42-C44) provide converging evidence for this antioxidant response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The gstD-GFP reporter is induced by ER stress in a cell-type-specific manner, primarily in non-photoreceptor cells. This induction occurs in response to both genetic (Rh1G69D) and chemical (DTT, tunicamycin) ER stressors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 are well-supported by imaging data showing gstD-GFP induction patterns. The cell-type specificity is demonstrated through confocal microscopy with cell-type markers (C47), and the generalizability is shown through multiple ER stress inducers (C48-C50). The conclusion (C51) is appropriately supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The transcription factor cncC (Nrf2 homolog) is not required for gstD-GFP induction in response to ER stress, despite being required for paraquat-induced gstD expression. This was demonstrated both in vivo using mutant clones and in S2 cells using RNAi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 provide strong evidence that cncC is dispensable for ER stress-induced gstD expression. The genetic experiments with two different cncC alleles (C54-C55), S2 cell RNAi experiments (C56-C57), and the positive control with paraquat (C58) collectively support this conclusion. The unexpected enhancement in cncC mutants (C55) is noted but doesn't contradict the main finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "IRE1 and ATF6, two of the three canonical UPR branches, are not required for gstD-GFP induction by ER stress. Loss of Ire1 or Atf6 did not impair gstD-GFP expression in response to Rh1G69D.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 demonstrate through genetic loss-of-function experiments that IRE1 and ATF6 are not required for gstD induction. The observation of increased gstD-GFP in Ire1 mutants (C60) is consistent with compensatory UPR branch activation and is appropriately cited. The data support the conclusion that these branches are dispensable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C65",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "PERK is both necessary and sufficient for gstD-GFP induction, and this requires PERK's kinase activity and eIF2\u03b1 phosphorylation. Loss of Perk blocks gstD induction, while Perk overexpression or gadd34 knockdown (which increases eIF2\u03b1 phosphorylation) induces gstD-GFP across multiple tissue types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C72 provide comprehensive evidence for PERK's role through multiple complementary approaches: loss-of-function (C62, C72), gain-of-function (C63), kinase-dead controls (C65), manipulation of eIF2\u03b1 phosphorylation via gadd34 (C68-C69), and validation in S2 cells (C71). The convergence of genetic, cell biological, and molecular evidence strongly supports this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The Drosophila ATF4 ortholog crc is not required for gstD-GFP induction by ER stress, despite being required for Thor expression. Loss of crc does not impair gstD induction, and crc overexpression does not induce gstD-GFP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C81 demonstrate through multiple lines of evidence that gstD induction is ATF4-independent. The genetic experiments (C75-C76), S2 cell RNAi (C77-C78), and overexpression studies (C79-C80) all converge on this conclusion. The Thor-lacZ reporter serves as an appropriate positive control for crc function (C76, C78, C80), strengthening the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The transcription factor Xrp1 is required for gstD-GFP induction by ER stress and is epistatic to Perk. Loss of Xrp1 blocks gstD-GFP induction by both Rh1G69D and Perk overexpression, and Xrp1 is required for induction of multiple antioxidant genes including gstD1, jafrac1, and sod2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C89 provide strong evidence for Xrp1's essential role through mosaic analysis (C84-C85), qRT-PCR of multiple target genes (C86), epistasis experiments (C87-C88), and S2 cell validation (C89). The cell-autonomous requirement demonstrated by mosaic analysis (C85) and the epistasis to Perk (C87-C88) are particularly compelling. The convergence of in vivo and in vitro data supports this major finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Xrp1 protein is induced by ER stress through a post-transcriptional mechanism dependent on PERK kinase activity and eIF2\u03b1 phosphorylation. Xrp1 protein levels increase without corresponding changes in transcript levels, and this induction requires PERK's kinase domain and is enhanced by gadd34 knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C97 demonstrate Xrp1's post-transcriptional regulation through multiple lines of evidence: immunofluorescence showing protein induction (C90-C91), RNA-seq and qRT-PCR showing no transcript changes (C93), kinase-dead Perk controls (C95), and gadd34 manipulation (C96). The partial dependency on Perk noted in C92 is appropriately acknowledged. The convergence of protein and transcript data strongly supports post-transcriptional regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The Xrp1 5' leader contains a conserved upstream ORF (uORF2) that overlaps with the main ORF in a different reading frame, similar to ATF4. This uORF2 is phylogenetically conserved at the peptide level across Drosophila species, suggesting Xrp1 and ATF4 share similar translational regulatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C104 provide bioinformatic evidence for Xrp1's regulatory mechanism. The identification of uORF2 (C98-C99), its structural similarity to ATF4 (C100), phylogenetic conservation (C101-C102), and the inference about functional conservation (C103-C104) are well-supported. However, the mechanism is inferred from structure and conservation rather than directly demonstrated through functional experiments, which would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Xrp1 directly binds to the gstD enhancer and requires specific Xrp1 binding sites for gstD-GFP induction. CUT&RUN experiments demonstrate Xrp1 binding to the gstD locus under ER stress, and mutation of Xrp1 binding sites abolishes reporter induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C113 provide strong evidence for direct Xrp1 regulation of gstD through bioinformatic prediction (C105-C106), CUT&RUN validation (C107-C110), and functional reporter assays (C111-C112). The convergence of binding site prediction, chromatin immunoprecipitation, and functional mutagenesis provides compelling evidence for direct transcriptional regulation. The appropriate controls (Upd3 positive, Tubulin negative) strengthen the CUT&RUN data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C10",
+      "C28",
+      "C33",
+      "C114",
+      "C140",
+      "C141"
+    ],
+    "result": "A previously unrecognized PERK-Xrp1 signaling axis mediates the expression of highly induced antioxidant genes in response to ER stress, functioning independently of ATF4. This represents a novel branch of UPR signaling in Drosophila.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C10, C28, C33, C114, C140, and C141 represent the main conclusions of the study. These are well-supported by the comprehensive experimental evidence presented throughout the manuscript, including RNA-seq, genetic epistasis, protein regulation studies, and direct binding assays. The convergence of multiple independent lines of evidence strongly supports this major finding about a novel UPR signaling axis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Background on UPR signaling: The manuscript establishes the known components and mechanisms of the UPR, including the three branches (IRE1, PERK, ATF6), the role of PERK in phosphorylating eIF2\u03b1, and ATF4's translational regulation through uORFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C25 represent established knowledge about UPR signaling pathways, supported by appropriate citations to the literature. These provide necessary context for the novel findings but are not original results of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C117"
+    ],
+    "result": "ATF4-independent PERK effectors have been reported but remain poorly understood compared to the ATF4 axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 and C117 accurately represent the state of knowledge in the field regarding ATF4-independent PERK signaling, supported by appropriate citations. This provides important context for the novelty of the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The Drosophila eye imaginal disc has been used to study ER stress, but global transcriptional changes have not been thoroughly investigated. The Rh1G69D mutant allele is an established genetic inducer of ER stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 provide background on the experimental system and justify the approach taken in the study. These are well-supported by citations and establish the rationale for the RNA-seq experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "The gstD-GFP reporter responds to oxidative stressors through the transcription factor cncC (Nrf2 homolog).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 establish known properties of the gstD-GFP reporter system, supported by citations. This provides important context for interpreting the finding that cncC is not required for ER stress-induced gstD expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "Perk overexpression is sufficient for its autoactivation, possibly by overwhelming BiP's repressive capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 cites previous work from the same laboratory establishing this property of Perk overexpression. This provides important context for interpreting the gain-of-function experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "gadd34 encodes a phosphatase subunit that dephosphorylates eIF2\u03b1, and its loss increases phospho-eIF2\u03b1 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 represent established knowledge about gadd34 function. This provides necessary context for interpreting the gadd34 knockdown experiments used to manipulate eIF2\u03b1 phosphorylation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "ATF4 is the best-characterized downstream effector of PERK in Drosophila and mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 represents established knowledge supported by citations. This provides important context for the surprising finding that ATF4/crc is not required for gstD induction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "Xrp1 mediates gstD1-lacZ reporter induction in response to ribosome mutations causing cell competition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 cites previous work establishing Xrp1's role in cell competition. This provides important context for why Xrp1 was investigated as a candidate regulator of gstD expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "While Nrf2 activation by PERK has been reported in mammalian cells and zebrafish, the current results indicate PERK mediates an independent antioxidant response in Drosophila that does not require cncC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121 appropriately contextualize the findings within the existing literature and draw a clear distinction between the mammalian/zebrafish findings and the Drosophila results. The conclusion is well-supported by the genetic data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C123"
+    ],
+    "result": "Xrp1 responds to ionizing radiation, motor neuron degeneration in ALS models, and cell competition caused by Minute mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C123 summarizes previous findings about Xrp1's roles in various stress contexts, supported by appropriate citations. This provides important context for understanding Xrp1's broader biological functions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The mammalian equivalent of Xrp1 remains unresolved. Xrp1 is conserved in Dipterans but lacks clear orthologs in other orders, similar to evolutionary divergence seen with other UPR components like GCN4/ATF4 and Hac1/XBP1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C129 accurately represent the state of knowledge regarding Xrp1 conservation and draw appropriate parallels to other UPR components. The citations support the statements about evolutionary divergence in UPR signaling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "GSTs are among the most prominently induced UPR targets and function in detoxification of ROS-damaged compounds. ROS is generated during oxidative protein folding in the ER.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C138 combine the current findings (C133) with established knowledge about GST function (C135-C136) and ROS generation during ER protein folding (C137-C138). The integration of current results with background knowledge is appropriate and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C125",
+      "C130",
+      "C131",
+      "C132",
+      "C139",
+      "C142"
+    ],
+    "result": "Speculative statements about potential implications: The PERK-Xrp1 axis may regulate cell competition, mammalian cells may have functional Xrp1 equivalents, ATF4-independent effectors may play significant roles in UPR-associated diseases, GSTs may have evolved as UPR targets to detoxify oxidized proteins, and this discovery may improve understanding of UPR-related pathophysiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C125, C130-C132, C139, and C142 represent speculations about potential implications and future directions. While these are reasonable hypotheses based on the findings, they are explicitly speculative and not directly tested in the current study. These represent appropriate discussion points but should not be considered established results.",
+    "result_type": "MINOR"
+  }
+]

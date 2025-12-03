@@ -1,0 +1,2193 @@
+{
+  "submission": {
+    "id": "81aa3e49-4b54-46ed-a642-87a94bcd2ad0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T05:39:20.305925Z",
+    "updated_at": "2025-12-03T05:39:20.305925Z"
+  },
+  "content": [
+    {
+      "id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "submission_id": "81aa3e49-4b54-46ed-a642-87a94bcd2ad0",
+      "content_type": "manuscript",
+      "content_text": "# Crash landing of Vibrio cholerae by MSHA pili-assisted braking and anchoring in a viscoelastic environment\n\n## Authors\n\n- Wenchao Zhang<sup>1</sup>\n- Mei Luo<sup>2</sup>\n- Chunying Feng<sup>1</sup>\n- Huaqing Liu<sup>1</sup>\n- Hong Zhang<sup>1</sup>\n- Rachel R Bennett<sup>3</sup> ([ORCID: 0000-0002-6409-6967](https://orcid.org/0000-0002-6409-6967)) \u2020\n- Andrew S Utada<sup>4</sup> ([ORCID: 0000-0003-4542-6315](https://orcid.org/0000-0003-4542-6315)) \u2020\n- Zhi Liu<sup>2</sup> \u2020\n- Kun Zhao<sup>1</sup> ([ORCID: 0000-0003-3928-1981](https://orcid.org/0000-0003-3928-1981)) \u2020\n\n### Affiliations\n\n1. Frontier Science Center for Synthetic Biology and Key Laboratory of Systems Bioengineering (Ministry of Education), School of Chemical Engineering and Technology, Tianjin University Tianjin China\n2. Department of Biotechnology, College of Life Science and Technology, Huazhong University of Science and Technology Wuhan China\n3. School of Mathematics, University of Bristol Bristol United Kingdom\n4. Faculty of Life and Environmental Sciences, University of Tsukuba Ibaraki Japan\n5. The Microbiology Research Center for Sustainability, University of Tsukuba Ibaraki Japan\n\n\u2020 Corresponding author\n\n## Abstract\n\nMannose-sensitive hemagglutinin (MSHA) pili and flagellum are critical for the surface attachment of Vibrio cholerae, the first step of V. cholerae colonization on host surfaces. However, the cell landing mechanism remains largely unknown, particularly in viscoelastic environments such as the mucus layers of intestines. Here, combining the cysteine-substitution-based labeling method with single-cell tracking techniques, we quantitatively characterized the landing of V. cholerae by directly observing both pili and flagellum of cells in a viscoelastic non-Newtonian solution consisting of 2% Luria-Bertani and 1% methylcellulose (LB+MC). The results show that MSHA pili are evenly distributed along the cell length and can stick to surfaces at any point along the filament. With such properties, MSHA pili are observed to act as a brake and anchor during cell landing which includes three phases: running, lingering, and attaching. Importantly, loss of MSHA pili results in a more dramatic increase in mean path length in LB+MC than in 2% LB only or in 20% Ficoll solutions, indicating that the role of MSHA pili during cell landing is more apparent in viscoelastic non-Newtonian fluids than viscous Newtonian ones. Our work provides a detailed picture of the landing dynamics of V. cholerae under viscoelastic conditions, which can provide insights into ways to better control V. cholerae infections in a real mucus-like environment.\n\n## Introduction\n\nVibrio cholerae, a human pathogen that causes the debilitating disease cholera, is a natural inhabitant of aquatic ecosystems (Almagro-Moreno et al., 2015; Kaper et al., 1995). They can form biofilms on both biotic and abiotic surfaces, which increase their infectivity and environmental survival (Donlan and Costerton, 2002; Silva and Benitez, 2016; Teschler et al., 2015; Yildiz and Visick, 2009).\n\nBacterial appendages have been shown to play important roles in regulating bacterial activities, especially biofilm formation during microbe-host interactions. The flagellum is required for biofilm formation in a variety of bacteria species, such as Escherichia\u00a0coli (Pratt and Kolter, 1998), Pseudomonas\u00a0aeruginosa (O'Toole and Kolter, 1998), and V. cholerae (Guttenplan and Kearns, 2013; Watnick and Kolter, 1999). Mutants lacking flagella in both E. coli and Vibrio vulnificus have been observed to be defective for attachment (Friedlander et al., 2013; Lee et al., 2004). Type IV pili (TFP) are another type of filamentous appendages commonly found on many bacteria and archaea, which have diverse functions such as cellular twitching motility, biofilm formation, horizontal gene transfer, and host colonization (Piepenbrink and Sundberg, 2016). P. aeruginosa displays two types of TFP-driven twitching motility (Gibiansky et al., 2010). Neisseria gonorrhoeae has shown a TFP-dependent attachment, leading to the formation of microcolonies on host cell surfaces (Higashi et al., 2007). In contrast, although V. cholerae biosynthesizes three types of TFP that are expressed under different scenarios, they have not been observed to twitch on surfaces. These three pili are chitin-regulated competence pili (ChiRP; formerly termed PilA), toxin co-regulated pili (TCP), and mannose-sensitive hemagglutinin (MSHA) TFP (Meibom et al., 2004; Reguera and Kolter, 2005; Yildiz and Visick, 2009). ChiRP\u00a0were observed to be able to grasp extracellular DNA and transport it back to the cell surface via pili retraction (Ellison et al., 2018). TCP are important for host colonization and pathogenesis (Kirn et al., 2000; Thelin and Taylor, 1996). In contrast to these two types, MSHA pili are known to be important for surface attachment of V. cholerae (Utada et al., 2014; Watnick and Kolter, 1999).\n\nMotility has been shown to be a crucial element for V. cholerae colonization of the epithelium, leading to successful infection of the human host (Krukonis and DiRita, 2003; Tsou et al., 2008). Two types of near-surface motility, roaming and orbiting, were observed in V. cholera and were further suggested that V. cholerae synergistically employs the use of their flagella and MSHA pili to enable a hybrid surface motility that facilitates surface selection and attachment in aqueous environments (Utada et al., 2014). However, there is a lack of direct observational evidence of the appendages in question. Moreover, in addition to the aqueous environments that V. cholerae typically inhabits, it also encounters viscoelastic environments in the intestinal mucus of hosts (Almagro-Moreno et al., 2015). The mucus layer of animal intestines is estimated to have a wide range of viscosities, varying anywhere from the viscosity of water (~1 cP) to 1000-fold higher (1000 cP) (Lai et al., 2009). How cells land on surfaces in such viscoelastic environments is still not clear. To answer these questions, direct live-cell visualization of the pili and flagellum in real-time in viscoelastic conditions is needed.\n\nRecently, there have been significant advances in techniques for directly observing cell appendages (Blair et al., 2008; Ellison et al., 2019; Ellison et al., 2018; Ellison et al., 2017; Nakane and Nishizaka, 2017; Renault et al., 2017; Skerker and Berg, 2001; Tal\u00e0 et al., 2019). Among them, the cysteine substitution-based labeling method is specific and has been successfully applied to visualize tight adherence (TAD) pili of Caulobacter\u00a0crescentus and TFP of V. cholera (Ellison et al., 2019).\n\nIn this paper, by combining a cysteine substitution-based labeling method with single-cell tracking, we directly observed individual pili and the\u00a0flagellum of landing cells in viscoelastic media and revealed the dynamic landing sequence of V. cholerae as it makes initial surface attachment. The role of MSHA pili during cell landing in a\u00a0viscoelastic environment is also\u00a0demonstrated. Our work provides a detailed picture of the landing dynamics of V. cholerae under viscoelastic conditions, during which, the synergistic functions of MSHA pili and flagellum are elucidated.\n\n## Results\n\n### MSHA pili are evenly distributed along cell length with a constant length density\n\nTo visualize the MSHA pili, we constructed a mutant (MshAT70C) by cysteine substitution, which can subsequently be labeled with highly\u00a0specific maleimide dyes (Figure 1a and Figure 1\u2014figure supplement 1), following the protocol in Ellison et al., 2019; Ellison et al., 2017. To observe the distribution of MSHA pili on the cell surface, we simultaneously stained the plasma membrane with FM4-64 in Figure 1a.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/60655/elife-60655-fig1-v2.jpg)\n\n**Figure 1.:** (a) Examples of labeled MSHA pili observed on cell bodies. Green fluorescence showing the AF488-mal labeled MSHA pili, red fluorescence showing the FM4-64 labeled plasma membrane. (b) Distribution of pili number per cell cultivated in LB medium. Ncell=110. (c) The MSHA pili number per cell is linearly correlated with the cell length. Cells with longer length were obtained by 30\u201350 min treatment using 10 \u03bcg/mL cephalexin. Ncell=368.\u00a0LB, Luria-Bertani; MSHA, mannose-sensitive hemagglutinin.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60655/elife-60655-fig1-figsupp1-v2.jpg)\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/60655/elife-60655-fig1-figsupp2-v2.jpg)\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/60655/elife-60655-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** To evaluate changes to the MSHA pilus during cell growth, the MSHA pili were labeled with two different colored dyes, AF546-mal (red) and AF488-mal (green), at 0 and 40 min, respectively. (a) Representative double-color labeling image of MshAT70C cell, showing the new separate pilus (top left, green) and the secondary segments (lower left, green) at the end of the primary segments (lower left, red). Scale bar, 2 \u03bcm. (b) Representative double-color labeling image for a newly dividing cell, which is only labeled with AF488-mal. (c) In situ observation of MSHA pili growth stained at 0 and 50 min with AF488-mal. The results show that during a period of 50 min, the length of the cell changes from 3.0\u00a0to 5.1 \u03bcm, while the number of pili increases from 7 to 12.\u00a0MSHA,\u00a0mannose-sensitive hemagglutinin.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/60655/elife-60655-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** MshAT70C point mutation does not affect MSHA pilus function. Vibrio\u00a0cholerae strains were grown in LB medium and assayed for MSHA production by hemagglutination. Twofold dilutions of mid-log cultures of bacteria (left to right) were assayed for their ability to agglutinate sheep erythrocytes. The\u00a0assay was repeated three times, and representative results are shown.\u00a0LB, Luria-Bertani;\u00a0MSHA, mannose-sensitive hemagglutinin.\n\nWe visualized the positions of the different pili as the cell body rotates by recording high-speed videos during surface landing (see one example of a three-dimensional model of a single cell reconstructed from the videos in Figure 1\u2014figure supplement 2). The results show evenly distributed MSHA pili along the cell length, indicating the\u00a0absence of preferred pili localization on the cell body. Quantitatively, we find that the majority of cells have approximately 3\u20137 MSHA pili, with 4 MSHA pili per cell being observed most frequently, as shown in Figure 1b. These results are in agreement with recent reports (Floyd et al., 2020). Under our conditions, we observed MSHA pili growth (Figure 1\u2014figure supplement 3a and b) but no retraction.\n\nThe number of MSHA pili appears to be positively correlated with cell length since it increases as the cell grows (Figure 1\u2014figure supplement 3c). Statistically, the number of MSHA pili shows a linear relationship with cell length (Figure 1c), indicating that the length density of MSHA pili is roughly constant for V. cholerae.\n\n### MSHA pili mediate V. cholerae landing by acting as a brake and anchor\n\nThe MSHA pili, which are uniformly distributed across the cell surface, play a crucial role in the\u00a0surface attachment of V. cholerae through pili-surface interactions (Utada et al., 2014). To elucidate the role of MSHA pili in the landing dynamics under viscoelastic conditions, we directly visualize the fluorescently labeled MSHA pili on V. cholerae swimming in a viscoelastic medium consisting of 2% Luria-Bertani\u00a0(LB) and 1% methylcellulose\u00a0(MC) (LB+MC).\n\nConsistent with previous reports in normal aqueous solutions (Utada et al., 2014), the WT strain in LB+MC also exhibits orbiting behavior, characterized by multi-pass circular trajectories, and roaming behavior, characterized by highly exploratory, diffusive, trajectories. Typical roaming and orbiting trajectories in LB+MC are shown in Figure 2 (see more examples in Figure 2\u2014figure supplement 1). The roaming cell traces out a path that is linear over short distances, with a radius of gyration Rg=19.5 \u03bcm, and an average speed of 1.7 \u03bcm/s (see Figure 2a,b, Video 1). In contrast, the orbiting cell trajectory is much more circular with an average Rg=1.6 \u03bcm and an average speed of 1.1 \u03bcm/s (see Figure 2c,d, Video 2). A 3D plot of speed plotted along the trajectory in both examples show that both phenotypes make momentary pauses, where their speed slows down; this can be seen clearly in Figure 2b, where the cell motion near a surface displays a characteristic alternation between moving and stopping (Figure 2b and d).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/60655/elife-60655-fig2-v2.jpg)\n\n**Figure 2.:** The 3D plot and speed changes over time of representative (a,\u00a0b) roaming and (c,\u00a0d) orbiting cells, respectively. The magenta dashed lines in panels (a) and (c) are the trajectories of cells and the color maps indicate the deviation angle. The arrows in panel (b) represent temporary attachment between MSHA pili and surface, where the speeds are close to 0. (e) Time-lapse images of the orbiting cell in panels (c,\u00a0d) at 130 ms intervals (see Video 2 for more details). The arrowheads show the stretched pilus, which corresponds to the red arrow in panel (d), indicating temporary attachment and stretching of pilus on the surface. Dashed lines indicate the estimated envelope of the cell body. Scale bar, 2 \u03bcm.\u00a0MSHA, mannose-sensitive hemagglutinin.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60655/elife-60655-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Trajectories and (b) speed of typical roaming cells; (c) Trajectories and (d) speed of typical orbiting cells.\u00a0LB, Luria-Bertani;\u00a0MC, methylcellulose;\u00a0MSHA, mannose-sensitive hemagglutinin.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/60655/elife-60655-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** When transient pauses happened, the attached pilus could be switched from one to another or more. The arrows show the apparent pili attached to\u00a0the surface. Scale bar, 1 \u03bcm.\n\n![Video 1.](https://cdn.elifesciences.org/articles/60655/elife-60655-video1.mp4.jpg)\n\n**Video 1.:** This video was recorded every 390 ms for 98 s and displayed at 20 frames per second (fps).\n\n![Video 2.](https://cdn.elifesciences.org/articles/60655/elife-60655-video2.mp4.jpg)\n\n**Video 2.:** This video was recorded every 130 ms for 15 s and displayed at 10 fps.\n\nSuch pauses are suggested to be caused by MSHA pili-surface interactions (Utada et al., 2014). However, by recording fluorescence video sequences, we directly visualized the process, thereby providing direct evidence that the pauses are due to transient contact between MSHA pili and the\u00a0surface. We show a transient pili-surface contact during orbiting in Figure 2e. In a time-lapse sequence, we show the stretching of\u00a0a transiently attached pilus due to cell moving away from the point of attachment. Subsequently, this pilus detaches from the surface as the cell continues to move, as indicated with the white arrowheads in Figure 2e (for more details, see Video 2). These results indicate that the MSHA pili can work as a brake to abruptly slow cell motion by transiently attaching to the surface. This is further confirmed by the observation that during the course of surface motion, different MSHA pili attach and detach, switching dynamically as the cell uses these as transient attachment points (Figure 2\u2014figure supplement 2 and Video 3). Such a switching of the specific MSHA pili that are engaging the surface is caused by the rotation of the\u00a0cell body, which is required to balance the torque for flagellar rotation when cells swim. Thus, as the cell body rotates due to the rotation of the flagellar motor, different MSHA pili distributed on the cell body take turns approaching and receding from the surface. The switching of attached MSHA pili not only continues to slow\u00a0down cell motion but also changes the direction of motion. Taken together, this indicates that the pili distribution on the cell body may also affect cell-surface interaction.\n\n![Video 3.](https://cdn.elifesciences.org/articles/60655/elife-60655-video3.mp4.jpg)\n\n**Video 3.:** When transient pauses happened, the attached pilus could be switched from one to another or more. See also Figure 2\u2014figure supplement 2. This video was recorded every 70 ms for 10 s and displayed at 5 fps.\n\nWhen the adhesion between MSHA pili and the\u00a0surface is sufficiently strong, the attachment point can act as an anchor point. We demonstrate this by showing the deflection of the trajectory of a swimming cell by the attachment of a single anchoring MSHA pilus; here, linear motion is bent into a\u00a0circular motion that is centered around the attachment point (see Video 4). We estimate the upper bound for the force exerted on the pilus during this motion by calculating the propulsive force of the flagellum using a resistive force theory model developed by Lauga et al., 2006. The force on the pilus will be less than this upper bound, partly due to the difference in direction between the pilus force and the propulsion force, which helps the cell rotate around the anchor point. Cell body rotations are an order of magnitude slower in the LB+MC solution used here than in water, so we estimate the flagellar rotation rate to be in the range of\u00a010\u2013100 rad/s. The viscosity of LB+MC\u00a0is ~0.2 Pa\u22c5s and this gives us an upper bound for the force on the pilus of ~50\u00a0pN. In water, we estimate an upper bound of ~3\u00a0pN. These estimates are smaller than the 100 pN forces that pili can sustain (Maier et al., 2002). The anchoring of MSHA pilus eventually leads to the irreversible attachment of the cell.\n\n![Video 4.](https://cdn.elifesciences.org/articles/60655/elife-60655-video4.mp4.jpg)\n\n**Video 4.:** This video was recorded every 130 ms for 8 s and displayed at 10 fps.\n\n### The landing sequence of V. cholerae includes three phases\n\nTo further clarify the landing process, we labeled both flagellum and pili simultaneously using MshAT70CFlaAA106CS107C mutant. An example of the complete landing process of an orbiting cell is shown in Figure 3. Based on the pattern of motion displayed by the cell (Figure 3a and Video 5), we divide the landing process into three phases: running, lingering, and attaching. In the running phase (0\u20133.77 s), cells will swim and can perform roaming or orbiting. We note that misalignments between the flagellum and cell body axis tend to change the motion direction of the cell (Figure 3a,b). In the lingering phase (3.77\u20134.68 s), the cells demonstrate one of two states: a paused state or a tethered state, where the cell can move under the constraint of tethering pilus (see Figure 3a for the tethered state). At 3.77 s, one pilus attaches to the surface and acts as an anchor point to prevent the cell from moving away. Finally, in the attaching phase (\u2265 4.68 s), cells remain on the surface motionless during the observation period most likely since they have effected irreversible attachment. Upon irreversible cell attachment, some of the free MSHA pili become attached to the surface firmly while others demonstrate fluctuations punctuated with intermittent attachment to the surface (Video 6).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/60655/elife-60655-fig3-v2.jpg)\n\n**Figure 3.:** (a) Representative image sequences showing the behavior of MSHA pili and flagellum. For easy identification, four pili of the example cell in (a) are numbered from 1 to 4, which revolve around the major axis of the cell periodically as the cell swims. The white arrowheads indicate the orientation of the\u00a0cell body and flagellum. (b) A 3D plot of speed and deviation angle of the representative cell in panel (a) over its trajectory. The red arrow in panel (b) represents the position, where the pili touch surface, causing a deflection. (c) The conditional probabilities qij that the bacterium transitions from state i to j. The number of transition events used for estimating these conditional probabilities is 666. r: running state, t: tethered state, p: paused state.\u00a0MSHA, mannose-sensitive hemagglutinin.\n\n![Video 5.](https://cdn.elifesciences.org/articles/60655/elife-60655-video5.mp4.jpg)\n\n**Video 5.:** This video was recorded every 130 ms for 13 s and displayed at 10 fps.\n\n![Video 6.](https://cdn.elifesciences.org/articles/60655/elife-60655-video6.mp4.jpg)\n\n**Video 6.:** This video was recorded every 460 ms for 25 s and displayed at 10 fps.\n\nDuring cell landing, transitions between the running and lingering phases, as well as between the two states of the lingering phase are observed, respectively. The measured conditional probabilities qij that cell transitions from state i to j show that the running phase has a relatively lower qrt to the tethered state (~22%) but a higher qrp to the paused state (~78%). Similarly, the paused state has a higher qpr than qpt. In contrast, the tethered state shows similar qtr and qtp, which are 45% and 55%, respectively (Figure 3c).\n\nThe single-cell dynamics in each specific phase/state is also characterized quantitatively. In the running phase of V. cholerae, we found that the period for body rotation is generally distributed between 0.25\u00a0and\u00a02 s and is centered at ~0.7 s (the rotation rate was ~1.5 Hz) in LB+MC (Figure 4a). We measured the swimming speed, v, and the cell-body rotation rate, \u03c9c, for each cell, and plotted v as a function of \u03c9c (see Figure 4b). By fitting the data, we found that v linearly increases with \u03c9c with a slope of |v/\u03c9c|=2.48\u00b10.04 \u03bcm/radian.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/60655/elife-60655-fig4-v2.jpg)\n\n**Figure 4.:** (a) Distribution of the rotation period of the\u00a0cell body. The dashed line represents Gaussian fitting. A total of 416 rotation events from 54 cells were used for statistical analysis. (b) Measured relation between the rotation rate of the\u00a0cell body and the mean swimming speed of the\u00a0cell. The dotted line represents linear fitting result. Ncell=47. (c) An example of a typical tethered motion, showing a\u00a0cell performing a circular motion around a center point (the red dot) with the direction of motion (noted by arrows) switched from CCW to CW. Scale bar, 2 \u03bcm. (d) The angular velocity of the tethered cell in panel (c) over a short duration showing a pair of CW (positive angular velocity) and CCW (negative angular velocity) intervals; (e) Distribution of angular speed of circular motion for horizontal (241 intervals from 25 cells) and vertical (38 intervals from 5 cells) tethered cells.\u00a0CCW,\u00a0counterclockwise;\u00a0CW, clockwise.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60655/elife-60655-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The contributing MSHA pili were indicated by yellow arrows. (a) ~1/2 position; (b) 1/3 or 2/3 position.\u00a0MSHA, mannose-sensitive hemagglutinin.\n\nBy contrast, a cell in the tethered state typically performs a circular motion around the attachment point (red dots in Figure 4c). The direction of the circular motion is also dynamic and can switch from counterclockwise (CCW) to clockwise (CW) presumably due to a switch in the rotation direction of the flagellar motor (see 2.6 s, Figure 4c). Angular velocity is roughly constant during each circular-motion interval (i.e., in each CCW or CW period) and quickly changes sign after CCW-CW switching (Figure 4d and Video 7). Due to the distribution of pili across the cell body, tethering can occur at a pole or under the body, which leads to cells standing vertically or lying down horizontally to the surface, respectively. We find that standing tethered cells perform a faster circular motion (mean angular speed=8.5\u00b11.9 rad/s) than lying ones (mean angular speed=3.0\u00b12.1 rad/s) (Figure 4e). For the horizontal cells, different MSHA pili may be used to further anchor the cell to the surface. For example, two horizontally\u00a0tethered cells demonstrate different tethered-motion trajectories depending on the location of the anchoring MSHA pilus (Figure 4\u2014figure supplement 1). In addition to the fact that unattached pili may increase the likelihood that the cell will make\u00a0the irreversible attachment, we observe that MSHA pili appear to be able to attach to the surface along their entire length, and not just the tip (Video 8).\n\n![Video 7.](https://cdn.elifesciences.org/articles/60655/elife-60655-video7.mp4.jpg)\n\n**Video 7.:** See also Figure 4c. This video was recorded every 130 ms for 6 s and displayed at 5 fps.\n\n![Video 8.](https://cdn.elifesciences.org/articles/60655/elife-60655-video8.mp4.jpg)\n\n**Video 8.:** When the tip of the pilus was free (~3.5 s), the upper part of the pilus was still capable of keeping the cell adhered. This video was recorded every 130 ms for 13 s and displayed at 10 fps.\n\nInterestingly, we find that the flagellum of attached cells frequently continues to rotate (Video 5, after 4.68 s), indicating that even after cell attachment, the flagellar motor is still active for some period. The flagellum will eventually stop rotating after a cell stays long enough on the surface (Video 9).\n\n![Video 9.](https://cdn.elifesciences.org/articles/60655/elife-60655-video9.mp4.jpg)\n\n**Video 9.:** This video was recorded every 130 ms for 10 s and displayed at 10 fps.\n\n### Role of MSHA pili in cell landing is more apparent in viscoelastic (non-Newtonian) fluids than in viscous Newtonian fluids\n\nTo further investigate the dependence of MSHA pili function and hence cell landing on viscoelasticity, we compared cell motion behavior (Figure 5 and Figure 5\u2014figure supplement 1) obtained in 2% LB, which is a Newtonian\u00a0fluid with a viscosity ~1 cP at 30\u2103 (Utada et al., 2014) and in 2% LB+1% MC, which is a non-Newtonian fluid and has a shear-dependent viscosity (Figure 6), for both WT and \u25b3mshA cells.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/60655/elife-60655-fig5-v2.jpg)\n\n**Figure 5.:** (a) Examples of WT cell trajectories showing both roaming and orbiting motilities in 2% LB only, 2% LB with 1% MC, and 2% LB with 20% Ficoll; (b) Examples of cell trajectories of \u25b3mshA; (c) Histograms of Rg of WT and \u25b3mshA in different solutions; (d) A box plot summary of path lengths of WT and \u25b3mshA. Statistical significance was determined with one-way ANOVA followed by Tukey\u2019s multiple comparison test comparing the different groups (*p<0.05; **p<0.01; ***p<0.001). The data were analyzed using the Prism 5.0 software program (GraphPad Software, La Jolla, CA, USA). (e) The ratio of mean path length between \u25b3mshA and WT,\u00a0$l\u00af_{\u0394mshA}/l\u00af_{WT}$.\u00a0LB, Luria-Bertani;\u00a0MC, methylcellulose;\u00a0MSHA, mannose-sensitive hemagglutinin.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60655/elife-60655-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) Histograms of deviation angle for WT in 2% LB only. (b) Histograms of deviation angle for WT in 2% LB+1% MC viscous solution. Black represents orbiting motility and red represents roaming motility. (c,\u00a0d) Mean square displacements (MSDs) of WT (c), \u25b3mshA (d) in 2% LB only and 2% LB+1% MC viscous solution.\u00a0LB, Luria-Bertani;\u00a0MC, methylcellulose;\u00a0MSHA, mannose-sensitive hemagglutinin.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/60655/elife-60655-fig6-v2.jpg)\n\n**Figure 6.:** (a) and (d) show viscosity as a function of shear rate. (b) and (e) display modulus as a function of the oscillation strain, using cone-plate geometry. (c) and (f) show modulus as a function of the oscillation frequency under an oscillation strain of 0.1%, using cone-plate geometry.\u00a0LB, Luria-Bertani;\u00a0MC, methylcellulose.\n\nWe observed WT cells to demonstrate roaming and orbiting motilities in both solutions (Figure 5a). The histograms of deviation angle of each type of motility obtained in the two solutions are also similar (Figure 5\u2014figure supplement 1a and b). These results indicate that the\u00a0roaming and orbiting motilities of cells are robust against the tested viscoelastic environment. Although the general motility pattern is similar in both solutions, the motion of cells, as expected, is slowed significantly in LB+MC. The average speed of WT cells for near-surface motion is reduced by ~22 times from 86.7\u00b132.9 \u03bcm/s (mean\u00a0\u00b1\u00a0standard deviation) in 2% LB to 3.8\u00b12.6 \u03bcm/s in LB+MC. Similarly, the average speed of \u25b3mshA cells is also decreased by ~12 times from 80.0\u00b115.0 \u03bcm/s in 2% LB to 6.5\u00b11.4 \u03bcm/s in LB+MC. The slowing of the motion can also be seen clearly from their mean square displacement curves (Figure 5\u2014figure supplement 1c,d), which have similar shapes but very different time scales.\n\nHowever, WT and \u25b3mshA cells also show differences in their motility behavior in these two solutions\u00a0(Figure 5). In LB+MC, WT cells tend to land on the surface soon after approaching it (less than one round in orbiting motility) and more tethered motion is observed, which leads to more irregular and tortuous trajectories and smaller Rg for WT cells compared with the case of 2% LB (Figure 5c). By contrast, \u25b3mshA cells show very similar Rg distributions in the two types of solutions (Figure 5c). More interestingly, compared with WT, in LB+MC, a large proportion of \u25b3mshA cells show orbiting for a substantial number of cycles, as shown in Figure 5b. Quantitatively, this can be seen in the calculated mean path length,\u00a0$l\u00af$, which is 39.7\u00b151.2 \u03bcm for WT and 72.5\u00b199.1 \u03bcm for \u25b3mshA in LB+MC, whereas the corresponding value in 2% LB is 58.7\u00b163.1 \u03bcm for WT and 47.2\u00b150.8 \u03bcm for \u25b3mshA. To see how the role of MSHA pili varies with viscoelasticity, we calculated the ratio of the respective mean path lengths of \u25b3mshA and WT,\u00a0$l\u00af_{\u0394mshA}/l\u00af_{WT}$, for each type of solution; this gives ~1.8 in LB+MC and ~0.8 in 2% LB, respectively (Figure 5d and e). This shows that the loss of MSHA pili results in a significant increase in mean path length in LB+MC relative to 2% LB. Moreover, such prolonged orbiting motions of \u25b3mshA were not observed in a 20% Ficoll solution (Figure 5), which has a high viscosity but still belongs to the class of Newtonian fluids (Winet, 1976). As shown in Figure 5, the cell motility behaviors in 20% Ficoll are similar to those in 2% LB only except that the average cell speed for near-surface motion is dramatically lower in 20% Ficoll, which is 9.3\u00b14.3 \u03bcm/s for WT and 10.0\u00b13.5 \u03bcm/s for \u25b3mshA. The cell trajectories in 20% Ficoll are similar to those in 2% LB only and consequently, the ratio of\u00a0$l\u00af_{\u0394mshA}/l\u00af_{WT}$ is ~0.75 in 20% Ficoll, very close to ~0.8 in 2% LB only. Taken\u00a0together, these results indicate that the elastic properties of viscoelastic solutions can also affect cell motility behavior and the role of MSHA pili as a braking and anchoring machine in cell landing is more apparent in viscoelastic (non-Newtonian) fluids than in\u00a0viscous Newtonian fluids.\n\n## Discussion\n\nThe first step in V. cholerae biofilm formation is the transition from planktonic swimmers to the\u00a0stationary surface-attached cells; this process is mediated by the landing process (Teschler et al., 2015). In this study, the combination of cell appendage labeling and high-resolution spatio-temporal imaging allows us to quantitatively deconstruct the landing process into three stages: running, lingering, and attaching, as summarized in Figure 7. During the running phase, cell motion is powered by flagellar rotation, which simultaneously induces a counter-rotation of the\u00a0cell body. When swimming cells come to within a distance that is comparable to the length of a typical pilus from a surface, dangling pili may brush against the surface, thereby deflecting the trajectory. Typical MSHA pili are ~0.4\u20131.2 \u03bcm in length. During near-surface swimming, cell body rotation actively brings MSHA pili into close proximity with the underlying surface where friction between pili and the surface can slow the cells, or, transient adhesions can be made, which may even arrest cell motion. Here, we make an analogy to the slow\u00a0down and stop affected by the brake system of a car. During near-surface swimming, it has been suggested that hydrodynamic forces cause the cell bodies of swimming rod-like bacteria to\u00a0take on a tilted, non-parallel, orientation to the surface (Vigeant et al., 2002). In the case of P. aeruginosa, whose TFP are distributed with a strong bias toward a particular pole (Skerker and Berg, 2001), pili-surface contact will depend on which pole is closer to the surface. In contrast, the homogeneous distribution of MSHA pili on V. cholerae (see Figure 1c) may be more efficient at slowing such tilted cell bodies by increasing the probability that pili encounter the surface relative to bacteria with biased pili distributions.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/60655/elife-60655-fig7-v2.jpg)\n\nIf the contact-induced adhesion between MSHA pili and the surface is sufficiently strong to arrest forward motion, the cell will either pause or commence tethered motion centered about the point-of-adhesion. Cells rotating at an angle closer to the surface have a slower angular velocity (Figure 4e), to which hydrodynamic effects presumably have an important contribution (Bennett et al., 2016). This suggests that for cells demonstrating tethered motion, a progressive twisting of the surface-attached pilus fiber during the circular motion of cells may gradually cause the circular motion to stop by pulling the cell body ever closer to the surface. Although twitching has not to\u00a0be observed in V. cholerae, this is one mechanism by which retraction-like dynamics may be achieved (Charles et al., 2019), possibly in tandem with actual retraction of MSHA pili, which has been shown recently in a different strain of V. cholera (Floyd et al., 2020). Under our conditions, we have not observed MSHA pili retraction events nor have we seen bacterial cells that gradually acquire fluorescence when only maleimide dyes were used. These results are consistent since in bacteria where pilus retraction does occur, such as in the TAD pili of C. crescentus (Ellison et al., 2017), ChiRP of V. cholera (Ellison et al., 2018), and TFP of P. aeruginosa (Skerker and Berg, 2001), the cell body gradually becomes fluorescent due to internalization of labeled pilin by retraction. Such phenotypical differences may be due to the different experimental conditions used in each study and require more work to fully elucidate.\n\nIn addition to possible hydrodynamical effects, our observation that MSHA pili are able to adhere to surfaces along their entire length implies that cells can enhance their chances of attachment through the possibility of increased adhesion between the surface and the whole pilus filament. The ability to adhere not only at the distal tip, contrasts with the TFP of P. aeruginosa (Skerker and Berg, 2001) and ChiRP of V. cholerae (Ellison et al., 2018), which show that the pilus-subject interactions are mainly mediated by the pilus tip. Thus, for V. cholerae, the strength of adhesion between a cell and a surface that is mediated by an individual MSHA pilus appears to be more complicated to model than with a single point of attachment. Rather, cells can enhance the adhesion strength by increasing both the segment length and the number of MSHA pili adhered to the surface. These two effects will facilitate irreversible attachment in V. cholerae.\n\nSimilar running and lingering phases in near-surface motion have also been reported in enterohaemorrhagic E. coli (EHEC) cells (Perez Ipi\u00f1a et al., 2019), where the results suggest that by choosing the optimal transition rates, EHEC bacterial diffusivity is maximized and surface exploration efficiency is greatly improved. In future work, it will be interesting to apply a\u00a0similar analysis in V. cholerae.\n\nIn this study, the data collection of V. cholerae cells was performed mainly in a\u00a02% LB medium supplemented with 1% MC. Rheological measurements show that its viscosity is shear\u00a0dependent and has a higher storage modulus than loss modulus in the tested oscillation frequency range; thus, it is a non-Newtonian fluid (Figure 6a\u2013c). On the other hand, the rheological measurements of an 18.7% (w/w) mucin solution in 2% LB, which was obtained by measuring the concentration of mixtures scraped from the fresh mouse intestine surfaces, show similar viscoelastic behavior with a higher storage modulus than loss modulus in the same tested oscillation frequency range (Figure 6d\u2013f). Therefore, compared with Ficoll solutions, which are Newtonian fluids, LB+MC better simulates the viscoelastic environment that V. cholerae cells encounter in the mucus layer of animal intestines. In such viscoelastic environments, Millet et al., 2014 observed considerable differences of bacterial localization in different parts of the\u00a0small intestine and found that V. cholerae motility exhibits a regiospecific influence on colonization, indicating that\u00a0viscoelastic intestinal mucin is a key factor limiting colonization. However, it is technically challenging to directly observe cell motion in mucus solutions made from lyophilized mucus powders or fresh mucus-containing solutions scraped from the surfaces of mouse intestines due to the complicated inhomogeneous environment with too many impurities (data not shown). In this work, by direct visualization of pili and flagellum of cells during their landing process in LB+MC that rheologically mimics actual mucus solutions, we find that V. cholerae cells are able to move well in this viscoelastic solution under the conditions tested. Moreover, we show that the effect of MSHA pili as a braking and anchoring machine on cell landing is more apparent in LB+MC than in either 2% LB or 20% Ficoll solutions, suggesting that MSHA pili may play an even more important role for surface attachment in viscoelastic, non-Newtonian, environments such as in the mucus layer of small intestines.\n\nTo summarize, in this work, using fluorescence imaging with labeled pili and flagellum, we show a comprehensive picture of the landing dynamics of V. cholerae cells in viscoelastic environments and provide direct observational evidence of the role of MSHA pili during cell landing. Our work provides fundamental insight into the mechanism of V. cholerae surface attachment and we hope that it may lead to methods that prevent and control V. cholerae infection.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Parent strain (Vibrio cholerae)</td>\n      <td>C6706</td>\n      <td>Joelsson et al., 2006</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Plasmids (DH5\u03b1 \u03bbpir)</td>\n      <td>pWM91</td>\n      <td>Metcalf et al., 1996</td>\n      <td></td>\n      <td>Suicide vector</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Alexa Fluor 488 C5 Maleimide</td>\n      <td>Thermo\u00a0Fisher Scientific</td>\n      <td>Cat. #: A10254</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Alexa Fluor 546 C5 Maleimide</td>\n      <td>Thermo\u00a0Fisher Scientific</td>\n      <td>Cat. #: A10258</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Methyl cellulose (MC)</td>\n      <td>Solarbio</td>\n      <td>Cat. #: M8070</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Ficoll 400</td>\n      <td>Yuanye Bio-Technology</td>\n      <td>Cat. #: 26873-85-8</td>\n      <td>MW=400 kDa</td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>GraphPad Prism software</td>\n      <td></td>\n      <td>RRID:SCR_002798</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>Matlab</td>\n      <td></td>\n      <td>RRID:SCR_001622</td>\n      <td>matlab R2015a</td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>Leica LAS-X</td>\n      <td></td>\n      <td>RRID:SCR_013673</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Bacterial strains\n\nBacterial strains, plasmids, and primers used in this study are listed in Table 1 and Supplementary file 1, Table S1. V. cholerae El Tor C6706 (Joelsson et al., 2006) was used as a parental strain in this study. C6706 and mutants were grown at 30\u00b0C or 37\u00b0C in LB supplemented with 100 \u00b5g/mL streptomycin, 50 \u00b5g/mL kanamycin, 1 \u00b5g/mL chloromycetin where appropriate. E. coli strains harboring plasmids were grown at 37\u00b0C in LB supplemented with 100 \u00b5g/mL ampicillin. The optical densities of bacterial cultures were measured at 600 nm (OD600) using a UV-vis spectrophotometer.\n\n**Table 1.**\n Strains used in this study.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Strain</th>\n      <th colspan=\"2\">Description</th>\n      <th>Source or reference</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Parent strain (Vibrio cholerae)</td>\n      <td colspan=\"2\">C6706 SmR</td>\n      <td>Joelsson et al., 2006</td>\n    </tr>\n    <tr>\n      <td>\u2206mshA</td>\n      <td colspan=\"2\">C6706 SmR, VC1807::CmR, mshA knockout</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>\u2206flaA</td>\n      <td colspan=\"2\">C6706 SmR, VC1807::CmR, flaA knockout</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>MshAT70C</td>\n      <td colspan=\"2\">C6706 SmR, VC1807::KmR, MshAT70C</td>\n      <td>Ellison et al., 2017</td>\n    </tr>\n    <tr>\n      <td>FlaAA106C</td>\n      <td colspan=\"2\">C6706 SmR, VC1807::CmR, FlaAA106C</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>FlaAS107C</td>\n      <td colspan=\"2\">C6706 SmR, VC1807::CmR, FlaAS107C</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>FlaAA106CS107C</td>\n      <td colspan=\"2\">C6706 SmR, VC1807::CmR, FlaAA106CS107C</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>FlaAE332C</td>\n      <td colspan=\"2\">C6706 SmR, VC1807::CmR, FlaAE332C</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>FlaAG23C</td>\n      <td colspan=\"2\">C6706 SmR, VC1807::CmR, FlaAG23C</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>FlaAN26C</td>\n      <td colspan=\"2\">C6706 SmR, VC1807::CmR, FlaAN26C</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>FlaAN83C</td>\n      <td colspan=\"2\">C6706 SmR, VC1807::CmR, FlaAN83C</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>FlaAS325C</td>\n      <td colspan=\"2\">C6706 SmR, VC1807::CmR, FlaAS325C</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>FlaAS87C</td>\n      <td colspan=\"2\">C6706 SmR, VC1807::CmR, FlaAS87C</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>FlaAS376C</td>\n      <td colspan=\"2\">C6706 SmR, VC1807::CmR, FlaAS376C</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>FlaAV117C</td>\n      <td colspan=\"2\">C6706 SmR, VC1807::CmR, FlaAV117C</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>MshAT70C, \u2206flaA</td>\n      <td colspan=\"2\">C6706 SmR, VC1807::KmR, flaA knockout</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>MshAT70C, FlaAA106C</td>\n      <td colspan=\"2\">C6706 SmR, VC1807::KmR, FlaAA106C</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>MshAT70C, FlaAS107C</td>\n      <td colspan=\"2\">C6706 SmR, VC1807::KmR, FlaAS107C</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>MshAT70C, FlaAA106CS107C</td>\n      <td colspan=\"2\">C6706 SmR, VC1807::KmR, FlaAA106CS107C</td>\n      <td>This study</td>\n    </tr>\n  </tbody>\n</table>\n\n### Flagellin and pilin mutagenesis\n\nFollowing the protocol in Ellison et al., 2019; Ellison et al., 2017, we first predicted 10 amino acid residues in V. cholerae flagellin FlaA for cysteine replacement. Then, the flaA knockout and FlaA sequences containing the FlaAA106C, FlaAS107C, FlaAA106CS107C, FlaAE332C, FlaAG23C, FlaAN26C, FlaAN83C, FlaAS325C, FlaAS87C, FlaAS376C, and\u00a0FlaAV117C knock-in were constructed using the MuGENT method (Dalia et al., 2014). The FlaAA106C, FlaAS107C, and FlaAA106CS107C knock-in were constructed by cloning the fragment into the suicide vector pWM91 containing a sacB counter-selectable marker (Metcalf et al., 1996). The plasmids were introduced into V. cholerae by conjugation and mutations were selected for double homologous recombination events. The MshAT70C mutation that\u00a0can be successfully labeled with thiol-reactive maleimide dyes has been described previously (Ellison et al., 2017), and MshAT70C was constructed using the MuGENT method to light MSHA pilus. All mutants were confirmed by DNA sequencing.\n\n### Hemagglutination assays\n\nMSHA by V. cholerae was measured as described previously (Gardel and Mekalanos, 1996). Briefly, bacteria were grown to the mid-logarithmic phase in the\u00a0LB medium. Initial concentrations of approximately 1010 CFU/mL were twofold diluted with Krebbs-Ringer-Tris\u00a0(KRT) buffer in U-bottomed wells of 96-sample microtiter dishes. Sheep erythrocytes were washed in phosphate-buffered saline\u00a0(PBS) and resuspended in KRT buffer for a final concentration of 10% (v/v). Equivoluminal erythrocyte was added into serially diluted bacterial suspensions and the plates were gently agitated at room temperature\u00a0(RT) for 1 min. Samples were checked for hemagglutination after 2 hr at RT.\n\nThe results of the hemagglutination assay test show that MshAT70C displays similar behavior to WT, which indicates that the point mutation in MSHA does not affect MSHA pilus function (Figure 1\u2014figure supplement 4).\n\n### Preparation of viscous solutions\n\nTo change the solution viscosity, MC (M20, 4000 cp, Solarbio, China) solutions were prepared by dissolving 0% and 1% (w/v) MC in 2% LB motility medium (containing 171 mM NaCl). 20%\u00a0(w/v) Ficoll 400 (MW=400 kDa, Yuanye Bio-Technology Co.,\u00a0Ltd, China) dissolved in 2% LB medium was also prepared for a control experiment.\n\n### Preparation of the small intestinal mucus samples from ICR female mice\n\nSix-week-old female ICR mice were provided with drinking water with 10 g/L streptomycin and 0.2 g/L aspartame for 2 days. To clean the small intestine content, food was removed 24 hr prior to the start of the experiments. The mice were killed and the small intestine was cut open with sterile scissors and the mucus layer was gently extracted with a cell scraper. Samples were weighed to obtain the wet weight first and\u00a0then frozen overnight at \u221280\u2103. After that, they were freeze\u00a0dried using a freeze\u00a0dryer (Labconco, USA) in \u221240\u00b0C low-temperature vacuum. Next, these dried samples were weighed again to obtain the dry weight. The average value of the\u00a0dry/wet ratio from three repeats is 18.7%.\n\n### Cell imaging\n\nFor the V. cholerae motility observation in 2% LB without MC, overnight cultures in LB were resuspended and diluted with 2% LB to an OD600 ranging from 0.01 to 0.03. Then, the bacterial suspension was injected into a flow cell, which contained the same media. Imaging was performed using a Phantom V2512 high-speed camera (Vision Research, USA) collecting ~200,000 bright-field images at 5 ms resolution with a 100\u00d7 oil objective on a Leica DMi8 inverted microscope (Leica, Germany) at a set temperature value of 30\u00b0C.\n\nFor the V. cholerae motility observation in 2% LB with 1% MC (henceforth, this medium is referred to LB+MC), overnight cultures in LB were resuspended and diluted with LB+MC to a final OD600 of 0.01\u20130.03. Then, the bacteria were incubated at 37\u00b0C for 20 min to allow them to adapt to the new environment and were then used immediately. Bacteria samples were pipetted onto standard microscope slides with an 8 mm diameter spot and then were sealed with a coverslip using a 1 mm thick secure spacer. Imaging was performed using an\u00a0EMCCD camera (Andor iXon Ultra 888) collecting ~10,000 bright-field images with a time resolution of 90 ms at a set temperature value of 30\u00b0C. Similar protocols were carried out for observations in 20% Ficoll solutions and in the small intestinal mucus samples of mice.\n\n### Cell-tracking algorithms and analysis\n\nThe images were preprocessed using a combination of software and algorithms adapted from the methods described (Lee et al., 2016; Utada et al., 2014; Zhao et al., 2013) and written in MATLAB R2015a (Mathworks) by subtracting the background, scaling, smoothing, and thresholding. After image processing in this way, the bacteria appear as bright regions. The bacteria shape was fit with a spherocylinder. Then, the geometric information of the cell, such as the\u00a0location of the centroid and two poles, and the length and width of the bacterium were collected. Trajectory reconstruction was also achieved for further analysis.\n\nThe motility parameters (Utada et al., 2014), such as instantaneous speed, deviation angle, radius of gyration (Rg), MSD, and mean path length $l\u00af$\u00a0were calculated to further characterize the near-surface motility of V. cholerae. The instantaneous speed was calculated via |ri+1\u2212ri|/\u25b3t, where ri is the cell position vector in frame i and \u25b3t is the time interval between two consecutive frames. The deviation angle of cell motion is defined as the angle between its cell body axis and the direction of motion. The radius of gyration, Rg, is a statistical measure of the spatial extent of the domain of motion given by an ensemble of points that define a trajectory (Rubenstein, 2003). The square of this quantity is defined as\u00a0$R_{g}^{2}=\\frac{1}{N}\\sumi=1N(R\u2192_{i}\u2212R\u2192_{cm})^{2}$, where N is the number of points in the tracked trajectory,\u00a0$R\u2192_{i}$ is the position vector corresponding to the ith point on the trajectory, $R\u2192_{cm}$\u00a0is the position vector of the center-of-mass. The MSD of cells was calculated via $\u27e8\u0394r^{2}(\\tau)\u27e9=\u27e8[r(t+\\tau)\u2212r(t)]^{2}\u27e9$, where r(t) is the position vector of a cell at time t, and \u03c4 represents the time lag. The MSD provides information on the average displacement between points in the motility trajectory separated by a fixed time lag. Mean path length\u00a0$l\u00af$ was calculated as the average of the total travelling distance of each tracked cell in the field of view.\n\n### MSHA pilus labeling, imaging, and quantification\n\nPilin labeling was achieved using Alexa Fluor 488 C5 Maleimide (AF488-mal; Thermo\u00a0Fisher Scientific, cat. no. A10254) or Alexa Fluor 546 C5 Maleimide (AF546-mal; Thermo\u00a0Fisher Scientific, cat. no. A10258), which was dissolved in DMSO, aliquoted, and stored at \u221220\u00b0C while being protected from light.\n\nV. cholerae cultures were grown to mid-log phase (OD600=0.8\u20131.5) before labeling. ~100 \u00b5L of culture was mixed with dye at a final concentration of 25 \u00b5g/mL\u00a0(Ellison et al., 2017) and incubated at RT for 5 min in the dark. Labeled cultures were harvested by centrifugation (900\u00d7g, 5 min) and washed twice with PBS, resuspended in 200 \u00b5L PBS and imaged immediately. Images were collected using an EMCCD camera on a Leica DMi8 inverted microscope equipped with an Adaptive Focus Control system. The fluorescence of cells labeled with AF488-mal and AF546-mal was detected with FITC and Rhod filter, respectively. The cell bodies were imaged using phase-contrast microscopy.\n\nTo quantify the number of MSHA pili per cell and cell length, imaging was done under 0.2% PBS gellan gum pads. The cell lengths were measured using ImageJ.\n\nWe used AF546-mal and AF488-mal, in turn, for the two-color labeling to observe the growth of pili. We first, labeled log-phase cells with AF546-mal for the primary staining by incubating for 20 min, followed by two successive washes in PBS by centrifugation. The cells were then resuspended in LB and incubated for an additional 40 min at 30\u00b0C. For the secondary staining, we incubated the cells in AF488-mal for 5 min, washed twice with PBS, and then imaged the cells immediately using phase contrast, FITC, and RhoD channels.\n\n### Fluorescence video acquisition of MSHA pilus-labeled cells motility in LB+MC\n\nThe labeled cells were centrifugated, resuspended in ~20 \u00b5L PBS, and then diluted in 500 \u00b5L of the viscoelastic solution of LB+MC. The solution was then immediately pipetted onto standard microscope slides. Fluorescence images were acquired at 130 ms intervals for a total of about 2\u20135 min. After a few minutes of fluorescence imaging, most cells in the field of view have attached to the surface, while the fluorescence was bleached due to the continuous exposure. We recorded images from different locations to capture new instances of bacterial movement and adhesion events.\n\n### Rheological measurements\n\nRheological measurements of 1% MC+2% LB solution and 18.7% (w/w) mucin (Sigma, USA) in 2% LB solution were carried out on a rheometer (DHR-2, TA Instruments, Waters LLC) using a cone-plate geometry with a diameter of 40 mm and a cone angle of 5\u00b0 at 26\u2103. Here, because when they were observed on a microscope, the real temperature of samples at the observation window site is lower than the set value of 30\u2103 due to the relatively low thermal conductivity of glass, which is estimated to be 26\u201328\u2103, the rheological measurements were performed at 26\u2103. The viscosity curves were determined at shear rates of 0.01\u20131000/s. The storage and loss moduli were measured as functions of the testing oscillation strain and oscillation frequency. For each tested solution, we left it standing for 15 min prior to each measurement to allow it to reach equilibrium, and then it was covered with a thin layer of silicone oil to prevent loss of moisture during measurement.\n",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "06afa801-6d60-401e-86c4-f83054a5a501",
+      "submission_id": "81aa3e49-4b54-46ed-a642-87a94bcd2ad0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Raymond E Goldstein, University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.60655.sa1](https://doi.org/10.7554/eLife.60655.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe manuscript is an observational study of how MSHA pili interact with a surface to cause free swimming V. cholerae cells to attach and adhere, which is the initial step in biofilm formation. The present paper presents developments in labelling and characterisation of the dynamics of attachment, along with the effect of viscosity. Detailed data are presented on the location of pili, their interaction with the surface, and the associated effect on cell movement, and process is characterised through various stages from initial pili contact to final tethering.\n\nDecision letter after peer review:\n\nThank you for sending your article entitled \"Crash landing of Vibrio cholerae by MSHA pili-assisted braking and anchoring in a viscous environment\" for peer review at eLife. Your article has been evaluated by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Aleksandra Walczak as the Senior Editor.\n\nAs you can see from the individual reviews below, the reviewers are supportive of the experimental aspects of the work, but are concerned that there is a lack of clear message to the paper. Most significantly, there is very little detailed mechanical understanding presented of the processes at hand. The entirety of the theoretical analysis is relegated to the Methods Section and no intuitive or heuristic explanation or stringent test of the data is given. A good example of this is provided by the discussion around the persistence length of the pili. Given the emphasis on mechanical aspects of the surface interactions, we would have expected those measurements to translate into the bending stiffness of the pili and therefore some idea of the forces involved when the adhere to the surface. We are also concerned about statements such as those on lines 254+ concerning \"apparent viscosities in the normal and tangential directions\".\n\nThis is not a concept within standard Resistive Force Theory \u2013 there are drag coefficients in those two directions, but not differing viscosities, unless somehow one is speaking of complex fluids with internal structure.\n\nIf that is the case, then we would expect more in the way of rheological measurements than simply quoting a viscosity (i.e. one would need the shear rate dependence). Likewise, the apparent lack of consideration of near-surface hydrodynamic effects is a serious omission that requires justification before the results of RFT for these kinds of problems can be accepted.\n\nIn light of the above, we believe that the paper needs major revisions to clarify the message, to present, analyze, and discuss the data on trajectories in much greater depth, and to explain for the audience of eLife the theoretical analysis with much greater attention to detail.\n\nReviewer #1:\n\nThe manuscript is an observational study of how MSHA pili interact with a surface to cause free swimming V. cholerae cells to attach and adhere, which is the initial step in biofilm formation. The authors have previously presented data showing 'roaming' and 'orbiting' due to the synergistic effect of pili and flagellum; the present paper presents developments in labelling and characterisation of the dynamics of attachment, along with the effect of viscosity. Detailed data are presented on the location of pili, their interaction with the surface, and the associated effect on cell movement, and process is characterised through various stages from initial pili contact to final tethering. The system is examined at low and high viscosity, and it is shown that pili have a stronger effect on mean path length in high compared with low viscosity fluid. Existing mathematical fluid dynamics models are employed to interpret some of the results, for example explaining why standing cells have higher angular velocity.\n\n1) Can any further mechanistic explanation be given for why tethering dynamics are different at high viscosity? Is it because the cells are moving more slowly?\n\n2) A parameter estimate is given for m\u03bcT* on page 15, line 260, which is presumably a fitted value. A confidence interval should be provided for this estimate. Would the 'textbook' behaviour of m\u03bcN/m\u03bcT slightly less than 2 also explain the data?\n\n3) An RFT model of motility rather simplifies the hydrodynamics of surface-swimmer interaction, in particular the reorientation of the cells produced by the hydrodynamic 'images' in the wall. In view of this, how reliable are the model trajectory predictions shown in figure 4f?\n\nReviewer #2:\n\nThe swimming trajectories of bacteria is strongly perturbed as they approach surfaces. Vibrio cholerae \"orbit\" or \"roam\" when swimming near a surface in a manner that depends on its MSHA pili (described in Utada et al. 2014). Here, Zhang et al. further probe the function of MSHA pili in the near surface swimming and attachment behavior of Vibrio cholerae. On the technical aspect, the authors rely on the implementation of flagellum and pili visualizations during cell landing, particularly in the context of a \"viscous\" environments. The paper is thus focused on improving our understanding of surface approach strategies of V. cholerae. The main strength of the paper is the ability to visualize MSHA pili during these events. While these visualizations are impressive and interesting, the paper lacks a clear conclusion, and in my opinion remains too descriptive. Therefore I don't think this manuscript warrant publication in eLife.\n\n1. The manuscript is articulated into three parts: pili visualization, modelling using resistive theory and finally characterization of viscosity effects on trajectories. These parts are quite disjointed so that their association lacks cohesion.\n\n2. The figures are not sufficiently meaningful to support the conclusions of the paper. Figure 1 is a quantification of pili number which feels anecdotal. Figure 2 is vague and mostly consists in showing trajectories which have been already described in previous studies. Figure 2e is interesting but barely visible, etc\u2026 To me the lack of focus of the figures is a sign that the paper lacks a clear message.\n\n3. The RFT model fails to come up with insights in the mechanism of near surface motion.\n\n4. As it is written, the concept viscosity is central to the paper. I assume that increased viscosity is helpful when performing pili visualizations. However, it is unclear to me whether increasing fluid viscosity truly replicates environments such as the mucus layer, which is a complex viscoelastic hydrogel and thus rheologically differs from a methylcellulose solution. Also, I want to point out that talking about changes in swimming behaviors as a function of viscosity is delicate without mention of the Reynolds number. In summary, I think the manuscript lacks a physically-oriented discussion on viscosity.\n",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b7f1de5e-42bb-4b27-bc38-03de71e96cfe",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C1",
+      "claim": "Vibrio cholerae is a human pathogen that causes the disease cholera.",
+      "claim_type": "EXPLICIT",
+      "source": "Vibrio cholerae, a human pathogen that causes the debilitating disease cholera, is a natural inhabitant of aquatic ecosystems (Almagro-Moreno et al., 2015; Kaper et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Almagro-Moreno et al., 2015 and Kaper et al., 1995",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "fecd1f85-f84c-4ba1-b55a-2b6a957b0cfe",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C2",
+      "claim": "Vibrio cholerae is a natural inhabitant of aquatic ecosystems.",
+      "claim_type": "EXPLICIT",
+      "source": "Vibrio cholerae, a human pathogen that causes the debilitating disease cholera, is a natural inhabitant of aquatic ecosystems (Almagro-Moreno et al., 2015; Kaper et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Almagro-Moreno et al., 2015 and Kaper et al., 1995",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "f2a4a5ab-6ea3-46d7-8a69-178e190b8de3",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C3",
+      "claim": "Vibrio cholerae can form biofilms on both biotic and abiotic surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "They can form biofilms on both biotic and abiotic surfaces, which increase their infectivity and environmental survival (Donlan and Costerton, 2002; Silva and Benitez, 2016; Teschler et al., 2015; Yildiz and Visick, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Donlan and Costerton, 2002; Silva and Benitez, 2016; Teschler et al., 2015; Yildiz and Visick, 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "9d0dd5b9-1d71-4d8c-a01b-c8ab6759b2fa",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C4",
+      "claim": "Biofilm formation increases Vibrio cholerae infectivity and environmental survival.",
+      "claim_type": "EXPLICIT",
+      "source": "They can form biofilms on both biotic and abiotic surfaces, which increase their infectivity and environmental survival (Donlan and Costerton, 2002; Silva and Benitez, 2016; Teschler et al., 2015; Yildiz and Visick, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Donlan and Costerton, 2002; Silva and Benitez, 2016; Teschler et al., 2015; Yildiz and Visick, 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "e48bbd43-9f55-4ec1-95de-7cfab35f2f65",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C5",
+      "claim": "The flagellum is required for biofilm formation in Escherichia coli.",
+      "claim_type": "EXPLICIT",
+      "source": "The flagellum is required for biofilm formation in a variety of bacteria species, such as Escherichia coli (Pratt and Kolter, 1998), Pseudomonas aeruginosa (O'Toole and Kolter, 1998), and V. cholerae (Guttenplan and Kearns, 2013; Watnick and Kolter, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pratt and Kolter, 1998",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "60f68c5a-23e8-44c6-9132-099b13223165",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C6",
+      "claim": "The flagellum is required for biofilm formation in Pseudomonas aeruginosa.",
+      "claim_type": "EXPLICIT",
+      "source": "The flagellum is required for biofilm formation in a variety of bacteria species, such as Escherichia coli (Pratt and Kolter, 1998), Pseudomonas aeruginosa (O'Toole and Kolter, 1998), and V. cholerae (Guttenplan and Kearns, 2013; Watnick and Kolter, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to O'Toole and Kolter, 1998",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "628289a2-f874-400c-8ca8-55cc8023e9de",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C7",
+      "claim": "The flagellum is required for biofilm formation in Vibrio cholerae.",
+      "claim_type": "EXPLICIT",
+      "source": "The flagellum is required for biofilm formation in a variety of bacteria species, such as Escherichia coli (Pratt and Kolter, 1998), Pseudomonas aeruginosa (O'Toole and Kolter, 1998), and V. cholerae (Guttenplan and Kearns, 2013; Watnick and Kolter, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Guttenplan and Kearns, 2013; Watnick and Kolter, 1999",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "56695844-1cb6-463e-a5c8-8f6c0f234bec",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C8",
+      "claim": "Mutants lacking flagella in Escherichia coli are defective for attachment.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutants lacking flagella in both E. coli and Vibrio vulnificus have been observed to be defective for attachment (Friedlander et al., 2013; Lee et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Friedlander et al., 2013; Lee et al., 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "8701544e-1ea6-47d9-99ca-d1efc80cafc2",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C9",
+      "claim": "Mutants lacking flagella in Vibrio vulnificus are defective for attachment.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutants lacking flagella in both E. coli and Vibrio vulnificus have been observed to be defective for attachment (Friedlander et al., 2013; Lee et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Friedlander et al., 2013; Lee et al., 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "4f9ae406-8726-4b66-a4bf-6cc4705e01c1",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C10",
+      "claim": "Type IV pili have diverse functions including cellular twitching motility, biofilm formation, horizontal gene transfer, and host colonization.",
+      "claim_type": "EXPLICIT",
+      "source": "Type IV pili (TFP) are another type of filamentous appendages commonly found on many bacteria and archaea, which have diverse functions such as cellular twitching motility, biofilm formation, horizontal gene transfer, and host colonization (Piepenbrink and Sundberg, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Piepenbrink and Sundberg, 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "59188eb6-c0e0-4b3e-8d8d-aac153478e8c",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C11",
+      "claim": "Pseudomonas aeruginosa displays two types of TFP-driven twitching motility.",
+      "claim_type": "EXPLICIT",
+      "source": "P. aeruginosa displays two types of TFP-driven twitching motility (Gibiansky et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gibiansky et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "d1fb7954-04ef-41c4-b727-e0bd584b9119",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C12",
+      "claim": "Neisseria gonorrhoeae shows TFP-dependent attachment leading to microcolony formation on host cell surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Neisseria gonorrhoeae has shown a TFP-dependent attachment, leading to the formation of microcolonies on host cell surfaces (Higashi et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Higashi et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "c94b739e-0c74-4bdb-809b-dce768f6b290",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C13",
+      "claim": "Vibrio cholerae biosynthesizes three types of TFP that are expressed under different scenarios.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, although V. cholerae biosynthesizes three types of TFP that are expressed under different scenarios, they have not been observed to twitch on surfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement made in the manuscript text",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "ca246787-d1b8-4dd0-8281-fcb0674f0467",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C14",
+      "claim": "Vibrio cholerae has not been observed to twitch on surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, although V. cholerae biosynthesizes three types of TFP that are expressed under different scenarios, they have not been observed to twitch on surfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement made in the manuscript text",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "46bf89dd-9956-4d53-b476-69f14be93e4e",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C15",
+      "claim": "The three types of pili in Vibrio cholerae are chitin-regulated competence pili (ChiRP), toxin co-regulated pili (TCP), and mannose-sensitive hemagglutinin (MSHA) TFP.",
+      "claim_type": "EXPLICIT",
+      "source": "These three pili are chitin-regulated competence pili (ChiRP; formerly termed PilA), toxin co-regulated pili (TCP), and mannose-sensitive hemagglutinin (MSHA) TFP (Meibom et al., 2004; Reguera and Kolter, 2005; Yildiz and Visick, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Meibom et al., 2004; Reguera and Kolter, 2005; Yildiz and Visick, 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "0c97b4f0-c205-4370-9741-aec9d661108c",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C16",
+      "claim": "ChiRP can grasp extracellular DNA and transport it back to the cell surface via pili retraction.",
+      "claim_type": "EXPLICIT",
+      "source": "ChiRP were observed to be able to grasp extracellular DNA and transport it back to the cell surface via pili retraction (Ellison et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ellison et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "e9949a7c-85a7-405b-aac2-abdb75d00a03",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C17",
+      "claim": "TCP are important for host colonization and pathogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "TCP are important for host colonization and pathogenesis (Kirn et al., 2000; Thelin and Taylor, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kirn et al., 2000; Thelin and Taylor, 1996",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "3ca18b4e-8e59-45cc-b2dd-d7f6e094fa20",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C18",
+      "claim": "MSHA pili are important for surface attachment of Vibrio cholerae.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to these two types, MSHA pili are known to be important for surface attachment of V. cholerae (Utada et al., 2014; Watnick and Kolter, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Utada et al., 2014; Watnick and Kolter, 1999",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "46223a50-f31a-4148-8ee7-76539a0ebd5f",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C19",
+      "claim": "Motility is a crucial element for Vibrio cholerae colonization of the epithelium leading to successful infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Motility has been shown to be a crucial element for V. cholerae colonization of the epithelium, leading to successful infection of the human host (Krukonis and DiRita, 2003; Tsou et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Krukonis and DiRita, 2003; Tsou et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "1ab5632d-d33d-4754-989d-017b8b201724",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C20",
+      "claim": "Two types of near-surface motility, roaming and orbiting, were observed in Vibrio cholerae.",
+      "claim_type": "EXPLICIT",
+      "source": "Two types of near-surface motility, roaming and orbiting, were observed in V. cholera and were further suggested that V. cholerae synergistically employs the use of their flagella and MSHA pili to enable a hybrid surface motility that facilitates surface selection and attachment in aqueous environments (Utada et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Utada et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "1783aa77-f420-4229-a967-92985c3102c2",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C21",
+      "claim": "Vibrio cholerae synergistically employs flagella and MSHA pili to enable hybrid surface motility that facilitates surface selection and attachment in aqueous environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Two types of near-surface motility, roaming and orbiting, were observed in V. cholera and were further suggested that V. cholerae synergistically employs the use of their flagella and MSHA pili to enable a hybrid surface motility that facilitates surface selection and attachment in aqueous environments (Utada et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Utada et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "df072191-2be5-4d45-892e-6e55d257b770",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C22",
+      "claim": "The mucus layer of animal intestines has a wide range of viscosities, varying from the viscosity of water (~1 cP) to 1000-fold higher (1000 cP).",
+      "claim_type": "EXPLICIT",
+      "source": "The mucus layer of animal intestines is estimated to have a wide range of viscosities, varying anywhere from the viscosity of water (~1 cP) to 1000-fold higher (1000 cP) (Lai et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lai et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "2e33447c-3830-4ca8-90c3-2bdcb245b649",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C23",
+      "claim": "MSHA pili are evenly distributed along the cell length of Vibrio cholerae.",
+      "claim_type": "EXPLICIT",
+      "source": "The results show evenly distributed MSHA pili along the cell length, indicating the absence of preferred pili localization on the cell body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on direct observation and 3D reconstruction from videos as described in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "3a944fac-6f1e-41f2-858e-df0f515eec25",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C24",
+      "claim": "The majority of Vibrio cholerae cells have approximately 3-7 MSHA pili.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitatively, we find that the majority of cells have approximately 3\u20137 MSHA pili, with 4 MSHA pili per cell being observed most frequently, as shown in Figure 1b.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative data from 110 cells shown in Figure 1b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "ed68789c-856e-4404-a975-9dd45dddcba2",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C25",
+      "claim": "Four MSHA pili per cell is the most frequently observed number.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitatively, we find that the majority of cells have approximately 3\u20137 MSHA pili, with 4 MSHA pili per cell being observed most frequently, as shown in Figure 1b.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative data from 110 cells shown in Figure 1b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "a1ef72cc-00f3-4e93-871d-a5e723b815da",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C26",
+      "claim": "The number of MSHA pili per cell is positively correlated with cell length.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of MSHA pili appears to be positively correlated with cell length since it increases as the cell grows (Figure 1\u2014figure supplement 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from time-lapse imaging shown in Figure 1\u2014figure supplement 3c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "7c0494b7-4e8b-4a7a-863a-a8d8e1b80087",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C27",
+      "claim": "The number of MSHA pili shows a linear relationship with cell length.",
+      "claim_type": "EXPLICIT",
+      "source": "Statistically, the number of MSHA pili shows a linear relationship with cell length (Figure 1c), indicating that the length density of MSHA pili is roughly constant for V. cholerae.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis of 368 cells shown in Figure 1c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "785f224d-40bb-4089-960b-f32f0c00a861",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C28",
+      "claim": "The length density of MSHA pili is roughly constant for Vibrio cholerae.",
+      "claim_type": "EXPLICIT",
+      "source": "Statistically, the number of MSHA pili shows a linear relationship with cell length (Figure 1c), indicating that the length density of MSHA pili is roughly constant for V. cholerae.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the linear relationship between pili number and cell length shown in Figure 1c",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "7a114b10-8afd-4f92-9b96-195b77072688",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C29",
+      "claim": "MSHA pili growth was observed but no retraction under the experimental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Under our conditions, we observed MSHA pili growth (Figure 1\u2014figure supplement 3a and b) but no retraction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct observation from double-color labeling experiments shown in Figure 1\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "fee770cc-9d0d-496d-b9fc-fe929318fa3c",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C30",
+      "claim": "Wild-type Vibrio cholerae in LB+MC exhibits orbiting behavior characterized by multi-pass circular trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous reports in normal aqueous solutions (Utada et al., 2014), the WT strain in LB+MC also exhibits orbiting behavior, characterized by multi-pass circular trajectories, and roaming behavior, characterized by highly exploratory, diffusive, trajectories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed behavior in experiments with LB+MC, consistent with previous reports",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "62600c13-d916-4233-99f9-bedeb4267232",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C31",
+      "claim": "Wild-type Vibrio cholerae in LB+MC exhibits roaming behavior characterized by highly exploratory, diffusive trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous reports in normal aqueous solutions (Utada et al., 2014), the WT strain in LB+MC also exhibits orbiting behavior, characterized by multi-pass circular trajectories, and roaming behavior, characterized by highly exploratory, diffusive, trajectories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed behavior in experiments with LB+MC, consistent with previous reports",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "85a1a93b-e50d-4375-b657-f8baa82c2990",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C32",
+      "claim": "Roaming cells have a radius of gyration of 19.5 \u03bcm and an average speed of 1.7 \u03bcm/s in LB+MC.",
+      "claim_type": "EXPLICIT",
+      "source": "The roaming cell traces out a path that is linear over short distances, with a radius of gyration Rg=19.5 \u03bcm, and an average speed of 1.7 \u03bcm/s (see Figure 2a,b, Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative measurements from tracked cells shown in Figure 2a,b and Video 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "92856c96-a58c-4fb8-a1c7-2b0cdb0383d9",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C33",
+      "claim": "Orbiting cells have a radius of gyration of 1.6 \u03bcm and an average speed of 1.1 \u03bcm/s in LB+MC.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the orbiting cell trajectory is much more circular with an average Rg=1.6 \u03bcm and an average speed of 1.1 \u03bcm/s (see Figure 2c,d, Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative measurements from tracked cells shown in Figure 2c,d and Video 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "5ca94cb3-e751-431b-b00b-d1bb2813f253",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C34",
+      "claim": "Both roaming and orbiting cells make momentary pauses where their speed slows down.",
+      "claim_type": "EXPLICIT",
+      "source": "A 3D plot of speed plotted along the trajectory in both examples show that both phenotypes make momentary pauses, where their speed slows down; this can be seen clearly in Figure 2b, where the cell motion near a surface displays a characteristic alternation between moving and stopping (Figure 2b and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed from 3D speed plots shown in Figure 2b and 2d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "6263177f-271b-4351-a153-e1b6716cd617",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C35",
+      "claim": "Momentary pauses are caused by transient contact between MSHA pili and the surface.",
+      "claim_type": "EXPLICIT",
+      "source": "However, by recording fluorescence video sequences, we directly visualized the process, thereby providing direct evidence that the pauses are due to transient contact between MSHA pili and the surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct visualization from fluorescence video sequences showing pili-surface contact",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "7789c78f-3417-40d4-aab8-ff04606a3ca6",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C36",
+      "claim": "MSHA pili can stretch during transient attachment to the surface.",
+      "claim_type": "EXPLICIT",
+      "source": "In a time-lapse sequence, we show the stretching of a transiently attached pilus due to cell moving away from the point of attachment. Subsequently, this pilus detaches from the surface as the cell continues to move, as indicated with the white arrowheads in Figure 2e (for more details, see Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct observation from time-lapse imaging shown in Figure 2e and Video 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "b3ac7fd6-4b37-4b6c-b108-28b0a6ca2000",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C37",
+      "claim": "MSHA pili can work as a brake to abruptly slow cell motion by transiently attaching to the surface.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that the MSHA pili can work as a brake to abruptly slow cell motion by transiently attaching to the surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from observations of pili-surface interactions and cell speed changes",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "5f234809-b16d-4fdc-8267-22d3b47ab6b9",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C38",
+      "claim": "Different MSHA pili attach and detach dynamically, switching as the cell uses these as transient attachment points.",
+      "claim_type": "EXPLICIT",
+      "source": "This is further confirmed by the observation that during the course of surface motion, different MSHA pili attach and detach, switching dynamically as the cell uses these as transient attachment points (Figure 2\u2014figure supplement 2 and Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct observation from fluorescence videos shown in Figure 2\u2014figure supplement 2 and Video 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "702dcf1a-2a08-4f31-b636-56ad8e969405",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C39",
+      "claim": "Cell body rotation is required to balance the torque for flagellar rotation when cells swim.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a switching of the specific MSHA pili that are engaging the surface is caused by the rotation of the cell body, which is required to balance the torque for flagellar rotation when cells swim.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of bacterial swimming mechanics",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "b3532cd6-b62d-42fa-ade9-f9af2edcda60",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C40",
+      "claim": "As the cell body rotates, different MSHA pili distributed on the cell body take turns approaching and receding from the surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, as the cell body rotates due to the rotation of the flagellar motor, different MSHA pili distributed on the cell body take turns approaching and receding from the surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference from cell body rotation and pili distribution",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "55ee95c4-6cbb-460a-b0db-86b1332ab129",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C41",
+      "claim": "The switching of attached MSHA pili continues to slow down cell motion and changes the direction of motion.",
+      "claim_type": "EXPLICIT",
+      "source": "The switching of attached MSHA pili not only continues to slow down cell motion but also changes the direction of motion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed from tracking cell trajectories and pili switching events",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "fa0b5999-5700-419a-a03f-947469ac6051",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C42",
+      "claim": "When adhesion between MSHA pili and the surface is sufficiently strong, the attachment point can act as an anchor point.",
+      "claim_type": "EXPLICIT",
+      "source": "When the adhesion between MSHA pili and the surface is sufficiently strong, the attachment point can act as an anchor point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed from cell behavior showing anchored circular motion",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "8d56a05c-1930-4704-8853-ea94e30890e8",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C43",
+      "claim": "A single anchoring MSHA pilus can deflect the trajectory of a swimming cell, bending linear motion into circular motion centered around the attachment point.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate this by showing the deflection of the trajectory of a swimming cell by the attachment of a single anchoring MSHA pilus; here, linear motion is bent into a circular motion that is centered around the attachment point (see Video 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct observation from Video 4 showing trajectory deflection",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "2c5e8584-efcc-4674-9754-c2812a86dc49",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C44",
+      "claim": "The upper bound for the force exerted on the pilus during anchored circular motion is estimated to be ~50 pN in LB+MC.",
+      "claim_type": "EXPLICIT",
+      "source": "The force on the pilus will be less than this upper bound, partly due to the difference in direction between the pilus force and the propulsion force, which helps the cell rotate around the anchor point. Cell body rotations are an order of magnitude slower in the LB+MC solution used here than in water, so we estimate the flagellar rotation rate to be in the range of 10\u2013100 rad/s. The viscosity of LB+MC is ~0.2 Pa\u22c5s and this gives us an upper bound for the force on the pilus of ~50 pN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated using resistive force theory model from Lauga et al., 2006",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "c0c3c8f2-77c3-44e9-84da-481e40525bd1",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C45",
+      "claim": "The upper bound for the force exerted on the pilus during anchored circular motion is estimated to be ~3 pN in water.",
+      "claim_type": "EXPLICIT",
+      "source": "In water, we estimate an upper bound of ~3 pN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated using resistive force theory model",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "8119feb9-2eeb-49e4-ad85-ee27d345c450",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C46",
+      "claim": "The estimated forces on pili are smaller than the 100 pN forces that pili can sustain.",
+      "claim_type": "EXPLICIT",
+      "source": "These estimates are smaller than the 100 pN forces that pili can sustain (Maier et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with known pili force tolerance from Maier et al., 2002",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "5d5fd130-f7d4-4357-b9db-a09bff178f8a",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C47",
+      "claim": "The anchoring of MSHA pilus eventually leads to the irreversible attachment of the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "The anchoring of MSHA pilus eventually leads to the irreversible attachment of the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed from tracking cells through complete landing sequence",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "9cfaccc5-3528-4207-ba47-a6e0ec8a194e",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C48",
+      "claim": "The landing process of Vibrio cholerae includes three phases: running, lingering, and attaching.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the pattern of motion displayed by the cell (Figure 3a and Video 5), we divide the landing process into three phases: running, lingering, and attaching.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Classification based on observed cell behavior patterns shown in Figure 3a and Video 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "8ed66365-a6c7-4388-a53b-fa8c81fd680d",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C49",
+      "claim": "In the running phase, cells swim and can perform roaming or orbiting.",
+      "claim_type": "EXPLICIT",
+      "source": "In the running phase (0\u20133.77 s), cells will swim and can perform roaming or orbiting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed behavior during the running phase",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "ad7309c3-24fb-48bd-8268-6d68303b8807",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C50",
+      "claim": "Misalignments between the flagellum and cell body axis tend to change the motion direction of the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that misalignments between the flagellum and cell body axis tend to change the motion direction of the cell (Figure 3a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed from simultaneous imaging of flagellum and cell body shown in Figure 3a,b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "0fac5cb3-b31d-45ea-ac7c-e9603fb404f2",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C51",
+      "claim": "In the lingering phase, cells demonstrate either a paused state or a tethered state.",
+      "claim_type": "EXPLICIT",
+      "source": "In the lingering phase (3.77\u20134.68 s), the cells demonstrate one of two states: a paused state or a tethered state, where the cell can move under the constraint of tethering pilus (see Figure 3a for the tethered state).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed behavior during the lingering phase shown in Figure 3a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "9b3ca9fe-9fb3-4a2f-afa3-11db900aa7df",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C52",
+      "claim": "In the attaching phase, cells remain on the surface motionless during the observation period.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, in the attaching phase (\u2265 4.68 s), cells remain on the surface motionless during the observation period most likely since they have effected irreversible attachment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed behavior during the attaching phase",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "87de9645-9422-402a-b9b4-cf66081e0f70",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C53",
+      "claim": "Upon irreversible cell attachment, some free MSHA pili become attached to the surface firmly while others demonstrate fluctuations punctuated with intermittent attachment.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon irreversible cell attachment, some of the free MSHA pili become attached to the surface firmly while others demonstrate fluctuations punctuated with intermittent attachment to the surface (Video 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct observation from Video 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "371b307e-90e5-41f9-93fd-0a5b353803bc",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C54",
+      "claim": "Transitions between the running and lingering phases are observed during cell landing.",
+      "claim_type": "EXPLICIT",
+      "source": "During cell landing, transitions between the running and lingering phases, as well as between the two states of the lingering phase are observed, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed from tracking cells through landing sequence",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "0572d6b3-fefe-4303-9f83-c3590b93a3a3",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C55",
+      "claim": "The running phase has a relatively lower transition probability to the tethered state (~22%) but a higher probability to the paused state (~78%).",
+      "claim_type": "EXPLICIT",
+      "source": "The measured conditional probabilities qij that cell transitions from state i to j show that the running phase has a relatively lower qrt to the tethered state (~22%) but a higher qrp to the paused state (~78%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from 666 transition events",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "ba17c10e-0826-4d16-977e-47f5fd384d1e",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C56",
+      "claim": "The paused state has a higher transition probability back to running than to tethering.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the paused state has a higher qpr than qpt.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from transition event data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "485e93b9-f1a0-4b60-8310-82f783207c03",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C57",
+      "claim": "The tethered state shows similar transition probabilities to running and paused states, which are 45% and 55%, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the tethered state shows similar qtr and qtp, which are 45% and 55%, respectively (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Calculated from transition event data shown in Figure 3c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "42141467-44ab-404a-a4bb-da0a323d8737",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C58",
+      "claim": "The period for body rotation in the running phase is generally distributed between 0.25 and 2 s and is centered at ~0.7 s in LB+MC.",
+      "claim_type": "EXPLICIT",
+      "source": "In the running phase of V. cholerae, we found that the period for body rotation is generally distributed between 0.25 and 2 s and is centered at ~0.7 s (the rotation rate was ~1.5 Hz) in LB+MC (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis of 416 rotation events from 54 cells shown in Figure 4a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "f4f7d020-b88f-4dfc-8d13-e80e2c99a668",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C59",
+      "claim": "The rotation rate of the cell body in the running phase is ~1.5 Hz in LB+MC.",
+      "claim_type": "EXPLICIT",
+      "source": "In the running phase of V. cholerae, we found that the period for body rotation is generally distributed between 0.25 and 2 s and is centered at ~0.7 s (the rotation rate was ~1.5 Hz) in LB+MC (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Calculated from rotation period data shown in Figure 4a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "7cab68a6-f342-4bd4-a181-6693d9973b52",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C60",
+      "claim": "Swimming speed linearly increases with cell body rotation rate with a slope of |v/\u03c9c|=2.48\u00b10.04 \u03bcm/radian.",
+      "claim_type": "EXPLICIT",
+      "source": "By fitting the data, we found that v linearly increases with \u03c9c with a slope of |v/\u03c9c|=2.48\u00b10.04 \u03bcm/radian.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Linear fit of measured data from 47 cells shown in Figure 4b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "9426c502-b540-4ccb-acbe-018c55620e64",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C61",
+      "claim": "A cell in the tethered state typically performs a circular motion around the attachment point.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, a cell in the tethered state typically performs a circular motion around the attachment point (red dots in Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct observation from tracking tethered cells shown in Figure 4c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "71f55ccb-b4a8-4b5e-b21b-4747bcc31c1a",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C62",
+      "claim": "The direction of circular motion in the tethered state can switch from counterclockwise to clockwise.",
+      "claim_type": "EXPLICIT",
+      "source": "The direction of the circular motion is also dynamic and can switch from counterclockwise (CCW) to clockwise (CW) presumably due to a switch in the rotation direction of the flagellar motor (see 2.6 s, Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct observation from tracking tethered cells shown in Figure 4c and Video 7",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "c3613645-806a-4225-a0aa-8b742709a075",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C63",
+      "claim": "Angular velocity is roughly constant during each circular-motion interval in the tethered state.",
+      "claim_type": "EXPLICIT",
+      "source": "Angular velocity is roughly constant during each circular-motion interval (i.e., in each CCW or CW period) and quickly changes sign after CCW-CW switching (Figure 4d and Video 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured from tracking tethered cell motion shown in Figure 4d and Video 7",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "65e76447-16d7-467c-8b12-c878f988c5c7",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C64",
+      "claim": "Tethering can occur at a pole or under the body, leading to cells standing vertically or lying down horizontally to the surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the distribution of pili across the cell body, tethering can occur at a pole or under the body, which leads to cells standing vertically or lying down horizontally to the surface, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed from different tethering configurations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "b617ffe8-7652-4914-8ef6-61957ec122fd",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C65",
+      "claim": "Standing tethered cells perform faster circular motion (mean angular speed=8.5\u00b11.9 rad/s) than lying ones (mean angular speed=3.0\u00b12.1 rad/s).",
+      "claim_type": "EXPLICIT",
+      "source": "We find that standing tethered cells perform a faster circular motion (mean angular speed=8.5\u00b11.9 rad/s) than lying ones (mean angular speed=3.0\u00b12.1 rad/s) (Figure 4e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis of 38 vertical tethering intervals from 5 cells and 241 horizontal tethering intervals from 25 cells shown in Figure 4e",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "f20087dc-1691-49d5-b17d-5749a379207d",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C66",
+      "claim": "MSHA pili appear to be able to attach to the surface along their entire length, not just the tip.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the fact that unattached pili may increase the likelihood that the cell will make the irreversible attachment, we observe that MSHA pili appear to be able to attach to the surface along their entire length, and not just the tip (Video 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct observation from Video 8 showing pilus attachment along its length",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "fc5846f3-8a0f-4a5b-846f-e4a49f92cff3",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C67",
+      "claim": "The flagellum of attached cells frequently continues to rotate after cell attachment.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we find that the flagellum of attached cells frequently continues to rotate (Video 5, after 4.68 s), indicating that even after cell attachment, the flagellar motor is still active for some period.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct observation from Video 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "e12d3841-2c0e-4780-90a2-7f593ff6c467",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C68",
+      "claim": "The flagellum will eventually stop rotating after a cell stays long enough on the surface.",
+      "claim_type": "EXPLICIT",
+      "source": "The flagellum will eventually stop rotating after a cell stays long enough on the surface (Video 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct observation from Video 9",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "a41eaad2-542e-48d6-abf4-2a20c35ee718",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C69",
+      "claim": "LB+MC is a non-Newtonian fluid with shear-dependent viscosity.",
+      "claim_type": "EXPLICIT",
+      "source": "Rheological measurements show that its viscosity is shear dependent and has a higher storage modulus than loss modulus in the tested oscillation frequency range; thus, it is a non-Newtonian fluid (Figure 6a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Rheological measurements shown in Figure 6a-c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "eec434dc-2fe2-4f4c-bbf7-2ae413f93648",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C70",
+      "claim": "An 18.7% (w/w) mucin solution in 2% LB shows similar viscoelastic behavior to LB+MC with a higher storage modulus than loss modulus.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the rheological measurements of an 18.7% (w/w) mucin solution in 2% LB, which was obtained by measuring the concentration of mixtures scraped from the fresh mouse intestine surfaces, show similar viscoelastic behavior with a higher storage modulus than loss modulus in the same tested oscillation frequency range (Figure 6d\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Rheological measurements shown in Figure 6d-f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "e2280f50-a73c-43d6-a58a-5222eab76f50",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C71",
+      "claim": "LB+MC better simulates the viscoelastic environment that Vibrio cholerae cells encounter in the mucus layer of animal intestines compared to Ficoll solutions.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, compared with Ficoll solutions, which are Newtonian fluids, LB+MC better simulates the viscoelastic environment that V. cholerae cells encounter in the mucus layer of animal intestines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of rheological properties between LB+MC, Ficoll, and actual mucin solutions",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "022c0765-5f43-43d7-94a1-72a73cb643fc",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C72",
+      "claim": "Wild-type cells demonstrate roaming and orbiting motilities in both 2% LB and LB+MC solutions.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed WT cells to demonstrate roaming and orbiting motilities in both solutions (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct observation from cell tracking shown in Figure 5a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "d3071156-04ba-4304-90f3-ab702d9483fc",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C73",
+      "claim": "The roaming and orbiting motilities of cells are robust against the tested viscoelastic environment.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that the roaming and orbiting motilities of cells are robust against the tested viscoelastic environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed similar motility patterns in both 2% LB and LB+MC",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "cb608d4f-1fdc-4bd7-8186-89b44364a2a1",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C74",
+      "claim": "The average speed of WT cells for near-surface motion is reduced by ~22 times from 86.7\u00b132.9 \u03bcm/s in 2% LB to 3.8\u00b12.6 \u03bcm/s in LB+MC.",
+      "claim_type": "EXPLICIT",
+      "source": "The average speed of WT cells for near-surface motion is reduced by ~22 times from 86.7\u00b132.9 \u03bcm/s (mean \u00b1 standard deviation) in 2% LB to 3.8\u00b12.6 \u03bcm/s in LB+MC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured from cell tracking data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "de77fdbe-a885-48dd-b250-a206ad08178a",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C75",
+      "claim": "The average speed of \u25b3mshA cells is decreased by ~12 times from 80.0\u00b115.0 \u03bcm/s in 2% LB to 6.5\u00b11.4 \u03bcm/s in LB+MC.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the average speed of \u25b3mshA cells is also decreased by ~12 times from 80.0\u00b115.0 \u03bcm/s in 2% LB to 6.5\u00b11.4 \u03bcm/s in LB+MC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured from cell tracking data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "2c8a5690-4175-4238-83aa-c2e2539c5ce5",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C76",
+      "claim": "In LB+MC, WT cells tend to land on the surface soon after approaching it and show more tethered motion.",
+      "claim_type": "EXPLICIT",
+      "source": "In LB+MC, WT cells tend to land on the surface soon after approaching it (less than one round in orbiting motility) and more tethered motion is observed, which leads to more irregular and tortuous trajectories and smaller Rg for WT cells compared with the case of 2% LB (Figure 5c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed from cell trajectories and Rg distributions shown in Figure 5c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "7e99a1bb-551e-4a2c-8f6e-d1fb633158c1",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C77",
+      "claim": "\u25b3mshA cells show very similar Rg distributions in 2% LB and LB+MC.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, \u25b3mshA cells show very similar Rg distributions in the two types of solutions (Figure 5c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis shown in Figure 5c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "eee46736-36df-4cf5-99ab-fc37b9985f0f",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C78",
+      "claim": "In LB+MC, a large proportion of \u25b3mshA cells show orbiting for a substantial number of cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "More interestingly, compared with WT, in LB+MC, a large proportion of \u25b3mshA cells show orbiting for a substantial number of cycles, as shown in Figure 5b.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed from cell trajectories shown in Figure 5b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "84e42c55-d5c3-4453-8c63-f8044d46d2e3",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C82",
+      "claim": "The loss of MSHA pili results in a significant increase in mean path length in LB+MC relative to 2% LB.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that the loss of MSHA pili results in a significant increase in mean path length in LB+MC relative to 2% LB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of path length ratios between LB+MC and 2% LB",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "e0587002-6f06-4771-956b-2f99aa0de241",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C83",
+      "claim": "Prolonged orbiting motions of \u25b3mshA were not observed in a 20% Ficoll solution.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, such prolonged orbiting motions of \u25b3mshA were not observed in a 20% Ficoll solution (Figure 5), which has a high viscosity but still belongs to the class of Newtonian fluids (Winet, 1976).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed from cell trajectories in 20% Ficoll shown in Figure 5, with citation to Winet, 1976",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "d098c888-a6c7-464a-8dc2-292c159ccc83",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C84",
+      "claim": "The average cell speed for near-surface motion is 9.3\u00b14.3 \u03bcm/s for WT and 10.0\u00b13.5 \u03bcm/s for \u25b3mshA in 20% Ficoll.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 5, the cell motility behaviors in 20% Ficoll are similar to those in 2% LB only except that the average cell speed for near-surface motion is dramatically lower in 20% Ficoll, which is 9.3\u00b14.3 \u03bcm/s for WT and 10.0\u00b13.5 \u03bcm/s for \u25b3mshA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured from cell tracking data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "587b66e0-ad4a-442b-a6ec-62659fc08242",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C86",
+      "claim": "The elastic properties of viscoelastic solutions can affect cell motility behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results indicate that the elastic properties of viscoelastic solutions can also affect cell motility behavior and the role of MSHA pili as a braking and anchoring machine in cell landing is more apparent in viscoelastic (non-Newtonian) fluids than in viscous Newtonian fluids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of cell behavior in LB+MC, 2% LB, and 20% Ficoll",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "469c887b-f909-4109-a6e7-5166013c8d02",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C87",
+      "claim": "The role of MSHA pili as a braking and anchoring machine in cell landing is more apparent in viscoelastic (non-Newtonian) fluids than in viscous Newtonian fluids.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results indicate that the elastic properties of viscoelastic solutions can also affect cell motility behavior and the role of MSHA pili as a braking and anchoring machine in cell landing is more apparent in viscoelastic (non-Newtonian) fluids than in viscous Newtonian fluids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of path length ratios in different fluid types",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "6d98a824-c3fc-4f8a-82c7-f3a29b1c2e75",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C88",
+      "claim": "The first step in Vibrio cholerae biofilm formation is the transition from planktonic swimmers to stationary surface-attached cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The first step in V. cholerae biofilm formation is the transition from planktonic swimmers to the stationary surface-attached cells; this process is mediated by the landing process (Teschler et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Teschler et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "1db26015-3bf7-457e-b265-04217c97df8d",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C89",
+      "claim": "During near-surface swimming, hydrodynamic forces cause the cell bodies of swimming rod-like bacteria to take on a tilted, non-parallel orientation to the surface.",
+      "claim_type": "EXPLICIT",
+      "source": "During near-surface swimming, it has been suggested that hydrodynamic forces cause the cell bodies of swimming rod-like bacteria to take on a tilted, non-parallel, orientation to the surface (Vigeant et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Vigeant et al., 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "214d1d32-b1f1-40e6-a28c-5e11725566da",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C90",
+      "claim": "In Pseudomonas aeruginosa, TFP are distributed with a strong bias toward a particular pole.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of P. aeruginosa, whose TFP are distributed with a strong bias toward a particular pole (Skerker and Berg, 2001), pili-surface contact will depend on which pole is closer to the surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Skerker and Berg, 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "846b3360-c23d-4c6c-af18-4720b8edbbd4",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C91",
+      "claim": "The homogeneous distribution of MSHA pili on Vibrio cholerae may be more efficient at slowing tilted cell bodies by increasing the probability that pili encounter the surface.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the homogeneous distribution of MSHA pili on V. cholerae (see Figure 1c) may be more efficient at slowing such tilted cell bodies by increasing the probability that pili encounter the surface relative to bacteria with biased pili distributions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from comparison with P. aeruginosa and consideration of pili distribution effects",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "6a1c4fe1-618b-4bd8-98c2-f2537f4f3a98",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C92",
+      "claim": "Cells rotating at an angle closer to the surface have a slower angular velocity.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells rotating at an angle closer to the surface have a slower angular velocity (Figure 4e), to which hydrodynamic effects presumably have an important contribution (Bennett et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed from data in Figure 4e, with citation to Bennett et al., 2016",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "f16c5bd6-49e1-4966-8dfc-3daaa82c0bda",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C93",
+      "claim": "Progressive twisting of the surface-attached pilus fiber during circular motion may gradually cause the circular motion to stop by pulling the cell body closer to the surface.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that for cells demonstrating tethered motion, a progressive twisting of the surface-attached pilus fiber during the circular motion of cells may gradually cause the circular motion to stop by pulling the cell body ever closer to the surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative mechanism inferred from observed tethered motion dynamics",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "363f8ab5-8316-4dd1-b93d-88131dbe4ff0",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C94",
+      "claim": "Twitching has not been observed in Vibrio cholerae under the experimental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Although twitching has not to be observed in V. cholerae, this is one mechanism by which retraction-like dynamics may be achieved (Charles et al., 2019), possibly in tandem with actual retraction of MSHA pili, which has been shown recently in a different strain of V. cholera (Floyd et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of observation with citations to Charles et al., 2019 and Floyd et al., 2020",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "c75138c1-3691-4e08-82a5-e37262938920",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C95",
+      "claim": "MSHA pili retraction has been shown in a different strain of Vibrio cholerae.",
+      "claim_type": "EXPLICIT",
+      "source": "Although twitching has not to be observed in V. cholerae, this is one mechanism by which retraction-like dynamics may be achieved (Charles et al., 2019), possibly in tandem with actual retraction of MSHA pili, which has been shown recently in a different strain of V. cholera (Floyd et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Floyd et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "4415ab9b-6f29-4211-95db-7d616c55e10b",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C96",
+      "claim": "Under the experimental conditions, MSHA pili retraction events were not observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Under our conditions, we have not observed MSHA pili retraction events nor have we seen bacterial cells that gradually acquire fluorescence when only maleimide dyes were used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct observation from experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "e9f6f048-ee13-48b3-9d74-ba8d240f4119",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C97",
+      "claim": "In bacteria where pilus retraction occurs, the cell body gradually becomes fluorescent due to internalization of labeled pilin by retraction.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent since in bacteria where pilus retraction does occur, such as in the TAD pili of C. crescentus (Ellison et al., 2017), ChiRP of V. cholera (Ellison et al., 2018), and TFP of P. aeruginosa (Skerker and Berg, 2001), the cell body gradually becomes fluorescent due to internalization of labeled pilin by retraction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ellison et al., 2017; Ellison et al., 2018; Skerker and Berg, 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "f3da56c9-cc60-47c6-8160-61cd99a9ed29",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C98",
+      "claim": "The ability of MSHA pili to adhere along their entire length contrasts with TFP of Pseudomonas aeruginosa, which show pilus-subject interactions mainly mediated by the pilus tip.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to adhere not only at the distal tip, contrasts with the TFP of P. aeruginosa (Skerker and Berg, 2001) and ChiRP of V. cholerae (Ellison et al., 2018), which show that the pilus-subject interactions are mainly mediated by the pilus tip.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with cited studies on P. aeruginosa and ChiRP",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "e472ee47-f244-4171-a690-e3afa3701a77",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C99",
+      "claim": "The ability of MSHA pili to adhere along their entire length contrasts with ChiRP of Vibrio cholerae, which show pilus-subject interactions mainly mediated by the pilus tip.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to adhere not only at the distal tip, contrasts with the TFP of P. aeruginosa (Skerker and Berg, 2001) and ChiRP of V. cholerae (Ellison et al., 2018), which show that the pilus-subject interactions are mainly mediated by the pilus tip.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with cited study on ChiRP",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "b62616ab-5a70-45ae-ba60-8e0c0f4cd12a",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C100",
+      "claim": "Vibrio cholerae cells can enhance adhesion strength by increasing both the segment length and the number of MSHA pili adhered to the surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, cells can enhance the adhesion strength by increasing both the segment length and the number of MSHA pili adhered to the surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from observation that pili can adhere along their length",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "fd9cf4c0-02e8-4a60-9c8c-bf0f71c8959e",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C101",
+      "claim": "Increasing pilus adhesion segment length and number facilitates irreversible attachment in Vibrio cholerae.",
+      "claim_type": "EXPLICIT",
+      "source": "These two effects will facilitate irreversible attachment in V. cholerae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the ability to enhance adhesion strength",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "f0b14e19-6e45-458d-8e70-d8fea91eb54a",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C102",
+      "claim": "Similar running and lingering phases in near-surface motion have been reported in enterohaemorrhagic E. coli (EHEC) cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar running and lingering phases in near-surface motion have also been reported in enterohaemorrhagic E. coli (EHEC) cells (Perez Ipi\u00f1a et al., 2019), where the results suggest that by choosing the optimal transition rates, EHEC bacterial diffusivity is maximized and surface exploration efficiency is greatly improved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Perez Ipi\u00f1a et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "75dc852b-a4ae-41e9-9983-5dedef547883",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C103",
+      "claim": "By choosing optimal transition rates, EHEC bacterial diffusivity is maximized and surface exploration efficiency is greatly improved.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar running and lingering phases in near-surface motion have also been reported in enterohaemorrhagic E. coli (EHEC) cells (Perez Ipi\u00f1a et al., 2019), where the results suggest that by choosing the optimal transition rates, EHEC bacterial diffusivity is maximized and surface exploration efficiency is greatly improved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Perez Ipi\u00f1a et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "4e3aa416-5423-4bd8-992b-64333c924345",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C104",
+      "claim": "Vibrio cholerae motility exhibits a regiospecific influence on colonization in the small intestine.",
+      "claim_type": "EXPLICIT",
+      "source": "In such viscoelastic environments, Millet et al., 2014 observed considerable differences of bacterial localization in different parts of the small intestine and found that V. cholerae motility exhibits a regiospecific influence on colonization, indicating that viscoelastic intestinal mucin is a key factor limiting colonization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Millet et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "7007de88-81f9-4a2e-bbe7-4b5f4d8b488b",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C105",
+      "claim": "Viscoelastic intestinal mucin is a key factor limiting Vibrio cholerae colonization.",
+      "claim_type": "EXPLICIT",
+      "source": "In such viscoelastic environments, Millet et al., 2014 observed considerable differences of bacterial localization in different parts of the small intestine and found that V. cholerae motility exhibits a regiospecific influence on colonization, indicating that viscoelastic intestinal mucin is a key factor limiting colonization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Millet et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "5ead22c9-7d54-47af-a980-91225c6490fb",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C106",
+      "claim": "MSHA pili can stick to surfaces at any point along the filament.",
+      "claim_type": "EXPLICIT",
+      "source": "The results show that MSHA pili are evenly distributed along the cell length and can stick to surfaces at any point along the filament.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed from fluorescence videos showing pili-surface interactions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "6529a675-e84e-4990-bc46-f1f66aa6e7e3",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C107",
+      "claim": "MSHA pili act as a brake and anchor during cell landing.",
+      "claim_type": "EXPLICIT",
+      "source": "With such properties, MSHA pili are observed to act as a brake and anchor during cell landing which includes three phases: running, lingering, and attaching.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed from tracking cells through landing sequence",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "28cea1c9-21f5-426d-8bd4-c97ff23f2642",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C108",
+      "claim": "Loss of MSHA pili results in a more dramatic increase in mean path length in LB+MC than in 2% LB only or in 20% Ficoll solutions.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, loss of MSHA pili results in a more dramatic increase in mean path length in LB+MC than in 2% LB only or in 20% Ficoll solutions, indicating that the role of MSHA pili during cell landing is more apparent in viscoelastic non-Newtonian fluids than viscous Newtonian ones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from comparison of path length ratios in different fluid types",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "4e8c8f7c-23a7-4591-90d5-5c8d7f229d3f",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C109",
+      "claim": "Typical MSHA pili are ~0.4\u20131.2 \u03bcm in length.",
+      "claim_type": "EXPLICIT",
+      "source": "Typical MSHA pili are ~0.4\u20131.2 \u03bcm in length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured from fluorescence imaging of labeled pili",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "460e070e-221a-41c6-8cb8-3c61e5346c76",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C110",
+      "claim": "The cysteine substitution-based labeling method is specific and has been successfully applied to visualize TAD pili of Caulobacter crescentus and TFP of Vibrio cholerae.",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, the cysteine substitution-based labeling method is specific and has been successfully applied to visualize tight adherence (TAD) pili of Caulobacter crescentus and TFP of V. cholera (Ellison et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ellison et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "59541eac-0b38-4be8-9b44-ad430698d5d4",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C111",
+      "claim": "MshAT70C displays similar hemagglutination behavior to wild-type, indicating that the point mutation does not affect MSHA pilus function.",
+      "claim_type": "EXPLICIT",
+      "source": "The results of the hemagglutination assay test show that MshAT70C displays similar behavior to WT, which indicates that the point mutation in MSHA does not affect MSHA pilus function (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Hemagglutination assay results shown in Figure 1\u2014figure supplement 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "10bacee2-1f95-434c-9eb8-31259b6e9071",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C112",
+      "claim": "The viscosity of LB+MC is ~0.2 Pa\u22c5s.",
+      "claim_type": "EXPLICIT",
+      "source": "The viscosity of LB+MC is ~0.2 Pa\u22c5s and this gives us an upper bound for the force on the pilus of ~50 pN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured from rheological experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "bd11b5fc-d181-4e14-8e2f-3a9e99862b28",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "claim_id": "C113",
+      "claim": "2% LB is a Newtonian fluid with a viscosity ~1 cP at 30\u2103.",
+      "claim_type": "EXPLICIT",
+      "source": "To further investigate the dependence of MSHA pili function and hence cell landing on viscoelasticity, we compared cell motion behavior (Figure 5 and Figure 5\u2014figure supplement 1) obtained in 2% LB, which is a Newtonian fluid with a viscosity ~1 cP at 30\u2103 (Utada et al., 2014) and in 2% LB+1% MC, which is a non-Newtonian fluid and has a shear-dependent viscosity (Figure 6), for both WT and \u25b3mshA cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Utada et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d2b7a461-fea5-4b87-9c09-631b47128090",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "MSHA pili are evenly distributed along the cell length with 3-7 pili per cell (most frequently 4), and the number of pili shows a linear relationship with cell length, indicating constant length density. Typical pili are 0.4-1.2 \u03bcm in length.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C28 and C109 are well-supported by direct fluorescence imaging, 3D reconstruction, and statistical analysis of 110-368 cells shown in Figures 1b-c. The quantitative measurements and linear correlation analysis provide strong evidence for the distribution pattern and size characteristics of MSHA pili.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "44e40292-e1e1-433b-b3d7-de0cf6326f1d",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Under the experimental conditions used, MSHA pili growth was observed but no retraction events were detected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29 and C96 are supported by direct observation from double-color labeling experiments (Figure 1\u2014figure supplement 3) and the absence of gradual cell body fluorescence that would indicate pilin internalization. The negative result is appropriately qualified to the specific experimental conditions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "8d61247c-610b-462a-9896-61a953574409",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Wild-type V. cholerae in LB+MC exhibits both roaming (Rg=19.5 \u03bcm, speed=1.7 \u03bcm/s) and orbiting (Rg=1.6 \u03bcm, speed=1.1 \u03bcm/s) behaviors, with both phenotypes making momentary pauses where speed slows down.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C34 are well-supported by quantitative tracking data shown in Figure 2 and Videos 1-2. The measurements of radius of gyration and speed are directly obtained from cell trajectories, and the pauses are clearly visible in 3D speed plots.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "ba8ce420-7b46-4368-94c9-9b99c1572b2c",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "MSHA pili act as a brake by transiently attaching to surfaces, causing momentary pauses. Pili can stretch during attachment and different pili dynamically switch as attachment points during cell body rotation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38 are strongly supported by direct fluorescence visualization showing pili-surface contact, stretching, and dynamic switching (Figure 2e, Figure 2\u2014figure supplement 2, Videos 2-3). This provides the first direct observational evidence for the braking mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "cee6e4e5-3952-4d0c-bf96-68c1fb3b5552",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "When adhesion is sufficiently strong, a single anchoring MSHA pilus can deflect cell trajectory into circular motion. The estimated upper bound force on the pilus is ~50 pN in LB+MC and ~3 pN in water, both below the 100 pN force pili can sustain. This anchoring eventually leads to irreversible attachment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C47 are supported by direct observation (Video 4) and theoretical force calculations using resistive force theory. The force estimates are reasonable given the measured viscosity and rotation rates, though they represent upper bounds. The comparison with known pili force tolerance validates the plausibility of the mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "e10223a2-d8cf-4bb6-af3d-c93fa0d14f12",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The landing process includes three phases: running (cells swim with roaming/orbiting), lingering (paused or tethered states), and attaching (motionless on surface). Flagellum-cell body misalignments change motion direction, and upon attachment some pili attach firmly while others fluctuate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C53 are well-supported by systematic observation and classification of cell behavior patterns shown in Figure 3a and Videos 5-6. The three-phase model is clearly demonstrated through tracking individual cells through the complete landing sequence with simultaneous visualization of pili and flagellum.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "2219f65f-efec-4afa-bf96-523f48ce4054",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Transitions occur between running and lingering phases. The running phase has higher probability of transitioning to paused state (~78%) than tethered state (~22%). The tethered state shows similar transition probabilities to running (45%) and paused (55%) states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C57 are supported by quantitative analysis of 666 transition events shown in Figure 3c. The conditional probability measurements provide statistical characterization of the landing dynamics, though the sample size and statistical significance testing could be more explicitly stated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "052ee93d-6043-4f78-8f08-c134f3666301",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In the running phase, cell body rotation period is distributed between 0.25-2 s (centered at ~0.7 s, rate ~1.5 Hz) in LB+MC. Swimming speed linearly increases with rotation rate with slope |v/\u03c9c|=2.48\u00b10.04 \u03bcm/radian.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 are well-supported by statistical analysis of 416 rotation events from 54 cells (Figure 4a) and linear fitting of speed vs. rotation rate data from 47 cells (Figure 4b). The linear relationship is clearly demonstrated with quantified slope and error.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "a4fbb461-1554-4b4c-82ec-6a54110dddc1",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Tethered cells perform circular motion around the attachment point with direction switching between CCW and CW. Angular velocity is roughly constant during each interval. Standing tethered cells rotate faster (8.5\u00b11.9 rad/s) than lying ones (3.0\u00b12.1 rad/s).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C65 are supported by direct observation and quantitative measurements from tracking tethered cells (Figure 4c-e, Video 7). The statistical comparison between vertical (38 intervals, 5 cells) and horizontal (241 intervals, 25 cells) tethering is clearly demonstrated, though the sample size for vertical tethering is relatively small.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "998e7d21-596d-4e94-8b1c-26f852863d43",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "MSHA pili can attach to surfaces along their entire length, not just at the tip.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66 and C106 are supported by direct observation from Video 8 showing pilus attachment along its length. This is a novel finding that contrasts with other bacterial pili systems and has important implications for adhesion mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "1b490d2c-5af4-41da-bbaf-235f4711afba",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "After cell attachment, the flagellum frequently continues to rotate for some period before eventually stopping.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 are supported by direct observation from Videos 5 and 9. This observation provides insight into the temporal dynamics of flagellar motor activity during the attachment process.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "d117b965-5247-4f99-b3bd-893443611dba",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "LB+MC is a non-Newtonian fluid with shear-dependent viscosity (~0.2 Pa\u00b7s) and higher storage modulus than loss modulus. An 18.7% mucin solution shows similar viscoelastic behavior. LB+MC better simulates intestinal mucus environment compared to Newtonian Ficoll solutions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C71 and C112 are well-supported by rheological measurements shown in Figure 6. The comparison between LB+MC, actual mucin solution, and Ficoll validates LB+MC as an appropriate model system for studying bacterial behavior in viscoelastic environments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "8527d916-7c33-4a7e-a6c8-76e6fd25e735",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Wild-type cells demonstrate roaming and orbiting in both 2% LB and LB+MC, indicating these motilities are robust against viscoelastic environment. However, average speed is reduced ~22-fold for WT (86.7\u00b132.9 to 3.8\u00b12.6 \u03bcm/s) and ~12-fold for \u0394mshA (80.0\u00b115.0 to 6.5\u00b11.4 \u03bcm/s) in LB+MC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C75 are supported by direct observation and speed measurements from cell tracking (Figure 5a). The dramatic speed reduction in viscoelastic medium is well-documented, though the different fold-changes between WT and \u0394mshA suggest differential effects of pili presence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "f596a884-ace1-475c-85be-298d2e520975",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "In LB+MC, WT cells land quickly with more tethered motion and smaller Rg, while \u0394mshA cells show prolonged orbiting and similar Rg to 2% LB. The ratio of mean path lengths (\u0394mshA/WT) is ~1.8 in LB+MC vs ~0.8 in 2% LB and ~0.75 in 20% Ficoll. This indicates MSHA pili's braking/anchoring role is more apparent in viscoelastic non-Newtonian fluids than viscous Newtonian fluids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C87 and C108 are well-supported by comparative analysis across different fluid types shown in Figure 5. The key finding that loss of MSHA pili has greater effect in viscoelastic medium is demonstrated through multiple metrics (Rg, path length ratios, trajectory patterns). Statistical significance is shown with appropriate tests (Figure 5d).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "e3836dee-acab-492e-a1da-c195cf698be8",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The MshAT70C point mutation does not affect MSHA pilus function, as demonstrated by similar hemagglutination behavior to wild-type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C111 is supported by hemagglutination assay results (Figure 1\u2014figure supplement 4). This validation is critical for ensuring that the cysteine substitution used for labeling does not alter pili function, though additional functional assays could strengthen this conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "656dec81-c767-43e1-8a8c-e22457cdc47f",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Cell body rotation is required to balance flagellar torque during swimming. As the cell body rotates, different MSHA pili take turns approaching and receding from the surface, with switching of attached pili continuing to slow motion and change direction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 are supported by established knowledge of bacterial swimming mechanics and direct observation of pili switching behavior. The logical inference connecting cell body rotation to pili switching is sound and consistent with the observed dynamics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "82a47718-3ff0-4f14-b3cb-fd9e8250e0b4",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The homogeneous distribution of MSHA pili may be more efficient at slowing tilted cell bodies by increasing surface encounter probability. Cells can enhance adhesion strength by increasing both segment length and number of adhered pili, facilitating irreversible attachment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C91, C100, and C101 are reasonable inferences from the observed pili distribution and adhesion behavior, but they remain speculative without direct experimental validation. Comparative experiments with bacteria having different pili distributions or quantitative adhesion strength measurements would be needed to fully support these claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "28ebaf6b-2d48-4b71-aa83-30cf09544451",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Progressive twisting of surface-attached pilus fiber during circular motion may gradually cause motion to stop by pulling the cell body closer to the surface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C93 is explicitly presented as a speculative mechanism inferred from observed tethered motion dynamics. While plausible, this mechanism lacks direct experimental evidence such as measurements of pilus twisting or cell-surface distance changes during tethered motion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "51d679b0-d6af-4f63-95f3-36fdebac5fc4",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Background claims about V. cholerae biology, bacterial appendages, and intestinal mucus properties based on prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C22 are standard background information supported by appropriate citations to established literature. These provide necessary context for the study but do not represent novel findings from this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "4cb1da9d-c371-4af0-a20a-877c6ec47801",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Additional background and comparative claims about bacterial biofilm formation, near-surface swimming, pili in other species, and prior methodologies based on literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C90, C94-C95, C97-C99, C102-C105, C110, and C113 are appropriately cited background information that contextualizes the current findings within the broader literature. These are not novel results but provide important comparative context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    },
+    {
+      "id": "c5bcda1c-14d4-41d5-8d5a-b324bb440b0d",
+      "content_id": "65891253-1d98-4b80-aeef-a74adfa0097d",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Summary claim that MSHA pili act as brake and anchor during cell landing through the three-phase process.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C107 is a high-level summary of the major findings supported by the collective evidence from claims about pili distribution, braking behavior, anchoring, and the three-phase landing process. This represents the central conclusion of the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:39:20.305925Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2e33447c-3830-4ca8-90c3-2bdcb245b649",
+      "result_id": "d2b7a461-fea5-4b87-9c09-631b47128090"
+    },
+    {
+      "claim_id": "3a944fac-6f1e-41f2-858e-df0f515eec25",
+      "result_id": "d2b7a461-fea5-4b87-9c09-631b47128090"
+    },
+    {
+      "claim_id": "ed68789c-856e-4404-a975-9dd45dddcba2",
+      "result_id": "d2b7a461-fea5-4b87-9c09-631b47128090"
+    },
+    {
+      "claim_id": "a1ef72cc-00f3-4e93-871d-a5e723b815da",
+      "result_id": "d2b7a461-fea5-4b87-9c09-631b47128090"
+    },
+    {
+      "claim_id": "7c0494b7-4e8b-4a7a-863a-a8d8e1b80087",
+      "result_id": "d2b7a461-fea5-4b87-9c09-631b47128090"
+    },
+    {
+      "claim_id": "785f224d-40bb-4089-960b-f32f0c00a861",
+      "result_id": "d2b7a461-fea5-4b87-9c09-631b47128090"
+    },
+    {
+      "claim_id": "4e8c8f7c-23a7-4591-90d5-5c8d7f229d3f",
+      "result_id": "d2b7a461-fea5-4b87-9c09-631b47128090"
+    },
+    {
+      "claim_id": "7a114b10-8afd-4f92-9b96-195b77072688",
+      "result_id": "44e40292-e1e1-433b-b3d7-de0cf6326f1d"
+    },
+    {
+      "claim_id": "4415ab9b-6f29-4211-95db-7d616c55e10b",
+      "result_id": "44e40292-e1e1-433b-b3d7-de0cf6326f1d"
+    },
+    {
+      "claim_id": "fee770cc-9d0d-496d-b9fc-fe929318fa3c",
+      "result_id": "8d61247c-610b-462a-9896-61a953574409"
+    },
+    {
+      "claim_id": "62600c13-d916-4233-99f9-bedeb4267232",
+      "result_id": "8d61247c-610b-462a-9896-61a953574409"
+    },
+    {
+      "claim_id": "85a1a93b-e50d-4375-b657-f8baa82c2990",
+      "result_id": "8d61247c-610b-462a-9896-61a953574409"
+    },
+    {
+      "claim_id": "92856c96-a58c-4fb8-a1c7-2b0cdb0383d9",
+      "result_id": "8d61247c-610b-462a-9896-61a953574409"
+    },
+    {
+      "claim_id": "5ca94cb3-e751-431b-b00b-d1bb2813f253",
+      "result_id": "8d61247c-610b-462a-9896-61a953574409"
+    },
+    {
+      "claim_id": "6263177f-271b-4351-a153-e1b6716cd617",
+      "result_id": "ba8ce420-7b46-4368-94c9-9b99c1572b2c"
+    },
+    {
+      "claim_id": "7789c78f-3417-40d4-aab8-ff04606a3ca6",
+      "result_id": "ba8ce420-7b46-4368-94c9-9b99c1572b2c"
+    },
+    {
+      "claim_id": "b3ac7fd6-4b37-4b6c-b108-28b0a6ca2000",
+      "result_id": "ba8ce420-7b46-4368-94c9-9b99c1572b2c"
+    },
+    {
+      "claim_id": "5f234809-b16d-4fdc-8267-22d3b47ab6b9",
+      "result_id": "ba8ce420-7b46-4368-94c9-9b99c1572b2c"
+    },
+    {
+      "claim_id": "fa0b5999-5700-419a-a03f-947469ac6051",
+      "result_id": "cee6e4e5-3952-4d0c-bf96-68c1fb3b5552"
+    },
+    {
+      "claim_id": "8d56a05c-1930-4704-8853-ea94e30890e8",
+      "result_id": "cee6e4e5-3952-4d0c-bf96-68c1fb3b5552"
+    },
+    {
+      "claim_id": "2c5e8584-efcc-4674-9754-c2812a86dc49",
+      "result_id": "cee6e4e5-3952-4d0c-bf96-68c1fb3b5552"
+    },
+    {
+      "claim_id": "c0c3c8f2-77c3-44e9-84da-481e40525bd1",
+      "result_id": "cee6e4e5-3952-4d0c-bf96-68c1fb3b5552"
+    },
+    {
+      "claim_id": "8119feb9-2eeb-49e4-ad85-ee27d345c450",
+      "result_id": "cee6e4e5-3952-4d0c-bf96-68c1fb3b5552"
+    },
+    {
+      "claim_id": "5d5fd130-f7d4-4357-b9db-a09bff178f8a",
+      "result_id": "cee6e4e5-3952-4d0c-bf96-68c1fb3b5552"
+    },
+    {
+      "claim_id": "9cfaccc5-3528-4207-ba47-a6e0ec8a194e",
+      "result_id": "e10223a2-d8cf-4bb6-af3d-c93fa0d14f12"
+    },
+    {
+      "claim_id": "8ed66365-a6c7-4388-a53b-fa8c81fd680d",
+      "result_id": "e10223a2-d8cf-4bb6-af3d-c93fa0d14f12"
+    },
+    {
+      "claim_id": "ad7309c3-24fb-48bd-8268-6d68303b8807",
+      "result_id": "e10223a2-d8cf-4bb6-af3d-c93fa0d14f12"
+    },
+    {
+      "claim_id": "0fac5cb3-b31d-45ea-ac7c-e9603fb404f2",
+      "result_id": "e10223a2-d8cf-4bb6-af3d-c93fa0d14f12"
+    },
+    {
+      "claim_id": "9b3ca9fe-9fb3-4a2f-afa3-11db900aa7df",
+      "result_id": "e10223a2-d8cf-4bb6-af3d-c93fa0d14f12"
+    },
+    {
+      "claim_id": "87de9645-9422-402a-b9b4-cf66081e0f70",
+      "result_id": "e10223a2-d8cf-4bb6-af3d-c93fa0d14f12"
+    },
+    {
+      "claim_id": "371b307e-90e5-41f9-93fd-0a5b353803bc",
+      "result_id": "2219f65f-efec-4afa-bf96-523f48ce4054"
+    },
+    {
+      "claim_id": "0572d6b3-fefe-4303-9f83-c3590b93a3a3",
+      "result_id": "2219f65f-efec-4afa-bf96-523f48ce4054"
+    },
+    {
+      "claim_id": "ba17c10e-0826-4d16-977e-47f5fd384d1e",
+      "result_id": "2219f65f-efec-4afa-bf96-523f48ce4054"
+    },
+    {
+      "claim_id": "485e93b9-f1a0-4b60-8310-82f783207c03",
+      "result_id": "2219f65f-efec-4afa-bf96-523f48ce4054"
+    },
+    {
+      "claim_id": "42141467-44ab-404a-a4bb-da0a323d8737",
+      "result_id": "052ee93d-6043-4f78-8f08-c134f3666301"
+    },
+    {
+      "claim_id": "f4f7d020-b88f-4dfc-8d13-e80e2c99a668",
+      "result_id": "052ee93d-6043-4f78-8f08-c134f3666301"
+    },
+    {
+      "claim_id": "7cab68a6-f342-4bd4-a181-6693d9973b52",
+      "result_id": "052ee93d-6043-4f78-8f08-c134f3666301"
+    },
+    {
+      "claim_id": "9426c502-b540-4ccb-acbe-018c55620e64",
+      "result_id": "a4fbb461-1554-4b4c-82ec-6a54110dddc1"
+    },
+    {
+      "claim_id": "71f55ccb-b4a8-4b5e-b21b-4747bcc31c1a",
+      "result_id": "a4fbb461-1554-4b4c-82ec-6a54110dddc1"
+    },
+    {
+      "claim_id": "c3613645-806a-4225-a0aa-8b742709a075",
+      "result_id": "a4fbb461-1554-4b4c-82ec-6a54110dddc1"
+    },
+    {
+      "claim_id": "65e76447-16d7-467c-8b12-c878f988c5c7",
+      "result_id": "a4fbb461-1554-4b4c-82ec-6a54110dddc1"
+    },
+    {
+      "claim_id": "b617ffe8-7652-4914-8ef6-61957ec122fd",
+      "result_id": "a4fbb461-1554-4b4c-82ec-6a54110dddc1"
+    },
+    {
+      "claim_id": "f20087dc-1691-49d5-b17d-5749a379207d",
+      "result_id": "998e7d21-596d-4e94-8b1c-26f852863d43"
+    },
+    {
+      "claim_id": "5ead22c9-7d54-47af-a980-91225c6490fb",
+      "result_id": "998e7d21-596d-4e94-8b1c-26f852863d43"
+    },
+    {
+      "claim_id": "fc5846f3-8a0f-4a5b-846f-e4a49f92cff3",
+      "result_id": "1b490d2c-5af4-41da-bbaf-235f4711afba"
+    },
+    {
+      "claim_id": "e12d3841-2c0e-4780-90a2-7f593ff6c467",
+      "result_id": "1b490d2c-5af4-41da-bbaf-235f4711afba"
+    },
+    {
+      "claim_id": "a41eaad2-542e-48d6-abf4-2a20c35ee718",
+      "result_id": "d117b965-5247-4f99-b3bd-893443611dba"
+    },
+    {
+      "claim_id": "eec434dc-2fe2-4f4c-bbf7-2ae413f93648",
+      "result_id": "d117b965-5247-4f99-b3bd-893443611dba"
+    },
+    {
+      "claim_id": "e2280f50-a73c-43d6-a58a-5222eab76f50",
+      "result_id": "d117b965-5247-4f99-b3bd-893443611dba"
+    },
+    {
+      "claim_id": "10bacee2-1f95-434c-9eb8-31259b6e9071",
+      "result_id": "d117b965-5247-4f99-b3bd-893443611dba"
+    },
+    {
+      "claim_id": "022c0765-5f43-43d7-94a1-72a73cb643fc",
+      "result_id": "8527d916-7c33-4a7e-a6c8-76e6fd25e735"
+    },
+    {
+      "claim_id": "d3071156-04ba-4304-90f3-ab702d9483fc",
+      "result_id": "8527d916-7c33-4a7e-a6c8-76e6fd25e735"
+    },
+    {
+      "claim_id": "cb608d4f-1fdc-4bd7-8186-89b44364a2a1",
+      "result_id": "8527d916-7c33-4a7e-a6c8-76e6fd25e735"
+    },
+    {
+      "claim_id": "de77fdbe-a885-48dd-b250-a206ad08178a",
+      "result_id": "8527d916-7c33-4a7e-a6c8-76e6fd25e735"
+    },
+    {
+      "claim_id": "2c8a5690-4175-4238-83aa-c2e2539c5ce5",
+      "result_id": "f596a884-ace1-475c-85be-298d2e520975"
+    },
+    {
+      "claim_id": "7e99a1bb-551e-4a2c-8f6e-d1fb633158c1",
+      "result_id": "f596a884-ace1-475c-85be-298d2e520975"
+    },
+    {
+      "claim_id": "eee46736-36df-4cf5-99ab-fc37b9985f0f",
+      "result_id": "f596a884-ace1-475c-85be-298d2e520975"
+    },
+    {
+      "claim_id": "84e42c55-d5c3-4453-8c63-f8044d46d2e3",
+      "result_id": "f596a884-ace1-475c-85be-298d2e520975"
+    },
+    {
+      "claim_id": "e0587002-6f06-4771-956b-2f99aa0de241",
+      "result_id": "f596a884-ace1-475c-85be-298d2e520975"
+    },
+    {
+      "claim_id": "d098c888-a6c7-464a-8dc2-292c159ccc83",
+      "result_id": "f596a884-ace1-475c-85be-298d2e520975"
+    },
+    {
+      "claim_id": "587b66e0-ad4a-442b-a6ec-62659fc08242",
+      "result_id": "f596a884-ace1-475c-85be-298d2e520975"
+    },
+    {
+      "claim_id": "469c887b-f909-4109-a6e7-5166013c8d02",
+      "result_id": "f596a884-ace1-475c-85be-298d2e520975"
+    },
+    {
+      "claim_id": "28cea1c9-21f5-426d-8bd4-c97ff23f2642",
+      "result_id": "f596a884-ace1-475c-85be-298d2e520975"
+    },
+    {
+      "claim_id": "59541eac-0b38-4be8-9b44-ad430698d5d4",
+      "result_id": "e3836dee-acab-492e-a1da-c195cf698be8"
+    },
+    {
+      "claim_id": "702dcf1a-2a08-4f31-b636-56ad8e969405",
+      "result_id": "656dec81-c767-43e1-8a8c-e22457cdc47f"
+    },
+    {
+      "claim_id": "b3532cd6-b62d-42fa-ade9-f9af2edcda60",
+      "result_id": "656dec81-c767-43e1-8a8c-e22457cdc47f"
+    },
+    {
+      "claim_id": "55ee95c4-6cbb-460a-b0db-86b1332ab129",
+      "result_id": "656dec81-c767-43e1-8a8c-e22457cdc47f"
+    },
+    {
+      "claim_id": "846b3360-c23d-4c6c-af18-4720b8edbbd4",
+      "result_id": "82a47718-3ff0-4f14-b3cb-fd9e8250e0b4"
+    },
+    {
+      "claim_id": "b62616ab-5a70-45ae-ba60-8e0c0f4cd12a",
+      "result_id": "82a47718-3ff0-4f14-b3cb-fd9e8250e0b4"
+    },
+    {
+      "claim_id": "fd9cf4c0-02e8-4a60-9c8c-bf0f71c8959e",
+      "result_id": "82a47718-3ff0-4f14-b3cb-fd9e8250e0b4"
+    },
+    {
+      "claim_id": "f16c5bd6-49e1-4966-8dfc-3daaa82c0bda",
+      "result_id": "28ebaf6b-2d48-4b71-aa83-30cf09544451"
+    },
+    {
+      "claim_id": "b7f1de5e-42bb-4b27-bc38-03de71e96cfe",
+      "result_id": "51d679b0-d6af-4f63-95f3-36fdebac5fc4"
+    },
+    {
+      "claim_id": "fecd1f85-f84c-4ba1-b55a-2b6a957b0cfe",
+      "result_id": "51d679b0-d6af-4f63-95f3-36fdebac5fc4"
+    },
+    {
+      "claim_id": "f2a4a5ab-6ea3-46d7-8a69-178e190b8de3",
+      "result_id": "51d679b0-d6af-4f63-95f3-36fdebac5fc4"
+    },
+    {
+      "claim_id": "9d0dd5b9-1d71-4d8c-a01b-c8ab6759b2fa",
+      "result_id": "51d679b0-d6af-4f63-95f3-36fdebac5fc4"
+    },
+    {
+      "claim_id": "e48bbd43-9f55-4ec1-95de-7cfab35f2f65",
+      "result_id": "51d679b0-d6af-4f63-95f3-36fdebac5fc4"
+    },
+    {
+      "claim_id": "60f68c5a-23e8-44c6-9132-099b13223165",
+      "result_id": "51d679b0-d6af-4f63-95f3-36fdebac5fc4"
+    },
+    {
+      "claim_id": "628289a2-f874-400c-8ca8-55cc8023e9de",
+      "result_id": "51d679b0-d6af-4f63-95f3-36fdebac5fc4"
+    },
+    {
+      "claim_id": "56695844-1cb6-463e-a5c8-8f6c0f234bec",
+      "result_id": "51d679b0-d6af-4f63-95f3-36fdebac5fc4"
+    },
+    {
+      "claim_id": "8701544e-1ea6-47d9-99ca-d1efc80cafc2",
+      "result_id": "51d679b0-d6af-4f63-95f3-36fdebac5fc4"
+    },
+    {
+      "claim_id": "4f9ae406-8726-4b66-a4bf-6cc4705e01c1",
+      "result_id": "51d679b0-d6af-4f63-95f3-36fdebac5fc4"
+    },
+    {
+      "claim_id": "59188eb6-c0e0-4b3e-8d8d-aac153478e8c",
+      "result_id": "51d679b0-d6af-4f63-95f3-36fdebac5fc4"
+    },
+    {
+      "claim_id": "d1fb7954-04ef-41c4-b727-e0bd584b9119",
+      "result_id": "51d679b0-d6af-4f63-95f3-36fdebac5fc4"
+    },
+    {
+      "claim_id": "c94b739e-0c74-4bdb-809b-dce768f6b290",
+      "result_id": "51d679b0-d6af-4f63-95f3-36fdebac5fc4"
+    },
+    {
+      "claim_id": "ca246787-d1b8-4dd0-8281-fcb0674f0467",
+      "result_id": "51d679b0-d6af-4f63-95f3-36fdebac5fc4"
+    },
+    {
+      "claim_id": "46bf89dd-9956-4d53-b476-69f14be93e4e",
+      "result_id": "51d679b0-d6af-4f63-95f3-36fdebac5fc4"
+    },
+    {
+      "claim_id": "0c97b4f0-c205-4370-9741-aec9d661108c",
+      "result_id": "51d679b0-d6af-4f63-95f3-36fdebac5fc4"
+    },
+    {
+      "claim_id": "e9949a7c-85a7-405b-aac2-abdb75d00a03",
+      "result_id": "51d679b0-d6af-4f63-95f3-36fdebac5fc4"
+    },
+    {
+      "claim_id": "3ca18b4e-8e59-45cc-b2dd-d7f6e094fa20",
+      "result_id": "51d679b0-d6af-4f63-95f3-36fdebac5fc4"
+    },
+    {
+      "claim_id": "46223a50-f31a-4148-8ee7-76539a0ebd5f",
+      "result_id": "51d679b0-d6af-4f63-95f3-36fdebac5fc4"
+    },
+    {
+      "claim_id": "1ab5632d-d33d-4754-989d-017b8b201724",
+      "result_id": "51d679b0-d6af-4f63-95f3-36fdebac5fc4"
+    },
+    {
+      "claim_id": "1783aa77-f420-4229-a967-92985c3102c2",
+      "result_id": "51d679b0-d6af-4f63-95f3-36fdebac5fc4"
+    },
+    {
+      "claim_id": "df072191-2be5-4d45-892e-6e55d257b770",
+      "result_id": "51d679b0-d6af-4f63-95f3-36fdebac5fc4"
+    },
+    {
+      "claim_id": "6d98a824-c3fc-4f8a-82c7-f3a29b1c2e75",
+      "result_id": "4cb1da9d-c371-4af0-a20a-877c6ec47801"
+    },
+    {
+      "claim_id": "1db26015-3bf7-457e-b265-04217c97df8d",
+      "result_id": "4cb1da9d-c371-4af0-a20a-877c6ec47801"
+    },
+    {
+      "claim_id": "214d1d32-b1f1-40e6-a28c-5e11725566da",
+      "result_id": "4cb1da9d-c371-4af0-a20a-877c6ec47801"
+    },
+    {
+      "claim_id": "363f8ab5-8316-4dd1-b93d-88131dbe4ff0",
+      "result_id": "4cb1da9d-c371-4af0-a20a-877c6ec47801"
+    },
+    {
+      "claim_id": "c75138c1-3691-4e08-82a5-e37262938920",
+      "result_id": "4cb1da9d-c371-4af0-a20a-877c6ec47801"
+    },
+    {
+      "claim_id": "e9f6f048-ee13-48b3-9d74-ba8d240f4119",
+      "result_id": "4cb1da9d-c371-4af0-a20a-877c6ec47801"
+    },
+    {
+      "claim_id": "f3da56c9-cc60-47c6-8160-61cd99a9ed29",
+      "result_id": "4cb1da9d-c371-4af0-a20a-877c6ec47801"
+    },
+    {
+      "claim_id": "e472ee47-f244-4171-a690-e3afa3701a77",
+      "result_id": "4cb1da9d-c371-4af0-a20a-877c6ec47801"
+    },
+    {
+      "claim_id": "f0b14e19-6e45-458d-8e70-d8fea91eb54a",
+      "result_id": "4cb1da9d-c371-4af0-a20a-877c6ec47801"
+    },
+    {
+      "claim_id": "75dc852b-a4ae-41e9-9983-5dedef547883",
+      "result_id": "4cb1da9d-c371-4af0-a20a-877c6ec47801"
+    },
+    {
+      "claim_id": "4e3aa416-5423-4bd8-992b-64333c924345",
+      "result_id": "4cb1da9d-c371-4af0-a20a-877c6ec47801"
+    },
+    {
+      "claim_id": "7007de88-81f9-4a2e-bbe7-4b5f4d8b488b",
+      "result_id": "4cb1da9d-c371-4af0-a20a-877c6ec47801"
+    },
+    {
+      "claim_id": "460e070e-221a-41c6-8cb8-3c61e5346c76",
+      "result_id": "4cb1da9d-c371-4af0-a20a-877c6ec47801"
+    },
+    {
+      "claim_id": "bd11b5fc-d181-4e14-8e2f-3a9e99862b28",
+      "result_id": "4cb1da9d-c371-4af0-a20a-877c6ec47801"
+    },
+    {
+      "claim_id": "6529a675-e84e-4990-bc46-f1f66aa6e7e3",
+      "result_id": "c5bcda1c-14d4-41d5-8d5a-b324bb440b0d"
+    }
+  ],
+  "comparisons": []
+}

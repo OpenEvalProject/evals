@@ -1,0 +1,1566 @@
+{
+  "submission": {
+    "id": "39f7e5b2-1b56-4895-b44f-9099bf04bd72",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T11:18:54.956397Z",
+    "updated_at": "2025-12-03T11:18:54.956397Z"
+  },
+  "content": [
+    {
+      "id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "submission_id": "39f7e5b2-1b56-4895-b44f-9099bf04bd72",
+      "content_type": "manuscript",
+      "content_text": "# Signature-scoring methods developed for bulk samples are not adequate for cancer single-cell RNA sequencing data\n\n## Authors\n\n- Nighat Noureen<sup>1</sup> ([ORCID: 0000-0001-7495-8201](https://orcid.org/0000-0001-7495-8201))\n- Zhenqing Ye<sup>1</sup>\n- Yidong Chen<sup>1</sup>\n- Xiaojing Wang<sup>1</sup>\n- Siyuan Zheng<sup>1</sup> ([ORCID: 0000-0002-1031-9424](https://orcid.org/0000-0002-1031-9424)) \u2020\n\n### Affiliations\n\n1. Greehey Children\u2019s Cancer Research Institute, UT Health San Antonio San Antonio United States\n2. Department of Population Health Sciences, UT Health San Antonio San Antonio United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nQuantifying the activity of gene expression signatures is common in analyses of single-cell RNA sequencing data. Methods originally developed for bulk samples are often used for this purpose without accounting for contextual differences between bulk and single-cell data. More broadly, few attempts have been made to benchmark these methods. Here, we benchmark five such methods, including single sample gene set enrichment analysis (ssGSEA), Gene Set Variation Analysis (GSVA), AUCell, Single Cell Signature Explorer (SCSE), and a new method we developed, Jointly Assessing Signature Mean and Inferring Enrichment (JASMINE). Using cancer as an example, we show cancer cells consistently express more genes than normal cells. This imbalance leads to bias in performance by bulk-sample-based ssGSEA in gold standard tests and down sampling experiments. In contrast, single-cell-based methods are less susceptible. Our results suggest caution should be exercised when using bulk-sample-based methods in single-cell data analyses, and cellular contexts should be taken into consideration when designing benchmarking strategies.\n\n## Introduction\n\nSingle-cell RNA sequencing (scRNA-seq) is a powerful technology to study the ecosystems of normal and disease tissues. Gene expression signatures can be used to interrogate single cells for cell identities and other cellular properties (Noureen et al., 2021a) using signature-scoring methods. A key consideration for these methods is how to account for the variability of expression within the signature, a characteristic often associated with the overall expression variability of the interrogated sample. Despite widespread use and their benchmarking on certain applications (Holland et al., 2020; Zhang et al., 2020), limitations of these methods, including some initially developed for bulk samples, are incompletely understood in scRNA-seq analysis.\n\nCompared with bulk-sample RNAseq, scRNA-seq data have high dropout rates (Hicks et al., 2018). Dropout rates are the opposite of gene counts, that is, the number of genes detected in a cell, a feature that is associated with cell differentiation status (Gulati et al., 2020). Variability in gene counts may cause imbalanced representation of non-expressed genes in gene signatures, resulting in scoring bias. Thus, we reason that in contexts where cells differ in differentiation status, failing to account for this variability may lead to misleading signature scores.\n\nCancer cells exhibit stem-cell like properties Malta et al., 2018; thus, cancer may represent such a context. To test this, we benchmark five signature-scoring methods in cancer single-cell datasets. The five methods included bulk-sample-based methods single sample gene set enrichment analysis (ssGSEA) and Gene Set Variation Analysis (GSVA) (implemented in the R GSVA package H\u00e4nzelmann et al., 2013) and three single-cell-based methods, AUCell (Aibar et al., 2017), Single-Cell Signature Explorer (SCSE) (Pont et al., 2019), and Jointly Assessing Signature Mean and Inferring Enrichment (JASMINE), a new method we developed. We show that cancer cells consistently express more genes than normal cells, and this imbalance significantly biases results from ssGSEA and GSVA but largely spares single-cell-based methods. Our results caution against the use of bulk-sample-based methods in scRNA-seq analyses.\n\n## Results\n\n### Cancer cells demonstrate higher gene counts than normal cells\n\nSeveral recent studies showed that gene counts of single cells are associated with cell differentiation status and cell identity (Gulati et al., 2020; Qiu, 2020). Specifically, cells higher in the differentiation hierarchy express more genes. To examine if cancer and normal cells demonstrate similar imbalances, we collected 10 scRNA-seq datasets across different cancer types, technological platforms and sequencing coverage (Supplementary file 1). We also obtained cell type annotations from the original studies. We found that the average number of detected genes was significantly higher in tumor cells than in normal cells across all datasets (Figure 1A, p < 2.2e-16). This imbalance persisted when we separated normal cells into different cell populations (Figure 1\u2014figure supplement 1). However, cancer-associated cells, including cancer-associated fibroblasts (CAF), tumor-associated macrophages (TAM), and tumor-related endothelial cells (TEC) had higher gene counts than other normal cell types, sometimes even comparable to malignant cells (Figure 1\u2014figure supplement 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/71994/elife-71994-fig1-v2.jpg)\n\n**Figure 1.:** (A) The number of detected genes in tumor and normal cell populations in 10 single cell cancer RNAseq datasets. The height of each bar represents average, and whiskers represent standard deviation. In all cases, the difference is statistically significant (student t test, p < 2.2e-16). (B) Percentage of up and down regulated gene signatures in cancer cells relative to normal cells based on Cohen\u2019s d. Dot size corresponds to the percentage of all signatures tested (n = 7503). (C) Spearman correlation coefficients of Cohen\u2019s d with signature sizes across the datasets and methods. Asterisk (*) in each cell indicates p-value < 0.01. Color of the heatmap represents correlation coefficient. (D) Scores of a cell cycle gene set (GO:0007049) calculated using four methods along with MKI67 expression, gene counts, and cell cycle phases predicted by Seurat in Tumor and normal cell populations of HNSC dataset (GSE103322). The red box highlights non-cycling tumor cells that exhibit higher scores than non-cycling normal cells.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71994/elife-71994-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Number of genes expressed in tumor and normal cell types across five single cell data sets including colorectal cancer (CRC), liver cancer (LIHC), head and neck cancer (HNSC), melanoma, and clear cell renal carcinoma (ccRCC). Maroon colors represent tumor cell populations in each data set while blue represents normal cell populations across the datasets. Note that in the LIHC dataset, CAF, TAM, and TEC are cancer-associated fibroblasts, tumor-associated macrophages, and tumor-related endothelial cells, respectively.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/71994/elife-71994-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Comparing tumor and normal cell populations across six additional datasets, including (A) colorectal, (B) head and neck cancer, (C) astrocytoma, (D) IDHwt GBM, (E) liver, and (F) melanoma. The size of each dot represents the percentage of up or down signatures over all signatures tested (n = 7503).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/71994/elife-71994-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Comparison of effect size (Cohen\u2019s d) for ssGSEA (x-axis) and GSVA (y-axis) in four datasets: colorectal cancer (CRC) , head and neck cancer, melanoma, and clear cell renal carcinoma. Red line represents X = Y and black line is the regression line. Correlation is calculated using Spearman method.\n\n### Bias of ssGSEA signature scores in cancer datasets\n\nThe reliability of signature-scoring methods is measured by their ability to identify the quantitative differences between two groups of samples at the gene-signature level. Here, we compare signature scores between tumor and normal cells. One issue is that scores from these methods differ in range and variance, thus making direct comparison challenging. To overcome this challenge, we used Cohen\u2019s d (Cohen, 1988), a measurement that normalizes mean differences with standard deviation, thus generating unitless contrast that can be compared across methods. For simplicity, we defined Cohen\u2019s d greater than one as upregulated, and less than \u20131 as down regulated. These criteria were used throughout this work.\n\nWe assembled 7503 gene sets from MSigDB that each has at least 20 genes (The term \u2018gene set\u2019 is used interchangeably with \u2018gene signature\u2019; Methods). On average, single-cell methods reported similar proportions of up- and down-regulated gene sets (9% vs 12% of all input gene sets) (Figure 1B). In contrast, ssGSEA and GSVA reported 25 and 23% of the input gene sets as upregulated but only 6 and 5% as down regulated. In six out of the 10 datasets, ssGSEA and GSVA estimated more than twice as many upregulated gene sets than down gene sets. This pattern remained when we divided normal cells into different populations (Figure 1\u2014figure supplement 2). Notably, in cell types with high gene counts such as TEC, TAM, and CAF, we did not observe significantly more upregulated gene sets by ssGSEA and GSVA (Figure 1\u2014figure supplement 2E,F). These results collectively suggest ssGSEA and GSVA are sensitive to variability of gene counts common to scRNA-seq data.\n\nWe also found that Cohen\u2019s d from ssGSEA and GSVA showed consistent positive correlation with gene set sizes (Figure 1C). Single-cell methods did not demonstrate this pattern.\n\nWe observed that GSVA was slower than other methods. For instance, running the head and neck dataset with 200 threads on a 2.5 GHz Xeon processor took more than 3 days to complete. Because GSVA outputs were highly consistent with those of ssGSEA (Figure 1\u2014figure supplement 3), and its running speed would not likely scale up to single cell datasets, we dropped GSVA from subsequent analyses.\n\nWe next use an example to illustrate how gene counts may affect signature scores and data interpretation. We scored the cell cycle gene signature from Gene Ontology (GO:0007049) in the head and neck cancer (HNSC) dataset (Puram et al., 2017). For comparison, we used Seurat (Butler et al., 2018) to identify cycling cells at G2M and S phases and also included the expression of KI67, a proliferation marker expressed by cycling cells. We observed all four methods reported a higher score in cycling cells (Figure 1D). However, ssGSEA scores were significantly higher in non-cycling cancer cells than in normal cells although neither are cycling (Student\u2019s t test, p < 2.2e-16). In contrast, the single-cell-based methods did not show this difference.\n\n### Sensitivity and specificity\n\nWe next generated gold standard up- and down-regulated gene sets at various sizes to benchmark detection sensitivity. To simulate real-world scenario, we added noises to each gene set so that higher noise levels attenuate more of their signals (Method).\n\nWe found gene set size had negligible impacts on detection rates (Figure 2\u2014figure supplement 1). Noise levels, on the other hand, had a much bigger impact. For up gene sets, all methods were able to detect 50% of the gene sets on average even at the 80% noise level (Figure 2A). However, for down gene sets, ssGSEA performed worse than other methods (Figure 2B). Without noise, it only detected about 85% of the gene sets. At 80% noise level, it detected around 30% of the gene sets, compared to 70\u201380% by single-cell methods.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/71994/elife-71994-fig2-v2.jpg)\n\n**Figure 2.:** (A) Recovery rate for up gene signatures across five noise levels by the four methods. Each dot represents one dataset. At each noise level, average of all datasets is used to represent the performance of each method. (B) Similarly, for down signatures. (C) Percentages of false up and down signatures. The size of the dots corresponds to the percentages of all the signatures tested. Because the contrasting groups are generated by down sampling, no signatures are expected to be identified. The numbers below the heatmap are the average percentage. (D) Accuracy of the three methods, separated into up and down signatures. Accuracy is calculated as the agreement with consensus calls by at least two methods.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71994/elife-71994-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** We simulated four gene set sizes (50, 100, 150, 200, and 300), each with five levels of noise (0, 20, 40, 60, and 80%). For each size/noise combination, we randomly generated 1000 signatures. The results shown in this figure are percentage of the 1000 random signatures. (A) Detection sensitivity for up gene signatures. Deeper color indicates lower recovery rates (thus more misses). (B) Detection sensitivity for down signatures.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/71994/elife-71994-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Average coefficient of variance between the original datasets and the 50% down-sampled datasets. Each dot represents one dataset.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/71994/elife-71994-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** In heatmap, each column represents one signature. Blue, down signature; red, up signature.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/71994/elife-71994-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) Sensitivity and false positive benchmarked against the consensus calls (signatures called by at least two methods). (B) Spearman correlation of Cohen\u2019s d broken down to each dataset. (C) Consistency between three methods, numbers are Spearman correlation coefficients.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/71994/elife-71994-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** (A) Average time consumption for completing 50 gene signatures using a 2.2 GHz, 32 GB memory CPU. (B) Memory cost for completing 50 gene signatures using a 2.2 GHz, 32 GB memory CPU.\n\nTo benchmark detection specificity, we generated null datasets by randomly choosing 100 cancer cells from each dataset. We down sampled each cell to 50% coverage, resulting in lower gene counts. These cells were then normalized to the same total coverage. Because the down-sampled cells were the same cells with the original, no up or down gene sets were expected between the two groups.\n\nWe found AUCell and JASMINE outperformed SCSE and ssGSEA in specificity (Figure 2C). On average, AUCell detected 7.5 and 1.2% of the input gene sets as up and down; JASMINE detected 4 and 1%. In four datasets, SCSE overestimated down regulated gene sets (average 25.4%). ssGSEA grossly overestimated both up- and down regulated gene sets in all datasets (average 11 and 46%, respectively).\n\nNext, we estimated how changes in gene count affected score stability. For each gene signature, we calculated coefficient of variance (CV) (Figure 2\u2014figure supplement 2). We observed that single-cell methods were robust to our down sampling, with little changes in CV. However, in three datasets, ssGSEA had a higher CV in down-sampled cells than in original cells.\n\n### Comparing with consensus and computational efficiency\n\nWe next compared the three single-cell-based methods against consensus\u2014gene sets that were identified as up- or down regulated by at least two methods. JASMINE aligned better with the consensus in most datasets (Figure 2D and Figure 2\u2014figure supplement 3). AUCell overall had lower accuracies against the consensus, particularly for down regulated gene sets, likely because it is designed to score marker signatures (Figure 2D). When breaking down to sensitivity and specificity, AUCell showed higher false positive rates (Figure 2\u2014figure supplement 4A). The three tools showed comparable sensitivity. Across the 10 datasets, SCSE and JASMINE showed better correlation (Figure 2\u2014figure supplement 4B,C), thus explaining their relatively better alignment with the consensus.\n\nFinally, we tested computing efficiency of the four methods. We randomly generated gene sets of various sizes and analyzed each gene set in a dataset consisting of 2000 cells. Figure 2\u2014figure supplement 5 shows the time and memory use averaged over 50 iterations for one gene set under the same hardware configuration (2.20 GHz CPU, 32 GB memory). Overall, SCSE was the most efficient computationally. JASMINE was the second fastest algorithm but required a memory similar to that of ssGSEA. AUCell was slightly faster than ssGSEA but required the most memory. Their performances were robust across signature sizes.\n\n### Dropouts affect ssGSEA scores\n\nTo further show the impact of dropouts on ssGSEA scores, we re-ran the down sampling experiment by setting down sampling rates to 20, 40, 60, and 80%. A down sampling rate of 80% indicates that the total sequencing depth of the down sampled cell is at 80% of the original cell. A lower down sampling rate creates more dropouts. We observed that as the down sampling rate shifted from low to high, the pattern of deregulated gene sets by ssGSEA also shifted from more up gene sets towards more down gene sets (Figure 3A and Figure 3\u2014figure supplement 1). This observation strongly associates dropouts with ssGSEA scores. In Figure 3\u2014figure supplement 2, we provide an example using real data to show how ssGSEA scores change when limited to cells with comparable gene counts.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/71994/elife-71994-fig3-v2.jpg)\n\n**Figure 3.:** (A) Percentages of up and down regulated gene signatures in original cells relative to down sampled cells for four levels of down sampling (20, 40, 60, and 80%) based on Cohen\u2019s d. Dot size corresponds to the percentage of all signatures tested (n = 7503) in Head and Neck (Puram et al., 2017). (B) Effect of dropouts on ssGSEA scoring using a dummy expression matrix. The black line denotes the cell without any dropouts, and the blue line denotes the same cell with a 60% dropout rate. Note that for the gene signature, the first 99 genes are fixed. The x axis reflects the position of the last signature gene. When the gene is at rank <4000. The two cells give identical scores. However, after entering dropout zone, the scores start to deviate.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71994/elife-71994-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Percentage of up and down regulated gene signatures in original cells relative to down sampled cells for four levels of down sampling (20, 40, 60, and 80%) based on Cohen\u2019s d. Dot size corresponds to the percentage of all signatures tested (n = 7503) (A) in astrocytoma, (B) melanoma, (C) colorectal cancer, and (D) in glioblastoma data.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/71994/elife-71994-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Comparing scores of a gene signature (\u2018ZNF597_TARGET_GENES\u2019) between JASMINE and other tools in all tumor and normal cells using the head and neck data. (B) The same comparison but limited to cells with the number of expressed genes between 4000 and 5000.\n\nTo understand how dropouts may affect ssGSEA scoring, we simulated a dummy expression profile of a cell with 10,000 genes. We then set different dropout rates to the cell ranging from no dropout to 80% dropout. Genes were ranked from high to low expression to mimic ssGSEA calculation and the gene rankings were identical at each dropout rate. We then assembled a gene signature of 100 genes. The first 99 genes were drawn from the top 1000 genes, and the last gene was added to the signature from the 1001st gene onward to the bottom of the list. This way, the signature consists of 99 highly expressed genes and a floating gene. As the floating gene moves toward the dropout zone, we can observe how the signature score changes, especially around the dropout zone. The codes to reproduce these data can be found at our Github repository (Methods). Figure 3B shows the result at the 60% dropout rate. Before entering the dropout zone, the signature score was identical between the no-dropout cell and the 60%-dropout cell. However, when the floating gene was between ranks 4000 and 7000, the signature was scored higher in the dropout cell; when moving further toward ranks 7000\u201310,000, the signature was scored lower in the dropout cell. Thus, the scores teetered around the tie rank of dropout genes, that is, 7000. This simple experiment demonstrates that though tedious, dropouts are sufficient to change ssGSEA scores in unintended ways.\n\n## Discussion\n\nIn this study, we benchmarked five signature-scoring methods, including two that were developed for bulk sample RNAseq analysis (ssGSEA and GSVA), and three that were developed for scRNA-seq analysis (AUCell, SCSE, and JASMINE). Because ssGSEA and GSVA generate highly correlated scores and GSVA is slower, we focused on ssGSEA and the other three methods. Unlike methods that test for signature enrichment between sample groups, these signature-scoring methods quantify expression activity of a gene set in a sample independent of other samples. Outputs from these methods can be conveniently tested for association with complex sample characteristics. We show that single-cell-based methods are more robust at identifying bona fide up- and down regulated gene signatures from scRNAseq data. In contrast, bulk-sample-based ssGSEA and GSVA are more susceptible to dropouts. These disparities stem from their distinct mechanism to score signatures. AUCell uses Area Under the Curve (AUC) to test the enrichment of a gene set among top expressed genes in a cell. SCSE measures a signature using normalized total expression of the signature genes. AUCell and SCSE intuitively counter dropout effects by using only expressed genes. JASMINE considers the enrichment of signature genes in expressed genes to counter dropout effects, and meanwhile, evaluates the average expression level of the expressed signature genes. Bulk-sample-based methods were not designed to deal with excessive dropouts, which may mislead analysis especially if cell biology underpins different dropout rates. We further show that among single-cell methods, JASMINE and SCSE showed better concordance, and JASMINE outperforms SCSE in down sampling tests.\n\nDropouts were initially thought to result from low amounts of input RNA and transcriptional stochasticity. However, more studies showed that dropouts are associated with cell states and identities (Gulati et al., 2020; Qiu, 2020). Thus, in cellular contexts where cells may have systematic differences in dropout rates, any tool that fails to account for dropouts may generate misleading even erroneous data. In conclusion, our results caution against using bulk-sample-based signature-scoring methods to score single cells. Our study also suggests that it is important to consider cellular contexts when benchmarking methods for scRNA-seq data analysis, particularly when bulk-sample-based methods are involved.\n\n## Materials and methods\n\n### Single cell data sets and signature scoring\n\nWe used single cell data sets from 10 published studies (Bi et al., 2021; Chung et al., 2017; Darmanis et al., 2017; He et al., 2021; Lee et al., 2020; Ma et al., 2019; Neftel et al., 2019; Puram et al., 2017; Tirosh et al., 2016; Venteicher et al., 2017) for the evaluation of number of expressed genes in tumor versus normal cells to identify significant heterogenous patterns among the two phenotypes. Annotations of cell identity were also downloaded from each publication. We filtered all the data sets by removing non-expressed genes and then applied regularized negative binomial regression implemented in Seurat for normalization. We used C2 (n = 6226), C3 (n = 3556) and Hallmarks (n = 50) modules from MSigDB (Subramanian et al., 2005) v.7.2, to calculate the ratio of signature genes across all data sets and further signature scoring. We tested five tools for signature score calculations, including SCSE (Pont et al., 2019), AUCell (Aibar et al., 2017), ssGSEA, GSVA (H\u00e4nzelmann et al., 2013), and JASMINE. GSVA was included in tumor-normal comparisons but was dropped in gold standard tests and down sampling experiments due to slow running speed and highly correlated outputs with ssGSEA. We used GSVA and ssGSEA methods implemented in the GSVA Bioconductor (H\u00e4nzelmann et al., 2013) and AUCell method from AUCell Bioconductor packages (Aibar et al., 2017) with default parameters. We implemented SCSE in the R environment (v4.0) according to the equation reported in their paper (Pont et al., 2019). The output scores were used as is in tumor/normal cell comparisons and simulation analyses.\n\n### Jointly Assessing Signature Mean and Inferring Enrichment\n\nFor each signature, JASMINE calculates the approximate mean using gene ranks among expressed genes and the enrichment of the signature in expressed genes. The two are then scaled to 0\u20131 and averaged to result in the final JASMINE score.\n\nAssume Rg represents the rank of an expressed signature gene g among genes with expression value >0 in a cell, then a mean rank vector Vmean is calculated as follows:\n\n$$\nV_{mean}=\\sum_{i=1}^{m}R_{g,i}/(m\\timesN)\n$$\n\nWhere m represents the total number of expressed signature genes and N represents the total number of expressed genes in the cell. Because the mean is based on ranks, it is robust to scale normalization methods. It assesses the expression level of the signature only using genes detected in one cell, thus minimizing the effect of dropouts.\n\nTo assess signature enrichment in the expressed genes, we calculate either the Odds Ratio (OR) using four variables: a = signature genes expressed, b = signature genes not expressed, c = non-signature genes expressed, and d = non-signature genes not expressed. The signature enrichment using OR is calculated as follows:\n\n$$\nOR=(a*d)/(b*c)\n$$\n\nIn practice, c is unlikely zero. For smaller signatures, b can be occasionally 0. In that case, we replace it with 1. In our testing, we observed that 99% of the gene sets did not encounter this issue in any of the cells we analyzed. Despite this rare incidence, we provide Likelihood Ratio (LR) as an alternative to OR in the JASMINE function. LR is calculated as follows:\n\n$$\nLR=a*(c+d)/(c*a+b)\n$$\n\nOR and LR generate highly similar results according to our tests. OR (or LR) assesses the distribution of signature genes against the dropout background. Finally, Vmean and OR are linearly scaled to [0\u20131] and are averaged to generate JASMINE scores.\n\n### Effect size for gene sets scores\n\nWe first filtered the 9835 gene sets to 7503 by requiring a minimum size of 20 genes. We scored these gene sets (C2, C3, and hallmarks) among tumor and normal phenotypes using Cohen\u2019s d (Cohen, 1988). We utilized an R package \u2018effectsize\u2019 (Ben-Shachar et al., 2020) to calculate this metric. We used Cohen\u2019s d \u2265 one as a threshold for positive or up cases and d \u2264 \u20131 as negative or down cases with respect to tumor versus normal cells.\n\n### Gene signature simulation\n\nWe first identified differentially expressed genes for each dataset using MAST (Finak et al., 2015), a method that explicitly accounts for dropout rates. We then randomly drew N genes from upregulated genes to generate an up gene set of size N, and similarly for down gene sets. Because in practice up and down regulated gene sets contain genes that have no expression change, or even changes at opposite directions, we added noises to the simulated gene sets. For instance, when setting noise level to 20%, an up gene set of size N would have 20% of its genes drawn from the remainders other than the upregulated genes. Following this procedure, we generated gene sets at the sizes of 50, 100, 150, 200, and 300 genes. For each size, we set the noise levels to 0, 20, 40, 60, and 80%. For each noise-size combination, we randomly generated 200 gene sets. In total, 5000 gene sets were generated per data set for each direction.\n\n### Down sampling\n\nWe subset 100 tumor cells per data set for down sampling. The R package \u2018scuttle\u2019 (McCarthy et al., 2017) was used to down sample each cell to 50% total coverage. The down sampled data sets were then scaled back to ensure equal total coverage before comparison. Down sampling was also performed at various levels (20, 40, 60, and 80%) to examine its impact upon scoring of different methods especially ssGSEA.\n\n### Dropouts impact on ssGSEA\n\nWe generated a toy example to demonstrate the impact of dropouts on ssGSEA scores. We used a signature comprised of n + 1 genes. We randomly selected 99 genes from top 1000 genes of the dummy expression matrix. These 99 genes are fixed. Then starting from 1001 onward, we added one gene to the signature each time, starting from 1001st gene index throughout the remaining list. This allowed us to investigate how signature score changes as the additional gene gradually moves from high expression to dropouts. We simulated the scenario with 0% (original scores), and 60% dropout rates. This simulation clearly reflects how the dropout rates significantly affect the scoring by ssGSEA.\n\n### Data availability\n\nSingle cell data sets used in this study including their downloading sources were listed in Supplementary file 1. Gene sets were downloaded from MSigDB v.7.2 (http://www.gsea-msigdb.org/gsea/msigdb/index.jsp) for C2, C3 and Hallmark modules. JASMINE and ssGSEA testing codes are available on Github (https://github.com/NNoureen/JASMINE, copy archived at swh:1:rev:ba00996ad165ff471c6fada83e6cf76af50acdfa; Noureen, 2021b).\n",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "4f5628ed-de52-494b-900b-14e27e5e383f",
+      "submission_id": "39f7e5b2-1b56-4895-b44f-9099bf04bd72",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- C Daniela Robles-Espinoza, International Laboratory for Human Genome Research Mexico\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.71994.sa0](https://doi.org/10.7554/eLife.71994.sa0)\n\nIn this revised manuscript, Noureen and collaborators benchmark five methods that are used in single-cell RNA sequencing data analyses, including single sample gene set enrichment analysis (ssGSEA), Gene Set Variation Analysis (GSVA), AUCell, Single Cell Signature Explorer (SCSE), and a newly developed method, Jointly Assessing Signature Mean and Inferring Enrichment (JASMINE). The authors test these in distinct cancer datasets and conclude that caution should be exercised when using bulk sample-based methods in single-cell data analyses, and cellular contexts should be taken into consideration. As a rapidly developing field in need of method benchmarking, we believe that this paper will be of great interest to the bioinformatics and single-cell data analysis communities.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- C Daniela Robles-Espinoza, International Laboratory for Human Genome Research Mexico\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.71994.sa1](https://doi.org/10.7554/eLife.71994.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Signature-scoring methods developed for bulk samples are not adequate for cancer single-cell RNA sequencing data\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Patricia Wittkopp as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Leng Han (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nIn this manuscript, Noureen and collaborators benchmark four methods that are used in single-cell RNA sequencing data analyses, including single sample gene set enrichment analysis (ssGSEA), AUCell, Single Cell Signature Explorer (SCSE), and a newly developed method, Jointly Assessing Signature Mean and Inferring Enrichment (JASMINE). The authors test these in distinct cancer datasets and conclude that caution should be exercised when using bulk sample-based methods in single-cell data analyses, and cellular contexts should be taken into consideration. Although interesting and informative, reviewers have raised a number of essential considerations that need to be addressed before publication.\n\nEssential revisions:\n\nMajor Points\n\n1. A reviewer comments, \"The main analysis performed by the authors was identifying gene sets that significantly distinguish between cancer cells and the rest of the cells in the tumor. This a problematic comparison, since the cancer cells are epithelial cells (in most of the studies used) and the \"normal\" cells are stromal cells, mostly immune. Those are not comparable \"normal\" cells, and therefore it is expected that all immune-related pathways will be significant. The authors find much more down-regulated gene sets in ssGSEA compared to the other methods, but why are they wrong? If they are all immune related, I would actually conclude that ssGSEA is better than the other methods.\" They continue, \"The comparison of cancer cells to normal microenvironment cells is meaningless. If looking at cancer, a relevant comparison would be cancer cells and normal adjacent cells. But cancer in general is not the best, as there would be way too many significant signatures, and its hard to understand what makes sense and what not\". \u2013 Can the authors address this crucial observation please?\n\n2. Can the methodology by which each method identifies signatures be explained? This would help identify why these methods perform differentially. Specifically, reviewers strongly suggest understanding what in ssGSEA makes it output different results. Gene dropouts could be the root cause, but this is something that needs proof. Empirically, reviewers suggest that this can be studied by comparing different scRNA-seq methods with different gene dropouts rates \u2013 compare 10X to SMART-seq. Do the authors have an idea of how this affects results?\n\n3. The new method the authors propose (JASMINE) is not thoroughly explained and includes formulations which, in a reviewer's evaluation, lead to unintended mathematical behavior and hamper interpretation. Can the explanation on this method be expanded, please? Specifically, reviewers have raised the following points:\n\na. The four variables (a,b,c,d) considered when calculating the odds ratio make sense. However, the authors claim that \"For smaller signatures b can be occasionally 0. In that case we replace it with 1.\" In a reviewer's words, \"this is not a coherent and principled approach. I recommend the authors reconsider the mathematical formulation of this quantification to avoid the necessity of this unprincipled workaround.\"\n\nb. A reviewer commented that \"It is not clear why the average is the best way to combine the Vmean and OR to obtain the JASMINE score\". Can this be specified, please?\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Signature-scoring methods developed for bulk samples are not adequate for cancer single-cell RNA sequencing data\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Naama Barkai as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Leng Han (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nIn this revised manuscript, Noureen and collaborators benchmark five methods that are used in single-cell RNA sequencing data analyses, including single sample gene set enrichment analysis (ssGSEA), Gene Set Variation Analysis (GSVA), AUCell, Single Cell Signature Explorer (SCSE), and a newly developed method, Jointly Assessing Signature Mean and Inferring Enrichment (JASMINE). The authors test these in distinct cancer datasets and conclude that caution should be exercised when using bulk sample-based methods in single-cell data analyses, and cellular contexts should be taken into consideration. The majority of the reviewers have found the answers to their initial points to be thorough and satisfactory, and so we would only ask the authors to address the points of one new reviewer, who replaced a previous reviewer for this round of revisions.\n\nEssential revisions:\n\n1. It is unclear how calibrated any of these methods are from the analysis presented in this manuscript. To help clarity, please address:\n\na) Can the authors please detail, in the Methods section, which thresholds are used on each program?\n\nb) Is any test statistic is derived from the JASMINE method?\n\nc) How is the final statistic is derived? That is, what is the range that the statistic is scaled by? In particular, in the eyes of a reviewer, the math for Vmean is unclear. They write, \"As written, it is computed only over a fixed index g? The range on the sum is a bit confusing as well. Shouldn't it be over all the cells? If I were to guess, Vmean appears to be Vmean = \\sum_{g=1}^{m}\\sum_{c=1}^{total cells} R_{g,c}/(m*N). Is this correct?\". Please clarify these points in the Methods section.\n\n2. This manuscript infers that the main advantage of methods specific for single-cell data is to account for dropouts. However, in the view of a reviewer, the work presented here does not explicitly compare the differences between the bulk and single-cell methods, and they note that there might be factors that influence the results besides dropouts in real data. They argue that it is inconclusive to attribute poor performance of bulk methods to dropouts, especially when there is only one bulk method included in the analysis. For example, it is unclear how the authors ran ssGSEA, as there are some missing details in the Methods section. In particular, it is common practice to 'pre-filter' RNA-seq data before running any analysis on it. Did the authors do this for the real data analysis? Please add an introduction to each method, and add the details missing so readers can recapitulate the test conditions.\n\n3. From Figure 1D, the authors reveal that the non-cycling tumor cells exhibit higher scores than non-cycling normal cells by ssGSEA. However, it is also noticeable that ssGSEA scores have a much higher variance than the other three methods, and results from SCSE and AUCell scores do not show a significant difference between cycling and non-cycling cells. Are there any explanations and/or intuition for such a result?\n\n4. In the \"Dropouts affect ssGSEA scores\" section (Line 167), the \"dummy expression matrix of 1000 genes and nine columns\" is not clearly described. Is it for each cell? Is the ranking of genes the same for each dropout rate? Besides, Figure 3B is not fully explained: Could the authors please explain why the black line has a curvy feature towards the end of x axis while the blue line is linear? How about other dropout rates? There should be nine lines in the figure according to the matrix.\n",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "295dc85a-133f-4f8d-9e8c-4ef1790996b2",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C1",
+      "claim": "Single-cell RNA sequencing (scRNA-seq) is a powerful technology to study the ecosystems of normal and disease tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-cell RNA sequencing (scRNA-seq) is a powerful technology to study the ecosystems of normal and disease tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about scRNA-seq technology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "30ec1f91-82e0-4950-b4e7-ca86d96a0ae5",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C2",
+      "claim": "Gene expression signatures can be used to interrogate single cells for cell identities and other cellular properties using signature-scoring methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene expression signatures can be used to interrogate single cells for cell identities and other cellular properties (Noureen et al., 2021a) using signature-scoring methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Noureen et al., 2021a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "c9b79f4e-e9a3-4960-81ea-e472a8e9a1f6",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C3",
+      "claim": "scRNA-seq data have high dropout rates compared with bulk-sample RNAseq.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with bulk-sample RNAseq, scRNA-seq data have high dropout rates (Hicks et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hicks et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "30333b47-1df9-4052-897f-f87eb6a9ac40",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C4",
+      "claim": "Dropout rates are the opposite of gene counts, that is, the number of genes detected in a cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Dropout rates are the opposite of gene counts, that is, the number of genes detected in a cell, a feature that is associated with cell differentiation status (Gulati et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement with citation support for the association with differentiation status.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "4b9adfdd-39a7-41b6-8029-aa6dcdad18a4",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C5",
+      "claim": "Gene counts are associated with cell differentiation status.",
+      "claim_type": "EXPLICIT",
+      "source": "Dropout rates are the opposite of gene counts, that is, the number of genes detected in a cell, a feature that is associated with cell differentiation status (Gulati et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gulati et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "be2e3c2c-1496-46d2-9b9b-db716dffc5cf",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C6",
+      "claim": "Cancer cells exhibit stem-cell like properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Cancer cells exhibit stem-cell like properties Malta et al., 2018; thus, cancer may represent such a context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Malta et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "127015b6-43cb-4e89-9994-6fdd59442d09",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C7",
+      "claim": "The average number of detected genes was significantly higher in tumor cells than in normal cells across all datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the average number of detected genes was significantly higher in tumor cells than in normal cells across all datasets (Figure 1A, p < 2.2e-16).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis (p < 2.2e-16) and Figure 1A showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "e4985a25-7e5c-4132-a3f2-6707479f0aca",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C8",
+      "claim": "The imbalance in gene counts between cancer and normal cells persisted when normal cells were separated into different cell populations.",
+      "claim_type": "EXPLICIT",
+      "source": "This imbalance persisted when we separated normal cells into different cell populations (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "a70c9266-c7a5-44c8-87a4-d86f02da33b6",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C9",
+      "claim": "Cancer-associated cells, including cancer-associated fibroblasts (CAF), tumor-associated macrophages (TAM), and tumor-related endothelial cells (TEC) had higher gene counts than other normal cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "However, cancer-associated cells, including cancer-associated fibroblasts (CAF), tumor-associated macrophages (TAM), and tumor-related endothelial cells (TEC) had higher gene counts than other normal cell types, sometimes even comparable to malignant cells (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "6a403272-6600-4668-96ef-9f8721bfd082",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C10",
+      "claim": "Single-cell methods reported similar proportions of up- and down-regulated gene sets (9% vs 12% of all input gene sets).",
+      "claim_type": "EXPLICIT",
+      "source": "On average, single-cell methods reported similar proportions of up- and down-regulated gene sets (9% vs 12% of all input gene sets) (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "28cfc5bd-de23-432a-b9ad-92468bb195b5",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C11",
+      "claim": "ssGSEA and GSVA reported 25 and 23% of the input gene sets as upregulated but only 6 and 5% as down regulated.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, ssGSEA and GSVA reported 25 and 23% of the input gene sets as upregulated but only 6 and 5% as down regulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "35624d30-6c27-44dc-9a40-42c93283d434",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C12",
+      "claim": "In six out of the 10 datasets, ssGSEA and GSVA estimated more than twice as many upregulated gene sets than down gene sets.",
+      "claim_type": "EXPLICIT",
+      "source": "In six out of the 10 datasets, ssGSEA and GSVA estimated more than twice as many upregulated gene sets than down gene sets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "11065592-e0ac-418b-8c30-9848a56c0bfa",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C13",
+      "claim": "In cell types with high gene counts such as TEC, TAM, and CAF, significantly more upregulated gene sets by ssGSEA and GSVA were not observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, in cell types with high gene counts such as TEC, TAM, and CAF, we did not observe significantly more upregulated gene sets by ssGSEA and GSVA (Figure 1\u2014figure supplement 2E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 1\u2014figure supplement 2E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "2983b19d-a659-49cb-bf02-9c6f7c240ab1",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C14",
+      "claim": "Cohen's d from ssGSEA and GSVA showed consistent positive correlation with gene set sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that Cohen's d from ssGSEA and GSVA showed consistent positive correlation with gene set sizes (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 1C showing correlation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "3d738981-efe9-43bd-8dc9-8649f1d2abda",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C15",
+      "claim": "Single-cell methods did not demonstrate positive correlation between Cohen's d and gene set sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-cell methods did not demonstrate this pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the statement following the observation about ssGSEA and GSVA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "2218345d-0c3c-461b-a9ba-803ba009c800",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C16",
+      "claim": "GSVA was slower than other methods.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that GSVA was slower than other methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by computational performance testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "4e8bf6cd-1527-4e83-850e-71a5cfbc8fda",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C17",
+      "claim": "Running the head and neck dataset with GSVA using 200 threads on a 2.5 GHz Xeon processor took more than 3 days to complete.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, running the head and neck dataset with 200 threads on a 2.5 GHz Xeon processor took more than 3 days to complete.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by computational performance testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "8fbfabfc-ca7d-4b5d-8a9e-4e3d258c0e4c",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C18",
+      "claim": "GSVA outputs were highly consistent with those of ssGSEA.",
+      "claim_type": "EXPLICIT",
+      "source": "Because GSVA outputs were highly consistent with those of ssGSEA (Figure 1\u2014figure supplement 3), and its running speed would not likely scale up to single cell datasets, we dropped GSVA from subsequent analyses.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "a9117647-cb83-4a4c-a47c-4430b5824c53",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C19",
+      "claim": "All four methods reported a higher score in cycling cells for the cell cycle gene signature (GO:0007049) in the head and neck cancer dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed all four methods reported a higher score in cycling cells (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 1D showing the scores.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "9a18c4a6-c2a0-4998-916a-4c3be04ea1fa",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C20",
+      "claim": "ssGSEA scores were significantly higher in non-cycling cancer cells than in normal cells although neither are cycling.",
+      "claim_type": "EXPLICIT",
+      "source": "However, ssGSEA scores were significantly higher in non-cycling cancer cells than in normal cells although neither are cycling (Student's t test, p < 2.2e-16).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical test (Student's t test, p < 2.2e-16).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "5b6da759-341c-4561-8995-45b4fccce2dd",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C21",
+      "claim": "Single-cell-based methods did not show a difference in scores between non-cycling cancer cells and non-cycling normal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the single-cell-based methods did not show this difference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison with ssGSEA results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "8e398589-f411-4850-bdde-d19343bd7865",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C22",
+      "claim": "Gene set size had negligible impacts on detection rates.",
+      "claim_type": "EXPLICIT",
+      "source": "We found gene set size had negligible impacts on detection rates (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "f9834543-7dfd-4ad8-a5b9-37ab48e0870f",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C23",
+      "claim": "Noise levels had a much bigger impact on detection rates than gene set size.",
+      "claim_type": "EXPLICIT",
+      "source": "Noise levels, on the other hand, had a much bigger impact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison with gene set size impact.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "90e8e8e0-2f8d-4944-a6c7-b4f9ce77b616",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C24",
+      "claim": "For up gene sets, all methods were able to detect 50% of the gene sets on average even at the 80% noise level.",
+      "claim_type": "EXPLICIT",
+      "source": "For up gene sets, all methods were able to detect 50% of the gene sets on average even at the 80% noise level (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 2A showing detection rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "895d611c-eaef-4a13-8341-42e13e820084",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C25",
+      "claim": "For down gene sets, ssGSEA performed worse than other methods.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for down gene sets, ssGSEA performed worse than other methods (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 2B showing detection rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "1eeb26ab-ef33-459f-84ef-869e91da1bc9",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C26",
+      "claim": "Without noise, ssGSEA only detected about 85% of the down gene sets.",
+      "claim_type": "EXPLICIT",
+      "source": "Without noise, it only detected about 85% of the gene sets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "5e8b1627-8eb2-409f-89f1-4b55d7874a89",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C27",
+      "claim": "At 80% noise level, ssGSEA detected around 30% of the down gene sets, compared to 70\u201380% by single-cell methods.",
+      "claim_type": "EXPLICIT",
+      "source": "At 80% noise level, it detected around 30% of the gene sets, compared to 70\u201380% by single-cell methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "18596f93-5402-4601-bfeb-cded09c3517c",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C28",
+      "claim": "AUCell and JASMINE outperformed SCSE and ssGSEA in specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "We found AUCell and JASMINE outperformed SCSE and ssGSEA in specificity (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 2C showing specificity data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "39ae6b13-0f62-41a5-b0f1-30f734d9f9f1",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C29",
+      "claim": "On average, AUCell detected 7.5 and 1.2% of the input gene sets as up and down in the down sampling experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, AUCell detected 7.5 and 1.2% of the input gene sets as up and down; JASMINE detected 4 and 1%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "f7a13db9-cab3-4ab4-bd85-799139d316f6",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C30",
+      "claim": "JASMINE detected 4 and 1% of the input gene sets as up and down on average in the down sampling experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, AUCell detected 7.5 and 1.2% of the input gene sets as up and down; JASMINE detected 4 and 1%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "d1a4e4dd-61c4-4154-8ba5-902fd626fcb3",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C31",
+      "claim": "In four datasets, SCSE overestimated down regulated gene sets (average 25.4%).",
+      "claim_type": "EXPLICIT",
+      "source": "In four datasets, SCSE overestimated down regulated gene sets (average 25.4%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "eaa35c5f-78a5-43b8-aa6f-395982bcf831",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C32",
+      "claim": "ssGSEA grossly overestimated both up- and down regulated gene sets in all datasets (average 11 and 46%, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "ssGSEA grossly overestimated both up- and down regulated gene sets in all datasets (average 11 and 46%, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "05e041c8-c1ae-4cb0-8c95-e465dc992e17",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C33",
+      "claim": "Single-cell methods were robust to down sampling, with little changes in coefficient of variance (CV).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that single-cell methods were robust to our down sampling, with little changes in CV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by CV analysis in down sampling experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "7087a636-5812-4457-a32b-4f088610484d",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C34",
+      "claim": "In three datasets, ssGSEA had a higher CV in down-sampled cells than in original cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in three datasets, ssGSEA had a higher CV in down-sampled cells than in original cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by CV analysis in down sampling experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "ade948b3-8065-460d-a61e-fadae91f71b8",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C35",
+      "claim": "JASMINE aligned better with the consensus in most datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "JASMINE aligned better with the consensus in most datasets (Figure 2D and Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 2D and Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "7f7ab7a9-7f4b-437d-8d68-3da9e76e1f87",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C36",
+      "claim": "AUCell overall had lower accuracies against the consensus, particularly for down regulated gene sets.",
+      "claim_type": "EXPLICIT",
+      "source": "AUCell overall had lower accuracies against the consensus, particularly for down regulated gene sets, likely because it is designed to score marker signatures (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 2D and includes speculation about the reason.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "a356c297-eb24-4d7d-beb7-d931b18b163b",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C37",
+      "claim": "AUCell showed higher false positive rates when breaking down to sensitivity and specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "When breaking down to sensitivity and specificity, AUCell showed higher false positive rates (Figure 2\u2014figure supplement 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 2\u2014figure supplement 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "d24bdc74-d5bc-4bef-bff2-8c3c3d9633d3",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C38",
+      "claim": "The three tools showed comparable sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "The three tools showed comparable sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "8da6f928-b806-4fb5-8d3f-176f2a8d6dfb",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C39",
+      "claim": "Across the 10 datasets, SCSE and JASMINE showed better correlation.",
+      "claim_type": "EXPLICIT",
+      "source": "Across the 10 datasets, SCSE and JASMINE showed better correlation (Figure 2\u2014figure supplement 4B,C), thus explaining their relatively better alignment with the consensus.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 2\u2014figure supplement 4B,C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "2dae412a-99f5-4bab-9785-4b9c2c049cf4",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C40",
+      "claim": "SCSE was the most efficient computationally.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, SCSE was the most efficient computationally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by computational efficiency testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "83c0a1e2-8a73-45c0-8d83-219b060f9d3b",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C41",
+      "claim": "JASMINE was the second fastest algorithm but required a memory similar to that of ssGSEA.",
+      "claim_type": "EXPLICIT",
+      "source": "JASMINE was the second fastest algorithm but required a memory similar to that of ssGSEA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by computational efficiency testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "d0b78915-b8e7-46f8-92fc-9e12950358a2",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C42",
+      "claim": "AUCell was slightly faster than ssGSEA but required the most memory.",
+      "claim_type": "EXPLICIT",
+      "source": "AUCell was slightly faster than ssGSEA but required the most memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by computational efficiency testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "6e5b282d-8397-45a4-8410-e7b73e94152b",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C43",
+      "claim": "The computational performances of the methods were robust across signature sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "Their performances were robust across signature sizes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by computational efficiency testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "3fbdefe1-427e-407c-bf1a-c7d48131e671",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C44",
+      "claim": "As the down sampling rate shifted from low to high, the pattern of deregulated gene sets by ssGSEA also shifted from more up gene sets towards more down gene sets.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that as the down sampling rate shifted from low to high, the pattern of deregulated gene sets by ssGSEA also shifted from more up gene sets towards more down gene sets (Figure 3A and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 3A and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "4a0efde7-7f83-4a31-8169-fcfde28c4786",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C45",
+      "claim": "The observation that ssGSEA scores shift with down sampling rate strongly associates dropouts with ssGSEA scores.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation strongly associates dropouts with ssGSEA scores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the down sampling experiment results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "22c363af-2ba2-4ca0-a636-ad89fe564d5f",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C46",
+      "claim": "Before entering the dropout zone, the signature score was identical between the no-dropout cell and the 60%-dropout cell in the dummy expression profile simulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Before entering the dropout zone, the signature score was identical between the no-dropout cell and the 60%-dropout cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "87164b61-c446-4ab8-921b-5939bb50de59",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C47",
+      "claim": "When the floating gene was between ranks 4000 and 7000, the signature was scored higher in the dropout cell than in the no-dropout cell.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when the floating gene was between ranks 4000 and 7000, the signature was scored higher in the dropout cell; when moving further toward ranks 7000\u201310,000, the signature was scored lower in the dropout cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "2fabfed7-e238-4846-87d6-0f914b4e69ad",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C48",
+      "claim": "When the floating gene was between ranks 7000 and 10,000, the signature was scored lower in the dropout cell than in the no-dropout cell.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when the floating gene was between ranks 4000 and 7000, the signature was scored higher in the dropout cell; when moving further toward ranks 7000\u201310,000, the signature was scored lower in the dropout cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "9077cd7b-a1c5-4120-9471-2fe07833c9df",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C49",
+      "claim": "Dropouts are sufficient to change ssGSEA scores in unintended ways.",
+      "claim_type": "EXPLICIT",
+      "source": "This simple experiment demonstrates that though tedious, dropouts are sufficient to change ssGSEA scores in unintended ways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the simulation experiment results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "5a3db300-89c2-4322-8578-411906610cbd",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C50",
+      "claim": "Single-cell-based methods are more robust at identifying bona fide up- and down regulated gene signatures from scRNAseq data.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that single-cell-based methods are more robust at identifying bona fide up- and down regulated gene signatures from scRNAseq data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the benchmarking results throughout the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "651aa0e9-c498-4b90-8b8b-1b1f736479ee",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C51",
+      "claim": "Bulk-sample-based ssGSEA and GSVA are more susceptible to dropouts.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, bulk-sample-based ssGSEA and GSVA are more susceptible to dropouts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the benchmarking results throughout the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "8be386e3-357c-4245-8bbc-e427411ffee1",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C52",
+      "claim": "AUCell uses Area Under the Curve (AUC) to test the enrichment of a gene set among top expressed genes in a cell.",
+      "claim_type": "EXPLICIT",
+      "source": "AUCell uses Area Under the Curve (AUC) to test the enrichment of a gene set among top expressed genes in a cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the AUCell method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "3e2c9da2-0fe4-4646-b3d3-51efcca1defe",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C53",
+      "claim": "SCSE measures a signature using normalized total expression of the signature genes.",
+      "claim_type": "EXPLICIT",
+      "source": "SCSE measures a signature using normalized total expression of the signature genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the SCSE method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "58c1e461-23e7-428b-a83a-4993b29e30df",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C54",
+      "claim": "AUCell and SCSE intuitively counter dropout effects by using only expressed genes.",
+      "claim_type": "EXPLICIT",
+      "source": "AUCell and SCSE intuitively counter dropout effects by using only expressed genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about how these methods work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "f989ea9a-0bde-4460-9f7d-97c7c0ad481e",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C55",
+      "claim": "JASMINE considers the enrichment of signature genes in expressed genes to counter dropout effects, and meanwhile, evaluates the average expression level of the expressed signature genes.",
+      "claim_type": "EXPLICIT",
+      "source": "JASMINE considers the enrichment of signature genes in expressed genes to counter dropout effects, and meanwhile, evaluates the average expression level of the expressed signature genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the JASMINE method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "abbc8148-6cbd-430a-bad6-29317078e950",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C56",
+      "claim": "Bulk-sample-based methods were not designed to deal with excessive dropouts.",
+      "claim_type": "EXPLICIT",
+      "source": "Bulk-sample-based methods were not designed to deal with excessive dropouts, which may mislead analysis especially if cell biology underpins different dropout rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the design of bulk-sample-based methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "c2eb6906-abb5-47cc-9e7b-97f21f3bad49",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C57",
+      "claim": "Among single-cell methods, JASMINE and SCSE showed better concordance.",
+      "claim_type": "EXPLICIT",
+      "source": "We further show that among single-cell methods, JASMINE and SCSE showed better concordance, and JASMINE outperforms SCSE in down sampling tests.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the benchmarking results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "342fa950-78eb-4878-b571-116546e415a0",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C58",
+      "claim": "JASMINE outperforms SCSE in down sampling tests.",
+      "claim_type": "EXPLICIT",
+      "source": "We further show that among single-cell methods, JASMINE and SCSE showed better concordance, and JASMINE outperforms SCSE in down sampling tests.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the benchmarking results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "498d5c62-5802-4b2b-b627-b0ec169157f2",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C59",
+      "claim": "Dropouts were initially thought to result from low amounts of input RNA and transcriptional stochasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Dropouts were initially thought to result from low amounts of input RNA and transcriptional stochasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about historical understanding of dropouts.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "e5cba697-a390-4271-ad09-5a210859751b",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C60",
+      "claim": "More studies showed that dropouts are associated with cell states and identities.",
+      "claim_type": "EXPLICIT",
+      "source": "However, more studies showed that dropouts are associated with cell states and identities (Gulati et al., 2020; Qiu, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Gulati et al., 2020 and Qiu, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "ae9a4503-1726-4c00-a53a-78d8dc9d5624",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C61",
+      "claim": "In cellular contexts where cells may have systematic differences in dropout rates, any tool that fails to account for dropouts may generate misleading even erroneous data.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in cellular contexts where cells may have systematic differences in dropout rates, any tool that fails to account for dropouts may generate misleading even erroneous data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the study results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "e88e6e53-a055-41df-b9e8-4fe6d61a2ff1",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C62",
+      "claim": "It is important to consider cellular contexts when benchmarking methods for scRNA-seq data analysis, particularly when bulk-sample-based methods are involved.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study also suggests that it is important to consider cellular contexts when benchmarking methods for scRNA-seq data analysis, particularly when bulk-sample-based methods are involved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "d04ecec2-9c8d-4ad3-a74e-78ebccdeff02",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C63",
+      "claim": "Gene counts of single cells are associated with cell differentiation status and cell identity.",
+      "claim_type": "EXPLICIT",
+      "source": "Several recent studies showed that gene counts of single cells are associated with cell differentiation status and cell identity (Gulati et al., 2020; Qiu, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Gulati et al., 2020 and Qiu, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "171c5d90-b0aa-4706-b873-be94285f94ce",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C64",
+      "claim": "Cells higher in the differentiation hierarchy express more genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, cells higher in the differentiation hierarchy express more genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "a9124262-c68d-4a6e-8baa-ea6e3df2588f",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C65",
+      "claim": "The study collected 10 scRNA-seq datasets across different cancer types, technological platforms and sequencing coverage.",
+      "claim_type": "EXPLICIT",
+      "source": "To examine if cancer and normal cells demonstrate similar imbalances, we collected 10 scRNA-seq datasets across different cancer types, technological platforms and sequencing coverage (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the study methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "33469942-745a-4e87-be22-b385a258e3fa",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C66",
+      "claim": "Cell type annotations were obtained from the original studies.",
+      "claim_type": "EXPLICIT",
+      "source": "We also obtained cell type annotations from the original studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the study methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "b1994d52-6fae-4f1c-a22d-443dbe070927",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C67",
+      "claim": "The study assembled 7503 gene sets from MSigDB that each has at least 20 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We assembled 7503 gene sets from MSigDB that each has at least 20 genes (The term 'gene set' is used interchangeably with 'gene signature'; Methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the study methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "dcd35eea-3249-4829-8288-f9ffb11c51ce",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C68",
+      "claim": "Cohen's d greater than one was defined as upregulated, and less than \u20131 as down regulated.",
+      "claim_type": "EXPLICIT",
+      "source": "For simplicity, we defined Cohen's d greater than one as upregulated, and less than \u20131 as down regulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the study methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "8798918b-3824-4b37-ac97-58b07f42b213",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C69",
+      "claim": "The study used regularized negative binomial regression implemented in Seurat for normalization.",
+      "claim_type": "EXPLICIT",
+      "source": "We filtered all the data sets by removing non-expressed genes and then applied regularized negative binomial regression implemented in Seurat for normalization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the study methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "27ee8497-3a9f-4075-9d69-f0f95d9fdb2e",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C70",
+      "claim": "The study used C2 (n = 6226), C3 (n = 3556) and Hallmarks (n = 50) modules from MSigDB v.7.2.",
+      "claim_type": "EXPLICIT",
+      "source": "We used C2 (n = 6226), C3 (n = 3556) and Hallmarks (n = 50) modules from MSigDB (Subramanian et al., 2005) v.7.2, to calculate the ratio of signature genes across all data sets and further signature scoring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the study methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "09a729dc-e54b-42ac-9569-ec853ca94f0c",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C71",
+      "claim": "The study used MAST to identify differentially expressed genes for each dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "We first identified differentially expressed genes for each dataset using MAST (Finak et al., 2015), a method that explicitly accounts for dropout rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the study methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "03866de5-c19e-4a73-af84-e5bdded519b9",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C72",
+      "claim": "MAST is a method that explicitly accounts for dropout rates.",
+      "claim_type": "EXPLICIT",
+      "source": "We first identified differentially expressed genes for each dataset using MAST (Finak et al., 2015), a method that explicitly accounts for dropout rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the MAST method with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "3d787fa8-760e-4fe9-a9da-d431589078d5",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C73",
+      "claim": "For each signature, JASMINE calculates the approximate mean using gene ranks among expressed genes and the enrichment of the signature in expressed genes.",
+      "claim_type": "EXPLICIT",
+      "source": "For each signature, JASMINE calculates the approximate mean using gene ranks among expressed genes and the enrichment of the signature in expressed genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the JASMINE method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "80bacba7-3126-4edd-ab85-2720a7dafdd7",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C74",
+      "claim": "The two components (mean and enrichment) are then scaled to 0\u20131 and averaged to result in the final JASMINE score.",
+      "claim_type": "EXPLICIT",
+      "source": "The two are then scaled to 0\u20131 and averaged to result in the final JASMINE score.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the JASMINE method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "fd2f4385-9b8a-4997-8095-e735a35980f6",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C75",
+      "claim": "The mean rank calculation in JASMINE is robust to scale normalization methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the mean is based on ranks, it is robust to scale normalization methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the properties of the JASMINE method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "04b26a8b-3405-41a8-8c18-117a40f93d3d",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "claim_id": "C76",
+      "claim": "JASMINE assesses the expression level of the signature only using genes detected in one cell, thus minimizing the effect of dropouts.",
+      "claim_type": "EXPLICIT",
+      "source": "It assesses the expression level of the signature only using genes detected in one cell, thus minimizing the effect of dropouts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the properties of the JASMINE method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b04467a3-eeb5-4e02-8f49-439d39780679",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Cancer cells consistently express more genes (higher gene counts) than normal cells across all 10 scRNA-seq datasets analyzed. This imbalance persists when normal cells are separated into different populations, though cancer-associated cells (CAF, TAM, TEC) show gene counts comparable to malignant cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C9 provide strong statistical evidence (p < 2.2e-16) with visual support from Figure 1A and supplementary figures. The finding is consistent across multiple datasets, cancer types, and technological platforms (C65). Claims C63-C64 provide citation support for the biological interpretation linking gene counts to differentiation status.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "4ae31561-086e-4625-9dd4-0fdefcbfcd27",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "ssGSEA and GSVA show systematic bias in cancer scRNA-seq data, reporting disproportionately more upregulated than downregulated gene sets (25% vs 6% and 23% vs 5%, respectively), while single-cell methods report balanced proportions (9% vs 12%). This bias correlates with gene set size for ssGSEA/GSVA but not for single-cell methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C15 are well-supported by data across 10 datasets with consistent patterns shown in Figure 1B-C. The observation that the bias disappears in cell types with high gene counts (C13) strengthens the interpretation that gene count differences drive the bias. The correlation analysis (C14-C15) provides mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "cfffb7b9-4916-4e34-b3a1-f36986bb753d",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In a cell cycle signature scoring example, ssGSEA incorrectly assigns significantly higher scores to non-cycling cancer cells compared to non-cycling normal cells (p < 2.2e-16), while single-cell methods correctly show no difference between these groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C21 provide a concrete example with statistical support and validation using Seurat cell cycle prediction and KI67 expression (Figure 1D). This demonstrates the practical consequences of the bias identified in the previous result, showing that ssGSEA produces biologically implausible results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "08d55d6e-8b57-49b0-975d-e6009bb73a09",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In gold standard sensitivity tests with simulated gene sets, all methods perform similarly for upregulated gene sets (50% detection at 80% noise), but ssGSEA shows substantially worse performance for downregulated gene sets (30% detection at 80% noise vs 70-80% for single-cell methods, and only 85% detection even without noise).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C27 describe a well-designed simulation experiment with controlled noise levels. The results are supported by Figure 2A-B and supplementary figures. The finding that gene set size has negligible impact while noise level matters (C22-C23) validates the experimental design. The asymmetric performance of ssGSEA for up vs down gene sets is consistent with the bias observed in real data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "e404e795-ed69-4844-bfba-7182f1ccf314",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In downsampling specificity tests where no differential gene sets are expected, AUCell and JASMINE show high specificity (detecting 7.5%/1.2% and 4%/1% false up/down sets), while SCSE overestimates downregulated sets in some datasets (25.4%) and ssGSEA grossly overestimates both (11% and 46%). Single-cell methods show stable coefficient of variance, while ssGSEA shows increased CV in three datasets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C34 describe a clever null experiment where downsampled cells are compared to originals, so no differences should be detected. The results clearly demonstrate specificity differences between methods, with ssGSEA showing poor specificity. The CV analysis (C33-C34) provides additional evidence of instability. Figure 2C and supplementary figures support these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "9ae0bc45-36a2-48c3-a11f-0eb2792d6f72",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "When comparing single-cell methods against consensus calls (gene sets identified by at least 2 methods), JASMINE shows the best alignment in most datasets, while AUCell has lower accuracy particularly for downregulated gene sets and higher false positive rates. All three methods show comparable sensitivity, and SCSE and JASMINE show better correlation across datasets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C39 are supported by Figure 2D and supplementary figures showing accuracy, sensitivity, specificity, and correlation analyses. The consensus approach is reasonable though not a true gold standard. The speculation about AUCell's design for marker signatures (C36) is appropriately qualified. The correlation analysis (C39) provides mechanistic insight into the accuracy differences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "8e1e1ec2-6e90-4a3c-a97b-f1803f134baf",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Computational efficiency testing shows SCSE is fastest, JASMINE is second fastest but requires memory similar to ssGSEA, and AUCell is slightly faster than ssGSEA but requires the most memory. Performance is robust across signature sizes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C43 are supported by computational benchmarking data in Figure 2\u2014figure supplement 5. The testing methodology is described (2000 cells, 50 iterations, same hardware). This provides practical information for method selection, though the specific hardware configuration may limit generalizability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "114b854a-5040-4ca0-9549-a37853374ec7",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "GSVA is substantially slower than other methods (>3 days for one dataset with 200 threads) and produces outputs highly consistent with ssGSEA, leading to its exclusion from subsequent analyses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C18 are supported by computational testing and Figure 1\u2014figure supplement 3 showing correlation with ssGSEA. The decision to drop GSVA is justified by the combination of slow speed and redundancy with ssGSEA. This is a reasonable methodological decision for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "55ead5fb-4388-4983-943a-578e2936b1e3",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Varying downsampling rates from 20% to 80% causes ssGSEA's pattern of deregulated gene sets to shift systematically from more upregulated to more downregulated gene sets, strongly associating dropout rates with ssGSEA scoring bias.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45 are supported by Figure 3A and supplementary figures showing the systematic shift across multiple datasets. This dose-response relationship strengthens the causal interpretation that dropouts drive the bias. However, C45 involves inference from the data pattern.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "3eac52f1-655b-4394-abaa-08dfea4f9c63",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "A simulation with a dummy expression profile demonstrates that dropouts can cause ssGSEA scores to change in unintended ways. When a signature gene enters the dropout zone, scores can be either inflated or deflated depending on the gene's rank position relative to the dropout boundary.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C49 describe a mechanistic simulation that explains how ssGSEA's ranking algorithm interacts with dropouts. The simulation is simple but illustrative, showing that dropouts are sufficient to cause scoring artifacts. Figure 3B visualizes the effect. The code is available for reproduction, enhancing credibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "2c923933-0b33-4d85-9441-381018fb7c52",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Single-cell-based methods (AUCell, SCSE, JASMINE) are more robust than bulk-sample-based methods (ssGSEA, GSVA) for scRNA-seq data because they account for dropouts by focusing on expressed genes. AUCell uses AUC enrichment among top genes, SCSE uses normalized total expression, and JASMINE combines enrichment with average expression of detected genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C56 synthesize the study's findings and provide mechanistic explanations. C50-C51 are well-supported by the cumulative evidence from all experiments. C52-C55 accurately describe the methods' algorithms. C56 is a reasonable inference about design intent. These claims effectively summarize the main conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "94e9f4df-5d9a-45f0-993b-fbb18436b630",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Among single-cell methods, JASMINE and SCSE show better concordance with each other, and JASMINE outperforms SCSE in downsampling tests.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 are supported by the benchmarking results shown in Figures 2 and supplementary figures, particularly the correlation analyses and downsampling experiments. This provides guidance for method selection among single-cell approaches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "34634955-217f-4e42-bc6f-f0fa7d8a9538",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study concludes that dropouts in scRNA-seq are associated with cell states and identities (not just technical artifacts), and tools that fail to account for dropouts may generate misleading results. Cellular context should be considered when benchmarking methods, especially when bulk-sample-based methods are involved.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C62 provide context and broader implications. C59-C60 are supported by citations. C61-C62 are reasonable inferences from the study's findings. These claims appropriately frame the study's significance and limitations, though they represent interpretations rather than direct experimental results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "e75cb0fd-5524-4257-b6c3-d2b8e167e5b4",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study methodology involved collecting 10 scRNA-seq datasets across different cancer types and platforms, using 7503 gene sets from MSigDB (\u226520 genes), normalizing with Seurat's regularized negative binomial regression, and defining Cohen's d thresholds (>1 for upregulated, <-1 for downregulated). MAST was used to identify differentially expressed genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C72 describe the study methodology. These are straightforward methodological descriptions supported by the Methods section. The approaches are generally appropriate, though the Cohen's d threshold choice (C68) is somewhat arbitrary. The use of MAST (C71-C72) is appropriate given its explicit accounting for dropout rates.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "089a01a0-d9e2-4dfe-8328-aed36a71b42b",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "JASMINE calculates scores by combining two components: (1) approximate mean using gene ranks among expressed genes, and (2) enrichment of signature genes in expressed genes. These are scaled to 0-1 and averaged. The rank-based mean is robust to normalization methods and minimizes dropout effects by using only detected genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C76 describe the JASMINE algorithm developed by the authors. The mathematical formulation is provided in the Methods section. C75-C76 involve inferences about the method's properties that are reasonable given the algorithm design. The method appears sound, though independent validation would strengthen confidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    },
+    {
+      "id": "4afb316c-9d6a-4ada-8f34-bc6731e349e8",
+      "content_id": "441f5d9b-e09d-4c89-bc83-7fbc50657fc2",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background claims establish that scRNA-seq is a powerful technology for studying tissues, gene signatures can interrogate cell properties, scRNA-seq has high dropout rates (opposite of gene counts), gene counts associate with differentiation status, and cancer cells exhibit stem-cell-like properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 provide background context supported by citations to prior work (Noureen et al. 2021a, Hicks et al. 2018, Gulati et al. 2020, Malta et al. 2018). These are established facts in the field that motivate the study. The claims are appropriately cited and provide necessary context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:18:54.956397Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "127015b6-43cb-4e89-9994-6fdd59442d09",
+      "result_id": "b04467a3-eeb5-4e02-8f49-439d39780679"
+    },
+    {
+      "claim_id": "e4985a25-7e5c-4132-a3f2-6707479f0aca",
+      "result_id": "b04467a3-eeb5-4e02-8f49-439d39780679"
+    },
+    {
+      "claim_id": "a70c9266-c7a5-44c8-87a4-d86f02da33b6",
+      "result_id": "b04467a3-eeb5-4e02-8f49-439d39780679"
+    },
+    {
+      "claim_id": "d04ecec2-9c8d-4ad3-a74e-78ebccdeff02",
+      "result_id": "b04467a3-eeb5-4e02-8f49-439d39780679"
+    },
+    {
+      "claim_id": "171c5d90-b0aa-4706-b873-be94285f94ce",
+      "result_id": "b04467a3-eeb5-4e02-8f49-439d39780679"
+    },
+    {
+      "claim_id": "6a403272-6600-4668-96ef-9f8721bfd082",
+      "result_id": "4ae31561-086e-4625-9dd4-0fdefcbfcd27"
+    },
+    {
+      "claim_id": "28cfc5bd-de23-432a-b9ad-92468bb195b5",
+      "result_id": "4ae31561-086e-4625-9dd4-0fdefcbfcd27"
+    },
+    {
+      "claim_id": "35624d30-6c27-44dc-9a40-42c93283d434",
+      "result_id": "4ae31561-086e-4625-9dd4-0fdefcbfcd27"
+    },
+    {
+      "claim_id": "11065592-e0ac-418b-8c30-9848a56c0bfa",
+      "result_id": "4ae31561-086e-4625-9dd4-0fdefcbfcd27"
+    },
+    {
+      "claim_id": "2983b19d-a659-49cb-bf02-9c6f7c240ab1",
+      "result_id": "4ae31561-086e-4625-9dd4-0fdefcbfcd27"
+    },
+    {
+      "claim_id": "3d738981-efe9-43bd-8dc9-8649f1d2abda",
+      "result_id": "4ae31561-086e-4625-9dd4-0fdefcbfcd27"
+    },
+    {
+      "claim_id": "a9117647-cb83-4a4c-a47c-4430b5824c53",
+      "result_id": "cfffb7b9-4916-4e34-b3a1-f36986bb753d"
+    },
+    {
+      "claim_id": "9a18c4a6-c2a0-4998-916a-4c3be04ea1fa",
+      "result_id": "cfffb7b9-4916-4e34-b3a1-f36986bb753d"
+    },
+    {
+      "claim_id": "5b6da759-341c-4561-8995-45b4fccce2dd",
+      "result_id": "cfffb7b9-4916-4e34-b3a1-f36986bb753d"
+    },
+    {
+      "claim_id": "8e398589-f411-4850-bdde-d19343bd7865",
+      "result_id": "08d55d6e-8b57-49b0-975d-e6009bb73a09"
+    },
+    {
+      "claim_id": "f9834543-7dfd-4ad8-a5b9-37ab48e0870f",
+      "result_id": "08d55d6e-8b57-49b0-975d-e6009bb73a09"
+    },
+    {
+      "claim_id": "90e8e8e0-2f8d-4944-a6c7-b4f9ce77b616",
+      "result_id": "08d55d6e-8b57-49b0-975d-e6009bb73a09"
+    },
+    {
+      "claim_id": "895d611c-eaef-4a13-8341-42e13e820084",
+      "result_id": "08d55d6e-8b57-49b0-975d-e6009bb73a09"
+    },
+    {
+      "claim_id": "1eeb26ab-ef33-459f-84ef-869e91da1bc9",
+      "result_id": "08d55d6e-8b57-49b0-975d-e6009bb73a09"
+    },
+    {
+      "claim_id": "5e8b1627-8eb2-409f-89f1-4b55d7874a89",
+      "result_id": "08d55d6e-8b57-49b0-975d-e6009bb73a09"
+    },
+    {
+      "claim_id": "18596f93-5402-4601-bfeb-cded09c3517c",
+      "result_id": "e404e795-ed69-4844-bfba-7182f1ccf314"
+    },
+    {
+      "claim_id": "39ae6b13-0f62-41a5-b0f1-30f734d9f9f1",
+      "result_id": "e404e795-ed69-4844-bfba-7182f1ccf314"
+    },
+    {
+      "claim_id": "f7a13db9-cab3-4ab4-bd85-799139d316f6",
+      "result_id": "e404e795-ed69-4844-bfba-7182f1ccf314"
+    },
+    {
+      "claim_id": "d1a4e4dd-61c4-4154-8ba5-902fd626fcb3",
+      "result_id": "e404e795-ed69-4844-bfba-7182f1ccf314"
+    },
+    {
+      "claim_id": "eaa35c5f-78a5-43b8-aa6f-395982bcf831",
+      "result_id": "e404e795-ed69-4844-bfba-7182f1ccf314"
+    },
+    {
+      "claim_id": "05e041c8-c1ae-4cb0-8c95-e465dc992e17",
+      "result_id": "e404e795-ed69-4844-bfba-7182f1ccf314"
+    },
+    {
+      "claim_id": "7087a636-5812-4457-a32b-4f088610484d",
+      "result_id": "e404e795-ed69-4844-bfba-7182f1ccf314"
+    },
+    {
+      "claim_id": "ade948b3-8065-460d-a61e-fadae91f71b8",
+      "result_id": "9ae0bc45-36a2-48c3-a11f-0eb2792d6f72"
+    },
+    {
+      "claim_id": "7f7ab7a9-7f4b-437d-8d68-3da9e76e1f87",
+      "result_id": "9ae0bc45-36a2-48c3-a11f-0eb2792d6f72"
+    },
+    {
+      "claim_id": "a356c297-eb24-4d7d-beb7-d931b18b163b",
+      "result_id": "9ae0bc45-36a2-48c3-a11f-0eb2792d6f72"
+    },
+    {
+      "claim_id": "d24bdc74-d5bc-4bef-bff2-8c3c3d9633d3",
+      "result_id": "9ae0bc45-36a2-48c3-a11f-0eb2792d6f72"
+    },
+    {
+      "claim_id": "8da6f928-b806-4fb5-8d3f-176f2a8d6dfb",
+      "result_id": "9ae0bc45-36a2-48c3-a11f-0eb2792d6f72"
+    },
+    {
+      "claim_id": "2dae412a-99f5-4bab-9785-4b9c2c049cf4",
+      "result_id": "8e1e1ec2-6e90-4a3c-a97b-f1803f134baf"
+    },
+    {
+      "claim_id": "83c0a1e2-8a73-45c0-8d83-219b060f9d3b",
+      "result_id": "8e1e1ec2-6e90-4a3c-a97b-f1803f134baf"
+    },
+    {
+      "claim_id": "d0b78915-b8e7-46f8-92fc-9e12950358a2",
+      "result_id": "8e1e1ec2-6e90-4a3c-a97b-f1803f134baf"
+    },
+    {
+      "claim_id": "6e5b282d-8397-45a4-8410-e7b73e94152b",
+      "result_id": "8e1e1ec2-6e90-4a3c-a97b-f1803f134baf"
+    },
+    {
+      "claim_id": "2218345d-0c3c-461b-a9ba-803ba009c800",
+      "result_id": "114b854a-5040-4ca0-9549-a37853374ec7"
+    },
+    {
+      "claim_id": "4e8bf6cd-1527-4e83-850e-71a5cfbc8fda",
+      "result_id": "114b854a-5040-4ca0-9549-a37853374ec7"
+    },
+    {
+      "claim_id": "8fbfabfc-ca7d-4b5d-8a9e-4e3d258c0e4c",
+      "result_id": "114b854a-5040-4ca0-9549-a37853374ec7"
+    },
+    {
+      "claim_id": "3fbdefe1-427e-407c-bf1a-c7d48131e671",
+      "result_id": "55ead5fb-4388-4983-943a-578e2936b1e3"
+    },
+    {
+      "claim_id": "4a0efde7-7f83-4a31-8169-fcfde28c4786",
+      "result_id": "55ead5fb-4388-4983-943a-578e2936b1e3"
+    },
+    {
+      "claim_id": "22c363af-2ba2-4ca0-a636-ad89fe564d5f",
+      "result_id": "3eac52f1-655b-4394-abaa-08dfea4f9c63"
+    },
+    {
+      "claim_id": "87164b61-c446-4ab8-921b-5939bb50de59",
+      "result_id": "3eac52f1-655b-4394-abaa-08dfea4f9c63"
+    },
+    {
+      "claim_id": "2fabfed7-e238-4846-87d6-0f914b4e69ad",
+      "result_id": "3eac52f1-655b-4394-abaa-08dfea4f9c63"
+    },
+    {
+      "claim_id": "9077cd7b-a1c5-4120-9471-2fe07833c9df",
+      "result_id": "3eac52f1-655b-4394-abaa-08dfea4f9c63"
+    },
+    {
+      "claim_id": "5a3db300-89c2-4322-8578-411906610cbd",
+      "result_id": "2c923933-0b33-4d85-9441-381018fb7c52"
+    },
+    {
+      "claim_id": "651aa0e9-c498-4b90-8b8b-1b1f736479ee",
+      "result_id": "2c923933-0b33-4d85-9441-381018fb7c52"
+    },
+    {
+      "claim_id": "8be386e3-357c-4245-8bbc-e427411ffee1",
+      "result_id": "2c923933-0b33-4d85-9441-381018fb7c52"
+    },
+    {
+      "claim_id": "3e2c9da2-0fe4-4646-b3d3-51efcca1defe",
+      "result_id": "2c923933-0b33-4d85-9441-381018fb7c52"
+    },
+    {
+      "claim_id": "58c1e461-23e7-428b-a83a-4993b29e30df",
+      "result_id": "2c923933-0b33-4d85-9441-381018fb7c52"
+    },
+    {
+      "claim_id": "f989ea9a-0bde-4460-9f7d-97c7c0ad481e",
+      "result_id": "2c923933-0b33-4d85-9441-381018fb7c52"
+    },
+    {
+      "claim_id": "abbc8148-6cbd-430a-bad6-29317078e950",
+      "result_id": "2c923933-0b33-4d85-9441-381018fb7c52"
+    },
+    {
+      "claim_id": "c2eb6906-abb5-47cc-9e7b-97f21f3bad49",
+      "result_id": "94e9f4df-5d9a-45f0-993b-fbb18436b630"
+    },
+    {
+      "claim_id": "342fa950-78eb-4878-b571-116546e415a0",
+      "result_id": "94e9f4df-5d9a-45f0-993b-fbb18436b630"
+    },
+    {
+      "claim_id": "498d5c62-5802-4b2b-b627-b0ec169157f2",
+      "result_id": "34634955-217f-4e42-bc6f-f0fa7d8a9538"
+    },
+    {
+      "claim_id": "e5cba697-a390-4271-ad09-5a210859751b",
+      "result_id": "34634955-217f-4e42-bc6f-f0fa7d8a9538"
+    },
+    {
+      "claim_id": "ae9a4503-1726-4c00-a53a-78d8dc9d5624",
+      "result_id": "34634955-217f-4e42-bc6f-f0fa7d8a9538"
+    },
+    {
+      "claim_id": "e88e6e53-a055-41df-b9e8-4fe6d61a2ff1",
+      "result_id": "34634955-217f-4e42-bc6f-f0fa7d8a9538"
+    },
+    {
+      "claim_id": "a9124262-c68d-4a6e-8baa-ea6e3df2588f",
+      "result_id": "e75cb0fd-5524-4257-b6c3-d2b8e167e5b4"
+    },
+    {
+      "claim_id": "33469942-745a-4e87-be22-b385a258e3fa",
+      "result_id": "e75cb0fd-5524-4257-b6c3-d2b8e167e5b4"
+    },
+    {
+      "claim_id": "b1994d52-6fae-4f1c-a22d-443dbe070927",
+      "result_id": "e75cb0fd-5524-4257-b6c3-d2b8e167e5b4"
+    },
+    {
+      "claim_id": "dcd35eea-3249-4829-8288-f9ffb11c51ce",
+      "result_id": "e75cb0fd-5524-4257-b6c3-d2b8e167e5b4"
+    },
+    {
+      "claim_id": "8798918b-3824-4b37-ac97-58b07f42b213",
+      "result_id": "e75cb0fd-5524-4257-b6c3-d2b8e167e5b4"
+    },
+    {
+      "claim_id": "27ee8497-3a9f-4075-9d69-f0f95d9fdb2e",
+      "result_id": "e75cb0fd-5524-4257-b6c3-d2b8e167e5b4"
+    },
+    {
+      "claim_id": "09a729dc-e54b-42ac-9569-ec853ca94f0c",
+      "result_id": "e75cb0fd-5524-4257-b6c3-d2b8e167e5b4"
+    },
+    {
+      "claim_id": "03866de5-c19e-4a73-af84-e5bdded519b9",
+      "result_id": "e75cb0fd-5524-4257-b6c3-d2b8e167e5b4"
+    },
+    {
+      "claim_id": "3d787fa8-760e-4fe9-a9da-d431589078d5",
+      "result_id": "089a01a0-d9e2-4dfe-8328-aed36a71b42b"
+    },
+    {
+      "claim_id": "80bacba7-3126-4edd-ab85-2720a7dafdd7",
+      "result_id": "089a01a0-d9e2-4dfe-8328-aed36a71b42b"
+    },
+    {
+      "claim_id": "fd2f4385-9b8a-4997-8095-e735a35980f6",
+      "result_id": "089a01a0-d9e2-4dfe-8328-aed36a71b42b"
+    },
+    {
+      "claim_id": "04b26a8b-3405-41a8-8c18-117a40f93d3d",
+      "result_id": "089a01a0-d9e2-4dfe-8328-aed36a71b42b"
+    },
+    {
+      "claim_id": "295dc85a-133f-4f8d-9e8c-4ef1790996b2",
+      "result_id": "4afb316c-9d6a-4ada-8f34-bc6731e349e8"
+    },
+    {
+      "claim_id": "30ec1f91-82e0-4950-b4e7-ca86d96a0ae5",
+      "result_id": "4afb316c-9d6a-4ada-8f34-bc6731e349e8"
+    },
+    {
+      "claim_id": "c9b79f4e-e9a3-4960-81ea-e472a8e9a1f6",
+      "result_id": "4afb316c-9d6a-4ada-8f34-bc6731e349e8"
+    },
+    {
+      "claim_id": "30333b47-1df9-4052-897f-f87eb6a9ac40",
+      "result_id": "4afb316c-9d6a-4ada-8f34-bc6731e349e8"
+    },
+    {
+      "claim_id": "4b9adfdd-39a7-41b6-8029-aa6dcdad18a4",
+      "result_id": "4afb316c-9d6a-4ada-8f34-bc6731e349e8"
+    },
+    {
+      "claim_id": "be2e3c2c-1496-46d2-9b9b-db716dffc5cf",
+      "result_id": "4afb316c-9d6a-4ada-8f34-bc6731e349e8"
+    }
+  ],
+  "comparisons": []
+}

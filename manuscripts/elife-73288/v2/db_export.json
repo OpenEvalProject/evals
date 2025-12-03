@@ -1,0 +1,1635 @@
+{
+  "submission": {
+    "id": "92fad2e4-e13a-4ab0-8169-2b336d7fc8a7",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T18:02:57.931188Z",
+    "updated_at": "2025-12-03T18:02:57.931188Z"
+  },
+  "content": [
+    {
+      "id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "submission_id": "92fad2e4-e13a-4ab0-8169-2b336d7fc8a7",
+      "content_type": "manuscript",
+      "content_text": "# Predicting progression-free survival after systemic therapy in advanced head and neck cancer: Bayesian regression and model development\n\n## Authors\n\n- Paul R Barber<sup>1</sup> ([ORCID: 0000-0002-8595-1141](https://orcid.org/0000-0002-8595-1141))\n- Rami Mustapha<sup>3</sup>\n- Fabian Flores-Borja<sup>4</sup> ([ORCID: 0000-0002-0881-8822](https://orcid.org/0000-0002-0881-8822))\n- Giovanna Alfano<sup>3</sup>\n- Kenrick Ng<sup>1</sup>\n- Gregory Weitsman<sup>3</sup>\n- Luigi Dolcetti<sup>3</sup>\n- Ali Abdulnabi Suwaidan<sup>3</sup>\n- Felix Wong<sup>3</sup>\n- Jose M Vicencio<sup>1</sup>\n- Myria Galazi<sup>1</sup>\n- James W Opzoomer<sup>5</sup> ([ORCID: 0000-0001-6842-756X](https://orcid.org/0000-0001-6842-756X))\n- James N Arnold<sup>5</sup>\n- Selvam Thavaraj<sup>6</sup> ([ORCID: 0000-0001-5720-7422](https://orcid.org/0000-0001-5720-7422))\n- Shahram Kordasti<sup>7</sup> ([ORCID: 0000-0002-0347-4207](https://orcid.org/0000-0002-0347-4207))\n- Jana Doyle<sup>8</sup>\n- Jon Greenberg<sup>8</sup>\n- Magnus T Dillon<sup>9</sup>\n- Kevin J Harrington<sup>9</sup>\n- Martin Forster<sup>1</sup>\n- Anthony CC Coolen<sup>10</sup> ([ORCID: 0000-0002-6976-5875](https://orcid.org/0000-0002-6976-5875))\n- Tony Ng<sup>1</sup> ([ORCID: 0000-0003-3894-5619](https://orcid.org/0000-0003-3894-5619)) \u2020\n\n### Affiliations\n\n1. UCL Cancer Institute, Paul O'Gorman Building, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))\n2. Comprehensive Cancer Centre, School of Cancer & Pharmaceutical Sciences, King\u2019s College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))\n3. Richard Dimbleby Laboratory of Cancer Research, School of Cancer & Pharmaceutical Sciences, King's College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))\n4. Breast Cancer Now Research Unit, School of Cancer & Pharmaceutical Sciences, King\u2019s College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))\n5. Tumor Immunology Group, School of Cancer & Pharmaceutical Sciences, King\u2019s College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))\n6. Centre for Clinical, Oral & Translational Science, King\u2019s College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))\n7. Systems Cancer Immunology, School of Cancer & Pharmaceutical Sciences, King\u2019s College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))\n8. Daiichi Sankyo Incorporated Newark United States ([ROR:055werx92](https://ror.org/055werx92))\n9. The Institute of Cancer Research London United Kingdom ([ROR:043jzw605](https://ror.org/043jzw605))\n10. Institute for Mathematical and Molecular Biomedicine, King\u2019s College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))\n11. Saddle Point Science Ltd London United Kingdom ([ROR:02y750690](https://ror.org/02y750690))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:Advanced head and neck squamous cell carcinoma (HNSCC) is associated with a poor prognosis, and biomarkers that predict response to treatment are highly desirable. The primary aim was to predict progression-free survival (PFS) with a multivariate risk prediction model.Methods:Experimental covariates were derived from blood samples of 56 HNSCC patients which were prospectively obtained within a Phase 2 clinical trial (NCT02633800) at baseline and after the first treatment cycle of combined platinum-based chemotherapy with cetuximab treatment. Clinical and experimental covariates were selected by Bayesian multivariate regression to form risk scores to predict PFS.Results:A \u2018baseline\u2019 and a \u2018combined\u2019 risk prediction model were generated, each of which featuring clinical and experimental covariates. The baseline risk signature has three covariates and was strongly driven by baseline percentage of CD33+CD14+HLADRhigh monocytes. The combined signature has six covariates, also featuring baseline CD33+CD14+HLADRhigh monocytes but is strongly driven by on-treatment relative change of CD8+ central memory T cells percentages. The combined model has a higher predictive power than the baseline model and was successfully validated to predict therapeutic response in an independent cohort of nine patients from an additional Phase 2 trial (NCT03494322) assessing the addition of avelumab to cetuximab treatment in HNSCC. We identified tissue counterparts for the immune cells driving the models, using imaging mass cytometry, that specifically colocalized at the tissue level and correlated with outcome.Conclusions:This immune-based combined multimodality signature, obtained through longitudinal peripheral blood monitoring and validated in an independent cohort, presents a novel means of predicting response early on during the treatment course.Funding:Daiichi Sankyo Inc, Cancer Research UK, EU IMI2 IMMUCAN, UK Medical Research Council, European Research Council (335326), Merck Serono. Cancer Research Institute, National Institute for Health Research, Guy\u2019s and St Thomas\u2019 NHS Foundation Trust and The Institute of Cancer Research.Clinical trial number:NCT02633800.\n\n## Introduction\n\nRecurrent (R) or metastatic (M) head and neck squamous cell carcinoma (HNSCC) is associated with a poor prognosis. For many years, the standard-of-care first-line systemic treatment was the EXTREME regimen, consisting of a platinum-based chemotherapy regimen and cetuximab, an anti-EGFR monoclonal antibody (Van Cutsem et al., 2009). The KEYNOTE-048 trial in 2019 changed the treatment paradigm for these patients by incorporating pembrolizumab, an immune checkpoint inhibitor, into the first-line setting (Burtness et al., 2019). However, the EXTREME regimen remains a first-line standard-of-care for a substantial number of patients, specifically those with programmed death ligand 1 (PD-L1) negative tumours or those with contraindications to the use of anti-PD1 immunotherapy.\n\nWhile effective, these regimens are associated with significant toxicities. One of the key challenges for the treating physician is to identify the patients who would benefit from either of these treatment regimens. A predictive biomarker signature for patients with advanced HNSCC will help individualize discussions with patients regarding the risk-benefit balance of treatment and may guide patients who are likely to perform poorly towards alternative therapy regimens or clinical trials.\n\nThe absence of predictive biomarkers in this patient cohort represents a significant clinical unmet need. Until the development of PD-L1 as a biomarker for immunotherapy, efforts to generate biomarkers in HNSCC have focused on gene expression profiles, which are dependent on the availability of tumour tissue and are only performed on pre-treatment samples (Bossi et al., 2016; You et al., 2019). Signatures based on a single biological modality and taken at a single timepoint may be insufficient to predict outcomes, as response to therapy relies on a dynamic interplay between cancer genomics, immune profile, tumour microenvironment, and clinicopathological characteristics of the patient receiving treatment (Cheerla and Gevaert, 2019; Huang et al., 2019).\n\nEfforts to develop a machine learning model to stratify survival risk by combining genetic and clinicopathological characteristics have revealed some success in advanced oral squamous cell carcinoma (Tseng et al., 2020). We hypothesize that a multimodal analysis, taking into account both clinicopathological and laboratory-based biological covariates at different timepoints, would provide better predictive value. Furthermore, by only including covariates that can be obtained from a blood biopsy, patients could be easily screened for discovered biomarkers.\n\nWe prospectively collected peripheral blood samples from a Phase 2 trial in R/M HNSCC (NTC02633800) (Forster et al., 2019), which utilized cetuximab with platinum therapy as a backbone, and conducted a parallel exploratory analysis with the aim of generating a biomarker signature which would predict outcomes to treatment. We hypothesized that the detailed definition of a broad immune cell signature could contribute to the development of assays employing liquid biopsies to predict clinical outcomes. We also incorporated the analysis of two circulating microRNAs (miRNAs) from exosomes: miR-21-5p and miR-142-3p, which have previously demonstrated prognostic and predictive utility (Summerer et al., 2015; Vahabi et al., 2021). As the trial investigated the efficacy of an anti-ErbB3 antibody, patritumab, administered alongside an anti-EGFR antibody, we simultaneously analysed EGFR-ErbB3 dimerization using F\u00f6rster resonance energy transfer (FRET) and included it in our analysis.\n\nBy extracting information from patient samples at baseline and after the first cycle of treatment within this trial, we aimed to generate a multimodal predictive signature for the systemic therapy based on a novel Bayesian multivariate model. The immune populations driving the risk signature were then prospectively validated in an independent cohort of patients from a Phase 2 trial evaluating avelumab in combination with cetuximab in R/M HNSCC (the EACH trial; NCT03494322). Blood samples were collected at baseline and post first dose of cetuximab before administration of avelumab. Validation was performed against the best overall response, as assessed by iRECIST, showing strong correlation between biomarkers identified in the risk signature and therapeutic response despite changes in treatment regimen. We then used imaging mass cytometry driven by the risk signature to identify correlate changes in systemic immune populations with intra-tumoural immune subsets that colocalize at the tumoural level and appear to be key to response. This risk signature can serve as a non-invasive risk stratification for patients with R/M HNSCC using only peripheral blood, guiding the clinician toward the likelihood of success early during the treatment course.\n\n## Materials and methods\n\n### Study design\n\nThe clinical study design of the Phase 2 study (NCT02633800) and its associated exploratory analysis are shown in Figure 1A. Eighty-seven patients were enrolled in the clinical trial. Peripheral blood samples were collected at baseline before initiation of treatment (C1) and immediately before the second cycle of treatment (C2). Thirty-one patients were excluded due to incomplete paired biological datasets, leaving 56 patients for analysis. Amongst these patients, there was no difference in PFS as demonstrated by Kaplan-Meier survival curve analysis (Figure 1\u2014figure supplement 1) regardless of whether the patients received patritumab, which reflected the results published in the clinical trial. The baseline clinical characteristics of these 56 patients are shown in Supplementary file 1 together with a comparison that shows there is no significant difference between the clinicopathological characteristics pertaining to the discovery cohort and the whole cohort of study.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/73288/elife-73288-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of clinical trial design and timepoints at which peripheral blood was obtained. (B) Fifty-six (n=56) paired blood samples, obtained pre-treatment (C1) and after one cycle of treatment (C2) were subjected to flow cytometry, F\u00f6rster resonance energy transfer-fluorescence lifetime imaging microscopy (FRET-FLIM) imaging, and droplet digital polymerase chain reaction (ddPCR) analysis.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73288/elife-73288-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Progression-free survival data was obtained from 53 patients and stratified according to patients who received patritumab and the cohort which received placebo.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/73288/elife-73288-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Peripheral immune cell populations analysed in this study are indicated in corresponding gates. (A) Subpopulations of CD3+CD4+and CD3+CD8+T cells were further identified by using markers CCR7 and CD45RO as effector (Eff., CD45RO-CCR7-), na\u00efve (CD45RO- CCR7+), central memory (CM, CD45RO+CCR7+), and effector memory (EM, CD45RO+CCR7-). The activation status of CD4+ regulatory T cells (Tregs, CD127-/lo CD25hi) was defined by markers CD45RO and HLA-DR as indicated: na\u00efve Tregs (HLA-DR-CD45RO), activated Tregs (Act. Tregs, HLA-DR+CD45RO+), and memory Tregs (Mem. Tregs, HLA-DR-CD45RO+). (B) CD19+ B cell subpopulations were identified with markers CD24, CD38, and CD27: plasma cells (CD38+CD27+); mature (CD24loCD38lo), memory (CD24hiCD38-), transitional (TBC, CD24hiCD38hi); or a combination of IgD and CD27: na\u00efve (IgD+CD27-), memory pre-switch (IgD+CD27+), memory post-switch (IgD-CD27+), or double-negative B cells (DN, IgD-CD27-). CD33+ CD14+ monocytes were defined as CD3-CD19-CD33+CD16+CD14+.\n\nPBMC samples were analysed using flow cytometry to generate unique immunological subpopulations. Exosomes were extracted from the serum and analysed for EGFR-ErbB3 dimerization and miRNA-21-5p and miRNA-142-3p (Figure 1B). These analyses yielded a total of 29 unique biological covariates. Each covariate was obtained in pairs (C1 and C2), generating a total of 58 laboratory-based covariates for the multivariate analysis (Figure 1B). To mitigate individual baseline variations between patients, the biological data obtained from the C2 timepoint was evaluated as relative change with respect to the baseline value of the same covariate at C1 (in the form of log2-fold change [lfc] of the variable of interest) instead of absolute values of those parameters. A list of the laboratory-based and clinical covariates is provided in Supplementary file 2.\n\nThe baseline clinical characteristics, as well as value of the laboratory-based covariates at baseline and after one cycle of treatment, did not significantly differ between the placebo and patritumab cohorts (Supplementary file 3). Therefore, in this exploratory analysis, samples from both the control and investigational arms were analysed together. The effect of adding the investigational product, patritumab, on progression-free survival (PFS) was evaluated by including it as an independent clinical covariate, denoted as \u2018Drug\u2019, in our multivariate analysis.\n\nWritten informed consent was obtained. Approval was obtained from ethics committees (Research Ethics Committee reference: 15/LO/1670).\n\nThe design of the EACH trial (NCT03494322) that was used to validate the signature is shown in Figure 5\u2014figure supplement 1A. The aim of the EACH trial was to evaluate the safety and anti-tumour activity of avelumab and cetuximab in R/M squamous cell carcinomas. Sixteen patients were enrolled in the study. Four patients were excluded due to lack of blood samples at both timepoints. One patient was excluded due to lack of outcome data. Two patients only had a baseline biopsy. Written informed consent was obtained from all patients. Study approval was obtained from ethics committees (Research Ethics Committee reference: 18/LO/0021). PBMCs underwent a quality control step to check viability which resulted in the exclusion of one of the patients (Figure 5\u2014figure supplement 1B). One patient died before their first response evaluation scan and was therefore classified as having progressive disease as the cause of death was identified to be the illness.\n\n### Statistical analysis\n\nTo examine whether the covariates indicated different prognostic outcomes, we built a model for predicting PFS. Using Bayesian multivariate proportional hazards regression, covariates were ranked and selected by predictive importance (Grigoriadis et al., 2018). We derived two models using separate datasets: firstly, a baseline predictive model containing a dataset of 42 baseline covariates (29 laboratory parameters at baseline (C1) and 13 clinical characteristics). The second, a combined predictive model, consists of 71 covariates, that is, the 42 baseline covariates and a further 29 derived from the on-treatment change of the value of a lab-based parameter relative to its value in the same patient at baseline denoted as lfc of that variable.\n\nThe relative efficiency of the predictive model was assessed by using C-index (a metric proposed by Harrell et al., 1984, to evaluate the accuracy of predictions made by an algorithm) and rank correlation of the signature-generated risk scores with survival time. The number of significant covariates in each prediction signature was determined with the aim of avoiding overfitting of the signature to the study data using the \u2018batch regression\u2019 option of the Saddle Point Signature software (Saddle Point Science Ltd., London, UK), according to methods that were previously published (Barber et al., 2020; Shalabi et al., 2018). Systematic iterative covariate rejection and cross-validation (5000 iterations) allowed for the selection of an optimal covariate set to avoid overfitting though inclusion of too many covariates. The optimal set can be chosen in two ways, either based on the peak prediction performance of cross-validation or the more stringent method that equally penalizes validation performance and overfitting (defined as the deviation between training and validation performance). All signatures presented were chosen using the more stringent criterion and data for all covariates is also presented for the purposes of identifying covariates that may be important but do not quite meet the criterion. The regression included covariates representing the missingness of the data to account for the possibility that patient or sample selection/rejection (for any reason) is biased with respect to outcome and therefore could be informative.\n\nCovariates were normalized to zero mean and unit standard deviation such that the importance and significance of covariates can be judged by their assigned beta value (\u03b2) in the proportional hazards model, and corresponding hazard ratio (HR) equal to e2\u03b2. A negative \u03b2 value reflects a lower risk of developing an event. The Saddle Point Signature software additionally judges the performance of similar randomized data, which most often has \u03b2 values around zero and within a critical range, such that any real covariate that has a \u03b2 value outside this critical range can be judged to be performing significantly better than randomized data. For standard correlation tests between numeric covariates, Pearson correlation was used and denoted as r. For correlation tests against categorical outcomes, or where correlations may not be linear (e.g. PFS), Kendall rank correlation was used which was denoted as \u03c4. Kaplan-Meier curves and log rank tests were generated using the R survival package. Correlations were performed with the R cor.test function. C-index values were calculated using the Hmisc R package.\n\nValidation of the signatures was performed by calculating the risk score for each patient in the validation trial (EACH) using the combined risk signature covariate weights and performing a correlation test versus the iRECIST outcome for that trial. The covariates were obtained from flow cytometry analysis on the PBMCs of the validation cohort and patient age at registration. As detailed tumour site information was not available for the validation cohort, these covariates were replaced in the signature by the average values from the discovery cohort.\n\n### Flow cytometry\n\nFrozen PBMC samples were thawed and stained with Fixable viability dye (Yellow Live/Dead, Thermo Fisher Scientific) followed by two different panels of membrane markers. Two different panels were used, a simple one for the discovery cohort and a more thorough panel for the validation cohort (full list of both antibody panels in Supplementary file 4 and Supplementary file 5). These two panels allow definition of immune cell populations as described in Figure 1\u2014figure supplement 2. Patients\u2019 samples and corresponding Fluorescence Minus One (FMO) Controls were acquired in a Fortessa II flow cytometer (BD, Berkshire, UK) and analysed with FlowJo software (Tree Star).\n\n### Isolation of serum exosomes\n\nExosomes were prepared using an optimized centrifugation method (Monypenny et al., 2018). Diluted serum was centrifuged at 300 \u00d7 g for 10 min to remove cell debris, 5000\u00d7 g for 20 min to remove large vesicles and membrane fragments, and 12,200\u00d7 g for 30 min to deplete microvesicles. This was followed by 100,000 \u00d7 g ultracentrifugation for 120 min at 4\u00b0C to pellet exosomes with a TLA-55 rotor (Beckman Coulter). After a second 100,000 \u00d7 g ultracentrifugation for 60 min, the resulting pellets were washed and resuspended in PBS. Purified exosomal fractions were diluted and used for nanoparticle tracking analysis using a Nanosight LM-14 system.\n\n### RNA extraction and miRNA expression analysis\n\nRNA from cancer patients\u2019 serum exosomes was extracted using the TRIzol Plus RNA Purification Kit (Thermo Fisher, UK) according to the manufacturer\u2019s instructions. Quantification of gene expression in circulating exosomes was performed by droplet digital polymerase chain reaction (ddPCR) (Bio-Rad QX100 system). Normalization of the RNA, between cycle 1 and cycle 2 therapy of each patient, was performed using the expression levels of the housekeeping gene 18S (Assay ID, Hs99999901_s1). For each sample, equal volume of RNA was used as template and cDNA synthesis performed using the SuperScript VILO MasterMix (Thermo Fisher, UK) according to the manufacturer\u2019s instructions. MicroRNAs were reverse-transcribed individually using the TaqMan MicroRNA Reverse Transcription Kit (Thermo Fisher, UK). For each sample, the normalized amount of RNA was reverse-transcribed in a 15 \u03bcl reaction using the standard protocol and primers specific for each miRNA: miR-21-5p (assay ID, 000397), miR-142-3p (assay ID, 000464). Then, 7.5 \u03bcl of cDNA was added to a 20 \u03bcl reaction containing 12.5 \u03bcl 2\u00d7 ddPCR Supermix for Probes (Bio-Rad) and 1 \u03bcl 20\u00d7 TaqMan miRNA PCR primer probe set; each reaction was carried out in duplicate. Thermo cycling conditions were as follows: 95\u00b0C for 10 min, then 50 cycles of 95\u00b0C for 10 s and 61\u00b0C for 30 s and a final inactivation step at 98\u00b0C for 12 min. PCR products were analysed using the QuantaSoft Software (Bio-Rad).\n\n### ErbB3-EGFR dimer quantification in exosomes\n\nExosomes were imaged on an \u2018Open\u2019 fluorescence lifetime imaging microscopy (FLIM) system (Barber et al., 2013). Analysis was performed with the TRI2 software (v2.7.8.9, CRUK/MRC Oxford Institute for Radiation Oncology, Oxford) as described previously (Barber et al., 2009; Rowley et al., 2016). Interfering effects of autofluorescence were minimized with a lifetime filtering algorithm and the FRET efficiency value for each patient calculated by: FRET = 1\u2212 $\\frac{\\tau_{DA}}{\\tau_{D}}$ , where \u03c4D and \u03c4DA are the average lifetime of Alexa Fluor 546 in the matching donor (D) and donor-acceptor (DA) images.\n\n### Imaging mass cytometry\n\nFormalin-fixed paraffin-embedded (FFPE) histological slides were stained with a panel of metal conjugated antibodies (full list of antibodies listed in Supplementary file 6).\n\nIn brief, antigen retrieval was performed on a Ventana Bench Mark Ultra with CC1 buffer (Roche, 950-224). Slides were blocked for 1 hr at room temperature in 5% BSA, 5 mg/ml human IgG in PBS, and stained overnight at 4\u00b0C in 4% BSA, PBS. DNA counterstain was performed with Iridium (Fluidigm, 201192B) 125 nM in PBS for 30 min at room temperature.\n\nAblation and data acquisition of multiple regions of interest per tissue section were performed on a Fluidigm Hyperion. Imaging analysis was performed using the following R packages: RandomForest for classification and regression, Raster and SF for image manipulation and segmentation. Scripts are available in the GitHub link provided in the Data availability section of this manuscript.\n\n## Results\n\n### The model with baseline covariates reveal immune subpopulations and age predict PFS\n\nBayesian multivariate proportional hazards regression was performed on the 42 covariates derived at baseline (C1) and PFS outcome. We utilized the stringent selection criteria based on a proportional hazards regression model to minimize overfitting based on the cross-validation performance (Figure 2A). This revealed two baseline immune subpopulations with a \u03b2 value which exceeded the critical \u03b2 value threshold, that is, CD14+CD16+CD33+CD11b+ monocytes thereafter referred to as CD33+CD14+ monocytes according to previous nomenclature (Cravens et al., 2007) and double negative (CD27-IgD-) B cells (DN B cells), as well as one clinical covariate \u2013 age (Figure 2B). Missingness covariates were included in this analysis and did not affect the outcome of the signature.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/73288/elife-73288-fig2-v2.jpg)\n\n**Figure 2.:** (A) Covariates were ranked for importance and selected by a proportional hazards regression model with cross-validation. (B) Proportional hazards regression revealed three covariates which exceed the beta critical value \u2013 CD33+CD14+ monocytes, double negative B cells, and age. (C) Forest plot of the three covariates within PFS risk score with dotted line indicating the range, around 1, of typical random covariates. (D) PFS risk signature performance, low risk score (n=27) and high-risk score (n=26). Log rank p-value = 6.0e-5, with numbers at risk demonstrated under Kaplan-Meier curve. The multivariate analysis resulted in risk signatures that are linear combinations of weighted covariates. Their ability to predict outcome is demonstrated with data split by signature value.\n\nEvaluation of the individual \u03b2 values reveal that baseline CD33+CD14+ monocytes and DN B cells have a \u03b2 value of \u20131.05 and \u20130.53, respectively, and hence a higher baseline value of both populations is predictive of better PFS. Age, with a \u03b2 value of 0.47, is associated with poorer PFS. The HRs of the individual covariates are depicted in Figure 2C. The baseline risk scores correlated strongly with PFS (C-index=0.60, \u03c4=\u22120.33, p=0.0005). The risk score equation is given in Supplementary file 7.\n\nThe risk scores generated from this signature were split at the median value to generate low-risk and high-risk cohorts (Figure 2D). The median PFS of the low-risk and high-risk cohorts are 8.3 and 3.6 months, respectively (log rank p-value = 6.0e-5).\n\n### Incorporating laboratory-based covariates after one cycle of treatment improves ability to predict PFS benefit\n\nWe subsequently evaluated if the incorporation of early laboratory-based changes into the signature improves its predictive ability. A separate predictive model incorporating an additional 29 new covariates, that is, relative on treatment changes in laboratory-based parameters at cycle 2 with respect to the value at baseline (C1).\n\nAs before, we used a proportional hazards regression to determine a set of variables which predict PFS. A total of six covariates were identified \u2013 three immune subpopulations with negative \u03b2 values and hence associated with better survival, that is, baseline CD33+CD14+ monocytes, baseline CD4+ memory regulatory T cells (HLA-DR-CD45RO+Tregs), and an increase in CD8+ effector memory T cells (CD45RO+CCR7-). An increase in two subpopulations, CD8+ central memory T cells (CD45RO+CCR7+) and CD3 T cells, was associated with inferior PFS. The hypopharyngeal primary tumour site was also associated with a poorer PFS (Figure 3A and B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/73288/elife-73288-fig3-v2.jpg)\n\n**Figure 3.:** (A) Proportional hazards regression revealed five immune subpopulations which exceed the beta critical value \u2013 baseline CD33+CD14+ monocytes, baseline CD4+ memory regulatory T cells, log2-fold change (lfc) of CD8+ effector memory T cells, lfc of CD8+ central memory T cells, and lfc of CD3+ T cells. The primary tumour site of hypopharynx also featured in the signature. A negative beta value is associated with lower risk score and hence better progression-free survival. (B) Forest plot of the three covariates within progression-free survival risk score. (C) Progression-free survival risk signature performance, low risk score (n=29) and high-risk score (n=24). Log rank p-value = 0.004, with numbers at risk demonstrated under Kaplan-Meier curve.\n\nA multivariate analysis employing linear combinations of these six weighted covariates generated a risk signature. The combined risk scores exhibited a stronger correlation with PFS than the baseline risk scores (C-index=0.69, \u03c4=\u22120.49, p=7e-7). Their ability to predict outcome is demonstrated with data split by risk score, shown in Figure 3C. In this combined predictive signature, the median PFS of the low-risk and high-risk cohorts are 6.8 and 3.6 months, respectively (log rank p-value 0.004) (Figure 3C). The risk score equation is given in Supplementary file 7.\n\n### EGFR-ErbB3 FRET on exosomes may contribute to predictive signature\n\nWhile the combined predictive signature comprised predominantly of immunological parameters, there is a suggestion that FRET difference may carry a degree of predictive value. In Figure 3A (fourth covariate from the bottom), the difference in EGFR-ErbB3 FRET (FRET.delta) was associated with a negative \u03b2 value which suggests a better PFS. However, the stringency that we have applied to optimal covariate selection means that this covariate fell marginally short of featuring in the eventual predictive signature. Nonetheless, this is the first time that this assay, (explained in Figure 4B), has been used within the context of a randomized controlled trial in exosomes and the suggested predictive value of the dimer warrants some discussion. Figure 4A displays intensity images and donor lifetime map of exosomes labelled with anti-EGFR and anti-ErbB3 antibodies.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/73288/elife-73288-fig4-v2.jpg)\n\n**Figure 4.:** (A) Time-resolved fluorescence intensity images and donor lifetime map of exosomes labelled with Anti-EGFR-IgG-Alexa 546 and Anti-ErbB3-IgG-Cy5 extracellular antibodies. (B) Schematic illustration of the fluorescent labelling geometry on exosomes and distance dependence of FRET efficiency. (C) Progression-free survival of subpopulations divided by median FRET difference, FRET.delta low (n=21) and FRET.delta high (n=22). Log rank p-value = 0.2, with numbers at risk demonstrated under Kaplan-Meier curve.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73288/elife-73288-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** \u03c4=0.43, p=0.02. miR21: MicroRNA-21-5p, lfc: log2-fold change.\n\nBy dividing the patients with available FRET values by the median FRET.delta (n=43), there was a suggestion that patients with a high FRET.delta exhibited a better PFS than patients with a low FRET.delta. This difference was not statistically significant (log rank p-value = 0.2) (Figure 4C). The predictive capacity of this univariate is limited (\u03c4=\u20130.13, p=0.2, C-index=0.586). Nonetheless, these results suggest a trend within a small patient cohort and can be explored in future prospective studies. While none of the remaining exosome derived perimeters correlated with PFS, miRNA signatures have been implicated as a useful classifier for myeloid cell subsets (Bronte et al., 2016). By correlating the miRNA changes in our study with this monocytic subpopulation, a significant correlation was identified between the log fold changes of miR-21-5p with the corresponding log fold changes of CD33+CD14+ monocytes (r=0.43, p=0.02, Figure 4\u2014figure supplement 1).\n\n### Validation of the risk signature in an independent cohort\n\nThe validation cohort of 16 patients was obtained from the EACH trial (NCT03494322) which evaluated the combination of avelumab with cetuximab in HNSCC patients. As the risk signature consisted predominantly of immune subpopulations, we successfully obtained PBMCs from eight patients at the pre-treatment timepoint and after one cycle of cetuximab hence matching the timepoints of the original cohort. PFS data in the validation cohort was not entirely available at the time of analysis, hence we used best objective response (BOR) using iRECIST criteria to validate the combined risk signature. We confirmed that in the original test cohort, patient PFS data strongly and inversely correlated with BOR (\u03c4=\u22120.52, p=3e-6) (Figure 5A). Age and site information were not available for the validation cohort and were replaced in the risk signatures by average values from the discovery cohort.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/73288/elife-73288-fig5-v2.jpg)\n\n**Figure 5.:** (A) Correlation between progression-free survival (PFS) and best objective response (BOR) in the original cohort (\u03c4=\u22120.52, p=3e-6). (B) Correlation between the combined risk signature and the BOR of the patients in the validation cohort (\u03c4=0.74, p=0.02). (C) Kaplan-Meier curves of PFS split by median percentage of baseline CD33+CD14+ value. (D) Kaplan-Meier curves of PFS split by median value of on treatment fold change of CD8+ central memory T cells relative to baseline. lfc: log2-fold change. (E) Table summarizes C-index, rank correlation, and log rank p-value based on type and number of covariates in both cohorts.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73288/elife-73288-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Schematic representation of the trial design. Blood samples were collected at the indicated timepoints. For the validation cohort we assessed the PBMCs obtained before the first cycle of cetuximab treatment and just before second cycle of therapy which was a combination of cetuximab and avelumab. (B) Histogram showing frequency distribution of the viability of the thawed patient PBMCs. Dashed line indicates the viability cut-off used for the validation cohort.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/73288/elife-73288-fig5-figsupp2-v2.jpg)\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/73288/elife-73288-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** CD14+CD16lowCD33+CD11b+ monocytes also express high levels of HLA-DR and CD11c.\n\nThe combined risk signature strongly correlated with a poorer treatment outcome (\u03c4=0.73, p=0.02) (Figure 5B). Separately, each of the variates showed similar trends in the validation cohort to those observed in the test cohort yet only two key immune populations showed interesting strong correlations (Figure 5\u2014figure supplement 2). High pre-treatment levels of CD33+CD14+monocytes significantly correlated with a worse disease outcome in all patients except for a single outlier who exhibited a complete response to treatment. A post-treatment increase in CD8+ central memory cells (lfcCD8CM) also correlated with a poorer treatment outcome. Interestingly, both covariates were the strongest drivers of the risk signature in the discovery cohort with the baseline level of CD33+CD14+monocytes being a key covariate in both signatures. Given this result we assessed their ability to predict PFS as univariates in the original cohort. Figure 5C shows Kaplan-Meier curves of PFS by median of each of these covariates. We observed a modest split that reached significance only in the case of baseline CD33+CD14+ monocyte (log rank p-value = 0.03) and not in the case of lfcCD8CM cells (log rank p-value = 0.1). lfcCD8CM more strongly predicted PFS (C-index=0.74, \u03c4=\u22120.36, p=0.01) than base line CD33+CD14+ monocytes (C-index=0.39, \u03c4=0.22, p=0.07). Due to the consistency with which the CD33+CD14+ monocyte population appeared across our study, we wanted to further characterize this population to determine its phenotype hence we expanded the antibody panel for the validation set and determined that these CD14+CD16+CD33+CD11b+ monocytes also express high levels of HLA-DR (Figure 5\u2014figure supplement 3).\n\n### Imaging mass cytometry of tissue reveals correlation of CD33+HLADRhigh myeloid cell with tissue CD74+ macrophages interacting with tissue CD8+ memory T cells\n\nHaving established that two immune subsets in peripheral blood predict therapeutic response within a multivariate signature, we subsequently explored the relationship between the immune findings in peripheral blood with tumour infiltrating leukocytes (TILs). We obtained sufficient tissue from the biopsy at trial enrolment for in-depth profiling by imaging mass cytometry from nine patients.\n\nStandard FFPE samples from these patients were stained using a custom immune focused imaging mass cytometry panel (Supplementary file 6). The cells were segmented and then classified into superpopulations using a trained machine learning approach. These segmented cells were divided into subpopulations by unsupervised clustering using uniform manifold approximation and projection (Figure 6A). The distribution of the superpopulations per patient is shown in Figure 6B, yet none of which correlated with PFS (Figure 6\u2014figure supplement 1). The phenotypes of the subclusters are shown by heat maps (Figure 6C). The key populations were then manually annotated and, in some cases, merged to compensate for over clustering and analysed for their correlation with PFS as well as peripheral immune populations. The complete list of these correlations can be seen in Figure 6\u2014figure supplement 1. We focused on the two main populations highlighted by the validation cohort, being CD33+CD14+monocytes and CD8CM to understand how they are represented at the tumoural level. The peripheral intermediate monocyte population strongly correlated with a tissue CD14+CD33+CD74+CD68+ macrophage population while the CD8CM inversely correlated with CD45RO+CD27+CD8+ tissue resident memory T cell (CD8Trm) population. Both of those populations positively correlated with PFS. Interestingly, the peripheral CD33+ monocyte population strongly correlated with CD8Trm (Figure 6D). To understand whether this correlation resulted in cellular levels of interactions, we assessed the average number of cell-to-cell contact that CD8Trms had with each of the clustered subpopulations. We found these cells were significantly more likely to be in contact with a CD74+ macrophage than any other identified population suggesting this interaction is biologically driven and not random (Figure 6E).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/73288/elife-73288-fig6-v2.jpg)\n\n**Figure 6.:** (A) Uniform manifold approximation and projections (UMAP) of the segmented cells from the combined patient sections showing their distribution across the superpopulations. (B) Relative abundance of the cells across the patient samples arranged in increasing order of progression-free survival (PFS). (C) Marker expression pattern across each of the clustered subpopulations. (D) Correlations between peripheral PBMC populations and tissue immune populations or between tissue immune populations and PFS. (E) Average number of interactions between the CD8+ tissue resident memory T cells and each of the clustered subpopulations. Arrow indicates the population of tissue macrophage that corresponds to peripheral CD33+CD14+monocyte.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73288/elife-73288-fig6-figsupp1-v2.jpg)\n\n## Discussion\n\nThere is a clinical unmet need to identify predictive biomarkers for treatment in head and neck cancer. Gene expression profiling has revealed promising initial results in this domain but have been limited to HPV-positive HNSCC which inherently have better prognoses. The ratio of neutrophils to lymphocytes (NLR) in the peripheral blood of HNSCC patients prior to treatment has been extensively investigated for its ability to predict disease outcome. Two recent meta-analyses on the subject have identified that a high pre-treatment NLR correlated with worse OS with respective HRs of 1.69 (95% CI: 1.47\u20131.93; p<0.001) and HR of 1.78 (95% CI: 1.53\u20132.07; p<0.0001) (Mascarella et al., 2018; Takenaka et al., 2018). Using our combined risk signature, we were able to predict disease outcome more accurately across two separate treatment modalities. Other recent biomarker research has focused on predicting response to immune checkpoint blockade by analysing tissue-based biomarkers, such as PD-L1 expression levels, but when used in isolation have not been sufficiently predictive at identifying patients who would benefit (Burtness et al., 2019).\n\nWhile unimodal biomarkers may offer some predictive value, the biology of HNSCC and likelihood of response to treatment is likely to be dictated by an interplay between tumour immunity, genomic signatures, and a host of clinicopathological characteristics which can only be assessed by a multivariate analysis. There has been an increased interest in peripheral blood-based liquid biopsies in recent years, particularly in the context of PBMC analysis (Nixon et al., 2019). The ability to extract predictive biomarkers from a blood-based liquid biopsy mitigates certain limitations posed by tissue biopsies \u2013 particularly the tissue accessibility, technical expertise to obtain the biopsy, patient frailty, and the amount of tissue available. The ease of obtaining liquid biopsies also facilitates longitudinal monitoring of response to treatment. Moreover, PBMCs offer a much more systemic snapshot of the immune response which overcomes intra-tumoural heterogeneity that results in non-uniform distribution of biomarkers. The potential of PBMCs to unravel the tumoural immune landscape is slowly being realized, thanks to advancements in the fields of high-dimensional flow cytometry, single-cell RNA sequencing, and cytometry by time of flight. However, such techniques generate an excessive number of variables which require powerful statistical analysis tools to overcome pitfalls such as overfitting (Shalabi et al., 2018).\n\nTo our knowledge, the current study is one of the first examples of integrating multiple biological covariates derived from peripheral blood and patient clinical data to generate a signature which predicts treatment response and that has been validated across multiple therapeutic modalities.\n\nBy employing cross-validation iterations to estimate training and validation errors, implementing advanced overfitting correlation protocols, using built-in corrections for informative data missingness, and probabilistic covariate removal, we were able to derive a robust optimal covariate set which correlates with PFS. This combination of analyses has been shown to produce robust signatures that do generalize to uncaptured data (Barber et al., 2020).\n\nThe biological components of the predictive model warrant discussion. The only clinical covariate to feature in the combined risk signature was the hypopharyngeal SCC sub-site, which was adversely correlated with PFS. This corroborates previous findings that the 5-year relative survival of patients with hypopharyngeal SCC is consistently the worst amongst different anatomical HNSCC sub-sites (Gatta et al., 2017; Machiels et al., 2020). The propensity of hypopharyngeal tumours to present at the de novo advanced stage (Cadoni et al., 2017) and the density of submucosal lymphatics in this anatomical region translates into these patients inherently performing worse \u2013 lending support to the robust nature of our predictive signature. The notable absence of patritumab (denoted as \u2018Drug\u2019) in our predictive signatures is also consistent with the outcome of the Phase 2 clinical trial where the addition of this investigational medicinal product did not produce any benefit to PFS (Forster et al., 2019).\n\nAnother key discovery in this study is the significance of analysis of sequential samples even at early stages of therapy. This, we believe, is important for the analysis of lab-based biological variables. There is a high level of inter-individual heterogeneity in the relative abundance of PBMC subpopulations even between healthy donors. This inherently weakens the predictive power of covariates based on raw PBMC populations. We observe this phenomenon in our dataset as the combined risk signature had higher predictive power than the baseline one. By opting to present the biological data obtained from the first post-treatment biopsy as change relative to the baseline biopsy, we obtained a much more predictive risk signature in our combined model. This is highlighted in the post-treatment change in CD8CM percentage relative to baseline value which is not only the strongest predictor of PFS in the combined model, but also has a greater univariate predictive value than the whole baseline signature. This validates the potential of our approach has in deconvoluting observed biological phenomena due to patient heterogeneity from that induced by drug treatment, both of which are key to biomarker discovery.\n\nWe also validated our risk signature in a second cohort thus allowing us to successfully identify predictive biological biomarkers for therapy across different treatment modalities. The fact that the first trial involved targeted therapies and the second a combination of anti-EGFR and anti-PD-L1 therapy, yet the same blood kinetic change can still distinguish between responders and non-responders is novel and has not been seen before according to our knowledge. The limitation is that the independent validation cohort is small despite the fact that the result we obtained with the present number of validation samples did reach significance (Kandall tau = 0.725, with p-value 0.018). This further highlights the power of multivariate analysis as none of the univariates identified in the test cohort independently predicted treatment outcome in the validation cohort, yet the risk signature strongly correlated with a poorer outcome. We believe that understanding the interplay of key immune subsets between the tumoural microenvironment and the circulation will be key to biomarker development. We focused on two covariates from the risk signature based on their predictive power in both cohorts. Analysis of immune populations at the tissue level allowed us to identify tissue counterparts of peripheral CD33+HLADR+ monocytes and CD8CM that not only colocalized at the tissue level but also were favourable to a good outcome. Hence, we hypothesize to have uncovered a two-checkpoint system for predicting response to systemic therapy which merits further investigation.\n\nFirstly, a favourable therapeutic outcome requires the presence of high pre-treatment levels of CD14+CD16+CD33+HLADRhigh monocytes. These correlated with a similar population of CD74+CD68+ population of tumoural myeloid cells. Myeloid cells are plastic yet given the similarity in the marker expression patterns between the peripheral CD33+CD14+CD16+HLADRhigh monocyte population and the CD14+CD33+CD74+CD68+ tissue macrophages, as well as the strong correlation between their corresponding blood and tissue abundance (Figure 6D), we hypothesize that they represent the same group of cells that gain CD68 expression as they enter the tissue. This monocyte population matches the population of intermediate monocytes described in the literature shown to have a key role in antigen presentation (Cravens et al., 2007; Zawada et al., 2011; Wong et al., 2011). Given the correlation between tissue levels CD8+ memory T cell, peripheral intermediate monocytes, and the tissue colocalization of the CD8+ memory T cells with the CD74+ macrophages, we can imagine a role for our myeloid population in inducing post-treatment expansion of CD8CM potentially via a mechanism involving cross-presentation of antigens released by drug-induced cancer cell death (Colbert et al., 2020). Indeed, cetuximab treatment can be a source of tumour-derived antigens as it has been shown to increase TCR diversity in peripheral T cells as well as cross-presentation by antigen-presenting cells (Kansy et al., 2018; Srivastava et al., 2013). Ideally, we would require analysis of the draining lymph node to fully understand how these cells move between the tumour and the circulation and their contribution to the expansion of the CD8CM, a role generally accomplished by dendritic cells at the level of the lymph node. Nevertheless, monocyte-derived macrophages have been shown to activate and expand tissue resident memory T cells (Trm) (Snyder et al., 2021; Low et al., 2020; Muntjewerff et al., 2020; Chu et al., 2020).\n\nAn on-treatment increase in the level of circulating CD8CM significantly correlated with a worse disease outcome in patients who received two regimens of systemic treatments within two trials. Interestingly, high levels of pre-treatment CD8CM cells correlating with a favourable treatment outcome in HNSCC has been previously and independently reported by the Whiteside group indirectly validating our results (Czystowska et al., 2013). While an increase in CD8CM correlating with a poorer outcome in both our datasets seems counter-intuitive, it is key to realize that this increase is only seen at the levels of peripheral CD8CM which inversely correlate with tissue Trm (Figure 6D). Using single-cell sequencing and mapping of T cell receptor clonality at the levels of TILs and peripheral T cells, researchers have definitively proven that tumour reactive T cell clones can be found in the periphery (Fairfax et al., 2020; Kok et al., 2020; Pauken et al., 2021; Padr\u00f3n et al., 2022). The movement of these cells between the tumour and draining lymph node was recently investigated using photoactivable T cells in mice which showed that there is continuous recruitment of memory T cells from the periphery into the tumour which replenishes the pool of tissue Trm identified by CD103 and TCF1 expression. However, this recruitment is usually matched by an egress of Trm cells out of the tumour to the draining lymph nodes which is accompanied by decreased expression CXCR6 (Li et al., 2022). The peripheral origin of Trm cells is still under investigation with recent data suggesting that CD8CM are not only capable of homing into the inflamed tissue but also undergoing transcriptional reprogramming to a stable Trm phenotype (Matos et al., 2022). We hypothesize that the predictive power of the population of peripheral CD8CM stems from its ability to home to the tumour and contribute to the Trm population which has recently been identified as key player in anti-tumour immunity in HNSCC as well as other cancers mainly in the context of immunotherapy but also in chemo/radiotherapy (Han et al., 2021; Ida et al., 2021; Savas et al., 2018; Djenidi et al., 2015; Luoma et al., 2022). Unfortunately, one key shortcoming of our study is the lack of Trm-specific markers such as CD103, CD69, and TCF1 from the imaging mass cytometry panel of antibodies which we believe contributed to this anti-correlation not being stronger.\n\nThe accumulation of clonally expanded memory T cells in the periphery in poor responders is the potential result of tumour-induced T cell exclusion which we can infer from the negative correlation observed between peripheral and tumour infiltrating memory T cells (Jerby-Arnon et al., 2018). In this model CD8+ memory T cells are being generated only in patients having a large pre-treatment pool of competent APCs yet these anti-tumour CD8+ memory cells cannot enter the tumour from the periphery hence accumulating in circulation. Our group is now focused on understanding the different aspects of this model mainly with regards to the specific tumour exclusion of CD8CM T cells.\n\nAnother limitation of our work to discuss is the absence of overall survival (OS) data within our current dataset. It would have been interesting to assess whether the immune markers predict survival in the longer term. However, the accuracy of the predictive signature for OS is often diluted by a variety of subsequent treatment regimens.\n\nThe present study shows that the combination of biomarkers established prospectively by liquid biopsies early in the treatment course offers potential for the provision of personalized treatments to patients (Nenclares et al., 2021). The risk signature drove the discovery of synergies between the systemic and tumoural immune response. Identifying such complex biological interplay as having a role in disease outcome is impossible without multivariate analysis. The post-stratification survival curves in our study demonstrate markedly different PFS outcomes as a testament to this robust statistical model and could represent an invaluable guide to clinicians during the initial stages of treatment.\n",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "1676da0f-ac18-4cab-9585-694bfb1b2d0b",
+      "submission_id": "92fad2e4-e13a-4ab0-8169-2b336d7fc8a7",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jennifer Grandis, https://ror.org/043mz5j54 University of California, San Francisco United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73288.sa0](https://doi.org/10.7554/eLife.73288.sa0)\n\nWhile immune checkpoint inhibitors (anti-PD-1 targeted agents) are now FDA-approved for the treatment of locally advanced and recurrent or metastatic head and neck cancer, predictive biomarkers are lacking. In this study, the co-authors have developed an algorithm that they conclude predicts the clinical outcome to multimodality immunotherapy. While this machine learning approach is intriguing, prospective validation of the proposed immune-based signature is essential to begin to incorporate such an approach into the clinic.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Jennifer Grandis, https://ror.org/043mz5j54 University of California, San Francisco United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73288.sa1](https://doi.org/10.7554/eLife.73288.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Predicting Progression Free Survival after Systemic Therapy in Advanced Head and Neck Cancer: Bayesian regression and Model development\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Wafik El-Deiry as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nReviewer #1 (Recommendations for the authors):\n\nThinking in terms of what would be clinically tractable, I suggest the authors use ML techniques to reduce the assay panel size to a more parsimonious number of covariates, to train this in their existing dataset, and to then validate this in an independent cohort.\n\nReviewer #2 (Recommendations for the authors):\n\nBarber et al. present a manuscript discussing predictive factors for chemotherapy efficacy in head and neck squamous cancer (HNSCC). The paper is well written, , and its style/formatting are optimal. The baseline signature moderately predicted outcome, and the data after one cycle further improved the algorithm, though this decreases its utility as a pure predictive tool. It is interesting that a subpopulation of monocytes, a subset of white peripheral cells long suspected to correlate with outcomes in HNSCC was one of the key drivers of the algorithm. However the overall impact in the field of this work seems limited.\n\nComments:\n\n\u2013 The authors focused on immune cell subpopulations and exosomes, which narrows the scope (no cytokines or other biomarkers were included).\n\n\u2013 The signatures were not prospectively validated on an independent cohort.\n\n\u2013 Unfortunately this algorithm predicts outcome for a first-line therapy that is no longer considered to be the standard of care for HNSCC.\n\n\u2013 The outcome measure is PFS, which is appropriate for therapy effect but not the standard in first line therapy (OS would be).\n\n\u2013 The conclusions of the manuscript are supported by the data, but some of the caveats (such as the lack of a validation cohort, key in predictive biomarker development), are not addressed.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting the paper entitled \"Predicting Progression Free Survival after Systemic Therapy in Advanced Head and Neck Cancer: Bayesian regression and Model development\" for further consideration by eLife. Your revised article has been evaluated by a Senior Editor and a Reviewing Editor. We are sorry to say that we have decided that this submission will not be considered further for publication by eLife.\n\nReviewer #1 (Recommendations for the authors):\n\nThank you for the opportunity to review this revised manuscript. I feel that the authors have made a good-faith effort to answer all of my prior comments. I, unfortunately, feel that the prior comments have not been very completely addressed.\n\nFirst is the issue of unmet clinical need. Several reviewers asked whether a predictive biomarker for chemotherapy is relevant, in the era of ICB. I do in fact agree with the authors that there is still clinical value to predicting response to regimens such as EXTREME which do in fact still have a role in the treatment of HNSCC, and are understudied.\n\nHowever, I did raise the question as to whether this fairly labor-intensive, difficult-to-scale, and expensive assay would add value to the fairly inexpensive and widely available (although admittedly not widely used) biomarkers we already have. I gave the example of NLR but also alluded to simple nomograms that include clinical factors such as age, performance status, tumor stage, etc. It seems important to more convincingly make the case that this model outperforms the widely available, inexpensive data we already have. Looking at the c-indices for this model, I am not sure this is the case. I again would advise this be shown rigorously with direct comparisons, to make the case that this model adds value.\n\nThe validation set is very important to the conclusion that this assay has potential clinical use. I fully recognize that a validation set is hard to come by. But this is the \"acid test\" for such an assay. The validation data here is promising, and again, I understand how hard it is to gather such data, but it is not very convincing. Only 8 patients, with no PFS data (iRECIST is used, with a 50% objective response rate, which seems very high). To support the claim that such an assay has clinical value, a much broader set of validation data are needed.\n\nI raised the question earlier about the large number of patients excluded due to a lack of biospecimens and am concerned that this may limit the results, as this is akin to unequal censoring in a clinical trial. It would be important to compare the patients being studied and those not being studied. This was not addressed.\n\nAs with the other reviewers, the lack of OS data is a weakness here. This is a more minor point, as I do understand that the reviewers tried and were unable to obtain this data from the industry sponsor. I want to stress this is a minor weakness compared to some of the above points. However, multiple co-authors have very significant industry COI (co-authors each receiving personal payments from 15-20 companies) and I am concerned that the withholding of OS data (which has already been collected and is in fact a component of PFS) may reflect other motives on the part of the industry sponsor with whom some authors may be conflicted. Nevertheless, if the data are unavailable, a suggestion: if OS data are not available, perhaps the authors could show rigorously that PFS is a very good surrogate marker of OS in this disease.\n",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5c001cdf-bd7f-4448-98dc-3bc478d229da",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C1",
+      "claim": "Advanced head and neck squamous cell carcinoma (HNSCC) is associated with a poor prognosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Advanced head and neck squamous cell carcinoma (HNSCC) is associated with a poor prognosis, and biomarkers that predict response to treatment are highly desirable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract without specific supporting data in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "53d183f4-834d-41ab-a383-7733dccbb152",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C2",
+      "claim": "Experimental covariates were derived from blood samples of 56 HNSCC patients which were prospectively obtained within a Phase 2 clinical trial (NCT02633800) at baseline and after the first treatment cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental covariates were derived from blood samples of 56 HNSCC patients which were prospectively obtained within a Phase 2 clinical trial (NCT02633800) at baseline and after the first treatment cycle of combined platinum-based chemotherapy with cetuximab treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study design and data collection methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "e11a0868-ad7a-467a-993a-0daf05006707",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C3",
+      "claim": "A baseline risk prediction model was generated featuring clinical and experimental covariates.",
+      "claim_type": "EXPLICIT",
+      "source": "A 'baseline' and a 'combined' risk prediction model were generated, each of which featuring clinical and experimental covariates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the study's findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "83cc0e5c-b685-495e-9fbe-1c80a69c7510",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C4",
+      "claim": "The baseline risk signature has three covariates and was strongly driven by baseline percentage of CD33+CD14+HLADRhigh monocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "The baseline risk signature has three covariates and was strongly driven by baseline percentage of CD33+CD14+HLADRhigh monocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the composition and key driver of the baseline model based on the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "f91619b3-effc-4ec4-85db-630469d0eb18",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C5",
+      "claim": "The combined signature has six covariates, featuring baseline CD33+CD14+HLADRhigh monocytes but is strongly driven by on-treatment relative change of CD8+ central memory T cells percentages.",
+      "claim_type": "EXPLICIT",
+      "source": "The combined signature has six covariates, also featuring baseline CD33+CD14+HLADRhigh monocytes but is strongly driven by on-treatment relative change of CD8+ central memory T cells percentages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the composition and key driver of the combined model based on the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "dc63b07b-b082-4e41-aecb-8e23be886173",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C6",
+      "claim": "The combined model has a higher predictive power than the baseline model.",
+      "claim_type": "EXPLICIT",
+      "source": "The combined model has a higher predictive power than the baseline model and was successfully validated to predict therapeutic response in an independent cohort of nine patients from an additional Phase 2 trial (NCT03494322) assessing the addition of avelumab to cetuximab treatment in HNSCC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative statement about model performance based on the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "588d8bf0-4e05-4ae7-898c-d27a743b5d23",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C7",
+      "claim": "The combined model was successfully validated to predict therapeutic response in an independent cohort of nine patients from an additional Phase 2 trial (NCT03494322).",
+      "claim_type": "EXPLICIT",
+      "source": "The combined model has a higher predictive power than the baseline model and was successfully validated to predict therapeutic response in an independent cohort of nine patients from an additional Phase 2 trial (NCT03494322) assessing the addition of avelumab to cetuximab treatment in HNSCC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the validation of the model in an independent cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "0d176e41-6164-43b7-b23d-72198e81cb0f",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C8",
+      "claim": "Tissue counterparts for the immune cells driving the models were identified using imaging mass cytometry that specifically colocalized at the tissue level and correlated with outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified tissue counterparts for the immune cells driving the models, using imaging mass cytometry, that specifically colocalized at the tissue level and correlated with outcome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes findings from imaging mass cytometry analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "acb868fe-ef95-4857-afb6-6c2be8b540cb",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C9",
+      "claim": "For many years, the standard-of-care first-line systemic treatment was the EXTREME regimen, consisting of a platinum-based chemotherapy regimen and cetuximab, an anti-EGFR monoclonal antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "For many years, the standard-of-care first-line systemic treatment was the EXTREME regimen, consisting of a platinum-based chemotherapy regimen and cetuximab, an anti-EGFR monoclonal antibody (Van Cutsem et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Van Cutsem et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "ba30cda0-fb0d-4c0e-b574-9b1be09a773c",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C10",
+      "claim": "The KEYNOTE-048 trial in 2019 changed the treatment paradigm for HNSCC patients by incorporating pembrolizumab into the first-line setting.",
+      "claim_type": "EXPLICIT",
+      "source": "The KEYNOTE-048 trial in 2019 changed the treatment paradigm for these patients by incorporating pembrolizumab, an immune checkpoint inhibitor, into the first-line setting (Burtness et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Burtness et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "236c76b3-7700-49fc-8ec6-7dae01e7cdd6",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C11",
+      "claim": "The EXTREME regimen remains a first-line standard-of-care for patients with PD-L1 negative tumours or those with contraindications to anti-PD1 immunotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the EXTREME regimen remains a first-line standard-of-care for a substantial number of patients, specifically those with programmed death ligand 1 (PD-L1) negative tumours or those with contraindications to the use of anti-PD1 immunotherapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as current clinical practice knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "0bb3e046-bf2e-4871-a94e-d681f3fb66d0",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C12",
+      "claim": "Efforts to generate biomarkers in HNSCC have focused on gene expression profiles, which are dependent on the availability of tumour tissue and are only performed on pre-treatment samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Until the development of PD-L1 as a biomarker for immunotherapy, efforts to generate biomarkers in HNSCC have focused on gene expression profiles, which are dependent on the availability of tumour tissue and are only performed on pre-treatment samples (Bossi et al., 2016; You et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Bossi et al., 2016 and You et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "cb8caaf6-4402-42a0-9d00-7ae806e5ca59",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C13",
+      "claim": "Signatures based on a single biological modality and taken at a single timepoint may be insufficient to predict outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Signatures based on a single biological modality and taken at a single timepoint may be insufficient to predict outcomes, as response to therapy relies on a dynamic interplay between cancer genomics, immune profile, tumour microenvironment, and clinicopathological characteristics of the patient receiving treatment (Cheerla and Gevaert, 2019; Huang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Cheerla and Gevaert, 2019 and Huang et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "6ad09977-8d83-44ea-814e-acd9544045d1",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C14",
+      "claim": "Efforts to develop a machine learning model to stratify survival risk by combining genetic and clinicopathological characteristics have revealed some success in advanced oral squamous cell carcinoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Efforts to develop a machine learning model to stratify survival risk by combining genetic and clinicopathological characteristics have revealed some success in advanced oral squamous cell carcinoma (Tseng et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Tseng et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "a100694e-aae2-4301-986a-c9b91e3edf6e",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C15",
+      "claim": "Eighty-seven patients were enrolled in the clinical trial NCT02633800.",
+      "claim_type": "EXPLICIT",
+      "source": "Eighty-seven patients were enrolled in the clinical trial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study enrollment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "98c752b8-76ad-43a7-922c-83b7aa9515cb",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C16",
+      "claim": "Thirty-one patients were excluded due to incomplete paired biological datasets, leaving 56 patients for analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Thirty-one patients were excluded due to incomplete paired biological datasets, leaving 56 patients for analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the final study cohort after exclusions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "2bdcdc52-5488-4429-8cd4-b599c73bb9e9",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C17",
+      "claim": "There was no difference in PFS between patients who received patritumab and those who did not.",
+      "claim_type": "EXPLICIT",
+      "source": "Amongst these patients, there was no difference in PFS as demonstrated by Kaplan-Meier survival curve analysis (Figure 1\u2014figure supplement 1) regardless of whether the patients received patritumab, which reflected the results published in the clinical trial.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Kaplan-Meier analysis shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "bf468c42-558c-45a4-809f-30c2f7487451",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C18",
+      "claim": "There is no significant difference between the clinicopathological characteristics pertaining to the discovery cohort and the whole cohort of study.",
+      "claim_type": "EXPLICIT",
+      "source": "The baseline clinical characteristics of these 56 patients are shown in Supplementary file 1 together with a comparison that shows there is no significant difference between the clinicopathological characteristics pertaining to the discovery cohort and the whole cohort of study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison analysis shown in Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "008af65f-db54-433c-b376-41a602c533fe",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C19",
+      "claim": "PBMC samples were analysed using flow cytometry to generate unique immunological subpopulations.",
+      "claim_type": "EXPLICIT",
+      "source": "PBMC samples were analysed using flow cytometry to generate unique immunological subpopulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "4b30a001-a5ba-4c27-9c46-a7cb6816b092",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C20",
+      "claim": "Exosomes were extracted from the serum and analysed for EGFR-ErbB3 dimerization and miRNA-21-5p and miRNA-142-3p.",
+      "claim_type": "EXPLICIT",
+      "source": "Exosomes were extracted from the serum and analysed for EGFR-ErbB3 dimerization and miRNA-21-5p and miRNA-142-3p (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the methodology and is illustrated in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "d2c11417-fb9e-4d53-aea4-7045affcb8fe",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C21",
+      "claim": "These analyses yielded a total of 29 unique biological covariates.",
+      "claim_type": "EXPLICIT",
+      "source": "These analyses yielded a total of 29 unique biological covariates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the number of covariates generated from the analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "80628d7b-6b9c-4d15-9d9b-38eb2c472a77",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C22",
+      "claim": "Each covariate was obtained in pairs (C1 and C2), generating a total of 58 laboratory-based covariates for the multivariate analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Each covariate was obtained in pairs (C1 and C2), generating a total of 58 laboratory-based covariates for the multivariate analysis (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the total number of covariates used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "eef15a21-4345-45d6-8301-87fb1b9cd23d",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C23",
+      "claim": "The baseline clinical characteristics and laboratory-based covariates did not significantly differ between the placebo and patritumab cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "The baseline clinical characteristics, as well as value of the laboratory-based covariates at baseline and after one cycle of treatment, did not significantly differ between the placebo and patritumab cohorts (Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison analysis shown in Supplementary file 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "165fd22f-7eaf-41c8-9629-a6281a771429",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C24",
+      "claim": "Samples from both the control and investigational arms were analysed together in the exploratory analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, in this exploratory analysis, samples from both the control and investigational arms were analysed together.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analytical approach taken in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "fdab68e2-61fd-4357-b13b-587211339966",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C25",
+      "claim": "Bayesian multivariate proportional hazards regression was used to rank and select covariates by predictive importance.",
+      "claim_type": "EXPLICIT",
+      "source": "Using Bayesian multivariate proportional hazards regression, covariates were ranked and selected by predictive importance (Grigoriadis et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical methodology used, supported by citation to Grigoriadis et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "c415a798-1f10-4c3c-b7ec-93a020fc4987",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C26",
+      "claim": "A baseline predictive model was derived containing a dataset of 42 baseline covariates (29 laboratory parameters at baseline and 13 clinical characteristics).",
+      "claim_type": "EXPLICIT",
+      "source": "We derived two models using separate datasets: firstly, a baseline predictive model containing a dataset of 42 baseline covariates (29 laboratory parameters at baseline (C1) and 13 clinical characteristics).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the composition of the baseline model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "17d8dae8-87df-43e4-98d8-718f3457385b",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C27",
+      "claim": "A combined predictive model consists of 71 covariates, including the 42 baseline covariates and 29 derived from on-treatment changes.",
+      "claim_type": "EXPLICIT",
+      "source": "The second, a combined predictive model, consists of 71 covariates, that is, the 42 baseline covariates and a further 29 derived from the on-treatment change of the value of a lab-based parameter relative to its value in the same patient at baseline denoted as lfc of that variable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the composition of the combined model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "bfc9e741-a6ca-468d-86b8-6fc6ba70ad39",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C28",
+      "claim": "The relative efficiency of the predictive model was assessed using C-index and rank correlation of the signature-generated risk scores with survival time.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative efficiency of the predictive model was assessed by using C-index (a metric proposed by Harrell et al., 1984, to evaluate the accuracy of predictions made by an algorithm) and rank correlation of the signature-generated risk scores with survival time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the evaluation metrics used, with citation to Harrell et al., 1984.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "44da2bab-574b-4c91-a1bf-586dce621a77",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C29",
+      "claim": "Proportional hazards regression revealed two baseline immune subpopulations (CD33+CD14+ monocytes and double negative B cells) and one clinical covariate (age) that exceeded the critical \u03b2 value threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed two baseline immune subpopulations with a \u03b2 value which exceeded the critical \u03b2 value threshold, that is, CD14+CD16+CD33+CD11b+ monocytes thereafter referred to as CD33+CD14+ monocytes according to previous nomenclature (Cravens et al., 2007) and double negative (CD27-IgD-) B cells (DN B cells), as well as one clinical covariate \u2013 age (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the results of the proportional hazards regression analysis, shown in Figure 2B, with citation to Cravens et al., 2007.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "cbbad23f-07d9-4be4-80cd-286c61640bf4",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C30",
+      "claim": "Baseline CD33+CD14+ monocytes have a \u03b2 value of \u20131.05, indicating that a higher baseline value is predictive of better PFS.",
+      "claim_type": "EXPLICIT",
+      "source": "Evaluation of the individual \u03b2 values reveal that baseline CD33+CD14+ monocytes and DN B cells have a \u03b2 value of \u20131.05 and \u20130.53, respectively, and hence a higher baseline value of both populations is predictive of better PFS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the specific \u03b2 values and their interpretation from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "0a99ad62-1921-4d9d-b259-57bad4588fce",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C31",
+      "claim": "DN B cells have a \u03b2 value of \u20130.53, indicating that a higher baseline value is predictive of better PFS.",
+      "claim_type": "EXPLICIT",
+      "source": "Evaluation of the individual \u03b2 values reveal that baseline CD33+CD14+ monocytes and DN B cells have a \u03b2 value of \u20131.05 and \u20130.53, respectively, and hence a higher baseline value of both populations is predictive of better PFS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the specific \u03b2 values and their interpretation from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "9e013b1e-69df-4710-8543-0aeffb532553",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C32",
+      "claim": "Age has a \u03b2 value of 0.47 and is associated with poorer PFS.",
+      "claim_type": "EXPLICIT",
+      "source": "Age, with a \u03b2 value of 0.47, is associated with poorer PFS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the specific \u03b2 value for age and its interpretation from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "6e6a53c5-2550-4cca-839c-01465cdde9bf",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C33",
+      "claim": "The baseline risk scores correlated strongly with PFS (C-index=0.60, \u03c4=\u22120.33, p=0.0005).",
+      "claim_type": "EXPLICIT",
+      "source": "The baseline risk scores correlated strongly with PFS (C-index=0.60, \u03c4=\u22120.33, p=0.0005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides the statistical measures of correlation between baseline risk scores and PFS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "32bc02e0-6834-40e5-9bab-a16846f00abc",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C34",
+      "claim": "The median PFS of the low-risk and high-risk cohorts based on baseline signature are 8.3 and 3.6 months, respectively (log rank p-value = 6.0e-5).",
+      "claim_type": "EXPLICIT",
+      "source": "The median PFS of the low-risk and high-risk cohorts are 8.3 and 3.6 months, respectively (log rank p-value = 6.0e-5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides the median PFS values for the two risk groups based on the baseline signature.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "6baf3699-f2f7-4a6a-9486-0fa7a52e3c7b",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C35",
+      "claim": "Six covariates were identified in the combined model: baseline CD33+CD14+ monocytes, baseline CD4+ memory regulatory T cells, increase in CD8+ effector memory T cells, increase in CD8+ central memory T cells, increase in CD3 T cells, and hypopharyngeal primary tumour site.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of six covariates were identified \u2013 three immune subpopulations with negative \u03b2 values and hence associated with better survival, that is, baseline CD33+CD14+ monocytes, baseline CD4+ memory regulatory T cells (HLA-DR-CD45RO+Tregs), and an increase in CD8+ effector memory T cells (CD45RO+CCR7-). An increase in two subpopulations, CD8+ central memory T cells (CD45RO+CCR7+) and CD3 T cells, was associated with inferior PFS. The hypopharyngeal primary tumour site was also associated with a poorer PFS (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the covariates identified in the combined model analysis, shown in Figures 3A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "143698d9-6da0-4b1a-bb43-d066952e0a6c",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C36",
+      "claim": "Baseline CD33+CD14+ monocytes, baseline CD4+ memory regulatory T cells, and an increase in CD8+ effector memory T cells are associated with better survival.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of six covariates were identified \u2013 three immune subpopulations with negative \u03b2 values and hence associated with better survival, that is, baseline CD33+CD14+ monocytes, baseline CD4+ memory regulatory T cells (HLA-DR-CD45RO+Tregs), and an increase in CD8+ effector memory T cells (CD45RO+CCR7-).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes which covariates are associated with better survival based on their negative \u03b2 values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "20df7359-4be7-4743-b50b-ee5aaf30cac0",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C37",
+      "claim": "An increase in CD8+ central memory T cells and CD3 T cells was associated with inferior PFS.",
+      "claim_type": "EXPLICIT",
+      "source": "An increase in two subpopulations, CD8+ central memory T cells (CD45RO+CCR7+) and CD3 T cells, was associated with inferior PFS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes which covariates are associated with worse survival.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "8ff5a928-8e23-4a01-b39f-1789bb2d12d9",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C38",
+      "claim": "The hypopharyngeal primary tumour site was associated with a poorer PFS.",
+      "claim_type": "EXPLICIT",
+      "source": "The hypopharyngeal primary tumour site was also associated with a poorer PFS (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the association between tumour site and PFS, shown in Figures 3A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "a7a9dce6-5084-4906-bb36-9fedead1cab2",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C39",
+      "claim": "The combined risk scores exhibited a stronger correlation with PFS than the baseline risk scores (C-index=0.69, \u03c4=\u22120.49, p=7e-7).",
+      "claim_type": "EXPLICIT",
+      "source": "The combined risk scores exhibited a stronger correlation with PFS than the baseline risk scores (C-index=0.69, \u03c4=\u22120.49, p=7e-7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides the statistical measures comparing the combined and baseline models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "c28bb732-18d8-41bc-acb2-435fac1ddf6d",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C40",
+      "claim": "In the combined predictive signature, the median PFS of the low-risk and high-risk cohorts are 6.8 and 3.6 months, respectively (log rank p-value 0.004).",
+      "claim_type": "EXPLICIT",
+      "source": "In this combined predictive signature, the median PFS of the low-risk and high-risk cohorts are 6.8 and 3.6 months, respectively (log rank p-value 0.004) (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This provides the median PFS values for the two risk groups based on the combined signature, shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "29c9c23e-0d40-4fc9-94f5-384049663f91",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C41",
+      "claim": "The difference in EGFR-ErbB3 FRET (FRET.delta) was associated with a negative \u03b2 value suggesting better PFS, but fell marginally short of featuring in the eventual predictive signature.",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 3A (fourth covariate from the bottom), the difference in EGFR-ErbB3 FRET (FRET.delta) was associated with a negative \u03b2 value which suggests a better PFS. However, the stringency that we have applied to optimal covariate selection means that this covariate fell marginally short of featuring in the eventual predictive signature.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a covariate that showed a trend but did not meet the stringent selection criteria, as shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "1f445b54-c465-4abc-9f6d-05acf728b4aa",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C42",
+      "claim": "Patients with a high FRET.delta exhibited a suggestion of better PFS than patients with a low FRET.delta, though this difference was not statistically significant (log rank p-value = 0.2).",
+      "claim_type": "EXPLICIT",
+      "source": "By dividing the patients with available FRET values by the median FRET.delta (n=43), there was a suggestion that patients with a high FRET.delta exhibited a better PFS than patients with a low FRET.delta. This difference was not statistically significant (log rank p-value = 0.2) (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a non-significant trend observed in the FRET analysis, shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "bbcc43fa-3dcb-4fe1-8a04-ffa28900e70c",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C43",
+      "claim": "A significant correlation was identified between the log fold changes of miR-21-5p and the corresponding log fold changes of CD33+CD14+ monocytes (r=0.43, p=0.02).",
+      "claim_type": "EXPLICIT",
+      "source": "By correlating the miRNA changes in our study with this monocytic subpopulation, a significant correlation was identified between the log fold changes of miR-21-5p with the corresponding log fold changes of CD33+CD14+ monocytes (r=0.43, p=0.02, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a correlation analysis between miRNA and monocyte changes, shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "39489426-6ea5-45e6-9e54-cf45b685d154",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C44",
+      "claim": "The validation cohort consisted of 16 patients from the EACH trial (NCT03494322).",
+      "claim_type": "EXPLICIT",
+      "source": "The validation cohort of 16 patients was obtained from the EACH trial (NCT03494322) which evaluated the combination of avelumab with cetuximab in HNSCC patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the validation cohort source.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "64674600-3b3e-4f44-b811-ccfd2473dc70",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C45",
+      "claim": "PBMCs were successfully obtained from eight patients at the pre-treatment timepoint and after one cycle of cetuximab in the validation cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "As the risk signature consisted predominantly of immune subpopulations, we successfully obtained PBMCs from eight patients at the pre-treatment timepoint and after one cycle of cetuximab hence matching the timepoints of the original cohort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample collection for the validation cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "2b0beafc-1239-4a17-a049-b0cc52c544eb",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C46",
+      "claim": "In the original test cohort, patient PFS data strongly and inversely correlated with BOR (\u03c4=\u22120.52, p=3e-6).",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that in the original test cohort, patient PFS data strongly and inversely correlated with BOR (\u03c4=\u22120.52, p=3e-6) (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the correlation between PFS and BOR in the test cohort, shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "0fec6145-f32f-4a60-abee-e33b35db8916",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C47",
+      "claim": "The combined risk signature strongly correlated with a poorer treatment outcome in the validation cohort (\u03c4=0.73, p=0.02).",
+      "claim_type": "EXPLICIT",
+      "source": "The combined risk signature strongly correlated with a poorer treatment outcome (\u03c4=0.73, p=0.02) (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the validation of the combined risk signature in the independent cohort, shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "62ec0e38-cd11-428d-a990-255c4051a18a",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C48",
+      "claim": "High pre-treatment levels of CD33+CD14+ monocytes significantly correlated with a worse disease outcome in the validation cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "High pre-treatment levels of CD33+CD14+monocytes significantly correlated with a worse disease outcome in all patients except for a single outlier who exhibited a complete response to treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the correlation between baseline monocytes and outcome in the validation cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "91ce95c9-c6bd-43fd-b757-257a6f4c8b51",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C49",
+      "claim": "A post-treatment increase in CD8+ central memory cells (lfcCD8CM) correlated with a poorer treatment outcome in the validation cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "A post-treatment increase in CD8+ central memory cells (lfcCD8CM) also correlated with a poorer treatment outcome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the correlation between CD8CM changes and outcome in the validation cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "6a1cae0c-470a-49a4-a666-bb5ab0852444",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C50",
+      "claim": "Baseline CD33+CD14+ monocytes showed a modest split in PFS that reached significance (log rank p-value = 0.03).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a modest split that reached significance only in the case of baseline CD33+CD14+ monocyte (log rank p-value = 0.03) and not in the case of lfcCD8CM cells (log rank p-value = 0.1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the univariate analysis of baseline CD33+CD14+ monocytes in the original cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "e01a8a98-64c4-4d30-9d0d-f459dbcabd21",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C51",
+      "claim": "lfcCD8CM more strongly predicted PFS (C-index=0.74, \u03c4=\u22120.36, p=0.01) than baseline CD33+CD14+ monocytes (C-index=0.39, \u03c4=0.22, p=0.07).",
+      "claim_type": "EXPLICIT",
+      "source": "lfcCD8CM more strongly predicted PFS (C-index=0.74, \u03c4=\u22120.36, p=0.01) than base line CD33+CD14+ monocytes (C-index=0.39, \u03c4=0.22, p=0.07).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares the predictive power of two key covariates as univariates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "a4c53fe0-4ba9-45f5-8e75-92f9aa249f3a",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C52",
+      "claim": "CD14+CD16+CD33+CD11b+ monocytes also express high levels of HLA-DR.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the consistency with which the CD33+CD14+ monocyte population appeared across our study, we wanted to further characterize this population to determine its phenotype hence we expanded the antibody panel for the validation set and determined that these CD14+CD16+CD33+CD11b+ monocytes also express high levels of HLA-DR (Figure 5\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes additional phenotypic characterization of the monocyte population, shown in Figure 5\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "58ecf636-fc62-47fa-bd74-56b501492d9d",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C53",
+      "claim": "Sufficient tissue from the biopsy at trial enrolment for in-depth profiling by imaging mass cytometry was obtained from nine patients.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained sufficient tissue from the biopsy at trial enrolment for in-depth profiling by imaging mass cytometry from nine patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the tissue samples available for imaging mass cytometry analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "1405654e-503c-4e39-aecd-e06bddd28d7b",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C54",
+      "claim": "None of the superpopulations identified by imaging mass cytometry correlated with PFS.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of the superpopulations per patient is shown in Figure 6B, yet none of which correlated with PFS (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the lack of correlation between superpopulations and PFS, shown in Figure 6B and Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "a2d841d2-e958-4512-a8a3-b2b972e6b849",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C55",
+      "claim": "The peripheral intermediate monocyte population strongly correlated with a tissue CD14+CD33+CD74+CD68+ macrophage population.",
+      "claim_type": "EXPLICIT",
+      "source": "The peripheral intermediate monocyte population strongly correlated with a tissue CD14+CD33+CD74+CD68+ macrophage population while the CD8CM inversely correlated with CD45RO+CD27+CD8+ tissue resident memory T cell (CD8Trm) population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the correlation between peripheral and tissue immune populations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "b2bd4b15-44f2-42a4-a6e8-285b59b617c4",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C56",
+      "claim": "CD8CM inversely correlated with CD45RO+CD27+CD8+ tissue resident memory T cell (CD8Trm) population.",
+      "claim_type": "EXPLICIT",
+      "source": "The peripheral intermediate monocyte population strongly correlated with a tissue CD14+CD33+CD74+CD68+ macrophage population while the CD8CM inversely correlated with CD45RO+CD27+CD8+ tissue resident memory T cell (CD8Trm) population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the inverse correlation between peripheral CD8CM and tissue CD8Trm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "b9821d93-6335-4001-9cc5-808942ccb716",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C57",
+      "claim": "Both CD74+ macrophages and CD8Trm populations positively correlated with PFS.",
+      "claim_type": "EXPLICIT",
+      "source": "Both of those populations positively correlated with PFS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the correlation between tissue immune populations and PFS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "b1bd94ff-891e-4280-9dc1-be9084c13729",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C58",
+      "claim": "The peripheral CD33+ monocyte population strongly correlated with CD8Trm.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the peripheral CD33+ monocyte population strongly correlated with CD8Trm (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the correlation between peripheral monocytes and tissue CD8Trm, shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "552d01c4-2140-44f0-bdcc-6d77e1e66cb0",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C59",
+      "claim": "CD8Trm cells were significantly more likely to be in contact with a CD74+ macrophage than any other identified population.",
+      "claim_type": "EXPLICIT",
+      "source": "We found these cells were significantly more likely to be in contact with a CD74+ macrophage than any other identified population suggesting this interaction is biologically driven and not random (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the cell-to-cell contact analysis, shown in Figure 6E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "755f420f-0797-4ae2-ba06-9898f2e1fc5b",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C60",
+      "claim": "The 5-year relative survival of patients with hypopharyngeal SCC is consistently the worst amongst different anatomical HNSCC sub-sites.",
+      "claim_type": "EXPLICIT",
+      "source": "This corroborates previous findings that the 5-year relative survival of patients with hypopharyngeal SCC is consistently the worst amongst different anatomical HNSCC sub-sites (Gatta et al., 2017; Machiels et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Gatta et al., 2017 and Machiels et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "bc2efd87-60ca-45fc-9fed-747735bb242a",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C61",
+      "claim": "Hypopharyngeal tumours have a propensity to present at the de novo advanced stage.",
+      "claim_type": "EXPLICIT",
+      "source": "The propensity of hypopharyngeal tumours to present at the de novo advanced stage (Cadoni et al., 2017) and the density of submucosal lymphatics in this anatomical region translates into these patients inherently performing worse \u2013 lending support to the robust nature of our predictive signature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Cadoni et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "6e4cc742-facc-46b8-9e8e-9f513d421512",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C62",
+      "claim": "The addition of patritumab did not produce any benefit to PFS in the Phase 2 clinical trial.",
+      "claim_type": "EXPLICIT",
+      "source": "The notable absence of patritumab (denoted as 'Drug') in our predictive signatures is also consistent with the outcome of the Phase 2 clinical trial where the addition of this investigational medicinal product did not produce any benefit to PFS (Forster et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Forster et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "7154466d-1635-469e-bbd6-eb01da104836",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C63",
+      "claim": "There is a high level of inter-individual heterogeneity in the relative abundance of PBMC subpopulations even between healthy donors.",
+      "claim_type": "EXPLICIT",
+      "source": "There is a high level of inter-individual heterogeneity in the relative abundance of PBMC subpopulations even between healthy donors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as general knowledge about PBMC populations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "f4cffa12-3a3f-4a39-8ff8-ec368aa9f940",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C64",
+      "claim": "The first trial involved targeted therapies and the second a combination of anti-EGFR and anti-PD-L1 therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that the first trial involved targeted therapies and the second a combination of anti-EGFR and anti-PD-L1 therapy, yet the same blood kinetic change can still distinguish between responders and non-responders is novel and has not been seen before according to our knowledge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the different treatment modalities used in the two trials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "b8a64b2d-2de6-4b94-8c2b-6116474fbacb",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C65",
+      "claim": "The same blood kinetic change can distinguish between responders and non-responders across different treatment modalities, which is novel.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that the first trial involved targeted therapies and the second a combination of anti-EGFR and anti-PD-L1 therapy, yet the same blood kinetic change can still distinguish between responders and non-responders is novel and has not been seen before according to our knowledge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the findings based on the authors' knowledge.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "5eaaad13-0f17-4905-9129-cafec1a12a7f",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C66",
+      "claim": "None of the univariates identified in the test cohort independently predicted treatment outcome in the validation cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "This further highlights the power of multivariate analysis as none of the univariates identified in the test cohort independently predicted treatment outcome in the validation cohort, yet the risk signature strongly correlated with a poorer outcome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the limitation of univariate analysis compared to multivariate analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "f9efea9f-4375-4b5e-bb45-71a7bd0b9855",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C67",
+      "claim": "The peripheral CD33+HLADR+ monocyte population matches the population of intermediate monocytes described in the literature shown to have a key role in antigen presentation.",
+      "claim_type": "EXPLICIT",
+      "source": "This monocyte population matches the population of intermediate monocytes described in the literature shown to have a key role in antigen presentation (Cravens et al., 2007; Zawada et al., 2011; Wong et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Cravens et al., 2007; Zawada et al., 2011; and Wong et al., 2011.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "199979cb-8033-44d9-abcd-981512860ddf",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C68",
+      "claim": "Cetuximab treatment can be a source of tumour-derived antigens as it has been shown to increase TCR diversity in peripheral T cells as well as cross-presentation by antigen-presenting cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, cetuximab treatment can be a source of tumour-derived antigens as it has been shown to increase TCR diversity in peripheral T cells as well as cross-presentation by antigen-presenting cells (Kansy et al., 2018; Srivastava et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kansy et al., 2018 and Srivastava et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "cca89344-5d63-4383-bd0f-85c10c86e15a",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C69",
+      "claim": "Monocyte-derived macrophages have been shown to activate and expand tissue resident memory T cells (Trm).",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, monocyte-derived macrophages have been shown to activate and expand tissue resident memory T cells (Trm) (Snyder et al., 2021; Low et al., 2020; Muntjewerff et al., 2020; Chu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Snyder et al., 2021; Low et al., 2020; Muntjewerff et al., 2020; and Chu et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "999058ed-372d-4507-8ac2-45d797fa3e98",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C70",
+      "claim": "High levels of pre-treatment CD8CM cells correlating with a favourable treatment outcome in HNSCC has been previously and independently reported by the Whiteside group.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, high levels of pre-treatment CD8CM cells correlating with a favourable treatment outcome in HNSCC has been previously and independently reported by the Whiteside group indirectly validating our results (Czystowska et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Czystowska et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "79a93e48-546a-4430-9815-871f6dc28bd2",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C71",
+      "claim": "Tumour reactive T cell clones can be found in the periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "Using single-cell sequencing and mapping of T cell receptor clonality at the levels of TILs and peripheral T cells, researchers have definitively proven that tumour reactive T cell clones can be found in the periphery (Fairfax et al., 2020; Kok et al., 2020; Pauken et al., 2021; Padr\u00f3n et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Fairfax et al., 2020; Kok et al., 2020; Pauken et al., 2021; and Padr\u00f3n et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "aabd717e-7b24-4fea-9946-cfab8a7b1f99",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C72",
+      "claim": "There is continuous recruitment of memory T cells from the periphery into the tumour which replenishes the pool of tissue Trm identified by CD103 and TCF1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The movement of these cells between the tumour and draining lymph node was recently investigated using photoactivable T cells in mice which showed that there is continuous recruitment of memory T cells from the periphery into the tumour which replenishes the pool of tissue Trm identified by CD103 and TCF1 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes findings from a mouse study about T cell movement.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "a1a3decc-69fc-4b38-833e-b2703abcd014",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C73",
+      "claim": "CD8CM are capable of homing into the inflamed tissue and undergoing transcriptional reprogramming to a stable Trm phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "The peripheral origin of Trm cells is still under investigation with recent data suggesting that CD8CM are not only capable of homing into the inflamed tissue but also undergoing transcriptional reprogramming to a stable Trm phenotype (Matos et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Matos et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "738c0702-e6b2-49c9-afb5-015b2f3929c5",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C74",
+      "claim": "Trm has been identified as a key player in anti-tumour immunity in HNSCC as well as other cancers mainly in the context of immunotherapy but also in chemo/radiotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that the predictive power of the population of peripheral CD8CM stems from its ability to home to the tumour and contribute to the Trm population which has recently been identified as key player in anti-tumour immunity in HNSCC as well as other cancers mainly in the context of immunotherapy but also in chemo/radiotherapy (Han et al., 2021; Ida et al., 2021; Savas et al., 2018; Djenidi et al., 2015; Luoma et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Han et al., 2021; Ida et al., 2021; Savas et al., 2018; Djenidi et al., 2015; and Luoma et al., 2022.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "7f3eb021-5b59-486e-8b76-c1e8ff5885d6",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C75",
+      "claim": "The authors hypothesize that the predictive power of peripheral CD8CM stems from its ability to home to the tumour and contribute to the Trm population.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that the predictive power of the population of peripheral CD8CM stems from its ability to home to the tumour and contribute to the Trm population which has recently been identified as key player in anti-tumour immunity in HNSCC as well as other cancers mainly in the context of immunotherapy but also in chemo/radiotherapy (Han et al., 2021; Ida et al., 2021; Savas et al., 2018; Djenidi et al., 2015; Luoma et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a hypothesis by the authors.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "21c9ea17-9da0-46d7-9434-210c539d807c",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C76",
+      "claim": "The accumulation of clonally expanded memory T cells in the periphery in poor responders is the potential result of tumour-induced T cell exclusion.",
+      "claim_type": "EXPLICIT",
+      "source": "The accumulation of clonally expanded memory T cells in the periphery in poor responders is the potential result of tumour-induced T cell exclusion which we can infer from the negative correlation observed between peripheral and tumour infiltrating memory T cells (Jerby-Arnon et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed correlation, supported by citation to Jerby-Arnon et al., 2018.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "56dfe8fe-bb22-4515-998c-ca05f9cc3cdd",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C77",
+      "claim": "The authors hypothesize a model where CD8+ memory T cells are being generated only in patients having a large pre-treatment pool of competent APCs yet these anti-tumour CD8+ memory cells cannot enter the tumour from the periphery hence accumulating in circulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In this model CD8+ memory T cells are being generated only in patients having a large pre-treatment pool of competent APCs yet these anti-tumour CD8+ memory cells cannot enter the tumour from the periphery hence accumulating in circulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothetical model proposed by the authors based on their findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "dfad87f2-f52a-45e8-86c3-d447c697aa62",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C78",
+      "claim": "miR-21-5p and miR-142-3p have previously demonstrated prognostic and predictive utility.",
+      "claim_type": "EXPLICIT",
+      "source": "We also incorporated the analysis of two circulating microRNAs (miRNAs) from exosomes: miR-21-5p and miR-142-3p, which have previously demonstrated prognostic and predictive utility (Summerer et al., 2015; Vahabi et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Summerer et al., 2015 and Vahabi et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "3540b8b8-bc5c-4e1b-a5bb-8475dc3dc17d",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C79",
+      "claim": "miRNA signatures have been implicated as a useful classifier for myeloid cell subsets.",
+      "claim_type": "EXPLICIT",
+      "source": "While none of the remaining exosome derived perimeters correlated with PFS, miRNA signatures have been implicated as a useful classifier for myeloid cell subsets (Bronte et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Bronte et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "1cf8e8ed-6808-4a06-89d4-6077d2812082",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C80",
+      "claim": "Two recent meta-analyses identified that a high pre-treatment NLR correlated with worse OS with respective HRs of 1.69 (95% CI: 1.47\u20131.93; p<0.001) and HR of 1.78 (95% CI: 1.53\u20132.07; p<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "Two recent meta-analyses on the subject have identified that a high pre-treatment NLR correlated with worse OS with respective HRs of 1.69 (95% CI: 1.47\u20131.93; p<0.001) and HR of 1.78 (95% CI: 1.53\u20132.07; p<0.0001) (Mascarella et al., 2018; Takenaka et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Mascarella et al., 2018 and Takenaka et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "b758db1f-1e6c-40aa-b937-d7a21326cf78",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C81",
+      "claim": "Using the combined risk signature, the authors were able to predict disease outcome more accurately across two separate treatment modalities.",
+      "claim_type": "EXPLICIT",
+      "source": "Using our combined risk signature, we were able to predict disease outcome more accurately across two separate treatment modalities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the performance of their model based on the study results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "f38118d7-dd1a-4b7e-9a17-bc4c3e9359fe",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C82",
+      "claim": "PD-L1 expression levels, when used in isolation, have not been sufficiently predictive at identifying patients who would benefit from immune checkpoint blockade.",
+      "claim_type": "EXPLICIT",
+      "source": "Other recent biomarker research has focused on predicting response to immune checkpoint blockade by analysing tissue-based biomarkers, such as PD-L1 expression levels, but when used in isolation have not been sufficiently predictive at identifying patients who would benefit (Burtness et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Burtness et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "fd4970e8-1f1b-4b16-abbe-1cee22780fed",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "claim_id": "C83",
+      "claim": "The current study is one of the first examples of integrating multiple biological covariates derived from peripheral blood and patient clinical data to generate a signature which predicts treatment response and that has been validated across multiple therapeutic modalities.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, the current study is one of the first examples of integrating multiple biological covariates derived from peripheral blood and patient clinical data to generate a signature which predicts treatment response and that has been validated across multiple therapeutic modalities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the study based on the authors' knowledge.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "573e3b9d-2854-4d0c-a646-564b204651f6",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study enrolled 87 HNSCC patients in a Phase 2 trial (NCT02633800), with 56 patients having complete paired blood samples at baseline (C1) and after first treatment cycle (C2). Blood samples were analyzed by flow cytometry for immune populations and exosomes for EGFR-ErbB3 dimerization and miRNAs, yielding 58 laboratory-based covariates. No significant differences existed between discovery cohort and full cohort, or between placebo and patritumab arms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C15-C24 provide clear documentation of study design, patient enrollment, sample collection, and analytical methods. The exclusion criteria and lack of differences between treatment arms (C17, C23) are appropriately documented with statistical comparisons. The methodology is well-described and internally consistent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "a20dfe95-6e13-4714-a632-4aa5d7db3c08",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A baseline risk prediction model was developed using Bayesian multivariate proportional hazards regression on 42 baseline covariates. The model identified three significant covariates: CD33+CD14+ monocytes (\u03b2=-1.05), DN B cells (\u03b2=-0.53), and age (\u03b2=0.47). The baseline risk scores correlated with PFS (C-index=0.60, \u03c4=-0.33, p=0.0005), with median PFS of 8.3 months for low-risk vs 3.6 months for high-risk cohorts (log rank p=6.0e-5).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C34 describe a statistically rigorous baseline model with appropriate methodology (Bayesian regression with cross-validation), clear performance metrics (C-index, rank correlation, log-rank test), and significant p-values. The \u03b2 values and their interpretations are internally consistent, and the survival analysis shows strong discrimination between risk groups.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "7872ebd6-79b0-4607-b299-cf2d32b5a5b0",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A combined risk prediction model incorporating 71 covariates (42 baseline + 29 on-treatment changes) identified six significant covariates: baseline CD33+CD14+ monocytes, baseline CD4+ memory Tregs, increase in CD8+ effector memory T cells (all protective), increase in CD8+ central memory T cells, increase in CD3 T cells, and hypopharyngeal tumor site (all adverse). The combined model showed stronger correlation with PFS (C-index=0.69, \u03c4=-0.49, p=7e-7) than baseline model, with median PFS of 6.8 vs 3.6 months (log rank p=0.004).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27, C35-C40 demonstrate that incorporating on-treatment changes improves predictive power over baseline alone. The statistical metrics show improvement (C-index 0.69 vs 0.60), and all p-values are highly significant. The identification of six covariates with clear directional effects is well-supported by the proportional hazards regression analysis shown in Figure 3.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "ff65de4c-cdce-4fba-bc56-f732e7811c1b",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The combined model demonstrated superior predictive power compared to the baseline model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C39 are directly supported by quantitative comparison: combined model C-index=0.69 vs baseline C-index=0.60, with stronger rank correlation (\u03c4=-0.49 vs \u03c4=-0.33). This represents a meaningful improvement in predictive performance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "c0f79bfe-8322-47c7-9fea-9b0f1f9f3291",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "EGFR-ErbB3 FRET difference (FRET.delta) showed a trend toward better PFS but did not meet stringent selection criteria for inclusion in the final signature. Patients with high FRET.delta showed non-significant better PFS than low FRET.delta (log rank p=0.2).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42 appropriately characterize FRET.delta as showing a trend but lacking statistical significance. The authors transparently report this negative/borderline result and acknowledge the stringent selection criteria excluded it from the final model. This is methodologically sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "b75e5b01-e707-46d9-b8d2-6566ee75c2b0",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A significant correlation was identified between log fold changes of miR-21-5p and CD33+CD14+ monocytes (r=0.43, p=0.02). While miRNAs did not correlate with PFS, they have been implicated as classifiers for myeloid cell subsets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C43 reports a statistically significant correlation with appropriate statistical test and p-value. Claims C78-C79 provide literature context. The correlation is modest but significant, and the authors appropriately note that miRNAs did not independently predict PFS.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "9159d44e-dd63-4b86-9186-17eb37272188",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The combined risk signature was validated in an independent cohort of 8 patients from the EACH trial (NCT03494322). The signature strongly correlated with treatment outcome (\u03c4=0.73, p=0.02). High baseline CD33+CD14+ monocytes and increased CD8CM both correlated with worse outcomes in validation. CD33+CD14+ monocytes were further characterized as expressing high HLA-DR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C7, C44-C52 describe validation in an independent cohort, which is methodologically appropriate. However, the validation cohort is very small (n=8 patients, reduced from 16 due to exclusions), raising concerns about statistical power and generalizability. While the correlation is strong (\u03c4=0.73, p=0.02), the small sample size limits confidence. The use of BOR instead of PFS as outcome in validation cohort is justified by correlation in discovery cohort (C46), but represents a change in endpoint. The validation provides supportive evidence but is insufficient for definitive confirmation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "8abad941-c74c-4c55-a317-7d80db8c6bc6",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Imaging mass cytometry of tissue from 9 patients identified tissue counterparts of peripheral immune populations. Peripheral CD33+ monocytes correlated with tissue CD14+CD33+CD74+CD68+ macrophages, while peripheral CD8CM inversely correlated with tissue CD8Trm. Both tissue CD74+ macrophages and CD8Trm positively correlated with PFS. CD8Trm cells were significantly more likely to contact CD74+ macrophages than other populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C53-C59 describe tissue analysis linking peripheral and tissue immune populations. The sample size is very small (n=9), limiting statistical power. While correlations are reported and cell-cell contact analysis suggests biological significance (C59), the small sample size and lack of reported statistical tests for some correlations (C55-C58) make these findings preliminary. The inverse correlation between peripheral CD8CM and tissue CD8Trm (C56) is interesting but requires validation in larger cohorts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "d4b1856f-6a59-49b9-978b-aea2551f8cbf",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study findings are consistent with prior literature: hypopharyngeal SCC has worst survival among HNSCC subsites, these tumors present at advanced stage, and patritumab showed no PFS benefit in the Phase 2 trial.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62 are appropriately supported by citations to prior literature (Gatta et al. 2017, Machiels et al. 2020, Cadoni et al. 2017, Forster et al. 2019). These claims provide context and validate that study findings align with established knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "87044382-8b33-4081-ab70-ae6d45a1116b",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study demonstrates that the same blood kinetic changes can distinguish responders from non-responders across different treatment modalities (targeted therapy vs anti-EGFR + anti-PD-L1), which is novel. Multivariate analysis was more powerful than univariate analysis, as individual covariates did not independently predict outcome in validation cohort.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C66 highlight key strengths of the multivariate approach. The observation that the signature works across different treatment modalities (C64-C65) is supported by the validation results, though limited by small sample size. The superiority of multivariate over univariate analysis (C66) is clearly demonstrated by comparing performance metrics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "1803b8d2-d855-4de9-a887-3a59488f8c01",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors propose mechanistic interpretations: CD33+HLADRhigh monocytes match intermediate monocytes with antigen presentation roles; cetuximab provides tumor antigens for cross-presentation; monocyte-derived macrophages activate tissue resident memory T cells (Trm); peripheral CD8CM can home to tumors and contribute to Trm populations; accumulation of peripheral CD8CM in poor responders may reflect tumor-induced T cell exclusion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C67-C77 present mechanistic hypotheses supported by literature citations but are largely speculative. The authors appropriately use language like \"hypothesize\" (C75, C77) and \"potential\" (C76). While the proposed mechanisms are biologically plausible and supported by cited literature, they are not directly tested in this study. The correlations observed (e.g., C55-C58) provide circumstantial support but do not prove causation. These interpretations require experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "74dad24a-7f36-48ff-a773-28b8bba858e8",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study represents one of the first examples of integrating multiple biological covariates from peripheral blood with clinical data to predict treatment response across multiple therapeutic modalities. The combined signature predicts outcome more accurately than prior approaches like NLR or PD-L1 expression alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C83 appropriately contextualize the study's contributions. The comparison to NLR (C80) is supported by meta-analysis citations showing HRs of 1.69-1.78, while the current study achieves better discrimination (C-index 0.69). The novelty claim (C83) is reasonable given the multimodal, longitudinal approach and cross-treatment validation, though limited by small validation cohort.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    },
+    {
+      "id": "fb96d798-a40d-4466-8cb6-587ef0437456",
+      "content_id": "12174c22-4188-4c14-96d9-5c1ddd2537fe",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The manuscript provides background context on HNSCC prognosis, treatment evolution (EXTREME regimen, KEYNOTE-048 trial), current standard of care, and limitations of existing biomarker approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C9-C14 provide appropriate background context supported by citations to key clinical trials and reviews. These establish the clinical need and rationale for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:02:57.931188Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "53d183f4-834d-41ab-a383-7733dccbb152",
+      "result_id": "573e3b9d-2854-4d0c-a646-564b204651f6"
+    },
+    {
+      "claim_id": "a100694e-aae2-4301-986a-c9b91e3edf6e",
+      "result_id": "573e3b9d-2854-4d0c-a646-564b204651f6"
+    },
+    {
+      "claim_id": "98c752b8-76ad-43a7-922c-83b7aa9515cb",
+      "result_id": "573e3b9d-2854-4d0c-a646-564b204651f6"
+    },
+    {
+      "claim_id": "2bdcdc52-5488-4429-8cd4-b599c73bb9e9",
+      "result_id": "573e3b9d-2854-4d0c-a646-564b204651f6"
+    },
+    {
+      "claim_id": "bf468c42-558c-45a4-809f-30c2f7487451",
+      "result_id": "573e3b9d-2854-4d0c-a646-564b204651f6"
+    },
+    {
+      "claim_id": "008af65f-db54-433c-b376-41a602c533fe",
+      "result_id": "573e3b9d-2854-4d0c-a646-564b204651f6"
+    },
+    {
+      "claim_id": "4b30a001-a5ba-4c27-9c46-a7cb6816b092",
+      "result_id": "573e3b9d-2854-4d0c-a646-564b204651f6"
+    },
+    {
+      "claim_id": "d2c11417-fb9e-4d53-aea4-7045affcb8fe",
+      "result_id": "573e3b9d-2854-4d0c-a646-564b204651f6"
+    },
+    {
+      "claim_id": "80628d7b-6b9c-4d15-9d9b-38eb2c472a77",
+      "result_id": "573e3b9d-2854-4d0c-a646-564b204651f6"
+    },
+    {
+      "claim_id": "eef15a21-4345-45d6-8301-87fb1b9cd23d",
+      "result_id": "573e3b9d-2854-4d0c-a646-564b204651f6"
+    },
+    {
+      "claim_id": "165fd22f-7eaf-41c8-9629-a6281a771429",
+      "result_id": "573e3b9d-2854-4d0c-a646-564b204651f6"
+    },
+    {
+      "claim_id": "fdab68e2-61fd-4357-b13b-587211339966",
+      "result_id": "a20dfe95-6e13-4714-a632-4aa5d7db3c08"
+    },
+    {
+      "claim_id": "c415a798-1f10-4c3c-b7ec-93a020fc4987",
+      "result_id": "a20dfe95-6e13-4714-a632-4aa5d7db3c08"
+    },
+    {
+      "claim_id": "17d8dae8-87df-43e4-98d8-718f3457385b",
+      "result_id": "a20dfe95-6e13-4714-a632-4aa5d7db3c08"
+    },
+    {
+      "claim_id": "bfc9e741-a6ca-468d-86b8-6fc6ba70ad39",
+      "result_id": "a20dfe95-6e13-4714-a632-4aa5d7db3c08"
+    },
+    {
+      "claim_id": "44da2bab-574b-4c91-a1bf-586dce621a77",
+      "result_id": "a20dfe95-6e13-4714-a632-4aa5d7db3c08"
+    },
+    {
+      "claim_id": "cbbad23f-07d9-4be4-80cd-286c61640bf4",
+      "result_id": "a20dfe95-6e13-4714-a632-4aa5d7db3c08"
+    },
+    {
+      "claim_id": "0a99ad62-1921-4d9d-b259-57bad4588fce",
+      "result_id": "a20dfe95-6e13-4714-a632-4aa5d7db3c08"
+    },
+    {
+      "claim_id": "9e013b1e-69df-4710-8543-0aeffb532553",
+      "result_id": "a20dfe95-6e13-4714-a632-4aa5d7db3c08"
+    },
+    {
+      "claim_id": "6e6a53c5-2550-4cca-839c-01465cdde9bf",
+      "result_id": "a20dfe95-6e13-4714-a632-4aa5d7db3c08"
+    },
+    {
+      "claim_id": "32bc02e0-6834-40e5-9bab-a16846f00abc",
+      "result_id": "a20dfe95-6e13-4714-a632-4aa5d7db3c08"
+    },
+    {
+      "claim_id": "17d8dae8-87df-43e4-98d8-718f3457385b",
+      "result_id": "7872ebd6-79b0-4607-b299-cf2d32b5a5b0"
+    },
+    {
+      "claim_id": "6baf3699-f2f7-4a6a-9486-0fa7a52e3c7b",
+      "result_id": "7872ebd6-79b0-4607-b299-cf2d32b5a5b0"
+    },
+    {
+      "claim_id": "143698d9-6da0-4b1a-bb43-d066952e0a6c",
+      "result_id": "7872ebd6-79b0-4607-b299-cf2d32b5a5b0"
+    },
+    {
+      "claim_id": "20df7359-4be7-4743-b50b-ee5aaf30cac0",
+      "result_id": "7872ebd6-79b0-4607-b299-cf2d32b5a5b0"
+    },
+    {
+      "claim_id": "8ff5a928-8e23-4a01-b39f-1789bb2d12d9",
+      "result_id": "7872ebd6-79b0-4607-b299-cf2d32b5a5b0"
+    },
+    {
+      "claim_id": "a7a9dce6-5084-4906-bb36-9fedead1cab2",
+      "result_id": "7872ebd6-79b0-4607-b299-cf2d32b5a5b0"
+    },
+    {
+      "claim_id": "c28bb732-18d8-41bc-acb2-435fac1ddf6d",
+      "result_id": "7872ebd6-79b0-4607-b299-cf2d32b5a5b0"
+    },
+    {
+      "claim_id": "dc63b07b-b082-4e41-aecb-8e23be886173",
+      "result_id": "ff65de4c-cdce-4fba-bc56-f732e7811c1b"
+    },
+    {
+      "claim_id": "a7a9dce6-5084-4906-bb36-9fedead1cab2",
+      "result_id": "ff65de4c-cdce-4fba-bc56-f732e7811c1b"
+    },
+    {
+      "claim_id": "29c9c23e-0d40-4fc9-94f5-384049663f91",
+      "result_id": "c0f79bfe-8322-47c7-9fea-9b0f1f9f3291"
+    },
+    {
+      "claim_id": "1f445b54-c465-4abc-9f6d-05acf728b4aa",
+      "result_id": "c0f79bfe-8322-47c7-9fea-9b0f1f9f3291"
+    },
+    {
+      "claim_id": "bbcc43fa-3dcb-4fe1-8a04-ffa28900e70c",
+      "result_id": "b75e5b01-e707-46d9-b8d2-6566ee75c2b0"
+    },
+    {
+      "claim_id": "dfad87f2-f52a-45e8-86c3-d447c697aa62",
+      "result_id": "b75e5b01-e707-46d9-b8d2-6566ee75c2b0"
+    },
+    {
+      "claim_id": "3540b8b8-bc5c-4e1b-a5bb-8475dc3dc17d",
+      "result_id": "b75e5b01-e707-46d9-b8d2-6566ee75c2b0"
+    },
+    {
+      "claim_id": "588d8bf0-4e05-4ae7-898c-d27a743b5d23",
+      "result_id": "9159d44e-dd63-4b86-9186-17eb37272188"
+    },
+    {
+      "claim_id": "39489426-6ea5-45e6-9e54-cf45b685d154",
+      "result_id": "9159d44e-dd63-4b86-9186-17eb37272188"
+    },
+    {
+      "claim_id": "64674600-3b3e-4f44-b811-ccfd2473dc70",
+      "result_id": "9159d44e-dd63-4b86-9186-17eb37272188"
+    },
+    {
+      "claim_id": "2b0beafc-1239-4a17-a049-b0cc52c544eb",
+      "result_id": "9159d44e-dd63-4b86-9186-17eb37272188"
+    },
+    {
+      "claim_id": "0fec6145-f32f-4a60-abee-e33b35db8916",
+      "result_id": "9159d44e-dd63-4b86-9186-17eb37272188"
+    },
+    {
+      "claim_id": "62ec0e38-cd11-428d-a990-255c4051a18a",
+      "result_id": "9159d44e-dd63-4b86-9186-17eb37272188"
+    },
+    {
+      "claim_id": "91ce95c9-c6bd-43fd-b757-257a6f4c8b51",
+      "result_id": "9159d44e-dd63-4b86-9186-17eb37272188"
+    },
+    {
+      "claim_id": "6a1cae0c-470a-49a4-a666-bb5ab0852444",
+      "result_id": "9159d44e-dd63-4b86-9186-17eb37272188"
+    },
+    {
+      "claim_id": "e01a8a98-64c4-4d30-9d0d-f459dbcabd21",
+      "result_id": "9159d44e-dd63-4b86-9186-17eb37272188"
+    },
+    {
+      "claim_id": "a4c53fe0-4ba9-45f5-8e75-92f9aa249f3a",
+      "result_id": "9159d44e-dd63-4b86-9186-17eb37272188"
+    },
+    {
+      "claim_id": "58ecf636-fc62-47fa-bd74-56b501492d9d",
+      "result_id": "8abad941-c74c-4c55-a317-7d80db8c6bc6"
+    },
+    {
+      "claim_id": "1405654e-503c-4e39-aecd-e06bddd28d7b",
+      "result_id": "8abad941-c74c-4c55-a317-7d80db8c6bc6"
+    },
+    {
+      "claim_id": "a2d841d2-e958-4512-a8a3-b2b972e6b849",
+      "result_id": "8abad941-c74c-4c55-a317-7d80db8c6bc6"
+    },
+    {
+      "claim_id": "b2bd4b15-44f2-42a4-a6e8-285b59b617c4",
+      "result_id": "8abad941-c74c-4c55-a317-7d80db8c6bc6"
+    },
+    {
+      "claim_id": "b9821d93-6335-4001-9cc5-808942ccb716",
+      "result_id": "8abad941-c74c-4c55-a317-7d80db8c6bc6"
+    },
+    {
+      "claim_id": "b1bd94ff-891e-4280-9dc1-be9084c13729",
+      "result_id": "8abad941-c74c-4c55-a317-7d80db8c6bc6"
+    },
+    {
+      "claim_id": "552d01c4-2140-44f0-bdcc-6d77e1e66cb0",
+      "result_id": "8abad941-c74c-4c55-a317-7d80db8c6bc6"
+    },
+    {
+      "claim_id": "755f420f-0797-4ae2-ba06-9898f2e1fc5b",
+      "result_id": "d4b1856f-6a59-49b9-978b-aea2551f8cbf"
+    },
+    {
+      "claim_id": "bc2efd87-60ca-45fc-9fed-747735bb242a",
+      "result_id": "d4b1856f-6a59-49b9-978b-aea2551f8cbf"
+    },
+    {
+      "claim_id": "6e4cc742-facc-46b8-9e8e-9f513d421512",
+      "result_id": "d4b1856f-6a59-49b9-978b-aea2551f8cbf"
+    },
+    {
+      "claim_id": "7154466d-1635-469e-bbd6-eb01da104836",
+      "result_id": "87044382-8b33-4081-ab70-ae6d45a1116b"
+    },
+    {
+      "claim_id": "f4cffa12-3a3f-4a39-8ff8-ec368aa9f940",
+      "result_id": "87044382-8b33-4081-ab70-ae6d45a1116b"
+    },
+    {
+      "claim_id": "b8a64b2d-2de6-4b94-8c2b-6116474fbacb",
+      "result_id": "87044382-8b33-4081-ab70-ae6d45a1116b"
+    },
+    {
+      "claim_id": "5eaaad13-0f17-4905-9129-cafec1a12a7f",
+      "result_id": "87044382-8b33-4081-ab70-ae6d45a1116b"
+    },
+    {
+      "claim_id": "f9efea9f-4375-4b5e-bb45-71a7bd0b9855",
+      "result_id": "1803b8d2-d855-4de9-a887-3a59488f8c01"
+    },
+    {
+      "claim_id": "199979cb-8033-44d9-abcd-981512860ddf",
+      "result_id": "1803b8d2-d855-4de9-a887-3a59488f8c01"
+    },
+    {
+      "claim_id": "cca89344-5d63-4383-bd0f-85c10c86e15a",
+      "result_id": "1803b8d2-d855-4de9-a887-3a59488f8c01"
+    },
+    {
+      "claim_id": "999058ed-372d-4507-8ac2-45d797fa3e98",
+      "result_id": "1803b8d2-d855-4de9-a887-3a59488f8c01"
+    },
+    {
+      "claim_id": "79a93e48-546a-4430-9815-871f6dc28bd2",
+      "result_id": "1803b8d2-d855-4de9-a887-3a59488f8c01"
+    },
+    {
+      "claim_id": "aabd717e-7b24-4fea-9946-cfab8a7b1f99",
+      "result_id": "1803b8d2-d855-4de9-a887-3a59488f8c01"
+    },
+    {
+      "claim_id": "a1a3decc-69fc-4b38-833e-b2703abcd014",
+      "result_id": "1803b8d2-d855-4de9-a887-3a59488f8c01"
+    },
+    {
+      "claim_id": "738c0702-e6b2-49c9-afb5-015b2f3929c5",
+      "result_id": "1803b8d2-d855-4de9-a887-3a59488f8c01"
+    },
+    {
+      "claim_id": "7f3eb021-5b59-486e-8b76-c1e8ff5885d6",
+      "result_id": "1803b8d2-d855-4de9-a887-3a59488f8c01"
+    },
+    {
+      "claim_id": "21c9ea17-9da0-46d7-9434-210c539d807c",
+      "result_id": "1803b8d2-d855-4de9-a887-3a59488f8c01"
+    },
+    {
+      "claim_id": "56dfe8fe-bb22-4515-998c-ca05f9cc3cdd",
+      "result_id": "1803b8d2-d855-4de9-a887-3a59488f8c01"
+    },
+    {
+      "claim_id": "1cf8e8ed-6808-4a06-89d4-6077d2812082",
+      "result_id": "74dad24a-7f36-48ff-a773-28b8bba858e8"
+    },
+    {
+      "claim_id": "b758db1f-1e6c-40aa-b937-d7a21326cf78",
+      "result_id": "74dad24a-7f36-48ff-a773-28b8bba858e8"
+    },
+    {
+      "claim_id": "f38118d7-dd1a-4b7e-9a17-bc4c3e9359fe",
+      "result_id": "74dad24a-7f36-48ff-a773-28b8bba858e8"
+    },
+    {
+      "claim_id": "fd4970e8-1f1b-4b16-abbe-1cee22780fed",
+      "result_id": "74dad24a-7f36-48ff-a773-28b8bba858e8"
+    },
+    {
+      "claim_id": "5c001cdf-bd7f-4448-98dc-3bc478d229da",
+      "result_id": "fb96d798-a40d-4466-8cb6-587ef0437456"
+    },
+    {
+      "claim_id": "acb868fe-ef95-4857-afb6-6c2be8b540cb",
+      "result_id": "fb96d798-a40d-4466-8cb6-587ef0437456"
+    },
+    {
+      "claim_id": "ba30cda0-fb0d-4c0e-b574-9b1be09a773c",
+      "result_id": "fb96d798-a40d-4466-8cb6-587ef0437456"
+    },
+    {
+      "claim_id": "236c76b3-7700-49fc-8ec6-7dae01e7cdd6",
+      "result_id": "fb96d798-a40d-4466-8cb6-587ef0437456"
+    },
+    {
+      "claim_id": "0bb3e046-bf2e-4871-a94e-d681f3fb66d0",
+      "result_id": "fb96d798-a40d-4466-8cb6-587ef0437456"
+    },
+    {
+      "claim_id": "cb8caaf6-4402-42a0-9d00-7ae806e5ca59",
+      "result_id": "fb96d798-a40d-4466-8cb6-587ef0437456"
+    },
+    {
+      "claim_id": "6ad09977-8d83-44ea-814e-acd9544045d1",
+      "result_id": "fb96d798-a40d-4466-8cb6-587ef0437456"
+    }
+  ],
+  "comparisons": []
+}

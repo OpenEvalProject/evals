@@ -1,0 +1,310 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C104"
+    ],
+    "result": "Research publications on non-reproductive organs are 4.5 times more numerous than those on reproductive organs based on PubMed analysis from 1966-2021. The breast and prostate are the most-researched reproductive organs, with publication growth rates similar to the kidney, while the intestine is the only non-reproductive organ with publication rates comparable to other reproductive organs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C29-C32, and C104 are directly supported by the PubMed data analysis presented in Table 1 and Figure 1A. The 4.5-fold difference is clearly documented, and the temporal trends showing differential growth rates between organ types are visualized in the figures. The methodology is transparent and the data source is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C46",
+      "C47",
+      "C60",
+      "C105",
+      "C106"
+    ],
+    "result": "Research on breast and prostate is predominantly cancer-focused, with approximately 80% of publications containing cancer keywords, compared to only 20% reduction for most non-reproductive organs. This cancer focus has not led to increased non-disease-related research on these reproductive organs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C35-C37, C46-C47, C60, C105-C106 are well-supported by the cancer keyword exclusion analysis shown in Figure 1B. The dramatic 80% reduction for breast/prostate versus 20% for other organs provides clear evidence that cancer research dominates these reproductive organs. The methodology of keyword exclusion is reasonable, though acknowledged as a limitation by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C61",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Non-reproductive organs (brain, heart, liver) have approximately 3:1 ratios of non-disease to disease-related research, while breast and prostate show inverse 1:3 ratios favoring disease research. Other reproductive organs show 2:1 ratios of non-disease to disease research but with total publication volumes an order of magnitude lower.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42, C61, C107-C109 are supported by the disease versus non-disease analysis visualized in Figure 2. The ratios are clearly demonstrated through the positioning relative to the equality line, and circle sizes effectively communicate total publication volumes. The lung's position as the only non-reproductive organ left of the line is notable and correctly identified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C43",
+      "C44"
+    ],
+    "result": "Grant funding analysis shows non-reproductive organs receive 6-7 times more funded projects than reproductive organs (CIHR: 800 vs 115; NIH: 31,000 vs 5,300), though mean grant amounts are similar across organ types (CIHR: $370,000\u00b1$50,000; NIH: $481,500\u00b1$50,000).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C43-C44 are directly supported by the funding database analysis presented in Table 2. The data from both CIHR and NIH show consistent patterns. However, the authors acknowledge a critical limitation (C68-C69): unfunded applications are not accessible, preventing determination of whether lower funding reflects fewer applications or funding bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C45",
+      "C67",
+      "C73"
+    ],
+    "result": "The authors conclude there are too few researchers working in reproductive health and disease, representing a bias against this research area, and recommend increasing the number of researchers in this field.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10, C45, C67, C73 represent inferences from the publication and funding data. While the data clearly show disparities, the causal interpretation as 'bias' versus other explanations (e.g., proportionally fewer researchers choosing this field for various reasons) cannot be definitively established without data on unfunded applications (C68-C69). The conclusion about 'too few' researchers is normative rather than empirical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C62",
+      "C63",
+      "C66"
+    ],
+    "result": "Despite the placenta and uterus being causal organs for reproductive complications with high mortality and healthcare costs (tens of billions USD annually), there is relatively little disease-related research on these organs, resulting in less foundational knowledge for treatment development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64, C66 are supported by the publication data in Table 1 and Figure 2 showing low research volumes for placenta and uterus. The mortality impact (C62) and healthcare costs (C63) are presented as established knowledge without specific citations in this section, though related claims with citations appear elsewhere (C3-C4). The inference about limited foundational knowledge (C66) logically follows from the low publication numbers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C65",
+      "C66"
+    ],
+    "result": "Lack of non-disease-related research on reproductive organs may hinder progress in diagnosing and treating reproductive pathologies, as cancer research can leverage cross-organ knowledge but reproductive disease research lacks comparable foundational knowledge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50, C65-C66 represent speculative inferences about consequences of the research gap. While the logic is reasonable\u2014that basic research informs disease treatment\u2014the causal link is not empirically demonstrated. The comparison to cancer research's ability to leverage cross-organ knowledge (C65) is plausible but not substantiated with evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Breast and prostate cancer research increased dramatically from low historical levels, driven more by existing cancer researchers than by public campaigns, but this approach is unlikely to work for reproductive pathologies due to lack of comparable researcher pools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C82 mix supported observations (C78 from Figure 1A) with unsupported inferences (C80-C81). The claim that existing cancer researchers, rather than reproductive organ specialists, drove breast/prostate cancer research growth is speculative without citation or data on researcher backgrounds. The prediction that this approach won't work for reproductive pathologies (C82) is logical but unverified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The authors recommend promoting collaborations between reproductive health researchers and those in other fields (nephrology, hepatology, cardiovascular) where researcher numbers are 10-20 times higher, noting that reproductive pathologies affect multiple organ systems and that redirecting just 1% of cardiovascular researchers would increase reproductive research by 10%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C94 combine well-cited medical knowledge about cross-system effects (C84-C91 with appropriate citations) with reasonable inferences from the data about researcher ratios (C92-C93) and calculations (C94). The recommendation (C83) logically follows from the demonstrated interconnections between reproductive and other organ systems. The 10-20\u00d7 researcher ratio is consistent with the publication/funding data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Understanding reproductive biology has broader implications for cancer research (placental methylation patterns resemble tumors), regenerative medicine (placental immune-modulating genes), and emerging infectious diseases (Zika virus), but current knowledge gaps pose dangers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 are well-supported by appropriate citations to peer-reviewed research (Smith et al. 2017, Rousseaux et al. 2013, Szekeres-Bartho 2002, Han et al. 2019, Schuler-Faccini et al. 2016, Calvet et al. 2016). These examples effectively illustrate how reproductive biology research has applications beyond reproductive health itself.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The authors acknowledge methodological limitations including inability to access unfunded grant applications, keyword-based classification challenges, and low publication numbers for some organs, but argue the observed differences are large enough to be robust to these limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 represent appropriate acknowledgment of study limitations. The authors correctly identify that without unfunded application data (C68-C69), they cannot distinguish between fewer applications versus funding bias. The keyword limitation (C70) and low numbers issue (C71) are valid concerns. The assertion that differences are too large to result from methodological issues (C72) is reasonable given the 4.5-7\u00d7 disparities observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Reproductive diseases have significant health impacts (endometriosis affects 10% of reproductive-aged women, preeclampsia claims 70,000 maternal and 500,000 neonatal lives annually, infertility rates are rising), yet few new treatments or diagnostics have emerged in recent decades.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C1-C6 present epidemiological statistics and trends without specific citations in the abstract. While these appear to be established knowledge in the field, the lack of direct citations for the specific numbers (particularly C1, C3-C5) makes verification difficult. Claim C6 about few new treatments is an assessment rather than a quantified, testable claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Adverse pregnancy outcomes impact population health, 20% of pregnancies require medical intervention, pregnancy complications are a leading cause of death in lower-resource settings, and issues identified in a 1992 Institute of Medicine report remain major challenges three decades later.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 are supported by appropriate citations (Barker 1997, Williams 2011, Lewis et al. 2012, Murray and Lopez 1998, WHO 2019, Institute of Medicine 1992). The historical comparison (C14-C15) effectively establishes the persistence of these problems over time, though C15's assessment of current challenges is somewhat subjective.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C27"
+    ],
+    "result": "Historical and ongoing gender inequality, stigmatization of reproductive functions, and political/legal challenges have contributed to underrepresentation of women in research and likely explain the lack of reproductive health research, with parallels to the delayed AIDS response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C24, C27 are supported by appropriate citations documenting historical exclusion of women from research (Liu and Mager 2016), ongoing underrepresentation (Huang et al. 2020), menstrual stigma (Litman 2018, Pickering 2019), political barriers (Pugh 2019), and AIDS parallels (Francis 2012, Turan et al. 2017). The causal link to research gaps (C27, citing Coen-Sanchez et al. 2022) is plausible but represents inference rather than direct demonstration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C28"
+    ],
+    "result": "Reproductive pathologies are challenging to diagnose and treat, the healthcare burden is likely to continue increasing due to lack of research, and the placenta/uterus are as essential to fetal survival in utero as lungs/heart are to postnatal survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C25-C26 represent general medical knowledge and speculative predictions without specific supporting evidence. Claim C28 is an interesting biological comparison posited by the authors to justify studying reproductive organs, but this normative framing (what organs 'deserve' research attention) is philosophical rather than empirical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C99",
+      "C100"
+    ],
+    "result": "Public awareness campaigns and screening programs likely increased breast/prostate research, the NIH Human Placenta Project indicates recognition of the need for increased capacity, but social/political factors and the research gap itself may discourage new researchers, creating a self-perpetuating cycle requiring immediate action.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C48-C49 and C74 cite appropriate sources (Jacobsen and Jacobsen 2011, Dickinson et al. 2016, Guttmacher et al. 2014) but represent inferences about causation. Claims C75-C77 are speculative predictions about future trends and researcher behavior without empirical support. Claims C99-C100 are rhetorical calls to action rather than testable scientific claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "In competitive funding systems, publications correlate with grants; the NIH institute supporting reproductive research (NICHD) is low-funded and lacks 'reproduction' in its name; CIHR uses a clinical panel that may inhibit non-disease research; and growing emphasis on disease research may reflect views of basic research as inefficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C59 mix established knowledge about funding systems (C51), factual observations about institutional structures (C52-C54, C56-C57), speculative inferences (C55), and cited perspectives (C59 citing Lee 2019). The institutional facts are verifiable, and the speculation about clinical panel effects (C55) is acknowledged as uncertain ('may be'). The overall characterization of funding structures is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The study methodology involved searching PubMed for organ-specific keywords in titles/abstracts from 1966-2021, and searching CIHR and NIH grant databases for the same keywords from 2013-2018.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C103 accurately describe the methods used in the study. The data sources are appropriate and publicly accessible, the time periods are clearly specified, and the keyword-based search strategy is transparent. The methods are reproducible, though subject to the acknowledged limitations regarding keyword selection.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,321 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C26",
+      "C27",
+      "C31",
+      "C32",
+      "C68"
+    ],
+    "result": "Helminth co-infection significantly increases B. bronchiseptica shedding levels, variation, and frequency compared to bacterial infection alone. Co-infected rabbits (BTG, BG, BT) shed significantly more bacteria than B-only animals (p<0.05), with mean shedding ranging from 0.26-0.42 CFU/s for co-infected groups versus 0.02 CFU/s for B-only. Co-infection also increased variation in shedding magnitude both within and between groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C26, C27, C31, C32, and C68 collectively provide strong experimental evidence with appropriate statistical testing (Kruskal-Wallis with Bonferroni correction) showing significantly higher shedding in helminth co-infected rabbits. The data include quantitative measurements with confidence intervals and p-values, supported by visual evidence in Figures 1-3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C99",
+      "C100"
+    ],
+    "result": "Helminth co-infection promotes supershedding events in rabbits. Using the 99th percentile threshold from the whole dataset (CFU/s=8.58), 0% of B-only rabbits but 18-32% of co-infected rabbits generated at least one supershedding event. The choice of threshold definition significantly affects supershedding classification, with thresholds based on single infections overestimating supershedding in co-infected hosts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37, C99, and C100 provide quantitative analysis of supershedding using multiple threshold definitions (95th and 99th percentiles). The statistical approach is sound, demonstrating that threshold selection matters and that co-infected rabbits show substantially higher rates of supershedding regardless of threshold choice. The analysis is supported by Figure 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C69",
+      "C70",
+      "C73"
+    ],
+    "result": "A mathematical model incorporating neutrophils, IgA, and IgG explains differences in shedding dynamics between infection groups through differential immune contributions. Model simulations show rapid bacterial replication post-inoculation (growth rates: BTG=1.47, BG=1.18, BT=1.01, B=0.06), with neutrophils responding fastest, followed by IgA and IgG. The relative contribution of these immune components to bacterial neutralization varied by infection type, with neutrophils dominating in B-only infections while combinations of neutrophils with IgG or IgA were important in co-infected groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C39-C52, C69, C70, and C73 describe model results fitted to experimental data using Bayesian methods (HMC in Stan). The model successfully captured empirical trends (C40) with parameter estimates provided in Table 2. Model validation and selection procedures (Appendix 4-5) support the approach. However, the model represents a simplified immune response and makes explicit assumptions about additive effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C58",
+      "C59",
+      "C60",
+      "C93",
+      "C98"
+    ],
+    "result": "The model framework could not explain rapid within-host variation in shedding intensity observed between consecutive samplings. Rabbits showed rapid fluctuations where bursts of bacteria alternated with low or no shedding within days. The authors suggest that fast, local changes at the respiratory tissue level (e.g., tissue inflammation, mucosa-level bacterial control, mucus discharge) likely played a more important role than systemic immune dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C58-C60, C93, and C98 acknowledge a clear limitation of the modeling approach. The authors transparently report that their model scale could not capture rapid individual-level variation (C59, C98) and provide speculative but reasonable explanations for this limitation (C6, C60, C93). This represents an honest assessment of model capabilities versus observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C71",
+      "C72",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Model simulations reveal distinct temporal shedding patterns among co-infection types. Peak shedding occurred at 9-12 days post-infection for co-infected groups, with BTG showing the most rapid increase, highest peak (14,185 CFU/day), and slowest decline, suggesting possible synergistic effects of the two helminths. BT showed the fastest decline, while BG was intermediate. Early shedding decline (first 90 days) was attributed to immune-mediated bacterial clearance from lungs, while later reduced shedding reflected weak control in the nasal cavity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53-C57 and C71-C77 present model-derived interpretations of shedding dynamics. While the temporal patterns are based on model fits to data, several claims are speculative (C56, C75, C76, C77 use language like 'suggesting,' 'could have been,' 'probably'). The mechanistic explanations for differences between helminth species (C75, C76) and synergistic effects (C56, C77) are plausible inferences but lack direct experimental validation. The model for B-only rabbits also has acknowledged limitations due to missing early data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Sensitivity analysis reveals that bacterial neutralization rate and immune growth rate are key determinants of shedding dynamics. Increases in neutralization rate (\u03bcc) and immune growth rate (\u03bca) led to proportional decreases in peak shedding and time to peak. Among immune variables, neutrophil and IgG rates had the strongest negative impact on shedding. Bacterial growth rate (r) positively correlated with peak shedding. Co-infected groups were more sensitive to immune parameter changes than B-only rabbits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 describe sensitivity analysis results (Appendix 2) that systematically varied model parameters to assess their impact on shedding. This is a standard modeling approach that provides insight into which parameters most influence outcomes. The findings are internally consistent with the model structure and help interpret the biological mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C28",
+      "C29",
+      "C30",
+      "C97"
+    ],
+    "result": "B. bronchiseptica shedding exhibits large variation at three levels: between infection types, between hosts within each type, and within individual hosts over time. High shedders were concentrated in the first 60 days post-infection. Up to 55% of shedding events were null (no shedding despite infection), with the highest percentage in B-only rabbits (56.2%) and lowest in BTG (25.8%). The BTG group showed the largest variation in shedding levels (Negative Binomial k=0.21).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C30 and C97 describe direct experimental observations with appropriate statistical characterization (Negative Binomial fitting). The multi-level variation is well-documented in Figures 1-3. Sample sizes are adequate (13-24 rabbits per group after excluding non-shedders), and the descriptive statistics are appropriate for the data type.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C101",
+      "C104",
+      "C105"
+    ],
+    "result": "The authors infer that helminth co-infection should increase the probability of B. bronchiseptica onward transmission and that the risk likely increases non-linearly given the magnitude and frequency of supershedding. They conclude that understanding helminth modulation of respiratory infections is important for developing targeted treatments and that detecting/controlling supershedders is critical for reducing disease outbreak risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C33, C101, C104, and C105 represent inferences and implications rather than direct experimental findings. While the increased shedding in co-infected hosts (established in other results) logically suggests higher transmission probability, actual transmission was not measured in these experiments. The claims about non-linear transmission risk (C101) and public health implications (C104, C105) are reasonable extrapolations but speculative without transmission studies or epidemiological data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Both T. retortaeformis and G. strigosum elicit Th-2 immune responses and are commonly found in rabbit populations. Field studies show B. bronchiseptica prevalence of 88-97% in free-living rabbits, with 65% co-infected with B. bronchiseptica and G. strigosum, and approximately 60% of adult rabbits carrying BTG triple infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74 and C78-C81 cite previous published work (C74, C79, C80) and unpublished field data (C81). The Th-2 response claim is well-supported by multiple citations. The field prevalence data provide ecological context for the experimental findings, though C81 relies on unpublished data which limits independent verification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Previous studies support the role of neutrophils and antibodies in B. bronchiseptica control. Boolean modeling indicated antigen-antibody complexes and phagocytosis are important for lung clearance. Mouse studies showed serum antibodies clear bacteria from lungs/trachea within 3 days, and IgA is necessary for nasal cavity reduction. Evidence from other co-infection systems (P. aeruginosa-H. polygyrus in mice) shows gut helminths can enhance respiratory neutrophil responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C90 summarize prior published work with appropriate citations. These claims establish the scientific foundation for the current study's focus on neutrophils, IgA, and IgG. The citations appear relevant and support the mechanistic framework used in the modeling approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "The authors propose that Th2 immune interference from T. retortaeformis and G. strigosum contributed to increased B. bronchiseptica shedding levels and duration, though this anti-inflammatory response was not strong enough to prevent bacterial clearance from the lower respiratory tract.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91 and C92 represent a proposed mechanism integrating the findings. While the Th1/Th2 paradigm is well-established and helminth-induced Th2 responses are documented (C19, C74), the specific contribution of Th2 interference to the observed shedding patterns is inferred rather than directly demonstrated. The study did not measure Th1/Th2 cytokines or directly test this mechanism, making this an uncertain but plausible interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Fast, intermittent shedding has been reported in other pathogen systems (both single and co-infections), including Epstein-Barr virus in healthy carriers where variation in shedding level and frequency occurs at the individual level over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 cite relevant comparative literature showing that rapid shedding variation is not unique to this system. The citations support the generalizability of the within-host temporal variation observed and provide context for the modeling limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C109",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The experimental design used New Zealand White male rabbits infected with B. bronchiseptica strain RB50 and/or helminth larvae at doses following natural infections. Infections were followed for 120-150 days with serial sacrifices. Shedding was assessed by direct contact with agar plates, and immune responses (neutrophils, IgA, IgG) were measured from blood samples using standard laboratory methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C119 describe methodological details that are clearly stated and follow standard microbiological and immunological protocols. The experimental design is appropriate for the research questions, with adequate sample sizes (16-32 infected rabbits per group) and controls. Methods are sufficiently detailed for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The mathematical model assumes bacterial neutralization occurs through additive effects of neutrophils, IgA, and IgG, and that helminths affect infection by altering the magnitude and time course of these immune responses. Model fitting used Hamiltonian Monte Carlo in Stan 2.18.0. The full model (all three immune variables) was statistically superior to reduced models based on BIC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C124 describe modeling assumptions and methods. The assumptions are explicitly stated and represent reasonable simplifications. The use of Bayesian HMC is appropriate for this type of hierarchical model. Model selection using BIC (C124, Appendix 5) provides statistical justification for including all three immune variables. However, the additive assumption (C121) is a simplification that may not capture more complex immune interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C67",
+      "C102",
+      "C103"
+    ],
+    "result": "Background claims establish that co-infected hosts may facilitate transmission and supershedding; that B. bronchiseptica is a contagious respiratory bacterium cleared from lower airways via Th1 responses involving neutrophils and antibodies but persisting in nasal cavity; that helminths stimulate Th2 responses interfering with Th1; and that helminth infections are globally prevalent with respiratory infections being a major cause of death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C22, C67, C102-C103 provide background knowledge supported by appropriate citations to established literature. These claims set the scientific context and rationale for the study. The citations appear relevant and the background claims are consistent with established knowledge in infectious disease ecology and immunology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "B. bronchiseptica is removed from lungs and trachea but persists in the nasal cavity, a pattern observed in both the current experiments and previous mouse studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 is supported by citations to previous experimental work including the authors' own studies. This anatomical pattern of clearance is important for interpreting the shedding dynamics and is consistent across multiple studies and species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "IgG reached asymptotic values around 20 days post-infection and remained high throughout trials, while IgA peaked around day 20 and slowly decreased thereafter without returning to baseline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 describes temporal antibody dynamics directly observed in the experimental data and shown in Figures 5 and 6. The patterns are clearly visible in the figures and consistent with typical antibody response kinetics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "Co-infected rabbits sniffled more frequently than B. bronchiseptica-only animals based on personal observation during experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C61 is based on anecdotal observation (Pathak's personal observation) without systematic quantification. While this observation may be accurate and could contribute to shedding variation, it lacks the rigor of systematic measurement and statistical analysis. This represents an interesting observation that would benefit from formal quantification in future work.",
+    "result_type": "MINOR"
+  }
+]

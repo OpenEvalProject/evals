@@ -1,0 +1,429 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "PgfA is essential for polar growth in M. smegmatis. Allele exchange experiments showed ~1000-fold reduction in colony formation when pgfA was replaced with an empty vector. Depletion of PgfA by removing anhydrotetracycline prevented cell growth, caused cells to stop elongating while continuing to divide (reductive division), become wider, and eventually lyse. PgfA-depleted cells incorporated less new cell material at their poles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C28-C31 provide converging evidence from multiple experimental approaches (allele exchange, inducible depletion, time-lapse microscopy, and fluorescent D-amino acid incorporation) that consistently demonstrate PgfA is essential for polar growth. The phenotypes observed upon depletion (growth arrest, reductive division, cell lysis, reduced polar incorporation) are internally consistent and support the essentiality claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "PgfA localizes to the old pole in a dynamic, cell cycle-dependent manner. A functional PgfA-mRFP fusion localizes primarily to the old pole before division, partially re-localizes to the septum during the latter stages of FtsZ recruitment but before Wag31 arrival, and then disappears from the septal site after division, establishing asymmetric distribution in daughter cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 describe detailed spatiotemporal localization patterns supported by time-lapse fluorescence microscopy and kymograph analysis (C33-C37). The functionality of the fusion protein is validated by complementation (C32), ensuring the localization pattern reflects functional protein behavior. The temporal ordering relative to FtsZ and Wag31 (C36) provides additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "PgfA is important for maintaining the structural organization of the mycomembrane. Cryo-EM revealed that wild-type cells have distinct plasma and outer membranes separated by ~50 nm, while PgfA-depleted cells show a frayed outer membrane largely devoid of electron density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 are supported by cryo-EM imaging data (Figure 2A). The wild-type membrane structure (C38) is consistent with prior literature (cited), and the dramatic structural defect in PgfA-depleted cells (C39) directly supports the conclusion about PgfA's role in mycomembrane organization (C40). The inference is reasonable given the clear structural phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "PgfA and MmpL3 physically interact in cells and co-localize. Co-immunoprecipitation experiments showed PgfA-FLAG was only recovered when MmpL3-GFP was present. Time-lapse microscopy revealed MmpL3-msfGFP displayed the same spatial and temporal localization pattern as PgfA-mRFP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 provide complementary biochemical (co-IP) and cell biological (co-localization) evidence for PgfA-MmpL3 interaction. The co-IP experiment (C42) includes appropriate negative controls (absence of MmpL3-GFP), and the identical localization patterns (C44) provide independent support. These data converge to support the interaction claim (C43).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C22"
+    ],
+    "result": "LamA recruits PgfA and MmpL3 to the old pole. In \u0394lamA cells, both PgfA-mRFP and MmpL3-msfGFP became dramatically less abundant at the old pole with no change at the new pole. This loss could be complemented by integrating lamA at a single chromosomal site. The effect was specific to PgfA/MmpL3, as MurJ abundance was not dramatically changed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 demonstrate LamA-dependent recruitment of PgfA and MmpL3 to the old pole through deletion analysis, genetic complementation, and specificity controls. The complementation experiment (C46) validates that the phenotype is due to lamA loss. The MurJ control (C47) demonstrates specificity, ruling out general loss of elongation complex proteins. This supports the recruitment model stated in C22.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Cells depleted for mmpL3 phenocopy pgfA depletion. Both become progressively shorter and wider, incorporate less material at poles, and excrete cell wall material from poles and septa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 describe phenotypic similarity between mmpL3 and pgfA depletion using CRISPRi and microscopy. The authors addressed potential polar effects of CRISPRi by complementing the downstream gene MSMEG_0315 (described in methods, Figure 2\u2014figure supplement 4). The shared phenotypes support the model that PgfA and MmpL3 function in the same pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C58"
+    ],
+    "result": "PgfA directly binds TMM. Photo-crosslinking experiments with a TMM analog (N-x-AlkTMM-C15) followed by click chemistry enrichment showed PgfA was enriched exclusively in TMM analog-treated, UV-exposed samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52 and C58 are supported by photo-crosslinking experiments with appropriate controls (Figure 3A, Figure 3\u2014figure supplement 1). The experiment includes necessary controls: no TMM analog, no UV exposure, and the combination. PgfA enrichment only in the complete condition (TMM analog + UV) demonstrates direct interaction. The methodology is appropriate for detecting direct protein-lipid interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "PgfA is an inner membrane protein with a large periplasmic domain. Both N- and C-terminal GFP fusions can functionally replace wild-type PgfA. The C-terminal fusion is brightly fluorescent while the N-terminal fusion is significantly dimmer, supporting an orientation with the beta-barrel domain in the periplasmic space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 describe topology mapping using GFP fusions. The functional validation (C54) ensures the fusions report on functional protein topology. The differential fluorescence (C55-C56) is consistent with GFP quenching in the periplasm, supporting the proposed topology (C57). However, the dimness of the N-terminal fusion (C56) introduces some uncertainty about membrane topology that the authors acknowledge requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "PgfA functions in the TMM transport pathway in the periplasm. MmpL3 depletion causes TMM accumulation and TDM reduction, while PgfA depletion causes TMM accumulation with more stable TDM levels, suggesting TMM accumulates in different compartments. PgfA overexpression increases TDM levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 describe TLC analysis of TMM/TDM ratios under different conditions. The differential effects of mmpL3 vs pgfA depletion (C59-C60) support distinct roles in the pathway, and the inference about subcellular compartmentalization (C61) is reasonable. PgfA overexpression increasing TDM (C62) provides gain-of-function support. Together these support the model (C63), though the mechanism remains incompletely defined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C75",
+      "C76"
+    ],
+    "result": "PgfA is important for maintaining correct LM/LAM levels in the cell envelope. PgfA depletion causes dramatic transient increase in cell-associated LAM without obvious changes in LM/LAM migration or other lipids. LAM levels are negatively correlated with PgfA-mediated TMM trafficking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 describe lipid analysis showing specific effects on LM/LAM upon PgfA depletion. The lack of migration changes (C66) and specificity for LM/LAM (C67) support that this is not a general biosynthesis defect. The negative correlation (C76) is supported by both depletion and overexpression data (C74). However, the mechanism underlying this relationship remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "PgfA and the corynebacterial homolog LmcA are not functional orthologs. They share only 21% sequence identity with marked structural differences, most notably a C-terminal cytoplasmic tail critical for PgfA function but absent in LmcA. LmcA cannot substitute for PgfA in M. smegmatis, even when fused to PgfA's cytoplasmic tail.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 combine sequence analysis, structural comparison, and functional complementation experiments. The low sequence identity (C68) and structural differences (C69) are documented. The failure of LmcA to complement even with PgfA's tail (C70) provides strong functional evidence that these are not true orthologs despite chromosomal synteny. The experimental design appropriately tests the hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "In \u0394lamA cells with reduced PgfA and MmpL3 levels, lipoglycans or their modifications become more important for survival. Transposon sequencing revealed sucT (which succinylates arabinogalactan and LAM) as the only gene besides lamA with significantly fewer insertions in \u0394lamA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 describe Tn-seq analysis with biological replicates. The identification of sucT as specifically essential in \u0394lamA (C71) is supported by statistical analysis. The known function of SucT (C72, cited) supports the inference about lipoglycan importance (C73). This genetic evidence complements the biochemical data on LM/LAM changes and suggests compensatory mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C95",
+      "C96"
+    ],
+    "result": "PgfA is necessary and sufficient for growth from the old pole. \u0394lamA cells with an extra copy of pgfA, but not mmpL3, grow more from the old pole. PgfA overexpression does not increase new pole growth, suggesting PgfA or its interactions are rate-limiting specifically at the old pole.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 describe pulse-chase assays with appropriate statistical analysis (N=3 biological replicates, paired ANOVA). The specificity for pgfA vs mmpL3 overexpression (C78) and the pole-specific effect (C80) support the sufficiency and specificity claims (C79, C96). The experimental design appropriately tests necessity (depletion) and sufficiency (overexpression) at each pole.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The molecular requirements for growth differ between new and old poles. In \u0394lamA cells that grow more from the new pole, neither MmpL3 nor PgfA are more abundant at this pole; instead, MurJ levels increase and HADA staining (peptidoglycan incorporation) increases at the new pole, suggesting PgfA is rate-limiting at the old pole while PG synthesis is rate-limiting at the new pole.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 integrate fluorescence microscopy data (C81-C82) with HADA staining (C83) to support differential molecular requirements at the two poles (C84). The data are internally consistent: increased growth at the new pole correlates with increased MurJ and HADA incorporation but not PgfA/MmpL3. The inference about differential rate-limiting steps (C84) is reasonable but remains a model requiring further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C50",
+      "C90",
+      "C91"
+    ],
+    "result": "PgfA fills an intermediate role between MmpL3 and mycolic acid placement in the mycomembrane. PgfA interacts with both MmpL3 and TMM, and cells depleted for PgfA display phenotypes consistent with this intermediate role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C90-C91 synthesize multiple lines of evidence: PgfA-MmpL3 interaction (C42-C43), PgfA-TMM binding (C52), co-localization (C44-C45), and depletion phenotypes (C30, C39, C60). The model is well-supported by the data, though the precise molecular mechanism of PgfA's role in TMM trafficking remains to be fully elucidated. The phenotypic data (C91) are consistent with an intermediate role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Background on mycobacterial cell envelope structure and growth. The manuscript establishes that M. tuberculosis causes ~1.4 million deaths annually, describes the unique mycobacterial cell envelope (peptidoglycan-arabinogalactan-mycolic acid complex forming mAGP with an outer mycomembrane), notes that two first-line TB antibiotics target cell envelope biosynthesis, and describes asymmetric polar growth in mycobacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 provide established background knowledge supported by appropriate citations. These are well-established facts in the field that provide context for the study. C1 (TB mortality), C2-C5 (cell envelope structure), C6 (antibiotic targets), and C7-C9 (polar growth) are all supported by cited literature and general knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background on LamA and MSMEG_0317/PgfA. LamA deletion reduces asymmetry by increasing new pole growth and decreasing old pole growth. LamA co-immunoprecipitates with PonA1 and MSMEG_0317/PgfA. MSMEG_0317 is predicted essential, belongs to the DUF3068/PorA family found exclusively in actinobacteria, shares limited homology with CD36, and its corynebacterial homolog LmcA is involved in lipoglycan synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C20 provide background from prior work (mostly cited to Rego et al. 2017 and other references) and establish the rationale for studying MSMEG_0317. The claims about LamA function (C10), protein interactions (C11-C12), essentiality predictions (C14-C15), and protein family classification (C16-C20) are appropriately cited and provide context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "PgfA is a late divisome-associated protein, arriving during latter stages of FtsZ recruitment but before Wag31 arrival at mid-cell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 is supported by time-lapse microscopy comparing PgfA-mRFP localization to FtsZ-mCherry2B and eGFP-Wag31 (Figure 1\u2014figure supplement 3). The temporal ordering is clearly shown in the kymographs. This classification as a 'late divisome-associated protein' is a reasonable inference from the timing data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C41",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Background on MmpL3 function and TMM trafficking. MmpL3 transports TMM across the plasma membrane to the periplasm, where it is trafficked to antigen 85 enzymes and incorporated onto mAGP or made into TDM. MmpL3 is a therapeutic target, and prior work showed MmpL3 interacts with Rv0227c (PgfA homolog). It has been hypothesized that MmpL3 hands off TMM to periplasmic proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C85-C89 provide established background on MmpL3 function supported by appropriate citations. These claims establish the context for investigating PgfA's role in TMM trafficking. The hypothesis about TMM handoff (C89) is appropriately attributed to prior speculation in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "A recent proteomics study identified PgfA as a putative TMM-interacting protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 is supported by citation to Kavunja et al. 2020. This prior work provided the rationale for the authors' photo-crosslinking experiments (C52) to validate the interaction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "All known MmpL3 accessory proteins reside in the cytoplasm or have globular domains on the cytoplasmic side of the plasma membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 is supported by citation to Fay et al. 2019. This establishes that PgfA would be the first identified periplasmic accessory protein for MmpL3, highlighting the novelty of the finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "In C. glutamicum, lmcA deletion resulted in disappearance of LAM and accumulation of truncated LM detectable by faster SDS-PAGE migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 is supported by citation to Cashmore et al. 2017. This prior work in corynebacteria provides important context for interpreting the different phenotype observed with PgfA depletion in mycobacteria (C65-C66), supporting the conclusion that PgfA and LmcA are not true functional orthologs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C74",
+      "C112"
+    ],
+    "result": "Cells overexpressing PgfA have lower levels of cell-associated LAM and higher levels of TDM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74 and C112 describe the inverse relationship between PgfA levels and LAM abundance, supported by SDS-PAGE and TLC analysis (Figure 4F, Figure 3D and F). This gain-of-function experiment complements the depletion data (C65) and supports the negative correlation between PgfA-mediated TMM trafficking and LAM levels (C76).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "Altered LM/LAM levels have not been reported for other TMM-trafficking mutants, and succinylation may negatively regulate mycoloylation as succinylated arabinan chains are unmycoloylated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 draws from literature knowledge to highlight the novelty of the LM/LAM phenotype. Claim C93 is supported by citation to Bhamidi et al. 2008 and provides mechanistic context for the Tn-seq finding about sucT (C71-C73). These are appropriately cited background claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "In mycobacteria, bifunctional class A PBPs are dominant enzymes for cell elongation. In other organisms, aPBPs are activated by membrane-anchored proteins, but no activator of mycobacterial PonA1 has been found. This raises the speculation that mycomembrane precursor transport may activate PG synthesis at the old pole.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C99 provide established background (C97-C98 cited, C99 from literature knowledge). Claim C100 is explicitly presented as speculation by the authors. While the speculation is reasonable given the data showing PgfA is rate-limiting at the old pole (C78-C79, C96), there is no direct experimental evidence for PgfA activating PBPs. This remains an interesting hypothesis for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The requirements for growth between the two poles are fundamentally different. In \u0394lamA, the new pole grows more without increased PgfA or MmpL3, but with more PG synthesis enzymes. New poles eventually become old poles, and PgfA and MmpL3 localize to the 'new old poles' after division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C105 synthesize observations about differential pole requirements. The data on protein localization (C101-C102) are supported by fluorescence microscopy. The inference about fundamental differences (C103) is reasonable given the differential protein requirements and responses to lamA deletion. Claims C104-C105 describe the cell cycle progression and protein relocalization, supported by time-lapse data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "LamA influences pole growth in opposite directions, and the new and old poles may be distinct sites with different molecular requirements. LamA influences these differences to create asymmetry leading to heterogeneous populations better able to survive stresses like antibiotics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C106 summarizes the paradoxical effect of LamA on the two poles. Claim C107 is presented as speculation ('may be') and is supported by the differential protein requirements shown in the study. Claim C108 connects to prior work (Rego et al. 2017) on \u0394lamA antibiotic susceptibility. These are reasonable interpretations and connections to prior work, though the mechanism of how LamA creates these differences remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "PgfA and MmpL3 are highly vulnerable drug targets where small changes in abundance cause growth arrest or death. \u0394lamA cells grow normally despite having fewer of these proteins, and in these cells lipoglycans or their modifications become more important.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C109 is supported by citation to Bosch et al. 2021. Claim C110 is an observation from the current study's data. Claim C111 is supported by the Tn-seq data (C71-C73). Together these raise an interesting question about compensatory mechanisms that is partially addressed by the sucT finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "There may be competing pathways for the transport or synthesis of TMM and LM/LAM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C77 is explicitly presented as speculation ('suggesting that there may be'). While the negative correlation between PgfA levels and LAM abundance (C76) and the Tn-seq data (C71-C73) provide some support, the mechanism underlying this relationship is unclear. The authors appropriately present this as a hypothesis. Alternative explanations (e.g., altered accessibility to extraction methods) are mentioned but not fully tested.",
+    "result_type": "MINOR"
+  }
+]

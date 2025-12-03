@@ -1,0 +1,283 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The study analyzed 983 children and adolescents (ages 6\u201318) from the Healthy Brain Network dataset, divided into typically reading (TR; n=570) and reading disability (RD; n=102) groups based on diagnostic criteria and TOWRE scores. The TR group was older and had higher socioeconomic status, brain volumes, IQ scores, and image quality, but groups were matched for sex, handedness, and motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C28\u2013C31, and C62\u2013C65 provide comprehensive participant characterization with clear inclusion criteria, group definitions, and demographic comparisons supported by Table 1. The methodology for group assignment is explicit and data-driven, though the TR and RD groups differ on multiple confounding variables beyond reading ability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C33",
+      "C34",
+      "C35",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "FDC positively correlated with reading skills throughout the brain (qFDR<0.05), with strongest effects (\u0394R\u00b2adj up to 0.030) in left temporoparietal white matter (likely AF, SLF, or MLF) and left cerebellar white matter (likely SCP). All 72 segmented tracts contained significant fixels, with bilateral but left-lateralized effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C33\u2013C35, and C37\u2013C39 are well-supported by Figure 3, Table 2, and statistical analyses with appropriate FDR correction. The whole-brain analysis identified widespread positive correlations with reading, and tract segmentation localized peak effects to neuroanatomically plausible regions. Effect sizes are modest but consistent across the cohort.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C42"
+    ],
+    "result": "FDC did not significantly differ between the TR (n=570) and RD (n=102) groups in any brain region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C42 report null group differences, which is clearly stated in the results. However, the lack of significant differences may reflect reduced statistical power from smaller group sample sizes (n=672 total) compared to continuous analyses (n=983), loss of information from categorization (C81), and multiple confounding differences between groups (C30).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "Post-hoc analyses revealed that better reading skills were associated with higher FC throughout more brain regions than with higher FD. The highest FDC effect sizes occurred where both FD and FC independently related to better reading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40\u2013C41 are supported by Figure 3\u2014figure supplement 3 and follow logically from the mathematical relationship between FDC, FD, and FC. The finding that FC shows more widespread associations than FD suggests macrostructural (fiber cross-section) properties may be more broadly related to reading than microstructural (fiber density) properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "The relationship between FDC and reading skills was stable across ages (6\u201318 years), with only two trivially small clusters showing age-related variance in FDC-TOWRE relationships that did not overlap with primary analysis results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43\u2013C44 are supported by bivariate interaction modeling results. The use of GAM with smooth age terms and the finding of minimal age interactions suggests the brain-behavior relationship is consistent across this developmental period, though the cross-sectional design limits causal interpretation (C88).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C45",
+      "C48",
+      "C49",
+      "C74"
+    ],
+    "result": "Among DTI, DKI, and NODDI metrics, only NODDI's orientation dispersion index (ODI) and neurite density index (NDI) showed inverse associations with reading skills, with ODI effects overlapping left temporoparietal and bilateral cerebellar regions from the FDC analysis. However, neither NODDI metric survived Bonferroni correction across all 12 hypotheses tested. FA, MD, KFA, and MK showed no relationship with reading skills.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C45, C48\u2013C49, and C74 are supported by Figure 4 and exploratory analyses. The null FA findings replicate recent large-scale studies (C14, C15). However, the NODDI results should be interpreted cautiously as they did not survive multiple comparison correction across all models tested, and the study acknowledges this was exploratory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C54"
+    ],
+    "result": "The left AF and SLF connect brain regions essential for language and reading, are vital for the reading network based on lesion studies, and are associated with phonological processing skills. The authors infer that phonological skills may provide more of a bottleneck to single-word reading than visual/orthographic processing in children.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50\u2013C52 are well-supported by citations to established literature. Claim C54 is an inference from the pattern of stronger effects in dorsal (AF/SLF) versus ventral (IFOF/ILF) tracts, supported by the data pattern and citations (C53), though it remains speculative without direct measurement of phonological versus orthographic processing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The left SCP connects cerebellar nuclei to contralateral thalamic regions and may mediate cortico-cerebellar interactions in verbal processing. Previous studies found inverse FA-reading relationships in bilateral SCP, but this study found positive FDC-reading correlations in left SCP without inverse relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55\u2013C58 are supported by neuroanatomical knowledge (C55), functional imaging inference (C56), and citations to prior work (C57). The discrepancy between previous FA findings and current FDC results (C58) is acknowledged, with the caveat that FA and FDC need not covary, though the biological basis for this difference remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C75"
+    ],
+    "result": "Recent studies suggest the FA-reading relationship is not robust, contrasting with early studies showing positive associations in left temporoparietal tracts. FA has multiple limitations: partial volume effects, artificial reduction in crossing fiber regions (up to 90% of white matter), and covariation with multiple biological properties. Different white matter plasticity manifestations can have opposing effects on FA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7\u2013C15, and C75 provide a comprehensive literature review supported by appropriate citations. The progression from early consensus (C12) to inconsistent findings (C13) to recent null results (C14, C15) is well-documented. The technical limitations of FA (C9\u2013C11) are established in the diffusion imaging literature and provide context for the motivation to use fixel-based analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C2",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Fixel-based analyses overcome DTI limitations by providing fiber-specific metrics (FD, FC, FDC) that separately measure microstructure and macrostructure. FD reflects intra-axonal volume fraction, FC reflects fiber bundle cross-sectional area, and FDC (their product) relates to total intra-axonal volume and conductive capacity. FBAs restrict analyses to white matter and perform connectivity-informed smoothing within fiber populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C19\u2013C27 accurately describe fixel-based analysis methodology supported by citations to foundational papers (Raffelt et al.). The biological interpretations of FD, FC, and FDC are based on established theory, though the authors appropriately note limitations (C78, C79) that fixel metrics haven't been histologically validated and cannot distinguish axon number from width.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Reading involves a widely distributed brain network with white matter tracts serving as information conduits. Lesion-mapping and case studies demonstrate that left-hemisphere white matter connections are necessary for reading. White matter exhibits learning-driven plasticity and can modulate neuronal firing, suggesting structural properties may reflect functional variation in reading ability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16\u2013C18 are well-supported by citations to established literature on reading networks, lesion studies, and white matter plasticity. These claims provide the theoretical foundation for expecting brain structure-behavior correlations in reading, though the cross-sectional design (C88) limits causal interpretation of such relationships.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C72",
+      "C73"
+    ],
+    "result": "The fixel-based analysis pipeline used site-specific response functions to control for scanner differences, created an unbiased FOD template from 38 participants representing diverse ages/sexes/reading levels, generated a 20-million streamline tractogram reduced to 2 million via SIFT filtering, and applied Benjamini-Hochberg FDR correction. Tract masks overlapped, so fixels could associate with multiple bundles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66\u2013C67, C69\u2013C70, C72\u2013C73 describe methodological details that follow established FBA best practices with appropriate citations. The template construction (C68) was thoughtfully designed to be unbiased. The acknowledgment of tract overlap (C73) is important for interpretation. However, some methodological limitations are noted (C60\u2013C61, C87).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C61",
+      "C60"
+    ],
+    "result": "DWI alone cannot distinguish whether intra-axonal volume reflects axon number or width, fixel-based metrics lack histological validation, and the b-value of 2000 s/mm\u00b2 may have allowed extra-axonal signal contamination that partially undermined FD and FDC measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78\u2013C79, C61, and C60 appropriately acknowledge important methodological limitations. These are honest assessments of current DWI capabilities and the specific acquisition parameters used. The b-value concern (C61) is supported by citation to Genc et al. 2020, though C60 notes this b-value is not exceptionally low for FBA studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Collapsing participants into reading proficiency groups loses information about individual differences. Studies of pre-readers would help distinguish etiology from consequences of reading development. Other studies have found white matter alterations in the left AF among pre-readers with familial dyslexia risk or future diagnoses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81\u2013C83 provide thoughtful discussion of study design limitations and future directions. C81 correctly notes information loss from categorization. C82 is supported by citations and represents sound reasoning about causal inference. C83 reviews relevant pre-reader literature, though the authors note no fixel-based pre-reader studies exist yet.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C84",
+      "C76",
+      "C77"
+    ],
+    "result": "Areas where ODI negatively related to reading overlapped with where FD positively related to reading. DWI signal is largely insensitive to myelination, and multimodal studies suggest myelin properties don't change during reading intervention, with mixed evidence for MD tracking intervention responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84, C76\u2013C77 are supported by figure comparisons and citations. The ODI-FD overlap (C84) is an interesting observation that warrants future investigation. The discussion of myelination (C76\u2013C77) appropriately contextualizes what DWI can and cannot measure, supported by relevant citations to intervention studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C59"
+    ],
+    "result": "Most HBN participants present with at least one psychological, learning, or neurodevelopmental disorder. The study did not exclude participants with comorbid conditions like ADHD to maintain statistical power and sample diversity. Approximately 50% of children with reading disorders also have ADHD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85\u2013C86, C59 are supported by citations and clearly describe an important study limitation. The decision not to exclude comorbidities (C86) is justified by statistical and representativeness considerations, and the high comorbidity rate (C59) is well-documented. However, this heterogeneity could confound results and limit specificity to reading disability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "White matter bundles have different shapes across participants, and since analyses are in template space, effects could be partially driven by geometric variations. The study is cross-sectional and correlational, precluding causal conclusions about white matter's contributions to reading skills.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87\u2013C88 appropriately acknowledge fundamental limitations. The geometric variation concern (C87) is supported by citations and represents a known limitation of template-based analyses. The acknowledgment that cross-sectional correlational designs cannot establish causation (C88) is methodologically sound and important for interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Longitudinal studies suggest ventral tracts (IFOF, ILF) are more associated with visual orthographic processing than phonological processing. The authors infer that phonological skills may provide more of a bottleneck to single-word reading abilities in children than lower-level visual and orthographic processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 is supported by citations to longitudinal studies. Claim C54 is an inference from the pattern of stronger dorsal versus ventral tract effects, which is reasonable given the data and cited literature, though it remains speculative without direct behavioral measures of phonological versus orthographic processing abilities.",
+    "result_type": "MINOR"
+  }
+]

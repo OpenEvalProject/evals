@@ -1,0 +1,173 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Postnatal mouse long bones contain two distinct skeletal stem cell (SSC) types: an osteochondral SSC (ocSSC) that facilitates bone growth and repair, and a perivascular SSC (pvSSC) that contributes to the hematopoietic niche. Only pvSSCs give rise to bone marrow adipose tissue (BMAT), while ocSSCs are restricted to osteochondrogenic lineages. Both SSC types demonstrate bona fide stem cell properties including high clonogenicity, long-term self-renewal, and multipotency in vitro and in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C18 collectively provide strong converging evidence from multiple experimental approaches. The functional characterization includes clonal analysis (C11), renal capsule transplants (C12-C14), CFU-F assays (C15), single-cell differentiation assays (C17), and intratibial transplants (C18). The exclusive adipogenic potential of pvSSCs is demonstrated across multiple assays and age groups (C13, C16, C18), while both cell types show osteochondrogenic capacity. The data are internally consistent and supported by appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C27",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "ocSSCs and pvSSCs occupy distinct anatomical niches and emerge at different developmental timepoints. ocSSCs are enriched in non-marrow fractions and growth plate regions, appear early in limb development (E13.5), and are associated with marrow-free spaces. pvSSCs are more evenly distributed, accumulate at bone ends where BMAT appears, emerge later (E15.5) coinciding with HSC detection, and localize perivascularly. Both cell types are found in the periosteum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C27 and C53-C56 are supported by complementary spatial and temporal analyses including FACS quantification of micro-dissected bone regions (C19-C20), developmental timepoint analysis (C22-C23), whole bone transplantation experiments (C24), lineage conversion assays (C27), and in situ hybridization with new markers Wif1 and Cdh13 (C53-C55). The temporal correlation between pvSSC emergence and HSC detection (C23) is supported by citation to prior work. The data consistently demonstrate spatial and temporal separation of the two SSC types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Single-cell RNA sequencing reveals that ocSSCs and pvSSCs are molecularly distinct populations. The two cell types cluster separately and show differential gene expression patterns: ocSSCs express higher levels of osteochondrogenic genes (Acan, Col2a1, Pthr1, Spp1) and are associated with skeletal development, while pvSSCs express fibroblast markers (Pdgfra, Postn, Dpt) and hematopoietic interaction factors (Cxcl12, Igf1, Rarres2) and are linked to extracellular matrix organization and hematopoietic regulation. Sca1 expression is virtually absent in ocSSCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C31 are supported by comprehensive scRNAseq analysis (143 ocSSCs, 169 pvSSCs) with appropriate quality filtering. The separate clustering (C28), differential gene expression (C30-C31), and gene ontology analysis (C29) provide converging molecular evidence for distinct cell identities. The Sca1 expression data (C25-C26) is supported by both FACS and scRNAseq, confirming that this pvSSC marker is not expressed in ocSSCs. The molecular distinctions align with the functional differences observed in other results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C60",
+      "C62",
+      "C64"
+    ],
+    "result": "ocSSCs and pvSSCs respond differentially to physiological challenges and show distinct functional roles. pvSSCs increase after irradiation and with aging, while ocSSCs decline, consistent with pvSSC roles in hematopoietic niche support. ocSSCs accumulate during fracture repair, reflecting their role in skeletal regeneration. In co-transplantation experiments, ocSSCs contribute primarily to osteochondrogenic tissue while pvSSCs localize near hematopoietic tissue. pvSSCs emerge synchronously with HSC homing to bone marrow.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37, C60, C62, and C64 are supported by FACS quantification in multiple experimental contexts: irradiation (C32-C33), fracture healing (C34), aging (C35-C36, C64), and co-transplantation (C37). The temporal correlation between pvSSC emergence and HSC detection (C60) is supported by developmental analysis and citation. The differential responses to physiological perturbations are statistically significant and consistent with the proposed functional roles. However, the mechanistic connection to HSC regulation remains correlative rather than causally demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Commonly used single-gene reporter lines (LepR, Pthrp, Ctsk, Cxcl12, Osx, Col2a1, Acan, Col1a1, Spp1) show variable expression within and between ocSSCs and pvSSCs and also label more differentiated cell types. LepR expression is found in both SSC types and does not functionally separate them. Reporter mouse lines have limitations because fluorescent reporters permanently stay on after Cre-mediated recombination, not reflecting current gene expression. Multi-marker FACS provides more faithful cell population snapshots but cannot fate map cells in situ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 and C68-C70 are supported by scRNAseq gene expression data (C38-C39), FACS analysis of LepR expression (C40), and functional assays showing no difference in CFU-F capacity or osteogenic potential between LepR+ and LepR- fractions (C41-C42). The critique of reporter mouse limitations (C68-C70) is based on sound understanding of Cre-lox technology and is supported by the data showing LepR expression in both SSC types. This represents an important methodological contribution highlighting the advantages of multi-marker FACS over single-gene reporters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C71"
+    ],
+    "result": "Leiden clustering reveals heterogeneity within SSC populations, with ocSSCs containing three subclusters while pvSSCs are more homogeneous. Clusters 3 and 4 are enriched for chondrogenic and osteogenic fate markers respectively, while clusters 1 (pvSSCs) and 2 show stem cell-associated genes. Ligand-receptor expression patterns suggest crosstalk between SSC types, with pvSSCs expressing Tgfb2/Tgfb3 and Wnt ligands that may support ocSSC fate commitment, and ocSSCs expressing Bmp, Tgfa, and Egf ligands that may signal back to pvSSCs. New markers Wif1 (ocSSC) and Cdh13 (pvSSC) were identified for the most stem-like clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C52 and C71 are supported by Leiden clustering analysis of the scRNAseq dataset. The identification of subclusters (C43), their characterization by differential gene expression (C44-C46), cell cycle analysis (C47), and ligand-receptor expression patterns (C48-C50) are all data-driven. However, the proposed crosstalk mechanisms (C49-C50) are speculative and based on expression patterns rather than functional validation. The identification of new markers Wif1 and Cdh13 (C51-C52) is validated by in situ hybridization. The acknowledgment of remaining heterogeneity (C71) is appropriate and honest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Prior work on bone marrow stromal cells (BMSCs) and skeletal stem cells has methodological limitations. BMSCs have been improperly characterized as stem cells based solely on tri-lineage differentiation and surface marker expression without testing single-cell self-renewal and multipotency. Single-gene reporter lines like LepR label heterogeneous populations including mature cell types. Previous work has identified ocSSCs restricted to osteochondrogenic lineages and pvSSCs with tri-lineage potential as the source of bone marrow adipocytes, and recent scRNAseq studies inferred multiple origins for osteogenic fates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C10 accurately summarize prior work through appropriate citations. The critique of BMSC characterization (C6) is supported by citation to consensus criteria (Dominici et al., 2006) and represents a valid methodological concern. The limitations of LepR labeling (C7) are supported by citations and confirmed by data in this manuscript. The prior identification of ocSSCs (C8) and pvSSCs (C9) by the authors' previous work is appropriately cited. The reference to recent scRNAseq studies (C10) provides context for the current work. These claims establish the rationale and context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C61",
+      "C63",
+      "C65"
+    ],
+    "result": "The study's findings relate to previously described cell populations and established biological principles. ocSSCs may be the SSC type targeted by Osx-Cre reporter lines and are included in Pthrp-expressing growth plate and Ctsk-expressing periosteal stem cell populations. Mesenchymal cell types have established roles in maintaining HSC quiescence. Recent scRNAseq studies found adipo-primed populations as reservoirs of pro-hematopoietic factors. pvSSCs have a non-hematopoietic, non-endothelial, Prrx-1 mesenchymal origin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59, C61, C63, and C65 appropriately contextualize the findings within existing literature through citations. The connection to Osx-Cre (C58) is speculative but reasonable based on the data. The relationship to Pthrp and Ctsk populations (C59) is supported by citations and gene expression data. The established role of mesenchymal cells in HSC regulation (C61) and the characterization of adipo-primed populations (C63) provide important context. The Prrx-1 origin of pvSSCs (C65) is supported by prior work. These claims appropriately integrate the current findings with existing knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C72"
+    ],
+    "result": "The manuscript proposes speculative hypotheses about SSC origins and plasticity. pvSSCs may have originated from perivascular mural cells and pericytes that ingressed during endochondral ossification. High levels of Bmp2 or Wnt might convert pvSSCs into ocSSC-like cells. The findings may be translatable to humans through comparable SSC populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66, C67, and C72 are explicitly speculative and acknowledged as such in the text. The proposed origin of pvSSCs from perivascular cells (C66) is supported by citations but not tested experimentally. The potential for pvSSC-to-ocSSC conversion (C67) is based on citations to prior work but not demonstrated here. The translatability to humans (C72) is supported by citations to human SSC studies but requires validation. These are reasonable hypotheses for future work but are not supported by data in this manuscript.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,277 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C43",
+      "C44",
+      "C45",
+      "C79",
+      "C81"
+    ],
+    "result": "Bdelloid rotifers contain a diverse array of active transposable elements (TEs) at frequencies comparable to sexual species. The proportion of known TEs in bdelloid genomes ranged from 2.4% to 7.3% (mean 4.9%), which is within the range observed in sexual monogonont rotifers and other sexual animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C43, C44, C79, and C81 are directly supported by genomic data from 31 newly sequenced bdelloid genomes showing TE content of 2.4-7.3%. The comparison to monogononts (C45: 5.2% class I, 2.5% class II) and broader protostome sampling demonstrates that bdelloid TE frequencies fall within the range of sexual species, contradicting prior expectations of TE depletion in asexuals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C80",
+      "C85"
+    ],
+    "result": "Phylogenetic modeling found no significant shift in TE content on the stem branch leading to bdelloids, but detected a lower rate of evolution in class I TE content among bdelloid lineages compared to other sampled lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C49, and C85 are supported by explicit statistical tests using phylogenetic models (log-likelihood ratio tests with p=0.24 for class I and p=0.38 for class II). The finding of lower evolutionary rates (C49, C85) rather than lower absolute frequencies represents a nuanced but well-supported result from the rate-shift detection analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C83"
+    ],
+    "result": "There is no evidence that desiccation tolerance is associated with reduced TE loads in bdelloid rotifers or in comparisons of desiccating versus non-desiccating species in other taxa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C51, and C83 are supported by Bayesian mixed-effects modeling controlling for phylogeny (p>0.05 for all TE superfamilies) and comparisons in tardigrades and insects. The statistical approach appropriately accounts for phylogenetic non-independence, though the power is limited by sample size (11 non-desiccating bdelloids, 2 independent comparisons in other taxa).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C58"
+    ],
+    "result": "Multiple lines of evidence demonstrate recent and ongoing TE activity in bdelloid genomes, including bimodal TE divergence landscapes with zero-inflated distributions, transcription of approximately one-third of annotated TEs, and polymorphic TE insertions within species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 and C58 are supported by complementary data: TE divergence landscapes from high-quality 10x Genomics assemblies (C52, C53), RNA-seq data from five species (C54), and LTR insertion site polymorphism analysis (C58). The convergence of multiple independent lines of evidence (sequence divergence, transcription, population variation) strongly supports ongoing TE activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C5",
+      "C84"
+    ],
+    "result": "Analysis of LTR retrotransposon insertion sites found no evidence for inter-individual recombination spreading TEs in bdelloid populations. Insertion sites were species-specific with perfect phylogenetic nesting (consistency index = 1), significant linkage disequilibrium, and patterns consistent with strictly clonal inheritance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C63, C5, and C84 are supported by multiple statistical tests on LTR insertion site data: high within-species scores (~0.9) versus low between-species scores (<0.1) (C55), perfect consistency indices (C61), significant index of association (C62), and Approximate Bayesian Computation unable to reject clonal evolution (C63). However, the authors appropriately note this tests only a restricted set of markers and does not rule out recombination genome-wide.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Bdelloid TEs experience similar selective constraints as in other animals, with TEs concentrated in gene-poor, TE-rich, telomeric regions, and showing a negative correlation between TE length and copy number consistent with selection against ectopic recombination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 are supported by phylogenetic linear models showing significant decreases in gene density and increases in TE/telomeric repeat density around TEs (p<0.001, C66), with no significant differences between monogononts/bdelloids or desiccating/non-desiccating species (C67, C68). The negative correlation between length and copy number (C69, C70) is consistent with ER-based selection, though the inference about mechanism (C70) is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C75",
+      "C77",
+      "C8",
+      "C86"
+    ],
+    "result": "Bdelloid genomes show significant expansion of RNAi gene families, particularly Argonaute (mean 21.5 copies) and RdRP (mean 38.9 copies), compared to monogononts (7.5 and 2.5 copies respectively) and other eukaryotes. Phylogenetic modeling detected a highly significant shift on the bdelloid stem branch (+9 Argonaute, +27 RdRP copies).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73, C75, C77, C8, and C86 are supported by HMM-based domain detection, phylogenetic birth-death modeling showing significant shifts (p<0.05 for Argonaute, p<0.001 for RdRP), and comparative domain abundance analysis accounting for tetraploidy. The RdRP expansion is particularly striking (98th percentile, C77) and represents the largest diversity described in any animal to date (C86).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C78"
+    ],
+    "result": "The majority of bdelloid RdRP copies belong to divergent clades (RDR I and RDR II) that do not cluster within major metazoan RdRP clades and appear to be a unique feature of bdelloids not found in monogononts or acanthocephalans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74 and C78 are supported by phylogenetic analysis using a comprehensive eukaryotic RdRP alignment (538 sequences, 247 species). The inference that this represents a unique bdelloid feature (C78) is appropriately qualified by acknowledging the limited reference set, but is supported by absence in closely related taxa.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C87",
+      "C89"
+    ],
+    "result": "The authors speculate that the expanded RNAi gene arsenal might mitigate deleterious effects of active TEs and compensate for the loss of sexual TE control mechanisms, potentially defending against horizontally transferred TEs or other foreign genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9, C87, and C89 are explicitly speculative (\"might,\" \"we speculate,\" \"one possibility\") and represent reasonable hypotheses based on the observed gene family expansions and known RNAi functions. However, no functional validation is provided. The connection to horizontal gene transfer (C89) is plausible given prior work (C88) but remains untested. These are appropriate interpretations but require experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "The study generated 31 de novo whole-genome assemblies for bdelloid rotifers, including three high-quality 10x Genomics linked-read assemblies from clonal populations and 26 Illumina assemblies from single wild-caught individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41 and C42 accurately describe the study's dataset as documented in Table 1 and Methods. The assemblies show appropriate quality metrics (BUSCO scores 89-98% complete, N50 values, etc.) and represent a substantial genomic resource for comparative analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Phylogenetic analysis of reverse transcriptase domains revealed a diverse array of full-length RTs in all bdelloid species, clustering within PLEs, LTRs, and LINEs superfamilies. The elevated LINE content in D. carnosus is primarily due to Soliton clade expansion and presence of CR1-Zenon and Tad/I/Outcast clades.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64 and C65 are supported by HMM-based RT identification and phylogenetic analysis (Figure 5A). The characterization of D. carnosus LINE content (C65) provides insight into variation within bdelloids, though the functional significance is not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The manuscript provides extensive background on TE biology, classification, costs and benefits, the role of sexual reproduction in TE dynamics, theoretical predictions for asexual lineages, and prior work on bdelloid rotifers including their unusual biology and previously reported TE content.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C40 represent background knowledge and prior work that are appropriately cited and accurately summarized. These establish the theoretical framework and empirical context for the current study. The citations appear appropriate and the characterization of prior findings (e.g., C32-C33 on early PCR surveys, C38-C40 on A. vaga) is consistent with the referenced literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "The findings are at odds with predictions of population genetic theory for TEs in long-term asexuals, which predict either TE accumulation leading to extinction or complete purging of TEs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 is a valid interpretation supported by the data showing intermediate TE levels (C3, C4) and no major shifts on the bdelloid stem branch (C47, C80). The discrepancy with theory is real, though the authors appropriately discuss possible resolutions including missing theoretical components, horizontal transfer, or cryptic recombination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C7"
+    ],
+    "result": "TE content evolves relatively slowly in bdelloids compared to background rates in other lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C7 is supported by the phylogenetic rate-shift analysis (C49, C85) showing lower rates of evolution in class I TE content among bdelloid lineages. This is a more nuanced finding than initially predicted but is statistically well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "There is no evidence that TEs are restrained by unusual DNA repair mechanisms in bdelloids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C6 is stated as a finding but the evidence is indirect (lack of reduced TE loads in desiccating species, C50-C51). The study does not directly assay DNA repair mechanisms or their effects on TEs. The conclusion is reasonable given the data but represents an inference from negative results rather than direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "In A. vaga, piwi-interacting small RNAs (piRNAs) target both TEs and putatively foreign genes acquired via horizontal gene transfer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 is appropriately cited to prior work (Rodriguez and Arkhipova, 2016) and provides context for the speculation about RNAi expansion functions (C89). This is accurate reporting of published findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "The phylogenetic model detected a significant increase in Argonaute copies in C. elegans, corresponding to the known worm-specific Ago (WAGO) genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 is supported by the gene family evolution analysis and serves as a positive control, demonstrating that the method can detect known expansions. This increases confidence in the bdelloid-specific findings.",
+    "result_type": "MINOR"
+  }
+]

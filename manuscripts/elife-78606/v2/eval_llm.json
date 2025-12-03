@@ -1,0 +1,245 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C11",
+      "C64",
+      "C69"
+    ],
+    "result": "The authors develop a theoretical framework showing that population code structure shapes inductive bias through the kernel function, and that code-task alignment is crucial for sample-efficient learning. This theory demonstrates that under the delta rule, generalization performance depends entirely on the code's inner product kernel, promoting sample efficiency as a general coding principle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C11, C64, and C69 collectively establish the core theoretical contribution. The mathematical derivation showing kernel dependence (C64) is rigorous, the connection to inductive bias (C2, C11) is clearly demonstrated, and the importance of code-task matching (C3) is both theoretically derived and empirically validated. The promotion of sample efficiency as a coding principle (C69) follows logically from the theory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C30",
+      "C31",
+      "C73",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The theory identifies two key principles governing inductive bias: spectral bias (kernel eigenfunctions with large eigenvalues can be estimated with fewer samples) and code-task alignment (target functions with power concentrated in top eigenfunctions are learned efficiently). The interplay between stimulus distribution, target response, and code structure determines sample efficiency, with top eigenvalues governing small sample behavior and the tail becoming important at large sample sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C30, C31, C73, C75, C76, and C77 describe the mechanistic principles derived from the theory. The spectral bias principle (C30) and code-task alignment (C31) are mathematically derived and empirically validated. The role of structured correlations (C73) and the differential importance of spectrum regions at different sample sizes (C76, C77) are well-supported by both theory and experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C39",
+      "C40",
+      "C41",
+      "C67"
+    ],
+    "result": "Analysis of mouse V1 responses to grating stimuli reveals an efficiency bias toward low-frequency orientation discrimination tasks. Low-frequency tasks show rapid cumulative power rise and good separation along top principal axes, while high-frequency tasks do not, with theoretical predictions matching experimental results perfectly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C39, C40, C41, and C67 are well-supported by experimental data from mouse V1 recordings. Figure 3 shows clear agreement between theory and experiment, with proper controls and visualization of the underlying geometric structure. The connection to prior findings about low spatial frequency selectivity (C67) strengthens the result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C42",
+      "C45"
+    ],
+    "result": "Mouse V1 exhibits an efficiency bias toward low spatial frequency reconstruction of natural images, with the population preferentially encoding low spatial frequency content. This is evidenced by cumulative power distributions and learning curves for band-pass filtered image reconstruction tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C42, and C45 are supported by analysis of V1 responses to natural images shown in Figure 4. The experimental design appropriately controls for dimensionality by preserving volume in Fourier space, and the results are consistent with known V1 properties. However, the number of images and trial averaging details could affect robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C60",
+      "C62",
+      "C78"
+    ],
+    "result": "The biological V1 code has significantly lower total activity and higher lifetime sparseness than randomly rotated codes with identical kernels (RROS codes). This suggests metabolic efficiency as a constraint that breaks the degeneracy among codes with the same inductive bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C60, C62, and C78 are supported by systematic comparison of biological codes to RROS codes across multiple neuron subset sizes (Figure 8). The statistical significance increases with neuron count as expected. However, the use of deconvolved calcium signals as a proxy for spiking may introduce systematic biases, and the optimization procedure for finding the most efficient code only guarantees local optima.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C21",
+      "C59"
+    ],
+    "result": "Many different population codes can achieve identical learning performance because the kernel is invariant to orthogonal rotations of the code. This degeneracy is demonstrated both theoretically and empirically with mouse V1 data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C21, and C59 are well-supported. The mathematical proof of rotation invariance is straightforward, and Figure 2 provides clear empirical demonstration using V1 data. This result is important for understanding the space of equivalent codes and motivates the metabolic efficiency analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "A toy model of V1 with simple and complex cells demonstrates that invariances in the population code (specifically phase invariance of complex cells) can facilitate learning some tasks at the expense of others, with optimal simple/complex cell mixtures depending on task structure and sample size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 is supported by the Gabor model analysis in Figure 5. The model appropriately captures key features of simple and complex cells, and the results clearly show task-dependent optimal mixtures. The extension to continuous F1/F0 distributions (Figure 5\u2014figure supplement 3) strengthens the biological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C74"
+    ],
+    "result": "Sample-efficient learning requires more than asymptotic spectral decay rates. The bulk of the kernel spectrum must match the task structure for low-sample efficiency, while the tail becomes important only at large sample sizes. This contrasts with prior work emphasizing only asymptotic smoothness conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C53, C54, and C74 are supported by the von Mises kernel analysis in Figure 6. The examples clearly demonstrate that codes with identical asymptotic decay can have dramatically different small-sample performance, and that optimal bandwidth depends on sample size. This is an important theoretical contribution distinguishing this work from prior studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C57"
+    ],
+    "result": "The theory extends to time-dependent codes, with recurrent networks generating kernels with complex spatiotemporal structure. In a delayed response task, longer delays result in lower cumulative power and worse sample efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55 and C57 are supported by the RNN simulations in Figure 7. The extension to temporal codes is mathematically sound, and the delayed response task provides a clear demonstration. However, only one network architecture and task are tested, limiting generalizability. The agreement between theory and simulation is good.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "Different population codes can encode the same stimulus variables and achieve perfect performance with infinite samples, but learning performance depends dramatically on the code when restricted to small sample sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12 and C13 are supported by the synthetic examples in Figure 1 and the theoretical framework. The examples clearly illustrate how codes with different structure lead to different small-sample performance despite asymptotic equivalence. This motivates the entire study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "In a Gabor model of V1, the width of tuning curves controls the bandwidth of kernel spectra, with narrower curves having later spectral decay and higher high-frequency eigenvalues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 is supported by Figure 6B and the Gabor model analysis. The relationship between tuning width and spectral properties is clearly demonstrated. However, this is a relatively straightforward consequence of Fourier analysis and serves mainly to illustrate the broader principles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Learning from limited experiences requires suitable inductive biases because inferring general rules from finite observations is ill-posed. The brain relies on implicit assumptions when learning from few examples, and without appropriate biases, successful generalization is impossible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7, C8, C9, and C10 establish the motivation and background. These are well-established principles in learning theory and neuroscience, properly cited. They provide important context but are not novel contributions of this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C14",
+      "C16",
+      "C65"
+    ],
+    "result": "The authors define good inductive bias as enabling learning from few examples, and identify the kernel as encoding the geometry of neural responses and serving as a representational similarity matrix.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C16, and C65 provide definitions and conceptual framework. These are clearly stated and properly connected to prior work on representational similarity analysis. They are foundational for the study but represent clarification rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The sample efficiency approach to population coding differs from classical efficient coding theories, which emphasize information content but do not address sample efficiency. Recent studies show redundancy and correlation in population responses, violating predictions of classical theories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C70, C71, and C72 position the work relative to prior theories. The distinctions are clearly articulated and properly cited. This contextualizes the contribution but is primarily a literature review component.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "Similar simplicity bias has been observed in training deep neural networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 connects the findings to machine learning literature with appropriate citations. This is a valid observation but represents a brief connection to related work rather than a substantive result of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "Evolution and learning may be selecting neural codes with low spike rates that preserve sample-efficiency, and metabolic efficiency may determine the orientation of low-dimensional coding manifolds throughout the brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79 and C80 are speculative predictions based on the findings. While the metabolic efficiency of V1 codes is demonstrated (C78), the evolutionary and broader brain-wide claims require additional evidence. These are reasonable hypotheses for future work but are not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The metabolic efficiency finding is consistent with sparse coding theories, and the assumption of static sensory codes during learning is justified by prior work showing small tuning changes in many perceptual learning experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81, C82, C83, and C84 connect findings to prior work and justify modeling assumptions. The citations are appropriate and the arguments are sound. These provide important context for interpreting the results and their limitations.",
+    "result_type": "MINOR"
+  }
+]

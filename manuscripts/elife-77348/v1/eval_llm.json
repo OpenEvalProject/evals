@@ -1,0 +1,393 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C80",
+      "C81"
+    ],
+    "result": "SPRiNT is a novel method that combines short-time Fourier transforms (STFTs) with specparam to produce time-resolved parameterization of neural spectrograms, decomposing them into aperiodic and periodic components. The method includes an optional outlier removal procedure to increase specificity of detected spectral peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C33-C37 provide a clear methodological description of SPRiNT, which is the core contribution of the manuscript. The method is well-defined with explicit steps (STFT computation, averaging, parameterization with specparam, optional outlier removal) and is demonstrated with both synthetic and empirical data throughout the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "In simulation challenge I with transient and chirping periodic components, SPRiNT outperformed wavelet-specparam in recovering time-varying spectral features, particularly for aperiodic components (MAE=0.06 vs 0.60) and showed higher sensitivity and specificity for detecting alpha (99%/96% vs 95%/47%) and beta peaks (95%/98% vs 62%/90%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C46 provide comprehensive quantitative comparisons with specific MAE values, sensitivity/specificity metrics, and statistical measures across 10,000 simulations. The results consistently demonstrate SPRiNT's superior performance, with appropriate acknowledgment of limitations (both methods overestimate peak bandwidths). The comparison is rigorous and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "In simulation challenge II with randomly generated realistic parameters, SPRiNT recovered 69% of simulated periodic components with 89% specificity, accurately detecting up to two simultaneous periodic components. Performance was affected by peak frequency (lower frequencies more challenging), amplitude (lower amplitudes harder to detect), and spectral proximity (peaks needed >8 Hz separation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C56 provide detailed quantitative performance metrics from 10,000 heterogeneous simulations with specific MAE values for all parameters. The characterization of limitations is thorough and honest, identifying specific conditions affecting detection (frequency, amplitude, proximity). The small effect of number of peaks on model fit (R\u00b2=0.0003) is appropriately noted as negligible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "In resting-state EEG data (n=178), both specparam and SPRiNT identified alpha power and aperiodic exponent as predictors of eyes-open vs eyes-closed behavior. SPRiNT uniquely revealed that temporal variability of alpha power also predicts behavioral condition, though Bayes factor analysis indicated this effect was marginal (BF=3.81).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C66 present convergent evidence from both specparam and SPRiNT analyses with appropriate statistical tests (logistic regression, Bayes factors). The unique contribution of SPRiNT (temporal variability) is identified but appropriately qualified as marginal based on Bayes factor analysis. The sample size (n=178) is adequate and the statistical approach is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C103"
+    ],
+    "result": "SPRiNT analysis of resting-state EEG revealed that older adults (55-80 years) show smaller aperiodic exponents (flatter spectra), slower alpha-peak center frequencies, and greater temporal variability in alpha-peak center frequency during eyes-open condition compared to younger adults (20-40 years), consistent with previous literature on healthy aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 and C103 provide consistent findings across both eyes-open and eyes-closed conditions with appropriate statistical support (logistic regression with confidence intervals, Bayes factors showing strong evidence). The results align with cited prior literature, providing convergent validity. The sample sizes (younger n=121, older n=57) are adequate for the analyses performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "In rodent intracranial recordings, SPRiNT revealed that resting bouts were associated with larger aperiodic exponents and more positive offsets than movement bouts, with dynamic shifts observed at behavioral transitions. Changes in aperiodic exponent were negatively associated with movement speed (R\u00b2=0.18-0.32, p<0.001 for all transitions), potentially reflecting cortical disinhibition during movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 present consistent findings across two rat subjects with appropriate statistical analyses (linear regression with confidence intervals and R\u00b2 values). The negative association with movement speed is well-documented. However, the mechanistic interpretation (C76 - cortical disinhibition) is appropriately qualified as speculative and supported only by citation, not direct measurement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "When applied to simulation challenge I data, specparam (analyzing static periodograms) detected only the alpha peak with 99% sensitivity and failed to detect any beta peaks, demonstrating the limitation of static spectral analysis for time-varying signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 provides a clear quantitative result demonstrating the limitation of static spectral parameterization. This serves as an important control showing that time-resolved methods are necessary for capturing transient spectral features. The result directly supports the motivation for SPRiNT.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "SPRiNT performs optimally with narrow-band oscillatory components and \u22642 simultaneous periodic components. Current limitations include: overestimation of peak bandwidths (related to 1 Hz frequency resolution), underestimation of number of peaks (65-75% detection probability per peak), difficulty detecting peaks <8 Hz or with amplitudes below threshold, and slightly degraded performance with aperiodic knees.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C92 provide an honest and thorough characterization of SPRiNT's limitations based on simulation studies. The limitations are quantified where possible and mechanistic explanations are provided (e.g., frequency resolution, masking by aperiodic component). This transparency about method limitations is appropriate and well-supported by the simulation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "SPRiNT's optional outlier peak removal procedure (requiring \u22653 similar peaks within 2.5 Hz and 3 s) reduced false detection rate by 50% with minimal impact on true detection rate (<5% reduction), though overly conservative thresholds would reduce sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 provide quantitative assessment of the outlier removal procedure's performance with specific metrics. The trade-off between specificity and sensitivity is appropriately acknowledged. The procedure is optional and its effects are well-characterized, allowing users to make informed decisions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Specparam detected lower alpha-peak amplitudes in older individuals during eyes-closed condition, but this effect could not be replicated with SPRiNT. This divergence may reflect differences in how the methods calculate average amplitude: specparam averages across all time windows while SPRiNT only includes time segments with detected alpha peaks, making SPRiNT sensitive to temporal instability of alpha activity observed in <10% of participants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C111 identify a discrepancy between methods and provide a plausible mechanistic explanation based on methodological differences. The explanation is logical and supported by observation of temporal instability in a subset of participants (Figure 4c). However, the speculation about low-amplitude peak detection (C106) is less certain. The overall interpretation is reasonable but acknowledges uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C82",
+      "C124",
+      "C125"
+    ],
+    "result": "SPRiNT demonstrates specific strengths compared to wavelet-specparam approaches, particularly in recovering aperiodic signal components. Wavelet-specparam underperformed and required substantial temporal smoothing (4 s Gaussian kernel) to achieve error levels similar to SPRiNT, yielding redundancy in spectral parameterization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C82, C124-C125 are well-supported by the comparative analyses in simulation studies. The quantitative differences in performance are documented (C38-C39), and the need for extensive smoothing in wavelet-specparam is demonstrated. This establishes SPRiNT's practical advantages over an alternative approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Baseline normalization methods for spectrograms are not immune to interpretation ambiguities when aperiodic background activity changes dynamically. Spectral parameterization with SPRiNT or specparam enables distinction between periodic and aperiodic changes, showing both are associated with age and behavior in the LEMON dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 identify a conceptual limitation of traditional approaches and demonstrate how spectral parameterization addresses it. The empirical support comes from the LEMON dataset analyses (C57-C72) showing distinct contributions of periodic and aperiodic components. The argument is logical and well-supported by the data presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Temporal variability of spectral parameters relates to demographic features, as demonstrated by SPRiNT's ability to predict age from temporal variability of eyes-open alpha-peak center frequency. This suggests temporal variability of neural spectral features may be neurophysiologically significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C115 present an interesting finding about temporal variability predicting age (C67-C69), supported by appropriate statistics. However, C115 is appropriately qualified as speculative. The result opens new research directions but the mechanistic significance remains to be established. The finding is novel and well-documented but requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C32"
+    ],
+    "result": "Current understanding establishes that neural dynamics comprise aperiodic (1/f) and periodic components representing distinct physiological mechanisms. While recent advances enable spectral parameterization, current methods yield static decompositions despite neural signals varying dynamically. Baseline normalization assumes stable aperiodic characteristics, an assumption challenged by recent evidence of temporal fluctuations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C10, C13-C17, C25-C28, C32 establish the scientific context and motivation for SPRiNT. These are well-supported by appropriate citations to established literature. The claims accurately represent current knowledge and identify a genuine gap (lack of time-resolved parameterization) that SPRiNT addresses. This provides strong justification for the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C93",
+      "C102",
+      "C119"
+    ],
+    "result": "Aperiodic parameters have established physiological interpretations: offset reflects neuronal population spiking, exponent relates to synaptic current integration and E/I balance (larger exponent indicates stronger inhibition). Aperiodic activity is ubiquitous in the brain and differentiates healthy aging, with potential as a marker for neuropsychiatric conditions and epilepsy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C24, C93, C102, C119 summarize established knowledge about aperiodic activity, appropriately supported by citations to relevant literature. These claims provide important context for interpreting SPRiNT results but represent prior knowledge rather than new findings. The citations appear appropriate and the characterizations are consistent with the cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C126"
+    ],
+    "result": "STFT offers computational efficiency but is less sophisticated than wavelet alternatives in trading off temporal specificity and frequency resolution. Combining specparam with STFT yields rapid extraction of spectral parameters. While spectral parameterization could supplement any time-frequency decomposition technique, reduced computational cost remains a practical benefit of STFT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C123, C126 provide appropriate context about the trade-offs in choosing STFT for SPRiNT. The characterization of STFT's advantages (computational efficiency) and limitations (fixed time-frequency resolution) is accurate and supported by citation to Cohen, 2014. The practical justification for the design choice is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "Sharp changes in aperiodic exponent and offset occur at transitions between eyes-open and eyes-closed conditions in the LEMON dataset, likely representing artefactual residuals of eye movements rather than genuine neural dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 identifies a potential artifact in the data and provides a reasonable interpretation. The observation is documented in Figure 4\u2014figure supplement 1, and the interpretation (eye movement artifacts) is plausible given the timing at behavioral transitions. The authors appropriately excluded these segments (2.5 s centered at transitions) from further analysis, demonstrating good experimental practice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "Changes in aperiodic exponent in rats during movement transitions could reflect either increased processing demands from additional spatial information entering entorhinal cortex or increased activity in cells encoding speed directly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C78 present speculative mechanistic interpretations of the rodent findings, appropriately qualified with 'could reflect' and supported by citations to relevant literature (Keene et al., 2016; Iwase et al., 2020). However, these are post-hoc interpretations without direct experimental evidence. The speculation is reasonable but the claims cannot be considered supported without additional experiments to test these specific mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "SPRiNT provides estimates of dynamic fluctuations in aperiodic and periodic neural activity related to meaningful demographic and behavioral outcomes. The method could contribute to improving tools for detecting oscillatory bursts, and future developments may include model selection approaches based on Bayesian information criterion for determining periodic component parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C130 summarize the demonstrated capabilities of SPRiNT (C129 is well-supported by empirical results) and suggest future directions (C127-C128, C130). The demonstrated capabilities are well-supported by the data. The future directions are appropriately speculative and represent reasonable extensions of the work. C127 and C128 are suggestions rather than claims requiring validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C29",
+      "C30",
+      "C31",
+      "C79",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Brain oscillations have been causally linked to behavior and cognition and shape sensory responses. Specparam sequentially fits aperiodic (exponent, offset) and periodic (Gaussian functions with center frequency, amplitude, SD) components to power spectra. Aperiodic background activity changes across various contexts and subject types, and strong theta activity may challenge aperiodic parameter estimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12, C29-C31, C79, C116-C118 provide background knowledge and methodological context, all appropriately supported by citations to relevant literature. These establish the scientific foundation and known limitations that inform the interpretation of SPRiNT results. The characterizations are accurate representations of cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "Increasing STFT window length augments spectral resolution and reduces intrinsic noise, although at the detriment of temporal specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 describes a fundamental trade-off in time-frequency analysis that is well-established in signal processing. This is general knowledge about STFT properties and represents an accurate characterization of the method's inherent limitations. The trade-off is relevant for understanding SPRiNT's parameter choices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C101"
+    ],
+    "result": "It remains unclear whether the effects of alpha-peak power and aperiodic exponent on behavioral condition (eyes-open vs eyes-closed) are independent or related.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C101 appropriately acknowledges a limitation in the interpretation of the LEMON dataset results. While both parameters predict behavioral condition, the manuscript does not establish whether they represent independent mechanisms or are interdependent. This honest acknowledgment of uncertainty is appropriate given the correlational nature of the analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C112"
+    ],
+    "result": "Beta-band power suppression during motor execution is due to sparser bursting activity rather than sustained decrease of beta-band activity, as shown in prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C112 cites prior work (Sherman et al., 2016) to provide context for interpreting the temporal instability of alpha activity observed in some participants. This is an appropriate use of prior literature to support interpretation of the current findings. The claim accurately represents cited work and draws a relevant parallel.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "The spectral knee frequency is expected to be a stable property within each individual and across a given recording, based on its relationship to intrinsic neuronal timescales and cortical microarchitecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 makes a reasonable inference based on the physiological interpretation of the knee parameter (C93, supported by Gao et al., 2020). If the knee reflects stable anatomical/physiological properties, temporal stability is a logical expectation. This inference is appropriately qualified and provides practical guidance for SPRiNT users regarding knee parameter estimation.",
+    "result_type": "MINOR"
+  }
+]

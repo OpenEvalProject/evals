@@ -1,0 +1,244 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C89"
+    ],
+    "result": "The study recruited 50 participants, excluded 4 due to technical issues or poor performance, and analyzed data from 46 participants (gratings condition) and 45 participants (control condition). Descriptive statistics show mean heart rate of 76 bpm, systole duration of 342 ms, overall accuracy of 82.7%, and mean touch duration of 1103 ms, with 94.5% of trials retained after quality control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological and descriptive claims (C14-C20, C81-C86, C89) are well-documented with appropriate sample sizes, clear exclusion criteria, and comprehensive descriptive statistics. The data quality metrics and participant characteristics are transparently reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Task difficulty significantly affected both performance accuracy and touch duration. Performance was similar for the first four difficulty levels but declined significantly for harder gratings. Touch duration increased with difficulty, and touches on gratings were significantly longer than on the flat control stimulus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C27 present consistent statistical evidence with appropriate tests (rmANOVA, post hoc comparisons), significant p-values, and large effect sizes (\u03b7p2 = 0.774 for performance, 0.358 for duration). The manipulation check confirms the task difficulty gradient was effective.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Circular analysis of touch timing across the cardiac cycle showed that in the gratings condition, touch initiation (151\u00b0), holding (202\u00b0), and ending (278\u00b0) did not differ significantly from uniform distribution. However, in the control condition, all three events showed significant or marginally significant coupling to the cardiac cycle (start: 101\u00b0, p=0.039; hold: 168\u00b0, p=0.010; end: 243\u00b0, p=0.046).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C37 report appropriate circular statistics (Rayleigh tests) with clear results. The finding that control movements couple to the cardiac cycle while discrimination task touches do not is statistically supported, though the interpretation requires consideration of the biphasic analysis that follows.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Analysis of touch timing by cardiac phase (systole vs. diastole) revealed that participants preferentially ended touches in diastole rather than systole in both conditions. The proportion of touches starting in systole did not differ from chance, but touches ending in systole were significantly below chance level (gratings: p=0.015; control: p=0.0007). This pattern did not vary with task difficulty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C46 present consistent statistical evidence from rmANOVA and t-tests showing preferential ending of touches in diastole. The effect is present in both conditions, suggesting it may reflect general motor-cardiac coupling rather than perceptual optimization specific to discrimination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Accuracy of tactile discrimination did not differ based on whether touches were initiated or ended during systole versus diastole, with no significant main effects or interactions involving cardiac phase (all p > 0.198).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 clearly demonstrate null effects with appropriate statistics. This finding is important as it shows that despite cardiac phase modulating touch duration, performance accuracy remained constant, suggesting compensatory mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C2",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Touch duration was significantly modulated by cardiac phase in the gratings condition: touches initiated in systole (1143 ms) were held 50 ms longer than those initiated in diastole (1093 ms), p=0.0004, r=0.582. This effect was absent in the control condition (systole: 708 ms vs. diastole: 717 ms, p=0.531).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C49-C52 present the core finding with appropriate non-parametric statistics (Wilcoxon signed-rank test) after checking normality. The effect size is moderate (r=0.582), and the specificity to the discrimination task (absent in control) strengthens the interpretation that this reflects perceptual compensation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The cardiac phase effect on touch duration was most pronounced in participants who varied their touch duration across difficulty levels. Significant three-way interaction between task difficulty, cardiac phase, and touch variability (p=0.002, \u03b7p2=0.088), and touch variability correlated positively with performance accuracy (r=0.387, p=0.008).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C56-C61 identify an important individual difference moderator through post-hoc covariate analysis. The three-way interaction and correlation with performance suggest that adaptive touch duration strategies are linked to both cardiac phase sensitivity and task success, though the effect size is modest (\u03b7p2=0.088).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C71"
+    ],
+    "result": "The cardiac interbeat interval (IBI) was significantly longer at touch initiation compared to preceding and following heartbeats in both conditions (gratings: p<0.0001; control: p<0.0001). This lengthening was driven entirely by extension of the diastole phase (p<0.0001), while systole duration remained constant (p>0.235), confirming cardiac deceleration during active sensing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C69, C71 demonstrate cardiac deceleration at touch onset through appropriate rmANOVA and post-hoc tests. The decomposition showing diastole-specific lengthening is methodologically sound and consistent with prior literature on cardiac responses to salient stimuli.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C54",
+      "C55"
+    ],
+    "result": "The authors conclude that participants actively compensate for reduced tactile sensitivity during systole by prolonging touch duration, and that this represents active adjustment of sensory acquisition to internal bodily cycles. This modulation was specific to the discrimination task requiring perceptual processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C54-C55 represent the main interpretation linking longer systole-initiated touches to compensatory behavior. This is well-supported by the data showing (1) phase-specific duration differences only during discrimination, (2) correlation with performance, and (3) consistency with prior findings of reduced systole sensitivity (C53).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "The authors speculate that lengthening of the diastole phase during active sensing might aid performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C70 is explicitly speculative. While diastole lengthening was observed (C68-C69), no direct evidence links this cardiac change to improved performance. The correlation between touch variability and accuracy (C59) suggests behavioral adaptation matters, but the cardiac mechanism remains undemonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C53"
+    ],
+    "result": "The manuscript cites established knowledge that perception and cognition are modulated by cardiac phase, with reduced perceptual sensitivity during systole compared to diastole due to baroreceptor signaling and attentional resource competition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C12, C53 accurately represent prior literature with appropriate citations. These background claims establish the theoretical framework for the study and are consistent with the cited sources on cardiac-phase effects on perception.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C13"
+    ],
+    "result": "The manuscript cites Gibson's distinction between active and passive touch, the role of proprioception and exteroception in active touch, and prior work by the authors showing coupling of saccades and visual fixations to cardiac phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C13 appropriately cite foundational concepts (Gibson 1962) and the authors' previous work. These provide context for extending cardiac-coupling findings from vision to touch.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The discussion cites established physiological mechanisms (baroreceptor function, baroreflex buffering, cardiac-induced muscle activity) and prior behavioral findings (rifle shooting performance, respiratory coupling effects) to contextualize the results within broader frameworks of physiological-behavioral coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C80 accurately represent cited literature on cardiovascular physiology and behavioral coupling. These provide appropriate mechanistic context for interpreting the findings, though they remain largely speculative regarding the specific mechanisms in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "The authors acknowledge that electrical systole (ECG) cannot be fully equated with mechanical systole but note they are closely tied under normal conditions, citing appropriate physiological literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 appropriately acknowledge a methodological limitation while justifying the approach with citations. This is a reasonable approximation given the non-invasive nature of the study and consistency with prior cardiac-phase research using ECG.",
+    "result_type": "MINOR"
+  }
+]

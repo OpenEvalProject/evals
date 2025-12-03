@@ -1,0 +1,245 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C97",
+      "C105",
+      "C106"
+    ],
+    "result": "Depletion of dCNBP in Drosophila muscles causes severe, age-dependent locomotor defects. Muscle-specific knockdown using various GAL4 drivers (Mef2, mhc, c179, how24B) resulted in reduced speed, distance traveled, climbing ability, and peristaltic waves. The phenotype was rescued by RNAi-resistant dCNBP or human CNBP, demonstrating specificity and evolutionary conservation. Neuronal knockdown had no effect on locomotion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C42-C57 provide convergent evidence from multiple experimental approaches (RNAi with different drivers, mutant alleles, rescue experiments) all demonstrating that muscle-specific dCNBP depletion causes locomotor defects. The rescue with both fly and human CNBP (C55-C57) confirms specificity. Quantitative data from multiple assays (speed, distance, climbing events, peristaltic waves) support the phenotype. The tissue-specificity (muscle but not neuronal effects, C42) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C7",
+      "C8"
+    ],
+    "result": "dCNBP depletion in Drosophila larvae significantly reduces both ODC protein levels and putrescine content. Western blot analysis showed reduced Odc protein in both RNAi-expressing and mutant larvae, while GC-MS measurements demonstrated corresponding decreases in putrescine, the direct product of ODC enzymatic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60, C7-C8 are well-supported by complementary biochemical evidence. Western blots (Figure 3A, Figure 3\u2014figure supplement 1) demonstrate reduced ODC protein, while GC-MS data (Figure 3B, Figure 3\u2014figure supplement 1) show corresponding decreases in putrescine. The consistency across both RNAi and genetic mutant approaches strengthens the conclusion that dCNBP regulates the ODC-polyamine axis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Genetic or pharmacological inhibition of dOdc phenocopies dCNBP depletion effects. RNAi knockdown of dOdc1 and/or dOdc2, dOdc1 mutants, and DFMO treatment all caused locomotor defects and reduced putrescine levels similar to dCNBP depletion. The non-additive effect of double knockdown suggests compensatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C68 demonstrate that ODC loss-of-function produces phenotypes similar to CNBP depletion through multiple independent approaches (RNAi for two Odc genes, genetic mutant, pharmacological inhibition). The data in Figures 4A-C support locomotor defects, while Figure 4\u2014figure supplement 1 shows putrescine reduction. The interpretation of compensatory mechanisms (C65) for the non-additive effect is reasonable and appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C9"
+    ],
+    "result": "The CNBP-polyamine axis is reduced in muscle biopsies from DM2 patients. Western blot analysis showed decreased levels of both CNBP and ODC proteins, while GC-MS measurements revealed significantly reduced putrescine content in DM2 patient samples compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69-C71 present important translational findings supported by data in Figure 5A-B. However, the small sample size (n=3-4 patients) and lack of statistical details for the western blots limit confidence. The authors acknowledge in the Discussion that larger studies are needed. The inference that polyamine synthesis is downregulated (C71) is reasonable but requires validation. The mechanism of CNBP downregulation remains unexplored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "CNBP levels are not altered in a transgenic fly model expressing CCUG-repeat expansions that recapitulates RNA toxicity features of DM2. This suggests that CNBP downregulation in DM2 patients is not due to toxic RNA accumulation but rather a different mechanism related to the intronic alteration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72-C73 present an important negative result (Figure 5\u2014figure supplement 1) that helps distinguish mechanisms. However, the inference in C73 is speculative. The fly model may not fully recapitulate all aspects of human DM2 pathology. Alternative explanations (e.g., differences in RNA processing, protein stability mechanisms between flies and humans) are not adequately addressed. The conclusion requires additional mechanistic investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "dCNBP does not regulate dOdc through transcriptional control or IRES-mediated translation. dOdc mRNA levels remain unchanged upon dCNBP depletion, and dCNBP does not activate a dOdc1 IRES reporter in mammalian cells, though it does activate human ODC IRES.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 are supported by qPCR data (Figure 6A) showing no change in dOdc mRNA levels and luciferase assays (Figure 6\u2014figure supplement 1) demonstrating lack of IRES activity for fly Odc but presence for human ODC. This effectively rules out two potential mechanisms and narrows the focus to post-transcriptional regulation. The differential IRES activity between fly and human ODC is an important species-specific difference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "dCNBP directly binds dOdc mRNA and regulates its translation by acting on the coding region. RIP assays demonstrate CNBP-Odc mRNA interaction in both S2 cells and larval muscles. Transfection experiments with dOdc1 CDS lacking UTRs show that CNBP depletion reduces Odc protein without affecting mRNA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 are well-supported by RIP data (Figure 6B) showing direct binding and by heterologous expression experiments (Figure 6\u2014figure supplement 4) demonstrating that CNBP regulates Odc protein levels independently of UTRs. The specificity is confirmed by loss of binding in CNBP-depleted samples. The inference that CNBP acts on the coding region (C82) is reasonable given the UTR-independent effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "dCNBP is required for dOdc mRNA loading into polysomes and active translation. Polysome profiling shows that dOdc mRNA is present in polysome fractions in control cells but shifts to non-translating fractions (60-40S and free mRNA) upon dCNBP depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 are strongly supported by polysome profiling data (Figure 6C-D) showing redistribution of dOdc mRNA from polysomes to non-translating fractions upon CNBP depletion. This provides direct mechanistic evidence that CNBP promotes translational elongation. The co-localization of CNBP with polysomes (cited from prior work) supports the model. The conclusion that CNBP is required for active translation is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C12",
+      "C13",
+      "C100"
+    ],
+    "result": "Restoration of polyamine metabolism rescues dCNBP-deficient locomotor phenotypes. Both putrescine supplementation and dOdc1 overexpression substantially recover locomotor defects in dCNBP-depleted or mutant larvae. The rescue by dOdc1 occurs despite continued low CNBP levels, confirming that ODC/polyamine defects are responsible for the phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93, C12-C13, C100 provide strong rescue evidence from multiple approaches (dietary supplementation, genetic overexpression) shown in Figures 7A-C. The control showing low CNBP levels in rescued flies (C92, Figure 7\u2014figure supplement 2) is critical for demonstrating that rescue is specifically due to ODC restoration, not GAL4 dilution. This establishes a causal link between the CNBP-ODC-polyamine axis and locomotor function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C119"
+    ],
+    "result": "Polyamine supplementation does not rescue locomotor defects in a Drosophila model of Duchenne muscular dystrophy (dystrophin mutants), indicating that polyamine metabolism restoration is specifically required for alleviating CNBP loss-of-function defects, not general muscle dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95, C119 provide an important specificity control (Figure 7D) demonstrating that polyamine supplementation does not rescue all muscle dysfunction phenotypes. This strengthens the conclusion that the CNBP-polyamine mechanism is specifically linked to CNBP-dependent muscle function rather than being a general muscle health factor. The experiment is well-designed to test specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C14",
+      "C57",
+      "C117",
+      "C118"
+    ],
+    "result": "The dCNBP function in regulating polyamine metabolism through ODC translation is evolutionarily conserved from Drosophila to vertebrates/humans. Human CNBP rescues fly locomotor defects, and the mechanism of translational elongation regulation appears conserved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C57, C117-C118 are supported by the rescue of fly phenotypes with human CNBP (Figure 2A) and by comparison with published mammalian studies. The conservation is further supported by the presence of G-rich CNBP binding motifs in fly Odc mRNA (Figure 6\u2014figure supplement 2) similar to those in mammalian ODC. However, the IRES-mediated mechanism differs between species (C76-C78), indicating both conserved and divergent regulatory features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C126"
+    ],
+    "result": "dCNBP-depleted adult flies show accelerated age-dependent decline in climbing ability. At 15 days post-eclosion, dCNBP-depleted flies perform significantly fewer climbing events than age-matched controls, suggesting that dCNBP depletion accelerates aging-dependent locomotor decline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C99, C126 present aging data (Figure 7\u2014figure supplement 3) showing faster decline in dCNBP-depleted flies. However, C98-C99 are explicitly labeled as speculation in the source text. The authors acknowledge that developmental defects or heterogeneous backgrounds cannot be excluded as alternative explanations. The correlation with polyamine decline during aging (C96, C99) is suggestive but not directly tested. Additional experiments would be needed to establish causality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "Morphological analysis of muscle tissues shows no significant changes upon CNBP knockdown in Drosophila, contrasting with muscle atrophy observed in homozygous CNBP knockout mice. This discrepancy may reflect differences between constitutive whole-body deletion versus tissue-specific knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 are supported by confocal imaging data (Figure 7\u2014figure supplement 4) showing normal muscle morphology and sarcomeric organization. The interpretation (C108) that tissue-specific versus whole-body deletion explains the difference is reasonable speculation. However, the authors also note that early lethality of mutants may preclude development of morphological changes. This is an important negative result that helps define the phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C116"
+    ],
+    "result": "CNBP has a dual mode of regulation of ODC translation in mammals, operating at both internal initiation (IRES-mediated) and elongation (through G-rich site resolution) levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C116 synthesizes findings from the current study with prior literature (Benhalevy et al., 2017; Pyronnet et al., 2000; Gerbasi and Link, 2007). The inference is well-supported by the demonstration that human ODC has both IRES activity responsive to CNBP (C77) and G-rich motifs in its coding sequence. This represents an important mechanistic insight into the complexity of CNBP-mediated ODC regulation in mammals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C122",
+      "C128"
+    ],
+    "result": "CNBP may act as a disease modifier in DM2 by causing differential distribution of polyamine content among muscle groups, potentially explaining clinical heterogeneity. Polyamines may be involved in aging-dependent manifestations of DM2 disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C122 and C128 are explicitly speculative in the source text. While the hypothesis is plausible given the data on polyamine reduction in DM2 patients (C69-C71) and the correlation with aging (C125-C127), these remain untested hypotheses. The comparison with LAMA2-CMD (C120-C121) provides supporting context but not direct evidence. These represent important directions for future research but are not established results.",
+    "result_type": "MINOR"
+  }
+]

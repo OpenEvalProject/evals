@@ -1,0 +1,290 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "TurboID was identified as the most effective biotin ligase for zebrafish embryos among BASU, TurboID, and miniTurbo, with TurboID showing the strongest biotinylation at 500 \u03bcM biotin. BirA* and BioID2 failed to produce detectable biotinylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 collectively demonstrate that TurboID outperforms other biotin ligases tested in zebrafish. The experimental data (C1, C3, C4) is supported by western blots and comparisons, while literature citations (C2, C5) provide context for the improved catalytic efficiency of newer ligases and known stability issues with miniTurbo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "TurboID activity in zebrafish embryos is biotin concentration-dependent, with optimal labeling at 500-750 \u03bcM biotin. Unlike in cultured cells, TurboID requires exogenous biotin addition and shows increased protein stability at higher biotin concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C11 are well-supported by experimental data showing dose-response relationships and controls. The observations about endogenous biotinylated proteins (C6, C11), biotin tolerance (C7), optimal concentrations (C8), and the unexpected stabilization effect (C10) are all backed by western blot data and appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "TurboID-catalyzed biotinylation in zebrafish requires significantly longer incubation times (18 hours) compared to mammalian cell culture (10 minutes), with weak labeling detected only after 4-6 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 establish a clear temporal requirement for TurboID activity in zebrafish that differs substantially from cell culture systems. The comparison to published literature (C12) and time-course experimental data (C13, C14) provide strong support for this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "TurboID demonstrates high spatial resolution when targeted to specific subcellular compartments or proteins in zebrafish, producing unique biotinylation patterns corresponding to subcellular localization, including fine structures like T-tubules. Biotinylated proteins are recoverable by streptavidin affinity purification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19 collectively demonstrate the spatial specificity and utility of TurboID in zebrafish. The immunostaining data (C15, C16), western blot patterns (C17), and successful protein recovery (C19) provide strong experimental support. The remarkable resolution of T-tubule structures (C16) is particularly compelling evidence of spatial precision.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "A conditionally stabilized GFP-binding nanobody (dGBP) successfully targets proteins to GFP-tagged proteins of interest in zebrafish muscle cells, showing tight association regardless of expression level, unlike the standard GBP which shows cytoplasmic localization at high expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24 establish the superiority of dGBP over standard GBP for targeting applications. The prior work with APEX2 (C20), experimental observations of GBP saturation (C21, C22), and the solution using dGBP (C23, C24) are all well-supported by imaging data and appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The TurboID-dGBP system produces tissue-specific and subcellular-specific biotinylation in zebrafish when crossed with GFP-expressing lines, with specificity maintained even at high TurboID-dGBP expression levels and appropriate negative controls showing no labeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 demonstrate the specificity and versatility of the BLITZ system. The tissue-specific labeling in different cell types (C25, C26), subcellular resolution (C27), proper controls (C28), and maintained specificity at varying expression levels (C29) are all supported by immunostaining and imaging data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Background biotinylation occurs in embryos expressing only TurboID-dGBP without GFP target, likely due to TurboID-dGBP en route to proteasomal degradation, with MS analysis identifying these background proteins as endogenous biotinylated proteins, nuclear proteins, cytoskeletal proteins, and yolk proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 identify and characterize a limitation of the system. The observation of weak background labeling (C30), mechanistic explanation (C31), and MS characterization (C32) provide a complete picture of this background signal and its sources, which is important for proper interpretation of results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "BLITZ successfully identified cavin-associated proteins in zebrafish skeletal muscle, detecting 26, 22, and 25 proteins for Cavin1a, Cavin4a, and Cavin4b respectively, including known interactors like Cavin4b, Dystrophin, and Pacsin3, with high specificity as demonstrated by absence in controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C39 demonstrate successful application of BLITZ to identify protein interactors. The MS data (C34, C35), detection of known interactors (C33, C37, C38), consistent detection of endogenous cavins (C36), and absence in controls (C39) provide strong validation of the method's accuracy and utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "Caveolin1 and Caveolin were detected in the Cavin1a sample based on high-confidence peptides not present in controls, but did not meet the 1% global FDR threshold, possibly due to poor accessibility from membrane burial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C40-C41 describe a borderline result where peptides were detected but did not meet statistical significance thresholds. While the mechanistic explanation for poor detection (C41) is reasonable and cited, the failure to meet FDR cutoffs means this cannot be considered a definitive identification, making the result uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "BLITZ offers methodological advantages over conventional BioID by requiring only simple genetic crosses with existing GFP-tagged lines, enabling tissue-specific studies through conditional stabilization of TurboID-dGBP, and avoiding non-specific labeling in non-target tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 describe the practical advantages of the BLITZ system. These are well-supported by the experimental design, the demonstrated tissue specificity (shown in earlier claims), and the logical consequences of using conditionally stabilized dGBP. The claims are based on both demonstrated capabilities and sound reasoning about the system's design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "BLITZ has potential applications with knock-in fish lines expressing endogenous GFP-tagged proteins, in tissue culture systems, and in other organisms, which would enable proteomic studies of endogenous proteins not achievable with conventional BioID.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C46-C48 are speculative about future applications that have not been experimentally demonstrated in this work. While the reasoning is sound and the potential is plausible based on the demonstrated capabilities, these remain hypothetical applications requiring future validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The indirect binding of TurboID to POI through dGBP-GFP interaction could potentially increase labeling radius and include non-interacting neighbors, though prior work with APEX2 suggests labeling remains within 25 nm. The binding could also perturb POI localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49-C51 discuss potential limitations of the system. While C50 provides some reassurance from prior work with APEX2, the concerns about increased labeling radius (C49) and perturbation of localization (C51) are speculative. The authors acknowledge these as caveats but do not provide direct experimental evidence addressing them in the current system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "BLITZ shares limitations common to BioID methods, including difficulty identifying endogenously biotinylated proteins and potential detection of non-interacting proximal proteins, necessitating validation with independent approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 accurately describe known limitations of biotin-based proximity labeling methods. These are well-established in the field and represent general knowledge about BioID approaches. The recommendation for validation (C54) is a standard best practice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Cavin family proteins are caveolar coat components with Cavin1 being ubiquitous and essential, while Cavin2-4 show restricted tissue distributions. In zebrafish, Cavin1 and Cavin4 are duplicated, with distinct expression patterns where Cavin1a, 4a, and 4b are highly expressed in skeletal muscle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 provide background information about cavin proteins that is well-supported by established literature and citations. This contextualizes the choice of cavins as targets for demonstrating BLITZ capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Cavin proteomes identified by BLITZ were enriched for muscle factors and plasma membrane proteins, including known caveola-associated proteins, but also contained nuclear proteins. Literature supports that cavins can be released from membranes and bind intracellular targets, and Cavin4 localizes to the nucleus in Cavin1 knockout muscle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 describe the composition of identified cavin proteomes and provide biological context. The MS data (C60-C62) is supported by the experimental results, while the literature citations (C63-C64) provide plausible explanations for the unexpected nuclear protein enrichment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Loss of Cavin1 causes lipodystrophy and muscular dystrophy with hypertrophied muscle fibers in humans and animals. Cavin4 mutations are associated with dilated cardiomyopathy and Cavin4 recruits ERK in cardiomyocytes, supporting roles for Cavin1 and Cavin4 in regulating hypertrophy in skeletal muscle and cardiomyocytes respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 provide disease context for cavin proteins based on established literature. The citations support the clinical phenotypes and molecular mechanisms described, providing biological significance for the identified protein interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The cavin proteome showed enrichment of protein kinases including CaMKII, which regulates Ca2+ signaling and cardiac hypertrophy through ERK signaling, and can be activated by exercise in skeletal muscle in proportion to exercise intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 identify CaMKII in the cavin proteome (C70, supported by MS data) and provide biological context through literature citations (C71-C72) that connect CaMKII to hypertrophy regulation, supporting the biological relevance of the identified interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "BLITZ identified putative cavin interactors involved in cardiomyopathies and skeletal myopathies including Dystrophin, Bin1, Cypher/ZASP, and SPEG. Given that Cavin4b ablation causes aberrant T-tubules, Cavin4 may be involved in T-tubule formation through interaction with triad-associated proteins like Bin1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 are well-supported by MS data and literature citations establishing disease relevance of identified proteins. Claim C75 is speculative but represents a reasonable hypothesis based on the identified interactions and known Cavin4b function, appropriately presented as a possibility rather than a conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The BLITZ system enables in vivo identification of protein interactors with cell- and tissue-specificity and high precision, demonstrated in diverse cell types including neurons, vascular endothelial cells, and skeletal muscle. BLITZ provides a versatile tool for proteomic discovery in zebrafish with potential for application in other challenging in vivo contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 summarize the demonstrated capabilities of BLITZ, well-supported by the collective experimental evidence throughout the manuscript. Claim C79 about potential applications in other contexts is somewhat speculative but reasonable given the demonstrated versatility. Overall, the claims appropriately summarize the work's achievements.",
+    "result_type": "MAJOR"
+  }
+]

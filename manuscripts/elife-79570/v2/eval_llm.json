@@ -1,0 +1,532 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The ubiquitin-proteasome system (UPS) is the primary protein degradation pathway in eukaryotes, regulating protein homeostasis and numerous cellular processes through ubiquitin-mediated targeting of proteins to the proteasome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 establish foundational knowledge about the UPS based on well-established prior literature. These claims are appropriately cited and represent consensus understanding in the field, providing necessary background context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Variation in UPS activity influences cellular and organismal phenotypes, with physiological changes in UPS activity enabling cellular responses to environmental conditions and age-related declines compromising protein homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 summarize established knowledge about UPS activity variation and its phenotypic consequences, supported by appropriate citations to prior literature. These provide important context for understanding why genetic variation in UPS activity matters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Rare mutations in UPS genes cause human diseases including Johanson-Blizzard Syndrome and proteasome-associated autoinflammatory syndrome, with missense mutations showing a continuum of effects, and GWAS studies linking UPS gene variation to various disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 accurately cite prior literature establishing genetic variation in UPS genes as causes of human disease. The citations appropriately support the claims about specific mutations and their phenotypic effects, providing motivation for studying natural variation in UPS activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Most traits are genetically complex with many small-effect loci, UPS activity can differentially affect distinct substrates, many genetic effects influence protein but not mRNA levels, and powerful genetic mapping requires large populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 establish key conceptual frameworks from prior literature that motivate the study design. The citations appropriately support these general principles about complex traits, substrate-specific effects, and post-transcriptional regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C26",
+      "C27"
+    ],
+    "result": "The N-end rule pathway recognizes N-terminal degrons in thousands of proteins through two distinct targeting systems, and tandem fluorescent timers (TFTs) provide expression-independent measurements of degradation rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 and C26-C27 establish the biological system and measurement approach. The N-end rule pathway is well-characterized (appropriately cited), and the TFT properties are supported by prior literature. Figure 1A provides visual confirmation of the two pathways.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "Deletion of pathway-specific E3 ligases (UBR1, DOA10) specifically stabilized reporters from their respective pathways, while deletion of RPN4 stabilized reporters from both pathways, validating the TFT system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 are supported by experimental data in Figures 1B-D with appropriate statistical testing (corrected p < 0.05). The pathway-specific effects of UBR1 and DOA10 deletions and the general effect of RPN4 deletion validate that the TFT reporters measure UPS activity as intended.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The BY and RM yeast strains show heritable, substrate-specific differences in UPS activity, with RM having higher activity for most N-degrons but BY showing higher activity for some Type 2 Arg/N-degrons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 are supported by experimental data in Figure 1D with appropriate statistical testing (corrected p < 0.05 or p > 0.05). The substrate-specific differences between strains establish that natural genetic variation affects UPS activity, motivating the QTL mapping experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "QTL mapping identified 149 loci influencing UPS activity at 0.5% FDR, with 1-15 QTLs per reporter (median 7), most having small effects (only 3% with allele frequency difference >0.5), establishing UPS activity as a complex, polygenic trait.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 are supported by the QTL mapping data in Figure 2 and described methods. The empirical FDR estimation using null sorts is rigorous, replication in two biological replicates strengthens confidence, and the distribution of effect sizes is clearly documented. This is a major finding of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "The RM allele was associated with higher UPS activity in 60% of QTLs (binomial test p=0.021), and the Ac/N-end pathway was affected by significantly more QTLs per reporter than the Arg/N-end pathway (9 vs 7, Wilcoxon p=0.021).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 are supported by appropriate statistical tests on the QTL data shown in Figure 2C. The binomial test for directional bias and Wilcoxon test for pathway differences are appropriate analyses. These patterns reveal systematic differences in genetic architecture between pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The 149 QTLs map to 35 distinct genomic regions, with 66% affecting only one pathway (Arg/N-end or Ac/N-end) and some affecting only individual N-degrons, revealing pathway- and substrate-specific genetic effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 are supported by the QTL overlap analysis with clearly defined criteria (100 kb proximity, same direction). The high proportion of pathway-specific QTLs (66%) is a key finding demonstrating the complexity of genetic effects on UPS activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "UBR1 is a causal gene for the chromosome VII QTL, with the RM allele decreasing Type 1 Arg/N-degron degradation but increasing Type 2 Arg/N-degron degradation, demonstrating substrate-specific effects within a single gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are supported by CRISPR-swap allelic engineering experiments shown in Figure 3B-C with appropriate statistical testing (corrected p < 0.05). The opposite effects on Type 1 vs Type 2 substrates are clearly demonstrated and represent a major finding about substrate specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Fine-mapping of UBR1 revealed multiple causal variants: the RM ORF affects Type 1 Asn degradation, while both the RM promoter and ORF independently increase Type 2 degradation, establishing that single genes can harbor multiple causal variants with substrate-specific effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C54 are supported by systematic testing of UBR1 gene regions (Figure 3C, Figure 3\u2014figure supplement 1) with appropriate statistics. The identification of independent causal variants in the promoter and ORF with different substrate specificities is a key finding about QTL complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The \u2013469A>T variant in the UBR1 promoter is the causal nucleotide affecting Type 2 Arg/N-degron degradation, as demonstrated by testing individual promoter variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 are supported by experimental testing of individual variants (Figure 3E, Figure 3\u2014figure supplement 2) with appropriate statistics. The identification of \u2013469A>T as causal while \u2013197T>G has no effect demonstrates successful fine-mapping to single nucleotide resolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The BY allele at \u2013469A>T disrupts a predicted Hap5 binding site, decreased reporter output in prior studies, is derived and rare (1% frequency), occurs in a conserved poly(T) motif, and decreases UPS activity by reducing UBR1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 integrate computational prediction, prior experimental data (appropriately cited), evolutionary analysis, population genomics, and the study's own expression data (Figure 5). The convergent evidence from multiple approaches strongly supports the mechanism of this causal variant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "The derived, low-frequency BY allele at \u2013469A>T may negatively impact fitness based on its population properties and the generally deleterious effects of reduced UBR1 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C63 is speculative inference based on population frequency and prior literature about UBR1 function. While the reasoning is plausible, no direct fitness measurements are provided. The claim appropriately uses cautious language ('suggests', 'may') but remains unvalidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "NTA1, encoding an amidase that processes Asn/Gln N-termini into functional N-degrons, is a causal gene for the chromosome X QTL specific to the Asn N-degron, with the RM allele increasing degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 are supported by QTL mapping (Figure 2B), established knowledge about NTA1 function (appropriately cited), and allelic engineering experiments (Figure 4C, Figure 4\u2014figure supplement 1) with appropriate statistics. The substrate specificity (Asn only) matches NTA1's known function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Fine-mapping NTA1 revealed two missense variants (D111E and E129G) with opposing effects on Asn degradation, with E129G having a threefold larger effect that masked D111E during initial QTL mapping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 are supported by systematic testing of NTA1 variants (Figure 4C, Figure 4\u2014figure supplement 1) with appropriate statistics. The opposing effects and masking phenomenon demonstrate the complexity of multiple causal variants within a single gene and highlight the importance of testing variants in isolation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "DOA10, the Ac/N-end pathway E3 ligase, is a causal gene for the chromosome IX QTL, with three missense variants (Q410E, K1012N, Y1186F) all affecting Gly degradation but only Y1186F affecting Thr degradation, demonstrating substrate-specific effects of individual variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 are supported by allelic engineering and variant testing (Figure 4G, Figure 4\u2014figure supplement 2) with appropriate statistics. The substrate-specific effects of individual missense variants within DOA10 further establish the complexity of genetic effects on UPS activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "UBC6, the E2 ubiquitin-conjugating enzyme that pairs with Doa10, is a causal gene for the chromosome V QTL, with the D229G missense variant and RM terminator showing substrate-specific effects, establishing that genetic variation affects substrate ubiquitination as well as recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C83 are supported by allelic engineering and variant testing (Figure 4K, Figure 4\u2014figure supplement 3) with appropriate statistics. The identification of causal variants in UBC6 extends the findings beyond E3 ligases to E2 enzymes, demonstrating broader genetic effects on the ubiquitination machinery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Causal missense variants in NTA1, DOA10, and UBC6 encode amino acids located distally from active sites, on protein surfaces or near transmembrane helices, rather than in catalytic regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 are supported by structural analysis using AlphaFold predictions (Figure 4D/H/L). The observation that causal variants are not in active sites is important for understanding the molecular basis of their effects, though the functional implications remain somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "The molecular basis for variant effects on UPS activity may involve subtle alterations to protein stability, localization, or physical interactions rather than direct effects on catalytic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C87 is speculative inference based on the structural locations of causal variants. While plausible and supported by one citation, no direct experimental evidence for these mechanisms is provided. The claim appropriately uses cautious language ('may involve') but remains a hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "The BY alleles of DOA10 Y1186F and UBC6 D229G are derived, rare (5.1% and 2.2% frequency), found in few clades, and may be subject to purifying selection given the deleterious effects of reduced UPS activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C88 is supported by population genomic analysis (Figure 4\u2014figure supplement 4), but C89's inference about purifying selection is speculative. While the reasoning is plausible based on cited literature about UPS function, no direct selection analysis is provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "The RM allele of NTA1 E129G is derived, common (51.5% frequency), found in most clades, and may have risen to high frequency because NTA1 deletion does not reduce fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C90 is supported by population genomic analysis (Figure 4\u2014figure supplement 4), but C91's explanation for high frequency is speculative. The cited evidence that NTA1 deletion doesn't affect fitness supports the hypothesis but doesn't directly test the evolutionary trajectory of E129G.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The most frequent QTL on chromosome XII likely involves HAP1 (with a Ty1 insertion affecting 3,755 genes), and a chromosome XIV QTL likely involves MKT1 (an RNA binding protein), suggesting genetic variation can affect UPS activity through indirect effects on genes without direct UPS connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C95 are supported by QTL mapping and appropriate citations about HAP1 and MKT1 functions. However, C96-C97's identification of these as 'likely causal genes' is inference without experimental validation. The pleiotropic nature of these genes makes them reasonable candidates but they remain unconfirmed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "Each fine-mapped causal gene (UBR1, NTA1, DOA10, UBC6) harbored multiple causal variants affecting substrate processing, recognition, and ubiquitination, with substrate-specific effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 accurately summarize the fine-mapping results from the four genes. The experimental evidence from Figures 3-4 clearly demonstrates multiple causal variants per gene affecting different steps in the ubiquitination process with substrate specificity. This is a major synthetic conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The BY allele at \u2013469A>T decreased UBR1 protein and RNA levels, and 39 of 3,046 proteins were differentially abundant at 10% FDR, with 71% increased by the BY allele (consistent with reduced UPS activity), showing modest effect sizes (median log2FC = 0.37 for significant proteins).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 are supported by proteomics data (Figure 5A) with appropriate statistical analysis (10% FDR, binomial test p=9.5e-3). The directional bias toward protein increases with the low-activity BY allele is consistent with reduced degradation. The modest effect sizes are clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "No GO or Reactome pathways were enriched among differentially abundant proteins, consistent with sequence features rather than biological function determining E3 ligase substrate targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C104 is supported by the enrichment analysis results, and C105 appropriately cites prior literature supporting this interpretation. The lack of functional enrichment is an important negative result that aligns with current understanding of E3 ligase substrate recognition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "78 transcripts were differentially expressed at 10% FDR, but only three genes (UBR1, HSP26, TMA10) showed concordant changes at RNA and protein levels, with overall low correlation (Pearson r=0.064, p=7.2e-4) between protein and mRNA fold changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 are supported by RNA-seq data (Figure 5B-C) with appropriate statistical analysis. The low correlation between protein and mRNA changes is a key finding demonstrating post-transcriptional effects. The statistical significance despite low correlation is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The BY allele decreased mRNA abundance at 86% of differentially expressed genes (binomial test p=2e-6, median log2FC = -0.20), with enrichment of proteostasis-related GO pathways driven by decreased expression of UBR1 and chaperone genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 are supported by RNA-seq data (Figure 5B, Figure 5\u2014figure supplement 1) with appropriate statistical analysis. The directional bias and pathway enrichment are clearly documented. The opposite direction of mRNA vs protein changes is an important observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "A non-coding variant decreasing E3 ligase expression increases dozens of protein levels without affecting transcript abundance, implicating genetic effects on UPS activity as a prominent source of post-translational variation in gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 synthesize the transcriptome and proteome results. The data clearly show 36 proteins (claim C25 states 36, though C101 states 39 total with 28 increased) changed without corresponding mRNA changes. This is a major conclusion about post-transcriptional gene regulation, though the claim of 'dozens' is somewhat imprecise.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Individual genetic differences create heritable variation in UPS protein degradation with a complex, polygenic architecture of many small-effect and few large-effect loci, with known disease-causing mutations representing one extreme of a continuous distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C116 are major conclusions supported by the QTL mapping results (Figure 2) showing 149 loci with predominantly small effects. The comparison to other complex traits is appropriately cited, and the integration with prior disease genetics provides important context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C117"
+    ],
+    "result": "Common, small-effect alleles may contribute to disease risk through effects on UPS activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C117 is speculative extrapolation from the study's findings to human disease. While the reasoning is plausible given the study's demonstration of many small-effect variants, no direct evidence linking these variants to disease is provided. The claim appropriately uses cautious language ('may contribute').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C118",
+      "C119"
+    ],
+    "result": "Ubiquitin system activity toward distinct substrates is highly variable even within pathways, and causal variants showed highly substrate-specific effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C118 is supported by appropriate citations to prior literature, and C119 is supported by the fine-mapping results (Figures 3-4) showing substrate-specific effects of variants in UBR1, NTA1, DOA10, and UBC6. This synthesis connects prior knowledge with current findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C120",
+      "C121"
+    ],
+    "result": "Each of four fine-mapped QTL regions contained multiple causal variants in a single gene, with the NTA1 D111E variant masked by the larger effect of E129G, highlighting the need to test variants in isolation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C121 are supported by the fine-mapping results (Figures 3-4) and appropriately cite similar recent findings. The masking phenomenon at NTA1 (Figure 4C) is clearly demonstrated and represents an important methodological insight about QTL fine-mapping.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "Protein sequence critically determines degradation response to UPS activity changes, requiring testing variant effects on multiple substrates with diverse sequences for complete understanding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C122 is supported by appropriate citation to prior literature, and C123 is a reasonable inference from the study's demonstration of substrate-specific effects. This represents an important conclusion about the complexity of studying UPS genetic variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Ubr1 and Doa10 target distinct protein sets, and similar effects from variation in ~100 yeast E3 ligases (or ~600 human E3 ligases) may explain protein-specific gene expression QTLs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C124 is supported by appropriate citations. Claims C125-C126 about E3 ligase numbers are appropriately cited. However, the extrapolation that variation in these genes 'may help explain' protein-specific QTLs is speculative, though plausible given the study's findings for UBR1 and DOA10.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C127"
+    ],
+    "result": "The study developed a generalizable framework for mapping genetic influences on protein degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C127 is supported by the comprehensive methodological approach combining TFT reporters, bulk segregant analysis, CRISPR-swap fine-mapping, and multi-omics analysis. The framework is indeed generalizable to other degradation pathways and organisms, representing a significant methodological contribution.",
+    "result_type": "MAJOR"
+  }
+]

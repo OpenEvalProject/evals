@@ -1,0 +1,236 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "A prostate cancer-specific Boolean model was constructed by extending a generic cancer model with prostate-specific genes and pathways, resulting in a network with 133 nodes and 449 edges that includes major signaling pathways relevant to prostate cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19 and C59-C63 describe the model construction process using established methods (Fumi\u00e3 and Martins model, ROMA, OmniPath) and provide specific quantitative details (133 nodes, 449 edges, 9 inputs, 6 outputs). The model structure is documented and deposited in public databases (C70-C71), and the construction methodology is well-described with appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The wild-type Boolean model recapitulates expected behaviors of healthy prostate cells, including quiescence in the absence of inputs, proliferation upon growth factor stimulation, and apoptosis triggered by cell death factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C26 describe simulation results that validate the model's ability to reproduce known biological behaviors. These are supported by Figure 3 and citations to literature supporting the biological logic (e.g., invasion activated by \u03b2-catenin, migration by AKT/AR). The model validation demonstrates appropriate physiological responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C27",
+      "C28",
+      "C64",
+      "C65"
+    ],
+    "result": "488 patient-specific Boolean models were constructed from TCGA data using the PROFILE personalization method, incorporating mutations, copy number alterations, and RNA expression data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C27-C28, C64-C65 consistently describe the use of 488 TCGA samples (489 initially, 488 with complete data) and the personalization methodology. The data sources are clearly documented and the PROFILE method is cited (B\u00e9al et al., 2019), providing methodological support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Personalized TCGA patient models show that proliferation scores increase with Gleason grade (p=0.00207), while DNA_repair phenotype separates low and high grades, though apoptosis shows no clear trend despite significant differences (p=2.83E-6).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 present statistical analyses with specific p-values from Kruskal-Wallis tests and are supported by Figure 4. The proliferation trend is clear and statistically significant, while the apoptosis result appropriately notes statistical significance without a clear biological trend. The DNA_repair observation is supported by citation (Marshall et al., 2019).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Analysis of 488 TCGA patient models identified MYC_MAX and SPOP as intervention targets in >80% of patients, while other targets like MXI1 were patient-specific (only 1% of patients).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 provide specific quantitative findings from the mutant analysis across all patient models. The results demonstrate both common and patient-specific therapeutic targets, which is biologically plausible and supported by the computational analysis described in the methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Eight prostate cell line models were built from GDSC data, with detailed analysis of the LNCaP model identifying 29 nodes as top intervention targets from 32,258 mutant simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C36-C40 describe the cell line modeling approach with specific numbers (8 cell lines, 32,258 mutants, 29 target nodes). The LNCaP characterization is supported by citation (Horoszewicz et al., 1983), and the computational analysis is thoroughly documented in supplementary materials.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "LNCaP model simulations identified HSPs and MYC_MAX as strong proliferation inhibitors, with synergistic effects observed for ERK+MYC_MAX and HSPs+PI3K combinations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 describe simulation results supported by Figure 5 showing dose-response curves and Bliss Independence synergy scores. The methodology for gradual inhibition (PROFILE_v2) is described, and the synergy analysis uses established metrics (Bliss Independence with CI<1 indicating synergy).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "LNCaP cells show enhanced sensitivity to drugs targeting model-identified nodes (Mann-Whitney U p=0.00041), particularly for PI3K/AKT/mTOR, AR, and chromatin pathways (adjusted p-values 0.001, 0.001, 0.032).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 present statistical validation using GDSC drug sensitivity data with specific p-values from Mann-Whitney U tests and target enrichment analysis. The results are supported by Figure 6 and demonstrate that model predictions correlate with experimental drug sensitivity data, providing external validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Experimental validation in LNCaP cells confirmed dose-dependent effects of HSP90 inhibitors (17-DMAG, NMS-E973) and PI3K inhibitors (Pictilisib, PI-103), with HSP90 inhibitors showing stronger and more prolonged effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C48-C53 describe experimental results supported by Figures 7-9 showing both endpoint viability assays and real-time monitoring. The dose-dependent effects are clearly demonstrated, with appropriate controls and replicates described in methods. The comparative assessment between drug classes is supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4"
+    ],
+    "result": "15 actionable intervention points were identified in one cell line-specific model whose inactivation hinders tumorigenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C4 states 15 targets were identified, but the detailed results (C40) describe 29 nodes from the top 20 knock-out mutations, and the abstract mentions testing 9 inhibitors of 5 targets. The discrepancy between 15, 29, and the actual experimental validation numbers is not clearly resolved in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "HSP90 and PI3K/AKT are established cancer targets with known biological functions and drugs in clinical development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 provide background information about the biological roles of HSP90 and PI3K/AKT pathways, all supported by appropriate citations. This contextualizes the experimental validation but represents established knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8"
+    ],
+    "result": "Prostate cancer is the second most common cancer in men worldwide, with heterogeneous treatment responses due to tumor stage, type, and molecular profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C8 provide epidemiological and clinical context supported by citations (Chen and Zhou 2016; Toth et al. 2019; Yang et al. 2018). These represent established knowledge that motivates the study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Boolean modeling with MaBoSS provides a scalable alternative to continuous modeling for large signaling networks, using stochastic simulations with transition rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C13 describe the methodological framework with appropriate citations. The limitations of ODE models (C9) and advantages of Boolean approaches (C10-C11) are well-established in the field. The MaBoSS methodology (C12-C13) is supported by citations (Stoll et al. 2017, 2012).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "The HSP90 inhibitors used have characterized IC50/DC50 values: 17-DMAG (IC50=62 nM) and NMS-E973 (DC50<10 nM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 provide drug characterization data supported by citations (Pacey et al. 2011; Fogliatto et al. 2013). These are methodological details documenting the drugs used in experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "The model was deposited in public databases (GINsim Database ID 252, BioModels ID MODEL2106070001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 document data availability with specific database identifiers. This represents good scientific practice for reproducibility but is not a scientific finding.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,330 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Mutation of five conserved AAA+ motifs (Walker A, Walker B, Sensor I, Arg-finger, Sensor II) in DnaC completely abolishes ATPase activity, but these residues contribute differentially to helicase loading efficiency, with the AAA+ domain and ATP hydrolysis cycle increasing loading efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 are well-supported by experimental data in Figure 2A showing complete loss of ATPase activity for all five mutants, and Figure 2D demonstrating differential effects on loading efficiency. The data are internally consistent and appropriately controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "DnaB's ATPase activity is not critical for loading but aids efficiency (~50% reduction in ATPase-deficient mutant), and loaded DnaB forms a salt-stable, topologically closed complex with ssDNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 are supported by experimental data in Figures 3A-B showing reduced but functional loading of ATPase-deficient DnaB and salt-stability experiments. The inference about topological closure (C23) is reasonable given the structural data cited and salt-stability results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "DnaC can actively unload DnaB from DNA in an ATP-dependent manner, and DnaB's ATPase activity is important for both loading and unloading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 are supported by experimental data in Figure 3D and supplementary figures showing ATP-dependent unloading and differential behavior of ATPase-deficient DnaB. This is a novel finding with clear experimental support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "DnaC stimulates DnaB-mediated DNA unwinding, overcoming inhibitory effects of 3' DNA ends. The isolated HBD stimulates unwinding nearly as well as full-length DnaC, but ATPase mutants show differential impairment, with the Arg-finger mutant most severely compromised.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C35 are supported by experimental data in Figures 4A-C showing differential unwinding activities. The pattern of mutant effects suggests nucleotide-dependent inter-subunit interactions influence helicase activation, though the mechanistic interpretation (C35) is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "A conserved tetrad of residues (Lys143, Phe146, Ser177, Tyr179) forms the ssDNA-binding site on DnaC. Mutation of Lys143 abolishes DNA binding, ATPase activity, helicase loading, and unwinding stimulation, suggesting it prevents helicase ring closure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C43 are supported by structural analysis (Figures 1, 5A-B) and experimental data (Figure 5C-E) showing complete loss of function for K143E mutant. The inference about persistent open-ring state (C43) is reasonable given the functional data, though direct structural evidence is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Arg216 (the 'Arg-coupler') is a conserved residue that couples ssDNA binding to DnaC ATPase activity. The R216D mutant abolishes ATPase activity, while R216A shows elevated, DNA-independent ATPase activity and can suppress the K143E DNA-binding defect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 are strongly supported by experimental data in Figures 6B-E showing differential effects of R216D vs R216A mutations. The identification of Arg216 as a coupling element is a major finding with clear mechanistic implications, though the precise structural mechanism requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The dnaC810 mutation (E176G) phenocopies the R216A Arg-coupler mutant, showing DnaB-dependent but ssDNA-independent ATPase activity with near wild-type loading and unwinding function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 are supported by experimental data in Figure 7A-C showing similar biochemical behavior between E176G and R216A mutants. The connection to replication restart bypass is mechanistically interesting, though the structural basis (C92) remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "The Arg-coupler mutant (R216A) shows enhanced ability to stimulate DnaB unwinding of SSB-coated DNA in the absence of PriC restart factor, demonstrating the Arg-coupler prevents premature DnaC activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by experimental data in Figure 7D showing PriC-independent unwinding by R216A mutant. This connects the Arg-coupler mechanism to replication restart regulation, though additional experiments would strengthen the mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "DnaB ring opening and DNA engagement can occur independently of DnaC ATP hydrolysis, but ATP turnover improves loading efficiency and is essential for DnaC to activate DnaB unwinding. The HBD is an independent helicase-activating element regulated by the ATPase module.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C64 are supported by experimental data in Figures 2 and 4, with appropriate citations to prior work. The interpretation that the HBD is independently regulated (C63-C64) is a reasonable inference from the mutant data, though the mechanism remains incompletely defined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Arg216 acts as both a substrate/ATPase coupler and steric governor, blocking the nucleophilic water position in the absence of DNA. DNA binding causes conformational changes that shift Arg216 away, allowing ATP hydrolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 are supported by structural analysis in Figure 8A-B and biochemical data. The mechanistic model is well-reasoned, though C82 relies partly on prior structural work. The dual role of Arg216 as both steric blocker and allosteric sensor is a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Sequence analysis reveals that DnaA, Orc1, and Orc4 (all in the 'initiator' AAA+ clade) retain an arginine analogous to the DnaC Arg-coupler, suggesting a conserved regulatory mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 are supported by sequence analysis in Figure 8C. The conservation pattern is clear, though the functional significance (C97) is speculative and requires experimental validation in these other systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Prior work shows the Arg-coupler equivalent in DnaA (Arg281) is necessary for stable complex formation, and mutation of the analogous residue in human Orc1 (Arg666) is linked to Meier-Gorlin syndrome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 are supported by appropriate citations to prior work. These claims provide important context for the functional significance of the Arg-coupler across different systems, though they represent prior knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C109"
+    ],
+    "result": "Comparative structural analysis reveals that IstB and clamp loaders use alternative mechanisms to occlude \u03b3-PO4 and sequester Sensor I, suggesting a general fail-safe mechanism in switch-like AAA+ systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C109 are supported by structural comparisons in Figures 8D-F and appropriate citations. The comparative analysis is insightful, though the generalization about switch-like AAA+ systems (C109) is somewhat speculative and would benefit from additional examples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Structural studies show DnaB switches from ADP to ATP state upon DNA binding, and DnaB's nucleotide interaction capability impacts loading efficiency, similar to eukaryotic Mcm2-7 helicase loading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 are supported by citation to prior structural work and experimental data in Figure 3A. The comparison to eukaryotic systems (C67) is appropriate but represents an analogy rather than direct mechanistic evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Prior genetic screens identified Lys143 as important for E. coli viability, and disruption of the DNA-binding patch (including Lys143) blocks DNA binding and prevents ssDNA from activating DnaC functions despite being >20 \u00c5 from the ATPase center.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 are supported by citations to prior work and experimental data. The long-range coupling (C72) is an important observation, though the precise structural mechanism of signal transmission remains to be fully elucidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The Arg-coupler mechanism is analogous to the 'glutamate switch' in other AAA+ ATPases. DnaC has a glutamate switch position (Thr134) that does not ideally interact with the catalytic glutamate but instead contacts an acidic residue hydrogen-bonded to the Arg-finger.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 are supported by structural analysis in Figure 8\u2014figure supplement 1 and sequence analysis. The comparison to the glutamate switch is insightful, though the functional significance of the Thr134-Asp189-Arg-finger network requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The dnaC810 mutation (E176G) bypasses the need for PriA restart protein. Glu176 sits on a conformationally flexible Walker-B loop, and the E176G substitution likely mimics a DNA-bound state to relieve Arg216 repression, suggesting tight ATPase control coordinates with replication restart pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C93 are partially supported by experimental data in Figure 7 and citations to prior work. However, the structural mechanism (C92) is explicitly speculative ('seems likely'), and the connection to replication restart coordination (C93) is an inference that requires additional experimental validation. The lack of a DnaC810-DnaB structure limits mechanistic certainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background on bacterial replication: DnaB helicases form hexameric rings that require loading factors (DciA or DnaC/DnaI families) for deposition onto DNA. DnaC has an HBD and AAA+ domain, forms a cracked hexamer on DnaB, and shows DNA-dependent ATPase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C16 represent established background knowledge supported by appropriate citations to prior work and structural data in Figure 1. These provide essential context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C3",
+      "C4"
+    ],
+    "result": "The study identifies the arginine-coupler as a new regulatory element in DnaC that prevents futile ATPase cycling and maintains responsiveness to restart systems, with analogous elements present in related AAA+ proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 represent the main conclusions of the study, supported by the collective experimental and comparative data. These are appropriately stated as primary findings in the abstract.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C103",
+      "C108"
+    ],
+    "result": "Background on AAA+ ATPases and helicase unloading: Eukaryotic CMG unloading involves ubiquitylation and CDC48/p97, while bacterial mechanisms are poorly understood. AAA+ ATPases generally require oligomerization for activity, with Arg-finger residues contributing to composite active sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C108 (selected) represent established knowledge about AAA+ ATPases and related systems, supported by appropriate citations. These provide important context for interpreting the DnaC findings.",
+    "result_type": "MINOR"
+  }
+]

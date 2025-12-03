@@ -1,0 +1,1996 @@
+{
+  "submission": {
+    "id": "a274a521-5b72-4cb5-95bc-e69cf6e023cc",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T07:34:04.718182Z",
+    "updated_at": "2025-12-03T07:34:04.718182Z"
+  },
+  "content": [
+    {
+      "id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "submission_id": "a274a521-5b72-4cb5-95bc-e69cf6e023cc",
+      "content_type": "manuscript",
+      "content_text": "# Characterizing human mobility patterns in rural settings of sub-Saharan Africa\n\n## Authors\n\n- Hannah R Meredith<sup>1</sup> ([ORCID: 0000-0002-5315-7568](https://orcid.org/0000-0002-5315-7568)) \u2020\n- John R Giles<sup>1</sup>\n- Javier Perez-Saez<sup>1</sup>\n- Th\u00e9ophile Mande<sup>2</sup>\n- Andrea Rinaldo<sup>3</sup>\n- Simon Mutembo<sup>5</sup>\n- Elliot N Kabalo<sup>7</sup>\n- Kabondo Makungo<sup>8</sup>\n- Caroline O Buckee<sup>9</sup> ([ORCID: 0000-0002-8386-5899](https://orcid.org/0000-0002-8386-5899))\n- Andrew J Tatem<sup>10</sup>\n- C Jessica E Metcalf<sup>11</sup> ([ORCID: 0000-0003-3166-7521](https://orcid.org/0000-0003-3166-7521))\n- Amy Wesolowski<sup>1</sup> ([ORCID: 0000-0001-6320-3575](https://orcid.org/0000-0001-6320-3575)) \u2020\n\n### Affiliations\n\n1. Department of Epidemiology, Johns Hopkins Bloomberg School of Public Health Baltimore United States\n2. Bureau d'Etudes Scientifiques et Techniques - Eau, Energie, Environnement (BEST-3E) Ouagadougou Burkina Faso\n3. Dipartimento di Ingegneria Civile Edile ed Ambientale, Universit\u00e0 di Padova Padova Italy\n4. Laboratory of Ecohydrology, School of Architecture, Civil and Environmental Engineering, \u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne Lausanne Switzerland\n5. Department of International Health, International Vaccine Access Center, Johns Hopkins Bloomberg School of Public Health Baltimore United States\n6. Macha Research Trust Choma Zambia\n7. Zambia Information and Communications Technology Authority Lusaka Zambia\n8. Zamtel Lusaka Zambia\n9. Department of Epidemiology and the Center for Communicable Disease Dynamics, Harvard TH Chan School of Public Health Boston United States\n10. WorldPop, School of Geography and Environmental Science, University of Southampton Southampton United Kingdom\n11. Department of Ecology and Evolutionary Biology and the Princeton School of Public and International Affairs, Princeton University Princeton United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nHuman mobility is a core component of human behavior and its quantification is critical for understanding its impact on infectious disease transmission, traffic forecasting, access to resources and care, intervention strategies, and migratory flows. When mobility data are limited, spatial interaction models have been widely used to estimate human travel, but have not been extensively validated in low- and middle-income settings. Geographic, sociodemographic, and infrastructure differences may impact the ability for models to capture these patterns, particularly in rural settings. Here, we analyzed mobility patterns inferred from mobile phone data in four Sub-Saharan African countries to investigate the ability for variants on gravity and radiation models to estimate travel. Adjusting the gravity model such that parameters were fit to different trip types, including travel between more or less populated areas and/or different regions, improved model fit in all four countries. This suggests that alternative models may be more useful in these settings and better able to capture the range of mobility patterns observed.\n\n## Introduction\n\nHuman mobility patterns are a reflection of behaviors, ranging from routine (e.g., commuting daily for work or school, traveling for holidays and religious gatherings, or seeking seasonal work opportunities) to irregular (e.g., relocating due to environmental changes or crises or social distancing due to a pandemic) (Charaudeau et al., 2014; Haberfeld et al., 1999; International Organization for Migration, 2019; Lessler et al., 2014; Lu et al., 2012; Pullano et al., 2020). Consequently, characterizing human mobility patterns is important for a wide range of applications, including predicting the spread of infectious diseases, traffic forecasting, designing intervention strategies, assessing health service accessibility, planning natural disaster relief efforts, and estimating migratory flows to estimate changes in population demographics (Charaudeau et al., 2014; Dotse-Gborgbortsi et al., 2020; Findlater and Bogoch, 2018; Finger et al., 2016; Gilbert et al., 2020; Lu et al., 2012; Mari et al., 2017; Palchykov et al., 2014; Stoddard et al., 2009; Wesolowski et al., 2012). Depending on the spatial and temporal resolution of travel relevant to the question of interest, there are many data sources that can quantify travel, such as national censuses, traffic or commuting data, travel surveys, or mobile phone data (Tatem, 2014). However, when mobility data are limited or unavailable, spatial interaction models are often used to estimate mobility patterns. One of the most commonly used models is the gravity model (Wesolowski et al., 2015b), which assumes the number of trips between an origin and destination over a fixed time period will increase as a function of the destination and origin population sizes and decrease with distance. While the gravity model was originally developed to describe commuting in a high-income setting (Zipf, 1946), it has been used to model travel in low- and middle-income countries (LMICs) when data are limited or unavailable (Stone et al., 2019; Wells et al., 2019; Wesolowski et al., 2015b). In high-income settings, the standard gravity model has been shown to perform well when predicting commuter movement between cities (Masucci et al., 2013) and perform poorly when predicting movement across areas with heterogeneity in demographics and population density or in rural areas (Truscott and Ferguson, 2012; Xia et al., 2004). However, the degree to which geographic, sociodemographic, and infrastructure differences may impact the ability for models to capture travel patterns in LMICs, particularly in more rural settings, remains to be determined.\n\nIncreasing mobile phone ownership (over 67% of the global population in 2019) and the mobility patterns that can be extracted from these data provide a valuable resource for evaluating how well spatial interaction models can capture human mobility patterns in low- and middle-income settings (GSM Association, 2020; Wesolowski et al., 2016). However, the challenge of procuring mobile phone datasets has resulted in relatively few studies that fit mobility models to relevant travel data from LMICs. Of these, a few studies have explored model adjustments and show that predictions can be improved by adjusting the gravity model to account for factors such as education levels, economic opportunities, gender, environmental factors, trip duration, contiguity of origin and destination, and proportion of population living in urban areas (Garcia et al., 2015; Henry et al., 2003; Wesolowski et al., 2015b). Typically, studies assume that these factors impact all trips homogeneously, thus fitting a single set of parameters for all trips is a sufficient adjustment. Yet, even with such adjustments, gravity models may still fail to accurately capture mobility patterns in LMICs, particularly in rural areas (Henry et al., 2003; Wesolowski et al., 2015b), suggesting that models which account for regional heterogeneity in travel may improve their estimates in these settings.\n\nHere, we examine the impact that regional heterogeneity and urbanicity has on travel patterns as well as how well spatial interaction models can reproduce travel patterns in LMICs by examining four countries in Sub-Saharan Africa: Namibia, Kenya, Burkina Faso, and Zambia (Figure 1A\u2013D). These countries capture a range of levels of urbanization, population distribution, and importantly include large rural areas common in many LMICs. Using mobile phone data, we first characterized human mobility patterns from these four countries and determined which features were not well captured by basic gravity models. Next, we conducted an analysis of six variations of the basic gravity model, including variations that account for regional travel and urbanicity, as well as a basic radiation model to determine which provided the best trip estimates for each country (Simini et al., 2012). Finally, we compared the different model fits across the four countries to evaluate if the adjustments produced similar improvements for all countries. To our knowledge, no other models have captured these mobility features, been tested consistently against mobility data from multiple LMICs, and provided clear guidance on which model to use and when. This study provides further insight on the mobility patterns in LMICs and highlights where mobility model estimates may deviate when applied in other similar settings, ultimately improving our understanding of topics such as disease spread, migratory flows, and intervention efficacy in LMICs.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/68441/elife-68441-fig1-v1.jpg)\n\n**Figure 1.:** (A\u2013D) Data from four Sub-Saharan African countries were selected to characterize human mobility patterns: Namibia, Kenya, Burkina Faso, and Zambia. Travel between districts (administrative level 2) was estimated via mobile phone data from each country. A basic gravity model was fit to trip data from each country which assumes that the number of trips decreases with distance and increases with population size (E\u2013H). Here, one rural (left panel) and one urban (right panel) destination were selected from each country to show that, while the observed trips (black) from different origins do generally follow the assumptions of the gravity model (red), the gravity model is not fully capturing the observed trip patterns. See Figure 1\u2014figure supplements 1\u20138 for this comparison made for all districts in each country. (I\u2013L) Comparisons of origin-destination matrices colored by trip proportions estimated by the basic gravity model and the mobile phone data (observed) highlight how the basic gravity model tends to overestimate many trips, particularly those that are off-diagonal (e.g., inter-regional trips). The columns and rows of the OD matrix are ordered by district ID, which were assigned such that districts within the same region (adminstrative level 1) were clustered together. The capital district is indicated by the black arrow on the x- and y-axes. The colors indicate the proportion of an origin\u2019s trips made to each destination (with light blue representing destinations visited infrequently and dark blue representing destinations visited most frequently). (See Supplementary file 1B for the key to the origin and destination numbers and Figure 1\u2014figure supplement 9 for district level maps).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68441/elife-68441-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Basic model used power distance kernel. See Supplementary file 1B for key to district numbers and Figure 1\u2014figure supplement 9 for a map.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68441/elife-68441-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Basic model used power distance kernel. See Supplementary file 1B for key to district numbers and Figure 1\u2014figure supplement 9 for a map.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/68441/elife-68441-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Basic model used power distance kernel. See Supplementary file 1B for key to district numbers and Figure 1\u2014figure supplement 9 for a map.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/68441/elife-68441-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Basic model used power distance kernel. See Supplementary file 1B for key to district numbers and Figure 1\u2014figure supplement 9 for a map.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/68441/elife-68441-fig1-figsupp5-v1.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Basic model used power distance kernel. See Supplementary file 1B for key to district numbers and Figure 1\u2014figure supplement 9 for a map.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/68441/elife-68441-fig1-figsupp6-v1.jpg)\n\n**Figure 1\u2014figure supplement 6.:** Basic model used power distance kernel. See Supplementary file 1B for key to district numbers and Figure 1\u2014figure supplement 9 for a map.\n\n![Figure 1\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/68441/elife-68441-fig1-figsupp7-v1.jpg)\n\n**Figure 1\u2014figure supplement 7.:** Basic model used power distance kernel. See Supplementary file 1B for key to district numbers and Figure 1\u2014figure supplement 9 for a map.\n\n![Figure 1\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/68441/elife-68441-fig1-figsupp8-v1.jpg)\n\n**Figure 1\u2014figure supplement 8.:** Basic model used power distance kernel. See Supplementary file 1B for key to district numbers and Figure 1\u2014figure supplement 9 for a map.\n\n![Figure 1\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/68441/elife-68441-fig1-figsupp9-v1.jpg)\n\n**Figure 1\u2014figure supplement 9.:** (A-D) Administrative level two units are labeled for each country. See Supplementary file 1B for key to match ID number to district name. (E-H). Districts were sorted into urban and rural categories.\n\n## Results\n\nWe analyzed the average number of daily trips, defined here as the number of subscribers moving from one district (administrative level 2) to another, per month extracted from each mobile phone dataset (see Materials and methods). Similar to other studies, we found that the average number of monthly trips between districts from Namibia, Kenya, Burkina Faso, and Zambia generally decreased with trip distance and there were more trips from and to more populated areas (Figure 1E\u2013H, Figure 1\u2014figure supplements 1\u20138). Trips were concentrated between districts within the same region (administrative level 1) to varying degrees (intra-regional trips made up 30% of all trips in Burkina Faso, 45% in Kenya, 62% in Namibia, and 72% in Zambia) and to a few common destinations, including the district where the capital was located (Figure 1I\u2013L, Supplementary file 1A). Although Namibia, Burkina Faso, and Zambia each consisted of ~95% predominantly rural districts, the distribution of monthly trips between urban and rural districts varied across countries. The majority of Namibia\u2019s and Burkina Faso\u2019s trips were between rural locations (62% and 70.5% of all trips, respectively), while Zambia\u2019s trips were split between rural locations (53%) or rural and urban locations (46%). Kenya, with 56% predominantly urban districts, had the largest proportion of monthly trips between urban locations (70%). As a basic model, we first estimated trip counts using a basic gravity model (single parameter set fitted for all trips), which is based on the population sizes of the origin and destination and the distance between locations, with two variants on the distance kernel (power or exponential decay) (Equation 1). Estimates from this basic model overestimated trip counts and missed important features of the data, such as higher trip counts in short-distance and within-region trips, relative to long-distance and between-region trips (Figure 1E\u2013L, Figure 1\u2014figure supplements 1\u20138). Travel involving predominantly rural locations tended to be overestimated and these results were largely observed for both distance kernels and for all countries.\n\nGiven how the basic model\u2019s estimates of urbanicity and regional movement deviated from the call data records, we tested six additional variations of a gravity model that allowed for parameters to capture increasingly complex features in the data (Equations 2\u20139). These included fitting parameters for the origin and destination population sizes and trip distance to: (1) trips defined by origin and destination population density (urbanicity model: higher population density = predominantly urban, lower population density = predominantly rural), (2) trips within- and between-regions (regional model), and (3) trips defined by both region and urbanicity (regional-urbanicity model) (Figure 2). Each model variation was tested with two distance kernels (power and exponential decay). We also evaluated a basic radiation model (Equation 11; Masucci et al., 2013; Simini et al., 2012).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/68441/elife-68441-fig2-v1.jpg)\n\n**Figure 2.:** Here, Kenya is used to demonstrate the trip types that could be defined by the region (represented by color) and/or urbanicity (solid = predominantly rural, dotted = predominantly urban) of the trip\u2019s origin and destination to outline the various models fit. See Figure 2\u2014figure supplements 1\u20132 for the fitted parameters.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68441/elife-68441-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Mobile phone data was used to fit parameters for origin population size (\u03b1), destination population size (\u03b2), and trip distance (\u03b3) for each country. Different sets of parameters were fit, based on the gravity model type (color) and trip type (I: intra-regional, O: inter-regional, U: urban, R: rural). While the general trend of distance parameter as a function of trip type was similar across countries, the role the population size parameters played was country-specific. Note that there were no IUU routes in Namibia nor UU, IRU, IUR, IUU, or OUU routes in Burkina Faso, resulting in large standard deviations for the fitted parameters. Parameter values presented in Figure 2\u2014source data 1.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68441/elife-68441-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Mobile phone data was used to fit parameters for origin population size (\u03b1), destination population size (\u03b2), and trip distance (D) for each country. Different sets of parameters were fit, based on the gravity model type (color) and trip type (I: intra-regional, O: inter-regional, U: urban, R: rural). While the general trend of distance parameter as a function of trip type was similar across countries, the role the population size parameters played was country-specific. Note that there were no IUU routes in Namibia nor UU, IRU, IUR, IUU, or OUU routes in Burkina Faso, resulting in large standard deviations for the fitted parameters. Parameter values presented in Figure 2\u2014source data 1.\n\nAll parameterized gravity models outperformed the basic model. Allowing for parameters to be fit by urbanicity or region improved model fit to varying degrees, depending on the country (Table 1, Supplementary file 2A). Accounting for urbanicity provided a larger improvement in model fit than region for all countries; however, this improvement was larger in Kenya and Burkina Faso than Namibia and was only observed for Zambia if the lower urbanicity threshold (10%) was implemented. In these models, the degree to which the parameters varied increased with model complexity, with the distance parameter varying the most, allowing for different weights to be applied based on the trip type (Figure 2\u2014figure supplements 1\u20132). Overall, the most complex model, the regional-urbanicity model, had the best fit for all countries (the power variant reduced the basic model\u2019s deviance information criterion (DIC) by 41% for Namibia, 30% for Kenya, 28% for Burkina Faso, and 16% for Zambia) (Table 1, Supplementary file 2A). Its flexibility allowed for the importance of origin and destination population sizes to vary by trip type, distinguished differences in the relative importance of distance by trip type, was able to better distinguish between inter- and intra-regional trip estimates, and adjusted for the lower trip counts between rural locations, relative to other trip types (Figure 3A, Figure 3\u2014figure supplements 1\u20134). This was true regardless of the distance decay function assumed, although the best fitting decay function did vary by country (Supplementary file 2A). Interestingly, the radiation model had the most variable performance of all models, where it was the poorest performing in Namibia, Burkina Faso, and Zambia, but outperformed the basic gravity model (exponential form) in Kenya. Differences in the population distribution (more heterogenous in Namibia, Burkina Faso, and Zambia than Kenya) and locations of more populated areas may be the cause of these conflicting findings across countries (Figure 1\u2014figure supplement 9; Linard et al., 2012; Masucci et al., 2013). These results were consistent across a range of administrative levels (1-3), suggesting that including locations\u2019 urbanicity and/or region in a model will generally improve model fit across spatial scales (Supplementary file 2B).\n\n**Table 1.**\n Gravity model variations (using power distance kernel) and radiation model, ranked for each country based on Deviance Information Criterion (DIC) and percent change (%\u0394) from the basic gravity model.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Rank</th>\n      <th colspan=\"2\">Namibia</th>\n      <th colspan=\"2\">Kenya</th>\n      <th colspan=\"2\">Burkina Faso</th>\n      <th colspan=\"2\">Zambia</th>\n    </tr>\n    <tr>\n      <th>Model</th>\n      <th>DIC (%\u0394)</th>\n      <th>Model</th>\n      <th>DIC (%\u0394)</th>\n      <th>Model</th>\n      <th>DIC (%\u0394)</th>\n      <th>Model</th>\n      <th>DIC (%\u0394)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>1</td>\n      <td>Reg - Urb.</td>\n      <td>3.62E + 06 (41.0)</td>\n      <td>Reg - Urb.</td>\n      <td>2.43E + 08 (30.1)</td>\n      <td>Reg - Urb.</td>\n      <td>1.93E + 05 (27.7)</td>\n      <td>Reg - Urb.</td>\n      <td>2.01E + 06 (16.3)</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>Urbanicity</td>\n      <td>4.56E + 06 (25.6)</td>\n      <td>Urbanicity</td>\n      <td>2.53E + 08 (27.2)</td>\n      <td>Urbanicity</td>\n      <td>2.05E + 05 (23.1)</td>\n      <td>Regional</td>\n      <td>2.08E + 06 (13.4)</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>Regional</td>\n      <td>4.61E + 06 (24.8)</td>\n      <td>Regional</td>\n      <td>3.40E + 08 (2.1)</td>\n      <td>Regional</td>\n      <td>2.52E + 05 (5.7)</td>\n      <td>Urbanicity</td>\n      <td>2.38E + 06 (1.1)</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td>Basic</td>\n      <td>6.12E + 06 (0.0)</td>\n      <td>Basic</td>\n      <td>3.48E + 08 (0.0)</td>\n      <td>Basic</td>\n      <td>2.67E + 05 (0.0)</td>\n      <td>Basic</td>\n      <td>2.40E + 06(0.0)</td>\n    </tr>\n    <tr>\n      <td>5</td>\n      <td>Radiation</td>\n      <td>8.68E + 06 (-41.7)</td>\n      <td>Radiation</td>\n      <td>4.26E + 08 (-22.4)</td>\n      <td>Radiation</td>\n      <td>3.39E + 05 (-27.2)</td>\n      <td>Radiation</td>\n      <td>4.3E + 06 (-79.9)</td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 3.](https://cdn.elifesciences.org/articles/68441/elife-68441-fig3-v1.jpg)\n\n**Figure 3.:** (A) The proportion of trips from each origin location in Namibia was estimated by five different spatial models (power distance kernel displayed here) and ordered by the origin and destination ID. Regional clustering was more pronounced and there were fewer inter-regional trips in the adjusted models and radiation model, relative to the basic model. See Figure 3\u2014figure supplements 1\u20134 for all countries and both distance kernel functions. The columns and rows of the OD matrix are ordered by district ID. (B) The ratio of predicted to observed trip counts in Namibia was calculated to determine the distribution of trips that were over- (ratio >1) or underestimated (ratio <1) in each trip type by model. The median ratio (solid black vertical line) for each trip type is compared with the equity line (white vertical line) for each model (shown as different colors). The proportion of trips that fall within the selected interval (\u00b1 10% of the observed trip count) was also used to assess a model\u2019s ability to capture trips in that category. Generally, the basic model captured urban-to-urban trips the best and overestimated the other trip types. See Figure 3\u2014figure supplements 5\u20137 for all countries, trip types, and distance kernel functions.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68441/elife-68441-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Gravity model variants were repeated with power (middle row) and exponential (bottom row) distance kernels. See Supplementary file 1B for key to district numbers.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68441/elife-68441-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Gravity model variants were repeated with power (middle row) and exponential (bottom row). See Supplementary file 1B for key to district numbers.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/68441/elife-68441-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Gravity model variants were repeated with power (middle row) and exponential (bottom row). See Supplementary file 1B for key to district numbers.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/68441/elife-68441-fig3-figsupp4-v1.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Gravity model variants were repeated with power (middle row) and exponential (bottom row). See Supplementary file 1B for key to district numbers.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/68441/elife-68441-fig3-figsupp5-v1.jpg)\n\n**Figure 3\u2014figure supplement 5.:** Distributions of trips from gravity models using power distance kernel (A\u2013D) and exponential distance kernel (E\u2013H). The median ratio (black vertical line) for each trip type is compared with the equity line (white vertical line) for each model (color). Trips that fell below the equity line were underestimated by the model, while those that fell above were overestimated. The proportion of trips that fall within the selected interval ( \u00b1 10% of the observed trip count, values reported in Supplementary file 3B-C) was used to assess how well a model captured trips in that category.\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/68441/elife-68441-fig3-figsupp6-v1.jpg)\n\n**Figure 3\u2014figure supplement 6.:** Distributions of trips from gravity models using power distance kernel (A-D) and exponential distance kernel (E-H). The median ratio (solid black vertical line) for each trip type is compared with the equity line (dashed vertical line) for each model (color). Trips that fell below the equity line were underestimated by the model, while those that fell above were overestimated. The proportion of trips that fall within the selected interval ( \u00b1 10% of the observed trip count, values reported in Supplementary file 3B-C) was used to assess how well a model captured trips in that category.\n\n![Figure 3\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/68441/elife-68441-fig3-figsupp7-v1.jpg)\n\n**Figure 3\u2014figure supplement 7.:** Distributions of trips from gravity models using power distance kernel (A-D) and exponential distance kernel (E-H). The median ratio (solid black vertical line) for each trip type is compared with the equity line (dashed vertical line) for each model (color). Trips that fell below the equity line were underestimated by the model, while those that fell above were overestimated. The proportion of trips that fall within the selected interval ( \u00b1 10% of the observed trip count, values reported in Supplementary file 3B-C) was used to assess how well a model captured trips in that category.\n\nOverall model fit may not accurately describe how well each model can estimate certain trip types which may be relevant for particular questions. We further evaluated how close model estimates were to the observed trip count using the ratio of predicted to observed trip counts (Figure 3B, Figure 3\u2014figure supplements 5\u20137). Unsurprisingly, the regional-urbanicity model (with either the exponential or power decay) produced some of the most accurate model estimates ( \u00b1 10% of the observed trip counts) for most trip types in Namibia (11/14 trip categories), Kenya (7/14 trip categories), and Burkina Faso (6/9 trip categories) (Supplementary file 3A); however, the regional model produced the most accurate estimates for a range of trips in Zambia (5/13). The proportion of trips estimated within the 10% margin of error was lowest for Kenya, with the most accurate models only well estimating 3\u20137% of trips, and highest for Namibia, with some models estimating >30% of certain trip types. Depending on the type of trip and country, simpler models may provide more accurate trip estimates than the more complex regional-urbanicity model. We found that just accounting for region may be sufficient for best capturing rural-to-rural as well as general or specific inter-regional travel in Namibia. Further, a wide range of trip types was well estimated by the radiation model in Kenya and by a basic model (exponential decay) in Zambia.\n\n## Discussion\n\nTo date, there have been limited evaluations of mobility patterns in Sub-Saharan African countries and how the geographic, demographic, and economic differences in many LMICs impact the validity of modeling assumptions to estimate travel. By comparing and evaluating a range of gravity models in four Sub-Saharan African countries, we identified clear patterns of travel that were not well approximated using a basic gravity model. By allowing these models to accommodate differences in travel between predominantly rural and/or urban areas and within- versus between-regions, we found that the best fitting model allowed for the greatest flexibility for estimating different trip types. However, there were differences in which model was best able to estimate particular types of travel, the importance of distance and population, and the overall fit of all models to the data by country. Therefore, selecting a model that adjusts for the trip type and context of interest is important for improving estimates.\n\nIf a given application is focused on estimating specific trip types (e.g., urban residents traveling to rural areas for work), these findings may be informative for model selection in similar settings. If a country is sparsely populated with a single predominantly urban district (e.g., capital district), like Burkina Faso, then the regional-urbanicity model would be recommended, as it maximizes the proportion of trips reasonably estimated for most trip types. If specifically considering trips between predominantly rural and urban locations in a sparsely populated country with a few predominantly urban districts, like Namibia, then the regional model would provide the best estimates in these settings. Alternatively, if a country is more homogeneously populated, like Kenya, the radiation model may provide the best estimates for most specific trip types. If data are limited or unavailable, then the parameters fit to these four exemplar countries may serve as a proxy.\n\nMoving forward, the need to select a single model could be mitigated and estimates of mobility patterns could be improved by developing an ensemble model. Recently, an ensemble model outperformed individual models in estimating human mobility patterns in Australia, combining different mobility models as well as data types to optimize mobility estimates across different spatial scales (McCulloch et al., 2021). Using this approach, additional individual level information (e.g., gender, age, occupation) collected from other data sources could be incorporated to study their impact on model fit. Future work could also evaluate the models tested here in other countries, both within and outside of Sub-Saharan Africa. Model estimates of travel patterns in high-income countries may also benefit from accounting for urbanicity and regionality (Truscott and Ferguson, 2012; Xia et al., 2004). The increasing availability of mobility data has enabled the comparison of global human mobility patterns and revealed that (a) longer distance trip ( > 20 km) patterns are similar across low- and high-income settings (Kraemer et al., 2020) and (b) that mobility patterns in rural (sparsely populated) areas differ from those in urban (densely populated) areas (Liu et al., 2015). This suggests that our findings based on trips aggregated to the region or district level will be generalizable to other countries from a range of income settings. However, mobility patterns at smaller spatial scales appear to be different for low- and high-income settings (Kraemer et al., 2020), and requires further investigation.\n\nThere are a number of caveats to be noted in this study. Mobile phone data has inherent owner, user, and coverage biases, especially in LMICs where mobility data tend to be concentrated around urban areas and roads (Kraemer et al., 2020; Wesolowski et al., 2013). Furthermore, the dataset from Burkina Faso was limited to 100,000 randomly selected subscribers (1.4% of Burkina Faso\u2019s Telecel Faso subscribers). This smaller sample size may have resulted in the models overestimating routes that were missed in the actual dataset due to relatively small trip counts. Regardless, mobile phone data remain one of the most direct ways to gather information on a large population in LMICs. Alternative human mobility data sources that have recently become more available, such as Google Mobility or Facebook Data for Good (Kissler et al., 2020; Ojal, 2020), could verify these observations in future studies; however, smart phones are also associated with ownership biases and are currently less pervasive than general mobile phone ownership (GSM Association, 2020). It should be noted that models parameterized by different mobility data sources have produced different outcomes (Panigutti et al., 2017). Thus, the generalizability of the results ascertained from these four LMICs should continue to be evaluated and expanded upon as more mobility datasets from other settings become available. Similarly, the ability of other spatial interaction models to better estimate human mobility should be explored. We opted to focus on the gravity model because it has been the most commonly used spatial interactions model; however, one of its shortfalls is that it does not address the competition or synergism that often occurs between potential destinations (Bj\u00f8rnstad et al., 2019). While this is addressed by the radiation model, the degree to which accounting for region and urbanicity can improve its estimates remains to be considered in the future (Bj\u00f8rnstad et al., 2019). Another shortfall of the gravity and radiation models is their inability to capture the temporally dynamic nature of human mobility. Here, we focused on one definition and measurement of human mobility patterns; however, seasonal mobility patterns, such as those driven by seasonal work or societal factors (Buckee et al., 2017; Wesolowski et al., 2015a), and irregular migration, such as those driven by political or natural crises and environmental changes (International Organization for Migration, 2019), are ubiquitous. Mobile phone data could also be used to quantify these movements and improve estimates of population distribution and movement over time (Facebook data for good, 2021; Finger et al., 2016; Wesolowski et al., 2015a). Finally, the modifiable areal unit problem (MAUP) is a source of bias in the spatial distribution and aggregation of both CDRs (and other movement data) and population that impacts the results of models dependent on these inputs (Fotheringham and Wong, 2016). Although the general trends in model fits were preserved across a range of administrative levels, the generalization of the results to movement aggregated at finer spatial scales or for different geographical boundaries remains to be determined.\n\nUltimately, gaining a more complete understanding of travel in diverse geographies will help inform applications in the health, economic, social, and transportation sciences. While incorporating urbanicity and region did improve the gravity model fit to various degrees for different countries, this study highlights the need to continue honing a model framework that can better capture mobility patterns and behavioral nuances in LMICs.\n\n## Materials and methods\n\n### Population, urbanicity, and geolocation data\n\nWorldPop population data for each country were analyzed as people per pixel for each district (https://www.worldpop.org/) (Supplementary file 1A). WorldPop gridded building pattern datasets were used to categorize grid cells of each district as urban or rural as described elsewhere ( Dooley et al., 2020) using QGIS v3.6. Districts with more or less than 50% urban grid cells were categorized as urban and rural, respectively. A sensitivity analysis in which urban thresholds of 10% and 50% urban grid cells were compared showed that, while the general trends in model fits remained the same, the overall model fits were worse for the lower threshold in all countries but Zambia (Supplementary file 2C). Trip distances were defined as the haversine distance between centroids of districts. Shapefiles for the different countries were downloaded from DIVA-GIS (https://www.diva-gis.org/). Generally, the district identification numbers were assigned by the map source, with district IDs being clustered within their respective region.\n\n### Mobile phone data\n\nAnonymized call data records (CDRs) were provided by the leading mobile phone provider in each country (Supplementary file 1A). Two districts in Namibia did not have data (Oshakati and Uuvudhiya) and were excluded from analysis. The Burkina Faso provider shared CDRs from a subset of randomly selected subscribers (100,000, ~ 1.4% of subscribers), as opposed to the other countries\u2019 providers that shared CDRs from all of their subscribers. The duration of and year(s) covered by the CDR datasets varied by country, defined by different data sharing agreements: Namibia\u2019s ran October 2, 2010 \u2013 April 30, 2014; Kenya\u2019s ran June 1, 2008 \u2013 July 3, 2009 (excluding the month of February, 2009); Burkina Faso\u2019s ran January 1, 2016 \u2013 December 31, 2016; and Zambia\u2019s ran August 1, 2020 \u2013 December 30, 2020. Briefly, CDRs for each country were first aggregated to tower locations and then to districts for each country. A similar method described elsewhere (Zu Erbach-Schoenberg et al., 2016) was used to assign cell towers to districts. Briefly, if a cell tower\u2019s coverage zone fell squarely within one district, all CDRs associated with that tower were assigned to that district. If the coverage zone spanned more than one district, the number of CDRs assigned to each district was split according to the area of overlap between the coverage zone and districts. We only considered travel that crossed district boundaries, not local movement within the district. The average number of total monthly trips taken between each origin and destination was calculated and the proportion of trips was calculated for each origin by normalizing the trip counts to a given destination by the total trips made from that origin. Trip types were defined by origin and destination, either by urbanicity (urban or rural) or by region (intra- or inter-regional). Statistical and spatial analysis was done in R v3.6.3.\n\n### Mobility models\n\nWe compared the ability of eight variations of the gravity model and a basic radiation model to capture the heterogeneity in trip counts ($T_{ij}$) between each origin (i) and destination (j).\n\n### Gravity models\n\nThe gravity model estimates the trip counts, $T^_{i,j}$, as a function of the population sizes at the origin ($P_{i}$) and destination ($P_{j}$) and deterrence function that depends on the distance between the two locations ($d_{i,j}$) (Equation 1).\n\n$$\nT^_{i,j}=\\theta\\frac{P_{i}^{\\alpha}P_{j}^{\\beta}}{f(d_{i,j})}\n$$\n\nHere, $\\alpha$ and $\\beta$ are non-negative parameters that scale the strength of association between i and j; $\\theta$ acts as a proportionality constant, and $fd_{ij}$ is the penalty associated with a trip distance (d, in kilometers). Both the power $fd_{ij}=d_{ij}^{\\gamma}$ and exponential $fd_{ij}=exp\\frac{d_{i,j}}{D}$ forms of the deterrence function were tested, where $\\gamma$ is a non-negative parameter that determines the rate at which the number of trips decays with trip distance and D is a non-negative parameter that captures the deterrence distance (Chen, 2015). The number of trips increases with larger values of $\\alpha$ and $\\beta$ and smaller values of $\\gamma$ or D. We tested eight model variations of Equation 1 in which these parameters were allowed to vary according to aspects of the origin and destination.\n\nPower variants:\n\nBasic: parameters are fitted to the full set of trips,\n\n$$\nT^_{i,j}=\\theta\\frac{P_{i}^{\\alpha}P_{j}^{\\beta}}{d_{i,j}^{\\gamma}}\n$$\n\nUrbanicity: parameters are fitted to trips categorized by the urbanicity of the origin and destination (k = 1 : 4 for rural-rural, rural-urban, urban-rural, and urban-urban),\n\n$$\nT^_{i,j}=\\theta\\frac{P_{i}^{\\alpha_{k}}P_{j}^{\\beta_{k}}}{d_{i,j}^{\\gamma_{k}}}{k=1ifurbanicity_{i}=rural\u2227urbanicity_{j}=ruralk=2ifurbanicity_{i}=rural\u2227urbanicity_{j}=urbank=3ifurbanicity_{i}=urban\u2227urbanicity_{j}=ruralk=4ifurbanicity_{i}=urban\u2227urbanicity_{j}=urban\n$$\n\nRegional: parameters are fitted based on trips categorized by whether the origin and destination of a trip were both in the same region (intra-regional) or in different regions (inter-regional) (m = 1 : 2),\n\n$$\nT^_{i,j}=\\theta\\frac{P_{i}^{\\alpha_{m}}P_{j}^{\\beta_{m}}}{d_{i,j}^{\\gamma_{m}}}{m=1ifregion_{i}=region_{j}m=2ifregion_{i}\\neqregion_{j}\n$$\n\nRegional-Urbanicity: parameters are fitted to trips categorized by both the region and urbanicity of the origin and destination (n = 1 : 8 for intra-regional- rural-to-rural, inter-regional-rural-to-rural, etc.).\n\n$$\nT^_{i,j}=\\theta\\frac{P_{i}^{\\alpha_{n}}P_{j}^{\\beta_{n}}}{d_{i,j}^{\\gamma_{n}}}{n=1ifregion_{i}=region_{j}\u2227urbanicity_{i}=rural\u2227urbanicity_{j}=ruraln=2ifregion_{i}\\neqregion_{j}\u2227urbanicity_{i}=rural\u2227urbanicity_{j}=urbann=3ifregion_{i}=region_{j}\u2227urbanicity_{i}=urban\u2227urbanicity_{j}=ruraln=4ifregion_{i}\\neqregion_{j}\u2227urbanicity_{i}=urban\u2227urbanicity_{j}=urbann=5ifregion_{i}=region_{j}\u2227urbanicity_{i}=rural\u2227urbanicity_{j}=ruraln=6ifregion_{i}\\neqregion_{j}\u2227urbanicity_{i}=rural\u2227urbanicity_{j}=urbann=7ifregion_{i}=region_{j}\u2227urbanicity_{i}=urban\u2227urbanicity_{j}=ruraln=8ifregion_{i}\\neqregion_{j}\u2227urbanicity_{i}=urban\u2227urbanicity_{j}=urban\n$$\n\nExponential variants:\n\nBasic: parameters are fitted to the full set of trips,\n\n$$\nT^_{i,j}=\\theta\\frac{P_{i}^{\\alpha}P_{j}^{\\beta}}{exp(\\frac{d_{i,j}}{D})}\n$$\n\nUrbanicity: parameters are fitted to trips categorized by the urbanicity of the origin and destination (k = 1 : 4 for rural \u2013 rural, rural \u2013 urban, urban \u2013 rural, and urban \u2013 urban. See definitions in Equation 3),\n\n$$\nT^_{i,j}=\\theta\\frac{P_{i}^{\\alpha_{k}}P_{j}^{\\beta_{k}}}{exp(\\frac{d_{i,j}}{D_{k}})}\n$$\n\nRegional: parameters are fitted based on trips categorized by whether the origin and destination of a trip were both in the same region (intra-regional) or in different regions (inter-regional) (m = 1 : 2. See definitions in Equation 4),\n\n$$\nT^_{i,j}=\\theta\\frac{P_{i}^{\\alpha_{m}}P_{j}^{\\beta_{m}}}{exp(\\frac{d_{i,j}}{D_{m}})}\n$$\n\nRegional-Urbanicity: parameters are fitted to trips categorized by both the region and urbanicity of the origin and destination (n = 1 : 8 for intra-regional- rural-to-rural, inter-regional-rural-to-rural, etc. See definitions in Equation 5),\n\n$$\nT^_{i,j}=\\theta\\frac{P_{i}^{\\alpha_{n}}P_{j}^{\\beta_{n}}}{exp(\\frac{d_{i,j}}{D_{n}})}\n$$\n\nWe fit the gravity model parameters $\\theta,\\alpha,\\beta,\\gamma,andD$ to observed trip counts extracted from mobile phone data ($m_{i,j}$) using Bayesian inference, where the model likelihood was assumed to have Poisson error structure (Equation 10) and parameters were given uninformative Gamma priors. The gravity models were fitted to call data records using the R package \u2018mobility\u2019, which employs the JAGS (Just Another Gibbs Sampler) Bayesian MCMC algorithm and \u2018rjags\u2019 R package (found at https://github.com/COVID-19-Mobility-Data-Network/mobility, John, 2021). The posterior parameter estimates were then used to simulate human mobility patterns.\n\n$$\nm_{i,j}\u223c\u00a0Pois(T^_{i,j})\n$$\n\n### Radiation model\n\nLike the gravity model, the radiation model estimates a trip count, $T^_{i,j}$, as a function of origin and destination population size (Equation 11); however, it differs in the way that it assumes that the probability of making a trip is also influenced by nearby potential destinations (Simini et al., 2012). Thus, $T^_{i,j}$ is also dependent on the total population in the circle ($s_{i,j}$) centered at i with a radius equal to $d_{i,j}$, excluding populations in i and j, and we defined this value by summing the population sizes of districts that fell completely or partially within the radius. The number of trips emanating from origin i is $T_{i}=\\sigmaP_{i}$, where $\\sigma$ is the proportion of the entire country\u2019s population that traveled over a given time period $(P=\\sumiP_{i})$. We fit the parameters $\\sigma$ associated with each $T_{i,j}$ to trips calculated from mobile phone data ($m_{i,j}$) using a Poisson error structure (Equation 10). While additional forms of the radiation model have been explored elsewhere (Bj\u00f8rnstad et al., 2019), we focused on a form that normalizes $T_{i,j}$ for a finite system (Masucci et al., 2013).\n\n$$\nT^_{i,j}=\\frac{\\sigmaP_{i}}{1\u2212\\frac{P_{i}}{P}}\\frac{P_{i}P_{j}}{(P_{i}+s_{i,j})(P_{i}+P_{j}+s_{i,j})}\n$$\n\n### Model comparisons\n\nModels were compared using the Deviance Information Criterion (DIC), a criterion designed for MCMC outputs that assesses a model\u2019s trade-off between goodness of fit and complexity (Shriner and Yi, 2009; Spiegelhalter et al., 2002). Models fit to the same datasets (e.g., from the same country) were compared and those with the lowest DIC were selected as the best model. To determine the distribution of trips that were over- or underestimated for a given model, the ratio of estimated to observed trip counts for each route was calculated. Given that the distribution of ratios ranged nine orders of magnitude, the general accuracy of model estimates for specific trip types was evaluated by comparing the proportion of trips with model estimates that fell within \u00b110% of the observed trips.\n\n### Modifiable areal unit problem\n\nTo explore the impact of modifiable areal unit problem (MAUP) (e.g., the effect of the arbitrary definition of administrative units the spatial distribution of CDRs and population), we fit and compared models for a range of administrative units. We reran the gravity models with a power decay function at the administrative one unit (region) level for all countries and administrative three unit level for Burkina Faso, the only country whose dataset was supplied at the administrative three unit level. Note that the models involving regionality could not be run at the administrative one unit. Regardless of the administrative unit level used (e.g., smallest or largest district sizes), the general trend in model ranking was preserved (Supplementary file 2B).\n\n### Data availability\n\nA different form of the datasets from Kenya and Namibia that were negotiated in a prior negation are available as supplements of (Ruktanonchai et al., 2016 and Wesolowski et al., 2015b). Individuals interested in the dataset from Zambia may contact the authors with requests.\n",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "ce993fce-1af1-464e-88de-a9e12963021d",
+      "submission_id": "a274a521-5b72-4cb5-95bc-e69cf6e023cc",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jennifer Flegg, The University of Melbourne Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.68441.sa1](https://doi.org/10.7554/eLife.68441.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper presents a comparison of several mathematical models of human mobility in low and middle income settings, fitted to mobile phone usage data. This article is of particular interest to researchers within the field of human mobility studies, in addition it is also of potential interest to a broader audience with interests in the application of human movement patterns such as the spread of infectious diseases, health service access and utilization, logistics and more.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Characterizing human mobility patterns in rural settings of Sub-Saharan Africa\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Jennifer Flegg as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Aleksandra Walczak as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Francois Rerolle (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Is there data across more countries in Africa? If so, it would be great to see the applicability of the recommendations of models to similar settings.\n\n2) Can the authors be clearer about how they select which model was most appropriate for different contexts eg the interplay between model fit and model complexity?\n\n3) Can the authors comment on the likely suitability of the recommendations outside of Africa?\n\n4) Why were only 1.4% of randomly selected subscribers from the Burkina Faso provider included? Was this the only data provided to authors or was this the percentage of subscribers left once the authors excluded local movement within the district?\n\n5) Line 138 of the manuscript reads \"By comparing and evaluating a wide range of models\u2026\" This statement is too broad and potentially misleading given that all models (except the radiation model) utilised in this study are variations of the gravity model.\n\n6) Have the authors considered deriving an ensemble model as part of their future work? If they were to pursue this idea, it would be interesting to see the results from other interaction models first such as an intervening opportunities model.\n\n7) It would also be great to see something similar done for LMICs on a different continent, although I note this is beyond the scope of the current manuscript.\n\n8) Given the differences in time frame for call data records (provided in the supporting information) used for each country, this should be discussed in the Materials and methods section of the manuscript.\n\n9) The rationale behind the choice of the target interval of 0.5-2 times the observed trip counts determined to be appropriate for the percentage of estimated trips should be included.\n\n10) From the title, I was expecting a bit more description/characterization of what the human travel looks like on these settings. I believe the article needs to describe the overall patterns of human mobility highlighted in the data collected rather than focus too much on model performance. How many trips are there per inhabitants per year? How much does it depend on distance (simple interpretation of decay function: trips decreased by X% every 100km or something like that), population density (there are Y times as many trips to urban areas compared to rural areas). And how it varied across the 3 countries.\n\n11) The analysis ends up suggesting a variation of basic models with more parameters, adapted to the rural settings of sub-saharan Africa. Shouldn't the introduction provide more background on the performances of the basic models and their more parametrized variations in settings where they have been developed (high-income countries)? One would expect the basic model not to perform as well across all mobility settings of high-income countries. Similar adjustment for regionality and urbanicity may be needed (and previously evaluated) in more studied settings of rural America for instance?\n\n12) Figure 1 J-L: For those type of plots, it would be worth spending a sentence or two to describe interpretations. For the axis, I know there is a reference to supplementary materials but it took me a while to understand that these were just numbered locations? Same comment with respect to the coloring, what proportion is that referencing to? Within a destination? Overall? Why categorize the coloring and not use a continuous nuanced color palette? Breaking by log values seems arbitral and the bluest categories contains a very wide range of proportion (0.1 to 1). Also, have you considered sorting the locations by population density? It might convincingly demonstrate the limitations of the basic model.\n\n13) The introduction mentions other studies in LMIC that have adjusted basic models with individual levels factors such as education, SES, gender,etc and improved the fit. In this study, the authors propose a different and higher-level type of adjustment (regionality and urbanicity of trips' origin/destination). Are the authors also able to adjust for those individual level factors or are they absent from the mobile phone data? The comparison with previous work and improvements suggested in the article would be more convincing if both type of adjustment are done and combined on the same datasets. Otherwise we can't really compare the 2 approaches and advocate in favor of one or the other, can we?\n\n14) Stratifying models by features (urbanicity and regionality) limits generalizability to other settings important features and/or where cut points (e.g, between rural and urban) may need to be different. Thanks to Bayesian analysis, have the authors considered modeling parameters of the gravity models as continuous functions of population density instead? Although it would decrease interpretability of the results, it would improve generalizability of the work and potentially result in significant fit improvements.\n\n15) The authors compare models' performance based on % change in DIC. I am not as familiar with DIC, but I thought absolute changes (for AIC) were more relevant. Can the authors please clarify?\n\n16) Lines 275: The selected interval (1/2; 2) seems both arbitral and pretty wide. Could the authors elaborate a bit more on it?\n\n17) Figure 3B: Out of the gravity models, the bell curve for the basic model seems to be the closest to the 1:1 ratio except for the rural-rural trips. Doesn't this mean it is well performing?\n\n18) At first, it is a bit confusing to use similar notation for functions used in the equations to denote exponential/power decay f() and stratification of parameters f(all trips), f(urbanicity),\u2026. Can the authors please revise the notation?\n",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f4860cec-8659-4080-bdaf-9634dfc5acef",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C1",
+      "claim": "Human mobility is a core component of human behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Human mobility is a core component of human behavior and its quantification is critical for understanding its impact on infectious disease transmission, traffic forecasting, access to resources and care, intervention strategies, and migratory flows.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract introducing the importance of human mobility.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "8982cd00-7273-4481-9b0a-d55db747c3b5",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C2",
+      "claim": "Quantification of human mobility is critical for understanding its impact on infectious disease transmission, traffic forecasting, access to resources and care, intervention strategies, and migratory flows.",
+      "claim_type": "EXPLICIT",
+      "source": "Human mobility is a core component of human behavior and its quantification is critical for understanding its impact on infectious disease transmission, traffic forecasting, access to resources and care, intervention strategies, and migratory flows.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established scientific consensus about the applications of mobility data.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "d3447f31-07a7-4d99-95f2-6097804e6874",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C3",
+      "claim": "Spatial interaction models have been widely used to estimate human travel when mobility data are limited.",
+      "claim_type": "EXPLICIT",
+      "source": "When mobility data are limited, spatial interaction models have been widely used to estimate human travel, but have not been extensively validated in low- and middle-income settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about common practice in the field, supported by general knowledge and implied citations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "1ccb323d-4aa9-4bb6-924d-9e1eb5c5aa7e",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C4",
+      "claim": "Spatial interaction models have not been extensively validated in low- and middle-income settings.",
+      "claim_type": "EXPLICIT",
+      "source": "When mobility data are limited, spatial interaction models have been widely used to estimate human travel, but have not been extensively validated in low- and middle-income settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in the literature that motivates the study.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "cdb304fe-c47d-49f9-81a1-5e7734d4ce2f",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C5",
+      "claim": "Geographic, sociodemographic, and infrastructure differences may impact the ability for models to capture mobility patterns, particularly in rural settings.",
+      "claim_type": "EXPLICIT",
+      "source": "Geographic, sociodemographic, and infrastructure differences may impact the ability for models to capture these patterns, particularly in rural settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis or speculation about factors affecting model performance.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "66398dec-0b69-4c94-9784-4a0c35c6e3aa",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C6",
+      "claim": "Mobility patterns were analyzed from mobile phone data in four Sub-Saharan African countries (Namibia, Kenya, Burkina Faso, and Zambia).",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we analyzed mobility patterns inferred from mobile phone data in four Sub-Saharan African countries to investigate the ability for variants on gravity and radiation models to estimate travel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data sources used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "fa1f716c-f666-4a8f-b636-f4ddd817e263",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C7",
+      "claim": "Adjusting the gravity model such that parameters were fit to different trip types improved model fit in all four countries.",
+      "claim_type": "EXPLICIT",
+      "source": "Adjusting the gravity model such that parameters were fit to different trip types, including travel between more or less populated areas and/or different regions, improved model fit in all four countries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on the analysis performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "8ab568c4-ab14-4a2b-b931-4c689a0796c9",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C8",
+      "claim": "Trip types include travel between more or less populated areas and/or different regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Adjusting the gravity model such that parameters were fit to different trip types, including travel between more or less populated areas and/or different regions, improved model fit in all four countries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This defines the specific trip types considered in the model adjustments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "09d91009-7a13-4619-bb0e-089d081c40fe",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C9",
+      "claim": "Alternative models may be more useful in low- and middle-income settings and better able to capture the range of mobility patterns observed.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that alternative models may be more useful in these settings and better able to capture the range of mobility patterns observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the findings of improved model fit.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "428cc37a-5186-4db0-a5da-0a21a40e3bd7",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C10",
+      "claim": "Human mobility patterns reflect behaviors ranging from routine to irregular.",
+      "claim_type": "EXPLICIT",
+      "source": "Human mobility patterns are a reflection of behaviors, ranging from routine (e.g., commuting daily for work or school, traveling for holidays and religious gatherings, or seeking seasonal work opportunities) to irregular (e.g., relocating due to environmental changes or crises or social distancing due to a pandemic) (Charaudeau et al., 2014; Haberfeld et al., 1999; International Organization for Migration, 2019; Lessler et al., 2014; Lu et al., 2012; Pullano et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "17dc0cb0-7756-4e2b-8390-b709ac42c0d6",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C11",
+      "claim": "Characterizing human mobility patterns is important for predicting the spread of infectious diseases, traffic forecasting, designing intervention strategies, assessing health service accessibility, planning natural disaster relief efforts, and estimating migratory flows.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, characterizing human mobility patterns is important for a wide range of applications, including predicting the spread of infectious diseases, traffic forecasting, designing intervention strategies, assessing health service accessibility, planning natural disaster relief efforts, and estimating migratory flows to estimate changes in population demographics (Charaudeau et al., 2014; Dotse-Gborgbortsi et al., 2020; Findlater and Bogoch, 2018; Finger et al., 2016; Gilbert et al., 2020; Lu et al., 2012; Mari et al., 2017; Palchykov et al., 2014; Stoddard et al., 2009; Wesolowski et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations documenting these applications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "c89ae37c-c0d6-4ea2-b2e3-e01d49f93b1d",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C12",
+      "claim": "Data sources that can quantify travel include national censuses, traffic or commuting data, travel surveys, or mobile phone data.",
+      "claim_type": "EXPLICIT",
+      "source": "Depending on the spatial and temporal resolution of travel relevant to the question of interest, there are many data sources that can quantify travel, such as national censuses, traffic or commuting data, travel surveys, or mobile phone data (Tatem, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Tatem, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "3482e6a1-e09b-4b0f-9ca3-2825ec484bdc",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C13",
+      "claim": "Spatial interaction models are often used to estimate mobility patterns when mobility data are limited or unavailable.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when mobility data are limited or unavailable, spatial interaction models are often used to estimate mobility patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes common practice in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "406edd41-431f-4fd9-9154-c8d6569dc15c",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C14",
+      "claim": "The gravity model is one of the most commonly used spatial interaction models.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the most commonly used models is the gravity model (Wesolowski et al., 2015b), which assumes the number of trips between an origin and destination over a fixed time period will increase as a function of the destination and origin population sizes and decrease with distance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and describes the gravity model's assumptions.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "dcbfad68-647e-4e6b-b6cb-6425896dc8e5",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C15",
+      "claim": "The gravity model assumes the number of trips between an origin and destination will increase as a function of the destination and origin population sizes and decrease with distance.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the most commonly used models is the gravity model (Wesolowski et al., 2015b), which assumes the number of trips between an origin and destination over a fixed time period will increase as a function of the destination and origin population sizes and decrease with distance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the fundamental assumptions of the gravity model.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "2786a90e-3afb-43da-b155-d8407cf18c33",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C16",
+      "claim": "The gravity model was originally developed to describe commuting in a high-income setting.",
+      "claim_type": "EXPLICIT",
+      "source": "While the gravity model was originally developed to describe commuting in a high-income setting (Zipf, 1946), it has been used to model travel in low- and middle-income countries (LMICs) when data are limited or unavailable (Stone et al., 2019; Wells et al., 2019; Wesolowski et al., 2015b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Zipf, 1946.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "918dedca-e2b5-43c1-821b-624354f3daa4",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C17",
+      "claim": "The gravity model has been used to model travel in low- and middle-income countries when data are limited or unavailable.",
+      "claim_type": "EXPLICIT",
+      "source": "While the gravity model was originally developed to describe commuting in a high-income setting (Zipf, 1946), it has been used to model travel in low- and middle-income countries (LMICs) when data are limited or unavailable (Stone et al., 2019; Wells et al., 2019; Wesolowski et al., 2015b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations documenting this application.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "a1b3a15c-441a-4688-8801-dade09986477",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C18",
+      "claim": "The standard gravity model has been shown to perform well when predicting commuter movement between cities in high-income settings.",
+      "claim_type": "EXPLICIT",
+      "source": "In high-income settings, the standard gravity model has been shown to perform well when predicting commuter movement between cities (Masucci et al., 2013) and perform poorly when predicting movement across areas with heterogeneity in demographics and population density or in rural areas (Truscott and Ferguson, 2012; Xia et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Masucci et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "b025834e-d560-4ff6-9ac9-6971a4263b98",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C19",
+      "claim": "The standard gravity model performs poorly when predicting movement across areas with heterogeneity in demographics and population density or in rural areas.",
+      "claim_type": "EXPLICIT",
+      "source": "In high-income settings, the standard gravity model has been shown to perform well when predicting commuter movement between cities (Masucci et al., 2013) and perform poorly when predicting movement across areas with heterogeneity in demographics and population density or in rural areas (Truscott and Ferguson, 2012; Xia et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Truscott and Ferguson, 2012 and Xia et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "cd8539fa-27cd-40de-a6de-74e917cdc988",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C20",
+      "claim": "Over 67% of the global population owned mobile phones in 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing mobile phone ownership (over 67% of the global population in 2019) and the mobility patterns that can be extracted from these data provide a valuable resource for evaluating how well spatial interaction models can capture human mobility patterns in low- and middle-income settings (GSM Association, 2020; Wesolowski et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to GSM Association, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "4e23106f-7084-49d4-ac56-124c5de4ccdc",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C21",
+      "claim": "Mobile phone data provide a valuable resource for evaluating how well spatial interaction models can capture human mobility patterns in low- and middle-income settings.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing mobile phone ownership (over 67% of the global population in 2019) and the mobility patterns that can be extracted from these data provide a valuable resource for evaluating how well spatial interaction models can capture human mobility patterns in low- and middle-income settings (GSM Association, 2020; Wesolowski et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to GSM Association, 2020 and Wesolowski et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "20ba8bb2-669f-4d3c-869c-45066e9ed7d4",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C22",
+      "claim": "The challenge of procuring mobile phone datasets has resulted in relatively few studies that fit mobility models to relevant travel data from LMICs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the challenge of procuring mobile phone datasets has resulted in relatively few studies that fit mobility models to relevant travel data from LMICs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation in the existing literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "3e103059-8514-4fb5-95bb-4821f3b8564d",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C23",
+      "claim": "Predictions from gravity models can be improved by adjusting for factors such as education levels, economic opportunities, gender, environmental factors, trip duration, contiguity of origin and destination, and proportion of population living in urban areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, a few studies have explored model adjustments and show that predictions can be improved by adjusting the gravity model to account for factors such as education levels, economic opportunities, gender, environmental factors, trip duration, contiguity of origin and destination, and proportion of population living in urban areas (Garcia et al., 2015; Henry et al., 2003; Wesolowski et al., 2015b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Garcia et al., 2015; Henry et al., 2003; and Wesolowski et al., 2015b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "3fadb5fb-b81d-4c85-bca2-c91de5b0d472",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C24",
+      "claim": "Studies typically assume that factors impact all trips homogeneously, thus fitting a single set of parameters for all trips is a sufficient adjustment.",
+      "claim_type": "EXPLICIT",
+      "source": "Typically, studies assume that these factors impact all trips homogeneously, thus fitting a single set of parameters for all trips is a sufficient adjustment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a common assumption in existing studies.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "7ab568ca-877e-47f8-9e07-865cc16b3cfb",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C25",
+      "claim": "Gravity models may still fail to accurately capture mobility patterns in LMICs, particularly in rural areas, even with adjustments.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, even with such adjustments, gravity models may still fail to accurately capture mobility patterns in LMICs, particularly in rural areas (Henry et al., 2003; Wesolowski et al., 2015b), suggesting that models which account for regional heterogeneity in travel may improve their estimates in these settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Henry et al., 2003 and Wesolowski et al., 2015b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "d4094bd6-be17-4f66-b379-1e66e1d3032f",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C26",
+      "claim": "Models which account for regional heterogeneity in travel may improve their estimates in LMIC settings.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, even with such adjustments, gravity models may still fail to accurately capture mobility patterns in LMICs, particularly in rural areas (Henry et al., 2003; Wesolowski et al., 2015b), suggesting that models which account for regional heterogeneity in travel may improve their estimates in these settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the limitations of existing models.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "d76e7493-33db-4dc0-817a-761f2c54859c",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C27",
+      "claim": "The four countries studied (Namibia, Kenya, Burkina Faso, and Zambia) capture a range of levels of urbanization, population distribution, and include large rural areas common in many LMICs.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we examine the impact that regional heterogeneity and urbanicity has on travel patterns as well as how well spatial interaction models can reproduce travel patterns in LMICs by examining four countries in Sub-Saharan Africa: Namibia, Kenya, Burkina Faso, and Zambia (Figure 1A\u2013D). These countries capture a range of levels of urbanization, population distribution, and importantly include large rural areas common in many LMICs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the rationale for selecting these countries for the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "cc02b678-20f0-423c-aff9-c2f3d05b7ca7",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C28",
+      "claim": "The average number of monthly trips between districts from Namibia, Kenya, Burkina Faso, and Zambia generally decreased with trip distance.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to other studies, we found that the average number of monthly trips between districts from Namibia, Kenya, Burkina Faso, and Zambia generally decreased with trip distance and there were more trips from and to more populated areas (Figure 1E\u2013H, Figure 1\u2014figure supplements 1\u20138).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis of mobile phone data, shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "d7e329c9-3f94-47b5-acd5-a387cb7229a2",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C29",
+      "claim": "There were more trips from and to more populated areas in Namibia, Kenya, Burkina Faso, and Zambia.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to other studies, we found that the average number of monthly trips between districts from Namibia, Kenya, Burkina Faso, and Zambia generally decreased with trip distance and there were more trips from and to more populated areas (Figure 1E\u2013H, Figure 1\u2014figure supplements 1\u20138).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis of mobile phone data, shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "2321875f-d61c-4e17-a678-d3110e68e04e",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C30",
+      "claim": "Intra-regional trips made up 30% of all trips in Burkina Faso.",
+      "claim_type": "EXPLICIT",
+      "source": "Trips were concentrated between districts within the same region (administrative level 1) to varying degrees (intra-regional trips made up 30% of all trips in Burkina Faso, 45% in Kenya, 62% in Namibia, and 72% in Zambia) and to a few common destinations, including the district where the capital was located (Figure 1I\u2013L, Supplementary file 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "bbf62f05-b868-42c5-816f-06ce9bbe6835",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C31",
+      "claim": "Intra-regional trips made up 45% of all trips in Kenya.",
+      "claim_type": "EXPLICIT",
+      "source": "Trips were concentrated between districts within the same region (administrative level 1) to varying degrees (intra-regional trips made up 30% of all trips in Burkina Faso, 45% in Kenya, 62% in Namibia, and 72% in Zambia) and to a few common destinations, including the district where the capital was located (Figure 1I\u2013L, Supplementary file 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "7d20caa3-ad9b-4fc0-a11d-d12219eea0f2",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C32",
+      "claim": "Intra-regional trips made up 62% of all trips in Namibia.",
+      "claim_type": "EXPLICIT",
+      "source": "Trips were concentrated between districts within the same region (administrative level 1) to varying degrees (intra-regional trips made up 30% of all trips in Burkina Faso, 45% in Kenya, 62% in Namibia, and 72% in Zambia) and to a few common destinations, including the district where the capital was located (Figure 1I\u2013L, Supplementary file 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "efa42671-048f-49a2-8b97-c919022f7963",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C33",
+      "claim": "Intra-regional trips made up 72% of all trips in Zambia.",
+      "claim_type": "EXPLICIT",
+      "source": "Trips were concentrated between districts within the same region (administrative level 1) to varying degrees (intra-regional trips made up 30% of all trips in Burkina Faso, 45% in Kenya, 62% in Namibia, and 72% in Zambia) and to a few common destinations, including the district where the capital was located (Figure 1I\u2013L, Supplementary file 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "8f32e5a4-c675-4b5c-8241-2b1a4a60fe96",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C34",
+      "claim": "Trips were concentrated to a few common destinations, including the district where the capital was located.",
+      "claim_type": "EXPLICIT",
+      "source": "Trips were concentrated between districts within the same region (administrative level 1) to varying degrees (intra-regional trips made up 30% of all trips in Burkina Faso, 45% in Kenya, 62% in Namibia, and 72% in Zambia) and to a few common destinations, including the district where the capital was located (Figure 1I\u2013L, Supplementary file 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "858bce4f-b847-4a67-a9b6-118aeda283aa",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C35",
+      "claim": "Namibia consisted of ~95% predominantly rural districts.",
+      "claim_type": "EXPLICIT",
+      "source": "Although Namibia, Burkina Faso, and Zambia each consisted of ~95% predominantly rural districts, the distribution of monthly trips between urban and rural districts varied across countries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the study countries based on data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "b8a976c5-42c6-4ea5-8be1-2093fc049103",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C36",
+      "claim": "Burkina Faso consisted of ~95% predominantly rural districts.",
+      "claim_type": "EXPLICIT",
+      "source": "Although Namibia, Burkina Faso, and Zambia each consisted of ~95% predominantly rural districts, the distribution of monthly trips between urban and rural districts varied across countries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the study countries based on data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "e7a1723b-9a47-416d-b78c-bd9ee479b856",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C37",
+      "claim": "Zambia consisted of ~95% predominantly rural districts.",
+      "claim_type": "EXPLICIT",
+      "source": "Although Namibia, Burkina Faso, and Zambia each consisted of ~95% predominantly rural districts, the distribution of monthly trips between urban and rural districts varied across countries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the study countries based on data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "7580dee1-776d-4867-a5bb-10dbb8dc0bfe",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C38",
+      "claim": "The majority of Namibia's trips were between rural locations (62% of all trips).",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of Namibia's and Burkina Faso's trips were between rural locations (62% and 70.5% of all trips, respectively), while Zambia's trips were split between rural locations (53%) or rural and urban locations (46%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "73a39aa9-e11b-42db-9e7a-ed0a7069ebc9",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C39",
+      "claim": "The majority of Burkina Faso's trips were between rural locations (70.5% of all trips).",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of Namibia's and Burkina Faso's trips were between rural locations (62% and 70.5% of all trips, respectively), while Zambia's trips were split between rural locations (53%) or rural and urban locations (46%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "7c231b19-914f-46b6-a258-48849e19efa2",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C40",
+      "claim": "Zambia's trips were split between rural locations (53%) or rural and urban locations (46%).",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of Namibia's and Burkina Faso's trips were between rural locations (62% and 70.5% of all trips, respectively), while Zambia's trips were split between rural locations (53%) or rural and urban locations (46%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "a8fd13e6-4a8c-4e7c-8de7-a955d2caad90",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C41",
+      "claim": "Kenya had 56% predominantly urban districts.",
+      "claim_type": "EXPLICIT",
+      "source": "Kenya, with 56% predominantly urban districts, had the largest proportion of monthly trips between urban locations (70%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of Kenya based on data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "1550d77e-7ec9-466f-aabe-a55ca817504d",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C42",
+      "claim": "Kenya had the largest proportion of monthly trips between urban locations (70%).",
+      "claim_type": "EXPLICIT",
+      "source": "Kenya, with 56% predominantly urban districts, had the largest proportion of monthly trips between urban locations (70%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "3206e422-d42d-43e4-8ef0-02329f051801",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C43",
+      "claim": "Estimates from the basic gravity model overestimated trip counts.",
+      "claim_type": "EXPLICIT",
+      "source": "Estimates from this basic model overestimated trip counts and missed important features of the data, such as higher trip counts in short-distance and within-region trips, relative to long-distance and between-region trips (Figure 1E\u2013L, Figure 1\u2014figure supplements 1\u20138).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from comparing model estimates to observed data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "0fcdeae0-5c1b-479e-a019-00d4f70be9ec",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C44",
+      "claim": "The basic gravity model missed important features of the data, such as higher trip counts in short-distance and within-region trips, relative to long-distance and between-region trips.",
+      "claim_type": "EXPLICIT",
+      "source": "Estimates from this basic model overestimated trip counts and missed important features of the data, such as higher trip counts in short-distance and within-region trips, relative to long-distance and between-region trips (Figure 1E\u2013L, Figure 1\u2014figure supplements 1\u20138).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from comparing model estimates to observed data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "ccd6aaff-385d-49b2-a352-ce2d8ca6f799",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C45",
+      "claim": "Travel involving predominantly rural locations tended to be overestimated by the basic gravity model.",
+      "claim_type": "EXPLICIT",
+      "source": "Travel involving predominantly rural locations tended to be overestimated and these results were largely observed for both distance kernels and for all countries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model comparison analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "0ab8a01f-5f03-42d0-b53e-bf5b3ecf1d9b",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C46",
+      "claim": "All parameterized gravity models outperformed the basic model.",
+      "claim_type": "EXPLICIT",
+      "source": "All parameterized gravity models outperformed the basic model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from comparing model performance metrics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "4bcb221a-b630-4ce6-82e5-0601bdfec0bd",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C47",
+      "claim": "Allowing for parameters to be fit by urbanicity or region improved model fit to varying degrees, depending on the country.",
+      "claim_type": "EXPLICIT",
+      "source": "Allowing for parameters to be fit by urbanicity or region improved model fit to varying degrees, depending on the country (Table 1, Supplementary file 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model comparison analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "94243e4e-cd02-4934-a77b-b35cd6e39d3f",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C48",
+      "claim": "Accounting for urbanicity provided a larger improvement in model fit than region for all countries except Zambia.",
+      "claim_type": "EXPLICIT",
+      "source": "Accounting for urbanicity provided a larger improvement in model fit than region for all countries; however, this improvement was larger in Kenya and Burkina Faso than Namibia and was only observed for Zambia if the lower urbanicity threshold (10%) was implemented.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from comparing different model variants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "4ad6ef79-bbe8-4385-b60a-8c9a21792e7d",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C49",
+      "claim": "The regional-urbanicity model had the best fit for all countries.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the most complex model, the regional-urbanicity model, had the best fit for all countries (the power variant reduced the basic model's deviance information criterion (DIC) by 41% for Namibia, 30% for Kenya, 28% for Burkina Faso, and 16% for Zambia) (Table 1, Supplementary file 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding based on DIC comparisons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "65e8bbf8-ee57-4f39-82e3-b8719ad0ca9c",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C50",
+      "claim": "The power variant of the regional-urbanicity model reduced the basic model's DIC by 41% for Namibia.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the most complex model, the regional-urbanicity model, had the best fit for all countries (the power variant reduced the basic model's deviance information criterion (DIC) by 41% for Namibia, 30% for Kenya, 28% for Burkina Faso, and 16% for Zambia) (Table 1, Supplementary file 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific quantitative finding from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "2de52b9b-e081-43bb-85ba-fea4bfaa927d",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C51",
+      "claim": "The power variant of the regional-urbanicity model reduced the basic model's DIC by 30% for Kenya.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the most complex model, the regional-urbanicity model, had the best fit for all countries (the power variant reduced the basic model's deviance information criterion (DIC) by 41% for Namibia, 30% for Kenya, 28% for Burkina Faso, and 16% for Zambia) (Table 1, Supplementary file 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific quantitative finding from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "04ec4bea-1439-47e3-877a-4eab6328c6cc",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C52",
+      "claim": "The power variant of the regional-urbanicity model reduced the basic model's DIC by 28% for Burkina Faso.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the most complex model, the regional-urbanicity model, had the best fit for all countries (the power variant reduced the basic model's deviance information criterion (DIC) by 41% for Namibia, 30% for Kenya, 28% for Burkina Faso, and 16% for Zambia) (Table 1, Supplementary file 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific quantitative finding from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "438ce275-e207-4482-8c66-2722f6f7061f",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C53",
+      "claim": "The power variant of the regional-urbanicity model reduced the basic model's DIC by 16% for Zambia.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the most complex model, the regional-urbanicity model, had the best fit for all countries (the power variant reduced the basic model's deviance information criterion (DIC) by 41% for Namibia, 30% for Kenya, 28% for Burkina Faso, and 16% for Zambia) (Table 1, Supplementary file 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific quantitative finding from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "f4600ee2-1038-4f8e-b2cc-77f9fd3c8f79",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C54",
+      "claim": "The radiation model was the poorest performing in Namibia, Burkina Faso, and Zambia.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the radiation model had the most variable performance of all models, where it was the poorest performing in Namibia, Burkina Faso, and Zambia, but outperformed the basic gravity model (exponential form) in Kenya.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from comparing model performance across countries.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "4be24670-3a4c-4b4b-ae6b-27862d6212d8",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C55",
+      "claim": "The radiation model outperformed the basic gravity model (exponential form) in Kenya.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the radiation model had the most variable performance of all models, where it was the poorest performing in Namibia, Burkina Faso, and Zambia, but outperformed the basic gravity model (exponential form) in Kenya.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from comparing model performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "f5edd4a7-276f-48fb-8b6c-501e605ccb65",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C56",
+      "claim": "Differences in the population distribution and locations of more populated areas may be the cause of conflicting findings across countries for the radiation model.",
+      "claim_type": "EXPLICIT",
+      "source": "Differences in the population distribution (more heterogenous in Namibia, Burkina Faso, and Zambia than Kenya) and locations of more populated areas may be the cause of these conflicting findings across countries (Figure 1\u2014figure supplement 9; Linard et al., 2012; Masucci et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on observed differences and cited literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "b498ebe6-ca15-4551-ba61-96e79bd7261e",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C57",
+      "claim": "Including locations' urbanicity and/or region in a model will generally improve model fit across spatial scales.",
+      "claim_type": "EXPLICIT",
+      "source": "These results were consistent across a range of administrative levels (1-3), suggesting that including locations' urbanicity and/or region in a model will generally improve model fit across spatial scales (Supplementary file 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from sensitivity analyses across administrative levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "78a64837-af60-4153-8131-3f4026d5e7dc",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C58",
+      "claim": "Mobile phone data has inherent owner, user, and coverage biases, especially in LMICs where mobility data tend to be concentrated around urban areas and roads.",
+      "claim_type": "EXPLICIT",
+      "source": "Mobile phone data has inherent owner, user, and coverage biases, especially in LMICs where mobility data tend to be concentrated around urban areas and roads (Kraemer et al., 2020; Wesolowski et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known limitation supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "099d4a33-dca5-4656-bdf5-016193e75be2",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C59",
+      "claim": "The dataset from Burkina Faso was limited to 100,000 randomly selected subscribers (1.4% of Burkina Faso's Telecel Faso subscribers).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the dataset from Burkina Faso was limited to 100,000 randomly selected subscribers (1.4% of Burkina Faso's Telecel Faso subscribers).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific limitation of the Burkina Faso dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "51084d27-ca82-4414-a055-64e69d8634fb",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C60",
+      "claim": "The smaller sample size in Burkina Faso may have resulted in the models overestimating routes that were missed in the actual dataset due to relatively small trip counts.",
+      "claim_type": "EXPLICIT",
+      "source": "This smaller sample size may have resulted in the models overestimating routes that were missed in the actual dataset due to relatively small trip counts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the impact of the limited sample size.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "6fd5f9d6-b39e-418b-b0f1-68fbad9b8fca",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C61",
+      "claim": "Mobile phone data remain one of the most direct ways to gather information on a large population in LMICs.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless, mobile phone data remain one of the most direct ways to gather information on a large population in LMICs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the value of mobile phone data despite its limitations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "d969baf6-b51e-40af-adb2-eede6267676c",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C62",
+      "claim": "Models parameterized by different mobility data sources have produced different outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that models parameterized by different mobility data sources have produced different outcomes (Panigutti et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Panigutti et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "9371f885-3ac0-41b4-983c-f21f45fde91b",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C63",
+      "claim": "Longer distance trip (>20 km) patterns are similar across low- and high-income settings.",
+      "claim_type": "EXPLICIT",
+      "source": "The increasing availability of mobility data has enabled the comparison of global human mobility patterns and revealed that (a) longer distance trip ( > 20 km) patterns are similar across low- and high-income settings (Kraemer et al., 2020) and (b) that mobility patterns in rural (sparsely populated) areas differ from those in urban (densely populated) areas (Liu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kraemer et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "904cb338-9959-4a48-bdde-85b317c48a05",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C64",
+      "claim": "Mobility patterns in rural (sparsely populated) areas differ from those in urban (densely populated) areas.",
+      "claim_type": "EXPLICIT",
+      "source": "The increasing availability of mobility data has enabled the comparison of global human mobility patterns and revealed that (a) longer distance trip ( > 20 km) patterns are similar across low- and high-income settings (Kraemer et al., 2020) and (b) that mobility patterns in rural (sparsely populated) areas differ from those in urban (densely populated) areas (Liu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Liu et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "47cf3530-1c73-4e45-9972-80fd0450c1af",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C65",
+      "claim": "Findings based on trips aggregated to the region or district level will be generalizable to other countries from a range of income settings.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that our findings based on trips aggregated to the region or district level will be generalizable to other countries from a range of income settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the generalizability of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "c85cc0fb-6097-418e-8417-f300d6891cd7",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C66",
+      "claim": "Mobility patterns at smaller spatial scales appear to be different for low- and high-income settings.",
+      "claim_type": "EXPLICIT",
+      "source": "However, mobility patterns at smaller spatial scales appear to be different for low- and high-income settings (Kraemer et al., 2020), and requires further investigation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kraemer et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "39a43749-fb9e-4e76-a274-0580f096d90e",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C67",
+      "claim": "WorldPop population data for each country were analyzed as people per pixel for each district.",
+      "claim_type": "EXPLICIT",
+      "source": "WorldPop population data for each country were analyzed as people per pixel for each district (https://www.worldpop.org/) (Supplementary file 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source and method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "e06f6fbb-4752-4b9d-ba95-db5d9795a957",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C68",
+      "claim": "Districts with more or less than 50% urban grid cells were categorized as urban and rural, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "WorldPop gridded building pattern datasets were used to categorize grid cells of each district as urban or rural as described elsewhere ( Dooley et al., 2020) using QGIS v3.6. Districts with more or less than 50% urban grid cells were categorized as urban and rural, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method for categorizing districts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "c01f3a3b-dd13-4501-9dfa-2ce84ef896f1",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C69",
+      "claim": "The general trends in model fits remained the same when urban thresholds of 10% and 50% urban grid cells were compared.",
+      "claim_type": "EXPLICIT",
+      "source": "A sensitivity analysis in which urban thresholds of 10% and 50% urban grid cells were compared showed that, while the general trends in model fits remained the same, the overall model fits were worse for the lower threshold in all countries but Zambia (Supplementary file 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from a sensitivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "026cda32-79cc-4b13-9b77-dc5948a9a285",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C70",
+      "claim": "The overall model fits were worse for the lower threshold (10%) in all countries but Zambia.",
+      "claim_type": "EXPLICIT",
+      "source": "A sensitivity analysis in which urban thresholds of 10% and 50% urban grid cells were compared showed that, while the general trends in model fits remained the same, the overall model fits were worse for the lower threshold in all countries but Zambia (Supplementary file 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from a sensitivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "2d627865-c959-46b3-9b1c-14d0e8651899",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C71",
+      "claim": "Trip distances were defined as the haversine distance between centroids of districts.",
+      "claim_type": "EXPLICIT",
+      "source": "Trip distances were defined as the haversine distance between centroids of districts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method for calculating trip distances.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "09d7ac1a-f799-441d-9bf2-3ea88436286b",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C72",
+      "claim": "Two districts in Namibia did not have data (Oshakati and Uuvudhiya) and were excluded from analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Two districts in Namibia did not have data (Oshakati and Uuvudhiya) and were excluded from analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a data limitation specific to Namibia.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "10ceefa5-9251-4b80-a1f0-a89617e57d12",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C73",
+      "claim": "The Burkina Faso provider shared CDRs from a subset of randomly selected subscribers (100,000, ~ 1.4% of subscribers).",
+      "claim_type": "EXPLICIT",
+      "source": "The Burkina Faso provider shared CDRs from a subset of randomly selected subscribers (100,000, ~ 1.4% of subscribers), as opposed to the other countries' providers that shared CDRs from all of their subscribers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific characteristic of the Burkina Faso dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "47c3b7a8-8017-4c8c-bcec-0fe569a8ce44",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C74",
+      "claim": "Namibia's CDR dataset ran from October 2, 2010 to April 30, 2014.",
+      "claim_type": "EXPLICIT",
+      "source": "The duration of and year(s) covered by the CDR datasets varied by country, defined by different data sharing agreements: Namibia's ran October 2, 2010 \u2013 April 30, 2014; Kenya's ran June 1, 2008 \u2013 July 3, 2009 (excluding the month of February, 2009); Burkina Faso's ran January 1, 2016 \u2013 December 31, 2016; and Zambia's ran August 1, 2020 \u2013 December 30, 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the temporal coverage of the Namibia dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "31af19fd-9176-4426-987b-71133f9117b5",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C75",
+      "claim": "Kenya's CDR dataset ran from June 1, 2008 to July 3, 2009 (excluding the month of February, 2009).",
+      "claim_type": "EXPLICIT",
+      "source": "The duration of and year(s) covered by the CDR datasets varied by country, defined by different data sharing agreements: Namibia's ran October 2, 2010 \u2013 April 30, 2014; Kenya's ran June 1, 2008 \u2013 July 3, 2009 (excluding the month of February, 2009); Burkina Faso's ran January 1, 2016 \u2013 December 31, 2016; and Zambia's ran August 1, 2020 \u2013 December 30, 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the temporal coverage of the Kenya dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "6c8dcc79-5bfd-404e-a8ab-ef4313bc600d",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C76",
+      "claim": "Burkina Faso's CDR dataset ran from January 1, 2016 to December 31, 2016.",
+      "claim_type": "EXPLICIT",
+      "source": "The duration of and year(s) covered by the CDR datasets varied by country, defined by different data sharing agreements: Namibia's ran October 2, 2010 \u2013 April 30, 2014; Kenya's ran June 1, 2008 \u2013 July 3, 2009 (excluding the month of February, 2009); Burkina Faso's ran January 1, 2016 \u2013 December 31, 2016; and Zambia's ran August 1, 2020 \u2013 December 30, 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the temporal coverage of the Burkina Faso dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "315e3a84-92da-49e1-8152-e6e3184de44c",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C77",
+      "claim": "Zambia's CDR dataset ran from August 1, 2020 to December 30, 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "The duration of and year(s) covered by the CDR datasets varied by country, defined by different data sharing agreements: Namibia's ran October 2, 2010 \u2013 April 30, 2014; Kenya's ran June 1, 2008 \u2013 July 3, 2009 (excluding the month of February, 2009); Burkina Faso's ran January 1, 2016 \u2013 December 31, 2016; and Zambia's ran August 1, 2020 \u2013 December 30, 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the temporal coverage of the Zambia dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "31f3a36a-54f0-45da-a6ef-114db5398ce5",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C78",
+      "claim": "Only travel that crossed district boundaries was considered, not local movement within the district.",
+      "claim_type": "EXPLICIT",
+      "source": "We only considered travel that crossed district boundaries, not local movement within the district.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological choice in defining trips.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "011bf0d8-709a-4d98-a92f-d5bf6fc5c855",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C82",
+      "claim": "The gravity models were fitted using the R package 'mobility', which employs the JAGS Bayesian MCMC algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "The gravity models were fitted to call data records using the R package 'mobility', which employs the JAGS (Just Another Gibbs Sampler) Bayesian MCMC algorithm and 'rjags' R package (found at https://github.com/COVID-19-Mobility-Data-Network/mobility, John, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational tools used for model fitting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "5dbba18d-c784-406d-81b7-299255bafa65",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C83",
+      "claim": "Models were compared using the Deviance Information Criterion (DIC).",
+      "claim_type": "EXPLICIT",
+      "source": "Models were compared using the Deviance Information Criterion (DIC), a criterion designed for MCMC outputs that assesses a model's trade-off between goodness of fit and complexity (Shriner and Yi, 2009; Spiegelhalter et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method for model comparison, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "98b80a8f-5adc-490c-a23c-ef16dd22c516",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C84",
+      "claim": "Models with the lowest DIC were selected as the best model.",
+      "claim_type": "EXPLICIT",
+      "source": "Models fit to the same datasets (e.g., from the same country) were compared and those with the lowest DIC were selected as the best model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the criterion for selecting the best model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "32a3ebc6-32bd-406f-abd1-7303f80dff4c",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C85",
+      "claim": "The general accuracy of model estimates for specific trip types was evaluated by comparing the proportion of trips with model estimates that fell within \u00b110% of the observed trips.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the distribution of ratios ranged nine orders of magnitude, the general accuracy of model estimates for specific trip types was evaluated by comparing the proportion of trips with model estimates that fell within \u00b110% of the observed trips.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method for evaluating model accuracy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "4c7fc17b-fcbb-4b8b-9fd6-600557a62cb1",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C86",
+      "claim": "The general trend in model ranking was preserved regardless of the administrative unit level used.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of the administrative unit level used (e.g., smallest or largest district sizes), the general trend in model ranking was preserved (Supplementary file 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from sensitivity analyses across administrative levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "bec361b6-5bc4-4e2a-8144-e4aa1a48dac3",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C87",
+      "claim": "The regional-urbanicity model produced some of the most accurate model estimates (\u00b110% of the observed trip counts) for most trip types in Namibia (11/14 trip categories).",
+      "claim_type": "EXPLICIT",
+      "source": "Unsurprisingly, the regional-urbanicity model (with either the exponential or power decay) produced some of the most accurate model estimates ( \u00b1 10% of the observed trip counts) for most trip types in Namibia (11/14 trip categories), Kenya (7/14 trip categories), and Burkina Faso (6/9 trip categories) (Supplementary file 3A); however, the regional model produced the most accurate estimates for a range of trips in Zambia (5/13).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from evaluating model accuracy by trip type.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "cfb7625d-4950-431b-8bd6-d968b85fba98",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C88",
+      "claim": "The regional-urbanicity model produced some of the most accurate model estimates (\u00b110% of the observed trip counts) for most trip types in Kenya (7/14 trip categories).",
+      "claim_type": "EXPLICIT",
+      "source": "Unsurprisingly, the regional-urbanicity model (with either the exponential or power decay) produced some of the most accurate model estimates ( \u00b1 10% of the observed trip counts) for most trip types in Namibia (11/14 trip categories), Kenya (7/14 trip categories), and Burkina Faso (6/9 trip categories) (Supplementary file 3A); however, the regional model produced the most accurate estimates for a range of trips in Zambia (5/13).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from evaluating model accuracy by trip type.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "fda2f249-39ba-409a-8fba-2d85f6d1c89b",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C89",
+      "claim": "The regional-urbanicity model produced some of the most accurate model estimates (\u00b110% of the observed trip counts) for most trip types in Burkina Faso (6/9 trip categories).",
+      "claim_type": "EXPLICIT",
+      "source": "Unsurprisingly, the regional-urbanicity model (with either the exponential or power decay) produced some of the most accurate model estimates ( \u00b1 10% of the observed trip counts) for most trip types in Namibia (11/14 trip categories), Kenya (7/14 trip categories), and Burkina Faso (6/9 trip categories) (Supplementary file 3A); however, the regional model produced the most accurate estimates for a range of trips in Zambia (5/13).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from evaluating model accuracy by trip type.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "f994ca14-e92f-4702-977d-c2fd00d87354",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C90",
+      "claim": "The regional model produced the most accurate estimates for a range of trips in Zambia (5/13).",
+      "claim_type": "EXPLICIT",
+      "source": "Unsurprisingly, the regional-urbanicity model (with either the exponential or power decay) produced some of the most accurate model estimates ( \u00b1 10% of the observed trip counts) for most trip types in Namibia (11/14 trip categories), Kenya (7/14 trip categories), and Burkina Faso (6/9 trip categories) (Supplementary file 3A); however, the regional model produced the most accurate estimates for a range of trips in Zambia (5/13).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from evaluating model accuracy by trip type.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "b489fbd5-0284-48c8-8c2f-36cc7d8fc6a5",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C91",
+      "claim": "The proportion of trips estimated within the 10% margin of error was lowest for Kenya, with the most accurate models only well estimating 3\u20137% of trips.",
+      "claim_type": "EXPLICIT",
+      "source": "The proportion of trips estimated within the 10% margin of error was lowest for Kenya, with the most accurate models only well estimating 3\u20137% of trips, and highest for Namibia, with some models estimating >30% of certain trip types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from evaluating model accuracy across countries.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "1910b402-5234-4ac4-a51a-df0cd6880951",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C92",
+      "claim": "The proportion of trips estimated within the 10% margin of error was highest for Namibia, with some models estimating >30% of certain trip types.",
+      "claim_type": "EXPLICIT",
+      "source": "The proportion of trips estimated within the 10% margin of error was lowest for Kenya, with the most accurate models only well estimating 3\u20137% of trips, and highest for Namibia, with some models estimating >30% of certain trip types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from evaluating model accuracy across countries.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "faabc463-218d-4b63-82bd-b5890d123e9f",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C93",
+      "claim": "Accounting for region may be sufficient for best capturing rural-to-rural as well as general or specific inter-regional travel in Namibia.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that just accounting for region may be sufficient for best capturing rural-to-rural as well as general or specific inter-regional travel in Namibia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding about which model works best for specific trip types in Namibia.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "765a2cbb-a791-4eff-82d7-7fb4ed43619c",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C94",
+      "claim": "A wide range of trip types was well estimated by the radiation model in Kenya.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, a wide range of trip types was well estimated by the radiation model in Kenya and by a basic model (exponential decay) in Zambia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding about which model works best for Kenya.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "6cbe7895-1831-4da8-9a4c-a47ae6081278",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C95",
+      "claim": "A wide range of trip types was well estimated by a basic model (exponential decay) in Zambia.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, a wide range of trip types was well estimated by the radiation model in Kenya and by a basic model (exponential decay) in Zambia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding about which model works best for Zambia.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "74a65731-5e88-4835-836c-8c0fc679d2c3",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C96",
+      "claim": "There have been limited evaluations of mobility patterns in Sub-Saharan African countries.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, there have been limited evaluations of mobility patterns in Sub-Saharan African countries and how the geographic, demographic, and economic differences in many LMICs impact the validity of modeling assumptions to estimate travel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "0197bb61-2f38-4c94-bc3a-9210d0a0f630",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C97",
+      "claim": "Clear patterns of travel were not well approximated using a basic gravity model.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparing and evaluating a range of gravity models in four Sub-Saharan African countries, we identified clear patterns of travel that were not well approximated using a basic gravity model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "73199ece-dfb4-4057-80e0-55ad7755c544",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C98",
+      "claim": "The best fitting model allowed for the greatest flexibility for estimating different trip types.",
+      "claim_type": "EXPLICIT",
+      "source": "By allowing these models to accommodate differences in travel between predominantly rural and/or urban areas and within- versus between-regions, we found that the best fitting model allowed for the greatest flexibility for estimating different trip types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the model comparison analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "2bd2f01c-72e7-4e52-a1d5-7f4f09cc511a",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C99",
+      "claim": "There were differences in which model was best able to estimate particular types of travel, the importance of distance and population, and the overall fit of all models to the data by country.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there were differences in which model was best able to estimate particular types of travel, the importance of distance and population, and the overall fit of all models to the data by country.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes the heterogeneity in findings across countries.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "81ae9824-e29d-474a-b0a4-ce627838a870",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C100",
+      "claim": "Selecting a model that adjusts for the trip type and context of interest is important for improving estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, selecting a model that adjusts for the trip type and context of interest is important for improving estimates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the study findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "cd87a952-b77d-42c7-9fae-397ebb04caab",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C101",
+      "claim": "An ensemble model could mitigate the need to select a single model and improve estimates of mobility patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Moving forward, the need to select a single model could be mitigated and estimates of mobility patterns could be improved by developing an ensemble model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "792b4029-44ba-4c68-8740-3535c79011fb",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C102",
+      "claim": "An ensemble model outperformed individual models in estimating human mobility patterns in Australia.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, an ensemble model outperformed individual models in estimating human mobility patterns in Australia, combining different mobility models as well as data types to optimize mobility estimates across different spatial scales (McCulloch et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to McCulloch et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "f75fdb9c-37c4-45a7-b019-e8f4a206a109",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C103",
+      "claim": "Model estimates of travel patterns in high-income countries may also benefit from accounting for urbanicity and regionality.",
+      "claim_type": "EXPLICIT",
+      "source": "Model estimates of travel patterns in high-income countries may also benefit from accounting for urbanicity and regionality (Truscott and Ferguson, 2012; Xia et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "14c34a19-93f8-41a6-b549-f7867699cd92",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C104",
+      "claim": "Longer distance trip (>20 km) patterns are similar across low- and high-income settings.",
+      "claim_type": "EXPLICIT",
+      "source": "The increasing availability of mobility data has enabled the comparison of global human mobility patterns and revealed that (a) longer distance trip ( > 20 km) patterns are similar across low- and high-income settings (Kraemer et al., 2020) and (b) that mobility patterns in rural (sparsely populated) areas differ from those in urban (densely populated) areas (Liu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kraemer et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "a5691ff9-9f0a-4688-aeab-e01cf992d153",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "claim_id": "C105",
+      "claim": "Mobility patterns at smaller spatial scales appear to be different for low- and high-income settings and require further investigation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, mobility patterns at smaller spatial scales appear to be different for low- and high-income settings (Kraemer et al., 2020), and requires further investigation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a need for future research, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "033a1430-3c2d-4ade-b2b0-f43b96e18267",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Mobility patterns in four Sub-Saharan African countries show that trips generally decrease with distance and increase with population size, with varying proportions of intra-regional travel (30-72%) and different distributions of urban-rural trips across countries.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C42 provide detailed descriptive statistics from mobile phone data analysis across four countries, showing consistent patterns of distance decay and population effects, with specific quantitative findings for trip distributions. The data are presented with supporting figures and represent direct observations from the datasets.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "03f34980-0318-484e-90c0-ae9f080ed232",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The basic gravity model overestimated trip counts and failed to capture important features such as higher short-distance and within-region trip counts, particularly overestimating travel involving rural locations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45 describe specific shortcomings of the basic gravity model when compared to observed data, supported by figures showing model-data comparisons. These findings directly motivate the development of more complex model variants.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "34b3c8df-a7e3-4e26-9b14-7d4d83e0c36b",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "All parameterized gravity models outperformed the basic model, with the regional-urbanicity model providing the best fit across all four countries, reducing DIC by 16-41% depending on country.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C53 present the core comparative results using DIC as the model selection criterion. The findings are quantitative, specific to each country, and supported by Table 1 and supplementary files. The statistical approach using DIC for Bayesian model comparison is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "fe068941-d147-4edd-b98c-874b0563d580",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The radiation model showed variable performance across countries, performing poorly in Namibia, Burkina Faso, and Zambia but outperforming the basic gravity model in Kenya, possibly due to differences in population distribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 describe the radiation model's performance with specific country-level results and offer a plausible explanation based on population heterogeneity. The inference about population distribution is supported by citations and visual evidence in Figure 1\u2014figure supplement 9.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "7ff1c9ea-acb7-4b98-a44c-24b4bf7d7c3f",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Model improvements from including urbanicity and region were consistent across administrative levels 1-3, suggesting general applicability across spatial scales.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57 and C86 report findings from sensitivity analyses testing the robustness of results across different spatial aggregations. This addresses the modifiable areal unit problem and strengthens the generalizability of the findings, supported by Supplementary file 2B.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "81beb7d7-d8b9-44b3-bf6f-c170d75d23c5",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The regional-urbanicity model produced the most accurate estimates (\u00b110% of observed) for most trip types in Namibia, Kenya, and Burkina Faso, while the regional model performed best in Zambia, with accuracy varying substantially by country (3-7% in Kenya vs >30% in Namibia).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C92 provide detailed accuracy assessments using a \u00b110% threshold, showing country-specific patterns in model performance. The findings are supported by Supplementary file 3A and demonstrate that overall model fit (DIC) doesn't always correspond to accuracy for specific trip types.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "aeabf202-86ae-4f80-8540-663e89165dee",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Simpler models may be sufficient for specific trip types: the regional model best captures rural-to-rural and inter-regional travel in Namibia, the radiation model performs well for various trip types in Kenya, and the basic exponential model works well in Zambia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C95 provide practical guidance on model selection for specific applications, based on the trip-type-specific accuracy analysis. These findings are important for applied work but represent secondary analyses of the main results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "2bdf7ea8-ad73-40a4-a86b-6e98dea91a52",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Mobile phone data have inherent biases in LMICs, and the Burkina Faso dataset was limited to 1.4% of subscribers, which may have caused models to overestimate routes with small trip counts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 acknowledge important limitations of the data sources. C58 is supported by citations, C59 is a factual description of the dataset, and C60 is reasonable speculation about the impact of limited sampling. These are appropriately discussed as caveats.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "c00c7706-1b7e-45ce-add1-31aba8b5fb27",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Longer distance trips (>20 km) show similar patterns across income settings, while rural-urban differences exist globally, suggesting findings may generalize to other countries at the district/region level but require further investigation at smaller spatial scales.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C63-C64 are supported by citations to prior work, but claims C65-C66 make inferences about generalizability that extend beyond the data presented. While the reasoning is plausible, the generalizability claims require validation in additional settings not included in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "adf7e2d9-f00c-4271-a202-5909ba246d28",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study used WorldPop data for population and urbanicity classification (50% urban threshold), mobile phone CDRs from four countries with varying temporal coverage, haversine distances between district centroids, Bayesian MCMC fitting via JAGS, and DIC for model comparison.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C85 describe the methodological details including data sources, processing steps, model fitting procedures, and evaluation metrics. These are clearly documented and appropriate for the analysis, though some choices (e.g., 50% urban threshold, \u00b110% accuracy criterion) are somewhat arbitrary.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "dfc1bde8-de89-4784-9eb7-f8a312d80bbe",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study identified clear travel patterns not well approximated by basic gravity models, with the best-fitting model allowing flexibility for different trip types, though optimal models varied by country and trip type, necessitating context-specific model selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C100 summarize the main conclusions of the study. These are well-supported by the empirical findings (C43-C95) and represent appropriate synthesis of the results. The recommendation for context-specific model selection (C100) follows logically from the observed heterogeneity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "1c107ddc-d1ea-4095-b7f3-e3770d08e860",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Future work could develop ensemble models to improve mobility estimates, as demonstrated in Australia, and high-income countries may also benefit from accounting for urbanicity and regionality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C101 and C103 are speculative suggestions for future work, appropriately framed as possibilities. C102 provides supporting evidence from prior work via citation. These represent reasonable extensions of the findings but are not tested in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "d6f8fe37-2669-4bdf-9bfe-c43bfc99530e",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Human mobility is a core component of human behavior with applications in disease transmission, traffic forecasting, intervention strategies, and other domains, encompassing both routine and irregular movement patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C10-C11 provide background context supported by general knowledge and multiple citations. These establish the importance and scope of mobility research but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "534fccbf-4c37-4533-9169-8cb8d154ed1b",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Spatial interaction models, particularly gravity models, are widely used when mobility data are limited, but have not been extensively validated in LMICs and may fail to capture patterns in rural and heterogeneous areas even with adjustments, suggesting models accounting for regional heterogeneity may improve estimates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4, C13-C19, C22-C26, and C96 establish the research gap and motivation for the study. These are supported by citations to prior work and accurately characterize the state of knowledge, identifying the specific problem this study addresses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "131c3841-02c6-4a92-b036-84da178f1977",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study analyzed mobile phone data from four Sub-Saharan African countries selected to capture a range of urbanization levels and population distributions, finding that adjusting gravity models for different trip types improved fit and suggesting alternative models may be more useful in LMIC settings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C9 and C27 describe the study design and main conclusion. These are well-supported by the detailed results presented in other claim groups. The selection of countries is justified and the main conclusion follows from the empirical findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    },
+    {
+      "id": "74d0274b-0113-47ad-a89b-b3d4da40a2e6",
+      "content_id": "2b66018a-135a-477f-85ed-34fe4782d661",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Various data sources can quantify travel, with mobile phone data (67% global ownership in 2019) providing valuable resources for evaluating mobility models in LMICs despite procurement challenges and potential differences when using different data sources.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12, C20-C21, C61-C62 discuss data sources for mobility research, supported by citations. These provide context for the methodological choices and acknowledge limitations, though C62's point about different data sources producing different outcomes is noted but not explored in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:34:04.718182Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "cc02b678-20f0-423c-aff9-c2f3d05b7ca7",
+      "result_id": "033a1430-3c2d-4ade-b2b0-f43b96e18267"
+    },
+    {
+      "claim_id": "d7e329c9-3f94-47b5-acd5-a387cb7229a2",
+      "result_id": "033a1430-3c2d-4ade-b2b0-f43b96e18267"
+    },
+    {
+      "claim_id": "2321875f-d61c-4e17-a678-d3110e68e04e",
+      "result_id": "033a1430-3c2d-4ade-b2b0-f43b96e18267"
+    },
+    {
+      "claim_id": "bbf62f05-b868-42c5-816f-06ce9bbe6835",
+      "result_id": "033a1430-3c2d-4ade-b2b0-f43b96e18267"
+    },
+    {
+      "claim_id": "7d20caa3-ad9b-4fc0-a11d-d12219eea0f2",
+      "result_id": "033a1430-3c2d-4ade-b2b0-f43b96e18267"
+    },
+    {
+      "claim_id": "efa42671-048f-49a2-8b97-c919022f7963",
+      "result_id": "033a1430-3c2d-4ade-b2b0-f43b96e18267"
+    },
+    {
+      "claim_id": "8f32e5a4-c675-4b5c-8241-2b1a4a60fe96",
+      "result_id": "033a1430-3c2d-4ade-b2b0-f43b96e18267"
+    },
+    {
+      "claim_id": "858bce4f-b847-4a67-a9b6-118aeda283aa",
+      "result_id": "033a1430-3c2d-4ade-b2b0-f43b96e18267"
+    },
+    {
+      "claim_id": "b8a976c5-42c6-4ea5-8be1-2093fc049103",
+      "result_id": "033a1430-3c2d-4ade-b2b0-f43b96e18267"
+    },
+    {
+      "claim_id": "e7a1723b-9a47-416d-b78c-bd9ee479b856",
+      "result_id": "033a1430-3c2d-4ade-b2b0-f43b96e18267"
+    },
+    {
+      "claim_id": "7580dee1-776d-4867-a5bb-10dbb8dc0bfe",
+      "result_id": "033a1430-3c2d-4ade-b2b0-f43b96e18267"
+    },
+    {
+      "claim_id": "73a39aa9-e11b-42db-9e7a-ed0a7069ebc9",
+      "result_id": "033a1430-3c2d-4ade-b2b0-f43b96e18267"
+    },
+    {
+      "claim_id": "7c231b19-914f-46b6-a258-48849e19efa2",
+      "result_id": "033a1430-3c2d-4ade-b2b0-f43b96e18267"
+    },
+    {
+      "claim_id": "a8fd13e6-4a8c-4e7c-8de7-a955d2caad90",
+      "result_id": "033a1430-3c2d-4ade-b2b0-f43b96e18267"
+    },
+    {
+      "claim_id": "1550d77e-7ec9-466f-aabe-a55ca817504d",
+      "result_id": "033a1430-3c2d-4ade-b2b0-f43b96e18267"
+    },
+    {
+      "claim_id": "3206e422-d42d-43e4-8ef0-02329f051801",
+      "result_id": "03f34980-0318-484e-90c0-ae9f080ed232"
+    },
+    {
+      "claim_id": "0fcdeae0-5c1b-479e-a019-00d4f70be9ec",
+      "result_id": "03f34980-0318-484e-90c0-ae9f080ed232"
+    },
+    {
+      "claim_id": "ccd6aaff-385d-49b2-a352-ce2d8ca6f799",
+      "result_id": "03f34980-0318-484e-90c0-ae9f080ed232"
+    },
+    {
+      "claim_id": "0ab8a01f-5f03-42d0-b53e-bf5b3ecf1d9b",
+      "result_id": "34b3c8df-a7e3-4e26-9b14-7d4d83e0c36b"
+    },
+    {
+      "claim_id": "4bcb221a-b630-4ce6-82e5-0601bdfec0bd",
+      "result_id": "34b3c8df-a7e3-4e26-9b14-7d4d83e0c36b"
+    },
+    {
+      "claim_id": "94243e4e-cd02-4934-a77b-b35cd6e39d3f",
+      "result_id": "34b3c8df-a7e3-4e26-9b14-7d4d83e0c36b"
+    },
+    {
+      "claim_id": "4ad6ef79-bbe8-4385-b60a-8c9a21792e7d",
+      "result_id": "34b3c8df-a7e3-4e26-9b14-7d4d83e0c36b"
+    },
+    {
+      "claim_id": "65e8bbf8-ee57-4f39-82e3-b8719ad0ca9c",
+      "result_id": "34b3c8df-a7e3-4e26-9b14-7d4d83e0c36b"
+    },
+    {
+      "claim_id": "2de52b9b-e081-43bb-85ba-fea4bfaa927d",
+      "result_id": "34b3c8df-a7e3-4e26-9b14-7d4d83e0c36b"
+    },
+    {
+      "claim_id": "04ec4bea-1439-47e3-877a-4eab6328c6cc",
+      "result_id": "34b3c8df-a7e3-4e26-9b14-7d4d83e0c36b"
+    },
+    {
+      "claim_id": "438ce275-e207-4482-8c66-2722f6f7061f",
+      "result_id": "34b3c8df-a7e3-4e26-9b14-7d4d83e0c36b"
+    },
+    {
+      "claim_id": "f4600ee2-1038-4f8e-b2cc-77f9fd3c8f79",
+      "result_id": "fe068941-d147-4edd-b98c-874b0563d580"
+    },
+    {
+      "claim_id": "4be24670-3a4c-4b4b-ae6b-27862d6212d8",
+      "result_id": "fe068941-d147-4edd-b98c-874b0563d580"
+    },
+    {
+      "claim_id": "f5edd4a7-276f-48fb-8b6c-501e605ccb65",
+      "result_id": "fe068941-d147-4edd-b98c-874b0563d580"
+    },
+    {
+      "claim_id": "b498ebe6-ca15-4551-ba61-96e79bd7261e",
+      "result_id": "7ff1c9ea-acb7-4b98-a44c-24b4bf7d7c3f"
+    },
+    {
+      "claim_id": "4c7fc17b-fcbb-4b8b-9fd6-600557a62cb1",
+      "result_id": "7ff1c9ea-acb7-4b98-a44c-24b4bf7d7c3f"
+    },
+    {
+      "claim_id": "bec361b6-5bc4-4e2a-8144-e4aa1a48dac3",
+      "result_id": "81beb7d7-d8b9-44b3-bf6f-c170d75d23c5"
+    },
+    {
+      "claim_id": "cfb7625d-4950-431b-8bd6-d968b85fba98",
+      "result_id": "81beb7d7-d8b9-44b3-bf6f-c170d75d23c5"
+    },
+    {
+      "claim_id": "fda2f249-39ba-409a-8fba-2d85f6d1c89b",
+      "result_id": "81beb7d7-d8b9-44b3-bf6f-c170d75d23c5"
+    },
+    {
+      "claim_id": "f994ca14-e92f-4702-977d-c2fd00d87354",
+      "result_id": "81beb7d7-d8b9-44b3-bf6f-c170d75d23c5"
+    },
+    {
+      "claim_id": "b489fbd5-0284-48c8-8c2f-36cc7d8fc6a5",
+      "result_id": "81beb7d7-d8b9-44b3-bf6f-c170d75d23c5"
+    },
+    {
+      "claim_id": "1910b402-5234-4ac4-a51a-df0cd6880951",
+      "result_id": "81beb7d7-d8b9-44b3-bf6f-c170d75d23c5"
+    },
+    {
+      "claim_id": "faabc463-218d-4b63-82bd-b5890d123e9f",
+      "result_id": "aeabf202-86ae-4f80-8540-663e89165dee"
+    },
+    {
+      "claim_id": "765a2cbb-a791-4eff-82d7-7fb4ed43619c",
+      "result_id": "aeabf202-86ae-4f80-8540-663e89165dee"
+    },
+    {
+      "claim_id": "6cbe7895-1831-4da8-9a4c-a47ae6081278",
+      "result_id": "aeabf202-86ae-4f80-8540-663e89165dee"
+    },
+    {
+      "claim_id": "78a64837-af60-4153-8131-3f4026d5e7dc",
+      "result_id": "2bdf7ea8-ad73-40a4-a86b-6e98dea91a52"
+    },
+    {
+      "claim_id": "099d4a33-dca5-4656-bdf5-016193e75be2",
+      "result_id": "2bdf7ea8-ad73-40a4-a86b-6e98dea91a52"
+    },
+    {
+      "claim_id": "51084d27-ca82-4414-a055-64e69d8634fb",
+      "result_id": "2bdf7ea8-ad73-40a4-a86b-6e98dea91a52"
+    },
+    {
+      "claim_id": "9371f885-3ac0-41b4-983c-f21f45fde91b",
+      "result_id": "c00c7706-1b7e-45ce-add1-31aba8b5fb27"
+    },
+    {
+      "claim_id": "904cb338-9959-4a48-bdde-85b317c48a05",
+      "result_id": "c00c7706-1b7e-45ce-add1-31aba8b5fb27"
+    },
+    {
+      "claim_id": "47cf3530-1c73-4e45-9972-80fd0450c1af",
+      "result_id": "c00c7706-1b7e-45ce-add1-31aba8b5fb27"
+    },
+    {
+      "claim_id": "c85cc0fb-6097-418e-8417-f300d6891cd7",
+      "result_id": "c00c7706-1b7e-45ce-add1-31aba8b5fb27"
+    },
+    {
+      "claim_id": "39a43749-fb9e-4e76-a274-0580f096d90e",
+      "result_id": "adf7e2d9-f00c-4271-a202-5909ba246d28"
+    },
+    {
+      "claim_id": "e06f6fbb-4752-4b9d-ba95-db5d9795a957",
+      "result_id": "adf7e2d9-f00c-4271-a202-5909ba246d28"
+    },
+    {
+      "claim_id": "c01f3a3b-dd13-4501-9dfa-2ce84ef896f1",
+      "result_id": "adf7e2d9-f00c-4271-a202-5909ba246d28"
+    },
+    {
+      "claim_id": "026cda32-79cc-4b13-9b77-dc5948a9a285",
+      "result_id": "adf7e2d9-f00c-4271-a202-5909ba246d28"
+    },
+    {
+      "claim_id": "2d627865-c959-46b3-9b1c-14d0e8651899",
+      "result_id": "adf7e2d9-f00c-4271-a202-5909ba246d28"
+    },
+    {
+      "claim_id": "09d7ac1a-f799-441d-9bf2-3ea88436286b",
+      "result_id": "adf7e2d9-f00c-4271-a202-5909ba246d28"
+    },
+    {
+      "claim_id": "10ceefa5-9251-4b80-a1f0-a89617e57d12",
+      "result_id": "adf7e2d9-f00c-4271-a202-5909ba246d28"
+    },
+    {
+      "claim_id": "47c3b7a8-8017-4c8c-bcec-0fe569a8ce44",
+      "result_id": "adf7e2d9-f00c-4271-a202-5909ba246d28"
+    },
+    {
+      "claim_id": "31af19fd-9176-4426-987b-71133f9117b5",
+      "result_id": "adf7e2d9-f00c-4271-a202-5909ba246d28"
+    },
+    {
+      "claim_id": "6c8dcc79-5bfd-404e-a8ab-ef4313bc600d",
+      "result_id": "adf7e2d9-f00c-4271-a202-5909ba246d28"
+    },
+    {
+      "claim_id": "315e3a84-92da-49e1-8152-e6e3184de44c",
+      "result_id": "adf7e2d9-f00c-4271-a202-5909ba246d28"
+    },
+    {
+      "claim_id": "31f3a36a-54f0-45da-a6ef-114db5398ce5",
+      "result_id": "adf7e2d9-f00c-4271-a202-5909ba246d28"
+    },
+    {
+      "claim_id": "011bf0d8-709a-4d98-a92f-d5bf6fc5c855",
+      "result_id": "adf7e2d9-f00c-4271-a202-5909ba246d28"
+    },
+    {
+      "claim_id": "5dbba18d-c784-406d-81b7-299255bafa65",
+      "result_id": "adf7e2d9-f00c-4271-a202-5909ba246d28"
+    },
+    {
+      "claim_id": "98b80a8f-5adc-490c-a23c-ef16dd22c516",
+      "result_id": "adf7e2d9-f00c-4271-a202-5909ba246d28"
+    },
+    {
+      "claim_id": "32a3ebc6-32bd-406f-abd1-7303f80dff4c",
+      "result_id": "adf7e2d9-f00c-4271-a202-5909ba246d28"
+    },
+    {
+      "claim_id": "0197bb61-2f38-4c94-bc3a-9210d0a0f630",
+      "result_id": "dfc1bde8-de89-4784-9eb7-f8a312d80bbe"
+    },
+    {
+      "claim_id": "73199ece-dfb4-4057-80e0-55ad7755c544",
+      "result_id": "dfc1bde8-de89-4784-9eb7-f8a312d80bbe"
+    },
+    {
+      "claim_id": "2bd2f01c-72e7-4e52-a1d5-7f4f09cc511a",
+      "result_id": "dfc1bde8-de89-4784-9eb7-f8a312d80bbe"
+    },
+    {
+      "claim_id": "81ae9824-e29d-474a-b0a4-ce627838a870",
+      "result_id": "dfc1bde8-de89-4784-9eb7-f8a312d80bbe"
+    },
+    {
+      "claim_id": "cd87a952-b77d-42c7-9fae-397ebb04caab",
+      "result_id": "1c107ddc-d1ea-4095-b7f3-e3770d08e860"
+    },
+    {
+      "claim_id": "792b4029-44ba-4c68-8740-3535c79011fb",
+      "result_id": "1c107ddc-d1ea-4095-b7f3-e3770d08e860"
+    },
+    {
+      "claim_id": "f75fdb9c-37c4-45a7-b019-e8f4a206a109",
+      "result_id": "1c107ddc-d1ea-4095-b7f3-e3770d08e860"
+    },
+    {
+      "claim_id": "f4860cec-8659-4080-bdaf-9634dfc5acef",
+      "result_id": "d6f8fe37-2669-4bdf-9bfe-c43bfc99530e"
+    },
+    {
+      "claim_id": "8982cd00-7273-4481-9b0a-d55db747c3b5",
+      "result_id": "d6f8fe37-2669-4bdf-9bfe-c43bfc99530e"
+    },
+    {
+      "claim_id": "428cc37a-5186-4db0-a5da-0a21a40e3bd7",
+      "result_id": "d6f8fe37-2669-4bdf-9bfe-c43bfc99530e"
+    },
+    {
+      "claim_id": "17dc0cb0-7756-4e2b-8390-b709ac42c0d6",
+      "result_id": "d6f8fe37-2669-4bdf-9bfe-c43bfc99530e"
+    },
+    {
+      "claim_id": "d3447f31-07a7-4d99-95f2-6097804e6874",
+      "result_id": "534fccbf-4c37-4533-9169-8cb8d154ed1b"
+    },
+    {
+      "claim_id": "1ccb323d-4aa9-4bb6-924d-9e1eb5c5aa7e",
+      "result_id": "534fccbf-4c37-4533-9169-8cb8d154ed1b"
+    },
+    {
+      "claim_id": "3482e6a1-e09b-4b0f-9ca3-2825ec484bdc",
+      "result_id": "534fccbf-4c37-4533-9169-8cb8d154ed1b"
+    },
+    {
+      "claim_id": "406edd41-431f-4fd9-9154-c8d6569dc15c",
+      "result_id": "534fccbf-4c37-4533-9169-8cb8d154ed1b"
+    },
+    {
+      "claim_id": "dcbfad68-647e-4e6b-b6cb-6425896dc8e5",
+      "result_id": "534fccbf-4c37-4533-9169-8cb8d154ed1b"
+    },
+    {
+      "claim_id": "2786a90e-3afb-43da-b155-d8407cf18c33",
+      "result_id": "534fccbf-4c37-4533-9169-8cb8d154ed1b"
+    },
+    {
+      "claim_id": "918dedca-e2b5-43c1-821b-624354f3daa4",
+      "result_id": "534fccbf-4c37-4533-9169-8cb8d154ed1b"
+    },
+    {
+      "claim_id": "a1b3a15c-441a-4688-8801-dade09986477",
+      "result_id": "534fccbf-4c37-4533-9169-8cb8d154ed1b"
+    },
+    {
+      "claim_id": "b025834e-d560-4ff6-9ac9-6971a4263b98",
+      "result_id": "534fccbf-4c37-4533-9169-8cb8d154ed1b"
+    },
+    {
+      "claim_id": "20ba8bb2-669f-4d3c-869c-45066e9ed7d4",
+      "result_id": "534fccbf-4c37-4533-9169-8cb8d154ed1b"
+    },
+    {
+      "claim_id": "3e103059-8514-4fb5-95bb-4821f3b8564d",
+      "result_id": "534fccbf-4c37-4533-9169-8cb8d154ed1b"
+    },
+    {
+      "claim_id": "3fadb5fb-b81d-4c85-bca2-c91de5b0d472",
+      "result_id": "534fccbf-4c37-4533-9169-8cb8d154ed1b"
+    },
+    {
+      "claim_id": "7ab568ca-877e-47f8-9e07-865cc16b3cfb",
+      "result_id": "534fccbf-4c37-4533-9169-8cb8d154ed1b"
+    },
+    {
+      "claim_id": "d4094bd6-be17-4f66-b379-1e66e1d3032f",
+      "result_id": "534fccbf-4c37-4533-9169-8cb8d154ed1b"
+    },
+    {
+      "claim_id": "74a65731-5e88-4835-836c-8c0fc679d2c3",
+      "result_id": "534fccbf-4c37-4533-9169-8cb8d154ed1b"
+    },
+    {
+      "claim_id": "66398dec-0b69-4c94-9784-4a0c35c6e3aa",
+      "result_id": "131c3841-02c6-4a92-b036-84da178f1977"
+    },
+    {
+      "claim_id": "fa1f716c-f666-4a8f-b636-f4ddd817e263",
+      "result_id": "131c3841-02c6-4a92-b036-84da178f1977"
+    },
+    {
+      "claim_id": "8ab568c4-ab14-4a2b-b931-4c689a0796c9",
+      "result_id": "131c3841-02c6-4a92-b036-84da178f1977"
+    },
+    {
+      "claim_id": "09d91009-7a13-4619-bb0e-089d081c40fe",
+      "result_id": "131c3841-02c6-4a92-b036-84da178f1977"
+    },
+    {
+      "claim_id": "d76e7493-33db-4dc0-817a-761f2c54859c",
+      "result_id": "131c3841-02c6-4a92-b036-84da178f1977"
+    },
+    {
+      "claim_id": "c89ae37c-c0d6-4ea2-b2e3-e01d49f93b1d",
+      "result_id": "74d0274b-0113-47ad-a89b-b3d4da40a2e6"
+    },
+    {
+      "claim_id": "cd8539fa-27cd-40de-a6de-74e917cdc988",
+      "result_id": "74d0274b-0113-47ad-a89b-b3d4da40a2e6"
+    },
+    {
+      "claim_id": "4e23106f-7084-49d4-ac56-124c5de4ccdc",
+      "result_id": "74d0274b-0113-47ad-a89b-b3d4da40a2e6"
+    },
+    {
+      "claim_id": "6fd5f9d6-b39e-418b-b0f1-68fbad9b8fca",
+      "result_id": "74d0274b-0113-47ad-a89b-b3d4da40a2e6"
+    },
+    {
+      "claim_id": "d969baf6-b51e-40af-adb2-eede6267676c",
+      "result_id": "74d0274b-0113-47ad-a89b-b3d4da40a2e6"
+    }
+  ],
+  "comparisons": []
+}

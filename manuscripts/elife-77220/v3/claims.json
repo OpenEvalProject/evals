@@ -1,0 +1,2425 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Bayesian statistical inference methods usually require the ability to evaluate the likelihood of the model.",
+    "claim_type": "EXPLICIT",
+    "source": "Bayesian statistical inference methods usually require the ability to evaluate the likelihood of the model\u2014however, for many models of interest in cognitive neuroscience, the associated likelihoods cannot be computed efficiently.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established knowledge about Bayesian inference methods in statistics.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "For many models of interest in cognitive neuroscience, the associated likelihoods cannot be computed efficiently.",
+    "claim_type": "EXPLICIT",
+    "source": "Bayesian statistical inference methods usually require the ability to evaluate the likelihood of the model\u2014however, for many models of interest in cognitive neuroscience, the associated likelihoods cannot be computed efficiently.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general statement about the state of computational models in cognitive neuroscience, based on established knowledge in the field.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "Simulation-based inference (SBI) offers a solution to the problem of intractable likelihoods by only requiring access to simulations produced by the model.",
+    "claim_type": "EXPLICIT",
+    "source": "Simulation-based inference (SBI) offers a solution to this problem by only requiring access to simulations produced by the model.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a known property of SBI methods, representing established knowledge in the field.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "Fengler et al. introduced likelihood approximation networks (LANs) which make it possible to apply SBI to models of decision-making.",
+    "claim_type": "EXPLICIT",
+    "source": "Previously, Fengler et al. introduced likelihood approximation networks (LANs, Fengler et al., 2021) which make it possible to apply SBI to models of decision-making but require billions of simulations for training.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citation to prior work by Fengler et al., 2021.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "LANs require billions of simulations for training.",
+    "claim_type": "EXPLICIT",
+    "source": "Previously, Fengler et al. introduced likelihood approximation networks (LANs, Fengler et al., 2021) which make it possible to apply SBI to models of decision-making but require billions of simulations for training.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to Fengler et al., 2021, and later confirmed with specific numbers in the manuscript.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "MNLE is substantially more simulation efficient than LANs.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, we provide a new SBI method that is substantially more simulation efficient.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by experimental comparisons presented in the manuscript showing performance differences.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "MNLE trains neural density estimators on model simulations to emulate the simulator.",
+    "claim_type": "EXPLICIT",
+    "source": "Our approach, mixed neural likelihood estimation (MNLE), trains neural density estimators on model simulations to emulate the simulator and is designed to capture both the continuous (e.g., reaction times) and discrete (choices) data of decision-making models.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the methodology of MNLE as implemented by the authors.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "MNLE is designed to capture both continuous (e.g., reaction times) and discrete (choices) data of decision-making models.",
+    "claim_type": "EXPLICIT",
+    "source": "Our approach, mixed neural likelihood estimation (MNLE), trains neural density estimators on model simulations to emulate the simulator and is designed to capture both the continuous (e.g., reaction times) and discrete (choices) data of decision-making models.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a design feature of MNLE as implemented by the authors.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "The likelihoods of the MNLE emulator can be used to perform Bayesian parameter inference on experimental data using standard approximate inference methods like Markov Chain Monte Carlo sampling.",
+    "claim_type": "EXPLICIT",
+    "source": "The likelihoods of the emulator can then be used to perform Bayesian parameter inference on experimental data using standard approximate inference methods like Markov Chain Monte Carlo sampling.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the application of MNLE as demonstrated in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "MNLE achieves similar likelihood accuracy to LANs with six orders of magnitude fewer training simulations.",
+    "claim_type": "EXPLICIT",
+    "source": "We demonstrate MNLE on two variants of the drift-diffusion model and show that it is substantially more efficient than LANs: MNLE achieves similar likelihood accuracy with six orders of magnitude fewer training simulations and is significantly more accurate than LANs when both are trained with the same budget.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by experimental comparisons presented in the Results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "MNLE is significantly more accurate than LANs when both are trained with the same budget.",
+    "claim_type": "EXPLICIT",
+    "source": "We demonstrate MNLE on two variants of the drift-diffusion model and show that it is substantially more efficient than LANs: MNLE achieves similar likelihood accuracy with six orders of magnitude fewer training simulations and is significantly more accurate than LANs when both are trained with the same budget.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by experimental comparisons presented in the Results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "Computational modeling is an essential part of the scientific process in cognitive neuroscience.",
+    "claim_type": "EXPLICIT",
+    "source": "Computational modeling is an essential part of the scientific process in cognitive neuroscience: Models are developed from prior knowledge and hypotheses, and compared to experimentally observed phenomena (Churchland and Sejnowski, 1988; McClelland, 2009).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to established literature in the field.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "Computational models usually have free parameters which need to be tuned to find those models that capture experimental data.",
+    "claim_type": "EXPLICIT",
+    "source": "Computational models usually have free parameters which need to be tuned to find those models that capture experimental data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established knowledge about computational modeling practices.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "Point-wise parameter search approaches using grid search or optimization methods have been used successfully.",
+    "claim_type": "EXPLICIT",
+    "source": "While this point-wise approach has been used successfully (Lee et al., 2016; Patil et al., 2016) it can be scientifically more informative to perform Bayesian inference over the model parameters",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "Bayesian inference can be scientifically more informative than point-wise parameter search approaches.",
+    "claim_type": "EXPLICIT",
+    "source": "While this point-wise approach has been used successfully (Lee et al., 2016; Patil et al., 2016) it can be scientifically more informative to perform Bayesian inference over the model parameters",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the advantages of Bayesian methods described in the text.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "Bayesian inference takes into account prior knowledge.",
+    "claim_type": "EXPLICIT",
+    "source": "Bayesian inference takes into account prior knowledge, reveals all the parameters consistent with observed data, and thus can be used for quantifying uncertainty, hypothesis testing, and model selection (Lee, 2008; Shiffrin et al., 2008; Lee and Wagenmakers, 2014; Schad et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a known property of Bayesian inference, supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "Bayesian inference reveals all the parameters consistent with observed data.",
+    "claim_type": "EXPLICIT",
+    "source": "Bayesian inference takes into account prior knowledge, reveals all the parameters consistent with observed data, and thus can be used for quantifying uncertainty, hypothesis testing, and model selection (Lee, 2008; Shiffrin et al., 2008; Lee and Wagenmakers, 2014; Schad et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a known property of Bayesian inference, supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "Bayesian inference can be used for quantifying uncertainty, hypothesis testing, and model selection.",
+    "claim_type": "EXPLICIT",
+    "source": "Bayesian inference takes into account prior knowledge, reveals all the parameters consistent with observed data, and thus can be used for quantifying uncertainty, hypothesis testing, and model selection (Lee, 2008; Shiffrin et al., 2008; Lee and Wagenmakers, 2014; Schad et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to established literature.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "For many commonly used models in cognitive neuroscience, computational evaluation of likelihoods is challenging because often no analytical form is available.",
+    "claim_type": "EXPLICIT",
+    "source": "First, for many commonly used models, computational evaluation of likelihoods is challenging because often no analytical form is available.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established knowledge about the state of models in cognitive neuroscience.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "Numerical approximations of the likelihood are typically computationally expensive.",
+    "claim_type": "EXPLICIT",
+    "source": "Numerical approximations of the likelihood are typically computationally expensive, rendering standard approximate inference methods like Markov Chain Monte Carlo (MCMC) inapplicable.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established knowledge about numerical likelihood approximation methods.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "Computationally expensive likelihood approximations render standard approximate inference methods like MCMC inapplicable.",
+    "claim_type": "EXPLICIT",
+    "source": "Numerical approximations of the likelihood are typically computationally expensive, rendering standard approximate inference methods like Markov Chain Monte Carlo (MCMC) inapplicable.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the computational requirements of MCMC methods.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "Models and experimental paradigms in cognitive neuroscience often induce scenarios in which inference is repeated for varying numbers of experimental trials and changing hierarchical dependencies between model parameters.",
+    "claim_type": "EXPLICIT",
+    "source": "Second, models and experimental paradigms in cognitive neuroscience often induce scenarios in which inference is repeated for varying numbers of experimental trials and changing hierarchical dependencies between model parameters (Lee, 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "Fitting computational models with arbitrary hierarchical structures to experimental data often still requires idiosyncratic and complex inference algorithms.",
+    "claim_type": "EXPLICIT",
+    "source": "As such, fitting computational models with arbitrary hierarchical structures to experimental data often still requires idiosyncratic and complex inference algorithms.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established knowledge about the challenges in cognitive neuroscience modeling.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "Approximate Bayesian computation (ABC) offers a solution to the challenge of intractable likelihoods by enabling Bayesian inference based on comparing simulated with experimental data, without the need to evaluate an explicit likelihood function.",
+    "claim_type": "EXPLICIT",
+    "source": "Approximate Bayesian computation (ABC, Sisson, 2018) offers a solution to the first challenge by enabling Bayesian inference based on comparing simulated with experimental data, without the need to evaluate an explicit likelihood function.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a known property of ABC methods, supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "Various ABC methods have been applied to and developed for models in cognitive neuroscience and related fields.",
+    "claim_type": "EXPLICIT",
+    "source": "Accordingly, various ABC methods have been applied to and developed for models in cognitive neuroscience and related fields (Turner and Van Zandt, 2012; Turner and Van Zandt, 2018; Palestro et al., 2009; Kangasr\u00e4\u00e4si\u00f6 et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "ABC methods become inefficient as the number of model parameters increases.",
+    "claim_type": "EXPLICIT",
+    "source": "However, ABC methods are limited regarding the second challenge because they become inefficient as the number of model parameters increases (Lueckmann et al., 2021) and require generating new simulations whenever the observed data or parameter dependencies change.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "ABC methods require generating new simulations whenever the observed data or parameter dependencies change.",
+    "claim_type": "EXPLICIT",
+    "source": "However, ABC methods are limited regarding the second challenge because they become inefficient as the number of model parameters increases (Lueckmann et al., 2021) and require generating new simulations whenever the observed data or parameter dependencies change.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a known limitation of ABC methods, supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "Fengler et al., 2021 presented an SBI algorithm for inference for drift-diffusion models (DDMs).",
+    "claim_type": "EXPLICIT",
+    "source": "Recently, Fengler et al., 2021 presented an SBI algorithm for a specific problem in cognitive neuroscience\u2014inference for drift-diffusion models (DDMs).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "LANs use neural networks to predict log-likelihoods from data and parameters.",
+    "claim_type": "EXPLICIT",
+    "source": "They introduced a new approach, called likelihood approximation networks (LANs), which uses neural networks to predict log-likelihoods from data and parameters.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the methodology of LANs as presented in prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "The predicted likelihoods from LANs can subsequently be used to generate posterior samples using MCMC methods.",
+    "claim_type": "EXPLICIT",
+    "source": "The predicted likelihoods can subsequently be used to generate posterior samples using MCMC methods.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the application of LANs as presented in prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "LANs are trained in a three-step procedure.",
+    "claim_type": "EXPLICIT",
+    "source": "LANs are trained in a three-step procedure.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the training procedure of LANs as presented in prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "In LAN training, supervised learning is used to train a neural network to predict log-likelihoods by minimizing the Huber loss between the network-predicted log-likelihoods and the log of the empirically estimated likelihoods.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, supervised learning is used to train a neural network to predict log-likelihoods, by minimizing a loss function (the Huber loss) between the network-predicted log-likelihoods and the (log of) the empirically estimated likelihoods.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the training procedure of LANs as presented in prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "The extremely high number of model simulations required by LANs will make it infeasible for most users to run this training themselves.",
+    "claim_type": "EXPLICIT",
+    "source": "The extremely high number of model simulations will make it infeasible for most users to run this training themselves, so that there would need to be a repository from which users can download pretrained LANs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the computational requirements of LANs.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "The high simulation requirement of LANs restricts the application to a small set of canonical models like DDMs.",
+    "claim_type": "EXPLICIT",
+    "source": "This restricts the application of LANs to a small set of canonical models like DDMs, and prohibits customization and iteration of models by users.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the practical limitations imposed by the simulation requirements.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "The high simulation requirement of LANs prohibits customization and iteration of models by users.",
+    "claim_type": "EXPLICIT",
+    "source": "This restricts the application of LANs to a small set of canonical models like DDMs, and prohibits customization and iteration of models by users.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the practical limitations imposed by the simulation requirements.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "The high simulation requirement of LANs limits this approach to models whose parameters and observations are sufficiently low dimensional for histograms to be sampled densely.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition, the high simulation requirement limits this approach to models whose parameters and observations are sufficiently low dimensional for histograms to be sampled densely.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the histogram-based approach used by LANs.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "MNLE builds on recent advances in probabilistic machine learning, and in particular on the framework of neural likelihood estimation.",
+    "claim_type": "EXPLICIT",
+    "source": "MNLE builds on recent advances in probabilistic machine learning, and in particular on the framework of neural likelihood estimation (Papamakarios et al., 2019b; Lueckmann et al., 2019) but is designed to specifically capture the mixed data types arising in models of decision-making, for example, discrete choices and continuous reaction times.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the methodological foundation of MNLE, supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "Neural likelihood estimation has its origin in classical synthetic likelihood (SL) approaches.",
+    "claim_type": "EXPLICIT",
+    "source": "Neural likelihood estimation has its origin in classical synthetic likelihood (SL) approaches (Wood, 2010; Price et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "Classical SL approaches assume the likelihood of the simulation-based model to be Gaussian.",
+    "claim_type": "EXPLICIT",
+    "source": "Classical SL approaches assume the likelihood of the simulation-based model to be Gaussian (so that its moments can be estimated from model simulations) and then use MCMC methods for inference.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established knowledge about classical SL approaches, supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "Classical SL approaches and various extensions have been widely used.",
+    "claim_type": "EXPLICIT",
+    "source": "This approach and various extensions of it have been widely used (Price et al., 2018; Ong et al., 2009; An et al., 2019; Priddle et al., 2022)\u2014but inherently they need multiple model simulations for each parameter in the MCMC chain to estimate the associated likelihood.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "Classical SL approaches inherently need multiple model simulations for each parameter in the MCMC chain to estimate the associated likelihood.",
+    "claim_type": "EXPLICIT",
+    "source": "This approach and various extensions of it have been widely used (Price et al., 2018; Ong et al., 2009; An et al., 2019; Priddle et al., 2022)\u2014but inherently they need multiple model simulations for each parameter in the MCMC chain to estimate the associated likelihood.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a known limitation of classical SL approaches, supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "Neural likelihood approaches perform conditional density estimation by training a neural network to predict the parameters of the approximate likelihood conditioned on the model parameters.",
+    "claim_type": "EXPLICIT",
+    "source": "Neural likelihood approaches instead perform conditional density estimation, that is, they train a neural network to predict the parameters of the approximate likelihood conditioned on the model parameters (e.g., Papamakarios et al., 2019b; Lueckmann et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the methodology of neural likelihood approaches, supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "By using a conditional density estimator, it is possible to exploit continuity across different model parameters, rather than having to learn a separate density for each individual parameter as in classical SL.",
+    "claim_type": "EXPLICIT",
+    "source": "By using a conditional density estimator, it is possible to exploit continuity across different model parameters, rather than having to learn a separate density for each individual parameter as in classical SL.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the advantages of conditional density estimation compared to classical SL.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "Recent advances in conditional density estimation (such as normalizing flows) allow lifting the parametric assumptions of classical SL methods and learning flexible conditional density estimators.",
+    "claim_type": "EXPLICIT",
+    "source": "Recent advances in conditional density estimation (such as normalizing flows, Papamakarios et al., 2019a) further allow lifting the parametric assumptions of classical SL methods and learning flexible conditional density estimators which are able to model a wide range of densities, as well as highly nonlinear dependencies on the conditioning variable.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to prior work on normalizing flows.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "Neural likelihood estimators yield estimates of the probability density which are guaranteed to be non-negative and normalized.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition, neural likelihood estimators yield estimates of the probability density which are guaranteed to be non-negative and normalized, and which can be both sampled and evaluated, acting as a probabilistic emulator of the simulator (Lueckmann et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a known property of neural likelihood estimators, supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "Neural likelihood estimators can be both sampled and evaluated, acting as a probabilistic emulator of the simulator.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition, neural likelihood estimators yield estimates of the probability density which are guaranteed to be non-negative and normalized, and which can be both sampled and evaluated, acting as a probabilistic emulator of the simulator (Lueckmann et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a known property of neural likelihood estimators, supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "MNLE uses neural likelihood estimation to learn an emulator of the simulator.",
+    "claim_type": "EXPLICIT",
+    "source": "Our approach, MNLE, uses neural likelihood estimation to learn an emulator of the simulator.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the methodology of MNLE as implemented by the authors.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "The prior distribution used for Bayesian inference constitutes a useful choice for the proposal distribution in MNLE training.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, the prior distribution used for Bayesian inference constitutes a useful choice, but in principle any distribution that contains the support of the prior can be used.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about practical choices in MNLE training.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "MNLE learns the likelihood estimator as a mixed model composed of one neural density estimator for categorical data and one for continuous data, conditioned on the categorical data.",
+    "claim_type": "EXPLICIT",
+    "source": "To account for mixed data types, we learn the likelihood estimator as a mixed model composed of one neural density estimator for categorical data and one for continuous data, conditioned on the categorical data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the architecture of MNLE as implemented by the authors.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "The separation of categorical and continuous estimators in MNLE allows choosing the appropriate neural density estimator for each data type.",
+    "claim_type": "EXPLICIT",
+    "source": "This separation allows us to choose the appropriate neural density estimator for each data type, for example, a Bernoulli model for the categorical data and a normalizing flow (Papamakarios et al., 2019a) for the continuous data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a design advantage of MNLE as implemented by the authors.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "The resulting joint density estimator in MNLE gives access to the likelihood, which enables inference via MCMC methods.",
+    "claim_type": "EXPLICIT",
+    "source": "The resulting joint density estimator gives access to the likelihood, which enables inference via MCMC methods.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the application of MNLE as implemented by the authors.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "Both LANs and MNLEs allow for flexible inference scenarios common in cognitive neuroscience, such as varying number of trials or hierarchical inference, and need to be trained only once.",
+    "claim_type": "EXPLICIT",
+    "source": "Both LANs and MNLEs allow for flexible inference scenarios common in cognitive neuroscience, for example, varying number of trials with same underlying experimental conditions or hierarchical inference, and need to be trained only once.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a shared property of LANs and MNLEs.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "LANs use feed-forward neural networks to perform regression from model parameters to empirical likelihood targets obtained from KDE.",
+    "claim_type": "EXPLICIT",
+    "source": "LANs use feed-forward neural networks to perform regression from model parameters to empirical likelihood targets obtained from KDE.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the methodology of LANs as presented in prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "MNLE learns the likelihood directly by performing conditional density estimation on the simulated data without requiring likelihood targets.",
+    "claim_type": "EXPLICIT",
+    "source": "MNLE instead learns the likelihood directly by performing conditional density estimation on the simulated data without requiring likelihood targets.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the methodology of MNLE as implemented by the authors.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "MNLE is by design more simulation efficient than LANs.",
+    "claim_type": "EXPLICIT",
+    "source": "This makes MNLE by design more simulation efficient than LANs\u2014we demonstrate empirically that it can learn likelihood estimators which are as good or better than those reported in the LAN paper, but using a factor of 1,000,000 fewer simulations (Fengler et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by experimental comparisons presented in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "MNLE can learn likelihood estimators which are as good or better than those reported in the LAN paper, but using a factor of 1,000,000 fewer simulations.",
+    "claim_type": "EXPLICIT",
+    "source": "This makes MNLE by design more simulation efficient than LANs\u2014we demonstrate empirically that it can learn likelihood estimators which are as good or better than those reported in the LAN paper, but using a factor of 1,000,000 fewer simulations (Fengler et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by experimental comparisons presented in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "When using the same simulation budget for both approaches, MNLE substantially outperforms LAN across several performance metrics.",
+    "claim_type": "EXPLICIT",
+    "source": "When using the same simulation budget for both approaches, MNLE substantially outperforms LAN across several performance metrics.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by experimental comparisons presented in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "MNLE results in a density estimator that is guaranteed to correspond to a valid probability distribution.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, MNLE results in a density estimator that is guaranteed to correspond to a valid probability distribution and can also act as an emulator that can generate synthetic data without running the simulator.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a property of the neural density estimation approach used in MNLE.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "MNLE can act as an emulator that can generate synthetic data without running the simulator.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, MNLE results in a density estimator that is guaranteed to correspond to a valid probability distribution and can also act as an emulator that can generate synthetic data without running the simulator.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated in the manuscript through experiments.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "The simulation efficiency of MNLEs allows users to explore and iterate on their own models without generating a massive training dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "The simulation efficiency of MNLEs allows users to explore and iterate on their own models without generating a massive training dataset, rather than restricting their investigations to canonical models for which pretrained networks have been provided by a central resource.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the practical implications of MNLE's efficiency.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "The authors implemented MNLE as an extension to an open-source toolbox for SBI methods.",
+    "claim_type": "EXPLICIT",
+    "source": "To facilitate this process, we implemented our method as an extension to an open-source toolbox for SBI methods (Tejero-Cantero et al., 2020), and provide detailed documentation and tutorials.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the implementation work done by the authors.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "The DDM is an influential phenomenological model of a two-alternative perceptual decision-making task.",
+    "claim_type": "EXPLICIT",
+    "source": "The DDM is an influential phenomenological model of a two-alternative perceptual decision-making task.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established knowledge about the DDM, supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "The DDM simulates the evolution of an internal decision variable that integrates sensory evidence until one of two decision boundaries is reached and a choice is made.",
+    "claim_type": "EXPLICIT",
+    "source": "It simulates the evolution of an internal decision variable that integrates sensory evidence until one of two decision boundaries is reached and a choice is made (Figure 1, left).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is established knowledge about the DDM, illustrated in Figure 1.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "The availability of analytical likelihoods for the simple DDM enabled evaluation of MNLE's performance with respect to the analytical likelihoods and the corresponding inferred posteriors.",
+    "claim_type": "EXPLICIT",
+    "source": "This enabled us to evaluate MNLE's performance with respect to the analytical likelihoods and the corresponding inferred posteriors of the DDM, and to compare against that of LANs on a range of simulation budgets.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental design used in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "For MNLE, a budget of 10^5 simulations was used (MNLE5).",
+    "claim_type": "EXPLICIT",
+    "source": "For MNLE, we used a budget of 105 simulations (henceforth referred to as MNLE5), for LANs we used budgets of 105 and 108 simulations (LAN5 and LAN8, respectively, trained by us) and the pretrained version based on 1011 simulations (LAN11) provided by Fengler et al., 2021.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental setup used in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "For LANs, budgets of 10^5 and 10^8 simulations were used (LAN5 and LAN8, respectively, trained by the authors).",
+    "claim_type": "EXPLICIT",
+    "source": "For MNLE, we used a budget of 105 simulations (henceforth referred to as MNLE5), for LANs we used budgets of 105 and 108 simulations (LAN5 and LAN8, respectively, trained by us) and the pretrained version based on 1011 simulations (LAN11) provided by Fengler et al., 2021.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental setup used in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "The pretrained LAN version based on 10^11 simulations (LAN11) was provided by Fengler et al., 2021.",
+    "claim_type": "EXPLICIT",
+    "source": "For MNLE, we used a budget of 105 simulations (henceforth referred to as MNLE5), for LANs we used budgets of 105 and 108 simulations (LAN5 and LAN8, respectively, trained by us) and the pretrained version based on 1011 simulations (LAN11) provided by Fengler et al., 2021.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental setup, citing the source of the pretrained LAN.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "Both MNLEs and LANs were in principle able to accurately approximate the likelihoods for both decisions and a wide range of reaction times.",
+    "claim_type": "EXPLICIT",
+    "source": "Both MNLEs and LANs were in principle able to accurately approximate the likelihoods for both decisions and a wide range of reaction times (see Figure 2a for an example, and Details of the numerical comparison).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the results shown in Figure 2a.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "LANs require a much larger simulation budget than MNLE to achieve accurate likelihood approximations.",
+    "claim_type": "EXPLICIT",
+    "source": "However, LANs require a much larger simulation budget than MNLE to achieve accurate likelihood approximations, that is, LANs trained with 105 or 108 simulations show visible deviations, both in the linear and in log-domain (Figure 2a, lines for LAN5 and LAN8).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the results shown in Figure 2a.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "LANs trained with 10^5 or 10^8 simulations show visible deviations from analytical likelihoods, both in the linear and in log-domain.",
+    "claim_type": "EXPLICIT",
+    "source": "However, LANs require a much larger simulation budget than MNLE to achieve accurate likelihood approximations, that is, LANs trained with 105 or 108 simulations show visible deviations, both in the linear and in log-domain (Figure 2a, lines for LAN5 and LAN8).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the results shown in Figure 2a.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "MNLE5 was more accurate than LAN{5,8,11} on Huber loss metrics calculated on untransformed likelihoods, showing smaller Huber loss in 99, 81, and 66 out of 100 comparisons, respectively.",
+    "claim_type": "EXPLICIT",
+    "source": "For metrics calculated on the untransformed likelihoods (Figure 2b, c), we found that MNLE5 was more accurate than LAN{5,8,11} on all simulation budgets, showing smaller Huber loss than LAN{5,8,11} in 99, 81, and 66 out of 100 comparisons, and smaller MSE than LAN{5,8,11} on 98, 81, and 66 out of 100 comparisons, respectively.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the quantitative results shown in Figure 2b.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "MNLE5 showed smaller MSE than LAN{5,8,11} on 98, 81, and 66 out of 100 comparisons, respectively, for metrics calculated on untransformed likelihoods.",
+    "claim_type": "EXPLICIT",
+    "source": "For metrics calculated on the untransformed likelihoods (Figure 2b, c), we found that MNLE5 was more accurate than LAN{5,8,11} on all simulation budgets, showing smaller Huber loss than LAN{5,8,11} in 99, 81, and 66 out of 100 comparisons, and smaller MSE than LAN{5,8,11} on 98, 81, and 66 out of 100 comparisons, respectively.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the quantitative results shown in Figure 2c.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "For MSE calculated on log-likelihoods, MNLE5 achieved smaller MSE than LAN{5,8,11} on 100, 100, and 75 out of 100 comparisons, respectively.",
+    "claim_type": "EXPLICIT",
+    "source": "Similarly, for the MSE calculated on the log-likelihoods (Figure 2e), MNLE5 achieved smaller MSE than LAN{5,8,11} on 100, 100, and 75 out of 100 comparisons, respectively.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the quantitative results shown in Figure 2e.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "For Huber loss calculated on log-likelihoods, MNLE5 was more accurate than LAN5 and LAN8 in all 100 comparisons, but slightly less accurate than LAN11, showing larger Huber loss in 62 out of 100 comparisons.",
+    "claim_type": "EXPLICIT",
+    "source": "For the Huber loss calculated on the log-likelihoods (Figure 2d), we found that MNLE5 was more accurate than LAN5 and LAN8, but slightly less accurate than LAN11, showing smaller Huber loss than LAN{5,8} in all 100 comparisons, and larger Huber loss than LAN11 in 62 out of 100 comparisons.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the quantitative results shown in Figure 2d.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "All pairwise comparisons between MNLE5 and LAN{5,8,11} on likelihood approximation metrics were significant under the binomial test (p < 0.01).",
+    "claim_type": "EXPLICIT",
+    "source": "All the above pairwise comparisons were significant under the binomial test (p < 0.01), but note that these are simulated data and therefore the p value can be arbitrarily inflated by increasing the number of comparisons.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical result from the analysis performed in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "The Huber loss on the log-likelihoods is the loss which is directly optimized by LANs.",
+    "claim_type": "EXPLICIT",
+    "source": "We also note that the Huber loss on the log-likelihoods is the loss which is directly optimized by LANs, and thus this comparison should in theory favor LANs over alternative approaches.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a known property of the LAN training procedure.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "The MNLE5 results represent averages over 10 random neural network initializations.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, the MNLE5 results shown here represent averages over 10 random neural network initializations (five of which achieved smaller Huber loss than LAN11), whereas the LAN11 results are based on a single pretrained network.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental setup used in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "Five out of ten MNLE5 initializations achieved smaller Huber loss on log-likelihoods than LAN11.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, the MNLE5 results shown here represent averages over 10 random neural network initializations (five of which achieved smaller Huber loss than LAN11), whereas the LAN11 results are based on a single pretrained network.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from the experiments performed in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "The LAN11 results are based on a single pretrained network.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, the MNLE5 results shown here represent averages over 10 random neural network initializations (five of which achieved smaller Huber loss than LAN11), whereas the LAN11 results are based on a single pretrained network.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental setup used in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "The synthetic reaction times and choices generated from the MNLE emulator match corresponding data simulated from the DDM accurately.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, we also investigated MNLE's property to act as an emulator of the simulator and found the synthetic reaction times and choices generated from the MNLE emulator to match corresponding data simulated from the DDM accurately (see Figure 2\u2014figure supplement 1 and Appendix 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the results shown in Figure 2\u2014figure supplement 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "Evaluating MNLE for a batch of 100 trials and 10 model parameters took 4.14\u00b10.04 ms.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that evaluating MNLE for a batch of 100 trials and 10 model parameters (as used during MCMC) took 4.14\u00b1 (mean over 100 repetitions \u00b1 standard error of the mean), compared to 1.02\u00b1 for LANs, that is, MNLE incurred a larger computational foot-print at evaluation time.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a timing measurement from the experiments performed in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "Evaluating LANs for a batch of 100 trials and 10 model parameters took 1.02\u00b10.01 ms.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that evaluating MNLE for a batch of 100 trials and 10 model parameters (as used during MCMC) took 4.14\u00b1 (mean over 100 repetitions \u00b1 standard error of the mean), compared to 1.02\u00b1 for LANs, that is, MNLE incurred a larger computational foot-print at evaluation time.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a timing measurement from the experiments performed in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "MNLE incurred a larger computational foot-print at evaluation time compared to LANs.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that evaluating MNLE for a batch of 100 trials and 10 model parameters (as used during MCMC) took 4.14\u00b1 (mean over 100 repetitions \u00b1 standard error of the mean), compared to 1.02\u00b1 for LANs, that is, MNLE incurred a larger computational foot-print at evaluation time.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the timing measurements presented.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "MNLE trained with 10^5 simulations performed substantially better than LANs trained with 10^5 or 10^8 simulations on all likelihood approximation accuracy metrics.",
+    "claim_type": "EXPLICIT",
+    "source": "In summary, we found that MNLE trained with 105 simulations performed substantially better than LANs trained with 105 or 108 simulations, and similarly well or better than LANs trained with 1011 simulations, on all likelihood approximation accuracy metrics.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the experimental results presented in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "MNLE trained with 10^5 simulations performed similarly well or better than LANs trained with 10^11 simulations on all likelihood approximation accuracy metrics.",
+    "claim_type": "EXPLICIT",
+    "source": "In summary, we found that MNLE trained with 105 simulations performed substantially better than LANs trained with 105 or 108 simulations, and similarly well or better than LANs trained with 1011 simulations, on all likelihood approximation accuracy metrics.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the experimental results presented in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "The authors used the analytical likelihoods of the simple DDM to obtain reference posteriors for 100 different observations via MCMC sampling.",
+    "claim_type": "EXPLICIT",
+    "source": "We used the analytical likelihoods of the simple DDM to obtain reference posteriors for 100 different observations, via MCMC sampling.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental setup used in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "Each observation used for posterior inference consisted of 100 i.i.d. trials simulated with parameters sampled from the prior.",
+    "claim_type": "EXPLICIT",
+    "source": "Each observation consisted of 100 independent and identically distributed (i.i.d.) trials simulated with parameters sampled from the prior (see Figure 3a for an example, details in Materials and methods).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the experimental setup used in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "MNLE5 approximated the posterior mean more accurately than LAN{5,8,11}, being more accurate in 100, 90, and 67 out of 100 comparisons, respectively.",
+    "claim_type": "EXPLICIT",
+    "source": "In particular, MNLE5 approximated the posterior mean more accurately than LAN{5,8,11} (Figure 3b), being more accurate than LAN{5,8,11} in 100, 90, and 67 out of 100 comparisons, respectively.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the quantitative results shown in Figure 3b.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "MNLE5 parameter estimation error was indistinguishable from that of the reference posterior.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that MNLE5 estimation error was indistinguishable from that of the reference posterior, and that LAN performance was similar only for the substantially larger simulation budget of LAN11 (Figure 3c), with MNLE being closer to reference performance than LAN{5,8,11} in 100, 91, and 66 out of 100 comparisons, respectively (all p < 0.01).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the quantitative results shown in Figure 3d.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "LAN performance on parameter estimation was similar to reference only for the substantially larger simulation budget of LAN11.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that MNLE5 estimation error was indistinguishable from that of the reference posterior, and that LAN performance was similar only for the substantially larger simulation budget of LAN11 (Figure 3c), with MNLE being closer to reference performance than LAN{5,8,11} in 100, 91, and 66 out of 100 comparisons, respectively (all p < 0.01).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the quantitative results shown in Figure 3d.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "MNLE5 achieved lower C2ST scores compared to LAN{5,8,11} on all simulation budgets, with mean C2ST scores of 0.96, 0.78, 0.70 for LAN{5,8,11} vs. 0.65 for MNLE5.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that neither of the two approaches was able to achieve perfect approximations, but that MNLE5 achieved lower C2ST scores compared to LAN{5,8,11} on all simulation budgets (Figure 3e): mean C2ST score LAN{5,8,11}, 0.96, 0.78, 0.70 vs. MNLE5, 0.65, with MNLE5 showing a better score than LAN{5,8,11} on 100, 91, and 68 out of 100 pairwise comparisons, respectively (all p < 0.01).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the quantitative results shown in Figure 3e.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "MNLE achieves more accurate recovery of posterior means than LANs.",
+    "claim_type": "EXPLICIT",
+    "source": "In summary, MNLE achieves more accurate recovery of posterior means than LANs, similar or better recovery of posterior variances, and overall more accurate posteriors (as quantified by C2ST).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the experimental results presented in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "MNLE achieves similar or better recovery of posterior variances compared to LANs.",
+    "claim_type": "EXPLICIT",
+    "source": "In summary, MNLE achieves more accurate recovery of posterior means than LANs, similar or better recovery of posterior variances, and overall more accurate posteriors (as quantified by C2ST).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the experimental results presented in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C105",
+    "claim": "MNLE achieves overall more accurate posteriors than LANs as quantified by C2ST.",
+    "claim_type": "EXPLICIT",
+    "source": "In summary, MNLE achieves more accurate recovery of posterior means than LANs, similar or better recovery of posterior variances, and overall more accurate posteriors (as quantified by C2ST).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the experimental results presented in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C106",
+    "claim": "The posteriors inferred with MNLE and LANs (when using LAN11) recovered the ground-truth parameters accurately in terms of posterior means.",
+    "claim_type": "EXPLICIT",
+    "source": "For the DDM, we found that the posteriors inferred with MNLE and LANs (when using LAN11) recovered the ground-truth parameters accurately (in terms of posterior means, Figure 3d and Figure 4a)\u2014in fact, parameter recovery was similarly accurate to using the 'true' analytical likelihoods, indicating that much of the residual error is due to stochasticity of the observations, and not the inaccuracy of the likelihood approximations.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the results shown in Figures 3d and 4a.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C107",
+    "claim": "Parameter recovery with MNLE and LAN11 was similarly accurate to using the true analytical likelihoods.",
+    "claim_type": "EXPLICIT",
+    "source": "For the DDM, we found that the posteriors inferred with MNLE and LANs (when using LAN11) recovered the ground-truth parameters accurately (in terms of posterior means, Figure 3d and Figure 4a)\u2014in fact, parameter recovery was similarly accurate to using the 'true' analytical likelihoods, indicating that much of the residual error is due to stochasticity of the observations, and not the inaccuracy of the likelihood approximations.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the results shown in Figures 3d and 4a.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C108",
+    "claim": "Much of the residual error in parameter recovery is due to stochasticity of the observations, and not the inaccuracy of the likelihood approximations.",
+    "claim_type": "EXPLICIT",
+    "source": "For the DDM, we found that the posteriors inferred with MNLE and LANs (when using LAN11) recovered the ground-truth parameters accurately (in terms of posterior means, Figure 3d and Figure 4a)\u2014in fact, parameter recovery was similarly accurate to using the 'true' analytical likelihoods, indicating that much of the residual error is due to stochasticity of the observations, and not the inaccuracy of the likelihood approximations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the comparison between approximate and analytical likelihood results.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C109",
+    "claim": "SBC results indicated that MNLE posteriors were as well calibrated as the reference posteriors.",
+    "claim_type": "EXPLICIT",
+    "source": "SBC results indicated that MNLE posteriors were as well calibrated as the reference posteriors, that is, the empirical cumulative density functions of the ranks were close to that of a uniform distribution (Figure 4b)\u2014thus, on this example, MNLE inferences would likely be of similar quality compared to using the analytical likelihoods.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the SBC results shown in Figure 4b.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C110",
+    "claim": "On the DDM example, MNLE inferences would likely be of similar quality compared to using the analytical likelihoods.",
+    "claim_type": "EXPLICIT",
+    "source": "SBC results indicated that MNLE posteriors were as well calibrated as the reference posteriors, that is, the empirical cumulative density functions of the ranks were close to that of a uniform distribution (Figure 4b)\u2014thus, on this example, MNLE inferences would likely be of similar quality compared to using the analytical likelihoods.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an inference based on the SBC results shown in Figure 4b.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C111",
+    "claim": "When trained with the large simulation budget of 10^11 simulations, LANs appeared to recover most of the ground-truth parameters well.",
+    "claim_type": "EXPLICIT",
+    "source": "When trained with the large simulation budget of 1011 simulations, LANs, too appeared to recover most of the ground-truth parameters well.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the results presented in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C114",
+    "claim": "Both LAN11 and MNLE5 lead to similar parameter recovery.",
+    "claim_type": "EXPLICIT",
+    "source": "The results so far (i.e., Figures 3 and 4) indicate that both LAN11 and MNLE5 lead to similar parameter recovery, but only MNLE5 leads to posteriors which were well calibrated for all parameters.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a summary of the results shown in Figures 3 and 4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C115",
+    "claim": "Only MNLE5 leads to posteriors which were well calibrated for all parameters.",
+    "claim_type": "EXPLICIT",
+    "source": "The results so far (i.e., Figures 3 and 4) indicate that both LAN11 and MNLE5 lead to similar parameter recovery, but only MNLE5 leads to posteriors which were well calibrated for all parameters.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a summary of the results shown in Figures 3 and 4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C116",
+    "claim": "When increasing the number of trials to 1000, posteriors become very concentrated around the ground-truth value.",
+    "claim_type": "EXPLICIT",
+    "source": "When increasing the number of trials (e.g., to 1000 trials), posteriors become very concentrated around the ground-truth value.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation from the experiments performed in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C117",
+    "claim": "With 1000 trials, even small deviations in the posteriors can have large effects on the posterior metrics.",
+    "claim_type": "EXPLICIT",
+    "source": "In that case, while the posteriors overall identified the ground-truth parameter value very well (Figure 4\u2014figure supplement 1c), even small deviations in the posteriors can have large effects on the posterior metrics (Figure 3\u2014figure supplement 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from the experiments shown in the supplementary figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C118",
+    "claim": "For MNLE, biases with 1000 trials were smaller than for LANs.",
+    "claim_type": "EXPLICIT",
+    "source": "For MNLE, we found that these biases were smaller, and furthermore that it was possible to mitigate this effect by inferring the posterior using ensembles, for example, by combining samples inferred with five MNLEs trained with identical settings but different random initialization (see Appendix 1 for details).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the results presented in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C119",
+    "claim": "It was possible to mitigate biases in MNLE posteriors by inferring the posterior using ensembles of five MNLEs trained with identical settings but different random initialization.",
+    "claim_type": "EXPLICIT",
+    "source": "For MNLE, we found that these biases were smaller, and furthermore that it was possible to mitigate this effect by inferring the posterior using ensembles, for example, by combining samples inferred with five MNLEs trained with identical settings but different random initialization (see Appendix 1 for details).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the results presented in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C120",
+    "claim": "MNLE was designed to be applicable to models for which evaluation of the likelihood is not practical so that standard inference tools cannot be used.",
+    "claim_type": "EXPLICIT",
+    "source": "MNLE was designed to be applicable to models for which evaluation of the likelihood is not practical so that standard inference tools cannot be used.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the design goal of MNLE.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C121",
+    "claim": "The authors applied MNLE to a variant of the DDM for which analytical likelihoods are not available.",
+    "claim_type": "EXPLICIT",
+    "source": "To demonstrate this, we applied MNLE to a variant of the DDM for which analytical likelihoods are not available (note, however, that numerical approximation of likelihoods for this model would be possible, see e.g., Shinn et al., 2020, Materials and methods for details).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental demonstration performed in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C122",
+    "claim": "The DDM variant with linearly collapsing bounds simulates a decision variable like the simple DDM but with linearly collapsing instead of constant decision boundaries.",
+    "claim_type": "EXPLICIT",
+    "source": "This DDM variant simulates a decision variable like the simple DDM used above, but with linearly collapsing instead of constant decision boundaries (see e.g., Hawkins et al., 2015; Palestro et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the model variant used, supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C124",
+    "claim": "Posterior density with MNLE on the collapsing bounds DDM concentrated around the underlying ground-truth parameters.",
+    "claim_type": "EXPLICIT",
+    "source": "Using the same MNLE training and MCMC settings as above, we found that posterior density concentrated around the underlying ground-truth parameters (see Figure 5a), suggesting that MNLE learned the underlying likelihood accurately.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the results shown in Figure 5a.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C125",
+    "claim": "The inferred posteriors for the collapsing bounds DDM have good predictive performance, with data simulated from the inferred posterior samples accurately matching the observed data.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that the inferred posteriors have good predictive performance, that is, data simulated from the inferred posterior samples accurately matched the observed data (Figure 5b), and that their uncertainties are well calibrated as quantified by the SBC results (Figure 5c).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the results shown in Figure 5b.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C126",
+    "claim": "The uncertainties of the inferred posteriors for the collapsing bounds DDM are well calibrated as quantified by the SBC results.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that the inferred posteriors have good predictive performance, that is, data simulated from the inferred posterior samples accurately matched the observed data (Figure 5b), and that their uncertainties are well calibrated as quantified by the SBC results (Figure 5c).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the SBC results shown in Figure 5c.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C127",
+    "claim": "MNLE accurately inferred the posterior of the intractable variant of the DDM with collapsing bounds.",
+    "claim_type": "EXPLICIT",
+    "source": "Overall, this indicated that MNLE accurately inferred the posterior of this intractable variant of the DDM.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the results for the collapsing bounds DDM.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C128",
+    "claim": "The comparison on a tractable example problem used in Fengler et al., 2021 showed that MNLE performed on par with LANs using six orders of magnitude fewer model simulations for training.",
+    "claim_type": "EXPLICIT",
+    "source": "Our comparison on a tractable example problem used in Fengler et al., 2021 showed that MNLE performed on par with LANs using six orders of magnitude fewer model simulations for training.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the main experimental results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C129",
+    "claim": "The difference in simulation efficiency between MNLE and LANs is due to an inherent property of LANs.",
+    "claim_type": "EXPLICIT",
+    "source": "While Fengler et al., 2021 discuss that LANs were not optimized for simulation efficiency and that it might be possible to reduce the required model simulations, we emphasize that the difference in simulation efficiency is due to an inherent property of LANs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the methodological differences between LANs and MNLE.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C130",
+    "claim": "For each parameter in the training data, LANs require empirical likelihood targets that have to be estimated by building histograms or kernel density estimates from thousands of simulations.",
+    "claim_type": "EXPLICIT",
+    "source": "For each parameter in the training data, LANs require empirical likelihood targets that have to be estimated by building histograms or kernel density estimates from thousands of simulations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the methodology of LANs as presented in prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C131",
+    "claim": "MNLE performs conditional density estimation without the need of likelihood targets and can work with only one simulation per parameter.",
+    "claim_type": "EXPLICIT",
+    "source": "MNLE, instead, performs conditional density estimation without the need of likelihood targets and can work with only one simulation per parameter.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the methodology of MNLE as implemented by the authors.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C132",
+    "claim": "The substantial performance advantage of MNLE over LANs is expected to be robust to the specifics of the implementation.",
+    "claim_type": "EXPLICIT",
+    "source": "Because of these conceptual differences, we expect the substantial performance advantage of MNLE to be robust to the specifics of the implementation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the conceptual differences between the two approaches.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C133",
+    "claim": "After the networks are trained, the time needed for each evaluation determines the speed of inference.",
+    "claim_type": "EXPLICIT",
+    "source": "After the networks are trained, the time needed for each evaluation determines the speed of inference.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established knowledge about neural network-based inference.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C134",
+    "claim": "Both LANs and MNLEs are conceptually similar in that they require a single forward-pass through a neural network for each evaluation.",
+    "claim_type": "EXPLICIT",
+    "source": "In that respect, both LANs and MNLEs are conceptually similar in that they require a single forward-pass through a neural network for each evaluation, and we found MNLE and the original implementation of LANs to require comparable computation times.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation from the experiments performed in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C135",
+    "claim": "The authors found MNLE and the original implementation of LANs to require comparable computation times.",
+    "claim_type": "EXPLICIT",
+    "source": "In that respect, both LANs and MNLEs are conceptually similar in that they require a single forward-pass through a neural network for each evaluation, and we found MNLE and the original implementation of LANs to require comparable computation times.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from the timing experiments performed in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C136",
+    "claim": "A new PyTorch implementation of LANs has recently been released and improved upon the evaluation speed of the original implementation.",
+    "claim_type": "EXPLICIT",
+    "source": "Code for a new PyTorch implementation of LANs has recently been released and improved upon the evaluation speed original implementation we compared to.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about recent developments in LAN implementation.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C137",
+    "claim": "The new PyTorch implementation of LANs made LAN significantly faster for a single forward-pass.",
+    "claim_type": "EXPLICIT",
+    "source": "While this new implementation made LAN significantly faster for a single forward-pass, we observed that the resulting time difference with the MCMC settings used here was only on the order of minutes, whereas the difference in simulation time for LAN11 vs. MNLE5 was on the order of days.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation from timing comparisons performed by the authors.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C138",
+    "claim": "The resulting time difference between the new LAN implementation and MNLE with the MCMC settings used was only on the order of minutes, whereas the difference in simulation time for LAN11 vs. MNLE5 was on the order of days.",
+    "claim_type": "EXPLICIT",
+    "source": "While this new implementation made LAN significantly faster for a single forward-pass, we observed that the resulting time difference with the MCMC settings used here was only on the order of minutes, whereas the difference in simulation time for LAN11 vs. MNLE5 was on the order of days.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from timing comparisons performed by the authors.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C139",
+    "claim": "In a situation where iteration over model design is required (i.e., custom DDMs), an increase in training efficiency on the order of days would be advantageous.",
+    "claim_type": "EXPLICIT",
+    "source": "The exact timings will always be implementation specific and whether or not these differences are important will depend on the application at hand. In a situation where iteration over model design is required (i.e., custom DDMs), an increase in training efficiency on the order of days would be advantageous.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the practical implications of the efficiency differences.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C140",
+    "claim": "There exist a number of approaches with corresponding software packages for estimating parameters of cognitive neuroscience models, and DDMs in particular.",
+    "claim_type": "EXPLICIT",
+    "source": "There exist a number of approaches with corresponding software packages for estimating parameters of cognitive neuroscience models, and DDMs in particular.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established knowledge about the field.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C141",
+    "claim": "Some existing approaches only estimate single best-fitting parameters.",
+    "claim_type": "EXPLICIT",
+    "source": "However, these approaches either only estimate single best-fitting parameters (Voss and Voss, 2007; Wagenmakers et al., 2007; Chandrasekaran and Hawkins, 2019; Heathcote et al., 2019; Shinn et al., 2020) or, if they perform fully Bayesian inference, can only produce Gaussian approximations to posteriors (Feltgen and Daunizeau, 2021), or are restricted to variants of the DDM for which the likelihood can be evaluated (Wiecki et al., 2013, HDDM [Hierarchical DDM] toolbox).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C142",
+    "claim": "Some existing approaches that perform fully Bayesian inference can only produce Gaussian approximations to posteriors.",
+    "claim_type": "EXPLICIT",
+    "source": "However, these approaches either only estimate single best-fitting parameters (Voss and Voss, 2007; Wagenmakers et al., 2007; Chandrasekaran and Hawkins, 2019; Heathcote et al., 2019; Shinn et al., 2020) or, if they perform fully Bayesian inference, can only produce Gaussian approximations to posteriors (Feltgen and Daunizeau, 2021), or are restricted to variants of the DDM for which the likelihood can be evaluated (Wiecki et al., 2013, HDDM [Hierarchical DDM] toolbox).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C143",
+    "claim": "Some existing approaches are restricted to variants of the DDM for which the likelihood can be evaluated.",
+    "claim_type": "EXPLICIT",
+    "source": "However, these approaches either only estimate single best-fitting parameters (Voss and Voss, 2007; Wagenmakers et al., 2007; Chandrasekaran and Hawkins, 2019; Heathcote et al., 2019; Shinn et al., 2020) or, if they perform fully Bayesian inference, can only produce Gaussian approximations to posteriors (Feltgen and Daunizeau, 2021), or are restricted to variants of the DDM for which the likelihood can be evaluated (Wiecki et al., 2013, HDDM [Hierarchical DDM] toolbox).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C144",
+    "claim": "A recent extension of the HDDM toolbox includes LANs, thereby combining HDDM's flexibility with LAN's ability to perform inference without access to the likelihood function.",
+    "claim_type": "EXPLICIT",
+    "source": "A recent extension of the HDDM toolbox includes LANs, thereby combining HDDM's flexibility with LAN's ability to perform inference without access to the likelihood function (but this remains restricted to variants of the DDM for which LAN can be pretrained).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about recent developments in the field.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C145",
+    "claim": "The HDDM extension with LANs remains restricted to variants of the DDM for which LAN can be pretrained.",
+    "claim_type": "EXPLICIT",
+    "source": "A recent extension of the HDDM toolbox includes LANs, thereby combining HDDM's flexibility with LAN's ability to perform inference without access to the likelihood function (but this remains restricted to variants of the DDM for which LAN can be pretrained).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the limitations of the HDDM-LAN extension.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C146",
+    "claim": "MNLE can be applied to any simulation-based model with intractable likelihoods and mixed data type outputs.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, MNLE can be applied to any simulation-based model with intractable likelihoods and mixed data type outputs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the applicability of MNLE as designed by the authors.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C147",
+    "claim": "The DDM models used in the study have a rather low-dimensional observation structure, as common in many cognitive neuroscience models.",
+    "claim_type": "EXPLICIT",
+    "source": "We note that these models have a rather low-dimensional observation structure (as common in many cognitive neuroscience models), and that our examples did not include additional parameter structure, for example, stimulus encoding parameters, which would increase the dimensionality of the learning problem.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation about the models used in the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C148",
+    "claim": "Other variants of neural density estimation have been applied successfully to a variety of problems with higher dimensionality.",
+    "claim_type": "EXPLICIT",
+    "source": "However, other variants of neural density estimation have been applied successfully to a variety of problems with higher dimensionality (see e.g., Gon\u00e7alves et al., 2020; Lueckmann et al., 2021; Gl\u00f6ckler et al., 2021; Dax et al., 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C149",
+    "claim": "MNLE is expected to be applicable to other simulation-based problems with higher-dimensional observation structure and parameter spaces.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, we expect MNLE to be applicable to other simulation-based problems with higher-dimensional observation structure and parameter spaces, and to scale more favorably than LANs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is speculation based on the properties of neural density estimation and the results presented.",
+    "evidence_type": [
+      "SPECULATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C150",
+    "claim": "MNLE is expected to scale more favorably than LANs for higher-dimensional problems.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, we expect MNLE to be applicable to other simulation-based problems with higher-dimensional observation structure and parameter spaces, and to scale more favorably than LANs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is speculation based on the conceptual differences between MNLE and LANs.",
+    "evidence_type": [
+      "SPECULATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C151",
+    "claim": "Applying MNLE to different inference problems may require selecting different architecture and training hyperparameters settings.",
+    "claim_type": "EXPLICIT",
+    "source": "Like for any neural network-based approach, applying MNLE to different inference problems may require selecting different architecture and training hyperparameters settings, which may induce additional computational training costs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established knowledge about neural network-based approaches.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C152",
+    "claim": "The authors adopted default settings for MNLE which have been shown to work well on a large range of SBI benchmarking problems.",
+    "claim_type": "EXPLICIT",
+    "source": "To help with this process, we adopted default settings which have been shown to work well on a large range of SBI benchmarking problems (Lueckmann et al., 2021), and we integrated MNLE into the established sbi python package that provides well-documented implementations for training- and inference performance of SBI algorithms.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the implementation choices made by the authors, supported by citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C153",
+    "claim": "The authors integrated MNLE into the established sbi python package.",
+    "claim_type": "EXPLICIT",
+    "source": "To help with this process, we adopted default settings which have been shown to work well on a large range of SBI benchmarking problems (Lueckmann et al., 2021), and we integrated MNLE into the established sbi python package that provides well-documented implementations for training- and inference performance of SBI algorithms.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the implementation work done by the authors.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C154",
+    "claim": "Several extensions to classical SL approaches have addressed the problem of bias in the likelihood approximation due to strong parametric assumptions.",
+    "claim_type": "EXPLICIT",
+    "source": "Several extensions to classical SL approaches have addressed the problem of a bias in the likelihood approximation due to the strong parametric assumptions, that is, Gaussianity, the use of summary statistics, or finite-sample biases (Price et al., 2018; Ong et al., 2009; van Opheusden et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C155",
+    "claim": "MNLE builds on flexible neural likelihood estimators and does not require summary statistics for a low-dimensional simulator like the DDM.",
+    "claim_type": "EXPLICIT",
+    "source": "MNLE builds on flexible neural likelihood estimators, for example, normalizing flows, and does not require summary statistics for a low-dimensional simulator like the DDM, so would be less susceptible to these first two biases.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the properties of MNLE based on its design.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C156",
+    "claim": "MNLE would be less susceptible to biases from Gaussianity assumptions and use of summary statistics.",
+    "claim_type": "EXPLICIT",
+    "source": "MNLE builds on flexible neural likelihood estimators, for example, normalizing flows, and does not require summary statistics for a low-dimensional simulator like the DDM, so would be less susceptible to these first two biases.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the properties of MNLE based on its design.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C157",
+    "claim": "MNLE could be subject to biases resulting from the estimation of the log-likelihoods from a finite number of simulations.",
+    "claim_type": "EXPLICIT",
+    "source": "It could be subject to biases resulting from the estimation of the log-likelihoods from a finite number of simulations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is speculation about potential limitations of MNLE.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C158",
+    "claim": "In the numerical experiments, and for the simulation budgets used, the authors did not observe biased inference results with MNLE.",
+    "claim_type": "EXPLICIT",
+    "source": "In our numerical experiments, and for the simulation budgets we used, we did not observe biased inference results.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from the experiments performed in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C159",
+    "claim": "The ability of neural density estimators to pool data across multiple parameter settings may mitigate finite-sample effects.",
+    "claim_type": "EXPLICIT",
+    "source": "We speculate that the ability of neural density estimators to pool data across multiple parameter settings (rather than using only data from a specific parameter set, like in classical SL methods) mitigates finite-sample effects.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is speculation about why MNLE did not show finite-sample biases.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C160",
+    "claim": "Alternatives to neural likelihood estimation include neural posterior estimation (NPE) and neural ratio estimation (NRE).",
+    "claim_type": "EXPLICIT",
+    "source": "Alternatives to neural likelihood estimation include neural posterior estimation (NPE, Papamakarios and Murray, 2016; Lueckmann et al., 2017; Greenberg et al., 2019, which uses conditional density estimation to learn the posterior directly) and neural ratio estimation (NRE, Hermans et al., 2020; Durkan et al., 2020, which uses classification to approximate the likelihood-to-evidence ratio to then perform MCMC).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C161",
+    "claim": "NPE uses conditional density estimation to learn the posterior directly.",
+    "claim_type": "EXPLICIT",
+    "source": "Alternatives to neural likelihood estimation include neural posterior estimation (NPE, Papamakarios and Murray, 2016; Lueckmann et al., 2017; Greenberg et al., 2019, which uses conditional density estimation to learn the posterior directly) and neural ratio estimation (NRE, Hermans et al., 2020; Durkan et al., 2020, which uses classification to approximate the likelihood-to-evidence ratio to then perform MCMC).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C162",
+    "claim": "NRE uses classification to approximate the likelihood-to-evidence ratio to then perform MCMC.",
+    "claim_type": "EXPLICIT",
+    "source": "Alternatives to neural likelihood estimation include neural posterior estimation (NPE, Papamakarios and Murray, 2016; Lueckmann et al., 2017; Greenberg et al., 2019, which uses conditional density estimation to learn the posterior directly) and neural ratio estimation (NRE, Hermans et al., 2020; Durkan et al., 2020, which uses classification to approximate the likelihood-to-evidence ratio to then perform MCMC).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C163",
+    "claim": "NPE and NRE could in principle be applied to decision-making models as well.",
+    "claim_type": "EXPLICIT",
+    "source": "These approaches could in principle be applied here as well, however, they are not as well suited for the flexible inference scenarios common in decision-making models as MNLE.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the applicability of alternative methods.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C164",
+    "claim": "NPE and NRE are not as well suited for the flexible inference scenarios common in decision-making models as MNLE.",
+    "claim_type": "EXPLICIT",
+    "source": "These approaches could in principle be applied here as well, however, they are not as well suited for the flexible inference scenarios common in decision-making models as MNLE.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the properties of these methods.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C165",
+    "claim": "NPE directly targets the posterior and therefore, by design, typically requires retraining if the structure of the problem changes.",
+    "claim_type": "EXPLICIT",
+    "source": "NPE directly targets the posterior and therefore, by design, typically requires retraining if the structure of the problem changes (e.g., if the prior or the hierarchical structure of the model changes).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a known property of NPE methods.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C166",
+    "claim": "There are variants of NPE that use embedding nets which can amortize over changing number of trials, avoiding retraining.",
+    "claim_type": "EXPLICIT",
+    "source": "There are variants of NPE that use embedding nets which can amortize over changing number of trials, avoiding retraining (Radev et al., 2022, von Krause et al., 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C167",
+    "claim": "NRE learns the likelihood-to-evidence ratio using ratio estimation and would not provide an emulator of the simulator.",
+    "claim_type": "EXPLICIT",
+    "source": "NRE learns the likelihood-to-evidence ratio using ratio estimation (and not density estimation) and would not provide an emulator of the simulator.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a known property of NRE methods.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C168",
+    "claim": "MNLE has the potential to become more simulation efficient by using weight sharing between the discrete and the continuous neural density estimators.",
+    "claim_type": "EXPLICIT",
+    "source": "Regarding future research directions, MNLE has the potential to become more simulation efficient by using weight sharing between the discrete and the continuous neural density estimators (rather than to use separate neural networks, as we did here).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is speculation about potential improvements to MNLE.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C169",
+    "claim": "For high-dimensional inference problems in which slice sampling-based MCMC might struggle, MNLE could be used in conjunction with gradient-based MCMC methods like Hamiltonian Monte Carlo (HMC).",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, for high-dimensional inference problems in which slice sampling-based MCMC might struggle, MNLE could be used in conjunction with gradient-based MCMC methods like Hamiltonian Monte Carlo (HMC, Brooks et al., 2011; Hoffman and Gelman, 2014), or variational inference as recently proposed by Wiqvist et al., 2021 and Gl\u00f6ckler et al., 2021.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is speculation about potential applications of MNLE, supported by citations.",
+    "evidence_type": [
+      "SPECULATION",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C170",
+    "claim": "MNLE could be used with variational inference for high-dimensional inference problems.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, for high-dimensional inference problems in which slice sampling-based MCMC might struggle, MNLE could be used in conjunction with gradient-based MCMC methods like Hamiltonian Monte Carlo (HMC, Brooks et al., 2011; Hoffman and Gelman, 2014), or variational inference as recently proposed by Wiqvist et al., 2021 and Gl\u00f6ckler et al., 2021.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is speculation about potential applications of MNLE, supported by citations.",
+    "evidence_type": [
+      "SPECULATION",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C171",
+    "claim": "With MNLE's full integration into the sbi package, both gradient-based MCMC methods from Pyro and variational inference for SBI (SNVI) are available as inference methods for MNLE.",
+    "claim_type": "EXPLICIT",
+    "source": "With MNLE's full integration into the sbi package, both gradient-based MCMC methods from Pyro (Bingham et al., 2019), and variational inference for SBI (SNVI, Gl\u00f6ckler et al., 2021) are available as inference methods for MNLE (a comparison of HMC and SNVI to slice sampling MCMC on one example observation resulted in indistinguishable posterior samples).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the implementation and capabilities of MNLE, supported by citations.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C172",
+    "claim": "A comparison of HMC and SNVI to slice sampling MCMC on one example observation resulted in indistinguishable posterior samples.",
+    "claim_type": "EXPLICIT",
+    "source": "With MNLE's full integration into the sbi package, both gradient-based MCMC methods from Pyro (Bingham et al., 2019), and variational inference for SBI (SNVI, Gl\u00f6ckler et al., 2021) are available as inference methods for MNLE (a comparison of HMC and SNVI to slice sampling MCMC on one example observation resulted in indistinguishable posterior samples).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from experiments performed by the authors.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C173",
+    "claim": "Using its emulator property, MNLE could be applied in an active learning setting for highly expensive simulators.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, using its emulator property (see Appendix 1), MNLE could be applied in an active learning setting for highly expensive simulators in which new simulations are chosen adaptively according to a acquisition function in a Bayesian optimization framework (Gutmann and Corander, 2016; Lueckmann et al., 2019; J\u00e4rvenp\u00e4\u00e4 et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is speculation about potential applications of MNLE, supported by citations.",
+    "evidence_type": [
+      "SPECULATION",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C174",
+    "claim": "MNLE enables flexible and efficient inference of parameters of models in cognitive neuroscience with intractable likelihoods.",
+    "claim_type": "EXPLICIT",
+    "source": "In summary, MNLE enables flexible and efficient inference of parameters of models in cognitive neuroscience with intractable likelihoods.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the main contribution of the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C175",
+    "claim": "The training efficiency and flexibility of the neural density estimators used in MNLE overcome the limitations of LANs.",
+    "claim_type": "EXPLICIT",
+    "source": "The training efficiency and flexibility of the neural density estimators used overcome the limitations of LANs (Fengler et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the advantages of MNLE over LANs.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C176",
+    "claim": "The features of MNLE enable researchers to develop customized models of decision-making and not just apply existing models to new data.",
+    "claim_type": "EXPLICIT",
+    "source": "Critically, these features enable researchers to develop customized models of decision-making and not just apply existing models to new data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the practical implications of MNLE's properties.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C180",
+    "claim": "The authors used the approach and implementation proposed by Drugowitsch, 2016 to simulate the DDM and calculate analytical likelihoods.",
+    "claim_type": "EXPLICIT",
+    "source": "To simulate the DDM and calculate analytical likelihoods we used the approach and the implementation proposed by Drugowitsch, 2016.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the implementation used in the experiments, supported by citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C181",
+    "claim": "The authors numerically confirmed that the simulations and the analytical likelihoods match those obtained from the research code provided by Fengler et al., 2021.",
+    "claim_type": "EXPLICIT",
+    "source": "We numerically confirmed that the simulations and the analytical likelihoods match those obtained from the research code provided by Fengler et al., 2021.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a validation step performed by the authors.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C182",
+    "claim": "The authors downloaded the neural network weights of the pretrained LAN models from the repository mentioned in Fengler et al., 2021.",
+    "claim_type": "EXPLICIT",
+    "source": "To run LANs, we downloaded the neural network weights of the pretrained models from the repository mentioned in Fengler et al., 2021.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental setup used by the authors.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C184",
+    "claim": "The authors only considered the LAN approach based on training a multilayer perceptron on single-trial likelihoods ('pointwise approach').",
+    "claim_type": "EXPLICIT",
+    "source": "We only considered the approach based on training a multilayer perceptron on single-trial likelihoods ('pointwise approach', Fengler et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental setup used by the authors.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C187",
+    "claim": "For the collapsing bounds DDM variant, no analytical likelihoods are available.",
+    "claim_type": "EXPLICIT",
+    "source": "To simulate this DDM variant, we again used the Julia package by Drugowitsch, 2016, but we note that for this variant no analytical likelihoods are available.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the properties of the collapsing bounds DDM.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C188",
+    "claim": "It would be possible to approximate the likelihoods numerically for the collapsing bounds DDM using the Fokker\u2013Planck equations.",
+    "claim_type": "EXPLICIT",
+    "source": "While it would be possible to approximate the likelihoods numerically using the Fokker\u2013Planck equations (see e.g., Shinn et al., 2020), this would usually involve a trade-off between computation time and accuracy as well as design of bespoke solutions for individual models, and was not pursued here.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C190",
+    "claim": "To sample from posteriors via MCMC, the authors transformed the parameters to unconstrained space, used slice sampling, and initialized ten parallel chains using sequential importance sampling.",
+    "claim_type": "EXPLICIT",
+    "source": "To sample from posteriors via MCMC, we transformed the parameters to unconstrained space, used slice sampling (Neal, 2009), and initialized ten parallel chains using sequential importance sampling (Papamakarios et al., 2019a), all as implemented in the sbi toolbox.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the MCMC setup used in the experiments, supported by citations.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C191",
+    "claim": "The authors ran MCMC with identical settings for MNLE and LAN.",
+    "claim_type": "EXPLICIT",
+    "source": "We ran MCMC with identical settings for MNLE and LAN.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental setup used by the authors.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C195",
+    "claim": "One can use the neural likelihood to perform hierarchical inference with MCMC, all without the need for retraining.",
+    "claim_type": "EXPLICIT",
+    "source": "Similarly, one can use the neural likelihood to perform hierarchical inference with MCMC, all without the need for retraining (see Hermans et al., 2020; Fengler et al., 2021, for examples).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a property of the MNLE approach, supported by citations.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C197",
+    "claim": "MNLE could be adapted to scenarios in which the i.i.d. assumption across trials does not hold by adapting the model simulator accordingly.",
+    "claim_type": "EXPLICIT",
+    "source": "Similarly, MNLE could be adapted to scenarios in which the i.i.d. assumption across trials as used above (see Flexible Bayesian inference with MCMC) does not hold. Again, this would be achieved by adapting the model simulator accordingly.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes how MNLE could be adapted to handle intertrial dependencies.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C199",
+    "claim": "For the normalizing flow in MNLE, the authors used the NSF architecture.",
+    "claim_type": "EXPLICIT",
+    "source": "For the normalizing flow we used the NSF architecture (Durkan et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the architecture choice made by the authors, supported by citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C200",
+    "claim": "NSFs use a standard normal base distribution and transform it using several modules of monotonic rational-quadratic splines whose parameters are learned by invertible neural networks.",
+    "claim_type": "EXPLICIT",
+    "source": "NSFs use a standard normal base distribution and transform it using several modules of monotonic rational-quadratic splines whose parameters are learned by invertible neural networks.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the NSF architecture, based on prior work.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C204",
+    "claim": "As proposal distribution for the MNLE training dataset, the authors used the prior over DDM parameters.",
+    "claim_type": "EXPLICIT",
+    "source": "As proposal distribution for the training dataset we used the prior over DDM parameters.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the training setup used by the authors.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C205",
+    "claim": "Training of MNLE was performed with code and training hyperparameter settings provided in the sbi toolbox.",
+    "claim_type": "EXPLICIT",
+    "source": "Training was performed with code and training hyperparameter settings provided in the sbi toolbox (Tejero-Cantero et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the implementation used by the authors, supported by citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C206",
+    "claim": "MNLE requires a number of hyperparameter choices regarding the neural network architectures.",
+    "claim_type": "EXPLICIT",
+    "source": "MNLE requires a number of hyperparameter choices regarding the neural network architectures, for example, number of hidden layers, number of hidden units, number of stacked NSF transforms, kind of base distribution, among others (Durkan et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established knowledge about neural network-based approaches.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C207",
+    "claim": "The authors' initial hyperparameter choices for MNLE based on sbi package defaults resulted in likelihood accuracy similar to LAN, but longer evaluation times.",
+    "claim_type": "EXPLICIT",
+    "source": "With our implementation building on the sbi package we based our hyperparameter choices on the default settings provided there. This resulted in likelihood accuracy similar to LAN, but longer evaluation times due to the complexity of the underlying normalizing flow architecture.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from the experiments performed by the authors.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C208",
+    "claim": "To reduce evaluation time of MNLE, the authors ran a cross-validation of the hyperparameters relevant for evaluation time.",
+    "claim_type": "EXPLICIT",
+    "source": "To reduce evaluation time of MNLE, we further adapted the architecture to the example model (DDM). In particular, we ran a cross-validation of the hyperparameters relevant for evaluation time, that is, number of hidden layers, hidden units, NSF transforms, spline bins, and selected those that were optimal in terms of Huber loss and MSE between the approximate and the analytical likelihoods, as well as evaluation time.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the hyperparameter optimization performed by the authors.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C209",
+    "claim": "The hyperparameter cross-validation resulted in an architecture with performance and evaluation time similar to LANs.",
+    "claim_type": "EXPLICIT",
+    "source": "This resulted in an architecture with performance and evaluation time similar to LANs (more details in Appendix: Architecture and training hyperparameters).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from the hyperparameter optimization performed by the authors.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C210",
+    "claim": "The cross-validation for MNLE hyperparameters relied on access to the analytical likelihoods which is usually not given in practice.",
+    "claim_type": "EXPLICIT",
+    "source": "The cross-validation relied on access to the analytical likelihoods which is usually not given in practice, for example, for simulators with intractable likelihoods.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation about the limitations of the hyperparameter optimization approach.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C211",
+    "claim": "In cases without access to analytical likelihoods, a similar cross-validation can be performed using quality measures other than the difference to the analytical likelihood, such as comparing observed data with synthetic data and SLs provided by MNLE.",
+    "claim_type": "EXPLICIT",
+    "source": "However, we note that in cases without access to analytical likelihoods a similar cross-validation can be performed using quality measures other than the difference to the analytical likelihood, for example, by comparing the observed data with synthetic data and SLs provided by MNLE.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a suggestion for how to perform hyperparameter optimization without analytical likelihoods.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  }
+]

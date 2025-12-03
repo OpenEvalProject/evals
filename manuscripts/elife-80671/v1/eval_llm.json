@@ -1,0 +1,344 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C33",
+      "C107"
+    ],
+    "result": "A biologically plausible STDP-based plasticity rule in a spiking neural network learns the successor representation (SR) in CA3-CA1 synaptic weights, implementing the TD(\u03bb) algorithm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C33, and C107 collectively establish the core finding. The mathematical derivations (C3, C33) prove equivalence to TD(\u03bb), and simulations (Figure 2) demonstrate convergence to the theoretical SR matrix. The analytical proof in the Appendix and numerical validation provide strong converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C17",
+      "C18",
+      "C41",
+      "C53",
+      "C58",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The framework unifies behavioral and replay activity by smoothly transitioning between rate coding (behavioral timescales, TD(0)) and temporal coding (replay timescales, TD(1)), enabling learning over behavioral timescales using millisecond-scale STDP through bootstrapping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C17, C18, C41, C53, C58, C129, C130, and C131 demonstrate how the model bridges timescales. The mathematical relationship between \u03bb and timescale T (shown in Figure 2\u2014figure supplement 1) and the bootstrapping mechanism (C53, C58) provide the mechanistic explanation. Simulations in Figure 2 validate this across different timescales.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C20",
+      "C75",
+      "C76",
+      "C81",
+      "C167",
+      "C171"
+    ],
+    "result": "The discount factor \u03b3 depends on biological parameters (dwelling time, firing rates, neuromodulation) and exhibits hyperbolic dependence on time but exponential dependence on state transitions, allowing continuous-time operation without discretization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C20, C75, C76, C81, C167, and C171 establish the relationship between biological parameters and discounting. Mathematical derivations (Equations 22-23, Figure 2\u2014figure supplement 1) show the hyperbolic time dependence, and simulations (Figure 3c-f) demonstrate state-dependent discounting effects on place fields.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C157"
+    ],
+    "result": "Replays with similar trajectories to behavior speed up learning in novel environments by regulating the bias-variance trade-off, with proportionally more replays in novel versus familiar environments matching experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C84-C91, and C157 establish the role of replays in novel environments. The bias-variance analysis (C84-C86) provides theoretical grounding, simulations (Figure 4a-e) demonstrate faster learning with decaying replay probability, and experimental data (C91, Figure 4f) corroborates the prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C24",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C103",
+      "C158"
+    ],
+    "result": "Replays of trajectories not directly experienced during behavior can reshape spatial representations and influence policy, as demonstrated in simulations of the Wu et al. 2017 place-avoidance task where replays enable avoidance learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C24, C96-C101, C103, and C158 demonstrate replay-based planning. Simulations (Figure 5d-e) show that replays from decision points to shock zones propagate negative reward information and alter behavior, while control simulations (C100, Figure 5\u2014figure supplement 1) confirm it's the policy type, not update frequency, that matters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C30",
+      "C31",
+      "C32",
+      "C147"
+    ],
+    "result": "The model architecture consists of a feedforward CA3-CA1 network with all-to-all plastic connections following STDP, plus external inputs representing current state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C30-C32, and C147 describe the model architecture. The specification is clear and consistent with cited prior work (McNaughton and Morris 1987, Hasselmo and Schnell 1994). The architecture is fully specified in Materials and Methods with equations and parameters (Table 1).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C59",
+      "C60",
+      "C63",
+      "C64"
+    ],
+    "result": "The prediction error in the model is computed locally at synapses through STDP terms rather than via a global signal, with potentiation updating SR rows and depression updating columns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57, C59, C60, C63, and C64 establish the local computation of prediction errors. The mathematical derivations (Appendix, Equations 13-16) show how STDP terms implement TD prediction errors without requiring external error signals like dopamine, distinguishing this from other models (C63).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "For fast timescales (replays), TD(1) is equivalent to Monte Carlo learning where the entire trajectory falls within the plasticity window, enabling learning without bootstrapping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 establish the replay regime. The mathematical analysis (section 'Learning during replays') shows \u03bb\u21921 as T\u21920, and the alternative derivation (section 'Alternative derivation of replay model') proves equivalence to Monte Carlo. Simulations (Figure 2B) validate convergence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The SR can be read out by downstream neurons whose firing rates are proportional to synaptic weights, with state values computed as the inner product of SR and reward vector.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 describe the readout mechanism. This follows directly from the neuron model (inhomogeneous Poisson process based on depolarization) and the standard SR framework definition. Figure 5\u2014figure supplement 2 demonstrates the readout in simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "External inputs to both CA3 and CA1 during learning may distort diagonal SR elements during readout, but multiple potential solutions exist including temporal separation of learning and readout, or compensatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C117 identify a potential issue and propose solutions. The distortion is shown mathematically (Equations 13, 15) and in simulations (Figure 5\u2014figure supplement 2), but the proposed solutions (C113-C117) are speculative. No experimental validation or detailed modeling of the solutions is provided, leaving the resolution uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C122",
+      "C128"
+    ],
+    "result": "The proposed STDP rule has been observed in hippocampus and can compute negative prediction errors through presynaptic depression, addressing a challenge for dopamine-based models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122 and C128 establish biological plausibility and advantages. C122 is supported by multiple citations (Shouval et al. 2002, Mehta et al. 2000, Waddington et al. 2012, van Rossum et al. 2012). C128 correctly identifies an advantage over dopamine models, supported by citations about low baseline dopaminergic firing rates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The model differs from Drew and Abbott 2006 by not requiring initial overlap between pre- and postsynaptic activity, instead learning connections separated by behavioral timescales through repeated task execution and chains of neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C138 distinguish the model from related work. The key difference (C135) is clearly stated and the mechanism (C137-C138) is explained through bootstrapping. This is a valid conceptual distinction supported by the mathematical framework, though direct comparative simulations are not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The framework differs from George et al. 2023 by relying on rate coding during behavior rather than theta sequences, though both reconcile behavioral and synaptic timescales and could potentially co-exist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C145 compare with recent related work. The distinction (C143) is clearly stated, and the acknowledgment of complementarity (C145) is appropriate. The comparison is fair and accurately represents the cited work (C140, C142, C144), though it's based on literature review rather than direct comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "State-dependent discounting through modulation of firing rates and plasticity parameters can encode salient locations and leads to experimentally testable predictions about place field changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83, C168-C170 establish the flexibility and testability of the model. Simulations (Figure 3c, f) demonstrate encoding of salient locations through state-dependent discounting. The predictions (C170) are specific and tied to manipulable biological parameters, making them testable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "Noise from random spike times can be mitigated by averaging over a population of neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C48 addresses a limitation of the spiking model. This is a standard approach in computational neuroscience and is demonstrated in the simulations where variance decreases with population averaging (Figure 2, shaded areas show standard deviation over multiple seeds).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "While the model suggests a role for SR in the Wu et al. task, the data would also be compatible with model-based strategies, and humans may use mixed strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 appropriately acknowledge alternative explanations. C104 correctly notes that the experimental data doesn't uniquely support SR over model-based RL. C105 cites experimental evidence (Momennejad et al. 2017) for mixed strategies in humans, providing appropriate context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "The RL framework has limitations including reliance on spatial data only, strict mathematical assumptions, sample inefficiency compared to biological learning, and lack of neural implementation for action selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C178 acknowledge limitations of the approach. These are well-known limitations of RL frameworks (C172-C176 are general knowledge), and C177-C178 correctly identify that action selection remains at the algorithmic level. The acknowledgment is appropriate and honest about the model's scope.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background on cognitive maps, place cells, and the successor representation framework, including its computational advantages and experimental support.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C16 provide background context. These are well-established facts from the literature, properly cited (Tolman 1948, O'Keefe and Dostrovsky 1971, Dayan 1993, Stachenfeld et al. 2017, etc.). This is standard background material accurately representing prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "External inputs could originate from entorhinal cortex guided by theta oscillations, the framework could apply to sensory areas, and replays have been observed beyond hippocampus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C148-C153 are largely speculative (C148, C150, C152) or cite prior work (C149, C153). C148 is reasonable speculation supported by lesion studies (C149), but lacks direct evidence. C152 is interesting speculation about broader applicability but untested. These represent future directions rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C164",
+      "C165"
+    ],
+    "result": "Replays serve multiple functions including consolidation and planning, with experimental observations of replays starting/ending at salient locations supporting the model's predictions, though reverse replays and plasticity during replays remain unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C165 discuss replays in broader context. The role of replays (C155-C158) is supported by simulations and cited literature. Experimental observations (C159) align with model predictions (C160). Appropriate acknowledgment of limitations (C161, C162, C164, C165) and alternative replay functions is provided.",
+    "result_type": "MINOR"
+  }
+]

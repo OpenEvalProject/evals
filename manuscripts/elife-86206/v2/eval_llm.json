@@ -1,0 +1,415 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C10",
+      "C11",
+      "C27"
+    ],
+    "result": "The manuscript establishes the background context for CHD genetics, stating that CHDs affect 1% of births, the genetic basis remains unknown for 54% of familial and 80% of sporadic cases, and that whole genome sequencing has identified >50,000 de novo variants in 749 CHD patients. The authors note that protein-coding variants account for only a small fraction of CHD risk, while the vast majority of de novo variants are non-coding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C10-C11, and C27 are all supported by appropriate citations to prior literature (Hoffman and Kaplan 2002; Blue et al. 2017; Richter et al. 2020). These background claims establish the scientific rationale for the study and are well-documented in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C12",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "The manuscript describes TBX5 as a key cardiac regulator where coding variants cause Holt-Oram syndrome, early expression is necessary for CM maturation, and later expression is required for cardiac conduction system specification. Multiple enhancers control TBX5 expression, and a non-coding CHD-associated variant has been shown to impair proper TBX5 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C9, C12, C146-C148 are supported by appropriate citations to established literature (Basson et al. 1997; Bruneau et al. 2001; Smemo et al. 2012; Kathiriya et al. 2021). These claims provide essential background on TBX5 function and its role in CHD.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The manuscript reviews prior methodological approaches for studying enhancer function, including massively parallel reporter assays, CRISPR screens, and single-cell approaches. The authors note limitations of each approach, particularly that reporter assays do not assess variants in endogenous genomic context and traditional CRISPR screens lose information about cell type specification during development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C21 are supported by appropriate citations to prior work (Richter et al. 2020; Fulco et al. 2016; Kathiriya et al. 2021; Genga et al. 2019; Tian et al. 2019; Gasperini et al. 2019; Xie et al. 2017). The limitations noted are reasonable assessments of these methodologies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The study applied a single-cell CRISPRi screen for 25 CHD-associated enhancers during hESC to CM differentiation, identifying 16 enhancers that when perturbed result in deficient CM specification. The enhancers were selected by overlapping variants with epigenetic datasets (ATAC-seq, H3K27ac), prioritizing diverse CHD types, filtering for proximity to heart development genes, and considering sequence conservation. The authors hypothesize these enhancers may impact cell fate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C35 describe the study design and main finding. The selection criteria are clearly described with appropriate citations (Liu et al. 2017; Zhang et al. 2019; Siepel et al. 2005; van den Hoogenhof et al. 2018; Tompkins et al. 2016). The identification of 16 enhancers is a primary experimental result supported by the data presented in subsequent figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The study used CRISPRi-mediated single-cell perturbation screens with 397 sgRNAs targeting 25 enhancers, 19 promoters, and controls. hESCs were differentiated toward CMs through WNT modulation without metabolic selection to preserve heterogeneity, examined at day 8. After scRNA-seq and filtering, 80,343 high-quality cells were retained with on average one sgRNA per cell. Seven distinct cell populations were identified, with focus on three mesoderm-derived clusters (TNNT2+ CMs, FN1+ mesodermal cells, COL3A1+ cardiac fibroblasts). CRISPRi efficiency was verified by robust depletion of control genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C46 describe the experimental methodology and quality control. The approach is well-documented with appropriate citations (Tohyama et al. 2013; Cheng et al. 2013; van Nieuwenhoven et al. 2013). Statistical validation is provided (pMalat1 <2.2e-308, Mann-Whitney U). The cell numbers and sgRNA detection rates are clearly reported with references to supplementary data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The study validated the screening approach using positive controls. Cells with sgRNAs targeting ZIC2 promoter were significantly depleted for neuronal (p=4.7e-61) and cardiac populations (p=1.9e-5), with enrichment for early mesodermal state. Loss of TBX5 expression (promoter or enhancer 6 targeting) led to CM depletion (p=2.0e-5; p=0.025) and increase in early mesoderm cells (p=3.4e-11; p=4.1e-4). Perturbation of a TBX5 enhancer phenocopied promoter perturbation, confirmed by bulk qPCR showing loss of TBX5 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C56 present validation experiments with appropriate statistical tests (hypergeometric test, Mann-Whitney U) and significant p-values. The results are consistent with prior literature (Kathiriya et al. 2021). The phenocopy between enhancer and promoter perturbation is supported by both single-cell and bulk qPCR data (Figure 1H, Figure 1\u2014figure supplement 1I).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The study identified a CM differentiation trajectory with four subpopulations (SOX4+ progenitors, FN1+ early-stage CMs, ACTA2+ mid-stage CMs, NPPA+ atrial-like late-stage CMs). Pseudotime analysis ordered these states with increasing expression of cardiac maturation genes like TNNT2, showing consistency with published bulk RNA-seq datasets. Perturbation of 16 enhancers led to depletion of late-stage CMs with enrichment in earlier states. Using stringent criteria, 14 out of 25 enhancer perturbations caused changes in cell state distribution, likely an underestimate of the true hit rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C65 describe trajectory analysis and screening results. The cell state definitions are supported by appropriate marker genes with citations (Paul et al. 2014; Potta et al. 2010). Validation against bulk RNA-seq (Tompkins et al. 2016) strengthens the findings. The identification of 16 enhancers affecting late-stage CMs is a major result, though the authors appropriately note their stringent filtering may underestimate the true hit rate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The study examined specific enhancer examples: TNNT2 enhancers (CRISPRi repression of promoter or enhancers resulted in late-CM depletion with p-values 0.0005, 0.03, 0.001 and reduced TNNT2 expression); a CHD-associated enhancer characterized by reporter assay (repression depleted late-CM state, p=2.5e-5); and six TBX5 enhancers (CRISPRi repression led to late-CM depletion with p-values between 3.7e-2 and 1.9e-8, with reduced expression of TBX5 targets NPPA and NPPB). The authors conclude these enhancers have roles in CM lineage commitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C75 present specific examples with statistical validation (hypergeometric test, Mann-Whitney U) and appropriate p-values. The TNNT2 and TBX5 results are supported by multiple lines of evidence including cell state distribution, pseudotime analysis, and differential gene expression (Figure 2E-O, Supplementary file 4). Citations to prior work (Gilsbach et al. 2018; Richter et al. 2020; Ang et al. 2016; Houweling et al. 2005; Luna-Zurita et al. 2016) support the biological interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "A focused validation screen targeted six TBX5 enhancers (three previously identified by Smemo et al. 2012, three newly identified based on epigenetic hallmarks). After CM differentiation and sequencing, 3102 cells were identified as CMs. Cells with TBX5 enhancer repression were significantly depleted in late-CM state (p-values between 1.3e-5 and 1.3e-19), with activation of ACTA2 (p=3.1e-7) and repression of NPPA (p=8.2e-24), consistent with TBX5 knockout studies. Focused analysis identified three CM subpopulations with 122 cells across TBX5 enhancer perturbations showing significant late-CM depletion (p=3.8e-18), mid-CM increase (p=7.8e-13), and decreased pseudotime rank (p=2.2e-5). Cell label transfer validated consistency with the initial screen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C91 describe a focused validation screen with robust statistical support (hypergeometric test, Mann-Whitney U) and highly significant p-values. The consistency with prior TBX5 knockout studies (Kathiriya et al. 2021) strengthens the findings. Cell label transfer analysis provides additional validation. The relatively small number of cells (122) in the focused analysis is acknowledged but the statistical significance remains strong.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The study analyzed molecular signatures in cells reaching late-CM state. 80 late-CM genes (including NPPA and TTN) that continuously increase during differentiation were depleted in sgTBX5Enh cells reaching late-CM (p=1.7e-3), with pronounced repression of NPPA and NPPB. 18 mid-CM genes (including MYL4 and MYL6) were retained at higher levels in sgTBX5Enh late-CM cells (p=2.6e-4), with 48% increase in HAS2 expression (pmid-CM=0.0006). The authors conclude that sgTBX5Enh cells reaching late-CM state are in a delayed differentiation state reflecting mid-CM gene signatures, and that misregulation of TBX5 through enhancer modulation leads to deficient induction of CM transcriptional signatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C104 present detailed molecular analysis with statistical validation (Z-test, Mann-Whitney U). The identification of 80 late-CM and 18 mid-CM genes provides a systematic framework for analysis. The statistical significance (p=1.7e-3, p=2.6e-4) supports the conclusion that perturbed cells have altered molecular signatures. The interpretation that cells are in a 'delayed differentiation state' is reasonable given the data showing retention of mid-CM genes and depletion of late-CM genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The study used CRISPR/Cas9 to genetically delete TBX5 enhancers (Enh3, Enh5) and exon 3, generating biallelic knockout clones. All three knockouts could differentiate to CMs, with deletion of TBX5 enhancers phenocopying gene deletion (reduced RNA by qPCR and protein by immunocytochemistry). Analysis showed strong CM depletion in perturbed cells, with TBX5Enh5-/- exhibiting strongest depletion (~9% CMs, p>2.2e-308) compared to WT (~57% CMs), followed by TBX5Enh3-/- (~24% CMs, p=5.2e-263) and TBX5Exon-/- (~33% CMs, p=5.9e-166). Results were consistent over multiple biological replicates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C115 describe genetic deletion experiments that validate the CRISPRi results using an orthogonal approach. The statistical significance is extremely strong (p-values ranging from 5.9e-166 to >2.2e-308). Multiple biological replicates strengthen the findings. The phenocopy between enhancer and gene deletion is supported by both RNA and protein expression data (Figure 5C-E). The graded severity (Enh5 > Enh3 > Exon) is interesting and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Sub-clustering of CM cells revealed three states (FN1+ early CMs, ACTA2+ mid-CMs, NPPA+ late CMs) with cells from each genetic background represented across all states. Perturbed cells were 10.6-fold less likely to reach mature late-CM state (~27% WT, ~5% Enh3-/-, ~11% Enh5-/-, ~1% Exon-/-) with statistical significance (pEnh3=1.8e-24, pEnh5=1.6e-7, pExon=5.8e-83). Cells with TBX5 enhancer or exon deletion exhibited elevated mid-CM genes, repression of key cardiac genes including NPPA, increased RNA and protein expression of early CM markers (FN1), and decreased expression of late-CM marker NPPA. The authors conclude these observations are consistent with CRISPRi studies and support that loss of TBX5 enhancer function results in deficient transcriptional specification of CMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C124 present detailed characterization of genetic deletion phenotypes with strong statistical support and multiple orthogonal assays (scRNA-seq, qPCR, immunocytochemistry, FlowFISH). The 10.6-fold reduction in late-CM achievement is a substantial effect with highly significant p-values. The consistency between CRISPRi and genetic deletion strengthens the overall conclusions. Citation to Houweling et al. 2005 supports the identification of NPPA as a TBX5 target.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The study analyzed a heterozygous TBX5 Enh5 deletion clone (TBX5Enh5+/-), which exhibited significantly decreased TBX5 RNA expression during CM differentiation and significant CM depletion (~24% CMs, p=5.2e-125) relative to WT (~45% CMs). Sub-clustering revealed four CM states (FN1+ early, ACTA2+ mid, HAND1+ late, IRX2+ ventricular CMs). Focused pseudotime analysis showed significant depletion of Enh5+/- cells in mature ventricular CM state (~39% WT, ~6% Enh5+/-, p=1.5e-75). Heterozygous deletion of TBX5 Enh5 resulted in weaker differentiation defect than homozygous deletion of TBX5 Enh3 (which has weaker phenotype than homozygous Enh5 deletion), consistent with TBX5 gene deletions previously published.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C132 present heterozygous deletion analysis with strong statistical support (p=5.2e-125, p=1.5e-75). The graded severity of phenotypes (heterozygous Enh5 < homozygous Enh3 < homozygous Enh5) demonstrates dosage sensitivity and is consistent with prior work (Kathiriya et al. 2021). This provides important evidence for the functional importance of these enhancers and their potential relevance to human disease where heterozygous variants are common.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Cells with TBX5 enhancer knockout exhibited delayed activation of late-CM genes and delayed repression of mid-CM genes. Analysis revealed depletion of cardiac-related genes in perturbed late-CM cells compared to controls. Cell label transfer onto all previous datasets showed expected clustering and consistent deficiencies to achieve later CM states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C136 present additional molecular characterization and cross-dataset validation. The delayed activation/repression of stage-specific genes is consistent with the cell state analysis. Cell label transfer across multiple datasets (Figure 6\u2014figure supplement 1D-G) provides robust validation of the findings across different experimental conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The study identifies and functionally characterizes 16 enhancers required for normal CM differentiation. Perturbations yield diverse cellular phenotypes from global mesoderm reduction to deficient CM differentiation, consistent with the putative role of these enhancers in regulating cardiac regulators like TBX5. The authors conclude these observations highlight the important role of enhancers in spatiotemporal gene regulation in development and suggest enhancer perturbation could contribute to developmental defects like CHD. They speculate focused sequencing of variants at these enhancers will reveal new genetic contributors of CHD, and that the diversity of cellular responses suggests CHD cellular phenotypes could be very diverse with subtle cell fate changes leading to complex phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C145 present the main conclusions and implications of the study. The identification of 16 enhancers is well-supported by the experimental data. The diverse phenotypes are documented throughout the results. The conclusions about enhancer roles in development are supported by appropriate citations (Plank and Dean 2014; Richter et al. 2020; Smemo et al. 2012; Kathiriya et al. 2021; van der Linde et al. 2011). The speculative claims (C142-C144) are appropriately framed as speculation and represent reasonable extrapolations from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "The manuscript discusses TBX5 as a framework for understanding CHD genetics, noting that coding variants cause Holt-Oram syndrome, gene knockout studies show dosage-sensitive impairment alters CM differentiation with CHD-relevant phenotypes, and multiple enhancers control TBX5 expression. The current study shows perturbation of TBX5 enhancers exhibit similar cell state phenotypes. The authors conclude enhancers near genes with known CHD roles represent key targets for future investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C150 synthesize prior knowledge with current findings. The background claims are supported by appropriate citations (Basson et al. 1997; Bruneau et al. 1999; Holt and Oram 1960; Li et al. 1997; Kathiriya et al. 2021; Smemo et al. 2012). The observation that different TBX5 enhancers show similar phenotypes (C149) is supported by the experimental data. The conclusion about future targets (C150) is a reasonable inference from the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "The study found that knockdown of TNNT2 results in transcriptional phenotypes. While TNNT2 is not known to function as a transcriptional regulator, recent screens have identified unexpected gene expression phenotypes for genes not typically associated with regulatory function (including chromosome segregation genes, glycolysis, vesicular trafficking, and DNA replication genes). The authors speculate TNNT2 knockdown may impact transcriptional states through unexpected effects, possibly because TNNT2 is a critical sarcomeric component whose loss could initiate a feedback response resulting in delayed CM specification. CRISPRi perturbations of two TNNT2 enhancers and the promoter consistently yield changes in transcriptional and cell state phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C151-C159 present an interesting observation about TNNT2 but the mechanistic interpretation remains speculative. While the transcriptional phenotypes are documented (C151, C159 with reference to Figure 2G and I), and the speculation is supported by analogy to other studies (Replogle et al. 2022), the actual mechanism is not tested. The feedback hypothesis (C158) is plausible but unproven. This represents an interesting observation that requires further investigation to determine the underlying mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "The study represents a proof of concept for systematically testing enhancer function in heterogeneous developmental systems. The authors adopted a tiered approach balancing advantages and disadvantages of CRISPR and CRISPRi: CRISPRi-based epigenetic silencing acts efficiently across many cells but offers incomplete inhibition, while genetic knockouts are relatively inefficient but yield complete deletion. The study started with higher throughput CRISPRi screens as a filter, validated hits with smaller scale CRISPRi validation, and performed clonal enhancer deletion studies for consistency. This tiered approach balanced speed with accuracy. Consistent cellular phenotypes were obtained with both strategies, with promoter perturbations yielding stronger responses than enhancers, and genetic knockouts eliciting more dramatic changes than CRISPRi. The authors speculate epigenetic perturbation more closely matches variants than genetic deletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C173 describe the methodological approach and its rationale. The tiered strategy is well-documented with appropriate citations (Diao et al. 2017; Fulco et al. 2016; Gasperini et al. 2017; Thakore et al. 2015; Zhou et al. 2014; Klann et al. 2021). The observations about relative strengths of perturbations (C169-C171) are supported by the data showing graded phenotypes. The speculation about epigenetic perturbation matching variants (C173) is reasonable but untested. Overall, this represents a thoughtful methodological contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191"
+    ],
+    "result": "The authors discuss several limitations: scRNA-seq provides deep cellular coverage at expense of sequencing depth per cell, making detection of lowly expressed genes challenging and conclusive determination of sgRNA functionality problematic; enhancers function in time-dependent manner but sgRNA perturbations were introduced at fixed time point, and temporal delay between perturbation induction and functional repression needs improvement; CM differentiation in 2D culture doesn't adequately recapitulate complex morphological and inter-cell communication events in human development. The study intentionally avoided metabolic selection to preserve non-cell autonomous interactions, producing heterogeneous cell states. The system captures expected phenotypes (Zic2 knockdown results in loss of CM and neuronal specification with diversion to early mesodermal state), suggesting results from other perturbations are potentially relevant to CHD. Future organoid systems may better mimic complex morphogenetic changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C174-C191 present a thoughtful discussion of limitations and validation of the experimental system. The limitations are reasonable and well-articulated. The validation using Zic2 as a positive control (C186-C188) with documented phenotypes (Figure 1\u2014figure supplement 1H) supports the relevance of the system. The citation to Tohyama et al. 2013 supports the differentiation strategy. The discussion appropriately acknowledges both strengths and weaknesses of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C192",
+      "C193"
+    ],
+    "result": "The study applied single-cell screening technology to functionally characterize enhancers in a heterogeneous developmental system. The authors expect future applications will help comprehensively identify enhancers with roles in cell fate specification that could contribute to developmental defects such as CHD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C192-C193 summarize the main contribution and future directions. The application of single-cell screening to enhancer characterization in a developmental context is well-documented throughout the manuscript. The expectation about future applications (C193) is appropriately framed as speculation about future work and represents a reasonable extrapolation from the current findings.",
+    "result_type": "MAJOR"
+  }
+]

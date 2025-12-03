@@ -1,0 +1,292 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "SHP-1 S591 phosphorylation is dynamically regulated during NK cell activation and inhibition. During activating interactions, SHP-1 S591 shows high phosphorylation at 5 min that remains relatively stable through 20 min. During inhibitory interactions, S591 phosphorylation is initially low at 5 min but increases dramatically by 20 min.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C45 provide consistent time-course data from both YTS-2DL1 cells and primary NK cells showing differential S591 phosphorylation patterns. The data include appropriate controls (activating vs inhibitory targets), multiple time points, statistical significance (p<0.05), and replication in primary human cells. The temporal dynamics are clearly demonstrated with quantified immunoblot data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "SHP-1 conformational changes, measured by FRET efficiency, closely correlate with S591 phosphorylation dynamics. During inhibitory interactions, SHP-1 transitions from an open/active state (low FRET) at 5 min to a closed/inactive state (high FRET) at 20 min. During activating interactions, SHP-1 shows high FRET (closed/inactive) at 5 min that decreases to low FRET (open/active) by 20 min.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37 and C46-C54 demonstrate strong correlation between phosphorylation patterns (Figure 1) and conformational states measured by FRET (Figure 2). The FRET biosensor approach is well-established, appropriate controls are included, sample sizes are adequate (n=47-73 conjugates), and statistical significance is demonstrated (p<0.05). The inverse relationship between FRET efficiency and activity is properly interpreted based on the biosensor design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C122",
+      "C123"
+    ],
+    "result": "NK cells can spatially regulate SHP-1 S591 phosphorylation to maintain distinct activation states at simultaneous synapses with different target cells. In dual synapse experiments, pSHP-1 S591 levels were significantly higher at synapses with activating K562 cells compared to inhibitory 721-Cw4 cells within the same NK cell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 provides direct microscopy evidence of differential pSHP-1 S591 localization in triple-cell conjugates (p=0.0074, n=26). This elegant experiment demonstrates spatial regulation within a single cell. Claims C122-C123 appropriately interpret this as enabling NK cells to maintain multiple local activation states, though these are inferences rather than direct demonstrations of sequential killing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C61",
+      "C62",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "PKC-\u03b8 is the kinase responsible for SHP-1 S591 phosphorylation in NK cells. PKC-\u03b8 localizes to the NKIS with dynamics matching SHP-1 phosphorylation patterns, and siRNA-mediated PKC-\u03b8 knockdown significantly reduces SHP-1 S591 phosphorylation in both YTS-2DL1 cells (2.5-fold reduction, p=0.0072) and primary NK cells (1.7-fold reduction, p=0.0113).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C69 provide multiple lines of evidence: (1) PKC-\u03b8 localization dynamics match phosphorylation patterns (C64-C65), (2) efficient siRNA knockdown is demonstrated (C66-C67, p<0.05), and (3) knockdown reduces S591 phosphorylation (C68-C69). However, phosphorylation is not completely eliminated, suggesting other kinases may contribute (acknowledged by authors in C116). The evidence strongly supports PKC-\u03b8 as a major S591 kinase but does not exclude other contributors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C105",
+      "C107"
+    ],
+    "result": "PKC-\u03b8 regulates SHP-1 conformational state and enzymatic activity. PKC-\u03b8 knockdown shifts SHP-1 to an open/active conformation (reduced FRET efficiency from 18.5% to 9.8%, p=0.0025) and increases SHP-1 catalytic activity on pNPP substrate (from 65% to 81%, p=0.0246).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 and C105, C107 provide direct evidence linking PKC-\u03b8 to SHP-1 function through FRET measurements and enzymatic assays. The FRET data show appropriate controls and statistical significance. The PTP assay (C72) directly measures catalytic activity with significant differences. The consistency between conformational changes and activity measurements strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "PKC-\u03b8 regulation of SHP-1 modulates phosphorylation of downstream substrates VAV1 and PLC\u03b31. PKC-\u03b8 knockdown reduces pVAV1 (Y160) levels ~2-fold (p<0.0001) and pPLC\u03b31 (Y783) levels 1.4-1.8-fold (p<0.01) in activating interactions. The phospho-mimetic SHP-1 S591D mutant shows high substrate phosphorylation regardless of PKC-\u03b8 status, confirming S591 phosphorylation is the critical regulatory mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C81 demonstrate that PKC-\u03b8 effects on NK cell signaling are mediated through SHP-1 regulation. The use of SHP-1 S591D mutant (C80-C81) provides strong genetic evidence that S591 phosphorylation is the key mechanism. Multiple substrates are examined with consistent results. Microscopy data (C78-C79) complement biochemical measurements. The rescue experiments with S591D mutant are particularly compelling controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "PKC-\u03b8 knockdown impairs NK cell functional responses including calcium flux, cytotoxicity, and degranulation. PKC-\u03b8 silencing reduces calcium flux to inhibitory levels, decreases target cell lysis from 42% to 22% (p=0.0037), and reduces degranulation (p=0.0040). These effects are rescued by SHP-1 knockout or S591D mutation, confirming SHP-1 is the critical downstream target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C88 demonstrate functional consequences using multiple complementary assays (calcium flux, cytotoxicity, degranulation). The rescue experiments with SHP-1 KO and S591D mutant (C86, C88) provide strong evidence that PKC-\u03b8 effects are mediated through SHP-1. Statistical significance is demonstrated throughout. The consistency across multiple functional readouts strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C108"
+    ],
+    "result": "PKC-\u03b8 regulation of SHP-1 affects tumor clearance in vivo. Mice injected with PKC-\u03b8-silenced NK cells show increased tumor growth compared to wild-type NK cells. However, SHP-1 knockout rescues this phenotype, with SHP-1 KO + PKC-\u03b8 KO NK cells showing enhanced tumor clearance (p<0.0001) comparable to SHP-1 KO alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 and C108 provide in vivo validation using xenograft models. The experimental design includes appropriate controls (WT, PKC-\u03b8 KO, SHP-1 KO, double KO, S591D mutant). The rescue of PKC-\u03b8 knockdown phenotype by SHP-1 deletion provides strong genetic evidence that SHP-1 is the critical downstream target. Sample sizes appear adequate (n=5 per group) with statistical significance demonstrated. The in vivo data support the mechanistic findings from cellular studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C38",
+      "C96"
+    ],
+    "result": "The authors conclude that PKC-\u03b8-mediated phosphorylation of SHP-1 on S591 promotes the inhibited 'folded' state of SHP-1, and that blocking this phosphorylation maintains SHP-1 in an active conformation, reduces NK cell activation and cytotoxicity, and promotes tumor progression in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7, C38, and C96 represent the main conclusions synthesized from all experimental data. These conclusions are well-supported by the comprehensive evidence including: phosphorylation dynamics (C34-C45), conformational changes (C46-C54), identification of PKC-\u03b8 as the kinase (C56-C69), effects on SHP-1 activity (C70-C72), downstream signaling (C73-C81), functional consequences (C82-C88), and in vivo validation (C89-C91). The logic is internally consistent and the conclusions follow from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The manuscript provides established background on NK cell biology, including their role in immunity, the balance of activating and inhibitory receptors, receptor signaling motifs (ITAMs, ITIMs, ITSMs), inhibitory receptor families (KIR, Ly49, NKG2A/CD94), SHP-1 structure and function, and known SHP-1 substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C30 represent background knowledge appropriately cited from prior literature. These are not novel findings but provide necessary context. The citations appear appropriate and the background accurately represents established understanding in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The manuscript contextualizes SHP-1 as a central regulator of NK cell activation threshold and education, notes its role downstream of immune checkpoint receptors, and references prior work showing SHP-1 localization to the NKIS and regulation by actin retrograde flow.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 and C92-C94 provide relevant background from prior literature including the authors' previous work. These appropriately frame the current study's significance and identify gaps in understanding that motivated the research. The citations are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C95",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C106",
+      "C111",
+      "C112"
+    ],
+    "result": "The authors discuss implications of their findings, including resolution of contradictory prior results on SHP-1 serine phosphorylation, potential roles in NK cell serial killing and target discrimination, and relevance to immunotherapy. They propose that SHP-1 phosphorylation enables NK cells to maintain activation during cytolytic responses and rapidly reset after inhibitory interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C101, C106, C111-C112 represent interpretations and inferences beyond the direct experimental data. While plausible and consistent with the findings, these mechanistic proposals (e.g., role in serial killing, target discrimination) are not directly tested. The discussion appropriately frames these as hypotheses and potential implications rather than demonstrated facts. Additional experiments would be needed to definitively test these models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C109",
+      "C113",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The manuscript discusses PKC-\u03b8 biology, including its unique localization to immune synapses, roles in T cell activation and NF-\u03baB signaling, prior work in murine NK cells, potential involvement of other kinases, and possible cross-talk with the cytoskeleton.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104, C109, C113, C116-C119 provide relevant background on PKC-\u03b8 and acknowledge limitations/alternative mechanisms. The citations are appropriate. The acknowledgment that other kinases may contribute (C116) is scientifically honest given incomplete elimination of S591 phosphorylation. The speculation about cytoskeletal cross-talk (C118) is appropriately framed as a possibility rather than a conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C110",
+      "C120",
+      "C121",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The authors speculate on broader implications including potential effects on NF-\u03baB signaling, roles in NK cell serial killing and synapse regulation, cancer immune evasion mechanisms, NK cell education, and autoimmune disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110, C120-C121, C124-C128 represent speculation about broader implications not directly tested in the study. While these are reasonable hypotheses based on the findings and prior literature, they require additional experimental validation. The authors appropriately frame most of these as possibilities (using 'may,' 'could,' 'would be interesting') rather than conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The manuscript discusses SHP-1's broader roles in cell proliferation, survival, and tumor transformation, and references recent work showing that lower SHP-1 abundance enhances NK cell tumoricidal capacity and that SHP-1 abrogation benefits NK-based immunotherapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C132 provide relevant context from prior literature including the authors' recent work. These appropriately frame the therapeutic relevance of the findings. The citations are appropriate and support the statements made.",
+    "result_type": "MINOR"
+  }
+]

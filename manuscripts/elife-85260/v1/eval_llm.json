@@ -1,0 +1,299 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The authors identify NLS297-307 as a secondary nuclear localization signal that becomes functionally important when the primary NLS71-78 and NES288-294 elements are mutated. The NLS71-78; NES288-294 double mutant shows reversed localization behavior (nuclear at 20\u00b0C, cytoplasmic at 28\u00b0C), and introducing a K307Q mutation in NLS297-307 blocks nuclear accumulation at 20\u00b0C in this background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 are well-supported by experimental data shown in Figure 1B-C. The double mutant behavior (C39-C41) demonstrates the existence of secondary regulatory elements, and the K307Q mutation experiments (C43-C44) directly demonstrate that NLS297-307 is responsible for nuclear accumulation in the double mutant background. The conclusion (C45) logically follows from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The authors test whether NES315-323 is a functional nuclear export sequence by creating a triple mutant (NLS71-78; NES288-294; NES315-323) and find that it still exports from the nucleus, demonstrating that NES315-323 is not functional under the conditions tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 are supported by experimental data in Figure 1D showing that the triple mutant behaves like the double mutant. The prior work cited (C48-C49) provides context for why this region was investigated. The negative result is clearly demonstrated and appropriately interpreted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The authors identify S325 as part of a functional element promoting CMK-1 cytoplasmic localization that operates independently of NES288-294. The S325A mutation increases nuclear localization both alone and in combination with NES288-294 mutation, with additive effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 are well-supported by experimental data in Figures 1D-E. The S325A mutation shows effects in both wild-type and NES288-294 mutant backgrounds, and the double mutant shows stronger nuclear accumulation than either single mutant, demonstrating independence and additivity. The conclusions (C53-C54) are appropriately drawn from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The authors test whether S325 phosphorylation regulates CMK-1 localization by comparing S325A (phospho-dead) and S325D (phospho-mimic) mutations. The S325D mutant behaves like wild-type, suggesting that S325 phosphorylation may be the default state and that this residue could serve as a regulatory switch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C55 is supported by Figure 1F data. However, claims C56-C58 involve significant speculation. The interpretation that S325 phosphorylation is the 'default state' (C57) is one possible explanation but not definitively demonstrated. The suggestion that S325 could be a regulatory switch (C58) is speculative and not tested experimentally in the contexts where it might be relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The authors discuss the mechanism by which S325 promotes cytoplasmic localization, noting it works independently of NES288-294 but that the exact mechanism (non-canonical export vs. cytoplasmic retention) remains unclear. They also note that S325 phosphorylation changes do not appear involved in heat-evoked relocalization in FLP but might be relevant in other contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 is well-supported by the data in Figures 1D-E. Claims C60-C62 appropriately acknowledge uncertainty about mechanism (C60) and limitations of the current findings (C61), while C62 is reasonable speculation about broader relevance. The authors appropriately distinguish between what is demonstrated and what remains unknown.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The authors present an integrated model of CMK-1 localization regulation at 20\u00b0C and 28\u00b0C, proposing that at 20\u00b0C the NLS71-78 pathway is inactive while NES288-294 and S325-dependent pathways dominate, whereas at 28\u00b0C the NLS71-78 pathway becomes active and dominant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 represent a synthesis of the experimental findings presented in Figure 1 and are depicted in the model in Figure 1G. The model is consistent with all the mutant data showing temperature-dependent and element-specific effects. This is an appropriate integration of the experimental results into a coherent mechanistic framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The authors confirm that T179 phosphorylation is essential for activity-dependent nuclear translocation of CMK-1. The T179A mutation does not affect localization at 20\u00b0C but completely abolishes nuclear accumulation at 28\u00b0C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 are well-supported by experimental data in Figures 2A-B. The T179A mutation specifically blocks heat-evoked nuclear accumulation without affecting basal localization, demonstrating the requirement for T179 phosphorylation in activity-dependent translocation. This confirms prior findings (C66) with the current reporter system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The authors demonstrate that T179 phosphorylation mediates CMK-1 nuclear accumulation downstream of calcium elevation by showing that the T179A mutation blocks the nuclear accumulation caused by the unc-68(dom13) mutation, which chronically elevates cytoplasmic calcium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 are well-supported by experimental data in Figure 2C and prior citations. The genetic epistasis experiment clearly demonstrates that T179 phosphorylation is required for calcium-induced nuclear accumulation at both temperatures, establishing T179 phosphorylation downstream of calcium signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The authors test the relationship between CaM binding (W305S mutation) and T179 phosphorylation (T179A mutation) and find that both single mutations and the double mutation similarly prevent nuclear accumulation at 28\u00b0C, suggesting they may be part of the same pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 are supported by experimental data in Figure 2D. The lack of additive effect between T179A and W305S mutations suggests they act in the same pathway, though the authors appropriately note the caveat about potential floor effects (C76). The conclusion (C77) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C80",
+      "C81"
+    ],
+    "result": "The authors show that the T179D phospho-mimicking mutation can promote nuclear accumulation at 20\u00b0C without thermal stimulation, but the effect is not as strong as heat stimulation on wild-type CMK-1, suggesting T179 phosphorylation contributes to but is not solely sufficient for full nuclear accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78, C80-C81 are well-supported by experimental data in Figures 3A-B. The T179D mutation causes partial nuclear accumulation at 20\u00b0C, demonstrating sufficiency for some nuclear entry, but the incomplete effect compared to heat-stimulated wild-type indicates additional mechanisms are involved. This is appropriately interpreted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The authors demonstrate that T179D can promote nuclear accumulation independently of CaM binding (in W305S background), suggesting T179 phosphorylation functions either downstream of or in parallel to CaM binding. They propose a model with both direct (CaM-IMA-3-NLS71-78) and indirect (CaM-dependent T179 phosphorylation) pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C88 are well-supported by experimental data in Figure 3B and prior work (C86). The T179D/W305S double mutant data (C82) clearly shows T179D can act independently of CaM binding. The small effect of W305S in both backgrounds (C85) is consistent with a direct CaM-importin interaction pathway. The two-pathway model (C87-C88) appropriately integrates these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "The authors test whether T179A prevents nuclear accumulation by revealing NES288-294 activity and find that T179A promotes cytoplasmic retention regardless of NES288-294 status, indicating T179A does not primarily work by aberrantly activating NES288-294.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 are supported by experimental data in Figure 3C showing lack of interaction between T179A and NES288-294 mutations. The two-way ANOVA shows main effects but no interaction, indicating independent mechanisms. The conclusion (C90) appropriately rules out one mechanistic hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The authors demonstrate that T179D promotes nuclear entry via NLS71-78 by showing that the T179D nuclear translocation effect at 20\u00b0C is abolished in a T179D; NLS71-78 double mutant. They propose that multiple calcium-dependent events converge on NLS71-78 to activate nuclear import.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 are well-supported by experimental data in Figure 3D. The genetic interaction clearly demonstrates that T179D requires NLS71-78 for its nuclear entry-promoting effect. The model (C93) integrating this with prior findings about CaM-dependent NLS71-78 activation is appropriate and depicted in Figure 3G.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The authors discover that T179D mutant at 28\u00b0C is more cytoplasmic than wild-type, not more nuclear as predicted, revealing that T179 phosphorylation has context-dependent effects including an antagonistic nuclear export drive that becomes apparent at 28\u00b0C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 are well-supported by the surprising experimental result in Figure 3E. This unexpected finding reveals the dual nature of T179 phosphorylation effects and is a key discovery of the paper. The interpretation that the effect is context-dependent (C95-C96) appropriately explains the temperature-dependent difference in T179D behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "The authors demonstrate that T179D promotes nuclear export via NES288-294 by showing that the T179D-evoked cytoplasmic drive at 28\u00b0C is strongly reduced when NES288-294 is mutated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 are well-supported by experimental data in Figure 3F. The genetic interaction clearly demonstrates that T179D requires NES288-294 for its nuclear export-promoting effect, establishing the mechanism for the antagonistic effect of T179 phosphorylation discovered in the previous result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The authors propose an integrated model where T179 phosphorylation activates both NLS71-78-dependent nuclear entry and NES288-294-dependent export, resulting in enhanced nucleo-cytoplasmic shuttling and a net shift toward the nucleus due to synergy between T179 phosphorylation and CaM-binding effects on NLS71-78.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 represent a synthesis of the T179 phosphorylation findings and are depicted in Figure 3G. The model appropriately integrates the dual effects of T179 phosphorylation (promoting both import and export) and explains how net nuclear accumulation occurs through synergy with CaM binding. This is a well-supported mechanistic framework consistent with all the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The authors characterize the subcellular localization of two CKK-1 isoforms and find that both are predominantly cytoplasmic and do not change localization upon heat stimulation, suggesting that CMK-1 phosphorylation by CKK-1 primarily occurs in the cytoplasm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C110 are well-supported by genomic data (Figure 4A) and experimental localization data (Figures 4C-D). The cytoplasmic localization of both CKK-1 isoforms and lack of heat-induced relocalization clearly support the inference that CKK-1 activity and CMK-1 phosphorylation occur primarily in the cytoplasm (C109-C110).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The authors speculate that the dual role of T179 phosphorylation in promoting bidirectional translocation could enable stimulation-dependent shuttling cycles that keep the nuclear CMK-1 pool's phosphorylation status synchronized with cytoplasmic CKK-1 activity, with phosphatases also likely playing a role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C113-C115 are explicitly speculative (as acknowledged by the authors) and represent hypotheses about the functional significance of the dual T179 phosphorylation effects. While these are reasonable hypotheses consistent with the data, they are not directly tested. Future experiments measuring shuttling kinetics and identifying relevant phosphatases would be needed to test these ideas.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The authors propose that the network of regulatory elements they identified (NLS71-78, NES288-294, NLS297-307, S325) could be differentially engaged in different cellular contexts, with CaM binding/T179 phosphorylation/NLS71-78/NES288-294 being primary in FLP but other elements potentially more important elsewhere.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C120 represent reasonable speculation about broader implications of the findings. The identification of multiple regulatory elements with different strengths (C118) is well-supported by the data. The suggestions about context-dependent engagement (C117) and additional regulatory opportunities through NLS297-307/CaM overlap and S325 phosphorylation (C119-C120) are appropriate extrapolations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C126",
+      "C127"
+    ],
+    "result": "The authors conclude that subcellular localization regulation, not just kinase activity, is an important target of convergent regulatory inputs for CaM kinases, and suggest similar mechanisms might be relevant across species and sensory modalities due to conservation of calcium signaling and CaM kinase architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C126 is well-supported by the extensive characterization of multiple regulatory mechanisms controlling CMK-1 localization presented in this study. Claim C127 is reasonable speculation based on evolutionary conservation of the relevant molecular machinery, though direct evidence in other systems would be needed for confirmation.",
+    "result_type": "MAJOR"
+  }
+]

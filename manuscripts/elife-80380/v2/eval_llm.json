@@ -1,0 +1,257 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C33",
+      "C34",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The authors developed two computational tools: Decibel, a Python toolkit implementing four existing methods for quantifying transcriptional noise, and Scallop, a novel method that measures cell membership to clusters via bootstrap iterations. Scallop interprets higher membership scores as greater transcriptional stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 and C33-C34 describe the development and conceptual basis of these tools. The methods are clearly defined, and the toolkit implementation is documented with code availability (C4, C5). The underlying assumptions of Scallop are explicitly stated (C33, C34), and the advantages over existing methods are articulated (C100-C102).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C103"
+    ],
+    "result": "Validation analyses on artificial and biological datasets demonstrate that Scallop outperforms distance-to-centroid (DTC) methods in distinguishing transcriptionally stable cells from noisy cells, is robust to changes in cellular composition, dataset size, and number of genes, and correlates with robust marker expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C46 present extensive validation evidence using artificial datasets with varying noise levels, simulations testing robustness to dataset parameters, and biological validation on T cells and PBMCs. The analyses include appropriate controls (artificial datasets with known properties) and demonstrate convergence with parameter optimization (C43-C44). The relationship to marker expression (C45-C46) provides biological validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C104"
+    ],
+    "result": "Analysis of seven aging datasets across different tissues revealed large variability in transcriptional noise changes with age, with most datasets showing no significant change, two showing increases, and one showing decreases, indicating that increased transcriptional noise is not a universal hallmark of aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C47-C50, and C104 present consistent findings from systematic analysis of multiple datasets. The variability in results across datasets is clearly documented, and the conclusion that transcriptional noise is not universally increased with aging is appropriately cautious. The analysis includes appropriate statistical comparisons between young and old groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C65",
+      "C107"
+    ],
+    "result": "Cell type-specific analysis of murine lung aging across four datasets showed no consistent pattern of transcriptional noise changes, with only club cells and interstitial fibroblasts showing increased noise, while alveolar macrophages showed decreased noise, and many cell types showed no significant changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C51-C56, C65, and C107 present detailed cell type-specific findings from four independent murine lung datasets. The inconsistency across datasets is clearly documented with specific quantitative changes (10-17% for club cells, 3-17% for fibroblasts, 5-12% for macrophages). The analysis appropriately compares multiple datasets of the same tissue type to assess reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C66"
+    ],
+    "result": "Age-associated immune cell enrichment was consistently detected across murine lung datasets, with plasma cells, B cells, monocytes, macrophages, and dendritic cells enriched in old mice, while parenchymal cells were depleted, and NK cells were underrepresented among immune cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C57-C64, and C66 present consistent findings across four murine lung datasets with statistical support (odds ratios and p-values provided for key findings in C58-C59). The use of generalized linear models to assess cell type enrichment is appropriate. The consistency across datasets strengthens the conclusions, and exceptions (NK cells, alveolar macrophages) are noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Analysis of two human lung aging datasets showed inconsistent transcriptional noise patterns but consistent immune cell enrichment (plasma cells, alveolar macrophages) and endothelial cell depletion in aged lungs, indicating reduced vascularization and immune infiltration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 present findings from two human lung datasets with statistical support (odds ratios and p-values). The pattern of immune enrichment and endothelial depletion is consistent across both datasets despite differences in power (C69 notes lack of significance in HLCA likely due to only 2 donors). The conclusions about reduced vascularization and immune infiltration are appropriately supported by the cell composition data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C78"
+    ],
+    "result": "Analysis of human alveolar macrophages revealed four distinct transcriptionally stable subpopulations emerging with aging that differ in surfactant protein expression. Scallop correctly identified these as stable subpopulations, while DTC methods incorrectly interpreted them as loss of identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 and C78 present a specific case study demonstrating a key advantage of Scallop over DTC methods. The emergence of distinct subpopulations with differential surfactant protein expression is documented, and the comparison between methods is direct and clear. This provides strong evidence for the superiority of Scallop in distinguishing true loss of identity from cell fate specification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Re-analysis of pancreatic \u03b2-cells from Enge et al. 2017 suggests that the reported transcriptional stability of young cells may be due to the distinct transcriptional profile of one donor (21-year-old) rather than an age effect, as the other young donor (22-year-old) resembled old donors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 present a critical re-analysis of published data with specific evidence (C80-C82 document differences between the two young donors). The hypothesis (C83) is appropriately cautious and supported by the observation that one young donor differs substantially from all others. This highlights potential confounding by individual variation in small cohorts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C98",
+      "C99",
+      "C116"
+    ],
+    "result": "The authors conclude that claims of increased transcriptional noise in aged tissues should be reformulated, as transcriptional noise is not a bona fide hallmark of aging, and previous analyses have been confounded by computational methods and biological sources of variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C98-C99, and C116 present the main conclusions of the study. These are appropriately supported by the extensive analyses across multiple datasets (C7, C47-C50), the demonstration of methodological issues with DTC methods (C78), and the identification of cell composition changes as a confounding factor (C9, C57-C64, C68-C72). The conclusions are appropriately cautious and evidence-based.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The authors review prior literature on transcriptional noise in aging, noting that while increased transcriptional variability is generally assumed to characterize aged tissues, studies have used diverse computational methods and definitions, focused on single datasets, and given little attention to changes in cellular composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C32 summarize the state of the field based on cited literature. The citations are appropriate and the characterization of methodological heterogeneity (C30), limited cross-dataset comparisons (C31), and neglect of composition changes (C32) accurately describes limitations in prior work. This provides appropriate context and motivation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The authors hypothesize that changes in tissue composition, particularly age-associated immune cell infiltration of solid organs, may have influenced previous analyses of transcriptional noise and may be a generalized phenomenon supported by studies in multiple species and organs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73, C109, C114-C115 are explicitly speculative hypotheses, while C110-C113 cite supporting evidence from other studies. The hypothesis is reasonable given the findings in lung (C9, C57-C64, C68-C72), but the authors appropriately note it is based on a single tissue (C73) and requires further investigation (C114). The supporting citations (C110-C113) strengthen plausibility but do not constitute direct evidence from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C2",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C105",
+      "C106"
+    ],
+    "result": "The authors provide background on aging biology, noting that while scRNAseq is the best method for detecting transcriptional changes, the mechanistic basis of aging is unclear, and transcriptional noise has been observed in some aged tissues with various proposed explanations including genomic instability, epigenetic deregulation, and cell type imbalance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C85-C97, C105-C106 provide general background knowledge supported by appropriate citations. These claims establish context for the study and are not primary findings. The characterization of the field is accurate and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3",
+      "C117"
+    ],
+    "result": "The authors state that diverse computational methods have prevented meaningful comparisons of existing datasets, and that the open availability of Decibel and Scallop provides an opportunity for the research community to investigate these issues further.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C3 identifies a key problem in the field that motivates the study, while C117 describes the potential impact of the tools developed. Both are appropriately supported - C3 by the literature review showing methodological heterogeneity, and C117 by the documented code availability and validation of the tools.",
+    "result_type": "MINOR"
+  }
+]

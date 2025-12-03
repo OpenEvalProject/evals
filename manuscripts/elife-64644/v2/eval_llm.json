@@ -1,0 +1,460 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The computational model was developed by merging two existing models and adding SynGap and RasGRF. The model was validated against multiple experimental datasets including RasGTP dynamics, ERK activation time course, Epac activity, PKA substrate phosphorylation, CaMKII activation, and SynGap phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C44 describe the model construction and validation. The model is based on well-established prior models (C37, C44) with critical additions (C38). Multiple validations are shown against experimental data (C39-C43), demonstrating qualitative agreement with published measurements. The validation approach is appropriate for a computational model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "cAMP activates ERK through direct (Epac, PKA) and indirect (Gi\u03b2\u03b3) pathways with distinct temporal dynamics. The direct pathway shows linear activation with cAMP duration/concentration, while the indirect pathway shows slightly non-linear activation with delayed kinetics. Epac produces fast transient ERK activation, while PKA and Gi\u03b2\u03b3 produce delayed activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C56 describe cAMP pathway dynamics from model simulations shown in Figure 3 and Table 2. The linear/non-linear characterization is supported by regression analysis (Table 2). The temporal dynamics of individual pathways (C53-C56) are shown in Figure 3F. The findings are internally consistent and supported by the presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Direct and indirect cAMP pathways combine linearly for short duration inputs but sublinearly for prolonged inputs. The sublinear summation is due to competition at two loci: PKA and Gi\u03b2\u03b3 compete for Src (with PKA having higher affinity), and Epac and Crk-C3G compete for Rap1GDP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C68 describe pathway interactions shown in Figure 3E-F. The linear vs. sublinear summation is demonstrated by comparing combined responses to sums of individual responses. The mechanistic explanation involving competition for Src and Rap1GDP (C61-C68) is supported by model simulations testing increased Src quantities (C64) and Epac blocking (C67). The proposed mechanisms are plausible and tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Calcium activates ERK non-linearly with ultrasensitivity. Low calcium inputs produce little ppERK, while higher calcium inputs produce sustained ppERK that reaches a plateau. The response has a calcium duration threshold of 5 s and amplitude threshold between 1-2 \u03bcM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 describe calcium pathway dynamics shown in Figure 4A-B and Table 2. The non-linear/ultrasensitive response is characterized by regression analysis (Table 2) showing Hill equation fits better than linear. The thresholds (C72-C73) are quantified from the data. The findings are well-supported by the presented simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "CaMKII is responsible for sustained calcium-induced ERK activation. Blocking CaMKII reduces ppERK and shifts the response from sustained to transient, revealing RasGRF's role in early activation. PP1 modulates CaMKII and ppERK ultrasensitivity through its ratio with CaMKII, affecting ppERK amplitude and sensitivity to calcium duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C83 describe CaMKII and PP1 effects shown in Figure 4C-E and Table 4. The role of CaMKII is demonstrated by blocking experiments (C75-C77). PP1 effects are systematically tested at different concentrations (C78-C83), with quantitative analysis in Table 4. The conclusion about CaMKII:PP1 ratio (C83) is supported by the dose-response data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Persistent ERK activation requires CaMKII phosphorylation of SynGap and its dispersion from the spine. The quantity of free SynGap in the spine, controlled by CaMKII binding and phosphorylation, regulates ERK activation. This relationship is robust to changes in CaMKII-SynGap binding affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C92 describe SynGap regulation shown in Figure 4F. Multiple manipulations are tested: blocking dispersion (C87), preventing phosphorylation while allowing binding (C88), and preventing binding (C89). The robustness test with altered binding affinities (C91) strengthens the conclusion. The mechanistic interpretation (C90, C92) is well-supported by the systematic manipulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Calcium and cAMP pathways combine linearly to activate ERK, with the response to combined stimulation overlapping the sum of individual responses. The pathways have distinct temporal dynamics: cAMP contribution is transient and early, while calcium contribution is delayed and sustained. Individual pathway analysis reveals Epac produces transient ppERK, PKA/Gi produce small sustained ppERK, SynGap produces most sustained ppERK, and RasGRF produces small transient ppERK.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C105 describe pathway integration shown in Figure 5. Linear summation is demonstrated by overlap of combined and summed responses (C94) with statistical support (ANCOVA in figure legend). Temporal dynamics (C98-C99) and individual pathway contributions (C100-C103) are shown in Figure 5C-D. The findings are comprehensive and well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "With L-LTP stimulation patterns, cAMP-activated ERK shows temporal sensitivity favoring spaced stimuli. ppERK total activity increases with intertrial interval (ITI), despite decreasing amplitude, because duration increases compensate. The temporal sensitivity of ppERK matches PKA, with Epac contributing more at short ITI and PKA at long ITI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C115 describe cAMP pathway responses to L-LTP patterns shown in Figure 6. The ITI dependence (C108-C110) is clearly shown in Figure 6A-B. Sublinear summation (C111) and similarity to PKA (C112) are demonstrated. Individual pathway contributions (C113) are shown in supplementary figures. Consistency with prior experimental work (C115) provides external validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "With calcium L-LTP stimulation, ppERK shows similar responses for ITIs between 3-40 s due to slow pCaMKII decay, with calcium above the CaMKII ultrasensitivity threshold. The greatest ppERK activity occurs at 80 s ITI while greatest pCaMKII occurs at 3 s ITI. Increasing PP1 shifts pCaMKII temporal sensitivity but ppERK temporal sensitivity follows SynGap rather than CaMKII.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C126 describe calcium pathway responses to L-LTP patterns shown in Figure 7 and supplements. The ITI responses (C116-C122) are shown in Figure 7A-C. PP1 effects (C123-C125) are systematically tested. The key conclusion that ppERK follows SynGap rather than CaMKII (C126) is supported by Figure 7 supplement 1 showing correlations. This is a novel and important mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "With combined calcium and cAMP L-LTP stimulation, ppERK total activity increases with longer ITI, with optimal ITI at 80 s (high calcium, 18% PP1) or 300 s (low calcium or high PP1). cAMP contributes more with below-threshold calcium but only one-third with above-threshold calcium. Linear summation occurs with below-threshold calcium, while supralinear summation occurs with above-threshold calcium, potentially due to CaMKII modulation of SynGap enhancing cAMP responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C139 describe combined pathway responses shown in Figure 8. The ITI dependence and optimal ITIs (C127-C129) are shown in Figure 8A with statistical support (Table 5). Pathway contributions (C131-C136) are analyzed in Figure 8B-C and supplements. The linear vs. supralinear summation (C137-C138) is demonstrated, with a mechanistic interpretation (C139) that is plausible given prior findings about SynGap.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Simulations of isoproterenol (ISO) combined with either 100 Hz or 5 Hz stimulation produce greater ppERK than ISO, 100 Hz, or 5 Hz alone, consistent with experimental observations that combination stimuli are needed for L-LTP. cAMP from ISO compensates for strong calcium input from 100 Hz trains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C142 describe validation simulations shown in Figure 9. The model correctly predicts that combination stimuli produce more ppERK than individual stimuli (C140), matching experimental observations (C141). This provides important validation of the model's predictive capability. The interpretation about compensation (C142) is reasonable given the prior findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Model simulations of Raf and Ras family knockouts match experimental data: bRaf knockout greatly reduces ERK activity while Raf1 knockout does not; Rap1 knockout produces greater ppERK deficit than Ras knockout. Doubling Ras cannot compensate for Rap1 knockout, but doubling Rap1 increases ppERK above control, showing for the first time that Rap1 overexpression can compensate for Ras activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C147 describe knockout simulations shown in Figure 8 supplement 4. The model correctly reproduces experimental observations for Raf isoforms (C143) and Ras family proteins (C144), providing validation. The compensation experiments (C145-C146) test a novel prediction. The claim that this is shown 'for the first time' (C147) is supported by the simulation data, though this is a model prediction requiring experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C154"
+    ],
+    "result": "Raf dimerization reduces temporal sensitivity of ppERK by enhancing ppERK mostly at short ITIs. The difference in ppERK between short and long ITIs is larger without dimerization, suggesting dimerization enhances Raf1 activation at short ITI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C149, C154 describe dimerization effects shown in Figure 8 supplement 4A. The reduction in temporal sensitivity (C148) and preferential enhancement at short ITI (C149) are clearly shown. The mechanistic interpretation (C154) is reasonable given the model structure. This is a novel prediction about dimerization's functional role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "Robustness analysis shows the model's temporal sensitivity favoring spaced stimuli (80 or 300 s ITI) is robust, occurring in 80% of parameter variations. A 10% change in single-molecule quantities rarely produces >20% change in mean ppERK, but temporal sensitivity is more sensitive to parameter variations, with most changes increasing temporal sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C159 describe robustness analysis shown in Figure 10 and Table 6. The systematic testing of \u00b110% parameter variations (C156-C157) and random variations (C155) demonstrates robustness. The conclusion that temporal sensitivity favors spaced ITIs is robust (C159) is well-supported by the 80% frequency (C155, Table 6). This strengthens confidence in the main findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The model demonstrates that calcium and cAMP work synergistically to activate ERK, with stimuli at large intertrial intervals activating more ERK than shorter intervals. ppERK activity in response to combined calcium and cAMP is always greater than either alone, with supralinear combination at high calcium inputs. Synergy is attributable to CaMKII phosphorylation of SynGap enhancing RasGTP and RapGTP responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C150-C153 state the main findings. These are well-supported by the comprehensive simulation results in Figures 5-8. The synergy (C5, C150-C151) is demonstrated across multiple conditions. The ITI dependence (C6) is shown in Figures 6-8. The supralinear summation at high calcium (C152) and mechanistic explanation via SynGap (C153) are supported by the data. These represent the core contributions of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C105",
+      "C202",
+      "C203",
+      "C204",
+      "C205"
+    ],
+    "result": "Different signaling pathways contribute to different dynamics of ERK activation, with pathways having different temporal sensitivities facilitating ERK activation to diverse temporal patterns. Epac produces early transient ERK activation, PKA produces later transient activation, and CaMKII produces sustained activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C105, C202-C205 describe the distinct temporal dynamics of pathways. This is demonstrated throughout Figures 3-8, particularly Figure 5D showing individual pathway dynamics. The conclusion that different temporal sensitivities facilitate responses to diverse patterns (C8) is supported by the ITI-dependent pathway contributions shown in Figures 6-8. This is a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C177",
+      "C180"
+    ],
+    "result": "The model elucidates that CaMKII contributes to ERK activation through phosphorylation of SynGap, which increases its activity and causes dispersion to the dendrite. This represents a novel feedforward loop connecting CaMKII to SynGap to ERK. Simulations and experimental data support that CaMKII-dependent SynGap dispersion controls ERK recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C168, C177, C180 describe the novel SynGap mechanism. The role of SynGap phosphorylation and dispersion (C160-C164) is demonstrated in Figure 4F. The effects of blocking CaMKII-SynGap interactions (C165-C166) are shown and match experimental data (C167). The conclusion about a novel feedforward loop (C177, C180) is well-supported and represents a major conceptual contribution of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C178",
+      "C179"
+    ],
+    "result": "The model demonstrates that feedforward loops can support ERK activation for L-LTP induction without PKC. ppERK decays in less than an hour, suggesting ERK is required during induction but not maintenance. The novel CaMKII-SynGap-ERK feedforward loop may be critical for L-LTP induction in protocols resistant to PKA and PKC inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C179 discuss feedforward loops and the role of PKC. The conclusion that feedforward loops are sufficient without PKC (C169) is supported by the model results. The decay time of ppERK (C170) is shown in the figures and matches experimental data (C171). The justification for excluding PKC (C173-C176) is reasonable based on literature evaluation. The speculation about the novel pathway's role (C178) is appropriately qualified as a prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C196"
+    ],
+    "result": "ERK is activated for a wide range of temporal patterns, but temporal pattern discrimination can occur through different mechanisms: the temporal pattern of ERK itself (transient vs. sustained), and the opposite temporal sensitivities of CaMKII (favoring massed) and PKA (favoring spaced) activating other downstream molecules required for LTP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C183-C193, C196 discuss temporal pattern discrimination mechanisms. The activation across diverse patterns (C183) is shown throughout. The different ERK dynamics (C186-C188) are demonstrated in the figures. The opposite temporal sensitivities of CaMKII and PKA (C191-C193) are shown in Figures 6-8. The conclusion that multiple mechanisms contribute to pattern discrimination (C196) is well-supported and represents an important conceptual insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C206",
+      "C207",
+      "C208",
+      "C209",
+      "C210"
+    ],
+    "result": "Multiple signaling pathways activate ERK to enhance sensitivity to temporal patterns, but they are not redundant. The model predicts Rap1 and Ras are not interchangeable (Rap1 can compensate for Ras but not vice versa), and that multiple pathways may be needed to control ERK dynamics for different tasks. Predictions include that Epac knockout would slow ERK activation and SynGap overexpression would reduce ERK only in the spine, not nucleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C197-C210 discuss pathway redundancy and make predictions. The conclusion that pathways are not redundant (C197-C198) is supported by experimental observations. The Rap1/Ras prediction (C199) is supported by simulations (C145-C147). However, the speculations about different ERK pools (C200, C209) and specific predictions (C206, C208, C210) are reasonable but lack direct experimental validation. These are appropriate predictions for future work but remain uncertain without experimental testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Background claims establish the importance of L-LTP, ERK, temporal patterns, and the signaling pathways involved. These include established knowledge about LTP mechanisms, ERK's role in L-LTP, the signaling cascade activating ERK, and the gap in understanding how calcium and cAMP pathways contribute to ERK activation during L-LTP induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C36 provide background and context. These are primarily citations to prior work (C2, C10, C14-C16, C20-C24, C28-C32, C34-C36) or established knowledge (C1, C9, C12-C13, C17-C19, C25). The identification of gaps in knowledge (C27, C33) appropriately motivates the study. These background claims are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C181",
+      "C182",
+      "C194",
+      "C195",
+      "C211",
+      "C212",
+      "C213",
+      "C214",
+      "C215"
+    ],
+    "result": "Discussion claims about temporal pattern discrimination mechanisms, including prior work showing PKA is needed for spaced stimuli and CaMKII for massed stimuli, the role of actin cytoskeleton reorganization, scaffolding proteins creating ERK pools, and the need for additional mechanisms to create ERK microdomains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107, C181-C182, C194-C195, C211-C215 discuss mechanisms of temporal pattern discrimination and ERK localization. These are primarily citations to prior work (C106-C107, C181-C182, C194-C195, C211, C214) or speculations about future directions (C212-C213, C215). The speculations are reasonable given the model results and prior work. These provide appropriate context and suggest future research directions.",
+    "result_type": "MINOR"
+  }
+]

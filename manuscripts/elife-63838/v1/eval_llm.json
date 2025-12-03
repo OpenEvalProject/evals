@@ -1,0 +1,336 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Two P. chabaudi strains (AS and AJ) produce distinct disease phenotypes: AS causes mild infection with low parasitemia and sequesters in immune tissues, while AJ causes severe disease with hyperparasitemia, severe anemia, hypothermia, and prostration, but does not sequester in host tissues despite having >140,000 SNPs compared to AS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C13 are well-supported by parasitemia data (Figure 1B-C), clinical measurements (Figure 1\u2014figure supplement 1A), and sequestration quantification (Figure 1\u2014figure supplement 1D). The genetic difference is supported by citation to Otto et al., 2014. This establishes a robust experimental system to distinguish parasite-intrinsic from host-response factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Acute malaria infection triggers emergency myelopoiesis with increased granulocyte monocyte progenitors in bone marrow, release of inflammatory monocytes and neutrophils into circulation and spleen, appearance of megakaryocyte erythroid progenitors in spleen, and rapid disappearance of tissue-resident macrophages and patrolling monocytes, resulting in complete loss of splenic ferric iron stores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C20 are supported by comprehensive flow cytometry data (Figure 1D, G, Figure 1\u2014figure supplement 2A) and histological evidence (Figure 1\u2014figure supplement 2D-E). The experimental design includes appropriate cell markers and gating strategies (Supplementary file 1). Sample sizes appear adequate (n=4-5 per timepoint) and the temporal dynamics are well-characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "During acute infection, spleen monocytes initiate a transcriptional program characteristic of inflammatory macrophages, with >1/3 of gene ontology terms related to host defense, interferon signaling as upstream regulator, upregulation of pattern recognition receptors, inflammatory cytokines/chemokines, and antigen presentation machinery. Notably, both glycolysis and oxidative phosphorylation enzymes are induced, contrasting with the expected Warburg effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C28 are supported by RNA-seq data (Figure 2A-G, Figure 2\u2014figure supplement 1A-D) with appropriate bioinformatic analysis (clueGO, DESeq2). The observation about metabolic pathways (C27-C28) is particularly interesting as it challenges in vitro LPS stimulation models. Sample sizes (n=5-6 infected, n=6-7 controls) are adequate for RNA-seq. The lack of Warburg effect is an inference but well-supported by the data showing induction of both pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Despite substantial differences in parasite density, virulence, and sequestration patterns between AS and AJ strains, the myeloid response in bone marrow, blood, and spleen is remarkably similar, with only a single differentially expressed gene (Kelch34) between monocytes from the two infections, and the same four major functional supergroups dominating both responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 are supported by comparative flow cytometry (Figure 2\u2014figure supplement 2A-C) and RNA-seq analysis showing only one DEG between strains. This is a striking finding that suggests the myeloid response is largely parasite-genotype independent. The statistical rigor of finding only 1 DEG out of thousands of genes tested is compelling. However, the inference in C33 could be stated more cautiously as correlation does not prove causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "During chronic infection, hosts adapt to tolerate persistent parasitemia by stopping extramedullary erythropoiesis, re-establishing tissue architecture, reducing myeloid progenitor production, repopulating tissue-resident macrophages, and restoring iron stores. Monocytes adopt a quiescent state with transcriptomes nearly indistinguishable from uninfected controls, without engaging anti-inflammatory mechanisms like IL-10, TGF\u03b2, or PD-L1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C43 are supported by flow cytometry (Figure 1D-G), histology (Figure 1E-F, Figure 1\u2014figure supplement 2E), and RNA-seq data (Figure 2A, D-G). The characterization of quiescence is thorough and the negative findings (C42) are important controls. The inference of adaptation (C39, C43) is reasonable given the comprehensive data showing return toward baseline despite ongoing parasitemia.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Monocyte quiescence during chronic infection is reversible: when removed from chronically infected spleens and stimulated with LPS in vitro, monocytes show inflammatory responses comparable to uninfected controls, including the Warburg effect and expression of inflammatory markers including Nos2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by in vitro LPS stimulation experiments with RNA-seq analysis (Figure 2\u2014figure supplement 3A-D). This is a critical control demonstrating that monocytes are not permanently refractory. Sample sizes are adequate (n=4-5). The experimental design appropriately tests reversibility of the quiescent phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "In a reinfection model with matched parasite burden and red cell loss between first and second infections, previously infected mice show disarmed emergency myelopoiesis, preserved bone marrow cellularity and tissue architecture, no increase in inflammatory monocytes/neutrophils, maintained spleen organization without extramedullary erythropoiesis, and tissue-resident macrophages resistant to ablation with retained iron stores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C58 are supported by the carefully designed reinfection model with matched parasitemia (Figure 3B) and red cell loss (Figure 3C), eliminating pathogen load as a confounding variable. Flow cytometry (Figure 3D-F) and histology (Figure 3\u2014figure supplement 1A-D) provide comprehensive evidence. The experimental design is rigorous, using first infection with avirulent AS followed by virulent AJ challenge. Sample sizes are adequate (n=5-10 per timepoint). The inferences about tolerance (C55-C58) are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "During second infection, spleen monocytes show >3000 differentially expressed genes (mostly unique to reinfection), do not differentiate into inflammatory macrophages with all inflammatory functions silenced, show attenuated circulating CXCL10 and IFN\u03b3, and are not polarized toward alternative fates (M2 macrophages, MDSCs, or reparative Ly6Clo monocytes) or anti-inflammatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C65 are supported by RNA-seq comparing first and second infections (Figure 4A-E) and ELISA measurements (Figure 4D). The comprehensive characterization ruling out alternative fates is important. Sample sizes are adequate (n=5 infected, n=6-7 controls). The negative findings (C63-C65) are well-documented and important for understanding the mechanism. Statistical analysis appears appropriate with padj <0.01 and >1.5-fold change cutoffs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "During reinfection, monocytes adopt a tissue-protective transcriptional program focused on cell cycle/nuclear division rather than host defense, upregulating stress tolerance genes (S100a8/S100a9 forming calprotectin, Chi3l1, Sod3, Ednra, Vegfa) and differentially regulating heme-iron metabolism to enhance iron recycling (Ltf, Tfr1/Tfr2, Slc40a1) without increasing storage capacity or Hmox1, thereby minimizing inflammation and promoting tolerance to hemolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C82 are supported by clueGO analysis (Figure 5A-C) and gene expression data (Figure 5D-E). The functional interpretation is well-grounded in cited literature about gene functions. The observation that iron recycling is enhanced only during reinfection despite matched red cell loss (C80) is particularly compelling. However, some mechanistic claims (C69, C71, C74) rely on established knowledge rather than direct functional validation in this system. The overall inference about tissue protection (C81-C82) is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Monocytes switch glucose transporters from Slc2a1 (GLUT1) in first infection to Slc2a3 (GLUT3) in second infection, which can import glucose under hypoglycemic conditions, potentially constituting a cell-intrinsic adaptation to tolerate infection-induced stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 are supported by gene expression data (Figure 2\u2014figure supplement 1C-D, Figure 4\u2014figure supplement 1D-E) and citation to Simpson et al., 2008 characterizing GLUT3 function. The observation is clear (C84-C85) but the functional interpretation (C86) is speculative. This would benefit from functional validation (e.g., glucose uptake assays, GLUT3 knockdown experiments) to confirm the proposed role in stress tolerance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Monocytes differentially express mitochondrial carrier proteins between first and second infection, switching from Slc25a1 (citrate transporter, associated with inflammatory macrophages) to Slc25a29 (arginine transporter, linked to arginase pathway for tolerance/wound healing), potentially enabling specialized tissue-protective functions through metabolic rewiring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91 are supported by gene expression data (Figure 5F) and citations to relevant literature (Palmieri 2013, O'Neill et al. 2016). The observation of differential expression is clear (C87-C90) but the functional interpretation (C91) is speculative. The link between specific carrier proteins and functional outcomes would benefit from metabolomic analysis or functional perturbation experiments to validate the proposed metabolic rewiring.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Angiopoietin-2, the best biomarker of endothelial activation/dysfunction and mortality in human malaria, increases >10-fold during first infection but remains at healthy baseline levels during second infection despite identical parasite burden, demonstrating that a single malaria episode induces long-lived disease tolerance and clinical immunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 are supported by ELISA data (Figure 5G) and citation to Yeo et al., 2008 establishing Angiopoietin-2 as a biomarker. The experimental design with matched parasite burden is critical for this conclusion. Sample sizes are adequate (n=4-8). This is a key result linking the mechanistic findings to a clinically relevant pathology marker. The inference about long-lived tolerance (C94) is well-supported by the data showing normal levels during reinfection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "ChIP-seq analysis of bone marrow monocytes from once-infected mice shows that histone modification profiles (H3K27ac, H3K4me1, H3K9me3) of tolerized and specialized genes are nearly identical to uninfected controls, with 95% of 2848 genes showing no detectable histone modifications, indicating that innate memory through epigenetic reprogramming of bone marrow progenitors cannot easily explain the functional specialization of monocytes in tolerized hosts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 are supported by comprehensive ChIP-seq analysis (Figure 6A-C, Figure 6\u2014figure supplement 1) using three histone marks. The methodology is rigorous with pooled samples from multiple biological replicates and appropriate peak calling using HOMER. The negative finding is important and challenges the prevailing innate memory hypothesis. However, the analysis is qualitative (presence/absence of peaks) rather than quantitative, which is acknowledged as appropriate for ChIP-seq. The conclusion (C97) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Spleen monocytes from once-infected mice show 111 differentially expressed genes (most not expressed during acute/chronic infection), including transcription factor Maf and Sirpa, with majority related to cell cycle/nuclear division. This unique memory signature overlaps with second infection GO terms and is enhanced upon reinfection, indicating that a critical part of the tolerance program is already engaged prior to reinfection without requiring bone marrow epigenetic reprogramming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C106 are supported by RNA-seq data (Figure 7A-B) showing a distinct memory signature. The observation of 111 DEG unique to memory phase is clear and the GO analysis showing overlap with second infection is compelling. Sample sizes are adequate (n=5-6). The inference that this represents pre-engagement of tolerance mechanisms (C105-C106) is reasonable but somewhat speculative. The conclusion would be strengthened by functional validation showing these memory monocytes have altered responses to challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C107"
+    ],
+    "result": "The data provide compelling evidence that malaria may remodel the spleen to imprint tolerance, as monocytes are transcriptionally reprogrammed in the spleen but not epigenetically reprogrammed in the bone marrow.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C107 is a speculative synthesis of the epigenetic (C95-C97) and transcriptional memory (C98-C106) findings. While the negative epigenetic data and positive transcriptional memory data are both supported, the mechanism of splenic remodeling is not directly demonstrated. The authors discuss potential mechanisms (malaria pigment, stromal networks, tissue architecture) but do not test them experimentally. This hypothesis requires additional experiments such as spleen transplantation or in vitro co-culture studies to demonstrate causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C113",
+      "C114"
+    ],
+    "result": "Mechanisms of disease tolerance persist after pathogen clearance to minimize tissue damage, stress, and pathology during subsequent infections, operating independently of pathogen load to avert hallmark features of severe malaria (emergency myelopoiesis, tissue damage, endothelial dysfunction), thereby constituting an alternative strategy of acquired immunity that prioritizes host fitness over pathogen clearance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C114 represent the main conclusions synthesizing multiple lines of evidence: matched parasite burden between infections (C47-C48), preserved tissue architecture (C49-C54), reduced pathology markers (C92-C93), and functional monocyte reprogramming (C59-C82). The experimental design with drug-cured mice and matched reinfection is rigorous. The conclusion that tolerance operates independently of pathogen load is well-supported. However, the claim about \"acquired immunity\" may be overstated as the mice still develop parasitemia and anemia, just with reduced pathology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Prior work in human malaria shows that children surviving severe malaria are frequently reinfected with similar/higher parasite densities yet develop immunity to severe disease (not improved parasite elimination), supporting that immunity is tolerance-based. Field data show lower inflammatory cytokines in survivors, reduced inflammation despite higher parasitemia in high-transmission areas, and reduced monocyte inflammatory responses after febrile malaria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C8 accurately cite and represent prior published work (Gon\u00e7alves et al. 2014, Mandala et al. 2017, Ademolue et al. 2017, Portugal et al. 2014, and others). These claims establish the rationale for the study and are appropriately supported by citations. The inference about tolerance vs. resistance (C3) is reasonable based on the cited evidence. This contextualizes the current work within the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Discussion of potential mechanisms includes: tissue printing allows organ-specific monocyte functions; red pulp macrophages from once-infected mice are transcriptionally identical to controls; malaria pigment can suppress monocyte functions in vitro; tissue remodeling and pigment accumulation occur in human spleens; adaptive immunity reduces peak parasitemia 50-fold; and various literature-supported mechanisms for emergency myelopoiesis and macrophage toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C127 are appropriately cited to published literature and the microarray data (Figure 7\u2014figure supplement 1) supports C116. These claims provide context and discuss potential mechanisms but do not present new experimental findings. The citations appear accurate and relevant. However, these are largely speculative discussions of mechanisms that were not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C128",
+      "C129"
+    ],
+    "result": "The authors argue that acquired immunity to malaria is only considered slow/ineffective when focusing on resistance (parasite elimination) in isolation, and that disease tolerance provides an alternative strategy of acquired immunity functioning to limit parasite-induced damage rather than kill parasites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C129 represent the conceptual framework and main argument of the paper. This is well-supported by the comprehensive experimental evidence showing tolerance mechanisms that persist after infection and operate independently of pathogen load. The distinction between resistance and tolerance is clearly demonstrated. However, the framing as \"alternative strategy of acquired immunity\" may be debated as it challenges traditional immunological definitions focused on pathogen elimination.",
+    "result_type": "MAJOR"
+  }
+]

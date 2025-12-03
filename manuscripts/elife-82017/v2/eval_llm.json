@@ -1,0 +1,274 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Msn2 and Dot6 show unexpected discordance in their nuclear localization dynamics. Before stress, roughly 54% of Msn2 peaks and 37% of Dot6 peaks were temporally coordinated (p<<0.0001), indicating both systemic and factor-specific activation. After NaCl stress, the factors deviated: few cells showed post-stress Dot6 translocation while many showed asynchronous Msn2 pulses. Dot6 peaks were highly correlated between cells in the same colony (p=9.3e-4), whereas Msn2 peaks were not significantly coordinated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C50 provide converging evidence from permutation analyses, temporal coordination measurements, and statistical tests demonstrating discordance between Msn2 and Dot6. The permutation tests provide rigorous statistical support (p<<0.0001 for pre-stress coordination, p=9.3e-4 for Dot6 colony correlation), and the observations are consistent across multiple phases of the stress response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C60",
+      "C61"
+    ],
+    "result": "Clustering analysis identified reproducible cell subpopulations with distinct transcription factor dynamics and growth properties. Six clusters were recapitulated in independent experiments. Cluster 11 showed lower Dot6 response and slower growth rates before and after stress (p<0.02), while Cluster 7 showed higher Dot6 response and faster recovery growth rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C61 demonstrate reproducible clustering patterns across biological replicates and independent experiments, with statistically significant associations between cluster membership and growth phenotypes. The clustering methodology (Gaussian finite mixture modeling) is appropriate, and the validation in independent experiments strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C80",
+      "C88",
+      "C95"
+    ],
+    "result": "Post-stress growth recovery is positively correlated with Dot6 activation. A multi-factorial model including pre-stress Dot6 AUC, pre-stress Msn2 peak heights, pre-stress growth rate, and acute Dot6 response explained 35% of variance in post-stress growth rate. Principal component analysis revealed that Dot6 behavior (PC4) explained 14% of variance independent of pre-stress growth rate (p=1e-4), while Msn2 behavior (PC2) showed no predictive power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C95 provide comprehensive statistical modeling demonstrating the positive correlation between Dot6 activation and post-stress growth. The multi-factorial linear regression and PCA analyses appropriately disentangle correlated variables, and the independent validation (Figure 6\u2014figure supplement 2) confirms Dot6's contribution is separable from pre-stress growth rate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C69"
+    ],
+    "result": "Cells lacking Dot6 (dot6\u2206tod6\u2206 mutant) grow normally in the absence of stress but show significantly reduced growth rate after NaCl treatment compared to wild-type cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C9, and C69 are supported by bulk culture experiments (Figure 7A) showing that the dot6\u2206tod6\u2206 mutant has wild-type growth before stress but impaired growth after NaCl treatment. This genetic validation complements the single-cell observations and supports the protective role of Dot6.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C70",
+      "C71",
+      "C72",
+      "C81",
+      "C96"
+    ],
+    "result": "Wild-type cells with larger Dot6 responses show faster production of Msn2-regulated Ctt1 protein, separable from Msn2 contribution. The time to cross the Ctt1 threshold correlated more strongly with Dot6 peak height (R\u00b2=0.14) than Msn2 (R\u00b2=0.09), and a mixed model confirmed Dot6's contribution was significant while Msn2 was only marginally significant (p=0.053). Pre-stress growth rate did not correlate with Ctt1 timing (p=0.24).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C96 provide direct evidence linking Dot6 activity to Ctt1 production timing using a strain expressing Ctt1-iRFP. The statistical analyses appropriately compare single-factor and multi-factor models, and the lack of correlation with pre-stress growth rate supports the independence of Dot6's effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C73",
+      "C74",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The authors propose that transcriptional repression during acute stress provides a protective response by redirecting translational capacity to induced transcripts. Dot6 does not directly regulate Ctt1, and dot6\u2206tod6\u2206 cells induce CTT1 transcript to higher levels but show delayed Ctt1 protein accumulation. The model suggests that repression depletes highly transcribed RiBi transcripts, preventing competition with stress-induced mRNAs for translational machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C12-C85 present a mechanistic model that is consistent with the data but remains speculative. While the observations support the model (delayed Ctt1 protein despite higher transcript in mutants, positive correlation between Dot6 and Ctt1 timing), direct evidence for the proposed translational competition mechanism is lacking. The model relies heavily on inference from prior work (C83-C86) and would benefit from direct measurements of translation rates or ribosome occupancy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C59"
+    ],
+    "result": "Single-cell measurements reveal substantial heterogeneity in growth responses to NaCl stress. There was substantial variation in pre-stress growth rates, and most colonies reduced growth after NaCl with considerable variation. Most cells shrunk immediately after stress. Overall, there was a positive correlation between pre- and post-stress growth rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C59 document basic phenotypic heterogeneity in the population, supported by distributions shown in Figure 2 and correlation analysis in Figure 5A. The observations are consistent with prior studies (cited in C39) and provide the foundation for subsequent analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The microfluidics system successfully measured multiple single-cell phenotypes including growth rate, cell size, cell-cycle phase, and nuclear localization of Msn2 and Dot6. After quality control filters, 221 cells from three biological replicates were analyzed. Images were captured at 6-min intervals, and analysis was limited to 1-2 cell colonies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C107 describe the experimental system and quality control procedures. The methods are clearly documented with appropriate filters to ensure data quality. The exclusion criteria are reasonable (e.g., removing cells with adhesion issues, negative growth slopes, potential vacuolar signal), though the exclusion of 18 cells with uncertain Msn2 signal (C107) from regression modeling is appropriately conservative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "There was no significant correlation between cell subpopulations and cell volume changes or cell-cycle phase, consistent with other studies showing lack of strong connection between cell-cycle phase and stress response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 report negative results that are appropriately documented. While Figure 5\u2014figure supplement 1 shows a minor signal for cell cycle effects on acute-stress peak heights (p<0.001), the overall lack of strong correlation is consistent with cited prior work (C58).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Fast-growing cells before stress showed larger Dot6 responses and faster acclimation, while slow-growing cells had lower Dot6 activity and slower acclimation. The authors hypothesize that fast-growing cells may have higher biosynthetic capacity and thus greater need to repress RiBi genes to free translational capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 summarize key findings supported by the data. Claims C93-C94 present reasonable hypotheses to explain the observations, though they remain speculative. The correlation between pre-stress growth rate and Dot6 response (C65) supports the hypothesis, but direct tests would be needed for confirmation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Cell subpopulations show different Msn2 dynamics during acclimation, with some showing rapid acclimation and others showing prolonged fluctuations. The authors infer that different dynamics produce different transcriptomic outputs, consistent with prior single-cell transcriptomics showing heterogeneous transcriptomes upon NaCl stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 connect the observed heterogeneity in Msn2 dynamics to potential transcriptomic consequences. While the inference about transcriptomic outputs (C78) is reasonable based on prior work showing that Msn2 dynamics affect gene expression, it remains an inference in this study. The consistency with prior single-cell transcriptomics (C79) provides supporting evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "Dot6 acute-stress peak height can be predicted by the relative pre-stress activity of Msn2 versus Dot6 (R\u00b2=0.42), linking acute-stress behavior to pre-stress cell states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 is supported by the analysis shown in Figure 7\u2014figure supplement 1. The R\u00b2 of 0.42 indicates moderate predictive power, suggesting that pre-stress transcription factor balance influences acute stress responses. This finding connects pre-stress states to stress responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14",
+      "C15",
+      "C24",
+      "C25",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Prior work has established that stress defense and growth are inversely related in bulk cultures, but these studies miss cell-to-cell heterogeneity. Cell-to-cell variation in stress responses has been linked to differential survival in cancer and bacteria. The RAS-PKA pathway promotes growth and suppresses stress response, and slower-growing cells show lower cAMP levels and higher Msn2 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C37 accurately summarize prior knowledge from the literature with appropriate citations. These claims establish the context and motivation for the current study. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Prior work has characterized Msn2 and Dot6 as stress-activated transcription factors regulated by PKA/TOR pathways. Msn2 activates defense genes while Dot6 represses ribosome biogenesis genes. Their localization dynamics differ by stress type and produce distinct effects on target genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C30 accurately summarize established knowledge about Msn2 and Dot6 with appropriate citations. These claims provide necessary background for understanding the experimental system and interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C86",
+      "C87",
+      "C89",
+      "C90"
+    ],
+    "result": "Prior studies reported condition-specific Msn2 dynamics in aggregate analyses. This yeast strain removes ribosomes from the translating pool after NaCl stress, consistent with bacterial models where cells preserve ribosomes for acclimation. Other studies have linked metabolic states and mitochondrial function to stress responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C90 accurately cite prior work relevant to interpreting the current findings. The citations appear appropriate and provide context for the discussion of mechanisms and future directions.",
+    "result_type": "MINOR"
+  }
+]

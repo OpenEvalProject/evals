@@ -1,0 +1,379 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Natural variation in inbreeding propensity exists among S. pombe isolates. Using fluorescence microscopy and genetic assays, the authors measured inbreeding coefficients ranging from near 0 (random mating) in isolates like Sk to ~0.5-0.6 in the lab strain Sp. Cell density affects inbreeding coefficients, with lower densities leading to higher inbreeding in both Sp and Sk isolates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C47-C54 provide converging evidence from two independent assays (microscopy and genetic markers) showing consistent inbreeding coefficients across isolates. The microscopy assay was validated with heterothallic controls showing random mating (F=-0.05, C48). The density effect (C52-C54) is well-controlled with heterothallic populations showing random mating at all densities, demonstrating the effect is specific to homothallic strains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C61",
+      "C62"
+    ],
+    "result": "The Sk isolate exhibits distinct mating timing patterns compared to Sp. At low density (0.25\u00d7), Sk cells divided significantly more (p<0.005) before mating, with most mating occurring at generation 4, whereas Sp mated primarily at generations 2-3. At standard density (1\u00d7), Sk mating timing shifted to generations 2-3 like Sp, but sibling mating decreased from 56% to 10%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C62 are supported by time-lapse microscopy data with statistical testing (C55). The density-dependent shift in Sk mating patterns (C61-C62) provides mechanistic insight consistent with reduced mating-type switching. The observations are internally consistent and supported by quantitative data across multiple experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C116"
+    ],
+    "result": "A ~5 kb insertion of nested Tf transposon sequences was discovered in the Sk mating-type region near the double-strand break site. This insertion was confirmed by PCR and found in at least one other isolate (FY28981) that also exhibits more random mating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 and C116 describe a genomic finding confirmed by two independent methods (mate-pair sequencing analysis and PCR). The presence of the same insertion in another randomly-mating isolate (C60) provides correlative support, though the authors appropriately note this insertion doesn't explain all mating variation (C118).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C117"
+    ],
+    "result": "The data are consistent with a model where less frequent mating-type switching in Sk contributes to more random mating. The authors propose the transposon insertion could contribute to reduced DNA break formation and decreased switching, building on prior observations by Singh and Klar (2002).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C113-C117 represent a plausible mechanistic model but lack direct evidence. The authors acknowledge they did not directly measure switching rates (using mating as a proxy instead). While the model is consistent with observations (C113), the causal link between the insertion and switching frequency remains speculative (C117). Direct measurement of switching rates would be needed to support this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Available sexual partners affect mating phenotypes. In mixed Sk/Sp populations, Sk cells maintained low sibling mating (9.2%), while Sp sibling mating decreased significantly from 56.8% to 29.7% (p=0.04). Sk/Sp matings produced significantly longer zygotes/asci than isogenic matings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 demonstrate partner-dependent effects with statistical support (C69). The maintenance of Sk's low sibling mating in mixed populations (C68) and the change in Sp behavior (C69) are well-documented. The zygote length observation (C70) provides additional phenotypic evidence, though its mechanistic significance is unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The Sk isolate displays tremendous diversity in ascus size and shape, with ~25% of zygotes/asci exceeding 15 \u03bcm (some >30 \u03bcm), compared to the typical 10-15 \u03bcm range in most isolates. Long shmoos were produced only in response to opposite mating-type cells, not nitrogen starvation alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 describe well-documented morphological observations with quantitative measurements (C65) and appropriate controls (C66). The specificity of long shmoo formation to mating-type recognition (C66) is properly controlled. These observations are descriptive but well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Population genetic modeling predicts wtf drivers can spread under all inbreeding conditions where some heterozygotes form (F<1), even from very low initial frequencies. The driver has greatest advantage at F=-1 (complete outcrossing) but increases in frequency at all measured S. pombe inbreeding coefficients, consistent with previous theoretical work showing inbreeding slows but doesn't prevent driver spread.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 present modeling results that are mathematically sound and consistent with established theory (C74 cites Martinossi-Allibert et al., 2021). The model appropriately uses empirically measured parameters (98% drive, fitness 0.51 for heterozygotes) from prior work. The conclusion that drivers can spread at all F<1 follows logically from the model assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "Stochastic simulations incorporating genetic drift showed that driver success probability was related to population size, with drivers most likely maintained in smaller populations and those with more random mating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 describes results from Wright-Fisher simulations supported by Figure 3\u2014figure supplement 1C. The finding is consistent with recent work (Martinossi-Allibert et al., 2021) and represents a counterintuitive result about drift effects on driver dynamics. The simulation approach is appropriate for exploring stochastic effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Fluorescent markers were lost from experimental populations over time, likely due to excision reverting the ura4 disruption. GFP showed a fitness cost of 0.234 in homozygotes with low dominance (h=0.083), calculated using maximum likelihood fitting to control population data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 identify and quantify a technical issue in the experimental system. The inference about marker loss mechanism (C77) is reasonable given the integration method. The fitness cost quantification (C79-C80) uses appropriate maximum likelihood methods on control data, though the authors acknowledge one exception where this cost wasn't observed (heterothallic wtf4/wtf4 populations).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Experimental evolution confirmed model predictions: wtf4 spread in homothallic populations (F~0.5) at rates matching model predictions for F=0.5, and spread faster in heterothallic populations (F~0) matching random mating predictions for generations 1-6. The driver spread faster when linked to mCherry than GFP due to GFP-associated fitness costs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 demonstrate strong agreement between experimental data and model predictions across multiple conditions. The comparison uses empirically measured parameters and shows good fit particularly in early generations (C83, C85). The GFP cost effect (C82) is consistent with the measured fitness parameters (C79-C80). Later generation deviations are acknowledged and attributed to marker loss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The population genetics model with heterozygote fitness of 0.51 accurately describes wtf4 spread in experimental populations, particularly in early generations. Testing alternative fitness values showed that increasing heterozygote fitness beyond 0.51 decreased model fit, suggesting wtf drivers gain no additional benefits beyond spore killing. The results confirm inbreeding coefficients near 0.5 slow but don't stop driver spread.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 represent rigorous model validation. Testing alternative fitness parameters (C86) and finding decreased fit provides evidence against additional driver benefits. The conclusion about inbreeding effects (C88) is supported by both modeling and experimental data. The model-experiment agreement validates both approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Modeling the effects of linked deleterious alleles shows drivers can spread from any initial frequency >0 without additional costs, but require higher initial frequencies as linked costs increase. The effect depends on dominance: recessive costs (h~0) allow low-frequency invasion in random mating but require higher frequencies with inbreeding; partially dominant costs (h=0.5) require higher initial frequencies even with random mating. In finite populations with drift, linked costs particularly limit driver maintenance in inbreeding populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C97 present systematic modeling of linked cost effects with appropriate parameter exploration. The results are consistent with previous modeling (C97 cites supporting work) and the explanation about fixed costs vs. frequency-dependent benefits is sound. The modeling appropriately considers both deterministic and stochastic scenarios.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Experimental tests with the GFP-linked wtf4 driver confirmed model predictions: the driver failed to spread from initial frequencies <0.25, and at ~50% initial frequency could spread at low inbreeding but decreased at high inbreeding. These results demonstrate both inbreeding and linked deleterious alleles can impede driver spread.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 provide experimental validation of model predictions about linked costs and inbreeding effects. The experiments appropriately manipulate both initial frequency and inbreeding coefficient (via cell density), and results match model predictions. This represents strong integration of theory and experiment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "All studied homothallic S. pombe natural isolates underwent some non-same-clone mating, with some isolates like Sk showing considerable outcrossing (F~0). Sp mating efficiency was ~40%, consistent with previous work, with variable efficiencies across isolates. These findings support that homothallism is compatible with outcrossing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C109 summarize key experimental findings with appropriate citations to previous work (C104-C105). The observation that all homothallic isolates show some outcrossing (C107) is well-documented, and the Sk example (C108) demonstrates this can be substantial. The conclusion about homothallism compatibility (C109) is appropriately supported by both current data and cited prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Integration of modeling and experimental results shows observed S. pombe inbreeding coefficients slow but don't halt wtf driver spread (except with low frequency and linked deleterious alleles). Experimental results closely matched model predictions, suggesting the model captures all critical parameters. The variation in mating phenotypes indicates driver spread rates will vary between S. pombe populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C148 synthesize the major findings. The close model-experiment agreement (C145) across multiple conditions supports the inference that critical parameters are captured (C146). The conclusions about inbreeding effects (C143-C144) and population variation (C148) are well-supported by the combined theoretical and experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C16",
+      "C19",
+      "C28",
+      "C32",
+      "C39"
+    ],
+    "result": "S. pombe is reported to rarely outcross yet harbors many meiotic drivers, challenging the assumption that drivers are unsuccessful in rarely outcrossing species. Very little is known about S. pombe ecology and outcrossing frequency, and precise levels of same-clone mating in the presence of potential outcrossing partners had not been formally reported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C16, C19, C28, C32, and C39 establish the paradox motivating this study. These are well-supported by citations to previous work documenting both the presumed rarity of outcrossing and the presence of multiple drivers. The statement about lack of quantitative data (C32) appropriately identifies a knowledge gap the study addresses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "Nanopore sequencing analysis revealed an approximate 3:1 excess of the h+ allele at the mat1 locus in isolate FY29033. This mating-type bias is predicted to facilitate non-same-clone mating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C123 present a genomic observation with appropriate statistical analysis (Figure 2\u2014figure supplement 2C shows Fisher's exact test results). The inference that mating-type bias facilitates outcrossing (C123) is logical and consistent with cited prior work on atypical mating-type loci.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The study does not address actual outcrossing frequency in wild S. pombe populations. Previous genomic estimates of outcrossing rates assume Mendelian transmission and recombination rates matching pure Sp, but these assumptions are inconsistent with empirical data on meiotic drive and recombination suppression, likely leading to underestimation of true outcrossing rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C128 appropriately acknowledge study limitations (C124) and critically evaluate prior work. The critique of genomic estimates (C126-C128) is well-supported by citations showing violations of key assumptions. The inference about underestimation (C128) follows logically from the identified assumption violations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Heterozygosity for wtf drivers may not require outcrossing between distantly related strains because wtf genes evolve extremely rapidly through non-allelic gene conversion and repeat expansion/contraction. Despite low overall genetic diversity in S. pombe (<1%), wtf genes are largely distinct between isolates (25-38 genes per isolate, with dramatic differences even at the same locus). Small sequence changes can create new drivers, and when novel driver mutations mate with cells lacking them, drive can occur in the resulting heterozygote.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C141 present a well-supported model for driver evolution and maintenance. The rapid evolution of wtf genes (C130-C138) is documented by multiple citations. The inference that heterozygosity can arise within relatively homogeneous populations (C129, C141) follows logically from the documented rapid evolution and lack of cross-protection between different wtf sequences (C139).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background on meiotic drivers: they break Mendel's law to achieve >50% transmission from heterozygotes by manipulating gametogenesis. Drivers rely on outcrossing because they gain advantage in heterozygotes. While outcrossing can purge deleterious alleles, it can also promote spread of selfish genes like drivers. Inbreeding is thought to inhibit driver spread, predicting drivers should be unsuccessful in rarely outcrossing species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C15 provide well-established background information, all supported by appropriate citations to foundational work in the field. These claims accurately represent current understanding of meiotic drive systems and set up the paradox addressed by the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Background on wtf drivers in S. pombe: The genome contains numerous wtf meiotic drive genes (4-14 drivers per isolate, plus 8-17 suppressors). Each driver encodes both poison and antidote proteins. In wtf4, the poison assembles into toxic aggregates packaged into all spores, while the antidote co-assembles with poison only in spores inheriting the driver, likely neutralizing it via vacuolar trafficking. This results in ~50% spore death and >90% driver transmission from heterozygotes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C46 summarize well-established characteristics of wtf drivers from prior work by this research group and others. All claims are supported by appropriate citations to previous studies that characterized these systems. This background is essential for interpreting the current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "The results are consistent with previous empirical and modeling studies showing meiotic drivers tend to accumulate linked deleterious alleles that can hitchhike with drivers, reducing their spread and potentially leading to stable intermediate frequencies. In S. pombe, drivers in the Sk isolate are linked to a chromosomal translocation, and such rearrangements involving chromosome 3 (which houses most wtf genes) are common. Inbreeding can be selected when drivers are recessive lethal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91, C149-C152 appropriately contextualize the current findings within the broader literature on meiotic drive. All claims are supported by relevant citations. The observations about S. pombe-specific features (C90-C91) connect the general principles to the study system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The S. pombe experimental evolution system could be used to model sex-ratio-distorting drivers (by linking drivers to mating-type loci in heterothallic populations) or explore complex multi-locus drive systems with multiple drivers and suppressors. This tool may provide insights into natural drivers and help explore evolutionary trajectories of artificial gene drive systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C153-C155 are speculative proposals for future work. While the suggestions are reasonable extensions of the demonstrated experimental system, they represent untested hypotheses rather than results of the current study. The potential applications are plausible but would require additional validation.",
+    "result_type": "MINOR"
+  }
+]

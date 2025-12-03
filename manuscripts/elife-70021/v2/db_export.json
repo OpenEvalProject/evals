@@ -1,0 +1,1784 @@
+{
+  "submission": {
+    "id": "54bf6906-1104-47d1-9efa-02da0b33c7dd",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T08:44:22.071570Z",
+    "updated_at": "2025-12-03T08:44:22.071570Z"
+  },
+  "content": [
+    {
+      "id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "submission_id": "54bf6906-1104-47d1-9efa-02da0b33c7dd",
+      "content_type": "manuscript",
+      "content_text": "# A genome-phenome association study in native microbiomes identifies a mechanism for cytosine modification in DNA and RNA\n\n## Authors\n\n- Weiwei Yang<sup>1</sup> ([ORCID: 0000-0002-8836-9018](https://orcid.org/0000-0002-8836-9018))\n- Yu-Cheng Lin<sup>1</sup> ([ORCID: 0000-0002-4787-2565](https://orcid.org/0000-0002-4787-2565))\n- William Johnson<sup>1</sup>\n- Nan Dai<sup>1</sup>\n- Romualdas Vaisvila<sup>1</sup>\n- Peter Weigele<sup>1</sup>\n- Yan-Jiun Lee<sup>1</sup>\n- Ivan R Corr\u00eaa<sup>1</sup> ([ORCID: 0000-0002-3169-6878](https://orcid.org/0000-0002-3169-6878))\n- Ira Schildkraut<sup>1</sup>\n- Laurence Ettwiller<sup>1</sup> ([ORCID: 0000-0002-3957-6539](https://orcid.org/0000-0002-3957-6539)) \u2020\n\n### Affiliations\n\n1. New England Biolabs Ipswich United States\n2. School of Dentistry, National Yang Ming Chiao Tung University Taipei Taiwan\n\n\u2020 Corresponding author\n\n## Abstract\n\nShotgun metagenomic sequencing is a powerful approach to study microbiomes in an unbiased manner and of increasing relevance for identifying novel enzymatic functions. However, the potential of metagenomics to relate from microbiome composition to function has thus far been underutilized. Here, we introduce the Metagenomics Genome-Phenome Association (MetaGPA) study framework, which allows linking genetic information in metagenomes with a dedicated functional phenotype. We applied MetaGPA to identify enzymes associated with cytosine modifications in environmental samples. From the 2365 genes that met our significance criteria, we confirm known pathways for cytosine modifications and proposed novel cytosine-modifying mechanisms. Specifically, we characterized and identified a novel nucleic acid-modifying enzyme, 5-hydroxymethylcytosine carbamoyltransferase, that catalyzes the formation of a previously unknown cytosine modification, 5-carbamoyloxymethylcytosine, in DNA and RNA. Our work introduces MetaGPA as a novel and versatile tool for advancing functional metagenomics.\n\n## Introduction\n\nAdvances in next-generation sequencing technology have been reshaping metagenomics, making it possible to explore all microbes within a sample, including the overwhelming majority of those unculturable in standard growth conditions (Quince et al., 2017). From studying human gut microbiome to marine viral communities (Sunagawa et al., 2015), metagenomic analyses are being utilized across a broad spectrum of life science disciplines, contributing to novel clinical diagnoses (Chiu and Miller, 2019), antibiotics and small molecule discovery (Hu et al., 2013; Charlop-Powers et al., 2014), food safety (Cao et al., 2017), biofuel generation (Hess et al., 2011), and environment stewardship (Nesme et al., 2014; Cavicchioli et al., 2019).\n\nOf the two primary questions metagenomic studies strive to address, profiling the taxonomic biodiversity \u2013 \u2018what is out there?\u2019 is easier to answer compared to inferring the biological functions \u2013 \u2018what do they do?\u2019. Indeed, there have been many well-established strategies to quantify taxonomic diversity such as analyzing known marker genes, binning contigs and assembling sequences into taxonomic groups or genomes (Sharpton, 2014; Quince et al., 2017). However, a large fraction of the functional potential of microbiomes remains to be discovered. Microbiomes encode a large number of evolutionarily diverse genes coding for millions of peptides and proteins for distinctive functions. The functional diversity is particularly enormous for secondary metabolites and epigenetic modifications (Sharon et al., 2014). Taking DNA modifications as an example , environmental microbiomes are a plentiful source of DNA-modifying enzymes with diverse mechanisms (Weigele and Raleigh, 2016; Hiraoka et al., 2019). In bacteriophages, DNA modifications are used to evade the restriction modification systems of the host bacterial cell. Notably, a handful of bacteriophages have been described to completely modify cytosines in their genomic DNA, for example, 5\u2019 methylcytosine in XP12 phage (Kuo et al., 1968) and glycosylated 5\u2019 hydroxymethylcytosine in T4 phage (Revel and Georgopoulos, 1969). Recently, additional base modifications have been discovered including 5-(2-aminoethoxy)methyluridine, 5-(2-aminoethyl)uridine, and 7-deazaguanine (Lee et al., 2018; Hutinet et al., 2019).\n\nCurrent methods to harness such functional potential of microbiomes, for the most part, came from computational prediction of gene function which is based on homology search to existing databases. Nonetheless, because of the poor completeness and accuracy of microbial annotation, homology searches often fail to impute the correct functions (Huson et al., 2009; Nayfach and Pollard, 2016). Novel functions can also be found using functional screens; however, such effort entails the construction and high-throughput screening of a large number of clones which can be very time-consuming (Martinez et al., 2004). Novel approaches are therefore needed to link genetic information from microbial metagenomes to function.\n\nFor specific bacteria, determining the genetic basis of phenotypes has been addressed using genome-wide association studies (GWAS) (Falush and Bowden, 2006) combined with specific phylogenetic methods to account for the unique population structure of microbes (Collins et al., 2018). Examples of microbial GWAS have explored hundreds of isolates to identify genomic elements that are statistically associated with, for example, antibiotic resistance (Chewapreecha et al., 2014), host specificity (Sheppard et al., 2013), or virulence (Laabei et al., 2014). Nonetheless, these studies are limited to known isolates and have not yet been extended to entire complex microbial communities.\n\nHere, we developed the Metagenomics Genome-Phenome Association (MetaGPA) framework to bridge the gap between genetic information and functional phenotype in complex microbial communities. MetaGPA is conceptually close to GWAS as it associates genotypic data with phenotypic traits. Contrasting with microbial GWAS which uses sequence variations as genetic markers, MetaGPA incorporated association analyses at the level of protein domains to reveal genes that are significantly associated with the phenotype of interest. By applying this workflow on DNA modifications as our phenotypic trait, we discovered a number of candidate enzyme families. From these candidates, we validated a novel DNA/RNA cytosine modification, 5-carbamoyloxymethylcytosine (5cmdC), and the enzyme responsible for this modification. From this example, we show that MetaGPA is a powerful and versatile method to improve metagenome functional analysis.\n\n## Results\n\n### Conceptual framework of MetaGPA studies\n\nLike GWAS in individual species (Hirschhorn and Daly, 2005), MetaGPA requires definition of two cohorts, a \u2018case\u2019 cohort, that is, a group of organisms that share a specific phenotype under study in a given microbiome, and a \u2018control\u2019 cohort composed of all organisms within that microbiome (Figure 1 and Figure 1\u2014figure supplement 1). While both cohorts are sequenced independently, all organisms included in a cohort are sequenced together without the need to isolate organisms. The \u2018case\u2019 group is derived from the control group after applying a selection to only retain a given phenotype.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/70021/elife-70021-fig1-v2.jpg)\n\n**Figure 1.:** The core MetaGPA pipeline is applied to identify protein domains that are significantly associated with a given phenotype. The pipeline takes high-throughput sequencing datasets from two libraries representing (1) the total microbiome (control reads) and (2) a subset of the microbiome resulting from a given treatment that selects for the studied phenotype (case reads). Control and case reads are assembled into contigs and contigs are classified as enriched or depleted based on the ratio between the number of reads mapping to the contigs from the case versus control. Contigs are annotated based on homology with known protein domains and each domain is evaluated for its association with the studied phenotype based on the number of hits in the enriched compared to control contigs. In this theoretical example, the orange bar represents a protein domain that is associated with phenotype X (e.g., DNA cytosine modification, see below). We then apply additional metrics such as phylogenetic clustering, differential conservation, and co-occurrence network to refine this association and identify candidate genes for experimental validation. More details about the workflow are provided in Figure 1\u2014figure supplement 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70021/elife-70021-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** An environmental sample is subjected to a defined selection to retain only the genetic material from microorganisms that harbor the desired phenotype (case). The same environmental sample with no selection is also needed (control). The case and control cohorts are processed by the MetaGPA main pipeline through the following steps: First, reads from the case and control libraries are assembled into contigs. Second, predictive proteins encoded by these contigs are annotated using Pfam. Next, reads are aligned to these contigs to allow calculation of enrichment scores. With a chosen enrichment score cutoff, the pipeline determines which contigs are enriched with case reads. Moreover, statistical analyses are applied to identify Pfams with significant association to these enriched contigs. Once the associated Pfams are determined, we can perform further association analyses to study if any Pfam (or candidate gene) can be prioritized for further experimental validation. The criteria for a good candidate Pfam are: members of this Pfam on case contigs exhibit phylogenetic clustering and differential residue conservation pattern; this Pfam is within the multi-component co-occurring network built by the most significantly associated Pfams.\n\nThe association is computed using a computational workflow composed of the core MetaGPA pipeline that defines genetic units associated with the phenotype and further analysis tools to refine these associations. The core MetaGPA pipeline described in Figure 1 and Figure 1\u2014figure supplement 1 takes sequencing reads from both cohorts and performs de novo assemblies into contigs. Contigs from both cohorts are combined and duplicated contigs are discarded. Reads from the case and control experiments are mapped back to the combined contig set. Each contig is either labeled as enriched or depleted from the case cohort based on the enrichment score calculated using the relative number of reads mapping to the contig. Genes identified in the contig set are annotated using homology search to known protein domains and domains that are found significantly enriched in the enriched contig set are considered to be associated with the studied phenotype. Finally, genes in the enriched contig set annotated with one or more associated domain(s) are defined as candidate genes.\n\nBoth associated domains and their corresponding candidate genes are further refined using evidence such as phylogenetic clustering and co-occurrence with other candidate domain families/genes. Phylogenetic clustering assesses for each associated domain, whether candidate genes are phylogenetically closer to each other relative to genes containing the same domain family in the depleted contigs. This analysis can be done at domain or residue resolution. Co-occurrence with other candidate genes strengthen the association by attempting to identify the entire metabolic pathway responsible for the specific phenotype under study. Taken together, this multilayer analysis effectively identifies protein domain families and their corresponding candidate genes that are truly related to the phenotypes of interest.\n\n### Application of MetaGPA for the discovery of cytosine modifying and hyper-modifying enzymes\n\n#### Principle\n\nTo demonstrate the effectiveness of the MetaGPA framework, we designed a study to identify proteins associated with DNA cytosine modifications. Because the relevant phenotype (cytosine modifications) is covalently linked to the genetic material, total genomic DNA isolated from environmental sources can be used for both, the \u2018control\u2019 cohort and material for phenotypic selection.\n\nAccordingly, a \u2018case\u2019 cohort is obtained by applying an enzymatic selection to retain only the genomic DNA containing known and unknown forms of cytosine modification. More specifically, unmodified cytosines are deaminated to uracils using the DNA cytidine deaminase apolipoprotein B mRNA editing enzyme catalytic polypeptide-like 3A (APOBEC3A) (Carpenter et al., 2012; Henry et al., 2009; Wijesinghe and Bhagwat, 2012), and subsequently excised by uracil-specific excision reagent (USER) (Bitinaite et al., 2007), resulting in fragmented DNA. Because APOBEC3A also deaminates 5-methyl-2'-deoxycytidine (5mdC) and, to a lesser degree 5-hydroxymethyl-2'-deoxycytidine (5hmdC) (Sun et al., 2021), ten-eleven translocation dioxygenase 2 (TET2) and T4 phage \u03b2-glucosyltransferase (T4-BGT) can be used to protect 5mdC and 5hmdC prior to APOBEC3A treatment (Figure 2A). Both modifications are used as internal control for MetaGPA since the enzymes that catalyzed their formation are well characterized. These enzymes, if present in the sample, are therefore expected to be associated with modifications in our MetaGPA framework.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/70021/elife-70021-fig2-v2.jpg)\n\n**Figure 2.:** (A), Schematic of enzymatic selection. With enzymatic selection treatment, adaptor ligated products were first incubated with ten-eleven translocation dioxygenase 2 (TET2) and T4 phage \u03b2-glucosyltransferase (T4-BGT) so that 5-methyl-2'-deoxycytidine (5mdC) (m) and 5-hydroxymethyl-2'-deoxycytidine (5hmdC) (hm) in these sequences may be oxidized to 5-carboxy-2\u2019-deoxycytidine (ca) or glucosylated to 5-\u03b2-glucosyloxymethyl-2\u2019-deoxycytidine (gm) (Materials and methods). Unmodified cytosines were deaminated by APOBEC3A into uracils and then cut by uracil-specific excision reagent (USER), so that DNA with modified cytosines is enriched after the selection. This method is predicted to also preserve unknown forms of cytosine modification (denoted \u2018x\u2019) provided that they block C-to-U deamination. Whereas in the untreated control, only USER is added to clear up damaged DNAs generated in the previous library prep step. (B) Enrichment of modified DNA with serial dilutions. A total of 250 ng genomic DNA (from Escherichia coli) and cytosine-modified genomic DNA (from T4gt) were used for enzymatic selection or control per assay. Bar graphs show average recovery of DNA from three independent experiments \u00b1 SEM.\n\nEffectively, unmodified DNA is depleted and the remaining material in the \u2018case\u2019 cohort should only comprise DNA containing modified cytosines resistant to APOBEC3A treatment. We hypothesize that many forms of cytosine modification, including those unknown to date, are naturally protected from deamination by APOBEC3A, and should be amenable to enrichment by our selection method. Furthermore, the experimental protocol is designed to only protect fully modified DNA, that is DNA for which cytosines are modified irrespective of sequence contexts. A number of such organisms have previously been found, notably in bacteriophages (Kuo et al., 1968; Revel and Georgopoulos, 1969). We hypothesize that this design would select for DNA-modifying enzymes with little or no sequence specificity.\n\n#### Cytosine-modified DNA is retained after enzymatic selection\n\nTo demonstrate the feasibility of this approach, a mock community consisting of an equimolar amount of genomic DNA from Escherichia coli (containing unmodified cytosine, dC) and T4gT phage (containing 90\u201395% 5hmdC) was sheared, subjected to enzymatic selection and quantitative PCR (qPCR) was performed to quantify the remaining DNA (see Materials and methods). Compared to the original mock community, enzymatic selection resulted in a 0.5% recovery of E. coli DNA and an average 35% recovery of T4gT DNA (Figure 2B). This result shows that DNA containing modified cytosine is about 70-fold enriched compared to unmodified DNA.\n\nTo test the sensitivity and efficiency of this method, we serially diluted modified DNA and unmodified DNA to 1:3, 1:10, 1:100, and 1:1000 molar ratio and carried out the enzymatic selection. Recovery rates were calculated and compared to no-enzyme treatment control. Even at 1:1000 dilution, an average of 48.6% modified DNA was retained relative to no-enzyme control. This result showed the capability of our method to concentrate trace amounts (picogram-level) of modified DNA from a complex sample (Figure 2B).\n\n#### MetaGPA association analyses on complex microbiomes identifies candidate enzymes with DNA modification potential\n\nWe collected environmental samples for the aim of identifying novel enzymes involved in cytosine modification using MetaGPA. To explore the robustness of MetGPA, we included three environmental samples from distinct sources (Figure 3A); of the three samples, two were collected at a sewage treatment plant and the other one was collected from coastal sludge.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/70021/elife-70021-fig3-v2.jpg)\n\n**Figure 3.:** ( A) Overview of the environmental samples and analysis used in this study. Three independent sequencing experiments were performed on three samples, two sewage samples (same sampling location at different times #1 and #2) and one coastal sample (Beverly, MA). Phage DNA was collected and extracted and for the sewage samples, two technical replicates (Rep 1 and 2) were performed. Analyses performed with separate or composite datasets were indicated in below blocks. (B) Normalized frequency of k-mer in sequencing reads from control (x-axis) compared to case (y-axis) groups. Each dot represents a unique 16-mer and is colored according to the resulting contig category it belonged to. The origin of the k-mer sequences were identified by exact search on the contigs or reverse complement of the contigs. K-mers found in the modified contigs were colored in orange; k-mers found in unmodified contigs were colored in blue; k-mers not found in contigs were marked as gray. See C below for definition of modified/unmodified contigs. Subsamples of randomly selected 0.1% of all possible k-mers were used for plotting. (C) Dotplot represents the enrichment scores for each non-redundant contig in the control (left) and case/enzymatic selection (right) cohorts. Dashed line separates modified from unmodified contigs based on a threshold enrichment score equaled to 3 (enrichment score = RPKM(selection) / RPKM(control)). The plot shows every contig from all three environmental samples. (D) Distributions of modified (orange) and unmodified (blue) contigs length (in kilobases, kb).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70021/elife-70021-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Recoveries of various spiked-in DNA measured using quantitative PCR (qPCR) quantification. Genomic DNA from Escherichia coli (dC), XP12 (5mdC), and T4gt (5hmdC) were mixed at 1:1:1 ratio by molarity and a total of 100 ng DNA were spiked in the sequencing libraries from sewage #2. Recovery percentages of control (uracil-specific excision reagent [USER]) and selection (TET2/BGT + APOBEC3A + USER) were normalized to untreated DNA. (B) Correlation between two replicates from sewage samples #1 and #2. Each dot represents a unique k-mer. Scatter plots show normalized k-mer counts in each replicate. Pearson correlation coefficients (r) were calculated for each comparison. (C) Strip plot showing the distribution of enrichment scores for each non-redundant contig larger than 1 kb in sewage #1 (left) sewage #2 (center) and coastal samples (right). Dots represent the enrichment scores of individual non-redundant contigs. Enrichment score \u2265 3 defines modified contigs while enrichment score <3 defines unmodified contigs. (D) Summary tables showing the number of modified and unmodified non-redundant contigs larger than 1 kb in each sample.\n\nWe aim at obtaining the phage-enriched fraction of each microbiome. The rationale for this selection is based on the fact that phages are known to carry a large diversity of modifications (Weigele and Raleigh, 2016) and phages have been shown to fully modify their genomes irrespective of sequencing context, which is a prerequisite for our MetaGPA selection. For this, each sample was precipitated with polyethylene glycol (PEG) followed by DNA extraction using phenol/chloroform (see Materials and methods). Libraries were made in duplicates (except for the coastal sample) using modified adapters to protect them from enzymatic degradation. Libraries were subjected to either enzymatic selection (i.e., case) or no enzymatic selection (i.e., control) prior to amplification (Figure 3A). Additionally, spiked-in genomic DNA mixture of E. coli (dC), XP12 (5mdC), and T4gt (5hmdC) were added to each sample after adapter ligation and before enzymatic treatment. Recovery of spiked-in modified DNAs was detected as expected (Figure 3\u2014figure supplement 1A). Accordingly, we proceeded with Illumina high-throughput sequencing and obtained an average of 60 million paired-end reads per library. Analysis of the read composition reveals consistency of k-mer composition between replicates, demonstrating that our enzymatic selection for modified DNA is reproducible (Figure 3\u2014figure supplement 1B). Reads from both replicates were combined and normalized k-mer frequency plots showed diversity of k-mer composition from different sources/samples, while highlighting a small portion of k-mers that was highly enriched in the selection libraries (Figure 3B).\n\nNext, we apply our newly developed MetaGPA pipeline (Figure 1\u2014figure supplement 1) to identify the domain families that are significantly associated with the case cohort. More specifically, reads from the case (selection) and control datasets from the three environmental samples were assembled into contigs. Contigs that were either too short (less than 1000 bp) or redundant were removed (Materials and methods). Reads were mapped to the contigs and the ratio between the normalized coverage in the case (selection) library (RPKM(case)) and the normalized coverage in the control library (RPKM(control)) defines the enrichment score for each contig (Materials and methods, Figure 3\u2014figure supplement 1C). A high enrichment score suggests that the contig is derived from DNA containing modified cytosine (i.e., modified contig). We define as modified, contigs with an enrichment score equal or above 3. In total, 3901 modified contigs were identified from three DNA samples (Figure 3C and Figure 3\u2014figure supplement 1C-D). Distribution of contigs across all length ranges was equal between modified and unmodified contigs (Figure 3D) and the proportion of modified contigs among sewage and coastal samples were comparable (about 2% in both sewage samples and 3.5% in coastal total contigs) (Figure 3\u2014figure supplement 1D).\n\nAnnotations of protein domain families were performed using profile hidden Markov models of all protein domain families described in the Pfam database (El-Gebali et al., 2019; Materials and methods). Instances of each domain family in the modified and unmodified contigs were calculated and Fisher\u2019s exact test was conducted to reveal domain families that were positively associated with DNA modification. Interestingly, there was a high degree of overlap between top associated domain families among different environmental samples (Figure 4\u2014figure supplement 1A), suggesting that a group of universal protein families for DNA modification may exist regardless of the origin of the microbiome. Given this consistency, we decided to pool the data from three environmental samples together and repeat the association analysis to achieve higher statistical power. Associated domains were subsequently matched to open reading frames (ORFs) in the modified contigs to define candidate genes (Materials and methods). From this composite dataset, we identified 110 Pfam domain families that were significantly associated with modified contigs (Bonferroni-corrected p-value < 0.01) representing a total of 2365 candidate genes. To estimate the false positive rate of association, we used our two control replicate experiments for which no selection has been done. We then performed a MetGPA analysis with one replicate being the control group and the other replicate being the \u2018case\u2019 group. From the 6737 protein domains assessed in MetaGPA, none of the domains were found significantly associated with the case group (data not shown).\n\nThe resulting top associations (Figure 4A and Figure 4\u2014figure supplement 1A, B) contain a number of domain families previously found to be involved in DNA synthesis/modification, validating that this approach can uncover relevant functional domains. For example, a subset of enzymes containing the thymidylate synthase domain (PF00303.20) have been shown to produce hydroxymethylpyrimidines (Neuhard et al., 1980). DNA ligase (PF14743.7, PF01068.22), and cytidine/deoxycytidylate deaminase (PF00383.24) are other domains that have been found in DNA-modifying enzymes (Bhattacharya et al., 1994; Subramanya et al., 1996). In addition, our analysis identified domain families that were not previously known to modify DNA or nucleotides and thus may be novel DNA-modifying enzymes or critical regulators.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/70021/elife-70021-fig4-v2.jpg)\n\n**Figure 4.:** (A) Identification of associated Pfam protein domains. Left, lists of domains ranked by p-values. Middle and right panels represent the normalized counts of each domain for modified or unmodified contigs, respectively. The top 20 domains significantly associated with modified contigs were colored in orange and the four domains significantly associated with unmodified contigs were colored in blue (Bonferroni-corrected p-value < 0.01). Data were normalized to total counts in each category (sums of all domain counts in modified or unmodified contigs), respectively. Domains occurring multiple times on the same contigs were counted only once. (B) Phylogenetic tree of carbamoyltransferase C-terminus domain. Orange and blue dots represent modified and unmodified contigs, respectively. Gray bars in the outer ring represent the enrichment scores of each contig with dashed lines showing the scales. Most of the carbamoyltransferase C-terminus domains from modified contigs form a distinctive phylogenetic branch. (C) Pfam neighborhood association for carbamoyltransferase C-terminus. Carbamoyltransferase C-terminus is centered in the middle and neighboring Pfams spanning 3 kb upstream and downstream are displayed as solid squares. Colored squares mark the top five Pfams co-occurred with carbamoyltransferase C-terminus in modified contigs. Predicted open reading frames (ORFs) on each contig are marked as hollow squares. Asterisk marks the contig containing the enzyme expressed and purified in Figure 6. (D) Correlation networks between the top 20 associated Pfams with modified contigs. Each node represents a Pfam. The thickness and length of edges were based on the p-values between each two nodes with thick and short edges corresponding to more significant relationships (small p-values). Only positive correlations with p-values < 0.05 are shown. The three interaction cores are circled in red.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70021/elife-70021-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Top Pfam domains significantly associated with modified contigs (Bonferroni-corrected p-value < 0.01) in each environment samples (two sewage and one coastal communities). Domains found significantly associated with modified contigs in at least two experiments were marked in red, blue denotes Pfam domains found significantly associated with modified contigs only in a single experiment. (B) p-Value ranking of all Pfam domains in the composite dataset. (C) Phylogenetic tree of carbamoyltransferase N-terminus. Orange and blue dots represent modified and unmodified contigs accordingly. Gray bars in the outer ring represent the enrichment scores of each contig with dashed lines showing the scales. Most of the carbamoyltransferase N-terminus domains from modified contigs form a distinctive phylogenetic branch.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70021/elife-70021-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Genomic contexts of (A) carbamoyltransferase N-terminus, (B) thymidylate synthase, and (C) phosphoribosyl-ATP pyrophosphohydrolase (PRA-PH) reveal commonly co-occurring Pfam domains in modified contigs. Neighboring Pfam domains spanning 3 kb upstream and downstream of the Pfam domain are displayed as solid lines. Top five co-occurring domains in modified contigs are colored and labeled. These co-occurring domains in modified contigs are, for the most part, absent in the unmodified contigs.\n\nTo refine the candidate genes, we conducted phylogenetic analysis for each domain family significantly associated with modified contigs. Toward this end, all instances of a particular domain were aligned using a maximum likelihood model and the resulting phylogenetic tree was overlaid with the origin status of the contig (modified/unmodified). Particularly, several domains, including carbamoyltransferase N-terminus (PF02543.16) and C-terminus (PF16861.6) domains, exhibited a clustered pattern in which most of the sequences from modified contigs formed a distinct phylogenetic clade from the other sequences (Figure 4B and Figure 4\u2014figure supplement 1C). These clades that are almost exclusively derived from modified contigs restating the association of the domain-of-interest with a potential differentiated phenotype of modification. Moreover, this analysis can serve as evidence for refined functional annotation and may suggest a subfamily with specific functions.\n\nComplex DNA modifications in bacteriophages are usually carried out by multiple enzymes whose genes tend to cluster on the genome (Iyer et al., 2013). We therefore extended the analysis to study co-occurrences on the same contigs of domain families associated with modification (Figure 4C and Figure 4\u2014figure supplement 2A-C). We found that, for example, the domains most frequently co-occurring with carbamoyltransferase C-terminus (PF16861.6) were carbamoyltransferase N-terminus (PF02543.16), thymidylate synthase (PF00303.20), phosphoribosyl-ATP pyrophosphohydrolase (PF01503.18), dCMP deaminase Zn-binding region (PF00383.24), and MafB19-like deaminase (PF14437.7) (Figure 4C). Congruously, domains belonging to the thymidylate synthase family also co-occurred with carbamoyltransferase N-terminus, phosphoribosyl-ATP pyrophosphohydrolase, dCMP deaminase Zn-binding region, and MafB19-like deaminase domains. Importantly, we found that these co-occurrences are often specific to modified contigs (Figure 4C and Figure 4\u2014figure supplement 2A-C). For example, the co-occurence of carbamoyltransferase and thymidylate synthase domains is only found in modified contigs (Figure 4C). In unmodified contigs, carbamoyltransferase domains were flanked by genes with unrelated functions such as genes encoding for glycosyl transferases group 1 or tRNA N6-adenosine threonylcarbamoyltransferase domains.\n\nTogether, these results suggested a multi-domain network related to DNA modification. Unbiased co-occurrence analysis was therefore conducted for the top 20 associated domain families. Indeed, significant positive correlations were observed, and the results demonstrated three interaction cores centered on thymidylate synthases, DNA ligases, and carbamoyltransferases, respectively (Figure 4D).\n\n#### Differential conservation of amino acids reveals key residues associated with DNA modification\n\nHaving demonstrated that MetaGPA can be successfully deployed to identify protein domains associated with a given phenotype, we next considered whether MetaGPA go as far as identifying associations at residue resolution. To identify such associations, we designed a \u2018differential\u2019 conservation score based on existing metrics (Valdar, 2002; Karlin and Brocchieri, 1996) that reflects the degree of association of individual residue with DNA modification (Materials and methods). This score ranks high the residues that show distinct conservation patterns whether they are derived from modified or unmodified DNA. Conversely, weakly conserved residues or residues conserved invariably between modified and unmodified DNA are ranked low.\n\nWe used the thymidylate synthase domain alignments to benchmark the differential conservation score. This well-characterized family of proteins involved in nucleotide biosynthesis is also ranked by MetaGPA as the most significantly associated with DNA modification (Figure 4A). The substrate specificity of thymidylate synthases is dictated by the residue at the position 177 (numbering relative to the E. coli thymidylate synthase sequence). Previous studies have demonstrated that changing this residue from asparagine (Asn) to aspartate (Asp) can switch the preference of a canonical thymidylate synthase from dUMP to dCMP resulting in the formation of 5mdCMP (Graves et al., 1992; Hardy and Nalivaika, 1992; Liu and Santi, 1992). We therefore hypothesized that position Asn177 should have a high differential conservation score with Asn found conserved in the unmodified contigs and Asp found in modified contigs.\n\nTo confirm our hypothesis, we aligned the 433 thymidylate synthase protein sequences identified in our composite dataset with the canonical E. coli thymidylate synthase which has been structurally and biochemically characterized (Stout et al., 1998). Our differential conservation score identifies position 177 and position 147 (relative to E. coli thymidylate synthase) as the top two positions (Figure 5A). Both residues are within the enzyme\u2019s active site (Figure 5C; Stout et al., 1998). As expected, residues at positions 177 are mostly Asn for thymidylate synthase protein in the unmodified contigs suggesting that dUMP is the substrate for these enzymes. Conversely, thymidylate synthase proteins in the modified contigs have mostly Asp position 177 consistent with modified cytosines (Figure 5B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/70021/elife-70021-fig5-v2.jpg)\n\n**Figure 5.:** (A) Differential conservation score for each position in the thymidylate synthase alignment. Positions are relative to the Escherichia coli thymidylate synthase. (B) Multiple sequence alignment of 25 and 24 randomly selected thymidylate synthase sequences from the modified and unmodified contigs respectively together with the E. coli thymidylate synthase. Aligned residues at positions 147 and 177 (relative to E. coli thymidylate synthase) are colored according to the physicochemical properties of the amino acids. (C) Structure of the active site of E. coli thymidylate synthase (PDB 1BID) highlighting the H147 and N177 residues and the dUMP substrate.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70021/elife-70021-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Differential conservation score plotted against residue positions of the O-carbamoyltransferase TobZ. (B) Multiple sequence alignment of 19 and 35 carbamoyltransferases from the modified and unmodified contigs respectively together with Tobz. Only part of the carbamoyltransferase C-terminus domain containing key residues are shown. TobZ residues W408, G421, and R423 have been substituted for the most part with L, C, and T in carbamoyltransferases found in modified contigs. These key residues are colored according to the type of amino acid. (C) Structure of TobZ (PDB 3VET) highlighting M408, G421, and R423. Distance between R423 and carbamoyl phosphate (CP) is indicated in the picture (unit = \u00c5).\n\nThe H147 forms a hydrogen bonding network through a water molecule to the keto oxygen of position 4 in dUMP (Matthews et al., 1990), suggesting a role in substrate specificity. Alternatively, H147 is part of a H-bond network with Y94, a key residue important for proton abstraction at C5. Therefore, residue occupancy at position 147 may accommodate differences between the pKa of C5 between cytosine and uracil substrates (Hong et al., 2007). Taken together, our differential conservation score identified functionally critical residues for thymidylate synthase activity and substrate specificity.\n\nWe then performed the same analysis with the top 20 associated Pfam domains from our list (Figure 4A). Among them, carbamoyltransferase sequences were aligned with the O-carbamoyltransferase family member TobZ that has been structurally and functionally characterized (Parthier et al., 2012). Our analysis identified three residues (W408, G421, and R423) with the highest differential conservation scores (Figure 5\u2014figure supplement 1A-B). All three residues are located within 14 \u00c5 to the carbamoyl phosphate and ADP-binding pocket and may be important in defining the enzyme\u2019s specificity toward cytosine derivatives (Figure 5\u2014figure supplement 1C).\n\nAltogether, these results indicate that MetaGPA is able to associate a single residue within a protein to the studied phenotype.\n\n### Characterization of a novel-modifying enzyme \u2013 5-hydroxymethylcytosine carbamoyltransferase\n\nAmong the 110 domains that are significantly associated with DNA modifications, carbamoyltransferase domains are ranking within the top 20 most significant domains in our MetaGPA study (Figure 4A) and are exhibiting all three of our refinement metrics. Carbamoyltransferases are part of a large protein family catalyzing the addition of a carbamoyl group to various substrates but so far none of them has been shown to act on any form of cytosine, potentially revealing a new function and a new cytosine modification. We therefore sought to further explore these enzymes for their ability to modify cytosine.\n\nThe co-occurrence of carbamoyltransferase and thymidylate synthase homologs specifically in modified contigs (Figure 4C) resembles the arrangement of the T4 phages for which genes coding for the dCMP hydroxymethylase and \u03b2-glucosyltransferase co-occur on the genome (Miller et al., 2003). The T4 dCMP hydroxymethylase is homologous to thymidylate synthase and transfers a carbon from methyltetrahydrofolate (mTHF) to C5 of the pyrimidine ring producing an exocyclic methylene in the active site of the enzyme (Graves et al., 1992). However, unlike thymidylate synthase, the methylene intermediate undergoes nucleophilic attack by water producing a hydroxymethyl group. Following incorporation of 5hmC into DNA during replication, T4 \u03b2-glucosyltransferase transfers a glucose to the hydroxyl moiety of 5hmC. Thus, the pairing of a carbamoyltransferase with dCMP hydroxymethylase led us to hypothesize a novel form of DNA modification, in which the carbamoyltransferase catalyzes the transfer of a carbamoyl group to the nucleophilic hydroxyl acceptor group of 5hmdC producing 5cmdC (Figure 6A).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/70021/elife-70021-fig6-v2.jpg)\n\n**Figure 6.:** (A) Predicted reactions. 1, carbamoylphosphate; 2, carbamoyladenylate intermediate; 3, 5-hydroxymethylcytidine; 4, 5-carbamoyloxymethylcytidine. (B) Liquid chromatography-mass spectrometry (LC-MS) trace and quantification for enzymatic reaction with a single-stranded DNA oligo containing an internal 5-hydroxymethyl-2'-deoxycytidine (5hmdC). Bar graph represents average conversion rates \u00b1 SEM from three independent experiments using three different DNA oligos. ND, not detected. (C) LC-MS trace and quantification for enzymatic reaction with 5-hydroxymethyl-2\u2019-deoxycytidine triphosphate (5hmdCTP) . Bar graph shows average conversion rates \u00b1 SEM from three independent experiments. (D) Enzyme preference on NCN sequences. Genomic DNA from lambda (dC), XP12 (5mdC), and T4gt (5hmdC) were mixed at 1:1:1 ratio by molarity before being subjected to enzymatic selection. Modified ratio of each C in NCN motifs (with N being A, T, C, or G) was normalized to the no-enzyme control. (E) LC-MS quantification for enzymatic reaction with a single-stranded RNA oligo containing an internal 5hmC. Bar graph shows average conversion rates \u00b1 SEM from three independent experiments. (F) Quantification for enzymatic reaction with 5-hydroxymethylcytidine triphosphate (5hmCTP). Bar graph shows average conversion rates \u00b1 SEM from three independent experiments. Oligonucleotides and nucleoside triphosphate were converted to nucleosides before LC-MS analysis. A dG spike was added as internal reference for quantification of nucleoside triphosphates.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70021/elife-70021-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Native gene content of the cloned carbamoyltransferase locus. (B) SDS-PAGE gel showing purification of the carbamoyltransferase after two column purifications. Left, after HisTrap column purification; right, after HisTrap and Q column purification. (C) Characterization of enzymatic reaction by liquid chromatography-mass spectrometry (LC-MS). The arrow indicates the product peak 5-carbamoyloxymethylcytosine (5cmdC). (D) Quantification of enzymatic reactions from (C). T4gt genomic DNA was used as a source of 5-hydroxymethyl-2'-deoxycytidine (5hmdC) DNA. Bar graph represents average conversion rates \u00b1 SEM from three independent experiments (ND, not detected).\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70021/elife-70021-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) +ESI MS/MS fragmentation spectra of 5-hydroxymethyl-2'-deoxycytidine (5hmdC). (B) +ESI MS/MS fragmentation spectra of 5-carbamoyloxymethylcytosine (5cmdC).\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/70021/elife-70021-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** (A) Substrate selectivity. Enzymatic assays were performed with the following nucleoside triphosphates: 5-hydroxymethyl-2\u2019-deoxycytidine triphosphate (5hmdCTP), 5-hydroxymethyl-2\u2019-deoxyuridine triphosphate (5hmdUTP), 5-methyl-2\u2019-deoxycytidine triphosphate (5mdCTP), and 5-hydroxymethylcytidine triphosphate (5hmCTP). Carbamoylation was observed with 5hmdCTP and 5hmCTP (arrows). (B) Liquid chromatography-mass spectrometry (LC-MS) trace for enzymatic reaction with a single-stranded RNA containing an internal 5hmC. (C) +ESI MS/MS fragmentation spectra of 5hmC (top panel) and 5cmC (bottom panel). Oligonucleotides and nucleoside triphosphate were converted to nucleosides before LC-MS analysis. A dG spike was added as internal reference for quantification of nucleoside triphosphates.\n\nOur composite dataset contains 62 genes annotated as carbamoyltransferase for which 17 are found in the modified contigs. We selected a carbamoyltransferase candidate gene from a modified contig originally sequenced in sewage #2 sample containing both the thymidylate synthase and the carbamoyltransferase genes (Figure 6\u2014figure supplement 1A). The ORF was cloned into pET28b vector, and the 63 kDa protein product was expressed in E. coli and purified (Figure 6\u2014figure supplement 1B, Materials and Methods). The predicted reaction was tested by enzymatic assays and results showed that every substrate, namely carbamoyl phosphate, ATP, 5hmdC (genomic T4gt DNA was used as substrate in these experiments), and the enzyme were indispensable for the reaction (Figure 6\u2014figure supplement 1C,D). The choice of carbamoyl phosphate and ATP substrates were guided by the enzymatic characterization of TobZ previously published (Parthier et al., 2012). The expected product was detected by liquid chromatography-mass spectrometry (LC-MS) and confirmed with corresponding fragmentation patterns (Figure 6\u2014figure supplement 2A, B). Nearly 70% of 5hmdC were converted into 5cmdC in the denatured single-stranded T4gt genomic DNA. Interestingly, the activity of our carbamoyltransferase was several fold lower on double-stranded DNA, suggesting the preference of this enzyme for single-stranded DNA (Figure 6\u2014figure supplement 1C). When using synthesized single-stranded DNA oligo containing a single internal 5hmdC site as substrate, the conversion rate was nearly 100% (Figure 6B). We also tested if the carbamoyltransferase could react with free deoxynucleoside triphosphate. LC-MS results demonstrated about 60% conversion of 5-hydroxymethyl-2\u2019-deoxycytidine triphosphate (5hmdCTP) (Figure 6C). As expected, no activity was seen for 5-methyl-2\u2019-deoxycytidine triphosphate (5mdCTP) or 5-hydroxymethyl-2\u2019-deoxyuridine triphosphate (5hmdUTP), indicating the carbamoyltransferase is specific to 5hmdCTP. The fact that the carbamoyltransferase is active on 5hmdCTP (Figure 6C and Figure 6\u2014figure supplement 3A) opens up the possibility that the reaction could take place before the nucleotide is incorporated into the phage DNA.\n\nTo examine if the carbamoyltransferase favors certain DNA sequences, we performed the enzymatic assay on a mixed genomic DNA library containing lambda (dC), XP12 (5mdC), and T4gt (5hmdC). Both untreated (control) and treated libraries were subjected to APOBEC3A deamination (see Materials and methods). Carbamoylation protects cytosine derivatives from deamination by APOBEC and thus, the difference in deamination rate between control and treated libraries is indicative of carbamoylation. We saw a decrease in deamination rate only in the T4gt genome indicating specific carbamoylation on 5hmdC. This result further validates the LC-MS results regarding the specificity of the enzyme (Figure 6D). Furthermore, all combinations of NCN motifs containing 5hmdC displayed comparable deamination levels compared to the control library, suggesting a general binding mechanism with no preferred context. This result was also consistent with enzymatic assays performed on free nucleotides, which further suggests that the in vivo carbamoylation reaction may take place prior to DNA replication.\n\nBased on our finding that the carbamoyltransferase prefers single-stranded DNA, we further investigated whether RNA containing 5-hydroxymethylcytosine can be modified by the enzyme. LC-MS and fragmentation pattern confirmed that 5cmC is formed during the reaction, albeit at much lower yields (Figure 6E and Figure 6\u2014figure supplement 3B-C). Carbamoylation of free nucleotide 5-hydroxymethylcytidine triphosphate (5hmCTP) was also detected (Figure 6F and Figure 6\u2014figure supplement 3A). We thus concluded that this novel nucleic acid-modifying enzyme identified from MetaGPA studies acts on DNA, RNA, and nucleotide triphosphates.\n\n## Discussion\n\nIn this work, we report a novel analytic framework called MetaGPA that links functional phenotype with genetic information in metagenomes. Being cost effective and requiring reduced efforts, MetaGPA essentially rests on two sequencing libraries derived from the same starting material: one library reflects all the organisms in the community while the other library results from a selection to only contain organisms with a phenotype of interest. This experimental setup allows for candidate genes identification in less than a week.\n\nOur MetaGPA study framework is phenotype-driven and the identification of candidate genes is agnostic to prior annotations. Theoretically, it can be performed with any case/control cohort pair as long as distinct phenotypes can be partitioned through selection of the case cohort. For example, these phenotypes may include but are not limited to DNA modifications, phage sensitivity to chemicals, and cell surface determinants such as O-antigen. Nonetheless, this partitioning is crucial for MetaGPA to succeed and therefore requires the development and optimization of the selection process for every new MetGPA application.\n\nWe used this approach to screen environmental phage metagenomes and successfully identified 110 domains representing 2365 candidate proteins, mostly enzymes that are significantly associated with DNA modifications. From these candidates, we validated a novel DNA/RNA-modifying enzyme responsible for the previously unknown 5cmdC/5cmC modification. To our knowledge, the only reported carbamoylated nucleotide is the 5-carbamoylmethyluridine, which is located in the first position of the anticodon of yeast valine tRNA34 (Yamamoto et al., 1985). Importantly, we predicted, at single residue resolution, the key positions in the enzyme associated with this DNA modification, enabling candidate prioritization and protein engineering.\n\nGiven the co-occurrence on the same contig of phage-specific genes (such as phage tail genes) with the 5-hydroxymethylcytosine carbamoyltransferase gene characterized in this study, the 5cmdC modification is most likely found in a bacteriophage. Because of the nature of the MetaGPA selection and the fact that the carbamoyltransferase show no sequence specificity, we predict that all the cytosines in this phage are modified, possibly conferring the ability to escape most of the restriction digestion system found in bacteria. This evolutionary advantage may explain the prevalence of this enzyme family in the phage fraction of all the microbiomes investigated in this study.\n\nIn these MetaGPA experiments, the sequencing libraries can be directly used as material for selection because the phenotype of interest (cytosine modification) is covalently attached to the genetic material. As such, scenarios for which the phenotype is covalently attached to the genetic material are the most straightforward applications of MetaGPA. However, for other scenarios for which phenotypes are not physically coupled with DNA or RNA, selection will have to be done while preserving the integrity of cells and viral particles to retain the link between phenotype and genotype. Thus, the limited availability of adequate selection processes that preserve such links may restrict the broader applicability of MetaGPA. While some selections can easily be adapted to MetaGPA, others may turn out to be difficult to implement.\n\nFor those applications for which a selection can be implemented, MetaGPA provides notable benefit for de novo exploratory discoveries especially with largely unknown microbial communities such as the virulome where existing knowledge is limited.\n\n### Data access\n\nAll raw and processed sequencing data generated in this study have been submitted to the NCBI Sequence Read Archive (SRA; https://www.ncbi.nlm.nih.gov/sra) under accession number PRJNA714147.\n\n## Materials and methods\n\n### Genomic DNA\n\nThe E. coli K-12 MG1655, XP12, and T4gt genomic DNA used in this study were obtained from NEB.\n\n### Environmental phage collection\n\nFor each batch, 2\u20134 L of sewage or coastal seawater were used for phage collection. Large debris and bacterial cells were pelleted and removed by centrifuging at 5000\u00d7 g for 30 min at 4\u00b0C. Phage particles in the supernatant were precipitated by adding PEG8000 to 10% (w/v) and NaCl to 1 M and let stand at 4\u00b0C overnight. Aggregates of phage particles were pelleted at 10,000\u00d7 g for 30 min at 4\u00b0C, washed with 1 mL solution containing 10 % PEG8000 and 1 M NaCl, and resuspended in 2\u20134 mL of phage dilution buffer (10 mM Tris-HCl at pH 8.0, 10 mM MgCl2, 75 mM NaCl). The crude phage particle suspension was stored at 4\u00b0C for subsequent phenol-chloroform DNA extraction.\n\n### Phenol-chloroform DNA extraction\n\nTwo to four milliliters of crude phage suspension was divided in 400 \u03bcL aliquots. For each aliquot, phage particles were lysed at 56\u00b0C for 2 hr in 550 \u03bcL of lysis buffer (100 mM Tris-HCl at pH 8.0, 27.3 mM EDTA, 2% SDS, ~1.6 U Proteinase K [NEB #P8107]). After lysis, RNase A was added to 10 \u03bcg/mL and the reaction was incubated at 37\u00b0C for 30 min; 1\u00d7 volume (~550 \u03bcL) of phenol-chloroform (Tris-HCl buffered at pH 8.0) was mixed with the lysis solution and vortexed vigorously for ~1 min, and centrifuged at 10,000\u00d7 g for 5 min for phase separation. The top aqueous layer (~500 \u03bcL) was collected and mixed with 1\u00d7 volume (~500 \u03bcL) of chloroform, vortex vigorously, and centrifuged for phase separation. The top aqueous layer (~450 \u03bcL) was collected; 1\u00d7 volume of isopropanol was slowly added on top of the aqueous solution. Phage DNA was \u2018spooled\u2019 with a glass capillary by swirling and mixing isopropanol with the aqueous solution. The spooled DNA was washed in 70% ethanol, dried at room temperature for ~30 min, and dissolved in ~600\u2013800 \u03bcL of TE buffer (10 mM Tris pH 7.5, 1 mM EDTA).\n\nThe phage DNA solution was further purified by ethanol precipitation. Briefly, DNA was precipitated by adding 0.1\u00d7 volume of 3 M sodium acetate and 2.5\u00d7 volume of 100% ethanol and incubated at \u221220\u00b0C overnight. Precipitated DNA was pelleted at 16,000\u00d7 g for 20 min, washed twice with 1 mL of 70% ethanol, dried at room temperature, and finally dissolved in 200 \u03bcL of TE buffer for storage at \u221220\u00b0C. On average more than 20 \u03bcg of DNA was extracted in each batch.\n\n### Illumina library preparation\n\nFor each environmental sample, 1 \u03bcg of metagenomic DNA was sheared to 300 bp in 130 \u03bcL of TE buffer (10 mM Tris pH 7.5, 1 mM EDTA) using Covaris S2 Focused Ultrasonicator; 1.3 \u03bcL of 10 mg/mL RNase A (Qiagen #1007885) was added and incubated at 37\u00b0C for 30 min to remove RNA. To remove EDTA, the sheared DNA was purified with Zymo Oligo Clean & Concentrator Kit (#D4061) and eluted in 50 \u03bcL of 1 mM Tris buffer (pH 7.5).\n\nOne reaction of NEBNext Ultra II DNA Library Prep Kit for Illumina (NEB #E7645) was used for 1 \u03bcg of input DNA, with the following modifications to the standard protocol: 5mdC Y-shaped Illumina adaptors were used to protect the adaptor from subsequent enzymatic treatment. The dCTP was replaced with 5mdCTP in the end repair reaction (5mdCTP was used instead of regular dCTP to protect end-repaired fragments from subsequent enzymatic treatment).\n\nThe DNA library was purified with 1\u00d7 volume of NEBNext Sample Purification Beads (NEB #E7103) and eluted with 40 \u03bcL of 1 mM Tris buffer (pH 7.5).\n\nFor each of the two sewage DNA samples, experiments were performed in duplicate. Each one contained two pairs of replicate libraries subjected to enzymatic selection or control, respectively. The coastal sample generated only one pair: one library for enzymatic selection and one for control.\n\n### Enzymatic selection protocol\n\nFirst to test the recovery of modified DNA with enzymatic selection, mixed genomic DNA (E. coli and T4gt) were prepared at various dilutions. A total of 250 ng mixed DNA was used per reaction; 1 \u00b5L TET2 (NEB #7120S) and 1 \u00b5L T4-BGT (NEB #M0357S) were added to the 50 \u00b5L reaction mixture containing 1\u00d7 TET2 reaction buffer, 40 \u00b5M UDP-glucose, and 40 \u00b5M iron(II) sulfate hexahydrate. After 60 min incubation at 37\u00b0C, proteinase K was added at 0.4 mg/mL to inactivate the enzymes. Products were purified with Zymo Oligo Clean & Concentrator kit (#D4061) and eluted in 16 \u00b5L water. To denature double-stranded DNA, 4 \u00b5L formamide (Sigma #11814320001) was added. The 20 \u00b5L mixture was then incubated at 95\u00b0C for 10 min and immediately transferred to an ice bath. One \u00b5L APOBEC3A (NEB #E7120S) was added directly to the reaction with 10 \u00b5L of 10\u00d7 APOBEC3A reaction buffer and 1 \u00b5L BSA (10 mg/mL). The reaction volume was brought up to 100 \u00b5L with water. APOBEC3A-mediated deamination was conducted at 37\u00b0C for 3 hr. Purification was performed using Zymo Oligo Clean & Concentrator kit and elution with 43 \u00b5L of water. In the final step, the reaction was incubated with 2 \u00b5L of USER (NEB #5508) in 1\u00d7 CutSmart Buffer at 37\u00b0C for 15 min before final purification with Zymo Oligo Clean & Concentrator kit. Purified samples were then used for qPCR in the next step.\n\nFor each prepared phage library sample, 100 ng spiked-in genomic DNA mixture (E. coli:XP12:T4gt = 1:1:1 by molarity) were added to the library before being subjected to enzymatic selection protocol described above. The final library was eluted in 50 \u03bcL of 1 mM Tris buffer (pH 7.5).\n\n### Quantitative PCR\n\nThe qPCR reactions were performed with enzymatic selection or control samples using Luna Universal qPCR Master Mix (NEB #M3003S) on a Bio-Rad CFX96 real-time PCR detection system. Two \u00b5L of purified DNA (diluted 100-folds) were added per reaction. Primers used in the experiments were the following: E. coli F: 5\u2019-TTGCTGAGTTTCACGCTTGC, E. coli R: 5\u2019-AAAACCGCTTGTGGATTGCC, T4gt F: 5\u2019-TCGCGAAACGGTTTTCCAAG, T4gt R: 5\u2019-AAAGCGCTTGACCCAACAAC, XP12 F: 5\u2019-TGCGATGTTGGATTCGTTGG, and XP12 R: 5\u2019-ACAACCCGCCATAATGGAAC. Recovery was normalized to control using the delta-delta Ct method.\n\n### Illumina sequencing\n\nLibraries were indexed (with NEBNext Multiplex Oligos for Illumina E7335), amplified using NEBNext Ultra II Q5 Master Mix (six cycles for control library and 12 cycles for selection library) and pooled for sequencing on an Illumina Nextseq instrument with paired end reads of 75 bp.\n\n#### Reads trimming and k-mer analysis\n\nPaired-end reads were downloaded as FASTQ files and trimmed with Trim Galore v0.6.4 (https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/) using the --paired option. k-mer counting from reads was done with JELLYFISH v2.2.10 (Mar\u00e7ais and Kingsford, 2011) and 16-mer was chosen based on best resolution.\n\n#### Computational workflow\n\nThe complete workflow contains the core MetaPGA pipeline and additional association analyses. The main steps included in the core pipeline are the following: first, trimmed reads are processed and mapped to contigs generated by de novo assembly. Annotation of protein domains/Pfams on each assembled contigs was also done at this step. Second, using the normalized mapped reads, the enrichment scores for every assembled contigs were calculated and modified contigs were selected based on the chosen threshold. Then, we applied statistical analysis to every protein domain/Pfam to determine if it is significantly associated with the modification phenotype. Hence, a list of candidate protein domains associated with the modification are generated. Last, MetaGPA provides three different types of association analysis (phylogenetic clustering analysis, residue differential conservation analysis, and multi-domain co-occurrence network analysis) to further guide if a custom chosen protein domain is a good candidate. Detailed methodology for each step is provided below. The scripts and detailed documentation of the pipeline are available at https://github.com/linyc74/MetaGPA, (Lin, 2021, copy archived at swh:1:rev:28c23f47fcf108b0e7b8851b92f37921358c8e8e).\n\n### Sequencing data processing\n\nDe novo assembly of contigs for each sample was performed with SPAdes v3.13.0 (Nurk et al., 2017) with the --meta option. We selectively reported contigs longer or equal to 1000 bp. To remove redundant contigs between case and control samples, we used CD-HIT v4.8.1 (Fu et al., 2012) nucleotide mode cd-hit-est with sequence identity threshold set to 0.95 (sequences with more than 95% similarity are considered redundant). We set this threshold due to the fact that many microorganism genomes are related. Other options used were -n 10 -d 0 M 0 T 4. The remaining non-redundant contigs were annotated with HMM-based Pfam entries (Pfam-A) using HMMER v3.3 (http://hmmer.org/). Alignment of reads onto contigs was done with BOWTIE2 v2.3.5.1 (Langmead and Salzberg, 2012) together with SAMTOOLS v1.9 (Li et al., 2009) to generate, sort, and index bam files for later analysis. ORFs on each contig were predicted with GLIMMER 3.02 (Delcher et al., 2007). We used the long-ORFs program with options --cutoff 1.15 and --linear to identify long ORFs that are very likely to contain genes. Other options used in glimmer3 program were --max_olap 100, --gene_len 110, and --threshold 30.\n\n### Contig enrichment score calculation\n\nThe enrichment score for each contig was calculated using the normalized mapped reads (reads per kb per million, RPKM) from selection and control as follows: enrichment score = RPKM(selection) / RPKM(control). The mapped reads counts were generated with Multicov using BEDTOOLS v2.29.2 (Quinlan and Hall, 2010). Contigs with higher enrichment score represent more mapped reads in case library relative to control library, therefore, are more likely to be associated with modification. We considered contigs with an enrichment score greater or equal to three to be modified and the rest unmodified. The calculation was done individually for three independent experiments.\n\n### Fisher\u2019s exact test and correction to determine associated Pfams\n\nThe information including the number and type of Pfams on each contig was obtained with hmmsearch in the annotation step. We then separately counted the numbers of modified and unmodified contigs containing each type of Pfam. To avoid redundant counting, Pfams occurred multiple times on the same contig were counted only once. Fisher\u2019s exact test was performed for each Pfam to identify if the count difference between the modified and unmodified contig group is significant. Because large-scale multiple testing was conducted for each Pfam, we did the Bonferroni correction to adjust the p-value. Both tests were performed in python with SciPy or Statsmodels modules.\n\n### Phylogenetic analysis\n\nFor each Pfam of interest, the protein sequences from contigs containing the Pfam were aligned with MUSCLE v3.8.1551 (Edgar, 2004). The resulting aligned fasta files were subjected to construct phylogenetic trees using the maximum likelihood method in the phylogenetic analysis program RAxML v8.2.12 (Stamatakis, 2014). We chose the -f a option to do rapid bootstrap analysis and the -m PROTGAMMAAUTO model to automatically determine the best protein substitution model to be used for the dataset. The parsimony trees were built with random seeds 1237. The online tool iTOL (https://itol.embl.de/) was used to visualize trees.\n\n### Co-occurrence network analysis\n\nThe presence-absence matrix with rows being the Pfams and columns being the contigs was generated with annotation output file from the previous step. We specifically performed co-occurrence analysis in the R package co-ocur v1.3 (Griffith et al., 2016) for the top 20 Pfams associated with modified contigs. Significant positive correlations (p-value < 0.05) were exported and the network was visualized in Cytoscape v3.8.0 (Shannon et al., 2003) with prefuse force directed layout.\n\n### Differential conservation score\n\nProtein sequences were assigned to two groups according to whether they were encoded on modified or unmodified DNA. After multiple sequence alignment, positions that have less than 50% residues present were ignored. Differential conservation score was calculated at each aligned position. For each position in the alignment, intra-group similarity scores were calculated by the average of all possible \u2018within-group\u2019 pairwise similarities, while the inter-group similarity score was calculated from all possible \u2018across-group\u2019 pairwise similarities using the BLOSUM80 matrix. For a given multiple sequence alignment column, let $N_{1}$ and $N_{2}$ be the number of residues for the modified and unmodified groups, respectively, the two intra-group similarity scores (Imodified and Iunmodified) were defined as:\n\n$$\nI_{modified}=\\sum_{i=1}^{N_{1}}\\sum_{j\u00a7amp;gt;i}^{N_{1}}Ma_{i},a_{j}\\times\\frac{2}{N_{1}(N_{1}-1)}\n$$\n\n\n\n$$\nI_{unmodified}=\\sum_{i=1}^{N_{2}}\\sum_{j\u00a7amp;gt;i}^{N_{2}}Ma_{i},a_{j}\\times\\frac{2}{N_{2}(N_{2}-1)}\n$$\n\nwhere $Ma_{i},a_{j}$ is the value of amino acid pair $a_{i}$ and $a_{j}$ in the BLOSUM80 matrix. The inter-group similarity score (J) was defined as:\n\n$$\nJ=\\sum_{i=1}^{N_{1}}\\sum_{j=1}^{N_{2}}Ma_{i},a_{j}\\times\\frac{1}{N_{1}N_{2}}\n$$\n\nThe differential conservation score (S) was defined as the average of two intra-group similarity scores subtracted by the inter-group similarity score.\n\n$$\nS=\\frac{I_{modified}_{}+I_{unmodified}}{2}-J\n$$\n\n### Expression and purification of carbamoyltransferase\n\nThe following carbamoyltransferase sequence : MSDLLLTLGHNASAIAISVGDDGAAKVENAYELERLTGKKSDSAFPIDAIIALKERGMDKIDRVYVSHWSPTGRVDDLKAKYWDRSIFPPHVPVITQESMNLTHHDCHAQAAMAFAGSSFPTKDTGVLVVDGFGNLAEHLSYYRVQAGGQLHLMRRWYGYGTSLGLMYQYATSFLGLKMHEDEYKLLGYGARVATIGCDMDVLNQRIFTEAQAFLKRFRSLNSFEMSPDLAGLPAVQEKWAERFAAILDDVGFKGSSSTYEARCIVGYAVQQLLEIVIRNLFMADLPKPTNLIVTGGVAFNVELNRMLLGLIPGKLCVMPLAGDQGNALGLWAFSNRRAKLDFGDLCWGRREMTLGEPGPDTPLPDGMIVVEHDTPAVYEAIAEQLKTVGFINIVRGNMEFGPRALCNTTTLARADDRAVVEEINRINGRDTVMPFAPVVSAHEWLRYFPDASRLHRSAEFMICAVQYAPGLGEQVPGAALRTVKGLYTGRPQVYSSKYEWDSVTRILDDYGLLINTSFNVHGVPICLDLKHVVHSHQFQRERNPNVRTIVIAN* was extracted from de novo assembled contigs. The expression plasmid was synthesized from GenScript. Two 6\u00d7 His-tags were co-expressed at both the N-terminus and the C-terminus of the recombinant protein using T7 Express Competent E. coli (NEB #C2566). Cells were cultured in LB media until an OD600 of 0.6 was reached and induced with 0.4 mM IPTG (Growcells #MESP-2002) for protein expression. One \u00b5M iron(II) was also added to facilitate protein folding. The induced cultures were maintained at 16\u00b0C in a shaker at 200 rpm for 23 hr. Cells were harvested by spinning down cell pellets at 3500 rpm at 4\u00b0C for 30 min. Cell pellets from 4 L culture were resuspended in 160 mL buffer A containing 20 mM Tris pH 7.5, 500 mM NaCl, 0.05% Tween-20, 20 mM imidazole, and sonicated using a Misonix S-4000 sonicator with 20 s on and 20 s off cycles until an OD260 plateau was reached. Cell lysates were spinned down at 13,000 rpm for 30 min in a pre-chilled centrifuge at 4\u00b0C. The supernatant was separated and combined with 0.2 mM PMSF (Sigma #78830); 50 mL of supernatant was loaded on AKTA (GE Healthcare Life Sciences) with 1 mL Histrap column (GE Healthcare Life Sciences) pre-equilibrated with buffer A. The column was washed with 50 mL buffer A and eluted with a gradient of buffer B containing 20 mM Tris pH 7.5, 500 mM NaCl, 0.05% Tween-20, and 500 mM imidazole. Aliquots containing concentrated proteins were pooled and diluted 1:1 with 20 mM Tris pH 7.5, 5% glycerol and 0.05% Tween-20. The diluent was reloaded on AKTA with 5 mL Hitrap Q HP column (GE Healthcare Life Sciences), followed by a wash with 35 mL buffer containing 20 mM Tris pH 7.5, 100 mM NaCl, 5% glycerol, and 0.05% Tween-20 and eluted with a gradient of buffer containing 20 mM Tris pH 7.5, 1 M NaCl, 5% glycerol, and 0.05% Tween-20. Finally, collected fractions with concentrated proteins were pooled and mixed with equal volume glycerol for storage at \u221220\u00b0C.\n\n### Carbamoyltransferase enzyme assay\n\nFor enzyme assay using T4gt genomic DNA as substrate, 10 min incubation at 95\u00b0C was performed to denature double-stranded DNA and the sample was immediately transferred to ice bath to prevent re-annealing. Then 0.38 nM denatured DNA was used for each 50 \u00b5L reaction with 1\u00d7 NEBBuffer2.1 (NEB #B7202S), freshly prepared 10 \u00b5M iron(II) sulfate hexahydrate (Sigma #203505), freshly prepared 10 mM carbamoylphosphate and 5 mM ATP. Carbamoyltransferase was added to the reaction at 7.2 \u00b5M. The reaction mixture was incubated at 30\u00b0C for 3 hr before adding 2 \u00b5L Proteinase K to inactivate the enzyme. After 30 min incubation at 37\u00b0C with proteinase K, DNA was purified with Zymo Oligo Clean & Concentrator kit. For assays with synthesized single-stranded DNA oligos containing 5hmdC, the heat-denaturing step was omitted. Oligos were added at 1.6 \u00b5M per 50 \u00b5L reaction with the same concentration of carbamoyltransferase and other components added as listed before. Purification was performed using Norgenbiotek Oligo Clean-up and Concentrator kit (#34100). For assays with free nucleotides, 0.5 mM of the corresponding nucleotide was used per reaction. For assays with synthesized RNA oligos containing 5hmC, 1.57 \u00b5M RNA was added per reaction.\n\n### LC-MS and fragmentation analysis\n\nGenomic DNA and synthetic oligonucleotides were digested to nucleosides by treatment with the Nucleoside Digestion Mix (NEB #M0649S) at 37\u00b0C for 3 hr. The resulting nucleoside mixtures were directly analyzed by reversed-phase LC/MS or LC-MS/MS without further purification. Nucleoside and nucleotide analyses were performed on an Agilent LC/MS System 1200 Series instrument equipped with a G1315D diode array detector and a 6120 Single Quadrupole Mass Detector operating in positive (+ESI) and negative (-ESI) electrospray ionization modes. LC was carried out on a Waters Atlantis T3 column (4.6 mm \u00d7 150 mm, 3 \u03bcm) at a flow rate of 0.5 mL/min with a gradient mobile phase consisting of 10 mM aqueous ammonium acetate (pH 4.5) and methanol. MS data acquisition was recorded in total ion chromatogram mode. LC-MS/MS was performed on an Agilent 1290 UHPLC equipped with a G4212A diode array detector and a 6490A triple quadrupole mass detector operating in the positive electrospray ionization mode (+ESI). UHPLC was performed on a Waters XSelect HSS T3 XP column (2.1 \u00d7 100 mm, 2.5 \u00b5m particle size) at a flow rate of 0.6 mL/min with a binary with a gradient mobile phase consisting of 10 mM aqueous ammonium formate (pH 4.4) and methanol. MS/MS fragmentation spectra were obtained by collision-induced dissociation in the positive product ion mode with the following parameters: gas temperature 230\u00b0C, gas flow 13 L/min, nebulizer 40 psi, sheath gas temperature 400\u00b0C, sheath gas flow 12 L/min, capillary voltage 3 kV, nozzle voltage 0 kV, and collision energy 5\u201365 V.\n\n### Sequence preference of carbamoyltransferase\n\nLibrary preparation was performed except the following modifications to the standard protocol: (1) we did not perform RNase A treatment for this experiment; (2) we used pyrrolo-dC Y-shaped adaptor instead of regular adaptor so that they are protected from subsequent enzymatic treatment. For each library, 1 \u00b5g genomic DNA mixture (Lambda:XP12:T4gt = 1:1:1 by molarity) was used. After adapter ligation, DNA libraries were purified with 1\u00d7 volume of NEBNext Sample Purification Beads (NEB #E7103) and eluted with 20 \u03bcL nuclease-free water. The sample was then denatured by heating to 95\u00b0C for 10 min and subjected to carbamoyltransferase reaction as described above. Carbamoyltransferase was added to the reaction at 7.2 \u00b5M for every 1 \u00b5g DNA library. Purification was performed using Zymo Oligo Clean & Concentrator kit and eluted with 16 \u00b5L water. Purified DNA samples were heated at 90\u00b0C with 4 \u00b5L formamide to generate single-stranded fragments for the deamination reaction. One \u00b5L APOBEC3A was added per reaction to both carbamoyltransferase-treated or control (untreated) samples with 10 \u00b5L of 10\u00d7 APOBEC3A reaction buffer and 1 \u00b5L BSA (10 mg/mL). The reaction mixture was incubated at 37\u00b0C overnight. Final libraries were purified using Zymo Clean & Concentrator kit, indexed (with NEBNext Multiplex Oligos for Illumina E7335) and amplified with NEBNext Q5U Mater mix (NEB #M0597). Sequencing was performed on an Illumina Mi-seq instrument with pair-end reads (2 \u00d7 75 bp). Raw reads were trimmed with TrimGalore. Methylation was analyzed with Bismark v0.22.3 and plotted with RStudio v3.6.3.\n\n### Synthesis of 5hmC RNA oligonucleotide\n\nForward and reverse DNA templates were annealed at 95\u00b0C for 4 min and slowly cooled for 20 min. RNA synthesis was performed with HiScribe T7 High Yield RNA Synthesis Kit (NEB #E2040). One \u00b5g of annealed DNA template was used per reaction with 1.5 \u00b5L T7 RNA Polymerase Mix. 5hmCTP was used with the other three nucleotides ATP, UTP, and GTP at 7.5 mM each. The reaction was incubated at 37\u00b0C for 4 hr. Two \u00b5L nulease-free DNase I were added to each reaction to digest DNA templates, followed by incubation at 37\u00b0C for 15 min. Synthesized RNA was purified with Norgenbiotek Oligo and Concentrator kit and stored at \u221280\u00b0C.\n\n### Nucleotides and synthesized oligos\n\nSingle-stranded DNA oligos used in enzymatic assays were purchased from IDT. The sequences are as follows:\n\nThe DNA templates for synthesizing RNA were purchased from IDT as follows (T7 promoter sequence was underlined):\n\n5hmdCTP (D1045) and 5mdCTP (D1035) were purchased from Zymo Research. 5hmdUTP (N-2059) and 5hmCTP (N-1087) were purchased from Trilink Biotechnologies.\n\n### Code availability\n\nCustom-built bioinformatics pipelines are available at https://github.com/linyc74/MetaGPA (Lin, 2021, copy archived at swh:1:rev:28c23f47fcf108b0e7b8851b92f37921358c8e8e).\n",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "9b000dc3-301c-488b-9962-864076a1bc50",
+      "submission_id": "54bf6906-1104-47d1-9efa-02da0b33c7dd",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mar\u00eda Mercedes Zambrano, CorpoGen Colombia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70021.sa0](https://doi.org/10.7554/eLife.70021.sa0)\n\nThis work will interest researchers who want to explore the functional potential of metagenomes. The authors present an original approach, MetaGPA, for performing enrichment analysis on cohorts of metagenomes and use it to identify a novel enzyme that can modify cytosines in DNA from natural bacteriophage populations.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Mar\u00eda Mercedes Zambrano, CorpoGen Colombia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70021.sa1](https://doi.org/10.7554/eLife.70021.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A Genome-Phenome Association study in native microbiomes identifies a mechanism for cytosine modification in DNA and RNA\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by Reviewing Editor Maria Zambrano and Michael Marletta as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this letter to help you prepare a revised submission.\n\nEssential revisions:\n\nThe work to obtain functional information from metagenomes is both novel and promising but various issued need to be addressed to support the claim of reproducibility and broader applicability. In particular, the manuscript must provide a more detailed methodology, substantially improve the characterization of their MetaGPA approach, particularly the bioinformatics, and clearly state the limitations of this method and its capacity to be used as a general tool for other searches and metagenome functional analysis.\n\n1) Please take into account previous work, describe how these relate to the presented work and clearly indicate the motivation for MetaGPA in the introduction. The relationship between the author's program and previous attempts at GWAS-like analyses in microorganisms are not thoroughly described in the Introduction. For example, the authors do not mention TreeWAS or other similar approaches.\n\n2) The Methods section contains information that presumably relates to the pipeline, but there is no explicit mention of MetaGPA. There are also seemingly pipeline-related methods that are not part of the codebase. The beginning section of the Results is insufficient to explain the MetaGPA method. A reproducible example is a must.\n\n3) An attempt was made to run the code to confirm reproducibility. The GitHub link contains no information on installation or examples of how to run the code on test or new data. The code itself contains hard-coded file paths that would make it difficult, if not infeasible, to run on another person's machine. There are also dependancies that are unstated. The code must be substantially better documented to be of utility outside this study.\n\n4) The reasons for the use of Tet2 and BGT to modify 5mC and 5hmC are unclear. The newly discovered 5-carbamoyloxymethylcytosine is unlikely to be deaminated by A3A\n\nand hence what is the need for Tet2 and BGT? In fact, other than 5-methylcytosine, larger modifications of cytosine would not be substrates for APOBEC3A (PMID: 28472485). The investigators could treat all the DNA with A3A, divide it into two halves, and then use the USER kit to destroy DNA that contains uracils in one-half of the samples. The DNA that survives should contain a cytosine modification that protected it against A3A. Comparison of sequences of the two populations would show that only a small fraction of DNA has survived A3A+User treatment. If the ability of A3A to deaminate 5mC is a major concern, the authors do not articulate it. However, this can be easily remedied by replacing A3A with APOBEC3B-CTD or APOBEC3G-CTD neither of which is good at deaminating 5mC.\n\n5) The USER kit contains E. coli Exonuclease VIII. This is problematic because this enzyme will excise oxidized pyrimidines in DNA. Thus, the DNA of any organism that routinely modifies its pyrimidines in such a way that it becomes susceptible to ExoVIII, would be eliminated from the case DNA regardless of whether it contains uracils. An AP endonuclease or simple treatment with NaOH and heat would be preferable here.\n\n6) This methodology is designed to work for cytosine modifiers that near 100% efficient and are not sequence-specific. I do not see how this methodology could isolate genes for sequence-specific cytosine modifiers. If an enzyme strongly prefers a certain sequence motif, say 5'-TpC, then all the cytosines in the VpC sequence context (V is not T) would remain unmodified. These would be deaminated by A3A and virtually all the DNA from that organism would be destroyed by the User kit. The methodology may also have difficulty isolating genes for enzymes that modify only a fraction of the cytosine bases, say 25%. Such DNA would also be destroyed during the A3A+User treatment. Such limitations of the methodology should be carefully examined.\n\n7) How does MetaGPA handle phylogenetic resampling (i.e., dealing with the fact that genomes are related)? This is particularly important for microorganisms. It would have been preferable to see the author's method benchmarked in a similar way, if not compared against, previous approaches to similar problems.\n\n8) The manuscript jumps quickly into the main finding of cytosine modification. What are other applications of this technique? How could one incorporate a negative control to quantify FP rates or incorporate other controls?\n\n9) I am somewhat confused by the discussion about the putative thymidylate synthase homologs. The authors point out that several TS homologs contain a change that is equivalent to a N177D change in E. coli TS. They further note that such a change in the E. coli enzyme results in a change of substrate from dUMP to dCMP. Does this mean that these phage genes code for dCMP methyltransferases, not thymidylate synthases? If so, they may be novel enzymes, as E. coli does not contain a dCMP methyltransferase and unlike TS, the normal methyl donor for cytosine methylation is S-adenosylmethionine. The methyl donor for TS is tetrahydrofolate. It would be useful to characterize these variant TS enzymes for substrate specificity and cofactor requirements.\n\n10) It is unclear how the investigators arrived at the substrate and co-factor requirements of the newly discovered enzyme. The classic example of a carbamoyltransferase is ornithine carbamoyltransferase which tranfers the carbamoyl moiety to a nitrogen not to an oxygen. It also appears (https://www.brenda-enzymes.org/enzyme.php?ecno=2.1.3.3) that ornithine carbamoyltransferase does not require ATP as a co-factor. With that in mind, the putative new carbamoyltransferase could have modified the N4 of cytosine without the need for ATP. Did the investigators explore this possibility? Overall, a clearer rationale needs to be provided for how the requirements for the enzyme were established.\n\n11) Interestingly, E. coli bacteriophage Mu carries N6-carbamoylmethyladenine. Is the enzyme that performs this reaction in any way related to the newly discovered enzyme?\n\n12) The only justification for using phage DNA as the source of new enzymes provided by the authors is \"phages are known to carry a large diversity of modifications\". Another obvious reason for using phage DNA is that few phage genes contain introns. However, this convenience comes with the likely drawback that many DNA modification enzymes in cellular genomes are being missed from their screen. The authors should carefully address this issue.\n\n13) Figure 3b is unclear. What are the units of the color (scale) bars? What am I supposed to take away from this panel? What is red and what is blue (beyond the minimal description in the figure legend)?\n\nReviewer #2 (Recommendations for the authors):\n\n1. Page 2- Change \"who is out there?\" to \"what is out there?\".\n\n2. Page 6- \"unmodified cytosines are deaminated to uracils using the DNA cytidine\n\ndeaminase Apolipoprotein B mRNA editing enzyme catalytic polypeptide-like 3A\n\n(APOBEC3A) (Carpenter et al., 2012)\"- This is misleading on two counts. Among the APOBEC3 subfamily of cytosine deaminases, APOBEC3A is most efficient at deaminating 5mC, in addition to C. Furthermore, the ability of APOBEC3A to cause cytosine deamination was first demonstrated in HBV genome (PMID: 19169351) and the purification of the enzyme and its biochemical characterized was first reported by a different research group than cited in the manuscript (PMID: 22798497).\n\n3. Page 11- \"DNA ligase (PF14743.7, PF01068.22), and Cytidine deaminase (PF00383.24) are other domains that have been found in DNA modifying enzymes (Subramanya et al., 1996) (Bhattacharya et al., 1994)\"- Did you mean DNA-cytosine deaminase? A cytidine deaminase would convert the ribonucleoside cytidine to uridine.\n\n4. Page 18, last paragraph- The comparison of T4 genome with the contig in which carbamoyltransferase gene is found is confusing. Why is the occurrence of dCMP hydroxymethylase and \u03b2-glucosyltransferase in T4 genome \"resembles\" the occurrence thymidylate synthase and carbamoyltransferase in the contig? Phages have very compact genomes and tend to aggregate genes with related functions. Furthermore, dCMP hydroxymethylase is presumably an oxidase and not a transferase. If this is what led to the prediction of the reaction of the newly discovered carbamoyltransferase, it was a really inspired guess- I say that in all sincerity.\n",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6428583b-af16-4e45-acb9-4bc644a7753f",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C1",
+      "claim": "Shotgun metagenomic sequencing is a powerful approach to study microbiomes in an unbiased manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Shotgun metagenomic sequencing is a powerful approach to study microbiomes in an unbiased manner and of increasing relevance for identifying novel enzymatic functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the capabilities of shotgun metagenomic sequencing, drawing from established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "34e7d6fa-f4cf-4af9-b109-58ddf310b87e",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C2",
+      "claim": "The potential of metagenomics to relate microbiome composition to function has been underutilized.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the potential of metagenomics to relate from microbiome composition to function has thus far been underutilized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of the current state of the field based on the authors' perspective and inference from existing literature.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "c9e0f270-3f71-4ae9-a4c4-933d8cee4ff9",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C3",
+      "claim": "MetaGPA is a framework that allows linking genetic information in metagenomes with a dedicated functional phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we introduce the Metagenomics Genome-Phenome Association (MetaGPA) study framework, which allows linking genetic information in metagenomes with a dedicated functional phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the novel method developed in this study, supported by the experimental data and results presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "208230d9-41d5-4c8b-8d23-b249a91d3e10",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C4",
+      "claim": "MetaGPA was applied to identify enzymes associated with cytosine modifications in environmental samples.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied MetaGPA to identify enzymes associated with cytosine modifications in environmental samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the specific application of the method in this study, supported by the experimental design and data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "16f46a64-d677-4160-9d62-f8fc6be61936",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C5",
+      "claim": "2365 genes met the significance criteria in the MetaGPA study.",
+      "claim_type": "EXPLICIT",
+      "source": "From the 2365 genes that met our significance criteria, we confirm known pathways for cytosine modifications and proposed novel cytosine-modifying mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "7de0185f-908a-4149-9d9e-bd1ec2484f72",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C6",
+      "claim": "MetaGPA confirmed known pathways for cytosine modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "From the 2365 genes that met our significance criteria, we confirm known pathways for cytosine modifications and proposed novel cytosine-modifying mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the identification of known enzymes like thymidylate synthase and DNA ligase in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "8913b8cf-6b24-4e0c-b79b-e1f9461a8aa2",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C7",
+      "claim": "A novel nucleic acid-modifying enzyme, 5-hydroxymethylcytosine carbamoyltransferase, was identified and characterized.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we characterized and identified a novel nucleic acid-modifying enzyme, 5-hydroxymethylcytosine carbamoyltransferase, that catalyzes the formation of a previously unknown cytosine modification, 5-carbamoyloxymethylcytosine, in DNA and RNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental validation including LC-MS analysis and enzymatic assays presented in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "72b60399-6e47-4b6b-94c4-199c547395c1",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C8",
+      "claim": "5-carbamoyloxymethylcytosine is a previously unknown cytosine modification.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we characterized and identified a novel nucleic acid-modifying enzyme, 5-hydroxymethylcytosine carbamoyltransferase, that catalyzes the formation of a previously unknown cytosine modification, 5-carbamoyloxymethylcytosine, in DNA and RNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by LC-MS data and fragmentation patterns showing the novel modification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "dad8ef40-3283-4310-b670-e7475602a7cd",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C9",
+      "claim": "5-hydroxymethylcytosine carbamoyltransferase catalyzes the formation of 5-carbamoyloxymethylcytosine in both DNA and RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we characterized and identified a novel nucleic acid-modifying enzyme, 5-hydroxymethylcytosine carbamoyltransferase, that catalyzes the formation of a previously unknown cytosine modification, 5-carbamoyloxymethylcytosine, in DNA and RNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing activity on both DNA and RNA substrates as shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "cb585f12-d2fb-41a2-848e-d2e1f7e95734",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C10",
+      "claim": "Advances in next-generation sequencing technology have been reshaping metagenomics.",
+      "claim_type": "EXPLICIT",
+      "source": "Advances in next-generation sequencing technology have been reshaping metagenomics, making it possible to explore all microbes within a sample, including the overwhelming majority of those unculturable in standard growth conditions (Quince et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Quince et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "2b13f488-ba69-4611-a3e7-e4d4da73a008",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C11",
+      "claim": "Next-generation sequencing makes it possible to explore microbes that are unculturable in standard growth conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Advances in next-generation sequencing technology have been reshaping metagenomics, making it possible to explore all microbes within a sample, including the overwhelming majority of those unculturable in standard growth conditions (Quince et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Quince et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "78e63a8c-3d6a-4119-afa0-2746203bdef5",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C12",
+      "claim": "Metagenomic analyses are being utilized across a broad spectrum of life science disciplines.",
+      "claim_type": "EXPLICIT",
+      "source": "From studying human gut microbiome to marine viral communities (Sunagawa et al., 2015), metagenomic analyses are being utilized across a broad spectrum of life science disciplines, contributing to novel clinical diagnoses (Chiu and Miller, 2019), antibiotics and small molecule discovery (Hu et al., 2013; Charlop-Powers et al., 2014), food safety (Cao et al., 2017), biofuel generation (Hess et al., 2011), and environment stewardship (Nesme et al., 2014; Cavicchioli et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to published work in various fields.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "61eaf955-c579-4d49-a000-b255c324a129",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C13",
+      "claim": "Profiling taxonomic biodiversity is easier to answer than inferring biological functions in metagenomic studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the two primary questions metagenomic studies strive to address, profiling the taxonomic biodiversity \u2013 'what is out there?' is easier to answer compared to inferring the biological functions \u2013 'what do they do?'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the state of the field and the challenges described in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "6b9d1291-f021-423b-83ef-ded367338708",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C14",
+      "claim": "There are many well-established strategies to quantify taxonomic diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, there have been many well-established strategies to quantify taxonomic diversity such as analyzing known marker genes, binning contigs and assembling sequences into taxonomic groups or genomes (Sharpton, 2014; Quince et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Sharpton, 2014 and Quince et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "f97c39d1-95ab-4724-8b86-67222cd2ac22",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C15",
+      "claim": "A large fraction of the functional potential of microbiomes remains to be discovered.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a large fraction of the functional potential of microbiomes remains to be discovered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the current state of knowledge in the field.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "179fc1ce-57f6-4ae9-97e0-56bc4f53dd92",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C16",
+      "claim": "Microbiomes encode a large number of evolutionarily diverse genes coding for millions of peptides and proteins for distinctive functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Microbiomes encode a large number of evolutionarily diverse genes coding for millions of peptides and proteins for distinctive functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about microbial diversity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "7e81e40a-8ddc-4329-a1c6-68c6507831f0",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C17",
+      "claim": "Functional diversity is particularly enormous for secondary metabolites and epigenetic modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "The functional diversity is particularly enormous for secondary metabolites and epigenetic modifications (Sharon et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Sharon et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "f93ac110-817b-41a1-9f38-8488c7bdd06a",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C18",
+      "claim": "Environmental microbiomes are a plentiful source of DNA-modifying enzymes with diverse mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Taking DNA modifications as an example , environmental microbiomes are a plentiful source of DNA-modifying enzymes with diverse mechanisms (Weigele and Raleigh, 2016; Hiraoka et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Weigele and Raleigh, 2016 and Hiraoka et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "97c9ef3c-b2b2-4ac9-b6cc-8b6d4e9f0085",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C19",
+      "claim": "In bacteriophages, DNA modifications are used to evade the restriction modification systems of the host bacterial cell.",
+      "claim_type": "EXPLICIT",
+      "source": "In bacteriophages, DNA modifications are used to evade the restriction modification systems of the host bacterial cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about phage-host interactions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "6e238ba1-5e9f-4f29-9658-c14f09a0eaf0",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C20",
+      "claim": "XP12 phage completely modifies cytosines in its genomic DNA to 5' methylcytosine.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, a handful of bacteriophages have been described to completely modify cytosines in their genomic DNA, for example, 5' methylcytosine in XP12 phage (Kuo et al., 1968) and glycosylated 5' hydroxymethylcytosine in T4 phage (Revel and Georgopoulos, 1969).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Kuo et al., 1968.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "083a4b1a-7e93-4c52-9331-4d8fa502bf22",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C21",
+      "claim": "T4 phage completely modifies cytosines in its genomic DNA to glycosylated 5' hydroxymethylcytosine.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, a handful of bacteriophages have been described to completely modify cytosines in their genomic DNA, for example, 5' methylcytosine in XP12 phage (Kuo et al., 1968) and glycosylated 5' hydroxymethylcytosine in T4 phage (Revel and Georgopoulos, 1969).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Revel and Georgopoulos, 1969.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "3f98b69b-205b-4041-95fb-589dd0984c1e",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C22",
+      "claim": "Additional base modifications have been discovered including 5-(2-aminoethoxy)methyluridine, 5-(2-aminoethyl)uridine, and 7-deazaguanine.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, additional base modifications have been discovered including 5-(2-aminoethoxy)methyluridine, 5-(2-aminoethyl)uridine, and 7-deazaguanine (Lee et al., 2018; Hutinet et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lee et al., 2018 and Hutinet et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "4bea35a4-af9f-4aea-a945-57fbbc930217",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C23",
+      "claim": "Current methods to harness functional potential of microbiomes mostly rely on computational prediction of gene function based on homology search.",
+      "claim_type": "EXPLICIT",
+      "source": "Current methods to harness such functional potential of microbiomes, for the most part, came from computational prediction of gene function which is based on homology search to existing databases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the current state of methods in the field.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "8c641c90-0de4-4162-bbaa-015eb3d2f452",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C24",
+      "claim": "Homology searches often fail to impute the correct functions due to poor completeness and accuracy of microbial annotation.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, because of the poor completeness and accuracy of microbial annotation, homology searches often fail to impute the correct functions (Huson et al., 2009; Nayfach and Pollard, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Huson et al., 2009 and Nayfach and Pollard, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "a2c7d383-59e0-4dba-9ea7-6eb4f7768549",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C25",
+      "claim": "Functional screens for novel functions require construction and high-throughput screening of a large number of clones which can be very time-consuming.",
+      "claim_type": "EXPLICIT",
+      "source": "Novel functions can also be found using functional screens; however, such effort entails the construction and high-throughput screening of a large number of clones which can be very time-consuming (Martinez et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Martinez et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "4ef4c8e0-44d8-4430-837b-a8e2f98f5260",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C26",
+      "claim": "Genome-wide association studies (GWAS) combined with phylogenetic methods have been used to determine the genetic basis of phenotypes in specific bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "For specific bacteria, determining the genetic basis of phenotypes has been addressed using genome-wide association studies (GWAS) (Falush and Bowden, 2006) combined with specific phylogenetic methods to account for the unique population structure of microbes (Collins et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Falush and Bowden, 2006 and Collins et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "2c3a93f8-19b4-4892-a77d-4d718e6471fd",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C27",
+      "claim": "Microbial GWAS have explored hundreds of isolates to identify genomic elements associated with antibiotic resistance, host specificity, or virulence.",
+      "claim_type": "EXPLICIT",
+      "source": "Examples of microbial GWAS have explored hundreds of isolates to identify genomic elements that are statistically associated with, for example, antibiotic resistance (Chewapreecha et al., 2014), host specificity (Sheppard et al., 2013), or virulence (Laabei et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Chewapreecha et al., 2014, Sheppard et al., 2013, and Laabei et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "5992791d-6c5d-48fa-a70e-58c481e3e1e6",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C28",
+      "claim": "Microbial GWAS studies are limited to known isolates and have not been extended to entire complex microbial communities.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, these studies are limited to known isolates and have not yet been extended to entire complex microbial communities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the limitations of existing methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "d6f78914-d06c-4970-a406-05f53a0e8ae2",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C29",
+      "claim": "MetaGPA is conceptually close to GWAS as it associates genotypic data with phenotypic traits.",
+      "claim_type": "EXPLICIT",
+      "source": "MetaGPA is conceptually close to GWAS as it associates genotypic data with phenotypic traits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison based on the conceptual framework of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "22d9cb85-bb39-4713-8794-e4e2e1ef2162",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C30",
+      "claim": "MetaGPA uses association analyses at the level of protein domains rather than sequence variations as genetic markers.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrasting with microbial GWAS which uses sequence variations as genetic markers, MetaGPA incorporated association analyses at the level of protein domains to reveal genes that are significantly associated with the phenotype of interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key methodological difference supported by the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "b0a55c42-3366-445a-9150-2717998d91c9",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C31",
+      "claim": "MetaGPA requires definition of a 'case' cohort and a 'control' cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "Like GWAS in individual species (Hirschhorn and Daly, 2005), MetaGPA requires definition of two cohorts, a 'case' cohort, that is, a group of organisms that share a specific phenotype under study in a given microbiome, and a 'control' cohort composed of all organisms within that microbiome (Figure 1 and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the experimental design shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "cb46f677-bed4-471e-bd4a-f2b9e4cad989",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C32",
+      "claim": "Both cohorts in MetaGPA are sequenced independently, but all organisms included in a cohort are sequenced together without the need to isolate organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "While both cohorts are sequenced independently, all organisms included in a cohort are sequenced together without the need to isolate organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "eba937a3-8c90-4abd-b26a-7b090eca049f",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C33",
+      "claim": "The 'case' group is derived from the control group after applying a selection to only retain a given phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'case' group is derived from the control group after applying a selection to only retain a given phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design of the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "721fbf6f-fbf8-4f4a-a242-9172a1d50a93",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C34",
+      "claim": "Unmodified cytosines are deaminated to uracils using APOBEC3A.",
+      "claim_type": "EXPLICIT",
+      "source": "More specifically, unmodified cytosines are deaminated to uracils using the DNA cytidine deaminase apolipoprotein B mRNA editing enzyme catalytic polypeptide-like 3A (APOBEC3A) (Carpenter et al., 2012; Henry et al., 2009; Wijesinghe and Bhagwat, 2012), and subsequently excised by uracil-specific excision reagent (USER) (Bitinaite et al., 2007), resulting in fragmented DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Carpenter et al., 2012, Henry et al., 2009, and Wijesinghe and Bhagwat, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "356ee529-ba12-4ac9-bc33-10e279772d66",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C35",
+      "claim": "APOBEC3A deaminates 5-methyl-2'-deoxycytidine (5mdC) and, to a lesser degree, 5-hydroxymethyl-2'-deoxycytidine (5hmdC).",
+      "claim_type": "EXPLICIT",
+      "source": "Because APOBEC3A also deaminates 5-methyl-2'-deoxycytidine (5mdC) and, to a lesser degree 5-hydroxymethyl-2'-deoxycytidine (5hmdC) (Sun et al., 2021), ten-eleven translocation dioxygenase 2 (TET2) and T4 phage \u03b2-glucosyltransferase (T4-BGT) can be used to protect 5mdC and 5hmdC prior to APOBEC3A treatment (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Sun et al., 2021 and shown in Figure 2A.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "7d01e568-44e3-4303-be3d-76c5ceaa7c65",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C36",
+      "claim": "TET2 and T4-BGT can be used to protect 5mdC and 5hmdC prior to APOBEC3A treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Because APOBEC3A also deaminates 5-methyl-2'-deoxycytidine (5mdC) and, to a lesser degree 5-hydroxymethyl-2'-deoxycytidine (5hmdC) (Sun et al., 2021), ten-eleven translocation dioxygenase 2 (TET2) and T4 phage \u03b2-glucosyltransferase (T4-BGT) can be used to protect 5mdC and 5hmdC prior to APOBEC3A treatment (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is part of the experimental design shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "1e9685a1-5ef5-42b5-97d6-3c37aa001231",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C37",
+      "claim": "Enzymatic selection resulted in a 0.5% recovery of E. coli DNA and an average 35% recovery of T4gT DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the original mock community, enzymatic selection resulted in a 0.5% recovery of E. coli DNA and an average 35% recovery of T4gT DNA (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the experiment shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "4a2f0c63-0a6a-46bb-95e6-1b66bbd057ea",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C38",
+      "claim": "DNA containing modified cytosine is about 70-fold enriched compared to unmodified DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "This result shows that DNA containing modified cytosine is about 70-fold enriched compared to unmodified DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the recovery rates presented in the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "3b8c42c6-b4f8-4ad5-bf3b-5e3ff20291c4",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C39",
+      "claim": "At 1:1000 dilution, an average of 48.6% modified DNA was retained relative to no-enzyme control.",
+      "claim_type": "EXPLICIT",
+      "source": "Even at 1:1000 dilution, an average of 48.6% modified DNA was retained relative to no-enzyme control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the serial dilution experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "b314cbf9-9275-4bee-8b66-9a7a10494d09",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C40",
+      "claim": "Three environmental samples were collected from distinct sources: two from a sewage treatment plant and one from coastal sludge.",
+      "claim_type": "EXPLICIT",
+      "source": "To explore the robustness of MetGPA, we included three environmental samples from distinct sources (Figure 3A); of the three samples, two were collected at a sewage treatment plant and the other one was collected from coastal sludge.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the sample collection as shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "aad0ecf1-06f2-4143-97fb-2b2ffbec5e40",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C41",
+      "claim": "3901 modified contigs were identified from three DNA samples.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 3901 modified contigs were identified from three DNA samples (Figure 3C and Figure 3\u2014figure supplement 1C-D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the data analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "6b7f452e-4ce9-4916-a047-bf7a716946e9",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C42",
+      "claim": "Distribution of contigs across all length ranges was equal between modified and unmodified contigs.",
+      "claim_type": "EXPLICIT",
+      "source": "Distribution of contigs across all length ranges was equal between modified and unmodified contigs (Figure 3D) and the proportion of modified contigs among sewage and coastal samples were comparable (about 2% in both sewage samples and 3.5% in coastal total contigs) (Figure 3\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "8cf746ca-6adf-4efc-94d6-f16da922aed8",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C43",
+      "claim": "The proportion of modified contigs was about 2% in both sewage samples and 3.5% in coastal total contigs.",
+      "claim_type": "EXPLICIT",
+      "source": "Distribution of contigs across all length ranges was equal between modified and unmodified contigs (Figure 3D) and the proportion of modified contigs among sewage and coastal samples were comparable (about 2% in both sewage samples and 3.5% in coastal total contigs) (Figure 3\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result shown in Figure 3\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "f1dea2f2-7d0c-437f-80be-45c1a6943397",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C44",
+      "claim": "110 Pfam domain families were significantly associated with modified contigs (Bonferroni-corrected p-value < 0.01) representing a total of 2365 candidate genes.",
+      "claim_type": "EXPLICIT",
+      "source": "From this composite dataset, we identified 110 Pfam domain families that were significantly associated with modified contigs (Bonferroni-corrected p-value < 0.01) representing a total of 2365 candidate genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "f72f171a-c7eb-4033-86e6-026484bb8644",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C45",
+      "claim": "None of the domains were found significantly associated with the case group in the control replicate experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "To estimate the false positive rate of association, we used our two control replicate experiments for which no selection has been done. We then performed a MetGPA analysis with one replicate being the control group and the other replicate being the 'case' group. From the 6737 protein domains assessed in MetaGPA, none of the domains were found significantly associated with the case group (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the control experiment to assess false positive rate.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "a257a07d-f062-4ed3-bce7-526edfb84d4a",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C46",
+      "claim": "A subset of enzymes containing the thymidylate synthase domain have been shown to produce hydroxymethylpyrimidines.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a subset of enzymes containing the thymidylate synthase domain (PF00303.20) have been shown to produce hydroxymethylpyrimidines (Neuhard et al., 1980).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Neuhard et al., 1980.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "ce9c6335-95af-438e-8be2-5c857cafd3a5",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C47",
+      "claim": "DNA ligase and cytidine/deoxycytidylate deaminase are domains that have been found in DNA-modifying enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA ligase (PF14743.7, PF01068.22), and cytidine/deoxycytidylate deaminase (PF00383.24) are other domains that have been found in DNA-modifying enzymes (Bhattacharya et al., 1994; Subramanya et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Bhattacharya et al., 1994 and Subramanya et al., 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "a8a42c14-ccd1-4151-acb5-95b4fac75a54",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C48",
+      "claim": "Most of the carbamoyltransferase C-terminus domains from modified contigs form a distinctive phylogenetic branch.",
+      "claim_type": "EXPLICIT",
+      "source": "Particularly, several domains, including carbamoyltransferase N-terminus (PF02543.16) and C-terminus (PF16861.6) domains, exhibited a clustered pattern in which most of the sequences from modified contigs formed a distinct phylogenetic clade from the other sequences (Figure 4B and Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the phylogenetic tree in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "59d74e36-edc1-47a1-baae-a8b214a2efba",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C49",
+      "claim": "Complex DNA modifications in bacteriophages are usually carried out by multiple enzymes whose genes tend to cluster on the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Complex DNA modifications in bacteriophages are usually carried out by multiple enzymes whose genes tend to cluster on the genome (Iyer et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Iyer et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "c070c7e8-10f2-4122-a663-ac321985d38d",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C50",
+      "claim": "The domains most frequently co-occurring with carbamoyltransferase C-terminus were carbamoyltransferase N-terminus, thymidylate synthase, phosphoribosyl-ATP pyrophosphohydrolase, dCMP deaminase Zn-binding region, and MafB19-like deaminase.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that, for example, the domains most frequently co-occurring with carbamoyltransferase C-terminus (PF16861.6) were carbamoyltransferase N-terminus (PF02543.16), thymidylate synthase (PF00303.20), phosphoribosyl-ATP pyrophosphohydrolase (PF01503.18), dCMP deaminase Zn-binding region (PF00383.24), and MafB19-like deaminase (PF14437.7) (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the co-occurrence analysis in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "a2a34431-0b0d-4ce0-895d-ba1add4724ad",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C51",
+      "claim": "The co-occurrence of carbamoyltransferase and thymidylate synthase domains is only found in modified contigs.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the co-occurence of carbamoyltransferase and thymidylate synthase domains is only found in modified contigs (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "5f4f3528-3a1a-4c58-99da-6bbf69013634",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C52",
+      "claim": "Three interaction cores were identified centered on thymidylate synthases, DNA ligases, and carbamoyltransferases.",
+      "claim_type": "EXPLICIT",
+      "source": "Unbiased co-occurrence analysis was therefore conducted for the top 20 associated domain families. Indeed, significant positive correlations were observed, and the results demonstrated three interaction cores centered on thymidylate synthases, DNA ligases, and carbamoyltransferases, respectively (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the co-occurrence network in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "2d9994ea-a928-4071-9370-08acf7bb9bab",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C53",
+      "claim": "Changing residue 177 from asparagine to aspartate can switch the preference of a canonical thymidylate synthase from dUMP to dCMP resulting in the formation of 5mdCMP.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have demonstrated that changing this residue from asparagine (Asn) to aspartate (Asp) can switch the preference of a canonical thymidylate synthase from dUMP to dCMP resulting in the formation of 5mdCMP (Graves et al., 1992; Hardy and Nalivaika, 1992; Liu and Santi, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Graves et al., 1992, Hardy and Nalivaika, 1992, and Liu and Santi, 1992.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "28bdddda-906a-404b-8658-662f7915bf80",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C54",
+      "claim": "The differential conservation score identifies position 177 and position 147 as the top two positions in thymidylate synthase.",
+      "claim_type": "EXPLICIT",
+      "source": "Our differential conservation score identifies position 177 and position 147 (relative to E. coli thymidylate synthase) as the top two positions (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "e45e89e6-ed95-41ab-bbc9-20817fe3cb40",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C55",
+      "claim": "Both residues 147 and 177 are within the enzyme's active site.",
+      "claim_type": "EXPLICIT",
+      "source": "Both residues are within the enzyme's active site (Figure 5C; Stout et al., 1998).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5C and supported by citation to Stout et al., 1998.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "f54a1a27-a4f4-4a04-b849-1694baf050dd",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C56",
+      "claim": "Residues at positions 177 are mostly Asn for thymidylate synthase protein in the unmodified contigs.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, residues at positions 177 are mostly Asn for thymidylate synthase protein in the unmodified contigs suggesting that dUMP is the substrate for these enzymes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the sequence alignment in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "90f4b0cd-eff6-468a-9cc7-0cfe169a71db",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C57",
+      "claim": "Thymidylate synthase proteins in the modified contigs have mostly Asp at position 177 consistent with modified cytosines.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, thymidylate synthase proteins in the modified contigs have mostly Asp position 177 consistent with modified cytosines (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the sequence alignment in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "8c2c5338-9b51-4ea0-aa6c-f6a4c0777055",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C58",
+      "claim": "H147 forms a hydrogen bonding network through a water molecule to the keto oxygen of position 4 in dUMP.",
+      "claim_type": "EXPLICIT",
+      "source": "The H147 forms a hydrogen bonding network through a water molecule to the keto oxygen of position 4 in dUMP (Matthews et al., 1990), suggesting a role in substrate specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Matthews et al., 1990.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "38fa0471-f090-48cc-a28e-65b094e2c0dd",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C59",
+      "claim": "Carbamoyltransferase domains are ranking within the top 20 most significant domains in the MetaGPA study.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 110 domains that are significantly associated with DNA modifications, carbamoyltransferase domains are ranking within the top 20 most significant domains in our MetaGPA study (Figure 4A) and are exhibiting all three of our refinement metrics.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "d4ca4538-ab03-4ac9-8f26-243c62222466",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C60",
+      "claim": "No carbamoyltransferases have been shown to act on any form of cytosine prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Carbamoyltransferases are part of a large protein family catalyzing the addition of a carbamoyl group to various substrates but so far none of them has been shown to act on any form of cytosine, potentially revealing a new function and a new cytosine modification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on existing knowledge about carbamoyltransferases.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "3a7517c9-f44c-4f24-ab15-3b906616d15a",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C61",
+      "claim": "The co-occurrence of carbamoyltransferase and thymidylate synthase homologs specifically in modified contigs resembles the arrangement of the T4 phages.",
+      "claim_type": "EXPLICIT",
+      "source": "The co-occurrence of carbamoyltransferase and thymidylate synthase homologs specifically in modified contigs (Figure 4C) resembles the arrangement of the T4 phages for which genes coding for the dCMP hydroxymethylase and \u03b2-glucosyltransferase co-occur on the genome (Miller et al., 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on comparison with known phage systems, supported by citation to Miller et al., 2003.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "a2cd879e-d13d-4d82-9a85-e9647cc0d727",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C62",
+      "claim": "T4 dCMP hydroxymethylase is homologous to thymidylate synthase.",
+      "claim_type": "EXPLICIT",
+      "source": "The T4 dCMP hydroxymethylase is homologous to thymidylate synthase and transfers a carbon from methyltetrahydrofolate (mTHF) to C5 of the pyrimidine ring producing an exocyclic methylene in the active site of the enzyme (Graves et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Graves et al., 1992.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "6aa5e3ad-fd3a-4bae-b38c-40740364dee3",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C63",
+      "claim": "T4 \u03b2-glucosyltransferase transfers a glucose to the hydroxyl moiety of 5hmC.",
+      "claim_type": "EXPLICIT",
+      "source": "Following incorporation of 5hmC into DNA during replication, T4 \u03b2-glucosyltransferase transfers a glucose to the hydroxyl moiety of 5hmC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about T4 phage modification.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "a9b564c3-5171-4f3b-bd66-fa558df9f7bd",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C64",
+      "claim": "Every substrate (carbamoyl phosphate, ATP, 5hmdC) and the enzyme were indispensable for the reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "The predicted reaction was tested by enzymatic assays and results showed that every substrate, namely carbamoyl phosphate, ATP, 5hmdC (genomic T4gt DNA was used as substrate in these experiments), and the enzyme were indispensable for the reaction (Figure 6\u2014figure supplement 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6\u2014figure supplement 1C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "5ced2db0-d2fc-4a6e-b701-42857291505f",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C65",
+      "claim": "Nearly 70% of 5hmdC were converted into 5cmdC in the denatured single-stranded T4gt genomic DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Nearly 70% of 5hmdC were converted into 5cmdC in the denatured single-stranded T4gt genomic DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the enzymatic assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "6497faf3-d857-40b9-a747-a926c5d7912f",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C66",
+      "claim": "The activity of the carbamoyltransferase was several fold lower on double-stranded DNA, suggesting the preference of this enzyme for single-stranded DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the activity of our carbamoyltransferase was several fold lower on double-stranded DNA, suggesting the preference of this enzyme for single-stranded DNA (Figure 6\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "24992d19-c181-4563-889a-ac49567266ff",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C67",
+      "claim": "When using synthesized single-stranded DNA oligo containing a single internal 5hmdC site as substrate, the conversion rate was nearly 100%.",
+      "claim_type": "EXPLICIT",
+      "source": "When using synthesized single-stranded DNA oligo containing a single internal 5hmdC site as substrate, the conversion rate was nearly 100% (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "3e93b9b3-9db1-4201-8251-e5aa9a0b34f5",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C68",
+      "claim": "About 60% conversion of 5-hydroxymethyl-2'-deoxycytidine triphosphate (5hmdCTP) was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "LC-MS results demonstrated about 60% conversion of 5-hydroxymethyl-2'-deoxycytidine triphosphate (5hmdCTP) (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "26fb2971-ec04-4a87-b4e3-1eece21e3af0",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C69",
+      "claim": "No activity was seen for 5-methyl-2'-deoxycytidine triphosphate (5mdCTP) or 5-hydroxymethyl-2'-deoxyuridine triphosphate (5hmdUTP), indicating the carbamoyltransferase is specific to 5hmdCTP.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, no activity was seen for 5-methyl-2'-deoxycytidine triphosphate (5mdCTP) or 5-hydroxymethyl-2'-deoxyuridine triphosphate (5hmdUTP), indicating the carbamoyltransferase is specific to 5hmdCTP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 6\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "f962d7c2-a5f3-42dc-80c0-3e663de83a2f",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C70",
+      "claim": "The carbamoyltransferase is active on 5hmdCTP, opening up the possibility that the reaction could take place before the nucleotide is incorporated into the phage DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that the carbamoyltransferase is active on 5hmdCTP (Figure 6C and Figure 6\u2014figure supplement 3A) opens up the possibility that the reaction could take place before the nucleotide is incorporated into the phage DNA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is speculation based on the experimental results.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "354ff7e6-5065-47c1-9865-3a8073b383a1",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C71",
+      "claim": "A decrease in deamination rate was only observed in the T4gt genome indicating specific carbamoylation on 5hmdC.",
+      "claim_type": "EXPLICIT",
+      "source": "We saw a decrease in deamination rate only in the T4gt genome indicating specific carbamoylation on 5hmdC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "f0e5a2e1-0f27-4aa9-aa48-808e81534947",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C72",
+      "claim": "All combinations of NCN motifs containing 5hmdC displayed comparable deamination levels compared to the control library, suggesting a general binding mechanism with no preferred context.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, all combinations of NCN motifs containing 5hmdC displayed comparable deamination levels compared to the control library, suggesting a general binding mechanism with no preferred context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "0961b51b-b0b4-408d-b84f-c14bec9c6536",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C73",
+      "claim": "5cmC is formed during the reaction with RNA containing 5-hydroxymethylcytosine, albeit at much lower yields.",
+      "claim_type": "EXPLICIT",
+      "source": "LC-MS and fragmentation pattern confirmed that 5cmC is formed during the reaction, albeit at much lower yields (Figure 6E and Figure 6\u2014figure supplement 3B-C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6E and Figure 6\u2014figure supplement 3B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "61f5a0c5-b373-4258-ad38-54f8143df543",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C74",
+      "claim": "Carbamoylation of free nucleotide 5-hydroxymethylcytidine triphosphate (5hmCTP) was detected.",
+      "claim_type": "EXPLICIT",
+      "source": "Carbamoylation of free nucleotide 5-hydroxymethylcytidine triphosphate (5hmCTP) was also detected (Figure 6F and Figure 6\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6F and Figure 6\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "fb7a8077-dc62-4424-9a6f-5c5e11c9d6b2",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C75",
+      "claim": "The novel nucleic acid-modifying enzyme identified from MetaGPA studies acts on DNA, RNA, and nucleotide triphosphates.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus concluded that this novel nucleic acid-modifying enzyme identified from MetaGPA studies acts on DNA, RNA, and nucleotide triphosphates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data showing activity on all three substrates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "3cc69f17-e4e3-498b-b82a-05be4b0b9d6d",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C76",
+      "claim": "MetaGPA is cost effective and requires reduced efforts.",
+      "claim_type": "EXPLICIT",
+      "source": "Being cost effective and requiring reduced efforts, MetaGPA essentially rests on two sequencing libraries derived from the same starting material: one library reflects all the organisms in the community while the other library results from a selection to only contain organisms with a phenotype of interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the practical advantages of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "3ca2e33e-f654-4b84-866d-1f3df24727fd",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C77",
+      "claim": "MetaGPA allows for candidate genes identification in less than a week.",
+      "claim_type": "EXPLICIT",
+      "source": "This experimental setup allows for candidate genes identification in less than a week.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the time efficiency of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "ca63c874-91da-4d28-a93d-31f668d83018",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C78",
+      "claim": "MetaGPA is phenotype-driven and the identification of candidate genes is agnostic to prior annotations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our MetaGPA study framework is phenotype-driven and the identification of candidate genes is agnostic to prior annotations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key feature of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "eebb14ad-b8cd-43ca-9bab-9cd1afb1b1dc",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C79",
+      "claim": "MetaGPA can be performed with any case/control cohort pair as long as distinct phenotypes can be partitioned through selection of the case cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "Theoretically, it can be performed with any case/control cohort pair as long as distinct phenotypes can be partitioned through selection of the case cohort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the broader applicability of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "b482c260-823f-4473-8f5f-9ec20ab05c65",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C80",
+      "claim": "The partitioning is crucial for MetaGPA to succeed and requires the development and optimization of the selection process for every new MetGPA application.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, this partitioning is crucial for MetaGPA to succeed and therefore requires the development and optimization of the selection process for every new MetGPA application.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the requirements for successful application of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "6b37a4a6-1a26-4e75-a003-c07bf0766ea8",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C81",
+      "claim": "The only reported carbamoylated nucleotide prior to this study is 5-carbamoylmethyluridine, which is located in the first position of the anticodon of yeast valine tRNA34.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, the only reported carbamoylated nucleotide is the 5-carbamoylmethyluridine, which is located in the first position of the anticodon of yeast valine tRNA34 (Yamamoto et al., 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Yamamoto et al., 1985.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "e1f9ddd5-db66-44d4-b941-4f196080e51e",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C82",
+      "claim": "The 5cmdC modification is most likely found in a bacteriophage.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the co-occurrence on the same contig of phage-specific genes (such as phage tail genes) with the 5-hydroxymethylcytosine carbamoyltransferase gene characterized in this study, the 5cmdC modification is most likely found in a bacteriophage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the genomic context of the identified gene.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "0d2c9ba1-a17a-4b6c-87b1-a35a1ea4ac51",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C83",
+      "claim": "All the cytosines in the phage containing the carbamoyltransferase are predicted to be modified.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of the nature of the MetaGPA selection and the fact that the carbamoyltransferase show no sequence specificity, we predict that all the cytosines in this phage are modified, possibly conferring the ability to escape most of the restriction digestion system found in bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the experimental design and results.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "21908ee9-517e-4493-a580-04b3bd7f35e9",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C84",
+      "claim": "The modification may confer the ability to escape most of the restriction digestion system found in bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of the nature of the MetaGPA selection and the fact that the carbamoyltransferase show no sequence specificity, we predict that all the cytosines in this phage are modified, possibly conferring the ability to escape most of the restriction digestion system found in bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the biological function of the modification.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "cc04ba91-f3ea-4ec1-bea8-bb4ff42f07fa",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C85",
+      "claim": "The evolutionary advantage may explain the prevalence of this enzyme family in the phage fraction of all the microbiomes investigated in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "This evolutionary advantage may explain the prevalence of this enzyme family in the phage fraction of all the microbiomes investigated in this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the evolutionary significance of the finding.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "96a0484e-e287-4225-a80b-c35e5be1ee9b",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C86",
+      "claim": "For scenarios where phenotypes are not physically coupled with DNA or RNA, selection will have to be done while preserving the integrity of cells and viral particles to retain the link between phenotype and genotype.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for other scenarios for which phenotypes are not physically coupled with DNA or RNA, selection will have to be done while preserving the integrity of cells and viral particles to retain the link between phenotype and genotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the requirements for applying MetaGPA to other phenotypes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "6ea67c40-8e40-472a-9b6e-14fb0e8d10e6",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C87",
+      "claim": "The limited availability of adequate selection processes that preserve links between phenotype and genotype may restrict the broader applicability of MetaGPA.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the limited availability of adequate selection processes that preserve such links may restrict the broader applicability of MetaGPA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the limitations of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "2e8939ea-71c0-405c-b831-117d9dbefa4e",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "claim_id": "C88",
+      "claim": "MetaGPA provides notable benefit for de novo exploratory discoveries especially with largely unknown microbial communities such as the virulome where existing knowledge is limited.",
+      "claim_type": "EXPLICIT",
+      "source": "For those applications for which a selection can be implemented, MetaGPA provides notable benefit for de novo exploratory discoveries especially with largely unknown microbial communities such as the virulome where existing knowledge is limited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the advantages of the method for certain applications.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "40eb2b1e-6cdb-4329-98b2-4c3d25b750c7",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed MetaGPA, a novel framework that links genetic information in metagenomes with functional phenotypes by using protein domain-level association analyses rather than sequence variations, requiring case and control cohorts derived from the same starting material.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C30-C33 collectively describe the MetaGPA method and its conceptual framework. The experimental design is clearly presented in Figures 1 and 2, showing the case/control setup and the use of protein domains as genetic markers. The method was successfully applied to identify cytosine-modifying enzymes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "b67b9275-a816-4379-9d96-a38b8d68d881",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The enzymatic selection method using APOBEC3A, USER, TET2, and T4-BGT successfully enriches DNA containing modified cytosines by approximately 70-fold, with 35% recovery of modified DNA and 0.5% recovery of unmodified DNA, and retains 48.6% of modified DNA even at 1:1000 dilution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C39 describe the enzymatic selection protocol and its validation. Figure 2B provides quantitative data showing the enrichment efficiency in mock communities. The method successfully distinguishes modified from unmodified DNA with high specificity and sensitivity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "15d618a3-f534-4155-86a4-858495496b84",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "MetaGPA analysis of three environmental samples (two sewage, one coastal) identified 3901 modified contigs representing 2-3.5% of total contigs, with 110 Pfam domains significantly associated with modifications (representing 2365 genes), and no false positives in control experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C45 present the core MetaGPA results from environmental samples. Figure 3 shows the experimental design and quantitative results. The statistical analysis with Bonferroni correction and negative control experiments strengthen confidence in the associations. The contig length distributions were comparable between modified and unmodified groups.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "bc1de5d0-79d9-43ff-86c7-318cb0ebae63",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "MetaGPA identified known DNA-modifying enzyme domains (thymidylate synthase, DNA ligase, cytidine deaminase) and revealed that carbamoyltransferase domains form distinct phylogenetic clades and co-occur with other modification-associated domains specifically in modified contigs, forming three interaction cores centered on thymidylate synthases, DNA ligases, and carbamoyltransferases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C52 describe validation of known enzymes and discovery of novel associations. Figures 4B-D show phylogenetic clustering, co-occurrence patterns, and network analysis. The identification of known enzymes validates the method, while the carbamoyltransferase associations represent novel findings supported by multiple lines of evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "72111de2-550b-49be-b95b-05c27cdc1e39",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The differential conservation score correctly identified positions 147 and 177 in thymidylate synthase as key residues, with position 177 showing Asn in unmodified contigs (dUMP substrate) and Asp in modified contigs (dCMP substrate), validating the method's ability to identify functionally critical residues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C58 demonstrate that MetaGPA can identify functionally important residues at single amino acid resolution. Figure 5 shows the differential conservation analysis correctly identifying known substrate specificity determinants in thymidylate synthase, validated by prior structural and biochemical studies (C53, C58). This provides strong validation of the residue-level analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "fe4226e3-a3bf-43ae-84a9-2c590bacbc7d",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A novel carbamoyltransferase enzyme was identified and characterized that catalyzes formation of 5-carbamoyloxymethylcytosine (5cmdC), a previously unknown modification, in DNA, RNA, and nucleotide triphosphates, with substrate specificity for 5hmdC/5hmC and preference for single-stranded substrates, achieving up to 100% conversion on synthetic oligonucleotides.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C9, C59-C61, C64-C69, and C75 describe the discovery and characterization of the novel enzyme. Figure 6 provides comprehensive LC-MS data, substrate specificity assays, and quantitative conversion rates. All substrates (carbamoyl phosphate, ATP, 5hmdC) and enzyme were shown to be essential. The modification is novel (C8, C60, C81) and the enzyme shows clear substrate specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "a112f1b1-9a63-4146-a0e9-1b834dbc49a6",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The carbamoyltransferase shows no sequence context preference, modifying all NCN motifs containing 5hmdC equally, as demonstrated by uniform protection from APOBEC3A deamination across all sequence contexts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72 describe sequence specificity analysis. Figure 6D shows that all NCN motifs with 5hmdC were equally protected from deamination after carbamoylation, indicating no sequence preference. This is consistent with the MetaGPA selection design that enriches for fully modified genomes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "ebaefaf3-0041-47e9-a4c8-43a3dc273f91",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The carbamoyltransferase can modify RNA containing 5-hydroxymethylcytosine and free 5hmCTP nucleotides, though RNA modification occurs at lower yields than DNA modification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C74 extend the substrate range to RNA. Figure 6E-F and supplementary figures show LC-MS evidence for 5cmC formation in RNA and 5hmCTP modification. The lower yields for RNA are clearly stated and documented, making this a well-supported finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "ea4b718c-d546-4834-afb1-31ca2eed448c",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "From 2365 candidate genes identified by MetaGPA, the study confirmed known pathways for cytosine modifications including thymidylate synthase and DNA ligase domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6 summarize the overall results. The identification of 2365 genes is supported by the statistical analysis (C44), and confirmation of known pathways (C46-C47) validates the approach. This represents a successful application of the method.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "eb831f6b-4da5-4221-a774-b15cdeb5af4a",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The 5cmdC modification is predicted to be found in bacteriophages with all cytosines modified, potentially conferring resistance to bacterial restriction systems, which may explain the prevalence of this enzyme family in phage fractions of the studied microbiomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C82-C85 are speculative inferences about the biological context and function. While the genomic context (phage-specific genes) supports a phage origin (C82), the claims about complete modification (C83), restriction system evasion (C84), and evolutionary advantage (C85) are reasonable hypotheses but lack direct experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "491dd555-20f6-4917-aa86-0b3880352253",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "MetaGPA is described as cost-effective, rapid (less than one week for candidate identification), phenotype-driven, annotation-agnostic, and theoretically applicable to any case/control pair, though requiring optimization of selection processes for each application.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C76-C80 make assertions about the method's practical advantages and broad applicability. While the experimental timeline and design support some claims (C76-C78), the assertions about cost-effectiveness, speed, and universal applicability (C79) are not rigorously demonstrated with comparative data or multiple phenotype applications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "21b6d46f-a48d-4d91-be47-770ce055b802",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "MetaGPA's broader applicability may be limited by the need to preserve phenotype-genotype links during selection, but it provides notable benefits for de novo discoveries in poorly characterized microbial communities like the virulome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C88 discuss limitations and advantages of the method. These are reasonable inferences based on the experimental design. The limitation regarding phenotype-genotype coupling (C86-C87) is a logical constraint, and the advantage for poorly characterized communities (C88) is supported by the successful application to environmental phage samples.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "fdad4ca9-4b41-4fdd-9091-ea8184d646b6",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The introduction establishes that while metagenomic sequencing enables study of unculturable microbes and has broad applications, functional annotation remains challenging due to limitations of homology-based methods and functional screens, and existing microbial GWAS approaches are limited to known isolates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C10-C28 provide background context supported by appropriate citations. These claims establish the motivation for developing MetaGPA by documenting the capabilities of metagenomics (C1, C10-C12), the challenges in functional annotation (C13-C15, C23-C25), and limitations of existing approaches (C26-C28). All claims are well-supported by citations to relevant literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "b9b8795c-c46b-4d40-bb3f-30b0b0667081",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "MetaGPA is conceptually similar to GWAS in that both associate genotypic data with phenotypic traits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C29 makes a valid conceptual comparison between MetaGPA and GWAS. Both methods use statistical association to link genetic markers with phenotypes, though they differ in the type of genetic markers used (protein domains vs. sequence variations, as stated in C30).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "4638dfe3-bd6a-4a50-a652-d93b07614c9d",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Complex DNA modifications in bacteriophages are typically carried out by multiple enzymes with clustered genes, exemplified by T4 phage where dCMP hydroxymethylase (homologous to thymidylate synthase) and \u03b2-glucosyltransferase genes co-occur to produce glycosylated 5hmC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49, C62-C63 provide relevant background about phage modification systems that informed the interpretation of MetaGPA results. These are well-established facts supported by appropriate citations and provide important context for understanding the carbamoyltransferase discovery.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "2725caa7-a433-4bb0-8445-bc47ca243157",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The carbamoyltransferase activity on 5hmdCTP raises the possibility that carbamoylation could occur before nucleotide incorporation into phage DNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C70 is explicitly speculative ('opens up the possibility'). While the enzyme activity on free nucleotides is demonstrated (C68), whether this represents the in vivo mechanism is not tested. This is a reasonable hypothesis for future investigation but lacks experimental support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    },
+    {
+      "id": "3736dd20-46cc-446a-a2dc-434acea30a0a",
+      "content_id": "a266638e-e6ec-4396-95f8-e73aed46dfbb",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Prior to this study, the only reported carbamoylated nucleotide was 5-carbamoylmethyluridine in yeast tRNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C81 provides important context about the novelty of the discovery, supported by citation to Yamamoto et al., 1985. This establishes that carbamoylated cytosine modifications represent a new class of nucleotide modifications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:44:22.071570Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c9e0f270-3f71-4ae9-a4c4-933d8cee4ff9",
+      "result_id": "40eb2b1e-6cdb-4329-98b2-4c3d25b750c7"
+    },
+    {
+      "claim_id": "208230d9-41d5-4c8b-8d23-b249a91d3e10",
+      "result_id": "40eb2b1e-6cdb-4329-98b2-4c3d25b750c7"
+    },
+    {
+      "claim_id": "22d9cb85-bb39-4713-8794-e4e2e1ef2162",
+      "result_id": "40eb2b1e-6cdb-4329-98b2-4c3d25b750c7"
+    },
+    {
+      "claim_id": "b0a55c42-3366-445a-9150-2717998d91c9",
+      "result_id": "40eb2b1e-6cdb-4329-98b2-4c3d25b750c7"
+    },
+    {
+      "claim_id": "cb46f677-bed4-471e-bd4a-f2b9e4cad989",
+      "result_id": "40eb2b1e-6cdb-4329-98b2-4c3d25b750c7"
+    },
+    {
+      "claim_id": "eba937a3-8c90-4abd-b26a-7b090eca049f",
+      "result_id": "40eb2b1e-6cdb-4329-98b2-4c3d25b750c7"
+    },
+    {
+      "claim_id": "721fbf6f-fbf8-4f4a-a242-9172a1d50a93",
+      "result_id": "b67b9275-a816-4379-9d96-a38b8d68d881"
+    },
+    {
+      "claim_id": "356ee529-ba12-4ac9-bc33-10e279772d66",
+      "result_id": "b67b9275-a816-4379-9d96-a38b8d68d881"
+    },
+    {
+      "claim_id": "7d01e568-44e3-4303-be3d-76c5ceaa7c65",
+      "result_id": "b67b9275-a816-4379-9d96-a38b8d68d881"
+    },
+    {
+      "claim_id": "1e9685a1-5ef5-42b5-97d6-3c37aa001231",
+      "result_id": "b67b9275-a816-4379-9d96-a38b8d68d881"
+    },
+    {
+      "claim_id": "4a2f0c63-0a6a-46bb-95e6-1b66bbd057ea",
+      "result_id": "b67b9275-a816-4379-9d96-a38b8d68d881"
+    },
+    {
+      "claim_id": "3b8c42c6-b4f8-4ad5-bf3b-5e3ff20291c4",
+      "result_id": "b67b9275-a816-4379-9d96-a38b8d68d881"
+    },
+    {
+      "claim_id": "b314cbf9-9275-4bee-8b66-9a7a10494d09",
+      "result_id": "15d618a3-f534-4155-86a4-858495496b84"
+    },
+    {
+      "claim_id": "aad0ecf1-06f2-4143-97fb-2b2ffbec5e40",
+      "result_id": "15d618a3-f534-4155-86a4-858495496b84"
+    },
+    {
+      "claim_id": "6b7f452e-4ce9-4916-a047-bf7a716946e9",
+      "result_id": "15d618a3-f534-4155-86a4-858495496b84"
+    },
+    {
+      "claim_id": "8cf746ca-6adf-4efc-94d6-f16da922aed8",
+      "result_id": "15d618a3-f534-4155-86a4-858495496b84"
+    },
+    {
+      "claim_id": "f1dea2f2-7d0c-437f-80be-45c1a6943397",
+      "result_id": "15d618a3-f534-4155-86a4-858495496b84"
+    },
+    {
+      "claim_id": "f72f171a-c7eb-4033-86e6-026484bb8644",
+      "result_id": "15d618a3-f534-4155-86a4-858495496b84"
+    },
+    {
+      "claim_id": "a257a07d-f062-4ed3-bce7-526edfb84d4a",
+      "result_id": "bc1de5d0-79d9-43ff-86c7-318cb0ebae63"
+    },
+    {
+      "claim_id": "ce9c6335-95af-438e-8be2-5c857cafd3a5",
+      "result_id": "bc1de5d0-79d9-43ff-86c7-318cb0ebae63"
+    },
+    {
+      "claim_id": "a8a42c14-ccd1-4151-acb5-95b4fac75a54",
+      "result_id": "bc1de5d0-79d9-43ff-86c7-318cb0ebae63"
+    },
+    {
+      "claim_id": "c070c7e8-10f2-4122-a663-ac321985d38d",
+      "result_id": "bc1de5d0-79d9-43ff-86c7-318cb0ebae63"
+    },
+    {
+      "claim_id": "a2a34431-0b0d-4ce0-895d-ba1add4724ad",
+      "result_id": "bc1de5d0-79d9-43ff-86c7-318cb0ebae63"
+    },
+    {
+      "claim_id": "5f4f3528-3a1a-4c58-99da-6bbf69013634",
+      "result_id": "bc1de5d0-79d9-43ff-86c7-318cb0ebae63"
+    },
+    {
+      "claim_id": "2d9994ea-a928-4071-9370-08acf7bb9bab",
+      "result_id": "72111de2-550b-49be-b95b-05c27cdc1e39"
+    },
+    {
+      "claim_id": "28bdddda-906a-404b-8658-662f7915bf80",
+      "result_id": "72111de2-550b-49be-b95b-05c27cdc1e39"
+    },
+    {
+      "claim_id": "e45e89e6-ed95-41ab-bbc9-20817fe3cb40",
+      "result_id": "72111de2-550b-49be-b95b-05c27cdc1e39"
+    },
+    {
+      "claim_id": "f54a1a27-a4f4-4a04-b849-1694baf050dd",
+      "result_id": "72111de2-550b-49be-b95b-05c27cdc1e39"
+    },
+    {
+      "claim_id": "90f4b0cd-eff6-468a-9cc7-0cfe169a71db",
+      "result_id": "72111de2-550b-49be-b95b-05c27cdc1e39"
+    },
+    {
+      "claim_id": "8c2c5338-9b51-4ea0-aa6c-f6a4c0777055",
+      "result_id": "72111de2-550b-49be-b95b-05c27cdc1e39"
+    },
+    {
+      "claim_id": "8913b8cf-6b24-4e0c-b79b-e1f9461a8aa2",
+      "result_id": "fe4226e3-a3bf-43ae-84a9-2c590bacbc7d"
+    },
+    {
+      "claim_id": "72b60399-6e47-4b6b-94c4-199c547395c1",
+      "result_id": "fe4226e3-a3bf-43ae-84a9-2c590bacbc7d"
+    },
+    {
+      "claim_id": "dad8ef40-3283-4310-b670-e7475602a7cd",
+      "result_id": "fe4226e3-a3bf-43ae-84a9-2c590bacbc7d"
+    },
+    {
+      "claim_id": "38fa0471-f090-48cc-a28e-65b094e2c0dd",
+      "result_id": "fe4226e3-a3bf-43ae-84a9-2c590bacbc7d"
+    },
+    {
+      "claim_id": "d4ca4538-ab03-4ac9-8f26-243c62222466",
+      "result_id": "fe4226e3-a3bf-43ae-84a9-2c590bacbc7d"
+    },
+    {
+      "claim_id": "3a7517c9-f44c-4f24-ab15-3b906616d15a",
+      "result_id": "fe4226e3-a3bf-43ae-84a9-2c590bacbc7d"
+    },
+    {
+      "claim_id": "a9b564c3-5171-4f3b-bd66-fa558df9f7bd",
+      "result_id": "fe4226e3-a3bf-43ae-84a9-2c590bacbc7d"
+    },
+    {
+      "claim_id": "5ced2db0-d2fc-4a6e-b701-42857291505f",
+      "result_id": "fe4226e3-a3bf-43ae-84a9-2c590bacbc7d"
+    },
+    {
+      "claim_id": "6497faf3-d857-40b9-a747-a926c5d7912f",
+      "result_id": "fe4226e3-a3bf-43ae-84a9-2c590bacbc7d"
+    },
+    {
+      "claim_id": "24992d19-c181-4563-889a-ac49567266ff",
+      "result_id": "fe4226e3-a3bf-43ae-84a9-2c590bacbc7d"
+    },
+    {
+      "claim_id": "3e93b9b3-9db1-4201-8251-e5aa9a0b34f5",
+      "result_id": "fe4226e3-a3bf-43ae-84a9-2c590bacbc7d"
+    },
+    {
+      "claim_id": "26fb2971-ec04-4a87-b4e3-1eece21e3af0",
+      "result_id": "fe4226e3-a3bf-43ae-84a9-2c590bacbc7d"
+    },
+    {
+      "claim_id": "fb7a8077-dc62-4424-9a6f-5c5e11c9d6b2",
+      "result_id": "fe4226e3-a3bf-43ae-84a9-2c590bacbc7d"
+    },
+    {
+      "claim_id": "354ff7e6-5065-47c1-9865-3a8073b383a1",
+      "result_id": "a112f1b1-9a63-4146-a0e9-1b834dbc49a6"
+    },
+    {
+      "claim_id": "f0e5a2e1-0f27-4aa9-aa48-808e81534947",
+      "result_id": "a112f1b1-9a63-4146-a0e9-1b834dbc49a6"
+    },
+    {
+      "claim_id": "0961b51b-b0b4-408d-b84f-c14bec9c6536",
+      "result_id": "ebaefaf3-0041-47e9-a4c8-43a3dc273f91"
+    },
+    {
+      "claim_id": "61f5a0c5-b373-4258-ad38-54f8143df543",
+      "result_id": "ebaefaf3-0041-47e9-a4c8-43a3dc273f91"
+    },
+    {
+      "claim_id": "16f46a64-d677-4160-9d62-f8fc6be61936",
+      "result_id": "ea4b718c-d546-4834-afb1-31ca2eed448c"
+    },
+    {
+      "claim_id": "7de0185f-908a-4149-9d9e-bd1ec2484f72",
+      "result_id": "ea4b718c-d546-4834-afb1-31ca2eed448c"
+    },
+    {
+      "claim_id": "e1f9ddd5-db66-44d4-b941-4f196080e51e",
+      "result_id": "eb831f6b-4da5-4221-a774-b15cdeb5af4a"
+    },
+    {
+      "claim_id": "0d2c9ba1-a17a-4b6c-87b1-a35a1ea4ac51",
+      "result_id": "eb831f6b-4da5-4221-a774-b15cdeb5af4a"
+    },
+    {
+      "claim_id": "21908ee9-517e-4493-a580-04b3bd7f35e9",
+      "result_id": "eb831f6b-4da5-4221-a774-b15cdeb5af4a"
+    },
+    {
+      "claim_id": "cc04ba91-f3ea-4ec1-bea8-bb4ff42f07fa",
+      "result_id": "eb831f6b-4da5-4221-a774-b15cdeb5af4a"
+    },
+    {
+      "claim_id": "3cc69f17-e4e3-498b-b82a-05be4b0b9d6d",
+      "result_id": "491dd555-20f6-4917-aa86-0b3880352253"
+    },
+    {
+      "claim_id": "3ca2e33e-f654-4b84-866d-1f3df24727fd",
+      "result_id": "491dd555-20f6-4917-aa86-0b3880352253"
+    },
+    {
+      "claim_id": "ca63c874-91da-4d28-a93d-31f668d83018",
+      "result_id": "491dd555-20f6-4917-aa86-0b3880352253"
+    },
+    {
+      "claim_id": "eebb14ad-b8cd-43ca-9bab-9cd1afb1b1dc",
+      "result_id": "491dd555-20f6-4917-aa86-0b3880352253"
+    },
+    {
+      "claim_id": "b482c260-823f-4473-8f5f-9ec20ab05c65",
+      "result_id": "491dd555-20f6-4917-aa86-0b3880352253"
+    },
+    {
+      "claim_id": "96a0484e-e287-4225-a80b-c35e5be1ee9b",
+      "result_id": "21b6d46f-a48d-4d91-be47-770ce055b802"
+    },
+    {
+      "claim_id": "6ea67c40-8e40-472a-9b6e-14fb0e8d10e6",
+      "result_id": "21b6d46f-a48d-4d91-be47-770ce055b802"
+    },
+    {
+      "claim_id": "2e8939ea-71c0-405c-b831-117d9dbefa4e",
+      "result_id": "21b6d46f-a48d-4d91-be47-770ce055b802"
+    },
+    {
+      "claim_id": "6428583b-af16-4e45-acb9-4bc644a7753f",
+      "result_id": "fdad4ca9-4b41-4fdd-9091-ea8184d646b6"
+    },
+    {
+      "claim_id": "34e7d6fa-f4cf-4af9-b109-58ddf310b87e",
+      "result_id": "fdad4ca9-4b41-4fdd-9091-ea8184d646b6"
+    },
+    {
+      "claim_id": "cb585f12-d2fb-41a2-848e-d2e1f7e95734",
+      "result_id": "fdad4ca9-4b41-4fdd-9091-ea8184d646b6"
+    },
+    {
+      "claim_id": "2b13f488-ba69-4611-a3e7-e4d4da73a008",
+      "result_id": "fdad4ca9-4b41-4fdd-9091-ea8184d646b6"
+    },
+    {
+      "claim_id": "78e63a8c-3d6a-4119-afa0-2746203bdef5",
+      "result_id": "fdad4ca9-4b41-4fdd-9091-ea8184d646b6"
+    },
+    {
+      "claim_id": "61eaf955-c579-4d49-a000-b255c324a129",
+      "result_id": "fdad4ca9-4b41-4fdd-9091-ea8184d646b6"
+    },
+    {
+      "claim_id": "6b9d1291-f021-423b-83ef-ded367338708",
+      "result_id": "fdad4ca9-4b41-4fdd-9091-ea8184d646b6"
+    },
+    {
+      "claim_id": "f97c39d1-95ab-4724-8b86-67222cd2ac22",
+      "result_id": "fdad4ca9-4b41-4fdd-9091-ea8184d646b6"
+    },
+    {
+      "claim_id": "179fc1ce-57f6-4ae9-97e0-56bc4f53dd92",
+      "result_id": "fdad4ca9-4b41-4fdd-9091-ea8184d646b6"
+    },
+    {
+      "claim_id": "7e81e40a-8ddc-4329-a1c6-68c6507831f0",
+      "result_id": "fdad4ca9-4b41-4fdd-9091-ea8184d646b6"
+    },
+    {
+      "claim_id": "f93ac110-817b-41a1-9f38-8488c7bdd06a",
+      "result_id": "fdad4ca9-4b41-4fdd-9091-ea8184d646b6"
+    },
+    {
+      "claim_id": "97c9ef3c-b2b2-4ac9-b6cc-8b6d4e9f0085",
+      "result_id": "fdad4ca9-4b41-4fdd-9091-ea8184d646b6"
+    },
+    {
+      "claim_id": "6e238ba1-5e9f-4f29-9658-c14f09a0eaf0",
+      "result_id": "fdad4ca9-4b41-4fdd-9091-ea8184d646b6"
+    },
+    {
+      "claim_id": "083a4b1a-7e93-4c52-9331-4d8fa502bf22",
+      "result_id": "fdad4ca9-4b41-4fdd-9091-ea8184d646b6"
+    },
+    {
+      "claim_id": "3f98b69b-205b-4041-95fb-589dd0984c1e",
+      "result_id": "fdad4ca9-4b41-4fdd-9091-ea8184d646b6"
+    },
+    {
+      "claim_id": "4bea35a4-af9f-4aea-a945-57fbbc930217",
+      "result_id": "fdad4ca9-4b41-4fdd-9091-ea8184d646b6"
+    },
+    {
+      "claim_id": "8c641c90-0de4-4162-bbaa-015eb3d2f452",
+      "result_id": "fdad4ca9-4b41-4fdd-9091-ea8184d646b6"
+    },
+    {
+      "claim_id": "a2c7d383-59e0-4dba-9ea7-6eb4f7768549",
+      "result_id": "fdad4ca9-4b41-4fdd-9091-ea8184d646b6"
+    },
+    {
+      "claim_id": "4ef4c8e0-44d8-4430-837b-a8e2f98f5260",
+      "result_id": "fdad4ca9-4b41-4fdd-9091-ea8184d646b6"
+    },
+    {
+      "claim_id": "2c3a93f8-19b4-4892-a77d-4d718e6471fd",
+      "result_id": "fdad4ca9-4b41-4fdd-9091-ea8184d646b6"
+    },
+    {
+      "claim_id": "5992791d-6c5d-48fa-a70e-58c481e3e1e6",
+      "result_id": "fdad4ca9-4b41-4fdd-9091-ea8184d646b6"
+    },
+    {
+      "claim_id": "d6f78914-d06c-4970-a406-05f53a0e8ae2",
+      "result_id": "b9b8795c-c46b-4d40-bb3f-30b0b0667081"
+    },
+    {
+      "claim_id": "59d74e36-edc1-47a1-baae-a8b214a2efba",
+      "result_id": "4638dfe3-bd6a-4a50-a652-d93b07614c9d"
+    },
+    {
+      "claim_id": "a2cd879e-d13d-4d82-9a85-e9647cc0d727",
+      "result_id": "4638dfe3-bd6a-4a50-a652-d93b07614c9d"
+    },
+    {
+      "claim_id": "6aa5e3ad-fd3a-4bae-b38c-40740364dee3",
+      "result_id": "4638dfe3-bd6a-4a50-a652-d93b07614c9d"
+    },
+    {
+      "claim_id": "f962d7c2-a5f3-42dc-80c0-3e663de83a2f",
+      "result_id": "2725caa7-a433-4bb0-8445-bc47ca243157"
+    },
+    {
+      "claim_id": "6b37a4a6-1a26-4e75-a003-c07bf0766ea8",
+      "result_id": "3736dd20-46cc-446a-a2dc-434acea30a0a"
+    }
+  ],
+  "comparisons": []
+}

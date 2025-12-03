@@ -1,0 +1,2381 @@
+{
+  "submission": {
+    "id": "596fee13-ac99-4485-9085-3c65fa958384",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T05:27:36.282052Z",
+    "updated_at": "2025-12-03T05:27:36.282052Z"
+  },
+  "content": [
+    {
+      "id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "submission_id": "596fee13-ac99-4485-9085-3c65fa958384",
+      "content_type": "manuscript",
+      "content_text": "# ADF and cofilin-1 collaborate to promote cortical actin flow and the leader bleb-based migration of confined cells\n\n## Authors\n\n- Maria F Ullo<sup>1</sup>\n- Jeremy S Logue<sup>1</sup> ([ORCID: 0000-0002-5274-2052](https://orcid.org/0000-0002-5274-2052)) \u2020\n\n### Affiliations\n\n1. Department of Regenerative and Cancer Cell Biology, Albany Medical College Albany United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMelanoma cells have been shown to undergo fast amoeboid (leader bleb-based) migration, requiring a single large bleb for migration. In leader blebs, is a rapid flow of cortical actin that drives the cell forward. Using RNAi, we find that co-depleting cofilin-1 and actin depolymerizing factor (ADF) led to a large increase in cortical actin, suggesting that both proteins regulate cortical actin. Furthermore, severing factors can promote contractility through the regulation of actin architecture. However, RNAi of cofilin-1 but not ADF led to a significant decrease in cell stiffness. We found cofilin-1 to be enriched at leader bleb necks, whereas RNAi of cofilin-1 and ADF reduced bleb sizes and the frequency of motile cells. Strikingly, cells without cofilin-1 and ADF had blebs with abnormally long necks. Many of these blebs failed to retract and displayed slow actin turnover. Collectively, our data identifies cofilin-1 and ADF as actin remodeling factors required for fast amoeboid migration.\n\n## Introduction\n\nCell migration requires tight spatiotemporal control of the filamentous-actin (F-actin) cytoskeleton. For mesenchymal migration, actin assembly/disassembly and myosin contraction must occur within specific regions of the cell (Pollard and Borisy, 2003). Relative to other, recently described modes of migration, the mechanisms by which mesenchymal cells coordinate these processes are reasonably well understood. Whereas, in amoeboid cells, which migrate using intracellular-driven protrusions of the plasma membrane (PM) or blebs, the mechanisms conferring spatiotemporal control of the F-actin cytoskeleton are not well known.\n\nWithin tissues, cells encounter a variety of physicochemical environments. We and others discovered that in response to tissue confinement, cancer cells frequently undergo phenotypic transitions, including to what has been termed \u2018fast amoeboid migration\u2019 (Logue et al., 2015; Liu et al., 2015; Ruprecht et al., 2015; Bergert et al., 2015; Mistriotis et al., 2019; Wisniewski et al., 2020). A hallmark of amoeboid migration is the presence of blebs, which form as a result of PM-cortical actin separation (Charras et al., 2008). Typically, blebs are rapidly retracted following the reassembly of cortical actin on bleb membranes and the recruitment of myosin (Charras et al., 2008). However, during fast amoeboid migration, cells form a very large and stable bleb. Within these blebs, is a cortical actin network that flows from the bleb tip to the neck, which separates leader blebs from the cell body (Logue et al., 2015; Liu et al., 2015; Ruprecht et al., 2015; Bergert et al., 2015). Together with non-specific friction, flowing cortical actin provides the motive force for cell movement (Ruprecht et al., 2015). Accordingly, we simultaneously termed this mode of migration, leader bleb-based migration (LBBM) (Logue et al., 2015). Because migration plasticity is thought to be a major contributor of metastasis, our aim here is to identify the essential factors required for the rapid cortical actin flow in leader blebs.\n\nPrevious studies have demonstrated that myosin is enriched at the neck of leader blebs. Indeed, the myosin at this location has been shown to be required for rapid cortical actin flow (Liu et al., 2015; Ruprecht et al., 2015; Bergert et al., 2015). However, what drives the disassembly of F-actin at the neck to replenish the pool of G-actin at the leader bleb tip is unknown. Thus, we hypothesize that actin disassembly factors within leader blebs play a pivotal role in this process. Similarly, in mesenchymal cells, retrograde actin flow is driven by both myosin contraction and actin disassembly, the latter of which is accelerated by the actin depolymerizing factor\u00a0(ADF)/cofilin family of severing factors (Bravo-Cordero et al., 2013). Severing depends on ADF/cofilin inducing a structural change within the actin filament, an activity known to be repressed by LIM kinase (LIMK) phosphorylation on Ser 3 (Yang et al., 1998). However, the consequence of actin severing is variable, depending on the availability of barbed end capping proteins. At a sufficiently high level, new barbed ends are capped, promoting actin disassembly from new pointed ends (Wioland et al., 2017). Conversely, if left uncapped, increased polymerization from new barbed ends may occur (Wioland et al., 2017). The effects of ADF/cofilin on actin severing is also concentration dependent, where low and high levels of ADF/cofilin sever and stabilize actin filaments, respectively (Andrianantoandro and Pollard, 2006). Additionally, by competing for F-actin binding (e.g., Arp2/3) and other mechanisms, ADF/cofilin can regulate actin architecture (Chan et al., 2009; Gressin et al., 2015). The effects of ADF/cofilin on cortical actin are even less certain, as the focus of many studies has been on the actin within lamellipodia. Although Wiggan et al. have previously reported bleb defects in HeLa cells depleted of actin severing factors, the role of ADF and cofilin-1 in regulating the cortical actomyosin flow in fast amoeboid cells has not been determined (Wiggan et al., 2012).\n\nBy combining an in vitro assay for the precise confinement of cells with quantitative imaging approaches, we report that ADF and cofilin-1, together, are required for the rapid disassembly of incoming cortical actin at leader bleb necks. Under conditions of confinement, we find that melanoma and lung adenocarcinoma cells depleted of both proteins display dramatic defects in bleb morphology and dynamics. Consequently, cells without ADF and cofilin-1 cannot undergo LBBM. Thus, we reveal unanticipated roles for ADF and cofilin-1 in driving confined (leader bleb-based) migration.\n\n## Results\n\n### ADF and cofilin-1 are required for LBBM\n\nUsing our previously described approach for cell confinement, which involves placing cells under a slab of PDMS held at a defined height (~3 \u00b5m) above cover glass, cancer cells will switch to LBBM (Figure 1A and Video 1; Logue et al., 2018). Moreover, within leader blebs, we find a rapid flow of cortical actin, which together with non-specific friction, provides the motive force for cell movement (Figure 1B and Video 2; Bergert et al., 2015). As indicated by an enrichment in EGFP tagged regulatory light chain (EGFP-RLC), we observe a concentration of myosin at the leader bleb neck that separates the leader bleb from the cell body (Figure 1C and Video 2; Liu et al., 2015; Ruprecht et al., 2015; Bergert et al., 2015). In concert with myosin, we wondered if the cortical actin flow in leader blebs requires the action of specific actin disassembly factors.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/67856/elife-67856-fig1-v2.jpg)\n\n**Figure 1.:** (A)\u00a0Ventral Z-section of a melanoma A375-M2 cell, which has been confined down to 3 \u00b5m, with mEmerald-LifeAct. (B) Kymograph from (A; dashed line), showing cortical actin flow. (C) Ventral Z-section of a melanoma A375-M2 cells, which has been confined down to 3 \u00b5m, with EGFP\u00a0tagged regulatory light chain (EGFP-RLC). (D) Western blot confirming CFL1, actin depolymerizing factor\u00a0(ADF), and ADF + CFL1 RNAi in melanoma A375-M2 cells. (E) Individual cell migration tracks (plot of origin) for non-targeting, CFL1, ADF, and CFL1 + ADF RNAi cells, as well as CFL1 + ADF RNAi cells rescued by transfection with EGFP-cofilin-1 plasmid. In each, cells were tracked over a period of 5 hr. Relative y (\u00b5m) and relative \u00d7 (\u00b5m) are shown in each. (F) Percentage of highly motile cells from (E). Cells that traveled a distance equivalent to at least one cell length over the course of the 5 hr time-lapse were classified as highly motile. (G) Average speed (\u00b5m/min) from cells in (E; mean \u00b1 SEM). Statistical significance was determined by one-way ANOVA and a Dunnett\u2019s post\u00a0hoc test. (H) Instantaneous top speed (\u00b5m/min) for highly motile cells in (E; mean \u00b1 SEM). (I) Cofilin-1 levels (fold change; fluorescence intensity) of adhered RNAi cells by immunofluorescence confirming rescue by transfection with EGFP-cofilin-1 or not rescued with EGFP. Statistical significance was determined by an unpaired one-sample t-test. All data are representative of at least three independent experiments. *p \u2264 0.05, **p \u2264 0.01, ***p \u2264 0.001, and ****p \u2264 0.0001.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67856/elife-67856-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A)\u00a0Quantitative evaluation of cofilin-1 (left) and actin depolymerizing factor\u00a0(ADF) (right) RNAi as measured by Western blotting of total cell lysates.\u00a0(B) Quantitative evaluation of cofilin-1 and ADF mRNA levels by qRT-PCR in A375-M2 cells (mean \u00b1 SEM). (C) Direction autocorrelation plots of confined highly motile cells after RNAi. (D) Transmigration of melanoma A375-M2 cells through 8 (above) or 12 \u00b5m (below) pores after non-targeting, CFL1, ADF, and CFL1 + ADF RNAi. Statistical significance was determined by one-way ANOVA and a Dunnet\u2019s post\u00a0hoc test. All data are representative of at least three independent experiments. *p \u2264 0.05, **p \u2264 0.01, ***p \u2264 0.001, and ****p \u2264 0.0001.\n\n![Video 1.](https://cdn.elifesciences.org/articles/67856/elife-67856-video1.mp4.jpg)\n\n![Video 2.](https://cdn.elifesciences.org/articles/67856/elife-67856-video2.mp4.jpg)\n\nIn addition to being frequently up-regulated in cancer, the ADF/cofilin family of actin severing factors are known to be essential for actin turnover in mesenchymal cells (Bravo-Cordero et al., 2013; Bracalente et al., 2018). Therefore, we set out to determine if ADF and/or cofilin-1 are important for LBBM. In melanoma A375 cells, a widely used cell line for the study of amoeboid migration, both ADF and cofilin-1 are expressed, with cofilin-1 mRNA levels being threefold higher (Figure 1\u2014figure supplement 1B). Using A375 cells, we depleted cells of ADF and cofilin-1 alone and together by RNAi (Figure 1D and Figure 1\u2014figure supplement 1A). By manually tracking the movement of cells over time, we found that cells depleted of cofilin-1 were significantly less motile (Figure 1E\u2013H and Figure 1\u2014figure supplement 1C). Additionally, the adhesive transmigration of cells through small pores was hindered after depleting cofilin-1 (Figure 1\u2014figure supplement 1D). Depleting cells of ADF led to a slight reduction in the number of highly motile cells (Figure 1E\u2013H and Figure 1\u2014figure supplement 1C). Strikingly, depleting cells of both ADF and cofilin-1 appeared to have an additive effect on reducing LBBM, whereas the adhesive transmigration of cells through small pores did not display this additive behavior and was not affected by ADF depletion (Figure 1E\u2013H and Figure 1\u2014figure supplement 1D). These results suggest that these proteins play non-overlapping roles during LBBM (Figure 1E\u2013H). In agreement with this concept, transfection of EGFP-cofilin-1 into cells depleted of both proteins was insufficient to restore LBBM (Figure 1E\u2013I).\n\n### Together, ADF and cofilin-1 are required to retract blebs\n\nSubsequently, we wanted to know what is responsible for the decrease in LBBM upon depleting ADF and/or cofilin-1. Initially, we analyzed the area of the largest bleb (i.e., leader bleb), relative to the cell body, in cells depleted of ADF and/or cofilin-1. This analysis revealed that depleting cells of cofilin-1 reduced the area of the largest bleb by ~15% of control while depleting cells of both ADF and cofilin-1 reduced the area of the largest bleb by ~40% of control (non-targeting; Figure 2A\u2013B and Videos 3\u20135). The area of all blebs was similarly reduced (Figure 2C). Strikingly, in cells depleted of both ADF and cofilin-1, ~30% of cells displayed blebs with elongated necks (Figure 2A,D and Video 6). Detailed analyses of these cells revealed that ~60% display blebs that never retract into the cell body (Figure 2E). Moreover, we found this effect to not be specific to melanoma A375 cells, as depleting lung adenocarcinoma A549 cells of both ADF and cofilin-1 similarly resulted in the elongation of bleb necks (Figure 2F\u2013G). In melanoma A375 cells, depleting both ADF and cofilin-1 had an additive effect on reducing the rate of bleb retraction, which points to these proteins having non-overlapping functions specifically at bleb necks (Figure 2H). In support of this role, we determined the location of EGFP-cofilin-1 in confined cells. Our initial efforts were unsuccessful because of a high degree of soluble (i.e., unbound to F-actin) protein, but in cells depleted of endogenous ADF and cofilin-1 we could detect an enrichment of EGFP-cofilin-1 at leader bleb necks (Figure 2I; arrow).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/67856/elife-67856-fig2-v2.jpg)\n\n**Figure 2.:** (A)\u00a0Montage of non-targeting, CFL1, ADF, and CFL1 + ADF RNAi with EGFP alone (volume marker) in melanoma A375-M2 cells. (B\u2013C) Quantitation of area for leader (A) and all blebs (B) after non-targeting, CFL1, ADF, and ADF + CFL1 RNAi. Statistical significance was determined by one-way ANOVA and a Dunnet\u2019s post\u00a0hoc test. (D) Percent of non-targeting, CFL1, ADF, and CFL1 + ADF RNAi cells with elongated bleb necks. (E) Percent of ADF + CFL1 RNAi cells from (D) with elongated bleb necks that retract vs. un-retracted. (F\u2013G) Lung adenocarcinoma A549 cells after non-targeting and CFL1 + ADF RNAi stained with a far-red fluorescent membrane dye (F). Percent of non-targeting, CFL1, ADF, and CFL1 + ADF RNAi cells with elongated bleb necks (G). (H) Bleb retraction rates for non-targeting (45 blebs; 26 cells), CFL1 (40 blebs; 20 cells), ADF (48 blebs; 30 cells), and CFL1 + ADF RNAi (38 blebs; 23 cells). Statistical significance was determined by one-way ANOVA and a Dunnet\u2019s post\u00a0hoc test. (I) EGFP-cofilin-1 localization in an A375-M2 cell confined down to 3 \u00b5m. Arrow points to an enrichment of cofilin-1 at the leader bleb neck. (I\u2019) Regional analysis of EGFP-cofilin-1 average fluorescence intensity in ROIs sampled from bleb neck to tip (mean \u00b1 SEM). Representative regions taken within white box and dashed lines in (I). All data are representative of at least three independent experiments. *p \u2264 0.05, **p \u2264 0.01, ***p \u2264 0.001, and ****p \u2264 0.0001.\n\n![Video 3.](https://cdn.elifesciences.org/articles/67856/elife-67856-video3.mp4.jpg)\n\n![Video 4.](https://cdn.elifesciences.org/articles/67856/elife-67856-video4.mp4.jpg)\n\n![Video 5.](https://cdn.elifesciences.org/articles/67856/elife-67856-video5.mp4.jpg)\n\n![Video 6.](https://cdn.elifesciences.org/articles/67856/elife-67856-video6.mp4.jpg)\n\n### ADF and cofilin-1 rapidly disassemble cortical actin\n\nThus far, our results suggest that ADF and cofilin-1 are important for the rapid turnover of cortical actin at bleb necks. In agreement with this concept, a large concentration of F-actin is found at the necks of blebs in cells depleted of ADF and cofilin-1 (Figure 3A). In order to more directly test the role of ADF and cofilin-1 in regulating cortical actin, we turned to freshly trypsinized (spherical) cells. Previous work by us and others has shown that the properties of the cortical actin network in spherical cells correlate with LBBM (Logue et al., 2015; Liu et al., 2015; Bergert et al., 2012). In spherical cells, actin is predominantly cortical and endogenous cofilin-1 is diffuse throughout the cytoplasm with some enrichment at the cell periphery (Figure 3B). By combining the specificity of phalloidin for F-actin with flow cytometry, we then determined how the level of cortical actin is affected by ADF and/or cofilin-1 depletion. In cells depleted of cofilin-1, F-actin levels were increased by ~10%, whereas depletion of ADF did not lead to a significant change in the level of F-actin (Figure 3C). Interestingly, depleting ADF with cofilin-1 had the largest effect, increasing F-actin levels by ~30% (Figure 3C). Serine 3 of cofilin-1 is phosphorylated by LIMK, inhibiting its severing activity (Yang et al., 1998). In cells depleted of endogenous ADF and cofilin-1, transfection of EGFP-cofilin-1 reduced the level of F-actin to levels similar to control (non-target; Figure 3D). Similarly, F-actin was restored to near control levels by transfection of EGFP-cofilin-1 (S3A; constitutively active), whereas transfection of EGFP-cofilin-1 (S3E; constitutively inactive) led to an increased level of F-actin (Figure 3D). Additionally, in comparison to EGFP alone, increasing levels of EGFP-cofilin-1 correlated with reductions in F-actin (Figure 3E). Thus, cortical actin levels are regulated by ADF and cofilin-1 severing.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/67856/elife-67856-fig3-v2.jpg)\n\n**Figure 3.:** (A)\u00a0mEmerald-LifeAct and far-red fluorescent membrane dye in cells after non-targeting and CFL1 + ADF RNAi. (B) Cells freshly plated on poly-L-lysine coated cover\u00a0glass stained for endogenous cofilin-1 and filamentous-actin (F-actin) (phalloidin). (C) F-actin levels (normalized to non-target; mean \u00b1 SEM) after CFL1, ADF, and CFL1 + ADF RNAi in trypsinized (spherical) cells, as determined by flow cytometry. Statistical significance was determined by one-way ANOVA and a Dunnet\u2019s post\u00a0hoc test. (D) F-actin levels (normalized to non-target; mean \u00b1 SEM) after CFL1 + ADF RNAi, as well as after CFL1 + ADF RNAi with EGFP-cofilin-1 WT, S3A, or S3E, as determined by flow cytometry. Statistical significance was determined by one-way ANOVA and a Dunnet\u2019s post\u00a0hoc test. (E) F-actin level (normalized to EGFP alone; mean \u00b1 SEM) as a function of increasing EGFP-cofilin-1 in cells depleted of endogenous cofilin-1 and ADF by RNAi, as determined by flow cytometry. Statistical significance was determined by one-way ANOVA and a Dunnet\u2019s post\u00a0hoc test. (F) Top, barbed end assay workflow. Bottom, representative image of a freshly plated (spherical) cell subjected to the barbed end assay. (G) As shown in (F; bottom), the level of cortical barbed ends was measured in cells after non-targeting (71 cells), CFL1 (53 cells), ADF (47 cells), and CFL1 + ADF RNAi (83 cells). Statistical significance was determined by one-way ANOVA and a Dunnet\u2019s post\u00a0hoc test. (H) As shown in (F; bottom), the level of cortical barbed ends was measured in cells with non-targeting and EGFP (42 cells), as well as after CFL1 + ADF RNAi with EGFP (32 cells) or EGFP-cofilin-1 (27 cells). Statistical significance was determined by one-way ANOVA and a Dunnet\u2019s post\u00a0hoc test. All data are representative of at least three independent experiments. *p \u2264 0.05, **p \u2264 0.01, ***p \u2264 0.001, and ****p \u2264 0.0001.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67856/elife-67856-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A)\u00a0Cortical barbed end levels in melanoma A375-M2 cells after vehicle (DMSO; 53 cells) or cytochalasin B (2 \u00b5M; 24 cells) treatment.\u00a0Statistical significance was determined using an unpaired Student\u2019s t-test. All data are representative of at least three independent experiments. *p \u2264 0.05, **p \u2264 0.01, ***p \u2264 0.001, and ****p \u2264 0.0001.\n\nMany studies have shown that cofilin-1 severing can result in distinct outcomes. In lamellipodia, cofilin-1 severing promotes actin polymerization at new barbed ends, whereas in the lamella, actin is de-polymerized at new pointed ends (Bravo-Cordero et al., 2013). The prevalence of each outcome has been proposed to depend on the concentration of capping proteins (Wioland et al., 2017). Therefore, we determined the relative level of barbed ends within the cortical actin network of freshly trypsinized (spherical) cells. The treatment of cells with cytochalasin B (which blocks G-actin from binding the barbed end) confirmed the specificity of the approach (Figure 3\u2014figure supplement 1A). In cells depleted of cofilin-1, we observed a more than ~50% increase the level of cortical barbed ends, whereas depleting ADF marginally increased the level of cortical barbed ends (Figure 3G). Depleting cells of both proteins appeared to have an additive effect, increasing the level of cortical barbed ends by ~100% (Figure 3G). However, in cells depleted of ADF and cofilin-1, transfection of EGFP-cofilin-1 was sufficient to restore cortical barbed ends to a level similar to control (Figure 3H). Collectively, these results suggest that ADF and cofilin-1 regulate cortical actin levels by promoting the de-polymerization of actin at newly formed pointed ends.\n\n### Rapid cortical actin flow requires ADF and cofilin-1 severing at leader bleb necks\n\nLasting changes in the F/G-actin ratio, such as occurs during RNAi of ADF and/or cofilin-1, can have a range of effects on cellular physiology. Therefore, using a previously described SuperNova-cofilin-1 construct, we performed chromophore assisted light inactivation (CALI) for establishing the direct effects of cofilin-1 depletion (Vitriol et al., 2013; Takemoto et al., 2013). In cells depleted of ADF and cofilin-1, SuperNova-cofilin-1 is predominantly observed at leader bleb necks (Figure 4A). After 1 min of intense red light irradiation, we found that ~50% of SuperNova-cofilin-1 is destroyed, as indicated by a reduction in red fluorescence (Figure 4A). Using LifeAct-mEmerald for monitoring actin dynamics, we observed an accumulation of actin and the elongation of leader bleb necks within minutes of inactivating cofilin-1 (Figure 4B and Video 7). Moreover, after inactivating SuperNova-cofilin-1, cortical actin flow rates in leader blebs were reduced by ~50%, whereas irradiation of SuperNova alone did not change actin flow rates (Figure 4C\u2013D and Figure 4\u2014figure supplement 1A). Thus, as demonstrated by CALI, cofilin-1 directly regulates the cortical actin in leader blebs.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/67856/elife-67856-fig4-v2.jpg)\n\n**Figure 4.:** (A)\u00a0Left, SuperNova-cofilin-1 localization in cells depleted of endogenous cofilin-1 and ADF by RNAi before and after 1 min of red light irradiation. Right, quantitative analysis of CALI, as determined by the fold change in SuperNova emission. (B) Montage of mEmerald-LifeAct before and after cofilin-1 inactivation in a cell depleted of endogenous cofilin-1 and ADF by RNAi. (C) Kymographs of cortical actin (mEmerald-LifeAct) flow from the leader bleb tip before and after cofilin-1 inactivation. (D) Quantitative evaluation of cortical actin flow rates before and after cofilin-1 inactivation. Statistical significance was determined by a paired Student\u2019s t-test. (E) Left, representative image of a freshly plated (spherical) cells with mEos3.2-LifeAct. Right, montage of mEos3.2-LifeAct within the shown ROI before and after photoactivation. (F) Average decay curve for mEos3.2-LifeAct at bleb necks (normalized to the initial fluorescence level; F/F0). The curve was fit using a non-linear single phase decay function. (G) t1/2 for mEos3.2-LifeAct after photoactivation at bleb necks for non-targeting, CFL1, ADF, and CFL1 + ADF RNAi. Statistical significance was determined by one-way ANOVA and a Dunnet\u2019s post\u00a0hoc test. All data are representative of at least three independent experiments. *p \u2264 0.05, **p \u2264 0.01, ***p \u2264 0.001, and ****p \u2264 0.0001.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67856/elife-67856-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A)\u00a0Cortical actin (mEmerald-LifeAct) flow rates before and after the inactivation (i.e., red light irradiation) of SuperNova alone.\u00a0(B) Left, sample ROI from a paraformaldehyde (PFA) treated melanoma A375-M2 cell with mEos3.2-LifeAct. Right, average mEos3.2-LifeAct decay (three cells; mean \u00b1 SEM) after photoactivation. All data are representative of at least three independent experiments.\n\n![Video 7.](https://cdn.elifesciences.org/articles/67856/elife-67856-video7.mp4.jpg)\n\n**Video 7.:** The cell was depleted of endogenous actin depolymerizing factor\u00a0(ADF) and cofilin-1 by RNAi.\n\nWe then determined rates of actin turnover at leader bleb necks. For this, we used a version of LifeAct tagged with the photoactivable (green/red) fluorescent protein, mEos, for performing fluorescence loss after photoactivation assays. Using a 405 nm laser, a pool of mEos-LifeAct was photoactivated at leader bleb necks. Subsequently, fluorescence decay at leader bleb necks was measured and used for determining rates of actin turnover (Figure 4E). However, as our measurements will be a composite of the actin turnover rate and the binding kinetics of LifeAct, these data should be strictly viewed as apparent rates of actin turnover. To demonstrate proof of concept, curves were fit with a single phase decay, yielding an R-squared value of 0.8348 (Figure 4F). In contrast, a rapid decline in red fluorescence was not observed in paraformaldehyde treated cells (Figure 4\u2014figure supplement 1B). In control (non-target) cells, we found the actin at leader bleb necks to be rapidly turned over (t1/2; Figure 4G). While the rate of actin turnover in cells depleted of cofilin-1 or ADF alone was similar to control (non-target), depleting both ADF and cofilin-1 led to a significant decrease in the actin turnover rate (t1/2; Figure 4G). These data suggest that ADF and cofilin-1, together, are critical for the rapid turnover of cortical actin at leader bleb necks.\n\n### Cofilin-1 supports both actin turnover and myosin contractility at leader bleb necks\n\nBecause the cortical actin flow in leader blebs is driven by myosin, we wondered if ADF and/or cofilin-1 are important for cortical contractility. To address this possibility, we determined the compressibility of cells using a previously described gel sandwich approach (Liu et al., 2015). Briefly, freshly trypsinized (spherical) cells are placed between two polyacrylamide gels of known stiffness (1 kPa). Subsequently, the ratio of the cell height (h) to the diameter (d) is used to determine compressibility (Figure 5A). After depleting cofilin-1, we found cells to be significantly more compressible, whereas depleting ADF had no effect (Figure 5A). Moreover, in cofilin-1 depleted cells, the depletion of ADF did not have any additional effect on cell compressibility (Figure 5A). Reconstituting ADF and cofilin-1 RNAi cells with RFP-cofilin-1 rescued cell compressibility to levels similar to control, whereas RFP-ADF was unable to\u00a0rescue compressibility (Figure 5B\u2013C). Therefore, cofilin-1 may be particularly important for contractility. In support of this idea, cofilin-1 has been shown to modulate contractility through a variety of mechanisms, which involve changes in both actin turnover and network architecture (Chan et al., 2009; Chugh et al., 2017; Ennomani et al., 2016). As determined by immunofluorescence imaging of phosphorylated regulatory light chain (pRLC), we could confirm that signaling to myosin was not significantly affected by depleting ADF and/or cofilin-1 (Figure 5D\u2013E). In confined cells, depleting ADF and cofilin-1 leads to the elongation of leader bleb necks, which are decorated with myosin (EGFP-RLC; Figure 5F). We then used CALI to determine if the accumulation of myosin at leader blebs necks is directly caused by the removal of these proteins. Indeed, within minutes of SuperNova-cofilin-1 inactivation, we observed myosin accumulating at leader bleb necks (EGFP-RLC; Figure 5G and Video 8). Additionally, the flow of myosin toward leader bleb necks was significantly impeded after cofilin-1 inactivation, as determined by tracking individual myosin minifilaments (Figure 5H). While ADF may be particularly important for actin turnover, these results point to cofilin-1 as having important roles in both actin turnover and myosin contractility at leader bleb necks.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/67856/elife-67856-fig5-v2.jpg)\n\n**Figure 5.:** (A)\u00a0A previously described gel sandwich assay was used to measure the stiffness (h/d) of spherical cells after non-targeting (91 cells), CFL1 (30 cells), actin depolymerizing factor\u00a0(ADF) (25 cells), and CFL1 + ADF RNAi (42 cells). (B) Cell stiffness (h/d) of spherical cells with non-targeting (181 cells) or siCFL1 + siADF RNAi rescued with RFP-cofilin-1 (41 cells) or RFP-ADF (74 cells). (A\u2013B) Statistical significance was determined by one-way ANOVA and a Dunnet\u2019s post\u00a0hoc test. (C) Cofilin-1 (left) and ADF (right) levels (fluorescence intensity; fold change) of adhered RNAi cells by immunofluorescence confirming rescue by transfection with RFP-cofilin-1 (left) or RFP-ADF (right). Statistical significance was determined by an unpaired one-sample t-test. (D) Immunofluorescence imaging of endogenous phosphorylated regulatory light chain\u00a0(pRLC) (S18), total RLC, and filamentous-actin (F-actin) (phalloidin) in freshly plated (spherical) cells after non-targeting, CFL1, and CFL1 + ADF RNAi. (E) Ratio of cortical pRLC (S18) to total RLC fluorescence intensity after non-targeting (114 cells), CFL1 (107 cells), ADF (124 cells), and CFL1 + ADF RNAi (91 cells). Statistical significance was determined by one-way ANOVA and a Dunnet\u2019s post\u00a0hoc test. (F) Localization of EGFP\u00a0tagged regulatory light chain (EGFP-RLC) in a cell confined down to 3 \u00b5m after CFL1 + ADF RNAi. (G) EGFP-RLC dynamics in a cell depleted of cofilin-1 and ADF before and after chromophore assisted light inactivation\u00a0(CALI) of SuperNova-cofilin-1. Arrow points to myosin accumulating at an elongating leader bleb neck after cofilin-1 inactivation. (H) Myosin minifilament flow rate before and after cofilin-1 inactivation. Statistical significance was determined using a paired Student\u2019s t-test. All data are representative of at least three independent experiments. *p \u2264 0.05, **p \u2264 0.01, ***p \u2264 0.001, and ****p \u2264 0.0001.\n\n![Video 8.](https://cdn.elifesciences.org/articles/67856/elife-67856-video8.mp4.jpg)\n\n**Video 8.:** The cell was depleted of endogenous actin depolymerizing factor\u00a0(ADF) and cofilin-1 by RNAi.\n\n## Discussion\n\nHere, we identify ADF and cofilin-1 as key mediators of the rapid (cortical) actin flow in leader blebs. This is significant as the rapid flow of cortical actin in leader blebs is essential for confined migration (Liu et al., 2015; Ruprecht et al., 2015; Bergert et al., 2015). We report that melanoma cells depleted of cofilin-1 poorly undergo LBBM, whereas removing ADF did not have a significant effect. Because ADF and cofilin-1 are thought to have redundant or overlapping roles, we were surprised to then find that depleting cofilin-1 together with ADF led to a near complete inhibition of LBBM. Therefore, we set out to determine the basis for this effect in cancer cells.\n\nInitially, we used high spatial and temporal resolution imaging for close inspection of RNAi cells. Cells lacking cofilin-1 alone had much smaller blebs. Without both cofilin-1 and ADF, many cells had blebs with elongated necks that would not retract. A similar elongated neck phenotype was observed by Wiggan et al., whereas they reported an increase in the frequency of HeLa cells with blebs after cofilin-1 RNAi (Wiggan et al., 2012). While these authors contend that cofilin-1 inhibits contractility by competing with myosin for F-actin binding, our results are in line with work showing that cofilin-1 increases contractility through optimizing actin filament lengths and de-branching (Chan et al., 2009; Chugh et al., 2017; Ennomani et al., 2016). This led us to wonder if ADF and/or cofilin-1 may be important for actin turnover at bleb necks. In agreement with this concept, in cells lacking endogenous cofilin-1 and ADF, EGFP-cofilin-1 was enriched at bleb necks.\n\nIn confined cells, we observed a dramatic accumulation of actin at bleb necks. In order to better understand how ADF and cofilin-1 regulate the overall level of cortical actin, we utilized spherical cells which predominantly have cortical actin. Using flow cytometry, we found that depleting cells of cofilin-1 could significantly increase the overall level of actin. Although ADF on its own had no effect, depleting cofilin-1 with ADF increased the overall level of actin even further, which might suggest that ADF augments the severing activity of cofilin-1. Similarly, the level of cortical barbed ends was significantly increased in the absence of cofilin-1, whereas removing ADF marginally increased the level of cortical barbed ends. Depleting both cofilin-1 and ADF appeared to have an additive effect, leading to the largest increase in the level of uncapped (polymerization competent) barbed ends. This result suggests that cofilin-1 severing, in collaboration with ADF, leads to the rapid disassembly of cortical actin and not polymerization at new barbed ends.\n\nBecause changes in the cellular F/G-actin ratio can trigger specific transcriptional programs, such as through the activation of the transcription factor, MRTF-A, we wanted to determine if the effects we observed on LBBM are a direct result of down-regulating actin severing (Olson and Nordheim, 2010). For this, we utilized CALI for the rapid inactivation of SuperNova-cofilin-1. In cells depleted of ADF and cofilin-1, SuperNova-coflin-1 was sufficient to restore normal bleb morphology and dynamics. However, within minutes of cofilin-1 inactivation, actin began to accumulate at elongated bleb necks. By kymograph analysis, we also observed a significant decrease in the cortical actin flow rate. Using a photoactivatable LifeAct construct, we then directly measured the rate of actin turnover (i.e., fluorescence decay) at bleb necks. While depleting ADF or cofilin-1 alone did not have a significant effect on actin turnover rates, depleting both proteins led to a large increase in the rate of actin turnover at bleb necks. Thus, in cells lacking ADF and cofilin-1, defects in bleb morphology and dynamics correlate with a reduction in actin turnover at the neck.\n\nCofilin-1 has been previously implicated in regulating actomyosin contractility. Therefore, using spherical cells, we determined the overall effect of ADF and cofilin-1 on cortical contractility. As indicated by increased compressibility, cells were found to be less stiff after depleting cofilin-1. In contrast, removing ADF had little effect on cell stiffness. Moreover, depleting both ADF and cofilin-1 was similar to removing cofilin-1 alone and could be rescued by an RNAi resistant version of cofilin-1 but not ADF. Therefore, cofilin-1 may be particularly important to support actomyosin contractility. In line with this notion, cofilin-1 has been shown to support myosin contractility through optimizing actin filament lengths and de-branching (Chan et al., 2009; Chugh et al., 2017; Ennomani et al., 2016). As indicated by the lack of any change in pRLC levels or localization, removing these proteins does not appear to effect signaling to myosin. The role of cofilin-1 in supporting myosin contractility is further supported by CALI. More specifically, we demonstrate that inactivating cofilin-1 decreases the rate at which myosin minifilaments flow toward the bleb neck.\n\nThus, our data are consistent with a model whereby ADF and cofilin-1 play key roles during LBBM. More specifically, we assert that ADF and cofilin-1, together, optimize actin disassembly and myosin contractility at bleb necks (Figure 6, top). Whereas, in the absence of these proteins, incoming cortical actin fails to disassemble and accumulates with myosin at the elongated necks of persistent blebs (Figure 6, below). Collectively, this study further points to rapid (cortical) actin flows as being essential for confined (leader bleb-based) migration. This is significant as many cancer cells have been shown to undergo LBBM (Logue et al., 2015; Liu et al., 2015).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/67856/elife-67856-fig6-v2.jpg)\n\n**Figure 6.:** Top, in the presence of both ADF and cofilin-1, cells display large blebs with rapid cortical actin flow. Below, in the absence of cofilin-1 or ADF, cells form smaller blebs with slower cortical actin flow. Bottom, without both ADF and cofilin-1, blebs display several defects, including a failure to retract and an accumulation of actomyosin at elongated necks.\n\nThis work also reveals an unanticipated role for ADF. In melanoma cells, ADF appears to augment the activity of cofilin-1 at bleb necks. Largely, ADF and cofilin-1 are thought to have redundant or overlapping roles (Hotulainen et al., 2005). However, ADF has been shown to have significant monomer sequestering activity (Chen et al., 2004). We speculate that, in the absence of both proteins, dampened actin severing coupled with uncontrolled filament elongation contributes to the severe phenotypes we observe. Thus, the dissemination of melanoma tumors is likely to be blocked by the simultaneous inhibition of ADF and cofilin-1. As actin severing by ADF and cofilin-1 can be regulated by a number of functional interactions, such as with Aip1 and cyclase-associated protein 1, future work will endeavor to determine the contribution of these factors in regulating the cortical actomyosin flow in fast amoeboid cells (Bertling et al., 2004; Nadkarni and Brieher, 2014; Chen et al., 2015; Shekhar et al., 2019; Kotila et al., 2019).\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>A375-M2</td>\n      <td>ATCC</td>\n      <td>CRL-3223</td>\n      <td>Metastatic melanoma</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>A549</td>\n      <td>ATCC</td>\n      <td>CCL-185</td>\n      <td>Lung adenocarcinoma</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>SYLGARD 184</td>\n      <td>Dow Corning</td>\n      <td>Cat no. 24236\u201310</td>\n      <td>PDMS</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Homo sapiens)</td>\n      <td>EGFP-cofilin-1 WT, S3A, and S3E</td>\n      <td>Addgene (a gift from Dr James Bamburg)</td>\n      <td>Plasmid no. 50859, 50854, and 50855</td>\n      <td>Plasmid constructs to transfect</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Homo sapiens)</td>\n      <td>RFP-cofilin-1</td>\n      <td>Dr James Bamburg (Colorado State University)</td>\n      <td>n/a</td>\n      <td>Plasmid construct to transfect</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Homo sapiens)</td>\n      <td>RFP-ADF</td>\n      <td>Dr James Bamburg (Colorado State University)</td>\n      <td>n/a</td>\n      <td>Plasmid construct to transfect</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Homo sapiens)</td>\n      <td>SuperNova-cofilin-1</td>\n      <td>Dr Kazuyo Sakai (Osaka University, Osaka, Japan)</td>\n      <td>n/a</td>\n      <td>Plasmid construct to transfect and destroy cofilin-1 by CALI</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Saccharomyces cerevisiae)</td>\n      <td>mEos3.2-LifeAct</td>\n      <td>Addgene (a gift from Michael Davidson)</td>\n      <td>Plasmid no. 54696</td>\n      <td>Plasmid construct to transfect and monitor F-actin dynamics</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent (Homo sapiens)</td>\n      <td>Non-targeting siRNA</td>\n      <td>Thermo Fisher</td>\n      <td>Cat no. 4390844</td>\n      <td>Control siRNA to transfect</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent (Homo sapiens)</td>\n      <td>Cofilin-1 siRNA</td>\n      <td>Thermo Fisher</td>\n      <td>Cat no. 4392420; s2936</td>\n      <td>Cofilin-1 siRNA to transfect</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent (Homo sapiens)</td>\n      <td>ADF siRNA</td>\n      <td>Thermo Fisher</td>\n      <td>Cat no. 4392422; s21737</td>\n      <td>ADF siRNA to transfect</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-cofilin-1 (mouse monoclonal)</td>\n      <td>Thermo Fisher</td>\n      <td>Cat no. MA5-17275</td>\n      <td>WB (1:1000), IF (1:250)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-ADF (mouse monoclonal)</td>\n      <td>Thermo Fisher</td>\n      <td>Cat no. MA5-25485</td>\n      <td>WB (1:1000), IF (1:250)</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent (Homo sapiens)</td>\n      <td>Cofilin-1 forward qPCR primer</td>\n      <td>Thermo Fisher</td>\n      <td>n/a</td>\n      <td>GCAACCTATGAGACCAAGGAGAG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent (Homo sapiens)</td>\n      <td>ADF forward qPCR primer</td>\n      <td>Thermo Fisher</td>\n      <td>n/a</td>\n      <td>GCACCAGAACTAGCACCTCTGA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent (Homo sapiens)</td>\n      <td>GAPDH forward qPCR primer</td>\n      <td>Thermo Fisher</td>\n      <td>n/a</td>\n      <td>GTCTCCTCTGACTTCAACAGCG</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA protein</td>\n      <td>Alexa Fluor 568-conjugated G-actin from rabbit muscle</td>\n      <td>Thermo Fisher</td>\n      <td>Cat no. A12374</td>\n      <td>Fluorescent G-actin to label actin barbed ends</td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>Fiji</td>\n      <td>n/a</td>\n      <td>https://imagej.net/Fiji</td>\n      <td>Microscopy</td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>Prism</td>\n      <td>GraphPad</td>\n      <td>n/a</td>\n      <td>Statistical analyses</td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>BioRender</td>\n      <td>Toronto, ON</td>\n      <td>n/a</td>\n      <td>Illustration</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>DeltaVision Elite</td>\n      <td>GE</td>\n      <td>n/a</td>\n      <td>Commercial deconvolution microscopy system</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>LSM880 with fast Airy Scan</td>\n      <td>Zeiss</td>\n      <td>n/a</td>\n      <td>Commercial point scanning confocal microscopy system</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell culture\n\nA375-M2 (CRL-3223) and A549 (CCL-185) were obtained from the American Type Culture Collection (ATCC; Manassas, VA). Cells were cultured in high-glucose DMEM supplemented with 10% FBS (cat no. 12106C; Sigma Aldrich, St. Louis, MO), GlutaMAX (Thermo Fisher, Carlsbad, CA), antibiotic-antimycotic (Thermo Fisher), and 20 mM HEPES at pH 7.4 for up to 30 passages. Cells were tested, and negative, for mycoplasma using MycoAlert PLUS Mycoplasma Detection Kit (Lonza, Walkersville, MD).\n\n### Confinement\n\nThis protocol has been described in detail elsewhere (Logue et al., 2018). Briefly, PDMS (cat no. 24236\u201310; Dow Corning 184 SYLGARD) was purchased from Krayden (Westminster, CO); 2 mL was cured overnight at 37\u00b0C in each well of a six-well glass bottom plate (cat no. P06-1.5H-N; Cellvis, Mountain View, CA). Using a biopsy punch (cat no. 504535; World Precision Instruments, Sarasota, FL), an 8 mm hole was cut and 3 mL of serum-free media containing 1% BSA was added to each well and incubated overnight at 37\u00b0C. After removing the serum-free media containing 1% BSA, 300 \u00b5L of complete media containing trypsinized cells (250,000 to 1 million) and 2 \u00b5L of 3.11 \u00b5m beads (cat no. PS05002; Bangs Laboratories, Fishers, IN) were then pipetted into the round opening. The vacuum created by briefly lifting one side of the hole with a 1 mL pipette tip was used to move cells and beads underneath the PDMS. Finally, 3 mL of complete media was added to each well and cells were recovered for ~60 min before imaging.\n\n### Plasmids\n\nSuperNova-cofilin-1 was a gift from Dr Kazuyo Sakai (Osaka University, Osaka, Japan). EGFP-cofilin-1 WT (no. 50859; a gift from Dr James Bamburg), S3A (no. 50854; a gift from Dr. James Bamburg), S3E (no. 50855; a gift from Dr James Bamburg), and mEos3.2-LifeAct (no. 54696; a gift from Michael Davidson) were obtained from Addgene (Watertown, MA). RFP-cofilin-1 and RFP-ADF were a gift from Dr James Bamburg (Colorado State University); 1 \u00b5g of plasmid was used to transfect 400,000 cells in each well of a six-well plate using Lipofectamine 2000 (5 \u00b5L; Thermo Fisher) in OptiMEM (400 \u00b5L; Thermo Fisher). After 20 min at room temperature, plasmid in Lipofectamine 2000/OptiMEM was then incubated with cells in complete media (2 mL) overnight.\n\n### Pharmacological treatments\n\nLatrunculin-A (cat no. 3973) and cytochalasin B (cat no. 5474) were purchased from Tocris Bioscience (Bristol, UK). DMSO (Sigma Aldrich) was used to make 5 and 2 mM stock solutions of Latrunculin-A and cytochalasin B, respectively. To disassemble actin, cells resuspended in flow buffer were treated with 5 \u00b5M Latrunculin-A for 10 min at room temperature before flow cytometry. For barbed end assays, cytochalasin B was pre-diluted in complete media before it was incubated with cells for 1 hr at 37\u00b0C.\n\n### Locked nucleic acids\n\nNon-targeting (cat no. 4390844), cofilin-1 (cat no. 4392420; s2936), and ADF (cat no. 4392422; s21737) locked nucleic acids (LNAs) were purchased from Thermo Fisher. All LNA transfections were performed using RNAiMAX (5 \u00b5L; Thermo Fisher) and OptiMEM (400 \u00b5L; Thermo Fisher); 100,000 cells were trypsinized and seeded in six-well plates in complete media. After cells adhered (~1 hr), LNAs in RNAiMAX/OptiMEM were added to cells in complete media (2 mL) at a final concentration of 50 nM. Cells were incubated with LNAs for 2 days.\n\n### Western blotting\n\nWhole-cell lysates were prepared by scraping cells into ice-cold RIPA buffer (50 mM HEPES pH 7.4,\u00a0150 mM NaCl, 5 mM EDTA, 0.1% SDS, 0.5% deoxycholate, and 1% Triton X-100) containing protease and phosphatase inhibitors (Roche, Switzerland). Before loading onto 4\u201312% NuPAGE Bis-Tris gradient gels (Thermo Fisher), DNA was sheared by sonication and samples were boiled for 10 min in loading buffer. Following SDS-PAGE, proteins in gels were transferred to nitrocellulose membranes and subsequently immobilized by air drying overnight. After blocking in Tris-buffered saline containing 0.1% Tween 20 and 1% BSA, primary antibodies against cofilin-1 (cat no. MA5-17275; Thermo Fisher) and ADF (cat no. MA5-25485; Thermo Fisher and cat no. D8818; Sigma Aldrich) were incubated with membranes overnight at 4\u00b0C. Bands were then resolved with IRDye conjugated secondary antibodies on an Odyssey scanner from LI-COR Biosciences, Lincoln, NE. GAPDH (cat no. 97166; Cell Signaling Technology, Danvers, MA) was used to confirm equal loading.\n\n### qRT-PCR\n\nTotal RNA was isolated from cells using the PureLink RNA Mini Kit (Thermo Fisher) and was used for reverse transcription using a high-capacity cDNA Reverse Transcription Kit (Applied Biosystems, Foster City, CA). cDNA was used for qRT-PCR using PowerUp SYBR Green Master Mix (Thermo Fisher) and primers, human CFL1: GCAACCTATGAGACCAAGGAGAG (forward sequence), human ADF: GCACCAGAACTAGCACCTCTGA (forward sequence), and human GAPDH: GTCTCCTCTGACTTCAACAGCG (forward sequence), on a CFX96 real-time PCR detection system (Bio-Rad). Relative mRNA levels were calculated by the \u0394Ct method.\n\n### Transmigration\n\nTransmigration assays were performed using polycarbonate filters with 8 or 12 \u00b5m pores (Corning; Corning, NY). Prior to the assays, cells were serum-starved for 24 hr and polycarbonate filters were fibronectin (10 \u00b5g/mL; Millipore, Burlington, MA) coated for 1 hr followed by air drying; 100,000 cells in serum-free media were seeded in the top chamber while the bottom chamber contained media with 20% FBS to attract cells. After 24 hr, cells from the bottom of the filter were trypsinized and counted using an automated cell counter (TC20; Bio-Rad, Hercules, CA). Transmigration was then calculated as the ratio of cells on the bottom of the filter vs. the total.\n\n### Flow cytometry\n\nRoughly 1 \u00d7 106 trypsinized cells in flow buffer (HBS with 1% BSA) were fixed using 4% paraformaldehyde (cat no. 15710; Electron Microscopy Sciences, Hatfield, PA) for 20 min at room temperature. After washing, cell pellets were resuspended in flow buffer and incubated with 0.1% Triton X-100, Alexa Fluor 647-conjugated phalloidin (cat no. A22287; Thermo Fisher), and DAPI (Sigma Aldrich) for 30 min at room temperature. Data were acquired on a FACSCalibur (BD Biosciences, Franklin Lakes, NJ) flow cytometer. Flow cytometric analysis was performed using FlowJo (Ashland, OR) software.\n\n### Barbed end assay\n\nThe protocol for the barbed end assay was used with minor modifications (Vitriol et al., 2007; Symons and Mitchison, 1991). Prior to barbed end assays, cells were trypsinized and plated on poly-L-lysine coated six-well glass\u00a0bottom plates (Cellvis). To allow for a minimal level of cell attachment, cells were incubated for 10 min in a tissue culture incubator. Cells were then gently permeabilized for 1 min with saponin buffer (138 mM KCl, 4 mM MgCl2, 3 mM EGTA, 0.1% saponin, 1 mM ATP, 3 \u00b5M phalloidin, and 1% BSA) followed by one wash with saponin-free buffer. Permeabilized cells were then incubated with Alexa Fluor 568-conjugated G-actin from rabbit muscle (cat no. A12374; Thermo Fisher) for 3 min in a tissue culture incubator and washed with saponin-free buffer. Treated cells were then fixed with 4% paraformaldehyde in HEPES-buffered saline (HBS), washed with HBS alone, and immediately imaged.\n\n### Immunofluorescence\n\nAfter washing with HBS, cells in six-well glass\u00a0bottom plates (Cellvis) were fixed with 4% paraformaldehyde (Electron Microscopy Sciences) in HBS for 20 min at room temperature. Blocking, permeabilization, antibody incubation, and washing were done in HBS with 1% BSA, 1% fish gelatin, 0.1% Triton X-100, and 5 mM EDTA. A 1:250 dilution of ADF (cat no. MA5-25485; Thermo Fisher), cofilin-1 (cat no. MA5-17275; Thermo Fisher), pRLC (cat no. PA5-17727 or MA5-15163; Thermo Fisher), or RLC (cat no. PA5-17624; Thermo Fisher) antibody was incubated with cells overnight at 4\u00b0C. After extensive washing, a 1:400 dilution of Alexa Fluor 488-conjugated anti-rabbit secondary antibody (cat no. A-21206; Thermo Fisher) was then incubated with cells for 2 hr at room temperature. Cells were then incubated with a 1:250 dilution of Alexa Fluor 568-conjugated phalloidin (cat no. A12380; Thermo Fisher) and a 1:1000 dilution of DAPI (cat no. D1306; Thermo Fisher). Cells were again extensively washed and then imaged in HBS. Fluorescence intensity of cofilin-1 or ADF was measured in adhered cells with either EGFP-cofilin-1, RFP-cofilin-1, RFP-ADF, or an empty vector fluorescent protein. A minimum of 26 cells over three independent experiments were averaged and normalized to the control in each experimental n-value.\n\n### Cell stiffness assay\n\nThe protocol for the gel sandwich assay was used with minor modifications (Liu et al., 2015). Six-well glass bottom plates (Cellvis) and 18 mm coverslips were activated using 3-aminopropyltrimethoxysilane (Sigma Aldrich) for 5 min and then for 30 min with 0.5% glutaraldehyde (Electron Microscopy Sciences) in PBS; 1 kPa polyacrylamide gels were made using 2 \u00b5L of blue fluorescent beads (200 nm; Thermo Fisher), 18.8 \u00b5L of 40% acrylamide solution (cat no. 161\u20130140; Bio-Rad), and 12.5 \u00b5L of bis-acrylamide (cat no. 161\u20130142; Bio-Rad) in 250 \u00b5L of PBS. Finally, 2.5 \u00b5L of ammonium persulfate (10% in water) and 0.5 \u00b5L of tetramethylethylenediamine was added before spreading 9 \u00b5L drops onto treated glass under coverslips. After polymerizing for 40 min, the coverslip was lifted in PBS, extensively rinsed and incubated overnight in PBS. Before each experiment, the gel attached to the coverslip was placed on a 14 mm diameter, 2 cm high PDMS column for applying a slight pressure to the coverslip with its own weight. Then, both gels were incubated for 30 min in media before plates were seeded. After the bottom gels in plates was placed on the microscope stage, the PDMS column with the top gel was placed on top of the cells seeded on the bottom gels, confining cells between the two gels. After 1 hr of adaptation, the height of cells was determined with beads by measuring the distance between gels, whereas the cell diameter was measured using a far-red PM dye (cat no. C10046; Thermo Fisher). Stiffness was defined as the height (h) divided by the diameter (d).\n\n### Microscopy\n\nLive high-resolution imaging was performed using a General Electric (Boston, MA) DeltaVision Elite imaging system mounted on an Olympus (Japan) IX71 stand with a computerized stage, environment chamber (heat, CO2, and humidifier), ultrafast solid-state illumination with excitation/emission filter sets for DAPI, CFP, GFP, YFP, and Cy5, critical illumination, Olympus PlanApo N 60X/1.42 NA DIC (oil) objective, Photometrics (Tucson, AZ) CoolSNAP HQ2 camera, proprietary constrained iterative deconvolution, and vibration isolation table.\n\n### Chromophore assisted light inactivation\n\nLive confined cells co-transfected with SuperNova-cofilin-1 and either mEmerald-LifeAct or EGFP-RLC were imaged every 12 s for 5 min before CALI. Cells were then subjected to 1 min of high intensity red light irradiation (DeltaVision Elite). Images were subsequently acquired every 12 s for 1 hr post-irradiation.\n\n### Actomyosin flow rates\n\nActin and myosin minifilament flow rates were calculated from images taken every 12 s of mEmerald-LifeAct and EGFP-RLC, respectively. Kymographs of each were generated in Fiji (https://imagej.net/Fiji) and spanned the length of leader blebs.\n\n### Fluorescence loss after photobleaching\n\nCells transiently transfected with the photoactivatable construct, mEos3.2-LifeAct, were imaged using a Zeiss (Germany) laser scanning confocal microscope (LSM880) with fast Airy Scan. Regions at bleb necks were photo-converted using the 405 nm laser at 20% power (three iterations). Regions were sampled every 15 ms for 10 and 150 cycles before and after photo-conversion, respectively. Fluorescence measurements were acquired using ZEN software (Zeiss) and decay was calculated as F/F0. Non-linear one-phase decay curves were fit to data using Prism (GraphPad, San Diego, CA).\n\n### Cell migration\n\nTo perform cell speed, plot of origin, and direction autocorrelation analyses, we used an Excel (Microsoft, Redmond, WA) plugin, DiPer, developed by Gorelik and colleagues and the Fiji plugin, MTrackJ, developed by Erik Meijering for manual tracking (Gorelik and Gautreau, 2014; Meijering et al., 2012). For minimizing positional error, cells were tracked every other frame. Brightfield imaging was used to confirm that beads were not obstructing the path of a cell. Cells that traveled a distance equivalent to at least one cell length over the course of the 5 hr time-lapse were classified as highly motile.\n\n### Bleb morphology and dynamics\n\nFor leader bleb and total bleb areas, freshly confined cells were traced from high-resolution images with the free-hand circle tool in Fiji (https://imagej.net/Fiji). From every other frame, the percentage of cell area for leader blebs and percentage of cell area for total blebs were calculated in Excel (Microsoft). Frame-by-frame measurements were then used to generate an average for each cell. Bleb retraction rates were determined by dividing the bleb length by the amount of time taken to completely retract the bleb into the cell body. For each cell, retraction rates were calculated from two to three blebs.\n\n### Cofilin-1 enrichment\n\nFor regional analyses of EGFP-cofilin-1 distribution, 10 ROIs each representing 10% of the length of the leader bleb were drawn using Fiji (https://imagej.net/Fiji). Mean gray values of each ROI were normalized to the first ROI taken at the bleb neck.\n\n### Statistics\n\nAll box plots are Tukey in which \u2018+\u2019 and line denote the mean and median, respectively. Sample sizes were determined empirically and based on saturation. As noted in each figure legend, statistical significance was determined by either a two-tailed Student\u2019s t-test or multiple-comparison test post\u00a0hoc. Normality was determined by a D\u2019Agostino and Pearson test in Prism (GraphPad). *p \u2264 0.05, **p \u2264 0.01, ***p \u2264 0.001, and ****p \u2264 0.0001.\n\n### Illustration\n\nThe model for ADF and cofilin-1 function was drawn in BioRender (Toronto, ON).\n",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "e243ac99-034e-4135-8f7c-8974c8d0cc10",
+      "submission_id": "596fee13-ac99-4485-9085-3c65fa958384",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Alphee Michelot, Institut de Biologie du D\u00e9veloppement France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.67856.sa1](https://doi.org/10.7554/eLife.67856.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\n[Editors' note: this paper was reviewed by Review Commons.]\n\nAcceptance summary:\n\nYour work clarifies the contribution of two isoforms of the ADF/cofilin family of proteins for bleb-based migration. It also highlights beautifully one more time how crucial the precise control of actin turnover is for many actin-based cellular processes.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"ADF and cofilin-1 collaborate to promote cortical actin flow and the leader bleb-based migration of confined cells\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers at Review Commons and 1 peer reviewer at eLife, and the evaluation at eLife has been overseen by a Reviewing Editor and Anna Akhmanova as the Senior Editor.\n\nBased on your manuscript, the reviews and your responses, we invite you to submit a revised version incorporating the revisions as outlined in your response to the reviews. Please note that all reviewers found several issues with consistency between data presented and written statements about the same data. Of course this can always happen in a manuscript, but please make sure in the revised manuscript that the data presented clearly supports your written statements and conclusions.\n\nIn addition, we invite you to consider these few additional comments from eLife.\n\n1. A first concern is the absence of reference to important previous papers. Particularly, the work of Wiggins et al. in Dev. Cell 10.1016/j.devcel.2011.12.026 already reports aberrant bleb morphologies and actin accumulation under cofilin depletion in HeLa cells. Please cite this paper and modify the introduction to highlight the novelties of your study compared to previous works.\n\n2. Another concern is about the Lifeact/photoconversion experiments, which should be interpreted with caution. Such experiments usually report more Lifeact's binding/unbinding dynamics than F-actin's turnover itself, and the very rapid (second-timescale) lifetime measured in these experiments is coherent with this possibility.\n\nWe appreciate that a significant difference is measured in the double siRNA condition, suggesting that both effects (actin turnover and Lifeact dynamics) may contribute in those experiments. Please discuss this point.\n\n3. In the introduction, description of the biochemical effects of cofilin should go beyond citing one recent publication (Wioland et al.). For complete description, you should also mention the fact that cofilin's activity is highly dependent on its concentration, promoting severing at low concentration but stabilizing on the contrary actin filaments at high concentration (see papers from the Pollard, Blanchoin and De La Cruz labs). You should also mention the fact that cofilin is unlikely to function alone in cells, but together with catalyzing factors such as Aip1 or CAP (see for examples papers from the Michelot, Goode, Brieher and Lappalainen labs). Please discuss whether this complex behavior could change the interpretation of your results or not.\n\n4. Following the previous comment, whether ADF and cofilin1 have overlapping functions or not (please consider citing also Hotulainen et al. Mol Biol Cell 2005) is complicated by the strong dependence of cofilin concentration on its activity. For some results (mainly in Figure 5), it is difficult to conclude whether ADF and cofilin1 have indeed different functions, or whether this is just a concentration effect.\n\nTherefore, I would suggest 2 things. Would there be a way to compare the expression level of cofilin 1 and ADF1, so that one could evaluate properly the total level of expression of cofilin1 + ADF in each experiment. Then, could you try a rescue experiment, by expressing ADF in siCFL1 cells?\n",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "006dac80-de70-41e0-b01c-1047699609ee",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C1",
+      "claim": "Melanoma cells undergo fast amoeboid (leader bleb-based) migration requiring a single large bleb for migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Melanoma cells have been shown to undergo fast amoeboid (leader bleb-based) migration, requiring a single large bleb for migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known phenomenon that forms the basis of the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "94e9cbd8-2187-4b5e-b0ad-99e6b3a1d011",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C2",
+      "claim": "Leader blebs contain a rapid flow of cortical actin that drives the cell forward.",
+      "claim_type": "EXPLICIT",
+      "source": "In leader blebs, is a rapid flow of cortical actin that drives the cell forward.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by imaging data in Figure 1B.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "d7878074-acbb-47f4-bf44-f1eee861a92a",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C3",
+      "claim": "Co-depleting cofilin-1 and ADF leads to a large increase in cortical actin.",
+      "claim_type": "EXPLICIT",
+      "source": "Using RNAi, we find that co-depleting cofilin-1 and actin depolymerizing factor (ADF) led to a large increase in cortical actin, suggesting that both proteins regulate cortical actin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flow cytometry data showing F-actin levels in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "4b82c6d8-433c-44f0-b906-a0361a6a1648",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C4",
+      "claim": "Severing factors can promote contractility through the regulation of actin architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, severing factors can promote contractility through the regulation of actin architecture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by cell stiffness measurements in Figure 5A.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "a5a0116e-93cd-4992-97c9-78478c7e8620",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C5",
+      "claim": "RNAi of cofilin-1 but not ADF leads to a significant decrease in cell stiffness.",
+      "claim_type": "EXPLICIT",
+      "source": "However, RNAi of cofilin-1 but not ADF led to a significant decrease in cell stiffness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by gel sandwich assay data in Figure 5A showing increased compressibility (decreased stiffness) after cofilin-1 depletion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "c559ede4-ebfc-4ec0-8513-a650384ca4fc",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C6",
+      "claim": "Cofilin-1 is enriched at leader bleb necks.",
+      "claim_type": "EXPLICIT",
+      "source": "We found cofilin-1 to be enriched at leader bleb necks, whereas RNAi of cofilin-1 and ADF reduced bleb sizes and the frequency of motile cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by imaging data in Figure 2I showing EGFP-cofilin-1 localization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "c1e074fc-e499-4896-9587-f300055cc046",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C7",
+      "claim": "RNAi of cofilin-1 and ADF reduces bleb sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found cofilin-1 to be enriched at leader bleb necks, whereas RNAi of cofilin-1 and ADF reduced bleb sizes and the frequency of motile cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative data in Figure 2B-C showing reduced bleb areas.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "88978fe8-ab76-47ba-82ed-a323413f8465",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C8",
+      "claim": "RNAi of cofilin-1 and ADF reduces the frequency of motile cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found cofilin-1 to be enriched at leader bleb necks, whereas RNAi of cofilin-1 and ADF reduced bleb sizes and the frequency of motile cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cell tracking data in Figure 1E-F showing reduced percentage of highly motile cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "cad66cda-9cea-4a6e-90d8-6ee9fc86134a",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C9",
+      "claim": "Cells without cofilin-1 and ADF have blebs with abnormally long necks.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, cells without cofilin-1 and ADF had blebs with abnormally long necks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by imaging data in Figure 2A and quantification in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "b2485b73-cb7e-4c15-978b-ca7e8f266717",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C10",
+      "claim": "Many blebs in cells without cofilin-1 and ADF fail to retract.",
+      "claim_type": "EXPLICIT",
+      "source": "Many of these blebs failed to retract and displayed slow actin turnover.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figure 2E showing ~60% of blebs with elongated necks never retract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "3c69474e-baad-4e4f-b37a-e78631842530",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C11",
+      "claim": "Blebs in cells without cofilin-1 and ADF display slow actin turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "Many of these blebs failed to retract and displayed slow actin turnover.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by photoactivation data in Figure 4G showing increased t1/2 for actin turnover.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "b67fef5e-5eee-4550-bc87-4ba9ff29b080",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C12",
+      "claim": "Cofilin-1 and ADF are actin remodeling factors required for fast amoeboid migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, our data identifies cofilin-1 and ADF as actin remodeling factors required for fast amoeboid migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion supported by multiple lines of experimental evidence throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "26d6507f-09dd-4d7b-a48e-e7b265c4bdfa",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C13",
+      "claim": "Cell migration requires tight spatiotemporal control of the filamentous-actin (F-actin) cytoskeleton.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell migration requires tight spatiotemporal control of the filamentous-actin (F-actin) cytoskeleton.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "e3912a03-7097-467f-bac7-c6532684043b",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C14",
+      "claim": "For mesenchymal migration, actin assembly/disassembly and myosin contraction must occur within specific regions of the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "For mesenchymal migration, actin assembly/disassembly and myosin contraction must occur within specific regions of the cell (Pollard and Borisy, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "478d7955-55d7-4de7-b3f3-fa80544bf116",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C15",
+      "claim": "The mechanisms by which mesenchymal cells coordinate actin assembly/disassembly and myosin contraction are reasonably well understood.",
+      "claim_type": "EXPLICIT",
+      "source": "Relative to other, recently described modes of migration, the mechanisms by which mesenchymal cells coordinate these processes are reasonably well understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "c9103aae-3792-449d-b721-b263661d780e",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C16",
+      "claim": "In amoeboid cells, the mechanisms conferring spatiotemporal control of the F-actin cytoskeleton are not well known.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas, in amoeboid cells, which migrate using intracellular-driven protrusions of the plasma membrane (PM) or blebs, the mechanisms conferring spatiotemporal control of the F-actin cytoskeleton are not well known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a knowledge gap in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "7496ed20-51d3-4624-b0bf-c9a6be9fdd99",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C17",
+      "claim": "Amoeboid cells migrate using intracellular-driven protrusions of the plasma membrane or blebs.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas, in amoeboid cells, which migrate using intracellular-driven protrusions of the plasma membrane (PM) or blebs, the mechanisms conferring spatiotemporal control of the F-actin cytoskeleton are not well known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "6ea83c1b-4f49-409d-b03f-af7529b441d8",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C18",
+      "claim": "In response to tissue confinement, cancer cells frequently undergo phenotypic transitions, including to fast amoeboid migration.",
+      "claim_type": "EXPLICIT",
+      "source": "We and others discovered that in response to tissue confinement, cancer cells frequently undergo phenotypic transitions, including to what has been termed 'fast amoeboid migration' (Logue et al., 2015; Liu et al., 2015; Ruprecht et al., 2015; Bergert et al., 2015; Mistriotis et al., 2019; Wisniewski et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "7a1819ed-0ab6-4593-8452-6d81a90a5961",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C19",
+      "claim": "A hallmark of amoeboid migration is the presence of blebs, which form as a result of PM-cortical actin separation.",
+      "claim_type": "EXPLICIT",
+      "source": "A hallmark of amoeboid migration is the presence of blebs, which form as a result of PM-cortical actin separation (Charras et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "fcda5f65-77d8-4e90-93de-1e16c04b6a83",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C20",
+      "claim": "Blebs are typically rapidly retracted following the reassembly of cortical actin on bleb membranes and the recruitment of myosin.",
+      "claim_type": "EXPLICIT",
+      "source": "Typically, blebs are rapidly retracted following the reassembly of cortical actin on bleb membranes and the recruitment of myosin (Charras et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "a54e1ff0-6981-466b-9b27-d9956027eea2",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C21",
+      "claim": "During fast amoeboid migration, cells form a very large and stable bleb.",
+      "claim_type": "EXPLICIT",
+      "source": "However, during fast amoeboid migration, cells form a very large and stable bleb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge and supported by imaging data in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "5f9abf6f-277e-4b45-8f7b-86e19a75a924",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C22",
+      "claim": "Within leader blebs, cortical actin flows from the bleb tip to the neck, which separates leader blebs from the cell body.",
+      "claim_type": "EXPLICIT",
+      "source": "Within these blebs, is a cortical actin network that flows from the bleb tip to the neck, which separates leader blebs from the cell body (Logue et al., 2015; Liu et al., 2015; Ruprecht et al., 2015; Bergert et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and imaging data in Figure 1B.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "72feb56e-6996-4828-ad7b-55980ae6f08f",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C23",
+      "claim": "Flowing cortical actin together with non-specific friction provides the motive force for cell movement during fast amoeboid migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with non-specific friction, flowing cortical actin provides the motive force for cell movement (Ruprecht et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "7a45e911-acfb-462e-9fe9-da7d7eb57dac",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C24",
+      "claim": "Myosin is enriched at the neck of leader blebs.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have demonstrated that myosin is enriched at the neck of leader blebs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and imaging data in Figure 1C showing EGFP-RLC localization.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "38282a91-3d2c-4c67-8105-880b493828b9",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C25",
+      "claim": "Myosin at the leader bleb neck is required for rapid cortical actin flow.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the myosin at this location has been shown to be required for rapid cortical actin flow (Liu et al., 2015; Ruprecht et al., 2015; Bergert et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "4f1cc8dd-b329-49fa-8841-f2d0b5f7e877",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C26",
+      "claim": "What drives the disassembly of F-actin at the neck to replenish the pool of G-actin at the leader bleb tip is unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "However, what drives the disassembly of F-actin at the neck to replenish the pool of G-actin at the leader bleb tip is unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a knowledge gap that motivates the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "56271a5e-12ba-4795-bf7d-b5d459a862ab",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C27",
+      "claim": "Actin disassembly factors within leader blebs play a pivotal role in replenishing the pool of G-actin at the leader bleb tip.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we hypothesize that actin disassembly factors within leader blebs play a pivotal role in this process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the hypothesis of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "488b5faf-4fb0-4aee-b0a1-778648d1ca87",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C28",
+      "claim": "In mesenchymal cells, retrograde actin flow is driven by both myosin contraction and actin disassembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, in mesenchymal cells, retrograde actin flow is driven by both myosin contraction and actin disassembly, the latter of which is accelerated by the actin depolymerizing factor (ADF)/cofilin family of severing factors (Bravo-Cordero et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "bdcd2d1b-d185-491e-b92a-e5d6c57fa41e",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C29",
+      "claim": "Actin disassembly in mesenchymal cells is accelerated by the ADF/cofilin family of severing factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, in mesenchymal cells, retrograde actin flow is driven by both myosin contraction and actin disassembly, the latter of which is accelerated by the actin depolymerizing factor (ADF)/cofilin family of severing factors (Bravo-Cordero et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "f06c554b-a248-4e2e-86b7-ba7967a027a9",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C30",
+      "claim": "Severing by ADF/cofilin depends on inducing a structural change within the actin filament.",
+      "claim_type": "EXPLICIT",
+      "source": "Severing depends on ADF/cofilin inducing a structural change within the actin filament, an activity known to be repressed by LIM kinase (LIMK) phosphorylation on Ser 3 (Yang et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "8f493ebd-14a0-47b1-acfd-b5ff64895afe",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C31",
+      "claim": "ADF/cofilin severing activity is repressed by LIMK phosphorylation on Ser 3.",
+      "claim_type": "EXPLICIT",
+      "source": "Severing depends on ADF/cofilin inducing a structural change within the actin filament, an activity known to be repressed by LIM kinase (LIMK) phosphorylation on Ser 3 (Yang et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "074f504e-0d2e-4a38-9763-eaad9e2d7325",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C32",
+      "claim": "The consequence of actin severing by ADF/cofilin is variable, depending on the availability of barbed end capping proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the consequence of actin severing is variable, depending on the availability of barbed end capping proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge and supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "15f69f0b-bac7-4580-b88f-fec0c0ed758c",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C33",
+      "claim": "At a sufficiently high level of capping proteins, new barbed ends are capped, promoting actin disassembly from new pointed ends.",
+      "claim_type": "EXPLICIT",
+      "source": "At a sufficiently high level, new barbed ends are capped, promoting actin disassembly from new pointed ends (Wioland et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "8dd81fc0-0f50-43af-aab5-88ead196fac1",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C34",
+      "claim": "If barbed ends are left uncapped after severing, increased polymerization from new barbed ends may occur.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, if left uncapped, increased polymerization from new barbed ends may occur (Wioland et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "ff1430d0-0f0d-4eb1-a43d-162e6e7ea5c5",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C35",
+      "claim": "The effects of ADF/cofilin on actin severing are concentration dependent, where low and high levels of ADF/cofilin sever and stabilize actin filaments, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The effects of ADF/cofilin on actin severing is also concentration dependent, where low and high levels of ADF/cofilin sever and stabilize actin filaments, respectively (Andrianantoandro and Pollard, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "fd5f7cdb-4ff4-4bb7-9429-4508f03f5637",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C36",
+      "claim": "ADF/cofilin can regulate actin architecture by competing for F-actin binding and other mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, by competing for F-actin binding (e.g., Arp2/3) and other mechanisms, ADF/cofilin can regulate actin architecture (Chan et al., 2009; Gressin et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "cb095481-2e38-4599-a592-1ffc5a5172dc",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C37",
+      "claim": "The effects of ADF/cofilin on cortical actin are less certain, as the focus of many studies has been on the actin within lamellipodia.",
+      "claim_type": "EXPLICIT",
+      "source": "The effects of ADF/cofilin on cortical actin are even less certain, as the focus of many studies has been on the actin within lamellipodia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a knowledge gap in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "28365cdb-a27a-4623-813d-be29dfe1a191",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C38",
+      "claim": "Wiggan et al. previously reported bleb defects in HeLa cells depleted of actin severing factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Although Wiggan et al. have previously reported bleb defects in HeLa cells depleted of actin severing factors, the role of ADF and cofilin-1 in regulating the cortical actomyosin flow in fast amoeboid cells has not been determined (Wiggan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "d0f8f9fc-1e3c-4867-a2d6-b83642655cf1",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C39",
+      "claim": "The role of ADF and cofilin-1 in regulating the cortical actomyosin flow in fast amoeboid cells has not been determined.",
+      "claim_type": "EXPLICIT",
+      "source": "Although Wiggan et al. have previously reported bleb defects in HeLa cells depleted of actin severing factors, the role of ADF and cofilin-1 in regulating the cortical actomyosin flow in fast amoeboid cells has not been determined (Wiggan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a knowledge gap that motivates the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "f36533a4-60ea-41b5-896c-b822dc30a988",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C40",
+      "claim": "ADF and cofilin-1, together, are required for the rapid disassembly of incoming cortical actin at leader bleb necks.",
+      "claim_type": "EXPLICIT",
+      "source": "By combining an in vitro assay for the precise confinement of cells with quantitative imaging approaches, we report that ADF and cofilin-1, together, are required for the rapid disassembly of incoming cortical actin at leader bleb necks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding supported by multiple experimental approaches including CALI and photoactivation assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "449686b8-0dae-4d5c-859e-a6e25f665454",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C41",
+      "claim": "Under conditions of confinement, melanoma and lung adenocarcinoma cells depleted of both ADF and cofilin-1 display dramatic defects in bleb morphology and dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Under conditions of confinement, we find that melanoma and lung adenocarcinoma cells depleted of both proteins display dramatic defects in bleb morphology and dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by imaging data in Figures 2A and 2F-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "3e94c2bc-8739-448c-9206-642d5c40389d",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C42",
+      "claim": "Cells without ADF and cofilin-1 cannot undergo LBBM.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, cells without ADF and cofilin-1 cannot undergo LBBM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cell tracking data in Figure 1E-H showing reduced motility.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "5f12b071-6730-46f3-bda6-ee680689feb5",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C43",
+      "claim": "The properties of the cortical actin network in spherical cells correlate with LBBM.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work by us and others has shown that the properties of the cortical actin network in spherical cells correlate with LBBM (Logue et al., 2015; Liu et al., 2015; Bergert et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "280f8dc3-330a-498f-a1fb-6b6c37d022c0",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C44",
+      "claim": "In spherical cells, actin is predominantly cortical.",
+      "claim_type": "EXPLICIT",
+      "source": "In spherical cells, actin is predominantly cortical and endogenous cofilin-1 is diffuse throughout the cytoplasm with some enrichment at the cell periphery (Figure 3B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by imaging data in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "60451838-b80f-4fe1-a677-12ff2ae1ac6f",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C45",
+      "claim": "In spherical cells, endogenous cofilin-1 is diffuse throughout the cytoplasm with some enrichment at the cell periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "In spherical cells, actin is predominantly cortical and endogenous cofilin-1 is diffuse throughout the cytoplasm with some enrichment at the cell periphery (Figure 3B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by imaging data in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "e728a695-893d-492b-8eb3-32463766393f",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C46",
+      "claim": "In cells depleted of cofilin-1, F-actin levels were increased by ~10%.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells depleted of cofilin-1, F-actin levels were increased by ~10%, whereas depletion of ADF did not lead to a significant change in the level of F-actin (Figure 3C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "59b6f91c-f9ef-44d5-a113-04be43ddcff1",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C47",
+      "claim": "Depletion of ADF did not lead to a significant change in the level of F-actin.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells depleted of cofilin-1, F-actin levels were increased by ~10%, whereas depletion of ADF did not lead to a significant change in the level of F-actin (Figure 3C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "a1d69cc7-acbc-42b8-bb18-07b9a987a08c",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C48",
+      "claim": "Depleting ADF with cofilin-1 increases F-actin levels by ~30%.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, depleting ADF with cofilin-1 had the largest effect, increasing F-actin levels by ~30% (Figure 3C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "74a8d094-aaeb-4fea-8638-5201272319a1",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C49",
+      "claim": "Serine 3 of cofilin-1 is phosphorylated by LIMK, inhibiting its severing activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Serine 3 of cofilin-1 is phosphorylated by LIMK, inhibiting its severing activity (Yang et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "7748ddbe-cd0e-47d5-beb6-0b92d0fec606",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C50",
+      "claim": "In cells depleted of endogenous ADF and cofilin-1, transfection of EGFP-cofilin-1 reduced the level of F-actin to levels similar to control.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells depleted of endogenous ADF and cofilin-1, transfection of EGFP-cofilin-1 reduced the level of F-actin to levels similar to control (non-target; Figure 3D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "ee9b1a87-6023-45fc-8597-f20272ebc4e4",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C51",
+      "claim": "F-actin was restored to near control levels by transfection of EGFP-cofilin-1 (S3A; constitutively active).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, F-actin was restored to near control levels by transfection of EGFP-cofilin-1 (S3A; constitutively active), whereas transfection of EGFP-cofilin-1 (S3E; constitutively inactive) led to an increased level of F-actin (Figure 3D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "34b32318-9612-4b4e-a8cb-ab26acfe4165",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C52",
+      "claim": "Transfection of EGFP-cofilin-1 (S3E; constitutively inactive) led to an increased level of F-actin.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, F-actin was restored to near control levels by transfection of EGFP-cofilin-1 (S3A; constitutively active), whereas transfection of EGFP-cofilin-1 (S3E; constitutively inactive) led to an increased level of F-actin (Figure 3D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "937a43f5-40f9-47cc-bc61-cf277f017abb",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C53",
+      "claim": "Increasing levels of EGFP-cofilin-1 correlate with reductions in F-actin.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, in comparison to EGFP alone, increasing levels of EGFP-cofilin-1 correlated with reductions in F-actin (Figure 3E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "7b07e23e-fcd8-4ff1-a4ab-3c7d5c7c5c05",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C54",
+      "claim": "Cortical actin levels are regulated by ADF and cofilin-1 severing.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, cortical actin levels are regulated by ADF and cofilin-1 severing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the rescue experiments with wild-type and mutant cofilin-1 constructs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "05384906-1fc8-48c8-9972-416fca5cdd9c",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C55",
+      "claim": "In lamellipodia, cofilin-1 severing promotes actin polymerization at new barbed ends.",
+      "claim_type": "EXPLICIT",
+      "source": "In lamellipodia, cofilin-1 severing promotes actin polymerization at new barbed ends, whereas in the lamella, actin is de-polymerized at new pointed ends (Bravo-Cordero et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "9910affe-ade3-4f38-8551-0601f46f121d",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C56",
+      "claim": "In the lamella, actin is de-polymerized at new pointed ends after cofilin-1 severing.",
+      "claim_type": "EXPLICIT",
+      "source": "In lamellipodia, cofilin-1 severing promotes actin polymerization at new barbed ends, whereas in the lamella, actin is de-polymerized at new pointed ends (Bravo-Cordero et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "ad3df6a0-910a-471d-b6b9-de776aefce41",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C57",
+      "claim": "The prevalence of polymerization vs. depolymerization outcomes after severing depends on the concentration of capping proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The prevalence of each outcome has been proposed to depend on the concentration of capping proteins (Wioland et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "952ba263-8d20-4f51-9a16-8d64d8fb2b0a",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C58",
+      "claim": "In cells depleted of cofilin-1, there was a more than ~50% increase in the level of cortical barbed ends.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells depleted of cofilin-1, we observed a more than ~50% increase the level of cortical barbed ends, whereas depleting ADF marginally increased the level of cortical barbed ends (Figure 3G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by barbed end assay data in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "6267deb9-a0f0-4083-9be9-f5b347863739",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C59",
+      "claim": "Depleting ADF marginally increased the level of cortical barbed ends.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells depleted of cofilin-1, we observed a more than ~50% increase the level of cortical barbed ends, whereas depleting ADF marginally increased the level of cortical barbed ends (Figure 3G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by barbed end assay data in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "6c72401b-c391-43b2-9034-5491ba0273ff",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C60",
+      "claim": "Depleting cells of both ADF and cofilin-1 appeared to have an additive effect, increasing the level of cortical barbed ends by ~100%.",
+      "claim_type": "EXPLICIT",
+      "source": "Depleting cells of both proteins appeared to have an additive effect, increasing the level of cortical barbed ends by ~100% (Figure 3G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by barbed end assay data in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "6a321fc7-eec5-4484-9351-7d7e3fff866d",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C61",
+      "claim": "In cells depleted of ADF and cofilin-1, transfection of EGFP-cofilin-1 was sufficient to restore cortical barbed ends to a level similar to control.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in cells depleted of ADF and cofilin-1, transfection of EGFP-cofilin-1 was sufficient to restore cortical barbed ends to a level similar to control (Figure 3H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by barbed end assay data in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "7c5d8999-102b-483e-b411-f3b359b465ea",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C62",
+      "claim": "ADF and cofilin-1 regulate cortical actin levels by promoting the de-polymerization of actin at newly formed pointed ends.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results suggest that ADF and cofilin-1 regulate cortical actin levels by promoting the de-polymerization of actin at newly formed pointed ends.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the barbed end assay results showing increased barbed ends after depletion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "c47f3f9e-0e84-43a2-accd-3e93c1a8bf61",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C63",
+      "claim": "Lasting changes in the F/G-actin ratio can have a range of effects on cellular physiology.",
+      "claim_type": "EXPLICIT",
+      "source": "Lasting changes in the F/G-actin ratio, such as occurs during RNAi of ADF and/or cofilin-1, can have a range of effects on cellular physiology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "36405454-b718-46a6-a7c3-64d52cc41827",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C64",
+      "claim": "In cells depleted of ADF and cofilin-1, SuperNova-cofilin-1 is predominantly observed at leader bleb necks.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells depleted of ADF and cofilin-1, SuperNova-cofilin-1 is predominantly observed at leader bleb necks (Figure 4A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by imaging data in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "0d0bdfde-b99f-4fe2-be6b-4632eafe48e9",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C65",
+      "claim": "After 1 min of intense red light irradiation, ~50% of SuperNova-cofilin-1 is destroyed.",
+      "claim_type": "EXPLICIT",
+      "source": "After 1 min of intense red light irradiation, we found that ~50% of SuperNova-cofilin-1 is destroyed, as indicated by a reduction in red fluorescence (Figure 4A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative data in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "2a2a32ff-26d1-4a75-8caa-1f8ebeb38410",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C66",
+      "claim": "An accumulation of actin and the elongation of leader bleb necks occurs within minutes of inactivating cofilin-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Using LifeAct-mEmerald for monitoring actin dynamics, we observed an accumulation of actin and the elongation of leader bleb necks within minutes of inactivating cofilin-1 (Figure 4B and Video 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by imaging data in Figure 4B and Video 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "47ed4eef-e286-4212-a7c7-9cbc5513cc18",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C67",
+      "claim": "After inactivating SuperNova-cofilin-1, cortical actin flow rates in leader blebs were reduced by ~50%.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, after inactivating SuperNova-cofilin-1, cortical actin flow rates in leader blebs were reduced by ~50%, whereas irradiation of SuperNova alone did not change actin flow rates (Figure 4C\u2013D and Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by kymograph analysis in Figure 4C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "798f6c16-b852-4ba5-a461-2d34ee73204a",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C68",
+      "claim": "Irradiation of SuperNova alone did not change actin flow rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, after inactivating SuperNova-cofilin-1, cortical actin flow rates in leader blebs were reduced by ~50%, whereas irradiation of SuperNova alone did not change actin flow rates (Figure 4C\u2013D and Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by control data in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "36d1e8e0-d3f8-47a5-8b3b-42255dfe3560",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C69",
+      "claim": "Cofilin-1 directly regulates the cortical actin in leader blebs.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, as demonstrated by CALI, cofilin-1 directly regulates the cortical actin in leader blebs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the CALI experiments showing rapid effects on actin flow after cofilin-1 inactivation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "5f6fd643-6f35-464a-afdd-b2bc5910b038",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C70",
+      "claim": "Changes in the cellular F/G-actin ratio can trigger specific transcriptional programs, such as through the activation of the transcription factor, MRTF-A.",
+      "claim_type": "EXPLICIT",
+      "source": "Because changes in the cellular F/G-actin ratio can trigger specific transcriptional programs, such as through the activation of the transcription factor, MRTF-A, we wanted to determine if the effects we observed on LBBM are a direct result of down-regulating actin severing (Olson and Nordheim, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "415b7439-3b47-4e84-b883-34dd2efb15b4",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C71",
+      "claim": "In cells depleted of ADF and cofilin-1, SuperNova-coflin-1 was sufficient to restore normal bleb morphology and dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells depleted of ADF and cofilin-1, SuperNova-coflin-1 was sufficient to restore normal bleb morphology and dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by imaging data showing normal blebs before CALI in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "015c5b0d-b167-4a45-9587-4c4924689d2a",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C72",
+      "claim": "Within minutes of cofilin-1 inactivation, actin began to accumulate at elongated bleb necks.",
+      "claim_type": "EXPLICIT",
+      "source": "However, within minutes of cofilin-1 inactivation, actin began to accumulate at elongated bleb necks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by imaging data in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "4e5f8775-3ed6-4dd6-8466-da133694cf19",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C73",
+      "claim": "Depleting ADF or cofilin-1 alone did not have a significant effect on actin turnover rates at bleb necks.",
+      "claim_type": "EXPLICIT",
+      "source": "While depleting ADF or cofilin-1 alone did not have a significant effect on actin turnover rates, depleting both proteins led to a large increase in the rate of actin turnover at bleb necks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by photoactivation data in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "b9889cd7-d3b5-460f-a4a3-7dcd12da436c",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C74",
+      "claim": "Depleting both ADF and cofilin-1 led to a large increase in the half-life of actin turnover at bleb necks.",
+      "claim_type": "EXPLICIT",
+      "source": "While depleting ADF or cofilin-1 alone did not have a significant effect on actin turnover rates, depleting both proteins led to a large increase in the rate of actin turnover at bleb necks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by photoactivation data in Figure 4G showing increased t1/2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "1762cc39-c4dc-4c6a-96b3-88413eab6f42",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C76",
+      "claim": "Cofilin-1 has been previously implicated in regulating actomyosin contractility.",
+      "claim_type": "EXPLICIT",
+      "source": "Cofilin-1 has been previously implicated in regulating actomyosin contractility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "e7f9f872-1e65-4cb2-800f-aadfdcd1f84c",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C77",
+      "claim": "Cells were found to be less stiff after depleting cofilin-1, as indicated by increased compressibility.",
+      "claim_type": "EXPLICIT",
+      "source": "As indicated by increased compressibility, cells were found to be less stiff after depleting cofilin-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by gel sandwich assay data in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "d4180014-4fb5-4df3-adea-6ee4528ae077",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C78",
+      "claim": "Removing ADF had little effect on cell stiffness.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, removing ADF had little effect on cell stiffness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by gel sandwich assay data in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "6654eacc-a382-406e-b63c-5a4f730bb629",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C79",
+      "claim": "Depleting both ADF and cofilin-1 was similar to removing cofilin-1 alone in terms of cell stiffness.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, depleting both ADF and cofilin-1 was similar to removing cofilin-1 alone and could be rescued by an RNAi resistant version of cofilin-1 but not ADF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by gel sandwich assay data in Figure 5A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "db4aa8a9-7aad-43e3-baa1-0a4f5a55efff",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C80",
+      "claim": "Cell stiffness defects after ADF and cofilin-1 depletion could be rescued by an RNAi resistant version of cofilin-1 but not ADF.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, depleting both ADF and cofilin-1 was similar to removing cofilin-1 alone and could be rescued by an RNAi resistant version of cofilin-1 but not ADF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by rescue experiments in Figure 5B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "46eee5be-c150-407a-a4e4-c28eb007ac87",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C81",
+      "claim": "Cofilin-1 may be particularly important to support actomyosin contractility.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, cofilin-1 may be particularly important to support actomyosin contractility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the stiffness and rescue experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "3a9f8378-fec5-414c-82e5-fdc7e823c809",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C82",
+      "claim": "Cofilin-1 has been shown to support myosin contractility through optimizing actin filament lengths and de-branching.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this notion, cofilin-1 has been shown to support myosin contractility through optimizing actin filament lengths and de-branching (Chan et al., 2009; Chugh et al., 2017; Ennomani et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "9d7518c1-eb5f-4621-b568-28192b616e7f",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C83",
+      "claim": "Removing ADF and/or cofilin-1 does not appear to affect signaling to myosin, as indicated by the lack of any change in pRLC levels or localization.",
+      "claim_type": "EXPLICIT",
+      "source": "As indicated by the lack of any change in pRLC levels or localization, removing these proteins does not appear to effect signaling to myosin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunofluorescence data in Figure 5D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "1a28e0d8-5c04-4946-9686-089e0166d68f",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C84",
+      "claim": "Depleting ADF and cofilin-1 leads to the elongation of leader bleb necks, which are decorated with myosin.",
+      "claim_type": "EXPLICIT",
+      "source": "In confined cells, depleting ADF and cofilin-1 leads to the elongation of leader bleb necks, which are decorated with myosin (EGFP-RLC; Figure 5F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by imaging data in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "516388fa-2865-45b8-93cb-0bee638c25d3",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C85",
+      "claim": "Within minutes of SuperNova-cofilin-1 inactivation, myosin accumulates at leader bleb necks.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, within minutes of SuperNova-cofilin-1 inactivation, we observed myosin accumulating at leader bleb necks (EGFP-RLC; Figure 5G and Video 8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by imaging data in Figure 5G and Video 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "f623d3dd-13da-45ea-bdd1-22d7fe635fc2",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C86",
+      "claim": "The flow of myosin toward leader bleb necks was significantly impeded after cofilin-1 inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the flow of myosin toward leader bleb necks was significantly impeded after cofilin-1 inactivation, as determined by tracking individual myosin minifilaments (Figure 5H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative tracking data in Figure 5H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "ab9279a7-5b0f-4adc-9681-6160986a5fc0",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C87",
+      "claim": "ADF may be particularly important for actin turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "While ADF may be particularly important for actin turnover, these results point to cofilin-1 as having important roles in both actin turnover and myosin contractility at leader bleb necks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential effects of ADF vs. cofilin-1 depletion on various parameters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "5fe9587e-533e-4610-b03a-d7c3adab2638",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C88",
+      "claim": "Cofilin-1 has important roles in both actin turnover and myosin contractility at leader bleb necks.",
+      "claim_type": "EXPLICIT",
+      "source": "While ADF may be particularly important for actin turnover, these results point to cofilin-1 as having important roles in both actin turnover and myosin contractility at leader bleb necks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the multiple effects of cofilin-1 depletion on actin dynamics and cell stiffness.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "340168a3-ea79-4876-b900-8c5fe6901d4c",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C89",
+      "claim": "ADF and cofilin-1 play key roles during LBBM by optimizing actin disassembly and myosin contractility at bleb necks.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our data are consistent with a model whereby ADF and cofilin-1 play key roles during LBBM. More specifically, we assert that ADF and cofilin-1, together, optimize actin disassembly and myosin contractility at bleb necks (Figure 6, top).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study supported by multiple lines of evidence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "e6e8334d-737c-4311-bf0b-488af6a128bd",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C90",
+      "claim": "In the absence of ADF and cofilin-1, incoming cortical actin fails to disassemble and accumulates with myosin at the elongated necks of persistent blebs.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas, in the absence of these proteins, incoming cortical actin fails to disassemble and accumulates with myosin at the elongated necks of persistent blebs (Figure 6, below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by imaging data showing actin and myosin accumulation at elongated necks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "3c51b3e0-54d0-490a-aa8c-b221c3f83558",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C91",
+      "claim": "Rapid cortical actin flows are essential for confined (leader bleb-based) migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, this study further points to rapid (cortical) actin flows as being essential for confined (leader bleb-based) migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that disrupting actin flow by depleting ADF and cofilin-1 inhibits LBBM.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "2a0a88bb-3b67-403e-9c24-eadb0c064d0d",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C92",
+      "claim": "Many cancer cells have been shown to undergo LBBM.",
+      "claim_type": "EXPLICIT",
+      "source": "This is significant as many cancer cells have been shown to undergo LBBM (Logue et al., 2015; Liu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "02dfc2d1-df74-4136-b506-332671a0673d",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C93",
+      "claim": "In melanoma cells, ADF appears to augment the activity of cofilin-1 at bleb necks.",
+      "claim_type": "EXPLICIT",
+      "source": "This work also reveals an unanticipated role for ADF. In melanoma cells, ADF appears to augment the activity of cofilin-1 at bleb necks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the additive effects of depleting both proteins on various parameters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "32e766fb-420c-4bad-9d3e-937a98142d24",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C94",
+      "claim": "ADF and cofilin-1 are thought to have redundant or overlapping roles.",
+      "claim_type": "EXPLICIT",
+      "source": "Largely, ADF and cofilin-1 are thought to have redundant or overlapping roles (Hotulainen et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "bf1b7cb1-0486-4609-9e04-a2b29f14bd60",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C95",
+      "claim": "ADF has been shown to have significant monomer sequestering activity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, ADF has been shown to have significant monomer sequestering activity (Chen et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "d8993685-24c2-45cb-b90d-df627e0e518a",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C96",
+      "claim": "In the absence of both ADF and cofilin-1, dampened actin severing coupled with uncontrolled filament elongation contributes to the severe phenotypes observed.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that, in the absence of both proteins, dampened actin severing coupled with uncontrolled filament elongation contributes to the severe phenotypes we observe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as speculation based on the observed phenotypes and known functions of the proteins.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "fdd6700a-e751-4b0f-9013-448d34f48244",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C97",
+      "claim": "The dissemination of melanoma tumors is likely to be blocked by the simultaneous inhibition of ADF and cofilin-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the dissemination of melanoma tumors is likely to be blocked by the simultaneous inhibition of ADF and cofilin-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the finding that depleting both proteins inhibits LBBM.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "4f58bbe0-8899-4550-bdb7-4b2f51b1f2c1",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C98",
+      "claim": "Actin severing by ADF and cofilin-1 can be regulated by a number of functional interactions, such as with Aip1 and cyclase-associated protein 1.",
+      "claim_type": "EXPLICIT",
+      "source": "As actin severing by ADF and cofilin-1 can be regulated by a number of functional interactions, such as with Aip1 and cyclase-associated protein 1, future work will endeavor to determine the contribution of these factors in regulating the cortical actomyosin flow in fast amoeboid cells (Bertling et al., 2004; Nadkarni and Brieher, 2014; Chen et al., 2015; Shekhar et al., 2019; Kotila et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "29c91369-efb4-4063-a3a0-fb9ca38f7206",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C99",
+      "claim": "In melanoma A375 cells, both ADF and cofilin-1 are expressed, with cofilin-1 mRNA levels being threefold higher.",
+      "claim_type": "EXPLICIT",
+      "source": "In melanoma A375 cells, a widely used cell line for the study of amoeboid migration, both ADF and cofilin-1 are expressed, with cofilin-1 mRNA levels being threefold higher (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by qRT-PCR data in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "c73be854-2c11-444e-a213-1de408827f9b",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C100",
+      "claim": "Cells depleted of cofilin-1 were significantly less motile.",
+      "claim_type": "EXPLICIT",
+      "source": "By manually tracking the movement of cells over time, we found that cells depleted of cofilin-1 were significantly less motile (Figure 1E\u2013H and Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cell tracking data in Figure 1E-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "53ed5e14-87af-4ac5-ad03-55f0892f49fd",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C101",
+      "claim": "The adhesive transmigration of cells through small pores was hindered after depleting cofilin-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the adhesive transmigration of cells through small pores was hindered after depleting cofilin-1 (Figure 1\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by transmigration assay data in Figure 1\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "bea50483-078a-498d-88a7-34a20e429199",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C102",
+      "claim": "Depleting cells of ADF led to a slight reduction in the number of highly motile cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Depleting cells of ADF led to a slight reduction in the number of highly motile cells (Figure 1E\u2013H and Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cell tracking data in Figure 1E-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "a0252c6c-e181-49ed-8544-0834fb630b70",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C103",
+      "claim": "Depleting cells of both ADF and cofilin-1 appeared to have an additive effect on reducing LBBM.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, depleting cells of both ADF and cofilin-1 appeared to have an additive effect on reducing LBBM, whereas the adhesive transmigration of cells through small pores did not display this additive behavior and was not affected by ADF depletion (Figure 1E\u2013H and Figure 1\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cell tracking data in Figure 1E-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "7a184e5c-7259-4eed-9b27-882fdd2f4c89",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C104",
+      "claim": "The adhesive transmigration of cells through small pores did not display additive behavior after depleting both ADF and cofilin-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, depleting cells of both ADF and cofilin-1 appeared to have an additive effect on reducing LBBM, whereas the adhesive transmigration of cells through small pores did not display this additive behavior and was not affected by ADF depletion (Figure 1E\u2013H and Figure 1\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by transmigration assay data in Figure 1\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "d7393f2a-1989-40d8-a72c-91797c28e6bb",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C105",
+      "claim": "ADF and cofilin-1 play non-overlapping roles during LBBM.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that these proteins play non-overlapping roles during LBBM (Figure 1E\u2013H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the additive effects of depleting both proteins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "658a1185-871e-44f8-ac41-2e5e16facb9d",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C106",
+      "claim": "Transfection of EGFP-cofilin-1 into cells depleted of both ADF and cofilin-1 was insufficient to restore LBBM.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with this concept, transfection of EGFP-cofilin-1 into cells depleted of both proteins was insufficient to restore LBBM (Figure 1E\u2013I).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by rescue experiment data in Figure 1E-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "37bfe777-1456-40da-9851-d9cc3168d663",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C107",
+      "claim": "Depleting cells of cofilin-1 reduced the area of the largest bleb by ~15% of control.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed that depleting cells of cofilin-1 reduced the area of the largest bleb by ~15% of control while depleting cells of both ADF and cofilin-1 reduced the area of the largest bleb by ~40% of control (non-targeting; Figure 2A\u2013B and Videos 3\u20135).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative data in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "5ec92385-a066-4635-b923-0243e55965ad",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C108",
+      "claim": "Depleting cells of both ADF and cofilin-1 reduced the area of the largest bleb by ~40% of control.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed that depleting cells of cofilin-1 reduced the area of the largest bleb by ~15% of control while depleting cells of both ADF and cofilin-1 reduced the area of the largest bleb by ~40% of control (non-targeting; Figure 2A\u2013B and Videos 3\u20135).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative data in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "8d7ab90b-9fa4-424e-b87a-d1cb36bcbd87",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C109",
+      "claim": "In cells depleted of both ADF and cofilin-1, ~30% of cells displayed blebs with elongated necks.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, in cells depleted of both ADF and cofilin-1, ~30% of cells displayed blebs with elongated necks (Figure 2A,D and Video 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative data in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "8cb1435b-1a90-4a00-82d9-264b1a030b18",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C110",
+      "claim": "~60% of cells with elongated bleb necks display blebs that never retract into the cell body.",
+      "claim_type": "EXPLICIT",
+      "source": "Detailed analyses of these cells revealed that ~60% display blebs that never retract into the cell body (Figure 2E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative data in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "63a6f4f5-c037-4ebb-ae74-c10388138fcc",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C111",
+      "claim": "Depleting lung adenocarcinoma A549 cells of both ADF and cofilin-1 results in the elongation of bleb necks.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we found this effect to not be specific to melanoma A375 cells, as depleting lung adenocarcinoma A549 cells of both ADF and cofilin-1 similarly resulted in the elongation of bleb necks (Figure 2F\u2013G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by imaging and quantitative data in Figure 2F-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "d126f688-d734-4a66-b3e3-27e4db9e9d89",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C112",
+      "claim": "Depleting both ADF and cofilin-1 had an additive effect on reducing the rate of bleb retraction.",
+      "claim_type": "EXPLICIT",
+      "source": "In melanoma A375 cells, depleting both ADF and cofilin-1 had an additive effect on reducing the rate of bleb retraction, which points to these proteins having non-overlapping functions specifically at bleb necks (Figure 2H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative data in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "8127e49a-ee92-4456-80da-365b6579becf",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C113",
+      "claim": "ADF and cofilin-1 have non-overlapping functions specifically at bleb necks.",
+      "claim_type": "EXPLICIT",
+      "source": "In melanoma A375 cells, depleting both ADF and cofilin-1 had an additive effect on reducing the rate of bleb retraction, which points to these proteins having non-overlapping functions specifically at bleb necks (Figure 2H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the additive effect on bleb retraction rate.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "9e5c0d97-941f-4a87-b6dc-8c711dafb1ff",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C114",
+      "claim": "In cells depleted of endogenous ADF and cofilin-1, EGFP-cofilin-1 is enriched at leader bleb necks.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this role, we determined the location of EGFP-cofilin-1 in confined cells. Our initial efforts were unsuccessful because of a high degree of soluble (i.e., unbound to F-actin) protein, but in cells depleted of endogenous ADF and cofilin-1 we could detect an enrichment of EGFP-cofilin-1 at leader bleb necks (Figure 2I; arrow).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by imaging data in Figure 2I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "3df35593-9dfd-4303-8441-3be066425fcd",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C115",
+      "claim": "A large concentration of F-actin is found at the necks of blebs in cells depleted of ADF and cofilin-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus far, our results suggest that ADF and cofilin-1 are important for the rapid turnover of cortical actin at bleb necks. In agreement with this concept, a large concentration of F-actin is found at the necks of blebs in cells depleted of ADF and cofilin-1 (Figure 3A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by imaging data in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "dd9d100e-6226-4796-b58c-726b858658b6",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C116",
+      "claim": "Migration plasticity is thought to be a major contributor of metastasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Because migration plasticity is thought to be a major contributor of metastasis, our aim here is to identify the essential factors required for the rapid cortical actin flow in leader blebs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge that motivates the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "93a9e5ed-3cc8-4260-8fd9-f3c667dbe7a8",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C117",
+      "claim": "Wiggan et al. reported an increase in the frequency of HeLa cells with blebs after cofilin-1 RNAi.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar elongated neck phenotype was observed by Wiggan et al., whereas they reported an increase in the frequency of HeLa cells with blebs after cofilin-1 RNAi (Wiggan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "6af88ada-7c37-4720-929a-4a522fad1c70",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C118",
+      "claim": "Wiggan et al. contend that cofilin-1 inhibits contractility by competing with myosin for F-actin binding.",
+      "claim_type": "EXPLICIT",
+      "source": "While these authors contend that cofilin-1 inhibits contractility by competing with myosin for F-actin binding, our results are in line with work showing that cofilin-1 increases contractility through optimizing actin filament lengths and de-branching (Chan et al., 2009; Chugh et al., 2017; Ennomani et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "e952c3a6-e80d-4c88-b33e-4e038aecb5f4",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C119",
+      "claim": "The current study's results are in line with work showing that cofilin-1 increases contractility through optimizing actin filament lengths and de-branching.",
+      "claim_type": "EXPLICIT",
+      "source": "While these authors contend that cofilin-1 inhibits contractility by competing with myosin for F-actin binding, our results are in line with work showing that cofilin-1 increases contractility through optimizing actin filament lengths and de-branching (Chan et al., 2009; Chugh et al., 2017; Ennomani et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work and the stiffness data in Figure 5A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "7ae6f27c-03cc-4c5d-8b48-c39c58ef5df5",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C120",
+      "claim": "Confined cells are placed under a slab of PDMS held at a defined height (~3 \u00b5m) above cover glass.",
+      "claim_type": "EXPLICIT",
+      "source": "Using our previously described approach for cell confinement, which involves placing cells under a slab of PDMS held at a defined height (~3 \u00b5m) above cover glass, cancer cells will switch to LBBM (Figure 1A and Video 1; Logue et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "95162eaf-95f6-4b93-829d-e26542760518",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C121",
+      "claim": "Cancer cells switch to LBBM when confined under PDMS at ~3 \u00b5m height.",
+      "claim_type": "EXPLICIT",
+      "source": "Using our previously described approach for cell confinement, which involves placing cells under a slab of PDMS held at a defined height (~3 \u00b5m) above cover glass, cancer cells will switch to LBBM (Figure 1A and Video 1; Logue et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by imaging data in Figure 1A and Video 1, and citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "dad3b9eb-1690-4a38-bcef-5b1639dc8170",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "claim_id": "C122",
+      "claim": "Myosin is concentrated at the leader bleb neck that separates the leader bleb from the cell body.",
+      "claim_type": "EXPLICIT",
+      "source": "As indicated by an enrichment in EGFP tagged regulatory light chain (EGFP-RLC), we observe a concentration of myosin at the leader bleb neck that separates the leader bleb from the cell body (Figure 1C and Video 2; Liu et al., 2015; Ruprecht et al., 2015; Bergert et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by imaging data in Figure 1C and Video 2, and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "dc0ca374-6859-4e0b-ae3f-a12a23cac398",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the experimental context for studying leader bleb-based migration (LBBM) in confined cancer cells. Melanoma cells undergo fast amoeboid migration characterized by a single large stable bleb containing cortical actin that flows from tip to neck, driven by myosin enriched at the bleb neck. The authors use a PDMS confinement system (~3 \u00b5m height) to induce this migration mode.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C17-C25, C120-C122 collectively establish the biological context and experimental system. The imaging data in Figures 1A-C and Videos 1-2 directly support the presence of leader blebs, cortical actin flow, and myosin localization. The confinement methodology is well-documented with appropriate citations to prior work (Logue et al., 2018).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "c99b0753-25d6-4609-9f70-351830b94cfc",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Depletion of cofilin-1 significantly reduces LBBM, while ADF depletion has minimal effect alone. However, co-depletion of both ADF and cofilin-1 has an additive effect, nearly abolishing LBBM. This additive effect is specific to LBBM and not observed in adhesive transmigration assays. EGFP-cofilin-1 alone cannot rescue LBBM in double-depleted cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C106, C8, and C42 are well-supported by cell tracking data (Figure 1E-H), transmigration assays (Figure 1\u2014figure supplement 1D), and rescue experiments (Figure 1E-I). The qRT-PCR data confirms expression levels (Figure 1\u2014figure supplement 1B), and Western blots validate knockdown efficiency (Figure 1D). The additive effect and specificity to LBBM versus adhesive migration provide strong evidence for non-overlapping roles.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "cd37dd1c-ca35-459c-aefd-3805cdcc9669",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Cells depleted of cofilin-1 and ADF display dramatic defects in bleb morphology: reduced bleb size (~40% reduction with double depletion), abnormally elongated bleb necks (~30% of cells), and failure of blebs to retract (~60% of elongated blebs never retract). These effects are observed in both melanoma A375 and lung adenocarcinoma A549 cells, with additive effects on bleb retraction rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C9-C10, C41, C107-C113 are strongly supported by quantitative imaging data (Figures 2A-H) and Videos 3-6. The phenotypes are well-characterized with appropriate statistical analysis, and the observation in two cell lines (A375 and A549) strengthens generalizability. The additive effect on bleb retraction rate provides additional evidence for non-overlapping functions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "4d7297b9-2b39-44bf-9d71-8e6e18873fa3",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Cofilin-1 is enriched at leader bleb necks. In cells depleted of endogenous ADF and cofilin-1, EGFP-cofilin-1 localizes to leader bleb necks with enrichment decreasing from neck to tip.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C114 are supported by imaging data in Figure 2I showing EGFP-cofilin-1 localization and regional analysis (Figure 2I') demonstrating enrichment at the neck. The requirement for endogenous protein depletion to visualize localization is appropriately noted, addressing the high soluble protein background.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "45266065-2b5f-4bd8-944b-42db9dd802fc",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Co-depletion of cofilin-1 and ADF leads to a large increase (~30%) in cortical F-actin levels in spherical cells, with cofilin-1 depletion alone increasing F-actin by ~10% and ADF depletion having no significant effect. F-actin accumulates at bleb necks in confined double-depleted cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C46-C48, and C115 are well-supported by flow cytometry data (Figure 3C) and imaging data (Figure 3A). The use of spherical cells to study cortical actin is justified by prior work (C43). The additive effect of double depletion is consistent with non-overlapping functions and provides mechanistic insight into bleb defects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "22ace03b-b2f8-4661-abcf-0dc4c4a36e97",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Cortical actin levels are regulated by ADF and cofilin-1 severing activity. Wild-type and constitutively active (S3A) EGFP-cofilin-1 rescue F-actin levels in double-depleted cells, while constitutively inactive (S3E) cofilin-1 increases F-actin. Increasing EGFP-cofilin-1 levels correlate with F-actin reductions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C54 are supported by flow cytometry rescue experiments (Figures 3D-E). The use of phosphorylation mutants (S3A and S3E) provides strong evidence that severing activity specifically regulates cortical actin levels. The dose-dependent effect (C53) further supports this mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "526c484c-2650-48d1-81c0-297d506684f2",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Depletion of cofilin-1 increases cortical barbed ends by ~50%, ADF depletion marginally increases barbed ends, and double depletion has an additive effect (~100% increase). EGFP-cofilin-1 rescues barbed end levels in double-depleted cells. This suggests ADF and cofilin-1 promote actin depolymerization at newly formed pointed ends rather than polymerization at barbed ends.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C62 are supported by barbed end assay data (Figures 3F-H) with appropriate controls (cytochalasin B treatment in Figure 3\u2014figure supplement 1A). The interpretation that increased barbed ends reflect reduced depolymerization at pointed ends (rather than increased severing-induced polymerization) is logical and consistent with the F-actin accumulation data. However, the mechanism could be more directly tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "6a9b6c9b-49ea-4b30-ba9a-3fe05ab2e4e8",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Chromophore-assisted light inactivation (CALI) of SuperNova-cofilin-1 demonstrates direct regulation of cortical actin in leader blebs. Within minutes of cofilin-1 inactivation (~50% destruction), actin accumulates at elongated bleb necks and cortical actin flow rates are reduced by ~50%. Controls with SuperNova alone show no effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C69, C71-C72 are strongly supported by CALI experiments (Figures 4A-D, Video 7, and Figure 4\u2014figure supplement 1A). The rapid timescale (minutes) and appropriate controls (SuperNova alone) provide compelling evidence for direct effects rather than indirect transcriptional changes. This addresses the concern about long-term RNAi effects (C63, C70).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "4fe4a928-6c53-487d-8f5d-3efd42722cdb",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Depleting both ADF and cofilin-1 significantly increases the half-life of actin turnover at bleb necks, while depleting either protein alone has no significant effect. This demonstrates that ADF and cofilin-1 together are required for rapid actin turnover at bleb necks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C73-C74 are supported by photoactivation experiments using mEos3.2-LifeAct (Figures 4E-G). The single-phase decay fit (R\u00b2 = 0.8348) is reasonable, and controls with fixed cells (Figure 4\u2014figure supplement 1B) validate the approach. The authors appropriately note these are apparent rates due to LifeAct binding kinetics. The additive requirement for both proteins is consistent with other findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "e0549e9d-6a96-4cd2-b1d6-f68f126117ab",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Cofilin-1 depletion significantly decreases cell stiffness (increases compressibility), while ADF depletion has no effect. Double depletion resembles cofilin-1 depletion alone. RNAi-resistant cofilin-1, but not ADF, rescues stiffness defects. This suggests cofilin-1 is particularly important for supporting actomyosin contractility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C77-C81 are supported by gel sandwich assay data (Figures 5A-C). The rescue experiments with RNAi-resistant constructs provide strong evidence for specificity. The interpretation that cofilin-1 supports contractility is consistent with cited literature (C82, C119) and contrasts with alternative interpretations (C118). However, the mechanism linking reduced stiffness to contractility could be more directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "bae04ea7-5986-4977-8fdf-dc1991d63244",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Removing ADF and/or cofilin-1 does not affect signaling to myosin, as indicated by unchanged pRLC levels and localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C83 is supported by immunofluorescence data (Figures 5D-E) showing no significant changes in pRLC:RLC ratios after depletion. This control is important for ruling out indirect effects on myosin activation and supports the interpretation that effects on contractility are due to changes in actin architecture rather than signaling.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "e21c665b-0510-4230-9917-2a3f0304119f",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "In confined cells depleted of ADF and cofilin-1, myosin accumulates at elongated leader bleb necks. CALI of SuperNova-cofilin-1 causes myosin accumulation at bleb necks within minutes and significantly impedes myosin minifilament flow toward necks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C86 are supported by imaging data (Figures 5F-H and Video 8). The CALI experiments demonstrate rapid effects on myosin dynamics, complementing the actin flow data. Tracking individual myosin minifilaments (C86) provides quantitative evidence for impeded flow. These results link actin turnover defects to myosin accumulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "33da561f-e172-4466-8917-a5a29ee7b493",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The main conclusion: ADF and cofilin-1 together are required for rapid disassembly of cortical actin at leader bleb necks, optimizing both actin disassembly and myosin contractility. In their absence, cortical actin fails to disassemble and accumulates with myosin at elongated necks of persistent blebs, preventing LBBM. This identifies rapid cortical actin flow as essential for confined migration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40, C89-C91, and C12 represent the integrated conclusions supported by multiple complementary approaches: RNAi, CALI, photoactivation, cell stiffness assays, and imaging across two cell lines. The model (Figure 6) is well-supported by the data. The conclusion that rapid actin flow is essential for LBBM is strongly supported, though the relative contributions of actin turnover versus contractility defects could be better quantified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "491f93a8-5e5d-4b48-bb86-88bfa51fba9a",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "ADF and cofilin-1 have non-overlapping roles during LBBM. ADF may be particularly important for actin turnover, while cofilin-1 has important roles in both actin turnover and myosin contractility at leader bleb necks. In melanoma cells, ADF appears to augment cofilin-1 activity at bleb necks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C88, C93, C105, and C113 synthesize differential effects observed throughout the study. The additive effects on multiple parameters (motility, bleb size, retraction rate, F-actin levels, barbed ends, actin turnover) support non-overlapping roles. The specific role of cofilin-1 in contractility (but not ADF) is well-supported by stiffness and rescue data. However, the precise molecular mechanisms underlying these differences remain unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "ccab5ac3-cd97-4ebd-8d1d-1f20bb4b2411",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study has translational implications: many cancer cells undergo LBBM, migration plasticity contributes to metastasis, and simultaneous inhibition of ADF and cofilin-1 could block melanoma tumor dissemination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C92 and C116 are supported by citations to prior work. However, claim C97 (therapeutic potential) is speculative and not directly tested. While the in vitro data support this possibility, in vivo validation, assessment of normal cell effects, and consideration of compensatory mechanisms would be needed to support this translational claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "51508286-70f4-4aa7-8d2a-d79e700abba4",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors speculate that ADF's monomer sequestering activity, combined with dampened severing in double-depleted cells, leads to uncontrolled filament elongation contributing to severe phenotypes. This contrasts with the traditional view of redundant ADF/cofilin-1 roles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C94-C96 are explicitly speculative (C96 states \"we speculate\"). While C94 and C95 cite prior work, the proposed mechanism in C96 is not directly tested. The speculation is reasonable given the data, but would require additional experiments (e.g., measuring filament lengths, testing effects of exogenous G-actin) to be supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "74c1903c-98d0-4777-80b7-12735cee81a3",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The manuscript provides extensive background on cell migration, actin dynamics, ADF/cofilin function, and prior work on blebs. This establishes the knowledge gaps (mechanisms of spatiotemporal control in amoeboid cells, role of ADF/cofilin in cortical actin and LBBM) that motivate the study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C39, C43, C49, C55-C57, C63, C70, C76, C82, C98, C117-C119 are appropriately cited to prior literature and establish the scientific context. The authors correctly identify knowledge gaps (C16, C26, C37, C39) and position their work relative to prior studies (C38, C117-C119). This background is essential for interpreting the significance of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "e678d366-09b5-44c8-8654-a7c37513994b",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "In spherical cells, actin is predominantly cortical and endogenous cofilin-1 is diffuse throughout the cytoplasm with some enrichment at the cell periphery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45 are supported by imaging data in Figure 3B. This characterization justifies the use of spherical cells as a model system for studying cortical actin regulation and provides context for the flow cytometry experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    },
+    {
+      "id": "895793f6-0bb9-4e67-8196-e51b22d41a0f",
+      "content_id": "8d31f8ae-b2e1-4c88-9acc-fbe0cd89c1cf",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Severing factors can promote contractility through the regulation of actin architecture.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C4 is stated in the abstract and supported by the cell stiffness data (Figure 5A) and citations to prior work (C82, C119). However, the manuscript demonstrates that cofilin-1 specifically (not ADF) affects stiffness, and the mechanism (actin architecture regulation) is inferred rather than directly demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:27:36.282052Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "006dac80-de70-41e0-b01c-1047699609ee",
+      "result_id": "dc0ca374-6859-4e0b-ae3f-a12a23cac398"
+    },
+    {
+      "claim_id": "94e9cbd8-2187-4b5e-b0ad-99e6b3a1d011",
+      "result_id": "dc0ca374-6859-4e0b-ae3f-a12a23cac398"
+    },
+    {
+      "claim_id": "7496ed20-51d3-4624-b0bf-c9a6be9fdd99",
+      "result_id": "dc0ca374-6859-4e0b-ae3f-a12a23cac398"
+    },
+    {
+      "claim_id": "6ea83c1b-4f49-409d-b03f-af7529b441d8",
+      "result_id": "dc0ca374-6859-4e0b-ae3f-a12a23cac398"
+    },
+    {
+      "claim_id": "7a1819ed-0ab6-4593-8452-6d81a90a5961",
+      "result_id": "dc0ca374-6859-4e0b-ae3f-a12a23cac398"
+    },
+    {
+      "claim_id": "fcda5f65-77d8-4e90-93de-1e16c04b6a83",
+      "result_id": "dc0ca374-6859-4e0b-ae3f-a12a23cac398"
+    },
+    {
+      "claim_id": "a54e1ff0-6981-466b-9b27-d9956027eea2",
+      "result_id": "dc0ca374-6859-4e0b-ae3f-a12a23cac398"
+    },
+    {
+      "claim_id": "5f9abf6f-277e-4b45-8f7b-86e19a75a924",
+      "result_id": "dc0ca374-6859-4e0b-ae3f-a12a23cac398"
+    },
+    {
+      "claim_id": "72feb56e-6996-4828-ad7b-55980ae6f08f",
+      "result_id": "dc0ca374-6859-4e0b-ae3f-a12a23cac398"
+    },
+    {
+      "claim_id": "7a45e911-acfb-462e-9fe9-da7d7eb57dac",
+      "result_id": "dc0ca374-6859-4e0b-ae3f-a12a23cac398"
+    },
+    {
+      "claim_id": "38282a91-3d2c-4c67-8105-880b493828b9",
+      "result_id": "dc0ca374-6859-4e0b-ae3f-a12a23cac398"
+    },
+    {
+      "claim_id": "7ae6f27c-03cc-4c5d-8b48-c39c58ef5df5",
+      "result_id": "dc0ca374-6859-4e0b-ae3f-a12a23cac398"
+    },
+    {
+      "claim_id": "95162eaf-95f6-4b93-829d-e26542760518",
+      "result_id": "dc0ca374-6859-4e0b-ae3f-a12a23cac398"
+    },
+    {
+      "claim_id": "dad3b9eb-1690-4a38-bcef-5b1639dc8170",
+      "result_id": "dc0ca374-6859-4e0b-ae3f-a12a23cac398"
+    },
+    {
+      "claim_id": "29c91369-efb4-4063-a3a0-fb9ca38f7206",
+      "result_id": "c99b0753-25d6-4609-9f70-351830b94cfc"
+    },
+    {
+      "claim_id": "c73be854-2c11-444e-a213-1de408827f9b",
+      "result_id": "c99b0753-25d6-4609-9f70-351830b94cfc"
+    },
+    {
+      "claim_id": "53ed5e14-87af-4ac5-ad03-55f0892f49fd",
+      "result_id": "c99b0753-25d6-4609-9f70-351830b94cfc"
+    },
+    {
+      "claim_id": "bea50483-078a-498d-88a7-34a20e429199",
+      "result_id": "c99b0753-25d6-4609-9f70-351830b94cfc"
+    },
+    {
+      "claim_id": "a0252c6c-e181-49ed-8544-0834fb630b70",
+      "result_id": "c99b0753-25d6-4609-9f70-351830b94cfc"
+    },
+    {
+      "claim_id": "7a184e5c-7259-4eed-9b27-882fdd2f4c89",
+      "result_id": "c99b0753-25d6-4609-9f70-351830b94cfc"
+    },
+    {
+      "claim_id": "d7393f2a-1989-40d8-a72c-91797c28e6bb",
+      "result_id": "c99b0753-25d6-4609-9f70-351830b94cfc"
+    },
+    {
+      "claim_id": "658a1185-871e-44f8-ac41-2e5e16facb9d",
+      "result_id": "c99b0753-25d6-4609-9f70-351830b94cfc"
+    },
+    {
+      "claim_id": "88978fe8-ab76-47ba-82ed-a323413f8465",
+      "result_id": "c99b0753-25d6-4609-9f70-351830b94cfc"
+    },
+    {
+      "claim_id": "3e94c2bc-8739-448c-9206-642d5c40389d",
+      "result_id": "c99b0753-25d6-4609-9f70-351830b94cfc"
+    },
+    {
+      "claim_id": "c1e074fc-e499-4896-9587-f300055cc046",
+      "result_id": "cd37dd1c-ca35-459c-aefd-3805cdcc9669"
+    },
+    {
+      "claim_id": "37bfe777-1456-40da-9851-d9cc3168d663",
+      "result_id": "cd37dd1c-ca35-459c-aefd-3805cdcc9669"
+    },
+    {
+      "claim_id": "5ec92385-a066-4635-b923-0243e55965ad",
+      "result_id": "cd37dd1c-ca35-459c-aefd-3805cdcc9669"
+    },
+    {
+      "claim_id": "cad66cda-9cea-4a6e-90d8-6ee9fc86134a",
+      "result_id": "cd37dd1c-ca35-459c-aefd-3805cdcc9669"
+    },
+    {
+      "claim_id": "8d7ab90b-9fa4-424e-b87a-d1cb36bcbd87",
+      "result_id": "cd37dd1c-ca35-459c-aefd-3805cdcc9669"
+    },
+    {
+      "claim_id": "b2485b73-cb7e-4c15-978b-ca7e8f266717",
+      "result_id": "cd37dd1c-ca35-459c-aefd-3805cdcc9669"
+    },
+    {
+      "claim_id": "8cb1435b-1a90-4a00-82d9-264b1a030b18",
+      "result_id": "cd37dd1c-ca35-459c-aefd-3805cdcc9669"
+    },
+    {
+      "claim_id": "63a6f4f5-c037-4ebb-ae74-c10388138fcc",
+      "result_id": "cd37dd1c-ca35-459c-aefd-3805cdcc9669"
+    },
+    {
+      "claim_id": "d126f688-d734-4a66-b3e3-27e4db9e9d89",
+      "result_id": "cd37dd1c-ca35-459c-aefd-3805cdcc9669"
+    },
+    {
+      "claim_id": "8127e49a-ee92-4456-80da-365b6579becf",
+      "result_id": "cd37dd1c-ca35-459c-aefd-3805cdcc9669"
+    },
+    {
+      "claim_id": "449686b8-0dae-4d5c-859e-a6e25f665454",
+      "result_id": "cd37dd1c-ca35-459c-aefd-3805cdcc9669"
+    },
+    {
+      "claim_id": "c559ede4-ebfc-4ec0-8513-a650384ca4fc",
+      "result_id": "4d7297b9-2b39-44bf-9d71-8e6e18873fa3"
+    },
+    {
+      "claim_id": "9e5c0d97-941f-4a87-b6dc-8c711dafb1ff",
+      "result_id": "4d7297b9-2b39-44bf-9d71-8e6e18873fa3"
+    },
+    {
+      "claim_id": "d7878074-acbb-47f4-bf44-f1eee861a92a",
+      "result_id": "45266065-2b5f-4bd8-944b-42db9dd802fc"
+    },
+    {
+      "claim_id": "e728a695-893d-492b-8eb3-32463766393f",
+      "result_id": "45266065-2b5f-4bd8-944b-42db9dd802fc"
+    },
+    {
+      "claim_id": "59b6f91c-f9ef-44d5-a113-04be43ddcff1",
+      "result_id": "45266065-2b5f-4bd8-944b-42db9dd802fc"
+    },
+    {
+      "claim_id": "a1d69cc7-acbc-42b8-bb18-07b9a987a08c",
+      "result_id": "45266065-2b5f-4bd8-944b-42db9dd802fc"
+    },
+    {
+      "claim_id": "3df35593-9dfd-4303-8441-3be066425fcd",
+      "result_id": "45266065-2b5f-4bd8-944b-42db9dd802fc"
+    },
+    {
+      "claim_id": "7748ddbe-cd0e-47d5-beb6-0b92d0fec606",
+      "result_id": "22ace03b-b2f8-4661-abcf-0dc4c4a36e97"
+    },
+    {
+      "claim_id": "ee9b1a87-6023-45fc-8597-f20272ebc4e4",
+      "result_id": "22ace03b-b2f8-4661-abcf-0dc4c4a36e97"
+    },
+    {
+      "claim_id": "34b32318-9612-4b4e-a8cb-ab26acfe4165",
+      "result_id": "22ace03b-b2f8-4661-abcf-0dc4c4a36e97"
+    },
+    {
+      "claim_id": "937a43f5-40f9-47cc-bc61-cf277f017abb",
+      "result_id": "22ace03b-b2f8-4661-abcf-0dc4c4a36e97"
+    },
+    {
+      "claim_id": "7b07e23e-fcd8-4ff1-a4ab-3c7d5c7c5c05",
+      "result_id": "22ace03b-b2f8-4661-abcf-0dc4c4a36e97"
+    },
+    {
+      "claim_id": "952ba263-8d20-4f51-9a16-8d64d8fb2b0a",
+      "result_id": "526c484c-2650-48d1-81c0-297d506684f2"
+    },
+    {
+      "claim_id": "6267deb9-a0f0-4083-9be9-f5b347863739",
+      "result_id": "526c484c-2650-48d1-81c0-297d506684f2"
+    },
+    {
+      "claim_id": "6c72401b-c391-43b2-9034-5491ba0273ff",
+      "result_id": "526c484c-2650-48d1-81c0-297d506684f2"
+    },
+    {
+      "claim_id": "6a321fc7-eec5-4484-9351-7d7e3fff866d",
+      "result_id": "526c484c-2650-48d1-81c0-297d506684f2"
+    },
+    {
+      "claim_id": "7c5d8999-102b-483e-b411-f3b359b465ea",
+      "result_id": "526c484c-2650-48d1-81c0-297d506684f2"
+    },
+    {
+      "claim_id": "36405454-b718-46a6-a7c3-64d52cc41827",
+      "result_id": "6a9b6c9b-49ea-4b30-ba9a-3fe05ab2e4e8"
+    },
+    {
+      "claim_id": "0d0bdfde-b99f-4fe2-be6b-4632eafe48e9",
+      "result_id": "6a9b6c9b-49ea-4b30-ba9a-3fe05ab2e4e8"
+    },
+    {
+      "claim_id": "2a2a32ff-26d1-4a75-8caa-1f8ebeb38410",
+      "result_id": "6a9b6c9b-49ea-4b30-ba9a-3fe05ab2e4e8"
+    },
+    {
+      "claim_id": "47ed4eef-e286-4212-a7c7-9cbc5513cc18",
+      "result_id": "6a9b6c9b-49ea-4b30-ba9a-3fe05ab2e4e8"
+    },
+    {
+      "claim_id": "798f6c16-b852-4ba5-a461-2d34ee73204a",
+      "result_id": "6a9b6c9b-49ea-4b30-ba9a-3fe05ab2e4e8"
+    },
+    {
+      "claim_id": "36d1e8e0-d3f8-47a5-8b3b-42255dfe3560",
+      "result_id": "6a9b6c9b-49ea-4b30-ba9a-3fe05ab2e4e8"
+    },
+    {
+      "claim_id": "415b7439-3b47-4e84-b883-34dd2efb15b4",
+      "result_id": "6a9b6c9b-49ea-4b30-ba9a-3fe05ab2e4e8"
+    },
+    {
+      "claim_id": "015c5b0d-b167-4a45-9587-4c4924689d2a",
+      "result_id": "6a9b6c9b-49ea-4b30-ba9a-3fe05ab2e4e8"
+    },
+    {
+      "claim_id": "3c69474e-baad-4e4f-b37a-e78631842530",
+      "result_id": "4fe4a928-6c53-487d-8f5d-3efd42722cdb"
+    },
+    {
+      "claim_id": "4e5f8775-3ed6-4dd6-8466-da133694cf19",
+      "result_id": "4fe4a928-6c53-487d-8f5d-3efd42722cdb"
+    },
+    {
+      "claim_id": "b9889cd7-d3b5-460f-a4a3-7dcd12da436c",
+      "result_id": "4fe4a928-6c53-487d-8f5d-3efd42722cdb"
+    },
+    {
+      "claim_id": "a5a0116e-93cd-4992-97c9-78478c7e8620",
+      "result_id": "e0549e9d-6a96-4cd2-b1d6-f68f126117ab"
+    },
+    {
+      "claim_id": "e7f9f872-1e65-4cb2-800f-aadfdcd1f84c",
+      "result_id": "e0549e9d-6a96-4cd2-b1d6-f68f126117ab"
+    },
+    {
+      "claim_id": "d4180014-4fb5-4df3-adea-6ee4528ae077",
+      "result_id": "e0549e9d-6a96-4cd2-b1d6-f68f126117ab"
+    },
+    {
+      "claim_id": "6654eacc-a382-406e-b63c-5a4f730bb629",
+      "result_id": "e0549e9d-6a96-4cd2-b1d6-f68f126117ab"
+    },
+    {
+      "claim_id": "db4aa8a9-7aad-43e3-baa1-0a4f5a55efff",
+      "result_id": "e0549e9d-6a96-4cd2-b1d6-f68f126117ab"
+    },
+    {
+      "claim_id": "46eee5be-c150-407a-a4e4-c28eb007ac87",
+      "result_id": "e0549e9d-6a96-4cd2-b1d6-f68f126117ab"
+    },
+    {
+      "claim_id": "9d7518c1-eb5f-4621-b568-28192b616e7f",
+      "result_id": "bae04ea7-5986-4977-8fdf-dc1991d63244"
+    },
+    {
+      "claim_id": "1a28e0d8-5c04-4946-9686-089e0166d68f",
+      "result_id": "e21c665b-0510-4230-9917-2a3f0304119f"
+    },
+    {
+      "claim_id": "516388fa-2865-45b8-93cb-0bee638c25d3",
+      "result_id": "e21c665b-0510-4230-9917-2a3f0304119f"
+    },
+    {
+      "claim_id": "f623d3dd-13da-45ea-bdd1-22d7fe635fc2",
+      "result_id": "e21c665b-0510-4230-9917-2a3f0304119f"
+    },
+    {
+      "claim_id": "f36533a4-60ea-41b5-896c-b822dc30a988",
+      "result_id": "33da561f-e172-4466-8917-a5a29ee7b493"
+    },
+    {
+      "claim_id": "340168a3-ea79-4876-b900-8c5fe6901d4c",
+      "result_id": "33da561f-e172-4466-8917-a5a29ee7b493"
+    },
+    {
+      "claim_id": "e6e8334d-737c-4311-bf0b-488af6a128bd",
+      "result_id": "33da561f-e172-4466-8917-a5a29ee7b493"
+    },
+    {
+      "claim_id": "3c51b3e0-54d0-490a-aa8c-b221c3f83558",
+      "result_id": "33da561f-e172-4466-8917-a5a29ee7b493"
+    },
+    {
+      "claim_id": "b67fef5e-5eee-4550-bc87-4ba9ff29b080",
+      "result_id": "33da561f-e172-4466-8917-a5a29ee7b493"
+    },
+    {
+      "claim_id": "ab9279a7-5b0f-4adc-9681-6160986a5fc0",
+      "result_id": "491f93a8-5e5d-4b48-bb86-88bfa51fba9a"
+    },
+    {
+      "claim_id": "5fe9587e-533e-4610-b03a-d7c3adab2638",
+      "result_id": "491f93a8-5e5d-4b48-bb86-88bfa51fba9a"
+    },
+    {
+      "claim_id": "02dfc2d1-df74-4136-b506-332671a0673d",
+      "result_id": "491f93a8-5e5d-4b48-bb86-88bfa51fba9a"
+    },
+    {
+      "claim_id": "d7393f2a-1989-40d8-a72c-91797c28e6bb",
+      "result_id": "491f93a8-5e5d-4b48-bb86-88bfa51fba9a"
+    },
+    {
+      "claim_id": "8127e49a-ee92-4456-80da-365b6579becf",
+      "result_id": "491f93a8-5e5d-4b48-bb86-88bfa51fba9a"
+    },
+    {
+      "claim_id": "2a0a88bb-3b67-403e-9c24-eadb0c064d0d",
+      "result_id": "ccab5ac3-cd97-4ebd-8d1d-1f20bb4b2411"
+    },
+    {
+      "claim_id": "fdd6700a-e751-4b0f-9013-448d34f48244",
+      "result_id": "ccab5ac3-cd97-4ebd-8d1d-1f20bb4b2411"
+    },
+    {
+      "claim_id": "dd9d100e-6226-4796-b58c-726b858658b6",
+      "result_id": "ccab5ac3-cd97-4ebd-8d1d-1f20bb4b2411"
+    },
+    {
+      "claim_id": "32e766fb-420c-4bad-9d3e-937a98142d24",
+      "result_id": "51508286-70f4-4aa7-8d2a-d79e700abba4"
+    },
+    {
+      "claim_id": "bf1b7cb1-0486-4609-9e04-a2b29f14bd60",
+      "result_id": "51508286-70f4-4aa7-8d2a-d79e700abba4"
+    },
+    {
+      "claim_id": "d8993685-24c2-45cb-b90d-df627e0e518a",
+      "result_id": "51508286-70f4-4aa7-8d2a-d79e700abba4"
+    },
+    {
+      "claim_id": "26d6507f-09dd-4d7b-a48e-e7b265c4bdfa",
+      "result_id": "74c1903c-98d0-4777-80b7-12735cee81a3"
+    },
+    {
+      "claim_id": "e3912a03-7097-467f-bac7-c6532684043b",
+      "result_id": "74c1903c-98d0-4777-80b7-12735cee81a3"
+    },
+    {
+      "claim_id": "478d7955-55d7-4de7-b3f3-fa80544bf116",
+      "result_id": "74c1903c-98d0-4777-80b7-12735cee81a3"
+    },
+    {
+      "claim_id": "c9103aae-3792-449d-b721-b263661d780e",
+      "result_id": "74c1903c-98d0-4777-80b7-12735cee81a3"
+    },
+    {
+      "claim_id": "4f1cc8dd-b329-49fa-8841-f2d0b5f7e877",
+      "result_id": "74c1903c-98d0-4777-80b7-12735cee81a3"
+    },
+    {
+      "claim_id": "56271a5e-12ba-4795-bf7d-b5d459a862ab",
+      "result_id": "74c1903c-98d0-4777-80b7-12735cee81a3"
+    },
+    {
+      "claim_id": "488b5faf-4fb0-4aee-b0a1-778648d1ca87",
+      "result_id": "74c1903c-98d0-4777-80b7-12735cee81a3"
+    },
+    {
+      "claim_id": "bdcd2d1b-d185-491e-b92a-e5d6c57fa41e",
+      "result_id": "74c1903c-98d0-4777-80b7-12735cee81a3"
+    },
+    {
+      "claim_id": "f06c554b-a248-4e2e-86b7-ba7967a027a9",
+      "result_id": "74c1903c-98d0-4777-80b7-12735cee81a3"
+    },
+    {
+      "claim_id": "8f493ebd-14a0-47b1-acfd-b5ff64895afe",
+      "result_id": "74c1903c-98d0-4777-80b7-12735cee81a3"
+    },
+    {
+      "claim_id": "074f504e-0d2e-4a38-9763-eaad9e2d7325",
+      "result_id": "74c1903c-98d0-4777-80b7-12735cee81a3"
+    },
+    {
+      "claim_id": "15f69f0b-bac7-4580-b88f-fec0c0ed758c",
+      "result_id": "74c1903c-98d0-4777-80b7-12735cee81a3"
+    },
+    {
+      "claim_id": "8dd81fc0-0f50-43af-aab5-88ead196fac1",
+      "result_id": "74c1903c-98d0-4777-80b7-12735cee81a3"
+    },
+    {
+      "claim_id": "ff1430d0-0f0d-4eb1-a43d-162e6e7ea5c5",
+      "result_id": "74c1903c-98d0-4777-80b7-12735cee81a3"
+    },
+    {
+      "claim_id": "fd5f7cdb-4ff4-4bb7-9429-4508f03f5637",
+      "result_id": "74c1903c-98d0-4777-80b7-12735cee81a3"
+    },
+    {
+      "claim_id": "cb095481-2e38-4599-a592-1ffc5a5172dc",
+      "result_id": "74c1903c-98d0-4777-80b7-12735cee81a3"
+    },
+    {
+      "claim_id": "28365cdb-a27a-4623-813d-be29dfe1a191",
+      "result_id": "74c1903c-98d0-4777-80b7-12735cee81a3"
+    },
+    {
+      "claim_id": "d0f8f9fc-1e3c-4867-a2d6-b83642655cf1",
+      "result_id": "74c1903c-98d0-4777-80b7-12735cee81a3"
+    },
+    {
+      "claim_id": "5f12b071-6730-46f3-bda6-ee680689feb5",
+      "result_id": "74c1903c-98d0-4777-80b7-12735cee81a3"
+    },
+    {
+      "claim_id": "74a8d094-aaeb-4fea-8638-5201272319a1",
+      "result_id": "74c1903c-98d0-4777-80b7-12735cee81a3"
+    },
+    {
+      "claim_id": "05384906-1fc8-48c8-9972-416fca5cdd9c",
+      "result_id": "74c1903c-98d0-4777-80b7-12735cee81a3"
+    },
+    {
+      "claim_id": "9910affe-ade3-4f38-8551-0601f46f121d",
+      "result_id": "74c1903c-98d0-4777-80b7-12735cee81a3"
+    },
+    {
+      "claim_id": "ad3df6a0-910a-471d-b6b9-de776aefce41",
+      "result_id": "74c1903c-98d0-4777-80b7-12735cee81a3"
+    },
+    {
+      "claim_id": "c47f3f9e-0e84-43a2-accd-3e93c1a8bf61",
+      "result_id": "74c1903c-98d0-4777-80b7-12735cee81a3"
+    },
+    {
+      "claim_id": "5f6fd643-6f35-464a-afdd-b2bc5910b038",
+      "result_id": "74c1903c-98d0-4777-80b7-12735cee81a3"
+    },
+    {
+      "claim_id": "1762cc39-c4dc-4c6a-96b3-88413eab6f42",
+      "result_id": "74c1903c-98d0-4777-80b7-12735cee81a3"
+    },
+    {
+      "claim_id": "3a9f8378-fec5-414c-82e5-fdc7e823c809",
+      "result_id": "74c1903c-98d0-4777-80b7-12735cee81a3"
+    },
+    {
+      "claim_id": "4f58bbe0-8899-4550-bdb7-4b2f51b1f2c1",
+      "result_id": "74c1903c-98d0-4777-80b7-12735cee81a3"
+    },
+    {
+      "claim_id": "93a9e5ed-3cc8-4260-8fd9-f3c667dbe7a8",
+      "result_id": "74c1903c-98d0-4777-80b7-12735cee81a3"
+    },
+    {
+      "claim_id": "6af88ada-7c37-4720-929a-4a522fad1c70",
+      "result_id": "74c1903c-98d0-4777-80b7-12735cee81a3"
+    },
+    {
+      "claim_id": "e952c3a6-e80d-4c88-b33e-4e038aecb5f4",
+      "result_id": "74c1903c-98d0-4777-80b7-12735cee81a3"
+    },
+    {
+      "claim_id": "280f8dc3-330a-498f-a1fb-6b6c37d022c0",
+      "result_id": "e678d366-09b5-44c8-8654-a7c37513994b"
+    },
+    {
+      "claim_id": "60451838-b80f-4fe1-a677-12ff2ae1ac6f",
+      "result_id": "e678d366-09b5-44c8-8654-a7c37513994b"
+    },
+    {
+      "claim_id": "4b82c6d8-433c-44f0-b906-a0361a6a1648",
+      "result_id": "895793f6-0bb9-4e67-8196-e51b22d41a0f"
+    }
+  ],
+  "comparisons": []
+}

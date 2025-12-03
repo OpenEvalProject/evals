@@ -1,0 +1,417 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C47",
+      "C48",
+      "C50",
+      "C51",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "LSO principal neurons show exquisite ITD-sensitivity to clicks with extraordinarily steep slopes, narrow tuning functions, and high ITD-SNR values, significantly surpassing MSO neurons. Principal LSO cells exhibit U-shaped ITD tuning with complete suppression of spiking over sub-millisecond ranges, while MSO neurons show weak and variable ITD tuning to clicks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C37-C56 provide converging evidence from in vivo whole-cell recordings (C35) showing quantitative measurements of ITD tuning in LSO and MSO neurons. The data demonstrate statistically significant differences in halfwidths (C51) and ITD-SNR (C54, C55) between principal LSO and MSO neurons, with appropriate statistical tests and effect sizes reported. The intracellular recordings (C38-C45) provide mechanistic insight into the underlying synaptic events.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C66",
+      "C67",
+      "C68",
+      "C130"
+    ],
+    "result": "LSO neurons receive well-timed EPSPs and IPSPs with closely matched latencies, but effective inhibition occurs only over an extremely short window (~0.5 ms) despite IPSP durations extending to ~5 ms. A prepotential preceding the IPSP suggests presynaptic temporal precision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C68 and C130 are supported by direct intracellular measurements shown in Figure 2. The data demonstrate the temporal relationship between EPSPs and IPSPs (C60), the narrow effective window of inhibition (C66-C68), and the discovery of a prepotential (C61, C130). The quantitative measurements of IPSP duration (~5 ms, C63) versus effective inhibition window (~0.5 ms, C64) are directly shown in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C123"
+    ],
+    "result": "MSO neurons show poor binaural sensitivity to clicks due to strong monaural responses, with summation ratios near 1.0 for clicks compared to >7.5 for tones. LSO neurons show superior binaural summation with ratios well above 2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C78 and C123 are supported by intracellular recordings and quantitative analysis in Figure 3. The summation ratio analysis (C74, C75, C77) includes appropriate statistical tests (Mann-Whitney U tests with effect sizes) comparing MSO responses to clicks versus tones, and LSO versus MSO responses to clicks. The data demonstrate that MSO coincidence detection fails for transient stimuli.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C131"
+    ],
+    "result": "In vitro experiments reveal that synaptically evoked inhibition is required for profound suppression of spiking in LSO neurons. Simulated inhibition via somatic conductance or current injection produces weaker ITD tuning than synaptic inhibition, suggesting inhibitory synapses are located closer to the spike initiation zone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C90 and C131 are supported by in vitro dynamic clamp experiments shown in Figure 4. The comparison between simulated and synaptic inhibition includes quantitative ITD-SNR measurements with statistical tests (C84, C88). The reversal experiment (C86) where excitation is simulated and inhibition is synaptic provides strong evidence for the spatial location hypothesis (C90). The same findings with current injection (C89) strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C15",
+      "C132"
+    ],
+    "result": "Immunohistochemistry and electron microscopy reveal inhibitory synapses on the axon initial segment of LSO principal neurons but not MSO neurons. This represents the first report of AIS inhibition by glycinergic neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C93-C98, C15, and C132 are supported by direct anatomical evidence from immunohistochemistry (Figure 5) and electron microscopy (Figure 6). The data show gephyrin-positive puncta on the AIS (C93-C95) and synaptic profiles confirmed by EM in three LSO principal neurons (C96, C97) but not in two MSO neurons (C98). The novelty claim (C15) is supported by the anatomical evidence combined with the lack of prior reports.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C133"
+    ],
+    "result": "Computational modeling demonstrates that inhibitory synapses on the AIS combined with somatic inhibition produce deeper ITD tuning than somatic inhibition alone. The model shows that AIS inhibition alone is insufficient, requiring cooperation with somatic inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C99-C103, and C133 are supported by computational modeling results in Figure 7. The model systematically tests the hypothesis by comparing different inhibitory synapse arrangements (C100, C101) and shows robustness across parameter ranges (C103). The modeling provides mechanistic support for the anatomical findings and links them to the physiological observations. However, the model relies on several assumptions about coupling constants and synaptic parameters that could affect the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C136",
+      "C139",
+      "C142",
+      "C143"
+    ],
+    "result": "LSO neurons show graded latency-intensity changes (~10-20 \u03bcs/dB) that interact with ITDs to disambiguate spatial tuning. IIDs affect both amplitude and timing of PSPs, and cue combination removes ambiguity by eliminating the right slope of ITD tuning and generating a steep left slope closer to 0 ITD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C113, C136, C139, C142-C143 are supported by intracellular recordings showing systematic changes in PSP amplitude and latency with sound level (Figure 8D-G). The quantitative measurements of latency slopes (C107) and the demonstration of cue interaction effects (C110-C113) are shown in Figure 8. However, the authors acknowledge limitations in the number of cells with exhaustive ITD/IID combinations (C146), which somewhat limits the generalizability of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C118",
+      "C119",
+      "C120",
+      "C135",
+      "C159",
+      "C160",
+      "C161",
+      "C163"
+    ],
+    "result": "The LSO is the primary nucleus for binaural processing of sound transients, with principal cells encoding spatial location based on temporal sensitivity and non-principal cells encoding location based on intensity. This represents a new view of brainstem binaural processing departing from traditional roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C118-C120, C135, C159-C161, and C163 represent the main conclusions drawn from the experimental findings. These conclusions are supported by the convergence of evidence from in vivo recordings (superior ITD sensitivity in LSO vs MSO for clicks), in vitro experiments (requirement for synaptic inhibition), anatomical data (AIS inhibition), and computational modeling. The claim that this is the 'primary' nucleus (C10) is supported by the superior performance metrics compared to MSO for transient sounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C114",
+      "C115",
+      "C116",
+      "C121",
+      "C122",
+      "C144",
+      "C145",
+      "C157"
+    ],
+    "result": "Multiple specializations combine to enable LSO principal cells to process sound transients: exquisite timing in afferent inputs, fast intrinsic membrane properties, and strategic placement of inhibitory synapses on the AIS that enable one ear to veto the other over a narrow time window.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C114-C116, C121-C122, C144-C145, and C157 synthesize the findings into a coherent mechanistic framework. These summary claims are supported by the convergence of evidence from multiple experimental approaches (in vivo recordings, in vitro experiments, anatomy, modeling). The 'vetoing mechanism' concept is well-supported by the data showing narrow windows of effective inhibition and the requirement for AIS synapses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C127",
+      "C128",
+      "C164"
+    ],
+    "result": "The temporal specializations in the LSO circuit evolved to support detection and lateralization of adventitious sounds generated by predator/prey movement, providing fast and reliable localization of sound transients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C33, C127-C128, and C164 represent evolutionary and functional hypotheses that extend beyond the direct experimental evidence. While the data demonstrate superior temporal processing of transients in LSO (supporting C128), the evolutionary claims (C33, C127) rely on inference and speculation rather than direct evidence. The functional significance for predator/prey detection (C164) is plausible but speculative. These claims would require behavioral experiments or comparative studies across species to be fully supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C46",
+      "C79"
+    ],
+    "result": "The study used in vivo whole-cell patch clamp recordings from 19 LSO and 11 MSO neurons, and in vitro recordings from P19-22 gerbils. LSO neurons were classified as principal or non-principal based on established criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36, C46, and C79 describe the experimental methods and sample sizes. These are straightforward methodological statements supported by the Materials and Methods section. The sample sizes are adequate for the statistical analyses performed, though relatively small for some comparisons. The classification criteria (C46) are based on previous work by the same group.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C52",
+      "C147"
+    ],
+    "result": "ITD tuning in LSO neurons varies with sound level (steeper slopes and narrower functions at higher levels) and with characteristic frequency (narrower halfwidths at higher frequencies).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49, C52, and C147 describe systematic variations in ITD tuning with stimulus parameters. These are supported by data in Figure 1\u2014figure supplement 3 and correlation analysis (C52). The frequency dependence is explained by reference to glycine receptor distribution (C52), though this mechanistic explanation is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C156"
+    ],
+    "result": "The AIS is a critical site for action potential initiation where inhibition can have outsized effects on neuronal output. Axo-axonic synapses are associated with brain disorders, but their physiological role has remained largely mysterious, particularly in cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 and C156 provide background context supported by citations to previous literature. These are well-established facts in the field that motivate the current study. The claims accurately represent the state of knowledge about AIS function and the mystery surrounding axo-axonic synapses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C23",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Background on binaural hearing: Locomotion generates adventitious sounds containing transients. Humans are sensitive to ITDs and IIDs. The classic duplex theory assigns ITD processing to MSO and IID processing to LSO, but LSO shows weak ITD sensitivity to most sounds except transients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C16-C21, C23, C25-C32 provide background context supported by citations to previous literature. These accurately represent established knowledge in the field and prior observations that motivated the current study. The claims about adventitious sounds (C1, C2, C30-C32) are supported by behavioral studies in other species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "The inhibitory input to LSO neurons is provided by the MNTB and targets LSO somata, which makes the ineffectiveness of somatic inhibition simulation surprising.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 describe established anatomical connectivity supported by multiple citations. This background information motivates the surprising finding that somatic injection doesn't fully mimic synaptic inhibition, leading to the investigation of AIS synapses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The EE interaction in MSO results in poorer ITD sensitivity to clicks than the IE interaction in LSO because transient stimuli cause suprathreshold monaural coincidences in MSO. In LSO's subtractive mechanism, strong monaural responses of opposite sign yield maximal binaural interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C153 provide mechanistic interpretation of the MSO versus LSO comparison. The explanation is supported by the data in Figure 3 and by citations to previous modeling work (C150). The logic is sound: MSO's multiplicative mechanism fails when monaural inputs are suprathreshold (C151), while LSO's subtractive mechanism benefits from strong monaural responses (C153).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C158"
+    ],
+    "result": "The LSO circuit provides a model system for studying axo-axonic synapses with a clear physiological function (binaural sound localization), which may help understand such synapses elsewhere in the brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C155 and C158 represent conclusions about the broader significance of the findings. The claim that this circuit is a good model system (C155) is supported by the clear functional role demonstrated (C154). However, the speculation about implications for other brain regions (C158) is more tentative and appropriately qualified with 'may help.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C22",
+      "C24",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The classical duplex account of LSO as an IID processor doesn't explain the extreme temporal specializations in the LSO circuit (including the calyx of Held), suggesting the LSO is specialized for temporal comparisons between ears.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C24, C124-C126 present an argument based on inference from known anatomical features. The logic is sound: if LSO were simply an IID processor, the extreme temporal specializations would be unnecessary. This argument motivates the investigation of LSO's temporal processing capabilities. The claims are appropriately framed as inference rather than established fact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C34",
+      "C129"
+    ],
+    "result": "Recent findings show that LSO principal cells have fast membrane properties and respond transiently to tones, underscoring the importance of timing in this circuit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34 and C129 cite previous work by the same group (Franken et al., 2018) that provides important context for the current findings. These claims accurately represent prior findings that complement the current study's focus on transient sound processing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C59",
+      "C104",
+      "C108",
+      "C137",
+      "C138",
+      "C140",
+      "C141",
+      "C146"
+    ],
+    "result": "Background and limitations on IID-ITD interactions: ITD tuning curve centers suggest relative latencies of excitation and inhibition. IID-to-ITD conversion is complex for ongoing sounds but systematic for transients. The study has limited data on exhaustive ITD/IID combinations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C104, C108, C137-C138, C140-C141, and C146 provide context and acknowledge limitations. The inference about relative latencies (C59) is reasonable from the data. The background on IID-ITD interactions (C137-C138, C140) is supported by citations. The limitation (C146) is appropriately acknowledged by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C5",
+      "C69",
+      "C70"
+    ],
+    "result": "MSO neurons are traditionally viewed as the ultimate ITD detectors and approach archetypal coincidence detectors, responding poorly to monaural stimulation and temporally misaligned inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C69-C70 describe the traditional view of MSO function supported by citations to classic studies. These accurately represent established knowledge in the field and provide important context for the surprising finding that MSO shows poor ITD sensitivity to clicks.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C65"
+    ],
+    "result": "Electrical shocks to LSO afferents are an appropriate analogue of acoustic clicks, as shown by previous in vitro and optogenetic studies. The effective window of inhibition is much smaller than IPSP duration, consistent with previous in vitro data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 and C65 provide methodological justification and context supported by citations to previous studies. The claim that shocks are appropriate analogues of clicks (C80) is supported by the similarity of ITD sensitivity observed in vitro and in vivo (C81). The consistency with previous findings (C65) strengthens the current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C134",
+      "C162"
+    ],
+    "result": "Clarifications: The study doesn't claim LSO lacks IID sensitivity, only that it's temporally specialized for transients. Principal cells are the most numerous LSO cell type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134 and C162 provide important clarifications. C134 appropriately qualifies the study's conclusions to avoid overstating the case. C162 is supported by citations to anatomical studies and provides context for the claim that the time-based role is dominant.",
+    "result_type": "MINOR"
+  }
+]

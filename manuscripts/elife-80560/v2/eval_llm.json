@@ -1,0 +1,283 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The study selected genetic instruments for plasma TG levels from GLGC (141 independent SNPs) and UKB (1248 SNPs) using genome-wide significance thresholds and LD-clumping. For outcomes, 2600 disease traits from UKB were used in discovery, and 221 traits from FinnGen were selected for replication based on phenotype mapping and nominal significance in discovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C24 describe the instrument selection and outcome filtering procedures. The methods are clearly documented with appropriate thresholds (p<5\u00d710\u207b\u2078, r\u00b2<0.05) and sample sizes. The approach follows standard MR practices, though the study acknowledges differences in medication exclusion between GLGC and UKB cohorts (C18, C21).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C31",
+      "C32",
+      "C82"
+    ],
+    "result": "In the discovery analysis, plasma TG levels showed nominally significant associations with 598 disease traits, with 39 reaching Bonferroni significance. Seven tier 1 associations (Bonferroni-significant in both discovery and replication) were identified, all related to ASCVD, with the strongest being angina pectoris (discovery OR 1.39, replication OR 1.30). Coronary artery disease showed OR 1.33 in combined analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C32, C82 present the primary discovery and tier 1 results with appropriate statistical thresholds and effect estimates. The associations are replicated in an independent cohort (FinnGen), strengthening causal inference. The positive control (gout, C27) validates the approach. Winner's curse bias is acknowledged (C30).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C62",
+      "C83"
+    ],
+    "result": "The study identified 12 tier 2/3 associations, including nine novel non-ASCVD diseases. Tier 2 results included uterine leiomyoma (OR 1.19), gout, and other aneurysms. Tier 3 results included hypertension, diverticular disease, paroxysmal tachycardia, kidney stones, and hemorrhage from respiratory passages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C33-C34, C62, C83 describe weaker associations (tier 2: Bonferroni in discovery, nominal in replication; tier 3: nominal in discovery, Bonferroni in replication). While statistically significant, these require additional validation. The authors appropriately characterize these as 'suggestive' evidence and caution against strong causal conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "MR-PRESSO identified outlier instrumental variables in 16 of 19 associations, with 1-10 outliers removed for eight associations. After outlier removal, all seven tier 1 associations increased in significance, and hypertension (tier 3) increased from p=3.20\u00d710\u207b\u2075 to p=2.80\u00d710\u207b\u2078. All associations maintained the same effect direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 describe appropriate sensitivity analyses using MR-PRESSO to detect and correct for horizontal pleiotropy. The consistency of effect directions after outlier removal (C42) strengthens causal inference. The increase in significance for tier 1 associations after outlier removal is reassuring.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Sensitivity analyses using MR-Egger showed results comparable to IVW for all 19 traits. Weighted median results were less statistically significant than IVW and MR-Egger for most traits except disorders of lipid metabolism, hyperlipidemia, and hypertension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 describe additional sensitivity analyses. The consistency between MR-Egger and IVW (C43) suggests minimal directional pleiotropy. The weighted median being less significant (C44) is expected given its lower statistical power, though consistency for some traits provides additional support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Reverse MR analysis was performed for 9 of 19 diseases. Only 'disorders of lipoprotein metabolism' and 'hyperlipidemia' showed positive effects on plasma TG levels, with no other disease traits suggesting reverse causation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 describe reverse MR to assess bidirectional causality. The expected positive effects for lipid disorders (C46) validate the approach. The absence of reverse causation for other traits (C47) strengthens the interpretation of forward causal effects, though limited genetic instruments restricted analysis to 9 diseases.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C54",
+      "C59"
+    ],
+    "result": "Multivariable MR adjusting for LDL-C, HDL-C, and ApoB showed increased significance for some associations (disorders of lipid metabolism, hyperlipidemia, gout, alcoholic liver disease, paroxysmal tachycardia, kidney stones) and decreased significance for others. All 19 associations maintained the same direction of causality. Tier 1 ASCVD associations remained significant after controlling for ApoB, though with modest decreases in effect size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52, C54, C59 describe MVMR to isolate independent TG effects. The persistence of tier 1 associations after adjusting for correlated lipid fractions (C54, C59) supports independent causal effects of TG-related mechanisms. The consistency of effect directions (C52) is reassuring, though decreased significance for some associations suggests potential mediation by other lipid fractions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C60",
+      "C61"
+    ],
+    "result": "The study confirms causal associations between plasma TG levels and ASCVD, consistent with prior work. Plasma TG measurement captures clinically significant mechanisms causally associated with ASCVD, potentially through TRL particles carrying ApoB. ApoB may explain part of the associations, but TG measurement appears to capture additional mechanisms involving cholesterol-enriched TRL remnants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C61 interpret the ASCVD findings in context of prior literature and biological mechanisms. The consistency with prior MR studies (C55) and the persistence of associations after ApoB adjustment (C59, C60) support the conclusions. However, C61 involves speculation about unclear mechanisms, appropriately acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Prior observational studies have reported correlations between the identified non-ASCVD diseases and plasma TG levels or related risk factors. This study is the first to suggest these associations may be causally related and specific to plasma TG levels rather than confounding factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C67 contextualize non-ASCVD findings with prior literature. While prior correlational evidence exists (C63-C66), the claim of causality (C67) is based on weaker tier 2/3 associations. The authors appropriately note this is 'suggestive' evidence requiring validation, but the novelty claim may be overstated given the statistical evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The study suggests a novel negative causal association between plasma TG levels and alcoholic liver disease (ALD), suggesting that reducing TG levels may increase ALD risk. One animal study found medium-chain TGs may decrease lipid peroxidation and reverse alcoholic liver injury in rats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C70 describe a surprising negative association with ALD. This is a tier 3 result (nominal in discovery, Bonferroni in replication) requiring substantial additional validation. The mechanistic speculation (C69) and reliance on a single animal study (C70) highlight the preliminary nature. The authors appropriately express caution about this finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The study acknowledges MR limitations including potential for horizontal pleiotropy, sample overlap causing weak-instrument bias, lifelong small-effect exposures potentially misestimating pharmacological intervention effects, and inability to compare between TG-lowering agents. However, MR utility for drug target validation is well-established for indicating causality presence and direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 appropriately discuss MR limitations. These are well-established methodological considerations supported by citations. The acknowledgment of limitations (C71-C74) balanced with recognition of MR's utility (C75) demonstrates appropriate scientific caution. The study attempted to address pleiotropy through multiple sensitivity analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C80"
+    ],
+    "result": "The study was restricted to European ancestry populations, limiting generalizability. UKB and FinnGen have demographic and coding differences, though both involve older White European participants (mean ages 56.5 and 59.8). Using GLGC instead of UKB instruments in replication returned comparable tier 1 results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78, C80 acknowledge important study limitations. The ancestry restriction (C80) is a significant limitation for generalizability. The demographic similarity between cohorts (C77) and consistency when using alternative instruments (C78) provide some reassurance about robustness, though phenotype mapping challenges remain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "The magnitude of estimates from discovery was generally greater than replication, especially for tier 1 and tier 2 associations, potentially reflecting winner's curse bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 appropriately identifies winner's curse, a well-known phenomenon in genetic studies where discovery estimates tend to be inflated. This is correctly cited and represents good scientific practice in acknowledging potential biases. The observation strengthens rather than weakens the overall conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81",
+      "C84",
+      "C85"
+    ],
+    "result": "The study demonstrates high-throughput phenome-wide MR identifying causal associations between plasma TG levels and 19 disease traits across organ systems. The findings suggest unrealized drug repurposing opportunities or adverse effects for TG-lowering agents and provide mechanistic insights for future studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81, C84-C85 summarize the study's contributions. The methodological demonstration (C81, C84) is well-supported by the comprehensive analysis. However, C85's claims about drug repurposing and adverse effects are somewhat speculative, particularly for tier 2/3 associations. The authors appropriately frame these as suggestions requiring further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The introduction establishes that ASCVD remains the leading cause of death despite statins, TGs play vital physiological roles, but their causal relationship with ASCVD remains controversial. TG-lowering drug development is active with validated targets (ANGPTL3, ANGPTL4, APOC3), but methodological challenges have limited causal inference due to TG correlations with other risk factors, pleiotropic drug effects, and prior MR studies focusing on individual diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 provide background context supported by appropriate citations. These establish the scientific rationale for the study. The characterization of controversy (C3) and methodological challenges (C6-C10) accurately reflects the literature and justifies the phenome-wide approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "Phenome-wide MR uses genetic variants as instrumental variables following three key assumptions (relevance, independence, exclusion restriction) and enables comprehensive phenotypic scans, limiting bias from prior assumptions and facilitating discovery of unforeseen causal relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 accurately describe phenome-wide MR methodology and its advantages. The three instrumental variable assumptions (C11) are correctly stated and well-established. The claimed advantages (C12) are logical inferences about the method's benefits, though the extent to which it truly limits bias depends on proper implementation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The study used three data sources: GLGC CARDIoGRAMplusC4D Metabochip study (63,746 cases, 130,681 controls), UKB (longitudinal cohort with >500,000 participants aged 40-69 from 2006-2010), and FinnGen (partnership aiming for 500,000 Finnish biobank participants).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 describe the data sources with appropriate citations. These are factual descriptions of well-established biobanks and genetic consortia. The sample sizes and study designs are accurately reported based on the cited sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "A recent study observed comparable MR estimates for lipid trait effects on ischemic stroke risk between African and European ancestry individuals, suggesting potential generalizability of MR results across ancestries in some cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 cites prior work to suggest potential generalizability despite the study's European ancestry restriction. This is appropriately cautious ('in some specific cases') and provides context for the limitation, though it doesn't fully address the generalizability concern for the current study's findings.",
+    "result_type": "MINOR"
+  }
+]

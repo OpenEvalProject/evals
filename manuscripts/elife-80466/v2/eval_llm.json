@@ -1,0 +1,273 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The study uses SafeGraph Weekly Patterns data from 2018-2020, sampling 4.6 million POIs and over 45 million smartphone devices across the United States. The data has known limitations including exclusion of individuals under 16, age-related biases in smartphone usage, and potential demographic biases in the panel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 clearly describe the data source with specific numbers and temporal coverage. Claims C44-C49 acknowledge important limitations and biases in the dataset, citing both internal (Safegraph) and independent analyses. The transparency about data limitations strengthens the overall credibility of the data description.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C53",
+      "C75",
+      "C76"
+    ],
+    "result": "The study constructs a novel metric quantifying indoor versus outdoor human activity by classifying approximately 90% of POIs as indoors and 6.5% as outdoors, with spatial imputation affecting only 0.6% of county-weeks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C53 provide specific quantitative details about the classification and imputation procedures. Claims C75-C76 describe the novelty and scope of the metric. The minimal extent of imputation (0.6%) and clear classification percentages support the methodological rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C61"
+    ],
+    "result": "Time at home and overall mobility do not display significant seasonal variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C61 are supported by Figure 1\u2014figure supplement 1, which shows both time at home and total visitor counts. This finding is important as it distinguishes the indoor/outdoor activity metric from overall mobility patterns, strengthening the interpretation that observed seasonality reflects behavioral shifts rather than changes in total activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C77"
+    ],
+    "result": "Indoor activity seasonality displays a latitudinal gradient, with stronger seasonality and winter peaks at northern latitudes and an additional summer peak in southern latitudes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 and C77 describe the primary geographic pattern in indoor activity, supported by Figure 1B showing clear latitudinal structure. The identification of distinct northern (single winter peak) and southern (winter + summer peaks) patterns represents a major empirical finding with implications for disease transmission modeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C63"
+    ],
+    "result": "Three geographic clusters of US counties with similar indoor activity dynamics were identified: a northern cluster with single winter peaks, a southern cluster with winter and summer peaks, and a tourism cluster with spring and fall peaks corresponding to winter tourism destinations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19 describe the clustering results shown in Figure 2. The identification of three clusters is well-supported by the time series analysis. Claim C19 is speculative about tourism driving the third cluster, but C63 provides supporting evidence linking the cluster to ski areas. The clustering methodology is validated in C56-C57.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "The two primary clusters of indoor activity closely correspond to built environment climate zones, with a 0.72 F1-score when compared to IECC climate zones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 quantify the relationship between indoor activity clusters and IECC climate zones using precision (0.92) and recall (0.59) metrics shown in Figure 2\u2014figure supplement 3. The moderate F1-score indicates substantial but imperfect correspondence, appropriately characterized as 'closely correspond.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Indoor activity is moderately anticorrelated with temperature (\u03c1\u2248-0.52) and humidity (\u03c1\u2248-0.45), while temperature and humidity are strongly correlated with each other (\u03c1\u22480.87).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 report specific correlation coefficients from Figure 2\u2014figure supplement 2. The moderate correlations with environmental variables and strong temperature-humidity correlation are clearly stated. However, the study appropriately notes these correlations do not imply environmental variables should be used as proxies for behavioral patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C25",
+      "C26",
+      "C27",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The COVID-19 pandemic caused indoor-outdoor activity patterns to shift significantly from baseline, with less geographic structure in 2020, deviations beyond interannual variation, and increased outdoor activity during early social distancing periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C25-C27, and C64-C66 describe pandemic disruptions supported by Figure 3 and supplements. The Euclidean distance analysis (C64) quantitatively demonstrates 2020 deviated more from baseline years than baseline years differed from each other. The fragmented clustering in 2020 (C65-C66) provides additional evidence of disruption.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Social distancing policies had heterogeneous impacts on indoor activity across locations, with Travis County shifting outdoors (reducing risk) while Charleston County increased indoor activity (potentially diminishing mobility reduction benefits), and many areas shifting outdoors by late 2020.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 describe case studies from Figure 3 showing geographic heterogeneity in pandemic responses. The contrasting examples of Travis and Charleston counties effectively illustrate how identical policies can have different impacts on transmission risk depending on behavioral responses. The inference about risk implications is reasonable given the study's framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Sinusoidal models fit to indoor activity data show higher amplitude and lower phase in the northern cluster compared to the southern cluster, but fail to capture the summer peak in southern locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 describe the phenomenological modeling results from Figure 4 and supplements. The parameter differences between clusters are quantified in Figure 4\u2014figure supplement 1, and the poor fit for the southern summer peak (C33) is clearly shown in Figure 4\u2014figure supplement 2. This limitation of simple sinusoidal models is an important finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C58"
+    ],
+    "result": "When incorporated into a simple SIR disease model, region-level seasonality changes incidence timing and peak size relative to non-seasonal models, but does not fully capture changes produced by county-level seasonality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 describe disease modeling results from Figure 4B, with C58 specifying the SIR model structure. The comparison between no seasonality, region-level, and county-level forcing demonstrates the importance of spatial resolution in seasonality parameterization. The modeling is appropriately simple and illustrative rather than predictive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C56",
+      "C57"
+    ],
+    "result": "The study used the Louvain method for network-based clustering and validated results with hierarchical clustering, achieving high similarity (NMI=0.56, 89% county match).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C56-C57 describe the clustering methodology and validation. The use of two independent clustering methods with quantified agreement (Figure 2\u2014figure supplement 5) demonstrates methodological rigor. The high percentage of matching counties (89%) despite moderate NMI (0.56) suggests robust cluster identification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The study addresses a key gap in understanding respiratory disease seasonality: while environmental mechanisms and aerosol transmission are established, the role of seasonal host behavior and indoor activity patterns remains understudied despite Americans spending ~90% of time indoors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 and C69-C74 establish the scientific context and knowledge gap. The citations to prior work on indoor time estimates (C10), environmental mechanisms (C11), and aerosol transmission (C12-C14) are appropriate. Claims C69-C74 clearly articulate the gap in understanding behavioral seasonality, justifying the study's focus.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Indoor activity may affect respiratory disease transmission through multiple mechanisms: increased airborne contact duration, increased droplet contact under homogeneous mixing, weakened immune response due to poor ventilation and environmental factors, and increased viral survival and dispersion via HVAC systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 describe potential mechanisms linking indoor activity to transmission risk. C36 cites prior work on behavior's role in pandemic settings. C37-C38 are reasonable inferences about contact patterns. C39-C41 cite specific prior research on environmental effects on immunity and viral survival. The study appropriately notes these mechanisms are not disentangled but integrated in the metric.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "Prior research demonstrates that behavioral interventions reducing occupancy are more impactful than reducing overall mobility, and outdoor spaces reduce case rates when mobility restrictions ease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 cite recent COVID-19 research on intervention effectiveness. These citations appropriately contextualize the study's findings about indoor/outdoor activity patterns and their implications for public health interventions. The claims accurately represent cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Evidence suggests SARS-CoV-2 transmission can occur with brief encounters, and socioeconomic disparities exist in outdoor access, with low-income and marginalized communities spending more time indoors due to structural inequities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 cite relevant prior research on transmission characteristics and socioeconomic disparities. These claims appropriately acknowledge limitations of the county-level analysis in capturing within-county heterogeneity and differential exposure risks across socioeconomic groups.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "The study received IRB approval from Georgetown University on October 14, 2020, and was supported by NIH grant R01GM123007.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 provide standard ethical approval and funding information. These are factual statements about study governance and support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "The study provides evidence and methods to inform epidemiology of seasonal and pandemic respiratory pathogens and improve understanding of the relationship between physical environment and infection risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 summarizes the study's contribution. This is supported by the novel metric development, characterization of spatiotemporal patterns, demonstration of pandemic disruption, and provision of parameterization methods for disease models. The claim appropriately represents the scope and significance of the work.",
+    "result_type": "MAJOR"
+  }
+]

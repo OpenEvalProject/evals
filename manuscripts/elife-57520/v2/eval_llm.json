@@ -1,0 +1,257 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C75",
+      "C80"
+    ],
+    "result": "The authors established a protocol for enriching non-neuronal cells from mouse cerebral cortex by depleting neurons and oligodendrocytes using a BSA-gradient method, and analyzed 29,406 single cells from three age groups (juvenile, adult, aged), identifying six non-neuronal cell types based on known marker genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C75, and C80 collectively describe the methodological approach and cell type identification. The BSA-gradient depletion method is explicitly described (C80), cell numbers are provided with quality control (C1), six cell types are identified with specific markers (C2-C3), and marker expression is consistent across ages (C4). The approach is well-documented with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "Juvenile endothelial cells were classified into six subclusters (arterial, CapA, CapV, venous, mitotic, and tip ECs), with pseudotime analysis confirming that tip and mitotic ECs emerge from veins and are incorporated into arteries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 describe EC subtype classification in juvenile samples. The identification of six subclusters is explicit (C5), and the venous origin of tip/mitotic cells is supported by pseudotime analysis and consistent with prior literature (C6). The trajectory analysis provides computational support for the developmental relationships.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Adult and aged ECs show high overall similarity (Spearman correlation = 0.9852) but 407 differentially expressed genes, with GSEA indicating aged ECs undergo molecular changes toward a proinflammatory state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C11 describe age-related changes in ECs. The high correlation coefficient (C7) and specific number of differentially expressed genes with statistical threshold (C8) are provided. GSEA results for both adult (C9) and aged (C10) ECs support the interpretation of proinflammatory shift (C11), which is consistent with cited literature (Chen et al., 2020).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C87"
+    ],
+    "result": "A distinctive subpopulation of venous ECs termed REVs (reactive endothelial venules) was identified, characterized by expression of Icam1, Vcam1, Vwf, and Irf1, representing 1-3% of total ECs, with vessel diameters of 8-50 \u03bcm and low mural cell coverage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13, C16-C21, and C87 collectively characterize REVs. The identification is based on single-cell transcriptomics (C12-C13, C16), GO enrichment analysis of 663 genes (C17), immunostaining validation (C18), morphological measurements (C19-C20), and frequency quantification (C21). Multiple independent lines of evidence support the existence and characterization of this cell population.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "CD3+ lymphocytes accumulate at ICAM-1+ venules 2 hours after LPS injection prior to significant upregulation of ICAM-1 in other endothelium, suggesting REVs might serve as the first entry site for activated leukocytes during neuroinflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C22 describes an observation from LPS treatment, while C23 is a speculative interpretation. The observation is explicit, but the interpretation as 'first entry site' is not definitively demonstrated. The experiment shows temporal association but does not prove causality or exclude other entry sites. Additional functional experiments would be needed to support this mechanistic claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C89"
+    ],
+    "result": "Perivascular macrophages (PVMs) expressing CD206 are localized between the endothelial and astrocytic basement membranes, associated with both arteries and veins, and found in proximity to ICAM-1+ REVs across multiple brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 and C89 describe PVM localization and association with REVs. CD206 expression is validated (C24), spatial localization is demonstrated by immunostaining (C25), association with both vessel types is confirmed and consistent with prior literature (C26), and regional distribution is documented (C27). Multiple imaging modalities support these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Two PVM subtypes were identified: Lyve1+ PVMs expressing M2-like anti-inflammatory genes and MHCII+ PVMs expressing M1-like proinflammatory genes, with the frequency of MHCII+ PVMs increasing with aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C34 characterize PVM heterogeneity. Subclustering identifies two populations (C28), GSEA reveals distinct functional profiles (C29-C30), specific M1/M2-like gene expression is documented (C31-C32), and age-related frequency changes are quantified (C33-C34). The data support functional specialization of PVM subtypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C45",
+      "C46",
+      "C47",
+      "C88"
+    ],
+    "result": "In the EAE neuroinflammation model, inflammatory ECs emerge with upregulated REV markers (Icam1, Lrg1), ICAM-1 expression expands from REVs to adjacent vessels, leukocytes accumulate at ICAM-1+ REVs, and gene expression changes indicate REVs function as gateways for leukocyte entry through the BBB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C42, C45-C47, and C88 describe REV behavior in EAE. The EAE model is well-characterized (C35-C37), inflammatory EC emergence is documented (C38-C40), ICAM-1 expansion is shown by immunostaining (C41-C42), leukocyte accumulation is demonstrated (C45), and gene expression changes support the gateway function (C46-C47). Multiple complementary approaches support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "PVMs rarely proliferate in EAE but undergo profound gene expression changes, with upregulation of MHCII+ markers and downregulation of Lyve1+ markers, supporting macrophage plasticity in response to inflammatory signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 describe PVM responses to EAE. Cell cycle analysis shows minimal proliferation (C48), localization persists (C49), but gene expression changes dramatically (C50-C52). The interpretation of plasticity (C53) is supported by the data and consistent with cited literature. The findings demonstrate phenotypic switching rather than replacement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C79"
+    ],
+    "result": "Cell-to-cell communication analysis using CellPhoneDB reveals REVs express autologous signaling molecules and growth factors, function as major signal distributors among EC populations, and show enhanced signaling to other cell types in EAE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C60 and C79 describe intercellular communication. CellPhoneDB analysis identifies ligand-receptor pairs (C54-C56), supports REVs as signal hubs (C57), documents growth factor expression (C58), shows EAE-enhanced signaling (C59), and provides negative controls (C60). The computational framework (C79) is appropriate for this analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C90"
+    ],
+    "result": "The authors propose that postcapillary venules form a specialized vessel compartment in the CNS, with REVs regulating immune surveillance under homeostatic conditions and during neuroinflammation through endothelial activation initiating CNS immune responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 and C90 represent the main conclusions. The collective data from REV characterization, PVM association, leukocyte accumulation, and EAE responses support the specialized compartment concept (C61). The proposed regulatory role (C62, C90) is well-supported by the presented evidence, though some mechanistic details remain to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C43",
+      "C44"
+    ],
+    "result": "Prior literature reports that ICAM-1 is essential for transcellular diapedesis, is suppressed by sonic hedgehog signaling during homeostasis, and that absence of endothelial ICAM-1/ICAM-2 ameliorates EAE symptoms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 and C43-C44 cite prior work (Abadier et al., 2015; Alvarez et al., 2011). These are appropriately attributed to the original sources and provide context for the current findings. The citations appear accurate based on the described findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C78"
+    ],
+    "result": "A comprehensive single-cell transcriptomic resource of vascular gene expression was generated across development, adulthood, aging, and EAE, made publicly available at single-cell.mpi-muenster.mpg.de.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76 and C78 describe the dataset scope and availability. The comprehensive nature is supported by the cell numbers and conditions analyzed (C1, C35-C37), and public data access is explicitly stated (C78). This represents a valuable resource for the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "PVMs retain distinct molecular characteristics relative to infiltrating peripheral macrophages despite exposure to the same perivascular microenvironment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 is supported by differential gene expression analysis comparing PVMs to infiltrating macrophages in EAE (referenced in C50-C52 context). This demonstrates that cellular identity is maintained despite environmental changes, supporting the concept of cell-intrinsic programming.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C77",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C86"
+    ],
+    "result": "The manuscript provides extensive background on BBB function, neurovascular unit composition, leukocyte extravasation, immune surveillance mechanisms, and technical challenges in studying vascular cells, citing appropriate literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C74 and C77-C86 represent background knowledge and context from the introduction and discussion. These are appropriately cited and provide necessary context for the study. The citations appear accurate and relevant to the stated claims.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1383 @@
+{
+  "submission": {
+    "id": "a93fc891-34e4-428e-896c-d08ef8db53e9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T07:54:59.379052Z",
+    "updated_at": "2025-12-03T07:54:59.379052Z"
+  },
+  "content": [
+    {
+      "id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "submission_id": "a93fc891-34e4-428e-896c-d08ef8db53e9",
+      "content_type": "manuscript",
+      "content_text": "# First-principles model of optimal translation factors stoichiometry\n\n## Authors\n\n- Jean-Beno\u00eet Lalanne<sup>1</sup> ([ORCID: 0000-0001-8753-0669](https://orcid.org/0000-0001-8753-0669))\n- Gene-Wei Li<sup>1</sup> ([ORCID: 0000-0001-7036-8511](https://orcid.org/0000-0001-7036-8511)) \u2020\n\n### Affiliations\n\n1. Department of Biology, Massachusetts Institute of Technology Cambridge United States\n2. Department of Physics, Massachusetts Institute of Technology Cambridge United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nEnzymatic pathways have evolved uniquely preferred protein expression stoichiometry in living cells, but our ability to predict the optimal abundances from basic properties remains underdeveloped. Here, we report a biophysical, first-principles model of growth optimization for core mRNA translation, a multi-enzyme system that involves proteins with a broadly conserved stoichiometry spanning two orders of magnitude. We show that predictions from maximization of ribosome usage in a parsimonious flux model constrained by proteome allocation agree with the conserved ratios of translation factors. The analytical solutions, without free parameters, provide an interpretable framework for the observed hierarchy of expression levels based on simple biophysical properties, such as diffusion constants and protein sizes. Our results provide an intuitive and quantitative understanding for the construction of a central process of life, as well as a path toward rational design of pathway-specific enzyme expression stoichiometry.\n\n## Introduction\n\nA universal challenge faced by both evolution and synthetic pathway creation is to optimize the cellular abundance of proteins. This abundance optimization problem is not only multidimensional \u2013 often involving several proteins participating in the same pathway \u2013 but also under systems-wide constraints, such as limited physical space (Klumpp et al., 2013) and finite nutrient inputs (You et al., 2013). The complexity of this problem has prevented rational design of protein expression for pathway engineering (Jeschek et al., 2017). Fundamentally, being able to predict the optimal and observed cellular protein abundances from their individual properties would reflect an ultimate understanding of molecular and systems biology.\n\nEvolutionary comparison of gene expression across microorganisms suggests that basic principles governing the optimization problem may exist. We recently reported broad conservation of relative protein synthesis rates within individual pathways, even under circumstances in which the relative transcription and translation rates for the homologous enzymes have dramatically diverged across species (Lalanne et al., 2018). Moreover, distinct proteins that evolved convergently toward the same biological function also displayed the same stoichiometry of protein synthesis in their respective species. These results suggest that the determinants of optimal in-pathway protein stoichiometry are likely modular and independent of detailed biochemical or physiological properties that differ across clades. However, the precise nature of such determinants remains unknown.\n\nTranslation of mRNA into proteins is a central pathway required for cell growth and therefore serves as an entry point for establishing a quantitative model of growth-optimized in-pathway stoichiometry. As a group, the total amount of translation-related proteins per cell mass linearly increases with growth rate in most conditions (Scott et al., 2010; Dai et al., 2016; Schaechter et al., 1958), a relationship considered a bacterial \u2018growth law\u2019. In addition to ribosomes which have well-coordinated synthesis of subunits (Nomura et al., 1984), the translation pathway is comprised of nearly 100 protein factors involved in facilitating ribosome assembly, translation initiation, elongation, and termination (Marintchev and Wagner, 2004; Dever and Green, 2012; Rodnina, 2018). The intracellular abundances of these factors vary over 100-fold (Pedersen et al., 1978; Li et al., 2014), and their ratios are often maintained in different growth conditions and across different species (Lalanne et al., 2018). What dictates the observed stoichiometry among translation factors is less understood. Early studies predicted expression of the highly expressed elongation factor Tu (EF-Tu) relative to the ribosome (Klumpp et al., 2013; Ehrenberg and Kurland, 1984) by maximizing translational flux per unit proteome. More recently, expression of several other components involved in the elongation step (ribosomes, tRNA, mRNA, EF-Tu, and EF-Ts) was predicted by minimizing the total mass of the components at a fixed translational flux (Hu et al., 2020). The selective pressure on expression levels remains to be determined for most members of the translation machinery, including initiation and termination factors that are much more lowly expressed and often assumed to be non-limiting.\n\nHere, we sought to derive an intuitive model to understand the quantitative abundance hierarchy (Figure 1B) among the core translation factors (tlFs), which have well-characterized functions (Table 1, schematic in Figure 1A). Our goal is not to exhaustively model the heterogeneous movement of ribosomes on the transcriptome (Shaw et al., 2003; Reuveni et al., 2011; Subramaniam et al., 2014; Dykeman, 2020) or to include as many details of the underlying molecular steps as possible (Hu et al., 2020; Vieira et al., 2016). Instead, we coarse-grained global translation into a cycle that consists of sequential steps with interconnected fluxes that depend on core tlFs concentrations. At steady-state cell growth, all individual fluxes are matched and the overall rate of ribosomes completing the full translation cycle is proportional to cell growth. By solving for the maximum flux under proteome allocation constraints, we obtained analytical solutions for the optimal factor concentrations, which agree well with the observed values. The ratios of optimal concentrations depend only on simple biophysical parameters that are broadly conserved across species. For instance, elongation factor EF-G is predicted to be more abundant than initiation and termination tlFs by a multiplicative factor of $\u2248\\sqrt{average number of codons per protein}\u224814$, whereas EF-Tu is predicted to be more abundant than EF-G by a factor of $\u2248\\sqrt{number of different amino acids}\u22484$. These results, arising from the optimization procedure and generic properties of the translation cycle, provide rationales for the order-of-magnitude expression of these important enzymes.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/69222/elife-69222-fig1-v2.jpg)\n\n**Figure 1.:** (A) Multiscale model relating translation factor expression to growth rate. The growth rate \u03bb is directly proportional to the active ribosome content ($\u03d5_{r\u2062i\u2062b\u2062o}^{a\u2062c\u2062t}$) in the cell and inversely proportional to the average time to complete the translation cycle $\\tau_{t\u2062l}$, consisting of the sum of the initiation ($\\tau_{i\u2062n\u2062i}$), elongation ($\\tau_{e\u2062l}$), and termination ($\\tau_{t\u2062e\u2062r}$) times. Each of these reaction times are determined by the translation factor abundances. On average, the elongation step is repeated around $\u27e8\u2113\u27e9\u2248200\\times$ to complete a full protein, compared to 1\u00a0\u00d7 for initiation and termination. Our framework of flux optimization under proteome allocation constraint addresses what ribosome and translation factor abundances maximize growth rate. (B) Measured expression hierarchy of bacterial mRNA translation factors, conserved across evolution. Horizontal bars mark the proteome synthesis fractions as measured by ribosome profiling (Lalanne et al., 2018) (equal to the proteome fraction by weight for a stable proteome) for key mRNA translation factors in B. subtilis (Bsub), E. coli (Ecol), and V. natriegens (Vnat) and are color-coded according to the protein (or group of proteins) specified. Triangles (\u25c2) on the right indicate the mean synthesis fraction of the protein in the three species. See Table 1 for a short description of the translation factors considered.\u00a0Synthesis fractions in (B) can be found in\u00a0Supplementary file 1.\n\n**Table 1.**\n Brief description of the function of core translation factors considered.For reviews of mRNA translation, see Rodnina, 2018; Chen et al., 2016.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Step</th>\n      <th>Factor</th>\n      <th>Function</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Initiation</td>\n      <td>IF1</td>\n      <td>Initiation factor 1: binds to 30S ribosome subunits to facilitate initiator tRNA binding (Laursen et al., 2005; Gualerzi and Pon, 2015).</td>\n    </tr>\n    <tr>\n      <td>Initiation</td>\n      <td>IF2</td>\n      <td>Initiation factor 2: ribosome-dependent GTPase interacting with 30 ribosome subunits, ensures correct binding of initiator tRNAs (Laursen et al., 2005; Gualerzi and Pon, 2015).</td>\n    </tr>\n    <tr>\n      <td>Initiation</td>\n      <td>IF3</td>\n      <td>Initiation factor 3: prevents premature docking of 50S ribosomal subunits (Laursen et al., 2005; Gualerzi and Pon, 2015).</td>\n    </tr>\n    <tr>\n      <td>Elongation</td>\n      <td>EF-Tu</td>\n      <td>Elongation factor Tu: binds to charged tRNAs to form ternary complexes, brings charged tRNAs to empty ribosome A sites. (Weijland et al., 1992; Agirrezabala and Frank, 2009; Andersen et al., 2003)</td>\n    </tr>\n    <tr>\n      <td>Elongation</td>\n      <td>aaRS</td>\n      <td>tRNA synthetases: charge tRNAs with cognate amino acids (Ibba and Soll, 2000; Pang et al., 2014).</td>\n    </tr>\n    <tr>\n      <td>Elongation</td>\n      <td>EF-G</td>\n      <td>Elongation factor G: catalyzes translocation steps of the ribosome after peptide bond formation (Andersen et al., 2003; Agirrezabala and Frank, 2009).</td>\n    </tr>\n    <tr>\n      <td>Elongation</td>\n      <td>EF-Ts</td>\n      <td>Elongation factor Ts: nucleotide exchange factor for EF-Tu (Agirrezabala and Frank, 2009; Andersen et al., 2003).</td>\n    </tr>\n    <tr>\n      <td>Termination</td>\n      <td>RF1/RF2</td>\n      <td>Peptide chain release factors 1 and 2: recognize stop codon and hydrolyze the completed protein. RF1 recognizes UAA, UAG, and RF2 UAA, UGA (Bertram et al., 2001).</td>\n    </tr>\n    <tr>\n      <td>Termination</td>\n      <td>RF4</td>\n      <td>Ribosome recycling factor: catalyzes the dissociation of ribosome subunits following peptide chain release in translation termination (Bertram et al., 2001).</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 2.**\n Compilation of predicted optimal abundances for translation factors.The optimal abundance is the sum of the terms in each row. Columns correspond to contributions of different nature (diffusion of factor itself, diffusion of other factors involved in the factor\u2019s cycle, catalytic term). Terms must be multiplied by the common factors indicated in each column\u2019s header (\u221d). For RF1+RF2, $\\delta:=2\u2062\\sqrt{f_{U\u2062A\u2062G}\u2062f_{U\u2062G\u2062A}}$ (see section Optimal abundances for RF1/RF2).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Factor</th>\n      <th>Diffusion (direct) \u221d\u03bb*P</th>\n      <th>Diffusion (other) \u221d\u03bb*P</th>\n      <th>Catalytic sequestration \u221d\u03bb*</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>IF1</td>\n      <td>\u2113r\u2062i\u2062b\u2062o\u2062\u2113I\u2062F\u20621\u27e8\u2113\u27e9\u2062k^o\u2062nI\u2062F\u20621\u2062[1+\u2113I\u2062F\u20622+\u2113I\u2062F\u20623\u2113r\u2062i\u2062b\u2062o]</td>\n      <td>\u2113I\u2062F\u20621\u27e8\u2113\u27e9\u2062\u27e8\u2113\u27e9k^o\u2062n50\u2062S</td>\n      <td>\u2113I\u2062F\u20621\u27e8\u2113\u27e9\u2062(1kR\u2062N\u2062A+1kc\u2062a\u2062ti\u2062n\u2062i)</td>\n    </tr>\n    <tr>\n      <td>IF2</td>\n      <td>34\u2062\u2113r\u2062i\u2062b\u2062o\u2062\u2113I\u2062F\u20622\u27e8\u2113\u27e9\u2062k^o\u2062nI\u2062F\u20622</td>\n      <td>\u2113I\u2062F\u20622\u27e8\u2113\u27e9\u2062(\u2113r\u2062i\u2062b\u2062o\u2062\u2113I\u2062F\u20621\u27e8\u2113\u27e9\u2062k^o\u2062nI\u2062F\u20621+\u27e8\u2113\u27e9k^o\u2062n50\u2062S)</td>\n      <td>\u2113I\u2062F\u20622\u27e8\u2113\u27e9\u2062(1kR\u2062N\u2062A+1kc\u2062a\u2062ti\u2062n\u2062i)</td>\n    </tr>\n    <tr>\n      <td>IF3</td>\n      <td>34\u2062\u2113r\u2062i\u2062b\u2062o\u2062\u2113I\u2062F\u20623\u27e8\u2113\u27e9\u2062k^o\u2062nI\u2062F\u20623</td>\n      <td>\u2113I\u2062F\u20623\u27e8\u2113\u27e9\u2062(\u2113r\u2062i\u2062b\u2062o\u2062\u2113I\u2062F\u20621\u27e8\u2113\u27e9\u2062k^o\u2062nI\u2062F\u20621+\u27e8\u2113\u27e9k^o\u2062n50\u2062S)</td>\n      <td>\u2113I\u2062F\u20623\u27e8\u2113\u27e9\u2062(1kR\u2062N\u2062A+1kc\u2062a\u2062ti\u2062n\u2062i)</td>\n    </tr>\n    <tr>\n      <td>EF-G</td>\n      <td>\u2113r\u2062i\u2062b\u2062o\u2062\u2113Gk^o\u2062nG</td>\n      <td></td>\n      <td>\u2113Gkc\u2062a\u2062tG</td>\n    </tr>\n    <tr>\n      <td>EF-Ts</td>\n      <td>\u2113T\u2062u\u2062\u2113T\u2062sk^o\u2062nT\u2062s</td>\n      <td></td>\n      <td>\u2113T\u2062skc\u2062a\u2062tT\u2062s</td>\n    </tr>\n    <tr>\n      <td>EF-Tu</td>\n      <td>\u2113r\u2062i\u2062b\u2062o\u2062\u2113T\u2062u\u2062na\u2062ak^o\u2062nT\u2062C</td>\n      <td>\u2113T\u2062u\u2062\u2113T\u2062sk^o\u2062nT\u2062s</td>\n      <td>\u2113T\u2062u\u2062(1kc\u2062a\u2062tT\u2062C+1kc\u2062a\u2062tT\u2062s)</td>\n    </tr>\n    <tr>\n      <td>RF1+RF2</td>\n      <td>\u2113r\u2062i\u2062b\u2062o\u2062\u2113R\u2062F\u2062I\u2062(1+\u03b4)\u27e8\u2113\u27e9\u2062k^o\u2062nR\u2062F\u2062I</td>\n      <td></td>\n      <td>\u2113R\u2062F\u2062I\u27e8\u2113\u27e9\u2062kc\u2062a\u2062tR\u2062F\u2062I</td>\n    </tr>\n    <tr>\n      <td>RF4</td>\n      <td>\u2113r\u2062i\u2062b\u2062o\u2062\u2113R\u2062F\u20624\u27e8\u2113\u27e9\u2062k^o\u2062nR\u2062F\u20624</td>\n      <td></td>\n      <td>\u2113R\u2062F\u20624\u27e8\u2113\u27e9\u2062kc\u2062a\u2062tR\u2062F\u20624</td>\n    </tr>\n  </tbody>\n</table>\n\n## Results\n\n### Problem statement and model formulation\n\nOur overall goal is to determine the growth-optimizing proteome allocation for the core translation factors. Conceptually, varying tlF concentrations has two opposing effects on cell proliferation. At the biochemical level, high tlF expression can facilitate growth by allowing more efficient usage of ribosomes. At the systems level, increased tlF expression can nonetheless limit growth by reducing the number of ribosomes and other proteins that can be produced. The tradeoffs between various tlFs and ribosomes create a multidimensional optimization problem.\n\nWe solve this multidimensional problem by treating translation as a dynamical system, in which ribosomes cycle through initiation, elongation, and termination. The resulting flux drives cell growth. During steady-state growth, every interlocked step of the translation cycle must have the same ribosome flux that is specified by the growth rate. We show that at the growth optimum, concentrations for distinct tlFs can be solved independently. The resulting analytical solutions can be expressed in terms of the growth rate and simple biophysical parameters.\n\n### Cell growth driven by tlF-dependent ribosome flux\n\nTo describe the biochemical effects of tlF concentrations on cell growth, we first introduce a coarse-grained translation cycle time $\\tau_{t\u2062l}$, or the time it takes for a ribosome to complete a typical cycle of protein synthesis (Figure 1A), which consists of three sequential steps: initiation ('$i\u2062n\u2062i$'), elongation ('$e\u2062l$'), and termination ('$t\u2062e\u2062r$'). Each of these steps is catalyzed by multiple tlFs. The full translation cycle time is then sum of ribosome transit times at the three steps ($\\tau_{t\u2062l}=\\tau_{i\u2062n\u2062i}+\\tau_{e\u2062l}+\\tau_{t\u2062e\u2062r}$), whose dependence on individual tlF concentrations can be quantitatively described through mass action kinetic schemes (schematically depicted in Figure 1A, see Appendices 2, 3, and 4 for details and examples below). We express tlF concentrations in units of proteome fractions (dry mass fraction of a specified protein to the full proteome), denoted by $\u03d5$ (Scott et al., 2010) (Materials and methods, section Conversion between concentration and proteome fraction). Using this notation, the translation cycle time $\\tau_{t\u2062l}$ is a decreasing function of various tlFs concentrations (${\u03d5_{t\u2062l\u2062F,i}}$).\n\nIn addition to its dependency on tlF concentrations, the translation cycle time provides a bridge between the cell growth rate and ribosome concentration. In steady-state growth (Monod, 1949; Scott et al., 2010; Dai et al., 2016), the growth rates of cells and of their protein content (total number of proteins) must be identical, denoted here as \u03bb, as a result of the constant average cellular composition. The protein content grows at a rate determined by the flux of active ribosomes completing the translation cycle, that is $N_{r\u2062i\u2062b\u2062o}^{a\u2062c\u2062t}/\\tau_{t\u2062l}$, where $N_{r\u2062i\u2062b\u2062o}^{a\u2062c\u2062t}$ is the number of active ribosomes per cell, divided by the total number of proteins $N_{P}$ per cell: $\\lambda=N_{r\u2062i\u2062b\u2062o}^{a\u2062c\u2062t}/\\tau_{t\u2062l}\u2062N_{P}$. Active ribosomes are defined as those functionally engaged in, and cycling through, the initiation, elongation, and termination reactions of peptide synthesis. Rescaling to the total mass fraction (Materials and methods, section Conversion between concentration and proteome fraction) of proteome for active ribosomes ($\u03d5_{r\u2062i\u2062b\u2062o}^{a\u2062c\u2062t}$) yields\n\n$$\n\\lambda=\\frac{\u03d5_{r\u2062i\u2062b\u2062o}^{a\u2062c\u2062t}}{\\tau_{t\u2062l}}\u2062\\frac{\u27e8\u2113\u27e9}{\u2113_{r\u2062i\u2062b\u2062o}},\n$$\n\nwhere $\u2113_{r\u2062i\u2062b\u2062o}$ is the number of amino acids in ribosomal proteins and $\u27e8\u2113\u27e9$ is the average number of codons per protein, weighted by expression levels (Materials and methods, section Average number of codons per protein: $\u27e8\u2113\u27e9$). The rescaling factor ($\u2113_{r\u2062i\u2062b\u2062o}/\u27e8\u2113\u27e9\u22487300/200=36.5$) is approximately constant across growth conditions (Matrials and methods, section Average number of codons per protein: $\u27e8\u2113\u27e9$). This equation establishes how tlF concentrations affect the growth rate biochemically via $\\tau_{t\u2062l}$.\n\nWe note that Equation 1 is a generalized form of the bacterial growth law that relates the mass fraction of elongating ribosomes to growth rate ($\\lambda=\\frac{\u03d5_{r\u2062i\u2062b\u2062o}^{e\u2062l}}{\\tau_{e\u2062l}}\u2062\\frac{\u27e8\u2113\u27e9}{\u2113_{r\u2062i\u2062b\u2062o}}=\\gamma\u2062\u03d5_{r\u2062i\u2062b\u2062o}^{e\u2062l}$, where \u03b3 is a rescaled translation elongation rate and $\u03d5_{r\u2062i\u2062b\u2062o}^{e\u2062l}$ is the proteome fraction of actively translating ribosomes [Scott et al., 2010; Dai et al., 2016; Scott et al., 2014]). This classic growth law was derived by considering the steady-state flux of peptide bond formation by elongating ribosomes, whereas our model focuses on the flux of ribosomes that traverse the entire translation cycle, thereby allowing us to consider the effects of translation factors and ribosomes engaged in additional steps (initiation, elongation, and termination). For each step, Equation 1 can be extended to show that the growth rate is similarly proportional to the mass fraction of the corresponding ribosomes divided by the transit time at that step (Materials and methods, section Equality of ribosome flux in steady-state).\n\nSteady-state growth thus imposes the requirement that the growth rate be inversely proportional to the translation cycle time and proportional to the number of active ribosomes engaged in the translation cycle (Equation 1). Inactive ribosomes, comprised of assembly intermediates, hibernating ribosomes, or otherwise non-functional ribosomes, have been found to constitute a small fraction (\u22485%) of the total ribosome pool for fast growth (Lindahl, 1975; Dai et al., 2016). Based on Equation 1, both increasing ribosome concentration and increasing tlF concentrations (which decreases $\\tau_{tl}$) can accelerate growth. However, production of ribosomes and tlFs is subject to competition under a limited proteomic space, which we consider next.\n\n### Optimization under proteome allocation constraint\n\nTo model the production cost tradeoff between tlFs and ribosomes, we integrate the flux-based formulation above with a proteomic constraint. Assuming that components of the translation machinery together accounts for a fixed fraction of proteome, that\u00a0is, the \u2018translation sector\u2019 $\u03d5_{t\u2062l}$ (denoted $\u03d5_{R}$ in the context of growth laws [Scott et al., 2010]), the proteome fraction for active ribosomes is related to the proteome fraction for translation factors via\n\n$$\n\u03d5_{r\u2062i\u2062b\u2062o}^{a\u2062c\u2062t}=\u03d5_{t\u2062l}-\u03d5_{r\u2062i\u2062b\u2062o}^{i\u2062n\u2062a\u2062c\u2062t}-\\sumi\u03d5_{t\u2062l\u2062F,i}.\n$$\n\nEquations 1 and 2, together with to the kinetic schemes for each step of the translation cycle, constitute the core of our model. Combining the biochemical effects (Equation 1) and the systems-level constraints (Equation 2) on tlFs, we arrive at a self-contained relationship between growth and tlF concentrations:\n\n$$\n\\lambda=\\frac{\u03d5_{t\u2062l}-\u03d5_{r\u2062i\u2062b\u2062o}^{i\u2062n\u2062a\u2062c\u2062t}-\\sum_{i}\u03d5_{t\u2062l\u2062F,i}}{\\tau_{t\u2062l}\u2062({\u03d5_{t\u2062l\u2062F,i}})}\u2062\\frac{\u27e8\u2113\u27e9}{\u2113_{r\u2062i\u2062b\u2062o}},\n$$\n\nwhere we explicitly express $\\tau_{t\u2062l}$ as a function of $\u03d5_{t\u2062l\u2062F,i}$ to reflect the dependence of ribosome transit times on translation factor abundances. The above relationship (Equation 3) allows us to ask: what is the stoichiometry of tlFs, or partitioning of the translation sector, that maximizes the growth rate (Figure 1A)?\n\nThe condition for the optimal TF abundances, that\u00a0is, the set of $\u03d5_{t\u2062l\u2062F,i}$ that satisfies $(\\partial\u2061\\lambda/\\partial\u2061\u03d5_{t\u2062l\u2062F,i})^{*}=0$, can be obtained by considering the $\u03d5_{t\u2062l\u2062F,i}$ as independent variables and taking the derivative of Equation 3 with respect to a specified tlF abundance. Under the assumptions that the translation sector ($\u03d5_{t\u2062l}$) and the proteome fraction for inactive ribosomes ($\u03d5_{r\u2062i\u2062b\u2062o}^{i\u2062n\u2062a\u2062c\u2062t}$) are both fixed in a given external nutrient condition, this yields\n\n$$\n(\\frac{\\partial\u2061\\tau_{t\u2062l}}{\\partial\u2061\u03d5_{t\u2062l\u2062F,i}})^{*}=-\\frac{\u27e8\u2113\u27e9}{\u2113_{r\u2062i\u2062b\u2062o}}\u2062\\frac{1}{\\lambda^{*}},\n$$\n\nwhere the asterisk refers to the growth optimum within our model, that\u00a0is, $(\\partial\u2061\\lambda/\\partial\u2061\u03d5_{t\u2062l\u2062F,i})^{*}=0$. Hence, under this framework, the tlF abundances are growth-optimized when the sensitivity of the translation cycle time to changing the considered tlF abundance ($\\partial\u2061\\tau_{t\u2062l}/\\partial\u2061\u03d5_{t\u2062l\u2062F,i}$) reaches a value determined solely by the growth rate and protein size factors. We emphasize that the derivative above corresponds to a perturbation scenario in which the tlF abundance is changed while maintaining fixed the total proteomic resources to the translation sector, as prescribed by our optimization procedure. As such, it does not correspond an actual perturbation easily realizable experimentally.\n\nAlthough Equation 3 and the resulting optimization conditions (Equation 4, one for every tlF) corresponds to a coupled nonlinear system of multiple $\u03d5_{t\u2062l\u2062F,i}$, substantial decoupling occurs at the optimal growth rate. In this situation, most $\u03d5_{t\u2062l\u2062F,i}$ are only connected through the resulting growth rate. The optimization problem is then further simplified by the fact that the translation cycle consists of sequential and largely independent steps. The translation cycle time $\\tau_{t\u2062l}$ corresponds to the sum of the coarse-grained initiation, elongation, and termination times, that\u00a0is, $\\tau_{t\u2062l}=\\tau_{i\u2062n\u2062i}+\\tau_{e\u2062l}+\\tau_{t\u2062e\u2062r}$. Given that each tlF is involved in a specific molecular step, the sensitivity matrix of these times to tlF concentration is sparse: $(\\partial\u2061\\tau_{j}/\\partial\u2061\u03d5_{t\u2062l\u2062F,i})^{*}=0$ for most combinations of $\\tau_{j}$ and $\u03d5_{t\u2062l\u2062F,i}$. This lack of \u2018cross-reactivity\u2019 expresses that, for example, the initiation time $\\tau_{i\u2062n\u2062i}$ is unaffected by the tRNA synthetase concentration. This sparsity only occurs at the optimal expression levels, as the transit times typically depend on the growth rate (see an example in section Non binding-limited regime [one stop codon]) and $\\partial\u2061\\lambda/\\partial\u2061\u03d5_{t\u2062l\u2062F,i}\\neq0$ away from the optimum. The optimum condition for factor $i$ then simplifies to:\n\n$$\n(\\frac{\\partial\u2061\\tau_{j}}{\\partial\u2061\u03d5_{t\u2062l\u2062F,i}})^{*}=-\\frac{\u27e8\u2113\u27e9}{\u2113_{r\u2062i\u2062b\u2062o}}\u2062\\frac{1}{\\lambda^{*}},\n$$\n\nwhere $j$ above denotes the translation step(s) that tlFi participates in. This leads to simplifications that allow the system to be solved analytically in most cases: instead of solving the full system at once, individual reactions within the translation cycle can be considered in isolation. The resulting optimal concentrations are connected via the growth rate $\\lambda^{*}$. Interestingly, the optimal stoichiometry among most tlFs is independent of $\\lambda^{*}$ if the reactions are in the binding-limited regime, as we show below.\n\n### Case study: Translation termination\n\nWe first illustrate the process of solving for the optimal tlF concentration for the relatively simple case of translation termination. The principles used here and the form of solutions provide conceptual guideposts for solving other steps of the translation cycle.\n\nIn bacteria, translation termination (Bertram et al., 2001) consists of two distinct, sequential steps: (1) stop codon recognition and peptidyl-tRNA hydrolysis catalyzed by class I peptide chain release factors RF1 and RF2, followed by (2) dissociation of ribosomal subunits from the mRNA, that\u00a0is, ribosome recycling, catalyzed by RF4. We do not explicitly consider the additional factors (e.g. RF3 and EF-G) due to their lack of conservation or because they are non-limiting for this specific step (Appendix 2, section Omitted molecular details). RF1 and RF2 have the same molecular functions but recognize different stop codons (Scolnick et al., 1968): RF1 recognizes stops UAA and UAG, whereas RF2 recognizes UAA and UGA. For simplicity, we describe here a scenario where RF1 and RF2 have no specificity towards the three stop codons, which allows us to combine them in a single factor (denoted RFI). The model is readily generalized, with similar results, to the case of the two RFs with their specificity towards the three stop codons (Appendix 2, section Full three stop codons model).\n\nUnder a coarse-grained description, the total ribosome transit time at termination $\\tau_{t\u2062e\u2062r}$ can be decomposed into a sum of peptide release time and ribosome recycling time. In the treatment below, we consider a regime of binding-limited reactions for simplicity (rapid catalytic rate). A full model with catalytic components can also be solved analytically (Appendix 2, section Non binding-limited regime (one stop codon), Figure 2A). In the binding-limited regime ($k_{c\u2062a\u2062t}\u2192\u221e$), the peptide release time and ribosome recycling time are inversely proportional to the corresponding tlF concentrations:\n\n$$\n\\tau_{t\u2062e\u2062r}=\\frac{1}{k_{o\u2062n}^{R\u2062F\u2062I}\u2062\u03d5_{R\u2062F\u2062I}}+\\frac{1}{k_{o\u2062n}^{R\u2062F\u20624}\u2062\u03d5_{R\u2062F\u20624}},\n$$\n\nwhere the association rate constants $k_{o\u2062n}^{i}$ are rescaled by the factor\u2019s sizes in proteome fraction units (Materials and methods, section Conversion between concentration and proteome fraction). The above expression constitutes the solution of the mass action scheme for termination, connecting factor abundances to termination time.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/69222/elife-69222-fig2-v2.jpg)\n\n**Figure 2.:** (A) Coarse-grained translation termination scheme. (B) Illustration of the minimization of effective proteome fraction corresponding to peptide chain release factors, leading to the equipartition principle.\n\nThe termination time (Equation 6) can then be directly substituted into the optimality condition (Equation 5) and solved in terms of $\\lambda^{*}$:\n\n$$\n\u03d5_{R\u2062F\u2062I}^{*}=\\sqrt{\\frac{\u2113_{r\u2062i\u2062b\u2062o}\u2062\\lambda^{*}}{\u27e8\u2113\u27e9\u2062k_{o\u2062n}^{R\u2062F\u2062I}}},\u03d5_{R\u2062F\u20624}^{*}=\\sqrt{\\frac{\u2113_{r\u2062i\u2062b\u2062o}\u2062\\lambda^{*}}{\u27e8\u2113\u27e9\u2062k_{o\u2062n}^{R\u2062F\u20624}}}.\n$$\n\nIf the reactions are not binding-limited, an additional catalytic term $\u221d\\lambda^{*}/k_{c\u2062a\u2062t}$ is added to the minimally required levels above (Appendix 2, section Non binding-limited regime [one stop codon]). The square-root dependence in the optimal RF concentrations emerges from the $\u03d5_{i}^{-1}$ dependence of $\\tau_{i}$, for\u00a0example, for ribosome recycling $\\tau_{r\u2062e\u2062c\u2062y\u2062c}\u221d\u03d5_{R\u2062F\u20624}^{-1}$, which becomes $(\u03d5_{i}^{*})^{-2}$ upon taking the derivative in the optimality condition (Equation 5). The square root is then obtained by solving for $\u03d5_{i}^{*}$. A similar square-root dependence has been noted in optimization of the ternary complex and tRNA abundances (Ehrenberg and Kurland, 1984; Berg and Kurland, 1997). Analysis of tlF expression across slower growth conditions supports the derived square root dependence (Figure 4\u2014figure supplement 2). As a result of the square-root, the optimal RF concentrations are weakly affected by biophysical properties such as the association rate constants and protein sizes. In the binding-limited regime above, the ratio of the optimal concentrations between RFI and RF4 is independent of the growth rate and only depends on the kinetics of binding.\n\nAs a side note, the expression for termination time $\\tau_{t\u2062e\u2062r}$ in Equation 6 must be modified in a regime where ribosomes are frequently queued upstream of stop codons. This would occur if the termination rate were slow and approached initiation rates on mRNAs (Bergmann and Lodish, 1979; Lalanne et al., 2021). In this regime, queues of ribosomes at stop codons would incur an additional time to terminate. In a general description, the resulting additional termination time can be absorbed in a queuing factor $\ud835\udcac:\\tau_{ter}^{full}:=\\tau_{ter}\u00a0\ud835\udcac(\\tau_{ter})$ (Appendix 1 for derivation and discussion). The resulting nonlinearity would forbid the decoupling in the optimization procedure between RFI and RF4. Although absolute rates of termination are difficult to measure in vivo, translation on mRNAs is generally thought to be limited at the initiation step (Laursen et al., 2005), and consistently, ribosome queuing at stop codons in bacteria is not usually observed (except under severe perturbations, e.g. Kav\u010di\u010d et al., 2020; Baggett et al., 2017; Mangano et al., 2020; Saito et al., 2020; Lalanne et al., 2021). In the physiological regime of fast termination, the queuing factor converges to 1, yielding simple solutions that depend only on biophysical parameters (Equations 7).\n\n### Equipartition between tlF and corresponding ribosomes\n\nThe optimal tlF concentrations (e.g. Equation 7) can also be intuitively derived from another viewpoint. For each reaction in the translation cycle, we can define an effective proteome fraction allocated to that process, combining the proteome fractions of the corresponding tlF and the ribosomes waiting at that specific step. As an example, for the case of peptide chain release factor (RFI) just treated, the effective proteome fraction includes the release factors and ribosomes with completed peptides waiting at stop codons (dashed box in Figure 2A), that\u00a0is, $\u03d5_{R\u2062F\u2062I}^{e\u2062f\u2062f}:=\u03d5_{R\u2062F\u2062I}+\u03d5_{r\u2062i\u2062b\u2062o}^{s\u2062t\u2062o\u2062p}$. This effective proteome fraction corresponds to the total proteomic space associated to a tlF in the context of the translation cycle.\n\nDuring steady-state growth, the concentration of ribosomes waiting at any specific step of the translation cycle is equal to the total active ribosome concentration multiplied by the ratio of the transit time of that step to the full cycle: for\u00a0example, here $\u03d5_{r\u2062i\u2062b\u2062o}^{s\u2062t\u2062o\u2062p}=\\frac{\\tau_{s\u2062t\u2062o\u2062p}}{\\tau_{t\u2062l}}\u2062\u03d5_{r\u2062i\u2062b\u2062o}^{a\u2062c\u2062t}$, where $\\tau_{s\u2062t\u2062o\u2062p}=1/(k_{o\u2062n}^{R\u2062F\u2062I}\u2062\u03d5_{R\u2062F\u2062I})$ is the time to arrival of RFI. Using Equation 1 for $\u03d5_{r\u2062i\u2062b\u2062o}^{a\u2062c\u2062t}$, the effective proteome fraction satisfies:\n\n$$\n\u03d5_{RFI}^{eff}:=\u03d5_{RFI}+\u03d5_{ribo}^{stop}=\u03d5_{RFI}+\\frac{1}{\u03d5_{RFI}}\\frac{\\lambda}{k_{on}^{RFI}}\\frac{\u2113_{ribo}}{\u27e8\u2113\u27e9}\\geq2\\sqrt{\\frac{\\lambda}{k_{on}^{RFI}}\\frac{\u2113_{ribo}}{\u27e8\u2113\u27e9}}.\n$$\n\nIn the last line, we used the inequality of arithmetic and geometric means ($a+b\\geq2\u2062\\sqrt{a\u2062b}$) to obtain the minimum of the effective proteome fraction. The equality holds when the two proteome fractions are equal ($\u03d5_{R\u2062F\u2062I}=\u03d5_{r\u2062i\u2062b\u2062o}^{s\u2062t\u2062o\u2062p}$), which provides the solution for optimal $\u03d5_{R\u2062F\u2062I}$:\n\n$$\n\u03d5_{R\u2062F\u2062I}^{*}=\\sqrt{\\frac{\u2113_{r\u2062i\u2062b\u2062o}\u2062\\lambda^{*}}{\u27e8\u2113\u27e9\u2062k_{o\u2062n}^{R\u2062F\u2062I}}},\n$$\n\nHence, we recover Equation 7 by minimizing the effective proteome fraction allocated to a given process in the translation cycle (the above argument applies to the optimal free concentration in the non-binding limited regime, see Appendix 2, section Non binding-limited regime (one stop codon) for an example). From this perspective, optimization of the translation apparatus balances the production cost of the enzyme of interest with the improved efficiency of a having less ribosomes idle at that step, Figure 2B. The optimal abundance in our model corresponds to a point of equipartition: the proteome fraction of free cognate factors equals the proteome fraction of ribosomes waiting at the corresponding step (Figure 2B).\n\n### Case study: Ternary complex and tRNA cycle (EF-Tu and aaRS)\n\nWe next consider a more complex step of the translation cycle \u2013 elongation \u2013 and demonstrate that the optimality criterion (Equation 5) can similarly provide simple analytical solutions in the physiologically relevant regime. Translation elongation involves multiple interlocked cycles (one for each chemical species) and enzymes (EF-Tu, EF-G, EF-Ts, aminoacyl-tRNA synthetases (aaRS), and more). Our simplified kinetic scheme for translation elongation is shown in Figure 3A: charged tRNAs are brought to ribosomes through a ternary complex (TC), corresponding to a bound tRNA and EF-Tu. Following tRNA delivery and GTP hydrolysis, EF-Tu is released from the ribosome, and nucleotide exchange factor EF-Ts recycles EF-Tu back into the active pool, after which EF-Tu can bind a charged tRNA again and form another TC. At the ribosome, translocation to the next codon is catalyzed by EF-G, followed by release of uncharged tRNAs. Aminoacyl-tRNA synthetases then charge tRNAs to complete the elongation cycle.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/69222/elife-69222-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic of the translation elongation scheme, with the tRNA cycle, involving aminoacyl-tRNA synthetases (aaRS) and EF-Tu. Reactions with a # have their association rate constants rescaled by a factor of $n_{a\u2062a}^{-1}\u22481/20$ through our coarse-graining to a single codon model. Greyed out cycles (EF-Ts and EF-G) can be solved in isolation (Appendix 3, sections Optimal EF-Ts abundance and Optimal EF-G abundance). (B) Exploration of the aaRS/EF-Tu expression space from numerical solution of the elongation model (Appendix 3, section Optimal EF-Tu and aaRS abundances). The transition line (orange) marks the boundary between the EF-Tu limited and aaRS limited regimes. Left panel shows the ternary complex concentration (which is closely related to the elongation rate, Equation 10). The ternary complex concentration is scaled by the dissociation constant $K_{T\u2062C}$ to the ribosome A site (see Equation 39). Middle panel shows the free charged tRNA fraction. Right panel shows the free EF-Tu fraction ($\u03d5_{T\u2062u^{G\u2062T\u2062P}}$ denotes the proteome fraction of EF-Tu GTP that can bind to charged tRNAs to form the ternary complex). The star marks the optimal solution, as described in the text.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69222/elife-69222-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Geometrical interpretation of the sharpness of the separation of the aaRS limited and EF-Tu limited regimes. Each graph corresponds to a different combination of aaRS and EF-Tu abundance. The solution for $\u03d5_{T\u2062C}$ (yellow circle) corresponds to the intersection of the full (tRNA budget minus TC concentration and ribosome bound tRNAs) and dashed (all remaining tRNA contributions) black lines. Red and pink lines correspond to the free uncharged and charged tRNAs respectively. Because of the rapid divergence of the free charged tRNA term (red) at $\u03d5_{T\u2062C}=\u03d5_{T\u2062u}$, the system shifts from being limited by aaRS-limited (pink line intersecting full black line) to being EF-Tu limited (red line intersect full black line) over a very narrow range in aaRS or EF-Tu expression change. The central graph corresponds to the abundance of EF-Tu and aaRS matched (no unbound charged tRNAs or EF-Tu), and falls on the transition line of Figure 3.\n\nTo reduce the complexity due to different tRNA isoacceptors and aaRSs, we self-consistently coarse-grained the translation elongation cycle to have a single codon (derived in Appendix 3, section Coarse-grained one-codon model). The resulting model harbors a single effective species for tRNA, aaRSs, and TCs, respectively. A rescaling factor ($1/n_{a\u2062a}\u22481/20$, estimated in section Estimation of coarse-grained rates) arises in the procedure to decrease the rates of codon specific reactions and can be attached to either the respective rate constants or chemical species concentrations. In our formulation, we choose to rescale the association rate constants such that the coarse-grained abundance for each effective species corresponds to the sum over all individual codon-specific components. For example, $\u03d5_{a\u2062a\u2062R\u2062S}$ in our coarse-grained model corresponds to the summed proteome fraction of all aaRSs in the cell, and its association rate constant with the total tRNAs is rescaled by a factor of $1/n_{a\u2062a}$.\n\nAs a result of this choice of rescaling within our coarse-grained model, there are two classes of reactions in the elongation cycle that are distinguished by different kinetics: those that were codon specific (scaled by $1/n_{a\u2062a}$) and those that are not. Codon-specific reactions, for\u00a0example, aaRS binding to cognate tRNAs and TC binding to cognate codons, are coarse-grained into one-codon reactions with reduced association rate constants (marked by # in Figure 3A). By contrast, codon-agnostic reactions do not incur such a rescaling and are thus much faster. We refer to this as a separation of timescale between the two classes of reactions (codon-specific vs. codon-agnostic), and note that this is not a reflection of slower underlying microscopic bimolecular reaction rates, but rather a result of our choice of variable in the coarse-graining.\n\nSimilar to translation termination, the factor-dependent ribosome transit time through a single codon ($\\tau_{a\u2062a}$) is comprised of two steps, corresponding to binding of the TC and EF-G, respectively (formal derivation and non binding-limited regime in Appendix 3, section Coarse-grained translation elongation time):\n\n$$\n\\tau_{a\u2062a}=\\frac{1}{\\frac{k_{o\u2062n}^{T\u2062C}}{n_{a\u2062a}}\u2062\u03d5_{T\u2062C}}+\\frac{1}{k_{o\u2062n}^{G}\u2062\u03d5_{G}}.\n$$\n\nThe coarse-grained factor-dependent portion of the total translation elongation time in our model is then given by the single codon time above multiplied by the average number of codons per protein, that\u00a0is, $\u27e8\u2113\u27e9\u2062\\tau_{a\u2062a}$. As discussed above, the rescaling of the TC association rate constant by $n_{a\u2062a}^{-1}$ arises as a result of our coarse-graining to a one-codon model (Appendix C, section C.1 Coarse-grained one-codon model). Note that the ternary complex concentration, $\u03d5_{T\u2062C}$, is a nonlinear function of the concentrations of all elongation factors (including $\u03d5_{G}$).\n\nDespite the complexity of $\\tau_{a\u2062a}$ as a function of the $\u03d5_{t\u2062l\u2062F,i}$, the fact that all fluxes are equal in steady-state allows several steps to be isolated and solved separately (EF-Ts and EF-G, greyed out in Figure 3A, respectively solved in Appendix C, sections C.3.3 Optimal EF-Ts abundance and C.3.4 Optimal EF-G abundance). For example, the approximate binding-limited solution for optimal EF-G concentration parallels that for termination factors:\n\n$$\n\u03d5_{G}^{*}\u2248\\sqrt{\\frac{\u2113_{r\u2062i\u2062b\u2062o}\u2062\\lambda^{*}}{k_{o\u2062n}^{G}}}.\n$$\n\nImportantly, the optimum for EF-G is larger than the optimum for RFs by a factor $\\sqrt{\u27e8\u2113\u27e9}$, reflecting that the typical translation cycle to produce a protein requires $\u27e8\u2113\u27e9$ steps catalyzed by EF-G and only one step for RFs (i.e. $\u27e8\u2113\u27e9\u2062\\tau_{a\u2062a}$ enters the optimality condition, Equation 5, in contrast to $\\tau_{t\u2062e\u2062r}$ which is not multiplied by a scaling factor). The square root dependence arises here for the same reason as in the case of translation termination (derivative of $\u03d5^{-1}$).\n\nIn contrast to EF-G and EF-Ts, EF-Tu and aaRS cannot a priori be treated in isolation because the TC is composed of both EF-Tu and charged tRNAs. Still, the separation of timescales within our coarse-grained model (see Appendix C, section Interpretation of the sharp separation between aaRS and EF-Tu limited regimes) simplifies the solution considerably. Indeed, rapid binding of charged tRNAs to EF-Tu leads to either component being limiting for ternary complex concentration in most of the aaRS/EF-Tu expression space, leading to two clearly delineated regimes (Figure 3B). In one regime, charged tRNAs are limiting (low aaRS), whereas EF-Tu is limiting in the other (low EF-Tu). These regimes are separated by a narrow transition region, whose sharpness is a reflection of the smallness of the rate rescaling parameter $n_{a\u2062a}^{-1}$ (see Appendix 3, section Interpretation of the sharp separation between aaRS and EF-Tu limited regimes). We term the focal region separating the two regimes in the aaRS/EF-Tu expression space the 'transition line\u2019 (see 1 for derivation and additional details).\n\nThe transition line corresponds to conditions in which EF-Tu and aaRS are co-limiting for TC concentration. In the EF-Tu limited region, increasing aaRS abundance does not increase ternary complex concentration: since all EF-Tu proteins are already bound to charged tRNAs, increasing tRNA charging cannot further increase TC concentration. Conversely, in the aatRNA limited region, increasing EF-Tu abundance does not increase TC concentration: since all charged tRNAs are already bound by EF-Tu, increasing EF-Tu concentration does not alleviate the requirement for more charged tRNAs. Given that the optimality condition requires non-zero increase in ternary complex concentration with increasing factor abundance (Equation 5 using $\\tau_{a\u2062a}$ from Equation 10), the optimal EF-Tu and aaRS abundances must be on the transition line.\n\nWhich point on the transition line corresponds to the optimum? Note that inside the EF-Tu limited region, the ternary complex concentration is entirely set by the total EF-Tu concentration: $\u03d5_{T\u2062C}\u2248\u03d5_{T\u2062u}$ (since most EF-Tu proteins are bound by charged tRNAs, Figure 3\u2014figure supplement 1). As an approximation resulting from the narrow range of transition region (Figure 3 and Figure 3\u2014figure supplement 1), we assume that the EF-Tu limited regime solution $\u03d5_{T\u2062C}\u2248\u03d5_{T\u2062u}$ holds up to very close to the transition line. Replacing $\u03d5_{T\u2062C}$ by $\u03d5_{T\u2062u}$ in the elongation time Equation 10 and substituting in the optimality condition (Equation 5), the approximate optimal abundance for EF-Tu (the full solution includes additional terms from the EF-Ts cycle, section Optimal EF-Tu and aaRS abundances) can then be obtained in the same way as for translation termination factors:\n\n$$\n\u03d5_{T\u2062u}^{*}\u2248\\sqrt{\\frac{\u2113_{r\u2062i\u2062b\u2062o}\u2062n_{a\u2062a}\u2062\\lambda^{*}}{k_{o\u2062n}^{T\u2062C}}}.\n$$\n\nImportantly, compared to the solution for EF-G, the above is multiplied by an additional factor of $\\sqrt{n_{a\u2062a}}$. This contribution arises from the rescaling of the association rate for the ternary complex to the ribosome in our coarse-grained one-codon model, increasing the requirement on EF-Tu abundance.\n\nFrom the necessity for the combined EF-Tu and aaRS solution to fall on the transition line, the approximate solution for the optimal aminoacyl-tRNA synthetase abundance is then the intersection (yellow star in Figure 3B) of the transition line with the EF-Tu-only solution described above (dashed blue line in Figure 3B, derivation of solution in Box 1).\n\nFor the above derivation to be valid, the total number of tRNAs in the cell must be sufficient to accommodate all ribosomes (about two per ribosome, A- and P-sites) and binding to all EF-Tu (about gt4 per ribosome based on endogenous expression stoichiometry [Li et al., 2014; Lalanne et al., 2018]). The number of tRNAs per ribosomes in the cell should thus be at least 6\u00d7. Remarkably, estimates of this ratio in the cell suggest that this is barely the case (between 6\u00a0and\u00a07 tRNAs/ribosome at fast growth [Dong et al., 1996]). Although our model treats the total tRNA abundance as a measured parameter and omits its selective pressure (see Hu et al., 2020 which includes RNA mass in their optimization procedure), the abundance of three core components of the tRNA cycle appear to be at the special point where the transition line plateau, that is set by total tRNA abundance, just crosses the EF-Tu-only optimum (blue line in Figure 3B). At this point, all three components are co-limiting.\n\n### Optimal stoichiometry of mRNA translation factors\n\nAnalogous to the case studies above, optimal concentrations for all core translation factors can be solved using the optimality condition (Equation 5) and their respective kinetics schemes (the case of translation initiation is solved in Appendix 4). The analytical forms of the optimal solutions are shown in Table 1. In the binding-limited regime, the ratios of growth-optimized tlF concentrations are independent of the growth rate (except for aaRS), and are dependent only on basic biophysical parameters, such as protein sizes and diffusion constants.\n\nTo obtain the numerical values of association rate constants needed for calculating the optimal tlF stoichiometry (Table 1), we used the measured $k^_{o\u2062n}^{T\u2062C}$ in vivo and estimated all other association rate constants using a biophysically motivated scaling ($k^$ denotes the raw association rate constant in units \u00b5M\u22121s\u22121, which is different from the rescaled $k$, see section Conversion between concentration and proteome fraction). To our knowledge, the binding between TC and ribosomes, $k^_{on}^{TC}=6.4$ \u00b5M\u22121s\u22121 (Dai et al., 2016), is the only measured association rate constant for any tlFs in a physiological context. We estimate the association rate constants for other reactions by scaling $k^_{o\u2062n}^{T\u2062C}$ by the respective diffusion coefficients of the chemical species, that is for reaction involving species $A$ and $B:\u00a0k^_{on}^{AB}/k^_{on}^{TC}=(D_{A}+D_{B})/(D_{TC}+D_{ribo})$, where $D_{i}$ is the diffusion constant for the molecular species $i$ (see Appendix 5\u2014table 2). Diffusion constants for several tlFs have been measured experimentally (Bakshi et al., 2012; Sanamrad et al., 2014; Plochowietz et al., 2017; Volkov et al., 2018), and uncharacterized ones can be estimated using the cubic-root scaling with number of codons per protein from the Stokes-Einstein relation (Nenninger et al., 2010) (see Appendix 5\u2014table 1). For simplicity, this approach assumes that reactive radii and orientational constraints are similar for the different reactions (see 3 Discussion for additional assumptions). These strong assumptions are necessary given the lack of in vivo biochemical parameter measurements, and can be relaxed as refined empirical determination for more physiological association rates become available in the future. Nonetheless, we note that the square-root dependence on these parameters (Table 1) for our predictions makes the numerical values less sensitive to possible tlF-specific effects.\n\nThe estimated optimal tlF concentrations show concordance with the observed ones, both in terms of the absolute levels and the stoichiometry among tlFs (Figure 4 for fast growth, see Supplementary file 1 for data and Figure 4\u2014figure supplement 1 for additional growth conditions). A hierarchy of expression levels emerges such that the factors involved in elongation are more abundant compared to initiation and termination factors. The separation of these two classes is driven by the scaling factor $\\sqrt{\u27e8\u2113\u27e9}\u224814$ in our analytical solutions, which reflects the fact that the flux for elongation factors is $\u27e8\u2113\u27e9\u2248200$ times higher than that for initiation and termination factors. Within each class, the finer hierarchy of expression levels can also be further explained by simple parameters. For example, EF-Tu is predicted to be more abundant than EF-G by a factor of $\\sqrt{n_{a\u2062a}\u2062\u2113_{T\u2062u}/\u2113_{G}}\u22483.3$ (observed $\u03d5_{T\u2062u}/\u03d5_{G}$: E. coli 3.9, B. subtilis 2.7, V. natriegens 3.3). A higher abundance is required for EF-Tu because it is bound to the different tRNAs, which effectively decreases the concentration by a factor of $n_{a\u2062a}\u224820$ (see section Estimation of coarse-grained rates for derivation and discussion of why the factor is not equal to the number of different tRNAs). Taken together, our model offers straightforward explanations for the observed tlF stoichiometry.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/69222/elife-69222-fig4-v2.jpg)\n\n**Figure 4.:** Predicted optimal abundance (no catalytic contribution, $k_{c\u2062a\u2062t}\u2192\u221e$) versus observed abundance.Measured proteome fractions are the average of E. coli, B. subtilis, V. natriegens (Lalanne et al., 2018). We note that given the sensitivity of the optimal aaRS abundance on the total tRNA/ribosome ratio (visually: yellow star\u2019s position in Figure 3B moves rapidly along x-axis upon changes in plateau of transition line), the prediction for aaRS should be interpreted with caution.\u00a0Data and predicted values can be found in\u00a0Supplementary file 1 and 2.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69222/elife-69222-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Measured (ribosome profiling) and predicted (diffusion-limited estimates) proteome fraction for core translation factors in individual conditions corresponding to different ribosome profiling datasets included in our analysis (see Supplementary files 1\u20134). Doubling time for each condition is indicated. (A) Individual fast growing species (see Figure 4 for the average). (B) Slower growth conditions in E. coli. (C) C. crescentus datasets. Predictions of aaRS in species other than E. coli are marked by # to indicate that we used E. coli tRNA abundance measurements from Dong et al., 1996 to make prediction for this tlF these other species.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/69222/elife-69222-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Expression stoichiometry of core translation factors in different species and at different growth rates. (A) Comparison of measured (ribosome profiling) proteome fraction for core translation factors across different species and growth conditions (same conditions as Figure 4\u2014figure supplement 1). All conditions are compared to the E. coli RDM dataset (reference: $r\u2062e\u2062f$, condition of interest: $i$). Dotted line correspond to $\u03d5_{i}=\u03d5_{r\u2062e\u2062f}$, dashed line to $\u03d5_{i}=(\\lambda_{i}/\\lambda_{r\u2062e\u2062f})\u2062\u03d5_{r\u2062e\u2062f}$ and full black line to $\u03d5_{i}=\\sqrt{\\lambda_{i}/\\lambda_{r\u2062e\u2062f}}\u2062\u03d5_{r\u2062e\u2062f}$ (the parameter free prediction from the binding-limited regime of the model, optimal abundance $\u221d\\sqrt{\\lambda}$). Orange line corresponds to the one parameter fit $log\u2061\u03d5_{i}=\\alpha_{i}+log\u2061\u03d5_{r\u2062e\u2062f}$ (excluding aaRS, not expected to follow the square root scaling, and ribosomes), corresponding to the scaling of all factor\u2019s abundance. (B) Best one-parameter fit $\\alpha_{i}$ (scale factor) from (A) as a function of the growth rate ratio $\\lambda_{i}/\\lambda_{r\u2062e\u2062f}$. Square root scaling: full line. Linear scaling: dashed line. Uncertainties on the growth ratio are propagated from uncertainties of the respective growth rates. Uncertainties in $\\alpha_{i}$ are 95% confidence interval from the linear fits in (A).\n\nFor a few tlFs, the observed concentrations are two- to fivefold higher than the predicted optimal levels (e.g. EF-Ts, RF4, and IF1 in Figure 4). A potential explanation is that the corresponding reactions may not be binding or diffusion-limited, which would lead to a non-negligible fraction of tlFs sequestered at the catalytic step and thereby require higher total concentrations. Indeed, recent detailed modeling of the EF-Ts (Hu et al., 2020) cycle estimated only a small fraction (6% to 48%) of its abundance was in the free form in the cell, consistent with the large deviation we observe for this factor from our diffusion only prediction. Our optimization model can also be solved analytically in the non-binding-limited regime (Table 1), with the finite catalytic rate leading to an additional contribution of the form $\u221d\u2113\u2062\\lambda^{*}/k_{c\u2062a\u2062t}$. However, the numerical values for these solutions are in general difficult to obtain because the estimates for catalytic rates are sparse and often inconsistent with estimates of kinetics in live cells. As an example, median estimated aaRS catalytic rates (Jeske et al., 2019) measured in vitro is \u22483 s\u22121, well below the minimal value of 15 s\u22121, required to sustain translation flux at the measured value (Appendix 5), suggesting substantial deviation between in vitro and in vivo kinetics. While technically demanding, the fraction of free vs. bound factors can in principle be determined through live cell microscopy of tagged factors by partitioning the diffusive states of the tagged enzyme. Using that approach, Volkov et al., 2018 estimated that EF-Tu was in its bound state <10% of the time (consistent with our diffusion-limited prediction closed to the observed value for this factor).\n\nAnother potential explanation for the observed deviations from our predictions is that the selective pressure for these tlFs may be lower compared to the more highly expressed tlFs. This explanation is unlikely both because their stoichiometry are observed to be conserved (Figure 1B, Figure 4\u2014figure supplement 2) and given that the expression of other lowly expressed tlFs (e.g. RF1, RF2, and individual aaRSs) has been shown to acutely affect cell growth (Lalanne et al., 2021; Parker et al., 2020). Nevertheless, the deviations from the predicted optimal levels suggest that a more refined model may be required than our first-principles derivation.\n\n## Discussion\n\nDespite the comprehensive characterization of their molecular mechanisms, the \u2018mixology\u2019 for the protein synthesis machineries inside living cells has remained elusive. Here, we establish a first-principles framework to provide analytical solutions for the growth-optimizing concentrations of translation factors. We find reasonable agreements between our parameter-free parsimonious predictions and the observed tlF stoichiometry (Figure 4). These results provide simple rationales for the hierarchy of expression levels, as well as insights into several construction principles for biological pathways.\n\nAn important implication from the agreement between observed stoichiometries and our predictions is that most tlFs are co-limiting for growth. Previous models have focused on expression optimization for the full translation sector, ribosomes (Scott et al., 2010; Belliveau et al., 2021), and the abundant elongation factors EF-Tu (Ehrenberg and Kurland, 1984; Klumpp et al., 2013). In a recent study, Hu and colleagues considered additional RNA components and EF-Ts in their optimization procedure (Hu et al., 2020). In line with the conclusions of these previous studies, our results demonstrate that multiple components of the translation machinery, regardless of their observed expression level, are simultaneously co-limiting for cell growth. By virtue of the interlocked translation cycles at steady state, the flux through every cycle must be matched. In our model, the optimality occurs when there are just enough tlFs to support the required flux in every cycle, such that the proteome fraction of free factors equals that of waiting ribosomes at that step (equipartition). If the concentration of any one tlF falls below the optimal point, it becomes the limiting factor for protein synthesis and growth. This result is supported by experimental evidence that slight knockdowns of individual RFs and aaRSs are detrimental to growth (Parker et al., 2020; Lalanne et al., 2021). Figuratively, the translation apparatus is analogous to a vulnerable supply chain, in which slowdown in any of the steps affects the full output.\n\nIn the binding-limited regime, the optimal tlF stoichiometry is independent of the specific growth rate (except for aaRS). This is consistent with the observation that relative tlF expression remains unchanged in E. coli in conditions with doubling\u00a0times ranging from 20 min to 2 hr (Lalanne et al., 2018; Li et al., 2014; Figure 4\u2014figure supplement 2A).\n\nOur results are also consistent with the maintenance of the relative tlF expression across large phylogenetic distances even though the underlying regulation and cellular physiology has diverged (Lalanne et al., 2018; Figure 1B, and additional comparison to slow growing C. crescentus in Figure 4\u2014figure supplement 2A). Under the assumption of diffusion-limited association to estimate parameters, the optimal tlF stoichiometry depends only on simple biophysical parameters, including protein sizes and diffusion constants, that are likely conserved in distant species. It remains to be determined if similar biophysical principles apply to the other pathways that also exhibit conserved enzyme expression stoichiometry.\n\nIn principle, our model can also make predictions on the growth defects at suboptimal tlF concentrations. However, experimentally testing these predictions will be difficult due to secondary effects of gene regulation that are not considered in our model near optimality. For example, we have recently shown that small changes in RF levels lead to idiosyncratic induction of the general stress response in B. subtilis due to a single ultrasensitive stop codon (Lalanne et al., 2021). As a result, the growth defect not only arises from reduced translation flux, but is in fact dictated by spurious regulatory connections that are normally not activated when tlF expression is at the optimum. We propose that tlF expression may be set at the optimal levels as our first-principles model suggests but entrenched by connections in the regulatory network. To predict the full expression-to-fitness landscape away from the optimum, a more comprehensive model may be required to take into account all the molecular interactions in the cell (Karr et al., 2012; Macklin et al., 2020).\n\nOur coarse-graining approach has several limitations in its connection to detailed biochemical parameters. Foremost, coarse-grained association rate constants remain difficult to numerically estimate, and possibly neglect important features. In particular, given the sparsity of available in vivo rate constants, we estimate $k^_{o\u2062n}$ for all tlFs reactions by scaling the measured TC association rate constant ($k^_{o\u2062n}^{T\u2062C}$) by the respective diffusion coefficients. This approach generates more plausible values than the unrealistic overestimate from Smoluchowski theory (diffusion-limited rate for perfectly absorbing spheres, see Appendix 5). However, the simplifying assumptions that certain molecular properties of modeled reactions are similar (e.g. the size of the reactive surfaces, orientational constraints of the bimolecular interaction, and possible non-cognate binding events) may have to be modified for more detailed models. We also do not explicitly consider off-rates in our model. Instead, our parameters correspond to effective rate constants that account for possible sequential binding and unbinding events, that\u00a0is, $k~_{o\u2062n}=k_{o\u2062n}/n_{b\u2062i\u2062n\u2062d}$, with $n_{b\u2062i\u2062n\u2062d}=k_{c\u2062a\u2062t}/(k_{c\u2062a\u2062t}+k_{o\u2062f\u2062f})$. The effective association rate constants in our model thus contain information about catalytic and possible proofreading steps, which could be tlF-specific and are challenging to estimate. All these effects may contribute to the discrepancy between our predicted and observed tlF concentrations. As more physiological and molecular data become available, these tlF-specific features could be used to individually refine our estimate for the association rates constants and our predictions. For example, elaborate calculations from structural data could account for rotational constraints (Schlosshauer and Baker, 2004), but are beyond the scope of the present work. Overall, we expect these tlF-specific corrections to be of limited influence on the final predictions due to the square-root dependence of the optimal expression (Table 2). We further note that a number of conclusions from our model, such as the factor of $\\sqrt{\u27e8\u2113\u27e9}$ separating the optimal abundances of elongation from initiation/termination tlFs, are generic and do not depend on the specific association rates.\n\nTaken together, our model provides the biophysical basis for the stoichiometry of translation factors in living cells. The first-principles approach complements more comprehensive models that include many biochemical parameters (Hu et al., 2020; Vieira et al., 2016), while providing intuitive rationales for the expression hierarchy. We anticipate that our approach will be generalizable to elucidate or design enzyme stoichiometry of other biological pathways, especially those whose activities are required for cell growth.\n\n## Materials and methods\n\n### Average number of codons per protein: \u27e8\u2113\u27e9\n\nWe calculate the average number of codons per protein, weighted by expression, as\n\n$$\n\u27e8\u2113\u27e9:=\\frac{\\sum_{i}e_{i}\u2062\u2113_{i}}{\\sum_{i}e_{i}},\n$$\n\nwhere $\u2113_{i}$ is the number of codon for the protein product of gene $i$, and ei is the protein synthesis rate (as estimated from ribosome profiling [Li et al., 2014; Lalanne et al., 2018]) for gene $i$. For a stable proteome (in fast growing bacteria, the cell doubling time is shorter than the active degradation of most proteins [Larrabee et al., 1980]), the protein synthesis rate equals to the proteome mass fraction (Li et al., 2014). Changes in the expression of genes across growth conditions do not lead to substantial changes in $\u27e8\u2113\u27e9$. In E. coli, across growth conditions spanning \u224820 min doubling time to \u2248120 min, $\u27e8\u2113\u27e9$ changes by about 20%. Specifically, we find $\u27e8\u2113\u27e9=$ 196, 210, and 240 in respectively MOPS complete (\u224820 min doubling time [Li et al., 2014]), MOPS minimal (\u224856 min doubling time [Li et al., 2014]), and NQ1390 forced glucose limitation (\u2248120 min doubling time [Mori et al., 2021]), based on ribosome profiling data. Here for simplicity, we take $\u27e8\u2113\u27e9\u2248200$ throughout.\n\n### Conversion between concentration and proteome fraction\n\nThroughout, we use both units of concentration (molar), denoted as for\u00a0example, $[A]$ for protein $A$, and proteome fraction, denoted by $\u03d5_{A}$ (Scott et al., 2010). The correspondence between the two is $\u03d5_{A}=[A]\u2062\u2113_{A}/P$, where $\u2113_{A}$ is the number of amino acid in protein $A$, and $P$ is the in-protein amino acid concentration in the cell. $P\u22482.6\\times10^{6}$ \u00b5M, and has a value approximately independent of growth rate (Klumpp et al., 2013; Bremer and Dennis, 2008). This change in units also relates to how association constants are defined in units of proteome fraction: $k^_{o\u2062n}\u2062[A]:=k_{o\u2062n}\u2062\u03d5_{A}$, where the hat $\u22c5^$ refers to the association constant in usual units of \u00b5M\u22121 s\u22121 (used to connect to empirical data). Hence, $k_{o\u2062n}:=k^_{o\u2062n}\u2062P\u2062\u2113^{-1}$ is the rescaled association rate in units of proteome fraction.\n\n### Equality of ribosome flux in steady-state\n\nIn steady-state exponential growth, the ribosome flux in and out of each intermediate state is equal to the total flux. This results from the fact that no ribosome can accumulate in any intermediate state. Since the flux out of state $i$ is given by $\u03d5_{r\u2062i\u2062b\u2062o}^{i}/\\tau_{i}$, we must have:\n\n$$\n\\frac{\\lambda\u2062\u2113_{r\u2062i\u2062b\u2062o}}{\u27e8\u2113\u27e9}=\\frac{\u03d5_{r\u2062i\u2062b\u2062o}^{a\u2062c\u2062t}}{\\tau_{t\u2062r\u2062l}}=\\frac{\u03d5_{r\u2062i\u2062b\u2062o}^{i\u2062n\u2062i}}{\\tau_{i\u2062n\u2062i}}=\\frac{\u03d5_{r\u2062i\u2062b\u2062o}^{e\u2062l}}{\\tau_{e\u2062l}}=\\frac{\u03d5_{r\u2062i\u2062b\u2062o}^{t\u2062e\u2062r}}{\\tau_{t\u2062e\u2062r}}.\n$$\n\nAs a consequence, the proportion of ribosome in each state is equal to the proportion of time spent at that given step, for example for translation initiation:\n\n$$\n\\frac{\u03d5_{r\u2062i\u2062b\u2062o}^{i\u2062n\u2062i}}{\u03d5_{r\u2062i\u2062b\u2062o}^{a\u2062c\u2062t}}=\\frac{\\tau_{i\u2062n\u2062i}}{\\tau_{i\u2062n\u2062i}+\\tau_{e\u2062l}+\\tau_{t\u2062e\u2062r}}.\n$$\n\n### Protein production flux and growth rate\n\nIn order to write the mass action kinetic scheme for more complex models, it is useful to recast our framework in terms of the protein number production flux $J$, defined as the number of full length proteins produced per cell volume per unit time. The production of each protein requires a ribosome to go through the full synthesis cycle, and as such $J$ provides a convenient quantity in mass action schemes formulated in molar units.\n\nIn steady-state of exponential growth (Monod, 1949; Scott et al., 2010; Dai et al., 2016), there is a direct relationship between the growth rate \u03bb (defined through $d\u2062N/d\u2062t=\\lambda\u2062N$, where $N$ is the number of cells per unit volume of culture) and the protein production flux $J$. Explicitly, the protein mass accumulation rate is $\\lambda\u2062M$, where $M$ is the total protein mass per unit volume of culture. If $V$ is the mean cell volume, then $\\lambda\u2062M/V=N\u2062m_{a\u2062a}\u2062\u27e8\u2113\u27e9\u2062J$, where $m_{a\u2062a}$ is the mean amino acid mass. Defining $P:=M/(m_{a\u2062a}\u2062N\u2062V)$, the in-protein amino acid concentration per cell (Materials and methods, section Conversion between concentration and proteome fraction), the connection between protein production flux $J$ and growth rate \u03bb is then $J=\\frac{P\u2062\\lambda}{\u27e8\u2113\u27e9}$. This relationship will be used to convert between molar and proteome fraction in some equations below.\n\n### Summary of optimal solutions\n\nSolutions for the factor predicted optimal abundances as a function of effective biochemical parameters and the growth rate at the optimum, are presented in Table 1. The table breaks down terms in each solution by categories: direct diffusion term (arising from diffusive search time), catalytic sequestration, and delay incurred by the diffusion of other proteins in part of the cycle of the factor of interest. Solutions are listed in terms of on-rate $k^_{o\u2062n}$ (units of \u00b5M\u22121s\u22121). The aaRS solution follows a different form:\n\n$$\n\u03d5_{aaRS}^{\u2217}=\\frac{n_{aa}\u2113_{aaRS}\\lambda^{\u2217}}{k^_{on}^{aaRS}P\u0394_{tRNA}^{\u2217}}+\\frac{\u2113_{aaRS}\\lambda^{\u2217}}{k_{cat}^{aaRS}},with\u00a0\u0394_{tRNA}^{\u2217}:=\\frac{tRNA_{tot}}{P}\u2212\\frac{\\lambda^{\u2217}}{k_{on}^{TC}\u03d5_{TC}^{\u2217}}\u2212\\frac{2\\lambda^{\u2217}}{k_{el}^{max}}\u2212\\frac{\u03d5_{TC}^{\u2217}}{\u2113_{Tu}}\u2212\\frac{\\lambda^{\u2217}}{k_{cat}^{aaRS}},\u00a0\u00a0and\u00a0\u00a0\u03d5_{TC}^{\u2217}:=\\sqrt{\\frac{n_{aa}\u2113_{ribo}\u2113_{Tu}\\lambda^{\u2217}}{k^_{on}^{TC}P}}.\n$$\n",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "daca5b21-7905-4bbc-b28b-2305bb1e2ef9",
+      "submission_id": "a93fc891-34e4-428e-896c-d08ef8db53e9",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Pierre Sens, Institut Curie, PSL Research University, CNRS France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.69222.sa1](https://doi.org/10.7554/eLife.69222.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nThis paper presents a theoretical analysis of the abundance of components of the translation machinery (ribosomes, initiation, elongation and release factors, tRNA synthetases) in bacteria. These proteins make up a large fraction of the total proteome and their abundance is closely linked to cell growth. That the stoichiometry of the different components is adjusted such as to maximize the growth rate has been postulated a long time ago, but was so far only studied in detail for ribosomes and EF-Tu, the most abundant elongation factor. Here, the authors extend these earlier works to an unprecedented level of detail and provide a complete analysis based on this idea and derive the optimal stoichiometry for all these factor, which they find to be in good agreement with the observed abundance in different bacteria. This provides new evidences new evidence supporting the idea of proteome optimization for maximal growth.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"First-principles model of optimal translation factors stoichiometry\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Aleksandra Walczak as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Martin J Lercher (Reviewer #1); Srividya Iyer-Biswas (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe essential revisions are listed in the list of comments from the different reviewers.\n\n\u2013 Discuss the limitations of using the properties of the \"metabolic protein sector\" corresponding to the optimal stoichiometry condition to derive the optimal conditions for the translation factor sector and the ribosome sector.\n\n\u2013 Expand the discussion of the case of Ef-Tu by moving parts of the Supplementary in the main text (at the end of P.12) (comment from Reviewer #2).\n\n\u2013 Discuss in more depth the results of Figure 4, and in particular the need for \"fitting parameters\".\n\n\u2013 Provide a point-by-point answer all the reviewers comments.\n\nReviewer #1 (Recommendations for the authors):\n\nTo make the parameter choices transparent, there should be a table that lists all model parameters, how they were derived, and an estimate of the uncertainty of the value.\n\nReviewer #2 (Recommendations for the authors):\n\nThis is an highly interesting study and there are only a few points, where it could be improved in my opinion:\n\n\u2013 While the case of the release factors is very well described in the main text, the case of EF-Tu and aaRS is much harder to understand based on only the main text and the many references to the Supplement make the reading difficult here. I would suggest to maybe expand the description in the main text (starting with the last paragraph on p. 12).\n\n\u2013 I think one could distinguish between a binding-limitation of the reactions and a diffusion-limitation of the binding step of the reaction. The former is needed for the analysis, while the latter is only required in the final step, where quantitative ratios are determined and binding rates have to be approximated by a diffusion-limited rate.\n\n\u2013 Figure 4 could in principle also be done for individual organisms (using the data shown in Figure 1b).\n\nReviewer #3 (Recommendations for the authors):\n\nAddressing the concern raised through clear prose in the manuscript will suffice.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"First-principles model of optimal translation factors stoichiometry\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Aleksandra Walczak as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Srividya Iyer-Biswas (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe referees are overall satisfied with the response you provided to their comments, and with the modification you made to the paper. There is one exception however, which regards your response to point (6) of reviewer #1. His comment is copied below.\n\nCould you please provide an answer to his new comment, and modify the paper accordingly so that a final decision regarding your manuscript can be made.\n\nReviewer #1 (Recommendations for the authors):\n\nThe authors' responses adequately address my previous concerns, with one exception, the answer to my previous point (6) about the uniform re-scaling of the association rates. The authors now write in the manuscript:\n\n\"Importantly, the absolute values of the optimal concentrations can be anchored by the association rate constant between TC and the ribosome obtained from translation elongation kinetic measurements in vivo (Dai et al., 2016). The latter was found to be several-fold smaller than the simplest and absolute upper bound of a Smoluchowski estimate of perfectly absorbing spheres (section Estimation of optimal abundances), and we assume that the rescaling factor is the same for all reactions.\"\n\nIn my interpretation, what this really means is that the presented theory based on diffusion limitations provides (for whatever reasons) good predictions for the relative levels of tlFs, but not for the absolute levels. In order to get a quantitative prediction, the authors need to reduce (\"rescale\") all estimated on-rates by almost an order of magnitude, based on the known discrepancy between their estimate and an experimental value for a single tlF.\n\nIt is not clear (i) what causes that discrepancy (other than that the estimates are very approximate), and (ii) if and why the magnitude of the discrepancy can be transferred to other factors, and (iii) why its necessity does not invalidate the authors' approach.\n\nThis is an important point and should be made much more explicit than is currently done: The impressive quantitative agreement between theory and observation rests on the assumption that it is appropriate to make this uniform rescaling. In my opinion, the analysis is very interesting \u2013 but based on the necessary re-scaling, it is currently not clear if the authors' approach really provides the correct description of reality.\n\nReviewer #2 (Recommendations for the authors):\n\nIn my opinion, the authors have done a nice job responding to the comments and revising the manuscript.\n\nReviewer #3 (Recommendations for the authors):\n\nThe authors have adequately addressed my previous concerns. I recommend the manuscript for publication.\n",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f903be63-48cc-4354-b4df-1576759c6a1c",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C1",
+      "claim": "Enzymatic pathways have evolved uniquely preferred protein expression stoichiometry in living cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Enzymatic pathways have evolved uniquely preferred protein expression stoichiometry in living cells, but our ability to predict the optimal abundances from basic properties remains underdeveloped.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a general observation about enzymatic pathways.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "e92d1735-d876-4f03-9de1-fa192522c2d0",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C2",
+      "claim": "Predictions from maximization of ribosome usage in a parsimonious flux model constrained by proteome allocation agree with the conserved ratios of translation factors.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that predictions from maximization of ribosome usage in a parsimonious flux model constrained by proteome allocation agree with the conserved ratios of translation factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by data presented in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "2779f755-5289-4279-a109-b653e3db7e42",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C3",
+      "claim": "The analytical solutions provide an interpretable framework for the observed hierarchy of expression levels based on simple biophysical properties, such as diffusion constants and protein sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "The analytical solutions, without free parameters, provide an interpretable framework for the observed hierarchy of expression levels based on simple biophysical properties, such as diffusion constants and protein sizes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a key result of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "0c303a00-e296-42db-b087-566dba3aa951",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C4",
+      "claim": "Relative protein synthesis rates within individual pathways are broadly conserved across microorganisms.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently reported broad conservation of relative protein synthesis rates within individual pathways, even under circumstances in which the relative transcription and translation rates for the homologous enzymes have dramatically diverged across species (Lalanne et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "41056b73-349d-43c5-92e1-756930bd96ef",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C5",
+      "claim": "Distinct proteins that evolved convergently toward the same biological function displayed the same stoichiometry of protein synthesis in their respective species.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, distinct proteins that evolved convergently toward the same biological function also displayed the same stoichiometry of protein synthesis in their respective species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "06418a37-059e-4637-9ed3-2990b7ce8e19",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C6",
+      "claim": "The determinants of optimal in-pathway protein stoichiometry are likely modular and independent of detailed biochemical or physiological properties that differ across clades.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the determinants of optimal in-pathway protein stoichiometry are likely modular and independent of detailed biochemical or physiological properties that differ across clades.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the conservation of protein synthesis stoichiometry.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "8453e661-cca3-49b9-9dc5-5ed78756f648",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C7",
+      "claim": "The total amount of translation-related proteins per cell mass linearly increases with growth rate in most conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "As a group, the total amount of translation-related proteins per cell mass linearly increases with growth rate in most conditions (Scott et al., 2010; Dai et al., 2016; Schaechter et al., 1958), a relationship considered a bacterial 'growth law'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "38ab0631-5639-414b-94dd-df64d1b91159",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C8",
+      "claim": "The intracellular abundances of translation factors vary over 100-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "The intracellular abundances of these factors vary over 100-fold (Pedersen et al., 1978; Li et al., 2014), and their ratios are often maintained in different growth conditions and across different species (Lalanne et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous measurements.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "37c4dcc4-f5a2-43f5-b44b-e45cb44aa624",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C9",
+      "claim": "The ratios of translation factors are often maintained in different growth conditions and across different species.",
+      "claim_type": "EXPLICIT",
+      "source": "The intracellular abundances of these factors vary over 100-fold (Pedersen et al., 1978; Li et al., 2014), and their ratios are often maintained in different growth conditions and across different species (Lalanne et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work and is also shown in Figure 1B.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "8119e631-80ec-4fb7-86a2-6e058d57f044",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C10",
+      "claim": "Early studies predicted expression of elongation factor Tu (EF-Tu) relative to the ribosome by maximizing translational flux per unit proteome.",
+      "claim_type": "EXPLICIT",
+      "source": "Early studies predicted expression of the highly expressed elongation factor Tu (EF-Tu) relative to the ribosome (Klumpp et al., 2013; Ehrenberg and Kurland, 1984) by maximizing translational flux per unit proteome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "f48a17da-ec6f-49a3-aa2e-65053ffb0e1c",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C11",
+      "claim": "Expression of several components involved in the elongation step (ribosomes, tRNA, mRNA, EF-Tu, and EF-Ts) was predicted by minimizing the total mass of the components at a fixed translational flux.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, expression of several other components involved in the elongation step (ribosomes, tRNA, mRNA, EF-Tu, and EF-Ts) was predicted by minimizing the total mass of the components at a fixed translational flux (Hu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a recent study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "6371f354-f2cf-43d2-9464-da825f3d8959",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C12",
+      "claim": "The selective pressure on expression levels remains to be determined for most members of the translation machinery, including initiation and termination factors.",
+      "claim_type": "EXPLICIT",
+      "source": "The selective pressure on expression levels remains to be determined for most members of the translation machinery, including initiation and termination factors that are much more lowly expressed and often assumed to be non-limiting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in current knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "b78651f4-bdc0-4e98-b80a-f579aa733142",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C15",
+      "claim": "At steady-state cell growth, all individual fluxes in the translation cycle are matched.",
+      "claim_type": "EXPLICIT",
+      "source": "At steady-state cell growth, all individual fluxes are matched and the overall rate of ribosomes completing the full translation cycle is proportional to cell growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental assumption of the steady-state model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "ca50a3bb-9263-4f56-afa1-60b69c56364f",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C16",
+      "claim": "The overall rate of ribosomes completing the full translation cycle is proportional to cell growth.",
+      "claim_type": "EXPLICIT",
+      "source": "At steady-state cell growth, all individual fluxes are matched and the overall rate of ribosomes completing the full translation cycle is proportional to cell growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental relationship in the model connecting ribosome flux to growth rate.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "f61bc786-e7b8-4248-95de-8380e44f3e4f",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C21",
+      "claim": "The expression hierarchy of bacterial mRNA translation factors is conserved across evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Measured expression hierarchy of bacterial mRNA translation factors, conserved across evolution.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the caption of Figure 1B and shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "fab93ade-769b-4286-8a99-172ec4705747",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C22",
+      "claim": "IF1 binds to 30S ribosome subunits to facilitate initiator tRNA binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Initiation factor 1: binds to 30S ribosome subunits to facilitate initiator tRNA binding (Laursen et al., 2005; Gualerzi and Pon, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Table 1 with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "b23d2797-adf3-4da9-a92b-1770cb893dd2",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C23",
+      "claim": "IF2 is a ribosome-dependent GTPase interacting with 30S ribosome subunits and ensures correct binding of initiator tRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Initiation factor 2: ribosome-dependent GTPase interacting with 30 ribosome subunits, ensures correct binding of initiator tRNAs (Laursen et al., 2005; Gualerzi and Pon, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Table 1 with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "c7713379-ac3a-4ef1-97f9-2a6365fe1a98",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C24",
+      "claim": "IF3 prevents premature docking of 50S ribosomal subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Initiation factor 3: prevents premature docking of 50S ribosomal subunits (Laursen et al., 2005; Gualerzi and Pon, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Table 1 with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "f81f1339-8a38-4580-90a0-b76573f789c5",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C25",
+      "claim": "EF-Tu binds to charged tRNAs to form ternary complexes and brings charged tRNAs to empty ribosome A sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Elongation factor Tu: binds to charged tRNAs to form ternary complexes, brings charged tRNAs to empty ribosome A sites. (Weijland et al., 1992; Agirrezabala and Frank, 2009; Andersen et al., 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Table 1 with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "9da54b66-9bb9-4848-90f4-8ce846bdd46f",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C26",
+      "claim": "tRNA synthetases charge tRNAs with cognate amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "tRNA synthetases: charge tRNAs with cognate amino acids (Ibba and Soll, 2000; Pang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Table 1 with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "bde4d720-617f-4532-a61c-44bb53f0ac24",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C27",
+      "claim": "EF-G catalyzes translocation steps of the ribosome after peptide bond formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Elongation factor G: catalyzes translocation steps of the ribosome after peptide bond formation (Andersen et al., 2003; Agirrezabala and Frank, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Table 1 with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "78d52edb-b5ef-4fb7-b7cd-59aaf409e8e0",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C28",
+      "claim": "EF-Ts is a nucleotide exchange factor for EF-Tu.",
+      "claim_type": "EXPLICIT",
+      "source": "Elongation factor Ts: nucleotide exchange factor for EF-Tu (Agirrezabala and Frank, 2009; Andersen et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Table 1 with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "3b3f62a1-c025-499c-b7a4-c6f75ef46fc5",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C29",
+      "claim": "RF1 and RF2 recognize stop codons and hydrolyze the completed protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Peptide chain release factors 1 and 2: recognize stop codon and hydrolyze the completed protein. RF1 recognizes UAA, UAG, and RF2 UAA, UGA (Bertram et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Table 1 with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "d78ff906-2e26-4a02-a08c-773d950a1f42",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C30",
+      "claim": "RF1 recognizes UAA and UAG stop codons.",
+      "claim_type": "EXPLICIT",
+      "source": "RF1 recognizes UAA, UAG, and RF2 UAA, UGA (Bertram et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Table 1 with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "7a4552db-33b9-4c55-9ad5-be545c612fbb",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C31",
+      "claim": "RF2 recognizes UAA and UGA stop codons.",
+      "claim_type": "EXPLICIT",
+      "source": "RF1 recognizes UAA, UAG, and RF2 UAA, UGA (Bertram et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Table 1 with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "181dccd4-6ae9-4bed-8581-3a306ce597e7",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C32",
+      "claim": "RF4 catalyzes the dissociation of ribosome subunits following peptide chain release in translation termination.",
+      "claim_type": "EXPLICIT",
+      "source": "Ribosome recycling factor: catalyzes the dissociation of ribosome subunits following peptide chain release in translation termination (Bertram et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Table 1 with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "43e674da-199e-47d2-a035-710bb197a04e",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C33",
+      "claim": "Varying translation factor concentrations has two opposing effects on cell proliferation: high expression can facilitate growth by allowing more efficient usage of ribosomes, but can also limit growth by reducing the number of ribosomes and other proteins that can be produced.",
+      "claim_type": "EXPLICIT",
+      "source": "Conceptually, varying tlF concentrations has two opposing effects on cell proliferation. At the biochemical level, high tlF expression can facilitate growth by allowing more efficient usage of ribosomes. At the systems level, increased tlF expression can nonetheless limit growth by reducing the number of ribosomes and other proteins that can be produced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conceptual framework for the optimization problem.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "aba5e47e-a8ef-49f2-a6f4-564c0d7da6d7",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C34",
+      "claim": "In steady-state growth, the growth rates of cells and of their protein content must be identical.",
+      "claim_type": "EXPLICIT",
+      "source": "In steady-state growth (Monod, 1949; Scott et al., 2010; Dai et al., 2016), the growth rates of cells and of their protein content (total number of proteins) must be identical, denoted here as \u03bb, as a result of the constant average cellular composition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fundamental property of steady-state growth with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "23c5e77b-243d-4cd5-8160-2180430ad232",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C36",
+      "claim": "Active ribosomes are defined as those functionally engaged in, and cycling through, the initiation, elongation, and termination reactions of peptide synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Active ribosomes are defined as those functionally engaged in, and cycling through, the initiation, elongation, and termination reactions of peptide synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition provided in the text.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "885b9858-91ce-4631-aa35-2647957e41eb",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C37",
+      "claim": "Inactive ribosomes constitute a small fraction (\u22485%) of the total ribosome pool for fast growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Inactive ribosomes, comprised of assembly intermediates, hibernating ribosomes, or otherwise non-functional ribosomes, have been found to constitute a small fraction (\u22485%) of the total ribosome pool for fast growth (Lindahl, 1975; Dai et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "a6e0097e-6598-4105-921e-03fa8b09ed45",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C41",
+      "claim": "In bacteria, translation termination consists of two distinct, sequential steps: stop codon recognition and peptidyl-tRNA hydrolysis catalyzed by RF1 and RF2, followed by dissociation of ribosomal subunits from the mRNA catalyzed by RF4.",
+      "claim_type": "EXPLICIT",
+      "source": "In bacteria, translation termination (Bertram et al., 2001) consists of two distinct, sequential steps: (1) stop codon recognition and peptidyl-tRNA hydrolysis catalyzed by class I peptide chain release factors RF1 and RF2, followed by (2) dissociation of ribosomal subunits from the mRNA, that is, ribosome recycling, catalyzed by RF4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "27dce901-c9d5-4597-9352-3a34be01336d",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C42",
+      "claim": "RF1 and RF2 have the same molecular functions but recognize different stop codons.",
+      "claim_type": "EXPLICIT",
+      "source": "RF1 and RF2 have the same molecular functions but recognize different stop codons (Scolnick et al., 1968): RF1 recognizes stops UAA and UAG, whereas RF2 recognizes UAA and UGA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "4e7be16e-d657-4a61-aea5-68e3836904aa",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C43",
+      "claim": "The optimal translation factor concentrations can be intuitively derived by minimizing the effective proteome fraction allocated to a given process in the translation cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, we recover Equation 7 by minimizing the effective proteome fraction allocated to a given process in the translation cycle (the above argument applies to the optimal free concentration in the non-binding limited regime, see Appendix 2, section Non binding-limited regime (one stop codon) for an example).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an alternative derivation of the optimal concentrations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "f1550ed2-bce0-494d-b91d-2a9fb4ec404e",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C44",
+      "claim": "Optimization of the translation apparatus balances the production cost of the enzyme of interest with the improved efficiency of having fewer ribosomes idle at that step.",
+      "claim_type": "EXPLICIT",
+      "source": "From this perspective, optimization of the translation apparatus balances the production cost of the enzyme of interest with the improved efficiency of a having less ribosomes idle at that step, Figure 2B.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an interpretation of the optimization and illustrated in Figure 2B.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "4d9229a3-e563-447f-849e-bef5619f2b97",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C45",
+      "claim": "The optimal abundance corresponds to a point of equipartition: the proteome fraction of free cognate factors equals the proteome fraction of ribosomes waiting at the corresponding step.",
+      "claim_type": "EXPLICIT",
+      "source": "The optimal abundance in our model corresponds to a point of equipartition: the proteome fraction of free cognate factors equals the proteome fraction of ribosomes waiting at the corresponding step (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a key principle of the model and illustrated in Figure 2B.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "380ed1ca-e116-4d69-bb94-7f2593bf4038",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C46",
+      "claim": "Charged tRNAs are brought to ribosomes through a ternary complex, corresponding to a bound tRNA and EF-Tu.",
+      "claim_type": "EXPLICIT",
+      "source": "charged tRNAs are brought to ribosomes through a ternary complex (TC), corresponding to a bound tRNA and EF-Tu.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as part of the elongation mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "3581865d-374e-40cf-a83b-32770001d0f4",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C47",
+      "claim": "Following tRNA delivery and GTP hydrolysis, EF-Tu is released from the ribosome, and nucleotide exchange factor EF-Ts recycles EF-Tu back into the active pool.",
+      "claim_type": "EXPLICIT",
+      "source": "Following tRNA delivery and GTP hydrolysis, EF-Tu is released from the ribosome, and nucleotide exchange factor EF-Ts recycles EF-Tu back into the active pool, after which EF-Tu can bind a charged tRNA again and form another TC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as part of the elongation mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "e387190f-2d9c-49a8-9527-0d159db8b957",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C48",
+      "claim": "Translocation to the next codon is catalyzed by EF-G.",
+      "claim_type": "EXPLICIT",
+      "source": "At the ribosome, translocation to the next codon is catalyzed by EF-G, followed by release of uncharged tRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as part of the elongation mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "fedea04a-6ae0-4ed8-a037-d7d20946b18a",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C49",
+      "claim": "The translation elongation cycle was coarse-grained to have a single codon.",
+      "claim_type": "EXPLICIT",
+      "source": "To reduce the complexity due to different tRNA isoacceptors and aaRSs, we self-consistently coarse-grained the translation elongation cycle to have a single codon (derived in Appendix 3, section Coarse-grained one-codon model).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a modeling approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "7bdeb8d3-b7dd-4530-b8eb-628be0c566fd",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C52",
+      "claim": "Rapid binding of charged tRNAs to EF-Tu leads to either component being limiting for ternary complex concentration in most of the aaRS/EF-Tu expression space.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, rapid binding of charged tRNAs to EF-Tu leads to either component being limiting for ternary complex concentration in most of the aaRS/EF-Tu expression space, leading to two clearly delineated regimes (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a result of the model and shown in Figure 3B.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "7dc2e2c2-6c44-4e05-a71d-5b81b39e9df1",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C53",
+      "claim": "In one regime, charged tRNAs are limiting (low aaRS), whereas EF-Tu is limiting in the other (low EF-Tu).",
+      "claim_type": "EXPLICIT",
+      "source": "In one regime, charged tRNAs are limiting (low aaRS), whereas EF-Tu is limiting in the other (low EF-Tu).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the two regimes in the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "8c0b5ab2-a198-47e6-95f0-0db902aec144",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C54",
+      "claim": "The transition line corresponds to conditions in which EF-Tu and aaRS are co-limiting for ternary complex concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "The transition line corresponds to conditions in which EF-Tu and aaRS are co-limiting for TC concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a definition of the transition line.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "3e718f94-2f18-462c-a225-c56fc26b7c21",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C56",
+      "claim": "Estimates of the tRNA to ribosome ratio in the cell suggest that this is barely sufficient (between 6 and 7 tRNAs/ribosome at fast growth).",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, estimates of this ratio in the cell suggest that this is barely the case (between 6 and 7 tRNAs/ribosome at fast growth [Dong et al., 1996]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "acd71bc9-46e9-4b7e-961f-dac175b0ee5f",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C57",
+      "claim": "The ratios of growth-optimized translation factor concentrations are independent of the growth rate (except for aaRS) in the binding-limited regime.",
+      "claim_type": "EXPLICIT",
+      "source": "In the binding-limited regime, the ratios of growth-optimized tlF concentrations are independent of the growth rate (except for aaRS), and are dependent only on basic biophysical parameters, such as protein sizes and diffusion constants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "38e88362-87fe-4a37-b4ed-6bcf4c8dda30",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C60",
+      "claim": "Diffusion constants for several translation factors have been measured experimentally.",
+      "claim_type": "EXPLICIT",
+      "source": "Diffusion constants for several tlFs have been measured experimentally (Bakshi et al., 2012; Sanamrad et al., 2014; Plochowietz et al., 2017; Volkov et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "0e85ccea-d3e6-474d-8f7a-0c84c2d4fbc0",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C61",
+      "claim": "Uncharacterized diffusion constants can be estimated using the cubic-root scaling with number of codons per protein from the Stokes-Einstein relation.",
+      "claim_type": "EXPLICIT",
+      "source": "and uncharacterized ones can be estimated using the cubic-root scaling with number of codons per protein from the Stokes-Einstein relation (Nenninger et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "3bd081cb-ff66-4443-80a1-c6efdfac9308",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C62",
+      "claim": "The estimated optimal translation factor concentrations show concordance with the observed ones, both in terms of the absolute levels and the stoichiometry among translation factors.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimated optimal tlF concentrations show concordance with the observed ones, both in terms of the absolute levels and the stoichiometry among tlFs (Figure 4 for fast growth, see Supplementary file 1 for data and Figure 4\u2014figure supplement 1 for additional growth conditions).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a result and shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "4f7e6dcc-8a64-444d-9020-c95ed6868cc9",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C63",
+      "claim": "A hierarchy of expression levels emerges such that the factors involved in elongation are more abundant compared to initiation and termination factors.",
+      "claim_type": "EXPLICIT",
+      "source": "A hierarchy of expression levels emerges such that the factors involved in elongation are more abundant compared to initiation and termination factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the model results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "bbc4dab4-7260-4a1f-8e63-dde7d61a30d3",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C67",
+      "claim": "Most translation factors are co-limiting for growth.",
+      "claim_type": "EXPLICIT",
+      "source": "An important implication from the agreement between observed stoichiometries and our predictions is that most tlFs are co-limiting for growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an implication of the model results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "1ab578f5-c22d-41fc-a4f1-788b84c7304a",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C68",
+      "claim": "Multiple components of the translation machinery, regardless of their observed expression level, are simultaneously co-limiting for cell growth.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with the conclusions of these previous studies, our results demonstrate that multiple components of the translation machinery, regardless of their observed expression level, are simultaneously co-limiting for cell growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "8e697c9c-08a4-4d3c-9ade-a083a844906c",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C69",
+      "claim": "The optimality occurs when there are just enough translation factors to support the required flux in every cycle, such that the proteome fraction of free factors equals that of waiting ribosomes at that step (equipartition).",
+      "claim_type": "EXPLICIT",
+      "source": "In our model, the optimality occurs when there are just enough tlFs to support the required flux in every cycle, such that the proteome fraction of free factors equals that of waiting ribosomes at that step (equipartition).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a principle of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "7bb6ef3b-c038-4159-8831-95ac090fc4b1",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C70",
+      "claim": "If the concentration of any one translation factor falls below the optimal point, it becomes the limiting factor for protein synthesis and growth.",
+      "claim_type": "EXPLICIT",
+      "source": "If the concentration of any one tlF falls below the optimal point, it becomes the limiting factor for protein synthesis and growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a consequence of the co-limiting nature of translation factors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "51e660a2-2d66-4e49-bbaf-763e838b045e",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C71",
+      "claim": "Slight knockdowns of individual release factors and aminoacyl-tRNA synthetases are detrimental to growth.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is supported by experimental evidence that slight knockdowns of individual RFs and aaRSs are detrimental to growth (Parker et al., 2020; Lalanne et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "e363896e-5750-488d-80d1-34fea1dd0e7d",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C72",
+      "claim": "In the binding-limited regime, the optimal translation factor stoichiometry is independent of the specific growth rate (except for aaRS).",
+      "claim_type": "EXPLICIT",
+      "source": "In the binding-limited regime, the optimal tlF stoichiometry is independent of the specific growth rate (except for aaRS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "ffc976ba-a889-4bec-8e53-ec668440d2b4",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C73",
+      "claim": "Relative translation factor expression remains unchanged in E. coli in conditions with doubling times ranging from 20 min to 2 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the observation that relative tlF expression remains unchanged in E. coli in conditions with doubling times ranging from 20 min to 2 hr (Lalanne et al., 2018; Li et al., 2014; Figure 4\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with supporting citations and reference to a figure.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "e997e99b-f37a-4666-8803-91d7daf4aaf3",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C74",
+      "claim": "The relative translation factor expression is maintained across large phylogenetic distances even though the underlying regulation and cellular physiology has diverged.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are also consistent with the maintenance of the relative tlF expression across large phylogenetic distances even though the underlying regulation and cellular physiology has diverged (Lalanne et al., 2018; Figure 1B, and additional comparison to slow growing C. crescentus in Figure 4\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with supporting citations and reference to figures.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "0aa379fe-e9b3-4f07-8f14-3c28558bcf28",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C75",
+      "claim": "Under the assumption of diffusion-limited association, the optimal translation factor stoichiometry depends only on simple biophysical parameters, including protein sizes and diffusion constants, that are likely conserved in distant species.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the assumption of diffusion-limited association to estimate parameters, the optimal tlF stoichiometry depends only on simple biophysical parameters, including protein sizes and diffusion constants, that are likely conserved in distant species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an explanation for the conservation of stoichiometry.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "59239d45-a006-4d4d-867d-fe73ccbd1f2f",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C76",
+      "claim": "Small changes in release factor levels lead to idiosyncratic induction of the general stress response in B. subtilis due to a single ultrasensitive stop codon.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we have recently shown that small changes in RF levels lead to idiosyncratic induction of the general stress response in B. subtilis due to a single ultrasensitive stop codon (Lalanne et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "e2a9959c-6103-420b-944b-1f146fad93ed",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C77",
+      "claim": "Translation factor expression may be set at the optimal levels as the first-principles model suggests but entrenched by connections in the regulatory network.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that tlF expression may be set at the optimal levels as our first-principles model suggests but entrenched by connections in the regulatory network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a proposal based on the model and observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "45310f28-c148-4075-bbb1-01746407b9bb",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C78",
+      "claim": "Coarse-grained association rate constants remain difficult to numerically estimate, and possibly neglect important features.",
+      "claim_type": "EXPLICIT",
+      "source": "Foremost, coarse-grained association rate constants remain difficult to numerically estimate, and possibly neglect important features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of the approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "4294c488-b0c7-4cc5-984f-814843c78d59",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C79",
+      "claim": "The simplifying assumptions that certain molecular properties of modeled reactions are similar may have to be modified for more detailed models.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the simplifying assumptions that certain molecular properties of modeled reactions are similar (e.g. the size of the reactive surfaces, orientational constraints of the bimolecular interaction, and possible non-cognate binding events) may have to be modified for more detailed models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of the approach.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "2ee7b434-054c-45bb-a2b1-b6b1a5c5356b",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C80",
+      "claim": "Median estimated aminoacyl-tRNA synthetase catalytic rates measured in vitro is approximately 3 s^-1, well below the minimal value of 15 s^-1 required to sustain translation flux at the measured value.",
+      "claim_type": "EXPLICIT",
+      "source": "As an example, median estimated aaRS catalytic rates (Jeske et al., 2019) measured in vitro is \u22483 s\u22121, well below the minimal value of 15 s\u22121, required to sustain translation flux at the measured value (Appendix 5), suggesting substantial deviation between in vitro and in vivo kinetics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation and reference to an appendix.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "69add77a-918c-40a9-849d-f5f71c353fac",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C81",
+      "claim": "Volkov et al., 2018 estimated that EF-Tu was in its bound state <10% of the time.",
+      "claim_type": "EXPLICIT",
+      "source": "Using that approach, Volkov et al., 2018 estimated that EF-Tu was in its bound state <10% of the time (consistent with our diffusion-limited prediction closed to the observed value for this factor).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "624f5379-d4eb-469d-82e5-8d374a44835c",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C82",
+      "claim": "The expression of other lowly expressed translation factors (e.g. RF1, RF2, and individual aaRSs) has been shown to acutely affect cell growth.",
+      "claim_type": "EXPLICIT",
+      "source": "This explanation is unlikely both because their stoichiometry are observed to be conserved (Figure 1B, Figure 4\u2014figure supplement 2) and given that the expression of other lowly expressed tlFs (e.g. RF1, RF2, and individual aaRSs) has been shown to acutely affect cell growth (Lalanne et al., 2021; Parker et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with supporting citations and reference to figures.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "4f173aa6-7bc9-40d6-8658-344dd00082ca",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "claim_id": "C86",
+      "claim": "In steady-state exponential growth, the ribosome flux in and out of each intermediate state is equal to the total flux.",
+      "claim_type": "EXPLICIT",
+      "source": "In steady-state exponential growth, the ribosome flux in and out of each intermediate state is equal to the total flux. This results from the fact that no ribosome can accumulate in any intermediate state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a property of steady-state growth.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2773bc61-195b-4cef-ae13-0ff05ecad1ff",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Enzymatic pathways, particularly translation factors, exhibit conserved protein expression stoichiometry across evolution. This conservation is observed even when transcription and translation rates diverge across species, and extends to convergently evolved proteins with the same function, suggesting modular determinants independent of detailed biochemical properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C4, C5, and C6 collectively establish the evolutionary conservation of protein stoichiometry in enzymatic pathways. The claims are supported by citations to prior work (C4, C5) and provide a logical inference (C6) about the modular nature of stoichiometry determinants. The observation in Figure 1B (C21) provides additional visual evidence of this conservation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "3a9f3d88-7c45-4471-baee-5b5604de28a6",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A first-principles model based on maximizing ribosome usage under proteome allocation constraints predicts translation factor stoichiometry that agrees with observed conserved ratios. The model provides analytical solutions explaining the expression hierarchy based on biophysical properties like diffusion constants and protein sizes, with elongation factors predicted to be more abundant than initiation/termination factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2 and C62 demonstrate agreement between model predictions and observed data (Figure 4), while C3 and C63 describe the interpretable framework and hierarchy that emerges. The model's predictions show concordance with measurements across multiple species, supporting the validity of the optimization approach. The analytical nature of the solutions without free parameters strengthens the result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "533b82e2-9c25-4a84-98f3-6d6818febbb9",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Translation-related proteins show characteristic abundance patterns: total translation protein mass increases linearly with growth rate, individual factor abundances vary 100-fold, but their ratios are maintained across growth conditions and species. This expression hierarchy is conserved evolutionarily.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C9 are well-supported by multiple citations to prior experimental work. C21 provides direct visual evidence in Figure 1B showing the conserved hierarchy across three bacterial species. The consistency between cited literature and presented data strengthens this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "05643b47-c21e-4e4e-95ef-6391cdc03cf7",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The model framework establishes that at steady-state exponential growth, all ribosome fluxes through translation cycle steps are matched and proportional to cell growth rate. Active ribosomes (>95% of total in fast growth) cycle through initiation, elongation, and termination with equal flux through each step.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15, C16, C34, and C86 establish fundamental steady-state principles that are well-established in the field (supported by citations). C36 provides a clear definition, and C37 is supported by citations quantifying inactive ribosomes. These form a coherent theoretical foundation for the model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "9ea76b99-24e0-438f-b8a7-0870e661e7fa",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The optimization principle balances biochemical efficiency (higher translation factor expression improves ribosome usage) against systems-level constraints (translation factor expression reduces space for ribosomes). Optimality occurs at 'equipartition' where the proteome fraction of free factors equals that of waiting ribosomes at each step.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33, C43-C45, and C69 present a coherent conceptual framework for the optimization. The equipartition principle (C45, C69) is illustrated in Figure 2B and provides an intuitive interpretation. The derivation showing equivalence between the optimization condition and minimizing effective proteome fraction (C43) strengthens the theoretical foundation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "36a9fbf6-91e5-4a3a-b513-a8d97a10d6f5",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Translation termination involves two sequential steps: (1) stop codon recognition and peptidyl-tRNA hydrolysis by RF1/RF2, which recognize different stop codons (RF1: UAA/UAG; RF2: UAA/UGA), and (2) ribosome recycling by RF4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41, C42, and C29-C32 describe the termination mechanism with consistent citations to established literature (Bertram et al., 2001; Scolnick et al., 1968). This provides the biological foundation for the termination model. The claims are mutually consistent and well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "03976b35-382d-4e36-8321-995dc3ef94fc",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Translation elongation involves multiple interlocked cycles: charged tRNAs are delivered to ribosomes via ternary complexes (tRNA-EF-Tu), EF-Ts recycles EF-Tu after GTP hydrolysis, EF-G catalyzes translocation, and aminoacyl-tRNA synthetases charge tRNAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 and C25-C28 describe the elongation mechanism with supporting citations from established literature. These provide the biological foundation for the elongation model presented in Figure 3A. The mechanistic description is consistent with current understanding of translation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "aeed3c53-96a7-4750-aced-8c800875de67",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The elongation model was coarse-grained to a single effective codon, revealing two distinct regimes separated by a sharp transition line: one where charged tRNAs are limiting (low aaRS) and another where EF-Tu is limiting (low EF-Tu). The transition line represents conditions where EF-Tu and aaRS are co-limiting for ternary complex concentration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49 and C52-C54 describe the coarse-graining approach and resulting regime structure shown in Figure 3B. The sharp separation between regimes is demonstrated visually and explained mechanistically. The model simplification is justified and the resulting predictions are testable. Figure 3\u2014figure supplement 1 provides additional geometric interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "2f5fcee6-8be3-4dd5-ad9d-123cadad706b",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The cellular tRNA to ribosome ratio is barely sufficient for the model requirements, estimated at 6-7 tRNAs per ribosome at fast growth, just meeting the minimum needed to accommodate ribosome-bound tRNAs (~2) and EF-Tu-bound tRNAs (~4).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C56 is supported by citation to Dong et al., 1996 for the tRNA/ribosome ratio measurement. The calculation showing this is barely sufficient is straightforward and the agreement between the measured ratio and model requirement is striking, though the model treats total tRNA as a measured parameter rather than optimizing it.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "cb7f6a36-c251-4558-b691-920233eaceb5",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "In the binding-limited regime, optimal translation factor stoichiometry ratios are independent of growth rate (except aaRS) and depend only on biophysical parameters like protein sizes and diffusion constants. This prediction is consistent with observed conservation of relative factor expression across growth conditions (E. coli: 20-120 min doubling times) and across phylogenetically distant species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57, C72, and C75 present the theoretical prediction, while C73 and C74 provide experimental support from citations and Figure 4\u2014figure supplement 2A. The growth-rate independence is a key prediction that is testable and appears to be supported by data. The dependence on conserved biophysical parameters explains cross-species conservation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "ca082ab6-cf1f-498e-a0c2-e9d4a104724d",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Diffusion constants for translation factors were obtained from experimental measurements where available, and estimated for uncharacterized factors using cubic-root scaling with protein size from the Stokes-Einstein relation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60 and C61 describe the parameter estimation approach with appropriate citations. The use of measured values where available (C60) and physics-based scaling for estimates (C61) is reasonable. However, the authors acknowledge in C78-C79 that this approach has limitations and makes simplifying assumptions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "06afcd36-17b2-4422-a31b-a5e58a8f8121",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Most translation factors are simultaneously co-limiting for cell growth regardless of their expression level. At optimality, there are just enough factors to support required flux such that any reduction below optimal makes that factor limiting. This is supported by experimental evidence that knockdowns of individual RFs and aaRSs are detrimental to growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C70 present the co-limiting conclusion as an implication of the model, while C71 provides experimental support from citations (Parker et al., 2020; Lalanne et al., 2021). The equipartition principle (C69) provides the mechanistic basis. The experimental validation strengthens this important conclusion about the vulnerability of the translation system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "0e6cbe8f-ca4e-44ae-8d60-71af13ba5480",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The model has limitations in parameter estimation: coarse-grained association rate constants are difficult to estimate and may neglect important features; simplifying assumptions about molecular properties may need modification; in vitro catalytic rates (e.g., aaRS ~3 s\u207b\u00b9) are inconsistent with in vivo requirements (~15 s\u207b\u00b9). Some factors (EF-Ts, RF4, IF1) show 2-5 fold higher observed expression than predicted, possibly due to catalytic sequestration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C82 honestly acknowledge model limitations and discrepancies. C80 provides specific quantitative evidence of in vitro/in vivo discrepancy. C81 provides supporting evidence for EF-Tu being mostly free (consistent with diffusion-limited prediction). The acknowledgment of limitations and discussion of potential explanations for deviations demonstrates appropriate scientific rigor.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "5b8ec6a4-0d7b-42bd-8ea9-433ac5e7b5bc",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior optimization models predicted expression of highly abundant elongation factors (EF-Tu, EF-Ts, tRNA, mRNA) by maximizing flux or minimizing mass, but selective pressure on lowly expressed initiation and termination factors remained undetermined.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C12 accurately summarize prior work with appropriate citations (Klumpp et al., 2013; Ehrenberg and Kurland, 1984; Hu et al., 2020) and identify the gap that motivates the current study. This provides proper context for the contribution of the present work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "e4f10de6-271c-4d6f-b960-2d6caa7f5f99",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Translation factor expression may be set at optimal levels by first-principles as the model suggests, but entrenched by regulatory network connections. Small changes in RF levels can trigger idiosyncratic stress responses (e.g., in B. subtilis via an ultrasensitive stop codon), complicating experimental testing of growth predictions near optimality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C76 is supported by citation to recent work (Lalanne et al., 2021) demonstrating regulatory complications. C77 proposes a reasonable hypothesis reconciling optimization with regulatory entrenchment. This explains why direct experimental testing of the fitness landscape may be difficult and acknowledges complexity beyond the first-principles model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    },
+    {
+      "id": "5f7795c1-aafa-44ca-a3b6-9e625a3ebc88",
+      "content_id": "9c737d98-c089-4828-9af1-c95723bd1dbb",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Translation initiation factors have distinct roles: IF1 binds 30S subunits to facilitate initiator tRNA binding, IF2 is a ribosome-dependent GTPase ensuring correct initiator tRNA binding, and IF3 prevents premature 50S subunit docking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 describe initiation factor functions with consistent citations to established literature (Laursen et al., 2005; Gualerzi and Pon, 2015). This provides the biological foundation for the initiation model. The descriptions are standard and well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:54:59.379052Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f903be63-48cc-4354-b4df-1576759c6a1c",
+      "result_id": "2773bc61-195b-4cef-ae13-0ff05ecad1ff"
+    },
+    {
+      "claim_id": "0c303a00-e296-42db-b087-566dba3aa951",
+      "result_id": "2773bc61-195b-4cef-ae13-0ff05ecad1ff"
+    },
+    {
+      "claim_id": "41056b73-349d-43c5-92e1-756930bd96ef",
+      "result_id": "2773bc61-195b-4cef-ae13-0ff05ecad1ff"
+    },
+    {
+      "claim_id": "06418a37-059e-4637-9ed3-2990b7ce8e19",
+      "result_id": "2773bc61-195b-4cef-ae13-0ff05ecad1ff"
+    },
+    {
+      "claim_id": "e92d1735-d876-4f03-9de1-fa192522c2d0",
+      "result_id": "3a9f3d88-7c45-4471-baee-5b5604de28a6"
+    },
+    {
+      "claim_id": "2779f755-5289-4279-a109-b653e3db7e42",
+      "result_id": "3a9f3d88-7c45-4471-baee-5b5604de28a6"
+    },
+    {
+      "claim_id": "3bd081cb-ff66-4443-80a1-c6efdfac9308",
+      "result_id": "3a9f3d88-7c45-4471-baee-5b5604de28a6"
+    },
+    {
+      "claim_id": "4f7e6dcc-8a64-444d-9020-c95ed6868cc9",
+      "result_id": "3a9f3d88-7c45-4471-baee-5b5604de28a6"
+    },
+    {
+      "claim_id": "8453e661-cca3-49b9-9dc5-5ed78756f648",
+      "result_id": "533b82e2-9c25-4a84-98f3-6d6818febbb9"
+    },
+    {
+      "claim_id": "38ab0631-5639-414b-94dd-df64d1b91159",
+      "result_id": "533b82e2-9c25-4a84-98f3-6d6818febbb9"
+    },
+    {
+      "claim_id": "37c4dcc4-f5a2-43f5-b44b-e45cb44aa624",
+      "result_id": "533b82e2-9c25-4a84-98f3-6d6818febbb9"
+    },
+    {
+      "claim_id": "f61bc786-e7b8-4248-95de-8380e44f3e4f",
+      "result_id": "533b82e2-9c25-4a84-98f3-6d6818febbb9"
+    },
+    {
+      "claim_id": "b78651f4-bdc0-4e98-b80a-f579aa733142",
+      "result_id": "05643b47-c21e-4e4e-95ef-6391cdc03cf7"
+    },
+    {
+      "claim_id": "ca50a3bb-9263-4f56-afa1-60b69c56364f",
+      "result_id": "05643b47-c21e-4e4e-95ef-6391cdc03cf7"
+    },
+    {
+      "claim_id": "aba5e47e-a8ef-49f2-a6f4-564c0d7da6d7",
+      "result_id": "05643b47-c21e-4e4e-95ef-6391cdc03cf7"
+    },
+    {
+      "claim_id": "23c5e77b-243d-4cd5-8160-2180430ad232",
+      "result_id": "05643b47-c21e-4e4e-95ef-6391cdc03cf7"
+    },
+    {
+      "claim_id": "885b9858-91ce-4631-aa35-2647957e41eb",
+      "result_id": "05643b47-c21e-4e4e-95ef-6391cdc03cf7"
+    },
+    {
+      "claim_id": "4f173aa6-7bc9-40d6-8658-344dd00082ca",
+      "result_id": "05643b47-c21e-4e4e-95ef-6391cdc03cf7"
+    },
+    {
+      "claim_id": "43e674da-199e-47d2-a035-710bb197a04e",
+      "result_id": "9ea76b99-24e0-438f-b8a7-0870e661e7fa"
+    },
+    {
+      "claim_id": "4e7be16e-d657-4a61-aea5-68e3836904aa",
+      "result_id": "9ea76b99-24e0-438f-b8a7-0870e661e7fa"
+    },
+    {
+      "claim_id": "f1550ed2-bce0-494d-b91d-2a9fb4ec404e",
+      "result_id": "9ea76b99-24e0-438f-b8a7-0870e661e7fa"
+    },
+    {
+      "claim_id": "4d9229a3-e563-447f-849e-bef5619f2b97",
+      "result_id": "9ea76b99-24e0-438f-b8a7-0870e661e7fa"
+    },
+    {
+      "claim_id": "8e697c9c-08a4-4d3c-9ade-a083a844906c",
+      "result_id": "9ea76b99-24e0-438f-b8a7-0870e661e7fa"
+    },
+    {
+      "claim_id": "a6e0097e-6598-4105-921e-03fa8b09ed45",
+      "result_id": "36a9fbf6-91e5-4a3a-b513-a8d97a10d6f5"
+    },
+    {
+      "claim_id": "27dce901-c9d5-4597-9352-3a34be01336d",
+      "result_id": "36a9fbf6-91e5-4a3a-b513-a8d97a10d6f5"
+    },
+    {
+      "claim_id": "3b3f62a1-c025-499c-b7a4-c6f75ef46fc5",
+      "result_id": "36a9fbf6-91e5-4a3a-b513-a8d97a10d6f5"
+    },
+    {
+      "claim_id": "d78ff906-2e26-4a02-a08c-773d950a1f42",
+      "result_id": "36a9fbf6-91e5-4a3a-b513-a8d97a10d6f5"
+    },
+    {
+      "claim_id": "7a4552db-33b9-4c55-9ad5-be545c612fbb",
+      "result_id": "36a9fbf6-91e5-4a3a-b513-a8d97a10d6f5"
+    },
+    {
+      "claim_id": "181dccd4-6ae9-4bed-8581-3a306ce597e7",
+      "result_id": "36a9fbf6-91e5-4a3a-b513-a8d97a10d6f5"
+    },
+    {
+      "claim_id": "380ed1ca-e116-4d69-bb94-7f2593bf4038",
+      "result_id": "03976b35-382d-4e36-8321-995dc3ef94fc"
+    },
+    {
+      "claim_id": "3581865d-374e-40cf-a83b-32770001d0f4",
+      "result_id": "03976b35-382d-4e36-8321-995dc3ef94fc"
+    },
+    {
+      "claim_id": "e387190f-2d9c-49a8-9527-0d159db8b957",
+      "result_id": "03976b35-382d-4e36-8321-995dc3ef94fc"
+    },
+    {
+      "claim_id": "f81f1339-8a38-4580-90a0-b76573f789c5",
+      "result_id": "03976b35-382d-4e36-8321-995dc3ef94fc"
+    },
+    {
+      "claim_id": "9da54b66-9bb9-4848-90f4-8ce846bdd46f",
+      "result_id": "03976b35-382d-4e36-8321-995dc3ef94fc"
+    },
+    {
+      "claim_id": "bde4d720-617f-4532-a61c-44bb53f0ac24",
+      "result_id": "03976b35-382d-4e36-8321-995dc3ef94fc"
+    },
+    {
+      "claim_id": "78d52edb-b5ef-4fb7-b7cd-59aaf409e8e0",
+      "result_id": "03976b35-382d-4e36-8321-995dc3ef94fc"
+    },
+    {
+      "claim_id": "fedea04a-6ae0-4ed8-a037-d7d20946b18a",
+      "result_id": "aeed3c53-96a7-4750-aced-8c800875de67"
+    },
+    {
+      "claim_id": "7bdeb8d3-b7dd-4530-b8eb-628be0c566fd",
+      "result_id": "aeed3c53-96a7-4750-aced-8c800875de67"
+    },
+    {
+      "claim_id": "7dc2e2c2-6c44-4e05-a71d-5b81b39e9df1",
+      "result_id": "aeed3c53-96a7-4750-aced-8c800875de67"
+    },
+    {
+      "claim_id": "8c0b5ab2-a198-47e6-95f0-0db902aec144",
+      "result_id": "aeed3c53-96a7-4750-aced-8c800875de67"
+    },
+    {
+      "claim_id": "3e718f94-2f18-462c-a225-c56fc26b7c21",
+      "result_id": "2f5fcee6-8be3-4dd5-ad9d-123cadad706b"
+    },
+    {
+      "claim_id": "acd71bc9-46e9-4b7e-961f-dac175b0ee5f",
+      "result_id": "cb7f6a36-c251-4558-b691-920233eaceb5"
+    },
+    {
+      "claim_id": "e363896e-5750-488d-80d1-34fea1dd0e7d",
+      "result_id": "cb7f6a36-c251-4558-b691-920233eaceb5"
+    },
+    {
+      "claim_id": "ffc976ba-a889-4bec-8e53-ec668440d2b4",
+      "result_id": "cb7f6a36-c251-4558-b691-920233eaceb5"
+    },
+    {
+      "claim_id": "e997e99b-f37a-4666-8803-91d7daf4aaf3",
+      "result_id": "cb7f6a36-c251-4558-b691-920233eaceb5"
+    },
+    {
+      "claim_id": "0aa379fe-e9b3-4f07-8f14-3c28558bcf28",
+      "result_id": "cb7f6a36-c251-4558-b691-920233eaceb5"
+    },
+    {
+      "claim_id": "38e88362-87fe-4a37-b4ed-6bcf4c8dda30",
+      "result_id": "ca082ab6-cf1f-498e-a0c2-e9d4a104724d"
+    },
+    {
+      "claim_id": "0e85ccea-d3e6-474d-8f7a-0c84c2d4fbc0",
+      "result_id": "ca082ab6-cf1f-498e-a0c2-e9d4a104724d"
+    },
+    {
+      "claim_id": "bbc4dab4-7260-4a1f-8e63-dde7d61a30d3",
+      "result_id": "06afcd36-17b2-4422-a31b-a5e58a8f8121"
+    },
+    {
+      "claim_id": "1ab578f5-c22d-41fc-a4f1-788b84c7304a",
+      "result_id": "06afcd36-17b2-4422-a31b-a5e58a8f8121"
+    },
+    {
+      "claim_id": "8e697c9c-08a4-4d3c-9ade-a083a844906c",
+      "result_id": "06afcd36-17b2-4422-a31b-a5e58a8f8121"
+    },
+    {
+      "claim_id": "7bb6ef3b-c038-4159-8831-95ac090fc4b1",
+      "result_id": "06afcd36-17b2-4422-a31b-a5e58a8f8121"
+    },
+    {
+      "claim_id": "51e660a2-2d66-4e49-bbaf-763e838b045e",
+      "result_id": "06afcd36-17b2-4422-a31b-a5e58a8f8121"
+    },
+    {
+      "claim_id": "45310f28-c148-4075-bbb1-01746407b9bb",
+      "result_id": "0e6cbe8f-ca4e-44ae-8d60-71af13ba5480"
+    },
+    {
+      "claim_id": "4294c488-b0c7-4cc5-984f-814843c78d59",
+      "result_id": "0e6cbe8f-ca4e-44ae-8d60-71af13ba5480"
+    },
+    {
+      "claim_id": "2ee7b434-054c-45bb-a2b1-b6b1a5c5356b",
+      "result_id": "0e6cbe8f-ca4e-44ae-8d60-71af13ba5480"
+    },
+    {
+      "claim_id": "69add77a-918c-40a9-849d-f5f71c353fac",
+      "result_id": "0e6cbe8f-ca4e-44ae-8d60-71af13ba5480"
+    },
+    {
+      "claim_id": "624f5379-d4eb-469d-82e5-8d374a44835c",
+      "result_id": "0e6cbe8f-ca4e-44ae-8d60-71af13ba5480"
+    },
+    {
+      "claim_id": "8119e631-80ec-4fb7-86a2-6e058d57f044",
+      "result_id": "5b8ec6a4-0d7b-42bd-8ea9-433ac5e7b5bc"
+    },
+    {
+      "claim_id": "f48a17da-ec6f-49a3-aa2e-65053ffb0e1c",
+      "result_id": "5b8ec6a4-0d7b-42bd-8ea9-433ac5e7b5bc"
+    },
+    {
+      "claim_id": "6371f354-f2cf-43d2-9464-da825f3d8959",
+      "result_id": "5b8ec6a4-0d7b-42bd-8ea9-433ac5e7b5bc"
+    },
+    {
+      "claim_id": "59239d45-a006-4d4d-867d-fe73ccbd1f2f",
+      "result_id": "e4f10de6-271c-4d6f-b960-2d6caa7f5f99"
+    },
+    {
+      "claim_id": "e2a9959c-6103-420b-944b-1f146fad93ed",
+      "result_id": "e4f10de6-271c-4d6f-b960-2d6caa7f5f99"
+    },
+    {
+      "claim_id": "fab93ade-769b-4286-8a99-172ec4705747",
+      "result_id": "5f7795c1-aafa-44ca-a3b6-9e625a3ebc88"
+    },
+    {
+      "claim_id": "b23d2797-adf3-4da9-a92b-1770cb893dd2",
+      "result_id": "5f7795c1-aafa-44ca-a3b6-9e625a3ebc88"
+    },
+    {
+      "claim_id": "c7713379-ac3a-4ef1-97f9-2a6365fe1a98",
+      "result_id": "5f7795c1-aafa-44ca-a3b6-9e625a3ebc88"
+    }
+  ],
+  "comparisons": []
+}

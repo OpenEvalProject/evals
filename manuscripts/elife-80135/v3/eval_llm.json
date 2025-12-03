@@ -1,0 +1,231 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C55",
+      "C56",
+      "C57",
+      "C20"
+    ],
+    "result": "The authors developed and performed the first genome-wide CRISPR screen in human polarized epithelial cells using a FACS-based assay to measure DPP4 surface localization. CaCo2 cells were transduced with the GeCKOv2 library at low MOI, polarized for 18 days, and the lowest 10% DPP4-expressing cells were sorted, yielding 89 significantly enriched gRNAs (p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C55-C57, and C20 collectively describe the experimental workflow and primary outcome. The methodology is clearly described with appropriate controls (C21, C60, C61), statistical thresholds are stated (p<0.05), and the novelty claim is explicitly made. The technical approach appears sound with low MOI to ensure single integration events.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Validation of seven candidate genes (PIP5K1C, TM9SF4, TMEM110, GALNT2, ANO8, MTMR2, ARHGAP33) by generating individual KO cell lines confirmed varying degrees of DPP4 surface reduction, with PIP5K1C showing the strongest effect (~75% reduction) and ANO8, MTMR2, ARHGAP33 showing the mildest (~30% reduction).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 describe quantitative validation of screen hits using flow cytometry. The data are presented with clear quantification and appear consistent across figures. Western blots confirm knockout efficiency (Figure 3A, Figure 1\u2014figure supplement 1C), and the validation uses independent gRNAs, strengthening confidence in the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C62"
+    ],
+    "result": "All seven KO cell lines showed severe defects in forming a single central lumen in 3D cyst assays, with statistically significant decreases in the percentage of cysts with proper lumen formation (p<0.005, n\u2265100 cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26 and C62 describe polarization defects in 3D culture with appropriate statistical analysis (Mann-Whitney U test, p<0.005) and adequate sample size (n\u2265100). The phenotype is consistent across all KO lines, suggesting a common requirement for these genes in epithelial polarization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C32",
+      "C33"
+    ],
+    "result": "TM9SF4, MTMR2, and ANO8 KO cell lines displayed aberrant intracellular accumulation of DPP4 in 3D cysts, with DPP4 mislocalizing to subapical compartments in ARHGAP33, TM9SF4, and ANO8 KOs, while PIP5K1C and MTMR2 KOs showed DPP4 in large basolateral actin-rich structures resembling microvillus inclusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C32, and C33 describe cargo mislocalization patterns supported by immunofluorescence microscopy (Figures 4, 8). The distinction between subapical versus basolateral mislocalization suggests different mechanistic defects. Quantification is provided (Figure 8I) with statistical significance, though the specific mechanisms remain to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C31"
+    ],
+    "result": "All KO cell lines exhibited conspicuous clusters of ectopic microvilli and severe irregularities in brush-border architecture, including patchy distribution or complete absence of apical microvilli and occurrence of extremely long microvilli, as revealed by electron microscopy and actin fluorescence microscopy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28 and C31 are supported by extensive electron microscopy data (Figures 5-7) showing consistent ultrastructural defects across all KO lines. Both SEM and TEM were used, providing complementary views. The phenotypes are well-documented with multiple representative images, though quantification of microvillus defects is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C37",
+      "C38",
+      "C39",
+      "C63",
+      "C64"
+    ],
+    "result": "Most KO cell lines showed enlarged late endosomal/lysosomal compartments (up to 2\u00d76 \u03bcm in TM9SF4 and ANO8 KOs) that were positive for Lamp1, Lamp3, cathepsinD, and the acidotropic marker DAMP, and regularly contained mislocalized DPP4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 and C37-C39 describe endolysosomal phenotypes supported by both TEM morphology (Figure 6) and immunogold labeling (Figure 11). The acidic nature is confirmed by DAMP labeling, and the presence of lysosomal markers is demonstrated. Size measurements are provided. Claims C63-C64 add immunofluorescence confirmation. The convergent evidence from multiple techniques strongly supports these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40"
+    ],
+    "result": "After serum deprivation overnight, the giant poorly structured compartments in TM9SF4, ANO8, and ARHGAP33 KO cells disappeared and reformed lysosomes of normal size and morphology were observed, suggesting autophagic removal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 is supported by EM data (Figure 1\u2014figure supplement 1H-K) showing that the enlarged compartments are reversible upon starvation. This suggests they are not permanent structural defects but rather reflect an imbalance in lysosomal homeostasis. The interpretation of autophagic removal is reasonable given the starvation stimulus, though direct autophagy markers were not shown.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "APN delocalized to actin-rich intracellular compartments only in ARHGAP33 KO cells, while SI localization remained unaltered in all KO cell lines, suggesting cargo-specific effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34 and C35 demonstrate differential effects on apical cargo proteins. The specificity for ARHGAP33 affecting APN but not other KOs, and the lack of effect on SI across all KOs, suggests these genes specifically affect certain trafficking routes. Statistical analysis is provided (Figure 8\u2014figure supplement 1I), though the mechanistic basis for cargo selectivity is not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "TEER measurements revealed a substantial increase in ARHGAP33 KO cells around day 7, while other KO cell lines maintained TEER comparable to WT cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 is supported by TEER measurements over time (Figure 10I). The specific increase in ARHGAP33 KO suggests enhanced barrier function, which is interesting given the other polarization defects. However, the biological significance and mechanism of this increase are not explored. The measurements appear technically sound with error bars shown.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C21",
+      "C61"
+    ],
+    "result": "Colchicine treatment to induce VAC formation did not cause reduction in surface DPP4 signal, validating that VAC formation would not interfere with the FACS-based screening approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21 and C61 describe an important control experiment showing that VAC formation (a potential confounding factor) does not affect DPP4 surface levels. This validates the screening approach. The data are shown in Figure 1\u2014figure supplement 1A-B with quantification, supporting the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The authors propose mechanistic hypotheses for how the identified genes might regulate polarization: PIP5K1C and MTMR2 through PIP pool regulation; ANO8 and TMEM110 through Ca2+ signaling; TM9SF4 through lipid microdomains and pH regulation; GALNT2 through O-glycosylation; and ARHGAP33 through Cdc42 regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C41-C50 are largely speculative mechanistic proposals based on known functions of these proteins from the literature (citations provided). While the hypotheses are reasonable and well-grounded in prior work, they are not directly tested in this study. The authors appropriately use tentative language ('might', 'could', 'possibly'). These remain hypotheses requiring future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The introduction establishes background knowledge about epithelial polarization, MVID disease, and DPP4 properties, including that epithelial cells build specialized membrane domains separated by junctions, that MVID is caused by mutations in MYO5B, STX3, and STXBP2, and that DPP4 is a type II transmembrane protein with N- and O-linked glycans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C18 present established background knowledge with appropriate citations. These are not novel findings but provide necessary context. The authors cite their own previous work for MVID genetics (C13-C15), which is appropriate. The characterization of DPP4 is well-established in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The discussion contextualizes findings within disease contexts, noting that UNC45A has been associated with syndromal diarrhea, that MVID shows enlarged lysosomal organelles, that mucolipidosis type IV shows similar endolysosomal swelling, and that several identified genes are associated with neuropathies or myopathies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 appropriately place the findings in broader disease contexts with proper citations. These are literature-based contextual claims rather than novel findings. The parallels drawn between the observed phenotypes and known diseases are reasonable and may guide future clinical investigations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The abstract claims that knockout of TM9SF4, anoctamin 8, and ARHGAP33 causes polarization defects and DPP4 mislocalization to late endosomes/lysosomes, confirming identification of novel factors for epithelial polarization and apical cargo secretion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C7 from the abstract are well-supported by the detailed results presented in the manuscript, including 3D cyst assays (C26-C27), immunofluorescence (C32), electron microscopy (C28-C31), and immunogold labeling (C37-C39). The convergent evidence from multiple experimental approaches strongly supports these summary claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C19",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The manuscript establishes that DPP4 localizes to the apical brush-border, increases during polarization due to polarized traffic and surface expansion, and that this can be measured by flow cytometry, with HEK293T cells serving as a negative control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19 and C58-C60 describe the basic characterization of the DPP4 assay system. These are supported by microscopy (Figure 1A) and flow cytometry data (Figure 1B). The use of HEK293T as a negative control is appropriate. This establishes the foundation for the screening approach.",
+    "result_type": "MINOR"
+  }
+]

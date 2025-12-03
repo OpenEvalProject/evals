@@ -1,0 +1,265 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Light-sheet calcium imaging of zebrafish optic tectum revealed that pairwise activity correlations between neurons decrease smoothly with Euclidean distance, compatible with distance-dependent recurrent excitatory connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C25 describe the imaging methodology and correlation analysis. The data show monotonic decay of correlation with distance (C21), good fits to both Gaussian (C23, r\u00b2=0.42\u00b10.17) and exponential functions (C25, r\u00b2=0.39\u00b10.18), with peaks corresponding to seed neuron locations (C24). This is confirmed by two-photon imaging (Figure 1\u2014figure supplement 1C), ruling out light-scattering artifacts. The interpretation that this pattern is compatible with recurrent excitatory connectivity (C22) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Tectal bursting activity exhibits power-law distributed sizes and durations, uniform spatiotemporal distribution, and is followed by prolonged activity suppression lasting tens of seconds, suggesting activity-dependent suppression of excitability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C38 characterize burst properties from 54,424 bursts in 14 fish. The power-law distributions (C33, Figure 1I-J), uniform spatial and temporal distribution (C30), and post-burst suppression of activity (C35) and burst participation (C36) for tens of seconds are well-documented. The interpretation that this suggests prolonged activity-dependent suppression (C38) is a reasonable inference from the data, though the specific mechanisms remain to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "A minimal LNP network model with seven parameters incorporating fast local excitation and slow long-range suppression successfully reproduced tectal bursting, demonstrating that localized bursting can emerge without preferentially connected assemblies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C40-C49 describe the model development and key findings. The model with uniform distance-based connectivity (C42) produced spatially localized bursting (C43, C45) that was robust across parameter ranges (C44). Critically, PCA-promax analysis detected apparent 'assemblies' despite no preferential connectivity by design (C46), demonstrating that localized bursting alone is insufficient evidence for assemblies (C47). This is a strong result that challenges previous interpretations in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C62"
+    ],
+    "result": "Model optimization using evolutionary multi-objective optimization successfully reproduced biological bursting statistics, with optimized parameters showing fast, short-range excitation (\u03c3\u1d31=4.5\u03bcm, \u03c4\u1d31=0.05s) and slow, long-range suppression (\u03c3\u1d35=40\u03bcm, \u03c4\u1d35=24.1s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C62 describe parameter exploration and optimization. The model reproduced not only the optimization objectives (burst size/duration distributions, post-burst suppression, C58) but also features not used for tuning (burst participation probability, temporal profile, C59). The optimized parameters (C62) reveal distinct spatiotemporal scales for excitation vs. suppression. The robustness to connection pruning (C55) and exponential distance functions strengthens confidence in the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C70"
+    ],
+    "result": "Model-estimated excitability state based on recent activity history explained a significant portion of trial-to-trial variability in visually evoked responses, with the optimized model performing significantly better than baseline or null models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C65-C70 demonstrate that pre-stimulus linear drive estimated from the model predicts visual response variability. The threshold-linear relationship (C66) between estimated excitability and response magnitude is shown for individual neurons (Figure 4D-E). Statistical comparisons show the optimized model significantly outperforms both baseline parameters and random timepoint controls (C67-C68, Figure 4E). This validates the model's ability to estimate network state from observed activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Visual stimulation produces spatially selective, long-lasting suppression of ongoing activity, with neurons responsive to the presented stimulus showing greater suppression than neurons tuned to other elevations, as predicted by the model and confirmed experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C80 describe bidirectional interactions between sensory responses and network state. The model predicted (C73-C75) and experiments confirmed (C76-C77) spatially selective post-stimulus suppression lasting tens of seconds (Figure 5D-E). The retinotopic organization (C72) enables spatial specificity. This demonstrates that the model captures reciprocal effects: ongoing activity modulates sensory responses (C79) while sensory responses suppress subsequent activity (C80).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "High-frequency presentation of a common stimulus produces spatially specific response adaptation (~70% of initial amplitude) while deviant stimuli show minimal adaptation, matching model predictions that combine RGC adaptation with intrinsic tectal dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C92 describe stimulus-selective adaptation. The model predicted (C81-C83) and experiments confirmed (C84) selective adaptation to common but not deviant stimuli. The adaptation magnitude correlated with baseline response strength (C87, Figure 6E). The pattern matches combined RGC and tectal adaptation (C85) rather than either alone. This demonstrates experience-dependent response modulation (C91) that could filter expected inputs (C92).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Model-predicted network state explains variability in prey-catching behavior, with elevated pre-CS linear drive in anterior tectum predicting spontaneous convergent saccades, and stimulus history modulating both spontaneous and visually evoked hunting responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C93-C105 link tectal state to behavior. Spontaneous convergent saccades (CS) are associated with increased anterior tectal activity (C94, p=0.002) that is lateralized appropriately (C96, p=0.003). Model-estimated pre-CS linear drive is elevated (C98, p=0.004) and correlates with CS-associated activity (C99). Visual stimuli suppress spontaneous CS rates by ~1/3 (C101, p=0.002) and produce selective habituation to common stimuli (C104), matching neural adaptation patterns. This demonstrates behavioral relevance of the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "A recurrent interaction motif with fast local excitation and slow long-range suppression accounts for bidirectional interactions between activity and network state, explaining variability in sensory encoding and behavior despite using only seven parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C112 summarize the main conclusions. The minimal seven-parameter model (C111) successfully explains: (1) bursting statistics, (2) trial-to-trial response variability, (3) post-stimulus activity suppression, (4) stimulus-selective adaptation, and (5) behavioral variability (C112). The model captures bidirectional interactions between activity and state (C110). This represents a parsimonious explanation for multiple phenomena using a unified framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The uniform connectivity model is acknowledged as an oversimplification that does not rule out assemblies, but demonstrates that localized bursting alone is insufficient evidence for heterogeneous connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C116 provide important caveats. The authors acknowledge the model's limitations (C113) and note quantitative deviations (C114). However, the key conceptual contribution (C115-C116) is demonstrating that localized bursting can emerge from uniform connectivity, challenging the interpretation that such bursting necessarily implies assemblies. This is a fair assessment of the model's scope and implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Response variability arises from fluctuations in internal brain state shaped by recent network activity, neuromodulation, and synaptic plasticity, with ongoing activity both causing and reflecting these state changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C17 establish the conceptual framework based on prior literature. These are well-supported by extensive citations and represent established knowledge in the field. The bidirectional nature of ongoing activity (C14-C15) and its correlation structure (C16-C17) provide the rationale for the study's approach. These claims appropriately contextualize the work within existing understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C39",
+      "C118",
+      "C119",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The biological mechanisms underlying the model's interactions may include recurrent excitatory connections (demonstrated in tadpole and rat), presynaptic depression, activity-dependent intrinsic property changes, or feedback from external inhibitory populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C39 and C118-C123 discuss potential biological implementations. While recurrent excitation is supported by prior work (C118-C119), the mechanisms for long-lasting suppression remain speculative (C121-C123). The authors appropriately present these as possibilities rather than established facts. The 24.1s time constant for suppression is too long for direct synaptic inhibition, but the specific mechanism(s) are not determined by this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The observed activity-dependent suppression is compatible with the optic tectum's role in detecting salient inputs and filtering expected stimuli, similar to adaptation phenomena described in other species and sensory modalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C131 discuss functional implications and comparative biology. The link between tectal state and prey-catching (C124) is supported by the behavioral data and prior literature. The interpretation that suppression filters expected inputs (C126) is reasonable given the tectum's role in salience detection (C125). Comparisons to adaptation in other systems (C127-C129) appropriately contextualize the findings. The limitation that the model uses only distance-based connectivity (C131) is acknowledged.",
+    "result_type": "MINOR"
+  }
+]

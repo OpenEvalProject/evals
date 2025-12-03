@@ -1,0 +1,560 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C33",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The authors developed a novel single-session training protocol where rats learn to time a 1.5 s interval, progressing from naive to proficient performance within one session. This protocol allows investigation of neuronal activity from very early learning stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C33, C39-C42 describe the experimental design and its rationale. The behavioral data (Figures 1B-C) demonstrate that rats significantly increased response durations within the first session, supporting the claim that the protocol enables rapid learning and early-stage neural recording.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C36",
+      "C37",
+      "C204"
+    ],
+    "result": "The study demonstrates a double dissociation between mPFC and dorsal striatum during temporal learning: mPFC is engaged early in learning but disengages as training progresses, while STR shows the opposite pattern, engaging as animals become proficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11, C36-C37, and C204 describe the main finding. The decoding analysis (Figure 3) shows decreasing mPFC performance and increasing STR performance with training. Pharmacological experiments (Figures 4-5) provide causal evidence: mPFC inactivation impairs learning but not performance in trained animals, while STR inactivation impairs performance after learning. The convergence of electrophysiological and pharmacological evidence strongly supports this double dissociation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C151",
+      "C68"
+    ],
+    "result": "Decoding analysis reveals that mPFC neuronal activity shows high time-encoding performance early in training but decreases as learning progresses, suggesting a 'vanishing neural code' in mPFC during temporal learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84, C151, and C68 describe the mPFC decoding results. Figure 3C shows significant correlation (R=0.56) early in session 1 that decreases to R=0.35 late in the session. The jackknife analysis shows marginal significance (p=0.054) for this decrease. The finding is unexpected but well-documented with appropriate statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C85",
+      "C188"
+    ],
+    "result": "The STR does not show evidence of time encoding during the first day of learning, despite rats learning the task and mPFC disengaging from timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85 and C188 state the absence of STR engagement on day 1. Figure 3B shows near-zero correlation coefficients for STR early (R=0.05) and late (R=0.02) in session 1, with no significant difference between stages (t(3)=0.49, p=0.64). This negative result is appropriately reported with statistical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C104",
+      "C105",
+      "C106",
+      "C161",
+      "C162"
+    ],
+    "result": "Pharmacological inactivation of mPFC severely impairs learning of the timing task but has no effect on performance in trained animals, demonstrating that mPFC is necessary for acquisition but not expression of timed behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97, C104-C106, C161-C162 describe the mPFC pharmacological results. Figure 4B-C shows that muscimol-treated rats did not increase response durations during the first session (t(7)=0.36, p=0.73) while saline controls did. The effect persisted across three sessions. However, session 5 data (Figure 4J) shows no effect of mPFC inactivation in trained animals. Statistical tests support all claims with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C120",
+      "C136"
+    ],
+    "result": "Double Gaussian analysis reveals that mPFC inactivation primarily affects temporally controlled responses (longer responses) rather than premature responses, with significant effects on both accuracy (\u03bc\u2082) and precision (\u03c3\u2082) of timed responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115, C120, C136 describe the double Gaussian analysis results. Figure 4E-I shows significant effects on \u03bc\u2082 (F[1,17]=7.12, p=0.016) and \u03c3\u2082 (F[1,17]=3.21, p=0.09 for main effect; F[2,34]=4.82, p=0.04 for interaction), while premature response parameters (\u03bc\u2081, \u03c3\u2081, \u03b3) were not significantly affected. This provides mechanistic insight into how mPFC contributes to timing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C198",
+      "C199",
+      "C200",
+      "C137",
+      "C138"
+    ],
+    "result": "STR inactivation in trained animals disrupts timing performance, affecting both accuracy and precision of temporally controlled responses while leaving premature responses unchanged, demonstrating STR's central role in expressing timed behavior after learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C198-C200, C137-C138 describe STR pharmacological results. Figure 5 shows significant decreases in mean response duration (t(3)=5.6, p=0.011) and changes in double Gaussian parameters \u03bc\u2082 (t(3)=3.36, p=0.04) and \u03c3\u2082 (t(3)=-5.66, p=0.01), while \u03bc\u2081 and \u03c3\u2081 were unchanged. This provides causal evidence for STR's role in timing after learning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C142",
+      "C194"
+    ],
+    "result": "On the second day of training, STR outperforms mPFC in time decoding, with the increase in STR time encoding occurring already by the second training day.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C142 and C194 describe day 2 results. Figure 3D-E shows that STR decoding performance increased from day 1 (R=0.01) to day 2 (R=0.09) while mPFC decreased (day 1: R=0.22, day 2: R=0.02). However, neither difference was statistically significant when accounting for between-animal variability (mPFC: t(3)=0.784, p=0.46; STR: t(3)=-0.852, p=0.422). The small sample size (N=4) and lack of significance make this finding uncertain despite the apparent trend.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The authors used linear discriminant analysis (LDA) with 100 ms time bins and 1000-fold cross-validation to decode elapsed time from neuronal firing rates, measuring performance as Pearson's R between predicted and actual time bins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C75 describe the decoding methodology. The methods section provides detailed description of the LDA approach, including data preprocessing (truncation at 1.5 s, 100 ms bins), cross-validation procedure (1000 folds with 80/20 train/test split), and performance metric (Pearson's R). The methodology is standard and appropriately described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Two groups of rats were implanted with electrode arrays: group mPFC (N=4) with electrodes in mPFC for long sessions (>4 hours, 801-1671 trials), and group mPFC+STR (N=4) with electrodes in both regions for shorter sessions over 2 days (436-936 trials day 1, 381-699 trials day 2), recording 131 neurons total.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49 describe the experimental groups and recording parameters. Table 1 provides detailed neuron counts per rat, region, and day. The description is consistent with the methods section and provides appropriate detail for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "In the two-day training protocol, rats showed learning within session 1, retention between sessions (shorter initial responses in session 2 than end of session 1, but longer than session 1 start), and similar performance at the end of both sessions, suggesting near-optimal learning on day 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 describe behavioral patterns across two sessions. Figure 1C shows the data with statistical support: repeated-measures ANOVA showed effect of stage (F[1,3]=61.0, p=0.004), no effect of day (F[1,3]=2.37, p=0.22), and stage\u00d7day interaction (F[1,3]=26.0, p=0.014). Post-hoc tests confirmed significant differences. The interpretation of retention and near-optimal learning is reasonable given the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Response duration distributions become bimodal during learning, with rats alternating between premature (short) and time-controlled (long) responses. This phenomenon occurs at both individual and group levels, persisting even in well-trained animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 describe the bimodal distribution phenomenon. Figure 4D shows the bimodal pattern. The claim is supported by citation to Reyes et al., 2020, which demonstrated this at the individual level. The double Gaussian fitting approach is appropriate for characterizing this bimodal behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Neurons exhibited diverse activity patterns during learning, with some units modulated by nose poke onset/offset, others becoming less responsive during learning, and some mPFC neurons showing ramping activity early that became flat late in training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 describe qualitative observations of neuronal activity patterns. Figure 2C-J shows representative examples of these patterns. However, quantitative analysis showed no significant increase in climbing activity with training in either mPFC or STR, which is appropriately reported. The qualitative descriptions are supported by the raster plots and firing rate histograms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "A 5-day pharmacological protocol was designed where muscimol group (N=8) received mPFC muscimol infusions for sessions 1-3, saline group (N=11) received saline for sessions 1-3, both groups received saline on day 4, and both received muscimol on day 5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 describe the experimental design for the mPFC pharmacological study. The methods section provides detailed description of the protocol, including drug doses (100 ng/0.5 \u03bcl muscimol), timing (10 min before session), and group assignments. The design is appropriate for testing both acquisition and expression effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C126",
+      "C170",
+      "C171"
+    ],
+    "result": "By session 4, both groups were well-trained and producing mostly temporally controlled responses. mPFC inactivation in session 5 produced no detectable effect on response distributions, indicating mPFC is only required during learning and becomes unnecessary once animals are proficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C122, C126, C170-C171 describe the post-training inactivation results. Figure 4J shows no significant differences between sessions 4 and 5 (mixed ANOVA: session F[1,17]=0.09, p=0.77; group F[1,17]=0.55, p=0.47; interaction F[1,17]=0.033, p=0.86). The interpretation that mPFC becomes unnecessary after learning is well-supported by this data combined with the learning impairment results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "The prefrontal cortex exceeded STR in time decoding in session 1, though this comparison should be interpreted cautiously because more neurons were recorded in mPFC than STR, which affects encoding performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 describe the session 1 comparison with appropriate caveats. The authors correctly note that the absolute decoding performance comparison is confounded by different neuron counts (Table 1 shows more mPFC neurons). The focus on within-region changes across learning stages is more appropriate and is the basis for the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The early mPFC organization may relate to prior FR1 training where animals habituated to nose poking, with the only new contingency in the timing task being the wait time. Nontemporal learning (bar pressing) takes tens of trials while temporal learning takes hundreds of trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C152-C153, C155-C158 present speculation about why mPFC showed organized activity early. While the FR1 pre-training is documented (C155), the interpretation that this explains early mPFC organization (C152) is speculative. The general statements about learning rates (C157-C158) are presented as established knowledge but lack specific citations. The reasoning is plausible but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "The effect of mPFC inactivation did not persist after the first session, with muscimol-treated rats showing significant improvement during session 2, suggesting partial learning occurred even with mPFC inactivated. Possible explanations include incomplete inactivation or involvement of other cortical areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C163-C165 describe the session 2 recovery, which is shown in Figure 4C (significant effect of session: F[2,34]=20.8, p=10\u207b\u2076). Claims C166-C167 offer speculative explanations for this finding. The data clearly show recovery, but the mechanistic explanations remain speculative and are appropriately presented as such.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C150",
+      "C151"
+    ],
+    "result": "The decoding method proved useful in detecting changes in network dynamics due to learning, revealing that mPFC neuronal activity was quite organized from the very beginning of training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C151 summarize the utility of the decoding approach and the early mPFC organization finding. The high early decoding performance (R=0.56) supports C151. The method successfully detected learning-related changes (decreasing mPFC, increasing STR performance), supporting C150. However, the interpretation of what 'organized' means could be more precisely defined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C186",
+      "C187",
+      "C178",
+      "C179",
+      "C181",
+      "C183"
+    ],
+    "result": "The authors hypothesize that differences from previous studies showing persistent mPFC involvement in timing may relate to their task being self-timed and self-initiated (not relying on external stimuli), though interval duration (1.5 s, slightly above the 1 s interval-timing/millisecond boundary) may also contribute.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C186-C187, C178-C179, C181, C183 present hypotheses about why results differ from prior literature. The self-timed/self-initiated nature of the task (C186-C187) is a reasonable hypothesis but untested. The interval duration explanation (C178-C179, C181) is partially contradicted by citing Xu et al., 2014 who used similar intervals but found different results. The authors appropriately acknowledge they cannot attribute differences exclusively to interval duration (C183).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C189",
+      "C190",
+      "C191",
+      "C192"
+    ],
+    "result": "Since STR does not assume time encoding during session 1 despite learning occurring and mPFC disengaging, other regions may be involved. Candidates include medial entorhinal cortex (MEC, based on Heys et al., 2020) and thalamus (based on its role in timing tasks).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C189 is a reasonable inference from the data showing mPFC disengagement without STR engagement. Claims C190-C192 propose specific candidate regions based on literature. However, these are speculative suggestions without direct evidence from the current study. The citations support the plausibility of these candidates but do not test them in this experimental context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C206",
+      "C207",
+      "C208",
+      "C209",
+      "C210",
+      "C211",
+      "C212",
+      "C213",
+      "C214"
+    ],
+    "result": "The study used 61 adult male Wistar rats (12-16 weeks, 350-400g) distributed across three protocols: 18 for STR pharmacology, 35 for mPFC pharmacology, and 8 for electrophysiology. Animals were individually housed on 12hr light/dark cycle, food-deprived to 85% body weight, with water freely available. All protocols were approved by CEUA-UFABC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C206-C214 describe the subjects and housing conditions. These are standard methodological details that are clearly documented in the Methods section. The information is sufficient for reproducibility and meets ethical reporting standards.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C143",
+      "C144"
+    ],
+    "result": "Bakhurin et al., 2017 showed that STR outperformed orbitofrontal cortex in time encoding in a Pavlovian conditioning task. Since most learning happens on the first day (Reyes et al., 2020), the current finding that STR outperforms mPFC on day 2 may remain stable, suggesting STR becomes more reliable than cortex after initial training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C140-C141 accurately cite Bakhurin et al., 2017. Claim C143 cites Reyes et al., 2020 for the statement about first-day learning. However, claim C144 is speculative, extrapolating from the current non-significant day 2 trend and the Bakhurin findings. The speculation is reasonable but not directly tested, and the day 2 comparison lacked statistical significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Modi et al., 2014 recorded from CA1 hippocampus during trace eye-blink conditioning using calcium imaging, reporting progressive increases in sequential firing with learning, preceded by transient increases in noise correlations suggesting increased common input to CA1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C149 accurately summarize findings from Modi et al., 2014. The authors use this prior work to contextualize their own findings about learning-related changes in neural activity. The citation appears accurate and relevant to the discussion of how neural codes emerge during learning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C182"
+    ],
+    "result": "Previous studies (Narayanan et al., 2006; Smith et al., 2010; Kim et al., 2009; Buhusi et al., 2018) showed mPFC involvement in timing, with some showing mPFC disengagement during habit formation or effects on premature but not time-controlled responses. However, other studies show critical mPFC roles in timing, with inactivation impairing precision but not accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C173, C175-C176, C182 cite multiple prior studies to contextualize the current findings. The authors appropriately acknowledge that their results differ from some prior work while being consistent with other studies. The citations appear accurate and the discussion of discrepancies is balanced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C184",
+      "C185"
+    ],
+    "result": "Xu et al., 2014 used similar intervals (1.5 or 2.5 s) and found neuronal activity scaled with estimated interval. They also manipulated mPFC temperature, which biased responses in time, providing a causal link between mPFC and time estimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C184-C185 accurately cite Xu et al., 2014. The authors use this citation to highlight that interval duration alone cannot explain differences between studies, since Xu et al. used similar intervals but found persistent mPFC involvement. This strengthens the argument that task structure (self-timed vs. externally cued) may be more important.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C193",
+      "C195",
+      "C196",
+      "C197"
+    ],
+    "result": "The increasing STR involvement on day 2 was expected given STR's known role in expressing timed responses (Mello et al., 2015; Matell et al., 2003; Monteiro, 2020). Monteiro, 2020 showed causal links between STR dynamics and timing decisions using temperature manipulation in a 1.5 s interval task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C193, C195-C197 cite prior literature on STR's role in timing. The citations appear accurate and relevant. The authors appropriately note that while STR involvement was expected, their study provides a timescale for when this involvement emerges (day 2), which is a novel contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C202",
+      "C203",
+      "C205"
+    ],
+    "result": "The results agree with Emmons et al., 2020, who showed mPFC and STR play different roles in temporal and behavioral flexibility (mPFC related to behavioral flexibility, STR to temporal rule). The current findings further understanding of regions involved in time estimation and improve knowledge of a taxonomy of time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C202-C203 cite Emmons et al., 2020 to show consistency with recent work. Claim C205 makes a broad statement about the significance of the findings. The citation appears accurate and the claim of advancing understanding is reasonable given the novel double dissociation finding, though 'taxonomy of time' is somewhat vague.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C160"
+    ],
+    "result": "The authors removed 200 ms from the beginning and at least 200 ms from the end of each trial to exclude motor activity from the recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C160 describes a data preprocessing step. This is clearly documented in the Discussion section where the authors address potential confounds. The 200 ms exclusion is a reasonable approach to minimize motor-related activity, though the choice of this specific duration is not justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C12",
+      "C13"
+    ],
+    "result": "Time is fundamental to life, but understanding of how brain areas cooperate to process time intervals remains modest. Analyses of neural activity during learning are rare because timing tasks typically require many days of training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C12-C13 provide background context. These are general statements about the field supported by citations (Ivry and Spencer, 2004; Merchant et al., 2013a). The claims accurately represent the state of knowledge and motivation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Literature shows various physiological activities associated with timing (ramping neurons, time cells, oscillations, sequential firing), which are particular cases of population clocks\u2014the concept that any reliable dynamical evolution of neural activity can serve as a timing mechanism. However, establishing causal links between time encoding and timing has been elusive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C20 summarize prior literature on neural timing mechanisms. Multiple citations support each type of neural activity pattern. The population clock concept (C18-C19) is appropriately cited to Buonomano and Maass, 2009. The statement about elusive causal links (C20) is supported by citations and motivates the current study's pharmacological approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Multiple brain regions show timing-related spiking activity (frontal cortex, motor cortex, striatum, hippocampus, thalamus, substantia nigra pars compacta). Different timing tasks can activate different brain parts in humans. Active manipulations have assessed involvement of mPFC and STR in timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C29 provide comprehensive literature review of brain regions involved in timing. Each region is supported by multiple citations. The statement about human studies (C27) cites Merchant et al., 2008. The claims about active manipulations (C28-C29) cite relevant pharmacological studies. This provides appropriate context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The neurophysiological process underlying timing task acquisition has been less studied because timing tasks usually require many training sessions. Most electrophysiological recordings come from well-trained animals. Observing how neuronal activity develops with learning can considerably improve understanding of brain mechanisms underlying timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 identify the knowledge gap and rationale for the study. C31 appropriately cites Modi et al., 2014 as an exception. C32 is a logical inference about the value of studying learning processes. These claims effectively motivate the novel single-session training protocol.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "If a brain area encodes a time interval, trial-dependent and more structured spiking activity must emerge due to learning, and consequently, decoding algorithm performance should increase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 present the logical hypothesis underlying the decoding analysis. This is a reasonable prediction based on the population clock framework: if a region encodes time, learning should produce more reliable temporal patterns, which should be detectable by decoding algorithms. The hypothesis is clearly stated and testable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "The results were at odds with the working hypothesis that mPFC and STR were highly involved in keeping track of time and that an encoding scheme should emerge with learning. Instead, evidence for mPFC pointed to a vanishing neural code.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 describe how the findings contradicted initial expectations. The decreasing mPFC decoding performance (Figure 3C) and lack of STR engagement on day 1 (Figure 3B) indeed contradict the hypothesis that both regions would show emerging time codes with learning. The 'vanishing neural code' characterization is apt for the mPFC findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C154"
+    ],
+    "result": "The results agree with previous results implicating mPFC in top-down control of executive tasks, including behavioral switching learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C154 contextualizes the findings within the broader literature on mPFC function. The citations (Emmons et al., 2020; Antzoulatos and Miller, 2011; Freedman et al., 2001; Baker and Ragozzino, 2014) support the connection to executive control. The interpretation that early mPFC involvement relates to learning a new behavioral contingency is reasonable.",
+    "result_type": "MINOR"
+  }
+]

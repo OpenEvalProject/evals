@@ -1,0 +1,344 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C35"
+    ],
+    "result": "PTC-847 and PTC-672 are novel orally active inhibitors that exhibit narrow-spectrum activity against Ng including MDR isolates, with MIC values ranging from 0.05-0.4 \u00b5g/mL against Ng strains, while showing no activity (MICs >12.5 \u00b5g/mL) against a panel of Gram-negative pathogens and commensal gut organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The MIC data in Table 1 and Supplementary file 1 provide robust evidence across multiple Ng strains (including WHO reference strains and 206 clinical isolates) and control organisms. The selectivity is well-documented with appropriate controls (PTC-565 as broad-spectrum comparator). The MIC90 value of 0.12 \u00b5g/mL against 206 diverse Ng strains strongly supports potency and lack of cross-resistance with current antibiotics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C36",
+      "C56"
+    ],
+    "result": "PTC-847 and PTC-672 exhibit bactericidal activity against Ng through inhibition of DNA synthesis, with time-dependent killing at \u22651x MIC and a post-antibiotic effect, but do not inhibit protein synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Time-kill curves (Supplementary file 2), post-antibiotic effect data (Supplementary file 3), and radiolabeled precursor incorporation assays (Supplementary file 4) provide converging evidence for the mechanism. The selectivity for DNA over protein synthesis is clearly demonstrated, supporting the proposed target class.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C37"
+    ],
+    "result": "PTC-847 shows weak inhibition of Ng DNA gyrase (IC50 = 19 \u00b5M) and no significant inhibition of Ng topoisomerase IV, E. coli topoisomerases, or human topoisomerase II (IC50 >32-100 \u00b5M), indicating these are not the primary targets despite inhibition of DNA synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The enzyme inhibition data in Table 2 clearly demonstrate that the IC50 values for topoisomerases are 200-1000 fold higher than the MIC values (0.05-0.1 \u00b5g/mL), ruling out these enzymes as primary targets. The ciprofloxacin control shows appropriate inhibition, validating the assays. This negative result is crucial for target identification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C34",
+      "C67",
+      "C68",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Resistance selection and whole genome sequencing identified class Ia RNR as the therapeutic target, with resistance mutations mapping to the N-terminal cone domain of the \u03b1 subunit (S41L for PTC-847R and H25R for PTC-672R), conferring 300-fold resistance without cross-resistance to other antibiotic classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The resistance selection experiments, whole genome sequencing, and genetic complementation studies (transformation with mutant gene conferring resistance) provide strong evidence for target identification. The frequency of resistance (3.6\u00d710\u207b\u2078) is comparable to control antibiotics. The specificity of resistance (no cross-resistance, Supplementary file 6) and large MIC shift (0.05 to 15.6 \u00b5g/mL) strongly support RNR as the target.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "Treatment of Ng with PTC-847 at 1x MIC for 1 hour results in an increased ratio of NTPs to dNTPs, consistent with RNR inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The LC/MS analysis of nucleotide pools (Supplementary file 7) provides direct biochemical evidence that PTC-847 inhibits RNR in cells, as the expected consequence of RNR inhibition is accumulation of NDP substrates and depletion of dNDP products. This result validates the target identification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C70",
+      "C71",
+      "C72",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "PTC-847 and PTC-672 directly inhibit purified Ng RNR (78-93% inhibition at 2.5-4 \u00b5M), with inhibition enhanced in the presence of allosteric effector dATP. The compounds also inhibit E. coli RNR but show minimal inhibition of human RNR even at 100 \u00b5M.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The enzyme inhibition data in Table 3 and Figures 4 and 4-supplement 1 demonstrate direct target engagement. The dATP potentiation (Figure 4) is particularly compelling, showing synergy between the allosteric inhibitor and the compounds. The selectivity for bacterial over human RNR (>25-fold) is well-documented and important for therapeutic potential. The Km values and specific activities are appropriately characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C40",
+      "C85",
+      "C86",
+      "C38",
+      "C39"
+    ],
+    "result": "Negative stain EM analysis demonstrates that Ng class Ia RNR forms a dATP-induced \u03b14\u03b24 inhibited state similar to E. coli RNR, with the N-terminal cone domain involved in this quaternary structure formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The negative stain EM data in Figure 5 clearly show ring structures consistent with \u03b14\u03b24 formation in the presence of dATP. The 2D class averages and 3D reconstruction at 21 \u00c5 resolution provide structural evidence. The sequence homology argument (76% identity between Ng and Ec \u03b1) supporting the hypothesis is reasonable. This is the first demonstration of \u03b14\u03b24 formation for Ng RNR.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C87",
+      "C88",
+      "C78"
+    ],
+    "result": "The resistance mutations H25R and S41L abrogate dATP-induced \u03b14\u03b24 ring formation in Ng RNR, as demonstrated by negative stain EM showing no ring structures with mutant proteins, and these mutants show reduced sensitivity to dATP inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The EM images in Figure 6 provide clear visual evidence that the mutants cannot form \u03b14\u03b24 rings under conditions where wild-type does. The ATP control (no rings for WT or mutants) validates the specificity. The enzyme inhibition data (Supplementary file 9) showing reduced dATP sensitivity for mutants provides functional confirmation. This mechanistically links the resistance mutations to disruption of the inhibited state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C42",
+      "C84"
+    ],
+    "result": "PTC-672 and PTC-847 likely have multiple modes of RNR inhibition: while PTC-672 shows some increase in \u03b14\u03b24 formation by mass photometry (but less than dATP), PTC-847 shows no increase, yet both still inhibit mutant RNRs that cannot form rings. The compounds appear to act synergistically with dATP rather than as dATP mimics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The mass photometry data (Figure 6-supplements 2-3) and residual inhibition of non-ring-forming mutants (Figure 6-supplement 1) suggest complexity in the mechanism. However, the interpretation is speculative and the data are somewhat contradictory - if ring formation is not required, why do ring-disrupting mutations confer resistance? The proposed synergistic mechanism with dATP needs further validation. The exact binding site(s) and mechanism(s) remain unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C43",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Oral administration of PTC-672 achieves complete and sustained clearance of Ng vaginal infection in mice, with efficacy demonstrated against both antibiotic-susceptible (10-30 mg/kg) and MDR strains (60 mg/kg), comparable to ciprofloxacin and ceftriaxone controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The in vivo efficacy data in Figure 7 show clear dose-response relationships and complete clearance (10/10 mice) at effective doses, sustained through Day 7. The use of both susceptible and MDR strains strengthens the findings. The mouse model is well-established and appropriately controlled. The sub-efficacious dose (30 mg/kg for MDR strain) showing rebound infection validates the dose-response relationship. Statistical analysis (mean \u00b1 SD) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The H25R resistance mutation imposes a significant fitness cost on Ng, with competitive index decreasing to 0.06 in vitro (8 hours) and <0.01 in vivo (Day 2), indicating that resistant strains are outcompeted by susceptible strains in the absence of drug selection pressure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The competitive fitness experiments (Figures 8 and 9) are well-designed with appropriate controls (single strain infections showing comparable fitness). The dramatic decrease in competitive index both in vitro and in vivo provides strong evidence for fitness cost. The in vivo data are particularly compelling as they reflect the natural infection environment. This suggests resistance may be less likely to emerge and persist clinically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "PTC-847 and PTC-672 spare commensal bacteria relative to control antibiotic solithromycin, though commensal Neisseria strains show ~10-fold reduced sensitivity compared to Ng.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The MIC data in Supplementary files 10 and 11 support the narrow spectrum and relative sparing of commensals. However, the panel tested is limited and the 10-fold difference for commensal Neisseria suggests some on-target activity. More extensive testing of diverse commensal species would strengthen this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C45",
+      "C110",
+      "C121",
+      "C123",
+      "C126"
+    ],
+    "result": "PTC-672 and related analogs may have therapeutic potential for MDR Ng treatment, potentially being more selective, better tolerated, and less prone to resistance emergence compared to current therapies, fitting a cost-effective single-pathogen treatment paradigm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims are largely speculative and represent future potential rather than demonstrated results. While the supporting data (selectivity, efficacy, fitness cost) are strong, clinical translation requires safety studies, pharmacokinetics, and human trials not yet performed. The cost-effectiveness argument (C124-C126) is based on analogy to other pathogens. These are reasonable hypotheses but not yet validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Sequence analysis reveals 76% identity between Ng and E. coli RNR \u03b1 subunits (including conserved H25 and S41 residues), while human RNR \u03b1 shares only 30% identity with Ng and lacks homologous residues at positions 25 and 41.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sequence alignment in Figure 3 clearly shows the conservation patterns. This bioinformatic analysis appropriately supports the mechanistic hypotheses about selectivity and \u03b14\u03b24 formation. The lack of homologous residues in human RNR helps explain the selectivity observed in enzyme assays.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Antibiotic-resistant Ng represents an emerging public health threat, with 78 million infections worldwide (WHO 2012), increasing US rates (5% increase 2017-2018, 583,405 cases in 2018), and current CDC treatment requiring dual therapy with ceftriaxone and azithromycin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims are well-supported by cited public health data from WHO and CDC. They appropriately establish the clinical need and context for the research. The citations are appropriate and the statistics are correctly attributed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C111",
+      "C112"
+    ],
+    "result": "The 4-hydroxy-2-pyridone scaffold with different ring fusion patterns yields compounds with distinct activity profiles: [5,6]-fused PTC-565 is a broad-spectrum topoisomerase inhibitor, while [5,4]-fused PTC-847 and imidazolyl-fused PTC-672 are selective Ng RNR inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structure-activity relationship is clearly demonstrated by comparing PTC-565 (broad spectrum, Table 1) with PTC-847/672 (Ng-selective). The chemical structures in Figure 1 show the structural differences. This SAR is important for understanding the pharmacophore and provides a foundation for medicinal chemistry optimization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Background on RNR biology: RNRs catalyze NDP to dNDP conversion essential for DNA synthesis, exist in multiple classes across organisms, with class Ia RNRs forming \u03b12\u03b22 active complexes and distinct inhibited states (\u03b14\u03b24 in E. coli, \u03b16 in humans) regulated by dATP binding to the N-terminal cone domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established facts about RNR biology, appropriately cited from the literature. The structural information in Figure 2 accurately represents current understanding. This background is essential for interpreting the novel findings but represents prior knowledge rather than new results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C74",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Prior studies establish that: (1) Ng RNR shows dATP inhibition kinetics similar to E. coli RNR with biphasic binding to S-site and A-site; (2) mutations at H23/S39 in E. coli (corresponding to H25/S41 in Ng) disrupt \u03b14\u03b24 formation; (3) clorfarabine metabolites stabilize human RNR \u03b16 state; (4) E. coli RNR is not inhibited by ClFTP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent cited prior work and provide important context for the current findings. The citations are appropriate and the interpretations are accurate. This establishes the precedent for targeting RNR quaternary structure with small molecules.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C122"
+    ],
+    "result": "The authors conclude that PTC-847/672 represent a new class of RNR inhibitors targeting Ng, with selectivity potentially explained by Ng possessing only a single RNR (class Ia) while most other bacteria have multiple RNR classes that may not be targeted by these compounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This synthesis of the findings is well-supported by the experimental data. The hypothesis about selectivity based on single vs. multiple RNRs is reasonable and supported by genomic analysis (Supplementary file 12), though it remains somewhat speculative as the RNRs from other organisms were not directly tested. The identification of RNR as a new therapeutic target for Ng is a major contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C124",
+      "C125"
+    ],
+    "result": "A prior economic analysis of single-pathogen agents for carbapenem-resistant A. baumannii demonstrated cost-effectiveness below traditional benchmarks, providing precedent for the economic viability of pathogen-specific therapeutics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This accurately represents the cited work (Spellberg and Rex, 2013) and provides relevant context for the potential development path. However, this is background information rather than a result of the current study.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,240 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C19",
+      "C20"
+    ],
+    "result": "The study developed a combined juxtacellular recording and optogenetic tagging method for freely moving mice, validated in CA1 by targeting Calb1-positive neurons, enabling efficient targeting of genetically defined cell classes during natural behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C19, and C20 collectively establish the core methodological achievement. The approach successfully combines juxtacellular recording with optogenetics in freely moving mice (C1), was validated in CA1 using Calb1-positive neurons (C2), and enabled efficient targeting of predefined cell classes during natural behavior (C19, C20). The data presented in Figures 1-3 support these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C34",
+      "C36",
+      "C40",
+      "C43",
+      "C44",
+      "C49",
+      "C51"
+    ],
+    "result": "Direct versus indirect light activation can be distinguished by spike latency, with directly activated neurons showing short latencies (<4 ms) and indirectly activated neurons showing significantly longer latencies (7-8 ms), validated by juxtacellular labeling and histology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C34, C36, C40, C43, C44, C49, and C51 provide converging evidence for latency-based discrimination. Direct activation produces mean latencies of 2.1-2.7 ms (C34, C43), while indirect activation via Schaffer collaterals or mossy fibers produces significantly longer latencies of 7.0-8.1 ms (C43, C49, p<0.01). Post hoc histological validation confirms cell identity (C36, C40), establishing ground truth for the classification method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Calb1-negative pyramidal neurons are preferentially recruited into the place cell map with high spatial information content, while Calb1-positive neurons show weak spatial modulation, supporting asymmetric recruitment of CA1 pyramidal cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28 and C63-C69 present the main functional finding with statistical support. Calb1-negative neurons show significantly higher spatial information (1.56\u00b10.79 vs 0.65\u00b10.35 bits/spike, p=0.0003, C66), lower sparsity (0.31\u00b10.17 vs 0.53\u00b10.15, p=0.0003, C67), and greater spatial stability (correlation 0.68\u00b10.31 vs 0.33\u00b10.35, p=0.0019, C68). Sample sizes are adequate (n=26 Calb1-negative, n=12 Calb1-positive, C109) and findings are consistent with prior work (C69).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C93",
+      "C94"
+    ],
+    "result": "Viral expression in Calb1cre mice selectively labels superficial pyramidal neurons with high specificity (95.8% infection efficiency, 0/272 off-target neurons) and characteristic morphology including proximal apical dendrite branching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33, C93-C94 establish the specificity and efficiency of the genetic targeting approach. Quantitative validation shows 95.8% of Calb1-positive neurons express ChR2 (261/272, C94) with no off-target expression in Calb1-negative neurons (0/272, C93). Morphological features (proximal branching, C31-C32) are consistent with known anatomy of superficial CA1 pyramidal neurons, supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C46",
+      "C47",
+      "C48",
+      "C50",
+      "C82"
+    ],
+    "result": "The opto-juxtacellular approach can be combined with presynaptic input manipulations, demonstrated by optogenetic activation of Schaffer collaterals and mossy fibers while recording from postsynaptic CA1 and CA3 neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42, C46-C48, C50, and C82 demonstrate proof-of-principle for combining the method with circuit manipulation. Successful recordings from synaptically activated neurons are shown with appropriate latencies (7.4\u00b10.8 ms for Schaffer collaterals, C42) and characteristic facilitation for mossy fibers (C47-C48). This extends the technical capabilities beyond simple cell identification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Technical parameters for opto-juxtacellular recordings in freely moving mice were optimized, including fiber configuration, light power requirements (0.1-1 mW for direct activation, 1-2.5 mW for synaptic activation), and pulse duration adjustments for awake versus anesthetized states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53, C95-C101 provide detailed technical validation. The reversible fiber fixation strategy enables multiple recordings per animal (C53). Light power requirements are systematically characterized and differ appropriately between direct and synaptic activation (C95-C96). State-dependent differences in light-evoked responses are documented (C97-C99), with pulse duration adjusted accordingly. LED validation provides additional technical robustness (C100-C101).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C61",
+      "C62"
+    ],
+    "result": "Recorded neurons display electrophysiological properties characteristic of CA1 pyramidal cells (low firing rates <10 Hz, complex spike bursting) with no differences in firing rate or burst index between Calb1-positive and Calb1-negative populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56, C61-C62 establish basic electrophysiological characterization. All recorded neurons show pyramidal cell features (firing rate 2.16\u00b12.06 Hz, burst index 0.28\u00b10.18, C54), confirmed histologically (C56). Importantly, Calb1-positive and Calb1-negative neurons show similar firing rates (p=0.86, C61) and burst indices (p=0.97, C62), indicating that spatial modulation differences are not due to basic firing properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Current optogenetic tagging methods have significant limitations including indirect cell-type identification, difficulty distinguishing direct versus indirect activation, spike sorting challenges during photostimulation, lack of ground truth validation, and inability to access structural features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 provide a critical assessment of existing methods, well-supported by citations (Beyeler et al., 2016; Roux et al., 2014; Zutshi et al., 2018; Stark et al., 2012). These limitations establish the rationale for the new method. The assessment is fair and acknowledges that optogenetic tagging is a 'gold-standard approach' (C70) while identifying specific technical challenges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The combined opto-juxtacellular method addresses limitations of conventional approaches by enabling targeted recordings of genetically defined cells, providing ground truth validation through large-amplitude spikes (>1-2 mV), and allowing post hoc morphological and molecular analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76, C79-C81 articulate the advantages of the new method over existing approaches. The method enables targeted recordings (C76), provides direct validation through juxtacellular labeling (C79), offers unequivocal spike identification with large-amplitude signals (C80), and allows access to structural features for cell-type classification (C81). These advantages are demonstrated throughout the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C35",
+      "C37",
+      "C38",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The study recorded and classified 19 neurons in anesthetized mice and 54 neurons in freely moving mice, with systematic classification criteria and validation through histology, opto-tagging, or both methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C37-C38, C57-C60, C104-C110 provide comprehensive documentation of sample sizes and classification procedures. The anesthetized dataset includes 10 Calb1-positive and 7 Calb1-negative neurons (C35-C37, C104). The freely moving dataset includes 54 recordings with 15 Calb1-positive and 39 Calb1-negative neurons (C57, C59, C106-C108). Inclusion criteria for spatial analysis are clearly defined (C109) and robustness checks confirm findings (C110).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "The opto-juxtacellular method is laborious and low-throughput compared to extracellular recordings, but could complement current approaches by providing training data for classifiers to assign cell identity to blind extracellular units.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 provide an honest assessment of the method's limitations and potential applications. The acknowledgment that the method is not high-throughput (C85) is appropriate given the technical demands. The suggestion that limited datasets could still provide value for building classifiers (C86) is reasonable and supported by citations to similar approaches (GoodSmith et al., 2017; Tang et al., 2014b).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The study validates and extends previous observations on deep-superficial CA1 gradients by mapping functional differences onto identified neuronal elements through combined recording, opto-tagging, and labeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 contextualize the findings within existing literature. The CA1 sublayer organization is well-established (C87-C88, multiple citations), but previous work relied mainly on anatomical assignment of recording locations (C89). The current study extends this by directly identifying cell types (C90), providing stronger evidence for functional differences between sublayers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C83",
+      "C84",
+      "C92"
+    ],
+    "result": "The method could facilitate future studies of sparse neuronal populations (GABAergic interneurons), synaptic input mapping onto identified cell types, and single-cell plasticity mechanisms during natural behaviors, with weaker spatial tuning of Calb1-positive neurons potentially explained by lateral entorhinal cortex inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C78, C83-C84, C92 are speculative about future applications and mechanistic explanations. While the suggestions are reasonable and supported by relevant citations, they represent potential rather than demonstrated capabilities. The mechanistic explanation for Calb1-positive neuron properties (C92) is plausible but not directly tested. These are appropriate forward-looking statements but lack empirical support in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "The classification criterion for direct light activation was defined as mean spike latency <4 ms, with ChR2-expressing neurons reliably entrained up to 40 Hz stimulation frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 define key methodological criteria. The 4 ms latency threshold (C102) is validated by the clear separation between direct (2.7\u00b10.3 ms) and indirect (7.0\u00b11.8 ms) activation shown in C43. The 40 Hz entrainment capability (C103) is demonstrated in figures and represents a reasonable frequency range for optogenetic stimulation.",
+    "result_type": "MINOR"
+  }
+]

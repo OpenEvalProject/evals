@@ -1,0 +1,2144 @@
+{
+  "submission": {
+    "id": "3874db7f-88ba-4dc5-909d-1e5107f23083",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T02:35:22.241588Z",
+    "updated_at": "2025-12-03T02:35:22.241588Z"
+  },
+  "content": [
+    {
+      "id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "submission_id": "3874db7f-88ba-4dc5-909d-1e5107f23083",
+      "content_type": "manuscript",
+      "content_text": "# A nuclease- and bisulfite-based strategy captures strand-specific R-loops genome-wide\n\n## Authors\n\n- Phillip Wulfridge<sup>1</sup> ([ORCID: 0000-0002-7195-6814](https://orcid.org/0000-0002-7195-6814))\n- Kavitha Sarma<sup>1</sup> ([ORCID: 0000-0002-3045-210X](https://orcid.org/0000-0002-3045-210X)) \u2020\n\n### Affiliations\n\n1. Gene Expression and Regulation program, The Wistar Institute Philadelphia United States\n2. Epigenetics Institute, University of Pennsylvania Philadelphia United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nR-loops are three-stranded nucleic acid structures with essential roles in many nuclear processes. However, their unchecked accumulation is associated with genome instability and is observed in neurodevelopmental diseases and cancers. Genome-wide profiling of R-loops in normal and diseased cells can help identify locations of pathogenic R-loops and advance efforts to attenuate them. We present an antibody-independent R-loop detection strategy, BisMapR, that combines nuclease-based R-loop isolation with non-denaturing bisulfite chemistry to produce genome-wide profiles that retain strand information. BisMapR achieves greater resolution and is faster than existing strand-specific R-loop profiling strategies. In mouse embryonic stem cells, we apply BisMapR to find that gene promoters form R-loops in both directions and uncover a subset of active enhancers that, despite being bidirectionally transcribed, form R-loops exclusively on one strand. BisMapR reveals a previously unnoticed feature of active enhancers and provides a tool to systematically examine their mechanisms in gene expression.\n\n## Introduction\n\nR-loops are three-stranded nucleic acid structures that frequently occur during transcription when newly transcribed RNA base pairs with the DNA template strand, forming a DNA:RNA hybrid (Thomas et al., 1976). The non-template strand is then extruded as single-stranded DNA (ssDNA). R-loops play important roles in many nuclear processes including recombination, transcription termination, and DNA repair (Ch\u00e9din, 2016; Niehrs and Luke, 2020). R-loop formation in mitosis ensures faithful chromosome segregation (Kabeche et al., 2018). While R-loops at some genomic sites clearly have beneficial roles, their aberrant accumulation at others is associated with genomic instability and disease (Crossley et al., 2019; Garc\u00eda-Muse and Aguilera, 2019; Perego et al., 2019; Richard and Manley, 2017). The evident role of R-loops in both cellular function and disease makes it critical that reliable methods exist for profiling their formation across the genome. These would allow for detection of changes in R-loop levels between conditions and for the characterization of features associated with their formation that could prove critical toward understanding of disease and development of potential therapies.\n\nCurrent methods to detect R-loops genome-wide rely on the S9.6 antibody (Dumelie and Jaffrey, 2017; Ginno et al., 2012; Nadel et al., 2015; Wahba et al., 2016) or a catalytically inactive RNase H, both of which recognize DNA:RNA hybrids (Chen et al., 2017; Ginno et al., 2012; Yan et al., 2019). DNA\u2013RNA immunoprecipitation-sequencing (DRIP-seq) is the most frequently used S9.6-based approach for R-loop detection genome-wide (Ginno et al., 2012). In DRIP, genomic DNA is sheared by enzymatic digestion or sonication and regions that contain R-loops are immunoprecipitated using S9.6 antibody. S9.6-based approaches require high-input material, have low signal-to-noise ratio, and with the exception of BisDRIP-seq (Dumelie and Jaffrey, 2017), have limited resolution. The low signal-to-noise ratio in S9.6 genome-wide experiments may be attributed to the antibody specificity issues that are well documented (Hartono et al., 2018; Vanoosthuyse, 2018). RNase H methods that include DNA:RNA in vitro enrichment (DRIVE) (Ginno et al., 2012), R-loop chromatin immunoprecipitation (R-ChIP) (Chen et al., 2017), and MapR (Yan et al., 2019) use the evolutionary specificity of the Escherichia\u00a0coli RNase H enzyme that recognizes DNA:RNA hybrids to detect R-loops. While similar to DRIP in the initial steps of sample processing, the in vitro enrichment of R-loops in DRIVE using recombinant catalytically inactive RNase H is inefficient. DRIPc (Sanz and Ch\u00e9din, 2019; Sanz et al., 2016) and R-ChIP are both strand-specific techniques with some limitations. DRIPc requires much larger input amounts compared to DRIP and has lower resolution. R-ChIP, a chromatin immunoprecipitation-based strategy, requires the generation of a stable cell line that expresses a catalytic mutant RNase H1 (Chen et al., 2019; Chen et al., 2017; Sanz and Ch\u00e9din, 2019; Sanz et al., 2016) and, while sensitive, may not be amenable for use in all cell types. Therefore, the development of a high-resolution strand-specific R-loop detection strategy that is efficient, sensitive, and amenable to use in all cell types will help in the precise identification of specific regions of the genome that show R-loop anomalies in various diseases.\n\nWe recently described MapR (Yan and Sarma, 2020; Yan et al., 2019), a fast and sensitive R-loop detection strategy founded on the principles of CUT and RUN (Skene et al., 2018; Skene and Henikoff, 2017) and the specificity of RNase H for the recognition of DNA:RNA hybrids. In MapR, a catalytically inactive RNase H targets micrococcal nuclease to R-loops to cleave and release them for high-throughput sequencing. Because MapR is not enrichment-based, unlike DRIP, DRIVE, and R-ChIP, it has high signal-to-noise ratios resulting in enhanced sensitivity (Yan et al., 2019). We sought to build on the significant advantages of MapR with respect to specificity, sensitivity, and ease of use and transform it into a strand-specific R-loop profiling strategy. Here, we present BisMapR, a high-resolution, genome-wide methodology that maps strand-specific R-loops.\n\n## Results\n\n### BisMapR identifies strand-specific R-loops\n\nStrand specificity is a key feature of bona fide R-loops. In MapR, cleaved R-loops diffuse out of the nucleus along with mRNAs and other RNAs that are not part of an R-loop. Thus, specific identification of the RNA strand of R-loops as a means of conferring strandedness is challenging with MapR. Instead, we have devised a method to distinguish the template and non-template DNA components of R-loops released by MapR. We leveraged the chemical property of sodium bisulfite to deaminate cytosines (C) to uracils (U) on exposed, single-stranded DNA (ssDNA) only, while double-stranded nucleic acids are protected from conversion (Gough et al., 1986). In BisMapR, R-loops released by MapR are treated with sodium bisulfite under non-denaturing conditions (Figure 1). This results in the C-to-U conversion of the ssDNA strand of R-loops. Meanwhile, the DNA within the DNA:RNA hybrid is left intact. Next, a second-strand synthesis step replaces the RNA molecule of the DNA:RNA hybrid with a dUTP-containing DNA strand. Adaptors are then ligated to resultant dsDNA. Treatment with uracil DNA glycosylase (UDG) cleaves all dUTP-containing molecules, and the unaltered DNA strand is directionally tagged, PCR amplified, and sequenced. The first-mate reads of the resulting paired-end sequencing data (or all reads for single-end runs) correspond to the DNA:RNA hybrid containing strand and are separated into forward- and reverse-strand tracks.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/65146/elife-65146-fig1-v1.jpg)\n\n**Figure 1.:** Schematic of the BisMapR protocol. R-loops are released from cells using MapR and subjected to non-denaturing bisulfite conversion. Bisulfite-converted products are directly processed for second-strand synthesis in the presence of RNase H and dUTP. Adaptors are ligated to resultant dsDNA. Treatment with uracil DNA glycosylase (UDG) degrades all uracil-containing DNA molecules. Remaining DNA is tagged with paired-end barcoded index primers, amplified, sequenced, and strand-specifically aligned. Created with BioRender.com.\n\nWe compared BisMapR and MapR techniques in mouse embryonic stem cells (mESCs). We distinguished genes as active and inactive based on RNA-seq data. MapR in mESCs specifically identifies R-loops since RNase H catalytic mutant fused to micrococcal nuclease (RH\u0394-MNase) shows high signal at transcription start sites (TSS)\u00a0of active genes that are known to form R-loops compared to an MNase-only background control (Figure 2\u2014figure supplement 1A,B). MapR signal is also clearly enriched at active genes but not at inactive genes (Figure 2\u2014figure supplement 1C). Next, we compared BisMapR to MapR in mESCs to determine whether\u00a0both techniques showed signal enrichment at similar regions within genes. When examining reads from both strands, which we term \u2018composite\u2019 signal, BisMapR and MapR produce signal enrichment predominantly around the TSS of actively transcribed genes (Figure 2A). At the global level also, both datasets showed strong positive correlation for signal enrichment across TSS (Figure 2\u2014figure supplement 1D). When reads are separated by originating strand, MapR \u2018strand-specific\u2019 maps are near-identical to their composite (Figure 2A), as expected of a non-strand-specific protocol. In contrast, BisMapR reads after strand-specific alignment clearly segregate to either the forward or reverse strands (Figure 2A). Vamp1, a gene that is transcribed in the sense (plus) direction and expected to produce DNA:RNA hybrids on the reverse (template) strand, shows reverse strand-specific BisMapR signal. Similarly, Atg10, an antisense (minus) gene, shows BisMapR signal on the forward strand. Global analysis of strand-specific BisMapR signal across all TSS also showed decreased correlation with composite BisMapR as well as with strand-specific and composite MapR (Figure 2\u2014figure supplement 1E).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/65146/elife-65146-fig2-v1.jpg)\n\n**Figure 2.:** (A) Genome browser views of the Vamp1 and Atg10 genes showing composite (dark gray) BisMapR and MapR signals (reads per million, RPM) (left) and the same signal when separated into forward (teal) and reverse (orange) strands (right). (B) Correlation plots of normalized read densities between forward and reverse strands in BisMapR, MapR, BisMapR samples treated with RNase A, and MapR samples without bisulfite treatment and with second-strand synthesis (NBSS). TSS regions of 19,655 genes with high specificity toward forward (teal, 9788 genes) or reverse (orange, 9867 genes) strand signals in BisMapR, defined as log2 ratio of at least 1.5 in either direction between forward or reverse read densities, are shown. r, Pearson correlation coefficients between forward and reverse read densities for all 19,655 genes. (C) Top, genome browser view of the Zmym6 gene showing forward (teal) and reverse (orange) strand R-loop signal (reads per million, RPM) for MapR, BisMapR, and MapR NBSS. Bottom, bar chart of total forward and reverse strand read densities across the region. (D) Strandedness plots of BisMapR, MapR, and MapR NBSS strand-specific signals around the transcription start sites (TSS) of 13,380 active genes in mESCs. Strandedness was calculated as the difference between template (T) and non-template (NT) signal (reads per million, RPM). (E) Signal plot of composite BisMapR signal (reads per million, RPM) centered around 40,900 KAS-seq peaks. (F) Signal plot of KAS-seq signal centered around 168,774 composite BisMapR peaks. (G) Genome browser view of the Lpcat3 gene showing KAS-seq (red) and composite BisMapR (green) signal (reads per million, RPM).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65146/elife-65146-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Genome browser view of the Oxr1 gene showing GST-MNase (control) and GST-RH\u0394-MNase (MapR) composite signals and BisMapR strand-specific signals. Forward, teal. Reverse, orange. (B) Metagene plot of MNase control and MapR signals at 13,380 active TSS in mESCs. Read density, reads per million (RPM). (C) Metagene plot of MapR signal at 13,380 active TSS and 42,003 inactive TSS in mESCs. Read density, reads per million (RPM). (D) Correlation plot showing normalized read density between MapR composite and BisMapR composite samples. Pearson correlation, 0.73. For all correlation analysis plots, read density was calculated for 1 kb flanking regions across all mouse TSS (55,364 genes). (E) Heatmap showing pairwise Pearson correlation scores of composite, forward-strand, and reverse-strand BisMapR and MapR read alignments. (F) Left, genome browser view of the Rab3b gene showing forward (teal) and reverse (orange) strand R-loop signal (reads per million, RPM) for MapR, BisMapR, and MapR NBSS. Right, bar chart of total forward- and reverse-strand read densities across the region. (G) Correlation plot showing normalized read density between KAS-seq and BisMapR composite samples. Pearson correlation, 0.99.\n\nIn MapR, released R-loops are treated with RNase A and the resultant dsDNA that forms as a consequence of degradation of the RNA within the DNA:RNA hybrid is processed for library preparation and sequencing using standard dsDNA library preparation protocols (Yan and Sarma, 2020). However, non-denaturing bisulfite conversion relies on the presence of ssDNA. To assess whether BisMapR requires intact R-loops to efficiently sort signals by strand of origin, we performed bisulfite conversion reactions after treating MapR samples with RNase A and analyzed forward- or reverse-strand signals across all TSS. BisMapR samples show a clear separation of forward and reverse strands at a large number of TSS in mESCs (Figure 2B). We observe that MapR, as a non-strand-specific technique, shows little strand separation (Figure 2B) as seen by the almost complete overlap between forward and reverse strand signals. Treatment of R-loops with RNase A prior to bisulfite processing for BisMapR results in a loss of strand specificity that resembles MapR data, with the forward- and reverse-strand signals showing a significant overlap (Figure 2B). The residual strand separation in RNase A-treated BisMapR samples is likely due to incomplete RNase A digestion.\n\nNext, we assessed the contribution of the bisulfite conversion step in BisMapR toward achieving strand specificity. For this, we isolated R-loops by MapR, omitted the RNase A digestion step and bisulfite conversion and proceeded to second-strand synthesis directly. R-loop signal from no-bisulfite second-strand (NBSS) samples did not separate well by strand at the vast majority of regions (Figure 2B, Figure 2\u2014figure supplement 1F), indicating NBSS is not sufficient for strand specificity. The absence of strand specificity in MapR NBSS can occur if R-loop structures released by MapR have intact dsDNA on both ends, which would allow both strands to ligate to adaptors and result in the extruded ssDNA to be incorporated into the sequencing library. However, the MNase digestion step in MapR can also result in the release of DNA:RNA hybrids of the R-loop that are not connected to the ssDNA strand. These DNA:RNA hybrids could contribute to strand-specific signal after second-strand synthesis. The release of ssDNA-free DNA:RNA hybrids is supported by the slightly larger scatter area of data points in MapR NBSS (Figure 2B), and by the observation of a small number of regions where NBSS produces strand-specific signal (Figure 2C). For example, at the Zmym6 gene MapR shows near equal R-loop signal from the forward and reverse strands, while BisMapR and MapR NBSS show skewed read distribution with higher signal arising from the reverse (template) strand (Figure 2C). Overall, our data show the bisulfite conversion step is critical to ensure removal of the ssDNA component during library preparation and achieve strand specificity.\n\nDivergent transcription is a common feature of active promoters in mammals, with over 75% of active genes producing short antisense RNA transcripts and showing paused RNA polymerase II in the antisense direction (Core et al., 2008; Seila et al., 2008). This bidirectional transcription implies that in addition to R-loop formation on the template strand associated with transcription of the gene, R-loops would also form on the opposite strand at these divergent promoters. We used BisMapR to examine R-loops at promoters of 12,885 active genes in mESCs. As a measure of strand separation in BisMapR, we calculated the \u2018strandedness\u2019 of R-loop signal across active TSS, defined as the difference between template (T) and non-template (NT) signals (Figure 2D, left). Upstream of the TSS, strandedness is negative, indicating R-loop signal forms predominantly on the non-template strand consistent with R-loop function in antisense transcription (Tan-Wong et al., 2019). Strandedness becomes positive starting around the TSS and continuing into the gene body, as expected from co-transcriptional R-loop formation on the template strand. The clear distinction between template and non-template strand-originating R-loops cannot be made in MapR, where strandedness is entirely absent at any point around TSS (Figure 2D, center). Strandedness is only slightly observable in MapR NBSS (Figure 2D, right), consistent with only a small subset of reads contributing to strand specificity in NBSS. Thus, our data demonstrate that BisMapR produces strand-specific R-loop profiles genome-wide. We conclude that BisMapR confers strand specificity on intact R-loops that are released by MapR with minor technical modifications and with a minimal burden on time.\n\nR-loops contain DNA:RNA hybrid strand and a single-strand DNA. Thus regions detected by BisMapR should also show ssDNA signal. A recently developed technique, kethoxal-assisted single-stranded DNA sequencing (KAS-seq), identifies single-stranded regions of the genome with high G content (Wu et al., 2020). In KAS-seq, an azide-tagged kethoxal (Weng et al., 2020) that reacts with unpaired guanine residues and that can be modified with a biotin is used to mark and enrich for G-rich regions of the genome that are single stranded. We measured BisMapR composite signal at KAS-seq peaks and found that it is centralized over these regions (Figure 2E). KAS-seq signal was also centrally enriched over BisMapR peaks (Figure 2F). Consistent with this, KAS-seq and BisMapR signals show high positive correlation (Figure 2\u2014figure supplement 1G) and overlap at many active genes (Figure 2G). We conclude that BisMapR accurately captures signal at regions of R-loop formation.\n\n### BisMapR can distinguish individual transcriptional units with high resolution\n\nThe incorporation of bisulfite treatment that can theoretically react with all single-stranded cytosine residues in the R-loop to mark them for degradation suggests that BisMapR can produce higher resolution R-loop maps compared to MapR. To test this, we analyzed R-loop profiles at active, non-overlapping head-to-head transcriptional units that are separated by less than a kilobase (Figure 3\u2014figure supplement 1A). MapR profiles at the 5\u2032 end of Fbxo18 and Ankrd16 genes whose TSS are separated by 294 bases show a broad non-strand-specific R-loop enrichment across both TSS (Figure 3A). In comparison, BisMapR signal is enriched on the forward strand of Fbxo18 that is transcribed in the antisense direction and on the reverse strand of Ankrd16 that is transcribed in the sense direction. A similar profile is observed at the Zfp146 and Gm5113 genes whose TSS are separated by 125 bases (Figure 3\u2014figure supplement 1B). Global analysis on all bidirectional transcription units demonstrates that BisMapR captures distinct R-loop signals on opposite template strands that are congruent with the direction of transcription (Figure 3B). In contrast, MapR signals do not clearly distinguish between pairs of genes (Figure 3B). Our data suggests that in addition to providing strand-specific information, BisMapR improves on the already high resolution of MapR in profiling R-loops genome-wide.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/65146/elife-65146-fig3-v1.jpg)\n\n**Figure 3.:** (A) Genome browser view of the bidirectional promoter for Fbxo18 and Ankrd16 showing MapR and BisMapR signals (RPM) separated by forward (teal) and reverse (orange) strands. (B) Metagene plots of strand-specific BisMapR (forward strand [teal] and reverse strand [orange]) and MapR (forward strand [dark blue] and reverse strand [light blue]) signals at 1001 bidirectional promoters. TSS Midpoint, the midpoint between the transcription start sites of plus-strand and minus-strand genes. (C) Genome browser view of the Abhd10 gene showing BisMapR signal (reads per million, RPM) separated into forward (teal) and reverse (orange) strands. Mouse ESC RNA-seq signal is shown in blue. (D) Metagene plots of template strand BisMapR signal of 6746 plus-strand genes (top) and 6634 minus-strand genes (bottom) expressed in mESCs. (E) Genome browser view of the Zfp462 gene showing DRIPc signals separated into forward (teal) and reverse (orange) strands. 3T3 RNA-seq signal is shown in blue. (F) Metagene plots of template strand DRIPc signal of 6223 plus-strand genes (top) and 6164 minus-strand genes (bottom) expressed in 3T3. (G) Genome browser view of the bidirectional promoter for Fbxo18 and Ankrd16 showing BisMapR and DRIPc signals (RPM) separated by forward (teal) and reverse (orange) strands.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65146/elife-65146-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Heatmap of RNA-Seq strand-specific reads at 1001 bidirectional promoters. All rows are oriented in the plus-strand direction. Midpoint between the transcription start sites of plus-strand and minus-strand genes is shown. Signal, reads per million (RPM). (B) Genome browser view of the bidirectional promoter for Zfp146 and Gm5113 showing strand-specific MapR and BisMapR signal (RPM). (C) Metagene plots of strand-specific DRIPc-seq (forward strand [teal] and reverse strand [orange]) signal at 998 3T3 bidirectional promoters. TSS midpoint, the midpoint between the transcription start sites of plus- and minus-strand genes.\n\nNext, we compared the resolution of BisMapR to DRIPc-seq (Sanz and Ch\u00e9din, 2019; Sanz et al., 2016), an S9.6 antibody-based R-loop enrichment method that is most frequently used to identify strand-specific R-loops. In mESCs, we observe that BisMapR signal is highest at the 5\u2019 end of genes and is reduced across the gene body as is seen in the case of Abhd10 (Figure 3C). Metagene analysis across all active genes shows that both plus- and minus-strand genes show 5\u2032 R-loop enrichment (Figure 3D). This is consistent with several previous reports that observe R-loop enrichment in proximity to the TSS (Chen et al., 2017; Dumelie and Jaffrey, 2017; Ginno et al., 2012; Yan et al., 2019). We used previously published and validated DRIPc data from NIH 3T3 to examine R-loop profiles using this method (Sanz et al., 2016). At Zfp462, an expressed gene in NIH 3T3 cells, DRIPc signal is broadly present across the entire gene and does not show a clear enrichment at TSS. Surprisingly, analysis of DRIPc signal profiles across all expressed genes on the plus and minus strands shows that DRIPc-seq shows a general enrichment across transcriptional units on the plus and minus strands starting at the TSS and increasing steadily across the gene body (Figure 3E).\n\nOur data shows that BisMapR is able to distinguish strand-specific R-loops that form at bidirectional transcription units that are separated by a few hundred bases. To compare the resolution between DRIPc and BisMapR, we visualized R-loops at genes that show head-to-head transcription in both mESC and NIH3T3 cells. At Fbxo18 and Ankrd16, strand-specific BisMapR signal is clearly limited to the TSS of both genes (Figure 3A and G). In contrast, DRIPc signal does not show enrichment at TSS and is instead present across the gene body of both genes (Figure 3G). Metagene analysis of all active bidirectional transcription units in NIH3T3 shows that DRIPc, while stranded as evidenced by a skew in the forward- and reverse-strand signals in the appropriate direction, does not delineate two distinct transcriptional units (Figure 3\u2014figure supplement 1C). Our results indicate that the high resolution of BisMapR, on the order of hundreds of bases, makes it particularly suitable for studying R-loop formation across small-scale features within and between transcriptional units.\n\n### BisMapR reveals unidirectional R-loop formation from KLF7 motifs at a subset of enhancers\n\nAny genomic element with the potential to be transcribed can form R-loops. In addition to genes, enhancers that are transcribed at lower levels and that form short-lived transcripts also form R-loops (Rabani et al., 2014; Schwalb et al., 2016; Yan et al., 2019). To determine differential R-loop formation across enhancers, we examined R-loop signal across active, poised, and primed enhancers in mESCs (Cruz-Molina et al., 2017). Active enhancers are bidirectionally transcribed (Kim et al., 2010; Lai et al., 2015) and show higher global run-on sequencing (GRO-Seq) signals on both the forward and reverse strands as compared to poised and primed enhancers (Figure 4\u2014figure supplement 1A). Active, poised, and primed enhancers also contain specific chromatin signatures including histone H3 lysine four monomethylation (H3K4me1) and histone H3 lysine 27 acetylation (H3K27Ac) at active enhancers, H3K4me1 and H3K27 trimethylation (H3K27me3) at poised enhancers, and H3K4me1 at primed enhancers (Creyghton et al., 2010; Rada-Iglesias et al., 2011; Zentner et al., 2011). We found that active enhancers also exhibit higher MapR and BisMapR signals compared to poised and primed enhancers (Figure 4\u2014figure supplement 1A,B). Interestingly, clustering of all enhancers based on BisMapR forward- and reverse-strand signals reveals four distinct enhancer clusters: two groups with high R-loops that form on either the reverse (group 1) or forward (group 2) strands, and two groups with medium or low R-loops (groups 3 and 4) (Figure 4A,\u00a0Figure 4\u2014figure supplement 1C). Both groups of high R-loop enhancers display R-loops on only one strand. GRO-seq also indicates that group 1 and group 2\u00a0enhancers are expressed at higher levels than group 4\u00a0enhancers (Figure 4B). Group 3 enhancers also had high GRO-Seq levels and may represent enhancers that are expressed without high R-loop formation (Figure 4B). Next, we examined the distribution of active, poised, and primed enhancers across these four groups that we defined based on BisMapR profiles. Group 1 is strongly enriched for active enhancers (71%; p=2.49e-167, hypergeometric test for all enrichment p-values) and slightly enriched for poised enhancers (0.05%; p=2.95e-5) (Figure 4C). Similarly, group 2 is also enriched for active (72%; p=8.03e-164) and poised enhancers (0.04%; p=0.039). In contrast, the low R-loop (Figure 4A) and low transcribed (Figure 4B) group 4 is enriched for primed enhancers (74%; p=3.95e-1160) (Figure 4C). As expected, genes proximal to group 1 and 2 enhancers, which are enriched for active enhancers, show higher expression levels compared to group 3 and 4 enhancer-related genes (Figure 4\u2014figure supplement 1D). To determine whether\u00a0unidirectional R-loops are observed by other strand-specific R-loop detection strategies, we analyzed DRIPc data from 3T3 cells. Unsupervised clustering of 3T3 enhancers based on DRIPc forward and reverse signals also showed separation into four groups \u2013 two high R-loop enhancer groups with DRIPc either on the forward or reverse strands and two low R-loop enhancer clusters (Figure 4\u2014figure supplement 1E). Thus, BisMapR uncovers a subset of enhancers that are transcribed in both directions but exhibit unidirectional strand-specific R-loops.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/65146/elife-65146-fig4-v1.jpg)\n\n**Figure 4.:** (A) Heatmap of strand-specific BisMapR signal across mESC enhancers. Enhancers were divided into four groups by unsupervised k-means clustering (k\u00a0=\u00a04). Enhancer numbers in each group are indicated in parentheses. Signal, reads per million (RPM). (B) Strand-specific GRO-Seq read densities at group 1 (dark blue), group 2 (light blue), group 3 (green), and group 4 (orange) enhancers. (C) Barplot showing the proportion of active (blue), poised (pink), or primed (gray) enhancers in each group. Enhancer numbers in each group are indicated in parentheses. Distribution of all enhancer types is shown for comparison. (D) Sequence motifs of KLF7, KLF1, and SP1 transcription factors that are centrally enriched across group 1 and 2\u00a0enhancers compared to group 3 enhancers. E-values for each sequence are shown. (E) GC skew of non-template strand across group 1 (dark blue), group 2 (light blue), group 3 (green), and group 4 (orange) enhancers. GC skew was calculated as (G\u2013C)/(G+C) in 100 bp sliding windows with 10 bp step size. (F) KAS-Seq read density across group 1 (dark blue), group 2 (light blue), group 3 (green), and group 4 (orange) enhancers. (G) Strand-specific BisMapR signal (RPM) profiles centered around Klf7 motifs identified in group 1 (2094 motifs) and group 2 (1972 motifs) enhancers. (H) Strand-specific GRO-seq signal profiles centered around Klf7 motifs identified in group 1 (2094 motifs) and group 2 (1972 motifs) enhancers. (I, J) Genome browser view of high-R-loop enhancers showing strand-specific BisMapR (F, teal; R, orange) and GRO-seq (F, red; R, blue) signals and H3K27Ac ChIP-seq (black). Enhancer region (gray bar) with location of KLF7 motif (pink) is shown.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65146/elife-65146-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Heatmap of strand-specific GRO-Seq read density, MapR, H3K27me3, H3K27Ac, and H3K4me1 at active, poised, and primed mESC enhancers. Enhancers were divided into active, poised, and primed. Enhancer numbers in each group are indicated in parentheses. (B) BisMapR composite signal profiles at active (blue), poised (red), and primed (black) enhancers. (C) Scatter plots of normalized BisMapR read densities in forward and reverse strands at group 1 (dark blue), group 2 (light blue), group 3 (green), and group 4 (orange) enhancers (top), or at group 1 and group 2 enhancers alone (bottom). Read density was calculated across 500 bp flanking regions around the center of each enhancer.\u00a0(D)\u00a0Boxplot showing mESC expression levels of genes associated with enhancers in Groups 1, 2, 3, or 4. Welch\u2019s t-test p-values are shown. (E) Heatmap of strand-specific DRIPc signal across 3T3 enhancers. Enhancers were divided into four groups by unsupervised k-means clustering (k\u00a0=\u00a04). Enhancer numbers in each group are indicated in parentheses. Signal, reads per million (RPM). (F) Heatmap of strand-specific BisMapR signal centered at KLF7 binding motifs in group 1\u00a0and 2\u00a0enhancers. Motif numbers in each group are indicated in parentheses. Signal, reads per million (RPM).\n\nNext, we sought to identify distinguishing features between high and low R-loop enhancers. We used CentriMo to identify sequences that are centrally enriched in the two high R-loop enhancer groups (groups 1 and 2) compared to the low R-loop groups (groups 3 and 4). Our analysis uncovered a significant enrichment for KLF7, KLF1, and SP1 transcription factor motifs in the high R-loop enhancer groups (Figure 4D). Since all three motifs appear to have a high GC content, we performed a GC skew analysis to determine whether\u00a0the non-template strand that forms the ssDNA component of R-loops is enriched for guanines (G). We found that the non-template strands in groups 1 and 2 have high G content, while groups 3 and 4 show no skew (Figure 4E). It is possible that the abundance of guanines on the ssDNA can promote the formation of G-quadruplex (GQ) structures that may aid in stabilization of these enhancer R-loops. We compared BisMapR signal at enhancers to KAS-seq signal, which detects ssDNA, and found that high R-loop enhancers as determined by our analysis (groups 1 and 2) exhibit high KAS-seq signal, consistent with our observation of GC skew and the likelihood of containing ssDNA, a component of R-loops (Figure 4F). To further determine the degree of concordance between KAS-Seq and BisMapR, we performed clustering of all enhancers based on KAS-seq signal, identifying 5069 enhancers with high KAS-seq signal and 27,811 enhancers\u00a0with low KAS-seq signal. Seven hundred and four enhancers had both high KAS-seq and high R-loop signals, representing a 1.53-fold enrichment (p=1.96e-35, hypergeometric test). In contrast, enhancers with high R-loops were under-enriched (1.14-fold, p=4.21e-63) in the enhancer population with low KAS-seq signals. Therefore, BisMapR and KAS-seq present two complementary methods to identify enhancers that contain ssDNA components.\n\nMotif analysis at high R-loop enhancers identified an enrichment for KLF7, KLF1, and SP1 binding sites (Figure 4D). KLF7, KLF1, and SP1 are pioneer transcription factors that have the ability to bind DNA and open condensed chromatin. Interestingly, analysis of transcription factor binding across DNase I hypersensitive sites showed that KLF7 motif is associated with asymmetrically open chromatin, suggesting a directional pioneer factor activity (Sherwood et al., 2014). To examine whether R-loops are skewed at enhancers that contain KLF7 binding sites, we re-centered enhancer regions in groups 1 and 2 around their KLF7 motifs and examined BisMapR signal (Figure 4G). Interestingly, in both these groups strand-specific R-loops form unidirectionally from KLF motifs (Figure 4G, I and J, Figure 4\u2014figure supplement 1F). The presence of H3K27 acetylation (Figure 4I and J) and GRO-seq signals (Figure 4H, I and J) around the KLF7-centered enhancers show clear bidirectional transcription. Our data suggests that KLF7 binding may contribute to the unidirectional formation or stabilization of R-loops at some active enhancers that show high levels of transcription.\n\n## Discussion\n\nGenome-wide R-loop mapping relies on two distinct approaches, the S9.6 antibody and a catalytically inactive RNase H, that both recognize DNA:RNA hybrids. These two approaches recognize some common R-loops, as well as other unique subsets that likely appear as a consequence of the distinct sequence preferences of S9.6 and RNase H (K\u00f6nig et al., 2017). Therefore, orthogonal approaches that are sensitive, that are\u00a0efficient, and that retain strand specificity will allow for comprehensive interrogation of R-loop dynamics in various cellular processes and their dysfunction in disease. Here, we have described BisMapR, a fast RNase H-based method that efficiently captures strand-specific R-loops at high-resolution genome-wide.\n\nExisting strand-specific R-loop mapping strategies have a few drawbacks that include low-resolution and high-input material (Sanz and Ch\u00e9din, 2019; Sanz et al., 2016), involved sample processing (Dumelie and Jaffrey, 2017), and lengthy experiment times (Chen et al., 2019; Chen et al., 2017). Our comparison of BisMapR with DRIPc, an S9.6-based approach, shows that BisMapR produces sharper regions of enrichment suggesting higher resolution (Figure 3). The high resolution of BisMapR is especially evident at head-to-head transcribed genes TSS that are only a few hundred bases apart and that show R-loop formation on opposite strands. As noted before (Sanz and Ch\u00e9din, 2019), a reason for the broader signal seen in DRIPc can be because of immunoprecipitation of the regions of the RNA that are not part of the R-loop. While non-denaturing bisulfite treatment can potentially correct this drawback, DRIPc still requires a significantly higher amount of starting material compared to DRIP and MapR. Bisulfite conversion of DRIP samples after immunoprecipitation may help reduce input requirement and achieve higher resolution and provide an S9.6-based approach that is on par with the resolution and sensitivity of BisMapR.\n\nDespite differences in R-loop identification between BisMapR and DRIPc, we have previously noted that S9.6- and RNase H-based techniques identify many common R-loops in addition to some that are distinct to each method (Yan et al., 2019). For example, while DRIPc does not cleanly separate signal at bidirectional promoters, it still shows skew in the appropriate direction at these regions (Figure 3\u2014figure supplement 1C). DRIPc also identifies enhancers with broadly increased R-loop signal on one strand only (Figure 4\u2014figure supplement 1D). The differences between S9.6- and RNase H-based methods could arise from the molecular preferences of S9.6 antibody and RNase H. In vitro studies show that S9.6 prefers binding R-loops with lower GC content (K\u00f6nig et al., 2017). Whether RNase H preferences to a specific R-loop structure is not yet known.\n\nAt active gene promoters, BisMapR identifies both non-template signal upstream of the TSS that is consistent with antisense divergent transcription, and template signal centered around the TSS and continuing downstream into the gene body. Interestingly, template signal is not confined strictly downstream of the TSS, but instead is enriched slightly upstream and predominantly downstream of the TSS with a slight dip in signal over the TSS itself. This is a pattern also observed in MapR (Figure 2\u2014figure supplement 1B). MapR relies on the docking of the GST-tagged catalytically inactive RNaseH (RH\u0394) on R-loops and the subsequent cleavage around the interaction site by the MNase moiety. We predict that the reason we see a broad signal that extends upstream of TSS is because of where R-loops start, the binding of GST-RH\u0394-MNase protein at these sites and the ability of MNase moiety to access the upstream region when bound. These together would result in the appearance of signal slightly upstream and downstream of the TSS. Another possibility is that BisMapR can detect R-loops forming from alternative TSS usage, or extra-coding RNAs (ecRNAs) that precede TSS, both of which would result in signal upstream of annotated start sites.\n\nUsing BisMapR, we uncovered a subset of enhancers with high R-loops and that have a high GC skew. R-loop formation is associated with the potential to form G quadruplexes on the non-template strand. Two recent studies using single-molecule approaches have provided insight into how G quadruplexes and R-loop formation regulate gene expression. While R-loop formation precedes GQ formation, stable GQs in the non-template strand provide a positive feedback to promote R-loops during transcription (Lim and Hohng, 2020). Transcription efficiency is increased as a result of successive rounds of R-loop formation (Lee et al., 2020). Taken together with our finding of high R-loops at some enhancers, it is possible that R-loop formation and GQ stabilization lead to the maintenance of nucleosome-free regions and help in sustained enhancer activation.\n\nIn summary, BisMapR is a fast, sensitive, and strand-specific R-loop detection strategy that reveals strand-specific R-loops at enhancers that are also enriched for KLF7 pioneer factor-binding motifs. Our study provides a tool to further dissect how directional chromatin accessibility conferred by a subset of pioneer factors contributes to R-loop stabilization at enhancers and their combined significance to gene expression.\n\n## Materials and methods\n\n### Cell culture\n\nE14 mouse embryonic stem cells (mESCs) were a gift from Dr. Roberto Bonasio\u2019s lab at the University of Pennsylvania. Mouse ESCs were cultured on 0.1% gelatin-coated plates in media containing DMEM, 15% fetal bovine serum (Gibco), 1\u00d7 MEM non-essential amino acids, 1\u00d7 GlutaMAX (Gibco 35050), 25 mM HEPES, 100 U/ml Pen-Strep, 55 \u00b5M 2-mercaptoethanol, 3 \u00b5M glycogen synthase kinase inhibitor (Millipore 361559), 1 \u00b5M MEK1/2 inhibitor (Millipore 444966), and LIF (Sigma, ESGRO). The pluripotent state of these cells was ascertained by expression analysis of markers including Oct4 and Nanog by RNA sequencing. Cell lines tested negative for mycoplasma.\n\n### BisMapR\n\nMapR was performed as described (Yan and Sarma, 2020; Yan et al., 2019) on 5 \u00d7 106 cells for BisMapR and control MapR samples (n\u00a0=\u00a02 replicates per method), with the exception that RNase A was omitted from the stop buffer of the BisMapR sample. Following DNA extraction, the BisMapR samples were bisulfite converted using reagents from the EZ DNA Methylation-Gold Kit (Zymo D5005). Ten microliters of sample was added to 10 \u00b5L of dH2O and 130 \u00b5L of CT Conversion Reagent, then incubated for 3 hr at room temperature (25\u00b0C) to preserve double-stranded nucleic acids under non-denaturing conditions. DNA desulfonation and column purification were performed according to manufacturer\u2019s instructions and eluted into 20 \u00b5L of M-Elution buffer. The elution product was directly used for second-strand synthesis using reagents from the NEBNext Ultra II Directional RNA Library Prep Kit (NEB E7760). Eight microliters\u00a0of Second-Strand Synthesis Reaction Buffer, 4 \u00b5L Second-Strand Synthesis Enzyme Mix, and 48 \u00b5L dH2O was added to elution product, and the reaction was incubated for 1 hr at 16\u00b0C in a thermocycler. Double-stranded DNA was purified from the second-strand reaction using 1.8\u00d7 volume of AMPure XP SPRI beads (Beckman Coulter). As a negative control, BisMapR bisulfite conversion and second-strand synthesis steps were also performed on a MapR sample in which RNase A was present in the stop buffer (BisMapR + RNase A). A MapR sample without RNase A was also subjected to the second-strand synthesis step without bisulfite conversion (MapR NBSS).\n\n### RNA-Seq\n\nRNA samples were extracted from mESCs (n\u00a0=\u00a03 biological replicates) using Trizol reagent (Invitrogen) and subjected to DNase digestion with Turbo DNase (Ambion AM2238). RNA samples were then rRNA\u00a0depleted using FastSelect -rRNA HMR (Qiagen) and converted to cDNA using Ultra II Directional RNA Library Prep Kit (NEB E7760).\n\n### Library preparation and sequencing\n\nDNA samples were end-repaired using End-Repair Mix (Enzymatics), A-tailed using Klenow exonuclease minus (Enzymatics), purified with MinElute columns (Qiagen), and ligated to Illumina adaptors (NEB E7600) with T4 DNA ligase (Enzymatics). Size selection for fragments\u00a0>\u00a0150 bp was performed with AMPure XP (Beckman Coulter). Libraries were PCR amplified with dual-index barcode primers for Illumina sequencing (NEB E7600) using Q5 DNA polymerase (NEB M0491) and purified with MinElute. Uracil DNA glycosylase (Enzymatics) was added to the PCR amplification mix to degrade dUTP-containing molecules and remove adaptor hairpins. Sequencing was performed on a NextSeq 500 instrument (Illumina) with 38 \u00d7 2 paired-end cycles.\n\n### Data processing\n\nBisMapR, MapR, and DRIPc-seq reads were mapped to the mouse genome (mm10) with Bowtie2 version 2.2.9 (Langmead and Salzberg, 2012) using default parameters and paired-end (BisMapR and MapR) or single-end (DRIPc-seq) settings as appropriate. Mouse ESC and NIH3T3 RNA-Seq reads were mapped to mm10 with STAR version 2.7.3 (Dobin et al., 2013), and RSEM (Li and Dewey, 2011) version 1.3.3 was used to obtain estimated counts. A gene was considered expressed if it had at least one count per million in all RNA-Seq samples. A bidirectional promoter was defined as a region 1 kb or smaller containing two transcription start sites for genes in opposite directions, that\u00a0is sense and antisense, and with both genes expressed in mESC or NIH3T3. To generate strand-specific datasets for BisMapR, MapR, RNA-Seq, and DRIPc-seq, reads were separated based on the strand to which the first mate aligned. Specifically, reads with SAM flags 16, 83, or 163 were placed into the forward-strand dataset, while reads with SAM flags 0, 99, or 147 were placed into the reverse-strand dataset. The first-mate strand represents the template strand for BisMapR, MapR, and DRIPc-seq. RPM normalization for strand-specific datasets was calculated based on the combined number of reads assigned to either the forward or reverse strand. BigWig tracks were generated using the bamCoverage function in deepTools 3.4.1 (Ram\u00edrez et al., 2016) with options --binSize five and --blackListFileName to remove a known set of ENCODE blacklist regions (Amemiya et al., 2019). The --extendReads option was used for paired-end datasets. Strandedness was calculated by subtracting reverse- strand BigWig signal from forward-strand BigWig signal for reverse-strand genes and vice versa for forward-strand genes. Peak calling of BisMapR composite samples was performed using MACS2 version 2.1.1 (Zhang et al., 2008). Signal plots and heatmaps were generated using the computeMatrix, plotProfile, and plotHeatmap functions in deepTools. Motif enrichment analysis was performed with CentriMo using 500 bp sequences centered around each enhancer.\n\n### Published data\n\nWe downloaded FASTQ files for NIH3T3 DRIPc-seq (SRR3322169) and NIH3T3 RNA-seq (SRR6126847), BigWig tracks and peak locations for KAS-seq (Wu et al., 2020) (GSE139420), GRO-seq (Tastemel et al., 2017) (GSE99760) and H3K27Ac (ENCODE ENCFF163HEV), mESC enhancer locations from Cruz-Molina et al., 2017, and 3T3 enhancers from the Enhancer Atlas (Gao and Qian, 2020).\n",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "8f7eab05-e54a-4148-8bf8-8777e5e14b50",
+      "submission_id": "3874db7f-88ba-4dc5-909d-1e5107f23083",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Howard Y Chang, Stanford University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.65146.sa1](https://doi.org/10.7554/eLife.65146.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe authors provide an improved method to detect R-loops genome-wide. The method provides improved signal-to-noise ratio and strand-specific information that are advantageous to existing methods. This method should be useful with increasing interest in R-loops in control of gene regulation and genome stability.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"BisMapR: a strand-specific, nuclease-based method for genome-wide R-loop detection\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Howard Y Chang as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Kevin Struhl as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nWulfridge and Sarma describe a new approach to map R-loops genome-wide. Using sodium bisulfite conversion, the ssDNA of the R-loop is targeted and specifically the DNA hybridized to the RNA in the R loop is sequenced. The approach yields strand specific information on where R-loops form and at high resolution. While the approach might be an important advance, some results don't make sense which prompts concerns about the possibility of artifacts or strong biases.\n\nEssential revisions:\n\n1) Comparison of BisMapR with alternative methods to clarify the methodologic advance.\n\na) If strand-specific library construction kit is used in MapR the authors may achieve strand-specific detection already. Please justify why bisulfite treatment is needed.\n\nb) The authors compare their data to another approach that maps R-loops in a strand specific manner, DRIPc-seq. The two methods give strikingly different results. The authors do not give any rationale for why this is. Could BisMapR be extremely selective? Perhaps it is only mapping the most stable R-loops, those that can form G-quadraplexes or are stabilized by another mechanism.\n\nc) Comparison with single stranded DNA detection method like KAS-seq would be informative. Single-stranded DNA is a kind of proxy for R-loops. BisMap-R should provide richer data but may need more cells and may not be applicable to clinical tissue samples.\n\n2) Biological insight of divergent transcription at promoters and enhancers.\n\nDivergent transcription: The authors rightfully cite the bias of R-loops on the template strand as evidence that their approach works (Figure 2C). They also mention that they see R-loops in the region upstream of TSSs, which they reason arrive from antisense divergent transcription seen at upstream of most mammalian promoters. However, the authors see both template and non-template signal at these locations at identical levels. How is this possible? There wouldn't be template RNA before the TSS. With the purported resolution of the method, this should be resolvable.\n\nEnhancers: The authors find that bidirectionally transcribed enhancers have an R-loop only on one strand. This is extremely striking and if true, a remarkable discovery. However, it may just reflect the propensity for BisMapR to map the most stable R-loops.\n\na) How does DRIPc-seq data look like at these enhancers?\n\nb) The fact that some features are so different between group 1 and group 2 enhancers is confusing. First there are so many fewer Group 2 enhancers compared to Group 1. It suggests an asymmetry to which strand of the DNA R-loops form in, which does not seem possible. And then there is a higher GC skew for group 2 enhancers. The strand asymmetries are either clues as to what is going on or a potential computational artifact.\n",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8c1eac30-11c3-4005-ab5a-a42b9270de9b",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C1",
+      "claim": "R-loops are three-stranded nucleic acid structures with essential roles in many nuclear processes.",
+      "claim_type": "EXPLICIT",
+      "source": "R-loops are three-stranded nucleic acid structures with essential roles in many nuclear processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about R-loops that draws from established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "aba6db42-043f-4cfc-aec7-fc8eaeec6353",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C2",
+      "claim": "Unchecked accumulation of R-loops is associated with genome instability.",
+      "claim_type": "EXPLICIT",
+      "source": "However, their unchecked accumulation is associated with genome instability and is observed in neurodevelopmental diseases and cancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established scientific knowledge about R-loops and disease.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "0f2b3d5a-a79f-47d5-bb2c-9bebb5cbf180",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C3",
+      "claim": "Unchecked accumulation of R-loops is observed in neurodevelopmental diseases and cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "However, their unchecked accumulation is associated with genome instability and is observed in neurodevelopmental diseases and cancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established scientific knowledge about R-loops and disease.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "082d26f8-0423-4394-a936-9ee2f87fa734",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C4",
+      "claim": "BisMapR is an antibody-independent R-loop detection strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "We present an antibody-independent R-loop detection strategy, BisMapR, that combines nuclease-based R-loop isolation with non-denaturing bisulfite chemistry to produce genome-wide profiles that retain strand information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding describing the method developed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "9d504220-a192-4f82-8879-413624b66109",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C5",
+      "claim": "BisMapR combines nuclease-based R-loop isolation with non-denaturing bisulfite chemistry.",
+      "claim_type": "EXPLICIT",
+      "source": "We present an antibody-independent R-loop detection strategy, BisMapR, that combines nuclease-based R-loop isolation with non-denaturing bisulfite chemistry to produce genome-wide profiles that retain strand information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical approach of the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "696aca3a-8890-4890-94e1-01cdd3c05d62",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C6",
+      "claim": "BisMapR produces genome-wide profiles that retain strand information.",
+      "claim_type": "EXPLICIT",
+      "source": "We present an antibody-independent R-loop detection strategy, BisMapR, that combines nuclease-based R-loop isolation with non-denaturing bisulfite chemistry to produce genome-wide profiles that retain strand information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding about the capability of the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "1e7d8912-2391-49be-b3e8-30fe7c03eb69",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C7",
+      "claim": "BisMapR achieves greater resolution than existing strand-specific R-loop profiling strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "BisMapR achieves greater resolution and is faster than existing strand-specific R-loop profiling strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative claim about the method's performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "1ad1d37c-c3d6-46ac-9588-bb265bb685b0",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C8",
+      "claim": "BisMapR is faster than existing strand-specific R-loop profiling strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "BisMapR achieves greater resolution and is faster than existing strand-specific R-loop profiling strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative claim about the method's performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "a2b1c695-2af1-4994-8038-731b3db12b3c",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C9",
+      "claim": "Gene promoters in mouse embryonic stem cells form R-loops in both directions.",
+      "claim_type": "EXPLICIT",
+      "source": "In mouse embryonic stem cells, we apply BisMapR to find that gene promoters form R-loops in both directions and uncover a subset of active enhancers that, despite being bidirectionally transcribed, form R-loops exclusively on one strand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from applying BisMapR to mESCs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "9175e53a-fff6-47c9-8903-0d750b3f7ada",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C10",
+      "claim": "A subset of active enhancers in mouse embryonic stem cells form R-loops exclusively on one strand despite being bidirectionally transcribed.",
+      "claim_type": "EXPLICIT",
+      "source": "In mouse embryonic stem cells, we apply BisMapR to find that gene promoters form R-loops in both directions and uncover a subset of active enhancers that, despite being bidirectionally transcribed, form R-loops exclusively on one strand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from applying BisMapR to mESCs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "2ad3a790-6def-469a-9625-f3f4b100b362",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C11",
+      "claim": "R-loops frequently occur during transcription when newly transcribed RNA base pairs with the DNA template strand, forming a DNA:RNA hybrid.",
+      "claim_type": "EXPLICIT",
+      "source": "R-loops are three-stranded nucleic acid structures that frequently occur during transcription when newly transcribed RNA base pairs with the DNA template strand, forming a DNA:RNA hybrid (Thomas et al., 1976).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Thomas et al., 1976.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "9d401ed7-2a1d-422e-a9ae-af9b2500ed0a",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C12",
+      "claim": "The non-template strand is extruded as single-stranded DNA in R-loops.",
+      "claim_type": "EXPLICIT",
+      "source": "The non-template strand is then extruded as single-stranded DNA (ssDNA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known structural feature of R-loops.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "2155364c-a9d7-4020-bc9e-476531aaf648",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C13",
+      "claim": "R-loops play important roles in recombination, transcription termination, and DNA repair.",
+      "claim_type": "EXPLICIT",
+      "source": "R-loops play important roles in many nuclear processes including recombination, transcription termination, and DNA repair (Ch\u00e9din, 2016; Niehrs and Luke, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Ch\u00e9din, 2016 and Niehrs and Luke, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "3bc13d47-e715-4ba2-8739-ab99c1a1477e",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C14",
+      "claim": "R-loop formation in mitosis ensures faithful chromosome segregation.",
+      "claim_type": "EXPLICIT",
+      "source": "R-loop formation in mitosis ensures faithful chromosome segregation (Kabeche et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Kabeche et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "d8dcc389-a724-4002-8f2f-3e973dde4065",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C15",
+      "claim": "Aberrant accumulation of R-loops is associated with genomic instability and disease.",
+      "claim_type": "EXPLICIT",
+      "source": "While R-loops at some genomic sites clearly have beneficial roles, their aberrant accumulation at others is associated with genomic instability and disease (Crossley et al., 2019; Garc\u00eda-Muse and Aguilera, 2019; Perego et al., 2019; Richard and Manley, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "ebca0454-ee82-4789-b3db-01f90b934304",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C16",
+      "claim": "Current methods to detect R-loops genome-wide rely on the S9.6 antibody or a catalytically inactive RNase H.",
+      "claim_type": "EXPLICIT",
+      "source": "Current methods to detect R-loops genome-wide rely on the S9.6 antibody (Dumelie and Jaffrey, 2017; Ginno et al., 2012; Nadel et al., 2015; Wahba et al., 2016) or a catalytically inactive RNase H, both of which recognize DNA:RNA hybrids (Chen et al., 2017; Ginno et al., 2012; Yan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations describing existing methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "f0497de0-7185-445c-8bf2-8a85eb62fc1d",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C17",
+      "claim": "DRIP-seq is the most frequently used S9.6-based approach for R-loop detection genome-wide.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA\u2013RNA immunoprecipitation-sequencing (DRIP-seq) is the most frequently used S9.6-based approach for R-loop detection genome-wide (Ginno et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation and reflects knowledge of the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "77133953-f485-4e5d-ad6c-5c4f81ee290c",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C18",
+      "claim": "S9.6-based approaches require high-input material.",
+      "claim_type": "EXPLICIT",
+      "source": "S9.6-based approaches require high-input material, have low signal-to-noise ratio, and with the exception of BisDRIP-seq (Dumelie and Jaffrey, 2017), have limited resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative assessment of existing methods based on literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "4c723809-42f5-4bbe-b532-4f035afe7e9d",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C19",
+      "claim": "S9.6-based approaches have low signal-to-noise ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "S9.6-based approaches require high-input material, have low signal-to-noise ratio, and with the exception of BisDRIP-seq (Dumelie and Jaffrey, 2017), have limited resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative assessment of existing methods based on literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "482adebc-7646-4a66-9688-637b1d36dc84",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C20",
+      "claim": "S9.6-based approaches have limited resolution with the exception of BisDRIP-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "S9.6-based approaches require high-input material, have low signal-to-noise ratio, and with the exception of BisDRIP-seq (Dumelie and Jaffrey, 2017), have limited resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative assessment of existing methods based on literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "77ec9792-2ada-496a-aaba-1b5fdf46c28f",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C21",
+      "claim": "The low signal-to-noise ratio in S9.6 genome-wide experiments may be attributed to antibody specificity issues.",
+      "claim_type": "EXPLICIT",
+      "source": "The low signal-to-noise ratio in S9.6 genome-wide experiments may be attributed to the antibody specificity issues that are well documented (Hartono et al., 2018; Vanoosthuyse, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations documenting antibody specificity issues.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "7281bda2-276a-47c7-a648-d64741b282f0",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C22",
+      "claim": "MapR is a fast and sensitive R-loop detection strategy founded on the principles of CUT and RUN and the specificity of RNase H for the recognition of DNA:RNA hybrids.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently described MapR (Yan and Sarma, 2020; Yan et al., 2019), a fast and sensitive R-loop detection strategy founded on the principles of CUT and RUN (Skene et al., 2018; Skene and Henikoff, 2017) and the specificity of RNase H for the recognition of DNA:RNA hybrids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to the authors' previous work and related methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "563c8e5d-856d-4a73-a0ea-1aae5a85a722",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C23",
+      "claim": "In MapR, a catalytically inactive RNase H targets micrococcal nuclease to R-loops to cleave and release them for high-throughput sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "In MapR, a catalytically inactive RNase H targets micrococcal nuclease to R-loops to cleave and release them for high-throughput sequencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical mechanism of MapR.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "f85153c9-0128-4d3f-bfb8-2cc1d0858339",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C24",
+      "claim": "MapR is not enrichment-based, unlike DRIP, DRIVE, and R-ChIP.",
+      "claim_type": "EXPLICIT",
+      "source": "Because MapR is not enrichment-based, unlike DRIP, DRIVE, and R-ChIP, it has high signal-to-noise ratios resulting in enhanced sensitivity (Yan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative statement about MapR supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "6ed93f31-de61-46d6-85fc-c78e93424f58",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C25",
+      "claim": "MapR has high signal-to-noise ratios resulting in enhanced sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Because MapR is not enrichment-based, unlike DRIP, DRIVE, and R-ChIP, it has high signal-to-noise ratios resulting in enhanced sensitivity (Yan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative statement about MapR supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "78734634-fde5-489a-bc21-eb723c69eaa6",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C26",
+      "claim": "Sodium bisulfite deaminates cytosines to uracils on exposed, single-stranded DNA only, while double-stranded nucleic acids are protected from conversion.",
+      "claim_type": "EXPLICIT",
+      "source": "We leveraged the chemical property of sodium bisulfite to deaminate cytosines (C) to uracils (U) on exposed, single-stranded DNA (ssDNA) only, while double-stranded nucleic acids are protected from conversion (Gough et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Gough et al., 1986.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "c82ed3c3-8f07-4743-9a8b-2982537d22c7",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C27",
+      "claim": "In BisMapR, R-loops released by MapR are treated with sodium bisulfite under non-denaturing conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In BisMapR, R-loops released by MapR are treated with sodium bisulfite under non-denaturing conditions (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the BisMapR protocol and is shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "2c639d79-4d0b-4a38-9f15-09f441efb349",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C28",
+      "claim": "Bisulfite treatment under non-denaturing conditions results in C-to-U conversion of the ssDNA strand of R-loops.",
+      "claim_type": "EXPLICIT",
+      "source": "This results in the C-to-U conversion of the ssDNA strand of R-loops.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the expected outcome of the bisulfite treatment step.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "0ce155fb-b091-44fc-807c-b6c5b7a4cd3d",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C29",
+      "claim": "The DNA within the DNA:RNA hybrid is left intact during non-denaturing bisulfite treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, the DNA within the DNA:RNA hybrid is left intact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the expected outcome of the bisulfite treatment step.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "41657787-10b7-412f-b469-a5e65c167007",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C30",
+      "claim": "MapR in mESCs specifically identifies R-loops since RH\u0394-MNase shows high signal at transcription start sites of active genes compared to an MNase-only background control.",
+      "claim_type": "EXPLICIT",
+      "source": "MapR in mESCs specifically identifies R-loops since RNase H catalytic mutant fused to micrococcal nuclease (RH\u0394-MNase) shows high signal at transcription start sites (TSS) of active genes that are known to form R-loops compared to an MNase-only background control (Figure 2\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "916c1f15-1cb8-4171-a4a5-64e4c2672acd",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C31",
+      "claim": "MapR signal is enriched at active genes but not at inactive genes.",
+      "claim_type": "EXPLICIT",
+      "source": "MapR signal is also clearly enriched at active genes but not at inactive genes (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "aeb6a4df-957a-4e65-8f40-259f8fc4f0af",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C32",
+      "claim": "BisMapR and MapR produce signal enrichment predominantly around the TSS of actively transcribed genes when examining reads from both strands.",
+      "claim_type": "EXPLICIT",
+      "source": "When examining reads from both strands, which we term 'composite' signal, BisMapR and MapR produce signal enrichment predominantly around the TSS of actively transcribed genes (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "56126163-798d-4d6b-8bee-b674bbb72fe7",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C33",
+      "claim": "BisMapR and MapR datasets showed strong positive correlation for signal enrichment across TSS at the global level.",
+      "claim_type": "EXPLICIT",
+      "source": "At the global level also, both datasets showed strong positive correlation for signal enrichment across TSS (Figure 2\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "a2034dcc-3de3-4e26-94d6-c7f7087a4917",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C34",
+      "claim": "MapR 'strand-specific' maps are near-identical to their composite when reads are separated by originating strand.",
+      "claim_type": "EXPLICIT",
+      "source": "When reads are separated by originating strand, MapR 'strand-specific' maps are near-identical to their composite (Figure 2A), as expected of a non-strand-specific protocol.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2A and is consistent with MapR being non-strand-specific.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "c799f5c9-f16d-4956-803e-eefda11a9862",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C35",
+      "claim": "BisMapR reads after strand-specific alignment clearly segregate to either the forward or reverse strands.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, BisMapR reads after strand-specific alignment clearly segregate to either the forward or reverse strands (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "68c951f6-f35f-4b2e-990b-04b1fcd0c0e3",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C36",
+      "claim": "Vamp1, a gene transcribed in the sense direction, shows reverse strand-specific BisMapR signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Vamp1, a gene that is transcribed in the sense (plus) direction and expected to produce DNA:RNA hybrids on the reverse (template) strand, shows reverse strand-specific BisMapR signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the data that demonstrates strand specificity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "3265587c-2936-4fb6-8710-191f9de1b17d",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C37",
+      "claim": "Atg10, an antisense gene, shows BisMapR signal on the forward strand.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, Atg10, an antisense (minus) gene, shows BisMapR signal on the forward strand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the data that demonstrates strand specificity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "99ee8ead-53b6-442c-9bef-899a9f700af0",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C38",
+      "claim": "Global analysis of strand-specific BisMapR signal across all TSS showed decreased correlation with composite BisMapR as well as with strand-specific and composite MapR.",
+      "claim_type": "EXPLICIT",
+      "source": "Global analysis of strand-specific BisMapR signal across all TSS also showed decreased correlation with composite BisMapR as well as with strand-specific and composite MapR (Figure 2\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "bba80270-2376-4307-bcfd-eeb5260fec0d",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C39",
+      "claim": "Over 75% of active genes produce short antisense RNA transcripts and show paused RNA polymerase II in the antisense direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Divergent transcription is a common feature of active promoters in mammals, with over 75% of active genes producing short antisense RNA transcripts and showing paused RNA polymerase II in the antisense direction (Core et al., 2008; Seila et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Core et al., 2008 and Seila et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "81c6263f-74cd-41bd-be12-94cc803169c2",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C40",
+      "claim": "Upstream of the TSS, strandedness is negative, indicating R-loop signal forms predominantly on the non-template strand.",
+      "claim_type": "EXPLICIT",
+      "source": "Upstream of the TSS, strandedness is negative, indicating R-loop signal forms predominantly on the non-template strand consistent with R-loop function in antisense transcription (Tan-Wong et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data analysis and a citation to Tan-Wong et al., 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "7fa0c5e0-2b3e-4671-956a-1763ea9dbc89",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C41",
+      "claim": "Strandedness becomes positive starting around the TSS and continuing into the gene body.",
+      "claim_type": "EXPLICIT",
+      "source": "Strandedness becomes positive starting around the TSS and continuing into the gene body, as expected from co-transcriptional R-loop formation on the template strand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data analysis and is consistent with expected R-loop formation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "2e114b08-19c9-4751-8e9d-c68483ad0ba3",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C42",
+      "claim": "The clear distinction between template and non-template strand-originating R-loops cannot be made in MapR.",
+      "claim_type": "EXPLICIT",
+      "source": "The clear distinction between template and non-template strand-originating R-loops cannot be made in MapR, where strandedness is entirely absent at any point around TSS (Figure 2D, center).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "919c4418-8d20-4b2a-8c49-0c0585b685ee",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C43",
+      "claim": "Strandedness is only slightly observable in MapR NBSS.",
+      "claim_type": "EXPLICIT",
+      "source": "Strandedness is only slightly observable in MapR NBSS (Figure 2D, right), consistent with only a small subset of reads contributing to strand specificity in NBSS.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "528db937-74fe-4599-9ed6-0b1fbe0cc19e",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C44",
+      "claim": "BisMapR produces strand-specific R-loop profiles genome-wide.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our data demonstrate that BisMapR produces strand-specific R-loop profiles genome-wide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "3deb8b04-cb04-443e-b127-bc29645a3e00",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C45",
+      "claim": "BisMapR confers strand specificity on intact R-loops that are released by MapR with minor technical modifications and with a minimal burden on time.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that BisMapR confers strand specificity on intact R-loops that are released by MapR with minor technical modifications and with a minimal burden on time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data and method description.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "463f208e-7878-4b59-a145-0052c1c37c9a",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C46",
+      "claim": "KAS-seq identifies single-stranded regions of the genome with high G content.",
+      "claim_type": "EXPLICIT",
+      "source": "A recently developed technique, kethoxal-assisted single-stranded DNA sequencing (KAS-seq), identifies single-stranded regions of the genome with high G content (Wu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Wu et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "cac8f672-5b6b-496e-bf89-fdaa2fb85149",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C47",
+      "claim": "BisMapR composite signal is centralized over KAS-seq peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured BisMapR composite signal at KAS-seq peaks and found that it is centralized over these regions (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "fb35dd7b-404b-4337-86f9-8fe8507c7b35",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C48",
+      "claim": "KAS-seq signal is centrally enriched over BisMapR peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "KAS-seq signal was also centrally enriched over BisMapR peaks (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "084069de-e19d-4808-aace-ce4ef975c7b1",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C49",
+      "claim": "KAS-seq and BisMapR signals show high positive correlation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, KAS-seq and BisMapR signals show high positive correlation (Figure 2\u2014figure supplement 1G) and overlap at many active genes (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2\u2014figure supplement 1G and Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "4b70e866-ff37-4ab7-9484-42f43752d795",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C50",
+      "claim": "BisMapR accurately captures signal at regions of R-loop formation.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that BisMapR accurately captures signal at regions of R-loop formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the comparison with KAS-seq data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "793b9d2e-45be-44da-a808-87abcd40516a",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C51",
+      "claim": "The incorporation of bisulfite treatment suggests that BisMapR can produce higher resolution R-loop maps compared to MapR.",
+      "claim_type": "EXPLICIT",
+      "source": "The incorporation of bisulfite treatment that can theoretically react with all single-stranded cytosine residues in the R-loop to mark them for degradation suggests that BisMapR can produce higher resolution R-loop maps compared to MapR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the chemical properties of bisulfite treatment.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "076681d8-ea9d-4e7a-917a-e01078ea418d",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C52",
+      "claim": "MapR profiles at the 5\u2032 end of Fbxo18 and Ankrd16 genes show a broad non-strand-specific R-loop enrichment across both TSS.",
+      "claim_type": "EXPLICIT",
+      "source": "MapR profiles at the 5\u2032 end of Fbxo18 and Ankrd16 genes whose TSS are separated by 294 bases show a broad non-strand-specific R-loop enrichment across both TSS (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "c8e5914f-7e45-45f8-b47e-bd1327a4de15",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C53",
+      "claim": "BisMapR signal is enriched on the forward strand of Fbxo18 that is transcribed in the antisense direction and on the reverse strand of Ankrd16 that is transcribed in the sense direction.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, BisMapR signal is enriched on the forward strand of Fbxo18 that is transcribed in the antisense direction and on the reverse strand of Ankrd16 that is transcribed in the sense direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "1c76df1c-0f4f-4eb2-9631-760075dc4270",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C54",
+      "claim": "Global analysis on all bidirectional transcription units demonstrates that BisMapR captures distinct R-loop signals on opposite template strands that are congruent with the direction of transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Global analysis on all bidirectional transcription units demonstrates that BisMapR captures distinct R-loop signals on opposite template strands that are congruent with the direction of transcription (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "61629b00-b204-44e9-8b72-d907076dcc5e",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C55",
+      "claim": "MapR signals do not clearly distinguish between pairs of genes at bidirectional transcription units.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, MapR signals do not clearly distinguish between pairs of genes (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "03a93528-ea1a-4b5f-8e19-ed43cc2caf85",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C56",
+      "claim": "In addition to providing strand-specific information, BisMapR improves on the already high resolution of MapR in profiling R-loops genome-wide.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggests that in addition to providing strand-specific information, BisMapR improves on the already high resolution of MapR in profiling R-loops genome-wide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the comparison of BisMapR and MapR data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "9bedec75-1ba8-4323-828f-e689984874ca",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C57",
+      "claim": "In mESCs, BisMapR signal is highest at the 5' end of genes and is reduced across the gene body.",
+      "claim_type": "EXPLICIT",
+      "source": "In mESCs, we observe that BisMapR signal is highest at the 5' end of genes and is reduced across the gene body as is seen in the case of Abhd10 (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "b0f14aea-31a4-437a-9ee8-f97387903e0c",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C58",
+      "claim": "Metagene analysis across all active genes shows that both plus- and minus-strand genes show 5\u2032 R-loop enrichment.",
+      "claim_type": "EXPLICIT",
+      "source": "Metagene analysis across all active genes shows that both plus- and minus-strand genes show 5\u2032 R-loop enrichment (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "be634772-3285-49f8-b87b-18d9ceb8d37d",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C59",
+      "claim": "Several previous reports observe R-loop enrichment in proximity to the TSS.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with several previous reports that observe R-loop enrichment in proximity to the TSS (Chen et al., 2017; Dumelie and Jaffrey, 2017; Ginno et al., 2012; Yan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "af189d7b-96d1-477b-8d71-12b57414dcc7",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C60",
+      "claim": "DRIPc signal is broadly present across the entire Zfp462 gene and does not show a clear enrichment at TSS.",
+      "claim_type": "EXPLICIT",
+      "source": "At Zfp462, an expressed gene in NIH 3T3 cells, DRIPc signal is broadly present across the entire gene and does not show a clear enrichment at TSS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from DRIPc data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "54102beb-53be-4973-9149-c8fa413686e8",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C61",
+      "claim": "Analysis of DRIPc signal profiles across all expressed genes shows that DRIPc-seq shows a general enrichment across transcriptional units starting at the TSS and increasing steadily across the gene body.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, analysis of DRIPc signal profiles across all expressed genes on the plus and minus strands shows that DRIPc-seq shows a general enrichment across transcriptional units on the plus and minus strands starting at the TSS and increasing steadily across the gene body (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "6f10d313-75ae-4ba5-9016-9be1bb0615cb",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C62",
+      "claim": "At Fbxo18 and Ankrd16, strand-specific BisMapR signal is clearly limited to the TSS of both genes.",
+      "claim_type": "EXPLICIT",
+      "source": "At Fbxo18 and Ankrd16, strand-specific BisMapR signal is clearly limited to the TSS of both genes (Figure 3A and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3A and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "16aa8e23-c34d-4866-8251-b74c4ab514b5",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C63",
+      "claim": "DRIPc signal does not show enrichment at TSS and is instead present across the gene body of both Fbxo18 and Ankrd16.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, DRIPc signal does not show enrichment at TSS and is instead present across the gene body of both genes (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "910bea39-a299-448d-b531-4fb7d16564cb",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C64",
+      "claim": "Metagene analysis of all active bidirectional transcription units in NIH3T3 shows that DRIPc, while stranded, does not delineate two distinct transcriptional units.",
+      "claim_type": "EXPLICIT",
+      "source": "Metagene analysis of all active bidirectional transcription units in NIH3T3 shows that DRIPc, while stranded as evidenced by a skew in the forward- and reverse-strand signals in the appropriate direction, does not delineate two distinct transcriptional units (Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "516a6c38-fafb-4b7b-8c96-2fbabb3d9070",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C65",
+      "claim": "The high resolution of BisMapR, on the order of hundreds of bases, makes it particularly suitable for studying R-loop formation across small-scale features within and between transcriptional units.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that the high resolution of BisMapR, on the order of hundreds of bases, makes it particularly suitable for studying R-loop formation across small-scale features within and between transcriptional units.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the comparison of BisMapR and DRIPc data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "14553e02-4a3e-4531-aef9-d656069d07bb",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C66",
+      "claim": "Enhancers that are transcribed at lower levels and that form short-lived transcripts also form R-loops.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to genes, enhancers that are transcribed at lower levels and that form short-lived transcripts also form R-loops (Rabani et al., 2014; Schwalb et al., 2016; Yan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "83923afe-2cbf-4389-859b-b849bf09fcb4",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C67",
+      "claim": "Active enhancers are bidirectionally transcribed.",
+      "claim_type": "EXPLICIT",
+      "source": "Active enhancers are bidirectionally transcribed (Kim et al., 2010; Lai et al., 2015) and show higher global run-on sequencing (GRO-Seq) signals on both the forward and reverse strands as compared to poised and primed enhancers (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by citations and data shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "2ea1461b-2d0e-4133-87b3-6e54fc9b59b0",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C68",
+      "claim": "Active enhancers show higher global run-on sequencing (GRO-Seq) signals on both the forward and reverse strands as compared to poised and primed enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Active enhancers are bidirectionally transcribed (Kim et al., 2010; Lai et al., 2015) and show higher global run-on sequencing (GRO-Seq) signals on both the forward and reverse strands as compared to poised and primed enhancers (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "4910cb8d-9dcb-46aa-a892-562f920ea7e3",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C69",
+      "claim": "Active enhancers exhibit higher MapR and BisMapR signals compared to poised and primed enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that active enhancers also exhibit higher MapR and BisMapR signals compared to poised and primed enhancers (Figure 4\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "7c1810f9-4114-4636-9e4b-1c7d84b79d78",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C70",
+      "claim": "Clustering of all enhancers based on BisMapR forward- and reverse-strand signals reveals four distinct enhancer clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, clustering of all enhancers based on BisMapR forward- and reverse-strand signals reveals four distinct enhancer clusters: two groups with high R-loops that form on either the reverse (group 1) or forward (group 2) strands, and two groups with medium or low R-loops (groups 3 and 4) (Figure 4A, Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4A and Figure 4\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "c86faf87-76c9-4f9d-994a-50f8dbc34568",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C71",
+      "claim": "Both groups of high R-loop enhancers display R-loops on only one strand.",
+      "claim_type": "EXPLICIT",
+      "source": "Both groups of high R-loop enhancers display R-loops on only one strand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the clustering analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "e9e653be-5ad8-497f-84eb-a0f003a94630",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C72",
+      "claim": "GRO-seq indicates that group 1 and group 2 enhancers are expressed at higher levels than group 4 enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "GRO-seq also indicates that group 1 and group 2 enhancers are expressed at higher levels than group 4 enhancers (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "6d4a3621-8502-4574-8b1d-241aee0e3eed",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C73",
+      "claim": "Group 1 is strongly enriched for active enhancers (71%; p=2.49e-167).",
+      "claim_type": "EXPLICIT",
+      "source": "Group 1 is strongly enriched for active enhancers (71%; p=2.49e-167, hypergeometric test for all enrichment p-values) and slightly enriched for poised enhancers (0.05%; p=2.95e-5) (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4C and statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "0c0395ba-262e-4de2-a9a3-e0e837235062",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C74",
+      "claim": "Group 1 is slightly enriched for poised enhancers (0.05%; p=2.95e-5).",
+      "claim_type": "EXPLICIT",
+      "source": "Group 1 is strongly enriched for active enhancers (71%; p=2.49e-167, hypergeometric test for all enrichment p-values) and slightly enriched for poised enhancers (0.05%; p=2.95e-5) (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4C and statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "bf4fe960-bc6f-4cd2-b337-80d96d349c7c",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C75",
+      "claim": "Group 2 is enriched for active (72%; p=8.03e-164) and poised enhancers (0.04%; p=0.039).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, group 2 is also enriched for active (72%; p=8.03e-164) and poised enhancers (0.04%; p=0.039).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "a1be82a3-253e-4cd4-a9a5-5dd8acfecf7c",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C76",
+      "claim": "Group 4 is enriched for primed enhancers (74%; p=3.95e-1160).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the low R-loop (Figure 4A) and low transcribed (Figure 4B) group 4 is enriched for primed enhancers (74%; p=3.95e-1160) (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4A, 4B, 4C and statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "c1482579-2bc4-4694-9921-3c166ae81d74",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C77",
+      "claim": "Genes proximal to group 1 and 2 enhancers show higher expression levels compared to group 3 and 4 enhancer-related genes.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, genes proximal to group 1 and 2 enhancers, which are enriched for active enhancers, show higher expression levels compared to group 3 and 4 enhancer-related genes (Figure 4\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "d0a5a644-d981-4392-92d2-0a45c688cbd2",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C78",
+      "claim": "Unsupervised clustering of 3T3 enhancers based on DRIPc forward and reverse signals showed separation into four groups \u2013 two high R-loop enhancer groups with DRIPc either on the forward or reverse strands and two low R-loop enhancer clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine whether unidirectional R-loops are observed by other strand-specific R-loop detection strategies, we analyzed DRIPc data from 3T3 cells. Unsupervised clustering of 3T3 enhancers based on DRIPc forward and reverse signals also showed separation into four groups \u2013 two high R-loop enhancer groups with DRIPc either on the forward or reverse strands and two low R-loop enhancer clusters (Figure 4\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "6e7d0447-f9d7-45d3-b564-eaaf8d35d6f6",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C79",
+      "claim": "BisMapR uncovers a subset of enhancers that are transcribed in both directions but exhibit unidirectional strand-specific R-loops.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, BisMapR uncovers a subset of enhancers that are transcribed in both directions but exhibit unidirectional strand-specific R-loops.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "e3e83f1a-3f79-4081-aa1c-6abaf8f18958",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C80",
+      "claim": "Motif analysis at high R-loop enhancers identified an enrichment for KLF7, KLF1, and SP1 binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "We used CentriMo to identify sequences that are centrally enriched in the two high R-loop enhancer groups (groups 1 and 2) compared to the low R-loop groups (groups 3 and 4). Our analysis uncovered a significant enrichment for KLF7, KLF1, and SP1 transcription factor motifs in the high R-loop enhancer groups (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "f3c273cc-7381-4f34-a907-4fed8cae3796",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C81",
+      "claim": "The non-template strands in groups 1 and 2 have high G content, while groups 3 and 4 show no skew.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the non-template strands in groups 1 and 2 have high G content, while groups 3 and 4 show no skew (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "f76bb978-2cf5-4dfd-9ea7-4ae038619bae",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C82",
+      "claim": "High R-loop enhancers (groups 1 and 2) exhibit high KAS-seq signal.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared BisMapR signal at enhancers to KAS-seq signal, which detects ssDNA, and found that high R-loop enhancers as determined by our analysis (groups 1 and 2) exhibit high KAS-seq signal, consistent with our observation of GC skew and the likelihood of containing ssDNA, a component of R-loops (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "616121eb-5656-48ed-9df7-caffc09ca9f2",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C83",
+      "claim": "Seven hundred and four enhancers had both high KAS-seq and high R-loop signals, representing a 1.53-fold enrichment (p=1.96e-35).",
+      "claim_type": "EXPLICIT",
+      "source": "To further determine the degree of concordance between KAS-Seq and BisMapR, we performed clustering of all enhancers based on KAS-seq signal, identifying 5069 enhancers with high KAS-seq signal and 27,811 enhancers with low KAS-seq signal. Seven hundred and four enhancers had both high KAS-seq and high R-loop signals, representing a 1.53-fold enrichment (p=1.96e-35, hypergeometric test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "bec64dd8-2821-40dd-868f-4d155b1ba297",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C84",
+      "claim": "Enhancers with high R-loops were under-enriched (1.14-fold, p=4.21e-63) in the enhancer population with low KAS-seq signals.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, enhancers with high R-loops were under-enriched (1.14-fold, p=4.21e-63) in the enhancer population with low KAS-seq signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "5f95f2a5-8798-43c5-a5f7-4dc9abf78b7c",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C85",
+      "claim": "BisMapR and KAS-seq present two complementary methods to identify enhancers that contain ssDNA components.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, BisMapR and KAS-seq present two complementary methods to identify enhancers that contain ssDNA components.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the comparison of BisMapR and KAS-seq data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "0ec7e4d4-dd39-4d9f-8e67-5acf67130c32",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C86",
+      "claim": "KLF7, KLF1, and SP1 are pioneer transcription factors that have the ability to bind DNA and open condensed chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "KLF7, KLF1, and SP1 are pioneer transcription factors that have the ability to bind DNA and open condensed chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about these transcription factors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "18559f44-e9db-43ce-afb8-dd4454092dc3",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C87",
+      "claim": "Analysis of transcription factor binding across DNase I hypersensitive sites showed that KLF7 motif is associated with asymmetrically open chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, analysis of transcription factor binding across DNase I hypersensitive sites showed that KLF7 motif is associated with asymmetrically open chromatin, suggesting a directional pioneer factor activity (Sherwood et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Sherwood et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "6c43d554-8631-4766-b1c5-30308cebd465",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C88",
+      "claim": "In groups 1 and 2, strand-specific R-loops form unidirectionally from KLF motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in both these groups strand-specific R-loops form unidirectionally from KLF motifs (Figure 4G, I and J, Figure 4\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4G, I, J and Figure 4\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "58518cb7-df03-4167-a464-f73d365a0b8f",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C89",
+      "claim": "The presence of H3K27 acetylation and GRO-seq signals around the KLF7-centered enhancers show clear bidirectional transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of H3K27 acetylation (Figure 4I and J) and GRO-seq signals (Figure 4H, I and J) around the KLF7-centered enhancers show clear bidirectional transcription.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4H, I, and J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "ec933e1f-5843-4a13-a390-6aa3a2d15616",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C90",
+      "claim": "KLF7 binding may contribute to the unidirectional formation or stabilization of R-loops at some active enhancers that show high levels of transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggests that KLF7 binding may contribute to the unidirectional formation or stabilization of R-loops at some active enhancers that show high levels of transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion drawn from the data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "88bb2174-b541-4560-8398-ec6c6c75697d",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C91",
+      "claim": "S9.6 antibody and RNase H recognize some common R-loops, as well as other unique subsets.",
+      "claim_type": "EXPLICIT",
+      "source": "These two approaches recognize some common R-loops, as well as other unique subsets that likely appear as a consequence of the distinct sequence preferences of S9.6 and RNase H (K\u00f6nig et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to K\u00f6nig et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "2245114a-e08a-41c0-9cbb-c7a7464227eb",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C92",
+      "claim": "BisMapR is a fast RNase H-based method that efficiently captures strand-specific R-loops at high-resolution genome-wide.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we have described BisMapR, a fast RNase H-based method that efficiently captures strand-specific R-loops at high-resolution genome-wide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the method described in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "702e7df3-c112-4b53-8e68-fa0f4ae7e548",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C93",
+      "claim": "Existing strand-specific R-loop mapping strategies have drawbacks that include low-resolution and high-input material.",
+      "claim_type": "EXPLICIT",
+      "source": "Existing strand-specific R-loop mapping strategies have a few drawbacks that include low-resolution and high-input material (Sanz and Ch\u00e9din, 2019; Sanz et al., 2016), involved sample processing (Dumelie and Jaffrey, 2017), and lengthy experiment times (Chen et al., 2019; Chen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to existing methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "2349a4af-ae33-403b-a380-95c69f14b135",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C94",
+      "claim": "Comparison of BisMapR with DRIPc shows that BisMapR produces sharper regions of enrichment suggesting higher resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Our comparison of BisMapR with DRIPc, an S9.6-based approach, shows that BisMapR produces sharper regions of enrichment suggesting higher resolution (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "2b542776-b2e4-4c13-844c-235d0ef699de",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C95",
+      "claim": "The high resolution of BisMapR is especially evident at head-to-head transcribed genes TSS that are only a few hundred bases apart and that show R-loop formation on opposite strands.",
+      "claim_type": "EXPLICIT",
+      "source": "The high resolution of BisMapR is especially evident at head-to-head transcribed genes TSS that are only a few hundred bases apart and that show R-loop formation on opposite strands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "d34f6255-35f7-45b7-a997-85443ba79c31",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C96",
+      "claim": "A reason for the broader signal seen in DRIPc can be because of immunoprecipitation of the regions of the RNA that are not part of the R-loop.",
+      "claim_type": "EXPLICIT",
+      "source": "As noted before (Sanz and Ch\u00e9din, 2019), a reason for the broader signal seen in DRIPc can be because of immunoprecipitation of the regions of the RNA that are not part of the R-loop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation and represents an inference about DRIPc limitations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "f2473e20-d6fe-4a00-bdac-0a557a77bfe2",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C97",
+      "claim": "DRIPc requires a significantly higher amount of starting material compared to DRIP and MapR.",
+      "claim_type": "EXPLICIT",
+      "source": "While non-denaturing bisulfite treatment can potentially correct this drawback, DRIPc still requires a significantly higher amount of starting material compared to DRIP and MapR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative statement about method requirements.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "dd6f0f20-48cd-4bb8-93bd-6d183ae9648e",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C98",
+      "claim": "S9.6 prefers binding R-loops with lower GC content in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro studies show that S9.6 prefers binding R-loops with lower GC content (K\u00f6nig et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to K\u00f6nig et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "3de74b16-bdb4-47bc-9e81-cbc202099ac2",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C99",
+      "claim": "At active gene promoters, BisMapR identifies both non-template signal upstream of the TSS and template signal centered around the TSS and continuing downstream into the gene body.",
+      "claim_type": "EXPLICIT",
+      "source": "At active gene promoters, BisMapR identifies both non-template signal upstream of the TSS that is consistent with antisense divergent transcription, and template signal centered around the TSS and continuing downstream into the gene body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the data observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "5331ee05-d7f0-4d13-8e8f-845cd81c325b",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C100",
+      "claim": "Template signal is not confined strictly downstream of the TSS, but instead is enriched slightly upstream and predominantly downstream of the TSS with a slight dip in signal over the TSS itself.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, template signal is not confined strictly downstream of the TSS, but instead is enriched slightly upstream and predominantly downstream of the TSS with a slight dip in signal over the TSS itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "b037827f-9475-4aeb-a4b7-3426ecb3bd0f",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C101",
+      "claim": "R-loop formation is associated with the potential to form G quadruplexes on the non-template strand.",
+      "claim_type": "EXPLICIT",
+      "source": "R-loop formation is associated with the potential to form G quadruplexes on the non-template strand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about R-loops and G-quadruplexes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "4d983983-4588-40cd-b398-f5cb4cc19879",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C102",
+      "claim": "R-loop formation precedes GQ formation.",
+      "claim_type": "EXPLICIT",
+      "source": "While R-loop formation precedes GQ formation, stable GQs in the non-template strand provide a positive feedback to promote R-loops during transcription (Lim and Hohng, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Lim and Hohng, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "3e31ff68-7a44-431b-8a96-15de6d37a05d",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C103",
+      "claim": "Stable GQs in the non-template strand provide a positive feedback to promote R-loops during transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "While R-loop formation precedes GQ formation, stable GQs in the non-template strand provide a positive feedback to promote R-loops during transcription (Lim and Hohng, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Lim and Hohng, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "2f36c40b-1851-4380-a779-d976cc202027",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C104",
+      "claim": "Transcription efficiency is increased as a result of successive rounds of R-loop formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcription efficiency is increased as a result of successive rounds of R-loop formation (Lee et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Lee et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "f3d96f9c-5692-4a29-a46b-46eab9a93a26",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C105",
+      "claim": "It is possible that R-loop formation and GQ stabilization lead to the maintenance of nucleosome-free regions and help in sustained enhancer activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together with our finding of high R-loops at some enhancers, it is possible that R-loop formation and GQ stabilization lead to the maintenance of nucleosome-free regions and help in sustained enhancer activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion drawn from the data and cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "e97f2369-42f3-4945-a7ef-d66e27f86aa7",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C106",
+      "claim": "BisMapR reveals strand-specific R-loops at enhancers that are also enriched for KLF7 pioneer factor-binding motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, BisMapR is a fast, sensitive, and strand-specific R-loop detection strategy that reveals strand-specific R-loops at enhancers that are also enriched for KLF7 pioneer factor-binding motifs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "99b3ceb0-6739-48f4-be28-67c18b266ec1",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C107",
+      "claim": "The study provides a tool to further dissect how directional chromatin accessibility conferred by a subset of pioneer factors contributes to R-loop stabilization at enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study provides a tool to further dissect how directional chromatin accessibility conferred by a subset of pioneer factors contributes to R-loop stabilization at enhancers and their combined significance to gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the potential applications of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "a7d437aa-c345-4230-8ea3-c269e6927144",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C108",
+      "claim": "Treatment of R-loops with RNase A prior to bisulfite processing for BisMapR results in a loss of strand specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of R-loops with RNase A prior to bisulfite processing for BisMapR results in a loss of strand specificity that resembles MapR data, with the forward- and reverse-strand signals showing a significant overlap (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "2d727095-c6f2-4477-8ebc-e8cb1c727d99",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C109",
+      "claim": "The bisulfite conversion step is critical to ensure removal of the ssDNA component during library preparation and achieve strand specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our data show the bisulfite conversion step is critical to ensure removal of the ssDNA component during library preparation and achieve strand specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "96a67387-aacd-4a51-864a-388f391488ba",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "claim_id": "C110",
+      "claim": "BisMapR requires intact R-loops to efficiently sort signals by strand of origin.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess whether BisMapR requires intact R-loops to efficiently sort signals by strand of origin, we performed bisulfite conversion reactions after treating MapR samples with RNase A and analyzed forward- or reverse-strand signals across all TSS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis tested by the experiment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ca72151a-7d77-4d6d-ac52-d00aed29de77",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "BisMapR is a new antibody-independent R-loop detection method that combines MapR-based R-loop isolation with non-denaturing bisulfite chemistry to produce strand-specific genome-wide R-loop profiles. The method selectively converts cytosines to uracils in the single-stranded DNA component while preserving the DNA:RNA hybrid.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6, C27-C29, and C92 describe the technical approach and are well-supported by the detailed protocol in Figure 1 and Materials and Methods. The chemical basis (bisulfite conversion of ssDNA but not dsDNA) is established (C26), and the workflow is clearly documented with appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "45fee17d-0403-4153-8149-254951c002c1",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "BisMapR successfully produces strand-specific R-loop profiles genome-wide, as demonstrated by clear segregation of forward and reverse strand signals at genes with known transcription directionality (Vamp1, Atg10), while MapR shows no strand separation. BisMapR and MapR show strong correlation in composite signal (r=0.73) but decreased correlation when separated by strand.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C38 and C44-C45 are strongly supported by multiple lines of evidence in Figure 2A-B and supplementary figures. The correlation analysis (C33, C38), individual gene examples (C36-C37), and global TSS analysis demonstrate strand specificity. The n=2 replicates are appropriate for method validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "e4152718-f4c3-45cb-8c17-c53bb459ff44",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The bisulfite conversion step is critical for achieving strand specificity in BisMapR, as demonstrated by loss of strand separation when R-loops are treated with RNase A before bisulfite conversion, and when bisulfite conversion is omitted (MapR NBSS shows minimal strand specificity).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C108-C110 are supported by appropriate negative controls shown in Figure 2B. The RNase A treatment control demonstrates that intact R-loops are required, and the NBSS control shows bisulfite conversion is essential. These controls strengthen the mechanistic understanding of the method.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "85a3283c-205c-4405-8e81-fee1f6280d1b",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "BisMapR reveals bidirectional R-loop formation at active gene promoters in mESCs, with negative strandedness upstream of TSS (consistent with antisense transcription) and positive strandedness downstream (consistent with sense transcription). This pattern is not detectable in MapR or MapR NBSS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C43 are supported by the strandedness analysis in Figure 2D and citation to divergent transcription literature (C39). The quantitative strandedness metric provides clear evidence for bidirectional R-loop formation. The biological interpretation is consistent with known transcription patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "de93ff7e-90e0-4029-8f7a-2bd2a91eb647",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "BisMapR accurately captures R-loop formation sites, as validated by high correlation and overlap with KAS-seq, an orthogonal method that detects single-stranded DNA regions. BisMapR signal is centralized over KAS-seq peaks and vice versa (r=0.99).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C50 are strongly supported by the KAS-seq comparison in Figure 2E-G. The high correlation (r=0.99, C49) and reciprocal enrichment patterns (C47-C48) provide strong orthogonal validation. This addresses potential concerns about method-specific artifacts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "e9e86446-f95a-49cc-a3d3-cda13fc74726",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "BisMapR achieves higher resolution than MapR in profiling R-loops, as demonstrated at bidirectional promoters where BisMapR clearly distinguishes R-loops on opposite template strands at genes separated by only 294 bases (Fbxo18/Ankrd16), while MapR shows broad non-strand-specific enrichment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C56 are supported by specific examples (Figure 3A-B) and global analysis of 1001 bidirectional promoters. The ability to resolve R-loops at closely spaced TSS (294 bp, 125 bp) demonstrates superior resolution. However, C51 is somewhat speculative about the mechanism; the resolution improvement is empirically demonstrated but mechanistic understanding is incomplete.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "77cc8930-5774-4c1f-8a07-dd56ec6c969e",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "BisMapR shows higher resolution than DRIPc-seq, with BisMapR signal sharply localized to the 5' end of genes (TSS region) while DRIPc signal is broadly distributed across gene bodies. This difference is especially evident at bidirectional promoters where BisMapR clearly delineates individual transcription units while DRIPc does not.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C65 and C94-C97 are supported by direct comparison with published DRIPc data (Figure 3C-G). The metagene analysis (C58, C61) and specific examples (C60, C62-C63) demonstrate clear differences in signal distribution. The interpretation about immunoprecipitation of non-R-loop RNA regions (C96) is reasonable but somewhat speculative. The comparison is limited by using different cell types (mESC vs NIH3T3) for some analyses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "a8efb4aa-5990-4d11-85c5-f3cf27925972",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "At active gene promoters in mESCs, BisMapR identifies both non-template strand signal upstream of TSS (consistent with antisense divergent transcription) and template strand signal centered around TSS and extending downstream. Template signal shows enrichment slightly upstream and predominantly downstream of TSS with a dip at the TSS itself.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C99-C100 are supported by the data in Figures 2D and 3D. The pattern is consistent with known biology of divergent transcription. The observation about signal distribution around TSS (C100) is interesting but the mechanistic explanation provided in the Discussion is speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "408edc2d-ae9a-4e5f-bc7e-d2d81dfe9576",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "BisMapR reveals that enhancers cluster into four groups based on R-loop patterns, with two groups showing high unidirectional R-loops on either forward or reverse strands despite bidirectional transcription. High R-loop enhancers (groups 1 and 2) are strongly enriched for active enhancers (71-72%, p<1e-160) while low R-loop enhancers (group 4) are enriched for primed enhancers (74%, p<1e-1000). This pattern is also observed in DRIPc data from 3T3 cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C79 are supported by unsupervised clustering analysis (Figure 4A), GRO-seq data (C67-C68, C72), and statistical enrichment tests with highly significant p-values (C73-C76). The replication in DRIPc data (C78) strengthens the finding. The clustering approach is appropriate and the statistical tests are correctly applied. The biological interpretation is novel and well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "ded61f6d-745e-468e-bc0c-2c3448df4de7",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "High R-loop enhancers are enriched for KLF7, KLF1, and SP1 transcription factor binding motifs and show high GC skew on non-template strands. These enhancers also show high KAS-seq signal, with 704 enhancers showing both high KAS-seq and high R-loop signals (1.53-fold enrichment, p=1.96e-35).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C85 are supported by motif analysis (Figure 4D), GC skew analysis (C81, Figure 4E), and KAS-seq comparison (C82-C84, Figure 4F). The statistical enrichment (C83) is significant. The complementarity of BisMapR and KAS-seq (C85) is a reasonable conclusion. However, the motif analysis compares groups 1+2 vs 3+4, which may not be the most stringent comparison.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "a04aeb1d-39d3-48d5-906f-d281ef5c11c3",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "At high R-loop enhancers, strand-specific R-loops form unidirectionally from KLF7 motifs despite clear bidirectional transcription (as shown by H3K27Ac and GRO-seq). KLF7 is a pioneer transcription factor associated with asymmetric chromatin opening, suggesting KLF7 binding may contribute to unidirectional R-loop formation or stabilization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C90 are supported by re-centering analysis around KLF7 motifs (Figure 4G-J) and evidence of bidirectional transcription (C89). The association with KLF7's known pioneer factor activity (C86-C87) provides biological context. However, C90 is appropriately cautious ('may contribute') as the data show correlation but not causation. Direct functional experiments would be needed to establish mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "dd9fe55c-16c7-4244-accb-4fb418f15849",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "BisMapR reveals a previously unnoticed subset of active enhancers that form R-loops exclusively on one strand despite bidirectional transcription, providing a tool to study how directional chromatin accessibility contributes to R-loop stabilization at enhancers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C106-C107 summarize the key biological finding. This is well-supported by the enhancer clustering analysis and KLF7 motif association. The novelty claim is justified as this pattern was not clearly described before. C107 appropriately frames this as a tool for future studies rather than claiming mechanistic understanding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "81902f28-8f61-4df0-98ea-9929125598c8",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "BisMapR achieves greater resolution and is faster than existing strand-specific R-loop profiling strategies, which have drawbacks including low resolution, high input requirements, involved sample processing, and lengthy experiment times.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8 and C93 are supported by the comparison with DRIPc showing superior resolution (hundreds of bases vs kilobases). The speed claim (C8) is supported by the protocol description showing BisMapR adds only bisulfite conversion to MapR. The characterization of existing methods' limitations (C93) is supported by appropriate citations. However, direct quantitative comparison of processing time would strengthen the speed claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "7dbc195f-d6b9-4743-806b-59329084290d",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Current R-loop detection methods rely on S9.6 antibody or catalytically inactive RNase H. S9.6-based approaches have limitations including high input requirements, low signal-to-noise ratio, and limited resolution (except BisDRIP-seq), potentially due to antibody specificity issues. MapR, an RNase H-based method, has high sensitivity and signal-to-noise ratio. S9.6 and RNase H methods recognize overlapping but distinct R-loop populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C25, C91, and C98 accurately summarize prior work with appropriate citations. These are background claims that contextualize the need for BisMapR. The characterization of method limitations is supported by cited literature. This provides important context but represents prior knowledge rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "fd19f5eb-f0c0-4595-92b5-3a0434192b45",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "R-loops are three-stranded structures formed when nascent RNA hybridizes with template DNA, leaving the non-template strand as ssDNA. They have essential roles in nuclear processes but their aberrant accumulation is associated with genome instability and disease. Sodium bisulfite selectively deaminates cytosines in ssDNA but not dsDNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C11-C15, and C26 represent established background knowledge appropriately cited. These provide necessary context for understanding BisMapR but are not novel findings of this study. The bisulfite chemistry (C26) is well-established and correctly applied.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    },
+    {
+      "id": "25b4099d-cf8d-41bf-a0ed-11acf9f4ac73",
+      "content_id": "4492a6f7-e3fc-42b2-a1ed-d1455606558b",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "R-loop formation is associated with G-quadruplex potential on non-template strands. R-loop formation precedes GQ formation, but stable GQs provide positive feedback to promote R-loops and increase transcription efficiency. R-loop formation and GQ stabilization may help maintain nucleosome-free regions and sustain enhancer activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C101-C104 cite relevant literature about R-loop/GQ relationships. However, C105 is speculative, connecting the authors' enhancer findings to GQ biology without direct experimental evidence. The GC skew data (C81) is consistent with GQ potential, but no direct GQ measurements were performed. This represents a reasonable hypothesis for future testing rather than a supported conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:35:22.241588Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "082d26f8-0423-4394-a936-9ee2f87fa734",
+      "result_id": "ca72151a-7d77-4d6d-ac52-d00aed29de77"
+    },
+    {
+      "claim_id": "9d504220-a192-4f82-8879-413624b66109",
+      "result_id": "ca72151a-7d77-4d6d-ac52-d00aed29de77"
+    },
+    {
+      "claim_id": "696aca3a-8890-4890-94e1-01cdd3c05d62",
+      "result_id": "ca72151a-7d77-4d6d-ac52-d00aed29de77"
+    },
+    {
+      "claim_id": "c82ed3c3-8f07-4743-9a8b-2982537d22c7",
+      "result_id": "ca72151a-7d77-4d6d-ac52-d00aed29de77"
+    },
+    {
+      "claim_id": "2c639d79-4d0b-4a38-9f15-09f441efb349",
+      "result_id": "ca72151a-7d77-4d6d-ac52-d00aed29de77"
+    },
+    {
+      "claim_id": "0ce155fb-b091-44fc-807c-b6c5b7a4cd3d",
+      "result_id": "ca72151a-7d77-4d6d-ac52-d00aed29de77"
+    },
+    {
+      "claim_id": "2245114a-e08a-41c0-9cbb-c7a7464227eb",
+      "result_id": "ca72151a-7d77-4d6d-ac52-d00aed29de77"
+    },
+    {
+      "claim_id": "41657787-10b7-412f-b469-a5e65c167007",
+      "result_id": "45fee17d-0403-4153-8149-254951c002c1"
+    },
+    {
+      "claim_id": "916c1f15-1cb8-4171-a4a5-64e4c2672acd",
+      "result_id": "45fee17d-0403-4153-8149-254951c002c1"
+    },
+    {
+      "claim_id": "aeb6a4df-957a-4e65-8f40-259f8fc4f0af",
+      "result_id": "45fee17d-0403-4153-8149-254951c002c1"
+    },
+    {
+      "claim_id": "56126163-798d-4d6b-8bee-b674bbb72fe7",
+      "result_id": "45fee17d-0403-4153-8149-254951c002c1"
+    },
+    {
+      "claim_id": "a2034dcc-3de3-4e26-94d6-c7f7087a4917",
+      "result_id": "45fee17d-0403-4153-8149-254951c002c1"
+    },
+    {
+      "claim_id": "c799f5c9-f16d-4956-803e-eefda11a9862",
+      "result_id": "45fee17d-0403-4153-8149-254951c002c1"
+    },
+    {
+      "claim_id": "68c951f6-f35f-4b2e-990b-04b1fcd0c0e3",
+      "result_id": "45fee17d-0403-4153-8149-254951c002c1"
+    },
+    {
+      "claim_id": "3265587c-2936-4fb6-8710-191f9de1b17d",
+      "result_id": "45fee17d-0403-4153-8149-254951c002c1"
+    },
+    {
+      "claim_id": "99ee8ead-53b6-442c-9bef-899a9f700af0",
+      "result_id": "45fee17d-0403-4153-8149-254951c002c1"
+    },
+    {
+      "claim_id": "528db937-74fe-4599-9ed6-0b1fbe0cc19e",
+      "result_id": "45fee17d-0403-4153-8149-254951c002c1"
+    },
+    {
+      "claim_id": "3deb8b04-cb04-443e-b127-bc29645a3e00",
+      "result_id": "45fee17d-0403-4153-8149-254951c002c1"
+    },
+    {
+      "claim_id": "a7d437aa-c345-4230-8ea3-c269e6927144",
+      "result_id": "e4152718-f4c3-45cb-8c17-c53bb459ff44"
+    },
+    {
+      "claim_id": "2d727095-c6f2-4477-8ebc-e8cb1c727d99",
+      "result_id": "e4152718-f4c3-45cb-8c17-c53bb459ff44"
+    },
+    {
+      "claim_id": "96a67387-aacd-4a51-864a-388f391488ba",
+      "result_id": "e4152718-f4c3-45cb-8c17-c53bb459ff44"
+    },
+    {
+      "claim_id": "bba80270-2376-4307-bcfd-eeb5260fec0d",
+      "result_id": "85a3283c-205c-4405-8e81-fee1f6280d1b"
+    },
+    {
+      "claim_id": "81c6263f-74cd-41bd-be12-94cc803169c2",
+      "result_id": "85a3283c-205c-4405-8e81-fee1f6280d1b"
+    },
+    {
+      "claim_id": "7fa0c5e0-2b3e-4671-956a-1763ea9dbc89",
+      "result_id": "85a3283c-205c-4405-8e81-fee1f6280d1b"
+    },
+    {
+      "claim_id": "2e114b08-19c9-4751-8e9d-c68483ad0ba3",
+      "result_id": "85a3283c-205c-4405-8e81-fee1f6280d1b"
+    },
+    {
+      "claim_id": "919c4418-8d20-4b2a-8c49-0c0585b685ee",
+      "result_id": "85a3283c-205c-4405-8e81-fee1f6280d1b"
+    },
+    {
+      "claim_id": "463f208e-7878-4b59-a145-0052c1c37c9a",
+      "result_id": "de93ff7e-90e0-4029-8f7a-2bd2a91eb647"
+    },
+    {
+      "claim_id": "cac8f672-5b6b-496e-bf89-fdaa2fb85149",
+      "result_id": "de93ff7e-90e0-4029-8f7a-2bd2a91eb647"
+    },
+    {
+      "claim_id": "fb35dd7b-404b-4337-86f9-8fe8507c7b35",
+      "result_id": "de93ff7e-90e0-4029-8f7a-2bd2a91eb647"
+    },
+    {
+      "claim_id": "084069de-e19d-4808-aace-ce4ef975c7b1",
+      "result_id": "de93ff7e-90e0-4029-8f7a-2bd2a91eb647"
+    },
+    {
+      "claim_id": "4b70e866-ff37-4ab7-9484-42f43752d795",
+      "result_id": "de93ff7e-90e0-4029-8f7a-2bd2a91eb647"
+    },
+    {
+      "claim_id": "793b9d2e-45be-44da-a808-87abcd40516a",
+      "result_id": "e9e86446-f95a-49cc-a3d3-cda13fc74726"
+    },
+    {
+      "claim_id": "076681d8-ea9d-4e7a-917a-e01078ea418d",
+      "result_id": "e9e86446-f95a-49cc-a3d3-cda13fc74726"
+    },
+    {
+      "claim_id": "c8e5914f-7e45-45f8-b47e-bd1327a4de15",
+      "result_id": "e9e86446-f95a-49cc-a3d3-cda13fc74726"
+    },
+    {
+      "claim_id": "1c76df1c-0f4f-4eb2-9631-760075dc4270",
+      "result_id": "e9e86446-f95a-49cc-a3d3-cda13fc74726"
+    },
+    {
+      "claim_id": "61629b00-b204-44e9-8b72-d907076dcc5e",
+      "result_id": "e9e86446-f95a-49cc-a3d3-cda13fc74726"
+    },
+    {
+      "claim_id": "03a93528-ea1a-4b5f-8e19-ed43cc2caf85",
+      "result_id": "e9e86446-f95a-49cc-a3d3-cda13fc74726"
+    },
+    {
+      "claim_id": "9bedec75-1ba8-4323-828f-e689984874ca",
+      "result_id": "77cc8930-5774-4c1f-8a07-dd56ec6c969e"
+    },
+    {
+      "claim_id": "b0f14aea-31a4-437a-9ee8-f97387903e0c",
+      "result_id": "77cc8930-5774-4c1f-8a07-dd56ec6c969e"
+    },
+    {
+      "claim_id": "be634772-3285-49f8-b87b-18d9ceb8d37d",
+      "result_id": "77cc8930-5774-4c1f-8a07-dd56ec6c969e"
+    },
+    {
+      "claim_id": "af189d7b-96d1-477b-8d71-12b57414dcc7",
+      "result_id": "77cc8930-5774-4c1f-8a07-dd56ec6c969e"
+    },
+    {
+      "claim_id": "54102beb-53be-4973-9149-c8fa413686e8",
+      "result_id": "77cc8930-5774-4c1f-8a07-dd56ec6c969e"
+    },
+    {
+      "claim_id": "6f10d313-75ae-4ba5-9016-9be1bb0615cb",
+      "result_id": "77cc8930-5774-4c1f-8a07-dd56ec6c969e"
+    },
+    {
+      "claim_id": "16aa8e23-c34d-4866-8251-b74c4ab514b5",
+      "result_id": "77cc8930-5774-4c1f-8a07-dd56ec6c969e"
+    },
+    {
+      "claim_id": "910bea39-a299-448d-b531-4fb7d16564cb",
+      "result_id": "77cc8930-5774-4c1f-8a07-dd56ec6c969e"
+    },
+    {
+      "claim_id": "516a6c38-fafb-4b7b-8c96-2fbabb3d9070",
+      "result_id": "77cc8930-5774-4c1f-8a07-dd56ec6c969e"
+    },
+    {
+      "claim_id": "2349a4af-ae33-403b-a380-95c69f14b135",
+      "result_id": "77cc8930-5774-4c1f-8a07-dd56ec6c969e"
+    },
+    {
+      "claim_id": "2b542776-b2e4-4c13-844c-235d0ef699de",
+      "result_id": "77cc8930-5774-4c1f-8a07-dd56ec6c969e"
+    },
+    {
+      "claim_id": "d34f6255-35f7-45b7-a997-85443ba79c31",
+      "result_id": "77cc8930-5774-4c1f-8a07-dd56ec6c969e"
+    },
+    {
+      "claim_id": "f2473e20-d6fe-4a00-bdac-0a557a77bfe2",
+      "result_id": "77cc8930-5774-4c1f-8a07-dd56ec6c969e"
+    },
+    {
+      "claim_id": "a2b1c695-2af1-4994-8038-731b3db12b3c",
+      "result_id": "a8efb4aa-5990-4d11-85c5-f3cf27925972"
+    },
+    {
+      "claim_id": "3de74b16-bdb4-47bc-9e81-cbc202099ac2",
+      "result_id": "a8efb4aa-5990-4d11-85c5-f3cf27925972"
+    },
+    {
+      "claim_id": "5331ee05-d7f0-4d13-8e8f-845cd81c325b",
+      "result_id": "a8efb4aa-5990-4d11-85c5-f3cf27925972"
+    },
+    {
+      "claim_id": "14553e02-4a3e-4531-aef9-d656069d07bb",
+      "result_id": "408edc2d-ae9a-4e5f-bc7e-d2d81dfe9576"
+    },
+    {
+      "claim_id": "83923afe-2cbf-4389-859b-b849bf09fcb4",
+      "result_id": "408edc2d-ae9a-4e5f-bc7e-d2d81dfe9576"
+    },
+    {
+      "claim_id": "2ea1461b-2d0e-4133-87b3-6e54fc9b59b0",
+      "result_id": "408edc2d-ae9a-4e5f-bc7e-d2d81dfe9576"
+    },
+    {
+      "claim_id": "4910cb8d-9dcb-46aa-a892-562f920ea7e3",
+      "result_id": "408edc2d-ae9a-4e5f-bc7e-d2d81dfe9576"
+    },
+    {
+      "claim_id": "7c1810f9-4114-4636-9e4b-1c7d84b79d78",
+      "result_id": "408edc2d-ae9a-4e5f-bc7e-d2d81dfe9576"
+    },
+    {
+      "claim_id": "c86faf87-76c9-4f9d-994a-50f8dbc34568",
+      "result_id": "408edc2d-ae9a-4e5f-bc7e-d2d81dfe9576"
+    },
+    {
+      "claim_id": "e9e653be-5ad8-497f-84eb-a0f003a94630",
+      "result_id": "408edc2d-ae9a-4e5f-bc7e-d2d81dfe9576"
+    },
+    {
+      "claim_id": "6d4a3621-8502-4574-8b1d-241aee0e3eed",
+      "result_id": "408edc2d-ae9a-4e5f-bc7e-d2d81dfe9576"
+    },
+    {
+      "claim_id": "0c0395ba-262e-4de2-a9a3-e0e837235062",
+      "result_id": "408edc2d-ae9a-4e5f-bc7e-d2d81dfe9576"
+    },
+    {
+      "claim_id": "bf4fe960-bc6f-4cd2-b337-80d96d349c7c",
+      "result_id": "408edc2d-ae9a-4e5f-bc7e-d2d81dfe9576"
+    },
+    {
+      "claim_id": "a1be82a3-253e-4cd4-a9a5-5dd8acfecf7c",
+      "result_id": "408edc2d-ae9a-4e5f-bc7e-d2d81dfe9576"
+    },
+    {
+      "claim_id": "c1482579-2bc4-4694-9921-3c166ae81d74",
+      "result_id": "408edc2d-ae9a-4e5f-bc7e-d2d81dfe9576"
+    },
+    {
+      "claim_id": "d0a5a644-d981-4392-92d2-0a45c688cbd2",
+      "result_id": "408edc2d-ae9a-4e5f-bc7e-d2d81dfe9576"
+    },
+    {
+      "claim_id": "6e7d0447-f9d7-45d3-b564-eaaf8d35d6f6",
+      "result_id": "408edc2d-ae9a-4e5f-bc7e-d2d81dfe9576"
+    },
+    {
+      "claim_id": "e3e83f1a-3f79-4081-aa1c-6abaf8f18958",
+      "result_id": "ded61f6d-745e-468e-bc0c-2c3448df4de7"
+    },
+    {
+      "claim_id": "f3c273cc-7381-4f34-a907-4fed8cae3796",
+      "result_id": "ded61f6d-745e-468e-bc0c-2c3448df4de7"
+    },
+    {
+      "claim_id": "f76bb978-2cf5-4dfd-9ea7-4ae038619bae",
+      "result_id": "ded61f6d-745e-468e-bc0c-2c3448df4de7"
+    },
+    {
+      "claim_id": "616121eb-5656-48ed-9df7-caffc09ca9f2",
+      "result_id": "ded61f6d-745e-468e-bc0c-2c3448df4de7"
+    },
+    {
+      "claim_id": "bec64dd8-2821-40dd-868f-4d155b1ba297",
+      "result_id": "ded61f6d-745e-468e-bc0c-2c3448df4de7"
+    },
+    {
+      "claim_id": "5f95f2a5-8798-43c5-a5f7-4dc9abf78b7c",
+      "result_id": "ded61f6d-745e-468e-bc0c-2c3448df4de7"
+    },
+    {
+      "claim_id": "0ec7e4d4-dd39-4d9f-8e67-5acf67130c32",
+      "result_id": "a04aeb1d-39d3-48d5-906f-d281ef5c11c3"
+    },
+    {
+      "claim_id": "18559f44-e9db-43ce-afb8-dd4454092dc3",
+      "result_id": "a04aeb1d-39d3-48d5-906f-d281ef5c11c3"
+    },
+    {
+      "claim_id": "6c43d554-8631-4766-b1c5-30308cebd465",
+      "result_id": "a04aeb1d-39d3-48d5-906f-d281ef5c11c3"
+    },
+    {
+      "claim_id": "58518cb7-df03-4167-a464-f73d365a0b8f",
+      "result_id": "a04aeb1d-39d3-48d5-906f-d281ef5c11c3"
+    },
+    {
+      "claim_id": "ec933e1f-5843-4a13-a390-6aa3a2d15616",
+      "result_id": "a04aeb1d-39d3-48d5-906f-d281ef5c11c3"
+    },
+    {
+      "claim_id": "9175e53a-fff6-47c9-8903-0d750b3f7ada",
+      "result_id": "dd9fe55c-16c7-4244-accb-4fb418f15849"
+    },
+    {
+      "claim_id": "e97f2369-42f3-4945-a7ef-d66e27f86aa7",
+      "result_id": "dd9fe55c-16c7-4244-accb-4fb418f15849"
+    },
+    {
+      "claim_id": "99b3ceb0-6739-48f4-be28-67c18b266ec1",
+      "result_id": "dd9fe55c-16c7-4244-accb-4fb418f15849"
+    },
+    {
+      "claim_id": "1e7d8912-2391-49be-b3e8-30fe7c03eb69",
+      "result_id": "81902f28-8f61-4df0-98ea-9929125598c8"
+    },
+    {
+      "claim_id": "1ad1d37c-c3d6-46ac-9588-bb265bb685b0",
+      "result_id": "81902f28-8f61-4df0-98ea-9929125598c8"
+    },
+    {
+      "claim_id": "702e7df3-c112-4b53-8e68-fa0f4ae7e548",
+      "result_id": "81902f28-8f61-4df0-98ea-9929125598c8"
+    },
+    {
+      "claim_id": "ebca0454-ee82-4789-b3db-01f90b934304",
+      "result_id": "7dbc195f-d6b9-4743-806b-59329084290d"
+    },
+    {
+      "claim_id": "f0497de0-7185-445c-8bf2-8a85eb62fc1d",
+      "result_id": "7dbc195f-d6b9-4743-806b-59329084290d"
+    },
+    {
+      "claim_id": "77133953-f485-4e5d-ad6c-5c4f81ee290c",
+      "result_id": "7dbc195f-d6b9-4743-806b-59329084290d"
+    },
+    {
+      "claim_id": "4c723809-42f5-4bbe-b532-4f035afe7e9d",
+      "result_id": "7dbc195f-d6b9-4743-806b-59329084290d"
+    },
+    {
+      "claim_id": "482adebc-7646-4a66-9688-637b1d36dc84",
+      "result_id": "7dbc195f-d6b9-4743-806b-59329084290d"
+    },
+    {
+      "claim_id": "77ec9792-2ada-496a-aaba-1b5fdf46c28f",
+      "result_id": "7dbc195f-d6b9-4743-806b-59329084290d"
+    },
+    {
+      "claim_id": "7281bda2-276a-47c7-a648-d64741b282f0",
+      "result_id": "7dbc195f-d6b9-4743-806b-59329084290d"
+    },
+    {
+      "claim_id": "563c8e5d-856d-4a73-a0ea-1aae5a85a722",
+      "result_id": "7dbc195f-d6b9-4743-806b-59329084290d"
+    },
+    {
+      "claim_id": "f85153c9-0128-4d3f-bfb8-2cc1d0858339",
+      "result_id": "7dbc195f-d6b9-4743-806b-59329084290d"
+    },
+    {
+      "claim_id": "6ed93f31-de61-46d6-85fc-c78e93424f58",
+      "result_id": "7dbc195f-d6b9-4743-806b-59329084290d"
+    },
+    {
+      "claim_id": "88bb2174-b541-4560-8398-ec6c6c75697d",
+      "result_id": "7dbc195f-d6b9-4743-806b-59329084290d"
+    },
+    {
+      "claim_id": "dd6f0f20-48cd-4bb8-93bd-6d183ae9648e",
+      "result_id": "7dbc195f-d6b9-4743-806b-59329084290d"
+    },
+    {
+      "claim_id": "8c1eac30-11c3-4005-ab5a-a42b9270de9b",
+      "result_id": "fd19f5eb-f0c0-4595-92b5-3a0434192b45"
+    },
+    {
+      "claim_id": "aba6db42-043f-4cfc-aec7-fc8eaeec6353",
+      "result_id": "fd19f5eb-f0c0-4595-92b5-3a0434192b45"
+    },
+    {
+      "claim_id": "0f2b3d5a-a79f-47d5-bb2c-9bebb5cbf180",
+      "result_id": "fd19f5eb-f0c0-4595-92b5-3a0434192b45"
+    },
+    {
+      "claim_id": "2ad3a790-6def-469a-9625-f3f4b100b362",
+      "result_id": "fd19f5eb-f0c0-4595-92b5-3a0434192b45"
+    },
+    {
+      "claim_id": "9d401ed7-2a1d-422e-a9ae-af9b2500ed0a",
+      "result_id": "fd19f5eb-f0c0-4595-92b5-3a0434192b45"
+    },
+    {
+      "claim_id": "2155364c-a9d7-4020-bc9e-476531aaf648",
+      "result_id": "fd19f5eb-f0c0-4595-92b5-3a0434192b45"
+    },
+    {
+      "claim_id": "3bc13d47-e715-4ba2-8739-ab99c1a1477e",
+      "result_id": "fd19f5eb-f0c0-4595-92b5-3a0434192b45"
+    },
+    {
+      "claim_id": "d8dcc389-a724-4002-8f2f-3e973dde4065",
+      "result_id": "fd19f5eb-f0c0-4595-92b5-3a0434192b45"
+    },
+    {
+      "claim_id": "78734634-fde5-489a-bc21-eb723c69eaa6",
+      "result_id": "fd19f5eb-f0c0-4595-92b5-3a0434192b45"
+    },
+    {
+      "claim_id": "b037827f-9475-4aeb-a4b7-3426ecb3bd0f",
+      "result_id": "25b4099d-cf8d-41bf-a0ed-11acf9f4ac73"
+    },
+    {
+      "claim_id": "4d983983-4588-40cd-b398-f5cb4cc19879",
+      "result_id": "25b4099d-cf8d-41bf-a0ed-11acf9f4ac73"
+    },
+    {
+      "claim_id": "3e31ff68-7a44-431b-8a96-15de6d37a05d",
+      "result_id": "25b4099d-cf8d-41bf-a0ed-11acf9f4ac73"
+    },
+    {
+      "claim_id": "2f36c40b-1851-4380-a779-d976cc202027",
+      "result_id": "25b4099d-cf8d-41bf-a0ed-11acf9f4ac73"
+    },
+    {
+      "claim_id": "f3d96f9c-5692-4a29-a46b-46eab9a93a26",
+      "result_id": "25b4099d-cf8d-41bf-a0ed-11acf9f4ac73"
+    }
+  ],
+  "comparisons": []
+}

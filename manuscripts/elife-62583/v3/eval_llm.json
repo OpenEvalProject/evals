@@ -1,0 +1,339 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Mice were successfully trained on a self-timed movement task where they learned to initiate licking after a variable interval following a start-timing cue. The distribution of first-lick times was broadly distributed over several seconds, exhibited Weber's Law (scalar property of timing), and the hazard function peaked near the target time after training, indicating accurate latent timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C22, C23, and C24 collectively demonstrate successful behavioral training with appropriate temporal characteristics. The behavioral data in Figure 1 shows clear evidence of timing behavior consistent with established principles (Weber's Law), and the hazard function analysis provides quantitative support for accurate timing. The experimental design and behavioral outcomes are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Dopaminergic signals exhibited slow ramping dynamics over seconds during the timing interval, with variable dynamics that predicted movement timing on single trials. Trials with early first-licks showed steep ramping from higher baseline levels, while trials with later first-licks showed slower ramping from lower baselines, with all ramps terminating at similar amplitudes. These ramping dynamics were observed in GCaMP6f signals but not in tdTomato controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 and C25-C30 are strongly supported by the photometry data shown in Figures 2-3. The systematic relationship between ramping dynamics and movement timing is clearly demonstrated across multiple recording sites and sensors. The control experiments with tdTomato (C31) and the kinetics analysis (C27) rule out technical artifacts. The n=12 mice provides adequate statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Baseline dopaminergic signals before the cue were correlated with first-lick timing, with higher baseline fluorescence predicting earlier movements. This correlation was present before the lamp-off event (r=-0.63) and strengthened during the lamp-off interval (r=-0.89). Ramping dynamics were not evident in tdTomato control signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 are supported by the data in Figure 2 and supplementary figures. The correlation statistics are clearly reported with confidence intervals and appropriate sample sizes (n=12 mice). The tdTomato control (C31) provides important validation that the baseline effects are not optical artifacts. The authors also validated their dF/F methods extensively (Figure 2\u2014figure supplement 2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Similar ramping dynamics were observed across multiple dopaminergic recording sites (SNc terminals in DLS, VTA cell bodies) and with multiple sensors (GCaMP6f, dLight1.1, DA2m). The fast kinetics of these sensors (t1/2 ~75-125 ms) argue against the ramping being an artifact of sluggish sensor responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 demonstrate the generalizability of the ramping phenomenon across anatomical locations and measurement techniques. The kinetics measurements in Figure 3\u2014figure supplement 1 provide quantitative evidence that sensor kinetics cannot account for seconds-long ramping. The convergent evidence from multiple sensors with different kinetics (C37) strengthens the conclusion that ramping reflects genuine dopamine dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "A nested GLM encoding model revealed that timing-independent predictors (cue, lick, EMG events) were insufficient to explain GCaMP6f signal variability. Two timing-dependent predictors significantly improved the model: a baseline offset proportional to first-lick time and a 'stretch' feature representing percentages of the timed interval. These timing-dependent features did not improve models of tdTomato control signals. PCA revealed ramp-like and baseline-offset components explaining up to 93% of variance in DAN signals (mean 66%) but only 4% in tdTomato controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 are supported by comprehensive modeling analyses shown in Figure 5 and supplements. The nested GLM approach appropriately controls for potential confounds (movement artifacts, optical artifacts) before testing timing-dependent features. The contrast between GCaMP6f and tdTomato models (C43, C45) is particularly compelling. The PCA analysis (C44-C45) provides independent validation. Sample size (n=12 mice) is adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Single-trial GCaMP6f signals predicted first-lick time using a threshold-crossing decoding model, with predictive power improving for higher thresholds (R\u00b2 ranging from 0.54 for low to 0.82 for high thresholds). GCaMP6f threshold-crossing time dominated the nested decoding model, explaining 10% of variance in first-lick time on average (range 1-27%) even after accounting for trial history and baseline signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 are supported by the decoding analyses in Figure 6. The threshold-crossing approach provides a quantitative link between single-trial dopaminergic dynamics and behavior. The nested model analysis (C47-C48) appropriately controls for alternative explanations. The range of variance explained (1-27%) suggests some heterogeneity across sessions, but the average effect is robust across n=12 mice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Multiple lines of evidence support ramping rather than discrete step dynamics on single trials: (1) the slope of threshold-crossing time vs. first-lick time increased with threshold level (consistent with ramps, not steps); (2) step-aligned averaging did not produce a clear step function but rather a transient on background ramping; (3) signal variance decreased monotonically during the interval rather than peaking at the 50th percentile step time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 address an important alternative hypothesis (step vs. ramp dynamics) with three complementary analyses shown in Figure 6 supplements. Each analysis provides evidence against discrete steps and for continuous ramping. The threshold-slope analysis (C49) is particularly elegant. While the Bayesian hierarchical model showed ambiguous classification (Figure 6\u2014figure supplement 2), the geometric and variance analyses provide clearer evidence for ramping.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Optogenetic manipulation of DANs during the timing interval bidirectionally shifted movement timing: activation caused significant early-shifting (D=0.078, p=2.8\u00d710\u207b\u00b2\u2076, n=12 mice) while inhibition caused late-shifting (D=0.051, p=3.1\u00d710\u207b\u2074, n=4 mice). No-opsin controls showed no effect (p=0.62, n=5 mice). Importantly, DAN activation/inhibition did not elicit or suppress immediate licking outside the task context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 provide strong causal evidence from optogenetic experiments shown in Figure 7. The bidirectional effects with appropriate controls (no-opsin, out-of-context stimulation) are compelling. Statistical tests are appropriate (Kolmogorov-Smirnov) with highly significant p-values. The lack of immediate licking effects outside the task (C55-C56) is important for interpretation. Sample sizes are adequate for activation (n=12) though smaller for inhibition (n=4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "A probabilistic movement-state decoding model revealed that instantaneous GCaMP6f signals were robustly predictive of movement state, with signals up to 2 seconds in the past contributing significantly. More recent signals progressively absorbed variance explained by earlier signals. The model predicted the hazard function remarkably well, explaining 65% of variance on average (n=12 mice). Shuffling timepoint identifiers abolished predictive power (5% variance explained).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 are supported by the probabilistic modeling in Figure 8. The model selection analysis (C57, Figure 8\u2014figure supplement 1) appropriately identified GCaMP6f as the key predictor. The nested temporal analysis (C58-C59) provides insight into the dynamics of prediction. The hazard function decoding (C60) with 65% variance explained is impressive, and the shuffled control (C61) demonstrates specificity. Sample size (n=12) is adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C12",
+      "C76",
+      "C77",
+      "C92",
+      "C93"
+    ],
+    "result": "The authors propose that dopaminergic signals modulate the moment-to-moment probability of movement initiation rather than directly triggering movements. This is supported by: (1) optogenetic activation causing systematic early-shifting rather than immediate movements; (2) inhibition causing late-shifting; (3) endogenous ramping dynamics quantitatively predicting instantaneous movement probability; (4) signals becoming progressively better predictors as movement onset approached.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10, C12, C76-C77, and C92-C93 represent the central mechanistic interpretation. This is well-supported by the combined optogenetic (Figure 7) and probabilistic modeling (Figure 8) results. The interpretation that dopamine modulates probability rather than directly triggering movement is consistent with all observations and appropriately cautious. The convergence of correlative (photometry) and causal (optogenetics) evidence is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C11",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The authors propose that ramping dopaminergic signals likely encode dynamic reward expectation. This interpretation is based on: (1) trials culminating in reward; (2) absence of ramping in Pavlovian paradigms with passive reward delivery; (3) the key difference that animals actively determine reward timing in the self-timed task; (4) consistency with reward prediction error models where certainty about reward timing relative to movement resolves uncertainty in the value landscape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C11, C62-C66 represent an interpretive framework linking the observed ramping to reward expectation. While plausible and consistent with the data, this interpretation is not directly tested in the current experiments. The comparison to Pavlovian paradigms (C63-C64) relies on literature citations rather than direct experimental comparison. The RPE model framework (C66) is theoretical. Additional experiments manipulating reward expectation independently of movement timing would strengthen this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "Over-stimulation of DANs with higher light levels produced dyskinetic body movements rather than purposive licking, with sustained large increases in DLS dopamine comparable to reward transients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 is supported by the control experiments shown in Figure 7\u2014figure supplement 2. This observation is important for establishing that the optogenetic effects at physiological levels are not simply due to non-specific motor activation. The simultaneous dopamine measurements provide quantitative validation that over-stimulation produces non-physiological dopamine levels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "DAN signals predict movement timing via two low-dimensional features (baseline offset and temporal stretching), similar to dynamics observed in other brain areas during self-timed movements (dorsal striatum, lateral interparietal cortex, motor areas, DMFC). Recurrent neural network models suggest such dynamics could be controlled by tonic or ramping inputs. The authors propose DANs could orchestrate cortico-striatal timing dynamics through their modulatory role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 connect the current findings to broader literature on timing-related neural dynamics. The similarity to other brain areas (C81-C82) is well-supported by citations. The proposal that DANs could orchestrate cortico-striatal dynamics (C85) is speculative but reasonable given the anatomical connectivity and the observed signals. This represents an important conceptual contribution linking dopaminergic modulation to timing circuits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "Noisy, slow ramping signals were observed before spontaneous licks during the inter-trial interval, with time course related to inter-lick interval duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is supported by data shown in Figure 8\u2014figure supplement 2. This observation extends the ramping phenomenon beyond the trained task context, though the signals are noisier. The authors appropriately note that trained animals may have been 'rehearsing' or expecting reward even for spontaneous licks, limiting interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The authors review prior literature showing that optogenetic DAN modulation generally does not affect reward-related movements on the same trial in Pavlovian paradigms, but rather affects subsequent trials (learning effects). They argue that the robust concurrent effects observed in their self-timed movement task suggest additional factors are at play for self-timed movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 accurately summarize prior literature and appropriately contextualize the current findings. The contrast between Pavlovian paradigms (where same-trial effects are absent) and the self-timed task (where same-trial effects are robust) is important for interpretation. The inference that additional factors are at play (C71) is reasonable, though the specific factors remain to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The authors discuss connections to prior pharmacological literature showing dopamine bidirectionally affects timing (the 'internal clock'), and note resemblance to Pacemaker-Accumulator models. They speculate that self-timing implies prepared, pre-potent movements that may be more sensitive to dopaminergic modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 appropriately connect the findings to established literature on dopamine and timing. The comparison to Pacemaker-Accumulator models (C74) is reasonable though the authors appropriately note they make no claims about mechanism. The speculation about pre-potent movements (C75) is plausible but remains speculative without direct testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "The authors speculate that ramping DAN signals could be related to slow ramping signals in the human motor system (e.g., readiness potentials in EEG) that precede self-initiated movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C86 is speculative, connecting rodent dopaminergic signals to human EEG readiness potentials. While an interesting hypothesis, this connection is not directly tested and the relationship between these phenomena remains unclear. The citations support the existence of readiness potentials but not their relationship to dopaminergic ramping.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The authors compare their findings to prior work on dopamine and motivational vigor, noting an opposite relationship: in their task, higher reward rates were associated with lower baseline dopamine and later licks. For a given lick time, no differences in baseline/ramping signals were detected across periods with different reward rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 appropriately compare the current findings to prior work on motivational vigor. The observation of an opposite relationship (C88) is interesting and the authors provide a reasonable explanation (different strategic constraints). The within-lick-time analysis (C89) provides important control showing the relationship is not simply due to reward rate. However, this analysis is described as 'data not shown' which limits evaluation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "The authors examined whether dopaminergic signals related to movement vigor (speed/force) by analyzing EMG amplitude and lick-tube contact latency. No consistent differences in these parameters were found as a function of movement time; EMG signals were highly stereotyped regardless of first-lick time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 address an alternative interpretation (movement vigor). The negative result (C91) is important for ruling out this explanation. However, the data is described as 'not shown' which limits evaluation. The stereotyped EMG signals provide some support, but additional quantification would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The authors review established knowledge about dopamine's role in motor control, Parkinson's disease symptoms, pharmacological effects on timing, dopaminergic anatomy, and prior observations of phasic dopaminergic activity near movement onset. They note that physiological-range optogenetic activation does not elicit immediate movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C13-C21 accurately summarize established knowledge from prior literature with appropriate citations. These claims provide important context for the current study but do not represent new findings. The citations appear appropriate and the characterizations of prior work are accurate based on the references provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "The authors propose that their view of dopaminergic modulation of movement probability could relate to extrapyramidal movement disorders, where nigrostriatal dysfunction produces aberrations in movement initiation rather than paralysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 makes a reasonable connection to clinical observations in movement disorders. The interpretation is consistent with the data and appropriately cited. However, this remains a conceptual link rather than a directly tested hypothesis. The connection to clinical phenomenology is valuable for contextualizing the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "The authors speculate that recurrent cortical-basal ganglia-thalamic circuits could generate movements without external triggers, and that DANs could tune the propensity for self-timed movements through modulation of these circuits. Pathological loss of DANs could reduce production of such movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-C95 are speculative proposals about circuit mechanisms. While consistent with the data and anatomical knowledge, these mechanisms are not directly tested. The proposals are reasonable hypotheses for future investigation but remain speculative based on the current evidence.",
+    "result_type": "MINOR"
+  }
+]

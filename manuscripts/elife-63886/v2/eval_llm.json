@@ -1,0 +1,425 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The manuscript establishes the clinical and genetic context for studying KDM5 in intellectual disability (ID). Claims describe ID prevalence (1.5-3% globally), diagnostic criteria (IQ <70), associations between ID and chromatin-modifying enzyme mutations, and specific links between KDM5A/B/C loss-of-function mutations and ID.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C8-C11) are well-supported by citations to established literature on ID epidemiology, diagnosis, and genetic associations. The claims provide appropriate background knowledge from prior work and are consistent with the scientific consensus on ID and KDM5 mutations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Prior studies in model organisms and cell culture demonstrate that KDM5 family proteins have both demethylase-dependent and demethylase-independent functions in neuronal development and behavior. Evidence includes dendritic spine abnormalities in Kdm5c knockout mice, axonal defects in C. elegans rbr-2 mutants, behavioral deficits in mice, and the ability of some ID-associated mutations to alter transcription without affecting demethylase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C23 are supported by citations to published experimental studies in multiple model systems. The claims accurately represent prior work establishing both enzymatic and non-enzymatic functions of KDM5 proteins, providing appropriate context for the current study's focus on demethylase-independent mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The Drosophila mushroom body (MB) is a well-established model for studying neurodevelopmental defects associated with ID genes. The MB develops through asymmetric division of four neuroblasts per hemisphere, producing three sequential classes of Kenyon cells (\u03b3, \u03b1'/\u03b2', \u03b1/\u03b2) under tight transcriptional control. Loss-of-function mutations in ID-related genes (fmr1, dscam, dnab2) cause severe MB morphological defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C31 are supported by citations to established Drosophila neuroscience literature and represent well-characterized developmental biology. The claims provide appropriate justification for using the MB as a model system and establish the expected phenotypic consequences of ID gene mutations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Homozygous kdm5140 null mutants exhibit highly penetrant MB defects (~70% of animals) with predominant overextension of \u03b2 lobes and/or stunting of \u03b1 lobes. These defects occur independently of KDM5's canonical demethylase activity, as demethylase-dead mutants have normal MB morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 are supported by quantitative morphological analysis (Figure 1) and comparison to published demethylase-dead mutants (C41, citing Zamurrad et al., 2018). The data demonstrate a demethylase-independent requirement for KDM5 in MB development, which is a key finding of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "An endogenously tagged KDM5:HA strain shows broad nuclear expression across multiple CNS cell types including neurons, neuroblasts, and GMCs in both larval and adult brains, while being absent from neuropil regions. This expression pattern suggests KDM5 may regulate diverse neural processes from progenitor division to neuronal maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 are supported by immunostaining data (Figures 1D, 2A-E) showing KDM5:HA localization. The CRISPR-generated tagged strain expresses at wild-type levels (Figure 1C), validating the tool. The inference about diverse functions (C47) is reasonable given the broad expression pattern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Cell-type-specific knockdown experiments reveal that KDM5 is required in neuroblasts and their progeny, but not in mature Kenyon cells, for proper MB development. Knockdown with OK107-Gal4 (all MB cells) or neuroblast-specific drivers (wor-Gal4, insc-Gal4) causes significant \u03b1/\u03b2 lobe defects, while mature Kenyon cell-specific knockdown does not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C55 are supported by systematic knockdown experiments using multiple Gal4 drivers with different expression patterns (Figure 3). The quantitative analysis (Figure 3D) shows statistically significant defects only with drivers active in progenitors/immature neurons. Perdurance of Gal4/shRNA (C54-C55) is appropriately noted as a technical consideration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The R71C09-Gal4 driver, which specifically targets GMCs and immature neurons without expression in neuroblasts, was used to demonstrate that KDM5 is both necessary and sufficient in this cell population for proper MB axonal development. Knockdown causes profound \u03b1/\u03b2 lobe defects, while re-expression in kdm5140 mutants significantly rescues the phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C63 are supported by expression analysis (Figure 4A-C), knockdown experiments (Figure 4D), and rescue experiments (Figure 4E). The use of R71C09-Gal4 provides critical spatiotemporal resolution, and the rescue experiment (C63) demonstrates sufficiency. This is a key result establishing the cellular requirement for KDM5.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "TaDa transcriptomic profiling in kdm5140 GMCs and immature neurons identified 636 differentially expressed genes (DEGs) with moderate fold-changes (2.4-fold decrease, 2.1-fold increase). DEGs are enriched for GMC fate determination, neural precursor proliferation, axon guidance, and cytoplasmic translation. However, myc knockdown (which regulates ribosomal genes) does not cause MB defects, indicating the phenotype is not due to translation regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C70 are supported by TaDa data (Figure 5B-C, Supplementary files 1-2) and myc knockdown experiments (Figure 5\u2014figure supplement 2). The GO enrichment analysis is appropriate, and the myc control experiment (C69-C70) effectively rules out a translation-based mechanism, strengthening the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "CATaDa chromatin accessibility profiling shows minimal changes in kdm5140 GMCs and immature neurons, with only 17 downregulated genes associated with reduced accessibility. This supports a model where KDM5 regulates MB morphology via demethylase-independent mechanisms that do not dramatically alter chromatin accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 are supported by CATaDa data (Figure 5\u2014figure supplement 3). The minimal chromatin accessibility changes are consistent with the lack of MB phenotypes in demethylase-dead mutants (C41, C73). However, the interpretation assumes that demethylase activity primarily affects chromatin accessibility, which may be an oversimplification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Acute kdm5 shRNA knockdown in GMCs and immature neurons identified 1069 DEGs with larger fold-changes than the null mutant (5.5-fold decrease, 4.3-fold increase). Comparison of null and knockdown datasets revealed 319 high-confidence KDM5-regulated genes enriched for GMC fate determination, neural precursor proliferation, and axon guidance. Only 17 genes overlap with wing disc RNA-seq data, suggesting tissue-specific KDM5 function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C80 are supported by TaDa data (Figure 5E-H, Supplementary files 3-4). The larger fold-changes in acute knockdown vs. chronic null (C75-C76) are plausibly explained by compensatory mechanisms. The minimal overlap with wing disc data (C79-C80) supports tissue-specificity, though this comparison has limitations (different developmental stages, different methods).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Network analysis of 319 high-confidence KDM5-regulated genes identified seven functional networks, two enriched for MB development, neural precursor proliferation, and axon guidance genes. Dam-KDM5 TaDa identified 4399 genes with KDM5 binding peaks, with 120 overlapping the 319 regulated genes (significant enrichment, p=6.396E-07).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 are supported by network analysis (Figure 6A) and Dam-KDM5 TaDa data (Figure 6B-C, Supplementary file 5). The significant enrichment of KDM5-bound genes among regulated genes (C84) supports direct regulation. However, the 120/319 overlap means ~62% of regulated genes lack detectable KDM5 binding, suggesting indirect regulation or technical limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4",
+      "C85",
+      "C36"
+    ],
+    "result": "KDM5 directly binds to transcriptional start sites within the prospero (pros) locus and regulates its expression in GMCs and immature neurons. Dam-KDM5 occupancy data shows binding at the pros TSS, and pros is downregulated in kdm5 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C85, C36 are supported by Dam-KDM5 binding data (Figure 7A) and TaDa transcriptomic data showing pros downregulation. The combination of binding and expression data provides strong evidence for direct regulation of pros by KDM5.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C34",
+      "C35",
+      "C94",
+      "C115"
+    ],
+    "result": "Prospero is essential for MB morphogenesis. MB-specific knockdown of pros using OK107-Gal4 causes complete disruption of MB morphology with both growth and guidance defects in all animals. Pros encodes a homeodomain transcription factor required for axon pathfinding in other neuronal types, but its role in MB development was previously unexplored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C34, C35, C94, C115 are supported by pros knockdown experiments (Figure 7D-E) showing 100% penetrant severe MB defects. The prior knowledge about pros function in other neurons (C34) is appropriately cited. This is the first demonstration of pros requirement in MB development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Prospero functions downstream of KDM5 and binds to approximately 45% (142/319) of KDM5-regulated genes (p=2.20E-16). The majority of Pros-bound, KDM5-regulated genes are downregulated upon KDM5 depletion, implicating Pros in gene activation. Most Pros-bound targets are not co-bound by KDM5, suggesting Pros mediates indirect regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C86-C89 are supported by comparative analysis of KDM5-regulated genes and published Pros binding data (Figure 7B-C, Supplementary file 6). The significant overlap (C86) and directional bias (C89) support the proposed regulatory relationship. However, the inference that Pros functions 'downstream' (C6) is based on correlation and genetic interaction, not direct epistasis experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Genetic interaction experiments show that animals transheterozygous for kdm5140 and pros17 display MB abnormalities, while single heterozygotes do not. This supports a model where KDM5 and Pros function synergistically, with KDM5 regulating pros expression and its downstream targets to control MB development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 are supported by transheterozygous analysis (Figure 7F-G). The genetic interaction (C96-C97) provides evidence for functional relationship between kdm5 and pros. However, transheterozygosity demonstrates genetic interaction but does not definitively establish epistasis or the proposed linear pathway (C98).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C2",
+      "C32",
+      "C61",
+      "C62",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "KDM5 is required within GMCs and immature neurons for proper axogenesis and MB development. Both genetic knockout and cell-type-specific knockdown cause profound MB defects, while depletion in mature Kenyon cells does not, indicating a critical developmental window for KDM5 function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C32, C61-C62, C101-C103 are supported by multiple lines of evidence: kdm5140 null phenotypes (Figure 1), cell-type-specific knockdowns (Figures 3-4), and rescue experiments (Figure 4E). The temporal specificity (C102-C103) is well-demonstrated by comparing different Gal4 drivers. This is a central finding of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C3",
+      "C41",
+      "C42",
+      "C73",
+      "C122"
+    ],
+    "result": "KDM5 functions in MB development independently of its canonical histone demethylase activity. Animals lacking demethylase activity have normal MB morphology, minimal chromatin accessibility changes occur in kdm5 mutants, and the mechanism is predicted to be demethylase-independent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C41-C42, C73, C122 are supported by comparison to published demethylase-dead mutants (citing Zamurrad et al., 2018) and CATaDa data (Figure 5\u2014figure supplement 3). However, the study relies heavily on a single citation for the demethylase-dead phenotype (C41) and does not independently validate this critical control. The inference is reasonable but depends on prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C33",
+      "C64",
+      "C74",
+      "C77",
+      "C78"
+    ],
+    "result": "Cell-type-specific transcriptomic profiling using TaDa identified genes downregulated in kdm5-depleted GMCs and immature neurons. Two complementary approaches (kdm5140 null and acute shRNA knockdown) identified 319 high-confidence KDM5-regulated genes enriched for neurodevelopmental functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C64, C74, C77-C78 are supported by TaDa data (Figure 5). The use of two complementary approaches (null vs. knockdown) strengthens confidence in the gene list. However, the study does not validate individual gene expression changes by independent methods (e.g., qRT-PCR), which would strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "The MB defects observed upon KDM5 depletion phenocopy those in other Drosophila ID models (fmr1, dnab2), suggesting ID genes may function synergistically in common neurodevelopmental pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C104 is supported by comparison to published phenotypes, but C105 is speculative. While phenotypic similarity suggests potential pathway convergence, no direct evidence for synergistic function or common pathways is provided. This remains a hypothesis requiring experimental testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "This is the first study describing cell-type-specific transcriptomic changes from kdm5 loss. TaDa induction was brief (<24 hr) with changes predominantly in MB-GMCs and immature Kenyon cells, which are among the few proliferating cell types during the experimental window.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 are supported by comparison to prior studies (which used bulk tissue) and experimental design details. The temporal specificity (C107) is validated by developmental timing literature (citing Truman and Bate, 1988). However, the claim of being 'first' (C106) should be qualified as 'first in Drosophila neurons' rather than absolute.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Transcriptomic analysis reveals that Pros interactors and direct targets (nerfin-1, toy, tap) are dysregulated upon kdm5 depletion, providing molecular insight into the neuronal phenotypes. These genes are known regulators of axon pathfinding and MB morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C120 are supported by TaDa data and citations to published functions of nerfin-1, toy, and tap. The dysregulation of Pros targets (C117-C119) is consistent with the proposed KDM5-Pros regulatory axis. However, the inference that this 'provides molecular insight' (C120) is reasonable but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The precise mechanism of KDM5-mediated pros activation is unknown but predicted to be demethylase-independent. KDM5 likely regulates neuronal development via multiple mechanisms (both enzymatic and non-enzymatic), as demethylase-dead flies have cognitive deficits. ID-causing mutations may fall into three classes affecting demethylase activity, non-enzymatic functions, or both, potentially correlating with phenotypic severity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C121-C127 mix established findings (C123, C125 supported by citations) with speculation (C126-C127). The prediction of demethylase-independence (C122) is reasonable given prior data, but the mechanistic model (C124) and mutation classification scheme (C126-C127) are hypothetical. These represent discussion points rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Previous mouse studies showed Kdm5c knockout causes dendritic spine abnormalities but used ubiquitous knockouts lacking spatiotemporal control. Drosophila provides a genetically tractable system for spatiotemporally restricted gene manipulation, enabling demonstration that KDM5 expression in GMCs and immature neurons is necessary and sufficient for MB development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 appropriately contextualize the current work relative to prior mouse studies. The advantage of Drosophila for spatiotemporal manipulation (C100) is well-established, and the necessity/sufficiency demonstration (C101) is supported by knockdown and rescue experiments (Figures 3-4).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C116"
+    ],
+    "result": "Prospero and its mammalian ortholog PROX1 are evolutionarily conserved transcription factors involved in cell cycle exit, neuronal differentiation, and axonal development. Pros is expressed in neural precursors and immature neurons during the critical window for KDM5 function in MB development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C114, C116 are supported by citations to published literature on Pros/PROX1 function across species. The expression timing (C116) is consistent with the proposed model. These claims provide appropriate context for the functional studies of pros in MB development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "While Pros function in NB/GMC asymmetric division is well-characterized, its role in MB development was unexplored. R71C09-Gal4-mediated pros knockdown causes early larval lethality, but OK107-Gal4-mediated knockdown (smaller cell population) allows adult viability for phenotypic analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 are supported by citations (C90) and experimental observations (C92-C93). The differential lethality with different drivers (C92 vs. C93) is a technical consideration appropriately addressed to enable phenotypic analysis. This establishes the novelty of studying pros in MB development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C128"
+    ],
+    "result": "Future work will elucidate how individual patient mutations disrupt transcriptional regulatory mechanisms to influence neuronal and behavioral outputs, providing a strategy for predicting and treating patients with KDM5 variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C128 is a statement about future research directions and potential clinical applications. While the current work provides a foundation for such studies, the claim itself is speculative and not a result of the present study.",
+    "result_type": "MINOR"
+  }
+]

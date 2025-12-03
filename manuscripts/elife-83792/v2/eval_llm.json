@@ -1,0 +1,486 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "FN protein expression within the mesoderm transitions from unorganized and punctate prior to cranial NCC emigration to filamentous after leader cells invade. Punctate FN is found both distal to and adjacent to the invasive NCC migratory front, while elongated FN fibrils are located behind the leading edge. FN fibrils proximal to the invasive front show no preferred directional orientation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C7 are directly supported by microscopy data shown in Figure 1B-D, which clearly demonstrates the spatial distribution and morphological changes of FN during NCC migration. The observations are consistent and provide visual evidence for the transition from punctate to filamentous FN.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C115"
+    ],
+    "result": "Both loss-of-function (knockdown) and gain-of-function (microinjection of soluble FN) experiments demonstrate that proper levels of FN within the cranial migratory pathways are required for NCC migration. Knockdown reduced migration distance by ~30%, while excess soluble FN reduced migration area by ~70%, indicating that a balance of FN is required to promote proper migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 and C115 are supported by experimental data shown in Figure 1E-F with statistical significance (p-values provided). The bidirectional effect (both too little and too much FN impair migration) provides strong evidence for the conclusion that FN balance is critical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The agent-based model (ABM) can generate anisotropically migrating streams over 12 hours of simulated time, with ECM remodeling, haptotaxis, contact guidance, and cell-cell repulsion sufficient to establish stream-like patterns. Secretory cells maintain positions at the front, cells migrate anisotropically despite an isotropic initial FN lattice, and trailing cell velocities are oriented toward leader cells with most ECM fibers aligned parallel to the target corridor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C12, C40-C44 are supported by simulation results shown in Figure 2A and supplementary figures. The model successfully recapitulates key features of collective migration including stream formation, leader cell positioning, and directional bias. Quantitative metrics (e.g., average angle of 6 degrees) support the claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C89"
+    ],
+    "result": "ABM streams can split into multiple branches that colonize regions along the vertical axis because there is no signal specifically guiding NCCs parallel to the horizontal axis. This demonstrates that mechanisms generating collective migration do not guarantee cells robustly travel along a single target corridor, and additional signals are required to prevent NCC stream branching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 and C89 are supported by simulation results shown in Figure 2B. The observation that streams branch in the absence of directional guidance is a logical consequence of the model structure and is consistent with the need for additional guidance mechanisms identified later in the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Global sensitivity analysis reveals that the distance NCCs travel is most sensitive to \u03c7 (the parameter determining whether haptotaxis or contact guidance dominates), with increasing \u03c7 decreasing distance traveled (PRCC: -0.91, p<0.0001). Contact guidance favors longer streams, while haptotaxis and cell-cell repulsion are negatively correlated with distance traveled. The effect of cell-cell repulsion depends on whether contact guidance or haptotaxis dominates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C55 are supported by eFAST global sensitivity analysis shown in Figure 2C-D with appropriate statistical tests (Sobol indices, PRCC values, p-values). The analysis is methodologically sound with 31,440 ABM realizations providing robust statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The lateral spread of NCCs is most sensitive to the cell-ECM weight \u03c7, which exhibits a strong negative monotonic relationship (PRCC: -0.90, p<0.0001), indicating that lateral migration increases with upregulation of contact guidance. The lateral spread statistic is only weakly correlated with filopodial radius (PRCC: 0.12) and cell-cell repulsion strength (PRCC: -0.08).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 are supported by eFAST analysis shown in Figure 2\u2014figure supplement 6 with appropriate statistical tests. The strong correlation with \u03c7 and weak correlations with other parameters are clearly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Analysis of nearest neighbor distance reveals that both cell-ECM weight and cell-cell repulsion strength yield significant first-order Sobol indices, with the latter generating larger values. The filopodial radius affects cell-cell separation largely via higher-order interactions. There is a monotonically decreasing relationship with \u03c7 (PRCC: -0.74, p<0.0001), a monotonically increasing relationship with cell-cell repulsion (PRCC: 0.78, p<0.0001), and almost no correlation with filopodial radius (PRCC: 0.05, p=0.07).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 are supported by eFAST analysis shown in Figure 2\u2014figure supplement 5 with appropriate statistical tests. The pattern of Sobol indices and correlation coefficients clearly support the conclusions about parameter sensitivities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Simulated experiments manipulating FN secretion show that when leader secretory cells secrete FN puncta more rapidly, streams travel ~18% further. When neither cell type secretes FN, distance decreases by ~5% (with migration still occurring due to pre-existing FN). When both cell types secrete FN at baseline or elevated rates, distance decreases by 21% or 19% respectively, indicating that phenotypic specialization is important.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 are supported by simulation results shown in Figure 3A with statistical significance indicated. The pattern of results consistently supports the importance of leader cell specialization in FN secretion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Simulated experiments manipulating ECM remodeling demonstrate that when leading secretory cells (or both cell types) are unable to remodel the matrix, average distance traveled decreases by 47% (or 51%). When follower cells are prevented from assembling FN fibers, the effect is minimal (2% reduction). This demonstrates that FN remodeling by leading NCCs plays a key role in long-distance collective migration, and suggests that specialized roles for leader and follower cells make migration more effective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 are supported by simulation results shown in Figure 3B with statistical significance indicated. The large effect of leader cell remodeling versus minimal effect of follower cell remodeling provides strong evidence for the importance of leader cell specialization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Increasing initial FN lattice spacing from 20 to 60 \u00b5m hinders collective migration, decreasing migration distance by 36% and reducing lateral spread. The nearest neighbor distance decreases, resembling a 'jamming' scenario where cells are tightly packed and resistant to movement. Cells are classified as 'jammed' when they collectively travel less than 100 \u00b5m over 12 hr, based on a moderate but statistically significant positive correlation between nearest neighbor distance and horizontal distance traveled.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 are supported by simulation results shown in Figure 3C and supplementary figures. The definition of jamming is reasonable and based on correlation analysis (Figure 2\u2014figure supplement 7). The interpretation is consistent with the jamming literature cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Simulated rescue experiments show that cells can overcome jammed states in sparse FN matrices by upregulating contact guidance (67% increase in migration distance, exceeding dense FN by 7%), increasing cell-cell repulsion (44% increase), or increasing FN secretion rate (28% increase). However, only contact guidance upregulation fully rescues migration to distances comparable to denser environments, highlighting the importance of contact guidance, ECM remodeling, and cell-cell repulsion in rescuing long-distance migration during jamming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 are supported by simulation results shown in Figure 3C with statistical significance indicated. The differential effectiveness of rescue mechanisms provides insight into which mechanisms are most important for overcoming jamming.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Introduction of a guiding force reduces lateral migration from the target corridor as its strength increases, narrowing the NCC stream by 71% (both cell types) or 88% (leader cells only). Cells migrate longer distances along the corridor, with distance linearly correlated with guiding force strength regardless of whether it acts on leader cells only (PCC: 0.9793, p=0.02) or both cell types (PCC: 0.9993, p=0.007).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C97 are supported by simulation results shown in Figure 4A-B with appropriate statistical tests. The linear correlations are strong and statistically significant, supporting the conclusions about the effect of the guiding force.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "When the guiding force affects only leader cells, it can drive separation between leader secretory cells and non-secretory follower cells, with the distance between them increasing by up to 160%, indicating stream fragmentation. However, no breaks occur when the guiding force acts on both cell types (distance decreases by ~15%). Individual simulations show chain-like migration with branches one to two cells in width, with chains still following paths of remodeled FN fibers created by leader cells even when physically separated, supporting the idea that remodeled ECM provides a long-range cue for follower cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C104 are supported by simulation results shown in Figure 4C-D. The observation that follower cells follow leader-created FN paths even when separated provides strong evidence for ECM-mediated long-range communication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Simulated rescue experiments demonstrate that stream breaks can be rescued by increasing the degree to which cell trajectories are influenced by contact guidance. Upregulating contact guidance in either non-secretory cells or both cell types (decreasing \u03c7 from 0.5 to 0.33) reduces distances between leader and follower cells regardless of other parameter alterations, indicating that stream resistance to fragmentation is sensitive to the strength of contact guidance cues. Enhancing contact guidance in both cell types creates a robust single, ribbon-like stream with approximately constant width and density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 are supported by comprehensive simulation results shown in Figure 5A-B. The systematic testing of parameter combinations provides strong evidence that contact guidance is the key mechanism for preventing stream breaks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Stream breaks can also be prevented when leader cells exert weaker repulsive forces than followers, but these streams are less robust to perturbations in other mechanisms. Individual simulations show that when leaders exert weaker repulsive forces than followers, multiple stream branches and/or single-file cell chains may form even though the distance between cells is approximately constant, suggesting that additional mechanisms may be required to prevent the emergence of multiple branches and single-file cell chains when trailing cells exert stronger repulsive forces than leading cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112 are supported by simulation results shown in Figure 5A and 5C. The observation that this rescue mechanism is less robust than contact guidance upregulation is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C47"
+    ],
+    "result": "ECM remodeling, haptotaxis, contact guidance, and cell-cell repulsion are sufficient for cells to establish streams in silico, however, additional mechanisms such as chemotaxis are required to consistently guide cells along the correct target corridor and prevent stream branching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C17, and C47 are supported by the combined modeling results showing that while streams form, they branch without additional guidance. This is a key conclusion from the modeling work that is well-supported by the simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "Contact guidance and differential cell-cell repulsion between leader and follower cells are key contributors to robust collective cell migration by preventing stream breakage. Long-distance migration without jamming is most likely to occur when leading cells specialize in creating ECM fibers, and trailing cells specialize in responding to environmental cues by upregulating mechanisms such as contact guidance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18 and C19 are supported by the comprehensive modeling results from global sensitivity analysis (Figures 2-3) and simulated rescue experiments (Figure 5). The conclusions are well-supported by the systematic exploration of parameter space.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Dynamic deposition and remodeling of FN by a highly invasive cell population such as neural crest can promote collective cell migration over long distances. This conclusion is motivated by experimental observations that leader chick cranial NCCs have enhanced expression of FN distinct from followers, FN transitions from punctate to filamentous after leader NCCs invade, and proper levels of FN within the cranial migratory pathways are required for NCC migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C115 represent the main conclusion of the study and are supported by both the experimental data (Figure 1) and the comprehensive modeling results (Figures 2-5). The integration of experimental observations with modeling predictions provides strong support for this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "In agreement with previous models, contact guidance and ECM remodeling are sufficient to support collective behavior, with the establishment of ECM fibers an important step in enabling long-distance migration. Upregulating contact guidance increases distances that cells travel at the cost of increasing cell separation. Cells are capable of directed migration by remodeling an initially isotropic ECM, and ECM remodeling creates a 'memory' for trailing cells since non-secretory cells can migrate along paths of leading cells even when stream breaks occur.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C120 are supported by modeling results and are consistent with cited previous work. The observation that ECM remodeling creates a memory is particularly well-supported by the simulations showing follower cells following leader-created paths.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Knocking out FN expression in the ABM significantly reduces the number of NCCs that successfully migrate along the target corridor, which agrees with in vivo experiments of cardiac mice NCCs. Cells in the ABM traveled in the direction of greatest FN concentration, with fibers preferentially oriented in the direction of stream migration similar to in vitro experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C124 are supported by modeling results that are consistent with cited experimental studies. The agreement between model predictions and experimental observations provides validation for the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C125",
+      "C132",
+      "C133"
+    ],
+    "result": "The model predicts that increased production of FN by follower cells leads to stream separation, and that future experiments knocking down FN production in leaders only or disrupting an NCC's ability to align an FN fibril will disrupt collective cell migration in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C125, C132, and C133 are predictions from the model that have not yet been tested experimentally. While the predictions are logical based on the modeling results, they remain speculative until validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Unlike other models, upregulating cell-cell repulsion in the ABM did not always increase the distance migrated by cells. This difference likely arises from the incorporation of alignment cues from ECM remodeling and the choice to stochastically sample the cell-cell repulsion force direction, which causes cell-cell repulsion to act antagonistically to mechanisms promoting persistent migration such as contact guidance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C129 are supported by modeling results shown in Figure 2 and represent an important difference from previous models. The explanation for this difference is reasonable based on the model structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C134",
+      "C160",
+      "C161"
+    ],
+    "result": "Simulated rescue experiments suggest more robust streams may result when follower cells travel faster along leader-created paths by upregulating contact guidance and/or cell-cell repulsion. Leader-follower separation can be averted when cells upregulate contact guidance or when leading and trailing cells have different strengths of cell repulsion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134, C160, and C161 are supported by comprehensive simulation results shown in Figure 5. The systematic testing of rescue mechanisms provides strong evidence for these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The pre-existing FN distribution appeared to be a critical component in establishing collective cell migration in the ABM. Cells fail to migrate long distances within sparser matrices, consistent with in vitro knockdown studies. Cells could overcome jammed states by upregulating contact guidance, FN secretion, and/or cell-cell repulsion, suggesting a role for ECM remodeling to resolve jamming conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C140 are supported by modeling results shown in Figure 3C and are consistent with cited experimental studies. The identification of mechanisms to overcome jamming is a novel contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The ABM relies on assumptions that cells migrate in a 2D domain, do not divide, and only transiently contact their neighbors. These assumptions are likely satisfied for chick cranial NCC migration but may not be valid for other NCC populations such as gut NCCs where proliferation plays a significant role. The model did not address phenotype switching and cell shuffling, and the implementation of cell-cell repulsion differs from previous models incorporating contact inhibition of locomotion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C147 accurately describe the model assumptions and limitations. The justification for these assumptions is reasonable and supported by cited literature (e.g., C164-C165 showing that <10% of NCCs undergo mitosis during the first 12 hr).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "In vivo signals such as chemotaxis up VEGF gradients and anisotropic domain growth may play a role in correctly steering cell streams. However, these mechanisms alone cannot account for the robustness of streams, as the ABM found that guiding forces made stream breaks more likely to occur. These results are consistent with those obtained from more detailed cell-induced chemotaxis models for collective migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C158 are supported by modeling results shown in Figure 4 and are consistent with cited previous work. The observation that guiding forces promote stream breaks is an important finding that highlights the need for additional mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C1",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Collective cell migration plays an essential role in vertebrate development. Vertebrate neural crest cells (NCCs) are an important model for collective cell migration, with discrete streams distributing throughout the embryo to contribute to nearly every organ. Mistakes in NCC migration may result in severe birth defects (neurocristopathies), and several invasive mesenchymal cancers resemble collective NCC migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C20-C23 are general statements about the importance of NCCs and collective cell migration that are well-supported by the cited literature. These provide important context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Time-lapse analyses have revealed that leader NCCs in discrete migratory streams are highly exploratory, extending thin filopodial protrusions in many directions before selecting a preferred direction for invasion. Trailing cells extend protrusions to contact leaders and maintain cell neighbor relationships. This supports a leader-follower model where NCCs at the front read out guidance signals and communicate with trailing cells. Leader chick cranial NCCs show enhanced expression of secreted factors such as Ang-2 and FN, and knockdown of Ang-2 reduces follower cell chemokinetic behavior, disrupting collective migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 are well-supported by multiple citations to previous experimental studies. These provide important background for the current study's focus on FN and leader-follower dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Previous in vitro and in vivo studies have shown that NCCs cultured in FN-rich ECM move with thin, anchored filopodia through punctate fields, with pioneer NCCs forming radially oriented bundles of FN-containing filaments. Inhibition of ECM-integrin receptors resulted in delamination of NCCs into the neural tube lumen. FN is abundant in the mouse head and neck, and there is a dramatic reduction in migrating NCCs reaching the heart in FN null mice, demonstrating that FN is critical for NCCs to reach their targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C35 are well-supported by citations to previous experimental studies. These provide important background on the role of FN in NCC migration that motivates the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Previous models for NCC migration demonstrated that contact guidance can establish collective behavior and create single-file cell chains. Later models incorporating ECM degradation and haptotaxis demonstrated how matrix heterogeneity and cell-cell interactions could determine cell migratory patterns. Models for other collectively migrating cells suggest that ECM remodeling by motile cells can enable anisotropic collective movement. However, no models have yet addressed how collective migration arises from cell remodeling of an initially isotropic, immature ECM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 are well-supported by citations to previous modeling studies and accurately identify the gap in the literature that this study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C164",
+      "C165"
+    ],
+    "result": "Prior research indicates that at most 10% of NCCs undergo mitosis during the first 12 hr of migration, which suggests cell division is a negligible contributor to collective cell migration and hence can be ignored in the mathematical model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C165 are supported by a citation to previous experimental work and provide justification for the model assumption that cells do not divide. This is a reasonable simplification for the 12-hour timescale studied.",
+    "result_type": "MINOR"
+  }
+]

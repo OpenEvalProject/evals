@@ -1,0 +1,330 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The manuscript establishes the foundational knowledge that CNS endothelial cells acquire specialized BBB properties through Wnt/\u03b2-catenin signaling during development and that this signaling is required for maintenance in adulthood. The authors cite extensive prior literature showing that Wnt ligands (Wnt7a/b, Norrin) signal through specific receptors to drive both angiogenesis and barriergenesis, with molecular hallmarks including GLUT-1 acquisition, PLVAP loss, and claudin-5 upregulation. The literature also suggests that mature endothelium may be refractory to Wnt activation while immature endothelium remains responsive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are well-supported by extensive citations to prior literature (C12-C40) establishing the role of Wnt signaling in BBB development. The authors appropriately cite multiple independent studies for each major point, providing a solid foundation for their experimental work. The hypothesis that immature ECs are more Wnt-responsive (C39-C40) is appropriately framed as speculative based on prior observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C46",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "CHIR treatment (4 \u00b5M) of hPSC-derived na\u00efve endothelial progenitors robustly induces canonical BBB phenotypes including GLUT-1 expression in ~90% of ECs, 1.5-fold increase in claudin-5, decreased PLVAP, increased EC number and purity to nearly 100%, and decreased permeability. However, CHIR also causes a 2-4 fold increase in caveolin-1, which is not characteristic of CNS ECs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are well-supported by multiple complementary experimental approaches including immunocytochemistry (Figures 1-2), western blotting (Figure 4), and functional permeability assays (Figure 5). The data show consistent effects across multiple independent differentiations with appropriate statistical analysis. The unexpected caveolin-1 increase is acknowledged and discussed as a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Dose-response experiments show that 2 \u00b5M CHIR is insufficient to induce BBB phenotypes, while 6 \u00b5M CHIR further increases GLUT-1 and caveolin-1 without improving other parameters compared to 4 \u00b5M, establishing 4 \u00b5M as the optimal concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dose-response data (Figure 2\u2014figure supplement 1) provide clear evidence for selecting 4 \u00b5M CHIR as optimal. The experiments include appropriate controls and multiple replicates, with statistical comparisons showing significant differences between doses for key parameters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "CHIR-mediated effects on EC purity, number, and GLUT-1/caveolin-1 expression are conserved in the WTC11 hPSC line, though claudin-5 upregulation is not apparent in this line.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The data from the WTC11 line (Figure 2\u2014figure supplement 2) demonstrate reproducibility of the major findings across different hPSC lines. The lack of claudin-5 upregulation in WTC11 suggests some line-to-line variability, which is appropriately noted and does not undermine the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "CHIR-mediated upregulation of GLUT-1 is \u03b2-catenin-dependent, as demonstrated by doxycycline-inducible knockdown of CTNNB1 (\u03b2-catenin) which significantly reduces GLUT-1 abundance in CHIR-treated ECs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The \u03b2-catenin knockdown experiments (Figure 2\u2014figure supplement 3) provide strong evidence for \u03b2-catenin dependence using two independent hPSC lines with inducible shRNA. The dose-dependent reduction in GLUT-1 with increasing doxycycline concentrations supports the specificity of the effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "Increased EC number in CHIR-treated cultures results from increased EC proliferation, as shown by Ki67 staining and cell cycle analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The proliferation data (Figure 2\u2014figure supplement 4) using both Ki67 immunostaining and flow cytometry-based cell cycle analysis provide converging evidence that CHIR increases EC proliferation. The use of two complementary methods strengthens this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "CHIR treatment reduces PLVAP abundance by approximately 20% in Passage 1 ECs (detected by confocal microscopy but not western blot), with robust downregulation becoming apparent by Passage 3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The PLVAP data (Figures 3-4) show a modest but significant reduction at Passage 1 by confocal microscopy, with more robust effects at Passage 3 detectable by both methods. The temporal progression is well-documented, though the mechanism for the delayed effect is not explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "CHIR treatment upregulates GLUT-1, claudin-5, and LSR (angulin-1) at both Passage 1 and Passage 3, suggesting that Wnt signaling upregulates multiple components of CNS EC bicellular and tricellular tight junctions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Western blot data (Figure 4) confirm upregulation of these tight junction proteins at both time points. The inclusion of LSR, a tricellular junction protein, is particularly valuable as it has received less attention in prior BBB studies. The inference about coordinated regulation of junction components is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "CHIR treatment does not change mean dextran uptake but increases heterogeneity (coefficient of variation) in the EC population, suggesting subpopulations with different endocytic rates. Dextran uptake is mediated primarily by clathrin-mediated endocytosis and macropinocytosis, not caveolin-mediated endocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dextran uptake assays (Figure 5, Figure 5\u2014figure supplement 1) provide clear evidence for increased heterogeneity without change in mean uptake. The inhibitor experiments appropriately identify the pathways involved. However, the biological significance of increased heterogeneity is unclear, and the lack of correlation between caveolin-1 upregulation and functional endocytosis warrants further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "CHIR-treated Passage 3 ECs exhibit elevated transendothelial electrical resistance (TEER) and decreased permeability to sodium fluorescein, indicating improved paracellular barrier function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The TEER and permeability data (Figure 5E-F) provide functional validation of the barrier phenotype. The measurements were performed on Passage 3 ECs after selective dissociation to remove contaminating SMLCs, which is appropriate. Multiple independent differentiations were tested with consistent results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "CHIR treatment initiated in matured ECs (Passage 4-5) does not induce GLUT-1 expression, claudin-5 upregulation, or increased EC number, in contrast to the robust effects observed when treatment is initiated immediately after MACS in na\u00efve progenitors. This suggests that early, na\u00efve endothelial progenitors are more responsive to Wnt activation than mature ECs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The timing experiments (Figure 6, Figure 6\u2014figure supplement 1) provide strong evidence for developmental stage-dependent Wnt responsiveness. The comparison between early and late CHIR treatment is well-controlled, using the same differentiation protocol and treatment duration. This is a key finding that addresses a central hypothesis of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "RNA-seq analysis confirms definitive endothelial identity of the cells, with high expression of canonical EC markers (CDH5, CD34, PECAM1, CLDN5, ERG, FLI1) and absence of mesenchymal markers (in ECs) and epithelial markers (EPCAM, CDH1, CLDN1, CLDN3, CLDN4, CLDN6).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RNA-seq data (Figure 7B) provide comprehensive transcriptional validation of cell identity. The high absolute expression levels (100-1000 TPM) of EC markers and absence of epithelial markers are particularly important given concerns about epithelial contamination in some hPSC-EC models. Minor SMLC contamination in Passage 1 DMSO samples is acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C99",
+      "C101",
+      "C103",
+      "C105",
+      "C106",
+      "C108",
+      "C110",
+      "C112"
+    ],
+    "result": "RNA-seq identifies 1369 upregulated and 2037 downregulated genes in Passage 1 CHIR-treated ECs. Upregulated genes include BBB markers (SLC2A1, CLDN5, LSR, CAV1), Wnt pathway components (LEF1, TCF7, AXIN2, APCDD1), CNS EC-enriched transcription factors (ZIC3, SOX7, MSX1, EBF1), and transporters (ABCG2, FLVCR2, APLN). Downregulated genes include PLVAP, FABP4, and SMAD6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RNA-seq differential expression analysis (Figure 7C-D) is comprehensive and well-executed, with appropriate statistical methods (DESeq2 with Benjamini-Hochberg correction). The identification of both expected (SLC2A1, CLDN5, PLVAP) and novel (ZIC3, SOX7, FLVCR2) Wnt-regulated genes provides valuable insights. The consistency between RNA-seq and protein-level data strengthens confidence in the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C119"
+    ],
+    "result": "Many CHIR-mediated gene expression changes persist at Passage 3, including upregulation of SLC2A1, LSR, LEF1, AXIN2, APCDD1, ZIC3, EBF1, FLVCR2, ABCG2 and downregulation of PLVAP. However, CLDN5 and CAV1 are highly expressed at Passage 3 but not further upregulated by CHIR. JAM2 and RBP1 are upregulated by CHIR at Passage 3 but not Passage 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temporal analysis of gene expression (Figure 7E, Figure 7\u2014figure supplement 1) reveals both persistent and stage-specific effects of CHIR. The observation that CLDN5 and CAV1 are highly expressed at Passage 3 regardless of CHIR treatment suggests that extended culture alone can induce some BBB-like features, consistent with prior work (Nishihara et al., 2020).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C120",
+      "C121"
+    ],
+    "result": "Weighted gene correlation network analysis (WGCNA) identifies a module of 441 genes (green module) strongly correlated with CHIR treatment, with central genes including canonical Wnt targets AXIN2 and APCDD1, supporting the key role of \u03b2-catenin signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The WGCNA analysis (Figure 7\u2014figure supplement 3) provides an unbiased approach to identify coordinated gene expression changes. The presence of canonical Wnt targets at the center of the CHIR-correlated module validates the approach and supports \u03b2-catenin-dependent transcriptional regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Extended culture from Passage 1 to Passage 3 (without CHIR) leads to upregulation of 1521 genes (including CLDN5, CAV1) and downregulation of 1625 genes (including PLVAP), but not upregulation of SLC2A1 or LSR. LEF1 and TCF7 are strongly downregulated during extended culture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The analysis of culture-induced changes (Figure 7\u2014figure supplement 4) is important for distinguishing CHIR-specific effects from maturation-related changes. The downregulation of LEF1 and TCF7 during culture provides a potential mechanism for reduced Wnt responsiveness in mature ECs, though this remains correlative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Comparative analysis with published datasets shows that 130 brain-enriched genes are CHIR-upregulated and 116 brain-depleted genes are CHIR-downregulated in hPSC-derived ECs. The response is most similar to pituitary ECs with \u03b2-catenin stabilization (102 up, 48 down) and more robust than liver ECs (25 up, 1 down) or cultured brain ECs (72 up, 16 down). AXIN2 is the only gene concordantly regulated in all four contexts. MFSD2A is upregulated only in pituitary ECs, suggesting additional brain-derived factors are required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparative analysis (Figure 8) is a major strength of the paper, providing context for the hPSC-EC findings relative to in vivo models. The analysis is methodologically sound, using appropriate homology mapping and consistent statistical thresholds. The observation that hPSC-ECs respond more like pituitary ECs (CNS-proximal) than liver ECs supports the hypothesis about developmental stage-dependent Wnt responsiveness. However, the modest overlap in regulated genes across contexts suggests that additional factors beyond Wnt signaling are important for full CNS EC specification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Prior work by the authors showed that extended culture of hPSC-derived endothelial progenitors in minimal medium yields ECs with improved tight junction properties and paracellular barrier function, but these cells exhibit high PLVAP and little GLUT-1 expression, indicating need for additional cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims appropriately cite and summarize prior work by the authors (Nishihara et al., 2020) and are supported by data in the current manuscript showing that DMSO-treated Passage 3 ECs lack GLUT-1 expression (Figure 6B). This provides important context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C45",
+      "C47"
+    ],
+    "result": "After 5 days of differentiation, cultures contain mixed populations of CD34+CD31+ EPCs and CD34-CD31- non-EPCs, including smooth muscle-like cells (SMLCs) that express GLUT-1 in both control and Wnt3a-treated conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The characterization of the mixed cultures (Figure 1B-C, Figure 1\u2014figure supplement 1) is important for interpreting subsequent experiments. The identification of GLUT-1+ SMLCs is particularly important as it could confound interpretation of GLUT-1 induction experiments if not properly controlled.",
+    "result_type": "MINOR"
+  }
+]

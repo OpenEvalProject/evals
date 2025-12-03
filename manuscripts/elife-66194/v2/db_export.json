@@ -1,0 +1,1337 @@
+{
+  "submission": {
+    "id": "a50b7d2a-c8f4-4058-9c9d-2d31dac2ab77",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T08:39:43.557791Z",
+    "updated_at": "2025-12-03T08:39:43.557791Z"
+  },
+  "content": [
+    {
+      "id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "submission_id": "a50b7d2a-c8f4-4058-9c9d-2d31dac2ab77",
+      "content_type": "manuscript",
+      "content_text": "# Conformational dynamics of auto-inhibition in the ER calcium sensor STIM1\n\n## Authors\n\n- Stijn van Dorp<sup>1</sup> ([ORCID: 0000-0002-9940-7163](https://orcid.org/0000-0002-9940-7163))\n- Ruoyi Qiu<sup>1</sup>\n- Ucheor B Choi<sup>1</sup> ([ORCID: 0000-0003-1541-2967](https://orcid.org/0000-0003-1541-2967))\n- Minnie M Wu<sup>1</sup>\n- Michelle Yen<sup>1</sup>\n- Michael Kirmiz<sup>1</sup>\n- Axel T Brunger<sup>1</sup> ([ORCID: 0000-0001-5121-2036](https://orcid.org/0000-0001-5121-2036))\n- Richard S Lewis<sup>1</sup> ([ORCID: 0000-0002-6010-7403](https://orcid.org/0000-0002-6010-7403)) \u2020\n\n### Affiliations\n\n1. Department of Molecular and Cellular Physiology, Stanford University School of Medicine Stanford United States\n2. Howard Hughes Medical Institute, Stanford University School of Medicine Stanford United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe dimeric ER Ca2+ sensor STIM1 controls store-operated Ca2+ entry (SOCE) through the regulated binding of its CRAC activation domain (CAD) to Orai channels in the plasma membrane. In resting cells, the STIM1 CC1 domain interacts with CAD to suppress SOCE, but the structural basis of this interaction is unclear. Using single-molecule F\u00f6rster resonance energy transfer (smFRET) and protein crosslinking approaches, we show that CC1 interacts dynamically with CAD in a domain-swapped configuration with an orientation predicted to sequester its Orai-binding region adjacent to the ER membrane. Following ER Ca2+ depletion and release from CAD, cysteine crosslinking indicates that the two CC1 domains become closely paired along their entire length in the active Orai-bound state. These findings provide a structural basis for the dual roles of CC1: sequestering CAD to suppress SOCE in resting cells and propelling it toward the plasma membrane to activate Orai and SOCE after store depletion.\n\n## Introduction\n\nStore-operated Ca2+ entry (SOCE) is a nearly ubiquitous signaling pathway activated by extracellular stimuli that deplete Ca2+ from the endoplasmic reticulum (ER). SOCE is essential for diverse physiological functions of excitable and non-excitable cells, including gene expression, secretion, and motility (Prakriya and Lewis, 2015). Accordingly, loss-of-function mutations in the core SOCE components lead to serious human pathologies such as severe combined immunodeficiency, autoimmunity, myopathy, ectodermal dysplasia, and anhidrosis (Lacruz and Feske, 2015), whereas gain-of-function mutations cause Stormorken syndrome, miosis, myopathy, thrombocytopenia, and excessive bleeding (B\u00f6hm and Laporte, 2018). These clinical manifestations underscore the need for precise regulation of SOCE to ensure that it is silent when ER Ca2+ stores are full yet reliably activated by stimuli that drive store depletion.\n\nThe dimeric ER membrane protein STIM1 (Figure 1A, top) controls SOCE through the regulated interaction of its CRAC activation domain (CAD [Park et al., 2009], also known as SOAR [Yuan et al., 2009] or CCb9 [Kawasaki et al., 2009]) with Orai1 Ca2+ channels in the plasma membrane. In resting cells, Ca2+ bound to the luminal EF hands of the STIM1 dimer suppresses STIM1 activity by promoting intramolecular association of the coiled-coil 1 (CC1) domains with CAD, referred to as the \u2018inhibitory clamp\u2019 (Korzeniowski et al., 2010; Yang et al., 2012; Yu et al., 2013; Fahrner et al., 2014; Ma et al., 2015). Upon ER Ca2+ depletion, dissociation of Ca2+ from the luminal EF hands triggers conformational changes that release CC1 from CAD and promote STIM1 accumulation at ER-plasma membrane (ER-PM) junctions where the CAD domain binds, traps, and activates Orai1 channels diffusing in the PM (Wu et al., 2006; Wu et al., 2014; Liou et al., 2007; Park et al., 2009; Yuan et al., 2009). Thus, to elucidate the regulatory mechanism of SOCE, it is essential to understand how CC1 interacts with CAD to control STIM1 activity.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/66194/elife-66194-fig1-v2.jpg)\n\n**Figure 1.:** (A) (top) Schematic overview of domains in ctSTIM1, comprising the membrane-proximal coiled-coil 1 (CC1) domain with helical regions \u03b11 (aa 238\u2013271), \u03b12 (aa 278\u2013304), and \u03b13 (aa 308\u2013337), and the CC2 (345\u2013391) and CC3 (aa 408\u2013437) domains which are part of CAD. (bottom) The orientations of the CC2 domains distinguish the NMR structure of CC1\u03b13-CC2 (bottom left, anti-parallel CC2 domains; 2MAJ.pdb) from the crystal structure of CAD (bottom right, parallel CC2 domains; 3TEQ.pdb). Sites tested by inter-subunit smFRET are indicated. Although aa 337 is not part of the crystal structure (aa 344\u2013443), it is sufficiently close to permit comparison to the NMR structure. (B) Two methods for immobilizing single ctSTIM1 dimers for smFRET. ctSTIM1 peptides were encapsulated in liposomes and immobilized on a glass slide by a biotin-neutravidin interaction or were attached directly via a C-terminal avitag. (C) Example recordings of donor (green) and acceptor (red) fluorescence evoked by donor excitation for sites 337:337\u00b4, 363:363\u00b4, and 378:378\u00b4. Single-step bleaching events indicate a single molecule, while the anti-correlated response of the donor to the acceptor bleach event is a hallmark of smFRET. Calculated FRET ratios (black) are shown below. (D) Ensemble smFRET histograms for sites 337:337\u00b4, 363:363\u00b4, and 378:378\u00b4 displayed predominantly high FRET, indicating close parallel apposition. (E) A comparison of smFRET-derived distances (black) with simulated inter-fluorophore distances from the crystal (white) and NMR structures (gray). The measured distances closely match the crystal structure but deviate strongly from the NMR structure, particularly for 337:337\u00b4 and 378:378\u00b4. smFRET error bars indicate the expected distance deviation corresponding to an uncertainty of \u00b10.05 in FRET measurement. 'Crystal' and 'NMR' error bars indicate the s.e.m. of inter-fluorophore distance from 100 simulations of dye position (see Materials and methods).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66194/elife-66194-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Peaks of the histograms are indicated by arrows and represent the predominant ctSTIM1 conformation. The locations of the measurement sites are indicated on a model of ctSTIM1 for each sample. Legend boxes indicate immobilization method (liposome or avitag), the number of molecules used to construct the histogram (N), the peak FRET value and the corresponding distance (see Materials and methods).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/66194/elife-66194-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Peaks of the histograms are indicated by arrows and represent the predominant ctSTIM1 conformation. The locations of the measurement sites are indicated on a model of ctSTIM1 for each sample. Legend boxes indicate immobilization method (liposome or avitag), the number of molecules used to construct the histogram (N), the peak FRET value and the corresponding distance (see Materials and methods).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/66194/elife-66194-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Peaks of the histograms are indicated by arrows and represent the predominant ctSTIM1 conformation. The locations of the measurement sites are indicated on a model of ctSTIM1 or CAD for each sample. Legend boxes indicate immobilization method (liposome or avitag), the number of molecules used to construct the histogram (N), the peak FRET value and the corresponding distance (see Materials and methods).\n\nThe CC1 domain comprises three helical segments, CC1\u03b11\u20133 (Soboloff et al., 2012; Figure 1A). Current evidence supports a model in which CC1\u03b11, the most ER-proximal segment, acts as a bimodal switch to stabilize both the quiescent and active states of STIM1. According to this model, in cells with full ER Ca2+ stores, CC1\u03b11 binds to the CAD CC3 helix to sequester CAD (Fahrner et al., 2014; Ma et al., 2015); upon store depletion, the luminal EF-SAM domains dimerize, CC1\u03b11 unbinds from CAD, and the transmembrane and proximal CC1\u03b11 regions form a coiled-coil (Stathopulos et al., 2006; Hirve et al., 2018; Schober et al., 2019), projecting CAD toward the plasma membrane. Although several residues in CC1\u03b11 and CC3 have been identified as essential for forming the inhibitory clamp (Muik et al., 2011; Zhou et al., 2013; Fahrner et al., 2014; Ma et al., 2015), the helical arrangement of the CC1\u03b11:CAD binding interface is completely unknown. The CC1\u03b13 domain is also implicated in stabilizing the inactive state (Korzeniowski et al., 2010; Yang et al., 2012), but it is unclear whether this involves binding to CAD or another mechanism (Zhou et al., 2013).\n\nAttempts to determine the structure of full-length STIM1 in the inactive or active state have been unsuccessful. Instead, structures of several fragments from the STIM1 cytosolic region have offered potential clues, although it is not yet clear how they might relate to physiological states of the full-length protein. The crystal structure of human STIM1 CAD (aa 345\u2013444, with mutations L374M, V419A, and C437T) depicts a parallel V-shaped dimer comprising the CC2 and CC3 domains (Figure 1A, right; Yang et al., 2012). It is unknown whether this structure represents an active or inactive conformation, and the absence of CC1 precludes inferences about its interaction with CAD. A solution NMR structure of a CC1\u03b13-CC2 fragment depicts a dimer of wedged antiparallel CC2 helices (Figure 1A, bottom left; Stathopulos et al., 2013). This NMR structure can bind Orai1 C-terminal fragments in vitro and has been proposed to be an intermediate in the activation of STIM1 (Stathopulos et al., 2013), but it has never been shown to bind intact Orai1 channels in situ and lacks the CC3 helix needed to evoke SOCE (Covington et al., 2010). Finally, two contrasting structures have been reported for the conformation of the CC1 region. In a crystal structure of CC1 (aa 237\u2013340, with mutations M244L and L321M), two elongated CC1 helices form an antiparallel coiled-coil dimer within the CC1\u03b12 and CC1\u03b13 domains (Cui et al., 2013; see Figure 5C ), but it is unclear how this elongated structure with its widely separated C-termini could attach to the closely paired N-termini of CAD. In contrast, a recent solution NMR study of CC1 (aa 234\u2013343) depicts a compactly folded monomeric structure in which CC1\u03b11-\u03b13 form a tight three-helix bundle (Rathner et al., 2021).\n\nAlthough the sequences of these various structures partially overlap, their conformations are incompatible with each other, raising fundamental questions about their potential relation to the inactive and active forms of STIM1. What is the conformation of CAD in the context of the entire cytosolic domain? How is CC1 arranged relative to CAD in the inactive state, and how does this change during activation? Which regions of STIM1 are stable, and which are flexible? To address these questions, we examined the structure and dynamics of the full cytosolic domain of STIM1 (ctSTIM1, aa 233\u2013685) using single-molecule F\u00f6rster resonance energy transfer (smFRET) measurements at sites throughout CC1 and CAD. smFRET is commonly applied to estimate intramolecular distances and reveal asynchronous molecular transitions that are typically obscured in population measurements. Our results show that CAD in ctSTIM1 resembles the CAD crystal structure, but with unexpected structure and flexibility in an apical region that is critical for Orai binding and activation. CC1\u03b11 interacts with CAD in a domain-swapped configuration to form the inhibitory clamp, while the Stormorken syndrome mutation R304W releases CC1\u03b11 from CAD to activate ctSTIM1. In studies of full-length STIM1 in intact cells, cysteine crosslinking after store depletion suggests that after unbinding from CAD, the two CC1 domains pack together along their entire length, in contrast to the CC1 crystal and CC1\u03b13-CC2 NMR structures. Together, these findings offer the first structural view of the STIM1 inhibitory clamp and reveal the massive conformational changes evoked by store depletion, which serve to reorient and translocate CAD towards the PM where it can bind Orai1 and activate SOCE.\n\n## Results\n\n### The CC2 domains in ctSTIM1 are oriented in a parallel configuration\n\nWe initially applied smFRET to test whether the conformation of CAD within the cytosolic domain (ctSTIM1, aa 233\u2013685) resembles that of the CC2-CC3 crystal structure (Yang et al., 2012) or the CC1\u03b13-CC2 NMR structure (Stathopulos et al., 2013), referred to below as the \u2018crystal structure\u2019 or \u2018NMR structure\u2019 respectively. A major distinction between the two structures is that the CC2 domains (aa 345\u2013391) in CAD are parallel in the crystal structure but antiparallel in the NMR structure (Figure 1A). After removing the single native cysteine in ctSTIM1 with a C437S mutation, we created three mutants with cysteines at positions 337, 363, and 378, for which the two structures predicted very different inter-subunit distances, particularly for 337:337\u00b4 and 378:378\u00b4 (hereafter \u2018:\u2019 is used to denote a pair of sites in the dimer and \u2018\u00b4\u2019 indicates a site on the adjacent subunit) (Figure 1A). The ctSTIM1 mutants were expressed in E. coli and purified, yielding full-length protein of >90% purity (see Materials and methods). After randomly labeling the cysteine-mutant ctSTIM1 molecules with FRET donor (Alexa Fluor 555) and acceptor (Alexa Fluor 647) dyes, single ctSTIM1 dimers were surface-tethered to a glass coverslip for imaging by TIRF microscopy, either encapsulated in liposomes or attached directly through a tag on the C-terminus (Figure 1B). In several instances we tested, both attachment methods yielded similar results (Figure 1\u2014figure supplements 1\u20133); liposome encapsulation was used for all measurements except intramolecular FRET measurements in Figure 2 and 4 (see Materials and methods, \u2018Sample preparation\u2019 for more details). Upon excitation of the donor dye, the donor and acceptor emissions of individual molecules were ratioed to calculate FRET efficiencies, which were high and stable at all three label sites (Figure 1C and D). These results are consistent with a CAD conformation in which the CC2 domains are closely apposed and parallel, as in the crystal structure. Inter-fluorophore distances calculated from simulations of the donor and acceptor dye positions on the crystal structure closely matched those derived from smFRET, while simulations based on the NMR structure deviated substantially (Figure 1E). We conclude that in the context of the complete ctSTIM1 in solution, the CC2 domains in CAD adopt a parallel conformation consistent with the CAD crystal structure and not the NMR structure.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/66194/elife-66194-fig2-v2.jpg)\n\n**Figure 2.:** (A) Representative smFRET recording at the base of CAD (431:431\u00b4) showing stable, high FRET. (B) Ensemble density plots of the initial 2 s of inter-subunit smFRET recordings for sites throughout CAD. Predominant FRET levels are shown by arrowheads to the right of each plot. (C\u2013D) Comparison of inter-fluorophore distances from smFRET and the CAD crystal structure. Simulated fluorophores are represented by the average position of a central atom, indicated here as ball-on-stick models (see Materials and methods). For sites near the dimer interface (the 'base' of CAD, C), the smFRET-derived distances (black bars) agree closely with the crystal structure (white bars). Measurements in the apex (D) deviate from the crystal structure. (E) Modified structure (red) generated by a smFRET-constrained optimization of the crystal structure (gray). Outward rotation of the distal CC2 region (aa 379\u2013391) around G379 as a pivot point restored close correspondence between smFRET-derived distances and the crystal structure (bottom). (F) Representative example of smFRET fluctuations in the CAD apex (388:388\u00b4).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66194/elife-66194-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Dimerization of ctSTIM1 cysteine mutants by disulfide bond formation in CAD, shown by non-reducing SDS-PAGE. CuP-induced dimerization was virtually absent at basal sites but was evident at all tested sites in the apical region. (B) Analysis of external contacts of a CAD subunit in the reconstructed crystal lattice. In the left panel a subunit of CAD is shown in red, the adjacent subunit in the dimer is shown in transparent pink, and interacting subunits in the crystal lattice are shown in transparent gray. The crystal lattice was generated from structural coordinates in 3TEQ.pdb using Chimera software (Pettersen et al., 2004). Residues on the red subunit that are in contact with the external crystal lattice (including the paired subunit) are shown in yellow, and their corresponding contacts in the external lattice are shown in blue. Contacts are defined as sites where Van der Waals radii touch or overlap. Extensive external contacts are made at the base of CAD, near the dimer interface, and at the apex in the CC2-CC3 linker region. The enlargement on the right shows lattice contacts throughout virtually the entire apex. Polar contacts (hydrogen bonds) are shown as dashed orange lines.\n\n### The apex of CAD deviates from the crystal structure\n\nWe made additional smFRET measurements throughout the entire CAD to allow a more complete comparison with the crystal structure. Near the C-terminal end of the CC3 domain (aa 408\u2013437), the 431:431\u00b4 label pair produced a stable, narrowly defined high-FRET state (Figure 2A), and inter-subunit smFRET throughout the CAD exceeded 0.5, consistent with a compact parallel dimer (Figure 2B). Near the dimer interface (hereafter termed the \u2018base\u2019 of CAD), smFRET-derived distances quantitatively agreed with those from the crystal structure, and an intra-subunit measurement 431:363 directly confirmed the compact folding of CC3 onto CC2 within each subunit (Figure 2C).\n\nIn contrast to the base of CAD, smFRET measurements of the distal CC2 and CC2-CC3 linker regions (the CAD \u2018apex\u2019) deviated from those indicated in the crystal structure (Figure 2D). This is particularly interesting as mutagenesis studies have identified this region as critical for Orai1 binding and activation (Calloway et al., 2010; Korzeniowski et al., 2010; Wang et al., 2014; Thompson et al., 2018; Butorac et al., 2019). To provide a rough indication of the extent of the deviation implied by smFRET, we generated an alternative model of the CAD apex based on the crystal structure by allowing rotation around G379 to bring the simulated FRET efficiencies in line with our experimental results. In the resulting model the distal CC2 regions were rotated outward, while the regions around aa 400 were pulled closer together, effectively compacting the apical \u2018V-shape\u2019 (Figure 2E and see Materials and methods). Whereas inter-subunit smFRET at aa 399\u2013401 appeared as a well-defined peak, FRET levels at the distal end of CC2 were broadly distributed and appeared multimodal, particularly at aa 388 (Figure 2B). Accordingly, smFRET measurements in this region displayed fluctuations (Figure 2F), suggesting conformational flexibility that was not expected from the uninterrupted rigid helix of the crystal structure. These differences presumably arose from stabilization of an alternate apical conformation in the crystal by hydrogen bonds between the apex and adjacent CAD subunits (Figure 2\u2014figure supplement 1B). The smFRET-derived model in Figure 2E thus likely represents just one of a number of potential apical conformations sampled by spontaneous fluctuations of the distal CC2 domain.\n\nAs a complementary structural test, we analyzed inter-subunit cysteine-cysteine (cys-cys) crosslinking upon oxidation by copper phenanthroline (CuP, see Materials and methods). Cysteines introduced throughout the CAD apex formed inter-subunit crosslinks, detected as ctSTIM1 dimers on non-reducing SDS-PAGE gels (Figure 2\u2014figure supplement 1A). This result shows that opposing residues in the apical region at least transiently come within the ~6 \u00c5 range for cys-cys crosslinking (Qin et al., 2015), again inconsistent with the CAD crystal structure. Moreover, crosslinking efficiencies were similar for three adjacent apical cysteine pairs (399:399\u00b4, 400:400\u00b4, and 401:401\u00b4), suggesting significant rotational flexibility beyond the 100 ms temporal resolution of our smFRET recordings. Taken together, these data show that flexibility and spontaneous fluctuations cause the CAD apical region to deviate significantly from the crystal structure, unlike the stable basal region.\n\n### CC1\u03b11 docks parallel to CC3 in a domain-swapped configuration\n\nThe CC1 domain controls the activation of STIM1 in vivo by releasing CAD for interaction with Orai1 (Zhou et al., 2013; Ma et al., 2015). Although it is clear that the membrane-proximal CC1\u03b11 domain can interact with CAD to inhibit STIM1 (Ma et al., 2015), their relative orientations remain undefined. We detected high inter-subunit FRET efficiencies between labels at the N-termini of CC1\u03b11 and CC3 (red histogram in Figure 3A, top), as well as between labels at their C-termini (blue histogram in Figure 3A, bottom), indicating that the CC1\u03b11 domain (a continuous \u03b1-helix [Cui et al., 2013; Rathner et al., 2021]) is oriented parallel to CC3 in the predominant ctSTIM1 conformation.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/66194/elife-66194-fig3-v2.jpg)\n\n**Figure 3.:** (A) Asymmetric inter-subunit smFRET measurements between CC1\u03b11 and CC3 reveal a parallel orientation, with high FRET levels at 242:400\u00b4 (top, red) and 274:431\u00b4 (bottom, blue) indicating close apposition. The crystal structure of CAD is shown with schematic representation of CC1\u03b11 domains. (B) The predominant smFRET level between CC1\u03b11 and CC3 was consistently higher for inter-subunit measurements (red) than intra-subunit measurements (blue). This pattern indicates a predominant domain-swapped configuration in which CC1\u03b11 docks close to the CC3 domain of its opposing subunit. (C) Inter- and intra-subunit recordings (242:431\u00b4 and 242:431, respectively) displayed brief smFRET transitions between two states indicated by red and black bars. In both cases, fluctuations occurred between the same two FRET levels, reflected in the main and sub cluster peaks of the ensemble FRET histogram below, suggesting the CC1\u03b11 domains switched sides on CAD (see also Figure 3\u2014figure supplement 1). (D) Schematic illustration of spontaneous conformational transitions of the CC1\u03b11 domain. In the predominant conformation, CC1\u03b11 is closely apposed and parallel to CC3 on its opposing subunit in a domain-swapped configuration ('trans'). Occasionally, CC1\u03b11 switches to interact briefly with CC3 on its own subunit ('cis'). Rate constants were derived from dwell time analysis of smFRET traces (Figure 3\u2014figure supplement 1E,F).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66194/elife-66194-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Schematic drawing of the measurement sites for inter-subunit smFRET measurements from aa 242 in CC1\u03b11 to sites 400\u00b4, 417\u00b4, and 431\u00b4 in CC3\u00b4 (left). An example recording of smFRET transitions at 242:431\u00b4 is shown (right), with black and red bars indicating the predominant and transient FRET levels, respectively. (B) Schematic drawing of the measurement sites for intra-subunit smFRET measurements from aa 242 in CC1\u03b11 to sites 400, 417, and 431 in CC3 (left), and an example recording of smFRET transitions at 242:431 (right). (C) Ensemble smFRET histograms show the equivalence of predominant (main cluster) and transient (sub cluster) FRET levels in inter- and intra-subunit measurements, suggesting that CC1\u03b11 briefly switches sides on CAD, probably using the same binding interface. (D) Ensemble transition density plots show the FRET level after a transition [FRET(n)] against FRET before a transition [FRET(n-1)] for all fluctuating molecules (see Materials and methods). Contours indicate which transitions were most often observed, overlaying intra-subunit (black) and inter-subunit (colored) measurements. (E) Dwell time distributions for inter-subunit (left) and intra-subunit (right) measurements were similar, further supporting the hypothesis that CC1\u03b11 domains briefly switch sides on CAD. (F) Average dwell times were similar between the various measurement configurations, for predominant and transient FRET levels. Average dwell times of the predominant and transient states were 1.2 s and 0.4 s, respectively.\n\nTo determine whether CC1\u03b11 associates with the CAD of the same subunit or the adjacent one within the dimer, we compared inter-subunit and intra-subunit FRET efficiencies between labels at the N-terminus of CC1\u03b11 and three sites in CAD (Figure 3B). The predominant inter-subunit FRET efficiencies were consistently higher than intra-subunit FRET efficiencies, demonstrating that in the predominant ctSTIM1 conformation, CC1\u03b11 engages CAD in a domain-swapped configuration. We also observed spontaneous and reversible transitions from the predominant FRET state, in which FRET efficiencies fluctuated between the same two levels for both inter- and intra-subunit measurements (Figure 3C). Similar fluctuation behavior and transition kinetics were observed at all three CAD sites (Figure 3\u2014figure supplement 1), suggesting a conformational transition in which the two CC1\u03b11 domains briefly switch sides on CAD, probably using the same binding interface (Figure 3D).\n\n### The CC1\u03b13 domains are compactly folded and directed away from CAD\n\nIn vivo, mutations or deletions of the CC1\u03b13 domain activate STIM1 (Korzeniowski et al., 2010; Yang et al., 2012) but the underlying mechanism, in particular the proposal that CC1\u03b13 interacts directly with CAD (Yang et al., 2012), has been questioned (Zhou et al., 2013). We measured predominantly high inter-subunit FRET efficiencies of ~0.9 between labels at the N- or C-terminal ends of the CC1\u03b13 domains (aa 312 and 337, respectively), indicating that the two domains are closely apposed and parallel (Figure 4A). To determine their orientation relative to CAD, we measured intra-subunit FRET efficiencies between labels at either end of the CC1\u03b13 domain to three sites in CC2. While FRET efficiency from the CC1\u03b13 C-terminus to the proximal CC2 domain was high as expected (red histogram in Figure 4B, top), low FRET efficiencies were measured from the CC1\u03b13 N-terminus, indicating that the N-terminus is directed away from CAD (Figure 4B, bottom).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/66194/elife-66194-fig4-v2.jpg)\n\n**Figure 4.:** (A) High inter-subunit smFRET at the N- and C-termini of the CC1\u03b13 domain (aa 312 and 337, respectively) indicates close parallel apposition of the two helices. The crystal structure of CAD is shown with a schematic depiction of CC1\u03b12 and CC1\u03b13 domains. (B) (top) High intra-subunit smFRET from aa 337 to sites on CC2 declined progressively with distance, while intra-subunit smFRET from aa 298 (near the CC1\u03b12/\u03b13 linker) to sites in CC2 was low (bottom), indicating that the CC1\u03b12 and \u03b13 domains are directed away from CAD. (C) Inter-subunit recordings near the CC1\u03b13 N-terminus displayed brief transitions from the predominant high-FRET state to a low-FRET state. Ensemble histograms show similar main and sub cluster FRET states for neighboring sites aa 309 and 312. (D) Schematic depiction of spontaneous conformational transitions of the CC1\u03b13 domains. CC1\u03b13 domains are closely apposed (left) but occasionally transition to a open configuration (right) at rates derived from dwell time analysis of smFRET traces (Figure 4\u2014figure supplement 1E,F).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66194/elife-66194-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Schematic drawing of inter-subunit smFRET measurement sites near the CC1\u03b13 N-terminus. (B) Example traces at aa 307 (top), 309 (center), and 312 (bottom) show large-amplitude fluctuations from the predominant high FRET level. Black and colored bars indicate the respective main and sub cluster FRET levels shown in C. (C) Ensemble smFRET histograms including the predominant and transient FRET clusters associated with the large-amplitude fluctuations. (D) FRET transition diagrams show that the predominant fluctuations at all three sites are large-amplitude transitions between a high- and a low-FRET state (dashed circles). (E) Dwell time distributions of the main and sub cluster FRET states were similar for all three sites, indicating a common underlying conformational change. (F) Average dwell times of main and sub cluster FRET states for all three sites. Overall average dwell times were 1.7 s for the main cluster, and 0.7 s for the sub cluster. (G) Two types of conformational changes in the CC1 domain. From the predominant resting state (center), CC1\u03b11 domains occasionally switch sides on CAD (left), and CC1\u03b13 domains occasionally move apart (right). Given their different kinetic rates, the two conformational transitions are apparently not directly coupled.\n\nStable high inter-subunit FRET efficiencies at the CC1\u03b13 C-terminus (aa 337) were consistent with its proximity to the compact, stable CAD base. However, label sites near the N-terminus of CC1\u03b13 displayed brief (0.8 s average lifetime), large transitions to a low FRET state, suggesting that the N-termini of CC1\u03b13 intermittently splay out from a stable pivot point at the base of CAD (Figure 4C and D). While these large conformational transitions were most prominent, further analysis revealed additional substates in the smFRET trajectories (Figure 4\u2014figure supplement 1).\n\n### A model for the CC1-CAD complex\n\nThrough the integration of many inter-molecular distance measurements, smFRET can be applied to build models of tertiary protein structure (Brunger et al., 2011). We used 36 unique inter- and intra-subunit smFRET measurements (Supplementary file 1) to develop a structural model of the resting conformation of CC1 subdomains relative to the optimized model of CAD depicted in Figure 2E. CC1 in the ctSTIM1 dimer was assumed to comprise three rigid \u03b1-helical sections (CC1\u03b11-\u03b13, comprising residues aa 246\u2013271, 275\u2013305, and 310\u2013337, respectively) connected by flexible linkers, consistent with bioinformatic analysis (Soboloff et al., 2012), NMR measurements of the CC1 fragment (Rathner et al., 2021), and distances estimated from intra-subunit smFRET efficiencies (239:274, 274:307, and 307:337; Figure 1\u2014figure supplement 2). We selected randomly generated models that met the criteria of satisfying smFRET-derived distance constraints while avoiding steric clashes with each other or with CAD (see Materials and methods and Figure 5\u2014figure supplement 1A for details of the modeling process). Two classes of models emerged that were highly similar but distinguishable by the organization of the CC1\u03b12/\u03b13 domains. In ~70 % of solutions, the CC1\u03b12/\u03b13 domains were stacked parallel (average model in Figure 5A from an ensemble of models in Figure 5\u2014figure supplement 1B), while the remaining solutions had an alternative, wedged CC1\u03b12/\u03b13 topology (Figure 5A and Figure 5\u2014figure supplement 1C). Importantly, both classes of solutions displayed the defining features described above, including closely apposed CC1\u03b13 domains directed away from CAD and CC1\u03b11 domains oriented parallel to CC3 in a domain-swapped configuration. As an independent test of the smFRET-derived models, we applied the lysine crosslinking agent BS3 combined with mass spectrometry (XLMS) to identify proximal pairs of residues (Rappsilber, 2011). BS3 XLMS confirmed key structural arrangements of both models of the CC1-CAD complex, including the compact packing of CC1\u03b12/\u03b13 domains and the domain-swapped CC1\u03b11-CAD interaction (Figure 5\u2014figure supplement 2).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/66194/elife-66194-fig5-v2.jpg)\n\n**Figure 5.:** (A) 36 smFRET-derived distances were used to reconstruct the orientations of CC1 domains relative to CAD, yielding two classes of solutions with the CC1\u03b12/\u03b13 domains in a \u2019stacked' (left) or 'wedged' (right) configuration. In both classes, CC1\u03b11 domains are in close parallel apposition to the CC3 domains on the adjacent subunit in a domain-swapped configuration, with the CC1\u03b12 and CC1\u03b13 domains forming a compact parallel structure directed away from CAD. The average of 50 model solutions is shown for each class (see Figure 5\u2014figure supplement 1 for individual solutions). The complete list of smFRET values and distance constraints used to generate the models is shown in Supplementary file 1. (B) smFRET-derived models suggest hydrophobic stabilization of the CC1\u03b12/\u03b13 complex by antiparallel apposition of CC1\u03b12 and CC1\u03b13\u00b4. (C) The crystal structure of CC1 peptides depicts an antiparallel interaction of CC1\u03b12 and CC1\u03b13\u00b4 domains (left, dashed box), in which hydrophobic residues form a tightly packed dimer interface (top right, adapted from 4O9B.pdb). (Bottom right) Tight antiparallel packing of CC1\u03b12/\u03b13\u00b4 in ctSTIM1 was confirmed by inter-subunit crosslinks with EDC (red lines) (see also Figure 5\u2014figure supplement 3). (D) Parallel apposition of hydrophobic residues on CC1\u03b11 and CC3\u00b4. Many of these were previously identified by mutagenesis to stabilize the inactive state of STIM1, including L248, L251, L258, L261, L416, V419, and L423. (E) A model of the hydrophobic CC1\u03b11:CC3\u00b4 interface obtained by computational peptide docking (see Materials and methods).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66194/elife-66194-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** smFRET-constrained modeling produced two different topologies for stacking of the CC1\u03b12/\u03b13 domains. For both classes of solutions, the orientation of CC1\u03b11 parallel to CC3 on the adjacent subunit was virtually identical, and CC1\u03b12/\u03b13 domains were compact, parallel-folded, and oriented away from CAD. (A) FRET measurement sites grouped according to the smFRET-derived distances (DFRET), superimposed on the stacked model shown in B. (B) Overlay (left) and average (right) of 50 solutions with stacked CC1\u03b12/\u03b13 domains. This was the predominant topology, representing ~70 % of solutions. (C) Overlay (left) and average (right) of 50 solutions for the alternative wedged CC1\u03b12/\u03b13 topology. The complete list of smFRET values and distance constraints used to generate the models is shown in Supplementary file 1. Models can be accessed in Supplementary files 2 and 3.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/66194/elife-66194-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) SDS-PAGE of wild-type and mutant ctSTIM1 treated with BS3 to induce lysine-lysine crosslinking. Wild-type ctSTIM1 was treated with BS3-d0 as a reference, and four different ctSTIM1 variants were treated with BS3-d4 to detect the effect of the variation using comparative XLMS (see Materials and methods and Figure 7\u2014figure supplement 2): wild-type ctSTIM1 as control (WT-d4), disulfide linked T307C ctSTIM1 (T307C-d4), and ctSTIM1 with activating mutations L248S + L251S (2LS-d4) or R304W (R304W-d4). The T307C samples were treated with DTT prior to electrophoresis. BS3 treatment resulted in the formation of ctSTIM1 dimers, with distinct band patterns for wild-types and mutants. MS analysis of WT ctSTIM1 is shown in B; mutant analysis is shown in Figure 7\u2014figure supplement 2. (B) Identification of BS3-linked lysine residues in CC1-CAD by mass spectrometry analysis of wild-type ctSTIM1 monomer and dimer gel bands. Identified links are indicated in a matrix of all possible lysine pairs in CC1-CAD. Links found exclusively in the dimer band were likely inter-subunit links (red, orange, or yellow). Links found in the monomer band were intra-subunit links (blue or cyan). (C) Mapping of BS3 links on the smFRET-derived structural model. Inter-subunit links were detected for CC1\u03b11:CAD\u00b4 (red), CC2:CC2\u00b4 (orange), and CC1\u03b13:CC1\u03b13\u00b4 and CC1\u03b12:CC1\u03b13\u00b4 (yellow). Intra-subunit links were detected for CC2:CC3 (blue), and for several sites that were near each other on the peptide chain (cyan). (D) Distribution of distances between residues for all detected links mapped on the smFRET-derived model (using the C\u03b1 atom for residues in CAD). The majority of linked residues matched well with the theoretical BS3 length of ~15 \u00c5, except links shown in gray.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/66194/elife-66194-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (A) SDS-PAGE analysis of ctSTIM1 treated with zero-length amine-carboxyl crosslinker EDC. Monomer (blue) and dimer (red) bands were cut from the gel for analysis by mass spectrometry. For the monomer band we used only the last lane, to obtain roughly equal amounts of material from both bands and increase the fraction of reacted sample. (B) Mass spectrometry analysis showed a cluster of four dimeric (likely inter-subunit) links within the CC1\u03b12-CC1\u03b13 region, indicated by the black dashed square and enlarged on the right. (C) A crystal structure of the CC1 fragment (237\u2013340, with mutations M244L and L321M) is a dimer of two continuous helices with a coiled-coil interactions between CC1\u03b12 and CC1\u03b13 domains (4O9B.pdb) (Cui et al., 2013). Three out of the four EDC links in the CC1\u03b12/\u03b13 cluster (K294:E318\u00b4, K301:E318\u00b4, and E305:K315\u00b4) could be mapped directly onto the crystal structure (top left). The fourth link (K315\u00b4:E318) appears to bridge a larger distance (bottom left), but can be rationalized by aligning the red and blue sections of the CC1 dimer crystal structure to the corresponding parts of the smFRET-derived CC1-CAD model and folding the CC1 dimer around the flexible region aa 305\u2013310 (right). In the CC1-CAD model, residues 315\u00b4 and 318 are proximal to each other, consistent with EDC crosslinking of these sites.\n\nAlthough the models do not specify the orientation of side chains in the CC1 helices, they highlight two regions for potential inter-subunit coiled-coil interactions in the CC1-CAD complex. The antiparallel apposition of hydrophobic residues in CC1\u03b12 and CC1\u03b13\u00b4 (Figure 5B) is reminiscent of the tight, antiparallel interaction of CC1\u03b12 and CC1\u03b13\u00b4 domains in the CC1 dimer crystal structure (Cui et al., 2013), an arrangement that was further supported by the formation of amine-carboxy crosslinks in ctSTIM1 by 1-ethyl-3-(3-dimethylaminopropyl)carbodiimide hydrochloride (EDC), a zero-length crosslinker (Figure 5C and Figure 5\u2014figure supplement 3). Interestingly, the CC1\u03b11:CC3\u00b4 interface in the smFRET-derived models juxtaposes multiple hydrophobic residues that have been previously implicated through mutagenesis in stabilizing the CC1-CAD complex: L248, L251, L258, and L261 in CC1\u03b11 and L416, V419, and L423 in CC3 (Muik et al., 2011; Zhou et al., 2013; Fahrner et al., 2014; Ma et al., 2015; Figure 5D). To refine the CC1\u03b11:CC3\u00b4 interface, we aligned the crystal structure of the CC1\u03b11 domain (aa 246\u2013271) to the smFRET-derived model and performed a computational docking simulation using Rosetta software (see Materials and methods). The resulting model (Figure 5E) indicates an extensive pairing of hydrophobic residues predicted to stabilize the CC1\u03b11:CC3\u00b4 interface, providing a plausible explanation for the activating effects of disruptive mutations at these sites.\n\n### The Stormorken mutation R304W activates ctSTIM1 by releasing CC1\u03b11 from CAD\n\nThe close packing of CC1\u03b11 and CAD in our model suggests that ctSTIM1 is primarily inactive. Accordingly, when expressed with Orai1 in HEK293 cells, mCh-ctSTIM1 only slightly increased [Ca2+]i compared to mCh-CAD (Figure 6\u2014figure supplement 1), in agreement with previous evidence that ctSTIM1 is a relatively weak activator of Orai1 (Muik et al., 2009; Park et al., 2009; Yuan et al., 2009; Korzeniowski et al., 2010).\n\nDeletion of the CC1 domain (mCh-ctSTIM1-\u0394CC1) restored ctSTIM1 activity to the level seen with CAD, as did the introduction of R304W, a naturally occurring mutation that causes Stormorken syndrome by constitutively activating STIM1 (Misceo et al., 2014; Morin et al., 2014; Nesin et al., 2014; Figure 6\u2014figure supplement 1). Interestingly, introduction of R304W into ctSTIM1 almost completely eliminated the high inter-subunit FRET between the N termini of CC1\u03b11 and CC3 in vitro, indicating the release of CC1\u03b11 from CAD (Figure 6A, aa 242:400\u00b4). A more moderate decrease in FRET efficiency was observed between CC1\u03b11 and the CC3 C-terminus (aa 431), suggesting that CC1\u03b11 pivoted around the CC1\u03b11/\u03b12 linker (Figure 6A, aa 242:431\u00b4).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/66194/elife-66194-fig6-v2.jpg)\n\n**Figure 6.:** (A) The R304W mutation reduced inter-subunit smFRET between aa 242 on CC1\u03b11 and sites 400\u00b4, 417\u00b4, and 431\u00b4 on CC3\u00b4, indicating separation of CC1\u03b11 from CAD. The mutation also reduced intra-subunit FRET for 274:337, consistent with a widening of the angle between CC1\u03b12 and CC1\u03b13. (B) The predominant FRET levels for 298:298\u00b4 (left) and 312:312\u00b4 (right) were diminished by R304W, suggesting a disruption of the compact parallel structure of CC1\u03b12/\u03b13 domains. (C) Effects of R304W on inter-subunit FRET fluctuations at 312:312\u00b4, near the CC1\u03b13 N-terminus. The dominant large-amplitude fluctuations of the wild-type (top left) were entirely absent in the mutant, which instead displayed frequent small fluctuations among a range of FRET levels (top right). The different fluctuation modes are summarized in ensemble transition density plots (see Materials and methods) which show a single dominant FRET transition for wild-type molecules (bottom left, 38 molecules), and a multimodal density distribution for R304W mutants (bottom right, 25 molecules). (D) In the CAD apex, R304W or deletion of the entire CC1 region (ctSTIM1-\u0394CC1) increased the FRET at 389:389\u00b4 (left) and reduced it slightly at 400:400\u00b4 (center), suggesting that the apex interacts with CC1\u03b11 in the WT conformation. Neither R304W nor \u0394CC1 affected FRET at 431:431\u00b4 (right) in the CAD base.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66194/elife-66194-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** HEK293 cells expressing the indicated ctSTIM1 variant and Orai1-GFP were exposed sequentially to 2 mM Ca2+, 0 Ca2+, and 2 mM Ca2+. The fura-2 350/380 fluorescence ratio is shown for ctSTIM1 (aa 233\u2013685), ctSTIM1-R304W, ctSTIM1-\u0394CC1 (aa 340\u2013685), CAD (aa 342\u2013448), and Orai1-GFP alone. Each trace shows the mean and s.e.m. of 25\u201335 cells in multiple runs from two independent transfections. ctSTIM1 has very little activity, while ctSTIM1-R304W and ctSTIM1-\u0394CC1 approach the high activity of the CAD fragment.\n\nTo determine how R304W releases CC1\u03b11 given its distant location at the C-terminal end of CC1\u03b12, we examined its effect on folding of the CC1\u03b12 and CC1\u03b13 domains. Intra-subunit smFRET measurements showed that R304W increases the separation between the CC1\u03b12 N-terminus and the CC1\u03b13 C-terminus (Figure 6A, aa 274:337), suggesting it has opened the tight angle between CC1\u03b12 and CC1\u03b13. R304W also shifted CC1\u03b12:CC1\u03b12\u00b4 and CC1\u03b13:CC1\u03b13\u00b4 FRET to lower levels (Figure 6B), again consistent with opening of the compact inactive structure.\n\nThe R304W mutation also significantly altered the structural dynamics of CC1\u03b12/\u03b13. In the wild-type protein, the predominant inter-subunit FRET efficiency at the CC1\u03b13 N-terminus was high, interrupted by occasional transitions to a low FRET state (Figures 4C and 6C, left). In contrast, the R304W mutation appeared to destabilize the CC1\u03b13 pair, such that it transitioned between high and low FRET through a series of intermediates states (Figure 6C, right). Taken together, our data reveal several effects of R304W on CC1: it destabilizes the tight packing of CC1\u03b13 domains, causes CC1\u03b12 to splay out from CC1\u03b13, and completely releases CC1\u03b11 from CAD.\n\nWe also assessed effects of R304W on the structure of CAD. While the R304W mutation or the deletion of CC1 (\u0394CC1) did not affect inter-subunit FRET efficiencies at the base of CAD (431:431\u00b4), they did alter the smFRET distributions at the CAD apex (389:389\u00b4 and 400:400\u00b4) (Figure 6D). Together, these results suggest that the association of CC1\u03b11 with CAD influences the conformation of the flexible apex without affecting the arrangement of helices at the more stable CAD base.\n\n### The CC1 domains refold into a parallel dimer during STIM1 activation\n\nWe examined cysteine crosslinking of the CC1 domains in ctSTIM1 to complement the structural information derived from smFRET. Inter-subunit cysteine crosslinking in ctSTIM1 was notably robust in the CC1\u03b12/\u03b13 linker (T307C) and the C-terminus of CC1\u03b13 (S339C) (Figure 7\u2014figure supplement 1A). While disulfide formation at T307C appeared consistent with the close apposition of CC1\u03b13 domains implied by smFRET for the inactive ctSTIM1 conformation (Figure 4), further tests with BS3 crosslinking suggested these disulfides only form in the active state. Disulfide formation at T307C prevented BS3 from crosslinking CC1\u03b11 and CAD, implying that T307C disulfides are incompatible with the CC1\u03b11-CAD inhibitory clamp (Figure 7\u2014figure supplement 2D). We observed a similar loss of BS3 crosslinks between CC1\u03b11 and CAD in the activated ctSTIM1 mutants L248S/L251S (Muik et al., 2011) and R304W (Figure 7\u2014figure supplement 2B, C), suggesting that disulfide formation at T307C occurred during spontaneous, transient visits to an activated state of ctSTIM1. Together, these results suggest that while CC1\u03b13 domains are closely apposed in both the inactive and active conformations, only in the active conformation are T307C residues sufficiently close and properly oriented for disulfides to form.\n\nUnder physiological conditions, full-length STIM1 (flSTIM1) is activated by ER Ca2+ store depletion, and the CC1 domains are anchored to the ER membrane. To extend our in vitro ctSTIM1 results to flSTIM1 in cells, we examined cysteine crosslinking of CC1 domains in inactive and active flSTIM1 at sites that we had studied in vitro (H266, T274, T307, N309, and S339) as well as the distal region of CC1\u03b11 (aa 262\u2013269) immediately beyond the region in CC1\u03b11 thought to dimerize upon activation (aa 233\u2013261) (Hirve et al., 2018). Cysteine mutants were transiently expressed in HEK293 cells and treated with the cell-permeant oxidizer diamide before or after store depletion induced by cyclopiazonic acid (CPA). Lysates of diamide-treated cells were then analyzed for the presence of crosslinked flSTIM1 dimers. Prior to store depletion, when flSTIM1 is inactive, little crosslinking occurred throughout CC1, with the exception of S339C near the junction with CAD (Figure 7A and B). In contrast, after store depletion prominent crosslinking occurred at A268C and T307C in addition to S339C (Figure 7A and B, and Figure 7\u2014figure supplement 1B). These results further support our conclusion that T307C crosslinking of ctSTIM1 in vitro is enabled by transient activation events. More importantly, they suggest that activation in vivo brings all three CC1 subdomains together.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/66194/elife-66194-fig7-v2.jpg)\n\n**Figure 7.:** (A) Western-blot analysis of diamide-induced cysteine crosslinking of flSTIM1-WT, flSTIM1-A268C, flSTIM1-T307C and flSTIM1-S339C in HEK293 cells, under resting (2 mM Ca2+) or store-depleted (0 mM Ca2+ + CPA) conditions. (B) Summary of flSTIM1 cysteine crosslinking before (black) and after (white) store depletion measured in individual paired experiments. While crosslinking at aa 268 and aa 307 strongly increased in the activated state, crosslinking at aa 339 occurred independently of STIM1 activation (see also Figure 7\u2014figure supplement 1B). (C) Effects of flSTIM1 cysteine crosslinking on deactivation of SOCE following store refilling. WT flSTIM1 and cysteine mutants were co-expressed with Orai1 for cytosolic calcium imaging. In cells expressing WT flSTIM1 and store-depleted by transient exposure to ionomycin (io, 1 \u00b5M), addition of 2 mM Ca2+ elevated [Ca2+]i due to SOCE, followed by a decline as SOCE deactivated from store refilling (top left, black). In contrast, diamide-induced crosslinking of A268C or T307C flSTIM1 mutants stabilized the active state, as evidenced by persistent calcium influx after ionomycin wash-out and store refilling (bottom left and right, red). Crosslinking of S339C did not affect deactivation of SOCE upon store refilling (top right). Each trace shows the mean and s.e.m. of the following numbers of cells (control/diamide) from at least two independent experiments: WT (91/106), A268C (31/47), T307C (38/46), S339C (44/41). (D) Schematic illustration of CC1 cysteine crosslinking in the resting (left) and activated (right) states of flSTIM1 (only CC1 and CAD are shown for clarity). In the resting state, CC1\u03b11 and CC1\u03b13 domains are kept apart, preventing crosslinking at locations upstream of aa 339. Upon store depletion, release of the CC1\u03b11 domains from CAD promotes alignment of CC1 domains along their entire length, enabling crosslinking at aa 268 and 307.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66194/elife-66194-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Cysteine crosslinking throughout the CC1 domain of ctSTIM1 mutants in vitro produced by copper phenanthroline and detected by non-reducing SDS-PAGE (see Materials and methods). Crosslinking efficiency peaked at aa 307 in the CC1\u03b12/\u03b13 linker region. (B) Full-length STIM1 (flSTIM1) mutants H266C, A268C, T307C, and N309C, were transiently over-expressed in HEK293 cells for diamide-induced cysteine crosslinking in vivo. Western-blot analysis shows strong crosslinking of flSTIM1-A268C and flSTIM1-T307C only after activation by store depletion (0 mM Ca+ CPA). Little or no crosslinking occurred at nearby residues (H266C or N309C). All crosslinking was reversed by DTT. (C) Crosslinking efficiencies in the inactive (black) and active (white) states for residues aa 262\u2013269 at the C-terminal end of CC1\u03b11. Crosslinking at several sites within this region increased somewhat in the active state, but crosslinking for A268C was particularly strong, suggesting a close, stable apposition at that position.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/66194/elife-66194-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** Mass-spectrometry analysis of ctSTIM1 variants 2LS (L248S + L251S, B), R304W (C), and T307C (D) showed similarly altered link patterns relative to WT (A). Crosslinked residue pairs for each sample are given in Figure 7\u2014figure supplement 2\u2014source data 1. The bar graphs indicate the number of unique links between the indicated domains as a fraction of the total number of unique links in the sample. Relative to the WT reference, the number of CC1\u03b11-CAD links decreased in the variants, consistent with the release of CC1\u03b11 in an activated state of ctSTIM1. The decrease in CC1\u03b11-CAD links was compensated by an increase in CC2-CC3 links within CAD, probably because the CC1\u03b11 domain was no longer able to compete for links with sites in CAD. See Figure 5\u2014figure supplement 2A for SDS-PAGE analysis of each sample.\n\nTo test this idea, we asked whether cysteine crosslinking after ER Ca2+ store depletion could lock flSTIM1 in the activated state, thereby preventing the deactivation of STIM1 and SOCE that normally occurs upon store refilling. Ionomycin was added in Ca2+-free Ringer\u2019s to deplete stores, after which ionomycin was removed and Ca2+ readded to allow Ca2+ influx through SOCE. In HEK cells expressing WT flSTIM1, [Ca2+]i increased rapidly upon Ca2+ readdition and subsequently declined due to store refilling and deactivation of STIM1 and Orai1, regardless of diamide treatment (Figure 7C). We obtained a similar result with flSTIM1-S339C, indicating that diamide-induced crosslinking at S339C does not impede flSTIM1 deactivation. In contrast, crosslinking at A268C and T307C prevented the normal deactivation of SOCE as indicated by the sustained elevation of [Ca2+]i after Ca2+ readdition. These findings suggest that all three CC1 subdomains are brought close together during STIM1 activation in vivo and remain associated in the final, Orai1-bound conformation (Figure 7D).\n\n## Discussion\n\nPrecise regulation of SOCE is essential for many physiological processes and is achieved through control of transitions between inactive and active states of STIM1. These transitions are triggered by changes in ER [Ca2+] that toggle reversible interactions of the STIM1 CC1 domain with CAD. Through a combination of smFRET measurements and crosslinking assays, we have determined the arrangements of CC1 and CAD helices in inactive and active states of STIM1. The results reveal how CC1 is oriented around CAD to stabilize the inactive state, and how its conformation changes upon activation to project CAD toward the PM to engage Orai1 and trigger SOCE.\n\nIn this study, we measured FRET efficiencies from single ctSTIM1 dimers to generate an overlapping set of intramolecular distance constraints for modeling tertiary structure (Choi et al., 2010; Brunger et al., 2011). Caution must be applied in using FRET signals to infer absolute distances, as FRET efficiency can also be influenced by photophysical transitions or interactions with the local environment (Weiss, 1999; Weiss, 2000). We employed several strategies to avoid misinterpretation of the data. First, by including a large number of different FRET pairs (36 pairs for CC1-CAD), no major feature of the CC1-CAD model was dependent on any single measurement, safeguarding against potential problems with individual label sites (Figure 5\u2014figure supplement 1A). Second, we independently verified the CC1-CAD model by mass spectrometry analysis of BS3-crosslinked protein (Schmidt and Robinson, 2014; Figure 5\u2014figure supplement 2). Third, measurements of key smFRET amplitudes and spontaneous structural transitions were confirmed at multiple nearby sites (Figure 2 and Figure 4\u2014figure supplement 1). Finally, we applied relatively conservative distance error limits in constraining the CC1-CAD model (Supplementary file 1). Taken together, these strategies help validate the tertiary structures represented in our models.\n\n### The conformation of CAD in the context of ctSTIM1\n\nsmFRET measurements demonstrated that CAD within the context of ctSTIM1 resembles the CAD crystal structure rather than the NMR structure of CC1\u03b13-CC2 (Figure 1). The base is stable and compact (Figure 2), as expected given the hydrophobic interactions and hydrogen bonding between the two CAD subunits in this region (Yang et al., 2012). Surprisingly, the CAD apex appeared flexible and diverged from the crystal structure (Figure 2). The flexibility of the CAD apex is intriguing because mutagenesis and cysteine-crosslinking studies suggest this region interacts with Orai1 to initiate channel activation (Calloway et al., 2010; Korzeniowski et al., 2010; Wang et al., 2014; Thompson et al., 2018; Butorac et al., 2019), and conformational flexibility can facilitate protein-protein interactions through effects on the thermodynamics of binding (Gr\u00fcnberg et al., 2006). Thus, it seems likely that the CAD apex in complex with Orai adopts a structure different from that depicted in the CAD crystal and distinct from the NMR structure of CC1\u03b13-CC2 (see below). Release of CC1\u03b11 from CAD, or deletion of the CC1 domain altogether, did not cause a gross change in CAD structure, although it did alter the conformation of the CAD apex (Figure 6). These results raise the possibility that upon CC1\u03b11 dissociation the apex changes shape, perhaps facilitating its binding to Orai1.\n\n### Defining structural roles for all three CC1 subdomains in the STIM1 inhibitory clamp\n\nOur results reveal how the three helical regions within CC1 collaborate to regulate the activity of STIM1. Prior evidence indicated that CC1 autoinhibits STIM1 in resting cells, but fundamental questions concerning its structure remained. Korzeniowski and colleagues originally reported that neutralization of acidic residues in the CC1\u03b13 domain activated STIM1 and proposed an \u2018inhibitory clamp\u2019 mechanism in which this region binds to basic residues in CAD to shield it from Orai in resting cells (Korzeniowski et al., 2010). However, subsequent studies showed that CC1\u03b13 alone is not sufficient to maintain the inactive state, as CC1\u03b13-CAD is fully active (Zhou et al., 2013), and deletion of CC1\u03b13 in flSTIM1 only slightly activated Orai1 current under resting conditions (Fahrner et al., 2014). Moreover, inter-molecular FRET between ER-tethered STIM1 fragments showed that CC1\u03b11 can bind to CC3 (Fahrner et al., 2014), and ER-tethered CC1\u03b11 by itself can sequester CAD and prevent it from binding to Orai1 in the PM (Fahrner et al., 2014; Ma et al., 2015). These findings and the activating effects of mutations in CC1\u03b11 (Muik et al., 2011; Zhou et al., 2013; Fahrner et al., 2014; Ma et al., 2015) and CC3 (Muik et al., 2011) shifted the focus to a CC1\u03b11-CC3 interaction as the basis for the inhibitory clamp.\n\nBased largely on mutagenesis effects and helical wheel modeling, Zhou and colleagues proposed that the inhibitory clamp arises from antiparallel binding of CC1\u03b11 to CC3, involving interactions between L261 and L416 and between L258 and V419 (Ma et al., 2015). Our FRET measurements support a different arrangement in which CC1\u03b11 binds parallel to CC3 (Figure 3), and our model depicts direct interactions of L248 and L251 (CC1\u03b11) with L416 (CC3), and of L258 and L261 (CC1\u03b11) with L423 and L427 (CC3) (Figure 5). Such a CC1\u03b11-CC3 interface may explain the activating effects of non-conservative mutations at these sites (L248S, L251S, L416G, L258G/A, L261G, L423G) (Muik et al., 2011; Zhou et al., 2013; Fahrner et al., 2014; Ma et al., 2015). Interestingly, our data reveal that CC1\u03b11 preferentially associates with CC3 of the adjacent subunit in the CAD dimer (Figure 3). This domain-swapped configuration may enhance the stability of the inactive state through inter-subunit interactions and could promote cooperativity between subunits during structural transitions.\n\nThe CC1 helices displayed large spontaneous FRET fluctuations, indicating a high degree of flexibility. The CC1\u03b12/\u03b13 domains occasionally transitioned from a compact, high-FRET resting state to a low-FRET open state (Figure 4), while the CC1\u03b11 domains briefly switched sides on CAD, probably trading binding interfaces (Figure 3). Differences in dwell times suggest these two types of fluctuations occurred independently (Figure 4\u2014figure supplement 1G), but further studies will be needed to determine how they relate to structural changes during activation of membrane-inserted flSTIM1.\n\nA recent report described a solution NMR structure of the isolated CC1 peptide, in which the CC1\u03b11/\u03b12/\u03b13 helices form a monomeric three-helix bundle with an extensive coiled-coil interaction between CC1\u03b11 and CC1\u03b12 (Rathner et al., 2021). This arrangement is quite distinct from our FRET-derived model which features prominent intersubunit interactions of CC1\u03b11 with CC3, and of CC1\u03b12 with CC1\u03b13. There are several technical differences between the two studies that could contribute to this discrepancy. In the NMR study, CC1 was studied in isolation with 7 mM SDS to prevent oligomerization, thus depriving CC1\u03b11 of its normal CAD-binding partner and discouraging intersubunit CC1:CC1\u00b4 binding. While it is possible these conditions promoted formation of a structure that does not exist under physiological conditions, a more intriguing possibility is that the monomeric CC1 structure represents a pre-activated state of CC1 in which the interaction of CC1\u03b11 with CC1\u03b12 has destabilized the CC1\u03b11:CC3\u00b4 clamp (Rathner et al., 2021). Passage through such an intermediate bundled state could serve to mitigate the energetic cost of breaking the CC1\u03b11:CC3\u00b4 and CC1\u03b12:CC1\u03b13\u00b4 interactions and thereby ease the transition between the inactive and active states. Our smFRET experiments show that when CC1\u03b11 associates with CC3 in ctSTIM1, the CC1\u03b12 and CC1\u03b13 domains primarily interact with each other to form a compact bundle pointing away from CAD (Figure 5); in the context of the Rathner et al report, the spontaneous fluctuations of CC1\u03b12/\u03b13 we observed (Figure 4C and D) may represent spontaneous transitions towards such a pre-activated state. smFRET studies of flSTIM1 may offer an effective approach for identifying intermediate conformational states during the activation process.\n\nThe R304W Stormorken mutation activates ctSTIM1 (Figure 6\u2014figure supplement 1), consistent with its ability to activate flSTIM1 (Misceo et al., 2014; Morin et al., 2014; Nesin et al., 2014; Fahrner et al., 2018). smFRET measurements show that R304W destabilizes the compact packing of CC1\u03b12/\u03b13 domains, increasing the angle between CC1\u03b12 and CC1\u03b13 helices and fully releasing CC1\u03b11 from CAD (Figure 6). These results are consistent with NMR studies showing that R304W causes N-terminal extension of the CC1\u03b13 helix, thereby stiffening the CC1\u03b12/\u03b13 linker (Fahrner et al., 2018; Rathner et al., 2021). Release of CC1\u03b11 from CAD alone may be sufficient to explain the activating effects of R304W on ctSTIM1; smFRET values for 242:242\u00b4 and 298:298\u00b4 were low, suggesting that the CC1 helices remain separated in ctSTIM1 R304W. In the context of flSTIM1 coiled-coil formation by the transmembrane domains may stabilize paired association of the CC1 helices following store depletion (Hirve et al., 2018). It is not known whether R304W fully mimics these effects of store depletion on the tertiary structure of CC1 in flSTIM1.\n\n### A structural view of quiescent STIM1 and its transition to the activated state\n\nOur results provide a first view of how the CC1 domain of STIM1 sequesters CAD near the ER membrane in resting cells to prevent it from interacting with Orai. The parallel arrangement of CC1\u03b11 and CC3 in our smFRET-derived structure predicts that the CAD apex of inactive STIM1 is juxtaposed to the ER membrane and pointed away from the PM in vivo (Figure 8A). This orientation implies that to activate STIM1 and SOCE, the CAD apex must rotate through a large angle (up to 180o) and translocate more than 10 nm toward the PM - a massive conformational change reminiscent of the refolding and extension of viral envelope proteins like hemagglutinin when stimulated to trigger membrane fusion (Harrison, 2008). Hirve et al. showed that activation of flSTIM1 is initiated by formation of a coiled-coil in the TM domains and the proximal part of CC1\u03b11 up to L251, with a high probability of coiled-coil assembly predicted through A268 (Hirve et al., 2018). As an extension to these findings, we found that after store depletion, inter-subunit disulfide bonds form at A268C (C-terminus of CC1\u03b11) and T307C and S339C (N- and C-termini of CC1\u03b13, respectively; Figure 7). Taken together, these results suggest that all three helical domains in CC1 are closely paired in the active dimer, which would effectively move CAD across the ~15 nm gap of the ER-PM junction to reach Orai (Wu et al., 2006).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/66194/elife-66194-fig8-v2.jpg)\n\n**Figure 8.:** (A) In the resting state, the parallel orientation of CC1\u03b11 and CC3 domains implies that CAD is held with its apex close to and pointed towards the ER membrane, effectively shielding critical interaction sites (stars) from engaging with Orai. The region C-terminal to CAD is abbreviated as its conformation is unknown. (B) Alternative models for transitions to the active state of flSTIM1. In the \u2018fold out\u2019 model (top), following the release of CC1\u03b11, CAD undergoes a symmetric conformational change in which the CC2 domains pass through a transient antiparallel state, providing a free path for the region downstream of CAD to extend towards the plasma membrane. In the \u2018flip out\u2019 model (bottom), CAD maintains its parallel resting conformation and undergoes an asymmetric outward rotation from between the CC1 domains. Assuming that the initial resting conformation is symmetric, one of its C-terminal domains (gray) would need to be carried through the gap between the two CC1 domains.\n\nOur CC1-CAD model specifies the possible types of conformational changes that must occur to activate flSTIM1 and present the CAD apex to Orai (Figure 8B). We can envision two potential solutions. In a \u2018flip-out\u2019 mechanism, CAD rotates by 180o. Although our smFRET data indicate that release of CC1\u03b11 does not cause a gross conformational change in CAD (Figure 6), this kind of CAD rotation would imply a complex asymmetric intermediate, in which one of the C-terminal domains downstream of CAD (aa 449\u2013685) would need to be threaded between the two CC1 domains. Alternatively, in a \u2018fold-out\u2019 model, CAD undergoes a symmetric conformational change while moving its apex away from the ER membrane. This model posits that during activation the CC2 domains rotate to transiently assume an antiparallel state, reminiscent of the NMR structure (Figures 1A and 8B). It is important to note that our cysteine crosslinking results indicate the CC1\u03b13 C-termini are closely apposed in the Orai-bound state (Figure 7D, S339C), which is incompatible with the splayed configuration of CC1\u03b13 domains in the NMR structure. Thus, if the antiparallel conformation exists, it is likely to represent a transient intermediate during the activation of STIM1 (Stathopulos et al., 2013).\n\nThe ultimate endpoint in delineating the mechanism of SOCE is an atomic-level description of the pathway of STIM1 activation by store depletion. To reach this goal the starting, intermediate, and final conformations of STIM1 after store depletion must be resolved, as well as the structure of the activated STIM-Orai complex. While approaches like cryo-EM certainly offer an effective strategy for elucidating structures, time-resolved measurements such as those afforded by smFRET will be essential to identify structural transitions in the activation pathway. The results obtained thus far through smFRET of ctSTIM1 have revealed critical measurement sites that offer a starting point for these studies. Ultimately, the identification of transient intermediate STIM1 conformations and rate-limiting steps in the activation process may reveal critical transitions that could be targeted to manipulate SOCE for therapeutic benefit.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (human)</td>\n      <td>STIM1</td>\n      <td>Origene</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>BL21</td>\n      <td>New England Biolabs</td>\n      <td>C25271</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>CVB101</td>\n      <td>Avidity</td>\n      <td>CVB101</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>HEK293</td>\n      <td>ATCC</td>\n      <td>CRL-1573</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti-mCherry</td>\n      <td>Takara Bio</td>\n      <td>632,543RRID:AB_2307319</td>\n      <td>(1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Donkey polyclonal anti-mouse IgG</td>\n      <td>LI-COR</td>\n      <td>926\u2013032212RRID:AB_621847</td>\n      <td>(1:10000)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pAC6 (vector)</td>\n      <td>Avidity</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>mCherry-labeled STIM1 (plasmid)</td>\n      <td>doi:10.1083/jcb.200604014</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Orai1-GFP (plasmid)</td>\n      <td>doi:10.1074/jbc.M703573200</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>TEV protease</td>\n      <td>MCLAB</td>\n      <td>TEV-200</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>BSA-biotin</td>\n      <td>Sigma Aldrich</td>\n      <td>A8549</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Neutravidin</td>\n      <td>Thermo Fisher</td>\n      <td>31000</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Glucose oxidase</td>\n      <td>Sigma Aldrich</td>\n      <td>G2133</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Catalase</td>\n      <td>Sigma Aldrich</td>\n      <td>C9322</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Trypsin/LysC protease</td>\n      <td>Promega</td>\n      <td>V5071</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>QuikChange II</td>\n      <td>Agilent</td>\n      <td>200524</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>PEG/PEG-biotin</td>\n      <td>Laysan Bio</td>\n      <td>BIO-PEG-SVA-5K &amp; MPEG-SVA-5K</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>TCEP</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>77720</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Alexa Fluor 555</td>\n      <td>Invitrogen Life Technologies</td>\n      <td>A-20346</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Alexa Fluor 647</td>\n      <td>Invitrogen Life Technologies</td>\n      <td>A-20347</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Biotinylated lipids 18:1 Biotinyl Cap PE</td>\n      <td>Avanti Polar Lipids</td>\n      <td>870273 C</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>egg-PC lipids</td>\n      <td>Avanti Polar Lipids</td>\n      <td>840051 C</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Cyclooctatetraene</td>\n      <td>Sigma Aldrich</td>\n      <td>138924</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>BS3-d0</td>\n      <td>Sigma Aldrich</td>\n      <td>21590</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>BS3-d4</td>\n      <td>Sigma Aldrich</td>\n      <td>21595</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>EDC</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>77149</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Sulfo-NHS</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>24520</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>ProteaseMax</td>\n      <td>Promega</td>\n      <td>V2071</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Cyclopiazonic acid (CPA)</td>\n      <td>Sigma Aldrich</td>\n      <td>C1530</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Protease inhibitor cocktail</td>\n      <td>Cell Signaling Technology</td>\n      <td>5871 S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Lipofectamine 2000</td>\n      <td>Thermo Scientific</td>\n      <td>11668027</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Poly-D-lysine</td>\n      <td>Sigma Aldrich</td>\n      <td>P-7405</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>fura-2/AM</td>\n      <td>Invitrogen</td>\n      <td>F-1221</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>\u03bcManager</td>\n      <td>doi:https://doi.org/10.1002/0471142727</td>\n      <td>RRID:SCR_016865</td>\n      <td>https://micro-manager.org/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>SMART: Single Molecule Analysis Research Tool</td>\n      <td>doi:10.1371/journal.pone.0030024</td>\n      <td></td>\n      <td>https://simtk.org/projects/smart/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Crystallography and NMR System (CNS)</td>\n      <td>doi:10.1038/nprot.2007.406; doi:https://doi.org/10.1107/S0907444998003254</td>\n      <td>RRID:SCR_014223</td>\n      <td>http://cns-online.org/v1.2/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PyMOL Molecular Graphics System ver. 1.8</td>\n      <td>Schr\u00f6dinger, LLC</td>\n      <td>RRID:SCR_000305</td>\n      <td>http://www.pymol.org/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ProDy</td>\n      <td>doi:10.1093/bioinformatics/btr168</td>\n      <td></td>\n      <td>http://prody.csb.pitt.edu/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Flexpepdock server of Rosetta</td>\n      <td>doi:10.1093/nar/gkr431</td>\n      <td>Rosetta, RRID:SCR_015701</td>\n      <td>http://flexpepdock.furmanlab.cs.huji.ac.il/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Byonic v2.12.0 or v2.14.27</td>\n      <td>Protein Metrics</td>\n      <td>RRID:SCR_016735</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>NiNTA beads</td>\n      <td>Qiagen</td>\n      <td>30210</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>SnakeSkin</td>\n      <td>Life Technologies</td>\n      <td>68700</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>HiTrap Q column</td>\n      <td>GE Healthcare Life Sciences</td>\n      <td>17-1153-01</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Quartz microscope slides</td>\n      <td>G. Finkenbeiner Inc.</td>\n      <td></td>\n      <td>For smFRET</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Microscope coverslips</td>\n      <td>Erie Scientific</td>\n      <td>24 \u00d7 40 1.5 001</td>\n      <td>For smFRET</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Liposome Extruder Set</td>\n      <td>Avanti Polar Lipids</td>\n      <td>610023</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>PC Membranes 0.1 \u00b5m</td>\n      <td>Avanti Polar Lipids</td>\n      <td>610005-1EA</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Sepharose CL-4B column</td>\n      <td>Sigma Aldrich</td>\n      <td>CL4B200</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>OBIS 532 nm LS 150 mW laser</td>\n      <td>Coherent</td>\n      <td>1280719</td>\n      <td>For smFRET</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>OBIS 637 nm LX 140 mW laser</td>\n      <td>Coherent</td>\n      <td>1196626</td>\n      <td>For smFRET</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Dichroic beamsplitter</td>\n      <td>Semrock</td>\n      <td>FF652-Di01\u221225 \u00d7 36</td>\n      <td>For smFRET</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Donor band-pass filter</td>\n      <td>Semrock</td>\n      <td>FF01-580/60-25-D</td>\n      <td>For smFRET</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Acceptor band-pass filter</td>\n      <td>Semrock</td>\n      <td>FF01-731/137-25</td>\n      <td>For smFRET</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Emission beam splitter</td>\n      <td>Cairn Research</td>\n      <td>OptoSplit-II</td>\n      <td>For smFRET</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>EM-CCD camera</td>\n      <td>Andor</td>\n      <td>iXon DU897E</td>\n      <td>For smFRET</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Polychrome II</td>\n      <td>TILL Photonics</td>\n      <td></td>\n      <td>For calcium imaging</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>emission filter</td>\n      <td>Semrock</td>\n      <td>FF02-534/30-25</td>\n      <td>For calcium imaging</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>emission filter &gt;480 nm</td>\n      <td>Chroma Technology Corp.</td>\n      <td></td>\n      <td>For calcium imaging</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Flash4.0 sCMOS camera</td>\n      <td>Hamamatsu Corp.</td>\n      <td></td>\n      <td>For calcium imaging</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell lines and cell culture\n\nHEK293 cells were authenticated and verified to be mycoplasma-free by PCR testing (ATCC). Cells were passaged in DMEM containing 10% FBS, 2 mM L-alanyl-glutamine, and 100 U/ml penicillin/streptomycin and cultured at 37\u00b0C in 5% CO2.\n\n### DNA constructs\n\nFor samples that were encapsulated in liposomes for surface immobilization, DNA encoding ctSTIM1 (aa 233\u2013685) was amplified by PCR from full-length human STIM1 (Origene), appending an N-terminal NcoI cleavage site, and a C-terminal TEV protease recognition sequence (SENLYFQG) followed by a HindIII cleavage site. The ctSTIM1 insert contained a silent T1764C mutation in H588 to remove an endogenous NcoI site, and a G1310C mutation to replace the endogenous cysteine (C437S). ctSTIM1 inserts were ligated into the pET28a vector which encoded a C-terminal 6-His tag. ctSTIM1 cysteine mutants were created by site-directed mutagenesis (QuikChange II, Agilent). The translated ctSTIM1 protein retained the sequence SENLYFQ at the C terminus after cleavage of the 6-His tag by TEV.\n\nFor samples that were directly attached to a PEG-coated surface, the pAC6 vector was used with a C-terminal AviTag sequence GLNDIFEAQKIEWHE (Avidity). ctSTIM1 was first ligated into a pTEV5 vector which encoded a TEV-cleavable N-terminal 6-His tag. DNA encoding the 6-His tag, TEV recognition site and ctSTIM1 was then amplified by PCR, appending an XhoI cleavage site to the N terminus, and a HindIII cleavage site to the C terminus for ligation into the pAC6 vector. The resulting translated ctSTIM1 protein retained the N-terminal sequence GAS after TEV cleavage of the 6-His tag, and it had the AviTag sequence following a spacer KLPAGG on the C terminus. All constructs were verified by DNA sequencing.\n\nFor cysteine mutagenesis and dye labeling we selected serine or threonine residues (structurally similar to cysteine) or polar residues (more likely to face the aqueous environment). In CC2, we chose residues that were expected to extend out into solution based on the NMR and crystal structures (Figure 1A). In CC1, we initially targeted predicted unstructured regions, in order to minimize interference with local secondary structure. Overall, we attempted to establish a reasonably even distribution of measurement sites throughout CC1 and CAD, although for certain regions of interest we selected several closely spaced residues for additional verification.\n\n### Protein expression, purification, and labeling\n\nctSTIM1 protein was expressed in E. coli based on standard methods described previously (Choi et al., 2010). Briefly, plasmid containing the ctSTIM1 insert was transformed to BL21 competent cells (New England Biolabs) for pET28a plasmids, or CVB101 competent cells (Avidity) for pAC6 plasmids. Protein expression was induced with IPTG at OD ~0.4 in 450 ml Luria Broth (LB), and for pAC6 plasmids biotin was added to a concentration of 50 \u00b5M. Bacteria were spun down and then resuspended in denaturing PBS (8 M urea, 100 mM NaH2PO4, 10 mM Tris, pH 7.4 with NaOH) and lysed by sonication. TCEP (Thermo Fisher Scientific) was added to a concentration of 0.5 mM. Samples were purified by NiNTA purification (Qiagen) and subsequently slowly dialysed using SnakeSkin (Life Technologies #68700) to 20/50 TBS (50 mM NaCl, 20 mM Tris, pH 7.4 with HCl) containing 1 mM DTT. TEV protease (10 \u00b5g/ml, MCLAB) was added during dialysis. Cleavage of the 6-His tag was usually almost 100 % as checked by SDS-PAGE. Samples were further purified by ion exchange on a HiTrap Q column (GE Healthcare Life Sciences) and eluted in 250 \u03bcl aliquots of 20/250 TBS. All buffers contained 0.5 mM TCEP. Resulting ctSTIM1 samples were >90% pure and displayed the expected molecular weight (~52 kD) by SDS-PAGE. Dimer concentration was typically 25\u201350 \u03bcM, measured by absorption photometry (NanoDrop 2000, ThermoFisher Scientific).\n\nIn preparing intra-subunit smFRET samples, we took several measures to minimize the proportion of fluorescent homodimers (FF, where F is a double-labeled subunit) while optimizing the yield of heterodimers (NF, where N is an unlabeled subunit). To form heterodimers, double-cysteine ctSTIM1 and cysteine-free ctSTIM1 were denatured in buffer containing 8 M urea and then mixed in a 1:5 ratio. Refolding was allowed to take place during slow dialysis as described above, to obtain expected ratios of 1/36 FF, 10/36 NF, and 25/36 NN (unlabeled homodimers). The small FF fraction was excluded during post hoc analysis of the single-molecule movies by selecting only molecules with two fluorophores (see \u2018smFRET data analysis\u2019 below). In a subset of samples, we added an AviTag to the C-terminus of unlabeled ctSTIM1. After recombination with double-labeled ctSTIM1, the biotinylated AviTag was then used to selectively attach only NF and NN dimers directly to the surface of the imaging chamber (instead of encapsulating ctSTIM1 in liposomes), in principle eliminating any FF dimers.\n\nProtein labeling was performed as described previously (Choi et al., 2010) using Alexa Fluor 555 as donor fluorophore and Alexa Fluor 647 as acceptor fluorophore (Invitrogen Life Technologies). For symmetric inter-subunit smFRET and for intra-subunit smFRET, donor and acceptor fluorophores were mixed in a 1:1 ratio before adding to the protein. Labeling efficiency assessed by absorption photometry was typically ~70 % but varied for different locations; cysteine mutants with labeling efficiency below 50 % were not used for smFRET experiments.\n\nFor asymmetric inter-subunit smFRET, two different ctSTIM1 cysteine mutants were labeled separately with donor or acceptor fluorophores and recombined afterward into ctSTIM1 heterodimers. For recombination, labeled ctSTIM1 homodimers were denatured with 8 M urea, mixed in a 1:1 ratio, and refolded during slow dialysis as described above, resulting in a mixture containing 50 % ctSTIM1 heterodimers. ctSTIM1 heterodimers with a single donor and a single acceptor fluorophore were individually selected during post hoc analysis of the smFRET experiments.\n\n### Sample preparation\n\nProteins were either encapsulated in liposomes or attached directly to the coverslip substrate. Liposome encapsulation is often preferred to minimize surface effects, although several comparisons showed no significant difference between the FRET profiles of encapsulated and directly attached ctSTIM1 (417:417\u00b4 in Figure 1\u2014figure supplement 1; 239:239\u00b4, 274:274\u00b4 in Figure 1\u2014figure supplement 2; 242:431 in Figure 1\u2014figure supplement 3). Except for the intramolecular measurements in Figures 2 and 4, all data were obtained using encapsulated protein. For liposome encapsulation, biotinylated lipids (18:1 Biotinyl Cap PE, Avanti Polar Lipids) were mixed with egg-PC lipids (Avanti Polar Lipids) in a 1:100 ratio and suspended in 20/150 TBS, and labeled protein was added to give final concentrations of ~2 mg/ml egg-PC and ~300 nM ctSTIM1. This mixture was passed back and forth (Extruder Set, Avanti Polar Lipids) through a liposome extrusion membrane (PC Membranes 0.1 \u03bcm, Avanti Polar Lipids). Liposomes were separated from free protein on a Sepharose CL-4B column (Sigma Aldrich). The conditions resulted in on average <<1 ctSTIM1 dimer per liposome.\n\nFlow cells for single-molecule fluorescence imaging were prepared according to established protocols (Roy et al., 2008). Briefly, strips of double-sided tape were applied to a quartz microscope slide (Finkenbeiner) to form channel walls, with holes at the ends of each channel to create entry and exit points for buffer solutions. A microscope coverslip (Erie Scientific) was pressed on the tape strips and edges of the channels were sealed with epoxy glue. For liposome experiments channels were coated with 1 mg/ml BSA-biotin (Sigma Aldrich). For direct surface attachment microscope slides and coverslips were coated with a 100:1 PEG/PEG-biotin mixture (Laysan Bio) prior to flow cell construction. In both cases, channels were flushed with 0.2 mg/ml neutravidin (Thermo Fisher CWA), then rinsed with 20/150 TBS (150 mM NaCl, 20 mM Tris, pH 7.4 with HCl) before loading liposomes or biotinylated ctSTIM1 (~100 pM). Immediately prior to imaging, channels were filled with 20/150 TBS containing 100 \u03bcM cyclooctatetraene (Sigma Aldrich) and an oxygen scavenging system consisting of 1 % D-glucose, 1 mg/ml glucose oxidase (Sigma Aldrich), and 0.04 mg/ml catalase (Sigma Aldrich).\n\n### TIRF microscopy and smFRET measurements\n\nSingle-molecule FRET recordings were performed using a home-built through-the-objective total internal reflection fluorescence (TIRF) imaging system based on a Zeiss Axiovert S100 TV microscope equipped with a Fluar 100 \u00d7 1.45 NA oil-immersion objective (Zeiss). Alexa Fluor 555 (donor) and Alexa Fluor 647 (acceptor) fluorophores were excited by 532 and 637 nm wavelength lasers (OBIS 532 nm LS 150 mW, Coherent and OBIS 637 nm LX 140 mW, Coherent). Donor and acceptor emission were separated by a 652 nm dichroic beamsplitter (Semrock) and passed through 580/60 nm and 731/137 nm bandpass filters (Semrock) mounted in an OptoSplit-II beamsplitter (Cairn Research), projecting the images side-by-side onto an EM-CCD camera (iXon DU897E, Andor). Hardware and image acquisition were controlled by BeanShell scripts in \u03bcManager (Edelstein et al., 2010), and image sequences were stored as stacked TIFF files.\n\nPrior to image acquisition, the channel surface was scanned manually using low-intensity donor excitation to identify a suitable location for smFRET imaging, where the density of fluorescent spots appeared homogeneous and without contamination or aggregations. Donor and acceptor emission were then recorded in response to donor excitation, typically for 60 s, immediately followed by 1 s of acceptor excitation to directly identify acceptor fluorophores. Images were acquired in frame-transfer mode with a 100ms integration time, and laser intensity was set to obtain a trade-off between good signal-to-noise ratio and sufficient active time for both fluorophores (ideally tens of seconds), while inducing fluorophore bleaching within the recording time window. Typically, 10\u201320 movies were recorded in each of four channels per microscope slide. Measurements were performed at room temperature.\n\n### smFRET data analysis\n\nFluorescence movies were analyzed using custom Python scripts. Donor and acceptor images were aligned using pre-recorded registration images, and fluorescing molecules were identified in the donor and acceptor channels by detecting local signal maxima within a five-pixel-diameter neighborhood. Donor signals that could not be matched to any acceptor signal were discarded. Pixel values for each molecule were summed, and signals from sequential movie frames were stacked to construct the fluorescence time series for each molecule. Raw donor and acceptor signals were background-corrected using the median fluorescence values within a circular 35-pixel-diameter region near each molecule in each frame. Leakage of donor signal into the acceptor channel in our system (approximately 7 % of the measured donor signal) was subtracted from the background-corrected acceptor signal.\n\n\u03b3 correction was used to correct for differences in photon emission and detection probabilities of donor and acceptor fluorophores. The value of \u03b3 was empirically determined for each individual molecule (McCann et al., 2010), and the correction was applied by multiplying the donor fluorescence signal by \u03b3 before calculating the smFRET ratio. The average \u03b3 value from all 12,252 molecules was 1.1.\n\nTraces were selected for final analysis if all of the following criteria were met: (1) the signal-to-noise ratio was \u22655; (2) the acceptor bleached in a single step before the donor bleached; (3) the \u03b3 factor was between 0.5 and 2.5; (4) spontaneous fluctuations of donor and acceptor fluorescence were negatively correlated; and (5) if a donor bleach event was recorded, it occurred in a single step.\n\nThe FRET ratio E was calculated at each time point prior to bleaching as E = IA/(IA + \u03b3ID), where IA and ID are the respective acceptor and donor fluorescence values. A FRET histogram was constructed for each trace by distributing FRET amplitudes into 30 bins in a [\u20130.25, 1.25] range. Histograms were normalized by dividing each bin by the total number of FRET points in the trace. An ensemble histogram for multiple molecules was constructed by summing the normalized histograms of the individual traces and dividing each bin by the total number of molecules.\n\nThe part of the fluorescence traces where both donor and acceptor were active was parameterized by fitting a Hidden Markov model (HMM), using routines from the SMART software package (Greenfeld et al., 2012). To determine the optimal kinetic model, the Bayesian information criterion was used to select between models with different numbers of states. To compare FRET levels among different molecules in an ensemble, each HMM state was assigned to a cluster based on its mean FRET value. Clustering was performed based on all observed states in the ensemble, using a k-means algorithm with a predetermined number of target clusters. The number of clusters was determined ad hoc depending on the shape of the FRET histogram. For each cluster, the peak of its histogram was reported as its representative FRET level. The predominant FRET cluster was the cluster containing the most FRET measurement points.\n\nPeriods between cluster transitions were used to construct dwell time histograms. The first and last period of each trace were discarded, so that traces with fewer than two transitions were not included in the dwell time analysis. For transition density plots each transition was described by a coordinate given by the FRET level just before the transition (horizontal axis) and the level after the transition (vertical axis). The local transition density was then calculated on a 50 \u00d7 50 grid ranging from FRET \u20130.25\u20131.25, by convolution with a Gaussian kernel with two-pixel standard deviation. To prevent individual molecules with many transitions from dominating the plot, each molecule contributed only one data point for each kind of transition. In this way, the transition plot reports the number of molecules in which each kind of transition appeared.\n\nFor each protein sample, single-molecule recordings from multiple experiments were pooled to construct smFRET amplitude histograms. The total number of molecules sampled for each histogram (see Figure 1\u2014figure supplements 1\u20133) was determined such that additional molecules did not alter the position of the predominant peak in the histogram. Key smFRET results were replicated by multiple authors (biological replications with newly purified protein samples). Molecules that did not produce a detectable level of smFRET were excluded, as they could not be properly interpreted.\n\n### Molecular modeling and simulation\n\nMolecular dynamics simulations and model optimization procedures were adapted from published procedures (Choi et al., 2010), and performed using Crystallography and NMR System (CNS) (Brunger et al., 1998; Brunger, 2007). Structures were visualized and manipulated using PyMOL (Version 1.8, Schr\u00f6dinger, LLC.) and ProDy (Bakan et al., 2011). To predict distances between fluorophores, we performed molecular dynamics simulations using atomic models of donor and acceptor fluorophores. Because structures for Alexa Fluor 555 and Alexa Fluor 647 are not available, we used the structures of the spectrally similar Cy3 and Cy5. Residues of interest on the CAD structure were mutated to cysteine and fluorophore models were covalently attached by CNS. While all protein atoms were held fixed in space, a simulated-annealing protocol sampled possible fluorophore conformations until a local energy minimum was reached. This procedure was repeated 100 times to obtain a distribution of fluorophore orientations, and the average location of the fluorophore center (taken as the location of the CAO atom) was computed from the resulting coordinates. When attached to sites in the CAD crystal structure the overall mean dye center protruded from the C\u03b1 atom of the attachment residue by 0.99 \u00b1 0.08 nm for Cy3 and 1.10 \u00b1 0.08 nm for Cy5. Since labeling was stochastic, the donor or acceptor could be on either side in a pair of label sites. To account for this, we averaged Cy3 and Cy5 center coordinates for each residue into a single \u2018effective\u2019 center location. Fluorophores were represented in the simulations by a pseudo-atom positioned at this effective center location, and inter-fluorophore distances were then calculated as the distance between two pseudo-atoms.\n\nAccording to F\u00f6rster theory the distance between donor and acceptor fluorophores (R) can be derived from experimentally determined smFRET efficiency (E) as R = R0 (1/E - 1)1/6, where R0 is a proportionality factor reflecting the inter-fluorophore distance at which E = 0.5 (Stryer and Haugland, 1967). For Alexa Fluor 555 and Alexa Fluor 647 in water, the theoretical value of R0 is 5.1 nm, assuming fast isotropic re-orientation of the fluorophores. We used this value for calculating smFRET-derived distances.\n\nFor structural modeling of the CAD apex (Figure 2E), we first created a symmetric version of the CAD crystal structure, as the original is slightly asymmetric in the apical region. We copied one subunit and aligned the proximal CC2 (aa 345\u2013378) and CC3 (aa 408\u2013436) domains to the adjacent subunit in the dimer, resulting in a symmetric pair. We then used CNS to allow the apex to relax to a new conformation, guided by smFRET-derived distance constraints (inter-subunit constraints at aa 388, 389, 399, 400, and 401, and intra-subunit constraint 431:389 on both subunits). Helices were treated as rigid bodies, while unstructured regions were treated as flexible chains with variable torsion angles. The distal CC2 helix (aa 379\u2013391) was allowed to rotate around residue G379. During the relaxation of the apex, the proximal CC2 and CC3 domains were held fixed in space.\n\nTo reconstruct the arrangement of CC1 helices around CAD, we used the symmetric CAD structure with smFRET-optimized apical region and modeled CC1 as a chain of dimensionless nodes using a custom Python script. Each node on the chain represented the center of a CC1 residue. CC1 chains were generated starting from aa 344 at the CAD N-terminus, by progressively connecting new nodes until the final residue aa 233 was reached. In unstructured regions, nodes were spaced every 0.38 nm and were generated at random angles \u226590o. Alpha-helical regions (CC1\u03b11\u20133, comprising residues aa 246\u2013271, 275\u2013305, and 310\u2013337, respectively) were modeled as a straight chain of nodes at 0.15 nm intervals. To create a symmetric pair of CC1 chains, nodes were generated for one subunit, and then copied and mirrored in CAD\u2019s symmetry planes to create the chain for the other subunit. Each node was subjected to two criteria: (1) it cannot overlap with any residues in CC1 or CAD (volume exclusion in a 0.25 nm-radius sphere), and (2) it must satisfy smFRET-derived distance (DFRET) constraints.\n\nDFRET values could not be used directly for CC1 modeling because fluorophores were not explicitly simulated on CC1 residues. Instead, the 1 nm fluorophore linker length was accounted for by accepting distances within a range around DFRET, determined as follows (Supplementary file 1). For CC1:CAD pairs, the modeled distance was calculated between the center of the CC1 node and the center of the simulated fluorophore on CAD. The applied distance range had a lower bound of DFRET \u2013 1 nm, allowing for the possibility that the CC1 fluorophore was directed away from the corresponding fluorophore on CAD. For CC1:CC1\u00b4 pairs, the distance was calculated between the centers of the two CC1 nodes. The applied distance range had a lower bound of DFRET \u2013 2 nm to allow for the possibility that the two CC1 fluorophores were directed away from each other. In all cases, the upper distance bound was initially set to DFRET to exclude solutions where fluorophores were directed toward each other and the interior of the protein. Finally, lower and upper distance bounds were increased to reflect an uncertainty of \u00b10.05 (the bin width of the smFRET histograms) in the measurement of the smFRET peak.\n\nIf a model node fell within the distance range without overlapping other residues, it was retained; otherwise, it was rejected and a new node generated. If no acceptable node was found, a new search was started for the preceding node. If, after multiple trials, solutions could not be obtained for a particular smFRET measurement, the upper bound of the acceptable distance range was increased in 1 nm increments, until solutions could be obtained. Such adjustment was performed for 7 out of 36 measurements, 4 of which had very low FRET ( < 0.2). This process continued until the final N-terminal residue of CC1 (aa 233) was reached. Solutions obtained in this way together defined a solution space within which CC1 obeyed the imposed constraints. We used the average of 50 solutions as a model for presentation (Figure 5 and Figure 5\u2014figure supplement 1).\n\nTo obtain a more detailed picture for the molecular interface of the CC1\u03b11-CAD complex, we aligned the crystal structure of the CC1\u03b11 helical segment (aa 246\u2013271) to the smFRET-derived CC1 model, directing the hydrophobic sidechains to point toward CAD. Residue A419 in the CAD crystal structure was mutated back to the original valine using PyMOL. The CC1\u03b11 helix was then docked onto CC3 using the flexpepdock server of Rosetta (London et al., 2011), which performed a molecular dynamics simulation with a fully flexible backbone. An initial docking was performed with distance constraints (2.5 \u00b1 2.5 \u00c5) between CG atoms of residue pairs L248:L416, L251:L416, L258:L423, and L261:L427, which were directly apposed in the smFRET-derived model. This was followed by an unconstrained simulation to obtain the final model (Figure 5E).\n\n### Chemical crosslinking and mass spectrometry\n\nFor BS3 crosslinking of ctSTIM1, the buffer was changed from Tris- to HEPES-based (150 mM NaCl, 20 mM HEPES, pH 8.0 with NaOH) during the ion exchange procedure. ctSTIM1 samples at 10 \u03bcM (~1 mg/ml) were allowed to incubate with 0, 20 and 50 \u03bcM BS3 (BS3-d0 or BS3-d4, Sigma Aldrich) for 30 min at room temperature. The reaction was then quenched for 15 min at room temperature with 20 mM Tris.\n\nFor crosslinking with EDC, the buffer was changed from Tris- to MES-based (250 mM NaCl, 100 mM MES, pH 6.0 with HCl) during the ion exchange procedure. To increase crosslinking efficiency, EDC (Sigma Aldrich) was used in combination with sulfo-NHS (Sigma Aldrich) to convert carboxyl groups into stable amine-reactive sulfo-NHS esters. ctSTIM1 samples at 100 \u03bcM (~10 mg/ml) were allowed to incubate with 0/0, 20/62, 50/156, and 100/312 mM EDC/sulfo-NHS for 15 min at room temperature. Two volumes of PBS (250 mM NaCl, 100 mM Na2HPO4, pH 8.5 with NaOH) with 25 mM BME (pH 8.5) were then slowly added to quench the EDC and increase the pH for the subsequent amine reaction, incubated 2 hr at room temperature and quenched with 40 mM Tris.\n\nCrosslinked ctSTIM1 samples were run on SDS-PAGE gels, and monomer and dimer bands were cut and analyzed separately by mass spectrometry (Figure 5\u2014figure supplement 2). For comparative BS3 crosslinking experiments, BS3-d0- and BS3-d4-treated samples were first mixed 1:1 before electrophoresis. Gel bands at 20 and 50 \u03bcM BS3 were combined for analysis (Figure 5\u2014figure supplement 2). In Figure 7\u2014figure supplement 2, the T307C sample was first cysteine-crosslinked with CuP before treatment with BS3-d4. After BS3-d4 treatment the cysteine crosslink was reversed by treatment with DTT before mass spectrometry analysis. For EDC experiments, the monomer band at 10 mM EDC and the combined dimer bands at 2, 5, and 10 mM were used (Figure 5\u2014figure supplement 3).\n\nMass spectrometry analysis of cross-linked samples was performed as described previously (Komolov et al., 2017). Briefly, gel bands were diced into 1 \u00d7 1 mm squares, reduced in 5 mM DTT at 55 \u00b0C for 30 min, and then alkylated with 10 mM acrylamide for 30 min at room temperature to cap free cysteines. Following alkylation of free cysteines and washing of gel pieces, proteolytic digestion was completed using trypsin/LysC protease (Promega) in the presence of ProteaseMax (Promega) overnight at 37 \u00b0C. Peptides were then extracted and dried under SpeedVac prior to LC/MS analysis.\n\nMass spectrometry experiments were performed using an Orbitrap Fusion Tribrid mass spectrometer (Thermo Scientific, San Jose, CA) with an Acquity M-Class UPLC system (Waters Corporation, Milford, MA) for reverse phase separations. The column was an in-house pulled-and-packed fused silica column with an I.D. of 100 microns pulled to a nanospray emitter. Packing material for the column was C18 reprosil Pur 1.8 micron stationary phase (Dr. Maisch) with a total length of ~25 cm. The UPLC system was set to a flow rate of 300 nL/min, where mobile phase A was 0.2 % formic acid in water and mobile phase B was 0.2 % formic acid in acetonitrile. Gel-extracted peptides were directly injected onto the column with a gradient of 2\u201345% mobile phase B, followed by a high-B wash over a total 90 min. The mass spectrometer was operated in a data-dependent mode using HCD/ETD decision-tree fragmentation in the orbitrap (HCD) or ion trap (ETD) for MS/MS spectral generation.\n\nThe collected mass spectra were analyzed using Byonic v2.12.0 or v2.14.27 (Protein Metrics) as the search engine for peptide ID and protein inference. The precursor and fragment ion tolerance were both set to 12 ppm and 0.4 Da for HCD and ETD, respectively. The search assumed tryptic digestion and allowed for up to two missed cleavages. Potential crosslinked peptides were identified using Byonic\u2019s xlink feature, allowing for linker mass where appropriate. Data were validated using the standard reverse-decoy technique at a 1 % false discovery rate and inspected using Byologic for crosslink verification and assessment.\n\n### Cysteine crosslinking\n\nSymmetric inter-subunit ctSTIM1 dimers (5 \u03bcM) were incubated with 300 \u03bcM CuSO4 and 900 \u03bcM o-phenanthroline for 15 min at room temperature, after which the reaction was quenched with 2 x LDS buffer containing 50 mM EDTA. After samples were run on an SDS-PAGE gel and stained with Coomassie Blue, gels were destained and scanned with a LI-COR Odyssey infrared imaging system. Crosslinking efficiency was quantified by the integrated intensity of the dimer band as a fraction of the summed intensities of the monomer and dimer bands.\n\nFor crosslinking flSTIM1 in situ, HEK293 cells were transfected with mCh-STIM1-C437S constructs with selected residues replaced by cysteine. 48 hr after transfection, cells were exposed to 0.2 mM diamide for 10 min in either 2 Ca Ringer\u2019s (full Ca2+ stores) or in 0 Ca2+ + 1 mM EGTA +20 \u00b5M cyclopiazonic acid (depleted Ca2+ stores; CPA, Sigma). Cells were then lysed in RIPA containing 20 mM NEM, protease inhibitor cocktail (Cell Signaling Technology) and EDTA. Samples were run on SDS-PAGE and analyzed by western blot using mouse anti-mCherry primary antibody (1:2000, Takara Bio) and secondary antibody (LI-COR) on a LI-COR Odyssey imaging system. 50 mM DTT was added to duplicate samples to test for disulfide crosslinks. Sites of interest were replicated 2\u20133 times (biological replicates with newly transfected cells).\n\n### Calcium imaging\n\nFor experiments with STIM1 fragments (Figure 6\u2014figure supplement 1), HEK293 cells were transfected with mCherry-labeled STIM1 cytosolic fragments (0.25 \u00b5g + 0.25 \u00b5g empty pcDNA3 vector) and Orai1-GFP (0.5 \u00b5g) in a 35 mm dish using Lipofectamine 2000 (Life Technologies). Transfected cells were grown overnight in DMEM supplemented with Glutamax, 10 % FBS, pen/strep, and 20 \u00b5M LaCl3 to minimize the toxic effects of constitutive Ca2+ influx. Cells were loaded with 1 \u00b5g/ml fura-2/AM for 30 min at room temperature, rinsed, and plated on poly-D-lysine-coated coverslips for imaging. For experiments with flSTIM1 (Figure 7), HEK293 cells were co-transfected with flSTIM1 cysteine mutants and Orai1-GFP. 24\u201348 hr after transfection, cells were loaded with 1 \u00b5M fura-2/AM for 30 min at room temperature, rinsed, and plated on poly-D-lysine-treated coverslip chambers.\n\nFura-2 imaging was conducted using a Zeiss 200M inverted microscope with a Fluar 40X NA 1.3 objective; cells were excited alternately at 350 and 380 nm (Polychrome II, TILL Photonics), and emission at 534 \u00b1 30 nm (Semrock) or >480 nm (Chroma) was collected with a Flash4.0 sCMOS camera (Hamamatsu Corp.) with 2 \u00d7 2 binning. Images were background corrected before calculating the 350/380 ratio for each cell. Standard bath solution contained (in mM): 155 NaCl, 4.5 KCl, 2 CaCl2, 1 MgCl2, 10 D-glucose and 5 Na-HEPES (pH 7.4). Ca2+-free solution was prepared by replacing CaCl2 with 2 mM MgCl2 and 1 mM EGTA. For cysteine crosslinking experiments, cells were treated with 1 \u00b5M ionomycin +0.25 mM diamide in Ca2+-free Ringer\u2019s followed by Ca2+-free Ringer\u2019s + 0.25 mM diamide +0.1 % BSA to wash out ionomycin prior to readding standard (2 mM Ca2+) Ringer\u2019s + 0.1 % BSA. Calcium imaging was performed on a sufficient number of cells to obtain an error of the mean that allowed a clear distinction among responses to different conditions. Cells with an abnormally high or unstable baseline calcium level were excluded.\n",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "f8615e1d-4791-41c6-a422-207d33a162cf",
+      "submission_id": "a50b7d2a-c8f4-4058-9c9d-2d31dac2ab77",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marcel P Goldschen-Ohm, University of Texas at Austin United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.66194.sa0](https://doi.org/10.7554/eLife.66194.sa0)\n\nThis study uses complementary approaches to advance our mechanistic understanding of STIM1 activation, with elegant single molecule methods providing new details on STIM1 structure and dynamics. The data clarifies some of the controversy between domain packing in two differing X-ray and NMR structures and substantially contributes to a mechanistic and structural understanding of the STIM1 activation process.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Marcel P Goldschen-Ohm, University of Texas at Austin United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.66194.sa1](https://doi.org/10.7554/eLife.66194.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Conformational dynamics of auto-inhibition in the ER calcium sensor STIM1\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Marcel P Goldschen-Ohm as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Richard Aldrich as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Yubin Zhou (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) A discussion regarding the discrepancy between this study and a recent NMR structure of CC1 (PMID: 33106661) will strengthen the manuscript. The most notable difference lies in the positioning of CC1-a1 relative to the other two helices of CC1. Is this due to the missing of SOAR and other C-terminal sequences in the NMR structure?\n\n2) What is the rationale for using 2 different methods for smFRET, either encapsuled or directly attached proteins? Were there any differences in smFRET for liposome encapsulated versus tethered ctSTIM1? Also, it is not clear which was used where throughout the paper. This needs to be clarified.\n\n3) Regarding intra-subunit smFRET measurements, the 1:5 mixture means that 1 in 6 observations come from a dimer with double cysteine label sites in each subunit. How were these observations accounted for in the analysis?\n\n4) Western Blots: There should be at least one negative control provided for the used ctSTIM1 and flSTIM1 lacking the cysteine introduced for crosslinking experiments in Figure 7 or Suppl. Figure 2 or 8.\n\n5) Why are the bands for the fl STIM1 dimers in Figure 7A or Suppl. Figure 8b actually higher than expected from the monomer bands?\n\n6) Please include at least a brief discussion of the rationale for selecting these aa in the CC1 domain tested for cysteine crosslinking?\n\n7) In the discussion, line 367, the authors state \"in the absence of CC1\u03b13, the rigid CC1\u03b12 helix would prevent CC1\u03b11 from binding to CAD, which would then be free to interact with Orai1. Consistent with this explanation, deletion of CC1\u03b12 in addition to CC1\u03b13 allows the inhibitory clamp to function normally (Fahrner et al., 2014).\" As it can be seen in the referenced manuscript Fahrner et al., STIM1 \u0394CC1\u03b13 is only slightly constitutively active and in addition activated in a store dependent manner. From the authors statement one would assume STIM1 \u0394CC1\u03b13 to be fully constitutively active. Additionally, this explanation would imply that deletion of CC1\u03b12 would similarly prevent CC1\u03b11 from binding to CAD as the deletion of CC1\u03b13 does, but Fahrner et al., show that STIM1 \u0394CC1\u03b12 is inactive before store depletion.\n\n8) In ctSTIM1 the CC1a2-CC1a3 linkers are close to each other (312:312') and disruption of their close association with R304W leads to activation (Figure 6). In contrast, based on cross linking at 307 in ctSTIM1 and flSTIM1 the authors suggest that the CC1a2-CC1a3 linkers are far apart in the resting conformation and move together upon activation (Figure 7). Clearly something more subtle than what is indicated by the cartoons is going on. Some discussion of this discrepancy between the cartoons and the data would be helpful.\n",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "79e19320-09ab-4b82-8e17-e5f437106de1",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C1",
+      "claim": "The dimeric ER Ca2+ sensor STIM1 controls store-operated Ca2+ entry (SOCE) through the regulated binding of its CRAC activation domain (CAD) to Orai channels in the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The dimeric ER Ca2+ sensor STIM1 controls store-operated Ca2+ entry (SOCE) through the regulated binding of its CRAC activation domain (CAD) to Orai channels in the plasma membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in the field, supported by citations throughout the manuscript and presented as background knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "f2264cce-008e-4115-869e-f3c335481070",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C2",
+      "claim": "In resting cells, the STIM1 CC1 domain interacts with CAD to suppress SOCE.",
+      "claim_type": "EXPLICIT",
+      "source": "In resting cells, the STIM1 CC1 domain interacts with CAD to suppress SOCE, but the structural basis of this interaction is unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract, with the structural basis being the focus of investigation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "5c509859-7431-4745-bee7-f96cdab48961",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C3",
+      "claim": "CC1 interacts dynamically with CAD in a domain-swapped configuration.",
+      "claim_type": "EXPLICIT",
+      "source": "Using single-molecule F\u00f6rster resonance energy transfer (smFRET) and protein crosslinking approaches, we show that CC1 interacts dynamically with CAD in a domain-swapped configuration with an orientation predicted to sequester its Orai-binding region adjacent to the ER membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by smFRET measurements and crosslinking data presented in the manuscript, particularly in Figures 3 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "7c64f9c6-2012-4598-b996-dc5a8ca6929b",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C4",
+      "claim": "The orientation of CC1-CAD interaction sequesters the Orai-binding region adjacent to the ER membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Using single-molecule F\u00f6rster resonance energy transfer (smFRET) and protein crosslinking approaches, we show that CC1 interacts dynamically with CAD in a domain-swapped configuration with an orientation predicted to sequester its Orai-binding region adjacent to the ER membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural model derived from smFRET data and presented in Figure 8A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "f6e37e21-31ae-418b-96a6-c6d7b805a84f",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C5",
+      "claim": "Following ER Ca2+ depletion and release from CAD, the two CC1 domains become closely paired along their entire length in the active Orai-bound state.",
+      "claim_type": "EXPLICIT",
+      "source": "Following ER Ca2+ depletion and release from CAD, cysteine crosslinking indicates that the two CC1 domains become closely paired along their entire length in the active Orai-bound state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cysteine crosslinking experiments in full-length STIM1 after store depletion, shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "b6a98bf9-cd1d-499e-b1dc-b3f267c09119",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C6",
+      "claim": "SOCE is essential for diverse physiological functions of excitable and non-excitable cells, including gene expression, secretion, and motility.",
+      "claim_type": "EXPLICIT",
+      "source": "SOCE is essential for diverse physiological functions of excitable and non-excitable cells, including gene expression, secretion, and motility (Prakriya and Lewis, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "4fe315b4-340c-49ff-bf0b-be46a7ebe66a",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C7",
+      "claim": "Loss-of-function mutations in the core SOCE components lead to serious human pathologies such as severe combined immunodeficiency, autoimmunity, myopathy, ectodermal dysplasia, and anhidrosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, loss-of-function mutations in the core SOCE components lead to serious human pathologies such as severe combined immunodeficiency, autoimmunity, myopathy, ectodermal dysplasia, and anhidrosis (Lacruz and Feske, 2015), whereas gain-of-function mutations cause Stormorken syndrome, miosis, myopathy, thrombocytopenia, and excessive bleeding (B\u00f6hm and Laporte, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "b5c65662-9480-4214-89f3-ca69be3ca5a8",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C8",
+      "claim": "Gain-of-function mutations in SOCE components cause Stormorken syndrome, miosis, myopathy, thrombocytopenia, and excessive bleeding.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, loss-of-function mutations in the core SOCE components lead to serious human pathologies such as severe combined immunodeficiency, autoimmunity, myopathy, ectodermal dysplasia, and anhidrosis (Lacruz and Feske, 2015), whereas gain-of-function mutations cause Stormorken syndrome, miosis, myopathy, thrombocytopenia, and excessive bleeding (B\u00f6hm and Laporte, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "6cbb7baf-ede2-4091-b3e1-abde807e6c9a",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C9",
+      "claim": "In resting cells, Ca2+ bound to the luminal EF hands of the STIM1 dimer suppresses STIM1 activity by promoting intramolecular association of the coiled-coil 1 (CC1) domains with CAD.",
+      "claim_type": "EXPLICIT",
+      "source": "In resting cells, Ca2+ bound to the luminal EF hands of the STIM1 dimer suppresses STIM1 activity by promoting intramolecular association of the coiled-coil 1 (CC1) domains with CAD, referred to as the 'inhibitory clamp' (Korzeniowski et al., 2010; Yang et al., 2012; Yu et al., 2013; Fahrner et al., 2014; Ma et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "45dc0bde-68e6-4370-b18a-757d7557b5af",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C10",
+      "claim": "Upon ER Ca2+ depletion, dissociation of Ca2+ from the luminal EF hands triggers conformational changes that release CC1 from CAD.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon ER Ca2+ depletion, dissociation of Ca2+ from the luminal EF hands triggers conformational changes that release CC1 from CAD and promote STIM1 accumulation at ER-plasma membrane (ER-PM) junctions where the CAD domain binds, traps, and activates Orai1 channels diffusing in the PM (Wu et al., 2006; Wu et al., 2014; Liou et al., 2007; Park et al., 2009; Yuan et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "a70f3686-f69c-4dc4-950f-e19c36612940",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C11",
+      "claim": "The CC2 domains in ctSTIM1 are oriented in a parallel configuration.",
+      "claim_type": "EXPLICIT",
+      "source": "We initially applied smFRET to test whether the conformation of CAD within the cytosolic domain (ctSTIM1, aa 233\u2013685) resembles that of the CC2-CC3 crystal structure (Yang et al., 2012) or the CC1\u03b13-CC2 NMR structure (Stathopulos et al., 2013), referred to below as the 'crystal structure' or 'NMR structure' respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by smFRET measurements at positions 337, 363, and 378 showing high FRET consistent with parallel CC2 domains, as shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "4e12231e-53a0-4ff3-96a5-c811532bf0f7",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C12",
+      "claim": "Inter-fluorophore distances calculated from simulations of the donor and acceptor dye positions on the crystal structure closely matched those derived from smFRET.",
+      "claim_type": "EXPLICIT",
+      "source": "Inter-fluorophore distances calculated from simulations of the donor and acceptor dye positions on the crystal structure closely matched those derived from smFRET, while simulations based on the NMR structure deviated substantially (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by comparing simulated distances from crystal and NMR structures with smFRET-derived distances in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "67ef665e-ef11-4c55-85f2-fc89a79fdca0",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C13",
+      "claim": "In the context of the complete ctSTIM1 in solution, the CC2 domains in CAD adopt a parallel conformation consistent with the CAD crystal structure and not the NMR structure.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that in the context of the complete ctSTIM1 in solution, the CC2 domains in CAD adopt a parallel conformation consistent with the CAD crystal structure and not the NMR structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on smFRET measurements and distance simulations presented in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "d010c56a-9850-47e6-b68c-d7ca04feb5bf",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C14",
+      "claim": "Near the dimer interface (the 'base' of CAD), smFRET-derived distances quantitatively agreed with those from the crystal structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Near the dimer interface (hereafter termed the 'base' of CAD), smFRET-derived distances quantitatively agreed with those from the crystal structure, and an intra-subunit measurement 431:363 directly confirmed the compact folding of CC3 onto CC2 within each subunit (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by smFRET measurements at the base of CAD shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "abc03e97-34d8-459c-a5e7-02a425aee583",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C15",
+      "claim": "smFRET measurements of the distal CC2 and CC2-CC3 linker regions (the CAD 'apex') deviated from those indicated in the crystal structure.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the base of CAD, smFRET measurements of the distal CC2 and CC2-CC3 linker regions (the CAD 'apex') deviated from those indicated in the crystal structure (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by smFRET measurements in the apex region presented in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "04055c0c-a13e-4104-b727-8bba158c0564",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C16",
+      "claim": "The CAD apex region is critical for Orai1 binding and activation.",
+      "claim_type": "EXPLICIT",
+      "source": "This is particularly interesting as mutagenesis studies have identified this region as critical for Orai1 binding and activation (Calloway et al., 2010; Korzeniowski et al., 2010; Wang et al., 2014; Thompson et al., 2018; Butorac et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "de223add-58dd-4d56-be22-18902a7590ab",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C17",
+      "claim": "smFRET measurements in the CAD apex displayed fluctuations, suggesting conformational flexibility.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, smFRET measurements in this region displayed fluctuations (Figure 2F), suggesting conformational flexibility that was not expected from the uninterrupted rigid helix of the crystal structure.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by smFRET traces showing fluctuations at position 388 in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "1abce2da-b807-40a6-b18e-c493ef4353c2",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C18",
+      "claim": "Cysteines introduced throughout the CAD apex formed inter-subunit crosslinks.",
+      "claim_type": "EXPLICIT",
+      "source": "As a complementary structural test, we analyzed inter-subunit cysteine-cysteine (cys-cys) crosslinking upon oxidation by copper phenanthroline (CuP, see Materials and methods). Cysteines introduced throughout the CAD apex formed inter-subunit crosslinks, detected as ctSTIM1 dimers on non-reducing SDS-PAGE gels (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by crosslinking experiments shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "36ee945f-bcb7-4613-845a-8787f92e77f1",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C19",
+      "claim": "The CC1\u03b11 domain is oriented parallel to CC3 in the predominant ctSTIM1 conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected high inter-subunit FRET efficiencies between labels at the N-termini of CC1\u03b11 and CC3 (red histogram in Figure 3A, top), as well as between labels at their C-termini (blue histogram in Figure 3A, bottom), indicating that the CC1\u03b11 domain (a continuous \u03b1-helix [Cui et al., 2013; Rathner et al., 2021]) is oriented parallel to CC3 in the predominant ctSTIM1 conformation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by smFRET measurements at the N- and C-termini of CC1\u03b11 and CC3 shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "ccb50146-1f77-4f1b-bed1-ffd1229b688d",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C20",
+      "claim": "In the predominant ctSTIM1 conformation, CC1\u03b11 engages CAD in a domain-swapped configuration.",
+      "claim_type": "EXPLICIT",
+      "source": "The predominant inter-subunit FRET efficiencies were consistently higher than intra-subunit FRET efficiencies, demonstrating that in the predominant ctSTIM1 conformation, CC1\u03b11 engages CAD in a domain-swapped configuration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by comparing inter-subunit and intra-subunit FRET measurements between CC1\u03b11 and CAD shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "fe57138e-da85-4221-8d7d-6ccae606f812",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C21",
+      "claim": "The two CC1\u03b11 domains briefly switch sides on CAD, probably using the same binding interface.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed spontaneous and reversible transitions from the predominant FRET state, in which FRET efficiencies fluctuated between the same two levels for both inter- and intra-subunit measurements (Figure 3C). Similar fluctuation behavior and transition kinetics were observed at all three CAD sites (Figure 3\u2014figure supplement 1), suggesting a conformational transition in which the two CC1\u03b11 domains briefly switch sides on CAD, probably using the same binding interface (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that inter- and intra-subunit measurements show transitions between the same FRET levels, as shown in Figure 3C and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "7369546f-e362-4064-be43-05014f5ffb31",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C22",
+      "claim": "The two CC1\u03b13 domains are closely apposed and parallel.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured predominantly high inter-subunit FRET efficiencies of ~0.9 between labels at the N- or C-terminal ends of the CC1\u03b13 domains (aa 312 and 337, respectively), indicating that the two domains are closely apposed and parallel (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by smFRET measurements at positions 312 and 337 shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "d4b39b36-107e-4bff-9f15-f1aeca0e7586",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C23",
+      "claim": "The N-terminus of CC1\u03b13 is directed away from CAD.",
+      "claim_type": "EXPLICIT",
+      "source": "While FRET efficiency from the CC1\u03b13 C-terminus to the proximal CC2 domain was high as expected (red histogram in Figure 4B, top), low FRET efficiencies were measured from the CC1\u03b13 N-terminus, indicating that the N-terminus is directed away from CAD (Figure 4B, bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by intra-subunit FRET measurements from the CC1\u03b13 N-terminus to CC2 shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "9dca28b8-3d7a-4171-aa73-c2526bfa9b26",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C24",
+      "claim": "The N-termini of CC1\u03b13 intermittently splay out from a stable pivot point at the base of CAD.",
+      "claim_type": "EXPLICIT",
+      "source": "However, label sites near the N-terminus of CC1\u03b13 displayed brief (0.8 s average lifetime), large transitions to a low FRET state, suggesting that the N-termini of CC1\u03b13 intermittently splay out from a stable pivot point at the base of CAD (Figure 4C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from smFRET fluctuations observed at positions near the CC1\u03b13 N-terminus shown in Figure 4C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "42749140-28d9-47a3-900a-11c3cbaf6877",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C25",
+      "claim": "Both classes of smFRET-derived models displayed closely apposed CC1\u03b13 domains directed away from CAD and CC1\u03b11 domains oriented parallel to CC3 in a domain-swapped configuration.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, both classes of solutions displayed the defining features described above, including closely apposed CC1\u03b13 domains directed away from CAD and CC1\u03b11 domains oriented parallel to CC3 in a domain-swapped configuration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of the structural modeling based on smFRET constraints, with models shown in Figure 5A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "6b9e5ae3-3379-4f4a-bdd8-973295629048",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C26",
+      "claim": "BS3 XLMS confirmed key structural arrangements of both models of the CC1-CAD complex, including the compact packing of CC1\u03b12/\u03b13 domains and the domain-swapped CC1\u03b11-CAD interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "As an independent test of the smFRET-derived models, we applied the lysine crosslinking agent BS3 combined with mass spectrometry (XLMS) to identify proximal pairs of residues (Rappsilber, 2011). BS3 XLMS confirmed key structural arrangements of both models of the CC1-CAD complex, including the compact packing of CC1\u03b12/\u03b13 domains and the domain-swapped CC1\u03b11-CAD interaction (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by BS3 crosslinking and mass spectrometry data shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "ee5a6f4d-2351-4e62-91a7-86e3598e6397",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C27",
+      "claim": "The antiparallel apposition of CC1\u03b12 and CC1\u03b13\u00b4 in ctSTIM1 was confirmed by inter-subunit crosslinks with EDC.",
+      "claim_type": "EXPLICIT",
+      "source": "The antiparallel apposition of hydrophobic residues in CC1\u03b12 and CC1\u03b13\u00b4 (Figure 5B) is reminiscent of the tight, antiparallel interaction of CC1\u03b12 and CC1\u03b13\u00b4 domains in the CC1 dimer crystal structure (Cui et al., 2013), an arrangement that was further supported by the formation of amine-carboxy crosslinks in ctSTIM1 by 1-ethyl-3-(3-dimethylaminopropyl)carbodiimide hydrochloride (EDC), a zero-length crosslinker (Figure 5C and Figure 5\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by EDC crosslinking experiments shown in Figure 5C and Figure 5\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "554dbe3a-2036-478e-90f4-41563e1609e0",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C28",
+      "claim": "The CC1\u03b11:CC3\u00b4 interface juxtaposes multiple hydrophobic residues that have been previously implicated through mutagenesis in stabilizing the CC1-CAD complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the CC1\u03b11:CC3\u00b4 interface in the smFRET-derived models juxtaposes multiple hydrophobic residues that have been previously implicated through mutagenesis in stabilizing the CC1-CAD complex: L248, L251, L258, and L261 in CC1\u03b11 and L416, V419, and L423 in CC3 (Muik et al., 2011; Zhou et al., 2013; Fahrner et al., 2014; Ma et al., 2015; Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the structural model and supported by previous mutagenesis studies cited in the text.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "0b897aaf-009d-4d24-b91a-eb1159d358f6",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C29",
+      "claim": "When expressed with Orai1 in HEK293 cells, mCh-ctSTIM1 only slightly increased [Ca2+]i compared to mCh-CAD.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, when expressed with Orai1 in HEK293 cells, mCh-ctSTIM1 only slightly increased [Ca2+]i compared to mCh-CAD (Figure 6\u2014figure supplement 1), in agreement with previous evidence that ctSTIM1 is a relatively weak activator of Orai1 (Muik et al., 2009; Park et al., 2009; Yuan et al., 2009; Korzeniowski et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by calcium imaging experiments shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "9da3f8c2-5882-4e1b-af56-1d4dd14ef937",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C30",
+      "claim": "Deletion of the CC1 domain (mCh-ctSTIM1-\u0394CC1) restored ctSTIM1 activity to the level seen with CAD.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of the CC1 domain (mCh-ctSTIM1-\u0394CC1) restored ctSTIM1 activity to the level seen with CAD, as did the introduction of R304W, a naturally occurring mutation that causes Stormorken syndrome by constitutively activating STIM1 (Misceo et al., 2014; Morin et al., 2014; Nesin et al., 2014; Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by calcium imaging experiments shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "affe6b16-c0b3-4111-a91a-8379fb8821d5",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C31",
+      "claim": "Introduction of R304W into ctSTIM1 almost completely eliminated the high inter-subunit FRET between the N termini of CC1\u03b11 and CC3, indicating the release of CC1\u03b11 from CAD.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, introduction of R304W into ctSTIM1 almost completely eliminated the high inter-subunit FRET between the N termini of CC1\u03b11 and CC3 in vitro, indicating the release of CC1\u03b11 from CAD (Figure 6A, aa 242:400\u00b4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by smFRET measurements comparing wild-type and R304W mutant ctSTIM1 shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "36fe5241-4a38-49d8-b944-3c2c551381ff",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C32",
+      "claim": "R304W destabilizes the tight packing of CC1\u03b13 domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our data reveal several effects of R304W on CC1: it destabilizes the tight packing of CC1\u03b13 domains, causes CC1\u03b12 to splay out from CC1\u03b13, and completely releases CC1\u03b11 from CAD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by smFRET measurements showing reduced FRET at CC1\u03b13:CC1\u03b13\u00b4 positions in R304W mutant, shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "8117998f-aae2-4b64-8076-becb62a287f0",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C33",
+      "claim": "R304W causes CC1\u03b12 to splay out from CC1\u03b13.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our data reveal several effects of R304W on CC1: it destabilizes the tight packing of CC1\u03b13 domains, causes CC1\u03b12 to splay out from CC1\u03b13, and completely releases CC1\u03b11 from CAD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by intra-subunit smFRET measurements showing increased separation between CC1\u03b12 and CC1\u03b13 in R304W mutant, shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "50ba010a-0ac9-419e-9daa-3389807902a6",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C34",
+      "claim": "The association of CC1\u03b11 with CAD influences the conformation of the flexible apex without affecting the arrangement of helices at the more stable CAD base.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that the association of CC1\u03b11 with CAD influences the conformation of the flexible apex without affecting the arrangement of helices at the more stable CAD base.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from smFRET measurements showing that R304W or \u0394CC1 altered FRET at the apex but not at the base, shown in Figure 6D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "4a8c250f-7a7d-42d9-8ee5-2401a7438d68",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C35",
+      "claim": "Disulfide formation at T307C occurred during spontaneous, transient visits to an activated state of ctSTIM1.",
+      "claim_type": "EXPLICIT",
+      "source": "Disulfide formation at T307C prevented BS3 from crosslinking CC1\u03b11 and CAD, implying that T307C disulfides are incompatible with the CC1\u03b11-CAD inhibitory clamp (Figure 7\u2014figure supplement 2D). We observed a similar loss of BS3 crosslinks between CC1\u03b11 and CAD in the activated ctSTIM1 mutants L248S/L251S (Muik et al., 2011) and R304W (Figure 7\u2014figure supplement 2B, C), suggesting that disulfide formation at T307C occurred during spontaneous, transient visits to an activated state of ctSTIM1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from BS3 crosslinking experiments comparing T307C with activated mutants, shown in Figure 7\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "28e62c03-4984-4fce-b94b-a90e9e2e2e9d",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C36",
+      "claim": "After store depletion, prominent crosslinking occurred at A268C and T307C in addition to S339C.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to store depletion, when flSTIM1 is inactive, little crosslinking occurred throughout CC1, with the exception of S339C near the junction with CAD (Figure 7A and B). In contrast, after store depletion prominent crosslinking occurred at A268C and T307C in addition to S339C (Figure 7A and B, and Figure 7\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by cysteine crosslinking experiments in full-length STIM1 before and after store depletion, shown in Figure 7A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "45889772-f72c-4d7b-a807-801103f2f634",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C37",
+      "claim": "Activation in vivo brings all three CC1 subdomains together.",
+      "claim_type": "EXPLICIT",
+      "source": "These results further support our conclusion that T307C crosslinking of ctSTIM1 in vitro is enabled by transient activation events. More importantly, they suggest that activation in vivo brings all three CC1 subdomains together.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that crosslinking occurs at multiple sites along CC1 after store depletion, as shown in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "e9a6f2b2-08b1-4b19-b7e3-c2326e2f6c76",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C38",
+      "claim": "Crosslinking at A268C and T307C prevented the normal deactivation of SOCE.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, crosslinking at A268C and T307C prevented the normal deactivation of SOCE as indicated by the sustained elevation of [Ca2+]i after Ca2+ readdition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by calcium imaging experiments showing that diamide treatment of A268C and T307C mutants prevents SOCE deactivation, shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "a15d11cf-8982-46a1-880d-7e57f1611d8f",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C39",
+      "claim": "All three CC1 subdomains are brought close together during STIM1 activation in vivo and remain associated in the final, Orai1-bound conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that all three CC1 subdomains are brought close together during STIM1 activation in vivo and remain associated in the final, Orai1-bound conformation (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from crosslinking experiments showing that crosslinking at multiple CC1 sites after activation locks STIM1 in the active state, as shown in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "c3410dde-1d53-4a88-af84-c14ea22e4384",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C40",
+      "claim": "CAD in ctSTIM1 resembles the CAD crystal structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that CAD in ctSTIM1 resembles the CAD crystal structure, but with unexpected structure and flexibility in an apical region that is critical for Orai binding and activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by smFRET measurements throughout CAD showing agreement with the crystal structure at the base but deviations at the apex, as shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "3458bf2b-9d7f-4dc8-9a4b-974f23f5beb8",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C41",
+      "claim": "CC1\u03b11 interacts with CAD in a domain-swapped configuration to form the inhibitory clamp.",
+      "claim_type": "EXPLICIT",
+      "source": "CC1\u03b11 interacts with CAD in a domain-swapped configuration to form the inhibitory clamp, while the Stormorken syndrome mutation R304W releases CC1\u03b11 from CAD to activate ctSTIM1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by smFRET measurements showing higher inter-subunit than intra-subunit FRET between CC1\u03b11 and CAD, as shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "7160371c-fcd4-43f9-b3a5-7af547ac7ae6",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C42",
+      "claim": "The Stormorken syndrome mutation R304W releases CC1\u03b11 from CAD to activate ctSTIM1.",
+      "claim_type": "EXPLICIT",
+      "source": "CC1\u03b11 interacts with CAD in a domain-swapped configuration to form the inhibitory clamp, while the Stormorken syndrome mutation R304W releases CC1\u03b11 from CAD to activate ctSTIM1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by smFRET measurements showing that R304W eliminates high FRET between CC1\u03b11 and CAD, as shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "4f4b7ee8-5b1c-43dc-9b1d-a36c6fabc247",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C43",
+      "claim": "After unbinding from CAD, the two CC1 domains pack together along their entire length.",
+      "claim_type": "EXPLICIT",
+      "source": "In studies of full-length STIM1 in intact cells, cysteine crosslinking after store depletion suggests that after unbinding from CAD, the two CC1 domains pack together along their entire length, in contrast to the CC1 crystal and CC1\u03b13-CC2 NMR structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by cysteine crosslinking experiments showing crosslinking at multiple sites along CC1 after store depletion, as shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "379f3063-fd1e-48d2-859e-cabef089f6ee",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C44",
+      "claim": "The parallel arrangement of CC1\u03b11 and CC3 predicts that the CAD apex of inactive STIM1 is juxtaposed to the ER membrane and pointed away from the PM in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "The parallel arrangement of CC1\u03b11 and CC3 in our smFRET-derived structure predicts that the CAD apex of inactive STIM1 is juxtaposed to the ER membrane and pointed away from the PM in vivo (Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the structural model showing parallel CC1\u03b11 and CC3, as illustrated in Figure 8A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "336eae25-dbbf-4d40-a9e2-b04df0225508",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C45",
+      "claim": "To activate STIM1 and SOCE, the CAD apex must rotate through a large angle (up to 180\u00b0) and translocate more than 10 nm toward the PM.",
+      "claim_type": "EXPLICIT",
+      "source": "This orientation implies that to activate STIM1 and SOCE, the CAD apex must rotate through a large angle (up to 180o) and translocate more than 10 nm toward the PM - a massive conformational change reminiscent of the refolding and extension of viral envelope proteins like hemagglutinin when stimulated to trigger membrane fusion (Harrison, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural model and the requirement for CAD to reach Orai1 in the plasma membrane.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "ca24f161-1336-4168-8d62-5074e2b3f22a",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C46",
+      "claim": "Activation of flSTIM1 is initiated by formation of a coiled-coil in the TM domains and the proximal part of CC1\u03b11 up to L251.",
+      "claim_type": "EXPLICIT",
+      "source": "Hirve et al. showed that activation of flSTIM1 is initiated by formation of a coiled-coil in the TM domains and the proximal part of CC1\u03b11 up to L251, with a high probability of coiled-coil assembly predicted through A268 (Hirve et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from a cited study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "29ba1c24-4766-4397-88ca-81776f1339d9",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C47",
+      "claim": "All three helical domains in CC1 are closely paired in the active dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "As an extension to these findings, we found that after store depletion, inter-subunit disulfide bonds form at A268C (C-terminus of CC1\u03b11) and T307C and S339C (N- and C-termini of CC1\u03b13, respectively; Figure 7). Taken together, these results suggest that all three helical domains in CC1 are closely paired in the active dimer, which would effectively move CAD across the ~15 nm gap of the ER-PM junction to reach Orai (Wu et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from crosslinking data at multiple sites along CC1 after store depletion, as shown in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "07656256-9cd7-42f2-9cad-bb4bdbe2778b",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C48",
+      "claim": "The crystal structure of human STIM1 CAD depicts a parallel V-shaped dimer comprising the CC2 and CC3 domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal structure of human STIM1 CAD (aa 345\u2013444, with mutations L374M, V419A, and C437T) depicts a parallel V-shaped dimer comprising the CC2 and CC3 domains (Figure 1A, right; Yang et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge from a cited crystal structure study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "d5cfbcb0-c70f-48c6-ac19-be96f2ea28bc",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C49",
+      "claim": "A solution NMR structure of a CC1\u03b13-CC2 fragment depicts a dimer of wedged antiparallel CC2 helices.",
+      "claim_type": "EXPLICIT",
+      "source": "A solution NMR structure of a CC1\u03b13-CC2 fragment depicts a dimer of wedged antiparallel CC2 helices (Figure 1A, bottom left; Stathopulos et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge from a cited NMR structure study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "e3eefafd-7038-46fd-8004-62a4e8f88921",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C50",
+      "claim": "The NMR structure of CC1\u03b13-CC2 has never been shown to bind intact Orai1 channels in situ.",
+      "claim_type": "EXPLICIT",
+      "source": "This NMR structure can bind Orai1 C-terminal fragments in vitro and has been proposed to be an intermediate in the activation of STIM1 (Stathopulos et al., 2013), but it has never been shown to bind intact Orai1 channels in situ and lacks the CC3 helix needed to evoke SOCE (Covington et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of the NMR structure based on the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "eb74bd23-b4db-4f2e-894e-15513c6b697d",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C51",
+      "claim": "In a crystal structure of CC1, two elongated CC1 helices form an antiparallel coiled-coil dimer within the CC1\u03b12 and CC1\u03b13 domains.",
+      "claim_type": "EXPLICIT",
+      "source": "In a crystal structure of CC1 (aa 237\u2013340, with mutations M244L and L321M), two elongated CC1 helices form an antiparallel coiled-coil dimer within the CC1\u03b12 and CC1\u03b13 domains (Cui et al., 2013; see Figure 5C ), but it is unclear how this elongated structure with its widely separated C-termini could attach to the closely paired N-termini of CAD.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge from a cited crystal structure study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "ef9e76bd-3471-40cb-829b-a792b2636884",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C52",
+      "claim": "A recent solution NMR study of CC1 depicts a compactly folded monomeric structure in which CC1\u03b11-\u03b13 form a tight three-helix bundle.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, a recent solution NMR study of CC1 (aa 234\u2013343) depicts a compactly folded monomeric structure in which CC1\u03b11-\u03b13 form a tight three-helix bundle (Rathner et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from a cited NMR structure study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "ad96527f-5637-47a9-b4d0-e9fd99728667",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C53",
+      "claim": "Flexibility and spontaneous fluctuations cause the CAD apical region to deviate significantly from the crystal structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data show that flexibility and spontaneous fluctuations cause the CAD apical region to deviate significantly from the crystal structure, unlike the stable basal region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from smFRET measurements showing fluctuations and deviations from the crystal structure at the apex, as shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "56b98474-aa18-4343-a64a-da0c68b9de55",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C54",
+      "claim": "The membrane-proximal CC1\u03b11 domain can interact with CAD to inhibit STIM1.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it is clear that the membrane-proximal CC1\u03b11 domain can interact with CAD to inhibit STIM1 (Ma et al., 2015), their relative orientations remain undefined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from a cited study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "870179cd-8444-4caa-8f77-d3f5ca0a49d6",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C55",
+      "claim": "CC1\u03b13 alone is not sufficient to maintain the inactive state.",
+      "claim_type": "EXPLICIT",
+      "source": "However, subsequent studies showed that CC1\u03b13 alone is not sufficient to maintain the inactive state, as CC1\u03b13-CAD is fully active (Zhou et al., 2013), and deletion of CC1\u03b13 in flSTIM1 only slightly activated Orai1 current under resting conditions (Fahrner et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from cited studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "7999cf10-4a1d-4f8d-8794-d0e7ac3db1e5",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C56",
+      "claim": "Inter-molecular FRET between ER-tethered STIM1 fragments showed that CC1\u03b11 can bind to CC3.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, inter-molecular FRET between ER-tethered STIM1 fragments showed that CC1\u03b11 can bind to CC3 (Fahrner et al., 2014), and ER-tethered CC1\u03b11 by itself can sequester CAD and prevent it from binding to Orai1 in the PM (Fahrner et al., 2014; Ma et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from cited studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "cd121d67-7127-4bcd-a106-865dd2b47167",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C57",
+      "claim": "ER-tethered CC1\u03b11 by itself can sequester CAD and prevent it from binding to Orai1 in the PM.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, inter-molecular FRET between ER-tethered STIM1 fragments showed that CC1\u03b11 can bind to CC3 (Fahrner et al., 2014), and ER-tethered CC1\u03b11 by itself can sequester CAD and prevent it from binding to Orai1 in the PM (Fahrner et al., 2014; Ma et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from cited studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "e0f965bd-95ca-449c-8445-f8d4e4f9a6b2",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C58",
+      "claim": "The domain-swapped configuration may enhance the stability of the inactive state through inter-subunit interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "This domain-swapped configuration may enhance the stability of the inactive state through inter-subunit interactions and could promote cooperativity between subunits during structural transitions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the observed domain-swapped configuration.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "3941347c-fd56-404e-85cf-9639f8327283",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C59",
+      "claim": "The monomeric CC1 structure may represent a pre-activated state of CC1 in which the interaction of CC1\u03b11 with CC1\u03b12 has destabilized the CC1\u03b11:CC3\u00b4 clamp.",
+      "claim_type": "EXPLICIT",
+      "source": "While it is possible these conditions promoted formation of a structure that does not exist under physiological conditions, a more intriguing possibility is that the monomeric CC1 structure represents a pre-activated state of CC1 in which the interaction of CC1\u03b11 with CC1\u03b12 has destabilized the CC1\u03b11:CC3\u00b4 clamp (Rathner et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the potential physiological relevance of the monomeric CC1 structure.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "3992b5e4-ad73-43b7-a22f-fe10348c3b38",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C60",
+      "claim": "Passage through a bundled intermediate state could serve to mitigate the energetic cost of breaking the CC1\u03b11:CC3\u00b4 and CC1\u03b12:CC1\u03b13\u00b4 interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Passage through such an intermediate bundled state could serve to mitigate the energetic cost of breaking the CC1\u03b11:CC3\u00b4 and CC1\u03b12:CC1\u03b13\u00b4 interactions and thereby ease the transition between the inactive and active states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the potential functional role of an intermediate state.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "d8d4c461-fe3f-400f-85ec-0ee79cc81c99",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C61",
+      "claim": "The spontaneous fluctuations of CC1\u03b12/\u03b13 may represent spontaneous transitions towards a pre-activated state.",
+      "claim_type": "EXPLICIT",
+      "source": "Our smFRET experiments show that when CC1\u03b11 associates with CC3 in ctSTIM1, the CC1\u03b12 and CC1\u03b13 domains primarily interact with each other to form a compact bundle pointing away from CAD (Figure 5); in the context of the Rathner et al report, the spontaneous fluctuations of CC1\u03b12/\u03b13 we observed (Figure 4C and D) may represent spontaneous transitions towards such a pre-activated state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the potential meaning of observed fluctuations in the context of a pre-activated state.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "07f1c522-1950-4299-a394-7f16710e7a83",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C62",
+      "claim": "Release of CC1\u03b11 from CAD alone may be sufficient to explain the activating effects of R304W on ctSTIM1.",
+      "claim_type": "EXPLICIT",
+      "source": "Release of CC1\u03b11 from CAD alone may be sufficient to explain the activating effects of R304W on ctSTIM1; smFRET values for 242:242\u00b4 and 298:298\u00b4 were low, suggesting that the CC1 helices remain separated in ctSTIM1 R304W.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on smFRET data showing release of CC1\u03b11 in R304W mutant.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "8487c8cc-27c9-46c9-8d6e-2140f635c342",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C63",
+      "claim": "In the context of flSTIM1, coiled-coil formation by the transmembrane domains may stabilize paired association of the CC1 helices following store depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of flSTIM1 coiled-coil formation by the transmembrane domains may stabilize paired association of the CC1 helices following store depletion (Hirve et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on cited work about TM domain coiled-coil formation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "ac29fa8e-d3b8-4179-bcbb-16908cf477de",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C64",
+      "claim": "If the antiparallel conformation exists, it is likely to represent a transient intermediate during the activation of STIM1.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, if the antiparallel conformation exists, it is likely to represent a transient intermediate during the activation of STIM1 (Stathopulos et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the potential role of an antiparallel conformation as a transient intermediate.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "458f7c75-0ee5-47d7-91a1-2914e5436c81",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C65",
+      "claim": "Conformational flexibility can facilitate protein-protein interactions through effects on the thermodynamics of binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The flexibility of the CAD apex is intriguing because mutagenesis and cysteine-crosslinking studies suggest this region interacts with Orai1 to initiate channel activation (Calloway et al., 2010; Korzeniowski et al., 2010; Wang et al., 2014; Thompson et al., 2018; Butorac et al., 2019), and conformational flexibility can facilitate protein-protein interactions through effects on the thermodynamics of binding (Gr\u00fcnberg et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is general knowledge about protein-protein interactions supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "1b66506c-0f69-4c53-af51-729a816b50b2",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C66",
+      "claim": "It seems likely that the CAD apex in complex with Orai adopts a structure different from that depicted in the CAD crystal and distinct from the NMR structure of CC1\u03b13-CC2.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it seems likely that the CAD apex in complex with Orai adopts a structure different from that depicted in the CAD crystal and distinct from the NMR structure of CC1\u03b13-CC2 (see below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the observed flexibility of the apex and its role in Orai binding.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "e29ca9f0-a22c-4b4f-a46b-eb7504d1a666",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "claim_id": "C67",
+      "claim": "Release of CC1\u03b11 from CAD may cause the apex to change shape, perhaps facilitating its binding to Orai1.",
+      "claim_type": "EXPLICIT",
+      "source": "These results raise the possibility that upon CC1\u03b11 dissociation the apex changes shape, perhaps facilitating its binding to Orai1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the observation that R304W or \u0394CC1 alters apex conformation.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "302bb310-2977-4844-8886-25339b3e76f3",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The CC2 domains in ctSTIM1 adopt a parallel configuration consistent with the CAD crystal structure rather than the antiparallel NMR structure. smFRET measurements at positions 337, 363, and 378 showed high FRET efficiencies, and simulated inter-fluorophore distances from the crystal structure closely matched smFRET-derived distances.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C13 are well-supported by direct smFRET measurements at multiple sites (Figure 1) showing high FRET consistent with parallel CC2 domains. The comparison with simulated distances from crystal and NMR structures (C12) provides strong validation. Multiple measurement sites and good agreement between experimental and simulated distances support this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "f807f931-70fa-405a-a319-aabeb5dfd49a",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The CAD base resembles the crystal structure with stable, compact packing, but the CAD apex deviates significantly from the crystal structure and displays conformational flexibility. The apex region is critical for Orai1 binding and shows spontaneous fluctuations in smFRET measurements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C18 are supported by systematic smFRET measurements throughout CAD (Figure 2) showing agreement at the base but deviations at the apex. The flexibility is demonstrated by smFRET fluctuations (C17) and cysteine crosslinking (C18). The functional importance (C16) is established by prior literature. Multiple complementary measurements support this structural distinction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "a894539d-fbad-4894-81bd-ec1b35d1cb35",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "CC1\u03b11 interacts with CAD in a domain-swapped configuration to form the inhibitory clamp, with CC1\u03b11 oriented parallel to CC3 of the adjacent subunit. The two CC1\u03b11 domains can briefly switch sides on CAD using the same binding interface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C21 are strongly supported by systematic inter- and intra-subunit smFRET measurements (Figure 3) showing consistently higher inter-subunit FRET, demonstrating domain swapping. The parallel orientation (C19) is confirmed by high FRET at both N- and C-termini. The dynamic switching (C21) is inferred from reversible FRET transitions with similar kinetics at multiple sites. This is a key novel finding well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "b7240c9c-4b5e-4c77-8023-f105d97efa26",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The CC1\u03b13 domains are closely apposed and parallel, with their N-termini directed away from CAD. The N-termini of CC1\u03b13 intermittently splay out from a stable pivot point at the base of CAD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 are supported by smFRET measurements (Figure 4) showing high inter-subunit FRET at CC1\u03b13 termini (C22), low FRET from N-terminus to CAD (C23), and large transient FRET changes near the N-terminus (C24). Multiple measurement sites and consistent patterns support these structural conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "b56eeb3f-bdc4-48a2-af0d-aa55f80e0407",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "An integrated structural model of the CC1-CAD complex was generated using 36 smFRET-derived distance constraints, showing closely apposed CC1\u03b13 domains directed away from CAD and CC1\u03b11 domains parallel to CC3 in a domain-swapped configuration. The model was validated by BS3 crosslinking mass spectrometry and EDC crosslinking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C28 describe the integrated structural model supported by extensive smFRET data (36 measurements, Supplementary file 1) and validated by independent crosslinking approaches (Figures 5, Figure 5\u2014figure supplements 2-3). The model is consistent with prior mutagenesis data (C28). The use of multiple complementary techniques and agreement with functional data strongly support this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "b299057e-baed-446f-8e29-72d8d34bf7ac",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The Stormorken syndrome mutation R304W activates ctSTIM1 by releasing CC1\u03b11 from CAD, destabilizing CC1\u03b13 packing, and causing CC1\u03b12 to splay out from CC1\u03b13. R304W also alters the conformation of the flexible CAD apex without affecting the stable base.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C34 are supported by functional calcium imaging (Figure 6\u2014figure supplement 1) showing R304W activation, and smFRET measurements (Figure 6) demonstrating release of CC1\u03b11 from CAD (C31), destabilization of CC1\u03b13 (C32), and changes in CC1\u03b12/\u03b13 angle (C33). The effects on CAD apex but not base (C34) are shown by smFRET at multiple sites. The comprehensive characterization supports these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "5943eb32-b9a5-4e5e-8e45-aac4c72a5754",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Following ER Ca2+ depletion in full-length STIM1, the two CC1 domains become closely paired along their entire length in the active Orai-bound state. Cysteine crosslinking at A268C and T307C occurs after store depletion and locks STIM1 in the active state, preventing SOCE deactivation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C39 are supported by cysteine crosslinking experiments in intact cells (Figure 7) showing activation-dependent crosslinking at multiple CC1 sites. The functional consequence (C38) is demonstrated by calcium imaging showing sustained SOCE after crosslinking. The inference that all CC1 subdomains come together (C37, C39, C47) is well-supported by crosslinking at sites spanning CC1\u03b11, CC1\u03b12, and CC1\u03b13.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "ca63ebaf-52ff-4ac1-988d-7c213b87eea1",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The parallel arrangement of CC1\u03b11 and CC3 predicts that the CAD apex of inactive STIM1 is juxtaposed to the ER membrane and pointed away from the plasma membrane. To activate STIM1, the CAD apex must rotate through a large angle (up to 180\u00b0) and translocate more than 10 nm toward the plasma membrane.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C44-C45 are inferred from the structural model but lack direct experimental validation. While the model is well-supported by smFRET data, the predicted orientation relative to membranes (C44) and the proposed conformational changes (C45) are speculative. The magnitude of rotation and translocation has not been directly measured. This represents a plausible model but requires further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "f9b1abaf-0e4b-40da-a5f5-35207b74830d",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Several speculative interpretations are proposed regarding the functional significance of observed structural features, including the role of domain swapping in stability, potential intermediate states during activation, and the relationship to previously reported NMR structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C58-C67 are explicitly speculative (marked as SPECULATION in evidence_type) and represent interpretations and hypotheses rather than demonstrated results. While these are reasonable interpretations of the data, they lack direct experimental support and are appropriately presented as speculation by the authors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    },
+    {
+      "id": "ed8bacc5-7abe-4449-8286-f0ff3234c4f3",
+      "content_id": "3b2e4e09-460d-4fe7-b69b-528eed5a33ca",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background knowledge and prior work establishing the SOCE pathway, STIM1 function, disease associations, and previous structural studies of STIM1 fragments are accurately cited and provide context for the current study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C10 and C46-C57, C65 represent established knowledge from prior literature, appropriately cited throughout the manuscript. These provide essential context for interpreting the new findings. The authors accurately represent prior work and identify gaps in knowledge that their study addresses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:39:43.557791Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a70f3686-f69c-4dc4-950f-e19c36612940",
+      "result_id": "302bb310-2977-4844-8886-25339b3e76f3"
+    },
+    {
+      "claim_id": "4e12231e-53a0-4ff3-96a5-c811532bf0f7",
+      "result_id": "302bb310-2977-4844-8886-25339b3e76f3"
+    },
+    {
+      "claim_id": "67ef665e-ef11-4c55-85f2-fc89a79fdca0",
+      "result_id": "302bb310-2977-4844-8886-25339b3e76f3"
+    },
+    {
+      "claim_id": "07656256-9cd7-42f2-9cad-bb4bdbe2778b",
+      "result_id": "302bb310-2977-4844-8886-25339b3e76f3"
+    },
+    {
+      "claim_id": "d5cfbcb0-c70f-48c6-ac19-be96f2ea28bc",
+      "result_id": "302bb310-2977-4844-8886-25339b3e76f3"
+    },
+    {
+      "claim_id": "d010c56a-9850-47e6-b68c-d7ca04feb5bf",
+      "result_id": "f807f931-70fa-405a-a319-aabeb5dfd49a"
+    },
+    {
+      "claim_id": "abc03e97-34d8-459c-a5e7-02a425aee583",
+      "result_id": "f807f931-70fa-405a-a319-aabeb5dfd49a"
+    },
+    {
+      "claim_id": "04055c0c-a13e-4104-b727-8bba158c0564",
+      "result_id": "f807f931-70fa-405a-a319-aabeb5dfd49a"
+    },
+    {
+      "claim_id": "de223add-58dd-4d56-be22-18902a7590ab",
+      "result_id": "f807f931-70fa-405a-a319-aabeb5dfd49a"
+    },
+    {
+      "claim_id": "1abce2da-b807-40a6-b18e-c493ef4353c2",
+      "result_id": "f807f931-70fa-405a-a319-aabeb5dfd49a"
+    },
+    {
+      "claim_id": "c3410dde-1d53-4a88-af84-c14ea22e4384",
+      "result_id": "f807f931-70fa-405a-a319-aabeb5dfd49a"
+    },
+    {
+      "claim_id": "ad96527f-5637-47a9-b4d0-e9fd99728667",
+      "result_id": "f807f931-70fa-405a-a319-aabeb5dfd49a"
+    },
+    {
+      "claim_id": "36ee945f-bcb7-4613-845a-8787f92e77f1",
+      "result_id": "a894539d-fbad-4894-81bd-ec1b35d1cb35"
+    },
+    {
+      "claim_id": "ccb50146-1f77-4f1b-bed1-ffd1229b688d",
+      "result_id": "a894539d-fbad-4894-81bd-ec1b35d1cb35"
+    },
+    {
+      "claim_id": "fe57138e-da85-4221-8d7d-6ccae606f812",
+      "result_id": "a894539d-fbad-4894-81bd-ec1b35d1cb35"
+    },
+    {
+      "claim_id": "3458bf2b-9d7f-4dc8-9a4b-974f23f5beb8",
+      "result_id": "a894539d-fbad-4894-81bd-ec1b35d1cb35"
+    },
+    {
+      "claim_id": "56b98474-aa18-4343-a64a-da0c68b9de55",
+      "result_id": "a894539d-fbad-4894-81bd-ec1b35d1cb35"
+    },
+    {
+      "claim_id": "7999cf10-4a1d-4f8d-8794-d0e7ac3db1e5",
+      "result_id": "a894539d-fbad-4894-81bd-ec1b35d1cb35"
+    },
+    {
+      "claim_id": "cd121d67-7127-4bcd-a106-865dd2b47167",
+      "result_id": "a894539d-fbad-4894-81bd-ec1b35d1cb35"
+    },
+    {
+      "claim_id": "7369546f-e362-4064-be43-05014f5ffb31",
+      "result_id": "b7240c9c-4b5e-4c77-8023-f105d97efa26"
+    },
+    {
+      "claim_id": "d4b39b36-107e-4bff-9f15-f1aeca0e7586",
+      "result_id": "b7240c9c-4b5e-4c77-8023-f105d97efa26"
+    },
+    {
+      "claim_id": "9dca28b8-3d7a-4171-aa73-c2526bfa9b26",
+      "result_id": "b7240c9c-4b5e-4c77-8023-f105d97efa26"
+    },
+    {
+      "claim_id": "42749140-28d9-47a3-900a-11c3cbaf6877",
+      "result_id": "b56eeb3f-bdc4-48a2-af0d-aa55f80e0407"
+    },
+    {
+      "claim_id": "6b9e5ae3-3379-4f4a-bdd8-973295629048",
+      "result_id": "b56eeb3f-bdc4-48a2-af0d-aa55f80e0407"
+    },
+    {
+      "claim_id": "ee5a6f4d-2351-4e62-91a7-86e3598e6397",
+      "result_id": "b56eeb3f-bdc4-48a2-af0d-aa55f80e0407"
+    },
+    {
+      "claim_id": "554dbe3a-2036-478e-90f4-41563e1609e0",
+      "result_id": "b56eeb3f-bdc4-48a2-af0d-aa55f80e0407"
+    },
+    {
+      "claim_id": "0b897aaf-009d-4d24-b91a-eb1159d358f6",
+      "result_id": "b299057e-baed-446f-8e29-72d8d34bf7ac"
+    },
+    {
+      "claim_id": "9da3f8c2-5882-4e1b-af56-1d4dd14ef937",
+      "result_id": "b299057e-baed-446f-8e29-72d8d34bf7ac"
+    },
+    {
+      "claim_id": "affe6b16-c0b3-4111-a91a-8379fb8821d5",
+      "result_id": "b299057e-baed-446f-8e29-72d8d34bf7ac"
+    },
+    {
+      "claim_id": "36fe5241-4a38-49d8-b944-3c2c551381ff",
+      "result_id": "b299057e-baed-446f-8e29-72d8d34bf7ac"
+    },
+    {
+      "claim_id": "8117998f-aae2-4b64-8076-becb62a287f0",
+      "result_id": "b299057e-baed-446f-8e29-72d8d34bf7ac"
+    },
+    {
+      "claim_id": "50ba010a-0ac9-419e-9daa-3389807902a6",
+      "result_id": "b299057e-baed-446f-8e29-72d8d34bf7ac"
+    },
+    {
+      "claim_id": "7160371c-fcd4-43f9-b3a5-7af547ac7ae6",
+      "result_id": "b299057e-baed-446f-8e29-72d8d34bf7ac"
+    },
+    {
+      "claim_id": "4a8c250f-7a7d-42d9-8ee5-2401a7438d68",
+      "result_id": "5943eb32-b9a5-4e5e-8e45-aac4c72a5754"
+    },
+    {
+      "claim_id": "28e62c03-4984-4fce-b94b-a90e9e2e2e9d",
+      "result_id": "5943eb32-b9a5-4e5e-8e45-aac4c72a5754"
+    },
+    {
+      "claim_id": "45889772-f72c-4d7b-a807-801103f2f634",
+      "result_id": "5943eb32-b9a5-4e5e-8e45-aac4c72a5754"
+    },
+    {
+      "claim_id": "e9a6f2b2-08b1-4b19-b7e3-c2326e2f6c76",
+      "result_id": "5943eb32-b9a5-4e5e-8e45-aac4c72a5754"
+    },
+    {
+      "claim_id": "a15d11cf-8982-46a1-880d-7e57f1611d8f",
+      "result_id": "5943eb32-b9a5-4e5e-8e45-aac4c72a5754"
+    },
+    {
+      "claim_id": "4f4b7ee8-5b1c-43dc-9b1d-a36c6fabc247",
+      "result_id": "5943eb32-b9a5-4e5e-8e45-aac4c72a5754"
+    },
+    {
+      "claim_id": "29ba1c24-4766-4397-88ca-81776f1339d9",
+      "result_id": "5943eb32-b9a5-4e5e-8e45-aac4c72a5754"
+    },
+    {
+      "claim_id": "379f3063-fd1e-48d2-859e-cabef089f6ee",
+      "result_id": "ca63ebaf-52ff-4ac1-988d-7c213b87eea1"
+    },
+    {
+      "claim_id": "336eae25-dbbf-4d40-a9e2-b04df0225508",
+      "result_id": "ca63ebaf-52ff-4ac1-988d-7c213b87eea1"
+    },
+    {
+      "claim_id": "e0f965bd-95ca-449c-8445-f8d4e4f9a6b2",
+      "result_id": "f9b1abaf-0e4b-40da-a5f5-35207b74830d"
+    },
+    {
+      "claim_id": "3941347c-fd56-404e-85cf-9639f8327283",
+      "result_id": "f9b1abaf-0e4b-40da-a5f5-35207b74830d"
+    },
+    {
+      "claim_id": "3992b5e4-ad73-43b7-a22f-fe10348c3b38",
+      "result_id": "f9b1abaf-0e4b-40da-a5f5-35207b74830d"
+    },
+    {
+      "claim_id": "d8d4c461-fe3f-400f-85ec-0ee79cc81c99",
+      "result_id": "f9b1abaf-0e4b-40da-a5f5-35207b74830d"
+    },
+    {
+      "claim_id": "07f1c522-1950-4299-a394-7f16710e7a83",
+      "result_id": "f9b1abaf-0e4b-40da-a5f5-35207b74830d"
+    },
+    {
+      "claim_id": "8487c8cc-27c9-46c9-8d6e-2140f635c342",
+      "result_id": "f9b1abaf-0e4b-40da-a5f5-35207b74830d"
+    },
+    {
+      "claim_id": "ac29fa8e-d3b8-4179-bcbb-16908cf477de",
+      "result_id": "f9b1abaf-0e4b-40da-a5f5-35207b74830d"
+    },
+    {
+      "claim_id": "1b66506c-0f69-4c53-af51-729a816b50b2",
+      "result_id": "f9b1abaf-0e4b-40da-a5f5-35207b74830d"
+    },
+    {
+      "claim_id": "e29ca9f0-a22c-4b4f-a46b-eb7504d1a666",
+      "result_id": "f9b1abaf-0e4b-40da-a5f5-35207b74830d"
+    },
+    {
+      "claim_id": "79e19320-09ab-4b82-8e17-e5f437106de1",
+      "result_id": "ed8bacc5-7abe-4449-8286-f0ff3234c4f3"
+    },
+    {
+      "claim_id": "f2264cce-008e-4115-869e-f3c335481070",
+      "result_id": "ed8bacc5-7abe-4449-8286-f0ff3234c4f3"
+    },
+    {
+      "claim_id": "b6a98bf9-cd1d-499e-b1dc-b3f267c09119",
+      "result_id": "ed8bacc5-7abe-4449-8286-f0ff3234c4f3"
+    },
+    {
+      "claim_id": "4fe315b4-340c-49ff-bf0b-be46a7ebe66a",
+      "result_id": "ed8bacc5-7abe-4449-8286-f0ff3234c4f3"
+    },
+    {
+      "claim_id": "b5c65662-9480-4214-89f3-ca69be3ca5a8",
+      "result_id": "ed8bacc5-7abe-4449-8286-f0ff3234c4f3"
+    },
+    {
+      "claim_id": "6cbb7baf-ede2-4091-b3e1-abde807e6c9a",
+      "result_id": "ed8bacc5-7abe-4449-8286-f0ff3234c4f3"
+    },
+    {
+      "claim_id": "45dc0bde-68e6-4370-b18a-757d7557b5af",
+      "result_id": "ed8bacc5-7abe-4449-8286-f0ff3234c4f3"
+    },
+    {
+      "claim_id": "ca24f161-1336-4168-8d62-5074e2b3f22a",
+      "result_id": "ed8bacc5-7abe-4449-8286-f0ff3234c4f3"
+    },
+    {
+      "claim_id": "07656256-9cd7-42f2-9cad-bb4bdbe2778b",
+      "result_id": "ed8bacc5-7abe-4449-8286-f0ff3234c4f3"
+    },
+    {
+      "claim_id": "d5cfbcb0-c70f-48c6-ac19-be96f2ea28bc",
+      "result_id": "ed8bacc5-7abe-4449-8286-f0ff3234c4f3"
+    },
+    {
+      "claim_id": "e3eefafd-7038-46fd-8004-62a4e8f88921",
+      "result_id": "ed8bacc5-7abe-4449-8286-f0ff3234c4f3"
+    },
+    {
+      "claim_id": "eb74bd23-b4db-4f2e-894e-15513c6b697d",
+      "result_id": "ed8bacc5-7abe-4449-8286-f0ff3234c4f3"
+    },
+    {
+      "claim_id": "ef9e76bd-3471-40cb-829b-a792b2636884",
+      "result_id": "ed8bacc5-7abe-4449-8286-f0ff3234c4f3"
+    },
+    {
+      "claim_id": "56b98474-aa18-4343-a64a-da0c68b9de55",
+      "result_id": "ed8bacc5-7abe-4449-8286-f0ff3234c4f3"
+    },
+    {
+      "claim_id": "870179cd-8444-4caa-8f77-d3f5ca0a49d6",
+      "result_id": "ed8bacc5-7abe-4449-8286-f0ff3234c4f3"
+    },
+    {
+      "claim_id": "7999cf10-4a1d-4f8d-8794-d0e7ac3db1e5",
+      "result_id": "ed8bacc5-7abe-4449-8286-f0ff3234c4f3"
+    },
+    {
+      "claim_id": "cd121d67-7127-4bcd-a106-865dd2b47167",
+      "result_id": "ed8bacc5-7abe-4449-8286-f0ff3234c4f3"
+    },
+    {
+      "claim_id": "458f7c75-0ee5-47d7-91a1-2914e5436c81",
+      "result_id": "ed8bacc5-7abe-4449-8286-f0ff3234c4f3"
+    }
+  ],
+  "comparisons": []
+}

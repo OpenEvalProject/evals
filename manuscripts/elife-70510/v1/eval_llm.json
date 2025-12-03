@@ -1,0 +1,255 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Pupil diameter exhibits a positive, monotonic relationship with LC spiking activity, where pupil dilation increases progressively with LC cluster size (number of spikes). This relationship was observed in the majority of recordings (13/19 with R\u00b2 > 0.6), though substantial variability exists in the coupling strength (slopes ranging 0.12-0.51). Peak pupil latency remained consistent at 2.5-4 s regardless of cluster size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 are well-supported by experimental data from simultaneous LC-pupil recordings (Figure 1). The linear regression analysis with R\u00b2 > 0.6 in 13/19 recordings provides quantitative evidence for the graded relationship, while the variability in slopes is appropriately documented. The findings are corroborated by previous work in nonhuman primates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Only large LC spike clusters (\u22655-6 spikes) achieve accurate prediction of pupil diameter (d' = 1, ~0.75 AUC), and these large clusters occur infrequently (<10%). Therefore, pupil dilation can only accurately represent infrequent, strong LC activity in real time, not the majority of LC spiking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 are supported by ROC analysis (Figure 1g-h) showing that prediction accuracy increases with cluster size but only reaches acceptable thresholds for large, infrequent clusters. The occurrence data (Figure 1d, h) confirms the rarity of these predictable events. The conclusion appropriately acknowledges the limitations of pupil as a real-time LC readout.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Using pupil-first analysis (detecting pupil dilations then quantifying preceding LC activity), only large, infrequent pupil dilation events (>1.5-2 SD, <10% occurrence) can accurately predict LC spiking activity in real time. A wide range of LC spike counts precede pupil events of similar sizes, indicating substantial variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 are supported by complementary analysis (Figure 2) that validates findings from the LC-first approach. The probability distributions (Figure 2b-c) demonstrate the variability, while ROC analysis (Figure 2e-f) confirms that only large events achieve good prediction performance. This bidirectional analysis strengthens the main conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Optogenetic stimulation activated an estimated volume of 0.05-0.1 mm\u00b3 containing hundreds of LC neurons. Putatively same units tracked across sessions (1-5 days) showed similar waveforms and consistent responses to optical stimulation, suggesting stable transduction of optical stimulation to LC spiking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 are supported by appropriate methods for volume estimation and unit tracking. Waveform correlation analysis (Figure 3e-g) and response consistency (Figure 3h) provide evidence for stable LC responses. However, the authors appropriately acknowledge in C45-C46 that this cannot fully establish long-term population stability due to potential tissue changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Pupil responses to identical LC optical stimulation exhibited large session-to-session fluctuations in awake mice, despite stable baseline pupil diameters and consistent LC responses. These fluctuations were prevalent but non-directional, occurred even with stronger stimulation (50 ms pulses) or within hours, and across-session variability was comparable to within-session variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C24 are well-supported by extensive data (Figure 4a-f) showing variable pupil responses across multiple conditions and timeframes. The control for baseline pupil diameter (C18) and demonstration of non-directional fluctuations (C19-C20) strengthen the findings. Statistical analysis of variability (C23-C24) appropriately characterizes the phenomenon. This is a key finding demonstrating pupil-LC dissociation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Under anesthesia, evoked pupil responses were larger than in awake conditions (possibly due to more constricted baseline pupil size), but still exhibited substantial session-to-session fluctuations to identical LC stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25 and C27 are supported by data (Figure 4g-h), though C26 is appropriately marked as speculative. The persistence of fluctuations under anesthesia (which minimizes spontaneous brain state changes) strengthens the argument that pupil-LC coupling is variable. The speculative explanation for larger responses is reasonable but unproven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Variations in the pupil-LC relationship (linear slopes) were strongly correlated with behavioral variables (hit rate and decision bias) during task performance. This correlation persisted when licking periods were excluded and was not due to nonlinear fitting artifacts, suggesting that pupil-LC coupling is state-dependent and modulated by motivation, impulsivity, and task engagement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 are supported by correlation analysis (Figure 5) with appropriate controls. The high R\u00b2 values (>0.85) for linear fits (C29) and persistence of correlations when excluding licking periods (C30) address potential confounds. The inference that behavioral variables reflect brain states (C32) is well-supported by cited literature, making the conclusion about state-dependent coupling (C33) reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The study demonstrates that while pupil diameter has an overall positive, monotonic relationship with LC activity, substantial variability limits accurate moment-by-moment prediction to only large, infrequent events (>1.5-2 SD, <10% occurrence). Pupil responses show large session-to-session fluctuations to identical LC stimulation. The authors conclude that averaging multiple trials would yield more accurate LC activity predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 represent the main conclusions, which are well-supported by the comprehensive data from Figures 1-4. The conclusion appropriately integrates findings from multiple experimental approaches and acknowledges limitations. The recommendation for trial averaging (C37) is a reasonable inference from the observed variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Large pupil/LC responses correlate with various task-related processes (sensory cues, decision formation, feedback, choice bias, action). The authors suggest that infrequent, strong pupil dilations can accurately infer LC activation during these processes, but generally pupil and LC likely respond differently to task-related processes, causing relationship variations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 appropriately contextualize current findings within existing literature. C38 is well-supported by multiple citations. C39 is a reasonable inference combining current data with prior work. C40 logically follows from the observed variability and state-dependence. These claims provide appropriate interpretation of the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "LC exhibits considerable heterogeneity in molecular composition, physiology, transmitters, and projections (supported by current data). While pupil diameter might dynamically couple with different LC subgroups during cognitive processes, this heterogeneity is insufficient to explain session-to-session pupil response fluctuations since optogenetic stimulation likely activated a heterogeneous group showing consistent responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 appropriately discuss LC heterogeneity as a potential mechanism. C41 is well-supported by citations, C42 by data (Figure 4\u2014supplement 6). C43 is appropriately speculative. C44 provides important logical reasoning that rules out LC heterogeneity as the primary explanation for the main findings, strengthening the overall argument.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "While tissue changes from implants could theoretically alter light transmission to unrecorded neurons, multiple lines of evidence argue against this: non-systematic/progressive changes, fluctuations within hours, and comparable within/across-session variability. However, optogenetic stimulation may synchronize activity unnaturally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 appropriately address potential confounds. C45 acknowledges a limitation, C46 provides multiple lines of evidence against it (supported by Figure 4 data), and C47 acknowledges another limitation of the optogenetic approach. This demonstrates appropriate scientific rigor in considering alternative explanations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Brain states constantly fluctuate during wakefulness. Pupil response profiles can reflect different behavioral processes and can be dissociated from cognitive processes. Current data extend these observations, showing LC and pupil respond differently to behavioral/cognitive variables. Mice licked more during high motivation/engagement, but licking alone cannot explain pupil-LC coupling variations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 appropriately contextualize findings within the broader literature on brain state fluctuations. C48-C50 are well-supported by citations. C51 appropriately integrates current findings with prior work. C52 addresses a potential confound with data from Figure 5, strengthening the state-dependence interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Pupil size changes are linked to multiple brain areas and neuromodulatory systems beyond LC. Pupil responses to other neuromodulatory stimulation (dorsal raphe) show task-dependent variations. The authors speculate that in high motivation/engagement states, multiple circuits may synergistically influence pupil, resulting in stronger pupil-LC coupling. Higher engagement may also involve more uninstructed movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53-C57 are appropriately speculative discussions of potential mechanisms. C53-C54 are supported by citations. C55-C57 are clearly marked as speculative hypotheses for future work. While these are reasonable mechanistic proposals, they remain untested in the current study and would require additional experiments to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The introduction establishes that pupil diameter under constant luminance is linked to arousal/attention and various cognitive processes, leading to widespread use as a brain state monitor. The LC-noradrenergic system plays a critical role in arousal/attention, and recent work has linked pupil changes to LC activity, leading to increased use of pupil as a noninvasive LC readout. However, recent studies show the correlation can be neuron- and task epoch-specific, raising the possibility of dissociation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C66 provide appropriate background and motivation for the study. All claims are well-supported by extensive citations to prior literature. The progression from established knowledge (C58-C62) through recent developments (C63-C64) to emerging questions (C65-C66) effectively sets up the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The methods describe data collection from 19 single-unit LC recordings (7 mice) for Figures 1-2, 5 tracked units (5 mice) for Figure 3, and 68 pupil sessions (8 mice) for Figure 4. Mice performed a head-fixed Go/NoGo whisker detection task with appropriate controls for auditory cues. Pupil tracking and optogenetic stimulation were synchronized with electrophysiology. Analysis methods for spike clustering, pupil event detection, and behavioral correlations are detailed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C88 describe experimental methods and are supported by explicit descriptions in the Methods section. Sample sizes are appropriate and clearly stated. Controls for potential confounds (auditory cues, light leak, baseline pupil diameter) are included. Analysis methods are described with appropriate detail, including robustness checks (C82, C85) and justifications for parameter choices (C88).",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,297 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C12",
+      "C21",
+      "C122",
+      "C126"
+    ],
+    "result": "The authors developed a stochastic social activity (SSA) model that integrates time-varying individual social activity into traditional SIR epidemiological models. This model demonstrates the emergence of a new long timescale governing epidemic dynamics and captures key features of COVID-19 including prolonged plateaus and multiple waves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C12, and C21 are supported by mathematical modeling (Equations 4-6), agent-based simulations with 1 million agents (Figures 3-4), and comparison with empirical COVID-19 data (Figures 7-8). The theoretical framework is clearly described (C122, C126) and shows excellent agreement between theory and simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C125"
+    ],
+    "result": "The model uses the Cox-Ingersoll-Ross (CIR) stochastic process to describe individual social activity dynamics, which ensures non-negativity, mean reversion, and produces gamma-distributed activity levels consistent with observed superspreading statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The choice of the CIR model (C50) is well-justified by its mathematical properties (C51, C52) and consistency with empirical superspreading data (C53). The model parameters k\u2080=0.4 and \u03ba=2 are calibrated to match observed overdispersion (k\u22480.1-0.3), providing a sound theoretical foundation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The SSA model predicts transient collective immunity (TCI) that suppresses epidemics below the herd immunity threshold, followed by plateau dynamics. Different mitigation strategies converge to a universal attractor in the long term, though early mitigation can reduce peak incidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These predictions are validated by excellent agreement between the differential equation model and agent-based simulations (C67, Figures 3-4). The TCI phenomenon (C68, C69) and universal attractor behavior (C74, C75) are clearly demonstrated. The mitigation timing effects (C76, C77) are shown in Figure 4 with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C80",
+      "C85",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C94",
+      "C95"
+    ],
+    "result": "When waning immunity is incorporated, the model predicts transition to an endemic state with seasonal oscillations, avoiding pathogen extinction predicted by classical models. The model captures qualitative features of endemic coronaviruses including sharp peaks and multi-annual cycles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The endemic state emergence (C80, C85) is demonstrated mathematically and shown in Figure 5. The contrast with persistent heterogeneity models (C89, C90) is clear. The seasonal dynamics (C87, C88, C94, C95) match qualitative features of real endemic pathogens, though quantitative validation against specific endemic coronavirus data is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C112"
+    ],
+    "result": "The model successfully describes COVID-19 epidemic progression in four US regions from July 2020 to February 2021, a period with minimal mobility changes, excluding effects of mass vaccination and variants of concern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The time window selection is well-justified by Google mobility data (C100-C104, Figure 6) showing stable conditions. The model fits all four US regions well (C105, C112, Figure 7) with consistent parameters (k\u2080=0.4, \u03c4\u209b=30 days, \u03ba=2, IFR=0.5%), though sensitivity analysis shows \u03c4\u209b ranges from 20-55 days across regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C120",
+      "C121"
+    ],
+    "result": "The SSA model provides superior predictive power compared to traditional SIR models. When fitted only to data up to November 15, 2020, the SSA model accurately predicts the subsequent wave, while the SIR model overestimates peak height by threefold and timing by one month.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a strong validation demonstrated in Figure 8 for the Midwest region and Appendix 5-figure 2 for all regions. The comparison is fair (identical fitting procedures) and shows clear superiority of the SSA model in both timing (C120) and peak height (C121), except for the South region where results are intermediate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C41",
+      "C96"
+    ],
+    "result": "The model predicts that plateau dynamics represents slow relaxation toward herd immunity on a timescale of \u03c4\u209b/k\u2080 (approximately 75 days for COVID-19 parameters), fueled by replenishment of susceptibles as individuals transition from low to high social activity. Abrupt increases in transmission trigger new epidemic waves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The emergent timescale and plateau mechanism are derived from the mathematical analysis (Equations 4-6, Appendix 3) and demonstrated in simulations (Figures 3-5). The replenishment mechanism (C41) is clearly illustrated in Figure 1. The wave-triggering prediction (C96) is shown in Figure 4b, though this is more of a model prediction than an empirically validated result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C83",
+      "C84",
+      "C131"
+    ],
+    "result": "The SSA model provides a mechanism that prevents epidemic overshoot and naturally leads to endemic states, contrasting with classical models that predict pathogen extinction after the first wave.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The contrast with classical models (C83, C84, C131) is well-established in the literature and correctly cited. The SSA model's prevention of overshoot (C31) is demonstrated in Figures 3 and 5. However, this is primarily a theoretical prediction; empirical validation of the endemic transition mechanism for newly introduced pathogens would require long-term data not available in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C134"
+    ],
+    "result": "The model explains the winter 2020/21 COVID-19 wave suppression in the US as being triggered by seasonal transmission changes and stabilized by reaching the TCI state, occurring without significant mobility reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This interpretation (C110, C111, C134) is supported by the model fits (Figure 7) and mobility data (Figure 6). However, the seasonal forcing profile (Figure 7a) is fitted rather than independently measured, which introduces some circularity. The explanation is plausible but alternative mechanisms (behavioral adaptation, network effects) cannot be definitively ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The authors review established knowledge about population heterogeneity in epidemics, including the role of superspreading at short timescales and the reduction of herd immunity thresholds by persistent heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize well-established findings from the literature, supported by appropriate citations (C6, C7, C15). The distinction between short-term superspreading (C14) and long-term heterogeneity effects (C15) is correctly characterized. Claim C13 references the authors' own prior work appropriately.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C22"
+    ],
+    "result": "The authors review empirical observations and proposed mechanisms for COVID-19 dynamics, including lack of lasting protection after first waves, plateau dynamics, and behavioral adaptation hypotheses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent empirical observations (C8, C9, C22) and proposed mechanisms (C10, C11) from the literature with appropriate citations. This provides context for the current work but does not constitute a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C133"
+    ],
+    "result": "Early wave suppression without mitigation represents transient collective immunity (TCI) rather than long-term herd immunity, a concept from the authors' prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim (C19, C20) is supported by citation to the authors' previous work (Tkachenko et al., 2021) and is consistent with the current model results. The TCI concept is central to interpreting the model's predictions (C133), though the term itself was introduced in prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C82"
+    ],
+    "result": "The authors review the endemic state problem in epidemiology, noting that while endemic states exist in classical models, the transition mechanism for new pathogens is poorly understood, with geographic heterogeneity being a common qualitative explanation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately characterize the state of knowledge about endemic transitions with appropriate citations (C27, C28, C30, C82). The limitation of classical models (C29) is correctly stated. This provides important context but is not a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C32",
+      "C36",
+      "C38",
+      "C39"
+    ],
+    "result": "The authors review prior work on temporal effects in network-based epidemic models and the use of communication data as proxies for social contacts, including observations of mean-reversion timescales ranging from days to months.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize relevant prior work with appropriate citations. The mean-reversion timescale observations (C38, C39) provide empirical justification for the model's \u03c4\u209b parameter, though the authors acknowledge this is a simplification of multiscale dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C34",
+      "C48",
+      "C55"
+    ],
+    "result": "The model assumes social activity determines both susceptibility and infectivity, with variations on timescales shorter than the generation interval being negligible for epidemic dynamics, and overdispersion having both stochastic and persistent contributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are reasonable modeling assumptions (C34, C48, C55) that are clearly stated and justified. The assumption that short-timescale variations can be ignored (C48) is a standard approximation in epidemic modeling. The decomposition of overdispersion (C55) is a logical consequence of the model structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C107"
+    ],
+    "result": "The authors use Google mobility data to capture population-wide trends in social activity and estimate IFR at 0.5% based on seroprevalence surveys, acknowledging multiple factors affect epidemic dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological choices (C98, C99) are reasonable and clearly justified. The IFR estimate (C107) is based on appropriate seroprevalence data. The acknowledgment of multiple factors (C97) is appropriate, though the model does not explicitly incorporate all of them.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C123",
+      "C124"
+    ],
+    "result": "The SSA model represents a 'zero intelligence' limit without feedback from epidemic dynamics to social activity, complementary to knowledge-based behavioral models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This characterization (C123, C124) accurately describes the model's scope and limitations. The complementarity to behavioral models is appropriately stated, though it also means the model cannot explain behavior-driven dynamics. This is an honest assessment of the model's assumptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C26",
+      "C130"
+    ],
+    "result": "The authors discuss implications including that waning immunity and pathogen mutations become relevant on long timescales, and that the emergent timescale may be relevant for public health planning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C26 is a reasonable inference about long-term dynamics but is not directly tested in this study. Claim C130 is speculative about public health relevance ('might be of relevance') without concrete validation. These are plausible implications but require further work to establish their practical utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C132"
+    ],
+    "result": "The theory provides a plausible explanation for long plateaus observed in COVID-19.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim (C132) is supported by the model's ability to reproduce plateau dynamics (Figures 3, 7) and the mechanistic explanation through TCI degradation. However, 'plausible' appropriately acknowledges that alternative explanations (behavioral adaptation, network structure) have not been definitively ruled out.",
+    "result_type": "MINOR"
+  }
+]

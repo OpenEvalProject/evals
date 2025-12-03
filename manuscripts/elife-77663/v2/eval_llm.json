@@ -1,0 +1,340 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Single-cell RNA sequencing of PDGFR\u03b2+ mesenchymal cells from cycling mice and at 24 and 48 hr after progesterone withdrawal identified 8 transcriptionally distinct clusters, including 3 perivascular populations (V, P1, P2) and 5 fibroblast subpopulations (F1-5). Three repair-specific clusters (P2, F4, F5) were identified that were not present in cycling tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C35 are well-supported by scRNAseq data with appropriate visualization (Figure 1B-D), marker gene expression analysis (Figure 1C), and comparison to previously published cycling tissue data (Kirkwood et al., 2021). The cell isolation strategy (CD31-/CD45-/GFP+) is validated by absence of endothelial and immune markers (C32-C33).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "The repair-specific pericyte cluster P2 showed high similarity to P1 and expressed genes associated with blood vessel formation and immune cell signaling characteristic of pericytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 are supported by differential gene expression analysis (Figure 2A) and unbiased GO analysis (Figure 2\u2014figure supplement 1D). The functional characterization is consistent with known pericyte biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Cluster F5 (48 hr specific) expressed mitochondrial genes and apoptosis markers (Casp3, Casp9, Trp53, Bax) and was identified as representing dead/apoptotic cells, leading to its exclusion from further analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 are supported by scRNAseq data (Figure 2\u2014figure supplement 1B-C), GO analysis showing DNA damage functions, and corroboration with previous cleaved caspase data (Armstrong et al., 2017). The decision to exclude this cluster from downstream analysis is justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The repair-specific cluster F4 (24 hr) had a unique transcriptomic signature distinct from cycling fibroblasts, expressed both mesenchymal (Pdgfrb, Vim) and epithelial (Epcam, Krt18) markers, and showed enrichment for GO terms related to tissue repair, epithelial migration, and MET/EMT transcription factors. F4 cells appear to represent an intermediate phenotype undergoing mesenchymal to epithelial transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C48 are strongly supported by multiple lines of evidence: differential gene expression (Figure 2A), GO analysis (Figure 2B), co-expression of mesenchymal and epithelial markers (Figure 2C-D), and expression of MET/EMT transcription factors from MSigDB (Figure 2E). The interpretation of F4 as an intermediate/transitional state is reasonable given the gene expression patterns, though this remains inferential until validated by lineage tracing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Immunohistochemistry and flow cytometry confirmed the presence of GFP+EPCAM+ cells in Pdgfrb-BAC-eGFP mice at 24 hr after progesterone withdrawal in regions of denuded stroma and newly forming epithelium. These cells represented ~12.78% of GFP+ cells at 24 hr, decreased to ~3.71% at 48 hr, and were not detected at 72 hr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 are supported by immunohistochemistry (Figure 3A) and quantitative flow cytometry data (Figure 3B-C) with appropriate statistical analysis (one-way ANOVA, n=21-30 per group). The temporal dynamics are consistent with a transient population. However, a limitation is that GFP expression depends on active Pdgfrb promoter activity, so loss of signal could reflect either cell loss or promoter inactivation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Integration of GFP+ mesenchymal and GFP-EPCAM+ epithelial scRNAseq datasets identified 16 distinct clusters (7 mesenchymal, 9 epithelial). The repair-specific F4 cluster formed a distinct population in close proximity to both fibroblast and epithelial clusters, showed high transcriptomic similarity to epithelial clusters E1 and E2, and uniquely expressed genes from both fibroblast and epithelial lineages including luminal and differentiating epithelial markers but not glandular markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C61 are well-supported by integrated scRNAseq analysis with appropriate visualization (Figure 4A-C), marker expression analysis (Figure 4D), and epithelial subtype characterization (Figure 4E). The spatial positioning of F4 between fibroblast and epithelial clusters on UMAP is consistent with an intermediate state. Doublet analysis was performed to confirm F4 is not an artifact (Figure 4\u2014figure supplement 1A).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "In silico trajectory analysis using Monocle3 and scVelo identified a putative differentiation trajectory from fibroblast cluster F2 through the repair-specific F4 cluster to epithelial clusters E1/E2. F4 had no trajectory roots (only a branch), suggesting it represents a transitional rather than terminally differentiated state. RNA velocity analysis showed positive unspliced/spliced ratios in F4 cells consistent with transition toward epithelial clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C69 are supported by appropriate computational trajectory analyses (Monocle3 in Figure 5A, scVelo in Figure 5\u2014figure supplement 1). The methods are standard for inferring cell state transitions from scRNAseq data. However, these are computational predictions that require experimental validation through lineage tracing, which is provided in subsequent experiments. The interpretation that F4 represents a transitional state is reasonable but remains inferential from the trajectory analysis alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "In Pdgfra-creERT2/Rosa26-tdTm mice, tdTm expression was detected throughout the endometrial stromal compartment but not in myometrium or epithelium, replicating the pattern of GFPdim stromal fibroblasts in Pdgfrb-BAC-eGFP mice. Co-localization with native PDGFR\u03b1 and absence of CD146 expression confirmed the tdTM transgene specifically targets PDGFR\u03b1+ endometrial fibroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 are well-supported by immunohistochemistry (Figure 5D-E), co-localization studies, and flow cytometry validation (Figure 5\u2014figure supplement 2). The characterization includes appropriate positive (PDGFR\u03b1) and negative (CD146, CD31) markers. The 4-week tamoxifen washout period was validated to ensure tissue responsiveness was restored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "In iNG2-creER/Rosa26-tdTm mice, tdTm was detected in groups of cells throughout the stromal compartment but not in myometrium or epithelium, with a pattern similar to perivascular GFPbright cells in Pdgfrb-BAC-eGFP mice. Co-localization with native NG2 and expression of CD146 but not CD31 confirmed the transgene correctly targets NG2+ perivascular cells (pericytes/vSMC).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 are well-supported by immunohistochemistry (Figure 5D, F), co-localization studies, and marker validation. The characterization appropriately distinguishes perivascular cells from fibroblasts and endothelial cells using established markers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "In Pdgfra-creERT2/Rosa26-tdTm mice at 24 hr after progesterone withdrawal, a unique population of tdTm+EPCAM+ cells was detected in regions of denuded stroma and newly forming epithelium, representing 19.76 \u00b1 3.24% of tdTm+ cells. These cells were also CD90+ at 24 hr but became CD90- at 48 and 72 hr while some continued to express EPCAM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 are strongly supported by immunohistochemistry (Figure 6A) and quantitative flow cytometry (Figure 6B-C) with appropriate statistical analysis (one-way ANOVA, Tukey's multiple comparisons, n=4-13 per group). The temporal dynamics and marker expression patterns are consistent with cells undergoing MET. The loss of CD90 while retaining EPCAM at later timepoints suggests progressive epithelialization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "In NG2-creER/Rosa26-tdTm mice, tdTm+CD90+ cells were identified at all timepoints, but no tdTm+EPCAM+ cells were detected at any timepoint by flow cytometry or immunohistochemistry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 are supported by flow cytometry (Figure 6D-E) and immunohistochemistry (Figure 6F) data. This negative control is critical for demonstrating that MET occurs specifically in PDGFR\u03b1+ fibroblasts and not in NG2+ perivascular cells, strengthening the specificity of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "In Pdgfra-creERT2/Rosa26-tdTm mice, tdTm+ cells were identified in the luminal epithelium at 48 hr adjacent to tdTm- epithelial cells and persisted at 72 hr. tdTm was not detected in epithelium at 0 hr (progesterone withdrawal). Quantification showed tdTm expression in EPCAM+ cells rose from ~3.73% at 24 hr to 16.63 \u00b1 2.24% at 48 hr and 13.26 \u00b1 2.42% at 72 hr, consistent with MET by PDGFR\u03b1+ fibroblasts and retention/proliferation of existing epithelial cells both contributing to repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C94 are strongly supported by immunohistochemistry (Figure 7A-B, D) and quantitative flow cytometry (Figure 7C) with appropriate statistical analysis (one-way ANOVA, Tukey's multiple comparisons, n=4-13 per group). The absence of tdTm in epithelium at 0 hr (C90) is critical for ruling out pre-existing labeling. The persistence of tdTm+ epithelial cells at 48 and 72 hr demonstrates long-term incorporation. The interpretation that both MET and existing epithelial cell proliferation contribute to repair (C94) is reasonable given the presence of both tdTm+ and tdTm- epithelial cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "No tdTm+EPCAM+ cells were detected in NG2-creER/Rosa26-tdTm mice at any timepoint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 is supported by immunohistochemistry and flow cytometry data (Figure 7\u2014figure supplement 1A-E). This negative control confirms that perivascular cells do not undergo MET and contribute to the epithelium, providing specificity for the fibroblast-to-epithelium transition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C5",
+      "C110",
+      "C111"
+    ],
+    "result": "Stromal fibroblasts (PDGFR\u03b1+) can undergo mesenchyme to epithelial transformation and become incorporated into the re-epithelialized luminal surface during endometrial repair. The cell type involved in MET is PDGFR\u03b1+ stromal cells and not NG2+ pericytes. MET contributes to rapid scar-free healing of the endometrial luminal epithelium in response to menstruation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C110, and C111 represent the main conclusions of the study and are strongly supported by the convergence of multiple lines of evidence: (1) scRNAseq identification of F4 cluster with intermediate mesenchymal-epithelial phenotype, (2) trajectory analysis suggesting fibroblast-to-epithelial transition, (3) lineage tracing in Pdgfra-creERT2 mice showing tdTm+ cells in epithelium, (4) negative results in NG2-creER mice ruling out pericyte contribution, and (5) temporal dynamics consistent with MET during the repair window. The use of inducible Cre systems in adult mice addresses previous criticisms about developmental labeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The mouse model used recapitulates key features of human menstruation including vascular breakdown, hypoxia, apoptosis, matrix metalloproteinase expression, and immune cell influx. Restoration of an intact luminal epithelial layer occurs within two days, with evidence for epithelial cell migration and proliferation but no significant basal gland proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 are supported by multiple citations to previous validation studies (Armstrong et al., 2017; Maybin et al., 2018; Cousins et al., 2014, 2016a, 2016b). The model has been extensively characterized and is appropriate for studying endometrial repair mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "Previous work identified stromal cells co-expressing vimentin and cytokeratin in areas denuded of epithelium, suggesting MET. This is the first study to use inducible-Cre lineage tracing in adult mice to explore MET in a menstruation model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 is supported by citation to Cousins et al., 2014. Claim C28 regarding methodological novelty appears accurate based on the literature review provided in the manuscript, though comprehensive verification of this claim would require extensive literature search. The use of inducible Cre systems in adult mice is a significant methodological advance over constitutive systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "Comparison with published human scRNAseq data (Wu et al., 2022) identified that Sfrp4 expression was highest in mouse F2 and F4 populations, and two factors secreted by SFRP4 cells (PENK, GLIPR1) were higher in F4 than other clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 are supported by comparison of the current study's scRNAseq data with published data from Wu et al., 2022. This cross-species comparison suggests potential conservation of repair mechanisms, though further validation in human menstrual tissue would be needed to confirm the presence of an F4-equivalent population.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The human endometrium undergoes repetitive cycles of tissue wounding with piecemeal shedding and rapid scar-free restoration. Menstruation is triggered by progesterone withdrawal and involves inflammatory changes, prostaglandin production, vasoconstriction, hypoxia, and HIF1\u03b1 stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C11 provide background context and are supported by appropriate citations to established literature (Garry et al., 2009; Ludwig and Spornitz, 1991; Greenhalgh et al., 2015; Maybin and Critchley, 2011; Evans and Salamonsen, 2012; Critchley et al., 2006b). These represent well-established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C26"
+    ],
+    "result": "Previous studies have proposed multiple mechanisms for endometrial repair including stem/progenitor cells (PDGFRB+/CD146+/SUSD2+ cells with perivascular location), epithelial proliferation from surface epithelium and basal glands, and MET of stromal cells. Historical observations documented rapid re-epithelialization (~48 hr) with piecemeal shedding and repair occurring synchronously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C22 and C26 provide literature review context and are supported by appropriate citations (Gargett et al., 2016; Ludwig and Spornitz, 1991; Ferenczy, 1976a, 1976b; Garry et al., 2009; Armstrong et al., 2017; Baggish et al., 1967; Kaitu'u-Lino et al., 2010, 2012). The authors appropriately acknowledge competing hypotheses and previous observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Previous lineage tracing studies using constitutive Cre systems reported epithelial labeling that was attributed to either MET or developmental activation of mesenchymal promoters. Ghosh et al. (2020) challenged MET interpretations, attributing epithelial reporter expression to embryonic activation. The half-life of eGFP protein in vivo was reported to be ~15 hr in cancer studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C101 provide important context for interpreting the current study's findings and are supported by appropriate citations (Stewart et al., 2013; Huang et al., 2012; Yin et al., 2019; Ghosh et al., 2020; Zhao et al., 1999; Danhier et al., 2015). The authors appropriately address previous criticisms and explain how their inducible system in adult mice overcomes limitations of prior studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C109"
+    ],
+    "result": "Comparison with published human endometrial scRNAseq studies showed limited direct correspondence to the mouse F4 cluster. Studies by Queckb\u00f6rner et al. (2021) identified perivascular and fibroblast populations but no menstrual phase tissue. Cao et al. (2021) noted that cell culture influenced transcriptomes. Wu et al. (2022) identified SFRP4+ stromal cells distinct from SUSD2+ perivascular progenitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C106 and C109 provide appropriate discussion of how the current findings relate to published human scRNAseq studies. The authors appropriately acknowledge limitations in making cross-species and cross-study comparisons, particularly regarding differences in tissue processing (fresh vs. cultured), cycle phase, and technical approaches.",
+    "result_type": "MINOR"
+  }
+]

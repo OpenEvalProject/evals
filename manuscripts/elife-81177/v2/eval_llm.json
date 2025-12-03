@@ -1,0 +1,363 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Rv3645 is the sole essential adenylate cyclase in Mtb H37Rv under standard laboratory conditions. Depletion of rv3645 by CRISPRi prevented growth on 7H10-OADC agar, and this growth defect was complemented by a CRISPRi-resistant but not a CRISPRi-sensitive allele. Among all adenylate cyclases, only rv3645 knockdown resulted in increased drug sensitivity, demonstrating lack of functional redundancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C24-C28 are well-supported by CRISPRi screening data (Figure 1B), growth assays (Figure 1C), and complementation experiments. The essentiality is confirmed by prior screens (C27) and the specificity among adenylate cyclases is demonstrated by screening data (C25, Figure 1\u2014figure supplement 1A). The complementation controls (C28) validate that the phenotype is specifically due to rv3645 depletion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C29",
+      "C30"
+    ],
+    "result": "Lack of rv3645 results in increased sensitivity to multiple antibiotics including vancomycin, rifampicin, clarithromycin, bedaquiline, and meropenem, but not to isoniazid, ethambutol, or levofloxacin. This demonstrates selective multidrug sensitization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C29, C30 are supported by CRISPRi screening data (Figure 1B) and validated by MIC assays (Figures 1D-G and Figure 1\u2014figure supplement 1C-H). The specificity of the effect (some drugs but not others) strengthens the conclusion that this is not a general growth defect but a specific phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The increased antibiotic sensitivity caused by rv3645 depletion is independent of substantial increases in envelope permeability. Despite dramatic vancomycin sensitization, rv3645 knockdown strains showed only modest increases in BODIPY-VAN uptake compared to envelope biosynthesis mutants, no elevated vancomycin uptake by mass spectrometry, and no hyperpermeability to ethidium bromide, calcein-AM, or BCECF-AM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C31-C38 are supported by multiple orthogonal permeability assays (Figures 2B-F). The controls are appropriate: BODIPY-VAN retains antimicrobial activity (C33, Figure 2\u2014figure supplement 1A), no cell death occurs during the assay timeframe (C34, Figure 2\u2014figure supplement 1B), and positive controls (mtrA, envelope biosynthesis genes) show the expected hyperpermeability. The convergence of multiple independent assays strongly supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "rv3645 is conditionally essential for Mtb growth only in the presence of long-chain fatty acids (palmitic acid, oleic acid, arachidonic acid) but not short/medium-chain fatty acids or cholesterol. The \u0394rv3645 strain showed elevated uptake and metabolism of [1-14C]-oleic acid, suggesting long-chain fatty acids are toxic rather than the strain being unable to consume them. Drug sensitivity is also dependent on long-chain fatty acid presence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C39-C44 are well-supported by growth assays in different media (Figures 3A, 3\u2014figure supplement 1A), fatty acid sensitivity assays (Figures 3B-D, 3\u2014figure supplement 1B-G), radioactive oleic acid uptake/metabolism experiments (Figures 3E-F), and MIC assays in OADC vs ADC media (Figures 3G-I). The specificity for long-chain fatty acids and the elevated uptake/metabolism provide mechanistic insight. The logic that alternative carbon sources don't rescue growth supports the toxicity interpretation (C42).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Mutations in the atypical cAMP phosphodiesterase rv1339 suppress both fatty acid and drug sensitivity phenotypes in \u0394rv3645 strains. A CRISPRi suppressor screen identified rv1339 as the top hit, and spontaneous suppressors contained mutations in rv1339 including a frameshift. CRISPRi knockdown of rv1339 rescued both fatty acid and vancomycin sensitivity. The suppressor screen also identified Mce1 transporter genes, suggesting fatty acid toxicity depends on uptake and metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C45-C51 are supported by CRISPRi suppressor screen data (Figure 4B), whole genome sequencing of spontaneous suppressors (Figure 4C), and validation experiments (Figures 4D-E). The convergence of CRISPRi screen and spontaneous suppressor isolation strengthens the conclusion. The identification of Mce1 genes (C45-C47) provides mechanistic context and is supported by prior literature (C46, Nazarova et al., 2017).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Rv3645 is the dominant source of cAMP under standard laboratory growth conditions. Mass spectrometry showed a 31-fold reduction in cAMP in the \u0394rv3645 strain, which could be rescued by rv1339 knockdown. Conversely, overexpression of wild-type rv1339 led to an 11-fold reduction in cAMP, while a catalytically dead rv1339 allele did not reduce cAMP levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C55-C58 are supported by mass spectrometry measurements (Figures 5C-E). The genetic manipulations (deletion, knockdown, overexpression, catalytic mutant) provide strong evidence for the roles of Rv3645 and Rv1339 in cAMP homeostasis. The catalytically dead control (C58) is critical for demonstrating that the effect is due to phosphodiesterase activity rather than other functions of Rv1339.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C53",
+      "C54"
+    ],
+    "result": "cAMP production is the essential function of Rv3645 in the presence of long-chain fatty acids. An adenylate cyclase catalytic mutant (D411A) was unable to complement oleic acid and vancomycin sensitivity phenotypes, despite expressing at wild-type levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C53, C54 are supported by complementation experiments (Figures 5A-B) and western blot validation of expression (Figure 5\u2014figure supplement 1). The catalytic mutant control is essential for demonstrating that cAMP synthesis, rather than another function of Rv3645, is responsible for the phenotypes. The western blot confirming expression levels (C54) rules out the alternative explanation that lack of complementation is due to poor expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C43",
+      "C60"
+    ],
+    "result": "Reduced cAMP levels result in increased long-chain fatty acid uptake and metabolism. \u0394rv3645 and rv1339 overexpressing strains showed elevated uptake and metabolism of [1-14C]-oleic acid.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C43, C60 are supported by radioactive oleic acid uptake and metabolism assays (Figures 3E-F, 5F-G). The convergence of genetic manipulations that reduce cAMP (\u0394rv3645, rv1339 overexpression) both showing increased fatty acid uptake/metabolism strengthens the conclusion. However, the mechanism by which cAMP regulates fatty acid uptake remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C61",
+      "C63"
+    ],
+    "result": "Reduced cAMP levels result in increased antibiotic susceptibility. Overexpression of rv1339 increased vancomycin sensitivity, and addition of the adenylate cyclase agonist V-59 rescued vancomycin sensitivity of \u0394rv3645.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C61, C63 are supported by MIC assays (Figures 5H, 5I). The V-59 experiment (C63) is particularly strong evidence as it demonstrates that pharmacologically increasing cAMP is sufficient to rescue the drug sensitivity phenotype. This provides a direct link between cAMP levels and drug resistance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C62"
+    ],
+    "result": "The observed phenotypes are specific to cAMP and not due to alterations in related metabolites or protein expression. Reduction in cAMP levels did not alter ATP or pyrophosphate levels, and elevated oleic acid uptake was not mediated by changes in Mce1 protein expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C62 are supported by mass spectrometry (Figure 5\u2014figure supplement 2) and western blot analysis (Figure 5\u2014figure supplement 3). These controls are important for ruling out alternative explanations and demonstrating specificity of the cAMP effect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Rv3645 is not a detector of long-chain fatty acids or antibiotics. cAMP levels did not change in response to oleic acid or in a pattern that correlated with drug sensitivity. Rather, cAMP produced by Rv3645 puts bacilli in a physiologic state capable of surviving these stresses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 are supported by ELISA measurements (Figure 5\u2014figure supplement 5A-B). The lack of correlation between drugs that increase cAMP and drugs to which rv3645-KD is sensitized (C66) is important evidence against Rv3645 being a stress sensor. However, the conclusion that Rv3645 puts bacilli in a 'physiologic state' (C68) is somewhat speculative and represents an interpretation of the data rather than a direct observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The role of cAMP in regulating fatty acid metabolism and drug resistance extends beyond H37Rv. In the lineage 2 strain HN878, where rv3645 is not essential, reduction of cAMP levels still sensitized the strain to vancomycin and palmitic acid.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 are supported by MIC and growth assays in HN878 (Figure 5\u2014figure supplement 6) and citations to prior screens. This demonstrates that the core findings are not strain-specific, though the essentiality of rv3645 varies between strains. This is important for generalizability of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "MacE is predicted to be composed of six transmembrane helices and cytosolic HAMP and cyclase homology domains. The HAMP domain suggests MacE senses a ligand and transduces this signal into cAMP production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 are supported by domain prediction analysis (Figure 1A) and inference from known HAMP domain function (Hulko et al., 2006). The domain architecture is well-supported by computational prediction, but the functional interpretation (C73) is speculative and based on analogy to other HAMP domain proteins. The identity of the ligand remains unknown.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C52",
+      "C101"
+    ],
+    "result": "rv1339 is the major 3',5'-cAMP phosphodiesterase in Mtb, not the canonical phosphodiesterase rv0805. This is supported by the suppressor screen results, biochemical data showing rv0805 preferentially degrades 2',3'-cAMP, and phylogenetic distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C97-C101 are supported by the suppressor screen (C97), biochemical data from the literature (C98-C99), and phylogenetic analysis (C100). The convergence of genetic, biochemical, and evolutionary evidence strongly supports this conclusion. This represents an important revision of the field's understanding of cAMP metabolism in Mtb.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Prior work established links between cAMP and fatty acid catabolism through Mt-Pat, which acetylates/propionylates fatty acid catabolism enzymes. Loss of Mt-Pat or rv1339 affects fatty acid sensitivity and uptake. Collectively, evidence suggests reduced cAMP leads to overactive fatty acid catabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C79 are primarily based on citations to prior literature (Nambi et al., 2013; Rittershaus et al., 2018; Nazarova et al., 2019). The authors accurately represent the prior work and integrate it with their findings. However, the conclusion that 'reduced cAMP leads to overactive fatty acid catabolism' (C79) is an inference that integrates multiple studies and would benefit from more direct mechanistic evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Under hypoxia, Mt-Pat mutants are attenuated, potentially due to failure to downregulate fatty acid catabolism leading to redox imbalance. Mce1 transporter mutants promote fitness in hypoxia. Re-analysis identifies rv1339 as the top resistance-promoting hit in hypoxia, potentially through augmenting Mt-Pat activity and reducing fatty acid catabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80-C86 are based on prior work (Rittershaus et al., 2018) and re-analysis of published data (C85). While the re-analysis is data-driven (C85), much of the mechanistic interpretation (C81, C84, C86) is speculative ('hypothesized', 'could augment'). The connection to the current work is logical but indirect. More direct experimental validation would be needed to elevate this from UNCERTAIN to SUPPORTED.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "There is a link between cAMP and the electron transport chain. Spontaneous resistance to QcrB inhibitors repeatedly identifies rv1339 mutations, and \u0394macE shows hypersensitivity to the QcrB inhibitor Q203.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 are supported by citations to prior literature (C87) and MIC data (C88, Figure 5\u2014figure supplement 7). The convergence of genetic evidence (rv1339 mutations conferring resistance) and phenotypic evidence (\u0394macE hypersensitivity) supports a connection between cAMP and electron transport chain function, though the mechanism remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "A working model proposes that loss of macE reduces cAMP levels, which reduces activity of multiple effectors including Mt-Pat. No single cAMP effector recapitulates macE phenotypes. Reduced cAMP-responsive protein activity may increase fatty acid uptake/catabolism and oxidative TCA metabolism while reducing electron transport chain activity, ultimately leading to redox imbalance and increased antibiotic sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89-C93 represent a working model that integrates the findings. While the model is logical and consistent with the data, much of it is speculative (C92-C93 use 'may' and 'yet-to-be-defined mechanisms'). The observation that no single effector phenocopies macE (C90) is important but based on inference from screening data. This is a reasonable synthesis but requires further experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Proper metabolic function on fatty acids and cholesterol requires optimal cAMP levels. Rv1625c is important for cholesterol catabolism, and V-59 (an Rv1625c agonist) causes constitutive cAMP production and blocks cholesterol catabolism. Too little cAMP prevents growth on fatty acids; too much prevents cholesterol catabolism. Modulating cAMP may potentiate combination drug therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C107 are primarily based on prior work (Wilburn et al., 2022; VanderVen et al., 2015) with integration of the current findings. The 'Goldilocks' interpretation (C106) is a reasonable synthesis of the data. The suggestion about combination therapy (C107) is supported by the V-59 rescue experiment (C63) and prior work, though it remains somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The relationship between cAMP and antibiotic resistance may not be conserved across bacteria. In E. coli, large-scale screening found no differences in antibiotic susceptibility in \u0394cya strains, though specific studies found \u0394cya promotes fosfomycin resistance. In uropathogenic E. coli, cAMP is a negative regulator of persistence, with \u0394cya promoting survival to beta-lactams.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 are based on citations to prior literature (Nichols et al., 2011; Shiver et al., 2016; Silver, 2017; Molina-Quiroz et al., 2018). The authors accurately represent the prior work and appropriately note that the relationship between cAMP and drug resistance differs across bacterial species. This provides important context for the Mtb findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Background on Mtb and cAMP signaling: Mtb is the causative agent of tuberculosis and devotes considerable coding capacity to cAMP metabolism. Mtb encodes at least 15 adenylate cyclases compared to one in E. coli. Nearly 1% of the Mtb genome is predicted to produce, degrade, or interact with cAMP. Mtb adenylate cyclases can be activated by pH, bicarbonate, and fatty acids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C16-C23 represent established knowledge and background information supported by citations and genomic analysis (Figure 1\u2014figure supplement 1A). These claims provide essential context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background examples of Mtb stress response: Hypoxia activates DosRST leading to growth slowing and antibiotic tolerance. Nutrient starvation causes CwlM dephosphorylation, reducing cell wall metabolism and promoting antibiotic tolerance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 are background information supported by citations (Park et al., 2003; Galagan et al., 2013; Boutte et al., 2016). These provide context for understanding how Mtb signaling networks affect antibiotic susceptibility but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Host-associated signals like low pH can activate Mtb adenylate cyclases, and macrophage infection results in a burst of bacterial cAMP production. Both macE and rv1339 are under positive selection in clinical isolates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 are based on prior literature (Bai et al., 2009; Tews et al., 2005; Liu et al., 2022). These provide important context about cAMP signaling during infection and evolutionary selection, though they are not novel findings of this study.",
+    "result_type": "MINOR"
+  }
+]

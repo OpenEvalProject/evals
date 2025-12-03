@@ -1,0 +1,428 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C123"
+    ],
+    "result": "Using scRNA-seq analysis of FACS-sorted neuromast hair cells at 4 dpf, the authors determined that emx2 transcripts initiate during the transition from HC precursors to nascent HCs. The nascent HC cluster showed significantly higher emx2 read-counts and percentages of emx2-positive cells compared to other clusters, with expression lagging behind atoh1a and myo6b onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C49-C54 provide converging evidence from scRNA-seq (UMAP plotting, DPT analysis, read-count quantification) that emx2 expression peaks in nascent HCs rather than precursors. The quality control procedures (C40-C43) and cluster annotation methods (C44-C48) appear appropriate. Statistical significance is reported for read-counts (C53) and cell percentages (C54), supporting the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The authors redefined HC rearrangement as two sequential processes: a 'Rock' phase (average 90 min) where daughter HCs exhibit repetitive rocking motion, followed by a 'Roll' phase (average 75 min) where 57% of HC pairs exchange positions, while 40% only rock without rolling and 3% roll back to original positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 provide detailed quantitative characterization of the Rock and Roll phases from live-imaging experiments with clear definitions (C58, Figure 4A') and frequency measurements (C61-C63). The sample sizes appear adequate (n=67 WT HC pairs from 7 larvae per C64-C70 context), and the temporal measurements are consistent across experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C71",
+      "C73"
+    ],
+    "result": "In emx2 loss-of-function mutants, the Rock phase duration was significantly shorter (67 min vs 90 min in WT), Roll frequency increased (76% vs 60%), and Roll back frequency increased (17% vs 3%), though total position-switching remained similar (59% vs 57%). This demonstrates that Emx2 regulates the cell rearrangement process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 provide quantitative measurements with statistical testing (MANOVA, post-hoc tests referenced in Figure 4). The conclusion (C73) that Emx2 regulates rearrangement is well-supported by the altered kinetics and frequencies. However, C74's inference about differential Emx2 levels is somewhat speculative since both HCs in LOF lack Emx2 yet show altered behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C72"
+    ],
+    "result": "In emx2 gain-of-function mutants where both nascent HCs express Emx2, the Roll phase duration was significantly longer than WT, Rock phase was unaffected, and only 32% of HC pairs underwent Roll (vs 57% in WT) with no Roll back events observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 provide complementary evidence to the LOF results, showing opposite effects on Roll duration and frequency. Statistical significance is indicated (Figure 4E-F), and the findings are internally consistent with the model that Emx2 regulates rearrangement dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Live-imaging of the emx2:Gfp reporter revealed that Gfp signal becomes detectable after precursor division in only one HC per pair. In HC pairs that rolled, the posterior HC became Gfp-positive as it moved to the anterior position; in pairs that did not roll, Gfp invariably activated in the anterior HC, suggesting emx2 is asymmetrically activated before Roll completion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 provide direct observational evidence from live-imaging (n=4 Roll, n=6 No Roll samples). The pattern is consistent and supports the inference (C80) about asymmetric activation timing. The small sample sizes are a limitation but the consistency of observations strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C9",
+      "C124",
+      "C125"
+    ],
+    "result": "Analysis of emx2:Gfp reporter expression in emx2 LOF mutants showed that 31 of 32 Gfp-positive HCs (97%) were correctly located in the anterior position despite lacking functional Emx2, demonstrating that Emx2 is not required for HCs to acquire their normal positions within the neuromast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 provide strong quantitative evidence (160 WT HCs, 70 LOF HCs analyzed) showing normal positioning in emx2 LOF mutants. This directly supports the major conclusion (C84, C124) that Emx2 does not determine HC position. The inference (C125) that Emx2 instead affects hair bundle establishment location is logical given this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C85",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "In F1 emx2 GOF;emx2Gfp/+ neuromasts, only 24% of HCs were Gfp-positive (vs 49% in WT), and 27% of Gfp-positive HCs were mislocated posteriorly. These phenotypes were largely absent in F3 generation, likely due to reduced transgene copy number, though the unidirectional hair bundle phenotype persisted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85, C87, C89, C91 provide quantitative data showing generation-dependent effects. The speculation about transgene dilution (C90) is reasonable given the F1 vs F3 differences. The persistence of hair bundle phenotype despite normalized positioning (C91) supports the independence of Emx2's roles in rearrangement vs hair bundle establishment (C135).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Live-imaging with myo6b:Yfp-tubulin revealed that nascent HCs are initially spherical, then extend apical protrusions toward the neuromast apex within 30-40 min during the Rock phase. During Roll, the protrusion tip appears to pivot at the apical surface, suggesting apical protrusions are important for efficient Roll movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 provide detailed morphological observations from live-imaging with 3D rendering. The temporal measurements (C94) and behavioral descriptions (C95) are consistent. However, C96 is speculative ('may be important') and requires the functional validation provided by subsequent nocodazole experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C102",
+      "C127"
+    ],
+    "result": "In emx2 LOF mutants, nascent HCs formed bottle-shape morphology faster (by 6 min) with wider, more pronounced apical protrusions showing stronger tubulin-Yfp signal intensity than WT. This suggests the Emx2-positive HC normally lacks apical protrusion during Rock and Roll, with the protrusion primarily contributed by the Emx2-negative HC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 provide quantitative measurements of protrusion intensity and length with statistical testing (one-way ANOVA, Figure 6R-U). The inference (C102) about differential protrusion between Emx2+ and Emx2- HCs is logical given the LOF and GOF data together, though direct visualization of individual HCs in WT would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C103"
+    ],
+    "result": "In emx2 GOF mutants where both HCs express Emx2, nascent HCs took longer to form bottle shape and showed smaller apical protrusions with slower rise in tubulin-Yfp signal and protrusion length compared to WT, consistent with enhanced and reduced protrusions in LOF and GOF mutants affecting the Rock and Roll process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 provide complementary quantitative data to the LOF results with statistical testing. The inference (C103) connecting altered protrusion morphology to Rock and Roll defects is supported by the correlation between protrusion phenotypes and rearrangement kinetics across genotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C137",
+      "C138"
+    ],
+    "result": "Nocodazole treatment experiments showed that 90-min treatment allowed recovery of apical protrusion and normal HC positioning after drug removal, while 150-min treatment prevented protrusion recovery and resulted in HC mispositioning. This demonstrates that proper apical protrusion formation is important for the Rock and Roll process and positional acquisition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C112 provide detailed time-course data from nocodazole experiments with clear differences between 90-min and 150-min treatments. Sample sizes are modest (n=5 for 90-min, n=4-6 for 150-min) but the consistency of results supports the conclusion (C113, C137-C138). The correlation between protrusion recovery and correct positioning is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C151"
+    ],
+    "result": "In vangl2m209 mutants, Rock and Roll frequency decreased, Roll phase duration was prolonged, and Emx2-positive HCs were frequently mislocated posteriorly in both Roll and No Roll pairs. Apical protrusion timing appeared normal, indicating that both intercellular cPCP signaling and apical protrusion formation are important for normal Rock and Roll.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C119 provide quantitative data from vangl2 mutants with statistical testing (chi-squared, t-tests, Figure 9). The observation that apical protrusion timing is normal (C120) while positioning is defective supports the conclusion (C121-C122) that cPCP acts through a mechanism distinct from protrusion formation. The data from Table 2 (C150) showing similar mispositioning in Roll and No Roll pairs is important.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C136"
+    ],
+    "result": "The correlation between Roll/No Roll behavior and the need to reposition the nascent Emx2-positive cell provides direct evidence that HCs acquire their proper locations within the neuromast via the cell rearrangement process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C136 represent a key conclusion supported by the emx2:Gfp live-imaging data (C77-C79) showing that Gfp activation correlates with HC positioning needs. This provides the direct experimental evidence for a previously hypothesized mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C31",
+      "C32",
+      "C33",
+      "C134",
+      "C135"
+    ],
+    "result": "Emx2 facilitates Rock and Roll by delaying apical protrusion formation of its nascent HCs, contributing to asymmetry between sibling HCs, but does not determine their ultimate positions. Emx2's key function is to change hair bundle orientation within HCs, and its role in Rock and Roll regulation is independent of its role in hair bundle establishment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims synthesize multiple lines of evidence: emx2 LOF/GOF effects on Rock and Roll (C64-C72), normal positioning in emx2 LOF (C83-C84), altered protrusion dynamics (C97-C101), and F3 GOF data showing normal positioning with abnormal hair bundles (C91, C135). The conclusions are well-supported by the collective data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Both apical protrusion formation of nascent HCs and planar polarity signaling are essential for HCs to acquire their proper locations and generate bidirectional orientation, as demonstrated by nocodazole treatment and vangl2 mutant analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 are supported by the nocodazole experiments (C104-C113) and vangl2 mutant analysis (C116-C122). The conclusion that both mechanisms are essential is justified by the independent defects observed in each perturbation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C155"
+    ],
+    "result": "Based on prior literature, Notch signaling confers asymmetry and positional identity to sibling HCs, mediating Rock and Roll through differential regulation of emx2. The Notch signaling functions intercellularly between sibling HCs, upregulating emx2 in the HC with anterior identity and inhibiting it in the HC with posterior identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C145 are based on cited prior work (Jacobo et al., 2019; Kozak et al., 2020; Erzberger et al., 2020) showing Notch mutant phenotypes. The inference (C145) that Notch acts intercellularly is supported by combining these prior results with the current finding of high emx2 expression in nascent HCs (C30). This represents a synthesis of prior and current work rather than new experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Emx2 immunoreactivity was first detected in immature HCs before hair bundle polarization, but not in HC precursors or nascent HCs, consistent with a previous report.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C37-C38 report immunostaining results that conflict with the scRNA-seq data (C30, C49-C54) showing emx2 transcripts in nascent HCs. The authors acknowledge this discrepancy and suggest immunostaining may not be sensitive enough to detect early expression. This highlights a technical limitation but doesn't invalidate either approach\u2014transcript detection is more sensitive than protein detection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The scRNA-seq analysis used standard quality control to select 2882 viable cells for clustering, resulting in six major clusters. After selecting HC lineage cells based on transgene and marker gene expression, 2188 cells were reclustered into five clusters representing different HC developmental stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C48 describe the scRNA-seq methodology and quality control procedures. The approach follows standard practices and is modeled after similar studies (Lush et al., 2019; Kozak et al., 2020). The cluster annotations based on known markers (atoh1a, myo6b, pvalb8, tmc2b, tekt3) are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "The emx2:Gfp reporter fish showed Gfp expression in tissues that normally express emx2 (brain, pharyngeal arches, otic vesicles) and in mature HCs consistent with normal Emx2 expression pattern (A\u2192P HCs in A-P neuromasts, D\u2192V HCs in D-V neuromasts).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 validate the emx2:Gfp reporter by showing expression in expected tissues and HC subtypes. This validation is important for interpreting the live-imaging results (C77-C79) and positioning analyses (C82-C83).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C86",
+      "C90"
+    ],
+    "result": "The reduced Gfp expression in F1 emx2 GOF;emx2Gfp/+ neuromasts may be due to ectopic Emx2 suppressing the endogenous emx2 promoter, and the difference between F1 and F3 generations is likely due to reduced transgene copy number from chromosomal segregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86 and C90 are speculations to explain observed phenomena (C85, C89). While the explanations are plausible, they lack direct experimental validation. Alternative explanations (e.g., position effects, epigenetic silencing) are not excluded. These remain reasonable hypotheses requiring further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C126"
+    ],
+    "result": "Emx2's effect on hair bundle establishment in neuromast HCs is most likely similar to utricular HCs in the mouse inner ear, which requires heterotrimeric G proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C126 is a speculation based on comparison with previous work in mouse inner ear (Jiang et al., 2017). While the comparison is reasonable given the authors' prior work, this represents a hypothesis about mechanism rather than a demonstrated result. No experiments in the current study directly test G protein involvement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The authors propose a model where lack of apical protrusion affects stable attachment at the apical surface resulting in longer Roll duration and occasional mispositioning. In normal neuromasts, the Emx2-negative HC's apical protrusion anchors at the vertex while the non-anchored Emx2-positive HC is guided for positional exchange, making the Emx2-negative HC more important for normal rearrangement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C131-C133 represent a mechanistic model extrapolated from the data but not directly tested. While the model is consistent with observations (protrusion morphology, rearrangement kinetics, positioning outcomes), key predictions (e.g., differential anchoring, guidance mechanism) lack direct experimental validation. This is a reasonable working model requiring further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Based on prior work, Emx2 and cPCP are independently regulated, vangl2 is epistatic to emx2 in hair bundle establishment, and the cPCP pathway functions on multiple levels during neuromast development. Vangl2 is expressed predominantly in HCs, and cPCP signaling likely occurs among sibling or neighboring HCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C147, C149, C152-C153 cite prior work (Ji et al., 2018; Mirkovic et al., 2012; Jacobo et al., 2019; Navajas Acedo et al., 2019). The inference (C154) about intercellular signaling among HCs is reasonable given that supporting cell alignment is unaffected in vangl2 mutants (C153). Claim C148 is a reasonable synthesis of the vangl2 data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C114",
+      "C115"
+    ],
+    "result": "Background information establishing the zebrafish neuromast system, hair cell biology, and prior findings on Emx2 function and HC rearrangement from the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide established background knowledge from the literature with appropriate citations. They set the context for the current study but do not represent new findings. The information is accurately presented and properly attributed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The authors summarize that Notch-mediated Emx2 is one factor facilitating rearrangement by creating asymmetry between sibling HCs, but Emx2's major function is in establishing hair bundle orientation and neuronal selectivity. cPCP proteins provide intercellular signaling cues to maintain hair bundle alignment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C158 represent a summary of the overall model integrating current findings with prior work. Claim C157 cites prior work (Jiang et al., 2017; Ji et al., 2018) for Emx2's role in hair bundle orientation. The summary accurately reflects the evidence presented.",
+    "result_type": "MINOR"
+  }
+]

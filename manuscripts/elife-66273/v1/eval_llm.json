@@ -1,0 +1,463 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C23",
+      "C24",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C116"
+    ],
+    "result": "The authors developed an automated meta-learning framework called Evolving-to-Learn (E2L) that uses Cartesian Genetic Programming (CGP) to discover biophysically plausible plasticity rules for spiking neural networks. The method evolves compact symbolic expressions that are interpretable, operates without computing gradients, and uses an indexed graph representation with fixed genotype size to ensure compact expressions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C23-C24, C33-C44, and C116 collectively describe the E2L method and its implementation using CGP. The method is well-documented with clear descriptions of the genotype-phenotype mapping (C34-C38, Figure 2), mutation mechanisms (C40), and design rationale (C41-C44). The approach is demonstrated across three learning paradigms with concrete experimental results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C25",
+      "C48",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C75"
+    ],
+    "result": "In reward-driven learning tasks, the E2L approach discovered novel plasticity rules (LR2-LR5) with efficient reward baselines that outperform previously known solutions. These rules use separate estimates of positive and negative expected rewards rather than the expected reward baseline suggested in prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C25, C48, C51-C54, C60-C64, and C75 describe the reward-driven learning experiments and results. Figure 3D shows that discovered rules (LR2-LR5) achieve significantly higher fitness than the baseline (LR0), with statistical significance indicated (p<10^-16). The experimental setup is clearly defined (C48, C54), and the finding that none of the high-performing rules use expected reward as a baseline (C61) contrasts with prior work (C53).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Analysis of the discovered reward-driven plasticity rules (LR4 and LR5) reveals that precisely regulated homeostatic mechanisms play a crucial role. During early learning, both rules implement potentiating homeostatic mechanisms triggered by negative rewards, while during late learning, LR4 implements depressing homeostatic changes and LR5 maintains positive homeostatic changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 and C81-C84 provide detailed analysis of the temporal dynamics of homeostatic mechanisms in LR4 and LR5. The analysis is based on the mathematical expressions of the discovered rules and is supported by references to the Appendix. The interpretations are logical given the mathematical forms, though direct experimental validation of these temporal dynamics is not shown in the main figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The evolution of closed-form expressions enabled analysis revealing new mechanisms for efficient learning, including learning from 'novelty' and reward-modulated homeostatic mechanisms. The discovered rules make specific testable predictions about behavioral and neuronal signatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 describe insights gained from analyzing the interpretable expressions. The analysis of LR2-LR5 reveals distinct learning strategies (C79-C80), and the compact representation enables identification of these mechanisms (C76-C77). The claim about testability (C78) is reasonable given the explicit mathematical forms, though actual experimental tests are proposed as future work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C27",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C92",
+      "C93",
+      "C95",
+      "C96",
+      "C99",
+      "C100"
+    ],
+    "result": "In error-driven learning tasks, the evolutionary search rediscovered variations of the Urbanczik and Senn (2014) gradient-descent-based learning rule. About half of evolutionary runs evolved efficient plasticity rules, with two runs evolving exactly the known rule and others discovering superficially different but functionally equivalent approximations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C27, C85-C90, C92-C93, C95-C96, C99-C100 describe the error-driven learning experiments. Figure 4D shows that multiple runs achieved high fitness matching the reference rule. The claim that discovered rules are approximations of gradient descent (C96) is supported by mathematical analysis showing equivalence under reasonable assumptions (C95, with details in Appendix). The ability to identify phenomenologically identical rules (C100) demonstrates the value of interpretable representations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C28",
+      "C101",
+      "C103",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C115"
+    ],
+    "result": "In correlation-driven learning tasks, the evolutionary search discovered diverse STDP-like rules (LR1 and LR2) with different STDP kernels and homeostatic mechanisms that achieve comparable system-level behavior. Both rules reproduce important components of experimentally established STDP traces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C28, C101, C103, C105-C110, and C115 describe the correlation-driven learning experiments. Figure 5 shows that half of evolutionary runs discovered high-fitness solutions (C103), and detailed analysis of LR1 and LR2 (C105-C108, Figure 5D-E) reveals distinct strategies that lead to similar performance (C110). The claim about biological plausibility (C109) is supported by citation to experimental literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C118"
+    ],
+    "result": "The discovered plasticity rules reveal that homeostatic mechanisms support computational goals rather than merely maintaining neuronal working points. Homeostatic mechanisms and STDP work synergistically to achieve functional outcomes, suggesting that experimental approaches should consider both factors jointly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C114 and C118 present a key insight about the functional role of homeostasis. The analysis of LR1 and LR2 in the correlation-driven task (C112) and LR4-LR5 in the reward-driven task provides evidence for this interpretation. The recommendation for experimental design (C114) follows logically from the findings. This insight is highlighted as a major contribution in the Discussion (C118).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C114"
+    ],
+    "result": "The results suggest a reevaluation of experimentally measured STDP curves with respect to their possible functional equivalence, as variations in STDP curves may reflect different combinations of STDP and homeostatic mechanisms that achieve similar network-level behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29 and C114 propose a reinterpretation of experimental variability in STDP measurements. This is supported by the finding that LR1 and LR2 have different STDP kernels but achieve similar fitness (C110), suggesting functional equivalence. The recommendation is logical but represents an inference about how to interpret existing experimental data rather than a direct experimental finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C30",
+      "C117",
+      "C176"
+    ],
+    "result": "The E2L approach demonstrates significant potential for automated discovery of plasticity rules in spiking neural networks, successfully discovering high-performing solutions across reward-driven, error-driven, and correlation-driven learning paradigms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C117, and C176 summarize the overall significance of the work. The claim is supported by successful application to three distinct learning paradigms (reward-driven, error-driven, correlation-driven) with concrete results showing discovery of novel rules (reward-driven), rediscovery of known rules (error-driven), and diverse functionally equivalent rules (correlation-driven).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "The fitness function assigns high fitness to learning rules that solve tasks well, and fitness is evaluated on multiple examples from the task family to promote generalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 describe the fitness evaluation strategy. This is a standard methodological choice in evolutionary algorithms, supported by citations (C32). The specific fitness functions for each task are defined in the Materials and Methods section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The experiments were chosen for their simplicity and availability of reference plasticity rules for comparison. The authors restricted inputs to plasticity rules to quantities previously linked to synaptic plasticity, which avoids rediscovery but potentially excludes other efficient solutions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C122 acknowledge limitations in experimental design. The rationale for task selection (C119) and input constraints (C120-C121) is clearly stated, and the trade-off is explicitly recognized (C122). This represents appropriate acknowledgment of methodological choices and their implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "A key feature of E2L is the compact representation of plasticity rules, achieved by restricting complexity through three considerations: assuming rules are not unique to each synapse, limiting information to local quantities, and limiting expression size. This enables analysis with conventional methods and facilitates communication and generalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C127 explain the design rationale for compact representations. The three considerations (C124) are well-justified with citations and biological reasoning. The advantages for interpretability (C126-C127) are demonstrated through the successful analysis of discovered rules in all three learning paradigms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Constants in discovered error-driven learning rules fall into two categories: fine-tuning of learning rate and negligible factors that would likely be pruned over longer evolutionary timescales. Pruning could be accelerated by imposing complexity penalties in the fitness function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 analyze the role of constants in discovered rules. The categorization (C97) is based on analysis of the expressions, and the suggestion for improvement (C98) is reasonable. However, this is primarily interpretation and speculation about future improvements rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The identified plasticity mechanisms can serve as building blocks for more general learning rules. Researchers can use analytic expressions and prior knowledge to distill general principles and combine them in new ways, making E2L a new tool pairing human intuition with efficient search algorithms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C128-C131 describe potential future applications and the role of the method. While the reasoning is sound, these are primarily speculative claims about how the method could be used (C128-C129) rather than demonstrated capabilities. The characterization as a new tool (C130-C131) is reasonable but represents interpretation of the method's potential rather than validated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C132",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The framework can be viewed as a hypothesis-testing machine that makes answering questions about plasticity rules more efficient than manual search. It is suitable for finding biophysically plausible approximations of complex rules and for evolving task-specific modifications of general rules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C132, C134-C138 describe alternative uses of the framework. These are reasonable suggestions for how the method could be applied, but they represent speculation about potential applications rather than demonstrated capabilities. No examples of using the framework for hypothesis testing or rule simplification are provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "The automated search can discover plasticity rules that exploit implicit assumptions in tasks, thereby highlighting underconstrained searches due to data scarcity, task simplicity, or omission of critical features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C141 identify a potential issue with automated search. The example about rate differences in the correlation-driven task (C141) illustrates how implicit assumptions could be exploited. This represents appropriate critical reflection on the method's limitations, though no concrete examples of such exploitation are demonstrated in the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "EPANNs and adaptive HyperNEAT represent alternative approaches that include network architecture in the evolutionary search. While this can lead to high-performance solutions, it makes it difficult to separate the contribution of plasticity from network structure, and the distributed representation hinders interpretation, which is particularly problematic for biological research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C147 compare E2L to related work. The comparison is fair and well-supported by citations (C142-C144). The criticism about interpretability (C145) and its implications for biological research (C147) is reasonable and highlights a key advantage of the E2L approach. The qualification that this is less problematic for machine learning applications (C146) shows balanced assessment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Future work needs to address overfitting through approaches such as increasing sample tasks (with linear computational cost increase) or penalizing expression complexity. Multi-objective optimization should be considered for balancing complexity penalties against fitness measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C153 identify challenges and suggest solutions for future work. The suggestions are reasonable and well-grounded in optimization theory. The acknowledgment of computational costs (C150) and the challenge of weighting penalties (C153) shows appropriate consideration of trade-offs. These represent thoughtful discussion of limitations rather than demonstrated solutions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "The learning rate is currently fixed and not part of optimization. Analysis revealed the evolutionary algorithm tried to optimize learning rate using available variables. Including additional constants could help, but the search space scales exponentially, potentially requiring combination with gradient-based optimization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C159 identify a limitation and discuss potential solutions. The observation that the algorithm tried to optimize learning rate indirectly (C156) is based on analysis of discovered rules. The suggestions for improvement (C157, C159) are reasonable but speculative. The acknowledgment of computational complexity (C158) shows appropriate consideration of feasibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "Future work could involve less preprocessed inputs and more diverse operators, and particularly interesting applications involve complex tasks like lifelong learning. For biological insights, network architecture should be guided by anatomical features and tasks should be ecologically relevant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C163 suggest directions for future work. These are reasonable suggestions based on the current work's limitations and potential. The recommendation for biological research (C163) is particularly well-grounded. However, these represent speculation about future applications rather than demonstrated capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "The evolutionary search requires large numbers of simulations (10\u00b3-10\u2074 per run), but caching methods reduce computational cost. For complex tasks, computational costs could be limited by evolving scalable rules in simplified versions, similar to evolutionary hurdles. The delta rule and evolved optimizers provide proof of concept for this approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C165 and C168-C172 discuss computational requirements and strategies for managing them. The computational costs are clearly stated (C164), and the use of caching (C165) is a standard optimization. The suggestion for complex tasks (C169-C170) is reasonable and supported by examples (C171-C172), though this strategy is not demonstrated in the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C173",
+      "C174"
+    ],
+    "result": "Neuromorphic systems provide an attractive way to speed up evolutionary search, provided they can emulate spiking networks in accelerated fashion and provide flexible on-chip plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C173-C174 suggest using neuromorphic hardware to improve computational efficiency. The suggestion is reasonable and supported by citations to relevant systems (C174). However, this represents speculation about potential future implementation rather than demonstrated capability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C175"
+    ],
+    "result": "The authors view the presented methods as machinery for generating, testing, and extending hypotheses on learning in spiking neuronal networks, driven by problem instances and prior knowledge and constrained by experimental evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C175 characterizes the intended role of the method. This is a reasonable characterization supported by the demonstrated capabilities across three learning paradigms. The method successfully generates new hypotheses (reward-driven rules), tests known hypotheses (error-driven rules), and extends understanding (correlation-driven rules).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Synaptic plasticity, the adjustment of coupling strength between neurons, is essential for learning and adaptation. Most studies approach this by searching for phenomenological models (plasticity rules) described by symbolic expressions. Bottom-up approaches derive rules from experimental data, while top-down approaches derive them from high-level network function descriptions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C8-C11 provide background on synaptic plasticity and approaches to studying it. These are well-established facts in neuroscience, supported by multiple citations (C10-C11). This represents standard background material rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The relative weighting of experimental evidence, functional considerations, and model complexity is usually not made explicit in scientific communication. Researchers tend to focus on promising parts of the search space, leaving large parts unexplored. Automated procedures can perform significantly less biased search by interpreting the search as an optimization problem.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 critique current scientific practice and motivate the automated approach. The observations about implicit weighting (C12) and search bias (C13) are reasonable criticisms supported by citation (C13). The claim about automated procedures (C14-C15) is logical and supported by the conceptual framework, though the actual reduction in bias is not quantitatively demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Prior work in meta-learning includes early experiments using gradient descent or genetic algorithms to optimize learning rules, recent work on designing optimization algorithms and evolving machine learning algorithms, and applications to neuronal networks. Spiking networks have rich dynamical properties, and neuromorphic systems are emerging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C22 review prior work in meta-learning and spiking networks. All claims are supported by appropriate citations. This represents standard literature review providing context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C26"
+    ],
+    "result": "The analytic form of discovered expressions suggests experimental approaches that would allow distinguishing between them.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C26 suggests that the discovered rules enable experimental design. While the interpretable expressions do make specific predictions (as detailed in C78-C84), the claim that they \"suggest experimental approaches\" is somewhat vague. No specific experimental protocols are proposed, making this more of a general statement about potential rather than a concrete contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "The strategy of LR2 may lead to issues with un- or re-learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C67 speculates about potential limitations of LR2. This is acknowledged as speculation in the evidence type. No experimental or theoretical evidence is provided to support this concern, making it an unsupported speculation about potential issues.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1980 @@
+{
+  "submission": {
+    "id": "71a76241-9861-423b-a61f-41a486180c15",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T16:52:12.190550Z",
+    "updated_at": "2025-12-03T16:52:12.190550Z"
+  },
+  "content": [
+    {
+      "id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "submission_id": "71a76241-9861-423b-a61f-41a486180c15",
+      "content_type": "manuscript",
+      "content_text": "# Microplankton life histories revealed by holographic microscopy and deep learning\n\n## Authors\n\n- Harshith Bachimanchi<sup>1</sup> ([ORCID: 0000-0001-9497-8410](https://orcid.org/0000-0001-9497-8410))\n- Benjamin Midtvedt<sup>1</sup>\n- Daniel Midtvedt<sup>1</sup>\n- Erik Selander<sup>2</sup>\n- Giovanni Volpe<sup>1</sup> ([ORCID: 0000-0001-5057-1846](https://orcid.org/0000-0001-5057-1846)) \u2020\n\n### Affiliations\n\n1. Department of Physics, University of Gothenburg Gothenburg Sweden ([ROR:01tm6cn81](https://ror.org/01tm6cn81))\n2. Department of Marine Sciences, University of Gothenburg Gothenburg Sweden ([ROR:01tm6cn81](https://ror.org/01tm6cn81))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe marine microbial food web plays a central role in the global carbon cycle. However, our mechanistic understanding of the ocean is biased toward its larger constituents, while rates and biomass fluxes in the microbial food web are mainly inferred from indirect measurements and ensemble averages. Yet, resolution at the level of the individual microplankton is required to advance our understanding of the microbial food web. Here, we demonstrate that, by combining holographic microscopy with deep learning, we can follow microplanktons throughout their lifespan, continuously measuring their three-dimensional position and dry mass. The deep-learning algorithms circumvent the computationally intensive processing of holographic data and allow rapid measurements over extended time periods. This permits us to reliably estimate growth rates, both in terms of dry mass increase and cell divisions, as well as to measure trophic interactions between species such as predation events. The individual resolution provides information about selectivity, individual feeding rates, and handling times for individual microplanktons. The method is particularly useful to detail the rates and routes of organic matter transfer in micro-zooplankton, the most important and least known group of primary consumers in the oceans. Studying individual interactions in idealized small systems provides insights that help us understand microbial food webs and ultimately larger-scale processes. We exemplify this by detailed descriptions of micro-zooplankton feeding events, cell divisions, and long-term monitoring of single cells from division to division.\n\n## Introduction\n\nThe role of herbivores in structuring plant communities is well established in terrestrial ecology. Already Darwin, in his foundations on evolutionary biology (Darwin, 2004), noted how excluding herbivores from a heath land transformed it into a forest of pine trees with an altogether different species composition. Single-celled micro-zooplankton take on the role of herbivores in the ocean, consuming approximately two thirds (40 Petagrams (Pg) carbon) of the primary production (Calbet and Landry, 2004). In oceanic ecology, the primary production is dominated by unicellular phytoplankton, which produce around 50 Pg of carbon annually, quantitatively slightly exceeding the production of terrestrial plants (Behrenfeld and Falkowski, 1997; Field et al., 1998). Selective grazing shapes the plankton community and drives large-scale processes such as harmful algal bloom formation and carbon export (Irigoien et al., 2005; Selander et al., 2019).\n\nDespite its importance, our understanding of the role of micro-zooplankton in shaping oceanic communities is still much less developed than that of macro-organisms, which can more readily be observed at the individual level (Glibert and Mitra, 2022). In fact, rates and fluxes in the oceanic microbial food web are still mainly inferred from indirect measurements or ensemble averages, leaving us with a limited mechanistic understanding. Quantitative estimates of primary production are mostly inferred from satellite images of ocean color (chlorophyll) using moderate resolution spectroradiometers calibrated against in situ isotope incorporation experiments (Hu et al., 2012). Ensemble-level biomass transitions during grazing events by microscopic zooplankton are calculated from dilution experiments (Landry and Hassett, 1982), where the grazer density is manipulated by dilution, and the corresponding net increase in primary production is approximated. While these methods provide good estimates of the magnitude of biomass fluxes, they do not resolve the small-scale individual interactions that drive the large-scale processes. Moreover, indirect measurements of processes such as micro-zooplankton grazing rest on assumptions that are not always fulfilled. For example, feeding rates and growth rates of both predators and prey need to be unaffected by dilution, which is often not true (Dolan et al., 2000). In addition, the dilution technique is based on chlorophyll measurements and does not account for consumption of non-chlorophyll-bearing particles, which leads to underestimation of carbon transfer (Stoecker et al., 2017).\n\nCurrently, the biomass of individuals is often inferred from volume-to-carbon relationships developed over time for different trophic groups of planktons (Strathmann, 1967; Menden-Deuer and Lessard, 2000), which require cell counting and sizing followed by elemental analysis, but do not allow continuous measurements of the same individual. However, these regression relations are not very precise: the average deviation of individual data points to the regressed expression exceeds 50% (Menden-Deuer and Lessard, 2000). In addition, single cells of the same volume can differ by a factor two in dry mass, which is not possible to detect by volume-to-carbon relationships. To go beyond the current level of detail in marine microbial food webs, we need complementary techniques that can follow individual microplanktons over extended periods, while continuously monitoring their growth rate and predation events.\n\nContinuous measurements can be realized using microscopy techniques. For example, holographic microscopy can record holograms of cells under investigation in the form of interference patterns containing phase and amplitude information. The information in the holograms can be used to extract the three-dimensional position of microplanktons as well as their mass (Zangle and Teitell, 2014). Holographic imaging has already found applications in microbial studies, especially for in situ measurements of particle size distributions and their identity (Nayak et al., 2021). However, its full potential has not yet been exploited, namely for the quantitative investigation of the growth and feeding patterns of individual planktons over prolonged times. Arguably, this is because the data acquisition and processing pipelines are very computationally expensive.\n\nHere, we solve this problem by employing a technique that combines holography with deep learning. The deep-learning algorithms circumvent the long computational times and, once trained, allow rapid determination of three-dimensional position and dry mass of individual microplanktons over extended time periods. We evaluate this method on nine plankton species belonging to different trophic levels and representing the major classes of microplankton. We highlight that unlike other methods, our approach makes it possible to follow and weigh single cells throughout their lifetime, being especially useful to detail micro-zooplankton and mixotrophic life histories as feeding events can be quantitatively measured. Furthermore, the estimated dry mass can be tagged to single planktons detected in the experiments. We can track and identify both prey and predator cells and closely follow the transfer of mass from cell to cell. Finally, we observe the growth and cell divisions in diatoms by their long-term monitoring over more than one cell cycle.\n\n## Results\n\n### Experimental setup and deep-learning data analysis\n\nFigure 1 shows an overview of the holographic microscopy experimental setup and the deep-learning data analysis pipeline to estimate the position and dry mass of the planktons. We use an inline holographic microscope in a lens-less configuration (see details in Methods, \u2018Holographic imaging\u2019). A monochromatic LED light source illuminates the sample suspension that contains the planktons under investigation. As the light passes through the sample, it acquires a complex amplitude that depends on the optical properties of the materials it traverses, generating inline holograms (Figure 1\u2014figure supplement 1), which encode the three-dimensional position of the planktons as well as their size and refractive index. A CMOS camera located on the opposite side of the sample acquires the holograms for further analysis with a frame rate of $10\u2062fps$, and an exposure time of $8\u2062ms$.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/79760/elife-79760-fig1-v1.jpg)\n\n**Figure 1.:** (a) Holographic microscope: Planktons suspended in a miniature sample well are imaged with an inline holographic microscope. The (cropped) example holographic image features two different plankton species: Oxyrrhis marina and Dunaliella tertiolecta (full image in Figure 1\u2014figure supplement 1). (b) Deep-learning network 1: A regression U-Net (RU-Net, see details in Figure 1\u2014figure supplement 2), trained on simulated holograms, uses individual holograms to predict output maps containing the segmentation of the planktons, their $z$-position, their dry mass $m$, and the distances $\u0394\u2062x$ and $\u0394\u2062y$ from the closest plankton for each pixel (to be used for the accurate localization of planktons). (c) Plankton 3D position and dry mass: The information obtained by the RU-Net permits us to reconstruct the 3D position of the planktons along with their dry mass (color bar). (d) Plankton sequences: Using the plankton positions obtained by the RU-Net, we extract sequences of $64\\times64$-pixel holograms centered on an individual plankton. (e) Deep-learning network 2: The sequences are then used by a weighted-average convolutional neural network (WAC-Net, see details in Figure 1\u2014figure supplement 3), trained on simulated data, to refine the estimations of $m$ and $z$. (f) Dry mass time series: Example of a refined dry mass prediction in picograms (pg) for a micro-zooplankton (Oxyrrhis marina, orange line) and a phytoplankton (Dunaliella tertiolecta, blue line) obtained by the WAC-Net.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79760/elife-79760-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Detailed view of the inline holographic microscope shown in Figure 1a: A plane wave generated by a monochromatic LED source illuminates the sample well that contains two different species of planktons (Dunaliella tertiolecta and Oxyrrhis marina), whose bright-field microscope images are shown in the insets. The holograms of the planktons are shown in the cropped holographic image at the bottom. (b) Full-scale hologram: Inline holographic microscopes offer a large field of view; in our case, the active region of the sensor has the dimensions $4.6\u2062mm\\times3.5\u2062mm$. The cropped region in Figure 1a is marked by the dashed box.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/79760/elife-79760-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) Examples of simulated plankton holograms generated by DeepTrack 2.0 (Midtvedt et al., 2021a): Each image ($128\u2062px\\times128\u2062px$) contains plankton holograms generated over a wide range of sizes and refractive indices. The background noise is varied randomly with a Gaussian random noise to match the experimental images. (b) Input\u2013output pairs to train the RU-Net: The input of the RU-Net is a simulated holographic image. The output maps contain the segmentation of the planktons, their $z$-position, their dry mass $m$, and the distances $\u0394\u2062x$ and $\u0394\u2062y$ from the closest plankton for each pixel (to be used for the accurate localization of planktons). (c) RU-Net architecture: The downsampling part consists of a sequence of six convolutional blocks containing a convolutional layer (depicted in brown; the number of convolutional filters is indicated at the bottom of each convolutional layer) followed by an ReLU activation and a max-pooling layer (depicted in purple). In the upsampling path, the RU-Net is divided into two branches. Each upsampling branch contains a sequence of four upsampling blocks, where each upsampling block contains an upsampling layer (depicted in red) followed by a convolutional block (depicted in blown), and an ReLU activation. The final upsampling block used for the plankton segmentation employs a sigmoid activation (depicted in black). The outputs of both upsampling paths (depicted in green) are merged together, after which a final convolutional block is added to predict the five-channel output image. See also Methods, \u2018RU-Net architecture and training\u2019.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/79760/elife-79760-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (a) Simulated time sequence of holographic images cropped around an individual plankton: The 15-frame simulated sequence is an example input sequence for training the WAC-Net to estimate the plankton dry mass and radius. The images are centered on the target plankton, while other planktons in the background are considered as noise that the WAC-Net should learn to ignore. (b) WAC-Net architecture: The input image sequence is processed by a time-distributed block consisting of a series of four convolutional blocks. Each convolutional block has a convolutional layer (depicted in brown; the number of convolutional filters is indicated at the bottom of each convolutional layer), followed by an ReLU activation and pooling layer (depicted in purple). The features are flattened (depicted in blue) followed by a series of two dense layers (depicted in red; the number of nodes is indicated at the bottom), which return an output vector (depicted in green) for each image in the sequence ($n=15$ images). This is followed by two convolutional layers (depicted in yellow; with 128 and 1 filters, respectively), which estimate the weight for each image in the sequence. A weighted average is then obtained for the vectors to extract $n$ single value outputs (depicted in green). Finally, the outputs are processed with a series of dense layers to obtain the final result for the dry mass and radius. See also Methods, \u2018WAC-Net architecture and training\u2019.\n\nIn order to measure the position and dry mass of the planktons, the recorded holograms are analyzed by a regression U-Net (RU-Net, Figure 1b and Figure 1\u2014figure supplement 2, see details in Methods, \u2018RU-Net architecture and training\u2019). The RU-Net is a deep-learning architecture based on a modified U-Net, with two parallel arms in the upsampling path. The output of the RU-Net is a five-channel image where each channel corresponds to a heat map containing: a segmentation of the planktons from the background used to obtain a rough estimate of their $x\u2062y$ (in-plane) position; their estimated $z$ (axial) position; the plankton estimated dry mass $m$; and the distances $\u0394\u2062x$ and $\u0394\u2062y$ from the closest plankton for each pixel (used to improve the in-plane localization). This RU-Net is implemented and trained on simulated input\u2013output image pairs (4000 samples) using the Python software package DeepTrack 2.0 (Midtvedt et al., 2021a). The output heat maps are finally processed to obtain a prediction of the plankton three-dimensional position and their dry mass, as shown in Figure 1c.\n\nIn order to increase the accuracy of the dry mass estimations, we extract time sequences of holographic images cropped around an individual plankton (Figure 1d and Figure 1\u2014figure supplement 3) and further analyze them with a second deep-learning network. This is a weighted-average convolutional neural network (WAC-Net, Midtvedt et al., 2021b), Figure 1e and Figure 1\u2014figure supplement 3, see details in Methods, \u2018WAC-Net architecture and training\u2019. The WAC-Net determines a single estimated value of the equivalent spherical radius, as well as a more accurate value of the dry mass of the plankton in the sequence, through a weighted average of the latent representation of various holograms with learnable weights. The number of frames in the sequence is limited to 15 frames for training the WAC-Net. For inference, the length of the sequence is dependent on the application. For example, when analyzing feeding events we aim to capture dry mass dynamics on short time scales, and the sequence length is therefore restricted to a single frame. For the division events, the sequence length is 15 frames, as they occur over longer times ranging from hours to days with more recorded frames. Also the WAC-Net is implemented and trained with simulated data (4000 15-frame sequences of $64\u2062px\\times64\u2062px$ images) using DeepTrack 2.0 (Midtvedt et al., 2021a). Figure 1f shows an example of the dry mass output of the WAC-Net in picograms (pg)when applied on a sliding window over a sequence of holograms corresponding to a micro-zooplankton (Oxyrrhis marina) and a phytoplankton (Dunaliella tertiolecta).\n\n### Dry mass estimates\n\nThe combination of RU-Net and WAC-Net permits us to measure the dry mass of each plankton at any point in time. For example, Figure 2a shows a portion of an inline hologram of the micro-zooplankton species, O. marina, tracked by the RU-Net (circles). Individual O. marina cells are then traced for 30 frames and their holograms are further processed with WAC-Net to obtain an estimation of the dry mass for each cell. The orange histogram in Figure 2b shows the dry mass distribution estimated by WAC-Net.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/79760/elife-79760-fig2-v1.jpg)\n\n**Figure 2.:** (a) Phytoplankton species Oxyrrhis marina as detected by RU-Net on a portion of experimental hologram (see Figure 1\u2014figure supplement 1 for the complete hologram). (b) Dry mass distributions for O. marina (illustrated in the inset) obtained by applying weighted-average convolutional neural network (WAC-Net) to the experimental holograms (orange) and by volume-to-carbon relationships (gray, Menden-Deuer and Lessard, 2000). The red line is the value of the average mass estimate obtained from elemental analysis. (c) Comparison of the dry mass estimations obtained by WAC-Net and by the volume-to-carbon method for nine different species of diatoms (Thalassiosira pseudonana, Thalassiosira weissflogii), phytoplantons (Isochrysis galbana, Rhodomonas salina, Dunaliella tertiolecta), and micro-zooplanktons (Oxyrrhis marina, Kryptoperidinium triquetrum, Alexandrium minutum, Scrippsiella acuminata). The two measurements have a correlation coefficient of $\u03c1=0.988$. The dashed line represents the best fit and the error bars show the standard deviations of the distributions. The insets illustrate each species.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79760/elife-79760-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Comparison between dry mass (left panels) and ESR (right panels) estimated from volume-to-carbon relationships (Menden-Deuer and Lessard, 2000) (gray histograms) and dry mass estimated using our method (orange histograms) for nine species of plankton. The plankton species include phytoplankton species (a: D. tertiolecta, b: R. salina, c: I. galbana), micro-zooplankton species (d: O. marina, e: A. minutum, f: S. acuminata, g: K. triquetrum), and diatoms (h: T. weissflogii, i: T. pseudonana).\n\nTo benchmark the dry mass measurements, we used the volume-to-carbon relationships from Menden-Deuer and Lessard, 2000 followed by an extrapolation of elemental composition using extended Redfield ratios (Anderson, 1995 see Methods, \u2018Dry mass estimation by volume-to-carbon relationships\u2019). The gray histogram in Figure 2b shows the results for the case of O. marina. The dry mass predicted by the volume-to-carbon relationships (394 \u00b1 123 pg, the uncertainty represents the standard deviations of the distribution) agrees well with the dry mass estimated by our technique (338 \u00b1 126 pg, orange histogram). Importantly, in contrast to the volume-to-carbon relation method, the dry mass estimated by our approach can be tagged to individual cells in the image. This additional feature can be used to study the dry mass evolution of single cells (e.g., in the following sections, we will exploit this possibility in two exemplary studies of feeding and cell division events).\n\nWe repeated this analysis for nine species of planktons belonging to different taxonomic groups and trophic levels in the marine ecosystem (see Methods, \u2018Plankton cultures\u2019): phytoplankton species (Isochrysis galbana, Rhodomonas salina, Dunaliella tertiolecta); micro-zooplankton species (Kryptoperidinium triquetrum, Alexandrium minutum, Scrippsiella acuminata, along with Oxyrrhis marina which is used in the above discussion); and diatomic species (Thalassiosira weissflogii, Thalassiosira pseudonana). These results are summarized in Figure 2c. The data points and error bars represent the means and standard deviations of the dry mass distributions estimated by our method and the volume-to-carbon method. The two estimates correlate very well (correlation coefficient $\u03c1=0.988$). A detailed dry mass distribution comparison (along with equivalent spherical radius distribution comparison) for different species can be seen in Figure 2\u2014figure supplement 1.\n\nAs a further independent test, we also estimated the dry mass from the elemental analysis of carbon and nitrogen content in O. marina (extrapolated to the other fundamental elements hydrogen, oxygen, and phosphorous through Redfield ratios, Anderson, 1995, see Methods, \u2018Dry mass estimation by elemental analysis\u2019). The resulting dry mass (453 pg, indicated with a red line in Figure 2) also confirms that our method arrives at realistic numbers. The average value indicated by the red line in Figure 2b lies within the distributions predicted by holographic estimate.\n\n### Feeding events\n\nWe use the phytoplankton species D. tertiolecta and the micro-zooplankton species O. marina as the prey and predator, respectively. Figure 3a\u2013c shows the 3D traces of prey (blue) and predator (orange) during a feeding event (see 3D movie of the feeding event in Video 1). In the pre-feeding phase Figure 3a, corresponding to about $10\u2062s$ or $100\u2062frames$ (see also Figure 3d), the predator explores the sample volume in a random fashion. It passes the prey cell closely on a couple of occasions before it makes contact (see Videos 1 and 2 and , Figure 3\u2014figure supplement 2, and Figure 3\u2014figure supplement 3). In the feeding phase (Figure 3b, lasting for about $20\u2062s$ or $200\u2062frames$), the predator makes contact with the prey and performs a localized swirling motion about a fixed location for $16\u2062s$ while handling the prey. In the post-feeding phase (Figure 3c, last $10\u2062s$ or $100\u2062frames$, see also Figure 3d), the predator returns back to its normal swimming behavior and carries on its search for new prey.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/79760/elife-79760-fig3-v1.jpg)\n\n**Figure 3.:** 3D recording of a feeding event where (a) a predator micro-zooplankton (Oxyrrhis marina, orange traces) approaches a prey phytoplankton (Dunaliella tertiolecta, blue traces), (b) feeds on it, and (c) finally moves away (see Video 1 and Figure 3\u2014figure supplement 2). The 2D projection of traces is superimposed on the holographic images in the bottom (see also Figure 3\u2014figure supplement 1). (d) Dry mass time series of predator (orange trace) and prey (blue trace) estimated by weighted-average convolutional neural network (WAC-Net) in the three different phases. (e) The pre-feeding dry mass distributions of the predator Oxyrrhis marina (O. m) and the prey Dunaliella tertiolecta (D. t), and the post-feeding dry mass distribution of predator are represented in the box plots. The dry mass increase between pre- and post-feeding phases of the predator is indicated in the plot. The post-feeding dry mass increment of the predator (O. m) matches the dry mass of the prey (D. t). (f) There is a high correlation ($\u03c1=0.794$) between dry mass increments of predators and dry mass of prey for 26 feeding events. The dashed line represents the best fit.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79760/elife-79760-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** 2D recording of a feeding event where (a) a predator micro-zooplankton (Oxyrrhis marina, orange traces) approaches a prey phytoplankton (Dunaliella tertiolecta, blue traces), (b) feeds on it, and (c) finally moves away (see Figure 3a\u2013c). The trajectories show the path of planktons in last 32 frames; the current position is highlighted with a rectangle (orange for predator and blue for prey).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/79760/elife-79760-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (a\u2013c) Snapshots of video (Video 1) showcasing the feeding event discussed in Figure 3: 3D motion of the prey (D. tertiolecta, blue) and predator (O. marina, orange) with holographic image reproduced on the bottom of the 3D volume on the left. Their 2D motion at a reconstructed holographic plane is shown on the right. The choice of the reconstructed plane (at $z=2400\u2062\\mu\u2062m$ from the sensor) ensures a clear view of most planktons. The feeding phase and experimental time are indicated at the top of the video.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/79760/elife-79760-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (a\u2013c) Snapshots of video (Video 2) showcasing an additional feeding event.\n\n![Video 1.](https://cdn.elifesciences.org/articles/79760/elife-79760-video1.mp4.jpg)\n\n![Video 2.](https://cdn.elifesciences.org/articles/79760/elife-79760-video2.mp4.jpg)\n\nFigure 3d shows the dry mass time series of prey and predator during the feeding event. As the feeding events happen on a short time scale compared to the frame rate of the camera, we use WAC-Net with a sliding window of only one frame, maximizing the available temporal resolution of the dry mass estimation. The dry mass distributions of the prey and predator in pre- and post-feeding phases are shown by the box plots (Figure 3e) to the right hand side. In the pre-feeding phase: the prey dry mass is measured to be 26 \u00b1 1 pg (blue box plot) and the predator 204 \u00b1 5 pg (orange box plot). The uncertainties represent the standard error of the mean. The post-feeding dry mass distribution of the predator is 234 \u00b1 5 pg. The difference in predator dry mass post- and pre-feeding closely matches the prey dry mass (Figure 3e). This indicates that the predator has fully consumed its prey, thus providing a direct measurement of the amount of the dry mass consumed during each individual feeding event.\n\nIn Figure 3f, we report the results of the dry mass increase in 26 feeding events. The increase in the predator dry mass in the post-feeding phase correlates well with the pre-feeding dry mass of the prey (correlation coefficient $\u03c1=0.794$). The slope of the best fit line (with slope, $\\alpha=0.97$) also indicates that on average 97% of prey is consumed by the predator in a feeding event. Thus, it is possible to quantify individual feeding rates and, if predator cells are followed over time, also gross growth efficiency, that is, how much of the consumed biomass is converted into predator biomass.\n\n### Life history of a plankton\n\nThe technique we have developed can follow the entire life histories of planktons, over time scales from hours to days. To demonstrate this, we use a diatom species, T. weissflogii, which is autotrophic and nonmotile. Over a preriod of 8 hr (Figure 4), we image a T. weissflogii and two generations of its daughter cells, continuously assessing the changes in their dry mass using the WAC-Net, which we already used to estimate the dry mass of T. weissflogii in Figure 2c (see Methods, \u2018Holographic imaging\u2019). We place a low-density ($1000\u2062cells\u2062ml^{-1}$) culture of diatoms in the sample well, which we illuminate with a white light source ($5\u2062W$, $60\u2062Hz$ warm light source bulb, aligned not to affect the holographic imaging sensor) to aid the cell growth.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/79760/elife-79760-fig4-v1.jpg)\n\n**Figure 4.:** Different life stages of a diatom (Thallasiosira weissflogii) and its daughter cells: (a) the parent cell (blue), (b) divides into two daughter cells (orange); (c) the daughter cells continue to grow, (d, e) until another cell division occurs (green). (f) Dry mass time series through generations estimated by weighted-average convolutional neural network (WAC-Net) (see also Video 3 and Figure 4\u2014figure supplement 1). Each cell dry mass is estimated when it has at least 3.6 \u03bcm ($40\u2062px$) of empty space around it to ensure optimal performance of the WAC-Net; the corresponding times are indicated by the gray dashed lines. A drop in the dry mass values can be noticed with the daughter cells in subsequent divisions. (g) Correlation plot showing the relation between the sum of the dry masses of the daughter cells and the dry mass of the parent cell for 11 different division events ($\u03c1=0.857$). The dashed line represents the best fit.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79760/elife-79760-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a-c) Snapshots of video (Video 3) showcasing the life history of plankton in Figure 4. The holographic image of a diatom (T. weissflogii) undergoing successive cell division events is shown by the holographic image on the left. The image on the right is the reconstructed image on the plane $z=2400\u2062\\mu\u2062m$ from the sensor. The generation and experimental time are indicated at the top of the video.\n\n![Video 3.](https://cdn.elifesciences.org/articles/79760/elife-79760-video3.mp4.jpg)\n\nFigure 4a\u2013e shows the growth and division of a diatom imaged over a small portion of the sample. The parent cell (highlighted in Figure 4a) initially divides into two daughter cells, approximately 0.14 hr into the experiment (Figure 4b). Note that the biomass does not divide equally between the daughter cells. Asymmetric division in terms of cell size had already been shown in both bacteria and diatoms; our experiments now show that the daughter cells receive unequal proportions of the biomass from the mother cell. Then, the two daughter cells move slightly apart (Figure 4c) and the cell with the largest biomass of the two divides again at 4.86 hr (Figure 4d, e).\n\nFigure 4f shows the dry mass of the parent and daughter cells as the experiment proceeds. We remark that, while the dry mass of these cells is continuously monitored, the WAC-Net estimates the most reliable values when the cells are isolated. Therefore, we consider the reference dry mass measurements as those when the cells have at least 3.6 \u03bcm ($40\u2062px$) of empty space around them before or after each division; these times are indicated by the gray dashed lines in Figure 4f. The initial parent cell dry mass (measured at 1.1 hr) is estimated at 433 \u00b1 2 pg. The dry mass of its two daughter cells (measured at 2.7 hr, as soon as the two daughter cells move sufficiently apart) is 326 \u00b1 1 pg and 110 \u00b1 1 pg, whose sum is close to the dry mass of the parent cell. As the experiment proceeds, one of the daughter cells divides again producing a second generation of daughter cells (Figure 4d), whose dry masses are 225 \u00b1 3 pg and 93 \u00b1 1 pg (at 5.48 hr, Figure 4e). Again, their sum is close to the mass of their parent cell. The uncertainty in the dry mass value represents the standard error of the mean computed for \u00b15 frames around the measurement point (gray dashed lines in Figure 4).\n\nWe have repeated this experiment with various cell densities with independently cultured samples, collecting multiple division events. Figure 4g shows the high correlation ($\u03c1=0.857$) between the parent cell dry mass and the sum of the daughter cells\u2019 dry masses for 11 cell divisions. It is interesting to note that the division events of T. weissflogii occur when the parent cell weighs between 310 pg and  436 pg, with a mean value of \u2248 378 pg. This kind of a tip-off value prediction in dry mass for a division event is achieved for the first time thanks to this method and is another example of the type of information that can be acquired by employing a nonintrusive technique that can continuously measure single cells throughout the cell cycle.\n\n## Discussion\n\nThe main advantage of combining holographic microscopy with deep-learning algorithms lies in the ability to monitor position and dry mass of individual plankton cells over extended time periods. The method is nondestructive and minimally invasive, and allows quantitative assessment of trophic interactions such as feeding and biomass increase throughout the cell cycle, providing unprecedented detail to the life histories of marine microorganisms.\n\nThe standard methods to determine the biomass of cells entail either performing elemental analysis on cells harvested from single species cultures or estimating the biomass from volume-to-carbon relationships drawn from multiple elemental analyses of similar plankton organisms of different sizes (Strathmann, 1967; Menden-Deuer and Lessard, 2000). Elemental analysis has the advantage of providing detailed measurements of individual elements, typically carbon, nitrogen, and hydrogen; however, it is destructive and cannot provide individual cell resolution. Volume-to-carbon relationships can provide biomass estimates of individual living cells as long as the volume of the cells can be measured accurately (Menden-Deuer and Lessard, 2000); yet, the variability around the relationship is substantial (e.g., the estimated value for O. marina used in Menden-Deuer and Lessard, 2000 is 30% higher than that measured by elemental analysis). Moreover, the volume-to-carbon relationships do not account for the nutritional status of the cell (e.g., as discussed in Results, \u2018Dry mass estimates\u2019, similarly sized cells of the same species can indeed differ by more than a factor of two in the estimated dry mass by the volume-to-carbon method).\n\nFigure 4f reveals asymmetric cleavage in T. weissflogii, where sister cells receive unequal proportions of the mother cell biomass. Asymmetric division is well established in centric diatoms that have a rigid silica shell called the frustule consisting of two halves. Both halves have the shape of a cylinder with one open end; the smaller one (known as hypotheca) fits inside the larger one. Upon division, both daughter cells grow a new hypotheca fitting inside the half that is inherited from the mother cell so that one of the daughter cells will be slightly smaller (while the other maintains the size of the mother cell). When the cells reach a critically small size, the size is reinstalled through sexual reproduction (Macdonald, 1869; Pfitzer, 1869). Experimentally, asymmetric cleavage beyond the reductive cell cycle has also been shown in the diatom Ditulum breightwelli (Laney et al., 2012) where daughter cells are of different volume. Similar to our study, the sister cells show unequal times to the subsequent division (Figure 4a\u2013e) which may lead to faster population growth (Laney et al., 2012). Physiological asymmetry is also found in bacteria (e.g., E. coli) where old damaged cell content is distributed differently leading to the development of age structure in prokaryote populations (Proenca et al., 2018). The differences in biomass of sister cells observed here are larger than expected from the volume alone which suggest that unequal division of biomass may be more common in protozoans than previously perceived.\n\nThree-dimensional tracking of microorganisms is not easily achieved by alternative methods. In many instances, two-dimensional traces are obtained and three-dimensional swimming behavior is inferred by assuming isotropic swimming (Selander et al., 2011). Moreover, traditional tracking techniques often lose track of cells when they intersect other cells or swim out of focus. Holographic microscopy which records the holograms of objects overcomes the limitations due to the shallow depth of field in conventional light microscopy, and the three-dimensional positioning together with the biomass estimates facilitates linking of cell positions into coherent trajectories. The RU-Net approach (Figure 1\u2014figure supplement 2c) that we describe can be a useful candidate to track interesecting cells from a recorded holographic image. Three-dimensional positioning of both prey and predator cells also allows detailed observations of cell\u2013cell interactions such as reaction distances and rejection events. Finally, holographic microscopy does not require manipulation such as dilution and is not sensitive to the same assumptions as the dilution technique. On the other hand, the volume that can be monitored by holographic microscopy is limited by the coherence length of the light source. Here, we use an LED light source with a relatively short coherence length (approximately 200\u03bcm with 1-nm line filter). The depth of the observational chamber can, however, be increased by use of laser light sources with longer coherence length. With simple modifications to the setup design, the lensless approach used here can be adopted for smaller organisms such as bacteria and heterotrophic nanoflagellates, or larger organisms such as rotifers and small crustaceans. It could also be merged with rotating stages that keep cells in suspension (Krishnamurthy et al., 2020), or microfluidic channels to facilitate experiments with large number of cells in flow. The method is particularly suitable to study micro-zooplankton grazing behaviors.\n\nA large and growing proportion of micro-phytoplanktons previously considered fully autotrophic have been reclassified as mixotrophic, that is, supporting their energy demand by a combination of photosynthesis and uptake of dissolved or particulate organic matter (Stoecker et al., 2017). This discovery is of more than academic interest as allowing mixotrophy in food web modeling results in up to a threefold increase in average organism size and enhanced transfer of biomass to higher trophic levels, thus increasing the sinking flux of carbon, \u2018the biological pump\u2019, by an estimated 35% (Ward and Follows, 2016). The discovery has led to something of a paradigm shift in marine microbial ecology and highlighted the need for new methods to accurately account for mixotrophy in biogeochemical models (Flynn et al., 2019). Mixotrophy is a plastic trait that changes with conditions. Among the more extreme cases, there is the dinoflagellate Karlodinium armiger, which is an autotroph at low cell concentrations, but switches to heterotrophy at high densities and even revert the food web by killing their copepod predators and extracting their content through peduncle feeding (Berge et al., 2012). The combination of holographic microscopy and deep-learning algorithms can be used to quantify uptake of both particulate (Figure 3) and dissolved matter. Uptake of dissolved organic matter will result in increased dry mass, and the slope of such increase will provide cell-specific uptake rates. Furthermore, it will allow us to explore the level of mixotrophy in different conditions and organisms by monitoring dry mass in factorial combinations of, for example, light and organic substrates. For instance, primary production can be assessed as dry mass increase in the presence of light but the absence of organic food sources (Figure 4). In the scenarios where both photosynthesis and uptake of organic food sources are possible, the level of heterotrophy can be estimated by subtracting photosynthesis from total production.\n\nIndividual-level observations have been key to further the development of ecological theory, not only in larger organisms, but also in smaller organisms such as millimeter-sized copepods, the most common multicellular organisms in the ocean. As an example, copepods have been shown to feed selectively and reject well-defended cells. Consequently, well-defended cells are favored and enriched by copepod grazing, which contributes to harmful algal bloom formation (Ryderheim et al., 2021). Moreover, individual-level observations have revealed the sensory capabilities of copepods involved in prey and threat detection as well as the fundamental strategies involved in foraging and reproduction (Ki\u00f8rboe et al., 1999; Ki\u00f8rboe et al., 2009). Likewise, Individual-level observations of protozoans have the potential to catalyze experiments and gain insights in microbial food\u2013web interactions in a similar way.\n\nWe conclude that the marriage between holographic microscopy and deep learning provides a strong complementary tool in microbial ecology. It allows the nondestructive and minimally invasive determination of the three-dimensional position and dry mass of individual microorganisms. It outperforms traditional methods in terms of speed and individual resolution and rivals the precision and accuracy of current methods. While holographic microscopy has already been employed in marine sciences, the combination with deep-learning algorithms makes it more versatile and many orders of magnitude faster, which is key to follow and characterize individuals throughout their lifespan.\n\n## Methods\n\n### Holographic imaging\n\nDuring the measurements, the planktons are placed under the holographic microscope (Figure 1a) in two different configurations depending on the application. For the short-time-scale experiments, such as the dry mass estimates in Figure 2 and the feeding-event experiments in Figure 3, a sample of volume \u224840 \u03bcl is directly placed on a glass slide without any sample well to enclose the planktons. For the long-time-scale experiments, such as the division-event experiments in Figure 4, the diatoms are kept in enclosed circular wells (diameter $3\u2062mm$, depth $1\u2062mm$, volume \u224810 \u03bcl). As shown in Figure 1\u2014figure supplement 1a, the planktons are imaged using a lensless holographic imaging technique (Daloglu et al., 2018), where the sample is illuminated by a narrow-band LED light source (Thorlabs M625L3, center wavelength $632\u2062nm$, bandwidth $18\u2062nm$ with a 1-nm bandwidth line filter, Thorlabs FL632.8-1, centered at $632.8\u2062nm$) and the sensor (Thorlabs DCC1645C, CMOS sensor area $4.608\u2062mm\\times3.686\u2062mm$, $1024\u2062px\\times1280\u2062px$) is placed immediately below the bottom of the well (the distance from the bottom of the well to the sensor is $\u22481.5\u2062mm$). In this way, the entire well is imaged within a single field of view (Figure 1\u2014figure supplement 1b), ensuring that all planktons are continuously visible for the whole duration of the experiment. The resulting images of the planktons are diffraction patterns formed by the interference of the unscattered light and the light scattered by the planktons. These diffraction patterns (holograms) act as a unique fingerprint of the size, refractive index, dry mass, as well as the lateral and axial position of the planktons, which has been used previously to characterize micron-scale objects (Altman and Grier, 2020). Physically, the dry mass can be defined as the difference between the mass of the object (here, the plankton) and the mass of an equal volume of medium (here, the watery solution). Thus, writing the mass concentration of biomolecules inside the object as cobject, and the medium as cmed, the dry mass of an object is given by $m_{dry}=V\u2062(c_{object}-c_{med})$, where $V$ is the volume of the object. On the other hand, the light scattering at small angles is also proportional to the product $V\u2062(c_{object}-c_{med})$, making it possible to extract the dry mass of the objects from their holograms (see Equation 5, Appendix 1, \u2018Relation between dry mass and scattering cross-section\u2019).\n\n### RU-Net architecture and training\n\nPrior to the analysis by RU-Net and WAC-Net (explained in the next section), the diffraction patterns are normalized with respect to the intensity of the unscattered light. To obtain the plankton positions, we use a modified U-Net (Ronneberger et al., 2015), which we name Regression U-Net (RU-Net) implemented using DeepTrack 2.0 (Midtvedt et al., 2021a). Its architecture is shown in Figure 1\u2014figure supplement 2c. The downsampling part of the RU-Net consists of a series of convolutional blocks, where each convolutional block contains a series of convolutional layers followed by a max-pooling layer and an ReLU activation. For an input image of size $128\u2062px\\times128\u2062px$ (about one-tenths the size of the acquired experimental image, Figure 1\u2014figure supplement 2a), we use a sequence of six convolutional blocks containing 8, 16, 32, 64, 32, and 32 convolutional layers, respectively. In the upsampling part, the RU-Net is divided into two different paths that function as two independent regular U-Nets. Each upsampling path contains a series of four upsampling blocks with each containing a deconvolutional layer followed by a series of 128, 64, 32, and 16 convolutional layers. Features obtained from each convolutional block in the downsampling path are appended to the features of the upsampling path at each upsampling block. One of the upsampling paths is used for the segmentation of planktons for which a sigmoid activation is applied on the output of the final upsampling block. The other upsampling path is used to obtain the heat maps of dry mass, axial $z$-distance, and lateral $x$- and $y$-positions (to refine the lateral localization accuracy) for which a ReLU activation is applied. Finally, the outputs of both paths are concatenated to obtain a five-channel output tensor of size $128\\times128\\times5$ (Figure 1\u2014figure supplement 2b).\n\nTo train the RU-Net, we simulate holographic images of size $128\u2062px\\times128\u2062px$ using DeepTrack 2.0 (Midtvedt et al., 2021a). Each image contains planktons of different sizes and refractive indices (Figure 1\u2014figure supplement 2a). Planktons are simulated in a wide dry mass range from 1 pg to 995 pg, with their corresponding equivalent spherical diameters ranging from 1.5 \u03bcm to 10 \u03bcm. The RU-Net is trained using the AMSgrad optimizer (Reddi et al., 2019), with a learning rate of 0.0001. The model is trained on 4000 simulated holographic images in mini-batches of 16 images for 300 epochs, with a custom loss function. The images are generated with the continuous generator of DeepTrack 2.0 (Midtvedt et al., 2021a) starting with 2000 images generated before the training and the remaining images generated as the training proceeds. The training process (including the data generation) takes about 1.5 hr on a Kaggle server (Tesla P100 graphics processor unit and Intel(R) Xeon(R) CPU @ 2.00 GHz).\n\n### WAC-Net architecture and training\n\nTo obtain a refined dry mass value, we use a WAC-Net (Midtvedt et al., 2021b) implemented using DeepTrack 2.0 (Midtvedt et al., 2021a). Its architecture is shown in Figure 1\u2014figure supplement 3b. The downsampling part of WAC-Net contains a time-distributed block that consists of a series of convolutional blocks. Each convolutional block contains a convolutional layer followed by a ReLU activation and a max-pooling layer. For an input image sequence consisting of frames of size $64\u2062px\\times64\u2062px$, we use a series of four convolutional blocks containing 32, 64, 128, and 256 convolutional filters, respectively. The features are then flattened and analyzed by a series of 2 dense layers with 128 nodes each to obtain the latent representations for the images in the sequence. We use two convolutional layers with 128 and 1 filters, respectively, on each of the output latent vectors to obtain single-value representations of the weights. These weights are further normalized with a softmax layer. We average the latent vectors with the normalized weights to obtain a weighted representation of the latent vectors. Finally, we use a series of dense layers with 32, 32, and 2 nodes on the output representations to generate the output values of dry mass and radius. The dry mass predicted by the WAC-Net is converted to natural mass units by using a specific refractive index increment value, $\\frac{d\u2062n}{d\u2062c}=0.21\u2062ml\u2062g^{-1}$ accounting for the average planktonic solute composition (Aas, 1996) (See Appendix 1, \u2018Relation between dry mass and scattering cross-section\u2019).\n\nTo train the WAC-Net, we simulate 15-frame sequences of $64\u2062px\\times64\u2062px$ images that contain a main plankton (whose dry mass and radius the WAC-Net will estimate, Figure 1\u2014figure supplement 3a) near the center of the image, which randomly moves by \u00b13.6 \u03bcm (\u00b1 1 px) in the $x\u2062y$-plane and \u00b1100 \u03bcm in the $z$-direction (since the frame is laterally centered on the plankton, the $x\u2062y$-plane movement is smaller than the $z$-movement). In order to make the network robust to the existence of multiple planktons within a frame, other planktons are occasionally added to the frames. These additional planktons are given a directed in-plane motion randomly chosen between 3.6 \u03bcm ($1\u2062px$) and 25.2 \u03bcm ($7\u2062px$) per frame. In the $z$-direction, the motion is also randomized at  \u00b1100 \u03bcm per frame. The WAC-Net is trained using the AMSgrad optimizer (Reddi et al., 2019), with a learning rate of 0.0001. The model is trained on 4000 images in mini-batches of 32 images for 200 epochs, with a mean absolute error (MAE) loss function. The images are generated with the continuous generator of DeepTrack 2.0 (Midtvedt et al., 2021a), starting with 2000 images generated before the training and with remaining images being generated as the training proceeds. The training process (including the data generation) takes about 45 min on a Kaggle server (Tesla P100 graphics processor unit and Intel(R) Xeon(R) CPU @ 2.00 GHz).\n\n### Plankton cultures\n\nWe used a representative subset of plankton organisms covering larger primary producers such as diatoms (T. weissflogii, T. pseudonana) and dinoflagellates (A. minutum, K. triquetrum, S. acuminata) as well as smaller flagellates (I. galbana, D. tertiolecta). We also included the heterotrophic dinoflagellate O. marina to explore predator\u2013prey interactions and feeding events (see Table 1, \u2018Planktons used in the experiments\u2019). Plankton cultures were reared in L medium at 26 PSU salinity in a light and temperature controlled incubator (16 \u00baC, 12 hr:12 hr light:dark cycles, $100\u2062fmol\u2062m^{2}\u2062s^{-1}$). The O. marina cultures were fed with I. galbana or D. tertiolecta weekly, but starved until prey cells became rare before experiments to avoid unintentional addition of prey cells to experiments.\n\n**Table 1.**\n Planktons used in the experiments.Strain identifier denotes strain code in Gothenburg University Marine Algae Culture Collection (GUMACC) and synonym strain identifier in parenthesis. The Oxyrrhis marina culture was kindly provided by Denmark Technical University (DTU-Aqua) and does not have a strain ID. Equivalent Spherical Diameter (ESD) denotes the spherical diameter based on Coulter counts (Beckman multisizer III) of pure cultures.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Scientific name</th>\n      <th>Strain identifier</th>\n      <th>Class</th>\n      <th>ESD (mean \u00b1 SD)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Alexandrium minutum</td>\n      <td>GUMACC83 (CCMP113)</td>\n      <td>Dinophyceae</td>\n      <td>18.3 \u00b1 2.5 \u03bcm</td>\n    </tr>\n    <tr>\n      <td>Dunaliella tertiolecta</td>\n      <td>GUMACC5</td>\n      <td>Cholorphceae</td>\n      <td>6.7 \u00b1 0.9 \u03bcm</td>\n    </tr>\n    <tr>\n      <td>Isochrysis galbana</td>\n      <td>GUMACC108 (CCMP1323)</td>\n      <td>Prymnesiophyceae</td>\n      <td>4.0 \u00b1 0.7 \u03bcm</td>\n    </tr>\n    <tr>\n      <td>Kryptoperidinium triquetrum</td>\n      <td>GUMACC71 (LAC20, KA86)</td>\n      <td>Dinophyceae</td>\n      <td>14.9 \u00b1 1.2 \u03bcm</td>\n    </tr>\n    <tr>\n      <td>Oxyrrhis marina</td>\n      <td>DTU-Aqua</td>\n      <td>Dinophyceae</td>\n      <td>14.5 \u00b1 1.5 \u03bcm</td>\n    </tr>\n    <tr>\n      <td>Rhodomonas salina</td>\n      <td>GUMACC126 (CCAP978/27)</td>\n      <td>Cryptophyceae</td>\n      <td>7.4 \u00b1 1.0 \u03bcm</td>\n    </tr>\n    <tr>\n      <td>Scripsiella acuminata</td>\n      <td>GUMACC110 (CCMP1331)</td>\n      <td>Dinophyceae</td>\n      <td>17.7 \u00b1 4.9 \u03bcm</td>\n    </tr>\n    <tr>\n      <td>Thallassiosira pseudonana</td>\n      <td>GUMACC132 (CCAP1085/12)</td>\n      <td>Cosconodiscophyceae</td>\n      <td>4.8 \u00b1 0.9 \u03bcm</td>\n    </tr>\n    <tr>\n      <td>Thallassiosira (Conticribra) weissflogii</td>\n      <td>GUMACC162 (CCAP1085/18)</td>\n      <td>Cosconodiscophyceae</td>\n      <td>12.9 \u00b1 1.4 \u03bcm</td>\n    </tr>\n  </tbody>\n</table>\n\n### Dry mass estimation by volume-to-carbon relationships\n\nWe compare the dry mass estimates from the holographic microscopy against the standard method based on volume-to-carbon relationships by measuring the volume of the cells on a Coulter counter (Beckaman, Multisizer III). The Coulter counter is equipped with a 100 \u03bcm orifice tube. Its accuracy is confirmed with latex beads. Volume estimates are subsequently used to estimate the carbon content of the cells using the equations given in Menden-Deuer and Lessard, 2000.\n\n### Dry mass estimation by elemental analysis\n\nA precise algal culture volume of known cell concentration is filtered onto pre-combusted (450\u00b0C) 25 mm glass fiber filters (Whatman GF/F). The filters are dried overnight at 60\u00b0C. Carbonates are removed by incubation in an exicator together with fuming hydrochloric acid. The filters are enclosed in tin capsules and analysed on an elemental analyzer (ANCASL, SerCon, UK) coupled to an isotope ratio mass spectrometer (20\u201320, SerCon, UK).\n\n### Data and code availability\n\nAll the relevant source code and the data are made publicly available at the Quantitative-Microplankton-Tracker repository (Bachimanchi et al., 2022).\n",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "af2b870d-7a38-45f6-8280-e52d14000fd2",
+      "submission_id": "71a76241-9861-423b-a61f-41a486180c15",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Maureen L Coleman, https://ror.org/024mw5h28 University of Chicago United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79760.sa0](https://doi.org/10.7554/eLife.79760.sa0)\n\nThis paper presents a valuable new method combining holographic microscopy and deep learning to track the behavior and growth of individual plankton. The paper illustrates the method with compelling data from two applications, zooplankton feeding behavior and diatom cell division. This paper will be of interest to plankton ecologists and ocean ecosystem modelers. The results obtained from this method will provide new insights into the trophic strategies of ocean plankton and important constraints for global ocean models.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Maureen L Coleman, https://ror.org/024mw5h28 University of Chicago United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79760.sa1](https://doi.org/10.7554/eLife.79760.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Microplankton life histories revealed by holographic microscopy and deep learning\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Meredith Schuman as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Fernando Peruani (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nBoth reviewers think the work is interesting and high-quality. The main issue raised by both is the ecological relevance of the work. A revised manuscript must address the following:\n\n1) How restricted is the method to idealized conditions (e.g. cultured isolates, cell concentrations, etc)? What are the constraints in applying this method to more ecologically relevant conditions?\n\n2) How can the results obtained by this method inform larger macroscale questions in plankton ecology?\n\nReviewer #1 (Recommendations for the authors):\n\nIn this manuscript, the authors sought to develop and apply a new method for tracking individual plankton over time. The method combines holographic microscopy and deep learning to produce time series of plankton positions in 3D space and dry mass. The authors demonstrate the power of their method in two case studies: feeding events in a two-species culture and cell division events in a diatom culture. The results from the first case study show feeding behavior and the increase in cell mass upon prey consumption, while the cell division study shows asymmetric division and a second round of division by the larger daughter cell. The authors suggest this method could be useful for studying growth efficiency, cell physiology, selective grazing, and mixotrophy.\n\nThe data presented are compelling and interesting, and clearly demonstrate the utility and power of the method. As a marine microbiologist, I cannot comment on the deep learning methods, though I found the description of the methods to be fairly clear.\n\nThis method seems to be extremely powerful and elegant, and the time series data are beautiful. It is amazing to see such detailed data for single-cell behaviours and interactions. I believe this method will be very useful for studying the biology of marine protists and micro/nanozooplankton, which are vastly underexplored. It will also be useful for studying microbial food webs and trophic transfer. Whether this method can be extended from cultures to field samples remains to be seen, but if possible would allow the study of uncultivated organisms in diverse habitats.\n\nReviewer #2 (Recommendations for the authors):\n\nThe authors develop a method, that combines holographic microscopy with deep learning, to monitor the dynamics of plankton cells for extended time periods (e.g. 8h). This is an important step to getting a better quantitative understanding of plankton systems. On the other hand, the method seems to allow only monitoring the plankton activity in reduced volumes and making use of a relatively slow sampling rate. The tracking of individual cells, possible via deep learning, seems that it cannot provide details on the predator-prey dynamics occurring at shorter time scales. Also, it seems that the method applies exclusively to very diluted systems. These limitations suggest that though the method can provide unique information on plankton systems, the ecological significance of such results is restricted to probably too idealized scenarios.\n\nIn the abstract and introduction, the authors motivate their study from a too macroscopic perspective of the problem. However, the limitation of the method seems to restrict the application of the method to idealized scenarios, whose ecological relevance is questionable. However, I believe that studying such idealized, small systems is an initial key step. I think the authors could try to discuss in more detail how such studies can help to understand the ecology of plankton systems.\n",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "17191305-3116-45a3-9509-f51c5c1192ef",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C1",
+      "claim": "The marine microbial food web plays a central role in the global carbon cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "The marine microbial food web plays a central role in the global carbon cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about the role of marine microbial food webs in global biogeochemical cycles.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "09c4ad79-54d2-444a-9b2d-0e01f162cbb8",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C2",
+      "claim": "Single-celled micro-zooplankton consume approximately two thirds (40 Petagrams (Pg) carbon) of the primary production.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-celled micro-zooplankton take on the role of herbivores in the ocean, consuming approximately two thirds (40 Petagrams (Pg) carbon) of the primary production (Calbet and Landry, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Calbet and Landry, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "b41e4b90-a214-4c73-ae8a-9eca3542b2ba",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C3",
+      "claim": "Unicellular phytoplankton produce around 50 Pg of carbon annually.",
+      "claim_type": "EXPLICIT",
+      "source": "In oceanic ecology, the primary production is dominated by unicellular phytoplankton, which produce around 50 Pg of carbon annually, quantitatively slightly exceeding the production of terrestrial plants (Behrenfeld and Falkowski, 1997; Field et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Behrenfeld and Falkowski, 1997 and Field et al., 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "af480272-2456-48d0-aa0b-aba9b6aa5b49",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C4",
+      "claim": "Unicellular phytoplankton production quantitatively slightly exceeds the production of terrestrial plants.",
+      "claim_type": "EXPLICIT",
+      "source": "In oceanic ecology, the primary production is dominated by unicellular phytoplankton, which produce around 50 Pg of carbon annually, quantitatively slightly exceeding the production of terrestrial plants (Behrenfeld and Falkowski, 1997; Field et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Behrenfeld and Falkowski, 1997 and Field et al., 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "23c3e4fc-1ea5-4539-bc96-aa7e47dec243",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C5",
+      "claim": "Selective grazing shapes the plankton community and drives large-scale processes such as harmful algal bloom formation and carbon export.",
+      "claim_type": "EXPLICIT",
+      "source": "Selective grazing shapes the plankton community and drives large-scale processes such as harmful algal bloom formation and carbon export (Irigoien et al., 2005; Selander et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Irigoien et al., 2005 and Selander et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "8c01f621-a4f8-4f37-89c1-ff1a87719c3d",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C6",
+      "claim": "Rates and fluxes in the oceanic microbial food web are mainly inferred from indirect measurements or ensemble averages.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, rates and fluxes in the oceanic microbial food web are still mainly inferred from indirect measurements or ensemble averages, leaving us with a limited mechanistic understanding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about current methodological limitations in the field, representing established knowledge about measurement practices.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "6a40a243-c971-4370-9fd0-330f3f95d7d1",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C7",
+      "claim": "Quantitative estimates of primary production are mostly inferred from satellite images of ocean color (chlorophyll) using moderate resolution spectroradiometers calibrated against in situ isotope incorporation experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative estimates of primary production are mostly inferred from satellite images of ocean color (chlorophyll) using moderate resolution spectroradiometers calibrated against in situ isotope incorporation experiments (Hu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Hu et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "3ab742cb-05bd-46b2-90c2-a16bf8f992ee",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C8",
+      "claim": "Ensemble-level biomass transitions during grazing events by microscopic zooplankton are calculated from dilution experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Ensemble-level biomass transitions during grazing events by microscopic zooplankton are calculated from dilution experiments (Landry and Hassett, 1982), where the grazer density is manipulated by dilution, and the corresponding net increase in primary production is approximated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Landry and Hassett, 1982.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "22d3f16d-42e4-44d3-8154-efc71b1e2539",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C9",
+      "claim": "Feeding rates and growth rates of both predators and prey need to be unaffected by dilution for dilution experiments to be valid, which is often not true.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, feeding rates and growth rates of both predators and prey need to be unaffected by dilution, which is often not true (Dolan et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Dolan et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "e8622c91-d4ab-4004-a1a2-c32ce34125aa",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C10",
+      "claim": "The dilution technique is based on chlorophyll measurements and does not account for consumption of non-chlorophyll-bearing particles, which leads to underestimation of carbon transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the dilution technique is based on chlorophyll measurements and does not account for consumption of non-chlorophyll-bearing particles, which leads to underestimation of carbon transfer (Stoecker et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Stoecker et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "6356202b-e086-4c1f-ba6a-9b228b7fdef3",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C11",
+      "claim": "The average deviation of individual data points to the regressed expression in volume-to-carbon relationships exceeds 50%.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these regression relations are not very precise: the average deviation of individual data points to the regressed expression exceeds 50% (Menden-Deuer and Lessard, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Menden-Deuer and Lessard, 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "71ac6533-2a97-4bad-ab98-450475f075b4",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C12",
+      "claim": "Single cells of the same volume can differ by a factor two in dry mass.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, single cells of the same volume can differ by a factor two in dry mass, which is not possible to detect by volume-to-carbon relationships.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about cellular variability that cannot be captured by volume-to-carbon relationships.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "92563db6-073f-46ee-852d-36164bc6ead7",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C13",
+      "claim": "Holographic microscopy can record holograms of cells under investigation in the form of interference patterns containing phase and amplitude information.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, holographic microscopy can record holograms of cells under investigation in the form of interference patterns containing phase and amplitude information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the technical capabilities of holographic microscopy, representing established knowledge about the technique.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "c46e72a6-ff87-4a40-8443-87b4a4c73d26",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C14",
+      "claim": "The information in the holograms can be used to extract the three-dimensional position of microplanktons as well as their mass.",
+      "claim_type": "EXPLICIT",
+      "source": "The information in the holograms can be used to extract the three-dimensional position of microplanktons as well as their mass (Zangle and Teitell, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Zangle and Teitell, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "72ee68b8-7e47-4ef0-bdf7-485fc63fb7cb",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C15",
+      "claim": "Holographic imaging has already found applications in microbial studies, especially for in situ measurements of particle size distributions and their identity.",
+      "claim_type": "EXPLICIT",
+      "source": "Holographic imaging has already found applications in microbial studies, especially for in situ measurements of particle size distributions and their identity (Nayak et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Nayak et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "9d1f9cb2-cb67-47e9-8936-d8a9c042afe8",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C16",
+      "claim": "The full potential of holographic microscopy has not yet been exploited for the quantitative investigation of the growth and feeding patterns of individual planktons over prolonged times.",
+      "claim_type": "EXPLICIT",
+      "source": "However, its full potential has not yet been exploited, namely for the quantitative investigation of the growth and feeding patterns of individual planktons over prolonged times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of the current state of the field, representing the authors' inference about gaps in the literature.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "6155140d-1371-463f-bff1-4db2437a4c6a",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C17",
+      "claim": "The data acquisition and processing pipelines for holographic microscopy are very computationally expensive.",
+      "claim_type": "EXPLICIT",
+      "source": "Arguably, this is because the data acquisition and processing pipelines are very computationally expensive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a reason for the limited exploitation of holographic microscopy, representing knowledge about computational limitations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "7b73b0b9-1d1e-4e24-b7d9-a78e53c89450",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C18",
+      "claim": "Deep-learning algorithms circumvent the long computational times and allow rapid determination of three-dimensional position and dry mass of individual microplanktons over extended time periods.",
+      "claim_type": "EXPLICIT",
+      "source": "The deep-learning algorithms circumvent the long computational times and, once trained, allow rapid determination of three-dimensional position and dry mass of individual microplanktons over extended time periods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the capabilities of the method developed in this study, supported by the experimental results presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "08b97262-e2b0-4184-8a71-ab061d003526",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C19",
+      "claim": "The method was evaluated on nine plankton species belonging to different trophic levels and representing the major classes of microplankton.",
+      "claim_type": "EXPLICIT",
+      "source": "We evaluate this method on nine plankton species belonging to different trophic levels and representing the major classes of microplankton.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "1fcf328f-6c98-4cf8-8c41-fa0738435f0f",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C20",
+      "claim": "The approach makes it possible to follow and weigh single cells throughout their lifetime.",
+      "claim_type": "EXPLICIT",
+      "source": "We highlight that unlike other methods, our approach makes it possible to follow and weigh single cells throughout their lifetime, being especially useful to detail micro-zooplankton and mixotrophic life histories as feeding events can be quantitatively measured.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the capabilities of the method, supported by the experimental demonstrations in the paper.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "161e37a1-e889-4040-a83a-0b7e274b34a5",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C21",
+      "claim": "The method is especially useful to detail micro-zooplankton and mixotrophic life histories as feeding events can be quantitatively measured.",
+      "claim_type": "EXPLICIT",
+      "source": "We highlight that unlike other methods, our approach makes it possible to follow and weigh single cells throughout their lifetime, being especially useful to detail micro-zooplankton and mixotrophic life histories as feeding events can be quantitatively measured.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the utility of the method, supported by the feeding event experiments presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "651b7f17-eaa6-4a1b-9c0a-036af38a890d",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C22",
+      "claim": "The estimated dry mass can be tagged to single planktons detected in the experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the estimated dry mass can be tagged to single planktons detected in the experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a capability of the method demonstrated in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "1862f348-7b73-4f31-88e9-509489dee187",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C23",
+      "claim": "Both prey and predator cells can be tracked and identified, and the transfer of mass from cell to cell can be closely followed.",
+      "claim_type": "EXPLICIT",
+      "source": "We can track and identify both prey and predator cells and closely follow the transfer of mass from cell to cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes capabilities demonstrated in the feeding event experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "f4a19436-0073-4086-bbc7-01d150e2606f",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C24",
+      "claim": "Growth and cell divisions in diatoms can be observed by long-term monitoring over more than one cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we observe the growth and cell divisions in diatoms by their long-term monitoring over more than one cell cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes observations made in the division event experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "8e23a775-7c2b-4d6a-875c-da1d1d542d33",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C25",
+      "claim": "A monochromatic LED light source illuminates the sample suspension containing the planktons under investigation.",
+      "claim_type": "EXPLICIT",
+      "source": "A monochromatic LED light source illuminates the sample suspension that contains the planktons under investigation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental setup shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "802430cf-8c22-4567-ae96-8ed9d644ebc8",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C26",
+      "claim": "The light passing through the sample acquires a complex amplitude that depends on the optical properties of the materials it traverses, generating inline holograms.",
+      "claim_type": "EXPLICIT",
+      "source": "As the light passes through the sample, it acquires a complex amplitude that depends on the optical properties of the materials it traverses, generating inline holograms (Figure 1\u2014figure supplement 1), which encode the three-dimensional position of the planktons as well as their size and refractive index.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the physical principle of hologram formation, representing established knowledge about holography.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "7a157203-9bd5-48f0-b292-0c07605cfee0",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C27",
+      "claim": "Inline holograms encode the three-dimensional position of the planktons as well as their size and refractive index.",
+      "claim_type": "EXPLICIT",
+      "source": "As the light passes through the sample, it acquires a complex amplitude that depends on the optical properties of the materials it traverses, generating inline holograms (Figure 1\u2014figure supplement 1), which encode the three-dimensional position of the planktons as well as their size and refractive index.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the information content of holograms, representing established knowledge about holography.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "b9f689ba-95fc-4d55-b57a-7ca4b7afb9fd",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C29",
+      "claim": "The RU-Net is trained on simulated input\u2013output image pairs (4000 samples) using DeepTrack 2.0.",
+      "claim_type": "EXPLICIT",
+      "source": "This RU-Net is implemented and trained on simulated input\u2013output image pairs (4000 samples) using the Python software package DeepTrack 2.0 (Midtvedt et al., 2021a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the training procedure for the neural network, with citation to the software used.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "35d847d1-33d9-464b-ab9c-f32b4cf3c1e7",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C31",
+      "claim": "The dry mass predicted by the volume-to-carbon relationships (394 \u00b1 123 pg) agrees well with the dry mass estimated by the holographic technique (338 \u00b1 126 pg) for O. marina.",
+      "claim_type": "EXPLICIT",
+      "source": "The dry mass predicted by the volume-to-carbon relationships (394 \u00b1 123 pg, the uncertainty represents the standard deviations of the distribution) agrees well with the dry mass estimated by our technique (338 \u00b1 126 pg, orange histogram).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of measurements from two different methods, supported by data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "015e8bf3-bfc9-425e-958c-ed1196098f37",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C32",
+      "claim": "The dry mass estimated by the holographic approach can be tagged to individual cells in the image, unlike the volume-to-carbon relation method.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, in contrast to the volume-to-carbon relation method, the dry mass estimated by our approach can be tagged to individual cells in the image.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of capabilities between methods, representing an advantage of the new method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "8b95f604-4b90-4eb2-b8eb-c375f10433a0",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C34",
+      "claim": "The dry mass from elemental analysis of O. marina (453 pg) confirms that the holographic method arrives at realistic numbers.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting dry mass (453 pg, indicated with a red line in Figure 2) also confirms that our method arrives at realistic numbers.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a validation of the method using an independent measurement technique, shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "29423818-b061-4608-909d-34da95143412",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C38",
+      "claim": "In the pre-feeding phase, the prey dry mass is measured to be 26 \u00b1 1 pg and the predator 204 \u00b1 5 pg.",
+      "claim_type": "EXPLICIT",
+      "source": "In the pre-feeding phase: the prey dry mass is measured to be 26 \u00b1 1 pg (blue box plot) and the predator 204 \u00b1 5 pg (orange box plot).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "These are measurements from the feeding event experiment, shown in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "1935dfe8-030a-48ba-80c6-46d1ec37ab32",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C39",
+      "claim": "The post-feeding dry mass distribution of the predator is 234 \u00b1 5 pg.",
+      "claim_type": "EXPLICIT",
+      "source": "The post-feeding dry mass distribution of the predator is 234 \u00b1 5 pg.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement from the feeding event experiment, shown in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "4ddbe379-175c-468f-b589-97aa0a713c65",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C40",
+      "claim": "The difference in predator dry mass post- and pre-feeding closely matches the prey dry mass.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference in predator dry mass post- and pre-feeding closely matches the prey dry mass (Figure 3e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the feeding event data, shown in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "d85065d1-d743-4052-9346-dc65b38eb393",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C41",
+      "claim": "The predator has fully consumed its prey during the feeding event.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the predator has fully consumed its prey, thus providing a direct measurement of the amount of the dry mass consumed during each individual feeding event.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation that the predator's mass increase matches the prey's mass.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "91ea25e5-5a54-4702-b70e-165f0172ed6c",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C44",
+      "claim": "It is possible to quantify individual feeding rates using this method.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is possible to quantify individual feeding rates and, if predator cells are followed over time, also gross growth efficiency, that is, how much of the consumed biomass is converted into predator biomass.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the capabilities of the method, supported by the feeding event experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "724f6a9a-eaa9-4b2b-9bc0-9dbe40591791",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C45",
+      "claim": "If predator cells are followed over time, gross growth efficiency can be quantified.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is possible to quantify individual feeding rates and, if predator cells are followed over time, also gross growth efficiency, that is, how much of the consumed biomass is converted into predator biomass.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about potential applications of the method, based on inference from the demonstrated capabilities.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "3a5a7f12-8255-4d75-ae7e-93da4fdce842",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C46",
+      "claim": "T. weissflogii is autotrophic and nonmotile.",
+      "claim_type": "EXPLICIT",
+      "source": "To demonstrate this, we use a diatom species, T. weissflogii, which is autotrophic and nonmotile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the biological characteristics of the species used in the experiment.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "2630b955-6045-4ace-bb66-36c6a2c3e03a",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C47",
+      "claim": "Over a period of 8 hr, a T. weissflogii and two generations of its daughter cells were imaged, continuously assessing the changes in their dry mass.",
+      "claim_type": "EXPLICIT",
+      "source": "Over a preriod of 8 hr (Figure 4), we image a T. weissflogii and two generations of its daughter cells, continuously assessing the changes in their dry mass using the WAC-Net, which we already used to estimate the dry mass of T. weissflogii in Figure 2c (see Methods, 'Holographic imaging').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental procedure for the division event study, shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "3b8a2f73-427a-4906-b1fc-f94f0bccdee7",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C48",
+      "claim": "The parent cell initially divides into two daughter cells, approximately 0.14 hr into the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "The parent cell (highlighted in Figure 4a) initially divides into two daughter cells, approximately 0.14 hr into the experiment (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes an observation from the division event experiment, shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "c82210ac-8a7b-40ea-8f42-538111237c54",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C49",
+      "claim": "The biomass does not divide equally between the daughter cells in T. weissflogii.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the biomass does not divide equally between the daughter cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the division event data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "4fbad2c1-3279-42d7-bd71-913e40ed9ad7",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C50",
+      "claim": "Asymmetric division in terms of cell size had already been shown in both bacteria and diatoms.",
+      "claim_type": "EXPLICIT",
+      "source": "Asymmetric division in terms of cell size had already been shown in both bacteria and diatoms; our experiments now show that the daughter cells receive unequal proportions of the biomass from the mother cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about prior knowledge in the field, contrasted with the new finding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "553d280a-23e8-4306-92f0-49fd1362ee18",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C51",
+      "claim": "The daughter cells receive unequal proportions of the biomass from the mother cell in T. weissflogii.",
+      "claim_type": "EXPLICIT",
+      "source": "Asymmetric division in terms of cell size had already been shown in both bacteria and diatoms; our experiments now show that the daughter cells receive unequal proportions of the biomass from the mother cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a new finding from the division event experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "c0d223ae-a284-46d2-b684-70fcace5102c",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C52",
+      "claim": "The initial parent cell dry mass (measured at 1.1 hr) is estimated at 433 \u00b1 2 pg.",
+      "claim_type": "EXPLICIT",
+      "source": "The initial parent cell dry mass (measured at 1.1 hr) is estimated at 433 \u00b1 2 pg.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement from the division event experiment, shown in Figure 4f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "22b00cef-bd71-4d07-8807-731393bce658",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C53",
+      "claim": "The dry mass of the two daughter cells (measured at 2.7 hr) is 326 \u00b1 1 pg and 110 \u00b1 1 pg, whose sum is close to the dry mass of the parent cell.",
+      "claim_type": "EXPLICIT",
+      "source": "The dry mass of its two daughter cells (measured at 2.7 hr, as soon as the two daughter cells move sufficiently apart) is 326 \u00b1 1 pg and 110 \u00b1 1 pg, whose sum is close to the dry mass of the parent cell.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement from the division event experiment, shown in Figure 4f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "32ef673b-b508-4ab5-b044-f12b570f9b31",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C55",
+      "claim": "The division events of T. weissflogii occur when the parent cell weighs between 310 pg and 436 pg, with a mean value of \u2248 378 pg.",
+      "claim_type": "EXPLICIT",
+      "source": "It is interesting to note that the division events of T. weissflogii occur when the parent cell weighs between 310 pg and  436 pg, with a mean value of \u2248 378 pg.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation derived from the division event data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "9e2968d0-0441-430d-a601-551b7c6f24ba",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C56",
+      "claim": "This kind of a tip-off value prediction in dry mass for a division event is achieved for the first time thanks to this method.",
+      "claim_type": "EXPLICIT",
+      "source": "This kind of a tip-off value prediction in dry mass for a division event is achieved for the first time thanks to this method and is another example of the type of information that can be acquired by employing a nonintrusive technique that can continuously measure single cells throughout the cell cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the finding, representing the authors' assessment of the literature.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "f5770650-4923-4560-836c-74ec528cb343",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C57",
+      "claim": "The main advantage of combining holographic microscopy with deep-learning algorithms lies in the ability to monitor position and dry mass of individual plankton cells over extended time periods.",
+      "claim_type": "EXPLICIT",
+      "source": "The main advantage of combining holographic microscopy with deep-learning algorithms lies in the ability to monitor position and dry mass of individual plankton cells over extended time periods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about the method's advantages, supported by the experimental demonstrations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "24c1b0bc-dcf6-40ef-888d-ae3429b5103b",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C58",
+      "claim": "The method is nondestructive and minimally invasive.",
+      "claim_type": "EXPLICIT",
+      "source": "The method is nondestructive and minimally invasive, and allows quantitative assessment of trophic interactions such as feeding and biomass increase throughout the cell cycle, providing unprecedented detail to the life histories of marine microorganisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the method based on its physical principles.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "f0786e58-64f5-450a-886e-288bb46ee568",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C59",
+      "claim": "The method allows quantitative assessment of trophic interactions such as feeding and biomass increase throughout the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "The method is nondestructive and minimally invasive, and allows quantitative assessment of trophic interactions such as feeding and biomass increase throughout the cell cycle, providing unprecedented detail to the life histories of marine microorganisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the method's capabilities, supported by the feeding and division event experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "4d3c086b-6f11-46bb-a637-ad5db2a5f3c6",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C60",
+      "claim": "Elemental analysis is destructive and cannot provide individual cell resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Elemental analysis has the advantage of providing detailed measurements of individual elements, typically carbon, nitrogen, and hydrogen; however, it is destructive and cannot provide individual cell resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of elemental analysis, representing established knowledge about the technique.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "4e472f52-1957-4564-aece-04dfd4238110",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C61",
+      "claim": "The estimated value for O. marina used in Menden-Deuer and Lessard, 2000 is 30% higher than that measured by elemental analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, the variability around the relationship is substantial (e.g., the estimated value for O. marina used in Menden-Deuer and Lessard, 2000 is 30% higher than that measured by elemental analysis).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of values from different sources, representing data from the literature and this study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "8d5ca844-119f-4e55-a1fc-2a23f3364faa",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C62",
+      "claim": "The volume-to-carbon relationships do not account for the nutritional status of the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the volume-to-carbon relationships do not account for the nutritional status of the cell (e.g., as discussed in Results, 'Dry mass estimates', similarly sized cells of the same species can indeed differ by more than a factor of two in the estimated dry mass by the volume-to-carbon method).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a limitation of volume-to-carbon relationships, supported by observations in the study.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "3a965cda-7e6d-48bd-91f9-f2ef61e52e55",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C63",
+      "claim": "Figure 4f reveals asymmetric cleavage in T. weissflogii, where sister cells receive unequal proportions of the mother cell biomass.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4f reveals asymmetric cleavage in T. weissflogii, where sister cells receive unequal proportions of the mother cell biomass.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the division event data shown in Figure 4f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "72e65cc4-5f46-4f83-9ebe-1a623eb0848a",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C64",
+      "claim": "Asymmetric division is well established in centric diatoms that have a rigid silica shell called the frustule consisting of two halves.",
+      "claim_type": "EXPLICIT",
+      "source": "Asymmetric division is well established in centric diatoms that have a rigid silica shell called the frustule consisting of two halves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about diatom biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "372d507e-285d-49df-af04-04d4b94c74d7",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C65",
+      "claim": "Upon division, both daughter cells grow a new hypotheca fitting inside the half that is inherited from the mother cell so that one of the daughter cells will be slightly smaller.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon division, both daughter cells grow a new hypotheca fitting inside the half that is inherited from the mother cell so that one of the daughter cells will be slightly smaller (while the other maintains the size of the mother cell).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about diatom cell division.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "fa84ead1-569c-490a-846b-5625a69684cb",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C66",
+      "claim": "When diatom cells reach a critically small size, the size is reinstalled through sexual reproduction.",
+      "claim_type": "EXPLICIT",
+      "source": "When the cells reach a critically small size, the size is reinstalled through sexual reproduction (Macdonald, 1869; Pfitzer, 1869).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about diatom biology, supported by citations to Macdonald, 1869 and Pfitzer, 1869.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "3c0fc22c-0ef4-491b-8ee4-1cc64c2d36af",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C67",
+      "claim": "Asymmetric cleavage beyond the reductive cell cycle has been shown in the diatom Ditulum breightwelli where daughter cells are of different volume.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimentally, asymmetric cleavage beyond the reductive cell cycle has also been shown in the diatom Ditulum breightwelli (Laney et al., 2012) where daughter cells are of different volume.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about prior experimental findings, supported by a citation to Laney et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "79ba806a-44d5-4f39-a29d-fe023bdab532",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C68",
+      "claim": "Sister cells show unequal times to the subsequent division which may lead to faster population growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to our study, the sister cells show unequal times to the subsequent division (Figure 4a\u2013e) which may lead to faster population growth (Laney et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the division event data, with a citation to Laney et al., 2012 for the interpretation about population growth.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "d5ff0ecc-ff7e-474c-9b80-53f084f3d5c2",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C69",
+      "claim": "Physiological asymmetry is found in bacteria (e.g., E. coli) where old damaged cell content is distributed differently leading to the development of age structure in prokaryote populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Physiological asymmetry is also found in bacteria (e.g., E. coli) where old damaged cell content is distributed differently leading to the development of age structure in prokaryote populations (Proenca et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about findings in bacteria, supported by a citation to Proenca et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "91752421-baac-442f-9b22-9d7741b0476a",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C70",
+      "claim": "The differences in biomass of sister cells observed are larger than expected from the volume alone.",
+      "claim_type": "EXPLICIT",
+      "source": "The differences in biomass of sister cells observed here are larger than expected from the volume alone which suggest that unequal division of biomass may be more common in protozoans than previously perceived.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from comparing the observed biomass differences with expectations based on volume.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "98d7a213-467e-45a8-bb76-d55ab10d3090",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C71",
+      "claim": "Unequal division of biomass may be more common in protozoans than previously perceived.",
+      "claim_type": "EXPLICIT",
+      "source": "The differences in biomass of sister cells observed here are larger than expected from the volume alone which suggest that unequal division of biomass may be more common in protozoans than previously perceived.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the observations in this study.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "462c155d-c746-42a3-bd72-1b57b85e4418",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C72",
+      "claim": "In many instances, two-dimensional traces are obtained and three-dimensional swimming behavior is inferred by assuming isotropic swimming.",
+      "claim_type": "EXPLICIT",
+      "source": "In many instances, two-dimensional traces are obtained and three-dimensional swimming behavior is inferred by assuming isotropic swimming (Selander et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about common practices in the field, supported by a citation to Selander et al., 2011.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "17ff471e-4e99-4cc4-9dbc-11adb70970c4",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C73",
+      "claim": "Traditional tracking techniques often lose track of cells when they intersect other cells or swim out of focus.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, traditional tracking techniques often lose track of cells when they intersect other cells or swim out of focus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about limitations of traditional tracking techniques, representing established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "b4c03be0-e1b5-43c4-bb6f-4858c560e4b2",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C74",
+      "claim": "Holographic microscopy overcomes the limitations due to the shallow depth of field in conventional light microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Holographic microscopy which records the holograms of objects overcomes the limitations due to the shallow depth of field in conventional light microscopy, and the three-dimensional positioning together with the biomass estimates facilitates linking of cell positions into coherent trajectories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the advantages of holographic microscopy, representing established knowledge about the technique.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "fc78f499-a2f4-4939-a433-153d47f10c9f",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C75",
+      "claim": "Three-dimensional positioning together with the biomass estimates facilitates linking of cell positions into coherent trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "Holographic microscopy which records the holograms of objects overcomes the limitations due to the shallow depth of field in conventional light microscopy, and the three-dimensional positioning together with the biomass estimates facilitates linking of cell positions into coherent trajectories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the advantages of the method, based on inference from its capabilities.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "345821b9-20fb-4e9c-8df2-7de28305cc48",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C76",
+      "claim": "Three-dimensional positioning of both prey and predator cells allows detailed observations of cell\u2013cell interactions such as reaction distances and rejection events.",
+      "claim_type": "EXPLICIT",
+      "source": "Three-dimensional positioning of both prey and predator cells also allows detailed observations of cell\u2013cell interactions such as reaction distances and rejection events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about potential applications of the method, based on inference from its capabilities.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "4f23021a-3085-4fb9-88fe-fe9cc1934f17",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C77",
+      "claim": "Holographic microscopy does not require manipulation such as dilution and is not sensitive to the same assumptions as the dilution technique.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, holographic microscopy does not require manipulation such as dilution and is not sensitive to the same assumptions as the dilution technique.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of the method with the dilution technique, representing an advantage of holographic microscopy.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "a59c7f67-b177-4ba3-a4b8-a1c5e2b0a529",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C78",
+      "claim": "The volume that can be monitored by holographic microscopy is limited by the coherence length of the light source.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the volume that can be monitored by holographic microscopy is limited by the coherence length of the light source.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a limitation of holographic microscopy, representing established knowledge about the technique.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "9125d34e-9a31-4f3d-a1d5-1b5d977828d1",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C79",
+      "claim": "An LED light source with a relatively short coherence length (approximately 200\u03bcm with 1-nm line filter) was used in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we use an LED light source with a relatively short coherence length (approximately 200\u03bcm with 1-nm line filter).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental setup used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "24c73c43-b3ff-45a0-bc0f-2a2013fc3ee6",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C80",
+      "claim": "The depth of the observational chamber can be increased by use of laser light sources with longer coherence length.",
+      "claim_type": "EXPLICIT",
+      "source": "The depth of the observational chamber can, however, be increased by use of laser light sources with longer coherence length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about potential modifications to the method, based on knowledge of light sources.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "3202b6c3-1ba4-43f7-afb6-4ee9fab47437",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C81",
+      "claim": "With simple modifications to the setup design, the lensless approach can be adopted for smaller organisms such as bacteria and heterotrophic nanoflagellates, or larger organisms such as rotifers and small crustaceans.",
+      "claim_type": "EXPLICIT",
+      "source": "With simple modifications to the setup design, the lensless approach used here can be adopted for smaller organisms such as bacteria and heterotrophic nanoflagellates, or larger organisms such as rotifers and small crustaceans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about potential applications of the method, based on inference from its principles.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "841245d6-d3f3-4f84-844e-91c0ffdaffde",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C82",
+      "claim": "The method could be merged with rotating stages that keep cells in suspension.",
+      "claim_type": "EXPLICIT",
+      "source": "It could also be merged with rotating stages that keep cells in suspension (Krishnamurthy et al., 2020), or microfluidic channels to facilitate experiments with large number of cells in flow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for future development, with a citation to Krishnamurthy et al., 2020.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "d9aa70a7-4422-4381-8185-1b7e53f39296",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C83",
+      "claim": "The method is particularly suitable to study micro-zooplankton grazing behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "The method is particularly suitable to study micro-zooplankton grazing behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the suitability of the method, supported by the feeding event experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "626dab5c-10d2-4d15-9988-815f93a97e5a",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C84",
+      "claim": "A large and growing proportion of micro-phytoplanktons previously considered fully autotrophic have been reclassified as mixotrophic.",
+      "claim_type": "EXPLICIT",
+      "source": "A large and growing proportion of micro-phytoplanktons previously considered fully autotrophic have been reclassified as mixotrophic, that is, supporting their energy demand by a combination of photosynthesis and uptake of dissolved or particulate organic matter (Stoecker et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about recent developments in the field, supported by a citation to Stoecker et al., 2017.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "cdba9e5b-93f0-48bd-bb26-fbb3fe0c357a",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C85",
+      "claim": "Allowing mixotrophy in food web modeling results in up to a threefold increase in average organism size and enhanced transfer of biomass to higher trophic levels.",
+      "claim_type": "EXPLICIT",
+      "source": "This discovery is of more than academic interest as allowing mixotrophy in food web modeling results in up to a threefold increase in average organism size and enhanced transfer of biomass to higher trophic levels, thus increasing the sinking flux of carbon, 'the biological pump', by an estimated 35% (Ward and Follows, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about modeling results, supported by a citation to Ward and Follows, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "7b516052-079c-4980-93f3-f618ed98b259",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C86",
+      "claim": "Allowing mixotrophy in food web modeling increases the sinking flux of carbon, 'the biological pump', by an estimated 35%.",
+      "claim_type": "EXPLICIT",
+      "source": "This discovery is of more than academic interest as allowing mixotrophy in food web modeling results in up to a threefold increase in average organism size and enhanced transfer of biomass to higher trophic levels, thus increasing the sinking flux of carbon, 'the biological pump', by an estimated 35% (Ward and Follows, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about modeling results, supported by a citation to Ward and Follows, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "3c740813-284b-47e9-a318-20f823256a4a",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C87",
+      "claim": "The discovery of widespread mixotrophy has led to something of a paradigm shift in marine microbial ecology.",
+      "claim_type": "EXPLICIT",
+      "source": "The discovery has led to something of a paradigm shift in marine microbial ecology and highlighted the need for new methods to accurately account for mixotrophy in biogeochemical models (Flynn et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the impact of the discovery on the field, with a citation to Flynn et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "1fda5fbc-9f2c-4bff-b921-3b6bf0fed851",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C88",
+      "claim": "There is a need for new methods to accurately account for mixotrophy in biogeochemical models.",
+      "claim_type": "EXPLICIT",
+      "source": "The discovery has led to something of a paradigm shift in marine microbial ecology and highlighted the need for new methods to accurately account for mixotrophy in biogeochemical models (Flynn et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about needs in the field, with a citation to Flynn et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "d62e4343-2427-41b6-8be2-5b0094f86c91",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C89",
+      "claim": "Mixotrophy is a plastic trait that changes with conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Mixotrophy is a plastic trait that changes with conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the nature of mixotrophy, representing established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "28175ecc-343b-4180-a9f5-a8f41a3e0b3a",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C90",
+      "claim": "The dinoflagellate Karlodinium armiger is an autotroph at low cell concentrations, but switches to heterotrophy at high densities.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the more extreme cases, there is the dinoflagellate Karlodinium armiger, which is an autotroph at low cell concentrations, but switches to heterotrophy at high densities and even revert the food web by killing their copepod predators and extracting their content through peduncle feeding (Berge et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the behavior of a specific species, supported by a citation to Berge et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "0c416998-de11-4552-ae50-b606482fdee8",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C91",
+      "claim": "Karlodinium armiger can revert the food web by killing their copepod predators and extracting their content through peduncle feeding.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the more extreme cases, there is the dinoflagellate Karlodinium armiger, which is an autotroph at low cell concentrations, but switches to heterotrophy at high densities and even revert the food web by killing their copepod predators and extracting their content through peduncle feeding (Berge et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the behavior of a specific species, supported by a citation to Berge et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "59ddb760-c9c3-44a5-9155-aa7639b0e0b9",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C92",
+      "claim": "The combination of holographic microscopy and deep-learning algorithms can be used to quantify uptake of both particulate and dissolved matter.",
+      "claim_type": "EXPLICIT",
+      "source": "The combination of holographic microscopy and deep-learning algorithms can be used to quantify uptake of both particulate (Figure 3) and dissolved matter.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a claim about the capabilities of the method, with reference to Figure 3 for particulate matter.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "aea08b95-2479-494b-afb8-1b9509cd8da2",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C93",
+      "claim": "Uptake of dissolved organic matter will result in increased dry mass, and the slope of such increase will provide cell-specific uptake rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Uptake of dissolved organic matter will result in increased dry mass, and the slope of such increase will provide cell-specific uptake rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about how the method can be applied, based on inference from its capabilities.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "19647a6b-9c2e-4aca-b16b-fad2b1786c70",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C94",
+      "claim": "The method will allow exploration of the level of mixotrophy in different conditions and organisms by monitoring dry mass in factorial combinations of light and organic substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, it will allow us to explore the level of mixotrophy in different conditions and organisms by monitoring dry mass in factorial combinations of, for example, light and organic substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about potential applications of the method, based on speculation about future experiments.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "a85bce46-4bff-4b7a-8fa9-b994bd6f8f3f",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C95",
+      "claim": "Primary production can be assessed as dry mass increase in the presence of light but the absence of organic food sources.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, primary production can be assessed as dry mass increase in the presence of light but the absence of organic food sources (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a claim about how the method can be applied, with reference to Figure 4.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "4216383c-f1f6-464d-9e0d-c02e1230c0f1",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C96",
+      "claim": "In scenarios where both photosynthesis and uptake of organic food sources are possible, the level of heterotrophy can be estimated by subtracting photosynthesis from total production.",
+      "claim_type": "EXPLICIT",
+      "source": "In the scenarios where both photosynthesis and uptake of organic food sources are possible, the level of heterotrophy can be estimated by subtracting photosynthesis from total production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about how the method can be applied, based on inference from its capabilities.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "bad352a4-b805-4e0b-bc84-ea936710f8c4",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C97",
+      "claim": "Individual-level observations have been key to further the development of ecological theory in larger organisms and millimeter-sized copepods.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual-level observations have been key to further the development of ecological theory, not only in larger organisms, but also in smaller organisms such as millimeter-sized copepods, the most common multicellular organisms in the ocean.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the importance of individual-level observations in ecology, representing established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "7c56fbbd-4f8e-4091-bfd5-47d8f57da96e",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C98",
+      "claim": "Copepods have been shown to feed selectively and reject well-defended cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As an example, copepods have been shown to feed selectively and reject well-defended cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about copepod behavior, representing established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "436a1486-4ff9-428a-956d-cb056ee3e30f",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C99",
+      "claim": "Well-defended cells are favored and enriched by copepod grazing, which contributes to harmful algal bloom formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, well-defended cells are favored and enriched by copepod grazing, which contributes to harmful algal bloom formation (Ryderheim et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ecological consequences of copepod feeding, supported by a citation to Ryderheim et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "5c1e1040-efab-48fb-8a47-b8e12b8f341d",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C100",
+      "claim": "Individual-level observations have revealed the sensory capabilities of copepods involved in prey and threat detection as well as the fundamental strategies involved in foraging and reproduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, individual-level observations have revealed the sensory capabilities of copepods involved in prey and threat detection as well as the fundamental strategies involved in foraging and reproduction (Ki\u00f8rboe et al., 1999; Ki\u00f8rboe et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about findings from individual-level observations, supported by citations to Ki\u00f8rboe et al., 1999 and Ki\u00f8rboe et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "53ba3f0f-dd5f-4de9-976f-7072fb3abcc1",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C101",
+      "claim": "Individual-level observations of protozoans have the potential to catalyze experiments and gain insights in microbial food\u2013web interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, Individual-level observations of protozoans have the potential to catalyze experiments and gain insights in microbial food\u2013web interactions in a similar way.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about the potential impact of the method, based on analogy with copepod studies.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "944a9331-c23a-47b7-a183-9a5445212100",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C102",
+      "claim": "The marriage between holographic microscopy and deep learning provides a strong complementary tool in microbial ecology.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the marriage between holographic microscopy and deep learning provides a strong complementary tool in microbial ecology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a concluding statement about the value of the method, based on the results presented.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "be094b47-b056-423d-b949-f8b7764a2c05",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C103",
+      "claim": "The method allows the nondestructive and minimally invasive determination of the three-dimensional position and dry mass of individual microorganisms.",
+      "claim_type": "EXPLICIT",
+      "source": "It allows the nondestructive and minimally invasive determination of the three-dimensional position and dry mass of individual microorganisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the method's capabilities, supported by the experimental demonstrations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "d748dcb4-f98b-4f0c-bb99-1dfcc9fd7b11",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C104",
+      "claim": "The method outperforms traditional methods in terms of speed and individual resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "It outperforms traditional methods in terms of speed and individual resolution and rivals the precision and accuracy of current methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative claim about the method's performance, based on the results and comparisons presented.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "c07c95ea-42f3-4b82-9be8-3a6d76eaa504",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C105",
+      "claim": "The method rivals the precision and accuracy of current methods.",
+      "claim_type": "EXPLICIT",
+      "source": "It outperforms traditional methods in terms of speed and individual resolution and rivals the precision and accuracy of current methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative claim about the method's performance, based on the validation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "db03abe1-fb95-4e9a-b4c5-d19e1e684bb8",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C106",
+      "claim": "The combination with deep-learning algorithms makes holographic microscopy more versatile and many orders of magnitude faster.",
+      "claim_type": "EXPLICIT",
+      "source": "While holographic microscopy has already been employed in marine sciences, the combination with deep-learning algorithms makes it more versatile and many orders of magnitude faster, which is key to follow and characterize individuals throughout their lifespan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the advantages of combining holographic microscopy with deep learning, based on the computational improvements demonstrated.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "d867b74d-3b30-4f96-ae2f-f43344d522b5",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C107",
+      "claim": "The speed improvement from deep learning is key to follow and characterize individuals throughout their lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "While holographic microscopy has already been employed in marine sciences, the combination with deep-learning algorithms makes it more versatile and many orders of magnitude faster, which is key to follow and characterize individuals throughout their lifespan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the importance of the speed improvement, based on inference from the experimental requirements.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "2812faa7-ceda-498f-b30a-c020f38407ec",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C109",
+      "claim": "The RU-Net training process takes about 1.5 hr on a Kaggle server with Tesla P100 GPU and Intel Xeon CPU @ 2.00 GHz.",
+      "claim_type": "EXPLICIT",
+      "source": "The training process (including the data generation) takes about 1.5 hr on a Kaggle server (Tesla P100 graphics processor unit and Intel(R) Xeon(R) CPU @ 2.00 GHz).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specification of the computational requirements for training the RU-Net.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "ee2331ca-fb7b-4f05-b38b-4db8ab655abd",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C110",
+      "claim": "The WAC-Net training process takes about 45 min on a Kaggle server with Tesla P100 GPU and Intel Xeon CPU @ 2.00 GHz.",
+      "claim_type": "EXPLICIT",
+      "source": "The training process (including the data generation) takes about 45 min on a Kaggle server (Tesla P100 graphics processor unit and Intel(R) Xeon(R) CPU @ 2.00 GHz).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specification of the computational requirements for training the WAC-Net.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "bbb447b9-a379-4036-aaf9-372b5ad4729f",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C113",
+      "claim": "The O. marina cultures were fed with I. galbana or D. tertiolecta weekly, but starved until prey cells became rare before experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The O. marina cultures were fed with I. galbana or D. tertiolecta weekly, but starved until prey cells became rare before experiments to avoid unintentional addition of prey cells to experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the culture maintenance protocol for O. marina.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "46a23d83-279b-4e8e-8b59-135087c6a393",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C114",
+      "claim": "The Coulter counter is equipped with a 100 \u03bcm orifice tube and its accuracy is confirmed with latex beads.",
+      "claim_type": "EXPLICIT",
+      "source": "The Coulter counter is equipped with a 100 \u03bcm orifice tube. Its accuracy is confirmed with latex beads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the validation of the Coulter counter used for volume measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "88dc1f10-b52a-4b0a-843f-8ecf4a4bd119",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C115",
+      "claim": "For elemental analysis, a precise algal culture volume of known cell concentration is filtered onto pre-combusted (450\u00b0C) 25 mm glass fiber filters (Whatman GF/F).",
+      "claim_type": "EXPLICIT",
+      "source": "A precise algal culture volume of known cell concentration is filtered onto pre-combusted (450\u00b0C) 25 mm glass fiber filters (Whatman GF/F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample preparation protocol for elemental analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "7a686b8a-8e80-43cf-9836-8161271646a7",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C116",
+      "claim": "The filters are dried overnight at 60\u00b0C and carbonates are removed by incubation in an exicator together with fuming hydrochloric acid.",
+      "claim_type": "EXPLICIT",
+      "source": "The filters are dried overnight at 60\u00b0C. Carbonates are removed by incubation in an exicator together with fuming hydrochloric acid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample preparation protocol for elemental analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "babaabfd-adcc-4836-8702-735dbd0a338f",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C117",
+      "claim": "The filters are enclosed in tin capsules and analysed on an elemental analyzer (ANCASL, SerCon, UK) coupled to an isotope ratio mass spectrometer (20\u201320, SerCon, UK).",
+      "claim_type": "EXPLICIT",
+      "source": "The filters are enclosed in tin capsules and analysed on an elemental analyzer (ANCASL, SerCon, UK) coupled to an isotope ratio mass spectrometer (20\u201320, SerCon, UK).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analytical instrumentation used for elemental analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "f9e98e96-c528-4355-832b-ea03513eba42",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "claim_id": "C118",
+      "claim": "The dry mass can be defined as the difference between the mass of the object and the mass of an equal volume of medium.",
+      "claim_type": "EXPLICIT",
+      "source": "Physically, the dry mass can be defined as the difference between the mass of the object (here, the plankton) and the mass of an equal volume of medium (here, the watery solution).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of dry mass, representing established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ddbc15cd-9a2b-4e8a-a860-a5b082007e43",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a method combining holographic microscopy with deep learning (RU-Net and WAC-Net) to rapidly determine 3D position and dry mass of individual microplankton over extended time periods. The method was evaluated on nine plankton species and enables tracking of single cells throughout their lifetime, quantifying feeding events and cell divisions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C29 collectively describe the development and validation of the holographic microscopy + deep learning method. The experimental demonstrations on nine species (C19), the technical implementation details (C25-C27, C29), and the demonstrated capabilities for tracking individual cells (C20-C24) provide strong converging evidence. The method's capabilities are directly demonstrated through the feeding and division experiments presented in subsequent results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "a58df217-7e42-45cf-8c86-a6ffe22b8ee9",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The holographic method's dry mass estimates agree well with volume-to-carbon relationships (394\u00b1123 pg vs 338\u00b1126 pg for O. marina) and are validated by elemental analysis (453 pg). Unlike volume-to-carbon methods, the holographic approach can tag dry mass to individual cells and accounts for nutritional status.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31, C34 provide quantitative validation showing agreement between methods, with elemental analysis confirming realistic values. Claims C32, C60-C62 establish advantages over existing methods. The convergence of three independent measurement approaches (holographic, volume-to-carbon, elemental analysis) with reasonable agreement supports the accuracy of the new method, though some discrepancies exist (30% difference noted in C61).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "5161e9c2-839e-4650-8531-a319602d9ae6",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The method quantifies individual feeding events by measuring dry mass transfer from prey to predator. In feeding experiments, the predator's post-feeding mass increase (234\u00b15 pg - 204\u00b15 pg = 30 pg) closely matched the prey dry mass (26\u00b11 pg), indicating complete consumption. Across 26 feeding events, predator mass increase correlated strongly with prey mass (\u03c1=0.794).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41 provide direct measurements showing mass conservation during feeding, with C40-C41 making the key inference that mass balance indicates complete consumption. The correlation across 26 events (C44) strengthens this conclusion. The measurements are internally consistent and the mass balance provides strong evidence for the interpretation. However, the inference of 'complete consumption' (C41) assumes no mass loss during feeding, which is reasonable but not directly verified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "6fa8580b-9058-4b58-8d12-e51fe1e16908",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Long-term monitoring of T. weissflogii revealed asymmetric biomass division where daughter cells receive unequal proportions of mother cell biomass (326\u00b11 pg and 110\u00b11 pg from 433\u00b12 pg parent). Division events occur when parent cells reach 310-436 pg (mean ~378 pg), representing the first tip-off value prediction for division based on dry mass.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C53 describe the experimental observations of asymmetric division with specific quantitative measurements. C49, C51 establish the novel finding of biomass asymmetry (beyond previously known size asymmetry, C50). C55-C56 claim novelty in predicting division thresholds. The measurements show mass conservation (sum of daughters \u2248 parent mass) and are internally consistent. The claim of novelty (C56) is an inference about the literature that cannot be fully verified from the manuscript alone.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "4c5feaf2-998b-4e63-a12f-668a8f63ae24",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The observed asymmetric biomass division in T. weissflogii is larger than expected from volume alone, suggesting unequal biomass division may be more common in protozoans than previously perceived. This extends beyond the known reductive cell cycle in diatoms and physiological asymmetry in bacteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C63-C69 establish context from prior work, while C70-C71 make new inferences. C70 compares observed biomass differences to volume-based expectations, but lacks quantitative analysis of this comparison. C71 is explicitly speculative ('may be more common') and extrapolates from a single species to protozoans generally. The inference is reasonable but requires additional species and quantitative analysis to be well-supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "fe339a48-73fe-4a97-aa3b-54349f23fa2b",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The combination of holographic microscopy and deep learning provides a nondestructive, minimally invasive method that outperforms traditional methods in speed and individual resolution while rivaling their precision and accuracy. The method enables quantitative assessment of trophic interactions throughout the cell cycle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C59, C102-C107 summarize the method's advantages and performance. These are supported by the experimental demonstrations (feeding and division events) and validation experiments (comparison with volume-to-carbon and elemental analysis). However, the claims about 'outperforming' (C104) and 'many orders of magnitude faster' (C106) lack specific quantitative comparisons with traditional holographic processing times. The speed claim is partially supported by training times (C109-C110) but inference times are not reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "2e5d934e-7d36-44aa-8304-9bee0d236f65",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Holographic microscopy overcomes limitations of traditional tracking techniques (2D traces, loss of cells at intersections or out of focus) by providing 3D positioning that facilitates trajectory linking and enables detailed observations of cell-cell interactions without requiring dilution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C73 establish limitations of traditional methods (supported by C72 citation). Claims C74-C77 describe advantages of holographic microscopy, representing established knowledge about the technique (C74) and reasonable inferences from demonstrated capabilities (C75-C76). The feeding event experiments (Figure 3, Video 1-2) demonstrate 3D tracking through cell interactions, supporting these claims. However, C76 describes potential applications not fully demonstrated in the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "0ff12dc4-2969-461c-ad54-f0e527325d60",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The method has limitations (coherence length restricts observable volume to ~200\u03bcm with LED source) but can be extended by using laser sources for greater depth or modified for different organism sizes (bacteria to small crustaceans) and integrated with rotating stages or microfluidic channels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C78-C79 accurately describe a limitation and the current setup. Claims C80-C82 propose future modifications and applications but are speculative (C81-C82 explicitly use 'can be' and 'could be'). These are reasonable extrapolations based on the principles of the technique, but are not demonstrated in the current work. The claims represent potential rather than validated capabilities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "a071e629-0067-4aa5-9696-5fb6767b2546",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The method is particularly suitable for studying micro-zooplankton grazing and mixotrophy. It can quantify uptake of particulate and dissolved matter, assess primary production, and explore mixotrophy levels under different conditions by monitoring dry mass changes in factorial combinations of light and organic substrates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C83-C91 establish the importance of mixotrophy and grazing studies (supported by citations). C92 claims capability for both particulate and dissolved matter, but only particulate uptake is demonstrated (Figure 3). Claims C93-C96 describe potential applications for studying mixotrophy and primary production, but these are largely speculative (C94 uses 'will allow', C95-C96 describe how the method 'can be applied'). Only C95 references actual data (Figure 4), but that experiment doesn't explicitly test the proposed application. These represent promising future directions rather than validated capabilities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "32c8d2a5-faad-4f47-bbcc-5889aa42eba4",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Individual-level observations have been key to ecological theory development in copepods, revealing selective feeding, sensory capabilities, and foraging strategies. Similar individual-level observations of protozoans have the potential to catalyze insights into microbial food-web interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C100 establish the value of individual-level observations in copepod ecology (supported by citations). C101 draws an analogy to suggest similar value for protozoan studies. This is a reasonable inference supported by the demonstrated capabilities of the method, though C101 is explicitly speculative ('have the potential'). The analogy is well-founded given the successful demonstrations of individual tracking and feeding quantification in the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "4383fb67-a16b-42d3-87ce-e20803b17e1c",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Current methods for studying marine microbial food webs rely on indirect measurements and ensemble averages (satellite imaging, dilution experiments, volume-to-carbon relationships) that have significant limitations including assumptions that are often violated, inability to detect individual cell variability, and >50% deviation in volume-to-carbon relationships.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C12 establish the context and limitations of current methods, all supported by appropriate citations (C2-C5, C7-C11) or representing established knowledge (C1, C6, C12). These claims accurately characterize the state of the field and motivate the need for the new method. The citations appear appropriate and the characterization of limitations is consistent with the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    },
+    {
+      "id": "17758501-23d2-44c9-86da-e0316ff8fc2d",
+      "content_id": "0d57a456-e5de-44b8-bdc9-e67d24fae8fc",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Holographic microscopy can extract 3D position and mass from interference patterns and has been applied to microbial studies for particle size distributions, but its full potential for quantitative investigation of individual plankton growth and feeding over prolonged times has not been exploited due to computationally expensive data processing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C15 describe established capabilities of holographic microscopy (supported by citations C14-C15). Claims C16-C17 assess gaps in the field and computational limitations. C16 is an inference about the literature that appears reasonable given the novelty of the current work. C17 represents established knowledge about computational costs of holographic processing. These claims effectively motivate the innovation of combining holography with deep learning.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:52:12.190550Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7b73b0b9-1d1e-4e24-b7d9-a78e53c89450",
+      "result_id": "ddbc15cd-9a2b-4e8a-a860-a5b082007e43"
+    },
+    {
+      "claim_id": "08b97262-e2b0-4184-8a71-ab061d003526",
+      "result_id": "ddbc15cd-9a2b-4e8a-a860-a5b082007e43"
+    },
+    {
+      "claim_id": "1fcf328f-6c98-4cf8-8c41-fa0738435f0f",
+      "result_id": "ddbc15cd-9a2b-4e8a-a860-a5b082007e43"
+    },
+    {
+      "claim_id": "161e37a1-e889-4040-a83a-0b7e274b34a5",
+      "result_id": "ddbc15cd-9a2b-4e8a-a860-a5b082007e43"
+    },
+    {
+      "claim_id": "651b7f17-eaa6-4a1b-9c0a-036af38a890d",
+      "result_id": "ddbc15cd-9a2b-4e8a-a860-a5b082007e43"
+    },
+    {
+      "claim_id": "1862f348-7b73-4f31-88e9-509489dee187",
+      "result_id": "ddbc15cd-9a2b-4e8a-a860-a5b082007e43"
+    },
+    {
+      "claim_id": "f4a19436-0073-4086-bbc7-01d150e2606f",
+      "result_id": "ddbc15cd-9a2b-4e8a-a860-a5b082007e43"
+    },
+    {
+      "claim_id": "8e23a775-7c2b-4d6a-875c-da1d1d542d33",
+      "result_id": "ddbc15cd-9a2b-4e8a-a860-a5b082007e43"
+    },
+    {
+      "claim_id": "802430cf-8c22-4567-ae96-8ed9d644ebc8",
+      "result_id": "ddbc15cd-9a2b-4e8a-a860-a5b082007e43"
+    },
+    {
+      "claim_id": "7a157203-9bd5-48f0-b292-0c07605cfee0",
+      "result_id": "ddbc15cd-9a2b-4e8a-a860-a5b082007e43"
+    },
+    {
+      "claim_id": "b9f689ba-95fc-4d55-b57a-7ca4b7afb9fd",
+      "result_id": "ddbc15cd-9a2b-4e8a-a860-a5b082007e43"
+    },
+    {
+      "claim_id": "35d847d1-33d9-464b-ab9c-f32b4cf3c1e7",
+      "result_id": "a58df217-7e42-45cf-8c86-a6ffe22b8ee9"
+    },
+    {
+      "claim_id": "015e8bf3-bfc9-425e-958c-ed1196098f37",
+      "result_id": "a58df217-7e42-45cf-8c86-a6ffe22b8ee9"
+    },
+    {
+      "claim_id": "8b95f604-4b90-4eb2-b8eb-c375f10433a0",
+      "result_id": "a58df217-7e42-45cf-8c86-a6ffe22b8ee9"
+    },
+    {
+      "claim_id": "4d3c086b-6f11-46bb-a637-ad5db2a5f3c6",
+      "result_id": "a58df217-7e42-45cf-8c86-a6ffe22b8ee9"
+    },
+    {
+      "claim_id": "4e472f52-1957-4564-aece-04dfd4238110",
+      "result_id": "a58df217-7e42-45cf-8c86-a6ffe22b8ee9"
+    },
+    {
+      "claim_id": "8d5ca844-119f-4e55-a1fc-2a23f3364faa",
+      "result_id": "a58df217-7e42-45cf-8c86-a6ffe22b8ee9"
+    },
+    {
+      "claim_id": "29423818-b061-4608-909d-34da95143412",
+      "result_id": "5161e9c2-839e-4650-8531-a319602d9ae6"
+    },
+    {
+      "claim_id": "1935dfe8-030a-48ba-80c6-46d1ec37ab32",
+      "result_id": "5161e9c2-839e-4650-8531-a319602d9ae6"
+    },
+    {
+      "claim_id": "4ddbe379-175c-468f-b589-97aa0a713c65",
+      "result_id": "5161e9c2-839e-4650-8531-a319602d9ae6"
+    },
+    {
+      "claim_id": "d85065d1-d743-4052-9346-dc65b38eb393",
+      "result_id": "5161e9c2-839e-4650-8531-a319602d9ae6"
+    },
+    {
+      "claim_id": "91ea25e5-5a54-4702-b70e-165f0172ed6c",
+      "result_id": "5161e9c2-839e-4650-8531-a319602d9ae6"
+    },
+    {
+      "claim_id": "724f6a9a-eaa9-4b2b-9bc0-9dbe40591791",
+      "result_id": "5161e9c2-839e-4650-8531-a319602d9ae6"
+    },
+    {
+      "claim_id": "2630b955-6045-4ace-bb66-36c6a2c3e03a",
+      "result_id": "6fa8580b-9058-4b58-8d12-e51fe1e16908"
+    },
+    {
+      "claim_id": "3b8a2f73-427a-4906-b1fc-f94f0bccdee7",
+      "result_id": "6fa8580b-9058-4b58-8d12-e51fe1e16908"
+    },
+    {
+      "claim_id": "c82210ac-8a7b-40ea-8f42-538111237c54",
+      "result_id": "6fa8580b-9058-4b58-8d12-e51fe1e16908"
+    },
+    {
+      "claim_id": "553d280a-23e8-4306-92f0-49fd1362ee18",
+      "result_id": "6fa8580b-9058-4b58-8d12-e51fe1e16908"
+    },
+    {
+      "claim_id": "c0d223ae-a284-46d2-b684-70fcace5102c",
+      "result_id": "6fa8580b-9058-4b58-8d12-e51fe1e16908"
+    },
+    {
+      "claim_id": "22b00cef-bd71-4d07-8807-731393bce658",
+      "result_id": "6fa8580b-9058-4b58-8d12-e51fe1e16908"
+    },
+    {
+      "claim_id": "32ef673b-b508-4ab5-b044-f12b570f9b31",
+      "result_id": "6fa8580b-9058-4b58-8d12-e51fe1e16908"
+    },
+    {
+      "claim_id": "9e2968d0-0441-430d-a601-551b7c6f24ba",
+      "result_id": "6fa8580b-9058-4b58-8d12-e51fe1e16908"
+    },
+    {
+      "claim_id": "3a965cda-7e6d-48bd-91f9-f2ef61e52e55",
+      "result_id": "4c5feaf2-998b-4e63-a12f-668a8f63ae24"
+    },
+    {
+      "claim_id": "72e65cc4-5f46-4f83-9ebe-1a623eb0848a",
+      "result_id": "4c5feaf2-998b-4e63-a12f-668a8f63ae24"
+    },
+    {
+      "claim_id": "372d507e-285d-49df-af04-04d4b94c74d7",
+      "result_id": "4c5feaf2-998b-4e63-a12f-668a8f63ae24"
+    },
+    {
+      "claim_id": "fa84ead1-569c-490a-846b-5625a69684cb",
+      "result_id": "4c5feaf2-998b-4e63-a12f-668a8f63ae24"
+    },
+    {
+      "claim_id": "3c0fc22c-0ef4-491b-8ee4-1cc64c2d36af",
+      "result_id": "4c5feaf2-998b-4e63-a12f-668a8f63ae24"
+    },
+    {
+      "claim_id": "79ba806a-44d5-4f39-a29d-fe023bdab532",
+      "result_id": "4c5feaf2-998b-4e63-a12f-668a8f63ae24"
+    },
+    {
+      "claim_id": "d5ff0ecc-ff7e-474c-9b80-53f084f3d5c2",
+      "result_id": "4c5feaf2-998b-4e63-a12f-668a8f63ae24"
+    },
+    {
+      "claim_id": "91752421-baac-442f-9b22-9d7741b0476a",
+      "result_id": "4c5feaf2-998b-4e63-a12f-668a8f63ae24"
+    },
+    {
+      "claim_id": "98d7a213-467e-45a8-bb76-d55ab10d3090",
+      "result_id": "4c5feaf2-998b-4e63-a12f-668a8f63ae24"
+    },
+    {
+      "claim_id": "f5770650-4923-4560-836c-74ec528cb343",
+      "result_id": "fe339a48-73fe-4a97-aa3b-54349f23fa2b"
+    },
+    {
+      "claim_id": "24c1b0bc-dcf6-40ef-888d-ae3429b5103b",
+      "result_id": "fe339a48-73fe-4a97-aa3b-54349f23fa2b"
+    },
+    {
+      "claim_id": "f0786e58-64f5-450a-886e-288bb46ee568",
+      "result_id": "fe339a48-73fe-4a97-aa3b-54349f23fa2b"
+    },
+    {
+      "claim_id": "944a9331-c23a-47b7-a183-9a5445212100",
+      "result_id": "fe339a48-73fe-4a97-aa3b-54349f23fa2b"
+    },
+    {
+      "claim_id": "be094b47-b056-423d-b949-f8b7764a2c05",
+      "result_id": "fe339a48-73fe-4a97-aa3b-54349f23fa2b"
+    },
+    {
+      "claim_id": "d748dcb4-f98b-4f0c-bb99-1dfcc9fd7b11",
+      "result_id": "fe339a48-73fe-4a97-aa3b-54349f23fa2b"
+    },
+    {
+      "claim_id": "c07c95ea-42f3-4b82-9be8-3a6d76eaa504",
+      "result_id": "fe339a48-73fe-4a97-aa3b-54349f23fa2b"
+    },
+    {
+      "claim_id": "db03abe1-fb95-4e9a-b4c5-d19e1e684bb8",
+      "result_id": "fe339a48-73fe-4a97-aa3b-54349f23fa2b"
+    },
+    {
+      "claim_id": "d867b74d-3b30-4f96-ae2f-f43344d522b5",
+      "result_id": "fe339a48-73fe-4a97-aa3b-54349f23fa2b"
+    },
+    {
+      "claim_id": "462c155d-c746-42a3-bd72-1b57b85e4418",
+      "result_id": "2e5d934e-7d36-44aa-8304-9bee0d236f65"
+    },
+    {
+      "claim_id": "17ff471e-4e99-4cc4-9dbc-11adb70970c4",
+      "result_id": "2e5d934e-7d36-44aa-8304-9bee0d236f65"
+    },
+    {
+      "claim_id": "b4c03be0-e1b5-43c4-bb6f-4858c560e4b2",
+      "result_id": "2e5d934e-7d36-44aa-8304-9bee0d236f65"
+    },
+    {
+      "claim_id": "fc78f499-a2f4-4939-a433-153d47f10c9f",
+      "result_id": "2e5d934e-7d36-44aa-8304-9bee0d236f65"
+    },
+    {
+      "claim_id": "345821b9-20fb-4e9c-8df2-7de28305cc48",
+      "result_id": "2e5d934e-7d36-44aa-8304-9bee0d236f65"
+    },
+    {
+      "claim_id": "4f23021a-3085-4fb9-88fe-fe9cc1934f17",
+      "result_id": "2e5d934e-7d36-44aa-8304-9bee0d236f65"
+    },
+    {
+      "claim_id": "a59c7f67-b177-4ba3-a4b8-a1c5e2b0a529",
+      "result_id": "0ff12dc4-2969-461c-ad54-f0e527325d60"
+    },
+    {
+      "claim_id": "9125d34e-9a31-4f3d-a1d5-1b5d977828d1",
+      "result_id": "0ff12dc4-2969-461c-ad54-f0e527325d60"
+    },
+    {
+      "claim_id": "24c73c43-b3ff-45a0-bc0f-2a2013fc3ee6",
+      "result_id": "0ff12dc4-2969-461c-ad54-f0e527325d60"
+    },
+    {
+      "claim_id": "3202b6c3-1ba4-43f7-afb6-4ee9fab47437",
+      "result_id": "0ff12dc4-2969-461c-ad54-f0e527325d60"
+    },
+    {
+      "claim_id": "841245d6-d3f3-4f84-844e-91c0ffdaffde",
+      "result_id": "0ff12dc4-2969-461c-ad54-f0e527325d60"
+    },
+    {
+      "claim_id": "d9aa70a7-4422-4381-8185-1b7e53f39296",
+      "result_id": "a071e629-0067-4aa5-9696-5fb6767b2546"
+    },
+    {
+      "claim_id": "626dab5c-10d2-4d15-9988-815f93a97e5a",
+      "result_id": "a071e629-0067-4aa5-9696-5fb6767b2546"
+    },
+    {
+      "claim_id": "cdba9e5b-93f0-48bd-bb26-fbb3fe0c357a",
+      "result_id": "a071e629-0067-4aa5-9696-5fb6767b2546"
+    },
+    {
+      "claim_id": "7b516052-079c-4980-93f3-f618ed98b259",
+      "result_id": "a071e629-0067-4aa5-9696-5fb6767b2546"
+    },
+    {
+      "claim_id": "3c740813-284b-47e9-a318-20f823256a4a",
+      "result_id": "a071e629-0067-4aa5-9696-5fb6767b2546"
+    },
+    {
+      "claim_id": "1fda5fbc-9f2c-4bff-b921-3b6bf0fed851",
+      "result_id": "a071e629-0067-4aa5-9696-5fb6767b2546"
+    },
+    {
+      "claim_id": "d62e4343-2427-41b6-8be2-5b0094f86c91",
+      "result_id": "a071e629-0067-4aa5-9696-5fb6767b2546"
+    },
+    {
+      "claim_id": "28175ecc-343b-4180-a9f5-a8f41a3e0b3a",
+      "result_id": "a071e629-0067-4aa5-9696-5fb6767b2546"
+    },
+    {
+      "claim_id": "0c416998-de11-4552-ae50-b606482fdee8",
+      "result_id": "a071e629-0067-4aa5-9696-5fb6767b2546"
+    },
+    {
+      "claim_id": "59ddb760-c9c3-44a5-9155-aa7639b0e0b9",
+      "result_id": "a071e629-0067-4aa5-9696-5fb6767b2546"
+    },
+    {
+      "claim_id": "aea08b95-2479-494b-afb8-1b9509cd8da2",
+      "result_id": "a071e629-0067-4aa5-9696-5fb6767b2546"
+    },
+    {
+      "claim_id": "19647a6b-9c2e-4aca-b16b-fad2b1786c70",
+      "result_id": "a071e629-0067-4aa5-9696-5fb6767b2546"
+    },
+    {
+      "claim_id": "a85bce46-4bff-4b7a-8fa9-b994bd6f8f3f",
+      "result_id": "a071e629-0067-4aa5-9696-5fb6767b2546"
+    },
+    {
+      "claim_id": "4216383c-f1f6-464d-9e0d-c02e1230c0f1",
+      "result_id": "a071e629-0067-4aa5-9696-5fb6767b2546"
+    },
+    {
+      "claim_id": "bad352a4-b805-4e0b-bc84-ea936710f8c4",
+      "result_id": "32c8d2a5-faad-4f47-bbcc-5889aa42eba4"
+    },
+    {
+      "claim_id": "7c56fbbd-4f8e-4091-bfd5-47d8f57da96e",
+      "result_id": "32c8d2a5-faad-4f47-bbcc-5889aa42eba4"
+    },
+    {
+      "claim_id": "436a1486-4ff9-428a-956d-cb056ee3e30f",
+      "result_id": "32c8d2a5-faad-4f47-bbcc-5889aa42eba4"
+    },
+    {
+      "claim_id": "5c1e1040-efab-48fb-8a47-b8e12b8f341d",
+      "result_id": "32c8d2a5-faad-4f47-bbcc-5889aa42eba4"
+    },
+    {
+      "claim_id": "53ba3f0f-dd5f-4de9-976f-7072fb3abcc1",
+      "result_id": "32c8d2a5-faad-4f47-bbcc-5889aa42eba4"
+    },
+    {
+      "claim_id": "17191305-3116-45a3-9509-f51c5c1192ef",
+      "result_id": "4383fb67-a16b-42d3-87ce-e20803b17e1c"
+    },
+    {
+      "claim_id": "09c4ad79-54d2-444a-9b2d-0e01f162cbb8",
+      "result_id": "4383fb67-a16b-42d3-87ce-e20803b17e1c"
+    },
+    {
+      "claim_id": "b41e4b90-a214-4c73-ae8a-9eca3542b2ba",
+      "result_id": "4383fb67-a16b-42d3-87ce-e20803b17e1c"
+    },
+    {
+      "claim_id": "af480272-2456-48d0-aa0b-aba9b6aa5b49",
+      "result_id": "4383fb67-a16b-42d3-87ce-e20803b17e1c"
+    },
+    {
+      "claim_id": "23c3e4fc-1ea5-4539-bc96-aa7e47dec243",
+      "result_id": "4383fb67-a16b-42d3-87ce-e20803b17e1c"
+    },
+    {
+      "claim_id": "8c01f621-a4f8-4f37-89c1-ff1a87719c3d",
+      "result_id": "4383fb67-a16b-42d3-87ce-e20803b17e1c"
+    },
+    {
+      "claim_id": "6a40a243-c971-4370-9fd0-330f3f95d7d1",
+      "result_id": "4383fb67-a16b-42d3-87ce-e20803b17e1c"
+    },
+    {
+      "claim_id": "3ab742cb-05bd-46b2-90c2-a16bf8f992ee",
+      "result_id": "4383fb67-a16b-42d3-87ce-e20803b17e1c"
+    },
+    {
+      "claim_id": "22d3f16d-42e4-44d3-8154-efc71b1e2539",
+      "result_id": "4383fb67-a16b-42d3-87ce-e20803b17e1c"
+    },
+    {
+      "claim_id": "e8622c91-d4ab-4004-a1a2-c32ce34125aa",
+      "result_id": "4383fb67-a16b-42d3-87ce-e20803b17e1c"
+    },
+    {
+      "claim_id": "6356202b-e086-4c1f-ba6a-9b228b7fdef3",
+      "result_id": "4383fb67-a16b-42d3-87ce-e20803b17e1c"
+    },
+    {
+      "claim_id": "71ac6533-2a97-4bad-ab98-450475f075b4",
+      "result_id": "4383fb67-a16b-42d3-87ce-e20803b17e1c"
+    },
+    {
+      "claim_id": "92563db6-073f-46ee-852d-36164bc6ead7",
+      "result_id": "17758501-23d2-44c9-86da-e0316ff8fc2d"
+    },
+    {
+      "claim_id": "c46e72a6-ff87-4a40-8443-87b4a4c73d26",
+      "result_id": "17758501-23d2-44c9-86da-e0316ff8fc2d"
+    },
+    {
+      "claim_id": "72ee68b8-7e47-4ef0-bdf7-485fc63fb7cb",
+      "result_id": "17758501-23d2-44c9-86da-e0316ff8fc2d"
+    },
+    {
+      "claim_id": "9d1f9cb2-cb67-47e9-8936-d8a9c042afe8",
+      "result_id": "17758501-23d2-44c9-86da-e0316ff8fc2d"
+    },
+    {
+      "claim_id": "6155140d-1371-463f-bff1-4db2437a4c6a",
+      "result_id": "17758501-23d2-44c9-86da-e0316ff8fc2d"
+    }
+  ],
+  "comparisons": []
+}

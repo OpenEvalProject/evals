@@ -1,0 +1,564 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C15"
+    ],
+    "result": "Single-cell RNA sequencing was performed on Drosophila wing discs at 96 and 120 hr AEL, generating profiles from 27,016 cells across four major cell types (AMPs, epithelial cells, tracheal cells, and hemocytes) after quality filtering and computational analysis using scVI and Seurat.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C15 provide comprehensive methodological details and results for the scRNAseq experiment. The experimental design (C7-C8), computational methods (C9-C11), and cell type identification (C12-C13, C15) are clearly described with appropriate citations and figure references. The overrepresentation of AMPs (C14) is acknowledged with a plausible technical explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Epithelial cells were classified into four major domains (notum, hinge, pouch, PE) based on marker gene expression, with the proximodistal axis showing greater transcriptional variation than the anteroposterior axis, and domain-specific marker genes already expressed by 96 hr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C25 describe the spatial organization of epithelial cells with appropriate marker genes (C18) and computational analysis (C19, C23-C24). The observation that proximodistal stratification is stronger than anteroposterior (C21, C25) is supported by differential expression analysis (Figure 1\u2014figure supplement 3F-H). The early establishment of domains (C20) is supported by expression data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Between 96 and 120 hr AEL, 337 genes were downregulated and 408 genes were upregulated in at least one epithelial cluster, indicating continued pattern refinement despite major cell types being established by 96 hr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 describe temporal gene expression changes in the epithelium. The specific numbers (C26) are supported by supplementary data, and the example of string (C27) illustrates localized regulation. The conclusion about pattern refinement (C28) is a reasonable inference from the data showing continued transcriptional changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "Initial AMP analysis revealed stratification by cell sex and cell cycle phase, which was computationally corrected using scVI to enable clearer analysis of AMP biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 describe technical covariates and their correction. The identification of sex and cell cycle effects (C29) is supported by Figure 1\u2014figure supplement 4 and 5, and the use of scVI for correction (C30) is an appropriate computational approach with proper citation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "AMPs were classified into direct and indirect populations based on differential expression of ct and vg, yielding 17,604 indirect AMPs and 2,281 direct AMPs, with classification possible at both 96 and 120 hr despite less distinct marker expression at the earlier timepoint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C37 describe AMP classification based on established markers (C31-C34 cite prior work). The computational classification (C35-C36) is supported by Figure 1N-Q and supplementary figures. The ability to classify cells at 96 hr despite less distinct markers (C37) is acknowledged and reasonable given the computational approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "A small number of genes showed differential expression between direct and indirect AMPs at both timepoints (including Wg and Notch pathway components), but the majority of differentially expressed genes were developmentally regulated with differential expression only at 120 hr, indicating that AMP subdivision occurs later than epithelial subdivision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 describe temporal patterns of AMP differentiation. The identification of constitutively and developmentally regulated genes (C38-C40) is supported by Figure 1\u2014figure supplement 6A and Supplementary file 3. The comparison to epithelial timing (C41) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "From 96 to 120 hr, expression of axon guidance genes (including roundabout2/slit, Neurotactin/Amalgam, Ten-a, and Ten-m) was activated and refined in AMPs, with Ten-m protein increase confirmed by antibody staining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 describe expression of axon guidance genes with appropriate citations (C43) and experimental validation (C44, Figure 1\u2014figure supplement 6C). The speculation about function in myoblasts (C45) is appropriately tentative and based on the expression data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "A three-layered virtual wing disc model was generated using DistMap to spatially map single cells, enabling prediction of gene expression patterns that were validated by comparison with transcriptional reporters for grn and pdm3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C53 describe the spatial mapping approach. The methodology (C46-C49) appropriately cites DistMap and describes the reference model. The validation (C50-C52) is supported by Figure 2D-G showing agreement between predictions and reporters. The conclusion about predictive capability (C53) is justified by the validation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Analysis of ligand-receptor pairs revealed complementary expression patterns: FGF ligands ths and pyr are expressed in the notum epithelium while their receptor htl is expressed in AMPs; hedgehog is expressed in the epithelium while its receptor ptc and transducer smo are expressed in both epithelium and AMPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 describe receptor-ligand expression patterns with appropriate citations (C54-C55). The observations are supported by Figure 2H and the virtual disc predictions. These findings set up the functional experiments that follow.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The FGF pathway components show specific spatial expression: htl is detected in nearly all AMPs, while ths and pyr are expressed primarily in the notum epithelium with overlapping but distinct patterns (ths more proximal, pyr extending to posterior hinge), consistent with reporter expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 provide detailed spatial characterization of FGF pathway components. The expression patterns (C59-C61) are supported by Figure 3B-D and the virtual disc model. Validation with reporters (C62, Figure 3E, I) strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Based on the known role of htl, ths, and pyr in embryonic mesoderm spreading (where mutants show multilayered rather than monolayer arrangements), the authors hypothesize that these FGF ligands may regulate AMP localization relative to the epithelium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 appropriately cite prior work on embryonic FGF function (C63-C64) and make a reasonable analogy to AMP biology (C65-C66). The speculation is appropriately tentative and provides rationale for subsequent experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "RNAi knockdown experiments demonstrate that FGF signaling is necessary for AMP survival: pyr knockdown in the epithelium (ap-Gal4) caused AMP reduction and apoptosis in ventral/posterior regions, while htl knockdown in AMPs (15B03-Gal4) decreased AMP numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 describe loss-of-function experiments with clear phenotypes shown in Figure 3F-K. The interpretation about partial redundancy of Pyr and Ths (C68) is supported by citations and the spatial restriction of the phenotype. The conclusion about FGF necessity (C71) is well-supported by both experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Ectopic expression of pyr or ths using dpp-Gal4 or nub-Gal4 caused massive AMP expansion throughout the expression domain, including regions normally devoid of AMPs (wing pouch, ventral hinge, peripodial epithelium), demonstrating that FGF signaling can induce AMP spreading beyond the notum and recruit AMPs from several cell diameters away.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 describe gain-of-function experiments with dramatic phenotypes shown in Figure 4A-D. The observation of AMPs in ectopic locations (C72-C73) is well-documented. The conclusions about FGF sufficiency for spreading (C74) and long-range recruitment (C76) are strongly supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Ectopic AMPs induced by FGF overexpression are capable of cell cycle progression, as shown by EdU incorporation and PHH3 staining throughout the A-P axis, demonstrating that FGF expression in epithelial cells is sufficient to attract AMPs and sustain their proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 provide cell cycle analysis of ectopic AMPs using standard markers (EdU, PHH3) shown in Figure 4E-F. The conclusion that FGF supports both attraction and proliferation (C79) is well-supported by the combination of localization and cell cycle data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Temporal control experiments using Gal80ts showed that FGF expression initiated at mid-L3 (48 hr before dissection) caused AMPs throughout the dorsal pouch, while later initiation (24 hr before) restricted AMPs to the dorsal hinge, demonstrating that AMPs can emigrate from the notum even in late L3 and that localized FGF expression defines the AMP niche.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 describe temporal control experiments (Figure 4G-H) that demonstrate AMP migration capacity. The interpretation that AMPs originate from the notum (C82) and can emigrate late in development (C83) is well-supported. The conclusion about FGF defining the niche (C84-C85) integrates the loss- and gain-of-function data effectively.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Analysis of Hedgehog pathway components revealed that ptc is expressed at low levels in most AMPs and high levels in a subset of direct AMPs, while smo and ci are uniformly expressed in AMPs; hh transcripts are negligible in AMPs but detected in ~32% of epithelial cells, supporting the hypothesis that epithelial Hh activates signaling in a subset of AMPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 describe Hh pathway expression patterns supported by Figure 5A-D. The differential ptc expression (C86) and absence of hh in AMPs (C88) are clearly shown. The inference about epithelial-to-AMP signaling (C90) is reasonable given the expression patterns and known Hh biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Ptc protein was detected in a subpopulation of AMPs localized primarily beneath the posterior epithelial compartment and extending 20-40 \u03bcm into the anterior region, with proximity to Hh-secreting cells suggesting local rather than systemic signaling, consistent with recent evidence for cytoneme-mediated Hh transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 describe Ptc protein localization (Figure 5E, Figure 5\u2014figure supplement 1) with specific distance measurements. The inference about local signaling (C93) is reasonable given the spatial restriction. The citation of cytoneme transport (C94) provides mechanistic context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Functional analysis of Hh signaling in AMPs showed that smo knockdown abolished Ptc expression while ci3m expression induced uniform Ptc expression, demonstrating that all AMPs can respond to Hh but only posterior-proximal AMPs receive the signal under normal conditions; neither manipulation affected AMP numbers, suggesting Hh regulates patterning rather than proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C100 describe genetic manipulations (Figure 5F-G) that test Hh pathway function. The loss- and gain-of-function results (C95, C97) clearly demonstrate pathway activity. The conclusion about competence vs. exposure (C98) is well-supported. The inference about patterning vs. proliferation (C99-C100) is reasonable given the lack of number changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Manipulation of Hh signaling in AMPs caused adult flight muscle defects and wing posture phenotypes: smo knockdown resulted in 'outstretched' wings while ci3m expression caused 'downtilted' wings, both preventing flight and reproducible across multiple RNAi lines and both sexes, indicating Hh signaling is crucial for functional adult flight muscle formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C109 describe adult phenotypes following larval Hh manipulation (Figure 5I-L). The wing posture phenotypes (C105-C106) are clearly documented and reproducible (C107). The flight defects (C108) and conclusion about Hh importance (C109) are well-supported by the consistent phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Examination of adult muscle morphology revealed that smo knockdown caused misalignment and disorganization of posterior DFMs (muscles 52-57), with muscle 53 inappropriately projecting to muscle 54's attachment site, while DLMs and DVMs appeared normal, indicating that Hh signaling loss specifically affects a subset of direct AMP-derived muscles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C114 provide detailed morphological analysis (Figure 5S-U, Figure 5\u2014figure supplement 2) of adult muscles. The specific defects in posterior DFMs (C111-C112) are well-documented, and the normal appearance of IFMs (C113) demonstrates specificity. The conclusion (C114) appropriately summarizes the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Constitutive Hh pathway activation via ci3m expression eliminated DVMs and caused severe DFM disorganization while leaving DLMs unaffected; muscle 51 (from non-wing disc AMPs) was also unaffected, and the DLM phenotype absence likely reflects their unique development via fusion with larval muscle templates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C118 describe ci3m overexpression phenotypes (Figure 5V-X). The DVM elimination and DFM defects (C115-C116) are clearly shown. The specificity controls (C117) and mechanistic explanation for DLM sparing (C118, citing prior work) strengthen the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "Overall, the data suggest that Hh signaling is important for proper specification of a subset of direct AMPs and that excessive Ci activity causes inappropriate patterning that perturbs IFM development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C120 provide an integrative conclusion from the Hh manipulation experiments (C95-C118). The conclusion about direct AMP specification (C119) is supported by the DFM-specific defects, and the interpretation of ci3m effects on IFMs (C120) is consistent with the DVM elimination phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Correlation analysis identified midline (mid) and Neurotactin (Nrt) as genes with relatively high correlation to ptc expression (Pearson correlation 0.44 and 0.34, respectively); mid encodes a T-box transcription factor related to mouse Tbx-20, while Nrt encodes a transmembrane protein that binds Amalgam dimers to promote cell adhesion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C124 describe identification of Hh target candidates using correlation analysis (Figure 6A-C). The correlation values (C121) are specific and testable. The gene descriptions (C122-C124) appropriately cite prior work establishing their functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Nrt and mid expression increased dramatically in direct AMPs from 96 to 120 hr based on scRNAseq and antibody staining, while ptc remained at similar levels; surprisingly, Nrt and Mid expression extended into anterior-localized direct AMPs that do not express Ptc.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C127 describe temporal and spatial expression patterns (Figure 6A-I). The dramatic increase in Nrt and Mid (C125) contrasts with stable ptc (C126), both supported by data. The unexpected anterior extension (C127) is an important observation that motivates subsequent experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Functional testing showed that smo knockdown dramatically decreased both Nrt and Mid expression in direct AMPs at 120 hr (in both posterior and anterior regions), while ci3m expression induced ectopic Nrt and Mid in all AMPs (higher in direct AMPs), demonstrating that all AMPs can induce these genes in response to Hh but only posterior-proximal AMPs do so physiologically.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C132 describe genetic tests of Hh regulation (Figure 6J-N). The loss-of-function (C129-C130) and gain-of-function (C131) results clearly demonstrate Hh-dependent regulation. The conclusion about competence vs. exposure (C132) parallels the ptc findings and is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The correlation between ptc, mid, and Nrt is specific to AMPs (not observed in epithelium), indicating Hh signaling is important for AMP patterning; however, Hh signaling is not required for all aspects of direct AMP fate as Ct expression was unaffected by smo knockdown, suggesting Hh acts independently of ct to specify a subpopulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C136 provide important specificity controls and mechanistic insights. The AMP-specificity (C133) is supported by analysis. The conclusion about patterning (C134) integrates multiple findings. The Ct independence (C135-C136, Figure 6\u2014figure supplement 1) demonstrates that Hh regulates a subset of direct AMP characteristics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C137",
+      "C138"
+    ],
+    "result": "Nrt knockdown reduced Nrt levels and resulted in adults with posterior DFM defects (albeit less severe than smo knockdown), demonstrating that the Hh-signaling downstream target Nrt is critical for proper DFM development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C138 provide functional validation of Nrt as a relevant Hh target (Figure 6O-P). The phenotype is less severe than smo knockdown, which is reasonable given that Nrt is one of multiple targets. The conclusion about Nrt's importance (C138) is supported by the DFM defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The observation that Nrt and Mid are expressed in anterior AMPs beyond 40 \u03bcm from the Hh source (where Ptc is not expressed), combined with the Hh-dependence of their expression, raised the possibility that these anterior cells were initially closer to Hh earlier in development and subsequently moved anteriorly, with Nrt and Mid expression perduring longer than Ptc.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C143 present a logical problem (anterior expression of Hh-dependent genes beyond Hh range) and propose a testable hypothesis (cell movement with differential perdurance). The reasoning is sound and appropriately tentative (C142-C143), setting up the lineage tracing experiment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C144",
+      "C145"
+    ],
+    "result": "Lineage tracing using ptc-Gal4 with temporal control showed GFP labeling of all posterior direct AMPs plus a trail of anterior AMPs matching the Nrt expression domain, indicating that anterior Nrt/Mid-positive AMPs descended from cells that previously expressed high ptc levels, with past Hh pathway activation responsible for anterior and posterior Nrt/Mid expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C145 describe elegant lineage tracing experiments (Figure 6Q-R) that test the cell movement hypothesis. The results clearly show that anterior Nrt-positive AMPs have a history of ptc expression, strongly supporting the model of cell movement with differential gene perdurance. This is a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Analysis revealed that spatial positioning within the wing disc is highly informative of transcriptional state, with the proximodistal axis being a primary stratifying feature in the epithelium; epithelial clusters mapped to sub-regions within domains, and despite lineage separation since embryogenesis, anterior-posterior compartments showed less differential expression than proximodistal regions, indicating position has greater influence than ancestry on cell transcriptome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C150 provide important insights about spatial organization and transcriptional identity. The observations about proximodistal dominance (C147) and successful spatial mapping (C148) are supported by the computational analysis. The comparison of positional vs. lineage effects (C149-C150) is a significant conceptual finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Temporal analysis showed that epithelial cell types are mostly established by 96 hr, while AMP transcriptomes (direct vs. indirect) diverge significantly between 96 and 120 hr, with AMPs appearing relatively naive at 96 hr (uniform ct/vg expression) but showing distinguishable differences by 120 hr; this earlier epithelial stabilization provides a platform for spatially localized signals regulating myoblast numbers and fate specification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C156 synthesize temporal findings from both cell types. The epithelial stability (C151) and AMP divergence (C152-C155) are well-documented in the data. The conclusion about epithelial-to-AMP signaling (C156) effectively integrates the temporal patterns with the functional findings about FGF and Hh.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "While Ths and Pyr were previously known to regulate embryonic mesoderm spreading, this study demonstrates they are necessary for AMP survival and that increased levels promote AMP proliferation at distant sites, with ectopic FGF sufficient to support AMP viability and proliferation including under the pouch; thus, localized Ths/Pyr expression in the notum provides trophic support for appropriate AMP numbers during normal development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C162 synthesize the FGF findings and place them in context of prior work. The novelty regarding AMP numbers (C157) is appropriate. The conclusions about necessity (C158) and sufficiency (C159-C161) are well-supported by the loss- and gain-of-function experiments. The model (C162) effectively integrates the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "Ectopic FGF expression can draw AMPs from the notum to the ventral hinge and peripodial epithelium, suggesting that under physiological conditions AMPs remain beneath the notum because FGF is insufficient elsewhere; overall, epithelial FGF is critical for forming the AMP niche and FGF levels regulate both AMP location and number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C163-C166 provide an integrative conclusion about FGF's role in niche formation. The observations about AMP migration (C163) are well-documented. The inference about physiological restriction (C164) is reasonable. The summary statements (C165-C166) effectively capture the major findings about FGF function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C167",
+      "C168"
+    ],
+    "result": "The study demonstrates that anteroposterior identities of the disc epithelium are important for proper gene expression specification in underlying AMPs, and leverages scRNAseq's ability to measure gene co-expression within subpopulations to identify Nrt and mid as novel Hh-signaling targets in AMPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C167-C168 highlight key findings and methodological advantages. The importance of epithelial A-P identity (C167) is demonstrated by the Hh experiments. The identification of novel targets (C168) showcases the power of the scRNAseq approach for discovering cell-type-specific pathway components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "Based on Nrt's known function in cell adhesion via Amalgam binding, Hh-induced Nrt expression in a subset of direct flight muscles might promote aggregation of Nrt-expressing cells during later development; lineage tracing favors a model where direct AMPs are generated posteriorly and move anteriorly (via active migration or oriented division), with understanding the mechanistic basis representing an exciting future research direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C172 provide speculation about Nrt function (C169) and AMP movement mechanisms (C171) that are appropriately tentative. The conclusion about posterior origin and anterior movement (C170) is well-supported by the lineage tracing. The suggestion for future work (C172) is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "This work provides a foundation for studying heterotypic interactions in the developing wing disc during normal growth, demonstrating that such interactions have major effects on cell number, migration, and fate; the analysis of receptor-ligand expression patterns with spatial mapping provides multiple avenues for future investigations of signaling between epithelial and myogenic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C173-C175 provide appropriate concluding statements. The contribution to understanding heterotypic interactions (C173-C174) is well-demonstrated by the FGF and Hh findings. The resource value for future studies (C175) is supported by the comprehensive dataset and spatial mapping approach.",
+    "result_type": "MAJOR"
+  }
+]

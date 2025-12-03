@@ -1,0 +1,1978 @@
+{
+  "submission": {
+    "id": "8a41ff07-2c43-43ad-88cf-24d37ba3a869",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T06:06:44.236880Z",
+    "updated_at": "2025-12-03T06:06:44.236880Z"
+  },
+  "content": [
+    {
+      "id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "submission_id": "8a41ff07-2c43-43ad-88cf-24d37ba3a869",
+      "content_type": "manuscript",
+      "content_text": "# Role of matrix metalloproteinase-9 in neurodevelopmental deficits and experience-dependent plasticity in Xenopus laevis\n\n## Authors\n\n- Sayali V Gore<sup>1</sup>\n- Eric J James<sup>1</sup>\n- Lin-chien Huang<sup>2</sup>\n- Jenn J Park<sup>1</sup>\n- Andrea Berghella<sup>1</sup>\n- Adrian C Thompson<sup>1</sup>\n- Hollis T Cline<sup>2</sup> ([ORCID: 0000-0002-4887-9603](https://orcid.org/0000-0002-4887-9603))\n- Carlos D Aizenman<sup>1</sup> ([ORCID: 0000-0002-7378-7217](https://orcid.org/0000-0002-7378-7217)) \u2020\n\n### Affiliations\n\n1. Department of Neuroscience, Brown University Providence United States\n2. The Scripps Research Institute La Jolla United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMatrix metalloproteinase-9 (MMP-9) is a secreted endopeptidase targeting extracellular matrix proteins, creating permissive environments for neuronal development and plasticity. Developmental dysregulation of MMP-9 may also lead to neurodevelopmental disorders (ND). Here, we test the hypothesis that chronically elevated MMP-9 activity during early neurodevelopment is responsible for neural circuit hyperconnectivity observed in Xenopus tadpoles after early exposure to valproic acid (VPA), a known teratogen associated with ND in humans. In Xenopus tadpoles, VPA exposure results in excess local synaptic connectivity, disrupted social behavior and increased seizure susceptibility. We found that overexpressing MMP-9 in the brain copies effects of VPA on synaptic connectivity, and blocking MMP-9 activity pharmacologically or genetically reverses effects of VPA on physiology and behavior. We further show that during normal neurodevelopment MMP-9 levels are tightly regulated by neuronal activity and required for structural plasticity. These studies show a critical role for MMP-9 in both normal and abnormal development.\n\n## Introduction\n\nAutism spectrum disorder (ASD) encompasses a highly heterogeneous set of neurodevelopmental conditions characterized by a complex behavioral phenotype and deficits in both social and cognitive functions. Over 100 gene mutations have been associated with ASD suggesting very different underlying etiologies (Betancur, 2011; Betancur and Coleman, 2013; Butler, 2018; Swanwick and Banerjee-Basu, 2011; Grove et al., 2019). This complex neurodevelopmental disorder, which is influenced by both genetic and environmental factors, results from profound changes in brain function and connectivity. The pathophysiology of ASD is often attributed to abnormal synaptic maturation and plasticity, defects in microcircuitry organization, disruption of the brain excitation to inhibition balance, local overconnectivity and long-range underconnectivity throughout the brain (Kumar et al., 2019; Markram and Markram, 2010). Even though some aspects of the etiology of ASD have been studied, how ASD-related behaviors arise from synaptic dysfunction and abnormal neural circuit development remain elusive.\n\nStudies in both humans (Bromley et al., 2013; Christensen et al., 2013) and animal models (Markram et al., 2008; Rodier et al., 1996; Roullet et al., 2010; Schneider et al., 2006; Schneider and Przew\u0142ocki, 2005) have shown that prenatal exposure to valproic acid (VPA), a common antiepileptic drug, results in a higher incidence of ASD in humans or ASD-like deficits in animals. In rodents, in utero exposure to VPA results in autistic-like behaviors in offspring; namely decreased socialization, increased repetitive behaviors, and hypersensitivity to sensory stimuli (Kataoka et al., 2013; Kim et al., 2011; Mehta et al., 2011; Moldrich et al., 2013). These behavioral deficits are accompanied by corresponding deficits in brain physiology, including increased local recurrent connectivity, synaptic activity, and decreased intrinsic neuronal excitability (Markram and Markram, 2010). Xenopus tadpoles when exposed to VPA have abnormal sensory-motor and schooling behavior which is accompanied by hyper-connected neural networks in the optic tectum, increased excitatory and inhibitory synaptic drive, elevated levels of spontaneous synaptic activity and decreased neuronal intrinsic excitability\u00a0(James et al., 2015). Consistent with these findings, VPA-treated tadpoles also have increased seizure susceptibility and decreased acoustic startle habituation\u00a0(James et al., 2015). VPA, a known histone-deacetylase inhibitor, causes these effects by hyperacetylation of gene promoters, and thus, by altering gene expression of various targets (Ghodke-Puranik et al., 2013; Terbach and Williams, 2009). Preliminary studies in Xenopus using microarrays and qPCR identified MMP-9 upregulation as a potential downstream effect of VPA exposure, suggesting that dysregulation of this protein may be important for mediating effects of VPA.\n\nMMP-9 is a secreted zinc-dependent extracellular endopeptidase that can cleave ECM and several cell surface receptors facilitating synaptic and circuit level reorganization (Ethell and Ethell, 2007; Niedringhaus et al., 2012; Reinhard et al., 2015). Early formation of proper synaptic connections and neural circuits is heavily regulated by the pericellular environment, and dysregulation of proteins important for extracellular matrix function could disrupt this process resulting in circuit abnormalities associated with ASD (Choi, 2018; Ferrer-Ferrer and Dityatev, 2018). During development, experience-dependent activity during critical periods can drive neural plasticity and MMP-9 plays an important role in this critical period plasticity (Murase et al., 2017; Oliveira-Silva et al., 2007; Reinhard et al., 2015; Spolidoro et al., 2012). Furthermore, MMP-9 is thought to play a role in adult neurogenesis and synaptic plasticity in the adult brain, and has been implicated in neural circuit formation (Fujioka et al., 2012; Peixoto et al., 2012; Pielecka-Fortuna et al., 2015; Wang et al., 2008).\n\nPrevious studies from the lab have utilized the Xenopus laevis tadpole CNS as a model for understanding the synaptic origin of neurodevelopmental disorders (James et al., 2015; Pratt and Khakhalin, 2013; Truszkowski et al., 2016). The optic tectum, a region in Xenopus CNS, receives converging inputs from multiple sensory modalities and is responsible for carrying out multisensory integration (Deeg and Aizenman, 2011; Pratt and Aizenman, 2009, Pratt and Aizenman, 2007). The retinotectal circuit and local circuits within the optic tectum are known to refine during development in an activity-dependent manner and mediate robust visually-guided behaviors that are very sensitive to abnormal circuit development (Dong et al., 2009; Lee et al., 2010), providing a strong link between neural circuit dysfunction and behavior and provide a robust model for understanding neurodevelopmental disorders at various levels of organization - from synapses to behavior. The present work investigates (1) whether upregulation of MMP-9 by whole-brain electroporation mimics electrophysiological effects induced by VPA, (2) whether downregulation of MMP-9 using a pharmacological agent or an antisense morpholino directed against MMP-9 rescues VPA-induced electrophysiological and behavioral effects, and (3) whether MMP-9 is required for activity-dependent structural plasticity.\n\n## Results\n\n### MMP-9 overexpression increases spontaneous synaptic activity and network connectivity, an effect also observed after VPA exposure\n\nExposure to VPA increases spontaneous synaptic activity, network connectivity and excitability in the developing tectum in Xenopus (James et al., 2015). Previous microarray studies from the lab have shown that VPA exposure results in striking alterations in gene expression, including a greater than two-fold increase in matrix metalloproteinase 9 (MMP-9). Here, we validated this finding by performing qPCR on tectal samples of VPA-exposed tadpoles and found a several-fold increase in mRNA levels for MMP9 [increase in MMP9 mRNA: 2.7\u00b10.3 fold increase over control, n=three replicates]. This suggested the hypothesis that chronically elevated levels of MMP-9 may mediate some of the effects of VPA by promoting excess plasticity leading to local hyperconnectivity. Thus, we first tested whether overexpression of MMP-9 mimics the VPA-induced effects on synaptic connectivity and excitability in the developing tectum. MMP-9 was overexpressed in tectal neurons of stage 42 tadpoles (approximately 7 days post-fertilization) using whole-brain electroporation, which results in expression in a small percent of tectal neurons (Haas et al., 2002). We performed whole-cell patch-clamp recordings from MMP-9-expressing tectal neurons of stage 47\u201348 tadpoles (approximately 15 days post-fertilization) using an ex vivo whole-brain preparation. One-way ANOVA showed significant differences in sEPSC frequencies between groups [sEPSCs frequency (events/s): p = 0.002, sIPSCs frequency (events/s): p = 0.03]. Post-hoc pairwise comparison indicated a significant increase in the frequency of sEPSCs [sEPSCs frequency (events/s): GFP control, 1.37 \u00b1 0.39, n = 11; MMP-9 transfected, 6.74 \u00b1 1.54, n = 15; MMP-9 non-transfected, 2.92 \u00b1 0.63, n = 19; p (GFP control and MMP-9 transfected) = 0.004; p (MMP-9 non-transfected and MMP-9 transfected) = 0.02] and sIPSCs [sIPSCs frequency (events/s): GFP control, 5.22 \u00b1 0.97, n = 11; MMP-9 transfected, 8.09 \u00b1 0.73, n = 13; MMP-9 non-transfected, 6.34 \u00b1 0.52, n = 15; p (GFP control and MMP-9 transfected) = 0.03; p (MMP-9 non-transfected and MMP-9 transfected) = 0.25] in the transfected MMP-9 overexpressing tectal cells compared with GFP controls and non-transfected neighbors (Figure 1A,B). There were no significant differences in the sEPSC amplitude [sEPSCs amplitude (pA): GFP control, 5.53 \u00b1 0.56, n = 11; MMP-9 transfected, 6.18 \u00b1 0.33, n = 15; MMP-9 non-transfected, 6.51 \u00b1 0.99, n = 19; p = 0.45] or sIPSCs amplitude [sIPSCs amplitude (pA): GFP control, 5.22 \u00b1 0.33, n = 11; MMP-9 transfected, 5.99 \u00b1 0.46, n = 13; MMP-9 non-transfected, 4.93 \u00b1 0.43, n = 15; p = 0.19] (Figure 1C), consistent with VPA-induced effects (James et al., 2015). Increased synaptic transmission observed in MMP-9 overexpressing tectal neurons is consistent with dysfunctional synaptic plasticity of sensory and local synaptic connections during development. Various theories of ASD and other neurodevelopmental disorders suggest that hyperconnected and hyperexcitable networks are the hallmarks of these disorders\u00a0(Supekar et al., 2013; Takarae and Sweeney, 2017). In the developing Xenopus tectum, spontaneous barrages of recurrent synaptic activity are often used as a measure of intra-tectal connectivity and network excitability\u00a0(James et al., 2015; Pratt and Aizenman, 2007). To gather more information about the tectal connectivity and excitability, we counted the number of spontaneous recurrent barrages occurring in MMP-9 overexpressing tectal cells as well as from GFP control cells. Increased number of spontaneous recurrent barrages were observed in both transfected and non-transfected cells from MMP-9 overexpressing animals, compared to GFP controls, indicating persistent local connectivity which usually is pruned during development\u00a0(Pratt et al., 2008) [Mean number of barrages/min: GFP control, 0.1 \u00b1 0.1, n = 11; MMP-9 transfected, 1.13 \u00b1 0.37, n = 15; MMP-9 non-transfected, 1.10 \u00b1 0.40, n = 19] (Figure 1D). The increased amount of barrage activity in non-transfected neurons, indicates that a small number of MMP-9-overexpressing cells are also sufficient to drive enhanced activity in the whole tectal network.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/62147/elife-62147-fig1-v3.jpg)\n\n**Figure 1.:** (A)\u00a0Representative sEPSCs and sIPSCs recorded at \u221245 mV and +5 mV, respectively, from control and MMP-9 transfected cells. (B) Boxplots showing frequency of sEPSCs and sIPSCs for GFP control, MMP-9 transfected and MMP-9 non-transfected groups. The sEPSC and sIPSC frequencies are significantly enhanced in the MMP-9 transfected cells in comparison to the GFP control. Each dot represents data from one cell, the box represents median and interquartile range (IQR) and whiskers represent the range of data. (C) Box plot showing sEPSC and sIPSC amplitudes for each group. The sEPSC and sIPSC amplitudes do not vary significantly between control, MMP-9 transfected and MMP-9 non-transfected groups. Data are represented as median \u00b1 IQR. (D) Histogram showing relative barrage frequency for each group. The inset shows representative traces of barrages from each experimental group. MMP-9 transfected and non-transfected groups showed a higher number of barrages (recorded at \u221245 mV) than the GFP control group. * p < 0.05, ** p < 0.005.\n\n### Pharmacological inhibition of MMP-9 rescues VPA-induced effects\n\nIn order to confirm whether MMP-9 upregulation mediates the neurodevelopmental effects of VPA exposure, we tested whether downregulation of MMP-9 by introduction of a pharmacological inhibitor of MMP-9 (3 \u00b5M SB-3CT, Brown et al., 2000) would rescue VPA-induced effects. The sEPSC frequency was significantly different across different treatments [sEPSC frequency (events/s): p = 0.02]. Consistent with prior observations, we observed a significant increase in the frequency of sEPSCs in the VPA group compared to the control. Addition of SB-3CT to VPA resulted in a reversal of the VPA-induced increase in sEPSC frequency, while SB-3CT alone did not show any significant effect of sEPSC frequency [sEPSC frequency (events/s): control, 3.13\u00b1 0.48, n = 14; VPA, 6.78 \u00b1 1, n = 21; VPA + SB-3CT, 4.3 \u00b1 0.67, n = 22; SC-3CT, 4.46 \u00b1 1.19, n = 11, P (control and VPA) = 0.004; P(VPA and VPA+SB-3CT) = 0.02] (Figure 2A,B). There were no significant differences in sEPSC amplitude [sEPSC amplitude (pA): control, 5.27 \u00b1 0.36, n = 14; VPA, 5.83 \u00b1 0.35, n = 21; VPA + SB-3CT, 5.94 \u00b1 0.22, n = 22; SC-3CT, 5.11 \u00b1 0.41, n = 11; p = 0.24] (Figure 2C). We further assessed changes in local excitatory connectivity by measuring evoked synaptic recurrent activity by electrically stimulating the optic chiasm using a bipolar stimulating electrode, and measuring the total charge during a time window which consists of predominantly recurrent activity (Pratt et al., 2008). One-way ANOVA showed significant differences across treatments for evoked responses [Total charge (pA.sec): p = 0.03]. We observed that maximal excitatory responses were elevated in VPA-treated tadpoles compared to the control group; and this effect was reversed in the VPA + SB-3CT group [Total charge (pA.sec): control, 1160.61 \u00b1 521.17, n = 8; VPA, 4163.43 \u00b1 574.77, n = 16; VPA + SB-3CT, 1780.89 \u00b1 479.29, n = 5; SC-3CT, 2655.15 \u00b1 718.41, n = 13; p (control and VPA) = 0.01; p (VPA and VPA+SB-3CT) = 0.03] (Figure 2D). Increased number of spontaneous recurrent barrages were observed in the VPA-reared tadpoles, compared to the GFP control; an effect rescued when VPA-rearing media was supplemented with SB-3CT [Number of barrages: control, 0.5 \u00b1 0.19, n = 14; VPA, 1.19 \u00b1 0.31, n = 21; VPA+SB-3CT, 0.59 \u00b1 0.19, n = 22; SB-3CT, 0.36 \u00b1 0.13, n = 11] (Figure 2E). These data suggest that pharmacological inhibition of MMP-9 reverses increases in excitatory transmission observed in VPA treated animals, but has no effects on untreated controls, suggesting that basal MMP-9 levels are low.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/62147/elife-62147-fig2-v3.jpg)\n\n**Figure 2.:** (A)\u00a0Representative sEPSCs (left) and evoked response (right) form control, VPA and VPA + SB-3CT-treated animals.\u00a0(B) Boxplots showing frequency of sEPSCs for control, VPA, VPA + SB-3CT, and SB-3CT alone groups. Frequency of sEPSCs are significantly enhanced in the VPA group, an effect rescued by addition of SB-3CT. SB-3CT alone does not have any significant effect on sEPSC frequency. Data are represented as median \u00b1 IQR. (C) Boxplots showing sEPSCs amplitude for each group. sEPSC amplitude does not change significantly between control and treatment animals. Data are represented as median \u00b1 IQR.\u00a0(D) Boxplot showing total charge from evoked synaptic response over a 100 ms window for each group. Total charge from evoked synaptic response is significantly higher in VPA treated animals and this effect is rescued in the presence of SB-3CT. Data are represented as median \u00b1 IQR. (E) Histogram showing relative barrage frequency for each group. Higher number of barrages are observed for VPA treated animals than in any other group. * p < 0.05, ** p < 0.005.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62147/elife-62147-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Box plot showing synapse density for control and VPA groups. VPA exposed tadpoles showed increased synapse density compared to control group. (B) Representative image from control animal expressing punctate PSD95-GFP (green) and pcDNA-mCherry (red). Upper image shows a magnified dendritic branch. (C) Representative image from VPA-exposed animal expressing punctate PSD95-GFP (green) and pcDNA-mCherry (red). Upper image shows a magnified dendritic branch with increased synapse density., ** p < 0.005.\n\nOne important question is the nature of the increase in spontaneous synaptic transmission observed after VPA exposure. Changes in synaptic transmission are unlikely to be due to increased intrinsic excitability of tectal neurons, as this had been shown to decrease after VPA exposure (James et al., 2015), and thus would lead to less network excitability. One prediction from this is that increases in spontaneous transmission are due to an increased number of synapses in the tectum after chronic VPA exposure. We directly tested this hypothesis by measuring synapse density by co-expressing GFP-tagged PSD95 to label postsynaptic densities (Sanchez et al., 2006) together with red fluorescent marker mCherry to label cell morphology. Although PSD-95 overexpression alone is known to increase synapse maturation (El-Husseini et al., 2000),\u00a0we found that VPA-treated tadpoles expressed a\u00a0significant increase\u00a0in synapse density compared to controls (Figure 2\u2014figure supplement 1). Together with the electrophysiological data, this experiment indicates that sEPSC frequency is a good proxy for synapse density, and that increased network hyperexcitability observed after VPA exposure likely arises due to increased density of synapses on tectal neurons.\n\n### Morpholino targeted against MMP-9 rescues VPA-induced effects\n\nAs an alternative manipulation to SB-3CT inhibition of MMP-9 activity, we genetically downregulated levels of MMP-9 using an antisense morpholino oligo (MO) targeted against MMP-9 to test whether we could reverse VPA-induced effects. Whole-brain electroporation of the anti-MMP-9 MO, resulted in a significant decrease in endogenous MMP-9 levels when compared to the scrambled control MO (Relative MMP-9 levels for MMP-9 MO/ Control MO, 0.72 \u00b1 0.048, n = 5, p = 0.004) (Figure 3A). As an alternative measure for MO effectiveness, we overexpressed an MMP-9 construct containing a FLAG tag, and found that the MMP-9 MO could decrease overexpression levels (not shown). We observed a significant decrease in the frequency of sEPSCs in the VPA+MMP-9 MO group compared to the VPA+control MO group suggesting that addition of MMP-9 MO in the presence of VPA rescues VPA-induced effects (Figure 3B). In a separate set of experiments, electroporation of MMP-9 MO alone on untreated animals did not have any effect on sEPSC frequency when compared to control MO (Figure 3C). [sEPSC frequency (events/s): VPA+control MO, 5.99 \u00b1 0.79, n = 9; VPA+MMP-9 MO, 1.55 \u00b1 0.28, n = 10; control MO, 6.09 \u00b1 1.27, n = 11; MMP-9 MO, 6.55 \u00b1 1.33, n = 18, p (VPA+control MO and VPA+MMP-9 MO) < 0.0001; p (control MO and MMP-9MO) = 0.81]. There were no significant differences in sEPSC amplitude [VPA+control MO, 6.75 \u00b1 0.57, n = 9; VPA+MMP-9 MO, 6.3 \u00b1 0.51, n = 10; control MO, 6.57 \u00b1 0.52, n = 11; MMP-9 MO, 6.73 \u00b1 0.61, n = 18, p (VPA+control MO and VPA+MMP-9 MO) = 0.61; p (control MO and MMP-9 MO) = 0.60] (Figure 3C). We next examined changes in local excitatory connectivity by measuring evoked synaptic recurrent activity by electrically stimulating the optic chiasm. We observed that maximal excitatory responses were significantly reduced in the VPA+MMP-9 MO group in comparison to the VPA+control MO group [Total charge (pA.sec): VPA+control MO, 14792 \u00b1 2454.59, n = 9; VPA+MMP-9 MO, 2752.9 \u00b1 390.4, n = 10, p (VPA+control MO and VPA+MMP-9 MO) < 0.0001] (Figure 3B). The maximal excitatory responses were not significantly different for only control MO and MMP-9 MO groups [Total charge (pA.sec): control MO, 2926.95 \u00b1 994.03, n = 8; MMP-9 MO, 2295.82 \u00b1 478.24, n = 9, p (control MO and MMP-9 MO) = 0.56] (Figure 3C). The VPA+MMP-9 MO group showed decreased frequency of barrages compared to the VPA +control MO group, suggesting that the downregulation of MMP-9 using MMP-9 MO rescues VPA-induced effects on spontaneous network activity [Number of barrages: VPA+control MO, 1.88 \u00b1 0.56, n = 9; VPA+MMP-9 MO, 0.7 \u00b1 0.3, n = 10]. The number of barrages were similar in only control MO and MMP-9 MO groups in the absence of VPA exposure [control MO, 1.09 \u00b1 0.31, n = 11; MMP-9 MO, 1.22 \u00b1 0.31, n = 18] (Figure 3D). Consistent with the SB-3CT findings, these data suggest that suppressing VPA-induced MMP-9 elevations, results in a reversal of VPA effects on excitatory synapse overconnectivity, but has little effect on baseline transmission in untreated animals.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/62147/elife-62147-fig3-v3.jpg)\n\n**Figure 3.:** (A)\u00a0Western blot image (left) indicating MMP-9 levels (75kD band) in control (scrambled) MO and MMP-9 MO transfected groups. Boxplot (right) shows relative MMP-9 levels for control MO and MMP MO transfected tadpoles. MMP-9 MO group consistently shows relatively reduced MMP-9 levels compared to controls. The dotted line represents a ratio of 1 (no difference). The 63 kDa band is a non-specific band labeled by MMP-9 antibody that shows no change. (B) Boxplots showing sEPSC frequency, amplitude and evoked synaptic response from VPA + Control MO and VPA + MMP-9 MO groups. Frequency of sEPSCs and not amplitude are significantly enhanced in VPA + Control MO group. Total charge from evoked synaptic response is significantly higher in the VPA + Control MO compared to VPA + MMP-9 MO-treated animals. Data are represented as median \u00b1 IQR. (C) Boxplots showing sEPSC frequency, amplitude and evoked synaptic response from Control MO and MMP-9 MO alone. Control MO and MMP-9 MO alone does not differ significantly in sEPSC frequency or amplitude. MMP-9 MO alone does not show any significant effect on evoked response. Data are represented as median \u00b1 IQR. (D) Histogram showing relative barrage frequency for each group. Higher number of barrages are observed for VPA + control MO, and this effect is rescued by addition of MMP-9 MO. ** p < 0.005, *** p < 0.0001.\n\n### Inhibition of MMP-9 reverses VPA-induced behavioral effects\n\nThe results so far suggest that increasing levels of MMP-9 produces VPA-like hyperconnected excitable tectal networks while downregulation of MMP-9 rescues these effects. One consequence resulting from increased recurrent circuitry within the tectum, and possibly other brain regions, is that this circuitry can promote the generation of behaviors associated with hyperexcitability like increased seizure susceptibility or abnormal startle habituation response\u00a0(James et al., 2015). We tested whether inhibition of MMP-9 could reverse these behavioral effects of VPA. To measure seizure susceptibility, tadpoles were exposed to 5 mM of the convulsant PTZ, over a period of 20 min, during which seizure activity was characterized. One-way ANOVA revealed significant differences for seizure frequency across different treatment groups [seizure frequency (events/minute): p = 0.01; time to first seizure (s): p = 0.006]. Consistent with prior work, VPA-reared tadpoles exhibited more frequent pharmacologically induced seizures compared to their matched controls, while animals reared in VPA+SB-3CT showed no increased seizure frequency, that is, a reversal of the VPA-induced effect [seizure frequency (events/minute): control, 0.72 \u00b1 0.04, n = 48; VPA, 0.90 \u00b1 0.04, n = 45; VPA+SB-3CT, 0.8 \u00b1 0.05, n = 34; p (control and VPA) = 0.004; p (VPA and VPA+SB-3CT) = 0.12] (Figure 4A). This indicates that pharmacologically inhibiting MMP-9 during VPA exposure prevents VPA-induced changes in seizure susceptibility. As a second behavioral test, we measured acoustic startle habituation responses by presenting repeated acoustic stimuli over six bouts. Typically, tadpoles show habituation during each bout and across bouts\u00a0(James et al., 2015). A repeated measure ANOVA revealed significant differences in startle speed across experimental groups [p < 0.001], bouts [p < 0.001] and group*bouts [p < 0.001] interaction. Post-hoc analysis showed significant differences between VPA vs. control and VPA vs VPA+SB3CT starting from bout 2 (Dunnett\u2019s). Control tadpoles showed decreased startle speed over repeated bouts, indicating habituation (Figure 4B). In VPA reared tadpoles, the animals showed reduced habituation. Co-exposure of SB-3CT and VPA reversed VPA-induced effects; although the startle habituation was significantly, but only partially restored relative to control levels. The sixth bout was measured with a 15 min delay between bouts, indicating long-term habituation, and this was also similarly affected across experimental groups.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/62147/elife-62147-fig4-v3.jpg)\n\n**Figure 4.:** (A)\u00a0Boxplots showing seizure frequencies for Control, VPA and VPA + SB-3CT groups. Seizure frequency is increased in the VPA group, but this effect is rescued by addition of SB-3CT. Data are represented as median \u00b1 IQR. (B) Line plot for startle response habituation for Control, VPA, and VPA + SB-3CT. VPA-treated animals show less habituation to startle response compared to control animals. Addition of SB-3CT to VPA reverses this effect. Bouts 1 to 5 are separated by 5 min time intervals, whereas bout six is separated from bout 5 by a 15-min time interval. Each dot represents average with standard error bars. * p < 0.05, ** p < 0.005, *** p<0.001.\n\n### Enhanced visual activity increases MMP-9 levels and MMP-9 inhibition prevents visual-activity induced dendritic growth\n\nOur data suggest that while inhibiting MMP-9 reverses the effect of VPA, this inhibition has no effect on control animals, suggesting that MMP-9 levels are low at baseline. One possibility is that during normal development, MMP-9 levels are tightly regulated by neural activity and are elevated transiently when there is a need for structural plasticity. Thus, periods of increased MMP-9 activity may correlate with experience-dependent synaptic reorganization during critical periods in the development of an organism (Murase et al., 2017). We used an assay for experience-dependent plasticity in the tectum, to test this hypothesis. Exposure of freely-swimming tadpoles to enhanced-visual stimulation for several hours is known to promote tectal neuron dendritic growth and synaptogenesis (Aizenman and Cline, 2007; Sin et al., 2002). We first tested whether this manipulation elevated MMP-9 levels in the brain. We exposed a group of tadpoles to enhanced visual activity in a custom-built chamber for 4 hr, another group was dark-exposed and a third group was left in normal light/dark rearing conditions, and then measured brain MMP-9 levels using a western blot. We found that exposure to enhanced visual activity resulted in significantly increased MMP-9 levels compared to dark and normal rearing conditions [Ratio of MMP-9 levels: L/D, 1.34 \u00b1 0.10, n = 5; L/N, 1.35 \u00b1 0.10, n = 5; D/N, 1.04 \u00b1 0.14, n = 5; p (L/D) = 0.03; p (L/N) = 0.03; p (D/N) = 0.79] (Figure 5A,B). We then compared the effect of MMP-9 inhibition on visual-stimulation induced dendritic growth. We used electroporation to express GFP in single tectal neurons in vivo (Bestman et al., 2006), and then imaged and reconstructed dendritic arbors to compare dendritic growth rate during a 3 hr dark-exposure period vs. growth rate after 3 hr of enhanced visual stimulation. We observed that in the control group, enhanced visual stimulation results in an increase in the total dendritic branch length compared to the dark period [Growth of total dendritic length (percent): Control/Dark, 97.35 \u00b1 5.76, n = 9; Control/Light, 128.32 \u00b1 7.25, n = 9] (Figure 5C). In the presence of SB-3CT, the enhanced visual stimuli does not increase total dendritic branch length [Growth of total dendritic length (%): SB-3CT/Dark, 107.30 \u00b1 6.61, n = 9; SB-3CT/Light, 96.88 \u00b1 7.88, n =\u00a09]. Thus, the change in dendritic growth rate was significantly decreased in the SB-3CT reared tadpoles in comparison to the matched control animals [Change in growth rate (%): Control, 136.61 \u00b1 12.29, n = 9; SB-3CT, 91.27 \u00b1 6.42, n = 9; p = 0.009] (Figure 5D,E). Taken together, these results suggest that enhanced visual stimulation increased MMP-9 levels, and that this increase is necessary for proper activity-driven dendritic arborization. By extension, chronically elevated levels of MMP-9 present in VPA-treated tadpoles would result in unregulated plasticity, leading to hyperconnectivity and hyperexcitability.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/62147/elife-62147-fig5-v3.jpg)\n\n**Figure 5.:** (A)\u00a0Western blot analysis specifying MMP-9 levels (75 kDa band) after lightbox, dark exposure and naive controls (normal). (B) Box plot showing relative MMP-9 levels for light box treatment (enhanced visual stimulation) vs dark exposed (L/D), light box vs naive controls (L/N) and dark exposed vs naive controls (D/N), based on western blot analysis. Enhanced visual activity using a light box experimental setup significantly increases relative MMP-9 levels compared to dark and normal rearing conditions. The dotted line represents a ratio of 1 (no difference). Data are represented as median \u00b1 IQR. (C) Left panel shows schematic of experimental design, three confocal imaging sessions were performed: one at the start of an experiment, a second after 3 hr of dark exposure and a third after 3 hr of enhanced visual stimulation. In control animals, visual stimulation enhances dendritic growth whereas SB-3CT prevents dendritic growth during this period. (D) SB-3CT significantly reduces the growth rate of dendrites during visual stimulation compared to the control group. Data are represented as median \u00b1 IQR. (E) Representative 2D tracings of 3D tectal cell reconstructions from control and SB-3CT groups are shown before any treatment (left), after 3 hr of dark exposure (middle) and after enhanced visual stimulation (right). * p < 0.05.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62147/elife-62147-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Schematic representation of the tadpole nervous system showing hindbrain (HB), optic tectum (OT) and olfactory bulb (OB). Optic tectum consists of a well-defined layer of cell bodies (yellow) extending their dendrites to the neuropil layer (orange). A representative neuron is shown in green with its cell body located in the cell body layer and dendrites extending in the neuropil layer. (B) The mean intensity of WFA was significantly less in the cell body layer of VPA-exposed animals compared to control. The mean WFA intensity in the neuropil layer was not significantly different across groups. (C) Representative images showing WFA distribution in tectal sections. Green color represents F-WFA while the blue color is DAPI. (Left) F-WFA staining is diffused across cell body and neuropil layers. (Middle) In some tectal sections, distinct compact PNNs (magnified PNN shown in right image) are observed in the tectal cell body layer while neuropil has diffused F-WFA staining. (Right) Magnified image of PNNs from tectal cell body layer. * p < 0.05.\n\nThese findings, indicating that MMP9 is required for structural plasticity, and that MMP9 is required for synaptic changes induced by VPA exposure, suggest that MMP9 may be targeting ECM elements that normally stabilize dendritic architecture. Perineuronal nets (PNNs) are lattice-like structures that cover soma and proximal dendrites. Studies in rodent models of developmental plasticity have shown that MMP9 cleaves various components of perineuronal nets to modify neuronal plasticity (Murase et al., 2017). We used fluorescein tagged Wisteria floribunda agglutinin (WFA) to visualize the distribution of chondroitin sulfate proteoglycans (CSPGs) component of PNNs across Xenopus tectum for VPA/control-treated animals (Murase et al., 2017). Xenopus tectum consists of a well-defined layer of cell bodies extending their dendrites to the neuropil layer. We studied the WFA distribution across the cell body and neuropil layers of the Xenopus tectum. Tadpoles exposed to VPA had significantly less WFA intensity in the cell body layer in comparison to controls, suggesting potential role of MMP9 in mediating proteolysis of PNNs (Figure 5\u2014figure supplement 1). The WFA intensity for the neuropil layer was not significantly different across control/VPA groups, possibly due to its more diffuse structure. This suggests that PNNs are a potential downstream target of MMP9 in this system, opening the door to further lines of inquiry.\n\n## Discussion\n\nThe results of this study suggest that chronic MMP-9 upregulation during early exposure to VPA, is responsible for mediating its effects on neural circuit connectivity and behavior. Exposure to VPA during a key developmental period in Xenopus produces hyperconnected and hyperexcitable neural networks responsible for producing abnormal behaviors such as enhanced seizure susceptibility and decreased habituation (James et al., 2015). Similarly, we found that upregulation of MMP-9 via overexpression resulted in increased frequency of sEPSCs, sIPSCs and barrages suggesting increased tectal connectivity and excitability. Downregulation of MMP-9 not only reversed VPA-induced synaptic connectivity and excitability in developing Xenopus tectum but also rescued VPA-induced behavioral effects. This suggests that chronically elevated levels of MMP-9 may produce abnormally high and sustained plasticity, leading to overconnectivity. Sensory experience during critical periods of development is crucial for proper maturation of sensory networks, and may involve transient, activity-dependent increases in MMP-9. In Xenopus, acute exposure to enhanced visual activity results in increased plasticity and dendritic growth in optic tectal neurons (Aizenman and Cline, 2007; Sin et al., 2002). We found that following enhanced visual stimulation, MMP-9 levels were elevated and that increased MMP-9 was necessary for experience-dependent dendritic growth, suggesting that during normal development, MMP-9 levels are low but transiently elevated to facilitate activity-induced structural plasticity.\n\nMMP-9 plays a paramount role in establishing synaptic connections during development and in restructuring of synaptic networks in the adult brain (Reinhard et al., 2015). Recent studies show that MMP-mediated proteolysis is important for remodeling of synaptic structure and function required for processes such as learning and memory, and action of MMPs on various extracellular matrix components, cell surface receptors and growth factors is crucial for modulating neurogenesis and neuroplasticity (Huntley, 2012). Dysregulated expression and activity of MMP-9 can result in abnormal synaptic remodeling; a hallmark of various neurodevelopmental disorders (Huntley, 2012). In particular, dysregulation of MMP-9 is known to influence cognitive processes (Beroun et al., 2019) and increased MMP-9 levels are associated with several neurodevelopmental disorders including ASD (Abdallah et al., 2012; Yoo et al., 2016), fragile X syndrome (Dziembowska et al., 2013; Sidhu et al., 2014), epilepsy (Konopka et al., 2013), bipolar disorder (Rybakowski et al., 2013), and schizophrenia (Yamamori et al., 2013). Consistent with these studies, our data showed that elevated MMP-9 activity results in neurodevelopmental deficits in Xenopus by creating a hyperplastic state which leads to local overconnectivity.\n\nIn addition to MMP9, there is also the possibility that other MMPs may be involved in this process. While MMP-9 showed the largest fold increase in the initial microarray screen after chronic VPA exposure, other MMPs with known effects in neural development and brain function (Beroun et al., 2019; Small and Crawford, 2016; Werner et al., 2008) showed significantly altered levels, including MMP25, MMP7, MMP14 and MMP28, with the second largest increase being in MMP25. Interestingly, MMP25 has been implicated in development of sensory neurons in zebrafish (Crawford et al., 2014) and it would be interesting to examine hindbrain and tectal innervation by other sensory modalities after VPA exposure (Deeg et al., 2009). Although changes in these other MMPs are yet to be confirmed by qPCR, they raise the intriguing possibility that multiple MMPs may be working in concert to regulate development and their dysregulation can also potentially have an impact in neurodevelopmental disorders.\n\nEarly life sensory experience during critical periods of development modifies functional circuits in the brain (Chklovskii et al., 2004; Hensch and Fagiolini, 2005). Periods of high MMP-9 activity correlate with structural and functional synaptic reorganization during critical period plasticity (CPP) and developmental windows across CNS regions, suggesting a role for MMP-9 in determining the developmental time course of CPP (Kaliszewska et al., 2012; Oliveira-Silva et al., 2007; Spolidoro et al., 2012). The results from our study are consistent with these observations in that MMP-9 levels increase in response to enhanced visual activity during a key period of development. Furthermore, this increase in MMP-9 correlates with visual activity induced plasticity and the inhibition of MMP-9 using a pharmacological inhibitor prevents visual-activity-induced dendritic growth. The secretion and activation of MMP-9 is tightly regulated by a wide variety of factors and once activated, it can act on multiple targets including various components of the ECM, cell adhesion molecules, cell surface receptors, cytokines, growth factors, and other proteases, each of which can have differential effects in creating permissive environments for structural plasticity in the brain (Van den Steen et al., 2002; Vandooren et al., 2013).\n\nThis central role for MMP-9 is further supported by recent studies in adult mice, in which upon light reintroduction, intense MMP-9 activity is observed surrounding excitatory synapses in the binocular visual cortex suggesting that MMP-9 can modulate plasticity even after closure of critical periods (Murase et al., 2019; Murase et al., 2017). Enzymatic activity of MMP-9 has been known for inducing and maintaining long-term potentiation and causes elongation and thinning of dendritic spines in the hippocampal neurons (Huntley, 2012; Michaluk et al., 2011). MMP-9 knock-out mice and overexpressing models show significantly reduced synaptic plasticity suggesting that appropriate levels of MMP-9 are needed for structural and functional reorganization of the brain (Wiera et al., 2013). Local activation of MMP-9 at the level of individual synapses can induce the maturation of spine heads (Szepesi et al., 2014). MMP-9 can act on various cell surface receptors like integrins, BDNF, ICAMs, NGL, all of which are known to be important for developmental and adult plasticity (Fiore et al., 2002; Lee et al., 2014; Michaluk et al., 2009; Yamamori et al., 2013). MMP-9, through activation of cell surface and cell adhesion molecules, is implicated not only in active dendritic spine remodeling and stabilization but also in pre- and postsynaptic receptor dynamics; consolidation of LTP; myelination and synaptic pruning (Reinhard et al., 2015). Perineuronal nets (PNNs), which are extracellular matrix components, are often associated with inhibitory interneurons and regulate their development and functions. Recent studies have shown that MMP-9 can rapidly degrade the PNNs surrounding various neurons enabling synaptic and network reorganization during experience dependent plasticity, and could also provide a mechanism by which dysregulation of MMP-9 can lead to abnormal development of neural circuitry (Murase et al., 2019; Murase et al., 2017; Wen et al., 2018). As we show in our data, VPA exposure also leads to degradation of PNNs in the developing tectum, suggesting that this is one possible downstream target in this system. Going forward, understanding the precise downstream targets and functions of MMP-9 will be critical for understanding various cellular and molecular mechanisms underlying neurodevelopmental disorders. Our study highlights the importance of MMP-9 in the etiology of neurodevelopmental disorders and future studies will focus on investigating the downstream molecular targets of MMP-9 and the role of other MMPs.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain,\u00a0strain background (Xenopus laevis)</td>\n      <td>Tadpole</td>\n      <td>Nasco</td>\n      <td>WT and Albino strains; LM00456, LM00456(A)</td>\n      <td>Bred in house</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Valproic Acid</td>\n      <td>Sigma</td>\n      <td>Cat. No. P4543</td>\n      <td>Drug</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>SB-3CT</td>\n      <td>Tocris</td>\n      <td>Cat. No. 6088</td>\n      <td>MMP9/2 inhibitor</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCMV-SPORT6, MMP-9, GFP</td>\n      <td>Invitrogen</td>\n      <td>pCMV-SPORT6 (backbone)</td>\n      <td>Expressing Xenopus MMP9 and GFP, or GFP alone, or MMP9-FLAG</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent</td>\n      <td>MMP-9 MO</td>\n      <td>GeneTools Bestman and Cline, 2014</td>\n      <td>DOI:10.1007/978-1-62703-655-9_11</td>\n      <td>Morpholino antisense oligonucleotide- lissamine tagged, Used to drive down expression of MMP9</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent</td>\n      <td>Control MO</td>\n      <td>GeneTools Bestman and Cline, 2014</td>\n      <td>DOI:10.1007/978-1-62703-655-9_11</td>\n      <td>Used as a transfection control, Morpholino antisense oligonucleotide- lissamine tagged</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-MMP9 (Rabbit polyclonal)</td>\n      <td>EMD Millipore</td>\n      <td>Ab19016; RRID:AB_91090</td>\n      <td>WB (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Rabbit-HRP (goat polyclonal)</td>\n      <td>BioRad</td>\n      <td>#1662408EDU; RRID:AB_11125345</td>\n      <td>Secondary Ab for WB</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Pierce ECL-western blot substrate</td>\n      <td>Thermo Fisher</td>\n      <td>Cat#32209</td>\n      <td>For visualizing labeling</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCALNL-GFP (plasmid)</td>\n      <td>Schohl et al., 2020 , DOI: 10.3389/fncir.2020.00047</td>\n      <td></td>\n      <td>For single cell labeling</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCAG-Cre (plasmid)</td>\n      <td>Schohl et al., 2020, DOI: 10.3389/fncir.2020.00047</td>\n      <td></td>\n      <td>For single cell labeling</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pBE-PSD-95 GFP</td>\n      <td>Sanchez et al., 2006; DOI: 10.1242/dev.02409</td>\n      <td></td>\n      <td>For synaptic labeling</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCMV-mCherry</td>\n      <td>Schwartz et al., 2009; DOI:10.1016/j.neuron.2011.02.055</td>\n      <td></td>\n      <td>Cell filling mCherry</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>F-WFA</td>\n      <td>Vector Labs</td>\n      <td>FL-1351\u20132</td>\n      <td>Fluorescein-labeled Wisteria floribunda agglutinin, 1:500 dilution for staining PNNs</td>\n    </tr>\n  </tbody>\n</table>\n\nAll animal experiments were performed in accordance with and approved by Brown University Institutional Animal Care and Use Committee standards and guidelines (Protocol number 19-05-0016).\n\n### Experimental animals\n\nAll experimental comparisons were done with matched controls from the same clutch to account for variability in responses over time and across experimental groups.\n\n### Drug treatments\n\nTadpoles were raised in Steinberg's rearing media on a 12 hr light/dark cycle at 18\u201321\u00b0C for 7\u20138 days, until they reached developmental stage 42 (Nieuwkoop and Faber, 1968). They were then transferred to either (i) control rearing media, (ii) 1 mM solution of VPA in Steinberg's solution, (iii) 1 mM VPA + 3 uM SB-3CT (a pharmacological inhibitor of MMP-9) or (iv)3 uM SB-3CT alone, depending on the experiment, and raised at temperatures ranging from 18\u00b0C to 21\u00b0C until they reached developmental stages of either 47\u201348 (15\u201316 days post-fertilization). Developmental stages of tadpoles were determined according to Nieuwkoop and Faber, 1968. For all the electrophysiological and behavioral experiments, the same concentration of VPA and SB-3CT were used. Previous experiments utilizing 1 mM VPA elicited distinct electrophysiological and behavioral effects\u00a0(James et al., 2015). The rearing medium was renewed every 3 days. Animals of either sex were used because, at these developmental stages, tadpoles of either sex are phenotypically indistinguishable.\n\n### Plasmid and antisense constructs\n\nMMP-9 overexpression construct: The MMP-9 overexpression plasmid contained a backbone of pCMV-SPORT6 plasmid with CMV promoter driving the expression of downstream cloned genes - MMP-9 and a GFP reporter. GFP control construct: The GFP control plasmid consisted of a backbone of pCMV-SPORT6 plasmid with CMV promoter driving the expression of only a GFP reporter. Each working solution contained 4 ug/ul of appropriate overexpression plasmid + 0.3 \u00b5L Fast Green.\n\nReduction of matrix metalloproteinase nine gene expression was accomplished through electroporation of a morpholino antisense oligonucleotide (MO)\u00a0(Bestman and Cline, 2014). Lissamine tagged MOs were designed and ordered from GeneTools. Sequences used for the MMP-9 MO and control MO were 5' AGACTAAAACTCCCACCCTACCCAT 3' and 5' CCTCTTACCTCAGTTACAATTTATA 3', respectively, and were adopted from the methods of\u00a0Faulkner et al., 2014. The control MO was a scrambled MO not known to align elsewhere. Working solution was prepared by diluting stock MO using endotoxin free molecular grade water and adding 1% Fast Green stock solution to make up 6% of the working solution, with a final concentration of 0.1 mM of MO.\n\n### Tectal cell transfection\n\nTo transfect cells in the tectum, stage 43\u201344 animals were anesthetized in a solution of 0.01% MS-222, plasmids or antisense morpholino constructs were injected into the midbrain ventricle, and voltage pulses were applied across the midbrain using platinum electrodes to electroporate cells lining the tectal ventricle\u00a0(Haas et al., 2002). Tadpoles were then screened for appropriate transfection by checking for fluorescence under a fluorescence microscope. The electroporation protocol used for MMP9 overexpression resulted in widespread transfection across tectal lobes with average 116.83 \u00b1 2.74 labeled neurons per tectal lobe (n=9).\n\n### Behavioral assays\n\nTadpoles that were used for seizures and acoustic startle response habituation protocols were not used again for other experiments. Immediately before behavioral experiments, tadpoles were transferred to Steinberg's media and left for 1 hr to recover from acute action of the drug.\n\n### Seizures\n\nSeizures were analyzed as described in James et al., 2015. For seizure experiments, when tadpoles reached stage 47, they were transferred into individual wells in a six-well plate (Corning), each filled with 7 ml of 5 mm pentylenetetrazol (PTZ) solution in Steinberg's media. The plate was diffusely illuminated from below and an overhead SCB 2001 color camera (Samsung) imaged tadpoles at 30 frames/s. Tadpole positions were acquired using Noldus EthoVision XT (Noldus Information Technology) and processed offline in a custom MATLAB program (MathWorks; Khakhalin, 2019; https://github.com/khakhalin/Xenopus-Behavior). Seizure events were defined as periods of rapid and irregular movement, interrupted by periods of immobility\u00a0(Bell et al., 2011). The onset of regular seizures happened on average 3.9 \u00b1 1.3 min into the recording and were detected automatically using swimming speed thresholding at a level of half of the maximal swimming speed. Number, frequency, and duration of seizure events were measured across 5 min intervals of a 20-min-long recording.\n\n### Startle habituation response\n\nA six-well plate fixed between two audio speakers (SPA2210/27; Philips), and mechanically connected to diaphragms of these speakers by inflexible plastic struts acted as an experimental arena for the startle habituation response experiment. Stage 49 tadpoles were placed in the experimental arena and acoustic stimuli (one period of a 200 Hz sine wave, 5 ms long) were presented every 5 s which evoked a reliable startle response. The observed startle response is likely due to a combination of inner ear-mediated and lateral line-mediated inputs, and, for the purposes of this study, we did not attempt to differentiate between the two. The amplitude of stimuli for habituation experiments was set at two times above the startle threshold. Each train of stimuli lasted for 2 min; trains 1 to 5 were separated by 5 min gaps, whereas train six was separated from train 5 by a 15 min gap. In order to compensate for possible variation in stimulus delivery across the wells, the location of treatment (1 mM VPA and 1 mM VPA + 3 uM SB-3CT) tadpoles and matched controls within the six-well plate was alternated across experiments. An overhead camera was used to acquire videos of the tadpoles, which were then tracked in EthoVision and processed offline in a custom MATLAB script (Khakhalin, 2019; https://github.com/khakhalin/Xenopus-Behavior). Peak speed of each startle response was measured across a 2 s interval after stimulus delivery. To quantify habituation of startle responses at different timescales, we adopted the nomenclature from previous studies (Eddins et al., 2010;\u00a0Roberts et al., 2011). Startle speeds were averaged across 1-min-long periods of acoustic stimulation and compared across periods. For rapid habituation, we compared responses during minutes 1 and 2 of the first 2-min train of stimuli.\n\n### Electrophysiology experiments\n\nFor whole-brain recordings, tadpole brains were prepared as described by Wu et al., 1996 and Aizenman et al., 2003. In brief, tadpoles were anesthetized in 0.02% tricainemethane sulfonate (MS-222). To access the ventral surface of the tectum, brains were filleted along the dorsal midline and dissected in HEPES-buffered extracellular saline [in mm: 115 NaCl, 2 KCl, 3 Cacl2, 3 MgCl2, 5 HEPES, 10 glucose, pH 7.2 (osmolarity, 255 mOsm)]. Brains were then pinned to a submerged block of Sylgard in a recording chamber and maintained at room temperature (24\u00b0C). To access tectal cells, the ventricular membrane surrounding the tectum was carefully removed using a broken glass pipette. For evoked synaptic response experiments, a bipolar stimulating electrode (FHC) was placed on the optic chiasm to activate RGC axons.\n\nWhole-cell voltage-clamp and current-clamp recordings were performed using glass micropipettes (8\u201312 M\u03a9) filled with K-gluconate intracellular saline [in mm: 100 K-gluconate, 8 KCl, 5 NaCl, 1.5 MgCl2, 20 HEPES, 10 EGTA, 2 ATP, and 0.3 GTP, pH 7.2 (osmolarity, 255 mOsm)]. Recordings were restricted consistently to retinorecipient neurons in the middle one-third of the tectum, thus avoiding any developmental variability existing along the rostrocaudal axis\u00a0(Hamodi and Pratt, 2014; Khakhalin and Aizenman, 2012; Wu et al., 1996). Electrical signals were measured with a Multiclamp 700B amplifier (Molecular Devices), digitized at 10 kHz using a Digidata 1440 analog-to-digital board, and acquired using pClamp 10 software. Leak subtraction was done in real time using the acquisition software. Membrane potential in the figures was not adjusted to compensate for a predicted 12 mV liquid junction potential. Data was analyzed using AxographX software. Spontaneous synaptic events were collected and quantified using a variable amplitude template (Clements and Bekkers, 1997). Spontaneous EPSCs (sEPSCs) were recorded at \u221245 mV (the reversal for chloride ions) whereas sIPSCs were collected in control media at 5 mV (the reversal for glutamatergic currents). For each cell, 60 s of spontaneous activity was recorded. For evoked synaptic response experiments, a bipolar stimulating electrode (FHC) was placed on the optic chiasm to activate RGC axons. Synaptic stimulation experiments were conducted by collecting EPSCs evoked by stimulating the optic chiasm at a stimulus intensity that consistently evoked maximal amplitude EPSCs. Polysynaptic stimulation experiments were performed by collecting EPSCs evoked by stimulating the optic chiasm at a stimulus intensity that evoked the maximal amplitude EPSC. Quantification of polysynaptic activity was calculated by measuring the total change in current over 100 ms time bins beginning at the onset of the evoked response. A spontaneous barrage was defined as a change in holding current of 10 or 20 pA intervals for a period of >200 ms (James et al., 2015). The sEPSC recordings were scanned carefully manually to detect and quantify the number of barrages observed for each of the experimental groups. Graphs show median and interquartile ranges (IQRs) as error bars, and data in the text shows the averages and SEs. Across experiments we did not find any significant differences in either input resistance or cell capacitance between groups, as indicated in Supplementary file 1.\n\n### Real-time quantitative PCR analysis\n\nFor quantifying MMP9 expression levels, whole tecta were harvested at developmental stage 49 from tadpoles reared in control conditions or with 1 mM VPA from stage 42. Sequences used for the MMP-9 forward and reverse primer were 5' TCATGGGATCTTTTGCTCGT 3' and 5' CCTTGGGTAGCCATTATCAA 3', respectively. Optic tecta were collected from 10 tadpoles from three independent breedings and stored in RNAlater prior to the isolation of RNA by TRIzol extraction. SuperScript IV VILO first strand cDNA synthesis was then performed according to the manufacturer\u2019s protocol (Invitrogen). Real-time quantitative PCR (RT-qPCR) was performed by using Power SYBR Green master kit with an Applied Biosystems StepOnePlus according to standard manufacturer\u2019s protocols (ThermoFisher). Data were analyzed by the \u0394\u0394CT relative quantification method using the housekeeper gene RSP13.\n\n### Quantification of MMP-9 protein levels\n\nWestern blots were used to examine the protein expression changes in the midbrain of the tadpoles under different visual experience conditions or the knockdown of MMP-9. To examine the specificity of MMP-9 morpholino, whole-brain electroporation was performed at stage 47 tadpoles with 0.4 mM morpholino oligos and plasmid that expresses MMP-9 fused with flag peptide (1 mg/ml), and the midbrain tissues were dissected 2 days later. To test the effect of morpholino on knocking down endogenous MMP-9 protein expression, whole-brain electroporation was performed at stage 47 tadpoles with 0.4 mM morpholino oligos, and the mid-brain tissues were collected 2 days after electroporation. In order to test the effect of different visual experience conditions on MMP-9 protein expression, animals were reared under enhanced visual stimulation, dark or ambient light (12 hr enhanced visual stimulations/12 hr dark).\n\nTissues were homogenized in lysis buffer documented in Joukov et al., 2001 (HEPES 100 mM (pH 7.5), NaCl 200 mM, EDTA 40 mM, EGTA 4 mM, NaF 100 mM, \u03b2-glycerophosphate 20 mM, sodium orthovanadate 2 mM, Nonidet P-40 1%, Complete Protease Inhibitor mixture 1:50), and the protein concentration was measured with Bio-Rad DC Protein Assay kit. Twenty \u00b5g of lysate was loaded onto an in-house made 7% gel for electrophoresis. Proteins were transferred to a nitrocellulose membrane with Trans-Blot Turbo transfer system (BioRad). The membrane was incubated in 5% blotting reagent/0.1% Tween-20 (Sigma) in TBS for an hour for blocking, and then transferred to primary MMP-9 antibody solution (1:2 k; EMO millipore ab19016) diluted in blocking solution and incubated overnight at 4\u00b0C. After three brief washes with 0.1% Tween-20 in TBS, membranes were transferred to goat anti-rabbit HRP-conjugated secondary antibody (BioRad), diluted in blocking solution for an hour at room temperature. The Pierce ECL western blot substrate (Thermo Fisher Scientific, 32209) was used to visualize labeling. For quantification analysis, different exposure periods were used for the same blots to avoid saturation, and total protein normalization was made to Ponceau S staining as a loading control (Romero-Calvo et al., 2010). The densitometric analysis of western blot and the total protein was performed using Gel Analyzer of ImageJ, and the data of MMP-9 protein expression were normalized against the total protein as a loading control. Staining using anti-MMP-9 antibodies often resulted in labeling some non-specific bands in addition to the 75 kDa band. Thus, MMP-9-flag overexpression was used in combination with anti-flag antibodies to confirm specificity of the MMP-9 MO and confirm location of MMP-9 band.\n\n### Neuronal morphology\n\nTo label single tectal cells, Stage 44\u201345 tadpoles were electroporated using the pCALNL\u2013GFP plus pCAG\u2013Cre plasmids (courtesy Ed Ruthazer, McGill University, Montreal, Quebec, Canada)\u00a0(Ruthazer et al., 2013) at a ratio of 5000:1 to limit coexpression to a very small subset of neurons. Approximately 3 days after electroporation (around developmental stages 48\u201349), the animals were screened to check for successful fluorescence. Tadpoles were selected for those in which a single neuron in the tectum was expressing GFP and could be imaged clearly. A Zeiss LSM 800 Confocal Laser Scanning Microscope was used to image tadpoles containing labeled neurons. Prior to the experiment, tadpoles were either immersed in control media or media containing SB3CT. Animals were then anesthetized in 0.02% MS-222 and imaged under the 40X water immersion objective. For each animal, the clearest, most isolated and identifiable cell in the tectum was imaged. Initially, a z-stack encompassing the cell body and the entire length of all neurites was taken for each animal (as the reference image). After these reference images were taken, the tadpoles were transferred to the rearing media (Control or 3 uM SB3CT) and incubated in dark for 3 hr. The same cell that had been previously imaged was identified for each animal and imaged after the 3 hr dark exposure. The tadpoles were then put back into their respective wells and subjected to enhanced visual stimuli using a \u2018light box\u2019 for 3 hr. The light box consisted of a chamber with 4x3 array of green LEDs attached to the ceiling. Each row of LEDs flashed for 1 s and was then followed by the adjacent row, until all four rows had flashed and a 1 s pause occurred. The cycle then started over, and was presented over a 3 hr period. After visual simulation, a third image was taken. Dendritic arbors of imaged neurons were reconstructed in 3D and analyzed using Neutube and Fiji software (respectively). The total path length of each image was measured. Then, using the series of three images taken for each cell, growth rate was calculated.\n\n### In\u00a0vivo expression of PSD95-GFP and synapse density analysis\n\nWe used a pBE-PSD95-GFP containing plasmid in combination with pcDNA-mCherry (courtesy Ed Ruthazer, McGill University, Montreal, Quebec, Canada) in Xenopus tectum to visualize dendritic processes to allow us to quantify synapse density in control and VPA groups. Stage 42 tadpoles were exposed to VPA/Steinberg's solution until they reached stage 47\u201348. At stage 44\u201345, tadpoles were electroporated with PSD95-GFP and pcDNA-mCherry (1:1 proportion) using standard electroporation protocol. Once tadpoles reached stage 49 (approximately 4\u20135 days post electroporation), they were screened for well isolated tectal cells/regions with mCherry and punctate GFP expression. Tadpoles were anesthetized and isolated neurons/regions with well-defined puncta were imaged with a 40x objective (40x Water, NA 1.2) in a Zeiss LSM 800 Confocal Laser Scanning Microscope (with 4x averaging). For each tadpole, optical sections (0.5 \u00b5m thick) of well isolated neurons/regions were gathered simultaneously at two wavelengths (green and red) to get precise identity and position of synaptic processes along the dendritic arbor. PSD95-GFP punctate distribution was used to quantify post-synaptic processes, while pcDNA-mCherry expression was used to trace neuronal morphology. Data analysis for quantification of GFP-puncta was performed on raw z-stack images using the 3D Objects Counter plug-in Fiji. All the images had distinct punctate GFP expression along dendritic arbors with some background non-punctate GFP. An in-built thresholding function of 3D Objects Counter was used to detect discrete individual puncta. The criteria used for thresholding involved subtracting pixel values of background non-punctate GFP along the dendritic arbors. Any background non-punctate GFP in the cell body and surrounding region was excluded from the data analysis. Various parameters like total number of puncta, size, intensity, etc. were obtained from the 3D Objects Counter plugin output. For the same image, dendritic arbors were reconstructed in 3D and analyzed using the Simple Neurite Tracer plugin in Fiji to measure various parameters including total dendritic length. The ratio of total number of puncta (obtained from 3D Objects Counter) and total dendritic length (obtained from Simple Neurite Tracer) was used to calculate synapse density.\n\n### Detection and quantification of perineuronal nets (PNNs)\n\nTadpoles were exposed to VPA/Steinberg\u2019s solution at stage 42 until they reached stage 47\u201348. A fluorescein-tagged Wisteria floribunda agglutinin (F-WFA) was used to visualize the distribution of the chondroitin sulfate proteoglycan (CSPGs) component of PNNs across Xenopus tectum for VPA/control treated animals. At stage 49, tadpoles were anesthetized, fixed in 4% paraformaldehyde for 24 hr followed by serial sucrose gradient (overnight incubation with 15%, 20%, and 30% sucrose solution each). The tadpoles were then frozen in OCT and thin (20 \u00b5m) horizontal sections were obtained using cryostat (Leica). Sections were blocked in 3% normal donkey serum (NDS) in 1X PBS for 1 hr at room temperature. Sections were then incubated in 1:500 dilution of F-WFA (Vector Labs FL-1351\u20132, Fluorescein labeled Wisteria Floribunda Lectin, WFA, WFL) in 1X PBS with 2% NDS at 4\u00b0C for 20\u201324 hr. F-WFA incubation was followed by nuclei staining using DAPI and slides were mounted with DPX for imaging. Sections were imaged with a 40x (1.2 NA) objective in a Zeiss LSM 800 Confocal Laser Scanning Microscope (with 4x averaging) and the distribution of PNNs in the optic tectum was analyzed. Xenopus tectum consists of a well-defined layer of cell bodies extending their dendrites to the neuropil layer. F-WFA staining showed diffused distribution of CSPGs across the cell body and neuropil layer. Occasionally, we observed intact PNNs surrounding specific cell bodies. Since the majority of images contained diffuse staining, we decided on using average F-WFA intensity as a measure for PNNs distribution. Maximum intensity projections were obtained for each image and average intensity values were measured for cell body and neuropil region using Fiji. Average F-WFA intensity for a tadpole was calculated by averaging the F-WFA intensity of at least three sections from that tadpole. In order to minimize error in F-WFA intensity for every slide, we separated the slide in two halves, and placed sections from each control and VPA in each half. Introduction of Chondroitinase ABC (Sigma, 9024-13-9) results in degradation of PNNs, which was seen by decrease in F-WFA intensity in tectum and was used as a positive control in all the experiments.\n\n### Statistical analyses\n\nFor all the data, averages and SEs are given in the text, whereas median values and interquartile range (IQR) are shown in the figures. Sample sizes were based on power analyses and known variability from prior work in our experimental system. No outliers were removed from the data analysis; however, data points that were above 1.5 times IQR may be indicated as outliers in some graphs for data presentation purposes and increased clarity. One-way ANOVA was used to compare differences between overall values of the groups. Repeated measures ANOVA was used to compare differences between startle speed (cm/s) with treatment groups as between-subjects variables and bouts as a repeated measure to assess habituation response upon repeated stimulation. Student two-tailed t-test with unequal variances was used to assess differences in relative MMP-9 levels across different treatments. Differences were considered statistically significant at p<0.05, and significant results followed by Bonferroni post-hoc pairwise comparisons. All statistical analyses were carried out in R (R v3.6.1, http://www.R-project.org) with supplementary installed packages \u2018readr\u2019,\u2019lsr\u2019, \u2018ggplot2\u2019, \u2018nlme\u2019, \u2018ez\u2019,\u2019dplyr\u2019, 'stats', and 'lme4\u2019, \u2018emmeans\u2019.\n",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "73734e2f-4068-4926-baba-11e0c0d7a3cf",
+      "submission_id": "8a41ff07-2c43-43ad-88cf-24d37ba3a869",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Lisa M Monteggia, Vanderbilt University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.62147.sa1](https://doi.org/10.7554/eLife.62147.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nPrevious work from the Aizenman lab demonstrated the utility of the Xenopus tectum as a model to examine neuronal, circuit and behavioral manifestations of valproic acid (VPA) treatment, a teratogen associated with autism spectrum disorder in humans. In the current manuscript they demonstrate that the deficits induced by VPA treatment, including enhanced spontaneous and evoked neuronal activity, are blocked by pharmacological or morpholino based inhibition of MMP9. Inhibition of MMP9 also reverses the effects of VPA treatment on seizure susceptibility and the startle habituation response. Over-expression of MMP9 pheno-copies the effect of VPA, and inhibition of MMP9 in single tectal neuronal blocks the expression of experience-dependent structural plasticity. Overall, this is a convincing demonstration of the impact of MMP9 in the regulation of experience dependent structural plasticity in a model system. Of note, the authors are advised to state the potential caveats of the PSD-95 expression approach as pointed about in the re-review comments.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Role of matrix metalloproteinase-9 in neurodevelopmental disorders and plasticity in Xenopus tadpoles\" for consideration by eLife. We apologize that it took longer than we hope for the review as it took longer than expected to secure reviewers. Your article has now been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Gary Westbrook as the Senior Editor. The reviewers have opted to remain anonymous. The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe editors and reviewers have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published. We would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary\n\nThe Aizenman lab has previous demonstrated the utility of the Xenopus tectum as a model to examine neuronal, circuit and behavioral manifestations of valproic acid (VPA) treatment, a teratogen associated with autism spectrum disorder in humans. In Gore et al., they demonstrate that the deficits induced by VPA treatment, including enhanced spontaneous and evoked neuronal activity, are blocked by pharmacological or morpholino based inhibition of MMP9. Inhibition of MMP9 also reverses the effects of VPA treatment on seizure susceptibility and the startle habituation response. Over-expression of MMP9 pheno-copies the effect of VPA, and inhibition of MMP9 in single tectal neuronal blocks the expression of experience-dependent structural plasticity. Although the reviewers expressed enthusiasm for the manuscript there were concerns that need to be addressed.\n\nEssential revisions:\n\n1. What is the exact nature of \"increased connectivity\"? Is there an increase in synapse numbers or solely an increase in dendritic complexity coupled with a functional plasticity? The authors should document properties of mEPSCs and mIPSCs recording in TTX to isolate synaptic properties. Coupling this \"mini\" analysis to quantification of synapse numbers will address whether the changes are solely due to structural plasticity or also due to a functional potentiation of transmission. These experiments should at least be conducted in MMP-9 overexpression, VPA treatment and VPA treatment+MMP-9 loss-of-function cases to validate the basic premise that there is an increased connectivity.\n\n2. How is increased MMP-9 produces the synaptic and behavioral effects? What is the downstream target (specific receptor?) that would produce the broad changes in synaptic and behavioral phenotypes? Or is this a rather non-specific effect of extracellular matrix? Based on years of data on MMP-9 function its impact on \"structural plasticity\" in general terms is not surprising but further mechanistic details and specific targets would help move this field forward.\n\n3. The authors refer to microarray data as the rationale for pursuing the role for MMP9 in VPA-induced hyperconnectivity. Please cite the microarray study(ies?). How many other MMPs or proteases with documented roles in development are similarly upregulated? The authors should say how other possible candidate genes did or did not change, perhaps presenting the list with data in a table (at least other MMPs and proteases). If others have changed, the authors should discuss their data in that context.\n\n4. The authors should comment on the specificity of the SB-3CT, particularly with regard to other MMPs or proteases that may/may not have been found to be upregulated in the microarray experiment. Importantly, does SB-3CT rescue the expression levels of MMP-9?\n\n5. The finding that a small number of MMP9 overexpressing cells is fascinating. Have the authors stained the tissue for MMP9 after VPA?\n\n6. Results, first paragraph: although it is in the methods, please state briefly the timing of the VPA exposure and MMP9 overexpression and the age/stage at which the experiments were performed. Within the methods, please give approximate age in days after hatching for the non-tadpole experts.\n\n7. Do the authors have data on the intrinsic cell properties (input resistance, capacitance, etc.)? If so, they should include that data either in Supplemental information or in the text. These factors could absolutely influence hyperconnectivity or measurements of the synaptic properties, so at least the authors should discuss their findings in the context of the findings of James, et al.\n\n8. Please report the number (or %) of tectal neurons in which MMP9 was over-expressed following whole-brain electroporation (Figure 1). -Does MMP9 transfection change the E/I ratio, as previously reported for VPA? Does VPA or MMP9 inhibition change the initial large amplitude/short latency evoked response?\n\n9. please report statistics for total number of barrages or barrage distribution across experimental groups (latter also for Figure 3).\n\n10. Figures3 and 5: The presentation of the immunoblots should clarify if raw or normalized (to Ponceau Blue) data were quantified.\n\n11. Figure 4: Please report a post hoc comparison following the repeated measures ANOVA\n\n12. Figure 5: Total growth and growth rates could also be included in the Results section.\n",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "dfb6b22d-46e6-480b-b915-a58a7022a4f5",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C1",
+      "claim": "Matrix metalloproteinase-9 (MMP-9) is a secreted endopeptidase targeting extracellular matrix proteins, creating permissive environments for neuronal development and plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Matrix metalloproteinase-9 (MMP-9) is a secreted endopeptidase targeting extracellular matrix proteins, creating permissive environments for neuronal development and plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about MMP-9's function in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "1294bd23-f930-440a-a62c-9f2f692b2c7b",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C2",
+      "claim": "Developmental dysregulation of MMP-9 may lead to neurodevelopmental disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Developmental dysregulation of MMP-9 may also lead to neurodevelopmental disorders (ND).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a speculative hypothesis in the abstract.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "0811b482-6666-4cde-9241-023b97cd3d1f",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C3",
+      "claim": "VPA exposure in Xenopus tadpoles results in excess local synaptic connectivity, disrupted social behavior and increased seizure susceptibility.",
+      "claim_type": "EXPLICIT",
+      "source": "In Xenopus tadpoles, VPA exposure results in excess local synaptic connectivity, disrupted social behavior and increased seizure susceptibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the study in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "2d7a539f-c51a-4afb-913e-f5130a1361e6",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C4",
+      "claim": "Overexpressing MMP-9 in the brain copies effects of VPA on synaptic connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that overexpressing MMP-9 in the brain copies effects of VPA on synaptic connectivity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a finding from the study in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "66b40719-cedc-407d-9529-b26ac86c17ca",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C5",
+      "claim": "Blocking MMP-9 activity pharmacologically or genetically reverses effects of VPA on physiology and behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "blocking MMP-9 activity pharmacologically or genetically reverses effects of VPA on physiology and behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a finding from the study in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "8daced03-f4ea-458e-b207-34ab345326fc",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C6",
+      "claim": "During normal neurodevelopment MMP-9 levels are tightly regulated by neuronal activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We further show that during normal neurodevelopment MMP-9 levels are tightly regulated by neuronal activity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a finding from the study in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "b84cab86-eddd-4fa7-8292-23432323e77a",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C7",
+      "claim": "MMP-9 is required for structural plasticity during normal neurodevelopment.",
+      "claim_type": "EXPLICIT",
+      "source": "We further show that during normal neurodevelopment MMP-9 levels are tightly regulated by neuronal activity and required for structural plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a finding from the study in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "6f47bb3b-9808-4a4c-83cd-8dad3970b50e",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C8",
+      "claim": "Over 100 gene mutations have been associated with ASD.",
+      "claim_type": "EXPLICIT",
+      "source": "Over 100 gene mutations have been associated with ASD suggesting very different underlying etiologies (Betancur, 2011; Betancur and Coleman, 2013; Butler, 2018; Swanwick and Banerjee-Basu, 2011; Grove et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "f6bf76ff-701a-4429-863f-349d2b10e529",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C9",
+      "claim": "The pathophysiology of ASD is often attributed to abnormal synaptic maturation and plasticity, defects in microcircuitry organization, disruption of the brain excitation to inhibition balance, local overconnectivity and long-range underconnectivity throughout the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "The pathophysiology of ASD is often attributed to abnormal synaptic maturation and plasticity, defects in microcircuitry organization, disruption of the brain excitation to inhibition balance, local overconnectivity and long-range underconnectivity throughout the brain (Kumar et al., 2019; Markram and Markram, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "47824ff3-d8be-4c26-8686-57bfdad74316",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C10",
+      "claim": "Prenatal exposure to valproic acid (VPA) results in a higher incidence of ASD in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies in both humans (Bromley et al., 2013; Christensen et al., 2013) and animal models (Markram et al., 2008; Rodier et al., 1996; Roullet et al., 2010; Schneider et al., 2006; Schneider and Przew\u0142ocki, 2005) have shown that prenatal exposure to valproic acid (VPA), a common antiepileptic drug, results in a higher incidence of ASD in humans",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to human studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "6664a785-16b9-4c16-978e-e7c7dc3a5fc5",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C11",
+      "claim": "Prenatal exposure to VPA results in ASD-like deficits in animal models.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies in both humans (Bromley et al., 2013; Christensen et al., 2013) and animal models (Markram et al., 2008; Rodier et al., 1996; Roullet et al., 2010; Schneider et al., 2006; Schneider and Przew\u0142ocki, 2005) have shown that prenatal exposure to valproic acid (VPA), a common antiepileptic drug, results in a higher incidence of ASD in humans or ASD-like deficits in animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to animal studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "e4e1b12e-9448-45b0-8c97-ec74a0ecce8c",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C12",
+      "claim": "In rodents, in utero exposure to VPA results in decreased socialization, increased repetitive behaviors, and hypersensitivity to sensory stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "In rodents, in utero exposure to VPA results in autistic-like behaviors in offspring; namely decreased socialization, increased repetitive behaviors, and hypersensitivity to sensory stimuli (Kataoka et al., 2013; Kim et al., 2011; Mehta et al., 2011; Moldrich et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to rodent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "d1aa3821-0e42-4e83-a05a-a7f751f352eb",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C13",
+      "claim": "In rodents, VPA-induced behavioral deficits are accompanied by increased local recurrent connectivity, synaptic activity, and decreased intrinsic neuronal excitability.",
+      "claim_type": "EXPLICIT",
+      "source": "These behavioral deficits are accompanied by corresponding deficits in brain physiology, including increased local recurrent connectivity, synaptic activity, and decreased intrinsic neuronal excitability (Markram and Markram, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "89300ff0-95c3-4f12-8961-5714b4242abd",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C14",
+      "claim": "Xenopus tadpoles exposed to VPA have abnormal sensory-motor and schooling behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Xenopus tadpoles when exposed to VPA have abnormal sensory-motor and schooling behavior which is accompanied by hyper-connected neural networks in the optic tectum, increased excitatory and inhibitory synaptic drive, elevated levels of spontaneous synaptic activity and decreased neuronal intrinsic excitability (James et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "2b72e0ba-a2ad-44d7-a435-aa8e78ef472b",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C15",
+      "claim": "VPA-exposed Xenopus tadpoles have hyper-connected neural networks in the optic tectum.",
+      "claim_type": "EXPLICIT",
+      "source": "Xenopus tadpoles when exposed to VPA have abnormal sensory-motor and schooling behavior which is accompanied by hyper-connected neural networks in the optic tectum, increased excitatory and inhibitory synaptic drive, elevated levels of spontaneous synaptic activity and decreased neuronal intrinsic excitability (James et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "fa570846-de3b-4e41-af9d-eca823604a9a",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C16",
+      "claim": "VPA-treated Xenopus tadpoles have increased seizure susceptibility and decreased acoustic startle habituation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these findings, VPA-treated tadpoles also have increased seizure susceptibility and decreased acoustic startle habituation (James et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "7db014e1-e30f-41a1-8833-d9ec0d6bcbb7",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C17",
+      "claim": "VPA is a histone-deacetylase inhibitor that causes effects by hyperacetylation of gene promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "VPA, a known histone-deacetylase inhibitor, causes these effects by hyperacetylation of gene promoters, and thus, by altering gene expression of various targets (Ghodke-Puranik et al., 2013; Terbach and Williams, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "3c778b3c-fe7e-4e47-abb4-49796e0f539d",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C18",
+      "claim": "Preliminary studies in Xenopus using microarrays and qPCR identified MMP-9 upregulation as a potential downstream effect of VPA exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Preliminary studies in Xenopus using microarrays and qPCR identified MMP-9 upregulation as a potential downstream effect of VPA exposure",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from preliminary studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "0b7e0af5-d0b5-494c-b251-d5abb57cdd4b",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C19",
+      "claim": "MMP-9 can cleave ECM and several cell surface receptors facilitating synaptic and circuit level reorganization.",
+      "claim_type": "EXPLICIT",
+      "source": "MMP-9 is a secreted zinc-dependent extracellular endopeptidase that can cleave ECM and several cell surface receptors facilitating synaptic and circuit level reorganization (Ethell and Ethell, 2007; Niedringhaus et al., 2012; Reinhard et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "ab900b54-2d54-416a-83cb-d528cc4aa9eb",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C20",
+      "claim": "MMP-9 plays an important role in critical period plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "During development, experience-dependent activity during critical periods can drive neural plasticity and MMP-9 plays an important role in this critical period plasticity (Murase et al., 2017; Oliveira-Silva et al., 2007; Reinhard et al., 2015; Spolidoro et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "d195809e-2ecc-4f99-a384-bf647c2b0393",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C21",
+      "claim": "MMP-9 is thought to play a role in adult neurogenesis and synaptic plasticity in the adult brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, MMP-9 is thought to play a role in adult neurogenesis and synaptic plasticity in the adult brain, and has been implicated in neural circuit formation (Fujioka et al., 2012; Peixoto et al., 2012; Pielecka-Fortuna et al., 2015; Wang et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "87f2ee97-7d9b-4748-9648-9c4339c0b92c",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C22",
+      "claim": "The optic tectum in Xenopus receives converging inputs from multiple sensory modalities and is responsible for carrying out multisensory integration.",
+      "claim_type": "EXPLICIT",
+      "source": "The optic tectum, a region in Xenopus CNS, receives converging inputs from multiple sensory modalities and is responsible for carrying out multisensory integration (Deeg and Aizenman, 2011; Pratt and Aizenman, 2009, Pratt and Aizenman, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "bc1136ea-bd84-4a74-98bd-45d1e0a9edd6",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C23",
+      "claim": "The retinotectal circuit and local circuits within the optic tectum refine during development in an activity-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The retinotectal circuit and local circuits within the optic tectum are known to refine during development in an activity-dependent manner and mediate robust visually-guided behaviors that are very sensitive to abnormal circuit development (Dong et al., 2009; Lee et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "ef99e714-5e11-4073-a12b-57e42e2d8059",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C24",
+      "claim": "VPA exposure results in a several-fold increase in MMP9 mRNA levels in tectal samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we validated this finding by performing qPCR on tectal samples of VPA-exposed tadpoles and found a several-fold increase in mRNA levels for MMP9 [increase in MMP9 mRNA: 2.7\u00b10.3 fold increase over control, n=three replicates].",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by qPCR data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "1af58c8d-1516-4e23-a531-c148c589ad27",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C25",
+      "claim": "MMP-9 was overexpressed in tectal neurons using whole-brain electroporation at stage 42 tadpoles.",
+      "claim_type": "EXPLICIT",
+      "source": "MMP-9 was overexpressed in tectal neurons of stage 42 tadpoles (approximately 7 days post-fertilization) using whole-brain electroporation, which results in expression in a small percent of tectal neurons (Haas et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used, with citation to the technique.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "9c7cd6dc-fcde-40f5-b8da-1ef47c841700",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C26",
+      "claim": "MMP-9 overexpression significantly increases the frequency of sEPSCs in transfected tectal cells compared with GFP controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Post-hoc pairwise comparison indicated a significant increase in the frequency of sEPSCs [sEPSCs frequency (events/s): GFP control, 1.37 \u00b1 0.39, n = 11; MMP-9 transfected, 6.74 \u00b1 1.54, n = 15; MMP-9 non-transfected, 2.92 \u00b1 0.63, n = 19; p (GFP control and MMP-9 transfected) = 0.004; p (MMP-9 non-transfected and MMP-9 transfected) = 0.02]",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiological data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "9f1828e1-8fd3-4182-8486-f6b05c9fe416",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C27",
+      "claim": "MMP-9 overexpression significantly increases the frequency of sIPSCs in transfected tectal cells compared with GFP controls.",
+      "claim_type": "EXPLICIT",
+      "source": "sIPSCs [sIPSCs frequency (events/s): GFP control, 5.22 \u00b1 0.97, n = 11; MMP-9 transfected, 8.09 \u00b1 0.73, n = 13; MMP-9 non-transfected, 6.34 \u00b1 0.52, n = 15; p (GFP control and MMP-9 transfected) = 0.03; p (MMP-9 non-transfected and MMP-9 transfected) = 0.25]",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiological data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "5adb6523-121e-461d-af9e-a4b5a7f567dc",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C28",
+      "claim": "There were no significant differences in sEPSC amplitude between MMP-9 overexpressing cells and controls.",
+      "claim_type": "EXPLICIT",
+      "source": "There were no significant differences in the sEPSC amplitude [sEPSCs amplitude (pA): GFP control, 5.53 \u00b1 0.56, n = 11; MMP-9 transfected, 6.18 \u00b1 0.33, n = 15; MMP-9 non-transfected, 6.51 \u00b1 0.99, n = 19; p = 0.45]",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiological data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "3f4c1517-3774-423d-b139-7310071d4499",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C29",
+      "claim": "There were no significant differences in sIPSC amplitude between MMP-9 overexpressing cells and controls.",
+      "claim_type": "EXPLICIT",
+      "source": "or sIPSCs amplitude [sIPSCs amplitude (pA): GFP control, 5.22 \u00b1 0.33, n = 11; MMP-9 transfected, 5.99 \u00b1 0.46, n = 13; MMP-9 non-transfected, 4.93 \u00b1 0.43, n = 15; p = 0.19]",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiological data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "83a645d6-ee55-4a40-8ca2-84e123d9c906",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C30",
+      "claim": "MMP-9 overexpression increases the number of spontaneous recurrent barrages in both transfected and non-transfected cells compared to GFP controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased number of spontaneous recurrent barrages were observed in both transfected and non-transfected cells from MMP-9 overexpressing animals, compared to GFP controls, indicating persistent local connectivity which usually is pruned during development (Pratt et al., 2008) [Mean number of barrages/min: GFP control, 0.1 \u00b1 0.1, n = 11; MMP-9 transfected, 1.13 \u00b1 0.37, n = 15; MMP-9 non-transfected, 1.10 \u00b1 0.40, n = 19]",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiological data with citation to prior work on barrages.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "e5af5f8f-7159-4c06-8085-1d36b441f14d",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C31",
+      "claim": "A small number of MMP-9-overexpressing cells are sufficient to drive enhanced activity in the whole tectal network.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased amount of barrage activity in non-transfected neurons, indicates that a small number of MMP-9-overexpressing cells are also sufficient to drive enhanced activity in the whole tectal network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that non-transfected cells also show increased barrage activity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "83f5b3ee-23db-4977-8347-661b5c7f6cd6",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C32",
+      "claim": "Addition of SB-3CT to VPA resulted in a reversal of the VPA-induced increase in sEPSC frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of SB-3CT to VPA resulted in a reversal of the VPA-induced increase in sEPSC frequency, while SB-3CT alone did not show any significant effect of sEPSC frequency [sEPSC frequency (events/s): control, 3.13\u00b1 0.48, n = 14; VPA, 6.78 \u00b1 1, n = 21; VPA + SB-3CT, 4.3 \u00b1 0.67, n = 22; SC-3CT, 4.46 \u00b1 1.19, n = 11, P (control and VPA) = 0.004; P(VPA and VPA+SB-3CT) = 0.02]",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiological data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "4243cddc-27ca-4002-a0b5-e55cd0e8bdb4",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C33",
+      "claim": "SB-3CT alone did not show any significant effect on sEPSC frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of SB-3CT to VPA resulted in a reversal of the VPA-induced increase in sEPSC frequency, while SB-3CT alone did not show any significant effect of sEPSC frequency [sEPSC frequency (events/s): control, 3.13\u00b1 0.48, n = 14; VPA, 6.78 \u00b1 1, n = 21; VPA + SB-3CT, 4.3 \u00b1 0.67, n = 22; SC-3CT, 4.46 \u00b1 1.19, n = 11, P (control and VPA) = 0.004; P(VPA and VPA+SB-3CT) = 0.02]",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiological data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "919b4a33-e98a-4f3d-b53e-88540e9205b0",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C34",
+      "claim": "There were no significant differences in sEPSC amplitude across control, VPA, VPA+SB-3CT, and SB-3CT groups.",
+      "claim_type": "EXPLICIT",
+      "source": "There were no significant differences in sEPSC amplitude [sEPSC amplitude (pA): control, 5.27 \u00b1 0.36, n = 14; VPA, 5.83 \u00b1 0.35, n = 21; VPA + SB-3CT, 5.94 \u00b1 0.22, n = 22; SC-3CT, 5.11 \u00b1 0.41, n = 11; p = 0.24]",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiological data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "f0daf6da-08ea-424a-94e4-a6524d14eae2",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C35",
+      "claim": "Maximal excitatory responses were elevated in VPA-treated tadpoles compared to the control group.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that maximal excitatory responses were elevated in VPA-treated tadpoles compared to the control group; and this effect was reversed in the VPA + SB-3CT group [Total charge (pA.sec): control, 1160.61 \u00b1 521.17, n = 8; VPA, 4163.43 \u00b1 574.77, n = 16; VPA + SB-3CT, 1780.89 \u00b1 479.29, n = 5; SC-3CT, 2655.15 \u00b1 718.41, n = 13; p (control and VPA) = 0.01; p (VPA and VPA+SB-3CT) = 0.03]",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiological data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "0aa22306-cf19-47c9-b8d9-457089ed56fb",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C36",
+      "claim": "The VPA-induced elevation in maximal excitatory responses was reversed in the VPA + SB-3CT group.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that maximal excitatory responses were elevated in VPA-treated tadpoles compared to the control group; and this effect was reversed in the VPA + SB-3CT group [Total charge (pA.sec): control, 1160.61 \u00b1 521.17, n = 8; VPA, 4163.43 \u00b1 574.77, n = 16; VPA + SB-3CT, 1780.89 \u00b1 479.29, n = 5; SC-3CT, 2655.15 \u00b1 718.41, n = 13; p (control and VPA) = 0.01; p (VPA and VPA+SB-3CT) = 0.03]",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiological data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "4b1ab79b-cbef-442d-ac8d-d96dc12782e1",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C37",
+      "claim": "VPA-reared tadpoles showed increased number of spontaneous recurrent barrages compared to control.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased number of spontaneous recurrent barrages were observed in the VPA-reared tadpoles, compared to the GFP control; an effect rescued when VPA-rearing media was supplemented with SB-3CT [Number of barrages: control, 0.5 \u00b1 0.19, n = 14; VPA, 1.19 \u00b1 0.31, n = 21; VPA+SB-3CT, 0.59 \u00b1 0.19, n = 22; SB-3CT, 0.36 \u00b1 0.13, n = 11]",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiological data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "98715743-f1e5-4b99-bafb-5fbd49113b55",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C38",
+      "claim": "VPA-rearing media supplemented with SB-3CT rescued the VPA-induced increase in spontaneous recurrent barrages.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased number of spontaneous recurrent barrages were observed in the VPA-reared tadpoles, compared to the GFP control; an effect rescued when VPA-rearing media was supplemented with SB-3CT [Number of barrages: control, 0.5 \u00b1 0.19, n = 14; VPA, 1.19 \u00b1 0.31, n = 21; VPA+SB-3CT, 0.59 \u00b1 0.19, n = 22; SB-3CT, 0.36 \u00b1 0.13, n = 11]",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiological data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "d4112b26-1b54-4f49-9a39-5f1ba13a57ac",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C39",
+      "claim": "Pharmacological inhibition of MMP-9 reverses increases in excitatory transmission observed in VPA treated animals.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that pharmacological inhibition of MMP-9 reverses increases in excitatory transmission observed in VPA treated animals, but has no effects on untreated controls, suggesting that basal MMP-9 levels are low.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the SB-3CT experimental data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "15f3d6d2-e093-4017-88a9-2b31969cf2f7",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C40",
+      "claim": "Basal MMP-9 levels are low in untreated animals.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that pharmacological inhibition of MMP-9 reverses increases in excitatory transmission observed in VPA treated animals, but has no effects on untreated controls, suggesting that basal MMP-9 levels are low.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that SB-3CT has no effect on untreated controls.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "4cf0e366-9e73-490e-b9a4-b906ff26f686",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C41",
+      "claim": "VPA-exposed tadpoles showed increased synapse density compared to control group.",
+      "claim_type": "EXPLICIT",
+      "source": "we found that VPA-treated tadpoles expressed a significant increase in synapse density compared to controls (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by synapse density measurements shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "81d3289b-4270-477b-a8cc-b97844d92fa2",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C42",
+      "claim": "Increased network hyperexcitability observed after VPA exposure likely arises due to increased density of synapses on tectal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with the electrophysiological data, this experiment indicates that sEPSC frequency is a good proxy for synapse density, and that increased network hyperexcitability observed after VPA exposure likely arises due to increased density of synapses on tectal neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combination of electrophysiology and synapse density data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "f97ff4bc-36f4-4866-a47f-bde9712f7c4e",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C43",
+      "claim": "Whole-brain electroporation of the anti-MMP-9 MO resulted in a significant decrease in endogenous MMP-9 levels when compared to the scrambled control MO.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole-brain electroporation of the anti-MMP-9 MO, resulted in a significant decrease in endogenous MMP-9 levels when compared to the scrambled control MO (Relative MMP-9 levels for MMP-9 MO/ Control MO, 0.72 \u00b1 0.048, n = 5, p = 0.004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by western blot data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "d89c5f31-83c7-47b4-8eeb-03b43cc0ed31",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C44",
+      "claim": "Addition of MMP-9 MO in the presence of VPA rescues VPA-induced effects on sEPSC frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a significant decrease in the frequency of sEPSCs in the VPA+MMP-9 MO group compared to the VPA+control MO group suggesting that addition of MMP-9 MO in the presence of VPA rescues VPA-induced effects",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiological data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "6f11f467-6c1c-424d-b254-07ce68dae51a",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C45",
+      "claim": "Electroporation of MMP-9 MO alone on untreated animals did not have any effect on sEPSC frequency when compared to control MO.",
+      "claim_type": "EXPLICIT",
+      "source": "In a separate set of experiments, electroporation of MMP-9 MO alone on untreated animals did not have any effect on sEPSC frequency when compared to control MO",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiological data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "7cd6edca-817a-43e1-9647-9476b63e0dc6",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C46",
+      "claim": "There were no significant differences in sEPSC amplitude between VPA+control MO and VPA+MMP-9 MO groups.",
+      "claim_type": "EXPLICIT",
+      "source": "There were no significant differences in sEPSC amplitude [VPA+control MO, 6.75 \u00b1 0.57, n = 9; VPA+MMP-9 MO, 6.3 \u00b1 0.51, n = 10; control MO, 6.57 \u00b1 0.52, n = 11; MMP-9 MO, 6.73 \u00b1 0.61, n = 18, p (VPA+control MO and VPA+MMP-9 MO) = 0.61; p (control MO and MMP-9 MO) = 0.60]",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiological data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "b81a5a07-5f41-4d85-95da-746aa546dde4",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C47",
+      "claim": "Maximal excitatory responses were significantly reduced in the VPA+MMP-9 MO group in comparison to the VPA+control MO group.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that maximal excitatory responses were significantly reduced in the VPA+MMP-9 MO group in comparison to the VPA+control MO group [Total charge (pA.sec): VPA+control MO, 14792 \u00b1 2454.59, n = 9; VPA+MMP-9 MO, 2752.9 \u00b1 390.4, n = 10, p (VPA+control MO and VPA+MMP-9 MO) < 0.0001]",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiological data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "5aae2bbf-2363-4dc6-b1b7-c902fd644d29",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C48",
+      "claim": "The maximal excitatory responses were not significantly different for only control MO and MMP-9 MO groups.",
+      "claim_type": "EXPLICIT",
+      "source": "The maximal excitatory responses were not significantly different for only control MO and MMP-9 MO groups [Total charge (pA.sec): control MO, 2926.95 \u00b1 994.03, n = 8; MMP-9 MO, 2295.82 \u00b1 478.24, n = 9, p (control MO and MMP-9 MO) = 0.56]",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiological data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "412d0c34-bfa4-4db3-ac09-0303bbf6c06b",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C49",
+      "claim": "The VPA+MMP-9 MO group showed decreased frequency of barrages compared to the VPA +control MO group.",
+      "claim_type": "EXPLICIT",
+      "source": "The VPA+MMP-9 MO group showed decreased frequency of barrages compared to the VPA +control MO group, suggesting that the downregulation of MMP-9 using MMP-9 MO rescues VPA-induced effects on spontaneous network activity [Number of barrages: VPA+control MO, 1.88 \u00b1 0.56, n = 9; VPA+MMP-9 MO, 0.7 \u00b1 0.3, n = 10].",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiological data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "92b2308f-14bc-4c5d-a88f-cecb83fd5591",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C50",
+      "claim": "The number of barrages were similar in only control MO and MMP-9 MO groups in the absence of VPA exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of barrages were similar in only control MO and MMP-9 MO groups in the absence of VPA exposure [control MO, 1.09 \u00b1 0.31, n = 11; MMP-9 MO, 1.22 \u00b1 0.31, n = 18]",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiological data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "032da91d-c2f3-4bf5-b814-edb67a130157",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C51",
+      "claim": "Suppressing VPA-induced MMP-9 elevations results in a reversal of VPA effects on excitatory synapse overconnectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the SB-3CT findings, these data suggest that suppressing VPA-induced MMP-9 elevations, results in a reversal of VPA effects on excitatory synapse overconnectivity, but has little effect on baseline transmission in untreated animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the MMP-9 MO experimental data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "402574d0-64f5-46f5-a7ea-08d2af9163d8",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C52",
+      "claim": "Suppressing VPA-induced MMP-9 elevations has little effect on baseline transmission in untreated animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the SB-3CT findings, these data suggest that suppressing VPA-induced MMP-9 elevations, results in a reversal of VPA effects on excitatory synapse overconnectivity, but has little effect on baseline transmission in untreated animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the MMP-9 MO experimental data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "2593fa4e-ccf8-4814-b7cf-212899659cc1",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C53",
+      "claim": "VPA-reared tadpoles exhibited more frequent pharmacologically induced seizures compared to their matched controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with prior work, VPA-reared tadpoles exhibited more frequent pharmacologically induced seizures compared to their matched controls, while animals reared in VPA+SB-3CT showed no increased seizure frequency, that is, a reversal of the VPA-induced effect [seizure frequency (events/minute): control, 0.72 \u00b1 0.04, n = 48; VPA, 0.90 \u00b1 0.04, n = 45; VPA+SB-3CT, 0.8 \u00b1 0.05, n = 34; p (control and VPA) = 0.004; p (VPA and VPA+SB-3CT) = 0.12]",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by behavioral data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "adadf1b7-aa21-4430-840d-c0d420ce4a48",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C54",
+      "claim": "Animals reared in VPA+SB-3CT showed no increased seizure frequency, representing a reversal of the VPA-induced effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with prior work, VPA-reared tadpoles exhibited more frequent pharmacologically induced seizures compared to their matched controls, while animals reared in VPA+SB-3CT showed no increased seizure frequency, that is, a reversal of the VPA-induced effect [seizure frequency (events/minute): control, 0.72 \u00b1 0.04, n = 48; VPA, 0.90 \u00b1 0.04, n = 45; VPA+SB-3CT, 0.8 \u00b1 0.05, n = 34; p (control and VPA) = 0.004; p (VPA and VPA+SB-3CT) = 0.12]",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by behavioral data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "d46d4b41-3308-4b5a-a82e-9098fe5d2ffc",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C55",
+      "claim": "In VPA reared tadpoles, the animals showed reduced habituation to acoustic startle.",
+      "claim_type": "EXPLICIT",
+      "source": "Control tadpoles showed decreased startle speed over repeated bouts, indicating habituation (Figure 4B). In VPA reared tadpoles, the animals showed reduced habituation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "6205d647-7c52-4c68-a7ae-cc1a34a7f0e5",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C56",
+      "claim": "Co-exposure of SB-3CT and VPA reversed VPA-induced effects on startle habituation.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-exposure of SB-3CT and VPA reversed VPA-induced effects; although the startle habituation was significantly, but only partially restored relative to control levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by behavioral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "6ce2e577-b88a-4cd3-98e5-27c0ca9ffe2a",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C57",
+      "claim": "Exposure to enhanced visual activity resulted in significantly increased MMP-9 levels compared to dark and normal rearing conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that exposure to enhanced visual activity resulted in significantly increased MMP-9 levels compared to dark and normal rearing conditions [Ratio of MMP-9 levels: L/D, 1.34 \u00b1 0.10, n = 5; L/N, 1.35 \u00b1 0.10, n = 5; D/N, 1.04 \u00b1 0.14, n = 5; p (L/D) = 0.03; p (L/N) = 0.03; p (D/N) = 0.79]",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by western blot data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "29c62e72-7598-4bc7-baff-9fc637c0d8bf",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C58",
+      "claim": "In the control group, enhanced visual stimulation results in an increase in the total dendritic branch length compared to the dark period.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that in the control group, enhanced visual stimulation results in an increase in the total dendritic branch length compared to the dark period [Growth of total dendritic length (percent): Control/Dark, 97.35 \u00b1 5.76, n = 9; Control/Light, 128.32 \u00b1 7.25, n = 9]",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by morphological data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "50ef665d-6697-43c3-9c39-88d5cf3205c0",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C59",
+      "claim": "In the presence of SB-3CT, the enhanced visual stimuli does not increase total dendritic branch length.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of SB-3CT, the enhanced visual stimuli does not increase total dendritic branch length [Growth of total dendritic length (%): SB-3CT/Dark, 107.30 \u00b1 6.61, n = 9; SB-3CT/Light, 96.88 \u00b1 7.88, n = 9].",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by morphological data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "f729c214-e66c-4532-8a41-79ee81ea5315",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C60",
+      "claim": "The change in dendritic growth rate was significantly decreased in the SB-3CT reared tadpoles in comparison to the matched control animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the change in dendritic growth rate was significantly decreased in the SB-3CT reared tadpoles in comparison to the matched control animals [Change in growth rate (%): Control, 136.61 \u00b1 12.29, n = 9; SB-3CT, 91.27 \u00b1 6.42, n = 9; p = 0.009]",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by morphological data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "c8612d00-a11e-4c5d-8bcf-f033c9185d0f",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C61",
+      "claim": "Enhanced visual stimulation increased MMP-9 levels, and this increase is necessary for proper activity-driven dendritic arborization.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that enhanced visual stimulation increased MMP-9 levels, and that this increase is necessary for proper activity-driven dendritic arborization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the visual stimulation and dendritic growth experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "589b238c-008f-410a-a897-40c2ec1fbb0c",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C62",
+      "claim": "Chronically elevated levels of MMP-9 present in VPA-treated tadpoles would result in unregulated plasticity, leading to hyperconnectivity and hyperexcitability.",
+      "claim_type": "EXPLICIT",
+      "source": "By extension, chronically elevated levels of MMP-9 present in VPA-treated tadpoles would result in unregulated plasticity, leading to hyperconnectivity and hyperexcitability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combination of findings about MMP-9's role in plasticity and VPA effects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "ab18836c-74cf-4aa1-8531-2a301cfccbf4",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C63",
+      "claim": "Tadpoles exposed to VPA had significantly less WFA intensity in the cell body layer in comparison to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Tadpoles exposed to VPA had significantly less WFA intensity in the cell body layer in comparison to controls, suggesting potential role of MMP9 in mediating proteolysis of PNNs (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by WFA staining data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "db34c545-8517-4e25-95ef-0f82f2c83105",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C64",
+      "claim": "The WFA intensity for the neuropil layer was not significantly different across control/VPA groups.",
+      "claim_type": "EXPLICIT",
+      "source": "The WFA intensity for the neuropil layer was not significantly different across control/VPA groups, possibly due to its more diffuse structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by WFA staining data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "85fc5036-8d74-4f52-9dcc-1381c568a944",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C65",
+      "claim": "PNNs are a potential downstream target of MMP9 in this system.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that PNNs are a potential downstream target of MMP9 in this system, opening the door to further lines of inquiry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the WFA staining results showing reduced PNN intensity after VPA exposure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "dc1d9b21-d4b4-4ad8-ae29-af685e8bf2bf",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C66",
+      "claim": "Chronic MMP-9 upregulation during early exposure to VPA is responsible for mediating its effects on neural circuit connectivity and behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "The results of this study suggest that chronic MMP-9 upregulation during early exposure to VPA, is responsible for mediating its effects on neural circuit connectivity and behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study based on all experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "ddc54e9a-49fe-42c9-bddc-7c039c8f5979",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C67",
+      "claim": "Upregulation of MMP-9 via overexpression resulted in increased frequency of sEPSCs, sIPSCs and barrages suggesting increased tectal connectivity and excitability.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we found that upregulation of MMP-9 via overexpression resulted in increased frequency of sEPSCs, sIPSCs and barrages suggesting increased tectal connectivity and excitability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes findings from the MMP-9 overexpression experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "162cecce-49be-40b4-a72a-30cfd39b2b40",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C68",
+      "claim": "Downregulation of MMP-9 reversed VPA-induced synaptic connectivity and excitability in developing Xenopus tectum.",
+      "claim_type": "EXPLICIT",
+      "source": "Downregulation of MMP-9 not only reversed VPA-induced synaptic connectivity and excitability in developing Xenopus tectum but also rescued VPA-induced behavioral effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes findings from the MMP-9 inhibition experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "7510b4c5-0158-48f6-9f85-f22b23e076c9",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C69",
+      "claim": "Downregulation of MMP-9 rescued VPA-induced behavioral effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Downregulation of MMP-9 not only reversed VPA-induced synaptic connectivity and excitability in developing Xenopus tectum but also rescued VPA-induced behavioral effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes findings from the behavioral experiments with MMP-9 inhibition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "6c81d917-a9ad-40a7-a030-4063cdf27cfb",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C70",
+      "claim": "Chronically elevated levels of MMP-9 may produce abnormally high and sustained plasticity, leading to overconnectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that chronically elevated levels of MMP-9 may produce abnormally high and sustained plasticity, leading to overconnectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the overall findings of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "98311968-6708-4e97-b25a-d77abb232756",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C71",
+      "claim": "Acute exposure to enhanced visual activity results in increased plasticity and dendritic growth in optic tectal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In Xenopus, acute exposure to enhanced visual activity results in increased plasticity and dendritic growth in optic tectal neurons (Aizenman and Cline, 2007; Sin et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "e888c405-3b23-41c5-b374-84fb5411a07d",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C72",
+      "claim": "Following enhanced visual stimulation, MMP-9 levels were elevated and increased MMP-9 was necessary for experience-dependent dendritic growth.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that following enhanced visual stimulation, MMP-9 levels were elevated and that increased MMP-9 was necessary for experience-dependent dendritic growth, suggesting that during normal development, MMP-9 levels are low but transiently elevated to facilitate activity-induced structural plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes findings from the visual stimulation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "a57ef727-fe79-4d0e-be45-7065d5f0699e",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C73",
+      "claim": "During normal development, MMP-9 levels are low but transiently elevated to facilitate activity-induced structural plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that following enhanced visual stimulation, MMP-9 levels were elevated and that increased MMP-9 was necessary for experience-dependent dendritic growth, suggesting that during normal development, MMP-9 levels are low but transiently elevated to facilitate activity-induced structural plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the visual stimulation experiments showing transient MMP-9 elevation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "8d3dff9b-9211-4e9f-8847-10b6879a5acc",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C74",
+      "claim": "MMP-9 plays a paramount role in establishing synaptic connections during development and in restructuring of synaptic networks in the adult brain.",
+      "claim_type": "EXPLICIT",
+      "source": "MMP-9 plays a paramount role in establishing synaptic connections during development and in restructuring of synaptic networks in the adult brain (Reinhard et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "a2909882-bc10-499c-bf6e-376c13dd85cc",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C75",
+      "claim": "MMP-mediated proteolysis is important for remodeling of synaptic structure and function required for processes such as learning and memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies show that MMP-mediated proteolysis is important for remodeling of synaptic structure and function required for processes such as learning and memory, and action of MMPs on various extracellular matrix components, cell surface receptors and growth factors is crucial for modulating neurogenesis and neuroplasticity (Huntley, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "2de7ae1d-d72d-48f9-b0a4-d3d1888d1631",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C76",
+      "claim": "Dysregulated expression and activity of MMP-9 can result in abnormal synaptic remodeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Dysregulated expression and activity of MMP-9 can result in abnormal synaptic remodeling; a hallmark of various neurodevelopmental disorders (Huntley, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "0b1f3ba4-5c74-4662-8afc-e799da23bc68",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C77",
+      "claim": "Dysregulation of MMP-9 is known to influence cognitive processes.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, dysregulation of MMP-9 is known to influence cognitive processes (Beroun et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "8dd131f5-eb3c-40ab-9146-16c950d25941",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C78",
+      "claim": "Increased MMP-9 levels are associated with ASD.",
+      "claim_type": "EXPLICIT",
+      "source": "and increased MMP-9 levels are associated with several neurodevelopmental disorders including ASD (Abdallah et al., 2012; Yoo et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "77163eed-0e65-4746-93ba-0272f05abfbd",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C79",
+      "claim": "Increased MMP-9 levels are associated with fragile X syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "fragile X syndrome (Dziembowska et al., 2013; Sidhu et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "722875b0-db79-49b0-8b72-e159bdc59701",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C80",
+      "claim": "Increased MMP-9 levels are associated with epilepsy.",
+      "claim_type": "EXPLICIT",
+      "source": "epilepsy (Konopka et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "853e8ba6-97d9-455d-ba28-80ae8911de4e",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C81",
+      "claim": "Increased MMP-9 levels are associated with bipolar disorder.",
+      "claim_type": "EXPLICIT",
+      "source": "bipolar disorder (Rybakowski et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "f017632c-1b38-4edd-aad7-684154a4cf96",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C82",
+      "claim": "Increased MMP-9 levels are associated with schizophrenia.",
+      "claim_type": "EXPLICIT",
+      "source": "and schizophrenia (Yamamori et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "13091e88-d71e-462e-8514-a23f8376062e",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C83",
+      "claim": "Elevated MMP-9 activity results in neurodevelopmental deficits in Xenopus by creating a hyperplastic state which leads to local overconnectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these studies, our data showed that elevated MMP-9 activity results in neurodevelopmental deficits in Xenopus by creating a hyperplastic state which leads to local overconnectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "f1b726f3-32a4-4ecf-ba3c-ad0e30eb91ff",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C84",
+      "claim": "Other MMPs showed significantly altered levels after chronic VPA exposure, including MMP25, MMP7, MMP14 and MMP28.",
+      "claim_type": "EXPLICIT",
+      "source": "While MMP-9 showed the largest fold increase in the initial microarray screen after chronic VPA exposure, other MMPs with known effects in neural development and brain function (Beroun et al., 2019; Small and Crawford, 2016; Werner et al., 2008) showed significantly altered levels, including MMP25, MMP7, MMP14 and MMP28, with the second largest increase being in MMP25.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the microarray screen.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "b07980d3-e885-4bd1-9ba7-37f9d46c4e02",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C85",
+      "claim": "MMP25 has been implicated in development of sensory neurons in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, MMP25 has been implicated in development of sensory neurons in zebrafish (Crawford et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "fa33160e-ca16-40df-bc94-3c090fc5d5f7",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C86",
+      "claim": "Periods of high MMP-9 activity correlate with structural and functional synaptic reorganization during critical period plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Periods of high MMP-9 activity correlate with structural and functional synaptic reorganization during critical period plasticity (CPP) and developmental windows across CNS regions, suggesting a role for MMP-9 in determining the developmental time course of CPP (Kaliszewska et al., 2012; Oliveira-Silva et al., 2007; Spolidoro et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "fc9722b7-9788-47ea-9dec-44e866864804",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C87",
+      "claim": "Upon light reintroduction, intense MMP-9 activity is observed surrounding excitatory synapses in the binocular visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "This central role for MMP-9 is further supported by recent studies in adult mice, in which upon light reintroduction, intense MMP-9 activity is observed surrounding excitatory synapses in the binocular visual cortex suggesting that MMP-9 can modulate plasticity even after closure of critical periods (Murase et al., 2019; Murase et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "c88cad97-448e-43ae-92e2-74bb307b91b2",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C88",
+      "claim": "MMP-9 can modulate plasticity even after closure of critical periods.",
+      "claim_type": "EXPLICIT",
+      "source": "This central role for MMP-9 is further supported by recent studies in adult mice, in which upon light reintroduction, intense MMP-9 activity is observed surrounding excitatory synapses in the binocular visual cortex suggesting that MMP-9 can modulate plasticity even after closure of critical periods (Murase et al., 2019; Murase et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "9e034eb1-3471-4930-8b57-72ffa0260d6e",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C89",
+      "claim": "Enzymatic activity of MMP-9 has been known for inducing and maintaining long-term potentiation and causes elongation and thinning of dendritic spines in the hippocampal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Enzymatic activity of MMP-9 has been known for inducing and maintaining long-term potentiation and causes elongation and thinning of dendritic spines in the hippocampal neurons (Huntley, 2012; Michaluk et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "b3fdf3c1-1cb2-4461-9464-f1a95a3aa6b7",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C90",
+      "claim": "MMP-9 knock-out mice and overexpressing models show significantly reduced synaptic plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "MMP-9 knock-out mice and overexpressing models show significantly reduced synaptic plasticity suggesting that appropriate levels of MMP-9 are needed for structural and functional reorganization of the brain (Wiera et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "4013ede9-8a2c-4a5b-a9e7-482e3239a852",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C91",
+      "claim": "Local activation of MMP-9 at the level of individual synapses can induce the maturation of spine heads.",
+      "claim_type": "EXPLICIT",
+      "source": "Local activation of MMP-9 at the level of individual synapses can induce the maturation of spine heads (Szepesi et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "a7c56f96-f0ba-4107-b3de-b36377af0144",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C92",
+      "claim": "MMP-9 can act on various cell surface receptors like integrins, BDNF, ICAMs, NGL, all of which are known to be important for developmental and adult plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "MMP-9 can act on various cell surface receptors like integrins, BDNF, ICAMs, NGL, all of which are known to be important for developmental and adult plasticity (Fiore et al., 2002; Lee et al., 2014; Michaluk et al., 2009; Yamamori et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "5ed12ea5-9d6c-4ede-99ae-62fc469c542c",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C93",
+      "claim": "MMP-9 is implicated in active dendritic spine remodeling and stabilization, pre- and postsynaptic receptor dynamics, consolidation of LTP, myelination and synaptic pruning.",
+      "claim_type": "EXPLICIT",
+      "source": "MMP-9, through activation of cell surface and cell adhesion molecules, is implicated not only in active dendritic spine remodeling and stabilization but also in pre- and postsynaptic receptor dynamics; consolidation of LTP; myelination and synaptic pruning (Reinhard et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "b29b6caf-941c-41cf-98f2-f2146f40b9ef",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C94",
+      "claim": "Perineuronal nets (PNNs) are extracellular matrix components often associated with inhibitory interneurons and regulate their development and functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Perineuronal nets (PNNs), which are extracellular matrix components, are often associated with inhibitory interneurons and regulate their development and functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about PNNs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "bb8c39f9-9fc3-425d-9ef1-e06f1fc46677",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C95",
+      "claim": "MMP-9 can rapidly degrade the PNNs surrounding various neurons enabling synaptic and network reorganization during experience dependent plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have shown that MMP-9 can rapidly degrade the PNNs surrounding various neurons enabling synaptic and network reorganization during experience dependent plasticity, and could also provide a mechanism by which dysregulation of MMP-9 can lead to abnormal development of neural circuitry (Murase et al., 2019; Murase et al., 2017; Wen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "f5e7b402-8d86-42c9-8c37-31bb0b4f0e57",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C96",
+      "claim": "VPA exposure leads to degradation of PNNs in the developing tectum.",
+      "claim_type": "EXPLICIT",
+      "source": "As we show in our data, VPA exposure also leads to degradation of PNNs in the developing tectum, suggesting that this is one possible downstream target in this system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the WFA staining data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "89d3837b-168d-4a8a-9198-7b48b6c6794d",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C97",
+      "claim": "The electroporation protocol used for MMP9 overexpression resulted in widespread transfection across tectal lobes with average 116.83 \u00b1 2.74 labeled neurons per tectal lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "The electroporation protocol used for MMP9 overexpression resulted in widespread transfection across tectal lobes with average 116.83 \u00b1 2.74 labeled neurons per tectal lobe (n=9).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the transfection efficiency achieved in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "1c23eac5-bc60-41b8-be3c-aef575e0dcbf",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C98",
+      "claim": "Across experiments there were no significant differences in either input resistance or cell capacitance between groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Across experiments we did not find any significant differences in either input resistance or cell capacitance between groups, as indicated in Supplementary file 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the electrophysiological experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "3f23d073-3bbb-4a89-9513-82c072f13581",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C99",
+      "claim": "PSD-95 overexpression alone is known to increase synapse maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although PSD-95 overexpression alone is known to increase synapse maturation (El-Husseini et al., 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "3586044a-9813-406b-9076-56a991b7bba2",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "claim_id": "C100",
+      "claim": "Introduction of Chondroitinase ABC results in degradation of PNNs, which was seen by decrease in F-WFA intensity in tectum.",
+      "claim_type": "EXPLICIT",
+      "source": "Introduction of Chondroitinase ABC (Sigma, 9024-13-9) results in degradation of PNNs, which was seen by decrease in F-WFA intensity in tectum and was used as a positive control in all the experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a positive control used in the PNN experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "032ff305-64e0-4755-9ad2-73fb5f74a927",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "VPA exposure results in a several-fold increase in MMP-9 mRNA levels in tectal samples, validating preliminary microarray findings that identified MMP-9 upregulation as a potential downstream effect of VPA exposure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24 and C18 are supported by qPCR data showing a 2.7\u00b10.3 fold increase in MMP9 mRNA (n=3 replicates), which validates the preliminary microarray screen. The use of qPCR as a validation method is appropriate and the sample size is adequate for technical replicates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "14b98746-f6bd-4cd7-b2dd-29192c4aec45",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "MMP-9 overexpression in tectal neurons significantly increases the frequency of spontaneous excitatory and inhibitory synaptic currents and spontaneous recurrent barrages, mimicking VPA-induced effects on synaptic connectivity and excitability, without affecting synaptic amplitude.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C31 are well-supported by electrophysiological data with appropriate statistical analyses (p<0.05). The finding that both transfected and non-transfected cells show increased barrage activity (C30, C31) suggests network-level effects. Sample sizes are adequate (n=11-19 per group) and the lack of amplitude changes (C28, C29) supports a presynaptic mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "89984035-6b9e-438d-9804-8c45444679fb",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Pharmacological inhibition of MMP-9 using SB-3CT reverses VPA-induced increases in spontaneous synaptic activity, evoked excitatory responses, and spontaneous recurrent barrages, while having no effect on untreated controls, suggesting that basal MMP-9 levels are low.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C40 are supported by comprehensive electrophysiological data with appropriate statistical analyses. The rescue of VPA effects by SB-3CT (C32, C36, C38) and lack of effect in controls (C33, C40) provide strong evidence for MMP-9's role. Sample sizes are adequate (n=5-22 per group) and multiple measures converge on the same conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "f819b128-eaae-4e1b-b0ec-4feba8c07f1e",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Genetic downregulation of MMP-9 using antisense morpholino rescues VPA-induced effects on synaptic connectivity and excitability, while having no effect on baseline transmission in untreated animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C52 are supported by western blot validation of MO efficacy (C43, 28% reduction, p=0.004) and electrophysiological data showing rescue of VPA effects (C44, C47, C49) without affecting controls (C45, C48, C50). The convergence of pharmacological (SB-3CT) and genetic (MO) approaches strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "16e98f28-a9e1-4f9b-811a-fb9f78a1f862",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Pharmacological inhibition of MMP-9 reverses VPA-induced increases in seizure susceptibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54 are supported by behavioral data with adequate sample sizes (n=34-48 per group) and appropriate statistics (p=0.004 for control vs VPA). The rescue effect of SB-3CT (p=0.12 for VPA vs VPA+SB-3CT) demonstrates that MMP-9 inhibition can reverse behavioral phenotypes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "39a3837a-846e-4de3-8fda-58b1041743e4",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Co-exposure of SB-3CT and VPA partially reverses VPA-induced deficits in acoustic startle habituation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 are supported by repeated measures behavioral data showing reduced habituation in VPA-treated animals and partial rescue by SB-3CT. The authors appropriately note that the rescue is partial rather than complete, which is an honest assessment of the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "84e82eeb-6048-4643-996c-ec83c0fc70cb",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Enhanced visual stimulation increases MMP-9 levels, and this increase is necessary for experience-dependent dendritic growth, suggesting that during normal development MMP-9 levels are tightly regulated by neuronal activity and transiently elevated to facilitate activity-induced structural plasticity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C61 are supported by western blot data showing increased MMP-9 after visual stimulation (C57, p=0.03) and morphological data showing that SB-3CT blocks visual stimulation-induced dendritic growth (C59-C60, p=0.009). Sample sizes are adequate (n=9 per group) and the conclusion about transient regulation (C73) is a reasonable inference from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "ade43cfb-276b-4eb6-83e1-e9908e8695a6",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "VPA-exposed tadpoles show increased synapse density compared to controls, suggesting that increased network hyperexcitability arises from increased density of synapses on tectal neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42 are supported by synapse density measurements using PSD95-GFP (Figure 2\u2014figure supplement 1). However, the manuscript does not provide detailed statistics for this measurement. The inference that sEPSC frequency is a proxy for synapse density (C42) is reasonable but would benefit from correlation analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "56aa8719-7fb0-494f-8512-6a7c784f3ad4",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "VPA exposure leads to degradation of perineuronal nets (PNNs) in the developing tectum, suggesting that PNNs are a potential downstream target of MMP-9.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65 are supported by WFA staining data showing reduced intensity in the cell body layer after VPA exposure (Figure 5\u2014figure supplement 1). The lack of effect in the neuropil layer (C64) is appropriately attributed to its diffuse structure. The conclusion that PNNs are a downstream target (C65) is a reasonable inference but requires further validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "641e32be-4a87-47ca-b690-51e744629c64",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Chronic MMP-9 upregulation during early VPA exposure is responsible for mediating its effects on neural circuit connectivity and behavior by creating a hyperplastic state that leads to local overconnectivity and hyperexcitability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66, C70, and C83 represent the main conclusion of the study, which is well-supported by the convergence of multiple lines of evidence: MMP-9 overexpression mimics VPA effects, both pharmacological and genetic inhibition of MMP-9 rescue VPA effects on physiology and behavior, and MMP-9 is required for normal activity-dependent plasticity. This is a major integrative conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "e70e2cac-9caa-491d-bb47-afeaac936ddb",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Other MMPs including MMP25, MMP7, MMP14, and MMP28 showed significantly altered levels after chronic VPA exposure in the microarray screen, with MMP25 showing the second largest increase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C84 is based on microarray data that has not been validated by qPCR or other methods. The authors acknowledge this limitation, stating that 'changes in these other MMPs are yet to be confirmed by qPCR.' Without validation, the significance of these changes remains uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "bb69ce5c-be78-4965-ab2e-22a43a853bc3",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background claims about MMP-9 function, its role in plasticity, and its association with neurodevelopmental disorders are established from prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C19-C21, C74-C82, C86-C95 are all supported by appropriate citations to prior literature. These provide the necessary background context for the study but do not represent novel findings from this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "13539420-f9eb-42d3-b72c-2df77c858b40",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims about ASD, VPA effects in humans and animal models, and the Xenopus visual system are established from prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C17, C22-C23, and C71 are all supported by appropriate citations to prior literature. These provide necessary background on ASD, VPA as a model system, and the Xenopus tectum but do not represent novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "33d8c074-1f0d-43e7-b7aa-3ee4fe691b29",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Methodological details about electroporation efficiency and electrophysiological controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25, C97, and C98 describe methodological details that are appropriately documented. The transfection efficiency (116.83\u00b12.74 neurons per lobe) and lack of differences in input resistance or capacitance between groups are important controls.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "12ac83a2-4f00-47f3-9e9d-f5ed81c05d10",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Methodological controls for synapse density and PNN experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99 and C100 describe appropriate controls for the synapse density (PSD-95 overexpression effects) and PNN experiments (Chondroitinase ABC as positive control). These are important methodological details.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    },
+    {
+      "id": "9e58e8fc-008a-4ca1-96e4-5bcaecb63ecc",
+      "content_id": "a40669e8-3f86-4647-b8fe-0fc0a5faff29",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Speculative claims about MMP-9 dysregulation leading to neurodevelopmental disorders and chronic elevation causing unregulated plasticity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C2 and C62 are presented as speculative hypotheses or inferences. While C62 is a reasonable extension of the findings, these claims go beyond what is directly demonstrated in the study and would require additional validation in other model systems or human studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:06:44.236880Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ef99e714-5e11-4073-a12b-57e42e2d8059",
+      "result_id": "032ff305-64e0-4755-9ad2-73fb5f74a927"
+    },
+    {
+      "claim_id": "3c778b3c-fe7e-4e47-abb4-49796e0f539d",
+      "result_id": "032ff305-64e0-4755-9ad2-73fb5f74a927"
+    },
+    {
+      "claim_id": "9c7cd6dc-fcde-40f5-b8da-1ef47c841700",
+      "result_id": "14b98746-f6bd-4cd7-b2dd-29192c4aec45"
+    },
+    {
+      "claim_id": "9f1828e1-8fd3-4182-8486-f6b05c9fe416",
+      "result_id": "14b98746-f6bd-4cd7-b2dd-29192c4aec45"
+    },
+    {
+      "claim_id": "5adb6523-121e-461d-af9e-a4b5a7f567dc",
+      "result_id": "14b98746-f6bd-4cd7-b2dd-29192c4aec45"
+    },
+    {
+      "claim_id": "3f4c1517-3774-423d-b139-7310071d4499",
+      "result_id": "14b98746-f6bd-4cd7-b2dd-29192c4aec45"
+    },
+    {
+      "claim_id": "83a645d6-ee55-4a40-8ca2-84e123d9c906",
+      "result_id": "14b98746-f6bd-4cd7-b2dd-29192c4aec45"
+    },
+    {
+      "claim_id": "e5af5f8f-7159-4c06-8085-1d36b441f14d",
+      "result_id": "14b98746-f6bd-4cd7-b2dd-29192c4aec45"
+    },
+    {
+      "claim_id": "2d7a539f-c51a-4afb-913e-f5130a1361e6",
+      "result_id": "14b98746-f6bd-4cd7-b2dd-29192c4aec45"
+    },
+    {
+      "claim_id": "ddc54e9a-49fe-42c9-bddc-7c039c8f5979",
+      "result_id": "14b98746-f6bd-4cd7-b2dd-29192c4aec45"
+    },
+    {
+      "claim_id": "83f5b3ee-23db-4977-8347-661b5c7f6cd6",
+      "result_id": "89984035-6b9e-438d-9804-8c45444679fb"
+    },
+    {
+      "claim_id": "4243cddc-27ca-4002-a0b5-e55cd0e8bdb4",
+      "result_id": "89984035-6b9e-438d-9804-8c45444679fb"
+    },
+    {
+      "claim_id": "919b4a33-e98a-4f3d-b53e-88540e9205b0",
+      "result_id": "89984035-6b9e-438d-9804-8c45444679fb"
+    },
+    {
+      "claim_id": "f0daf6da-08ea-424a-94e4-a6524d14eae2",
+      "result_id": "89984035-6b9e-438d-9804-8c45444679fb"
+    },
+    {
+      "claim_id": "0aa22306-cf19-47c9-b8d9-457089ed56fb",
+      "result_id": "89984035-6b9e-438d-9804-8c45444679fb"
+    },
+    {
+      "claim_id": "4b1ab79b-cbef-442d-ac8d-d96dc12782e1",
+      "result_id": "89984035-6b9e-438d-9804-8c45444679fb"
+    },
+    {
+      "claim_id": "98715743-f1e5-4b99-bafb-5fbd49113b55",
+      "result_id": "89984035-6b9e-438d-9804-8c45444679fb"
+    },
+    {
+      "claim_id": "d4112b26-1b54-4f49-9a39-5f1ba13a57ac",
+      "result_id": "89984035-6b9e-438d-9804-8c45444679fb"
+    },
+    {
+      "claim_id": "15f3d6d2-e093-4017-88a9-2b31969cf2f7",
+      "result_id": "89984035-6b9e-438d-9804-8c45444679fb"
+    },
+    {
+      "claim_id": "66b40719-cedc-407d-9529-b26ac86c17ca",
+      "result_id": "89984035-6b9e-438d-9804-8c45444679fb"
+    },
+    {
+      "claim_id": "162cecce-49be-40b4-a72a-30cfd39b2b40",
+      "result_id": "89984035-6b9e-438d-9804-8c45444679fb"
+    },
+    {
+      "claim_id": "f97ff4bc-36f4-4866-a47f-bde9712f7c4e",
+      "result_id": "f819b128-eaae-4e1b-b0ec-4feba8c07f1e"
+    },
+    {
+      "claim_id": "d89c5f31-83c7-47b4-8eeb-03b43cc0ed31",
+      "result_id": "f819b128-eaae-4e1b-b0ec-4feba8c07f1e"
+    },
+    {
+      "claim_id": "6f11f467-6c1c-424d-b254-07ce68dae51a",
+      "result_id": "f819b128-eaae-4e1b-b0ec-4feba8c07f1e"
+    },
+    {
+      "claim_id": "7cd6edca-817a-43e1-9647-9476b63e0dc6",
+      "result_id": "f819b128-eaae-4e1b-b0ec-4feba8c07f1e"
+    },
+    {
+      "claim_id": "b81a5a07-5f41-4d85-95da-746aa546dde4",
+      "result_id": "f819b128-eaae-4e1b-b0ec-4feba8c07f1e"
+    },
+    {
+      "claim_id": "5aae2bbf-2363-4dc6-b1b7-c902fd644d29",
+      "result_id": "f819b128-eaae-4e1b-b0ec-4feba8c07f1e"
+    },
+    {
+      "claim_id": "412d0c34-bfa4-4db3-ac09-0303bbf6c06b",
+      "result_id": "f819b128-eaae-4e1b-b0ec-4feba8c07f1e"
+    },
+    {
+      "claim_id": "92b2308f-14bc-4c5d-a88f-cecb83fd5591",
+      "result_id": "f819b128-eaae-4e1b-b0ec-4feba8c07f1e"
+    },
+    {
+      "claim_id": "032da91d-c2f3-4bf5-b814-edb67a130157",
+      "result_id": "f819b128-eaae-4e1b-b0ec-4feba8c07f1e"
+    },
+    {
+      "claim_id": "402574d0-64f5-46f5-a7ea-08d2af9163d8",
+      "result_id": "f819b128-eaae-4e1b-b0ec-4feba8c07f1e"
+    },
+    {
+      "claim_id": "2593fa4e-ccf8-4814-b7cf-212899659cc1",
+      "result_id": "16e98f28-a9e1-4f9b-811a-fb9f78a1f862"
+    },
+    {
+      "claim_id": "adadf1b7-aa21-4430-840d-c0d420ce4a48",
+      "result_id": "16e98f28-a9e1-4f9b-811a-fb9f78a1f862"
+    },
+    {
+      "claim_id": "7510b4c5-0158-48f6-9f85-f22b23e076c9",
+      "result_id": "16e98f28-a9e1-4f9b-811a-fb9f78a1f862"
+    },
+    {
+      "claim_id": "d46d4b41-3308-4b5a-a82e-9098fe5d2ffc",
+      "result_id": "39a3837a-846e-4de3-8fda-58b1041743e4"
+    },
+    {
+      "claim_id": "6205d647-7c52-4c68-a7ae-cc1a34a7f0e5",
+      "result_id": "39a3837a-846e-4de3-8fda-58b1041743e4"
+    },
+    {
+      "claim_id": "7510b4c5-0158-48f6-9f85-f22b23e076c9",
+      "result_id": "39a3837a-846e-4de3-8fda-58b1041743e4"
+    },
+    {
+      "claim_id": "6ce2e577-b88a-4cd3-98e5-27c0ca9ffe2a",
+      "result_id": "84e82eeb-6048-4643-996c-ec83c0fc70cb"
+    },
+    {
+      "claim_id": "29c62e72-7598-4bc7-baff-9fc637c0d8bf",
+      "result_id": "84e82eeb-6048-4643-996c-ec83c0fc70cb"
+    },
+    {
+      "claim_id": "50ef665d-6697-43c3-9c39-88d5cf3205c0",
+      "result_id": "84e82eeb-6048-4643-996c-ec83c0fc70cb"
+    },
+    {
+      "claim_id": "f729c214-e66c-4532-8a41-79ee81ea5315",
+      "result_id": "84e82eeb-6048-4643-996c-ec83c0fc70cb"
+    },
+    {
+      "claim_id": "c8612d00-a11e-4c5d-8bcf-f033c9185d0f",
+      "result_id": "84e82eeb-6048-4643-996c-ec83c0fc70cb"
+    },
+    {
+      "claim_id": "8daced03-f4ea-458e-b207-34ab345326fc",
+      "result_id": "84e82eeb-6048-4643-996c-ec83c0fc70cb"
+    },
+    {
+      "claim_id": "b84cab86-eddd-4fa7-8292-23432323e77a",
+      "result_id": "84e82eeb-6048-4643-996c-ec83c0fc70cb"
+    },
+    {
+      "claim_id": "e888c405-3b23-41c5-b374-84fb5411a07d",
+      "result_id": "84e82eeb-6048-4643-996c-ec83c0fc70cb"
+    },
+    {
+      "claim_id": "a57ef727-fe79-4d0e-be45-7065d5f0699e",
+      "result_id": "84e82eeb-6048-4643-996c-ec83c0fc70cb"
+    },
+    {
+      "claim_id": "4cf0e366-9e73-490e-b9a4-b906ff26f686",
+      "result_id": "ade43cfb-276b-4eb6-83e1-e9908e8695a6"
+    },
+    {
+      "claim_id": "81d3289b-4270-477b-a8cc-b97844d92fa2",
+      "result_id": "ade43cfb-276b-4eb6-83e1-e9908e8695a6"
+    },
+    {
+      "claim_id": "ab18836c-74cf-4aa1-8531-2a301cfccbf4",
+      "result_id": "56aa8719-7fb0-494f-8512-6a7c784f3ad4"
+    },
+    {
+      "claim_id": "db34c545-8517-4e25-95ef-0f82f2c83105",
+      "result_id": "56aa8719-7fb0-494f-8512-6a7c784f3ad4"
+    },
+    {
+      "claim_id": "85fc5036-8d74-4f52-9dcc-1381c568a944",
+      "result_id": "56aa8719-7fb0-494f-8512-6a7c784f3ad4"
+    },
+    {
+      "claim_id": "f5e7b402-8d86-42c9-8c37-31bb0b4f0e57",
+      "result_id": "56aa8719-7fb0-494f-8512-6a7c784f3ad4"
+    },
+    {
+      "claim_id": "dc1d9b21-d4b4-4ad8-ae29-af685e8bf2bf",
+      "result_id": "641e32be-4a87-47ca-b690-51e744629c64"
+    },
+    {
+      "claim_id": "6c81d917-a9ad-40a7-a030-4063cdf27cfb",
+      "result_id": "641e32be-4a87-47ca-b690-51e744629c64"
+    },
+    {
+      "claim_id": "13091e88-d71e-462e-8514-a23f8376062e",
+      "result_id": "641e32be-4a87-47ca-b690-51e744629c64"
+    },
+    {
+      "claim_id": "0811b482-6666-4cde-9241-023b97cd3d1f",
+      "result_id": "641e32be-4a87-47ca-b690-51e744629c64"
+    },
+    {
+      "claim_id": "f1b726f3-32a4-4ecf-ba3c-ad0e30eb91ff",
+      "result_id": "e70e2cac-9caa-491d-bb47-afeaac936ddb"
+    },
+    {
+      "claim_id": "b07980d3-e885-4bd1-9ba7-37f9d46c4e02",
+      "result_id": "e70e2cac-9caa-491d-bb47-afeaac936ddb"
+    },
+    {
+      "claim_id": "dfb6b22d-46e6-480b-b915-a58a7022a4f5",
+      "result_id": "bb69ce5c-be78-4965-ab2e-22a43a853bc3"
+    },
+    {
+      "claim_id": "0b7e0af5-d0b5-494c-b251-d5abb57cdd4b",
+      "result_id": "bb69ce5c-be78-4965-ab2e-22a43a853bc3"
+    },
+    {
+      "claim_id": "ab900b54-2d54-416a-83cb-d528cc4aa9eb",
+      "result_id": "bb69ce5c-be78-4965-ab2e-22a43a853bc3"
+    },
+    {
+      "claim_id": "d195809e-2ecc-4f99-a384-bf647c2b0393",
+      "result_id": "bb69ce5c-be78-4965-ab2e-22a43a853bc3"
+    },
+    {
+      "claim_id": "8d3dff9b-9211-4e9f-8847-10b6879a5acc",
+      "result_id": "bb69ce5c-be78-4965-ab2e-22a43a853bc3"
+    },
+    {
+      "claim_id": "a2909882-bc10-499c-bf6e-376c13dd85cc",
+      "result_id": "bb69ce5c-be78-4965-ab2e-22a43a853bc3"
+    },
+    {
+      "claim_id": "2de7ae1d-d72d-48f9-b0a4-d3d1888d1631",
+      "result_id": "bb69ce5c-be78-4965-ab2e-22a43a853bc3"
+    },
+    {
+      "claim_id": "0b1f3ba4-5c74-4662-8afc-e799da23bc68",
+      "result_id": "bb69ce5c-be78-4965-ab2e-22a43a853bc3"
+    },
+    {
+      "claim_id": "8dd131f5-eb3c-40ab-9146-16c950d25941",
+      "result_id": "bb69ce5c-be78-4965-ab2e-22a43a853bc3"
+    },
+    {
+      "claim_id": "77163eed-0e65-4746-93ba-0272f05abfbd",
+      "result_id": "bb69ce5c-be78-4965-ab2e-22a43a853bc3"
+    },
+    {
+      "claim_id": "722875b0-db79-49b0-8b72-e159bdc59701",
+      "result_id": "bb69ce5c-be78-4965-ab2e-22a43a853bc3"
+    },
+    {
+      "claim_id": "853e8ba6-97d9-455d-ba28-80ae8911de4e",
+      "result_id": "bb69ce5c-be78-4965-ab2e-22a43a853bc3"
+    },
+    {
+      "claim_id": "f017632c-1b38-4edd-aad7-684154a4cf96",
+      "result_id": "bb69ce5c-be78-4965-ab2e-22a43a853bc3"
+    },
+    {
+      "claim_id": "fa33160e-ca16-40df-bc94-3c090fc5d5f7",
+      "result_id": "bb69ce5c-be78-4965-ab2e-22a43a853bc3"
+    },
+    {
+      "claim_id": "fc9722b7-9788-47ea-9dec-44e866864804",
+      "result_id": "bb69ce5c-be78-4965-ab2e-22a43a853bc3"
+    },
+    {
+      "claim_id": "c88cad97-448e-43ae-92e2-74bb307b91b2",
+      "result_id": "bb69ce5c-be78-4965-ab2e-22a43a853bc3"
+    },
+    {
+      "claim_id": "9e034eb1-3471-4930-8b57-72ffa0260d6e",
+      "result_id": "bb69ce5c-be78-4965-ab2e-22a43a853bc3"
+    },
+    {
+      "claim_id": "b3fdf3c1-1cb2-4461-9464-f1a95a3aa6b7",
+      "result_id": "bb69ce5c-be78-4965-ab2e-22a43a853bc3"
+    },
+    {
+      "claim_id": "4013ede9-8a2c-4a5b-a9e7-482e3239a852",
+      "result_id": "bb69ce5c-be78-4965-ab2e-22a43a853bc3"
+    },
+    {
+      "claim_id": "a7c56f96-f0ba-4107-b3de-b36377af0144",
+      "result_id": "bb69ce5c-be78-4965-ab2e-22a43a853bc3"
+    },
+    {
+      "claim_id": "5ed12ea5-9d6c-4ede-99ae-62fc469c542c",
+      "result_id": "bb69ce5c-be78-4965-ab2e-22a43a853bc3"
+    },
+    {
+      "claim_id": "b29b6caf-941c-41cf-98f2-f2146f40b9ef",
+      "result_id": "bb69ce5c-be78-4965-ab2e-22a43a853bc3"
+    },
+    {
+      "claim_id": "bb8c39f9-9fc3-425d-9ef1-e06f1fc46677",
+      "result_id": "bb69ce5c-be78-4965-ab2e-22a43a853bc3"
+    },
+    {
+      "claim_id": "6f47bb3b-9808-4a4c-83cd-8dad3970b50e",
+      "result_id": "13539420-f9eb-42d3-b72c-2df77c858b40"
+    },
+    {
+      "claim_id": "f6bf76ff-701a-4429-863f-349d2b10e529",
+      "result_id": "13539420-f9eb-42d3-b72c-2df77c858b40"
+    },
+    {
+      "claim_id": "47824ff3-d8be-4c26-8686-57bfdad74316",
+      "result_id": "13539420-f9eb-42d3-b72c-2df77c858b40"
+    },
+    {
+      "claim_id": "6664a785-16b9-4c16-978e-e7c7dc3a5fc5",
+      "result_id": "13539420-f9eb-42d3-b72c-2df77c858b40"
+    },
+    {
+      "claim_id": "e4e1b12e-9448-45b0-8c97-ec74a0ecce8c",
+      "result_id": "13539420-f9eb-42d3-b72c-2df77c858b40"
+    },
+    {
+      "claim_id": "d1aa3821-0e42-4e83-a05a-a7f751f352eb",
+      "result_id": "13539420-f9eb-42d3-b72c-2df77c858b40"
+    },
+    {
+      "claim_id": "89300ff0-95c3-4f12-8961-5714b4242abd",
+      "result_id": "13539420-f9eb-42d3-b72c-2df77c858b40"
+    },
+    {
+      "claim_id": "2b72e0ba-a2ad-44d7-a435-aa8e78ef472b",
+      "result_id": "13539420-f9eb-42d3-b72c-2df77c858b40"
+    },
+    {
+      "claim_id": "fa570846-de3b-4e41-af9d-eca823604a9a",
+      "result_id": "13539420-f9eb-42d3-b72c-2df77c858b40"
+    },
+    {
+      "claim_id": "7db014e1-e30f-41a1-8833-d9ec0d6bcbb7",
+      "result_id": "13539420-f9eb-42d3-b72c-2df77c858b40"
+    },
+    {
+      "claim_id": "87f2ee97-7d9b-4748-9648-9c4339c0b92c",
+      "result_id": "13539420-f9eb-42d3-b72c-2df77c858b40"
+    },
+    {
+      "claim_id": "bc1136ea-bd84-4a74-98bd-45d1e0a9edd6",
+      "result_id": "13539420-f9eb-42d3-b72c-2df77c858b40"
+    },
+    {
+      "claim_id": "98311968-6708-4e97-b25a-d77abb232756",
+      "result_id": "13539420-f9eb-42d3-b72c-2df77c858b40"
+    },
+    {
+      "claim_id": "1af58c8d-1516-4e23-a531-c148c589ad27",
+      "result_id": "33d8c074-1f0d-43e7-b7aa-3ee4fe691b29"
+    },
+    {
+      "claim_id": "89d3837b-168d-4a8a-9198-7b48b6c6794d",
+      "result_id": "33d8c074-1f0d-43e7-b7aa-3ee4fe691b29"
+    },
+    {
+      "claim_id": "1c23eac5-bc60-41b8-be3c-aef575e0dcbf",
+      "result_id": "33d8c074-1f0d-43e7-b7aa-3ee4fe691b29"
+    },
+    {
+      "claim_id": "3f23d073-3bbb-4a89-9513-82c072f13581",
+      "result_id": "12ac83a2-4f00-47f3-9e9d-f5ed81c05d10"
+    },
+    {
+      "claim_id": "3586044a-9813-406b-9076-56a991b7bba2",
+      "result_id": "12ac83a2-4f00-47f3-9e9d-f5ed81c05d10"
+    },
+    {
+      "claim_id": "1294bd23-f930-440a-a62c-9f2f692b2c7b",
+      "result_id": "9e58e8fc-008a-4ca1-96e4-5bcaecb63ecc"
+    },
+    {
+      "claim_id": "589b238c-008f-410a-a897-40c2ec1fbb0c",
+      "result_id": "9e58e8fc-008a-4ca1-96e4-5bcaecb63ecc"
+    }
+  ],
+  "comparisons": []
+}

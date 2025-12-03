@@ -1,0 +1,301 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C7",
+      "C8",
+      "C92"
+    ],
+    "result": "A glutamate auxotrophic E. coli strain (glut-aux, \u0394gdhA \u0394gltBD) was constructed that cannot grow on ammonium alone but can utilize specific amino acids as amine donors. 15N-labeling experiments confirmed that amino acids, not free ammonium, serve as the nitrogen source, with arginine showing single labeling due to GS activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C7, and C8 are directly supported by experimental data in Figures 2 and 3. The 15N-labeling pattern (unlabeled amino acids except arginine) provides strong evidence that amines are transferred from supplied amino acids rather than from free ammonium. The strain construction is well-validated and represents a novel tool for studying amine distribution networks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C45",
+      "C53",
+      "C89"
+    ],
+    "result": "Biomass yield of the glut-aux strain directly correlated with amino acid concentration, with ornithine uniquely supporting double the yield per concentration due to its two transferable amine groups via putrescine. Aspartate supported the fastest growth among all tested amino acids, while not all amino acids could serve as amine donors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 are well-supported by concentration-dependent growth data in Figure 4. The ornithine result is mechanistically explained by the two-amine transfer via putrescine (C11, supported by citation). The observation that aspartate supports fastest growth (C45, C89) is consistently shown across multiple figures. The systematic screening provides comprehensive characterization of the amination network.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Glutamate was not the fastest-supporting amine donor for the glut-aux strain; proline supported faster growth despite requiring conversion to glutamate. Growth rate increased proportionally with glutamate concentration, indicating that glutamate uptake, not metabolism, limits growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 are supported by growth data in Figure 4. The observation that proline (requiring conversion to glutamate) supports faster growth than glutamate itself is counterintuitive but well-documented. The inference that uptake limits growth (C14) is reasonable given the concentration-dependent growth rate, though direct uptake measurements would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "Proline is metabolized to glutamate by PutA (a bifunctional proline dehydrogenase/pyrroline-5-carboxylate dehydrogenase). Deletion of putA abolished growth of both WT and glut-aux strains on proline as the sole nitrogen/amine source.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15 and C16 are well-supported. C15 is backed by established literature (Moxley et al., 2014; Frank and Ranhand, 1964), and C16 is directly demonstrated by experimental data in Figure 5A. The genetic deletion experiment provides clear evidence that PutA is essential for proline utilization, confirming the proposed mechanism IV.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "AspC (aspartate transaminase) exhibits broad substrate promiscuity and is essential for utilizing histidine, tyrosine, phenylalanine, tryptophan, methionine, isoleucine, and leucine as amine donors in the glut-aux strain. This essentiality persists even for substrates showing low in vitro activity, revealing that AspC's physiological substrate range is broader than previously recognized. Deletion of the methionine-specific transaminase YbdL had no effect, indicating AspC compensates through promiscuous activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 and C59-C65 are strongly supported by systematic deletion experiments in Figures 5 and 5-supplement 1. The observation that AspC deletion abolishes growth on multiple amino acids (C19, C59, C62) while YbdL deletion has no effect (C17, C18) demonstrates the critical role of promiscuous transaminase activity. The conclusion about tryptophan (C63) is well-reasoned based on deletion data and supported by comparative literature. This represents a significant expansion of AspC's known physiological role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C67"
+    ],
+    "result": "Alanine could not initially serve as an amine donor despite native transaminases (AlaA, AlaC) and their overexpression. However, spontaneous mutations in dadX (alanine racemase) enabled growth after prolonged incubation. Deliberate deletion of dadX in the glut-aux strain overexpressing AlaA allowed immediate growth with alanine, demonstrating that removing the alanine sink (d-alanine production for cell wall synthesis) was necessary for effective alanine utilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C26 are well-supported by experimental evolution (Figure 6-supplement 1A), genome sequencing (C24, Supplementary file 2), and targeted deletion experiments (C25, Figure 6A). The logic is sound: alanine racemase diverts l-alanine to d-alanine, creating a sink that prevents sufficient flux through transaminases. Notably, C26 shows that deleting dadA (which degrades d-alanine) was insufficient, supporting the hypothesis that the racemase reaction itself is the limiting step. This demonstrates metabolic flux control through sink elimination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C68"
+    ],
+    "result": "\u03b2-alanine, a non-proteinogenic amino acid, was engineered as an amine source by overexpressing heterologous transaminases. BaOAT (\u03b2-alanine-2-ketoglutarate aminotransferase) enabled the glut-aux strain to use \u03b2-alanine as an amine donor by directly producing glutamate, while BaPAT (producing alanine) did not. 15N-labeling confirmed that amino groups originated from \u03b2-alanine rather than ammonium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 are well-supported by growth experiments (Figure 6B) and 15N-labeling (Figure 6-supplement 3). The differential activity of BaOAT vs. BaPAT (C29) is consistent with earlier findings that glutamate, but not alanine, can immediately serve as an amine donor. The 15N-labeling provides strong validation that \u03b2-alanine is the nitrogen source. This demonstrates successful metabolic engineering to expand the substrate range of the amination network.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C69",
+      "C70",
+      "C72"
+    ],
+    "result": "Glycine utilization as an amine donor was engineered through a complex pathway requiring BhcA overexpression and dadA deletion. Surprisingly, glycine is not used directly but is converted to serine via the glycine cleavage system (GCV), which then serves as the substrate for BhcA-mediated transamination with oxaloacetate. In vitro kinetic measurements confirmed BhcA has much higher activity with serine (kcat 25.9 s\u207b\u00b9, KM 7 mM) than glycine, and DadA shows higher activity with d-serine than glycine. Deletion of gcvTHP abolished glycine utilization, confirming the glycine-to-serine conversion requirement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C44 are supported by systematic genetic deletions (Figures 6C, 6D), in vitro enzyme kinetics (Figure 6-supplement 5), and 15N-labeling (Figure 6-supplement 7). The unexpected finding that glycine must be converted to serine (C70) is well-validated by: (1) gcvTHP deletion abolishing growth (C38, C39), (2) serine supporting growth in all strain backgrounds (C40), and (3) kinetic data showing BhcA prefers serine (C37, C43). The role of DadA as a serine sink (C33, C42) is supported by improved growth upon its deletion. This represents sophisticated metabolic detective work revealing an indirect utilization pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C74",
+      "C75"
+    ],
+    "result": "Aspartate ammonia lyase (AspA) was engineered as an alternative ammonium entry point, replacing canonical glutamate-based assimilation. Overexpression of AspA enabled the glut-aux strain to grow on all tested carbon sources with free ammonium, with fastest growth on carbon sources closest to fumarate (the AspA substrate). 15N-labeling confirmed ammonium assimilation via this pathway, showing identical labeling patterns to wildtype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 are well-supported by growth experiments on multiple carbon sources (Figure 7A) and 15N-labeling (Figure 7C). The thermodynamic analysis (C46) from eQuilibrator provides theoretical support for AspA reversibility. The observation that growth is fastest on fumarate-proximal carbon sources (C48, C75) is logical and experimentally validated. The identical 15N-labeling between WT and glut-aux+AspA (C49) provides strong evidence for functional ammonium assimilation. This demonstrates successful rewiring of a fundamental metabolic pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Leucine dehydrogenase (LeuDH) from B. cereus or L. sphaericus was engineered as an alternative ammonium entry point. Growth required supplementation with catalytic amounts of MOP (4-methyl-2-oxopentanoate), the LeuDH substrate. The glut-aux strain with B. cereus LeuDH reached twice the OD600 of leucine-supplemented controls, indicating MOP recycling through alternating LeuDH and transaminase activities. 15N-labeling confirmed ammonium assimilation via this pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by growth experiments (Figure 7B) and 15N-labeling (Figure 7C). The requirement for MOP supplementation (C50) is logical given that MOP is not a central metabolite. The higher yield with catalytic MOP vs. stoichiometric leucine (C51) provides evidence for MOP recycling, though the mechanism could be explained more rigorously. The 15N-labeling (C52) confirms ammonium incorporation. This demonstrates another successful alternative ammonium entry point, though less efficient than AspA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The substrate spectrum of the amination network may be larger than identified, as uptake limitations, regulatory requirements, or metabolic inhibition could prevent utilization of some amino acids. Threonine requires leucine-dependent induction of threonine dehydrogenase, valine causes growth inhibition through acetohydroxy acid synthase inhibition, and nitrogen-response regulation was only relevant for ornithine utilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54-C57 are speculative (C54) or cite prior work (C55, C56) to explain negative results. While the reasoning is sound, these claims acknowledge limitations rather than present positive findings. C57 is supported by experimental observations (Figure 2) showing ornithine-specific nitrogen dependence. C58 is a reasonable inference about glutamate levels in the glut-aux strain but lacks direct measurement. These represent thoughtful interpretation of negative/ambiguous results but don't constitute strong positive findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Alternative ammonium assimilation pathways differ energetically and kinetically from canonical glutamate-based assimilation. AspA-based assimilation requires NADH (cheaper than NADPH), but AspA and LeuDH have much higher KM values for ammonia (20 mM and 13 mM) compared to GDH and GS (2 mM and 0.1 mM), making them inferior under ammonium-limiting conditions. The dual GDH/GS-GOGAT system provides unique metabolic flexibility optimized for different growth conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 are well-supported by literature citations (Reitzer 2014; Spaans et al. 2015; Suzuki et al. 1973; Sanwal and Zink 1961) and metabolic reasoning. The energetic analysis (C76, C77) correctly identifies NADH vs. NADPH requirements and their implications. The kinetic comparison (C78) is quantitatively supported by cited KM values. C79 correctly identifies the uniqueness of the dual-system architecture. C80 and C81 are speculative but reasonable extrapolations about limitations of engineered systems. This provides important context for why glutamate-based assimilation is evolutionarily conserved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The cellular amination network is highly flexible, with transaminases serving as both enablers and limiting factors. Amino acid usage and ammonium assimilation mechanisms are transferable between organisms through heterologous gene expression, but this requires flexibility in the amine distribution network around the conserved glutamate-based core. Engineering alternative ammonium entry points can decouple ammonium assimilation from glutamate biosynthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 represent well-supported conclusions synthesizing the experimental findings. C82 and C85 are directly supported by the successful engineering of new amine sources and ammonium entry points. C83 is validated by the AspC promiscuity findings and the need for heterologous transaminases for some substrates. C84 is demonstrated by the \u03b2-alanine, glycine/serine, AspA, and LeuDH engineering results. C86 articulates the biotechnological implications. These conclusions are well-grounded in the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C87",
+      "C88"
+    ],
+    "result": "The glut-aux strain serves as an excellent selection platform for screening reactions that produce amino acids, with potential applications in metabolic engineering and industrial amino acid production. Previous work demonstrated metabolic network optimization through alternative ammonium entry points, and E. coli shows improved growth with amino acids as amine sources on glycerol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 is a reasonable inference from the experimental design and successful engineering examples, though it represents a proposed application rather than a demonstrated result. C87 and C88 cite prior work (Guo et al. 2017; Bren et al. 2016) to support the biotechnological relevance. While these claims are well-reasoned, they represent implications and future directions rather than direct findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Background on nitrogen metabolism: Nitrogen comprises 75% of cellular building blocks. Ammonium enters metabolism solely via GDH and GS-GOGAT at the 2-ketoglutarate/glutamate/glutamine node, providing all cellular nitrogen as glutamate (75%) or glutamine (25%). GS has low KM (0.1 mM) for ammonium and requires ATP, while GDH has higher KM (2 mM) but is energetically cheaper using NADPH. E. coli generates NADPH via the membrane-bound transhydrogenase PntAB, which competes with ATP synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C93-C102 represent established background knowledge supported by multiple literature citations (Milo and Phillips 2015; Yang et al. 2018; Helling 1994; Kumar and Shimizu 2010; Reitzer 2014; Sauer et al. 2004; Spaans et al. 2015; Kim and Hollocher 1982). These provide essential context for the study but are not novel findings. The claims are well-documented in the literature and accurately presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "The [glutamate]/[2-ketoglutarate] ratio is very high (above 100) under physiological conditions, making reverse amine transfer onto 2-ketoglutarate thermodynamically challenging for transaminases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 is supported by citation to Bennett et al. 2009 and represents important background for understanding the thermodynamic challenges of reverse transamination. This contextualizes why the glut-aux strain's ability to use various amino acids as amine donors is non-trivial, as it requires overcoming this thermodynamic barrier. However, the authors note that metabolite concentrations likely differ in the glut-aux strain, which may facilitate reverse reactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "In E. coli, ornithine is degraded to putrescine, which is used by transaminase PatA to aminate 2-ketoglutarate to glutamate. This degradation pathway is induced by nitrogen limitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90 and C91 are well-supported by literature citations (Schneider et al. 2013; Schneider and Reitzer 2012; Zimmer et al. 2000) and explain the mechanism underlying ornithine's ability to serve as an amine donor (rescue mechanism III). This background information is accurately presented and relevant to interpreting the ornithine results (C10, C11).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "The newly discovered serine-oxaloacetate transaminase activity can potentially be coupled to formate assimilation via the reductive glycine pathway, which fixes ammonium by reverse activity of the glycine cleavage system, potentially saving ATP by avoiding serine deaminase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C71 is speculative, proposing a potential application of the BhcA serine-oxaloacetate transaminase activity to the reductive glycine pathway (Kim et al. 2020). While the reasoning is sound and the biochemistry is plausible, this represents a hypothesis for future work rather than a demonstrated result. The claim appropriately uses cautious language ('in principle,' 'can be coupled') but lacks experimental validation.",
+    "result_type": "MINOR"
+  }
+]

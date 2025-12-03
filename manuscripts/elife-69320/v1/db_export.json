@@ -1,0 +1,1767 @@
+{
+  "submission": {
+    "id": "c2543934-51a3-451d-8b56-2a28456ad420",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T06:18:47.487858Z",
+    "updated_at": "2025-12-03T06:18:47.487858Z"
+  },
+  "content": [
+    {
+      "id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "submission_id": "c2543934-51a3-451d-8b56-2a28456ad420",
+      "content_type": "manuscript",
+      "content_text": "# Transcriptomics-informed large-scale cortical model captures topography of pharmacological neuroimaging effects of LSD\n\n## Authors\n\n- Joshua B Burt<sup>1</sup> ([ORCID: 0000-0002-5605-2091](https://orcid.org/0000-0002-5605-2091))\n- Katrin H Preller<sup>2</sup> ([ORCID: 0000-0003-0413-7672](https://orcid.org/0000-0003-0413-7672))\n- Murat Demirtas<sup>3</sup>\n- Jie Lisa Ji<sup>1</sup> ([ORCID: 0000-0002-6280-9070](https://orcid.org/0000-0002-6280-9070))\n- John H Krystal<sup>3</sup>\n- Franz X Vollenweider<sup>5</sup> ([ORCID: 0000-0001-9053-6164](https://orcid.org/0000-0001-9053-6164))\n- Alan Anticevic<sup>3</sup> ([ORCID: 0000-0002-4324-0536](https://orcid.org/0000-0002-4324-0536))\n- John D Murray<sup>1</sup> ([ORCID: 0000-0003-4115-8181](https://orcid.org/0000-0003-4115-8181)) \u2020\n\n### Affiliations\n\n1. Department of Psychiatry, Yale University New Haven United States\n2. Pharmaco-Neuroimaging and Cognitive-Emotional Processing, Department of Psychiatry, Psychotherapy and Psychosomatics, University Hospital for Psychiatry Zurich Zurich Switzerland\n3. Department of Psychiatry, Yale University School of Medicine New Haven United States\n4. Interdepartmental Neuroscience Program, Yale University New Haven United States\n5. Neuropsychopharmacology and Brain Imaging, Department of Psychiatry, Psychotherapy and Psychosomatics, University Hospital for Psychiatry Zurich Zurich Switzerland\n\n\u2020 Corresponding author\n\n## Abstract\n\nPsychoactive drugs can transiently perturb brain physiology while preserving brain structure. The role of physiological state in shaping neural function can therefore be investigated through neuroimaging of pharmacologically induced effects. Previously, using pharmacological neuroimaging, we found that neural and experiential effects of lysergic acid diethylamide (LSD) are attributable to agonism of the serotonin-2A receptor (Preller et al., 2018). Here, we integrate brain-wide transcriptomics with biophysically based circuit modeling to simulate acute neuromodulatory effects of LSD on human cortical large-scale spatiotemporal dynamics. Our model captures the inter-areal topography of LSD-induced changes in cortical blood oxygen level-dependent (BOLD) functional connectivity. These findings suggest that serotonin-2A-mediated modulation of pyramidal-neuronal gain is a circuit mechanism through which LSD alters cortical functional topography. Individual-subject model fitting captures patterns of individual neural differences in pharmacological response related to altered states of consciousness. This work establishes a framework for linking molecular-level manipulations to systems-level functional alterations, with implications for precision medicine.\n\n## Introduction\n\nWhat are the respective roles of structure and physiology in shaping the spatiotemporal dynamics of networked neural systems? Areal differences in gene transcription, cellular architecture, and long-range connectivity patterns have been linked to areal differences in specialization of cortical function (Felleman and Van Essen, 1991; Hilgetag et al., 2016; Burt et al., 2018; Huntenburg et al., 2018; Demirta\u015f et al., 2019). Yet it remains unclear how embedded neurophysiological changes impact functional network organization and structure-function relationships. Non-invasive neuroimaging of pharmacologically\u00a0induced changes in brain function permits selective, transient, and in vivo perturbation of physiology, while preserving brain structure such as inter-areal axonal projections. Pharmacological neuroimaging therefore provides a tractable and valuable testbed for investigating the roles of neurophysiological properties in shaping patterns of large-scale brain function.\n\nThe central role of physiological state in shaping functional brain dynamics and influencing human consciousness and behavior is supported by neuroimaging studies of the acute functional disturbances induced by psychopharmacological compounds. Serotonergic hallucinogens, in particular, produce rapid and profound alterations of consciousness that are linked to widespread, stereotyped patterns of functional network disruption (Tagliazucchi et al., 2014; Tagliazucchi et al., 2016; Lord et al., 2018; Muthukumaraswamy et al., 2013; Atasoy et al., 2017; Preller et al., 2018; Preller et al., 2020). Recently, our group has shown that lysergic acid diethylamide\u00a0(LSD)-induced disruptions of blood oxygen level-dependent (BOLD) functional connectivity\u00a0(FC) and concomitant changes in consciousness are extinguished by pre-treatment with ketanserin, a selective serotonin-2A (5-HT2A) receptor antagonist (Preller et al., 2018). This result suggests that the 5-HT2A receptor plays a critical role in LSD\u2019s mechanism of action (Vollenweider and Preller, 2020; Holze et al., 2021). Preller et al., 2018 analyzed regional changes in mean BOLD FC, called global brain connectivity (GBC), which is a graph-theoretic statistic that can be interpreted as a measure of functional integration (Cole et al., 2010; Anticevic et al., 2014). We found that the regional topography of LSD-induced changes in GBC is aligned with the topography of regional expression levels of HTR2A, the gene which encodes the 5-HT2A receptor (Preller et al., 2018). However, the circuit mechanism through which LSD alters cortical GBC topography remains unclear.\n\nOne approach to bridge this mechanistic gap is to develop biophysically\u00a0based models of large-scale brain activity that incorporate key features of neuronal and synaptic dynamics (Breakspear, 2017; Deco et al., 2011). These models, which are grounded in human neurobiology, can be first calibrated to healthy-state data and then systematically perturbed through biophysically interpretable parameters. In doing so, selective manipulations at the synapse can be linked to their manifestations at empirically resolvable scales (Shine et al., 2021) \u2013 for instance, at the length\u00a0scale and timescales probed by functional magnetic resonance imaging (fMRI). Moreover, recent advances in high-throughput transcriptomics have led to rich genome-wide atlases of gene expression levels mapped across the human brain (Hawrylycz et al., 2012; Hawrylycz et al., 2015). Insofar as protein levels increase with the number of gene transcripts in a region (Liu et al., 2016), gene expression maps provide a principled way to infer the spatial distribution of proteins of interest, for\u00a0example, drug targets. Gene expression maps therefore provide a means to simulate the regionally heterogeneous impacts of a drug on local circuit properties (Murray et al., 2018).\n\nWe extended this computational modeling approach to generate mechanistic insight into the topography of LSD-induced GBC alterations (Preller et al., 2018). GBC is pharmacologically elevated in sensory cortex, especially in visual cortex, and reduced in association cortex (Preller et al., 2018). Moreover, GBC changes correlate significantly with changes in subjects\u2019 experience of consciousness, as determined by validated psychometric instruments (Studerus et al., 2010; Preller et al., 2018). Here, we investigated potential circuit mechanisms underlying these effects by extending a previously validated model of large-scale neural dynamics (Deco et al., 2013; Deco et al., 2014; Demirta\u015f et al., 2019). We found that our model accurately captures the spatial topography of LSD-induced GBC changes. Our findings suggest that the distribution of 5-HT2A receptors is critical for generating the cortical topography of functional disruptions, and that neural gain is preferentially modulated on cortical pyramidal neurons, consistent with known neurobiology. Fitting the model at the individual-subject level, we found that the model captures patterns of individual differences in drug response that predict altered states of consciousness. Our work therefore advances pharmacological modeling from global effects at the group\u00a0level to spatially heterogeneous effects in individuals. Broadly, this work establishes a flexible conceptual framework for linking mechanistic molecular hypotheses to human neuroimaging markers.\n\n## Results\n\nTo investigate the circuit mechanism through which LSD alters cortical GBC topography, we extended a previously validated biophysically\u00a0based model of large-scale neural circuit dynamics (Wong and Wang, 2006; Deco et al., 2013; Demirta\u015f et al., 2019; Figure 1). The model comprises many local microcircuits, each consisting of coupled excitatory and inhibitory neuronal populations. Population dynamics are driven by recurrent synaptic interactions that are governed by neurophysiologically interpretable parameters. Our model consists of 180 interconnected nodes, each of which represents one left-hemispheric cortical parcel in the Human Connectome Project\u2019s (HCP\u2019s) Multi-Modal Parcellation\u00a0(MMP1.0)\u00a0(Glasser et al., 2016). Note that we model only one cortical hemisphere, as the pharmacological fMRI data informing the model are approximately bilaterally symmetric (Preller et al., 2018), and the gene expression data are sampled from the left hemisphere but show bilateral correspondence (Hawrylycz et al., 2015). Nodes in the network interact through structured long-range excitatory projections. The relative strengths of these projections are informed by a diffusion MRI-derived, group-averaged (N\u00a0=\u00a0339) structural connectivity (SC) matrix (Figure 1A; Van Essen et al., 2013; Demirta\u015f et al., 2019). The SC matrix is row-wise normalized such that total long-range inputs to each node are balanced and independent of parcel size. To evaluate model outputs against fMRI-derived data, simulated synaptic activity in each node is transformed into an observable BOLD\u00a0signal using the Balloon-Windkessel model for the hemodynamic response (Friston et al., 2003; Stephan et al., 2007; Deco et al., 2014; Demirta\u015f et al., 2019; Figure 1B). We henceforth refer to this hemodynamically\u00a0coupled neural circuit model as the \u2018baseline\u2019 or \u2018unperturbed\u2019 model.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/69320/elife-69320-fig1-v1.jpg)\n\n**Figure 1.:** (A) Each node in the large-scale model represents a cortical microcircuit comprised of recurrently coupled excitatory (E) and inhibitory (I) neuronal populations. The model includes one node for each of the 180 left-hemispheric parcels in the Human Connectome Project\u2019s Multi-Modal Parcellation\u00a0(MMP1.0). Nodes interact through structured long-range excitatory projections, the strengths of which are constrained by a diffusion magnetic resonance imaging\u00a0(MRI)-derived structural connectivity (SC) matrix. (B) Simulated synaptic activity in each node is transformed to a simulated blood oxygen level-dependent (BOLD) signal using the Balloon-Windkessel model of the hemodynamic response. (C) Lysergic acid diethylamide\u00a0(LSD)\u2019s effect on cortical microcircuitry is modeled as a modulation of neural gain due to serotonin-2A (5-HT2A) receptor agonism by the LSD molecule. The degree to which neural gain is modulated within an area is scaled in proportion to the regional expression level of HTR2A, the gene which encodes the 5-HT2A receptor protein. Gain curves of the excitatory and inhibitory neuronal populations are modulated independently, permitting cell-type specific effects. (D) Global brain connectivity (GBC), a graph-theoretic functional measure, is dramatically altered following LSD administration. The functional\u00a0MRI\u00a0(fMRI)-derived map of the change in GBC (\u0394GBC) under LSD, relative to placebo, specifies the target model output. To simulate brain function in the LSD and placebo drug conditions, we simulate GBC maps with and without gain modulation, respectively. We compute the difference between the model GBC maps to construct a simulated \u0394GBC map. Quantitative comparisons between empirical and model \u0394GBC maps determine how well the model captures the topography of LSD-induced functional disruptions.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69320/elife-69320-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** In the human brain, HTR2A is predominately expressed in cortical pyramidal neurons. (A) Cortical topography of the HTR2A expression map. (B) Whole-brain topography of the HTR2A expression map. For subcortex, we use the 358 subcortical parcels in the Cole-Anticevic Brain Network Parcellation\u00a0(CAB-NP) (Ji et al., 2019). Expression levels are linearly rescaled such that the minimum value is zero, and the cortical parcel-wise average is one. The large difference between expression levels in cortex and subcortex is much greater than the variance across parcels within the cortex. Note that the Allen Human Brain Atlas has unilateral sampling of gene expression in the left hemisphere (Hawrylycz et al., 2015), and therefore the map is made bilaterally symmetric at the parcel level for cortex and coordinate level for subcortex. Gene expression mapping follows the method of Burt et al., 2018. (C) HTR2A expression levels grouped by gross anatomical structure. Box plots mark the median and inner quartile ranges for expression levels across parcels within each anatomical structure, and whiskers indicate the 95% confidence interval. \u2018Subcortex (aggregated)\u2019 comprises parcel expression levels for all subcortical structures (i.e., all 358 subcortical parcels). Expression of HTR2A is significantly higher in cortex than in subcortex ($W=57$; p < machine precision; Wilcoxon signed-rank test). (D) The distribution of HTR2A expression levels across excitatory (red) and inhibitory (blue) human cortical cell types. HTR2A is significantly more expressed in excitatory neurons than in inhibitory neurons (W\u00a0= 141,943; p < machine precision; Wilcoxon signed-rank test).\n\nTo simulate the action of LSD in human cortex, we systematically perturb the baseline model. In earlier empirical analyses, we found that LSD\u2019s influence on brain function and on behavior is primarily mediated through its agonist activity at the 5-HT2A receptor (Preller et al., 2018). Stimulation of 5-HT receptors alters the response properties and membrane excitability of mammalian cortical neurons, such that firing rates are selectively enhanced for strongly depolarizing currents \u2013 that is, such that neural gain is enhanced (Araneda and Andrade, 1991; Andrade, 2011; Zhang and Arsenault, 2005). This 5-HT receptor-mediated enhancement or modulation of gain is thought to be mediated specifically by the 5-HT2A receptor (Zhang and Arsenault, 2005). We therefore simulate the action of LSD by manipulating neural gain equations in the model (Figure 1C). Neural gain in the model is defined by a non-linear expression of the form $r=f\u2062(a\u2062I)$ (Equation 2), which relates pre-synaptic current $I$ to post-synaptic firing rate $r$ by the non-linear function $f$ with scalar gain parameter $a$. We mathematically express gain modulation as a fractional change in $a$, that\u00a0is, $a\u2192(1+\\delta)\u2062a_{0}$, where a0 is the unperturbed parameter value and \u03b4 determines the magnitude of modulation.\n\nTo account for the heterogeneous spatial distribution of 5-HT2A receptor density across cortical areas, gain modulation in each node is scaled in proportion to the local expression level of HTR2A \u2013 the gene which encodes the 5-HT2A receptor \u2013 using transcriptomic data from the Allen Human Brain Atlas\u00a0(AHBA) (Figure 1\u2014figure supplement 1; Hawrylycz et al., 2012; Burt et al., 2018). In cortex, 5-HT2A receptors are present on glutamatergic projection neurons and GABAergic interneurons (Mengod et al., 2010; Burnet et al., 1995; Santana et al., 2004). We introduce an additional degree of freedom into the model such that gain modulation can differentially impact the excitatory and inhibitory neuronal populations, thereby not making a priori assumptions as to the cell-type specificity of 5-HT2A-mediated gain modulation (Figure 1C). Specifically, the gain parameter $a$ of neuronal population $p$ in brain region $i$ is given by $a_{i}^{p}=(1+h_{i}\u2062\\delta^{p})\u2062a_{0}^{p}$, where hi is proportional to the expression level of gene HTR2A in the $i$\u00a0th region. For brevity, in what follows we drop the subscript $i$ and superscript $p$ notation. Note that the scalar gain parameter $a$ depends linearly on \u03b4, and the gain function $r=f\u2062(a\u2062I)$ scales non-linearly with $a$; thus, the gain functions scale non-linearly with \u03b4.\n\n### Quantifying functional organization with GBC maps\n\nFunctional organization of cortical dynamics, in the model and in the data, can be operationalized by constructing cortical GBC maps, for comparison to our prior empirical findings (Preller et al., 2018). The change in GBC induced by LSD provides a topographic map across cortical regions of the mean effect on FC, which we have previously compared to the topography of the HTR2A gene expression map (Preller et al., 2018). The first step in computing a GBC map is to construct an FC matrix, defined as the matrix of Pearson correlation coefficients between pairs of brain regions\u2019 BOLD signal time\u00a0traces. We apply the Fisher r-to-Z transformation to off-diagonal elements of this matrix such that values are approximately normally distributed. Off-diagonal elements are then averaged along either rows or columns (as the FC matrix is symmetric), yielding a map of GBC which consists of a single scalar value for each region.\n\nAs reported in Preller et al., 2018, GBC maps were constructed from resting-state BOLD fMRI scans for 24 study participants. Subjects served as their own controls. GBC maps were constructed for each subject in both drug conditions (placebo and LSD). The group-averaged contrast map of the change in GBC for LSD vs. placebo drug conditions \u2013 henceforth referred to as the \u0394GBC map \u2013 specified the target model output (Figure 1D). In other words, we sought to recapitulate in our model the pattern of functional alterations indicated by changes in cortical GBC topography.\n\nEmpirically, the group-averaged \u0394GBC map reveals widespread LSD-induced hyper-connectivity of sensory-somatomotor regions, and hypo-connectivity of association regions (Preller et al., 2018). In the models, we generate a GBC map for both the unperturbed and neuromodulated models, corresponding to models for the placebo and LSD conditions, respectively (described in more detail below). From these maps, we compute a model \u0394GBC map which is then quantitatively compared to the empirical \u0394GBC map (Figure 1D).\n\n### Model captures the spatial topography of LSD-induced changes in cortical GBC\n\nThe operating point of the unperturbed model was first calibrated such that it best captured empirical FC in the placebo condition. This was achieved by performing a one-dimensional grid search over the value of a global long-range coupling parameter, which uniformly scales the strengths of all long-range connections between nodes (Deco et al., 2014). We determined the value of this coupling parameter that yielded the greatest Spearman rank correlation between the off-diagonal elements of the simulated and empirical FC matrices. The coupling parameter was subsequently fixed at this value. The model FC matrix was then used to compute a baseline model GBC map \u2013 our computational analog of the empirical GBC map in the placebo condition.\n\nNext we performed a two-dimensional grid search over the two free model parameters which set the strength of gain modulation on excitatory and inhibitory neurons ($\\delta^{E}$ and $\\delta^{I}$), such that a modulation of gain by 1% corresponds to $\\delta=0.01$ (Figure 2A). For each combination of parameters (i.e., at each point on the parameter space grid), we updated the simulated gain functions and re-computed the system\u2019s stable fixed point. This now-perturbed system is used to generate a new FC matrix, from which we again compute a model GBC map \u2013 this time, our computational analog of the empirical GBC map in the LSD condition. For each combination of free parameters, we then computed a model \u0394GBC map by calculating the difference between the perturbed and unperturbed model GBC maps. To evaluate the quality of the model for each set of parameters, we evaluated the statistical similarity of each model \u0394GBC map to the empirical \u0394GBC map. We quantified similarity by computing the \u2018loading\u2019 of the model \u0394GBC map onto the empirical \u0394GBC map, which we define as the Cartesian dot product between the two \u0394GBC maps (expressed as vectors), divided by the squared norm of the empirical \u0394GBC map (the natural scale in the quantity). This metric was chosen specifically for its sensitivity to both the topography and magnitude of the model perturbation.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/69320/elife-69320-fig2-v1.jpg)\n\n**Figure 2.:** (A) Two-dimensional grid search over the two free model parameters. Parameters govern the gain modulation of inhibitory and excitatory neuronal populations in the model. Model-empirical loading \u2013 the quantity shown in the heatmap \u2013 is defined as the dot product between the empirical change in GBC (\u0394GBC) map and a model \u0394GBC map, normalized by the squared norm of the empirical \u0394GBC map. Loading is maximized for the combination of parameters indicated by the black star. (B) At each point on the grid (i.e., for each combination of gain-modulatory parameters), we computed the excitatory-to-inhibitory (E/I) firing rate ratio, expressed in terms of its unperturbed value. This amounts to computing $r^{\u2032}/r$, where $r^{\u2032}$ is the E/I ratio in the model with gain modulation, and $r$ denotes the E/I ratio in the model without gain modulation. E/I ratio is defined in the model as the ratio of the mean excitatory firing rate (computed across nodes) to the mean inhibitory firing rate. (C) Functional network assignments for each cortical parcel are determined by the Cole-Anticevic Brain Network Parcellation\u00a0(CAB-NP): ventral multi-modal (VMM), language (LAN), dorsal attention (DAN), posterior multi-modal (PMM), primary visual (VIS), secondary visual (VIS2), frontoparietal (FPN), cingulo-opercular (CON), default mode (DMN), orbito-affective (OAN), auditory (AUD), and somatomotor (SOM) networks. Network colors mirror (Ji et al., 2019). (D) Functional network-level comparisons between simulated (solid) and empirical (striped) z-scored \u0394GBC map values. Box plots mark the median and inner quartile ranges for parcels in each network, and whiskers indicate the 95% confidence interval. (E) Distributions of z-scored \u0394GBC map values across cortical parcels in primary sensory networks (AUD, VIS, VIS2, SOM; black line with no fill) and association networks (gray fill with no line). Endpoints of the horizontal black lines (top) correspond to the distributions\u2019 means. Distributions significantly differ empirically (p\u00a0<\u00a010\u22124; spatial autocorrelation-preserving surrogate map test) and in the model (p\u00a0=\u00a00.02; spatial autocorrelation-preserving surrogate map test). (F) Spatial topographies of the dense and parcellated empirical \u0394GBC maps; the strongest-loading model \u0394GBC map; and the HTR2A gene expression map. Maps are portrayed on flattened (unfolded) representations of the cortical surface. (G) Scatter plot illustrating the parcel-wise relationship between the strongest-loading model \u0394GBC map and the empirical \u0394GBC map. (H) Spearman rank correlations between the empirical \u0394GBC map and: (i) the strongest-loading model \u0394GBC map; and (ii) the HTR2A expression map. Empirical \u0394GBC topography is better explained by the dynamical model than by the HTR2A map (p\u00a0<\u00a00.05; test for dependent correlations).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69320/elife-69320-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Effect of GSR on model performance. (A) The HTR2A gene expression map is significantly correlated with the empirical GS-regressed change\u00a0in\u00a0global brain connectivity\u00a0(\u0394GBC) map ($r_{s}=0.40$; p\u00a0<\u00a010\u22125; Spearman rank correlation). In contrast, the empirical \u0394GBC map constructed without GSR correlates only very weakly, and negatively, with the HTR2A map ($r_{s}=\u22120.15$; p\u00a0=\u00a00.05). (B) Model-empirical loadings for the empirical \u0394GBC map with no GSR (Figure 2A). Black star indicates model parameters which yielded maximal loading. (C) Model-empirical loading as a function of fractional change in model excitatory-to-inhibitory\u00a0(E/I) ratio following gain modulation (related to Figure 2B). (D) The strongest\u00a0loading model \u0394GBC maps, with and without GSR. (E) Performing GSR significantly improves: the Spearman rank correlation between the HTR2A expression map and the empirical \u0394GBC map (left; p\u00a0<\u00a010\u22125; test for difference between dependent correlations); maximal model-empirical loading (center; p\u00a0=\u00a00.03; spatial autocorrelation-preserving surrogate map test); and the Spearman rank correlation between the model and empirical \u0394GBC maps (right; p\u00a0<\u00a010\u22125; test for difference between dependent correlations). Purple, without GSR; cyan, with GSR.\n\nWe found that the model \u0394GBC map loaded most strongly onto the empirical \u0394GBC map across a quasi-degenerate range of parameter values (Figure 2A, off-diagonal yellow band). The location of this regime suggests that neural gain is preferentially modulated on excitatory pyramidal neurons, which nonetheless remain in a specific ratio with inhibitory interneurons. To investigate this further, we next characterized the relationship between changes in model excitatory-to-inhibitory\u00a0(E/I) balance and model-empirical loading. For each combination of gain modulation parameters (i.e., at each location on the two-dimensional grid in parameter space), we computed the model\u2019s E/I firing\u00a0rate ratio, relative to its unperturbed value, where we define E/I ratio as the ratio of the mean excitatory firing rate (computed across nodes) to the mean inhibitory firing rate. We find that model-empirical loadings, when plotted as a function of fractional change in E/I ratio, collapse to form an approximately one-dimensional curve which peaks at positive shifts in E/I ratio (Figure 2B). This one-dimensional collapse suggests that gain modulation-induced changes in E/I balance are the primary mechanism through which GBC topography is altered under LSD. Moreover, the fact that the peak occurs for positive shifts in E/I balance suggests that LSD has a net-excitatory effect on cortical activity.\n\nThe model generates a strong functional perturbation that is aligned with the data, but does it also capture fine-grained functional network-specific and parcel-level effects? Empirically, LSD exhibits bidirectional effects across sensory and association brain networks, inducing hyper-connectivity of constituent brain regions in sensory and somatomotor networks, while inducing hypo-connectivity of regions in associative networks (Preller et al., 2018). To investigate network effects in the model, we set the gain modulation parameters to the values that yielded the greatest model-empirical loading (indicated by the black star in Figure 2A). We then characterized the distribution of model \u0394GBC values across parcels within each functional network defined in the Cole-Anticevic Brain Network Parcellation (CAB-NP) (Figure 2C; Ji et al., 2019). We found that empirical network specificity of GBC changes was recapitulated in the model (Figure 2D\u2013E). This finding indicates that the strong model-empirical loading is not driven by select functional networks or by a small subset of all cortical parcels. In fact, at the level of parcels we find a remarkably strong spatial correspondence between \u0394GBC topographies in the model and data ($r_{s}=0.73$; p\u00a0<\u00a010\u22125; Spearman rank correlation) (Figure 2F). Note that brain map values, here and in subsequent figures, are plotted on a flattened (i.e., unfolded) representation of the cortical surface, to better illustrate maps\u2019 contiguous spatial topographies. This statistical association was significantly stronger than the association between the HTR2A gene expression map and the empirical \u0394GBC map (p\u00a0=\u00a00.011; test for difference between dependent correlations) (Figure 2H). Heterogeneous physiological responses to LSD thereby play a critical role in shaping the cortical topography of LSD-induced GBC changes.\n\nGlobal signal regression (GSR) remains a debated pre-processing step that is frequently included in fMRI analyses (Murphy and Fox, 2017). Preller et al., 2018 extensively characterized these data, with and without GSR applied. There, a statistically significant brain-behavior relationship between the neural and experiential effects of LSD was observed when \u2013 and only when \u2013 GSR was performed. Moreover, GSR was found to substantially alter the topography of the empirical \u0394GBC map: when GSR was not used, the spatial correspondence of the \u0394GBC map with the HTR2A expression map is dramatically attenuated (Preller et al., 2018). Here, we find that when GSR is not performed, maximal model-empirical loading and Spearman rank correlation between the model and empirical \u0394GBC maps are both reduced significantly (Figure 2\u2014figure supplement 1). This finding further supports the notion that GSR attenuates non-neural components or artifacts which otherwise obscure meaningful neuronal effects in pharmacological fMRI signals.\n\n### Receptor topography plays a critical role in shaping large-scale functional effects\n\nIn addition to stimulating 5-HT2A receptors, LSD exerts predominately agonistic activity at (5-HT)-2C, -1A/B, -6, and -7 receptors, as well as dopamine D1 and D2 receptors (Nichols, 2004; Passie et al., 2008). Molecular signaling across these disparate receptor subtypes would impact neuronal physiology differently; however, these neuromodulatory systems are known to be important regulators of cortical gain (Thurley et al., 2008; Ferguson and Cardin, 2020). We therefore asked in our model whether modulation of gain via these other receptor subtypes also explains the spatial topography of cortical GBC changes. To test this, we repeated our grid\u00a0search over model parameters, except that instead of modulating gain in proportion to HTR2A expression levels, we modulated gain in proportion to the expression level of, in turn: serotonergic genes HTR1A, HTR2C, and HTR7, and dopaminergic genes DRD1 and DRD2 (excluding 5-HT1B and 5-HT6 encoding genes for lack of reliable transcriptomic data in the AHBA). The result of this process is illustrated in Figure 3A. Of the receptor-encoding genes that we tested, using the HTR2A map in the model yields the maximal model-empirical loading and Spearman rank correlation between empirical and simulated \u0394GBC maps (Figure 3B). These findings highlight the importance of the spatial distribution of drug targets in mediating their large-scale functional effects.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/69320/elife-69320-fig3-v1.jpg)\n\n**Figure 3.:** (A) Two-dimensional grid searches over free model parameters. For each heatmap, gain modulation is scaled in proportion to regional expression levels of different serotonergic (HTR) and dopaminergic (DRD) receptor-encoding genes, each of which is agonized by LSD. Black stars indicate maximal model-empirical loadings for each heatmap. (B) Model-empirical loading (left axis) and Spearman rank correlation (right axis) are greatest when gain is modulated by regional expression levels of HTR2A. Model change in GBC (\u0394GBC) maps used in this analysis were generated using the gain-modulatory parameters that maximized model-empirical loadings, as indicated on each heatmap. (C,D) Following Burt et al., 2020, we generate surrogate brain maps with randomized spatial topographies that, by construction, exhibit spatial autocorrelation that has been matched to that of the HTR2A map. These spatial autocorrelation-preserving surrogate brain maps are used to construct a null distribution of the expected magnitude of model-empirical loading under random chance. Each sample in the null distribution (gray; N\u00a0=\u00a01000) was constructed by modulating gain in proportion to the values in a random spatial autocorrelation-preserving surrogate brain map, then re-computing model-empirical loading. Colored lines correspond to the different receptor-encoding genes (as reported in panel B). ** p\u00a0<\u00a00.01.\n\nWe examined whether a strong model-empirical loading could be simply explained by general statistical properties of the HTR2A map, rather than its specific topographic pattern. To quantify the significance of the HTR2A map\u2019s topography, we sought to establish statistical expectations for model-empirical loading under an appropriate null hypothesis. A widely\u00a0adopted approach to quantifying significance for a complex, model-generated statistic (such as model-empirical loading) is to perform a non-parametric permutation test: by randomly permuting the brain map and re-generating a quantity of interest, one can construct a null distribution of expected outcomes due to random chance (Deco et al., 2018). When permutation tests of this type are applied to brain maps, the implicit null hypothesis is that any brain map with the same distribution of values but with a random topography is statistically likely to have produced a comparable or more extreme effect.\n\nOne important problem with this approach is that spatial autocorrelation \u2013 a characteristic statistical property of brain maps \u2013 is necessarily destroyed by random spatial permutations. Spatial autocorrelation is fundamentally important for two reasons: (i) it violates the assumption that samples are independent or exchangeable, an assumption which underlies many common statistical tests (including the permutation test); and (ii) this violation dramatically inflates p-values in studies of brain maps (Burt et al., 2020). In light of this limitation, here we leverage a recent method to generate autocorrelation-preserving surrogate brain maps (Burt et al., 2020). By construction, these surrogate brain maps have randomized topographies but a fixed spatial autocorrelation (Figure 3C). Building a null distribution from these autocorrelation-preserving brain maps facilitates a test that controls for this important property.\n\nTo perform such a test, we repeatedly redefined gain functions in the model, each time by modulating gain in proportion to regional values of a random spatial autocorrelation-preserving surrogate brain map. Each surrogate map was constructed to have the same spatial autocorrelation structure as the HTR2A map. For each surrogate map, we regenerated a model \u0394GBC map, from which we computed a model-empirical loading. The resulting null distribution of model-empirical loadings was then used to evaluate the significance of the HTR2A map\u2019s specific topography (Figure 3D). We found that modulating gain in proportion to HTR2A expression levels produces a statistically significant loading (p\u00a0=\u00a00.008). The null distribution further reveals that none of the alternative gene expression maps reach significance of p\u00a0<\u00a00.05. These findings further implicate the 5-HT2A receptor in LSD\u2019s mechanism of action, while simultaneously acting as a statistical control for the model complexity.\n\n### Model captures experientially\u00a0relevant modes of neural variation\n\nOur model captures cortical GBC alterations at the group level, but is it expressive enough to capture individual differences? To characterize individual variation \u2013 first, in the empirical data \u2013 we performed a principal components analysis (PCA) on subjects\u2019 individual \u0394GBC maps. We focused on the leading principal component (PC1) of \u0394GBC variation (Figure 4A). By definition, PC1 corresponds to the spatial map that (linearly) captures maximal variance in \u0394GBC across subjects. We found that PC1 correlates strongly with the group-averaged \u0394GBC map ($r_{s}=0.72$; p\u00a0<\u00a010\u22125; Spearman rank correlation). This indicates that individual differences are primarily driven by the strength with which subjects exhibit the group-averaged pattern.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/69320/elife-69320-fig4-v1.jpg)\n\n**Figure 4.:** (A\u2013D) Characteristic patterns of inter-individual variability in cortical change in global brain connectivity\u00a0(\u0394GBC) topography. (A) The empirical group-averaged \u0394GBC map (top), and the leading principal component (PC1) computed across 24 subjects\u2019 empirical \u0394GBC maps (bottom). (B) The model \u0394GBC map fit to the group-averaged data (top), and the PC1 computed across 24 subjects\u2019 model \u0394GBC maps (bottom). (C) Empirical (green) and model (purple) PC variance spectra. The first five empirical PCs and the first two model PCs survived permutation testing (p\u00a0<\u00a00.05, 1000 permutations). (D) Empirical and model PC2 maps. (E\u2013H) Linking individual differences in \u0394GBC to individual differences in lysergic acid diethylamide\u00a0(LSD)-induced alterations of consciousness. (E) Changes in subjects\u2019 conscious experience under LSD relative to placebo as determined by the five-dimensional (5D) altered states of consciousness (5D-ASC) questionnaire: disembodiment, elementary imagery, changed meaning of percepts, blissful state, and spiritual experience. Box plots mark the median and inner quartile ranges for each scale, and whiskers indicate the 95% confidence interval. Positive values indicate an increase under lysergic acid diethylamide\u00a0(LSD). (F) Experiential regression maps are constructed by performing linear regressions, across subjects, between changes in an experiential score (the target variable) and changes in GBC within a single parcel (the predictor variable). For each 5D-ASC scale, we performed 180 regressions \u2013 one per parcel \u2013 across 24 subjects. Brain maps illustrate the first-order regression coefficients. Experiential regression maps therefore illustrate patterns of GBC variation that predict experiential variation. (G) We performed principal components analysis (PCA) on the five experiential regression maps to derive experiential regression map principal\u00a0components\u00a0(PCs). Top: variance spectrum for the experiential regression map PCs. PC1 survives permutation testing (p\u00a0<\u00a00.05, 1000 permutations). Bottom: experiential regression map PC1, which captures 60% of variance across experiential regression maps. (H) Spearman rank correlations between experiential regression maps and neural PC1 maps.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69320/elife-69320-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Empirical \u0394GBC maps for each subject. For each subject, we repeated the model-fitting procedure that was used for the group-level analysis: the global coupling parameter was first set to the value that maximized the Spearman rank correlation between off-diagonal elements of the model functional connectivity\u00a0(FC) matrix and empirical subject-specific placebo FC matrix. Gain-modulatory parameters were then set to the values that maximized model-empirical loading (computed using the subject-specific empirical map).\n\nTo explore individual variation in the model, for each subject, we repeated the two-dimensional grid search over the two gain-modulating parameters. Model-empirical loading for each subject was computed using that subject\u2019s \u0394GBC map as the target model output. For each subject, we selected the combination of gain modulation parameters that maximized model-empirical loading. We then used those parameters to construct subjects\u2019 model \u0394GBC maps (Figure 4\u2014figure supplement 1). We performed PCA on these subject-specific maps to derive PC1 of \u0394GBC variance in the model (Figure 4B). We found that, as in the empirical data, PC1 is topographically aligned with the group-level \u0394GBC map ($r_{s}=0.87$; p\u00a0<\u00a010\u22125; Spearman rank correlation). Moreover, model PC1 and empirical PC1 exhibited similar spatial topographies ($r_{s}=0.63$; p\u00a0<\u00a010\u22125; Spearman rank correlation). These findings reveal a convergence between the dominant modes of neural variation in the data and in the model.\n\nThe model PC variance spectrum shows that variation across subjects\u2019 simulated \u0394GBC maps is almost entirely captured by the two leading model PCs (Figure 4C). That model variation lies within a two-dimensional subspace is expected due to our fitting of two free parameters to \u0394GBC. We also find topographic alignment between model PC2 and empirical PC2 ($r_{s}=0.51$; p\u00a0<\u00a010\u22125; Spearman rank correlation) (Figure 4D). However, the empirical PC variance spectrum reveals that the data exhibit approximately five significant modes of variation (Figure 4C). The data therefore exhibit three more modes than the model. A linear subspace analysis revealed that 67% of model variance fell within the subspace defined by the data\u2019s leading five PCs (see Materials\u00a0and\u00a0methods). In other words, we found that the majority of model variation lies within a low-dimensional subspace defined by the principal modes of empirical variation.\n\nWith only two significant modes of variation, is the model expressive enough to capture individual differences in LSD-induced alterations of consciousness? As reported by Preller et al., 2018, changes in conscious experience were determined psychometrically using the five-dimensional altered states of consciousness (5D-ASC) questionnaire (Dittrich et al., 2010), which was administered to study participants 180 min after drug infusion. The short version of the 5D-ASC questionnaire quantifies changes in conscious experience along five distinct experiential dimensions: experiences of disembodiment, elemental imagery, changed meaning of percepts, blissful state, and spiritual experience \u2013 each of which is profoundly altered under LSD (Figure 4E). We performed a neurobehavioral linear regression analysis to find patterns of altered GBC that were predictive of experiential effects. Specifically, for each (parcel, experiential dimension) pair, we performed a linear regression across subjects, such that each sample in the regression between \u0394GBC in parcel $i$ (the predictor variable) and change along experiential dimension $j$ (the target variable) corresponds to a (\u0394GBCi, \u0394Scorej) pair for one subject.\n\nFor each experiential dimension, we performed one regression per parcel and aggregated the linear regression coefficients across all parcels to create a spatial brain map (Figure 4F). We henceforth refer to these maps as \u2018experiential regression maps\u2019. By construction, experiential regression maps reflect \u0394GBC patterns that predict individuals\u2019 change in experience. For instance, if a subject\u2019s \u0394GBC map strongly resembles the Meaning regression map (Figure 4F), then we expect that subject to have reported a relatively strong change in the meaning of percepts. How consistent are these experiential regression maps across experiential dimensions? We found evidence for a single dominant experiential regression map pattern (Figure 4G).\n\nReturning to our original question \u2013 do modes of model variation have experiential relevance? \u2013 we compared PC1 maps (which characterize individual variation) to experiential regression maps (which are defined by their experiential relevance) (Figure 4G). We find notable correlations of model PC1 with the Meaning ($r_{s}=0.38$; p\u00a0<\u00a010\u22125; Spearman rank correlation) and Disembodiment ($r_{s}=0.61$; p\u00a0<\u00a010\u22125; Spearman rank correlation) experiential regression maps. Most strikingly, however, we find that the model PC1 map strongly resembles the dominant experiential regression map pattern ($r_{s}=0.65$; p\u00a0<\u00a010\u22125; Spearman rank correlation), which is defined as the first PC of the experiential regression maps. This indicates that the model captures patterns of functional individual variation that are linked to\u00a0individual differences in pharmacologically\u00a0induced changes in experience.\n\n## Discussion\n\nIn this study we integrated transcriptomic mapping into a biophysically\u00a0based model of large-scale cortical dynamics to investigate the circuit mechanisms underlying LSD-induced changes in cortical GBC topography. Recently, our group has shown that LSD induces experientially\u00a0relevant changes in GBC through its agonist activity at the 5-HT2A receptor (Preller et al., 2018). Here, we found that the \u0394GBC topography was captured in silico when LSD\u2019s effect on molecular signaling was modeled as a modulation of neuronal gain, mediated by 5-HT2A receptor agonism, with preferential impact on pyramidal neurons. Moreover, our findings were specifically attributable to the topography of the HTR2A expression map \u2013 our transcriptomic proxy measure of the spatial distribution of 5-HT2A receptors. Finally, we showed that the model has enough expressivity to fit individual subjects and exhibits patterns of variation that predict drug-induced alterations of consciousness. This work establishes a framework for linking molecular-level manipulations to salient changes in brain function by integrating transcriptomics, biophysical modeling, and pharmacological neuroimaging.\n\nOur findings complement a recent modeling study by Deco et al., 2018, which showed that a gain-modulatory mechanism captures changes in global spatiotemporal properties of group-level neural dynamics under LSD but did not examine cortical topographic effects as studied here. The authors of that study characterized changes in the distribution of pairwise correlations between sliding-window dynamic FC matrices, or FC dynamics (FCD) (Hansen et al., 2015). FCD and other global statistical metrics have revealed interesting dynamical consequences of gain modulation in simulated neural systems (Shine et al., 2018; Deco et al., 2018; Li et al., 2019; Pfeffer et al., 2020). However, changes in global metrics may be driven by spatially non-specific effects and by non-neuronal components or artifacts, particularly in imaging studies of serotonergic psychedelics (Lewis et al., 2017; Preller et al., 2018; Vollenweider and Preller, 2020). Our findings here demonstrate that gain modulation is a molecular mechanism that explains the specific spatial topography of LSD\u2019s functionally disruptive effects. This key result illustrates how our proposed modeling framework could potentially be used in future studies to inform the development of therapeutics that precisely target pathological brain circuits while minimizing off-target effects.\n\nWhereas prior modeling work explored the effects of modulating neural gain uniformly across cell types (Deco et al., 2018), our study investigated the cell-type specificity of LSD\u2019s effects. Our finding that the best model fits are associated with elevation of E/I ratio and gain modulation that is biased toward excitatory populations suggests that LSD preferentially targets pyramidal neurons. This finding converges with multiple lines of experimental evidence in humans (Pazos et al., 1987; Hall et al., 2000), monkeys (Jakab and Goldman-Rakic, 1998), and rats (Willins et al., 1997; Santana et al., 2004), which show that 5-HT2A receptors are preferentially found on apical dendrites of cortical pyramidal neurons. Moreover, 5-HT2A receptor agonists have been shown to induce substantial increases in cortical pyramidal neuron firing rates (Mart\u00edn-Ruiz et al., 2001; Puig et al., 2003; Llad\u00f3-Pelfort et al., 2018). State-of-the-art single-cell RNA sequencing data across multiple cortical areas in humans also reveals that HTR2A expression is significantly elevated in excitatory cell types, relative to inhibitory cell types (Figure 1\u2014figure supplement 1).\n\nMost prior models of psychedelics\u2019 pharmacological effects in humans have been fitted to group-level statistical measures (Deco et al., 2018; Preller et al., 2019; Kringelbach et al., 2020; Herzog et al., 2020; Pfeffer et al., 2020). Here, we have shown that by fitting to individual subjects, the model can capture experientially\u00a0relevant modes of neural variation. Our model fits the majority of subjects well (Figure 4\u2014figure supplement 1). However, the number of subjects included in the empirical data collection supporting this study was not statistically well\u00a0powered for individual differences predictive analyses, and several subjects were too idiosyncratic in their neural responses for us to accurately predict individuals\u2019 experiential responses to LSD. Pharmacological modeling studies informed by other imaging modalities and powered by larger sample sizes are needed to fully characterize the predictive power and limitations of this approach.\n\nLSD primarily mediates its effects on the human brain through 5-HT2A receptors (Preller et al., 2018; Holze et al., 2021), but LSD also acts as an agonist at other serotonergic and dopaminergic receptor sites (Nichols, 2004; Passie et al., 2008). In particular, LSD exhibits high affinity for 5-HT1A receptor subtypes, which function as inhibitory autoreceptors in the raphe nuclei and induce post-synaptic membrane hyperpolarization in limbic areas (Filip and Bader, 2009). Thus, 5-HT2A and 5-HT1A receptors mediate opposing influences on membrane excitability. Interestingly, this bidirectionality appears consistent with the \u2018anti-psychedelic\u2019 properties of partial 5-HT1A receptor agonists in humans (Pokorny et al., 2016). In addition, 5-HT2A receptors are found in all cortical laminae (Jakab and Goldman-Rakic, 1998; Burnet et al., 1995), often colocalized with 5-HT1A receptors on pyramidal neurons (Araneda and Andrade, 1991; Amarg\u00f3s-Bosch et al., 2004). 5-HT2A receptors are also found on GABAergic interneurons, though relatively infrequently (Willins et al., 1997; Santana et al., 2004).\n\nFunctional neuroimaging-derived measures including GBC are sensitive to the global signal (GS), which represents shared variation across brain regions and may partially reflect non-neuronal physiological, movement- and scanner-related artifacts (Murphy et al., 2013; Murphy and Fox, 2017). In particular, GS artifacts exhibit dramatic differences in clinical populations and following pharmacological manipulations (Driesen et al., 2013; Yang et al., 2014; Power et al., 2017; Yang et al., 2017; Lewis et al., 2017). The data processing decision to include or forego GSR therefore has impact on findings in studies of psychedelics (Preller et al., 2018; Preller et al., 2020): it has been shown that results frequently do not replicate across samples when GSR is not performed (Tagliazucchi et al., 2016; Preller et al., 2018; M\u00fcller et al., 2017; Preller et al., 2020), while studies that use GSR have reported replicable findings (Preller et al., 2018; Preller et al., 2020). Here, we found that multiple measures of model-empirical similarity were significantly improved when GSR was performed (Figure 2\u2014figure supplement 1), providing further support for its use. However, use of GSR remains debated (Fox et al., 2009; Saad et al., 2012), and in general there is no single \u2018right\u2019 way to process resting-state data (Murphy and Fox, 2017). In principle, it may be possible to circumvent some complications introduced by GSR by using a combination of spatial and temporal ICA-based de-noising (Glasser et al., 2018), but this has not yet been tested in pharmacological fMRI studies.\n\nIn this study we leveraged recent advances in generative null modeling to establish statistical benchmarks while controlling for the confounding influence of spatial autocorrelation in analyses of brain maps (Burt et al., 2020). Spatial autocorrelation occurs ubiquitously in empirical brain maps and can dramatically inflate p-values in analyses of both cortical and subcortical brain maps (Burt et al., 2020). Importantly, however, maps of brain features often exhibit the most marked differences across (as opposed to within) neuroanatomical structures. For instance, although gene expression profiles exhibit characteristic hierarchical patterns of intra-cortical variation (Burt et al., 2018), cortico-cortical gene expression variance is small relative to cortico-subcortical variance (Hawrylycz et al., 2015). In addition to spatial autocorrelation within brain structures, these sharp distinctions between brain structures (such as cortex vs. thalamus) introduce additional bias into spatially\u00a0naive permutation tests performed at the whole-brain level (e.g., as used by Deco et al., 2018).\n\nWe used gene expression maps, derived from the AHBA, as proxy correlates of receptor densities (Hawrylycz et al., 2012; Hawrylycz et al., 2015; Burt et al., 2018). Carlyle et al., 2017 found that variation in gene expression levels across human brain regions generally well captured regional variation in protein expression levels. Positron emission tomography (PET) is a neuroimaging modality which can measure regional variation in receptor availability in vivo. Beliveau et al., 2017 directly compared PET maps for serotonin receptors and found good alignment with gene expression levels from the AHBA. A key limitation of using PET-derived maps for model simulations of pharmacology is that for many receptors of interest, PET mapping is not yet possible due to lack of developed radioligands (Pike, 2016). Our study demonstrates proof of concept that transcriptomic mapping can inform large-scale models of pharmacological neuroimaging.\n\nOur parsimonious computational model of LSD\u2019s effects in cortex treats excitatory and inhibitory neurons as statistical ensembles, providing a description of neural dynamics at a level of resolution and complexity appropriate for proof-of-concept comparisons with BOLD neuroimaging data. However, future work which expands, constrains, and tests biophysical models of pharmacology will be critical to address a number of open questions that remain. Neuromodulation and disease processes may predominately influence spatiotemporal properties within rather than across areas, suggesting the need for multi-scale models that go beyond descriptions of brain areas in aggregate. Because our model is defined at the level of cortical parcels, it cannot speak to changes in connectivity that occur over smaller spatial scales, particularly among neurons within the parcels themselves. Our findings indicate that this coarse dynamical description is sufficient to capture regional GBC differences, but future work that goes beyond regional mean-field modeling may be needed to fully resolve the fine-grained effects of pharmacology on within- and between-region FC. Cell-type specific pharmacological effects can also be further investigated by multi-compartment models or models which include multiple interneuron subtypes. Cell-type specific effects could be introduced into such models by integrating bulk transcriptomics with single-cell RNA-sequencing to inform the joint distribution of pharmacological targets across distinct areas and cell types, respectively (Lake et al., 2016; Burt et al., 2018). Moreover, while 5-HT2A receptors are predominately found in cortex (Figure 1\u2014figure supplement 1A\u2013C), future model extensions with subcortical structures can incorporate the 5-HT2A receptor-rich claustrum (Hall et al., 2000), which may play a role in mediating the effects of serotonergic psychedelic drugs (Barrett et al., 2020). Comparing pharmacological models to data from multiple imaging modalities may also generate new and complementary insights: for instance, the mechanisms underlying LSD-induced changes in broadband oscillatory power (Muthukumaraswamy et al., 2013; Carhart-Harris et al., 2016) and increased neural signal diversity (Schartner et al., 2017) remain unclear.\n\nRecent years have experienced a resurgence of clinical interest in the use of psychedelics as therapeutics for the treatment of mood disorders, alcohol and substance abuse, and end-of-life distress in terminally-ill patients (Carhart-Harris and Goodwin, 2017; Nichols et al., 2017; Vollenweider and Preller, 2020). The common therapeutic mechanism of serotonergic psychedelic drugs remains unclear, although multiple lines of evidence now point to 5-HT2A receptor-mediated glutamate release (Vollenweider and Kometer, 2010; Mason et al., 2020; Vollenweider and Preller, 2020). Spatial gradients in drug targets, such as serotonergic receptor subtypes, can be approximated using the topography of gene transcripts \u2013 particularly in the case of receptors for which the field lacks suitable PET radioligands. Studies that leverage transcriptomic mapping (Grandjean et al., 2021) and regionally heterogeneous modeling (Demirta\u015f et al., 2019) will further elucidate the mechanisms underlying the complex functional signatures of pharmacologically\u00a0induced neuromodulatory effects (Pfeffer et al., 2020; Alamia et al., 2020).\n\n## Materials and methods\n\n### Structural neuroimaging data\n\nGroup-averaged left-hemispheric SC matrices were constructed from diffusion MRI data using probabilistic tractography for 339 unrelated subjects from the HCP 900-subject data release (Van Essen et al., 2013). SC matrices were parcellated into 180 areas using the HCP\u2019s MMP1.0 (Glasser et al., 2016). Diagonal elements of the SC matrix were set identically to zero, as the dynamical model (described below) explicitly includes self-coupling terms. Moreover, the SC matrix was row-wise normalized such that the total long-range inputs to each node were normalized. This normalization procedure instantiates the assumption that each local microcircuit receives a balance of local and long-range inputs. The CAB-NP\u00a0was used to determine parcels\u2019 functional network assignments (Ji et al., 2019). Pairwise inter-parcel geodesic distance matrices, which were used for constructing spatial autocorrelation-preserving surrogate maps (Burt et al., 2020), were computed by averaging over surface-based distances between grayordinate vertices in each pair of parcels $i$ and $j$, where surface-based distances were computed across the left-hemisphere midthickness surface in the HCP atlas.\n\n### Pharmacological fMRI data\n\nA complete description of data collection and pre-processing procedures was reported in Preller et al., 2018. Briefly, fMRI data derived from a double-blind, placebo-controlled, and within-subject study design, ensuring that each subject served as their own control. Twenty-five healthy human participants received either (i) placebo or (ii) LSD (100 \u00b5g po). Resting-state scans were collected 75 min following drug administration. fMRI data were obtained and processed following HCP-compliant acquisition standards (Glasser et al., 2013). Behavioral measures were derived from the short version of the 5D-ASC questionnaire (Dittrich et al., 2010), which includes 45 items that comprise five different scales: spiritual experience, blissful state, disembodiment, elementary imagery, and changed meaning of percepts. The 5D-ASC questionnaire was administered 180 min following drug infusion. One subject was excluded from analysis due to failure in registration caused by an improper head position. Thus, 24 study participants were analyzed in this study.\n\n### Transcriptomic data\n\nThe AHBA is a publicly available transcriptional atlas of microarray data containing samples from hundreds of neuroanatomical structures in six normal post-mortem human brains. Microarray expression data and all accompanying metadata were downloaded from the AHBA (http://human.brain-map.org) (Hawrylycz et al., 2012; Hawrylycz et al., 2015). An exhaustive description of our pre-processing procedure was reported in Burt et al., 2018. Briefly, cortical microarray data in volumetric space were mapped onto subjects\u2019 native two-dimensional cortical surfaces by minimizing three-dimensional Euclidean distance between microarray samples and grayordinate vertex coordinates. For parcels that were not directly sampled, we performed a surface-based interpolation of sample expression values using a Voronoi diagram approach to create a dense gene expression map (at the level of grayordinates); this interpolated map was then parcellated by averaging across grayordinate vertices in each parcel. One representative microarray probe was selected for each unique gene, and gene expression profiles for selected gene probes were z-scored. Finally, group-averaged expression profiles were computed for genes whose expression profiles were reliable in at least four of the six subjects. These steps yielded group-averaged gene expression values across 180 left-hemispheric cortical areas.\n\nSingle-nucleus transcriptomic data that quantify the expression of HTR2A across distinct cell types in human cortex was obtained from the Allen Brain Institute\u2019s Human Multiple Cortical Areas SMART-seq database (https://portal.brain-map.org/atlases-and-data/rnaseq/human-multiple-cortical-areas-smart-seq). We downloaded the CSV file containing \u2018Gene expression by cluster, trimmed means\u2019 and aggregated columns that included either \u2018Exc\u2019 or \u2018Inh\u2019.\n\n### Modeling large-scale neural dynamics\n\nWe adapted the biophysically\u00a0based large-scale computational model described in Deco et al., 2014. This model reduces the complexity and the number of local microcircuit parameters in a spiking neural network model using a dynamical mean-field approach (Wong and Wang, 2006). By leveraging a statistical description of ensemble neural activity and exploiting the long time\u00a0constants of NMDA receptors, the model reduces a high-dimensional spiking neural network to a computationally tractable two-dimensional dynamical system. Each node in the model comprises recurrently coupled excitatory (E) and inhibitory (I) populations, the dynamics of which are described via coupled non-linear stochastic differential equations. Time-varying activity of the excitatory and inhibitory synaptic currents in brain region $i$, denoted respectively by $I_{i}^{E}$ and $I_{i}^{I}$, is defined as\n\n$$\nI_{i}^{E}(t)=W^{E}I_{b}+w^{EE}S_{i}^{E}(t)+GJ\u03a3_{j}C_{ij}S_{j}^{E}(t)\u2212w^{EI}S_{i}^{I}(t)I_{i}^{I}(t)=W^{I}I_{b}+w^{IE}S_{i}^{E}(t)\u2212S_{i}^{I}(t)\n$$\n\nwhere $I_{b}$ is constant background input current; $S$ is the synaptic gating variable, that\u00a0is, the fraction of open channels; $G$ is a global conductance parameter which scales the strengths of long-range connections; $J$ is the effective NMDA conductance; $C$ is the SC matrix; and remaining parameters are constants. Synaptic current $I^{p}$ for population $p\\in{E,I}$ is transformed into firing rate $r^{p}$ via the transfer function\n\n$$\nr_{i}^{p}\u2062(t)=\u03d5\u2062(I_{i}^{p}\u2062(t))=\\frac{a^{p}\u2062I_{i}^{p}\u2062(t)-b^{p}}{1-e^{-d^{p}\u2062(a^{p}\u2062I_{i}^{p}\u2062(t)-b^{p})}},\n$$\n\nwhere $a$, $b$, and $d$ are cell-type specific parameters governing the form of the input-output relation. In particular, note that parameter $a$, which regulates the slope of the transfer function, corresponds to the neural gain parameter. Note that while this function is unbounded and therefore does not saturate, we confirmed that the node-averaged firing rates in the gain-modulated model (which do not exceed \u223c15 Hz throughout the parameter sweep in Figure 2A) remain in a neurobiologically plausible firing\u00a0rate regime where this approximation of the F-I curve does not break down.\n\nFinally, the time\u00a0evolution for synaptic gating variable $S$ is given by\n\n$$\n\\frac{dS_{i}^{E}(t)}{dt}=\u2212\\frac{S_{i}^{E}(t)}{\\tau^{E}}+(1\u2212S_{i}^{E}(t))\\gammar_{i}^{E}(t)+\\sigma\u03bd_{i}(t)\\frac{dS_{i}^{I}(t)}{dt}=\u2212\\frac{S_{i}^{I}(t)}{\\tau^{I}}+r_{i}^{I}(t)+\\sigma\u03bd_{i}(t)\n$$\n\nwhere \u03c4 is a synaptic time constant, \u03b3 is a kinetic parameter, and \u03c3 is the standard deviation of the stochastic Gaussian input noise \u03bd (Wong and Wang, 2006; Deco et al., 2014). Following Deco et al., 2014, simulated synaptic covariance matrices were approximated analytically by linearizing Equations 1 to 3 around the dynamical system\u2019s stable fixed point.\n\nNeural gain modulation was implemented in the model by introducing a parametric rescaling of gain parameter $a$ for each cell\u00a0type, in proportion to regional gene expression levels of HTR2A:\n\n$$\na_{i}^{E}=h_{i}(1+\\delta^{E})a^{E}a_{i}^{I}=h_{i}(1+\\delta^{I})a^{I}\n$$\n\nwhere hi denotes the expression level of HTR2A in brain region $i$, $\\delta^{E}$ and $\\delta^{I}$ regulate the strength of the perturbation applied to excitatory and inhibitory cell populations, respectively. Thus, two-dimensional parameter sweeps reported in this study, for instance in Figure 2A, correspond to sweeps over free parameters $\\delta^{E}$ and $\\delta^{I}$. Where brain maps (gene expression maps as well as surrogate maps) were used to modulate gain, they were first linearized using the error function (following Demirta\u015f et al., 2019).\n\nFollowing Deco et al., 2014, we implemented feedback inhibition control (FIC) in the model such that the firing rates $r_{i}^{E}$ were constrained to be 3 Hz prior to neural gain modulation. This is accomplished by tuning the weight $w^{E\u2062I}$, which regulates the strength of local inhibitory-to-excitatory feedback, within each simulated brain region. Crucially, we note that FIC was calculated prior to but not following gain modulation, under the assumption that FIC represents neurobiological self-regulatory processes which balance neural activity in the brain on timescales much longer than the characteristic timescales of transient pharmacological manipulations.\n\n### Modeling the hemodynamic response\n\nTo facilitate model comparisons with empirical fMRI data, excitatory synaptic activity within each brain region (given by $S^{E}$ in Equation 3) was transformed to a BOLD signal using the Balloon-Windkessel model (Friston et al., 2003). In this model, the hemodynamic response obeys the following coupled system of equations:\u00a0\n\n$$\n\\frac{d\u2062x_{i}\u2062(t)}{d\u2062t}=S_{i}^{E}\u2062(t)-k\u2062x_{i}-\\gamma\u2062(f_{i}\u2062(t)-1)\n$$\n\n\n\n$$\n\\frac{d\u2062f_{i}\u2062(t)}{d\u2062t}=x_{i}\u2062(t)\n$$\n\n\n\n$$\n\\tau\u2062\\frac{d\u2062v_{i}\u2062(t)}{d\u2062t}=f_{i}\u2062(t)-v_{i}^{\\frac{1}{\\alpha}}\u2062(t)\n$$\n\n\n\n$$\n\\tau\u2062\\frac{d\u2062q_{i}\u2062(t)}{d\u2062t}=\\frac{f_{i}\u2062(t)}{\u03c1}\u2062[1-(1-\u03c1)^{\\frac{1}{f_{i}\u2062(t)}}]-q_{i}\u2062(v_{i}^{\\frac{1-\\alpha}{\\alpha}}\u2062(t))\n$$\n\nwhere $x$ denotes the vasodilatory signal, $f$ the blood inflow, $v$ the blood volume, and $q$ the deoxyhemoglobin content; and parameters \u03c1, \u03c4, \u03ba, \u03b3, and \u03b1 are the resting oxygen extraction fraction, hemodynamic transit time, rate of signal decay, rate of flow-dependent elimination, and the Grubb\u2019s exponent, respectively (Friston et al., 2003). In turn, the corresponding BOLD signal $y$ is calculated as\n\n$$\ny_{i}\u2062(t)=V_{0}\u2062[k_{1}\u2062(1-q_{i}\u2062(t))+k_{2}\u2062(1-\\frac{q_{i}\u2062(t)}{v_{i}\u2062(t)})+k_{3}\u2062(1-v_{i}\u2062(t))]\n$$\n\nwhere V0 is the resting blood volume fraction. The three dimensionless magnetic field strength-dependent parameter values k1, k2, and k3 were derived for a magnetic field strength of 3\u00a0T using Appendix A of Heinzle et al., 2016; all other hemodynamic parameter values were taken from Obata et al., 2004. Simulated BOLD covariance matrices were derived by linearizing these equations and then algebraically transforming the linearized covariance matrix, using a procedure which we previously reported in Demirta\u015f et al., 2019. Specifically, we semi-analytically derive the covariance matrix $P$ of the dynamical system by numerically solving the Lyapunov equation:\n\n$$\nA\u2062P+P\u2062A^{T}+Q_{N}=0\n$$\n\nwhere $A$ is the Jacobian matrix and $Q_{N}$ is the noise covariance matrix. Note that this expression is solved for the full six-dimensional dynamical system which includes two synaptic variables, $S^{E}$ and $S^{I}$, as well as four hemodynamic state variables $x$, $f$, $v$, and $q$. The linearized BOLD covariance matrix is then given by\n\n$$\nP^{BOLD}=K\u2062P\u2062K^{\u2020}\n$$\n\nwhere $K$ is a matrix of partial derivatives of the BOLD signal with respect to the six dynamical variables (Demirta\u015f et al., 2019).\n\nValues for all static parameters in the model are provided in Table 1.\n\n**Table 1.**\n Fixed parameter values used in synaptic and hemodynamic equations.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Excitatory populations</th>\n      <th>Inhibitory populations</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Synaptic model parameters</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Ib</td>\n      <td>0.382 nA</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>J</td>\n      <td>0.15 nA</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>\u03b3</td>\n      <td>0.641</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>WE</td>\n      <td>1.0</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>\u03c4E</td>\n      <td>0.1 s</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>aE</td>\n      <td>310 nC\u22121</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>bE</td>\n      <td>125 Hz</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>dE</td>\n      <td>0.16 s</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>WI</td>\n      <td>\u2013</td>\n      <td>0.7</td>\n    </tr>\n    <tr>\n      <td>\u03c4I</td>\n      <td>\u2013</td>\n      <td>0.01 s</td>\n    </tr>\n    <tr>\n      <td>aI</td>\n      <td>\u2013</td>\n      <td>615 nC\u22121</td>\n    </tr>\n    <tr>\n      <td>bI</td>\n      <td>\u2013</td>\n      <td>177 Hz</td>\n    </tr>\n    <tr>\n      <td>dI</td>\n      <td>\u2013</td>\n      <td>0.087 s</td>\n    </tr>\n    <tr>\n      <td>Hemodynamic model parameters</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>\u03c1</td>\n      <td>0.34</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>\u03b1</td>\n      <td>0.32</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>V0</td>\n      <td>0.02</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>\u03b3</td>\n      <td>0.41 s\u22121</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>\u03ba</td>\n      <td>0.65 s\u22121</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>k1</td>\n      <td>3.72</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>k2</td>\n      <td>0.53</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>k3</td>\n      <td>0.53</td>\n      <td>\u2013</td>\n    </tr>\n  </tbody>\n</table>\n\n### Modeling fitting\n\nTuning the model parameters consisted of two key sequential steps. First, the dynamical operating point of the model was calibrated such that (prior to gain modulation) the model optimally captured empirical FC derived from the placebo-condition fMRI scan. To this end, we performed a one-dimensional grid search over the global coupling parameter $G$, which linearly scales all long-range interactions between nodes (Equation 1). The grid search was over the range [0.01, 0.85] with a step size of 0.01. For each value, we solved for the stable fixed point of the system and then computed the linearized BOLD covariance matrix around that point. From the BOLD covariance matrix, we computed the FC matrix using the transformation from covariance to Pearson correlation coefficient. We computed the Spearman rank correlation between the $N=180\u2062(180-1)/2$ upper-triangular elements of the model FC matrix and the placebo-condition empirical FC matrix. At the group level (i.e., using the group-averaged empirical FC), this step yielded an optimal global coupling value of $G=0.85$, which resulted in a Spearman rank correlation of $r_{s}=0.45$. This value of $G$ was used for all group-averaged analyses in this study. We note that if the upper end of the range was extended beyond $G=0.85$, the maximal fit to the group-level data occurred at $G=0.89$. However, at this value the fit increases only marginally ($\\delta\u2062r_{s}<10^{-3}$), while the system is then positioned so close to a critical bifurcation that even modest modulations of gain will dynamically destabilize the system. This class of computational models is known to produce optimal fits near the edge of stability (see, e.g., Deco et al., 2013).\n\nAfter calibrating the system, next we performed a two-dimensional grid search over model parameters $\\delta\u2062E$ and $\\delta\u2062I$, which determine the strength of excitatory and inhibitory gain modulation, respectively. For each combination of parameters, we updated the neural gain equations (Equation 5) in the model. We solved for the new fixed point and computed the linearized BOLD covariance matrix around that point. FC and GBC were then computed as described above. The difference between model GBC maps (expressed as Fisher Z-values) \u2013 perturbed minus baseline \u2013 yielded a model \u0394GBC map. We then computed the model-empirical loading between the model \u0394GBC map and the empirical \u0394GBC map (LSD minus placebo). As illustrated in the heatmaps, the grid search for the gain modulation parameters was over the range [0, 0.03] with a step size of 0.003. Gain parameters that maximized model-empirical loading were then used for all analyses involving a model \u0394GBC map, either at the group or subject\u00a0level.\n\n### Global brain connectivity\n\nEmpirical GBC was computed using in-house Matlab tools for all grayordinates in the brain using an HCP-harmonized version of the FreeSurfer software (Fischl et al., 2002; Cole et al., 2011; Anticevic et al., 2013; Anticevic et al., 2014), as reported in Preller et al., 2018. Briefly, for each subject, we computed the fMRI time-series correlation between pairs of grayordinates, thereby constructing an FC matrix. Off-diagonal FC matrix elements were Fisher Z-transformed and then averaged across rows to compute GBC values. Maps were then parcellated using the HCP\u2019s MMP1.0 (Glasser et al., 2016). This yielded a parcellated GBC map for each subject where each parcel\u2019s value represents the mean FC of that region to all other regions. Parcellated GBC maps were averaged across subjects to construct the group-averaged GBC map. Similarly, to compute model GBC maps, we used the model to generate a parcellated BOLD FC matrix. Off-diagonal FC matrix elements were Fisher Z-transformed and then averaged across rows to compute GBC values. All illustrated GBC map values (empirical and simulated) are Fisher Z-values.\n\n### Global signal regression\n\nGSR was performed on empirical fMRI-derived time-series data using widely adopted approaches (Anticevic et al., 2013; Cole et al., 2011), as described in Preller et al., 2018. GSR was also performed in the model, as GSR not only removes artifactual signal components but neuronal signal as well. In the model, however, we performed GSR directly on the analytically approximated BOLD covariance matrices using the following approach. Let yi be the BOLD signal in brain region $i$, and let $x$ be the GS\u00a0\u2013 that\u00a0is, the mean gray-matter BOLD signal across regions. Note that $x$ and $y$ are both implicit functions of time. We construct a linear regression model of the form\u00a0\n\n$$\ny_{i}^=\\alpha_{i}+\\beta_{i}\u2062x,\n$$\n\nwhere the residual signal following GSR is given by\n\n$$\n\u03f5_{i}\u2261y_{i}-y_{i}^.\n$$\n\nWhat we seek is an expression for the covariance between GS-regressed BOLD signal residuals in regions $i$ and $j$, that\u00a0is,\n\n$$\nCov\u2062(\u03f5_{i},\u03f5_{j})=\u27e8(\u03f5_{i}-\u03f5_{i}\u00af)\u2062(\u03f5_{j}-\u03f5_{j}\u00af)\u27e9,\n$$\n\nwhere $\u03f5\u00af$ denotes the temporal average of $\u03f5$. Substituting Equations 12 and 13, this expression can be rewritten as\n\n$$\nCov(\u03f5_{i},\u03f5_{j})=\u27e8(y_{i}\u2212y_{i}\u00af),(y_{j}\u2212y_{j}\u00af)\u27e9\u2212\u27e8(y_{i}\u2212y_{i}\u00af),\\beta_{j}(x_{j}\u2212x_{j}\u00af)\u27e9\u2212\u27e8\\beta_{i}(x_{i}\u2212x_{i}\u00af)(y_{j}\u2212y_{j}\u00af)\u27e9+\u27e8\\beta_{i}(x_{i}\u2212x_{i}\u00af)\\beta_{j}(x_{j}\u2212x_{j}\u00af)\u27e9.\n$$\n\nBy manipulating Equation 12, \u03b2 can be expressed in terms of covariances:\n\n$$\n\\beta=\\frac{Cov\u2062(x,y^)}{Cov\u2062(x,x)}=\\frac{\u27e8(x_{i}-x_{i}\u00af)\u2062(y_{j}^-y_{j}^\u00af)\u27e9}{\u27e8(x_{i}-x_{i}\u00af)\u2062(x_{j}-x_{j}\u00af)\u27e9}.\n$$\n\nSubstituting this expression into Equation 15 and simplifying, we obtain\n\n$$\nCov\u2062(\u03f5_{i},\u03f5_{j})=\u27e8(y_{i}-y_{i}\u00af)\u2062(y_{j}-y_{j}\u00af)\u27e9-\\frac{\u27e8(y_{i}-y_{i}\u00af)\u2062(x-x\u00af)\u27e9\u2062\u27e8(y_{j}-y_{j}\u00af)\u2062(x-x\u00af)\u27e9}{\u27e8(x-x\u00af)\u27e9^{2}}.\n$$\n\nFrom the definition of GS $x=\\sum_{i}y_{i}$, Equation 17 can be rewritten as\n\n$$\nCov\u2062(\u03f5_{i},\u03f5_{j})=\u27e8(y_{i}-y_{i}\u00af)\u2062(y_{j}-y_{j}\u00af)\u27e9-\\frac{\u27e8(y_{i}-y_{i}\u00af)\u2062(\\sum_{k}y_{k}-\\sum_{k}y_{k}\u00af)\u27e9\u2062\u27e8(y_{j}-y_{j}\u00af)\u2062(\\sum_{l}y_{l}-\\sum_{l}y_{l}\u00af)\u27e9}{\u27e8(\\sum_{k}y_{k}-\\sum_{k}y_{k}\u00af)\u27e9^{2}}.\n$$\n\nCollecting the summations and noting that\n\n$$\nCov\u2062(y_{i},y_{j})=\u27e8(y_{i}-y_{i}\u00af)\u2062(y_{j}-y_{j}\u00af)\u27e9,\n$$\n\nwe obtain\n\n$$\nCov\u2062(\u03f5_{i},\u03f5_{j})=Cov\u2062(y_{i},y_{j})-\\frac{\\sum_{k}Cov\u2062(y_{i},y_{k})\u2062\\sum_{l}Cov\u2062(y_{j},y_{l})}{\\sum_{m,n}Cov\u2062(y_{m},y_{n})}.\n$$\n\nEquation 20 analytically relates the covariance matrix of the raw BOLD signal (right-hand side) to the covariance matrix of GS-regressed residuals (left-hand side). We used this expression to perform GSR on model BOLD covariance matrices. FC matrices (i.e., Pearson correlation matrices) were then computed from GS-regressed BOLD covariance matrices.\n\n### Generative modeling of surrogate brain maps\n\nSpatial autocorrelation-preserving surrogate maps were constructed following Burt et al., 2020 using the Python-based BrainSMASH toolbox (https://brainsmash.readthedocs.io/). This approach operationalizes spatial autocorrelation in a brain map by computing a variogram, which quantifies variance in the brain map as a function of pairwise distance between areas. To construct each surrogate map, the empirical brain map is iteratively shuffled (to randomize topography), smoothed (to reintroduce spatial autocorrelation), and rescaled (to recover empirical spatial autocorrelation). After performing this procedure, we resampled our surrogate map values from the empirical brain map such that the distribution of values does not change: each surrogate map can then be conceptualized as one random realization of an (approximately) spatial autocorrelation-preserving permutation of the original brain map.\n\nFor each surrogate map $h\u2192$, the surrogate map values ${h_{i}}$ were substituted into Equation 5\u00a0such that the modulation of gain in each region was scaled in proportion to the values of the surrogate map, rather than the empirical HTR2A map. This \u2018surrogate model\u2019 was then used to re-compute the statistic under consideration. Repeating for and aggregating across all surrogate maps yields a null distribution for the expected value of the statistic under the null hypothesis that the outcome of the statistical test is an artifact of spatial autocorrelation, and therefore not unique to a specific spatial topography. Specifically, where we report p-values that derive from a spatial autocorrelation-preserving surrogate map test, we are reporting the proportion of samples in the null distribution which were more extreme than the test statistic.\n\n### Experiential regression maps\n\nTo identify characteristic patterns of changes in GBC that predict subject-level changes in 5D-ASC scores, we constructed spatial brain maps of linear regression coefficients (i.e., beta coefficient maps or simply \u2018beta maps\u2019). To calculate the beta map value in the $i$\u00a0th cortical parcel for experiential dimension $d$, we solved for $\\beta_{i}^{d}$ in the linear regression defined by\n\n$$\n\\delta\u2062s^{d}\u2192=\\alpha_{i}^{d}+\\beta_{i}^{d}\u22c5\u0394\u2062GBC_{i}\u2192\n$$\n\nwhere $\\delta\u2062s^{d}$ is the change in score $\\delta\u2062s$ along experiential dimension $d$; \u03b1 and \u03b2 are constant and linear regression coefficients, respectively; and $\u0394\u2062GBC_{i}$ is the change in GBC for parcel $i$; and vectors include 24 elements (one per subject).\n\n### Linear decomposition\n\nTo define low-dimensional linear subspaces within the 180-dimensional neural state space, we used PCA to determine the dominant spatial modes of variation across different collections of brain maps. We let $\ud835\udc17$ be the $M\\timesN$ matrix comprised of $M$ brain maps, each represented as an $N$-dimensional vector, where columns of $\ud835\udc17$ have been mean-subtracted. The spatial covariance matrix is then given by the $N\\timesN$ symmetric matrix $\ud835\udc02$, where\n\n$$\n\ud835\udc02=\\frac{1}{M-1}\u2062\ud835\udc17^{T}\u2062\ud835\udc17.\n$$\n\nThe symmetric matrix $\ud835\udc02$ can in general be decomposed according to\n\n$$\n\ud835\udc02=\ud835\udc0f\u2062\ud835\udeb2\u2062\ud835\udc0f^{T},\n$$\n\nwhere $\ud835\udc0f$ is an $N\\timesN$ orthogonal matrix whose $i$\u00a0th column $p_{i}\u2192$ is an eigenvector of $\ud835\udc02$, and $\ud835\udeb2$ is an $N\\timesN$ diagonal matrix whose $i$\u00a0th diagonal element $\\lambda_{i}$ is the eigenvalue associated with eigenvector pi. Eigenvector $p_{i}\u2192$ is a PC of $\ud835\udc17$, and the normalized eigenvalue $\\lambda_{i}/Tr\u2062(\ud835\udeb2)$ is the fraction of total variance in $\ud835\udc17$ that occurs along $p_{i}\u2192$. We will assume without loss of generality that eigenvectors are ordered such that $\\lambda_{i+1}\\leq\\lambda_{i}$. In other words, we assume that eigenvectors are arranged such that eigenvalues are placed in descending order. Finally, note that if $M<N$, then $N-M+1$ eigenvalues are identically zero (i.e., $\ud835\udc02$ will not be full rank).\n\nTo determine which PCs were statistically significant, we performed simple permutation testing. Each row in $\ud835\udc17$ (i.e., each brain map) was randomly permuted to obtain a new matrix $\ud835\udc17^{\u2032}$. The procedure described above was then performed on $\ud835\udc17^{\u2032}$ and the fraction of variance captured per PC (i.e., $\\lambda^{\u2032}\u2192/Tr\u2062(\ud835\udeb2^{\u2032})$) was recorded. To construct the gray dashed lines in Figure 4, we performed this procedure $N=1000$ times and then computed the fifth percentile of the resulting null distribution (for each individual PC).\n\nTo investigate shared dimensions of variability in the model and in the data, we first performed PCA on both the model and empirical subject-specific \u0394GBC maps. Permutation testing revealed that the leading two model PCs and the leading five empirical PCs were statistically significant. We then derived the covariance matrix $\ud835\udc02$ for the $24\\times180$ data matrix $\ud835\udc17$, comprised of subjects\u2019 model \u0394GBC maps, per Equation 22. Total model variance $V$ was determined by computing the trace of $\ud835\udc02$. Let $\ud835\udc0f$ denote the $180\\times5$ matrix whose columns correspond to the leading five empirical PCs; then we performed a linear transformation of $\ud835\udc02$ into the five-dimensional subspace defined by the columns of $\ud835\udc0f$ according to\n\n$$\n\ud835\udc02^{\u2032}=\ud835\udc0f^{T}\u2062\ud835\udc02\ud835\udc0f.\n$$\n\nFinally, we determined the total variance $V^{\u2032}$ contained in the subspace by computing the trace of $\ud835\udc02^{\u2032}$. Then the fraction of model variance that falls within the data\u2019s five-dimensional subspace (67%) is given by $V^{\u2032}/V$.\n\n### Data and code availability\n\nA Python-based implementation of the model is provided as an open-access software package, BRAINTRIPS (BRainwide Activity Induced by Neuromodulation via TRanscriptomics-Informed Pharmacological Simulation): https://github.com/murraylab/braintrips (Burt, 2021; copy archived at swh:1:rev:2f4c9bb63ec01c40e4374e277d03c7ff28e92713). All processed neuroimaging data needed to reproduce main findings in this study are made publicly available on BALSA (https://balsa.wustl.edu/study/show/5XMxv).\n",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "fc8c4514-dba8-4755-8014-29a1d75a3bf1",
+      "submission_id": "c2543934-51a3-451d-8b56-2a28456ad420",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Timothy E Behrens, University of Oxford United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.69320.sa1](https://doi.org/10.7554/eLife.69320.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nThis paper will be of interest to scientists working on computational modelling of neuroimaging data, and on the neural effects of psychedelic drugs and other pharmacological interventions. The study is well-motivated. The statistical and data analytic methodologies are rigorous and advanced. The with conclusions are well-supported by the presented data. The modelling methodology includes technical innovations that are potentially of broad utility and importance.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Transcriptomics-informed large-scale cortical model captures topography of pharmacological neuroimaging effects of LSD\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Timothy Behrens as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: James M Shine (Reviewer #1); John Griffiths (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nNone. We like the manuscript and would be happy to publish it tomorrow if you choose. However, we have made some suggestions below that we think would improve the manuscript, which you can implement at your discretion.\n\nReviewer #1 (Recommendations for the authors):\n\nP4 \u2013 perhaps better to state that GBC 'can be interpreted' as a measure of functional integration.\n\nP4 \u2013 I realise it is passe to ask for citations of one's own work, however the authors may wish to cite a recent review on the use of neural mass models linking structure and function (Shine et al., 2021 in Nature Neuroscience), as the topic of the review is strongly-aligned with the authors approach.\n\nP6 \u2013 is it realistic to model gain as a continually increasing function? There is a natural ceiling to how high the firing rate of a neuron can be, which suggests that a sigmoid transfer function might be a more sensible function. The authors could mitigate this concern by confirming that the firing rate of their neural populations is bounded within reasonable limits by other features of their model (e.g., EI balance).\n\nP7 \u2013 are the off-diagonal elements of the FC matrix normalized separately for 5HT2A vs. placebo conditions? If so, did the authors first check to determine whether there were systematic differences between 5HT2A and placebo that may have been diminished through normalisation?\n\nP8 \u2013 the authors conclude that the model fits reflect the fact that \"neural gain is preferentially modulated on excitatory pyramidal neurons\", however I wonder whether a more parsimonious description would be that \"neural gain is preferentially modulated on excitatory pyramidal neurons, which nonetheless remain in a specific ratio with inhibitory interneurons\". Note that this result is further expanded in Figure 2B, but I worry that the interim conclusion may mislead from the final result.\n\nP8 \u2013 I really liked the utilisation of other 5HT and DA receptor maps and permutation testing.\n\nReviewer #2 (Recommendations for the authors):\n\nIt would be informative to include some discussion of the connectivity normalization choice. The connectivity matrix diagonals are set to zero and each row is re-scaled to unity, which is equivalent to using the Laplacian. The result of this is that every brain region receives an identical total level of input from other regions in the network. This is particularly interesting given the principal metric of interest is (changes in) global brain connectivity (row/column averages of the FC matrix). The equivalent maps for the anatomical connectivity will be uniform, for the reasons detailed above. Could the authors please discuss: what, if any, is the neurobiological, and/or mathematical rationale for this normalization choice, and what are their thoughts on the above considerations.\n\nReviewer #3 (Recommendations for the authors):\n\nI really enjoyed reading this manuscript, it is very well-written and easy to follow. The study appears to be methodologically sound, however, given my lack of direct expertise in the modeling of dynamical systems, I am will refrain from giving more specific comments and/or suggestions for improving the scientific quality of these analyses.\n",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8e6ec94a-040c-4a16-872b-71e96471981b",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C1",
+      "claim": "Neural and experiential effects of lysergic acid diethylamide (LSD) are attributable to agonism of the serotonin-2A receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, using pharmacological neuroimaging, we found that neural and experiential effects of lysergic acid diethylamide (LSD) are attributable to agonism of the serotonin-2A receptor (Preller et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work (Preller et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "107f7a26-093d-4e9b-8acd-f667c4f10425",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C2",
+      "claim": "The model captures the inter-areal topography of LSD-induced changes in cortical blood oxygen level-dependent (BOLD) functional connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model captures the inter-areal topography of LSD-induced changes in cortical blood oxygen level-dependent (BOLD) functional connectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the modeling results presented in the manuscript, particularly in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "72676b3d-ba40-4a3c-bdb0-b7343b894fef",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C3",
+      "claim": "Serotonin-2A-mediated modulation of pyramidal-neuronal gain is a circuit mechanism through which LSD alters cortical functional topography.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that serotonin-2A-mediated modulation of pyramidal-neuronal gain is a circuit mechanism through which LSD alters cortical functional topography.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the modeling results showing that gain modulation biased toward excitatory populations best captures empirical data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "1b37ac06-0efb-4050-9db1-5d21a9a51920",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C4",
+      "claim": "Individual-subject model fitting captures patterns of individual neural differences in pharmacological response related to altered states of consciousness.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual-subject model fitting captures patterns of individual neural differences in pharmacological response related to altered states of consciousness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the individual-level modeling results and correlations with experiential measures shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "1debfdab-5230-41a5-8956-a64db53087da",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C5",
+      "claim": "Areal differences in gene transcription, cellular architecture, and long-range connectivity patterns have been linked to areal differences in specialization of cortical function.",
+      "claim_type": "EXPLICIT",
+      "source": "Areal differences in gene transcription, cellular architecture, and long-range connectivity patterns have been linked to areal differences in specialization of cortical function (Felleman and Van Essen, 1991; Hilgetag et al., 2016; Burt et al., 2018; Huntenburg et al., 2018; Demirta\u015f et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "e310f133-b001-4676-96a3-349ceb7058ed",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C6",
+      "claim": "Serotonergic hallucinogens produce rapid and profound alterations of consciousness that are linked to widespread, stereotyped patterns of functional network disruption.",
+      "claim_type": "EXPLICIT",
+      "source": "Serotonergic hallucinogens, in particular, produce rapid and profound alterations of consciousness that are linked to widespread, stereotyped patterns of functional network disruption (Tagliazucchi et al., 2014; Tagliazucchi et al., 2016; Lord et al., 2018; Muthukumaraswamy et al., 2013; Atasoy et al., 2017; Preller et al., 2018; Preller et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to prior neuroimaging studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "626aaade-d52d-4702-8950-e0c1cd004fa0",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C7",
+      "claim": "LSD-induced disruptions of BOLD functional connectivity and concomitant changes in consciousness are extinguished by pre-treatment with ketanserin, a selective serotonin-2A receptor antagonist.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, our group has shown that lysergic acid diethylamide (LSD)-induced disruptions of blood oxygen level-dependent (BOLD) functional connectivity (FC) and concomitant changes in consciousness are extinguished by pre-treatment with ketanserin, a selective serotonin-2A (5-HT2A) receptor antagonist (Preller et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior pharmacological neuroimaging work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "61a1d750-ef08-470e-acd0-bb08c03c9676",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C8",
+      "claim": "The 5-HT2A receptor plays a critical role in LSD's mechanism of action.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that the 5-HT2A receptor plays a critical role in LSD's mechanism of action (Vollenweider and Preller, 2020; Holze et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from prior experimental results and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "3c522f03-d03a-4909-b531-0c745e831d23",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C9",
+      "claim": "The regional topography of LSD-induced changes in GBC is aligned with the topography of regional expression levels of HTR2A.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the regional topography of LSD-induced changes in GBC is aligned with the topography of regional expression levels of HTR2A, the gene which encodes the 5-HT2A receptor (Preller et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work that analyzed the correlation between GBC changes and HTR2A expression.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "afb81511-d3d3-4857-8707-868b7159ca45",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C10",
+      "claim": "The model comprises 180 interconnected nodes, each representing one left-hemispheric cortical parcel in the Human Connectome Project's Multi-Modal Parcellation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model consists of 180 interconnected nodes, each of which represents one left-hemispheric cortical parcel in the Human Connectome Project's (HCP's) Multi-Modal Parcellation (MMP1.0) (Glasser et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the model architecture and cites the parcellation scheme used.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "46518d89-9ad8-4e9b-b360-20c5486a20a6",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C11",
+      "claim": "The model includes only one cortical hemisphere because the pharmacological fMRI data are approximately bilaterally symmetric.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that we model only one cortical hemisphere, as the pharmacological fMRI data informing the model are approximately bilaterally symmetric (Preller et al., 2018), and the gene expression data are sampled from the left hemisphere but show bilateral correspondence (Hawrylycz et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is justified by citations to prior work showing bilateral symmetry in the data.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "aceb5048-fec7-4d4e-8da9-71834671987d",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C12",
+      "claim": "Stimulation of 5-HT receptors alters the response properties and membrane excitability of mammalian cortical neurons such that neural gain is enhanced.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimulation of 5-HT receptors alters the response properties and membrane excitability of mammalian cortical neurons, such that firing rates are selectively enhanced for strongly depolarizing currents \u2013 that is, such that neural gain is enhanced (Araneda and Andrade, 1991; Andrade, 2011; Zhang and Arsenault, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior electrophysiological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "85e74cb5-f234-43af-8a4e-14159a7b3121",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C13",
+      "claim": "5-HT receptor-mediated enhancement of gain is thought to be mediated specifically by the 5-HT2A receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "This 5-HT receptor-mediated enhancement or modulation of gain is thought to be mediated specifically by the 5-HT2A receptor (Zhang and Arsenault, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work and involves some speculation about mechanism.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "63868816-6bae-4cfd-88ba-416d0a5aea36",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C14",
+      "claim": "In cortex, 5-HT2A receptors are present on glutamatergic projection neurons and GABAergic interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In cortex, 5-HT2A receptors are present on glutamatergic projection neurons and GABAergic interneurons (Mengod et al., 2010; Burnet et al., 1995; Santana et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior anatomical studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "4f2406df-5d2e-4698-8121-d34f0889d9fb",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C15",
+      "claim": "GBC is pharmacologically elevated in sensory cortex, especially in visual cortex, and reduced in association cortex under LSD.",
+      "claim_type": "EXPLICIT",
+      "source": "GBC is pharmacologically elevated in sensory cortex, especially in visual cortex, and reduced in association cortex (Preller et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior empirical findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "d001024a-49b7-4326-88c2-e5714cb8d42c",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C16",
+      "claim": "GBC changes correlate significantly with changes in subjects' experience of consciousness.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, GBC changes correlate significantly with changes in subjects' experience of consciousness, as determined by validated psychometric instruments (Studerus et al., 2010; Preller et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work that established this correlation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "5fa625a2-445c-4187-b294-3d647639a305",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C17",
+      "claim": "The model accurately captures the spatial topography of LSD-induced GBC changes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that our model accurately captures the spatial topography of LSD-induced GBC changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the modeling results presented in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "61f2e079-c0a8-4eb9-8195-aa92d9d7aa4e",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C18",
+      "claim": "The distribution of 5-HT2A receptors is critical for generating the cortical topography of functional disruptions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that the distribution of 5-HT2A receptors is critical for generating the cortical topography of functional disruptions, and that neural gain is preferentially modulated on cortical pyramidal neurons, consistent with known neurobiology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the modeling results showing that HTR2A topography is necessary for model performance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "dc48bbe5-3fb6-4704-b570-752b65723ce7",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C19",
+      "claim": "Neural gain is preferentially modulated on cortical pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that the distribution of 5-HT2A receptors is critical for generating the cortical topography of functional disruptions, and that neural gain is preferentially modulated on cortical pyramidal neurons, consistent with known neurobiology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from modeling results and is consistent with prior knowledge about receptor distribution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "e806a589-c9ce-45ce-a715-7ca089044de8",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C20",
+      "claim": "The model captures patterns of individual differences in drug response that predict altered states of consciousness.",
+      "claim_type": "EXPLICIT",
+      "source": "Fitting the model at the individual-subject level, we found that the model captures patterns of individual differences in drug response that predict altered states of consciousness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the individual-level modeling and behavioral correlation results in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "0ab0b53a-5bb7-41b6-a371-1948f17a0b5c",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C21",
+      "claim": "The model \u0394GBC map loaded most strongly onto the empirical \u0394GBC map across a quasi-degenerate range of parameter values.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the model \u0394GBC map loaded most strongly onto the empirical \u0394GBC map across a quasi-degenerate range of parameter values (Figure 2A, off-diagonal yellow band).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the parameter sweep results shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "5855f1f2-ea25-41a4-b014-4ee082e5e4c0",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C22",
+      "claim": "Model-empirical loadings collapse to form an approximately one-dimensional curve which peaks at positive shifts in E/I ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that model-empirical loadings, when plotted as a function of fractional change in E/I ratio, collapse to form an approximately one-dimensional curve which peaks at positive shifts in E/I ratio (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "12713f6f-ae35-4459-ba2e-f4844bed2f90",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C23",
+      "claim": "Gain modulation-induced changes in E/I balance are the primary mechanism through which GBC topography is altered under LSD.",
+      "claim_type": "EXPLICIT",
+      "source": "This one-dimensional collapse suggests that gain modulation-induced changes in E/I balance are the primary mechanism through which GBC topography is altered under LSD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the modeling results showing the relationship between E/I ratio and model performance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "ad6e7e69-58a1-4163-a3ee-7702b7555c8f",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C24",
+      "claim": "LSD has a net-excitatory effect on cortical activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the fact that the peak occurs for positive shifts in E/I balance suggests that LSD has a net-excitatory effect on cortical activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the modeling results showing optimal fits at increased E/I ratios.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "9a2c9886-2775-4fe6-a101-3c1386141b12",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C25",
+      "claim": "Empirical network specificity of GBC changes was recapitulated in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that empirical network specificity of GBC changes was recapitulated in the model (Figure 2D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the network-level analysis shown in Figure 2D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "9f1aa827-994f-4790-9f8c-0ace3eeeb112",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C27",
+      "claim": "The statistical association between model and empirical \u0394GBC was significantly stronger than the association between the HTR2A gene expression map and the empirical \u0394GBC map.",
+      "claim_type": "EXPLICIT",
+      "source": "This statistical association was significantly stronger than the association between the HTR2A gene expression map and the empirical \u0394GBC map (p = 0.011; test for difference between dependent correlations) (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the statistical comparison shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "eb159d52-cfca-461c-86cb-cb48307813e7",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C28",
+      "claim": "A statistically significant brain-behavior relationship between the neural and experiential effects of LSD was observed when \u2013 and only when \u2013 GSR was performed.",
+      "claim_type": "EXPLICIT",
+      "source": "There, a statistically significant brain-behavior relationship between the neural and experiential effects of LSD was observed when \u2013 and only when \u2013 GSR was performed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior analysis (Preller et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "b1ca12b7-d26c-4f02-927c-90de80fb03c1",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C29",
+      "claim": "When GSR was not used, the spatial correspondence of the \u0394GBC map with the HTR2A expression map is dramatically attenuated.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, GSR was found to substantially alter the topography of the empirical \u0394GBC map: when GSR was not used, the spatial correspondence of the \u0394GBC map with the HTR2A expression map is dramatically attenuated (Preller et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior analysis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "2ebfdc19-8374-4486-9458-f5bc87142379",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C30",
+      "claim": "When GSR is not performed, maximal model-empirical loading and Spearman rank correlation between the model and empirical \u0394GBC maps are both reduced significantly.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we find that when GSR is not performed, maximal model-empirical loading and Spearman rank correlation between the model and empirical \u0394GBC maps are both reduced significantly (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the analysis shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "2a385560-684d-4518-a8bd-875b6e720bc8",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C31",
+      "claim": "LSD exerts predominately agonistic activity at 5-HT-2C, -1A/B, -6, and -7 receptors, as well as dopamine D1 and D2 receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to stimulating 5-HT2A receptors, LSD exerts predominately agonistic activity at (5-HT)-2C, -1A/B, -6, and -7 receptors, as well as dopamine D1 and D2 receptors (Nichols, 2004; Passie et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior pharmacological studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "3c2b5fd4-5e28-4f12-9d36-4a66699f6a7b",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C32",
+      "claim": "Using the HTR2A map in the model yields the maximal model-empirical loading and Spearman rank correlation between empirical and simulated \u0394GBC maps compared to other receptor-encoding genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the receptor-encoding genes that we tested, using the HTR2A map in the model yields the maximal model-empirical loading and Spearman rank correlation between empirical and simulated \u0394GBC maps (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the comparative analysis shown in Figure 3A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "3268a8fa-d7cc-4559-bfae-ab88f982b7ce",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C33",
+      "claim": "Modulating gain in proportion to HTR2A expression levels produces a statistically significant loading (p = 0.008).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that modulating gain in proportion to HTR2A expression levels produces a statistically significant loading (p = 0.008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the spatial autocorrelation-preserving surrogate map test results shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "0ad205a0-9309-4913-ae71-91bffe211add",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C34",
+      "claim": "None of the alternative gene expression maps reach significance of p < 0.05 in the surrogate map test.",
+      "claim_type": "EXPLICIT",
+      "source": "The null distribution further reveals that none of the alternative gene expression maps reach significance of p < 0.05.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the surrogate map test results shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "3beaaaff-8e11-4ebc-adb3-96df84ade6b7",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C36",
+      "claim": "Individual differences in \u0394GBC are primarily driven by the strength with which subjects exhibit the group-averaged pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that individual differences are primarily driven by the strength with which subjects exhibit the group-averaged pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the strong correlation between PC1 and the group-averaged map.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "f4be8f7d-22d7-4ff0-a5ca-b7493a5e1648",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C39",
+      "claim": "Variation across subjects' simulated \u0394GBC maps is almost entirely captured by the two leading model PCs.",
+      "claim_type": "EXPLICIT",
+      "source": "The model PC variance spectrum shows that variation across subjects' simulated \u0394GBC maps is almost entirely captured by the two leading model PCs (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the variance spectrum analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "7be09dcb-90fc-48f7-b9e1-d5476edba8cb",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C41",
+      "claim": "The empirical data exhibit approximately five significant modes of variation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the empirical PC variance spectrum reveals that the data exhibit approximately five significant modes of variation (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the permutation testing of the empirical variance spectrum shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "609540d4-a9d1-48a1-8818-af0c9aba7e60",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C42",
+      "claim": "67% of model variance fell within the subspace defined by the data's leading five PCs.",
+      "claim_type": "EXPLICIT",
+      "source": "A linear subspace analysis revealed that 67% of model variance fell within the subspace defined by the data's leading five PCs (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the linear subspace analysis described in the methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "6d4296b6-46aa-484b-8000-33e73b3a80ce",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C43",
+      "claim": "The majority of model variation lies within a low-dimensional subspace defined by the principal modes of empirical variation.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, we found that the majority of model variation lies within a low-dimensional subspace defined by the principal modes of empirical variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the subspace analysis showing 67% overlap.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "001a53c7-9425-4a5c-8ac2-fee6075f1af7",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C44",
+      "claim": "Changes in conscious experience were determined psychometrically using the five-dimensional altered states of consciousness (5D-ASC) questionnaire.",
+      "claim_type": "EXPLICIT",
+      "source": "As reported by Preller et al., 2018, changes in conscious experience were determined psychometrically using the five-dimensional altered states of consciousness (5D-ASC) questionnaire (Dittrich et al., 2010), which was administered to study participants 180 min after drug infusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental procedure and is supported by citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "6c4d1d74-c0f8-4079-973b-c79140f95b4c",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C45",
+      "claim": "The 5D-ASC questionnaire quantifies changes in conscious experience along five distinct experiential dimensions: experiences of disembodiment, elemental imagery, changed meaning of percepts, blissful state, and spiritual experience.",
+      "claim_type": "EXPLICIT",
+      "source": "The short version of the 5D-ASC questionnaire quantifies changes in conscious experience along five distinct experiential dimensions: experiences of disembodiment, elemental imagery, changed meaning of percepts, blissful state, and spiritual experience \u2013 each of which is profoundly altered under LSD (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the psychometric instrument and is supported by the data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "3952c4b0-6129-437a-991a-c3fd8879e2ba",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C46",
+      "claim": "There is evidence for a single dominant experiential regression map pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "How consistent are these experiential regression maps across experiential dimensions? We found evidence for a single dominant experiential regression map pattern (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the PCA of experiential regression maps shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "306e6027-e025-4f23-a12d-49129364fbe1",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C50",
+      "claim": "The model captures patterns of functional individual variation that are linked to individual differences in pharmacologically induced changes in experience.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the model captures patterns of functional individual variation that are linked to individual differences in pharmacologically induced changes in experience.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the correlation between model PC1 and experiential regression patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "fa7ded84-9e99-4ca4-98b7-36077a8ac05c",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C51",
+      "claim": "The \u0394GBC topography was captured in silico when LSD's effect on molecular signaling was modeled as a modulation of neuronal gain, mediated by 5-HT2A receptor agonism, with preferential impact on pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we found that the \u0394GBC topography was captured in silico when LSD's effect on molecular signaling was modeled as a modulation of neuronal gain, mediated by 5-HT2A receptor agonism, with preferential impact on pyramidal neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes the main modeling findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "510c3d1b-2ceb-4c14-adf0-8c4bd78dbbd9",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C52",
+      "claim": "The findings were specifically attributable to the topography of the HTR2A expression map.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our findings were specifically attributable to the topography of the HTR2A expression map \u2013 our transcriptomic proxy measure of the spatial distribution of 5-HT2A receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the comparative analysis with other receptor maps and surrogate map testing in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "b56ee643-ba5d-483b-b389-1ce2737b765e",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C53",
+      "claim": "The model has enough expressivity to fit individual subjects and exhibits patterns of variation that predict drug-induced alterations of consciousness.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we showed that the model has enough expressivity to fit individual subjects and exhibits patterns of variation that predict drug-induced alterations of consciousness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes the individual-level modeling results shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "f507f6b4-54dd-49af-b70f-0a5c358619ae",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C54",
+      "claim": "A recent modeling study by Deco et al., 2018 showed that a gain-modulatory mechanism captures changes in global spatiotemporal properties of group-level neural dynamics under LSD but did not examine cortical topographic effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings complement a recent modeling study by Deco et al., 2018, which showed that a gain-modulatory mechanism captures changes in global spatiotemporal properties of group-level neural dynamics under LSD but did not examine cortical topographic effects as studied here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes prior work and is supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "c6d6c8e4-d908-4f03-a9ad-42f3abb3f30b",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C55",
+      "claim": "Changes in global metrics may be driven by spatially non-specific effects and by non-neuronal components or artifacts, particularly in imaging studies of serotonergic psychedelics.",
+      "claim_type": "EXPLICIT",
+      "source": "However, changes in global metrics may be driven by spatially non-specific effects and by non-neuronal components or artifacts, particularly in imaging studies of serotonergic psychedelics (Lewis et al., 2017; Preller et al., 2018; Vollenweider and Preller, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work discussing methodological issues.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "9efef6f9-bd98-4bc2-897a-4a953fc1fbf4",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C56",
+      "claim": "Gain modulation is a molecular mechanism that explains the specific spatial topography of LSD's functionally disruptive effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings here demonstrate that gain modulation is a molecular mechanism that explains the specific spatial topography of LSD's functionally disruptive effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the modeling results showing that gain modulation captures spatial topography.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "a7b5c86d-46aa-4235-9563-8f34df8e7100",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C57",
+      "claim": "The best model fits are associated with elevation of E/I ratio and gain modulation that is biased toward excitatory populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding that the best model fits are associated with elevation of E/I ratio and gain modulation that is biased toward excitatory populations suggests that LSD preferentially targets pyramidal neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the parameter sweep results shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "37340e35-4d34-4749-9156-3724e5404869",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C58",
+      "claim": "LSD preferentially targets pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding that the best model fits are associated with elevation of E/I ratio and gain modulation that is biased toward excitatory populations suggests that LSD preferentially targets pyramidal neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the modeling results and is consistent with prior anatomical knowledge.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "811a05e8-8f07-4bbe-998f-b6bcafb39cb0",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C59",
+      "claim": "5-HT2A receptors are preferentially found on apical dendrites of cortical pyramidal neurons in humans, monkeys, and rats.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding converges with multiple lines of experimental evidence in humans (Pazos et al., 1987; Hall et al., 2000), monkeys (Jakab and Goldman-Rakic, 1998), and rats (Willins et al., 1997; Santana et al., 2004), which show that 5-HT2A receptors are preferentially found on apical dendrites of cortical pyramidal neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior anatomical studies across species.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "076af5f5-cda8-427e-8eec-8d1adcdad66b",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C60",
+      "claim": "5-HT2A receptor agonists induce substantial increases in cortical pyramidal neuron firing rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, 5-HT2A receptor agonists have been shown to induce substantial increases in cortical pyramidal neuron firing rates (Mart\u00edn-Ruiz et al., 2001; Puig et al., 2003; Llad\u00f3-Pelfort et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior electrophysiological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "1f1eb0b0-cb00-45ee-9d24-8cde4c93d19e",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C61",
+      "claim": "HTR2A expression is significantly elevated in excitatory cell types, relative to inhibitory cell types, according to single-cell RNA sequencing data.",
+      "claim_type": "EXPLICIT",
+      "source": "State-of-the-art single-cell RNA sequencing data across multiple cortical areas in humans also reveals that HTR2A expression is significantly elevated in excitatory cell types, relative to inhibitory cell types (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by single-cell transcriptomic data shown in Figure 1\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "ae0ba97a-a682-4af5-aaa4-4bd2873125db",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C62",
+      "claim": "Most prior models of psychedelics' pharmacological effects in humans have been fitted to group-level statistical measures.",
+      "claim_type": "EXPLICIT",
+      "source": "Most prior models of psychedelics' pharmacological effects in humans have been fitted to group-level statistical measures (Deco et al., 2018; Preller et al., 2019; Kringelbach et al., 2020; Herzog et al., 2020; Pfeffer et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior modeling studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "96f46e85-bed8-4309-9448-5b0da98cefd4",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C63",
+      "claim": "By fitting to individual subjects, the model can capture experientially relevant modes of neural variation.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we have shown that by fitting to individual subjects, the model can capture experientially relevant modes of neural variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes the individual-level modeling results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "a1ed24d9-41a9-4160-9f8e-00c65788cacc",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C64",
+      "claim": "The model fits the majority of subjects well.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model fits the majority of subjects well (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the individual subject fits shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "8529fa23-30fa-4685-803b-2a2125d490ed",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C65",
+      "claim": "Several subjects were too idiosyncratic in their neural responses for the model to accurately predict individuals' experiential responses to LSD.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the number of subjects included in the empirical data collection supporting this study was not statistically well powered for individual differences predictive analyses, and several subjects were too idiosyncratic in their neural responses for us to accurately predict individuals' experiential responses to LSD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim acknowledges limitations in the individual-level modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "7d2a0148-8db3-474c-a5a3-a0f1033ea6bb",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C66",
+      "claim": "LSD primarily mediates its effects on the human brain through 5-HT2A receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "LSD primarily mediates its effects on the human brain through 5-HT2A receptors (Preller et al., 2018; Holze et al., 2021), but LSD also acts as an agonist at other serotonergic and dopaminergic receptor sites (Nichols, 2004; Passie et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior pharmacological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "8ab7ba32-5756-42f8-a109-67bd934524d2",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C67",
+      "claim": "LSD exhibits high affinity for 5-HT1A receptor subtypes, which function as inhibitory autoreceptors in the raphe nuclei and induce post-synaptic membrane hyperpolarization in limbic areas.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, LSD exhibits high affinity for 5-HT1A receptor subtypes, which function as inhibitory autoreceptors in the raphe nuclei and induce post-synaptic membrane hyperpolarization in limbic areas (Filip and Bader, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior pharmacological work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "a9bbefb7-3f86-4f3a-b4f9-f4b3adaf0f8d",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C68",
+      "claim": "5-HT2A and 5-HT1A receptors mediate opposing influences on membrane excitability.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, 5-HT2A and 5-HT1A receptors mediate opposing influences on membrane excitability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the known functions of these receptors.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "03bed817-5d66-4fa4-ad18-44683648b5aa",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C69",
+      "claim": "Partial 5-HT1A receptor agonists have 'anti-psychedelic' properties in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this bidirectionality appears consistent with the 'anti-psychedelic' properties of partial 5-HT1A receptor agonists in humans (Pokorny et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior pharmacological work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "d4555ca3-9d04-463d-8701-d87062a3e4f3",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C70",
+      "claim": "5-HT2A receptors are found in all cortical laminae.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, 5-HT2A receptors are found in all cortical laminae (Jakab and Goldman-Rakic, 1998; Burnet et al., 1995), often colocalized with 5-HT1A receptors on pyramidal neurons (Araneda and Andrade, 1991; Amarg\u00f3s-Bosch et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior anatomical studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "92b6bc69-5e92-47f2-b65e-a0d01085a096",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C71",
+      "claim": "5-HT2A receptors are often colocalized with 5-HT1A receptors on pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, 5-HT2A receptors are found in all cortical laminae (Jakab and Goldman-Rakic, 1998; Burnet et al., 1995), often colocalized with 5-HT1A receptors on pyramidal neurons (Araneda and Andrade, 1991; Amarg\u00f3s-Bosch et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior anatomical studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "51eac6d2-a096-4ef3-81d4-e40d75220887",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C72",
+      "claim": "5-HT2A receptors are found on GABAergic interneurons, though relatively infrequently.",
+      "claim_type": "EXPLICIT",
+      "source": "5-HT2A receptors are also found on GABAergic interneurons, though relatively infrequently (Willins et al., 1997; Santana et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior anatomical studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "7d59e14c-7464-4e26-b18c-ae93cdcb007a",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C73",
+      "claim": "GS artifacts exhibit dramatic differences in clinical populations and following pharmacological manipulations.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, GS artifacts exhibit dramatic differences in clinical populations and following pharmacological manipulations (Driesen et al., 2013; Yang et al., 2014; Power et al., 2017; Yang et al., 2017; Lewis et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior neuroimaging studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "d9fe23fc-c93f-4c2e-b9c7-77a6ec196b41",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C74",
+      "claim": "Results frequently do not replicate across samples when GSR is not performed in psychedelic studies.",
+      "claim_type": "EXPLICIT",
+      "source": "The data processing decision to include or forego GSR therefore has impact on findings in studies of psychedelics (Preller et al., 2018; Preller et al., 2020): it has been shown that results frequently do not replicate across samples when GSR is not performed (Tagliazucchi et al., 2016; Preller et al., 2018; M\u00fcller et al., 2017; Preller et al., 2020), while studies that use GSR have reported replicable findings (Preller et al., 2018; Preller et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior studies examining GSR effects.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "fb258512-524e-4b80-a0e6-3fe47ec6fabd",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C75",
+      "claim": "Studies that use GSR have reported replicable findings in psychedelic research.",
+      "claim_type": "EXPLICIT",
+      "source": "The data processing decision to include or forego GSR therefore has impact on findings in studies of psychedelics (Preller et al., 2018; Preller et al., 2020): it has been shown that results frequently do not replicate across samples when GSR is not performed (Tagliazucchi et al., 2016; Preller et al., 2018; M\u00fcller et al., 2017; Preller et al., 2020), while studies that use GSR have reported replicable findings (Preller et al., 2018; Preller et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior studies examining GSR effects.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "6357239e-0ba1-4160-8efc-10bebe92cbd4",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C76",
+      "claim": "Multiple measures of model-empirical similarity were significantly improved when GSR was performed.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we found that multiple measures of model-empirical similarity were significantly improved when GSR was performed (Figure 2\u2014figure supplement 1), providing further support for its use.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the analysis shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "7f9b7007-7b49-4f7d-bdb8-221fd87bca6a",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C77",
+      "claim": "Spatial autocorrelation occurs ubiquitously in empirical brain maps and can dramatically inflate p-values in analyses of both cortical and subcortical brain maps.",
+      "claim_type": "EXPLICIT",
+      "source": "Spatial autocorrelation occurs ubiquitously in empirical brain maps and can dramatically inflate p-values in analyses of both cortical and subcortical brain maps (Burt et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior methodological work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "0563db98-7e71-40b8-a121-0ab487a06298",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C78",
+      "claim": "Gene expression profiles exhibit characteristic hierarchical patterns of intra-cortical variation.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, although gene expression profiles exhibit characteristic hierarchical patterns of intra-cortical variation (Burt et al., 2018), cortico-cortical gene expression variance is small relative to cortico-subcortical variance (Hawrylycz et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior transcriptomic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "29f58a06-ea5c-4d8f-8f1d-a3b48393b6bb",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C79",
+      "claim": "Cortico-cortical gene expression variance is small relative to cortico-subcortical variance.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, although gene expression profiles exhibit characteristic hierarchical patterns of intra-cortical variation (Burt et al., 2018), cortico-cortical gene expression variance is small relative to cortico-subcortical variance (Hawrylycz et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior transcriptomic work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "afa5f1e9-84b1-4e07-b564-52f37ef6e55f",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C80",
+      "claim": "Variation in gene expression levels across human brain regions generally well captured regional variation in protein expression levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Carlyle et al., 2017 found that variation in gene expression levels across human brain regions generally well captured regional variation in protein expression levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work comparing transcriptomics and proteomics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "4c9be7f1-2c07-4a4a-8739-e5abbb1e77e9",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C81",
+      "claim": "Beliveau et al., 2017 found good alignment between PET maps for serotonin receptors and gene expression levels from the AHBA.",
+      "claim_type": "EXPLICIT",
+      "source": "Beliveau et al., 2017 directly compared PET maps for serotonin receptors and found good alignment with gene expression levels from the AHBA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work comparing PET and transcriptomics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "0ec61d10-da38-4f7d-8d20-29fee95dbbbf",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C82",
+      "claim": "For many receptors of interest, PET mapping is not yet possible due to lack of developed radioligands.",
+      "claim_type": "EXPLICIT",
+      "source": "A key limitation of using PET-derived maps for model simulations of pharmacology is that for many receptors of interest, PET mapping is not yet possible due to lack of developed radioligands (Pike, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work on PET radioligand development.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "ff3827d1-41a0-4a27-afb2-c5d9b5f9b9b8",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C83",
+      "claim": "Transcriptomic mapping can inform large-scale models of pharmacological neuroimaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study demonstrates proof of concept that transcriptomic mapping can inform large-scale models of pharmacological neuroimaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the successful application of transcriptomic data in the modeling framework.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "46775a28-29cb-4a5f-8937-6622ad67ba56",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C84",
+      "claim": "The 5-HT2A receptor-rich claustrum may play a role in mediating the effects of serotonergic psychedelic drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, while 5-HT2A receptors are predominately found in cortex (Figure 1\u2014figure supplement 1A\u2013C), future model extensions with subcortical structures can incorporate the 5-HT2A receptor-rich claustrum (Hall et al., 2000), which may play a role in mediating the effects of serotonergic psychedelic drugs (Barrett et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim involves speculation about the claustrum's role and is supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "cd99dc02-25a0-4a91-a6b7-ba2845b5d548",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C85",
+      "claim": "Recent years have experienced a resurgence of clinical interest in the use of psychedelics as therapeutics for the treatment of mood disorders, alcohol and substance abuse, and end-of-life distress in terminally-ill patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent years have experienced a resurgence of clinical interest in the use of psychedelics as therapeutics for the treatment of mood disorders, alcohol and substance abuse, and end-of-life distress in terminally-ill patients (Carhart-Harris and Goodwin, 2017; Nichols et al., 2017; Vollenweider and Preller, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior clinical research reviews.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "40e80f38-5be9-4499-9720-f8977a62211e",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C86",
+      "claim": "Multiple lines of evidence point to 5-HT2A receptor-mediated glutamate release as a common therapeutic mechanism of serotonergic psychedelic drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "The common therapeutic mechanism of serotonergic psychedelic drugs remains unclear, although multiple lines of evidence now point to 5-HT2A receptor-mediated glutamate release (Vollenweider and Kometer, 2010; Mason et al., 2020; Vollenweider and Preller, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior mechanistic studies.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "91429326-8f16-4158-8545-ac71313f5ae1",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C87",
+      "claim": "Group-averaged left-hemispheric SC matrices were constructed from diffusion MRI data using probabilistic tractography for 339 unrelated subjects from the HCP 900-subject data release.",
+      "claim_type": "EXPLICIT",
+      "source": "Group-averaged left-hemispheric SC matrices were constructed from diffusion MRI data using probabilistic tractography for 339 unrelated subjects from the HCP 900-subject data release (Van Essen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the data source and processing method.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "086b6cc9-cbf2-4eff-9bbc-7a597c13b9da",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C88",
+      "claim": "Twenty-five healthy human participants received either placebo or LSD (100 \u00b5g po) in a double-blind, placebo-controlled, within-subject study design.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, fMRI data derived from a double-blind, placebo-controlled, and within-subject study design, ensuring that each subject served as their own control. Twenty-five healthy human participants received either (i) placebo or (ii) LSD (100 \u00b5g po).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental design and is supported by citation to the original study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "3b48fbd4-8a08-4137-acc4-621697072783",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C89",
+      "claim": "Resting-state scans were collected 75 min following drug administration.",
+      "claim_type": "EXPLICIT",
+      "source": "Resting-state scans were collected 75 min following drug administration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental timing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "bb273baa-9210-429f-9e81-1acb31bd4725",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C90",
+      "claim": "One subject was excluded from analysis due to failure in registration caused by an improper head position, resulting in 24 study participants analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "One subject was excluded from analysis due to failure in registration caused by an improper head position. Thus, 24 study participants were analyzed in this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the final sample size and exclusion criterion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "ecf5c0ce-22bc-4866-921c-4dae731a1274",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C91",
+      "claim": "HTR2A is predominately expressed in cortical pyramidal neurons in the human brain.",
+      "claim_type": "EXPLICIT",
+      "source": "In the human brain, HTR2A is predominately expressed in cortical pyramidal neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the single-cell RNA sequencing data shown in Figure 1\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "5f16d02a-0336-4950-b249-b07b6bd2fad4",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C93",
+      "claim": "HTR2A is significantly more expressed in excitatory neurons than in inhibitory neurons (W = 141,943; p < machine precision).",
+      "claim_type": "EXPLICIT",
+      "source": "HTR2A is significantly more expressed in excitatory neurons than in inhibitory neurons (W = 141,943; p < machine precision; Wilcoxon signed-rank test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the statistical analysis of single-cell data shown in Figure 1\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "f8e5de34-97c4-4269-81c0-c64d0a45788c",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C96",
+      "claim": "Performing GSR significantly improves the Spearman rank correlation between the HTR2A expression map and the empirical \u0394GBC map (p < 10\u22125).",
+      "claim_type": "EXPLICIT",
+      "source": "Performing GSR significantly improves: the Spearman rank correlation between the HTR2A expression map and the empirical \u0394GBC map (left; p < 10\u22125; test for difference between dependent correlations); maximal model-empirical loading (center; p = 0.03; spatial autocorrelation-preserving surrogate map test); and the Spearman rank correlation between the model and empirical \u0394GBC maps (right; p < 10\u22125; test for difference between dependent correlations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the statistical comparison shown in Figure 2\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "6e192b41-e5cc-4dd6-a7b7-c25a1f5e281f",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C97",
+      "claim": "Performing GSR significantly improves maximal model-empirical loading (p = 0.03).",
+      "claim_type": "EXPLICIT",
+      "source": "Performing GSR significantly improves: the Spearman rank correlation between the HTR2A expression map and the empirical \u0394GBC map (left; p < 10\u22125; test for difference between dependent correlations); maximal model-empirical loading (center; p = 0.03; spatial autocorrelation-preserving surrogate map test); and the Spearman rank correlation between the model and empirical \u0394GBC maps (right; p < 10\u22125; test for difference between dependent correlations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the statistical comparison shown in Figure 2\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "d7873f5d-51bf-4295-8a4d-c8754b7c420e",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "claim_id": "C98",
+      "claim": "Performing GSR significantly improves the Spearman rank correlation between the model and empirical \u0394GBC maps (p < 10\u22125).",
+      "claim_type": "EXPLICIT",
+      "source": "Performing GSR significantly improves: the Spearman rank correlation between the HTR2A expression map and the empirical \u0394GBC map (left; p < 10\u22125; test for difference between dependent correlations); maximal model-empirical loading (center; p = 0.03; spatial autocorrelation-preserving surrogate map test); and the Spearman rank correlation between the model and empirical \u0394GBC maps (right; p < 10\u22125; test for difference between dependent correlations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the statistical comparison shown in Figure 2\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6318fe22-25b1-4d8d-b5e5-21b8f795bd07",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The computational model accurately captures the spatial topography of LSD-induced changes in cortical global brain connectivity (GBC). The model demonstrates that gain modulation-induced changes in excitatory-to-inhibitory (E/I) balance are the primary mechanism through which GBC topography is altered under LSD, with optimal model fits occurring at positive shifts in E/I ratio, suggesting a net-excitatory effect. The model outperforms the HTR2A gene expression map alone in explaining empirical \u0394GBC topography.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C17, C21-C25, and C27 collectively demonstrate strong model-empirical correspondence. The parameter sweep (C21), one-dimensional collapse analysis (C22-C23), network-level validation (C25), and statistical superiority over HTR2A map alone (C27) provide converging evidence. The model achieves rs=0.73 correlation with empirical data and captures both global patterns and fine-grained network-specific effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "4e80deef-8eae-4189-9d0c-6d1e5df589be",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The model identifies serotonin-2A-mediated modulation of pyramidal-neuronal gain as the circuit mechanism underlying LSD's effects on cortical functional topography. The best model fits are associated with gain modulation biased toward excitatory populations, suggesting LSD preferentially targets pyramidal neurons, consistent with the spatial distribution of 5-HT2A receptors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C18-C19, C51, C56-C58 are supported by the modeling results showing that gain modulation biased toward excitatory populations best captures empirical data (C57), the necessity of HTR2A topography (C18), and convergence with anatomical evidence (C59-C61). The inference that this represents the circuit mechanism is well-justified by the model's performance and biological plausibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "eab7d406-5f66-4e1c-a8cc-61cb1e456e23",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The spatial topography of the HTR2A gene expression map is specifically and significantly responsible for the model's ability to capture LSD-induced functional changes. Using HTR2A yields maximal model-empirical correspondence compared to other receptor-encoding genes (HTR1A, HTR2C, HTR7, DRD1, DRD2), and this effect survives spatial autocorrelation-preserving surrogate map testing (p=0.008).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 and C52 are strongly supported by the comparative analysis across multiple receptor maps (Figure 3A-B) and rigorous statistical testing using spatial autocorrelation-preserving surrogate maps (Figure 3C-D). The use of appropriate null models that control for spatial autocorrelation strengthens the conclusion that HTR2A topography is specifically important, not just any spatially autocorrelated map.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "de416311-79c7-4632-9988-b71bd57330b8",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Individual-subject model fitting captures patterns of individual neural differences in pharmacological response that are linked to altered states of consciousness. The model's leading principal component (PC1) correlates with experiential regression maps, particularly for disembodiment and the dominant experiential pattern. However, the model captures only two significant modes of variation compared to five in the empirical data, with 67% of model variance falling within the empirical subspace.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C20, C36, C50, C53, C63-C64 demonstrate that the model captures experientially relevant individual variation, supported by correlations between model PC1 and experiential regression maps (Figure 4H). However, claims C39, C41-C43 reveal limitations: the model has lower dimensionality than the data. Despite this, the majority of model variance (67%) lies within the empirical subspace, and the model fits most subjects well (C64), supporting the overall conclusion with acknowledged limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "c5982097-3e54-4b33-b2ce-f962bf7f186e",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Global signal regression (GSR) significantly improves model-empirical correspondence and is necessary for revealing the relationship between neural and experiential effects of LSD. Multiple measures of model-empirical similarity (loading, Spearman correlation with HTR2A map, and model-empirical correlation) are significantly improved when GSR is performed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C30 and C76, C96-C98 are supported by statistical comparisons showing significant improvements with GSR (Figure 2\u2014figure supplement 1). The p-values are highly significant (p<10\u207b\u2075 for correlations, p=0.03 for loading). This addresses an important methodological consideration in pharmacological fMRI and is supported by citations to prior work (C28-C29) and current analyses (C30, C76, C96-C98).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "fc5d4e37-cbae-44b5-a9c7-786e0e9c982e",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Multiple lines of evidence from anatomical studies, electrophysiology, and single-cell transcriptomics converge to show that 5-HT2A receptors are preferentially expressed on cortical pyramidal neurons. HTR2A expression is significantly elevated in excitatory versus inhibitory cell types in human cortex (W=141,943; p<machine precision).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61, C91, C93 are well-supported by converging evidence from multiple species (humans, monkeys, rats) and methodologies (immunohistochemistry, electrophysiology, single-cell RNA-seq). The single-cell transcriptomic data (C61, C91, C93) provides direct quantitative support with highly significant statistics. This biological validation strengthens the modeling assumptions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "b3e80ccf-e5e6-4358-ba5e-2c18598e2601",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Prior work has established that LSD's neural and experiential effects are attributable to 5-HT2A receptor agonism, as demonstrated by ketanserin blockade experiments. The regional topography of LSD-induced GBC changes aligns with HTR2A expression, and LSD primarily mediates its effects through 5-HT2A receptors despite also acting at other receptor sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7-C9, C66 accurately summarize prior work (Preller et al., 2018) that forms the foundation for the current study. These are well-established findings supported by pharmacological antagonist studies and are appropriately cited. The claims correctly represent the state of knowledge from prior research.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "456ab730-18fd-43f6-84b7-a49711b76327",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The model architecture consists of 180 left-hemispheric cortical parcels from the HCP Multi-Modal Parcellation, with structural connectivity derived from 339 HCP subjects. The pharmacological fMRI data come from 24 subjects (25 enrolled, 1 excluded) in a within-subject, placebo-controlled design with LSD (100 \u00b5g) and resting-state scans collected 75 minutes post-administration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C11 and C87-C90 accurately describe the model architecture and experimental design. The justification for modeling only one hemisphere (bilateral symmetry in data and gene expression) is appropriately cited (C11). The methodological details are clearly stated and consistent with standard practices in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "d58fcc6b-858d-4c75-9be4-b5683bf811ce",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "5-HT receptor stimulation enhances neural gain through 5-HT2A receptors, which are present on both glutamatergic projection neurons and GABAergic interneurons in cortex. LSD also acts as an agonist at other serotonergic (5-HT-2C, -1A/B, -6, -7) and dopaminergic (D1, D2) receptors. 5-HT2A and 5-HT1A receptors mediate opposing influences on membrane excitability, with 5-HT1A agonists showing anti-psychedelic properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C14, C31, C67-C72 accurately represent established neuropharmacological knowledge supported by appropriate citations to prior electrophysiological and anatomical studies. The claims about receptor distribution, functional effects, and LSD's polypharmacology are well-documented in the literature. The speculation about mechanisms (C13) is appropriately qualified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "b4f3055f-7c2f-4902-a0ff-ed912ceb9dc0",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Changes in conscious experience were assessed using the 5D-ASC questionnaire administered 180 minutes post-drug, which quantifies five experiential dimensions (disembodiment, elemental imagery, changed meaning of percepts, blissful state, spiritual experience). Principal component analysis reveals a single dominant experiential regression map pattern across these dimensions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46 describe the psychometric assessment methodology and analysis. The use of the 5D-ASC questionnaire is standard and appropriately cited (C44). The finding of a dominant experiential pattern (C46) is supported by PCA results shown in Figure 4G. The methodology is clearly described and the analysis is appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "208e9b13-130f-4e27-b9d0-7af26c363835",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior modeling work by Deco et al. (2018) showed that gain modulation captures global spatiotemporal properties of neural dynamics under LSD but did not examine cortical topographic effects. Most prior models of psychedelics have been fitted to group-level measures. Changes in global metrics may be driven by spatially non-specific effects and artifacts in psychedelic imaging studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C55, C62 accurately characterize prior modeling work and its limitations, appropriately citing Deco et al. (2018) and other studies. The distinction between global metrics and spatial topography is important for contextualizing the current work's contribution. The concerns about artifacts in global metrics are supported by citations to methodological studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "844aac47-167b-4a3d-ba58-342fc1ada1aa",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Global signal artifacts exhibit dramatic differences in clinical populations and following pharmacological manipulations. In psychedelic research, results frequently do not replicate across samples when GSR is not performed, while studies using GSR report replicable findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C75 are supported by citations to multiple prior neuroimaging studies examining GSR effects in various contexts, including psychedelic research. The claims accurately represent a body of literature on the importance of GSR for replicability in pharmacological fMRI studies, particularly with psychedelics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "3f8b92a6-1100-47b7-ba7b-8119b7c71cf0",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Spatial autocorrelation occurs ubiquitously in brain maps and can dramatically inflate p-values. Gene expression profiles exhibit hierarchical patterns of intra-cortical variation, but cortico-cortical variance is small relative to cortico-subcortical variance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C79 accurately describe important statistical and biological properties of brain maps, appropriately citing methodological work (Burt et al., 2020) and transcriptomic studies (Hawrylycz et al., 2015; Burt et al., 2018). These claims provide important context for the statistical methods used in the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "6c373258-d89e-4b8b-91ca-b4f3ddfac2c7",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Gene expression levels across brain regions generally capture regional protein expression variation. PET maps for serotonin receptors show good alignment with AHBA gene expression. However, PET mapping is not possible for many receptors due to lack of radioligands. This study demonstrates that transcriptomic mapping can inform large-scale pharmacological neuroimaging models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C83 are supported by appropriate citations validating the use of transcriptomic data as proxies for receptor density (Carlyle et al., 2017; Beliveau et al., 2017). The limitation regarding PET radioligands (C82) is accurately stated. The proof-of-concept claim (C83) is justified by the successful application demonstrated in the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "082577df-7624-4a71-bb2f-4eb10535f2d8",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Areal differences in gene transcription, cellular architecture, and connectivity are linked to functional specialization. Serotonergic hallucinogens produce alterations of consciousness linked to functional network disruption. Under LSD, GBC is elevated in sensory cortex (especially visual) and reduced in association cortex, and these changes correlate with changes in consciousness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6, C15-C16 accurately summarize established findings from prior literature, appropriately citing multiple studies. These claims provide important background context for the study. The characterization of LSD's effects on GBC (C15-C16) is based on prior work (Preller et al., 2018) that forms the empirical foundation for the current modeling study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "c62ae0e3-e160-4b64-b7c2-c4a1ca0f9a4d",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The study was not statistically well-powered for individual differences analyses, and several subjects showed idiosyncratic neural responses that the model could not accurately capture for predicting experiential responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 is an honest acknowledgment of study limitations. With only 24 subjects, the sample size is indeed modest for individual differences analyses. The claim is supported by visual inspection of individual fits (Figure 4\u2014figure supplement 1) showing variable model performance across subjects. This limitation is appropriately disclosed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    },
+    {
+      "id": "50c51bb9-d22d-4be9-b81b-15470ddfb7b0",
+      "content_id": "ba97f4e8-b8e8-459e-8151-3b350642df81",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The 5-HT2A receptor-rich claustrum may play a role in mediating psychedelic drug effects. There has been a resurgence of clinical interest in psychedelics for treating mood disorders, substance abuse, and end-of-life distress. Multiple lines of evidence point to 5-HT2A receptor-mediated glutamate release as a common therapeutic mechanism, though this remains unclear.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C84-C86 involve speculation about future directions (C84) and characterization of the clinical context (C85-C86). While appropriately cited, C84 is explicitly speculative about the claustrum's role. C86 acknowledges uncertainty about therapeutic mechanisms while citing supporting evidence. These claims provide context but do not constitute findings of the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:18:47.487858Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "107f7a26-093d-4e9b-8acd-f667c4f10425",
+      "result_id": "6318fe22-25b1-4d8d-b5e5-21b8f795bd07"
+    },
+    {
+      "claim_id": "5fa625a2-445c-4187-b294-3d647639a305",
+      "result_id": "6318fe22-25b1-4d8d-b5e5-21b8f795bd07"
+    },
+    {
+      "claim_id": "0ab0b53a-5bb7-41b6-a371-1948f17a0b5c",
+      "result_id": "6318fe22-25b1-4d8d-b5e5-21b8f795bd07"
+    },
+    {
+      "claim_id": "5855f1f2-ea25-41a4-b014-4ee082e5e4c0",
+      "result_id": "6318fe22-25b1-4d8d-b5e5-21b8f795bd07"
+    },
+    {
+      "claim_id": "12713f6f-ae35-4459-ba2e-f4844bed2f90",
+      "result_id": "6318fe22-25b1-4d8d-b5e5-21b8f795bd07"
+    },
+    {
+      "claim_id": "ad6e7e69-58a1-4163-a3ee-7702b7555c8f",
+      "result_id": "6318fe22-25b1-4d8d-b5e5-21b8f795bd07"
+    },
+    {
+      "claim_id": "9a2c9886-2775-4fe6-a101-3c1386141b12",
+      "result_id": "6318fe22-25b1-4d8d-b5e5-21b8f795bd07"
+    },
+    {
+      "claim_id": "9f1aa827-994f-4790-9f8c-0ace3eeeb112",
+      "result_id": "6318fe22-25b1-4d8d-b5e5-21b8f795bd07"
+    },
+    {
+      "claim_id": "72676b3d-ba40-4a3c-bdb0-b7343b894fef",
+      "result_id": "4e80deef-8eae-4189-9d0c-6d1e5df589be"
+    },
+    {
+      "claim_id": "61f2e079-c0a8-4eb9-8195-aa92d9d7aa4e",
+      "result_id": "4e80deef-8eae-4189-9d0c-6d1e5df589be"
+    },
+    {
+      "claim_id": "dc48bbe5-3fb6-4704-b570-752b65723ce7",
+      "result_id": "4e80deef-8eae-4189-9d0c-6d1e5df589be"
+    },
+    {
+      "claim_id": "fa7ded84-9e99-4ca4-98b7-36077a8ac05c",
+      "result_id": "4e80deef-8eae-4189-9d0c-6d1e5df589be"
+    },
+    {
+      "claim_id": "9efef6f9-bd98-4bc2-897a-4a953fc1fbf4",
+      "result_id": "4e80deef-8eae-4189-9d0c-6d1e5df589be"
+    },
+    {
+      "claim_id": "a7b5c86d-46aa-4235-9563-8f34df8e7100",
+      "result_id": "4e80deef-8eae-4189-9d0c-6d1e5df589be"
+    },
+    {
+      "claim_id": "37340e35-4d34-4749-9156-3724e5404869",
+      "result_id": "4e80deef-8eae-4189-9d0c-6d1e5df589be"
+    },
+    {
+      "claim_id": "3c2b5fd4-5e28-4f12-9d36-4a66699f6a7b",
+      "result_id": "eab7d406-5f66-4e1c-a8cc-61cb1e456e23"
+    },
+    {
+      "claim_id": "3268a8fa-d7cc-4559-bfae-ab88f982b7ce",
+      "result_id": "eab7d406-5f66-4e1c-a8cc-61cb1e456e23"
+    },
+    {
+      "claim_id": "0ad205a0-9309-4913-ae71-91bffe211add",
+      "result_id": "eab7d406-5f66-4e1c-a8cc-61cb1e456e23"
+    },
+    {
+      "claim_id": "510c3d1b-2ceb-4c14-adf0-8c4bd78dbbd9",
+      "result_id": "eab7d406-5f66-4e1c-a8cc-61cb1e456e23"
+    },
+    {
+      "claim_id": "1b37ac06-0efb-4050-9db1-5d21a9a51920",
+      "result_id": "de416311-79c7-4632-9988-b71bd57330b8"
+    },
+    {
+      "claim_id": "e806a589-c9ce-45ce-a715-7ca089044de8",
+      "result_id": "de416311-79c7-4632-9988-b71bd57330b8"
+    },
+    {
+      "claim_id": "3beaaaff-8e11-4ebc-adb3-96df84ade6b7",
+      "result_id": "de416311-79c7-4632-9988-b71bd57330b8"
+    },
+    {
+      "claim_id": "f4be8f7d-22d7-4ff0-a5ca-b7493a5e1648",
+      "result_id": "de416311-79c7-4632-9988-b71bd57330b8"
+    },
+    {
+      "claim_id": "7be09dcb-90fc-48f7-b9e1-d5476edba8cb",
+      "result_id": "de416311-79c7-4632-9988-b71bd57330b8"
+    },
+    {
+      "claim_id": "609540d4-a9d1-48a1-8818-af0c9aba7e60",
+      "result_id": "de416311-79c7-4632-9988-b71bd57330b8"
+    },
+    {
+      "claim_id": "6d4296b6-46aa-484b-8000-33e73b3a80ce",
+      "result_id": "de416311-79c7-4632-9988-b71bd57330b8"
+    },
+    {
+      "claim_id": "306e6027-e025-4f23-a12d-49129364fbe1",
+      "result_id": "de416311-79c7-4632-9988-b71bd57330b8"
+    },
+    {
+      "claim_id": "b56ee643-ba5d-483b-b389-1ce2737b765e",
+      "result_id": "de416311-79c7-4632-9988-b71bd57330b8"
+    },
+    {
+      "claim_id": "96f46e85-bed8-4309-9448-5b0da98cefd4",
+      "result_id": "de416311-79c7-4632-9988-b71bd57330b8"
+    },
+    {
+      "claim_id": "a1ed24d9-41a9-4160-9f8e-00c65788cacc",
+      "result_id": "de416311-79c7-4632-9988-b71bd57330b8"
+    },
+    {
+      "claim_id": "eb159d52-cfca-461c-86cb-cb48307813e7",
+      "result_id": "c5982097-3e54-4b33-b2ce-f962bf7f186e"
+    },
+    {
+      "claim_id": "b1ca12b7-d26c-4f02-927c-90de80fb03c1",
+      "result_id": "c5982097-3e54-4b33-b2ce-f962bf7f186e"
+    },
+    {
+      "claim_id": "2ebfdc19-8374-4486-9458-f5bc87142379",
+      "result_id": "c5982097-3e54-4b33-b2ce-f962bf7f186e"
+    },
+    {
+      "claim_id": "6357239e-0ba1-4160-8efc-10bebe92cbd4",
+      "result_id": "c5982097-3e54-4b33-b2ce-f962bf7f186e"
+    },
+    {
+      "claim_id": "f8e5de34-97c4-4269-81c0-c64d0a45788c",
+      "result_id": "c5982097-3e54-4b33-b2ce-f962bf7f186e"
+    },
+    {
+      "claim_id": "6e192b41-e5cc-4dd6-a7b7-c25a1f5e281f",
+      "result_id": "c5982097-3e54-4b33-b2ce-f962bf7f186e"
+    },
+    {
+      "claim_id": "d7873f5d-51bf-4295-8a4d-c8754b7c420e",
+      "result_id": "c5982097-3e54-4b33-b2ce-f962bf7f186e"
+    },
+    {
+      "claim_id": "811a05e8-8f07-4bbe-998f-b6bcafb39cb0",
+      "result_id": "fc5d4e37-cbae-44b5-a9c7-786e0e9c982e"
+    },
+    {
+      "claim_id": "076af5f5-cda8-427e-8eec-8d1adcdad66b",
+      "result_id": "fc5d4e37-cbae-44b5-a9c7-786e0e9c982e"
+    },
+    {
+      "claim_id": "1f1eb0b0-cb00-45ee-9d24-8cde4c93d19e",
+      "result_id": "fc5d4e37-cbae-44b5-a9c7-786e0e9c982e"
+    },
+    {
+      "claim_id": "ecf5c0ce-22bc-4866-921c-4dae731a1274",
+      "result_id": "fc5d4e37-cbae-44b5-a9c7-786e0e9c982e"
+    },
+    {
+      "claim_id": "5f16d02a-0336-4950-b249-b07b6bd2fad4",
+      "result_id": "fc5d4e37-cbae-44b5-a9c7-786e0e9c982e"
+    },
+    {
+      "claim_id": "8e6ec94a-040c-4a16-872b-71e96471981b",
+      "result_id": "b3e80ccf-e5e6-4358-ba5e-2c18598e2601"
+    },
+    {
+      "claim_id": "626aaade-d52d-4702-8950-e0c1cd004fa0",
+      "result_id": "b3e80ccf-e5e6-4358-ba5e-2c18598e2601"
+    },
+    {
+      "claim_id": "61a1d750-ef08-470e-acd0-bb08c03c9676",
+      "result_id": "b3e80ccf-e5e6-4358-ba5e-2c18598e2601"
+    },
+    {
+      "claim_id": "3c522f03-d03a-4909-b531-0c745e831d23",
+      "result_id": "b3e80ccf-e5e6-4358-ba5e-2c18598e2601"
+    },
+    {
+      "claim_id": "7d2a0148-8db3-474c-a5a3-a0f1033ea6bb",
+      "result_id": "b3e80ccf-e5e6-4358-ba5e-2c18598e2601"
+    },
+    {
+      "claim_id": "afb81511-d3d3-4857-8707-868b7159ca45",
+      "result_id": "456ab730-18fd-43f6-84b7-a49711b76327"
+    },
+    {
+      "claim_id": "46518d89-9ad8-4e9b-b360-20c5486a20a6",
+      "result_id": "456ab730-18fd-43f6-84b7-a49711b76327"
+    },
+    {
+      "claim_id": "91429326-8f16-4158-8545-ac71313f5ae1",
+      "result_id": "456ab730-18fd-43f6-84b7-a49711b76327"
+    },
+    {
+      "claim_id": "086b6cc9-cbf2-4eff-9bbc-7a597c13b9da",
+      "result_id": "456ab730-18fd-43f6-84b7-a49711b76327"
+    },
+    {
+      "claim_id": "3b48fbd4-8a08-4137-acc4-621697072783",
+      "result_id": "456ab730-18fd-43f6-84b7-a49711b76327"
+    },
+    {
+      "claim_id": "bb273baa-9210-429f-9e81-1acb31bd4725",
+      "result_id": "456ab730-18fd-43f6-84b7-a49711b76327"
+    },
+    {
+      "claim_id": "aceb5048-fec7-4d4e-8da9-71834671987d",
+      "result_id": "d58fcc6b-858d-4c75-9be4-b5683bf811ce"
+    },
+    {
+      "claim_id": "85e74cb5-f234-43af-8a4e-14159a7b3121",
+      "result_id": "d58fcc6b-858d-4c75-9be4-b5683bf811ce"
+    },
+    {
+      "claim_id": "63868816-6bae-4cfd-88ba-416d0a5aea36",
+      "result_id": "d58fcc6b-858d-4c75-9be4-b5683bf811ce"
+    },
+    {
+      "claim_id": "2a385560-684d-4518-a8bd-875b6e720bc8",
+      "result_id": "d58fcc6b-858d-4c75-9be4-b5683bf811ce"
+    },
+    {
+      "claim_id": "8ab7ba32-5756-42f8-a109-67bd934524d2",
+      "result_id": "d58fcc6b-858d-4c75-9be4-b5683bf811ce"
+    },
+    {
+      "claim_id": "a9bbefb7-3f86-4f3a-b4f9-f4b3adaf0f8d",
+      "result_id": "d58fcc6b-858d-4c75-9be4-b5683bf811ce"
+    },
+    {
+      "claim_id": "03bed817-5d66-4fa4-ad18-44683648b5aa",
+      "result_id": "d58fcc6b-858d-4c75-9be4-b5683bf811ce"
+    },
+    {
+      "claim_id": "d4555ca3-9d04-463d-8701-d87062a3e4f3",
+      "result_id": "d58fcc6b-858d-4c75-9be4-b5683bf811ce"
+    },
+    {
+      "claim_id": "92b6bc69-5e92-47f2-b65e-a0d01085a096",
+      "result_id": "d58fcc6b-858d-4c75-9be4-b5683bf811ce"
+    },
+    {
+      "claim_id": "51eac6d2-a096-4ef3-81d4-e40d75220887",
+      "result_id": "d58fcc6b-858d-4c75-9be4-b5683bf811ce"
+    },
+    {
+      "claim_id": "001a53c7-9425-4a5c-8ac2-fee6075f1af7",
+      "result_id": "b4f3055f-7c2f-4902-a0ff-ed912ceb9dc0"
+    },
+    {
+      "claim_id": "6c4d1d74-c0f8-4079-973b-c79140f95b4c",
+      "result_id": "b4f3055f-7c2f-4902-a0ff-ed912ceb9dc0"
+    },
+    {
+      "claim_id": "3952c4b0-6129-437a-991a-c3fd8879e2ba",
+      "result_id": "b4f3055f-7c2f-4902-a0ff-ed912ceb9dc0"
+    },
+    {
+      "claim_id": "f507f6b4-54dd-49af-b70f-0a5c358619ae",
+      "result_id": "208e9b13-130f-4e27-b9d0-7af26c363835"
+    },
+    {
+      "claim_id": "c6d6c8e4-d908-4f03-a9ad-42f3abb3f30b",
+      "result_id": "208e9b13-130f-4e27-b9d0-7af26c363835"
+    },
+    {
+      "claim_id": "ae0ba97a-a682-4af5-aaa4-4bd2873125db",
+      "result_id": "208e9b13-130f-4e27-b9d0-7af26c363835"
+    },
+    {
+      "claim_id": "7d59e14c-7464-4e26-b18c-ae93cdcb007a",
+      "result_id": "844aac47-167b-4a3d-ba58-342fc1ada1aa"
+    },
+    {
+      "claim_id": "d9fe23fc-c93f-4c2e-b9c7-77a6ec196b41",
+      "result_id": "844aac47-167b-4a3d-ba58-342fc1ada1aa"
+    },
+    {
+      "claim_id": "fb258512-524e-4b80-a0e6-3fe47ec6fabd",
+      "result_id": "844aac47-167b-4a3d-ba58-342fc1ada1aa"
+    },
+    {
+      "claim_id": "7f9b7007-7b49-4f7d-bdb8-221fd87bca6a",
+      "result_id": "3f8b92a6-1100-47b7-ba7b-8119b7c71cf0"
+    },
+    {
+      "claim_id": "0563db98-7e71-40b8-a121-0ab487a06298",
+      "result_id": "3f8b92a6-1100-47b7-ba7b-8119b7c71cf0"
+    },
+    {
+      "claim_id": "29f58a06-ea5c-4d8f-8f1d-a3b48393b6bb",
+      "result_id": "3f8b92a6-1100-47b7-ba7b-8119b7c71cf0"
+    },
+    {
+      "claim_id": "afa5f1e9-84b1-4e07-b564-52f37ef6e55f",
+      "result_id": "6c373258-d89e-4b8b-91ca-b4f3ddfac2c7"
+    },
+    {
+      "claim_id": "4c9be7f1-2c07-4a4a-8739-e5abbb1e77e9",
+      "result_id": "6c373258-d89e-4b8b-91ca-b4f3ddfac2c7"
+    },
+    {
+      "claim_id": "0ec61d10-da38-4f7d-8d20-29fee95dbbbf",
+      "result_id": "6c373258-d89e-4b8b-91ca-b4f3ddfac2c7"
+    },
+    {
+      "claim_id": "ff3827d1-41a0-4a27-afb2-c5d9b5f9b9b8",
+      "result_id": "6c373258-d89e-4b8b-91ca-b4f3ddfac2c7"
+    },
+    {
+      "claim_id": "1debfdab-5230-41a5-8956-a64db53087da",
+      "result_id": "082577df-7624-4a71-bb2f-4eb10535f2d8"
+    },
+    {
+      "claim_id": "e310f133-b001-4676-96a3-349ceb7058ed",
+      "result_id": "082577df-7624-4a71-bb2f-4eb10535f2d8"
+    },
+    {
+      "claim_id": "4f2406df-5d2e-4698-8121-d34f0889d9fb",
+      "result_id": "082577df-7624-4a71-bb2f-4eb10535f2d8"
+    },
+    {
+      "claim_id": "d001024a-49b7-4326-88c2-e5714cb8d42c",
+      "result_id": "082577df-7624-4a71-bb2f-4eb10535f2d8"
+    },
+    {
+      "claim_id": "8529fa23-30fa-4685-803b-2a2125d490ed",
+      "result_id": "c62ae0e3-e160-4b64-b7c2-c4a1ca0f9a4d"
+    },
+    {
+      "claim_id": "46775a28-29cb-4a5f-8937-6622ad67ba56",
+      "result_id": "50c51bb9-d22d-4be9-b81b-15470ddfb7b0"
+    },
+    {
+      "claim_id": "cd99dc02-25a0-4a91-a6b7-ba2845b5d548",
+      "result_id": "50c51bb9-d22d-4be9-b81b-15470ddfb7b0"
+    },
+    {
+      "claim_id": "40e80f38-5be9-4499-9720-f8977a62211e",
+      "result_id": "50c51bb9-d22d-4be9-b81b-15470ddfb7b0"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,211 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C18",
+      "C48",
+      "C49"
+    ],
+    "result": "Approximately 58% of Drosophila genes (8,144 out of 13,931) lack suitable coding introns (\u2265100 nt) for artificial exon integration strategies like T2AGAL4. These genes without suitable introns are typically smaller (1,173 nt vs 2,051 nt coding sequence) and have fewer previously isolated mutant alleles (2.1 vs 10.4) compared to genes with suitable introns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5, C18, C48-C49 provide consistent genomic analysis data from Supplementary file 1 showing the distribution and characteristics of genes with and without suitable introns. The 100 nt threshold is based on the authors' experimental experience (C18), and the genome-wide analysis provides clear quantitative support for the limitation of artificial exon strategies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The KozakGAL4 knock-out/knock-in strategy was developed to target genes lacking suitable introns by replacing the coding sequence with a Kozak-GAL4 cassette using two sgRNAs targeting the 5' and 3' UTRs. Of 109 genes targeted, 82 were successfully replaced (75% success rate), and 80% (46/57 tested) showed specific GAL4 expression in third instar larval brains, similar to T2AGAL4 performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10, C50-C53 provide clear experimental data on the development and success rates of the KozakGAL4 strategy. The methodology is well-described (C51, C59-C64), and the expression validation (C10, C52) demonstrates functional GAL4 expression comparable to the established T2AGAL4 approach. This addresses the major limitation identified in Result 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "KozakGAL4 alleles express GAL4 in patterns consistent with endogenous gene expression, as validated by rescue experiments (6/11 genes rescued), scRNAseq comparisons showing overlapping expression patterns, and smiFISH showing GAL4 mRNA overlap with target gene mRNA in 4/7 reliably detected cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While multiple validation approaches support that KozakGAL4 drives expression in appropriate patterns (C12-C13, C65-C68), the rescue experiments show mixed results (C14), and smiFISH analysis had low sample size with 3/7 cases inconclusive (C69). The authors acknowledge the small sample size and do not draw strong conclusions. More comprehensive validation would strengthen this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C77"
+    ],
+    "result": "The int200 strategy, which incorporates sgRNA1 in the vector backbone and uses 200 bp homology arms, achieved 65% transgenesis success for T2AGAL4 (252/397 genes) and 61% for KozakGAL4 (22/36 genes), with 88-91% PCR verification on both flanks. This represents a ~30% gain in overall efficiency compared to previous methods (from 50% to 65%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C27, C77 provide comprehensive experimental data on the int200 strategy with large sample sizes (397 and 36 genes). The success rates are well-documented with PCR verification, and the comparison to previous methods (C27) is appropriately cited. The efficiency gain calculation is supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The gRNA_int200 strategy, which incorporates all sgRNAs into the donor vector, achieved 75% transgenesis success for T2AGAL4 (95/127 genes) and 82% for KozakGAL4 (59/72 genes), representing a 20% improvement over int200 (from 65% to 78%). This design successfully rescued 3/4 genes that failed with int200 for both strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C34, C78-C82 provide strong experimental evidence for the improved gRNA_int200 strategy with substantial sample sizes. The rescue of previously failed genes (C30, C33) provides direct evidence of improved efficiency. The mechanistic advantages (C80-C81) are logical and supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The 2XgRNA_int200 strategy enables GFP tagging at any position in the coding sequence by replacing the entire coding region. Wdr37 was successfully tagged at N-terminal, internal, and C-terminal positions, with Western blot confirming expected protein sizes, though internal tagging resulted in lower protein abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 provide direct experimental evidence for successful GFP tagging at multiple positions with Western blot validation. The observation that internal tagging affects protein stability (C39-C40) is supported by the data and represents an important caveat. Claims C83-C85 provide appropriate context from prior work and logical conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The combined strategies (KozakGAL4 for genes without suitable introns and improved int200/gRNA_int200 methods) enable targeting of nearly every gene in the Drosophila genome with ~80% transgenesis efficiency, while streamlining donor DNA generation and improving genome editing precision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 represent appropriate summary conclusions supported by the experimental data from Results 2, 4, and 5. The ~80% efficiency claim (C54) is directly supported by the gRNA_int200 data (C34). The claim of near-complete genome coverage (C55) is logical given that KozakGAL4 addresses the 58% of genes lacking suitable introns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C15",
+      "C16",
+      "C17",
+      "C19",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Background information on the CRIMIC/T2AGAL4 system and relevant Drosophila genomic features, including Kozak sequence definition, UTR lengths, T2A mechanism, and applications of CRIMIC alleles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C15-C17, C19, C41-C47, C71-C73 provide appropriate background context supported by citations to prior work. These establish the foundation for the current study but do not represent new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Detailed experimental methodology for fly injections, PCR validation, imaging, smiFISH, scRNAseq analysis, and construct generation, including specific reagent concentrations, sample sizes, and data availability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C100 provide comprehensive methodological details that are appropriately specific and enable reproducibility. These are standard methods descriptions rather than results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "The methodology should be easily implementable in other model organisms to facilitate gene trap and protein trap allele generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C86 is speculative about applicability to other organisms. While the logic is reasonable given the general nature of CRISPR-based approaches, no experimental evidence is provided for other model systems. This represents a hypothesis for future work rather than a demonstrated result.",
+    "result_type": "MINOR"
+  }
+]

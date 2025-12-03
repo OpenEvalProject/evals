@@ -1,0 +1,312 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Endogenously tagged IRE1-HaloTag is fully functional, exhibiting stress-dependent XBP1 mRNA splicing, IRE1 phosphorylation, XBP1s protein production, CHOP and ATF4 upregulation, ATF6 cleavage, and RIDD activity comparable to wild-type IRE1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C30 collectively demonstrate that the IRE1-HaloTag construct retains full functionality across multiple UPR activation markers (RT-PCR, immunoblot, RT-qPCR data in Figures 1B, 1C, and supplements). The conclusion in C31 that the HaloTag does not substantially interfere with IRE1 activity is well-supported by this comprehensive functional characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "Endogenously tagged IRE1-HaloTag does not form large microscopically detectable clusters upon ER stress induction, in contrast to overexpressed IRE1, though overexpression of the same construct does produce clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 are supported by confocal microscopy data (Figures 1D-E and supplement 3) showing absence of clusters at endogenous expression but presence upon overexpression. This demonstrates that cluster formation is expression-level dependent rather than a construct artifact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "A two-color single-molecule tracking algorithm robustly distinguishes between monomeric, dimeric, and tetrameric molecules in the ER membrane, with excellent sensitivity for oligomers in the monomer to tetramer range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 are supported by validation data using 1x, 2x, and 4x HaloTag controls across 10 independent replicates (Figure 2F), alternative GST-dimerization controls (Figure 2 supplement 1), and combinatoric modeling (Figure 2 supplement 3). The method is well-validated with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C38",
+      "C71"
+    ],
+    "result": "IRE1 exists as constitutive homodimers at baseline in unstressed cells, challenging the prevailing model that monomer-to-dimer transition is the primary regulatory step in IRE1 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C38, and C71 are strongly supported by single-molecule tracking data showing that unstressed IRE1 has nearly identical correlated trajectory fractions to the 2x HaloTag dimeric control (Figure 3F). This is a major finding that contradicts prior models and is supported by robust quantitative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C39",
+      "C40"
+    ],
+    "result": "IRE1 assembles into small oligomers upon ER stress, with the mean cluster size increasing from approximately 1.8 to 2.5 molecules upon tunicamycin treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C39, and C40 are supported by single-molecule tracking data showing increased correlated trajectories after 4h tunicamycin treatment (Figure 3F). The stoichiometry estimate (C40) is based on a combinatoric model applied to the experimental data, providing a reasonable quantitative estimate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "IRE1 oligomers disassemble back into dimers after 24 hours of prolonged ER stress, paralleling previously observed attenuation of IRE1 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 are supported by time-course data showing reversal of oligomerization at 24h (Figure 3F) and connection to prior literature on IRE1 attenuation. The data clearly demonstrate temporal dynamics of oligomerization consistent with known IRE1 regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "ER stress does not affect dye labeling efficiency or protein diffusion of IRE1 or HaloTag controls, and the measured diffusion coefficient of IRE1-HaloTag (0.18 \u00b1 0.02 \u00b5m\u00b2/s) is consistent with prior measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 are supported by control experiments (Figure 3 supplements 1-3) demonstrating that stress does not alter labeling or diffusion, validating the tracking approach. The diffusion coefficient measurement is consistent with prior FRAP data, providing independent validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Different ER stressors induce IRE1 oligomerization on different temporal scales, with thapsigargin causing rapid but transient oligomerization (detectable at 10 min but not at 2-4h at high concentration), while tunicamycin and DTT cause sustained oligomerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C56 are supported by comprehensive time-course and dose-response data comparing tunicamycin, thapsigargin, and DTT (Figures 1C and 4). The data demonstrate that phosphorylation kinetics differ from oligomerization kinetics and that different stressors have distinct temporal profiles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "IRE1 remains dimeric in unstressed cells even at decreased expression levels, but stress-induced oligomerization is markedly reduced in low-expressing clones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 are supported by data from the low-expressing clone (Figure 4 supplement 1) showing maintained baseline dimerization but reduced stress response. This demonstrates that oligomerization extent is expression-level dependent while baseline dimerization is not.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C72",
+      "C73"
+    ],
+    "result": "The lumenal domain fully governs both constitutive dimerization (via IF1L) and stress-dependent oligomerization (via IF2L), while the kinase/RNase domain alone remains monomeric and acts downstream of the lumenal domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C59-C73 are comprehensively supported by mutant analysis (Figure 5) showing that K121Y (IF1L mutant) remains monomeric, WLLI-GSGS (IF2L mutant) remains dimeric without stress response, delta-LD remains monomeric, and delta-KR recapitulates wild-type behavior. This provides strong evidence for lumenal domain control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C81"
+    ],
+    "result": "The kinase-dead K599A mutant closely resembles wild-type IRE1 in oligomerization behavior, supporting that phosphorylation occurs at the level of higher-order oligomers rather than dimers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64, C65, and C81 are supported by K599A mutant data (Figure 5) showing normal oligomerization despite lack of kinase activity. This provides evidence that oligomerization precedes and enables phosphorylation rather than vice versa.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "Phosphorylation of IRE1's kinase domain occurs more slowly than oligomerization and is retained after oligomers disassemble back into dimers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 are supported by time-course data comparing oligomerization and phosphorylation kinetics (Figures 1C, 4) showing that oligomerization changes precede phosphorylation changes and that phosphorylation persists at 24h when oligomerization has reversed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The authors propose a model wherein assembly of IRE1 dimers into larger oligomers (tetramers) enables trans-autophosphorylation by permitting face-to-face interactions between kinase domains of adjacent back-to-back dimers, which in turn drives RNase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8-C9 and C78-C80 represent a mechanistic model proposed to explain the data. While the model is consistent with the temporal relationship between oligomerization and phosphorylation (C6-C7) and the K599A data (C81), direct evidence for the specific back-to-back/face-to-face conformational arrangements is not provided in this study. The model is reasonable but speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The authors speculate that larger oligomers may represent a transient phosphorylation-competent state rather than the maximally active form, with extensive phosphorylation potentially serving as negative feedback through electrostatic repulsion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C85 are explicitly speculative (as acknowledged by the authors) and based on inference from the thapsigargin data showing rapid assembly/disassembly. While plausible, these claims lack direct experimental support and represent hypotheses for future testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The authors reconcile their findings with prior literature by noting that their method does not rule out a small fraction of monomers, that larger clusters can form at higher expression levels, and that cluster formation is not an artifact of fluorescent tags.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C92 appropriately acknowledge limitations and reconcile findings with prior work through citations to parallel studies (C90-C91) and observations about expression-level dependence (C88-C89). This represents a balanced interpretation of the data in context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "IRE1 has the propensity to preassemble into inactive dimers in the absence of stress, and oligomerization beyond the tetrameric state is not strictly required for RNase activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 represent the main conclusions of the study, well-supported by the collective data showing baseline dimerization (C3, C38), stress-induced oligomerization to small oligomers (~2.5 molecules, C40), and full UPR activity without large cluster formation (C24-C31).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "In cellular context, non-phosphorylated full-length IRE1 dimers are more restricted than in vitro, and even endomotif-directed RNase activity requires IRE1 oligomerization and phosphorylation in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 appropriately contrast in vitro biochemical data (cited from prior work) with the cellular findings of this study. The inference that cellular IRE1 dimers are more restricted is reasonable given the requirement for oligomerization and phosphorylation observed in the functional assays.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The authors speculate about potential mechanisms for restriction of non-phosphorylated dimers (steric constraints, ribosome/translocon association) and lipid-mediated activation, based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C101 are explicitly speculative and based on inference from prior literature rather than data from this study. These represent reasonable hypotheses for future investigation but lack experimental support in the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Background claims about IRE1 function, prior structural and biochemical studies, and the state of knowledge in the field prior to this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C10-C23, C74-C77 represent established knowledge from prior literature, appropriately cited. These provide necessary context for the study and accurately represent the state of the field.",
+    "result_type": "MINOR"
+  }
+]

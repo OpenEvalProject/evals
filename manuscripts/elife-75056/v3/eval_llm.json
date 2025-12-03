@@ -1,0 +1,214 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C45",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Cortical shape asymmetry (SAS) is highly individualized and identifies individuals more accurately than size-based morphological descriptors (cortical thickness, surface area, volume) or functional connectivity measures across three independent datasets (OASIS-3, ADNI, HCP).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6, C45, C60-C63 collectively demonstrate that SAS shows superior identifiability compared to traditional measures. The evidence includes comparative analyses across multiple datasets (Figure 2A-C, Figure 3), surface area normalization validation (Figure 3\u2014figure supplement 1), and consistent findings across different spatial scales. The statistical significance (p=0) and high identifiability scores (4.93-6.74) provide strong quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C58",
+      "C59"
+    ],
+    "result": "Individual identifiability of cortical shape asymmetry is optimal at coarse spatial scales, specifically at the 11th eigenvalue group (first 144 eigenvalues, ~37 mm wavelength), and this finding is robust across datasets and time intervals ranging from 1 day to over 6 years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C47-C55, C58-C59 provide converging evidence for scale-specific identifiability. The peak identifiability consistently occurs around 126-144 eigenvalues across OASIS-3 and ADNI datasets (Figure 2A-B, 2D-E), with the HCP showing a plateau at similar scales (Figure 2C, 2F). The robustness across different time intervals (Figure 2\u2014figure supplement 3) strengthens the conclusion. The wavelength calculation (~37 mm) is mathematically derived from spherical harmonic approximation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C64",
+      "C65",
+      "C66",
+      "C68",
+      "C115"
+    ],
+    "result": "Cortical shape asymmetries show scale-specific associations with sex, with females displaying greater rightward asymmetry than males at specific coarse spatial scales (2nd, 6th, 8th, 52nd, and 84th eigenvalues), though effect sizes are small with considerable overlap between distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C64-C66, C68, C115 are supported by GLM analysis with FDR correction showing statistically significant sex differences at specific eigenvalues (Figure 4A). The authors appropriately note the small effect sizes (Cohen's d = 0.183-0.222) and substantial overlap between male and female distributions. The finding that overall asymmetry level does not differ by sex (C68) adds nuance to the scale-specific effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C67",
+      "C113"
+    ],
+    "result": "Cortical shape asymmetries show no significant associations with handedness after FDR correction, consistent with prior literature showing handedness is unrelated to anatomical brain asymmetry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C67, C113 are supported by GLM analysis finding no significant effects after FDR correction. The authors tested handedness as both a continuous variable (EHI scores) and with different categorical thresholds, strengthening the null finding. This is consistent with multiple prior studies cited (C113), providing convergent evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Cortical shape asymmetries show scale-specific associations with cognition, with a single significant canonical mode (r=0.187, PFWER=0.032) linking leftward asymmetry at specific scales (eigen-groups 2, 4, 5, 11) to better cognitive performance and leftward asymmetry at other scales (eigen-groups 3, 6, 7, 10) to poorer performance across 12 of 13 cognitive measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C69-C75 are supported by CCA analysis with appropriate permutation-based inference and bootstrapping (Figure 5). The single significant canonical mode shows scale-specific loadings and correlates with general cognitive ability across most measures. However, the modest effect size (r=0.187) and the complexity of the scale-specific pattern warrant cautious interpretation. The authors appropriately acknowledge the modest magnitude (C117).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C11",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Unihemispheric cortical shape shows significant heritability at coarse scales (first six eigen-groups, wavelengths \u226565 mm), with heritability estimates ranging from 0.52-0.69 for the first eigen-group and declining at finer scales, indicating genetic influences are expressed primarily at scales capturing primary cortical folds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C76-C80, C108-C112 are supported by twin-based heritability analysis using structural equation modeling (Figure 6A-B). The scale-specific pattern of heritability is consistent with prior literature on primary vs. secondary/tertiary folds (C108-C109). The finding that the 2nd and 3rd eigenvalues (corresponding to posterior-anterior and inferior-superior axes) show strong heritability aligns with prior genetic studies (C110-C112).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C12",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Shape asymmetries (SAS) are determined primarily by subject-specific environmental effects, with uniformly low heritability estimates (<0.28) across all spatial scales, high unique environmental influences (0.72-1.00), and low common environmental influences (0-0.14), indicating genes account for less than one-third of phenotypic variance in cortical shape asymmetry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C81-C85, C99-C102 are strongly supported by heritability analysis (Figure 6C-D). The authors address the potential confound of measurement error by demonstrating that SAS shows the highest identifiability (C101), ruling out the explanation that low heritability reflects noise. The contrast with unihemispheric shape heritability (C86-C87) and the demonstration that surface area normalization is critical (Figure 6\u2014figure supplement 1) strengthen the conclusion that environmental factors drive individual-specific asymmetries.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Coarse-scale shape asymmetries are highly personalized, sexually dimorphic, linked to individual differences in cognition, and primarily driven by stochastic environmental influences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 represent a synthesis of the major findings. Each component is supported by the respective analyses: personalization by identifiability analysis, sexual dimorphism by GLM analysis, cognitive associations by CCA, and environmental influences by heritability analysis. This integrative claim is well-supported by the convergence of multiple independent analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C93"
+    ],
+    "result": "The shape of one hemisphere offers little individually unique information about the shape of the other hemisphere, and coarse features of cortical shape are highly personalized and unique to individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46 and C93 are supported by low identifiability scores when attempting to identify one hemisphere from the other (Figure 2A-C) and convergence with prior studies on endocranial shape and brain torque (C91-C92). The independence of hemispheric shape variations supports the conclusion that asymmetry captures unique individual information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "Including additional eigenfunctions to capture fine-scale anatomical variations increases inter-session image differences, suggesting finer spatial scales may capture dynamic aspects of brain structure or increased measurement noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by analysis shown in Figure 2\u2014figure supplement 2. The observation that inter-session distances increase at finer scales provides evidence for either dynamic structural changes or increased noise. However, the interpretation remains somewhat speculative (C94-C95) as the authors cannot definitively distinguish between these possibilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Spectral shape analysis via the Laplace-Beltrami operator provides a comprehensive, multiscale description of cortical shape that is computationally efficient, isometry invariant, and superior to traditional methods for shape retrieval and analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41, C129-C135 describe the methodological foundation. These are well-supported by citations to prior literature establishing the mathematical properties and performance of Shape-DNA analysis. The authors' contribution is the application to asymmetry analysis with proper surface area normalization (C132-C133), which is demonstrated to be critical for isolating shape from size effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C136",
+      "C137"
+    ],
+    "result": "Image quality does not strongly influence the SAS, as correlations between Euler number (image quality index) and SAS are low (r<0.18) and the eigenvalues/eigenfunctions of the LBO are robust to image noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C137 are supported by correlation analysis between Euler number and SAS across datasets, showing weak correlations (r<0.07 for HCP, r<0.18 for OASIS-3) that do not reach significance after FDR correction. This is consistent with prior literature on LBO robustness to noise (C137). This validation strengthens confidence that the findings reflect true biological variation rather than measurement artifacts.",
+    "result_type": "MINOR"
+  }
+]

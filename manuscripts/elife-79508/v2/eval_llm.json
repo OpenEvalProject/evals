@@ -1,0 +1,198 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C27",
+      "C29",
+      "C30",
+      "C31",
+      "C33",
+      "C34"
+    ],
+    "result": "Evolutionary analysis of 99 CD4 orthologs spanning ~435 million years reveals that purifying selection has shaped specific motifs in the transmembrane domain (TMD) and intracellular domain (ICD) of eutherian CD4. Key findings include: 45.5% of TMD codons and 45% of ICD codons are under purifying selection; a GGXXG motif in the TMD and CV+C motif in the juxtamembrane region are unique to eutherians and co-arose during evolution; and a conserved IKRLL motif is embedded within a helix-turn structure in the ICD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The evolutionary analyses are based on appropriate phylogenetic methods (FEL, maximum likelihood trees, ancestral sequence reconstruction) applied to a substantial dataset (C15-C18). The identification of specific motifs under purifying selection is supported by dN:dS ratio analysis with statistical significance testing (C19-C24, C29, C33-C34). The phylogenetic reconstruction provides evidence for the timing of motif emergence (C22-C23, C25, C31). The methods are standard for evolutionary analysis and the conclusions are appropriately drawn from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Covariation analysis using MISTIC2 identified networks of covarying residues within CD4, including five pairs within the ICD helix-turn region, covariation between the TMD (G402) and ICD (L438), and strong covariation between the D3 domain nonpolar patch residues (P228, P281) and multiple residues in the ICD helix.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The covariation analysis uses an established method (MISTIC2) with appropriate criteria for identifying covarying residues (MI > 4 with conservation score < -0.5, or MI > 8 with conservation score < -0.3) (C35-C40). The identification of covarying residue pairs is data-driven and the results are clearly presented. The interpretation that these represent functionally linked residues is reasonable, though the mechanistic basis remains to be determined experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The GGXXG and CV+C motifs together regulate CD4 localization to detergent-resistant membrane (DRM) domains and enhance pMHCII responses through membrane domain localization rather than through modulating CD4-Lck association. The TP mutant (disrupting both motifs) showed significantly reduced DRM localization, reduced IL-2 responses, but paradoxically increased total CD4-Lck association compared to WT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional characterization uses multiple complementary assays (sucrose gradient fractionation, CTxB staining, Lck co-IP, IL-2 ELISA) with appropriate controls and statistical analysis (C41-C48). The key finding that the TP mutant has increased CD4-Lck association but reduced IL-2 responses (C50-C51) challenges the prevailing paradigm and is supported by quantitative data. The conclusion that membrane domain localization, rather than total CD4-Lck abundance, is critical for function is well-supported by the data from multiple mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Disruption of the intracellular helix (H and HC mutants) unexpectedly increased IL-2 response magnitude and sensitivity to agonist pMHCII compared to WT, despite reducing CD4-Lck interactions. The H mutant showed increased TCR endocytosis, and both H and HC mutants failed to endocytose CD4 over 16 hours of co-culture with APCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional data from H and HC mutants are based on multiple independent experiments with appropriate controls (C52). The increased IL-2 responses are quantified by both magnitude (AUC) and sensitivity measures (C52). The endocytosis data provide additional mechanistic insights (C53-C54). However, C54 includes speculation about the mechanism ('could result in more sustained signaling'), which is appropriately qualified but represents an inference rather than direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The IKRLL motif within the intracellular helix functions to inhibit the magnitude and sensitivity of pMHCII responses, with this inhibitory activity regulated by phosphorylation of flanking serine residues (S432, S439). The LL mutant showed greatly increased IL-2 responses despite reduced CD4-Lck association, while the SS mutant showed reduced IL-2 responses despite increased CD4-Lck association, demonstrating that CD4-Lck interactions are not the chief determinant of IL-2 responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional characterization of the LL, SS, pSS, and LL+pSS mutants provides strong evidence for the inhibitory function of the IKRLL motif (C55-C59). The data are internally consistent and supported by multiple assays including IL-2 ELISA, Lck association measurements, and ELISpot analysis (C60). The conclusion that CD4-Lck interactions are not the chief determinant of IL-2 responses (C57) is well-supported by the paradoxical relationships between Lck association and IL-2 production across multiple mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The intracellular helix and IKRLL motif counterbalance the signal-enhancing activity of the ectodomain nonpolar patch and the GGXXG/CV+C motifs. The LL+ELXE double mutant showed IL-2 responses similar to WT, while the LL+\u0394bind mutant completely impaired responses, demonstrating that the helix regulates pMHCII-dependent but not pMHCII-independent CD4 activity. The LL+TP double mutant also showed WT-like IL-2 responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The double mutant experiments provide strong evidence for counterbalancing activities between different CD4 motifs (C61, C64). The LL+\u0394bind control demonstrates that the LL phenotype requires CD4-pMHCII interactions (C62), supporting the specificity of the effect. The LL+ELXE and LL+TP results (C61, C64-C65) show that mutations with opposing effects can restore WT-like function, consistent with a counterbalancing model. The experimental design is appropriate and the conclusions are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Proximal signaling analysis reveals that the Clasp mutant reduces Zap70 and Plc\u03b31 phosphorylation without consistently reducing CD3\u03b6 phosphorylation in response to agonist pMHCII. The TP mutant shows reduced CD3\u03b6, Zap70, and Plc\u03b31 phosphorylation, suggesting that proper membrane domain localization of CD4-Lck pairs is required for efficient ITAM phosphorylation. The LL mutant shows no consistent differences in proximal signaling at 2 minutes post-stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phosphorylation analysis uses appropriate flow cytometry methods with tethered pMHCII to enable synchronous stimulation (C67-C73). Multiple independent cell lines were tested for each mutant, strengthening the conclusions. The finding that the Clasp mutant does not consistently reduce CD3\u03b6 phosphorylation (C67, C72) challenges the prevailing TCR signaling paradigm and is supported by data from multiple cell lines. The TP mutant data (C68-C69) provide evidence for the importance of membrane domain localization. The lack of consistent proximal signaling differences for the LL mutant (C70-C71) suggests the helix acts at a different level or timepoint.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The multifunctional intracellular helix is a key regulator of pMHCII responses, with its functions regulated by phosphorylation of flanking serine residues. The emergence of the CD4 intracellular helix with its ability to counterbalance signal-enhancing activity of other motifs was a key moment in the regulation of mammalian CD4 function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent integrative conclusions drawn from the evolutionary and functional data presented throughout the study (C75-C77). The evidence for serine phosphorylation regulating helix function comes from the SS, pSS, and LL+pSS mutant data. The conclusion about the evolutionary significance of the helix (C77) is supported by the phylogenetic analysis showing its emergence in mammals and the functional data demonstrating its counterbalancing activity. These are appropriate high-level conclusions from the body of evidence presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Background knowledge about CD4+ T cell biology, TCR signaling, and the established TCR signaling paradigm is presented, including the roles of TCR-CD3 complexes, CD4, Lck, and various models for how these components interact during pMHCII recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge in the field, supported by appropriate citations to prior work (C1, C4, C6-C14). They provide necessary context for understanding the significance of the new findings. The claims accurately represent the current understanding and controversies in the field, including alternative models for CD4 function (C12-C14).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C5"
+    ],
+    "result": "The study's main conclusions are that purifying selection has shaped CD4 motifs that enhance pMHCII responses, these motifs covary with inhibitory motifs, and CD4-Lck interactions derive their importance from counterbalancing activities and membrane compartmentalization rather than simple recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are the primary conclusions of the manuscript, representing integrative statements about the overall findings (C2, C3, C5). They are well-supported by the evolutionary analyses, covariation studies, and functional characterization of multiple mutants presented throughout the results. The conclusions appropriately synthesize the data and represent significant advances in understanding CD4 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C26",
+      "C28",
+      "C32"
+    ],
+    "result": "Prior work has reported that palmitoylation of cysteines in the CV+C motif influences membrane raft localization (though this is controversial), a poly-basic RHRRR motif impacts CD4 localization to membrane rafts, and residues I434, L437, and L438 regulate CD4-Lck interactions and endocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent prior work in the field, supported by appropriate citations (C26, C28, C32). The authors appropriately note controversy where it exists (C26). These claims provide important context for the new findings and help justify the focus on specific motifs.",
+    "result_type": "MINOR"
+  }
+]

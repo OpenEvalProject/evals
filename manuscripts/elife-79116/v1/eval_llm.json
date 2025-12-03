@@ -1,0 +1,214 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C43",
+      "C48"
+    ],
+    "result": "Human GDOWN1 is strictly localized to the cytoplasm in various somatic cell types and exhibits strong resistance to nuclear import, even when nuclear localization signals (NLS) are added or when cells are treated with the nuclear export inhibitor leptomycin B (LMB).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C38-C41, C43, and C48 collectively demonstrate through multiple experimental approaches (immunofluorescence, Western blotting of fractionated cells, BiFC assays) that GDOWN1 remains cytoplasmic across multiple cell lines and resists nuclear translocation despite strong driving forces. The data are consistent across different experimental methods and cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C55",
+      "C56"
+    ],
+    "result": "GDOWN1 contains two functional CRM1-dependent nuclear export signals (NES): NES1 (amino acids 191-201) and NES2 (amino acids 332-340), both of which mediate interaction with the CRM1/RAN nuclear export machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C49-C53, C55-C56 are supported by systematic mutational analysis showing that truncation mutants containing these regions respond to LMB treatment, mutation of key hydrophobic residues abolishes NES activity, and GDOWN1 physically interacts with CRM1 and RAN. The identification of two independent NES motifs is well-documented through multiple complementary experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C11",
+      "C12",
+      "C54",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "GDOWN1 contains a novel Cytoplasmic Anchoring Signal (CAS) at amino acids 352-361 that mediates cytoplasmic retention through interaction with nuclear pore complex (NPC) components, particularly cytoplasmic filament proteins like RAE1 and NUP214. Mutation of key arginines (R352, R354, R357) in the CAS motif alleviates cytoplasmic retention and unlocks nucleocytoplasmic shuttling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C11-C12, C54, C57-C66 demonstrate through deletion analysis, point mutagenesis, confocal microscopy, BiFC assays, and co-immunoprecipitation that the CAS motif is necessary and sufficient for cytoplasmic retention. The mechanistic data showing differential interaction with cytoplasmic vs. nuclear NPC components (RAE1, NUP214 vs. NUP50) provides strong support for the proposed anchoring mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The NES and CAS motifs in GDOWN1 are functionally coupled, with each NES motif (NES1 and NES2) functioning independently as CRM1-responsive elements, while the CAS motif provides the primary cytoplasmic retention mechanism that is partially dependent on NES2 integrity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C67-C75 are supported by comprehensive combinatorial mutagenesis experiments showing that: (1) individual NES motifs can function independently when CAS is mutated, (2) NES1 is stronger than NES2, (3) NES2 mutation partially affects CAS function, and (4) CAS mutation converts GDOWN1 into an LMB-responsive shuttling protein. The functional coupling is demonstrated through systematic analysis of all possible mutant combinations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The NES and CAS localization regulatory mechanisms are evolutionarily conserved from flies to humans, with the cytoplasmic anchoring effect of the CAS motif appearing to be enhanced during evolution to strengthen regulation of Gdown1 subcellular localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C76-C78 are supported by sequence alignment showing conservation of key residues and functional experiments demonstrating that mutation of conserved residues in fly and zebrafish Gdown1 allows LMB-responsive nuclear translocation. The observation that mammalian GDOWN1 shows stronger CAS-mediated retention than lower organisms supports the evolutionary enhancement hypothesis, though this is based on comparative functional data rather than direct evolutionary analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Nuclear accumulation of GDOWN1 (achieved through mutation of all localization signals - the 10M mutant) results in dramatic reduction of RNA Pol II levels, global transcriptional repression (particularly affecting initiation more than elongation), severe growth defects, and eventual cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14, C79-C95 are supported by multiple complementary approaches including EU incorporation assays showing reduced transcription, Western blotting and immunofluorescence showing reduced Pol II levels (total, unphosphorylated, S5P, and S2P forms), FACS analysis showing increased cell death, and cell counting/RTCA showing growth defects. The differential effect on S5P vs. S2P Pol II (C93-C94) suggests preferential impact on initiation, though this interpretation is somewhat speculative. The causal link between nuclear GDOWN1 and these phenotypes is well-established through the use of inducible expression systems and appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C15",
+      "C96",
+      "C97",
+      "C98",
+      "C103"
+    ],
+    "result": "Nuclear translocation of endogenous GDOWN1 occurs in response to oxidative stress induced by sodium arsenite (NaAsO2) treatment in a dose-dependent and reversible manner, demonstrating that GDOWN1 localization is switchable in response to cellular stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C96-C98, C103 are supported by cell fractionation and Western blotting experiments showing nuclear accumulation of GDOWN1 after NaAsO2 treatment in a dose-dependent manner, with reversal upon drug removal. The specificity of this response is strengthened by negative results with other stress-inducing agents (DRB, CHX, CPT, Doxorubicin). However, the mechanism by which oxidative stress triggers nuclear translocation is not elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C16",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C104"
+    ],
+    "result": "GDOWN1 knockout cells show increased sensitivity to oxidative stress, with enhanced stress granule formation under mild NaAsO2 treatment and significantly reduced cell viability, indicating that GDOWN1 contributes to cellular stress tolerance and adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C99-C102, C104 are supported by experiments comparing GDOWN1 KO cells to control cells under mild oxidative stress conditions, showing increased stress granule formation (detected by G3BP1 staining), reduced transcription (EU incorporation), and decreased cell viability. The data support a protective role for GDOWN1 in stress response, though the precise mechanism linking GDOWN1-mediated transcriptional control to stress adaptation remains to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "GDOWN1 interacts with multiple transcription-associated factors (RPB5, SPT4, RPRD1A, RPRD1B, NELF-E, SPT5) but not with Mediator components (MED1, MED26), and these interactions occur in the cytoplasm. GDOWN1 also forms homodimers or oligomers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are supported by BiFC assays showing cytoplasmic interaction signals between GDOWN1 and known nuclear transcription factors, as well as GDOWN1 self-interaction. The specificity is demonstrated by negative controls with cytoplasmic proteins and lack of interaction with Mediator components. However, the functional significance of these cytoplasmic interactions and the oligomerization state of GDOWN1 require further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Background information establishing the known properties of Gdown1/GDOWN1 and RNA Polymerase II from prior literature, including Gdown1's role as a Pol II-interacting protein essential for embryonic development, its inhibitory effects on transcription factors in vitro, and its tissue-specific functions in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C17-C36 represent established knowledge from the literature, supported by appropriate citations. These claims provide context for the current study but do not represent new findings. The authors accurately represent prior work, though some claims (e.g., C32 about mouse tissue expression) are based on unpublished data.",
+    "result_type": "MINOR"
+  }
+]

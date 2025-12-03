@@ -1,0 +1,1746 @@
+{
+  "submission": {
+    "id": "41b79ee1-170d-48e9-a0b8-37bcff0723e0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T12:55:36.000180Z",
+    "updated_at": "2025-12-03T12:55:36.000180Z"
+  },
+  "content": [
+    {
+      "id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "submission_id": "41b79ee1-170d-48e9-a0b8-37bcff0723e0",
+      "content_type": "manuscript",
+      "content_text": "# C/EBP\u03b4-induced epigenetic changes control the dynamic gene transcription of S100a8 and S100a9\n\n## Authors\n\n- Saskia-Larissa Jauch-Speer<sup>1</sup> ([ORCID: 0000-0002-6739-3051](https://orcid.org/0000-0002-6739-3051))\n- Marisol Herrera-Rivero<sup>2</sup> ([ORCID: 0000-0001-7064-9487](https://orcid.org/0000-0001-7064-9487))\n- Nadine Ludwig<sup>3</sup>\n- Bruna Caroline V\u00e9ras De Carvalho<sup>1</sup>\n- Leonie Martens<sup>1</sup>\n- Jonas Wolf<sup>1</sup>\n- Achmet Imam Chasan<sup>1</sup> ([ORCID: 0000-0001-5137-6890](https://orcid.org/0000-0001-5137-6890))\n- Anika Witten<sup>2</sup>\n- Birgit Markus<sup>5</sup>\n- Bernhard Schieffer<sup>5</sup>\n- Thomas Vogl<sup>1</sup>\n- Jan Rossaint<sup>3</sup>\n- Monika Stoll<sup>2</sup>\n- Johannes Roth<sup>1</sup> ([ORCID: 0000-0001-7035-8348](https://orcid.org/0000-0001-7035-8348)) \u2020\n- Olesja Fehler<sup>1</sup> ([ORCID: 0000-0001-6386-7080](https://orcid.org/0000-0001-6386-7080))\n\n### Affiliations\n\n1. Institute of Immunology, University of M\u00fcnster M\u00fcnster Germany ([ROR:00pd74e08](https://ror.org/00pd74e08))\n2. Department of Genetic Epidemiology, Institute of Human Genetics, University of M\u00fcnster M\u00fcnster Germany ([ROR:00pd74e08](https://ror.org/00pd74e08))\n3. Department of Anesthesiology, Intensive Care and Pain Medicine, University Hospital M\u00fcnster M\u00fcnster Germany ([ROR:01856cw59](https://ror.org/01856cw59))\n4. Core Facility Genomics, Medical Faculty M\u00fcnster, University of M\u00fcnster M\u00fcnster Germany ([ROR:00pd74e08](https://ror.org/00pd74e08))\n5. Clinic for Cardiology, Angiology and Internal Intensive Medicine, University Hospital Marburg Marburg Germany ([ROR:032nzv584](https://ror.org/032nzv584))\n6. CARIM Cardiovascular Research School, Department of Biochemistry, Genetic Epidemiology and Statistical Genetics, Maastricht University Maastricht Netherlands ([ROR:02jz4aj89](https://ror.org/02jz4aj89))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe proinflammatory alarmins S100A8 and S100A9 are among the most abundant proteins in neutrophils and monocytes but are completely silenced after differentiation to macrophages. The molecular mechanisms of the extraordinarily dynamic transcriptional regulation of S100a8 and S100a9 genes, however, are only barely understood. Using an unbiased genome-wide CRISPR/Cas9 knockout (KO)-based screening approach in immortalized murine monocytes, we identified the transcription factor C/EBP\u03b4 as a central regulator of S100a8 and S100a9 expression. We showed that S100A8/A9 expression and thereby neutrophil recruitment and cytokine release were decreased in C/EBP\u03b4 KO mice in a mouse model of acute lung inflammation. S100a8 and S100a9 expression was further controlled by the C/EBP\u03b4 antagonists ATF3 and FBXW7. We confirmed the clinical relevance of this regulatory network in subpopulations of human monocytes in a clinical cohort of cardiovascular patients. Moreover, we identified specific C/EBP\u03b4-binding sites within S100a8 and S100a9 promoter regions, and demonstrated that C/EBP\u03b4-dependent JMJD3-mediated demethylation of H3K27me3 is indispensable for their expression. Overall, our work uncovered C/EBP\u03b4 as a novel regulator of S100a8 and S100a9 expression. Therefore, C/EBP\u03b4 represents a promising target for modulation of inflammatory conditions that are characterized by S100a8 and S100a9 overexpression.\n\n## Introduction\n\nAs the first line of immune defence, both monocytes and neutrophils are important for the modulation of the innate immune response. To amplify the immune response at sites of inflammation, the activation of further immune cells is required, mediated by the release of signaling molecules such as chemokines and DAMPs (damage-associated molecular patterns). The two members of the S100 family, S100A8 and S100A9, also termed myeloid-related proteins 8 and 14 (MRP8 and MRP14), respectively, belong to the group of DAMPs or so-called alarmins. Their primary expression is referred to myeloid lineage-derived cells, particularly neutrophils and monocytes, where S100A8 and S100A9 are predominantly present as a heterodimeric complex, also called calprotectin (Austermann et al., 2018).\n\nIntracellularly, S100A8/A9 complexes represent up to 40% of the soluble protein content in neutrophils and about 5% in monocytes (Hessian et al., 1993). However, in mature macrophages, protein and mRNA expression of these factors is completely downregulated. This data indicates that expression of S100A8 and S100A9 is controlled by the most dynamic promoters in myeloid cells. The S100A8/A9 complex interacts with the cytoskeleton in a calcium-dependent manner. Calcium-induced (S100A8/A9)2 tetramer promotes tubulin polymerization and microtubule bundling, thereby affecting transendothelial migration of phagocytes (Leukert et al., 2006). During inflammation or tissue damage, S100A8/A9 is actively secreted by neutrophils and monocytes, and represents the most abundant DAMP/alarmin activating inflammatory processes in infection, cancer, autoimmunity, and cardiovascular diseases. The S100A8/A9 complex is recognized by Toll-like receptor 4 (TLR4), which leads to the production of proinflammatory cytokines and chemokines (Fassl et al., 2015). Accordingly, S100A9 knockout (KO) mice exhibit decreased pathogenic outcomes in several mouse models of disease, such as sepsis (Vogl et al., 2007), autoimmune disease (Loser et al., 2010) or arthritis (van Lent et al., 2008). In addition, S100A8 and S100A9 are highly abundant during infectious diseases and exhibit anti-microbial activities. The S100A8/A9 complex plays a crucial role in host defence against bacterial and fungal pathogens by sequestering manganese and zinc ions which compete with high affinity bacterial transporters to import these essential nutrient metals (Kehl-Fie and Skaar, 2010; Kehl-Fie et al., 2011). In contrast to the proinflammatory role of S100A8/A9, regulatory functions in terms of hyporesponsiveness in phagocytes, resembling a classical endotoxin-induced tolerance, have also been described (Freise et al., 2019).\n\nIn humans, S100A8/A9 is the most abundant alarmin in many clinically relevant diseases, and is closely associated with disease activity in rheumatoid arthritis (RA), inflammatory bowel disease, sepsis, cardiovascular diseases, multiple sclerosis, acute lung injury (ALI) and psoriasis (Foell et al., 2004). Altered S100A8/A9 expression has also been found in different cancer types, including gastric, colorectal, breast, lung, prostate and liver cancer (Cross et al., 2005). Despite the high expression in neutrophils and monocytes under inflammatory conditions, and the strong effects of S100A8 and S100A9 on disease activities, transcriptional mechanisms regulating these extreme dynamics of gene expression remain unclear. Identifying the mechanisms regulating S100a8 and S100a9 gene expression may open new insights into the pathological processes involving S100A8/A9 during inflammatory conditions.\n\nSo far, several potential transcription factors modulating S100a8 and S100a9 expression have been described (Kuruto-Niwa et al., 1998; Fujiu et al., 2011; Lee et al., 2012; Liu et al., 2016; Yang et al., 2017), but their functional relevance remains unresolved. Many of the stated studies used malignant immortalized cell lines or even cell models whose homologous primary cells do not express these genes at all.\n\nTo overcome difficulties of artificial expression and malignant cell lines we used ER (estrogen-regulated) Hoxb8 cells, estrogen dependent transiently immortalized myeloid precursor cells that can be differentiated to primary monocytes and granulocytes upon estrogen-withdrawal (Wang et al., 2006a), and show the physiologically high dynamics of S100A8 and S100A9 mRNA and protein expression during differentiation. In order to detect genes involved in the regulation of S100a8 and S100a9 expression in an unbiased manner, we used a mouse Genome-Scale CRISPR/Cas9 Knockout (GeCKO) library and screened for monocytes with reduced or absent S100A9 expression. We thereby identified the CCAAT/enhancer-binding protein-family member C/EBP\u03b4 as a direct transcriptional regulator of S100a8 and S100a9. Furthermore, we found that the epigenetic factor JMJD3 contributes to S100a8 and S100a9 expression in monocytes by erasure of the repressive histone mark H3K27me3 at S100a8 and S100a9 promoter regions. Moreover, we confirmed the biomedical relevance of this network a murine model of ALI and in specific monocyte subpopulations in a clinical cohort of patients with cardiovascular disease.\n\n## Results\n\n### Genome-wide CRISPR/Cas9 knockout screen reveals C/EBP\u03b4 as a regulatory factor of S100A9 expression\n\nTo detect genes involved in the regulation of S100a8 and S100a9 expression, we established the mouse GeCKO lentiviral pooled library designed in Cas9-expressing ER-Hoxb8 cells. The used library contained a large mixture of CRISPR sgRNA constructs, where six gRNAs per target gene increase efficiency and enable the analysis of the molecular effects of many thousand genes in one experiment. After infection of Cas9-expressing ER-Hoxb8 precursor cells with CRISPR library lentiviral particles, the cells were differentiated for 3 days in the presence of GM-CSF to induce S100A8 and S100A9 expression. Because we hypothesized that the parallel S100A8 and S100A9 expression is based on a common regulatory mechanism, we assumed that screening of one of the two alarmins was sufficient in the first step. Therefore, cells with no or low S100A9 expression were selected by sorting and considered as hits, whereas the remaining cells functioned as reference cells. To exclude phenotypes that were S100A9low/neg due to general differentiation defects, we pre-gated for CD11b+Ly-6C+ monocytes. DNA of sorted cell pools was purified and analysed by NGS (Figure 1A). Intracellular S100A9-FITC staining of precursor and differentiated Cas9 ER-Hoxb8 control monocytes was used as standard for definition of sorting gates. Differentiated Cas9-library ER-Hoxb8 monocytes showed a wider distribution among the gates, indicating the presence of S100A9low/neg expressing cells due to disruptions of regulatory genes caused by CRISPR/Cas9. A small amount of S100A9neg sorted cells were re-analysed by immunoblotting to validate S100A9 deficiency in this cell population (Figure 1B). Analysis of CRISPR KO library screen using the Model-based Analysis of Genome-wide CRISPR-Cas9 Knockout (MAGeCK) method (Li et al., 2014) resulted in a list of genes for which the respective gRNAs were enriched in the hits sample. The highest number of three gRNAs was found within the top 20 hits targeted Cebpd, a gene encoding for a member of the CCAAT/enhancer-binding protein family, C/EBP\u03b4. Other gene hits, namely Manea, Htr1f, Ifit3, Phf8, Hand1, and Casp4, were targeted by two gRNAs (Figure 1C). From these, those genes known to be involved in gene regulation, such as the transcription factors Cebpd and Hand1, as well as the histone demethylase Phf8, were selected for validation. Another transcription factor in the top 20 hit list, Csrp1, was targeted by only one gRNA but was chosen for validation due to its known functions in gene regulatory mechanisms (Kamar et al., 2017). Targeting Phf8, Hand1, and Csrp1 only slightly influenced S100a8 and S100a9 expression, whereas C/EBP\u03b4 deficiency strongly decreased S100a8 and S100a9 levels in differentiated monocytes (Figure 1\u2014figure supplement 1A). Interestingly, none of the transcription factors previously reported to target S100a8 and S100a9 (Kuruto-Niwa et al., 1998; Fujiu et al., 2011; Lee et al., 2012; Liu et al., 2016; Yang et al., 2017) were found within the hit list of our CRISPR KO library screen (Figure 1\u2014source data 1). Nevertheless, to test the published candidate transcription factors ATF3, STAT3, KLF5, IRF7, and C/EBP\u03b2 for their effects on S100a8 and S100a9 regulation, we created single KO ER-Hoxb8 cell lines of each individual candidate transcription factor. Deficiency of none of the stated candidate transcription factors affects S100a8 and S1009 expression during monocyte differentiation, whereas C/EBP\u03b4 deficiency had a strong attenuating effect on S100a8 and S100a9 expression, as shown on day 2 (Figure 1\u2014figure supplement 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/75594/elife-75594-fig1-v2.jpg)\n\n**Figure 1.:** (A) For genome-wide screen, over 100,000 plasmids, each containing a guide RNA towards different early consecutive exons, were packaged into lentiviral particles. Cas9-expressing ER-Hoxb8 cells were pool-transduced, selected, and differentiated to induce S100A9 expression. Hits and reference cells were collected by sorting according to their phenotypes of interest. DNA of both samples was purified for next-generation sequencing and subsequent analysis. (B) Precursor and differentiated Cas9 and Cas9-library ER-Hoxb8 cells were stained intracellularly for S100A9 using a FITC-labelled antibody. Cas9-library ER-Hoxb8 day 3 monocytes with no or lower S100A9 expression were sorted as hits, the remaining cells served as reference cells. (C) Data was analysed using the Model-based Analysis of Genome-wide CRISPR-Cas9 Knockout (MAGeCK) software for identification of enriched guide RNAs in the hit sample. Corresponding genes were rank-ordered by robust rank aggregation (RRA) scores. The list states the top 20 genes according to RRA scores, arranged after the number of guides that are enriched in the hit sample. See also Figure 1\u2014figure supplement 1 and Figure 1\u2014source data 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75594/elife-75594-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Cell lines generated by CRISPR/Cas9 (A: PHF8, CSRP1, and HAND1 KO, dark grey bars = candidates from Genome-Scale CRISPR/Cas9 Knockout (GeCKO) screen, B: ATF3, STAT3, KLF5, IRF7, and C/EBP\u03b2 KO, light grey bars = candidates from previous studies) were compared to a non-targeting CRISPR/Cas9 control cell line. Cell lines generated from transgenic mice (C/EBP\u03b4 KO, black bars = hit from GeCKO screen) were compared to wildtype (WT) counterparts. All cells were differentiated to until day 2 or day 3 and relative S100a8 and S100a9 mRNA levels were analysed using quantitative reverse transcription polymerase chain reaction (qRT-PCR). Red lines indicate relative s100 level of controls (WT). Values are the means \u00b1 SEM of four experiments. *p<0.05, **p<0.01, ***p<0.001 by two-tailed Student\u2019s t test.\n\n### Decreased S100a8 and S100a9 expression in C/EBP\u03b4 KO monocytes\n\nWe confirmed extraordinarily high dynamics of S100a8 and S100a9 expression during monocyte/macrophage differentiation. ER-Hoxb8-derived monocytes showed about 590-fold increase in S100a8 mRNA expression and about 1800-fold increase of S100a9 mRNA expression on day 2 compared to day 0 of differentiation. At day 5 the S100a8 mRNA expression is already about 70-fold and the S100a9 mRNA expression about 110-fold downregulated compared to day 2 of differentiation (Figure 2A, B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/75594/elife-75594-fig2-v2.jpg)\n\n**Figure 2.:** (A) Relative S100a8 and (B) S100a9 mRNA level during differentiation of WT and C/EBP\u03b4 KO ER-Hoxb8 monocytes were measured using quantitative reverse transcription polymerase chain reaction (qRT-PCR) (n=3\u20138). (C) S100A8/A9 concentrations in supernatant of differentiation day 4 of WT and C/EBP\u03b4 KO ER-Hoxb8 monocytes stimulated with 10 ng LPS for 4 hr or left untreated (n=3) were quantified using our in-house mouse S100A8/S100A9 sandwich enzyme-linked immunosorbent assay (ELISA) (n=6). (D) Relative S100a8 and S100a9 mRNA levels of bone marrow-derived mouse monocytes were measured using qRT-PCR (n=3). (E) Serum and (F) bronchoalveolar lavage fluid (BALF) of LPS- (WT: n=9, C/EBP\u03b4 KO: n=11) or NaCl-only (WT: n=6, C/EBP\u03b4 KO: n=3) exposed mice were harvested 4 hr after onset of lung inflammation and were analysed for S100A8/A9 expression, (G) for amount of recruited polymorphonuclear leukocytes (PMNs) and for (H) IL-1\u03b1, (I) IL-6, and (J) TNF-\u03b1 production in BALF. Values are the means \u00b1 SEM. *p<0.05, **p<0.01, ***p<0.001, by two-tailed Student\u2019s t test (A\u2013C, H\u2013J) and by one-way ANOVA with Bonferroni\u2019s correction (E\u2013G). See also Figure 2\u2014figure supplements 1 and 2.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75594/elife-75594-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) S100a8 and S100a9 mRNA levels were measured using qPCR (left, middle) and protein levels by using our in-house mouse S100A8/S100A9 sandwich enzyme-linked immunosorbent assay (ELISA) (right) in precursor and differentiated wildtype (WT) and C/EBP\u03b4 knockout (KO) ER-Hoxb8 neutrophils were analysed. Cebpd mRNA level was measured using qPCR in precursor and differentiated WT ER-Hoxb8 monocytes (B) and neutrophils (C). Values are the means \u00b1 SEM of three experiments. **p<0.01, by Student\u2019s t test.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/75594/elife-75594-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Serum of LPS- (WT: n=9, C/EBP\u03b4 KO: n=11) or NaCl-only (WT: n=6, C/EBP\u03b4 KO: n=3) exposed mice was harvested 4 hr after onset of lung inflammation and was analysed for various cytokines using the bead-based immunoassay LEGENDplex. Values are the means \u00b1 SEM. p=0.057 by one-way ANOVA with Bonferroni\u2019s correction.\n\nWe confirmed the relevance of C/EBP\u03b4 for S100a8 and S100a9 expression by creating independent C/EBP\u03b4-deficient ER-Hoxb8 cells from C/EBP\u03b4 KO mice. Not only on differentiation day 3, but already at the very beginning of differentiation, when S100a8 and S100a9 levels start to rise, C/EBP\u03b4-deficient ER-Hoxb8 monocytes showed significantly reduced levels of both S100a8 (Figure 2A) and S100a9 (Figure 2B) mRNAs compared to wildtype (WT) controls. The same effect was detectable in C/EBP\u03b4-deficient ER-Hoxb8 cells that were differentiated into the neutrophilic lineage (Figure 2\u2014figure supplement 1A). Accordingly, Cebpd and S100a8 and S100a9 mRNAs were co-expressed in differentiating WT monocytes and neutrophils, supporting a mechanistic connection (Figure 2\u2014figure supplement 1B, C). WT ER-Hoxb8 monocytes secreted significant S100A8/A9 protein amounts, whereas the supernatant of C/EBP\u03b4 KO cells contained up to 80% less S100A8/A9 (Figure 2C). Accordingly, S100a8 and S100a9 expression was decreased upon C/EBP\u03b4 deletion in primary bone marrow-derived monocytes (Figure 2D). To confirm that C/EBP\u03b4 deficiency affects alarmin expression and disease progression in vivo, we used a mouse model for acute lung inflammation. S100A8/A9 levels are locally increased in acute respiratory distress syndrome patients (Lorenz et al., 2008) and have been shown to play a role in neutrophil recruitment during ALI in mice (Chakraborty et al., 2017). Serum and bronchoalveolar lavage fluid (BALF) from LPS-exposed mice showed highly increased S100A8/A9 levels compared to control mice. In C/EBP\u03b4 KO mice, alarmin levels were systemically (serum) and locally (BALF) decreased compared to WT mice at baseline (NaCl) and after LPS exposure (Figure 2E, F), confirming our in vitro data. Accordingly, in BALF neutrophil recruitment (Figure 2G), as well as in IL-1\u03b1 and IL-6, cytokine production was significantly decreased in LPS-exposed C/EBP\u03b4 KO mice in relation to WT littermates (TNF-\u03b1 shows a similar trend, Figure 2H-J), which highlights the impact of S100A8/A9 on the disease outcome.\n\n### Inflammatory capacities and differentiation kinetics are unaffected in C/EBP\u03b4 KO monocytes\n\nAlthough the proinflammatory molecule S100A8/A9 was strongly reduced in the C/EBP\u03b4 KO monocytes, these cells exhibited no general alterations of inflammatory functions, indicating a rather specific effect on S100a8 and S100a9 regulation than a general attenuation of inflammatory signaling due to C/EBP\u03b4 deficiency. Phagocytosis capacities, examined by using FITC-coupled Latex Beads (Figure 3A, B) and by using Staphylococcus aureus (Figure 3C, D), were even elevated in C/EBP\u03b4 KO monocytes. These observations were accompanied by enhanced gene expression of phagocytosis-related PRRs, such as Ptx3, CD209a, and Cd14, in C/EBP\u03b4 KO monocytes (Figure 3\u2014figure supplement 1A, B, D). ROS production was not influenced by C/EBP\u03b4 deficiency (Figure 3E). Moreover, analysis of differentiation kinetics revealed no exorbitant differences in the quantities of CD11b+Ly-6C+ between WT and C/EBP\u03b4 KO cells, neither during differentiation of bone marrow-derived cells (BMCs) nor of ER-Hoxb8 cells (Figure 3F). With regard to monocyte differentiation and polarization capacities, we tested the effect of C/EBP\u03b4 deficiency in primary bone marrow-derived mouse monocytes (BMDMs). Whereas expression of M1-monocyte associated markers, such as Tnfa, Il6, Inos, Cd86, and Il1b, was only slightly decreased in LPS- and IFN-\u03b3-treated C/EBP\u03b4 KO monocytes in vitro (Figure 3\u2014figure supplement 2A), M2-associated Il10 expression was significantly decreased upon IL-4-stimulation in C/EBP\u03b4 KO cells confirming earlier results (Liu et al., 2003). Expression of Cd163 showed no significant effect in C/EBP\u03b4 KO cells (Figure 3\u2014figure supplement 2B). Decreased IL-10 expression was also found in sera from LPS-treated and control C/EBP\u03b4 KO mice, whereas most other cytokine levels did not differ greatly between WT and C/EBP\u03b4 KO mice (Figure 2\u2014figure supplement 2).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/75594/elife-75594-fig3-v2.jpg)\n\n**Figure 3.:** Differentiated WT and C/EBP\u03b4 KO ER-Hoxb8 cells were incubated with green fluorescent latex beads (A, B) or with pHrodo Red Staphylococcus aureus Bioparticles Conjugate (C, D) for 2 hr at a ratio of 10 beads per cells. The phagocytosis was measured using flow cytometry. (A) Percentages of phagocytosis of \u22653 beads or (C) gMFI shifts of S. aureus -treated cells in relation to control cells were used for quantification. Representative histogram plots of Latex Beads- (B) and S. aureus Bioparticles- (D) mediated phagocytosis are presented. (B) Histogram plots, showing gates for phagocytosis of one (.), two (...), or \u22653 or more than three (\u2026) beads. (E) Differentiated WT and C/EBP\u03b4 KO ER-Hoxb8 cells were treated with 10 nM PMA for 15 min and 15 \u00b5M DHR123 to measure oxidative burst was measured using DHR123. The fluorescence of the cells was measured using flow cytometry. Relative ROS production as = gMFI shifts of PMA-treated cells in relation to non-treated cells is shown. (F) Proportion of CD11b+Ly-6C+ cells during differentiation of bone marrow cells (BMCs) and ER-Hoxb8 cells was analysed using flow cytometry. Values are the means \u00b1 SEM of three to four experiments. *p<0.05, **p<0.01 by two-tailed Student\u2019s t test. See also Figure 3\u2014figure supplements 1 and 2.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75594/elife-75594-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Ptx3, (B) Cd209a, (C) Msr1, and (D) Cd14 mRNA levels were analysed using qPCR in differentiated WT and C/EBP\u03b4 KO ER-Hoxb8 monocytes. Values are the means \u00b1 SEM of three to five experiments. *p<0.05, by two-tailed Student\u2019s t test.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/75594/elife-75594-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** The mRNA levels of genes (A) associated with M1-polarization (Tnfa, Il6, Inos, Cd86, and Il1b) and (B) associated with M2-polarization (Il10 and Cd163) were analysed. For this, wildtype (WT) and C/EBP\u03b4 knockout (KO) bone marrow-derived mouse monocytes (BMDMs) were either stimulated for 24 hr with 50 ng/ml IFN-\u03b3 and 10 ng/ml LPS (M1), with 20 n/ml IL-4 (M2) or left untreated (M0). Values are the means \u00b1 SEM of three experiments. *p<0.05, **p<0.01, ***p<0.001, ns = not significant, by one-way ANOVA with Bonferroni\u2019s correction.\n\n### Enhanced C/EBP\u03b4 expression induces S100a8 and S100a9 expression\n\nTo test the impact of C/EBP\u03b4 induction on S100 alarmin expression, we infected C/EBP\u03b4-deficient ER-Hoxb8 cells with lentiviral particles carrying a Tet-On system for doxycycline-inducible 3xFlag-C/EBP\u03b4 expression (Figure 4A). Doxycycline treatment led to expression of the fusion protein 3xFlag-C/EBP\u03b4, as revealed by western blot analysis (Figure 4B) and by quantitative reverse transcription polymerase chain reaction (qRT-PCR) in comparison to C/EBP\u03b4-deficient cells (Figure 4C). Induction of 3xFlag-C/EBP\u03b4 upon doxycycline treatment led to increased S100a8 and S100a9 mRNA levels. Cebpd, S100a8, and S100a9 mRNA levels in doxycycline-treated TRE_3xFlag-C/EBP\u03b4 cells were comparable to WT cells at the same differentiation stage (Figure 4D), demonstrating a positive effect of C/EBP\u03b4 expression on S100a8 and S100a9 regulation. KO of ATF3, a known regulatory attenuator of Cebpd expression (Litvak et al., 2009), in ER-Hoxb8 monocytes led to S100a8 and S100a9 overexpression (Figure 4E, Figure 1\u2014figure supplement 1B), especially during early stages of differentiation. ATF3 KO cells showed significantly elevated cebpd level, indicating a C/EBP\u03b4-mediated effect on the expression of S100a8 and S100a9 (Figure 4F). In the next step, we created FBXW7-deficient monocytes. FBXW7 is another well-known attenuator of C/EBP\u03b4 expression (Balamurugan et al., 2013). Lack of this antagonist resulted in an even higher overexpression of S100a8 and S100a9 (Figure 4G) with huge increases of Cebpd levels (Figure 4H).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/75594/elife-75594-fig4-v2.jpg)\n\n**Figure 4.:** (A) Tet-On construct of inducible 3xFlag-C/EBP\u03b4 expression due to constitutively expressed rtTA (reverse tetracycline-controlled transactivator) that binds to TRE promoter upon doxycycline treatment was transduced into C/EBP\u03b4 knockout (KO) ER-Hoxb8 cells. (B) Induction of 3xFlag-C/EBP\u03b4 upon doxycycline treatment (2 \u00b5g/ml, 24 hr) was analysed by western blot and (C) quantitative reverse transcription polymerase chain reaction (qRT-PCR) in comparison to untreated cells. (D) Induction of 3xFlag-C/EBP\u03b4 was also analysed by qRT-PCR (Cebpd), as well as expression of S100a8 and S100a9 mRNAs, in untreated and dox-treated C/EBP\u03b4 KO TRE_3xFlag-C/EBP\u03b4 monocytes and in comparison to wildtype (WT) and C/EBP\u03b4 KO monocytes on differentiation day 1 (n=3). (E, G) S100a8 and S100a9, (F, H) and Cebpd mRNA levels were measured using qRT-PCR in precursor and differentiated WT and ATF3 KO (E, F) and in WT and FBXW7 KO (G, H) ER-Hoxb8 monocytes (n=3\u20134). Values are the means \u00b1 SEM. *p<0.05, **p<0.01, by one-way ANOVA with Bonferroni\u2019s correction (D) and by two-tailed Student\u2019s t test (E\u2013H).\n\nTo confirm the biomedical relevance of the identified molecular network, we analysed the expression of these genes in peripheral blood mononuclear cells (PBMCs) and monocyte subpopulations of a subset of participants in the BioNRW Study (Witten et al., 2022). Here, we found upregulation of S100A8, S100A9, and CEBPD in PBMCs of stable coronary artery disease/myocardial infarction (sCAD/MI) cases, compared against controls (Figure 5A), together with a positive correlation of S100A8 and S100A9 expression with that of CEBPD in these cells (Figure 5B, C). Moreover, there was also significant upregulation of these three genes specifically in classical monocytes, compared to intermediate and non-classical monocyte subpopulations (Figure 5D, E, for further comparisons, see Figure 5\u2014source data 1). A strong positive correlation between the expression of S100A8 and S100A9 and CEBPD in these monocyte subpopulations was found, suggesting that the expression of these genes is mainly associated with the subset of proinflammatory monocytes. Interestingly, we also found significant albeit milder, negative correlations between the expression of CEBPD and its antagonists FBXW7 and ATF3 in monocytes (Figure 5F, G).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/75594/elife-75594-fig5-v2.jpg)\n\n**Figure 5.:** (A) Gene expression changes detected by RNA-sequencing (RNA-seq) in peripheral blood mononuclear cells (PBMCs) of BioNRW participants (n=72, sCAD/MI vs. Ctrl). LFC = log2 fold change, SE = standard error, and adj.p = adjusted p-value. (B) Pearson correlation coefficient = r, p-value = p in PBMCs and (C) corresponding correlation matrix. (D) Gene expression changes of CEBPD, S100A8, S100A9, ATF3, and FBXW7 detected by RNA-seq in monocyte subpopulations of BioNRW participants (n=26, from three individuals in each of the sCAD, MI, and Ctrl diagnostic groups). (E) Hierarchical clustering of S100A8-, S100A9-, and CEBPD normalized counts (using Euclidean distance metric with complete linkage). Shown are classical (1), intermediate (2), and non-classical (3) monocytes of healthy donors (Ctrl), MI, and sCAD patients. (F) Pearson correlation coefficient = r, p-value = p in monocytes and (G) corresponding correlation matrix. See also Figure 5\u2014source data 1.\n\n### C/EBP\u03b4-binding sites within S100a8 and S100a9 promoter regions\n\nChromatin immunoprecipitation (ChIP) revealed 3xFlag-C/EBP\u03b4 binding on S100a8 and S100a9 promoter regions just before or within the predicted enhancers (Figure 6A). Co-transfection of HEK293T cells with GFP-expressing s100 reporter vectors, together with doxycycline-inducible 3xFlag-C/EBP\u03b4 vector (TRE_3xFlag-C/EBP\u03b4) or its backbone lacking the 3xFlag-C/EBP\u03b4 construct (TRE_ctrl), was performed to further examine specific C/EBP\u03b4 binding (Figure 6B). Doxycycline treatment resulted in 3xFlag-C/EBP\u03b4 protein expression after 24 hr post-transfection in 3xFlag-C/EBP\u03b4 vector transfected cells (Figure 6C). Transfection of either S100a8 reporter construct (Figure 6D) or S100a9 reporter construct (Figure 6F) together with 3xFlag-C/EBP\u03b4 vector led to enhanced GFP expression upon doxycycline treatment in comparison to co-transfection with backbone plasmid (TRE_ctrl). Next, we modified predicted C/EBP-binding sites on S100 promoters by mutagenesis of the corresponding vectors. Again, co-transfection of mutated S100 reporter vectors and doxycycline-dependent 3xFlag-C/EBP\u03b4 vector was performed to analyse the relevance of specific C/EBP\u03b4-binding sites. Two sites within the S100a8 promoter region, stated as site 2 and site 3 (Figure 6E), and one within the S100a9 promoter region, stated as site 4 (Figure 6G), caused a reduced or absent GFP expression upon co-transfection when deleted. These binding sites, in turn, were located within the S100a8 and S100a9 promoter regions where C/EBP\u03b4 binding was confirmed by ChIP (Figure 6A).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/75594/elife-75594-fig6-v2.jpg)\n\n**Figure 6.:** (A) Chromatin immunoprecipitation was performed in untreated (-) and dox-treated (+dox) TRE_3xFlag-C/EBP\u03b4 monocytes on differentiation day 1 using a Flag-antibody. Purified DNA was analysed using primer pairs flanking different S100a8 and S100a9 promoter and intronic regions and a negative control primer pair flanking a random genomic region (n=3). (B) Co-transfection of vectors carrying constructs for GFP under the S100a8 or S100a9 promoter (reporter), together with the doxycycline-dependent 3xFlag-C/EBP\u03b4 expression cassette (TRE_3xFlag-C/EBP\u03b4) or a corresponding control vector lacking the 3xFlag-C/EBP\u03b4 expression cassette (TRE_ctrl) in HEK293T cells, was performed. (C) Induction of 3xFlag-C/EBP\u03b4 upon doxycycline treatment (2 \u00b5g/ml, 24 hr) was analysed by western blot. Representative dot plots from flow cytometry analysis show GFP+ gates of co-transfected HEK293T cells, either using TRE_3xFlag-C/EBP\u03b4 or TRE_ctrl together with S100a8 reporter (D) and with S100a9 reporter (F) upon doxycycline treatment (2 \u00b5g/ml, 24 hr). Co-transfection of TRE_3xFlag-C/EBP\u03b4 and S100a8 (E) and S100a9 (G) reporter plasmids carrying different mutated possible binding sites was performed, analysed 24 hr post-transfection and compared to co-transfection of TRE_ctrl and S100 reporter plasmid activities. Suggested C/EBP-binding sites targeted by depletion are indicated by nucleic acids marked in red (n=4\u20135). Values are the means \u00b1 SEM. *p<0.05, **p<0.01, ***p<0.001, ns = not significant, by two-tailed Student\u2019s t test.\n\n### Epigenetic landscape on S100 promoter regions reflects S100a8 and S100a9 expression in monocytes\n\nRegulation of gene expression relies on variable factors; among these are chromatin structure and epigenetic features. To measure changes in chromatin accessibility in monocytic progenitors and in S100a8- and S100a9-expressing monocytes, we performed ATAC-seq of precursor and differentiated WT and C/EBP\u03b4 KO ER-Hoxb8 cells. This revealed over 1000 regions with differential peaks in all comparisons (Figure 7A and Figure 7\u2014figure supplement 1). Among the regions with significantly higher ATAC-seq reads in differentiated samples at day 3 of WT cells were the S100a8 and S100a9 promoter and enhancer locations. Interestingly, within these regions chromatin accessibility was significantly decreased in C/EBP\u03b4 KO in comparison to WT cells at day 3 of differentiation (Figure 7B, C). Consistent with the changes in chromatin accessibility at S100 promoter regions during differentiation, we also found changes in histone marks by ChIP. H3K27 acetylation (H3K27ac), a marker for active transcription, was increased at differentiation day 3 in monocytes over precursor cells at S100a8 (Figure 7D) and S100a9 loci (Figure 7E) in both, WT and C/EBP\u03b4 KO cells. In contrast, tri-methylated H3K27 (H3K27me3), associated with gene silencing, was overrepresented in precursor cells over differentiated cells at the same loci in WT cells, whereas H3K27me3 marks did not decrease over the course of differentiation in C/EBP\u03b4 KO cells. Accordingly, tri-methylated H3K27 was increased in C/EBP\u03b4 KO monocytes, compared to the WT counterparts (Figure 7F, G).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/75594/elife-75594-fig7-v2.jpg)\n\n**Figure 7.:** Assay for transposase-accessible chromatin using sequencing (ATAC-seq) was executed in precursor (day 0=d0) and differentiated (day 3=d3) wildtype (WT) and C/EBP\u03b4 knockout (KO) (KO) ER-Hoxb8 monocytes. (A) Differential peak analysis between all conditions was performed (n=3). (B) Combined gene tracks showing ATAC-seq reads of precursor (day 0) and differentiated (day 3) WT and C/EBP\u03b4 KO cells at the S100a8 and S100a9 gene regions. (C) Differential accessibility at S100a8 and S100a9 loci was analysed for all comparisons. Chromatin immunoprecipitation was performed using anti-H3K27ac (D, E), anti-H3K27me3 (F, G) in chromatin of precursor (day 0) and differentiated (day 3) WT and C/EBP\u03b4 KO (KO) ER-Hoxb8 monocytes. Purified DNA was analysed using primer pairs flanking different S100a8 (D, F) and S100a9 (E, G) promoter regions (n=3\u20136). N-folds are based on percent of input values of respective day 0 ChIP-PCR samples. Values are the means \u00b1 SEM. *p<0.05, **p<0.01, ***p<0.001, ns = not significant, by one-way ANOVA with Bonferroni\u2019s correction. See also Figure 7\u2014figure supplement 1 and Figure 7\u2014source data 1.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75594/elife-75594-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Volcano plots show differentially accessible regions between day 3 and day 0 (A) in WT and (B) in C/EBP\u03b4 KO cells, and between C/EBP\u03b4 KO and WT (C) at day 0 and (D) at day 3. NS = not significant; FC = fold change.\n\n### The histone demethylase JMJD3 drives S100a8 and S100a9 expression in dependency of C/EBP\u03b4\n\nDecreased S100a8 and S100a9 expression in C/EBP\u03b4-deficient day 3 monocytes was mirrored in the epigenetic landscape by only slightly decreased H3K27ac level, but highly increased H3K27me3 level at S100 promoter regions. Erasure of tri-methylation and di-methylation at H3K27 is known to be catalysed by the histone demethylase JMJD3 (JmjC Domain-Containing Protein 3) (Xiang et al., 2007). We found decreased expression of Jmjd3 in differentiated C/EBP\u03b4 KO monocytes, compared to WT cells at the same stage (Figure 8A). Further, we used the potent JMJD3 inhibitor GSK-J4 (Kruidenier et al., 2012) to block H3K27 demethylation in differentiating ER-Hobx8 cells, and discovered significantly decreased S100a8 and S100a9 expression in GSK-J4-treated WT cells (Figure 8B). These mRNA quantities were comparable to untreated C/EBP\u03b4-deficient monocytes, whereas the effects on S100a8 and S100a9 expression in GSK-J4-treated C/EBP\u03b4-deficient monocytes, compared to the untreated counterparts, were negligible (Figure 7B). These effects of GSK-J4 on S100a8 and S100a9 expression are in line with increased H3K27me3 marks in GSK-J4-treated WT monocytes, compared to untreated WT cells on both, S100a8 (Figure 8C) and S100a9 (Figure 8D) promoter regions.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/75594/elife-75594-fig8-v2.jpg)\n\n**Figure 8.:** (A) Jmjd3 mRNA levels of precursor and differentiated wildtype (WT) and C/EBP\u03b4 knockout (KO) ER-Hoxb8 cells were analysed using quantitative reverse transcription polymerase chain reaction (qRT-PCR) (n=3). (B) WT and C/EBP\u03b4 KO ER-Hoxb8 cells were treated with 5 \u00b5M GSK-J4 for 3 days during differentiation and S100a8 and S100a9 mRNA levels were analysed using qRT-PCR (n=5). Chromatin immunoprecipitation was performed using anti-H3K27me3 and appropriate IgG control antibodies in chromatin of vehicle controls (-) and treated (+GSK-J4) WT and C/EBP\u03b4 KO (KO) ER-Hoxb8 monocytes. Purified DNA was analysed using primer pairs flanking different S100a8 (C) and S100a9 (D) promoter regions (n=3\u20135). Values are the means \u00b1 SEM. *p<0.05, **p<0.01, ***p<0.001, ns = not significant, by one-way ANOVA with Bonferroni\u2019s correction (A, B) or by two-tailed Student\u2019s t test in comparison to WT (-) (C, D).\n\n## Discussion\n\nThe ER-Hoxb8 cell system serves as a substitute for murine primary cells of myeloid origin that can be differentiated into phagocytes, such as monocytes and neutrophils. It reflects reliably the differentiation of myeloid progenitor cells to bone marrow-derived monocytes and macrophages. Due to the high expression of S100A8 and S100A9 in the early days of culture around day 3, we describe these stage as monocytes, later days of differentiation with no or low expression of these S100 proteins as macrophages in analogy to the human system. This system allows comparison with in vitro differentiated primary cells (Wang et al., 2006a) and, therefore, provides an experimental cell model for analysis of S100A8 and S100A9 expression. Although the alarmins are regarded as key factors in various inflammatory conditions (Foell and Roth, 2004), cancer types (Cross et al., 2005), and cardiovascular diseases (Frangogiannis, 2019), little is known about their transcriptional regulation. The serum concentrations of alarmins correlate with disease severity and activity and, hence, they are reliable biomarkers for monitoring several inflammatory diseases (Foell et al., 2004; Ehrchen et al., 2009). The expression levels of S100a8 and S100a9 differ extremely during myeloid differentiation and the promoters of their genes represent probably one of the most dynamic regulatory elements in the myeloid lineage. Whereas both proteins are completely absent in myeloid precursor cells, they are highly expressed in monocytes and neutrophils, which suggests that highly dynamic regulatory mechanisms drive S100a8 and S100a9 expression.\n\nThe CRISPR/Cas9-mediated KO screening approach based on a lentiviral pooled library has been used so far to investigate various mechanisms, such as immunity-related pathways and cancer-modulating events (Kweon and Kim, 2018). In this study, our unbiased genome-wide screening approach allowed the identification of C/EBP\u03b4 as a factor involved in S100A9 regulation during murine monocyte differentiation. We further focused our investigations on Cebpd because this gene was in the top list of the robust rank aggregation (RRA) scores and showed the highest numbers of guide RNAs with efficient effects on S100A9 expression in our screening. This redundancy of independent parameters helped to distinguish true positive from false positive hits. Furthermore, a robust phenotype-of-interest, such as a clear S100A9 protein signal at day 3 of monocyte differentiation, allowed reliable negative selection in Cas9-library monocytes. Selection of remaining cells served as a reference control to distinguish true from false positives. The specificity of our selection procedure was confirmed at the protein level by western blot analysis of sorted cell populations. CRISPR/Cas9-based functional genomic screening has been reported to be highly specific, thereby causing fewer cases of false positives in direct comparison with knockdown analysis by RNA interference (Shalem et al., 2014). We were now able to identify a novel regulator of S100A8 and S100A9 using this unbiased method. By pre-gating on CD11b+Ly-6C+ monocytes, we revealed C/EBP\u03b4 as a specific and differentiation-independent regulator of S100A8 and S100A9, excluding pathways linked to general functions or development of phagocytes. Re-analysis of S100A9 expression by immunoblotting of sorted cell populations verified the gates set (Figure 1B). However, validation of four candidate genes from our hit list demonstrates the limitation of the CRISPR screening system. Not every targeted hit, such as Phf8, Hand1, and Csrp1, showed a prominent effect on S100a8 and S100a9 expression. Possibly, the slight differences are rather due to indirect effects on S100 expression than due to deficiency of actual direct regulators. Another interesting gene within our top 20 hit list is the transcription factor creb1 (Figure 1C) that is known to mediate cytokine signaling at least in human neutrophils and could therefore be tested for S100a8 and S100a9 regulation in future experiments (Mayer et al., 2013). Known regulators of S100A8 and S100A9 that are also essential for general differentiation, such as PU.1 (Xu et al., 2021), were very likely excluded due to our monocyte pre-gating strategy. Our data indicate that this screening technique seems not optimal enough to identify all factors of an interrelated regulatory protein complex, but it is sufficient for unbiased detection of single factors for gene regulation, as shown in our study.\n\nWe confirmed that the transcription factor C/EBP\u03b4 is a direct regulator of S100A8 and S100A9 in murine monocytes using independent approaches. Cebpd, and S100a8 and S100a9 were co-expressed in differentiating monocytes, and induction of C/EBP\u03b4 clearly showed that the expression of S100a8 and S100a9 was upregulated by the presence of C/EBP\u03b4. This evidence was further supported by increased S100a8 and S100a9 levels caused by deletion of ATF3 and FBXW7, which are natural inhibitors of C/EBP\u03b4. There is a parallel decrease of Cebpd, and S100a8 and S100a9 expression during later stages of monocyte/macrophage differentiation which may point to a functional relation of C/EBP\u03b4 expression and downregulation of S100 expression as well. However, the late expression kinetics of S100a8 and S100a9 in WT and C/EBP\u03b4 KO cells clearly point to the presence of additional relevant factors which were not addressed by our screening approach.\n\nThe specificity of our approach was further confirmed by the fact that deficiency of several transcription factors, such as STAT3, KLF5, IRF7, and C/EBP\u03b2, described as S100A8 and S100A9 regulators in previous studies (Kuruto-Niwa et al., 1998; Fujiu et al., 2011; Lee et al., 2012; Liu et al., 2016; Yang et al., 2017), did neither affect S100a8 and S100a9 expression in our ER-Hoxb8 monocytes, nor were these listed as gene hits in our CRISPR/Cas9-mediated KO screening approach. Our ChIP data clearly showed that C/EBP\u03b4 specifically binds within S100a8 and S100a9 promoter regions. Co-transfection of an inducible C/EBP\u03b4 construct and S100a8 and S100a9 reporter constructs not only demonstrated S100 promoter activation due to C/EBP\u03b4 expression, but also revealed functional relevance of specific binding sites, via promoter bashing, that are located exactly within the stated promoter regions. The two DNA motifs for specific C/EBP\u03b4 responses on the S100a8 promoter regions did not share the core sequence 5\u2019-C/G GCAAT-3\u2019 that we found within the S100a9 promoter region in our study. The latter has been described in three other promoters, the human PPARG2 promoter (Lai et al., 2008), the murine and human CEBPD promoter itself (Wang et al., 2021), and the human COX2 promoter (Wang et al., 2006b). We were able to show that the functionally relevant C/EBP\u03b4-binding sites within the S100 promoters lie within genome regions which switch from closed to open chromatin states during monocyte differentiation, and concomitant induction of S100 expression as examined by ATAC-seq.\n\nOur chromatin accessibility data on S100a8 and S100a9 promoter regions reflected active S100a8 and S100a9 transcription on day 3 cells and accurately mirrored decreased S100 expression of C/EBP\u03b4 KO monocytes in relation to WT counterparts. These observations were again reflected and supported by the characterization of the epigenetic landscape using H3K27ac and H3K27me3 marks. The fact that H3K27me3 marks were strongly decreased in WT monocytes, but not in precursors or C/EBP\u03b4-deficient monocytes, showed the indispensability of H3K27 demethylation for S100a8 and S100a9 expression. Moreover, our data demonstrated that the Jumonji C family histone demethylase JMJD3 regulates S100a8 and S100a9 expression by erasure of H3K27me3 in dependency of C/EBP\u03b4, which was confirmed by GSK-J4-mediated inhibition of JMJD3 activities. Neither a link of C/EBP\u03b4 nor of S100A8/A9 and JMJD3 has been published yet. It has been shown that histone demethylase activities of recombinant JMJD3 on mono-nucleosome substrates is relatively low in contrast to higher activities on bulk histones (Lan et al., 2007), suggesting that further factors, such as C/EBP\u03b4, are involved in chromatin binding. Several studies highlight JMJD3 as a regulator of innate immune responses, especially via NF-\u03baB-mediated inflammation in macrophages (Na et al., 2016; Na et al., 2017; Davis et al., 2020). Accordingly, knockdown of JMJD3 affected mainly inflammatory response networks in monocytic THP-1 cells (Das et al., 2012) and blocked activation of the NLRP3 inflammasome in bone marrow-derived macrophages (Huang et al., 2020). GSK-J4 treatment of mice attenuated disease progression and inflammatory activities in several mouse models for inflammatory diseases, such as arthritis (Jia et al., 2018), colitis (Huang et al., 2020), and EAE (experimental autoimmune encephalomyelitis) (Do\u00f1as et al., 2016). Accordingly, GSK-J4 treatment of our ER-Hoxb8 monocytes reduced expression of the proinflammatory alarmins S100a8 and S100a9, which have been shown to drive the inflammatory process of arthritis (van Lent et al., 2012). With our study, we have taken a step forward to uncover the role of epigenetic features on S100a8 and S100a9 expression and, thereby, on inflammatory conditions in murine monocytes.\n\nWe were also able to demonstrate an association of CEBPD, and S100A8 and S100A9 expression in the context of human cardiovascular disease. The expression of these molecules shows a significant positive correlation not only to each other but also to the manifestation of sCAD and MI in patient-derived PBMCs. Moreover, expression of CEBPD, S100A8 and S100A9 showed an even stronger association with classical, proinflammatory monocytes (CD14++CD16-), compared to non-classical (CD14+CD16++) and intermediate (CD14++CD16+) monocytes. The endogenous antagonists of C/EBP\u03b4, ATF3 and especially FBXW7, showed a negative correlation of their expression pattern in these monocyte subpopulations. Interestingly, inflammatory monocytes with phagocytic and proteolytic activities have been reported to show an early peak at infarct sites, which are followed by infiltration of non-classical, anti-inflammatory monocytes (Nahrendorf et al., 2007; Dutta and Nahrendorf, 2015). Genetic deletion of S100A8/A9 was reported to attenuate MI and improve cardiac function in murine models. In contrast, overexpression of S100a9 in mice increased infarct size and mortality, and treatment with recombinant S100 proteins raised influx of immune cells into the infarct area (Li et al., 2019; Sreejit et al., 2020). Moreover, serum concentrations of S100A8/A9 are known to be highly sensitive and prognostic markers for myocardial injury (Aydin et al., 2019). Taken together, these data indicate that the C/EBP\u03b4-S100 alarmin axis drives a clinically relevant pathomechanism in cardiovascular disease and probably other inflammation-driven conditions.\n\nThere are several published reports suggesting a biomedical relevance of the link between the C/EBP\u03b4 and the S100A8/A9 alarmin under other inflammatory conditions as well. For example, C/EBP\u03b4 has been shown to play a role in the pathogenesis of psoriasis (Lan et al., 2020) and in acute inflammatory signaling by regulating COX-2 (Wadleigh et al., 2000), IL-6 (Litvak et al., 2009), and TLR4 (Balamurugan et al., 2013). Analysis of the genome-wide transcription pattern of monocytes revealed IL6 as the top gene induced by S100 alarmin stimulation via interaction with TLR4 (Fassl et al., 2015), and targeted deletion of S100A9 ameliorated inflammation in a murine psoriasis model (Zenz et al., 2008). Additionally, C/EBP\u03b4 levels were elevated in mouse models and patients of Alzheimer\u2019s disease (AD) (Li et al., 2004; Ko et al., 2012) and RA (Nishioka et al., 2000; Chang et al., 2012). In mouse models of AD, downregulation (Ha et al., 2010) and deficiency of S100A9 (Kummer et al., 2012) had therapeutic effects on disease activity. Also in human studies, S100A9 was found to be associated with AD pathogenesis (Shepherd et al., 2006). Beyond that, S100A8 and S100A9 are known key players in the pathogenesis of arthritis in murine models (van Lent et al., 2012). Gene expression profiling of blood cells from RA patients receiving anti-TNF-\u03b1-based treatment showed that both CEBPD and S100A8 were downregulated by the treatment (Meugnier et al., 2011). Uncontrolled activity of S100A8/A9 alarmins drives TNF-induced arthritis in mice (Vogl et al., 2018). In the context of human RA, the expression and serum concentrations of S100A8/A9 correlate very well with disease activity and are the first predictive marker for disease relapses in juvenile patients, and of the responses to therapy in juvenile and adult patients (Moncrieffe et al., 2013; Choi et al., 2015). However, no direct molecular or functional link between S100A8/A9 and C/EBP\u03b4 in arthritis has yet been reported. Using an in vivo model for acute lung inflammation, we were now able to show that C/EBP\u03b4-deficient mice express lower S100A8/A9 level than WT littermates in response to LPS exposure, which is accompanied by a milder disease phenotype. In S100A9 KO mice, neutrophil recruitment in the lung was impeded when using the same mouse model (Chakraborty et al., 2017), suggesting that S100A8/A9 expression mediates effects of C/EBP\u03b4 as a key mediator of LPS-induced lung inflammation (Yan et al., 2013). Our data define a new regulatory axis between the transcription factor C/EBP\u03b4 and the alarmins S100A8 and S100A9 in myeloid cells which is of relevance in different inflammatory processes and clinical diseases.\n\n## Materials and methods\n\n### Murine model of acute lung inflammation\n\nWT and C/EBP\u03b4 KO (kindly provided by Esta Sterneck, National Cancer Institute, Frederick, MD) (Sterneck et al., 1998) mice were exposed to LPS from Salmonella enterica (0.5 mg/ml, Sigma-Aldrich) in saline or saline (NaCl) only for 45 min inside a cylindrical Pyrex chamber which was connected to a nebulizer. After a 4 hr resting period, mice were anesthetized, blood was collected from heart and BALF was collected for S100A8/A9 measurements by flushing the lungs five times with 0.8 ml NaCl through the trachea. Serum and BALF were saved for later analyses of alarmins and cytokines at \u201380\u00b0C. Migrated polymorphonuclear leukocytes were analysed via Kimura and following Ly-6B.2/Gr-1-antibody (Bio-Rad) staining. Mouse experiments were in accordance with German Animal Welfare Legislation and performed as approved by the North Rhine-Westphalia Office of Nature, Environment and Consumer Protection (LANUV), and the District Government and District Veterinary Office Muenster under the reference number 81-02.04.2019.A445.\n\n### Cell culture\n\nER-Hoxb8 cells were generated as described earlier (Wang et al., 2006a) and grown in RPMI medium (Thermo Fisher Scientific) supplemented with 10% FBS (Biowest), 1% penicillin/streptomycin solution (Sigma-Aldrich), 1% glutamine solution (Thermo Fisher Scientific), 40 ng/ml recombinant mouse GM-CSF (ImmunoTools) an 1 \u00b5M \u03b2-estradiol (Sigma-Aldrich). For differentiation, precursor cells were washed and incubated in estradiol-free medium containing 40 ng/ml GM-CSF for several days. HEK293T were grown in DMEM (Thermo Fisher Scientific) supplemented with 10% FBS (Biowest) and 1% penicillin/streptomycin solution (Sigma-Aldrich), 1% glutamine solution (Thermo Fisher Scientific), and 1% sodium pyruvate (Merck). All cell lines were cultured at 37\u00b0C, 5% CO2, and routinely screened and found negative for mycoplasma contamination in a PCR-based assay (PromoCell).\n\n### Cell line generation and manipulation\n\nWT, C/EBP\u03b4 KO (kindly provided by Esta Sterneck, National Cancer Institute, Frederick, MD) (Sterneck et al., 1998) and Cas9-expressing (Chiou et al., 2015) ER-Hoxb8 cells originated from corresponding mice. PHF8, CSRP1, HAND1, FBXW7, ATF3, STAT3, KLF5, IRF7, and C/EBP\u03b2 KO ER-Hoxb8 cells were generated using CRISPR/Cas9 as described earlier (Gran et al., 2018). The oligos for gRNA cloning are listed in Supplementary file 1a. For lentiviral production, the lentiGuide-Puro (for GeCKO screen), lentiCRISPRv2-gRNA (for single KO cell lines), or TRE_3xFlag-C/EBP\u03b4 was co-transfected into HEK293T cells, together with the packaging plasmids pCMV-VSV-G (AddGene, #8454) and psPAX2 (AddGene, #12260). For transduction of ER-Hoxb8 cells, cells were incubated with lentiviral particles and 8 \u00b5g/ml polybrene (Sigma-Aldrich) for 1 hr upon spinfection and selected for several days using puromycin (InvivoGen). For transfection of HEK293T cells, the cells were seeded 1 day prior to transfection. Then, cells were co-transfected with TRE_3xFlag-C/EBP\u03b4 and S100a8 reporter or S100a9 reporter using the Lipofectamine 3000 Transfection Reagent (Thermo Scientific) according to the manufacturer\u2019s manual. For inhibition of JMJD3 activities, cells were treated using 5 \u00b5M GSK-J4 HCl (SellekChem) for 3 days. To induce cebpd in TRE_3xFlag-C/EBP\u03b4 ER-Hoxb8 cells or transfected HEK293T cells, cells were treated using 2 \u00b5g/ml doxycycline (Sigma-Aldrich) for 24 hr.\n\n### Isolation of BMDMs\n\nBMDMs were obtained by flushing the femurs from WT and C/EBP\u03b4 KO mice. Erythrocytes were depleted by osmotic shock. Cells were washed and separated using a Ficoll gradient (PAN-Biotech). Primary monocytes (M0) were generated by culturing for 3 days in DMEM containing with 10% FBS (Biowest) and 1% penicillin/streptomycin solution (Sigma-Aldrich), 1% glutamine solution (Thermo Fisher Scientific), and 15% of L929 supernatant as a source of macrophage colony-stimulating factor. Stimulation of cells with 50 ng/ml IFN-\u03b3 (ImmunoTools) and 10 ng/ml LPS (Sigma-Aldrich) for 24 hr was used for M1-polarization, whereas a 24 hr stimulation with 20 ng/ml IL-4 (Peprotech) led to M2-polarization of BMDMs.\n\n### GeCKO-library screening\n\nAmplification of mouse CRISPR Knockout pooled library (GeCKO v2) in lentiGuide-Puro plasmid, purchased from AddGene (#1000000053) (Sanjana et al., 2014), was performed as described (Joung et al., 2017). Cas9-expressing ER-Hoxb8 cells, transduced with library lentiviral particles at an MOI of 0.4, were differentiated to day 3. Intracellular S100A9 was stained with an S100A9-FITC coupled antibody using the Foxp3/Transcription Factor Staining Buffer Set (eBioscience). Cells with no/lower S100A9 expression (hits) and cells with normal S100A9 expression (reference) were sorted using an SH800S Cell Sorter (Sony, Minato, Japan) and DNA was purified by phenol-chloroform extraction. Next-generation sequencing was performed as described earlier (Joung et al., 2017). Briefly, sgRNA library for next-generation sequencing was prepared via PCR using primers amplifying the target region with Illumina adapter sequences (Supplementary file 1b), the purified DNA, and the NEBNext High-Fidelity 2\u00d7 PCR Master Mix (NEB). PCRs were pooled and purified using the QIAquick PCR Purification Kit (Qiagen). Size and quantity was determined using the Bioanalyzer High Sensitivity DNA Analysis Agilent High Sensitivity DNA Kit (Agilent). Samples were sequenced according to the Illumina user manual with 80 cycles of read 1 (forward) using the NextSeq 500/550 High Output Kit v2.5 (75 Cycles) (Illumina) with the 20% PhiX spike in Illumina PhiX control kit (Illumina).\n\n### Cloning and plasmid production\n\n#### TRE_3xFlag-C/EBP\u03b4 and TRE_ctrl\n\nThe pcDNA 3.1 (-) mouse C/EBP\u03b4 expression vector (AddGene, #12559) and annealed oligonucleotides (Supplementary file 1c) were digested using XbaI and EcoRI and then ligated. Using primers carrying restriction enzyme recognition sites (Supplementary file 1c), the 3xFlag-C/EBP\u03b4 expression cassette was amplified. The resulting amplicon and the pCW57.1 mDux-CA target vector (AddGene, #99284) (Whiddon et al., 2017) were digested using NheI and AgeI and subsequently ligated. TRE_ctrl was produced by digesting TRE_3xFlag-C/EBP\u03b4 using NheI and AgeI and by subsequent blunting of ends by 3' overhang removal and fill-in of 3' recessed (5' overhang) ends using DNA Polymerase I, Large (Klenow) Fragment (NEB) prior to ligation.\n\n#### S100a8 and S100a9 reporter\n\nTo construct S100 reporter vectors, 1500 bp upstream of S100a8 and 1800 bp upstream of S100a9 TSS were amplified from genomic mouse DNA. Using primers carrying restriction enzyme recognition sites (Supplementary file 1d), promoter regions were amplified and cloned into pLenti CMV GFP Blast vector (AddGene, #17445) (Campeau et al., 2009) using XbaI and ClaI. Resulting S100 prom-GFP constructs were cloned into MSCV-PIG-empty vector (AddGene, #105594) (Xu et al., 2018) by digestion with NsiI and ClaI together with the MSCV backbone to exchange IRES-GFP-cassette with S100a8/a9prom-GFP-cassette and subsequent ligation. Proposed C/EBP DNA-binding sites within S100a8 and S100a9 promoter regions were identified using the AliBaba2.1 net-based transcription factor-binding site search tool (Grabe, 2002), and were mutated by deleting 6\u20137 base pairs using the QuikChange II XL Site-Directed Mutagenesis Kit (Agilent Technologies). The primers used for mutagenesis are listed in Supplementary file 1e. Plasmids were produced in DH5\u03b1 cells and purified using the PureLinkTM HiPure Plasmid Midiprep Kit (Thermo Scientific).\n\n### qRT-PCR\n\nRNA was isolated using a NucleoSpin Extract II Isolation Kit (Macherey Nagel). The mRNA expression of selected genes was measured by qRT-PCR as described earlier (Heming et al., 2018). The primers used are listed in Supplementary file 1f. The relative expression level of each target gene was analysed using the 2\u2212\u0394\u0394Cq method and was normalized to GAPDH.\n\n### Chromatin immunoprecipitation\n\nFor chromatin preparation, progenitor and differentiated ER-Hoxb8 cells were fixed using 1% formaldehyde for 5 min and reaction was stopped by adding 125 mM glycine. Chromatin was extracted as previously described (Fujita and Fujii, 2013). Approximately 1\u20135% of chromatin served as the input sample. DNA from input samples was isolated using phenol-chloroform extraction as described earlier (Heming et al., 2018). For immunoprecipitation, 3 \u00b5g antibody against Flag (Sigma-Aldrich), H3K27ac (Abcam), H3K27me3 (Cell Signaling Technology), normal Rabbit IgG (Cell Signaling,) or Mouse IgG1, \u03ba Isotype control (BioLegend) was conjugated to 900 \u00b5g magnetic Dynabeads-Protein G (Thermo Scientific) at 4\u00b0C overnight. Sonicated chromatin was added to AB-conjugated Dynabeads and incubated at 4\u00b0C overnight. The Dynabeads were washed as described earlier (Fujita and Fujii, 2013). For elution, Dynabeads were incubated twice with elution buffer (0.05 M NaHCO3, 1% SDS) at 65\u00b0C for 15 min. DNA from eluates was isolated using phenol-chloroform extraction as with input samples. Values were taken into account only when the amount of DNA pulled down by using the antibody of interest was more than 5-fold increased over DNA pulled down by using IgG antibodies. The primers used for ChIP-PCR are listed in Supplementary file 1g.\n\n### ATAC-seq\n\nPrecursor and day 3 differentiated WT and C/EBP\u03b4 KO ER-Hoxb8 cells were harvested, washed, and cryopreserved in 50% FBS/40% growth media/10% DMSO using a freezing container at \u201380\u00b0C overnight. Cells were shipped to Active Motif to perform ATAC-seq as previously described (Buenrostro et al., 2013).\n\n### Measurements of S100A8/A9 protein level\n\nThe S100A8/A9 protein concentrations were measured using an in-house S100A8/A9 enzyme-linked immunosorbent assay (ELISA), as previously described (Vogl et al., 2014).\n\n### Cytokine measurements by bead-based immunoassay\n\nIL-1\u03b1, IFN-\u03b3, GM-CSF, MCP-1, IL-12p70, IL-1\u03b2, IL-10, IL-6, IL-27, IL-17A, IFN-\u03b2, and TNF-\u03b1 were analysed using the bead-based immunoassay LEGENDplex mouse inflammation panel according to manufacturer\u2019s instructions (BioLegend). Analytes were measured by flow cytometry using Navios (Beckmann Coulter).\n\n### Immunoblotting\n\nCells were lysed in M-PER Mammalian Protein Extraction Reagent (Thermo Scientific) containing a protease inhibitor mixture (Sigma-Aldrich). Protein concentration was determined, and equal amounts (15\u201330 \u00b5g) were run on an SDS-PAGE. After blotting on a nitrocellulose membrane, the membrane was incubated overnight with primary antibodies against: polyclonal rabbit S100A8 and S100A9 antibodies (originated from our own production; Vogl et al., 2014), GAPDH (Cell Signaling Technology), \u03b1/\u03b2-Tubulin (Cell Signaling Technology), and Flag (Sigma-Aldrich). Membranes were incubated with an HRP-linked secondary antibody (Agilent) for 1 hr. Chemiluminescence signal was detected using ChemiDoc XRS+ (Bio-Rad) together with ImageJ (National Institutes of Health) to quantify the signal intensity.\n\n### Phagocytosis\n\nFluoSpheres polystrene microspheres (Thermo Scientific) that were shortly sonicated in a bath sonicator (Latex Beads) or pHrodo Red S. aureus Bioparticles Conjugate (S. aureus Bioparticles) were added to 5 \u00d7 105 differentiated cells at a ratio 1:10 for 2 hr at 37\u00b0C. The rate of phagocytosis was measured by flow cytometry using Navios (Beckmann Coulter).\n\n### Oxidative burst\n\nCells were stimulated using 10 nM PMA (Abcam) for 15 min or left untreated. After incubation, 15 \u03bcM DHR123 (Sigma-Aldrich) were added for another 15 min. The fluorescence signal was analysed using flow cytometry (Navios, Beckmann Coulter).\n\n### FACS analysis\n\nBMCs and ER-Hoxb8 cells were differentiated using 40 ng/ml rmGM-CSF (ImmunoTools), harvested, stained for CD11b, Ly-6C, and appropriate Isotype control antibodies (all BioLegend) and measured using flow cytometry (Navios, Beckmann Coulter) to determine cell population purity and differentiation kinetics.\n\n### RNA-seq\n\n#### Study population\n\nFor this study, we used bulk mRNA-sequencing (RNA-seq) data of PBMCs and monocytes from two subsets of participants in the German BioNRW Study (Witten et al., 2022). BioNRW actively recruits patients undergoing coronary angiography for the diagnosis and percutaneous coronary intervention of coronary artery disease, as well as age and gender matched healthy control individuals without history of cardiovascular disease, all aged 18\u201370 years of age. Patients receive standard cardiovascular care and medication (ACE-inhibitor, AT1-receptor blocker, \u03b2-blocker, diuretics, statin), according to current guidelines. Here, we included a total of 42 patients with sCAD or acute MI, as well as 39 of the corresponding age and sex matched controls.\n\nThe BioNRW Study is conducted in accordance with the guidelines of the Declaration of Helsinki. The research protocol, including the case report forms, was approved by the local ethics committee (#245-12). Written informed consent was obtained from all study participants.\n\n#### Blood collection and isolation of PBMCs\n\nIn case of MI, blood samples were collected during the first 4 days following the event. EDTA blood was drawn from each subject by venipuncture. Sample processing followed within 2 hr. PBMCs were obtained from 40 ml blood by density gradient centrifugation (Ficoll; Biochrom). Lymphocytes were collected and washed twice with PBS. The pellet was re-suspended in freezing medium Cryo-SFM (PromoCell) and cryopreserved.\n\n#### Isolation of monocyte subpopulations\n\nAfter washing, PBMCs were stained with anti-human antibodies specific for CD2 (PE, RPA-2.10, T-cell marker), CD14 (APC, M5E2, monocyte subset differentiation), CD15 (PE, HIM1, granulocyte marker), CD16 (PE-Cy7, 3G8, monocyte subset differentiation), CD19 (PE, HIB19, B-cell marker), CD56 (PE, MY31, NK-cell marker), CD335 (PE, 9E2, NK-cell marker), HLA-DR (FITC, TU36, antigen-presenting cells) (all from BD Biosciences), as reported by Cros et al., 2010. Cells were acquired on a FACS LSR II flow cytometer (BD Biosciences) and analysed using FlowJo software version 10 (Treestar Inc). For sorting of monocyte subsets, PBMCs were stained and sorted on a MoFlo Astrios cell sorter (Beckman Coulter). Cells were sorted in 1 ml of Isol-RNA lysis reagent (5-Prime GmbH) and frozen at \u201380\u00b0C. To avoid gender-specific effects, three representative male samples of each BioNRW diagnostic group (sCAD, MI, and control) were selected to be subjected to cell sorting and subsequent RNA isolation.\n\n#### Differential expression analysis in PBMCs and monocytes\n\nFor mRNA profiling of PBMCs and monocyte subpopulations using RNA-seq, mRNA was enriched using the NEBNext Poly(A) Magnetic Isolation Module (NEB), followed by cDNA NGS library preparation (NEBNext Ultra RNA Library Prep Kit for Illumina, NEB). The size of the resulting libraries was controlled by the use of a Bioanalyzer High Sensitivity DNA Kit (Agilent Technologies) and quantified using the KAPA Library Quantification Kit for Illumina (Roche). Equimolar, appropriately pooled libraries were sequenced in a single read mode (75 cycles) on a NextSeq500 System (Illumina) using v2 chemistry, yielding in an average QScore distribution of 92%\u2265Q30 score. They were subsequently demultiplexed and converted to FASTQ files using bcl2fastq v2.20 Conversion software (Illumina). Data was quality controlled using FASTQC software and trimmed for adapter sequences using Trimmomatic (Bolger et al., 2014).\n\n### General statistics\n\nThe statistical significance of the data was determined using Prism 5.0 software (GraphPad Software, San Diego, CA). Analyses between two groups were performed using an unpaired two-tailed Student\u2019s t test. Comparisons among three or more groups were performed by using one-way ANOVA, followed by Bonferroni\u2019s multiple means tests for comparing all pairs of columns. Differences were considered statistically significant at a probability (p-value) of <0.05.\n\n### Bioinformatics analysis\n\n#### GeCKO-library screening\n\nAnalysis of counting the reads for each gRNA and differential analysis was performed using MaGeCK 0.5.9.3, a computational tool to identify important genes from GeCKO-based screens (Li et al., 2014). A modified RRA method with a redefined \u03c1 value was used. Former RRA computed a significant p-value for genes in the middle of gRNA ranked list and thereby introducing false positives because the assumption of uniformity is not necessarily satisfied in real applications. Thus, top ranked % gRNAs were selected if their negative binomial p-values were smaller than a threshold, such as 0.05. If j of the n gRNAs targeting a gene were selected, then the modified value is defined as \u03c1=min (p1, p2,\u2026,pj), where j\u2264n. This modified RRA method could efficiently remove the effect of insignificant gRNAs in the assessment of gene significance. A permutation test where the gRNAs were randomly assigned to genes was performed to compute a p-value based on the \u03c1 values. By default, 100\u00d7 ng permutations are performed, where ng is the number of genes. We then compute the FDR from the empirical permutation p-values using the Benjamini-Hochberg procedure.\n\n#### ATAC-seq\n\nSequence analysis was performed by mapping the paired-end 42 bp sequencing reads (PE42) generated by Illumina sequencing (using NextSeq500) to the genome using the BWA algorithm with default settings (\u2018bwa mem\u2019). Only reads that passed Illumina\u2019s purity filter, aligned with no more than two mismatches, and mapped uniquely to the genome were used in the subsequent analysis. In addition, duplicate reads (\u2018PCR duplicates\u2019) were removed. BAM files provided by Active Motif were used to perform peak calling with MACS2, using paired-end mode with a bandwidth of 200 and q-value cutoff of 0.01. BedGraph files were converted to BigWig format for visualization with the Integrative Genomics Viewer (IGV) (Thorvaldsd\u00f3ttir et al., 2013) using bedGraphToBigWig. Differential accessibility analyses for all possible comparisons between WT and/or C/EBP\u03b4 KO in day 0 and day 3 groups were carried out with GUAVA v1 (Divate and Cheung, 2018), which implements DESeq2 (Love et al., 2014). Differential peaks were defined as those merged intervals within a window of 5000 bp upstream and 3000 bp downstream of the transcription start site (TSS) showing an adjusted p-value (padj) <0.05 and log2 fold change \u2265\u00b11.5.\n\n#### RNA-seq\n\nThe resulting reads were mapped to the human reference genome builds hg19 (monocytes) or hg38 (PBMCs) using Tophat2 (Kim et al., 2013) or HISAT2 v2.1.0 (Kim et al., 2019), counted by using the R package GenomicAlignments (Lawrence et al., 2013) or HTSeq v0.11.2 (Anders et al., 2015), and followed by differential expression analysis using DEseq2 (Love et al., 2014). The PBMCs dataset used for analysis consisted of 72 individuals, from which 36 were sCAD/MI cases and 36 were controls (21 females and 15 males in each group, mean age: 50.8\u00b112.3 years), while the monocytes dataset contained read counts of classical, intermediate, and non-classical monocyte subpopulations from 9 male individuals (3 MI, 3 sCAD, and 3 controls). One sCAD non-classical monocyte sample had to be excluded from analysis due to low mapping rate; therefore, the monocytes dataset used for analysis contained 26 samples. Genes were considered differentially expressed at adjusted p<0.05 (Benjamini-Hochberg method). R was used to perform Pearson correlation tests and generate plots for the genes of interest from the normalized count data.\n\n### Conclusion\n\nWe found that the transcription factor C/EBP\u03b4 drives expression of the abundant alarmins S100A8 and S100A9, and demonstrated that C/EBP\u03b4 binding to specific sites on S100a8 and S100a9 promoter regions also induced changes in chromatin accessibility via JMJD3-mediated demethylation of H3K27me3 marks, which includes a so far unknown link. Due to the high relevance of S100A8/A9 alarmin expression in many inflammatory diseases, our findings may point to novel molecular targets for innovative anti-inflammatory therapeutic approaches.\n",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "70092be7-9463-4bb8-b046-95c0b8a55088",
+      "submission_id": "41b79ee1-170d-48e9-a0b8-37bcff0723e0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jalees Rehman, https://ror.org/02mpq6x41 University of Illinois at Chicago United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75594.sa0](https://doi.org/10.7554/eLife.75594.sa0)\n\nThe study uses an elegant CRISPR/Cas9 screening approach in a myeloid cell line to identify the underlying regulators of the alarmins S100A8 and S100A9, which amplify inflammation. This approach identified the transcription factor C/EBP-\u03b4 as a regulator of S100A8 and S100A9 expression in the myeloid cell line and also showed a correlation between the expression levels of C/EBP-\u03b4 and the alarmins in patient samples of peripheral blood mononuclear cells. Furthermore, the authors also validate their findings in primary monocytes using mice with genetic C/EBP-\u03b4 deletion. This work will be of significant interest to researchers studying the regulation of immune responses and inflammation, and it also highlights how unbiased CRISPR/Cas9 screening can lead to novel mechanistic insights in myeloid cells.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Jalees Rehman, https://ror.org/02mpq6x41 University of Illinois at Chicago United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75594.sa1](https://doi.org/10.7554/eLife.75594.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"C/EBP\u03b4-induced epigenetic changes control the dynamic gene transcription of S100A8 and S100A9\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Jalees Rehman as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by a Reviewing Editor and Carla Rothlin as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Mechanistic validation of the effects of C/EBP-\u03b4 deletion or knockdown in primary human and/or mouse monocytes as outlined in the comments by the reviewers 1 and 2 below. Demonstrating how C/EBP-\u03b4 deletion affects the phenotypes and differentiation of primary human or primary mouse monocytes in vivo and in vitro, will validate the conclusions derived from the myeloid cell line.\n\n2) Expanded analysis of the CRISPR/Cas9 screen such as addressing potential false positives (see comments of reviewer 3).\n\n3) Rigorous presentation of the ATAC-seq data including showing all the differential peak analyses and ATAC-seq of the C/EBP\u03b4 KO cells (see comments of reviewer 2).\n\nReviewer #1 (Recommendations for the authors):\n\nThe manuscript could be strengthened with the following revisions:\n\n1. The authors highlight the importance of alarmins in disease but there are no experiments showing that deletion of C/EBP-\u03b4 affects disease processes in vivo. Experiments showing that C/EBP-\u03b4 deletion in vivo changes disease and inflammatory injury severity (not just relative circulating levels of alarmins in the serum shown in Figure 2) would be important to highlight the pathophysiological relevance of the C/EBP-\u03b4 link to alarmins. The authors can choose an in vivo LPS model as they also use LPS ex vivo and then assess various parameters of in vivo tissue injury and inflammation in C/EBP-\u03b4 knockout versus control mice.\n\n2. The phenotyping of the myeloid cells in the absence of C/EBP-\u03b4 is very limited and needs to be more rigorous as well as more comprehensive.\n\na) In Figure 2D, n-fold change in serum levels should be changed to actual alarmin concentrations in the serum but other circulating cytokine levels should also be shown, both at baseline and with stimulation conditions (such as in vivo LPS exposure)\n\nb) How does the C/EBP-\u03b4 deletion affect monocyte differentiation and polarization? Flow cytometry of monocyte and macrophage phenotypes with and without C/EBP-\u03b4 as well as with and without stimuli that promote monocyte activation, monocyte to macrophage differentiation and macrophage polarization would be more impactful. Ideally, this can be combined with the in vivo studies proposed in comment #1 which addresses C/EBP-\u03b4 deletion affecting disease severity because int he same in vivo study, the authors can isolate various cell types and perform flow cytometry characterization.\n\nc) The phagocytosis and ROS assays in Supplement Figure 2 are very interesting because they suggest that alarmin reduction increases phagocytosis capacity. In some ways, this may seem counter-intuitive because it suggests that C/EBP-\u03b4 activates inflammatory signaling but suppresses phagocytosis, an important function of immune cells. This is a very important finding and should be moved to the main figures but needs to be studied more robustly showing phagocytosis kinetics and some analysis of how C/EBP-\u03b4 would increase phagocytosis. Does C/EBP-\u03b4 inhibit the expression of phagocytosis genes? Does C/EBP-\u03b4 deletion impact phagocytosis of bacteria (this can be easily assessed using fluorescent bacteria)?\n\nReviewer #2 (Recommendations for the authors):\n\nThe data in the cell line show a direct relationship between C/EBP\u03b4 and S100A8/A9, however the data in primary cells is only a correlation. It would be important to show, in either human or mouse primary monocytes, that knockdown of C/EBP\u03b4 directly affects S100A8/A9.\n\nRegarding the composition of the cell culture, flow cytometry can be performed on each day of differentiation to validate the purity of monocytes and determine whether macrophages or other cells are present, which could affect the analyses.\n\nThe ATAC-seq experiments in Figure 6 should be accompanied by a full list of differential peaks between day 0 and day 3 for the reader to browse as a supplementary file. Furthermore, the peaks in day 3 versus day 0 do not seem dramatically different to the eye, which should be quantified. Moreover, the y-axes are not shown for the tracks in 6C. Finally, it would have been interesting to see how C/EBP\u03b4 KO monocytes compared to WT in the ATAC-seq data, as well as where day 5 of differentiation would sit in this dataset. From Figure 2A-B, s100a8 and s100a9 expression at day 5 are downregulated in both WT and KO cells. At this time, would the WT and KO cells become more similar to each other, and/or to day 0 cells?\n\nReviewer #3 (Recommendations for the authors):\n\n1) The current study did not identify any previously reported gene regulators. Further work is needed to address this discrepancy. It is well known that CRISPR screens could generate many false negatives, largely due to the design of ineffective gRNAs. The authors should carefully evaluate these discrepant results by experimental validation.\n\n2) I'd like to suggest reanalyzing Figure 1B by focusing on a smaller number (but more significant) of cells. The reduction of screening noise could potentially identify other candidates of interest.\n\n3) I'd like to suggest validating several other candidates to (1) confirm their impact on S100A9 expression, and (2) further demonstrate the robustness of the CRISPR screening system. Although the focus of the current study is on C/EBPD, the inclusion of other candidates would expand the study scope and warrant future studies.\n\n4) The legend for Figure 6A is too small to read and should be enlarged.\n",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b4474bd7-ea45-484f-bf35-0b57baeb100a",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C1",
+      "claim": "S100A8 and S100A9 are among the most abundant proteins in neutrophils and monocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "The proinflammatory alarmins S100A8 and S100A9 are among the most abundant proteins in neutrophils and monocytes but are completely silenced after differentiation to macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known fact about S100A8/A9 protein abundance in specific cell types.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "9aad91b8-5927-4a06-9d60-a852ebc38d88",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C2",
+      "claim": "S100A8 and S100A9 are completely silenced after differentiation to macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "The proinflammatory alarmins S100A8 and S100A9 are among the most abundant proteins in neutrophils and monocytes but are completely silenced after differentiation to macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by data showing downregulation during differentiation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "c8d7e585-8c70-418d-9e8a-a4fc93909827",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C3",
+      "claim": "C/EBP\u03b4 was identified as a central regulator of S100a8 and S100a9 expression using an unbiased genome-wide CRISPR/Cas9 knockout screening approach.",
+      "claim_type": "EXPLICIT",
+      "source": "Using an unbiased genome-wide CRISPR/Cas9 knockout (KO)-based screening approach in immortalized murine monocytes, we identified the transcription factor C/EBP\u03b4 as a central regulator of S100a8 and S100a9 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract describes the experimental approach (CRISPR/Cas9 screening) used to identify C/EBP\u03b4, and Figure 1 shows the screening results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "29e463d4-ce50-4e2a-b2bb-7c40e625fb69",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C4",
+      "claim": "S100A8/A9 expression and neutrophil recruitment were decreased in C/EBP\u03b4 KO mice in a mouse model of acute lung inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that S100A8/A9 expression and thereby neutrophil recruitment and cytokine release were decreased in C/EBP\u03b4 KO mice in a mouse model of acute lung inflammation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding, which is supported by experimental data in Figure 2E-J showing decreased S100A8/A9, neutrophil recruitment, and cytokines in C/EBP\u03b4 KO mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "96614ac2-9fac-4e61-907a-9b5a237dec48",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C5",
+      "claim": "Cytokine release was decreased in C/EBP\u03b4 KO mice in a mouse model of acute lung inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that S100A8/A9 expression and thereby neutrophil recruitment and cytokine release were decreased in C/EBP\u03b4 KO mice in a mouse model of acute lung inflammation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding, supported by Figure 2H-J showing decreased IL-1\u03b1 and IL-6 in C/EBP\u03b4 KO mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "bc8465b5-cd16-423b-a702-2ac5f7b3d029",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C6",
+      "claim": "S100a8 and S100a9 expression is controlled by the C/EBP\u03b4 antagonists ATF3 and FBXW7.",
+      "claim_type": "EXPLICIT",
+      "source": "S100a8 and S100a9 expression was further controlled by the C/EBP\u03b4 antagonists ATF3 and FBXW7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this, and Figure 4E-H shows that knockout of ATF3 and FBXW7 leads to increased S100a8 and S100a9 expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "e94a92b7-6488-4fc2-81d6-40d31443c556",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C7",
+      "claim": "The regulatory network involving C/EBP\u03b4, S100A8, and S100A9 is clinically relevant in subpopulations of human monocytes in cardiovascular patients.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed the clinical relevance of this regulatory network in subpopulations of human monocytes in a clinical cohort of cardiovascular patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this, and Figure 5 shows RNA-seq data from human PBMCs and monocyte subpopulations demonstrating correlations between CEBPD, S100A8, and S100A9 expression in cardiovascular disease patients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "855d59aa-3703-4541-aeac-4c2d8e55dff9",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C8",
+      "claim": "C/EBP\u03b4 binds to specific sites within S100a8 and S100a9 promoter regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we identified specific C/EBP\u03b4-binding sites within S100a8 and S100a9 promoter regions, and demonstrated that C/EBP\u03b4-dependent JMJD3-mediated demethylation of H3K27me3 is indispensable for their expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding, which is supported by ChIP data in Figure 6A and reporter assays in Figure 6D-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "0ad47b4e-6c46-441f-a51e-4581e5edcd2b",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C9",
+      "claim": "C/EBP\u03b4-dependent JMJD3-mediated demethylation of H3K27me3 is indispensable for S100a8 and S100a9 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we identified specific C/EBP\u03b4-binding sites within S100a8 and S100a9 promoter regions, and demonstrated that C/EBP\u03b4-dependent JMJD3-mediated demethylation of H3K27me3 is indispensable for their expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this, supported by data in Figure 7F-G showing increased H3K27me3 in C/EBP\u03b4 KO cells and Figure 8 showing effects of JMJD3 inhibition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "8cb962d7-8fec-4045-92ba-516a2b8d9b63",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C10",
+      "claim": "S100A8/A9 complexes represent up to 40% of the soluble protein content in neutrophils.",
+      "claim_type": "EXPLICIT",
+      "source": "Intracellularly, S100A8/A9 complexes represent up to 40% of the soluble protein content in neutrophils and about 5% in monocytes (Hessian et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Hessian et al., 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "769dfe5f-8873-4665-86bc-e640c32e5c6f",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C11",
+      "claim": "S100A8/A9 complexes represent about 5% of the soluble protein content in monocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Intracellularly, S100A8/A9 complexes represent up to 40% of the soluble protein content in neutrophils and about 5% in monocytes (Hessian et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Hessian et al., 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "1765d755-922d-4469-b6e5-3504e1b1782c",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C12",
+      "claim": "In mature macrophages, protein and mRNA expression of S100A8 and S100A9 is completely downregulated.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in mature macrophages, protein and mRNA expression of these factors is completely downregulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation in the introduction, consistent with established knowledge about S100A8/A9 expression patterns.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "191b2f2f-ab6e-4f15-a922-30e17699e405",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C13",
+      "claim": "Expression of S100A8 and S100A9 is controlled by the most dynamic promoters in myeloid cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This data indicates that expression of S100A8 and S100A9 is controlled by the most dynamic promoters in myeloid cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation of dramatic changes in expression levels during differentiation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "8d550a81-e643-4ba2-9a64-044adbd17526",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C14",
+      "claim": "Calcium-induced (S100A8/A9)2 tetramer promotes tubulin polymerization and microtubule bundling.",
+      "claim_type": "EXPLICIT",
+      "source": "Calcium-induced (S100A8/A9)2 tetramer promotes tubulin polymerization and microtubule bundling, thereby affecting transendothelial migration of phagocytes (Leukert et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Leukert et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "9abf1f52-fa00-4ad4-90ae-18960afc6abc",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C15",
+      "claim": "The S100A8/A9 complex is recognized by Toll-like receptor 4 (TLR4).",
+      "claim_type": "EXPLICIT",
+      "source": "The S100A8/A9 complex is recognized by Toll-like receptor 4 (TLR4), which leads to the production of proinflammatory cytokines and chemokines (Fassl et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Fassl et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "6fc939de-e28a-41e2-9df4-ae1756878c69",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C16",
+      "claim": "S100A9 knockout mice exhibit decreased pathogenic outcomes in several mouse models of disease including sepsis, autoimmune disease, and arthritis.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, S100A9 knockout (KO) mice exhibit decreased pathogenic outcomes in several mouse models of disease, such as sepsis (Vogl et al., 2007), autoimmune disease (Loser et al., 2010) or arthritis (van Lent et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to three studies: Vogl et al., 2007; Loser et al., 2010; van Lent et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "c225b64c-03e3-46a9-9654-949c6fe833e2",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C17",
+      "claim": "The S100A8/A9 complex plays a crucial role in host defence against bacterial and fungal pathogens by sequestering manganese and zinc ions.",
+      "claim_type": "EXPLICIT",
+      "source": "The S100A8/A9 complex plays a crucial role in host defence against bacterial and fungal pathogens by sequestering manganese and zinc ions which compete with high affinity bacterial transporters to import these essential nutrient metals (Kehl-Fie and Skaar, 2010; Kehl-Fie et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Kehl-Fie and Skaar, 2010 and Kehl-Fie et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "d03d1c5d-e3d5-43af-b747-6b5e7020568d",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C18",
+      "claim": "S100A8/A9 is the most abundant alarmin in many clinically relevant diseases in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, S100A8/A9 is the most abundant alarmin in many clinically relevant diseases, and is closely associated with disease activity in rheumatoid arthritis (RA), inflammatory bowel disease, sepsis, cardiovascular diseases, multiple sclerosis, acute lung injury (ALI) and psoriasis (Foell et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Foell et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "10e5bb3d-b2df-4127-8155-314f17f2ab77",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C19",
+      "claim": "Altered S100A8/A9 expression has been found in different cancer types including gastric, colorectal, breast, lung, prostate and liver cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Altered S100A8/A9 expression has also been found in different cancer types, including gastric, colorectal, breast, lung, prostate and liver cancer (Cross et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Cross et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "19bd8fb8-a7e7-47b6-b89a-d312139af163",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C20",
+      "claim": "Several potential transcription factors modulating S100a8 and S100a9 expression have been described, but their functional relevance remains unresolved.",
+      "claim_type": "EXPLICIT",
+      "source": "So far, several potential transcription factors modulating S100a8 and S100a9 expression have been described (Kuruto-Niwa et al., 1998; Fujiu et al., 2011; Lee et al., 2012; Liu et al., 2016; Yang et al., 2017), but their functional relevance remains unresolved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies and represents a critical assessment of prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "6e58daa9-dc3c-41f1-a30b-861dcd37ee8e",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C21",
+      "claim": "ER-Hoxb8 cells are estrogen dependent transiently immortalized myeloid precursor cells that can be differentiated to primary monocytes and granulocytes upon estrogen-withdrawal.",
+      "claim_type": "EXPLICIT",
+      "source": "To overcome difficulties of artificial expression and malignant cell lines we used ER (estrogen-regulated) Hoxb8 cells, estrogen dependent transiently immortalized myeloid precursor cells that can be differentiated to primary monocytes and granulocytes upon estrogen-withdrawal (Wang et al., 2006a), and show the physiologically high dynamics of S100A8 and S100A9 mRNA and protein expression during differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Wang et al., 2006a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "551e5567-d54a-4736-8093-2bdacb7dce1d",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C22",
+      "claim": "ER-Hoxb8 cells show the physiologically high dynamics of S100A8 and S100A9 mRNA and protein expression during differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "To overcome difficulties of artificial expression and malignant cell lines we used ER (estrogen-regulated) Hoxb8 cells, estrogen dependent transiently immortalized myeloid precursor cells that can be differentiated to primary monocytes and granulocytes upon estrogen-withdrawal (Wang et al., 2006a), and show the physiologically high dynamics of S100A8 and S100A9 mRNA and protein expression during differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by data in Figure 2A-B showing dramatic changes in expression during differentiation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "59e98ef7-68ea-4cd3-8c55-a2ee1ca92afc",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C23",
+      "claim": "The mouse GeCKO library contained six gRNAs per target gene.",
+      "claim_type": "EXPLICIT",
+      "source": "The used library contained a large mixture of CRISPR sgRNA constructs, where six gRNAs per target gene increase efficiency and enable the analysis of the molecular effects of many thousand genes in one experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental method used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "d31f2627-88d4-4daa-af7a-efeb7dfdb2ca",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C24",
+      "claim": "Cebpd was targeted by the highest number of three gRNAs within the top 20 hits from the CRISPR screen.",
+      "claim_type": "EXPLICIT",
+      "source": "The highest number of three gRNAs was found within the top 20 hits targeted Cebpd, a gene encoding for a member of the CCAAT/enhancer-binding protein family, C/EBP\u03b4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "f584a379-155a-4ce3-b151-683c1ad17e56",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C25",
+      "claim": "None of the transcription factors previously reported to target S100a8 and S100a9 were found within the hit list of the CRISPR KO library screen.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, none of the transcription factors previously reported to target S100a8 and S100a9 (Kuruto-Niwa et al., 1998; Fujiu et al., 2011; Lee et al., 2012; Liu et al., 2016; Yang et al., 2017) were found within the hit list of our CRISPR KO library screen (Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and references Figure 1\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "7fcbbfa8-f185-466b-a2aa-c9fea55b8c63",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C26",
+      "claim": "Deficiency of ATF3, STAT3, KLF5, IRF7, and C/EBP\u03b2 does not affect S100a8 and S100a9 expression during monocyte differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Deficiency of none of the stated candidate transcription factors affects S100a8 and S1009 expression during monocyte differentiation, whereas C/EBP\u03b4 deficiency had a strong attenuating effect on S100a8 and S100a9 expression, as shown on day 2 (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "fe171d5d-ba5c-4d18-90e3-ba48ecfeadd4",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C27",
+      "claim": "C/EBP\u03b4 deficiency had a strong attenuating effect on S100a8 and S100a9 expression on day 2 of differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Deficiency of none of the stated candidate transcription factors affects S100a8 and S1009 expression during monocyte differentiation, whereas C/EBP\u03b4 deficiency had a strong attenuating effect on S100a8 and S100a9 expression, as shown on day 2 (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "d03c6526-400f-4a67-a225-8bda490c2f1a",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C28",
+      "claim": "ER-Hoxb8-derived monocytes showed about 590-fold increase in S100a8 mRNA expression on day 2 compared to day 0 of differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "ER-Hoxb8-derived monocytes showed about 590-fold increase in S100a8 mRNA expression and about 1800-fold increase of S100a9 mRNA expression on day 2 compared to day 0 of differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "e71f9b50-57db-4297-ae0b-002dc3376392",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C29",
+      "claim": "ER-Hoxb8-derived monocytes showed about 1800-fold increase of S100a9 mRNA expression on day 2 compared to day 0 of differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "ER-Hoxb8-derived monocytes showed about 590-fold increase in S100a8 mRNA expression and about 1800-fold increase of S100a9 mRNA expression on day 2 compared to day 0 of differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "dc8a6e8f-d98c-4c96-bb9d-9e053ee2fb59",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C30",
+      "claim": "At day 5, S100a8 mRNA expression is about 70-fold downregulated compared to day 2 of differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "At day 5 the S100a8 mRNA expression is already about 70-fold and the S100a9 mRNA expression about 110-fold downregulated compared to day 2 of differentiation (Figure 2A, B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "2a2a9005-1d43-4d0d-959a-6ceb55572351",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C31",
+      "claim": "At day 5, S100a9 mRNA expression is about 110-fold downregulated compared to day 2 of differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "At day 5 the S100a8 mRNA expression is already about 70-fold and the S100a9 mRNA expression about 110-fold downregulated compared to day 2 of differentiation (Figure 2A, B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "9ca5c1e0-5ff2-429b-948c-2755d1f7814c",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C32",
+      "claim": "C/EBP\u03b4-deficient ER-Hoxb8 monocytes showed significantly reduced levels of S100a8 mRNA at the beginning of differentiation when S100a8 levels start to rise.",
+      "claim_type": "EXPLICIT",
+      "source": "Not only on differentiation day 3, but already at the very beginning of differentiation, when S100a8 and S100a9 levels start to rise, C/EBP\u03b4-deficient ER-Hoxb8 monocytes showed significantly reduced levels of both S100a8 (Figure 2A) and S100a9 (Figure 2B) mRNAs compared to wildtype (WT) controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "56f652fa-47f0-4047-81d1-2942cbe5db11",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C33",
+      "claim": "C/EBP\u03b4-deficient ER-Hoxb8 monocytes showed significantly reduced levels of S100a9 mRNA at the beginning of differentiation when S100a9 levels start to rise.",
+      "claim_type": "EXPLICIT",
+      "source": "Not only on differentiation day 3, but already at the very beginning of differentiation, when S100a8 and S100a9 levels start to rise, C/EBP\u03b4-deficient ER-Hoxb8 monocytes showed significantly reduced levels of both S100a8 (Figure 2A) and S100a9 (Figure 2B) mRNAs compared to wildtype (WT) controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "00ae1ca0-446e-4997-b713-068749ddd364",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C34",
+      "claim": "The same effect of C/EBP\u03b4 deficiency on S100a8 and S100a9 expression was detectable in C/EBP\u03b4-deficient ER-Hoxb8 cells differentiated into the neutrophilic lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "The same effect was detectable in C/EBP\u03b4-deficient ER-Hoxb8 cells that were differentiated into the neutrophilic lineage (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "7248abde-db39-4939-875c-39482150ba28",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C35",
+      "claim": "Cebpd and S100a8 and S100a9 mRNAs were co-expressed in differentiating WT monocytes and neutrophils.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, Cebpd and S100a8 and S100a9 mRNAs were co-expressed in differentiating WT monocytes and neutrophils, supporting a mechanistic connection (Figure 2\u2014figure supplement 1B, C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2\u2014figure supplement 1B, C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "1384a2b5-558f-4db2-b7ee-a6f5e0c9b35c",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C36",
+      "claim": "WT ER-Hoxb8 monocytes secreted significant S100A8/A9 protein amounts, whereas the supernatant of C/EBP\u03b4 KO cells contained up to 80% less S100A8/A9.",
+      "claim_type": "EXPLICIT",
+      "source": "WT ER-Hoxb8 monocytes secreted significant S100A8/A9 protein amounts, whereas the supernatant of C/EBP\u03b4 KO cells contained up to 80% less S100A8/A9 (Figure 2C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "63944e84-e647-4939-9010-5be85ab8e2cb",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C37",
+      "claim": "S100a8 and S100a9 expression was decreased upon C/EBP\u03b4 deletion in primary bone marrow-derived monocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, S100a8 and S100a9 expression was decreased upon C/EBP\u03b4 deletion in primary bone marrow-derived monocytes (Figure 2D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "b80f2cde-494b-42dc-88ba-5399bf970348",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C38",
+      "claim": "S100A8/A9 levels are locally increased in acute respiratory distress syndrome patients.",
+      "claim_type": "EXPLICIT",
+      "source": "S100A8/A9 levels are locally increased in acute respiratory distress syndrome patients (Lorenz et al., 2008) and have been shown to play a role in neutrophil recruitment during ALI in mice (Chakraborty et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Lorenz et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "a7b71461-940f-4a37-b46e-7eaf8c827365",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C39",
+      "claim": "S100A8/A9 plays a role in neutrophil recruitment during acute lung injury in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "S100A8/A9 levels are locally increased in acute respiratory distress syndrome patients (Lorenz et al., 2008) and have been shown to play a role in neutrophil recruitment during ALI in mice (Chakraborty et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Chakraborty et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "7db0e2cf-00d2-481c-b5ac-8c14a38b9233",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C40",
+      "claim": "Serum and bronchoalveolar lavage fluid from LPS-exposed mice showed highly increased S100A8/A9 levels compared to control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Serum and bronchoalveolar lavage fluid (BALF) from LPS-exposed mice showed highly increased S100A8/A9 levels compared to control mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2E, F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "69a20c82-3ada-4036-80c9-226bfaf91e34",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C41",
+      "claim": "In C/EBP\u03b4 KO mice, alarmin levels were systemically and locally decreased compared to WT mice at baseline and after LPS exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "In C/EBP\u03b4 KO mice, alarmin levels were systemically (serum) and locally (BALF) decreased compared to WT mice at baseline (NaCl) and after LPS exposure (Figure 2E, F), confirming our in vitro data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2E, F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "fc5bc48a-bc50-4b83-b421-6b05b7bd2622",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C42",
+      "claim": "In BALF, neutrophil recruitment was significantly decreased in LPS-exposed C/EBP\u03b4 KO mice in relation to WT littermates.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, in BALF neutrophil recruitment (Figure 2G), as well as in IL-1\u03b1 and IL-6, cytokine production was significantly decreased in LPS-exposed C/EBP\u03b4 KO mice in relation to WT littermates (TNF-\u03b1 shows a similar trend, Figure 2H-J), which highlights the impact of S100A8/A9 on the disease outcome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "7a8acf2f-b53b-4f3d-b9a0-f2893b1e07f1",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C43",
+      "claim": "IL-1\u03b1 and IL-6 cytokine production was significantly decreased in LPS-exposed C/EBP\u03b4 KO mice in relation to WT littermates.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, in BALF neutrophil recruitment (Figure 2G), as well as in IL-1\u03b1 and IL-6, cytokine production was significantly decreased in LPS-exposed C/EBP\u03b4 KO mice in relation to WT littermates (TNF-\u03b1 shows a similar trend, Figure 2H-J), which highlights the impact of S100A8/A9 on the disease outcome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2H-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "2c6373b8-9b99-4a5a-8060-e5730976d62e",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C44",
+      "claim": "Phagocytosis capacities were elevated in C/EBP\u03b4 KO monocytes when examined using FITC-coupled Latex Beads.",
+      "claim_type": "EXPLICIT",
+      "source": "Phagocytosis capacities, examined by using FITC-coupled Latex Beads (Figure 3A, B) and by using Staphylococcus aureus (Figure 3C, D), were even elevated in C/EBP\u03b4 KO monocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 3A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "fb9894e7-30a9-4e70-8f39-0d991129cbec",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C45",
+      "claim": "Phagocytosis capacities were elevated in C/EBP\u03b4 KO monocytes when examined using Staphylococcus aureus.",
+      "claim_type": "EXPLICIT",
+      "source": "Phagocytosis capacities, examined by using FITC-coupled Latex Beads (Figure 3A, B) and by using Staphylococcus aureus (Figure 3C, D), were even elevated in C/EBP\u03b4 KO monocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 3C, D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "ca163488-a8bf-4d6a-b515-099f603d25b7",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C46",
+      "claim": "Enhanced phagocytosis in C/EBP\u03b4 KO monocytes was accompanied by enhanced gene expression of phagocytosis-related PRRs such as Ptx3, CD209a, and Cd14.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations were accompanied by enhanced gene expression of phagocytosis-related PRRs, such as Ptx3, CD209a, and Cd14, in C/EBP\u03b4 KO monocytes (Figure 3\u2014figure supplement 1A, B, D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 3\u2014figure supplement 1A, B, D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "7026c2c2-4edc-4527-8656-0d84ffe82251",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C47",
+      "claim": "ROS production was not influenced by C/EBP\u03b4 deficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "ROS production was not influenced by C/EBP\u03b4 deficiency (Figure 3E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "8cae3bca-4461-4da6-869a-d14d876275ce",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C48",
+      "claim": "Analysis of differentiation kinetics revealed no exorbitant differences in the quantities of CD11b+Ly-6C+ between WT and C/EBP\u03b4 KO cells during differentiation of bone marrow-derived cells or ER-Hoxb8 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, analysis of differentiation kinetics revealed no exorbitant differences in the quantities of CD11b+Ly-6C+ between WT and C/EBP\u03b4 KO cells, neither during differentiation of bone marrow-derived cells (BMCs) nor of ER-Hoxb8 cells (Figure 3F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "9bfb252b-f41b-4e90-85f8-4606d7755cb3",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C49",
+      "claim": "Expression of M1-monocyte associated markers was only slightly decreased in LPS- and IFN-\u03b3-treated C/EBP\u03b4 KO monocytes in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas expression of M1-monocyte associated markers, such as Tnfa, Il6, Inos, Cd86, and Il1b, was only slightly decreased in LPS- and IFN-\u03b3-treated C/EBP\u03b4 KO monocytes in vitro (Figure 3\u2014figure supplement 2A), M2-associated Il10 expression was significantly decreased upon IL-4-stimulation in C/EBP\u03b4 KO cells confirming earlier results (Liu et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 3\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "e916cc54-3472-44a0-a058-5fa5bc57e465",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C50",
+      "claim": "M2-associated Il10 expression was significantly decreased upon IL-4-stimulation in C/EBP\u03b4 KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas expression of M1-monocyte associated markers, such as Tnfa, Il6, Inos, Cd86, and Il1b, was only slightly decreased in LPS- and IFN-\u03b3-treated C/EBP\u03b4 KO monocytes in vitro (Figure 3\u2014figure supplement 2A), M2-associated Il10 expression was significantly decreased upon IL-4-stimulation in C/EBP\u03b4 KO cells confirming earlier results (Liu et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section, shown in Figure 3\u2014figure supplement 2B, and supported by citation to Liu et al., 2003.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "b7c1e1b7-bc66-4f4f-ba58-0cd64ed5f93d",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C51",
+      "claim": "Decreased IL-10 expression was found in sera from LPS-treated and control C/EBP\u03b4 KO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Decreased IL-10 expression was also found in sera from LPS-treated and control C/EBP\u03b4 KO mice, whereas most other cytokine levels did not differ greatly between WT and C/EBP\u03b4 KO mice (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "f1c94db1-d209-4b0e-bb82-8419e0396bcb",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C52",
+      "claim": "Doxycycline treatment led to expression of the fusion protein 3xFlag-C/EBP\u03b4 in C/EBP\u03b4-deficient ER-Hoxb8 cells infected with lentiviral particles carrying a Tet-On system.",
+      "claim_type": "EXPLICIT",
+      "source": "Doxycycline treatment led to expression of the fusion protein 3xFlag-C/EBP\u03b4, as revealed by western blot analysis (Figure 4B) and by quantitative reverse transcription polymerase chain reaction (qRT-PCR) in comparison to C/EBP\u03b4-deficient cells (Figure 4C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 4B, C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "fc153a89-e19c-401c-a78c-6455a2830787",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C53",
+      "claim": "Induction of 3xFlag-C/EBP\u03b4 upon doxycycline treatment led to increased S100a8 and S100a9 mRNA levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Induction of 3xFlag-C/EBP\u03b4 upon doxycycline treatment led to increased S100a8 and S100a9 mRNA levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "3b6148db-9e76-4cf3-a78d-4d925c6f9c5b",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C54",
+      "claim": "Cebpd, S100a8, and S100a9 mRNA levels in doxycycline-treated TRE_3xFlag-C/EBP\u03b4 cells were comparable to WT cells at the same differentiation stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Cebpd, S100a8, and S100a9 mRNA levels in doxycycline-treated TRE_3xFlag-C/EBP\u03b4 cells were comparable to WT cells at the same differentiation stage (Figure 4D), demonstrating a positive effect of C/EBP\u03b4 expression on S100a8 and S100a9 regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "5a1656ed-180a-4d1d-96e2-c756beccb35d",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C55",
+      "claim": "KO of ATF3 in ER-Hoxb8 monocytes led to S100a8 and S100a9 overexpression, especially during early stages of differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "KO of ATF3, a known regulatory attenuator of Cebpd expression (Litvak et al., 2009), in ER-Hoxb8 monocytes led to S100a8 and S100a9 overexpression (Figure 4E, Figure 1\u2014figure supplement 1B), especially during early stages of differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section, shown in Figure 4E, and supported by citation to Litvak et al., 2009.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "8e22fc1a-f684-4f4a-ba30-2b4760ac538f",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C56",
+      "claim": "ATF3 KO cells showed significantly elevated cebpd level.",
+      "claim_type": "EXPLICIT",
+      "source": "ATF3 KO cells showed significantly elevated cebpd level, indicating a C/EBP\u03b4-mediated effect on the expression of S100a8 and S100a9 (Figure 4F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "c9ac7441-51e0-4fc5-a6b5-a4f3f32397da",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C57",
+      "claim": "Lack of FBXW7 resulted in an even higher overexpression of S100a8 and S100a9.",
+      "claim_type": "EXPLICIT",
+      "source": "Lack of this antagonist resulted in an even higher overexpression of S100a8 and S100a9 (Figure 4G) with huge increases of Cebpd levels (Figure 4H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "f68b51fb-3b3f-49ed-a340-c343d5993a7d",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C58",
+      "claim": "FBXW7-deficient monocytes showed huge increases of Cebpd levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Lack of this antagonist resulted in an even higher overexpression of S100a8 and S100a9 (Figure 4G) with huge increases of Cebpd levels (Figure 4H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "cb4649a2-6dd0-4db1-82ee-90cc6969659d",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C59",
+      "claim": "There is upregulation of S100A8, S100A9, and CEBPD in PBMCs of stable coronary artery disease/myocardial infarction cases, compared against controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we found upregulation of S100A8, S100A9, and CEBPD in PBMCs of stable coronary artery disease/myocardial infarction (sCAD/MI) cases, compared against controls (Figure 5A), together with a positive correlation of S100A8 and S100A9 expression with that of CEBPD in these cells (Figure 5B, C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "13f91f5c-994b-4d27-aa80-517c648452f9",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C60",
+      "claim": "There is a positive correlation of S100A8 and S100A9 expression with that of CEBPD in PBMCs of cardiovascular disease patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we found upregulation of S100A8, S100A9, and CEBPD in PBMCs of stable coronary artery disease/myocardial infarction (sCAD/MI) cases, compared against controls (Figure 5A), together with a positive correlation of S100A8 and S100A9 expression with that of CEBPD in these cells (Figure 5B, C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 5B, C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "7be8862a-0fe6-447d-beff-67e82077c38b",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C61",
+      "claim": "There is significant upregulation of S100A8, S100A9, and CEBPD specifically in classical monocytes, compared to intermediate and non-classical monocyte subpopulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, there was also significant upregulation of these three genes specifically in classical monocytes, compared to intermediate and non-classical monocyte subpopulations (Figure 5D, E, for further comparisons, see Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 5D, E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "67ec5852-8907-4e33-8815-fc1543dabd9b",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C62",
+      "claim": "There is a strong positive correlation between the expression of S100A8 and S100A9 and CEBPD in monocyte subpopulations.",
+      "claim_type": "EXPLICIT",
+      "source": "A strong positive correlation between the expression of S100A8 and S100A9 and CEBPD in these monocyte subpopulations was found, suggesting that the expression of these genes is mainly associated with the subset of proinflammatory monocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 5F, G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "1f8dc8b9-24ec-4077-9129-f199c6277ef3",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C63",
+      "claim": "There are significant negative correlations between the expression of CEBPD and its antagonists FBXW7 and ATF3 in monocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we also found significant albeit milder, negative correlations between the expression of CEBPD and its antagonists FBXW7 and ATF3 in monocytes (Figure 5F, G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 5F, G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "be195756-f8a5-4da6-96da-136d44f5a3c3",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C64",
+      "claim": "Chromatin immunoprecipitation revealed 3xFlag-C/EBP\u03b4 binding on S100a8 and S100a9 promoter regions just before or within the predicted enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromatin immunoprecipitation (ChIP) revealed 3xFlag-C/EBP\u03b4 binding on S100a8 and S100a9 promoter regions just before or within the predicted enhancers (Figure 6A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "90ad606d-6d05-4a12-b46d-a75f3608c902",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C65",
+      "claim": "Transfection of S100a8 reporter construct together with 3xFlag-C/EBP\u03b4 vector led to enhanced GFP expression upon doxycycline treatment in comparison to co-transfection with backbone plasmid.",
+      "claim_type": "EXPLICIT",
+      "source": "Transfection of either S100a8 reporter construct (Figure 6D) or S100a9 reporter construct (Figure 6F) together with 3xFlag-C/EBP\u03b4 vector led to enhanced GFP expression upon doxycycline treatment in comparison to co-transfection with backbone plasmid (TRE_ctrl).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "09acbaa8-716c-4859-86d2-40e298f77f7e",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C66",
+      "claim": "Transfection of S100a9 reporter construct together with 3xFlag-C/EBP\u03b4 vector led to enhanced GFP expression upon doxycycline treatment in comparison to co-transfection with backbone plasmid.",
+      "claim_type": "EXPLICIT",
+      "source": "Transfection of either S100a8 reporter construct (Figure 6D) or S100a9 reporter construct (Figure 6F) together with 3xFlag-C/EBP\u03b4 vector led to enhanced GFP expression upon doxycycline treatment in comparison to co-transfection with backbone plasmid (TRE_ctrl).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "6ce53e66-8bf9-4ab3-81b6-35f445503d0c",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C67",
+      "claim": "Two sites within the S100a8 promoter region (site 2 and site 3) caused a reduced or absent GFP expression upon co-transfection when deleted.",
+      "claim_type": "EXPLICIT",
+      "source": "Two sites within the S100a8 promoter region, stated as site 2 and site 3 (Figure 6E), and one within the S100a9 promoter region, stated as site 4 (Figure 6G), caused a reduced or absent GFP expression upon co-transfection when deleted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "272c677a-8357-4a1b-9cea-e44762dac385",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C68",
+      "claim": "One site within the S100a9 promoter region (site 4) caused a reduced or absent GFP expression upon co-transfection when deleted.",
+      "claim_type": "EXPLICIT",
+      "source": "Two sites within the S100a8 promoter region, stated as site 2 and site 3 (Figure 6E), and one within the S100a9 promoter region, stated as site 4 (Figure 6G), caused a reduced or absent GFP expression upon co-transfection when deleted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 6G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "daacb2da-a475-4ed6-9dc9-86f2c1181e2b",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C69",
+      "claim": "The functional C/EBP\u03b4-binding sites were located within the S100a8 and S100a9 promoter regions where C/EBP\u03b4 binding was confirmed by ChIP.",
+      "claim_type": "EXPLICIT",
+      "source": "These binding sites, in turn, were located within the S100a8 and S100a9 promoter regions where C/EBP\u03b4 binding was confirmed by ChIP (Figure 6A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and references Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "ea8554c0-9633-48c7-b774-970868203e76",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C70",
+      "claim": "ATAC-seq revealed over 1000 regions with differential peaks in all comparisons between precursor and differentiated WT and C/EBP\u03b4 KO ER-Hoxb8 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed over 1000 regions with differential peaks in all comparisons (Figure 7A and Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 7A and Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "f26ba477-0527-451c-9c81-de564e7eb0ec",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C71",
+      "claim": "Among the regions with significantly higher ATAC-seq reads in differentiated samples at day 3 of WT cells were the S100a8 and S100a9 promoter and enhancer locations.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the regions with significantly higher ATAC-seq reads in differentiated samples at day 3 of WT cells were the S100a8 and S100a9 promoter and enhancer locations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 7B, C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "00c1b95d-0bd3-45e6-a10a-cb36256bd853",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C72",
+      "claim": "Within S100a8 and S100a9 promoter regions, chromatin accessibility was significantly decreased in C/EBP\u03b4 KO in comparison to WT cells at day 3 of differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, within these regions chromatin accessibility was significantly decreased in C/EBP\u03b4 KO in comparison to WT cells at day 3 of differentiation (Figure 7B, C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 7B, C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "758d8d5a-97a0-4c2b-adc0-7d438435cf60",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C73",
+      "claim": "H3K27 acetylation was increased at differentiation day 3 in monocytes over precursor cells at S100a8 loci in both WT and C/EBP\u03b4 KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "H3K27 acetylation (H3K27ac), a marker for active transcription, was increased at differentiation day 3 in monocytes over precursor cells at S100a8 (Figure 7D) and S100a9 loci (Figure 7E) in both, WT and C/EBP\u03b4 KO cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "ba8e54f0-7ac4-4a38-af15-6fa9d37a3cbe",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C74",
+      "claim": "H3K27 acetylation was increased at differentiation day 3 in monocytes over precursor cells at S100a9 loci in both WT and C/EBP\u03b4 KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "H3K27 acetylation (H3K27ac), a marker for active transcription, was increased at differentiation day 3 in monocytes over precursor cells at S100a8 (Figure 7D) and S100a9 loci (Figure 7E) in both, WT and C/EBP\u03b4 KO cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "f6e2ea67-7019-4bc6-96d1-bf856b00868b",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C75",
+      "claim": "Tri-methylated H3K27 was overrepresented in precursor cells over differentiated cells at S100a8 and S100a9 loci in WT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, tri-methylated H3K27 (H3K27me3), associated with gene silencing, was overrepresented in precursor cells over differentiated cells at the same loci in WT cells, whereas H3K27me3 marks did not decrease over the course of differentiation in C/EBP\u03b4 KO cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 7F, G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "0e64b1a0-ba76-473a-bc82-14788682c1ec",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C76",
+      "claim": "H3K27me3 marks did not decrease over the course of differentiation in C/EBP\u03b4 KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, tri-methylated H3K27 (H3K27me3), associated with gene silencing, was overrepresented in precursor cells over differentiated cells at the same loci in WT cells, whereas H3K27me3 marks did not decrease over the course of differentiation in C/EBP\u03b4 KO cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 7F, G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "d55b8ba1-cd52-4532-aada-655e1368a9d6",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C77",
+      "claim": "Tri-methylated H3K27 was increased in C/EBP\u03b4 KO monocytes, compared to the WT counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, tri-methylated H3K27 was increased in C/EBP\u03b4 KO monocytes, compared to the WT counterparts (Figure 7F, G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 7F, G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "d8f00023-e7e6-442a-a486-42b103da3dd0",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C78",
+      "claim": "Erasure of tri-methylation and di-methylation at H3K27 is catalysed by the histone demethylase JMJD3.",
+      "claim_type": "EXPLICIT",
+      "source": "Erasure of tri-methylation and di-methylation at H3K27 is known to be catalysed by the histone demethylase JMJD3 (JmjC Domain-Containing Protein 3) (Xiang et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Xiang et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "f92a75aa-125b-4000-8217-3ec253aea138",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C79",
+      "claim": "Jmjd3 expression was decreased in differentiated C/EBP\u03b4 KO monocytes, compared to WT cells at the same stage.",
+      "claim_type": "EXPLICIT",
+      "source": "We found decreased expression of Jmjd3 in differentiated C/EBP\u03b4 KO monocytes, compared to WT cells at the same stage (Figure 8A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "42f4e183-6e31-4cd0-835e-02a596f20df5",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C80",
+      "claim": "GSK-J4 treatment significantly decreased S100a8 and S100a9 expression in WT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we used the potent JMJD3 inhibitor GSK-J4 (Kruidenier et al., 2012) to block H3K27 demethylation in differentiating ER-Hobx8 cells, and discovered significantly decreased S100a8 and S100a9 expression in GSK-J4-treated WT cells (Figure 8B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section, shown in Figure 8B, and supported by citation to Kruidenier et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "9e5f4299-b3ac-426d-b9e9-d1bcb89beea0",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C81",
+      "claim": "S100a8 and S100a9 mRNA quantities in GSK-J4-treated WT cells were comparable to untreated C/EBP\u03b4-deficient monocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "These mRNA quantities were comparable to untreated C/EBP\u03b4-deficient monocytes, whereas the effects on S100a8 and S100a9 expression in GSK-J4-treated C/EBP\u03b4-deficient monocytes, compared to the untreated counterparts, were negligible (Figure 7B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "54b2fe38-e92d-4bd4-884f-e5fb9f3c624f",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C82",
+      "claim": "The effects on S100a8 and S100a9 expression in GSK-J4-treated C/EBP\u03b4-deficient monocytes, compared to the untreated counterparts, were negligible.",
+      "claim_type": "EXPLICIT",
+      "source": "These mRNA quantities were comparable to untreated C/EBP\u03b4-deficient monocytes, whereas the effects on S100a8 and S100a9 expression in GSK-J4-treated C/EBP\u03b4-deficient monocytes, compared to the untreated counterparts, were negligible (Figure 7B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "7e983d6d-b3cb-4391-b971-bf18ae2193e6",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C83",
+      "claim": "GSK-J4 treatment increased H3K27me3 marks in WT monocytes at S100a8 promoter regions, compared to untreated WT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These effects of GSK-J4 on S100a8 and S100a9 expression are in line with increased H3K27me3 marks in GSK-J4-treated WT monocytes, compared to untreated WT cells on both, S100a8 (Figure 8C) and S100a9 (Figure 8D) promoter regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 8C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "d2de651d-28c6-4100-9672-8962d8977781",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C84",
+      "claim": "GSK-J4 treatment increased H3K27me3 marks in WT monocytes at S100a9 promoter regions, compared to untreated WT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These effects of GSK-J4 on S100a8 and S100a9 expression are in line with increased H3K27me3 marks in GSK-J4-treated WT monocytes, compared to untreated WT cells on both, S100a8 (Figure 8C) and S100a9 (Figure 8D) promoter regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 8D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "5c8a9420-8c6d-4fa4-b4ae-a9c013968b88",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C85",
+      "claim": "The ER-Hoxb8 cell system reflects reliably the differentiation of myeloid progenitor cells to bone marrow-derived monocytes and macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "The ER-Hoxb8 cell system serves as a substitute for murine primary cells of myeloid origin that can be differentiated into phagocytes, such as monocytes and neutrophils. It reflects reliably the differentiation of myeloid progenitor cells to bone marrow-derived monocytes and macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as an assessment of the cell system used.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "ab10cc99-6db6-4269-903e-1135b0c4d749",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C86",
+      "claim": "Serum concentrations of alarmins correlate with disease severity and activity in several inflammatory diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "The serum concentrations of alarmins correlate with disease severity and activity and, hence, they are reliable biomarkers for monitoring several inflammatory diseases (Foell et al., 2004; Ehrchen et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Foell et al., 2004 and Ehrchen et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "0e6dcf13-7be5-4b0e-9832-c6d6d73267aa",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C87",
+      "claim": "S100A8/A9 expression is the first predictive marker for disease relapses in juvenile rheumatoid arthritis patients.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of human RA, the expression and serum concentrations of S100A8/A9 correlate very well with disease activity and are the first predictive marker for disease relapses in juvenile patients, and of the responses to therapy in juvenile and adult patients (Moncrieffe et al., 2013; Choi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Moncrieffe et al., 2013 and Choi et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "9cadd1b3-dfc5-4969-b0eb-618ebcc8fd5e",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C88",
+      "claim": "In S100A9 KO mice, neutrophil recruitment in the lung was impeded in an acute lung inflammation model.",
+      "claim_type": "EXPLICIT",
+      "source": "In S100A9 KO mice, neutrophil recruitment in the lung was impeded when using the same mouse model (Chakraborty et al., 2017), suggesting that S100A8/A9 expression mediates effects of C/EBP\u03b4 as a key mediator of LPS-induced lung inflammation (Yan et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Chakraborty et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "7b690c5d-cedf-4ed8-a0cc-95c96eb201d2",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C89",
+      "claim": "C/EBP\u03b4 is a key mediator of LPS-induced lung inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "In S100A9 KO mice, neutrophil recruitment in the lung was impeded when using the same mouse model (Chakraborty et al., 2017), suggesting that S100A8/A9 expression mediates effects of C/EBP\u03b4 as a key mediator of LPS-induced lung inflammation (Yan et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Yan et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "2accf65b-428d-41d0-a094-259a82a1bf0d",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C90",
+      "claim": "C/EBP\u03b4 represents a promising target for modulation of inflammatory conditions that are characterized by S100a8 and S100a9 overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, C/EBP\u03b4 represents a promising target for modulation of inflammatory conditions that are characterized by S100a8 and S100a9 overexpression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a conclusion drawn from the study findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "70218999-2bd1-4991-a56f-2e47d565e1f8",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C91",
+      "claim": "C/EBP\u03b4 binding to specific sites on S100a8 and S100a9 promoter regions induces changes in chromatin accessibility via JMJD3-mediated demethylation of H3K27me3 marks.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the transcription factor C/EBP\u03b4 drives expression of the abundant alarmins S100A8 and S100A9, and demonstrated that C/EBP\u03b4 binding to specific sites on S100a8 and S100a9 promoter regions also induced changes in chromatin accessibility via JMJD3-mediated demethylation of H3K27me3 marks, which includes a so far unknown link.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Conclusion section and supported by data in Figures 6-8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "3de53b13-5b30-4242-8692-45eb22e57c9f",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "claim_id": "C92",
+      "claim": "The link between C/EBP\u03b4 and JMJD3-mediated demethylation of H3K27me3 was previously unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the transcription factor C/EBP\u03b4 drives expression of the abundant alarmins S100A8 and S100A9, and demonstrated that C/EBP\u03b4 binding to specific sites on S100a8 and S100a9 promoter regions also induced changes in chromatin accessibility via JMJD3-mediated demethylation of H3K27me3 marks, which includes a so far unknown link.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Conclusion section as a novel finding of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "edbd4400-cc1d-40dc-927e-88bc5358e06e",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "C/EBP\u03b4 was identified as a central regulator of S100a8 and S100a9 expression through an unbiased genome-wide CRISPR/Cas9 knockout screening approach in murine monocytes. Cebpd was the top hit with three gRNAs enriched, and previously reported transcription factors (ATF3, STAT3, KLF5, IRF7, C/EBP\u03b2) did not affect S100 expression or appear in the screen results.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The CRISPR screen methodology is well-described (C23, C24), with appropriate controls including validation that previously reported regulators had no effect (C25, C26). The identification of C/EBP\u03b4 is supported by multiple independent gRNAs and functional validation showing strong attenuation of S100 expression (C27). The screening approach appears robust with proper gating and validation steps.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "999fea87-8b0f-4d92-9baa-df1bd76f2d5d",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "C/EBP\u03b4 deficiency significantly reduces S100a8 and S100a9 expression during monocyte differentiation in vitro. ER-Hoxb8 cells show dramatic upregulation of S100a8 (~590-fold) and S100a9 (~1800-fold) by day 2, followed by downregulation by day 5. C/EBP\u03b4 KO cells show significantly reduced S100 expression throughout differentiation in both monocytes and neutrophils, with up to 80% reduction in secreted protein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The claims are well-supported by qRT-PCR data across multiple time points (C28-C33), protein measurements (C36), and validation in both ER-Hoxb8 cells and primary bone marrow-derived monocytes (C37). The co-expression of Cebpd with S100a8/a9 (C35) and effects in both monocytic and neutrophilic lineages (C34) strengthen the mechanistic connection. Sample sizes appear adequate (n=3-8) with statistical significance reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "7e69bdc5-1eed-4d4a-a73b-801250eff4e8",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In a mouse model of acute lung inflammation, C/EBP\u03b4 KO mice show decreased S100A8/A9 expression, reduced neutrophil recruitment, and decreased cytokine production (IL-1\u03b1 and IL-6) compared to WT mice following LPS exposure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The in vivo data demonstrate functional consequences of C/EBP\u03b4 deficiency with measurements in both serum and BALF (C40, C41). Neutrophil recruitment (C42) and cytokine levels (C43) are significantly decreased in KO mice. Sample sizes are adequate (WT: n=9, KO: n=11 for LPS; controls n=3-6) with appropriate statistical testing. The results are consistent with the in vitro findings and establish physiological relevance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "394dc031-831c-4a5d-8fb0-9bd9858aa428",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "C/EBP\u03b4 deficiency does not impair general inflammatory functions of monocytes. C/EBP\u03b4 KO cells show enhanced phagocytosis, unchanged ROS production, normal differentiation kinetics, and only slightly decreased M1 markers, though M2-associated IL-10 expression is significantly reduced.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The claims demonstrate specificity of C/EBP\u03b4 effects on S100 expression rather than global inflammatory dysfunction. Multiple functional assays support this: phagocytosis is enhanced (C44, C45), ROS is unchanged (C47), differentiation markers are similar (C48), and M1 responses are only slightly affected (C49). The decreased IL-10 (C50, C51) is consistent with prior literature (cited Liu et al., 2003). This specificity strengthens the main findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "62455d7b-f890-4c6b-bb31-125e6e303e98",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Inducible expression of C/EBP\u03b4 rescues S100a8 and S100a9 expression in C/EBP\u03b4-deficient cells, and knockout of C/EBP\u03b4 antagonists (ATF3 and FBXW7) leads to increased S100 expression through elevated Cebpd levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The gain-of-function experiment with doxycycline-inducible C/EBP\u03b4 (C52-C54) provides strong evidence for causality. The antagonist experiments (C55-C58) further support the regulatory network, with ATF3 KO and FBXW7 KO showing increased S100 expression correlated with elevated Cebpd. The use of known C/EBP\u03b4 regulators (cited Litvak et al., 2009; Balamurugan et al., 2013) strengthens the mechanistic model. Sample sizes appear adequate (n=3-4).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "acf8f1a2-25db-4db2-8741-814a2779b330",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The C/EBP\u03b4-S100A8/A9 regulatory network is clinically relevant in human cardiovascular disease. CEBPD, S100A8, and S100A9 are upregulated in PBMCs from sCAD/MI patients, show positive correlations with each other, and are specifically elevated in classical (proinflammatory) monocytes. Negative correlations exist between CEBPD and its antagonists (FBXW7, ATF3).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The human data from the BioNRW Study provide translational validation with adequate sample sizes (n=72 for PBMCs, n=26 for monocyte subpopulations). RNA-seq shows significant differential expression (adjusted p-values provided) and strong correlations (r=0.637-0.891 for positive correlations). The cell-type specificity to classical monocytes (C61) and inverse correlations with antagonists (C63) are consistent with the murine mechanistic data. Statistical methods appear appropriate with multiple testing correction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "8b79bd8b-ce3d-4cea-a5f6-28ca2c1c4fec",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "C/EBP\u03b4 binds to specific sites within S100a8 and S100a9 promoter regions. ChIP identified binding sites, and reporter assays with site-directed mutagenesis revealed functional C/EBP\u03b4-binding sites: two sites (site 2 and site 3) in the S100a8 promoter and one site (site 4) in the S100a9 promoter are required for C/EBP\u03b4-mediated transcriptional activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The direct binding is demonstrated by ChIP (C64) and functional relevance confirmed by reporter assays (C65, C66). The site-directed mutagenesis experiments (C67, C68) identify specific required binding sites that overlap with ChIP-confirmed regions (C69). The use of both gain-of-function (doxycycline-inducible C/EBP\u03b4) and loss-of-function (site deletion) approaches provides strong evidence. Sample sizes are adequate (n=4-5 for reporter assays, n=3 for ChIP).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "7b699aae-55dd-4f62-a878-b4ffda2e6410",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Chromatin accessibility and histone modifications at S100a8 and S100a9 promoters are regulated by C/EBP\u03b4. ATAC-seq revealed increased accessibility at S100 promoters during differentiation in WT but not C/EBP\u03b4 KO cells. H3K27ac increases during differentiation in both genotypes, but H3K27me3 decreases only in WT cells, remaining elevated in C/EBP\u03b4 KO monocytes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The epigenetic data are comprehensive with ATAC-seq showing >1000 differential peaks (C70) and specific changes at S100 loci (C71, C72). ChIP experiments for histone marks (C73-C77) reveal that while activating marks (H3K27ac) increase in both genotypes, repressive marks (H3K27me3) fail to decrease in C/EBP\u03b4 KO cells. This differential pattern provides mechanistic insight. Sample sizes are adequate (n=3-6) with appropriate statistical testing. The integration of chromatin accessibility and histone modification data is a strength.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "55069546-1543-443a-9b5b-c4529d8d0761",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "C/EBP\u03b4-dependent JMJD3-mediated demethylation of H3K27me3 is required for S100a8 and S100a9 expression. Jmjd3 expression is decreased in C/EBP\u03b4 KO cells, and pharmacological inhibition of JMJD3 with GSK-J4 reduces S100 expression in WT cells to levels comparable to C/EBP\u03b4 KO cells, with increased H3K27me3 at S100 promoters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The mechanistic link between C/EBP\u03b4 and JMJD3 is supported by multiple lines of evidence: decreased Jmjd3 expression in KO cells (C79), pharmacological inhibition phenocopying the KO (C80, C81), lack of additional effect in KO cells (C82), and increased H3K27me3 with inhibitor treatment (C83, C84). The claim of a previously unknown link (C92) appears justified as no prior connection is cited. Sample sizes are adequate (n=3-5). The integration with histone modification data strengthens the model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "bf2c2a11-b2a7-412e-9f20-43b3e619d1fb",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "S100A8 and S100A9 are highly abundant in neutrophils (up to 40% of soluble protein) and monocytes (about 5%), but are completely silenced after differentiation to macrophages. ER-Hoxb8 cells recapitulate this physiologically high dynamic expression pattern.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The claims about S100A8/A9 abundance (C1, C10, C11) are supported by citation to Hessian et al., 1993. The silencing in macrophages (C2, C12) is consistent with established knowledge and supported by the differentiation data shown (C22). The ER-Hoxb8 system validation is important for establishing the model's relevance. These are primarily background/validation claims rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "89ca7caa-b966-491d-a638-27347185964e",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "S100a8 and S100a9 expression is controlled by C/EBP\u03b4 antagonists ATF3 and FBXW7. Knockout of these antagonists leads to S100 overexpression with elevated Cebpd levels, with FBXW7 KO showing stronger effects than ATF3 KO.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The antagonist data (C55-C58) are well-supported with appropriate citations to prior work establishing ATF3 and FBXW7 as C/EBP\u03b4 regulators. The functional validation shows increased S100 expression and elevated Cebpd in both KO lines, with FBXW7 showing stronger effects. This is consistent with the regulatory model and provides additional validation of the C/EBP\u03b4-S100 axis. Sample sizes appear adequate (n=3-4).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    },
+    {
+      "id": "1ee56caa-d2b3-4c56-8f0e-95ad77346585",
+      "content_id": "3861dbea-457c-445d-a35a-578e39fe517e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "S100A8 and S100A9 are controlled by highly dynamic promoters in myeloid cells, and despite prior reports of potential transcription factors, their functional relevance remained unresolved. C/EBP\u03b4 represents a promising therapeutic target for inflammatory conditions characterized by S100 overexpression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The claim about dynamic promoters (C13) is an inference rather than directly demonstrated. The assessment of prior work (C20) is supported by citations but the dismissal of these factors may be model-specific (ER-Hoxb8 cells). The therapeutic potential claim (C90) is speculative and not directly tested. While the biomedical relevance is supported by the cardiovascular disease data and mouse inflammation model, actual therapeutic validation would require intervention studies. The ER-Hoxb8 model validation (C85) is appropriate but limited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:55:36.000180Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c8d7e585-8c70-418d-9e8a-a4fc93909827",
+      "result_id": "edbd4400-cc1d-40dc-927e-88bc5358e06e"
+    },
+    {
+      "claim_id": "d31f2627-88d4-4daa-af7a-efeb7dfdb2ca",
+      "result_id": "edbd4400-cc1d-40dc-927e-88bc5358e06e"
+    },
+    {
+      "claim_id": "f584a379-155a-4ce3-b151-683c1ad17e56",
+      "result_id": "edbd4400-cc1d-40dc-927e-88bc5358e06e"
+    },
+    {
+      "claim_id": "7fcbbfa8-f185-466b-a2aa-c9fea55b8c63",
+      "result_id": "edbd4400-cc1d-40dc-927e-88bc5358e06e"
+    },
+    {
+      "claim_id": "fe171d5d-ba5c-4d18-90e3-ba48ecfeadd4",
+      "result_id": "edbd4400-cc1d-40dc-927e-88bc5358e06e"
+    },
+    {
+      "claim_id": "d03c6526-400f-4a67-a225-8bda490c2f1a",
+      "result_id": "999fea87-8b0f-4d92-9baa-df1bd76f2d5d"
+    },
+    {
+      "claim_id": "e71f9b50-57db-4297-ae0b-002dc3376392",
+      "result_id": "999fea87-8b0f-4d92-9baa-df1bd76f2d5d"
+    },
+    {
+      "claim_id": "dc8a6e8f-d98c-4c96-bb9d-9e053ee2fb59",
+      "result_id": "999fea87-8b0f-4d92-9baa-df1bd76f2d5d"
+    },
+    {
+      "claim_id": "2a2a9005-1d43-4d0d-959a-6ceb55572351",
+      "result_id": "999fea87-8b0f-4d92-9baa-df1bd76f2d5d"
+    },
+    {
+      "claim_id": "9ca5c1e0-5ff2-429b-948c-2755d1f7814c",
+      "result_id": "999fea87-8b0f-4d92-9baa-df1bd76f2d5d"
+    },
+    {
+      "claim_id": "56f652fa-47f0-4047-81d1-2942cbe5db11",
+      "result_id": "999fea87-8b0f-4d92-9baa-df1bd76f2d5d"
+    },
+    {
+      "claim_id": "00ae1ca0-446e-4997-b713-068749ddd364",
+      "result_id": "999fea87-8b0f-4d92-9baa-df1bd76f2d5d"
+    },
+    {
+      "claim_id": "7248abde-db39-4939-875c-39482150ba28",
+      "result_id": "999fea87-8b0f-4d92-9baa-df1bd76f2d5d"
+    },
+    {
+      "claim_id": "1384a2b5-558f-4db2-b7ee-a6f5e0c9b35c",
+      "result_id": "999fea87-8b0f-4d92-9baa-df1bd76f2d5d"
+    },
+    {
+      "claim_id": "63944e84-e647-4939-9010-5be85ab8e2cb",
+      "result_id": "999fea87-8b0f-4d92-9baa-df1bd76f2d5d"
+    },
+    {
+      "claim_id": "29e463d4-ce50-4e2a-b2bb-7c40e625fb69",
+      "result_id": "7e69bdc5-1eed-4d4a-a73b-801250eff4e8"
+    },
+    {
+      "claim_id": "96614ac2-9fac-4e61-907a-9b5a237dec48",
+      "result_id": "7e69bdc5-1eed-4d4a-a73b-801250eff4e8"
+    },
+    {
+      "claim_id": "7db0e2cf-00d2-481c-b5ac-8c14a38b9233",
+      "result_id": "7e69bdc5-1eed-4d4a-a73b-801250eff4e8"
+    },
+    {
+      "claim_id": "69a20c82-3ada-4036-80c9-226bfaf91e34",
+      "result_id": "7e69bdc5-1eed-4d4a-a73b-801250eff4e8"
+    },
+    {
+      "claim_id": "fc5bc48a-bc50-4b83-b421-6b05b7bd2622",
+      "result_id": "7e69bdc5-1eed-4d4a-a73b-801250eff4e8"
+    },
+    {
+      "claim_id": "7a8acf2f-b53b-4f3d-b9a0-f2893b1e07f1",
+      "result_id": "7e69bdc5-1eed-4d4a-a73b-801250eff4e8"
+    },
+    {
+      "claim_id": "2c6373b8-9b99-4a5a-8060-e5730976d62e",
+      "result_id": "394dc031-831c-4a5d-8fb0-9bd9858aa428"
+    },
+    {
+      "claim_id": "fb9894e7-30a9-4e70-8f39-0d991129cbec",
+      "result_id": "394dc031-831c-4a5d-8fb0-9bd9858aa428"
+    },
+    {
+      "claim_id": "ca163488-a8bf-4d6a-b515-099f603d25b7",
+      "result_id": "394dc031-831c-4a5d-8fb0-9bd9858aa428"
+    },
+    {
+      "claim_id": "7026c2c2-4edc-4527-8656-0d84ffe82251",
+      "result_id": "394dc031-831c-4a5d-8fb0-9bd9858aa428"
+    },
+    {
+      "claim_id": "8cae3bca-4461-4da6-869a-d14d876275ce",
+      "result_id": "394dc031-831c-4a5d-8fb0-9bd9858aa428"
+    },
+    {
+      "claim_id": "9bfb252b-f41b-4e90-85f8-4606d7755cb3",
+      "result_id": "394dc031-831c-4a5d-8fb0-9bd9858aa428"
+    },
+    {
+      "claim_id": "e916cc54-3472-44a0-a058-5fa5bc57e465",
+      "result_id": "394dc031-831c-4a5d-8fb0-9bd9858aa428"
+    },
+    {
+      "claim_id": "b7c1e1b7-bc66-4f4f-ba58-0cd64ed5f93d",
+      "result_id": "394dc031-831c-4a5d-8fb0-9bd9858aa428"
+    },
+    {
+      "claim_id": "f1c94db1-d209-4b0e-bb82-8419e0396bcb",
+      "result_id": "62455d7b-f890-4c6b-bb31-125e6e303e98"
+    },
+    {
+      "claim_id": "fc153a89-e19c-401c-a78c-6455a2830787",
+      "result_id": "62455d7b-f890-4c6b-bb31-125e6e303e98"
+    },
+    {
+      "claim_id": "3b6148db-9e76-4cf3-a78d-4d925c6f9c5b",
+      "result_id": "62455d7b-f890-4c6b-bb31-125e6e303e98"
+    },
+    {
+      "claim_id": "5a1656ed-180a-4d1d-96e2-c756beccb35d",
+      "result_id": "62455d7b-f890-4c6b-bb31-125e6e303e98"
+    },
+    {
+      "claim_id": "8e22fc1a-f684-4f4a-ba30-2b4760ac538f",
+      "result_id": "62455d7b-f890-4c6b-bb31-125e6e303e98"
+    },
+    {
+      "claim_id": "c9ac7441-51e0-4fc5-a6b5-a4f3f32397da",
+      "result_id": "62455d7b-f890-4c6b-bb31-125e6e303e98"
+    },
+    {
+      "claim_id": "f68b51fb-3b3f-49ed-a340-c343d5993a7d",
+      "result_id": "62455d7b-f890-4c6b-bb31-125e6e303e98"
+    },
+    {
+      "claim_id": "cb4649a2-6dd0-4db1-82ee-90cc6969659d",
+      "result_id": "acf8f1a2-25db-4db2-8741-814a2779b330"
+    },
+    {
+      "claim_id": "13f91f5c-994b-4d27-aa80-517c648452f9",
+      "result_id": "acf8f1a2-25db-4db2-8741-814a2779b330"
+    },
+    {
+      "claim_id": "7be8862a-0fe6-447d-beff-67e82077c38b",
+      "result_id": "acf8f1a2-25db-4db2-8741-814a2779b330"
+    },
+    {
+      "claim_id": "67ec5852-8907-4e33-8815-fc1543dabd9b",
+      "result_id": "acf8f1a2-25db-4db2-8741-814a2779b330"
+    },
+    {
+      "claim_id": "1f8dc8b9-24ec-4077-9129-f199c6277ef3",
+      "result_id": "acf8f1a2-25db-4db2-8741-814a2779b330"
+    },
+    {
+      "claim_id": "e94a92b7-6488-4fc2-81d6-40d31443c556",
+      "result_id": "acf8f1a2-25db-4db2-8741-814a2779b330"
+    },
+    {
+      "claim_id": "855d59aa-3703-4541-aeac-4c2d8e55dff9",
+      "result_id": "8b79bd8b-ce3d-4cea-a5f6-28ca2c1c4fec"
+    },
+    {
+      "claim_id": "be195756-f8a5-4da6-96da-136d44f5a3c3",
+      "result_id": "8b79bd8b-ce3d-4cea-a5f6-28ca2c1c4fec"
+    },
+    {
+      "claim_id": "90ad606d-6d05-4a12-b46d-a75f3608c902",
+      "result_id": "8b79bd8b-ce3d-4cea-a5f6-28ca2c1c4fec"
+    },
+    {
+      "claim_id": "09acbaa8-716c-4859-86d2-40e298f77f7e",
+      "result_id": "8b79bd8b-ce3d-4cea-a5f6-28ca2c1c4fec"
+    },
+    {
+      "claim_id": "6ce53e66-8bf9-4ab3-81b6-35f445503d0c",
+      "result_id": "8b79bd8b-ce3d-4cea-a5f6-28ca2c1c4fec"
+    },
+    {
+      "claim_id": "272c677a-8357-4a1b-9cea-e44762dac385",
+      "result_id": "8b79bd8b-ce3d-4cea-a5f6-28ca2c1c4fec"
+    },
+    {
+      "claim_id": "daacb2da-a475-4ed6-9dc9-86f2c1181e2b",
+      "result_id": "8b79bd8b-ce3d-4cea-a5f6-28ca2c1c4fec"
+    },
+    {
+      "claim_id": "ea8554c0-9633-48c7-b774-970868203e76",
+      "result_id": "7b699aae-55dd-4f62-a878-b4ffda2e6410"
+    },
+    {
+      "claim_id": "f26ba477-0527-451c-9c81-de564e7eb0ec",
+      "result_id": "7b699aae-55dd-4f62-a878-b4ffda2e6410"
+    },
+    {
+      "claim_id": "00c1b95d-0bd3-45e6-a10a-cb36256bd853",
+      "result_id": "7b699aae-55dd-4f62-a878-b4ffda2e6410"
+    },
+    {
+      "claim_id": "758d8d5a-97a0-4c2b-adc0-7d438435cf60",
+      "result_id": "7b699aae-55dd-4f62-a878-b4ffda2e6410"
+    },
+    {
+      "claim_id": "ba8e54f0-7ac4-4a38-af15-6fa9d37a3cbe",
+      "result_id": "7b699aae-55dd-4f62-a878-b4ffda2e6410"
+    },
+    {
+      "claim_id": "f6e2ea67-7019-4bc6-96d1-bf856b00868b",
+      "result_id": "7b699aae-55dd-4f62-a878-b4ffda2e6410"
+    },
+    {
+      "claim_id": "0e64b1a0-ba76-473a-bc82-14788682c1ec",
+      "result_id": "7b699aae-55dd-4f62-a878-b4ffda2e6410"
+    },
+    {
+      "claim_id": "d55b8ba1-cd52-4532-aada-655e1368a9d6",
+      "result_id": "7b699aae-55dd-4f62-a878-b4ffda2e6410"
+    },
+    {
+      "claim_id": "0ad47b4e-6c46-441f-a51e-4581e5edcd2b",
+      "result_id": "55069546-1543-443a-9b5b-c4529d8d0761"
+    },
+    {
+      "claim_id": "d8f00023-e7e6-442a-a486-42b103da3dd0",
+      "result_id": "55069546-1543-443a-9b5b-c4529d8d0761"
+    },
+    {
+      "claim_id": "f92a75aa-125b-4000-8217-3ec253aea138",
+      "result_id": "55069546-1543-443a-9b5b-c4529d8d0761"
+    },
+    {
+      "claim_id": "42f4e183-6e31-4cd0-835e-02a596f20df5",
+      "result_id": "55069546-1543-443a-9b5b-c4529d8d0761"
+    },
+    {
+      "claim_id": "9e5f4299-b3ac-426d-b9e9-d1bcb89beea0",
+      "result_id": "55069546-1543-443a-9b5b-c4529d8d0761"
+    },
+    {
+      "claim_id": "54b2fe38-e92d-4bd4-884f-e5fb9f3c624f",
+      "result_id": "55069546-1543-443a-9b5b-c4529d8d0761"
+    },
+    {
+      "claim_id": "7e983d6d-b3cb-4391-b971-bf18ae2193e6",
+      "result_id": "55069546-1543-443a-9b5b-c4529d8d0761"
+    },
+    {
+      "claim_id": "d2de651d-28c6-4100-9672-8962d8977781",
+      "result_id": "55069546-1543-443a-9b5b-c4529d8d0761"
+    },
+    {
+      "claim_id": "70218999-2bd1-4991-a56f-2e47d565e1f8",
+      "result_id": "55069546-1543-443a-9b5b-c4529d8d0761"
+    },
+    {
+      "claim_id": "b4474bd7-ea45-484f-bf35-0b57baeb100a",
+      "result_id": "bf2c2a11-b2a7-412e-9f20-43b3e619d1fb"
+    },
+    {
+      "claim_id": "9aad91b8-5927-4a06-9d60-a852ebc38d88",
+      "result_id": "bf2c2a11-b2a7-412e-9f20-43b3e619d1fb"
+    },
+    {
+      "claim_id": "8cb962d7-8fec-4045-92ba-516a2b8d9b63",
+      "result_id": "bf2c2a11-b2a7-412e-9f20-43b3e619d1fb"
+    },
+    {
+      "claim_id": "769dfe5f-8873-4665-86bc-e640c32e5c6f",
+      "result_id": "bf2c2a11-b2a7-412e-9f20-43b3e619d1fb"
+    },
+    {
+      "claim_id": "1765d755-922d-4469-b6e5-3504e1b1782c",
+      "result_id": "bf2c2a11-b2a7-412e-9f20-43b3e619d1fb"
+    },
+    {
+      "claim_id": "551e5567-d54a-4736-8093-2bdacb7dce1d",
+      "result_id": "bf2c2a11-b2a7-412e-9f20-43b3e619d1fb"
+    },
+    {
+      "claim_id": "bc8465b5-cd16-423b-a702-2ac5f7b3d029",
+      "result_id": "89ca7caa-b966-491d-a638-27347185964e"
+    },
+    {
+      "claim_id": "5a1656ed-180a-4d1d-96e2-c756beccb35d",
+      "result_id": "89ca7caa-b966-491d-a638-27347185964e"
+    },
+    {
+      "claim_id": "8e22fc1a-f684-4f4a-ba30-2b4760ac538f",
+      "result_id": "89ca7caa-b966-491d-a638-27347185964e"
+    },
+    {
+      "claim_id": "c9ac7441-51e0-4fc5-a6b5-a4f3f32397da",
+      "result_id": "89ca7caa-b966-491d-a638-27347185964e"
+    },
+    {
+      "claim_id": "f68b51fb-3b3f-49ed-a340-c343d5993a7d",
+      "result_id": "89ca7caa-b966-491d-a638-27347185964e"
+    },
+    {
+      "claim_id": "191b2f2f-ab6e-4f15-a922-30e17699e405",
+      "result_id": "1ee56caa-d2b3-4c56-8f0e-95ad77346585"
+    },
+    {
+      "claim_id": "19bd8fb8-a7e7-47b6-b89a-d312139af163",
+      "result_id": "1ee56caa-d2b3-4c56-8f0e-95ad77346585"
+    },
+    {
+      "claim_id": "5c8a9420-8c6d-4fa4-b4ae-a9c013968b88",
+      "result_id": "1ee56caa-d2b3-4c56-8f0e-95ad77346585"
+    },
+    {
+      "claim_id": "ab10cc99-6db6-4269-903e-1135b0c4d749",
+      "result_id": "1ee56caa-d2b3-4c56-8f0e-95ad77346585"
+    },
+    {
+      "claim_id": "0e6dcf13-7be5-4b0e-9832-c6d6d73267aa",
+      "result_id": "1ee56caa-d2b3-4c56-8f0e-95ad77346585"
+    },
+    {
+      "claim_id": "2accf65b-428d-41d0-a094-259a82a1bf0d",
+      "result_id": "1ee56caa-d2b3-4c56-8f0e-95ad77346585"
+    }
+  ],
+  "comparisons": []
+}

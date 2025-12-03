@@ -1,0 +1,388 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C8"
+    ],
+    "result": "The study identified 7,406 SARS-CoV-2 positive samples from 6,600 individuals tested at the PHE CMPHL in Cambridge between February 26 and May 10, 2020. Care home residency status was determined for 6,413 individuals (97.2%), with 187 cases having missing address data. The study population represented approximately half of COVID-19 cases diagnosed in the East of England during this period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 and C8 provide consistent data on sample collection, testing location, and population coverage. The numbers are internally consistent (6,413 + 187 = 6,600), and the methodology for determining care home status is described. The comparison with regional data (C8) provides external validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C14",
+      "C15"
+    ],
+    "result": "Among the study population, 1,167 individuals (18.2%) were identified as care home residents from 337 care homes across the East of England, with the majority located in five counties. The distribution of cases per care home was highly skewed, with a median of 2 cases per home (range 1-22), and the top 10 care homes (3%) containing 14.1% of all care home cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12, C14-C15 provide consistent descriptive statistics about care home residents and facilities. The data show appropriate detail about geographic distribution, care home types, and case distribution. The skewed distribution is well-documented with specific statistics, and comparison with regional outbreak data provides context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13"
+    ],
+    "result": "Care home residents were significantly older than non-care home residents, with median ages of 86 years versus 65 years respectively (p<10\u207b\u2075, Wilcoxon rank sum test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C13 reports an appropriate statistical test (Wilcoxon rank sum test) for comparing age distributions between two groups. The highly significant p-value and large difference in median ages (21 years) support the conclusion. The test choice is appropriate for potentially non-normal age distributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "Genome sequence data were available for 700 care home residents (60.0%) from 292 care homes. The median pairwise SNP difference was 8 for care home genomes compared to 9 for randomly selected non-care home samples (p=0.95, Wilcoxon rank sum test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 provide clear data on genomic sequencing coverage and genetic diversity. The non-significant p-value (0.95) appropriately indicates no difference in genetic diversity between care home and non-care home samples, supporting the interpretation that similar viral lineages circulated in both settings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The proportion of viral lineage B.1.1 increased over the study period in both care home and non-care home residents, consistent with European trends. SARS-CoV-2 lineages in care homes were similar to those outside care homes, with samples intermixed on phylogenetic trees, suggesting viral transmission between settings. No new viral lineages from outside the UK were observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 present consistent phylogenetic evidence supported by visual data (Figure 5, Table 5, Figure 6A). The observation of lineage B.1.1 increase is contextualized with European data (C19), and the phylogenetic intermixing (C21) appropriately supports bidirectional transmission. The absence of new lineages (C22) is a clear observational finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23"
+    ],
+    "result": "The absence of new viral lineages from outside the UK may reflect the success of travel restrictions in limiting introductions of new lineages into the general population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C23 is explicitly speculative (\"may reflect\") and lacks supporting evidence to establish causation between travel restrictions and the absence of new lineages. Alternative explanations (e.g., sampling limitations, timing of restrictions relative to viral spread) are not considered. This interpretation requires additional data to be supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Among the 10 care homes with the largest number of genomes (14.6% of all samples), some showed all cases clustering closely on phylogenetic trees with 0-1 SNP differences (consistent with single outbreaks), while others were polyphyletic with cases distributed across the tree (consistent with multiple independent introductions).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 describe two distinct patterns of viral transmission in care homes, supported by phylogenetic analysis (Figure 6). The interpretation of monophyletic clusters as single outbreaks and polyphyletic patterns as multiple introductions is consistent with phylogenetic principles and the cited outbreak definition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The transcluster algorithm identified 409 transmission clusters from 292 care homes (median 1 cluster per home, range 1-4). Within clusters, 86.8% of pairwise links had 0-1 SNP differences and 97.5% were sampled <14 days apart. The date range from first to last case was significantly shorter for clusters (median 5 days) than for care homes overall (median 9 days) (p<10\u207b\u2075).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32 provide detailed characterization of transmission clusters with consistent statistics. The transcluster algorithm parameters are described in methods, and the temporal and genetic characteristics of clusters are well-documented. The significant difference in date ranges (C32) appropriately demonstrates that clusters represent temporally tighter groupings than care homes overall.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Care homes showed variable patterns of viral introduction: some contained single transmission clusters with multiple cases, while others had multiple independent clusters. However, 65.3% of care homes with \u22652 residents with genomic data had a dominant cluster responsible for >50% of cases, rising to 82.2% for homes with \u22653 residents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 present a coherent picture of transmission patterns supported by cluster analysis data (Table 6). The statistics on dominant clusters are clearly reported with appropriate denominators. The finding that most care homes have a dominant cluster despite multiple introductions is an important epidemiological observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Without genomic data, the transcluster algorithm yielded 316 clusters (23% fewer than the 409 clusters identified with genomics), suggesting that genomics makes a significant contribution to defining viral clusters and that without it, cluster sizes may be overestimated and the number of separate introductions underestimated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 present results from a controlled comparison where the algorithm was run with and without genomic data. The 23% reduction in cluster number when genomic data is excluded demonstrates the added value of genomics. The interpretation about overestimation of cluster sizes and underestimation of introductions logically follows from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Among 694 care home residents with genomic data and NHS numbers, 67.7% had at least one hospital admission during the study period, 57.3% were admitted with COVID-19, 5.8% had suspected hospital-acquired infections, and 33.1% were discharged within 7 days of their first positive test (potentially infectious at discharge).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 present clear statistics from hospital admission data linkage with well-defined criteria for categorization (e.g., hospital-acquired infection defined as positive test \u22657 days after admission). The inference about potential infectiousness at discharge (C42) is appropriately cautious (\"could potentially\") and supported by citation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Among 54 care home residents tested at CUH, 70.4% had possible genomic links with healthcare workers using a relaxed threshold, but strong epidemiological links were confirmed for only 26.0% from two clusters (CARE0063 and CARE0114). A third care home (CARE0273) showed transmission links to CARE0063, with geographic proximity (within 1 km) and phylogenetic clustering suggesting possible shared transmission, though this interpretation remains speculative without confirmatory epidemiological data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C50 appropriately distinguish between genomic links (C43) and confirmed epidemiological links (C44), acknowledging the limitation of genomic data alone. The description of specific clusters (C45-C46) is supported by data and prior publication. The speculation about CARE0063-CARE0273 transmission (C48-C49) is appropriately qualified as speculative (C50), recognizing the need for additional epidemiological data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Care home residents comprised up to a quarter of COVID-19 patients in peak weeks at CUH. Older age and care home residency were both significantly associated with increased 30-day mortality. Despite being at higher risk, care home residents were under-represented in ICU, yet ICU admission was still correlated with increased mortality, likely because ICU patients have more severe disease requiring intensive treatments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 present consistent epidemiological and clinical findings supported by logistic regression analysis (Figure 4, Table 4). The observation of lower ICU admission rates among care home residents despite higher mortality risk is well-documented. The interpretation of ICU-mortality correlation (C55) is appropriately cautious (\"likely\") and based on clinical knowledge about disease severity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Care homes frequently experienced outbreaks with multiple cases within clusters, consistent with substantial person-to-person transmission. The majority of care home residents did not acquire COVID-19 in hospital, and in the context of national lockdown, the most likely location of acquisition was the care home itself. The high frequency of outbreaks may reflect the vulnerability of this population and challenges of infection control in care homes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 present logical inferences from the cluster analysis and hospital admission data. The conclusion that most infections were acquired in care homes (C58) is reasonable given the lockdown context and low rate of hospital-acquired infections (5.8% from C41). However, C59 is explicitly speculative (\"may reflect\") about the reasons for high outbreak frequency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The findings emphasize the importance of limiting viral transmission within care homes. Given evidence for asymptomatic and presymptomatic transmission, isolating symptomatic individuals is insufficient. Ongoing measures are recommended including PPE use, hand hygiene, social distancing, and use of well-ventilated spaces, consistent with national guidance. Face coverings for residents in communal areas could be considered if acceptable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C68 present public health recommendations logically derived from the study findings. The recommendations are appropriately grounded in evidence for asymptomatic transmission (C63, with citations) and the observed outbreak patterns. The consistency with national guidance (C67) is documented with citations. Recommendations are appropriately qualified (e.g., \"could be considered\" for resident face coverings).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The majority of care home residents had hospital contact during the study, indicating substantial opportunity for bidirectional transmission between care homes and hospitals. Transmission clusters consistent with spread between care home residents and healthcare workers were identified. Limiting spread between care homes, healthcare workers, and hospitals is a key target for infection control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 present a coherent argument about care home-hospital transmission links. The high rate of hospital contact (67.7% from C39) supports the inference about transmission opportunities (C69). The identification of clusters involving healthcare workers (C70) is documented in the results. The recommendation (C72) logically follows from these findings and is supported by citation to prior work (C71).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The study has several limitations: not all COVID-19 cases from the East of England were included (approximately half based on national data), with serology suggesting 10.5% of care home residents nationally were infected (mostly asymptomatic). Viral sequence data were unavailable for 40% of care home residents, potentially leading to underestimation of cluster sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 appropriately acknowledge study limitations with supporting data. The incomplete case capture (C73, C75) is quantified with external data. The serology data (C74) provides context about the extent of undetected infections. The inference about underestimation of cluster sizes (C77) logically follows from missing sequence data (C76).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The nature of diagnostic testing changed during the study period as regional hospitals developed in-house capacity and Pillar 2 community testing expanded. This could have resulted in some care home residents being tested through different routes, though most systematic screening began after the study ended (May 11, 2020). The transcluster algorithm's allowance for missing links reduces the impact of incomplete case capture. The changing testing profile should be factored into all COVID-19 epidemiological interpretations from this period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C83 acknowledge important limitations related to changing testing infrastructure. The description of testing changes (C78-C79) is based on documented policy changes (Figure 1\u2014supplement 3). The speculation about differential testing routes (C80) is appropriately qualified. The mitigation provided by the transcluster algorithm (C82) is a methodological strength. The recommendation to consider testing changes in interpretation (C83) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C88"
+    ],
+    "result": "Defining care home residents from electronic healthcare records is challenging, and despite substantial efforts, some residents may have been missed. However, the rigorous methodology including manual inspection and CQC linkage means the care homes included for analysis should be accurate. Using pre-defined coding (e.g., CQC registration numbers) rather than free-text would improve future surveillance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 and C88 acknowledge limitations in case ascertainment while describing the rigorous methodology used (detailed in Methods). The inference that included care homes are accurate (C88) is reasonable given the multi-step validation process. The recommendation for improved coding (C86) is a practical suggestion for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Low viral sequence diversity limits the power of genomics to infer transmission clusters, and between-care home transmission was not investigated because opportunities for transfer cannot be assumed from the data. However, incorporating genomic data is more accurate for excluding linked transmission than temporal data alone, allowing cases to be 'ruled out' as part of linked clusters if genetic differences exceed expectations. This could be practically informative for care homes and other outbreak-prone settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C95 appropriately acknowledge the limitations of genomic analysis while highlighting its utility. The limitation of low diversity (C89) is a known issue for SARS-CoV-2. The decision not to investigate between-care home transmission (C90) is justified by lack of contact data, with appropriate suggestion for future work (C91). The utility of genomics for ruling out transmission (C93-C94) is well-established, and the practical application (C95) is appropriately suggested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "The transcluster algorithm cannot infer directionality of person-to-person transmission. Inferring transmission direction requires integration with multiple forms of epidemiological data, yielding probabilistic estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 appropriately acknowledge a key limitation of the clustering method. The statement about directionality (C96) is accurate for the method used. The description of requirements for directional inference (C97) is supported by citation to relevant methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Care homes represent a major burden of COVID-19 morbidity and mortality, with transmission events introducing SARS-CoV-2 and subsequent spread within them. Genomic data can be used in outbreak investigations to define viral clusters, critically dependent on integration with epidemiological data. The pragmatic cut-offs used were plausible and helpful for public health interpretation. Future work should prospectively integrate genomic and epidemiological data for real-time cluster identification and intervention deployment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C102 provide appropriate summary and conclusions. The statement about care home burden (C98) is supported by the study findings. The utility of genomics (C99) is demonstrated throughout the results. The acknowledgment that cut-offs were pragmatic but plausible (C100) is appropriately cautious. The recommendation for prospective integration (C102) is a logical next step based on the study's findings and limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Among 464 COVID-19 patients at CUH, 72 (15.5%) were care home residents, of whom <7% were admitted to ICU and 47.2% died within 30 days. In comparison, 21.4% of non-care home residents were admitted to ICU and 19.9% died within 30 days. Logistic regression showed older age, care home residency, ICU admission, and lower Ct values were associated with increased 30-day mortality. Mortality did not differ between nursing and residential home residents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C109 present consistent clinical outcome data with appropriate statistical analysis. The logistic regression (C108) is properly conducted with multiple relevant covariates (Figure 4, Table 4). The comparison between care home and non-care home residents (C103-C107) clearly shows disparities in ICU admission and mortality. The null finding for nursing vs. residential homes (C109) is appropriately reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The epidemic curve peaked in late March/early April, with care home residents comprising a greater proportion of cases in late April and May than in March. This trend was observed both in the full CMPHL dataset and at Cambridge University Hospitals (peaking at 28.6% in mid-April). This may reflect changing sample submission patterns or suggest that transmission involving care home residents declined more slowly after lockdown than in the general community.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110-C113 present clear observational data supported by figures and tables. However, the interpretations offered (C112, C114) are explicitly speculative (\"may reflect,\" \"may suggest\") and present alternative explanations without sufficient evidence to distinguish between them. The changing testing infrastructure (acknowledged in C78-C83) is a major confounder that limits the ability to draw firm conclusions about true epidemiological trends versus sampling artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "The proportion of samples from different submitting organizations changed over the study period, likely reflecting regional hospitals establishing their own testing facilities, increasing community testing availability, and implementation of national policies expanding care home testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 describe temporal changes in sample sources supported by visual data (Figure 1\u2014supplement 2). The interpretation (C7) is appropriately qualified (\"likely reflects\") and based on documented policy changes (Figure 1\u2014supplement 3). While speculative, the explanation is plausible and consistent with known changes in UK testing infrastructure during this period.",
+    "result_type": "MINOR"
+  }
+]

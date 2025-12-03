@@ -1,0 +1,2332 @@
+{
+  "submission": {
+    "id": "8772807a-cddd-404e-8fb2-7e223df6a60d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T14:02:55.788540Z",
+    "updated_at": "2025-12-03T14:02:55.788540Z"
+  },
+  "content": [
+    {
+      "id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "submission_id": "8772807a-cddd-404e-8fb2-7e223df6a60d",
+      "content_type": "manuscript",
+      "content_text": "# Synaptic location is a determinant of the detrimental effects of \u03b1-synuclein pathology to glutamatergic transmission in the basolateral amygdala\n\n## Authors\n\n- Liqiang Chen<sup>1</sup> ([ORCID: 0000-0003-3236-1129](https://orcid.org/0000-0003-3236-1129))\n- Chetan Nagaraja<sup>1</sup>\n- Samuel Daniels<sup>1</sup>\n- Zoe A Fisk<sup>2</sup>\n- Rachel Dvorak<sup>1</sup>\n- Lindsay Meyerdirk<sup>1</sup>\n- Jennifer A Steiner<sup>1</sup> ([ORCID: 0000-0003-0953-1310](https://orcid.org/0000-0003-0953-1310))\n- Martha L Escobar Galvis<sup>1</sup> ([ORCID: 0000-0001-8400-9392](https://orcid.org/0000-0001-8400-9392))\n- Michael X Henderson<sup>1</sup>\n- Maxime WC Rousseaux<sup>2</sup>\n- Patrik Brundin<sup>6</sup>\n- Hong-Yuan Chu<sup>1</sup> ([ORCID: 0000-0003-0923-683X](https://orcid.org/0000-0003-0923-683X)) \u2020\n\n### Affiliations\n\n1. Department of Neurodegenerative Science, Van Andel Institute Grand Rapids United States ([ROR:00wm07d60](https://ror.org/00wm07d60))\n2. Aligning Science Across Parkinson\u2019s (ASAP) Collaborative Research Network Chevy Chase United States\n3. Department of Cellular and Molecular Medicine, University of Ottawa Ottawa Canada ([ROR:03c4mmv16](https://ror.org/03c4mmv16))\n4. University of Ottawa Brain and Mind Research Institute Ottawa Canada ([ROR:03c4mmv16](https://ror.org/03c4mmv16))\n5. Ottawa Institute of Systems Biology Ottawa Canada\n6. Pharma Research and Early Development (pRED), F. Hoffman-La Roche Little Falls United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe presynaptic protein \u03b1-synuclein (\u03b1Syn) has been suggested to be involved in the pathogenesis of Parkinson\u2019s disease (PD). In PD, the amygdala is prone to develop insoluble \u03b1Syn aggregates, and it has been suggested that circuit dysfunction involving the amygdala contributes to the psychiatric symptoms. Yet, how \u03b1Syn aggregates affect amygdala function is unknown. In this study, we examined \u03b1Syn in glutamatergic axon terminals and the impact of its aggregation on glutamatergic transmission in the basolateral amygdala (BLA). We found that \u03b1Syn is primarily present in the vesicular glutamate transporter 1-expressing (vGluT1+) terminals in the mouse BLA, which is consistent with higher levels of \u03b1Syn expression in vGluT1+ glutamatergic neurons in the cerebral cortex relative to the vGluT2+ glutamatergic neurons in the thalamus. We found that \u03b1Syn aggregation selectively decreased the cortico-BLA, but not the thalamo-BLA, transmission; and that cortico-BLA synapses displayed enhanced short-term depression upon repetitive stimulation. In addition, using confocal microscopy, we found that vGluT1+ axon terminals exhibited decreased levels of soluble \u03b1Syn, which suggests that lower levels of soluble \u03b1Syn might underlie the enhanced short-term depression of cortico-BLA synapses. In agreement with this idea, we found that cortico-BLA synaptic depression was also enhanced in \u03b1Syn knockout mice. In conclusion, both basal and dynamic cortico-BLA transmission were disrupted by abnormal aggregation of \u03b1Syn and these changes might be relevant to the perturbed cortical control of the amygdala that has been suggested to play a role in psychiatric symptoms in PD.\n\n## Introduction\n\n\u03b1-synuclein (\u03b1Syn) is a soluble protein abundant at presynaptic axon terminals, where it regulates the dynamics of synaptic vesicles through interaction with synaptic proteins and presynaptic membranes (Burr\u00e9 et al., 2010; Runwal and Edwards, 2021; Vargas et al., 2017). \u03b1Syn is also prone to form insoluble cytoplasmic aggregates, which are the major protein component of Lewy pathology seen in synucleinopathies like Parkinson\u2019s disease (PD) (Mezey et al., 1998; Spillantini et al., 1997). Increasing evidence supports the notion that pathologic \u03b1Syn propagates between synaptically interconnected brain regions and underlies PD progression (Angot et al., 2010; Luk et al., 2012; Uemura et al., 2020).\n\nThe amygdala is a key limbic structure for emotion regulation (Janak and Tye, 2015). Compelling clinical evidence indicates that cortical control of the amygdala activity is impaired in PD, leading to an inappropriate encoding of emotion valence or deficits in linking emotion to behavior (Bowers et al., 2006; Hu et al., 2015; Yoshimura et al., 2005). Moreover, the amygdala shows selective vulnerability to Lewy pathology (Harding et al., 2002; Nelson et al., 2018; Sorrentino et al., 2019), thus an impaired amygdala network function has been proposed to underlie the disrupted emotion processing in PD patients (Harding et al., 2002). Still, the normal function of \u03b1Syn and how its aggregation can impair amygdala circuit function remain poorly understood. Here, we show that \u03b1Syn is primarily present in vesicular glutamate transporter 1-expressing (vGluT1+) cortical axon terminals, and, by contrast, is barely detectable in vGluT2+ thalamic axon terminals in the basolateral amygdala (BLA). In an \u03b1Syn preformed fibrils (PFFs) model of synucleinopathies, \u03b1Syn pathology decreases vGluT1+ cortico-BLA glutamatergic transmission, without affecting the vGluT2+ thalamo-BLA neurotransmission. Furthermore, we demonstrate that a partial (secondary to \u03b1Syn aggregation) or complete (Snca KO mice) depletion of soluble \u03b1Syn from the axon boutons promotes short-term depression at cortico-BLA synapses in response to prolonged stimulation, leading to an impaired gain control of cortical inputs to the BLA. Therefore, we conclude that both gains of toxic properties and loss of normal function of \u03b1Syn contribute to the input-specific disruption of cortico-BLA synaptic connectivity and plasticity in synucleinopathies. Our data support clinical observations of an impaired cortical control of the amygdala activity that could contribute to psychiatric deficits in PD patients.\n\n## Results\n\n### \u03b1Syn localizes preferentially in vGluT1+ axon terminals in mouse brain\n\nCompelling evidence from PD patients suggests that the amygdala exhibits an impaired responsiveness to sensory stimuli, arising mainly from the cerebral cortex and the thalamus (Bowers et al., 2006; Hu et al., 2015). Thus, we examined the presence of \u03b1Syn in vGluT1+ and vGluT2+ axon boutons in wild type (WT) mouse brains, which mainly come from cortical and thalamic regions, respectively (Fremeau et al., 2001; Kaneko and Fujiyama, 2002; Vigneault et al., 2015). Figure 1 shows that \u03b1Syn immunoreactivity colocalizes with vGluT1+ puncta but is absent where there are vGluT2+ puncta, in the BLA, the cerebral cortex, and the striatum.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/78055/elife-78055-fig1-v2.jpg)\n\n**Figure 1.:** (A) Representative confocal images showing colocalization of \u03b1Syn with vGluT1 (left), but not with vGluT2 (right) in the basolateral amygdala (BLA) (top), cerebral cortex (middle), and the striatum (bottom). Simultaneously collected confocal images from each brain region were split into vGluT1/\u03b1Syn and vGluT2/\u03b1Syn channels for the purpose of illustration. (B) Zoomed z series of images of the boxed area from the BLA in (A) showing colocalization and correlated changes in the immunoreactive intensities of vGluT1 and \u03b1Syn. Such colocalization and correlation are absent between vGluT2 and \u03b1Syn within the same region. Images were taken and shown from a + \u03bcm z-depth with an inter-section interval of 0.25 \u03bcm. (C) Bar graphs showing Pearson correlation coefficient between vGluT1 and \u03b1Syn, as well as between vGluT2 and \u03b1Syn, in the BLA (\u03b1Syn/vGluT1=0.82 \u00b1 0.007, \u03b1Syn/vGluT2=0.17 \u00b1 0.004; n=18 slices/4 mice; p<0.0001, MWU), cerebral cortex (\u03b1Syn/vGluT1=0.82 \u00b1 0.006, \u03b1Syn/vGluT2=0.12 \u00b1 0.009; n=8 slices/3 mice; p=0.0002, MWU), and the striatum (\u03b1Syn/vGluT1=0.83 \u00b1 0.006, \u03b1Syn/vGluT2=0.17 \u00b1 0.02; n=8 slices/3 mice; p=0.0002, MWU).\n\nEarlier in situ hybridization studies showed higher \u03b1Syn mRNA expression in the cerebral cortex and the hippocampus than in the thalamus (Abeliovich et al., 2000; Ziolkowska et al., 2005). Next, we used SncaNLS/NLS reporter mice to determine \u03b1Syn protein localization in the cortical and thalamic areas. These mice localize endogenous \u03b1Syn to the nucleus that allows the visualization of cellular topography (Geertsma et al., 2022), circumventing the diffused \u03b1Syn immunoreactivity in WT mice (Figure 2A). We observed that the \u03b1Syn was heavily expressed in cortical layer V/VI neurons, but only moderately or barely expressed in thalamic regions, particularly in the midline thalamus that provides major excitation to the BLA (Ahmed et al., 2021; Amir et al., 2019; Hintiryan et al., 2021; Figure 2B\u2013D). Together, our data show that \u03b1Syn is preferentially present at vGluT1+ cerebral cortical neurons and their axon terminals but is absent or expressed at very low levels at vGluT2+ thalamic neurons and their projections.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/78055/elife-78055-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic of approach to determine cellular topography of \u03b1Syn in the SncaNLS/NLS reporter mouse line. (B) Representative photomicrographs in the different highlighted brain regions for either \u03b1Syn alone (top panels) or co-stained with DAPI as a nuclear marker. (C\u2013D) Quantification of the proportion of \u03b1Syn-positive nuclei (C, % \u03b1Syn positive cells, cortex=91.9 \u00b1 4.7%, CMT=0 \u00b1 0%; PVT=19.9 \u00b1 6.3%, n=3 mice) or average relative intensity of \u03b1Syn in the different regions (cerebral cortex=0.04 \u00b1 0.001, n=742 cells/3 mice; CMT=0 \u00b1 0, n=364 cells/3 mice; PVT=0.01 \u00b1 0.0007, n=734 cells/3 mice). * p<0.05, one-way ANOVA followed by Sidak\u2019s multiple comparison tests. Abbreviations: CMT, centromedial thalamus; PVT, periventricular thalamus.\n\n### Glutamate release from vGluT1+ axon terminals is selectively disrupted by \u03b1Syn pathology\n\nConsidering that the endogenous levels of \u03b1Syn are determinants of the propensity to form \u03b1Syn aggregates, we hypothesize that vGluT1+ neurons and their terminals are more susceptible to \u03b1Syn pathology compared to those are vGluT2+ (Erskine et al., 2018; Vasili et al., 2022). To test this hypothesis, we triggered widespread \u03b1Syn pathology in the brain using the intrastriatal PFFs seeding model (Luk et al., 2012). One-month post-injection, we detected robust \u03b1Syn pathology in vGluT1+ cerebral cortical regions (e.g. the temporal association cortex (TeA), the motor cortex, and the perirhinal cortex, Figure 3 and A1\u2013A) and the BLA (Figure 3B\u2013C), but we barely observed any cytoplasmic aggregates in vGluT2+ thalamic regions (Figure 3 and A4\u2013A5). This pattern of pathology is supported by differences in endogenous \u03b1Syn levels between the cerebral cortex and thalamus (Figure 2B\u2013D) and is consistent with earlier reports (Burtscher et al., 2019; Henderson et al., 2019; Luk et al., 2012; Stoyka et al., 2020). Importantly, neurons in the midline thalamus were retrogradely labeled when retrobeads were injected into the same location as for PFFs in the striatum (Figure 3A6). We concluded that the absence of cytoplasmic pS129 \u03b1Syn pathology in the thalamus was not due to technical issues (i.e. missing thalamostriatal axon terminals for PFFs internalization).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/78055/elife-78055-fig3-v2.jpg)\n\n**Figure 3.:** (A) Representative images showing the presence of \u03b1Syn aggregates in the cortical regions (A1\u2013A3), but largely absent in the midline thalamus (A4\u2013A5). A6, representative images showing retrobeads labeled neurons in the centromedial thalamus. (B\u2013C) Representative images showing pS129+ \u03b1Syn pathology in the basolateral amygdala (BLA) (B) and the external capsule (C). (D\u2013E) Representative traces of excitatory postsynaptic currents (EPSCs) evoked by electrical stimulation of the external capsule (D) and summarized results (E) showing a reduced cortico-BLA transmission in slices from preformed fibrils (PFFs)- versus PBS-injected mice. n=17 neurons/4 mice for each group. (F\u2013G) Representative traces of EPSCs evoked by electrical stimulation of the internal capsule (F) and summarized results (G) showing unaltered thalamo-BLA transmission in slices from PFFs- versus PBS-injected wildtype mice. n=17 cells/5 mice for controls, and 13 cells/4 PFF-injected mice. (H\u2013I) Representative images showing viral infection site in the temporal association cortex (TeA) and nearby regions (H), and the axon terminal field in the BLA (I). (J\u2013K) Representative traces of optogenetically-evoked EPSCs (J) and summarized results (K) showing a reduced amplitude of cortico-BLA EPSCs in slices from PFFs- versus PBS-injected mice. n=35\u201337 neurons/4 mice per group. (L\u2013M) Representative images showing viral infection site in the midline thalamus (L), and the axon terminal field in the BLA (M). (N\u2013O) Representative traces of optogenetically-evoked EPSCs (N) and summarized results (O) showing unaltered thalamo-BLA transmission in slices from PFFs- versus PBS-injected mice. n=28 neurons/4 mice per group. *, p<0.05, MWU followed by Bonferroni-Dunn correction for multiple comparisons. Abbreviations: CMT, centromedial thalamus; PVT, periventricular thalamus.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78055/elife-78055-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u2013B) Representative confocal images showing lack of endogenous \u03b1-synuclein (\u03b1Syn) in vGluT1+ (A) and vGluT2+ (B) terminals in the basolateral amygdala (BLA). (C) Representative traces of EPSCs evoked by electrical stimulation of the external capsule (C) and summarized results (D) showing no changes of cortico-BLA transmission in slices from PFFs- versus PBS-injected mice. n=12 neurons/3 mice for each group.\n\nNext, we focused on the BLA to assess the functional impact of \u03b1Syn aggregation on glutamatergic transmission from the cerebral cortex and thalamus (Abeliovich et al., 2000; Ziolkowska et al., 2005). We selectively activated cortical and thalamic inputs of the BLA by stimulating the external and internal capsules, respectively. One-month post-injection, the amplitude of electrically evoked cortico-BLA excitatory postsynaptic currents (EPSCs) was greatly decreased in the slices from PFFs-injected WT mice relative to those from controls (Figure 3D\u2013E). Consistently, prominent pS129 \u03b1Syn pathology can be detected along the external capsule where the cortical afferents enter the BLA (Figure 3B\u2013C). In contrast, there was no difference in the amplitude of thalamo-BLA EPSCs between the PFFs-injected mice and controls (Figure 3F\u2013G).\n\nTo avoid potential technical issues inherent to the use of electrical stimulation, we employed optogenetic approach to confirm the above results (Figure 3H\u2013O). One-month post-injection, the amplitude of optogenetically-evoked cortico-BLA EPSCs in slices from PFFs-injected mice was decreased relative to those from PBS-injected controls (Figure 3H\u2013K). By contrast, we did not detect the difference in the amplitude of optogenetically-evoked thalamo-BLA EPSCs between groups (Figure 3L\u2013O). Altogether, we demonstrated that the presence of \u03b1Syn makes vGluT1+ cortical neurons and their axons more vulnerable to \u03b1Syn pathology and that this pathology is associated with detrimental effects on synaptic transmission.\n\nMoreover, consistent with the development of \u03b1Syn pathology requiring the presence of endogenous \u03b1Syn in the PFFs model (Luk et al., 2012; Volpicelli-Daley et al., 2011), we did not detect the difference in the cortico-BLA transmission between PFFs- versus PBS-injected \u03b1Syn KO mice (Figure 3\u2014figure supplement 1). Furthermore, because of the lack of detrimental effect in \u03b1Syn KO mice, we conclude that the impaired cortico-BLA transmission in the PFFs model is likely caused by the gained toxic properties of \u03b1Syn as it aggregates, instead of intrastriatal PFFs injection per se (Cookson and van der Brug, 2008; Volpicelli-Daley et al., 2011).\n\n### \u03b1Syn pathology decreases the number of functional cortico-BLA inputs\n\nSeveral mechanisms can contribute to the decreased cortico-BLA synaptic strength as \u03b1Syn pathology develops, including the loss of synapses, decreased initial release probability, and/or postsynaptic adaptations. To determine the impact of \u03b1Syn aggregation on vGluT1+ cortico-BLA innervation, brain sections from control and PFFs-injected mice were processed for immunohistochemical assessment of vGluT1. The density of vGluT1-immunoreactive puncta in the BLA was then determined stereologically (West, 1999). The density of vGluT1-immunoreactive puncta was not altered between PFFs- and PBS-injected mice (Figure 4A\u2013C). These results indicate that there is no loss of cortical axon terminals or cortico-BLA synapses in PFFs-injected mice at one-month post-injection.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/78055/elife-78055-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013B) Representative confocal images showing vesicular glutamate transporter 1 (vGluT1)-immunoreactivity in the basolateral amygdala (BLA) from control (A) and PFFs-injected (B) mice. (C) Summarized data showing no change in the vGluT1 density in the BLA between control and PFFs-injected mice (control=27.5 \u00b1 2 million/mm3, n=11 slices/3 mice; preformed fibrils (PFFs)=27.5 \u00b1 3.8 million/mm3, n=12 slices/3 mice; p=0.98, MWU). (D\u2013E) Representative traces of cortico-BLA excitatory postsynaptic currents (EPSCs) evoked by 20 Hz paired pulses of electric stimulation (D) and the summarized results of EPSC2/EPSC1 ratios (E, controls=1.45 \u00b1 0.08, n=19 neurons/4 mice; PFFs=1.53 \u00b1 0.13, n=18 neurons/4 mice; p=0.99, MWU). (F\u2013G) Representative traces of cortico-BLA EPSCs evoked by 10 Hz paired pulses of optogenetic stimulation (F) and the summarized results of EPSC2/EPSC1 ratios (controls=0.64 \u00b1 0.04, n=35 neurons/4 mice; PFFs=0.69 \u00b1 0.07, n=31 neurons/4 mice; p=0.83, MWU). (H) Representative traces showing Sr2+ induced, optogenetically evoked EPSCs (Sr2+-EPSCs) at cortico-BLA synapses from control and PFFs-injected mice. Each open circle indicates a single identified Sr2+-EPSC. (I\u2013J) Summarized result showing a reduction of the frequency (control=30.9 \u00b1 4.3 Hz, n=24 neurons/3 mice; PFFs=18.9 \u00b1 2.4 Hz, n=24 neurons/3 mice; p=0.012, MWU), but not the amplitude (control=19.2 \u00b1 0.99 pA, n=24 neurons/3 mice; PFF=18.1 \u00b1 0.98 pA, n=24 neurons/3 mice; p=0.31, MWU), of Sr2+-EPSCs at cortico-BLA synapses. (K) Representative cortico-BLA EPSC traces recorded at \u201380 mV and +40 mV from control and PFF-injected mice. Black dots indicate the time at which AMPA- and NMDA-mediated components were measured. (L) Summarized results showing a decreased AMPA/NMDA ratio at cortico-BLA synapses from PFFs-injected mice relative to controls (control=1.56 \u00b1 0.13, n=20 neurons/3 mice; PFFs=1.03 \u00b1 0.07, n=18 neurons/3 mice, p=0.0012, MWU). (M) Summarized results showing an increased AMPA receptor rectification index at cortico-BLA synapses from PFFs-injected mice relative to controls (control=1.74 \u00b1 0.13, n=20 neurons/3 mice; PFFs=2.21 \u00b1 0.18, n=18 neurons/3 mice, p=0.035, MWU). ns, not significant. * p<0.05.\n\nNext, we assessed functional changes in cortico-BLA synaptic transmission using electrophysiology. The initial release probability was estimated by delivering paired-pulses of electric or optogenetic stimulation of cortico-BLA synapses in control and PFFs-injected mice. Using electric stimulation approach, the ratio of EPSC2 to EPSC1 (at a 50 ms inter-pulse interval) was not altered between groups (Figure 4D\u2013E). Similarly, the ratio of EPSC2/EPSC1 at cortico-BLA synapses was not altered by \u03b1Syn pathology when assessed using optogenetics (at a 100 ms inter-pulse interval, Figure 4F\u2013G). Interestingly, in contrast to the short-term facilitation in response to electric stimulation (Figure 4D\u2013E), paired-pulses of optogenetic stimulation always led to short-term depression of cortico-BLA transmission (Figure 4F\u2013G), which might be due to the deactivation of ChR2 itself. Together, the above data suggest that the decreased cortico-BLA transmission was not caused by a lower initial release probability.\n\nFurther, we estimated the quantal properties of cortico-BLA synapses by measuring the frequency and amplitude of Sr2+-induced, optogenetically-evoked asynchronous glutamate release from cortical terminals. The frequency of optogenetically-evoked cortico-BLA asynchronous EPSCs (Sr2+-EPSCs) decreased significantly, but the amplitude of cortico-BLA Sr2+-EPSCs was not altered in slices from PFFs-injected mice (Figure 4H\u2013J). Given the unaltered number of vGluT1+ axon terminals and initial release probability of cortico-BLA synapses, fewer readily releasable synaptic vesicles and/or release sites can explain the observed reduction in cortico-BLA transmission.\n\n### \u03b1Syn pathology decreases AMPA receptor-mediated current at cortico-BLA synapses\n\nTo determine whether the decreased cortico-BLA connection strength was associated with postsynaptic adaptations, we measured the ratio of AMPA- and NMDA-mediated EPSCs (AMPA/NMDA ratio) from the cortico-BLA synapses. In response to optogenetic stimulation, cortico-BLA inputs showed a significant reduction of AMPA/NMDA ratio in slices from PFFs-injected mice relative to controls (Figure 4K and L). In addition, we also detected an enhanced inward rectification of AMPA-EPSCs at cortico-BLA synapses in slices from PFFs-injected mice relative to controls (Figure 4M), indicating a relatively increased contribution of GluA2-lacking, Ca2+-permeable AMPA receptors to cortico-BLA transmission in PFFs-injected mice. These data suggest that \u03b1Syn pathology also triggers postsynaptic adaptations at cortico-BLA synapses. Surprisingly, we did not detect changes in the AMPA/NMDA ratio (control=1.24 \u00b1 0.11, PFFs=1.5 \u00b1 0.12, n=16 neurons/ 3 mice per group, p=0.15, MWU) or AMPA receptor rectification (control=1.12 \u00b1 0.1, PFFs=1.28 \u00b1 0.08, n=16 neurons/ 3 mice per group, p=0.25, MWU) from thalamo-BLA synapse between groups. Thus, the above data suggest that \u03b1Syn pathology induces input-specific decrease of postsynaptic AMPA receptor-mediated cortico-BLA transmission, instead of a global reduction of AMPA receptor function in BLA neurons.\n\nTaken together, the development of \u03b1Syn pathology selectively decreases the functional cortico-BLA connectivity by inducing both pre- and post-synaptic adaptations and such functional changes occur prior to overt degeneration of axon terminals.\n\n### Pathological aggregation decreases \u03b1Syn levels at axon terminals and impairs short-term synaptic plasticity\n\nFormation of cytoplasmic aggregates is believed to move soluble \u03b1Syn away from the presynaptic boutons, affecting its role in regulating synaptic vesicle pools (Benskey et al., 2016; Luk et al., 2009; Volpicelli-Daley et al., 2011). Consistent with the earlier predictions, the intensity of \u03b1Syn immunoreactivity (Syn1 antibody from BD Biosciences) within vGluT1+ puncta decreased dramatically in slices from PFFs-injected mice, leading to an increased proportion of vGluT1+ boutons that lack a detectable level of \u03b1Syn (Figure 5A\u2013D). To avoid technical issues associated with immunostaining (e.g. antigen mask due to \u03b1Syn aggregation), we assessed the \u03b1Syn immunoreactivity within vGluT1+ terminals using a different monoclonal antibody against mouse \u03b1Syn\u2013Syn9027 (Peng et al., 2018). Consistently, both the \u03b1Syn immunoreactivity within vGluT1+ terminals and the proportion of vGluT1+ terminals that are \u03b1Syn-immunoreactive decreased significantly in slices from PFFs-injected mice relative to controls (Figure 5E\u2013H). The percentage of \u03b1Syn-immunoreactive vGluT1+ terminals detected with Syn9027 in PFFs-injected mice was higher than those detected with Syn1, perhaps reflecting differences in the exposure of their epitopes (Syn1: aa 91\u201399; Syn9027: aa 130\u2013140). These data suggest that \u03b1Syn pathology reduces the amount of soluble \u03b1Syn present at the cortical axon terminals in the BLA, and in that way could affect its physiological function.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/78055/elife-78055-fig5-v2.jpg)\n\n**Figure 5.:** (A1\u2013B3) Representative confocal images showing \u03b1Syn immunoreactivity within vesicular glutamate transporter 1 (vGluT1+) puncta in the basolateral amygdala (BLA) using SYN1 antibody from control (A1\u2013A3) and PFFs-injected mice (B1\u2013B3).(C) Summarized graph showing a reduced \u03b1Syn immunoreactivity per vGluT1 immunoreactive puncta in PFFs-injected mice relative to controls (control=1049 \u00b1 50; preformed fibrils (PFFs)= 617 \u00b1 18, n=100 puncta/group, p<0.0001, MWU). (D) Summarized graph showing a reduced percentage of vGluT1 immunoreactive puncta associated with detectable \u03b1Syn immunoreactivity in PFFs-injected mice relative to controls (controls=85 \u00b1 5.2%; PFF=26 \u00b1 1.7%, n=6 slices/group, p=0.002, MWU). (E1\u2013F3) Representative confocal images showing \u03b1Syn immunoreactivity within vGluT1+ puncta in the BLA using SYN9027 antibody from control (E1\u2013E3) and PFFs-injected mice (F1\u2013F3). (G) Summarized graph showing a reduced \u03b1Syn immunoreactivity per vGluT1 immunoreactive puncta in PFFs-injected mice relative to controls (control=954 \u00b1 29; PFFs=633 \u00b1 27, n=241 puncta/group, p<0.0001, MWU). (D) Summarized graph showing a reduced percentage of vGluT1 immunoreactive puncta associated with detectable \u03b1Syn immunoreactivity in PFFs-injected mice relative to controls (controls=87 \u00b1 1.5%, n=12 slices; PFF=74 \u00b1 1.6%, n=11 slices, p<0.0001, MWU).\n\n\u03b1Syn modulates the dynamics of synapse vesicle pools (Sulzer and Edwards, 2019), which plays a key role in regulating synaptic plasticity and the computational function of neural circuits (Abbott and Regehr, 2004; Alabi and Tsien, 2012). Thus, we stimulated cortico-BLA synapses repetitively to assess the impact of the observed reduction of \u03b1Syn levels on short-term synaptic plasticity. We detected a progressive depression of cortico-BLA EPSCs in control mice (Figure 6A1 and A2), reflecting mainly a progressive depletion of presynaptic vesicles (Alabi and Tsien, 2012; Cabin et al., 2002). Interestingly, the cortico-BLA EPSCs in the slices from PFFs-injected mice showed a greater depression relative to those from controls (Figure 6A1 and A2). These results are in line with the key role of \u03b1Syn in sustaining and mobilizing synaptic vesicle pools (Cabin et al., 2002; Sulzer and Edwards, 2019; Vargas et al., 2017), and suggest the significant impact of the loss of \u03b1Syn function on synaptic plasticity and circuit computation.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/78055/elife-78055-fig6-v2.jpg)\n\n**Figure 6.:** (A1) Representative cortico-basolateral amygdala (BLA) excitatory postsynaptic currents (EPSCs) traces from control and preformed fibrils (PFF)-injected mice in response to repetitive stimulation (300 stimuli at 12.5 Hz). (A2) Summarized graph showing the temporal profiles of cortico-EPSCs depression in slices from control and PFFs-injected mice. The cortico-BLA EPSCs from PFFs-injected mice exhibited greater reduction in the amplitude toward the end of repetitive stimulation. n=13\u201315 neurons/ 3 mice. (B1) Representative cortico-BLA EPSCs traces from wild type (WT) control and \u03b1Syn KO mice in response to repetitive stimulation (300 stimuli at 12.5 Hz). (B2) Summarized graph showing the temporal profiles of cortico-EPSCs depression in slices from WT control and \u03b1Syn KO mice (n=8\u20139 neurons/3 mice. *, p<0.05, MWU followed by Bonferroni-Dunn correction for multiple comparisons).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78055/elife-78055-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A1) Representative thalamo-basolateral amygdala (BLA) excitatory postsynaptic currents (EPSCs) traces from wild type (WT) control and \u03b1Syn KO mice in response to repetitive stimulation (300 stimuli at 12.5 Hz). (A2) Summarized graph showing the temporal profiles of thalamo-BLA EPSCs depression in slices from WT control and \u03b1Syn KO mice (n=9 neurons/3 mice. No statistical significance was detected between groups, MWU followed by Bonferroni-Dunn correction for multiple comparisons).\n\nBecause both gains of toxic properties and loss of normal \u03b1Syn function are induced in the PFFs models, we employed the \u03b1Syn KO mice to further assess the impact of a loss of \u03b1Syn on the short-term synaptic plasticity of glutamatergic synapses. Consistently, the amplitude of cortico-BLA EPSCs from \u03b1Syn KO mice also exhibited greater depression in response to repetitive stimulation relative to littermate WT controls (Figure 6B1\u2013B2), indicating an impaired mobilization of synaptic vesicle pools. It is worth noting that the earlier onset and greater magnitude of cortico-BLA EPSC depression in \u03b1Syn KO mice versus that in PFFs-injected mice (Figure 6A, B). Thus, it is plausible that the different temporal profiles of short-term synaptic dynamics are linked to the difference in the amount of \u03b1Syn present at presynaptic terminals between the PFFs model and KO mice. Last, we did not detect the difference in the temporal profiles of thalamo-BLA EPSCs in slices from \u03b1Syn KO mice and those from WT controls (Figure 6\u2014figure supplement 1), which indicates a negligible impact of \u03b1Syn depletion on synaptic vesicle dynamics and is consistent with the lack of \u03b1Syn presence at vGluT2+ axon terminals (Figure 1). Together, these results suggest that pathological aggregation decreases the levels of soluble \u03b1Syn at the axon terminals, leading to a greater synaptic vesicle depletion and impaired short-term plasticity.\n\n## Discussion\n\nEmerging evidence suggests that \u03b1Syn exhibits brain region- and cell type-specific expression in the brain. For example, while \u03b1Syn mRNA expression is high in glutamatergic and dopaminergic neurons, it is largely absent from GABAergic neurons across brain regions (Taguchi et al., 2016). To further explore such a cell subtype-selective \u03b1Syn expression among glutamatergic neurons and synapses, our study shows that \u03b1Syn is preferentially present at vGluT1+, but not vGluT2+, axon terminals across several brain regions, including the BLA and the striatum. Consistent with the observation from the axon terminals, we also detected higher amounts of \u03b1Syn in the cell bodies of cortical neurons relative to thalamic neurons using the recently generated SncaNLS/NLS reporter mice (Geertsma et al., 2022). Thus, our results support a cell- and synapse-subtype-selective \u03b1Syn protein expression among glutamatergic neurons in the mouse brain.\n\nEndogenous levels of \u03b1Syn are determinants of neuronal vulnerability to \u03b1Syn pathology. As expected, we observed a decrease in cortical, but not thalamic, inputs to the BLA neurons in a PFF-seeding model of synucleinopathies. At a relatively early-stage (i.e. one-month post-injection), \u03b1Syn pathology decreases the number of functional cortical inputs to the BLA without loss of synapse or changes in presynaptic release probability. We posit that the disrupted cortico-BLA transmission can be caused by a reduced size of readily-releasable synaptic vesicle pool and/or a number of presynaptic release sites. This hypothesis was built on a wealth of evidence showing that \u03b1Syn aggregates decrease the expression of several synaptic vesicle-associated SNARE proteins (e.g. Snap25 and VAMP2) (Volpicelli-Daley et al., 2011). Moreover, our study also suggests a decreased AMPA receptor-mediated response can underlie the impaired cortico-BLA transmission in PFFs-injected mice. On the other hand, an increased relative contribution of GluA2-lacking AMPA receptors can be a compensatory mechanism for an overall reduction in AMPA-EPSCs at cortico-BLA synapses\u2013 a hypothesis that warrants further investigation. It is worth noting that such a decreased AMPA-EPSC of BLA neurons is input specific, which selectively occurs at cortico-BLA synapses. Thus, the molecular mechanisms that cooperate pre- and post-synaptic changes at the cortical inputs, but not the thalamic inputs, remain to be defined.\n\nOur study further highlights the dependence of regional and cellular vulnerability on the endogenous \u03b1Syn, i.e., those neurons or axon terminals that express high levels of \u03b1Syn are prone to be functionally impacted by \u03b1Syn pathology relative to those that lack of or express low levels of \u03b1Syn (Surmeier et al., 2017; Thakur et al., 2019; Vasili et al., 2022). Of particular interest is that vGluT2+/TH+ midbrain dopamine neurons and their axon terminals in the striatum have been shown to be more resilient to neurodegeneration in postmortem PD brains and animal models studies (Buck et al., 2021; Steinkellner et al., 2022). While several other mechanisms have been proposed (Buck et al., 2021), the absence of \u03b1Syn at vGluT2+ neurons/terminals could be critical for such resilience.\n\nLoss of normal \u03b1Syn function has been thought to be an important but understudied aspect of \u03b1Syn pathology. Using an electrophysiological approach, we revealed that a partial or complete removal of \u03b1Syn from the axon terminals leads to an enhanced short-term depression in response to repetitive stimulation of cortico-BLA synapses (Figure 6). Short-term synaptic plasticity is an important \u2018gain control\u2019 mechanism for neurons to properly balance their responsiveness to distinct afferents in an input-specific manner (Abbott et al., 1997). Cortical and thalamic afferents of the BLA exhibit different short-term synaptic plasticity profiles in vivo, which could reflect their different contributions to the formation of emotion-related memory and behavior (Sigur\u00f2sson et al., 2010). Physiologically, synapse-specific presence of \u03b1Syn could underlie such difference in the short-term plasticity profiles of the two inputs (Figures 1 and 6).\n\nOne can postulate that once aggregates form, a decreased synaptic strength associated with \u03b1Syn toxicity (Figure 3) and an enhanced synaptic depression due to the loss of \u03b1Syn normal function at presynaptic boutons (Figures 5 and 6) make the BLA neurons less likely to respond to sustained and repetitive sensory inputs from cortical regions. These circuit changes might explain studies showing a decreased functional connectivity of cortico-amygdala, but not the thalamo-amygdala network in PD patients, which further leads to a failed amygdala responsiveness to the aversive sensory inputs (Hu et al., 2015; Yoshimura et al., 2005).\n\n## Materials and methods\n\n### Animals\n\nWild type (WT) C57Bl/6J mice (Jax stock#:000664, RRID: IMSR_JAX:000664) of both sexes (3\u20134 month-old) were obtained from the Van Andel Institute vivarium internal colony and used in the study. \u03b1Syn knockout (Snca-/-) mice (RRID: IMSR_JAX:003692) were originally purchased from Jackson laboratories (Bar Harbor, ME) and then were backcrossed on a C57BL/6J background to generate heterozygous Snca+/- mice. Experimental Snca-/- mice and littermate WT controls were generated from heterozygous Snca+/- breeder pairs and were genotyped by Transnetyx (Cordova, TN, USA). SncaNLS/NLS mice (RRID: IMSR_JAX:036763) were generated and maintained on a C57Bl/6J background as described (Geertsma et al., 2022). Mice were housed up to four animals per cage under a 12/12 hr light/dark cycle with access to food and water ad libitum in accordance with NIH guidelines for care and use of animals. All animal studies were reviewed and approved by the Institutional Animal Care and Use Committee at Van Andel Institute (animal use protocol#: 22-02-007).\n\n### Preparation and validation of \u03b1Syn preformed fibrils\n\nPurification of recombinant mouse \u03b1Syn and generation of \u03b1Syn preformed fibrils (PFFs) was conducted as described elsewhere (Luk et al., 2009; Volpicelli-Daley et al., 2014). The pRK172 plasmid (RRID: Addgene_166671) containing the gene of interest was transformed into BL21 (DE3) RIL-competent E. coli (230245, Agilent Technologies). A single colony from this transformation was expanded in Terrific Broth (12 g/L of Bacto-tryptone, 24 g/L of yeast extract 4% (v/v) glycerol, 17 mM KH2PO4, and 72 mM K2HPO4) with ampicillin. Bacterial pellets from the growth were sonicated and the sample was boiled to precipitate undesired proteins. The supernatant was dialyzed with 10 mM Tris, pH 7.6, 50 mM NaCl, 1 mM EDTA, 1 mM phenylmethylsulfonyl fluoride (PMSF) overnight. Protein was filtered with a 0.22 \u00b5m filter and concentrated using Vivaspin 15 R 10 K centrifugal filters (VS15RH01, Sartorius). Protein was then loaded onto a Superdex 200 column and 2 mL fractions were collected. Fractions were run on SDS-PAGE and stained with InstaBlue protein stain (50-190-5499, Fisher Scientific) to select fractions that were highly enriched in \u03b1Syn. These fractions were combined and dialyzed in 10 mM Tris, pH 7.6, 50 mM NaCl, 1 mM EDTA, 1 mM PMSF overnight. Dialyzed fractions were applied to a MonoQ column (HiTrap Q HP 17115401, Cytiva) and run using a NaCl linear gradient (0.025\u20131 M). Collected fractions were run on SDS-PAGE and stained with InstaBlue protein stain. Fractions that were highly enriched in \u03b1Syn were collected and dialyzed into DPBS (Gibco). Protein was filtered through a 0.22 \u00b5m filter and concentrated to 7 mg/mL (\u03b1Syn) with Vivaspin 15 R 10 K centrifugal filters. Monomer was aliquoted and frozen at \u201380 \u00b0C. For preparation of \u03b1Syn PFFs, \u03b1Syn monomer was shaken at 1000 rpm for 7 days. Conversion to PFFs was validated by sedimentation at 100,000 x g for 60 min and by thioflavin S staining.\n\n### Stereotaxic surgery\n\nMice were placed in a stereotaxic frame (Kopf) under 2% isoflurane anesthesia and were supported by a thermostatic heating pad. Recombinant \u03b1Syn fibrils were diluted in phosphate-buffered saline (PBS) to a concentration of 5 mg/ml. Prior to stereotaxic injection, PFFs were pulse sonicated at medium intensity with 30 s on and 30 s off for 10 min using a sonicator (Biorupter Pico). To induce the formation of \u03b1Syn aggregation in mouse brain (Luk et al., 2012), sonicated PFFs (2.0 \u03bcl) were injected bilaterally into the dorsal striatum (anteroposterior,+0.2 mm from bregma; mediolateral, \u00b1 2.0 mm from the midline; dorsoventral, \u20132.6 mm from the brain surface) using a 10 \u03bcl syringe (Hamilton) driven by a motorized microinjector (Stoelting) at a rate of 0.2 \u03bcl/min. Given the neuronal heterogeneity of the BLA, retrobeads (Lumafluor Inc) were diluted 10 \u00d7 into \u03b1Syn fibrils or PBS to label the projection neurons in the BLA for physiological studies. The final injection volume of PFFs with beads mixture was adjusted to keep a constant amount of \u03b1Syn injected across animals. Control mice received 2.0 \u03bcl PBS or PBS with retrobeads injections in the same location. For optogenetics studies, AAV vectors encoding ChR2(H134R)-eYFP (titer=1 \u00d7 1012 vg/ml, Addgene 26973, RRID: Addgene_127090) were stereotaxically injected into and centered at the TeA (anterioposterior \u20133.3 mm from the bregma, mediodorsal \u00b1 4.1 mm, dorsoventral \u20131.5 mm from the brain surface) and the midline thalamus (anterioposterior \u20131.5 mm from the bregma, mediodorsal 0 mm, dorsoventral \u20133.3 mm from the brain surface) (Ahmed et al., 2021; Amir et al., 2019). Animals were housed in their home cages before being euthanized for immunohistochemical or physiological studies at one-month post-injection. Details of this protocol can be found at: https://doi.org/10.17504/protocols.io.rm7vzye28l\u00d71/v1.\n\n### Tissue collection \u2013 perfusion and sectioning\n\nWT and Snca-/- mice received overdosage of avertin intraperitoneally (i.p.) and were subsequently subjected to transcardial perfusion with PBS and 4% paraformaldehyde (PFA, pH 7.4). Brains were removed and post-fixed in 4% PFA overnight, before being re-sectioned at 70 \u03bcm using a vibratome (VT1000s, Leica Biosystems, Buffalo Grove, IL). SncaNLS/NLS mice were anesthetized with 30 \u00b5l of 120 mg/kg Euthanyl (DIN00141704) before being perfused with 10 ml 1 x PBS and 10 ml 4% PFA. Brain tissue was collected and stored for 48 hr in 4% PFA. Brain tissue was then dehydrated in 10, 20, and 30% sucrose solutions for 48 hr each before being flash frozen in \u201340 \u00b0C isopentane for 1 min. Tissues were then cryosectioned at 20 \u03bcm and \u201321\u00b0C on the Thermo Scientific HM 525 NX cryostat at the Louise Pelletier Histology Core at the University of Ottawa and stored free floating in 1 \u00d7 PBS +0.02% NaN3 at 4\u00b0C until use. Details of this protocol can be found here.\n\n### Immunofluorescent staining\n\nBrain sections from WT and Snca-/- mice were rinsed using PBS and treated with 0.5% Triton X-100% and 2% normal donkey serum (MilliporeSigma) in PBS for 60 min at room temperature, followed by incubation with primary antibodies overnight at room temperature or for 48 hr at 4\u00b0C. The concentrations of primary antibodies were rabbit anti-pS129 \u03b1Syn (1:10,000, Abcam Cat# 1536\u20131, RRID: AB_562180), mouse anti-\u03b1Syn (1:1000, BD Biosciences Cat# 610787, RRID: AB_398108), mouse anti-NeuN (1:2000, Millipore Cat# MAB377, RRID: AB_2298772), rabbit anti-vGlut1(1:1000, cat#: Millipore Cat# ABN1647, RRID: AB_2814811) and guinea pig anti-vGluT2 (1:1000, Synaptic Systems Cat# 135404, RRID: AB_887884). After being thoroughly rinsed with PBS for 3 times, the sections were incubated with the secondary antibodies (1:500, AlexaFluor 594 donkey anti-mouse IgG, Jackson ImmunoResearch Labs Cat# 715-586-150, RRID: AB_2340857; AlexaFluor 647 donkey anti-mouse IgG, Jackson ImmunoResearch Labs Cat# 715-607-003, RRID: AB_2340867; AlexaFluor 488 donkey anti-mouse IgG, Jackson ImmunoResearch Labs Cat# 711-546-152, RRID: AB_2340619; AlexaFluor 594 donkey anti-rabbit IgG, Jackson ImmunoResearch Labs Cat# 711-585-152, RRID: AB_2340621, or AlexaFluor 488 donkey anti-guinea pig IgG, Jackson ImmunoResearch Labs Cat# 706-545-148, RRID: AB_2340472) for 90 min at room temperature. Brain sections were rinsed 3 times with PBS and mounted on glass slides using Vectorshield antifade mounting medium (H-1000, Vector Laboratories) and cover slipped.\n\nBrain sections from SncaNLS/NLS were incubated for 24 hr in blocking buffer (1.5% Triton X-100, 10% cosmic calf serum in 1 \u00d7 PBS), 24 hr in primary Syn1 antibody (1:1000, BD Biosciences Cat# 610787, RRID: AB_398108) and 1 hr in secondary antibody (1:500, Alexa Fluor 568 donkey anti-mouse antibody, (Thermo Fisher Scientific Cat# A10037, RRID: AB_2534013, Lot#: 1917938)) with DAPI at 1:1000 (Millipore Sigma, D9542-1MG). Tissue was washed in 1 \u00d7 PBS 5 times for 5 min each between each treatment and mounted on Fisherbrand Superfrost Plus slides. After drying for 24 hr, sections were covered with DAKO mounting medium (Cat#: S3023, Lot#: 11347938) and #1.5 coverslips.\n\nDetails of immunofluorescent staining can be found here.\n\n### Confocal imaging and analysis\n\nConfocal images from WT and SNCA-/- were acquired using a Nikon A1R confocal microscopy. pS129 \u03b1Syn aggregates in different brain regions were imaged under a 40 \u00d7 objective lens. For \u03b1Syn and vGluT1/vGluT2 colocalization analysis, three synaptic markers were immunostained simultaneously and z-stack images were acquired using an oil immersion 100 \u00d7 objective (NA=1.45; x/y, 1024 \u00d7 1024 pixels; z step=150 nm). Images were acquired using identical settings between treatment groups, including laser power, pinhole size, gain, and pixel size. Intensity-based colocalization analysis was performed using Imaris software (RRID: SCR_007370, version 9.3, Oxford, UK, http://www.bitplane.com/imaris/imaris). Background subtraction on z-stack images was conducted using ImageJ (RRID: SCR_003070, NIH, https://imagej.net/) prior to importing files into Imaris. Once imported, two arbitrary regions of interest were created using the surface function (drawing mode: circle; radius=15 \u03bcm; number of vertices=30) and the three channels (vGluT2, vGluT1, and \u03b1Syn) were masked based on the surface reconstruction to isolate fluorescence within the ROIs. The Imaris \u2018Coloc\u2019 function was used to measure the colocalization between vGluT2/\u03b1Syn and vGluT1/\u03b1Syn for each ROI. Briefly, either vGluT1 or vGluT2 was selected as channel A and \u03b1Syn was selected as channel B. The automatic threshold feature within \u2018Coloc\u2019 was used to calculate the threshold values for each channel. Colocalization channels for vGluT1/ \u03b1Syn and vGluT2/\u03b1Syn for each ROI were created by using the \u2018Build Coloc Channel\u2019 function. Colocalization parameters were obtained for quantification from the colocalization channels. For quantification of the \u03b1Syn intensity within vGluT1+ axon terminals, background subtraction on z-stack images was conducted using ImageJ (RRID: SCR_003070, NIH, https://imagej.net/). After background subtraction, vGluT1 immunoreactive puncta were manually identified as a set of regions of interest (ROI, n=20 puncta per image) from each BLA section and the mean gray values of \u03b1Syn immunoreactivity within the same ROI were then measured using ImageJ (RRID: SCR_003070, NIH, https://imagej.net/). Details of images analysis can be found at: dx.doi.org/10.17504/protocols.io.n2bvj61bblk5/v1.\n\nConfocal images from SNCANLS/SNLS mice were taken on the Zeiss AxioObserver Z1 LSM800 at the Cell Biology and Image Acquisition core at the University of Ottawa. Images were taken at 20 \u00d7 (0.8 NA) objective with 8bit 1024 \u00d7 1024 resolution. The following multichannel acquisition was used to detect signal: DAPI 405 nm/561 nm (650 V); AF568 (\u03b1Syn) 405 nm/561 nm (750 V). Images were analyzed using FIJI (RRID: SCR_002285, http://fiji.sc), where Z projected images were separated by channel and the brightness was altered (DAPI: 0\u2013200, \u03b1Syn: 0\u2013175). Images were then merged and exported as .jpg files.\n\nTo determine cell counts and signal intensity per region, images were inputted into Fiji as \u2018colorized\u2019 images, then Z projected at average intensity. Images were exported as.tiff files and imported into CellProfiler Analyst 3.0 (RRID: SCR_007358, http://cellprofiler.org) (Stirling et al., 2021). Image metadata was extracted, and images with \u2018C\u2019 matching 0 were assigned as DAPI, 1 assigned as \u03b1Syn. DAPI and \u03b1Syn positive cells were counted individually using the \u2018IdentifyPrimaryObjects\u2019 feature (pixel size 20\u201350), and \u03b1Syn intensity was measured as \u2018\u03b1Syn\u2019 from \u2018DAPI\u2019 primary objected. Count and intensity data was analyzed in Prism 9 (RRID: SCR_002798, GraphPad Software, http://www.graphpad.com/). Details of this protocol can be found here.\n\n### Slice preparation for physiology\n\nFor physiological studies, mice were deeply anesthetized with avertin (300 mg/kg, i.p.) and then were perfused transcardially with ice-cold, sucrose-based artificial cerebrospinal fluid (aCSF) containing (in mM) 230 sucrose, 26 NaHCO3, 10 glucose, 10 MgSO4, 2.5 KCl, 1.25 NaH2PO4, and 0.5 CaCl2, 1 sodium pyruvate, and 0.005 L-glutathione. Next, coronal brain slices (300 \u03bcm) containing BLA were prepared in the same sucrose-based aCSF solution using a vibratome (VT1200S; Leica Microsystems, Buffalo Grove, IL). Brain slices were kept in normal aCSF (in mM, 126 NaCl, 26 NaHCO3, 10 glucose, 2.5 KCl, 2 CaCl2, 2 MgSO4, 1.25 NaH2PO4, 1 sodium pyruvate, and 0.005 L-glutathione) equilibrated with 95% O2 and 5% CO2 for 30 min at 35\u00b0C and then held at room temperature until use.\n\n### Ex vivo electrophysiology recording and optogenetics\n\nBrain slices were transferred into a recording chamber perfused at a rate of 3\u20134 ml/min with synthetic interstitial fluid (in mM, 126 NaCl, 26 NaHCO3,10 glucose, 3 KCl, 1.6 CaCl2,1.5 MgSO4, and 1.25 NaH2PO4) equilibrated with 95% O2 and 5% CO2 at 33\u201334\u00b0C via a feedback-controlled in-line heater (TC-324C, Warner Instruments) (Chen et al., 2021). SR-95531 (GABAzine, 10 \u03bcM) was routinely added extracellularly to block GABAA receptor-mediated inhibitory synaptic transmission. Neurons were visualized and recorded under gradient contrast SliceScope 1000 (Scientifica, Uckfield, UK) with infrared illumination using an IR-2000 CCD camera (DAGE-MTI, USA) and motorized micromanipulators (Scientifica, Uckfield, UK). Individual BLA projection neurons labeled with retrobeads were identified using a 60 \u00d7 water immersion objective lens (Olympus, Japan) and targeted for whole-cell patch-clamp recording. Data were collected using a MultiClamp 700B amplifier and a Digidata 1550B digitizer at a sampling rate of 50 kHz under the control of pClamp11 (RRID: SCR_011323, Molecular Devices, San Jose, USA). Borosilicate glass pipettes (O.D.=1.5 mm, I.D.=0.86 mm, item #BF150-86-10, Sutter Instruments) for patch clamp recordings (4\u20136 M\u03a9) were pulled using a micropipette puller (P1000, Sutter Instruments, Novato, CA).\n\nTo assess glutamatergic transmission in the BLA, glass pipettes were filled with a cesium methanesulfonate based internal solution of (in mM): 120 CH3O3SCs, 2.8 NaCl, 10 HEPES, 0.4 Na4-EGTA, 5 QX314-HBr, 5 phosphocreatine, 0.1 spermine, 4 ATP-Mg, and 0.4 GTP-Na (pH 7.3, 290 mOsm). BLA neurons were voltage clamped at \u201370 mV to assess the EPSCs in response to presynaptic electrical or optogenetic stimulations. Concentric bipolar electrodes (FHC, Bowdoin, ME) or glass pipettes (~2 M\u03a9) filled with the extracellular solution were used as stimulating electrodes and placed on the external and internal capsules to evoke glutamate release in the BLA from cortical and thalamic axon terminals, respectively (Shin et al., 2010). A range of electrical pulses (intensities=30\u2013120 \u03bcA, duration=100 \u03bcs) were delivered through a stimulator (Digitimer, UK) to evoke glutamate release at either cortical or thalamic inputs. To study the process of synaptic vesicle pool mobilization during repetitive glutamatergic transmission, we delivered 300 electrical pulses (duration=100 \u03bcs) at 12.5 Hz and measured the amplitudes of EPSCs to quantify changes in the presynaptic glutamate release (Cabin et al., 2002). Only one neuron was recorded from each slice in the prolonged repetitive stimulation studies.\n\nOptogenetic stimulation pulses (1 ms duration) were delivered through a 60 \u00d7 objective lens (Olympus, Japan) using a 470 nm LED light source (CoolLED, UK). To isolate monosynaptic cortico-BLA and thalamo-BLA EPSCs, optogenetically evoked EPSCs were recorded in the presence of TTX (1 \u03bcM) and 4-AP (100 \u03bcM). Series resistance (Rs <20 M\u03a9) was regularly monitored throughout the recording to ensure Rs changes were less than 15%. Liquid junction potential (~9 mV) was not corrected. Details of the protocol can be found here.\n\n### Data analysis and statistics\n\nElectrophysiology data were analyzed offline in Clampfit 11.1 (RRID: SCR_011323, Molecular Devices). The peak amplitude of monosynaptic EPSCs in response to electric stimulation was quantified from an average of three to five sweeps. Digital confocal images were analyzed using ImageJ (RRID: SCR_003070, NIH, https://imagej.net/) or Imaris (RRID: SCR_007370, Oxford, UK, http://www.bitplane.com/imaris/imaris). Statistics were performed using Prism9 (RRID: SCR_002798, GraphPad Software, http://www.graphpad.com/). \u039don-parametric, distribution-independent Mann\u2013Whiney U (MWU) test was used for non-paired data comparisons between groups, followed by Bonferroni-Dunn correction for multiple comparisons. Data from SncaSNL/SNL mice were compared using one-way AVOVA (\u0160\u00edd\u00e1k\u2019s multiple comparisons test). All tests were two-tailed, and <i>p-value<0.05 was considered statistically significant. Summary results are reported as mean plus standard error of mean.\n",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "72952d59-48e4-42f8-be16-a6bd36c0590a",
+      "submission_id": "8772807a-cddd-404e-8fb2-7e223df6a60d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jun Ding, https://ror.org/00f54p054 Stanford University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.78055.sa0](https://doi.org/10.7554/eLife.78055.sa0)\n\nThe manuscript by Chen et al., examines the synapse-specificity of \u03b1-synuclein aggregation and corresponding circuit dysfunction in the amygdala. Using confocal microscopy and slice electrophysiology, along with \u03b1-synuclein knockout mice and preformed fibrils, the authors demonstrate that cortico-amygdala, but not thalamo-amygdala, inputs are more vulnerable to \u03b1-synuclein aggregation and corresponding synaptic dysfunction. This has important implications for the etiology of psychiatric deficits that are common in Parkinson's disease.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Jun Ding, https://ror.org/00f54p054 Stanford University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.78055.sa1](https://doi.org/10.7554/eLife.78055.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Synaptic Location Is a Determinant of the Detrimental Effects of \u03b1-Synuclein Pathology to Glutamatergic Transmission in the Basolateral Amygdala\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by a Reviewing Editor and Lu Chen as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. The authors need to provide additional evidence of pathologic \u03b1-synuclein in the amygdala- preferably at synaptic terminals.\n\n2. Additional controls are needed to support the conclusion \u2013 a reduction in synaptic \u03b1-synuclein. Because the antigen could be masked by aggregation, it is important to verify the same results using an antibody to a different \u03b1-synuclein epitope.\n\n3. Please provide evidence on whether the defect could be rescued with a cortically injected/expressed \u03b1-syn AAV.\n\n4. Additional experiment \u2013 for example, looking at paired-pulse ratios of EPSCs \u2013 is needed to further support the conclusion on presynaptic release deficits.\n\nReviewer #1 (Recommendations for the authors):\n\nThe selective localization of \u03b1-synuclein to vGLUT1, but not vGLUT2, positive terminals is convincing. The effect of PFFs on EPSCs in the amygdala and on short-term depression in cortical-amygdala synapses is also convincing. This is really the first study to my knowledge that really shows that pathologic \u03b1-synuclein disrupts amygdala physiology and is therefore very important for the field.\n\nHowever, the authors try to claim that the defects are caused by the depletion of normal \u03b1-synuclein in vGLUT1 terminals. The main technique used for this was immunofluorescence with one synuclein antibody. It is possible that the formation of aggregates masks the epitope for the antibody used. Does IF with another synuclein antibody show the same results? Does increasing expression of synuclein at these terminals rescue the defects?\n\nThere is no data that there are abnormal aggregates in the amygdala. Can the authors please show proteinase K digested tissue with an antibody to total synuclein or use an antibody to phosphorylated synuclein?\n\nAlso, the mechanism of how potential abnormal \u03b1-synuclein causes reduced short-term plasticity is unclear. Did the aggregates sequester vesicles and prevent release from the reserve pool? Was the RRP diminished?\n\nExcellent work has shown that normal \u03b1-synuclein acts as a clamp-on vesicle release- how does this data support or refute these studies (PMID: 31110017)?\n\nThe use of the PFF model and \u03b1-synuclein KO mice was well-chosen however, PBS as a control for a protein injection model might not be the best fit. Consider a monomer injected mouse as another negative control to control for injections of protein.\n\nReviewer #2 (Recommendations for the authors):\n\n1. Page 1 (starting with Title page) line 144: \"buttons\" should be boutons.\n\n2. The Discussion section would probably benefit from a little expansion. Along these lines, there are some points in the results that may be better left for the discussion (for example, much of the second half of the second paragraph on page 10).\n\n3. Page 11 line 175- clarify if it is the amount of \"soluble\" \u03b1-synuclein that's reduced in cortical axon terminals.\n\n4. Page 13 line 203: \"temporary\" should be temporal.\n\n5. Page 13 line 207: \"neglectable\" should be negligible.\n\nReviewer #3 (Recommendations for the authors):\n\n1. The authors stated that \"One-month post-injection, we detected robust 122 \u03b1Syn pathology in vGluT1+ cerebral cortical regions (e.g., the temporal association cortex (TeA) and the perirhinal cortex), but we barely observed any cytoplasmic aggregates in vGluT2+ thalamic regions (data not shown), which is consistent with earlier reports\".\n\n\"did not detect difference in the cortico-BLA transmission between PFFs152 versus PBS-injected \u03b1Syn KO mice (data not shown).\n\nData not shown \u2013 This should be replaced by real data.\n\n2. What are the endogenous expression levels of a-syn in the thalamus? Please provide a quantitative description.\n\n3. Because the striatum also receives convergent cortical and thalamic inputs, it would strengthen the conclusion if the authors systematically investigate corticostriatal vs thalmostriatal terminals in parallel.\n\n4. The authors used optogenetic tools to verify the results using electrical stimulation of external and internal capsules. It would be helpful if release probability is also compared using optogenetic stimulation. Indeed, the desensitization properties of ChR2 may complicate the readout. However, the relative change in EPSC amplitudes would further strengthen the claim.\n",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "60a8b014-4a32-4675-88ea-aa06e9e4d439",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C1",
+      "claim": "\u03b1-synuclein (\u03b1Syn) is a presynaptic protein suggested to be involved in the pathogenesis of Parkinson's disease (PD).",
+      "claim_type": "EXPLICIT",
+      "source": "The presynaptic protein \u03b1-synuclein (\u03b1Syn) has been suggested to be involved in the pathogenesis of Parkinson's disease (PD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by references to established scientific literature about \u03b1Syn's role in PD pathogenesis.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "f18fe708-cf92-4334-b05c-c688730ccc89",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C2",
+      "claim": "In PD, the amygdala is prone to develop insoluble \u03b1Syn aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "In PD, the amygdala is prone to develop insoluble \u03b1Syn aggregates, and it has been suggested that circuit dysfunction involving the amygdala contributes to the psychiatric symptoms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by references to established knowledge about \u03b1Syn pathology distribution in PD.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "355b5dda-84e3-4d97-9359-e174a483158e",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C3",
+      "claim": "Circuit dysfunction involving the amygdala contributes to psychiatric symptoms in PD.",
+      "claim_type": "EXPLICIT",
+      "source": "In PD, the amygdala is prone to develop insoluble \u03b1Syn aggregates, and it has been suggested that circuit dysfunction involving the amygdala contributes to the psychiatric symptoms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by references to prior research suggesting a link between amygdala dysfunction and psychiatric symptoms.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "c65046ae-39f2-4a2b-89c6-1a69559d2d9e",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C4",
+      "claim": "\u03b1Syn is primarily present in vesicular glutamate transporter 1-expressing (vGluT1+) terminals in the mouse BLA.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that \u03b1Syn is primarily present in the vesicular glutamate transporter 1-expressing (vGluT1+) terminals in the mouse BLA, which is consistent with higher levels of \u03b1Syn expression in vGluT1+ glutamatergic neurons in the cerebral cortex relative to the vGluT2+ glutamatergic neurons in the thalamus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from immunohistochemical analysis shown in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "c0b7ce54-90e4-4e8d-8880-e2f2fd3851af",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C5",
+      "claim": "vGluT1+ glutamatergic neurons in the cerebral cortex have higher levels of \u03b1Syn expression relative to vGluT2+ glutamatergic neurons in the thalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that \u03b1Syn is primarily present in the vesicular glutamate transporter 1-expressing (vGluT1+) terminals in the mouse BLA, which is consistent with higher levels of \u03b1Syn expression in vGluT1+ glutamatergic neurons in the cerebral cortex relative to the vGluT2+ glutamatergic neurons in the thalamus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the SncaNLS/NLS reporter mice shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "a3a128f5-9fcf-469b-b139-6df871871c2e",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C6",
+      "claim": "\u03b1Syn aggregation selectively decreased cortico-BLA transmission but not thalamo-BLA transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that \u03b1Syn aggregation selectively decreased the cortico-BLA, but not the thalamo-BLA, transmission; and that cortico-BLA synapses displayed enhanced short-term depression upon repetitive stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by electrophysiological data presented in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "ff9d3e44-fe01-4a27-a9d7-7c08dfaa3af3",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C7",
+      "claim": "Cortico-BLA synapses displayed enhanced short-term depression upon repetitive stimulation in the presence of \u03b1Syn aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that \u03b1Syn aggregation selectively decreased the cortico-BLA, but not the thalamo-BLA, transmission; and that cortico-BLA synapses displayed enhanced short-term depression upon repetitive stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by electrophysiological data presented in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "b6e99537-e353-4b63-8ab0-228c4fc40a49",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C8",
+      "claim": "vGluT1+ axon terminals exhibited decreased levels of soluble \u03b1Syn in the PFFs model.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, using confocal microscopy, we found that vGluT1+ axon terminals exhibited decreased levels of soluble \u03b1Syn, which suggests that lower levels of soluble \u03b1Syn might underlie the enhanced short-term depression of cortico-BLA synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by confocal microscopy data presented in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "b10cbe7a-e526-4268-9a97-e8312b051146",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C9",
+      "claim": "Lower levels of soluble \u03b1Syn might underlie the enhanced short-term depression of cortico-BLA synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, using confocal microscopy, we found that vGluT1+ axon terminals exhibited decreased levels of soluble \u03b1Syn, which suggests that lower levels of soluble \u03b1Syn might underlie the enhanced short-term depression of cortico-BLA synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the observed correlation between decreased soluble \u03b1Syn and enhanced synaptic depression.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "5e3f09c6-d145-49b3-b865-477657717eb4",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C10",
+      "claim": "Cortico-BLA synaptic depression was enhanced in \u03b1Syn knockout mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with this idea, we found that cortico-BLA synaptic depression was also enhanced in \u03b1Syn knockout mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by electrophysiological data from \u03b1Syn knockout mice presented in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "6adb10d2-de01-431e-920c-6e957eb60c64",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C11",
+      "claim": "Both basal and dynamic cortico-BLA transmission were disrupted by abnormal aggregation of \u03b1Syn.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, both basal and dynamic cortico-BLA transmission were disrupted by abnormal aggregation of \u03b1Syn and these changes might be relevant to the perturbed cortical control of the amygdala that has been suggested to play a role in psychiatric symptoms in PD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple experimental findings presented in Figures 3-6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "c21a269b-1f58-4727-9c4a-769cb3ee3b27",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C12",
+      "claim": "Disrupted cortico-BLA transmission might be relevant to perturbed cortical control of the amygdala that plays a role in psychiatric symptoms in PD.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, both basal and dynamic cortico-BLA transmission were disrupted by abnormal aggregation of \u03b1Syn and these changes might be relevant to the perturbed cortical control of the amygdala that has been suggested to play a role in psychiatric symptoms in PD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, connecting experimental findings to clinical observations through inference.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "1323510c-5b20-44ae-8011-fedd3995bd5c",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C13",
+      "claim": "\u03b1Syn is a soluble protein abundant at presynaptic axon terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b1-synuclein (\u03b1Syn) is a soluble protein abundant at presynaptic axon terminals, where it regulates the dynamics of synaptic vesicles through interaction with synaptic proteins and presynaptic membranes (Burr\u00e9 et al., 2010; Runwal and Edwards, 2021; Vargas et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "a05a9633-ab1f-401a-ae42-f9be9f892669",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C14",
+      "claim": "\u03b1Syn regulates the dynamics of synaptic vesicles through interaction with synaptic proteins and presynaptic membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b1-synuclein (\u03b1Syn) is a soluble protein abundant at presynaptic axon terminals, where it regulates the dynamics of synaptic vesicles through interaction with synaptic proteins and presynaptic membranes (Burr\u00e9 et al., 2010; Runwal and Edwards, 2021; Vargas et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "1a735068-0e2b-424f-8b2a-55c25f02f78b",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C15",
+      "claim": "\u03b1Syn is prone to form insoluble cytoplasmic aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b1Syn is also prone to form insoluble cytoplasmic aggregates, which are the major protein component of Lewy pathology seen in synucleinopathies like Parkinson's disease (PD) (Mezey et al., 1998; Spillantini et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "90c4705e-4180-4b33-86f6-093acf53b853",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C16",
+      "claim": "Insoluble \u03b1Syn aggregates are the major protein component of Lewy pathology seen in synucleinopathies like Parkinson's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b1Syn is also prone to form insoluble cytoplasmic aggregates, which are the major protein component of Lewy pathology seen in synucleinopathies like Parkinson's disease (PD) (Mezey et al., 1998; Spillantini et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "cc9f9bfe-ad90-4703-8eed-351c24eb700c",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C17",
+      "claim": "Pathologic \u03b1Syn propagates between synaptically interconnected brain regions and underlies PD progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing evidence supports the notion that pathologic \u03b1Syn propagates between synaptically interconnected brain regions and underlies PD progression (Angot et al., 2010; Luk et al., 2012; Uemura et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to recent literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "1cceb05e-4ac5-4d2e-8629-deab7d05c621",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C18",
+      "claim": "The amygdala is a key limbic structure for emotion regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The amygdala is a key limbic structure for emotion regulation (Janak and Tye, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "25913682-ae18-4894-921e-eea7cf4a1c40",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C19",
+      "claim": "Cortical control of the amygdala activity is impaired in PD, leading to inappropriate encoding of emotion valence or deficits in linking emotion to behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Compelling clinical evidence indicates that cortical control of the amygdala activity is impaired in PD, leading to an inappropriate encoding of emotion valence or deficits in linking emotion to behavior (Bowers et al., 2006; Hu et al., 2015; Yoshimura et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to clinical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "ce92348c-7ddd-4106-bd45-37a0cf7cd978",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C20",
+      "claim": "The amygdala shows selective vulnerability to Lewy pathology.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the amygdala shows selective vulnerability to Lewy pathology (Harding et al., 2002; Nelson et al., 2018; Sorrentino et al., 2019), thus an impaired amygdala network function has been proposed to underlie the disrupted emotion processing in PD patients (Harding et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to pathological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "78e11168-1055-45fa-b167-afe2d5079a28",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C21",
+      "claim": "Impaired amygdala network function has been proposed to underlie disrupted emotion processing in PD patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the amygdala shows selective vulnerability to Lewy pathology (Harding et al., 2002; Nelson et al., 2018; Sorrentino et al., 2019), thus an impaired amygdala network function has been proposed to underlie the disrupted emotion processing in PD patients (Harding et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a hypothesis in the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "ed74c64f-e52a-45b8-b32b-8519268cd47a",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C22",
+      "claim": "\u03b1Syn immunoreactivity colocalizes with vGluT1+ puncta in the BLA, cerebral cortex, and striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1 shows that \u03b1Syn immunoreactivity colocalizes with vGluT1+ puncta but is absent where there are vGluT2+ puncta, in the BLA, the cerebral cortex, and the striatum.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by confocal microscopy data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "b817b1fa-d2e2-400a-b163-48c940b765e5",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C23",
+      "claim": "\u03b1Syn immunoreactivity is absent where there are vGluT2+ puncta in the BLA, cerebral cortex, and striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1 shows that \u03b1Syn immunoreactivity colocalizes with vGluT1+ puncta but is absent where there are vGluT2+ puncta, in the BLA, the cerebral cortex, and the striatum.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by confocal microscopy data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "b14cf4ac-5bbc-4fed-a4f7-3393660f3c53",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C24",
+      "claim": "The Pearson correlation coefficient between vGluT1 and \u03b1Syn in the BLA is 0.82 \u00b1 0.007.",
+      "claim_type": "EXPLICIT",
+      "source": "Bar graphs showing Pearson correlation coefficient between vGluT1 and \u03b1Syn, as well as between vGluT2 and \u03b1Syn, in the BLA (\u03b1Syn/vGluT1=0.82 \u00b1 0.007, \u03b1Syn/vGluT2=0.17 \u00b1 0.004; n=18 slices/4 mice; p<0.0001, MWU)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative analysis of confocal microscopy data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "8eb4acff-b19e-49f1-978a-adf483425092",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C25",
+      "claim": "The Pearson correlation coefficient between vGluT2 and \u03b1Syn in the BLA is 0.17 \u00b1 0.004.",
+      "claim_type": "EXPLICIT",
+      "source": "Bar graphs showing Pearson correlation coefficient between vGluT1 and \u03b1Syn, as well as between vGluT2 and \u03b1Syn, in the BLA (\u03b1Syn/vGluT1=0.82 \u00b1 0.007, \u03b1Syn/vGluT2=0.17 \u00b1 0.004; n=18 slices/4 mice; p<0.0001, MWU)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative analysis of confocal microscopy data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "c691edd8-bbea-46a3-b046-c22c18103800",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C26",
+      "claim": "The Pearson correlation coefficient between vGluT1 and \u03b1Syn in the cerebral cortex is 0.82 \u00b1 0.006.",
+      "claim_type": "EXPLICIT",
+      "source": "cerebral cortex (\u03b1Syn/vGluT1=0.82 \u00b1 0.006, \u03b1Syn/vGluT2=0.12 \u00b1 0.009; n=8 slices/3 mice; p=0.0002, MWU)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative analysis of confocal microscopy data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "5d079a95-8757-4866-ac6b-bbfbe78e8c53",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C27",
+      "claim": "The Pearson correlation coefficient between vGluT2 and \u03b1Syn in the cerebral cortex is 0.12 \u00b1 0.009.",
+      "claim_type": "EXPLICIT",
+      "source": "cerebral cortex (\u03b1Syn/vGluT1=0.82 \u00b1 0.006, \u03b1Syn/vGluT2=0.12 \u00b1 0.009; n=8 slices/3 mice; p=0.0002, MWU)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative analysis of confocal microscopy data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "2b5f39d4-12b1-4ee4-bef0-ff5fee35ee49",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C28",
+      "claim": "The Pearson correlation coefficient between vGluT1 and \u03b1Syn in the striatum is 0.83 \u00b1 0.006.",
+      "claim_type": "EXPLICIT",
+      "source": "and the striatum (\u03b1Syn/vGluT1=0.83 \u00b1 0.006, \u03b1Syn/vGluT2=0.17 \u00b1 0.02; n=8 slices/3 mice; p=0.0002, MWU).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative analysis of confocal microscopy data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "16122682-cef6-4625-aba7-17b1c28c5fd3",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C29",
+      "claim": "The Pearson correlation coefficient between vGluT2 and \u03b1Syn in the striatum is 0.17 \u00b1 0.02.",
+      "claim_type": "EXPLICIT",
+      "source": "and the striatum (\u03b1Syn/vGluT1=0.83 \u00b1 0.006, \u03b1Syn/vGluT2=0.17 \u00b1 0.02; n=8 slices/3 mice; p=0.0002, MWU).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative analysis of confocal microscopy data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "8b2a98d1-cb37-4d91-9d1d-c4a8273cbf04",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C30",
+      "claim": "Earlier in situ hybridization studies showed higher \u03b1Syn mRNA expression in the cerebral cortex and hippocampus than in the thalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "Earlier in situ hybridization studies showed higher \u03b1Syn mRNA expression in the cerebral cortex and the hippocampus than in the thalamus (Abeliovich et al., 2000; Ziolkowska et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior in situ hybridization studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "52d033f9-6526-409c-b0ae-881bd6d4e659",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C31",
+      "claim": "SncaNLS/NLS reporter mice localize endogenous \u03b1Syn to the nucleus, allowing visualization of cellular topography.",
+      "claim_type": "EXPLICIT",
+      "source": "These mice localize endogenous \u03b1Syn to the nucleus that allows the visualization of cellular topography (Geertsma et al., 2022), circumventing the diffused \u03b1Syn immunoreactivity in WT mice (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citation to the paper describing the mouse model and data shown in Figure 2.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "4f80433f-d513-4b7a-8327-d1d28ca7f206",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C32",
+      "claim": "\u03b1Syn was heavily expressed in cortical layer V/VI neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the \u03b1Syn was heavily expressed in cortical layer V/VI neurons, but only moderately or barely expressed in thalamic regions, particularly in the midline thalamus that provides major excitation to the BLA (Ahmed et al., 2021; Amir et al., 2019; Hintiryan et al., 2021; Figure 2B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data from SncaNLS/NLS reporter mice shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "b6253d04-c6b6-4a34-a787-c6b0ada3173e",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C33",
+      "claim": "\u03b1Syn was only moderately or barely expressed in thalamic regions, particularly in the midline thalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the \u03b1Syn was heavily expressed in cortical layer V/VI neurons, but only moderately or barely expressed in thalamic regions, particularly in the midline thalamus that provides major excitation to the BLA (Ahmed et al., 2021; Amir et al., 2019; Hintiryan et al., 2021; Figure 2B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data from SncaNLS/NLS reporter mice shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "b4553f6a-d076-4a97-8abc-4d581a71cb7c",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C34",
+      "claim": "The midline thalamus provides major excitation to the BLA.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the \u03b1Syn was heavily expressed in cortical layer V/VI neurons, but only moderately or barely expressed in thalamic regions, particularly in the midline thalamus that provides major excitation to the BLA (Ahmed et al., 2021; Amir et al., 2019; Hintiryan et al., 2021; Figure 2B\u2013D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to anatomical studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "e22eafe5-2f4c-40c0-802f-3aebebac2896",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C35",
+      "claim": "The proportion of \u03b1Syn-positive nuclei in the cerebral cortex is 91.9 \u00b1 4.7%.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of the proportion of \u03b1Syn-positive nuclei (C, % \u03b1Syn positive cells, cortex=91.9 \u00b1 4.7%, CMT=0 \u00b1 0%; PVT=19.9 \u00b1 6.3%, n=3 mice)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative analysis of SncaNLS/NLS reporter mice shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "bc7d51d9-da10-4744-92d1-7a658337e8f3",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C36",
+      "claim": "The proportion of \u03b1Syn-positive nuclei in the centromedial thalamus (CMT) is 0 \u00b1 0%.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of the proportion of \u03b1Syn-positive nuclei (C, % \u03b1Syn positive cells, cortex=91.9 \u00b1 4.7%, CMT=0 \u00b1 0%; PVT=19.9 \u00b1 6.3%, n=3 mice)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative analysis of SncaNLS/NLS reporter mice shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "9d04c152-7023-44e6-9826-115a927fc7dd",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C37",
+      "claim": "The proportion of \u03b1Syn-positive nuclei in the periventricular thalamus (PVT) is 19.9 \u00b1 6.3%.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of the proportion of \u03b1Syn-positive nuclei (C, % \u03b1Syn positive cells, cortex=91.9 \u00b1 4.7%, CMT=0 \u00b1 0%; PVT=19.9 \u00b1 6.3%, n=3 mice)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative analysis of SncaNLS/NLS reporter mice shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "b9dbb42b-d713-4ecd-98eb-f7d725b2350d",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C38",
+      "claim": "The average relative intensity of \u03b1Syn in the cerebral cortex is 0.04 \u00b1 0.001.",
+      "claim_type": "EXPLICIT",
+      "source": "or average relative intensity of \u03b1Syn in the different regions (cerebral cortex=0.04 \u00b1 0.001, n=742 cells/3 mice; CMT=0 \u00b1 0, n=364 cells/3 mice; PVT=0.01 \u00b1 0.0007, n=734 cells/3 mice).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative analysis of SncaNLS/NLS reporter mice shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "081e2370-322b-4309-ac4b-24e1a2059ea2",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C39",
+      "claim": "The average relative intensity of \u03b1Syn in the centromedial thalamus (CMT) is 0 \u00b1 0.",
+      "claim_type": "EXPLICIT",
+      "source": "or average relative intensity of \u03b1Syn in the different regions (cerebral cortex=0.04 \u00b1 0.001, n=742 cells/3 mice; CMT=0 \u00b1 0, n=364 cells/3 mice; PVT=0.01 \u00b1 0.0007, n=734 cells/3 mice).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative analysis of SncaNLS/NLS reporter mice shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "a752678e-ebfb-465a-aea7-6a44a82fb494",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C40",
+      "claim": "The average relative intensity of \u03b1Syn in the periventricular thalamus (PVT) is 0.01 \u00b1 0.0007.",
+      "claim_type": "EXPLICIT",
+      "source": "or average relative intensity of \u03b1Syn in the different regions (cerebral cortex=0.04 \u00b1 0.001, n=742 cells/3 mice; CMT=0 \u00b1 0, n=364 cells/3 mice; PVT=0.01 \u00b1 0.0007, n=734 cells/3 mice).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative analysis of SncaNLS/NLS reporter mice shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "e85e6580-9c6e-4fa7-996b-a7f004a7d3bd",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C41",
+      "claim": "Endogenous levels of \u03b1Syn are determinants of the propensity to form \u03b1Syn aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that the endogenous levels of \u03b1Syn are determinants of the propensity to form \u03b1Syn aggregates, we hypothesize that vGluT1+ neurons and their terminals are more susceptible to \u03b1Syn pathology compared to those are vGluT2+ (Erskine et al., 2018; Vasili et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to literature on \u03b1Syn aggregation propensity.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "e99bb1ac-7d81-4f54-a0fd-1e5eb134075f",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C42",
+      "claim": "vGluT1+ neurons and their terminals are more susceptible to \u03b1Syn pathology compared to vGluT2+ neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that the endogenous levels of \u03b1Syn are determinants of the propensity to form \u03b1Syn aggregates, we hypothesize that vGluT1+ neurons and their terminals are more susceptible to \u03b1Syn pathology compared to those are vGluT2+ (Erskine et al., 2018; Vasili et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on inference from endogenous \u03b1Syn levels and cited literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "69c4233e-b1ab-4033-af3f-0b3db914ba7d",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C43",
+      "claim": "Robust \u03b1Syn pathology was detected in vGluT1+ cerebral cortical regions one month post-PFFs injection.",
+      "claim_type": "EXPLICIT",
+      "source": "One-month post-injection, we detected robust \u03b1Syn pathology in vGluT1+ cerebral cortical regions (e.g. the temporal association cortex (TeA), the motor cortex, and the perirhinal cortex, Figure 3 and A1\u2013A) and the BLA (Figure 3B\u2013C), but we barely observed any cytoplasmic aggregates in vGluT2+ thalamic regions (Figure 3 and A4\u2013A5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunohistochemical data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "b1d325e9-4d03-401a-b034-b45c1933dacf",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C44",
+      "claim": "Robust \u03b1Syn pathology was detected in the BLA one month post-PFFs injection.",
+      "claim_type": "EXPLICIT",
+      "source": "One-month post-injection, we detected robust \u03b1Syn pathology in vGluT1+ cerebral cortical regions (e.g. the temporal association cortex (TeA), the motor cortex, and the perirhinal cortex, Figure 3 and A1\u2013A) and the BLA (Figure 3B\u2013C), but we barely observed any cytoplasmic aggregates in vGluT2+ thalamic regions (Figure 3 and A4\u2013A5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunohistochemical data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "713f35d7-a4c8-4b9f-8325-8171fe111439",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C45",
+      "claim": "Barely any cytoplasmic aggregates were observed in vGluT2+ thalamic regions one month post-PFFs injection.",
+      "claim_type": "EXPLICIT",
+      "source": "One-month post-injection, we detected robust \u03b1Syn pathology in vGluT1+ cerebral cortical regions (e.g. the temporal association cortex (TeA), the motor cortex, and the perirhinal cortex, Figure 3 and A1\u2013A) and the BLA (Figure 3B\u2013C), but we barely observed any cytoplasmic aggregates in vGluT2+ thalamic regions (Figure 3 and A4\u2013A5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunohistochemical data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "c5868268-c575-47eb-a44b-bc3b30c79c3e",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C46",
+      "claim": "The pattern of \u03b1Syn pathology is consistent with differences in endogenous \u03b1Syn levels between the cerebral cortex and thalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern of pathology is supported by differences in endogenous \u03b1Syn levels between the cerebral cortex and thalamus (Figure 2B\u2013D) and is consistent with earlier reports (Burtscher et al., 2019; Henderson et al., 2019; Luk et al., 2012; Stoyka et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data from Figure 2 and citations to prior studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "b111f0e1-5252-477e-b591-ee4a3589bf18",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C47",
+      "claim": "Neurons in the midline thalamus were retrogradely labeled when retrobeads were injected into the same location as PFFs in the striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, neurons in the midline thalamus were retrogradely labeled when retrobeads were injected into the same location as for PFFs in the striatum (Figure 3A6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by retrograde tracing data shown in Figure 3A6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "eb65de48-df99-4de3-879b-e57a8ce9727b",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C48",
+      "claim": "The absence of cytoplasmic pS129 \u03b1Syn pathology in the thalamus was not due to technical issues.",
+      "claim_type": "EXPLICIT",
+      "source": "We concluded that the absence of cytoplasmic pS129 \u03b1Syn pathology in the thalamus was not due to technical issues (i.e. missing thalamostriatal axon terminals for PFFs internalization).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on inference from the retrograde labeling experiment.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "35b4b233-466b-4a06-9bf8-cafe92d5f632",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C49",
+      "claim": "The amplitude of electrically evoked cortico-BLA EPSCs was greatly decreased in slices from PFFs-injected WT mice relative to controls one month post-injection.",
+      "claim_type": "EXPLICIT",
+      "source": "One-month post-injection, the amplitude of electrically evoked cortico-BLA excitatory postsynaptic currents (EPSCs) was greatly decreased in the slices from PFFs-injected WT mice relative to those from controls (Figure 3D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiological data shown in Figure 3D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "d8c2a2a3-7bfc-4f8d-b47c-f04afca69bda",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C50",
+      "claim": "Prominent pS129 \u03b1Syn pathology can be detected along the external capsule where cortical afferents enter the BLA.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, prominent pS129 \u03b1Syn pathology can be detected along the external capsule where the cortical afferents enter the BLA (Figure 3B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunohistochemical data shown in Figure 3B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "8d99bfcb-b997-499f-b5a9-1f6245204e6a",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C51",
+      "claim": "There was no difference in the amplitude of thalamo-BLA EPSCs between PFFs-injected mice and controls.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, there was no difference in the amplitude of thalamo-BLA EPSCs between the PFFs-injected mice and controls (Figure 3F\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiological data shown in Figure 3F-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "d83ae521-693b-432e-94e5-2b7f872f7407",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C52",
+      "claim": "The amplitude of optogenetically-evoked cortico-BLA EPSCs in slices from PFFs-injected mice was decreased relative to PBS-injected controls one month post-injection.",
+      "claim_type": "EXPLICIT",
+      "source": "One-month post-injection, the amplitude of optogenetically-evoked cortico-BLA EPSCs in slices from PFFs-injected mice was decreased relative to those from PBS-injected controls (Figure 3H\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by optogenetic electrophysiology data shown in Figure 3H-K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "b9f54fe7-37a4-4e55-8ff1-16f1cc6326a8",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C53",
+      "claim": "There was no difference in the amplitude of optogenetically-evoked thalamo-BLA EPSCs between PFFs-injected mice and controls.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, we did not detect the difference in the amplitude of optogenetically-evoked thalamo-BLA EPSCs between groups (Figure 3L\u2013O).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by optogenetic electrophysiology data shown in Figure 3L-O.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "c4128757-250f-429f-bff6-a5a389a67234",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C54",
+      "claim": "The presence of \u03b1Syn makes vGluT1+ cortical neurons and their axons more vulnerable to \u03b1Syn pathology.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, we demonstrated that the presence of \u03b1Syn makes vGluT1+ cortical neurons and their axons more vulnerable to \u03b1Syn pathology and that this pathology is associated with detrimental effects on synaptic transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental findings showing selective vulnerability.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "65a575fa-e4cc-48c2-8449-c944b1ffe496",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C55",
+      "claim": "\u03b1Syn pathology is associated with detrimental effects on synaptic transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, we demonstrated that the presence of \u03b1Syn makes vGluT1+ cortical neurons and their axons more vulnerable to \u03b1Syn pathology and that this pathology is associated with detrimental effects on synaptic transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by electrophysiological data showing decreased transmission.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "f0e867ee-de33-4ea9-9ee6-f3f83be98f62",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C56",
+      "claim": "There was no difference in cortico-BLA transmission between PFFs- versus PBS-injected \u03b1Syn KO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, consistent with the development of \u03b1Syn pathology requiring the presence of endogenous \u03b1Syn in the PFFs model (Luk et al., 2012; Volpicelli-Daley et al., 2011), we did not detect the difference in the cortico-BLA transmission between PFFs- versus PBS-injected \u03b1Syn KO mice (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiological data from \u03b1Syn KO mice shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "98ca2ba9-593d-40fa-9fc9-e075fca8d4eb",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C57",
+      "claim": "The development of \u03b1Syn pathology requires the presence of endogenous \u03b1Syn in the PFFs model.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, consistent with the development of \u03b1Syn pathology requiring the presence of endogenous \u03b1Syn in the PFFs model (Luk et al., 2012; Volpicelli-Daley et al., 2011), we did not detect the difference in the cortico-BLA transmission between PFFs- versus PBS-injected \u03b1Syn KO mice (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies and data from \u03b1Syn KO mice.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "bfacd1cd-c2cd-489d-bae2-b875fec500de",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C58",
+      "claim": "The impaired cortico-BLA transmission in the PFFs model is likely caused by gained toxic properties of \u03b1Syn as it aggregates, rather than intrastriatal PFFs injection per se.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, because of the lack of detrimental effect in \u03b1Syn KO mice, we conclude that the impaired cortico-BLA transmission in the PFFs model is likely caused by the gained toxic properties of \u03b1Syn as it aggregates, instead of intrastriatal PFFs injection per se (Cookson and van der Brug, 2008; Volpicelli-Daley et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on inference from the \u03b1Syn KO data and cited literature.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "9bdcc967-408f-47b4-b887-2b23ee9279b3",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C59",
+      "claim": "The density of vGluT1-immunoreactive puncta in the BLA was not altered between PFFs- and PBS-injected mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The density of vGluT1-immunoreactive puncta was not altered between PFFs- and PBS-injected mice (Figure 4A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by stereological analysis shown in Figure 4A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "29152b79-95a8-468b-8740-19e554bd3aaa",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C60",
+      "claim": "There is no loss of cortical axon terminals or cortico-BLA synapses in PFFs-injected mice at one month post-injection.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that there is no loss of cortical axon terminals or cortico-BLA synapses in PFFs-injected mice at one-month post-injection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on inference from the vGluT1 density data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "c1b694aa-81d6-431b-af6c-2111b567db9e",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C61",
+      "claim": "The ratio of EPSC2 to EPSC1 at cortico-BLA synapses (50 ms inter-pulse interval) was not altered between PFFs-injected mice and controls using electric stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Using electric stimulation approach, the ratio of EPSC2 to EPSC1 (at a 50 ms inter-pulse interval) was not altered between groups (Figure 4D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by paired-pulse electrophysiology data shown in Figure 4D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "b4eb87a9-eb09-45ac-a87c-c22836adb701",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C62",
+      "claim": "The ratio of EPSC2/EPSC1 at cortico-BLA synapses was not altered by \u03b1Syn pathology when assessed using optogenetics (100 ms inter-pulse interval).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the ratio of EPSC2/EPSC1 at cortico-BLA synapses was not altered by \u03b1Syn pathology when assessed using optogenetics (at a 100 ms inter-pulse interval, Figure 4F\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by optogenetic paired-pulse data shown in Figure 4F-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "982046a1-dc3d-403a-96ae-58fc580e2455",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C63",
+      "claim": "Paired-pulses of optogenetic stimulation led to short-term depression of cortico-BLA transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in contrast to the short-term facilitation in response to electric stimulation (Figure 4D\u2013E), paired-pulses of optogenetic stimulation always led to short-term depression of cortico-BLA transmission (Figure 4F\u2013G), which might be due to the deactivation of ChR2 itself.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by optogenetic data shown in Figure 4F-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "146d2103-8c88-4df6-84fd-f174b5816cbd",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C64",
+      "claim": "Short-term depression in response to optogenetic stimulation might be due to the deactivation of ChR2 itself.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in contrast to the short-term facilitation in response to electric stimulation (Figure 4D\u2013E), paired-pulses of optogenetic stimulation always led to short-term depression of cortico-BLA transmission (Figure 4F\u2013G), which might be due to the deactivation of ChR2 itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed short-term depression.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "c6c7f344-9188-4f42-9b8a-d392da54d2f9",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C65",
+      "claim": "The decreased cortico-BLA transmission was not caused by a lower initial release probability.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the above data suggest that the decreased cortico-BLA transmission was not caused by a lower initial release probability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on inference from the paired-pulse ratio data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "4582028e-0af4-42d2-b147-479d1290f4c5",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C66",
+      "claim": "The frequency of optogenetically-evoked cortico-BLA asynchronous EPSCs (Sr2+-EPSCs) decreased significantly in slices from PFFs-injected mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency of optogenetically-evoked cortico-BLA asynchronous EPSCs (Sr2+-EPSCs) decreased significantly, but the amplitude of cortico-BLA Sr2+-EPSCs was not altered in slices from PFFs-injected mice (Figure 4H\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Sr2+ replacement experiment data shown in Figure 4H-J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "cdd0301c-23c1-400f-8bf4-e5c81b190fc2",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C67",
+      "claim": "The amplitude of cortico-BLA Sr2+-EPSCs was not altered in slices from PFFs-injected mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency of optogenetically-evoked cortico-BLA asynchronous EPSCs (Sr2+-EPSCs) decreased significantly, but the amplitude of cortico-BLA Sr2+-EPSCs was not altered in slices from PFFs-injected mice (Figure 4H\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Sr2+ replacement experiment data shown in Figure 4H-J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "d38e89ef-d51a-461d-954b-ae9198e05a1f",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C68",
+      "claim": "Fewer readily releasable synaptic vesicles and/or release sites can explain the observed reduction in cortico-BLA transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the unaltered number of vGluT1+ axon terminals and initial release probability of cortico-BLA synapses, fewer readily releasable synaptic vesicles and/or release sites can explain the observed reduction in cortico-BLA transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the combination of findings from multiple experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "9eb7c3c3-cf37-4365-b6e1-764571bbde83",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C69",
+      "claim": "Cortico-BLA inputs showed a significant reduction of AMPA/NMDA ratio in slices from PFFs-injected mice relative to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "In response to optogenetic stimulation, cortico-BLA inputs showed a significant reduction of AMPA/NMDA ratio in slices from PFFs-injected mice relative to controls (Figure 4K and L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiological data shown in Figure 4K-L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "212db03b-2cf9-404d-8dfa-ac8cab6b5836",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C70",
+      "claim": "An enhanced inward rectification of AMPA-EPSCs was detected at cortico-BLA synapses in slices from PFFs-injected mice relative to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we also detected an enhanced inward rectification of AMPA-EPSCs at cortico-BLA synapses in slices from PFFs-injected mice relative to controls (Figure 4M), indicating a relatively increased contribution of GluA2-lacking, Ca2+-permeable AMPA receptors to cortico-BLA transmission in PFFs-injected mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiological data shown in Figure 4M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "b37ad88b-ff39-4d37-9b5d-0abe097f1d28",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C71",
+      "claim": "Enhanced AMPA receptor rectification indicates a relatively increased contribution of GluA2-lacking, Ca2+-permeable AMPA receptors to cortico-BLA transmission in PFFs-injected mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we also detected an enhanced inward rectification of AMPA-EPSCs at cortico-BLA synapses in slices from PFFs-injected mice relative to controls (Figure 4M), indicating a relatively increased contribution of GluA2-lacking, Ca2+-permeable AMPA receptors to cortico-BLA transmission in PFFs-injected mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known properties of GluA2-lacking AMPA receptors.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "a17c0a5e-0501-40f9-8e40-d363e996ca59",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C72",
+      "claim": "\u03b1Syn pathology triggers postsynaptic adaptations at cortico-BLA synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that \u03b1Syn pathology also triggers postsynaptic adaptations at cortico-BLA synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on inference from the AMPA/NMDA ratio and rectification data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "c1e9d163-d9de-4502-8957-3f5252170aee",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C73",
+      "claim": "No changes were detected in the AMPA/NMDA ratio from thalamo-BLA synapses between PFFs-injected mice and controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we did not detect changes in the AMPA/NMDA ratio (control=1.24 \u00b1 0.11, PFFs=1.5 \u00b1 0.12, n=16 neurons/ 3 mice per group, p=0.15, MWU) or AMPA receptor rectification (control=1.12 \u00b1 0.1, PFFs=1.28 \u00b1 0.08, n=16 neurons/ 3 mice per group, p=0.25, MWU) from thalamo-BLA synapse between groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by electrophysiological data from thalamo-BLA synapses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "df39c2f5-dc72-4cbd-88be-e2c4f32d54f9",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C74",
+      "claim": "No changes were detected in AMPA receptor rectification from thalamo-BLA synapses between PFFs-injected mice and controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we did not detect changes in the AMPA/NMDA ratio (control=1.24 \u00b1 0.11, PFFs=1.5 \u00b1 0.12, n=16 neurons/ 3 mice per group, p=0.15, MWU) or AMPA receptor rectification (control=1.12 \u00b1 0.1, PFFs=1.28 \u00b1 0.08, n=16 neurons/ 3 mice per group, p=0.25, MWU) from thalamo-BLA synapse between groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by electrophysiological data from thalamo-BLA synapses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "a1a7db2d-e64e-4227-8bec-459ad59def14",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C75",
+      "claim": "\u03b1Syn pathology induces input-specific decrease of postsynaptic AMPA receptor-mediated cortico-BLA transmission, instead of a global reduction of AMPA receptor function in BLA neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the above data suggest that \u03b1Syn pathology induces input-specific decrease of postsynaptic AMPA receptor-mediated cortico-BLA transmission, instead of a global reduction of AMPA receptor function in BLA neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on inference from the differential effects on cortico-BLA versus thalamo-BLA synapses.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "2f91ee98-800c-4ca3-b8e1-77fd0a012ffe",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C76",
+      "claim": "The development of \u03b1Syn pathology selectively decreases the functional cortico-BLA connectivity by inducing both pre- and post-synaptic adaptations.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the development of \u03b1Syn pathology selectively decreases the functional cortico-BLA connectivity by inducing both pre- and post-synaptic adaptations and such functional changes occur prior to overt degeneration of axon terminals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on multiple experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "c8df466a-e2ae-4914-9ee4-0c30f6ff2346",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C77",
+      "claim": "Functional changes in cortico-BLA connectivity occur prior to overt degeneration of axon terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the development of \u03b1Syn pathology selectively decreases the functional cortico-BLA connectivity by inducing both pre- and post-synaptic adaptations and such functional changes occur prior to overt degeneration of axon terminals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the observation of functional deficits without loss of vGluT1+ terminals.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "20a39948-786a-4dd6-bc05-1226556cda1b",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C78",
+      "claim": "Formation of cytoplasmic aggregates is believed to move soluble \u03b1Syn away from the presynaptic boutons, affecting its role in regulating synaptic vesicle pools.",
+      "claim_type": "EXPLICIT",
+      "source": "Formation of cytoplasmic aggregates is believed to move soluble \u03b1Syn away from the presynaptic boutons, affecting its role in regulating synaptic vesicle pools (Benskey et al., 2016; Luk et al., 2009; Volpicelli-Daley et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "215865dd-23c9-45c8-a271-877dca4b12e2",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C79",
+      "claim": "The intensity of \u03b1Syn immunoreactivity within vGluT1+ puncta decreased dramatically in slices from PFFs-injected mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the earlier predictions, the intensity of \u03b1Syn immunoreactivity (Syn1 antibody from BD Biosciences) within vGluT1+ puncta decreased dramatically in slices from PFFs-injected mice, leading to an increased proportion of vGluT1+ boutons that lack a detectable level of \u03b1Syn (Figure 5A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by confocal microscopy data shown in Figure 5A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "6fff86dc-59f8-4547-9b2d-e9af5bf284ee",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C80",
+      "claim": "An increased proportion of vGluT1+ boutons lack a detectable level of \u03b1Syn in slices from PFFs-injected mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the earlier predictions, the intensity of \u03b1Syn immunoreactivity (Syn1 antibody from BD Biosciences) within vGluT1+ puncta decreased dramatically in slices from PFFs-injected mice, leading to an increased proportion of vGluT1+ boutons that lack a detectable level of \u03b1Syn (Figure 5A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by confocal microscopy data shown in Figure 5A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "7a2b9206-ae3d-4608-be56-0df92494bcc9",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C81",
+      "claim": "Both the \u03b1Syn immunoreactivity within vGluT1+ terminals and the proportion of vGluT1+ terminals that are \u03b1Syn-immunoreactive decreased significantly in slices from PFFs-injected mice using Syn9027 antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, both the \u03b1Syn immunoreactivity within vGluT1+ terminals and the proportion of vGluT1+ terminals that are \u03b1Syn-immunoreactive decreased significantly in slices from PFFs-injected mice relative to controls (Figure 5E\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by confocal microscopy data using a different antibody shown in Figure 5E-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "3aaa8848-d8ac-4ad3-9221-9b74213937d3",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C82",
+      "claim": "The percentage of \u03b1Syn-immunoreactive vGluT1+ terminals detected with Syn9027 in PFFs-injected mice was higher than those detected with Syn1.",
+      "claim_type": "EXPLICIT",
+      "source": "The percentage of \u03b1Syn-immunoreactive vGluT1+ terminals detected with Syn9027 in PFFs-injected mice was higher than those detected with Syn1, perhaps reflecting differences in the exposure of their epitopes (Syn1: aa 91\u201399; Syn9027: aa 130\u2013140).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation with a speculative explanation about epitope exposure.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "f3696312-68cc-49e2-8e31-f6a920bf496b",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C83",
+      "claim": "\u03b1Syn pathology reduces the amount of soluble \u03b1Syn present at the cortical axon terminals in the BLA.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that \u03b1Syn pathology reduces the amount of soluble \u03b1Syn present at the cortical axon terminals in the BLA, and in that way could affect its physiological function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on inference from the immunoreactivity data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "1a2c6f38-2e6b-4fe6-9199-6fa4dd18d25e",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C84",
+      "claim": "Reduced soluble \u03b1Syn at cortical axon terminals could affect its physiological function.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that \u03b1Syn pathology reduces the amount of soluble \u03b1Syn present at the cortical axon terminals in the BLA, and in that way could affect its physiological function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the functional consequences of reduced soluble \u03b1Syn.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "28ddfc67-aea4-4532-a684-1ea90496b63b",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C85",
+      "claim": "\u03b1Syn modulates the dynamics of synapse vesicle pools.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b1Syn modulates the dynamics of synapse vesicle pools (Sulzer and Edwards, 2019), which plays a key role in regulating synaptic plasticity and the computational function of neural circuits (Abbott and Regehr, 2004; Alabi and Tsien, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "3d98a327-e082-48cc-904e-ef8811f148ae",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C86",
+      "claim": "Synaptic vesicle pool dynamics play a key role in regulating synaptic plasticity and the computational function of neural circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b1Syn modulates the dynamics of synapse vesicle pools (Sulzer and Edwards, 2019), which plays a key role in regulating synaptic plasticity and the computational function of neural circuits (Abbott and Regehr, 2004; Alabi and Tsien, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "ef08c3a2-4acc-4f3a-8506-1a180d86e810",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C87",
+      "claim": "A progressive depression of cortico-BLA EPSCs was detected in control mice in response to repetitive stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected a progressive depression of cortico-BLA EPSCs in control mice (Figure 6A1 and A2), reflecting mainly a progressive depletion of presynaptic vesicles (Alabi and Tsien, 2012; Cabin et al., 2002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiological data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "b157cdbf-e807-4de3-a085-79aea3d79331",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C88",
+      "claim": "Progressive depression of cortico-BLA EPSCs reflects mainly a progressive depletion of presynaptic vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected a progressive depression of cortico-BLA EPSCs in control mice (Figure 6A1 and A2), reflecting mainly a progressive depletion of presynaptic vesicles (Alabi and Tsien, 2012; Cabin et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interpretation is supported by citations to literature on synaptic depression mechanisms.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "6a242421-9bb4-46b2-b776-68472c0337b6",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C89",
+      "claim": "Cortico-BLA EPSCs in slices from PFFs-injected mice showed greater depression relative to controls in response to repetitive stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the cortico-BLA EPSCs in the slices from PFFs-injected mice showed a greater depression relative to those from controls (Figure 6A1 and A2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiological data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "6d202254-d848-4e91-b641-246e31beb48d",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C90",
+      "claim": "The results are in line with the key role of \u03b1Syn in sustaining and mobilizing synaptic vesicle pools.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are in line with the key role of \u03b1Syn in sustaining and mobilizing synaptic vesicle pools (Cabin et al., 2002; Sulzer and Edwards, 2019; Vargas et al., 2017), and suggest the significant impact of the loss of \u03b1Syn function on synaptic plasticity and circuit computation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interpretation is supported by citations to literature on \u03b1Syn function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "a50ad7f4-7982-488b-a4c5-14c599e54b9f",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C91",
+      "claim": "Loss of \u03b1Syn function has a significant impact on synaptic plasticity and circuit computation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are in line with the key role of \u03b1Syn in sustaining and mobilizing synaptic vesicle pools (Cabin et al., 2002; Sulzer and Edwards, 2019; Vargas et al., 2017), and suggest the significant impact of the loss of \u03b1Syn function on synaptic plasticity and circuit computation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental findings and cited literature.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "5fc676b0-cfce-427c-9e0b-7cca4723cbf9",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C92",
+      "claim": "The amplitude of cortico-BLA EPSCs from \u03b1Syn KO mice exhibited greater depression in response to repetitive stimulation relative to littermate WT controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, the amplitude of cortico-BLA EPSCs from \u03b1Syn KO mice also exhibited greater depression in response to repetitive stimulation relative to littermate WT controls (Figure 6B1\u2013B2), indicating an impaired mobilization of synaptic vesicle pools.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiological data from \u03b1Syn KO mice shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "004afa94-70b9-4034-b04a-b34a360572ee",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C93",
+      "claim": "Enhanced depression of cortico-BLA EPSCs in \u03b1Syn KO mice indicates an impaired mobilization of synaptic vesicle pools.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, the amplitude of cortico-BLA EPSCs from \u03b1Syn KO mice also exhibited greater depression in response to repetitive stimulation relative to littermate WT controls (Figure 6B1\u2013B2), indicating an impaired mobilization of synaptic vesicle pools.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed synaptic depression pattern.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "b62b18bf-1acb-4aee-ade6-1a8a4f080f28",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C94",
+      "claim": "The earlier onset and greater magnitude of cortico-BLA EPSC depression in \u03b1Syn KO mice versus PFFs-injected mice suggests different temporal profiles of short-term synaptic dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that the earlier onset and greater magnitude of cortico-BLA EPSC depression in \u03b1Syn KO mice versus that in PFFs-injected mice (Figure 6A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation comparing data from Figure 6A and 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "aa0c2938-d434-4773-8bb7-08c1ef55d2b0",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C95",
+      "claim": "Different temporal profiles of short-term synaptic dynamics are plausibly linked to the difference in the amount of \u03b1Syn present at presynaptic terminals between the PFFs model and KO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is plausible that the different temporal profiles of short-term synaptic dynamics are linked to the difference in the amount of \u03b1Syn present at presynaptic terminals between the PFFs model and KO mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed differences.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "25ffeef5-df6e-4f6b-88ce-e8ad7cf6cfdd",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C96",
+      "claim": "No difference was detected in the temporal profiles of thalamo-BLA EPSCs in slices from \u03b1Syn KO mice and WT controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Last, we did not detect the difference in the temporal profiles of thalamo-BLA EPSCs in slices from \u03b1Syn KO mice and those from WT controls (Figure 6\u2014figure supplement 1), which indicates a negligible impact of \u03b1Syn depletion on synaptic vesicle dynamics and is consistent with the lack of \u03b1Syn presence at vGluT2+ axon terminals (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiological data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "97ee2725-e624-4c7a-9853-4030fef5c92a",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C97",
+      "claim": "The lack of effect on thalamo-BLA EPSCs indicates a negligible impact of \u03b1Syn depletion on synaptic vesicle dynamics at these synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Last, we did not detect the difference in the temporal profiles of thalamo-BLA EPSCs in slices from \u03b1Syn KO mice and those from WT controls (Figure 6\u2014figure supplement 1), which indicates a negligible impact of \u03b1Syn depletion on synaptic vesicle dynamics and is consistent with the lack of \u03b1Syn presence at vGluT2+ axon terminals (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the lack of effect in \u03b1Syn KO mice.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "f5f2532d-f1e2-49ff-93bc-e5bfd3e88431",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C98",
+      "claim": "The lack of effect on thalamo-BLA EPSCs is consistent with the lack of \u03b1Syn presence at vGluT2+ axon terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "Last, we did not detect the difference in the temporal profiles of thalamo-BLA EPSCs in slices from \u03b1Syn KO mice and those from WT controls (Figure 6\u2014figure supplement 1), which indicates a negligible impact of \u03b1Syn depletion on synaptic vesicle dynamics and is consistent with the lack of \u03b1Syn presence at vGluT2+ axon terminals (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the functional data to the anatomical findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "fb0da275-8cbe-47f3-bfbc-6d723f46f878",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C99",
+      "claim": "Pathological aggregation decreases the levels of soluble \u03b1Syn at the axon terminals, leading to greater synaptic vesicle depletion and impaired short-term plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that pathological aggregation decreases the levels of soluble \u03b1Syn at the axon terminals, leading to a greater synaptic vesicle depletion and impaired short-term plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on multiple experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "e7998559-0754-4255-a3e5-9d274f7a8385",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C100",
+      "claim": "\u03b1Syn exhibits brain region- and cell type-specific expression in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Emerging evidence suggests that \u03b1Syn exhibits brain region- and cell type-specific expression in the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by references to emerging evidence in the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "76064de8-abe5-4a5c-ba6d-93c9155b06f4",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C101",
+      "claim": "\u03b1Syn mRNA expression is high in glutamatergic and dopaminergic neurons but largely absent from GABAergic neurons across brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, while \u03b1Syn mRNA expression is high in glutamatergic and dopaminergic neurons, it is largely absent from GABAergic neurons across brain regions (Taguchi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "5eb1b5ec-47b9-4d48-a297-fdaa6f76cb56",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C102",
+      "claim": "\u03b1Syn is preferentially present at vGluT1+, but not vGluT2+, axon terminals across several brain regions, including the BLA and the striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "To further explore such a cell subtype-selective \u03b1Syn expression among glutamatergic neurons and synapses, our study shows that \u03b1Syn is preferentially present at vGluT1+, but not vGluT2+, axon terminals across several brain regions, including the BLA and the striatum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the study's findings from Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "7014a297-219f-4466-8c49-931264da7077",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C103",
+      "claim": "Higher amounts of \u03b1Syn were detected in the cell bodies of cortical neurons relative to thalamic neurons using SncaNLS/NLS reporter mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the observation from the axon terminals, we also detected higher amounts of \u03b1Syn in the cell bodies of cortical neurons relative to thalamic neurons using the recently generated SncaNLS/NLS reporter mice (Geertsma et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data from SncaNLS/NLS reporter mice shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "5d4ed708-10a7-4844-88be-56af11c7f36b",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C104",
+      "claim": "The results support a cell- and synapse-subtype-selective \u03b1Syn protein expression among glutamatergic neurons in the mouse brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our results support a cell- and synapse-subtype-selective \u03b1Syn protein expression among glutamatergic neurons in the mouse brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "30a68ca1-eef7-4d54-987e-69cb93066c19",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C105",
+      "claim": "Endogenous levels of \u03b1Syn are determinants of neuronal vulnerability to \u03b1Syn pathology.",
+      "claim_type": "EXPLICIT",
+      "source": "Endogenous levels of \u03b1Syn are determinants of neuronal vulnerability to \u03b1Syn pathology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "42941201-3414-42f9-92f8-ffc7b52c44c0",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C106",
+      "claim": "A decrease in cortical, but not thalamic, inputs to the BLA neurons was observed in a PFF-seeding model of synucleinopathies.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, we observed a decrease in cortical, but not thalamic, inputs to the BLA neurons in a PFF-seeding model of synucleinopathies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the electrophysiological findings from Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "845b634b-0b65-40a8-8465-3d246c6f091b",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C107",
+      "claim": "At one month post-injection, \u03b1Syn pathology decreases the number of functional cortical inputs to the BLA without loss of synapse or changes in presynaptic release probability.",
+      "claim_type": "EXPLICIT",
+      "source": "At a relatively early-stage (i.e. one-month post-injection), \u03b1Syn pathology decreases the number of functional cortical inputs to the BLA without loss of synapse or changes in presynaptic release probability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "21f36fdc-61e1-4678-99a9-9d89afab24cb",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C108",
+      "claim": "Disrupted cortico-BLA transmission can be caused by a reduced size of readily-releasable synaptic vesicle pool and/or a number of presynaptic release sites.",
+      "claim_type": "EXPLICIT",
+      "source": "We posit that the disrupted cortico-BLA transmission can be caused by a reduced size of readily-releasable synaptic vesicle pool and/or a number of presynaptic release sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "71f9c568-4207-436b-a15a-b7c855f8113c",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C109",
+      "claim": "\u03b1Syn aggregates decrease the expression of several synaptic vesicle-associated SNARE proteins (e.g. Snap25 and VAMP2).",
+      "claim_type": "EXPLICIT",
+      "source": "This hypothesis was built on a wealth of evidence showing that \u03b1Syn aggregates decrease the expression of several synaptic vesicle-associated SNARE proteins (e.g. Snap25 and VAMP2) (Volpicelli-Daley et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "4e2b079a-b732-41b4-818f-8e925221d308",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C110",
+      "claim": "A decreased AMPA receptor-mediated response can underlie the impaired cortico-BLA transmission in PFFs-injected mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our study also suggests a decreased AMPA receptor-mediated response can underlie the impaired cortico-BLA transmission in PFFs-injected mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the AMPA/NMDA ratio data from Figure 4.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "fe80c4b8-6429-4020-bb8e-1230a82b7a22",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C111",
+      "claim": "An increased relative contribution of GluA2-lacking AMPA receptors can be a compensatory mechanism for an overall reduction in AMPA-EPSCs at cortico-BLA synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, an increased relative contribution of GluA2-lacking AMPA receptors can be a compensatory mechanism for an overall reduction in AMPA-EPSCs at cortico-BLA synapses\u2013 a hypothesis that warrants further investigation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis about compensatory mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "dda78e24-058b-4cd9-8c1b-d244630b4bdb",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C112",
+      "claim": "The decreased AMPA-EPSC of BLA neurons is input specific, selectively occurring at cortico-BLA synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that such a decreased AMPA-EPSC of BLA neurons is input specific, which selectively occurs at cortico-BLA synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the differential effects on cortico-BLA versus thalamo-BLA synapses.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "94987cc9-a395-493f-990c-1e650fe88a0f",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C113",
+      "claim": "The molecular mechanisms that cooperate pre- and post-synaptic changes at cortical inputs, but not thalamic inputs, remain to be defined.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the molecular mechanisms that cooperate pre- and post-synaptic changes at the cortical inputs, but not the thalamic inputs, remain to be defined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges a gap in understanding that requires future investigation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "eb20ae3f-4912-4f73-9da4-6b8630b25838",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C114",
+      "claim": "The study highlights the dependence of regional and cellular vulnerability on endogenous \u03b1Syn levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study further highlights the dependence of regional and cellular vulnerability on the endogenous \u03b1Syn, i.e., those neurons or axon terminals that express high levels of \u03b1Syn are prone to be functionally impacted by \u03b1Syn pathology relative to those that lack of or express low levels of \u03b1Syn (Surmeier et al., 2017; Thakur et al., 2019; Vasili et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion supported by the study's findings and cited literature.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "4287ecaf-c7da-4676-9e8c-13b46c325a58",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C115",
+      "claim": "Neurons or axon terminals that express high levels of \u03b1Syn are prone to be functionally impacted by \u03b1Syn pathology relative to those that lack or express low levels of \u03b1Syn.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study further highlights the dependence of regional and cellular vulnerability on the endogenous \u03b1Syn, i.e., those neurons or axon terminals that express high levels of \u03b1Syn are prone to be functionally impacted by \u03b1Syn pathology relative to those that lack of or express low levels of \u03b1Syn (Surmeier et al., 2017; Thakur et al., 2019; Vasili et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the study's findings and citations to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "e0d3dffe-00cf-48bf-8978-1467d5f124be",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C116",
+      "claim": "vGluT2+/TH+ midbrain dopamine neurons and their axon terminals in the striatum have been shown to be more resilient to neurodegeneration in postmortem PD brains and animal model studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Of particular interest is that vGluT2+/TH+ midbrain dopamine neurons and their axon terminals in the striatum have been shown to be more resilient to neurodegeneration in postmortem PD brains and animal models studies (Buck et al., 2021; Steinkellner et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "7a339fe0-9632-448c-a448-0ac903237f1a",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C117",
+      "claim": "The absence of \u03b1Syn at vGluT2+ neurons/terminals could be critical for their resilience to neurodegeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "While several other mechanisms have been proposed (Buck et al., 2021), the absence of \u03b1Syn at vGluT2+ neurons/terminals could be critical for such resilience.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis about the mechanism of resilience.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "7aa7af9c-927d-4525-95c7-982e9cdfd447",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C118",
+      "claim": "Loss of normal \u03b1Syn function has been thought to be an important but understudied aspect of \u03b1Syn pathology.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of normal \u03b1Syn function has been thought to be an important but understudied aspect of \u03b1Syn pathology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim reflects established thinking in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "0821a5a1-e850-49f2-a492-9dfba342feb6",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C119",
+      "claim": "A partial or complete removal of \u03b1Syn from axon terminals leads to enhanced short-term depression in response to repetitive stimulation of cortico-BLA synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Using an electrophysiological approach, we revealed that a partial or complete removal of \u03b1Syn from the axon terminals leads to an enhanced short-term depression in response to repetitive stimulation of cortico-BLA synapses (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiological data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "ba1e0c87-b412-496f-8f53-24b972f2b8b8",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C120",
+      "claim": "Short-term synaptic plasticity is an important 'gain control' mechanism for neurons to properly balance their responsiveness to distinct afferents in an input-specific manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Short-term synaptic plasticity is an important 'gain control' mechanism for neurons to properly balance their responsiveness to distinct afferents in an input-specific manner (Abbott et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "0e86a3e2-5e81-4c22-b139-38593fe8faa4",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C121",
+      "claim": "Cortical and thalamic afferents of the BLA exhibit different short-term synaptic plasticity profiles in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Cortical and thalamic afferents of the BLA exhibit different short-term synaptic plasticity profiles in vivo, which could reflect their different contributions to the formation of emotion-related memory and behavior (Sigur\u00f2sson et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior in vivo studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "afe2d1ea-56e8-4753-a701-bc7832abbff4",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C122",
+      "claim": "Different short-term plasticity profiles of cortical and thalamic inputs could reflect their different contributions to the formation of emotion-related memory and behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Cortical and thalamic afferents of the BLA exhibit different short-term synaptic plasticity profiles in vivo, which could reflect their different contributions to the formation of emotion-related memory and behavior (Sigur\u00f2sson et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the functional significance.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "ac3d772c-74b4-4072-b0a0-7beee42e4542",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C123",
+      "claim": "Synapse-specific presence of \u03b1Syn could underlie the difference in short-term plasticity profiles of cortical and thalamic inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Physiologically, synapse-specific presence of \u03b1Syn could underlie such difference in the short-term plasticity profiles of the two inputs (Figures 1 and 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative hypothesis based on the study's findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "9157c34a-4b82-4036-84e5-78252b9e1be3",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C124",
+      "claim": "Once aggregates form, decreased synaptic strength and enhanced synaptic depression make BLA neurons less likely to respond to sustained and repetitive sensory inputs from cortical regions.",
+      "claim_type": "EXPLICIT",
+      "source": "One can postulate that once aggregates form, a decreased synaptic strength associated with \u03b1Syn toxicity (Figure 3) and an enhanced synaptic depression due to the loss of \u03b1Syn normal function at presynaptic boutons (Figures 5 and 6) make the BLA neurons less likely to respond to sustained and repetitive sensory inputs from cortical regions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative postulate based on the study's findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "9acb5727-44d6-4379-b74f-dd815f229b47",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C125",
+      "claim": "Circuit changes might explain studies showing decreased functional connectivity of cortico-amygdala, but not thalamo-amygdala network in PD patients.",
+      "claim_type": "EXPLICIT",
+      "source": "These circuit changes might explain studies showing a decreased functional connectivity of cortico-amygdala, but not the thalamo-amygdala network in PD patients, which further leads to a failed amygdala responsiveness to the aversive sensory inputs (Hu et al., 2015; Yoshimura et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative connection between the experimental findings and clinical observations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "ef4909d5-38b6-43d6-a0c0-e6f6409f2450",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "claim_id": "C126",
+      "claim": "Decreased functional connectivity of cortico-amygdala network in PD patients leads to failed amygdala responsiveness to aversive sensory inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "These circuit changes might explain studies showing a decreased functional connectivity of cortico-amygdala, but not the thalamo-amygdala network in PD patients, which further leads to a failed amygdala responsiveness to the aversive sensory inputs (Hu et al., 2015; Yoshimura et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to clinical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "367e18f6-9712-471f-9437-734b78c59774",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Background claims establish that \u03b1-synuclein (\u03b1Syn) is a presynaptic protein involved in Parkinson's disease (PD) pathogenesis, that the amygdala is vulnerable to Lewy pathology in PD, and that amygdala dysfunction contributes to psychiatric symptoms in PD patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C13-C21 are well-supported by citations to established literature and represent accepted knowledge in the field. These background claims provide appropriate context for the study and are consistently referenced in the neuroscience and PD literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "0bf83a25-42ab-4e04-8277-060cebfb8109",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "\u03b1Syn is preferentially localized to vGluT1+ (cortical) but not vGluT2+ (thalamic) glutamatergic terminals in the BLA, cerebral cortex, and striatum, with high Pearson correlation coefficients (0.82-0.83) for vGluT1/\u03b1Syn colocalization and low coefficients (0.12-0.17) for vGluT2/\u03b1Syn. This pattern is confirmed at the cell body level using SncaNLS/NLS reporter mice showing 91.9% \u03b1Syn-positive cortical neurons versus 0% in centromedial thalamus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 and C22-C40 are strongly supported by quantitative confocal microscopy data (Figure 1) and SncaNLS/NLS reporter mouse data (Figure 2) with appropriate statistical analysis (n=18 slices/4 mice for BLA, p<0.0001). The Pearson correlation coefficients show clear differential localization, and the reporter mouse data independently confirms the pattern at the cell body level. Sample sizes and statistical tests are appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "6660f521-08b6-44fd-9467-3598df385a89",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In the PFFs model, robust \u03b1Syn pathology develops in vGluT1+ cortical regions and BLA but not in vGluT2+ thalamic regions one month post-injection, consistent with differential endogenous \u03b1Syn expression levels. Retrograde tracing confirms that the absence of thalamic pathology is not due to technical issues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C48 are supported by immunohistochemical data (Figure 3) and retrograde tracing controls (Figure 3A6). The pattern of pathology is consistent with the differential \u03b1Syn expression shown in the previous result. The retrograde labeling control (C47-C48) appropriately addresses potential technical confounds. The findings align with cited prior studies (Burtscher et al., 2019; Henderson et al., 2019).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "4198f020-a8a6-499f-ac74-be92dd7789da",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "\u03b1Syn aggregation selectively decreases cortico-BLA glutamatergic transmission (both electrically and optogenetically evoked) but does not affect thalamo-BLA transmission one month post-PFFs injection. This effect requires endogenous \u03b1Syn, as demonstrated by the absence of transmission deficits in \u03b1Syn KO mice injected with PFFs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C49-C58, and C106 are well-supported by electrophysiological data using both electrical stimulation (Figure 3D-G) and optogenetic approaches (Figure 3H-O) with appropriate sample sizes (n=17-37 neurons/4 mice per group). The \u03b1Syn KO control experiment (C56-C58, Figure 3\u2014figure supplement 1) provides critical evidence that the effect is due to \u03b1Syn aggregation rather than PFFs injection per se. The selective effect on cortico-BLA versus thalamo-BLA transmission is consistent across methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "145963d1-6591-4eb2-b2cf-d4760475fec2",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The decreased cortico-BLA transmission occurs without loss of vGluT1+ terminals or changes in initial release probability (paired-pulse ratio unchanged), but with decreased frequency of asynchronous release events (Sr2+ experiments), suggesting reduced readily releasable vesicle pools and/or release sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C68 and C107 are supported by multiple complementary approaches: stereological analysis (Figure 4A-C), paired-pulse electrophysiology (Figure 4D-G), and Sr2+ replacement experiments (Figure 4H-J). The logic connecting these findings is sound: unchanged terminal density + unchanged paired-pulse ratio + decreased asynchronous release frequency points to presynaptic vesicle pool deficits. Sample sizes are adequate (n=11-35 neurons/3-4 mice). The speculative explanation for optogenetic depression (C64) is appropriately qualified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "c70d6bb6-c555-4f7a-bcc4-c53d32c531a0",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "\u03b1Syn pathology induces input-specific postsynaptic adaptations at cortico-BLA synapses, including decreased AMPA/NMDA ratio and enhanced AMPA receptor rectification (suggesting increased GluA2-lacking receptors), while thalamo-BLA synapses show no such changes. These functional changes occur prior to terminal degeneration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C75 are supported by electrophysiological measurements of AMPA/NMDA ratios and rectification indices (Figure 4K-M) with appropriate sample sizes (n=16-20 neurons/3 mice). The input-specificity is demonstrated by the lack of changes at thalamo-BLA synapses (C73-C74). The inference about GluA2-lacking receptors (C71) is reasonable based on established biophysical properties. The conclusion that changes precede degeneration (C77) is supported by the vGluT1 density data (C59-C60).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "e2f3c92f-7a2a-4514-b7cb-7ec6a43f876f",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "\u03b1Syn pathology reduces soluble \u03b1Syn levels at vGluT1+ axon terminals in the BLA, as demonstrated by decreased \u03b1Syn immunoreactivity intensity and increased proportion of \u03b1Syn-negative vGluT1+ boutons using two different antibodies (Syn1 and Syn9027).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C78-C84 are supported by confocal microscopy data (Figure 5) using two independent antibodies with different epitopes, strengthening the conclusion. Quantitative analysis shows significant decreases in both \u03b1Syn intensity per terminal and proportion of \u03b1Syn-positive terminals (n=100-241 puncta, p<0.0001). The use of two antibodies addresses potential epitope masking concerns. The inference that reduced soluble \u03b1Syn could affect function (C84) is appropriately qualified as speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "95f1d21c-c374-435c-8278-43e968ed5f48",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Both partial (PFFs model) and complete (\u03b1Syn KO) removal of \u03b1Syn from cortico-BLA terminals enhances short-term synaptic depression during repetitive stimulation, indicating impaired vesicle pool mobilization. This effect is specific to cortico-BLA synapses and does not occur at thalamo-BLA synapses in \u03b1Syn KO mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C10, C87-C99, and C119 are supported by repetitive stimulation experiments (Figure 6) in both PFFs-injected WT mice and \u03b1Syn KO mice (n=8-15 neurons/3 mice). The enhanced depression in both models supports the loss-of-function hypothesis. The observation that \u03b1Syn KO shows earlier/greater depression than PFFs model (C94-C95) is interesting but appropriately presented as speculative. The lack of effect at thalamo-BLA synapses in KO mice (C96-C98, Figure 6\u2014figure supplement 1) is consistent with the absence of \u03b1Syn at these terminals.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "e3fa1019-70da-4074-9c98-48d9d9381e0d",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Both basal and dynamic cortico-BLA transmission are disrupted by \u03b1Syn aggregation, and these changes might be relevant to perturbed cortical control of the amygdala and psychiatric symptoms in PD patients, potentially explaining decreased cortico-amygdala functional connectivity and failed amygdala responsiveness to aversive inputs observed in clinical studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C11-C12, C9, and C124-C126 represent speculative connections between the experimental findings and clinical observations. While the experimental data supporting disrupted cortico-BLA transmission is strong (C11), the mechanistic link to psychiatric symptoms (C12, C124-C126) is inferential and based on correlations with clinical imaging studies. The claim that lower soluble \u03b1Syn 'might underlie' enhanced depression (C9) is appropriately qualified but remains speculative without direct manipulation experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    },
+    {
+      "id": "93f6754e-0e9e-462b-93e3-cdd910313b6e",
+      "content_id": "2c4e231b-86aa-470c-bd55-0d5f526eb33d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Discussion claims synthesize findings within broader context of cell-type-specific \u03b1Syn expression, vulnerability to pathology, loss-of-function mechanisms, and potential relevance to PD pathophysiology, including speculative hypotheses about compensatory mechanisms and molecular mechanisms requiring future investigation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100-C123 represent discussion points that appropriately synthesize the study's findings with prior literature. Claims about cell-type-specific expression (C100-C101) and vulnerability (C105, C114-C115) are supported by the data and cited literature. Speculative claims (C111, C113, C117, C122-C123) are appropriately qualified. The discussion acknowledges gaps requiring future work (C113) and places findings in context of prior studies on vGluT2+/TH+ neuron resilience (C116-C117).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:02:55.788540Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "60a8b014-4a32-4675-88ea-aa06e9e4d439",
+      "result_id": "367e18f6-9712-471f-9437-734b78c59774"
+    },
+    {
+      "claim_id": "f18fe708-cf92-4334-b05c-c688730ccc89",
+      "result_id": "367e18f6-9712-471f-9437-734b78c59774"
+    },
+    {
+      "claim_id": "355b5dda-84e3-4d97-9359-e174a483158e",
+      "result_id": "367e18f6-9712-471f-9437-734b78c59774"
+    },
+    {
+      "claim_id": "1323510c-5b20-44ae-8011-fedd3995bd5c",
+      "result_id": "367e18f6-9712-471f-9437-734b78c59774"
+    },
+    {
+      "claim_id": "a05a9633-ab1f-401a-ae42-f9be9f892669",
+      "result_id": "367e18f6-9712-471f-9437-734b78c59774"
+    },
+    {
+      "claim_id": "1a735068-0e2b-424f-8b2a-55c25f02f78b",
+      "result_id": "367e18f6-9712-471f-9437-734b78c59774"
+    },
+    {
+      "claim_id": "90c4705e-4180-4b33-86f6-093acf53b853",
+      "result_id": "367e18f6-9712-471f-9437-734b78c59774"
+    },
+    {
+      "claim_id": "cc9f9bfe-ad90-4703-8eed-351c24eb700c",
+      "result_id": "367e18f6-9712-471f-9437-734b78c59774"
+    },
+    {
+      "claim_id": "1cceb05e-4ac5-4d2e-8629-deab7d05c621",
+      "result_id": "367e18f6-9712-471f-9437-734b78c59774"
+    },
+    {
+      "claim_id": "25913682-ae18-4894-921e-eea7cf4a1c40",
+      "result_id": "367e18f6-9712-471f-9437-734b78c59774"
+    },
+    {
+      "claim_id": "ce92348c-7ddd-4106-bd45-37a0cf7cd978",
+      "result_id": "367e18f6-9712-471f-9437-734b78c59774"
+    },
+    {
+      "claim_id": "78e11168-1055-45fa-b167-afe2d5079a28",
+      "result_id": "367e18f6-9712-471f-9437-734b78c59774"
+    },
+    {
+      "claim_id": "c65046ae-39f2-4a2b-89c6-1a69559d2d9e",
+      "result_id": "0bf83a25-42ab-4e04-8277-060cebfb8109"
+    },
+    {
+      "claim_id": "c0b7ce54-90e4-4e8d-8880-e2f2fd3851af",
+      "result_id": "0bf83a25-42ab-4e04-8277-060cebfb8109"
+    },
+    {
+      "claim_id": "ed74c64f-e52a-45b8-b32b-8519268cd47a",
+      "result_id": "0bf83a25-42ab-4e04-8277-060cebfb8109"
+    },
+    {
+      "claim_id": "b817b1fa-d2e2-400a-b163-48c940b765e5",
+      "result_id": "0bf83a25-42ab-4e04-8277-060cebfb8109"
+    },
+    {
+      "claim_id": "b14cf4ac-5bbc-4fed-a4f7-3393660f3c53",
+      "result_id": "0bf83a25-42ab-4e04-8277-060cebfb8109"
+    },
+    {
+      "claim_id": "8eb4acff-b19e-49f1-978a-adf483425092",
+      "result_id": "0bf83a25-42ab-4e04-8277-060cebfb8109"
+    },
+    {
+      "claim_id": "c691edd8-bbea-46a3-b046-c22c18103800",
+      "result_id": "0bf83a25-42ab-4e04-8277-060cebfb8109"
+    },
+    {
+      "claim_id": "5d079a95-8757-4866-ac6b-bbfbe78e8c53",
+      "result_id": "0bf83a25-42ab-4e04-8277-060cebfb8109"
+    },
+    {
+      "claim_id": "2b5f39d4-12b1-4ee4-bef0-ff5fee35ee49",
+      "result_id": "0bf83a25-42ab-4e04-8277-060cebfb8109"
+    },
+    {
+      "claim_id": "16122682-cef6-4625-aba7-17b1c28c5fd3",
+      "result_id": "0bf83a25-42ab-4e04-8277-060cebfb8109"
+    },
+    {
+      "claim_id": "8b2a98d1-cb37-4d91-9d1d-c4a8273cbf04",
+      "result_id": "0bf83a25-42ab-4e04-8277-060cebfb8109"
+    },
+    {
+      "claim_id": "52d033f9-6526-409c-b0ae-881bd6d4e659",
+      "result_id": "0bf83a25-42ab-4e04-8277-060cebfb8109"
+    },
+    {
+      "claim_id": "4f80433f-d513-4b7a-8327-d1d28ca7f206",
+      "result_id": "0bf83a25-42ab-4e04-8277-060cebfb8109"
+    },
+    {
+      "claim_id": "b6253d04-c6b6-4a34-a787-c6b0ada3173e",
+      "result_id": "0bf83a25-42ab-4e04-8277-060cebfb8109"
+    },
+    {
+      "claim_id": "b4553f6a-d076-4a97-8abc-4d581a71cb7c",
+      "result_id": "0bf83a25-42ab-4e04-8277-060cebfb8109"
+    },
+    {
+      "claim_id": "e22eafe5-2f4c-40c0-802f-3aebebac2896",
+      "result_id": "0bf83a25-42ab-4e04-8277-060cebfb8109"
+    },
+    {
+      "claim_id": "bc7d51d9-da10-4744-92d1-7a658337e8f3",
+      "result_id": "0bf83a25-42ab-4e04-8277-060cebfb8109"
+    },
+    {
+      "claim_id": "9d04c152-7023-44e6-9826-115a927fc7dd",
+      "result_id": "0bf83a25-42ab-4e04-8277-060cebfb8109"
+    },
+    {
+      "claim_id": "b9dbb42b-d713-4ecd-98eb-f7d725b2350d",
+      "result_id": "0bf83a25-42ab-4e04-8277-060cebfb8109"
+    },
+    {
+      "claim_id": "081e2370-322b-4309-ac4b-24e1a2059ea2",
+      "result_id": "0bf83a25-42ab-4e04-8277-060cebfb8109"
+    },
+    {
+      "claim_id": "a752678e-ebfb-465a-aea7-6a44a82fb494",
+      "result_id": "0bf83a25-42ab-4e04-8277-060cebfb8109"
+    },
+    {
+      "claim_id": "5eb1b5ec-47b9-4d48-a297-fdaa6f76cb56",
+      "result_id": "0bf83a25-42ab-4e04-8277-060cebfb8109"
+    },
+    {
+      "claim_id": "7014a297-219f-4466-8c49-931264da7077",
+      "result_id": "0bf83a25-42ab-4e04-8277-060cebfb8109"
+    },
+    {
+      "claim_id": "5d4ed708-10a7-4844-88be-56af11c7f36b",
+      "result_id": "0bf83a25-42ab-4e04-8277-060cebfb8109"
+    },
+    {
+      "claim_id": "e85e6580-9c6e-4fa7-996b-a7f004a7d3bd",
+      "result_id": "6660f521-08b6-44fd-9467-3598df385a89"
+    },
+    {
+      "claim_id": "e99bb1ac-7d81-4f54-a0fd-1e5eb134075f",
+      "result_id": "6660f521-08b6-44fd-9467-3598df385a89"
+    },
+    {
+      "claim_id": "69c4233e-b1ab-4033-af3f-0b3db914ba7d",
+      "result_id": "6660f521-08b6-44fd-9467-3598df385a89"
+    },
+    {
+      "claim_id": "b1d325e9-4d03-401a-b034-b45c1933dacf",
+      "result_id": "6660f521-08b6-44fd-9467-3598df385a89"
+    },
+    {
+      "claim_id": "713f35d7-a4c8-4b9f-8325-8171fe111439",
+      "result_id": "6660f521-08b6-44fd-9467-3598df385a89"
+    },
+    {
+      "claim_id": "c5868268-c575-47eb-a44b-bc3b30c79c3e",
+      "result_id": "6660f521-08b6-44fd-9467-3598df385a89"
+    },
+    {
+      "claim_id": "b111f0e1-5252-477e-b591-ee4a3589bf18",
+      "result_id": "6660f521-08b6-44fd-9467-3598df385a89"
+    },
+    {
+      "claim_id": "eb65de48-df99-4de3-879b-e57a8ce9727b",
+      "result_id": "6660f521-08b6-44fd-9467-3598df385a89"
+    },
+    {
+      "claim_id": "a3a128f5-9fcf-469b-b139-6df871871c2e",
+      "result_id": "4198f020-a8a6-499f-ac74-be92dd7789da"
+    },
+    {
+      "claim_id": "35b4b233-466b-4a06-9bf8-cafe92d5f632",
+      "result_id": "4198f020-a8a6-499f-ac74-be92dd7789da"
+    },
+    {
+      "claim_id": "d8c2a2a3-7bfc-4f8d-b47c-f04afca69bda",
+      "result_id": "4198f020-a8a6-499f-ac74-be92dd7789da"
+    },
+    {
+      "claim_id": "8d99bfcb-b997-499f-b5a9-1f6245204e6a",
+      "result_id": "4198f020-a8a6-499f-ac74-be92dd7789da"
+    },
+    {
+      "claim_id": "d83ae521-693b-432e-94e5-2b7f872f7407",
+      "result_id": "4198f020-a8a6-499f-ac74-be92dd7789da"
+    },
+    {
+      "claim_id": "b9f54fe7-37a4-4e55-8ff1-16f1cc6326a8",
+      "result_id": "4198f020-a8a6-499f-ac74-be92dd7789da"
+    },
+    {
+      "claim_id": "c4128757-250f-429f-bff6-a5a389a67234",
+      "result_id": "4198f020-a8a6-499f-ac74-be92dd7789da"
+    },
+    {
+      "claim_id": "65a575fa-e4cc-48c2-8449-c944b1ffe496",
+      "result_id": "4198f020-a8a6-499f-ac74-be92dd7789da"
+    },
+    {
+      "claim_id": "f0e867ee-de33-4ea9-9ee6-f3f83be98f62",
+      "result_id": "4198f020-a8a6-499f-ac74-be92dd7789da"
+    },
+    {
+      "claim_id": "98ca2ba9-593d-40fa-9fc9-e075fca8d4eb",
+      "result_id": "4198f020-a8a6-499f-ac74-be92dd7789da"
+    },
+    {
+      "claim_id": "bfacd1cd-c2cd-489d-bae2-b875fec500de",
+      "result_id": "4198f020-a8a6-499f-ac74-be92dd7789da"
+    },
+    {
+      "claim_id": "42941201-3414-42f9-92f8-ffc7b52c44c0",
+      "result_id": "4198f020-a8a6-499f-ac74-be92dd7789da"
+    },
+    {
+      "claim_id": "9bdcc967-408f-47b4-b887-2b23ee9279b3",
+      "result_id": "145963d1-6591-4eb2-b2cf-d4760475fec2"
+    },
+    {
+      "claim_id": "29152b79-95a8-468b-8740-19e554bd3aaa",
+      "result_id": "145963d1-6591-4eb2-b2cf-d4760475fec2"
+    },
+    {
+      "claim_id": "c1b694aa-81d6-431b-af6c-2111b567db9e",
+      "result_id": "145963d1-6591-4eb2-b2cf-d4760475fec2"
+    },
+    {
+      "claim_id": "b4eb87a9-eb09-45ac-a87c-c22836adb701",
+      "result_id": "145963d1-6591-4eb2-b2cf-d4760475fec2"
+    },
+    {
+      "claim_id": "982046a1-dc3d-403a-96ae-58fc580e2455",
+      "result_id": "145963d1-6591-4eb2-b2cf-d4760475fec2"
+    },
+    {
+      "claim_id": "146d2103-8c88-4df6-84fd-f174b5816cbd",
+      "result_id": "145963d1-6591-4eb2-b2cf-d4760475fec2"
+    },
+    {
+      "claim_id": "c6c7f344-9188-4f42-9b8a-d392da54d2f9",
+      "result_id": "145963d1-6591-4eb2-b2cf-d4760475fec2"
+    },
+    {
+      "claim_id": "4582028e-0af4-42d2-b147-479d1290f4c5",
+      "result_id": "145963d1-6591-4eb2-b2cf-d4760475fec2"
+    },
+    {
+      "claim_id": "cdd0301c-23c1-400f-8bf4-e5c81b190fc2",
+      "result_id": "145963d1-6591-4eb2-b2cf-d4760475fec2"
+    },
+    {
+      "claim_id": "d38e89ef-d51a-461d-954b-ae9198e05a1f",
+      "result_id": "145963d1-6591-4eb2-b2cf-d4760475fec2"
+    },
+    {
+      "claim_id": "845b634b-0b65-40a8-8465-3d246c6f091b",
+      "result_id": "145963d1-6591-4eb2-b2cf-d4760475fec2"
+    },
+    {
+      "claim_id": "9eb7c3c3-cf37-4365-b6e1-764571bbde83",
+      "result_id": "c70d6bb6-c555-4f7a-bcc4-c53d32c531a0"
+    },
+    {
+      "claim_id": "212db03b-2cf9-404d-8dfa-ac8cab6b5836",
+      "result_id": "c70d6bb6-c555-4f7a-bcc4-c53d32c531a0"
+    },
+    {
+      "claim_id": "b37ad88b-ff39-4d37-9b5d-0abe097f1d28",
+      "result_id": "c70d6bb6-c555-4f7a-bcc4-c53d32c531a0"
+    },
+    {
+      "claim_id": "a17c0a5e-0501-40f9-8e40-d363e996ca59",
+      "result_id": "c70d6bb6-c555-4f7a-bcc4-c53d32c531a0"
+    },
+    {
+      "claim_id": "c1e9d163-d9de-4502-8957-3f5252170aee",
+      "result_id": "c70d6bb6-c555-4f7a-bcc4-c53d32c531a0"
+    },
+    {
+      "claim_id": "df39c2f5-dc72-4cbd-88be-e2c4f32d54f9",
+      "result_id": "c70d6bb6-c555-4f7a-bcc4-c53d32c531a0"
+    },
+    {
+      "claim_id": "a1a7db2d-e64e-4227-8bec-459ad59def14",
+      "result_id": "c70d6bb6-c555-4f7a-bcc4-c53d32c531a0"
+    },
+    {
+      "claim_id": "2f91ee98-800c-4ca3-b8e1-77fd0a012ffe",
+      "result_id": "c70d6bb6-c555-4f7a-bcc4-c53d32c531a0"
+    },
+    {
+      "claim_id": "c8df466a-e2ae-4914-9ee4-0c30f6ff2346",
+      "result_id": "c70d6bb6-c555-4f7a-bcc4-c53d32c531a0"
+    },
+    {
+      "claim_id": "4e2b079a-b732-41b4-818f-8e925221d308",
+      "result_id": "c70d6bb6-c555-4f7a-bcc4-c53d32c531a0"
+    },
+    {
+      "claim_id": "dda78e24-058b-4cd9-8c1b-d244630b4bdb",
+      "result_id": "c70d6bb6-c555-4f7a-bcc4-c53d32c531a0"
+    },
+    {
+      "claim_id": "20a39948-786a-4dd6-bc05-1226556cda1b",
+      "result_id": "e2f3c92f-7a2a-4514-b7cb-7ec6a43f876f"
+    },
+    {
+      "claim_id": "215865dd-23c9-45c8-a271-877dca4b12e2",
+      "result_id": "e2f3c92f-7a2a-4514-b7cb-7ec6a43f876f"
+    },
+    {
+      "claim_id": "6fff86dc-59f8-4547-9b2d-e9af5bf284ee",
+      "result_id": "e2f3c92f-7a2a-4514-b7cb-7ec6a43f876f"
+    },
+    {
+      "claim_id": "7a2b9206-ae3d-4608-be56-0df92494bcc9",
+      "result_id": "e2f3c92f-7a2a-4514-b7cb-7ec6a43f876f"
+    },
+    {
+      "claim_id": "3aaa8848-d8ac-4ad3-9221-9b74213937d3",
+      "result_id": "e2f3c92f-7a2a-4514-b7cb-7ec6a43f876f"
+    },
+    {
+      "claim_id": "f3696312-68cc-49e2-8e31-f6a920bf496b",
+      "result_id": "e2f3c92f-7a2a-4514-b7cb-7ec6a43f876f"
+    },
+    {
+      "claim_id": "1a2c6f38-2e6b-4fe6-9199-6fa4dd18d25e",
+      "result_id": "e2f3c92f-7a2a-4514-b7cb-7ec6a43f876f"
+    },
+    {
+      "claim_id": "b6e99537-e353-4b63-8ab0-228c4fc40a49",
+      "result_id": "e2f3c92f-7a2a-4514-b7cb-7ec6a43f876f"
+    },
+    {
+      "claim_id": "ff9d3e44-fe01-4a27-a9d7-7c08dfaa3af3",
+      "result_id": "95f1d21c-c374-435c-8278-43e968ed5f48"
+    },
+    {
+      "claim_id": "28ddfc67-aea4-4532-a684-1ea90496b63b",
+      "result_id": "95f1d21c-c374-435c-8278-43e968ed5f48"
+    },
+    {
+      "claim_id": "3d98a327-e082-48cc-904e-ef8811f148ae",
+      "result_id": "95f1d21c-c374-435c-8278-43e968ed5f48"
+    },
+    {
+      "claim_id": "ef08c3a2-4acc-4f3a-8506-1a180d86e810",
+      "result_id": "95f1d21c-c374-435c-8278-43e968ed5f48"
+    },
+    {
+      "claim_id": "b157cdbf-e807-4de3-a085-79aea3d79331",
+      "result_id": "95f1d21c-c374-435c-8278-43e968ed5f48"
+    },
+    {
+      "claim_id": "6a242421-9bb4-46b2-b776-68472c0337b6",
+      "result_id": "95f1d21c-c374-435c-8278-43e968ed5f48"
+    },
+    {
+      "claim_id": "6d202254-d848-4e91-b641-246e31beb48d",
+      "result_id": "95f1d21c-c374-435c-8278-43e968ed5f48"
+    },
+    {
+      "claim_id": "a50ad7f4-7982-488b-a4c5-14c599e54b9f",
+      "result_id": "95f1d21c-c374-435c-8278-43e968ed5f48"
+    },
+    {
+      "claim_id": "5e3f09c6-d145-49b3-b865-477657717eb4",
+      "result_id": "95f1d21c-c374-435c-8278-43e968ed5f48"
+    },
+    {
+      "claim_id": "5fc676b0-cfce-427c-9e0b-7cca4723cbf9",
+      "result_id": "95f1d21c-c374-435c-8278-43e968ed5f48"
+    },
+    {
+      "claim_id": "004afa94-70b9-4034-b04a-b34a360572ee",
+      "result_id": "95f1d21c-c374-435c-8278-43e968ed5f48"
+    },
+    {
+      "claim_id": "b62b18bf-1acb-4aee-ade6-1a8a4f080f28",
+      "result_id": "95f1d21c-c374-435c-8278-43e968ed5f48"
+    },
+    {
+      "claim_id": "aa0c2938-d434-4773-8bb7-08c1ef55d2b0",
+      "result_id": "95f1d21c-c374-435c-8278-43e968ed5f48"
+    },
+    {
+      "claim_id": "25ffeef5-df6e-4f6b-88ce-e8ad7cf6cfdd",
+      "result_id": "95f1d21c-c374-435c-8278-43e968ed5f48"
+    },
+    {
+      "claim_id": "97ee2725-e624-4c7a-9853-4030fef5c92a",
+      "result_id": "95f1d21c-c374-435c-8278-43e968ed5f48"
+    },
+    {
+      "claim_id": "f5f2532d-f1e2-49ff-93bc-e5bfd3e88431",
+      "result_id": "95f1d21c-c374-435c-8278-43e968ed5f48"
+    },
+    {
+      "claim_id": "fb0da275-8cbe-47f3-bfbc-6d723f46f878",
+      "result_id": "95f1d21c-c374-435c-8278-43e968ed5f48"
+    },
+    {
+      "claim_id": "0821a5a1-e850-49f2-a492-9dfba342feb6",
+      "result_id": "95f1d21c-c374-435c-8278-43e968ed5f48"
+    },
+    {
+      "claim_id": "6adb10d2-de01-431e-920c-6e957eb60c64",
+      "result_id": "e3fa1019-70da-4074-9c98-48d9d9381e0d"
+    },
+    {
+      "claim_id": "c21a269b-1f58-4727-9c4a-769cb3ee3b27",
+      "result_id": "e3fa1019-70da-4074-9c98-48d9d9381e0d"
+    },
+    {
+      "claim_id": "b10cbe7a-e526-4268-9a97-e8312b051146",
+      "result_id": "e3fa1019-70da-4074-9c98-48d9d9381e0d"
+    },
+    {
+      "claim_id": "9157c34a-4b82-4036-84e5-78252b9e1be3",
+      "result_id": "e3fa1019-70da-4074-9c98-48d9d9381e0d"
+    },
+    {
+      "claim_id": "9acb5727-44d6-4379-b74f-dd815f229b47",
+      "result_id": "e3fa1019-70da-4074-9c98-48d9d9381e0d"
+    },
+    {
+      "claim_id": "ef4909d5-38b6-43d6-a0c0-e6f6409f2450",
+      "result_id": "e3fa1019-70da-4074-9c98-48d9d9381e0d"
+    },
+    {
+      "claim_id": "e7998559-0754-4255-a3e5-9d274f7a8385",
+      "result_id": "93f6754e-0e9e-462b-93e3-cdd910313b6e"
+    },
+    {
+      "claim_id": "76064de8-abe5-4a5c-ba6d-93c9155b06f4",
+      "result_id": "93f6754e-0e9e-462b-93e3-cdd910313b6e"
+    },
+    {
+      "claim_id": "30a68ca1-eef7-4d54-987e-69cb93066c19",
+      "result_id": "93f6754e-0e9e-462b-93e3-cdd910313b6e"
+    },
+    {
+      "claim_id": "21f36fdc-61e1-4678-99a9-9d89afab24cb",
+      "result_id": "93f6754e-0e9e-462b-93e3-cdd910313b6e"
+    },
+    {
+      "claim_id": "71f9c568-4207-436b-a15a-b7c855f8113c",
+      "result_id": "93f6754e-0e9e-462b-93e3-cdd910313b6e"
+    },
+    {
+      "claim_id": "fe80c4b8-6429-4020-bb8e-1230a82b7a22",
+      "result_id": "93f6754e-0e9e-462b-93e3-cdd910313b6e"
+    },
+    {
+      "claim_id": "94987cc9-a395-493f-990c-1e650fe88a0f",
+      "result_id": "93f6754e-0e9e-462b-93e3-cdd910313b6e"
+    },
+    {
+      "claim_id": "eb20ae3f-4912-4f73-9da4-6b8630b25838",
+      "result_id": "93f6754e-0e9e-462b-93e3-cdd910313b6e"
+    },
+    {
+      "claim_id": "4287ecaf-c7da-4676-9e8c-13b46c325a58",
+      "result_id": "93f6754e-0e9e-462b-93e3-cdd910313b6e"
+    },
+    {
+      "claim_id": "e0d3dffe-00cf-48bf-8978-1467d5f124be",
+      "result_id": "93f6754e-0e9e-462b-93e3-cdd910313b6e"
+    },
+    {
+      "claim_id": "7a339fe0-9632-448c-a448-0ac903237f1a",
+      "result_id": "93f6754e-0e9e-462b-93e3-cdd910313b6e"
+    },
+    {
+      "claim_id": "7aa7af9c-927d-4525-95c7-982e9cdfd447",
+      "result_id": "93f6754e-0e9e-462b-93e3-cdd910313b6e"
+    },
+    {
+      "claim_id": "ba1e0c87-b412-496f-8f53-24b972f2b8b8",
+      "result_id": "93f6754e-0e9e-462b-93e3-cdd910313b6e"
+    },
+    {
+      "claim_id": "0e86a3e2-5e81-4c22-b139-38593fe8faa4",
+      "result_id": "93f6754e-0e9e-462b-93e3-cdd910313b6e"
+    },
+    {
+      "claim_id": "afe2d1ea-56e8-4753-a701-bc7832abbff4",
+      "result_id": "93f6754e-0e9e-462b-93e3-cdd910313b6e"
+    },
+    {
+      "claim_id": "ac3d772c-74b4-4072-b0a0-7beee42e4542",
+      "result_id": "93f6754e-0e9e-462b-93e3-cdd910313b6e"
+    }
+  ],
+  "comparisons": []
+}

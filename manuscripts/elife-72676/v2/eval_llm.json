@@ -1,0 +1,327 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "H1 is the best single classifier to distinguish CMT and DRM TEs, achieving 12.17% error rate alone, and is fundamental to separating these silencing pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 present a systematic random forest classification analysis showing H1 as the top predictor with quantified error rates (2.15% with all variables, 5.42% with H1+H3K9me1, 12.17% with H1 alone). The data-driven approach and quantitative metrics provide strong support for H1's role in pathway separation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Loss of H1 causes RdDM activity to relocate from DRM TEs to CMT TEs, with 5.6-fold increase in sRNA at CMT TEs and corresponding decreases at DRM TEs, while global 24-nt sRNA levels remain constant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C47 describe a coherent pattern of RdDM relocation supported by multiple data types (methylation, sRNA, H3K9me2) across multiple genotypes (h1, h1cmt2). The quantitative measurements (5.6-fold increase) and genetic controls (h1cmt2 showing same effect) provide strong convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "H1 loss promotes sRNA biogenesis preferentially in nucleosome linker DNA, with shortened nucleosome repeat length (180 to 167 bp) and altered sRNA autocorrelation patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 integrate published data (C48, C49) with new observations (C50, C51) to demonstrate linker-specific effects. The autocorrelation analysis (C52) provides mechanistic insight into how H1 controls sRNA production through both direct linker occlusion and nucleosome positioning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "In wt plants, sRNA expression increases with H3K9me1/2 but reverses at high H3K9me+H1 TEs, while h1 plants show a simple direct relationship between sRNA and H3K9me, suggesting H1 prevents Pol IV from following the H3K9me gradient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 describe contrasting patterns in wt vs h1 that support the inference that H1 blocks Pol IV recruitment by H3K9me. The data-driven observations (C53, C54) logically support the mechanistic interpretation (C55).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "In ibm1 mutants where genes gain H3K9me and mCH, these genes show increased sRNA and mCHH levels, suggesting H3K9me or mCH presence may be sufficient to trigger 24-nt sRNA production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 use ibm1 as a genetic test system where H3K9me/mCH are gained independently of RdDM. The observation of increased sRNA (C58) in this context supports the sufficiency hypothesis (C59), though the claim appropriately uses cautious language ('may be sufficient').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C69"
+    ],
+    "result": "CMT TEs remain hypermethylated in h1cmt2shh1 plants, demonstrating that Pol IV is recruited to CMT TEs independently of SHH1 in the absence of H1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 and C69 present genetic evidence from triple mutants showing SHH1-independent RdDM at CMT TEs. The observation that hypermethylation persists in h1cmt2shh1 (C60) directly supports the independence claim (C61), with C69 providing the broader conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "CLSY1/2 and SHH1 preferentially mediate RdDM at DRM TEs, while CLSY3/4 preferentially recruit Pol IV to CMT TEs, with TEs hypermethylated in h1cmt2 showing strong overlap with CLSY3/4-dependent clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C68 establish differential CLSY pathway targeting through mutant analysis (C64, C65) and overlap analysis (C67). The complementary effects of clsy1/2 vs clsy3/4 mutations provide strong support for the pathway-specific recruitment model (C66, C68).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "RdDM expansion into heterochromatin does not require mCG, as MET1-independent CMT TEs gain sRNA and mCHH in h1met1, while MET1-dependent TEs that lose both mCH and H3K9me do not recover sRNA, suggesting mCH or H3K9me is necessary for sRNA biogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C82 use met1 and h1met1 mutants to dissect mCG vs mCH requirements. The differential behavior of MET1-independent (C71-C74) vs MET1-dependent (C75-C77) TEs, combined with CLSY3/4 cluster analysis (C78-C81), provides strong evidence that mCH, not mCG, is critical for RdDM.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "RdDM expansion into heterochromatin occurs in h1ddm1 mutants despite severe H3K9me reduction and disrupted heterochromatin integrity, arguing against a primary role for H3K9me in Pol IV recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C90 use ddm1 as a genetic tool to disrupt heterochromatin while maintaining the h1 effect. The observation that RdDM expansion persists despite severe H3K9me loss (C89) strongly supports the argument against H3K9me primacy (C90), though residual H3K9me could still contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "In c2c3 and h1c2c3 mutants, mCH is abolished but H3K9me is partially retained at mCG-dense CMT TEs, with H3K9me associating with mCG and CG/CCG density, suggesting SUVH4/5/6 recruitment to mCG in the absence of mCH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C101 demonstrate successful decoupling of H3K9me and mCH in c2c3 mutants. The principal component analysis (C95), complementary patterns in met1 vs h1c2c3 (C97-C98), and consistency with published work (C100-C101) provide strong convergent support for mCG-dependent H3K9me recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "In h1c2c3 plants, the coupling of H3K9me with DNA methylation and sRNA nearly disappears, with only mCH-sRNA correlation remaining linear, while loss of CMT2/3 largely abrogates Pol IV relocation into heterochromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C113 present comprehensive correlation analyses showing that in h1c2c3, sRNA patterns revert to wt-like (C109) with only mCH maintaining linear association with sRNA (C110). The key observations (C111-C112) strongly support the hypothesis (C113) that mCH recruits Pol IV, though C113 is appropriately labeled as a hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "In CLSY1/2 clusters and suvh4/5/6 mutants, sRNA expression associates with mCHH but not H3K9me, with 24-nt sRNA correlating much more strongly with mCH than H3K9me2, highlighting limited importance of H3K9me for sRNA biogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C119 analyze euchromatic RdDM targets to test whether the heterochromatin findings generalize. The consistent pattern across CLSY1/2 clusters (C114) and suvh4/5/6 mutants (C117-C118) provides strong support for mCH over H3K9me in recruiting Pol IV.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "In polv mutants, 90% of LH CLSY1/2 clusters lose mCHH and show greatly reduced sRNA, while suvh4/5/6 mutants maintain sRNA despite H3K9me2 loss, demonstrating that sRNA biogenesis specifically requires mCH, not H3K9me2 or mCG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C124 use polv mutants to test causality by removing mCH (a product of RdDM). The differential effects in polv (sRNA lost) vs suvh4/5/6 (sRNA maintained) provide strong evidence for mCH requirement (C124), effectively addressing the circularity concern about mCH being an RdDM product.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C125",
+      "C126"
+    ],
+    "result": "Linker histone H1 prevents sRNA production in heterochromatin, and mCH promotes Pol IV activity, contrary to the established view that Pol IV is recruited by H3K9me or mCG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C126 represent the two main conclusions of the study, each supported by multiple independent lines of evidence presented throughout the manuscript. The convergent evidence from multiple mutant backgrounds, correlation analyses, and genetic dissections strongly supports both conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C131",
+      "C133",
+      "C134"
+    ],
+    "result": "The GC sequence preference of Arabidopsis H1 may have evolved to target it to coding sequences including autonomous heterochromatic TEs, focusing RdDM activity on short AT-rich euchromatic TEs that RdDM is uniquely suited to silence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C128 and C131-C134 present an evolutionary hypothesis integrating the study's findings with H1 sequence preferences. While speculative (appropriately indicated by 'may'), the hypothesis is well-supported by the data and provides a coherent explanation for the observed pathway separation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Background knowledge about plant TE silencing, RdDM pathway components, and the CMT-SUVH feedback loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C30 present established knowledge about plant epigenetics, properly supported by citations. These provide essential context for interpreting the study's findings but are not novel results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "Among 18,784 TEs with >2% mCHH in wt, 4,486 were demethylated in cmt2, 3,039 in drm2, with only 80 TEs losing mCHH in both mutants, consistent with largely separate CMT and DRM targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 provide quantitative characterization of CMT vs DRM TE targets using appropriate statistical criteria (Fisher's exact test p<0.01). The minimal overlap (80 TEs) supports the pathway separation model and establishes the classification used throughout the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C132"
+    ],
+    "result": "Long TEs silenced by CMT-SUVH are GC-rich due to coding sequences, while short nonautonomous TEs are AT-rich, and most animal H1 variants prefer AT-rich DNA unlike plant H1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C130 and C132 present established knowledge about TE composition and H1 sequence preferences, properly supported by citations. These provide context for the evolutionary hypothesis but are not novel findings.",
+    "result_type": "MINOR"
+  }
+]

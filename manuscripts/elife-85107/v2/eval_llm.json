@@ -1,0 +1,343 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The basal ganglia (BG) contribute to reinforcement learning (RL) and decision-making through complex circuitry involving opponent striatal pathways (D1 and D2 MSNs) that respond differentially to dopamine. Phasic DA signals convey reward prediction errors, amplifying activity and learning in D1 neurons (promoting reward-based action selection) while DA dips amplify D2 neuron activity (promoting cost minimization).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C2, C11-C14) represent well-established neuroscience findings supported by extensive prior literature as cited throughout the manuscript. The authors correctly describe the foundational biology of the BG-DA system that motivates their OpAL* model. These are background claims rather than novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C15",
+      "C16",
+      "C17",
+      "C22",
+      "C23",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "OpAL* is a computational model where learning induces opponent pathways (D1/D2) to differentially emphasize positive or negative outcome histories for each action. A 'meta-critic' tracks environmental richness and dynamically modulates dopamine levels at choice time, amplifying the pathway (G or N actor) most specialized for the current environment. This mechanism is hypothesized to provide normative advantages for flexible decision-making.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C15-C17, C22-C23, C43-C45 describe the core architecture and mechanisms of the OpAL* model. These are clearly defined in the text and illustrated in Figure 1. The model's components (opponent actors, meta-critic, dynamic DA modulation) are explicitly specified with mathematical formulations provided in the Methods. The hypothesis that this provides normative advantages is the central claim tested throughout the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C27",
+      "C51",
+      "C52",
+      "C53",
+      "C99",
+      "C100",
+      "C101",
+      "C111"
+    ],
+    "result": "OpAL* exhibits robust performance advantages over alternative models (OpAL+, No Hebb, Q-learning, UCB) across a wide range of parameter settings, particularly in environments with sparse rewards and large action spaces. These advantages depend on the combination of opponent pathways, nonlinear Hebbian plasticity, and adaptive DA modulation, and grow monotonically with environmental complexity in lean environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C27, C51-C53, C99-C101, C111 are supported by extensive grid search simulations (Figures 3-6) comparing OpAL* to control models across different environment types and complexities. Statistical tests (one-sample t-tests, p<1.0e-13) confirm significant advantages. The systematic ablation approach (comparing to OpAL+ and No Hebb) effectively isolates the contributions of DA modulation and Hebbian mechanisms. The monotonic growth with complexity (Figure 5) is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C34",
+      "C35",
+      "C36",
+      "C66",
+      "C76",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "The nonlinear Hebbian plasticity mechanism in OpAL*, previously thought to be pathological (associated with Parkinsonism), is essential for the model's normative advantages. This mechanism causes opponent actors to specialize in discriminating between high and low reward probability options, enabling adaptive performance when DA is not depleted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C34-C36, C66, C76, C148-C151 are supported by: (1) comparisons to the No Hebb variant showing reduced performance (Figures 3-4), (2) citations to prior work (Wiecki et al., 2009; Beeler et al., 2012) establishing the pathological role, and (3) mechanistic analysis showing how the Hebbian term induces specialization (Figure 1B, Figure 2). The irony that a pathological mechanism provides normative advantages is a key insight, though the claim of 'normative' advantages depends on the specific task environments tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C55",
+      "C56",
+      "C57",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "OpAL* captures risky choice patterns arising from DA and environmental manipulations across species, including: (1) rodent optogenetic D2 MSN stimulation effects (Zalocusky et al., 2016), (2) human L-DOPA drug effects on gambling (Rutledge et al., 2015), (3) environmental richness effects on human economic choice (Frydman and Jin, 2021), and (4) context-dependent preference violations (Palminteri et al., 2015). These patterns are suggested to result from a normative biological mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C55-C57, C121-C124, C159-C161 are supported by qualitative simulations matching empirical patterns (Figures 9-11). The model captures key phenomena: selective L-DOPA effects on gain trials, D2 stimulation reducing risk-seeking, and richness-dependent gambling. However, these are qualitative fits without formal model comparison or parameter fitting to individual subjects. The claim that these reflect a 'normative' mechanism is an inference from the model's design principles rather than direct evidence. The simulations demonstrate consistency but not necessity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Q-learning and UCB algorithms show convergence issues in lean environments due to stochastic sampling, leading to reduced action gaps and impeded policy optimization. Value estimation errors are particularly pernicious in lean environments, causing stochastic switching between options until convergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C141 describe well-known limitations of value-based RL algorithms, supported by simulations in Figure 8. The analysis clearly demonstrates divergent action gaps between rich and lean environments for Q-learning under stochastic sampling versus full information. The mechanistic explanation (underestimation of suboptimal options in rich environments being helpful, but problematic in lean) is logically sound and illustrated. This provides important context for understanding OpAL*'s advantages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "As a modified actor-critic, OpAL* directly optimizes policy without representing expected rewards per se, allowing actors to discriminate between optimal and suboptimal actions before critic convergence. This difference relates to the recent predominance of policy gradient methods over value-based algorithms in deep RL, particularly for sparse reward and large action spaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C133, C142-C145 are supported by the mechanistic analysis in Figure 8 showing OpAL* maintains proper action rankings and policy earlier than Q-learning. The connection to policy gradient methods (C143) is a reasonable analogy supported by citations (Li and Daw, 2011; Bellemare et al., 2015). However, the claim that OpAL* 'directly optimizes policy' is somewhat imprecise\u2014it still uses a critic for learning, just with different dynamics. The ordinal ranking preservation (C133) is demonstrated in Figure 1 and cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C67",
+      "C102",
+      "C103",
+      "C152"
+    ],
+    "result": "OpAL*'s exploration-exploitation strategy operates at the meta-critic level: initially low confidence leads to equal reliance on both actors with stochastic choice. After learning, nonlinear Hebbian accumulation allows actor weights to be sensitive to probabilistic outcome history, enabling rapid policy optimization and preferential avoidance of suboptimal actions in lean environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47, C67, C102-C103, C152 describe the exploration mechanism and are supported by the mechanistic analysis in Figure 8C and the mathematical derivation (Equation 22) showing how Hebbian updates implicitly encode RPE history. The claim that this allows 'rapid policy optimization' is demonstrated through learning curves. However, the precise dynamics of when DA modulation 'engages' depend on hyperparameters (\u03c6, k) that were fixed rather than optimized, which could affect generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "OpAL* addresses instability issues in the original OpAL model (identified by M\u00f6ller and Bogacz, 2019) through two mechanisms: (1) normalizing prediction errors by the range of available reward values (supported by evidence from Tobler et al., 2005; Bavard et al., 2018), and (2) annealing actor learning rates as a function of meta-critic uncertainty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75, C93-C97 describe modifications to address known limitations. The instability issue (C73) is properly attributed to prior work. The normalization (C93-C95) is supported by citations to empirical evidence. The annealing mechanism (C96-C97) is clearly described and biologically motivated. However, the effectiveness of these solutions is demonstrated primarily through stable learning curves (Appendix figures) rather than systematic comparison of stability metrics. The claim that this 'preserves flexibility' (C74) is stated but not rigorously tested with change-point detection tasks.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "In ecological settings with multiple actions and sparse rewards, RL agents face difficult exploration-exploitation tradeoffs. Standard RL models perform worse in lean environments than rich environments due to different exploration requirements. Biological agents cannot tune hyperparameters in advance like machine learning applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26, C37-C42 provide motivation for the study. The exploration-exploitation challenge in sparse reward environments (C25) is well-established and properly cited (Sutton and Barto, 2018). The asymmetry between rich and lean performance (C37) is supported by prior work (Collins and Frank, 2014) and demonstrated in the current simulations. The constraint on biological agents (C42) is a reasonable inference about biological versus artificial systems, though somewhat speculative about what biological systems 'can' or 'cannot' do.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C126",
+      "C164",
+      "C168",
+      "C169"
+    ],
+    "result": "OpAL*'s dynamic modulation mechanism can be conceptualized as 'efficient coding' for decision-making, analogous to efficient coding in perception. This provides a mechanistic account for recent findings in economic choice showing that participants are riskier in environments with increased frequency of large gamble payoffs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C126, C164, C168-C169 draw an analogy between OpAL* and efficient coding principles. The analogy is reasonable: OpAL* amplifies the actor most discriminative for the current environment, similar to how sensory systems allocate resources to frequent features. The connection to economic choice (C168-C169) is supported by simulations of Frydman and Jin (2021) data (Figure 11C-D). However, this is an interpretive framework rather than a formal demonstration that OpAL* implements efficient coding in a technical sense. The analogy is useful but not rigorously proven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C146",
+      "C147"
+    ],
+    "result": "OpAL* captures violations of transitive preferences observed when choosing between actions experienced in different contexts (loss vs. gain), as shown in Palminteri et al. (2015). The model captures this because its policy was optimized to prefer a frequent loss avoider in loss contexts and avoid an infrequent winner in gain contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C147 are supported by simulations in Figure 9 showing OpAL* reproduces the counterintuitive preference for L25 over G25 under complete information. The mechanistic explanation (policy optimization in context) is consistent with the model's design. However, the simulations use a specific parameter setting (fast critic learning) that may not generalize. The authors acknowledge this is similar to Palminteri et al.'s relative value model, suggesting this is not a unique prediction of OpAL*.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C173",
+      "C175"
+    ],
+    "result": "A limitation of OpAL*'s DA modulation mechanism is that performance advantages depend on relatively accurate estimates of environmental richness. Performance can suffer with incorrect estimation, making it essential that DA modulation is dynamic and that the meta-critic is sufficiently confident before modulating DA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C171-C173, C175 acknowledge important limitations. The dependence on accurate richness estimation (C171-C172) is demonstrated in Appendix 1-figure 1. The need for dynamic modulation and confidence (C173, C175) follows logically from the model's design. These are honest assessments of the model's constraints. However, the paper does not systematically explore the robustness to misestimation or provide guidelines for setting the confidence threshold (\u03c6) beyond the fixed value used in simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Q-learning is the most commonly used RL algorithm in both machine learning and biological RL. UCB provides directed exploration and has access to sample means (ideal observer), presenting a challenging benchmark. Both models lack opponent characteristics and are guaranteed to converge to expected values, but convergence requires repeated sampling, impeding interim performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C120 provide background on comparison models. The prevalence of Q-learning (C113) is well-supported by citations. The descriptions of UCB (C115-C116) and the convergence properties (C119) are accurate characterizations of these algorithms. The limitation that convergence impedes interim performance (C119) is a well-known issue in RL. These claims provide appropriate context for the model comparisons, though the characterization of UCB as 'ideal observer' (C116) is somewhat generous given it still faces exploration-exploitation tradeoffs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Striatal DA manipulations influence reinforcement learning, motivational vigor, cost-benefit decisions about physical effort, and risky decision-making across species. As DA levels rise, humans and animals are more likely to select riskier options, an effect causally linked to striatal D2 receptor-containing subpopulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 summarize empirical findings from prior literature, properly cited throughout (Yttri and Dudman, 2016; Frank et al., 2004; Pessiglione et al., 2006; Niv et al., 2007; Beeler et al., 2012; Hamid et al., 2016; Salamone et al., 2018; St Onge and Floresco, 2009; Zalocusky et al., 2016; Rutledge et al., 2015). These are well-established findings that motivate the study. The causal link to D2 subpopulations (C33) is specifically supported by Zalocusky et al., 2016. These are accurate representations of prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "According to OpAL*, the brain treats increases or decreases in dopamine as signaling presence in richer or leaner states, with behavioral changes reflecting adaptation to perceived environmental changes. DA-depleted animals focus on costs while DA increases enhance attractiveness of risky actions. The impact of exogenous DA modulation on risky decision-making may be a by-product of this endogenous adaptive mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C154-C158 present an interpretation of how OpAL* explains DA manipulation effects. This is a reasonable inference from the model's design and simulations (Figure 7, Figures 10-11), but it remains a hypothesis about biological function rather than demonstrated fact. The claim that exogenous DA effects are 'by-products' of an endogenous mechanism (C157) is speculative\u2014it's equally possible that the model captures DA effects without the endogenous mechanism being the 'true' biological function. This interpretation is plausible but not definitively supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The meta-critic in OpAL* is proposed to summarize contributions from cortical sources (orbitofrontal cortex, anterior cingulate) that have access to reward values and confidence. These regions project to striatal cholinergic cells that locally regulate striatal DA release in proportion to reward history and may be sensitive to uncertainty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C86 describe the biological inspiration for the meta-critic, supported by appropriate citations (Kepecs et al., 2008; Stalnaker et al., 2016; Adrover et al., 2020; Threlfell et al., 2012; Reynolds et al., 2022; Mohebi et al., 2019; Franklin and Frank, 2015). These are plausible neural substrates for the computational mechanism. However, the meta-critic is an abstract computational component\u2014the mapping to specific neural circuits is speculative. The authors appropriately present this as biological motivation rather than claiming the meta-critic directly corresponds to a specific brain region.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183"
+    ],
+    "result": "DA signals are not uniform across striatum and can be tailored to striatal subregions specialized for given tasks. DA manipulations can induce asymmetries in learning rates from positive and negative RPEs, which can be dissociated from choice effects. While learning rate asymmetries could be optimized as a function of environment, they do not address exploration-exploitation dilemmas in lean environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C178-C183 discuss extensions and limitations. The non-uniformity of DA signals (C178-C179) is supported by recent work (Hamid et al., 2021). The learning rate asymmetries (C180) are well-documented (Frank et al., 2007a; Niv et al., 2012; Collins and Frank, 2014). The speculation about optimizing learning rates (C181) is appropriately tentative. The limitation that learning rate asymmetries don't address exploration-exploitation issues (C183) is a reasonable inference. These claims appropriately situate OpAL* within broader literature and acknowledge what it does and doesn't explain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C170"
+    ],
+    "result": "OpAL* predicts that if common trials included unfavorable gambles (expected value less than certain option), people would more reliably select the certain outcome in lean environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C170 is a novel prediction derived from the OpAL* mechanism. This follows logically from the model's dynamics: in lean environments, low DA amplifies the N actor which emphasizes costs, making unfavorable gambles less attractive. This is a testable prediction that could distinguish OpAL* from alternative models. However, it remains untested and is presented as a prediction rather than a demonstrated result.",
+    "result_type": "MINOR"
+  }
+]

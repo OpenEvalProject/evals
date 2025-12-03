@@ -1,0 +1,289 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The authors establish the motivation for developing the IBdb by documenting the current state of data accessibility in insect neuroscience. They claim that only a small fraction of insect neuroscience data are findable, accessible, and reusable (C1), that underlying research data most often remain unavailable (C12), that no universal data repository exists for insect neuroscience outside Drosophila (C15), and that data are often deposited in inaccessible local facilities (C16). They further assert that interspecies comparison is a fundamental pillar of insect neuroscience (C17).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C11, C12, C15, and C16 are supported by citations (C11) and represent established knowledge about data management practices in the field. Claim C17 about the importance of interspecies comparison is presented as domain knowledge and is consistent with the comparative nature of insect neuroscience research. These claims collectively establish a well-documented need for the database.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The authors review existing databases for insect neuroscience data, documenting both historical efforts and current platforms. They describe early database attempts for various species (C18-C21) that were short-lived (C22), and current databases including Virtual Fly Brain (C23-C24, C28), NeuroMorpho.Org (C25-C27), noting limitations such as lack of cross-species comparison tools (C27, C28) and absence of systematic functional information (C29).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All claims about existing databases are supported by appropriate citations (C18-C21, C23-C26). The characterizations of database limitations (C22, C27-C29) are presented as observations based on the authors' knowledge and experience with these platforms. This comprehensive review establishes the context and identifies gaps that the IBdb aims to address.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The authors describe the basic accessibility and technical requirements of the IBdb. They state that the IBdb is a free online platform (C2, C31) accessible at insectbraindb.org (C30), compatible with most modern web browsers with active Javascript (C32), and requires user registration for downloading data and contributing content (C33).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C30-C33 describe factual, verifiable features of the database implementation. These are straightforward descriptive claims about the database's accessibility and technical requirements that can be directly verified by accessing the platform.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The authors describe the organizational structure and data management features of the IBdb. The database is organized into three hierarchical layers (species, brain structures, neuron types) plus experiments (C34-C35), with profile pages collecting relevant information at each level (C36). Profile pages automatically acquire metadata through the hierarchical framework (C37). Cell types are defined as morphologically indistinguishable neurons at light microscopy level (C38). Experiment entries contain specific data from individual experiments (C39). Each entry receives a persistent identifier (handle) (C40) that must be regenerated when information is modified (C41).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C41 describe the implemented organizational structure and data management features of the database, supported by Figure 1A-C. The hierarchical organization, profile page system, cell type definition, and persistent identifier system are design features that are demonstrated through the database implementation and illustrated in the figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The authors describe the generic insect brain framework used in the IBdb. The generic brain was generated based on the insect brain nomenclature from Insect Brain Name Working Group et al., 2014 (C42), divides the brain into 13 super-regions (C43), with one modification raising the anterior optic tubercle to super-region level (C44). The default number of slices in the central complex is 16, assumed to be the ancestral state (C45).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 are supported by citation to the established nomenclature system and describe implementation decisions. Claim C45 involves an assumption about ancestral state that is explicitly acknowledged as such. The generic brain framework is illustrated in Figure 2\u2014figure supplement 1 and 2, providing visual evidence for these organizational decisions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The authors describe the technical infrastructure of the IBdb. The web infrastructure is hosted by Amazon Web Services in Frankfurt, Germany (C46), data is stored using PostgreSQL (C47), database structure is managed by Django (C48), the front-end uses Angular framework (C49), the 3D viewer uses Three.js (C50), and communication is protected by HTTPS (C51).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 describe the technical implementation details of the database, which are factual statements about the technology stack used. These are verifiable technical specifications that are standard practice to document in database development papers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The authors describe the data ownership and licensing policies of the IBdb. Contributors retain ownership and copyright of their data (C52), datasets are licensed under CC BY NC 4.0 (C53), and images generated using the IBdb are licensed under CC BY 4.0 (C54).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 describe the implemented licensing and ownership policies of the database. These are policy decisions that are clearly stated and represent standard practices in open data repositories.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The authors describe the curation and management structure of the IBdb. The database is managed by voluntary curators, a scientific administrator, and a technical administrator (C55), with each species managed by a specialized expert curator (C56). The IBdb intentionally does not include Drosophila melanogaster (C57).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 describe the implemented management structure and scope decisions for the database. The distributed curation system and exclusion of Drosophila are design decisions that are clearly stated and justified in the context of complementing existing resources like VFB.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The authors describe the interoperability between IBdb and Virtual Fly Brain (VFB). The brain nomenclature used by both databases is identical (C58), the databases use APIs to allow direct communication (C59), and searches in IBdb can automatically query VFB via API (C60).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 describe the implemented interoperability features between the two databases. The shared nomenclature and API-based communication are technical features that enable cross-database functionality, representing a significant achievement in database integration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The authors claim that the IBdb facilitates biological insight through multiple capabilities: enabling cross-species comparisons (C3), linking neural structure with function (C4), serving as an information hub (C5), allowing users to locate and visualize data (C6), and making data available for automated reuse via API (C7).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C7 describe the intended capabilities of the database based on its design and implementation. The cross-species comparison capability is demonstrated through the generic brain framework and search interfaces. The structure-function linking is enabled by the hierarchical organization that connects anatomical and functional data. The visualization and API features are implemented technical capabilities. These claims are supported by the described features and illustrated in multiple figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The authors claim that the private mode of the IBdb provides means for managing, visualizing, and sharing unpublished data (C8), and that this dual function creates incentives for early data contribution (C9) and eliminates additional effort for public deposition (C10).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C8 describes an implemented feature of the database that is supported by the technical description and Figure 6-7. However, claims C9 and C10 are inferences about user behavior and workflow efficiency that are not empirically validated in the manuscript. While the logic is sound, actual evidence of these effects on user behavior would require user studies or longitudinal data on contribution patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The authors identify specific problems with previous insect neuroscience databases: lack of maintenance leading to outdated formats (C61), limited data contribution and download capabilities (C62), and absence of combined functional and anatomical data (C63). They claim the IBdb is the first invertebrate neuroscience database to combine functional and anatomical data at multiple levels (C63).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 are supported by citations and represent documented problems with earlier databases. Claim C63 about the IBdb being the first to combine functional and anatomical data is qualified with \"to our knowledge\" and is consistent with the review of existing databases (C23-C29) which documented the absence of systematic functional information in other platforms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "The authors claim that most relevant funding bodies are implementing or have implemented open data mandates (C64) and that formulating data management plans has become mandatory for most funding organizations (C65).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 represent general knowledge about current trends in research funding policy. These are verifiable statements about funding requirements from major organizations (European Research Council, NIH, Wellcome Trust) that provide context for the need for data management tools like the IBdb.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "The authors present a biological finding from data published in the IBdb: neural morphologies from the Monarch butterfly published solely in the IBdb (C66) demonstrated a previously unknown connection between the gall of the lateral complex and the mushroom body lobes via the dp-GA-MB(L) neuron (C67).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 describe a specific biological finding based on data deposited in the database. The neuron is identified with a specific database identifier (NIN-0000383), making it verifiable. This represents a concrete example of how the database enables new biological discoveries.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The authors present comparative anatomical observations enabled by the IBdb: PFL/CPU1 neurons are likely homologous across insects (C68), target the dorsal LAL in most species (C69), but terminate in the ventral LAL in locusts (C70).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 represent comparative anatomical observations based on data available in the database. The homology inference (C68) is appropriately qualified as \"most likely,\" and the anatomical observations (C69-C70) are based on comparative data from multiple species. This demonstrates the cross-species comparison capability of the database.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The authors claim that the IBdb framework is not limited to insect brain data (C71), would be suitable for other animal taxa without major modifications (C72), and they are conceptualizing expansion to include spiders (C73).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C71 is a statement about the potential scope of the framework. Claim C72 is an inference about adaptability that has not been empirically tested. Claim C73 is explicitly about future plans. While the hierarchical organization principle could theoretically apply to other taxa, the actual suitability for other animal groups would require demonstration through implementation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "The authors describe available tools for programmatic access to the IBdb: a MATLAB implementation for automatic deposition is available on GitHub (C74), and the Natverse package in R offers the possibility to explore IBdb data (C75).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 describe available tools with specific references (GitHub link for C74, citation to Bates et al., 2020 for C75). These are verifiable statements about existing software tools that interface with the database.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The authors present usage statistics for the IBdb: registered user accounts grew from 9 in 2015 to 68 in 2021 (C76), downloaded files increased from approximately 750 in 2018 to approximately 3400 in 2020 (C77), and most substantial growth in data deposition occurred in 2020 and 2021 (C78).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are supported by data shown in Figure 7\u2014figure supplement 1. These are quantitative measurements of database usage that demonstrate growing adoption of the platform. The data provide evidence of increasing engagement with the database over time.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C13",
+      "C14"
+    ],
+    "result": "The authors state that FAIR principles were developed to ensure common standards for data repositories (C13) and that annotation and rich metadata are essential for datasets to be beneficial to others (C14).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C13 is supported by citation to Wilkinson et al., 2016, the foundational FAIR principles paper. Claim C14 is a reasonable inference from the FAIR principles. These claims establish the conceptual framework and standards that guided the database design.",
+    "result_type": "MINOR"
+  }
+]

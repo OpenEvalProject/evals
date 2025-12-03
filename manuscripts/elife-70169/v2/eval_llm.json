@@ -1,0 +1,330 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The manuscript provides background on single-particle tracking (SPT) as a method to measure protein dynamics in living cells, describing its evolution from membrane proteins to intracellular applications and technical advances including stochastic labeling and stroboscopic excitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 are well-supported by appropriate citations to prior work (Martin et al., Manley et al., Elf et al., etc.). These claims establish the scientific context and are consistent with the cited literature. No experimental validation is required as these are literature-based background claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The manuscript identifies localization error as a major challenge in sptPALM, arising from both photon-limited detection and motion blur. Motion blur during 1 ms integration produces ~180 nm displacement for particles with D=10 \u03bcm\u00b2/s, substantially larger than typical fixed-cell PALM/STORM localization error.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C15 are supported by appropriate citations and a quantitative calculation (C13) with visual support in Figure 1\u2014figure supplement 1B. The physics of localization error and motion blur are well-established, and the calculation appears correct for Brownian motion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The manuscript identifies defocalization as a fundamental limitation of sptPALM in mammalian cells. High NA objectives create focal depths <1 \u03bcm, while mammalian cells are 5-10 \u03bcm deep, resulting in short trajectory transits (mean 3-4 frames) that depend on particle mobility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 are supported by appropriate citations (Kues and Kubitscheck, Mazza et al., Hansen et al.) and visual evidence (Figure 1C, Videos 2-3). The geometric constraints are well-established, and the reported mean trajectory length of 3-4 frames is consistent with the experimental setup described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C35"
+    ],
+    "result": "The manuscript critiques the MSD histogram approach as prone to large systematic biases due to high variability for short trajectories, inability to estimate localization error from individual trajectories, and incorrect assumptions about equal sampling of slow and fast states in the presence of defocalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 and C35 are supported by appropriate citations (Michalet and Berglund, Mazza et al., Hansen et al.). The limitations of MSD for short trajectories with unknown localization error are well-established in the SPT literature, and the defocalization bias is documented in the cited work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The manuscript reviews existing methods for sptPALM analysis, noting that jump length CDF fitting methods account for defocalization but extend poorly to complex models, while vbSPT excels at recovering occupations and transition rates but does not consider defocalization or localization error and is not appropriate for non-discrete dynamic profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 accurately describe the capabilities and limitations of existing methods based on appropriate citations (Mazza et al., Hansen et al., Persson et al., Lind\u00e9n et al.). These are fair characterizations of prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The manuscript's main finding is that state arrays (SAs) far outperform DPMMs on simulated and real datasets due to their robustness to variable localization error variance, though both methods share the limitation of not handling state transitions. The SA method is made publicly available as a Python package.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 are supported by extensive simulation results presented in Figures 3-4 and supplements. The comparative performance is quantified (e.g., \u22645% RMSD for SAs vs 5-20% for DPMMs in C49). Claim C31 acknowledges a shared limitation. Claim C32 provides software availability, which is verifiable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C39",
+      "C40"
+    ],
+    "result": "The manuscript describes the theoretical basis for the DPMM and SA approaches to RBME (regular Brownian motion with localization error). The DPMM uses a Markov approximation that is only strictly valid when localization error is zero, while SAs naturally incorporate uncertainty about localization error through joint inference over diffusion coefficient and localization error variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 and C39-C40 are supported by appropriate citations (Martin et al., Matsuda et al., Michalet and Berglund) and mathematical descriptions in the Methods. The non-Markovian nature of RBME due to localization error is well-established (C34), and the SA's approach to handling this (C40) is demonstrated in Figure 3\u2014figure supplement 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "The manuscript describes practical considerations for applying DPMMs and SAs, noting they work best with thousands to tens of thousands of trajectories, and introduces a 'naive occupation estimate' as a less precise but faster alternative for visualizing cell-to-cell variability with smaller trajectory numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 describe practical aspects of the methods. C41 is supported by the simulation studies showing convergence with increasing trajectory numbers (Figure 4D). C42 is a methodological description that is implemented and used in the results (e.g., Figure 5A).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "On simulated sptPALM data divided into four classes of increasing difficulty, SAs consistently outperformed both DPMMs and MSD histograms, particularly when localization error was unknown or variable. SAs achieved \u22645% RMSD from true CDF in class 3 simulations vs 5-20% for DPMMs/MSD, and occupations converged to within 3% of true values with sufficient trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C53 are supported by extensive simulation results in Figure 4 and supplements. The four simulation classes are clearly defined (C43), quantitative performance metrics are provided (C49, C50), and the superior performance of SAs is demonstrated across multiple conditions. The simulations appropriately test the methods under increasingly realistic conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "The manuscript investigates the effect of state transitions on SA/DPMM performance, finding that slow transition rates have negligible effect on estimated state profiles, but transition rates approaching the frame interval appear as a single state with intermediate diffusion coefficient. The transition occurs in a narrow window of mean dwell times between 0.05 and 0.5 frame intervals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by simulation results in Figure 4\u2014figure supplement 7 and citation to Crank (1975) for the theoretical basis. The finding is consistent with the known behavior of reaction-diffusion systems and represents an important limitation of the methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "The manuscript tests edge cases, finding that DPMMs and SAs recover correct state occupations even when true diffusion coefficients lie outside the inference range by using the closest supported value, and that states with similar diffusion coefficients are identified as a single population with summed occupation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by simulation results in Figure 4\u2014figure supplements 8 and 9. These represent important characterizations of method behavior at the boundaries of applicability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Comparison with vbSPT shows comparable accuracy on simple two-state models, but on more complex models vbSPT tends to overestimate and SAs tend to underestimate the number of states. vbSPT was notably less accurate at recovering slow-moving states with diffusion coefficients <0.1 \u03bcm\u00b2/s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 are supported by simulation results in Figure 4\u2014figure supplement 10. The comparison is fair and identifies complementary strengths and weaknesses of the two approaches. The specific limitation of vbSPT for slow states (C60) is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "The manuscript extends SAs to fractional Brownian motion (FBM), finding that SAs accurately recover diffusion coefficient and Hurst parameter for multistate FBM models, but with systematic error in estimating low (subdiffusive) Hurst parameters due to motion blur.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 are supported by simulation results in Figure 4\u2014figure supplements 11-12. The extension to FBM demonstrates the generality of the SA approach, and the identification of systematic error for subdiffusive Hurst parameters (C62) is an important limitation that is rationalized in Figure 4\u2014figure supplement 12B.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Application of SAs to experimental sptPALM data reveals distinct dynamic profiles for four proteins: HT and HT-NLS show single highly mobile states (with NLS reducing diffusion 2-3 fold), H2B-HT shows ~70% immobile fraction with fast population at 8-10 \u03bcm\u00b2/s, and RARA-HT shows ~40% immobile fraction with broad spectrum of diffusing states from 0.3-10.0 \u03bcm\u00b2/s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C70 are supported by experimental data in Figure 5 and appropriate citations for RARA-HT function (C63-C64) and NLS effect (C67). The distinct dynamic profiles are clearly shown in Figure 5A, and quantitative values are provided in Figure 5C. Biological replicates show similar results (Figure 5\u2014figure supplement 2A).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Domain deletion experiments show that removal of either DBD or LBD, or introduction of C88G point mutation in the DBD, results in loss of the immobile fraction for RARA-HT, suggesting this fraction represents chromatin-bound molecules. Deletion of NTD or CTD had milder effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 are supported by experimental data in Figure 5B and appropriate citation for the C88G mutation (Zhu et al., 1999). The inference that the immobile fraction represents chromatin-bound molecules (C72) is logical given that both DBD and LBD are required for chromatin binding, and is supported by the C88G mutation abolishing DNA binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "Bootstrap aggregation experiments reveal that the primary source of variability in DPMM/SA estimates is cell-to-cell rather than clone-to-clone or intrinsic variability due to finite sample sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 is supported by bootstrap aggregation results in Figure 5\u2014figure supplement 2B. The experimental design appropriately separates different sources of variability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Application of SAs to NPM1-HT reveals spatial heterogeneity in dynamics, with some populations (including slow-moving at 0.23 \u03bcm\u00b2/s) enriched in nucleoli while others (fast-moving at 4 \u03bcm\u00b2/s) are depleted. High localization densities led to deflation of slower-moving state occupations, likely due to tracking errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 are supported by experimental data in Figure 6 and appropriate citations (Mitrea et al., 2018). The spatial analysis (C80) is shown in Figure 6B-C, and the temporal analysis identifying tracking artifacts (C81) is shown in Figure 6D. The inference about tracking errors (C81) is reasonable given the correlation with localization density.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "The manuscript concludes that SAs revealed previously unappreciated features of RARA-HaloTag and H2B-HaloTag dynamics, particularly RARA-HaloTag's broad spectrum of diffusive states contrasting with the more discretized profiles of H2B-HaloTag or HaloTag-NLS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 are supported by the experimental results in Figure 5. The broad spectrum for RARA-HT vs discrete states for H2B-HT is clearly shown and represents a novel finding enabled by the SA method's ability to detect non-discrete dynamic profiles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The manuscript identifies key limitations of the methods: DPMMs require prior measurement of localization error, SAs require selection of appropriate parameter grid spacing, and neither method considers transitions between states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 are explicitly stated limitations in the Discussion. These are honest assessments of method limitations, with C86 being particularly important as it affects interpretation of results when state transitions occur on timescales comparable to the frame interval (as shown in C54-C55).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "The manuscript demonstrates that SAs accurately estimate state occupations even when true diffusion coefficients lie outside the inference range by using the nearest available diffusion coefficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 is supported by simulation results in Figure 4\u2014figure supplement 8. This represents an important robustness property of the method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "The manuscript discusses challenges in distinguishing anomalous diffusion parameters from localization error, noting that both Hurst parameter and localization error manifest as negative off-diagonal covariance terms, and citing recent work showing even top methods have >0.3 mean absolute error for short trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 are supported by Figure 4\u2014figure supplement 11B and citation to Mu\u00f1oz-Gil et al. (2021). This represents an honest assessment of fundamental limitations in inferring anomalous diffusion from short trajectories.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "The manuscript acknowledges that neither DPMMs nor SAs have built-in mechanisms to distinguish true jumps from tracking errors, as both rely on trajectories produced by separate tracking algorithms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 is an explicit limitation stated in the Discussion. This is an important caveat, as tracking errors can affect the inferred dynamic profiles (as demonstrated in C81).",
+    "result_type": "MINOR"
+  }
+]

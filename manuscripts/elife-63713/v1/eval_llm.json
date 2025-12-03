@@ -1,0 +1,375 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The manuscript establishes the context for studying modern human evolution by reviewing known phenotypic differences between modern and archaic humans and the challenges in understanding their genetic basis, particularly regarding noncoding regulatory variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C18 collectively establish well-documented background knowledge about modern-archaic human differences and the challenges of studying gene regulation in archaic samples. These claims are appropriately supported by multiple citations to prior work and represent established knowledge in the field rather than novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The manuscript justifies the use of MPRA methodology by explaining limitations of eQTL mapping for fixed variants and the advantages of MPRA for high-throughput regulatory variant characterization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 provide methodological justification supported by citations. These represent established methodological principles rather than novel findings, appropriately contextualizing the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The study identified 14,042 fixed or nearly fixed single-nucleotide variants that emerged along the modern human lineage by comparing modern human genomes to three Neanderthal genomes, one Denisovan genome, and 114 great ape genomes, excluding polymorphic sites within modern humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 describe the variant selection process with clear data sources and filtering criteria. The methodology is transparent and the resulting variant set is well-defined, though the biological interpretation of these variants as truly 'fixed' along the modern human lineage depends on the accuracy of the reference genomes and the completeness of polymorphism databases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The lentiMPRA experimental design tested 14,042 variant pairs using chromosomally integrating constructs with high barcode coverage (median 96 barcodes per sequence) across three cell types (ESCs, NPCs, osteoblasts), demonstrating strong technical reproducibility (Pearson's r = 0.76-0.96 between replicates) and ability to distinguish active from inactive sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C28-C33 describe the experimental design and validation with specific quantitative metrics. The high correlation between replicates and significant differences between positive controls and scrambled sequences support the technical validity of the approach. The choice of chromosomally integrating constructs is justified by citation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C3"
+    ],
+    "result": "13% (1,791) of sequence pairs showed active regulatory activity in at least one cell type, with 8% active in ESCs, 6% in osteoblasts, and 4% in NPCs, showing significant overlap across cell types (75-fold higher than expected, p<10\u207b\u00b9\u2070\u2070).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C34-C39 report the primary activity results with appropriate statistical thresholds (FDR <0.05) and multiple validation approaches. The significant overlap across cell types supports biological relevance, though the lower activity rate in ESCs may reflect technical factors (lower MOI) as acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Active sequences showed enrichment for functional genomic features including active chromatin marks (1.6-2.7-fold enrichment), promoter and enhancer annotations, proximity to eQTLs (6-32% closer) and TSS (1.2-1.3\u00d7 closer), hypomethylation (p=5.5\u00d710\u207b\u00b9\u00b3), and higher sequence conservation (PhyloP: -0.04 vs -0.05, FDR=1.1\u00d710\u207b\u00b3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C46 provide multiple lines of orthogonal evidence validating that MPRA-identified active sequences correspond to functional regulatory elements in their endogenous genomic context. The convergence of multiple independent genomic features (chromatin marks, methylation, conservation, proximity to regulatory elements) strongly supports the biological relevance of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C4"
+    ],
+    "result": "407 sequences (23% of active sequences) showed differential activity between modern and archaic alleles in at least one cell type: 110 (9%) in ESCs, 243 (30%) in osteoblasts, and 153 (25%) in NPCs, with significant overlap across cell types (8-fold higher than expected, p=5\u00d710\u207b\u2077).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C47-C52 report the key differential activity results with appropriate statistical thresholds (FDR \u22640.05). The variation in percentages across cell types is acknowledged in the Discussion as potentially reflecting both biological and technical factors. The significant cross-cell-type overlap supports biological signal over technical noise.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Differentially active sequences showed modest effect sizes (median fold-change 1.2\u00d7, only 5 sequences >2\u00d7) with balanced directionality in ESCs and NPCs (51-52% downregulating) but slight bias toward downregulation in osteoblasts (59%, p=6.9\u00d710\u207b\u00b3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 characterize the magnitude and directionality of differential expression. The modest effect sizes are appropriately contextualized by comparison to other MPRA studies of closely related organisms. The statistical significance of directional bias in osteoblasts is properly reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Differential activity showed strong consistency across cell types (87/89 sequences active in two cell types showed directional agreement, p=6.5\u00d710\u207b\u00b2\u2074; 10/10 in three cell types, p=9.5\u00d710\u207b\u2077) and was validated by overlapping sequences (Pearson's r=0.95, p=2.4\u00d710\u207b\u2075) and luciferase assays (9/12 sequences replicated, r=0.67, p=3.7\u00d710\u207b\u2074).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 provide multiple independent validations of differential activity results. The high concordance across cell types, overlapping sequences, and orthogonal assay methods strongly support the reliability of the differential activity calls, though the luciferase validation rate (75%) suggests some false positives may exist.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Differentially active sequences showed enrichment in regulatory regions, with 33-45% within 10 kb of TSS, 20-25% within promoter or enhancer chromHMM annotations, and significant over-representation in putative enhancers in NPCs (2.2-fold, FDR=0.03).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 characterize the genomic locations of differentially active sequences. The enrichment in enhancers specifically in NPCs is statistically significant and biologically interpretable, though the authors appropriately note that multiple factors could contribute to this enrichment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "DNA methylation patterns in modern vs. archaic humans correlated with differential activity: upregulating sequences showed hypomethylation (-2% on average, p=0.028), with stronger effects in promoters (+5% for upregulating, -8% for downregulating, p=0.034) and especially CpG-poor promoters (-15% for upregulating, +15% for downregulating, p=6\u00d710\u207b\u00b3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 link differential activity to DNA methylation differences using previously published archaic methylation maps. The correlation is statistically significant and shows expected patterns (hypomethylation with upregulation), with effect sizes increasing in genomic contexts where methylation-expression relationships are known to be stronger. However, the analysis is limited to osteoblasts due to tissue-specific methylation data availability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C5"
+    ],
+    "result": "Differential activity was associated with predicted transcription factor binding changes: differentially active sequences showed larger binding differences (4.3\u00d7, p=0.02), directional concordance between binding and expression (p<10\u207b\u2075 in all cell types), magnitude correlation (r=0.23-0.43), with 14 TFs showing predictive motif changes and ZNF281 significantly enriched in NPCs (4.6-fold, FDR=0.04).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C70-C75 link differential activity to TF binding using computational predictions. Multiple lines of evidence (magnitude, directionality, correlation) converge to support TF binding as a mechanism. However, these are computational predictions rather than experimental validations of TF binding, and the authors appropriately note that repressive activity may be underdetected due to the minimal promoter design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "75% (1,341) of active sequences were linked to putative target genes, with downregulating sequences enriched for Gene Ontology terms including vesicle-mediated transport (6.6-fold, FDR=1.9\u00d710\u207b\u00b3), regulation of apoptotic process (6.0-fold, FDR=1.9\u00d710\u207b\u00b3), protein ubiquitination (4.7-fold, FDR=1.9\u00d710\u207b\u00b3), multicellular organism development (3.3-fold, FDR=0.01), and protein transport (3.3-fold, FDR=0.02).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81 link sequences to genes and identify functional enrichments. The gene-linking approach combines multiple data sources (proximity, eQTLs, Hi-C, enhancer annotations) which is appropriate, though the authors acknowledge these are putative rather than validated regulatory relationships. The GO enrichments are statistically significant and use active sequences as background to control for biases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C6"
+    ],
+    "result": "Upregulating sequences showed enrichment for vocal tract anatomy genes, with vocal cords (5.0-fold, FDR=1.3\u00d710\u207b\u00b3), voice box/larynx (3.8-fold, FDR=4.8\u00d710\u207b\u00b3), and pharynx (3.3-fold, FDR=9.5\u00d710\u207b\u00b3) being the most enriched body parts in ESCs, consistent with previous DNA methylation findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C82-C83 identify vocal tract enrichment using Gene ORGANizer analysis. The enrichments are statistically significant and consistent with prior work by the same authors on DNA methylation changes. However, the biological interpretation requires caution as vocal tract soft tissues are not preserved in fossils, making direct phenotypic validation impossible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "Downregulating sequences showed enrichment for cerebellum genes (3.0-fold, FDR=9.2\u00d710\u207b\u00b3 in NPCs), consistent with previous reports that the cerebellum shows the biggest anatomical differences between modern humans and Neanderthals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 identify cerebellum enrichment supported by Gene ORGANizer analysis and consistent with multiple prior studies of brain anatomy differences. The convergence with fossil record observations strengthens the biological interpretation, though the mechanistic link between regulatory changes and anatomical differences remains to be established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "A variant in SATB2 (C\u2192T, PhyloP=0.996) located in a CpG island between alternative TSS and within the first intron of SATB2-AS1 showed downregulation in modern humans across all three cell types (-9% ESCs, -27% osteoblasts, -12% NPCs, all FDR<10\u207b\u2075), with SATB2 being a transcription factor affecting bone formation, jaw patterning, and brain development, where heterozygous loss-of-function causes SATB2-associated syndrome with neurological and craniofacial phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C98 characterize a specific candidate variant in SATB2 with convergent evidence: high conservation, regulatory chromatin marks, consistent downregulation across cell types, and known phenotypic effects matching modern-archaic differences. However, the causal link between this specific variant and phenotypic evolution remains speculative and would require functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "88% (15/17) of SATB2-affected phenotypes are divergent between modern humans and Neanderthals, with 80% (12/15) matching in direction between patients and the fossil record, representing 2.3-fold enrichment over chance (p=1.3\u00d710\u207b\u2074).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C101 attempt to link SATB2 regulatory changes to phenotypic evolution by comparing patient phenotypes to fossil record. While the statistical enrichment is significant, this analysis has several limitations: (1) the sample size is small (17 phenotypes), (2) the directionality comparison assumes that reduced SATB2 expression in modern humans would produce similar effects to heterozygous LOF, which may not be accurate for modest expression changes, (3) phenotype scoring from fossils involves subjective interpretation, and (4) multiple testing across many genes was not accounted for. The result is suggestive but requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "The study concludes that changes to transcription factor binding played a central role in shaping divergent modern human expression, with genes affecting the vocal tract and cerebellum being particularly affected, consistent with fossil record and DNA methylation evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 represent the main interpretive conclusions of the study. These are appropriately supported by the convergent evidence from TF binding predictions, anatomical enrichments, and consistency with prior work. However, these remain correlative observations rather than demonstrated causal mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The authors acknowledge multiple technical limitations of lentiMPRA including sequence length restrictions (~200 bp), detection limits for minimally active sequences, inability to detect post-transcriptional regulation, reduced detection of transcriptional repression, and slightly lower proportion of active sequences compared to pre-filtered studies, while noting that differential activity magnitude and fraction were similar to previous studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C109 provide appropriate discussion of methodological limitations. The authors transparently acknowledge factors that could lead to false negatives while noting that their results are comparable to prior studies in key metrics. This represents good scientific practice in contextualizing results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The manuscript contextualizes findings within evolutionary theory that enhancers are ideal substrates for evolution due to tissue specificity and modularity, citing prior work showing enhancers are highly divergent between modern and archaic humans, with brain enhancers showing particularly low introgression suggesting adaptive evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 appropriately cite and contextualize prior work on enhancer evolution. These represent established findings from other studies rather than novel results from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "53 of 407 differentially active sequences were linked to genes affecting vocal tract phenotypes, consistent with prior reports of extensive regulatory changes in the vocal tract between modern and archaic humans and between humans and chimpanzees, with vocal tract anatomy differences suggested to affect phonetic range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C115 quantify vocal tract gene associations and contextualize within prior work. The consistency across multiple lines of evidence (this study, prior methylation work, human-chimp comparisons) strengthens the interpretation, though direct functional validation of vocal tract phenotypes is not possible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The cerebellum is involved in motor control, perception, and complex cognitive functions, has been described as the most morphologically divergent brain region between modern and archaic humans, with introgressed Neanderthal sequences showing negative selection particularly in brain enhancers and the cerebellum showing the most divergent expression between Neanderthal and modern human alleles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C119 synthesize prior work on cerebellum function and evolution. These appropriately contextualize the current findings within established knowledge, with proper citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C120"
+    ],
+    "result": "The work provides a catalog of regulatory insights into sequence changes separating modern from archaic humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C120 accurately summarizes the main contribution of the study. The comprehensive MPRA dataset of 14,042 variants represents a valuable resource for the field.",
+    "result_type": "MAJOR"
+  }
+]

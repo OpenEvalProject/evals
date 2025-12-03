@@ -1,0 +1,1460 @@
+{
+  "submission": {
+    "id": "b70e2b02-443e-4e61-8b65-ba9ef2c931ec",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T11:36:23.662806Z",
+    "updated_at": "2025-12-03T11:36:23.662806Z"
+  },
+  "content": [
+    {
+      "id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "submission_id": "b70e2b02-443e-4e61-8b65-ba9ef2c931ec",
+      "content_type": "manuscript",
+      "content_text": "# Chemotactic smoothing of collective migration\n\n## Authors\n\n- Tapomoy Bhattacharjee<sup>1</sup> ([ORCID: 0000-0001-8899-1379](https://orcid.org/0000-0001-8899-1379))\n- Daniel B Amchin<sup>2</sup> ([ORCID: 0000-0002-1557-0984](https://orcid.org/0000-0002-1557-0984))\n- Ricard Alert<sup>3</sup> ([ORCID: 0000-0002-1885-9177](https://orcid.org/0000-0002-1885-9177))\n- Jenna Anne Ott<sup>2</sup> ([ORCID: 0000-0001-6832-0658](https://orcid.org/0000-0001-6832-0658))\n- Sujit Sankar Datta<sup>2</sup> ([ORCID: 0000-0003-2400-1561](https://orcid.org/0000-0003-2400-1561)) \u2020\n\n### Affiliations\n\n1. The Andlinger Center for Energy and the Environment, Princeton University Princeton United States ([ROR:00hx57361](https://ror.org/00hx57361))\n2. Department of Chemical and Biological Engineering, Princeton University Princeton United States ([ROR:00hx57361](https://ror.org/00hx57361))\n3. Lewis-Sigler Institute for Integrative Genomics, Princeton University Princeton United States ([ROR:00hx57361](https://ror.org/00hx57361))\n4. Princeton Center for Theoretical Science, Princeton University Princeton United States ([ROR:00hx57361](https://ror.org/00hx57361))\n\n\u2020 Corresponding author\n\n## Abstract\n\nCollective migration\u2014the directed, coordinated motion of many self-propelled agents\u2014is a fascinating emergent behavior exhibited by active matter with functional implications for biological systems. However, how migration can persist when a population is confronted with perturbations is poorly understood. Here, we address this gap in knowledge through studies of bacteria that migrate via directed motion, or chemotaxis, in response to a self-generated nutrient gradient. We find that bacterial populations autonomously smooth out large-scale perturbations in their overall morphology, enabling the cells to continue to migrate together. This smoothing process arises from spatial variations in the ability of cells to sense and respond to the local nutrient gradient\u2014revealing a population-scale consequence of the manner in which individual cells transduce external signals. Altogether, our work provides insights to predict, and potentially control, the collective migration and morphology of cellular populations and diverse other forms of active matter.\n\n## Introduction\n\nThe flocking of birds, schooling of fish, herding of animals, and procession of human crowds are all familiar examples of collective migration. This phenomenon also manifests at smaller scales, such as in populations of cells and dispersions of synthetic self-propelled particles. In addition to being a fascinating example of emergent behavior, collective migration can be critically important\u2014enabling populations to follow cues that would be undetectable to isolated individuals (Camley, 2018), escape from harmful conditions and colonize new terrain (Cremer et al., 2019), and coexist (Gude et al., 2020). Thus, diverse studies have sought to understand the mechanisms by which collective migration can arise.\n\nLess well understood, however, is how collective migration persists after a population is confronted with perturbations. These can be external, stemming from heterogeneities in the environment (S\u00e1ndor et al., 2017; Morin et al., 2016; Wong et al., 2014; Chepizhko and Peruani, 2013; Chepizhko et al., 2013; Chepizhko and Peruani, 2015; Toner et al., 2018; Maitra, 2020), or internal, stemming from differences in the behavior of individuals (Yllanes et al., 2017; Bera and Sood, 2020; Alirezaeizanjani et al., 2020). Mechanisms by which such perturbations can disrupt collective migration are well documented. Indeed, in some cases, perturbations can abolish coordinated motion throughout the population entirely (S\u00e1ndor et al., 2017; Morin et al., 2016; Yllanes et al., 2017; Bera and Sood, 2020; Chepizhko and Peruani, 2013; Chepizhko et al., 2013; Chepizhko and Peruani, 2015; Toner et al., 2018). In other cases, perturbations couple to the active motion of the population to destabilize its leading edge, producing large-scale disruptions to its morphology (Wong et al., 2014; Alert and Trepat, 2020; Alert et al., 2019; Driscoll et al., 2016; Doostmohammadi et al., 2016; Williamson and Salbreux, 2018; Miles et al., 2019). Indeed, for one of the simplest cases of collective migration\u2014via chemotaxis, the biased motion of cells up a chemical gradient\u2014morphological instabilities can occur due to the disruptive influence of hydrodynamic (Subramanian et al., 2011; Lushi et al., 2012; Lushi et al., 2018) or chemical-mediated (Ben Amar and Bianca, 2016; Ben Amar, 2016; Funaki et al., 2006; Brenner et al., 1998; Mimura and Tsujikawa, 1996; Stark, 2018) interactions between cells. By contrast, mechanisms by which migrating populations can withstand perturbations have scarcely been examined.\n\nHere, we demonstrate a mechanism by which collectively migrating populations of Escherichia coli autonomously smooth out large-scale perturbations in their overall morphology. We show that chemotaxis in response to a self-generated nutrient gradient provides both the driving force for collective migration and the primary smoothing mechanism for these bacterial populations. Using experiments on 3D-printed populations with defined morphologies, we characterize the dependence of this active smoothing on the wavelength of the perturbation and on the ability of cells to migrate. Furthermore, using continuum simulations, we show that the limited ability of cells to sense and respond to a nutrient gradient causes them to migrate at different velocities at different positions along a front\u2014ultimately driving smoothing of the overall population and enabling continued collective migration. Our work thus reveals how cellular signal transduction enables a population to withstand large-scale perturbations and provides a framework to predict and control chemotactic smoothing for active matter in general.\n\n## Results\n\n### Chemotactic smoothing is regulated by perturbation wavelength and cellular motility\n\nTo experimentally investigate the collective migration of E. coli populations, we confine them within porous media of tunable properties (Bhattacharjee and Datta, 2019a; Bhattacharjee and Datta, 2019b; Bhattacharjee et al., 2021), as schematized in Figure 1A and B and detailed in Materials and methods. The media are composed of hydrogel particles that are swollen in a defined rich liquid medium with L-serine as the primary nutrient and chemoattractant. We enclose the particles at prescribed jammed packing fractions in transparent chambers. Because the hydrogel is highly swollen, it is freely permeable to oxygen and nutrient. However, while the particles do not hinder exposure of bacteria to these chemical signals, the cells cannot penetrate the individual particles and are instead forced to swim through the interparticle pores (Figure 1B). Varying the hydrogel particle packing density thus enables us to tune pore size and thereby modulate cellular migration without altering the nutrient field (Bhattacharjee and Datta, 2019a; Bhattacharjee and Datta, 2019b; Bhattacharjee et al., 2021). Specifically, we vary the mean pore size $\u03be$ between 1.2 \u00b5m and 2.2 \u00b5m, causing cellular migration through the pore space to be more and less hindered, respectively, without deforming the solid matrix (Bhattacharjee and Datta, 2019a). Moreover, the packings are transparent, enabling the morphologies of the migrating populations to be tracked in the $x\u2062y$ plane using confocal fluorescence microscopy (Figure 1A); to this end, we use cells that constitutively express green fluorescent protein throughout their cytoplasm.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/71226/elife-71226-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic of an undulated population (green cylinder) 3D-printed within a porous medium made of jammed hydrogel particles (gray). Each undulated cylinder requires \u223c10 s to print, two orders of magnitude shorter than the duration between successive 3D confocal image stacks, \u223c10 min. The surrounding medium fluidizes as cells are injected into the pore space, and then rapidly re-jams around the dense-packed cells. (B) Two-dimensional $x\u2062y$ slice through the midplane of the population. The starting morphology of the 3D-printed population has undulation wavelength $\\lambda$ and amplitude $A_{0}$, as defined by the undulated path traced out by the injection nozzle. The cells subsequently swim through the pores between hydrogel particles, with mean pore size $\u03be$. The population thereby migrates outward in a coherent front that eventually smooths; we track the radial position of the leading edge of the front $R_{f}$ and the undulation amplitude $A$ over time $t$. (C\u2013E) Bottom-up ($x\u2062y$ plane) projections of cellular fluorescence intensity measured using 3D confocal image stacks. Images show sections of three initially undulated populations in three different porous media, each at three different times (superimposed white, yellow, cyan), as the cells migrate radially outward. A pixel corresponds to approximately one cell, and the images only show a magnified view of the overall population. Panels (C) and (D) demonstrate the influence of varying the undulation wavelength, keeping the mean pore size the same; increasing $\\lambda$ slows smoothing. Panels (C) and (E) demonstrate the influence of varying the pore size, keeping the undulation wavelength the same; increasing $\u03be$ hastens smoothing. (F) For each experiment shown in (C\u2013E), the undulation amplitude $A$, normalized by its initial value $A_{0}$, decays exponentially with the time $\u0394\u2062t$ elapsed from the initiation of smoothing at $t=t_{0}$. Fitting the data (symbols) with an exponential decay (red lines) yields the smoothing time $\\tau$ for each experiment. (G) Smoothing time $\\tau$ measured in experiments increases with increasing undulation wavelength $\\lambda$ and decreasing medium mean pore size $\u03be$, which enables cells to migrate more easily. Error bars reflect the uncertainty in determining the initiation time $t_{0}$ from the exponential fit of the data.\n\nA key feature of the hydrogel packings is that they are yield-stress solids; thus, an injection micronozzle can move along a prescribed path inside each medium by locally rearranging the particles, gently extruding densely packed cells into the interstitial space (Figure 1A and B). The particles then rapidly re-densify around the newly introduced cells, re-forming a jammed solid matrix that supports the cells in place with minimal alteration to the overall pore structure (Bhattacharjee et al., 2015; Bhattacharjee et al., 2016; Bhattacharjee et al., 2018). This approach is therefore a form of 3D printing that enables the initial morphology of each bacterial population to be defined within the porous medium. The cells subsequently swim through the pores between particles, migrating outward through the pore space. For example, as we showed previously (Bhattacharjee et al., 2021), cells of E. coli initially 3D-printed in densely packed straight cylinders collectively migrate radially outward in smooth (\u2018flat\u2019), coherent fronts. These fronts form and propagate via chemotaxis: the cells continually consume surrounding nutrient, generating a local gradient that they in turn bias their motion along (Adler, 1966; Cremer et al., 2019; Fu et al., 2018; Saragosti et al., 2011; Bai et al., 2021). As each front of cells migrates, it propagates the local nutrient gradient with it through continued consumption, thereby sustaining collective migration. In the absence of nutrient, migrating fronts do not form at all (Bhattacharjee et al., 2021).\n\nTo test how perturbations in the overall morphology of the population influence its subsequent migration, we 3D-print densely packed E. coli in 1-cm-long cylinders with spatially periodic undulations as perturbations prescribed along the $x$ direction (Figure 1B). Each population is embedded deep within a defined porous medium; an initial population morphology is schematized at time $t=0$ in Figure 1B, with the undulation wavelength and amplitude denoted by $\\lambda$ and $A$, respectively. An experimental realization with $A(t=0)\u2248300$ \u00b5m, $\\lambda\u22480.8$ mm, and $\u03be=1.7$ \u00b5m is shown in white in Figure 1C, which shows an $x\u2062y$ cross section through the midplane of the population. After 3D printing, the outer periphery of the population spreads slowly, hindered by cell-cell collisions in the pore space, as the population establishes a steep gradient of nutrient through consumption (Bhattacharjee et al., 2021). Then, this periphery spontaneously organizes into an \u223c300 \u03bcm-wide front of cells that collectively migrates outward (yellow in Figure 1C). The undulated morphology of this front initially retains that of the initial population. Strikingly, however, the front autonomously smooths out these large-scale undulations as it continues to propagate (Video 1). We characterize this behavior by tracking the decay of the undulation amplitude, normalized by its initial value $A_{0}\u2261A(\u0394t=0)$, as a function of time elapsed from the initiation of smoothing, $\u0394\u2062t$ (green circles in Figure 1F). The normalized amplitude decays exponentially (red line in Figure 1F), with a characteristic time scale $\\tau\u22482.5$ hr, and the population eventually continues to migrate as a completely flat front (cyan in Figure 1C).\n\n![Video 1.](https://cdn.elifesciences.org/articles/71226/elife-71226-video1.mp4.jpg)\n\n**Video 1.:** Experiment probing chemotactic smoothing for $\\lambda=0.8$ mm, $\u03be=1.7$ \u03bcm.Video shows the maximum intensity fluorescence projection (bottom-up view) of migration from a 3D-printed undulated cylinder of closely packed E. coli. The cells collectively migrate outward in a front that autonomously smooths out the large-scale undulations as it continues to propagate.\n\nWe observe similar behavior when the wavelength $\\lambda$ is increased to 3.4 mm (Figure 1D, Video 2) or when the pore size $\u03be$ is increased to 2.2 \u03bcm (Figure 1E, Video 3); however, the dynamics of front smoothing are altered in both cases. Specifically, increasing the undulation wavelength slows smoothing, increasing $\\tau$ by a factor of $\u22483$ to reach $\\tau\u22486.5$ hr (green squares in Figure 1F). Conversely, increasing the pore size\u2014which enables cells to migrate through the pore space more easily\u2014greatly hastens smoothing, decreasing $\\tau$ by more than a factor of \u224810 to become $\\tau\u22480.2$ hr (blue circles in Figure 1F). This behavior is consistent across multiple experiments with varying $\\lambda$ and $\u03be$, as summarized in Figure 1G. Our experiments thus indicate that the smoothing of collective migration is regulated by both the undulation wavelength and the ease with which cells migrate.\n\n![Video 2.](https://cdn.elifesciences.org/articles/71226/elife-71226-video2.mp4.jpg)\n\n**Video 2.:** Experiment probing chemotactic smoothing for $\\lambda=3.4$ mm, $\u03be=1.7$ \u03bcm.Video shows the maximum intensity fluorescence projection (bottom-up view) of migration from a 3D-printed undulated cylinder of closely packed E. coli.\n\n![Video 3.](https://cdn.elifesciences.org/articles/71226/elife-71226-video3.mp4.jpg)\n\n**Video 3.:** Experiment probing chemotactic smoothing for $\\lambda=0.8$ mm, $\u03be=2.2$ \u03bcm.Video shows the maximum intensity fluorescence projection (bottom-up view) of migration from a 3D-printed undulated cylinder of closely packed E. coli.\n\n### A continuum model of chemotactic migration recapitulates the spatio-temporal features of smoothing\n\nTo gain further insight into the processes underlying smoothing, we use the classic Keller\u2013Segel model of chemotactic migration (Lauffenburger, 1991; Keller and Segel, 1971) to investigate the dynamics of undulated populations. Variants of this model can successfully capture the key features of chemotactic migration of flat E. coli fronts in bulk liquid (Keller and Segel, 1971; Fu et al., 2018) and in porous media (Bhattacharjee et al., 2021); we therefore hypothesize that it can also help identify the essential physics of smoothing.\n\nTo this end, we consider a 2D representation of the population in the $x\u2062y$ plane for simplicity, with $r\u2192\u2261(x,y)$, and model the evolution of the nutrient concentration $c(r\u2192,t)$ and number density of bacteria $b(r\u2192,t)$ using the coupled equations:\n\n$$\n\\partial_{t}\u2061c=D_{c}\u2062\\nabla^{2}\u2061c-b\u2062\u03ba\u2062g\u2062(c),\n$$\n\n\n\n$$\n\u2202_{t}b=\u2212\u2207\u22c5J\u2192_{b}+b\\gammag(c),J\u2192_{b}=\u2212D_{b}\u2207b+b\u03c7\u2207f(c).\n$$\n\nEquation 1 relates changes in $c$ to nutrient diffusion and consumption by the bacteria; $D_{c}$ is the nutrient diffusion coefficient, $\u03ba$ is the maximal consumption rate per cell, and $g\u2062(c)=c/(c+c_{1/2})$ describes the influence of nutrient availability relative to the characteristic concentration $c_{1/2}$ through Michaelis\u2013Menten kinetics. Equation 2 relates changes in $b$ to the bacterial flux $J\u2192_{b}$, which arises from their undirected and directed motion, and net cell proliferation with a maximal rate $\\gamma$. In the absence of a nutrient gradient, bacteria move in an unbiased random walk (Berg, 2004); thus, undirected motion is diffusive over large length and time scales, with an effective diffusion coefficient $D_{b}$ whose value depends on both cellular activity and confinement in the pore space, and is therefore $b$-dependent as detailed in Materials and methods (Bhattacharjee and Datta, 2019a; Bhattacharjee and Datta, 2019b). In the presence of the local nutrient gradient established through consumption, bacteria perform chemotaxis, biasing this random walk (Berg, 2004); the function $f(c)\u2261log\u2061[(1+c/c_{\u2212})/(1+c/c_{+})]$ describes the ability of the bacteria to logarithmically sense nutrient with characteristic concentrations $c_{\u2212}$ and $c_{+}$ (Cremer et al., 2019; Fu et al., 2018), and the chemotactic coefficient $\u03c7$ describes their ability to then bias their motion in response to the sensed nutrient gradient (Keller and Segel, 1971; Fu et al., 2018; Cremer et al., 2019). The chemotactic velocity is thus given by $v\u2192_{ch}\u2261\u03c7\u2207f(c)$, where similar to $D_{b}$, the value of $\u03c7$ depends on both intrinsic cellular properties and pore-scale confinement, and is also $b$-dependent as detailed in Materials and methods (Bhattacharjee et al., 2021). Together, Equations 1 and 2 provide a continuum model of chemotactic migration that has thus far been successfully used to describe unperturbed E. coli populations (Keller and Segel, 1971; Fu et al., 2018; Cremer et al., 2019; Bhattacharjee et al., 2021). We note that a recently introduced growth-expansion model of chemotactic migration, for which analytical expressions describing chemotactic fronts have been obtained (Cremer et al., 2019; Narla et al., 2021), can be thought of as a limit of our model with bacterial growth taken to be independent of the attractant. An interesting direction for future work would be to study the phenomenon of chemotactic smoothing revealed here in the growth-expansion model, similar to a recent analytical study of small-amplitude perturbations in a simplified version of the model considered here (Alert and Datta, 2021).\n\nHere, to simulate the chemotactic migration of populations with large-amplitude perturbations, we numerically solve Equations 1 and 2 using undulated morphologies as initial conditions for $b$, similar to those explored in the experiments. The simulations employ values for all parameters based on direct measurements, as detailed in Materials and methods. Although we do not expect perfect quantitative agreement between the experiments and simulations due to their difference in dimensionality and the simplified treatment of cell-cell interactions, the simulated fronts form, collectively migrate, and smooth in a manner that is remarkably similar to the experiments. Three examples are shown in Figure 2C\u2013E (Videos 4\u20136), corresponding to the experiments shown in Figure 1C\u2013E (Videos 1\u20133). Similar to the experiments, the outer periphery of each population first spreads slowly, then spontaneously organizes into an outward-migrating front that eventually smooths. We again find that the normalized undulation amplitude decays exponentially over time, as shown in Figure 2D. As in the experiments, increasing the undulation wavelength $\\lambda$ slows smoothing; compare Figure 2B to Figure 2A. Also as in the experiments, increasing the pore size $\u03be$, which increases the migration parameters $D_{b}$ and $\u03c7$, greatly hastens smoothing; compare Figure 2C to Figure 2A. This variation of the smoothing time scale $\\tau$ obtained from simulations with $\\lambda$ and $\u03be$ is summarized in Figure 2E. We observe the same behavior as in the experiments, with the absolute values of $\\tau$ agreeing to within a factor of \u223c3. This agreement confirms that the continuum Keller\u2013Segel model recapitulates the essential spatio-temporal features of smoothing seen in the experiments.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/71226/elife-71226-fig2-v1.jpg)\n\n**Figure 2.:** (A\u2013C) Simulations corresponding to experiments reported in Figure 1C and E, respectively, performed by numerically solving Equations 1 and 2 in two dimensions ($x\u2062y$ plane). Images show the calculated cellular signal (details in Materials and methods) for three initially undulated populations in three different porous media, each at three different times (superimposed white, yellow, cyan), as the cells migrate outward. Panels (A) and (B) demonstrate the influence of varying the undulation wavelength, keeping the mean pore size the same; as in the experiments, increasing $\\lambda$ slows smoothing. Panels (A) and (C) demonstrate the influence of varying the pore size, keeping the undulation wavelength the same; as in the experiments, increasing $\u03be$, incorporated in the model by using larger values of the diffusion and chemotactic coefficients as obtained directly from experiments, hastens smoothing. (D) For each simulation shown in (A\u2013C), the undulation amplitude $A$,normalized by its initial value $A_{0}$, decays exponentially with the time $\u0394\u2062t$ elapsed from the initiation of smoothing at $t=t_{0}$ as in the experiments. Fitting the data (symbols) with an exponential decay (red lines) again yields the smoothing time $\\tau$ for each simulation. (E) Smoothing time $\\tau$ obtained from the simulations increases with increasing undulation wavelength $\\lambda$ and decreasing medium mean pore size $\u03be$, as in the experiments. Error bars reflect the uncertainty in determining the initiation time $t_{0}$ from the exponential fit of the data.\n\n![Video 4.](https://cdn.elifesciences.org/articles/71226/elife-71226-video4.mp4.jpg)\n\n**Video 4.:** Simulation probing chemotactic smoothing for $\\lambda=0.8$ mm, $\u03be=1.7$ \u03bcm.Video shows the calculated cellular fluorescence signal of cells migrating from an undulated stripe of closely packed E. coli similar to Video 1. As in the experiments, the cells collectively migrate outward in a front that autonomously smooths out the large-scale undulations as it continues to propagate.\n\n![Video 5.](https://cdn.elifesciences.org/articles/71226/elife-71226-video5.mp4.jpg)\n\n**Video 5.:** Simulation probing chemotactic smoothing for $\\lambda=3.4$ mm, $\u03be=1.7$ \u03bcm.Video shows the calculated cellular fluorescence signal of cells migrating from an undulated stripe of closely packed E. coli similar to Video 2.\n\n![Video 6.](https://cdn.elifesciences.org/articles/71226/elife-71226-video6.mp4.jpg)\n\n**Video 6.:** Simulation probing chemotactic smoothing for $\\lambda=0.8$ mm, $\u03be=2.2$ \u03bcm.Video shows the calculated cellular fluorescence signal of cells migrating from an undulated stripe of closely packed E. coli similar to Video 3.\n\n### Chemotaxis is the primary driver of front smoothing\n\nThe simulations provide a way to directly assess the relative importance of cellular diffusion, chemotaxis, and cell proliferation to front smoothing. To this end, we perform the same simulation as in Figure 2A, but with each of the corresponding three terms in Equation 2 knocked out, and determine the resulting impact on collective migration. This procedure enables us to determine the factors necessary for smoothing.\n\nWhile diffusion typically causes spatial inhomogeneities to smooth out, we do not expect it to play an appreciable role in the front smoothing observed here: the characteristic time scale over which undulations of wavelength $\\lambda\u22481$ mm diffusively smooth is $\u223c\\lambda^{2}/D_{b}\u2248100$ to 700 hr, up to three orders of magnitude larger than the smoothing time $\\tau$ measured in experiments and simulations. We therefore expect that the undirected motion of bacteria is much too slow to contribute to front smoothing. The simulations for $\\lambda=0.8$ mm and $\u03be=1.7$ \u03bcm confirm this expectation: setting $D_{b}=0$ yields fronts that still smooth over a time scale $\\tau\u223c1$ hr similar to the full simulations (Figure 3A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/71226/elife-71226-fig3-v1.jpg)\n\n**Figure 3.:** Images show the same simulation as in Figure 2A, which serves as an exemplary case, but with either (A) diffusive cell motion, (B) cell proliferation, or (C) cell chemotaxis knocked out by setting the diffusivity $D_{b}$, proliferation rate $\\gamma$, or chemotactic coefficient $\u03c7$ to zero, respectively. Simulated bacterial fronts lacking diffusion or proliferation still smooth, as shown in (A, B), but simulated fronts lacking chemotaxis do not smooth, as shown in (C), demonstrating that chemotaxis is necessary and sufficient for the observed morphological smoothing.\n\nAnother possible mechanism of front smoothing is differences in bacterial proliferation at different locations along the front periphery\u2014for example, the front would smooth if cells in concave regions were able to proliferate faster than those in convex regions. However, differential proliferation typically destabilizes bacterial communities, as shown previously both experimentally and theoretically (Fujikawa and Matsushita, 1989; Bonachela et al., 2011; Nadell et al., 2010; Farrell et al., 2013; Trinschek et al., 2018; Allen and Waclaw, 2019). Furthermore, even if proliferation were to help smooth the overall population, we again expect this hypothetical mechanism to be too slow to appreciably contribute: the shortest time scale over which cells all growing exponentially at a maximal rate $\\gamma\u223c1$ hr-1 spread over the length scale $A_{0}\u2248300$ \u03bcm by growing end-to-end is $\\gamma^{-1}\u2062log_{2}\u2061(A_{0}/l_{cell})\u223c7$ hr, where $l_{cell}\u22482$ \u03bcm is the cell body length. This time scale is over an order of magnitude larger than the $\\tau$ measured in experiments and simulations. The simulations again confirm our expectation: setting $\\gamma=0$ yields fronts that still smooth over a time scale $\\tau\u223c1$ hr similar to the full simulations (Figure 3B).\n\nThese findings leave chemotaxis as the remaining possible mechanism of front smoothing. The simulations confirm this expectation: setting $\u03c7=0$ yields a population that slowly spreads via diffusion and proliferation, but that does not form collectively migrating fronts at all (Figure 3C). Therefore, chemotaxis is both necessary and sufficient for the observed front smoothing.\n\n### Distinct modes by which chemotaxis impacts front morphology\n\nHow exactly does chemotaxis smooth bacterial fronts? To address this question, we examine the spatially varying chemotactic velocity $v\u2192_{c}=\u03c7\u2207f(c)$, which quantifies how rapidly different regions of the population migrate via chemotaxis. To gain intuition for the determinants of $v\u2192_{c}$, we recast this expression in terms of the nutrient gradient:\n\n$$\nv\u2192_{c}=\u03c7f^{\u00a0\u2032}(c)\u23dfResponse function\u00a0\u00a0\u2207c\u23dfForcing.\n$$\n\nAs in linear response theory, the chemotactic velocity can be viewed as the bacterial response to the driving force given by the nutrient gradient, $\u2207c$, modulated by the chemotactic response function $\u03c7f^{\u00a0\u2032}(c)$. Thus, variations in chemotactic velocity along the leading edge of the front, which specify how the overall front morphology evolves, are determined by the combined effect of variations in the nutrient gradient and the chemotactic response function. We therefore examine each of these modes by which chemotaxis influences front morphology in turn.\n\nWe first consider the nutrient gradient, which is the typical focus of chemotaxis studies. Our simulations, which numerically solve the coupled system of Equations 1 and 2, directly yield the spatially varying nutrient field $c$ and therefore $\u2207c$. A snapshot from the representative example of Figure 2A is shown in Figure 4A, with the contours of $c=c_{\u2212}$ and $c=c_{+}$ indicated by the cyan and magenta lines, respectively. The contours are spaced closer at the convex \u2018peaks\u2019 (e.g., at $y/\\lambda=0.5$) than at the concave \u2018valleys\u2019 (e.g., at $y/\\lambda=0$) along the leading edge of the front. Thus, the magnitude of the driving force given by $\u2207c$ is larger at the peaks. We confirm this expectation by directly quantifying the nutrient gradient along the leading edge, focusing on the component $\\partial_{x}\u2061c$ in the overall front propagation direction ($x$) for simplicity, as shown by the orange symbols in Figure 4C; as expected, this driving force is stronger at the peaks. This spatial variation in the driving force promotes faster outward chemotactic migration at the peaks than at the valleys, amplifying front undulations\u2014in opposition to our observation that the migrating population self-smooths. Variations in the local nutrient gradient along the leading edge of the front do not contribute to smoothing; rather, they oppose it.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/71226/elife-71226-fig4-v1.jpg)\n\n**Figure 4.:** (A) Magnified view of a migrating bacterial front from the simulation shown in Figure 2A at time $t=41$ min as a representative example. To illustrate the spatially varying nutrient levels, we show the contours of constant nutrient concentration $c=c_{+}$ and $c=c_{\u2212}$ in magenta and cyan, respectively; these represent characteristic upper and lower limits of sensing. The contours are spaced closer at the leading edge of the convex peak ($y/\\lambda=0.5$) than the concave valley ($y/\\lambda=0$), indicating that the magnitude of the local nutrient gradient is larger at peaks than at valleys. The nutrient concentration itself, which increases monotonically with increasing $x$, is also larger at the peak than at the valley. (B) Top and bottom panels show the variation of the nutrient sensing function $f\u2062(c)$ and chemotactic response function $f^{\u00a0\u2032}(c)$, respectively, with nutrient concentration $c$. Because sensing saturates at high nutrient concentrations, chemotactic response is weaker at higher $c$ (peaks) than at lower $c$ (valleys). (C) Top panel shows the $x$ component of the nutrient gradient $\\partial_{x}\u2061c$ (red, left axis) and the response function $f^{\u00a0\u2032}$ (blue, right axis), and bottom panel shows the $x$ component of the chemotactic velocity $v_{c,x}=\u03c7f^{\u00a0\u2032}\u2202_{x}c$ computed from these quantities, evaluated at different lateral positions $y$ along the leading edge of the front in (A). While the driving force of chemotaxis represented by $\\partial_{x}\u2061c$ is smaller at the valley, the chemotactic response $\u03c7f^{\u00a0\u2032}$ is larger at the valley and dominates in setting $v_{c,x}$: valleys move out faster than peaks, eventually catching up to them and smoothing out the undulations. (D) For all simulations (Figure 2E), the smoothing time $\\tau$ determined by analyzing the decay of large-scale undulations (Figure 2D) is similar to the time $\\tau^{\u2032}$ needed for valleys to catch up to peaks estimated using their different $x$-component chemotactic velocities. Note that we do not expect an exact match between $\\tau$ and $\\tau^{\u2032}$ as they are related yet different quantities.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71226/elife-71226-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** To investigate the influence of varying the upper limit of sensing $c_{+}$, we repeat the simulation for the prototypical case of $\u03be=1.7$ \u03bcm and $\\lambda=0.8$ mm but with $c_{+}$ lowered by a factor of 15. Consistent with our expectation, we find that reducing this upper limit weakens chemotactic response not just at the peaks, but also the valleys, thereby slowing smoothing. Image is presented as in Figure 2A.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/71226/elife-71226-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Chemotactic smoothing requires a concave sensing function $f\u2062(c)$.To illustrate the necessity of a concave sensing function with $f^{\u00a0\u2032\u2032}(c)<0$ for chemotactic smoothing, we repeat our analysis but for a strictly linear $f\u2062(c)=c/c_{lin}$ with $c_{lin}=(1/c_{\u2212}\u22121/c_{+})^{\u22121}$. In this case, the condition of concavity is violated: $f^{\u00a0\u2032\u2032}(c)=0$. We therefore expect chemotactic smoothing to not occur. Top panel shows the $x$ component of the nutrient gradient $\\partial_{x}\u2061c$ (red, left axis) and the response function $f^{\u00a0\u2032}$ (blue, right axis), and bottom panel shows the $x$ component of the chemotactic velocity $v_{c,x}=\u03c7f^{\u00a0\u2032}\u2202_{x}c$ computed from these quantities, evaluated at different lateral positions $y$ along the leading edge of the front for this case of a strictly linear sensing function. In this case, we find that the valleys no longer move faster than peaks\u2014consistent with our expectation.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/71226/elife-71226-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** To assess the influence of discretization, we repeat the simulation for the prototypical case of $\u03be=1.7$ \u03bcm and $\\lambda=0.8$ mm with different choices of the spatial discretization $\u0394\u2062x$ and measure the smoothing time $\\tau$. In all cases, we find qualitatively similar results, although the dynamics vary; however, as shown by the green data points, the dynamics do not appreciably change for discretization smaller than \u2248 10 \u03bcm, which is the value used in the main text simulations, as indicated by the blue star.\n\nWe next turn to the chemotactic response function, which characterizes cellular signal transduction. Because $\u03c7$ is a constant for each porous medium (Bhattacharjee et al., 2021), spatial variations in the response function are set by variations in $f^{\u00a0\u2032}(c)$. The sensing function $f\u2062(c)$ is plotted in the upper panel of Figure 4B. It varies linearly as $\u223cc\u2062(1/c_{-}-1/c_{+})$ for $c\u226ac_{-}$ and saturates at $log\u2061(c_{+}/c_{-})$ for $c\u226bc_{+}$; the characteristic concentrations $c_{\u2212}$ and $c_{+}$ represent the dissociation constants of the nutrient for the inactive and active conformations of the cell-surface receptors, respectively (Cremer et al., 2019; Fu et al., 2018; Dufour et al., 2014; Yang et al., 2015). The response function $\u03c7f^{\u00a0\u2032}(c)$ therefore decreases strongly as $c$ increases above $c_{+}$, which accordingly is often referred to as an upper limit of sensing (Figure 4B, lower panel). That is, because high nutrient concentrations saturate cell-surface receptors, the chemotactic response function decreases with nutrient concentration. Inspection of the nutrient field indicates that nutrient concentrations are larger at the peaks than at the valleys along the leading edge of the front (Figure 4A). Thus, the chemotactic response of cells is weaker at peaks than at valleys, as shown by the points in Figure 4B, yielding slower outward chemotactic migration at peaks than at valleys and thereby reducing the amplitude of front undulations. Variations in the chemotactic response along the leading edge of the front promote smoothing, unlike variations in the nutrient gradient.\n\n### Spatial variations in chemotactic response drive morphological smoothing\n\nWe therefore hypothesize that the stabilizing effect of the chemotactic response (Figure 4C, blue) dominates over the destabilizing influence of the nutrient gradient (Figure 4C, red), leading to smoothing. Computation of the spatially varying chemotactic velocity at the leading edge of the front using Equation 3, focusing on the $x$ velocity component $v_{c,x}\u2248\u03c7f^{\u00a0\u2032}\u2202_{x}c$ for simplicity, supports this hypothesis: cells at concave regions migrate outward faster than those at convex regions (Figure 4C, lower panel). To further test this hypothesis, we assess the influence of varying $c_{+}$; we expect that reducing this upper limit weakens chemotactic response not just at the peaks, but also the valleys, thereby slowing smoothing. While tuning solely $c_{+}$ is challenging in the experiments, this can be readily done in the simulation\u2014yielding slower smoothing, as expected (Figure 4\u2014figure supplement 1).\n\nAs a final test of our hypothesis, for each simulation shown in Figure 2, we determine the difference between the chemotactic velocities of the valleys and peaks, approximated by $\u0394v_{c,x}\u2248\u03c7[(f^{\u00a0\u2032}\u2202_{x}c)_{\u00a0valley}\u2212(f^{\u00a0\u2032}\u2202_{x}c)_{peak}]$, as a function of time $\u0394\u2062t$. If smoothing is indeed due to variations of the chemotactic velocity along the leading edge, then the smoothing time $\\tau$ determined by analyzing the decay of the undulation amplitude, $A=A_{0}\u2062e^{-\u0394\u2062t/\\tau}$ (Figure 2D and E), should be similar to the time $\\tau^{\u2032}$ at which valleys catch up to peaks, that is, $\\int_{0}^{\\tau^{\u2032}}\u0394\u2062v_{c,x}\u2062d\u0394\u2062t\u2248A_{0}$. To test this expectation, we plot the $\\tau^{\u2032}$ values thus obtained for all of our simulations of varying $\\lambda$ and $\u03be$ as a function of the corresponding $\\tau$, as shown in Figure 4D. We find that $\\tau^{\u2032}$ and $\\tau$ are indeed similar to one another in all cases\u2014confirming that smoothing is determined by spatial variations in chemotactic velocity.\n\n## Discussion\n\nBy combining experiments and simulations, this study elucidates a mechanism by which collectively migrating populations can smooth out large-scale perturbations in their overall morphology. We focus on the canonical example of chemotactic migration, in which coherent fronts of cells move in response to a self-generated nutrient gradient. The smoothing of these fronts underlies the utility of standard agar-based assays for chemotaxis, in which bacteria spread outward in smooth, circular rings from a dense inoculum (Wolfe and Berg, 1989; Tittsler and Sandholzer, 1936; Croze et al., 2011; Cremer et al., 2019)\u2014despite the presence of irregularities in the initial inoculum that are inevitably introduced by human error. To our knowledge, the robustness of the front morphology to such perturbations has never been examined or quantitatively explained; as a result, previous studies have only focused on the migration of the smooth fronts that ultimately result (Adler, 1966; Lauffenburger, 1991; Keller and Segel, 1971; Cremer et al., 2019; Fu et al., 2018; Saragosti et al., 2011; Bhattacharjee et al., 2021; Bai et al., 2021). Our work now provides an explanation for why perturbed fronts smooth out. It therefore provides a counterpoint to previous studies investigating the ability of perturbations to instead disrupt collective migration (S\u00e1ndor et al., 2017; Morin et al., 2016; Yllanes et al., 2017; Bera and Sood, 2020; Chepizhko and Peruani, 2013; Chepizhko et al., 2013; Chepizhko and Peruani, 2015; Toner et al., 2018; Wong et al., 2014; Alert and Trepat, 2020; Alert et al., 2019; Driscoll et al., 2016; Doostmohammadi et al., 2016; Williamson and Salbreux, 2018; Miles et al., 2019; Subramanian et al., 2011; Lushi et al., 2012; Lushi et al., 2018; Ben Amar and Bianca, 2016; Ben Amar, 2016; Funaki et al., 2006; Brenner et al., 1998; Mimura and Tsujikawa, 1996; Stark, 2018). It also complements recent theoretical work describing how chemotaxis can stabilize the hydrodynamic instabilities that arise in unconfined populations of self-propelled particles (Nejad and Najafi, 2019).\n\nThe 3D printing platform provides a unique way to tune the shape of the initial perturbation, as well as the extent to which cellular migration is hindered. Our experiments using this approach reveal that the dynamics of smoothing are regulated by both the undulation wavelength and the ease with which cells migrate. The continuum simulations recapitulate the essential features of this behavior and shed light on the underlying mechanism. We find that even though cells in peaks of an undulated front experience a stronger driving force given by the local nutrient gradient, the higher nutrient levels they are exposed to saturate their cell-surface receptors, and hence they exhibit a weaker chemotactic response than cells in valleys. That is, while variations in the nutrient gradient along the leading edge of a front act to amplify undulations, variations in the ability of cells to sense and respond to this gradient dominate and instead smooth out the undulation. Importantly, this mechanism of smoothing is distinct from diffusion, which is typically responsible for the smoothing of traveling waves in reaction-diffusion systems\u2014and in our case, is much too slow to drive smoothing.\n\n### Conditions for chemotactic smoothing to arise\n\nWhile our study utilizes a specific form of the sensing function $f\u2062(c)$ established for E. coli (Cremer et al., 2019; Fu et al., 2018), the phenomenon of chemotactic smoothing can manifest more generally. Specifically, our description of smoothing requires that (i) convex regions of a population are exposed to more nutrient $c$ than concave regions, and (ii) $f\u2062(c)$ is monotonically increasing and concave, with $f^{\u00a0\u2032\u2032}(c)<0$; when these conditions are satisfied, the chemotactic response is weaker at convex regions than at concave ones, thereby promoting smoothing (as indicated in Figure 4B).\n\nThe first requirement is frequently satisfied for collective migration in general; for example, in chemotactic migration, nutrient concentration $c$ decreases from the outward boundaries into the population over a length scale given by the interplay between nutrient diffusion and consumption. This first requirement is also satisfied by many other forms of active matter that rely on other modes of sensing to collectively migrate, for which $c$ would generically represent the stimulus being sensed. Documented examples include durotactic cell groups (Roca-Cusachs et al., 2013; Sunyer et al., 2016; Alert and Casademunt, 2019), phoretic active colloids (Illien et al., 2017; Liebchen and L\u00f6wen, 2018Stark, 2018), and phototactic robots (Mijalkov et al., 2016; Palagi and Fischer, 2018)\u2014systems for which migration is directed toward regions of larger $c$, and therefore convex regions are more likely to be exposed to larger $c$.\n\nThe second requirement is also satisfied for diverse active matter systems; in the context of chemotaxis, specific examples include other bacteria (Menolascina et al., 2017), enzymes (Jee et al., 2018; Agudo-Canalejo et al., 2018; Mohajerani et al., 2018), aggregating amoeba cells (Keller and Segel, 1970), and mammalian cell groups during development, immune response, and disease (Camley, 2018; Iglesias and Devreotes, 2008; Theveneau et al., 2010; McLennan et al., 2012; Malet-Engra et al., 2015; Puliafito et al., 2015; Tweedy et al., 2020). This second requirement is again also satisfied for active matter that collectively migrates using other sensing mechanisms, for which sensing has been documented to increase and eventually saturate with the stimulus, be it the stiffness of the underlying surface (Roca-Cusachs et al., 2013; Sunyer et al., 2016; Alert and Casademunt, 2019), temperature (Illien et al., 2017; Liebchen and L\u00f6wen, 2018), or light intensity (Mijalkov et al., 2016; Palagi and Fischer, 2018). Thus, exploring the physics described here in diverse other forms of active matter will be a useful direction for future work.\n\nAs a final illustration of the necessity of the sensing function $f\u2062(c)$ to be concave, $f^{\u00a0\u2032\u2032}(c)<0$, we repeat our analysis but instead consider a strictly linear $f\u2062(c)=c/c_{lin}$, which does not saturate. We choose $c_{lin}=(1/c_{-}-1/c_{+})^{-1}$ so that the linear $f\u2062(c)$ matches our original logarithmic $f\u2062(c)$ at small $c$. With this linear sensing function, the chemotactic response is independent of concentration, $f^{\u00a0\u2032}(c)=1/c_{lin}$, and the condition of concavity is violated: $f^{\u00a0\u2032\u2032}(c)=0$. We therefore expect chemotactic smoothing to not occur. Consistent with our expectation, repeating the analysis underlying Figure 4C but for the strictly linear $f\u2062(c)$ yields fronts for which valleys no longer move faster than peaks. Instead, as shown in Figure 4\u2014figure supplement 2, the profile of chemotactic velocity is now inverted with respect to that of the bottom panel in Figure 4C. Hence, the front does not smooth. Overall, this sample computation illustrates a way of modifying $f\u2062(c)$ that abrogates sensing saturation and hence would prevent chemotactic smoothing.\n\n### Broader implications of chemotactic smoothing\n\nThe chemotactic smoothing process described here is autonomous, arising without any external intervention. Instead, it is a population-scale consequence of the limitations in cellular signal transduction\u2014motivating future studies of other population-scale effects, beyond smoothing, that may emerge from individual behaviors. Indeed, while studies of chemotaxis typically focus on the role of the external nutrient gradient in driving cellular migration, our work highlights the distinct and pivotal role played by the cellular chemotactic response function in regulating migration and large-scale population morphology more broadly. Our work therefore contributes a new factor to be considered in descriptions of morphogenesis, which thus far have focused on the role of other factors\u2014such as differential forcing by signaling gradients, differential proliferation, intercellular mechanics, substrate interactions, and osmotic stresses (McLennan et al., 2012; Fujikawa and Matsushita, 1989; Bonachela et al., 2011; Nadell et al., 2010; Farrell et al., 2013; Trinschek et al., 2018; Allen and Waclaw, 2019; Beroz et al., 2018; Fei et al., 2020; Yan et al., 2019; Yan et al., 2017; Copenhagen et al., 2020; Smith et al., 2017; Ghosh et al., 2015; Zhang et al., 2021)\u2014in regulating the overall morphology of cellular communities and active matter in general.\n\n## Materials and methods\n\n### Preparing and characterizing porous media\n\nWe prepared 3D porous media by dispersing dry granules of crosslinked acrylic acid/alkyl acrylate copolymers (Carbomer 980, Ashland) in liquid EZ Rich, a defined rich medium for E. coli. The components to prepare the EZ Rich were purchased from Teknova Inc, autoclaved prior to use, and were mixed following the manufacturer\u2019s directions; specifically, the liquid medium was an aqueous solution of 10\u00d7 MOPS Mixture (M2101), 10\u00d7 ACGU solution (M2103), 5\u00d7 Supplement EZ solution (M2104), 20% glucose solution (G0520), 0.132 M potassium phosphate dibasic solution (M2102), and ultrapure Milli-Q water at volume fractions of 10, 10, 20, 1, 1, and 58%, respectively. We ensured homogeneous dispersions of swollen hydrogel particles by mixing each dispersion for at least 2 hr at 1600 rpm using magnetic stirring and adjusted the pH to 7.4 by adding 10 N NaOH to ensure optimal cell viability. The hydrogel granules swell considerably, resulting in a jammed medium made of \u223c5\u201310 \u03bcm diameter swollen hydrogel particles with \u223c20% polydispersity and with an individual mesh size of \u223c40\u2013100 nm, as we established previously (Bhattacharjee and Datta, 2019b), which enables small molecules (e.g., amino acids, glucose, oxygen) to freely diffuse throughout the medium.\n\nTuning the mass fraction of dispersed hydrogel particles enables the sizes of the pores between particles to be precisely tuned. We measured the smallest local pore dimension by tracking the diffusion of 200-nm-diameter fluorescent tracers through the pore space, as we detailed in a previous paper (Bhattacharjee et al., 2021). This previous paper shows the full pore size distributions thereby measured for porous media prepared in an identical manner to those used here; in this paper, we only describe each medium using the mean pore size $\u03be$, for simplicity. Indeed, the measured pore size distributions exhibit exponential decays characterized by the mean value $\u03be$, as reported in Bhattacharjee et al., 2021, with pore sizes between 1 and 8 \u03bcm in the loosest packings and pores smaller than 4 \u03bcm in the tightest packings.\n\n### 3D printing bacterial populations\n\nPrior to each experiment, we prepared an overnight culture of E. coli W3110 in LB media at 30\u00b0C. We then incubated a 1% solution of this culture in fresh LB media for 3 hr until the optical density reached \u223c0.6, and then resuspended the cells in liquid EZ Rich to a concentration of $8.6\\times10^{10}$ cells/mL. We then used this suspension as the inoculum that was 3D printed into a porous medium using a pulled glass capillary with a \u223c100\u2013200 \u03bcm-wide opening as an injection nozzle. Each porous medium had a large volume of 4 mL and was confined in a transparent-walled glass-bottom Petri dish 35 mm in diameter and 10 mm in height; in each experiment, the injection nozzle was mounted on a motorized translation stage that traces out a programmed two-dimensional undulating path within the porous medium, at least \u223c500\u20131000 m away from any boundaries, at a constant speed of 1 mm/s. As the injection nozzle moved through the medium, it locally rearranged the hydrogel packing and gently extruded the cell suspension into the interstitial space using a flow-controlled syringe pump at 50 \u03bcL/hr, which corresponds to a gentle shear rate of \u223c4\u201336 s-1 at the tip of the injection nozzle. As the nozzle continued to move, the surrounding hydrogel particles rapidly densified around the newly introduced cells, re-forming a jammed solid matrix (Bhattacharjee et al., 2018; Bhattacharjee et al., 2015; Bhattacharjee et al., 2016) that compressed the cellular suspension until the cells are closely packed to an approximate density of $0.95\\times10^{12}$ cells/mL. This protocol thus results in a 3D-printed bacterial population having a defined initial amplitude and wavelength. Moreover, as we showed in our previous work Bhattacharjee et al., 2021, this process does not appreciably alter the properties of the hydrogel packing and is sufficiently gentle to maintain the viability and motility of the cells.\n\n### Imaging bacteria within porous media\n\nBecause the 3D-printed undulated cylinders of densely packed cells are \u223c1 cm long, each printing process requires \u223c10 s. After 3D printing, the top surface of the porous medium was sealed with a thin layer of 1\u20132 mL of paraffin oil to minimize evaporation while allowing unimpeded oxygen diffusion. We then commenced imaging within a few minutes after printing. Once an undulated population is 3D printed, it maintains its shape until cells start to move outward through the pore space. The time needed to print each cylinder is two orders of magnitude shorter than the duration between successive 3D confocal image stacks. Moreover, the 3D printing is fast enough to be considered as instantaneous when compared with the speed of bacterial migration. Thus, the imaging is sufficiently fast to capture the front propagation dynamics. To image how the distribution of cells evolves over time, we used a Nikon A1R + inverted laser-scanning confocal microscope maintained at 30 \u00b1 1\u00b0C. In each experiment, we acquired vertical stacks of planar fluorescence images separated by 2.58 \u03bcm along the vertical ($z$) direction, successively every 2\u201330 min for up to 20 hr. We then produced a maximum intensity projection from each stack at every time frame with the logarithm of fluorescent intensities displayed at every pixel; examples are shown in Figure 1. Our prior work used high-resolution visualization to obtain magnified views of the bacterial concentration fields at long times for unperturbed flat fronts and verified that the cells are swimming through the pore space as a suspension (Bhattacharjee et al., 2021). Here, we instead use lower-resolution visualization to characterize population-scale front dynamics over larger length scales. We note that because our experiments probe fluorescence from GFP-expressing cells, the confocal images only show the actively moving cells near the leading edge of each propagating front because it is exposed to sufficient oxygen for the GFP to properly fold. As these cells move outward, they continually consume nutrient and oxygen\u2014eventually causing the trailing \u2018inner\u2019 region of the population to become oxygen-depleted, as shown in our previous work (Bhattacharjee et al., 2021). Under these conditions, we conjecture that the GFP expressed by the cells does not properly fold, and the cells lose fluorescence over \u223c30 min. Thus, even though some cells remain localized within the inner region, they turn dark and hence seem to disappear from the microscope fluorescence images.\n\n### Characterizing experimental front dynamics\n\nWe used each maximum intensity projection at each time point to manually measure the time-dependent amplitude ($A$) and radial location of the front ($R_{f}$) as defined in Figure 1B, identifying the edges of the front as the positions at which the fluorescent signal from cells matches the background noise.\n\nAs we showed in our previous work (Bhattacharjee et al., 2021), due to the initially high cell density in the population, inter-cell collisions limit outward migration of the population; a coherent outward-propagating front only forms after at least \u223c1 hr. Here, we do not focus on these initial transient dynamics, but instead examine the long-time smoothing behavior of undulated fronts. We did this by tracking the decay of the time-dependent undulation amplitude over time, as shown in Figure 1F; we identified the time t0 at which smoothing is initiated as the earliest time at which the error associated with an exponential fit to the decay of $A\u2062(t)$ is minimized. The initial value A0 is then given by $A\u2062(t_{0})$.\n\n### Details of continuum model\n\nTo mathematically model the dynamics of bacterial fronts, we use a continuum description of chemotactic migration that we previously showed captures the essential dynamical features of flat fronts (Bhattacharjee et al., 2021). This model extends previous work on the classic Keller\u2013Segel model (Fu et al., 2018; Saragosti et al., 2011; Cremer et al., 2019; Croze et al., 2011; Keller and Odell, 1975; Keller and Segel, 1971; Keller and Segel, 1970; Odell and Keller, 1976; Lauffenburger, 1991; Seyrich et al., 2019) to the case of dense populations in porous media. In particular, we consider a 2D representation of the population in the $x\u2062y$ plane for simplicity and describe the evolution of the nutrient concentration $c(r\u2192,t)$ and number density of bacteria $b(r\u2192,t)$ using the coupled Equations 1 and 2.\n\n#### Nutrient diffusion and consumption\n\nThe media used in our experiments have $L$-serine as the most abundant nutrient source and chemoattractant (Neidhardt et al., 1974). E. coli consume this amino acid first (Yang et al., 2015) and respond to it most strongly as a chemoattractant compared to other components of the media (Wong et al., 2014; Mesibov and Adler, 1972; Adler, 1966; Menolascina et al., 2017). Furthermore, the nutrient levels of our liquid medium are nearly two orders of magnitude larger than the levels under which E. coli excrete appreciable amounts of their own chemoattractant (Budrene and Berg, 1991) and generate strikingly different front behavior (Budrene and Berg, 1991; Budrene and Berg, 1995; Mittal et al., 2003) than those that arise in our experiments; however, the nutrient levels we use are sufficiently low to avoid toxicity associated with extremely large levels of $L$-serine (Neumann et al., 2014). Thus, given all of these reasons, we focus on $L$-serine as the primary nutrient source and attractant, described by the scalar field $c(r\u2192,t)$. Equation 1 then relates changes in $c$ to nutrient diffusion and consumption by the bacteria. The nutrient diffusion coefficient $D_{c}=800$ \u03bcm2/s is given by previous measurements in bulk liquid; we treat nutrient diffusion as being unhindered by the highly swollen hydrogel matrix due to its large internal mesh size. The maximal consumption rate per cell $\u03ba=1.6\\times10^{-11}$ mM (cell/mL)-1 s-1 is chosen based on previous measurements (Croze et al., 2011), and $g\u2062(c)=c/(c+c_{1/2})$ describes the influence of nutrient availability relative to the characteristic concentration $c_{1/2}=1$ \u03bcM through Michaelis\u2013Menten kinetics, as established previously (Cremer et al., 2019; Croze et al., 2011; Monod, 1949; Woodward et al., 1995; Shehata and Marr, 1971). These values yield simulated fronts that we have previously validated against experiments in porous media for the unperturbed case (Bhattacharjee et al., 2021).\n\n#### Bacterial diffusion and chemotaxis\n\nThe bacterial flux $J\u2192_{b}$ as included in Equation 2 arises from the undirected and directed motion of cells, that is, diffusion $\u2212D_{b}\u2207b$ and chemotaxis $b\u03c7\u2207f(c)$, respectively. Our analysis focuses on the contribution of flagella-mediated swimming through the pore space to these fluxes, following our previous work (Bhattacharjee et al., 2021); however, incorporating other possible modes of motility such as surface-assisted propulsion would be a useful future extension. It is generally challenging to calculate the motility coefficients $D_{b}$ and $\u03c7$ a priori for a given porous medium and pore size distribution. To circumvent this uncertainty and avoid ad hoc approximations, our simulations use values of both that were directly determined from our prior experiments (Bhattacharjee and Datta, 2019a; Bhattacharjee et al., 2021).\n\nIn particular, we measured the value of the active cellular diffusion coefficient $D_{b}$ by quantifying the undirected spreading of a dilute population of the same cells in porous media identical to those used here (Bhattacharjee and Datta, 2019a), but under uniform nutrient conditions. The measured $D_{b}=2.32$, 0.93, and 0.42 \u03bcm2/s for porous media with $\u03be=2.2$, 1.7, and 1.2 \u03bcm, respectively.\n\nFor directed spreading, we describe cellular chemotaxis using the sensing function $f\u2062(c)\u2261log\u2061[(1+c/c_{-})/(1+c/c_{+})]$ and the chemotactic coefficient $\u03c7$, as established previously (Fu et al., 2018; Cremer et al., 2019). The characteristic concentrations $c_{\u2212}$ = 1 \u03bcM and $c_{+}$ = 30 \u03bcM represent the dissociation constants of the nutrient for the inactive and active conformations of the cell-surface receptors, respectively (Cremer et al., 2019; Fu et al., 2018; Dufour et al., 2014; Yang et al., 2015; Sourjik and Wingreen, 2012; Shimizu et al., 2010; Tu et al., 2008; Kalinin et al., 2009; Shoval et al., 2010; Lazova et al., 2011; Celani et al., 2011). To measure the active chemotactic coefficient $\u03c7$, we performed the same experiments as reported here, but using flat, unperturbed inocula (Bhattacharjee et al., 2021). We then tracked the leading-edge position of the resulting flat chemotactic fronts over time to directly measure the long-time front propagation speed. Then, we performed the same simulations as reported in this paper, but using the flat, unperturbed inocula as initial conditions, and measured the long-time front propagation speed in simulations. Finally, we repeated the simulations for different input values of $\u03c7$ and used the value of $\u03c7$ that yielded the best fit with the experimentally measured long-time front propagation speed. Thus, our simulations employ values of $\u03c7$ that are directly matched to experiments in identically prepared porous media. Similar to $D_{b}$, the value of $\u03c7$ decreases with increasing pore-scale confinement (Bhattacharjee et al., 2021); we obtained $\u03c7$ = 145, 9, and 5 \u03bcm2/s for porous media with $\u03be$ = 2.2, 1.7, and 1.2 \u03bcm, respectively. Although heterogeneity in $D_{b}$ and $\u03c7$ may be present within each population itself (Fu et al., 2018; Bai et al., 2021), we focus our analysis on the influence of pore size by assuming a constant value of both for each simulation.\n\nFinally, we note that the motility parameters $D_{b}$ and $\u03c7$ reflect the ability of cells to move through the pore space via an unbiased or biased random walk with mean step length $l$ whose value depends on pore-scale confinement and possible cell-cell collisions in the pore space. For the case of sufficiently dilute cells in porous media, $l$ is set by the geometry of the pore space, as we previously established (Bhattacharjee and Datta, 2019a; Bhattacharjee and Datta, 2019b); in particular, $l\u2248l_{c}$, the mean length of chords, or straight paths that fit in the pore space (Torquato and Lu, 1993). However, when the cells are sufficiently dense, as arises in the experiments explored here, cell-cell collisions truncate $l$. Indeed, our porous media are highly confining; the pore sizes are <8 \u03bcm, comparable to the size of a single-cell body (length \u223c2 \u03bcm and width \u223c0.5 \u03bcm) and its flagella (length \u223c5 \u03bcm), in all cases. Hence, because the pore space is too small to fit multiple cells side-by-side, cell-cell interactions are necessarily restricted to end-on interactions. We directly confirmed this phenomenon experimentally in our prior study (Bhattacharjee et al., 2021). This feature of confinement in a tight porous medium is starkly different from the case of cells in homogeneous liquid, in which short-range side-by-side interactions promote alignment of cell clusters and result in cooperative motions at high cell densities. We therefore did not incorporate such cooperative interactions in our model. Instead, we model cell-cell collisions by considering the mean separation between cells $l_{cell}\u2248(\\frac{3\u2062f}{4\u2062\\pi\u2062b})^{1/3}-d$, where $f$ is the volume fraction of the pore space between hydrogel particles, $b$ is the local bacterial number density, and $d\u22481$ \u03bcm is the characteristic size of a cell; for simplicity, when $l_{cell}<l_{c}$, we assume that cell-cell collisions truncate the mean step length $l$ and set its value to $l_{cell}$. That is, wherever $b$ is so large that $l_{cell}<l_{c}$, we multiply the values of both $D_{b}$ and $\u03c7$ used in Equation 2 by the correction factor $(l_{cell}/l_{c})^{2}$ that accounts for the truncated $l$ due to cell-cell collisions. Moreover, wherever $b$ is even so large that this correction factor is less than zero\u2014that is, cells are jammed\u2014we set both $D_{b}$ and $\u03c7$ to zero. Based on our experimental characterization of pore space structure (Bhattacharjee and Datta, 2019b), we use $f$ = 0.36, 0.17, and 0.04, and $l_{c}$ = 4.6, 3.1, and 2.4 \u03bcm, for porous media with $\u03be$ = 2.2, 1.7, and 1.2 \u03bcm, respectively. In this simple mean-field treatment of cell-cell interactions, as the cellular density increases, and thus the mean spacing between cells decreases, they increasingly truncate each other\u2019s motion and the motility parameters $D_{b}$ and $\u03c7$ decrease\u2014eventually becoming zero when the cells are so densely packed that they do not have space to move.\n\n#### Bacterial proliferation\n\nChanges in $b$ can also arise from net cell proliferation, as described in Equation 2. In particular, we describe net cell proliferation with the maximal rate per cell $\\gamma$ multiplied by the Michaelis\u2013Menten function $g\u2062(c)$ that again describes the influence of nutrient availability, that is, it quantifies the reduction in proliferation rate when nutrient is sparse. We directly measured $\\gamma\u2261ln\u2061(2)/\\tau_{2}$ previously, where $\\tau_{2}=60$ min is the mean cell division time in a porous medium for our experimental conditions. We note that because $c$ and $b$ are coupled in our model, we do not require an additional \u2018carrying capacity\u2019 of the population to be included, as is often done (Cremer et al., 2019; Croze et al., 2011); we track nutrient deprivation directly through the radially symmetric nutrient field $c(r\u2192,t)$.\n\n### Implementation of numerical simulations\n\nWhile the experimental geometry is three dimensional, in previous work (Bhattacharjee et al., 2021), we found that radial and out-of-plane effects do not need to be considered to capture the essential features of bacterial front formation and migration. Thus, for simplicity, we use a 2D representation. In the $x$ direction (coordinates defined in Figures 2 and 4), no flux boundary conditions are used at the walls of the simulated region for both field variables $b$ and $c$. In the $y$ direction, no flux boundary conditions are used after one wavelength of the undulation, peak to peak, which comprises a single repeatable unit. The initial cylindrical distribution of cells 3D printed in the experiments has a diameter of \u223c100 \u03bcm; so, in the $x$ dimension of the numerical simulations, we use a Gaussian with a 100 \u03bcm full width at half maximum for the initial bacteria distribution $b(x,t=0)$, with a peak value that matches the 3D-printed cell density in the experiments, $0.95\\times10^{12}$ cells/mL. We vary the center $x$ position of the Gaussian distribution sinusoidally along $y$ to reproduce a given experimental wavelength and amplitude. Experimental wavelengths were measured directly from confocal images and rounded to the nearest 10 \u03bcm. The initial condition of nutrient is $c=10$ mM everywhere, characteristic of the liquid media used in the experiments. The initial nutrient concentration is likely lower within the experimental population initially due to nutrient consumption during the 3D printing process; however, we expect this discrepancy to play a negligible role as nutrient deprivation occurs rapidly in the simulations.\n\nAs previously detailed (Bhattacharjee et al., 2021), while the periphery of a 3D-printed bacterial population forms a propagating front, cells in the inner region remain fixed and eventually lose fluorescence because they are oxygen-limited. Specifically, the fluorescence intensity of this fixed inner population remains constant over an initial duration $\\tau_{delay}=2$ hr, and then exponentially decreases with a decay time scale $\\tau_{starve}=29.7$ min. To facilitate comparison to the experiments, our simulations incorporate this feature to represent the cellular signal, which is the analog of the fluorescence measured in experiments, in Figures 2 and 4. We do this by multiplying the cellular density obtained by solving Equation 2 by a correction factor that incorporates the history of oxygen depletion. Specifically, wherever $c(r\u2192^{\u00a0\u2032},t^{\u2032})$ drops below a threshold value, for all times $t>t^{\u2032}+\\tau_{delay}$, we multiply the cellular density $b(r\u2192^{\u00a0\u2032},t)$ by $e^{-(t-t^{\u2032})/\\tau_{starve}}$, where $t^{\u2032}$ is the time at which the position $r\u2192^{\u00a0\u2032}$ became nutrient-depleted; oxygen and nutrient depletion occur at similar positions and times as detailed in Bhattacharjee et al., 2021.\n\nTo numerically solve the continuum model, we use an Adams\u2013Bashforth\u2013Moulton predictor corrector method (Seyrich et al., 2019), where the order of the predictor and corrector are 3 and 2, respectively. Since the predictor corrector method requires past time points to inform future steps, the starting time points must be found with another method; we choose the Shanks starter of order 6 (Shanks, 1966). For the first and second derivatives in space, we use finite difference equations with central difference forms in 2D. Time steps of the simulations are 0.01 s and spatial resolution is 10 \u03bcm. Because the experimental chambers are 3.5 cm in diameter, we use a distance of 3.5 \u00d7 104 \u03bcm for the size of the entire simulated system in the $x$ direction with the cells initially situated in the center. Our previous work (Bhattacharjee et al., 2021) demonstrated that the choice of discretization does not appreciably influence the results in numerical simulations of flat fronts; furthermore, our new results for the simulations performed here (Figure 4\u2014figure supplement 3) indicate that our choice of discretization used is sufficiently finely resolved such that the results in numerical simulations of undulated fronts are not appreciably influenced by discretization.\n\n### Characterizing simulated front dynamics\n\nFor the analysis shown in Figure 2, the leading edge is defined as the locus of positions at which $b$ falls below a threshold value equal to 10\u20134 times the maximum cell density of the initial bacterial distribution, as in Bhattacharjee et al., 2021. For the analysis shown in Figure 4, to more accurately track the leading edge of the front, we define it as the locus of positions at which $b$ falls below a threshold value specific to each condition tested; the threshold is 0.003 cells per \u03bcm3 for the prototypical case of $\u03be=1.7$ \u03bcm and $\\lambda=0.8$ mm shown in Figure 4A\u2013C, as well as all simulations for $\u03be=2.2$ \u03bcm; 0.002 cells per \u03bcm3 for simulations for $\u03be=1.7$ \u03bcm and $\\lambda=2.0$ and 3.2 mm; and 0.001 cells per \u03bcm3 for simulations for $\u03be=1.2$ \u03bcm and $\\lambda=0.8$ mm. We note that the $b$-dependence of the motility parameters $D_{b}$ and $\u03c7$ does not play an appreciable role in our analysis of smoothing since the definition used for the leading edge of each front is at a fixed, low value of $b$.\n\n### Robustness of front smoothing\n\nOne may speculate that smoothing could be avoided or even reversed by lowering the initial nutrient concentration to a value in between $c_{+}$ and $c_{\u2212}$, thereby diminishing the difference in chemotactic response between peaks and valleys and allowing the amplifying effects of the nutrient gradient to dominate. However, a simulation performed with a much lower initial nutrient concentration of 10 \u03bcM throughout, chosen to be in between $c_{+}$ and $c_{\u2212}$, does not even form a traveling front at all over the experimental time scale (Video 7). This absence of a front is due to the reduction in nutrient consumption as modulated by the Monod function $g\u2062(c)$, which results in a drastic reduction in the nutrient gradient that drives front formation and propagation. Thus, despite varying the initial nutrient concentration over three orders of magnitude, the upper limit $c_{+}$ over an order of magnitude, and the migration parameters $D_{b}$ and $\u03c7$ over an order of magnitude, we have not found conditions under which chemotactic fronts, if they form, do not smooth. Smoothing therefore appears to be robust to large changes in the environmental conditions.\n\n![Video 7.](https://cdn.elifesciences.org/articles/71226/elife-71226-video7.mp4.jpg)\n\n**Video 7.:** Simulation probing the condition of lower initial overall nutrient concentration for $\\lambda=0.8$ mm, $\u03be=1.7$ \u03bcm.Video shows the calculated cellular fluorescence signal of cells failing to migrate as a front from an undulated stripe of closely packed E. coli with initial $c=10$ \u03bcM. To more clearly show the lack of front formation, in this visualization we neglect fluorescence signal loss that occurs when cells are oxygen depleted.\n",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "6c1a3578-f5b4-4078-8636-ffea063ef4e8",
+      "submission_id": "b70e2b02-443e-4e61-8b65-ba9ef2c931ec",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Irene Giardina, https://ror.org/02be6w209 Universit\u00e0 Sapienza Italy\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.71226.sa0](https://doi.org/10.7554/eLife.71226.sa0)\n\nThe work provides new insights into the dual role of chemotactic sensing in both generating and controlling bacterial wave front patterns. Novel and elegant experimental techniques supported by computations using phenomenological models validate the hypothesis that chemotactic sensing smooths morphological variations; however, experiments suggest a richer picture than that predicted by the theory.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Irene Giardina, https://ror.org/02be6w209 Universit\u00e0 Sapienza Italy\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.71226.sa1](https://doi.org/10.7554/eLife.71226.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Chemotactic smoothing of collective migration\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Aleksandra Walczak as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nBoth referees reviewed positively the paper. They however suggest a number of clarifications and a more extended discussion of a few issues. The authors are invited to carefully read the attached full reports and to address all the referees' comments in a revised version.\n\nParticular attention must be devoted to:\n\n\u2013 Clarify how certain parameters are estimated from the data (e.g. diffusion coefficient, pore properties); discuss the dependence of the susceptibility on pore size and the potential role of bacterial concentration (referee 2).\n\n\u2013 Discuss connections with some growth models potentially relevant for the experimental findings presented in the paper (referee 1).\n\nReviewer #1:\n\nThe paper is very clearly written an presents a nice mix of experimental and numerical results. The authors might want to make a connection with the growth-expansion model by Cremer and Honda (see also Narla Cremer and Hwa, arxiv 2103.08100) which appears to be the limiting case of c_{1/2}\\to 0 c_{-}\\to 0 and infinite carrying capacity. For that model, planar traveling wave solutions exist and their speed and width of the band are analytically known (approximately exact).\n\nIt would be interesting to study analytically the transverse stability of such solutions, even though this is clearly outside the scope of the present paper.\n\nReviewer #2:\n\nCollective bacterial motility relies intimately on the manner by which individual cells sense their environment, chemical and physically sense their neighbors, and adjust to appropriate chemical fields such as nutrient concentrations. In favorable conditions, bacterial cells grow, multiply and move together in well defined fronts or waves. There is a large body of literature on how intrinsic (phenotypic) and extrinsic (environmental) perturbations disrupt these patterns and quench collectivity or destabilize propagating fronts. Here, the authors address the complementary question of how propagating bacterial populations may withstand perturbations. A elegant and novel 3D printing platform that allows for the generation localized, dense bacterial populations with controllable mesoscale structure (wavelength and shape) within a hindering hydrogel medium is used to study the long time spatiotemporal dynamics of bacterial collective motility. Experiments show that initial structured interfaces smooth into rapidly moving bacterial fronts that propagate stably. The authors hypothesize that this autonomous and emergent quenching of destabilizing density perturbations is due to chemotactic response with both single cell and collective aspects playing critical roles. A variation of the Keller-Segel model incorporating bacterial growth, nutrient consumption, and bacterial spread due to diffusion and chemotaxis provides predictions that compare well to experiments and support the hypothesis.\n\nCollective motility with diffusive and (concentration-induced) fluxes feature in many active matter systems; thus insights from this work are applicable to sustained pattern formation in these related systems.\n\nStrengths:\n\nA significant strength of the paper is in the synthesis of novel experiments with variations of a well-established theoretical framework to investigate the role of chemotaxis in modulating bacterial front undulations. The hypothesis is clearly articulated with all features of the growing bacterial population \u2013 viz, growth, motility and chemotactic sensing considered in understanding the experiments.\n\nThe experimental techniques and protocols that allow for direct imaging of bacterial waves and propagating fronts are novel and allow for cleanly printed sinuous patterns. The hydrogel medium allows for both control of the medium porosity (mean pore size), and also for clean control of nutrient concentration. The data obtained is of high quality and clearly exhibits the smoothing of wave fronts that is the focus of the paper. The permeability of the gel particles allows for experiments where local oxygen and nutrient fields may be sensed easily since small scale gradients are prevented.\n\nIt is hard to use the experiments for analyzing the roles played by each of these in isolation.Thus the role of analysis is important \u2013 specifically, any phenomenological model used should capture the important biophysical factors that may play a role. The continuum model for chemotactic spread of growing bacterial suspensions (via a Keller-Segel type formulation) is well chosen and carefully analyzed with attempts first to negate the hypothesis (by asking if growth, non-chemotactic diffusion based spreading may mimic the dynamics) and then by proactively supporting it. Computations seem to directly include parameters evaluated from experiments and qualitatively capture the nature of the rapidly propagating wavefronts far from the initial positions. Results with diffusion, and cell proliferation knocked out by choosing parameters appropriately suggest that chemotactic response drives front formation, and is implicated in sustained and unperturbed wave propagation. A strength of this manner of interrogation is the ease by which more complicated features may be introduced in the theory and in the computations. This generality in principle allows extensions to more complicated systems that the authors suggest may benefit from the insights from this paper.\n\nThe principle that variations in the driving force (gradient of the nutrient concentration, c here) may compete with variations in cell response to the value of the quantity (the value of c) and overall determine the evolution of undulations at the front is interesting and a crucial insight. Active matter systems such as bacterial swarms, multicellular clusters etc exhibit diffusive, nutrient sensing chemotactic behavior and haptotaxis. Insights from this paper may help understand how emergent patterns remain stable and long-lasting in such systems. The results of this paper and insights will contribute to the on-going dialogue as to the complementary role of collective vs cell-level behavior in controlling motility.\n\nThe conclusions of this paper are mostly well supported by the experimental augmented by the computational analysis and associated discussions. Some aspects of the presentation may benefit from further clarification.\n\n1) Some discussion is warranted on the role of additional motility modes such as surface assistant motility and the general tendency of bacteria to stick around near surfaces in mediating the non-chemotactic behavior; and possible surface assistant motility that may help bacteria escape in the initial stages of the wave front formation and propagation and prevent residual trapping. Experiments show a rather striking phenomena for some combinations of the wavelengths and pore size \u2013 bacteria located at the point of printing disperse and eventually the central region seems to have local density of bacteria with most of the cells participating in the front and moving away rapidly. The model however seems to suggest that a fraction of the initial cells remain localized at their initial position. Some discussion of how the model may be adapted or modified to account for this will help.\n\n2) Some more clarity and discussion is need to explain how experiments are used to calculate the values of parameters in the simulations. The susceptibility function that connects the convective chemotactic induced flux is dependent on the pore-size and hindrance effects. The effect of confinement for a diffusing nutrient molecule is easy to rationalize based on known literature. The bacterial diffusion coefficient may also be anticipated (for a swimming cell) by using concepts from kinetic theory where an effective diffusion coefficient came be estimated by calculating the mean speed between either tumbling events, wall interactions and reorientations, or cell-cell interactions and reorientations. The manner in which Chi may vary with pore size is however unclear and needs some elaboration. Here, the form of the pore size distribution in addition to the mean pore size may be important.\n\n3) Bacterial cell properties need to be mentioned and connected to pore geometry. Specifically, the cells are stated to have a characteristic size. But bacteria are rods with high aspect rations. Given this, does the concentration of the cells correspond to a semi-dilute or concentrated suspension. If sufficiently concentration alignment effects may arise that augment and enhance over-all spread in addition to chemotaxis based flux.\n\nI encourage the authors to address the following comments in their response or revision.\n\n1) The pore size is a crucial feature in the experiments. However only the mean pore size is reported. It would help to have an estimate of the pore size distribution.\n\n2) Close ups of the bacterial concentration fields in Figure 1(C,D,E) would be very helpful. While the t=0 case is probably difficult to show due to the rather high density of bacteria, how about the large t values ? The experiments do suggest that the bacteria are moving in suspension and not along the gel surfaces. Is this something that can be checked by looking at the suspensions at higher resolutions?\n\n3) The analysis of chemotaxis (following equation 3, and subsequent discussion) brings up an important fact. The physics involves two competing effects \u2013 the spatial variation in c that actually amplifies front undulations and irregularities and the intrinsic chemotactic response that allows for receptors to saturate. The form of the response function f(c) and the form of Chi used in the paper is relevant to E. coli. Can the authors further comment on if and how one may modify f(c) and chi to suppress or enhance these effects. There is discussion of this in the final section \u2013 however a sample computation that illustrates this would emphasize this point.\n\n4) There are some experimental details missing in the paper. How was the diffusion coefficient D_b measured? For a dense suspension of bacteria (without chemotactic effects), the effective long-time bacterial diffusivity may depend on the concentration of bacteria due to cell-cell interactions and alignment in a manner seen in dense suspensions of rods. Was this done in the dilute regime by tracking single bacteria MSD or was this done when the concentration of bacteria was high?\n\n5) The discussion on calculating the mean separation between cells in the methods section is a tad confusing and needs clarity. A recapitulation or summary of the results from the previous publication would help here.\n",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f5366dd4-5e3e-4631-a7f1-e8958c28fd96",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C1",
+      "claim": "Collective migration is a directed, coordinated motion of many self-propelled agents.",
+      "claim_type": "EXPLICIT",
+      "source": "Collective migration\u2014the directed, coordinated motion of many self-propelled agents\u2014is a fascinating emergent behavior exhibited by active matter with functional implications for biological systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement presented in the abstract that establishes the concept being studied.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "d15a4c3b-713c-46af-923e-26d1d766edcc",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C2",
+      "claim": "Bacterial populations autonomously smooth out large-scale perturbations in their overall morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that bacterial populations autonomously smooth out large-scale perturbations in their overall morphology, enabling the cells to continue to migrate together.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study supported by experimental observations and simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "6bad799f-f45f-4cd1-a7ed-2350f59c32ca",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C3",
+      "claim": "The smoothing process arises from spatial variations in the ability of cells to sense and respond to the local nutrient gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "This smoothing process arises from spatial variations in the ability of cells to sense and respond to the local nutrient gradient\u2014revealing a population-scale consequence of the manner in which individual cells transduce external signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic finding derived from analysis of experimental and simulation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "27bf2434-fd1b-4ddc-ad82-cf6be28e309a",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C4",
+      "claim": "Collective migration enables populations to follow cues that would be undetectable to isolated individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to being a fascinating example of emergent behavior, collective migration can be critically important\u2014enabling populations to follow cues that would be undetectable to isolated individuals (Camley, 2018), escape from harmful conditions and colonize new terrain (Cremer et al., 2019), and coexist (Gude et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "c317368c-386b-492d-81f5-1591775c9cfa",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C5",
+      "claim": "Collective migration enables populations to escape from harmful conditions and colonize new terrain.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to being a fascinating example of emergent behavior, collective migration can be critically important\u2014enabling populations to follow cues that would be undetectable to isolated individuals (Camley, 2018), escape from harmful conditions and colonize new terrain (Cremer et al., 2019), and coexist (Gude et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "2beb52fc-9271-4082-a24b-065b6d09faad",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C6",
+      "claim": "Perturbations can be external, stemming from heterogeneities in the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "These can be external, stemming from heterogeneities in the environment (S\u00e1ndor et al., 2017; Morin et al., 2016; Wong et al., 2014; Chepizhko and Peruani, 2013; Chepizhko et al., 2013; Chepizhko and Peruani, 2015; Toner et al., 2018; Maitra, 2020), or internal, stemming from differences in the behavior of individuals (Yllanes et al., 2017; Bera and Sood, 2020; Alirezaeizanjani et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "e61d760f-7567-4312-b0a0-e4cfebddf411",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C7",
+      "claim": "Perturbations can be internal, stemming from differences in the behavior of individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "These can be external, stemming from heterogeneities in the environment (S\u00e1ndor et al., 2017; Morin et al., 2016; Wong et al., 2014; Chepizhko and Peruani, 2013; Chepizhko et al., 2013; Chepizhko and Peruani, 2015; Toner et al., 2018; Maitra, 2020), or internal, stemming from differences in the behavior of individuals (Yllanes et al., 2017; Bera and Sood, 2020; Alirezaeizanjani et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "ac07d8d8-4886-48ac-8c40-df2c95740e42",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C8",
+      "claim": "In some cases, perturbations can abolish coordinated motion throughout the population entirely.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in some cases, perturbations can abolish coordinated motion throughout the population entirely (S\u00e1ndor et al., 2017; Morin et al., 2016; Yllanes et al., 2017; Bera and Sood, 2020; Chepizhko and Peruani, 2013; Chepizhko et al., 2013; Chepizhko and Peruani, 2015; Toner et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "df6bdc51-3d76-4fe4-87d5-3ee8a02a7be3",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C9",
+      "claim": "Perturbations can couple to the active motion of the population to destabilize its leading edge, producing large-scale disruptions to its morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "In other cases, perturbations couple to the active motion of the population to destabilize its leading edge, producing large-scale disruptions to its morphology (Wong et al., 2014; Alert and Trepat, 2020; Alert et al., 2019; Driscoll et al., 2016; Doostmohammadi et al., 2016; Williamson and Salbreux, 2018; Miles et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "fad9a27e-1e8a-47c6-8257-098e5a94711d",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C10",
+      "claim": "Morphological instabilities can occur due to the disruptive influence of hydrodynamic interactions between cells during chemotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, for one of the simplest cases of collective migration\u2014via chemotaxis, the biased motion of cells up a chemical gradient\u2014morphological instabilities can occur due to the disruptive influence of hydrodynamic (Subramanian et al., 2011; Lushi et al., 2012; Lushi et al., 2018) or chemical-mediated (Ben Amar and Bianca, 2016; Ben Amar, 2016; Funaki et al., 2006; Brenner et al., 1998; Mimura and Tsujikawa, 1996; Stark, 2018) interactions between cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "52ba74fc-18c7-4bf9-8243-c0145ac7e416",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C11",
+      "claim": "Morphological instabilities can occur due to the disruptive influence of chemical-mediated interactions between cells during chemotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, for one of the simplest cases of collective migration\u2014via chemotaxis, the biased motion of cells up a chemical gradient\u2014morphological instabilities can occur due to the disruptive influence of hydrodynamic (Subramanian et al., 2011; Lushi et al., 2012; Lushi et al., 2018) or chemical-mediated (Ben Amar and Bianca, 2016; Ben Amar, 2016; Funaki et al., 2006; Brenner et al., 1998; Mimura and Tsujikawa, 1996; Stark, 2018) interactions between cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "5ea131a2-f114-441c-91f0-88b0d90c344f",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C12",
+      "claim": "Mechanisms by which migrating populations can withstand perturbations have scarcely been examined.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, mechanisms by which migrating populations can withstand perturbations have scarcely been examined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the field that identifies a knowledge gap.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "f925a3ef-f67b-401d-9f0c-a22d411fbc67",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C13",
+      "claim": "Chemotaxis in response to a self-generated nutrient gradient provides both the driving force for collective migration and the primary smoothing mechanism for bacterial populations.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that chemotaxis in response to a self-generated nutrient gradient provides both the driving force for collective migration and the primary smoothing mechanism for these bacterial populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study supported by experimental and simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "3454aba0-9535-41d2-b33f-ae9570633e0e",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C14",
+      "claim": "The limited ability of cells to sense and respond to a nutrient gradient causes them to migrate at different velocities at different positions along a front.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, using continuum simulations, we show that the limited ability of cells to sense and respond to a nutrient gradient causes them to migrate at different velocities at different positions along a front\u2014ultimately driving smoothing of the overall population and enabling continued collective migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic finding derived from continuum simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "9dd1a7ff-ad90-444f-8083-6072f5f6a830",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C15",
+      "claim": "Differential migration velocities ultimately drive smoothing of the overall population and enable continued collective migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, using continuum simulations, we show that the limited ability of cells to sense and respond to a nutrient gradient causes them to migrate at different velocities at different positions along a front\u2014ultimately driving smoothing of the overall population and enabling continued collective migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic finding derived from continuum simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "9e18db50-f641-496b-9ae5-b7ca8389550f",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C16",
+      "claim": "The hydrogel particles are swollen in a defined rich liquid medium with L-serine as the primary nutrient and chemoattractant.",
+      "claim_type": "EXPLICIT",
+      "source": "The media are composed of hydrogel particles that are swollen in a defined rich liquid medium with L-serine as the primary nutrient and chemoattractant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "5a136cae-4bc3-4323-ba41-80c3201fd427",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C17",
+      "claim": "The hydrogel is highly swollen and freely permeable to oxygen and nutrient.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the hydrogel is highly swollen, it is freely permeable to oxygen and nutrient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a property of the experimental system established by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "ba1e116e-558f-42ec-ac2c-f6c6a495ac14",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C18",
+      "claim": "Cells cannot penetrate the individual hydrogel particles and are instead forced to swim through the interparticle pores.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while the particles do not hinder exposure of bacteria to these chemical signals, the cells cannot penetrate the individual particles and are instead forced to swim through the interparticle pores (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the experimental system supported by the schematic in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "747c0a1b-6d2d-47ce-bd7d-014359fb7892",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C19",
+      "claim": "Varying the hydrogel particle packing density enables tuning of pore size and thereby modulates cellular migration without altering the nutrient field.",
+      "claim_type": "EXPLICIT",
+      "source": "Varying the hydrogel particle packing density thus enables us to tune pore size and thereby modulate cellular migration without altering the nutrient field (Bhattacharjee and Datta, 2019a; Bhattacharjee and Datta, 2019b; Bhattacharjee et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological capability supported by citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "772218d0-c90e-4a1d-a6b8-2d74fdb404bb",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C21",
+      "claim": "Each undulated cylinder requires approximately 10 seconds to print.",
+      "claim_type": "EXPLICIT",
+      "source": "Each undulated cylinder requires \u223c10 s to print, two orders of magnitude shorter than the duration between successive 3D confocal image stacks, \u223c10 min.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement of the experimental procedure stated in the figure caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "2a061f7f-72e5-497d-a333-908cf8432b12",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C22",
+      "claim": "The duration between successive 3D confocal image stacks is approximately 10 minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Each undulated cylinder requires \u223c10 s to print, two orders of magnitude shorter than the duration between successive 3D confocal image stacks, \u223c10 min.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement of the experimental procedure stated in the figure caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "6212c25c-622c-4170-bb21-34dc1af449ff",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C28",
+      "claim": "Cells of E. coli initially 3D-printed in densely packed straight cylinders collectively migrate radially outward in smooth, coherent fronts.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, as we showed previously (Bhattacharjee et al., 2021), cells of E. coli initially 3D-printed in densely packed straight cylinders collectively migrate radially outward in smooth ('flat'), coherent fronts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "44fc0b27-5bc3-402b-a60f-e7d4f812e54d",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C29",
+      "claim": "These fronts form and propagate via chemotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "These fronts form and propagate via chemotaxis: the cells continually consume surrounding nutrient, generating a local gradient that they in turn bias their motion along (Adler, 1966; Cremer et al., 2019; Fu et al., 2018; Saragosti et al., 2011; Bai et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic explanation supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "11e26dc8-9d76-47a2-9844-7a1a91291ad6",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C30",
+      "claim": "In the absence of nutrient, migrating fronts do not form at all.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of nutrient, migrating fronts do not form at all (Bhattacharjee et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "6725c3f6-9a4c-41ae-a160-256a91c0055b",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C31",
+      "claim": "The outer periphery of the population spreads slowly after 3D printing, hindered by cell-cell collisions in the pore space.",
+      "claim_type": "EXPLICIT",
+      "source": "After 3D printing, the outer periphery of the population spreads slowly, hindered by cell-cell collisions in the pore space, as the population establishes a steep gradient of nutrient through consumption (Bhattacharjee et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experiments supported by a citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "86ae9b61-9639-4886-9c2a-79cbd99c0a53",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C32",
+      "claim": "The periphery spontaneously organizes into an approximately 300 \u03bcm-wide front of cells that collectively migrates outward.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, this periphery spontaneously organizes into an \u223c300 \u03bcm-wide front of cells that collectively migrates outward (yellow in Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experiments shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "df2a268d-d0c8-4739-9006-dcb04444a3c7",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C33",
+      "claim": "The front autonomously smooths out large-scale undulations as it continues to propagate.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, however, the front autonomously smooths out these large-scale undulations as it continues to propagate (Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the experiments shown in Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "9a0565f2-749c-4e92-a765-8362c74e7df0",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C37",
+      "claim": "The smoothing of collective migration is regulated by both the undulation wavelength and the ease with which cells migrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Our experiments thus indicate that the smoothing of collective migration is regulated by both the undulation wavelength and the ease with which cells migrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "e888bb1b-dddb-4a9d-9244-0803cf09ec4d",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C38",
+      "claim": "Variants of the Keller-Segel model can successfully capture the key features of chemotactic migration of flat E. coli fronts in bulk liquid.",
+      "claim_type": "EXPLICIT",
+      "source": "Variants of this model can successfully capture the key features of chemotactic migration of flat E. coli fronts in bulk liquid (Keller and Segel, 1971; Fu et al., 2018) and in porous media (Bhattacharjee et al., 2021); we therefore hypothesize that it can also help identify the essential physics of smoothing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about previous work supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "57b93514-3556-4bcf-925a-aff96a66da70",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C39",
+      "claim": "Variants of the Keller-Segel model can successfully capture the key features of chemotactic migration of flat E. coli fronts in porous media.",
+      "claim_type": "EXPLICIT",
+      "source": "Variants of this model can successfully capture the key features of chemotactic migration of flat E. coli fronts in bulk liquid (Keller and Segel, 1971; Fu et al., 2018) and in porous media (Bhattacharjee et al., 2021); we therefore hypothesize that it can also help identify the essential physics of smoothing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about previous work supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "d6cd466f-a89d-47d2-8d66-ea4a5f9471cb",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C40",
+      "claim": "The continuum Keller-Segel model recapitulates the essential spatio-temporal features of smoothing seen in the experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "This agreement confirms that the continuum Keller\u2013Segel model recapitulates the essential spatio-temporal features of smoothing seen in the experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing simulations to experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "39b877fe-652d-42e6-963c-ade6749325db",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C41",
+      "claim": "The simulated fronts form, collectively migrate, and smooth in a manner that is remarkably similar to the experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we do not expect perfect quantitative agreement between the experiments and simulations due to their difference in dimensionality and the simplified treatment of cell-cell interactions, the simulated fronts form, collectively migrate, and smooth in a manner that is remarkably similar to the experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between simulation and experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "7ba1c5ab-0761-45a0-ba9b-3dbb5445bd3a",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C42",
+      "claim": "In the simulations, the normalized undulation amplitude decays exponentially over time, as in the experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the experiments, the outer periphery of each population first spreads slowly, then spontaneously organizes into an outward-migrating front that eventually smooths. We again find that the normalized undulation amplitude decays exponentially over time, as shown in Figure 2D.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the simulation data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "8fe7cb7e-0f55-47d2-9c8c-d0ae04a8433a",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C49",
+      "claim": "Differential proliferation typically destabilizes bacterial communities.",
+      "claim_type": "EXPLICIT",
+      "source": "However, differential proliferation typically destabilizes bacterial communities, as shown previously both experimentally and theoretically (Fujikawa and Matsushita, 1989; Bonachela et al., 2011; Nadell et al., 2010; Farrell et al., 2013; Trinschek et al., 2018; Allen and Waclaw, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about previous work supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "5f466677-15ad-42f1-ac40-0a3aab8252cc",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C53",
+      "claim": "Chemotaxis is both necessary and sufficient for the observed front smoothing.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, chemotaxis is both necessary and sufficient for the observed front smoothing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation results in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "76577e32-6fe8-42b7-8ab8-cb3c16d7ae4c",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C56",
+      "claim": "Variations in the local nutrient gradient along the leading edge of the front do not contribute to smoothing; rather, they oppose it.",
+      "claim_type": "EXPLICIT",
+      "source": "This spatial variation in the driving force promotes faster outward chemotactic migration at the peaks than at the valleys, amplifying front undulations\u2014in opposition to our observation that the migrating population self-smooths. Variations in the local nutrient gradient along the leading edge of the front do not contribute to smoothing; rather, they oppose it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the analysis of the simulation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "08cae862-01d5-4c46-80ed-50bf10b1f206",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C57",
+      "claim": "Because high nutrient concentrations saturate cell-surface receptors, the chemotactic response function decreases with nutrient concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "That is, because high nutrient concentrations saturate cell-surface receptors, the chemotactic response function decreases with nutrient concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic explanation based on established knowledge of receptor saturation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "d1b92c52-43f7-4272-a8a8-0410f6922677",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C58",
+      "claim": "Nutrient concentrations are larger at the peaks than at the valleys along the leading edge of the front.",
+      "claim_type": "EXPLICIT",
+      "source": "Inspection of the nutrient field indicates that nutrient concentrations are larger at the peaks than at the valleys along the leading edge of the front (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the simulation shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "99b6e101-5c13-4f3b-84c2-9934ca4c734c",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C59",
+      "claim": "The chemotactic response of cells is weaker at peaks than at valleys.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the chemotactic response of cells is weaker at peaks than at valleys, as shown by the points in Figure 4B, yielding slower outward chemotactic migration at peaks than at valleys and thereby reducing the amplitude of front undulations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the simulation data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "e898c001-a6a0-4663-9fde-8bdc9f361310",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C60",
+      "claim": "Variations in the chemotactic response along the leading edge of the front promote smoothing.",
+      "claim_type": "EXPLICIT",
+      "source": "Variations in the chemotactic response along the leading edge of the front promote smoothing, unlike variations in the nutrient gradient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the analysis of the simulation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "d3d5264c-21a6-4335-a39e-2c55c7d23a6a",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C65",
+      "claim": "The robustness of the front morphology to perturbations has never been examined or quantitatively explained.",
+      "claim_type": "EXPLICIT",
+      "source": "The smoothing of these fronts underlies the utility of standard agar-based assays for chemotaxis, in which bacteria spread outward in smooth, circular rings from a dense inoculum (Wolfe and Berg, 1989; Tittsler and Sandholzer, 1936; Croze et al., 2011; Cremer et al., 2019)\u2014despite the presence of irregularities in the initial inoculum that are inevitably introduced by human error. To our knowledge, the robustness of the front morphology to such perturbations has never been examined or quantitatively explained; as a result, previous studies have only focused on the migration of the smooth fronts that ultimately result (Adler, 1966; Lauffenburger, 1991; Keller and Segel, 1971; Cremer et al., 2019; Fu et al., 2018; Saragosti et al., 2011; Bhattacharjee et al., 2021; Bai et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the field that identifies a knowledge gap.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "0c4e3080-1e8a-4dc6-9874-08a6f408df2f",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C66",
+      "claim": "The work provides an explanation for why perturbed fronts smooth out.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work now provides an explanation for why perturbed fronts smooth out.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the contribution of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "33c2352e-1af3-46d6-9e06-4d19dad07d8e",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C67",
+      "claim": "The 3D printing platform provides a unique way to tune the shape of the initial perturbation, as well as the extent to which cellular migration is hindered.",
+      "claim_type": "EXPLICIT",
+      "source": "The 3D printing platform provides a unique way to tune the shape of the initial perturbation, as well as the extent to which cellular migration is hindered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the methodological contribution of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "6b604cd9-adb8-4df0-8078-69ce39c7eebc",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C68",
+      "claim": "Even though cells in peaks of an undulated front experience a stronger driving force given by the local nutrient gradient, the higher nutrient levels they are exposed to saturate their cell-surface receptors, and hence they exhibit a weaker chemotactic response than cells in valleys.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that even though cells in peaks of an undulated front experience a stronger driving force given by the local nutrient gradient, the higher nutrient levels they are exposed to saturate their cell-surface receptors, and hence they exhibit a weaker chemotactic response than cells in valleys.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic finding from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "ef5d547c-0f75-43de-8988-9f16888fafce",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C69",
+      "claim": "While variations in the nutrient gradient along the leading edge of a front act to amplify undulations, variations in the ability of cells to sense and respond to this gradient dominate and instead smooth out the undulation.",
+      "claim_type": "EXPLICIT",
+      "source": "That is, while variations in the nutrient gradient along the leading edge of a front act to amplify undulations, variations in the ability of cells to sense and respond to this gradient dominate and instead smooth out the undulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic finding from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "5e35e085-15d4-4e6a-b215-f7bdc13a84c9",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C70",
+      "claim": "The mechanism of smoothing is distinct from diffusion, which is typically responsible for the smoothing of traveling waves in reaction-diffusion systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this mechanism of smoothing is distinct from diffusion, which is typically responsible for the smoothing of traveling waves in reaction-diffusion systems\u2014and in our case, is much too slow to drive smoothing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to other known mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "cc567164-f4c5-44ec-9603-71155d65867d",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C75",
+      "claim": "The second requirement for chemotactic smoothing is satisfied for diverse active matter systems.",
+      "claim_type": "EXPLICIT",
+      "source": "The second requirement is also satisfied for diverse active matter systems; in the context of chemotaxis, specific examples include other bacteria (Menolascina et al., 2017), enzymes (Jee et al., 2018; Agudo-Canalejo et al., 2018; Mohajerani et al., 2018), aggregating amoeba cells (Keller and Segel, 1970), and mammalian cell groups during development, immune response, and disease (Camley, 2018; Iglesias and Devreotes, 2008; Theveneau et al., 2010; McLennan et al., 2012; Malet-Engra et al., 2015; Puliafito et al., 2015; Tweedy et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a generalization supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "fdb6a0ff-0042-453a-bcc7-a97fcedd8dac",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C77",
+      "claim": "The chemotactic smoothing process is autonomous, arising without any external intervention.",
+      "claim_type": "EXPLICIT",
+      "source": "The chemotactic smoothing process described here is autonomous, arising without any external intervention.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the phenomenon observed in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "407db69d-ea20-47df-be3a-0256be77ce43",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C78",
+      "claim": "Chemotactic smoothing is a population-scale consequence of the limitations in cellular signal transduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, it is a population-scale consequence of the limitations in cellular signal transduction\u2014motivating future studies of other population-scale effects, beyond smoothing, that may emerge from individual behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the mechanistic findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "1f0b007c-c8fc-44d5-b337-6f575bfdba5c",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C79",
+      "claim": "The work highlights the distinct and pivotal role played by the cellular chemotactic response function in regulating migration and large-scale population morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, while studies of chemotaxis typically focus on the role of the external nutrient gradient in driving cellular migration, our work highlights the distinct and pivotal role played by the cellular chemotactic response function in regulating migration and large-scale population morphology more broadly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the contribution of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "86612d37-aeb1-4efe-a776-96c8784fb421",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C80",
+      "claim": "The work contributes a new factor to be considered in descriptions of morphogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work therefore contributes a new factor to be considered in descriptions of morphogenesis, which thus far have focused on the role of other factors\u2014such as differential forcing by signaling gradients, differential proliferation, intercellular mechanics, substrate interactions, and osmotic stresses (McLennan et al., 2012; Fujikawa and Matsushita, 1989; Bonachela et al., 2011; Nadell et al., 2010; Farrell et al., 2013; Trinschek et al., 2018; Allen and Waclaw, 2019; Beroz et al., 2018; Fei et al., 2020; Yan et al., 2019; Yan et al., 2017; Copenhagen et al., 2020; Smith et al., 2017; Ghosh et al., 2015; Zhang et al., 2021)\u2014in regulating the overall morphology of cellular communities and active matter in general.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the contribution of the study supported by citations to previous work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "736e2174-a9f6-45a3-96a8-9efb3110d3da",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C81",
+      "claim": "The liquid medium was an aqueous solution of 10\u00d7 MOPS Mixture, 10\u00d7 ACGU solution, 5\u00d7 Supplement EZ solution, 20% glucose solution, 0.132 M potassium phosphate dibasic solution, and ultrapure Milli-Q water at volume fractions of 10, 10, 20, 1, 1, and 58%, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The components to prepare the EZ Rich were purchased from Teknova Inc, autoclaved prior to use, and were mixed following the manufacturer's directions; specifically, the liquid medium was an aqueous solution of 10\u00d7 MOPS Mixture (M2101), 10\u00d7 ACGU solution (M2103), 5\u00d7 Supplement EZ solution (M2104), 20% glucose solution (G0520), 0.132 M potassium phosphate dibasic solution (M2102), and ultrapure Milli-Q water at volume fractions of 10, 10, 20, 1, 1, and 58%, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental preparation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "2a64b57a-6243-4f24-95b9-97e9883d6d19",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C82",
+      "claim": "The hydrogel granules swell considerably, resulting in a jammed medium made of approximately 5\u201310 \u03bcm diameter swollen hydrogel particles with approximately 20% polydispersity.",
+      "claim_type": "EXPLICIT",
+      "source": "The hydrogel granules swell considerably, resulting in a jammed medium made of \u223c5\u201310 \u03bcm diameter swollen hydrogel particles with \u223c20% polydispersity and with an individual mesh size of \u223c40\u2013100 nm, as we established previously (Bhattacharjee and Datta, 2019b), which enables small molecules (e.g., amino acids, glucose, oxygen) to freely diffuse throughout the medium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental system supported by a citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "9ab1632b-7914-4816-8fc8-5367f5ff9eb3",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C83",
+      "claim": "The individual mesh size of the swollen hydrogel particles is approximately 40\u2013100 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The hydrogel granules swell considerably, resulting in a jammed medium made of \u223c5\u201310 \u03bcm diameter swollen hydrogel particles with \u223c20% polydispersity and with an individual mesh size of \u223c40\u2013100 nm, as we established previously (Bhattacharjee and Datta, 2019b), which enables small molecules (e.g., amino acids, glucose, oxygen) to freely diffuse throughout the medium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental system supported by a citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "3fa57d2a-4b90-42f5-858f-c56a8f9cfb28",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C84",
+      "claim": "The mesh size of the swollen hydrogel particles enables small molecules (e.g., amino acids, glucose, oxygen) to freely diffuse throughout the medium.",
+      "claim_type": "EXPLICIT",
+      "source": "The hydrogel granules swell considerably, resulting in a jammed medium made of \u223c5\u201310 \u03bcm diameter swollen hydrogel particles with \u223c20% polydispersity and with an individual mesh size of \u223c40\u2013100 nm, as we established previously (Bhattacharjee and Datta, 2019b), which enables small molecules (e.g., amino acids, glucose, oxygen) to freely diffuse throughout the medium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental system supported by a citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "c4d82bb0-7212-4027-aea0-422c83a2d540",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C87",
+      "claim": "The 3D printing process does not appreciably alter the properties of the hydrogel packing and is sufficiently gentle to maintain the viability and motility of the cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, as we showed in our previous work Bhattacharjee et al., 2021, this process does not appreciably alter the properties of the hydrogel packing and is sufficiently gentle to maintain the viability and motility of the cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the experimental method supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "4622297f-0582-4d88-ab75-e163ea116e76",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C88",
+      "claim": "The confocal images only show the actively moving cells near the leading edge of each propagating front because it is exposed to sufficient oxygen for the GFP to properly fold.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that because our experiments probe fluorescence from GFP-expressing cells, the confocal images only show the actively moving cells near the leading edge of each propagating front because it is exposed to sufficient oxygen for the GFP to properly fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "bce67f71-84f8-4631-a567-1dcc21590023",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C89",
+      "claim": "Under oxygen-depleted conditions, the GFP expressed by the cells does not properly fold, and the cells lose fluorescence over approximately 30 minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "As these cells move outward, they continually consume nutrient and oxygen\u2014eventually causing the trailing 'inner' region of the population to become oxygen-depleted, as shown in our previous work (Bhattacharjee et al., 2021). Under these conditions, we conjecture that the GFP expressed by the cells does not properly fold, and the cells lose fluorescence over \u223c30 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conjecture based on observations and previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "c20edf4f-c95d-46da-94c6-a6e8bfb6da0e",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C91",
+      "claim": "E. coli consume L-serine first.",
+      "claim_type": "EXPLICIT",
+      "source": "E. coli consume this amino acid first (Yang et al., 2015) and respond to it most strongly as a chemoattractant compared to other components of the media (Wong et al., 2014; Mesibov and Adler, 1972; Adler, 1966; Menolascina et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about E. coli behavior supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "260b85fb-2404-48fa-8ac7-257899be3d1e",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C92",
+      "claim": "E. coli respond to L-serine most strongly as a chemoattractant compared to other components of the media.",
+      "claim_type": "EXPLICIT",
+      "source": "E. coli consume this amino acid first (Yang et al., 2015) and respond to it most strongly as a chemoattractant compared to other components of the media (Wong et al., 2014; Mesibov and Adler, 1972; Adler, 1966; Menolascina et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about E. coli behavior supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "26db8b87-a1a7-4888-aa5a-5b09f8bb404a",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C100",
+      "claim": "The pore space is too small to fit multiple cells side-by-side in the experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, our porous media are highly confining; the pore sizes are <8 \u03bcm, comparable to the size of a single-cell body (length \u223c2 \u03bcm and width \u223c0.5 \u03bcm) and its flagella (length \u223c5 \u03bcm), in all cases. Hence, because the pore space is too small to fit multiple cells side-by-side, cell-cell interactions are necessarily restricted to end-on interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "7e31bb89-5ceb-4865-b717-6abe03973193",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C101",
+      "claim": "Cell-cell interactions are necessarily restricted to end-on interactions in the experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, because the pore space is too small to fit multiple cells side-by-side, cell-cell interactions are necessarily restricted to end-on interactions. We directly confirmed this phenomenon experimentally in our prior study (Bhattacharjee et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental system supported by a citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "99673503-ddff-4e3a-a98e-6330da678358",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C103",
+      "claim": "Radial and out-of-plane effects do not need to be considered to capture the essential features of bacterial front formation and migration.",
+      "claim_type": "EXPLICIT",
+      "source": "While the experimental geometry is three dimensional, in previous work (Bhattacharjee et al., 2021), we found that radial and out-of-plane effects do not need to be considered to capture the essential features of bacterial front formation and migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from previous work by the authors that justifies the 2D modeling approach.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "bd46a8b8-c004-4754-9656-65bbba79934c",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "claim_id": "C108",
+      "claim": "Smoothing appears to be robust to large changes in the environmental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Smoothing therefore appears to be robust to large changes in the environmental conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the parameter exploration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "052ea4b6-94f9-43b4-be53-a5d3915a2d8c",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Bacterial populations autonomously smooth out large-scale perturbations in their morphology during collective migration. The smoothing dynamics are regulated by both the undulation wavelength and the ease with which cells migrate through the porous medium.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C33, and C37 are directly supported by experimental observations shown in Figures 1C-E and Videos 1-3, which demonstrate autonomous smoothing of undulated fronts. The quantitative analysis in Figure 1F-G shows exponential decay of undulation amplitude and systematic dependence on wavelength and pore size, providing strong empirical support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "b4c09e0c-6793-4bed-9ea5-a252731dc526",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Chemotaxis in response to a self-generated nutrient gradient is both necessary and sufficient for front smoothing and provides the driving force for collective migration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13 and C53 are supported by systematic knockout simulations (Figure 3) showing that removing chemotaxis abolishes smoothing, while removing diffusion or proliferation does not. This demonstrates necessity and sufficiency through computational elimination experiments with clear phenotypic outcomes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "4e628ba3-245c-4c80-b5c4-db08cfd8f91f",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The smoothing mechanism arises from spatial variations in the chemotactic response function: cells at peaks experience higher nutrient concentrations that saturate their receptors, weakening their chemotactic response compared to cells in valleys, causing valleys to migrate faster and smooth the front.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C14, C15, C68, and C69 are supported by detailed analysis of simulation data (Figure 4) showing spatial variations in nutrient concentration, chemotactic response function, and resulting velocity differences. The mechanistic explanation is validated by quantitative agreement between predicted catch-up times and measured smoothing times (Figure 4D).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "33ceb05f-47c3-43e0-bee8-7c930e52561f",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Variations in the local nutrient gradient along the leading edge oppose smoothing by promoting faster migration at peaks, but variations in the chemotactic response function dominate and drive smoothing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56 and C60 are supported by analysis in Figure 4C showing that while the nutrient gradient is stronger at peaks (destabilizing), the chemotactic response is weaker at peaks due to receptor saturation (stabilizing), and the response variation dominates. This is a key mechanistic insight distinguishing two competing effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "b0fb0bd7-9c0d-4316-b703-d485b822dc24",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The continuum Keller-Segel model recapitulates the essential spatio-temporal features of smoothing observed in experiments, with simulated fronts showing remarkably similar behavior including exponential decay of undulation amplitude.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40, C41, and C42 are supported by qualitative and quantitative comparison between experiments (Figure 1) and simulations (Figure 2). The model captures front formation, migration, smoothing dynamics, and exponential amplitude decay with smoothing times agreeing within a factor of ~3, demonstrating good model validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "0c683936-60ec-405c-a37b-9ac950d60a9a",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "High nutrient concentrations saturate cell-surface receptors, causing the chemotactic response function to decrease with nutrient concentration. Nutrient concentrations are higher at peaks than valleys, resulting in weaker chemotactic response at peaks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57, C58, and C59 are supported by established receptor saturation kinetics (C57 is general knowledge), direct observation of nutrient fields in simulations (Figure 4A showing higher concentration at peaks), and quantitative measurement of response function values (Figure 4B). The logical chain is well-established.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "deb719f7-e5ec-4e72-a024-173abd8480dc",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "This work provides an explanation for front smoothing as a population-scale consequence of cellular signal transduction limitations, highlighting the pivotal role of the chemotactic response function in regulating population morphology and contributing a new factor for morphogenesis studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66, C78, C79, and C80 represent valid conclusions drawn from the mechanistic findings. The work successfully explains a previously unexamined phenomenon (C65) through a novel mechanism linking individual cell sensing limitations to population-level morphological stability, representing a significant conceptual contribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "df3f2027-1353-4a92-b491-f3d65304d020",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The smoothing mechanism is distinct from diffusion, which is too slow to drive the observed smoothing on experimental timescales.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C70 is supported by quantitative estimates showing diffusive smoothing timescales (~100-700 hr) are orders of magnitude longer than observed smoothing times (~0.2-8 hr), and by knockout simulations (Figure 3A) showing smoothing persists without diffusion. This effectively rules out diffusion as the primary mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "2d12cde0-7435-4941-bc68-00593be68c91",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The 3D printing platform in hydrogel-based porous media provides a unique experimental system to tune perturbation shape and cellular migration hindrance while maintaining nutrient field uniformity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67, C16-C19 describe the experimental methodology supported by Figure 1A-B and citations to previous validation work. The system's key features (tunable pore size without altering nutrient field, ability to print defined morphologies) are well-established in prior publications and enable the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "5fbff5b0-2d8e-4fc8-aedc-8f57dcad27e9",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The 3D printing process (~10 seconds per cylinder) is two orders of magnitude faster than the imaging interval (~10 minutes), enabling the initial perturbation to be treated as instantaneous relative to migration dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21 and C22 provide important methodological validation showing the printing timescale is sufficiently fast to not confound the migration measurements. The two-order-of-magnitude separation provides adequate temporal resolution for tracking front dynamics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "7faa2280-58ce-4272-8d41-f641ab78871a",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "E. coli 3D-printed in straight cylinders migrate radially outward in smooth fronts via chemotaxis driven by self-generated nutrient gradients. After an initial slow spreading phase hindered by cell-cell collisions, the periphery organizes into a ~300 \u03bcm-wide front that collectively migrates outward.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C32 describe baseline behavior from previous work (C28-C30 cite prior studies) and current observations (C31-C32 from Figure 1C). These establish the unperturbed reference state against which smoothing is measured and are well-supported by both prior validation and current data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "8c634b09-8c88-4c4a-9d7d-4f5d44ad36d5",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Variants of the Keller-Segel model successfully capture key features of chemotactic migration of flat E. coli fronts in both bulk liquid and porous media.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38 and C39 are statements about prior work supported by appropriate citations. These establish the foundation for applying the model to the current problem of undulated fronts and are well-documented in the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "d24411cd-0195-4ec4-8e55-a3f02fc5d729",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Differential proliferation typically destabilizes bacterial communities rather than stabilizing them.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C49 is a statement about prior work supported by multiple citations. This provides important context for ruling out differential proliferation as a smoothing mechanism and is well-established in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "2d53c423-3a91-47b9-9426-e4ca25fb6bd8",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The requirement for a concave sensing function that saturates at high stimulus levels is satisfied for diverse active matter systems including bacteria, enzymes, amoeba, and mammalian cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C75 is supported by extensive citations to prior work demonstrating sensing saturation in various systems. This establishes the potential generalizability of the smoothing mechanism beyond E. coli, though experimental validation in other systems would strengthen this claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "1e4d98a0-8f9f-46c9-a016-70876a331b01",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Smoothing appears robust to large changes in environmental conditions based on parameter exploration varying initial nutrient concentration, sensing limits, and migration parameters over orders of magnitude.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C108 is supported by simulations exploring parameter space (mentioned in text and shown in supplementary figures). The robustness analysis strengthens confidence that smoothing is a general phenomenon, though the claim appropriately uses cautious language ('appears to be').",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "01e2be83-137e-49e0-b938-19db3e3cfd22",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The experimental medium consists of specific components at defined volume fractions, resulting in swollen hydrogel particles of 5-10 \u03bcm diameter with 40-100 nm mesh size that allows free diffusion of small molecules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C84 provide detailed methodological information about medium preparation and characterization. These are supported by citations to previous characterization work and represent standard materials methods documentation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "ccb1f5ec-60d2-4c31-8ecf-502766e56c4e",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The 3D printing process does not appreciably alter hydrogel packing properties and maintains cell viability and motility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C87 is supported by citation to previous validation work. This is an important methodological control ensuring the printing process itself does not confound the biological measurements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "31026bcf-d67b-4ac8-b65a-9489eb8d0111",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Confocal images show only actively moving cells near the leading edge because they are exposed to sufficient oxygen for GFP folding, while cells in oxygen-depleted inner regions lose fluorescence over ~30 minutes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88 and C89 explain the imaging observations, with C88 being a direct observation and C89 being a reasonable conjecture supported by prior work on oxygen depletion. This clarifies what the fluorescence images represent and is important for data interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "c7e82101-5ac8-4794-8ded-eedd5a7bf546",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "E. coli consume L-serine first and respond to it most strongly as a chemoattractant compared to other media components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91 and C92 are statements about E. coli behavior supported by multiple citations. This justifies focusing on L-serine as the primary nutrient and chemoattractant in the model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "4dba99ce-3739-4ec3-a715-bf892bc1eaca",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The pore space is too small to fit multiple cells side-by-side, restricting cell-cell interactions to end-on interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100 and C101 describe geometric constraints of the experimental system supported by size comparisons and citation to prior direct observation. This justifies the simplified treatment of cell-cell interactions in the model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "03df1aea-b3f9-4ff1-beed-b2bec0e865f8",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Radial and out-of-plane effects do not need to be considered to capture essential features of bacterial front formation and migration, justifying the 2D modeling approach.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C103 is supported by citation to previous work validating the 2D approximation. This is an important modeling assumption that simplifies the computational approach while maintaining essential physics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "1b4cf8be-a54e-4dcd-aee8-36854ae0742d",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Collective migration is important for various functions, can be disrupted by external or internal perturbations through various mechanisms, but mechanisms by which populations withstand perturbations have been scarcely examined, particularly the robustness of chemotactic front morphology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C4-C12, and C65 provide background context and identify the knowledge gap addressed by this study. These are well-supported by extensive citations and accurately characterize the state of the field, establishing the motivation for the work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    },
+    {
+      "id": "606f2100-db5e-465b-be80-5733b48879ed",
+      "content_id": "f99dbc15-4c73-4b79-854c-4712db328b1b",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "The chemotactic smoothing process is autonomous, arising without external intervention.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C77 is a valid characterization of the phenomenon observed in experiments and simulations. The smoothing occurs spontaneously in response to the initial perturbation without any external manipulation, distinguishing it from externally controlled processes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:36:23.662806Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d15a4c3b-713c-46af-923e-26d1d766edcc",
+      "result_id": "052ea4b6-94f9-43b4-be53-a5d3915a2d8c"
+    },
+    {
+      "claim_id": "df2a268d-d0c8-4739-9006-dcb04444a3c7",
+      "result_id": "052ea4b6-94f9-43b4-be53-a5d3915a2d8c"
+    },
+    {
+      "claim_id": "9a0565f2-749c-4e92-a765-8362c74e7df0",
+      "result_id": "052ea4b6-94f9-43b4-be53-a5d3915a2d8c"
+    },
+    {
+      "claim_id": "f925a3ef-f67b-401d-9f0c-a22d411fbc67",
+      "result_id": "b4c09e0c-6793-4bed-9ea5-a252731dc526"
+    },
+    {
+      "claim_id": "5f466677-15ad-42f1-ac40-0a3aab8252cc",
+      "result_id": "b4c09e0c-6793-4bed-9ea5-a252731dc526"
+    },
+    {
+      "claim_id": "6bad799f-f45f-4cd1-a7ed-2350f59c32ca",
+      "result_id": "4e628ba3-245c-4c80-b5c4-db08cfd8f91f"
+    },
+    {
+      "claim_id": "3454aba0-9535-41d2-b33f-ae9570633e0e",
+      "result_id": "4e628ba3-245c-4c80-b5c4-db08cfd8f91f"
+    },
+    {
+      "claim_id": "9dd1a7ff-ad90-444f-8083-6072f5f6a830",
+      "result_id": "4e628ba3-245c-4c80-b5c4-db08cfd8f91f"
+    },
+    {
+      "claim_id": "6b604cd9-adb8-4df0-8078-69ce39c7eebc",
+      "result_id": "4e628ba3-245c-4c80-b5c4-db08cfd8f91f"
+    },
+    {
+      "claim_id": "ef5d547c-0f75-43de-8988-9f16888fafce",
+      "result_id": "4e628ba3-245c-4c80-b5c4-db08cfd8f91f"
+    },
+    {
+      "claim_id": "76577e32-6fe8-42b7-8ab8-cb3c16d7ae4c",
+      "result_id": "33ceb05f-47c3-43e0-bee8-7c930e52561f"
+    },
+    {
+      "claim_id": "e898c001-a6a0-4663-9fde-8bdc9f361310",
+      "result_id": "33ceb05f-47c3-43e0-bee8-7c930e52561f"
+    },
+    {
+      "claim_id": "d6cd466f-a89d-47d2-8d66-ea4a5f9471cb",
+      "result_id": "b0fb0bd7-9c0d-4316-b703-d485b822dc24"
+    },
+    {
+      "claim_id": "39b877fe-652d-42e6-963c-ade6749325db",
+      "result_id": "b0fb0bd7-9c0d-4316-b703-d485b822dc24"
+    },
+    {
+      "claim_id": "7ba1c5ab-0761-45a0-ba9b-3dbb5445bd3a",
+      "result_id": "b0fb0bd7-9c0d-4316-b703-d485b822dc24"
+    },
+    {
+      "claim_id": "08cae862-01d5-4c46-80ed-50bf10b1f206",
+      "result_id": "0c683936-60ec-405c-a37b-9ac950d60a9a"
+    },
+    {
+      "claim_id": "d1b92c52-43f7-4272-a8a8-0410f6922677",
+      "result_id": "0c683936-60ec-405c-a37b-9ac950d60a9a"
+    },
+    {
+      "claim_id": "99b6e101-5c13-4f3b-84c2-9934ca4c734c",
+      "result_id": "0c683936-60ec-405c-a37b-9ac950d60a9a"
+    },
+    {
+      "claim_id": "0c4e3080-1e8a-4dc6-9874-08a6f408df2f",
+      "result_id": "deb719f7-e5ec-4e72-a024-173abd8480dc"
+    },
+    {
+      "claim_id": "407db69d-ea20-47df-be3a-0256be77ce43",
+      "result_id": "deb719f7-e5ec-4e72-a024-173abd8480dc"
+    },
+    {
+      "claim_id": "1f0b007c-c8fc-44d5-b337-6f575bfdba5c",
+      "result_id": "deb719f7-e5ec-4e72-a024-173abd8480dc"
+    },
+    {
+      "claim_id": "86612d37-aeb1-4efe-a776-96c8784fb421",
+      "result_id": "deb719f7-e5ec-4e72-a024-173abd8480dc"
+    },
+    {
+      "claim_id": "5e35e085-15d4-4e6a-b215-f7bdc13a84c9",
+      "result_id": "df3f2027-1353-4a92-b491-f3d65304d020"
+    },
+    {
+      "claim_id": "33c2352e-1af3-46d6-9e06-4d19dad07d8e",
+      "result_id": "2d12cde0-7435-4941-bc68-00593be68c91"
+    },
+    {
+      "claim_id": "9e18db50-f641-496b-9ae5-b7ca8389550f",
+      "result_id": "2d12cde0-7435-4941-bc68-00593be68c91"
+    },
+    {
+      "claim_id": "5a136cae-4bc3-4323-ba41-80c3201fd427",
+      "result_id": "2d12cde0-7435-4941-bc68-00593be68c91"
+    },
+    {
+      "claim_id": "ba1e116e-558f-42ec-ac2c-f6c6a495ac14",
+      "result_id": "2d12cde0-7435-4941-bc68-00593be68c91"
+    },
+    {
+      "claim_id": "747c0a1b-6d2d-47ce-bd7d-014359fb7892",
+      "result_id": "2d12cde0-7435-4941-bc68-00593be68c91"
+    },
+    {
+      "claim_id": "772218d0-c90e-4a1d-a6b8-2d74fdb404bb",
+      "result_id": "5fbff5b0-2d8e-4fc8-aedc-8f57dcad27e9"
+    },
+    {
+      "claim_id": "2a061f7f-72e5-497d-a333-908cf8432b12",
+      "result_id": "5fbff5b0-2d8e-4fc8-aedc-8f57dcad27e9"
+    },
+    {
+      "claim_id": "6212c25c-622c-4170-bb21-34dc1af449ff",
+      "result_id": "7faa2280-58ce-4272-8d41-f641ab78871a"
+    },
+    {
+      "claim_id": "44fc0b27-5bc3-402b-a60f-e7d4f812e54d",
+      "result_id": "7faa2280-58ce-4272-8d41-f641ab78871a"
+    },
+    {
+      "claim_id": "11e26dc8-9d76-47a2-9844-7a1a91291ad6",
+      "result_id": "7faa2280-58ce-4272-8d41-f641ab78871a"
+    },
+    {
+      "claim_id": "6725c3f6-9a4c-41ae-a160-256a91c0055b",
+      "result_id": "7faa2280-58ce-4272-8d41-f641ab78871a"
+    },
+    {
+      "claim_id": "86ae9b61-9639-4886-9c2a-79cbd99c0a53",
+      "result_id": "7faa2280-58ce-4272-8d41-f641ab78871a"
+    },
+    {
+      "claim_id": "e888bb1b-dddb-4a9d-9244-0803cf09ec4d",
+      "result_id": "8c634b09-8c88-4c4a-9d7d-4f5d44ad36d5"
+    },
+    {
+      "claim_id": "57b93514-3556-4bcf-925a-aff96a66da70",
+      "result_id": "8c634b09-8c88-4c4a-9d7d-4f5d44ad36d5"
+    },
+    {
+      "claim_id": "8fe7cb7e-0f55-47d2-9c8c-d0ae04a8433a",
+      "result_id": "d24411cd-0195-4ec4-8e55-a3f02fc5d729"
+    },
+    {
+      "claim_id": "cc567164-f4c5-44ec-9603-71155d65867d",
+      "result_id": "2d53c423-3a91-47b9-9426-e4ca25fb6bd8"
+    },
+    {
+      "claim_id": "bd46a8b8-c004-4754-9656-65bbba79934c",
+      "result_id": "1e4d98a0-8f9f-46c9-a016-70876a331b01"
+    },
+    {
+      "claim_id": "736e2174-a9f6-45a3-96a8-9efb3110d3da",
+      "result_id": "01e2be83-137e-49e0-b938-19db3e3cfd22"
+    },
+    {
+      "claim_id": "2a64b57a-6243-4f24-95b9-97e9883d6d19",
+      "result_id": "01e2be83-137e-49e0-b938-19db3e3cfd22"
+    },
+    {
+      "claim_id": "9ab1632b-7914-4816-8fc8-5367f5ff9eb3",
+      "result_id": "01e2be83-137e-49e0-b938-19db3e3cfd22"
+    },
+    {
+      "claim_id": "3fa57d2a-4b90-42f5-858f-c56a8f9cfb28",
+      "result_id": "01e2be83-137e-49e0-b938-19db3e3cfd22"
+    },
+    {
+      "claim_id": "c4d82bb0-7212-4027-aea0-422c83a2d540",
+      "result_id": "ccb1f5ec-60d2-4c31-8ecf-502766e56c4e"
+    },
+    {
+      "claim_id": "4622297f-0582-4d88-ab75-e163ea116e76",
+      "result_id": "31026bcf-d67b-4ac8-b65a-9489eb8d0111"
+    },
+    {
+      "claim_id": "bce67f71-84f8-4631-a567-1dcc21590023",
+      "result_id": "31026bcf-d67b-4ac8-b65a-9489eb8d0111"
+    },
+    {
+      "claim_id": "c20edf4f-c95d-46da-94c6-a6e8bfb6da0e",
+      "result_id": "c7e82101-5ac8-4794-8ded-eedd5a7bf546"
+    },
+    {
+      "claim_id": "260b85fb-2404-48fa-8ac7-257899be3d1e",
+      "result_id": "c7e82101-5ac8-4794-8ded-eedd5a7bf546"
+    },
+    {
+      "claim_id": "26db8b87-a1a7-4888-aa5a-5b09f8bb404a",
+      "result_id": "4dba99ce-3739-4ec3-a715-bf892bc1eaca"
+    },
+    {
+      "claim_id": "7e31bb89-5ceb-4865-b717-6abe03973193",
+      "result_id": "4dba99ce-3739-4ec3-a715-bf892bc1eaca"
+    },
+    {
+      "claim_id": "99673503-ddff-4e3a-a98e-6330da678358",
+      "result_id": "03df1aea-b3f9-4ff1-beed-b2bec0e865f8"
+    },
+    {
+      "claim_id": "f5366dd4-5e3e-4631-a7f1-e8958c28fd96",
+      "result_id": "1b4cf8be-a54e-4dcd-aee8-36854ae0742d"
+    },
+    {
+      "claim_id": "27bf2434-fd1b-4ddc-ad82-cf6be28e309a",
+      "result_id": "1b4cf8be-a54e-4dcd-aee8-36854ae0742d"
+    },
+    {
+      "claim_id": "c317368c-386b-492d-81f5-1591775c9cfa",
+      "result_id": "1b4cf8be-a54e-4dcd-aee8-36854ae0742d"
+    },
+    {
+      "claim_id": "2beb52fc-9271-4082-a24b-065b6d09faad",
+      "result_id": "1b4cf8be-a54e-4dcd-aee8-36854ae0742d"
+    },
+    {
+      "claim_id": "e61d760f-7567-4312-b0a0-e4cfebddf411",
+      "result_id": "1b4cf8be-a54e-4dcd-aee8-36854ae0742d"
+    },
+    {
+      "claim_id": "ac07d8d8-4886-48ac-8c40-df2c95740e42",
+      "result_id": "1b4cf8be-a54e-4dcd-aee8-36854ae0742d"
+    },
+    {
+      "claim_id": "df6bdc51-3d76-4fe4-87d5-3ee8a02a7be3",
+      "result_id": "1b4cf8be-a54e-4dcd-aee8-36854ae0742d"
+    },
+    {
+      "claim_id": "fad9a27e-1e8a-47c6-8257-098e5a94711d",
+      "result_id": "1b4cf8be-a54e-4dcd-aee8-36854ae0742d"
+    },
+    {
+      "claim_id": "52ba74fc-18c7-4bf9-8243-c0145ac7e416",
+      "result_id": "1b4cf8be-a54e-4dcd-aee8-36854ae0742d"
+    },
+    {
+      "claim_id": "5ea131a2-f114-441c-91f0-88b0d90c344f",
+      "result_id": "1b4cf8be-a54e-4dcd-aee8-36854ae0742d"
+    },
+    {
+      "claim_id": "d3d5264c-21a6-4335-a39e-2c55c7d23a6a",
+      "result_id": "1b4cf8be-a54e-4dcd-aee8-36854ae0742d"
+    },
+    {
+      "claim_id": "fdb6a0ff-0042-453a-bcc7-a97fcedd8dac",
+      "result_id": "606f2100-db5e-465b-be80-5733b48879ed"
+    }
+  ],
+  "comparisons": []
+}

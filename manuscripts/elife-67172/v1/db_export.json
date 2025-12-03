@@ -1,0 +1,1391 @@
+{
+  "submission": {
+    "id": "04ed4161-91da-49f3-a1cf-d47762ffd4e3",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T04:30:42.780730Z",
+    "updated_at": "2025-12-03T04:30:42.780730Z"
+  },
+  "content": [
+    {
+      "id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "submission_id": "04ed4161-91da-49f3-a1cf-d47762ffd4e3",
+      "content_type": "manuscript",
+      "content_text": "# Signaling levels mold the RAS mutation tropism of urethane\n\n## Authors\n\n- Siqi Li<sup>1</sup>\n- Christopher M Counter<sup>1</sup> ([ORCID: 0000-0003-0748-3079](https://orcid.org/0000-0003-0748-3079)) \u2020\n\n### Affiliations\n\n1. Pharmacology and Cancer Biology, Duke University Durham United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nRAS genes are commonly mutated in human cancer. Despite many possible mutations, individual cancer types often have a \u2018tropism\u2019 towards a specific subset of RAS mutations. As driver mutations, these patterns ostensibly originate from normal cells. High oncogenic RAS activity causes oncogenic stress and different oncogenic mutations can impart different levels of activity, suggesting a relationship between oncoprotein activity and RAS mutation tropism. Here, we show that changing rare codons to common in the murine Kras gene to increase protein expression shifts tumors induced by the carcinogen urethane from arising from canonical Q61 to biochemically less active G12 Kras driver mutations, despite the carcinogen still being biased towards generating Q61 mutations. Conversely, inactivating the tumor suppressor p53 to blunt oncogenic stress partially reversed this effect, restoring Q61 mutations. One interpretation of these findings is that the RAS mutation tropism of urethane arises from selection in normal cells for specific mutations that impart a narrow window of signaling that promotes proliferation without causing oncogenic stress.\n\n## Introduction\n\nThe RAS genes are mutated in a fifth or more of human cancers (Prior et al., 2020), which is well established to be tumorigenic (Pylayeva-Gupta et al., 2011). There are three individual RAS genes in humans, KRAS, NRAS, and HRAS, three primary sites mutated in human cancers, G12, G13, and Q61, and six possible amino acid substitutions at each site arising from a point mutation. As such, there are 54 possible oncogenic point mutations, not including rare non-canonical mutations (Hobbs et al., 2016). Mapping these mutations to human cancers reveals a distinct pattern or \u2018tropism\u2019 in which individual cancer types are characterized by specific RAS mutations (Li et al., 2018). The same can be said for other oncogenes. For example, the most frequent EGFR point mutation in glioblastoma is G598V/A, but L861Q in lung adenocarcinoma; the most frequent IDH1 mutation in low-grade glioma is R132H, but R132C in melanoma, and so on (Chang et al., 2016). While these mutational biases are well described, the mechanism responsible is not.\n\nOne hint to the mechanism underlying RAS mutation tropism is that oncogenic RAS mutations are thought to occur early. Focusing on lung cancer, in humans oncogenic KRAS mutations have been detected in premalignant lesions (Kanda et al., 2012) as well as in multiple regions within the same tumor (Zhang et al., 2014a), indicative of an early origin (Wistuba and Gazdar, 2006). In mice, oncogenic Kras mutations are capable of initiating tumors in carcinogen (McCreery and Balmain, 2017) and genetically engineered (Kwon and Berns, 2013) lung cancer models. As early driver mutations, it follows that RAS mutation tropism is a reflection of the normal cells in which the mutation first occurred. By its very classification, oncogenic RAS can induce proliferation (Pylayeva-Gupta et al., 2011). However, high oncogenic signaling through the MAPK effector pathway of RAS can paradoxically induce an oncogenic stress response in normal cells mediated by the tumor suppressors p16 and p53, which leads to the growth arrest termed senescence (Mu\u00f1oz-Esp\u00edn and Serrano, 2014). Indeed, hyperactivation of MAPK signaling via the combination of KrasG12V, BrafD631A, and loss of the remaining wildtype Braf allele activated p53 and impeded lung tumorigenesis, an effect rescued by pharmacological inhibition of the MAPK pathway (Nieto et al., 2017).\n\nAccumulating evidence suggests that different oncogenic mutations can be biochemically distinct (Mu\u00f1oz-Maldonado et al., 2019; Smith et al., 2013). Relevant to this study, a G12D mutation sterically inhibits the catalytic cleft (Parker et al., 2018) while Q61R replaces the catalytic amino acid (Buhrman et al., 2010). A direct comparison of G12D and Q61R mutations in Nras revealed that the former has lower GTP loading and tumorigenic potential in the skin (Burd et al., 2014) and hematopoietic system (Kong et al., 2016). Indeed, a panel of G12/13 Kras mutants introduced by Cas9-mediated gene editing in the lung revealed widely different tumorigenic potentials between different mutants (Winters et al., 2017). Taken together, we hypothesize that the level of oncogenic signaling may dictate the type of mutation conducive to initiate tumorigenesis in a normal cell, and hence play a role in RAS mutation tropism.\n\nOne challenge to testing this hypothesis is trying to backtrack to catch a single, ostensibly random mutagenic event in one gene from one normal cell, decades before manifesting as cancer in humans. However, in mice the moment of tumor initiation can be precisely defined as the point of carcinogen exposure, with the added benefit that carcinogens mimic the spontaneous nature of human cancers. Carcinogenesis is also an ideal model of RAS mutation tropism. Case in point, the carcinogen urethane found in fermented foods and alcoholic products (Gowd et al., 2018) primarily induces pulmonary tumors with a very specific KrasQ61L or KrasQ61R driver mutation, depending on the strain (Dwyer-Nield et al., 2010). These oncogenic mutations are also a strong match to the mutation signature of this carcinogen. Urethane-induced mutations conform to the A>T/G consensus sequence derived from comprehensive whole-exome sequencing urethane-induced tumors (Westcott et al., 2015), and the even more restricted CAN>CT/GN sequence determined shortly after urethane exposure by different ultra-sensitive sequencing approaches (Li et al., 2020; Valentine et al., 2020). Such mutations at position CA182A give rise to the Q61L/R oncogenic mutations characteristic of this carcinogen. We thus capitalized on this extreme bias of urethane for KrasQ61L/R-mutant pulmonary tumors to genetically elucidate the effect of oncogenic signaling levels on RAS mutation tropism.\n\nTo explore the effect of oncogenic signaling levels on the selection of initiating oncogenic mutations, we genetically enhanced Kras translation to increase oncogenic activity or inactivated p53 to inhibit the cellular response to oncogenic stress in mice exposed to urethane. In regards to the first genetic change, we compared the native Krasnat allele that is naturally enriched in rare codons and correspondingly poorly translated (Lampson et al., 2013) to the Krasex3op allele, in which 27 rare codons in exon 3 (which is not the site of oncogenic mutations) were converted to common, leading to roughly twice as much Kras protein in the lungs or derived cells of mice (Pershing et al., 2015). In regards to the second genetic change, we evaluated retaining or conditionally inactivating the Trp53 gene specifically in the lung, which has been shown to suppress oncogenic stress due to high mutant Kras expression in this tissue in vivo (Feldser et al., 2010; Junttila et al., 2010). Using this approach, we show here that the canonical Q61L/R mutations are selected against in the more highly expressed Krasex3op allele in urethane-induced tumors, even though the carcinogen favors this mutation. Instead, biochemically less active G12 mutations are detected, which, upon the loss of p53, partially shifts back to Q61L/R mutations. p53 loss also promoted the expansion of the normally rare G12 mutants in the Krasnat allele, which was accompanied by an imbalance between the mutant and wildtype transcripts suggestive of higher expression. Moreover, tumors characterized by Q61 mutations or the less active G12 mutants when coupled with allelic imbalance exhibited similar transcript levels of three genes known to be activated by oncogenic RAS, suggesting a similar degree of oncogenic signaling. Taken together, these data support a narrow window of signaling conducive to initiate tumorigenesis in a normal cell. Namely, that imparted by the more active Q61 mutations in Krasnat allele or less active G12 mutations in the higher expressed Krasex3op allele. p53 loss reprograms this mutation tropism, allowing more active mutations Q61L/R in the Krasex3op allele as well as promoting or permitting allelic imbalance of less active G12 mutations in the Krasnat allele to now induce tumorigenesis. Selection for an oncogenic mutation imparting an optimal level of signaling in normal cells thus appears to influence the RAS mutation tropism of urethane.\n\n## Results\n\n### The Krasex3op allele is more tumorigenic in the absence of p53\n\nTo explore the effect of oncogenic signaling levels on the selection of initiating oncogenic mutations, we genetically inactivated p53 to inhibit the cellular response to oncogenic stress or enhanced Kras translation to increase oncogenic activity in mice exposed to urethane. With regards to the first genetic manipulation, we crossed SftpcCreER/CreER;Trp53flox/flox mice into a background with two native Kras alleles (Krasnat/nat) or with one (Krasnat/ex3op) or two (Krasex3op/ex3op) copies of the aforementioned Krasex3op allele in which rare codons were altered to common in exon 3 (Pershing et al., 2015). The SftpcCreER/CreER;Trp53flox/flox genotype was chosen as injection of tamoxifen into such mice leads to recombination and inactivation of the endogenous Trp53flox alleles in the type II alveolar cells of the lung (Xu et al., 2012), which is reported to suppress oncogene-induced senescence/apoptosis induced by oncogenic Kras in this organ (Feldser et al., 2010; Junttila et al., 2010). With regards to the second genetic manipulation, the Krasex3op allele was chosen as a way to increase Kras protein expression of the native gene while leaving the rest of the locus almost entirely intact (Pershing et al., 2015). Cohorts of 21\u201330 mice from each of these three genotypes were injected with tamoxifen to inactive the Trp53 gene in the lung, followed by exposure to urethane via a single intraperitoneal injection to induce Kras mutations. One year later these mice were humanely euthanized, the number and size of tumors determined at necropsy (Figure 1A and Supplementary file 1), and the tumors removed and recombination of the Trp53flox alleles confirmed by PCR (Figure 1\u2014figure supplement 1A and Supplementary file 1). As a first step, we simply examined the effect of p53 loss on tumorigenesis when Kras expression was altered. In sharp contrast to the previous findings that the Krasex3op allele reduced urethane carcinogenesis (Pershing et al., 2015), the loss of p53 instead increased tumor burden in mice with at least one Krasex3op allele (Figure 1B), similar to what was observed in a whole\u00a0animal\u00a0Cdkn2a null background (Pershing et al., 2015). This appeared to be a product of more tumors (Figure 1C), with a trend towards larger tumors (Figure 1D) that reached statistical significance when the data were censored for large (\u2265100 mm3) tumors (Figure 1E). There was also a trend when the genotypes were subdivided into one or two Krasex3op alleles compared to the Krasnat/nat background, although no difference was observed between Krasnat/ex3op versus Krasex3op/ex3op genotypes (Figure 1\u2014figure supplement 1B\u2013E). This suggests that in the absence of p53 the Krasex3op allele promotes both the initiation and progression of urethane-induced lung tumors, consistent with p53 suppressing oncogene toxicity to allow oncogenic mutations in the Krasex3op allele to exert a more potent signal to drive tumorigenesis.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/67172/elife-67172-fig1-v1.jpg)\n\n**Figure 1.:** (A) Experimental design to evaluate the effect of inactivating p53 specifically in the lung on urethane carcinogenesis upon increase in\u00a0Kras expression. (B\u2013D) Mean \u00b1 SEM of urethane-induced tumor (B) burden, (C) multiplicity, and (D) size in tamoxifen-treated SftpcCreER/CreER;Trp53fl/fl mice in a homozygous native (B, C:\u00a0n\u00a0=\u00a030 mice; D: n\u00a0=\u00a011 tumors) and heterozygous or homozygous (B, C: n\u00a0=\u00a051 mice; D: n\u00a0=\u00a042 tumors) ex3op Kras background. Mann\u2013Whitney test. (E) % of tumors \u2265 (gray bar) or < (white bar) 100 mm3 in tamoxifen-treated SftpcCreER/CreER;Trp53fl/fl mice in Krasnat/nat (n\u00a0=\u00a011 tumors), Krasex3op/nat (n\u00a0=\u00a025 tumors), or Krasex3op/ex3op (n\u00a0=\u00a017 tumors) backgrounds after urethane exposure. Two-sided Fisher\u2019s exact test.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67172/elife-67172-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) PCR analysis of the status of the Trp53flox allele in DNA isolated from lung tumors in SftpcCreER/CreER;Trp53fl/fl;Krasex3op/nat (T1,\u00a0T3) or SftpcCreER/CreER;Trp53fl/fl;Krasex3op/exeop (T2) mice treated (+) or not treated (-) with tamoxifen\u00a0(Tam). NC: no DNA control. (B, C, E) Mean \u00b1 SEM of urethane-induced tumor (B) burden, (C) multiplicity, and (E) size in tamoxifen-treated SftpcCreER/CreER;Trp53fl/fl mice in a homozygous native (B, C:\u00a0n\u00a0=\u00a030 mice; E: n\u00a0=\u00a011 tumors), heterozygous (B, C: n\u00a0=\u00a030 mice; E: n\u00a0=\u00a025 tumors), and homozygous (B, C: n\u00a0=\u00a021 mice; E: n\u00a0=\u00a017 tumors) ex3op Kras backgrounds. Dunn's multiple comparison test following Kruskal\u2013Wallis test. (D) % of mice with (gray bar) or without (white bar) a tumor in tamoxifen-treated SftpcCreER/CreER;Trp53fl/fl mice in Krasnat/nat (n\u00a0=\u00a030 mice), Krasex3op/nat (n\u00a0=\u00a030 mice), or Krasex3op/ex3op (n\u00a0=\u00a021 mice) backgrounds after urethane exposure. Two-sided Fisher\u2019s exact test.\n\n### Loss of p53 reprograms the extreme RAS mutation tropism of urethane\n\nTo specifically address the effect of genetically inactivating the Trp53 gene on the type of oncogenic mutations arising in the native Krasnat versus the codon-optimized Krasex3op alleles in tumors induced by urethane, we compared the Kras mutation status in tumors from the above SftpcCreER/CreER;Trp53flox/flox;Krasnat/ex3op mice injected with tamoxifen (termed Trp53-/-), as the heterozygous status of the Krasnat/ex3op background allows for the most direct comparison, to tumors from a parallel control cohort not injected with tamoxifen (termed Trp53+/+) prior to urethane exposure (Figure 2A and Supplementary file 1). As mentioned above, the Trp53flox alleles were confirmed by PCR to be recombined in tumors from the Trp53-/- background. The same analysis was thus performed on tumors from the Trp53+/+ cohort, which identified one tumor having a significant degree of\u00a0Trp53flox recombination, which was excluded from the analysis of comparing Trp53+/+ versus Trp53-/- mice (Figure 2\u2014figure supplement 1A). Consistent with the role of p53 as a tumor suppressor during lung tumor progression (Feldser et al., 2010; Junttila et al., 2010), loss of p53 tracked with larger, although we\u00a0note\u00a0not with\u00a0more tumors (Figure 2B, Figure 2\u2014figure supplement 1B,\u00a0C). To examine the effect of p53 deficiency on the RAS mutation tropism of urethane, we sequenced Kras derived from mRNA isolated from these lung tumors to screen for mutations at the three main hotspots of G12, G13, and Q61. In complete agreement with the previous observation that the increased protein expression of the endogenous Krasex3op allele shifts the RAS mutation tropism of urethane from the canonical Q61 to G12 oncogenic mutations (Pershing et al., 2015), tumors with an oncogenic mutation in the Krasex3op allele from control Trp53+/+ mice similarly had G12 oncogenic mutations in this allele (Figure 2C). Having established that urethane behaves identically as previously reported in this regard, we turned our attention to the types of mutations recovered in the Krasex3op allele from the urethane-induced tumors of the Trp53-/- mice. Sequencing revealed that 40% hotspot oncogenic mutations in the Krasex3op allele were now detected at Q61 (Figure 2C). These findings are consistent with the loss of p53 partially shifting the oncogenic mutations in the Krasex3op allele detected in tumors back to the canonical Q61 mutations of urethane.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/67172/elife-67172-fig2-v1.jpg)\n\n**Figure 2.:** (A) Experimental design to obtain urethane-induced lung tumors from p53+/+ mice. (B) Mean \u00b1 SEM of urethane-induced tumor size in SftpcCreER/CreER;Trp53fl/fl;Krasex3op/nat mice not treated (p53+/+, n\u00a0=\u00a016 tumors) or treated with tamoxifen (p53-/-, n\u00a0=\u00a025 tumors). Mann\u2013Whitney test. (C) % of urethane-induced tumors with an oncogenic mutation at codon G12/13 (white bar) versus Q61 (gray bar) in the Krasnat versus Krasex3op allele in SftpcCreER/CreER;Trp53fl/fl;Krasex3op/nat mice not treated (p53+/+) or treated with tamoxifen (p53-/-) where indicated. n\u00a0=\u00a04 tumors ex3op p53+/+, 5 tumors nat p53-/-, and 10 tumors ex3op p53-/-. Two-sided Fisher\u2019s exact test.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67172/elife-67172-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Proportion of recombined p53 allele and wildtype allele in tumors from mice not treated with tamoxifen by qPCR. (B,\u00a0C) Mean\u2009\u00b1\u2009SEM tumor (B) burden and (C) multiplicity of SftpcCreER/CreER;Trp53fl/fl;Krasex3op/nat mice not treated (p53+/+, n\u00a0=\u00a017 mice) or treated (p53-/-, n\u00a0=\u00a030 mice) with tamoxifen. Mann\u2013Whitney test.\n\n### The mutation signature of urethane is not affected by the Krasex3op allele\n\nTo determine if the shift in oncogenic mutations from Q61 in the Krasnat allele to G12 in the Krasex3op allele, and then back again in the Trp53-/- background, resides at the level of the locus or with the amount of encoded protein, we determined whether urethane induces different mutations in these two alleles. To this end, we turned to the ultra-sensitive maximum depth sequencing (MDS) assay (Jee et al., 2016), which we adapted for the mammalian genome to detect urethane-induced mutations within days of carcinogen exposure (Li et al., 2020). Since only a short region of genomic DNA can be sequenced by this approach, it is not possible to track oncogenic mutations in exon 1 or 2 and also determine the identity of the Kras allele (native versus ex3op) based on the codon usage in exon 3. Thus, we compared mutations arising in the Krasnat/nat versus Krasex3op/ex3op genotype. To ensure potent mutagenesis for detection purposes, these two strains were crossed into the pure 129 background, which is particularly sensitive to urethane (Malkinson and Beer, 1983; Shimkin and Stoner, 1975), and mice were injected three times instead of just once as above with either the vehicle PBS or urethane. Seven days later, before overt cell selection (Li et al., 2020), the mice were humanely euthanized and their lungs removed and subjected to MDS sequencing to determine both the mutation signature and the type of Kras driver mutations induced by urethane (Figure 3A and Supplementary file 2). Mutation frequencies based on MDS sequencing of Kras exons 1 and 2 were averaged for A>T transversions, log10 transformed, and displayed in a heatmap format. This revealed a trend towards A>T transversions within the context of a 5\u2032 C in both the native and ex3op alleles of Kras specifically in urethane-exposed mice (Figure 3B), consistent with previously identified bias for urethane (Li et al., 2020; Valentine et al., 2020; Westcott et al., 2015). Moreover, the frequency of these CA>CT mutations, which give rise to Q61L (CA182A>CTA), is significantly higher than GG>GA mutations, which give rise to G12D (GG35T>GAT) and G13D (GG38C>GAC), in both Krasnat/nat and Krasex3op/ex3op mice (Figure 3C). Similar results were found upon repeating the experiment with a single injection of urethane in the less sensitive 129/B6 mixed strain background using SftpcCreER/CreER;Trp53flox/flox;Krasnat/nat versus SftpcCreER/CreER;Trp53flox/flox;Krasex3op/ex3op mice treated or not with tamoxifen (Figure 3\u2014figure supplement 1A). The only exception was that far fewer CA>CT mutations were detected in general, and perhaps as a consequence, the difference between the frequency of CA>CT and GG>GA mutations was no longer significant, although GG>GA mutations were detected in both the urethane and PBS cohorts, suggesting false positives, although other interpretations are possible (Figure 3\u2014figure supplement 1B,\u00a0C). Thus, with the above proviso, urethane mutagenesis does not appear to be changed at the Krasex3op locus, at least within the detection limit of the MDS assay. These and the above findings support a model whereby the observed bias towards G12/13-driver mutation in the Krasex3op allele in urethane-induced tumors is a product of negative selection against the biochemically more active Q61 oncogenic mutations, rather than a change in the mutational spectrum of urethane.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/67172/elife-67172-fig3-v1.jpg)\n\n**Figure 3.:** (A) Experimental design to identify mutations induced by urethane in mouse lung in a Krasnat versus Krasex3op background. (B) Heatmap of the log-transformed mutation frequency (MF) of A>T transversions determined by maximum depth sequencing\u00a0(MDS) sequencing the exons 1 and 2 of Kras from the lungs of mice exposed to urethane (UR) in a Krasnat/nat (nat) (n\u00a0=\u00a03 mice) versus Krasex3op/ex3op (ex3op) (n\u00a0=\u00a03 mice) background. Nucleotide number as well as the 5\u2032 and 3\u2032 base of the substituted A are shown at the top; \u2018-\u2019 indicates nucleotides upstream of ATG start codon in 5\u2032UTR; \u2018111+\u2019 indicates nucleotides in the intron downstream of exon 1. (C) Mean \u00b1 SEM mutation frequency of all CA>CT mutations in Kras exon 2, with Q61L mutation highlighted in red, as well as all GG>GA mutations in Kras exon 1, with G12D and G13D mutations highlighted in red, derived from the aforementioned MDS sequencing of Kras exons 1 and 2 from the lungs of Krasnat/nat versus Krasex3op/ex3op mice treated with either urethane or PBS (n\u00a0=\u00a03 mice each). Holm\u2013Sidak multiple comparisons test following one-way ANOVA.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67172/elife-67172-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Heatmap of the log-transformed mutation frequency (MF) determined by maximum depth sequencing\u00a0(MDS) sequencing the exons 1 and 2 of Kras from the lungs of mice treated (+) or not treated with tamoxifen (-), exposed to urethane (UR) or PBS, in a SftpcCreER/CreER;Trp53fl/fl;Krasnat/nat (nat) or SftpcCreER/CreER;Trp53fl/fl;Krasex3op/ex3op (ex3op) background (n\u00a0=\u00a03 mice) for each A>T transversions (nucleotide number as well as the 5\u2032 and 3\u2032 base of the substituted A are shown at the top, \u2018-\u2019 indicates nucleotides upstream of ATG start codon in 5\u2032UTR, \u2018111+\u2019 indicates nucleotides in the intron downstream of exon 1). (B,\u00a0C) Mean \u00b1 SEM mutation frequency of all CA>CT mutations in Kras exon 2, including Q61L mutation highlighted in red, as well as all GG>GA mutations in Kras exon 1, including G12D and G13D mutations highlighted in red, derived from MDS sequencing of Kras exons 1 and 2 from the lungs of SftpcCreER/CreER;Trp53fl/fl;Krasnat/nat versus SftpcCreER/CreER;Trp53fl/fl;Krasex3op/ex3op mice (B) not treated or (C) treated with tamoxifen and exposed to either urethane (UR)\u00a0or PBS (n\u00a0=\u00a03 mice). (B) Holm\u2013Sidak multiple comparisons test following one-way ANOVA. (C) Dunn\u2019s multiple comparison test following Kruskal\u2013Wallis test.\n\n### p53 loss tracks with an mRNA allelic imbalance of less active oncogenic mutations\n\nNot only was there a shift in the oncogenic mutations in the Krasex3op allele upon the loss of p53, as noted above, but surprisingly also in the Krasnat allele. In more detail, we found that 60% hotspot mutations in the Krasnat allele of urethane-induced tumors from the SftpcCreER/CreER;Trp53flox/flox; Krasnat/ex3op mice in which the Trp53 gene was recombined in the lung occurred at codon G12, and in one case also G13 (Figure 2C). We also note that the percentage of tumors that have Kras hotspot mutations is higher in p53-/- mice (Figure 4\u2014figure supplement 1A). In addition, even though oncogenic mutations are generally more frequent in the Krasex3op allele, the percentage of tumors with mutations in the Krasnat allele is higher in p53-/- mice (Figure 4\u2014figure supplement 1B). One interpretation of these findings is that the absence of p53 enhances the ability of G12/13 mutations to be productive. Given the above tight relationship between Kras expression and mutation type, we explored a possible relationship between p53 loss and higher expression of Kras alleles with a G12/13 mutation. To this end, we calculated the ratio of mutant to wildtype (non-mutant) Kras mRNA based on the number of cDNA sequencing reads matched to the mutant or wildtype allele from the above analysis. This revealed a clear demarcation in Kras mRNA levels between alleles with a Q61 versus a G12/13 oncogenic mutation. In detail, a waterfall plot revealed the mutant:wildtype ratio was higher in G12/13-mutant Kras alleles, with an average ratio of\u00a0approximately\u00a0two copies for the mutant Kras transcript to every copy of wildtype Kras counterpart. Conversely, the mutant:wildtype ratio was lower in Q61-mutant Kras alleles, with an average ratio of\u00a0~0.8 copies for the mutant Kras transcript to each copy of wildtype Kras counterpart (Figure 4A, Figure 4\u2014figure supplement 1C,\u00a0D). The allelic imbalance in the G12/13-mutant tumors appears to be important for tumorigenesis. Namely, cross-referencing the mutant:wildtype Kras ratio to the mutation type and size of tumors revealed that G12/13-mutant tumors with a mutant:wildtype ratio\u00a0\u22651.5 are larger, reaching the same size of Q61-mutant tumors (Figure 4B). These findings support a model whereby Kras with less active G12/13 oncogenic mutations undergo a selection for higher expression to compensate for the lower signaling, while, if anything, the reverse was seen for the more active Q61 oncogenic mutations.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/67172/elife-67172-fig4-v1.jpg)\n\n**Figure 4.:** (A) Log10-transformed ratio of mutant to wildtype Kras mRNA determined by RT-qPCR in all Kras hotspot-mutant tumors (n\u00a0=\u00a040) derived from Figures 1 and 2. (B) Mean \u00b1 SEM size of tumors with a G12/13 oncogenic Kras mutation with a high (>1.5, n\u00a0=\u00a012 tumors) versus low (\u22641.5, n\u00a0=\u00a012 tumors) mutant:WT ratio versus tumors with a Q61 oncogenic Kras mutation (n\u00a0=\u00a016 tumors). Dunn's multiple comparison test following Kruskal\u2013Wallis test. (C\u2013H) Mean \u00b1 SEM levels of the indicated mRNAs normalized to \u03b2-actin (relative expression) in (C\u2013E) tumors with a G12/13 oncogenic Kras mutation with a high (>1.5, n\u00a0=\u00a012 tumors) versus low (\u22641.5, n\u00a0=\u00a012 tumors) mutant:WT ratio versus tumors with a Q61 oncogenic Kras mutation (n\u00a0=\u00a016 tumors) or (F\u2013H) tumors from SftpcCreER/CreER;Trp53fl/fl;Krasex3op/nat mice not treated (p53+/+, n\u00a0=\u00a05 tumors) or treated with tamoxifen (p53-/-, n\u00a0=\u00a015 tumors) partitioned by p53 mutation status. (C\u2013E) Dunn's multiple comparison test following Kruskal\u2013Wallis test. (F\u2013H) Mann\u2013Whitney test.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67172/elife-67172-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) % of tumors with an oncogenic mutation at Kras hotspot (white bar) versus other tumors (gray bar) from SftpcCreER/CreER;Trp53fl/fl;Krasex3op/nat mice not treated (p53+/+, n\u00a0=\u00a016 tumors) or treated (p53-/-, n\u00a0=\u00a025 tumors) with tamoxifen. Two-sided Fisher\u2019s exact test. (B) % of tumors with Kras hotspot mutations occurring in the native (white bar) or ex3op (gray bar) allele from SftpcCreER/CreER;Trp53fl/fl;Krasex3op/nat mice not treated (p53+/+, n\u00a0=\u00a05 tumors) or treated (p53-/-, n\u00a0=\u00a015 tumors) with tamoxifen. Two-sided Fisher\u2019s exact test. (C) Log10-transformed ratio of mutant to wildtype Kras mRNA determined by RT-qPCR in all Kras hotspot-mutant tumors (n\u00a0=\u00a040 tumors) derived from Figures 1 and 2. Asterisk indicates tumor 757T1 with a p53 deficiency. (D) Mean\u2009\u00b1\u2009SEM ratio of mutant to wildtype Kras mRNA in tumors with G12/13 (n\u00a0=\u00a024 tumors) and Q61 (n\u00a0=\u00a016 tumors) mutations. (E\u2013G) Correlation between the levels of the indicated mRNAs normalized to \u03b2-actin (relative expression) and the ratio of mutant to wildtype Kras mRNA. Rho and p values are from Spearman correlation analysis. Mann\u2013Whitney test. (H) Mean\u2009\u00b1\u2009SEM ratio of G12/13 mutant Krasex3op to wildtype Krasnat mRNA in tumors from SftpcCreER/CreER;Trp53fl/fl;Krasex3op/nat mice not treated (p53+/+, n\u00a0=\u00a04 tumors) or treated with tamoxifen (p53-/-, n\u00a0=\u00a07 tumors). Mann\u2013Whitney test. (I\u2013K) Mean\u2009\u00b1\u2009SEM levels of the indicated mRNAs normalized to \u03b2-actin (relative expression) for tumors that are\u00a0<1 (n\u00a0=\u00a09 tumors), 1\u201350 (n\u00a0=\u00a012 tumors), 50\u2013100 (n\u00a0=\u00a09 tumors), and\u00a0>100 (n\u00a0=\u00a010 tumors) mm3. Dunn's multiple comparison test following Kruskal\u2013Wallis test.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/67172/elife-67172-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Top: copy number of the mutant or wildtype allele in tumors from SftpcCreER/CreER;Trp53fl/fl;Krasex3op/nat mice estimated by qPCR copy number assay (Tert as reference gene). Mutant type and the allele with mutation are indicated. Bottom: the ratio of mutant to wildtype Kras mRNA and ID of the tumors listed in the top graph. Data shown are mean\u2009\u00b1\u2009SEM of two technical replicates. (B) Correlation between the mRNA ratio and genomic DNA (gDNA)\u00a0ratio of mutant to wildtype Kras allele. Rho and p values are from Spearman correlation analysis.\n\n### Allelic mRNA imbalance of G12/13-mutant Kras alleles tracks with expression of three Ras target genes\n\nTo explore the possibility of a selection for a specific degree of signaling, we determined the expression of the genes Dusp6, Egr1, and Fosl1 by measuring the levels of encoded mRNA by qRT-PCR. These three genes were chosen as they are all activated by oncogenic RAS through the MAPK pathway (Buffet et al., 2017; Chung et al., 2017; Esnault et al., 2017; Gillies et al., 2017; Kidger and Keyse, 2016; McMahon and Monroe, 1995; Swarbrick et al., 2008; Unni et al., 2018; Vallejo et al., 2017a; Vallejo et al., 2017b; Zhang et al., 2010), which is the very pathway promoting proliferation (Drosten and Barbacid, 2020; Hymowitz and Malek, 2018; Ryan et al., 2015) or senescence (Mu\u00f1oz-Esp\u00edn and Serrano, 2014). Binning the relative expression of these three genes into Kras G12/13-mutant tumors with a high (>1.5) versus low (\u22641.5) mutant:wildtype ratio revealed that Kras G12/13-mutant tumors with a high ratio exhibited higher expression. Furthermore, when we compared the relative expression of these three genes in Kras Q61-mutant tumors, Dusp6 and Egr1 were expressed higher compared to the Kras G12/13-mutant tumors with a low ratio (Figure 4C\u2013E). Plotting the relative expression of these three genes versus the mutant:wildtype cDNA ratio of individual tumors showed that increased expression correlated with the allelic ratio for G12/13 mutations (Figure 4\u2014figure supplement 1E\u2013G). One interpretation of these results is that an increase in expression of the G12/13-mutant Kras alleles, as measured by a high mutant:wildtype ratio, manifests as an increase in Ras signaling, as measured by an increase in Dusp6, Egr1, and Fosl1 mRNA, matching that achieved by the more potent Q61-mutated Kras alleles. To assess the effect of p53 on this relationship, we compared Dusp6, Egr1, and Fosl1 expression between tumors with and without p53. This revealed higher expression of all three genes in the latter tumors, consistent with the loss of p53 permitting higher Ras signaling (Figure 4F\u2013H). p53 loss\u00a0also tracked with a higher mutant:wildtype allelic ratio in tumors with Kras G12/13-mutations in the Krasex3op allele (Figure 4\u2014figure supplement 1H). Finally, we compared Dusp6, Egr1, and Fosl1 mRNA levels in tumors of different sizes, which revealed higher expression in larger tumors, regardless of how this\u00a0was achieved (Figure 4\u2014figure supplement 1I\u2013K). This suggests that the absence of p53 expands the spectrum of driver Kras mutations to include less active mutations by permitting or even fostering an increase in their expression. In sum, we suggest that collectively these findings are consistent with the identification of specific oncogenic mutations in different Kras and p53 backgrounds, and favor a model whereby an optimal oncogenic signal selects the type of oncogenic mutation to initiate tumorigenesis in a normal cell.\n\n## Discussion\n\nHere, we show that p53 loss reprograms the RAS mutation tropism of urethane. On one hand, loss of this tumor suppressor shifts the canonical Q61 oncogenic mutations that are normally detected in the unperturbed Krasnat allele of urethane-induced tumors towards the usually rare G12/13 mutations, but in conjunction with an increase in the mutant:wildtype ratio. On the other hand, the loss of p53 shifts the prevalence of G12/13 mutations in the codon-optimized and more highly translated Krasex3op allele towards Q61 mutations. The one common theme in both these shifts is the potential for higher oncogenic signaling, which argues that the degree of oncogenic signaling dictates the type of mutation conducive to initiate tumorigenesis in normal cells (Figure 5). In agreement, the expression of three known RAS downstream target genes was similar between Krasex3op with Q61 mutations and Krasnat with G12/13 mutations when coupled with a high mutant:wildtype ratio, suggesting that expression differences render Q61 and G12/13 mutations fungible. While there is no question that the level of oncogenic signaling can influence tumorigenesis, what is new here is that the sensitivity of normal cells to oncogenic signaling may underlie the type of oncogenic mutation selected, which is relevant to the RAS mutation tropism of human cancers. We also note that neither the loss of p53 nor the change in codon usage in Kras altered the mutation signature of urethane, arguing that a selection for an optimal oncogenic signal supersedes the mutational bias of this carcinogen. Such a finding speaks to the somewhat complexing discordance often observed between the mutation signature of tumors and the corresponding driver mutation in human cancers (Dietlein et al., 2020; Temko et al., 2018), even in cancers in which the mutational signature can be ascribed to a specific mutagenic process (Buisson et al., 2019).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/67172/elife-67172-fig5-v1.jpg)\n\n**Figure 5.:** Signaling from a G12D mutation in the native (nat) Kras allele and from a Q61R mutation in the codon-optimized (ex3op) Kras allele is\u00a0outside of the window of optimal signaling level achieved by Krasnat(G12D) and Krasex3op(Q61R). Loss of p53 alleviates the selection against oncogenic stress and allows the recovery of a Q61R mutation in Krasex3op allele or a G12D mutation in the Krasnat allele with elevated mutant:wildtype (mut:wt) mRNA allelic ratio.\n\nThere are three presumptions to the above model (Figure 5). First, Q61 oncogenic mutations in Kras activate the MAPK pathway more potently than G12/13 mutations. In agreement, a Q61R mutation in Nras and/or Kras has a much (1000 times) slower intrinsic hydrolysis rate, higher GTP-loading, and more robust activation of the MAPK pathway, and when activated in the skin or hematopoietic system in vivo, is more tumorigenic than the corresponding G12D mutation (Burd et al., 2014; Kong et al., 2016; Pershing et al., 2015). We also find that the expression of three downstream Ras target genes is higher in tumors with a Q61 mutation compared to G12/13 mutation in the absence of an allelic mRNA imbalance. One caveat, however, is that neither the level of the oncoproteins nor their signaling was\u00a0directly measured at the protein level as the small amount of tumor material available was devoted to DNA/RNA analysis. Second, increasing Kras level increases signaling. In agreement, the Krasex3op allele has been documented to express more protein in the lung (Pershing et al., 2015) and increase ERK phosphorylation in hematopoietic stem cells (Sasine et al., 2018). Altering rare codons to common in ectopic or endogenous human KRAS also leads to higher translation, KRAS protein expression, and/or MAPK activation (Ali et al., 2017; Fu et al., 2018; Lampson et al., 2013; Pershing et al., 2015; Peterson et al., 2020). It remains possible, however, that rare codons are differentially translated (Quax et al., 2015) or higher Kras protein expression reduces MAPK signaling through negative feedback (Shin et al., 2009) specifically in the cell\u00a0of\u00a0origin of these pulmonary tumors. We also note the caveats that only three downstream target genes were assayed, and at the transcriptional rather than protein level, and further, that these three genes reside in just one effector pathway of RAS. Third, high oncogenic signaling is a negative selection, and this selection is p53-dependent. It is formally possible that the effect of p53 loss on the mutational bias of urethane is linked to cell fate or other factors instead of suppressing oncogene stress, but this would have to occur very quickly since urethane exposure shortly followed tamoxifen injection. We also note that oncogenic stress and p53 induction could not be measured in individual normal cells immediately after acquiring different oncogenic mutations by urethane mutagenesis, but both these points are well supported in multiple model systems (Mu\u00f1oz-Esp\u00edn and Serrano, 2014). As such, it is reasonable to propose that the level of oncogenic signaling is a driving force in the selection of the type of oncogenic Kras mutations initiating tumorigenesis (Figure 5). Capturing signaling in individual normal cells by single-cell transcriptomics immediately after induction of different oncogenic Kras mutations may provide a platform to interrogate this model. Further, application of CRISPR-Cas9-based barcoding tools that allow simultaneous lineage tracing and transcriptome analysis of individual cells within a tumor (Bowling et al., 2020; Quinn et al., 2021) could provide a clearer picture of the signaling dynamics throughout the course of tumor evolution.\n\nWe note that urethane has a bias towards CAN\u2019CT/GN mutations that are absent in both strand orientations at codons encoding G12 and G13, and the mutagenic signature of urethane was the same in the Krasnat and Krasex3op alleles. This suggests that G12/13 oncogenic mutations are extremely rare, with urethane either inducing these mutations directly at a low frequency or inducing a cooperating mutation or non-mutational event that promotes a rare, pre-existing Kras-mutant cell to expand. In either scenario, the very fact that tumors arise with G12/13 oncogenic mutations argues for potent selection of an extremely rare oncogenic mutation over the far more common mutations favored by the carcinogen. Furthermore, if these mutations are indeed pre-existing, such a finding elevates the importance of promotional events (secondary mutations, inflammation, etc.) in the process of tumor initiation (Balmain, 2020). Perhaps related, it is interesting that the loss of p53 did not shift all the oncogenic mutations in Krasex3op from G12 to Q61, which is unexpected given the rarity of G12 mutations induced by urethane. One interpretation is that oncogenic G12 mutations may be superior to Q61 mutations in some manner, which is interesting insofar as G12 mutations are more common in KRAS than Q61 mutations in human cancers (Prior et al., 2020).\n\nWe also note an imbalance in the mRNA ratio of the mutant:wildtype Kras alleles in some urethane-induced tumors. Amplification of oncogenic Kras alleles has been previously documented in various mouse cancer backgrounds (Chung et al., 2017; Mueller et al., 2018; Westcott et al., 2015). What is new, however, is that this tracked with the type of oncogenic mutation, and even more interesting, in opposite directions. Namely, we observed a bias towards a high mutant:wildtype mRNA ratio in G12/13-mutant Kras alleles in the absence of p53. Few tumors show amplification of the G12/13-mutant allele based on genomic copy number analysis (Figure 4\u2014figure supplement 2), pointing towards transcriptional or post-transcriptional mechanisms. One interpretation of these findings is that loss of p53 allows expansion of tumors with G12/13-mutant Kras alleles that are more highly expressed, an observation borne out by signaling analysis. Increasing MAPK signaling by paradoxical activation with a BRAF inhibitor expands the number of cell types that are tumorigenic upon activation of the LSL-KrasG12D allele in the lung (Cicchini et al., 2017), hence it is quite possible that a similar phenomenon is at play here as well. Such higher expression could be a product of natural variation of gene expression, a mutation caused by urethane, or p53 loss itself.\n\nWe also observed a bias towards a low mutant:wildtype mRNA ratio in Q61-mutant Kras alleles. Such a finding is consistent with this mutation inducing high oncogenic signaling, and hence a selection against increased expression. Interestingly, this ratio was low irrespective of the p53 status. Perhaps there is an upper limit to oncogenic signaling, even in the absence of p53, that is tumor-promoting. In support, we note that G12/13-mutant tumors with a high mutant:wildtype mRNA ratio had the same Ras signaling output as Q61-mutant tumors, at least as assessed by the expression level of the three tested genes downstream of Ras. Indeed, RAS-mutant human tumors, which often have disruption of p53 and other tumor suppressors, typically do not have BRAF or EGFR mutations and vice versa outside of drug resistance settings (Cancer Genome Atlas Research Network et al., 2018). Moreover, co-expressing oncogenic RAS with oncogenic BRAF or EGFR can be growth suppressive (Cisowski et al., 2016; Unni et al., 2018).\n\nIn conclusion, multiple independent lines of investigation support a model whereby the sensitivity of a normal cell to a narrow range of oncogenic signaling dictates the nature of the mutation conducive to tumor initiation. Too low, a mutation fails to induce proliferation, as supported by the finding that less active G12 mutants are rarely recovered in the Krasnat allele unless accompanied by an allelic imbalance permitted or fostered by the absence of p53. Too high, a mutation induces arrest, as supported by the finding that more active Q61 mutants are not recovered from the more highly expressed Krasex3op allele unless oncogene-induced senescence is suppressed by the loss of p53 (Figure 5). Moreover, this selection pressure exceeds the mutational bias of the mutagen, as supported by the observations that G12 mutations fail to match the urethane mutational signature, yet nevertheless arise at a high frequency in urethane-induced tumors in a Krasex3op background. Such findings speak to the extreme mutational bias of urethane-induced tumors, and perhaps more broadly, provide mechanistic insight into the RAS mutation tropism observed in human cancers.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>129 background - Krasex3op</td>\n      <td>Pershing et al., 2015, MMRRC</td>\n      <td>Stock 050601-UNC; MGI:5708830</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>B6.129 mixed background -Trp53flox/flox</td>\n      <td>The Jackson Laboratory</td>\n      <td>Stock 008462; MGI:1931011</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>B6.129 mixed background -SftpcCreER/CreER</td>\n      <td>Xu et al., 2012, gift from Mark Onaitis</td>\n      <td>MGI:5305340</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>B6.129 mixed background - SftpcCreER/CreER;Trp53flox/flox;Krasex3op</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td>See Materials and methods section \u2018Mice\u2019</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Krasex3op genotyping F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>TGGTAGGGTAGAAACTAGGATTC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Krasex3op genotyping R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GAGTACACAGAGAGACCATTTCAAC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Trp53 genotyping F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>CACAAAAAACAGGTTAAACCCA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Trp53 genotyping WT R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>AGCACATAGGAGGCAGAGAC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Trp53 genotyping Del R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GAAGACAGAAAAGGGGAGGG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Sftpc genotyping F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GCTTCACAGGGTCGGTAG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Sftpc genotyping R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GAGGCACCGCTCCGCGAG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Sftpc genotyping CreER R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>CAACTCACAACGTGGCACTG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Tumor sequencing primers</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>Supplementary file 3</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>qPCR primers</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>Supplementary file 3</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>MDS assay primers</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>Supplementary file 3</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Proteinase K</td>\n      <td>New England Biolabs</td>\n      <td>Cat# P8107S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>RNase A</td>\n      <td>Sigma</td>\n      <td>Cat# R4642</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>EcoRV</td>\n      <td>New England Biolabs</td>\n      <td>Cat# R3195</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>EcoRI</td>\n      <td>New England Biolabs</td>\n      <td>Cat# R3101</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>XmnI</td>\n      <td>New England Biolabs</td>\n      <td>Cat# R0194</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Exonuclease I</td>\n      <td>New England Biolabs</td>\n      <td>Cat# M0293</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>iScript cDNA synthesis kit</td>\n      <td>Bio-Rad</td>\n      <td>Cat# 1708890</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Platinum Taq Polymerase</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# 10966083</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>QIAquick PCR Purification Kit</td>\n      <td>Qiagen</td>\n      <td>Cat# 28104</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Q5 Hot Start High-Fidelity DNA Polymerase</td>\n      <td>New England Biolabs</td>\n      <td>Cat# M0493</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Agencourt AMPure XP</td>\n      <td>Beckman Coulter</td>\n      <td>Cat# A63880</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>iTaq Universal SYBR Green Supermix</td>\n      <td>Bio-Rad</td>\n      <td>Cat# 1725120</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>PrimeTime Gene Expression Master Mix</td>\n      <td>Integrated DNA Technologies</td>\n      <td>Cat# 1055770</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Tamoxifen</td>\n      <td>Sigma</td>\n      <td>Cat# T5648</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Corn oil</td>\n      <td>Sigma</td>\n      <td>Cat# C8267</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Urethane</td>\n      <td>Sigma</td>\n      <td>Cat# U2500</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>RLT buffer</td>\n      <td>Qiagen</td>\n      <td>Cat# 79216</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>\u03b2-Mercaptoethanol</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# 21985023</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Trizol LS</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# 10296010</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>dNTP</td>\n      <td>New England Biolabs</td>\n      <td>Cat# N0447S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Agarose</td>\n      <td>EMD Millipore</td>\n      <td>Cat# 2120-OP</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Tris</td>\n      <td>EMD Millipore</td>\n      <td>Cat# 9210-OP</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>EDTA</td>\n      <td>VWR</td>\n      <td>Cat# 97061\u2013406</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Sodium dodecyl sulfate</td>\n      <td>Sigma</td>\n      <td>Cat# L4509</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Phenol</td>\n      <td>Sigma</td>\n      <td>Cat# P1037</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Chloroform</td>\n      <td>Macron Fine Chemicals</td>\n      <td>Cat# 4440-04</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Ethanol</td>\n      <td>VWR</td>\n      <td>Cat# 89125-190</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>10X exonuclease I buffer</td>\n      <td>New England Biolabs</td>\n      <td>Cat# B0293S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Sodium chloride</td>\n      <td>EMD Millipore</td>\n      <td>Cat# SX0420</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Potassium chloride</td>\n      <td>VWR</td>\n      <td>Cat# BDH0258</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Potassium phosphate monobasic</td>\n      <td>Sigma</td>\n      <td>Cat# 795488</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Sodium phosphate dibasic</td>\n      <td>Sigma</td>\n      <td>Cat# RDD022</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>fastq-join</td>\n      <td>https://usegalaxy.org/</td>\n      <td>Galaxy Version 1.1.2\u2013806.1</td>\n      <td>See Materials and methods section \u2018Sequencing data analysis\u2019</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Filter by Quality</td>\n      <td>https://usegalaxy.org/</td>\n      <td>Galaxy Version 1.0.0</td>\n      <td>See Materials and methods section \u2018Sequencing data analysis\u2019</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Trim</td>\n      <td>https://usegalaxy.org/</td>\n      <td>Galaxy Version 0.0.1</td>\n      <td>See Materials and methods section \u2018Sequencing data analysis\u2019</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Filter sequences by length</td>\n      <td>https://usegalaxy.org/</td>\n      <td>Galaxy Version 1.1</td>\n      <td>See Materials and methods section \u2018Analysis of MDS data\u2019</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Group</td>\n      <td>https://usegalaxy.org/</td>\n      <td>Galaxy Version 2.1.4</td>\n      <td>See Materials and methods section \u2018Sequencing data analysis\u2019</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Barcode Splitter</td>\n      <td>https://usegalaxy.org/</td>\n      <td>Galaxy Version 1.0.0</td>\n      <td>See Materials and methods sections \u2018Sequencing data analysis\u2019 and \u2018Analysis of MDS data\u2019</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PEAR pair-end read merger</td>\n      <td>Zhang et al., 2014b</td>\n      <td>Version 0.9.8</td>\n      <td>https://cme.h-its.org/exelixis/web/software/pear/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Morpheus</td>\n      <td>https://software.broadinstitute.org/morpheus</td>\n      <td>N/A</td>\n      <td>Generation of heatmaps</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Prism</td>\n      <td>GraphPad</td>\n      <td>Version 6</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Mice\n\nKrasex3op mice were previously described (Pershing et al., 2015), Trp53flox/flox mice (Marino et al., 2000) were purchased from The Jackson Laboratory (Jax # 008462), and SftpcCreER/CreER mice (Xu et al., 2012) were kindly provided by Mark Onaitis (University of California at San Diego). SftpcCreER/CreER;Trp53flox/flox; Krasex3op mice were from a mixed 129 \u00d7 C57BL/6 background. Krasex3op mice used for mutagenesis studies were from a pure 129 background. Mice were genotyped using the following primers:\n\nKras native and ex3op alleles:\n\nSftpcCreER allele:\n\nTrp53 allele:\n\nAll animal experiments were approved by Duke IACUC.\n\n### Tumor experiments\n\nA 20 mg/ml tamoxifen (Sigma T5648) solution was made by dissolving tamoxifen in corn oil. Six- to eight-week-old mice of the indicated genotypes were injected intraperitoneally with 0.25 mg/g body weight tamoxifen every other day for four doses. Urethane (Sigma U2500) was dissolved in PBS and injected intraperitoneally at dose of 1 mg/g body weight 1 week after the last injection of tamoxifen.\u00a0Approximately\u00a012 months after urethane injection, all mice were humanely euthanized, after which lung tumors were counted, measured, and microdissected for RNA and DNA extraction. The 12-month time point was chosen based on similar previous studies (Dwyer-Nield et al., 2010; Gurley et al., 2015; Miller et al., 2003; You et al., 1989) but also to take into account a potentially longer tumor latency in the mixed 129 \u00d7 C57BL/6 background (Malkinson and Beer, 1983; Shimkin and Stoner, 1975). Tumor volume was calculated as \u00bd (length \u00d7 width2). Tumor burden was calculated as the sum of tumor volumes.\n\n### Mutagenesis experiments\n\nSix- to eight-week-old Krasnat/nat or Krasex3op/ex3op mice were intraperitoneally injected daily for 3\u00a0days with either urethane or PBS as above. These mice were humanely euthanized 1 week later, and the lungs collected for the extraction of genomic DNA. Alternatively, 6-\u00a0to\u00a08-week-old SftpcCreER/CreER;Trp53flox/flox;Krasnat/nat or SftpcCreER/CreER;Trp53flox/flox;Krasex3op/ex3op mice were or were not injected intraperitoneally with 0.25 mg/g body weight tamoxifen every other day for four doses. One week after the last injection of tamoxifen, the same mice were intraperitoneally injected with one dose of either urethane or PBS. The mice were humanely euthanized 1 month later, and the lungs collected for the extraction of genomic DNA.\n\n### RNA and DNA extraction\n\nTumors or normal lung tissues were lysed in RLT buffer (Qiagen 79216) with 1% \u03b2-mercaptoethanol (Thermo Fisher Scientific 21985023) and 5\u00a0units/ml proteinase K (New England Biolabs P8107S) at 55\u00b0C for 30 min. RNA and DNA were then extracted from the lysate using Trizol LS (Thermo Fisher Scientific 10296010) following the manufacturer's instructions. RNA was subsequently converted to cDNA using iScript cDNA synthesis kit (Bio-Rad 1708890) following the manufacturer's instructions.\n\n### PCR and sequence analysis of tumors\n\nKras exons 1\u20133 were\u00a0amplified from the cDNA of tumor or normal lung tissue using nested PCR. Primers are listed in Supplementary file 3. PCR reactions were as follows:\n\n#### PCR1\n\n1 \u03bcl cDNA, 0.5 \u03bcl of 10 \u03bcM forward primer and 0.5 \u03bcl reverse primer, 2 \u03bcl of 2.5 mM dNTP (New England Biolabs N0447S), 0.75 \u03bcl of 50 mM MgCl2, 2 \u03bcl of 5X buffer, and 0.1 \u03bcl Platinum Taq Polymerase (Thermo Fisher Scientific 10966083) in a total volume of 25 \u03bcl. PCR cycles were as follows: one cycle at 94\u00b0C for 2 min and 25 cycles at 94\u00b0C for 30 s, 56\u00b0C for 30 s, and\u00a072\u00b0C for 30 s.\n\n#### PCR2\n\n2.5 \u03bcl of PCR1 reaction, 0.5 \u03bcl of 10 \u03bcM forward primer and 0.5 \u03bcl reverse primer, 2 \u03bcl of 2.5 mM dNTP, 0.75 \u03bcl of 50 mM MgCl2, 2 \u03bcl of 5X buffer, and 0.1 \u03bcl Platinum Taq Polymerase in a total volume of 25 \u03bcl. PCR cycles were as follows: one cycle at 94\u00b0C for 2 min and 20 cycles at 94\u00b0C for 30 s, 58\u00b0C for 30 s, and\u00a072\u00b0C for 35 s.\n\n10 \u03bcl product for PCR2 was then analyzed with gel electrophoresis to check PCR efficiency. For samples with no product, Kras exons 1 and 2 were amplified from the DNA of the same tumor separately using nested PCR. Primers are listed in Supplementary file 3. PCR reactions were as follows:\n\n#### PCR1\n\n1 \u03bcl cDNA, 0.5 \u03bcl of 10 \u03bcM forward primer and 0.5 \u03bcl reverse primer, 2 \u03bcl of 2.5 mM dNTP, 0.75 \u03bcl of 50 mM MgCl2, 2 \u03bcl of 5X buffer, and 0.1 \u03bcl Platinum Taq Polymerase in a total volume of 25 \u03bcl. PCR cycles were as follows: one cycle at 94\u00b0C for 2 min and 25 cycles at 94\u00b0C for 30 s, 53\u00b0C for 30 s, and\u00a072\u00b0C for 15 s.\n\n#### PCR2\n\nThe reactions comprised 5 \u03bcl PCR1, 0.5 \u03bcl of 10 \u03bcM forward primer and 0.5 \u03bcl reverse primer, 2 \u03bcl of 2.5 mM dNTP, 0.75 \u03bcl of 50 mM MgCl2, 2 \u03bcl of 5X buffer, and 0.1 \u03bcl Platinum Taq Polymerase in a total volume of 25 \u03bcl. PCR cycles were as follows: one cycle at 94\u00b0C for 2 min and 20 cycles at 94\u00b0C for 30 s, 57\u00b0C for 30 s, and\u00a072\u00b0C for 18 s.\n\nProducts from PCR2 were pooled and purified with Ampure XP beads according to the manufacturer\u2019s protocol (Beckman Coulter A63880). The library was sequenced using MiSeq v2 Nano 250 PE at Duke Center for Genomic and Computational Biology. All primers were synthesized by Integrated DNA Technologies.\n\n### Sequencing data analysis\n\nRaw sequencing data were uploaded to usegalaxy.org (Jalili et al., 2020). For analysis of amplicon from cDNA and exon 2\u00a0from genomic DNA, paired-end reads were joined with fastq-join tool, with the maximum percentage difference between matching segments set at 20% and the minimum length of matching segments set at 10. For analysis of amplicon from exon 1\u00a0from genomic DNA, only read 1\u00a0was used. The joined-read for cDNA and exon 2, or read 1 for exon 1, was\u00a0then processed with Filter by Quality Tool, requiring 75% of bases have quality equal to or higher than the cut-off value of 20. For the analysis of amplicon from cDNA, the forward and reverse index was then extracted from the filtered reads through the Trim Tool. Bases encoding codons 12, 13, and\u00a061, as well as nucleotide 96 (where a SNP exists that differentiates 129 from B6 strains) and 8\u00a0nucleotides in the middle of exon 3 (where the sequence differs between native and ex3op versions of Kras), where appropriate were also extracted through the Trim Tool. Collapsing by the index (representing individual samples) and counting the reads for each variant of the extracted region\u00a0of\u00a0interest were then performed by the Group Tool. Mutation and allele information were then assigned to each extracted region\u00a0of\u00a0interest by comparing the sequences of the extracted region\u00a0of\u00a0interest with reference sequences for all possible missense mutations in codons 12, 13, and\u00a061, SNP at nucleotide 96, and either native or codon-optimized exon 3 using the Excel program. The fraction of each variant of the extracted region was calculated by dividing the counts for that variant by the total number of counts per sample. For analysis of amplicon from genomic DNA, quality filtered-reads were split into separate files using the Barcode Splitter Tool and 5' index. Each of the files were then trimmed from 3' end to expose the 3' index. Trimmed files were further split into separate files corresponding to different samples using the Barcode Splitter Tool and 3' index. For each sample, bases covering codons 12 and 13 in exon 1 and codon 61 in exon 2\u00a0were extracted through the Trim Tool. The mutation was assigned to extracted bases by comparing them against reference sequences for all possible missense mutations in codons 12, 13, and 61 using the Excel program. The fraction of each variant was calculated by dividing the counts for that variant by the total number of counts per sample. Samples with less than 30 total reads or variants with fraction less than 8% were excluded from analysis.\n\n### qPCR analysis of Trp53 recombination\n\nQuantitative PCR (qPCR) reactions were performed using iTaq Universal SYBR Green Supermix (Bio-Rad 1725120) and CFX384 touch real-time PCR detection system (Bio-Rad). Reactions comprised 200 ng gDNA, 5 \u03bcl Supermix, 0.5 \u03bcl forward primer, 0.5 \u03bcl reverse primer in a total volume of 10 \u03bcl. PCR conditions were one cycle at 95\u00b0C for 3 min, 40 cycles at 95\u00b0C for 10 s, 55\u00b0C for 30 s, and a melt curve cycle (65\u201395\u00b0C at 0.5\u00b0C increments at 5 s/step). Primers were designed to detect unrecombined Trp53flox allele (p53 WT), recombined Trp53flox allele (p53 Del), and the reference gene Tflc. Primer sequences were:\n\nThe relative levels of Trp53 WT and Trp53 Del genomic DNA were calculated using \u2206Ct method in comparison to Tflc. The fraction of Trp53 Del was then calculated by dividing the relative level of Trp53 Del by the sum of the relative level of Trp53 WT and Trp53 Del. qPCR analysis of Kras copy number qPCR reactions was performed using PrimeTime Gene Expression Master Mix (Integrated DNA Technologies 1055770) and CFX384 touch real-time PCR detection system (Bio-Rad). The reactions comprised 200 ng gDNA, 5 \u03bcl master mix, and 0.5 \u03bcl forward primer, 0.5 \u03bcl reverse primer, 0.25 \u03bcl probe for Krasnat allele, Krasex3op allele, and reference gene Tert in a total volume of 10 \u03bcl. The conditions were one cycle at 95\u00b0C for 3 min, 40 cycles at 95\u00b0C for 10 s, 57\u00b0C for 30 s, and a melt curve (65\u201395\u00b0C at 0.5\u00b0C increments at 5 s/step).\n\nPrimers sequences were:\n\nProbe sequences were:\n\nThe relative levels of Krasnat and Krasex3op alleles were calculated using \u2206Ct method in comparison to Tert. The copy number of Krasnat and Krasex3op allele was then determined by comparing the relative DNA level in tumor samples to normal lung tissues from Krasnat/nat or Krasex3o/ex3op mice, which were used as reference for two copies of Krasnat or Krasex3op allele, respectively.\n\nqPCR analysis of MAPK signaling qPCR reactions was\u00a0performed using iTaq Universal SYBR Green Supermix (Bio-Rad 1725120) and CFX384 touch real-time PCR detection system (Bio-Rad). The reactions comprised 1 \u03bcl gDNA, 5 \u03bcl Supermix, 0.5 \u03bcl forward primer, 0.5 \u03bcl reverse primer in a total volume of 10 \u03bcl. The conditions were one cycle at 95\u00b0C for 3 min, 40 cycles at 95\u00b0C for 10 s, 58\u00b0C for 30 s, and a melt curve (65\u201395\u00b0C at 0.5\u00b0C increments at 5 s/step). The primers sequences were:\n\nGene expression values were calculated using the comparative Ct (-\u2206\u2206Ct) method (Livak and Schmittgen, 2001), using actin as internal control.\n\n### Isolation of genomic DNA for maximum depth sequencing assay\n\nAs adapted from Li et al., 2020. Lung tissues were cut into fine pieces and resuspended in 500 \u03bcl lysis buffer 100 mM NaCl, 10 mM Tris pH 7.6, 25 mM EDTA pH 8.0, and 0.5% SDS in H2O, supplemented with 20 \u03bcg/ml RNase A (Sigma R4642). Samples were incubated at 37\u00b0C for 1 hr. 2.5 \u00b5l of 800 U/ml proteinase K (New England Biolabs P8107S) was then added to each sample, then the samples were vortexed and incubated at 55\u00b0C overnight. Genomic DNA was isolated by phenol/chloroform extraction followed by ethanol precipitation using standard procedures.\n\n### Maximum depth sequencing\n\nThis method was adapted from published protocols (Jee et al., 2016; Li et al., 2020). In detail, 20\u201350 \u03bcg of genomic DNA was incubated with EcoRV (New England Biolabs R3195), EcoRI (New England Biolabs R3101), and XmnI (New England Biolabs R0194) for the analysis of the non-transcribed strand of Kras exons 1 and 2. Reaction conditions were 5 units of each of the indicated restriction enzymes and per 1 \u03bcg DNA per 20 \u03bcl reaction. Digested genomic DNA was column purified using QIAquick PCR Purification Kit following the manufacturer\u2019s protocol (Qiagen 28104) and resuspended in ddH2O (35 \u03bcl H2O per 10 \u03bcg DNA). The barcode and adaptor were added to the target DNA by incubating purified DNA with the appropriate barcode primers (see below) for one cycle of PCR. PCR reactions comprised 10 \u03bcg DNA, 2.5 \u03bcl of 10 \u03bcM barcode primer (see below), 4 \u03bcl of 2.5 mM dNTP, 10 \u03bcl of 5X buffer, and 0.5 \u03bcl Q5 Hot Start High-Fidelity DNA Polymerase (New England Biolabs M0493) in a total volume of 50 \u03bcl. The number of PCR reactions was scaled according to the amount of DNA. PCR conditions were 98\u00b0C for 1 min, 60\u00b0C for 15 s, and 72\u00b0C for 1 min using the barcoding primer for exon 2, followed by the addition of the barcoding primer for exon 1\u00a0to the same reaction, 98\u00b0C for 1 min, 68\u00b0C for 15 s, and 72\u00b0C for 1 min. 1 \u03bcl of 20,000 U/ml exonuclease I (New England Biolabs M0293) and 5 \u03bcl of 10X exonuclease I buffer (New England Biolabs B0293S) was then added to each 50 \u03bcl reaction to remove unused barcoded primers and incubated at 37\u00b0C for 1 hr and then 80\u00b0C for 20 min. Processed DNA were column-purified using QIAquick PCR Purification Kit as above and resuspended in ddH2O (35 \u03bcl H2O per column). The concentration of purified product was measured with SimpliNano spectrophotometer (GE Healthcare Life Sciences). Samples were linear amplified with forward adaptor primer (see below). PCR reactions comprised 1.5 \u03bcg DNA, 2.5 \u03bcl of 10 \u03bcM forward-adaptor primer, 4 \u03bcl of 2.5 mM dNTP, 10 \u03bcl of 5X buffer, and 0.5 \u03bcl Q5 Hot Start High-Fidelity DNA Polymerase in a total volume of 50 \u03bcl. The number of PCR reactions was scaled according to the amount of DNA. PCR conditions were as follows: 12 cycles of 98\u00b0C for 15 s, 70\u00b0C for 15 s, and 72\u00b0C for 10 s. 2.5 \u03bcl of 10 \u03bcM exon-specific reverse primers (see below) and 2.5 \u03bcl of 10 \u03bcM reverse-adaptor primer (see below) were then added to each 50 \u03bcl reaction. The mixtures were then subjected\u00a0to exponential amplification. PCR conditions were as follows: 4 cycles of 98\u00b0C for 15 s, 62\u00b0C for 15 s, 72\u00b0C for 10 s, 20 cycles of 98\u00b0C for 15 s, 70\u00b0C for 15 s, and 72\u00b0C for 10 s. The final library size was\u00a0selected and purified with Ampure XP beads according to the manufacturer\u2019s protocol (Beckman Coulter A63880). Sequencing was performed using NovaSeq 6000 S Prime 150 bp PE at Duke Center for Genomic and Computational Biology.\n\n### Primers for MDS\n\nAs adapted from Li et al., 2020.\n\nAll primers were synthesized by Integrated DNA Technologies.\n\n### Analysis of MDS data\n\nAs adapted from Li et al., 2020. Raw data were uploaded Galaxy Cloudman (Jalili et al., 2020). Read 1 and read 2 were joined via PEAR pair-end read merger (Zhang et al., 2014b). The reads were then filtered by quality by requiring 90% of bases in the sequence to have a quality core \u2265 20. Filtered reads were split into different files based on assigned sample indexes and variation in sequence lengths using the Barcode Splitter tool and Filter sequences by length tool. The reads were trimmed down to the barcode and the target exon. Trimmed reads were grouped by barcode. Barcode families containing \u2265 2 reads and have \u2265 90% reads being identical are selected. Sequences from selected barcode families were compared against annotated reference mutant sequences containing all possible single-nucleotide substitutions in the exon of interest, and the mutation in the reference mutant sequence was assigned to the matched barcode family. The frequency of the corresponding mutation was calculated by dividing the counts of the families containing the mutation by the total number of families.\n\n### Generation of heatmaps\n\nAll heatmaps were generated using Morpheus (https://software.broadinstitute.org/morpheus). The mutation frequencies used in heatmaps in Figure 3 and Figure 3\u2014figure supplement 1 were corrected by the addition of 1 \u00d7 10\u22125 (the detection limit at a barcode recovery of 1 \u00d7 105), log10 transformed and plotted.\n\n### Statistics\n\nThe number of independent experiments and the statistical analysis used are indicated in the legends of each figure. Data are represented as mean\u2009\u00b1\u2009SEM. p-Values were determined by Dunn\u2019s multiple comparison test following Kruskal\u2013Wallis test, Holm\u2013Sidak multiple comparisons test following one-way ANOVA, two-tailed Mann\u2013Whitney U test, or two-sided Fisher\u2019s exact test. For correlation analysis, Rho and p values were derived from the Spearman correlation test. All statistical tests were performed using GraphPad Prism 6.\n",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "107842b1-a3ab-428a-953d-9073e55e04b3",
+      "submission_id": "04ed4161-91da-49f3-a1cf-d47762ffd4e3",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Erica A Golemis, Fox Chase Cancer Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.67172.sa1](https://doi.org/10.7554/eLife.67172.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nThe question of why specific RAS mutations are selected in specific tumor types has long been a topic of discussion with important clinical implications. This work sheds important light on this topic, providing an intellectually satisfying and elegant demonstration of the way that KRAS mutation, mutagen, and gene copy interact in the setting of lung cancer. The work makes a valuable contribution to the field of RAS biology.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Signaling amplitude molds the Ras mutation tropism of urethane\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by Erica Golemis as the Senior and Reviewing Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Jonathan Chernoff (Reviewer #1); Ian A Prior (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential Revisions:\n\nAll reviewers felt that some writing changes would help with improving the clarity and accuracy of the work. Please address the following 3 critiques, from the 3 reviewers:\n\n1) It is perhaps going too far to say in the Abstract and elsewhere that the transcriptional profiles reveal similar signaling amongst tumors driven by different mutations and Kras alleles. What they actually show is that a number of ERK-driven transcriptional events are roughly similar between the mutants. We don't know about the transcriptome in general nor about signaling in general beyond the ERK pathway. I think this point would be easy to address with some rewriting.\n\n2) There is lack of cohesive language to describe the results. Please clarify the description\n\n3) Transcription/translation mediated changes in Ras dosing to support tumourigenesis would be a very interesting observation if this was more conclusively demonstrated. Whilst I know that western blotting can't discriminate between mutant and wild type alleles \u2013 the data suggest an increase in total KRAS that should be detectable. Please provide either formal support for the Ras protein changes or rewriting to acknowledge the caveats in their interpretation.\n\nAlso, the comments relating to the ability of the models to fully understand what is happening do not require futher experiments but could be discussed. For example, genetic models that allow barcoding of tumours might help improve quantitation/analysis of life history/tumour specific signalling analysis in future iterations of this type of work.\n\nReviewer #1 (Recommendations for the authors):\n\nI think the authors have provided strong in vivo evidence to support their theories about KRAS action. What is particularly appealing is that this work ties up many strands of \"RAS-ology,\" such as the inclusion of rare codons in KRAS, the reasons for mutational tropism (e.g., Q61 vs G12/13 mutations), and a cogent rationale for the existence of allellc imbalance in mutant KRAS expression.\n\nReviewer #3 (Recommendations for the authors):\n\nIs amplitude the right word? Target gene expression does not necessarily allow this specific feature of signalling kinetics to be determined.\n",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a2919881-65d4-4f0b-90a4-9e6f7346de29",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C1",
+      "claim": "RAS genes are commonly mutated in human cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "The RAS genes are mutated in a fifth or more of human cancers (Prior et al., 2020), which is well established to be tumorigenic (Pylayeva-Gupta et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Prior et al., 2020 and Pylayeva-Gupta et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "f40fc9fd-f009-4520-a9aa-791977a7101e",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C2",
+      "claim": "Individual cancer types often have a 'tropism' towards a specific subset of RAS mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite many possible mutations, individual cancer types often have a 'tropism' towards a specific subset of RAS mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the abstract as a known phenomenon",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "ac332712-54f3-4245-8ad7-4569445fe8f0",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C3",
+      "claim": "High oncogenic RAS activity causes oncogenic stress.",
+      "claim_type": "EXPLICIT",
+      "source": "High oncogenic RAS activity causes oncogenic stress and different oncogenic mutations can impart different levels of activity, suggesting a relationship between oncoprotein activity and RAS mutation tropism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge in the abstract",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "dcb89dd3-c0b7-40f7-9df7-44848d506f78",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C4",
+      "claim": "Different oncogenic mutations can impart different levels of activity.",
+      "claim_type": "EXPLICIT",
+      "source": "High oncogenic RAS activity causes oncogenic stress and different oncogenic mutations can impart different levels of activity, suggesting a relationship between oncoprotein activity and RAS mutation tropism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge in the abstract",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "e514ba0d-5889-4c01-8b11-490e713cd24e",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C5",
+      "claim": "Changing rare codons to common in the murine Kras gene increases protein expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that changing rare codons to common in the murine Kras gene to increase protein expression shifts tumors induced by the carcinogen urethane from arising from canonical Q61 to biochemically less active G12 Kras driver mutations",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental finding reported in the abstract",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "74e8ed6b-8590-4c82-8f56-699c01fa9696",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C6",
+      "claim": "Changing rare codons to common in the murine Kras gene shifts tumors induced by urethane from canonical Q61 to biochemically less active G12 Kras driver mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that changing rare codons to common in the murine Kras gene to increase protein expression shifts tumors induced by the carcinogen urethane from arising from canonical Q61 to biochemically less active G12 Kras driver mutations",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental finding reported in the abstract",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "9adb4c2e-3845-46dd-9c00-47eb2cf5348f",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C7",
+      "claim": "Urethane is biased towards generating Q61 mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "despite the carcinogen still being biased towards generating Q61 mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding in the abstract",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "e7d12565-01f2-44c0-a590-dec91425ffc5",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C8",
+      "claim": "Inactivating p53 partially reverses the shift from Q61 to G12 mutations in the Krasex3op allele.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, inactivating the tumor suppressor p53 to blunt oncogenic stress partially reversed this effect, restoring Q61 mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental finding reported in the abstract",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "2479512f-b8eb-472b-848e-8f1c5b12de0e",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C9",
+      "claim": "There are three individual RAS genes in humans: KRAS, NRAS, and HRAS.",
+      "claim_type": "EXPLICIT",
+      "source": "There are three individual RAS genes in humans, KRAS, NRAS, and HRAS, three primary sites mutated in human cancers, G12, G13, and Q61, and six possible amino acid substitutions at each site arising from a point mutation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "6b0a8ab9-3d5a-4b81-8166-6f99c49a0612",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C10",
+      "claim": "There are three primary sites mutated in human cancers: G12, G13, and Q61.",
+      "claim_type": "EXPLICIT",
+      "source": "There are three individual RAS genes in humans, KRAS, NRAS, and HRAS, three primary sites mutated in human cancers, G12, G13, and Q61, and six possible amino acid substitutions at each site arising from a point mutation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "6c844ee2-9456-47c3-804c-2c535fb939dc",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C11",
+      "claim": "There are 54 possible oncogenic point mutations in RAS genes.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, there are 54 possible oncogenic point mutations, not including rare non-canonical mutations (Hobbs et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from the number of genes, sites, and substitutions, with citation",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "23221d67-bc1d-4432-9669-6931cc1b08a4",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C12",
+      "claim": "Individual cancer types are characterized by specific RAS mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Mapping these mutations to human cancers reveals a distinct pattern or 'tropism' in which individual cancer types are characterized by specific RAS mutations (Li et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Li et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "c56b7b5a-8ae3-4ae2-9f5c-bb17f5d29356",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C13",
+      "claim": "The most frequent EGFR point mutation in glioblastoma is G598V/A.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the most frequent EGFR point mutation in glioblastoma is G598V/A, but L861Q in lung adenocarcinoma; the most frequent IDH1 mutation in low-grade glioma is R132H, but R132C in melanoma, and so on (Chang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chang et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "8ce453d7-8cea-4522-8758-d94d67ba4bd6",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C14",
+      "claim": "The most frequent EGFR point mutation in lung adenocarcinoma is L861Q.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the most frequent EGFR point mutation in glioblastoma is G598V/A, but L861Q in lung adenocarcinoma; the most frequent IDH1 mutation in low-grade glioma is R132H, but R132C in melanoma, and so on (Chang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chang et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "5e655e05-01cc-48a5-a53f-54592d730f49",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C15",
+      "claim": "The most frequent IDH1 mutation in low-grade glioma is R132H.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the most frequent EGFR point mutation in glioblastoma is G598V/A, but L861Q in lung adenocarcinoma; the most frequent IDH1 mutation in low-grade glioma is R132H, but R132C in melanoma, and so on (Chang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chang et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "cc793d9e-fccf-410f-8bcf-766ad459cea3",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C16",
+      "claim": "The most frequent IDH1 mutation in melanoma is R132C.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the most frequent EGFR point mutation in glioblastoma is G598V/A, but L861Q in lung adenocarcinoma; the most frequent IDH1 mutation in low-grade glioma is R132H, but R132C in melanoma, and so on (Chang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chang et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "85a3876c-5b4f-403b-89d5-4ac0b136b4cd",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C17",
+      "claim": "Oncogenic KRAS mutations have been detected in premalignant lesions in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Focusing on lung cancer, in humans oncogenic KRAS mutations have been detected in premalignant lesions (Kanda et al., 2012) as well as in multiple regions within the same tumor (Zhang et al., 2014a), indicative of an early origin (Wistuba and Gazdar, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kanda et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "2a3a6ef8-c5da-4e46-bca0-d380ad89773e",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C18",
+      "claim": "Oncogenic KRAS mutations have been detected in multiple regions within the same tumor.",
+      "claim_type": "EXPLICIT",
+      "source": "Focusing on lung cancer, in humans oncogenic KRAS mutations have been detected in premalignant lesions (Kanda et al., 2012) as well as in multiple regions within the same tumor (Zhang et al., 2014a), indicative of an early origin (Wistuba and Gazdar, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zhang et al., 2014a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "5fcf0efd-82c3-4b63-b722-27dfa4754ef7",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C19",
+      "claim": "Oncogenic Kras mutations are capable of initiating tumors in carcinogen lung cancer models in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, oncogenic Kras mutations are capable of initiating tumors in carcinogen (McCreery and Balmain, 2017) and genetically engineered (Kwon and Berns, 2013) lung cancer models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to McCreery and Balmain, 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "18bc8a38-8839-474a-aeac-6da4af5be105",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C20",
+      "claim": "Oncogenic Kras mutations are capable of initiating tumors in genetically engineered lung cancer models in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, oncogenic Kras mutations are capable of initiating tumors in carcinogen (McCreery and Balmain, 2017) and genetically engineered (Kwon and Berns, 2013) lung cancer models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kwon and Berns, 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "55894bb4-416f-49bc-9d17-917e26a6b986",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C21",
+      "claim": "Oncogenic RAS can induce proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "By its very classification, oncogenic RAS can induce proliferation (Pylayeva-Gupta et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pylayeva-Gupta et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "66485718-9653-4301-a2d9-7cc2e4b320cb",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C22",
+      "claim": "High oncogenic signaling through the MAPK effector pathway of RAS can induce an oncogenic stress response in normal cells mediated by p16 and p53.",
+      "claim_type": "EXPLICIT",
+      "source": "However, high oncogenic signaling through the MAPK effector pathway of RAS can paradoxically induce an oncogenic stress response in normal cells mediated by the tumor suppressors p16 and p53, which leads to the growth arrest termed senescence (Mu\u00f1oz-Esp\u00edn and Serrano, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mu\u00f1oz-Esp\u00edn and Serrano, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "bb817bb7-0359-4538-97bd-f404ba0d5d15",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C23",
+      "claim": "Hyperactivation of MAPK signaling via the combination of KrasG12V, BrafD631A, and loss of the remaining wildtype Braf allele activated p53 and impeded lung tumorigenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, hyperactivation of MAPK signaling via the combination of KrasG12V, BrafD631A, and loss of the remaining wildtype Braf allele activated p53 and impeded lung tumorigenesis, an effect rescued by pharmacological inhibition of the MAPK pathway (Nieto et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Nieto et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "ede0562c-d251-40bf-a404-8e3a83c48d78",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C24",
+      "claim": "Different oncogenic mutations can be biochemically distinct.",
+      "claim_type": "EXPLICIT",
+      "source": "Accumulating evidence suggests that different oncogenic mutations can be biochemically distinct (Mu\u00f1oz-Maldonado et al., 2019; Smith et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Mu\u00f1oz-Maldonado et al., 2019 and Smith et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "0aeb543a-7b0b-4e02-b770-8c709d0589cc",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C25",
+      "claim": "A G12D mutation sterically inhibits the catalytic cleft.",
+      "claim_type": "EXPLICIT",
+      "source": "Relevant to this study, a G12D mutation sterically inhibits the catalytic cleft (Parker et al., 2018) while Q61R replaces the catalytic amino acid (Buhrman et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Parker et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "005d618e-b8fa-497e-8177-642439f18e71",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C26",
+      "claim": "Q61R mutation replaces the catalytic amino acid.",
+      "claim_type": "EXPLICIT",
+      "source": "Relevant to this study, a G12D mutation sterically inhibits the catalytic cleft (Parker et al., 2018) while Q61R replaces the catalytic amino acid (Buhrman et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Buhrman et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "c14e2c96-788c-46da-a092-3ec3592815ed",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C27",
+      "claim": "G12D mutation in Nras has lower GTP loading than Q61R mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "A direct comparison of G12D and Q61R mutations in Nras revealed that the former has lower GTP loading and tumorigenic potential in the skin (Burd et al., 2014) and hematopoietic system (Kong et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Burd et al., 2014 and Kong et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "9b27e24e-4135-472a-bd65-22f1442b5f25",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C28",
+      "claim": "G12D mutation in Nras has lower tumorigenic potential than Q61R mutation in the skin.",
+      "claim_type": "EXPLICIT",
+      "source": "A direct comparison of G12D and Q61R mutations in Nras revealed that the former has lower GTP loading and tumorigenic potential in the skin (Burd et al., 2014) and hematopoietic system (Kong et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Burd et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "e723780f-c248-4bbd-af8d-9fae797bf255",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C29",
+      "claim": "G12D mutation in Nras has lower tumorigenic potential than Q61R mutation in the hematopoietic system.",
+      "claim_type": "EXPLICIT",
+      "source": "A direct comparison of G12D and Q61R mutations in Nras revealed that the former has lower GTP loading and tumorigenic potential in the skin (Burd et al., 2014) and hematopoietic system (Kong et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kong et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "67b9aaf9-19e1-459a-9232-866e5962c38a",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C30",
+      "claim": "A panel of G12/13 Kras mutants introduced by Cas9-mediated gene editing in the lung revealed widely different tumorigenic potentials between different mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a panel of G12/13 Kras mutants introduced by Cas9-mediated gene editing in the lung revealed widely different tumorigenic potentials between different mutants (Winters et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Winters et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "1928f5b5-f966-4009-adad-1b8fb489f740",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C31",
+      "claim": "Urethane is found in fermented foods and alcoholic products.",
+      "claim_type": "EXPLICIT",
+      "source": "Case in point, the carcinogen urethane found in fermented foods and alcoholic products (Gowd et al., 2018) primarily induces pulmonary tumors with a very specific KrasQ61L or KrasQ61R driver mutation, depending on the strain (Dwyer-Nield et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gowd et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "70ca45ee-8004-4949-93e9-64b7d13cb309",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C32",
+      "claim": "Urethane primarily induces pulmonary tumors with a very specific KrasQ61L or KrasQ61R driver mutation, depending on the strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Case in point, the carcinogen urethane found in fermented foods and alcoholic products (Gowd et al., 2018) primarily induces pulmonary tumors with a very specific KrasQ61L or KrasQ61R driver mutation, depending on the strain (Dwyer-Nield et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Dwyer-Nield et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "25c6e887-5fbc-4314-8038-aab9bcf71d70",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C33",
+      "claim": "Urethane-induced mutations conform to the A>T/G consensus sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Urethane-induced mutations conform to the A>T/G consensus sequence derived from comprehensive whole-exome sequencing urethane-induced tumors (Westcott et al., 2015), and the even more restricted CAN>CT/GN sequence determined shortly after urethane exposure by different ultra-sensitive sequencing approaches (Li et al., 2020; Valentine et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Westcott et al., 2015, Li et al., 2020, and Valentine et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "8d34a311-dc06-4b61-bf8e-c3ef61e9784b",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C34",
+      "claim": "The Krasex3op allele has 27 rare codons in exon 3 converted to common codons.",
+      "claim_type": "EXPLICIT",
+      "source": "In regards to the first genetic change, we compared the native Krasnat allele that is naturally enriched in rare codons and correspondingly poorly translated (Lampson et al., 2013) to the Krasex3op allele, in which 27 rare codons in exon 3 (which is not the site of oncogenic mutations) were converted to common, leading to roughly twice as much Kras protein in the lungs or derived cells of mice (Pershing et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pershing et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "03bc67ba-51c4-41e6-9418-f68d45cb4c23",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C35",
+      "claim": "The Krasex3op allele leads to roughly twice as much Kras protein in the lungs or derived cells of mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In regards to the first genetic change, we compared the native Krasnat allele that is naturally enriched in rare codons and correspondingly poorly translated (Lampson et al., 2013) to the Krasex3op allele, in which 27 rare codons in exon 3 (which is not the site of oncogenic mutations) were converted to common, leading to roughly twice as much Kras protein in the lungs or derived cells of mice (Pershing et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pershing et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "6d91d226-a47d-488d-9616-0dbbb162ecb3",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C36",
+      "claim": "The native Krasnat allele is naturally enriched in rare codons and correspondingly poorly translated.",
+      "claim_type": "EXPLICIT",
+      "source": "In regards to the first genetic change, we compared the native Krasnat allele that is naturally enriched in rare codons and correspondingly poorly translated (Lampson et al., 2013) to the Krasex3op allele, in which 27 rare codons in exon 3 (which is not the site of oncogenic mutations) were converted to common, leading to roughly twice as much Kras protein in the lungs or derived cells of mice (Pershing et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lampson et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "765200e0-5648-4930-bbf6-5a0aff7c4038",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C37",
+      "claim": "Conditionally inactivating Trp53 in the lung suppresses oncogenic stress due to high mutant Kras expression in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "In regards to the second genetic change, we evaluated retaining or conditionally inactivating the Trp53 gene specifically in the lung, which has been shown to suppress oncogenic stress due to high mutant Kras expression in this tissue in vivo (Feldser et al., 2010; Junttila et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Feldser et al., 2010 and Junttila et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "560581ea-37aa-4d23-951f-95f87c772157",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C38",
+      "claim": "The loss of p53 increased tumor burden in mice with at least one Krasex3op allele.",
+      "claim_type": "EXPLICIT",
+      "source": "In sharp contrast to the previous findings that the Krasex3op allele reduced urethane carcinogenesis (Pershing et al., 2015), the loss of p53 instead increased tumor burden in mice with at least one Krasex3op allele (Figure 1B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "a55d0f14-ed93-443b-9e79-25f50212146c",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C39",
+      "claim": "The Krasex3op allele reduced urethane carcinogenesis in previous findings.",
+      "claim_type": "EXPLICIT",
+      "source": "In sharp contrast to the previous findings that the Krasex3op allele reduced urethane carcinogenesis (Pershing et al., 2015), the loss of p53 instead increased tumor burden in mice with at least one Krasex3op allele (Figure 1B)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pershing et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "bbb1d91b-a514-4e77-a93a-35d2d4620080",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C40",
+      "claim": "The increased tumor burden with p53 loss appeared to be a product of more tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "This appeared to be a product of more tumors (Figure 1C), with a trend towards larger tumors (Figure 1D) that reached statistical significance when the data were censored for large (\u2265100 mm3) tumors (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figures 1C, 1D, and 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "7ce1cc2a-d9b7-4a5e-af6c-638c20be643c",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C41",
+      "claim": "In the absence of p53, the Krasex3op allele promotes both the initiation and progression of urethane-induced lung tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that in the absence of p53 the Krasex3op allele promotes both the initiation and progression of urethane-induced lung tumors, consistent with p53 suppressing oncogene toxicity to allow oncogenic mutations in the Krasex3op allele to exert a more potent signal to drive tumorigenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of experimental data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "840379d7-5e65-40b7-9104-1564b383371c",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C42",
+      "claim": "Loss of p53 tracked with larger tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the role of p53 as a tumor suppressor during lung tumor progression (Feldser et al., 2010; Junttila et al., 2010), loss of p53 tracked with larger, although we note not with more tumors (Figure 2B, Figure 2\u2014figure supplement 1B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 2B and Figure 2\u2014figure supplement 1B, C",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "87fba7e7-1d6d-4631-a778-a4792e0611bd",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C43",
+      "claim": "Tumors with an oncogenic mutation in the Krasex3op allele from control Trp53+/+ mice had G12 oncogenic mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "In complete agreement with the previous observation that the increased protein expression of the endogenous Krasex3op allele shifts the RAS mutation tropism of urethane from the canonical Q61 to G12 oncogenic mutations (Pershing et al., 2015), tumors with an oncogenic mutation in the Krasex3op allele from control Trp53+/+ mice similarly had G12 oncogenic mutations in this allele (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 2C, supported by citation to Pershing et al., 2015",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "995756e6-3b92-493a-9910-c690fcdbeb5a",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C44",
+      "claim": "40% hotspot oncogenic mutations in the Krasex3op allele were detected at Q61 in Trp53-/- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequencing revealed that 40% hotspot oncogenic mutations in the Krasex3op allele were now detected at Q61 (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "2a513a7d-c9d8-4a19-a283-321199426471",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C45",
+      "claim": "The loss of p53 partially shifts the oncogenic mutations in the Krasex3op allele detected in tumors back to the canonical Q61 mutations of urethane.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings are consistent with the loss of p53 partially shifting the oncogenic mutations in the Krasex3op allele detected in tumors back to the canonical Q61 mutations of urethane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of experimental data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "29b3df0a-5c4d-4c7a-85e9-bb8426246d60",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C46",
+      "claim": "Urethane induces A>T transversions within the context of a 5\u2032 C in both the native and ex3op alleles of Kras.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed a trend towards A>T transversions within the context of a 5\u2032 C in both the native and ex3op alleles of Kras specifically in urethane-exposed mice (Figure 3B), consistent with previously identified bias for urethane (Li et al., 2020; Valentine et al., 2020; Westcott et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 3B, supported by citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "7e4d78b7-5bcb-4bf4-9fcf-99fa1555563d",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C47",
+      "claim": "The frequency of CA>CT mutations is significantly higher than GG>GA mutations in both Krasnat/nat and Krasex3op/ex3op mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the frequency of these CA>CT mutations, which give rise to Q61L (CA182A>CTA), is significantly higher than GG>GA mutations, which give rise to G12D (GG35T>GAT) and G13D (GG38C>GAC), in both Krasnat/nat and Krasex3op/ex3op mice (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "8cda2a24-1171-415e-93f6-b773e7ac1e2e",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C48",
+      "claim": "Urethane mutagenesis does not appear to be changed at the Krasex3op locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, with the above proviso, urethane mutagenesis does not appear to be changed at the Krasex3op locus, at least within the detection limit of the MDS assay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of experimental data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "796b9502-570e-438c-8f2d-38f3cf6a8391",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C49",
+      "claim": "The observed bias towards G12/13-driver mutation in the Krasex3op allele in urethane-induced tumors is a product of negative selection against the biochemically more active Q61 oncogenic mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "These and the above findings support a model whereby the observed bias towards G12/13-driver mutation in the Krasex3op allele in urethane-induced tumors is a product of negative selection against the biochemically more active Q61 oncogenic mutations, rather than a change in the mutational spectrum of urethane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of experimental data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "70b428e9-0064-47aa-a2ad-b89a767879e4",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C50",
+      "claim": "60% hotspot mutations in the Krasnat allele of urethane-induced tumors from SftpcCreER/CreER;Trp53flox/flox;Krasnat/ex3op mice in which the Trp53 gene was recombined occurred at codon G12.",
+      "claim_type": "EXPLICIT",
+      "source": "In more detail, we found that 60% hotspot mutations in the Krasnat allele of urethane-induced tumors from the SftpcCreER/CreER;Trp53flox/flox; Krasnat/ex3op mice in which the Trp53 gene was recombined in the lung occurred at codon G12, and in one case also G13 (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "a6d077eb-5d21-4c9d-870d-6337467e9e4b",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C51",
+      "claim": "The mutant:wildtype ratio was higher in G12/13-mutant Kras alleles, with an average ratio of approximately two copies for the mutant Kras transcript to every copy of wildtype Kras counterpart.",
+      "claim_type": "EXPLICIT",
+      "source": "In detail, a waterfall plot revealed the mutant:wildtype ratio was higher in G12/13-mutant Kras alleles, with an average ratio of approximately two copies for the mutant Kras transcript to every copy of wildtype Kras counterpart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "ac772a20-5d71-4304-8bb1-3c97de90a73d",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C52",
+      "claim": "The mutant:wildtype ratio was lower in Q61-mutant Kras alleles, with an average ratio of ~0.8 copies for the mutant Kras transcript to each copy of wildtype Kras counterpart.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the mutant:wildtype ratio was lower in Q61-mutant Kras alleles, with an average ratio of ~0.8 copies for the mutant Kras transcript to each copy of wildtype Kras counterpart (Figure 4A, Figure 4\u2014figure supplement 1C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 4A and Figure 4\u2014figure supplement 1C, D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "f413f1e9-de85-416d-b961-8bd6f03a8e66",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C53",
+      "claim": "G12/13-mutant tumors with a mutant:wildtype ratio \u22651.5 are larger, reaching the same size of Q61-mutant tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Namely, cross-referencing the mutant:wildtype Kras ratio to the mutation type and size of tumors revealed that G12/13-mutant tumors with a mutant:wildtype ratio \u22651.5 are larger, reaching the same size of Q61-mutant tumors (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "af8a0be5-70da-4a80-9892-2ad5622cc5e1",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C54",
+      "claim": "Kras G12/13-mutant tumors with a high mutant:wildtype ratio exhibited higher expression of Dusp6, Egr1, and Fosl1.",
+      "claim_type": "EXPLICIT",
+      "source": "Binning the relative expression of these three genes into Kras G12/13-mutant tumors with a high (>1.5) versus low (\u22641.5) mutant:wildtype ratio revealed that Kras G12/13-mutant tumors with a high ratio exhibited higher expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "be5c15aa-b835-4a64-95c1-89ba637dbd2b",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C55",
+      "claim": "Dusp6 and Egr1 were expressed higher in Kras Q61-mutant tumors compared to Kras G12/13-mutant tumors with a low ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, when we compared the relative expression of these three genes in Kras Q61-mutant tumors, Dusp6 and Egr1 were expressed higher compared to the Kras G12/13-mutant tumors with a low ratio (Figure 4C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figures 4C-E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "1f888dbd-1830-49bd-a2af-1fff5725590d",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C56",
+      "claim": "Increased expression of G12/13-mutant Kras alleles correlates with increased expression of Dusp6, Egr1, and Fosl1.",
+      "claim_type": "EXPLICIT",
+      "source": "Plotting the relative expression of these three genes versus the mutant:wildtype cDNA ratio of individual tumors showed that increased expression correlated with the allelic ratio for G12/13 mutations (Figure 4\u2014figure supplement 1E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 4\u2014figure supplement 1E\u2013G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "d599d455-94f3-4419-82c7-3763d0271eb6",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C57",
+      "claim": "Tumors without p53 showed higher expression of Dusp6, Egr1, and Fosl1 compared to tumors with p53.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess the effect of p53 on this relationship, we compared Dusp6, Egr1, and Fosl1 expression between tumors with and without p53. This revealed higher expression of all three genes in the latter tumors, consistent with the loss of p53 permitting higher Ras signaling (Figure 4F\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figures 4F-H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "742ea760-1747-4eb0-ac48-011911a90ad7",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C58",
+      "claim": "p53 loss tracked with a higher mutant:wildtype allelic ratio in tumors with Kras G12/13-mutations in the Krasex3op allele.",
+      "claim_type": "EXPLICIT",
+      "source": "p53 loss also tracked with a higher mutant:wildtype allelic ratio in tumors with Kras G12/13-mutations in the Krasex3op allele (Figure 4\u2014figure supplement 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 4\u2014figure supplement 1H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "21aa8012-1907-4972-be95-9a5e0a4d9c1f",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C59",
+      "claim": "Dusp6, Egr1, and Fosl1 are all activated by oncogenic RAS through the MAPK pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "These three genes were chosen as they are all activated by oncogenic RAS through the MAPK pathway (Buffet et al., 2017; Chung et al., 2017; Esnault et al., 2017; Gillies et al., 2017; Kidger and Keyse, 2016; McMahon and Monroe, 1995; Swarbrick et al., 2008; Unni et al., 2018; Vallejo et al., 2017a; Vallejo et al., 2017b; Zhang et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "c9af7c04-3952-44bc-80f0-cbb9815b7c5f",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C60",
+      "claim": "Neither the loss of p53 nor the change in codon usage in Kras altered the mutation signature of urethane.",
+      "claim_type": "EXPLICIT",
+      "source": "We also note that neither the loss of p53 nor the change in codon usage in Kras altered the mutation signature of urethane, arguing that a selection for an optimal oncogenic signal supersedes the mutational bias of this carcinogen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of experimental data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "a102b2dc-a8ae-4a37-a1ca-a669a981ee11",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C61",
+      "claim": "A Q61R mutation in Nras and/or Kras has a much slower intrinsic hydrolysis rate than G12D mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement, a Q61R mutation in Nras and/or Kras has a much (1000 times) slower intrinsic hydrolysis rate, higher GTP-loading, and more robust activation of the MAPK pathway, and when activated in the skin or hematopoietic system in vivo, is more tumorigenic than the corresponding G12D mutation (Burd et al., 2014; Kong et al., 2016; Pershing et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Burd et al., 2014; Kong et al., 2016; Pershing et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "ac6819d1-4978-4160-af51-2fa020fe6dd5",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C62",
+      "claim": "The Krasex3op allele has been documented to express more protein in the lung.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement, the Krasex3op allele has been documented to express more protein in the lung (Pershing et al., 2015) and increase ERK phosphorylation in hematopoietic stem cells (Sasine et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Pershing et al., 2015 and Sasine et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "603094cd-de1f-4cb8-8cf1-c9bb3520f1c2",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C63",
+      "claim": "Altering rare codons to common in ectopic or endogenous human KRAS leads to higher translation, KRAS protein expression, and/or MAPK activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Altering rare codons to common in ectopic or endogenous human KRAS also leads to higher translation, KRAS protein expression, and/or MAPK activation (Ali et al., 2017; Fu et al., 2018; Lampson et al., 2013; Pershing et al., 2015; Peterson et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ali et al., 2017; Fu et al., 2018; Lampson et al., 2013; Pershing et al., 2015; Peterson et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "038826ab-396d-4f4f-b1fe-7666810004b1",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C64",
+      "claim": "Amplification of oncogenic Kras alleles has been previously documented in various mouse cancer backgrounds.",
+      "claim_type": "EXPLICIT",
+      "source": "Amplification of oncogenic Kras alleles has been previously documented in various mouse cancer backgrounds (Chung et al., 2017; Mueller et al., 2018; Westcott et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chung et al., 2017; Mueller et al., 2018; Westcott et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "18a7c7e0-6fc8-4b43-a0ee-73122ca7be8c",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C65",
+      "claim": "Few tumors show amplification of the G12/13-mutant allele based on genomic copy number analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Few tumors show amplification of the G12/13-mutant allele based on genomic copy number analysis (Figure 4\u2014figure supplement 2), pointing towards transcriptional or post-transcriptional mechanisms.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 4\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "087182de-51bc-40c7-b58d-4a8e30a9d100",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C66",
+      "claim": "Increasing MAPK signaling by paradoxical activation with a BRAF inhibitor expands the number of cell types that are tumorigenic upon activation of the LSL-KrasG12D allele in the lung.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing MAPK signaling by paradoxical activation with a BRAF inhibitor expands the number of cell types that are tumorigenic upon activation of the LSL-KrasG12D allele in the lung (Cicchini et al., 2017), hence it is quite possible that a similar phenomenon is at play here as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cicchini et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "452592c2-b279-411e-a9ff-c605b4af3e96",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C67",
+      "claim": "RAS-mutant human tumors typically do not have BRAF or EGFR mutations and vice versa outside of drug resistance settings.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, RAS-mutant human tumors, which often have disruption of p53 and other tumor suppressors, typically do not have BRAF or EGFR mutations and vice versa outside of drug resistance settings (Cancer Genome Atlas Research Network et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cancer Genome Atlas Research Network et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "34900960-96ed-469f-8257-aff613f42530",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C68",
+      "claim": "Co-expressing oncogenic RAS with oncogenic BRAF or EGFR can be growth suppressive.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, co-expressing oncogenic RAS with oncogenic BRAF or EGFR can be growth suppressive (Cisowski et al., 2016; Unni et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Cisowski et al., 2016 and Unni et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "8e67c4ce-545c-4313-b79c-6237b56c9c78",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "claim_id": "C69",
+      "claim": "The RAS mutation tropism of urethane arises from selection in normal cells for specific mutations that impart a narrow window of signaling that promotes proliferation without causing oncogenic stress.",
+      "claim_type": "EXPLICIT",
+      "source": "One interpretation of these findings is that the RAS mutation tropism of urethane arises from selection in normal cells for specific mutations that impart a narrow window of signaling that promotes proliferation without causing oncogenic stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of experimental findings stated in the abstract",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8df9d503-933e-4915-928f-6cd1a8f470de",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Codon optimization of the Kras gene (Krasex3op allele) increases protein expression approximately 2-fold and shifts urethane-induced tumors from Q61 to G12 driver mutations. The Krasex3op allele has 27 rare codons in exon 3 converted to common codons, leading to roughly twice as much Kras protein in lungs. Tumors with oncogenic mutations in the Krasex3op allele from control Trp53+/+ mice had G12 oncogenic mutations, confirming the shift from canonical Q61 mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, C34, C35, C36, and C43 collectively demonstrate that codon optimization increases Kras expression and shifts mutation tropism from Q61 to G12. The experimental data in Figure 2C confirms this shift, and the mechanism (codon optimization leading to increased translation) is well-supported by prior work (C34-C36). The finding replicates previous observations (C43 cites Pershing et al., 2015).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "1d15ef01-6dd9-43ad-b61e-dad70fd8045e",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Loss of p53 increases tumor burden in mice with Krasex3op alleles and partially restores Q61 mutations in the Krasex3op allele. In p53-deficient mice, 40% of hotspot oncogenic mutations in the Krasex3op allele were detected at Q61, compared to predominantly G12 mutations in p53-proficient mice. The increased tumor burden appeared to be a product of more tumors with a trend towards larger tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C38, C40-C42, C44-C45 provide converging evidence that p53 loss reprograms RAS mutation tropism. The experimental data in Figures 1B-E and 2C demonstrate both increased tumorigenesis and the shift back to Q61 mutations. The interpretation (C41, C45) is consistent with the model that p53 suppresses oncogenic stress, allowing more active mutations to be tolerated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "ff651971-a670-4aca-8431-4748a7328959",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Urethane maintains its mutational bias toward CA>CT mutations (generating Q61L) regardless of Kras allele type or p53 status, indicating that the shift in observed driver mutations is due to selection rather than altered mutagenesis. Maximum depth sequencing revealed that CA>CT mutations are significantly more frequent than GG>GA mutations in both Krasnat/nat and Krasex3op/ex3op mice, yet G12/13 mutations predominate in Krasex3op tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C46-C49, and C60 demonstrate through MDS analysis (Figure 3B-C) that urethane's mutational signature is unchanged across genetic backgrounds. The frequency data (C47) shows CA>CT mutations are significantly higher than GG>GA mutations, yet tumor sequencing reveals opposite patterns, supporting the selection model (C49). This is a critical finding that distinguishes mutational bias from selection pressure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "281ffce7-5add-4bb2-b411-b68c501c7040",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In p53-deficient mice, 60% of hotspot mutations in the Krasnat allele occurred at G12/13, and these tumors showed elevated mutant:wildtype mRNA ratios (~2:1) compared to Q61-mutant tumors (~0.8:1). G12/13-mutant tumors with high mutant:wildtype ratios (\u22651.5) were larger and reached the same size as Q61-mutant tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C53 demonstrate allelic imbalance in G12/13-mutant tumors and its functional significance. The waterfall plot analysis (C51-C52) and tumor size correlation (C53, Figure 4B) provide quantitative evidence that increased expression of less active G12/13 mutants compensates for their lower intrinsic activity. This supports the optimal signaling window model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "8102d87c-fda7-4e57-a7b7-11b5feb7416a",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Expression of MAPK pathway target genes (Dusp6, Egr1, Fosl1) is similar between Q61-mutant tumors and G12/13-mutant tumors with high mutant:wildtype ratios, suggesting convergence on an optimal signaling level. Tumors without p53 showed higher expression of these genes, and p53 loss tracked with higher mutant:wildtype allelic ratios in G12/13-mutant Krasex3op tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C59 provide molecular evidence for the optimal signaling model through expression analysis of three MAPK target genes (Figures 4C-H). The correlation between allelic imbalance and target gene expression (C56) and the effect of p53 loss (C57-C58) support the interpretation that different mutation types converge on similar signaling outputs. The choice of genes is well-justified (C59).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "b9bf4055-882c-45a4-853f-ac24f388c496",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors propose that RAS mutation tropism arises from selection in normal cells for specific mutations that impart a narrow window of signaling promoting proliferation without causing oncogenic stress.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C69 represents the central interpretive model of the manuscript. This interpretation is well-supported by the collective evidence: (1) codon optimization shifts mutations from Q61 to G12 despite urethane's mutational bias, (2) p53 loss partially reverses this shift, (3) allelic imbalance compensates for less active mutations, and (4) MAPK target gene expression converges across mutation types. The model integrates all major findings coherently.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "08006b43-78dc-405d-b2df-a7134bf4397c",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Different oncogenic RAS mutations have distinct biochemical activities, with Q61 mutations being more active than G12 mutations. Q61R mutations have slower intrinsic GTP hydrolysis rates, higher GTP loading, and more robust MAPK activation compared to G12D mutations. High oncogenic signaling can induce oncogenic stress mediated by p53.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4, C22-C30, and C61 establish the biochemical foundation for the study through extensive citation of prior work. These claims are well-supported by the literature (Burd et al., 2014; Kong et al., 2016; Parker et al., 2018; Buhrman et al., 2010; etc.). This background is essential for interpreting the experimental findings, though the authors acknowledge they did not directly measure protein levels or signaling in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "0475f367-66cc-4f4f-956a-738847b9e24d",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "RAS genes are commonly mutated in human cancers, and individual cancer types exhibit tropism toward specific RAS mutations. Similar mutation tropism patterns exist for other oncogenes like EGFR and IDH1 across different cancer types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C9-C16 establish the biological context and motivation for the study. These are well-established facts supported by appropriate citations (Prior et al., 2020; Li et al., 2018; Chang et al., 2016). The calculation of 54 possible mutations (C11) is straightforward arithmetic. These claims provide essential background but are not novel findings of this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "a65aa996-e980-4352-99ad-faa31ad1812b",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Oncogenic KRAS mutations occur early in tumorigenesis, have been detected in premalignant lesions and multiple tumor regions in humans, and can initiate tumors in mouse models. Oncogenic RAS induces proliferation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C21 establish that RAS mutations are early events in tumorigenesis, which is critical for the study's rationale that mutation tropism reflects selection in normal cells. These claims are well-supported by citations to prior work (Kanda et al., 2012; Zhang et al., 2014a; McCreery and Balmain, 2017; Kwon and Berns, 2013). This background justifies the experimental approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "1077a8e2-08fb-4524-b5d9-fcabc3952d3c",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Urethane is a carcinogen found in fermented foods that primarily induces pulmonary tumors with KrasQ61L or KrasQ61R driver mutations. Urethane-induced mutations conform to specific consensus sequences (A>T/G and CAN>CT/GN).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33 describe the properties of urethane as a mutagen, supported by appropriate citations (Gowd et al., 2018; Dwyer-Nield et al., 2010; Westcott et al., 2015; Li et al., 2020; Valentine et al., 2020). This background is essential for understanding why urethane is an ideal model system for studying RAS mutation tropism, but represents prior knowledge rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "d51da1e6-18db-4abb-8cd3-c2af0a1dbce0",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Conditionally inactivating Trp53 in the lung suppresses oncogenic stress due to high mutant Kras expression. Previous findings showed that the Krasex3op allele reduced urethane carcinogenesis in p53-proficient mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37 and C39 describe prior work establishing the rationale for the genetic manipulations used in this study. Both are supported by appropriate citations (Feldser et al., 2010; Junttila et al., 2010; Pershing et al., 2015). The contrast between C39 and the current findings (C38) highlights the importance of p53 status in determining the outcome.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    },
+    {
+      "id": "97ccee98-2fe7-4d64-873d-dd05195409c1",
+      "content_id": "e5f34d55-8bdc-47a4-b04e-761ced507c80",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The Krasex3op allele expresses more protein and increases MAPK signaling. Altering rare codons to common in KRAS increases translation and MAPK activation. Amplification of oncogenic Kras alleles has been documented in mouse models, though few tumors in this study showed genomic amplification of G12/13-mutant alleles. Increasing MAPK signaling can expand tumorigenic cell types, and co-expression of multiple oncogenic drivers can be growth suppressive.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C68 provide supporting context from prior literature about Kras expression, allelic amplification, and oncogenic signaling. These are well-cited (Pershing et al., 2015; Sasine et al., 2018; Ali et al., 2017; etc.) and help interpret the current findings, particularly the observation of allelic imbalance at the mRNA level (C65) and the discussion of signaling thresholds (C66-C68).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:30:42.780730Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e514ba0d-5889-4c01-8b11-490e713cd24e",
+      "result_id": "8df9d503-933e-4915-928f-6cd1a8f470de"
+    },
+    {
+      "claim_id": "74e8ed6b-8590-4c82-8f56-699c01fa9696",
+      "result_id": "8df9d503-933e-4915-928f-6cd1a8f470de"
+    },
+    {
+      "claim_id": "8d34a311-dc06-4b61-bf8e-c3ef61e9784b",
+      "result_id": "8df9d503-933e-4915-928f-6cd1a8f470de"
+    },
+    {
+      "claim_id": "03bc67ba-51c4-41e6-9418-f68d45cb4c23",
+      "result_id": "8df9d503-933e-4915-928f-6cd1a8f470de"
+    },
+    {
+      "claim_id": "6d91d226-a47d-488d-9616-0dbbb162ecb3",
+      "result_id": "8df9d503-933e-4915-928f-6cd1a8f470de"
+    },
+    {
+      "claim_id": "87fba7e7-1d6d-4631-a778-a4792e0611bd",
+      "result_id": "8df9d503-933e-4915-928f-6cd1a8f470de"
+    },
+    {
+      "claim_id": "e7d12565-01f2-44c0-a590-dec91425ffc5",
+      "result_id": "1d15ef01-6dd9-43ad-b61e-dad70fd8045e"
+    },
+    {
+      "claim_id": "560581ea-37aa-4d23-951f-95f87c772157",
+      "result_id": "1d15ef01-6dd9-43ad-b61e-dad70fd8045e"
+    },
+    {
+      "claim_id": "bbb1d91b-a514-4e77-a93a-35d2d4620080",
+      "result_id": "1d15ef01-6dd9-43ad-b61e-dad70fd8045e"
+    },
+    {
+      "claim_id": "7ce1cc2a-d9b7-4a5e-af6c-638c20be643c",
+      "result_id": "1d15ef01-6dd9-43ad-b61e-dad70fd8045e"
+    },
+    {
+      "claim_id": "840379d7-5e65-40b7-9104-1564b383371c",
+      "result_id": "1d15ef01-6dd9-43ad-b61e-dad70fd8045e"
+    },
+    {
+      "claim_id": "995756e6-3b92-493a-9910-c690fcdbeb5a",
+      "result_id": "1d15ef01-6dd9-43ad-b61e-dad70fd8045e"
+    },
+    {
+      "claim_id": "2a513a7d-c9d8-4a19-a283-321199426471",
+      "result_id": "1d15ef01-6dd9-43ad-b61e-dad70fd8045e"
+    },
+    {
+      "claim_id": "9adb4c2e-3845-46dd-9c00-47eb2cf5348f",
+      "result_id": "ff651971-a670-4aca-8431-4748a7328959"
+    },
+    {
+      "claim_id": "29b3df0a-5c4d-4c7a-85e9-bb8426246d60",
+      "result_id": "ff651971-a670-4aca-8431-4748a7328959"
+    },
+    {
+      "claim_id": "7e4d78b7-5bcb-4bf4-9fcf-99fa1555563d",
+      "result_id": "ff651971-a670-4aca-8431-4748a7328959"
+    },
+    {
+      "claim_id": "8cda2a24-1171-415e-93f6-b773e7ac1e2e",
+      "result_id": "ff651971-a670-4aca-8431-4748a7328959"
+    },
+    {
+      "claim_id": "796b9502-570e-438c-8f2d-38f3cf6a8391",
+      "result_id": "ff651971-a670-4aca-8431-4748a7328959"
+    },
+    {
+      "claim_id": "c9af7c04-3952-44bc-80f0-cbb9815b7c5f",
+      "result_id": "ff651971-a670-4aca-8431-4748a7328959"
+    },
+    {
+      "claim_id": "70b428e9-0064-47aa-a2ad-b89a767879e4",
+      "result_id": "281ffce7-5add-4bb2-b411-b68c501c7040"
+    },
+    {
+      "claim_id": "a6d077eb-5d21-4c9d-870d-6337467e9e4b",
+      "result_id": "281ffce7-5add-4bb2-b411-b68c501c7040"
+    },
+    {
+      "claim_id": "ac772a20-5d71-4304-8bb1-3c97de90a73d",
+      "result_id": "281ffce7-5add-4bb2-b411-b68c501c7040"
+    },
+    {
+      "claim_id": "f413f1e9-de85-416d-b961-8bd6f03a8e66",
+      "result_id": "281ffce7-5add-4bb2-b411-b68c501c7040"
+    },
+    {
+      "claim_id": "af8a0be5-70da-4a80-9892-2ad5622cc5e1",
+      "result_id": "8102d87c-fda7-4e57-a7b7-11b5feb7416a"
+    },
+    {
+      "claim_id": "be5c15aa-b835-4a64-95c1-89ba637dbd2b",
+      "result_id": "8102d87c-fda7-4e57-a7b7-11b5feb7416a"
+    },
+    {
+      "claim_id": "1f888dbd-1830-49bd-a2af-1fff5725590d",
+      "result_id": "8102d87c-fda7-4e57-a7b7-11b5feb7416a"
+    },
+    {
+      "claim_id": "d599d455-94f3-4419-82c7-3763d0271eb6",
+      "result_id": "8102d87c-fda7-4e57-a7b7-11b5feb7416a"
+    },
+    {
+      "claim_id": "742ea760-1747-4eb0-ac48-011911a90ad7",
+      "result_id": "8102d87c-fda7-4e57-a7b7-11b5feb7416a"
+    },
+    {
+      "claim_id": "21aa8012-1907-4972-be95-9a5e0a4d9c1f",
+      "result_id": "8102d87c-fda7-4e57-a7b7-11b5feb7416a"
+    },
+    {
+      "claim_id": "8e67c4ce-545c-4313-b79c-6237b56c9c78",
+      "result_id": "b9bf4055-882c-45a4-853f-ac24f388c496"
+    },
+    {
+      "claim_id": "ac332712-54f3-4245-8ad7-4569445fe8f0",
+      "result_id": "08006b43-78dc-405d-b2df-a7134bf4397c"
+    },
+    {
+      "claim_id": "dcb89dd3-c0b7-40f7-9df7-44848d506f78",
+      "result_id": "08006b43-78dc-405d-b2df-a7134bf4397c"
+    },
+    {
+      "claim_id": "66485718-9653-4301-a2d9-7cc2e4b320cb",
+      "result_id": "08006b43-78dc-405d-b2df-a7134bf4397c"
+    },
+    {
+      "claim_id": "bb817bb7-0359-4538-97bd-f404ba0d5d15",
+      "result_id": "08006b43-78dc-405d-b2df-a7134bf4397c"
+    },
+    {
+      "claim_id": "ede0562c-d251-40bf-a404-8e3a83c48d78",
+      "result_id": "08006b43-78dc-405d-b2df-a7134bf4397c"
+    },
+    {
+      "claim_id": "0aeb543a-7b0b-4e02-b770-8c709d0589cc",
+      "result_id": "08006b43-78dc-405d-b2df-a7134bf4397c"
+    },
+    {
+      "claim_id": "005d618e-b8fa-497e-8177-642439f18e71",
+      "result_id": "08006b43-78dc-405d-b2df-a7134bf4397c"
+    },
+    {
+      "claim_id": "c14e2c96-788c-46da-a092-3ec3592815ed",
+      "result_id": "08006b43-78dc-405d-b2df-a7134bf4397c"
+    },
+    {
+      "claim_id": "9b27e24e-4135-472a-bd65-22f1442b5f25",
+      "result_id": "08006b43-78dc-405d-b2df-a7134bf4397c"
+    },
+    {
+      "claim_id": "e723780f-c248-4bbd-af8d-9fae797bf255",
+      "result_id": "08006b43-78dc-405d-b2df-a7134bf4397c"
+    },
+    {
+      "claim_id": "67b9aaf9-19e1-459a-9232-866e5962c38a",
+      "result_id": "08006b43-78dc-405d-b2df-a7134bf4397c"
+    },
+    {
+      "claim_id": "a102b2dc-a8ae-4a37-a1ca-a669a981ee11",
+      "result_id": "08006b43-78dc-405d-b2df-a7134bf4397c"
+    },
+    {
+      "claim_id": "a2919881-65d4-4f0b-90a4-9e6f7346de29",
+      "result_id": "0475f367-66cc-4f4f-956a-738847b9e24d"
+    },
+    {
+      "claim_id": "f40fc9fd-f009-4520-a9aa-791977a7101e",
+      "result_id": "0475f367-66cc-4f4f-956a-738847b9e24d"
+    },
+    {
+      "claim_id": "2479512f-b8eb-472b-848e-8f1c5b12de0e",
+      "result_id": "0475f367-66cc-4f4f-956a-738847b9e24d"
+    },
+    {
+      "claim_id": "6b0a8ab9-3d5a-4b81-8166-6f99c49a0612",
+      "result_id": "0475f367-66cc-4f4f-956a-738847b9e24d"
+    },
+    {
+      "claim_id": "6c844ee2-9456-47c3-804c-2c535fb939dc",
+      "result_id": "0475f367-66cc-4f4f-956a-738847b9e24d"
+    },
+    {
+      "claim_id": "23221d67-bc1d-4432-9669-6931cc1b08a4",
+      "result_id": "0475f367-66cc-4f4f-956a-738847b9e24d"
+    },
+    {
+      "claim_id": "c56b7b5a-8ae3-4ae2-9f5c-bb17f5d29356",
+      "result_id": "0475f367-66cc-4f4f-956a-738847b9e24d"
+    },
+    {
+      "claim_id": "8ce453d7-8cea-4522-8758-d94d67ba4bd6",
+      "result_id": "0475f367-66cc-4f4f-956a-738847b9e24d"
+    },
+    {
+      "claim_id": "5e655e05-01cc-48a5-a53f-54592d730f49",
+      "result_id": "0475f367-66cc-4f4f-956a-738847b9e24d"
+    },
+    {
+      "claim_id": "cc793d9e-fccf-410f-8bcf-766ad459cea3",
+      "result_id": "0475f367-66cc-4f4f-956a-738847b9e24d"
+    },
+    {
+      "claim_id": "85a3876c-5b4f-403b-89d5-4ac0b136b4cd",
+      "result_id": "a65aa996-e980-4352-99ad-faa31ad1812b"
+    },
+    {
+      "claim_id": "2a3a6ef8-c5da-4e46-bca0-d380ad89773e",
+      "result_id": "a65aa996-e980-4352-99ad-faa31ad1812b"
+    },
+    {
+      "claim_id": "5fcf0efd-82c3-4b63-b722-27dfa4754ef7",
+      "result_id": "a65aa996-e980-4352-99ad-faa31ad1812b"
+    },
+    {
+      "claim_id": "18bc8a38-8839-474a-aeac-6da4af5be105",
+      "result_id": "a65aa996-e980-4352-99ad-faa31ad1812b"
+    },
+    {
+      "claim_id": "55894bb4-416f-49bc-9d17-917e26a6b986",
+      "result_id": "a65aa996-e980-4352-99ad-faa31ad1812b"
+    },
+    {
+      "claim_id": "1928f5b5-f966-4009-adad-1b8fb489f740",
+      "result_id": "1077a8e2-08fb-4524-b5d9-fcabc3952d3c"
+    },
+    {
+      "claim_id": "70ca45ee-8004-4949-93e9-64b7d13cb309",
+      "result_id": "1077a8e2-08fb-4524-b5d9-fcabc3952d3c"
+    },
+    {
+      "claim_id": "25c6e887-5fbc-4314-8038-aab9bcf71d70",
+      "result_id": "1077a8e2-08fb-4524-b5d9-fcabc3952d3c"
+    },
+    {
+      "claim_id": "765200e0-5648-4930-bbf6-5a0aff7c4038",
+      "result_id": "d51da1e6-18db-4abb-8cd3-c2af0a1dbce0"
+    },
+    {
+      "claim_id": "a55d0f14-ed93-443b-9e79-25f50212146c",
+      "result_id": "d51da1e6-18db-4abb-8cd3-c2af0a1dbce0"
+    },
+    {
+      "claim_id": "ac6819d1-4978-4160-af51-2fa020fe6dd5",
+      "result_id": "97ccee98-2fe7-4d64-873d-dd05195409c1"
+    },
+    {
+      "claim_id": "603094cd-de1f-4cb8-8cf1-c9bb3520f1c2",
+      "result_id": "97ccee98-2fe7-4d64-873d-dd05195409c1"
+    },
+    {
+      "claim_id": "038826ab-396d-4f4f-b1fe-7666810004b1",
+      "result_id": "97ccee98-2fe7-4d64-873d-dd05195409c1"
+    },
+    {
+      "claim_id": "18a7c7e0-6fc8-4b43-a0ee-73122ca7be8c",
+      "result_id": "97ccee98-2fe7-4d64-873d-dd05195409c1"
+    },
+    {
+      "claim_id": "087182de-51bc-40c7-b58d-4a8e30a9d100",
+      "result_id": "97ccee98-2fe7-4d64-873d-dd05195409c1"
+    },
+    {
+      "claim_id": "452592c2-b279-411e-a9ff-c605b4af3e96",
+      "result_id": "97ccee98-2fe7-4d64-873d-dd05195409c1"
+    },
+    {
+      "claim_id": "34900960-96ed-469f-8257-aff613f42530",
+      "result_id": "97ccee98-2fe7-4d64-873d-dd05195409c1"
+    }
+  ],
+  "comparisons": []
+}

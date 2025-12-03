@@ -1,0 +1,334 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The authors developed a 3D cell-derived matrix (CDM) system by culturing NIH3T3 fibroblasts expressing fluorescent fibronectin for 8 days, followed by cell lysis. The resulting CDM had large internal pores covered by a dense crust, was significantly thicker than cells, and allowed fibroblasts to penetrate and migrate within it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 collectively describe the CDM preparation protocol and characterization. The methodology is clearly described with appropriate citations (C2), and structural features are documented with electron microscopy (C5). The system successfully supports 3D cell migration as intended.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The CDM behaves as a linear elastic material with an elastic modulus of approximately 50 Pa, shows no hysteresis in optical tweezer experiments, and remains structurally stable after 24 hours of cell migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C14 describe comprehensive mechanical characterization using optical tweezers. The linear force-displacement relationship (C10), measured elastic modulus (C11), absence of hysteresis (C8), and structural stability (C12) are all supported by experimental data with appropriate controls and citations to prior work (C9).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Fibroblasts in CDMs display elongated morphology with cortical acto-myosin distribution, focal adhesions distributed throughout the cell membrane, and microtubules extending from centrosome to cell periphery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 describe cellular organization within the CDM, supported by imaging data (Figure 1a, 1d, Figure 1\u2014figure supplement 2) and citations to prior literature showing similar morphology in soft matrices (C15). The observations are consistent with expected fibroblast behavior in 3D environments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Cells deform the CDM during migration, creating contractile and extensile patterns at the front and back of the nucleus. Matrix deformation was quantified using KLT tracking, and similar patterns were observed in multiple fibroblast cell types (NIH3T3, MEFs, REF52). Myosin clustering correlates with contractile phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C25 describe matrix deformation patterns during cell migration. The use of KLT tracking is well-established (C20), observations are documented across multiple cell types (C22), and the correlation between myosin clustering and contraction (C23) is supported by imaging data. The inference of pulling forces from pore enlargement (C24) is reasonable given the elastic properties of the CDM.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C31",
+      "C32"
+    ],
+    "result": "Both migrating and non-migrating cells exhibit cyclic contraction-extension regions on both sides of the nucleus, which the authors interpret as two force dipoles. Non-migrating cells show oscillating divergence patterns at fixed locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C32 describe the observation of contraction-extension cycles in both cell types. The data clearly show these patterns exist (C27, C29), and the interpretation as force dipoles (C31) is a reasonable physical model given the observed deformation patterns. The cyclic nature is documented in kymographs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Autocorrelation analysis reveals oscillation periods of approximately 6 min for non-migrating cells and 8 min for migrating cells, with similar periods at front and back. These oscillations are comparable to previously reported cell autonomous contractile oscillations and correlate with myosin cluster formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 report quantitative analysis of oscillation periods using autocorrelation. The methodology is appropriate, periods are clearly stated with supporting figures (Figure 2f-i), and the comparison to prior literature (C35, C37) provides context. The similar periods between front and back (C36) and between cell types support the interpretation of autonomous oscillators.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Cross-correlation analysis reveals that non-migrating cells show no phase shift between front and back oscillations (t=0), while migrating cells show significant phase shifts (p=0.0246). This phase shift represents time reversal asymmetry required for directed motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 present a key finding with appropriate statistical analysis (C40). The cross-correlation methodology is sound, the statistical significance is reported, and the interpretation as time reversal asymmetry (C41-C42) is consistent with physical principles for low Reynolds number systems. This is a central result of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The CDM's linear elastic behavior supports approximating a linear relationship between force and displacement distributions. The main dipole axis aligns with the direction of motion. Traction forces are comparable between migrating and non-migrating cells (p=0.2766), indicating that lack of migration is not due to lack of traction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 connect mechanical properties to force analysis. The linear elastic characterization (C43) justifies the approximation (C44). The alignment observation (C45) is documented with quantification (Figure 3\u2014figure supplement 2). The comparable traction forces (C46) with statistical support (p=0.2766) strongly support the conclusion that phase shift, not force magnitude, distinguishes migrating from non-migrating cells (C47).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "In dipole-quadrupole phase space, migrating cells show cycles with finite area while non-migrating cells show negligible area. A cell transitioning from migrating to non-migrating showed corresponding changes in cycle area. The finite area is a signature of time reversal symmetry breaking, with statistically significant differences (p=0.0177 for absolute area, p=0.0431 for normalized area).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 present the phase space analysis demonstrating time reversal symmetry breaking. The observation of finite vs. negligible areas is clearly shown (Figure 3d-e), the transition experiment (C49) provides strong within-cell evidence, and the statistical analysis (C52) supports the distinction. The interpretation as time reversal symmetry breaking (C51) is consistent with the Purcell scallop theorem framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Nocodazole treatment stops directed cell migration but maintains oscillations with ~11 min period that are in phase at both cell ends. Nucleus-free cytoplasts show similar forward-backward movement with direction reversals every ~36 min. These results suggest microtubules are involved in coupling oscillators for directed motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C62 describe nocodazole experiments and their interpretation. The observations are clearly documented (C54-C59), and the hypothesis about microtubule involvement (C60-C61) is reasonable given: (1) nocodazole disrupts microtubules, (2) migration stops but oscillations continue, (3) oscillations become in-phase, and (4) microtubules span the cell body. The supporting citation (C62) adds credibility. However, this remains correlative evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Theoretical models predict that velocity decreases with increasing oscillation period for constant amplitude oscillations. Experimental observations show strong velocity oscillations and clear anticorrelation between velocity and period in WT cells, consistent with locomotion driven by controlling cell deformation rather than traction forces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 connect theoretical predictions to experimental observations. The velocity oscillations are documented (C70), the anticorrelation is observed (C71), and the interpretation (C72) is reasonable though the authors acknowledge they cannot quantitatively distinguish between the two theoretical scaling relations due to cellular noise. The citation to similar findings in epithelial cells (C73) provides additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Pharmacological treatments with various inhibitors altered cell migration. Latrunculin A and nocodazole completely stalled migration, while Y-27632, ML-7, C8-BPA, and CK666 reduced speed and increased oscillation period. An inverse correlation between period and velocity is evident at the population level for both WT and drug-treated cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C79 describe systematic pharmacological perturbations. The effects are documented with appropriate controls (Figure 4\u2014figure supplement 1), and the population-level inverse correlation (C79) supports the velocity-period relationship. However, the manuscript notes that individual drug conditions don't all show significant correlations, suggesting heterogeneity in drug effects or cell responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Laser ablation experiments show that localized cortical ablation triggers matrix relaxation followed by contraction with actin and myosin recruitment. In polarized cells, this induces cell translocation, while non-polarized cells show no translocation. This demonstrates that induced matrix pinching can lead to cell translocation depending on cell morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C86 describe laser ablation experiments with clear observations documented in Figure 5a-c. The sequence of relaxation-contraction (C81-C82), protein recruitment (C83), and differential effects based on cell polarization (C84-C85) are well-documented. The conclusion about matrix pinching (C86) is supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Repeated alternating laser ablation at front and back of polarized cells with 6-10 min intervals induces net cell movement. Ablation only at one side produces less or no displacement. This demonstrates that externally induced alternating force dipoles are sufficient to promote directed cell motion, supporting the phase shift mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C92 present a critical proof-of-principle experiment. The alternating ablation protocol (C87-C88) produces directed motion, while the control with single-sided ablation (C89) shows reduced effect. This causally demonstrates sufficiency of alternating dipoles (C90-C91) and strongly supports the phase shift mechanism (C92). This is compelling experimental validation of the proposed model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The authors propose that acto-myosin complexes control individual contractile units, with protrusion/retraction cycles involving retrograde actin flow potentially linked to stick-slip phenomena. The absence of coherent actin flow and multiple competing protrusions slow cell motion compared to 2D migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93-C95 are speculative interpretations (marked as SPECULATION in evidence_type). While the proposals are reasonable and cite supporting literature (C94-C95), they are not directly tested in this study. The manuscript acknowledges these are likely mechanisms but does not provide direct evidence for stick-slip dynamics or definitively demonstrate the role of competing protrusions in slowing motion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The main conclusion is that time reversal symmetry breaking in 3D cell migration is associated with phase shifts between oscillating cell ends. Individual dipole dynamics are similar in migrating and non-migrating cells, suggesting the same force machinery is active in both, with synchronization being key for movement. Faster oscillations can lead to faster motion, but coordination between units is essential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C101 summarize the main findings and interpretations. The time reversal symmetry breaking (C96) is well-supported by the phase space analysis. The similar dipole dynamics (C97) is documented in Figure 2\u2014figure supplement 2. The inferences about force machinery (C98) and synchronization (C99) are reasonable given the data, though somewhat speculative. The relationship between oscillation speed and motion (C100) is supported by the velocity-period analysis, and the importance of coordination (C101) is demonstrated by the laser ablation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The authors note that acto-myosin oscillatory dynamics are common across systems but their biological function is often unclear. They propose that in their system, oscillatory dynamics are essential and cells could adapt velocity by modulating oscillation period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C103 accurately describe the state of the field with appropriate citations. However, C104-C105 are speculative. While the data show correlation between period and velocity, and the laser ablation experiments demonstrate that induced oscillations can drive motion, the manuscript does not definitively prove that oscillations are essential (cells might use alternative mechanisms) or that cells actively modulate period to control velocity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The authors propose that phase shift encodes cell polarity and requires polarity memory for maintenance. They suggest microtubules are involved in phase locking based on nocodazole experiments, but acknowledge other cytoskeletal elements and adhesion dynamics likely play roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C109 are largely speculative interpretations. The phase shift-polarity connection (C106) is reasonable but not directly tested. The polarity memory requirement (C107) is inferred but not demonstrated. The microtubule involvement (C108) is supported by nocodazole experiments but remains correlative. The acknowledgment of other factors (C109) is appropriate but highlights the incomplete mechanistic understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The authors observe two contractile units (force dipoles) in multiple fibroblast types in CDMs, contrasting with other reports showing single contractile units in 3D gels. They propose different cell types may use distinct dynamics for directed motion, with single vs. double dipoles potentially reflecting different levels of contractile machinery correlation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 compare findings across studies and propose mechanistic diversity. The observation of two dipoles is well-documented (C110), the comparison to other work is appropriate (C111), and the proposal of distinct mechanisms (C112-C113) is reasonable speculation. However, direct comparison experiments with the same cell types in different matrices would strengthen these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The authors propose temporal correlations between contraction-extension units as a general principle for mesenchymal cell motility in 3D, suggesting applications for controlling cell motion and designing synthetic micro-crawlers. They note that while micro-swimmers exist, micro-crawlers in negligible inertia regimes have not been realized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C114-C118 discuss broader implications and applications. The proposal as a general principle (C114) is reasonable but requires validation in more cell types and contexts. The suggested applications (C115-C116) are speculative. The statement about micro-crawlers (C117-C118) accurately describes the field with appropriate citation, but the feasibility of the proposed application remains to be demonstrated.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,238 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Squamous cell carcinoma exhibits diverse patterns of collective invasion within individual tumors, ranging from broad 'pushing' masses to thin strands, with neighbor numbers varying continuously between 1 and 9. This diversity suggests that invasion patterns are not irreversibly determined early in tumor history but can be influenced by later variations in cell state or local environmental differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C18 collectively establish the diversity of invasion patterns in SCC through histological analysis (C10-C14) and time-lapse imaging (C15-C16). The continuous spectrum of neighbor numbers (C14) and the observation of diverse patterns within single tumors (C10) support the inference that invasion mode is not fixed early (C17-C18). The data from Figure 1 provides strong visual and quantitative evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "A cellular Potts model incorporating SCC cells and stromal fibroblasts successfully replicates fibroblast-dependent invasion observed experimentally. The model generates a continuous spectrum of invasion patterns consistent with clinical observations, with no discrete sub-classes of invasive behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C27 describe the development and validation of the computational model. The model successfully replicates experimental observations (C21-C24) and generates diverse invasion patterns (C25-C27) consistent with clinical data. PCA analysis accounting for 75% (organotypic) and 65% (spheroid) of variation (C25) provides quantitative support. Figure 2 demonstrates strong concordance between model and experiment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Matrix proteolysis via MMP14 is linked to the formation of wide invasive strands but has little effect on maximum invasion depth. MMP14 over-expression increases strand width while MMP14 deletion reduces it, with this relationship maintained even when proliferation is blocked. The effect is particularly strong in organotypic contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C28-C43 establish the relationship between MMP14-mediated proteolysis and strand width through both computational modeling (C28-C36) and experimental validation (C37-C42). The experimental data using MMP14 KO and over-expressing cells (C39-C41) strongly support model predictions. The mitomycin C experiment (C42) rules out proliferation as a confounding factor. Figure 3 provides comprehensive support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Cancer cell-matrix adhesion via ITGB1 has minimal effect on invasion in organotypic contexts but shows a stronger association with strand tapering in spheroid contexts. ITGB1 deletion does not affect invasion in organotypic assays but increases tapering in spheroids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C50 demonstrate context-dependent effects of cell-matrix adhesion. Model predictions (C44-C48) are validated experimentally using ITGB1 KO cells (C46, C49-C50). The differential effects in organotypic versus spheroid contexts are well-documented in Figure 4. The validation of ITGB1 KO defects in adhesion (Figure 4\u2014figure supplement 1b-c) strengthens the interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Cell-cell junctions via \u03b1-catenin favor wide invasive strands and are required for efficient invasion in response to uniform directional cues. CTNNA1 knockout cells show significantly reduced invasion in organotypic assays but only modest effects in spheroid assays, suggesting the importance of junctions depends on the presence of uniform directional cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C51-C56 establish the context-dependent role of cell-cell junctions. Model predictions (C51-C52, C55) are validated by CTNNA1 KO experiments (C53-C54). The differential effects in organotypic versus spheroid contexts (C54) and the modeling of uniform versus radial cues (C55) provide mechanistic insight. Figure 5 provides strong experimental support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Adherens junctions influence invasive pattern by enabling supra-cellular coordination of actomyosin, not simply by maintaining cell-cell contact. CTNNA1 knockout disrupts supra-cellular actomyosin networks, and disrupting actomyosin coordination through ROCK:ER activation or ROCK inhibition phenocopies loss of adherens junctions with respect to strand width.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C65 establish the mechanistic link between adherens junctions and actomyosin coordination. The observation that CTNNA1 KO disrupts supra-cellular actomyosin (C59) and that ROCK manipulations phenocopy this effect (C63-C64) provides strong mechanistic evidence. Figure 6 demonstrates these effects clearly. The citation to prior work (C57) provides appropriate context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "A broad 'pushing' front of invasion requires both high proteolysis and high cancer cell-cell adhesion. The cooperative interaction between proteolysis and cell-cell adhesion affects strand width but not maximum invasion depth. Deletion of CTNNA1 prevents the formation of wide invasive strands by MMP14 over-expressing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 demonstrate the synergistic effects of proteolysis and cell-cell adhesion. Model predictions (C66-C67, C69-C70) are validated experimentally (C68). The observation that both parameters are required for pushing fronts (C71) is well-supported by Figure 7. The combinatorial perturbation approach provides strong evidence for the cooperative interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The ability to generate wide invasive strands is coupled to the ability to grow effectively when surrounded by ECM in 3D assays. Both proteolysis and cancer cell-cell adhesion are required for effective growth in 3D collagen matrices, with the positive effect of proteolysis requiring cell-cell adhesions. This linkage is particularly pronounced in spheroid simulations lacking fibroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C72-C82 establish the coupling between strand widening and growth. PCA analysis shows alignment of growth and neighbor number vectors (C72), EdU staining confirms proliferation in wide strands (C73-C74), and model predictions (C75-C78) are validated experimentally (C79-C82). Figure 8 provides comprehensive support. The observation that effects are specific to 3D contexts (C79) strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Cancer cells physically remodel ECM through displacement and compaction at the cell-ECM interface, with highly dynamic membrane blebs and filopodia observed. ECM compaction is absent in CTNNA1 KO cells, while MMP over-expression reduces compaction and creates gaps in the ECM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 demonstrate ECM remodeling mechanisms through time-lapse imaging and reflectance microscopy. The observations of ECM displacement (C84), membrane dynamics (C85), and differential effects of CTNNA1 KO (C86) and MMP over-expression (C87) are well-documented in Figure 8e-f. These provide direct visual evidence for the 'pushing' mechanism in the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "In vivo, the most aggressive cancer behavior (tumor growth and lymph node metastasis) is achieved at high levels of cell-cell adhesion and high levels of proteolysis. Contrary to expectation, cells with canonical mesenchymal traits (no cell-cell junctions and high proteolysis) exhibit reduced growth and lymph node metastasis. MMP14-driven proteolysis promotes invasion and growth, but these effects depend on adherens junction-mediated supra-cellular coordination of actomyosin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 and C88-C96 validate key findings in vivo. The strong correlation between MMP14 levels and tumor growth (C89), the unexpected finding that CTNNA1 KO reduces aggressiveness (C92), and the demonstration that MMP14 effects require cell-cell adhesion (C94) are well-supported by Figure 9. The in vivo data provide crucial validation of the in vitro and in silico findings, though the complexity of the in vivo environment limits mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9"
+    ],
+    "result": "The ability of SCC cells to invade effectively is linked to their ability to generate space for proliferation in confined contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C9 represents the main conclusion integrating multiple lines of evidence from the coupling of strand widening and growth (C6, C72-C82), ECM remodeling (C84-C87), and in vivo validation (C88-C96). This conclusion is well-supported by the comprehensive experimental and computational data presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Background knowledge claims about collective invasion, cadherins, integrins, ECM properties, and CAF functions in SCC are established in the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C105 represent background knowledge appropriately cited from prior literature. These provide necessary context for the study but are not novel findings. The citations appear appropriate and accurate based on the stated sources.",
+    "result_type": "MINOR"
+  }
+]

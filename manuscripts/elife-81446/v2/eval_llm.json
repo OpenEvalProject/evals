@@ -1,0 +1,447 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C25",
+      "C26",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The model consists of excitatory-inhibitory (E-I) modules coupled by long-range excitation arranged on a 24\u00d724 grid. Mathematical analysis shows that steady firing states become unstable when recurrent disynaptic self-inhibition exceeds a threshold, leading to oscillatory dynamics. The oscillation frequency decreases with increasing recurrent excitation, and propagation delays shift bifurcation lines but do not substantially alter frequency dependence. The ON model (above threshold) oscillates regularly, while the SN model (below threshold) exhibits transient beta oscillations when perturbed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C25, C26, C34-C39 describe the model architecture and its dynamical properties based on mathematical analysis (bifurcation analysis) and simulations. The claims are internally consistent and supported by theoretical derivations (Equations 29-36) and simulation results (Figure 1b-d). The mathematical framework is standard for E-I network analysis, and the results follow logically from the model structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The SN model exhibits paradoxical suppression of inhibition: increasing external input to inhibitory neurons decreases firing rates of both excitatory and inhibitory populations. This occurs because the network requires strong recurrent excitation (\u03b1>1) to oscillate at beta frequencies, necessitating inhibitory stabilization. Time-varying external inputs cause the network operating point to move relative to the bifurcation line, producing waxing and waning of beta oscillation amplitudes. This conforms to historical observations that external inputs suppress beta oscillations in motor cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 describe model behavior that is well-supported by simulations (Figure 1e-h) and theoretical analysis. The paradoxical suppression is a known property of inhibition-stabilized networks (C41 cites appropriate literature). The mechanism linking external inputs to oscillation amplitude modulation is clearly demonstrated and consistent with experimental observations (C44 cites Jasper and Penfield, 1949; Penfield, 1954).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The model accurately reproduces experimental statistics when external inputs have a 25 ms correlation time and comprise both local and global components. Specifically, the model reproduces beta burst duration distributions and proportions of different wave types. The best match with experimental data occurs when external inputs are split approximately equally between local and global contributions (c=0.4 for monkey L, c=0.3 for monkey N).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50, C62-C64 report quantitative comparisons between model and experimental data (Figure 2). The model-data agreement is demonstrated for multiple statistical measures including power spectra, burst durations, and spatial correlations. The parameter fitting procedure (determining c values) is appropriate, though the evaluation is limited to two subjects. The claims are well-supported by the presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Wave speeds in both recordings and model are in the few tens of cm/s, comparable to propagation speeds along non-myelinated horizontal fibers. However, the model demonstrates that wave speeds are not tightly linked to axonal propagation speed: equally good agreement with experimental data is obtained with zero propagation delay (D=0).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C86-C88 present a counterintuitive finding that is well-supported by model simulations (Figure 3\u2014figure supplement 11). The comparison between models with and without propagation delays (D=1.3 ms vs D=0) provides strong evidence that wave speeds are determined by phase gradients created by external inputs rather than axonal conduction velocity. This is a significant mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C85",
+      "C84"
+    ],
+    "result": "Experimental recordings show that correlation between neighboring electrodes is lower than single-electrode autocorrelation but comparable to correlations between distant electrodes, indicating strong synchronization of part of the LFP signal across distances. Shuffling electrode signals entirely suppresses planar waves in both simulations and recordings, demonstrating that spatial correlation of signals (reflecting long-range connectivity) is crucial for planar wave appearance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61, C84-C85 describe spatial correlation patterns and their importance for wave generation. The shuffling analysis (Figure 3\u2014figure supplement 10) provides strong evidence for the role of spatial correlations. The observation that shuffling eliminates planar waves but not synchronized or random states is particularly informative. The claims are well-supported by both experimental and simulation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Long-range excitatory connections are required for planar wave existence: when absent (l=0), planar waves and synchronized states are replaced by random states. When connection range is halved, synchronized states and planar waves exist but in reduced proportions with strongly reduced speeds. When connection range is increased by 50%, synchronization increases, synchronized regime prevails, and planar wave occurrence is reduced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 describe systematic manipulation of connectivity range parameter l (Figure 3\u2014figure supplement 12). The results show a clear relationship between connectivity range and wave properties. The findings are internally consistent and demonstrate the importance of long-range connectivity for wave generation. The parameter manipulations are appropriate and the conclusions are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "When long-range connectivity or local input targets are anisotropic, traveling waves preferentially propagate along the axis where connectivity decays fastest. With anisotropic connectivity (twice longer range in y than x), waves predominantly propagate along the x-axis because longer-range connectivity promotes synchronization along y while weaker connectivity along x allows larger phase gradients. Anisotropic local input targeting produces similar directional preferences, with waves propagating where inputs are more confined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C102-C107 describe model predictions about wave propagation directionality under anisotropic conditions (Figure 5). The mechanisms are clearly explained: synchronization by strong connectivity competes with phase gradient formation. The results are internally consistent and provide testable predictions. However, C110 notes that these predictions may not match all experimental observations (Rubino et al., 2006), suggesting additional factors may be important.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C81",
+      "C129",
+      "C130",
+      "C132"
+    ],
+    "result": "The model proposes that traveling waves in motor cortex arise from dephasing by external inputs (putatively thalamic) of oscillatory activity that would otherwise be spatially synchronized by recurrent connectivity. Spatio-temporal patterns result from opposing effects of synchronization (by long-range connectivity and global inputs) and desynchronization (by local inputs and intrinsic stochasticity). Wave speeds are determined by oscillatory frequency and dephasings produced by external inputs, not by axonal propagation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C81, C129-C130, C132 present the core mechanistic interpretation of the model. This interpretation is well-supported by multiple lines of evidence: the role of connectivity (C89-C93), the effects of input structure (C62-C64), the independence from propagation delays (C87-C88), and the shuffling analysis (C84-C85). The mechanism is clearly articulated and distinguishes this work from previous explanations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Before planar wave appearance, the global input to the network shifts to negative values, reducing drive to all modules and pushing the network toward self-sustained oscillation. Injection of negative current steps increases planar wave episodes by 50%, while positive current steps strongly reduce planar waves, demonstrating causal relationship between global input modulation and wave generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 describe model analysis of inputs associated with planar waves and perturbation experiments (Figure 4d, f-g). The temporal alignment analysis and perturbation experiments provide strong evidence for the proposed mechanism. The bidirectional manipulation (negative vs positive current injection) strengthens the causal interpretation. The claims are well-supported by the simulation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C23"
+    ],
+    "result": "During the preparatory period when beta oscillations are prominent, neurons do not fire periodically. Isolated units from recordings display large coefficients of variation (CVs). Beta oscillations appear to be a collective phenomenon arising from sparse synchronization of different non-oscillating units. This leads to the assumption that beta oscillations are sparsely synchronized oscillations arising from recurrent interaction between excitatory and inhibitory populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20, C23 describe experimental observations (Figure 1\u2014figure supplement 1b) and their interpretation. The observation of large CVs is clearly documented. The inference that beta oscillations arise from sparse synchronization is reasonable given the data and is supported by citation to relevant literature (Brunel and Hakim, 2008). This motivates the modeling approach, though C23 is explicitly stated as an assumption.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "In simulations without local inputs, results comparable to the reference model can only be obtained when the number of neurons per module is lowered to N=200. This would be quite a low number for the 0.1-0.2 mm\u00b2 area of motor cortex that each module represents, even if restricted to specific cortical layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 describe control simulations testing whether intrinsic stochasticity alone (without local inputs) can reproduce experimental patterns (Figure 3\u2014figure supplement 9). The finding that unrealistically low neuron numbers are required supports the importance of local inputs. The anatomical reasoning in C83 is sound. However, the authors acknowledge uncertainty about whether their noise description underestimates fluctuations in sparsely connected networks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C117"
+    ],
+    "result": "Comparison with recordings leads to the proposal that the whole network is close to the oscillation threshold and that fluctuating inputs from other cortical areas or structures such as the thalamus power bursts of beta oscillations. Comparison with available data has led to the conclusion that motor cortex operates close to the beta oscillatory instability line under strong fluctuating inputs from other areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C117 present the central hypothesis about network operating regime. This is supported by multiple lines of evidence: the model-data agreement requires operation near the bifurcation (Figure 1f-h, Figure 2), the waxing-waning of oscillations, and the burst statistics. However, these are inferences from model-data comparison rather than direct measurements. The claims are well-supported within the modeling framework but represent interpretations rather than direct observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C123",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The model suggests that motor cortex receives inputs targeting local areas and synchronous inputs targeting it globally. These external inputs could represent direct inputs from cortical areas (frontal, parietal) or extra-cortical structures (thalamus), with the thalamus being a privileged candidate. Specifically, diffused connectivity from calbindin-positive matrix neurons could provide global inputs while core parvalbumin-positive neurons could provide local inputs. The model predicts that wave propagation anisotropy is linked to anisotropy of local input targets, with waves predominantly observed orthogonal to the axis where inputs are more spread out.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C123, C134-C137 present speculations about biological sources of model inputs and testable predictions. While the model requires both local and global input components (C62-C64), the specific biological sources (C134-C136) are speculative, as acknowledged by the conditional language ('could represent', 'could be'). The prediction about input target anisotropy (C137) is testable but not yet validated. These claims represent reasonable hypotheses requiring experimental verification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Gatter et al., 1978 reported more spatially extended connectivity in layers 2/3 and 5 of motor cortex in the rostro-caudal direction, and Rubino et al., 2006 found that planar waves predominantly propagated along the same rostro-caudal axis. Given the model results showing waves propagate where connectivity is weaker, this argues against connectivity anisotropy being the dominant factor determining wave direction. The model suggests local input targets are more spread out along the medio-lateral dimension, which remains to be investigated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 compare model predictions with experimental observations to constrain mechanisms. The logic is sound: if the model predicts waves propagate where connectivity is weaker, but experiments show waves propagate where connectivity is stronger, then connectivity anisotropy alone cannot explain the observations. This leads to the alternative hypothesis about input target anisotropy (C111). The reasoning is valid, though C111 explicitly notes this requires experimental investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Beta rhythm consists of oscillations in the 13-30 Hz range, with motor cortex as one of its main locations in early human recordings. Beta oscillations were recorded in cats during focused attention and in monkeys during movement preparation, where they develop during the preparatory period and wane during movement. Beta oscillations appear as synchronized bursts of a few cycles, often synchronized on electrodes 1-2 mm apart, and can manifest as planar or complex waves propagating horizontally on motor cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 summarize established experimental findings from the literature, supported by appropriate citations (Jasper and Penfield, 1949; Penfield, 1954; Bouyer et al., 1987; Murthy and Fetz, 1992; Sanes and Donoghue, 1993; Rubino et al., 2006; Rule et al., 2018; Denker et al., 2018). These provide the empirical foundation for the modeling work. The claims are well-supported by cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Basal ganglia display prominent beta oscillations during movement phases, while sources of beta oscillations have been identified in cortex. TMS studies support that cortical regions have intrinsic oscillation frequencies matching their prominent rhythms, with premotor/supplementary motor area 6 resonating at ~30 Hz. The authors adopt the view that beta oscillations are generated by recurrent interactions in motor cortex but are strongly modulated by inputs from other areas, notably thalamic ones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 review literature on beta oscillation origins and justify the modeling approach. The claims are supported by appropriate citations (Leventhal et al., 2012; Jensen et al., 2005; Sherman et al., 2016; Rosanova et al., 2009). C17 explicitly states this is an adopted theoretical position, acknowledging it as an intermediate view between competing hypotheses. The literature review is accurate and the theoretical stance is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "Oscillations can emerge from recurrent interaction between interneurons when inhibition is sufficiently strong, but their frequencies tend to be in the upper gamma range or higher, controlled by synaptic transmission kinetics. Lower frequencies arise in networks of E-I units where each population inhibits itself via a slower disynaptic loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 summarize established knowledge about oscillation mechanisms in neural networks. C21 is supported by appropriate citations (Brunel and Wang, 2003; Geisler et al., 2005; de Solages et al., 2008). C22 represents standard knowledge in computational neuroscience. These claims provide theoretical justification for the E-I model architecture.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C24",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The model assumes neurons under different electrodes are mainly connected by excitatory connections with connection probability decreasing with distance. Capaday et al., 2009 report uniform (not patchy) distribution of boutons along horizontal axons. Relatively slow propagation speed (~30 cm/s) along unmyelinated horizontal axons in monkey cortex has been reported, with comparable speeds found in rat visual cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C28-C30 describe anatomical assumptions underlying the model, supported by appropriate citations (Huntley and Jones, 1991; Capaday et al., 2009; Hao et al., 2016; Gonz\u00e1lez-Burgos et al., 2000; Girard et al., 2001; Lohmann and R\u00f6rig, 1994). The assumptions are reasonable given available anatomical data, though the authors acknowledge some uncertainty about whether visual cortex data generalize to motor cortex.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "The average power of beta oscillations changes on a second time scale with different phases of movement (preparation, execution, post-execution). Within individual trials, beta oscillation amplitude fluctuates on much shorter time scales with brief bursts of elevated amplitudes of ~100 ms duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 describe temporal characteristics of beta oscillations from experimental recordings. C46 is supported by citation to Feingold et al., 2015. C47 is a descriptive observation from the data analyzed in this study. These claims establish the empirical phenomena the model aims to explain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Several groups have reported traveling waves on motor cortex during movement preparation. Early studies described planar waves, while later works classified spatio-temporal beta oscillations into different states: planar, radial, globally synchronized, and random. The median planar wave speed is about 30 cm/s, though the distribution includes events with much smaller velocities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 summarize experimental findings on traveling waves from the literature and the current dataset. The claims are supported by appropriate citations (Rubino et al., 2006; Rule et al., 2018; Denker et al., 2018; Brochier et al., 2018) and data analysis (Figure 3e). The classification scheme is clearly described and consistently applied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C71",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C78"
+    ],
+    "result": "In the SN model, input fluctuations promote oscillations: increasing noise amplitude first increases synchronized activity and planar wave speed, but at higher amplitudes, desynchronization counteracts oscillation promotion and wave speed decreases. In the ON model, oscillatory activity is self-generated and well-synchronized without fluctuating inputs; local inputs desynchronize modules and create phase differences, decreasing wave speed with increasing input amplitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71, C73-C76, C78 describe contrasting behaviors of SN and ON models in response to input fluctuations (Figure 3\u2014figure supplement 3). The results are clearly presented and internally consistent. The opposing effects in the two models (noise-promoted vs self-generated oscillations) provide insight into the operating regime. The claims are well-supported by simulation data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "Planar waves predominantly arise from synchronized states, and synchronized states tend to persist in the background of planar waves. Statistical analysis shows that of 421 planar waves starting after synchronized states, 364 were followed by synchronized states (p=3\u00d710\u207b\u2075\u2077), while planar waves starting from random states showed no such preference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 describes sequential relationships between wave states in model simulations. The statistical analysis is appropriate and the p-value indicates highly significant non-random transitions. This observation provides insight into wave generation mechanisms. The claim is well-supported by the simulation data and statistical analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The model builds on previous works describing beta oscillations as arising from E-I interactions. Sherman et al., 2016 used a more detailed two-layer model with multi-compartment neurons for MEG comparison. The present model uses simpler E-I modules but extends previous work by incorporating long-range interactions and analyzing spatio-temporal patterns. The oscillatory instability of coupled E-I networks is not qualitatively modified by long-range connections, and oscillations occur at beta frequency for adequate synaptic parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C116 position the current work relative to previous models and describe key findings. The claims are supported by appropriate citations (Pavlides et al., 2015; Sherman et al., 2016; Chen et al., 2020) and mathematical analysis. The comparison with previous work is fair and the novel contributions are clearly stated. The mathematical results (C115-C116) follow from the bifurcation analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Similar proximity to an oscillatory regime has been proposed for basal ganglia beta oscillations. The observed power enhancement on the low-frequency side of the beta peak requires external input correlation time not too short (~10 ms scale), while burst duration requires it not too long. External input amplitude must be large enough to modify LFP above intrinsic fluctuations but small enough to preserve oscillation harmonicity (avoiding secondary 50-60 Hz peak).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C122 describe constraints on model parameters derived from comparison with experimental data. C118 is supported by citations (Rubchinsky et al., 2012; Bahuguna et al., 2020). C119-C122 describe parameter constraints that are well-justified by the model-data comparisons (Figure 2\u2014figure supplement 3). The constraints are reasonable and clearly explained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C124",
+      "C125"
+    ],
+    "result": "Under the proposed input conditions, traveling waves of different kinds are observed that resemble those recorded in vivo in their repartition between wave types and propagation speeds. Characterization of inputs onto motor cortex during movement preparation is needed to test these theoretical predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C125 summarize model results and identify needed future work. C124 is supported by the extensive model-data comparisons (Figures 2-3). C125 appropriately identifies that direct experimental characterization of inputs is needed to validate the model's predictions. The claims accurately represent the current state of knowledge and needed next steps.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Propagating waves of neural activity have been observed in different contexts, some unrelated to oscillations (subthreshold waves, spiking activity propagation) and others based on oscillatory activity with various proposed mechanisms (frequency gradients, structural sequences). The traveling waves in the present model are based on oscillations, reflecting different phases at different positions. The model includes structural connectivity promoting synchronization, but stochastic external inputs create dephasings. Wave speeds are low (few tens of cm/s) and determined by oscillatory frequency and dephasings produced by external inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C132 contextualize the current work within the broader literature on traveling waves and explain the specific mechanism in this model. The claims are supported by appropriate citations (Ermentrout and Kleinfeld, 2001; Muller et al., 2018; Bringuier et al., 1999; Davis et al., 2020; Ermentrout et al., 1998; Muller et al., 2016) and model analysis. The mechanistic explanation is clear and distinguishes this work from alternative mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C133",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "The existence of a global input component appears consistent with global inhibition in motor cortex during movement preparation. The model suggests inputs to motor cortex play an important role in generating beta oscillations and spatio-temporal patterns. Traveling waves have been shown to carry information about subsequent movement. Movement preparation is viewed as taking place in a subspace orthogonal to movement dynamics, but beta oscillations and their timescale are absent from this description.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133, C138-C141 discuss broader implications and connections to other work. C133 is supported by citation (Greenhouse et al., 2015). C138 summarizes a key conclusion from the model. C139-C141 are supported by appropriate citations (Rubino et al., 2006; Kaufman et al., 2014; Wang et al., 2018; Zimnik and Churchland, 2021; Inagaki et al., 2022; Bachschmid-Romano et al., 2022) and accurately identify a gap in current understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "The local E-I module is well-known to exhibit oscillatory dynamics when recurrent interaction within the E population is sufficiently strong. Long-range excitation between local E-I modules has been shown in previous works to synchronize the oscillatory dynamics of local E-I modules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 state established knowledge in computational neuroscience. C8 represents standard knowledge about E-I networks. C9 is supported by citations to Ermentrout and Kopell, 1991 and Kulkarni et al., 2020. These claims provide theoretical foundation for the model architecture.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C12"
+    ],
+    "result": "The spatially extended network submitted to both local and global external inputs exhibits waves of different types that closely resemble those recorded in monkey motor cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C12 summarizes a major finding of the paper. This is supported by extensive model-data comparisons throughout the Results section (Figures 2-3). The claim accurately represents the demonstrated model-data agreement.",
+    "result_type": "MAJOR"
+  }
+]

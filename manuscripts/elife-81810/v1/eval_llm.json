@@ -1,0 +1,477 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C156",
+      "C157",
+      "C204"
+    ],
+    "result": "ITRAP is a data-driven filtering method for single-cell TCR-pMHC data that was validated across 10 viral pMHC specificities in 16 healthy donors, identifying 1494 high-confidence TCR-pMHC pairs from 4135 single cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C36-C39, C156-C157 provide converging evidence for the development and validation of ITRAP. The quantitative results (1494 clonotypes from 4135 cells) are consistently reported and supported by experimental data throughout the manuscript. The method addresses known challenges in single-cell sequencing (C3) using a rational approach (C4, C36).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The 10x Genomics droplet-based single-cell platform is associated with substantial noise from multiple sources including multiplet capture, contamination, dropout, and stochastic gene expression, which challenge accurate TCR-pMHC pairing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C35 describe well-established technical challenges in single-cell sequencing, supported by citations (C28, C29, C31) and demonstrated in the data (C26, C32). The characterization of noise sources is comprehensive and forms the rationale for developing ITRAP.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The experimental design involved staining PBMCs with 10 APC-labeled pMHC multimers (positive selection) and 3 PE-labeled pMHC multimers (negative controls), followed by cell hashing and sorting of 1800 cells per donor for single-cell sequencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C52 describe the experimental workflow with specific technical details that are internally consistent and shown in Figure 1. The use of negative controls (C42) and cell hashing (C44-C45) are appropriate experimental design choices for this type of study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Raw unfiltered data contained 6073 GEMs with all three components (TCR, pMHC, hashing), representing 40% of loaded cells, but 716,069 GEMs contained incomplete components, indicating extensive contamination from ambient barcodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C63 present quantitative data analysis results shown in Figure 2a-b. The statistical comparison (C58, p<0.0005) and the large discrepancy between expected and observed GEM counts (C57) provide strong evidence for contamination. These observations justify the need for filtering.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Analysis of unfiltered data revealed that negative control pMHCs were rarely detected as most abundant (4-17 GEMs each), 65% of GEMs contained pMHC multiplets, and most captured T cells showed interactions with multiple pMHCs exceeding expected cross-recognition levels, indicating substantial noise requiring filtering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C76 provide detailed characterization of noise in the raw data, supported by quantitative results and Figure 2d. The low detection of negative controls (C64-C67) validates the sorting strategy, while the high multiplet rate (C71, 65%) and database cross-referencing (C72-C73) demonstrate the extent of contamination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Clonotypes were redefined by merging GEMs with identical VJ-CDR3\u03b1\u03b2 sequences, resulting in 2441 TCR clonotypes across 6073 GEMs, enabling statistical inference at the clonotype level rather than individual GEM level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 describe the clonotype annotation methodology with clear rationale (C80). The approach builds on standard Cellranger definitions (C77) and extends them appropriately. The quantitative result (C81) is consistent with other reported values.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The expected pMHC target for a clonotype should be determined by identifying which pMHC has significantly higher mean UMI counts across all GEMs in the clonotype, rather than by simple majority voting, as demonstrated in Figure 3 with clonotype 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 present a key methodological principle of ITRAP with supporting evidence from Figure 3. The example of clonotype 1 (C86-C87) demonstrates that UMI abundance is more informative than GEM frequency for identifying true targets, providing strong justification for this approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Grid search optimization identified optimal UMI thresholds of \u22652 pMHC UMI counts and pMHC UMI ratio >1, which improved accuracy from 69.6% to 95.3% and concordance from 83.8% to 90.6%, retaining 4986 GEMs (82%) and 1494 clonotypes (61%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C95 describe the threshold optimization with clear methodology (C90-C91) and quantitative results (C89, C95). The substantial improvement in performance metrics and the finding that TCR thresholds were not needed (C94) are internally consistent and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Additional filtering options include Cellranger 'is cell' filter, viable cell filtering based on mitochondrial load and gene counts, and HLA matching filter (reducing to 4135 GEMs), with cell hashing demultiplexing performed using Seurat HTO tool.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C104 describe additional filtering approaches with appropriate technical details. The comparison of different cell quality filters (C96-C98) and the use of established tools like Seurat HTO (C102) are reasonable. The HLA matching filter (C103-C104) is a logical quality control step.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "TCR similarity analysis based on kernel methods showed that intra-specificity similarity is significantly higher than inter-specificity similarity at each filtering step, with improvement from 9/13 to 11/13 pMHCs showing higher intra-similarity after optimal threshold filtering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C112 present a validation approach based on established methods (C107, citing Shen et al. 2012 and Chronister et al. 2021). The quantitative results (C108-C109) and statistical significance (C110) shown in Figure 4 support the effectiveness of filtering. The observation that inter-similarity decreases (C112) indicates removal of false positives.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Performance evaluation across multiple metrics showed optimal threshold filtering achieved highest accuracy (95.3%) and concordance (90.6%), while specificity singlet filtering achieved highest AUC (70.5%), with cumulative filtering causing substantial GEM reduction requiring trade-offs between specificity and sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C120 present comprehensive performance evaluation shown in Figure 5. The quantitative results are internally consistent and demonstrate clear trade-offs (C116). The finding that GEX data did not improve performance considerably (C119) is an important negative result that informs practical application.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "After applying recommended filters (optimal threshold + HLA match), outliers were greatly reduced, with 77/2833 GEMs (2.7%) showing low concordance (\u22640.5), of which 72 contained pMHC multiplets and 93% contained the expected pMHC at lower UMI counts, suggesting these outliers result from noise rather than cross-reactivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C131 analyze the filtered data shown in Figure 6 with detailed characterization of remaining outliers. The quantitative analysis (C125-C130) and the inference that outliers represent noise (C131) are well-supported by the observation that most multiplet outliers contain the expected pMHC at lower UMI counts (C127).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Cross-referencing with IEDB/VDJdb databases identified six clonotypes before filtering; five matching clonotypes (nine GEMs) were retained after filtering while one mismatching clonotype was filtered away, with all retained pMHCs detected at UMI counts of 17-46.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C136 provide validation against external databases. The retention of true positives (C133) and removal of a false positive (C133) demonstrates appropriate filter performance. The UMI count range (C136) provides useful context for understanding detection sensitivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Single-cell screening revealed T cell repertoire diversity and clonality information not available from fluorescent multimer staining, showing clear hierarchy of responses with samples BC328 and BC62 displaying strikingly similar clonal distributions dominated by responses to RVR A0301, RPP B0702, and TPS B0702.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C143 describe advantages of single-cell screening over traditional methods, supported by Figure 7. The specific observations about samples BC328 and BC62 (C141-C142) demonstrate the type of clonal information uniquely available from this approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Comparison with fluorescent multimer staining showed strong correlation (PCC=0.73, MCC=0.63) with high recall (0.95) but lower precision (0.71) due to capture of small clones below fluorescent detection threshold, with linear regression indicating ~10% of sorted cells captured with TCR-pMHC information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C155 provide validation against an orthogonal method shown in Figure 7. The strong correlation (C151, C163) and high recall (C146) demonstrate good agreement, while the lower precision (C147) is explained by detection threshold differences (C148). The 10% capture rate (C155) is a useful practical benchmark.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "ITRAP is adaptable to any single-cell immune profiling dataset with recommended filtering using optimal UMI thresholds plus HLA matching, achieving 96.2% accuracy, 92.3% concordance, and 66.7% AUC, though validation is challenging without a gold standard.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C163 summarize ITRAP's performance and applicability. The quantitative metrics (C162-C163) are consistent with detailed results presented earlier. The acknowledgment of validation challenges (C161) is appropriate given the lack of ground truth data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "The accuracy metric is based on clonotypes with statistically distinct expected targets and assumes no cross-reactivity among included pMHCs, with optimal thresholds assuming contamination exists at lower UMI counts than true binding, which limits sensitivity for low-affinity interactions but preserves cross-reactive events with proper UMI counts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C170 describe important limitations and assumptions of the method. The acknowledgment that low-affinity interactions may be missed (C168) is an honest limitation. The distinction from other tools that explicitly exclude cross-reactivity (C169-C170) is an important methodological difference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "The binding concordance metric can identify cross-reactive clonotypes and establish relative TCR binding contributions to different pMHC targets, which is increasingly relevant given growing evidence for T cell cross-recognition in infectious disease and cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C171-C175 describe the utility of the concordance metric with appropriate citations supporting the relevance of cross-recognition (C174). The description of use cases (C172-C173) demonstrates the metric's flexibility for different research questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "The AUC similarity metric showed increasing separation of intra- and inter-specificities with cumulative filtering, with clonotype singlet removal providing the best single filtering step (AUC=70.5%) but causing substantial loss of TCR capture, requiring balance between stringency and sensitivity for low-frequency specificities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C176-C181 describe the AUC metric and trade-offs in filtering stringency. The improvement with singlet removal (C178) and the acknowledgment of data loss (C180) shown in Figure 7b demonstrate appropriate consideration of trade-offs. The recommendation for balancing stringency (C181) is practical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187"
+    ],
+    "result": "UMI thresholds are data-specific and must be fitted for individual experiments; ITRAP was successfully applied to a public 10x Genomics dataset with different optimal thresholds, demonstrating robustness across different biological and technical settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C182-C187 address generalizability through application to an independent dataset (C183-C185). The observation that thresholds varied between datasets (C186) but performance remained strong (C184-C185) supports the claim of robustness (C187). However, this relies on a separate publication (Povlsen et al., 2023).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194"
+    ],
+    "result": "Benchmarking against ICON showed overall superior performance of ITRAP in data consistency and performance, with ITRAP offering more flexibility through adjustable filtering levels and requiring HLA haplotype information that ICON lacks, resulting in ~15% HLA mismatches in ICON annotations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C188-C194 describe comparison with ICON, but the benchmark results are referenced from a separate publication (C188, C190) rather than shown in this manuscript. The criticism of ICON's HLA mismatches (C194) is stated but not demonstrated here. Without seeing the actual benchmark data, the superiority claim cannot be fully evaluated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C195",
+      "C196",
+      "C197",
+      "C198"
+    ],
+    "result": "Negative control pMHCs may provide false confidence as T cell specificity limits are unknown, and filtering methods must carefully handle the range of affinities displayed by different clonotypes, as low-affinity clonotypes may appear as noise compared to high-affinity ones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C195-C198 raise important conceptual concerns about filtering approaches. The point about negative controls (C195) is a valid criticism of relying too heavily on them. The challenge of distinguishing low-affinity binding from noise (C197-C198) is a fundamental limitation acknowledged appropriately.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background on T cell biology and TCR repertoire analysis: T cells recognize antigens through heterodimeric TCRs with diversity generated by V(D)J recombination (~10^7 distinct \u03b1\u03b2TCRs per individual), enabling TCR use as cellular barcodes for tracking T cell dynamics in disease, though bulk sequencing loses \u03b1-\u03b2 pairing information essential for understanding specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C20 provide established immunological background supported by appropriate citations (C10, C12-C15, C17, C19). These are well-accepted facts in the field that provide context for the study. The importance of paired chain information (C16-C17) motivates the single-cell approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "The study applied single-cell sequencing to viral-derived pMHCs selected to expand knowledge of TCR-pMHC interactions, covering pMHCs with limited or no paired TCR coverage in IEDB and VDJdb databases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 describe the study's rationale and pMHC selection strategy. The focus on underrepresented pMHCs (C22) is a reasonable approach to generate novel data and is consistent with the low number of database matches found (C72, C132).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C205",
+      "C206"
+    ],
+    "result": "Effective TCR-pMHC pairing will enable interrogation of T cell recognition in pathogenic processes, with intensive efforts toward TCR specificity prediction requiring paired \u03b1-\u03b2 chain data; ITRAP provides a foundation for future experimental validation studies, particularly for low-frequency T cell populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C199-C206 discuss future applications and impact. The statements about ongoing efforts in specificity prediction (C200-C201) are supported by citations. The acknowledgment that future experimental validation is needed (C205) is appropriate, and the claim that ITRAP enables identification of candidates for validation (C206) is reasonable.",
+    "result_type": "MINOR"
+  }
+]

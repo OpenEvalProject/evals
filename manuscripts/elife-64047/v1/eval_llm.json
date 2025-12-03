@@ -1,0 +1,446 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C3",
+      "C28",
+      "C112",
+      "C113",
+      "C114",
+      "C149"
+    ],
+    "result": "Nanoscape is a novel, interactive 3D visualization tool that integrates scientific data from multiple sources to create a real-time explorable environment of a breast cancer cell within a tumor microenvironment, implemented in Unity3D and designed primarily for educational purposes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C27, C3, C28, C112, C113, C114, and C149 collectively establish that Nanoscape is a collaborative, data-driven visualization tool with specific technical implementation and educational goals. The manuscript provides detailed descriptions of the development process, technical platform, and intended use, supported by figures and methods sections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C32",
+      "C33",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C96"
+    ],
+    "result": "The authors collected and integrated data from literature, databases (Cell Surface Protein Atlas, PDB), experimental collaborators, and microscopy to inform the visualization of breast cancer cell surface components and tumor microenvironment features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C30, C32, C33, C82, C83, C84, C85, C86, and C96 describe a comprehensive data collection methodology combining literature review, database mining, experimental data, and expert consultation. The approach is well-documented with references to specific sources and validation against published data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C38",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Molecular Maya (mMaya) was used to simulate protein conformational changes and ligand binding events qualitatively, using molecular mechanics force fields to model protein dynamics without strict thermodynamic constraints, as demonstrated for EGFR and other receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C38, C157, C158, C159, C160, and C161 describe the use of mMaya for protein dynamics simulation. The methodology is clearly explained, including technical details about force fields and differences from molecular dynamics. Figure 3 provides visual evidence of EGFR conformational changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Using the autoPACK algorithm with flow cytometry data for six surface biomarkers on MDA-MB-231 cells, packing simulations on 1 \u03bcm\u00b2 patches revealed that 12,650 proteins of variable sizes could be accommodated with moderate molecular crowding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C52, and C53 describe a computational validation of protein density feasibility. The methodology is clearly described, uses published flow cytometry data (Cahall et al., 2015), and provides quantitative results shown in Figure 4. This demonstrates the practicality of representing realistic protein densities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C80"
+    ],
+    "result": "The plasma membrane in Nanoscape is represented using an animated texture to simulate lipid bilayer form and dynamics, based on established knowledge of membrane composition, asymmetry, and lipid diffusion properties, rather than explicit molecular representation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C77 and C80 establish the biological basis for membrane representation and the technical approach taken. The authors provide extensive background on membrane biology (supported by citations) and justify their simplification approach (C80) based on computational and perceptual constraints. Figure 3C shows the lipid bilayer model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "The ECM visualization in Nanoscape focused on four key components (collagens I and IV, hyaluronic acid, and fibronectin) using stylized artistic approaches to overcome challenges including incomplete structural data, unclear assembly mechanisms, and computational constraints, while consulting with ECM experts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C104 and C162-C168 comprehensively describe the ECM modeling approach, challenges, and solutions. The authors acknowledge gaps in knowledge (C101, C104, C167) and justify their artistic simplifications (C95, C99) while providing detailed structural information where available. Figure 6 illustrates the ECM components and modeling approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Additional tumor microenvironment components including neighboring cancer cells, cancer-associated fibroblasts, and a leaky blood vessel with animated blood flow were incorporated into Nanoscape to create a more comprehensive representation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108, C109, C110, and C111 describe the addition of contextual cellular components supported by established knowledge (C108-C110 with citations) and documented in the visualization (C111). Figure 7 and Video 2 provide visual evidence of these components.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "To prioritize user experience, Nanoscape made deliberate simplifications including reducing molecular crowding, making water and ions implicit, using textures for lipids, limiting ECM to collagen I, slowing protein dynamics, sacrificing atomic resolution, and applying artistic license through color, lighting, and sound.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C123 transparently document the design compromises made for user experience and computational feasibility. The authors explicitly acknowledge these simplifications and provide clear rationale for each decision. This transparency is a strength of the work, though it means the visualization is not fully quantitative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "Nanoscape incorporates a level-of-detail feature that dynamically reduces polygon density of proteins based on distance from the user, decreasing computational burden while maintaining perceived detail and allowing more proteins to be displayed simultaneously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40 and C41 describe a specific technical solution to computational constraints. This is a standard computer graphics technique appropriately applied to the visualization challenge. The implementation is clearly described though not quantitatively validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The authors hypothesize that Nanoscape will improve understanding of cellular complexities compared to traditional learning modalities, but acknowledge that formal evaluation of user experience and educational outcomes is necessary and outside the scope of the current development work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4, C130, C131, and C132 present educational hypotheses without empirical validation. While C131 references similar studies (Jenkinson and McGill, 2012) suggesting plausibility, the authors appropriately acknowledge (C130) that evaluation is needed. The educational claims remain speculative until tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Nanoscape significantly surpasses the cell surface detail and complexity of the previous Journey to the Centre of the Cell project, though it is less immersive, and has been carefully designed to balance complexity with comprehensibility for educational purposes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 and C125-C127 provide context by comparing to prior work. The comparison is supported by citation to the previous project (C23) and the authors' direct experience with both projects. The claims about improved detail (C125) and design goals (C127) are consistent with the extensive documentation provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Molecular crowding (20-30% of intracellular volume) influences protein behavior and is often underrepresented in visualizations due to computational constraints and fear of cognitive overload, despite evidence that such simplification worsens student misconceptions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 and C54-C56 establish the biological importance of crowding (C46-C47 with citations), document common visualization practices (C48 with citations), identify technical challenges (C49), and cite educational research showing negative effects of oversimplification (C50 with multiple citations). This provides strong justification for attempting more realistic representations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Choreographed molecular visualizations can misleadingly suggest 'directed intent' in ligand-receptor binding, whereas more authentic depictions would show random walks with non-specific interactions, though artists may avoid this complexity; careful use of graphic devices can improve understanding of complex visualizations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 identify a common problem in molecular visualization (C58), propose a more accurate alternative (C59 with citations), explain practical barriers (C60), and suggest solutions (C61 with citations). This analysis is well-supported by educational research and provides important context for visualization design choices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Conformational flexibility is crucial for protein function, but most proteins lack complete structural data, potentially leading to misleading single-structure representations; Nanoscape addressed this by using multiple conformational states from the PDB and mMaya simulations where possible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 identify an important limitation in structural biology (C36), explain its consequences for visualization (C37 with citation), and describe Nanoscape's approach to address it (C38). The solution is practical though necessarily incomplete given data limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Protein dynamics span femtoseconds to milliseconds while cellular processes occur over seconds to minutes, creating major challenges for biomedical animators in representing broad spatio-temporal scales, often resulting in sacrificed atomic resolution and motion in multi-scale cellular animations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 identify a fundamental challenge in cellular visualization arising from the vast range of biological timescales (C43 with citations). The characterization of this challenge (C44) and its typical consequences (C45) are well-established in the field and provide important context for Nanoscape's design decisions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "The PDB and newer PDB-Dev provide infrastructure for archiving structural data, but biomedical visualizations often lack clear citations; transparent archiving and citation systems are needed, though maintaining such systems is challenging due to the time-intensive nature of data curation and the rapid pace of discoveries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C148 discuss data archiving infrastructure (C139-C143 with citations), identify citation problems in visualization (C144), advocate for transparency (C145, C148), and acknowledge practical challenges (C146-C147). This analysis is well-reasoned and supported by knowledge of database systems and visualization practices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Beyond education, Nanoscape may serve as a public outreach tool and science-based art, potentially stimulating holistic reflection on biological systems, though it is unlikely to be suitable for rigorous data interrogation due to artistic treatments; multimodal data exploration applications may promote broader scientific speculation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C133-C138 propose potential applications beyond the primary educational purpose. While the artistic value (C135) and outreach potential (C133) are reasonable given the design approach, the research utility claims (C137, C138) are speculative. The acknowledgment of limitations for data interrogation (C136) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C128",
+      "C129"
+    ],
+    "result": "Future development plans for Nanoscape include user-defined control features for zooming between atomic and cellular scales, and adjustable parameters for molecular density and temporal dynamics to experience more authentic cellular environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128 and C129 describe planned future enhancements. These are clearly stated as future work and represent logical extensions of the current system to address acknowledged limitations. The plans are technically feasible though not yet implemented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "The work documents technical and creative processes in data-driven cellular visualization, potentially helping experimentalists reflect on their data; as visualization technologies advance, they may eventually enable in silico experiments and drug development, with ideal comprehensive cell models requiring interdisciplinary collaboration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C150-C156 present conclusions and future vision. The documentation contribution (C150) is supported by the manuscript content. However, claims about helping experimentalists (C151), future in silico experiments (C154), and ideal cell models (C155) are speculative. The call for interdisciplinary collaboration (C156) is well-founded but not a research finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The manuscript establishes context by reviewing the state of cellular visualization, including imaging techniques, educational benefits of 3D visualization, challenges in data integration, common practices and limitations in biomedical animation, and existing visualization tools and reconstructions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C22 provide comprehensive background on cellular visualization, supported by numerous citations to established literature. This contextualizes the need for and approach taken in Nanoscape. The review accurately represents the state of the field based on cited sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C31",
+      "C81"
+    ],
+    "result": "Cell surface proteins (the surfaceome) play diverse roles in cellular communication and transport, and cellular processes occur at the biological mesoscale between nanometer molecular structures and micrometer cellular architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31 and C81 provide biological context supported by citations (Bausch-Fluck et al., 2018; Goodsell et al., 2018; Laughlin et al., 2000). These establish the biological basis for the visualization focus and scale.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "Low polygon meshes reduce computational burden but may compromise important scientific information such as ligand binding pocket specificity essential for conveying mechanism of action.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 identifies a key trade-off in molecular visualization between computational efficiency and scientific accuracy. This is a well-established principle in computer graphics and molecular visualization, appropriately applied to justify design decisions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Replicating lateral diffusion of millions of lipids is computationally intensive, and it is questionable whether viewers can observe or appreciate such detail in large scenes or gain real insight from it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C78 about computational intensity is well-founded, but C79 about viewer perception is speculative without empirical evidence. While the inference is reasonable, it represents an assumption rather than a demonstrated fact. This uncertainty appropriately influenced the design decision to use texture-based representation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Many molecular visualizations fail to show cell-ECM connections or represent ECM density in vivo, which may exacerbate naive views of the ECM, whereas evidence suggests more complex molecular representations can improve understanding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 identify a gap in current visualization practices (C105), predict negative consequences (C106), and cite evidence for benefits of complexity (C107 with citations to Jenkinson et al., 2016; Jenkinson and McGill, 2012). This provides justification for including ECM in Nanoscape despite challenges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C124"
+    ],
+    "result": "Nanoscale cellular entities are below the wavelength of light and devoid of noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C124 states established physical principles about the scale of nanoscale structures relative to visible light wavelengths and the absence of sound at molecular scales. This justifies the acknowledged use of artistic license in applying color, lighting, and sound to the visualization.",
+    "result_type": "MINOR"
+  }
+]

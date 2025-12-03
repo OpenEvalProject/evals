@@ -1,0 +1,210 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "GapR preferentially binds to overtwisted, positively supercoiled DNA in vitro. Topological assays show GapR converts nicked plasmid to positively supercoiled forms, and magnetic tweezer experiments demonstrate that GapR constrains positive superhelical density, preventing writhing and increasing DNA extension at positive \u03c3. GapR-DNA complexes are less stable at negative \u03c3, showing larger dynamical fluctuations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 provide converging evidence from multiple in vitro techniques (topological assays, 2D chloroquine electrophoresis, and magnetic tweezer experiments) that consistently demonstrate GapR's preferential binding to positively supercoiled DNA. The data show both structural (increased extension) and stability (reduced fluctuations) differences between positive and negative supercoiling conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C12"
+    ],
+    "result": "Ectopic expression of GapR-3xFLAG in E. coli and S. cerevisiae does not significantly perturb cellular physiology, including growth rate, global transcription, or stress response pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C12 demonstrate that GapR expression is well-tolerated in both bacterial and eukaryotic systems without causing major transcriptional or physiological changes. This is critical for validating that GapR-seq reports on endogenous supercoiling rather than artifacts from cellular stress.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C13",
+      "C15",
+      "C16"
+    ],
+    "result": "GapR binds at the 3' ends of highly expressed transcription units in a transcription-dependent manner, with binding correlating with transcriptional strength in both E. coli and S. cerevisiae. In yeast, GapR occupancy between co-oriented genes correlates with upstream but not downstream gene expression, and GapR binding changes in response to altered transcription during \u03b1-factor arrest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C13, C15, and C16 provide extensive ChIP-seq data with statistical support (t-tests with p<10^-13 to p<10^-25) demonstrating transcription-dependent GapR binding at 3' ends in both organisms. The rifampicin experiments (C5) and \u03b1-factor experiments (C16) provide direct evidence of transcription-dependence. The correlation with upstream but not downstream genes (C15) further validates the twin-domain model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C8"
+    ],
+    "result": "Dimeric GapR1-76 binds DNA but does not recognize DNA topology, and its ChIP profile does not correlate with full-length GapR, demonstrating that tetrameric GapR specifically recognizes positive supercoiling rather than simply binding accessible DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C8 provide a critical negative control showing that the truncated dimeric form of GapR lacks topological specificity. The lack of correlation between GapR and GapR1-76 ChIP profiles (C8) rules out the alternative explanation that GapR simply binds accessible DNA, strongly supporting the conclusion that full-length GapR specifically recognizes positive supercoiling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C14",
+      "C41"
+    ],
+    "result": "GapR is enriched at convergently oriented transcription units compared to divergently oriented or intragenic regions in both E. coli and S. cerevisiae. This enrichment is transcription-dependent, and regions with the highest transcription-dependent changes in GapR are highly enriched for convergent transcription, consistent with the twin-domain model prediction that positive supercoils accumulate between converging RNA polymerases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11, C14, and C41 provide strong statistical evidence (t-test p<10^-9, Fisher's exact test p<10^-35) for enrichment at convergent genes in both organisms. The transcription-dependence (C10) and the enrichment of convergent orientations in regions with highest GapR changes (C11) provide compelling support for the twin-domain model. The consistency across bacterial and eukaryotic systems strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "In S. cerevisiae, GapR can bind in heterochromatin regions and is found within 200 bp of nucleosomes, but GapR enrichment is not strongly correlated with DNase I hypersensitivity, indicating that DNA accessibility is not the primary determinant of GapR binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 demonstrate that GapR can access compacted chromatin (C17) and bind near nucleosomes (C18), but the lack of correlation with DNase accessibility (C19) indicates that chromatin accessibility does not predict GapR binding. This supports the conclusion that GapR specifically recognizes DNA topology rather than simply binding accessible regions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C20"
+    ],
+    "result": "GapR-seq in S. cerevisiae shows little overlap or correlation with psoralen-based methods for detecting positive supercoiling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C20 is supported by direct comparison of GapR-seq with published psoralen data. However, this result highlights a discrepancy between methods rather than definitively resolving which approach is more accurate. The lack of correlation could reflect limitations of either method or differences in what each method detects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C38"
+    ],
+    "result": "In S. cerevisiae, GapR accumulates at centromeres upon \u03b1-factor arrest and glycerol growth, with highest occupancy immediately 5' of CEN and extending ~500 bp on both sides. GapR is also enriched at pericentromere boundaries marked by convergent genes, validating prior proposals that positive supercoiling accumulates at centromeres.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 provide ChIP-seq data showing GapR enrichment at centromeres and pericentromeres under specific growth conditions. The alignment of GapR signal across all 16 centromeres (C22) provides strong evidence for a conserved pattern. Claim C38 provides the prior hypothesis context, and the GapR-seq data validate this hypothesis with direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C37"
+    ],
+    "result": "In S. cerevisiae, cohesin-enriched regions are frequently associated with GapR binding, with >90% of the top 500 cohesin peaks having significant neighboring GapR enrichment within 200 bp in glycerol-grown cells. This supports the hypothesis that cohesin binding is associated with positive supercoiling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24 and C25 provide systematic analysis of the relationship between GapR and cohesin (Scc1) ChIP data, showing strong spatial association. Claim C37 provides the prior hypothesis that cohesin preferentially associates with positively supercoiled DNA. The >90% co-occurrence (C25) provides strong quantitative support for this association, though causality cannot be definitively established from correlation alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "In S. cerevisiae, GapR binds at two major peaks in the rDNA locus: one at the 3' end and one at the replication fork barrier (RFB) upstream of rARS. GapR is also enriched within many autonomously replicating sequences (ARS) in cells treated with \u03b1-factor and grown in glycerol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26 and C27 identify GapR enrichment at replication-associated sites. The RFB peak (C26) is particularly interesting as it coincides with where the replication machinery arrests. The enrichment at ARS in G1-extended conditions (C27) suggests that positive supercoiling at these sites is not solely due to active replication but may involve other factors such as protein binding or transcriptional effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C39",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "In S. cerevisiae, GapR peaks are associated with the borders of R-loops at Ty element LTRs and telomeres containing Y' elements, with GapR enrichment centered just beyond DRIP-seq peaks marking DNA-RNA hybrids. The authors propose that positive supercoiling may be generated during R-loop formation and could act as a barrier to R-loop expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C28 and C29 provide clear evidence of spatial association between GapR and R-loops, with GapR peaks adjacent to but not overlapping with DRIP-seq peaks. However, claims C43 and C44 are explicitly speculative proposals about the functional relationship between positive supercoiling and R-loops. While claim C42 cites prior work (Stolz et al., 2019) supporting the sensitivity of R-loops to supercoiling, the mechanistic relationship and directionality of causation remain uncertain. The data show correlation but do not definitively establish whether positive supercoiling causes, results from, or regulates R-loop formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The manuscript provides background on the twin-domain model of supercoiling, topoisomerase function, psoralen-based methods and their limitations, and prior work on GapR in Caulobacter crescentus, as well as properties of eukaryotic chromatin relevant to interpreting GapR-seq results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C36 are background claims supported by appropriate citations to prior literature. These provide essential context for interpreting the current work but do not represent new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C40",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "GapR-seq provides a direct, high-resolution readout of positive supercoiling in living cells and is applicable across organisms. Positive supercoiling is widespread in genomes, associated with transcription, enriched between convergently oriented genes, and in yeast is also associated with centromeres, cohesin-binding sites, ARS, and R-loop borders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40 and C45-C49 represent the major conclusions of the manuscript, synthesizing the findings from both E. coli and S. cerevisiae. These conclusions are well-supported by the extensive ChIP-seq data, in vitro validation experiments, and consistency across multiple genomic contexts and organisms. The claim that GapR-seq is 'applicable in any organism' (C45) is somewhat speculative but reasonable given the success in both bacterial and eukaryotic systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The authors acknowledge caveats to the GapR-seq approach, including potential limitations in detecting different degrees of twist or writhed structures, possible supercoiling-independent recognition of AT-rich DNA, and discuss why GapR-seq appears to work similarly in yeast chromatin despite its low torsional stiffness, proposing that GapR senses DNA torque rather than large-scale conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 represent important caveats and mechanistic interpretations. The caveats (C50, C51) are appropriately acknowledged limitations. The interpretation that GapR senses torque rather than conformation (C52-C54) is a reasonable inference from the similarity of results in bacteria and yeast, though it remains somewhat speculative and would benefit from additional experimental validation.",
+    "result_type": "MINOR"
+  }
+]

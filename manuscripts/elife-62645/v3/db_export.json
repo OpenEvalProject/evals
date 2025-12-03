@@ -1,0 +1,1810 @@
+{
+  "submission": {
+    "id": "7a3ac7d2-7078-4039-8893-4e15e7c9412d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T09:48:19.778541Z",
+    "updated_at": "2025-12-03T09:48:19.778541Z"
+  },
+  "content": [
+    {
+      "id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "submission_id": "7a3ac7d2-7078-4039-8893-4e15e7c9412d",
+      "content_type": "manuscript",
+      "content_text": "# Hyaluronic acid fuels pancreatic cancer cell growth\n\n## Authors\n\n- Peter K Kim<sup>1</sup> ([ORCID: 0000-0001-9382-7223](https://orcid.org/0000-0001-9382-7223))\n- Christopher J Halbrook<sup>2</sup>\n- Samuel A Kerk<sup>1</sup>\n- Megan Radyk<sup>2</sup>\n- Stephanie Wisner<sup>2</sup>\n- Daniel M Kremer<sup>2</sup>\n- Peter Sajjakulnukit<sup>1</sup>\n- Anthony Andren<sup>2</sup>\n- Sean W Hou<sup>2</sup>\n- Ayush Trivedi<sup>2</sup>\n- Galloway Thurston<sup>2</sup>\n- Abhinav Anand<sup>2</sup>\n- Liang Yan<sup>4</sup>\n- Lucia Salamanca-Cardona<sup>5</sup>\n- Samuel D Welling<sup>2</sup>\n- Li Zhang<sup>2</sup>\n- Matthew R Pratt<sup>6</sup> ([ORCID: 0000-0003-3205-5615](https://orcid.org/0000-0003-3205-5615))\n- Kayvan R Keshari<sup>5</sup>\n- Haoqiang Ying<sup>4</sup>\n- Costas A Lyssiotis<sup>2</sup> ([ORCID: 0000-0001-9309-6141](https://orcid.org/0000-0001-9309-6141)) \u2020\n\n### Affiliations\n\n1. Doctoral Program in Cancer Biology, University of Michigan Ann Arbor United States\n2. Department of Molecular & Integrative Physiology, University of Michigan Ann Arbor United States\n3. Program in Chemical Biology, University of Michigan Ann Arbor United States\n4. Department of Molecular and Cellular Oncology, University of Texas MD Anderson Cancer Center Houston United States\n5. Department of Radiology, Memorial Sloan Kettering Cancer Center New York City United States\n6. Department of Chemistry, University of Southern California Los Angeles United States\n7. Department of Biological Sciences, University of Southern California Los Angeles United States\n8. Molecular Pharmacology Program, Memorial Sloan Kettering Cancer Center New York City United States\n9. Department of Internal Medicine, Division of Gastroenterology and Hepatology, University of Michigan Ann Arbor United States\n10. Rogel Cancer Center, University of Michigan Ann Arbor United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nRewired metabolism is a hallmark of pancreatic ductal adenocarcinomas (PDA). Previously, we demonstrated that PDA cells enhance glycosylation precursor biogenesis through the hexosamine biosynthetic pathway (HBP) via activation of the rate limiting enzyme, glutamine-fructose 6-phosphate amidotransferase 1 (GFAT1). Here, we genetically ablated GFAT1 in human PDA cell lines, which completely blocked proliferation in vitro and led to cell death. In contrast, GFAT1 knockout did not preclude the growth of human tumor xenografts in mice, suggesting that cancer cells can maintain fidelity of glycosylation precursor pools by scavenging nutrients from the tumor microenvironment. We found that hyaluronic acid (HA), an abundant carbohydrate polymer in pancreatic tumors composed of repeating N-acetyl-glucosamine (GlcNAc) and glucuronic acid sugars, can bypass GFAT1 to refuel the HBP via the GlcNAc salvage pathway. Together, these data show HA can serve as a nutrient fueling PDA metabolism beyond its previously appreciated structural and signaling roles.\n\n## Introduction\n\nPancreatic ductal adenocarcinoma (PDA) is one of the deadliest human cancers with no clinically effective treatment options (Siegel et al., 2020). PDA is characterized by an intense fibroinflammatory stroma, poor vascularity, deregulated nutrient levels, and rich deposition of extracellular matrix (ECM) components. To survive and proliferate in this nutrient austere tumor microenvironment (TME), the oncogenic driver in PDA, mutant Kras, facilitates the rewiring of PDA metabolism (Halbrook and Lyssiotis, 2017; Perera and Bardeesy, 2015; Ying et al., 2016; Kerk et al., 2021).\n\nOne example of this, which we have demonstrated in previous work (Ying et al., 2012), is the effect of mutant Kras on the activity of the hexosamine biosynthetic pathway (HBP). Signaling downstream of Kras results in upregulated expression of Gfpt1, which encodes glutamine-fructose 6-phosphate amidotransferase 1 (GFAT1). The HBP is an evolutionarily conserved pathway that integrates glucose, glutamine, fatty acid, and nucleotide metabolism to generate the final product uridine diphosphate N-acetylglucosamine (UDP-GlcNAc). UDP-GlcNAc is a crucial donor molecule for glycosylation and O-GlcNAcylation, two essential post-translational modifications required for cellular structure, signaling, and survival (Akella et al., 2019). The HBP is the only pathway able to generate UDP-GlcNAc de novo. Because the HBP integrates nutrients from several major macromolecular classes to produce UDP-GlcNAc, it predictably functions as a nutrient sensing mechanism for available energy within a cell (Wellen et al., 2010). Indeed, numerous studies across cancer subtypes have demonstrated how HBP activity is enhanced to support tumor survival and growth (Paszek et al., 2014; Akella et al., 2019; Walter et al., 2020; Yang et al., 2016) and even immune evasion through alteration of extracellular glycosylation content (Lee et al., 2019).\n\nA compendium of studies during the last decade have revealed that PDA cells fuel their aberrant metabolic programs through nutrient scavenging (Ying et al., 2012; Commisso et al., 2013; Kamphorst et al., 2015; Yang et al., 2011; Davidson et al., 2017; Olivares et al., 2017). Mechanisms include sustained activation of intracellular recycling pathways (e.g. autophagy), the upregulation of nutrient transporter expression (e.g. carbohydrate, lipid, and amino acid transporters), and the activation of extracellular nutrient scavenging pathways (e.g. macropinocytosis). Further, PDA cells also participate in metabolic crosstalk and nutrient acquisition with non-cancerous cells in the TME, such as cancer-associated fibroblasts (CAFs) and tumor-associated macrophages (TAMs) (Sousa et al., 2016; Dalin et al., 2019; Halbrook et al., 2019; Zhu et al., 2020; Lyssiotis and Kimmelman, 2017). A notable example is the observation that PDA cells can directly obtain nutrients from the CAF-derived ECM, such as collagen (Olivares et al., 2017). Taken together, elucidating the interaction of PDA cells with different cell populations and ECM components will be instrumental for delineating deregulated PDA metabolism and improving therapeutic strategies.\n\nA major structural component of the TME is hyaluronic acid (HA), a hydrophilic glycosaminoglycan. HA is ubiquitously present in human tissue, especially in skin, connective tissue, and joints, and it is richly abundant in pancreatic tumors (Theocharis et al., 2000). HA is thought to be primarily deposited by CAFs and, to some extent, by PDA cells (Goossens et al., 2019; Mahlbacher et al., 1992). HA avidly retains water, which is responsible for both its lubricating properties and, in PDA tumors, the supraphysiological pressure that impairs vascularity and limits drug penetrance (Jacobetz et al., 2013; Provenzano et al., 2012). An aspect of HA biology that has not previously been studied is its potential role as a nutrient. This is surprising given that HA is a carbohydrate polymer whose monomeric unit is a disaccharide of glucuronic acid and N-acetyl-glucosamine (GlcNAc).\n\nHerein, we set forth to determine the utility of targeting the HBP in PDA. We found that GFAT1 was required for cell survival in vitro. In marked contrast, GFAT1 knockout tumors readily grew in vivo. Based on this observation, we hypothesized that GlcNAc-containing components of the TME could bypass the HBP in vivo by way of the GlcNAc salvage pathway. We demonstrate that HA can be metabolized by PDA cells to support survival and proliferation by refilling the HBP. In sum, our study identifies HA as a novel nutrient source in PDA and contributes to a growing body of data illuminating the important role of the TME in cancer metabolism.\n\n## Results\n\n### Pancreatic cancer cells require de novo HBP fidelity in vitro but not in vivo\n\nPreviously, we found that mutant Kras transcriptionally activates Gfpt1 expression downstream of MAPK signaling in a murine model of PDA to facilitate HBP activity (Ying et al., 2012). GFAT1 catalyzes the reaction that generates glucosamine 6-phosphate and glutamate from fructose 6-phosphate and glutamine (Figure 1A). In another previous study we demonstrated that PDA cells are dependent on glutamine anaplerosis for proliferation (Son et al., 2013). Thus, we hypothesized that inhibiting GFAT1 in PDA would have the simultaneous benefit of blocking two major metabolic pathways that support PDA proliferation, thereby providing a considerable therapeutic window.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/62645/elife-62645-fig1-v3.jpg)\n\n**Figure 1.:** (A) Schematic overview of the HBP and the nutrient inputs. Ac-CoA, acetyl-coenzyme A; GFAT1, glutamine fructose 6-phosphate amidotransferase 1; Glc, glucose; GlcNAc, N-acetyl-glucosamine; Gln, glutamine; Glu, glutamate; NAGK, N-acetyl-glucosamine kinase; Pi, inorganic phosphorus; UTP, uridine-triphosphate. (B) Western blot of GFAT1 and loading control VINCULIN (VNC) from validated CRISPR/Cas9 knockout TU8988T, MiaPaca2, and HPAC clones and their control (non-targeted sgRNA). (C) Representative wells from a colony-forming assay in parental and clonally derived GFAT1 knockout cell lines grown in base media (DMEM) or base media supplemented with 10 mM GlcNAc. Data quantitated at right, n = 3. (D) Proliferation assay in parental and two GFAT1 knockout clonal TU8988T cell lines. Representative wells are presented above data quantitated by crystal violet extraction and measured by optical density (OD) at 590 nm, n = 3. (E) Tumors from parental TU8988T (n = 6) and GFAT1 knockout clone D10 (n = 6) grown subcutaneously in immunocompromised mice. Accompanying western blot for GFAT1 and VNC loading control from representative tumor lysates. (F) Tumor volume and tumor weight from samples in E. (G) Tumor volume and tumor weight from parental TU8988T (n = 5) and GFAT1 knockout clones B9 (n = 8) and D10 (n = 4) implanted and grown orthotopically in the pancreas of immunocompromised mice. Error bars represent mean \u00b1 SD. n.s., non-significant; *p < 0.05; **p < 0.01; ***p < 0.001; ****p < 0.0001.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62645/elife-62645-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Proliferation kinetics of parental PDA cell lines and corresponding pooled populations of GFAT1 knockout cells supplemented with varying concentrations of N-acetyl-glucosamine (GlcNAc) (n = 3). Cell quantity was assessed by Cyquant (DNA intercalating dye) and plotted in absorbance units (AU). (B,C) UDP-GlcNAc levels measured by liquid chromatography-coupled tandem mass spectrometry (LC-MS/MS) in (B) TU8988T and HPAC GFAT1 knockout lines in the presence or absence of 10 mM GlcNAc for 3 days, presented as relative abundance (n = 3), and (C) TU8988T, HPAC, and MiaPaCa2 GFAT1 knockout cells grown without GlcNAc for 3 days (n = 3), presented as relative ion abundance. (D) Western blot of proteome O-GlcNAc and loading control GAPDH in parental and GFAT1 knockout TU8988T and HPAC. GFAT1 knockout lines were grown in the presence or absence of 10 mM GlcNAc for 3 days. (E) Western blot for GFAT1, at short and long exposure, and ACTIN loading control in a panel of clonal cell lines selected from the pooled population of GFAT1 knockout TU8988T cells. (F) Proliferation kinetics of parental TU8988T (GFAT1 WT) and clonal cell lines E8, G11, B9, and D10 selected from the pooled GFAT1 knockout population supplemented with varying concentrations of GlcNAc (n = 3). Clones correspond to those in the western blot in E. Cell quantity was assessed by cell titer glo and plotted in relative fluorescent units (RFU). (G) Representative wells from proliferation assay in parental and two GFAT1 knockout clonal HPAC and MiaPaCa2 cell lines. At bottom, data are quantitated by crystal violet extraction and measurement of optical density (OD) at 590 nm, n = 3. (H) Tumors from parental (n = 3) and GFAT1 knockout (n = 3) HPAC; parental (n = 4) and GFAT1 knockout (n = 4) MiaPaCa2; and parental (n = 6) and GFAT1 knockout (n = 6) TU8988T cell lines grown subcutaneously in immunocompromised mice. Error bars represent mean \u00b1 SD. n.s., non-significant; *p < 0.05; **p < 0.01; ****p < 0.0001.\n\nOur previous results targeting GFAT1 in murine cells with shRNA yielded insufficient knockdown to draw a conclusion as to its necessity in PDA (Ying et al., 2012). Thus, here we used CRISPR/Cas9 to knockout GFAT1 from three established human PDA cell lines: HPAC, TU8988T, and MiaPaCa2. During selection, the pooled polyclonal populations were grown in GlcNAc, which bypasses GFAT1 via the GlcNAc salvage pathway (Figure 1A). This supplement was included to minimize metabolic rewiring within the selected populations.\n\nThe GFAT1 knockout lines had differential response to GlcNAc withdrawal. Among the three GFAT1 knockout cell lines, only the HPAC line exhibited a marked reduction in cell number, consistent with loss of viability, in the 4 days following GlcNAc withdrawal (Figure 1\u2014figure supplement 1A). The impact on proliferation was similarly reflected in decrease of the UDP-GlcNAc pool, which was analyzed using liquid chromatography-coupled tandem mass spectrometry (LC-MS/MS) (Figure 1\u2014figure supplement 1B). Consistent with the proliferative phenotypes across lines, the HPAC line also had a significantly smaller UDP-GlcNAc pool than that of either MiaPaCa2 or 8988T cells (Figure 1\u2014figure supplement 1C). Cellular O-GlcNAcylation of the proteome was also measured by immunoblot 3 days after GlcNAc withdrawal. Again, consistent with the LC-MS/MS analysis, O-GlcNAc expression was significantly reduced in HPAC but was maintained in TU8988T (Figure 1\u2014figure supplement 1D).\n\nThe data from TU8988T and MiaPaca2 were similar to those from our earlier studies (Ying et al., 2012), and thus we posited that knockout of GFAT1 was incomplete. As such, we subsequently generated clonal cell lines from the pooled populations. This analysis revealed that the degree of GFAT1 knockout varied by cell line and by clone, and this correlated with differential growth and sensitivity to GlcNAc withdrawal in vitro (Figure 1\u2014figure supplement 1E, F). Clones for each cell line without detectable GFAT1 expression (Figure 1B) were further validated by sequencing and were subsequently used to examine the role of the HBP without interference from GFAT1-proficient cells.\n\nUsing our genomically sequenced and bona fide GFAT1 knockout clonal lines, we found that GFAT1 knockout led to an abolishment of colony formation (Figure 1C) and potently impaired proliferation (Figure 1D, Figure 1\u2014figure supplement 1G) in all three PDA cell lines in vitro. We then moved these cells into in vivo tumor models. Surprisingly, when either the pooled or the clonal knockout lines were implanted into the flanks of immunocompromised mice, they readily formed tumors that were comparable to their wildtype counterparts in terms of weight and volume (Figure 1E and F and Figure 1\u2014figure supplement 1H). Similar results were obtained for GFAT1 knockout clonal lines implanted orthotopically into the pancreas (Figure 1G). Of note, while clearly capable of forming tumors, the GFAT1 knockout clonal lines grown in the pancreas were smaller than the wildtype tumors at endpoint. The marked discrepancy in phenotype between in vitro and in vivo settings led us to hypothesize that GFAT1 knockout clones were scavenging nutrients from the TME to refill the HBP, which enabled their survival and tumor growth.\n\n### Conditioned media rescues proliferation of GFAT1 knockout PDA cells\n\nTo test our scavenging hypothesis, we generated conditioned media (CM) from CAFs, the most abundant stromal cell type in the pancreatic TME (Zhang et al., 2019; Neesse et al., 2019). When GFAT1 knockout clones were incubated in patient-derived CAF CM, we observed a significant, albeit modest, rescue in colony formation (Figure 2A and B). Unexpectedly, we observed a more robust, dose-dependent rescue of colony formation in GFAT1 knockout cells with CM from wildtype TU8988T cells (Figure 2C\u2013F and Figure 2\u2014figure supplement 1A). Similarly, CM from wildtype HPAC and MiaPaCa2 cells was able to partially rescue proliferation of a subset of GFAT1 knockout clones (Figure 2G and Figure 2\u2014figure supplement 1B, C).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/62645/elife-62645-fig2-v3.jpg)\n\n**Figure 2.:** (A) Representative wells from a colony-forming assay in parental TU8988T and GFAT1 knockout clonal line D10 in 10 mM N-acetyl-glucosamine (GlcNAc), base media (DMEM), or base media supplemented 1:3 (25%) with CAF CM, boiled CAF CM, or CAF CM subject to freeze-thaw (F/T). (B) Quantitation of colonies from data in A (n = 3). (C) Representative wells from a colony-forming assay in parental TU8988T and GFAT1 knockout clonal line D10 in 10 mM GlcNAc, DMEM, or base media supplemented 1:3 (25%) with CM from wildtype TU8988T cells, boiled TU8988T CM, or TU8988T CM subject to F/T. (D) Quantitation of colonies from data in C (n = 3). (E) Quantitation of colony-forming assay data of parental and GFAT1 knockout clonal TU8988T lines in base media, positive control GlcNAc, wildtype TU8988T CM diluted 1:2 (33%) or used directly (100%) (n = 3). (F) Representative wells and quantitation of colony-forming assay data of parental and GFAT1 knockout clonal TU8988T lines in base media, positive control GlcNAc, and wildtype TU8988T CM subject to F/T and diluted 3:1 (75%) (n = 3). (G) Quantitation of colony-forming assay data of parental and GFAT1 knockout clonal TU8988T lines in base media, positive control GlcNAc, or wildtype TU8988T, HPAC, or MiaPaCa2 CM subject to F/T and diluted 3:1 (75%) (n = 3). (H) GlcNAc dose response curve presented as relative colony number for parental and GFAT1 knockout TU8988T cells (n = 3). (I) Mean of absolute quantitation of GlcNAc in various CM by liquid chromatography-coupled tandem mass spectrometry (LC-MS/MS) (n = 3). Error bars represent mean \u00b1 SD. *p < 0.05; **p < 0.01; ***p < 0.001; ****p < 0.0001.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62645/elife-62645-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Quantitation of colony-forming assay data of parental MiaPaCa2 and GFAT1 knockout clonal line M11 in base media (DMEM), positive control GlcNAc, wildtype TU8988T CM diluted 1:2 (33%) or used directly (100%) (n = 3). (B,C) Quantitation of proliferation assay data of (B) parental MiaPaCa2 and GFAT1 knockout clonal line M11 and (C) parental HPAC and GFAT1 knockout clonal line H7 in base media (DMEM), positive control GlcNAc, or wildtype TU8988T, HPAC, or MiaPaCa2 CM diluted 3:1 (75%) that was subjected to freeze-thaw (F/T) (n = 3). Data represent crystal violet extracted from cells at endpoint and measured by optical density (OD) at 590 nm. (D) GlcNAc dose response curve presented as relative colony number for parental TU8988T cells and GFAT1 knockout clonal line B9 (n = 3). Error bars represent mean \u00b1 SD. n.s., non-significant; *p < 0.05; **p < 0.01; ***p < 0.001; ****p < 0.0001.\n\nTo begin to identify the rescue factors in the CM, we subjected the CM to boiling or repeated cycles of freezing and thawing (F/T). In each of these conditions, both the CAF and the PDA CM retained the ability to support colony formation in GFAT1 knockout cells (Figure 2A\u2013D). These results suggested the relevant factor(s) did not require tertiary structure. Additionally, we observed that the rescue activity of the CM was dose dependent (Figure 2E\u2013G and Figure 2\u2014figure supplement 1A-C).\n\nAs GlcNAc was used to establish our GFAT1 knockout lines, we first quantitated the GlcNAc concentration in the CM by mass spectrometry. GlcNAc dose response curves demonstrated that millimolar quantities of GlcNAc (>0.625 mM) were required to rescue colony formation of GFAT1 knockout PDA cells (Figure 2H and Figure 2\u2014figure supplement 1D). By contrast, LC-MS/MS quantification of GlcNAc in the CM revealed that it was in the low micromolar range (Figure 2I), several orders of magnitude below the millimolar doses of exogenous GlcNAc required to maintain proliferation (Figure 2H and Figure 2\u2014figure supplement 1D). These results illustrated that free GlcNAc was not the relevant molecule in the CM mediating rescue. This led us to consider alternate possibilities, including GlcNAc-containing components of the TME.\n\n### HA rescues GFAT1 knockout PDA cells\n\nGlcNAc is a widely utilized molecule as a structural component of the ECM, a modification of various lipid species, and a post-translational modification on proteins (Moussian, 2008; Bond and Hanover, 2015). Thus, we hypothesized that GlcNAc was released into CM as a component part of a lipid, protein, or glycosaminoglycan polymer, and that this mediated rescue of GFAT1 knockout. To test this, we first applied necrotic cellular debris from the murine hematopoietic FL5.12 cell line (Kim et al., 2018) to GFAT1 knockout cells grown at clonal density. The necrotic cellular debris contains the full complement of biomolecules, including GlcNAc-containing proteins and lipids. Necrotic cell debris was unable to rescue GFAT1 knockout across our cell line panel (Figure 3\u2014figure supplement 1A-F). Next, we tested if glycosaminoglycan carbohydrate polymers could mediate rescue of GFAT1 knockout, in a matter akin to CM. High-dose heparin was not able to rescue colony formation in GFAT1 knockout cells (Figure 3\u2014figure supplement 1A-F). In contrast, 78 kDa HA provided a modest but significant rescue (Figure 3A and B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/62645/elife-62645-fig3-v3.jpg)\n\n**Figure 3.:** (A) Representative wells from a colony-forming assay in parental and clonally derived GFAT1 knockout TU8988T cell lines grown in base media (DMEM), positive control N-acetyl-glucosamine (GlcNAc) (10 mM), or low molecular weight (LMW) hyaluronic acid (78 kDa HA, 10 mM). (B) Quantitation of data from A (n = 3). (C) Western blot of proteome O-GlcNAc and loading control VINCULIN (VNC) in parental TU8988T cells grown in base media (DMEM) plus GlcNAc or LMW HA for the indicated time points. Band density was quantitated, normalized to control, and presented below the blot. (D,E) Western blot of proteome O-GlcNAc and loading control VNC in GFAT1 knockout clonal lines (D) B9 and (E) D10 in base media (DMEM) plus GlcNAc or LMW HA for the indicated time points. Wildtype (WT) TU8988T included as control. Band density was quantitated, normalized to control, and presented below the blot. (F) Quantitation of HA-FITC uptake in wildtype (TU8988T, MiaPaCa2, BxPC3) and GFAT1 knockout clones (B9, D10, M12) presented as percent total particle area over total cell area at 1 min or 1 hr; n = 6 frames per condition. Cell area was calculated by staining for pan-cytokeratin (panCK). At right, representative images. Scale bar, 50 \u00b5m. (G) Representative wells of a proliferation assay in parental TU8988T and GFAT1 knockout clonal line D10 grown in base media (DMEM), positive control GlcNAc (10 mM), or base media supplemented 1:1 with boiled LMW HA (10 mM) with and without pre-digestion with hyaluronidase (HAase). At endpoint, cells are stained with crystal violet, and the stain was then extracted and quantitated by OD at 590 nm (n = 3). (H,I) Proliferation time course, as measured on the Incucyte, of (H) TU8988T and (I) MiaPaCa parental and GFAT1 knockout cells in base media (DMEM), positive control (GlcNAc), 60 kDa HA (LMW HA), 5 kDa HA (o-HA), or wildtype TU8988T CM (n = 3). Error bars represent mean \u00b1 SD. ***p < 0.001.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62645/elife-62645-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u2013F) Representative colony formation assays and their quantitation following treatment with two concentrations of heparin or necrotic cell debris that contain complete cellular contents, relative to base media (DMEM) and positive control N-acetyl-glucosamine (GlcNAc) in (A,B) parental and GFAT1 knockout TU8988T, (C,D) parental and GFAT1 knockout MiaPaCa2, and (E,F) parental and GFAT1 knockout HPAC. (G) Immunostaining images of intracellular fluorescently tagged dextran (red) engulfed by macropinocytosis in PDA cell lines. Nuclear DAPI staining in blue. Quantitation of macropinocytotic index presented at bottom for n = 6 wells per biological replicate (n = 3). (H) Representative images for the data presented in Figure 3F. HA-FITC is presented in green with pan-cytokeratin (panCK) in red. Nuclear staining with DAPI in blue. Scale bar, 50 \u00b5m. (I) Quantitated data are presented above representative wells from a proliferation assay in parental TU8988T and GFAT1 knockout clone B9 in 10 mM GlcNAc, base media (DMEM), base media supplemented 1:1 with boiled DMEM, or base media supplemented 1:1 with boiled HAase-treated DMEM. Quantitated data represent crystal violet extracted from cells at endpoint and measured by optical density (OD) at 590 nm (n = 3). Error bars represent mean \u00b1 SD. n.s., non-significant; *p < 0.05.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/62645/elife-62645-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A,B) Proliferation time course of (A) parental MiaPaCa2 and (B) GFAT1 knockout cells in base media (DMEM), positive control (N-acetyl-glucosamine [GlcNAc]), 5 kDa HA (oligo-hyaluronic acid [o-HA]), or wildtype TU8988T CM subject to freeze-thaw (F/T) (n = 3). (C,D) Proliferation time course of (C) parental TU8988T and (D) GFAT1 knockout cells in base media (DMEM), positive control (GlcNAc), 60 kDa HA (LMW HA), or 5 kDa HA (o-HA).(E) Dynamic range of HA detection by enzyme-linked immunosorbent assay (ELISA), employed to quantitate HA. (F) HA content in cancer-associated fibroblast (CAF) and wildtype TU8988T CM, that treated with HAase, and that treated with boiled HAase, relative to DMEM alone negative control. (G) Detection of 10 mM 60 kDa and 5 kDa HA standard and 60 kDa standard treated with HAase, as well as that treated with boiled HAase, relative to DMEM alone negative control. (H) Representative wells from colony formation assays in parental and GFAT1 knockout clonal TU8988T cell lines in base media (DMEM), positive control GlcNAc, and N-acetyl-galactosamine (GalNAc). Quantitated data are presented in Figure 5F. Error bars represent mean \u00b1 SD.\n\nHA is a carbohydrate polymer and an ECM component that is abundant in the PDA TME (Theocharis et al., 2000). The monomeric form of HA is a repeating disaccharide consisting of glucuronic acid and GlcNAc. HA polymer length, often described by its molecular weight (MW), has important impacts on its biological activity. In non-pathological settings, newly synthesized HA is predominantly high molecular weight (HMW; >1000 kDa) (Monslow et al., 2015). However, in tumors and tumor interstitial fluid, there is a significantly elevated level of low molecular weight (LMW; 10\u2013250 kDa) and oligo-HA (o-HA; <10 kDa) (Schmaus et al., 2014; Lv et al., 2007). Consistent with the rescue of colony formation in GFAT1 knockout cells, LMW HA (78 kDa) was also able to rescue total proteome O-GlcNAc levels, as assessed by western blot (Figure 3C\u2013E).\n\nCancer cells have been reported to uptake HA via macropinocytosis (Greyner et al., 2010). Thus, a possible explanation for the modest rescue could be low macropinocytosis activity. However, in PDA, mutant Kras drives macropinocytosis (Commisso et al., 2013), and quantitation of macropinocytotic activity with a fluorescent dextran-based assay revealed that our three PDA cell lines exhibited considerable macropinocytosis (Figure 3\u2014figure supplement 1G). Similarly, following HA uptake using a fluorescently conjugated HA (HA-FITC) revealed GFAT1-proficient and GFAT1 knockout cells readily take up HA (Figure 3F, Figure 3\u2014figure supplement 1H).\n\nThis led us to hypothesize that the rate limiting step is not HA entry into cells, but rather, the cleavage of HA into smaller fragments. Consistent with this hypothesis, utilizing hyaluronidase to break down LMW HA enhanced the rescue of colony formation (Figure 3G). Of note, hyaluronidase was heat-inactivated after it was used to cleave HA (i.e. before its application to GFAT1 knockout cells; Figure 3\u2014figure supplement 1I), as hyaluronidase has been reported to directly impact cellular metabolism (Sullivan et al., 2018). Next, we tracked the rescue of proliferation using HA of varying size: LMW HA (60 kDa) and o-HA (5 kDa). This analysis revealed that HA-mediated rescue, as measured through proliferation quantification, was considerably higher for o-HA than for LMW HA, and comparable to PDA CM (Figure 3H, I and Figure 3\u2014figure supplement 2A-D).\n\nTo relate these studies back to our CM rescue studies, we employed an enzyme-linked immunosorbent assay (ELISA) to quantitate HA in the PDA and CAF CM (Figure 3\u2014figure supplement 2E). CAF CM contained considerably more HA than PDA CM, consistent with the known role for fibroblasts in the production of HA (Figure 3\u2014figure supplement 2F). However, we found that the lower limit of detection for the ELISA was ~50 kDA HA. Indeed, we demonstrated this by digesting 10 mM HA, CAF CM, or PDA CM with HAase. Post-digestion, we are unable to detect appreciable levels of HA (Figure 3\u2014figure supplement 2F,G). These results illustrate the CAF CM produces more HMW HA, which we posit explains its limited rescue of GFAT1 knockout in vitro.\n\nHA is produced by the family of HA synthases, which can be inhibited in vitro with the tool compound 4-methylumbelliferone (4-MU) (Nagy et al., 2015). To determine if HA is the relevant metabolite in wildtype PDA CM facilitating rescue of GFAT1 knockout, we first treated wildtype PDA cells with a range of 4-MU doses. Cell proliferation was followed to assess off-target toxicity and HA in CM was quantitated using the HA ELISA. Of note, while PDA cells produce much less detectable HA than CAFs, they do produce a sufficient amount so as to analyze 4-MU activity (Figure 3\u2014figure supplement 2F). Indeed, we demonstrated that 4-MU dose dependently blocked HA release into CM (Figure 4A) while also exhibiting proliferative defects at the highest concentration tested (Figure 4B\u2013D). Application of CM from 4-MU-treated wildtype PDA cells in GFAT1 rescue assays revealed that the reduction in HA content paralleled the decrease in CM rescue activity in GFAT1 knockout cells (Figure 4E). These collective in vitro studies illustrate that HA can rescue the proliferation of GFAT1 knockout cells and strongly suggest that HA is the relevant factor mediating the rescue activity of PDA CM. However, while we believe these collective results are convincing, detection and quantitation of o-HA in PDA CM will be required to draw a definitive conclusion.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/62645/elife-62645-fig4-v3.jpg)\n\n**Figure 4.:** (A) Quantification of hyaluronic acid (HA) in CM from wildtype TU8988T cells treated with varying doses of 4-methylumbelliferone (4-MU) (n = 3). (B\u2013E) Proliferation time course of (B,C) wildtype (WT) TU8988T and (D,E) GFAT1 knockout TU8988T grown (B,D) directly in varying concentrations of 4-MU or (C,E) in CM from WT TU8988T cells exposed to 4-MU during media conditioning. GFAT1 knockout cells in (D) were propagated in N-acetyl-glucosamine (GlcNAc) to maintain viability (n = 3 for all cell lines and conditions). (F) HA binding protein (HABP) staining of normal murine pancreas (negative control) and a murine pancreatic tumor (positive control). (G) Representative images for HABP staining classification used in H. (H) 10 representative slides from WT and GFAT1 knockout subcutaneous and orthotopic tumors (Figure 1F and G) were stained and blindly scored using the classification metric in G (n = 10). Error bars represent mean \u00b1 SD. *p < 0.05; **p < 0.01; ***p < 0.001; ****p < 0.0001.\n\nTo relate this work back to our tumor studies (Figure 1E\u2013G), we probed for HA content in tumor slices by immunohistochemical detection of HA binding protein (HABP) (Provenzano et al., 2012). We stained normal pancreas as the negative control (note: positive staining of vasculature) and a murine pancreatic tumor as a positive control (Figure 4F). We then stained 10 tumor slices from GFAT1-proficient and -deficient tumors from the subcutaneous and the orthotopic models. Blinded scoring using a 0\u20133 scale (Figure 4G) revealed more HA in the subcutaneous than orthotopic setting (Figure 4H). Tumor genotype did not influence HABP levels in the subcutaneous model, whereas there was a marked reduction in HABP staining in the orthotopic GFAT1 knockout tumors (Figure 4H). First, these data demonstrate that HA is available to PDA tumors in these models. Further, they suggest that the difference in growth of GFAT1 knockout tumors in the orthotopic model compared to subcutaneous, as observed in Figure 1E\u2013G, may result from less HA availability.\n\n### HA rescues GFAT1 null PDA via the GlcNAc salvage pathway\n\nThe GlcNAc salvage pathway bypasses GFAT1 by catalyzing the phosphorylation of GlcNAc to GlcNAc-6-phsophate, in a reaction mediated by N-acetyl-glucosamine kinase (NAGK). This GlcNAc-6-phosphate is subsequently converted into UDP-GlcNAc (Figure 1A). Therefore, we hypothesized that the carbohydrate polymer HA, which is 50% GlcNAc, fuels the HBP via the GlcNAc salvage pathway through NAGK. To test this, we employed the same CRISPR/Cas9 strategy to target NAGK (Figure 5A). Knockout of NAGK in parental TU8988T and MiaPaCa2 cell lines had no impact on colony formation, while reducing the colony-forming capacity of HPAC cells (Figure 5B and C). These results correlated with the elevated expression of NAGK in wildtype HPAC cells (Figure 5D). Of note, NAGK knockout did not result in up-regulation of GFAT1 (Figure 5A), which could have suggested a compensatory metabolic rewiring.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/62645/elife-62645-fig5-v3.jpg)\n\n**Figure 5.:** (A) Western blot of NAGK, GFAT1, and ACTIN loading control from TU8988T, MiaPaCa2, and HPAC parental (wildtype, WT) and NAGK knockout (KO) populations. NAGK was knocked out using two independent sgRNAs (sg1, sg2). (B) Representative wells from a colony-forming assay for parental and NAGK knockout lines. (C) Quantitation of colony-forming assay data in B (n = 3). (D) Western blot for NAGK, GFAT1, and loading control ACTIN in parental pancreatic ductal adenocarcinoma (PDA) cell lines. Band density was quantitated, normalized to control, and presented below the blot. (E) Schematic overview of the Leloir pathway of galactose catabolism integrated with the hexosamine biosynthetic pathway (HBP) and GlcNAc salvage pathway. (F) Quantitated data from colony formation assays in parental and GFAT1 knockout clonal TU8988T cell lines in base media (DMEM), positive control GlcNAc, and N-acetyl-galactosamine (GalNAc) (n = 3) (G) Western blot for GFAT1, NAGK, and loading control VINCULIN (VNC) in parental TU8988T and HPAC, GFAT1 knockout clones, and GFAT/NAGK double targeted lines. (H\u2013K) Proliferation time course of (H,I) parental TU8988T and GFAT1 knockout line B9 in base media, GalNAc positive control, 60 kDa HA, or 5 kDa HA; (J,K) GFAT1/NAGK double targeted clones in base media, GalNAc positive control, 60 kDa HA, or 5 kDa hyaluronic acid (HA) (n = 3). (L) Western blot for proteome O-GlcNAcylation (O-GlcNAc), GFAT1, NAGK, and VCN in parental (WT), GFAT1 knockout (B9), and GFAT1/NAGK double knockout (B9\u2013sg1) TU8988T cells treated with 10 mM GalNAc, DMEM, CM, or o-HA. (M) Liquid chromatography-coupled tandem mass spectrometry (LC-MS/MS) analysis of UDP-GlcNAc from the samples in L (n = 3). (N) Schematic overview of the HA metabolism through the GlcNAc salvage pathway to fuel glycosylation in GFAT1 knockout PDA. Error bars represent mean \u00b1 SD. n.s., non-significant; *p < 0.05; **p < 0.01.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62645/elife-62645-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A\u2013D) Proliferation time course of (A) parental TU8988T, (B) GFAT1 knockout cells, and (C,D) two GFAT1/NAGK double knockout cell lines in base media (DMEM), positive control (GlcNAc), 5 kDa HA (o-HA), or wildtype (WT) TU8988T conditioned media (CM) subject to freeze-thaw (F/T) (n = 3). (E,F) Proliferation time course of two additional GFAT1/NAGK double knockout cells lines from main text Figure 5H\u2013K in base media (DMEM), positive control (GalNAc), 5 kDa HA (o-HA), or 60 kDa HA (n = 3). (G\u2013J) Proliferation time course of (G) WT MiaPaCa2, (H) GFAT1 knockout line M12, and (I,J) GFAT1/NAGK double knockout cells in base media, GalNAc positive control, 60 kDa HA, or 5 kDa o-HA (n = 3). (K\u2013M) Liquid chromatography-coupled tandem mass spectrometry (LC-MS/MS) analysis of (K) N-acetyl-glucosamine (GlcNAc)-phosphate (GlcNAc-P), (L) fructose 6-phosphate, and (M) uridine triphosphate from the samples in Figure 5L (n = 3). (N) Western blot for proteome O-GlcNAcylation (O-GlcNAc), GFAT1, NAGK, and VCN in parental (WT), GFAT1 knockout (M12) and GFAT1/NAGK double knockout MiaPaCa2 cells treated with 10 mM GalNAc, DMEM, CM, or o-HA. The NAGK band appears below a non-specific band, as indicated by the blue arrow. Error bars represent mean \u00b1 SD.\n\nNext, we targeted NAGK in our GFAT1 knockout clones. GFAT1/NAGK double knockout cells were generated in media containing N-acetyl-galactosamine (GalNAc), an isomer of GlcNAc. Supplementation with GalNAc enables bypass of both the de novo HBP and the GlcNAc salvage pathway, by way of the Leloir pathway (Termini et al., 2017), to support UDP-GalNAc and ultimately UDP-GlcNAc biogenesis (Figure 5E). In this way, we were again able to select viable lines while avoiding the selection of those with unpredictable metabolic adaptations.\n\nThe GalNAc dose response for GFAT1 knockout clones was comparable to that of GlcNAc (Figure 2H), demonstrating that they are indeed viable in GalNAc (Figure 5F, Figure 3\u2014figure supplement 2H). Although NAGK expression was efficiently knocked down in our pooled populations (Figure 5G), we again selected for clones in the TU8988T cell line in order to minimize the effect of NAGK-proficient clones persisting in the bulk population. From among these, we selected four GFAT1/NAGK clones and tracked their proliferation upon rescue with varying sizes of HA, GalNAc, or PDA CM. These were compared relative to wildtype TU8988T cells and the GFAT1 knockout line. In stark contrast to the GFAT1 knockout line, LMW HA, o-HA, and PDA CM were unable to rescue GFAT1/NAGK double knockout lines (Figure 5H\u2013K, Figure 5\u2014figure supplement 1A-F). Similar results were obtained in the MiaPaCa2 cell line (Figure 5\u2014figure supplement 1G-J).\n\nFinally, we used LC/MS-MS to assess HBP metabolite levels and western blotting to follow proteome O-GlcNAcylation in the GFAT1 and GFAT1/NAGK double knockout cells. HA or PDA CM rescue of GFAT1 knockout cells restores UDP-GlcNAc pools and proteome O-GlcNAcylation, and this was blocked by knocking out NAGK (Figure 5L and M and Figure 5\u2014figure supplement 1K-N). These results illustrate that HA rescue requires NAGK and the GlcNAc salvage pathway, consistent with the idea that HA-derived GlcNAc fuels UDP-GlcNAc biosynthesis upon GFAT1 knockout. Altogether, our data implicate HA as a novel nutrient for PDA, where HA regulates PDA metabolism by refueling the HBP via the GlcNAc salvage pathway. This supports PDA survival and proliferation (Figure 5N).\n\n## Discussion\n\nThe HBP is activated in a Kras-dependent manner in PDA via transcriptional regulation of Gfpt1 (Ying et al., 2012), and it is similarly elevated in numerous cancers to provide a diverse set of functions, including the regulation of proliferation, survival, angiogenesis, and metastasis (Akella et al., 2019). As such, we and others have proposed that the HBP may provide a selective vulnerability for cancer therapy, with GFAT1 as an attractive therapeutic target (Ying et al., 2012; Walter et al., 2020; Guillaumond et al., 2013; Lucena et al., 2016). Of note, GFAT2 is a homolog of GFAT1, and it too has been implicated as a drug target with context and tissue-specific functions (Kim et al., 2020; Zhang et al., 2018). We did not pursue GFAT2 in this study because it was neither regulated by mutant KRAS nor basally expressed in the models employed herein.\n\nSeveral pan glutamine-deamidase inhibitors (e.g. azaserine and 6-diazo-5-oxo-L-norleucine), which potently suppress GFAT activity, have demonstrated anti-tumor activity in vitro and in vivo in PDA and other cancers (Leone et al., 2019; Sharma et al., 2020). However, because these drugs are not specific to the HBP, it has not been clear what impact GFAT-specific inhibition had on these phenotypes. As such, we took a genetic approach to knock out GFAT1 to elucidate the role of the HBP in PDA. In the PDA models tested, we found that GFAT1 knockout was not compatible with PDA cell proliferation in vitro, unless the media were supplemented with GlcNAc or GalNAc (Figures 1C, D ,, 5F). However, these same cells readily formed tumors in vivo in subcutaneous and orthotopic models (Figure 1E\u2013G).\n\nThe stark discrepancy in phenotypes led us to hypothesize that the TME was providing the means to bypass GFAT1. Indeed, we found that denatured CM from CAFs and wildtype PDA cells were able to rescue viability in GFAT1 knockout PDA cells, implicating a molecule(s) without tertiary structure (Figure 2). By examining several GlcNAc-containing candidates, we discovered a previously unknown role of HA as a nutrient source for PDA (Figures 3 and 4). Of note, despite identifying that wildtype PDA cells can produce HA, it is not our intention to indicate that HA in PDA tumors was deposited by the cancer cells. For example, HA is abundantly deposited in GFAT1 knockout subcutaneous PDA tumors (Figure 4H). Rather, we found that wildtype PDA CM could rescue the proliferation of GFAT1 knockout PDA cells in vitro, and we utilized this as a tool to study the process. The constellation of cell types in the pancreatic TME that produce/deposit/process HA is an area of active investigation. Either way, in sum we report that HA can refill the HBP via the GlcNAc salvage pathway to support PDA survival and proliferation (Figure 5N).\n\nHA is traditionally regarded as a structural component in physiology (Toole, 2004). In addition to this role, a wealth of studies have ascribed other functions to HA. For example, HA can activate cell-cell contact-mediated signal transduction through CD44 and/or receptor for HA-mediated motility (Misra et al., 2015). The signaling activity/function of HA depends on its MW (Toole, 2004; Vigetti et al., 2014). Similarly, a recent study illustrated that breakdown of the HA matrix with hyaluronidase enabled the interaction between growth factors and growth factor receptors (Sullivan et al., 2018). This promoted glucose metabolism, cellular proliferation, and migration. The role of HA in GFAT1 knockout PDA cells described herein is likely independent of its structural and signaling functions, given that we observe considerably greater rescue with o-HA (Figure 3H, I), a form of HA that is not traditionally considered for these purposes. Together with the increased rescue by o-HA, several additional experiments also suggested that intracellular catabolism of HMW HA impedes its use as a fuel. Namely, while HMW HA-FITC is readily captured by PDA cells (Figure 3F), HAase catabolism of HA potentiates rescue of GFAT1 (Figure 3G).\n\nOur study introduces a novel role to HA as a fuel for PDA tumor growth (Figure 3H, I), further highlighting the significance and biological complexity of this predominant glycosaminoglycan. Additionally, our study suggests that NAGK, through which HA-mediated GlcNAc presumably refuels the HBP in vivo, may be an attractive therapeutic target for PDA. Indeed, a recent study demonstrated that NAGK knockout in PDA impairs tumor growth in vivo, while only exhibiting a modest impact on cellular proliferation in vitro (Campbell et al., 2021). These results are consistent with our observations that the GlcNAc salvage pathway is used to fill UDP-GlcNAc pools with HA-derived GlcNAc (Figure 5N). Our study also contributes to a growing body of data illuminating unexpected nutrient sources in the TME that support cancer metabolism (Commisso et al., 2013; Kamphorst et al., 2015; Davidson et al., 2017; Olivares et al., 2017; Sousa et al., 2016; Dalin et al., 2019; Halbrook et al., 2019; Zhu et al., 2020; Jayashankar and Edinger, 2020), and this raises the possibility that other glycosaminoglycans may be similarly scavenged.\n\nDue to its extremely hydrophilic nature, HA retains water and acts as a cushioning agent in tissue homeostasis and biomechanical integrity (Toole, 2004). In PDA, HA is a predominant component of the TME, and its water-retaining property is one of the main drivers of the supraphysiological intratumoral pressure (DuFort and DelGiorno, 2016). This pressure can exceed 10-fold that observed in the normal pancreas, and, as a result, tumor vasculature collapses (Provenzano et al., 2012; DuFort et al., 2016; Jacobetz et al., 2013). The limited access to circulation impairs nutrient and oxygen delivery, and it has been proposed that this is a critical impediment to tumoral drug delivery (Olive et al., 2009). Indeed, in animal models, breakdown of the HA matrix with a therapeutic hyaluronidase (PEGPH20) reduces intratumoral pressure, restores circulation, which facilitates drug delivery, and thereby improves response to chemotherapy (Provenzano et al., 2012; Jacobetz et al., 2013). Based on these promising observations, PEGPH20 was tested in clinical trials alongside standard of care chemotherapy. Despite the successes in the preclinical models, PEGPH20 did not extend PDA patient survival (Van Cutsem et al., 2020).\n\nThe discrepancy between the clinical response to PEGPH20 and the preclinical data remains an active area of investigation and may concern the myriad additional roles of HA. For example, the HA matrix may be necessary to restrain tumor dissemination, as was shown for CAF depletion studies in PDA (Helms et al., 2020; Lee et al., 2014; \u00d6zdemir et al., 2015; Rhim et al., 2014). Thus, the benefits afforded by enhanced drug penetration facilitated by PEGPH20 may be negated by this side effect. Along these lines, HA degradation may also enhance tumor metabolism and growth. This could occur through growth factor signaling-dependent (Sullivan et al., 2018) as well as signaling-independent pathways, like the GlcNAc salvage pathway described herein. In contrast, reduction in the HA content of tumors also facilitates T cell invasion (Sharma et al., 2020), which may complement immunotherapy approaches, a concept that would be hindered by immunosuppressive chemotherapies. Given the conflicting roles of HA in tumor restraint and tumor growth, considerable work remains to be done to determine the most effective way to exploit this feature of pancreatic cancer.\n\n## Materials and methods\n\n### Cell culture\n\nMiaPaCa2 (ATCC Cat# CRM-CRL-1420, RRID:CVCL_0428) and HPAC (ATCC Cat# CRL-2119, RRID:CVCL_3517) were obtained from ATCC. TU8988T (DSMZ Cat# ACC-162, RRID:CVCL_1847) was obtained from DSMZ. Patient-derived CAFs (Hwang et al., 2008) were a generous gift from Rosa Hwang, and FL5.12 cells were a generous gift from Dr Aimee Edinger. All cells were routinely checked for mycoplasma contamination with MycoAlert PLUS (Lonza) and validated for authenticity annually by STR profiling. Cells were maintained in standard high glucose DMEM without pyruvate (Gibco) supplemented with 10% fetal bovine serum (FBS; Corning). GFAT1 null PDA were cultured in standard media supplemented with 10 mM GlcNAc (Sigma). GFAT1 null NAGK knockout PDA were cultured in standard media supplemented with 10 mM GalNAc (Sigma). Low nutrient media was made with DMEM without glucose, glutamine, and pyruvate (Gibco). Glucose, glutamine, and FBS were added to the final concentration of 1.25 mM, 0.2 mM, and 1%, respectively. FL5.12 cells were maintained in RPMI 1640 (Gibco) supplemented with 10% FBS, 10 mM HEPES (Sigma), 55 \u03bcM \u03b2-mercaptoethanol (Sigma), antibiotics, 2 mM glutamine, and 500 pg/mL recombinant murine IL-3 (Peprotech 213\u201313).\n\n### Generation of CRISPR/Cas9 knockout clones\n\nGFAT1 and NAGK knockout PDA cell lines were generated using CRISPR/Cas9 method described previously (Zhu et al., 2020). Overlapping oligonucleotides (Feng Zhang lab human GeCKOv2 CRISPR knockout pooled library; Addgene #1000000048) were annealed to generate sgRNA targeting GFAT1 or NAGK. sgRNA was cloned directly into the overhangs of PX459 V2.0 vector (Feng Zhang lab; Addgene plasmid #62988) that was digested with BbsI. The resulting CRISPR/Cas9 plasmid was transformed into chemically competent Stbl3 cells, miniprepped for plasmid DNA, and sequence-verified. sgRNA oligonucleotide pairs for GFAT1 (11) and NAGK are as follows: GFAT1 (sg1 Fwd 5\u2032-CACCgCTTCAGAGACTGGAGTACAG-3\u2032; sg1 Rev 5\u2032-AAACCTGTACTCCAGTCTCTGAAGc-3\u2032) and NAGK (sg1 Fwd 5\u2019-CACCgTAGGGGAGGCACACGATCCG; sg1 Rev 5\u2019-AAACCGGATCGTGTGCCTCCCCTAc-3\u2019; sg2 Fwd 5\u2019-CACCgGCCTAGGGCCTATCTCTGAG-3\u2019; sg2 Rev 5\u2019-AAACCTCAGAGATAGGCCCTAGGCc-3\u2019). Human PDA were transiently transfected using Lipofectamine 3000 according to the manufacturer\u2019s instructions. Cells were selected with puromycin in the presence of GlcNAc (GFAT1 knockout bulk population) or GalNAc (GFAT1 NAGK double knockout bulk population). To select clones, polyclonal pools were seeded into 96-well plates at a density of one cell per well. Individual clones were expanded and verified via western blot and Sanger sequencing. TU8988T clone B9 has a 10 base pair (bp) and a 1 bp deletion in GFAT1; TU8988T clone D10 has two different 1 bp deletions in GFAT1; MiaPaCa2 clone M12 has two different 1 bp deletions in GFAT1; HPAC clone H1 has a 187 bp deletion in GFAT1; HPAC clone H7 has a 187 bp deletion in GFAT1.\n\n### Conditioned media\n\nCM was generated by culturing cells in 15 cm2 plates (25 mL growth media/plate) for 72 hr at 37\u00b0C, 5% CO2, so that they reached ~90% confluence. The media were then filtered through a 0.45 \u03bcm polyethersulfone membrane (VWR). Boiled CM was warmed to 100\u00b0C for 15 min. Freeze-thaw CM were initially stored at \u201380\u00b0C and were thawed in a 37\u00b0C water bath on the day of the experiment. As indicated, fresh growth media were added to the CM at the ratios indicated to avoid nutrient/metabolite exhaustion.\n\n### Colony formation and proliferation assays\n\nFor colony formation assays, cells were plated in a six-well plate in biological triplicate at 500 cells/well in 2 mL of media and grown for 9\u201312 days. For proliferation assays, 5000 cells/well were plated. At endpoint, assays were fixed with 100% methanol for 10 min and stained with 0.5% crystal violet solution for 15 min. Relative colony formation was quantitated manually in a blinded fashion. Proliferation was quantified by removing the dye with 10% acetic acid and measuring OD595.\n\n### CyQUANT viability assay\n\nCells were seeded in 96-well black wall, clear bottom plates at 1000 cells/well in 50 \u03bcL of media and incubated at 37\u00b0C, 5% CO2 for indicated time points. At each time point, media was aspirated and plates were stored at \u201380\u00b0C. Proliferation was determined by CyQUANT (Invitrogen) according to the manufacturer\u2019s instructions. SpectraMax M3 Microplate reader (Molecular Devices) was used to measure fluorescence.\n\n### IncuCyte S3: real-time, live-cell proliferation assay\n\n1000 cells were seeded per well in a 96-well plate and incubated at 37\u00b0C, 5% CO2 for cells to equilibrate. The next day, media were aspirated, washed once with PBS, and replaced with different media as indicated. Proliferation was measured on IncuCyte S3 using phase object confluence as a readout.\n\n### HA-FITC uptake experiments\n\nTU8988T cells (WT, B9-GFAT1KO, D10-GFAT1KO) and BxPC3 cells were seeded in six-well plates with DMEM + 10% FBS + GlcNAc. The next day, cells were rinsed with PBS and the media was switched to DMEM + 10% FBS. The following day, cells were seeded on a chamber slide and grown in DMEM + 10% FBS. MiaPaCa2 cells (WT, M12-GFAT1KO) were treated similarly and were seeded in six-well plates with DMEM + 10% FBS + GlcNAc. The next day, cells were rinsed with PBS and seeded on a chamber slide in DMEM + 10% FBS.\n\nAfter 1 day in chamber slides, the media was removed, cells were rinsed with PBS, and cells were incubated with HA-FITC media for 1 hr at 37\u00b0C (or 1 min at 37\u00b0C as a negative control). After incubation, cells were rinsed and fixed with 10% formalin for 15 min at room temperature. Wells were rinsed three times with PBS + 0.3% BSA and cells were blocked for 1 hr at room temperature with PBS + 1% BSA. Cells were incubated overnight at 4\u00b0C with Mouse anti-panCK (Cytokeratin, DAKO M3515, [1:100]) in PBS + 1% BSA. The following day, cells were rinsed three times with PBS + 0.3% BSA and incubated 1 hr at room temperature with an anti-mouse Alexa Fluor secondary antibody (Invitrogen) in PBS + 1% BSA. Following incubation, cells were rinsed and mounted with ProLong Gold Antifade Mountant with DAPI (Invitrogen).\n\nOlympus BX53F microscope, Olympus DP80 digital camera, and CellSens Standard software were used for imaging and six representative images were taken per cell line and condition. Uptake index was calculated using the Analyze Particles feature in ImageJ after automatic thresholding. The cell outlines and regions of interest were determined using panCK expression and HA-FITC particles were measured. HA-FITC particle area was plotted as a percent of total cell area.\n\n### HA ELISA\n\nAn HA ELISA kit (Cat #DY3614, R&D Systems) was used to determine the concentration of HA in all the different CM samples as per manufacturer\u2019s instructions.\n\n### Metabolite sample Preparation\n\nIntracellular metabolite fractions were prepared from cells grown in six-well plates. The media was aspirated, and cells were incubated with cold (\u221280\u00b0C) 80% methanol (1 mL/well) on dry ice for 10 min. Then, the wells were scraped with a cell scraper and transferred to 1.5 mL tubes on dry ice. To measure GlcNAc concentration in different CM, 0.8 mL of ice-cold 100% methanol was added to 0.2 mL of CM, and the mixture was incubated on dry ice for 10 min.\n\nAfter incubation of cell or media fractions on dry ice, the tubes were centrifuged at 15,000 rpm for 10 min at 4\u00b0C to pellet the insoluble material, and the supernatant was collected in a fresh 1.5 mL tube. Metabolite levels of intercellular fractions were normalized to the protein content of a parallel sample, and all samples were lyophilized on a SpeedVac, and re-suspended in a 50:50 mixture of methanol and water in HPLC vials for LC-MS/MS analysis.\n\n### Liquid chromatography-coupled mass spectrometry\n\nTo detect UDP-GlcNAc, the Shimadzu NEXERA integrated UHPLC system with an LC30AD pump, SIL30AC autosampler, CTO30A column oven, CBM20A controller was coupled with the AB Sciex TripleTOF 5600 MS system with DuoSpray ion source. All calibrations and operations were under control of Analyst TF 1.7.1. Calibrations of TOF-MS and TOF-MS/MS were achieved through reference APCI source of SCEIX calibration solution. A high-throughput LC method of 8 min with flowrate of 0.4 mL/min with a Supelco Ascentis Express HILIC (75 mm \u00d7 3.0 mm, 2.7 \u00b5m). Solvent A was made of 20 mM ammonium acetate of 95% water and 5% acetonitrile at pH 9.0. Solvent B was 95% acetonitrile and 5% water. LC gradient 0.0\u20130.5 min 90% B, 3 min 50% B, 4.10 min 1% B, 5.5 min 1% B, 5.6 min 90% B, 6.5 min 90% B, 8 min stopping. Key parameters on the MS were the CE and CE spread of \u201335 ev, 15 ev. Data were compared to a reference standard. Data processing was performed by Sciex PeakView, MasterView, LibraryView and MQ software tools, and ChemSpider database.\n\nTo measure GlcNAc concentration in the various CM, we utilized an Agilent Technologies Triple Quad 6470 LC/MS system consisting of 1290 Infinity II LC Flexible Pump (Quaternary Pump), 1290 Infinity II Multisampler, 1290 Infinity II Multicolumn Thermostat with six port valve and 6470 triple quad mass spectrometer. Agilent Masshunter Workstation Software LC/MS Data Acquisition for 6400 Series Triple Quadrupole MS with Version B.08.02 is used for compound optimization and sample data acquisition.\n\nA GlcNAc standard was used to establish parameters, against which CM were analyzed. For LC, an Agilent ZORBAX RRHD Extend-C18, 2.1 \u00d7 150 mm, 1.8 \u00b5m and ZORBAX Extend Fast Guards for UHPLC were used in the separation. LC gradient profile is: at 0.25 mL/min, 0\u20132.5 min, 100% A; 7.5 min, 80% A and 20% C; 13 min 55% A and 45% C; 20 min, 1% A and 99% C; 24 min, 1% A and 99% C; 24.05 min, 1% A and 99% D; 27 min, 1% A and 99% D; at 0.8 mL/min, 27.5\u201331.35 min, 1% A and 99% D; at 0.6 mL/min, 31.50 min, 1% A and 99% D; at 0.4 mL/min, 32.25\u201339.9 min, 100% A; at 0.25 mL/min, 40 min, 100% A. Column temperature is kept at 35\u00b0C, samples are at 4\u00b0C, injection volume is 2 \u00b5L. Solvent A is 97% water and 3% methanol 15 mM acetic acid and 10 mM tributylamine at pH of 5. Solvent C is 15 mM acetic acid and 10 mM tributylamine in methanol. Washing Solvent D is acetonitrile. LC system seal washing solvent 90% water and 10% isopropanol, needle wash solvent 75% methanol, 25% water.\n\n6470 Triple Quad MS is calibrated with ESI-L Low concentration Tuning mix. Source parameters: gas temperature 150\u00b0C, gas flow 10 L/min, nebulizer 45 psi, sheath gas temperature 325\u00b0C, sheath gas flow 12 L/min, capillary \u20132000 V, delta EMV \u2013200 V. Dynamic MRM scan type is used with 0.07 min peak width, acquisition time is 24 min. Delta retention time of plus and minus 1 min, fragmentor of 40 eV and cell accelerator of 5 eV are incorporated in the method.\n\n### Xenograft studies\n\nAnimal experiments were conducted in accordance with the Office of Laboratory Animal Welfare and approved by the Institutional Animal Care and Use Committees of the University of Michigan. NOD-SCID gamma (NSG) mice (Jackson Laboratory), 6\u201310 weeks of age of both sexes, were maintained in the facilities of the Unit for Laboratory Animal Medicine (ULAM) under specific pathogen-free conditions. Protocol#: PRO00008877.\n\nWildtype TU8988T and two verified GFAT1 null clones (B9 and D10) were trypsinized and suspended at 1:1 ratio of DMEM (Gibco, 11965\u2013092) cell suspension to Matrigel (Corning, 354234); 150\u2013200 \u03bcL were used per injection. Orthotopic tumors were established by injecting 0.5 \u00d7 106 cells in 50 \u03bcL of 1:1 DMEM to Matrigel mixture. The experiment lasted 5 weeks. For subcutaneous xenograft studies with the pooled populations or validated clones, tumors were established with 5 \u00d7 106 cells in 200 \u03bcL of 1:1 DMEM to Matrigel mixture.\n\nTumor size was measured with digital calipers two times per week. Tumor volume (V) was calculated as V = 1/2(length \u00d7 width2). At endpoint, final tumor volume and mass were measured prior to processing. Tissue was snap-frozen in liquid nitrogen, then stored at \u221280\u00b0C.\n\n### Western blot analysis\n\nAfter SDS-PAGE, proteins were transferred to PVDF membrane, blocked with 5% milk, and incubated with primary antibody overnight at 4\u00b0C. The membranes were washed with TBST, incubated with the appropriate horseradish peroxidase-conjugated secondary antibody for 1 hr and visualized on Bio-Rad imager with enhanced chemiluminescence detection system or exposed on radiographic film.\n\n### Immunohistochemistry on subcutaneous and orthotopic tumors\n\nSubcutaneous and orthotopic tumors were fixed in Z-fix overnight, paraffin embedded, and sectioned onto slides. Sections were deparaffinized in xylene, rehydrated, and blocked with 2.5% BSA prior to incubation with biotinylated HABP antibody (Calbiochem #385911, [1:200]) overnight at 4\u00b0C. Vector Laboratories Vectastain Elite ABC-HRP Kit (PK-6100) and Vector Laboratories DAB Substrate Kit (SK-4100) were used for peroxidase detection of HABP signal.\n\n### Histological scoring\n\nHABP-stained tumors, normal pancreas tissue (negative control), and transformed pancreas tissue from KC mice (positive control) were processed and stained for HABP as described above. Ten representative 20\u00d7 images from each group were scored blinded based on HABP staining. Staining was scored on the following scale: 0, no staining; 1, minimal staining; 2, moderate to strong staining in at least 20% of cells; 3, strong staining in at least 50% of cells.\n\n### Antibodies\n\nThe following antibodies were used in this study: VINCULIN (Cell Signaling 13901), ACTIN (Santa Cruz sc-47778), GAPDH (Cell Signaling 5174), GFAT1 (Abcam 125069), NAGK (Atlas Antibodies HPA035207), O-GlcNAc (Abcam 2735), panCK (Cytokeratin, DAKO M3515), biotinylated HABP (Calbiochem 385911), secondary anti-mouse-HRP (Cell Signaling 7076), and secondary anti-rabbit-HRP (Cell Signaling 7074).\n\n### Detection and quantification of macropinocytosis\n\nThe macropinocytosis index was measured as previously described (Commisso et al., 2014). In brief, cells were seeded on the coverslips in 24-well plate for 24 hr and serum-starved for 18 hr. Cells were incubated with 1 mg/mL HMW TMR-dextran (Fina Biosolutions) in serum-free medium for 30 min at 37\u00b0C. Cells were then washed five times with cold DPBS and fixed in 4% polyformaldehyde for 15 min. The coverslips were mounted onto slides using DAKO Mounting Medium (DAKO) in which nuclei were stained with DAPI. At least six images were captured for each sample using an Olympus FV1000 confocal microscope and analyzed using the particle analysis feature in ImageJ (NIH). The micropinocytosis index for each field was calculated as follows: Macropinocytosis index = (total particle area/total cell area) \u00d7 100%.\n\n### HA, hyaluronidase, and heparin\n\nHeparin was obtained from Sigma (H3393). Oligo HA (5 kDa) was obtained from Lifecore Biomedical. Two different LMW HA were used in this study: 78 kDa HA (Pure Health Solutions) and 60 kDa HA (Lifecore Biomedical). To make 10 mM oligo- or LMW HA media, HA was added slowly into high glucose DMEM without pyruvate, stirred for 2 hr at room temperature, and filtered through 0.20 \u03bcm polyethersulfone membrane. FBS was added to a final concentration of 10%.\n\nHyaluronidase (Sigma H3506) treatment was performed as follows: 10 mM LMW HA media and control media (DMEM +10% FBS) were incubated with hyaluronidase, according to manufacturer\u2019s instructions, overnight in a 37\u00b0C water bath. The next day, media were boiled for 15 min to denature hyaluronidase. The resulting media were mixed 1:1 with fresh growth media to avoid effects of nutrient/metabolite exhaustion.\n\n### Preparation of necrotic FL5.12 cells\n\nNecrotic FL5.12 cells were prepared as described previously (Kim et al., 2018). Cells were washed three times with PBS, cultured in the FL5.12 media without IL-3 (100 million cells/mL) for 72 hr. The necrotic cells were spun down at 13,000 rpm for 10 min at 4\u00b0C, and the pellets were stored at \u201380\u00b0C until use.\n\n### Statistical analysis\n\nStatistics were performed using GraphPad Prism 8. Groups of two were analyzed with two-tailed Student\u2019s t-test. Groups of more than two were analyzed with one-way ANOVA Tukey post hoc test. All error bars represent mean with standard deviation. A p value of less than 0.05 was considered statistically significant. All group numbers and explanation of significant values are presented within the figure legends.\n",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "22562b1e-7386-408d-88d1-4516047327fe",
+      "submission_id": "7a3ac7d2-7078-4039-8893-4e15e7c9412d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Lydia WS Finley, Memorial Sloan Kettering Cancer Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.62645.sa0](https://doi.org/10.7554/eLife.62645.sa0)\n\nIn this manuscript, the authors report that a major component of the pancreatic cancer microenvironment, hyaluronic acid, provides an important source of metabolic intermediates required for pancreatic cancer growth during conditions of nutrient limitation. Overall, this work nicely combines multiple cell lines and genetic approaches to show that scavenging of N-acetyl-glucosamine from hyaluronic acid supports cancer cell growth when de novo synthesis of N-acetyl-glucosamine is limited. More broadly, this work highlights how reliance on certain metabolic enzymes can vary depending on whether cells are grown in vitro or in vivo and provides evidence that environmental nutrient scavenging can contribute to differential metabolic dependencies of cancer cells.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Lydia WS Finley, Memorial Sloan Kettering Cancer Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.62645.sa1](https://doi.org/10.7554/eLife.62645.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Hyaluronic Acid Fuels Pancreatic Cancer Growth\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Richard White as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this manuscript, the authors report that a major component of the pancreatic cancer microenvironment, hyaluronic acid, can support pancreatic cancer cell growth when de novo hexosamine biosynthesis is suppressed or during conditions of nutrient limitation. How cancer cells cope with metabolic challenges to sustain growth and survival in hostile environments is an area of great interest. Here, the authors address how cells might cope with limited de novo synthesis of the metabolic intermediate GlcNAc, which is required for protein glycosylation and is reported to be sensitive to fluctuations in nutrient availability. The authors propose the novel and interesting central hypothesis that pancreatic ductal adenocarcinoma (PDAC) cells overcome limited synthesis of the metabolic intermediate UDP-GlcNAc, presumably a consequence of nutrient limitation in the tumor microenvironment, by taking up hyaluronic acid (HA) from the extracellular space and scavenging GlcNAc from HA. That PDAC cells cannot proliferate in vitro without GFAT1 expression, but can form tumors in the orthotopic or subcutaneous setting, is a compelling finding and lends some support to the notion that components of an intact tumor microenvironment can override blockade of the HBP. However, the manuscript is without formal demonstration that PDAC cells indeed take up HA or HA fragments, or that HA-derived GlcNAc contributes to UDP-GlcNAc pools or to protein glycosylation. To strengthen their conclusions and illustrate the potential of HA scavenging for survival under nutrient depleted conditions, the authors should address the following points:\n\nEssential Revisions:\n\n1. HA fragments can signal via cell surface receptors to increase glucose uptake and profoundly impact glucose metabolism (perhaps including increased HBP activity mediated by GFAT2 in the GFAT1 KO setting). To rule out this and other alternative explanations for the data presented, it is important for the authors to provide direct evidence for HA uptake (for example, using commercially available fluorescent HA) and/or that GlcNAc from HA in fact contributes to GlcNAc/UDP-GlcNAc pools.\n\n2. The authors should directly test their model that HA is a key component of conditioned medium or the tumor microenvironment that supports growth in conditions of low nutrients and/or GFAT1 deletion. Is HA present in conditioned medium? Does NAGK deletion prevent rescue of growth by conditioned medium? Alternatively, the authors could use pharmacological inhibitors of HA synthesis in vitro (using CAFs or PDAC cells) and compare the growth effect of HA-impaired conditioned medium relative to control conditioned medium to rescue growth in order to test whether HA is a necessary component of conditioned medium for growth rescue. Absent these experiments, the authors should test whether GFAT1/NAGK double KO cells can form tumors in vivo in order to determine whether, besides HA cleavage and GlcNAc salvage via NAGK, there are alternative nutrients/pathways that may support glycosylation and cellular proliferation.\n\n3. A related point centers around the notable context-specific environmental rescue of GFAT1 deletion. For example, Figures 1F and G show a complete rescue of GFAT1 KO in the subcutaneous setting, but a significant impairment of GFAT1 KO tumor growth in the orthotopic setting. How do HA levels compare in these distinct environments? Similarly, the conditioned medium rescue data presented in Figure 2, particularly the increased rescue by PDAC cell conditioned medium compared to CAF conditioned medium, is difficult to interpret together with the in vivo results in Figure 1F and G which suggest that the mechanism underlying rescue of proliferation is independent of PDAC cells themselves. Do GFAT1-replete PDAC cells secrete HA, and if so, do the levels exceed HA in CAF conditioned medium? To address these questions, the authors could perform ELISA-based assays for HA present in conditioned medium and IHC for HA binding protein in vivo.\n\n4. To illustrate the generalizability of their model, the authors should repeat key findings, including the ability of hyaluronic acid to rescue growth of cells cultured in low nutrients or with GFAT1 deletion, in at least 2 of the cell lines generated and used in the manuscript. Similarly, the results of HA supplementation in GFAT1/NAGK double KO cells (Figure 4H-M) lends support to the importance of hexosamine salvage for PDAC cell proliferation, but this is only shown in the 8988T cell line and should be reproduced in an additional PDAC cell line.\n\nTitle:\n\nWe recommend the authors change the title to \"Hyaluronic Acid Fuels Pancreatic Cancer Cell Growth\" to reflect the fact that experiments testing the role of hyaluronic acid supporting cancer cell growth was performed in vitro.\n",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e815338c-b8cd-49ec-9129-75bf58d2d9e9",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C1",
+      "claim": "Pancreatic ductal adenocarcinoma (PDA) is one of the deadliest human cancers with no clinically effective treatment options.",
+      "claim_type": "EXPLICIT",
+      "source": "Pancreatic ductal adenocarcinoma (PDA) is one of the deadliest human cancers with no clinically effective treatment options (Siegel et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Siegel et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "88cd3eda-bdb7-4034-8d3d-5fe07b88f37b",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C2",
+      "claim": "PDA is characterized by an intense fibroinflammatory stroma, poor vascularity, deregulated nutrient levels, and rich deposition of extracellular matrix (ECM) components.",
+      "claim_type": "EXPLICIT",
+      "source": "PDA is characterized by an intense fibroinflammatory stroma, poor vascularity, deregulated nutrient levels, and rich deposition of extracellular matrix (ECM) components.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established scientific knowledge about PDA characteristics",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "de1101af-0f37-4293-99cd-671a6e0096ef",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C3",
+      "claim": "Mutant Kras facilitates the rewiring of PDA metabolism to enable survival and proliferation in the nutrient austere tumor microenvironment.",
+      "claim_type": "EXPLICIT",
+      "source": "To survive and proliferate in this nutrient austere tumor microenvironment (TME), the oncogenic driver in PDA, mutant Kras, facilitates the rewiring of PDA metabolism (Halbrook and Lyssiotis, 2017; Perera and Bardeesy, 2015; Ying et al., 2016; Kerk et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "8af352fd-b910-4699-a527-cd8acb1e9b47",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C4",
+      "claim": "Mutant Kras signaling results in upregulated expression of Gfpt1, which encodes GFAT1.",
+      "claim_type": "EXPLICIT",
+      "source": "Signaling downstream of Kras results in upregulated expression of Gfpt1, which encodes glutamine-fructose 6-phosphate amidotransferase 1 (GFAT1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work by the authors (Ying et al., 2012)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "b48d2f4e-b1c7-43b5-a61e-a68488f64ae4",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C5",
+      "claim": "The hexosamine biosynthetic pathway (HBP) is an evolutionarily conserved pathway that integrates glucose, glutamine, fatty acid, and nucleotide metabolism to generate UDP-GlcNAc.",
+      "claim_type": "EXPLICIT",
+      "source": "The HBP is an evolutionarily conserved pathway that integrates glucose, glutamine, fatty acid, and nucleotide metabolism to generate the final product uridine diphosphate N-acetylglucosamine (UDP-GlcNAc).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established scientific knowledge about the HBP",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "e5ab4dbf-0733-4d1a-99ae-8627671dd866",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C6",
+      "claim": "UDP-GlcNAc is a crucial donor molecule for glycosylation and O-GlcNAcylation, two essential post-translational modifications required for cellular structure, signaling, and survival.",
+      "claim_type": "EXPLICIT",
+      "source": "UDP-GlcNAc is a crucial donor molecule for glycosylation and O-GlcNAcylation, two essential post-translational modifications required for cellular structure, signaling, and survival (Akella et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Akella et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "ea053bd7-d544-447f-9e55-c68623ce24cf",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C7",
+      "claim": "The HBP is the only pathway able to generate UDP-GlcNAc de novo.",
+      "claim_type": "EXPLICIT",
+      "source": "The HBP is the only pathway able to generate UDP-GlcNAc de novo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established scientific knowledge about UDP-GlcNAc biosynthesis",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "750b5616-e3e4-43ad-b3a6-af527bb2feab",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C8",
+      "claim": "The HBP functions as a nutrient sensing mechanism for available energy within a cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the HBP integrates nutrients from several major macromolecular classes to produce UDP-GlcNAc, it predictably functions as a nutrient sensing mechanism for available energy within a cell (Wellen et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wellen et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "9b9d11f4-9c44-4945-92ed-611dceda094a",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C9",
+      "claim": "HBP activity is enhanced in numerous cancer subtypes to support tumor survival and growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, numerous studies across cancer subtypes have demonstrated how HBP activity is enhanced to support tumor survival and growth (Paszek et al., 2014; Akella et al., 2019; Walter et al., 2020; Yang et al., 2016) and even immune evasion through alteration of extracellular glycosylation content (Lee et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "08a5659b-f2f2-4216-a5a0-1fea350b7264",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C10",
+      "claim": "PDA cells fuel their aberrant metabolic programs through nutrient scavenging.",
+      "claim_type": "EXPLICIT",
+      "source": "A compendium of studies during the last decade have revealed that PDA cells fuel their aberrant metabolic programs through nutrient scavenging (Ying et al., 2012; Commisso et al., 2013; Kamphorst et al., 2015; Yang et al., 2011; Davidson et al., 2017; Olivares et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "bb367c19-9766-4e0f-9b44-233f9d5285c3",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C11",
+      "claim": "PDA cells participate in metabolic crosstalk and nutrient acquisition with cancer-associated fibroblasts (CAFs) and tumor-associated macrophages (TAMs).",
+      "claim_type": "EXPLICIT",
+      "source": "Further, PDA cells also participate in metabolic crosstalk and nutrient acquisition with non-cancerous cells in the TME, such as cancer-associated fibroblasts (CAFs) and tumor-associated macrophages (TAMs) (Sousa et al., 2016; Dalin et al., 2019; Halbrook et al., 2019; Zhu et al., 2020; Lyssiotis and Kimmelman, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "f68a9552-307c-4174-9421-2e734883cbe2",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C12",
+      "claim": "PDA cells can directly obtain nutrients from the CAF-derived ECM, such as collagen.",
+      "claim_type": "EXPLICIT",
+      "source": "A notable example is the observation that PDA cells can directly obtain nutrients from the CAF-derived ECM, such as collagen (Olivares et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Olivares et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "7f990b26-53f3-4590-9b8d-337a1d68dd81",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C13",
+      "claim": "Hyaluronic acid (HA) is a hydrophilic glycosaminoglycan that is ubiquitously present in human tissue, especially in skin, connective tissue, and joints.",
+      "claim_type": "EXPLICIT",
+      "source": "A major structural component of the TME is hyaluronic acid (HA), a hydrophilic glycosaminoglycan. HA is ubiquitously present in human tissue, especially in skin, connective tissue, and joints, and it is richly abundant in pancreatic tumors (Theocharis et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established scientific knowledge and citation to Theocharis et al., 2000",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "915df91f-ead5-4040-b62c-e0118b450cd0",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C14",
+      "claim": "HA is richly abundant in pancreatic tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "HA is ubiquitously present in human tissue, especially in skin, connective tissue, and joints, and it is richly abundant in pancreatic tumors (Theocharis et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Theocharis et al., 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "ae50ca6a-6962-463e-a6ba-60ef9ae5689e",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C15",
+      "claim": "HA is thought to be primarily deposited by CAFs and, to some extent, by PDA cells.",
+      "claim_type": "EXPLICIT",
+      "source": "HA is thought to be primarily deposited by CAFs and, to some extent, by PDA cells (Goossens et al., 2019; Mahlbacher et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Goossens et al., 2019 and Mahlbacher et al., 1992",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "61f290f2-5322-4db6-bf04-13e7c9050fd9",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C16",
+      "claim": "HA avidly retains water, which is responsible for both its lubricating properties and, in PDA tumors, the supraphysiological pressure that impairs vascularity and limits drug penetrance.",
+      "claim_type": "EXPLICIT",
+      "source": "HA avidly retains water, which is responsible for both its lubricating properties and, in PDA tumors, the supraphysiological pressure that impairs vascularity and limits drug penetrance (Jacobetz et al., 2013; Provenzano et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Jacobetz et al., 2013 and Provenzano et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "1ed5db69-15f8-4d8f-8513-e51280551f8b",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C17",
+      "claim": "HA is a carbohydrate polymer whose monomeric unit is a disaccharide of glucuronic acid and N-acetyl-glucosamine (GlcNAc).",
+      "claim_type": "EXPLICIT",
+      "source": "This is surprising given that HA is a carbohydrate polymer whose monomeric unit is a disaccharide of glucuronic acid and N-acetyl-glucosamine (GlcNAc).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established scientific knowledge about HA structure",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "48fea6f8-e9b5-4685-a69e-758e779b539a",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C18",
+      "claim": "GFAT1 catalyzes the reaction that generates glucosamine 6-phosphate and glutamate from fructose 6-phosphate and glutamine.",
+      "claim_type": "EXPLICIT",
+      "source": "GFAT1 catalyzes the reaction that generates glucosamine 6-phosphate and glutamate from fructose 6-phosphate and glutamine (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by text description and Figure 1A showing the HBP pathway",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "a7259c4a-6566-439b-8a41-495b203bd70e",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C19",
+      "claim": "PDA cells are dependent on glutamine anaplerosis for proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "In another previous study we demonstrated that PDA cells are dependent on glutamine anaplerosis for proliferation (Son et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Son et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "9a3b9c54-7f49-4221-9fb4-b46946d1a7e4",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C20",
+      "claim": "GFAT1 knockout completely blocked proliferation of human PDA cell lines in vitro and led to cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we genetically ablated GFAT1 in human PDA cell lines, which completely blocked proliferation in vitro and led to cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "3b700b60-0a51-4c31-bb10-594f091d2ef8",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C21",
+      "claim": "GFAT1 knockout did not preclude the growth of human tumor xenografts in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, GFAT1 knockout did not preclude the growth of human tumor xenografts in mice, suggesting that cancer cells can maintain fidelity of glycosylation precursor pools by scavenging nutrients from the tumor microenvironment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "169e7778-374e-4489-b768-2486303fac3f",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C22",
+      "claim": "Cancer cells can maintain fidelity of glycosylation precursor pools by scavenging nutrients from the tumor microenvironment.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, GFAT1 knockout did not preclude the growth of human tumor xenografts in mice, suggesting that cancer cells can maintain fidelity of glycosylation precursor pools by scavenging nutrients from the tumor microenvironment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that GFAT1 knockout tumors grow in vivo but not in vitro",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "b3edc874-6425-4ea0-b434-49868dddf288",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C23",
+      "claim": "Hyaluronic acid (HA) can bypass GFAT1 to refuel the HBP via the GlcNAc salvage pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that hyaluronic acid (HA), an abundant carbohydrate polymer in pancreatic tumors composed of repeating N-acetyl-glucosamine (GlcNAc) and glucuronic acid sugars, can bypass GFAT1 to refuel the HBP via the GlcNAc salvage pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "2da5b077-fe8a-4c2c-a593-39e966af23fe",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C24",
+      "claim": "HA can serve as a nutrient fueling PDA metabolism beyond its previously appreciated structural and signaling roles.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data show HA can serve as a nutrient fueling PDA metabolism beyond its previously appreciated structural and signaling roles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "1d883239-ce4e-4262-a466-8791cddb0ceb",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C25",
+      "claim": "GFAT1 knockout was validated in TU8988T, MiaPaca2, and HPAC cell lines using CRISPR/Cas9.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot of GFAT1 and loading control VINCULIN (VNC) from validated CRISPR/Cas9 knockout TU8988T, MiaPaca2, and HPAC clones and their control (non-targeted sgRNA).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by western blot data in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "4b8f70f5-42a3-4c5f-bac7-1ed5a2a2e645",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C26",
+      "claim": "GFAT1 knockout abolished colony formation in all three PDA cell lines in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Using our genomically sequenced and bona fide GFAT1 knockout clonal lines, we found that GFAT1 knockout led to an abolishment of colony formation (Figure 1C) and potently impaired proliferation (Figure 1D, Figure 1\u2014figure supplement 1G) in all three PDA cell lines in vitro.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by colony formation assay data in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "27c4e129-f48b-4c67-917a-6ae5fae0cf80",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C27",
+      "claim": "GFAT1 knockout potently impaired proliferation in all three PDA cell lines in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Using our genomically sequenced and bona fide GFAT1 knockout clonal lines, we found that GFAT1 knockout led to an abolishment of colony formation (Figure 1C) and potently impaired proliferation (Figure 1D, Figure 1\u2014figure supplement 1G) in all three PDA cell lines in vitro.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by proliferation assay data in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "e95cddda-073a-4f4a-b959-6ced9bb8c37a",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C28",
+      "claim": "GFAT1 knockout clonal lines readily formed tumors comparable to wildtype counterparts when implanted into the flanks of immunocompromised mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, when either the pooled or the clonal knockout lines were implanted into the flanks of immunocompromised mice, they readily formed tumors that were comparable to their wildtype counterparts in terms of weight and volume (Figure 1E and F and Figure 1\u2014figure supplement 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by tumor growth data in Figure 1E and F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "6dcc7e7a-7dff-497e-b264-6e7cd1e96c30",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C29",
+      "claim": "GFAT1 knockout clonal lines grown orthotopically in the pancreas were smaller than wildtype tumors at endpoint.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, while clearly capable of forming tumors, the GFAT1 knockout clonal lines grown in the pancreas were smaller than the wildtype tumors at endpoint.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by tumor growth data in Figure 1G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "91f7e351-a5fb-4da4-9bde-0c775fe95a81",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C30",
+      "claim": "Conditioned media from patient-derived CAFs resulted in a significant, albeit modest, rescue in colony formation of GFAT1 knockout clones.",
+      "claim_type": "EXPLICIT",
+      "source": "When GFAT1 knockout clones were incubated in patient-derived CAF CM, we observed a significant, albeit modest, rescue in colony formation (Figure 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by colony formation assay data in Figure 2A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "2da74f94-4a71-48db-9a33-26ca5b806cd2",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C31",
+      "claim": "Conditioned media from wildtype TU8988T cells resulted in a more robust, dose-dependent rescue of colony formation in GFAT1 knockout cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, we observed a more robust, dose-dependent rescue of colony formation in GFAT1 knockout cells with CM from wildtype TU8988T cells (Figure 2C\u2013F and Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by colony formation assay data in Figure 2C-F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "c01b4723-41da-4b29-97de-891fcf88d9ae",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C32",
+      "claim": "Conditioned media from wildtype HPAC and MiaPaCa2 cells was able to partially rescue proliferation of a subset of GFAT1 knockout clones.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, CM from wildtype HPAC and MiaPaCa2 cells was able to partially rescue proliferation of a subset of GFAT1 knockout clones (Figure 2G and Figure 2\u2014figure supplement 1B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by proliferation assay data in Figure 2G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "9d3c58b0-8405-4516-b4de-8cb4943e791b",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C33",
+      "claim": "Both CAF and PDA conditioned media retained the ability to support colony formation in GFAT1 knockout cells after boiling or repeated cycles of freezing and thawing.",
+      "claim_type": "EXPLICIT",
+      "source": "To begin to identify the rescue factors in the CM, we subjected the CM to boiling or repeated cycles of freezing and thawing (F/T). In each of these conditions, both the CAF and the PDA CM retained the ability to support colony formation in GFAT1 knockout cells (Figure 2A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by colony formation assay data in Figure 2A-D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "aa0d64e4-3e22-47a7-806d-9128d2df746a",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C34",
+      "claim": "The rescue factor(s) in conditioned media do not require tertiary structure.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggested the relevant factor(s) did not require tertiary structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that boiling and freeze-thaw do not eliminate rescue activity",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "381acfcd-84b2-42a3-a84d-e2d41efd0260",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C35",
+      "claim": "The rescue activity of conditioned media was dose dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we observed that the rescue activity of the CM was dose dependent (Figure 2E\u2013G and Figure 2\u2014figure supplement 1A-C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by dose-response data in Figure 2E-G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "30f8a4fb-fc85-4547-ba05-0b3d1161e0f2",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C36",
+      "claim": "Millimolar quantities of GlcNAc (>0.625 mM) were required to rescue colony formation of GFAT1 knockout PDA cells.",
+      "claim_type": "EXPLICIT",
+      "source": "GlcNAc dose response curves demonstrated that millimolar quantities of GlcNAc (>0.625 mM) were required to rescue colony formation of GFAT1 knockout PDA cells (Figure 2H and Figure 2\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by dose-response data in Figure 2H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "7a1ac8d8-d4f0-495f-b505-edb4db26ba02",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C37",
+      "claim": "GlcNAc in conditioned media was in the low micromolar range, several orders of magnitude below the millimolar doses of exogenous GlcNAc required to maintain proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, LC-MS/MS quantification of GlcNAc in the CM revealed that it was in the low micromolar range (Figure 2I), several orders of magnitude below the millimolar doses of exogenous GlcNAc required to maintain proliferation (Figure 2H and Figure 2\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by LC-MS/MS data in Figure 2I and dose-response data in Figure 2H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "19f7d5f7-e349-4377-ba04-ca096610094a",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C38",
+      "claim": "Free GlcNAc was not the relevant molecule in conditioned media mediating rescue of GFAT1 knockout cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These results illustrated that free GlcNAc was not the relevant molecule in the CM mediating rescue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the discrepancy between GlcNAc concentration in CM and the concentration required for rescue",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "97156007-1c52-47cd-acc7-34490b48275f",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C39",
+      "claim": "Necrotic cellular debris from FL5.12 cells was unable to rescue GFAT1 knockout across the cell line panel.",
+      "claim_type": "EXPLICIT",
+      "source": "Necrotic cell debris was unable to rescue GFAT1 knockout across our cell line panel (Figure 3\u2014figure supplement 1A-F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by colony formation assay data in Figure 3\u2014figure supplement 1A-F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "b1b8ef25-4615-477a-8be0-fc1f43129607",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C40",
+      "claim": "High-dose heparin was not able to rescue colony formation in GFAT1 knockout cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we tested if glycosaminoglycan carbohydrate polymers could mediate rescue of GFAT1 knockout, in a matter akin to CM. High-dose heparin was not able to rescue colony formation in GFAT1 knockout cells (Figure 3\u2014figure supplement 1A-F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by colony formation assay data in Figure 3\u2014figure supplement 1A-F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "3cc593d8-396e-4978-ac0c-50a55e30c9e6",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C41",
+      "claim": "78 kDa HA provided a modest but significant rescue of colony formation in GFAT1 knockout cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, 78 kDa HA provided a modest but significant rescue (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by colony formation assay data in Figure 3A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "c4bc4407-d481-49d5-aca0-31a993e759ac",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C42",
+      "claim": "Low molecular weight HA (78 kDa) was able to rescue total proteome O-GlcNAc levels in GFAT1 knockout cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the rescue of colony formation in GFAT1 knockout cells, LMW HA (78 kDa) was also able to rescue total proteome O-GlcNAc levels, as assessed by western blot (Figure 3C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by western blot data in Figure 3C-E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "02f31d32-f056-42a1-a91e-6d5949617e84",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C43",
+      "claim": "PDA cell lines exhibited considerable macropinocytosis activity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in PDA, mutant Kras drives macropinocytosis (Commisso et al., 2013), and quantitation of macropinocytotic activity with a fluorescent dextran-based assay revealed that our three PDA cell lines exhibited considerable macropinocytosis (Figure 3\u2014figure supplement 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by macropinocytosis assay data in Figure 3\u2014figure supplement 1G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "1fd15aab-f7fb-4d80-a77d-901c6f777851",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C44",
+      "claim": "GFAT1-proficient and GFAT1 knockout cells readily take up HA.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, following HA uptake using a fluorescently conjugated HA (HA-FITC) revealed GFAT1-proficient and GFAT1 knockout cells readily take up HA (Figure 3F, Figure 3\u2014figure supplement 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by HA-FITC uptake data in Figure 3F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "54b13ba7-97fd-498c-98da-c09958e8562b",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C45",
+      "claim": "Utilizing hyaluronidase to break down LMW HA enhanced the rescue of colony formation in GFAT1 knockout cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this hypothesis, utilizing hyaluronidase to break down LMW HA enhanced the rescue of colony formation (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by colony formation assay data in Figure 3G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "534f2996-5948-4413-8aeb-fc91c21dd096",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C46",
+      "claim": "HA-mediated rescue of proliferation was considerably higher for o-HA (5 kDa) than for LMW HA (60 kDa), and comparable to PDA CM.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed that HA-mediated rescue, as measured through proliferation quantification, was considerably higher for o-HA than for LMW HA, and comparable to PDA CM (Figure 3H, I and Figure 3\u2014figure supplement 2A-D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by proliferation data in Figure 3H and I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "2bf95ce6-283e-410a-8628-f42d976741e5",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C47",
+      "claim": "CAF CM contained considerably more HA than PDA CM.",
+      "claim_type": "EXPLICIT",
+      "source": "CAF CM contained considerably more HA than PDA CM, consistent with the known role for fibroblasts in the production of HA (Figure 3\u2014figure supplement 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by HA ELISA data in Figure 3\u2014figure supplement 2F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "64cca247-d363-4766-a045-afaa7eb04762",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C48",
+      "claim": "The lower limit of detection for the HA ELISA was ~50 kDa HA.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found that the lower limit of detection for the ELISA was ~50 kDA HA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ELISA data in Figure 3\u2014figure supplement 2E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "36526bfa-1c9f-4937-9963-d3e95113b000",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C49",
+      "claim": "4-MU dose dependently blocked HA release into conditioned media.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we demonstrated that 4-MU dose dependently blocked HA release into CM (Figure 4A) while also exhibiting proliferative defects at the highest concentration tested (Figure 4B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by HA quantification data in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "05f7025f-1804-455a-93c4-91146ae6e0cf",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C50",
+      "claim": "The reduction in HA content in conditioned media from 4-MU-treated wildtype PDA cells paralleled the decrease in CM rescue activity in GFAT1 knockout cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Application of CM from 4-MU-treated wildtype PDA cells in GFAT1 rescue assays revealed that the reduction in HA content paralleled the decrease in CM rescue activity in GFAT1 knockout cells (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by proliferation data in Figure 4E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "b43bf21e-ffba-4432-9a47-2df1e50815c3",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C51",
+      "claim": "HA is the relevant factor mediating the rescue activity of PDA CM in GFAT1 knockout cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These collective in vitro studies illustrate that HA can rescue the proliferation of GFAT1 knockout cells and strongly suggest that HA is the relevant factor mediating the rescue activity of PDA CM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the collective experimental data showing HA rescue and 4-MU inhibition",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "78550bc3-6281-4a32-bf0c-156b9f10b833",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C52",
+      "claim": "HA is available to PDA tumors in subcutaneous and orthotopic models.",
+      "claim_type": "EXPLICIT",
+      "source": "First, these data demonstrate that HA is available to PDA tumors in these models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by HABP staining data in Figure 4F-H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "fcad3728-82bb-4a5d-b9ee-282f23aad6b1",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C53",
+      "claim": "There was more HA in subcutaneous tumors than orthotopic tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Blinded scoring using a 0\u20133 scale (Figure 4G) revealed more HA in the subcutaneous than orthotopic setting (Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by HABP staining quantification in Figure 4H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "6cb14476-79db-4267-ad39-e10c6d8d2660",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C54",
+      "claim": "There was a marked reduction in HABP staining in orthotopic GFAT1 knockout tumors compared to wildtype.",
+      "claim_type": "EXPLICIT",
+      "source": "Tumor genotype did not influence HABP levels in the subcutaneous model, whereas there was a marked reduction in HABP staining in the orthotopic GFAT1 knockout tumors (Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by HABP staining quantification in Figure 4H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "30269551-8e48-4f29-90fe-3736f287e183",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C55",
+      "claim": "The difference in growth of GFAT1 knockout tumors in the orthotopic model compared to subcutaneous may result from less HA availability.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, they suggest that the difference in growth of GFAT1 knockout tumors in the orthotopic model compared to subcutaneous, as observed in Figure 1E\u2013G, may result from less HA availability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the correlation between HA levels and tumor growth differences",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "dc7e738f-d738-43f3-bfc1-a7ac43bc53e9",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C56",
+      "claim": "Knockout of NAGK in parental TU8988T and MiaPaCa2 cell lines had no impact on colony formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockout of NAGK in parental TU8988T and MiaPaCa2 cell lines had no impact on colony formation, while reducing the colony-forming capacity of HPAC cells (Figure 5B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by colony formation assay data in Figure 5B and C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "930924a7-88a1-4cad-a671-5e45e987a962",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C57",
+      "claim": "Knockout of NAGK reduced the colony-forming capacity of HPAC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockout of NAGK in parental TU8988T and MiaPaCa2 cell lines had no impact on colony formation, while reducing the colony-forming capacity of HPAC cells (Figure 5B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by colony formation assay data in Figure 5B and C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "96e6d910-297b-414f-9f3c-e50503ae0257",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C58",
+      "claim": "The impact of NAGK knockout on colony formation correlated with the elevated expression of NAGK in wildtype HPAC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These results correlated with the elevated expression of NAGK in wildtype HPAC cells (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by western blot data in Figure 5D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "02fcafbb-c28c-4b0f-aa48-a9988df09395",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C59",
+      "claim": "NAGK knockout did not result in up-regulation of GFAT1.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, NAGK knockout did not result in up-regulation of GFAT1 (Figure 5A), which could have suggested a compensatory metabolic rewiring.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by western blot data in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "18bca593-145c-4eb5-aab9-a69330c637a0",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C60",
+      "claim": "GalNAc can rescue GFAT1 knockout clones.",
+      "claim_type": "EXPLICIT",
+      "source": "The GalNAc dose response for GFAT1 knockout clones was comparable to that of GlcNAc (Figure 2H), demonstrating that they are indeed viable in GalNAc (Figure 5F, Figure 3\u2014figure supplement 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by colony formation assay data in Figure 5F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "91e8f644-4ac1-4481-be24-730d642a6078",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C61",
+      "claim": "LMW HA, o-HA, and PDA CM were unable to rescue GFAT1/NAGK double knockout lines.",
+      "claim_type": "EXPLICIT",
+      "source": "In stark contrast to the GFAT1 knockout line, LMW HA, o-HA, and PDA CM were unable to rescue GFAT1/NAGK double knockout lines (Figure 5H\u2013K, Figure 5\u2014figure supplement 1A-F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by proliferation data in Figure 5H-K",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "b2ab55a6-e36e-4d39-9141-0d15c3670d86",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C62",
+      "claim": "HA or PDA CM rescue of GFAT1 knockout cells restores UDP-GlcNAc pools and proteome O-GlcNAcylation, and this was blocked by knocking out NAGK.",
+      "claim_type": "EXPLICIT",
+      "source": "HA or PDA CM rescue of GFAT1 knockout cells restores UDP-GlcNAc pools and proteome O-GlcNAcylation, and this was blocked by knocking out NAGK (Figure 5L and M and Figure 5\u2014figure supplement 1K-N).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by LC-MS/MS and western blot data in Figure 5L and M",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "8a5d6f28-1e31-497d-b2b7-5052a3731238",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C63",
+      "claim": "HA rescue requires NAGK and the GlcNAc salvage pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "These results illustrate that HA rescue requires NAGK and the GlcNAc salvage pathway, consistent with the idea that HA-derived GlcNAc fuels UDP-GlcNAc biosynthesis upon GFAT1 knockout.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that NAGK knockout blocks HA rescue",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "99d190a2-a439-46cb-808c-9d44593201f6",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C64",
+      "claim": "HA regulates PDA metabolism by refueling the HBP via the GlcNAc salvage pathway to support PDA survival and proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our data implicate HA as a novel nutrient for PDA, where HA regulates PDA metabolism by refueling the HBP via the GlcNAc salvage pathway. This supports PDA survival and proliferation (Figure 5N).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by the collective experimental data presented in the manuscript",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "f4348dd5-1d70-4713-b88e-03d9ab9b01a1",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C65",
+      "claim": "GFAT2 was neither regulated by mutant KRAS nor basally expressed in the models employed in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not pursue GFAT2 in this study because it was neither regulated by mutant KRAS nor basally expressed in the models employed herein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about experimental design and rationale",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "adc904ae-8753-4252-b765-2b1f3c08bb00",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C66",
+      "claim": "Pan glutamine-deamidase inhibitors (e.g. azaserine and 6-diazo-5-oxo-L-norleucine) have demonstrated anti-tumor activity in vitro and in vivo in PDA and other cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Several pan glutamine-deamidase inhibitors (e.g. azaserine and 6-diazo-5-oxo-L-norleucine), which potently suppress GFAT activity, have demonstrated anti-tumor activity in vitro and in vivo in PDA and other cancers (Leone et al., 2019; Sharma et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Leone et al., 2019 and Sharma et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "db47ae10-b051-4ef0-90ad-be5e4d33244b",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C67",
+      "claim": "In tumors and tumor interstitial fluid, there is a significantly elevated level of low molecular weight (LMW; 10\u2013250 kDa) and oligo-HA (o-HA; <10 kDa).",
+      "claim_type": "EXPLICIT",
+      "source": "However, in tumors and tumor interstitial fluid, there is a significantly elevated level of low molecular weight (LMW; 10\u2013250 kDa) and oligo-HA (o-HA; <10 kDa) (Schmaus et al., 2014; Lv et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Schmaus et al., 2014 and Lv et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "1fe8d00a-645b-4b1a-a1af-b221474a54ba",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C68",
+      "claim": "In non-pathological settings, newly synthesized HA is predominantly high molecular weight (HMW; >1000 kDa).",
+      "claim_type": "EXPLICIT",
+      "source": "In non-pathological settings, newly synthesized HA is predominantly high molecular weight (HMW; >1000 kDa) (Monslow et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Monslow et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "9da44570-4943-4a7b-bf5d-5383c25ea71b",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C69",
+      "claim": "Cancer cells have been reported to uptake HA via macropinocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Cancer cells have been reported to uptake HA via macropinocytosis (Greyner et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Greyner et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "d013f7bd-b056-4030-b7d3-a376c44fe372",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C70",
+      "claim": "Mutant Kras drives macropinocytosis in PDA.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in PDA, mutant Kras drives macropinocytosis (Commisso et al., 2013), and quantitation of macropinocytotic activity with a fluorescent dextran-based assay revealed that our three PDA cell lines exhibited considerable macropinocytosis (Figure 3\u2014figure supplement 1G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Commisso et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "7556ef9e-26ca-4ee5-942b-e0489f48935a",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C71",
+      "claim": "The rate limiting step for HA utilization is not HA entry into cells, but rather, the cleavage of HA into smaller fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "This led us to hypothesize that the rate limiting step is not HA entry into cells, but rather, the cleavage of HA into smaller fragments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that hyaluronidase treatment enhances rescue",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "0cdf0d38-a06c-4b85-8440-2c25538760ea",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C72",
+      "claim": "Hyaluronidase has been reported to directly impact cellular metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, hyaluronidase was heat-inactivated after it was used to cleave HA (i.e. before its application to GFAT1 knockout cells; Figure 3\u2014figure supplement 1I), as hyaluronidase has been reported to directly impact cellular metabolism (Sullivan et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sullivan et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "5306037d-9b23-4834-b7bc-79a2f5e802a9",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C73",
+      "claim": "HA is produced by the family of HA synthases, which can be inhibited in vitro with the tool compound 4-methylumbelliferone (4-MU).",
+      "claim_type": "EXPLICIT",
+      "source": "HA is produced by the family of HA synthases, which can be inhibited in vitro with the tool compound 4-methylumbelliferone (4-MU) (Nagy et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Nagy et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "dbf52078-4631-4342-af43-f923334cc396",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C74",
+      "claim": "The role of HA in GFAT1 knockout PDA cells is likely independent of its structural and signaling functions.",
+      "claim_type": "EXPLICIT",
+      "source": "The role of HA in GFAT1 knockout PDA cells described herein is likely independent of its structural and signaling functions, given that we observe considerably greater rescue with o-HA (Figure 3H, I), a form of HA that is not traditionally considered for these purposes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that o-HA provides greater rescue than LMW HA",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "7bbf3e28-a275-43a7-98fb-8333da151af2",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C75",
+      "claim": "HA can activate cell-cell contact-mediated signal transduction through CD44 and/or receptor for HA-mediated motility (RHAMM).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, HA can activate cell-cell contact-mediated signal transduction through CD44 and/or receptor for HA-mediated motility (Misra et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Misra et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "f69471c6-16ea-4f0d-bad9-ed0ecf207e92",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C76",
+      "claim": "The signaling activity/function of HA depends on its molecular weight.",
+      "claim_type": "EXPLICIT",
+      "source": "The signaling activity/function of HA depends on its MW (Toole, 2004; Vigetti et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Toole, 2004 and Vigetti et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "858aa35a-9ed9-43e8-a7ee-31d755fdfad8",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C77",
+      "claim": "Breakdown of the HA matrix with hyaluronidase enabled the interaction between growth factors and growth factor receptors, promoting glucose metabolism, cellular proliferation, and migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, a recent study illustrated that breakdown of the HA matrix with hyaluronidase enabled the interaction between growth factors and growth factor receptors (Sullivan et al., 2018). This promoted glucose metabolism, cellular proliferation, and migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sullivan et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "b667442d-d8c7-4103-b025-729cdcfe44fb",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C78",
+      "claim": "NAGK knockout in PDA impairs tumor growth in vivo, while only exhibiting a modest impact on cellular proliferation in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a recent study demonstrated that NAGK knockout in PDA impairs tumor growth in vivo, while only exhibiting a modest impact on cellular proliferation in vitro (Campbell et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Campbell et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "961ad611-d79c-4c91-b7be-53a1f38441ff",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C79",
+      "claim": "NAGK may be an attractive therapeutic target for PDA.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, our study suggests that NAGK, through which HA-mediated GlcNAc presumably refuels the HBP in vivo, may be an attractive therapeutic target for PDA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement based on the experimental findings",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "052b1494-69b4-4e22-a3b7-3ac96ed147e4",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C80",
+      "claim": "The GlcNAc salvage pathway is used to fill UDP-GlcNAc pools with HA-derived GlcNAc.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with our observations that the GlcNAc salvage pathway is used to fill UDP-GlcNAc pools with HA-derived GlcNAc (Figure 5N).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by the collective experimental data presented in the manuscript",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "8e36b067-92a0-496f-8e93-3ed7ed264e7b",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C81",
+      "claim": "HA retains water and acts as a cushioning agent in tissue homeostasis and biomechanical integrity.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to its extremely hydrophilic nature, HA retains water and acts as a cushioning agent in tissue homeostasis and biomechanical integrity (Toole, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Toole, 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "f7f81396-d273-4187-81a2-9e8a3239bead",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C82",
+      "claim": "HA is a predominant component of the PDA tumor microenvironment, and its water-retaining property is one of the main drivers of the supraphysiological intratumoral pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "In PDA, HA is a predominant component of the TME, and its water-retaining property is one of the main drivers of the supraphysiological intratumoral pressure (DuFort and DelGiorno, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to DuFort and DelGiorno, 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "8d948edd-e2d0-4fc3-b609-1e698b43465c",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C83",
+      "claim": "Intratumoral pressure in PDA can exceed 10-fold that observed in the normal pancreas, causing tumor vasculature to collapse.",
+      "claim_type": "EXPLICIT",
+      "source": "This pressure can exceed 10-fold that observed in the normal pancreas, and, as a result, tumor vasculature collapses (Provenzano et al., 2012; DuFort et al., 2016; Jacobetz et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Provenzano et al., 2012, DuFort et al., 2016, and Jacobetz et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "5eab018c-822a-4184-9740-cd2b62bdfd56",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C84",
+      "claim": "Limited access to circulation impairs nutrient and oxygen delivery and is a critical impediment to tumoral drug delivery.",
+      "claim_type": "EXPLICIT",
+      "source": "The limited access to circulation impairs nutrient and oxygen delivery, and it has been proposed that this is a critical impediment to tumoral drug delivery (Olive et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Olive et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "41f8a1c2-25e9-4999-a58c-a8ca32f350cc",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C85",
+      "claim": "In animal models, breakdown of the HA matrix with PEGPH20 reduces intratumoral pressure, restores circulation, facilitates drug delivery, and improves response to chemotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in animal models, breakdown of the HA matrix with a therapeutic hyaluronidase (PEGPH20) reduces intratumoral pressure, restores circulation, which facilitates drug delivery, and thereby improves response to chemotherapy (Provenzano et al., 2012; Jacobetz et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Provenzano et al., 2012 and Jacobetz et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "e65af961-81e1-4cbf-bbe6-5cea1c8113d5",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C86",
+      "claim": "PEGPH20 did not extend PDA patient survival in clinical trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the successes in the preclinical models, PEGPH20 did not extend PDA patient survival (Van Cutsem et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Van Cutsem et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "30dde3b7-c0af-4317-b63f-5e40a04698cf",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C87",
+      "claim": "The HA matrix may be necessary to restrain tumor dissemination.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the HA matrix may be necessary to restrain tumor dissemination, as was shown for CAF depletion studies in PDA (Helms et al., 2020; Lee et al., 2014; \u00d6zdemir et al., 2015; Rhim et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Helms et al., 2020, Lee et al., 2014, \u00d6zdemir et al., 2015, and Rhim et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "4e03a593-b929-466f-a012-6fbd48cae56e",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C88",
+      "claim": "The benefits afforded by enhanced drug penetration facilitated by PEGPH20 may be negated by enhanced tumor dissemination.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the benefits afforded by enhanced drug penetration facilitated by PEGPH20 may be negated by this side effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement based on prior observations",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "e19e0c7a-f70b-4d53-a2a5-7f4d88312e3e",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C89",
+      "claim": "HA degradation may enhance tumor metabolism and growth through growth factor signaling-dependent and signaling-independent pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Along these lines, HA degradation may also enhance tumor metabolism and growth. This could occur through growth factor signaling-dependent (Sullivan et al., 2018) as well as signaling-independent pathways, like the GlcNAc salvage pathway described herein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement based on the experimental findings and prior work",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "e02fbce6-7e69-4178-b2e5-d81ca415f396",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "claim_id": "C90",
+      "claim": "Reduction in the HA content of tumors facilitates T cell invasion.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, reduction in the HA content of tumors also facilitates T cell invasion (Sharma et al., 2020), which may complement immunotherapy approaches, a concept that would be hindered by immunosuppressive chemotherapies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sharma et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6c15532e-c983-4c23-989e-45728b98c143",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the biological context for PDA, describing it as a deadly cancer characterized by a nutrient-poor tumor microenvironment. Mutant Kras drives metabolic rewiring including upregulation of GFAT1 and the hexosamine biosynthetic pathway (HBP), which generates UDP-GlcNAc for essential glycosylation and O-GlcNAcylation. The HBP is enhanced across multiple cancer types to support tumor survival and growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C9 provide well-established background information supported by multiple citations to prior literature. These claims describe general knowledge about PDA biology, the HBP, and metabolic rewiring in cancer, forming the scientific foundation for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "3b592f3d-9fe3-478a-ace5-e9fcb79cd466",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "PDA cells engage in nutrient scavenging and metabolic crosstalk with stromal cells (CAFs and TAMs) to fuel aberrant metabolism. Hyaluronic acid (HA), a glycosaminoglycan composed of glucuronic acid and GlcNAc disaccharide units, is abundantly deposited in pancreatic tumors primarily by CAFs. HA retains water, contributing to supraphysiological intratumoral pressure that impairs vascularity and drug penetrance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C17 establish the role of nutrient scavenging in PDA and introduce HA as a major TME component. These claims are well-supported by citations to prior work and established biochemical knowledge about HA structure and function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "213941b5-2bf4-4f24-8a0e-03311d73fe57",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "GFAT1 knockout completely blocked proliferation and led to cell death in human PDA cell lines in vitro. However, GFAT1 knockout tumors readily formed and grew in vivo in both subcutaneous and orthotopic xenograft models, suggesting that cancer cells can maintain glycosylation precursor pools by scavenging nutrients from the tumor microenvironment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C22 present a major finding showing the stark in vitro vs. in vivo phenotypic discrepancy. The data in Figures 1C-G clearly demonstrate that GFAT1 is essential in vitro but dispensable in vivo, supported by colony formation, proliferation, and tumor growth measurements. The inference that nutrient scavenging explains this discrepancy (C22) is reasonable and sets up the subsequent investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "b661afc2-c879-492e-b3a8-fbad9ae95d95",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "GFAT1 knockout was validated in three PDA cell lines (TU8988T, MiaPaca2, HPAC) using CRISPR/Cas9. GFAT1 knockout abolished colony formation and potently impaired proliferation in vitro across all three cell lines. When implanted subcutaneously, GFAT1 knockout tumors grew comparably to wildtype. In orthotopic pancreatic implantation, GFAT1 knockout tumors were smaller than wildtype at endpoint but still capable of growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C29 provide detailed experimental validation of the GFAT1 knockout phenotype. Western blots (Figure 1B), colony formation assays (Figure 1C), proliferation assays (Figure 1D), and tumor growth data (Figures 1E-G) consistently support these claims across multiple cell lines and experimental models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "d63a8231-a80e-43fa-a1ba-7882d72a54a4",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Conditioned media (CM) from patient-derived CAFs and wildtype PDA cells rescued colony formation and proliferation of GFAT1 knockout cells. The rescue activity was retained after boiling or freeze-thaw cycles, suggesting the rescue factor(s) do not require tertiary structure. The rescue activity was dose-dependent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C35 demonstrate that soluble factors in CM can rescue GFAT1 knockout cells. Data in Figure 2A-G show consistent rescue effects across multiple cell lines and CM sources. The stability to heat/freeze-thaw (C33-C34) provides important biochemical characterization, though the inference about tertiary structure (C34) is reasonable but not definitively proven.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "1d0a49a3-8b2d-4a82-9982-10782b993d3c",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Millimolar quantities of exogenous GlcNAc (>0.625 mM) were required to rescue GFAT1 knockout cells. However, LC-MS/MS quantification revealed that GlcNAc in conditioned media was only in the low micromolar range, several orders of magnitude below the concentration required for rescue. This indicates that free GlcNAc is not the relevant rescue molecule in conditioned media.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C38 present a critical negative result that rules out free GlcNAc as the rescue factor. The dose-response data (Figure 2H) and LC-MS/MS quantification (Figure 2I) clearly demonstrate the concentration mismatch. The inference (C38) logically follows from the data and motivates the search for alternative GlcNAc sources.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "b6ad3f0e-e9a0-4ec7-89bd-8b03c850b03a",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Necrotic cellular debris and high-dose heparin failed to rescue GFAT1 knockout cells. In contrast, low molecular weight HA (78 kDa) provided modest but significant rescue of colony formation and restored total proteome O-GlcNAc levels in GFAT1 knockout cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42 systematically test candidate rescue molecules. The negative results with necrotic debris and heparin (Figure 3\u2014figure supplement 1A-F) and positive results with LMW HA (Figures 3A-E) are clearly demonstrated. The O-GlcNAc restoration (C42) provides mechanistic support that HA is fueling the HBP.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "a96dbcc3-db29-40eb-aebc-b941324899b9",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "PDA cell lines exhibited considerable macropinocytosis activity and readily took up fluorescently-labeled HA. Hyaluronidase treatment to break down LMW HA enhanced rescue of GFAT1 knockout cells. Oligo-HA (5 kDa) provided considerably higher rescue than LMW HA (60 kDa), comparable to PDA conditioned media.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 address the mechanism of HA utilization. Macropinocytosis data (Figure 3\u2014figure supplement 1G) and HA-FITC uptake (Figure 3F) demonstrate cellular uptake. The hyaluronidase enhancement (Figure 3G) and superior rescue by o-HA (Figures 3H-I) strongly suggest that HA size/degradation is rate-limiting, supporting the metabolic utilization hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "1b95fa1a-e315-4766-823e-35d82a309394",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "CAF conditioned media contained considerably more HA than PDA CM by ELISA, though the assay's lower detection limit was ~50 kDa. Treatment with 4-MU dose-dependently blocked HA release into conditioned media from wildtype PDA cells, and the reduction in HA content paralleled decreased rescue activity in GFAT1 knockout cells. These results strongly suggest HA is the relevant rescue factor in PDA conditioned media.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C51 use pharmacological inhibition to link HA production to rescue activity. The 4-MU dose-response (Figure 4A) and parallel loss of rescue activity (Figure 4E) provide strong correlative evidence. However, the ELISA limitation (C48) means o-HA cannot be directly quantified, leaving some uncertainty. The conclusion (C51) is well-supported but appropriately qualified as a strong suggestion rather than definitive proof.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "9354b22e-d2df-4533-b987-160f88a8d34d",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "HA is available to PDA tumors in both subcutaneous and orthotopic xenograft models, as demonstrated by HABP staining. Subcutaneous tumors contained more HA than orthotopic tumors. GFAT1 knockout did not affect HA levels in subcutaneous tumors but caused marked reduction in orthotopic tumors. The difference in GFAT1 knockout tumor growth between orthotopic and subcutaneous models may result from differential HA availability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C55 connect the in vitro findings to in vivo tumor biology. The HABP staining data (Figures 4F-H) clearly demonstrate HA presence and quantitative differences between models and genotypes. The inference about HA availability explaining growth differences (C55) is reasonable given the correlation, though causation is not definitively established.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "89248749-7e25-43f5-875f-bbab87c770a7",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "NAGK knockout had no impact on colony formation in TU8988T and MiaPaCa2 cells but reduced colony formation in HPAC cells, correlating with elevated NAGK expression in wildtype HPAC. NAGK knockout did not induce compensatory GFAT1 upregulation. GalNAc, which bypasses both GFAT1 and NAGK via the Leloir pathway, rescued GFAT1 knockout cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C60 characterize NAGK function and establish the experimental system for testing the salvage pathway. Colony formation data (Figures 5B-C), western blots (Figures 5A, D), and GalNAc rescue (Figure 5F) support these claims. The cell line-specific NAGK dependency (C56-C58) is interesting and well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "61be2982-a2f5-4386-a41d-b0834ee37218",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "LMW HA, oligo-HA, and PDA conditioned media were unable to rescue GFAT1/NAGK double knockout cells. HA or PDA CM rescue of GFAT1 knockout cells restored UDP-GlcNAc pools and proteome O-GlcNAcylation, and this restoration was blocked by NAGK knockout. These results demonstrate that HA rescue requires NAGK and the GlcNAc salvage pathway, establishing that HA-derived GlcNAc refuels the HBP to support PDA survival and proliferation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C64 provide the critical mechanistic validation that HA works through the GlcNAc salvage pathway. The inability of HA to rescue double knockouts (Figures 5H-K) and the metabolic rescue blocked by NAGK loss (Figures 5L-M) provide strong evidence. The conclusion (C64) is well-supported by the collective data showing HA \u2192 GlcNAc \u2192 NAGK \u2192 UDP-GlcNAc \u2192 glycosylation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "9185e9de-372e-4aba-bb36-71913b36128b",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "GFAT2 was not pursued in this study because it was neither regulated by mutant KRAS nor basally expressed in the models used. Pan glutamine-deamidase inhibitors that suppress GFAT activity have shown anti-tumor activity in PDA and other cancers in prior studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 provide methodological justification and context from prior work. C65 explains an experimental choice, and C66 cites prior literature (Leone et al., 2019; Sharma et al., 2020) to establish therapeutic relevance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "323a6533-a707-4bce-9af0-c93cfc9642f6",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "In tumors, there are elevated levels of low molecular weight and oligo-HA compared to the high molecular weight HA found in normal tissue. Cancer cells can uptake HA via macropinocytosis, which is driven by mutant Kras in PDA. The rate-limiting step for HA utilization appears to be cleavage into smaller fragments rather than cellular uptake. HA is produced by HA synthases, which can be inhibited by 4-MU.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C73 integrate prior literature (multiple citations) with the current findings to explain HA biology and utilization. The inference about rate-limitation (C71) is supported by the hyaluronidase enhancement data. These claims provide important mechanistic context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "84e1d7aa-ac6f-4bd8-8efa-772f954d2c06",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The role of HA in rescuing GFAT1 knockout PDA cells is likely independent of its traditional structural and signaling functions, given that oligo-HA (which is not typically associated with these functions) provides greater rescue than LMW HA. HA can activate signaling through CD44 and RHAMM, and its signaling activity depends on molecular weight. Prior work showed that HA breakdown with hyaluronidase enabled growth factor-receptor interactions, promoting metabolism and proliferation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C77 distinguish the metabolic role of HA identified in this study from its known structural/signaling roles. The inference (C74) is reasonable based on the o-HA data, though not definitive. The citations to prior work (C75-C77) provide appropriate context for alternative HA functions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "035693b4-9d2b-4435-81c1-74f14987d15e",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "A recent study showed that NAGK knockout impairs PDA tumor growth in vivo while having modest effects in vitro, consistent with the current findings that the GlcNAc salvage pathway fills UDP-GlcNAc pools with HA-derived GlcNAc. NAGK may be an attractive therapeutic target for PDA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C80 connect the current findings to recent literature (Campbell et al., 2021) and propose therapeutic implications. C78 is a citation to prior work, C80 summarizes the current mechanism, and C79 is appropriately qualified speculation about therapeutic potential.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    },
+    {
+      "id": "dcf189b9-f93e-41a6-a3d9-500887e86242",
+      "content_id": "315a3c39-be99-4c9e-8ab0-8832916955b9",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "HA's water-retention properties contribute to supraphysiological intratumoral pressure in PDA (>10-fold normal), causing vascular collapse and impairing drug delivery. In preclinical models, PEGPH20 (therapeutic hyaluronidase) reduced pressure, restored circulation, and improved chemotherapy response. However, PEGPH20 failed to extend patient survival in clinical trials. The HA matrix may restrain tumor dissemination, and its degradation could enhance tumor growth through signaling-dependent and signaling-independent (GlcNAc salvage) pathways, potentially negating therapeutic benefits. Conversely, HA reduction facilitates T cell invasion, which could complement immunotherapy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C90 discuss the complex and contradictory roles of HA in PDA, integrating extensive prior literature with the current findings. The citations support the preclinical success and clinical failure of PEGPH20 (C85-C86). The discussion of potential mechanisms for clinical failure (C87-C89) includes appropriate speculation (C88-C89) based on the current metabolic findings and prior work. This provides important context for why targeting HA is challenging.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:48:19.778541Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e815338c-b8cd-49ec-9129-75bf58d2d9e9",
+      "result_id": "6c15532e-c983-4c23-989e-45728b98c143"
+    },
+    {
+      "claim_id": "88cd3eda-bdb7-4034-8d3d-5fe07b88f37b",
+      "result_id": "6c15532e-c983-4c23-989e-45728b98c143"
+    },
+    {
+      "claim_id": "de1101af-0f37-4293-99cd-671a6e0096ef",
+      "result_id": "6c15532e-c983-4c23-989e-45728b98c143"
+    },
+    {
+      "claim_id": "8af352fd-b910-4699-a527-cd8acb1e9b47",
+      "result_id": "6c15532e-c983-4c23-989e-45728b98c143"
+    },
+    {
+      "claim_id": "b48d2f4e-b1c7-43b5-a61e-a68488f64ae4",
+      "result_id": "6c15532e-c983-4c23-989e-45728b98c143"
+    },
+    {
+      "claim_id": "e5ab4dbf-0733-4d1a-99ae-8627671dd866",
+      "result_id": "6c15532e-c983-4c23-989e-45728b98c143"
+    },
+    {
+      "claim_id": "ea053bd7-d544-447f-9e55-c68623ce24cf",
+      "result_id": "6c15532e-c983-4c23-989e-45728b98c143"
+    },
+    {
+      "claim_id": "750b5616-e3e4-43ad-b3a6-af527bb2feab",
+      "result_id": "6c15532e-c983-4c23-989e-45728b98c143"
+    },
+    {
+      "claim_id": "9b9d11f4-9c44-4945-92ed-611dceda094a",
+      "result_id": "6c15532e-c983-4c23-989e-45728b98c143"
+    },
+    {
+      "claim_id": "08a5659b-f2f2-4216-a5a0-1fea350b7264",
+      "result_id": "3b592f3d-9fe3-478a-ace5-e9fcb79cd466"
+    },
+    {
+      "claim_id": "bb367c19-9766-4e0f-9b44-233f9d5285c3",
+      "result_id": "3b592f3d-9fe3-478a-ace5-e9fcb79cd466"
+    },
+    {
+      "claim_id": "f68a9552-307c-4174-9421-2e734883cbe2",
+      "result_id": "3b592f3d-9fe3-478a-ace5-e9fcb79cd466"
+    },
+    {
+      "claim_id": "7f990b26-53f3-4590-9b8d-337a1d68dd81",
+      "result_id": "3b592f3d-9fe3-478a-ace5-e9fcb79cd466"
+    },
+    {
+      "claim_id": "915df91f-ead5-4040-b62c-e0118b450cd0",
+      "result_id": "3b592f3d-9fe3-478a-ace5-e9fcb79cd466"
+    },
+    {
+      "claim_id": "ae50ca6a-6962-463e-a6ba-60ef9ae5689e",
+      "result_id": "3b592f3d-9fe3-478a-ace5-e9fcb79cd466"
+    },
+    {
+      "claim_id": "61f290f2-5322-4db6-bf04-13e7c9050fd9",
+      "result_id": "3b592f3d-9fe3-478a-ace5-e9fcb79cd466"
+    },
+    {
+      "claim_id": "1ed5db69-15f8-4d8f-8513-e51280551f8b",
+      "result_id": "3b592f3d-9fe3-478a-ace5-e9fcb79cd466"
+    },
+    {
+      "claim_id": "48fea6f8-e9b5-4685-a69e-758e779b539a",
+      "result_id": "213941b5-2bf4-4f24-8a0e-03311d73fe57"
+    },
+    {
+      "claim_id": "a7259c4a-6566-439b-8a41-495b203bd70e",
+      "result_id": "213941b5-2bf4-4f24-8a0e-03311d73fe57"
+    },
+    {
+      "claim_id": "9a3b9c54-7f49-4221-9fb4-b46946d1a7e4",
+      "result_id": "213941b5-2bf4-4f24-8a0e-03311d73fe57"
+    },
+    {
+      "claim_id": "3b700b60-0a51-4c31-bb10-594f091d2ef8",
+      "result_id": "213941b5-2bf4-4f24-8a0e-03311d73fe57"
+    },
+    {
+      "claim_id": "169e7778-374e-4489-b768-2486303fac3f",
+      "result_id": "213941b5-2bf4-4f24-8a0e-03311d73fe57"
+    },
+    {
+      "claim_id": "1d883239-ce4e-4262-a466-8791cddb0ceb",
+      "result_id": "b661afc2-c879-492e-b3a8-fbad9ae95d95"
+    },
+    {
+      "claim_id": "4b8f70f5-42a3-4c5f-bac7-1ed5a2a2e645",
+      "result_id": "b661afc2-c879-492e-b3a8-fbad9ae95d95"
+    },
+    {
+      "claim_id": "27c4e129-f48b-4c67-917a-6ae5fae0cf80",
+      "result_id": "b661afc2-c879-492e-b3a8-fbad9ae95d95"
+    },
+    {
+      "claim_id": "e95cddda-073a-4f4a-b959-6ced9bb8c37a",
+      "result_id": "b661afc2-c879-492e-b3a8-fbad9ae95d95"
+    },
+    {
+      "claim_id": "6dcc7e7a-7dff-497e-b264-6e7cd1e96c30",
+      "result_id": "b661afc2-c879-492e-b3a8-fbad9ae95d95"
+    },
+    {
+      "claim_id": "91f7e351-a5fb-4da4-9bde-0c775fe95a81",
+      "result_id": "d63a8231-a80e-43fa-a1ba-7882d72a54a4"
+    },
+    {
+      "claim_id": "2da74f94-4a71-48db-9a33-26ca5b806cd2",
+      "result_id": "d63a8231-a80e-43fa-a1ba-7882d72a54a4"
+    },
+    {
+      "claim_id": "c01b4723-41da-4b29-97de-891fcf88d9ae",
+      "result_id": "d63a8231-a80e-43fa-a1ba-7882d72a54a4"
+    },
+    {
+      "claim_id": "9d3c58b0-8405-4516-b4de-8cb4943e791b",
+      "result_id": "d63a8231-a80e-43fa-a1ba-7882d72a54a4"
+    },
+    {
+      "claim_id": "aa0d64e4-3e22-47a7-806d-9128d2df746a",
+      "result_id": "d63a8231-a80e-43fa-a1ba-7882d72a54a4"
+    },
+    {
+      "claim_id": "381acfcd-84b2-42a3-a84d-e2d41efd0260",
+      "result_id": "d63a8231-a80e-43fa-a1ba-7882d72a54a4"
+    },
+    {
+      "claim_id": "30f8a4fb-fc85-4547-ba05-0b3d1161e0f2",
+      "result_id": "1d0a49a3-8b2d-4a82-9982-10782b993d3c"
+    },
+    {
+      "claim_id": "7a1ac8d8-d4f0-495f-b505-edb4db26ba02",
+      "result_id": "1d0a49a3-8b2d-4a82-9982-10782b993d3c"
+    },
+    {
+      "claim_id": "19f7d5f7-e349-4377-ba04-ca096610094a",
+      "result_id": "1d0a49a3-8b2d-4a82-9982-10782b993d3c"
+    },
+    {
+      "claim_id": "97156007-1c52-47cd-acc7-34490b48275f",
+      "result_id": "b6ad3f0e-e9a0-4ec7-89bd-8b03c850b03a"
+    },
+    {
+      "claim_id": "b1b8ef25-4615-477a-8be0-fc1f43129607",
+      "result_id": "b6ad3f0e-e9a0-4ec7-89bd-8b03c850b03a"
+    },
+    {
+      "claim_id": "3cc593d8-396e-4978-ac0c-50a55e30c9e6",
+      "result_id": "b6ad3f0e-e9a0-4ec7-89bd-8b03c850b03a"
+    },
+    {
+      "claim_id": "c4bc4407-d481-49d5-aca0-31a993e759ac",
+      "result_id": "b6ad3f0e-e9a0-4ec7-89bd-8b03c850b03a"
+    },
+    {
+      "claim_id": "02f31d32-f056-42a1-a91e-6d5949617e84",
+      "result_id": "a96dbcc3-db29-40eb-aebc-b941324899b9"
+    },
+    {
+      "claim_id": "1fd15aab-f7fb-4d80-a77d-901c6f777851",
+      "result_id": "a96dbcc3-db29-40eb-aebc-b941324899b9"
+    },
+    {
+      "claim_id": "54b13ba7-97fd-498c-98da-c09958e8562b",
+      "result_id": "a96dbcc3-db29-40eb-aebc-b941324899b9"
+    },
+    {
+      "claim_id": "534f2996-5948-4413-8aeb-fc91c21dd096",
+      "result_id": "a96dbcc3-db29-40eb-aebc-b941324899b9"
+    },
+    {
+      "claim_id": "2bf95ce6-283e-410a-8628-f42d976741e5",
+      "result_id": "1b95fa1a-e315-4766-823e-35d82a309394"
+    },
+    {
+      "claim_id": "64cca247-d363-4766-a045-afaa7eb04762",
+      "result_id": "1b95fa1a-e315-4766-823e-35d82a309394"
+    },
+    {
+      "claim_id": "36526bfa-1c9f-4937-9963-d3e95113b000",
+      "result_id": "1b95fa1a-e315-4766-823e-35d82a309394"
+    },
+    {
+      "claim_id": "05f7025f-1804-455a-93c4-91146ae6e0cf",
+      "result_id": "1b95fa1a-e315-4766-823e-35d82a309394"
+    },
+    {
+      "claim_id": "b43bf21e-ffba-4432-9a47-2df1e50815c3",
+      "result_id": "1b95fa1a-e315-4766-823e-35d82a309394"
+    },
+    {
+      "claim_id": "78550bc3-6281-4a32-bf0c-156b9f10b833",
+      "result_id": "9354b22e-d2df-4533-b987-160f88a8d34d"
+    },
+    {
+      "claim_id": "fcad3728-82bb-4a5d-b9ee-282f23aad6b1",
+      "result_id": "9354b22e-d2df-4533-b987-160f88a8d34d"
+    },
+    {
+      "claim_id": "6cb14476-79db-4267-ad39-e10c6d8d2660",
+      "result_id": "9354b22e-d2df-4533-b987-160f88a8d34d"
+    },
+    {
+      "claim_id": "30269551-8e48-4f29-90fe-3736f287e183",
+      "result_id": "9354b22e-d2df-4533-b987-160f88a8d34d"
+    },
+    {
+      "claim_id": "dc7e738f-d738-43f3-bfc1-a7ac43bc53e9",
+      "result_id": "89248749-7e25-43f5-875f-bbab87c770a7"
+    },
+    {
+      "claim_id": "930924a7-88a1-4cad-a671-5e45e987a962",
+      "result_id": "89248749-7e25-43f5-875f-bbab87c770a7"
+    },
+    {
+      "claim_id": "96e6d910-297b-414f-9f3c-e50503ae0257",
+      "result_id": "89248749-7e25-43f5-875f-bbab87c770a7"
+    },
+    {
+      "claim_id": "02fcafbb-c28c-4b0f-aa48-a9988df09395",
+      "result_id": "89248749-7e25-43f5-875f-bbab87c770a7"
+    },
+    {
+      "claim_id": "18bca593-145c-4eb5-aab9-a69330c637a0",
+      "result_id": "89248749-7e25-43f5-875f-bbab87c770a7"
+    },
+    {
+      "claim_id": "91e8f644-4ac1-4481-be24-730d642a6078",
+      "result_id": "61be2982-a2f5-4386-a41d-b0834ee37218"
+    },
+    {
+      "claim_id": "b2ab55a6-e36e-4d39-9141-0d15c3670d86",
+      "result_id": "61be2982-a2f5-4386-a41d-b0834ee37218"
+    },
+    {
+      "claim_id": "8a5d6f28-1e31-497d-b2b7-5052a3731238",
+      "result_id": "61be2982-a2f5-4386-a41d-b0834ee37218"
+    },
+    {
+      "claim_id": "99d190a2-a439-46cb-808c-9d44593201f6",
+      "result_id": "61be2982-a2f5-4386-a41d-b0834ee37218"
+    },
+    {
+      "claim_id": "f4348dd5-1d70-4713-b88e-03d9ab9b01a1",
+      "result_id": "9185e9de-372e-4aba-bb36-71913b36128b"
+    },
+    {
+      "claim_id": "adc904ae-8753-4252-b765-2b1f3c08bb00",
+      "result_id": "9185e9de-372e-4aba-bb36-71913b36128b"
+    },
+    {
+      "claim_id": "db47ae10-b051-4ef0-90ad-be5e4d33244b",
+      "result_id": "323a6533-a707-4bce-9af0-c93cfc9642f6"
+    },
+    {
+      "claim_id": "1fe8d00a-645b-4b1a-a1af-b221474a54ba",
+      "result_id": "323a6533-a707-4bce-9af0-c93cfc9642f6"
+    },
+    {
+      "claim_id": "9da44570-4943-4a7b-bf5d-5383c25ea71b",
+      "result_id": "323a6533-a707-4bce-9af0-c93cfc9642f6"
+    },
+    {
+      "claim_id": "d013f7bd-b056-4030-b7d3-a376c44fe372",
+      "result_id": "323a6533-a707-4bce-9af0-c93cfc9642f6"
+    },
+    {
+      "claim_id": "7556ef9e-26ca-4ee5-942b-e0489f48935a",
+      "result_id": "323a6533-a707-4bce-9af0-c93cfc9642f6"
+    },
+    {
+      "claim_id": "0cdf0d38-a06c-4b85-8440-2c25538760ea",
+      "result_id": "323a6533-a707-4bce-9af0-c93cfc9642f6"
+    },
+    {
+      "claim_id": "5306037d-9b23-4834-b7bc-79a2f5e802a9",
+      "result_id": "323a6533-a707-4bce-9af0-c93cfc9642f6"
+    },
+    {
+      "claim_id": "dbf52078-4631-4342-af43-f923334cc396",
+      "result_id": "84e1d7aa-ac6f-4bd8-8efa-772f954d2c06"
+    },
+    {
+      "claim_id": "7bbf3e28-a275-43a7-98fb-8333da151af2",
+      "result_id": "84e1d7aa-ac6f-4bd8-8efa-772f954d2c06"
+    },
+    {
+      "claim_id": "f69471c6-16ea-4f0d-bad9-ed0ecf207e92",
+      "result_id": "84e1d7aa-ac6f-4bd8-8efa-772f954d2c06"
+    },
+    {
+      "claim_id": "858aa35a-9ed9-43e8-a7ee-31d755fdfad8",
+      "result_id": "84e1d7aa-ac6f-4bd8-8efa-772f954d2c06"
+    },
+    {
+      "claim_id": "b667442d-d8c7-4103-b025-729cdcfe44fb",
+      "result_id": "035693b4-9d2b-4435-81c1-74f14987d15e"
+    },
+    {
+      "claim_id": "961ad611-d79c-4c91-b7be-53a1f38441ff",
+      "result_id": "035693b4-9d2b-4435-81c1-74f14987d15e"
+    },
+    {
+      "claim_id": "052b1494-69b4-4e22-a3b7-3ac96ed147e4",
+      "result_id": "035693b4-9d2b-4435-81c1-74f14987d15e"
+    },
+    {
+      "claim_id": "8e36b067-92a0-496f-8e93-3ed7ed264e7b",
+      "result_id": "dcf189b9-f93e-41a6-a3d9-500887e86242"
+    },
+    {
+      "claim_id": "f7f81396-d273-4187-81a2-9e8a3239bead",
+      "result_id": "dcf189b9-f93e-41a6-a3d9-500887e86242"
+    },
+    {
+      "claim_id": "8d948edd-e2d0-4fc3-b609-1e698b43465c",
+      "result_id": "dcf189b9-f93e-41a6-a3d9-500887e86242"
+    },
+    {
+      "claim_id": "5eab018c-822a-4184-9740-cd2b62bdfd56",
+      "result_id": "dcf189b9-f93e-41a6-a3d9-500887e86242"
+    },
+    {
+      "claim_id": "41f8a1c2-25e9-4999-a58c-a8ca32f350cc",
+      "result_id": "dcf189b9-f93e-41a6-a3d9-500887e86242"
+    },
+    {
+      "claim_id": "e65af961-81e1-4cbf-bbe6-5cea1c8113d5",
+      "result_id": "dcf189b9-f93e-41a6-a3d9-500887e86242"
+    },
+    {
+      "claim_id": "30dde3b7-c0af-4317-b63f-5e40a04698cf",
+      "result_id": "dcf189b9-f93e-41a6-a3d9-500887e86242"
+    },
+    {
+      "claim_id": "4e03a593-b929-466f-a012-6fbd48cae56e",
+      "result_id": "dcf189b9-f93e-41a6-a3d9-500887e86242"
+    },
+    {
+      "claim_id": "e19e0c7a-f70b-4d53-a2a5-7f4d88312e3e",
+      "result_id": "dcf189b9-f93e-41a6-a3d9-500887e86242"
+    },
+    {
+      "claim_id": "e02fbce6-7e69-4178-b2e5-d81ca415f396",
+      "result_id": "dcf189b9-f93e-41a6-a3d9-500887e86242"
+    }
+  ],
+  "comparisons": []
+}

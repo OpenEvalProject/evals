@@ -1,0 +1,1150 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Spontaneous neural activity was recorded from eight zebrafish larvae aged 5\u20137 days post fertilization expressing the GCaMP6s or GCaMP6f calcium reporters using light-sheet microscopy.",
+    "claim_type": "EXPLICIT",
+    "source": "Spontaneous neural activity was recorded from eight zebrafish larvae aged 5\u20137 days post fertilization expressing the GCaMP6s or GCaMP6f calcium reporters using light-sheet microscopy (Panier et al., 2013; Wolf et al., 2017; Migault et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct methodological statement describing the experimental data collection procedure, supported by citations to previous work.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "Individual neuronal fluorescence traces were deconvolved to binarized spike trains using blind sparse deconvolution.",
+    "claim_type": "EXPLICIT",
+    "source": "Individual neuronal fluorescence traces were deconvolved to binarized spike trains using blind sparse deconvolution (Tubiana et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a specific data processing method applied to the experimental data, supported by a citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "cRBMs are maximum entropy models that fit model-specific data statistics.",
+    "claim_type": "EXPLICIT",
+    "source": "cRBMs are maximum entropy models, that is, the maximally unconstrained solution that fits model-specific data statistics (Hinton and Salakhutdinov, 2006; Tubiana and Monasson, 2017; Gardella et al., 2019), and critically extend the classical RBM formulation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a theoretical statement about the mathematical properties of the model, supported by citations to the relevant literature.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "cRBM-inferred assemblies are typically densely localized in space and together span the entire brain.",
+    "claim_type": "EXPLICIT",
+    "source": "Figure 1C shows all recorded neurons of a zebrafish brain, color-labeled according to their strongest-connecting HU, illustrating that cRBM-inferred assemblies (hereafter, neural assemblies for conciseness) are typically densely localized in space and together span the entire brain.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from the data visualization shown in Figure 1C, describing spatial properties of the inferred assemblies.",
+    "evidence_type": [
+      "DATA",
+      "IMAGE"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "The bipartite architecture ensures that the conditional distributions factorize, leading to a sampling procedure where all neurons or all HUs can be sampled in parallel.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, this bipartite architecture ensures that the conditional distributions factorize, leading to a sampling procedure where all neurons or all HUs can be sampled in parallel.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a mathematical property of the model architecture, describing computational advantages.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "PCA shows a predominance of small weights for most neurons.",
+    "claim_type": "EXPLICIT",
+    "source": "(K) Corresponding distribution as in (J) for PCA (dark yellow) and its shuffled weight matrix (light yellow), indicating a predominance of small weights in PCA for most neurons vi.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from the PCA weight distribution shown in Figure 2K.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "The maximum entropy principle ensures that neural assemblies are inferred solely from the data statistics.",
+    "claim_type": "EXPLICIT",
+    "source": "(1) The maximum entropy principle ensures that neural assemblies are inferred solely from the data statistics.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a theoretical property of the maximum entropy framework used in the model.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "The generative nature of the model can be leveraged to evaluate its capacity to replicate the empirical data statistics.",
+    "claim_type": "EXPLICIT",
+    "source": "(2) The generative nature of the model, through alternate data sampling of the neuronal and assembly layers, can be leveraged to evaluate its capacity to replicate the empirical data statistics, such as the pairwise co-activation probabilities of all neuron pairs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a key advantage of using a generative model for validation purposes.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "The cRBM steers the assembly organization to the compositional phase where a small number of assemblies are active at any point in time.",
+    "claim_type": "EXPLICIT",
+    "source": "(3) The cRBM steers the assembly organization to the so-called compositional phase where a small number of assemblies are active at any point in time, making the resulting model highly interpretable as we have shown previously for protein sequence analysis (Tubiana et al., 2019b).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a key property of the cRBM model, supported by citation to previous work.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "cRBMs were successfully trained to brain-scale recordings containing 41,000 neurons on average.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, we have successfully trained cRBMs to brain-scale, neuron-level recordings of spontaneous activity in larval zebrafish containing 41,000 neurons on average (Panier et al., 2013; Wolf et al., 2017; Migault et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the scale of data successfully modeled, supported by citations.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "The cRBM application represents an increase of approximately 2 orders of magnitude in number of neurons with respect to previously reported RBM implementations.",
+    "claim_type": "EXPLICIT",
+    "source": "This represents an increase of \u223c2 orders of magnitude in number of neurons with respect to previously reported RBM implementations (K\u00f6ster et al., 2014; Gardella et al et al., 2017; Volpi et al., 2020), attained through significant algorithmic and computational enhancements.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparative statement about the scale of the current work relative to previous studies, supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "All cells could be grouped into 100\u2013200 partially overlapping assemblies.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that all cells could be grouped into 100\u2013200 partially overlapping assemblies, which are anatomically localized and together span the entire brain, and accurately replicate the first and second order statistics of the neural activity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary finding from the cRBM analysis describing the number and properties of identified assemblies.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "The identified assemblies are anatomically localized and together span the entire brain.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that all cells could be grouped into 100\u2013200 partially overlapping assemblies, which are anatomically localized and together span the entire brain, and accurately replicate the first and second order statistics of the neural activity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes spatial properties of the identified assemblies from the analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "The identified assemblies accurately replicate the first and second order statistics of the neural activity.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that all cells could be grouped into 100\u2013200 partially overlapping assemblies, which are anatomically localized and together span the entire brain, and accurately replicate the first and second order statistics of the neural activity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the statistical accuracy of the model in reproducing data properties.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "The assemblies carry more predictive power than a fully connected model which has orders of magnitude more parameters.",
+    "claim_type": "EXPLICIT",
+    "source": "These assemblies were found to carry more predictive power than a fully connected model which has orders of magnitude more parameters, validating that assemblies underpin collective neural dynamics.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparative statement about model performance, validating the assembly-based approach.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "The assembly-based functional connectivity is well-conserved across individual fish.",
+    "claim_type": "EXPLICIT",
+    "source": "This assembly-based functional connectivity is well-conserved across individual fish and consistent with anatomical connectivity at the mesoscale (Kunst et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a finding about the consistency of functional connectivity across specimens.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "The assembly-based functional connectivity is consistent with anatomical connectivity at the mesoscale.",
+    "claim_type": "EXPLICIT",
+    "source": "This assembly-based functional connectivity is well-conserved across individual fish and consistent with anatomical connectivity at the mesoscale (Kunst et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a finding comparing functional connectivity derived from the model to known structural connectivity, supported by citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "Neural assemblies have been observed in auditory cortex, motor cortex, prefrontal cortex, hippocampus, retina, and zebrafish optic tectum.",
+    "claim_type": "EXPLICIT",
+    "source": "This assembly organization of brain dynamics has been observed in, for example, auditory cortex (Bathellier et al., 2012), motor cortex (Narayanan et al., 2005), prefrontal cortex (Tavoni et al., 2017), hippocampus (Lin et al., 2005), retina (Shlens et al., 2009), and zebrafish optic tectum (Romano et al., 2015; M\u00f6lter et al., 2018; Diana et al., 2019; Triplett et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a literature review statement summarizing where neural assemblies have been observed, supported by multiple citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "Neural assemblies are thought to form elementary computational units and subserve essential cognitive functions such as short-term memory, sensorimotor computation or decision-making.",
+    "claim_type": "EXPLICIT",
+    "source": "These neural assemblies are thought to form elementary computational units and subserve essential cognitive functions such as short-term memory, sensorimotor computation or decision-making (Hebb, 1949; Gerstein et al., 1989; Harris, 2005; Buzs\u00e1ki, 2010; Harris, 2012; Palm et al., 2014; Eichenbaum, 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the theoretical role of neural assemblies in brain function, supported by multiple citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "Light-sheet microscopy enables the simultaneous recording of the majority of neurons in the zebrafish brain at single-cell resolution in vivo.",
+    "claim_type": "EXPLICIT",
+    "source": "The need to address this challenge is catalyzed by technological advances in light-sheet microscopy, enabling the simultaneous recording of the majority of neurons in the zebrafish brain at single-cell resolution in vivo (Panier et al., 2013; Ahrens et al., 2013; Wolf et al., 2015; Wolf et al., 2017; Migault et al., 2018; Vanwalleghem et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the capabilities of light-sheet microscopy technology, supported by multiple citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "Previous attempts to identify assemblies have used clustering, dimensionality reduction approaches, or latent variable models, often limited to single brain regions.",
+    "claim_type": "EXPLICIT",
+    "source": "Recent attempts have been made to identify assemblies using either clustering (Panier et al., 2013; Triplett et al., 2018; Chen et al., 2018; M\u00f6lter et al., 2018; Bartoszek et al., 2021), dimensionality reduction approaches (Lopes-dos-Santos et al., 2013; Romano et al., 2015; Mu et al., 2019) or latent variable models (Diana et al., 2019; Triplett et al., 2020), albeit often limited to single brain regions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a literature review statement about previous methods, supported by multiple citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "Previous methods do not explicitly assess to what extent the inferred assemblies could give rise to the observed neural data statistics.",
+    "claim_type": "EXPLICIT",
+    "source": "However, these methods do not explicitly assess to what extent the inferred assemblies could give rise to the observed neural data statistics, which is a crucial property of physiologically meaningful assemblies (Harris, 2005).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a critical assessment of previous methods compared to the current approach, supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "Two neural assemblies were identified in rhombomere 2 which align with the anterior rhombencephalic turning region (ARTR).",
+    "claim_type": "EXPLICIT",
+    "source": "We find two neural assemblies in rhombomere 2 which align with the anterior rhombencephalic turning region (ARTR, Ahrens et al., 2013; Dunn et al., 2016; Wolf et al., 2017, Figure 3A, B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a specific finding about identified assemblies and their anatomical location, supported by citations and figure reference.",
+    "evidence_type": [
+      "DATA",
+      "CITATION",
+      "IMAGE"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "Each ARTR assembly primarily comprises neurons of either the left or right side, but also includes a small subset of contralateral neurons with weights of opposite sign.",
+    "claim_type": "EXPLICIT",
+    "source": "Each assembly primarily comprises neurons of either the left or right side of the ARTR, but also includes a small subset of contralateral neurons with weights of opposite sign in line with the established mutual inhibition between both subpopulations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the composition of the ARTR assemblies and relates it to known physiology.",
+    "evidence_type": [
+      "DATA",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "Two symmetric assemblies together encompass the oculomotor nucleus (nIII) and the contralateral abducens nucleus (nVI), two regions engaged in ocular saccades.",
+    "claim_type": "EXPLICIT",
+    "source": "Two other symmetric assemblies (Figure 3C, D) together encompass the oculomotor nucleus (nIII) and the contralateral abducens nucleus (nVI, in rhombomere 6), two regions engaged in ocular saccades (Ma et al., 2014) and under the control of the ARTR (Wolf et al., 2017).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes identified assemblies and their functional role, supported by citations and figure references.",
+    "evidence_type": [
+      "DATA",
+      "CITATION",
+      "IMAGE"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "Two symmetric assemblies were observed in the posterior hindbrain (rhombomere 7) in a region known to drive unilateral tail movements.",
+    "claim_type": "EXPLICIT",
+    "source": "Additionally, we observed two symmetric assemblies (Figure 3E, F) in the posterior hindbrain (in rhombomere 7), in a region known to drive unilateral tail movements (Chen et al., 2018; Marques et al., 2020) and whose antiphasic activation is also controlled by the ARTR activity (Dunn et al., 2016).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes identified assemblies and their functional role, supported by citations and figure references.",
+    "evidence_type": [
+      "DATA",
+      "CITATION",
+      "IMAGE"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "Assemblies were observed that correspond to particular neurotransmitter expressions, such as the excitatory Vglut2 and inhibitory Gad1b neurotransmitters.",
+    "claim_type": "EXPLICIT",
+    "source": "Next, we observed assemblies that correspond to particular neurotransmitter expressions in the ZBrain atlas (Randlett et al., 2015), such as the excitatory Vglut2 (Figure 3G) and inhibitory Gad1b (Figure 3H) neurotransmitters.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes assemblies identified by their neurotransmitter expression patterns, supported by citation and figure references.",
+    "evidence_type": [
+      "DATA",
+      "CITATION",
+      "IMAGE"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "An assembly was identified that encompasses the pallium, habenula (Hb) and interpeduncular nucleus (IPN), capturing the Hb-IPN pathway.",
+    "claim_type": "EXPLICIT",
+    "source": "Figure 3I depicts another sparse, brain-wide assembly that encompasses the pallium, habenula (Hb) and interpeduncular nucleus (IPN), and thus captures the Hb-IPN pathway that connects to other regions such as the pallium (Beretta et al., 2012; Bartoszek et al., 2021).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes an identified assembly and its correspondence to a known neural pathway, supported by citations and figure reference.",
+    "evidence_type": [
+      "DATA",
+      "CITATION",
+      "IMAGE"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "The cerebellum was decomposed into multiple, bilateral assemblies.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, the cerebellum was decomposed into multiple, bilateral assemblies (Figure 3J) whereas neurons in the torus semicircularis were grouped per brain hemisphere (Figure 3K).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes how a specific brain region was decomposed into assemblies, with figure reference.",
+    "evidence_type": [
+      "DATA",
+      "IMAGE"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "Neurons in the torus semicircularis were grouped per brain hemisphere.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, the cerebellum was decomposed into multiple, bilateral assemblies (Figure 3J) whereas neurons in the torus semicircularis were grouped per brain hemisphere (Figure 3K).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes how neurons in a specific brain region were organized into assemblies, with figure reference.",
+    "evidence_type": [
+      "DATA",
+      "IMAGE"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "The optic tectum was composed of approximately 18 neural assemblies which spatially tiled the volume of the optic tectum.",
+    "claim_type": "EXPLICIT",
+    "source": "As a last example, the optic tectum was composed of a larger set of approximately 18 neural assemblies, which spatially tiled the volume of the optic tectum (Figure 3L).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the assembly organization of the optic tectum, with figure reference.",
+    "evidence_type": [
+      "DATA",
+      "IMAGE"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "The optic tectum assembly organization aligns with the morphology of previously inferred assemblies in this specific region.",
+    "claim_type": "EXPLICIT",
+    "source": "This particular organization is suggestive of spatially localized interactions within the optic tectum, and aligns with the morphology of previously inferred assemblies in this specific region (Romano et al., 2015; Diana et al., 2019; Triplett et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This compares the current findings to previous studies of the optic tectum, supported by citations.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "The typical assembly morphology of the optic tectum does not readily generalize to other brain regions.",
+    "claim_type": "EXPLICIT",
+    "source": "However, Figure 3 altogether demonstrates that the typical assembly morphology of the optic tectum identified by our and these previous analyses does not readily generalize to other brain regions, where a large range of different assembly morphologies compose neural circuits.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a comparative observation about assembly morphology across different brain regions, based on Figure 3.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "HUs 99 and 161 drive the left and right ARTR and display antiphasic activity with long dwell times of approximately 15 seconds.",
+    "claim_type": "EXPLICIT",
+    "source": "HUs 99 and 161 drive the left and right ARTR and display antiphasic activity with long dwell times of \u223c15s, in accordance with previous studies (Ahrens et al., 2013; Dunn et al., 2016; Wolf et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the temporal dynamics of specific HUs and compares to previous studies, supported by citations.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "HUs 102 and 163 correspond to oculomotor neurons and their temporal dynamics are locked to that of the ARTR units.",
+    "claim_type": "EXPLICIT",
+    "source": "HU 102 and 163 correspond to the oculomotor neurons in the nuclei nIII and nVI that together drive the horizontal saccades. Their temporal dynamics are locked to that of the ARTR units in line with the previously identified role of ARTR as a pacemaker for the eye saccades (Wolf et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the temporal relationship between HUs and relates it to known physiology, supported by citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "HUs 95 and 135 display transient activations that only occur when the ipsilateral ARTR-associated HU is active.",
+    "claim_type": "EXPLICIT",
+    "source": "HUs 95 and 135, which drive directional tail flips, display transient activations that only occur when the ipsilateral ARTR-associated HU is active.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the temporal activation pattern of specific HUs.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "The temporal dynamics of HUs 95 and 135 are consistent with the finding that ARTR alternating activation pattern sets the orientation of successive tail flips.",
+    "claim_type": "EXPLICIT",
+    "source": "This is consistent with the previous finding that the ARTR alternating activation pattern sets the orientation of successive tail flips accordingly (Dunn et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This relates the observed HU dynamics to previous findings, supported by citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "The first 3 principal components of HU dynamics captured 52% of the explained variance.",
+    "claim_type": "EXPLICIT",
+    "source": "The first 3 PCs captured 52%, the first 10 PCs captured 73% and the first 25 PCs captured 85% of the explained variance.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a quantitative result from PCA analysis of HU dynamics, shown in Figure 4D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "The first 10 principal components of HU dynamics captured 73% of the explained variance.",
+    "claim_type": "EXPLICIT",
+    "source": "The first 3 PCs captured 52%, the first 10 PCs captured 73% and the first 25 PCs captured 85% of the explained variance.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a quantitative result from PCA analysis of HU dynamics.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "The first 25 principal components of HU dynamics captured 85% of the explained variance.",
+    "claim_type": "EXPLICIT",
+    "source": "The first 3 PCs captured 52%, the first 10 PCs captured 73% and the first 25 PCs captured 85% of the explained variance.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a quantitative result from PCA analysis of HU dynamics.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "HU activity is bimodal and sparsely activated.",
+    "claim_type": "EXPLICIT",
+    "source": "(E) The distribution of all HU activity values of panel A shows that HU activity is bimodal and sparsely activated (because the positive peak is smaller than the negative peak).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from the distribution of HU activity values shown in Figure 4E.",
+    "evidence_type": [
+      "DATA",
+      "IMAGE"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "HUs operate on a slower time scale than individual neurons.",
+    "claim_type": "EXPLICIT",
+    "source": "We find that HUs, which represent the concerted dynamics of neuronal assemblies, operate on a slower time scale than individual neurons (Figure 4F, Figure 2\u2014figure supplement 5G-L).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a finding about the temporal dynamics of HUs compared to neurons, with figure references.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "The difference in time scales between HUs and neurons aligns with the expected difference between cellular and circuit-level time scales.",
+    "claim_type": "EXPLICIT",
+    "source": "This observation aligns with the expected difference between cellular and circuit-level time scales.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation relating the observed time scale difference to known neuroscience principles.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "Functional connectivity matrices correlate strongly across individuals with an average Pearson correlation of 0.69.",
+    "claim_type": "EXPLICIT",
+    "source": "Functional connectivity matrices correlate strongly across individuals, with an average Pearson correlation of 0.69 (Figure 5E and F).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a quantitative result about the consistency of functional connectivity across specimens, with figure references.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "Functional connections are distributed approximately log-normal.",
+    "claim_type": "EXPLICIT",
+    "source": "The strength of functional connections is distributed approximately log-normal (Figure 5D), similar to the distribution of structural region-to-region connections (Kunst et al., 2019).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation about the distribution of functional connection strengths, with figure reference and comparison to structural connectivity.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "The distribution of functional connections is similar to the distribution of structural region-to-region connections.",
+    "claim_type": "EXPLICIT",
+    "source": "The strength of functional connections is distributed approximately log-normal (Figure 5D), similar to the distribution of structural region-to-region connections (Kunst et al., 2019).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a comparative statement about functional and structural connectivity distributions, supported by citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "Using recordings of approximately 25 minutes on average, cRBMs were able to identify functional connections that resemble the anatomical connectivity between brain regions.",
+    "claim_type": "EXPLICIT",
+    "source": "Hence, using recordings of \u223c25 min on average, cRBMs were able to identify functional connections that resemble the anatomical connectivity between brain regions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary statement about the capability of cRBMs to infer functional connectivity from limited data.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "Strong or weak functional connections are predictive of present or absent structural connections respectively.",
+    "claim_type": "EXPLICIT",
+    "source": "Strong or weak functional connections are predictive of present or absent structural connections respectively (Figure 6D), and could thus potentially be used for inference in systems where the structural connectivity pattern is unknown.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a finding about the predictive relationship between functional and structural connectivity, with figure reference.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "Intermediate functional connection values are ambiguous in predicting structural connectivity.",
+    "claim_type": "EXPLICIT",
+    "source": "Strong or weak functional connections are predictive of present or absent structural connections respectively (Figure 6D), and could thus potentially be used for inference in systems where the structural connectivity pattern is unknown.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an implicit limitation noted in the predictive relationship between functional and structural connectivity.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "The cRBM model accurately replicated the data statistics of brain-scale zebrafish recordings.",
+    "claim_type": "EXPLICIT",
+    "source": "We have developed a cRBM model that accurately replicated the data statistics of brain-scale zebrafish recordings, thereby forming neural assemblies that spanned the entire brain.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary statement of the main finding of the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "After convergence, cRBM-generated data replicated the data statistics that it was constrained to fit and also extrapolated to fit the pairwise correlation statistics of neurons and HUs.",
+    "claim_type": "EXPLICIT",
+    "source": "We have shown that, after convergence, the cRBM-generated data not only replicated the data statistics that it was constrained to fit, but also extrapolated to fit the pairwise correlation statistics of neurons and HUs, leading to a better reconstruction of neural data than a fully connected GLM (Figure 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a summary of model performance results, with figure reference.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "cRBM results quantify how neural assemblies play a major role in determining the collective dynamics of the brain.",
+    "claim_type": "EXPLICIT",
+    "source": "These results thereby quantify how neural assemblies play a major role in determining the collective dynamics of the brain.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the results regarding the role of assemblies in brain dynamics.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "cRBMs formed sparsely localized assemblies that spanned the entire brain, facilitating their biological interpretation.",
+    "claim_type": "EXPLICIT",
+    "source": "To achieve this, cRBMs formed sparsely localized assemblies that spanned the entire brain, facilitating their biological interpretation (Figures 3 and 4, Figure 2\u2014figure supplement 6).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a summary of findings about assembly properties, with figure references.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "The maximum entropy principle underlying the cRBM definition has been a popular method for inferring pairwise effective connections between neurons or assemblies.",
+    "claim_type": "EXPLICIT",
+    "source": "The maximum entropy principle underlying the cRBM definition has been a popular method for inferring pairwise effective connections between neurons or assemblies of co-activating cells (Schneidman et al., 2006; Tavoni et al., 2017; Ferrari et al., 2017; Meshulam et al., 2017; Posani et al., 2018; Chen et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the use of maximum entropy methods in neuroscience, supported by multiple citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "The two-layer cRBM model alleviates the computational burden because the large number of neuron-to-neuron connections are no longer explicitly optimized.",
+    "claim_type": "EXPLICIT",
+    "source": "The two-layer cRBM model that we used here alleviates this burden, because the large number of neuron-to-neuron connections are no longer explicitly optimized, which enables a fast data sampling procedure (Figure 2B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This explains the computational advantage of the cRBM architecture.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "Neuron-to-neuron connections are estimated indirectly with high accuracy via the assemblies they connect to.",
+    "claim_type": "EXPLICIT",
+    "source": "However, we have shown that these connections are still estimated indirectly with high accuracy via the assemblies they connect to (Figure 2F).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a finding about how the model captures pairwise connections, with figure reference.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "cRBM models converged in approximately 8\u201312 hours on high-end desktop computers.",
+    "claim_type": "EXPLICIT",
+    "source": "By implementing various algorithmic optimizations (Materials and methods - 'Algorithmic Implementation'), cRBM models converged in approximately 8\u201312 hr on high-end desktop computers (also see Materials and methods - 'Computational limitations').",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the computational requirements of the method.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "PCA and ICA could not accurately model protein sequence data due to their deterministic nature.",
+    "claim_type": "EXPLICIT",
+    "source": "Briefly put, we showed that PCA and ICA could not accurately model the system due to their deterministic nature, putting too much emphasis on low-probability high-variance states, while VAEs were unable to capture all features of data due to the unrealistic assumption of independent, Gaussian-distributed latent variables.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of previous comparative work, referencing findings from a prior study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "VAEs were unable to capture all features of protein sequence data due to the unrealistic assumption of independent, Gaussian-distributed latent variables.",
+    "claim_type": "EXPLICIT",
+    "source": "Briefly put, we showed that PCA and ICA could not accurately model the system due to their deterministic nature, putting too much emphasis on low-probability high-variance states, while VAEs were unable to capture all features of data due to the unrealistic assumption of independent, Gaussian-distributed latent variables.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of previous comparative work, referencing findings from a prior study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "VAEs trained using the same protocol as cRBMs failed to reproduce second-order data statistics and to reconstruct neural activity via the latent layer.",
+    "claim_type": "EXPLICIT",
+    "source": "In this study, we repeated this comparison with sparse linear VAEs, and reached similar conclusions: VAEs trained using the same protocol as cRBMs failed to reproduce second-order data statistics and to reconstruct neural activity via the latent layer, while the learnt assemblies were of substantially lower quality (indicated by a large fraction of disconnected HUs, as well as a highly variable assembly size; Figure 2\u2014figure supplement 7).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a finding from comparing VAEs to cRBMs in the current study, with figure reference.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "VAE-learned assemblies were of substantially lower quality than cRBM assemblies, indicated by a large fraction of disconnected HUs and highly variable assembly size.",
+    "claim_type": "EXPLICIT",
+    "source": "In this study, we repeated this comparison with sparse linear VAEs, and reached similar conclusions: VAEs trained using the same protocol as cRBMs failed to reproduce second-order data statistics and to reconstruct neural activity via the latent layer, while the learnt assemblies were of substantially lower quality (indicated by a large fraction of disconnected HUs, as well as a highly variable assembly size; Figure 2\u2014figure supplement 7).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a finding about the quality of VAE assemblies compared to cRBM, with figure reference.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "PCA is not appropriate for assembly extraction due to the absence of both a compositional and stochastic nature.",
+    "claim_type": "EXPLICIT",
+    "source": "Additionally, while PCA has previously been successful in describing zebrafish neural dynamics in terms of their main covariances modes (Ahrens et al., 2012; Marques et al., 2020), we show here that it is not appropriate for assembly extraction due to the absence of both a compositional and stochastic nature (Figure 2, Figure 2\u2014figure supplement 6).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a finding about the limitations of PCA for assembly extraction, with figure references.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "The generative component of cRBM models is essential for quantitatively assessing that the assembly organization is sufficient for reproducing neural statistics.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, we have shown that the generative component of cRBM models is essential for quantitatively assessing that the assembly organization is sufficient for reproducing neural statistics (Figure 2), moving beyond deterministic clustering analyses such as k-means (Panier et al., 2013; Chen et al., 2018), similarity graph clustering (M\u00f6lter et al., 2018) or non-negative matrix factorization (Mu et al., 2019) (see Supplementary file 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement about the advantage of generative models over deterministic methods, with citations and figure reference.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "Previous studies of the zebrafish optic tectum have identified neural assemblies that were spatially organized into single dense clusters of cells.",
+    "claim_type": "EXPLICIT",
+    "source": "Previous studies of the zebrafish optic tectum have identified neural assemblies that were spatially organized into single dense clusters of cells (Romano et al., 2015; Diana et al., 2019; Triplett et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a literature review statement about previous findings in the optic tectum, supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "The distinct organization of ball-shaped assemblies in the optic tectum replicates previous findings.",
+    "claim_type": "EXPLICIT",
+    "source": "We have replicated these findings by observing the distinct organization of ball-shaped assemblies in the optic tectum (Figure 3L).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement about replicating previous findings, with figure reference.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "In brain regions outside the optic tectum, assemblies can be much more dispersed, consisting of multiple clusters of neurons.",
+    "claim_type": "EXPLICIT",
+    "source": "However, our data extends to many other anatomical regions in the brain, where we found that assemblies can be much more dispersed, albeit still locally dense, consisting of multiple clusters of neurons (Figure 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a finding about assembly organization in other brain regions, with figure reference.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "cRBM-inferred cell assemblies display properties expected from physiological cell assemblies: they are anatomically localized, can overlap, encompass functionally identified neuronal circuits and underpin the collective neural dynamics.",
+    "claim_type": "EXPLICIT",
+    "source": "In sum, cRBM-inferred cell assemblies display many properties that one expects from physiological cell assemblies: they are anatomically localized, can overlap, encompass functionally identified neuronal circuits and underpin the collective neural dynamics (Harris, 2005; Harris, 2012; Eichenbaum, 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary statement about the properties of cRBM assemblies, supported by citations.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "The cRBM bipartite architecture lacks direct neuron-to-neuron connections, asymmetry in the connectivity weights and a hierarchical organization of functional dependencies beyond one hidden layer.",
+    "claim_type": "EXPLICIT",
+    "source": "Yet, the cRBM bipartite architecture lacks many of the traits of neurophysiological circuits. In particular, cRBMs lack direct neuron-to-neuron connections, asymmetry in the connectivity weights and a hierarchical organization of functional dependencies beyond one hidden layer.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the limitations of the cRBM architecture compared to real neural circuits.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "To what extent cRBM-inferred assemblies identify to neurophysiological cell assemblies remains an open question.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, to what extent cRBM-inferred assemblies identify to neurophysiological cell assemblies, as postulated by Hebb, 1949 and others, remains an open question.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement acknowledging a limitation and open question in the interpretation of results.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "Region-scale functional connectivity is well-conserved across specimen.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, we found that this region-scale connectivity is well-conserved across specimen.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a finding about the consistency of functional connectivity across individuals.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "The conservation of functional connectivity across specimen is non-trivial because each recording only lasted approximately 25 minutes.",
+    "claim_type": "EXPLICIT",
+    "source": "This observation is non-trivial because each recording only lasted \u223c25 min, which represents a short trajectory across accessible brain states.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the significance of the finding given the limited recording duration.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "Although each individual brain may be unique at the neuronal scale, the functional organization could be highly stereotyped at a sufficiently coarse-grained level.",
+    "claim_type": "EXPLICIT",
+    "source": "It suggests that, although each individual brain may be unique at the neuronal scale, the functional organization could be highly stereotyped at a sufficiently coarse-grained level.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of what the conservation of functional connectivity implies about brain organization.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "Structural connectivity is well-correlated to functional connectivity.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, we found that structural connectivity is well-correlated to functional connectivity, confirming that functional links are tied to the structural blueprint of brain connectivity (Figure 6).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a finding about the relationship between structural and functional connectivity, with figure reference.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "It will be crucial to synergistically merge structural and dynamic information of the brain to truly comprehend brain-wide functioning.",
+    "claim_type": "EXPLICIT",
+    "source": "It will be crucial to synergistically merge structural and dynamic information of the brain to truly comprehend brain-wide functioning (Bargmann and Marder, 2013; Kopell et al., 2014).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a forward-looking statement about future research directions, supported by citations.",
+    "evidence_type": [
+      "SPECULATION",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "Small brain organisms are becoming an essential means to merge structural and dynamic information of the brain.",
+    "claim_type": "EXPLICIT",
+    "source": "Small brain organisms are becoming an essential means to this end, providing access to a relatively large fraction of cells (Ahrens and Engert, 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the utility of small brain organisms for neuroscience research, supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "cRBMs could be used to generate artificial data whose statistics replicate those of the zebrafish brain for in silico ablation and perturbation studies.",
+    "claim_type": "EXPLICIT",
+    "source": "In future studies, cRBMs could be used to generate artificial data whose statistics replicate those of the zebrafish brain. This could be used for further in silico ablation and perturbation studies with strong physiological footing, crucial for developing hypotheses for future experimental work (Jazayeri and Afraz, 2017; Das and Fiete, 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about potential future applications of the method, supported by citations.",
+    "evidence_type": [
+      "SPECULATION",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C105",
+    "claim": "The application of cRBMs is not specific to calcium imaging data and can be readily applied to high-dimensional neural data obtained by other recording techniques.",
+    "claim_type": "EXPLICIT",
+    "source": "Lastly, the application of cRBMs is not specific to calcium imaging data, and can therefore be readily applied to high-dimensional neural data obtained by other recording techniques.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the generalizability of the method to other data types.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C106",
+    "claim": "Recordings were of length 1514 \u00b1 238 seconds (mean \u00b1 standard deviation), with a brain volume imaging frequency of 3.9 \u00b1 0.8 Hz.",
+    "claim_type": "EXPLICIT",
+    "source": "Recordings were of length 1514 \u00b1 238 seconds (mean \u00b1 standard deviation), with a brain volume imaging frequency of 3.9 \u00b1 0.8 Hz.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological detail about the experimental recordings.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C107",
+    "claim": "Of 15 recorded animals, 1 was discarded because of poor image quality and 6 were discarded because neurons were inactive, leaving 8 data sets for analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "Brain activity was recorded of 15 animals in total. Of these recordings, 1 was discarded because of poor image quality and 6 were discarded because neurons were inactive (defined by less than 0.02 spikes/(neurons \u00d7 time points)), hence leaving 8 data sets for further analysis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological detail about data selection and quality control.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C108",
+    "claim": "Only neurons that were registered to at least 1 ZBrain region were used for analysis to filter imaging artefacts.",
+    "claim_type": "EXPLICIT",
+    "source": "Only neurons that were registered to at least 1 ZBrain region were used for analysis (to filter imaging artefacts).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological detail about data filtering.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C109",
+    "claim": "cRBM assemblies occupy a median of 3 regions (interquartile range: 2\u20136 regions).",
+    "claim_type": "EXPLICIT",
+    "source": "cRBM assemblies occupy a median of 3 regions (interquartile range: 2\u20136 regions), while PCA assemblies occupy a median of 160 regions (interquartile range: 140\u2013168 regions).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a quantitative result about the anatomical specificity of cRBM assemblies, shown in Figure 2\u2014figure supplement 6C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C110",
+    "claim": "PCA assemblies occupy a median of 160 regions (interquartile range: 140\u2013168 regions).",
+    "claim_type": "EXPLICIT",
+    "source": "cRBM assemblies occupy a median of 3 regions (interquartile range: 2\u20136 regions), while PCA assemblies occupy a median of 160 regions (interquartile range: 140\u2013168 regions).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a quantitative result about the lack of anatomical specificity of PCA assemblies, shown in Figure 2\u2014figure supplement 6C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  }
+]

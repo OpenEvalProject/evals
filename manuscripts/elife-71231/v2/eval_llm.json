@@ -1,0 +1,324 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The authors reconstructed 853 muscle cells and all other cells in a 3-day-old Platynereis larva from whole-body serial TEM data by skeletonization, marking soma positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C47-C50 collectively describe the reconstruction methodology and quantify the number of muscle cells identified (853 mononucleated muscle cells). The methodology is clearly described (skeletonization, soma marking) and the data source is cited (Randel et al., 2015). The figures referenced provide visual evidence of the reconstructions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The desmosomal connectome comprises over 2000 cells (2807 nodes total, 2095 with soma) connected by 6961 edges, with muscles adhering to diverse cell types including epithelial, glial, ciliated, bristle-producing cells, and basal lamina. Only 2.4% of desmosomes connect muscle-to-muscle, suggesting desmosomes do not mediate lateral force transmission between muscles of the same bundle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 and C66-C72 provide comprehensive quantitative data on the desmosomal connectome composition and connectivity patterns. The low proportion of muscle-to-muscle connections (C68) supports the inference about lack of lateral force transmission (C69). The data are internally consistent and well-documented with specific percentages and counts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The 853 muscle cells were classified into 8 main groups and 53 distinct types based on position, shape, motoneuron inputs, and desmosomal partners, with stereotyped segmental repetition and left-right symmetry suggesting specification by unique developmental programs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 describe a comprehensive classification scheme with clear criteria (position, shape, connectivity, innervation). The stereotypy observed (C57) and the comparison to Drosophila (C58) provide reasonable support for the developmental inference, though this remains an inference rather than direct experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The majority of muscle types (34/53 types, 502/853 cells) form the parapodial muscle complex, with segmental variation in the first segment and a cryptic segment 0 lacking parapodia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 provide specific quantitative data on the distribution of muscle types across body segments. The segmental variation is documented with specific missing muscle types (C60), and the developmental fate of segment 1 parapodia is supported by citation (C61).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Aciculae (chitin rods forming an endoskeleton) are highly connected hubs in the desmosomal network, with 16 muscle types connecting to aciculae or acicular follicle cells, and this high connectivity correlates with many degrees of freedom in acicular movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 and C96-C99 establish both the structural role of aciculae and their network properties. The high connectivity is quantified (16 muscle types, C98) and supported by network analysis (C96-C97). The correlation with movement degrees of freedom (C6) is supported by video microscopy data described later in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Leiden algorithm analysis revealed modular organization of the desmosomal connectome into anatomically distinct territories including four longitudinal muscle modules, head/segment-0 module, segmental parapodial modules, and modules connected at the midline through the axochord.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78 describe the modularity analysis results with specific anatomical interpretations. The use of the Leiden algorithm is appropriate for community detection, and the correspondence between modules and anatomical territories is documented with figures. The biological interpretation is reasonable given the local connectivity patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The desmosomal graph exhibits high modularity, large diameter, large average distance, high transitivity, and low assortativity compared to random graphs and the synaptic connectome, reflecting local-only connectivity without long-range connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C87 present comprehensive graph-theoretic analysis comparing the desmosomal connectome to 1000 simulated graphs of each type and the synaptic connectome. Multiple metrics consistently support the conclusion of high modularity and local connectivity. The interpretation (C87) logically follows from the quantitative results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Force-field layout of the desmosomal connectome recapitulates anatomical positions, with nodes segregated by body side and segment, reflecting local-only connectivity unlike the synaptic connectome which has long-range connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 describe how graph layout reflects anatomy. The correspondence between force-field layout and anatomical position (C88-C89) is documented with figures, and the contrast with the synaptic connectome (C90) is appropriately cited. This provides independent validation of the local connectivity conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Each parapodial lobe contains an acicula ensheathed by acicular follicle cells and a chaetal sac with four types of chaetal follicle cells arranged proximo-distally, serving as anchor points for parapodial muscles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 describe the detailed anatomy of the parapodial complex with appropriate citations (C92-C93) and documentation of follicle cell types (C94). The functional role as muscle anchor points (C95) is supported by the desmosomal connectivity data presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Acicular and oblique muscles attach to aciculae and move the parapodium through distinct mechanisms, with notopodial and neuropodial aciculae having distinct muscle partners allowing independent movement with some coupling through inter-acicular muscles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C109 describe the attachment patterns and inferred movements of different muscle groups. The anatomical connectivity is well-documented (C100-C101), and the functional inferences (C102-C109) are reasonable based on the attachment sites and muscle orientations. However, these remain inferences from anatomy rather than direct functional measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The axochord muscle at the midline is required for crawling, as shown by ablation experiments, and has high density of hemidesmosomes to the extracellular matrix, which also serves as attachment for oblique muscles and midline cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 combine functional evidence from ablation experiments (C111, cited) with anatomical observations of hemidesmosome density (C112). The convergence of functional and structural data strongly supports the structural role of the axochord in parapodial movement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Video tracking with DeepLabCut of 4-day-old larvae (similar musculature to 3-day-old) revealed that notopodial and neuropodial aciculae exhibit complex movements with inter-acicular angles changing between -25\u00b0 and 50\u00b0 during crawling cycles, propagating posterior to anterior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C121 describe the video tracking methodology and quantitative results. The justification for using 4-day-old larvae is provided (C115), the tracking method is appropriate (C116), and the movement patterns are quantified with specific angle ranges (C120). The data directly validate predictions from the anatomical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Live calcium imaging of spontaneous muscle contractions revealed specific movements induced by individual muscle groups: MUSac-neuPV induces abduction, MUSobP-neuV induces flexion, and MUSobA-re induces parapodial retraction, with desmosomal connectivity patterns explaining the observed movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C127 link specific muscle contractions (observed via GCaMP6s) to specific movements and their desmosomal connectivity patterns. This provides direct functional validation of the anatomical predictions. The limitation that complex movements during crawling could not be resolved (C128) is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C7",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Integration of synaptic and desmosomal connectomes for 11 motoneuron types revealed that motoneurons have multiple muscle targets, most muscles receive input from multiple motoneurons, and muscle contraction can influence up to 9 distinct non-muscle cell types through desmosomal connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C129-C134 describe the integration of two connectome datasets to infer the extent of tissue influenced by motoneurons. The approach is sound and the data are from the same specimen. The example of MUSchae-notAac (C134) illustrates the broad tissue influence. This represents a novel analytical approach combining two types of connectivity data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Eight motoneuron types innervate the parapodial complex, each innervating unique combinations of muscle types rather than single types, suggesting concerted activity of anatomically distinct muscles during parapodial movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C137 describe the innervation patterns of parapodial motoneurons. The observation that each motoneuron innervates multiple muscle types (C136) is well-documented, and the inference about concerted activity (C137) is reasonable, though it remains an inference rather than direct measurement of coordinated activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The Platynereis larva has 853 muscle cells of 53 types, far more complex than C. elegans (95 muscles) or Ciona (36 muscles of 10 types), with this diversity attributed to the presence of an endoskeleton (aciculae).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C144 compare muscle complexity across species with appropriate citations (C140-C141). The quantitative comparison is clear and the inference that endoskeletal elements drive muscle diversity (C144) is reasonable, though this remains a hypothesis rather than experimentally tested causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Polychaete annelids are unique outside tetrapods in having trunk appendages with an endoskeleton (aciculae), which evolved in the Early Ordovician and function similarly to tetrapod limb bones by providing muscle attachment sites and rigidity, with the two aciculae per parapodium moved by unique and shared muscle sets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C149 place the findings in evolutionary context with appropriate citations (C146). The functional comparison to tetrapod limbs (C148) is reasonable while noting structural differences (C147). The summary of acicular movements (C149) is supported by the data presented earlier.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "The stereotypy of desmosomal connections suggests development through a precisely specified connectivity code between cell types, with some connections having clear functional relevance (muscle-to-chitin attachments) while others (connections to ciliary cells) may represent unexplored mechanistic interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C150-C152 make inferences about developmental mechanisms (C150) and functional significance (C151-C152). While the stereotypy observation supports the developmental inference, this remains speculative without experimental validation. The speculation about ciliary cell connections (C152) is appropriately tentative but lacks supporting evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C8",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The combined desmosomal and synaptic connectomes provide a foundation for understanding locomotor control in Platynereis, demonstrating that accurate modeling of locomotion requires mapping both synaptic and adhesive networks, with Platynereis being a promising system for in-depth analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C153-C158 summarize the significance and future potential of the work. The claim that both connectomes are needed for understanding locomotion (C158) is well-supported by the data showing how desmosomal connectivity determines tissue influence of motoneurons. The characterization of Platynereis as a promising system (C157) is reasonable given the available tools and data.",
+    "result_type": "MAJOR"
+  }
+]

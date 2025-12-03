@@ -1,0 +1,1695 @@
+{
+  "submission": {
+    "id": "dc249e84-8881-4194-a9cd-72e4df0b0a2b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T02:40:50.716513Z",
+    "updated_at": "2025-12-03T02:40:50.716513Z"
+  },
+  "content": [
+    {
+      "id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "submission_id": "dc249e84-8881-4194-a9cd-72e4df0b0a2b",
+      "content_type": "manuscript",
+      "content_text": "# Anti-ferroptotic mechanism of IL4i1-mediated amino acid metabolism\n\n## Authors\n\n- Leonie Zeitler<sup>1</sup>\n- Alessandra Fiore<sup>1</sup> ([ORCID: 0000-0003-2070-6046](https://orcid.org/0000-0003-2070-6046))\n- Claudia Meyer<sup>2</sup>\n- Marion Russier<sup>1</sup> ([ORCID: 0000-0002-9633-9804](https://orcid.org/0000-0002-9633-9804))\n- Gaia Zanella<sup>1</sup>\n- Sabine Suppmann<sup>1</sup>\n- Marco Gargaro<sup>3</sup>\n- Sachdev S Sidhu<sup>4</sup> ([ORCID: 0000-0001-7755-5918](https://orcid.org/0000-0001-7755-5918))\n- Somasekar Seshagiri<sup>5</sup>\n- Caspar Ohnmacht<sup>6</sup>\n- Thomas K\u00f6cher<sup>7</sup>\n- Francesca Fallarino<sup>3</sup>\n- Andreas Linkermann<sup>2</sup>\n- Peter J Murray<sup>1</sup> ([ORCID: 0000-0001-6329-9802](https://orcid.org/0000-0001-6329-9802)) \u2020\n\n### Affiliations\n\n1. Max Planck Institute of Biochemistry Martinsried Germany\n2. Universit\u00e4tsklinikum Carl Gustav Carus Dresden Dresden Germany\n3. Universit\u00e0 degli Studi di Perugia Perugia Italy\n4. The Donnelly Centre for Cellular and Biomolecular Research, University of Toronto Toronto Canada\n5. SciGenom Research Foundation Bangalore India\n6. Helmholtz Zentrum M\u00fcnchen Center of Allergy and Environment (ZAUM), Technical University and Helmholtz Center Munich Munich Germany\n7. Vienna BioCenter Core Facilities GmbH Vienna Austria\n\n\u2020 Corresponding author\n\n## Abstract\n\nInterleukin-4-induced-1 (IL4i1) is an amino acid oxidase secreted from immune cells. Recent observations have suggested that IL4i1 is pro-tumorigenic via unknown mechanisms. As IL4i1 has homologs in snake venoms (L-amino acid oxidases [LAAO]), we used comparative approaches to gain insight into the mechanistic basis of how conserved amino acid oxidases regulate cell fate and function. Using mammalian expressed recombinant proteins, we found that venom LAAO kills cells via hydrogen peroxide generation. By contrast, mammalian IL4i1 is non-cytotoxic and instead elicits a cell protective gene expression program inhibiting ferroptotic redox death by generating indole-3-pyruvate (I3P) from tryptophan. I3P suppresses ferroptosis by direct free radical scavenging and through the activation of an anti-oxidative gene expression program. Thus, the pro-tumor effects of IL4i1 are likely mediated by local anti-ferroptotic pathways via aromatic amino acid metabolism, arguing that an IL4i1 inhibitor may modulate tumor cell death pathways.\n\n## Introduction\n\nMost cells of the immune system depend on external supplies of all essential and most non-essential amino acids for proliferation in active immune responses, and for diverse effector functions, such as nitric oxide generation from arginine (Murray, 2016). Amino acid auxotrophy of immune cells also forms checkpoints whereby distinct amino acid metabolizing enzymes expressed in different cell types control cell proliferation, fate, and function (Murray, 2016). These regulated enzymes metabolize arginine (Arginases 1 and 2 and nitric oxide synthase two or iNOS) and tryptophan (indole-2,3-dioxygenases, IDO1 and IDO2). The expression of each enzyme is regulated by diverse external cues, such as cytokines and microbial signaling through toll-like receptors, which restricts their activity to specific phases in immune responses. Because each enzyme can locally deplete essential amino acids, considerable attention has been focused on the role of arginases and IDO enzymes in suppressing access of proliferating T cells to amino acids in tumor microenvironments, a process linked with T cell tolerance and spreading or \u2018infectious tolerance\u2019 to abate ongoing T cell-mediated immunity (Cobbold et al., 2009). Tolerance to malignant cells is a hallmark of cancer, and thus drugs that target arginases and IDO have been produced and tested in the context of immune enhancement of anti-tumor immunity (Steggerda et al., 2017; G\u00fcnther et al., 2019).\n\nAnother immune-associated enzyme that metabolizes amino acids and linked to immune suppression in cancer is interleukin-4-induced-1\u00a0(IL4i1), which was discovered in a screen for IL4-regulated cDNAs in B cells (Chu and Paul, 1997). Unlike arginases and the IDO enzymes, IL4i1 is secreted (Boulland et al., 2007), suggesting it contributes to immune regulation in the extracellular milieu. IL4i1 is a dimeric FAD-dependent oxidoreductase with considerable similarity to L-amino acid oxidases (LAAOs) in snake venoms (Murray, 2016). Mammalian IL4i1 metabolizes L-Phe and other aromatic amino acids to their keto-acid forms with coincident production of H2O2 and ammonia (Boulland et al., 2007). However, limited information exists about the enzymology and functions of either IL4i1 or LAAOs, their substrate ranges, kinetics, and the role of downstream metabolites formed from amino acids.\n\nVenomous snakes are divided into two broad groups: viperids (e.g., vipers, rattlesnakes, bushmasters) and elapids (cobras, taipans, mambas, sea snakes) based on their predation strategies and anatomy. Viperids have retractable fangs and powerful jaws and use large venom volumes to inactivate prey. Elapids have fixed fangs and strike to deliver small but potent venoms. A remarkable finding that emerged from mass spectrometry analysis of many different venoms concerns vast qualitative and quantitative venom protein diversity, even of closely related snake species (Tasoulis and Isbister, 2017; Villar-Briones and Aird, 2018). For example, cobra venoms contain many types of toxins, enzymes, and neurotoxins while viperid venoms are enriched in phospholipases (Pla et al., 2017; Suryamohan et al., 2020). However, all analyzed snake venoms contain a LAAO in different proportions depending on the snake, raising the question of the role of this enzyme in fast-acting venoms.\n\nCollectively, numerous elements of IL4i1 and LAAO biology remain unresolved. These include the mechanistic basis of the association between IL4i1 and different cancers (Carbonnelle-Puscian et al., 2009; Cousin et al., 2015; Sadik et al., 2020), the mode of action of LAAOs in snake venoms, and how this compares to mammalian IL4i1, the cell types that express IL4i1 and relative role of IL4i1-mediated microenvironmental amino acid depletion versus product generation. To illuminate new aspects of IL4i1/LAAO biology, we initiated a comparative study between mammalian expressed recombinant forms of snake (Indian cobra, Naja naja) LAAO and mammalian IL4i1. This approach allowed us to establish that snake LAAO is an H2O2\u00a0\u2018bomb\u2019 that rapidly kills mammalian cells. By contrast, IL4i1 also generates H2O2 but is not cell-lethal. Instead, mammalian IL4i1 suppresses cell death by ferroptosis via product generation from L-Trp and L-Tyr. Most significantly, we show that indole-pyruvate (I3P) and 4-hydroxy-phenylpyruvate (4HPP) from L-Trp and L-Tyr, respectively, act as radical scavengers and activate cell protective pathways that suppress ferroptosis. We propose that components of the pro-tumor effects of IL4i1 are linked to local anti-ferroptotic effects on transformed cells.\n\n## Results\n\n### Venom LAAO but not mammalian IL4i1 induces cell death in an H2O2-dependent way\n\nIL4i1 expression and secretion is generally associated with myeloid cells and B cells, the latter of which is the original cell type where IL4i1 was identified (Chu and Paul, 1997). As viperid and elapid LAAOs are also secreted proteins that accrue in the venom gland and bear strong sequence identity to mammalian IL4i1 (Figure 1\u2014figure supplement 1A) and catalyze the same reactions (Figure 1A), we first asked if the cellular biochemistry of snake LAAO would help illuminate the biology of mammalian IL4i1. We expressed the authentic N. naja LAAO cDNA (Suryamohan et al., 2020) in mammalian cells (Figure 1B,C). Following purification and testing the glycosylation status (Figure 1C,D), we added different amounts of the N. naja LAAO to HeLa cells and observed them over time by live cell imaging using CellTox Green dye to stain dead cells. The membranes of LAAO-treated HeLa cells began to bleb after\u00a0~5 hr, and all cells were dead within 12 hr (Figure 1E,F; Video 1). To investigate the mechanism of LAAO-mediated cell death we generated a double mutant \u2018enzyme-dead\u2019 N. naja LAAO by mutating two residues predicted to be in the catalytic domain from inference for the structure of the Malayan pit viper LAAO (Pawelek et al., 2000; Moustafa et al., 2006; Figure 1\u2014figure supplement 1A,B). Like the wild-type N. naja LAAO, the mutant version was secreted and glycosylated as expected (Figure 1D) but was devoid of LAAO activity using L-Phe as a substrate (Figure 1\u2014figure supplement 1C). Following purification, the enzyme dead N. naja LAAO did not induce death of HeLa cells, suggesting that an enzymatic function of LAAOs is responsible for cell toxicity rather than binding to protein(s) associated with HeLa cells that subsequently conveyed a death signal (Figure 1G).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/64806/elife-64806-fig1-v2.jpg)\n\n**Figure 1.:** (A) Reaction mechanism of L-amino acid oxidases\u00a0(LAAOs). (B) Construct design to express venom LAAOs in mammalian cells. The N. naja LAAO variants contain the human VEGF signal sequence and a C-terminal Strep-tag to facilitate purification. Mutations R320A and K324A ablate catalytic activity. (C) Purification strategy for LAAO, which is isolated from the cell supernatant. (D) Immunoblotting of purified recombinant proteins. LAAO or the enzyme-dead variant are glycosylated in their secreted forms. (E) Representative microscopy images of HeLa cells stained with the cell death dye CellTox following addition of 2.5 \u00b5g/ml N. naja LAAO. (F) Quantification of cell death across time induced by N. naja LAAO. (G) N. naja LAAO R320A and K324A enzyme-dead version fails to induce death.\u00a02.5 \u00b5g/ml of WT and mutant enzyme was added. (H) Addition of catalase (25 \u00b5g/ml) blocks cell death induced by N. naja LAAO (2.5 \u00b5g/ml). (F\u2013H): n\u00a0=\u00a03 biological replicates; the graphs are representative for three independent experiments. All error bars represent standard deviation.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64806/elife-64806-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Multiple sequence alignment of Calloselasma rhodostoma, N. naja, LAAO, and Mus musculus and Homo sapiens IL4i1. Sites displayed in green represent residues used to generate enzyme-dead point mutants. (B) Representative structure of the catalytic domain of C. rhodostoma LAAO (PDB: 2IID) with co-factor FAD and substrate L-Phe. The conserved residues mutated in the N. naja enzyme-dead version are displayed in green. (C) LAAO WT and enzyme-dead variant activity, quantified as H2O2 production, with 1 mM of L-Phe as substrate (n\u00a0=\u00a03 technical replicates). Error bars represent standard deviation.\n\n![Video 1.](https://cdn.elifesciences.org/articles/64806/elife-64806-video1.mp4.jpg)\n\nAll LAAOs and IL4i1 are predicted to produce H2O2 as a product of their oxidoreductase activity on amino acids (Figure 1A). Therefore, we next asked if H2O2 was responsible for mammalian cell death. We added the wild-type N. naja LAAO in combination with catalase, which decomposes H2O2. The addition of catalase protected HeLa cells from N. naja LAAO-induced death (Figure 1H).\n\nWe next asked if mammalian-expressed recombinant versions of human or mouse IL4i1 had similar properties to the N. naja LAAO. Unlike the cobra LAAO, neither equivalent concentrations of mouse nor human IL4i1 induced cell death in HeLa cells at the tested concentrations (Figure 2A,B). Therefore, we used the human RS4;11, a B cell leukemia cell line, which is exquisitely sensitive to N. naja LAAO in the ng/ml range (Figure 2C). Mammalian IL4i1 required concentrations more than 30-fold higher than the N. naja LAAO to cause cytotoxicity (Figure 2D). We observed cell death induced by mIL4i1 at concentrations higher than 2 \u00b5g/ml, which was, consistently to our observations with the snake venom LAAO, ablated in an enzyme-dead K351A mIL4i1 mutant (Figure 2\u2014figure supplement 1). Thus, by contrast to snake venom LAAO, it is likely that mediating cytotoxicity is not the main purpose of mammalian IL4i1. Nevertheless, we cannot exclude the possibility that IL4i1 may have cell toxicity in a circumstance where enzyme accumulation was concentrated in the extracellular milieu to \u00b5g/ml ranges.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/64806/elife-64806-fig2-v2.jpg)\n\n**Figure 2.:** (A) Human or mouse IL4i1 fail to induce cell death of HeLa cells at equivalent concentrations to Naja naja LAAO (all enzymes added at 2.5 \u00b5g/ml) (n\u00a0=\u00a03 biological replicates). (B) Representative microscopy images with CellTox staining from an experiment similar to that in (A). (C) Activity of N. naja LAAO or its enzyme-dead mutant to RS4;11 human leukemia cells. 1 \u00d7 104 cells were plated in round-bottom 96-well plates and treated with the indicated concentrations of LAAO enzyme. The final viable cell number was determined 72 hr after treatment (n\u00a0=\u00a03 biological replicates). (D) As in (C) comparing human and mouse IL4i1 to N. naja LAAO (n\u00a0=\u00a04 biological replicates). (E) Comparative enzyme activity of human and mouse IL4i1 versus N. naja LAAO using single amino acids. The graph includes three independent experiments. (F) Log2-fold change of ion counts compared to untreated medium of significantly increased amino acid metabolites (p<0.01) detected by untargeted metabolomics in DMEM incubated for 24 or 72 hr with 1 \u00b5g/ml of human IL4i1; n\u00a0=\u00a03 biological replicates. All error bars represent standard deviation.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64806/elife-64806-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Recombinant murine IL4i1 and the enzyme-dead variant are glycosylated in their secreted forms. (B) WT and mutant murine IL4i1 activity, quantified by H2O2 production with 1 mM of L-Phe as substrate (n\u00a0=\u00a03 technical replicates). (C) Cell viability of RS4;11 human leukemia cells in\u00a0the presence of murine IL4i1 or its enzyme-dead mutant. 1 \u00d7 104 cells were plated in round-bottom 96 well plates and treated with the indicated concentrations of IL4i1 enzyme. The final viable cell number was determined 72 hr after treatment (n\u00a0=\u00a03 biological replicates). All error bars represent standard deviation.\n\nTo understand the biochemical differences between the mammalian and snake enzymes we performed a comparative kinetic and substrate utilization analysis of the N. naja LAAO and mammalian IL4i1. When we compared the N. naja LAAO with human and mouse IL4i1 using all individual 20 amino acids using an H2O2 assay, the hydrophobic and aromatic preference of the enzymes was evident (Figure 2E). However, N. naja LAAO generated much more H2O2 in the\u00a0presence of its amino acid substrates within the analyzed time window of 5 min, indicating a higher enzymatic activity, and also metabolized L-Leu compared to human and mouse IL4i1. Taken together, these data indicate that snake LAAO has a superior reaction rate and substrate range compared to mammalian IL4i1 suggesting that upon envenomation, rapid H2O2 production contributes to venom efficiency. Given that human IL4i1 does not induce cell death via H2O2 (Figure 2D) or another mechanism in the time frame of the experimental system used, we next asked whether the keto-acid products of amino acid metabolism influenced cell state. Therefore, we investigated whether we could detect IL4i1-associated amino acid metabolites when incubating cell culture medium with the recombinant enzyme. Using an untargeted metabolomics approach, we found human IL4i1 to cause significant increases in indole-3-pyruvate (I3P), 4-hydroxy-phenylpyruvate (4HPP), phenylpyruvate (PP), 2-keto-4-methylthiobutyric acid (KMBA), and 2-oxoarginine (2OA) (from L-Trp, L-Tyr, L-Phe, L-Met, and L-Arg, respectively) (Figure 2F). We note that several of these metabolites including I3P can be generated by microbiota or in infection and these could be present in serum (Dodd et al., 2017). However, they were significantly increased in medium incubated with IL4i1, suggesting the enzyme is actively generating these metabolites. These data are indicative of the overall biology of immune-associated amino acid metabolizing enzymes that can regulate neighboring cells via essential acid depletion and product generation.\n\n### IL4i1 generates metabolites that activate stress protection pathways\n\nTo investigate whether the products of the IL4i1 reaction were involved in modulating cell state, we performed RNAseq analysis on human THP-1 monocytic cells treated with I3P, 4HPP, or PP for 24 hr (Figure 3A\u2013C). THP-1 cells were used in these experiments because IL4i1 has highest expression in myeloid cells (Boulland et al., 2007; Rieckmann et al., 2017). Thus, we reasoned that autocrine\u2013paracrine effects of IL4i1-mediated amino acid metabolism would be detected in this cell system. We found that PP had an almost undetectable effect on the global quality and quantity of THP-1 mRNAs. By contrast, I3P, and to a lower extent 4HPP, induced the expression of a suite of mRNAs including those encoding SLC7A11, NQO1, ATF4, CYP1B1, and different members of the AKR1C family (Figure 3). Most of these mRNAs encode proteins involved in cellular stress, especially in oxidative stress response (Figure 3D), and are regulated by the ATF4, Nrf2, and AhR pathways (Zgheib et al., 2018; Liu et al., 2020).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/64806/elife-64806-fig3-v2.jpg)\n\n**Figure 3.:** (A\u2013C) THP-1 human monocytic cells were trated for 24 hr with PP, 4HPP, or I3P (200 \u00b5M) and RNAseq analysis was used to quantify gene expression changes compared to untreated controls. (D) Top hits of GO term overrepresentation analysis of the most significantly (p-value cutoff p<10\u22129) upregulated genes by I3P treatment (left). The full table of significant GO terms is provided (Supplementary file 1). Heat map of genes detected in the analysis under the term GO:0006979 (right).\n\n### IL4i1 metabolites suppress ferroptosis\n\nBecause I3P and 4HPP induced a selective gene expression profile consistent with stress protection and particularly defense against oxidative stress, we reasoned these IL4i1 metabolites could intersect at some point in the pathways that control the suppression of ferroptosis, a programmed oxidative cell death characterized by massive lipid peroxidation (Stockwell et al., 2017; Conrad and Pratt, 2019; Tang and Kroemer, 2020; Figure 4A). We therefore performed live cell imaging to monitor ferroptosis in HeLa cells induced by erastin (targeting SLC7A11, the cysteine\u2013glutamate exchanger) and RSL3, which inhibits GPX4, required for glutathione-mediated lipid peroxide decomposition. Ferrostatin-1 (Fer-1) was used as control for ferroptosis protection (Dixon et al., 2012). We pre-treated or concurrently treated the cells with I3P, 4HPP, or PP, with the expectation that PP could serve as a type of negative control consistent with its limited effect on gene expression in THP-1 cells. Indeed, while PP had no protective effect, we found I3P suppressed ferroptosis in a titratable way (Figure 4B,C; Figure 4\u2014figure supplement 1), which was accompanied by significantly decreased lipid peroxidation measured with C11-BODIPY (Figure 4D). 4HPP exhibited weaker anti-ferroptotic properties than I3P and required 24 hr pre-incubation to potently protect from RSL3-mediated cell death (Figure 4B,C; Figure 4\u2014figure supplement 1D). In contrast to I3P, L-Trp failed to protect cells from ferroptosis, indicating that the conversion of L-Trp to I3P by IL4i1, is required for the protection (Figure 4\u2014figure supplement 1E). Importantly, I3P was active in a concentration range starting from\u00a0~50 \u00b5M (Figure 4\u2014figure supplements 1 and 2). Considering blood concentrations of L-Trp and L-Tyr (~70 and\u00a0~90 \u00b5M, respectively) (Geisler et al., 2015), I3P was detected at\u00a0~80 \u00b5M (Dodd et al., 2017), and that IL4i1 is a secreted protein and active in the extracellular milieu, the protective concentrations of I3P and 4HPP are within a range to operate on neighboring cells, especially in limited perfusion cellular environments such as\u00a0lymph nodes where numerous IL4i1-positive cells reside. We verified our observations made in HeLa cells in HT1080 cells, a human fibrosarcoma cell line frequently used in ferroptosis studies (Figure 4\u2014figure supplement 2A\u2013C). Additionally, measuring cell death using 7-AAD and Annexin-V staining via flow cytometry, we confirmed the anti-ferroptotic effect of I3P toward erastin, RSL3, an additional ferroptosis inducer termed FINO2, and the thioredoxin-reductase inhibitor ferroptocide in murine NIH3T3 (Figure 4E) and HT1080 cells (Figure 4\u2014figure supplement 2D), showing that I3P acts as a general, species-independent protector from ferroptosis.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/64806/elife-64806-fig4-v2.jpg)\n\n**Figure 4.:** (A) Simplified schema of ferroptosis control showing the points of chemical perturbation by erastin and RSL3. (B) Quantification of cell death of HeLa cells treated with the ferroposis inducer erastin in the\u00a0presence of 200 \u00b5M PP, 4HPP, or I3P by live cell imaging using CellTox straining. Ferrostatin-1 (Fer-1) was added as a control to block erastin-induced death and has an equivalent suppressing effect as I3P. Right panel, representative CellTox staining images from an experiment similar to (B). (C) As in B, using RSL3 to induce ferroptosis. B,C: n\u00a0=\u00a03 biological replicates. The graphs are representative for three independent experiments. (D) I3P blocks lipid peroxidation induced by erastin and RSL3 determined by flow cytometry using C11-BODIPY. n\u00a0=\u00a03 biological replicates; data were analyzed by one-way ANOVA with Tukey's multiple comparisons test; ****p<0.0001. All error bars represent standard deviation. (E) Flow cytometry analysis of the anti-ferroptotic activity of I3P (200 \u00b5M) using Fer-1 as positive control. Murine NIH3T3 cells were treated with erastin, RSL3, FINO2, or ferroptocide to induce ferroptosis in the absence or presence of Fer-1or I3P and death quantified by 7-AAD and Annexin-V staining. See 'Materials\u00a0and\u00a0methods' for details of reagent concentrations and timing. The plots are representative for two independent experiments.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64806/elife-64806-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) HeLa cells were concurrently treated with erastin in the presence of increasing doses of PP, 4HPP, or I3P and death quantified over time using Incucyte imaging of CellTox straining. Ferrostatin-1 was added as a control. (B) As in (A), but using RSL3 to induce ferroptosis. (C) As in (A), but with 24 hr pre-treatment with the keto-acids before inducing ferroptosis with erastin. (D) As in (C), using RSL3 to induce ferroptosis. (E) HeLa cells were concurrently treated with erastin or RSL3 in\u00a0the presence of 200 \u00b5M L-Trp, 200 \u00b5M I3P, or control DMEM medium. All experiments: n\u00a0=\u00a03 biological replicates; the graphs are representative for three independent experiments. All error bars represent standard deviation.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/64806/elife-64806-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) HT1080 cells were concurrently treated with erastin (left) and RSL3 (right) in the presence of increasing doses of I3P and death quantified over time using Incucyte imaging of CellTox straining. Ferrostatin-1 was added as a control. (B) As in (A), comparing 200 \u00b5M of PP, 4HPP, and I3P. (C) As in (B), but with 24 hr of pre-treatment with the keto-acids before inducing ferroptosis. A\u2013C: n\u00a0=\u00a03 biological replicates. The graphs are representative for two independent experiments. All error bars represent standard deviation. (D) Flow cytometry analysis of the anti-ferroptotic activity of I3P (200 \u00b5M) using Fer-1 as positive control. HT1080 cells were treated with erastin, RSL3, FINO2, or ferroptocide to induce ferroptosis in the absence or presence of ferrostatin or I3P and death quantified by 7-AAD and Annexin-V staining. The plots are representative for two independent experiments.\n\n### IL4i1 metabolite I3P protects from ferroptosis by radical scavenging and activation of anti\u2010oxidative stress pathways\n\nWe next investigated the mechanisms associated with IL4i1 metabolite I3P-mediated ferroptosis suppression. As described above (Figure 3), we found that I3P induced a network of genes involved in the protection from oxidative stress in THP-1 cells (Figure 3). However, there is also evidence for I3P acting as a free radical scavenger (Politi et al., 1996). Therefore, we tested the radical scavenging activity of the IL4i1 amino acid metabolites PP, 4HPP, and I3P toward the stable radical diphenyl-2-picrylhydrazyl (DPPH). Ascorbic acid and Fer-1, which have been shown to scavenge the DPPH radical (Niki, 1991; Dixon et al., 2012) were used as positive controls at 200 \u00b5M. By contrast to PP, we found both, 4HPP and I3P to exhibit radical scavenging properties, with I3P having the highest scavenging potency of the tested IL4i1 metabolites (Figure 5A). Thus, the anti-ferroptotic activity could either depend on radical scavenging or the activation of anti-oxidative stress pathways. To unravel these two potential mechanisms of protection we focused on I3P, the most potent anti-ferroptotic metabolite. We hypothesized that a scavenging effect would require the direct presence of I3P, whereas after the induction of a protective gene network I3P would not have to be present anymore at the time point of ferroptosis induction, a concept validated for other ferroptosis inhibitors (Tang and Tang, 2019). Therefore, we took advantage of the fluorescent properties of I3P to monitor its presence in the cells using flow cytometry (Figure 5\u2014figure supplement 1). After pre-incubating HeLa cells for 24 hr with I3P, an increase in fluorescence measured in the AmCyan channel was observed as compared to cells incubated in control medium. We washed and removed the I3P-containing medium and tracked the decline in intracellular I3P fluorescence over time (Figure 5B). Four hours after I3P removal, the cells reached fluorescence levels similar to control cells, indicating the deprivation of intracellular I3P. Thus, we asked whether I3P was still protective under this condition (Figure 5C). Strikingly, we found I3P to retain its protective effect toward erastin-induced ferroptosis, but a complete loss of protection from RSL3-mediated cell death (Figure 5D,E). These results suggest that I3P uses at least two different modes to protect cells from ferroptosis: (i) free radical scavenging and (ii) the induction of specific protective gene expression. Protection from RSL3 mainly depends on radical scavenging, whereas the persistent protection from erastin after I3P removal, indicates the major involvement of anti-oxidative gene expression under these conditions.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/64806/elife-64806-fig5-v2.jpg)\n\n**Figure 5.:** (A) Cell-free scavenging activity of 200 \u00b5M PP, 4HPP, I3P, ascorbic acid (Asc), and Fer-1 determined by changes in the absorbance at 517 nm of the stable radical DPPH relative to H2O control. n\u00a0=\u00a04 Technical replicates; the graphs are representative for three independent experiments. Data were analyzed by one-way ANOVA with Dunnett\u2019s multiple comparisons test; ****p<0.0001; ns = not significant. (B) Design of a wash-out experiment to quantify intracellular I3P. HeLa cells were incubated for 24 hr with or without 200 \u00b5M I3P. After washing-out the I3P-containing medium, remaining intracellular I3P was determined by flow cytometry at the indicated time points. n\u00a0=\u00a03 biological replicates; the graphs are representative for three independent experiments. Data were analyzed by two-way ANOVA with Sidak's multiple comparisons test; **p<0.01; ****p<0.0001; ns = not significant. (C) Adaptation of the assay in (B) to quantify direct versus indirect protective effects of I3P. (D) I3P retains protective activity against erastin-induced ferroptosis after wash-out. (E) I3P only protects against RSL3-induced ferroptosis if present in cells during the time of GPX4 inhibition. D,E: n\u00a0=\u00a02 biological replicates; the graphs are representative for three independent experiments. (F) GSH/GSSG ratio in HeLa cells treated with 200 \u00b5M I3P for 24 hr relative to untreated control. n\u00a0=\u00a04 biological replicates; data were analyzed using an unpaired t-test; *p<0,05. All error bars represent standard deviation. (G) I3P induces the expression of SLC7A11 and HO-1 at protein level. HeLa cells were treated with I3P in the absence or presence of erastin or RSL3 for 24 hr and SLC7A11 and HO-1 levels determined by immunoblotting. Grb2 was used as loading control.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64806/elife-64806-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Absorption (grey line) and emission (light blue line) spectra of I3P in neutral aqueous solution. (B) Flow cytometric evaluation of I3P uptake (200 \u00b5M, 24 hr) by HeLa cells. Data acquired using 405 nm violet laser. (C) HeLa cells were treated with 200 \u00b5M of I3P and 2, 6, and 24 hr and I3P uptake monitored by flow cytometry analyzing the mean fluorescence intensity in the AmCyan channel. n\u00a0=\u00a03 biological replicates; the graph is representative for three independent experiments. Error bars represent standard deviation.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/64806/elife-64806-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) I3P and 4HPP induce the expression of SLC7A11 and HO-1 at protein level. HeLa cells were treated with erastin in the\u00a0presence of 200 \u00b5M of PP, 4HPP, and I3P for the indicated time and SLC7A11 or HO-1 protein levels were determined by immunoblotting; * indicates less protein amount due to cell death. (B) ZnPP (light blue triangles) interferes with the protective effects of I3P against erastin-induced ferroptosis. HeLa cells were treated with erastin in presence or absence of I3P with or without 10 \u00b5M of ZnPP and cell death quantified by CellTox Incucyte imaging. n\u00a0=\u00a02 biological replicates; the graph is representative for three independent experiments. Right: representative images of CellTox staining. (C) As in (B) using 100 \u00b5M ketoconazole. (D) Immunoblotting of HO-1 in cells transfected with 50 nM siRNA (siScr negative ctrl or siHO-1). Cells were lyzed 15 hr after treatment with 200 \u00b5M I3P, 10 \u00b5M erastin, or a combination of both. Vinculin was used as loading control. (E) HeLa cells were cells transfected with 50 nM siRNA (siScr negative ctrl or siHO-1). Ferroptosis was induced with 10 \u00b5M erastin in\u00a0the presence or absence of 200 \u00b5M I3P and quantified by CellTox staining using the Incucyte device. n\u00a0=\u00a03 biological replicates; the graph is representative for three independent experiments. All error bars represent standard deviation.\n\nFerroptosis can be initiated at different levels of cellular metabolism including perturbations in cysteine import needed for glutathione biosynthesis, glutathione homeostasis, which requires cysteine, glycine, glutamate, and NADPH, iron-heme homeostasis, and the relative balance between ROS generation and decomposition (Stockwell et al., 2017; Conrad and Pratt, 2019; Tang and Kroemer, 2020). In contrast to RSL3, which directly inhibits the detoxification of lipid peroxides by GPX4, erastin disturbs the cellular redox balance by inhibiting cysteine import (Figure 4A). Since this balance can be restored by the induction of anti-oxidative gene networks, we tested whether I3P modulates the intracellular ratio of reduced and oxidized GSH (GSH/GSSG ratio). Indeed, we observed a significant increase in the GSH/GSSG ratio in HeLa cells upon I3P treatment (Figure 5F). Additionally, we found an I3P-dependent increase of SLC7A11 protein under steady state conditions in HeLa cells treated for 24 hr (Figure 5G) coinciding with the transcriptional increase of SLC7A11 in THP-1 cells (Figure 3). Erastin itself upregulates SLC7A11 (Dixon et al., 2014) as a compensatory mechanism to elevate intracellular cysteine. In the\u00a0presence of I3P, however, SLC7A11 upregulation was strongly enhanced (Figure 5G) and also HO-1, a target gene of anti-oxidative Nrf2 signaling, was also upregulated, suggesting that I3P increases anti-oxidative gene expression under erastin-mediated redox stress. In line, we also found 4HPP upregulated SLC7A11 and HO-1 in the\u00a0presence of erastin (Figure 5\u2014figure supplement 2A). HO-1 was reported to have both detrimental and protective functions in ferroptosis\u00a0(Kwon et al., 2015;\u00a0Chiang et al., 2018). Therefore, we tested whether HO-1 activity was required for the anti-ferroptotic effect of I3P upon erastin treatment. We observed that HO-1 inhibitors, ZnPP and ketoconazole (Yang et al., 2018), reduced the protective effect of I3P (Figure 5\u2014figure supplement 2B,C). However, genetic perturbation via siRNA-mediated knockdown of HO-1 did not interfere with I3P-mediated ferroptosis protection (Figure 5\u2014figure supplement 2D,E), suggesting that the inhibitors are not completely specific and may target other proteins such as HO-2 or other heme-dependent enzymes. Taken together, our results indicate that, apart from ROS scavenging, the IL4i1 metabolite I3P (and to some extent also 4HPP) protects from ferroptosis by triggering a complex network of intracellular anti-oxidant signaling pathways resulting in increased GSH levels.\n\n### IL4i1 generates a ferroptosis-suppressive milieu\n\nA key implication from or finding that I3P and 4HPP are anti-ferroptotic IL4i1 metabolites, concerns the effects of IL4i1 in generating an anti-ferroptotic environment that would promote redox stress survival. To test this concept, we added 1 \u00b5g/ml of recombinant WT or K351A mutant, enzymatically inactive (Figure 2\u2014figure supplement 1B), murine IL4i1 to DMEM and incubated for 72 hr at 37\u00b0C allowing the enzyme to produce its metabolites. We compared the gene expression signature of HeLa cells left untreated, incubated for 24 hr with IL4i1 conditioned medium (retaining the enzyme) or 200 \u00b5M I3P. Hierarchical clustering of significantly regulated genes showed concordance of differentially expressed genes in cells treated with I3P or medium containing the WT IL4i1 enzyme, whereas the gene expression in HeLa cells treated with medium containing the enzyme-dead mutant IL4i1 clustered with the untreated control (Figure 6A). Thus, the enzymatic activity IL4i1 is required for the changes in the gene expression and the generation of I3P seems to be one major factor for the IL4i1-mediated gene expression profile, which is likely enhanced by the additional generation of 4HPP and low levels of H2O2. Indeed, more than 90% of the most significantly upregulated genes (adjusted p-value<10\u22129) upon I3P treatment overlapped with the most significantly upregulated genes by WT IL4i1 (Figure 6B) \u2013 many of them representing target genes of Nrf2 and AhR signaling, and involved in oxidative stress protection.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/64806/elife-64806-fig6-v2.jpg)\n\n**Figure 6.:** (A) Heat map of differentially expressed genes in HeLa cells after 24 hr incubation with IL4i1 (WT or K351A inactive mutant [Figure 2\u2014figure supplement 1])-conditioned DMEM, 200 \u00b5M I3P, or untreated control medium. (B) Overlap of most significantly upregulated genes as compared to the untreated HeLa cells (adjusted p-value<10\u22129) in HeLa cells treated with I3P and WT IL4i1 conditioned medium. Many of the overlapping genes are associated with Nrf2 and AhR signaling. (C) I3P uptake by HeLa cells was quantified after 24 hr of incubation with IL4i1 conditioned DMEM by flow cytometry. n\u00a0=\u00a03 biological replicates; the graph is representative for three independent experiments. Data were analyzed by two-way ANOVA with Sidak's multiple comparisons test; ***p<0.001; ****p<0.0001; ns = not significant. (D, E) HO-1 or SLC7A11 expression was determined by immunoblotting following transfer of complete DMEM media treated with increasing concentrations of IL4i1 or enzyme-dead K351A mutant for 24 hr. (F) Quantification of erastin-induced ferroptosis in HeLa cells in the\u00a0presence of IL4i1 conditioned DMEM. WT but not K351A mutant IL4i1 conditioned medium (1 \u00b5g/ml) suppressed ferroptosis (left). The anti-ferroptotic effect of IL4i1 is concentration dependent (right). n\u00a0=\u00a02 biological replicates; the graphs are representative for three independent experiments. All error bars represent standard deviation. (G) Schematic representation of the death-inducing versus death-protection mechanisms of venom LAAO versus mammalian IL4i1.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64806/elife-64806-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Quantification of RSL3-induced ferroptosis in HeLa cells in the\u00a0presence of IL4i1 conditioned DMEM. WT but not K351A mutant IL4i1 conditioned medium (1 \u00b5g/ml) suppressed ferroptosis (left). The anti-ferroptotic effect of IL4i1 is concentration dependent (right). n\u00a0=\u00a02 biological replicates; the graphs are representative for three independent experiments. (B) Simplified schema and representative immunoblot of IL4i1 removal by filtration of the conditioned medium using a 10 kDa centrifugal filter. (C) HO-1 and SLC7A11 expression in HeLa cells after 24 hr incubation with filtered DMEM media treated or not treated with recombinant IL4i1 (1 \u00b5g/ml) was analyzed by immunoblotting. (D) Filtered DMEM without or treated with recombinant IL4i1 (1 \u00b5g/ml) was used to quantify ferroptosis suppression of erastin (left) and RSL3 (right) treated HeLa cells (n\u00a0=\u00a03 biological replicates). (E) Quantification of erastin-induced ferroptosis in HeLa cells in the\u00a0presence of medium with human plasma concentrations of amino acids and glucose. The medium was pre-incubated for 72 hr with IL4i1, transferred to the cells and ferroptosis induced with 1 \u00b5M erastin. (F) Quantification of cell death induced by 1.25 \u00b5g/ml snake venom LAAO in HeLa cells in the\u00a0presence of IL4i1 conditioned DMEM. (G) Quantification of cell death induced by 1.25 \u00b5g/ml snake venom LAAO in HeLa cells in the\u00a0presence of the ferroptosis inhibitors ferrostatin-1 (Fer-1, 2 \u00b5M) and liproxstatin-1 (Lip-1, 1 \u00b5M). E\u2013G: n\u00a0=\u00a03 biological replicates. The graphs are representative for three independent experiments. All error bars represent standard deviation.\n\nMoreover, monitoring I3P fluorescence via flow cytometry, we detected a dose dependent increase in the AmCyan fluorescence in cells treated with WT IL4i1-conditioned medium, but not in cells treated with the enzyme-dead mutant, confirming that IL4i1-generated I3P was taken up by the cells (Figure 6C). In line with our previous findings, we observed this to be linked to a dose-dependent increase in HO-1 and SLC7A11 (Figure 6D), which was absent when using the control medium or the K351A mutant enzyme (Figure 6E). To examine whether cells treated with the IL4i1-conditioned medium are protected from ferroptosis, we treated cells with erastin or RSL3 to induce ferroptosis after transferring the medium to the cells. Importantly, whereas the mutant enzyme had no protective effect, WT IL4i1 inhibited ferroptosis in a titratable manner (Figure 6F, Figure 6\u2014figure supplement 1A), indicating that IL4i1 can create a ferroptosis-suppressive milieu due to its enzymatic activity. To additionally confirm that these effects do not require IL4i1 to bind to any receptor, but the changes in the metabolic environment are sufficient, we used filtration to remove IL4i1 from the conditioned medium before addition to the HeLa cells, which also resulted in upregulation of HO-1 and SLC7A11 and protection from ferroptosis (Figure 6\u2014figure supplement 1B\u2013D). Since amino acid concentrations in cell culture medium do not reflect the physiological levels, we verified that the protective effect of IL4i1 was also retained in medium containing human plasma concentrations of amino acids and glucose as described by Leney-Greene et al., 2020; Figure 6\u2014figure supplement 1E. These data indicate that after IL4i1 is secreted, it generates I3P, 4HPP, and other metabolites that have an autocrine\u2013paracrine anti-ferroptotic effect. Thus, whereas snake venom LAAO quickly generates cytotoxic levels of H2O2, IL4i1 produces non-lethal amounts of H2O2 and amino acid metabolites protecting cells from oxidative ferroptotic cell death (Figure 6G). Therefore, we tested if IL4i1 could also protect cells from LAAO toxicity. As in Figure 6F, we transferred medium pre-incubated for 72 hr with IL4i1 to HeLa cells and added a toxic concentration (1.25 \u00b5g/ml; Figure 1F) of snake venom LAAO. However, IL4i1 could not prevent cells from LAAO toxicity (Figure 6\u2014figure supplement 1F). In concordance with our previous observations regarding ferroptosis protection we confirmed that the venom LAAO does not induce this mode of cell death (Figure 6\u2014figure supplement 1G). Thus, we speculate that IL4i1 can rather protect from endogenous ROS accumulation, but not from the rapid exogenous H2O2 accumulation induced by the venom protein.\n\n## Discussion\n\nOur results indicate that snake venom LAAOs and mammalian IL4i1 diverged in their functions to kill or protect cells, respectively. We found that a venom LAAO killed mammalian cells via H2O2 generation. N. naja LAAO oxidized five amino acids to generate H2O2, which was lethal to mammalian cells. N. naja LAAO was far more potent than its mammalian counterparts, even though the substrate range was almost similar to IL4i1 (with the main exception of L-Leu being metabolized by LAAO). These data are consistent with the notion that venom LAAOs evolved to rapidly metabolize amino acids from their target, and work in concert with other cytotoxic enzymes, such as phospholipases, to increase cell permeability and death in and around the site of envenomation. We note that although LAAOs are almost universal in viperid and elapid venoms, their relative amounts differ remarkably across snake species, consistent with the prey- dependent evolutionary pressure to tailor venom for the target food source (Tasoulis and Isbister, 2017). For example, spitting cobras use directed venom ejection as a defensive strategy (Kazandjian et al., 2021); whether these snakes retain the same quantities and activities of LAAOs compared to their close cousins, such as N. naja, may provide additional insights into venom evolution.\n\nBy contrast to venom LAAOs, we discovered that mammalian IL4i1 protected against death. We found the death protection mechanism of IL4i1 is via suppression of ferroptosis. IL4i1 mediated its anti-ferroptotic activities by overlapping and distinct mechanisms that we speculate synergize in vivo. First, we found that human and mouse IL4i1 are non-cytolytic compared to snake LAAO. Second, the products of the IL4i1 reaction, PP, 4HPP, and I3P induced the hierarchical activation of a gene transcriptional signature linked to networks of cell protective genes, including SLC7A11, CYP1B1, and AKR1C1. PP had almost no detectable effect on expression of the cell protection gene network, while I3P induced a readily\u00a0identifiable cluster of mRNAs, and 4HPP was intermediate between PP and I3P. Third, IL4i1 is a secreted enzyme and therefore we expect that all the products of the reaction will be made at the same time (though their clearance and downstream metabolism may differ substantially) and could therefore work collectively to activate anti-ferroptotic effects in neighboring cells. Indeed, our media filtration experiments using media treated with IL4i1 and experiments using an enzyme-dead control, argue that the products of the IL4i1 reaction are necessary and sufficient to block ferroptosis in neighboring cells. These experiments additionally argue against a model where IL4i1 binds to other proteins and acts like a cytokine or hormone in this context (Aubatin et al., 2018).\n\nUsing information from the cell protective gene network induced by IL4i1 metabolites, we speculated that I3P and 4HPP but not PP, may modulate the response to redox stress. We focused on ferroptosis as this pathway is amenable to both activation and suppression by well-defined on-target drugs. We found I3P was highly protective against ferroptotic death induced by both GPX4 (RSL3) or SLC7A11 (erastin) inhibition. 4HPP had an intermediate effect on suppressing ferroptosis, while PP had no modulatory effect, coinciding closely with our RNAseq data showing the distinct magnitude of gene expression by I3P relative to either 4HPP or PP. Ferroptosis can be interrupted by distinct mechanisms leading from modulating cysteine metabolism to form glutathione (Stockwell et al., 2017; Conrad and Pratt, 2019), to detoxification of lipid peroxides. In dissecting each key step, we found I3P blocked ferroptosis by at least two distinct mechanisms. First, using a radical scavenging assay and a strategy to load ferroptosis-susceptible cells with I3P and then trace its decay, we observed that I3P has direct free radical scavenging properties. We noted that I3P has previously been shown to be a free radical scavenger in an unrelated system (Politi et al., 1996). Second, and independent of the radical scavenging properties, I3P induced a cell redox protective gene network, sufficient to prevent erastin-mediated ferroptosis and associated with an increased ratio of reduced GSH. Moreover, especially under erastin-mediated stress conditions, I3P elevated the activation of compensatory gene expression as indicated by increased protein amounts of SLC7A11 and HO-1, two important target genes of anti-oxidative stress pathways. Nevertheless, further studies are required to identify the main conductors of ferroptosis suppression and the upstream transcription pathways. Our RNAseq data from I3P- and IL4i1-treated cells suggest a possible involvement of ATF4 and especially Nrf2 and AhR signaling. Indeed, also a recent study suggested that\u00a0the AhR was activated by I3P (Sadik et al., 2020). Determining the relative contributions of these pathways, however, will require a systematic evaluation in cell systems devoid of each or even combinations of these transcription factors, since there is evidence for the overlap of the pathways (Zgheib et al., 2018).\n\nSo far, very little is known about IL4i1 protein levels in tissues or serum, mainly due to limitations in validated antibodies. Since IL4i1 expression is highly inducible in immune cells (Molinier-Frenkel et al., 2019), it is possible that inflammatory conditions are required for IL4i1 accumulation. However, a recent study reported serum IL4i1 amounts of up to 300 pg/ml in a mouse leukemia model (Sadik et al., 2020). Given that IL4i1 expression is often associated with tumor-associated myeloid cells (Ramspott et al., 2018), we speculate that especially in low-perfused tissue environments, such as found in solid tumors, local concentrations of IL4i1 can reach much higher levels, attaining a ng/ml range in which we found IL4i1 to mediate its protective effects. We also note that I3P has previously been detected in plasma at\u00a0~80 \u00b5M and was speculated to be derived from microbiome tryptophan metabolism (Dodd et al., 2017) and that related microbiota-derived tryptophan metabolites are associated with radio-protection (Guo et al., 2020). Notably, we were able to demonstrate anti-ferroptotic activity of I3P within this concentration range. Given that the microbiome and IL4i1 activate anti-ferroptosis pathways via I3P and potentially other indoles, one plausible way to account for the pro-tumor effects of IL4i1 and the pathway we discovered herein, is that local IL4i1 production in the tumor microenvironment increases the available I3P (and 4HPP) concentrations, protecting tumor cells from ferroptosis. While no direct evidence for this link exists, yet the association between IL4i1 and cancer is substantial (Ramspott et al., 2018; Molinier-Frenkel et al., 2019; Sadik et al., 2020). Thus, we speculate that an inhibitor of IL4i1 may be a useful anti-cancer drug, as it may sensitize cancer cells to ferroptotic death by blocking IL4i1-mediated amino acid metabolism.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Doxycycline</td>\n      <td>Sigma</td>\n      <td>D9891</td>\n      <td>1 \u00b5g/ml</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>PNGaseF</td>\n      <td>New England Biolabs</td>\n      <td>P0704</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Erastin</td>\n      <td>Selleckchem</td>\n      <td>S7242</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>(1S, 3R)-RSL3</td>\n      <td>Selleckchem</td>\n      <td>S8155</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Catalase</td>\n      <td>Sigma</td>\n      <td>C1345</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Zinc (II) protoporphyrin IX</td>\n      <td>Sigma</td>\n      <td>691550</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Ketoconazole</td>\n      <td>Acros Organics</td>\n      <td>455470010</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Ferrostatin-1</td>\n      <td>Sigma</td>\n      <td>SML0583</td>\n      <td>2 \u00b5M</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Liproxstatin-1</td>\n      <td>Selleckchem</td>\n      <td>S7699</td>\n      <td>1 \u00b5M</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Indole-3-pyruvic acid</td>\n      <td>Sigma</td>\n      <td>I7017</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Sodium phenylpyruvate</td>\n      <td>Alfa Aesar</td>\n      <td>H56767.06</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>4-Hydroxyphenylpyruvic acid</td>\n      <td>Sigma</td>\n      <td>114286</td>\n      <td>200 \u00b5M</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>2,2-Diphenyl-1-pikryl-hydrazyl</td>\n      <td>Sigma</td>\n      <td>D9132</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Horse radish peroxidase</td>\n      <td>Sigma</td>\n      <td>P8375</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide recombinant protein</td>\n      <td>Recombinant human IL4i1</td>\n      <td>R and D systems</td>\n      <td>5684-AO-020</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>HO-1 siRNA</td>\n      <td>Invitrogen</td>\n      <td>4390824 (S6673)</td>\n      <td>50 nM</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>Scrambled siRNA</td>\n      <td>Invitrogen</td>\n      <td>4390843</td>\n      <td>50 nM</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Slc7a11 (rabbit monoclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>12691</td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-HO-1 (rabbit polyclonal)</td>\n      <td>Enzo</td>\n      <td>ADI-SPA-895</td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>CellTox Green</td>\n      <td>Promega</td>\n      <td>G8731</td>\n      <td>1:4000</td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>Amplex UltraRed</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>A36006</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell lines and media\n\nCell lines were purchased from the American Type Culture Collection (ATCC). All cell lines were tested to be free from Mycoplasma contamination by routine PCR screening.\n\nTHP-1 and RS4;11 cells were grown in RPMI Medium 1640 containing GlutaMAX (Gibco/Life Technologies Corp., Grand Island, NY) plus 10% fetal bovine serum (FBS), 1% Penicillin-Streptomycin (Sigma, St. Louis, MO), and 0.1% 2-Mercaptoethanol (Sigma Aldrich). HeLa cells, HEK293T cells,\u00a0and HT-1080 and NIH3T3 cells were grown in DMEM high glucose, pyruvate (Gibco/Life Technologies Corp., Grand Island, NY) plus 10% fetal bovine serum (FBS) and 1% Penicillin-Streptomycin (Sigma, St. Louis, MO). Medium containing human plasma concentrations of amino acids was prepared using D9800-13 Dulbecco\u2019s MEM (DMEM) Low Glucose, w/o Amino Acids, Pyruvic Acid (Powder) (USBiological) adding amino acids as previously described (Leney-Greene et al., 2020). All cell lines were grown in humidified tissue culture incubators at 37\u00b0C with 5% CO2.\n\n### siRNA knockdown\n\nHeLa cells were seeded at 2\u00a0\u00d7\u00a0105 cells/well in six well plates. After 24 hr incubation at 37\u00b0C, the cells were transfected with 50 nM of HO-1 siRNA (4390824, s6673, Invitrogen) or scrambled siRNA (4390843, Invitrogen) using Lipofectamine RNAiMAX Transfection Reagent (Invitrogen) according to the manufacturer\u2019s instructions. Cells were re-plated 10 hr after transfection for the ferroptosis assay and western blot analysis.\n\n### Recombinant protein expression and purification\n\nHEK293T (ATCC) cell lines stably expressing Twin-Strep-tagged N. naja LAAO (WT and R320A, K326A double mutant) and murine IL4i1 (WT and K351A mutant) were generated using the PiggyBac transposon system (Yusa et al., 2011; Li et al., 2013). For both proteins the human VEGF leader sequence (MNFLLSWVHWSLALLLYLHHAKWSQA) was used to ensure efficient secretion. Cells were grown at a density of 1\u00a0\u00d7\u00a0106 cells per ml in FreeStyle 293 Expression Medium (Gibco, Thermo Fisher Scientific) and protein expression was induced using 1 \u00b5g/ml doxycycline. For purification of the secreted proteins the supernatant was collected 7 days after doxycycline induction and filtered using a Nalgene Rapid-Flow 75 mm bottle top filter (Thermo Scientific).\n\nFor N. naja LAAO purification, the supernatant was concentrated from a starting volume of 2 l to a final volume of 50 ml in 20 mM MES (pH 6.0) and 50 mM NaCl by diafiltration using a Satocon Slice 200 (Sartorius). The protein was loaded onto a Toyopearl Sulfate-650F 5 ml column (Tosoh Bioscience) for ion exchange chromatography using a linear gradient up to 20 mM MES (pH 6.0) and 2000 mM NaCl for elution. The LAAO containing fractions were further purified by incubation with Strep-TactinXT Superflow Beads for 1 hr on a rotating wheel. After washing with PBS the protein was eluted with PBS +50 mM Biotin.\n\nTo purify murine IL4i1 the supernatant was loaded on a Strep-TactinXT Superflow cartridge (Iba) using an \u00c4KTA pure chromatography system. After washing the protein was eluted in two consecutive steps for 30 min with PBS containing 50 mM Biotin. Protein purity was confirmed via SDS PAGE.\n\n### Western blotting\n\nCells were lysed in lysis buffer and protease inhibitor cocktail. Cell lysates were separated on 4\u201315% Criterion TGX Stain-Free protein gels (5678085, Bio-Rad), transferred to nitrocellulose membranes (0.2 \u00b5m, 10600001, Amersham) and blocked in 5% milk in PBS containing 0.1% Tween-20 5% milk. Membranes were incubated overnight at 4\u00b0C with a 1:1000 dilution of the following primary antibodies: StrepMAB (2-1507-001, Iba), SLC7A11 (12691S, Cell Signaling Technology, CST), HO-1 (ADI-SPA-895, Enzo), Vinculin (13901, CST), and Grb2 (610112, BD). Membranes were washed and incubated with 1:10,000 HRP-conjugated secondary antibodies Goat Anti-Rabbit and Goat Anti-Mouse (respectively, 111-035-003 and 115-035-003, Jackson ImmunoResearch) before visualization with SuperSignal West Pico Substrate (34080; Pierce).\n\n### Cell death analysis\n\nCells were seeded in 48-well plates and, 24 hr after plating, ferroptosis was induced with either 10 \u03bcM erastin or 1 \u03bcM RSL3. Cells were monitored by live phase\u2010contrast microscopy using the IncuCyte S3 system with the 10X objective, taking nine images per replicate for 36\u201348 hr as shown in the figures. Cell death was monitored over time using CellTox Green.\n\n### Cell death analysis by flow cytometry\n\nFerroptosis was induced using ferroptosis inducers (FINs): erastin, RSL3, FINO2 (provided by Keith Worpel and Brent Stockwell), and ferroptocide (provided by Paul Hergenrother; Llabani et al., 2019). Cells were seeded in 6-well plates and, 24 hr after plating, treated with the indicated compounds. We used 5 \u03bcM erastin, 1.13 \u03bcM RSL3, 10 \u03bcM FINO2, and 10 \u03bcM ferroptocide. As a control for protection from ferroptosis, we used the ferrostatin Fer-1 at 1 \u00b5M. At indicated time points, cells were harvested, washed twice in PBS and stained with 5 \u03bcl of 7-AAD (BD Biosciences) and 5 \u03bcl of annexin-V-FITC (BD Biosciences) in 100 \u03bcl annexin-V binding buffer (BD Biosciences). After 15 min, cells were recorded on the LSRII with the FACS Diva 6.1.1 software (BD Biosciences).\n\n### Quantification of lipid peroxidation\n\nLipid peroxidation was assessed using C11-BODIPY 581/591 (Molecular Probes/Life Technologies) according to the manufacturer\u2019s instructions.\n\n### DPPH scavenging assay\n\nRadical scavenging activity of PP, 4HPP, and I3P was analyzed using the stable free radical 1,1-diphenyl-2-picrylhydrazyl (DPPH). Fer-1 and ascorbic acid were used as positive controls. All compounds were used at a concentration of 200 \u00b5M and added to a 200 \u00b5M DPPH solution in pure methanol. After 10 min incubation, the absorbance was measured at 517 nm. The decrease in absorbance due to radical scavenging was calculated relative to the H2O control.\n\n### GSH/GSSG assay\n\nQuantification of GSH/GSSG ratio in the cell lysates of HeLa cells treated for 24 hr with 200 \u00b5M I3P was performed as previously described (Rahman et al., 2006).\n\n### I3P fluorescence spectrum\n\nI3P was dissolved at a 2 mM in ddH2O. The fluorescence was measured in a black microplate using a CLARIOstar Plus microplate reader (BMG Labtech). For the excitation spectrum, the fluorescence intensity was measured for excitation wavelengths from 320 to 440 nm with a stepwidth of 1 nm at an emission wavelength of 470 nm (20 nm bandwidth). The emission spectrum was generated using an excitation wavelength of 395 nm (20 nm bandwidth) and detecting the emission at wavelengths from 430 to 600 nm with a stepwidth of 1 nm.\n\n### I3P uptake\n\nTo monitor I3P uptake, HeLa cells (2 \u00d7 104) were seeded in triplicates into 48-well plates and treated with 200 \u03bcM of Indole-3-pyruvic acid dissolved in the culture medium. AmCyan fluorescence was acquired at 2, 6, and 24 hr on a LSRFortessa with DIVA software (BD Biosciences). All flow data were analyzed by FlowJo software (version 10.5.0, Tree Star Inc, Ashland, OR).\n\n### LAAO enzymatic assay\n\nSpecific LAAO activity toward the proteinogenic amino acids was measured by determination of H2O2 generation using Amplex UltraRed (AUR). Recombinant N. naja LAAO, human or murine IL4i1 were added to a mixture containing 1 U/ml HRP, 50 \u00b5M AUR, and 1 mM of the specific L-amino acid (CELLPURE, Roth) in 50 mM Sodium Phosphate (Sigma), pH 7.0 in a final volume of 100 \u00b5l per well of a black 96-well microplate. H2O2 production was measured over 5 min at 37\u00b0C using a CLARIOstar Plus microplate reader (BMG Labtech) at 530 nm excitation and 590 nm emission wavelength.\n\n### Untargeted metabolomics\n\nDMEM containing 10% FBS was incubated for 24 and 72 hr with 1 \u00b5g/ml of recombinant human IL4i1. The identical medium without IL4i1 was used as control. All samples were prepared in triplicates and frozen in liquid nitrogen. For analysis, samples were thawed on ice and proteins were precipitated with methanol. Upon centrifugation at 4\u00b0C for 10 min at 15,000 rcf, the extracts were transferred to a new tube. 10 \u03bcl of each sample were pooled and used as a quality control (QC) sample and the extracts were randomly assigned into the autosampler. Metabolites were separated on an iHILIC-(P) Classic HPLC column (HILICON, 100 \u00d7 2.1 mm; 5 \u00b5m; 200 \u00c5; equipped with a guard column) with a flow rate of 100 \u00b5l/min delivered through an Ultimate 3000 HPLC system (Thermo Fisher Scientific). The stepwise gradient of HILIC analysis (Wernisch and Pennathur, 2016) involved starting conditions of 90% A (100% ACN), ramp to 25% B (25 mM ammonium hydrogen carbonate) within 6 min, 2 min hold at 25% B, ramp to 60% B from 8 to 21 min, switch to 80% B at 21.5 min, following by a flushing (21.5\u201326 min: 80% B) and re-equilibration step (26.1\u201335 at 10% B). All samples were analyzed by HILIC separation followed by ESI-HRMS in polarity switching mode in the mass range of 70\u2013900 m/z. Sample spectra were acquired by data-dependent high-resolution tandem mass spectrometry on a Q Exactive Focus (Thermo Fisher Scientific). Ionization potential was set to +3.5/\u22123.0 kV, the sheath gas flow was set to 20, and an auxiliary gas flow of 5 was used. Samples were analyzed in a randomized fashion bracketed by a blank (MeOH: H2O; 2:1 v/v) and QC sample for background correction and normalization of the data, respectively. QC samples were additionally measured in confirmation and discovery mode to obtain further MS/MS spectra for identification. The obtained data sets have been processed by compound discoverer (CD) 3.1.0.035 (Thermo Fisher Scientific). Our internal database, mzCloud database, and ChemSpider database (BioCyc, HMDB, KEGG) were used for compound annotation. A mass accuracy of 5 ppm was set and for our internal database a retention time window of 0.4 min was considered to compare against authentic standards. Acetonitrile (ACN) HiPerSolv CHROMANORM for HPLC-Supergradient was obtained from VWR Chemicals, methanol Optima LC/MS Grade from Fisher Chemicals, formic acid Suprapur was purchased from Merck, and H2O was obtained from a Mili-Q Advantage A10 water purification system (Merck).\n\n### RNA\u00a0sequencing and analysis\n\nTHP-1 cells were treated in triplicates for 24 hr with 200 \u00b5M of PP, 4HPP, or I3P dissolved in RPMI medium. RPMI medium was used as control. HeLa cells were treated in triplicates for 24 hr with DMEM containing 200 \u00b5M I3P or DMEM pre-incubated with 1 \u00b5g/ml murine IL4i1 (WT or K351A mutant). DMEM medium was used as control.\n\nRNA was extracted using Qiagen RNeasy Mini kits (Qiagen) according to the manufacturer's protocol. mRNA sequencing libraries were prepared with 1 \u00b5g of total RNA of each sample using the NEBNext Ultra II Directional RNA Library Prep Kit for Illumina (E7765, NEB) with NEBNext Poly(A) mRNA Magnetic Isolation Module (E7490, NEB), according to standard manufacturer\u2019s protocol. Total RNA and the final library quality controls were performed using Qubit Flex Fluorometer (Q33327, Thermo Fisher Scientific) and 2100 Bioanalyzer Instrument (G2939BA, Agilent) before and after library preparation. Paired-end sequencing was performed on Illumina NextSeq 500 (2 \u00d7 43 bp reads). The samples were multiplexed and sequenced on one High Output Kit v2.5 to reduce a batch effect. BCL raw data were converted to FASTQ data and demultiplexed by bcl2fastq Conversion Software (Illumina). BAM and bigwig files are generated by STAR alignment and file conversion scripts \u2013 bam2wig and wigToBigWig.\n\nAfter quality\u00a0checking using the tool FastQC (v.0.11.7) the files were mapped to the human genome (Genome build GRCh38) downloaded from Ensembl using the star aligner (v. 2.7.3a) (Dobin et al., 2013). The mapped files were then quantified on a gene level based on the Ensembl annotations, using the featureCounts (Liao et al., 2014) tool from the SubRead package (Liao et al., 2013) (v. 1.4.6-p4).\n\nUsing the DESeq2 package (R 3.6.0, DESeq version 1.26.0) (Anders and Huber, 2010) the count data was normalized by the size factor to estimate the effective library size. After calculating the gene dispersion across all samples, the comparison of each two different conditions resulted in a list of differentially expressed genes for each comparison. A filtering step of removing genes with no reads in at least three samples was used.\n\nGenes with an adjusted p-value <0.05 were then considered to be differentially expressed for generation of volcano plots. Gene ontology (GO) biological process overrepresentation analysis was computed with the web-based PANTHER tool using Fisher\u2019s exact test and false discovery rate (FDR) calculation. GO term overrepresentation was analyzed for the most significantly I3P-upregulated genes with a p-value cutoff of p<10\u22129 using all detected genes from the dataset as the reference.\n\nClustering analysis was performed using the Perseus software (version 1.6.14.0). Genes were filtered for protein-coding genes and the reads log2 transformed. Multiple sample testing using ANOVA with an FDR threshold of 0.0001 was conducted and z-scores generated for the significant genes, which were used for hierarchical clustering (Euclidean distance, average linkage) generating a heat map.\n\n### Statistical analyses\n\nStatistical analyses were performed using GraphPad Prism software program (version 7, http://www.graphpad.com). Statistical tests are reported in the figure legends.\n",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "83ac449b-d960-4984-be2e-2d089177325a",
+      "submission_id": "dc249e84-8881-4194-a9cd-72e4df0b0a2b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Tiffany Horng, ShanghaiTech University China\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.64806.sa1](https://doi.org/10.7554/eLife.64806.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper identifies and characterizes an unexpected cytoprotective effect for the human L-amino acid oxidase, interleukin-4-induced-1 (IL4i1). Unlike the related snake venom L-amino acid oxidase which robustly generates hydrogen peroxide to induce ferroptotic cell death, the human protein has slower/attenuated activity and produces metabolites that protect cells from ferroptosis, via direct free radical scavenging activity and the transcriptional induction of an anti-ferroptotic cellular response. The study is elegant and the findings are exciting and of broad relevance to ferroptosis and cellular stress responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Anti-ferroptotic mechanism of IL4i1-mediated amino acid metabolism\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Carla Rothlin as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our policy on revisions we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, when editors judge that a submitted work as a whole belongs in eLife but that some conclusions require a modest amount of additional new data, as they do with your paper, we are asking that the manuscript be revised to either limit claims to those supported by data in hand, or to explicitly state that the relevant conclusions require additional supporting data.\n\nOur expectation is that the authors will eventually carry out the additional experiments and report on how they affect the relevant conclusions either in a preprint on bioRxiv or medRxiv, or if appropriate, as a Research Advance in eLife, either of which would be linked to the original paper.\n\nSummary:\n\nThis is a very interesting story showing that IL4iL, a secreted amino acid oxidase, has anti-ferroptotic properties. Unlike snake venom amino acid oxidases which robustly generate hydrogen peroxide to induce cell death, IL4iL products, including most notably I3P, protect against ferroptosis. IL4iL products have direct free radical scavenging activity and also elicit the induction of an anti-ferroptotic cellular response, in part via induction of HO-1. The authors also suggest that these effects of IL4iL may contribute to its pro-tumoral actions.\n\nEssential revisions:\n\n1) Can the authors do a genetic experiment to support or refute the protective role of HO-1 induction by I3P, or perhaps attenuate their comments that HO-1 contributes to the protective effects?\n\n2) Is IL4i1 cytoprotective against snake venom LAOO?\n\n3) The authors should show their RNAseq data for IL4i1, to enable comparison with the RNA-seq data for I3P.\n\nReviewer #1:\n\nThis is a very interesting story showing that IL4iL, a secreted amino acid oxidase, has anti-ferroptotic properties. Unlike snake venom amino acid oxidases which robustly generate hydrogen peroxide to induce cell death, IL4iL products, including most notably I3P, protect against ferroptosis. IL4iL products have direct free radical scavenging activity and also elicit the induction of an anti-ferroptotic cellular response, in part via induction of HO-1. The authors also suggest that these effects of IL4iL may contribute to its pro-tumoral actions.\n\nThis is a relatively complete story. Below are a few points for the authors' considerations.\n\n1) The authors could consider using HO-1 knockdown to complement their findings with ZnPP in Figure 5.\n\n2) Can the authors speculate on why there seems to be different mechanisms of action of I3P against RSL3 and erastin induced ferroptosis?\n\n3) Can the authors comment more on the expression patterns of IL4iL, other than cancer and a few cell types?\n\nReviewer #2:\n\nThe authors may want to consider a scenario in which the genes encoding the snake venom LAAO and IL4i1 co-evolved such that one elicits and the other suppresses ferroptosis, respectively. This would be consistent with both proteins having the same core enzymatic activity, with LAAO inducing sufficient levels of H2O2 to kill cells and IL4i1 induces lower levels of H2O2, not sufficient to kill cells but likely sufficient to trigger a cytoprotective response against higher levels of H2O2. This would be reminiscent of other \"desensitisation systems\", where exposure to a sub-lethal dose of a given agonist renders cells, tissues, organs or organisms refractory to a subsequent dosage of the same substance that would otherwise be deleterious, i.e. cytotoxic. These adaptive responses are sometimes referred to as hormesis or accommodation and are based on the activation of evolutionarily conserved cytoprotective programs, similar to the ones put forward by the authors.Related to Figure 1:\n\n\u2022 Is the snake venom LAAO internalised by mammalian cells?\n\n\u2022 Does snake venom LAAO triggers the generation/accumulation of intracellular H2O2? This could be assessed, for example, using specific intracellular H2O2 probes.\n\n\u2022 Does snake venom LAAO induces ferroptosis? This could be assessed, for example, using different pharmacologic ferroptosis inhibitors.\n\n\u2022 It is intriguing that when mammalian cells express the gene encoding the snake venom LAAO they do not \"succumb to their own poison\". Can the authors discuss why this maybe.\n\n\u2022 In the assays shown in F-H, please indicate what the error bars stand for (STD?, SEM?) and whether these reflect variation inherent to technical replicates (N=3) in a representative assay or from averaged data in independent assays. This comment applies to other figures using the same approach.\n\nRelated to Figure 2:\n\nSimilar to the previous comments related to Figure 1:\n\n\u2022 Is IL4i1 internalised by mammalian cells?\n\n\u2022 Does IL4i1 triggers the generation of intracellular H2O2. This could be assessed, for example, using specific intracellular H2O2 probes.\n\n\u2022 Is IL4i1 cytoprotective against snake venom LAAO?\n\n\u2022 There is no information on the experimental variation for the data illustrated in Figure 2F.\n\n\u2022 Figure 2F. 1\u00b5g/ml of IL4i1 is used to treat the cells. Information on the plasma concentrations of IL4i1 in human or mouse under steady state and inflammatory conditions would be supportive to demonstrate the physiological function of IL4i1.\n\nRelated to Figure 3:\n\nThe authors investigated if the metabolic products of the IL4i1 enzymatic reaction modulate the \"cell state\", by performing RNAseq analysis on human THP-1 monocytic cells treated with I3P, 4HPP or PP. For comparison the authors should illustrate their RNAseq data (same format as in A) in cells exposed to IL4i1, further demonstrating the overlap between the profiles of gene expression obtained with I3P and IL4i1.\n\nRelated to Figure 5:\n\nIn Figure 5D, E, cellular cysteine, glutamate content and GSH/GSSG ratio are needed to support the conclusions reached.\n\nRelated to Figure 6:\n\n\u2022 Although there is evidence for the anti-ferroptotic effect of Slc7a11 and Hmox1, the author did not show whether Slc7a11 is required for the protective effect of I3P, which is important to support the conclusions reached.\n\n\u2022 Figure 6\u2014figure supplement 1D, wash-out experiment is needed to exclude the scavenging effect of filtered medium.\n\nIn the assays shown in F-H, please indicate what the error bars stand for (STD?, SEM?) and whether these reflect variation inherent to technical replicates (N=3) in a representative assay or where these relate to averaged data from independent assays. This comment applies to other figures using the same approach.\n\nReviewer #3:\n\nCongratulations on an exciting paper. I would suggest trying to determine the amino acid concentrations in the cell culture medium you used, and testing the effects of these two enzymes in medium containing natural concentrations of amino acids (the concentrations found in human plasma for example).\n\nI would also suggest a genetic experiment to support or refute the protective role of HO-1 induction by I3P. I suspect HO-1 does not contribute to the protective effect and that ZnPP suppresses the protective effect of I3P via other mechanisms. Also, I believe that many of the genes induced by I3P in Figure 3C are targets of ATF4, such that knockdown of ATF4 should be informative about the protective effect of many of these.\n\nFinally, good controls for I3P's protective effects would be tryptophan and indole, as they would have the same indole moiety. I would suggest comparing these side by side.\n",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b44bd30b-2fae-4f57-8638-dc0a55dd3709",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C1",
+      "claim": "IL4i1 is an amino acid oxidase secreted from immune cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interleukin-4-induced-1 (IL4i1) is an amino acid oxidase secreted from immune cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a defining characteristic of IL4i1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "af00f471-84b0-428e-8872-ac700cb3f6cd",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C2",
+      "claim": "IL4i1 has homologs in snake venoms (L-amino acid oxidases [LAAO]).",
+      "claim_type": "EXPLICIT",
+      "source": "As IL4i1 has homologs in snake venoms (L-amino acid oxidases [LAAO]), we used comparative approaches to gain insight into the mechanistic basis of how conserved amino acid oxidases regulate cell fate and function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the abstract as the rationale for the comparative study approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "20ad367c-e031-4e0e-9b14-7d6685d500e1",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C3",
+      "claim": "Venom LAAO kills cells via hydrogen peroxide generation.",
+      "claim_type": "EXPLICIT",
+      "source": "Using mammalian expressed recombinant proteins, we found that venom LAAO kills cells via hydrogen peroxide generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "f5c41b84-9d23-4967-b3ab-e86c7146cfe2",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C4",
+      "claim": "Mammalian IL4i1 is non-cytotoxic.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, mammalian IL4i1 is non-cytotoxic and instead elicits a cell protective gene expression program inhibiting ferroptotic redox death by generating indole-3-pyruvate (I3P) from tryptophan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "600f4009-accf-4f54-88b6-4894ae3d0b4e",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C5",
+      "claim": "IL4i1 inhibits ferroptotic redox death by generating indole-3-pyruvate (I3P) from tryptophan.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, mammalian IL4i1 is non-cytotoxic and instead elicits a cell protective gene expression program inhibiting ferroptotic redox death by generating indole-3-pyruvate (I3P) from tryptophan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "968f2bea-68e9-4adc-a822-11d86ced569c",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C6",
+      "claim": "I3P suppresses ferroptosis by direct free radical scavenging.",
+      "claim_type": "EXPLICIT",
+      "source": "I3P suppresses ferroptosis by direct free radical scavenging and through the activation of an anti-oxidative gene expression program.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "8ca7e350-11f9-4f17-9353-8d544516863c",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C7",
+      "claim": "I3P suppresses ferroptosis through the activation of an anti-oxidative gene expression program.",
+      "claim_type": "EXPLICIT",
+      "source": "I3P suppresses ferroptosis by direct free radical scavenging and through the activation of an anti-oxidative gene expression program.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in Figures 3 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "7d89edf7-b350-408a-aea0-c7eaab6e37b9",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C8",
+      "claim": "The pro-tumor effects of IL4i1 are likely mediated by local anti-ferroptotic pathways via aromatic amino acid metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the pro-tumor effects of IL4i1 are likely mediated by local anti-ferroptotic pathways via aromatic amino acid metabolism, arguing that an IL4i1 inhibitor may modulate tumor cell death pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings and stated in the abstract.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "8859973d-c317-4283-afce-d5a9796027d0",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C9",
+      "claim": "An IL4i1 inhibitor may modulate tumor cell death pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the pro-tumor effects of IL4i1 are likely mediated by local anti-ferroptotic pathways via aromatic amino acid metabolism, arguing that an IL4i1 inhibitor may modulate tumor cell death pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative therapeutic implication based on the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "742917f1-4904-4784-bd80-b5027b1a96b5",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C10",
+      "claim": "Most cells of the immune system depend on external supplies of all essential and most non-essential amino acids for proliferation in active immune responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Most cells of the immune system depend on external supplies of all essential and most non-essential amino acids for proliferation in active immune responses, and for diverse effector functions, such as nitric oxide generation from arginine (Murray, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background knowledge with a citation to support it.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "4329851a-458f-4ea9-9a80-68878e3e088e",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C11",
+      "claim": "Amino acid auxotrophy of immune cells forms checkpoints whereby distinct amino acid metabolizing enzymes expressed in different cell types control cell proliferation, fate, and function.",
+      "claim_type": "EXPLICIT",
+      "source": "Amino acid auxotrophy of immune cells also forms checkpoints whereby distinct amino acid metabolizing enzymes expressed in different cell types control cell proliferation, fate, and function (Murray, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background knowledge with a citation to support it.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "a4f1021b-5083-44a9-8264-2c57da94e19a",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C12",
+      "claim": "IL4i1 was discovered in a screen for IL4-regulated cDNAs in B cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Another immune-associated enzyme that metabolizes amino acids and linked to immune suppression in cancer is interleukin-4-induced-1 (IL4i1), which was discovered in a screen for IL4-regulated cDNAs in B cells (Chu and Paul, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background information with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "ebb8a218-06b4-46b8-a9b2-ace435683089",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C13",
+      "claim": "IL4i1 is secreted.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike arginases and the IDO enzymes, IL4i1 is secreted (Boulland et al., 2007), suggesting it contributes to immune regulation in the extracellular milieu.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known fact with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "ecd938f7-7371-4df6-8f76-da3c6003d723",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C14",
+      "claim": "IL4i1 is a dimeric FAD-dependent oxidoreductase with considerable similarity to L-amino acid oxidases (LAAOs) in snake venoms.",
+      "claim_type": "EXPLICIT",
+      "source": "IL4i1 is a dimeric FAD-dependent oxidoreductase with considerable similarity to L-amino acid oxidases (LAAOs) in snake venoms (Murray, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "20291f19-6669-4edd-9d90-809f54c65b9c",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C15",
+      "claim": "Mammalian IL4i1 metabolizes L-Phe and other aromatic amino acids to their keto-acid forms with coincident production of H2O2 and ammonia.",
+      "claim_type": "EXPLICIT",
+      "source": "Mammalian IL4i1 metabolizes L-Phe and other aromatic amino acids to their keto-acid forms with coincident production of H2O2 and ammonia (Boulland et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as known information with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "8a2efbd6-f290-46e3-a05b-59161bedad70",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C16",
+      "claim": "All analyzed snake venoms contain a LAAO in different proportions depending on the snake.",
+      "claim_type": "EXPLICIT",
+      "source": "However, all analyzed snake venoms contain a LAAO in different proportions depending on the snake, raising the question of the role of this enzyme in fast-acting venoms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background information based on prior research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "7178a7e4-b576-413d-ab21-4931bcb17f52",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C17",
+      "claim": "The membranes of LAAO-treated HeLa cells began to bleb after ~5 hr, and all cells were dead within 12 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "The membranes of LAAO-treated HeLa cells began to bleb after ~5 hr, and all cells were dead within 12 hr (Figure 1E,F; Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation supported by microscopy data shown in Figure 1E,F and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "d687f5d9-0798-4c50-80ec-28156251d157",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C18",
+      "claim": "The enzyme dead N. naja LAAO did not induce death of HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Following purification, the enzyme dead N. naja LAAO did not induce death of HeLa cells, suggesting that an enzymatic function of LAAOs is responsible for cell toxicity rather than binding to protein(s) associated with HeLa cells that subsequently conveyed a death signal (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "470ba7ed-0d5d-4745-bd81-46129693512c",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C19",
+      "claim": "An enzymatic function of LAAOs is responsible for cell toxicity rather than binding to protein(s) associated with HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Following purification, the enzyme dead N. naja LAAO did not induce death of HeLa cells, suggesting that an enzymatic function of LAAOs is responsible for cell toxicity rather than binding to protein(s) associated with HeLa cells that subsequently conveyed a death signal (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the experimental data comparing wild-type and enzyme-dead LAAO.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "d04743db-da0d-4e34-85b5-94fb6d2128c8",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C20",
+      "claim": "The addition of catalase protected HeLa cells from N. naja LAAO-induced death.",
+      "claim_type": "EXPLICIT",
+      "source": "We added the wild-type N. naja LAAO in combination with catalase, which decomposes H2O2. The addition of catalase protected HeLa cells from N. naja LAAO-induced death (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "cdbefb74-fb50-461e-954d-f1fb0cbf7d68",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C21",
+      "claim": "Neither equivalent concentrations of mouse nor human IL4i1 induced cell death in HeLa cells at the tested concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the cobra LAAO, neither equivalent concentrations of mouse nor human IL4i1 induced cell death in HeLa cells at the tested concentrations (Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding shown in Figure 2A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "3c7cc814-e24f-40b5-a16d-6afb66035de9",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C22",
+      "claim": "Mammalian IL4i1 required concentrations more than 30-fold higher than the N. naja LAAO to cause cytotoxicity in RS4;11 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Mammalian IL4i1 required concentrations more than 30-fold higher than the N. naja LAAO to cause cytotoxicity (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "064e800a-a3c0-461b-824a-96e06a4cc17a",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C23",
+      "claim": "N. naja LAAO generated much more H2O2 in the presence of its amino acid substrates within the analyzed time window of 5 min, indicating a higher enzymatic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, N. naja LAAO generated much more H2O2 in the presence of its amino acid substrates within the analyzed time window of 5 min, indicating a higher enzymatic activity, and also metabolized L-Leu compared to human and mouse IL4i1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from the comparative kinetic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "956b0b42-0f70-4a00-8c80-227e3ee9530b",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C24",
+      "claim": "N. naja LAAO metabolized L-Leu compared to human and mouse IL4i1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, N. naja LAAO generated much more H2O2 in the presence of its amino acid substrates within the analyzed time window of 5 min, indicating a higher enzymatic activity, and also metabolized L-Leu compared to human and mouse IL4i1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from the substrate utilization analysis shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "394f2fbe-fa26-469f-8638-6508ed8fb2c9",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C25",
+      "claim": "Human IL4i1 causes significant increases in indole-3-pyruvate (I3P), 4-hydroxy-phenylpyruvate (4HPP), phenylpyruvate (PP), 2-keto-4-methylthiobutyric acid (KMBA), and 2-oxoarginine (2OA).",
+      "claim_type": "EXPLICIT",
+      "source": "Using an untargeted metabolomics approach, we found human IL4i1 to cause significant increases in indole-3-pyruvate (I3P), 4-hydroxy-phenylpyruvate (4HPP), phenylpyruvate (PP), 2-keto-4-methylthiobutyric acid (KMBA), and 2-oxoarginine (2OA) (from L-Trp, L-Tyr, L-Phe, L-Met, and L-Arg, respectively) (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from untargeted metabolomics shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "120d35d5-5316-438b-90d3-0e65fedcc860",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C26",
+      "claim": "I3P induced the expression of a suite of mRNAs including those encoding SLC7A11, NQO1, ATF4, CYP1B1, and different members of the AKR1C family.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that PP had an almost undetectable effect on the global quality and quantity of THP-1 mRNAs. By contrast, I3P, and to a lower extent 4HPP, induced the expression of a suite of mRNAs including those encoding SLC7A11, NQO1, ATF4, CYP1B1, and different members of the AKR1C family (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from RNAseq analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "bbf77185-3bde-41da-96d2-adb38e42810f",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C27",
+      "claim": "Most of the mRNAs induced by I3P encode proteins involved in cellular stress, especially in oxidative stress response.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of these mRNAs encode proteins involved in cellular stress, especially in oxidative stress response (Figure 3D), and are regulated by the ATF4, Nrf2, and AhR pathways (Zgheib et al., 2018; Liu et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the RNAseq data with citations to support the pathway associations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "d3e315d9-e023-475d-bb59-f4de3f020325",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C28",
+      "claim": "The mRNAs induced by I3P are regulated by the ATF4, Nrf2, and AhR pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of these mRNAs encode proteins involved in cellular stress, especially in oxidative stress response (Figure 3D), and are regulated by the ATF4, Nrf2, and AhR pathways (Zgheib et al., 2018; Liu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to support the pathway associations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "c7d76998-5ccc-4f7e-9050-5c056da39a4e",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C29",
+      "claim": "I3P suppressed ferroptosis in a titratable way.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, while PP had no protective effect, we found I3P suppressed ferroptosis in a titratable way (Figure 4B,C; Figure 4\u2014figure supplement 1), which was accompanied by significantly decreased lipid peroxidation measured with C11-BODIPY (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding shown in Figure 4B,C and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "6f987872-e5ef-4b23-8a31-0b6f989dd612",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C30",
+      "claim": "I3P suppression of ferroptosis was accompanied by significantly decreased lipid peroxidation measured with C11-BODIPY.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, while PP had no protective effect, we found I3P suppressed ferroptosis in a titratable way (Figure 4B,C; Figure 4\u2014figure supplement 1), which was accompanied by significantly decreased lipid peroxidation measured with C11-BODIPY (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "2e83bf88-523d-4de5-8507-97261296363f",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C31",
+      "claim": "4HPP exhibited weaker anti-ferroptotic properties than I3P and required 24 hr pre-incubation to potently protect from RSL3-mediated cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "4HPP exhibited weaker anti-ferroptotic properties than I3P and required 24 hr pre-incubation to potently protect from RSL3-mediated cell death (Figure 4B,C; Figure 4\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding shown in Figure 4B,C and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "923b40c7-b6e9-4aa8-8113-e2fa5791501c",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C32",
+      "claim": "L-Trp failed to protect cells from ferroptosis, indicating that the conversion of L-Trp to I3P by IL4i1 is required for the protection.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to I3P, L-Trp failed to protect cells from ferroptosis, indicating that the conversion of L-Trp to I3P by IL4i1, is required for the protection (Figure 4\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding shown in Figure 4\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "4a17ea45-1c02-4ccc-9bd0-b61a4213c191",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C33",
+      "claim": "I3P was active in a concentration range starting from ~50 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, I3P was active in a concentration range starting from ~50 \u00b5M (Figure 4\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from dose-response experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "ad0e1c6f-0ed9-4cee-bcc5-754d45b124e3",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C34",
+      "claim": "I3P acts as a general, species-independent protector from ferroptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, measuring cell death using 7-AAD and Annexin-V staining via flow cytometry, we confirmed the anti-ferroptotic effect of I3P toward erastin, RSL3, an additional ferroptosis inducer termed FINO2, and the thioredoxin-reductase inhibitor ferroptocide in murine NIH3T3 (Figure 4E) and HT1080 cells (Figure 4\u2014figure supplement 2D), showing that I3P acts as a general, species-independent protector from ferroptosis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from experiments in multiple cell lines and with multiple ferroptosis inducers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "cc8b1ef5-e1c4-4201-afcf-2eb6b3450e68",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C35",
+      "claim": "Both 4HPP and I3P exhibit radical scavenging properties, with I3P having the highest scavenging potency of the tested IL4i1 metabolites.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast to PP, we found both, 4HPP and I3P to exhibit radical scavenging properties, with I3P having the highest scavenging potency of the tested IL4i1 metabolites (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from the DPPH radical scavenging assay shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "9ce5cbb7-8f4e-49cd-aec0-2b21aafe7a10",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C36",
+      "claim": "I3P retained its protective effect toward erastin-induced ferroptosis after wash-out, but showed complete loss of protection from RSL3-mediated cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, we found I3P to retain its protective effect toward erastin-induced ferroptosis, but a complete loss of protection from RSL3-mediated cell death (Figure 5D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from the wash-out experiments shown in Figure 5D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "cde5fd83-372b-4c72-9a55-3ee12fcc1db8",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C37",
+      "claim": "I3P uses at least two different modes to protect cells from ferroptosis: (i) free radical scavenging and (ii) the induction of specific protective gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that I3P uses at least two different modes to protect cells from ferroptosis: (i) free radical scavenging and (ii) the induction of specific protective gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the wash-out experiments and radical scavenging assays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "f34eb004-f76e-46cb-9ec7-ff9c2cddc57b",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C38",
+      "claim": "Protection from RSL3 mainly depends on radical scavenging.",
+      "claim_type": "EXPLICIT",
+      "source": "Protection from RSL3 mainly depends on radical scavenging, whereas the persistent protection from erastin after I3P removal, indicates the major involvement of anti-oxidative gene expression under these conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the wash-out experiment results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "c6511eab-fd8e-4978-9eb8-dde18f34ba7b",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C39",
+      "claim": "The persistent protection from erastin after I3P removal indicates the major involvement of anti-oxidative gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Protection from RSL3 mainly depends on radical scavenging, whereas the persistent protection from erastin after I3P removal, indicates the major involvement of anti-oxidative gene expression under these conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the wash-out experiment results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "df0eabe4-10d9-466c-a923-c6520acd9710",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C40",
+      "claim": "I3P treatment resulted in a significant increase in the GSH/GSSG ratio in HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Since this balance can be restored by the induction of anti-oxidative gene networks, we tested whether I3P modulates the intracellular ratio of reduced and oxidized GSH (GSH/GSSG ratio). Indeed, we observed a significant increase in the GSH/GSSG ratio in HeLa cells upon I3P treatment (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "5b4932be-8696-4580-acc3-67ea1ec15564",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C41",
+      "claim": "I3P caused an increase of SLC7A11 protein under steady state conditions in HeLa cells treated for 24 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we found an I3P-dependent increase of SLC7A11 protein under steady state conditions in HeLa cells treated for 24 hr (Figure 5G) coinciding with the transcriptional increase of SLC7A11 in THP-1 cells (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding shown in Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "c7248aed-b08d-4d67-8bfa-1838ff1c8e6e",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C42",
+      "claim": "In the presence of I3P, SLC7A11 upregulation was strongly enhanced.",
+      "claim_type": "EXPLICIT",
+      "source": "Erastin itself upregulates SLC7A11 (Dixon et al., 2014) as a compensatory mechanism to elevate intracellular cysteine. In the presence of I3P, however, SLC7A11 upregulation was strongly enhanced (Figure 5G) and also HO-1, a target gene of anti-oxidative Nrf2 signaling, was also upregulated, suggesting that I3P increases anti-oxidative gene expression under erastin-mediated redox stress.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding shown in Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "4e5d5620-2fc6-4ddb-bd1f-b6702084cea2",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C43",
+      "claim": "HO-1 was upregulated in the presence of I3P under erastin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of I3P, however, SLC7A11 upregulation was strongly enhanced (Figure 5G) and also HO-1, a target gene of anti-oxidative Nrf2 signaling, was also upregulated, suggesting that I3P increases anti-oxidative gene expression under erastin-mediated redox stress.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding shown in Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "46365ba8-6e08-4df2-8366-06d2618dad06",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C44",
+      "claim": "I3P increases anti-oxidative gene expression under erastin-mediated redox stress.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of I3P, however, SLC7A11 upregulation was strongly enhanced (Figure 5G) and also HO-1, a target gene of anti-oxidative Nrf2 signaling, was also upregulated, suggesting that I3P increases anti-oxidative gene expression under erastin-mediated redox stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data on SLC7A11 and HO-1 upregulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "bcc2a95e-149a-47a7-a991-e4f740303097",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C45",
+      "claim": "HO-1 inhibitors, ZnPP and ketoconazole, reduced the protective effect of I3P.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that HO-1 inhibitors, ZnPP and ketoconazole (Yang et al., 2018), reduced the protective effect of I3P (Figure 5\u2014figure supplement 2B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding shown in Figure 5\u2014figure supplement 2B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "0bc9ffa4-cdbe-4bea-8c2d-2247f3e60a80",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C46",
+      "claim": "Genetic perturbation via siRNA-mediated knockdown of HO-1 did not interfere with I3P-mediated ferroptosis protection.",
+      "claim_type": "EXPLICIT",
+      "source": "However, genetic perturbation via siRNA-mediated knockdown of HO-1 did not interfere with I3P-mediated ferroptosis protection (Figure 5\u2014figure supplement 2D,E), suggesting that the inhibitors are not completely specific and may target other proteins such as HO-2 or other heme-dependent enzymes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding shown in Figure 5\u2014figure supplement 2D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "50207423-8fd7-4efa-88f3-5e289b3166bc",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C47",
+      "claim": "The enzymatic activity of IL4i1 is required for the changes in gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Hierarchical clustering of significantly regulated genes showed concordance of differentially expressed genes in cells treated with I3P or medium containing the WT IL4i1 enzyme, whereas the gene expression in HeLa cells treated with medium containing the enzyme-dead mutant IL4i1 clustered with the untreated control (Figure 6A). Thus, the enzymatic activity IL4i1 is required for the changes in the gene expression and the generation of I3P seems to be one major factor for the IL4i1-mediated gene expression profile, which is likely enhanced by the additional generation of 4HPP and low levels of H2O2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the RNAseq analysis comparing WT and enzyme-dead IL4i1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "9067bf53-af8d-43e2-84cd-f05260131e82",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C48",
+      "claim": "More than 90% of the most significantly upregulated genes (adjusted p-value<10\u22129) upon I3P treatment overlapped with the most significantly upregulated genes by WT IL4i1.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, more than 90% of the most significantly upregulated genes (adjusted p-value<10\u22129) upon I3P treatment overlapped with the most significantly upregulated genes by WT IL4i1 (Figure 6B) \u2013 many of them representing target genes of Nrf2 and AhR signaling, and involved in oxidative stress protection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from the RNAseq analysis shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "7d7a43d8-c6e8-4bc0-a21d-178609a03208",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C49",
+      "claim": "WT but not K351A mutant IL4i1 conditioned medium suppressed ferroptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, whereas the mutant enzyme had no protective effect, WT IL4i1 inhibited ferroptosis in a titratable manner (Figure 6F, Figure 6\u2014figure supplement 1A), indicating that IL4i1 can create a ferroptosis-suppressive milieu due to its enzymatic activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding shown in Figure 6F and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "cf369770-a981-4764-84d7-3239f9010c85",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C50",
+      "claim": "IL4i1 can create a ferroptosis-suppressive milieu due to its enzymatic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, whereas the mutant enzyme had no protective effect, WT IL4i1 inhibited ferroptosis in a titratable manner (Figure 6F, Figure 6\u2014figure supplement 1A), indicating that IL4i1 can create a ferroptosis-suppressive milieu due to its enzymatic activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experiments with WT and enzyme-dead IL4i1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "10978801-5576-49fa-9799-a80c639a69f5",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C51",
+      "claim": "Filtration to remove IL4i1 from the conditioned medium before addition to HeLa cells resulted in upregulation of HO-1 and SLC7A11 and protection from ferroptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "To additionally confirm that these effects do not require IL4i1 to bind to any receptor, but the changes in the metabolic environment are sufficient, we used filtration to remove IL4i1 from the conditioned medium before addition to the HeLa cells, which also resulted in upregulation of HO-1 and SLC7A11 and protection from ferroptosis (Figure 6\u2014figure supplement 1B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding shown in Figure 6\u2014figure supplement 1B\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "6e535a4a-ced2-4c27-8e02-5dab02c6e5db",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C52",
+      "claim": "After IL4i1 is secreted, it generates I3P, 4HPP, and other metabolites that have an autocrine\u2013paracrine anti-ferroptotic effect.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that after IL4i1 is secreted, it generates I3P, 4HPP, and other metabolites that have an autocrine\u2013paracrine anti-ferroptotic effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the conditioned medium experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "4bf5966e-6998-40e2-b814-1bac409f988a",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C53",
+      "claim": "Snake venom LAAO quickly generates cytotoxic levels of H2O2.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, whereas snake venom LAAO quickly generates cytotoxic levels of H2O2, IL4i1 produces non-lethal amounts of H2O2 and amino acid metabolites protecting cells from oxidative ferroptotic cell death (Figure 6G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary conclusion based on the comparative experiments throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "941c1e00-5197-4339-9e90-ddd0d8101edc",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C54",
+      "claim": "IL4i1 produces non-lethal amounts of H2O2 and amino acid metabolites protecting cells from oxidative ferroptotic cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, whereas snake venom LAAO quickly generates cytotoxic levels of H2O2, IL4i1 produces non-lethal amounts of H2O2 and amino acid metabolites protecting cells from oxidative ferroptotic cell death (Figure 6G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary conclusion based on the comparative experiments throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "e2614696-9030-4525-9079-d4b8b2e9373e",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C55",
+      "claim": "IL4i1 could not prevent cells from LAAO toxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, IL4i1 could not prevent cells from LAAO toxicity (Figure 6\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding shown in Figure 6\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "92dee68c-53d3-4a91-8ce6-ed65413fe58a",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C56",
+      "claim": "The venom LAAO does not induce ferroptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In concordance with our previous observations regarding ferroptosis protection we confirmed that the venom LAAO does not induce this mode of cell death (Figure 6\u2014figure supplement 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding shown in Figure 6\u2014figure supplement 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "68da633d-a300-4854-a4ed-70df8b33a63d",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C57",
+      "claim": "IL4i1 can protect from endogenous ROS accumulation, but not from the rapid exogenous H2O2 accumulation induced by the venom protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we speculate that IL4i1 can rather protect from endogenous ROS accumulation, but not from the rapid exogenous H2O2 accumulation induced by the venom protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the experimental observations.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "7cd10067-82cb-4323-af73-57d66781383c",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C58",
+      "claim": "Snake venom LAAOs and mammalian IL4i1 diverged in their functions to kill or protect cells, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that snake venom LAAOs and mammalian IL4i1 diverged in their functions to kill or protect cells, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion of the comparative study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "1f364383-5e31-4d3a-a57f-881d7017793f",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C59",
+      "claim": "Venom LAAOs evolved to rapidly metabolize amino acids from their target, and work in concert with other cytotoxic enzymes, such as phospholipases, to increase cell permeability and death in and around the site of envenomation.",
+      "claim_type": "EXPLICIT",
+      "source": "These data are consistent with the notion that venom LAAOs evolved to rapidly metabolize amino acids from their target, and work in concert with other cytotoxic enzymes, such as phospholipases, to increase cell permeability and death in and around the site of envenomation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings in the context of venom evolution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "3375d85f-533b-4f29-a894-ad42c7d651d0",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C60",
+      "claim": "The products of the IL4i1 reaction, PP, 4HPP, and I3P induced the hierarchical activation of a gene transcriptional signature linked to networks of cell protective genes, including SLC7A11, CYP1B1, and AKR1C1.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the products of the IL4i1 reaction, PP, 4HPP, and I3P induced the hierarchical activation of a gene transcriptional signature linked to networks of cell protective genes, including SLC7A11, CYP1B1, and AKR1C1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the RNAseq findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "8e849392-1eb5-4193-87e2-2bf8da9c9dd4",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C61",
+      "claim": "The products of the IL4i1 reaction will be made at the same time and could work collectively to activate anti-ferroptotic effects in neighboring cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, IL4i1 is a secreted enzyme and therefore we expect that all the products of the reaction will be made at the same time (though their clearance and downstream metabolism may differ substantially) and could therefore work collectively to activate anti-ferroptotic effects in neighboring cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the secreted nature of IL4i1 and the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "887fbb40-fbcb-4422-99a7-70b5cb21f447",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C62",
+      "claim": "The products of the IL4i1 reaction are necessary and sufficient to block ferroptosis in neighboring cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, our media filtration experiments using media treated with IL4i1 and experiments using an enzyme-dead control, argue that the products of the IL4i1 reaction are necessary and sufficient to block ferroptosis in neighboring cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the filtration and enzyme-dead control experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "ae80641f-7534-4105-bac8-69fe2c178002",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C63",
+      "claim": "I3P has previously been detected in plasma at ~80 \u00b5M and was speculated to be derived from microbiome tryptophan metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "We also note that I3P has previously been detected in plasma at ~80 \u00b5M and was speculated to be derived from microbiome tryptophan metabolism (Dodd et al., 2017) and that related microbiota-derived tryptophan metabolites are associated with radio-protection (Guo et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background information with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "a46e8545-aa5c-4085-98db-96af1e6db43f",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C64",
+      "claim": "Related microbiota-derived tryptophan metabolites are associated with radio-protection.",
+      "claim_type": "EXPLICIT",
+      "source": "We also note that I3P has previously been detected in plasma at ~80 \u00b5M and was speculated to be derived from microbiome tryptophan metabolism (Dodd et al., 2017) and that related microbiota-derived tryptophan metabolites are associated with radio-protection (Guo et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background information with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "2e0e5cb9-f932-4bb6-9ba9-902cd2c98da4",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C65",
+      "claim": "One plausible way to account for the pro-tumor effects of IL4i1 is that local IL4i1 production in the tumor microenvironment increases the available I3P (and 4HPP) concentrations, protecting tumor cells from ferroptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the microbiome and IL4i1 activate anti-ferroptosis pathways via I3P and potentially other indoles, one plausible way to account for the pro-tumor effects of IL4i1 and the pathway we discovered herein, is that local IL4i1 production in the tumor microenvironment increases the available I3P (and 4HPP) concentrations, protecting tumor cells from ferroptosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation connecting the findings to the known pro-tumor effects of IL4i1.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "eed2c136-ae7b-4099-b1cb-632f47dd4ef3",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C66",
+      "claim": "An inhibitor of IL4i1 may be a useful anti-cancer drug, as it may sensitize cancer cells to ferroptotic death by blocking IL4i1-mediated amino acid metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we speculate that an inhibitor of IL4i1 may be a useful anti-cancer drug, as it may sensitize cancer cells to ferroptotic death by blocking IL4i1-mediated amino acid metabolism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a therapeutic speculation based on the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "7a875f24-f02f-4564-9840-6272ddd7b25b",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C67",
+      "claim": "N. naja LAAO is glycosylated in its secreted form.",
+      "claim_type": "IMPLICIT",
+      "source": "Following purification and testing the glycosylation status (Figure 1C,D), we added different amounts of the N. naja LAAO to HeLa cells",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The glycosylation status was tested as shown in Figure 1D, which shows a shift in molecular weight after PNGaseF treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "5855d8da-457b-4656-bc57-ebfe8f2b04de",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C68",
+      "claim": "The enzyme-dead N. naja LAAO was devoid of LAAO activity using L-Phe as a substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Like the wild-type N. naja LAAO, the mutant version was secreted and glycosylated as expected (Figure 1D) but was devoid of LAAO activity using L-Phe as a substrate (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding shown in Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "597ff5d2-6f91-41b3-aad9-639e5a0d0274",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C69",
+      "claim": "H2O2 is responsible for mammalian cell death induced by N. naja LAAO.",
+      "claim_type": "EXPLICIT",
+      "source": "All LAAOs and IL4i1 are predicted to produce H2O2 as a product of their oxidoreductase activity on amino acids (Figure 1A). Therefore, we next asked if H2O2 was responsible for mammalian cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the catalase protection experiment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "577e5dd4-842b-443b-8922-c1bc25ce21f4",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C70",
+      "claim": "Blood concentrations of L-Trp and L-Tyr are ~70 and ~90 \u00b5M, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering blood concentrations of L-Trp and L-Tyr (~70 and ~90 \u00b5M, respectively) (Geisler et al., 2015), I3P was detected at ~80 \u00b5M (Dodd et al., 2017), and that IL4i1 is a secreted protein and active in the extracellular milieu, the protective concentrations of I3P and 4HPP are within a range to operate on neighboring cells, especially in limited perfusion cellular environments such as lymph nodes where numerous IL4i1-positive cells reside.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background information with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "ff12eb8f-cd31-407a-a3c5-45d36c916dbe",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C71",
+      "claim": "The protective concentrations of I3P and 4HPP are within a range to operate on neighboring cells, especially in limited perfusion cellular environments such as lymph nodes where numerous IL4i1-positive cells reside.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering blood concentrations of L-Trp and L-Tyr (~70 and ~90 \u00b5M, respectively) (Geisler et al., 2015), I3P was detected at ~80 \u00b5M (Dodd et al., 2017), and that IL4i1 is a secreted protein and active in the extracellular milieu, the protective concentrations of I3P and 4HPP are within a range to operate on neighboring cells, especially in limited perfusion cellular environments such as lymph nodes where numerous IL4i1-positive cells reside.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation connecting the experimental concentrations to physiological relevance.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "2109c943-6f8d-4ab3-83e0-850cb4092970",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C72",
+      "claim": "I3P has fluorescent properties that can be monitored using flow cytometry.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we took advantage of the fluorescent properties of I3P to monitor its presence in the cells using flow cytometry (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "ad8130a1-a9ea-4a55-99db-f366152bade1",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C73",
+      "claim": "Four hours after I3P removal, the cells reached fluorescence levels similar to control cells, indicating the deprivation of intracellular I3P.",
+      "claim_type": "EXPLICIT",
+      "source": "Four hours after I3P removal, the cells reached fluorescence levels similar to control cells, indicating the deprivation of intracellular I3P.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from the wash-out experiment shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "b12fb0e6-1917-4e68-be37-678fdc92a175",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C74",
+      "claim": "Erastin upregulates SLC7A11 as a compensatory mechanism to elevate intracellular cysteine.",
+      "claim_type": "EXPLICIT",
+      "source": "Erastin itself upregulates SLC7A11 (Dixon et al., 2014) as a compensatory mechanism to elevate intracellular cysteine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as known information with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "6a3278e8-3afa-4f02-8a97-55c76335c1b9",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C75",
+      "claim": "4HPP upregulated SLC7A11 and HO-1 in the presence of erastin.",
+      "claim_type": "EXPLICIT",
+      "source": "In line, we also found 4HPP upregulated SLC7A11 and HO-1 in the presence of erastin (Figure 5\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding shown in Figure 5\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "455fa5f0-58f9-4964-863c-8704d700f17b",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C76",
+      "claim": "HO-1 was reported to have both detrimental and protective functions in ferroptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "HO-1 was reported to have both detrimental and protective functions in ferroptosis (Kwon et al., 2015; Chiang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background information with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "c5b24a91-725a-4286-9d03-b1cc9319b09d",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C77",
+      "claim": "I3P and WT IL4i1 conditioned medium show concordance of differentially expressed genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Hierarchical clustering of significantly regulated genes showed concordance of differentially expressed genes in cells treated with I3P or medium containing the WT IL4i1 enzyme, whereas the gene expression in HeLa cells treated with medium containing the enzyme-dead mutant IL4i1 clustered with the untreated control (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from RNAseq analysis shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "f68891d8-fc39-4603-84c7-c7002db80576",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C78",
+      "claim": "Many of the overlapping genes upregulated by I3P and WT IL4i1 are associated with Nrf2 and AhR signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, more than 90% of the most significantly upregulated genes (adjusted p-value<10\u22129) upon I3P treatment overlapped with the most significantly upregulated genes by WT IL4i1 (Figure 6B) \u2013 many of them representing target genes of Nrf2 and AhR signaling, and involved in oxidative stress protection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the RNAseq data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "0331db45-2273-4818-a80d-498b9c5995cf",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C79",
+      "claim": "WT IL4i1 conditioned medium caused a dose dependent increase in I3P uptake by cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, monitoring I3P fluorescence via flow cytometry, we detected a dose dependent increase in the AmCyan fluorescence in cells treated with WT IL4i1-conditioned medium, but not in cells treated with the enzyme-dead mutant, confirming that IL4i1-generated I3P was taken up by the cells (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "f2adbb5d-3472-42ac-bd9c-2acb4df77baf",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C80",
+      "claim": "WT IL4i1 conditioned medium caused a dose-dependent increase in HO-1 and SLC7A11.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with our previous findings, we observed this to be linked to a dose-dependent increase in HO-1 and SLC7A11 (Figure 6D), which was absent when using the control medium or the K351A mutant enzyme (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding shown in Figure 6D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "b9d1262d-b08f-4948-a953-aa8da6657631",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C81",
+      "claim": "The protective effect of IL4i1 was retained in medium containing human plasma concentrations of amino acids and glucose.",
+      "claim_type": "EXPLICIT",
+      "source": "Since amino acid concentrations in cell culture medium do not reflect the physiological levels, we verified that the protective effect of IL4i1 was also retained in medium containing human plasma concentrations of amino acids and glucose as described by Leney-Greene et al., 2020; Figure 6\u2014figure supplement 1E.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding shown in Figure 6\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "9712841d-78ab-4547-a5c5-001f39147968",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C82",
+      "claim": "The venom LAAO does not induce ferroptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In concordance with our previous observations regarding ferroptosis protection we confirmed that the venom LAAO does not induce this mode of cell death (Figure 6\u2014figure supplement 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding shown in Figure 6\u2014figure supplement 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "e188f2a9-6961-49cd-a93f-bf58fa239366",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "claim_id": "C83",
+      "claim": "PP had no protective effect against ferroptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, while PP had no protective effect, we found I3P suppressed ferroptosis in a titratable way (Figure 4B,C; Figure 4\u2014figure supplement 1), which was accompanied by significantly decreased lipid peroxidation measured with C11-BODIPY (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding shown in Figure 4B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "bb810f22-57a2-479c-b85a-1a40ba38d50f",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Snake venom LAAO (N. naja) kills mammalian cells via H2O2 generation. The enzyme induces cell death within 12 hours, which is dependent on enzymatic activity (enzyme-dead mutant does not kill cells) and is blocked by catalase, demonstrating that H2O2 is the cytotoxic agent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C17-C20, C53, C67-C69 provide converging experimental evidence showing that N. naja LAAO kills cells through H2O2 generation. The use of enzyme-dead mutants (C18, C68) and catalase protection (C20) provides strong mechanistic support. The data in Figures 1E-H directly support these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "d3b62987-67f9-4c75-97e8-b18e84f9cf98",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Mammalian IL4i1 is non-cytotoxic at physiologically relevant concentrations compared to snake venom LAAO. IL4i1 requires >30-fold higher concentrations than N. naja LAAO to induce cytotoxicity and generates much less H2O2 within the same timeframe.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C21-C24, C54 are supported by comparative experiments shown in Figures 2A-E. The dose-response data (C22) and kinetic analysis (C23) provide quantitative evidence for the differential cytotoxicity and enzymatic activity between mammalian IL4i1 and snake LAAO.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "3f9cafc1-6bb1-480c-a75c-d9d6f87e4fa0",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "IL4i1 generates multiple amino acid metabolites including I3P, 4HPP, PP, KMBA, and 2OA from aromatic and other amino acids. These metabolites induce a hierarchical activation of cell protective gene expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25 and C60 are supported by untargeted metabolomics data (Figure 2F) and RNAseq analysis (Figure 3). The metabolite identification is quantitative and statistically significant, providing strong evidence for IL4i1's enzymatic products.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "f978843a-0989-47be-972e-ba8038930eac",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "I3P induces expression of stress-protective genes including SLC7A11, NQO1, ATF4, CYP1B1, and AKR1C family members. These genes are involved in oxidative stress response and are regulated by ATF4, Nrf2, and AhR pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28, C60 are supported by RNAseq data in Figure 3 showing differential gene expression. The pathway associations are supported by GO term analysis and literature citations. The hierarchical response (I3P > 4HPP > PP) is clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "8ca139e8-ca7f-44eb-a14e-66ff97ea3b5f",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "I3P suppresses ferroptosis in a dose-dependent manner starting at ~50 \u00b5M, accompanied by decreased lipid peroxidation. This protection is general across multiple cell lines and ferroptosis inducers. The conversion of L-Trp to I3P is required for protection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C29-C34, C83 are supported by extensive ferroptosis assays across multiple cell lines (HeLa, HT1080, NIH3T3) and multiple inducers (erastin, RSL3, FINO2, ferroptocide) shown in Figures 4 and supplementary figures. The dose-response data (C33) and requirement for I3P conversion (C32) strengthen the mechanistic conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "28c42cc1-7cff-4854-962d-dc61c8267d95",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "I3P suppresses ferroptosis through two distinct mechanisms: (i) direct free radical scavenging and (ii) induction of protective gene expression. Protection from RSL3 depends mainly on radical scavenging, while protection from erastin involves sustained gene expression changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C35-C39 are supported by DPPH radical scavenging assays (Figure 5A) and wash-out experiments (Figures 5B-E) that elegantly distinguish between direct and indirect mechanisms. The differential effects on erastin vs RSL3 protection after I3P removal provide strong mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "d389da98-3a03-4a6c-95c8-a69b41b25ec6",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "I3P activates an anti-oxidative gene expression program that increases GSH/GSSG ratio and upregulates SLC7A11 and HO-1 protein levels, particularly under erastin-mediated redox stress.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C40-C44, C75 are supported by GSH/GSSG measurements (Figure 5F) and western blot analysis (Figure 5G, supplementary figures). The enhanced upregulation of SLC7A11 and HO-1 in the presence of I3P during erastin treatment provides strong evidence for the anti-oxidative mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "3fed4a87-a1e2-4fd3-a00c-f92b9383bba3",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "HO-1 inhibitors (ZnPP and ketoconazole) reduced I3P's protective effect, but siRNA-mediated HO-1 knockdown did not interfere with I3P-mediated ferroptosis protection, suggesting the inhibitors may lack specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C45-C46 present contradictory results between pharmacological inhibition and genetic knockdown. While the data are clearly presented (Figure 5\u2014figure supplement 2B-E), the discrepancy raises questions about the role of HO-1 and the specificity of the inhibitors. This requires further investigation to resolve.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "457a9df0-ab1a-44b1-9433-bd22b32fad1e",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "IL4i1's enzymatic activity is required for gene expression changes and ferroptosis protection. WT IL4i1 conditioned medium, but not enzyme-dead mutant, induces protective gene expression and suppresses ferroptosis. The metabolites generated are necessary and sufficient for protection, as demonstrated by filtration experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C52, C62, C77-C80 are supported by comprehensive experiments comparing WT and enzyme-dead IL4i1 (Figures 6A-F and supplementary figures). The RNAseq concordance between I3P and WT IL4i1 (>90% overlap, C48), filtration experiments (C51), and dose-dependent effects (C49, C79, C80) provide strong evidence for the enzymatic mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "df0201ad-b5b2-440f-9a70-e9e6e4205547",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "IL4i1's protective effect is retained in medium containing human plasma concentrations of amino acids and glucose, suggesting physiological relevance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C81 is supported by experimental data in Figure 6\u2014figure supplement 1E. This control experiment addresses a potential concern about the physiological relevance of the findings and strengthens the translational implications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "5e2f3ef7-8740-4111-b7a2-81c5270e2203",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "IL4i1 cannot protect cells from LAAO toxicity, and venom LAAO does not induce ferroptosis. IL4i1 likely protects from endogenous ROS accumulation but not from rapid exogenous H2O2 accumulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57, C82 are supported by experimental data in Figure 6\u2014figure supplement 1F-G. These negative results help define the boundaries of IL4i1's protective mechanism and distinguish between different modes of oxidative stress.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "f9316ff5-103e-4662-a151-87860e650128",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Snake venom LAAOs and mammalian IL4i1 diverged in their functions to kill or protect cells, respectively. Venom LAAOs evolved to rapidly metabolize amino acids and work with other cytotoxic enzymes to increase cell death at envenomation sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 represent the overarching conclusion of the comparative study. These are well-supported by the cumulative experimental evidence showing differential enzymatic activity, substrate range, H2O2 generation, and cellular effects between LAAO and IL4i1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "f424bdef-acc6-455b-af1f-1fac2cbcda0a",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The pro-tumor effects of IL4i1 are likely mediated by local anti-ferroptotic pathways via aromatic amino acid metabolism. An IL4i1 inhibitor may be useful as an anti-cancer drug by sensitizing cancer cells to ferroptotic death.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C8, C65-C66 are speculative therapeutic implications based on the experimental findings. While the anti-ferroptotic mechanism is well-established, the connection to pro-tumor effects is inferential and lacks direct experimental validation in tumor models. The therapeutic speculation (C66) requires substantial additional work including in vivo studies and demonstration of IL4i1 inhibitor efficacy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "cbea0f1e-f262-45a2-b890-27364c50d6b6",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "I3P has been detected in plasma at ~80 \u00b5M (potentially from microbiome metabolism), and related tryptophan metabolites are associated with radio-protection. The protective concentrations of I3P and 4HPP are within physiologically relevant ranges.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C64, C70-C71 are supported by literature citations and provide important context for the physiological relevance of the findings. The comparison of experimental concentrations (~50 \u00b5M active range) with reported plasma levels (~80 \u00b5M) strengthens the translational significance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "81cdec31-541e-4a62-930c-be6e9e709221",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "I3P has fluorescent properties that can be monitored by flow cytometry. Four hours after I3P removal, intracellular fluorescence returns to control levels, indicating I3P deprivation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C73 are supported by fluorescence spectroscopy and flow cytometry data (Figure 5\u2014figure supplement 1, Figure 5B). This methodological finding enabled the wash-out experiments that distinguished between direct and indirect mechanisms of ferroptosis protection.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "d522f633-c956-4ceb-96c7-ab5eef788df2",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background information on IL4i1 and LAAOs: IL4i1 is a secreted amino acid oxidase from immune cells with homology to snake venom LAAOs. It metabolizes aromatic amino acids to keto-acids with H2O2 production. Immune cells depend on amino acid availability, and amino acid-metabolizing enzymes form regulatory checkpoints.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C10-C16 provide background context supported by literature citations. These establish the rationale for the comparative study and are well-documented in prior literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    },
+    {
+      "id": "5d7a0fad-b9d7-4ab7-9bfa-c6e1d9a04e50",
+      "content_id": "b01414d4-5a59-4cfc-b456-3e73a3f19ef1",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background information: Erastin upregulates SLC7A11 as a compensatory mechanism. HO-1 has been reported to have both detrimental and protective functions in ferroptosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74 and C76 are background information supported by literature citations. These provide context for interpreting the experimental results on SLC7A11 and HO-1.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:40:50.716513Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "20ad367c-e031-4e0e-9b14-7d6685d500e1",
+      "result_id": "bb810f22-57a2-479c-b85a-1a40ba38d50f"
+    },
+    {
+      "claim_id": "7178a7e4-b576-413d-ab21-4931bcb17f52",
+      "result_id": "bb810f22-57a2-479c-b85a-1a40ba38d50f"
+    },
+    {
+      "claim_id": "d687f5d9-0798-4c50-80ec-28156251d157",
+      "result_id": "bb810f22-57a2-479c-b85a-1a40ba38d50f"
+    },
+    {
+      "claim_id": "470ba7ed-0d5d-4745-bd81-46129693512c",
+      "result_id": "bb810f22-57a2-479c-b85a-1a40ba38d50f"
+    },
+    {
+      "claim_id": "d04743db-da0d-4e34-85b5-94fb6d2128c8",
+      "result_id": "bb810f22-57a2-479c-b85a-1a40ba38d50f"
+    },
+    {
+      "claim_id": "4bf5966e-6998-40e2-b814-1bac409f988a",
+      "result_id": "bb810f22-57a2-479c-b85a-1a40ba38d50f"
+    },
+    {
+      "claim_id": "7a875f24-f02f-4564-9840-6272ddd7b25b",
+      "result_id": "bb810f22-57a2-479c-b85a-1a40ba38d50f"
+    },
+    {
+      "claim_id": "5855d8da-457b-4656-bc57-ebfe8f2b04de",
+      "result_id": "bb810f22-57a2-479c-b85a-1a40ba38d50f"
+    },
+    {
+      "claim_id": "597ff5d2-6f91-41b3-aad9-639e5a0d0274",
+      "result_id": "bb810f22-57a2-479c-b85a-1a40ba38d50f"
+    },
+    {
+      "claim_id": "f5c41b84-9d23-4967-b3ab-e86c7146cfe2",
+      "result_id": "d3b62987-67f9-4c75-97e8-b18e84f9cf98"
+    },
+    {
+      "claim_id": "cdbefb74-fb50-461e-954d-f1fb0cbf7d68",
+      "result_id": "d3b62987-67f9-4c75-97e8-b18e84f9cf98"
+    },
+    {
+      "claim_id": "3c7cc814-e24f-40b5-a16d-6afb66035de9",
+      "result_id": "d3b62987-67f9-4c75-97e8-b18e84f9cf98"
+    },
+    {
+      "claim_id": "064e800a-a3c0-461b-824a-96e06a4cc17a",
+      "result_id": "d3b62987-67f9-4c75-97e8-b18e84f9cf98"
+    },
+    {
+      "claim_id": "956b0b42-0f70-4a00-8c80-227e3ee9530b",
+      "result_id": "d3b62987-67f9-4c75-97e8-b18e84f9cf98"
+    },
+    {
+      "claim_id": "941c1e00-5197-4339-9e90-ddd0d8101edc",
+      "result_id": "d3b62987-67f9-4c75-97e8-b18e84f9cf98"
+    },
+    {
+      "claim_id": "394f2fbe-fa26-469f-8638-6508ed8fb2c9",
+      "result_id": "3f9cafc1-6bb1-480c-a75c-d9d6f87e4fa0"
+    },
+    {
+      "claim_id": "3375d85f-533b-4f29-a894-ad42c7d651d0",
+      "result_id": "3f9cafc1-6bb1-480c-a75c-d9d6f87e4fa0"
+    },
+    {
+      "claim_id": "120d35d5-5316-438b-90d3-0e65fedcc860",
+      "result_id": "f978843a-0989-47be-972e-ba8038930eac"
+    },
+    {
+      "claim_id": "bbf77185-3bde-41da-96d2-adb38e42810f",
+      "result_id": "f978843a-0989-47be-972e-ba8038930eac"
+    },
+    {
+      "claim_id": "d3e315d9-e023-475d-bb59-f4de3f020325",
+      "result_id": "f978843a-0989-47be-972e-ba8038930eac"
+    },
+    {
+      "claim_id": "3375d85f-533b-4f29-a894-ad42c7d651d0",
+      "result_id": "f978843a-0989-47be-972e-ba8038930eac"
+    },
+    {
+      "claim_id": "600f4009-accf-4f54-88b6-4894ae3d0b4e",
+      "result_id": "8ca139e8-ca7f-44eb-a14e-66ff97ea3b5f"
+    },
+    {
+      "claim_id": "c7d76998-5ccc-4f7e-9050-5c056da39a4e",
+      "result_id": "8ca139e8-ca7f-44eb-a14e-66ff97ea3b5f"
+    },
+    {
+      "claim_id": "6f987872-e5ef-4b23-8a31-0b6f989dd612",
+      "result_id": "8ca139e8-ca7f-44eb-a14e-66ff97ea3b5f"
+    },
+    {
+      "claim_id": "2e83bf88-523d-4de5-8507-97261296363f",
+      "result_id": "8ca139e8-ca7f-44eb-a14e-66ff97ea3b5f"
+    },
+    {
+      "claim_id": "923b40c7-b6e9-4aa8-8113-e2fa5791501c",
+      "result_id": "8ca139e8-ca7f-44eb-a14e-66ff97ea3b5f"
+    },
+    {
+      "claim_id": "4a17ea45-1c02-4ccc-9bd0-b61a4213c191",
+      "result_id": "8ca139e8-ca7f-44eb-a14e-66ff97ea3b5f"
+    },
+    {
+      "claim_id": "ad0e1c6f-0ed9-4cee-bcc5-754d45b124e3",
+      "result_id": "8ca139e8-ca7f-44eb-a14e-66ff97ea3b5f"
+    },
+    {
+      "claim_id": "e188f2a9-6961-49cd-a93f-bf58fa239366",
+      "result_id": "8ca139e8-ca7f-44eb-a14e-66ff97ea3b5f"
+    },
+    {
+      "claim_id": "968f2bea-68e9-4adc-a822-11d86ced569c",
+      "result_id": "28c42cc1-7cff-4854-962d-dc61c8267d95"
+    },
+    {
+      "claim_id": "cc8b1ef5-e1c4-4201-afcf-2eb6b3450e68",
+      "result_id": "28c42cc1-7cff-4854-962d-dc61c8267d95"
+    },
+    {
+      "claim_id": "9ce5cbb7-8f4e-49cd-aec0-2b21aafe7a10",
+      "result_id": "28c42cc1-7cff-4854-962d-dc61c8267d95"
+    },
+    {
+      "claim_id": "cde5fd83-372b-4c72-9a55-3ee12fcc1db8",
+      "result_id": "28c42cc1-7cff-4854-962d-dc61c8267d95"
+    },
+    {
+      "claim_id": "f34eb004-f76e-46cb-9ec7-ff9c2cddc57b",
+      "result_id": "28c42cc1-7cff-4854-962d-dc61c8267d95"
+    },
+    {
+      "claim_id": "c6511eab-fd8e-4978-9eb8-dde18f34ba7b",
+      "result_id": "28c42cc1-7cff-4854-962d-dc61c8267d95"
+    },
+    {
+      "claim_id": "8ca7e350-11f9-4f17-9353-8d544516863c",
+      "result_id": "d389da98-3a03-4a6c-95c8-a69b41b25ec6"
+    },
+    {
+      "claim_id": "df0eabe4-10d9-466c-a923-c6520acd9710",
+      "result_id": "d389da98-3a03-4a6c-95c8-a69b41b25ec6"
+    },
+    {
+      "claim_id": "5b4932be-8696-4580-acc3-67ea1ec15564",
+      "result_id": "d389da98-3a03-4a6c-95c8-a69b41b25ec6"
+    },
+    {
+      "claim_id": "c7248aed-b08d-4d67-8bfa-1838ff1c8e6e",
+      "result_id": "d389da98-3a03-4a6c-95c8-a69b41b25ec6"
+    },
+    {
+      "claim_id": "4e5d5620-2fc6-4ddb-bd1f-b6702084cea2",
+      "result_id": "d389da98-3a03-4a6c-95c8-a69b41b25ec6"
+    },
+    {
+      "claim_id": "46365ba8-6e08-4df2-8366-06d2618dad06",
+      "result_id": "d389da98-3a03-4a6c-95c8-a69b41b25ec6"
+    },
+    {
+      "claim_id": "6a3278e8-3afa-4f02-8a97-55c76335c1b9",
+      "result_id": "d389da98-3a03-4a6c-95c8-a69b41b25ec6"
+    },
+    {
+      "claim_id": "bcc2a95e-149a-47a7-a991-e4f740303097",
+      "result_id": "3fed4a87-a1e2-4fd3-a00c-f92b9383bba3"
+    },
+    {
+      "claim_id": "0bc9ffa4-cdbe-4bea-8c2d-2247f3e60a80",
+      "result_id": "3fed4a87-a1e2-4fd3-a00c-f92b9383bba3"
+    },
+    {
+      "claim_id": "50207423-8fd7-4efa-88f3-5e289b3166bc",
+      "result_id": "457a9df0-ab1a-44b1-9433-bd22b32fad1e"
+    },
+    {
+      "claim_id": "9067bf53-af8d-43e2-84cd-f05260131e82",
+      "result_id": "457a9df0-ab1a-44b1-9433-bd22b32fad1e"
+    },
+    {
+      "claim_id": "7d7a43d8-c6e8-4bc0-a21d-178609a03208",
+      "result_id": "457a9df0-ab1a-44b1-9433-bd22b32fad1e"
+    },
+    {
+      "claim_id": "cf369770-a981-4764-84d7-3239f9010c85",
+      "result_id": "457a9df0-ab1a-44b1-9433-bd22b32fad1e"
+    },
+    {
+      "claim_id": "10978801-5576-49fa-9799-a80c639a69f5",
+      "result_id": "457a9df0-ab1a-44b1-9433-bd22b32fad1e"
+    },
+    {
+      "claim_id": "6e535a4a-ced2-4c27-8e02-5dab02c6e5db",
+      "result_id": "457a9df0-ab1a-44b1-9433-bd22b32fad1e"
+    },
+    {
+      "claim_id": "887fbb40-fbcb-4422-99a7-70b5cb21f447",
+      "result_id": "457a9df0-ab1a-44b1-9433-bd22b32fad1e"
+    },
+    {
+      "claim_id": "c5b24a91-725a-4286-9d03-b1cc9319b09d",
+      "result_id": "457a9df0-ab1a-44b1-9433-bd22b32fad1e"
+    },
+    {
+      "claim_id": "f68891d8-fc39-4603-84c7-c7002db80576",
+      "result_id": "457a9df0-ab1a-44b1-9433-bd22b32fad1e"
+    },
+    {
+      "claim_id": "0331db45-2273-4818-a80d-498b9c5995cf",
+      "result_id": "457a9df0-ab1a-44b1-9433-bd22b32fad1e"
+    },
+    {
+      "claim_id": "f2adbb5d-3472-42ac-bd9c-2acb4df77baf",
+      "result_id": "457a9df0-ab1a-44b1-9433-bd22b32fad1e"
+    },
+    {
+      "claim_id": "b9d1262d-b08f-4948-a953-aa8da6657631",
+      "result_id": "df0201ad-b5b2-440f-9a70-e9e6e4205547"
+    },
+    {
+      "claim_id": "e2614696-9030-4525-9079-d4b8b2e9373e",
+      "result_id": "5e2f3ef7-8740-4111-b7a2-81c5270e2203"
+    },
+    {
+      "claim_id": "92dee68c-53d3-4a91-8ce6-ed65413fe58a",
+      "result_id": "5e2f3ef7-8740-4111-b7a2-81c5270e2203"
+    },
+    {
+      "claim_id": "68da633d-a300-4854-a4ed-70df8b33a63d",
+      "result_id": "5e2f3ef7-8740-4111-b7a2-81c5270e2203"
+    },
+    {
+      "claim_id": "9712841d-78ab-4547-a5c5-001f39147968",
+      "result_id": "5e2f3ef7-8740-4111-b7a2-81c5270e2203"
+    },
+    {
+      "claim_id": "7cd10067-82cb-4323-af73-57d66781383c",
+      "result_id": "f9316ff5-103e-4662-a151-87860e650128"
+    },
+    {
+      "claim_id": "1f364383-5e31-4d3a-a57f-881d7017793f",
+      "result_id": "f9316ff5-103e-4662-a151-87860e650128"
+    },
+    {
+      "claim_id": "7d89edf7-b350-408a-aea0-c7eaab6e37b9",
+      "result_id": "f424bdef-acc6-455b-af1f-1fac2cbcda0a"
+    },
+    {
+      "claim_id": "2e0e5cb9-f932-4bb6-9ba9-902cd2c98da4",
+      "result_id": "f424bdef-acc6-455b-af1f-1fac2cbcda0a"
+    },
+    {
+      "claim_id": "eed2c136-ae7b-4099-b1cb-632f47dd4ef3",
+      "result_id": "f424bdef-acc6-455b-af1f-1fac2cbcda0a"
+    },
+    {
+      "claim_id": "ae80641f-7534-4105-bac8-69fe2c178002",
+      "result_id": "cbea0f1e-f262-45a2-b890-27364c50d6b6"
+    },
+    {
+      "claim_id": "a46e8545-aa5c-4085-98db-96af1e6db43f",
+      "result_id": "cbea0f1e-f262-45a2-b890-27364c50d6b6"
+    },
+    {
+      "claim_id": "577e5dd4-842b-443b-8922-c1bc25ce21f4",
+      "result_id": "cbea0f1e-f262-45a2-b890-27364c50d6b6"
+    },
+    {
+      "claim_id": "ff12eb8f-cd31-407a-a3c5-45d36c916dbe",
+      "result_id": "cbea0f1e-f262-45a2-b890-27364c50d6b6"
+    },
+    {
+      "claim_id": "2109c943-6f8d-4ab3-83e0-850cb4092970",
+      "result_id": "81cdec31-541e-4a62-930c-be6e9e709221"
+    },
+    {
+      "claim_id": "ad8130a1-a9ea-4a55-99db-f366152bade1",
+      "result_id": "81cdec31-541e-4a62-930c-be6e9e709221"
+    },
+    {
+      "claim_id": "b44bd30b-2fae-4f57-8638-dc0a55dd3709",
+      "result_id": "d522f633-c956-4ceb-96c7-ab5eef788df2"
+    },
+    {
+      "claim_id": "af00f471-84b0-428e-8872-ac700cb3f6cd",
+      "result_id": "d522f633-c956-4ceb-96c7-ab5eef788df2"
+    },
+    {
+      "claim_id": "742917f1-4904-4784-bd80-b5027b1a96b5",
+      "result_id": "d522f633-c956-4ceb-96c7-ab5eef788df2"
+    },
+    {
+      "claim_id": "4329851a-458f-4ea9-9a80-68878e3e088e",
+      "result_id": "d522f633-c956-4ceb-96c7-ab5eef788df2"
+    },
+    {
+      "claim_id": "a4f1021b-5083-44a9-8264-2c57da94e19a",
+      "result_id": "d522f633-c956-4ceb-96c7-ab5eef788df2"
+    },
+    {
+      "claim_id": "ebb8a218-06b4-46b8-a9b2-ace435683089",
+      "result_id": "d522f633-c956-4ceb-96c7-ab5eef788df2"
+    },
+    {
+      "claim_id": "ecd938f7-7371-4df6-8f76-da3c6003d723",
+      "result_id": "d522f633-c956-4ceb-96c7-ab5eef788df2"
+    },
+    {
+      "claim_id": "20291f19-6669-4edd-9d90-809f54c65b9c",
+      "result_id": "d522f633-c956-4ceb-96c7-ab5eef788df2"
+    },
+    {
+      "claim_id": "8a2efbd6-f290-46e3-a05b-59161bedad70",
+      "result_id": "d522f633-c956-4ceb-96c7-ab5eef788df2"
+    },
+    {
+      "claim_id": "b12fb0e6-1917-4e68-be37-678fdc92a175",
+      "result_id": "5d7a0fad-b9d7-4ab7-9bfa-c6e1d9a04e50"
+    },
+    {
+      "claim_id": "455fa5f0-58f9-4964-863c-8704d700f17b",
+      "result_id": "5d7a0fad-b9d7-4ab7-9bfa-c6e1d9a04e50"
+    }
+  ],
+  "comparisons": []
+}

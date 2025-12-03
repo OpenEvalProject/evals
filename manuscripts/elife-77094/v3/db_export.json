@@ -1,0 +1,1938 @@
+{
+  "submission": {
+    "id": "6c6108c0-ee90-4931-9ae5-aa86e6fee20a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T14:34:03.475941Z",
+    "updated_at": "2025-12-03T14:34:03.475941Z"
+  },
+  "content": [
+    {
+      "id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "submission_id": "6c6108c0-ee90-4931-9ae5-aa86e6fee20a",
+      "content_type": "manuscript",
+      "content_text": "# XAB2 dynamics during DNA damage-dependent transcription inhibition\n\n## Authors\n\n- Lise-Marie Donnio<sup>1</sup> ([ORCID: 0000-0002-2414-6034](https://orcid.org/0000-0002-2414-6034))\n- Elena Cerutti<sup>1</sup> ([ORCID: 0000-0002-4644-4817](https://orcid.org/0000-0002-4644-4817))\n- Charlene Magnani<sup>1</sup>\n- Damien Neuillet<sup>1</sup>\n- Pierre-Olivier Mari<sup>1</sup>\n- Giuseppina Giglia-Mari<sup>1</sup> ([ORCID: 0000-0003-2001-1965](https://orcid.org/0000-0003-2001-1965)) \u2020\n\n### Affiliations\n\n1. Institut NeuroMyog\u00e8ne (INMG), CNRS UMR 5310, INSERM U1217, Universit\u00e9 Claude Bernard Lyon 1 Lyon France ([ROR:0322sf130](https://ror.org/0322sf130))\n\n\u2020 Corresponding author\n\n## Abstract\n\nXeroderma Pigmentosum group A-binding protein 2 (XAB2) is a multifunctional protein playing a critical role in distinct cellular processes including transcription, splicing, DNA repair, and messenger RNA export. In this study, we demonstrate that XAB2 is involved specifically and exclusively in Transcription-Coupled Nucleotide Excision Repair (TC-NER) reactions and solely for RNA polymerase 2 (RNAP2)-transcribed genes. Surprisingly, contrary to all the other NER proteins studied so far, XAB2 does not accumulate on the local UV-C damage; on the contrary, it becomes more mobile after damage induction. XAB2 mobility is restored when DNA repair reactions are completed. By scrutinizing from which cellular complex/partner/structure XAB2 is released, we have identified that XAB2 is detached after DNA damage induction from DNA:RNA hybrids, commonly known as R-loops, and from the CSA and XPG proteins. This release contributes to the DNA damage recognition step during TC-NER, as in the absence of XAB2, RNAP2 is blocked longer on UV lesions. Moreover, we also demonstrate that XAB2 has a role in retaining RNAP2 on its substrate without any DNA damage.\n\n## Introduction\n\nThe DNA molecule in our cells\u2019 nucleus forms the instruction manual for proper cellular functioning. Unfortunately, the integrity of our DNA is continuously challenged by a variety of endogenous and exogenous agents (e.g., ultraviolet light [UV], cigarette smoke, environmental pollution, oxidative damage, etc.). These DNA lesions interfere with DNA replication, transcription, and cell cycle progression, leading to mutations and cell death, which may cause cancer, inherited diseases, or aging (Chatterjee and Walker, 2017).\n\nTo prevent the deleterious consequences of persisting DNA lesions, all organisms are equipped with a network of efficient DNA repair systems. One of these systems is the Nucleotide Excision Repair (NER) which removes helix-distorting DNA adducts caused by UV such as Cyclo-Pyrimidine Dimers (CPDs) and 6-4 Photoproducts (6-4PPs) (Giglia-Mari et al., 2011).\n\nIn mammals, the different steps of NER require more than 30 different proteins that are recruited sequentially to the DNA damage site, as demonstrated by the different studies of NER proteins kinetics (Mon\u00e9 et al., 2004; Politi et al., 2005; Rademakers et al., 2003; van den Boom et al., 2004; Zotter et al., 2006). The first step of NER consists of damage recognition, followed by the opening of the DNA duplex, dual incisions on both sides of the damage, excision of 24\u201332 oligonucleotides containing the damage and, finally, gap-filling by repair DNA synthesis.\n\nNER is divided into two subpathways depending on DNA lesions position within the genome. The Global Genome repair (GG-NER) will detect and repair lesions throughout the genome, whereas Transcription-Coupled repair (TC-NER) is associated with RNA polymerase 2 (RNAP2) to repair lesions on the transcribed strand of active genes (Marteijn et al., 2014).\n\nThe NER system has been linked to rare human diseases, classically grouped into three distinct NER-related syndromes. These include the highly cancer-prone disorder Xeroderma Pigmentosum (XP) and the two progeroid diseases: Cockayne Syndrome (CS) and Trichothiodystrophy (TTD). Importantly, CS and TTD patients are not cancer prone but present severe neurological and developmental features (Hanawalt, 1994).\n\nXeroderma Pigmentosum group A (XPA)-binding protein 2 (XAB2) is a highly conserved protein of 100 kDa and consists of 15 tetratricopeptide repeat (TPR) motifs that carry out protein\u2013protein interactions. XAB2 protein was identified as a protein interacting with XPA, a NER factor, using a yeast two-hybrid system (Nakatsu et al., 2000). Next, it has been shown that XAB2 interacts also with the TC-NER-specific factors, CSA and CSB, and the elongating form of RNAP2 (Nakatsu et al., 2000). XAB2 is also essential for early mouse embryogenesis, as demonstrated by the preimplantation lethality observed in XAB2 knockout mice (Yonemasu et al., 2005).\n\nDownregulation of XAB2, using either anti-XAB2 or siRNA, inhibits normal RNA synthesis and the recovery of RNA synthesis after UV irradiation (Kuraoka et al., 2008; Nakatsu et al., 2000). Furthermore, injection of anti-XAB2 in GG-NER-deficient cells significantly reduces UV-induced Unscheduled DNA Synthesis (UDS) during repair (Nakatsu et al., 2000). These results suggest the involvement of XAB2 in transcription and TC-NER.\n\nFurther studies have shown that XAB2 is a component of the Prp19/XAB2 complex (Aquarius [AQR], XAB2, Prp19, CCDC16, hISY1, and PPIE) or Prp19/CDC5L-related complex required for pre-mRNA splicing (Kuraoka et al., 2008). XAB2, as well as PRP19 and AQR, has been involved in the DNA damage response (DDR) (Mar\u00e9chal et al., 2014; Onyango et al., 2016; Sakasai et al., 2017). Indeed, XAB2 is essential for homologous recombination (HR) by promoting the end resection step (Onyango et al., 2016). PRP19 is a sensor of RPA-ssDNA after DNA damage (Mar\u00e9chal et al., 2014) and AQR contributes to the maintenance of genomic stability via regulation of HR (Sakasai et al., 2017).\n\nInterestingly, AQR has a role in removing R-loops, a three-stranded nucleic acids structure composed of a DNA:RNA hybrid and the associated nontemplate single-stranded DNA (Sollier et al., 2014). These structures can form during transcription, when an RNA molecule emerging from the transcription machinery hybridizes with its DNA template. They are found abundantly in human gene promoters and terminators where RNA processing occurs (Wang et al., 2018).\n\nDespite the knowledge acquired in the last decades on XAB2 and its different cellular roles, little is known about the exact crosstalk and dynamics between its diverse cellular functions, specifically between DNA repair transcription and splicing. In this work, we describe the molecular dynamics of XAB2 within the cell after UV-damage induction and during the TC-NER repair process. We determined in vivo that, in the absence of XAB2, Transcription-Coupled repair reactions are impaired, consequently, restart of transcription after UV damage is abolished. Surprisingly, unlike all the other NER proteins studied so far, the mobility of XAB2 is increased after irradiation, and XAB2 shows no accumulation on local UV lesions. This changing dynamic is not restored until DNA repair is completed. Indeed, in damaged TC-NER-deficient cells, XAB2 remains more mobile. Interestingly, we demonstrate that, after DNA damage induction, XAB2 is not released from the splicing complex but is detached from R-loops, a recently XAB2 identified substrate (Goulielmaki et al., 2021). Additionally, we investigate the relation between XAB2 and RNAP2, demonstrating that XAB2 retains RNAP2 on its substrate. Moreover, in the absence of XAB2, RNAP2 interacts strongly and durably with both types of UV lesions (6-4PPs and CPDs), suggesting a role of XAB2 in the DNA damage recognition step of TC-NER.\n\n## Results\n\n### XAB2 is involved in TC-NER process\n\nTwo decades ago, Tanaka\u2019s research group demonstrated the involvement of XAB2 in the NER pathway (Kuraoka et al., 2008; Nakatsu et al., 2000). However, the dynamics of XAB2 during the DNA repair process remained to be elucidated. We aimed to study the shuttling between its different functions when DNA damage is induced. Firstly, we wanted to verify that XAB2 is exclusively involved in TC-NER reactions.\n\nThe well-known standard assay used to quantify NER activity is the UDS, which measures replication activity outside the S-phase after ultraviolet light (UV-C) treatment. This technique quantifies the refilling of the single-strand DNA gap by the DNA replicative machinery. When we performed an Unschelduled DNA synthesis (UDS) assay in XAB2-silenced cells, no decreased level of UDS was observed (as well as in mock-treated cells; Figure 1A blue and black columns, Figure 1B and Figure 1\u2014figure supplement 1). As a positive control, when we silenced the excision repair factor XPF, we observed a strong reduction in UDS level (Figure 1A, red column, Figure 1B, and Figure 1\u2014figure supplement 1 ). This result shows that XAB2 is not involved in the GG-NER subpathway, but does not exclude an involvement of XAB2 in the TC-NER subpathway.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig1-v3.jpg)\n\n**Figure 1.:** (A) Quantification of Unscheduled DNA Synthesis (UDS) assay determined by EdU incorporation after local damage (LD) induction with UV-C (100 J/m2) in WT cells (MRC5 cells) treated with siRNAs against indicated factors. Error bars represent the standard error of the mean (SEM) obtained from at least 30 LDs. (B) Western blot on whole-cell extracts of MRC5 cells treated with siRNA against indicated factors. (C) Quantification of RNA Recovery Synthesis (RRS) assay determined by EU incorporation after UV-C (10 J/m2) exposure in WT cells treated with siRNAs against indicated factors. Error bars represent the SEM obtained from at least 50 cells. (D) Quantification of TCR-UDS assay determined by EdU incorporation after LD induction with UV-C (100 J/m2) in GG-NER-deficient cells (XPC\u2212/\u2212 cells) treated with siRNAs against indicated factors. Error bars represent the SEM obtained from at least 15 LDs. For all graphs, p-value of Student\u2019s test compared to siMock condition: ***<0.001.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Representative images of UDS from Figure 1A for each condition. The position of the local damage is visualized by \u03b3H2AX labeling (in red). Scale bar: 3 \u00b5m.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Representative images of RRS from Figure 1C for each condition. Scale bar: 15 \u00b5m. (B) Quantification of RNA synthesis determined by 1 or 2 hr of EU incorporation without UV-C treatment in MRC5 cells transfected or not with siXAB2. (C) Quantification of RNA synthesis determined by 2 hr of EU incorporation without UV-C treatment in MRC5 cells transfected or not with siXPF. Error bars represent the standard error of the mean (SEM) obtained from at least 50 cells. P-value of Student\u2019s test compared to siMock condition: ***<0.001.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Representative images of TCR-UDS from Figure 1D for each condition. White arrows show the position of the local damage as visualized by \u03b3H2AX labeling. Nuclei are delimited by dashed lines. Scale bar: 3 \u00b5m.\n\nThe commonly used assay measuring TC-NER activity is the RNA Recovery Synthesis (RRS). This assay measures the newly transcribed RNA by incorporating a nucleoside analog coupled to a fluorophore. The experiment is conducted at different time points after UV irradiation (0, 3, 16, and 24 hr) in order to quantify the decline in transcriptional activity (3 hr after UV damage) and the restart of transcriptional activity (16\u201324 hr after UV irradiation). In XAB2-silenced cells, no restart of transcription after UV damage was observed (Figure 1C, blue column and Figure 1\u2014figure supplement 2A), as well as in siXPF-treated cells due to the inability to repair DNA lesions (Figure 1C, red column and Figure 2\u2014figure supplement 2A) and in contrast with siMock-treated cells (Figure 1C, black column and Figure 1\u2014figure supplement 2A). In XAB2-silenced cells and in the absence of DNA damage, we observed a decreased level of nascent RNA synthesis when the nucleoside analog EU was incubated for 1 hr, accordingly to the result of Tanaka\u2019s group (Figure 1\u2014figure supplement 2B; Kuraoka et al., 2008; Nakatsu et al., 2000). However, when EU is incubated for 2 hr (time point used for RRS assay) we observed an increase of nascent RNA in XAB2-silenced cells compared to control cells (Figure 1\u2014figure supplement 2B). As expected, silencing XPF protein does not affect basal transcription (Figure 1\u2014figure supplement 2C). RRS results demonstrated an involvement of XAB2 in the TC-NER subpathway but did not discriminate between a role in the repair reaction per se or in the Restart of Transcription after Repair (Mourgues et al., 2013).\n\nIn order to discriminate this point, we performed an assay designed previously in our group that precisely measures repair replication during TC-NER: the TCR-UDS assay (Mourgues et al., 2013). For this assay, we performed the UDS assay in GG-NER-deficient cells using XPC (Xeroderma Pigmentosum complementation group C) mutant cells (XP4PA-SV). The cells were transfected with specific siRNAs and then locally irradiated with UV-C through a filter. In order to precisely localize DNA-damaged areas, a \u03b3H2AX coimmunofluorescence labeling was performed, and repair replication was quantified. In siXPF-treated XPC-negative cells, both the GG-NER and the TC-NER pathways are compromised and, as expected, low TCR-UDS levels were observed compared to siMock-treated cells (Figure 1D, red and black columns and Figure 1\u2014figure supplement 3). Silencing of XAB2 results in a decrease in TCR-UDS levels (Figure 1D, blue column and Figure 1\u2014figure supplement 3). This result demonstrates a role of XAB2 in the repair reaction itself, its silencing preventing the DNA synthesis associated with the excision of UV lesions on actively transcribed genes.\n\nNext, we decided to investigate by PLA (Proximity Ligation Assay) whether XAB2 can interact with 6-4PPs and CPDs lesion, helix-distorting DNA adducts caused by UV. We observed a strong interaction between XAB2 and 6-4PPs 1 hr after 10 J/m\u00b2 irradiation (Figure 2A, C). This interaction correlates with the amount of 6-4PPs and, as expected, decreases during repair (Figure 2B, C), while XAB2 concentration does not change after irradiation (Figure 2B, C). The same result is obtained in PLA experiment between XAB2 and CPDs (Figure 2\u2014figure supplement 1). These results demonstrate that XAB2 interacts directly with or is in the proximity of 6-4PP and CPD lesions until their removal.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig2-v3.jpg)\n\n**Figure 2.:** Quantification of fluorescent signal in the nucleus against the couple XAB2_6-4PP from Proximity Ligation Assay (PLA) experiment (A) or from the immunofluorescence (IF) done in parallel to PLA assay with the same antibodies dilutions (B). Error bars represent the standard error of the mean (SEM) obtained from at least 80 cells. P-value of Student\u2019s test compared to No UV condition: ***<0.001. (C) Representative images of the PLA and IF experiments. Nuclei are delimited by dashed lines. Scale bar: 15 \u00b5m.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Quantification of fluorescent signal in the nucleus against the couple XAB2_CPD from PLA experiment (A) or from the IF done in parallel to PLA assay with the same antibodies dilutions (B). Error bars represent the standard error of the mean (SEM obtained from at least 70 cells). P-value of Student\u2019s test compared to No UV condition: ***<0.001. (C) Representative images of the PLA and IF experiment. Nuclei are delimited by dashed lines. Scale bar: 15 \u00b5m.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Schematic representation of ribosomal DNA (rDNA) unit and localization of the 47S pre-rRNA probe. (B) Quantification of RNA-FISH (Fluorescence in situ hybridization) assay showing the 47S pre-rRNA level after UV-C (16 J/m2) exposure in WT cells treated with siRNAs against indicated factors. Error bars represent the standard error of the mean (SEM) obtained from at least 30 cells. P-value of Student\u2019s test compared to No UV condition: ***<0.001. (C) Western blot on whole-cell extracts of MRC5 cells treated with siRNA against indicated factors. (D) Representative images of RNA-FISH 47S (in red) from the graph B of this figure for each condition. Nuclei and nucleoli are delimited by dashed and dotted lines, respectively. Scale bar: 3 \u00b5m.\n\nRecently, we demonstrate that a fully functional NER mechanism is necessary for the repair of ribosomal DNA (rDNA), genes transcribed by the RNA polymerase 1 (RNAP1) (Daniel et al., 2018). To investigate the involvement of XAB2 in the repair of ribosomal genes, the level of RNAP1 transcription was measured at different time points after UV irradiation by using a specific ribosomal RNA probe coupled to a fluorophore, as described previously (Daniel et al., 2018). This probe recognizes the 5\u2032 end of the rDNA transcript, the 47S pre-rRNA (upstream from the first site cleaved rapidly during rRNA processing) (a sketch of the 47S is depicted in Figure 2\u2014figure supplement 2A). In siMock-treated cells, we observed a decrease of 47S levels 3 hr after UV-C exposure and the restart of RNAP1 transcription 40 hr after irradiation (Figure 2\u2014figure supplement 2B, black column and Figure 2\u2014figure supplement 2D). siCSB-treated cells, deficient for TC-NER, presented a low level of rRNA synthesis even 40 hr after UV-C exposure (Figure 2\u2014figure supplement 2B, violet column, Figure 2\u2014figure supplement 2C,D). In the absence of XAB2, 40 hr after irradiation, the level of 47S returns to the level of non-irradiated condition, supporting a restart of RNAP1 transcription (Figure 2\u2014figure supplement 2B, blue column and Figure 2\u2014figure supplement 2D).\n\nAll these results demonstrate that XAB2 has a function in TC-NER repair reactions specifically and exclusively for RNAP2-transcribed genes.\n\n### XAB2-splicing complex is released from the DNA damage area\n\nXAB2 is included in a splicing complex composed of five other proteins: Aquarius (AQR), PRP19, CCDC16, PPIE, and ISY1 (Kuraoka et al., 2008). In order to explore how the XAB2-splicing complex behaves after local damage induction, the localization of XAB2, AQR, PRP19, and CCDC16 was revealed by immunofluorescence assays at different time points after local UV irradiation of the cells. In this assay, the fluorescence signal from each protein in the damaged area (visualized by a costaining of \u03b3H2AX) was compared to the signal from the rest of the nucleus. Unexpectedly, in contrast with all other NER proteins studied so far, we observed a relatively rapid (1 hr after UV irradiation) release of XAB2, AQR, PRP19, and CCDC16 from the damaged area (Figure 3A, B). The proper localization of the XAB2-splicing complex is re-established after the completion of DNA repair reactions when the transcription is fully restarted (16 hr after irradiation; Figure 3B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig3-v3.jpg)\n\n**Figure 3.:** (A) Representative confocal images of immunofluorescence (IF) against XAB2, AQR, PRP19, or CCDC16 (green) and \u03b3H2AX (red) 1 hr after local damage (LD) induction with UV-C (60 J/m2). LDs are indicated by dashed lines. Scale bar: 3 \u00b5m. (B) Quantification of the IF signal of the different splicing proteins on the LD after different times of recovery. (C) Quantification of XAB2 signal on LD in different cell lines after different times of recovery. For both graphs, the signal from the local damage has been subtracted from the background of each cell. Error bars represent the standard error of the mean (SEM) obtained from at least 20 cells.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Quantification of UDS determined by EdU incorporation after LD induction with UV-C (100 J/m2) in WT cells (MRC5 cells) treated with siRNAs against indicated factors. Error bars represent the standard error of the mean (SEM) obtained from at least 15 LDs. P-value of Student\u2019s test compared to siMock condition: ***<0.001. (B) Representative images of UDS for each condition. The position of the local damage is visualized by \u03b3H2AX labeling (in red). Nuclei are delimited by dashed lines. Scale bar: 5 \u00b5m. (C) Western blot on whole-cell extracts of cells treated with siRNA against indicated factors.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Quantification of TCR-UDS determined by EdU incorporation after local damage induction with UV-C (100 J/m2) in GG-NER-deficient cells (XPC\u2212/\u2212 cells) treated with siRNAs against indicated factors. Error bars represent the standard error of the mean (SEM) obtained from at least 15 LDs. P-value of Student\u2019s test compared to siMock condition: ***<0.001. (B) Representative images of TCR-UDS for each condition. The position of the LD is visualized by \u03b3H2AX labeling (in red). Nuclei are delimited by dashed lines. Scale bar: 5 \u00b5m.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig3-figsupp3-v3.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) RRS determined by EU incorporation after UV-C (10 J/m2) exposure in MRC5 cells treated with siRNAs against indicated factors. Error bars represent the standard error of the mean (SEM) obtained from at least 50 cells. P-value of Student\u2019s test compared to siMock condition: ***<0.001. (B) Representative images of RRS for each condition. Nuclei are delimited by dashed lines. Scale bar: 15 \u00b5m.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig3-figsupp4-v3.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Representative confocal images of IF against XAB2 (green) and \u03b3H2AX (red) after local damage induction with UV-C (60 J/m2) in different cell lines. LDs are indicated by dotted lines.\n\nWe thus verified if the entire XAB2-splicing complex was involved in TC-NER or whether only XAB2 played a role in this process. In order to measure the repair capacity of cells silenced for XAB2-related proteins, we performed UDS, TCR-UDS, and RRS experiments in AQR/PRP19/CCDC16/PPIE/ISY1-siRNAs treated cells (Figure 3\u2014figure supplements 1\u20133) and compared the results with XPF-siRNAs treated cell lines. Our results clearly show that none of the cells silenced for XAB2-related proteins are deficient in DNA Repair. Moreover, both GG-NER (Figure 3\u2014figure supplement 1) and TC-NER (Figure 3\u2014figure supplements 2 and 3) are proficient in the absence of AQR, PRP19, CCDC16, PPIE, or ISY1.\n\nIn order to investigate whether XAB2 release from damaged areas was dependent on the TC-NER reaction, the localization of XAB2 was detected and quantified within locally damaged areas in TC-NER-deficient cells: CSA (CS3BE) and CSB (CS1AN) mutant cells. Interestingly, the absence of CSA and CSB did not hinder the release of XAB2 from locally damaged areas. However, this release persisted 16 hr after UV-C exposure (Figure 3C blue and red curves compared to black curve and Figure 3\u2014figure supplement 4), suggesting that the re-establishment of the proper localization of XAB2 within the nucleus after the DNA repair process depends either on the repair process per se or on the restart of transcription after the achievement of DNA repair reactions.\n\n### XAB2 dynamic during TC-NER\n\nTo further analyze XAB2 mobility within the nuclei, we performed SPOT-FRAP (fluorescent recovery after photobleaching) experiments. In this technique, fluorescence molecules are photobleached in a small spot by a high-intensity laser pulse. Subsequently, fluorescence recovery within the bleached area is monitored over time (Figure 4\u2014figure supplement 1A). When cells are untreated, the measure of fluorescence recovery corresponds to the protein intrinsic mobility within the living cells (Figure 4\u2014figure supplement 1A, black curve). After perturbation of the nuclear environment (e.g., DNA damage), a protein can physically interacts with a new substrate or a slower complex, becoming less mobile (Figure 4\u2014figure supplement 1A, green curve) or on the contrary can be released from its substrate, becoming more mobile (Figure 4\u2014figure supplement 1A, blue curve). Eventually, the protein can also have an unchanged mobility (Figure 4\u2014figure supplement 1A, red curve).\n\nWe stably transfected a vector expressing a fluorescent version of XAB2 (XAB2-GFP, Figure 4\u2014figure supplement 1B) in different SV40-immortalized human fibroblast: wild-type cells (MRC5, Figure 4\u2014figure supplement 1C), CSA-deficient cells (CS3BE) and CSB-deficient cells (CS1AN). In order to determine the minimum dose of UV-C needed to detect a significant difference in XAB2 mobility, MRC5 XAB2-GFP cells were irradiated with doses of UV-C ranging from 2 to 16 J/m\u00b2 and SPOT-FRAP experiments were performed at different time points following UV irradiation (Figure 4A). Interestingly, we observed a dose-dependent increase in mobility of XAB2 (Figure 4A). Doses of UV-C as weak as 2 and 4 J/m\u00b2 induced a moderate increase in mobility 3 hr post-irradiation and a recovery of the basal XAB2 mobility within 16 hr post-irradiation (Figure 4A, blue and yellow bars). High UV-C doses (16 J/m\u00b2) induced a rapid increase in XAB2 mobility (1 hr post-irradiation) and a recovery of the intrinsic mobility 24 hr post-irradiation (Figure 4A, red bar). At intermediate doses of 8 J/m\u00b2 of UV-C, we observed a significant increase in XAB2 mobility during repair (3 hr after UV-C exposure) and the following return to the normal condition once the repair is completed and transcription restarted (16 hr after irradiation) (Figure 4A, green bar). Interestingly, in CSA and CSB mutant cells, the increase in XAB2 mobility is also observed after 8 J/m\u00b2 irradiation and lasted until 24 hr after UV-C exposure (Figure 4B), witnessing the fact that in these cells, DNA damage is not repaired and therefore initial intrinsic XAB2 mobility is not restored. Interestingly, without damage, XAB2 mobility is reduced in TC-NER-deficient cells compared to wild-type cells for still unknown reasons (Figure 4B, black histogram).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig4-v3.jpg)\n\n**Figure 4.:** (A) Fluorescent recovery after photobleaching (FRAP) analysis of XAB2-GFP mobility in WT cells. Cells were treated or not with different doses of UV-C (2\u201316 J/m2) and XAB2 mobility was measured at different time points after UV-C exposure. The No UV condition was used to calculate the change in bound fraction. (B) FRAP analysis of XAB2-GFP expressed in WT cells (MRC5-SV) and TC-NER-deficient cells (CSA \u2212/\u2212 and CSB\u2212/\u2212). Cells were treated or not with 8 J/m2 of UV-C. The No UV condition of the WT cell lines was used to calculate the change in bound fraction. (C) FRAP analysis of XAB2-GFP mobility in WT cells after treatment with 100 \u00b5g/ml of DRB for 2 hr (red line) or with 10 J/m2 of UV-C for 3 hr (blue line) or nothing (dark curve). Inhibitor of ATR pathway was added at 10 \u00b5M in the medium 1 hr before irradiation (green line). For all graphs, error bars represent the standard error of the mean (SEM) obtained from at least 10 cells.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Schematic representation of FRAP experiment and the calculation method used to represent FRAP data in Figure 4A,B and in the graph D of this figure. (B) Schematic representation of the XAB2-GFP construct. (C) Western blot on whole-cell extracts of MRC5 cells transfected with the XAB2-GFP plasmid. (D) FRAP analysis of XAB2-GFP mobility in MRC5 cells. FRAP experiment was performed 3 hr after irradiation with 10 J/m2 of UV-C. Inhibitor of ATM pathway was added at 10 \u00b5M in the medium 1 hr before irradiation. The untreated condition was used to calculate the change in bound fraction. Error bars represent the standard error of the mean (SEM) obtained from at least 10 cells.\n\nThe results of these experiments directed us to explore the possibility that the change in XAB2 mobility was due to transcription inhibition and not really to the repair process itself. In order to verify this hypothesis, XAB2 mobility was measured after DRB (transcription inhibitor) treatment. Surprisingly, results show that XAB2 increased mobility in transcription inhibition conditions is very similar to the one measured upon UV treatment (Figure 4C, red curve compared to blue curve).\n\nAs for XAB2, the mobility of the late-stage spliceosomes changes after UV irradiation. This mobilization depends on DDR signaling pathways (Tresini et al., 2015). Key mediators of DDR are the ATM and ATR kinases, which induce cell cycle arrest and facilitate DNA repair. To demonstrate that the change in XAB2 mobility is due (or not) to the UV-damage response, we realized the same FRAP assays in the presence of ATR and ATM inhibitors. Both drugs did not modify the increase of XAB2 mobility after UV irradiation (Figure 4C, green curve and Figure 4\u2014figure supplement 1D) demonstrating that variations in XAB2 mobility after DNA damage are triggered and sustained by transcriptional inhibition.\n\n### XAB2 is not released from the splicing complex during DNA repair reactions\n\nThe increase of XAB2 mobility after UV-induced transcription inhibition could be explained by either the release of XAB2 from a bigger complex and/or the release from an immobile (or nearly immobile) substrate such as the chromatin or a DNA-related substrate.\n\nIn order to distinguish between these two possibilities, we firstly investigated whether, after DNA damage induction, XAB2 dissociates from its splicing partner AQR by immunoprecipitating XAB2 and AQR (Figure 5\u2014figure supplement 1A). Interestingly, XAB2 was immunoprecipitated more strongly and consistently 1 hr post-irradiation, time that corresponds to the XAB2 mobility increase. At the same time point, more AQR is also immunoprecipitated. No clear release of XAB2 from AQR was observed at different time points.\n\nIn parallel, we also verified by PLA whether the binding of XAB2 to AQR was modified after UV-C irradiation (Figure 5\u2014figure supplement 1B). Two hours after UV-C exposure, instead of a release of XAB2 from AQR, we measured a more robust interaction (Figure 5\u2014figure supplement 1B). However, this stronger interaction could result from increased AQR concentration 1 hr after UV irradiation (Figure 5\u2014figure supplement 1C).\n\nIn conclusion, immunoprecipitation or PLA experiment showed that XAB2 is not released from the splicing complex during DNA repair reactions.\n\n### XAB2 is released from R-loops during DNA repair reactions\n\nInterestingly, while trying to immunoprecipitate XAB2 interacting partners during DNA repair reactions, we could observe that systematically and consistently, more XAB2 immunoprecipitated from nuclear extracts 1\u20133 hr after UV-C irradiation in WT cells (Figure 5\u2014figure supplement 1A and Figure 5A). At 16 hr post-irradiation, we observed that the amount of XAB2 immunoprecipitated was comparable to the level observed in non-irradiated cells. Moreover, in CSA\u2212/\u2212 and CSB\u2212/\u2212 cell lines, in which UV lesions on transcribed strands of genes are not repaired, the amount of XAB2 immunoprecipitated remained high all along the time course of the experiment (3 and 16 hr) (Figure 5A). These results hinted that the binding between XAB2 and its substrate is not restored in TCR-deficient cells.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig5-v3.jpg)\n\n**Figure 5.:** (A) Immunoprecipitation (IF) of XAB2 in nuclear extract from different cell lines treated with 10 J/m2 of UV-C at different times. Bound proteins were revealed by Western blotting with antibodies against XAB2. INPUT, 10% of the lysate used for IP reaction. (B) IP of R-loops in non-crosslinked chromatin extract from WT cells treated or not with Benzonase. XAB2 bounds to R-loops was revealed by Western blotting. INPUT, 10% of the lysate used for IP reaction. (C) Quantification of IF against R-loops in WT cells treated with siRNAs against indicated factors. Quantification of fluorescent signal in the nucleus against the couple XAB2_R-loops or AQR_R-loops from PLA experiments (D) or from the IF done in parallel to PLA assays (E). Error bars represent the standard error of the mean (SEM) obtained from at least 50 cells. P-value of Student\u2019s test compared to No UV or siMock condition: **<0.01; ***<0.001.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Immunoprecipitation of XAB2 in MRC5 nuclear extract treated with 10 J/m2 of UV-C at different times. Bound proteins were revealed by Western blotting with antibodies against XAB2 and AQR. INPUT, 10% of the lysate used for IP reaction. (B-C) Quantification of fluorescent signal in the nucleus against the couple XAB2_AQR from PLA experiment (B) and from the IF (C) done in parallel to PLA assay with the same antibodies dilution. Error bars represent the standard error of the mean (SEM) obtained from at least 100 cells. P-value of Student\u2019s test compared to No UV condition: **<0.01; ***<0.001.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig5-figsupp2-v3.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Immunofluorescence using S9.6 antibody with or without cytostripping before fixation step. (B) Quantification method of DNA:RNA hybrid signal inside the nucleus without the nucleolar signal. First, the background outside the nucleus is removed. Then, the area of the nucleus is determined thanks to the DAPI (4',6-diamidino-2-phenylindole) and the signal inside the entire nucleus is calculated. Next, the signal in nucleoli was also determined. Finally, we subtract the signal obtained in nucleoli from the signal obtained in the entire nucleus. Scale bar: 3 \u00b5m.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig5-figsupp3-v3.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (A) Representative images of Figure 5C,IF against R-loops in WT cells treated with siRNAs against indicated factors. Nuclei are delimited by dashed lines. Scale bar: 15 \u00b5m. (B) Representative images of Figure 5D, E showing the PLA (red dots) between R-loops (S9.6 rabbit antibodies) and XAB2 (mice antibodies) in MRC5 cells after UV-C treatment (10 J/m2) and the IF done in parallel with the same antibodies dilutions. Nuclei are delimited by dashed lines. Scale bar: 15 \u00b5m.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig5-figsupp4-v3.jpg)\n\n**Figure 5\u2014figure supplement 4.:** (A) Quantification of PLA and IF signal against R-loops and RNA. After fixation, permeabilization and then blocking, cells were treated or not with RNAseH for 2 hr. RNA was detected by incorporating an uridine analog followed by a click-it reaction to add a Biotin tag which can then be recognized by a specific antibody. (B) Representative images of (A). Nuclei are delimited by dashed lines. Scale bar: 15 \u00b5m. (C, E) Quantification of PLA and IF signal against R-loops and AQR (C) or R-loops and XAB2 (E). Samples were treated or not with RNAseH. (D, F) Representative images of (C) and (E). Nuclei are delimited by dashed lines. Scale bar: 15 \u00b5m. P-value of Student\u2019s test compared to without RNAseH condition: ***<0.001.\n\n![Figure 5\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig5-figsupp5-v3.jpg)\n\n**Figure 5\u2014figure supplement 5.:** (A, B) Quantification of fluorescent signal in the nucleus against the couple XAB2-RNA from PLA experiment (A) or from the IF done in parallel to PLA assay. (B) RNA was detected by incorporating an uridine analog followed by a click-it reaction to add a Biotin tag which can then be recognized by a specific antibody. P-value of Student\u2019s test compared to No UV condition: ***<0.001. (C) Representative images of (A) and (B). Nuclei are delimited by dashed lines. Scale bar: 15 \u00b5m.\n\nAQR has a role in removing DNA:RNA hybrids, commonly known as R-loops structure (Sollier et al., 2014) and recently XAB2 was found to be involved in the R-loops resolution (Goulielmaki et al., 2021). We thus decided to investigate the possible interaction between XAB2 and R-loops. Immunoprecipitation experiments with the S9.6 antibody show that XAB2 directly interacts with R-loops (Figure 5B). To test the specificity of the R-loops antibody, nuclear extracts were treated with Benzonase, an enzyme that specifically degrades DNA:RNA hybrids. Interestingly, after Benzonase treatment, XAB2 is no more immunoprecipitated (Figure 5B), suggesting that XAB2 substrate is indeed DNA:RNA hybrids.\n\nThe interaction between XAB2 and R-loops was next investigated by performing IF and PLA experiments with the S9.6 antibody. It has been demonstrated that the S9.6 signal is prominently cytoplasmic and nucleolar and derives mainly from ribosomal RNA (Smolka et al., 2021). Consequently, to increase the specificity of the S9.6 fluorescent signal, the cytoplasm was removed before fixation (Figure 5\u2014figure supplement 2A) and during quantification, the nucleolar signal was subtracted from the nuclear signal (Figure 5\u2014figure supplement 2B). Using this analysis method, we observed an increased amount of R-loops in cells silenced for XAB2 or AQR compared to control cells (Figure 5C and Figure 5\u2014figure supplement 3A).\n\nSubsequently, we examined whether XAB2 is released from R-loops after DNA damage induction by performing a PLA assay. After UV irradiation, we measured a strong and consistent reduction of more than 40% of the interactions between R-loops and XAB2 and between R-loops and AQR (Figure 5D and Figure 5\u2014figure supplement 3B). These reduced interactions are not caused by a reduction in either R-loops, XAB2, or AQR concentration during DNA repair (Figure 5E and Figure 5\u2014figure supplement 3B). To verify that this result is specific for R-loops and not coming from a nonspecific interaction of XAB2 with RNAs, we performed the same assays (PLA and IF) in the presence of RNAseH which specifically degrades R-loops structures and not single-stranded RNA (Figure 5\u2014figure supplement 4A, B). Our results show that RNAseH reduced the quantity of R-loops (Figure 5\u2014figure supplement 4C,F) and in doing so, it also decreased the interaction with both XAB2 (Figure 5\u2014figure supplement 4C, D) and AQR (Figure 5\u2014figure supplement 4E, F). Next, we verified whether the increase in XAB2 mobility observed after UV irradiation is due to a decreased interaction with messenger RNA (mRNA) (Figure 5\u2014figure supplement 5). PLA results show that a reduction in the interaction between XAB2 and mRNA was observed (Figure 5\u2014figure supplement 5A, C). However, this reduction paralleled the decrease of mRNA caused by UV-dependent transcription inhibition (Figure 5\u2014figure supplement 5B, C), suggesting that the results observed in the PLA XAB2-mRNAs are due mainly to a decrease in mRNAs amount (Figure 5\u2014figure supplement 5A).\n\nThese results clearly demonstrate that XAB2 is released from R-loops during DNA repair reactions.\n\n### XAB2 is released from CSA and XPG during DNA repair\n\nBecause XAB2 has been found to participate specifically in TCR-NER repair reactions (Figure 1C), we wanted to investigate whether part of the increased XAB2 mobility observed after UV induction was due to a release from repair complexes. We measured, by PLA, the interactions between XAB2 and CSA, CSB, XPB, or XPG proteins, during TC-NER. Among all the proteins tested, we could observe a clear and consistent release from the CSA protein 2 hr after UV irradiation (Figure 6A) and from the XPG protein 1 hr after UV irradiation (Figure 6C). The corresponding IF did not show a decreased quantity of CSA or XPG (Figure 6B, D) which validated the specificity of the XAB2-CSA and XAB2-XPG decreased interactions at those time points. On the contrary, no clear reduction of interaction was observed between XAB2 and CSB (Figure 6\u2014figure supplement 1A, B) or between XAB2 and XPB (Figure 6\u2014figure supplement 1C, D).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig6-v3.jpg)\n\n**Figure 6.:** Quantification of fluorescent signal in the nucleus against the couple XAB2-CSA (A, B) and XAB2-XPG (C, D) from PLA experiment (A, C) or from the IF done in parallel to PLA assay (B, D). Error bars represent the standard error of the mean (SEM) obtained from at least 80 cells. P-value of Student\u2019s test compared to No UV condition: *<0.05; **<0.01; ***<0.001.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Quantification of fluorescent signal in the nucleus against the couple XAB2-CSB (A, B) and XAB2-XPB (C, D) from PLA experiment (A, C) or from the IF done in parallel to PLA assay (B, D). Error bars represent the standard error of the mean (SEM) obtained from at least 80 cells. P-value of Student\u2019s test compared to No UV condition: **<0.01; ***<0.001.\n\n### XAB2 depletion modifies RNAP2 behavior\n\nBecause XAB2 was found to interact with RNAP2 (Kuraoka et al., 2008; Nakatsu et al., 2000) and because its increased mobility after irradiation depends on the UV transcription inhibition step, we wanted to explore whether XAB2 depletion might influence the overall RNAP2 mobility. In order to investigate this point, we performed FRAP experiments on RNAP2-GFP expressing cells in the presence or in the absence of XAB2 (Figure 7A; Donnio et al., 2019). Interestingly, depletion of XAB2 significantly increased the mobility of RNAP2 (Figure 7A, dark red curve vs. dark blue curve), demonstrating that XAB2 maintains RNAP2 bound to its substrate during transcription. Interestingly, after UV irradiation, RNAP2 mobility did not change significantly (p-value superior at 0.05), both in the presence and absence of XAB2 (Figure 7A, light curve vs. dark curve).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig7-v3.jpg)\n\n**Figure 7.:** (A) FRAP analysis of RNAP2-GFP expressing WT cells treated or not with UV-C (10 J/m2) after siRNA-mediated knockdown of the indicated factors. Error bars represent the SEM obtained from at least 10 cells. (B, C, D) Quantification of fluorescent signal in the nucleus against the couple RNAP2_6-4PP from PLA experiment (B) or from the IFndone in parallel to PLA assay (C, D). Error bars represent the standard error of the mean (SEM) obtained from at least 80 cells. P-value of Student\u2019s test compared to No UV condition: *<0.05; ***<0.001.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig7-figsupp1-v3.jpg)\n\nBecause FRAP experiments might not reveal more subtle changes in protein\u2013substrate interactions, we decided to examine whether the absence of XAB2 might affect the contacts of RNAP2 with UV lesions using the more sensitive PLA assay. Remarkably, we measured a more robust and persistent interaction of RNAP2 with 6-4PP lesions after UV irradiation in XAB2-silenced cells (Figure 7B and Figure 7\u2014figure supplement 1). The corresponding IF shows a reduced increase of 6-4PP in XAB2-silenced cells compared to control cells (Figure 7C and Figure 7\u2014figure supplement 1) while RNAP2 quantity decreases similarly during DNA repair in the presence or absence of XAB2 due to general RNAP2 UV-dependent degradation (Figure 7D and Figure 7\u2014figure supplement 1). These results demonstrate that, without XAB2, DNA is not properly repaired and as a consequence, RNAP2 interacts longer with UV lesions.\n\n## Discussion\n\nHelix-distorting lesions continuously challenge cell survival by interfering with and blocking fundamental cellular functions, such as transcription and replication. In order to prevent the deleterious effects of these events, cells have developed different mechanisms to restore an undamaged DNA molecule and allow the restart of cellular processes. The importance of rapidly re-establishing perturbed cellular functions is underlined by the presence of a repair mechanism directly coupled with transcription, like the TC-NER.\n\nTwo phases can be distinguished during TC-NER events: (1) the actual repair reaction of the damaged strand via the TC-NER subpathway and (2) the resumption of transcription after repair. The experiment known as \u2018RRS\u2019 measures only the restart of transcription after DNA repair completion and thus the involvement of a protein in the general TC-NER process. However, this assay does not discriminate between the two phases of the TC-NER. As a consequence, proteins that are fully proficient in the repair reaction but fail in the transcription restart after DNA repair completion might have the same defect in RRS as those solely deficient in the DNA repair reaction.\n\nThus far, all studies have demonstrated the involvement of XAB2 in the TC-NER process using only RRS experiments (Kuraoka et al., 2008; Nakatsu et al., 2000). In this study, we used a specific test developed in-house (Mourgues et al., 2013) called TCR-UDS and thus demonstrated that, indeed, XAB2 is solely needed for the repair reaction (Figure 1D). This is confirmed by PLA experiments showing an interaction between XAB2 and helix-distorting lesions, 6-4PPs and CPDs, after irradiation (Figure 2 and Figure 2\u2014figure supplement 1). However, these experiments do not clearly discriminate at which step of the repair reaction XAB2 may contribute. Two hypotheses are envisaged: (1) XAB2 functions in damage recognition or (2) in the repair reaction per se.\n\nXAB2 has been found as part of the pre-mRNA splicing complex composed of AQR, PRP19, CCDC16, PPIE, and ISY1 (Kuraoka et al., 2008). However, none of these proteins take part in the repair process, underlying the peculiar function of the splicing factor XAB2 in TC-NER repair (Figure 3\u2014figure supplements 1\u20133).\n\nWe also demonstrated that, unlike all the other NER proteins studied so far, XAB2 protein is released from the damaged region induced by UV-C exposure (Figure 3). Concomitantly, we also observed an increase in XAB2 cellular mobile fraction after UV irradiation (Figure 4A). This release from DNA-damaged area and increased mobility is surprising and atypical for a repair protein. However, this behavior has also been observed for late-stage spliceosomes (Tresini et al., 2015) and could be explained by the importance of the cell rapidly providing access to the repair machinery.\n\nSurprisingly, the increased XAB2 mobility occurs in the absence of CSA and CSB proteins, with inhibitors of DDR after UV irradiation but also after transcription inhibition (Figure 4 and Figure 4\u2014figure supplement 1). These results strongly suggest that XAB2 remobilization is independent of the repair process but it is more a result of the transcription inhibition induced by the DNA damage. Moreover, the recovery of intrinsic XAB2 mobility is CSA and CSB dependent probably because in TC-NER defective cells, repair of transcribed genes is deficient and transcription is not recovered. As a consequence, a proper repair and re-establishment of the transcription process are needed to restore XAB2 mobility to normal values.\n\nPreviously, we reported that a complete TC-NER mechanism is required to repair the UV lesions present on active rDNA, genes transcribed by RNAP1 (Daniel et al., 2018). Notably, both Cockayne syndrome proteins (CSA and CSB) are implicated in this specific repair reaction, as well as the UV-stimulated scaffold protein A (UVSSA), a protein required for the stabilization of CSB specifically after UV irradiation (Higa et al., 2016). By measuring the level of ribosomal RNA, we demonstrate that RNAP1 transcription restarts after irradiation in the absence of XAB2 (Figure 2\u2014figure supplement 2), meaning that UV lesions present on active rDNA are repaired. As a consequence, XAB2 is involved only in TC-NER of RNAP2-transcribed genes and probably not in the repair of RNAP1-transcribed genes, confirming a likely specific interaction with RNAP2 and reinforcing the idea that RNAP1 and RNAP2 repair processes are distinct although they share common proteins.\n\nFRAP experiments in CSA and CSB mutant cells show a more immobile XAB2 fraction than in WT cells (Figure 4B) without any damage induction. Tanaka\u2019s group found that XAB2 interacts in vitro with CSA and CSB protein in the absence of DNA damage (Nakatsu et al., 2000). In addition, several studies demonstrated the involvement of CSB in transcription regulation (Boetefuer et al., 2018). As both CSB and XAB2 are necessary during the transcription process, it is therefore possible that the absence of CSB will modify XAB2 mobility. However, it is not excluded that in CSA and CSB mutant cells, a low level of unrepaired oxidative damage (de Waard et al., 2004) might interfere with the proper XAB2 mobility, eventually modifying the amount of R-loops within these cells. Nevertheless, it is difficult to precisely estimate the exact number of R-loops between different cell types, and this hypothesis is difficult to clearly assess.\n\nThe UV-induced remobilization of XAB2 is not explained by its release from the splicing complex, as demonstrated by co-immunoprecipitation and PLA experiments, but it is more the result of the release from chromatin-specific structures, in this particular case the R-loops (Figure 5). An R-loop is a three-stranded nucleic acid structure composed of a DNA:RNA hybrid and the associated nontemplate single-stranded DNA. This structure arises naturally in organisms from bacteria to humans, and has a multitude of functions in the cell (Belotserkovskii et al., 2018). Our results show that R-loops are a substrate for XAB2, and after DNA damage induction, the interaction between XAB2 and R-loops is strongly reduced. This might explain the increased XAB2 mobility during the TC-NER reaction.\n\nIt was previously demonstrated that, in AQR-depleted cells, R-loops formation is induced. These R-loops are actively processed into DNA double-strand breaks by XPF and XPG, the NER endonucleases (Sollier et al., 2014). Without any damage, we also observed an increased level of cellular R-loops in both AQR- and XAB2-silenced cells (Figure 5C), suggesting an involvement of these two proteins in R-loops resolution, as recently also demonstrated by Goulielmaki et al., 2021.\n\nTranscription process and R-loops formation are finely interconnected. Indeed, R-loops formation can cause transcription blockage. Transcription blockage due to DNA damage appears to result in R-loops formation (Mullenders, 2015; Steurer and Marteijn, 2017). Moreover, transcription activity declines after UV irradiation and mRNAs levels are drastically reduced (Figure 5\u2014figure supplement 5). PLA assays show that, after UV irradiation, XAB2 and total RNAs interaction is reduced. However, because the total amount of RNAs is diminished after transcription block, we assume that XAB2_RNAs interaction is lessened because of the intrinsic reduced amount of RNAs. Differently from total RNAs, in our study, we observe that R-loops do not decrease in number after UV damage and transcription inhibition (Figure 5E). Therefore, the interaction XAB2_R-loops and AQR_R-loops is specifically hindered after UV damage (Figure 5D). However, a careful interpretation of these results should be made because a recent paper demonstrates that the S9.6 antibody, specific for DNA:RNA hybrids, can also recognize other nucleic acid structures in immunofluorescence assay (Smolka et al., 2021). To be able to confirm our results, many additional controls were performed: (1) removal of the cytoplasm before fixation (Figure 5\u2014figure supplement 2A); (2) subtraction of the nucleolar signal from the nuclear signal (Figure 5\u2014figure supplement 2B); (3) treatment with RNAseH which degrade specifically R-loops (Figure 5\u2014figure supplement 4); and (4) finally interaction of XAB2 with nascent RNA (EU staining) is different from interaction with R-loops (Figure 5\u2014figure supplement 5). Although all controls point to a seeming interaction between XAB2 and R-loops or between AQR and R-loops, we cannot exclude that XAB2 and AQR do not release from DNA:RNA hybrids but from other nucleic acid structures, for example, double-stranded DNA.\n\nBecause XAB2 interacts in vitro with CSA and CSB protein (Nakatsu et al., 2000) and recent studies have shown an interaction with XPG (Goulielmaki et al., 2021), we decided to verify whether these interactions were modified during the DNA repair process and the concomitant transcription inhibition. Our results show a clear and consistent reduction of interaction between XAB2 and CSA (Figure 6A, B) and between XAB2 and XPG (Figure 6C, D) but not between XAB2 and CSB or between XAB2 and XPB (Figure 6\u2014figure supplement 1). These results suggest that XAB2 intervenes in the early steps of TC-NER or at least in the steps that imply the activity of CSB and TFIIH and most probably the early RNAP2 blocking-recognition step. However, the reduction of interactions between XAB2 and CSA or XPG is less striking than the one with R-loops. As suggested in Goulielmaki et al., 2021, another working hypothesis would be that XAB2 is released from CSA and XPG proteins associated with R-loops processing.\n\nThe physical interaction between XAB2 and RNAP2 has already been established (Kuraoka et al., 2008; Nakatsu et al., 2000), but the exact relation between XAB2 and RNAP2 has not yet been disclosed. Without DNA damage, we observed a difference in nascent RNA synthesis in XAB2-silenced cells compared to control cells (Figure 1\u2014figure supplement 2B). Since XAB2 functions in both transcription and splicing, it is not surprising that the quantity of nascent RNA is altered in the absence of XAB2 (Goulielmaki et al., 2021; Kuraoka et al., 2008). Moreover, we have clearly demonstrated by FRAP experiments that RNAP2 mobility is severely affected in the absence of XAB2. Namely, in XAB2-depleted cells, RNAP2 is released from its substrate and its mobility is strongly increased (Figure 7A). RNAP2 immobile fraction after UV irradiation does not change significantly in the presence or absence of XAB2. However, we could observe that interactions of RNAP2 with the UV lesions (6-4PPs or CPDs) are stronger after DNA damage and last longer in siXAB2-treated cells compared to siMock-treated cells (Figure 7B\u2013D). These results suggest that, during transcription, XAB2 helps RNAP2 anchoring to its substrate, whereas during the TC-NER process, it has an effect on stalling of RNAP2 on UV lesions, advocating for a potential role in the DNA damage recognition step.\n\nIn conclusion, we describe here an increased mobility of the protein XAB2 during the DNA damage-dependent transcription inhibition. This increased mobility might partly be explained by the release of XAB2 from its substrate R-loops and its partner CSA and XPG. Importantly, we demonstrate that XAB2 plays an anchoring role for RNAP2 to its substrate during transcription and helps RNAP2 to detach from UV lesions after DNA damage. As aconsequence, the absence of XAB2 hinders the overall transcription activity of the cells and severely affects the TC-NER capacity (Figure 8).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/77094/elife-77094-fig8-v3.jpg)\n\n**Figure 8.:** Considering our results, a hypothetical model of XAB2 roles and dynamics can be sketched. XAB2 is involved in R-loops removal and pre-mRNA splicing, both processes linked to transcription. After DNA damage induction, transcription is blocked and XAB2 (together with some of the proteins involved in the splicing) is massively released from R-loops allowing a subset of XAB2 molecules to interact with UV-stalled RNA polymerase 2 (RNAP2) and participate in the TC-NER process. In the absence of XAB2, TC-NER is defective and as a consequence, RNAP2 remains longer in the proximity of DNA lesions.\n\n## Materials and methods\n\n### Cell culture and treatments\n\nThe cells used in this study come from Erasmus MC in Rotterdam and were: (1) wild-type SV40-immortalized human fibroblasts (MRC5 [RRID:CVCL_D690]); (2) XPC-deficient SV40-immortalized human fibroblast (XP4PA-SV, GG-NER deficient [RRID:CVCL_6E33]); (3) CSA-deficient SV40-immortalized human fibroblast (CS3BE, TC-NER deficient [RRID:CVCL_F631]); (4) CSB-deficient SV40-immortalized human fibroblast (CS1AN, TC-NER deficient [RRID:CVCL_L472]); (5) MRC5-SV stably expressing XAB2-GFP; (6) CS3BE-SV stably expressing XAB2-GFP; (7) CS1AN-SV stably expressing XAB2-GFP; and (8) MRC5-SV stably expressing RNAP2-GFP. All cell lines are regularly tested negative for mycoplasma contamination.\n\nImmortalized human fibroblasts were cultured in Dulbecco's Modified Eagle Medium(DMEM from Sigma) supplemented with 1% of penicillin and streptomycin (Gibco) and 10% fetal bovine serum (Corning) and incubated at 37\u00b0C with 5% CO2.\n\nDNA damage was inflicted by UV-C light (254 nm, 6-W lamp). Cells were globally irradiated with a UV-C dose of 2, 4, 8, 10, or 16 J/m2 or locally irradiated with a UV-C dose of 60 or 100 J/m2 through a filter with holes of 5 \u00b5m of diameter (Millipore). After irradiation, cells were incubated at 37\u00b0C with 5% CO2 for different periods.\n\nInhibitor of ATR pathway (VE821) and ATM pathway (KU55933) was added at 10 \u00b5M in the medium 1 hr before irradiation.\n\n### Construction and expression of RNAP2-GFP and XAB2-GFP fusion protein\n\nFull-length RNAP2 c-DNA was cloned in-frame into the pEGFP-C1 vector (Clontech), and full-length XAB2 cDNA was cloned in-frame into the pEGFP-N1 vector. Constructs were sequenced prior to transfection.\n\nXAB2-GFP and RNAP2-GFP stably expressing cell lines were produced by transfecting XAB2-GFP or RNAP2-GFP in MRC5, CSA, or CSB cells using FuGENE 6 Transfection Reagent (Promega) according to the manufacturer\u2019 protocol. The selection was performed with G418 at 2 mg/ml.\n\n### Transfection of small interfering RNAs\n\nThe small interfering RNA (siRNAs) used in this study are: siMock, Horizon, D-001206-14 (10 nM); siXAB2, Horizon, L-004914-01 (20 nM); siXPF, Horizon, M-019946-00 (10 nM); siAQR, CCAGACCACUUCCCAUUCU (10 nM); siPRP19, GGUGUACAUGGACAUCAAG (10 nM); siCCDC16, GCGAUCUAGUUUCAUUAAA (5 nM); siPPIE, GGCUAUGAGGCAAGUCAAC (5 nM); siISY1, GGAAAUCGAGGUUACAAGU (5 nM) and siCSB, Horizon, L-004888-00 (10 nM). The final concentration used for each siRNA is indicated in parentheses. All siRNA from Horizon are a pool of four different siRNA.\n\nCells were seeded in 6-well plates and allowed to attach for at least 24 hr. Coverslips were added inside the well if needed for the experiment. Cells were transfected two times with an interval of 24 hr with siRNA using Lipofectamine RNAiMAX reagent (Invitrogen; 13778150) or GenJet (Tebu-Bio), according to the manufacturer\u2019s protocol. Experiments were performed between 24 and 72 hr after the second transfection. Protein knockdown was confirmed for each experiment by Western blot.\n\n### RRS assay\n\nMRC5 cells were grown on 18 mm coverslips. siRNA transfections were performed 24 and 48 hr before the RRS assay. RNA detection was done using a Click-iT RNA Alexa Fluor Imaging kit (Invitrogen), according to the manufacturer\u2019s instructions. Briefly, cells were UV-C irradiated (10 J/m\u00b2) and incubated for 0, 3, 16, and 24 hr at 37\u00b0C. Then, cells were incubated for 2 hr with 100 \u00b5M of 5-ethynyl uridine (EU). After fixation with 4% paraformaldehyde (PFA) for 15 min at 37\u00b0C and permeabilization with phosphate-buffered saline (PBS) and 0.5% Triton X-100 for 20 min, cells were incubated for 30 min with the Click-iT reaction cocktail containing Alexa Fluor Azide 594. After washing, the coverslips were mounted with Vectashield (Vector). Using ImageJ, the average fluorescence intensity per nucleus was estimated after background subtraction and normalized to not treated cells.\n\nFor RRS with siRNA against splicing protein, cells were incubated for 1 hr with 2.5 mM of 5-bromouracile (BrU). Next, the protocol is the same as immunofluorescence. The primary antibody used is mouse anti-BrU diluted in PBS+ (PBS containing 0.15 glycine and 0.5% bovine serum albumin[BSA]) at 1/750 (11170376001 [sigma]).\n\n### RNA fluorescence in situ hybridization\n\nCells were grown on 18 mm coverslips, washed with warm PBS, and fixed with 4% PFA for 15 min at 37\u00b0C. After two washes with PBS, cells were permeabilized with PBS + 0.4% Triton X-100 for 7 min at 4\u00b0C. Cells were washed rapidly with PBS before incubation (at least 30 min) with prehybridization buffer: 15% formamide in 2\u00d7 SSPE (Sodium Chloride-Sodium Phosphate-EDTA) (0.3 M NaCl, 15.7 mM NaH2PO4\u00b7H2O, and 2.5 mM EDAT [Ethylenediaminetetraacetic acid] et pH8.0). 35 ng of the probe was diluted in 70 \u00b5l of hybridization mix (2\u00d7 SSPE, 15% formamide, 10% dextran sulfate and 0.5 mg/ml tRNA). Hybridization of the probe was conducted overnight at 37\u00b0C in a humidified environment. Subsequently, cells were washed twice for 20 min with prehybridization buffer and once for 20 min with 1\u00d7 SSPE. After extensive washing with PBS, the coverslips were mounted with Vectashield containing DAPI (Vector). The probe sequence (5\u2032 to 3\u2032) is Cy5-AGACGAGAACGCCTGACACGCACGGCAC.\n\n### UDS or TCR-UDS\n\nMRC5-SV (WT) or XP4PA-SV (GG-NER-deficient) cells were grown on 18 mm coverslips. siRNA transfections were performed 24 and 48 hr before UDS assays. After local irradiation at 100 J/m2 with UV-C through a 5 \u00b5m pore polycarbonate membrane filter, cells were incubated for 3 or 8 hr (UDS and TCR-UDS, respectively) with 20 \u00b5M of EdU (5-ethynyl-2\u2032-deoxyuridine), fixed with 4% PFA for 15 min at 37\u00b0 C and permeabilized with PBS and 0.5% Triton X-100 for 20 min. Then, cells were blocked with PBS+ (PBS, 0.15% glycine and 0.5% BSA) for 30 min and subsequently incubated for 1 hr at room temperature (RT) with mouse monoclonal anti-\u03b3H2AX antibody (Ser139 [Upstate, clone JBW301]) 1:500 diluted in PBS+. After extensive washes with PBS containing 0.5% Triton X-100, cells were incubated for 45 min at RT with secondary antibodies conjugated with Alexa Fluor 594 fluorescent dyes (Molecular Probes, 1:400 dilution in PBS+). Next, cells were washed several times and then incubated for 30 min with the Click-iT reaction cocktail containing Alexa Fluor Azide 488. After washing, the coverslips were mounted with Vectashield containing DAPI (Vector). Images were analyzed as follows using ImageJ and a circle of constant size for all images: (1) the background signal was estimated in the nucleus (avoiding the damage, nucleoli, and other nonspecific signals) and subtracted, (2) the locally damaged area was defined by using the \u03b3H2AX staining, and (3) the average fluorescence correlated to the EdU incorporation was then measured and thus an estimation of DNA synthesis after the repair was obtained.\n\n### Immunofluorescence\n\nCells were plated on 12 or 18 mm coverslips to reach 70% confluence on the day of the staining. After two washes with PBS, cells were fixed with 2% PFA for 15 min at 37\u00b0C. Cells were permeabilized by three short washes followed by two washes of 10 min with PBS + 0.1% Triton X-100. Blocking of the nonspecific signal was performed with PBS+ (PBS, 0.5% BSA, 0.15% glycine) for at least 30 min. Then, coverslips were incubated with primary antibody diluted in PBS+ for 2 hr at RT or overnight at 4\u00b0C in a moist chamber. After several washes with PBS + 0.1% Triton X-100 (three short washes and two of 10 min) and a short wash with PBS+, cells were incubated for 1 hr at RT in a moist chamber with a secondary antibody coupled to a fluorochrome (Goat anti-mouse Alexa Fluor 488 [A11001, Invitrogen] or 594 [A11005] and Goat anti-rabbit Alexa Fluor 488 [A11008] or 594 [A11012], 1/400 dilution in PBS+). After the same washing procedure with PBS instead of PBS + 0.1% Triton X-100, coverslips were finally mounted using Vectashield with DAPI (Vector Laboratories).\n\nTreatment with RNAseH (NEB, M0297L) was performed after blocking with PBS+. RNAseH was diluted in PBS+ to put 6 U per coverslip and incubated for 1 hr at 37\u00b0C. After washing with PBS+ (one quick and one of 10 min), a primary antibody was added.\n\nFor local damage immunofluorescence, the variation of fluorescence in the locally irradiated zone has been calculated, as for the UDS experiment.\n\nFor Immunofluorescence with UV lesions antibodies (6-4PP and CPD), a step of DNA denaturation with 0.07 M NaOH freshly diluted in PBS for 5 min at RT was added after permeabilization. After several washes with PBS + 0.1% Triton X-100 (three short washes and two of 10 min), cells were incubated with primary antibody.\n\nFor RNA detection, the protocol was adapted from Petruk et al., 2016. Briefly, cells were incubated for 2 hr with 100 \u00b5M of EU. After fixation, permeabilization, and blocking, a Biotin tag was added thanks to a click-it reaction and then recognized by an antibody.\n\n### Proximity Ligation Assay\n\nPLA experiments were done using Duolink II secondary antibodies and detection kits (Sigma-Aldrich, #DUO92002, #DUO92004, and #DUO92008) according to the manufacturer\u2019s instructions. The cells were fixed and permeabilized with the same procedure as immunofluorescence. After blocking 1 hr at 37\u00b0C with the Blocking Solution from the kit, the primary antibodies diluted in Antibody Diluent was incubated at 4\u00b0C overnight. After one quick and three washes of 5 min with PLA buffer A, Duolink secondary antibodies were added and incubated for 1 hr at 37\u00b0C. After the same washing procedure with PLA buffer A, if secondary antibodies were in close proximity (<40 nm), they were ligated together to make a closed circle thanks to the incubation of 30 min at 37\u00b0C with the Duolink ligation solution. Then, after the same washing procedure, the DNA is amplified and detected by fluorescence 594 thanks to the incubation of 100 min at 37\u00b0C with the Duolink amplification solution. After washing with PLA buffer B, coverslips were mounted using Vectashield with DAPI (Vector Laboratories).\n\n### Cytostripping\n\nTo remove the background generated by some antibodies or EdU incorporation, the cytoplasm of the cells was removed before fixation. After two washes with cold PBS, cells were incubated on ice 5 min with cold cytoskeleton buffer (10 mM PIPES [piperazin-N,N'-bis(2-ethanesulfonic acide)] pH 6.8; 100 mM NaCl; 300 mM sucrose; 3 mM MgCl2; 1 mM EGTA [egtazic acid]; 0.5% Triton X-100) followed by 5 min with cold cytostripping buffer (10 mM Tris\u2013HCl pH 7.4; 10 mM NaCl; 3 mM MgCl2; 1% Tween 40; 0.5% sodium deoxycholate). After three gentle washes with cold PBS, cells were fixed.\n\n### Images acquisition and analysis\n\nFor RRS, images of the cells were obtained using an Andor spinning disk: Olympus IX 83 inverted microscope, equipped with a Yokaga CSU-X1 Spinning disk Unit and BOREALIS technology for homogeneous illumination. The acquisition software is IQ3.\n\nFor RNAFish, UDS, TCR-UDS, and IF of splicing complex after local damage, images of the cells were obtained using a Zeiss LSM 780 NLO confocal laser scanning microscope and the following objective: Plan-Apochromat \u00d763/1.4 oil DIC (Differential Interference Contrast) M27 or \u00d740/1.3 oil DIC. The acquisition software is ZEN.\n\nPLA and IF associated with PLA have been performed on a Zeiss Z1 imager right using a \u00d740/0.75 dry objective. The acquisition software is Metavue.\n\nImages of the cells for each experiment were obtained with the same microscopy system and constant acquisition parameters. All images were analyzed with ImageJ software. All experiments have been performed at least two times and are biological replicates.\n\nError bars represent the standard error of the mean of the biological replicates. Excel was used for statistical analysis and plotting of all the numerical data. Statistics were performed using a Student\u2019s test to compare two different conditions (siMock vs. siRNA X or No UV vs. after irradiation) with the following parameters: two-tailed distribution and two-sample unequal variance (heteroscedastic).\n\n### Primary antibodies used for IF and PLA\n\nPrimary antibodies used for immunofluorescence and PLA experiments were anti-6-4PP (mouse, NM-DND-002 [Cosmobio] 1/500 dilution), anti-CPD (mouse, NM-DND-001 [cosmobio], 1/200 dilution), anti-XAB2 (mouse, sc-271037 [Santa Cruz Biotechnology], 1/1000 dilution and rabbit, A303-638A [B\u00e9thyl], 1/500 dilution), anti-AQR (IPB160 rabbit, A302-547A [B\u00e9thyl], 1/500 dilution), anti-CCDC16 (rabbit, HPA027211 [atlas antibodies], 1/250 dilution), anti-PRP19 (rabbit, ab27699 [abcam], 1/500 dilution), anti-DNA:RNA hybrid clone S9.6 (mouse, MABE1095 [Merck Millipore], 1/100 dilution and rabbit, Ab01137-23.0 [Absolute antibody], 1/100 dilution), anti-Biotin (rabbit, ab1227 [abcam] 1/1000 dilution), anti-CSA (rabbit, GTX100145 [genetex], 1/400 dilution), anti- and anti-CSB (mouse, sc398022 [santa-cruz], 1/200 dilution), anti-XPB (rabbit, sc293 [santa-cruz], 1/500 dilution), and anti-XPG (rabbit, sc84663 [santa-cruz], 1/1000 dilution).\n\n### Fluorescence recovery after photobleaching\n\nFRAP experiments were performed on a Zeiss LSM 780 NLO confocal laser scanning microscope (Zeiss), using a \u00d740/1.3 oil objective under a controlled environment (37\u00b0C, 5% CO2). A narrow region of interest (ROI) centered across the nucleus of a living cell was monitored every 20 ms (1% laser intensity of the 488-nm line of a 25-mW Argon laser) until the fluorescence signal reached a steady state level (after \u22482 s). The same region was then photobleached for 20 ms at 100% laser intensity. Recovery of fluorescence in the bleached ROI was then monitored (1% laser intensity) every 20 ms for about 20 s. Analysis of raw data was performed with the ImageJ software. All FRAP data were normalized to the average prebleached fluorescence after background removal.\n\nXAB2-GFP SPOT FRAP data were analyzed as follows (Figure 4\u2014figure supplement 1). The No UV condition\u2019s average fluorescence (over all cells) was subtracted from the average fluorescence of the UV-treated conditions. The obtained difference between the two FRAP curves was then summed point by point, starting from the bleach up to the following 100 measurements, that is, the area between the curve of interest and the untreated condition curve.\n\n### Protein extraction\n\nFor verification of siRNA efficiency, cells were cultured in a 6-well plate. The coverslip needed for the experiment was displaced before fixation, and cells that remained in the dish were collected. The extraction of total proteins has been performed using the PIERCE RIPA buffer (Thermo, #89900) complemented with PIC (Protease Inhibitor Cocktail from ROCHE).\n\nFor immunoprecipitation, cells cultured in 10 cm dishes were harvested by scraping, and the pellet was washed once with PBS supplemented with the PIC. The extraction of nuclear proteins has been performed using the CelLytic NuCLEAR Extraction kit (Sigma-Aldrich) complemented with PIC.\n\nProtein concentration was determined using the Bradford method. The samples were diluted with Laemmli buffer (10% glycerol, 5% \u03b2-mercaptoethanol, 3% sodium dodecyl sulfate, 100 mM Tris\u2013HCl [pH 6.8], bromophenol blue) and heated at 95\u00b0C before loading on a SDS-PAGE (sodium dodecyl sulfate\u2013polyacrylamide gel electrophoresis).\n\n### Coimmunoprecipitation\n\nFor coimmunoprecipitation, 10 \u00b5l of protein G magnetic beads (Bio-adembead, Ademtech) were used per IP. 1 \u00b5g of anti-XAB2 antibody (rabbit, A303-638A, Bethyl) were bound to the beads in PBS with 3% BSA 3% for 2 hr at 4\u00b0C with rotation. 100 \u00b5g of nuclear extracts were then incubated with beads\u2013antibodies complex for 2 hr at 4\u00b0C with rotation. After two washes at 100 mM salt, two at 150 mM, and one wash at 100 mM, beads were boiled in 2\u00d7 Laemmli buffer and eluted samples loaded on a SDS\u2013PAGE.\n\n### RNA/DNA hybrid IP\n\nNon-crosslinked MRC5 cells were lysed in 85 mM KCl, 5 mM PIPES (pH 8.0), and 0.5% NP-40 for 10 min on ice. Pelleted nuclei were resuspended in RSB buffer (10 mM Tris\u2013HCl pH 7.5, 200 mM NaCl, 2.5 mM MgCl2) with 0.2% sodium deoxycholate, 0.1% SDS, 0.05% sodium lauroyl sarcosinate, and 0.5% Triton X-100, and extracts were sonicated for 10 min (Diagenode Bioruptor, 60 cycles high power, 10 s ON and 20 s OFF). Extracts were then diluted 1:4 in RSB with 0.5% Triton X-100 (RSB-T) and subjected to IP with the S9.6 antibody overnight at 4\u00b0C. RNaseA was added during IP at 0.1 ng RNaseA per microgram genomic DNA. Then protein G dynabeads (Invitrogen) washed with RSB-T were added and incubated for 3 hr. Beads were washed 4\u00d7 with RSB-T and 2\u00d7 with RSB; then eluted in 2\u00d7 Laemmli buffer for 10 min at 95\u00b0C before loading on SDS\u2013PAGE. When indicated, nuclear extracts were treated with 0.25 U/\u00b5l Benzonase (Sigma 70664) for 30 min at 37\u00b0C before IP.\n\n### Western blot\n\nProteins were separated on a SDS\u2013PAGE composed of bisacrylamide (37:5:1), blotted onto a PVDF (polyvinylidene difluoride) membrane (0.45 \u03bcm Millipore). The membrane was blocked in PBS-T (PBS and 0.1% Tween 20) with 5% milk and then incubated for 2 hr at RT or overnight at 4\u00b0C with the following primary antibodies diluted in milk PBS-T: Rabbit anti-XAB2, A303-638A (Bethyl) 1/1000; Mouse anti-XPF, MS-1351-P1 (NeoMarkers) 1/500; Mouse anti-\u03b1-Tubulin, T6074 (Sigma-Aldrich) 1/50,000; Rabbit anti-AQR (A302-547A [Bethyl] 1/2000); Rabbit anti-CCDC16 (A301-419A [Bethyl] 1/2000), Rabbit anti-PPIE (ab154865 [abcam] 1/1000); Rabbit anti-PRP19 (ab27692 [abcam] 1/1000); Rabbit anti-ISY1 (ab121523 [abcam] 1/500); Mouse anti-UBF (sc13125 [santa-cruz] 1/500); and Goat anti-CSB (sc10459 [santa-cruz] 1/100).\n\nSubsequently, the membrane was washed repeatedly with PBS-T and incubated 1 hr at RT with the following secondary antibody diluted 1/5000 in milk PBS-T: Goat anti-rabbit IgG HRP conjugate (170-6515; BioRad), Rabbit anti-goat IgG HRP conjugate (172-1034, BioRad) or Goat anti-mouse IgG HRP conjugate (170-6516; BioRad). After the same washing procedure, protein bands were visualized via chemiluminescence (ECL Enhanced Chemiluminescence; Pierce ECL Western Blotting Substrate) using the ChemiDoc MP system (BioRad).\n",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "5c703e02-f4a0-4b19-9668-78ebd47c0691",
+      "submission_id": "6c6108c0-ee90-4931-9ae5-aa86e6fee20a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Wolf-Dietrich Heyer, https://ror.org/05rrcem69 University of California, Davis United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.77094.sa0](https://doi.org/10.7554/eLife.77094.sa0)\n\nThis manuscript will be of interest for individuals working in genome stability, specifically on the repair of UV damage and nucleotide excision repair (NER). The authors report that the transcription-coupled NER factor XAB2 is mobilized after DNA damage and that XAB2 keeps RNA Pol2 engaged on chromatin. XAB2 mobilization appears to be caused by transcription blockage imposed by the DNA damage.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Wolf-Dietrich Heyer, https://ror.org/05rrcem69 University of California, Davis United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.77094.sa1](https://doi.org/10.7554/eLife.77094.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"XAB2 Dynamics during DNA Damage-Dependent Transcription Inhibition\" for consideration by eLife. Your article has been reviewed by 4 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Kevin Struhl as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe manuscript is suited for eLife and the revision plan as presented by the authors is sound. Here is a list of essential revisions which includes the planned revisions by the authors and some additional points added by the reviewing editor. This implies agreement with the author's choice of revisions NOT to be done but see point #5.\n\nAuthor list\n\n1) Further PLA experiments with RNAP2 and antibodies against CPD and 6-4PP in the presence and absence of UV and/or siXAB2 will strengthen the point about RNAP2 mobility.\n\n2) Resolve the conflict with Nakatsu et al. 2000 and Kuruoka et al. 2008 regarding the reported increase in transcription with RNAseq experiments with siXAB2 +/- UV. This may resolve the conflict or may not, see #5.\n\n3) Benzonase treatment in IP XAB2 experiments represents a critical control.\n\n4) The plans for the expanded discussion and the changes already implemented are fine.\n\nEditor list\n\n5) Regardless of the outcome of point #2, this conflict will need to be resolved, which may need additional experimentation, if the outcome in inconclusive or cannot explain the discrepancy.\n\n6) I agree that additional experimentation regarding RNAP1 is not needed in the revision, but the conclusion will have to be significantly toned down and limitations be discussed regarding the claimed RNAP2 specificity.\n\n7) The authors should tone down the claim that S9.6 is specific for R-loops, the antibody recognizes also other nucleic acid structures. See J.A. Smolka, L.A. Sanz, S.R. Hartono, F. Chedin Recognition of RNA by the S9.6 antibody creates pervasive artifacts when imaging RNA:DNA hybrids J. Cell Biol., 220 (2021).\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"XAB2 Dynamics during DNA Damage-Dependent Transcription Inhibition\" for further consideration by eLife. Your revised article has been evaluated by Kevin Struhl (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nThe revision addresses the essential points in the previous review. The manuscript requires extensive language editing. There are numerous problems already in the abstract (line 4 'demonstrate', line 7 'becomes', line 8 'change in mobility is restored' needs rephrasing, line 10 'from DNA:RNA hybrids', line 11 'proteins', line 13 'demonstrate').\n\nReviewer #4 (Recommendations for the authors):\n\nThe addition of PLA data for the interaction of both RNAP and XAB2 with UV photoproducts is very welcome, and the data quite clearly show increased interaction with damage for both proteins. However, these results actually demand some rethinking of the conclusions.\n\nThe authors addressed the essential points for the revision but the manuscript requires extensive language editing.\n\n[Editors' note: this paper was reviewed by Review Commons.]\n",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e25ad937-3197-41f9-bb42-f559653df06c",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C1",
+      "claim": "XAB2 is involved specifically and exclusively in Transcription-Coupled Nucleotide Excision Repair (TC-NER) reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we demonstrate that XAB2 is involved specifically and exclusively in Transcription-Coupled Nucleotide Excision Repair (TC-NER) reactions and solely for RNA polymerase 2 (RNAP2)-transcribed genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by TCR-UDS assay data showing decreased repair replication in XAB2-silenced cells (Figure 1D), and RRS assay showing no restart of transcription after UV damage in XAB2-silenced cells (Figure 1C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "d24527bc-936f-49b2-9921-2b337d6f8e95",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C2",
+      "claim": "XAB2 is involved solely for RNA polymerase 2 (RNAP2)-transcribed genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we demonstrate that XAB2 is involved specifically and exclusively in Transcription-Coupled Nucleotide Excision Repair (TC-NER) reactions and solely for RNA polymerase 2 (RNAP2)-transcribed genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNA-FISH data showing that RNAP1 transcription restarts after UV irradiation in XAB2-silenced cells (Figure 2\u2014figure supplement 2B), indicating XAB2 is not required for repair of RNAP1-transcribed genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "05772973-4822-4a91-b750-3968f7ee8e2d",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C3",
+      "claim": "XAB2 does not accumulate on local UV-C damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, contrary to all the other NER proteins studied so far, XAB2 does not accumulate on the local UV-C damage; on the contrary, it becomes more mobile after damage induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunofluorescence data showing release of XAB2 from damaged areas (Figure 3A, B) and FRAP experiments showing increased XAB2 mobility after UV irradiation (Figure 4A).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "20eb419d-53a4-4793-a122-12d2d8a9fdcb",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C4",
+      "claim": "XAB2 becomes more mobile after damage induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, contrary to all the other NER proteins studied so far, XAB2 does not accumulate on the local UV-C damage; on the contrary, it becomes more mobile after damage induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by FRAP experiments showing dose-dependent increase in XAB2 mobility after UV irradiation (Figure 4A).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "f3419500-8b07-4927-a8bd-4ac4b50109b6",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C5",
+      "claim": "XAB2 mobility is restored when DNA repair reactions are completed.",
+      "claim_type": "EXPLICIT",
+      "source": "XAB2 mobility is restored when DNA repair reactions are completed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by FRAP data showing recovery of intrinsic XAB2 mobility 16 hr post-irradiation in wild-type cells (Figure 4A), which correlates with completion of repair and restart of transcription.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "9b0a466f-c413-4e26-9c2b-7d757aeb223a",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C6",
+      "claim": "XAB2 is detached after DNA damage induction from DNA:RNA hybrids (R-loops).",
+      "claim_type": "EXPLICIT",
+      "source": "By scrutinizing from which cellular complex/partner/structure XAB2 is released, we have identified that XAB2 is detached after DNA damage induction from DNA:RNA hybrids, commonly known as R-loops, and from the CSA and XPG proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by PLA experiments showing reduced interaction between XAB2 and R-loops after UV irradiation (Figure 5D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "697f259a-e751-45d1-bb7c-3755760c4508",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C7",
+      "claim": "XAB2 is detached after DNA damage induction from CSA protein.",
+      "claim_type": "EXPLICIT",
+      "source": "By scrutinizing from which cellular complex/partner/structure XAB2 is released, we have identified that XAB2 is detached after DNA damage induction from DNA:RNA hybrids, commonly known as R-loops, and from the CSA and XPG proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by PLA experiments showing clear and consistent release from CSA protein 2 hr after UV irradiation (Figure 6A).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "5d1fc56f-a40c-4984-974e-64b14dccacb0",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C8",
+      "claim": "XAB2 is detached after DNA damage induction from XPG protein.",
+      "claim_type": "EXPLICIT",
+      "source": "By scrutinizing from which cellular complex/partner/structure XAB2 is released, we have identified that XAB2 is detached after DNA damage induction from DNA:RNA hybrids, commonly known as R-loops, and from the CSA and XPG proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by PLA experiments showing clear and consistent release from XPG protein 1 hr after UV irradiation (Figure 6C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "a294da1e-f42e-460f-954b-0a54bd08a75b",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C9",
+      "claim": "XAB2 release contributes to the DNA damage recognition step during TC-NER.",
+      "claim_type": "EXPLICIT",
+      "source": "This release contributes to the DNA damage recognition step during TC-NER, as in the absence of XAB2, RNAP2 is blocked longer on UV lesions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by PLA experiments showing stronger and more persistent interaction of RNAP2 with 6-4PP lesions in XAB2-silenced cells (Figure 7B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "15498f45-ac0c-423b-a77d-9996170b6a23",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C10",
+      "claim": "In the absence of XAB2, RNAP2 is blocked longer on UV lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "This release contributes to the DNA damage recognition step during TC-NER, as in the absence of XAB2, RNAP2 is blocked longer on UV lesions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by PLA experiments showing stronger and more persistent interaction of RNAP2 with 6-4PP lesions after UV irradiation in XAB2-silenced cells (Figure 7B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "1ac0368f-9f94-4a5a-beec-7a323f403c90",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C11",
+      "claim": "XAB2 has a role in retaining RNAP2 on its substrate without any DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we also demonstrate that XAB2 has a role in retaining RNAP2 on its substrate without any DNA damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by FRAP experiments showing that depletion of XAB2 significantly increased the mobility of RNAP2 (Figure 7A).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "5be96fb9-b4e8-4fab-a7e2-073433feef48",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C12",
+      "claim": "XAB2 is not involved in the GG-NER subpathway.",
+      "claim_type": "EXPLICIT",
+      "source": "This result shows that XAB2 is not involved in the GG-NER subpathway, but does not exclude an involvement of XAB2 in the TC-NER subpathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by UDS assay showing no decreased level of UDS in XAB2-silenced cells (Figure 1A).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "81d0b2b2-6415-43f3-b151-a29f898d6a9e",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C13",
+      "claim": "No restart of transcription after UV damage was observed in XAB2-silenced cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In XAB2-silenced cells, no restart of transcription after UV damage was observed (Figure 1C, blue column and Figure 1\u2014figure supplement 2A), as well as in siXPF-treated cells due to the inability to repair DNA lesions (Figure 1C, red column and Figure 2\u2014figure supplement 2A) and in contrast with siMock-treated cells (Figure 1C, black column and Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RRS assay data showing no recovery of RNA synthesis 16-24 hr after UV irradiation in XAB2-silenced cells (Figure 1C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "98605c98-3ddb-4a8e-b29c-719f6518c6ad",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C14",
+      "claim": "Silencing of XAB2 results in a decrease in TCR-UDS levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Silencing of XAB2 results in a decrease in TCR-UDS levels (Figure 1D, blue column and Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by TCR-UDS assay data in GG-NER-deficient cells showing decreased repair replication in XAB2-silenced cells (Figure 1D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "73a35ddd-6a28-4dca-b040-afc13c7f69fb",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C15",
+      "claim": "XAB2 interacts with 6-4PP lesions 1 hr after UV irradiation.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a strong interaction between XAB2 and 6-4PPs 1 hr after 10 J/m\u00b2 irradiation (Figure 2A, C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by PLA experiments showing strong interaction between XAB2 and 6-4PPs 1 hr after irradiation (Figure 2A, C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "1438b820-c5e4-452d-85b1-79833f84b220",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C16",
+      "claim": "The interaction between XAB2 and 6-4PPs decreases during repair.",
+      "claim_type": "EXPLICIT",
+      "source": "This interaction correlates with the amount of 6-4PPs and, as expected, decreases during repair (Figure 2B, C), while XAB2 concentration does not change after irradiation (Figure 2B, C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by PLA and IF data showing decreased XAB2-6-4PP interaction over time while XAB2 levels remain constant (Figure 2B, C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "be5bf532-35e4-42f7-8aeb-876c99dd377d",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C17",
+      "claim": "XAB2 concentration does not change after irradiation.",
+      "claim_type": "EXPLICIT",
+      "source": "This interaction correlates with the amount of 6-4PPs and, as expected, decreases during repair (Figure 2B, C), while XAB2 concentration does not change after irradiation (Figure 2B, C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by IF data showing constant XAB2 levels at different time points after UV irradiation (Figure 2B, C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "61fb0e58-2be0-48b7-96b1-972208e7c3ba",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C18",
+      "claim": "XAB2 interacts with CPD lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "The same result is obtained in PLA experiment between XAB2 and CPDs (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by PLA experiments showing interaction between XAB2 and CPDs (Figure 2\u2014figure supplement 1).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "87ac1473-dc59-44ff-9b41-90feaf88c62b",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C19",
+      "claim": "RNAP1 transcription restarts after irradiation in the absence of XAB2.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of XAB2, 40 hr after irradiation, the level of 47S returns to the level of non-irradiated condition, supporting a restart of RNAP1 transcription (Figure 2\u2014figure supplement 2B, blue column and Figure 2\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNA-FISH data showing recovery of 47S pre-rRNA levels 40 hr after UV irradiation in XAB2-silenced cells (Figure 2\u2014figure supplement 2B, D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "162ed3e9-f40a-4b09-bb2f-5f175e1b40a6",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C20",
+      "claim": "XAB2, AQR, PRP19, and CCDC16 are released from the damaged area 1 hr after UV irradiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, in contrast with all other NER proteins studied so far, we observed a relatively rapid (1 hr after UV irradiation) release of XAB2, AQR, PRP19, and CCDC16 from the damaged area (Figure 3A, B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunofluorescence data showing decreased signal of these proteins in locally damaged areas 1 hr after UV irradiation (Figure 3A, B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "7589afae-903d-4735-953f-808e07a84ad3",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C21",
+      "claim": "The proper localization of the XAB2-splicing complex is re-established after the completion of DNA repair reactions when the transcription is fully restarted.",
+      "claim_type": "EXPLICIT",
+      "source": "The proper localization of the XAB2-splicing complex is re-established after the completion of DNA repair reactions when the transcription is fully restarted (16 hr after irradiation; Figure 3B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunofluorescence data showing recovery of XAB2-splicing complex localization 16 hr after UV irradiation (Figure 3B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "5245408e-10f8-4b0f-b682-cedcdefa4200",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C22",
+      "claim": "None of the cells silenced for XAB2-related proteins (AQR, PRP19, CCDC16, PPIE, ISY1) are deficient in DNA Repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results clearly show that none of the cells silenced for XAB2-related proteins are deficient in DNA Repair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by UDS, TCR-UDS, and RRS assays showing proficient repair in cells silenced for AQR, PRP19, CCDC16, PPIE, or ISY1 (Figure 3\u2014figure supplements 1\u20133).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "289a57d9-5eda-4a21-a027-94f6c3cd5e1e",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C23",
+      "claim": "Both GG-NER and TC-NER are proficient in the absence of AQR, PRP19, CCDC16, PPIE, or ISY1.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, both GG-NER (Figure 3\u2014figure supplement 1) and TC-NER (Figure 3\u2014figure supplements 2 and 3) are proficient in the absence of AQR, PRP19, CCDC16, PPIE, or ISY1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by UDS and TCR-UDS assays showing normal repair levels in cells silenced for these proteins (Figure 3\u2014figure supplements 1\u20133).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "60adb70d-aa80-4244-8af3-202649834464",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C24",
+      "claim": "The absence of CSA and CSB did not hinder the release of XAB2 from locally damaged areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the absence of CSA and CSB did not hinder the release of XAB2 from locally damaged areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunofluorescence data showing XAB2 release from damaged areas in CSA and CSB mutant cells (Figure 3C and Figure 3\u2014figure supplement 4).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "f1f0bde9-7145-4497-974d-56837a7b64e6",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C25",
+      "claim": "In CSA and CSB mutant cells, XAB2 release from locally damaged areas persisted 16 hr after UV-C exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this release persisted 16 hr after UV-C exposure (Figure 3C blue and red curves compared to black curve and Figure 3\u2014figure supplement 4), suggesting that the re-establishment of the proper localization of XAB2 within the nucleus after the DNA repair process depends either on the repair process per se or on the restart of transcription after the achievement of DNA repair reactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunofluorescence data showing continued XAB2 release 16 hr after UV irradiation in CSA and CSB mutant cells (Figure 3C and Figure 3\u2014figure supplement 4).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "02dc973e-bb9f-4ae2-8649-fdf6eb74ed47",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C26",
+      "claim": "XAB2 mobility increases in a dose-dependent manner after UV irradiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed a dose-dependent increase in mobility of XAB2 (Figure 4A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by FRAP experiments showing increased XAB2 mobility at different UV-C doses (2-16 J/m\u00b2) (Figure 4A).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "342b3473-9e91-4141-9c67-f62f8813ec5a",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C27",
+      "claim": "At intermediate doses of 8 J/m\u00b2 of UV-C, XAB2 mobility significantly increases during repair (3 hr after UV-C exposure) and returns to normal once repair is completed (16 hr after irradiation).",
+      "claim_type": "EXPLICIT",
+      "source": "At intermediate doses of 8 J/m\u00b2 of UV-C, we observed a significant increase in XAB2 mobility during repair (3 hr after UV-C exposure) and the following return to the normal condition once the repair is completed and transcription restarted (16 hr after irradiation) (Figure 4A, green bar).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by FRAP data showing transient increase in XAB2 mobility at 3 hr and recovery at 16 hr after 8 J/m\u00b2 UV-C irradiation (Figure 4A).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "dedeac39-23ec-4731-a3b7-57393bc170ff",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C28",
+      "claim": "In CSA and CSB mutant cells, the increase in XAB2 mobility after 8 J/m\u00b2 irradiation lasted until 24 hr after UV-C exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in CSA and CSB mutant cells, the increase in XAB2 mobility is also observed after 8 J/m\u00b2 irradiation and lasted until 24 hr after UV-C exposure (Figure 4B), witnessing the fact that in these cells, DNA damage is not repaired and therefore initial intrinsic XAB2 mobility is not restored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by FRAP data showing sustained increased XAB2 mobility up to 24 hr after UV irradiation in CSA and CSB mutant cells (Figure 4B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "2b1b9245-8ef8-423c-9e39-61ecdda09db7",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C29",
+      "claim": "Without damage, XAB2 mobility is reduced in TC-NER-deficient cells compared to wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, without damage, XAB2 mobility is reduced in TC-NER-deficient cells compared to wild-type cells for still unknown reasons (Figure 4B, black histogram).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by FRAP data showing lower XAB2 mobility in CSA and CSB mutant cells without UV treatment (Figure 4B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "168ef4f9-2155-43a3-b556-c7b584d25b82",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C30",
+      "claim": "XAB2 increased mobility in transcription inhibition conditions is very similar to the one measured upon UV treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, results show that XAB2 increased mobility in transcription inhibition conditions is very similar to the one measured upon UV treatment (Figure 4C, red curve compared to blue curve).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by FRAP data showing similar XAB2 mobility changes after DRB treatment and UV irradiation (Figure 4C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "eaa1059f-4489-422c-a6a5-c8df2c90b094",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C31",
+      "claim": "ATR and ATM inhibitors did not modify the increase of XAB2 mobility after UV irradiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Both drugs did not modify the increase of XAB2 mobility after UV irradiation (Figure 4C, green curve and Figure 4\u2014figure supplement 1D) demonstrating that variations in XAB2 mobility after DNA damage are triggered and sustained by transcriptional inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by FRAP data showing similar XAB2 mobility increase after UV irradiation in the presence of ATR or ATM inhibitors (Figure 4C and Figure 4\u2014figure supplement 1D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "859ff48c-fc76-47aa-9d50-a1eef7b3167f",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C32",
+      "claim": "Variations in XAB2 mobility after DNA damage are triggered and sustained by transcriptional inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Both drugs did not modify the increase of XAB2 mobility after UV irradiation (Figure 4C, green curve and Figure 4\u2014figure supplement 1D) demonstrating that variations in XAB2 mobility after DNA damage are triggered and sustained by transcriptional inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by FRAP data showing that ATR/ATM inhibitors do not prevent XAB2 mobility increase, and DRB treatment mimics UV-induced mobility changes (Figure 4C and Figure 4\u2014figure supplement 1D).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "5d395b03-beaa-442d-981f-8b5cbb3956c7",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C33",
+      "claim": "XAB2 is not released from the splicing complex during DNA repair reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, immunoprecipitation or PLA experiment showed that XAB2 is not released from the splicing complex during DNA repair reactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunoprecipitation showing XAB2 and AQR co-immunoprecipitate after UV irradiation (Figure 5\u2014figure supplement 1A) and PLA showing maintained or increased interaction between XAB2 and AQR after UV (Figure 5\u2014figure supplement 1B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "c4dc451b-4ee7-4548-93a2-3c5f83a50182",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C34",
+      "claim": "More XAB2 immunoprecipitated from nuclear extracts 1\u20133 hr after UV-C irradiation in WT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, while trying to immunoprecipitate XAB2 interacting partners during DNA repair reactions, we could observe that systematically and consistently, more XAB2 immunoprecipitated from nuclear extracts 1\u20133 hr after UV-C irradiation in WT cells (Figure 5\u2014figure supplement 1A and Figure 5A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunoprecipitation data showing increased XAB2 immunoprecipitation 1-3 hr after UV irradiation (Figure 5A and Figure 5\u2014figure supplement 1A).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "7f0d6506-b1c3-481a-b95b-fe3cc152caa3",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C35",
+      "claim": "In CSA\u2212/\u2212 and CSB\u2212/\u2212 cell lines, the amount of XAB2 immunoprecipitated remained high all along the time course of the experiment (3 and 16 hr).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in CSA\u2212/\u2212 and CSB\u2212/\u2212 cell lines, in which UV lesions on transcribed strands of genes are not repaired, the amount of XAB2 immunoprecipitated remained high all along the time course of the experiment (3 and 16 hr) (Figure 5A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunoprecipitation data showing sustained high levels of XAB2 immunoprecipitation in CSA and CSB mutant cells at 3 and 16 hr after UV irradiation (Figure 5A).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "7d243979-edf8-4a7b-ae9b-058081e53bec",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C36",
+      "claim": "XAB2 directly interacts with R-loops.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunoprecipitation experiments with the S9.6 antibody show that XAB2 directly interacts with R-loops (Figure 5B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunoprecipitation data showing XAB2 co-immunoprecipitates with R-loops using S9.6 antibody (Figure 5B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "9f6948d3-e667-4d6f-a535-970db7d436bf",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C37",
+      "claim": "After Benzonase treatment, XAB2 is no more immunoprecipitated with R-loops.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, after Benzonase treatment, XAB2 is no more immunoprecipitated (Figure 5B), suggesting that XAB2 substrate is indeed DNA:RNA hybrids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunoprecipitation data showing loss of XAB2 co-immunoprecipitation after Benzonase treatment which degrades DNA:RNA hybrids (Figure 5B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "db3069b8-9e2a-40a9-b4e0-49d890686cba",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C38",
+      "claim": "An increased amount of R-loops is observed in cells silenced for XAB2 or AQR compared to control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this analysis method, we observed an increased amount of R-loops in cells silenced for XAB2 or AQR compared to control cells (Figure 5C and Figure 5\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunofluorescence data showing increased R-loops signal in XAB2- or AQR-silenced cells (Figure 5C and Figure 5\u2014figure supplement 3A).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "00c85f7e-fe11-419d-8e34-0331215edcc3",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C39",
+      "claim": "After UV irradiation, there is a strong and consistent reduction of more than 40% of the interactions between R-loops and XAB2.",
+      "claim_type": "EXPLICIT",
+      "source": "After UV irradiation, we measured a strong and consistent reduction of more than 40% of the interactions between R-loops and XAB2 and between R-loops and AQR (Figure 5D and Figure 5\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by PLA data showing >40% reduction in XAB2-R-loops interaction after UV irradiation (Figure 5D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "9c532d60-f5db-4ce1-a188-b5be9c313025",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C40",
+      "claim": "After UV irradiation, there is a strong and consistent reduction of more than 40% of the interactions between R-loops and AQR.",
+      "claim_type": "EXPLICIT",
+      "source": "After UV irradiation, we measured a strong and consistent reduction of more than 40% of the interactions between R-loops and XAB2 and between R-loops and AQR (Figure 5D and Figure 5\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by PLA data showing >40% reduction in AQR-R-loops interaction after UV irradiation (Figure 5D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "03e06f8d-7482-4f8b-9787-19aef3f40770",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C41",
+      "claim": "The reduced interactions between XAB2/AQR and R-loops are not caused by a reduction in R-loops, XAB2, or AQR concentration during DNA repair.",
+      "claim_type": "EXPLICIT",
+      "source": "These reduced interactions are not caused by a reduction in either R-loops, XAB2, or AQR concentration during DNA repair (Figure 5E and Figure 5\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by IF data showing constant levels of R-loops, XAB2, and AQR during DNA repair (Figure 5E and Figure 5\u2014figure supplement 3B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "072b27d7-90e2-42b7-bc7c-6184bbdd38eb",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C42",
+      "claim": "RNAseH reduces the quantity of R-loops.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that RNAseH reduced the quantity of R-loops (Figure 5\u2014figure supplement 4C,F) and in doing so, it also decreased the interaction with both XAB2 (Figure 5\u2014figure supplement 4C, D) and AQR (Figure 5\u2014figure supplement 4E, F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by IF and PLA data showing decreased R-loops signal after RNAseH treatment (Figure 5\u2014figure supplement 4C, F).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "9d9ca0a5-7634-4929-aa9a-eaaca5aadc4f",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C43",
+      "claim": "RNAseH decreases the interaction between R-loops and XAB2.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that RNAseH reduced the quantity of R-loops (Figure 5\u2014figure supplement 4C,F) and in doing so, it also decreased the interaction with both XAB2 (Figure 5\u2014figure supplement 4C, D) and AQR (Figure 5\u2014figure supplement 4E, F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by PLA data showing decreased XAB2-R-loops interaction after RNAseH treatment (Figure 5\u2014figure supplement 4C, D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "d0caf077-cfe1-430c-92cf-107bd1564b4c",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C44",
+      "claim": "RNAseH decreases the interaction between R-loops and AQR.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that RNAseH reduced the quantity of R-loops (Figure 5\u2014figure supplement 4C,F) and in doing so, it also decreased the interaction with both XAB2 (Figure 5\u2014figure supplement 4C, D) and AQR (Figure 5\u2014figure supplement 4E, F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by PLA data showing decreased AQR-R-loops interaction after RNAseH treatment (Figure 5\u2014figure supplement 4E, F).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "d69ca846-7bef-44d1-9005-f94d2d81acb6",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C45",
+      "claim": "A reduction in the interaction between XAB2 and mRNA was observed after UV irradiation.",
+      "claim_type": "EXPLICIT",
+      "source": "PLA results show that a reduction in the interaction between XAB2 and mRNA was observed (Figure 5\u2014figure supplement 5A, C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by PLA data showing decreased XAB2-mRNA interaction after UV irradiation (Figure 5\u2014figure supplement 5A, C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "a0c2622b-9003-4dac-8a68-b9433051764a",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C46",
+      "claim": "The reduction in XAB2-mRNA interaction paralleled the decrease of mRNA caused by UV-dependent transcription inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this reduction paralleled the decrease of mRNA caused by UV-dependent transcription inhibition (Figure 5\u2014figure supplement 5B, C), suggesting that the results observed in the PLA XAB2-mRNAs are due mainly to a decrease in mRNAs amount (Figure 5\u2014figure supplement 5A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by IF data showing decreased mRNA levels after UV irradiation that correlates with decreased XAB2-mRNA PLA signal (Figure 5\u2014figure supplement 5B, C).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "a9a89bbe-5e19-4ad2-9de3-2a36f1e1a413",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C47",
+      "claim": "A clear and consistent release from the CSA protein was observed 2 hr after UV irradiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Among all the proteins tested, we could observe a clear and consistent release from the CSA protein 2 hr after UV irradiation (Figure 6A) and from the XPG protein 1 hr after UV irradiation (Figure 6C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by PLA data showing reduced XAB2-CSA interaction 2 hr after UV irradiation (Figure 6A).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "7cba0c13-e110-4aeb-87f4-77cd6768c91a",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C48",
+      "claim": "A clear and consistent release from the XPG protein was observed 1 hr after UV irradiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Among all the proteins tested, we could observe a clear and consistent release from the CSA protein 2 hr after UV irradiation (Figure 6A) and from the XPG protein 1 hr after UV irradiation (Figure 6C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by PLA data showing reduced XAB2-XPG interaction 1 hr after UV irradiation (Figure 6C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "94a520a8-75e0-4725-8d8e-a051a10b3b2d",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C49",
+      "claim": "No clear reduction of interaction was observed between XAB2 and CSB.",
+      "claim_type": "EXPLICIT",
+      "source": "On the contrary, no clear reduction of interaction was observed between XAB2 and CSB (Figure 6\u2014figure supplement 1A, B) or between XAB2 and XPB (Figure 6\u2014figure supplement 1C, D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by PLA data showing no significant change in XAB2-CSB interaction after UV irradiation (Figure 6\u2014figure supplement 1A, B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "4d9915a6-41f4-4ab3-8bed-fcbdd5a7c591",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C50",
+      "claim": "No clear reduction of interaction was observed between XAB2 and XPB.",
+      "claim_type": "EXPLICIT",
+      "source": "On the contrary, no clear reduction of interaction was observed between XAB2 and CSB (Figure 6\u2014figure supplement 1A, B) or between XAB2 and XPB (Figure 6\u2014figure supplement 1C, D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by PLA data showing no significant change in XAB2-XPB interaction after UV irradiation (Figure 6\u2014figure supplement 1C, D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "f5ec979e-c467-4e98-b388-a59be39ba0f2",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C51",
+      "claim": "Depletion of XAB2 significantly increased the mobility of RNAP2.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, depletion of XAB2 significantly increased the mobility of RNAP2 (Figure 7A, dark red curve vs. dark blue curve), demonstrating that XAB2 maintains RNAP2 bound to its substrate during transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by FRAP data showing increased RNAP2 mobility in XAB2-silenced cells (Figure 7A).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "3c992955-a5e3-4124-ac9a-e5b0af079eea",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C52",
+      "claim": "XAB2 maintains RNAP2 bound to its substrate during transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, depletion of XAB2 significantly increased the mobility of RNAP2 (Figure 7A, dark red curve vs. dark blue curve), demonstrating that XAB2 maintains RNAP2 bound to its substrate during transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by FRAP data showing increased RNAP2 mobility in XAB2-silenced cells, indicating reduced binding to substrate (Figure 7A).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "bbb77ffc-2832-4a4a-a97e-5a6516ac7de3",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C53",
+      "claim": "After UV irradiation, RNAP2 mobility did not change significantly, both in the presence and absence of XAB2.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, after UV irradiation, RNAP2 mobility did not change significantly (p-value superior at 0.05), both in the presence and absence of XAB2 (Figure 7A, light curve vs. dark curve).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by FRAP data showing no significant change in RNAP2 mobility after UV irradiation in either siMock or siXAB2 conditions (Figure 7A).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "b875e0af-7408-408e-a65d-c6da6e54e9cb",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C54",
+      "claim": "A more robust and persistent interaction of RNAP2 with 6-4PP lesions was measured after UV irradiation in XAB2-silenced cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, we measured a more robust and persistent interaction of RNAP2 with 6-4PP lesions after UV irradiation in XAB2-silenced cells (Figure 7B and Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by PLA data showing stronger and longer-lasting RNAP2-6-4PP interaction in XAB2-silenced cells (Figure 7B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "727eb75d-1ccc-4d42-be3b-8fe9df44e65d",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C55",
+      "claim": "Without XAB2, DNA is not properly repaired and as a consequence, RNAP2 interacts longer with UV lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that, without XAB2, DNA is not properly repaired and as a consequence, RNAP2 interacts longer with UV lesions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by PLA data showing stronger and more persistent RNAP2-6-4PP interaction in XAB2-silenced cells (Figure 7B), combined with TCR-UDS data showing reduced repair in XAB2-silenced cells (Figure 1D).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "16a6c67e-7e2c-4dd7-9a4e-6811a2852e3d",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C56",
+      "claim": "XAB2 protein was identified as a protein interacting with XPA using a yeast two-hybrid system.",
+      "claim_type": "EXPLICIT",
+      "source": "XAB2 protein was identified as a protein interacting with XPA, a NER factor, using a yeast two-hybrid system (Nakatsu et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Nakatsu et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "ef261d95-0edd-42fb-a428-13919aeb4829",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C57",
+      "claim": "XAB2 interacts with the TC-NER-specific factors, CSA and CSB, and the elongating form of RNAP2.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, it has been shown that XAB2 interacts also with the TC-NER-specific factors, CSA and CSB, and the elongating form of RNAP2 (Nakatsu et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Nakatsu et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "c2c575a9-2a65-4413-9400-8b334a3251aa",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C58",
+      "claim": "XAB2 is essential for early mouse embryogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "XAB2 is also essential for early mouse embryogenesis, as demonstrated by the preimplantation lethality observed in XAB2 knockout mice (Yonemasu et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yonemasu et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "12694a61-319b-408d-bed8-e45756641fa0",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C59",
+      "claim": "Downregulation of XAB2 inhibits normal RNA synthesis and the recovery of RNA synthesis after UV irradiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Downregulation of XAB2, using either anti-XAB2 or siRNA, inhibits normal RNA synthesis and the recovery of RNA synthesis after UV irradiation (Kuraoka et al., 2008; Nakatsu et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kuraoka et al., 2008 and Nakatsu et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "0a50686e-c9ac-41cc-9642-c7cf486c9724",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C60",
+      "claim": "Injection of anti-XAB2 in GG-NER-deficient cells significantly reduces UV-induced Unscheduled DNA Synthesis (UDS) during repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, injection of anti-XAB2 in GG-NER-deficient cells significantly reduces UV-induced Unscheduled DNA Synthesis (UDS) during repair (Nakatsu et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Nakatsu et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "2374f91e-6dc3-47c2-9564-2bf2a0a75c92",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C61",
+      "claim": "XAB2 is a component of the Prp19/XAB2 complex required for pre-mRNA splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "Further studies have shown that XAB2 is a component of the Prp19/XAB2 complex (Aquarius [AQR], XAB2, Prp19, CCDC16, hISY1, and PPIE) or Prp19/CDC5L-related complex required for pre-mRNA splicing (Kuraoka et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kuraoka et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "de1360de-daa3-491c-b4b0-d4d8e7360c96",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C62",
+      "claim": "XAB2, as well as PRP19 and AQR, has been involved in the DNA damage response (DDR).",
+      "claim_type": "EXPLICIT",
+      "source": "XAB2, as well as PRP19 and AQR, has been involved in the DNA damage response (DDR) (Mar\u00e9chal et al., 2014; Onyango et al., 2016; Sakasai et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Mar\u00e9chal et al., 2014; Onyango et al., 2016; and Sakasai et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "10b31631-5c2f-4f6f-89c5-ac81f6771abe",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C63",
+      "claim": "XAB2 is essential for homologous recombination (HR) by promoting the end resection step.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, XAB2 is essential for homologous recombination (HR) by promoting the end resection step (Onyango et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Onyango et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "e3805ab0-a6ba-49ad-9605-cd7d2ae4d8d9",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C64",
+      "claim": "PRP19 is a sensor of RPA-ssDNA after DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "PRP19 is a sensor of RPA-ssDNA after DNA damage (Mar\u00e9chal et al., 2014) and AQR contributes to the maintenance of genomic stability via regulation of HR (Sakasai et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mar\u00e9chal et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "ab308ae0-88b7-4687-a893-0b6c20893241",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C65",
+      "claim": "AQR contributes to the maintenance of genomic stability via regulation of HR.",
+      "claim_type": "EXPLICIT",
+      "source": "PRP19 is a sensor of RPA-ssDNA after DNA damage (Mar\u00e9chal et al., 2014) and AQR contributes to the maintenance of genomic stability via regulation of HR (Sakasai et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sakasai et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "8aca27e3-bc75-4bc6-955f-cd97ef4886f0",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C66",
+      "claim": "AQR has a role in removing R-loops.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, AQR has a role in removing R-loops, a three-stranded nucleic acids structure composed of a DNA:RNA hybrid and the associated nontemplate single-stranded DNA (Sollier et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sollier et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "b6179716-34d4-4058-a419-bfc6d0536bd6",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C67",
+      "claim": "R-loops are found abundantly in human gene promoters and terminators where RNA processing occurs.",
+      "claim_type": "EXPLICIT",
+      "source": "They are found abundantly in human gene promoters and terminators where RNA processing occurs (Wang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wang et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "01748dc5-6264-4953-9767-027d1051cbdc",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C68",
+      "claim": "XAB2 has been recently identified as involved in R-loops resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Differently from total RNAs, in our study, we observe that R-loops do not decrease in number after UV damage and transcription inhibition (Figure 5E). Therefore, the interaction XAB2_R-loops and AQR_R-loops is specifically hindered after UV damage (Figure 5D). However, a careful interpretation of these results should be made because a recent paper demonstrates that the S9.6 antibody, specific for DNA:RNA hybrids, can also recognize other nucleic acid structures in immunofluorescence assay (Smolka et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Goulielmaki et al., 2021 mentioned in the text.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "6268425d-fa1a-4e90-a810-723c02eb9606",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C69",
+      "claim": "In AQR-depleted cells, R-loops formation is induced and these R-loops are actively processed into DNA double-strand breaks by XPF and XPG.",
+      "claim_type": "EXPLICIT",
+      "source": "It was previously demonstrated that, in AQR-depleted cells, R-loops formation is induced. These R-loops are actively processed into DNA double-strand breaks by XPF and XPG, the NER endonucleases (Sollier et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sollier et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "e595607f-1bf0-4cdc-8297-f1b2683bd223",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C70",
+      "claim": "A complete TC-NER mechanism is required to repair the UV lesions present on active rDNA, genes transcribed by RNAP1.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we reported that a complete TC-NER mechanism is required to repair the UV lesions present on active rDNA, genes transcribed by RNAP1 (Daniel et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Daniel et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "b7f83f80-b1cd-434e-89fb-2b7f0fb20ffc",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C71",
+      "claim": "Both Cockayne syndrome proteins (CSA and CSB) are implicated in repair of UV lesions on active rDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, both Cockayne syndrome proteins (CSA and CSB) are implicated in this specific repair reaction, as well as the UV-stimulated scaffold protein A (UVSSA), a protein required for the stabilization of CSB specifically after UV irradiation (Higa et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Daniel et al., 2018 and Higa et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "41fbe493-2ce4-42f7-b18e-f73d9812e37a",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C72",
+      "claim": "UVSSA is a protein required for the stabilization of CSB specifically after UV irradiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, both Cockayne syndrome proteins (CSA and CSB) are implicated in this specific repair reaction, as well as the UV-stimulated scaffold protein A (UVSSA), a protein required for the stabilization of CSB specifically after UV irradiation (Higa et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Higa et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "680a7bc6-641e-4946-9da7-a0ef34a6b21b",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C73",
+      "claim": "The S9.6 antibody can recognize other nucleic acid structures besides DNA:RNA hybrids in immunofluorescence assay.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a careful interpretation of these results should be made because a recent paper demonstrates that the S9.6 antibody, specific for DNA:RNA hybrids, can also recognize other nucleic acid structures in immunofluorescence assay (Smolka et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Smolka et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "16dd4c5d-942e-48bb-86e2-6f886f817b62",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C74",
+      "claim": "The S9.6 signal is prominently cytoplasmic and nucleolar and derives mainly from ribosomal RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been demonstrated that the S9.6 signal is prominently cytoplasmic and nucleolar and derives mainly from ribosomal RNA (Smolka et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Smolka et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "0a97ce05-547c-464a-95fa-f4fcb2fb435b",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C75",
+      "claim": "XAB2 intervenes in the early steps of TC-NER or at least in the steps that imply the activity of CSB and TFIIH.",
+      "claim_type": "IMPLICIT",
+      "source": "These results suggest that XAB2 intervenes in the early steps of TC-NER or at least in the steps that imply the activity of CSB and TFIIH and most probably the early RNAP2 blocking-recognition step.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from PLA data showing XAB2 release from CSA and XPG but not from CSB or XPB (Figure 6), combined with knowledge of TC-NER pathway steps.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "97ce1a6d-31f1-4da3-8b72-59437cf2838e",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C76",
+      "claim": "XAB2 most probably functions in the early RNAP2 blocking-recognition step.",
+      "claim_type": "IMPLICIT",
+      "source": "These results suggest that XAB2 intervenes in the early steps of TC-NER or at least in the steps that imply the activity of CSB and TFIIH and most probably the early RNAP2 blocking-recognition step.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from data showing RNAP2 remains longer on UV lesions in XAB2-silenced cells (Figure 7B), suggesting XAB2 helps RNAP2 detach from lesions during damage recognition.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "62e3220a-e95b-47bf-ac06-2efbb0ca6aad",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C77",
+      "claim": "XAB2 is released from CSA and XPG proteins associated with R-loops processing.",
+      "claim_type": "IMPLICIT",
+      "source": "However, the reduction of interactions between XAB2 and CSA or XPG is less striking than the one with R-loops. As suggested in Goulielmaki et al., 2021, another working hypothesis would be that XAB2 is released from CSA and XPG proteins associated with R-loops processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from PLA data showing XAB2 release from both R-loops (Figure 5D) and from CSA/XPG (Figure 6A, C), combined with citation to Goulielmaki et al., 2021.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "cb400a8c-97da-4444-b896-65f6071791d2",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C78",
+      "claim": "The binding between XAB2 and its substrate is not restored in TCR-deficient cells.",
+      "claim_type": "IMPLICIT",
+      "source": "Moreover, in CSA\u2212/\u2212 and CSB\u2212/\u2212 cell lines, in which UV lesions on transcribed strands of genes are not repaired, the amount of XAB2 immunoprecipitated remained high all along the time course of the experiment (3 and 16 hr) (Figure 5A). These results hinted that the binding between XAB2 and its substrate is not restored in TCR-deficient cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from immunoprecipitation data showing sustained high XAB2 immunoprecipitation in CSA/CSB mutant cells (Figure 5A), suggesting altered XAB2-substrate dynamics when repair is defective.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "82f215da-a773-4d95-b307-0c4250ffb15d",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C79",
+      "claim": "The re-establishment of the proper localization of XAB2 within the nucleus after the DNA repair process depends either on the repair process per se or on the restart of transcription after the achievement of DNA repair reactions.",
+      "claim_type": "IMPLICIT",
+      "source": "However, this release persisted 16 hr after UV-C exposure (Figure 3C blue and red curves compared to black curve and Figure 3\u2014figure supplement 4), suggesting that the re-establishment of the proper localization of XAB2 within the nucleus after the DNA repair process depends either on the repair process per se or on the restart of transcription after the achievement of DNA repair reactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from data showing XAB2 localization is not restored in CSA/CSB mutant cells where repair and transcription restart are defective (Figure 3C).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "358993b2-dfb5-447b-bf67-21376aae4b0f",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C80",
+      "claim": "The increased XAB2 mobility might partly be explained by the release of XAB2 from its substrate R-loops and its partner CSA and XPG.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, we describe here an increased mobility of the protein XAB2 during the DNA damage-dependent transcription inhibition. This increased mobility might partly be explained by the release of XAB2 from its substrate R-loops and its partner CSA and XPG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by FRAP data showing increased XAB2 mobility (Figure 4A), PLA data showing XAB2 release from R-loops (Figure 5D), and release from CSA and XPG (Figure 6A, C).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "90766835-133a-4620-b51e-b043cbac1b63",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C81",
+      "claim": "The absence of XAB2 hinders the overall transcription activity of the cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we demonstrate that XAB2 plays an anchoring role for RNAP2 to its substrate during transcription and helps RNAP2 to detach from UV lesions after DNA damage. As aconsequence, the absence of XAB2 hinders the overall transcription activity of the cells and severely affects the TC-NER capacity (Figure 8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RRS data showing no transcription restart in XAB2-silenced cells (Figure 1C) and FRAP data showing increased RNAP2 mobility in XAB2-silenced cells (Figure 7A).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "c286804a-b15a-4485-a1dc-07327167832c",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C82",
+      "claim": "The absence of XAB2 severely affects the TC-NER capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we demonstrate that XAB2 plays an anchoring role for RNAP2 to its substrate during transcription and helps RNAP2 to detach from UV lesions after DNA damage. As aconsequence, the absence of XAB2 hinders the overall transcription activity of the cells and severely affects the TC-NER capacity (Figure 8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by TCR-UDS data showing decreased repair replication in XAB2-silenced cells (Figure 1D) and PLA data showing prolonged RNAP2-lesion interaction in XAB2-silenced cells (Figure 7B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "f9cebbd6-f2b8-4c9c-be55-313ea712f829",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C83",
+      "claim": "XAB2 helps RNAP2 to detach from UV lesions after DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we demonstrate that XAB2 plays an anchoring role for RNAP2 to its substrate during transcription and helps RNAP2 to detach from UV lesions after DNA damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by PLA data showing stronger and more persistent RNAP2-6-4PP interaction in XAB2-silenced cells (Figure 7B), indicating RNAP2 remains stuck on lesions without XAB2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "3671f51f-7519-4e65-ba18-0c65ce91e21c",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C84",
+      "claim": "NER requires more than 30 different proteins that are recruited sequentially to the DNA damage site.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, the different steps of NER require more than 30 different proteins that are recruited sequentially to the DNA damage site, as demonstrated by the different studies of NER proteins kinetics (Mon\u00e9 et al., 2004; Politi et al., 2005; Rademakers et al., 2003; van den Boom et al., 2004; Zotter et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies on NER protein kinetics.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "bb451fa4-6f4a-4409-ae85-73c40633b58e",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C85",
+      "claim": "The first step of NER consists of damage recognition, followed by the opening of the DNA duplex, dual incisions on both sides of the damage, excision of 24\u201332 oligonucleotides containing the damage and, finally, gap-filling by repair DNA synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The first step of NER consists of damage recognition, followed by the opening of the DNA duplex, dual incisions on both sides of the damage, excision of 24\u201332 oligonucleotides containing the damage and, finally, gap-filling by repair DNA synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Represents established knowledge about NER pathway steps.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "ec3f27d3-6c64-460d-8066-94a4af56485d",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C86",
+      "claim": "NER is divided into two subpathways: Global Genome repair (GG-NER) and Transcription-Coupled repair (TC-NER).",
+      "claim_type": "EXPLICIT",
+      "source": "NER is divided into two subpathways depending on DNA lesions position within the genome. The Global Genome repair (GG-NER) will detect and repair lesions throughout the genome, whereas Transcription-Coupled repair (TC-NER) is associated with RNA polymerase 2 (RNAP2) to repair lesions on the transcribed strand of active genes (Marteijn et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Represents established knowledge about NER subpathways, supported by citation to Marteijn et al., 2014.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "ef49240e-3869-41aa-9e9b-fb474f7eb750",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C87",
+      "claim": "TC-NER is associated with RNA polymerase 2 (RNAP2) to repair lesions on the transcribed strand of active genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The Global Genome repair (GG-NER) will detect and repair lesions throughout the genome, whereas Transcription-Coupled repair (TC-NER) is associated with RNA polymerase 2 (RNAP2) to repair lesions on the transcribed strand of active genes (Marteijn et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Represents established knowledge about TC-NER, supported by citation to Marteijn et al., 2014.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "b383bcfb-3ce8-4ae9-8d4d-33d0125cdb92",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C88",
+      "claim": "CS and TTD patients are not cancer prone but present severe neurological and developmental features.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, CS and TTD patients are not cancer prone but present severe neurological and developmental features (Hanawalt, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Represents established clinical knowledge about CS and TTD, supported by citation to Hanawalt, 1994.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "fc90957d-599c-44b2-b48b-d6f8a3c40d93",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C89",
+      "claim": "XAB2 protein consists of 15 tetratricopeptide repeat (TPR) motifs that carry out protein\u2013protein interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Xeroderma Pigmentosum group A (XPA)-binding protein 2 (XAB2) is a highly conserved protein of 100 kDa and consists of 15 tetratricopeptide repeat (TPR) motifs that carry out protein\u2013protein interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Represents established structural knowledge about XAB2 protein.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "8e92e1bb-de98-46e0-aa6f-3e1ddc500e73",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C90",
+      "claim": "R-loops are a three-stranded nucleic acid structure composed of a DNA:RNA hybrid and the associated nontemplate single-stranded DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, AQR has a role in removing R-loops, a three-stranded nucleic acids structure composed of a DNA:RNA hybrid and the associated nontemplate single-stranded DNA (Sollier et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Represents established knowledge about R-loop structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "9efe1f65-1b21-4b7e-acb9-9859e4ce9a6e",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C91",
+      "claim": "R-loops can form during transcription, when an RNA molecule emerging from the transcription machinery hybridizes with its DNA template.",
+      "claim_type": "EXPLICIT",
+      "source": "These structures can form during transcription, when an RNA molecule emerging from the transcription machinery hybridizes with its DNA template.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Represents established knowledge about R-loop formation mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "cc244fcf-0bee-4154-b70b-10f13002b032",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C92",
+      "claim": "Transcription blockage due to DNA damage appears to result in R-loops formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcription blockage due to DNA damage appears to result in R-loops formation (Mullenders, 2015; Steurer and Marteijn, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Mullenders, 2015 and Steurer and Marteijn, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "6715d450-1e17-4ff5-ac3b-79efc57a5363",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C93",
+      "claim": "The mobility of late-stage spliceosomes changes after UV irradiation and depends on DDR signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "As for XAB2, the mobility of the late-stage spliceosomes changes after UV irradiation. This mobilization depends on DDR signaling pathways (Tresini et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tresini et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "5dfb1078-c3ea-4d88-a484-11df8446468d",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "claim_id": "C94",
+      "claim": "ATM and ATR kinases are key mediators of DDR, which induce cell cycle arrest and facilitate DNA repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Key mediators of DDR are the ATM and ATR kinases, which induce cell cycle arrest and facilitate DNA repair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Represents established knowledge about DDR signaling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "014345d5-6fd7-40d0-9dc1-2ce9a3277dee",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "XAB2 is specifically and exclusively involved in TC-NER for RNAP2-transcribed genes, but not in GG-NER or repair of RNAP1-transcribed genes. XAB2 silencing abolishes transcription restart after UV damage and reduces TC-NER repair replication.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C12-C14, and C19 collectively demonstrate XAB2's specific role in TC-NER through multiple complementary assays: UDS shows no GG-NER defect (C12), TCR-UDS shows reduced repair in XAB2-silenced cells (C14), RRS shows no transcription restart (C13), and RNA-FISH shows RNAP1 transcription restarts normally (C19). The convergence of these independent experimental approaches provides strong support for the specificity claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "daf95d26-5810-41fc-a583-0e235759bc1d",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "XAB2 interacts with UV-induced DNA lesions (6-4PPs and CPDs) in a time-dependent manner that correlates with lesion abundance during repair, while XAB2 protein levels remain constant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C18 are supported by PLA and IF data showing XAB2 interaction with both 6-4PP and CPD lesions that decreases as repair progresses, while XAB2 levels remain stable. The temporal correlation between lesion removal and decreased XAB2-lesion interaction provides strong evidence for XAB2's direct involvement in the repair process.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "4f7df7e8-7b34-4af8-a92e-9403087da986",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "XAB2 and associated splicing complex proteins (AQR, PRP19, CCDC16) are released from locally UV-damaged areas within 1 hr, contrary to typical NER protein behavior, and proper localization is restored after repair completion at 16 hr.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C20, and C21 are supported by immunofluorescence data showing release of XAB2 and splicing partners from damaged areas at 1 hr and restoration at 16 hr. This unusual behavior is well-documented and distinguishes XAB2 from other NER proteins. The temporal correlation with repair completion strengthens the finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "6b1bd6df-334a-4eec-829d-f47eeb67aece",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "XAB2 mobility increases in a dose-dependent manner after UV irradiation and is restored when repair is completed in wild-type cells, but remains elevated in TC-NER-deficient cells where repair cannot occur.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C26-C29 are supported by comprehensive FRAP experiments showing dose-dependent XAB2 mobility changes that correlate with repair status. The observation that mobility remains elevated in CSA/CSB mutant cells (C28) where repair is defective provides strong evidence that mobility restoration depends on repair completion. The reduced basal mobility in TC-NER-deficient cells (C29) is noted but unexplained.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "35113d8e-d6d1-4856-834f-e618cd4eecb8",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "XAB2 mobility changes after UV damage are triggered by transcriptional inhibition rather than DNA damage response signaling, as demonstrated by similar mobility changes with transcription inhibitor DRB and lack of effect from ATR/ATM inhibitors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32 are supported by FRAP experiments showing that DRB treatment mimics UV-induced mobility changes and ATR/ATM inhibitors do not prevent these changes. This provides strong evidence that transcriptional inhibition, not DDR signaling, drives XAB2 mobility changes. The experimental design appropriately distinguishes between these mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "da71e666-323b-4a58-a8fd-0afaac4d1c87",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Other XAB2-splicing complex proteins (AQR, PRP19, CCDC16, PPIE, ISY1) are not required for either GG-NER or TC-NER, demonstrating XAB2's unique role in DNA repair among splicing factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22 and C23 are supported by UDS, TCR-UDS, and RRS assays showing proficient repair in cells silenced for other splicing complex members. This demonstrates that XAB2's repair function is independent of its splicing partners, highlighting its unique dual role. The comprehensive testing of multiple complex members strengthens this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "f9ca8e1b-e06d-4e71-bca3-e3d10b272371",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "XAB2 release from damaged areas occurs independently of CSA and CSB proteins, but restoration of proper XAB2 localization requires functional TC-NER and/or transcription restart.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24, C25, and C79 are supported by immunofluorescence data showing XAB2 release occurs in CSA/CSB mutant cells but restoration does not occur at 16 hr. This demonstrates that while release is CSA/CSB-independent, restoration depends on repair completion or transcription restart. The data cannot distinguish between these two possibilities, as acknowledged in C79.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "8a7bfa37-c06f-4bef-b98e-8307e6b8f187",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "XAB2 is not released from the splicing complex during DNA repair, as shown by maintained or increased co-immunoprecipitation with AQR. More XAB2 is immunoprecipitated 1-3 hr after UV in wild-type cells, and this remains elevated in TC-NER-deficient cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 are supported by co-immunoprecipitation and PLA data showing maintained XAB2-AQR interaction after UV. The increased XAB2 immunoprecipitation (C34) and sustained elevation in CSA/CSB mutants (C35) suggest altered XAB2-substrate dynamics rather than splicing complex dissociation. This distinguishes XAB2's release from R-loops/chromatin from its splicing complex associations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "1d2bfe6f-de32-4611-a2ca-22bd74210b9a",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "XAB2 and AQR directly interact with R-loops, and this interaction is reduced by >40% after UV irradiation without changes in R-loop, XAB2, or AQR levels. XAB2/AQR depletion increases cellular R-loop levels, and RNAseH treatment reduces both R-loops and XAB2/AQR-R-loop interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C44 are supported by multiple complementary approaches: immunoprecipitation with S9.6 antibody (C36-C37), IF showing increased R-loops in XAB2/AQR-depleted cells (C38), PLA showing >40% reduction in interactions after UV (C39-C40) without protein level changes (C41), and RNAseH controls (C42-C44). However, the authors acknowledge potential S9.6 antibody cross-reactivity issues (C73), which introduces some uncertainty about whether the substrate is specifically DNA:RNA hybrids or other nucleic acid structures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "fbbc209c-75b2-4b2b-bc6f-a7472827c479",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The reduction in XAB2-mRNA interaction after UV irradiation parallels the decrease in mRNA levels caused by transcription inhibition, suggesting this is not a specific release event but rather reflects reduced mRNA abundance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45 and C46 are supported by PLA and IF data showing correlated decreases in both XAB2-mRNA interaction and total mRNA levels. This appropriately distinguishes the R-loop release (which occurs without R-loop level changes) from mRNA interactions (which decrease proportionally to mRNA levels). The interpretation is sound and demonstrates careful experimental analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "bba0f0f4-4ead-4952-a072-cb97e355a8c0",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "XAB2 is released from CSA protein at 2 hr and from XPG protein at 1 hr after UV irradiation, as measured by PLA, without corresponding changes in CSA or XPG protein levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C8, C47, and C48 are supported by PLA data showing reduced XAB2-CSA and XAB2-XPG interactions at specific time points after UV, with IF controls confirming stable protein levels. The temporal differences (1 hr for XPG, 2 hr for CSA) may reflect different roles in the TC-NER pathway, though this is not fully explored.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "1393002f-0b78-4b3f-80fb-f14951a91669",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "No clear reduction in interaction was observed between XAB2 and CSB or between XAB2 and XPB after UV irradiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49 and C50 are supported by PLA data showing maintained interactions with CSB and XPB. This negative result is important for understanding XAB2's position in the TC-NER pathway and suggests XAB2 functions in early steps involving CSB and TFIIH (which contains XPB), as discussed in C75.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "18c8dbf6-de73-4226-b86b-63ab0a880a46",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "XAB2 maintains RNAP2 bound to its substrate during normal transcription, as demonstrated by significantly increased RNAP2 mobility in XAB2-depleted cells measured by FRAP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C51, and C52 are supported by FRAP data showing increased RNAP2 mobility when XAB2 is depleted. This demonstrates XAB2's role in anchoring RNAP2 to DNA during transcription. The interpretation that increased mobility reflects reduced substrate binding (C52) is reasonable and consistent with the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "44614f4e-ad26-4f0e-8baa-5f5b072cb03f",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "RNAP2 mobility does not change significantly after UV irradiation in either the presence or absence of XAB2, as measured by FRAP with p-value >0.05.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C53 is supported by FRAP data with appropriate statistical analysis. This finding suggests that UV-induced RNAP2 stalling does not dramatically alter overall RNAP2 mobility as measured by this technique, though PLA reveals more subtle changes in RNAP2-lesion interactions (C54).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "ef95a82c-4fce-4927-b9ab-9103b1382100",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "In XAB2-silenced cells, RNAP2 shows stronger and more persistent interaction with 6-4PP lesions after UV irradiation, indicating that XAB2 helps RNAP2 detach from UV lesions during the DNA damage recognition step of TC-NER.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C10, C54, C55, and C83 are supported by PLA data showing prolonged RNAP2-6-4PP interaction in XAB2-depleted cells, combined with TCR-UDS data showing repair deficiency. This provides strong evidence for XAB2's role in the damage recognition step by facilitating RNAP2 release from lesions. The interpretation linking prolonged RNAP2-lesion interaction to impaired repair is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "f324e7e3-4674-4488-ad75-b0d40fb2c849",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "XAB2 functions in the early steps of TC-NER, specifically in the RNAP2 blocking-recognition step, as inferred from its release pattern from CSA/XPG but not CSB/XPB and from RNAP2 behavior in XAB2-depleted cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75 and C76 are inferred from multiple lines of evidence: differential release from TC-NER proteins (C47-C50), prolonged RNAP2-lesion interaction without XAB2 (C54), and knowledge of TC-NER pathway steps. While these are implicit claims based on inference, the reasoning is sound and well-supported by the experimental data. The conclusion that XAB2 functions in early damage recognition is consistent with all observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "60755cd3-ec09-4ee4-8adf-2646586fe7ca",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "XAB2 may be released from CSA and XPG proteins that are associated with R-loops processing, as suggested by the observation that XAB2 releases from both R-loops and these proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C77 is presented as a hypothesis based on the observation that XAB2 releases from both R-loops and CSA/XPG. While this is an interesting possibility supported by the cited work (Goulielmaki et al., 2021), the manuscript does not provide direct evidence that CSA/XPG are associated with R-loops processing or that XAB2's release from these proteins is mechanistically linked to R-loop release. This remains speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "53aa5973-851c-4446-825f-45737df4aa52",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The binding between XAB2 and its substrate is not restored in TC-NER-deficient cells, as inferred from sustained high XAB2 immunoprecipitation in CSA/CSB mutant cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C78 is inferred from immunoprecipitation data (C35) showing sustained high XAB2 levels in CSA/CSB mutants. This interpretation is reasonable and suggests that XAB2-substrate dynamics depend on functional TC-NER. However, the exact nature of the substrate and the mechanism of altered binding remain unclear.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "e7ec3e07-4e09-48ea-bb4e-431154ed725d",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The increased XAB2 mobility during DNA damage-dependent transcription inhibition is partly explained by XAB2's release from R-loops and from CSA and XPG proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C80 integrates findings from multiple experiments showing increased XAB2 mobility (C4, C26-C27), release from R-loops (C39), and release from CSA/XPG (C47-C48). The use of 'partly explained' is appropriate given that other factors may contribute. This represents a reasonable synthesis of the experimental findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "27b5a580-a752-4cde-a550-dcd8c39633eb",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The absence of XAB2 hinders overall transcription activity and severely affects TC-NER capacity, as demonstrated by lack of transcription restart, reduced repair replication, and altered RNAP2 behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81 and C82 are supported by multiple lines of evidence: RRS showing no transcription restart (C13), TCR-UDS showing reduced repair (C14), increased RNAP2 mobility (C51), and prolonged RNAP2-lesion interaction (C54). These findings collectively demonstrate XAB2's dual role in transcription and repair, supporting the overall conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    },
+    {
+      "id": "30289fe7-707f-4549-89ed-2c99dbb71fcf",
+      "content_id": "c9fb2f04-1b94-4b88-883b-f44a1307f3a0",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Background knowledge and prior work establishing XAB2's known interactions, functions, and the NER pathway context, including XAB2's identification as XPA-binding protein, its role in splicing, embryonic development, and previous links to DNA repair and R-loops.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C94 represent established knowledge from prior literature, appropriately cited throughout. These provide necessary context for interpreting the current findings. The citations appear accurate and relevant, though detailed verification of each cited claim is beyond the scope of this review. These background claims are appropriately distinguished from the novel findings of the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:34:03.475941Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e25ad937-3197-41f9-bb42-f559653df06c",
+      "result_id": "014345d5-6fd7-40d0-9dc1-2ce9a3277dee"
+    },
+    {
+      "claim_id": "d24527bc-936f-49b2-9921-2b337d6f8e95",
+      "result_id": "014345d5-6fd7-40d0-9dc1-2ce9a3277dee"
+    },
+    {
+      "claim_id": "5be96fb9-b4e8-4fab-a7e2-073433feef48",
+      "result_id": "014345d5-6fd7-40d0-9dc1-2ce9a3277dee"
+    },
+    {
+      "claim_id": "81d0b2b2-6415-43f3-b151-a29f898d6a9e",
+      "result_id": "014345d5-6fd7-40d0-9dc1-2ce9a3277dee"
+    },
+    {
+      "claim_id": "98605c98-3ddb-4a8e-b29c-719f6518c6ad",
+      "result_id": "014345d5-6fd7-40d0-9dc1-2ce9a3277dee"
+    },
+    {
+      "claim_id": "87ac1473-dc59-44ff-9b41-90feaf88c62b",
+      "result_id": "014345d5-6fd7-40d0-9dc1-2ce9a3277dee"
+    },
+    {
+      "claim_id": "73a35ddd-6a28-4dca-b040-afc13c7f69fb",
+      "result_id": "daf95d26-5810-41fc-a583-0e235759bc1d"
+    },
+    {
+      "claim_id": "1438b820-c5e4-452d-85b1-79833f84b220",
+      "result_id": "daf95d26-5810-41fc-a583-0e235759bc1d"
+    },
+    {
+      "claim_id": "be5bf532-35e4-42f7-8aeb-876c99dd377d",
+      "result_id": "daf95d26-5810-41fc-a583-0e235759bc1d"
+    },
+    {
+      "claim_id": "61fb0e58-2be0-48b7-96b1-972208e7c3ba",
+      "result_id": "daf95d26-5810-41fc-a583-0e235759bc1d"
+    },
+    {
+      "claim_id": "05772973-4822-4a91-b750-3968f7ee8e2d",
+      "result_id": "4f7df7e8-7b34-4af8-a92e-9403087da986"
+    },
+    {
+      "claim_id": "20eb419d-53a4-4793-a122-12d2d8a9fdcb",
+      "result_id": "4f7df7e8-7b34-4af8-a92e-9403087da986"
+    },
+    {
+      "claim_id": "162ed3e9-f40a-4b09-bb2f-5f175e1b40a6",
+      "result_id": "4f7df7e8-7b34-4af8-a92e-9403087da986"
+    },
+    {
+      "claim_id": "7589afae-903d-4735-953f-808e07a84ad3",
+      "result_id": "4f7df7e8-7b34-4af8-a92e-9403087da986"
+    },
+    {
+      "claim_id": "f3419500-8b07-4927-a8bd-4ac4b50109b6",
+      "result_id": "6b1bd6df-334a-4eec-829d-f47eeb67aece"
+    },
+    {
+      "claim_id": "02dc973e-bb9f-4ae2-8649-fdf6eb74ed47",
+      "result_id": "6b1bd6df-334a-4eec-829d-f47eeb67aece"
+    },
+    {
+      "claim_id": "342b3473-9e91-4141-9c67-f62f8813ec5a",
+      "result_id": "6b1bd6df-334a-4eec-829d-f47eeb67aece"
+    },
+    {
+      "claim_id": "dedeac39-23ec-4731-a3b7-57393bc170ff",
+      "result_id": "6b1bd6df-334a-4eec-829d-f47eeb67aece"
+    },
+    {
+      "claim_id": "2b1b9245-8ef8-423c-9e39-61ecdda09db7",
+      "result_id": "6b1bd6df-334a-4eec-829d-f47eeb67aece"
+    },
+    {
+      "claim_id": "168ef4f9-2155-43a3-b556-c7b584d25b82",
+      "result_id": "35113d8e-d6d1-4856-834f-e618cd4eecb8"
+    },
+    {
+      "claim_id": "eaa1059f-4489-422c-a6a5-c8df2c90b094",
+      "result_id": "35113d8e-d6d1-4856-834f-e618cd4eecb8"
+    },
+    {
+      "claim_id": "859ff48c-fc76-47aa-9d50-a1eef7b3167f",
+      "result_id": "35113d8e-d6d1-4856-834f-e618cd4eecb8"
+    },
+    {
+      "claim_id": "5245408e-10f8-4b0f-b682-cedcdefa4200",
+      "result_id": "da71e666-323b-4a58-a8fd-0afaac4d1c87"
+    },
+    {
+      "claim_id": "289a57d9-5eda-4a21-a027-94f6c3cd5e1e",
+      "result_id": "da71e666-323b-4a58-a8fd-0afaac4d1c87"
+    },
+    {
+      "claim_id": "60adb70d-aa80-4244-8af3-202649834464",
+      "result_id": "f9ca8e1b-e06d-4e71-bca3-e3d10b272371"
+    },
+    {
+      "claim_id": "f1f0bde9-7145-4497-974d-56837a7b64e6",
+      "result_id": "f9ca8e1b-e06d-4e71-bca3-e3d10b272371"
+    },
+    {
+      "claim_id": "82f215da-a773-4d95-b307-0c4250ffb15d",
+      "result_id": "f9ca8e1b-e06d-4e71-bca3-e3d10b272371"
+    },
+    {
+      "claim_id": "5d395b03-beaa-442d-981f-8b5cbb3956c7",
+      "result_id": "8a7bfa37-c06f-4bef-b98e-8307e6b8f187"
+    },
+    {
+      "claim_id": "c4dc451b-4ee7-4548-93a2-3c5f83a50182",
+      "result_id": "8a7bfa37-c06f-4bef-b98e-8307e6b8f187"
+    },
+    {
+      "claim_id": "7f0d6506-b1c3-481a-b95b-fe3cc152caa3",
+      "result_id": "8a7bfa37-c06f-4bef-b98e-8307e6b8f187"
+    },
+    {
+      "claim_id": "7d243979-edf8-4a7b-ae9b-058081e53bec",
+      "result_id": "1d2bfe6f-de32-4611-a2ca-22bd74210b9a"
+    },
+    {
+      "claim_id": "9f6948d3-e667-4d6f-a535-970db7d436bf",
+      "result_id": "1d2bfe6f-de32-4611-a2ca-22bd74210b9a"
+    },
+    {
+      "claim_id": "db3069b8-9e2a-40a9-b4e0-49d890686cba",
+      "result_id": "1d2bfe6f-de32-4611-a2ca-22bd74210b9a"
+    },
+    {
+      "claim_id": "00c85f7e-fe11-419d-8e34-0331215edcc3",
+      "result_id": "1d2bfe6f-de32-4611-a2ca-22bd74210b9a"
+    },
+    {
+      "claim_id": "9c532d60-f5db-4ce1-a188-b5be9c313025",
+      "result_id": "1d2bfe6f-de32-4611-a2ca-22bd74210b9a"
+    },
+    {
+      "claim_id": "03e06f8d-7482-4f8b-9787-19aef3f40770",
+      "result_id": "1d2bfe6f-de32-4611-a2ca-22bd74210b9a"
+    },
+    {
+      "claim_id": "072b27d7-90e2-42b7-bc7c-6184bbdd38eb",
+      "result_id": "1d2bfe6f-de32-4611-a2ca-22bd74210b9a"
+    },
+    {
+      "claim_id": "9d9ca0a5-7634-4929-aa9a-eaaca5aadc4f",
+      "result_id": "1d2bfe6f-de32-4611-a2ca-22bd74210b9a"
+    },
+    {
+      "claim_id": "d0caf077-cfe1-430c-92cf-107bd1564b4c",
+      "result_id": "1d2bfe6f-de32-4611-a2ca-22bd74210b9a"
+    },
+    {
+      "claim_id": "d69ca846-7bef-44d1-9005-f94d2d81acb6",
+      "result_id": "fbbc209c-75b2-4b2b-bc6f-a7472827c479"
+    },
+    {
+      "claim_id": "a0c2622b-9003-4dac-8a68-b9433051764a",
+      "result_id": "fbbc209c-75b2-4b2b-bc6f-a7472827c479"
+    },
+    {
+      "claim_id": "a9a89bbe-5e19-4ad2-9de3-2a36f1e1a413",
+      "result_id": "bba0f0f4-4ead-4952-a072-cb97e355a8c0"
+    },
+    {
+      "claim_id": "7cba0c13-e110-4aeb-87f4-77cd6768c91a",
+      "result_id": "bba0f0f4-4ead-4952-a072-cb97e355a8c0"
+    },
+    {
+      "claim_id": "697f259a-e751-45d1-bb7c-3755760c4508",
+      "result_id": "bba0f0f4-4ead-4952-a072-cb97e355a8c0"
+    },
+    {
+      "claim_id": "5d1fc56f-a40c-4984-974e-64b14dccacb0",
+      "result_id": "bba0f0f4-4ead-4952-a072-cb97e355a8c0"
+    },
+    {
+      "claim_id": "94a520a8-75e0-4725-8d8e-a051a10b3b2d",
+      "result_id": "1393002f-0b78-4b3f-80fb-f14951a91669"
+    },
+    {
+      "claim_id": "4d9915a6-41f4-4ab3-8bed-fcbdd5a7c591",
+      "result_id": "1393002f-0b78-4b3f-80fb-f14951a91669"
+    },
+    {
+      "claim_id": "f5ec979e-c467-4e98-b388-a59be39ba0f2",
+      "result_id": "18c8dbf6-de73-4226-b86b-63ab0a880a46"
+    },
+    {
+      "claim_id": "3c992955-a5e3-4124-ac9a-e5b0af079eea",
+      "result_id": "18c8dbf6-de73-4226-b86b-63ab0a880a46"
+    },
+    {
+      "claim_id": "1ac0368f-9f94-4a5a-beec-7a323f403c90",
+      "result_id": "18c8dbf6-de73-4226-b86b-63ab0a880a46"
+    },
+    {
+      "claim_id": "bbb77ffc-2832-4a4a-a97e-5a6516ac7de3",
+      "result_id": "44614f4e-ad26-4f0e-8baa-5f5b072cb03f"
+    },
+    {
+      "claim_id": "b875e0af-7408-408e-a65d-c6da6e54e9cb",
+      "result_id": "ef95a82c-4fce-4927-b9ab-9103b1382100"
+    },
+    {
+      "claim_id": "727eb75d-1ccc-4d42-be3b-8fe9df44e65d",
+      "result_id": "ef95a82c-4fce-4927-b9ab-9103b1382100"
+    },
+    {
+      "claim_id": "a294da1e-f42e-460f-954b-0a54bd08a75b",
+      "result_id": "ef95a82c-4fce-4927-b9ab-9103b1382100"
+    },
+    {
+      "claim_id": "15498f45-ac0c-423b-a77d-9996170b6a23",
+      "result_id": "ef95a82c-4fce-4927-b9ab-9103b1382100"
+    },
+    {
+      "claim_id": "f9cebbd6-f2b8-4c9c-be55-313ea712f829",
+      "result_id": "ef95a82c-4fce-4927-b9ab-9103b1382100"
+    },
+    {
+      "claim_id": "0a97ce05-547c-464a-95fa-f4fcb2fb435b",
+      "result_id": "f324e7e3-4674-4488-ad75-b0d40fb2c849"
+    },
+    {
+      "claim_id": "97ce1a6d-31f1-4da3-8b72-59437cf2838e",
+      "result_id": "f324e7e3-4674-4488-ad75-b0d40fb2c849"
+    },
+    {
+      "claim_id": "62e3220a-e95b-47bf-ac06-2efbb0ca6aad",
+      "result_id": "60755cd3-ec09-4ee4-8adf-2646586fe7ca"
+    },
+    {
+      "claim_id": "cb400a8c-97da-4444-b896-65f6071791d2",
+      "result_id": "53aa5973-851c-4446-825f-45737df4aa52"
+    },
+    {
+      "claim_id": "358993b2-dfb5-447b-bf67-21376aae4b0f",
+      "result_id": "e7ec3e07-4e09-48ea-bb4e-431154ed725d"
+    },
+    {
+      "claim_id": "90766835-133a-4620-b51e-b043cbac1b63",
+      "result_id": "27b5a580-a752-4cde-a550-dcd8c39633eb"
+    },
+    {
+      "claim_id": "c286804a-b15a-4485-a1dc-07327167832c",
+      "result_id": "27b5a580-a752-4cde-a550-dcd8c39633eb"
+    },
+    {
+      "claim_id": "16a6c67e-7e2c-4dd7-9a4e-6811a2852e3d",
+      "result_id": "30289fe7-707f-4549-89ed-2c99dbb71fcf"
+    },
+    {
+      "claim_id": "ef261d95-0edd-42fb-a428-13919aeb4829",
+      "result_id": "30289fe7-707f-4549-89ed-2c99dbb71fcf"
+    },
+    {
+      "claim_id": "c2c575a9-2a65-4413-9400-8b334a3251aa",
+      "result_id": "30289fe7-707f-4549-89ed-2c99dbb71fcf"
+    },
+    {
+      "claim_id": "12694a61-319b-408d-bed8-e45756641fa0",
+      "result_id": "30289fe7-707f-4549-89ed-2c99dbb71fcf"
+    },
+    {
+      "claim_id": "0a50686e-c9ac-41cc-9642-c7cf486c9724",
+      "result_id": "30289fe7-707f-4549-89ed-2c99dbb71fcf"
+    },
+    {
+      "claim_id": "2374f91e-6dc3-47c2-9564-2bf2a0a75c92",
+      "result_id": "30289fe7-707f-4549-89ed-2c99dbb71fcf"
+    },
+    {
+      "claim_id": "de1360de-daa3-491c-b4b0-d4d8e7360c96",
+      "result_id": "30289fe7-707f-4549-89ed-2c99dbb71fcf"
+    },
+    {
+      "claim_id": "10b31631-5c2f-4f6f-89c5-ac81f6771abe",
+      "result_id": "30289fe7-707f-4549-89ed-2c99dbb71fcf"
+    },
+    {
+      "claim_id": "e3805ab0-a6ba-49ad-9605-cd7d2ae4d8d9",
+      "result_id": "30289fe7-707f-4549-89ed-2c99dbb71fcf"
+    },
+    {
+      "claim_id": "ab308ae0-88b7-4687-a893-0b6c20893241",
+      "result_id": "30289fe7-707f-4549-89ed-2c99dbb71fcf"
+    },
+    {
+      "claim_id": "8aca27e3-bc75-4bc6-955f-cd97ef4886f0",
+      "result_id": "30289fe7-707f-4549-89ed-2c99dbb71fcf"
+    },
+    {
+      "claim_id": "b6179716-34d4-4058-a419-bfc6d0536bd6",
+      "result_id": "30289fe7-707f-4549-89ed-2c99dbb71fcf"
+    },
+    {
+      "claim_id": "01748dc5-6264-4953-9767-027d1051cbdc",
+      "result_id": "30289fe7-707f-4549-89ed-2c99dbb71fcf"
+    },
+    {
+      "claim_id": "6268425d-fa1a-4e90-a810-723c02eb9606",
+      "result_id": "30289fe7-707f-4549-89ed-2c99dbb71fcf"
+    },
+    {
+      "claim_id": "e595607f-1bf0-4cdc-8297-f1b2683bd223",
+      "result_id": "30289fe7-707f-4549-89ed-2c99dbb71fcf"
+    },
+    {
+      "claim_id": "b7f83f80-b1cd-434e-89fb-2b7f0fb20ffc",
+      "result_id": "30289fe7-707f-4549-89ed-2c99dbb71fcf"
+    },
+    {
+      "claim_id": "41fbe493-2ce4-42f7-b18e-f73d9812e37a",
+      "result_id": "30289fe7-707f-4549-89ed-2c99dbb71fcf"
+    },
+    {
+      "claim_id": "680a7bc6-641e-4946-9da7-a0ef34a6b21b",
+      "result_id": "30289fe7-707f-4549-89ed-2c99dbb71fcf"
+    },
+    {
+      "claim_id": "16dd4c5d-942e-48bb-86e2-6f886f817b62",
+      "result_id": "30289fe7-707f-4549-89ed-2c99dbb71fcf"
+    },
+    {
+      "claim_id": "3671f51f-7519-4e65-ba18-0c65ce91e21c",
+      "result_id": "30289fe7-707f-4549-89ed-2c99dbb71fcf"
+    },
+    {
+      "claim_id": "bb451fa4-6f4a-4409-ae85-73c40633b58e",
+      "result_id": "30289fe7-707f-4549-89ed-2c99dbb71fcf"
+    },
+    {
+      "claim_id": "ec3f27d3-6c64-460d-8066-94a4af56485d",
+      "result_id": "30289fe7-707f-4549-89ed-2c99dbb71fcf"
+    },
+    {
+      "claim_id": "ef49240e-3869-41aa-9e9b-fb474f7eb750",
+      "result_id": "30289fe7-707f-4549-89ed-2c99dbb71fcf"
+    },
+    {
+      "claim_id": "b383bcfb-3ce8-4ae9-8d4d-33d0125cdb92",
+      "result_id": "30289fe7-707f-4549-89ed-2c99dbb71fcf"
+    },
+    {
+      "claim_id": "fc90957d-599c-44b2-b48b-d6f8a3c40d93",
+      "result_id": "30289fe7-707f-4549-89ed-2c99dbb71fcf"
+    },
+    {
+      "claim_id": "8e92e1bb-de98-46e0-aa6f-3e1ddc500e73",
+      "result_id": "30289fe7-707f-4549-89ed-2c99dbb71fcf"
+    },
+    {
+      "claim_id": "9efe1f65-1b21-4b7e-acb9-9859e4ce9a6e",
+      "result_id": "30289fe7-707f-4549-89ed-2c99dbb71fcf"
+    },
+    {
+      "claim_id": "cc244fcf-0bee-4154-b70b-10f13002b032",
+      "result_id": "30289fe7-707f-4549-89ed-2c99dbb71fcf"
+    },
+    {
+      "claim_id": "6715d450-1e17-4ff5-ac3b-79efc57a5363",
+      "result_id": "30289fe7-707f-4549-89ed-2c99dbb71fcf"
+    },
+    {
+      "claim_id": "5dfb1078-c3ea-4d88-a484-11df8446468d",
+      "result_id": "30289fe7-707f-4549-89ed-2c99dbb71fcf"
+    }
+  ],
+  "comparisons": []
+}

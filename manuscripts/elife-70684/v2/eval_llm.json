@@ -1,0 +1,518 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "L. plantarum NCIMB8826 reduces Fe3+ to Fe2+ in the presence of ferrihydrite, requiring viable cells, exogenous quinone (DHNA), and an electron donor (mannitol or glucose). Riboflavin addition increases Fe3+ reduction in a dose-dependent manner, similar to L. monocytogenes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12, C16-C18 are supported by ferrozine assay measurements (Figure 1A) showing Fe2+ production only with viable cells, DHNA, and electron donors present. The dose-dependent riboflavin effect (Figure 1\u2014figure supplement 1C) and comparison to L. monocytogenes are well-documented. The experimental controls (heat-inactivated cells, omission of components) appropriately test the requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "L. plantarum produces maximum current densities of 129 \u00b1 19 \u00b5A/cm2 in mCDM and 225 \u00b1 9 \u00b5A/cm2 in mMRS, with a specific electron transfer rate of 57 \u00b5mol electrons/mg-protein/hr (1.5 mA/mg-protein), which is intermediate between Geobacter sulfurreducens and Shewanella oneidensis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C25 are supported by direct electrochemical measurements in bioelectrochemical reactors. The calculations for specific electron transfer rate (C22-C23) rely on the assumption that 50% of dry cell mass is protein, which is reasonable but not directly verified. The comparisons to G. sulfurreducens and S. oneidensis (C24-C25) appropriately cite published values, though the authors note these organisms don't require exogenous riboflavin/quinones, making direct comparison somewhat limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "L. plantarum can perform EET at sub-physiological DHNA concentrations (0.01 \u00b5g/mL), though with reduced magnitude compared to 20 \u00b5g/mL, suggesting EET magnitude depends on DHNA concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 are supported by experimental measurements at low DHNA concentration (Figure 1\u2014figure supplement 3A-B) showing both iron reduction and current production. The inference that EET magnitude depends on DHNA concentration is reasonable given the dose-response observed. This addresses physiological relevance since the tested concentration is below reported environmental levels (C29-C30).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The complete FLEET locus was identified in 11 out of 38 LAB genera through bioinformatic analysis of 1,788 genomes. All 68 Lactococcus strains contain all FLEET genes except pplA. Among lactobacilli, 19 out of 94 species contain the entire FLEET system, and these are homofermentative species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 are supported by systematic bioinformatic analysis using tBLASTx with appropriate thresholds (Bit-score >50, E-value <10\u207b\u00b3). The analysis of 1,788 LAB genomes provides comprehensive coverage. The classification of species with FLEET loci as homofermentative (C37) is based on established metabolic classifications cited from prior work. The methodology is sound and the conclusions are appropriately conservative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Multiple LAB species (L. plantarum, L. pentosus, L. rhamnosus, L. casei, E. faecium, E. faecalis) capable of Fe3+ reduction contain complete FLEET loci with both ndh2 and pplA, while species showing little/no iron reduction activity lack one or both genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 are supported by ferrihydrite reduction assays across multiple LAB species (Figure 2B) combined with genomic analysis (Figure 2A). The correlation between gene presence (specifically ndh2 and pplA) and iron reduction activity is strong. However, the claim is limited by the specific growth conditions tested, as acknowledged by the authors. The inference in C42 is reasonable but could be strengthened with additional genetic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "L. plantarum NCIMB8826 exhibited 2.5-fold greater Fe3+ reduction than other L. plantarum strains despite all 139 strains harboring complete FLEET loci. Non-reducing strains (NCIMB700965 and 8.1) have IS30-family transposons in the ndh2-pplA promoter region, resulting in minimal gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 are supported by comparative ferrihydrite reduction measurements (Figure 2B), genomic analysis showing universal FLEET locus presence (Figure 2\u2014figure supplement 1-2A), and RT-PCR showing minimal ndh2/pplA expression in non-reducing strains (Figure 2\u2014figure supplement 2B). The identification of transposon insertions in promoter regions provides a mechanistic explanation for the phenotypic differences. This is strong genetic evidence linking gene expression to phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "ndh2 and pplA are the only FLEET locus genes induced (~1.6 fold, p < 0.05) when L. plantarum is grown in mMRS with both DHNA and iron, but not when either component is omitted. This tight association suggests these genes are required for EET.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 are supported by RNA-seq differential expression analysis (Figure 2C) and RT-PCR validation (Figure 2\u2014figure supplement 2C). The requirement for both DHNA and iron for induction is well-controlled. The 1.6-fold induction is modest but statistically significant (p < 0.05). The inference that these genes are required for EET (C52) is reasonable given the correlation across multiple strains, though the word 'required' is somewhat strong for correlation data alone\u2014genetic deletion experiments (presented later) provide stronger evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Both \u0394ndh2 and \u0394pplA deletion mutants were significantly impaired in ferrihydrite reduction and resulted in reduced ORP changes in mMRS supplemented with DHNA, without affecting growth rates, cell yields, or pH. The impairment persisted from mid-exponential through stationary phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C59 are supported by ferrihydrite reduction assays (Figure 3A) and ORP measurements (Figure 3B, Figure 3\u2014figure supplement 1) with appropriate controls showing no effects on growth, yield, or pH (Figure 3\u2014figure supplement 1A-D). The time-course experiments (C57-C58) strengthen the conclusions. The genetic approach with deletion mutants provides strong evidence for gene function. The controls for other ORP-reducing activities are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "\u0394ndh2 produced significantly lower current density than wild-type, while \u0394pplA produced the same current as wild-type, suggesting PplA is not essential for anode reduction. L. lactis strains IL1403 and KF147, which lack pplA, were also capable of current generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 are supported by current measurements in bioelectrochemical reactors (Figure 3C-D). The differential requirement for ndh2 vs. pplA is clearly demonstrated. The L. lactis experiments (C63-C64) provide independent confirmation that pplA is not universally required for current generation in LAB. However, the conditional nature of PplA requirement (important for ferrihydrite but not anode reduction) suggests different mechanisms may operate depending on the electron acceptor, which the authors acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "ICP-MS measurements showed no significant difference in intracellular iron concentrations between L. plantarum grown with or without DHNA and iron supplementation, and \u0394ndh2 deletion did not affect intracellular iron levels, indicating L. plantarum does not use EET to increase iron or redox-active metal acquisition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 are supported by ICP-MS measurements (Figure 4\u2014figure supplement 1-2) showing no changes in intracellular iron or other redox-active metals (Mn, Cu) under EET conditions or in the \u0394ndh2 mutant. This appropriately rules out iron acquisition as the primary function of EET in L. plantarum, contrasting with E. faecalis. The measurements are quantitative and include appropriate controls. The inference that EET plays a role in energy conservation rather than metal acquisition is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "At maximum current density, L. plantarum under EET conditions showed 4-fold higher dry cell weight, 2-fold higher viable cells, and 4.5-fold higher intracellular ATP compared to open circuit. ATP levels were highest with both mannitol and DHNA present, allowing faster exit from lag phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 are supported by direct measurements of biomass (dry weight, CFU) and ATP (Figure 4A-D, Table 1). The correlation between higher ATP and earlier growth initiation (C74) is a reasonable inference from the temporal data. The requirement for both mannitol and DHNA (C75) is well-controlled. The measurements are quantitative with appropriate replication (n=3). The conclusion that EET increases energy conservation is well-supported by these data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "L. plantarum showed an 8-fold higher NAD+/NADH ratio under EET conditions compared to open circuit, whether using an anode or Fe3+ as electron acceptor. These ratios are more similar to E. coli performing aerobic respiration or G. sulfurreducens performing anaerobic respiration than LAB performing fermentation, indicating EET is involved in energy conservation with a respiratory-like intracellular redox balance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 are supported by NAD+/NADH measurements (Figure 4E, Figure 4\u2014figure supplement 3) showing consistent 8-fold increases under EET conditions regardless of electron acceptor type. The comparison to respiratory organisms (C79) appropriately cites published values. The inference that EET mimics respiratory redox balance (C81) is reasonable given the NAD+/NADH ratios, though the authors appropriately note that the ATP generation mechanism differs from respiration. The measurements are quantitative and well-replicated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Neither heme addition to restore bd-type cytochrome nor deletion of nitrate reductase affected current production. Ndh2 is a type-II NADH dehydrogenase that does not contribute to proton gradients. EET did not increase succinate or TCA cycle intermediates, indicating none of the known PMF-generating proteins or TCA cycle activity are required for EET besides Ndh2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C88 are supported by current measurements with heme addition and \u0394narGHJI mutant (Figure 5\u2014figure supplement 1A-B) and HPLC measurements of TCA cycle metabolites (Figure 5\u2014figure supplement 2). The characterization of Ndh2 as non-PMF-generating (C83) is appropriately cited from prior biochemical knowledge. The inference that EET does not involve canonical respiratory mechanisms (C84, C88) is well-supported by the negative results across multiple approaches. This effectively rules out oxidative phosphorylation as the primary ATP generation mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Under EET conditions, the distribution of fermentation products (acetate, lactate, ethanol) did not change, but yield per cell was 2.6-fold higher, producing ~1.75x more products per mol mannitol. Culture pH was significantly lower under EET, requiring ndh2-dependent EET. This acidification occurred even at sub-physiological DHNA levels (0.01 \u00b5g/mL).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C97 are supported by HPLC measurements of fermentation products (Figure 5A, Table 1) and pH measurements (Figure 5B, Figure 3\u2014figure supplement 2B, Figure 1\u2014figure supplement 3C). The key finding that product distribution remains constant while total yield increases is well-documented. The requirement for ndh2 (C93-C94) is demonstrated by mutant analysis. The observation at low DHNA concentration (C95) strengthens physiological relevance. The carbon balance accounts for ~80% of total carbon, leaving ~20% uncertainty in the calculations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "L. plantarum consumed mannitol ~2-fold faster under EET conditions between days 1-3, with acetate and lactate production rates increasing 3.4 and 3.6 times, respectively. This increased metabolic flux requires Ndh2 but not PplA, as confirmed by deletion mutant analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C101 are supported by time-course HPLC measurements of mannitol consumption and product formation (Figure 5C-E) and metabolite measurements with deletion mutants (Figure 3\u2014figure supplement 2C). The rate calculations are appropriate and the differential requirement for Ndh2 vs. PplA is consistent with current production data. The temporal resolution of measurements is adequate to support the rate claims. The conclusion that ndh2-dependent EET increases both flux and yield is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "Estimated ATP from fermentation products was 3-fold higher under EET than open circuit conditions (Table 1), consistent with ~2.5-fold higher measured ATP accumulation (Figure 4D). The vast majority of increased energy conservation under EET can be accounted for by increased fermentation yield and substrate-level phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 are supported by calculations from measured fermentation product concentrations (Table 1) that agree well with direct ATP measurements (Figure 4D). The ~20% carbon balance uncertainty noted by the authors is acknowledged. The conclusion that substrate-level phosphorylation accounts for most ATP increase (C103) is reasonable given the agreement between calculated and measured ATP, though the authors appropriately note that additional data would be needed to completely eliminate oxidative phosphorylation contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Electron balance calculations show that under open circuit conditions, 35-66% of NADH was re-oxidized, while under EET conditions 77-96% was re-oxidized. Under EET, 55-69% of NADH was oxidized through fermentation and 21-28% through the electrode. L. plantarum achieves a more oxidized redox balance by more complete fermentation and using the electrode as terminal electron acceptor, utilizing elements of both fermentation and anaerobic respiration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C109 are supported by electron balance calculations from metabolite and current measurements (Table 1). The ranges given reflect two different calculation methods, providing internal validation. The calculations are consistent with measured NAD+/NADH ratios (Figure 4E). The conclusion that EET utilizes elements of both fermentation and respiration (C109) is well-supported by the quantitative data showing partial use of both endogenous and exogenous electron acceptors. The ~20% carbon balance uncertainty affects these calculations but the conclusions remain robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Under open circuit, YATP (8.06 \u00b1 0.8 g dw/mol ATP) was similar to published values, indicating expected efficiency. Under EET, YATP was significantly lower (3.07 \u00b1 0.35 g dw/mol ATP), while Ymannitol increased 79%. This indicates ATP is produced more efficiently but less efficiently utilized for biomass, suggesting different coupling of anabolism and catabolism under EET.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C117 are supported by calculations from biomass, ATP, and mannitol measurements (Table 1). The comparison to published YATP values (C110) validates the open circuit measurements. The lower YATP under EET (C112) is statistically significant and reproducible. The interpretation that ATP may be used for other functions like pH regulation (C113) is speculative but reasonable. The conclusion about different coupling of anabolism and catabolism (C116-C117) is well-supported by the quantitative yield data, though the mechanistic explanation remains incomplete.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "In kale juice fermentation, L. plantarum with DHNA generated ~10-fold more current than controls, comparable to laboratory medium. EET conditions resulted in ~2-fold greater fermentation products per cell and significantly higher acidification. Without DHNA, fermentation was similar to open circuit, indicating quinones are essential for EET in kale juice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C125 are supported by current measurements (Figure 6B), metabolite analysis (Figure 6C, E), and pH measurements (Figure 6D) in kale juice fermentation. The comparison to laboratory medium (C119) validates that EET functions in complex food matrices. The requirement for DHNA (C125) is clearly demonstrated by the lack of EET activity without it. The experiments appropriately test physiological relevance. The kale juice is a complex matrix with multiple potential electron donors and acceptors, yet EET effects are clearly observable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "L. plantarum uses EET to increase NAD+/NADH ratio (8-fold), generate more ATP through substrate-level phosphorylation (4.5-fold higher), and accumulate biomass more rapidly (4-fold higher dry weight, 2-fold higher viable cells). This hybrid metabolism is dependent on Ndh2 and conditionally requires PplA, conferring increased fermentation product yield (2.6-fold), metabolic flux (2-3.6x faster rates), and environmental acidification in laboratory media and kale juice fermentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 represent the main conclusions of the paper and are supported by the comprehensive experimental data described in the previous results. The NAD+/NADH ratio increase (C1) is supported by direct measurements (Figure 4E). ATP increase through substrate-level phosphorylation (C2) is supported by ATP measurements and calculations from fermentation products (Figure 4D, Table 1). Biomass accumulation (C3) is supported by dry weight and CFU measurements (Figure 4A-B). The genetic requirements (C4-C5) are supported by deletion mutant experiments (Figure 3). The metabolic effects (C6-C9) are supported by metabolite measurements and pH data in both laboratory media and kale juice (Figures 5-6). All claims are internally consistent and well-replicated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "L. plantarum and diverse LAB species perform EET when riboflavin and quinones are present. EET in L. plantarum generates high NAD+/NADH ratios, increases fermentation yield and flux, shortens lag phase, and increases ATP production. This represents a hybrid energy metabolism with metabolic features of fermentation, redox features of respiration, and predominant use of substrate-level phosphorylation. The pathway is active at physiologically relevant DHNA concentrations and in food fermentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C135 summarize the major findings and are supported by the comprehensive experimental evidence across multiple LAB species (Figure 2B), the detailed metabolic characterization in L. plantarum (Figures 4-5), experiments at low DHNA concentrations (Figure 1\u2014figure supplement 3), and kale juice fermentation (Figure 6). The characterization as 'hybrid metabolism' (C132) is justified by the combination of respiratory-like NAD+/NADH ratios with fermentation-based ATP generation. The physiological relevance (C133-C135) is demonstrated by activity at sub-physiological DHNA levels and in complex food matrices.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "L. plantarum EET metabolism is fundamentally different from EET-driven anaerobic respiration in metal-reducing bacteria like Geobacter. While Geobacter directs flux through TCA cycle, relies exclusively on extracellular electron acceptors, and uses oxidative phosphorylation, L. plantarum regenerates substantial NADH through fermentation and substrate-level phosphorylation is the major ATP generation mechanism, not oxidative phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C142 are supported by the experimental evidence showing marginal TCA cycle flux (Figure 5\u2014figure supplement 2), no requirement for PMF-generating proteins (Figure 5\u2014figure supplement 1), and ATP increases accounted for by fermentation products (Table 1). The comparison to Geobacter (C137-C139) appropriately cites established knowledge. The conclusion that substrate-level phosphorylation is the major mechanism (C142) is well-supported, though the authors appropriately note that additional data would be needed to completely eliminate oxidative phosphorylation contributions. The electron balance showing ~2:1 ratio of endogenous to extracellular electron acceptors (C140) supports the distinction from Geobacter.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "EET in LAB differs from LAB respiration: both require quinones, but respiration requires exogenous heme while EET does not. EET occurs at the start of exponential phase, does not change final cell density, and increases fermentation without altering product proportions. This represents a novel energy conservation strategy compared to known fermentative metabolisms in LAB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C149 are supported by experiments showing EET without heme (C145, Figure 5\u2014figure supplement 1A), timing of current production during early growth (C146, Figure 1C), similar final OD600 between EET and open circuit (C147, Supplementary file 1), and constant product distribution with increased total yield (C148, Figure 5A). The comparison to known LAB metabolisms (C149) is appropriate and the conclusion that this represents a novel strategy is justified by the unique combination of features. The distinction from respiration is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The hybrid metabolism under EET is distinct from other pathways that alleviate reduced intracellular conditions in LAB. Unlike reduction of intracellular electron acceptors (citrate, fructose, phenolic acids) or oxygen/organic compounds, EET requires a respiratory protein (Ndh2) and electron shuttling outside the cell, without causing metabolic shifts toward acetate production or altered end-product ratios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C153 are supported by the experimental data showing requirement for Ndh2 (Figure 3), extracellular electron transfer (current measurements), and constant product distribution (Figure 5A). The comparisons to other LAB metabolisms (C150, C152) appropriately cite prior research. The distinction is clearly demonstrated by the unique features of EET: requirement for extracellular electron transfer, involvement of respiratory protein, but maintenance of fermentative product ratios. The conclusion that this is distinct from other redox-balancing pathways is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "L. plantarum EET differs from respiro-fermentation in yeast (which uses separate pathways for substrate-level and oxidative phosphorylation) and electron bifurcation (which uses PMF from ferredoxin oxidation). A single pathway is responsible for both ATP generation and redox balance. The hybrid metabolism leads to ~1.75x more efficient and faster energy conservation but ~1.5-fold weaker coupling between anabolism and catabolism, using ~2:1 ratio of endogenous to extracellular electron acceptors. This constitutes a novel mode of energy conservation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C163 are supported by the comprehensive metabolic characterization showing both ATP and NAD+/NADH changes depend on the same genes (ndh2) and conditions (C155), lack of PMF-generating elements (C157), ATP from fermentation products (C158), and quantitative yield measurements (C160-C162, Table 1). The comparisons to yeast respiro-fermentation (C154) and electron bifurcation (C156) appropriately cite established mechanisms. The conclusion that this represents a novel mode of energy conservation (C163) is justified by the unique combination of features not found in other known systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "EET is widespread in LAB and occurs by different mechanisms. L. lactis generates current despite lacking pplA, with riboflavin-dependent activity. E. faecalis requires quinones and Ndh3 for Fe3+ reduction, resulting in increased biomass and intracellular iron, but does not require PplA. The conditional need for PplA may relate to different mechanisms depending on electron acceptor redox potential. Other extracellular reductases exist in Gram-positive bacteria, and an unidentified reductase may be required for anode reduction in L. plantarum and L. lactis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C175 are supported by current measurements with L. lactis (Figure 3D) and appropriate citations to prior research on L. lactis (C166-C167) and E. faecalis (C168-C171). The observation that PplA is conditionally required (important for ferrihydrite but not anode reduction in L. plantarum, not required in E. faecalis) is well-documented. The speculation about different mechanisms depending on electron acceptor (C172) and existence of unidentified reductases (C174) is reasonable given the data, though appropriately presented as speculation. The conclusion that EET is widespread with different mechanisms (C164, C175) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "Conservation of the FLEET locus among LAB species (all homofermentative) supports that hybrid fermentation with EET provides an important metabolic strategy. LAB with FLEET systems grow in nutrient-rich environments (dairy, plant foods, digestive tract) containing quinones, flavins, and iron. Increased organic acid production and acidification would inhibit competitors and confer competitive advantage. Increased ATP relative to biomass might provide readiness for later competition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C176-C181 are partially supported by genomic conservation data (Figure 2) and the demonstrated metabolic effects (Figures 5-6). The classification as homofermentative (C177) is supported by known metabolic classifications. The presence of quinones, flavins, and iron in LAB environments (C179) is appropriately cited. However, the ecological interpretations (C180-C181) are largely speculative. While the increased acidification and ATP production are well-documented, the claims about competitive advantage and ecological fitness are inferences not directly tested. The speculation is reasonable but would require competition experiments or ecological studies to confirm.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191"
+    ],
+    "result": "The FLEET pathway is important for intestinal colonization by L. monocytogenes and E. faecalis, and L. plantarum FLEET genes were highly induced in rhesus macaque intestines. In food fermentations, acidification is required to prevent undesired microorganisms. L. plantarum EET in kale juice increased acidification rate, demonstrating activity in complex nutritive environments. Electro-fermentation could be used to control microbial growth and create altered sensory profiles in fermented foods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C182-C184 appropriately cite prior research on intestinal colonization and gene expression. Claims C185-C186 cite established knowledge about food fermentations. The demonstration of EET in kale juice (C187-C188) is well-supported by experimental data (Figure 6). The inference that EET is active in complex environments (C188) is reasonable given the kale juice results. However, the biotechnology applications (C189-C191) are largely speculative. While the proof-of-concept in kale juice is demonstrated, the broader claims about controlling fermentations and altering sensory profiles would require additional validation in diverse food systems and sensory analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "L. plantarum lacks a complete DHNA biosynthetic pathway. DHNA is a precursor of DMK, a membrane electron shuttle used by L. monocytogenes for EET. Geobacter sulfurreducens and Shewanella oneidensis are model species for direct and mediated EET, respectively, and can synthesize riboflavin and quinones. DHNA is found at 0.089-0.44 \u03bcg/mL in commercial fermented beverages and 0.37-48 \u03bcg/mL in laboratory conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15, C26-C30 are supported by appropriate citations to prior research and established knowledge. The genomic analysis showing L. plantarum lacks DHNA biosynthesis (C13) is cited from prior work. The biochemical relationships (C14-C15) and model organism designations (C26-C27) represent established knowledge appropriately cited. The DHNA concentrations in various environments (C29-C30) are cited from published measurements. These claims provide important context for interpreting the experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "L. plantarum does not require iron to grow.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is supported by citations to prior research. This is established knowledge that provides important context for interpreting the ICP-MS results showing no increase in intracellular iron under EET conditions.",
+    "result_type": "MINOR"
+  }
+]

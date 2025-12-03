@@ -1,0 +1,1501 @@
+{
+  "submission": {
+    "id": "7a641c09-64cb-492f-86e6-8324c6cf33c2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T19:42:06.872519Z",
+    "updated_at": "2025-12-03T19:42:06.872519Z"
+  },
+  "content": [
+    {
+      "id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "submission_id": "7a641c09-64cb-492f-86e6-8324c6cf33c2",
+      "content_type": "manuscript",
+      "content_text": "# Structural basis for the Rad6 activation by the Bre1 N-terminal domain\n\n## Authors\n\n- Meng Shi<sup>1</sup>\n- Jiaqi Zhao<sup>1</sup>\n- Simin Zhang<sup>2</sup>\n- Wei Huang<sup>1</sup>\n- Mengfei Li<sup>2</sup>\n- Xue Bai<sup>1</sup>\n- Wenxue Zhang<sup>3</sup>\n- Kai Zhang<sup>1</sup>\n- Xuefeng Chen<sup>2</sup> \u2020\n- Song Xiang<sup>1</sup> ([ORCID: 0000-0001-9314-4684](https://orcid.org/0000-0001-9314-4684)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry and Molecular Biology, Key Laboratory of Immune Microenvironment and Disease (Ministry of Education), The province and ministry co-sponsored collaborative innovation center for medical epigenetics, Tianjin Medical University Tianjin China ([ROR:02mh8wx89](https://ror.org/02mh8wx89))\n2. Hubei Key Laboratory of Cell Homeostasis, College of Life Sciences, TaiKang Center for Life and Medical Sciences, Frontier Science Centre of Immunology and Metabolism, The Institute of Advanced Studies, Wuhan University Wuhan China ([ROR:033vjfk17](https://ror.org/033vjfk17))\n3. Department of Radiation Oncology, Tianjin Medical University General Hospital Tianjin China ([ROR:003sav965](https://ror.org/003sav965))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe mono-ubiquitination of the histone protein H2B (H2Bub1) is a highly conserved histone post-translational modification that plays critical roles in many fundamental processes. In yeast, this modification is catalyzed by the conserved Bre1\u2013Rad6 complex. Bre1 contains a unique N-terminal Rad6-binding domain (RBD), how it interacts with Rad6 and contributes to the H2Bub1 catalysis is unclear. Here, we present crystal structure of the Bre1 RBD\u2013Rad6 complex and structure-guided functional studies. Our structure provides a detailed picture of the interaction between the dimeric Bre1 RBD and a single Rad6 molecule. We further found that the interaction stimulates Rad6\u2019s enzymatic activity by allosterically increasing its active site accessibility and likely contribute to the H2Bub1 catalysis through additional mechanisms. In line with these important functions, we found that the interaction is crucial for multiple H2Bub1-regulated processes. Our study provides molecular insights into the H2Bub1 catalysis.\n\n## Introduction\n\nThe basic unit of the eukaryotic chromatin, nucleosome core particle (NCP), is composed of a protein core consisting of two copies of H2A, H2B, H3, and H4 and double strand DNA wrapped around it (Luger et al., 1997). Post-translational modifications (PTMs) on the histone proteins play critical roles in regulating a variety of fundamental processes (Kouzarides, 2007; Strahl and Allis, 2000). Mono-ubiquitination of a conserved lysine residue in H2B (Lys123 in the budding yeast, Lys120 in mammals, H2Bub1) is a highly conserved histone PTM found in eukaryotes (West and Bonner, 1980). It is associated with actively transcribed genes and may contribute to the gene transcription by loosing the chromatin (Fierz et al., 2011) and recruiting the FACT histone chaperon complex (Fleming et al., 2008; Pavri et al., 2006). It also regulates other histone protein PTMs associated with active transcription, including H3K4 and H3K79 methylation catalyzed by DOT1L and the COMPASS complex, respectively (Briggs et al., 2002; Sun and Allis, 2002). Recent structural studies indicate that the ubiquitin molecule attached to H2B mediates interactions with DOT1L and the COMPASS complex, contributing to their recruitment and activation (Anderson et al., 2019; Hsu et al., 2019; Jang et al., 2019; Valencia-S\u00e1nchez et al., 2019; Worden et al., 2019; Worden et al., 2020; Xue et al., 2019; Yao et al., 2019). At DNA double strand breaks (DSBs), H2Bub1 facilitates the recruitment of factors for both homologous recombination (HR) and non-homologous end joining pathways, promoting DSB repair (Moyal et al., 2011; Nakamura et al., 2011; Shiloh et al., 2011; Zheng et al., 2018). During meiosis, H2Bub1 plays a critical role in the meiotic recombination required for the exchange of genetic materials between homologous chromosomes (Wang et al., 2017; Xu et al., 2016). H2Bub1 also has important functions in additional processes including DNA replication, nucleosome positioning, RNA processing, chromatin segregation, and others (Fuchs and Oren, 2014). In line with its important cellular functions, aberrant H2Bub1 levels in humans are implicated in several types of cancer (Marsh and Dickson, 2019; Marsh et al., 2020; Zhou et al., 2021).\n\nThe ubiquitination reaction requires concerted actions of several enzymes. The ubiquitin activating enzyme (E1) conjugates ubiquitin to the ubiquitin-conjugating enzyme (E2), the ubiquitin ligase (E3) subsequently transfers ubiquitin from the E2 enzyme to the substrate. Whereas most organisms contain as few as one or two E1 enzymes and tens of E2 enzymes, they contain a few hundred E3 enzymes, which play critical roles in substrate selection (Deol et al., 2019; Stewart et al., 2016). In the budding yeast, the H2Bub1 reaction is catalyzed by the E3 enzyme Bre1 together with the E2 enzyme Rad6 (Hwang et al., 2003; Robzyk et al., 2000; Wood et al., 2003). Bre1 is highly conserved among eukaryotes. The human Bre1 orthologs, RNF20 and RNF40, also cooperate with the human Rad6 orthologs (Rad6A and Rad6B) to catalyze the H2Bub1 formation (Kim et al., 2009; Kim et al., 2005; Zhu et al., 2005). Bre1, RNF20, and RNF40 belong to the RING family of E3 enzymes and contain a C-terminal RING domain, which facilitates the ubiquitin transfer to the substrate by promoting the \u2018closed\u2019 conformation of the E2\u2013ubiquitin conjugate (Zheng and Shabek, 2017). Bre1\u2019s RING domain also interacts with an acidic patch in NCP and positions Rad6 for the H2Bub1 catalysis (Gallego et al., 2016). In line these important functions, it was found that removing Bre1\u2019s RING domain abolished H2Bub1 in vivo (Hwang et al., 2003), and the Bre1 fragment containing the RING domain and a predicted coiled-coil N-terminal to it was able to catalyze H2Bub1 in vitro (Turco et al., 2015).\n\nIn addition to the RING domain, Bre1 contains a N-terminal Rad6-binding domain (RBD) that also makes important contributions to the H2Bub1 catalysis (Kim and Roeder, 2009; Turco et al., 2015). However, the mechanism of its interaction with Rad6 and how it contributes to the H2Bub1 catalysis are poorly understood. Here, we present crystal structure of the Bre1 RBD\u2013Rad6 complex and structure-guided functional experiments. Our study revealed detailed mechanism of the Bre1 RBD\u2013Rad6 interaction within a 2:1 Bre1 RBD\u2013Rad6 complex. We found that the interaction stimulates Rad6\u2019s enzymatic activity by allosterically increasing its active site accessibility and likely contribute to the H2Bub1 catalysis through additional mechanisms. In line with these important functions, we found that the interaction plays crucial roles in multiple H2Bub1-regulated processes inside the cell.\n\n## Results\n\n### Overall structure of the Bre1 RBD\u2013Rad6 complex\n\nThe N-terminal 210 residues in the Saccharomyces cerevisiae Bre1 (ScBre1) have been reported to interact with Rad6 and contribute to the H2Bub1 catalysis (Kim and Roeder, 2009; Turco et al., 2015). This region is highly conserved among fungal Bre1 proteins (Figure 1\u2014figure supplement 1). We screened through several fungal species and were able to crystallize the Kluyveromyces lactis Rad6 (KlRad6) in complex with the Kluyveromyces lactis Bre1 (KlBre1) N-terminal fragment 1-206 or 1-184 (crystal forms 1 and 2, respectively). The Bre1 N-terminal region is predicted to contain several coiled-coils (Kim and Roeder, 2009; Turco et al., 2015). Using a predicted coiled-coil structure (Guzenko and Strelkov, 2018) and the structure of the Saccharomyces cerevisiae Rad6 (ScRad6, PDB 1AYZ) (Worthylake et al., 1998) as search models, we determined structures of crystal forms 1 and 2 with molecular replacement. The structures were refined to resolutions of 3.2 and 3.05 \u00c5 (Table 1).\n\n**Table 1.**\n Data collection and structure refinement statistics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Crystal form 1</th>\n      <th>Crystal form 2</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Data collection</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Space group</td>\n      <td>P6522</td>\n      <td>P6122</td>\n    </tr>\n    <tr>\n      <td>Cell dimensions</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>a, b, c (\u00c5)</td>\n      <td>94.44, 94.44, 534.64</td>\n      <td>113.22, 113.22, 386.17</td>\n    </tr>\n    <tr>\n      <td>\u03b1, \u03b2, \u03b3 (\u00b0)</td>\n      <td>90, 90, 120</td>\n      <td>90, 90, 120</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>50\u20133.20 (3.26\u20133.2)</td>\n      <td>50\u20133.05 (3.10\u20133.05)</td>\n    </tr>\n    <tr>\n      <td>Rmerge</td>\n      <td>0.200 (1.797)</td>\n      <td>0.092 (0.863)</td>\n    </tr>\n    <tr>\n      <td>I /\u03c3I</td>\n      <td>17.0 (2.0)</td>\n      <td>21.6 (1.1)</td>\n    </tr>\n    <tr>\n      <td>CC1/2</td>\n      <td>0.985 (0.623)</td>\n      <td>1.00 (0.876)</td>\n    </tr>\n    <tr>\n      <td>Completeness (%)</td>\n      <td>100.0 (99.0)</td>\n      <td>99.7 (96.9)</td>\n    </tr>\n    <tr>\n      <td>Redundancy</td>\n      <td>18.0 (18.5)</td>\n      <td>20.6 (16.7)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Refinement</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>40.89\u20133.20 (3.35\u20133.20)</td>\n      <td>32.18\u20133.05 (3.11\u20133.05)</td>\n    </tr>\n    <tr>\n      <td>No. reflections</td>\n      <td>22,676 (2465)</td>\n      <td>28,706 (2495)</td>\n    </tr>\n    <tr>\n      <td>Rwork / Rfree (%)</td>\n      <td>21.32/26.33 (32.57/39.34)</td>\n      <td>23.72/28.60 (40.29/46.90)</td>\n    </tr>\n    <tr>\n      <td>No. atoms</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Protein</td>\n      <td>7563</td>\n      <td>7486</td>\n    </tr>\n    <tr>\n      <td>Ligand/ion</td>\n      <td>0</td>\n      <td>17</td>\n    </tr>\n    <tr>\n      <td>B-factors</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Protein</td>\n      <td>107.63</td>\n      <td>122.41</td>\n    </tr>\n    <tr>\n      <td>Ligand/ion</td>\n      <td>\u2013</td>\n      <td>118.27</td>\n    </tr>\n    <tr>\n      <td>R.m.s. deviations</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bond lengths (\u00c5)</td>\n      <td>0.003</td>\n      <td>0.003</td>\n    </tr>\n    <tr>\n      <td>Bond angles (\u00b0)</td>\n      <td>0.599</td>\n      <td>0.645</td>\n    </tr>\n  </tbody>\n</table>\n\n_Values in parentheses are for the highest resolution shell._\n\nThe structures indicate that two KlBre1 N-terminal polypeptides dimerize to form an elongated RBD that binds to one KlRad6 molecule (Figure 1A). In both crystal forms, residues 12\u2013173 and 16\u2013182 for KlBre1 polypeptides 1 and 2, respectively, are resolved in the electron density map. Additional KlBre1 residues included in the expression constructs are presumably disordered. Residues 1\u2013158 in KlRad6 are resolved in the electron density map, part of its acidic C-terminal tail is disordered. Each KlBre1 polypeptide contains two coiled-coil regions (CC1 and CC2), which form extensive parallel coiled-coil interactions with the same regions in the other KlBre1 polypeptide. Each KlBre1 polypeptide also contains a domain M located between CC1 and CC2 that folds CC2 back to interact with CC1. Interactions between CC1 and CC2 and between these coiled-coils and domain M also contribute to the stabilization the RBD structure. The structures of CC1, CC2 and domain M in both KlBre1 polypeptides are quite similar. However, if domain M or CC2 are aligned, the domain M\u2013CC2 linker in the two KlBre1 polypeptides point to opposite directions (Figure 1B). There are also structural differences at the N- and C-terminus of the two KlBre1 polypeptides (Figure 1B). As a result, the KlBre1 RBD dimer is asymmetric.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/84157/elife-84157-fig1-v2.jpg)\n\n**Figure 1.:** (A) Structure of the KlBre1 RBD\u2013Rad6 complex. The two polypeptides in the KlBre1 RBD are colored in green and magenta, respectively. KlRad6 is colored in cyan. The red spheres indicate the KlRad6 active site. The N- and C-terminus of KlBre1 RBD and KlRad6 are indicated. This coloring scheme is used throughout the manuscript unless indicated otherwise. Structural figures were prepared with PyMOL (https://pymol.org/). (B) Structural comparison of the two polypeptides in the KlBre1 RBD. The CC1 (left), domain M (middle), or CC2 (right) regions in these polypeptides are aligned. The red arrows indicate the drastically different orientation of the domain M\u2013CC2 linker in these polypeptides. (C) Gel filtration analysis of KlBre1 RBD and KlRad6 mixed at different molar ratios. 15 \u03bcM of KlRad6 was mixed with KlBre1 RBD (1-206) with the indicated molar ratio, injected to a Superdex 200 10/300 column (GE Healthcare) and eluted with a buffer containing 20 mM Tris (pH 7.5) and 200 mM sodium chloride. The lower panels show sodium dodecyl sulfate\u2013polyacrylamide gel electrophoresis (SDS\u2013PAGE) analysis of the gel filtration experiments. Source data for panel C are provided in Figure 1\u2014source data 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84157/elife-84157-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Residues numbers for KlBre1 and ScBre1 are indicated above and below the alignment, respectively. Secondary structure elements for the two polypeptides in KlBre1 Rad6-binding domain (RBD) are indicated. The red triangles indicate residues mediating interactions with KlRad6 and between the two KlBre1 polypeptides in the RBD. The black triangles indicate residues mediating interactions with KlRad6 only. The black dots indicate residues substituted in our study. AgBre1, Ashbya gossypii Bre1; CgBre1, Candida glabrata Bre1; ZrBre1, Zygosaccharomyces rouxii Bre1.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84157/elife-84157-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Structural alignment of the four complexes found in crystal forms 1 and 2. The KlBre1 RBD in these complexes are aligned. The pairwise root mean square deviations (RMSDs) for the equivalent C\u03b1 atoms in these KlBre1 RBD molecules are between 0.77 and 1.39 \u00c5. Complex 1 in crystal form 1 is colored as in Figure 1A, KlRad6 molecule 1 in crystal form 2 is colored in blue, other molecules are colored in gray. The red arrow indicates the large structural difference between KlRad6 molecule 1 in crystal form 2 and other KlRad6 molecules in the crystal. (B) Structural alignment of the four KlRad6 molecules found in crystal forms 1 and 2. Structure of the free ScRad6 (PDB 1AYZ)(Worthylake et al., 1998) is aligned for comparison. The pairwise RMSDs for the equivalent C\u03b1 atoms in the four KlRad6 molecules and the free ScRad6 molecule are between 0.62 and 1.16 \u00c5. The spheres indicate Rad6\u2019s active site. (C) KlRad6 in complex 1 of crystal form 2 mediates extensive crystal packing interactions. The complex is colored as in Figure 1A. Protein molecules interacting with the KlRad6 molecule in this complex are highlighted with different colors. The red spheres indicate KlRad6\u2019s active site. RBD, KlBre1 RBD. Structural elements surrounding the active site of this KlRad6 molecule interact with the same region in its symmetry equivalent, burying 1300 \u00c52 of surface area at the interface. In addition to the KlBre1 RBD dimer it forms a complex with, this KlRad6 molecule also interacts with three KlBre1 RBD dimers in the crystal, burying 880, 680, and 580 \u00c52 of surface area at the interfaces.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/84157/elife-84157-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Cross-linking study of KlBre1 RBD. Sodium dodecyl sulfate\u2013polyacrylamide gel electrophoresis (SDS\u2013PAGE) analysis of the wild-type or substituted KlBre1 RBD (1-206) cross-linked by glutaraldehyde is presented. KlBre1 RBD (1-206) without the cross-linking treatment is included for reference (lane \u2018Ctrl\u2019). The * sign indicates the covalently cross-linked KlBre1 dimer. The higher molecular weight cross-linking products presumably represent multiple KlBre1 RBD dimers cross-linked to each other. (B) Gel filtration characterization of KlBre1 RBD. The lower panel shows an SDS\u2013PAGE analysis of the gel filtration experiment. (C) Gel filtration characterization of KlBre1 RBD\u2013Rad6 complexes used for crystallization. (D) Calibration of the gel filtration column. The column is calibrated with thyroglobulin, \u03b3-globulin, ovalbumin, myoglobin, and vitamin B12 (Bio-Rad, their molecule weights are indicated in units of kDa in the figure). The left and right panels show the elution profile of a mixture of these molecules and the calibration curve, respectively. In the right panel, Kav and the logarithm of the molecular weight of these molecules are fitted to a linear equation. Kav is defined as (Ve \u2212 Vo)/(Vt \u2212 Vo) (Ve, elution volume; Vo, column void volume [7.2 ml]; Vt, total column volume [23.6 ml]). Molecular weight for KlBre1 RBD, KlRad6, and their complexes deduced from the calibration curve is indicated with the red dots. (E) Gel filtration characterization of KlRad6. The gel filtration experiments were performed with a Superdex 200 10/300 column (GE Healthcare) with a buffer containing 20 mM Tris (pH 7.5) and 200 mM sodium chloride. Source data for panels A and B are provided in Figure 1\u2014figure supplement 3\u2014source data 1.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/84157/elife-84157-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) Model of the Bre1 RBD\u2013Rad6\u2013E1\u2013ubiquitin complex in the ubiquitin charging reaction. The E1 enzyme (Uba1) and ubiquitin are modeled based on the structure of the Uba1\u2013Ubc4\u2013ubiquitin complex (PDB 4II2) (Olsen and Lima, 2013). (B) Model of the Bre1 RBD\u2013Rad6\u2013ubiquitin\u2013Bre1 RING domain complex in the ubiquitin discharging reaction. Bre1\u2019s RING domain and ubiquitin are modeled based on the structure of the RNF4 RING domain in complex with UbeV2, the ubiquitin\u2013Ubc13 complex in the closed conformation (PDB 5AIT) (Branigan et al., 2015) and the structure of the Bre1 RING domain (PDB 4R7E) (Kumar and Wolberger, 2015). The ubiquitin molecule bound to the non-canonical back side of Rad6 (ubiquitinNCB) (Kumar et al., 2015) is shown. (C) Potential interaction between Bre1 RBD and ubiquitin stabilizing the closed conformation of the Rad6\u2013ubiqutin conjugate. The region marked with the red circle in panel B is shown, important residues are highlighted. Uba1 and the Bre1 RING domain are presented in surface presentation in gray. The red spheres indicate Rad6\u2019s active site.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/84157/elife-84157-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Structures of the KlBre1 Rad6-binding domain (RBD)\u2013Rad6 complex and the E2BBRs in Gp78 (PDB 3H8K) (Das et al., 2009), Cue1 (PDB 4JQU) (Metzger et al., 2013), AO7 (PDB 5D1K) (Li et al., 2015), and Rad18 (PDB 2YBF) Hibbert et al., 2011 in complex with the related E2 enzymes are shown. The E2 enzymes are aligned.\n\nBoth crystal forms 1 and 2 contain two KlBre1 RBD\u2013Rad6 complexes in the asymmetric unit. The structures of KlBre1 RBD and KlRad6 in these four complexes are similar (Figure 1\u2014figure supplement 2A, B), except for regions surrounding KlRad6\u2019s active site (detailed below). The structures of KlRad6 in both crystal forms are also similar to the previously reported structure of ScRad6 (Worthylake et al., 1998; Figure 1\u2014figure supplement 2B). The complexes in both crystal forms adopt similar conformations, except for complex 1 in crystal form 2. The orientation of KlRad6 in this complex is related to the orientation of KlRad6 in other complexes by a rotation of 14\u00b0 (Figure 1\u2014figure supplement 2A). KlRad6 in this complex forms extensive interactions with neighboring protein molecules in the crystal (Figure 1\u2014figure supplement 2C), which may play a role in stabilizing the observed structure. In contrast, KlRad6 molecules in the other three complexes do not mediate extensive crystal packing interactions. Their structure probably better reflect the structure of the KlBre1 RBD\u2013Rad6 complex in solution. We will discuss this structure in the rest of the manuscript.\n\n### Gel filtration characterization of KlBre1 RBD and its complex with Rad6\n\nThe dimeric structure of KlBre1 RBD appears to be rather stable, burying 8000 \u00c52 of surface area between the two Bre1 polypeptides. Consistent with the structure, we found that the cross-linking reagent glutaraldehyde can efficiently produce a covalently linked KlBre1 RBD (1-206) dimer (Figure 1\u2014figure supplement 3A). To verify that KlBre1 RBD is dimeric in solution and forms a 2:1 complex with KlRad6, we performed gel filtration experiments. We found that the predominant species of KlBre1 RBD (1-206) and the KlBre1 RBD\u2013Rad6 complexes used for crystallization elute at ~16 ml on a Superdex 200 10/300 column (Figure 1\u2014figure supplement 3B, C). Calibrating the column with molecules of known sizes indicated an apparent molecular weight of 80 kDa for KlBre1 RBD (1-206) (Figure 1\u2014figure supplement 3D), somewhat larger than the expected dimer molecular weight (52 kDa). The elongated shape of the KlBre1 RBD dimer may hinder its interaction with pores in the gel filtration medium, resulting in its earlier-than-expected elution. The KlBre1 RBD (1-206) sample also contains some minor species that elute earlier. Sodium dodecyl sulfate\u2013polyacrylamide gel electrophoresis (SDS\u2013PAGE) analysis did not reveal any major contaminating proteins (Figure 1\u2014figure supplement 3B), suggesting that they represent KlBre1 RBD species that fold differently or contain some minor contaminating proteins. KlRad6 elutes at ~17.5 ml on the same column, consistent with a monomeric form (Figure 1\u2014figure supplement 3E). When KlBre1 RBD (1-206) and KlRad6 were mixed with a 1:1 molar ratio and applied to the column, a strong peak of free KlRad6 was observed (Figure 1C). In contrast, when they were mixed with 2:1 or 3:1 molar ratio, this peak is absent (Figure 1C). Together, these gel filtration experiments are consistent with a dimeric form of KlBre1 RBD in solution and a 2:1 KlBre1 RBD\u2013Rad6 complex.\n\n### Structural basis of the Bre1 RBD\u2013Rad6 interaction\n\nOur structure indicates that KlRad6 interacts with the N-terminal region of KlBre1 RBD polypeptide 1 and N- and C-terminal regions of KlBre1 RBD polypeptide 2, which come together to form a single Rad6-binding site at one end of the RBD. It interacts with the back side of KlRad6 opposite from its active site, composed of strands \u03b21\u2013\u03b23, the C-terminus of \u03b14 and neighboring loops (Figures 1A and 2A, B). Part of the C-terminal tail disordered in the structure of the free ScRad6 (Worthylake et al., 1998) is structured in KlRad6 and mediates interactions with KlBre1 RBD (Figure 2B and Figure 1\u2014figure supplement 2B). Residues at the KlBre1 RBD\u2013KlRad6 interface are mostly well defined in the electron density map (Figure 2\u2014figure supplement 1A, B). The interface buries 2000 \u00c52 of surface area and contains hydrophobic, salt bridge and hydrogen bonding interactions (Figure 2A, B). At the interface, a hydrophobic patch consisting of KlBre1 residues Pro19, Leu20, Val25, Phe28, Val180\u2019 (the prime sign indicates polypeptide 2 in KlBre1 RBD) and Phe181\u2019 interacts with KlRad6 residues Ser20-Ser25, Met39, Pro43, Met153, and Met156; a second hydrophobic patch consisting of KlBre1 residues Ala32, Leu33, Cys36, Phe34\u2019, and Leu37\u2019 interacts with the KlRad6 Trp149 side chain; salt bridges are formed between Arg35 and Arg171\u2019 in KlBre1 and Asp50 in KlRad6, Arg41\u2019 in KlBre1 and Glu146 in KlRad6, and between Lys30\u2019 in KlBre1 and Asp152 in KlRad6; hydrogen bonds are formed between the KlBre1 Gln29 side chain and the KlRad6 Thr52 side chain, the KlBre1 Gln29 and Lys30\u2019 side chains and the KlRad6 Trp149 mainchain carbonyl, and the KlBre1 Gln22 side chain and the KlRad6 Asp152 mainchain carbonyl.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/84157/elife-84157-fig2-v2.jpg)\n\n**Figure 2.:** (A, B) Structure of the KlBre1 RBD\u2013Rad6 interface. Residues important for the interaction are highlighted. The secondary structure elements for KlBre1 RBD are named as in Figure 1\u2014figure supplement 1. Labels for KlRad6 are in red. Labels with the prime sign are for the KlBre1 RBD polypeptide 2. (C, D) KlBre1 RBD\u2013Rad6 pull-down experiments. Sodium dodecyl sulfate\u2013polyacrylamide gel electrophoresis (SDS\u2013PAGE) analysis of strep-tagged KlBre1 RBD (1-206) precipitated with strep-tactin beads and co-precipitated KlRad6 is shown. A control experiment with his-tagged KlBre1 RBD (1-206) is presented in panel C. RBD, KlBre1 RBD. Source data for panels C and D are provided in Figure 2\u2014source data 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84157/elife-84157-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Electron density map at the KlBre1 RBD\u2013Rad6 interface in KlBre1 RBD (A) and KlRad6 (B). Refined electron density map for residues in complex 1/crystal form 1 at the interface and surrounding area is shown in blue. The map is contoured at 1 \u03c3. (C) Interactions between polypeptides 1 and 2 in KlBre1 RBD mediated by residues that also participate in the KlBre1 RBD\u2013Rad6 interaction.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84157/elife-84157-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The gel filtration experiments were performed with a Superdex 200 10/300 column (GE Healthcare) with a buffer containing 20 mM Tris (pH 7.5) and 200 mM sodium chloride.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/84157/elife-84157-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) ITC experiments with 200 mM sodium chloride and the wild-type KlRad6. (B) ITC experiments with 1 M sodium chloride and the wild-type KlRad6. (C) ITC experiments with 1 M sodium chloride and the wild-type KlBre1 Rad6-binding domain (RBD).\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/84157/elife-84157-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) SPR experiments with the wild-type KlRad6. Steady-state affinity data analysis for the V180A/F181A-substituted KlBre1 Rad6-binding domain (RBD) is shown. (B) SPR experiments with the wild-type KlBre1 RBD.\n\nSeveral of the KlBre1 residues at the interface with KlRad6 also contribute to the interactions between the two KlBre1 polypeptides. These residues include Leu20, Leu33, Cys36, Phe34\u2019, Leu37\u2019, and Val180\u2019, which mediate hydrophobic interactions between the two KlBre1 RBD polypeptides; and Gln29, Arg35, and Lys30\u2019, which mediate hydrogen bond interactions (Figure 2A, B). In addition, several KlBre1 residues contributing to the interaction with KlRad6 in one polypeptide mediate the KlBre1 dimer interactions in the other polypeptide. These residues include Gln22\u2019 (Figure 2A) and Arg41 (Figure 2\u2014figure supplement 1C), which form hydrogen bonds with the Arg35 side chain and the Pro19\u2019 mainchain carbonyl, respectively; and Phe34, Leu37, Pro19\u2019, Leu33\u2019, and Cys36\u2019, which mediate hydrophobic interactions (Figure 2\u2014figure supplement 1C).\n\nWe introduced substitutions at important residues at the KlBre1 RBD\u2013Rad6 interface to probe their function. In KlBre1 RBD (1-206), we introduced charge reversal substitutions R35E, R41E, and R171E to disrupt the observed salt bridge interactions, alanine substitutions at Gln22, Gln29, Lys30, Val180, and Phe181 to disrupt the observed hydrogen bonding or hydrophobic interactions. We also introduced an R179A substitution to abolish the Arg179\u2013Glu18 hydrogen bond, which stabilizes the Pro19\u2013Leu20-containing loop for interaction with KlRad6 (Figure 2A). In KlRad6, we introduced the D50K, E146K, and D152K substitutions, which eliminate one of the salt bridges at the interface. The Q29A-substituted KlBre1 RBD (1-206) was poorly expressed and could not be purified. The other substituted KlBre1 RBD (1-206) could be purified to homogeneity. They behave similarly as the wild-type protein in cross-linking (Figure 1\u2014figure supplement 3A) and gel filtration experiments (Figure 2\u2014figure supplement 2A), suggesting that the substitutions do not significantly alter the dimeric RBD structure, although some of them are located at the interface between the two KlBre1 polypeptides. Gel filtration experiments also indicated that the substitutions in KlRad6 do not significantly alter its overall structure (Figure 2\u2014figure supplement 2B).\n\nWe next probed the KlBre1 RBD\u2013Rad6 interaction with a pull-down experiment. Streptavidin-binding peptide (strep-) tagged KlBre1 RBD (1-206) was precipitated with strep-tactin beads. When KlRad6 was added to the reaction, a clear co-precipitation was observed (Figure 2C). The co-precipitation was abolished by the K30A, R35E, and R41E substitutions in KlBre1 RBD or the D50K substitution in KlRad6, but still present in experiments with the Q22A-, R171E-, R179A-, or V180A/F181A-substituted KlBre1 RBD (1-206) and the wild-type KlRad6, or the wild-type KlBre1 RBD (1-206) and the E146K- or D152K-substituted KlRad6 (Figure 2C, D).\n\nTo quantify the KlBre1 RBD\u2013Rad6 interaction, we performed isothermal titration calorimetry (ITC) experiments. ITC experiments performed with the same sodium chloride concentration as the pull-down experiments (200 mM) indicated a biphasic binding process (Figure 2\u2014figure supplement 3A). However, the heat exchange contributed by the minor phase is too small to enable reliable data fitting with a biphasic binding model but significant enough to interfere with data fitting with a monophasic binding model. We found that increasing the sodium chloride concentration to 1 M suppressed the heat exchange contributed by the minor phase and enabled data fitting with a monophasic binding model, which gave a KD of 12 nM (Figure 2\u2014figure supplement 3B and Table 2). The data fitting was not ideal, as the stoichiometry N-number is not close to the expected value of 0.5 for a 2:1 binding (Table 2). Nevertheless, since the data for this ITC experiment can be fitted, we proceeded to probe the effects of the substitutions with this experiment. Consistent with the pull-down experiments, ITC experiments with 1 M sodium chloride indicated that the K30A, R35E, and R41E substitutions in KlBre1 RBD and the D50K substitution in KlRad6 reduced the affinity to undetectable levels (Figure 2\u2014figure supplement 3B, C and Table 2). The other substitutions, namely the Q22A, R179A, and V180A/F181A substitutions in KlBre1 RBD and the E146K and D152K substitutions in KlRad6, caused 17- to 640-folds increase in KD. These large increases in KD indicate that the substitutions inhibited the KlBre1 RBD\u2013Rad6 interaction to various degrees. The interaction between the R171E-substituted KlBre1 RBD (1-206) and KlRad6 is undetectable in ITC experiments with 1 M sodium chloride (Figure 2\u2014figure supplement 3B and Table 2), but quite substantial in pull-down experiments (Figure 2C). We repeated the ITC experiment with 200 mM sodium chloride and found that the interaction was indeed detectable at this condition (Figure 2\u2014figure supplement 3A and Table 2). The R171E substitution appears to have a stronger inhibitory effect on the KlBre1 RBD\u2013Rad6 interaction at higher sodium chloride concentration.\n\n**Table 2.**\n Summary of isothermal titration calorimetry (ITC) experiments.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>KlBre1 RBD</th>\n      <th>KlRad6</th>\n      <th>N</th>\n      <th>KD (\u03bcM)</th>\n      <th>\u0394H (kcal/mol)</th>\n      <th>T\u0394S (kcal/mol)</th>\n      <th>\u0394G (kcal/mol)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"7\">With 200 mM salt</td>\n    </tr>\n    <tr>\n      <td>WT</td>\n      <td>WT</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>R171E</td>\n      <td>WT</td>\n      <td>0.047 \u00b1 0.366</td>\n      <td>13.9 \u00b1 31.2</td>\n      <td>\u221280 \u00b1 704</td>\n      <td>\u221273.4</td>\n      <td>\u22126.63</td>\n    </tr>\n    <tr>\n      <td colspan=\"7\">With 1 M salt</td>\n    </tr>\n    <tr>\n      <td>WT</td>\n      <td>WT</td>\n      <td>0.191 \u00b1 0.003</td>\n      <td>0.012 \u00b1 0.009</td>\n      <td>\u221230.0 \u00b1 1.32</td>\n      <td>\u221219.1</td>\n      <td>\u221210.8</td>\n    </tr>\n    <tr>\n      <td>Q22A</td>\n      <td>WT</td>\n      <td>0.280 \u00b1 0.02</td>\n      <td>0.207 \u00b1 0.182</td>\n      <td>\u221218.3 \u00b1 2.38</td>\n      <td>\u22129.16</td>\n      <td>\u22129.12</td>\n    </tr>\n    <tr>\n      <td>K30A</td>\n      <td>WT</td>\n      <td>ND</td>\n      <td>ND</td>\n      <td>ND</td>\n      <td>ND</td>\n      <td>ND</td>\n    </tr>\n    <tr>\n      <td>R35E</td>\n      <td>WT</td>\n      <td>ND</td>\n      <td>ND</td>\n      <td>ND</td>\n      <td>ND</td>\n      <td>ND</td>\n    </tr>\n    <tr>\n      <td>R41E</td>\n      <td>WT</td>\n      <td>ND</td>\n      <td>ND</td>\n      <td>ND</td>\n      <td>ND</td>\n      <td>ND</td>\n    </tr>\n    <tr>\n      <td>R171E</td>\n      <td>WT</td>\n      <td>ND</td>\n      <td>ND</td>\n      <td>ND</td>\n      <td>ND</td>\n      <td>ND</td>\n    </tr>\n    <tr>\n      <td>R179A</td>\n      <td>WT</td>\n      <td>0.142 \u00b1 0.007</td>\n      <td>0.819 \u00b1 0.312</td>\n      <td>\u221222.6 \u00b1 2.23</td>\n      <td>\u221214.3</td>\n      <td>\u22128.31</td>\n    </tr>\n    <tr>\n      <td>V180A/F181A</td>\n      <td>WT</td>\n      <td>0.193 \u00b1 0.005</td>\n      <td>7.64 \u00b1 0.903</td>\n      <td>\u221231.6 \u00b1 1.78</td>\n      <td>\u221224.6</td>\n      <td>\u22126.98</td>\n    </tr>\n    <tr>\n      <td>WT</td>\n      <td>D50K</td>\n      <td>ND</td>\n      <td>ND</td>\n      <td>ND</td>\n      <td>ND</td>\n      <td>ND</td>\n    </tr>\n    <tr>\n      <td>WT</td>\n      <td>S111L</td>\n      <td>0.289 \u00b1 0.004</td>\n      <td>0.007 \u00b1 0.008</td>\n      <td>\u221233.6 \u00b1 1.52</td>\n      <td>\u221222.5</td>\n      <td>\u221211.1</td>\n    </tr>\n    <tr>\n      <td>WT</td>\n      <td>E146K</td>\n      <td>0.134 \u00b1 0.002</td>\n      <td>0.138 \u00b1 0.021</td>\n      <td>\u221232.3 \u00b1 0.63</td>\n      <td>\u221222.9</td>\n      <td>\u22129.37</td>\n    </tr>\n    <tr>\n      <td>WT</td>\n      <td>D152K</td>\n      <td>0.134 \u00b1 0.002</td>\n      <td>0.827 \u00b1 0.105</td>\n      <td>\u221230.4 \u00b1 1.02</td>\n      <td>\u221222.1</td>\n      <td>\u22128.30</td>\n    </tr>\n  </tbody>\n</table>\n\n_ND, not detectable.*Unreliable data fitting._\n\nTo validate the ITC data, we performed surface plasmon resonance (SPR) experiments (Figure 2\u2014figure supplement 4 and Table 3). The SPR experiments indicated that KlBre1 RBD (1-206) binds to immobilized KlRad6 with a ka of 1.42 \u00d7 104 (M\u22121 s\u22121) and dissociates with a kd of 2.05 \u00d7 10\u22124 (s\u22121). The KD estimated from these rate constants is 14 nM, similar to the KD obtained from ITC experiments. Substitutions that strongly inhibited the KlBre1 RBD\u2013Rad6 interaction in the ITC experiments also strongly inhibited the interaction in the SPR experiments. The R35E, R41E, R171E substitutions in KlBre1 RBD and the D50K substitution in KlRad6 reduced the response signal to undetectable levels. The K30A and V180A/F181A substitutions in KlBre1 RBD caused 30- and 950-fold increases in KD, respectively. Additional substitutions, namely Q22A, R179A in KlBre1 RBD and E146K, D152K in KlRad6, have less drastic effects, increasing the KD 3.6- to 5-fold.\n\n**Table 3.**\n Summary of surface plasmon resonance (SPR) experiments.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>KlBre1 RBD</th>\n      <th>KlRad6</th>\n      <th>ka (1/Ms)</th>\n      <th>kd (1/s)</th>\n      <th>KD (\u03bcM)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>WT</td>\n      <td>WT</td>\n      <td>(1.42 \u00b1 0.002) \u00d7 104</td>\n      <td>(2.05 \u00b1 0.01) \u00d7 10\u22124</td>\n      <td>0.0144</td>\n    </tr>\n    <tr>\n      <td>Q22A</td>\n      <td>WT</td>\n      <td>(2.41 \u00b1 0.009) \u00d7 104</td>\n      <td>(1.52 \u00b1 0.004) \u00d7 10\u22123</td>\n      <td>0.0633</td>\n    </tr>\n    <tr>\n      <td>K30A</td>\n      <td>WT</td>\n      <td>(7.88 \u00b1 0.04) \u00d7 102</td>\n      <td>(3.55 \u00b1 0.04) \u00d7 10\u22124</td>\n      <td>0.451</td>\n    </tr>\n    <tr>\n      <td>R35E</td>\n      <td>WT</td>\n      <td>ND</td>\n      <td>ND</td>\n      <td>ND</td>\n    </tr>\n    <tr>\n      <td>R41E</td>\n      <td>WT</td>\n      <td>ND</td>\n      <td>ND</td>\n      <td>ND</td>\n    </tr>\n    <tr>\n      <td>R171E</td>\n      <td>WT</td>\n      <td>ND</td>\n      <td>ND</td>\n      <td>ND</td>\n    </tr>\n    <tr>\n      <td>R179A</td>\n      <td>WT</td>\n      <td>(3.20 \u00b1 0.02) \u00d7 104</td>\n      <td>(1.66 \u00b1 0.005) \u00d7 10\u22123</td>\n      <td>0.0517</td>\n    </tr>\n    <tr>\n      <td>V180A/F181A</td>\n      <td>WT</td>\n      <td>*</td>\n      <td></td>\n      <td>13.7</td>\n    </tr>\n    <tr>\n      <td>WT</td>\n      <td>D50K</td>\n      <td>ND</td>\n      <td>ND</td>\n      <td>ND</td>\n    </tr>\n    <tr>\n      <td>WT</td>\n      <td>S111L</td>\n      <td>(2.79 \u00b1 0.005) \u00d7 104</td>\n      <td>(1.47 \u00b1 0.006) \u00d7 10\u22124</td>\n      <td>0.00529</td>\n    </tr>\n    <tr>\n      <td>WT</td>\n      <td>E146K</td>\n      <td>(1.82 \u00b1 0.005) \u00d7 104</td>\n      <td>(1.32 \u00b1 0.002) \u00d7 10\u22123</td>\n      <td>0.0726</td>\n    </tr>\n    <tr>\n      <td>WT</td>\n      <td>D152K</td>\n      <td>(2.35 \u00b1 0.007) \u00d7 104</td>\n      <td>(1.51 \u00b1 0.003) \u00d7 10\u22123</td>\n      <td>0.0641</td>\n    </tr>\n  </tbody>\n</table>\n\n_ND, not detectable.*Steady-state affinity analysis was performed._\n\nTogether the pull-down, ITC and SPR experiments indicate that residues Lys30, Arg35, Arg41 in KlBre1 and Asp50 in KlRad6 play critical roles in the KlBre1 RBD\u2013Rad6 interaction, whereas residues Gln22, Arg171, Arg179, Val180, Phe181 in KlBre1 and Glu146, Asp152 in KlRad6 also make important contributions. Together with the structure, these data provide molecular insights into the KlBre1 RBD\u2013Rad6 interaction.\n\nPrevious mutagenesis studies indicated that substitutions on Lys31 in ScBre1 and on Gly23 and Asp50 in ScRad6 abolished their binding (Turco et al., 2015). In our structure the equivalent residues, Lys30 in the KlBre1 RBD and Gly23 and Asp50 in KlRad6, mediate important interactions between KlBre1 RBD and KlRad6 (Figure 2A, B). Therefore, the reported loss of binding is most likely due to the loss of important interactions at the ScBre1 RBD\u2013Rad6 interface.\n\n### The Bre1 RBD\u2013Rad6 interaction stimulates Rad6\u2019s intrinsic activity\n\nUbiquitin has been reported interact with the back side of several E2 enzymes (Brzovic et al., 2006; Buetow et al., 2015; Eddins et al., 2006; Hibbert et al., 2011; Sakata et al., 2010). The activity of some of these E2 enzymes, including the human Rad6B, is stimulated by such interaction (Brzovic et al., 2006; Buetow et al., 2015; Hibbert et al., 2011). The expected ubiquitin-binding site on Rad6\u2019s back side overlaps with the Bre1 RBD-binding site (Figure 3A, left panel), promoting us to probe the effect of Bre1 RBD on Rad6\u2019s activity. To this end, we monitored Rad6\u2019s intrinsic activity in catalyzing free ubiquitin chain formation (Hibbert et al., 2011). To assess the basal activity of Rad6, we introduced a G23R/T52A substitution to KlRad6\u2019s back side. The equivalent substitution in the human Rad6B has been reported to abolish ubiquitin binding to its back side and the ubiquitin-mediated stimulation (Hibbert et al., 2011). Gel filtration experiments suggest that the substitution did not alter the overall structure of KlRad6 (Figure 2\u2014figure supplement 2B). Consistent with ubiquitin binding to the back side of KlRad6 and stimulating its activity, we found that the substitution decreased the free ubiquitin chain production by KlRad6 (Figure 3B and Figure 3\u2014figure supplement 1A). Supplementing KlBre1 RBD (1-206) to the reaction with the wild-type KlRad6 accelerated the formation of ubiquitin chains (Figure 3\u2014figure supplement 1B), but the ubiquitin chains can be attached to KlBre1 RBD (1-206) (Figure 3\u2014figure supplement 1C). After removing the strep-tagged KlBre1 RBD (1-206) and attached ubiquitin chains with strep-tactin beads (Figure 3\u2014figure supplement 1B), we found that the reaction with the wild-type KlRad6 and KlBre1 RBD (1-206) also produced more free ubiquitin chains than the reaction with KlRad6 (G23R/T52A) (Figure 3B). The affinity between ubiquitin and Rad6 is rather weak, with KD in the mM range (Kumar et al., 2015). In contrast, our binding experiments indicated a strong interaction between KlBre1 RBD and KlRad6. Therefore, when KlBre1 RBD is supplemented to the reaction, KlBre1 RBD but not ubiquitin is expected to occupy KlRad6\u2019s back side. Thus, our experiments indicate that KlBre1 RBD stimulates KlRad6\u2019s intrinsic activity.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/84157/elife-84157-fig3-v2.jpg)\n\n**Figure 3.:** (A) Structural modeling of the ubiquitin\u2013KlRad6 interaction. The left panel shows a model of KlRad6 with ubiquitin bound at its back side (ubiquitinB), based on the structure of UbcH5c with ubiquitin bound at its back side (PDB 2FUH) (Brzovic et al., 2006). KlBre1 RBD observed in our structure is shown for reference. The right panel shows a model of the KlRad6\u2013ubiquitin conjugate in the closed conformation, based on the closed conformation of the ubiqtuin\u2013Ubc13 covalent complex (PDB 5ait) (Branigan et al., 2015). Secondary structural elements and the N- and C-termini of KlRad6 are indicated. Important residues are highlighted. The red spheres indicate KlRad6\u2019s active site. (B) Western blot analysis of free ubiquitin chain production by KlRad6. The reactions were carried out for 30 min. KlBre1 RBD (1-206) and ubiquitin chains attached to it were removed before analysis. Ub, ubiquitin; Ub2 and Ubn, ubiquitin chains with 2 or n ubiquitin moieties, respectively. (C) Western blot analysis of free ubiquitin chain production in reactions with ubiquitin (I44A) and KlRad6 (S111L). Reactions carried out for 5, 10, and 20 min are presented. KlBre1 RBD (1-206) and ubiquitin chains attached to it were removed before analysis. Two independent repeats of the experiments were performed. (D) Western blot analysis of the Rad6\u2013ubiquitin discharging reaction. ubiquitin (I44A/K0) charged to KlRad6 (S111L) was discharged to ubiquitin (I44A) in the absence or presence of KlBre1 RBD (1-206). The reactions were allowed to proceed for 5, 10, 20, and 40 min and analyzed by non-reducing sodium dodecyl sulfate\u2013polyacrylamide gel electrophoresis (SDS\u2013PAGE) followed by western blot for ubiquitin. In lanes marked with \u20180\u2019, western blot analysis of the KlRad6\u2013ubiqtuin conjugate prior to the discharging reaction is presented. Three independent repeats of the experiments were performed. (E, F) Quantification of the di-ubiquitin production in the KlRad6\u2013ubiquitin discharging reactions. The intensity of the di-ubiquitin band divided by the intensity of the Rad6\u2013ubiqtuin band in lane \u20180\u2019 of the same blot times 100 was calculated to represent the di-ubiquitin amount. The error bars represent standard deviations of three independent experiments. Band intensities were read with ImageJ. (G) The discharge reaction rate. Data presented in panels E and F were fitted to a linear equation and the slope is used to represent the reaction rate. Errors were derived from data fitting. Source data for panels B\u2013D are provided in Figure 3\u2014source data 1, for panels E\u2013G are provided in Figure 3\u2014source data 2.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84157/elife-84157-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A, B) Ubiquitin chain production by KlRad6. Sodium dodecyl sulfate\u2013polyacrylamide gel electrophoresis (SDS\u2013PAGE) analysis of the reactions are presented. Experiments presented in panel A were carried out without KlBre1 Rad6-binding domain (RBD) for 0, 5, 10, 20, 30, and 60 min. Reactions presented in panel B were carried out for 30 min. Ub, ubiquitin; Ub2 and Ubn, ubiquitin chains with 2 or n ubiquitin moieties, respectively. (C) KlBre1 RBD can be ubiquitinated. Western blot analysis against the strep-tagged KlBre1 RBD (1-206) after the ubiquitin chain formation reaction is presented. The reactions were allowed to proceed for the indicated time. (D) Pull-down experiments probing the KlBre1 RBD\u2013Rad6 interaction. SDS\u2013PAGE analysis of the experiments with the G23R/T52A- and S111L-substituted KlRad6 are presented. (E) Non-reducing SDS\u2013PAGE analysis of the KlRad6\u2013ubiquitin discharging reaction. The lane marked with \u20180\u2019 shows analysis of the KlRad6\u2013ubquitin conjugate prior to the reaction. Wild-type ubiquitin, KlRad6 and KlBre1 RBD (1-184) were used for the reactions, which were allowed to proceed for 10, 20, 40, 70, 100, 130, and 150 min before analysis. (F) KlBre1 RBD (1-206) interferes with western blot detection of the KlRad6\u2013ubquitin conjugate. The same KlRad6\u2013ubquitin conjugate sample was analyzed with non-reducing SDS\u2013PAGE and western blot for ubiquitin. 30 \u03bcM of KlBre1 RBD (1-206) or the same volume of protein buffer was added before analysis. An analysis for KlBre1 RBD (1-206) is included for comparison. KlBre1 RBD (1-206) reduces the signal level of the KlRad6\u2013ubiquitin conjugate in western blot. The star sign indicates the KlRad6\u2013ubiquitin conjugate and KlBre1 RBD. (G) SDS\u2013PAGE analysis for the KlRad6\u2013ubiquitin conjugate. The conjugate in discharging reactions with KlRad6 (S111L), ubiquitin (I44A/K0), and ubiquitin (I44A) was analyzed with non-reducing SDS\u2013PAGE with 18% gels. Reactions were allowed to proceed for 5, 10, 20, and 40 min. Lanes marked with \u20180\u2019 show the conjugate prior to the discharging reaction. When indicated, wild-type or substituted KlBre1 RBD (1-206) was supplemented. (H) Quantification of the KlRad6\u2013ubiquitin conjugate signal. The intensity of the conjugate signal in panel G was read by ImageJ and plotted. Source data for panels A\u2013G are provided in Figure 3\u2014figure supplement 1\u2014source data 1, for panel H is provided in Figure 3\u2014figure supplement 1\u2014source data 2.\n\nKlRad6 residues Gly23 and Thr52 are located at the center of its interface with KlBre1 RBD (Figure 2A, B) and we found that the G23R/T52A substitution severely inhibits the KlBre1 RBD\u2013Rad6 interaction (Figure 3\u2014figure supplement 1D). Hence, KlRad6 (G23R/T52A) is not expected to be activated by KlBre1 RBD. To compare the basal and Bre1 RBD-stimulated activities of the same Rad6 variant, we introduced the I44A substitution to ubiquitin. This substitution inhibits the interaction between ubiquitin and the back side of E2 enzymes (Figure 3A, left panel; Brzovic et al., 2006; Buetow et al., 2015; Eddins et al., 2006; Hibbert et al., 2011; Sakata et al., 2010). It also destabilizes the closed conformation of the E2\u2013ubiquitin conjugate required for ubiquitin transfer, but this defect can be rescued by substitutions in the E2 enzyme near the active site (Li et al., 2015; Saha et al., 2011). One of such substitutions, equivalent to S111L in KlRad6, introduces hydrophobic interactions with the substituted I44A side chain to stabilize the closed conformation (Figure 3A, right panel). The S111L substitution did not inhibit the KlBre1 RBD\u2013Rad6 interaction (Figure 3\u2014figure supplement 1D, Tables 2 and 3) or alter the overall structure of KlRad6 (Figure 2\u2014figure supplement 2B). As expected, it rescued the severely inhibited free ubiquitin chain production associated with ubiquitin (I44A) (Figure 3\u2014figure supplement 1A). Supplementing KlBre1 RBD (1-206) into the reaction with KlRad6 (S111L) and ubiquitin (I44A) stimulated the free ubiquitin chain production, consistent with a stimulatory effect of KlBre1 RBD on KlRad6\u2019s intrinsic activity (Figure 3C).\n\nTo further probe the role of the KlBre1 RBD\u2013Rad6 interaction in the stimulation of KlRad6\u2019s activity, we tested the effects of substitutions in KlBre1 RBD. In free ubiquitin chain formation reactions with KlRad6 (S111L) and ubiquitin (I44A), we found that the Q22A substitution did not noticeably change the stimulation by KlBre1 RBD (1-206), whereas substitutions K30A, R35E, R41E, R171E, R179A, and V180A/F181A decreased stimulation (Figure 3C). These observations correlate well with our binding experiments, which indicate that the Q22A substitution moderately inhibited the KlBre1 RBD\u2013KlRad6 interaction whereas the other substitutions caused stronger inhibitions (Figure 2C, Tables 2 and 3). Together, these data indicate a critical role of the Bre1 RBD\u2013Rad6 interaction in stimulating Rad6\u2019s intrinsic activity.\n\n### The Bre1 RBD\u2013Rad6 interaction stimulates Rad6\u2019s activity in ubiquitin discharging\n\nThe ubiquitination reaction consists of two steps, ubiquitin charging to the E2 enzyme and ubiquitin discharging from the E2\u2013ubiquitin conjugate to the substrate. Ubiquitin and several E3 enzymes have been reported to bind to the back side of E2 enzymes to regulate the discharging reaction (Buetow et al., 2015; Das et al., 2009; Li et al., 2015; Metzger et al., 2013). To test if the Bre1 RBD\u2013Rad6 interaction affects ubiquitin discharging from the Rad6\u2013ubiquitin conjugate, we performed single turnover ubiquitin discharging experiments. After charging ubiquitin to KlRad6 with the E1 enzyme, we stopped the charging reaction and allowed the KlRad6\u2013ubiquitin conjugate to discharge. We found that the amount of the conjugate decreases over time and adding KlBre1 RBD (1-184) accelerated the rate of its disappearance (Figure 3\u2014figure supplement 1E), in line with a previous report (Turco et al., 2015). Since KlBre1 RBD itself can be ubiquitinated, adding it could accelerate the ubiquitin discharge by providing more acceptor substrates. To eliminate this effect and test if KlBre1 RBD regulates KlRad6\u2019s enzymatic activity in ubiquitin discharging, we followed the reaction of ubiquitin discharging to ubiquitin (Figure 3D\u2013G). The substrate amount of this reaction is unaffected by supplementing KlBre1 RBD. We monitored the amount of the reaction product, the free ubiquitin chain. To better quantify the reaction, we utilized a K0-subsituted donor ubiquitin in which all lysine residues are substituted to arginine. After its attachment to the acceptor ubiquitin, donor ubiquitin attachment to it is prevented, making di-ubiquitin the only product. To eliminate the potential regulatory effect of ubiquitin by binding to KlRad6\u2019s back side, we introduced the I44A and S111L substitutions to ubiquitin and KlRad6, respectively. Western blot analysis indicated that the di-ubiquitin production in this reaction is stimulated by supplementing the wild-type KlBre1 RBD (1-206) (Figure 3D, E, G). Similar to the free ubiquitin chain production experiments, we found that the Q22A substitution in KlBre1 RBD had little effect on the stimulation, whereas substitutions K30A, R35E, R41E, R171E, R179A, and V180A/F181A decreased the stimulation (Figure 3D, F, G). Together, these data indicate that the KlBre1 RBD\u2013Rad6 interaction stimulates KlRad6\u2019s enzymatic activity in ubiquitin discharging.\n\nKlBre1 RBD (1-206) interferes with the western blot detection of the KlRad6\u2013ubiquitin conjugate (Figure 3D and Figure 3\u2014figure supplement 1F). The conjugate can be effectively detected with SDS\u2013PAGE with 18% gels (Figure 3\u2014figure supplement 1F) and we quantified its amount with this technique. The data show that KlBre1 RBD (1-206) also stimulated the disappearance of the KlRad6\u2013ubiquitin conjugate in the above discharging experiments (Figure 3\u2014figure supplement 1G, H). The stimulation is reduced by substitutions in KlBre1 RBD inhibiting the KlBre1 RBD\u2013Rad6 interaction, with the smallest reduction observed for the Q22A substitution and the largest reductions observed for the K30A, R35E and R41E substitutions. Consistent with ubiquitin discharging to KlBre1 RBD, we found an appearance of the KlBre1 RBD\u2013ubiquitin product in the discharging experiments (Figure 3D). The rate of its appearance is reduced by the K30A, R35E, and R41E substitutions in KlBre1 RBD (Figure 3D), suggesting that a strong KlBre1 RBD\u2013Rad6 interaction is required for efficient ubiquitin discharge to KlBre1 RBD. Together, data from di-ubiquitin, KlBre1 RBD\u2013ubiquitin and the KlRad6\u2013ubiquitin conjugate are consistent with the notion that both ubiquitin discharge to ubiquitin and to KlBre1 RBD contributes to the disappearance of the KlRad6\u2013ubiqutin conjugate.\n\n### Bre1 RBD increases Rad6\u2019s active site accessibility\n\nStructural analysis provided insights into the mechanism of the observed Rad6 stimulation. When the three KlRad6 molecules not mediating extensive crystal packing interactions in our structures are compared, large structural differences are observed for residues 90\u201398 and 115\u2013121 surrounding KlRad6\u2019s active site (Figure 4A). The 90\u201398 region can be resolved in the electron density map in crystal form 1 but is mostly disordered in KlRad6 molecule 2 in crystal form 2, the equivalent C\u03b1 atoms in the 115\u2013121 region are located as far as 5.2 \u00c5 apart. These regions in the three KlRad6 molecules also display significantly elevated temperature factors (Figure 4B). In contrast, in KlRad6 molecule 1 in crystal form 2, the temperature factors for these regions are not elevated (Figure 4\u2014figure supplement 1A), consistent with stabilization of their structure by the extensive crystal packing interactions (Figure 1\u2014figure supplement 2C). The equivalent regions in Rad6 orthologs have been reported to be mobile. NMR studies indicated that these regions in the human Rad6B are flexible on a nanosecond to picosecond time scale (Miura et al., 1999; Miura et al., 2002). Structural differences were also observed for these regions in the crystal structure of the closely related ScRad6 (sharing 94.5% sequence identity with KlRad6) (Worthylake et al., 1998), but are less pronounced. In the three ScRad6 molecules in the crystal, the 90\u201398 region adopt almost identical structures, the equivalent C\u03b1 atoms in the 115\u2013121 region are located less than 4.1 \u00c5 apart (Figure 4C). The temperature factors of these regions are also elevated in this structure, but less significantly (Figure 4D and Figure 4\u2014figure supplement 1B). Together, these data indicate an increased mobility of regions 90\u201398 and 115\u2013121 in KlRad6 in the KlBre1 RBD\u2013Rad6 complex, suggesting that KlBre1 RBD allosterically increase the mobility of these regions. Such an increase in mobility is expected to make KlRad6\u2019s active site more accessible, which could facilitate the nucleophilic attack of the KlRad6\u2013ubiqutin thioester bond and promotes the ubiquitin discharge.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/84157/elife-84157-fig4-v2.jpg)\n\n**Figure 4.:** (A) Structural comparison of KlRad6 molecules in our crystals. Regions surrounding the active site (C88) in KlRad6 molecules not mediating extensive crystal packing interactions are shown. The C\u03b1 positions of residues 90, 98, 115, and 121 are indicated. (B) Temperature factor distribution of KlRad6 molecules in our crystals. The structures of KlRad6 molecules not mediating extensive crystal packing interactions are colored according to the temperature factor. The average temperature factor for regions 90\u201398 and 115\u2013121 in KlRad6 molecules 1 and 2 in crystal form 1 and molecule 2 in crystal form 2 are 143.7, 156.4, and 173.5 \u00c52, respectively, the average temperature factor for the rest of these molecules are 104.6, 117.1, and 149.2 \u00c52. (C) Structural comparison of ScRad6 molecules in the crystal structure of free ScRad6 (PDB 1AYZ) (Worthylake et al., 1998). (D) Temperature factor distribution of ScRad6 in the crystal structure of free ScRad6. Molecule 1 in the crystal is presented. The average temperature factor for its regions 90\u201398 and 115\u2013121 is 45.7 \u00c52, for the rest of the molecule is 42.6 \u00c52. (E) KlBre1 RBD increase KlRad6\u2019s active site accessibility. 3-(2-Iodoacetamido)-2,2,5,5-tetramethyl-1-pyrolidinyloxy (IPSL) labeling of KlRad6\u2019s active site cysteine is presented. The error bars represent standard deviations of four independent experiments (represented by the black dots). The p value is derived from the two-sided Student\u2019s t-test. Source data for panel E are provided in Figure 4\u2014source data 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84157/elife-84157-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Temperature factor distribution of KlRad6 molecule 1 in crystal form 2 in our study. (B) Temperature factor distribution of molecules 2 and 3 in the crystal structure of ScRad6.The average temperature factor for their regions 90\u201398 and 115\u201312 are 39.8 and 44.5 \u00c52, respectively; for the rest of the molecules are 34.7 and 38.1 \u00c52, respectively. The active site (C88) of the Rad6 molecules are indicated.\n\nTo test if KlBre1 RBD increases KlRad6\u2019s active site accessibility, we labeled its active site cysteine with the cysteine-reacting reagent 3-(2-Iodoacetamido)-2,2,5,5-tetramethyl-1-pyrolidinyloxy (IPSL). We found that after a 15-min incubation with 300 \u03bcM IPSL, 39% of KlRad6\u2019s active site cysteine was labeled with IPSL, supplementing KlBre1 RBD (1-206) increased the labeling level to 86% (Figure 4E). Together with the structural data, these data indicate that KlBre1 RBD allosterically increases KlRad6\u2019s active site accessibility to stimulate its activity.\n\n### The Bre1 RBD\u2013Rad6 interaction is crucial for Bre1\u2019s function inside the cell\n\nTo assess the physiological function of the Bre1 RBD\u2013Rad6 interaction inside the cell, we generated a BRE1 knock out yeast strain and complemented it with the wild-type or substituted ScBre1. The effects of several ScBre1 substitutions were assessed, including Q23A, Q30A, K31D, R36E, R42E, and the Q30A/K31D and R36E/R42E double substitutions. In line with previous reports (Hwang et al., 2003; Wood et al., 2003), we found that knocking out BRE1 abolished H2Bub1 in vivo (Figure 5A), caused sensitivity toward replication stress or DNA damaging reagents including camptothecin (CPT), methylmethane sulfonate (MMS), phleomycin, and hydroxy urea (HU) (Figure 5B). These phenotypes can be rescued by complementing the cells with the wild-type or Q23A-substituted ScBre1, but not ScBre1 with the other substitutions. The Bre1-mediated H2Bub1 plays a critical role in promoting DNA DSB repair by HR (Zheng et al., 2018). To test the importance of the Bre1 RBD\u2013Rad6 interaction in HR, we employed an ectopic recombination system in which a single DSB is generated by the HO endonuclease at the MATa sequence inserted in chromosome V, which can be repaired by HR using the homologous MATa-inc sequence located on chromosome III (Figure 5C; Ira et al., 2003). Approximately 55% of the BRE1 knock out cells completed the repair and survived. Complementing the cells with the wild-type or the Q23A-substituted ScBre1 increased the survival rate to ~80%, while complementing the cells with ScBre1 carrying the other substitutions failed to or only modestly increased the survival rate (55\u201372%) (Figure 5D). These substitutions did not significantly alter the Bre1 or Rad6 protein levels (Figure 5E). These data are in line with our structure and biochemical studies. The Q23A substitution did not cause noticeable defects in the cellular H2Bub1 level, sensitivity toward replication stress or DNA damaging reagents or the HR repair. The equivalent substitution in KlBre1 RBD, Q22A, only moderately reduced its affinity toward KlRad6. In contrast, strong defects were observed for the Q30A, K31D, R36E, R42E substitutions or their combinations. KlBre1 residues equivalent to the substituted ones mediate important hydrogen bond or salt bridge interactions with Rad6 (Gln29, Lys30, Arg35, and Arg41, Figure 2A, B), and our binding experiments indicated that substitutions on Lys30, Arg35, and Arg41 strongly inhibited the KlBre1 RBD\u2013KlRad6 interaction (Figure 2C, Tables 2 and 3). The strong defects associated with these substitutions correlate with the expected strong inhibition of the ScBre1 RBD\u2013Rad6 interaction. Together, these data indicate that the Bre1 RBD\u2013Rad6 interaction is crucial for the Bre1-mediated H2B mono-ubiquitination, DNA damage response, and HR repair inside the cell.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/84157/elife-84157-fig5-v2.jpg)\n\n**Figure 5.:** (A) The Bre1 RBD\u2013Rad6 interaction is essential for the H2Bub1 formation inside the cell. Western blot analysis for H2Bub1 in BRE1 knock out cells complemented with pRS316-derived plasmids carrying the wild-type or substituted ScBre1 is shown. Data for the wild-type or BRE1 knock out cells complemented with the empty vector are included for comparison. (B) The Bre1 RBD\u2013Rad6 interaction is essential for survival in the presence of replication stress/DNA damaging reagents. Sensitivity of BRE1 knock out cells complemented with pRS16-derived plasmids for the wild-type or substituted ScBre1 is shown. The cells were challenged with camptothecin (CPT), methylmethane sulfonate (MMS), phleomycin, or hydroxy urea (HU). Data for the wild-type or BRE1 knock out cells complemented with the empty vector are included for comparison. (C) Scheme showing the ectopic recombination system. CO, crossover; NCO, non-crossover. (D) The Bre1 RBD\u2013Rad6 interaction is essential for the HR repair. Survival rate of BRE1 knock out cells complemented with the wild-type or substituted ScBre1 due to successful HR repair is shown. Data for cells complemented with the empty vector are included for comparison. Error bars represent standard deviations of three independent experiments (represented by the red dots). p values derived from the two-sided Student\u2019s t-test are presented. (E) Substitutions in ScBre1 do not alter the Bre1 or Rad6 protein levels. Western blot analysis for Bre1 and Rad6 is presented. Western blot analysis for glyceraldehyde-3-phosphate dehydrogenase (GAPDH) is included as reference. Source data for panels A and E are provided in Figure 5\u2014source data 1, for panel D is provided in Figure 5\u2014source data 2.\n\n## Discussion\n\nOur structure provides mechanistic insights into the interaction between the two Bre1 RBD polypeptides and between Bre1 and Rad6. It has been reported that Bre1 forms a dimer and its N-terminal region plays a critical role in the dimer formation (Kim and Roeder, 2009). In line with this report, our structure indicates that multiple regions in the two Bre1 N-terminal polypeptides contribute to a large dimer interface. Our structure also indicates that multiple regions in both Bre1 polypeptides contribute to the interaction with Rad6. Such a structure suggests that the Bre1 dimerization is required for the Bre1 RBD\u2013Rad6 interaction.\n\nAn important finding we made is that the Bre1 RBD\u2013Rad6 interaction stimulates Rad6\u2019s enzymatic activity. Our data suggest that by binding to Rad6\u2019s back side, Bre1 RBD allosterically increases Rad6\u2019s activity site accessibility, which facilitats the nucleophilic attack of the Rad6\u2013ubiqtuin thioester bond to promote ubiquitin discharge. Ubiquitin also binds to the back side of several E2 enzymes to stimulate their activity (Brzovic et al., 2006; Buetow et al., 2015; Hibbert et al., 2011). However, there are striking differences between the Bre1 RBD- and ubiquitin-mediated stimulation. Unlike Bre1 RBD, ubiquitin does not form stable complexes with E2 enzymes and it is not clear if it allosterically increases their active site accessibility. In addition to this mechanism, our data suggest that the Bre1 RBD\u2013Rad6 interaction may promote the H2Bub1 catalysis through additional mechanisms. First, it may maintain a close Bre1\u2013Rad6 association during the H2Bub1 catalysis. Structural studies indicated that the E1 enzyme and the RING domain in the E3 enzymes compete for binding to the E2 enzyme (Cappadocia and Lima, 2018; Gundogdu and Walden, 2019; Stewart et al., 2016; Streich and Lima, 2014), resulting a \u2018ping-pong\u2019 motion of the E2 enzyme between the E1 enzyme and the RING domain during the catalysis. The Bre1 RBD\u2013Rad6 interaction is not expected to interfere with the Rad6\u2013E1 or Rad6\u2013RING interactions (Figure 1\u2014figure supplement 4A, B). Therefore, the strong affinity between Bre1 RBD and Rad6 we and others (Turco et al., 2015) observed suggests a constant Rad6\u2013Bre1 association during the ubiquitination catalysis. Such a Rad6\u2013Bre1 association could increase the local concentration of Rad6 to promote the catalysis. Second, the Bre1 RBD\u2013Rad6 interaction may position Bre1 RBD for interaction with ubiquitin in the Rad6\u2013ubiquitin conjugate and may stabilize its closed conformation for ubiquitin discharge (Figure 1\u2014figure supplement 4C). The conserved phenylalanine equivalent to Phe181 in KlBre1 is expected to play a central role in this interaction. The loss of this interaction may contribute to the observed loss of KlRad6 stimulation by the V180A/F181A-substituted KlBre1 RBD (Figure 3C, D, F, G). These important functions of the Bre1 RBD\u2013Rad6 interaction are in line with our observation that it is crucial for multiple H2Bub1-regulated processes inside the cell.\n\nIn a recent study, it was found that supplementing ScBre1 RBD to a single turnover discharging experiment stimulates ubiquitin discharge from the Rad6\u2013ubiquitin conjugate (Turco et al., 2015). In addition to ubiquitin discharging to ubiquitin (reaction 1), our data suggest that supplementing ScBre1 RBD probably introduced a second reaction, ubiquitin discharging to ScBre1 RBD (reaction 2). Reaction 1 is relevant to Rad6\u2019s enzymatic activity and the H2Bub1 catalysis in vivo. Whether reaction 2 takes place in vivo is not clear. Both reactions contribute to the Rad6\u2013ubiquitin discharge, making it difficult to deduce from the accelerated Rad6\u2013ubiquitin discharge whether ScBre1 RBD stimulates reaction 1. In addition, our structure suggests that Bre1 RBD competes with ubiquitin for binding to Rad6\u2019s back side and eliminates the ubiquitin-mediated stimulation on Rad6. Therefore, measuring Rad6\u2019s basal activity without ubiquitin bound at its back side is necessary to reveal its regulation by Bre1 RBD. In our study, we monitored reaction 1 and introduced substitutions to access Rad6\u2019s basal activity. We found that the reaction 1 rate is stimulated by supplementing KlBre1 RBD and the stimulation is inhibited by substitutions that inhibits the KlBre1 RBD\u2013Rad6 interaction. Such data provide strong evidence that the Bre1 RBD\u2013Rad6 interaction stimulates Rad6\u2019s enzymatic activity. It should be noted that in the presence of Bre1 RBD, reaction 2 inhibits reaction 1 by competing with it for the Rad6\u2013ubiquitin conjugate. Therefore, the increase in reaction 1 rate by Bre1 RBD represents an underestimation of its stimulatory effect.\n\nSeveral other E3 enzymes have been reported to contain specific E2 enzyme back side binding regions (E2BBRs), which regulate the activity of related E2 enzymes with distinct mechanisms. E2BBRs in Gp78 (Das et al., 2013; Das et al., 2009) and Cue1 Metzger et al., 2013 have been reported to stimulate the activity of the related E2 enzymes by increasing their active site accessibility and interaction with the RING domain, whereas E2BBRs in AO7 (Li et al., 2015) and Rad18 Hibbert et al., 2011 have been reported to inhibit the activity of the related E2 enzymes by blocking ubiquitin binding to their back side. All the previously reported E2BBRs possess a single E2-interacting region that contains a major \u03b1 helix, which binds to the back side of E2 enzymes in different orientations (Figure 1\u2014figure supplement 5). In sharp contrast to these E2BBRs, multiple regions in both polypeptides in the Bre1 RBD dimer contribute to the interaction with Rad6. Most interestingly, although both the Bre1 RBD and the Rad18 E2BBR bind to the Rad6 back side, they appear to have opposite effects on Rad6\u2019s activity. Together, these previously studies and ours indicate that E3 enzymes can interact with the back side of E2 enzymes with drastically different mechanisms to regulate their activity.\n\nIn the Bre1 holoenzyme, RBD coordinates with other Bre1 domains and additional factors to catalyze the H2Bub1 reaction. Our study provided glimpse into this important reaction, yet extensive future studies are required to fully understand its mechanism. One of the most important questions to answer is how Bre1 RBD coordinates with its RING domain during the H2Bub1 catalysis. Unlike Bre1 RBD, the Bre1 RING domain appears to be a symmetrical dimer with two Rad6-binding sites (Kumar and Wolberger, 2015). Studies suggest that only one of them interacts with the Rad6\u2013ubiquitin conjugate for ubiquitin transfer to NCP (Gallego et al., 2016). It is also important to understand the coordination between Bre1 RBD and additional domains/factors during the H2Bub1 catalysis. For instance, the non-canonical back side of Rad6 appears to be accessible in the Bre1 RBD-bound Rad6 (Figure 1\u2014figure supplement 4B), where ubiquitin may bind to regulate its activity (Kumar et al., 2015). A clear understanding of the H2Bub1 catalytic mechanism will help to resolve the long-standing puzzle how Bre1 directs Rad6\u2019s activity toward substrate mono-ubiquitination. Rad6 participates in both ubiquitin chain formation and mono-ubiquitination reactions. It functions with Ubr1 to catalyze the ubiquitin chain modification of N-end rule protein substrates (Dohmen et al., 1991), with Bre1 (Hwang et al., 2003; Robzyk et al., 2000; Wood et al., 2003) and Rad18 (Hoege et al., 2002) to mono-ubiquitinate H2B and the proliferating cell nuclear antigen (PCNA), respectively. It also possesses an intrinsic activity to catalyze free ubiquitin chain formation (Hibbert et al., 2011). The Rad18 E2BBR suppresses its intrinsic free ubiquitin chain forming activity and directs its activity toward PCNA mono-ubiquitination (Hibbert et al., 2011). In contrast, our data indicate that Bre1 RBD does not inhibit the free ubiquitin chain formation by Rad6 but stimulates its activity. Thus, Bre1 utilizes a completely different mechanism to direct Rad6\u2019s activity toward H2B mono-ubiquitination. Understanding this mechanism could provide insights into the catalytic mechanism of E3 enzymes in general.\n\nThe human orthologs of Bre1, RNF20, and RNF40, form a heterodimer (Kim et al., 2009). It has been reported that the RNF20 N-terminal 381 residues could form a complex with RNF40 that binds Rad6 (Kim et al., 2009), suggesting that these residues participate in the formation of a functional RBD. However, sequence analysis suggested that the region spanning residues 328\u2013528 in RNF20 possesses homology to the RBD region in Bre1 (Zhu et al., 2005). Therefore, future studies are required to define the RBD in the RNF20/RNF40 heterodimer and elucidate its structure and function.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>JKM139</td>\n      <td>Lee et al., 1998</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>tGI354</td>\n      <td>Ira et al., 2003</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yZSH241</td>\n      <td>This study</td>\n      <td>bre1::TRP1</td>\n      <td>Parental strain: tGI354</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yMF001</td>\n      <td>This study</td>\n      <td>bre1::TRP1 + pRS316-bre1-Q23A</td>\n      <td>Parental strain: tGI354</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yMF002</td>\n      <td>This study</td>\n      <td>bre1::TRP1 + pRS316-bre1-Q30AK31D</td>\n      <td>Parental strain: tGI354</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yMF003</td>\n      <td>This study</td>\n      <td>bre1::TRP1 + pRS316-bre1-R36ER42E</td>\n      <td>Parental strain: tGI354</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yMF004</td>\n      <td>This study</td>\n      <td>bre1::TRP1 + pRS316</td>\n      <td>Parental strain: tGI354</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yMF005</td>\n      <td>This study</td>\n      <td>bre1::TRP1 + pRS316-BRE1</td>\n      <td>Parental strain: tGI354</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yMF006</td>\n      <td>This study</td>\n      <td>bre1::TRP1 + pRS316-bre1-Q23A</td>\n      <td>Parental strain: JKM139</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yMF007</td>\n      <td>This study</td>\n      <td>bre1::TRP1 + pRS316-bre1-Q30AK31D</td>\n      <td>Parental strain: JKM139</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yMF008</td>\n      <td>This study</td>\n      <td>bre1::TRP1 + pRS316-bre1-R36ER42E</td>\n      <td>Parental strain: JKM139</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yMF009</td>\n      <td>This study</td>\n      <td>bre1::TRP1 + pRS316</td>\n      <td>Parental strain: JKM139</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yMF010</td>\n      <td>This study</td>\n      <td>bre1::TRP1 + pRS316-BRE1</td>\n      <td>Parental strain: JKM139</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yLD002</td>\n      <td>This study</td>\n      <td>bre1::TRP1</td>\n      <td>Parental strain: JKM139</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yMF011</td>\n      <td>This study</td>\n      <td>KanMX-FLAG-H2B bre1::TRP1 + pRS316-bre1-Q23A</td>\n      <td>Parental strain: JKM139</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yMF012</td>\n      <td>This study</td>\n      <td>KanMX-FLAG-H2B bre1::TRP1 + pRS316-bre1-Q30AK31D</td>\n      <td>Parental strain: JKM139</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yMF013</td>\n      <td>This study</td>\n      <td>KanMX-FLAG-H2B bre1::TRP1 + pRS316-bre1-R36ER42E</td>\n      <td>Parental strain: JKM139</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yMF014</td>\n      <td>This study</td>\n      <td>KanMX-FLAG-H2B bre1::TRP1 + pRS316</td>\n      <td>Parental strain: JKM139</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yMF015</td>\n      <td>This study</td>\n      <td>KanMX-FLAG-H2B bre1::TRP1 + pRS316-BRE1</td>\n      <td>Parental strain: JKM139</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yGX060</td>\n      <td>This study</td>\n      <td>KanMX-FLAG-H2B bre1::TRP1</td>\n      <td>Parental strain: JKM139</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yZS059</td>\n      <td>This study</td>\n      <td>bre1::TRP1 + pRS316-bre1-Q30A</td>\n      <td>Parental strain: tGI354</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yZS060</td>\n      <td>This study</td>\n      <td>bre1::TRP1 + pRS316-bre1-K31D</td>\n      <td>Parental strain: tGI354</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yZS061</td>\n      <td>This study</td>\n      <td>bre1::TRP1 + pRS316-bre1-R36E</td>\n      <td>Parental strain: tGI354</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yZS062</td>\n      <td>This study</td>\n      <td>bre1::TRP1 + pRS316-bre1-R42E</td>\n      <td>Parental strain: tGI354</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yZS063</td>\n      <td>This study</td>\n      <td>bre1::TRP1 + pRS316-bre1-Q30A</td>\n      <td>Parental strain: JKM139</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yZS064</td>\n      <td>This study</td>\n      <td>bre1::TRP1 + pRS316-bre1-K31D</td>\n      <td>Parental strain: JKM139</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yZS065</td>\n      <td>This study</td>\n      <td>bre1::TRP1 + pRS316-bre1-R36E</td>\n      <td>Parental strain: JKM139</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yZS066</td>\n      <td>This study</td>\n      <td>bre1::TRP1 + pRS316-bre1-R42E</td>\n      <td>Parental strain: JKM139</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yZS067</td>\n      <td>This study</td>\n      <td>bre1::TRP1 + pRS316-BRE1-3FLAG</td>\n      <td>Parental strain: JKM139</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yZS068</td>\n      <td>This study</td>\n      <td>bre1::TRP1 + pRS316-bre1-Q23A-3FLAG</td>\n      <td>Parental strain: JKM139</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yZS069</td>\n      <td>This study</td>\n      <td>bre1::TRP1 + pRS316-bre1-Q30A-3FLAG</td>\n      <td>Parental strain: JKM139</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yZS070</td>\n      <td>This study</td>\n      <td>bre1::TRP1 + pRS316-bre1-K31D-3FLAG</td>\n      <td>Parental strain: JKM139</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yZS071</td>\n      <td>This study</td>\n      <td>bre1::TRP1 + pRS316-bre1-R36E-3FLAG</td>\n      <td>Parental strain: JKM139</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yZS072</td>\n      <td>This study</td>\n      <td>bre1::TRP1 + pRS316-bre1-R42E-3FLAG</td>\n      <td>Parental strain: JKM139</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yZS073</td>\n      <td>This study</td>\n      <td>bre1::TRP1 + pRS316-bre1-Q30AK31D-3FLAG</td>\n      <td>Parental strain: JKM139</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yZS074</td>\n      <td>This study</td>\n      <td>bre1::TRP1 + pRS316-bre1-R36ER42E-3FLAG</td>\n      <td>Parental strain: JKM139</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yZS075</td>\n      <td>Dharmacon (Yeast TAP Tagged ORFs)</td>\n      <td>RAD6-TAP-HIS</td>\n      <td>Parental strain: By4741</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yZS076</td>\n      <td>This study</td>\n      <td>RAD6-TAP-HIS bre1::KanMX</td>\n      <td>Parental strain: By4741</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yZS077</td>\n      <td>This study</td>\n      <td>RAD6-TAP-HIS+pRS316</td>\n      <td>Parental strain: By4741</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yZS078</td>\n      <td>This study</td>\n      <td>RAD6-TAP-HIS bre1::KanMX + pRS316</td>\n      <td>Parental strain: By4741</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yZS079</td>\n      <td>This study</td>\n      <td>RAD6-TAP-HIS bre1::KanMX + pRS316-BRE1</td>\n      <td>Parental strain: By4741</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yZS080</td>\n      <td>This study</td>\n      <td>RAD6-TAP-HIS bre1::KanMX + pRS316-bre1-Q23A</td>\n      <td>Parental strain: By4741</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yZS081</td>\n      <td>This study</td>\n      <td>RAD6-TAP-HIS bre1::KanMX + pRS316-bre1-Q30A</td>\n      <td>Parental strain: By4741</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yZS082</td>\n      <td>This study</td>\n      <td>RAD6-TAP-HIS bre1::KanMX + pRS316-bre1-K31D</td>\n      <td>Parental strain: By4741</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yZS083</td>\n      <td>This study</td>\n      <td>RAD6-TAP-HIS bre1::KanMX + pRS316-bre1-R36E</td>\n      <td>Parental strain: By4741</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yZS084</td>\n      <td>This study</td>\n      <td>RAD6-TAP-HIS bre1::KanMX + pRS316-bre1-R42E</td>\n      <td>Parental strain: By4741</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yZS085</td>\n      <td>This study</td>\n      <td>RAD6-TAP-HIS bre1::KanMX + pRS316-bre1-Q30AK31D</td>\n      <td>Parental strain: By4741</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yZS086</td>\n      <td>This study</td>\n      <td>RAD6-TAP-HIS bre1::KanMX + pRS316-bre1-R36ER42E</td>\n      <td>Parental strain: By4741</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-ubiquitin (Mouse monoclonal)</td>\n      <td>Santa Cruz Biotechnology</td>\n      <td>Cat# sc-8017,RRID: AB_628423</td>\n      <td>1:2000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-strep (Mouse monoclonal)</td>\n      <td>ABclonal</td>\n      <td>Cat# AE066,RRID: AB_2863792</td>\n      <td>1:5000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-FLAG (Mouse monoclonal)</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# F3165,RRID: AB_259529</td>\n      <td>1:3000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-FLAG (Mouse monoclonal)</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# F1804,RRID: AB_262044</td>\n      <td>1:3000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-TAP (Mouse monoclonal)</td>\n      <td>Zen-BioScience</td>\n      <td>Cat# 250067</td>\n      <td>1:6000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-GAPDH (Mouse monoclonal)</td>\n      <td>ABclonal</td>\n      <td>Cat# AC033, RRID: AB_2769570</td>\n      <td>1:50,000</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>HRP-conjugated mouse IgG\u03ba light chain binding protein</td>\n      <td>Santa Cruz Biotechnology</td>\n      <td>Cat# sc-516102,RRID: AB_2687626</td>\n      <td>1:6000</td>\n    </tr>\n  </tbody>\n</table>\n\n### Protein expression and purification\n\nThe coding regions for KlBre1 fragment 1-206 or 1-184 and the full-length KlRad6 were amplified from the Kluyveromyces lactis genome and inserted into vectors pET26B and pET28A (Novagen), respectively. The recombinant KlBre1 fragments and KlRad6 contain no tags and an N-terminal 6x histidine (his-) tag, respectively. For protein expression, Escherichia coli BL21 Rosetta (DE3) cells harboring these plasmids were induced with 0.2 mM isopropyl \u03b2-D-1-thiogalactopyranoside (Bio Basic) for 16 hr at 16\u00b0C. For complex purification, cells expressing one of the KlBre1 fragments were mixed with cells expressing KlRad6 and lysed with an AH-2010 homogenizer (ATS Engineering). The KlBre1 RBD\u2013Rad6 complex was purified by nickel\u2013nitrilotriacetic acid agarose (Ni-NTA, Smart Life sciences) and ion exchange (Hitrap Q HP, GE Healthcare) columns, followed by a 2-hr treatment with thrombin (5 units for 1 mg of complex) at room temperature to remove the his-tag on KlRad6, and further purified by gel filtration (Superdex 200 10/300, GE Healthcare). Purified complexes were concentrated to 10 mg/ml in a buffer containing 20 mM Tris (pH 7.5), 200 mM sodium chloride, and 2 mM dithiothreitol (DTT), flashed cooled in liquid nitrogen and stored at \u221280\u00b0C.\n\nUnless otherwise indicated, KlBre1 RBD (1-206) containing N-terminal his- and strep-tags and KlRad6 containing N-terminal his- and hemagglutinin (HA-) tags were used for the biochemical assays. The coding regions for the KlBre1 fragment and the full length KlRad6 were inserted into vector pET28A, and the strep- and HA-tags were introduced by Polymerase Chain Reaction (PCR)-based mutagenesis. The recombinant double tagged KlBre1 RBD (1-206) and KlRad6 proteins were expressed in BL21 Rosetta (DE3) cells and purified with Ni-NTA, Heparin (Hitrap Heparin HP, GE Healthcare) and gel filtration (Superdex 200 10/300, GE Healthcare) columns. To purify his-tagged KlBre1 RBD (1-206) or (1-184), the corresponding KlBre1 gene fragment was inserted into vector pET28A. The recombinant protein was expressed in BL21 Rosetta (DE3) cells and purified by Ni-NTA, Heparin (Hitrap Heparin HP) and gel filtration (Superdex 200 10/300) columns. The S. cerevisiae E1 protein Uba1 and ubiquitin were purified as described (Lee and Schindelin, 2008; Shen et al., 2021). Briefly, the gene fragment corresponding to Uba1 residues 10\u20131024 was inserted into vector pET28A. Uba1 was expressed in BL21 Rosetta (DE3) cells and purified with Ni-NTA, hydrophobic interaction (Hitrap Butyl HP, GE Healthcare) and gel filtration (Superdex 200 Increase 10/300) columns. The ubiquitin gene was inserted into vector pET28A. Ubiquitin was expressed in in BL21 Rosetta (DE3) cells and purified with Ni-NTA, ion-exchange (Hitrap Q HP) and gel filtration (Superdex 200 10/300) columns. To purify untagged KlRad6 and ubiquitin, the his-tagged proteins were incubated with thrombin (5 units for 1 mg of protein) at room temperature for 2 hr, followed by purification with gel filtration (Superdex 200 increase 10/300) column.\n\nAmino acid substitutions were introduced with a PCR-based protocol and verified by DNA sequencing. The substituted proteins were expressed and purified following the same protocols for the wild-type proteins.\n\nThe selenomethionine (SeMet)-substituted KlRad6 was produced by inhibiting the host methionine production and supplementing SeMet (Doubli\u00e9 et al., 1996). The KlBre1 RBD (1-184)\u2013Rad6 complex containing SeMet-substituted KlRad6 was purified following the same protocol for the native complex, except that the DTT concentration is increased to 10 mM in the storage buffer.\n\n### Crystallization and structural determination\n\nHexagon-shaped crystals of the complex containing the KlBre1 RBD (1-206) and KlRad6 (crystal form 1) were obtained with vapor diffusion sitting drop experiments at 18\u00b0C. The reservoir solution contains 0.2 M sodium acetate (pH 5.5) and 15% PEG3350. Before data collection, the crystals were equilibrated in the reservoir solution supplemented with 25% glycerol, flash cooled and stored in liquid nitrogen. Diffraction data were collected at the Shanghai Synchrotron Radiation Facility (SSRF) Beamline BL19U1 at 0.97853 \u00c5 on a Pilatus 6M detector. Diffraction data were indexed, integrated, and scaled with the HKL3000 suite (Otwinowski and Minor, 1997). Initial molecular replacement calculations with PHASER (McCoy et al., 2007) with the structure of ScRad6 (PDB 1AYZ) (Worthylake et al., 1998) as the search model did not yield interpretable electron density maps. An analysis with PAIRCOIL2 (McDonnell et al., 2006) indicated that the KlBre1 N-terminal region contains at least one coiled-coil of 40 residues in length. A predicted coiled-coil structure was generated with CCFOLD (Guzenko and Strelkov, 2018). Using this structure and the structure of ScRad6 as search models, molecular replacement calculations with PHASER and subsequent density improvement with PHENIX (Adams et al., 2010) produced interpretable density maps. Model building was carried out with O (Jones et al., 1991) and COOT (Emsley and Cowtan, 2004). Refinement was carried out with PHENIX.\n\nElongated diamond-shaped crystals of the complex containing the KlBre1 RBD (1-184) and SeMet-substituted KlRad6 (crystal form 2) were obtained with vapor diffusion sitting drop experiments at 18\u00b0C. The reservoir solution contains 0.1 M sodium acetate (pH 4.6) and 1 M ammonium sulfate. Diffraction data were collected on SSRF beamline BL19U1 at 0.97846 \u00c5 and processed with the HKL3000 suite. The structure was determined with molecular replacement with PHASER, using the structure of crystal form 1 as the search model. It was refined with PHENIX.\n\n### Cross-linking experiments\n\nFor cross-linking, 30 \u03bcM of KlBre1 RBD (1-206) was incubated with 2% glutaraldehyde in a buffer containing 20 mM Tris (pH 7.5) and 200 mM sodium chloride for 30 min at 37\u00b0C. The reaction was analyzed with SDS\u2013PAGE.\n\n### Pull-down experiments\n\nTo probe the KlBre1 RBD\u2013Rad6 interaction, 15 \u03bcM his-strep-tagged KlBre1 RBD (1-206) was incubated with 4 \u03bcM KlRad6 in a binding buffer containing 20 mM Tris (pH 7.5) and 200 mM sodium chloride on ice for 30 min. The reaction mixture was subsequently incubated with 30 \u03bcl strep-tactin beads (Smart Lifesciences) equilibrated in the binding buffer for 2 hr at 4\u00b0C. After washing the beads twice with the binding buffer, bound proteins were eluted with the binding buffer supplemented with 2 mM desbiotin and analyzed with SDS\u2013PAGE.\n\n### Isothermal titration calorimetry\n\nITC experiments were performed on a MicroCal PEAQ-ITC instrument (Malvern) at 25\u00b0C. Prior to the ITC experiments, both KlBre1 RBD (1-206) and KlRad6 were exchanged in a buffer containing 20 mM Tris (pH 7.5) and sodium chloride at indicated concentrations. To characterize binding, a solution containing 100 \u03bcM (for experiments with the wild-type or Q22A-, K30A-, R35E-, R41E-, R171E-, and R179A-substituted KlBre1 RBD with 1 M sodium chloride or the wild-type KlBre1 RBD with 200 mM sodium chloride) or 150 \u03bcM (for the experiment with the S111L-subsbituted KlRad6) or 200 \u03bcM (for the experiment with the R171E-substitued KlBre1 RBD with 200 mM sodium chloride) or 400 \u03bcM (for the experiment with the V180A/F181A-substituted KlBre1 RBD) KlRad6 was injected into a 300 \u03bcl cell that stores 50 \u03bcM KlBre1 RBD (1-206), 2 \u03bcl at a time. Data were analyzed with ORIGIN 7.0 (Originlab).\n\n### Surface plasmon resonance\n\nSPR experiments were performed on a Biacore 8K instrument (Cytiva) at 25\u00b0C with a flow rate of 30 \u03bcl/min. To immobilized KlRad6 on a CM5 chip, KlRad6 was first diluted with PBS buffer (10 mM phosphate buffer (pH 7.4), 2.7 mM potassium chloride, 137 mM sodium chloride) to 100 \u03bcg/ml and subsequently with 10 mM sodium acetate (pH 4.5) to 1\u20133 \u03bcg/ml and flown over the chip for 60 s. To characterize KlBre1 RBD binding, KlBre1 RBD (1-206) was diluted with the HEPES buffer (20 mM HEPES [pH 7.5], 200 mM sodium chloride) to the indicated concentrations and flown over the chip for 120 s. KlBre1 RBD was subsequently dissociated from the chip by a 600- (for the experiment with the S111L-substituted KlRad6) or 300- (for other experiments) s wash with the HEPES buffer. After each experiment, the chip was regenerated by flowing 10 mM glycine\u2013HCl (pH 2.75) over the chip for 30 s. Data were analyzed with the Biacore Insight Evaluation software (Cytia).\n\n### IPSL labeling\n\nFor IPSL labeling, 10 \u03bcM KlRad6 was incubated with 300 \u03bcM IPSL for 15 min in a buffer containing 20 mM Tris (pH 7.5) and 200 mM sodium chloride, in the presence or absence of 40 \u03bcM KlBre1 RBD. The reaction was stopped by adding 600 \u03bcM L-cysteine. The level of IPSL labeling was accessed by mass spectrometry (MS). After tryptic digestion of the reaction mixture, the resulting peptides were separated by nano-liquid chromatography on an easy-nLC 1200 system (Thermo Fisher Scientific) and directly sprayed into a Q-Exactive Plus mass spectrometer (Thermo Fisher Scientific). The MS analysis was carried out in data-dependent mode with an automatic switch between a full MS and a tandem MS (MS/MS) scan in the Orbitrap. For full MS survey scan, the automatic gain control target was set to 1e6, and the scan range was from 350 to 1750 with a resolution of 70,000. The 10 most intense peaks with charge state \u22652 were selected for fragmentation by higher energy collision dissociation with normalized collision energy of 27%. The MS2 spectra were acquired with a resolution of 17,500, and the exclusion window was set at \u00b12.2 Da. All MS/MS spectra were searched using the PD search engine (v 1.4.0, Thermo Fisher Scientific) with an overall false discovery rate for peptides less than 1%. Peptide sequences were searched using trypsin specificity allowing a maximum of two missed cleavages. IPSL-Alkylation (+198.137 Da) on cysteine, acetylationon peptide N-terminal and oxidation of methionine were specified as variable modifications. Mass tolerances for precursor ions were set at \u00b110 ppm for precursor ions and \u00b10.02 Da for MS/MS. The ratio of labeled peptides to unlabeled peptides in the mass spectrometric analysis was calculated to represent the level of IPSL labeling.\n\n### Free ubiquitin chain formation\n\nThe reaction mixture contains 60 mM Tris (pH 8.5), 50 mM sodium chloride, 50 mM potassium chloride, 10 mM magnesium chloride, 0.1 mM DTT, 3 mM ATP, 90 nM Uba1, 60 \u03bcM ubiquitin, and 10 \u03bcM (for experiments presented in Figure 3B and Figure 3\u2014figure supplement 1B, C) or 5 \u03bcM KlRad6 (for experiments presented in Figure 3C and Figure 3\u2014figure supplement 1A). When indicated, 20 \u03bcM KlBre1 RBD (1-206) was supplemented. After incubating at 30\u00b0C for the indicated period, the reactions were stopped by boiling in the SDS\u2013PAGE loading buffer. To remove KlBre1 RBD, the boiled reaction mixture was subject to strep-tactin beads precipitation twice and the supernatant was collected for analysis. For comparison, reactions without KlBre1 RBD were supplemented with the same amount of KlBre1 RBD after the reaction and subjected to the same treatment with strep-tactin beads. The reaction mixtures were analyzed with SDS\u2013PAGE and western blot with an anti-ubiquitin antibody (sc-8017, Santa Cruz Biotechnology, RRID: AB_628423, 1:2000 diluted). To probe ubiquitin chains attached to the KlBre1 RBD during the reaction, reaction mixtures prior to the treatment with strep-tactin beads were analyzed with western blot with an anti-strep antibody (AE066, ABclonal, RRID: AB_2863792, 1:5000 diluted).\n\n### Rad6\u2013ubiquitin discharging\n\nFor the discharging reactions, untagged KlRad6 and ubiquitin were used. For discharging reactions with the wild-type KlRad6, KlRad6 was first charged with ubiquitin with a reaction mixture containing 60 mM Tris (pH 8.0), 50 mM sodium chloride, 50 mM potassium chloride, 10 mM magnesium chloride, 0.1 mM DTT, 3 mM ATP, 30 nM Uba1, 50 \u03bcM ubiquitin, and 2 \u03bcM KlRad6. After a 10-min incubation at 30\u00b0C, the charging reaction was stopped by adding 50 mM Ethylenediaminetetraacetic acid (EDTA) (pH 8.0) and ubiquitin discharge from the KlRad6\u2013ubiqtuin conjugate in the presence or absence of 20 \u03bcM KlBre1 RBD (1-184) was allowed to proceed at 30\u00b0C. After the indicated period, aliquots of the reaction were removed and analyzed by non-reducing SDS\u2013PAGE. For discharging reactions with KlRad6 (S111L), KlRad6 (S111L) was first charged with ubiquitin (I44A/K0) with a reaction mixture containing 60 mM Tris (pH 8.0), 50 mM sodium chloride, 50 mM potassium chloride, 10 mM magnesium chloride, 0.1 mM DTT, 3 mM ATP, 300 nM Uba1, 20 \u03bcM ubiquitin (I44A/K0), and 10 \u03bcM KlRad6 (S111L). The reaction mixture was incubated at 30\u00b0C for 30 min, with additional 300 nM Uba1 and 3 mM ATP supplemented at minutes 10 and 20. The charging reaction was stopped by adding 50 mM EDTA (pH 8.0) and the discharging reaction was initiated by supplementing 60 \u03bcM ubiquitin (I44A) to the reaction mixture. When indicated, 30 \u03bcM wild-type or substituted KlBre1 RBD (1-206) was supplemented. The reaction mixture was incubated at 30\u00b0C for the indicated period and analyzed by non-reducing SDS\u2013PAGE or non-reducing SDS\u2013PAGE followed by western blot with an anti-ubiquitin antibody (sc-8017, Santa Cruz Biotechnology, RRID: AB_628423, 1:2000 diluted). For quantification, band intensities were read by ImageJ (https://imagej.nih.gov/ij/).\n\n### Yeast strains and plasmids\n\nYeast strains used are listed in the Key Resources Table. All strains used in this study are derivates of JKM139 (ho MATa hml::ADE1 hmr::ADE1 ade1-100 leu2-3,112 trp1::hisG\u2019 lys5 ura3-52 ade3::GAL::HO) or tGI354 (MATa-inc arg5,6::MATa-HPH ade3::GAL::HO hmr::ADE1 hml::ADE1 ura3-52, for ectopic recombination tests) or BY4741 (MATa his3\u03941 leu2\u03940 met15\u03940 ura3-52, for Rad6 protein level evaluation). The wild-type or mutant BRE1 allele driven by the native BRE1 promoter was inserted into pRS316. Strains were constructed with standard yeast genetic manipulation. Mutant strains were confirmed by PCR or sequencing.\n\n### Replication stress/DNA damaging reagents sensitivity test\n\nSensitivity toward replication stress/DNA damaging reagents was tested using a spotting assay. A serial dilution of overnight yeast cultures were produced and 5 \u00b5l aliquots of the diluted culture were spotted onto YPD plates with the indicated replication stress/DNA damaging agents. Plates were incubated at 30 \u2103 for 3\u20134 days before analysis.\n\n### Analysis of DSB repair by ectopic recombination\n\nTo assess the cell survival due to successful DSB repair by ectopic recombination, cells were cultured in YEPD to the log phase and subsequently diluted and plated on YEPD or YEP-galactose plates, on which the HO expression is induced. Cells were allowed to grow at 30\u00b0C for 3\u20135 days. Survival rate is defined as the number of colonies grown on YEP-galactose plates divided by the number of colonies grown on YEPD plates times the fold of dilution.\n\n### Cellular H2Bub1, Bre1, and Rad6 level analysis\n\nWhole-cell yeast extracts were prepared using a trichloroacetic acid method as previously described (Chen et al., 2012). Samples were resolved with SDS\u2013PAGE and transferred onto a Polyvinylidene Difluoride (PVDF) membrane (Immobilon-P, Millipore) and proteins were detected with western blot. Flag-tagged H2B was detected with a mouse anti-FLAG antibody (F3165, Sigma-Aldrich, RRID: AB_259529, 1:3000 diluted) and the HRP-conjugated mouse IgG\u03ba light chain binding protein (sc-516102, Santa Cruz Biotechnology, RRID: AB_2687626, 1:6000 diluted); 3xflag-tagged ScBre1 was detected with an anti-FLAG antibody (F1804, Sigma-Aldrich, RRID: AB_262044, 1:3000 diluted), TAP-tagged Rad6 was detected with an anti-TAP antibody (250067, Zen-BioScience, 1:6000 diluted); glyceraldehyde-3-phosphate dehydrogenase (GAPDH) was detected with an anti-GAPDH antibody (AC033, ABclonal, 1:50000 diluted).\n",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "7642c0da-c085-4e10-9788-3d824eb28b3f",
+      "submission_id": "7a641c09-64cb-492f-86e6-8324c6cf33c2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Xiaobing Shi, https://ror.org/00wm07d60 Van Andel Institute United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84157.sa0](https://doi.org/10.7554/eLife.84157.sa0)\n\nThis is a valuable structural study of partial Rad6 from K lactis in complex with Bre1 RBD domain. The structure provides detailed information on the interactions between these two proteins, which are validated by mutagenesis and functional studies. Overall, this is a well-executed study providing solid structural information useful to the field.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Xiaobing Shi, https://ror.org/00wm07d60 Van Andel Institute United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84157.sa1](https://doi.org/10.7554/eLife.84157.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Structural basis for the Rad6 activation by the Bre1 N-terminal domain\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Xiaobing Shi as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Volker D\u00f6tsch as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nIn this manuscript, Shi et al. use X-ray crystallography to investigate the structural basis for Rad6 activation by Bre1. The structure of the K. lactis Bre1 RBD in complex with K. lactis Rad6 shows the binding of an asymmetric RBD dimer to Rad6. The structure is used to design mutants for testing how disruption of the Bre1 RBD-Rad6 interaction affects several Rad6 activities, including free ubiquitin chain synthesis, ubiquitin discharge, and active site accessibility. The authors also show that mutation of the RBD-Rad6 interface reduces H2Bub1 and DNA repair in yeast. Overall, this is a well-executed study providing nice structural information useful to the field. The following points need to be taken into consideration for revision.\n\n1. Some statements are seemingly overstated based on only one experiment or one approach. Orthogonal approaches would be helpful to strengthen their conclusions. For instance, based on gel filtration profiles, the authors claim that substitutions do not alter the dimeric form of KlBre1-RBD. However, in Figure S5A, there exist some differences in the elution profiles of various RBD mutants and also in Figure 3D, the intensity of some RBD-ub mutants seems much weaker. Evidence from some other approaches, such as native SDS-PAGE or a protein cross-linking experiment, would be helpful to support their claims. Also, the salt concentration (1M) in ITC seems a bit too high. An alternative biophysical measurement would be helpful to validate the bindings.\n\n2. The authors state \"our data indicate Bre1 dimerization is required for the formation of a functional RBD\". However, there is no experimental evidence supporting this claim. Could the authors design mutations to disrupt the Bre1 dimer and test the importance of dimerization for RBD function?\n\n3. Figure 3B. The authors conclude that the reaction containing Bre1 RBD produces \"significantly\" more free ubiquitin chains than the reaction lacking the RBD. This experiment lacks quantitation, and the gel is not particularly convincing in showing that the RBD is having an effect. Is there an explanation for why the WT RBD is having a more noticeable effect in panel C compared to panel B? Does this have something to do with the use of mutant forms of ubiquitin and Rad6 in panel C?\n\n4. Figure 3D-F. The authors conclude that the Bre1 RBD stimulates the rate of ubiquitin discharge from a Rad6-ub conjugate and that interface mutants slow this reaction. There are several issues with this experiment. First, the Rad6-ub conjugate is not being detected with equal efficiency in the control lacking the RBD and all other reactions. The authors speculate in the figure legend that the close migration of the RBD to the Rad6-ub conjugate is somehow interfering with the detection of the Rad6-ub conjugate by western blotting. This is an unusual explanation; however, it could be tested by running a longer gel or perhaps a gradient gel to better separate the RBD and Rad6-ub proteins. Second, often Rad6-ub discharge assays are quantified as the loss of the Rad6 conjugate band or the appearance of unconjugated Rad6. The levels of the Rad6-ub band, even in the presence of WT RBD, are not noticeably decreasing. This raises concerns about what is actually being measured when the authors use the di-ubiquitin band as a proxy for discharge. For some RBD mutants (e.g. R171E) the levels of the Rad6-ub conjugate appear to be increasing along with di-ubiquitin. Finally, rate constants are not calculated from the plots; it is difficult to discern whether there is any significant difference in the slopes of the lines. The authors' discussion of the limitations of this assay as done by Turco et al. could be written with greater clarity (lines 425-437).\n\n5. The Ring domain of Bre1 in required for Bre1/Rad6-mediated H2Bub1 and subsequently biological function. To investigate the role of Bre1-RBD binding to Rad6, it is better to test the binding, Rad6-mediated ubiquitin chain production, and ubiquitin discharging of the E2~ubiquitin conjugate in the context of full-length KlBre1.\n\n6. In the functional studies in yeast, are single point mutations (such as K31D, R36E, and R42E) sufficient to abolish Bre1 functions?\n\n7. Some experiments lack proper controls or quantifications. See the minor points below.\n",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6b3f9cbb-8043-42eb-b26d-0ebca92e4314",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C1",
+      "claim": "Mono-ubiquitination of histone H2B (H2Bub1) is a highly conserved histone post-translational modification.",
+      "claim_type": "EXPLICIT",
+      "source": "The mono-ubiquitination of the histone protein H2B (H2Bub1) is a highly conserved histone post-translational modification that plays critical roles in many fundamental processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "d49101db-0734-4e5c-b9f0-f6ddc10ab266",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C2",
+      "claim": "In yeast, H2Bub1 is catalyzed by the conserved Bre1\u2013Rad6 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "In yeast, this modification is catalyzed by the conserved Bre1\u2013Rad6 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations in the introduction (Hwang et al., 2003; Robzyk et al., 2000; Wood et al., 2003).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "2f4febbd-23fb-4c3d-b817-f57997c14ac6",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C3",
+      "claim": "Bre1 contains a unique N-terminal Rad6-binding domain (RBD).",
+      "claim_type": "EXPLICIT",
+      "source": "Bre1 contains a unique N-terminal Rad6-binding domain (RBD), how it interacts with Rad6 and contributes to the H2Bub1 catalysis is unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations in the introduction (Kim and Roeder, 2009; Turco et al., 2015).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "3b2e135c-33ff-4402-b37a-d282d2ce83c7",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C4",
+      "claim": "The crystal structure of the Bre1 RBD\u2013Rad6 complex was determined at 3.2 \u00c5 and 3.05 \u00c5 resolution for two crystal forms.",
+      "claim_type": "EXPLICIT",
+      "source": "The structures were refined to resolutions of 3.2 and 3.05 \u00c5 (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the results section and supported by crystallographic data in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "bed1b96c-d26d-4518-8ae5-296578abcc94",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C5",
+      "claim": "Two KlBre1 N-terminal polypeptides dimerize to form an elongated RBD that binds to one KlRad6 molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "The structures indicate that two KlBre1 N-terminal polypeptides dimerize to form an elongated RBD that binds to one KlRad6 molecule (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by the crystal structure shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "d30a4da4-c09b-4c33-afdf-9f05bc111b41",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C6",
+      "claim": "Each KlBre1 polypeptide contains two coiled-coil regions (CC1 and CC2) and a domain M located between them.",
+      "claim_type": "EXPLICIT",
+      "source": "Each KlBre1 polypeptide contains two coiled-coil regions (CC1 and CC2), which form extensive parallel coiled-coil interactions with the same regions in the other KlBre1 polypeptide. Each KlBre1 polypeptide also contains a domain M located between CC1 and CC2 that folds CC2 back to interact with CC1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "9ec36bed-1d82-46cf-bb71-2b70cea71474",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C7",
+      "claim": "The KlBre1 RBD dimer is asymmetric.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, the KlBre1 RBD dimer is asymmetric.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and supported by structural comparison shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "bdac1d9d-c9e6-4d5e-bbae-ff97f7036a5a",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C8",
+      "claim": "Gel filtration experiments indicate that KlBre1 RBD forms a 2:1 complex with KlRad6.",
+      "claim_type": "EXPLICIT",
+      "source": "When KlBre1 RBD (1-206) and KlRad6 were mixed with a 1:1 molar ratio and applied to the column, a strong peak of free KlRad6 was observed (Figure 1C). In contrast, when they were mixed with 2:1 or 3:1 molar ratio, this peak is absent (Figure 1C). Together, these gel filtration experiments are consistent with a dimeric form of KlBre1 RBD in solution and a 2:1 KlBre1 RBD\u2013Rad6 complex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by gel filtration data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "f4c41a00-9416-4fe1-af6e-f8b6b57758a2",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C9",
+      "claim": "KlRad6 interacts with the back side opposite from its active site.",
+      "claim_type": "EXPLICIT",
+      "source": "It interacts with the back side of KlRad6 opposite from its active site, composed of strands \u03b21\u2013\u03b23, the C-terminus of \u03b14 and neighboring loops (Figures 1A and 2A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by structural data shown in Figures 1A and 2A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "c5a6c3e3-ef28-48d0-8bea-7a19b4016179",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C10",
+      "claim": "The KlBre1 RBD\u2013KlRad6 interface buries 2000 \u00c52 of surface area.",
+      "claim_type": "EXPLICIT",
+      "source": "The interface buries 2000 \u00c52 of surface area and contains hydrophobic, salt bridge and hydrogen bonding interactions (Figure 2A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "09e7dc8f-42f4-4d4b-aea5-10d02a2956e0",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C11",
+      "claim": "The K30A, R35E, and R41E substitutions in KlBre1 RBD abolished co-precipitation with KlRad6 in pull-down experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The co-precipitation was abolished by the K30A, R35E, and R41E substitutions in KlBre1 RBD or the D50K substitution in KlRad6, but still present in experiments with the Q22A-, R171E-, R179A-, or V180A/F181A-substituted KlBre1 RBD (1-206) and the wild-type KlRad6, or the wild-type KlBre1 RBD (1-206) and the E146K- or D152K-substituted KlRad6 (Figure 2C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by pull-down experimental data shown in Figure 2C, D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "7dcb4c03-7543-4a36-a0d7-226503dad2eb",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C12",
+      "claim": "ITC experiments with 1 M sodium chloride indicated a KD of 12 nM for the KlBre1 RBD\u2013KlRad6 interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that increasing the sodium chloride concentration to 1 M suppressed the heat exchange contributed by the minor phase and enabled data fitting with a monophasic binding model, which gave a KD of 12 nM (Figure 2\u2014figure supplement 3B and Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by ITC data shown in Figure 2\u2014figure supplement 3B and Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "a71f2f94-e955-49e7-90fa-516de39ed9ae",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C13",
+      "claim": "SPR experiments indicated that KlBre1 RBD binds to KlRad6 with a KD of 14 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "The SPR experiments indicated that KlBre1 RBD (1-206) binds to immobilized KlRad6 with a ka of 1.42 \u00d7 104 (M\u22121 s\u22121) and dissociates with a kd of 2.05 \u00d7 10\u22124 (s\u22121). The KD estimated from these rate constants is 14 nM, similar to the KD obtained from ITC experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and supported by SPR data shown in Figure 2\u2014figure supplement 4 and Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "afb3676b-7c54-4855-b6dd-66f3ecf052bb",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C14",
+      "claim": "KlBre1 RBD stimulates KlRad6's intrinsic activity in catalyzing free ubiquitin chain formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Supplementing KlBre1 RBD (1-206) into the reaction with KlRad6 (S111L) and ubiquitin (I44A) stimulated the free ubiquitin chain production, consistent with a stimulatory effect of KlBre1 RBD on KlRad6's intrinsic activity (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "e1c2442a-1a6a-4c74-a870-a861771685a6",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C15",
+      "claim": "The Q22A substitution in KlBre1 RBD did not noticeably change the stimulation of KlRad6's activity, whereas substitutions K30A, R35E, R41E, R171E, R179A, and V180A/F181A decreased stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In free ubiquitin chain formation reactions with KlRad6 (S111L) and ubiquitin (I44A), we found that the Q22A substitution did not noticeably change the stimulation by KlBre1 RBD (1-206), whereas substitutions K30A, R35E, R41E, R171E, R179A, and V180A/F181A decreased stimulation (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "b5e62d92-e259-4ee5-ab44-de843da4c0f7",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C16",
+      "claim": "The KlBre1 RBD\u2013Rad6 interaction stimulates KlRad6's enzymatic activity in ubiquitin discharging.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis indicated that the di-ubiquitin production in this reaction is stimulated by supplementing the wild-type KlBre1 RBD (1-206) (Figure 3D, E, G). Similar to the free ubiquitin chain production experiments, we found that the Q22A substitution in KlBre1 RBD had little effect on the stimulation, whereas substitutions K30A, R35E, R41E, R171E, R179A, and V180A/F181A decreased the stimulation (Figure 3D, F, G). Together, these data indicate that the KlBre1 RBD\u2013Rad6 interaction stimulates KlRad6's enzymatic activity in ubiquitin discharging.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by experimental data shown in Figure 3D-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "b1c0688f-8ff3-4600-94f7-7a1f4bcb6e14",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C17",
+      "claim": "Large structural differences are observed for residues 90\u201398 and 115\u2013121 surrounding KlRad6's active site in the three KlRad6 molecules not mediating extensive crystal packing interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "When the three KlRad6 molecules not mediating extensive crystal packing interactions in our structures are compared, large structural differences are observed for residues 90\u201398 and 115\u2013121 surrounding KlRad6's active site (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by structural comparison shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "dded956a-5578-49fb-aa22-8cb243217dff",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C18",
+      "claim": "Regions 90\u201398 and 115\u2013121 in KlRad6 display significantly elevated temperature factors.",
+      "claim_type": "EXPLICIT",
+      "source": "These regions in the three KlRad6 molecules also display significantly elevated temperature factors (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by temperature factor analysis shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "d08149fe-9f6b-467a-9296-6d1be78628f5",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C19",
+      "claim": "KlBre1 RBD allosterically increases the mobility of regions 90\u201398 and 115\u2013121 in KlRad6.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data indicate an increased mobility of regions 90\u201398 and 115\u2013121 in KlRad6 in the KlBre1 RBD\u2013Rad6 complex, suggesting that KlBre1 RBD allosterically increase the mobility of these regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and supported by structural and temperature factor analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "f9eba63c-5deb-4f38-a41e-ff27316511fb",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C20",
+      "claim": "KlBre1 RBD increases KlRad6's active site accessibility.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that after a 15-min incubation with 300 \u03bcM IPSL, 39% of KlRad6's active site cysteine was labeled with IPSL, supplementing KlBre1 RBD (1-206) increased the labeling level to 86% (Figure 4E). Together with the structural data, these data indicate that KlBre1 RBD allosterically increases KlRad6's active site accessibility to stimulate its activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by IPSL labeling data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "b5577c8b-8d2b-4564-b293-a7409fcc09a4",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C21",
+      "claim": "Knocking out BRE1 abolished H2Bub1 in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with previous reports (Hwang et al., 2003; Wood et al., 2003), we found that knocking out BRE1 abolished H2Bub1 in vivo (Figure 5A), caused sensitivity toward replication stress or DNA damaging reagents including camptothecin (CPT), methylmethane sulfonate (MMS), phleomycin, and hydroxy urea (HU) (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by western blot data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "058c2759-b3b7-41f2-97eb-699f4666b5fb",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C22",
+      "claim": "Knocking out BRE1 caused sensitivity toward replication stress or DNA damaging reagents including CPT, MMS, phleomycin, and HU.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with previous reports (Hwang et al., 2003; Wood et al., 2003), we found that knocking out BRE1 abolished H2Bub1 in vivo (Figure 5A), caused sensitivity toward replication stress or DNA damaging reagents including camptothecin (CPT), methylmethane sulfonate (MMS), phleomycin, and hydroxy urea (HU) (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by sensitivity assay data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "c0cb39cf-a8e4-46c6-9731-caaa554d17cd",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C23",
+      "claim": "The Q23A substitution in ScBre1 rescued the H2Bub1 level and sensitivity phenotypes caused by BRE1 knockout.",
+      "claim_type": "EXPLICIT",
+      "source": "These phenotypes can be rescued by complementing the cells with the wild-type or Q23A-substituted ScBre1, but not ScBre1 with the other substitutions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and supported by data shown in Figure 5A and 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "9bdce16d-9526-4ad7-9b12-6d58bc31b9eb",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C24",
+      "claim": "Complementing BRE1 knockout cells with wild-type or Q23A-substituted ScBre1 increased the survival rate in HR repair to ~80%.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 55% of the BRE1 knock out cells completed the repair and survived. Complementing the cells with the wild-type or the Q23A-substituted ScBre1 increased the survival rate to ~80%, while complementing the cells with ScBre1 carrying the other substitutions failed to or only modestly increased the survival rate (55\u201372%) (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by HR repair assay data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "9429a2c4-6266-4b07-9cd1-003dab001d42",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C25",
+      "claim": "The Bre1 RBD\u2013Rad6 interaction is crucial for the Bre1-mediated H2B mono-ubiquitination, DNA damage response, and HR repair inside the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data indicate that the Bre1 RBD\u2013Rad6 interaction is crucial for the Bre1-mediated H2B mono-ubiquitination, DNA damage response, and HR repair inside the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and supported by multiple cellular assays shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "b4f06192-dea1-43d2-b876-f06b2624b02d",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C26",
+      "claim": "H2Bub1 is associated with actively transcribed genes.",
+      "claim_type": "EXPLICIT",
+      "source": "It is associated with actively transcribed genes and may contribute to the gene transcription by loosing the chromatin (Fierz et al., 2011) and recruiting the FACT histone chaperon complex (Fleming et al., 2008; Pavri et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "b39e7846-bd8a-4c34-a99b-3a9824e53bd6",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C27",
+      "claim": "H2Bub1 regulates H3K4 and H3K79 methylation catalyzed by DOT1L and the COMPASS complex.",
+      "claim_type": "EXPLICIT",
+      "source": "It also regulates other histone protein PTMs associated with active transcription, including H3K4 and H3K79 methylation catalyzed by DOT1L and the COMPASS complex, respectively (Briggs et al., 2002; Sun and Allis, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "35d5a925-3202-42fb-b2d1-ec734e31af6f",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C28",
+      "claim": "The ubiquitin molecule attached to H2B mediates interactions with DOT1L and the COMPASS complex, contributing to their recruitment and activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent structural studies indicate that the ubiquitin molecule attached to H2B mediates interactions with DOT1L and the COMPASS complex, contributing to their recruitment and activation (Anderson et al., 2019; Hsu et al., 2019; Jang et al., 2019; Valencia-S\u00e1nchez et al., 2019; Worden et al., 2019; Worden et al., 2020; Xue et al., 2019; Yao et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "d41b2903-cbf9-4af1-a11a-5f14d82d9b9b",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C29",
+      "claim": "H2Bub1 facilitates the recruitment of factors for both homologous recombination and non-homologous end joining pathways at DNA double strand breaks.",
+      "claim_type": "EXPLICIT",
+      "source": "At DNA double strand breaks (DSBs), H2Bub1 facilitates the recruitment of factors for both homologous recombination (HR) and non-homologous end joining pathways, promoting DSB repair (Moyal et al., 2011; Nakamura et al., 2011; Shiloh et al., 2011; Zheng et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "7ecadd8c-db05-434b-b97d-8b8b90b62bfb",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C30",
+      "claim": "H2Bub1 plays a critical role in meiotic recombination required for the exchange of genetic materials between homologous chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "During meiosis, H2Bub1 plays a critical role in the meiotic recombination required for the exchange of genetic materials between homologous chromosomes (Wang et al., 2017; Xu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "d20a2d0d-b8dc-40df-8ed5-4c2b1c07fb27",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C31",
+      "claim": "Aberrant H2Bub1 levels in humans are implicated in several types of cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with its important cellular functions, aberrant H2Bub1 levels in humans are implicated in several types of cancer (Marsh and Dickson, 2019; Marsh et al., 2020; Zhou et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "6dfd92a6-1ac4-4073-864f-39bb5e81a18a",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C32",
+      "claim": "The human Bre1 orthologs, RNF20 and RNF40, cooperate with the human Rad6 orthologs (Rad6A and Rad6B) to catalyze H2Bub1 formation.",
+      "claim_type": "EXPLICIT",
+      "source": "The human Bre1 orthologs, RNF20 and RNF40, also cooperate with the human Rad6 orthologs (Rad6A and Rad6B) to catalyze the H2Bub1 formation (Kim et al., 2009; Kim et al., 2005; Zhu et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "cf13b5cb-8c3a-45a2-91cf-b58e2e1a673c",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C33",
+      "claim": "Bre1's RING domain interacts with an acidic patch in NCP and positions Rad6 for H2Bub1 catalysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Bre1's RING domain also interacts with an acidic patch in NCP and positions Rad6 for the H2Bub1 catalysis (Gallego et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "8621e4d1-5086-4735-b27f-471af61898f2",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C34",
+      "claim": "Removing Bre1's RING domain abolished H2Bub1 in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "In line these important functions, it was found that removing Bre1's RING domain abolished H2Bub1 in vivo (Hwang et al., 2003), and the Bre1 fragment containing the RING domain and a predicted coiled-coil N-terminal to it was able to catalyze H2Bub1 in vitro (Turco et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "f2d983a2-a82e-4162-8a4a-385a1ec4b066",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C35",
+      "claim": "The Bre1 fragment containing the RING domain and a predicted coiled-coil N-terminal to it was able to catalyze H2Bub1 in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "In line these important functions, it was found that removing Bre1's RING domain abolished H2Bub1 in vivo (Hwang et al., 2003), and the Bre1 fragment containing the RING domain and a predicted coiled-coil N-terminal to it was able to catalyze H2Bub1 in vitro (Turco et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "506ca31d-7b4f-4fdf-9941-0f833bf42b36",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C36",
+      "claim": "Bre1's N-terminal RBD makes important contributions to H2Bub1 catalysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the RING domain, Bre1 contains a N-terminal Rad6-binding domain (RBD) that also makes important contributions to the H2Bub1 catalysis (Kim and Roeder, 2009; Turco et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "d254a03a-d628-4431-a806-cbf09e6ccd77",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C37",
+      "claim": "The N-terminal 210 residues in ScBre1 have been reported to interact with Rad6 and contribute to H2Bub1 catalysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-terminal 210 residues in the Saccharomyces cerevisiae Bre1 (ScBre1) have been reported to interact with Rad6 and contribute to the H2Bub1 catalysis (Kim and Roeder, 2009; Turco et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "a9fa4975-b9fc-4d6b-8f90-0e57470e8764",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C38",
+      "claim": "The Bre1 N-terminal region is highly conserved among fungal Bre1 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "This region is highly conserved among fungal Bre1 proteins (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by sequence alignment shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "b81bd774-c172-44a6-9af3-92d343f31bd2",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C39",
+      "claim": "The dimeric structure of KlBre1 RBD buries 8000 \u00c52 of surface area between the two Bre1 polypeptides.",
+      "claim_type": "EXPLICIT",
+      "source": "The dimeric structure of KlBre1 RBD appears to be rather stable, burying 8000 \u00c52 of surface area between the two Bre1 polypeptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and supported by structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "8bc02a01-6d08-4af2-bedb-177cead37d8e",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C40",
+      "claim": "Glutaraldehyde can efficiently produce a covalently linked KlBre1 RBD dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the structure, we found that the cross-linking reagent glutaraldehyde can efficiently produce a covalently linked KlBre1 RBD (1-206) dimer (Figure 1\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by cross-linking data shown in Figure 1\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "62953c21-2561-4194-9d07-8042f312a9ec",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C41",
+      "claim": "Part of the C-terminal tail of KlRad6 disordered in the structure of free ScRad6 is structured in KlRad6 and mediates interactions with KlBre1 RBD.",
+      "claim_type": "EXPLICIT",
+      "source": "Part of the C-terminal tail disordered in the structure of the free ScRad6 (Worthylake et al., 1998) is structured in KlRad6 and mediates interactions with KlBre1 RBD (Figure 2B and Figure 1\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by structural comparison.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "d944f4d1-7368-4531-bbbf-ff1a4ce2e372",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C42",
+      "claim": "Several KlBre1 residues at the interface with KlRad6 also contribute to interactions between the two KlBre1 polypeptides.",
+      "claim_type": "EXPLICIT",
+      "source": "Several of the KlBre1 residues at the interface with KlRad6 also contribute to the interactions between the two KlBre1 polypeptides. These residues include Leu20, Leu33, Cys36, Phe34', Leu37', and Val180', which mediate hydrophobic interactions between the two KlBre1 RBD polypeptides; and Gln29, Arg35, and Lys30', which mediate hydrogen bond interactions (Figure 2A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by structural analysis shown in Figure 2A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "4930b3b7-70e5-40a7-87ef-8998df331b8b",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C43",
+      "claim": "The Bre1 RBD\u2013Rad6 interaction may maintain a close Bre1\u2013Rad6 association during H2Bub1 catalysis.",
+      "claim_type": "EXPLICIT",
+      "source": "First, it may maintain a close Bre1\u2013Rad6 association during the H2Bub1 catalysis. Structural studies indicated that the E1 enzyme and the RING domain in the E3 enzymes compete for binding to the E2 enzyme (Cappadocia and Lima, 2018; Gundogdu and Walden, 2019; Stewart et al., 2016; Streich and Lima, 2014), resulting a 'ping-pong' motion of the E2 enzyme between the E1 enzyme and the RING domain during the catalysis. The Bre1 RBD\u2013Rad6 interaction is not expected to interfere with the Rad6\u2013E1 or Rad6\u2013RING interactions (Figure 1\u2014figure supplement 4A, B). Therefore, the strong affinity between Bre1 RBD and Rad6 we and others (Turco et al., 2015) observed suggests a constant Rad6\u2013Bre1 association during the ubiquitination catalysis. Such a Rad6\u2013Bre1 association could increase the local concentration of Rad6 to promote the catalysis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion and supported by structural modeling and inference from binding data.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "1825bc57-aca7-442f-88bb-47fae04e719a",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C44",
+      "claim": "The Bre1 RBD\u2013Rad6 interaction may position Bre1 RBD for interaction with ubiquitin in the Rad6\u2013ubiquitin conjugate and may stabilize its closed conformation for ubiquitin discharge.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the Bre1 RBD\u2013Rad6 interaction may position Bre1 RBD for interaction with ubiquitin in the Rad6\u2013ubiquitin conjugate and may stabilize its closed conformation for ubiquitin discharge (Figure 1\u2014figure supplement 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion and supported by structural modeling.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "9968e4fb-bf07-4a78-9cf4-03c319a2c4ba",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C45",
+      "claim": "Ubiquitin binds to the back side of several E2 enzymes to stimulate their activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Ubiquitin has been reported interact with the back side of several E2 enzymes (Brzovic et al., 2006; Buetow et al., 2015; Eddins et al., 2006; Hibbert et al., 2011; Sakata et al., 2010). The activity of some of these E2 enzymes, including the human Rad6B, is stimulated by such interaction (Brzovic et al., 2006; Buetow et al., 2015; Hibbert et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "2271dea3-4652-4597-b2b9-e0ebf09b6b83",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C46",
+      "claim": "The G23R/T52A substitution in KlRad6 decreased free ubiquitin chain production.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with ubiquitin binding to the back side of KlRad6 and stimulating its activity, we found that the substitution decreased the free ubiquitin chain production by KlRad6 (Figure 3B and Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by experimental data shown in Figure 3B and Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "b5e2d4be-94da-43d7-9f93-f90b13802648",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C47",
+      "claim": "The I44A substitution in ubiquitin inhibits the interaction between ubiquitin and the back side of E2 enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "This substitution inhibits the interaction between ubiquitin and the back side of E2 enzymes (Figure 3A, left panel; Brzovic et al., 2006; Buetow et al., 2015; Eddins et al., 2006; Hibbert et al., 2011; Sakata et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by citations and structural modeling.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "d9fe87cb-9508-4275-9ff0-ca9e3557a91f",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C48",
+      "claim": "The I44A substitution in ubiquitin destabilizes the closed conformation of the E2\u2013ubiquitin conjugate required for ubiquitin transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "It also destabilizes the closed conformation of the E2\u2013ubiquitin conjugate required for ubiquitin transfer, but this defect can be rescued by substitutions in the E2 enzyme near the active site (Li et al., 2015; Saha et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "fb556775-617d-4104-8610-2d8574e00cea",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C49",
+      "claim": "The S111L substitution in KlRad6 rescued the severely inhibited free ubiquitin chain production associated with ubiquitin (I44A).",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, it rescued the severely inhibited free ubiquitin chain production associated with ubiquitin (I44A) (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by experimental data shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "dfa3751b-7f12-4043-96df-551171a9884a",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C50",
+      "claim": "KlBre1 RBD can be ubiquitinated.",
+      "claim_type": "EXPLICIT",
+      "source": "Since KlBre1 RBD itself can be ubiquitinated, adding it could accelerate the ubiquitin discharge by providing more acceptor substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and supported by experimental data shown in Figure 3\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "b172e2a0-ccee-4109-b42b-ca3950bf5792",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C51",
+      "claim": "Regions 90\u201398 and 115\u2013121 in Rad6 orthologs have been reported to be mobile.",
+      "claim_type": "EXPLICIT",
+      "source": "The equivalent regions in Rad6 orthologs have been reported to be mobile. NMR studies indicated that these regions in the human Rad6B are flexible on a nanosecond to picosecond time scale (Miura et al., 1999; Miura et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "110e5c9a-1aa3-43f3-80c4-00ed2c536ccf",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C52",
+      "claim": "An increase in mobility of regions 90\u201398 and 115\u2013121 in KlRad6 is expected to make KlRad6's active site more accessible.",
+      "claim_type": "EXPLICIT",
+      "source": "Such an increase in mobility is expected to make KlRad6's active site more accessible, which could facilitate the nucleophilic attack of the KlRad6\u2013ubiqutin thioester bond and promotes the ubiquitin discharge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and represents an inference from structural observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "45db060c-5065-4dd2-ab70-27c255ded63a",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C53",
+      "claim": "Bre1 has been reported to form a dimer and its N-terminal region plays a critical role in dimer formation.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been reported that Bre1 forms a dimer and its N-terminal region plays a critical role in the dimer formation (Kim and Roeder, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "1bbf6bc6-4a58-4faf-b2b2-6c9a4b87fe75",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C54",
+      "claim": "The Bre1 dimerization is required for the Bre1 RBD\u2013Rad6 interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a structure suggests that the Bre1 dimerization is required for the Bre1 RBD\u2013Rad6 interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and represents an inference from the structural data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "230e652f-41b9-413f-9f3a-36c2c3170350",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C55",
+      "claim": "Unlike Bre1 RBD, ubiquitin does not form stable complexes with E2 enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike Bre1 RBD, ubiquitin does not form stable complexes with E2 enzymes and it is not clear if it allosterically increases their active site accessibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and represents a comparison with known properties of ubiquitin.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "f2bb192c-2898-4721-9800-9bb980d0e266",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C56",
+      "claim": "The E1 enzyme and the RING domain in E3 enzymes compete for binding to the E2 enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural studies indicated that the E1 enzyme and the RING domain in the E3 enzymes compete for binding to the E2 enzyme (Cappadocia and Lima, 2018; Gundogdu and Walden, 2019; Stewart et al., 2016; Streich and Lima, 2014), resulting a 'ping-pong' motion of the E2 enzyme between the E1 enzyme and the RING domain during the catalysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "f8f78d12-55a4-4f7b-914d-8540108d07ba",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C57",
+      "claim": "The Bre1 RBD\u2013Rad6 interaction is not expected to interfere with the Rad6\u2013E1 or Rad6\u2013RING interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "The Bre1 RBD\u2013Rad6 interaction is not expected to interfere with the Rad6\u2013E1 or Rad6\u2013RING interactions (Figure 1\u2014figure supplement 4A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion and supported by structural modeling shown in Figure 1\u2014figure supplement 4A, B.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "0079b97d-5616-4ca2-89d2-87064a70be74",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C58",
+      "claim": "E2BBRs in Gp78 and Cue1 stimulate the activity of related E2 enzymes by increasing their active site accessibility and interaction with the RING domain.",
+      "claim_type": "EXPLICIT",
+      "source": "E2BBRs in Gp78 (Das et al., 2013; Das et al., 2009) and Cue1 Metzger et al., 2013 have been reported to stimulate the activity of the related E2 enzymes by increasing their active site accessibility and interaction with the RING domain, whereas E2BBRs in AO7 (Li et al., 2015) and Rad18 Hibbert et al., 2011 have been reported to inhibit the activity of the related E2 enzymes by blocking ubiquitin binding to their back side.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "4804b675-9ec4-404e-8e52-f4cbbb307289",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C59",
+      "claim": "E2BBRs in AO7 and Rad18 inhibit the activity of related E2 enzymes by blocking ubiquitin binding to their back side.",
+      "claim_type": "EXPLICIT",
+      "source": "E2BBRs in Gp78 (Das et al., 2013; Das et al., 2009) and Cue1 Metzger et al., 2013 have been reported to stimulate the activity of the related E2 enzymes by increasing their active site accessibility and interaction with the RING domain, whereas E2BBRs in AO7 (Li et al., 2015) and Rad18 Hibbert et al., 2011 have been reported to inhibit the activity of the related E2 enzymes by blocking ubiquitin binding to their back side.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "5c36101c-6f78-4f20-aa8b-8da4e4615044",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C60",
+      "claim": "All previously reported E2BBRs possess a single E2-interacting region that contains a major \u03b1 helix.",
+      "claim_type": "EXPLICIT",
+      "source": "All the previously reported E2BBRs possess a single E2-interacting region that contains a major \u03b1 helix, which binds to the back side of E2 enzymes in different orientations (Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion and supported by structural comparison shown in Figure 1\u2014figure supplement 5.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "5fc4427d-30dd-4ff3-9135-b6e5e691d120",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C61",
+      "claim": "Multiple regions in both polypeptides in the Bre1 RBD dimer contribute to the interaction with Rad6.",
+      "claim_type": "EXPLICIT",
+      "source": "In sharp contrast to these E2BBRs, multiple regions in both polypeptides in the Bre1 RBD dimer contribute to the interaction with Rad6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "b861bcfc-9274-453e-8b81-5b2e96ca078b",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C62",
+      "claim": "The Bre1 RBD and the Rad18 E2BBR appear to have opposite effects on Rad6's activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Most interestingly, although both the Bre1 RBD and the Rad18 E2BBR bind to the Rad6 back side, they appear to have opposite effects on Rad6's activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and represents a comparison with known properties of Rad18 E2BBR.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "97172cb5-b1cb-4c70-9491-e808499160a5",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C63",
+      "claim": "The Bre1 RING domain appears to be a symmetrical dimer with two Rad6-binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike Bre1 RBD, the Bre1 RING domain appears to be a symmetrical dimer with two Rad6-binding sites (Kumar and Wolberger, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "41b59d16-9945-43bf-8cb0-c561f2e7a7d8",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C64",
+      "claim": "Only one of the two Rad6-binding sites in the Bre1 RING domain interacts with the Rad6\u2013ubiquitin conjugate for ubiquitin transfer to NCP.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies suggest that only one of them interacts with the Rad6\u2013ubiquitin conjugate for ubiquitin transfer to NCP (Gallego et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "0e0baa12-d2bd-457d-a477-212f0b8be01b",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C65",
+      "claim": "The non-canonical back side of Rad6 appears to be accessible in the Bre1 RBD-bound Rad6.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the non-canonical back side of Rad6 appears to be accessible in the Bre1 RBD-bound Rad6 (Figure 1\u2014figure supplement 4B), where ubiquitin may bind to regulate its activity (Kumar et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion and supported by structural modeling and a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "6691fad2-3676-47f6-8d6c-96abcf675592",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C66",
+      "claim": "Rad6 functions with Ubr1 to catalyze ubiquitin chain modification of N-end rule protein substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "It functions with Ubr1 to catalyze the ubiquitin chain modification of N-end rule protein substrates (Dohmen et al., 1991), with Bre1 (Hwang et al., 2003; Robzyk et al., 2000; Wood et al., 2003) and Rad18 (Hoege et al., 2002) to mono-ubiquitinate H2B and the proliferating cell nuclear antigen (PCNA), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "d3af7e99-a831-4695-851a-4d299de165f0",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C67",
+      "claim": "Rad6 functions with Rad18 to mono-ubiquitinate PCNA.",
+      "claim_type": "EXPLICIT",
+      "source": "It functions with Ubr1 to catalyze the ubiquitin chain modification of N-end rule protein substrates (Dohmen et al., 1991), with Bre1 (Hwang et al., 2003; Robzyk et al., 2000; Wood et al., 2003) and Rad18 (Hoege et al., 2002) to mono-ubiquitinate H2B and the proliferating cell nuclear antigen (PCNA), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "4ec06f49-c834-48e2-b530-5e725d84bab8",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C68",
+      "claim": "Rad6 possesses an intrinsic activity to catalyze free ubiquitin chain formation.",
+      "claim_type": "EXPLICIT",
+      "source": "It also possesses an intrinsic activity to catalyze free ubiquitin chain formation (Hibbert et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "2a522f97-0a84-4739-b313-6abe5276ccb8",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C69",
+      "claim": "The Rad18 E2BBR suppresses Rad6's intrinsic free ubiquitin chain forming activity and directs its activity toward PCNA mono-ubiquitination.",
+      "claim_type": "EXPLICIT",
+      "source": "The Rad18 E2BBR suppresses its intrinsic free ubiquitin chain forming activity and directs its activity toward PCNA mono-ubiquitination (Hibbert et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "3ebeb497-a923-437d-a27a-96d5089f6be7",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C70",
+      "claim": "Bre1 RBD does not inhibit the free ubiquitin chain formation by Rad6 but stimulates its activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, our data indicate that Bre1 RBD does not inhibit the free ubiquitin chain formation by Rad6 but stimulates its activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "50bd290d-e334-4302-8d9d-ab9688bc5b4e",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C71",
+      "claim": "The human orthologs of Bre1, RNF20 and RNF40, form a heterodimer.",
+      "claim_type": "EXPLICIT",
+      "source": "The human orthologs of Bre1, RNF20, and RNF40, form a heterodimer (Kim et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "aade026a-2910-4eb6-986d-9e97d6bb1461",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C72",
+      "claim": "The RNF20 N-terminal 381 residues could form a complex with RNF40 that binds Rad6.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been reported that the RNF20 N-terminal 381 residues could form a complex with RNF40 that binds Rad6 (Kim et al., 2009), suggesting that these residues participate in the formation of a functional RBD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "db586841-ed28-4aa3-9c5d-e5f60883e3e6",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "claim_id": "C73",
+      "claim": "Sequence analysis suggested that the region spanning residues 328\u2013528 in RNF20 possesses homology to the RBD region in Bre1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, sequence analysis suggested that the region spanning residues 328\u2013528 in RNF20 possesses homology to the RBD region in Bre1 (Zhu et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a0ef7135-d998-4aa5-8277-6db6f60cf090",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The crystal structure of the KlBre1 RBD\u2013Rad6 complex reveals a 2:1 stoichiometry where two KlBre1 N-terminal polypeptides dimerize to form an asymmetric elongated RBD that binds one KlRad6 molecule. Each KlBre1 polypeptide contains two coiled-coil regions (CC1 and CC2) and a domain M between them. The dimeric structure is stable, burying 8000 \u00c5\u00b2 of surface area.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structural claims are well-supported by crystallographic data at 3.2 and 3.05 \u00c5 resolution (C4), gel filtration experiments showing 2:1 stoichiometry (C8), cross-linking data (C40), and sequence conservation analysis (C38). The structural features are directly observed in the electron density maps and validated by multiple complementary techniques.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "2b82e41e-eb43-4cee-996a-7cd8494b1705",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "KlRad6 interacts with the back side opposite from its active site through an interface that buries 2000 \u00c5\u00b2 of surface area. The interface contains hydrophobic, salt bridge, and hydrogen bonding interactions. Several KlBre1 residues at the interface also contribute to interactions between the two KlBre1 polypeptides.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structural interface is well-characterized by crystallographic data (C9, C10), with specific residues identified. Pull-down experiments confirm that K30A, R35E, and R41E substitutions abolish co-precipitation (C11), validating the structural observations. The dual role of interface residues (C42) is supported by structural analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "caf0b7ef-a43a-40b0-8197-d12e68a3bf97",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The KlBre1 RBD\u2013KlRad6 interaction has a dissociation constant (KD) of approximately 12-14 nM, indicating a high-affinity interaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The binding affinity is measured by two independent biophysical methods: ITC experiments yielding KD = 12 nM (C12) and SPR experiments yielding KD = 14 nM (C13). The consistency between methods strengthens confidence in the reported affinity, though the ITC data fitting had some limitations (non-ideal N-number).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "3ba79e4e-abac-4051-8b18-1c7b68636862",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "KlBre1 RBD stimulates KlRad6's intrinsic activity in catalyzing free ubiquitin chain formation. This stimulation is dependent on the Bre1 RBD\u2013Rad6 interaction, as substitutions that weaken binding (K30A, R35E, R41E, R171E, R179A, V180A/F181A) decrease stimulation, while Q22A has minimal effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The stimulatory effect is demonstrated using carefully designed experiments with ubiquitin (I44A) and KlRad6 (S111L) substitutions to eliminate confounding effects of ubiquitin binding to Rad6's back side (C46, C49). The correlation between binding affinity and stimulation across multiple substitutions (C15) provides strong evidence for the mechanism. Controls are appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "f7e8bf4d-86cc-479d-9922-d445fea5e985",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The KlBre1 RBD\u2013Rad6 interaction stimulates KlRad6's enzymatic activity in ubiquitin discharging to ubiquitin substrates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Western blot analysis shows increased di-ubiquitin production in the presence of KlBre1 RBD, with the same pattern of substitution effects as observed for free ubiquitin chain formation. The use of K0-substituted donor ubiquitin to produce only di-ubiquitin as product allows for cleaner quantification. Multiple independent experiments support this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "3885632b-8a93-4d46-951e-20b97b24089a",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "KlBre1 RBD allosterically increases the mobility of regions 90\u201398 and 115\u2013121 surrounding KlRad6's active site, as evidenced by large structural differences and elevated temperature factors in these regions compared to free ScRad6.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Structural comparison of three KlRad6 molecules not involved in crystal packing shows large structural differences (C17) and elevated B-factors (C18) in the active site regions. Comparison with free ScRad6 structure and NMR data on human Rad6B (C51) supports increased mobility. However, the inference of allosteric regulation (C19) is reasonable but somewhat indirect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "6f706d15-007a-4f6d-b4ea-5c5036569770",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "KlBre1 RBD increases KlRad6's active site accessibility, as demonstrated by increased IPSL labeling of the active site cysteine from 39% to 86% in the presence of KlBre1 RBD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The IPSL labeling experiment provides direct biochemical evidence for increased active site accessibility. The 2.2-fold increase in labeling is substantial and statistically significant (p=0.0065). This result is consistent with and mechanistically explains the observed stimulation of Rad6 activity. The experiment is well-controlled with appropriate replicates (n=4).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "e16ae831-f5e3-4dcb-ab82-b6a2156bf4d8",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The Bre1 RBD\u2013Rad6 interaction is crucial for Bre1-mediated H2B mono-ubiquitination, DNA damage response, and homologous recombination repair in vivo. Substitutions that disrupt the interaction (Q30A, K31D, R36E, R42E) cause defects in H2Bub1 levels, sensitivity to DNA damaging agents, and reduced survival in HR repair assays, while Q23A does not.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The in vivo functional importance is demonstrated through multiple complementary assays: western blot for H2Bub1 levels (C21), sensitivity assays with multiple DNA damaging agents (C22), and ectopic recombination survival assays (C24). The pattern of substitution effects correlates well with in vitro binding data. Statistical analysis shows significant differences (multiple p-values < 0.001). Protein levels are controlled (C23).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "cabe2d3b-c542-4e45-bfdc-7af2147481f8",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The Bre1 RBD\u2013Rad6 interaction may maintain a close Bre1\u2013Rad6 association during H2Bub1 catalysis without interfering with Rad6\u2013E1 or Rad6\u2013RING interactions, and may position Bre1 RBD for interaction with ubiquitin in the Rad6\u2013ubiquitin conjugate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These are mechanistic hypotheses based on structural modeling (C43, C44, C57) and inference from binding data. While the models are reasonable and consistent with known E1/E2/E3 interactions, they lack direct experimental validation. The authors appropriately use cautious language ('may', 'is not expected to'). These represent plausible mechanisms requiring future experimental testing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "3cdfd799-edc9-4c78-afee-154f6588b052",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Bre1 dimerization is required for the Bre1 RBD\u2013Rad6 interaction, as the structure shows that multiple regions in both Bre1 polypeptides contribute to Rad6 binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structural data clearly shows that both Bre1 polypeptides contribute to the Rad6-binding interface (C54). This is consistent with prior reports of Bre1 dimerization being important for function (C53). The large buried surface area (8000 \u00c5\u00b2) between Bre1 polypeptides and the observation that interface residues also mediate inter-Bre1 interactions support this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "f89ca95e-f392-4c12-b929-2699e026c927",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Ubiquitin binds to the back side of E2 enzymes to stimulate their activity, and the I44A substitution in ubiquitin inhibits this interaction and destabilizes the closed E2\u2013ubiquitin conjugate conformation. KlBre1 RBD can itself be ubiquitinated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims about ubiquitin's role are well-supported by multiple citations (C45, C47, C48) and are used as controls in the experimental design. The observation that KlBre1 RBD can be ubiquitinated (C50) is directly demonstrated by western blot. These are important for interpreting the mechanistic experiments but represent established knowledge rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "2c44da10-7e33-4ea7-9414-3f1e7b264272",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Unlike Bre1 RBD, ubiquitin does not form stable complexes with E2 enzymes. The Bre1 RBD and Rad18 E2BBR appear to have opposite effects on Rad6's activity despite both binding to Rad6's back side.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The comparison with ubiquitin (C55) is supported by known properties of ubiquitin\u2013E2 interactions. The comparison with Rad18 E2BBR (C62) is based on the authors' data showing Bre1 RBD stimulates Rad6 activity, contrasting with literature showing Rad18 E2BBR inhibits it. This highlights the novelty of the Bre1 mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "aad11493-0d7b-4dc2-81a5-85bfb8cf5157",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The Bre1 RBD represents a structurally distinct E2BBR compared to previously reported E2BBRs. While other E2BBRs possess a single E2-interacting region with a major \u03b1 helix, multiple regions in both polypeptides of the Bre1 RBD dimer contribute to Rad6 interaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structural comparison with other E2BBRs (C58, C59, C60) is supported by structural alignments shown in supplementary figures. The unique architecture of Bre1 RBD (C61) is clearly demonstrated by the crystal structure. This establishes the novelty of the Bre1 mechanism among E2BBRs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "25478f8c-74ce-4b6a-bdf6-d38eaa732989",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "H2Bub1 is a highly conserved histone modification catalyzed by the Bre1\u2013Rad6 complex in yeast, with important roles in transcription, histone methylation, DNA repair, meiotic recombination, and cancer. Bre1 contains an N-terminal RBD and a C-terminal RING domain, both important for H2Bub1 catalysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent established background knowledge supported by extensive citations. They provide context for the study but are not novel findings. The claims are accurately stated and appropriately cited, establishing the biological importance of understanding the Bre1\u2013Rad6 interaction mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    },
+    {
+      "id": "a334b2cf-4b85-46e3-ace0-647ae3f7728b",
+      "content_id": "e515daea-3df2-4c8d-867b-72854c64a21d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background on E1/E2/E3 interactions, Bre1 RING domain structure, Rad6 functions with different E3 enzymes, and human RNF20/RNF40 orthologs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent established knowledge from the literature, appropriately cited. They provide important context for interpreting the results and discussing future directions. The information about human orthologs (C71, C72, C73) highlights translational relevance and identifies areas for future research.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:42:06.872519Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3b2e135c-33ff-4402-b37a-d282d2ce83c7",
+      "result_id": "a0ef7135-d998-4aa5-8277-6db6f60cf090"
+    },
+    {
+      "claim_id": "bed1b96c-d26d-4518-8ae5-296578abcc94",
+      "result_id": "a0ef7135-d998-4aa5-8277-6db6f60cf090"
+    },
+    {
+      "claim_id": "d30a4da4-c09b-4c33-afdf-9f05bc111b41",
+      "result_id": "a0ef7135-d998-4aa5-8277-6db6f60cf090"
+    },
+    {
+      "claim_id": "9ec36bed-1d82-46cf-bb71-2b70cea71474",
+      "result_id": "a0ef7135-d998-4aa5-8277-6db6f60cf090"
+    },
+    {
+      "claim_id": "bdac1d9d-c9e6-4d5e-bbae-ff97f7036a5a",
+      "result_id": "a0ef7135-d998-4aa5-8277-6db6f60cf090"
+    },
+    {
+      "claim_id": "a9fa4975-b9fc-4d6b-8f90-0e57470e8764",
+      "result_id": "a0ef7135-d998-4aa5-8277-6db6f60cf090"
+    },
+    {
+      "claim_id": "b81bd774-c172-44a6-9af3-92d343f31bd2",
+      "result_id": "a0ef7135-d998-4aa5-8277-6db6f60cf090"
+    },
+    {
+      "claim_id": "8bc02a01-6d08-4af2-bedb-177cead37d8e",
+      "result_id": "a0ef7135-d998-4aa5-8277-6db6f60cf090"
+    },
+    {
+      "claim_id": "f4c41a00-9416-4fe1-af6e-f8b6b57758a2",
+      "result_id": "2b82e41e-eb43-4cee-996a-7cd8494b1705"
+    },
+    {
+      "claim_id": "c5a6c3e3-ef28-48d0-8bea-7a19b4016179",
+      "result_id": "2b82e41e-eb43-4cee-996a-7cd8494b1705"
+    },
+    {
+      "claim_id": "09e7dc8f-42f4-4d4b-aea5-10d02a2956e0",
+      "result_id": "2b82e41e-eb43-4cee-996a-7cd8494b1705"
+    },
+    {
+      "claim_id": "62953c21-2561-4194-9d07-8042f312a9ec",
+      "result_id": "2b82e41e-eb43-4cee-996a-7cd8494b1705"
+    },
+    {
+      "claim_id": "d944f4d1-7368-4531-bbbf-ff1a4ce2e372",
+      "result_id": "2b82e41e-eb43-4cee-996a-7cd8494b1705"
+    },
+    {
+      "claim_id": "7dcb4c03-7543-4a36-a0d7-226503dad2eb",
+      "result_id": "caf0b7ef-a43a-40b0-8197-d12e68a3bf97"
+    },
+    {
+      "claim_id": "a71f2f94-e955-49e7-90fa-516de39ed9ae",
+      "result_id": "caf0b7ef-a43a-40b0-8197-d12e68a3bf97"
+    },
+    {
+      "claim_id": "afb3676b-7c54-4855-b6dd-66f3ecf052bb",
+      "result_id": "3ba79e4e-abac-4051-8b18-1c7b68636862"
+    },
+    {
+      "claim_id": "e1c2442a-1a6a-4c74-a870-a861771685a6",
+      "result_id": "3ba79e4e-abac-4051-8b18-1c7b68636862"
+    },
+    {
+      "claim_id": "2271dea3-4652-4597-b2b9-e0ebf09b6b83",
+      "result_id": "3ba79e4e-abac-4051-8b18-1c7b68636862"
+    },
+    {
+      "claim_id": "fb556775-617d-4104-8610-2d8574e00cea",
+      "result_id": "3ba79e4e-abac-4051-8b18-1c7b68636862"
+    },
+    {
+      "claim_id": "3ebeb497-a923-437d-a27a-96d5089f6be7",
+      "result_id": "3ba79e4e-abac-4051-8b18-1c7b68636862"
+    },
+    {
+      "claim_id": "b5e62d92-e259-4ee5-ab44-de843da4c0f7",
+      "result_id": "f7e8bf4d-86cc-479d-9922-d445fea5e985"
+    },
+    {
+      "claim_id": "b1c0688f-8ff3-4600-94f7-7a1f4bcb6e14",
+      "result_id": "3885632b-8a93-4d46-951e-20b97b24089a"
+    },
+    {
+      "claim_id": "dded956a-5578-49fb-aa22-8cb243217dff",
+      "result_id": "3885632b-8a93-4d46-951e-20b97b24089a"
+    },
+    {
+      "claim_id": "d08149fe-9f6b-467a-9296-6d1be78628f5",
+      "result_id": "3885632b-8a93-4d46-951e-20b97b24089a"
+    },
+    {
+      "claim_id": "b172e2a0-ccee-4109-b42b-ca3950bf5792",
+      "result_id": "3885632b-8a93-4d46-951e-20b97b24089a"
+    },
+    {
+      "claim_id": "110e5c9a-1aa3-43f3-80c4-00ed2c536ccf",
+      "result_id": "3885632b-8a93-4d46-951e-20b97b24089a"
+    },
+    {
+      "claim_id": "f9eba63c-5deb-4f38-a41e-ff27316511fb",
+      "result_id": "6f706d15-007a-4f6d-b4ea-5c5036569770"
+    },
+    {
+      "claim_id": "b5577c8b-8d2b-4564-b293-a7409fcc09a4",
+      "result_id": "e16ae831-f5e3-4dcb-ab82-b6a2156bf4d8"
+    },
+    {
+      "claim_id": "058c2759-b3b7-41f2-97eb-699f4666b5fb",
+      "result_id": "e16ae831-f5e3-4dcb-ab82-b6a2156bf4d8"
+    },
+    {
+      "claim_id": "c0cb39cf-a8e4-46c6-9731-caaa554d17cd",
+      "result_id": "e16ae831-f5e3-4dcb-ab82-b6a2156bf4d8"
+    },
+    {
+      "claim_id": "9bdce16d-9526-4ad7-9b12-6d58bc31b9eb",
+      "result_id": "e16ae831-f5e3-4dcb-ab82-b6a2156bf4d8"
+    },
+    {
+      "claim_id": "9429a2c4-6266-4b07-9cd1-003dab001d42",
+      "result_id": "e16ae831-f5e3-4dcb-ab82-b6a2156bf4d8"
+    },
+    {
+      "claim_id": "4930b3b7-70e5-40a7-87ef-8998df331b8b",
+      "result_id": "cabe2d3b-c542-4e45-bfdc-7af2147481f8"
+    },
+    {
+      "claim_id": "1825bc57-aca7-442f-88bb-47fae04e719a",
+      "result_id": "cabe2d3b-c542-4e45-bfdc-7af2147481f8"
+    },
+    {
+      "claim_id": "f8f78d12-55a4-4f7b-914d-8540108d07ba",
+      "result_id": "cabe2d3b-c542-4e45-bfdc-7af2147481f8"
+    },
+    {
+      "claim_id": "45db060c-5065-4dd2-ab70-27c255ded63a",
+      "result_id": "3cdfd799-edc9-4c78-afee-154f6588b052"
+    },
+    {
+      "claim_id": "1bbf6bc6-4a58-4faf-b2b2-6c9a4b87fe75",
+      "result_id": "3cdfd799-edc9-4c78-afee-154f6588b052"
+    },
+    {
+      "claim_id": "9968e4fb-bf07-4a78-9cf4-03c319a2c4ba",
+      "result_id": "f89ca95e-f392-4c12-b929-2699e026c927"
+    },
+    {
+      "claim_id": "b5e2d4be-94da-43d7-9f93-f90b13802648",
+      "result_id": "f89ca95e-f392-4c12-b929-2699e026c927"
+    },
+    {
+      "claim_id": "d9fe87cb-9508-4275-9ff0-ca9e3557a91f",
+      "result_id": "f89ca95e-f392-4c12-b929-2699e026c927"
+    },
+    {
+      "claim_id": "dfa3751b-7f12-4043-96df-551171a9884a",
+      "result_id": "f89ca95e-f392-4c12-b929-2699e026c927"
+    },
+    {
+      "claim_id": "230e652f-41b9-413f-9f3a-36c2c3170350",
+      "result_id": "2c44da10-7e33-4ea7-9414-3f1e7b264272"
+    },
+    {
+      "claim_id": "b861bcfc-9274-453e-8b81-5b2e96ca078b",
+      "result_id": "2c44da10-7e33-4ea7-9414-3f1e7b264272"
+    },
+    {
+      "claim_id": "0079b97d-5616-4ca2-89d2-87064a70be74",
+      "result_id": "aad11493-0d7b-4dc2-81a5-85bfb8cf5157"
+    },
+    {
+      "claim_id": "4804b675-9ec4-404e-8e52-f4cbbb307289",
+      "result_id": "aad11493-0d7b-4dc2-81a5-85bfb8cf5157"
+    },
+    {
+      "claim_id": "5c36101c-6f78-4f20-aa8b-8da4e4615044",
+      "result_id": "aad11493-0d7b-4dc2-81a5-85bfb8cf5157"
+    },
+    {
+      "claim_id": "5fc4427d-30dd-4ff3-9135-b6e5e691d120",
+      "result_id": "aad11493-0d7b-4dc2-81a5-85bfb8cf5157"
+    },
+    {
+      "claim_id": "6b3f9cbb-8043-42eb-b26d-0ebca92e4314",
+      "result_id": "25478f8c-74ce-4b6a-bdf6-d38eaa732989"
+    },
+    {
+      "claim_id": "d49101db-0734-4e5c-b9f0-f6ddc10ab266",
+      "result_id": "25478f8c-74ce-4b6a-bdf6-d38eaa732989"
+    },
+    {
+      "claim_id": "2f4febbd-23fb-4c3d-b817-f57997c14ac6",
+      "result_id": "25478f8c-74ce-4b6a-bdf6-d38eaa732989"
+    },
+    {
+      "claim_id": "b4f06192-dea1-43d2-b876-f06b2624b02d",
+      "result_id": "25478f8c-74ce-4b6a-bdf6-d38eaa732989"
+    },
+    {
+      "claim_id": "b39e7846-bd8a-4c34-a99b-3a9824e53bd6",
+      "result_id": "25478f8c-74ce-4b6a-bdf6-d38eaa732989"
+    },
+    {
+      "claim_id": "35d5a925-3202-42fb-b2d1-ec734e31af6f",
+      "result_id": "25478f8c-74ce-4b6a-bdf6-d38eaa732989"
+    },
+    {
+      "claim_id": "d41b2903-cbf9-4af1-a11a-5f14d82d9b9b",
+      "result_id": "25478f8c-74ce-4b6a-bdf6-d38eaa732989"
+    },
+    {
+      "claim_id": "7ecadd8c-db05-434b-b97d-8b8b90b62bfb",
+      "result_id": "25478f8c-74ce-4b6a-bdf6-d38eaa732989"
+    },
+    {
+      "claim_id": "d20a2d0d-b8dc-40df-8ed5-4c2b1c07fb27",
+      "result_id": "25478f8c-74ce-4b6a-bdf6-d38eaa732989"
+    },
+    {
+      "claim_id": "6dfd92a6-1ac4-4073-864f-39bb5e81a18a",
+      "result_id": "25478f8c-74ce-4b6a-bdf6-d38eaa732989"
+    },
+    {
+      "claim_id": "cf13b5cb-8c3a-45a2-91cf-b58e2e1a673c",
+      "result_id": "25478f8c-74ce-4b6a-bdf6-d38eaa732989"
+    },
+    {
+      "claim_id": "8621e4d1-5086-4735-b27f-471af61898f2",
+      "result_id": "25478f8c-74ce-4b6a-bdf6-d38eaa732989"
+    },
+    {
+      "claim_id": "f2d983a2-a82e-4162-8a4a-385a1ec4b066",
+      "result_id": "25478f8c-74ce-4b6a-bdf6-d38eaa732989"
+    },
+    {
+      "claim_id": "506ca31d-7b4f-4fdf-9941-0f833bf42b36",
+      "result_id": "25478f8c-74ce-4b6a-bdf6-d38eaa732989"
+    },
+    {
+      "claim_id": "d254a03a-d628-4431-a806-cbf09e6ccd77",
+      "result_id": "25478f8c-74ce-4b6a-bdf6-d38eaa732989"
+    },
+    {
+      "claim_id": "f2bb192c-2898-4721-9800-9bb980d0e266",
+      "result_id": "a334b2cf-4b85-46e3-ace0-647ae3f7728b"
+    },
+    {
+      "claim_id": "97172cb5-b1cb-4c70-9491-e808499160a5",
+      "result_id": "a334b2cf-4b85-46e3-ace0-647ae3f7728b"
+    },
+    {
+      "claim_id": "41b59d16-9945-43bf-8cb0-c561f2e7a7d8",
+      "result_id": "a334b2cf-4b85-46e3-ace0-647ae3f7728b"
+    },
+    {
+      "claim_id": "0e0baa12-d2bd-457d-a477-212f0b8be01b",
+      "result_id": "a334b2cf-4b85-46e3-ace0-647ae3f7728b"
+    },
+    {
+      "claim_id": "6691fad2-3676-47f6-8d6c-96abcf675592",
+      "result_id": "a334b2cf-4b85-46e3-ace0-647ae3f7728b"
+    },
+    {
+      "claim_id": "d3af7e99-a831-4695-851a-4d299de165f0",
+      "result_id": "a334b2cf-4b85-46e3-ace0-647ae3f7728b"
+    },
+    {
+      "claim_id": "4ec06f49-c834-48e2-b530-5e725d84bab8",
+      "result_id": "a334b2cf-4b85-46e3-ace0-647ae3f7728b"
+    },
+    {
+      "claim_id": "2a522f97-0a84-4739-b313-6abe5276ccb8",
+      "result_id": "a334b2cf-4b85-46e3-ace0-647ae3f7728b"
+    },
+    {
+      "claim_id": "50bd290d-e334-4302-8d9d-ab9688bc5b4e",
+      "result_id": "a334b2cf-4b85-46e3-ace0-647ae3f7728b"
+    },
+    {
+      "claim_id": "aade026a-2910-4eb6-986d-9e97d6bb1461",
+      "result_id": "a334b2cf-4b85-46e3-ace0-647ae3f7728b"
+    },
+    {
+      "claim_id": "db586841-ed28-4aa3-9c5d-e5f60883e3e6",
+      "result_id": "a334b2cf-4b85-46e3-ace0-647ae3f7728b"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,2104 @@
+{
+  "submission": {
+    "id": "6d1c6a27-7fdc-4173-aafd-c59a71c6c244",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T14:32:32.842883Z",
+    "updated_at": "2025-12-03T14:32:32.842883Z"
+  },
+  "content": [
+    {
+      "id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "submission_id": "6d1c6a27-7fdc-4173-aafd-c59a71c6c244",
+      "content_type": "manuscript",
+      "content_text": "# Pneumococcal genetic variability in age-dependent bacterial carriage\n\n## Authors\n\n- Philip HC Kremer<sup>1</sup> ([ORCID: 0000-0003-0483-841X](https://orcid.org/0000-0003-0483-841X)) \u2020\n- Bart Ferwerda<sup>1</sup>\n- Hester J Bootsma<sup>3</sup>\n- Nienke Y Rots<sup>3</sup>\n- Alienke J Wijmenga-Monsuur<sup>3</sup> ([ORCID: 0000-0001-5663-860X](https://orcid.org/0000-0001-5663-860X))\n- Elisabeth AM Sanders<sup>3</sup>\n- Krzysztof Trzci\u0144ski<sup>4</sup>\n- Anne L Wyllie<sup>4</sup> ([ORCID: 0000-0001-6015-0279](https://orcid.org/0000-0001-6015-0279))\n- Paul Turner<sup>6</sup> ([ORCID: 0000-0002-1013-7815](https://orcid.org/0000-0002-1013-7815))\n- Arie van der Ende<sup>8</sup>\n- Matthijs C Brouwer<sup>1</sup>\n- Stephen D Bentley<sup>10</sup>\n- Diederik van de Beek<sup>1</sup>\n- John A Lees<sup>11</sup> ([ORCID: 0000-0001-5360-1254](https://orcid.org/0000-0001-5360-1254)) \u2020\n\n### Affiliations\n\n1. Department of Neurology, Amsterdam UMC, University of Amsterdam Meibergdreef Netherlands ([ROR:04dkp9463](https://ror.org/04dkp9463))\n2. Department of Clinical Epidemiology, Biostatistics and Bioinformatics, University of Amsterdam Amsterdam Netherlands ([ROR:04dkp9463](https://ror.org/04dkp9463))\n3. Centre for Infectious Disease Control, National Institute for Public Health and the Environment Bilthoven Netherlands ([ROR:01cesdt21](https://ror.org/01cesdt21))\n4. Department of Pediatric Immunology and Infectious D, Wilhelmina Children's Hospital Utrecht Netherlands ([ROR:05fqypv61](https://ror.org/05fqypv61))\n5. Epidemiology of Microbial Diseases, Yale School of Public Health New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))\n6. Cambodia Oxford Medical Research Unit, Angkor Hospital for Children Siem Reap Cambodia ([ROR:01yjqh416](https://ror.org/01yjqh416))\n7. Centre for Tropical Medicine and Global Health, Nuffield Department of Medicine, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))\n8. Department of Medical Microbiology and Infection Prevention, Amsterdam UMC Amsterdam Netherlands ([ROR:05grdyy37](https://ror.org/05grdyy37))\n9. The Netherlands Reference Laboratory for Bacterial Meningitis Amsterdam Netherlands\n10. Parasites and Microbes, Wellcome Sanger Institute Cambridge United Kingdom ([ROR:05cy4wa09](https://ror.org/05cy4wa09))\n11. European Molecular Biology Laboratory\u2013European Bioinformatics Institute Cambridge United Kingdom ([ROR:02catss52](https://ror.org/02catss52))\n12. MRC Centre for Global Infectious Disease Analysis, Department of Infectious Disease Epidemiology, Imperial College London London United Kingdom ([ROR:03x94j517](https://ror.org/03x94j517))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe characteristics of pneumococcal carriage vary between infants and adults. Host immune factors have been shown to contribute to these age-specific differences, but the role of pathogen sequence variation is currently less well-known. Identification of age-associated pathogen genetic factors could leadto improved vaccine formulations. We therefore performed genome sequencing in a large carriage cohort of children and adults and combined this with data from an existing age-stratified carriage study. We compiled a dictionary of pathogen genetic variation, including serotype, strain, sequence elements, single-nucleotide polymorphisms (SNPs), and clusters of orthologous genes (COGs) for each cohort \u2013 all of which were used in a genome-wide association with host age. Age-dependent colonization showed weak evidence of being heritable in the first cohort (h2 = 0.10, 95% CI 0.00\u20130.69) and stronger evidence in the second cohort (h2 = 0.56, 95% CI 0.23\u20130.87). We found that serotypes and genetic background (strain) explained a proportion of the heritability in the first cohort (h2serotype = 0.07, 95% CI 0.04\u20130.14 and h2GPSC = 0.06, 95% CI 0.03\u20130.13) and the second cohort (h2serotype = 0.11, 95% CI 0.05\u20130.21 and h2GPSC = 0.20, 95% CI 0.12\u20130.31). In a meta-analysis of these cohorts, we found one candidate association (p=1.2 \u00d7 10-9) upstream of an accessory Sec-dependent serine-rich glycoprotein adhesin. Overall, while we did find a small effect of pathogen genome variation on pneumococcal carriage between child and adult hosts, this was variable between populations and does not appear to be caused by strong effects of individual genes. This supports proposals for adaptive future vaccination strategies that are primarily targeted at dominant circulating serotypes and tailored to the composition of the pathogen populations.\n\n## Introduction\n\nStreptococcus pneumoniae is a common commensal of the human upper respiratory tract and nasopharynx, but can also cause pneumonia and invasive diseases such as sepsis or meningitis (Bogaert et al., 2004). Invasive pneumococcal disease (IPD) has a high mortality, and the overall mortality rate from IPD is higher in extreme age ranges, such as infants and the elderly (Wahl et al., 2018; O Brien et al., 2009). In the Netherlands, pneumococcal carriage rates are higher in children than in adults, with a prevalence of up to 80% at 2 years of age (Wyllie et al., 2016).\n\nPneumococcal carriage manifests as multiple carriage episodes of different serotypes. From birth, mucosal immunity builds up against different serotypes due to exposure, while immunity from maternal antibodies wanes. Host age is known to affect carriage prevalence and carriage duration of different serotypes (Stearns et al., 2015; Turner et al., 2012b), which is suggested to be driven by differences in immunity.(Wyllie et al., 2020) Studies in mice and humans showed evidence for age-dependent host\u2013pathogen interactions involving interleukin (IL)-1 response in reaction to the pore-forming pneumolysin (ply) toxin (Kuipers et al., 2018). IgA secretion is important in clearing S. pneumoniae from host upper respiratory tract mucosa, and this secretion is more effective in previously exposed individuals, the adults (Binsker et al., 2020). Bacterial genetics has been shown to explain over 60% of the variability in carriage duration, and specifically that the presence of a bacteriophage inserted in a mediator of genomic competence was associated with a decreased carriage duration (Lees et al., 2017b).\n\nPneumococci are highly genetically variable, displaying over 100 diverse capsular serotypes (Ganaie et al., 2020), which are a major antigen and the strongest predictor of carriage prevalence (Croucher et al., 2018). Pneumococcal conjugate vaccines (PCVs), targeting up to 13 capsule serotypes with high burden of invasive disease, decrease the rate of nasopharyngeal carriage and invasive disease (Whitney et al., 2003; Poehling et al., 2006). Besides a direct effect of vaccination with a PCV on the disease burden in the target population, that is, young children, it also reduces the disease burden caused by pneumococci with vaccine serotypes in the population not eligible for vaccination through indirect protection from colonization \u2013 reducing carriage rates in children reduces overall transmission of the most invasive serotypes (Croucher et al., 2018; Desai et al., 2015; von Gottberg et al., 2014). However, the introduction of PCV has resulted in the replacement of serotypes not covered by the vaccine (Croucher et al., 2013; Corander et al., 2017), which in some countries reaches levels of invasive disease return towards pre-vaccine levels (Ladhani et al., 2018; Koelman et al., 2020).\n\nAs not all serotypes can be included in a conjugate vaccine, three perspectives leading to improved pneumococcal vaccination have been proposed: whole-cell vaccines (Malley et al., 2001; Campo et al., 2018), protein vaccines (Moffitt and Malley, 2016), or changing components in the conjugate vaccine in response to the circulating population.(Colijn et al., 2020) Whole-cell vaccination trials are ongoing, but efficacy remains unproven in human populations (Morais et al., 2019). Protein vaccines contain antigens that elicit a strong mucosal immune response, with their targets chosen to be common or conserved in the target population, and ideally reducing onward transmission (Pichichero, 2017). In their current form, protein vaccines are not thought to be effective on their own, but if administered with serotype conjugates (possibly by replacing the carrier protein) they may help to reduce serotype replacement. Detailed modeling of the dynamics of pneumococcal population genetics has shown that targeting these vaccines towards serotypes prevalent in specific populations would likely be a superior strategy. This work further shows that providing age-specific vaccine design using complementary adult-administered vaccines (CAVs) is predicted to have the greatest effect on total IPD burden (Colijn et al., 2020). These authors also modeled including pilus in the vaccine, which is more frequently present in a few key invasive serotypes and in infant carriage, but found this to be inferior to conjugate vaccines.\n\nIf proposing a future pneumococcal vaccination strategy based on host age, we should aim to better understand the differences between infant and adult carriage. Differences between other host niches have been found, some with a potential effect on onward transmission (Lees et al., 2017c; Lees et al., 2017a; Zafar et al., 2019). In particular, a previous study has suggested that the presence of pilus, which is found in a minority of pneumococcal isolates, has a selective advantage in infant carriage (Binsker et al., 2020).\n\nWe therefore wished to test three hypotheses. Firstly, carriage rates of individual strains or serotypes vary substantially between infants and adults in the same contact networks. Secondly, this variation is attributable at least in part due to pathogen genetic adaptation to either the infant or adult nasopharynx, which are immunologically different niches. Finally, this adaptation is due both to serotype and genetic background, and that some of the genetic effects are resolvable to individual genes, alleles, or regulatory variants that arise on multiple different genetic backgrounds due to a selective advantage. If we find clear associations, this would support proposals for age-specific vaccine design and may also suggest specific protein components that more broadly suppress carriage in the target age group than multivalent PCV alone.\n\nFor the first hypothesis, to test varying rates of carriage we can swab children and adults from the same population (and likely exposed to the same infection pressures) and quantify serotype and strain prevalence. For the second hypothesis, if we whole-genome sequence bacteria from these swabs, we can model the effects of all genomic variants on host age in a heritability analysis. This accounts for genetic variation that arose long ago and is fixed in particular lineage, but cannot map it to a particular region of the genome (Earle et al., 2016). To find individual genetic effects, which have necessarily occurred more recently and frequently, one study design would be to identify adult\u2013infant transmission pairs and find variation that consistently occurs in localized regions of the genome, which would be particularly informative if also associated with a particular direction of transmission (Lees et al., 2017c). This removes genetic background as a confounder, giving a clean signal (Young et al., 2012). However, the identification of such pairs is very challenging for S. pneumoniae, and even when possible the small numbers limit power. We propose taking the more \u2018opportunistic\u2019 approach taken in genome-wide association studies (GWAS), where as many cases and controls (in this case, infant and adult samples) as possible are accumulated to boost statistical power, and genetic background is then controlled for in the association analysis. Where variation associated with age has arisen independently on multiple genetic backgrounds, GWAS has the ability to find these signals among the many lineage associations tested in the second step. In all cases, analysis can be improved by studying more than one population to determine whether findings are consistent among different host and pathogen populations.\n\nTo carry out these analyses, we used pneumococci isolated from nasopharyngeal swabs of 4320 infants and adults from the Netherlands (2009\u20132013) and Myanmar (October 2007\u2013November 2008). Each cohort contains infant and adult samples from carriage, and there are significant differences between the host populations. This allows us to follow the above approach in each population and compare our findings between the populations. We present our findings with respect to each above hypothesis in turn and interpret them through the lens of using population genomics to determine optimal vaccination strategies.\n\n## Results\n\nWe first analyzed the observed distribution of serotypes and strains in each of the two cohorts to assess overall trends of differences in carriage between adults and children exposed to similar forces of infection and look at the pathogen population\u2019s genetic heterogeneity between the two cohorts. Although our cohorts were broadly matched in the primary phenotype, age, large differences between the pathogen population are expected due to different geographies, social backgrounds, and only children in one cohort being vaccinated. Nucleotide variation across the entire genome can be used to cluster genetically related isolates into consistently named strains, called global pneumococcal sequence clusters (GPSC) (Gladstone et al., 2019). We used this over older gene-by-gene approaches such as MLST as it has been shown to represent biologically discrete clusters in the population, uses the full resolution available from whole-genome sequencing, and has strong community support (Gladstone et al., 2020). For each sample, we enumerate the serotype (which is targeted by the vaccine) and GPSC membership, and count the number of each serotype observed in adult and child carriage.\n\n### Serotypes and strains are variably carried between age groups and between cohorts\n\nThe Dutch cohort was made up of 1329 S. pneumoniae isolates comprising 41 unique serotypes (Supplementary file 1). Of these isolates, 689 (52%) comprised seven serotypes: 19A (225; 17%), 11A (111; 8%), 6C (97; 7%), 23B (84; 6%), 10A (67; 5%), 16F (54; 4%), and 21 (51; 4%). In this cohort of which the children were vaccinated, a minority of isolates (101; 8%) belonged to one of the vaccine serotypes (Supplementary file 2). A total of 3085 pneumococcal isolates of the Maela (unvaccinated) cohort comprised 64 unique serotype groups (Supplementary file 3). Of these isolates, 1631 (53%) comprised five serotypes: non-typable (511; 17%), 19F (402, 13%), 23F (307, 10%), 6B (236; 8%), and 14 (175; 6%). In the Dutch cohort, there were 59 unique sequence clusters of which the four largest sequence clusters were GPSC 4 (171; 13%), GPSC 3 (156; 12%), GPSC 7 (131; 10%), and GPSC 11 (119; 9%) (Supplementary file 4). There were 127 unique sequence clusters found in the Maela cohort (Supplementary file 5). The four largest sequence clusters were GPSC 1 (352; 13%), GPSC 28 (190; 7%), GPSC 20 (168; 6%), and GPSC 42 (123; 5%). We also looked at a subset of the Maela cohort, which included only the earliest obtained samples from unique individuals (mothers and children). This subset consisted of 762 isolates, including 380 from mother\u2013child pairs. Isolates in this subset had the same serotypes among the most common serotypes as in the full dataset (Supplementary file 6 and Supplementary file 7). Restricting this subset to mother\u2013child paired samples only included the same serotypes and sequence clusters among the most prevalent (Supplementary file 6 and Supplementary file 7).\n\nSome serotypes exhibited a large difference in colonization frequency between the two age groups (Figure 1). In the Dutch cohort, serotype 6C (chi-squared test, p=0.02, not corrected for multiple testing) and serotype 15B (p=0.02) were overrepresented in children relative to adults, serotype 3 was overrepresented in adults relative to children (p=2.5 \u00d7 10\u20135), while in the Maela cohort, serotype groups overrepresented in children were serotype 23F (chi-squared test, p=0.04) and serotype 6B (chi-squared test, p=0.04); while non-typeable serogroup was overrepresented in adults (chi-squared test, p=3.0 \u00d7 10\u20134) (Table 1). None of the 20 largest groups of sequence clusters overlapped between the cohorts. In the Dutch cohort, only GPSC 11 was significantly associated with carriage in children (chi-squared test, p=0.03, not corrected for multiple testing), while GPSC 12 (chi-squared test, p=1.2 \u00d7 10\u20134) and GPSC 38 (chi-squared test, p=2.1 \u00d7 10\u20134) were overrepresented in adults. In the Maela cohort, only sequence cluster GPSC 128 was overrepresented in children compared to adults (chi-squared test, p=0.04), while GPSC 20 (chi-squared test, p=7.0 \u00d7 10\u20133) and GPSC 74 (chi-squared test, p=0.04) were overrepresented in adults (Table 2).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/69244/elife-69244-fig1-v3.jpg)\n\n**Figure 1.:** Blue dots represent frequency of serotype and strain in child carriage, yellow dots represent frequency in adult carriage. Red and green dots show odds ratio of prevalence in children in the Maela and Dutch cohorts, respectively, on a log scale for serotype. Lines show differences. Top row: dominant serotypes, ordered by presence in cohort, and internally by overall frequency. Vaccine serotypes shown in red. (A) Serotype frequency in the Dutch cohort. (B) Serotype frequency in the Maela cohort. (C) Comparison of adult/child log odds in each cohort for serotype. Second row: dominants strains (GPSCs), ordered by presence in cohort, and internally by overall frequency. (D) Strain frequency in Dutch cohort. (E) Strain frequency in Maela cohort. (F) Comparison of adult/child log odds in each cohort for strain.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69244/elife-69244-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Due to the differences in sampling strategies in the studies from which the samples were obtained, children in the Dutch cohort were sampled at ages 9\u201311 months and 22\u201324 months, while in the Maela cohort children were sampled in the age range 1\u201324 months.\n\n**Table 1.**\n Chi-squared values for serotypes in the Dutch and Maela cohorts and the age group that the serotype is affiliated with.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Serotype</th>\n      <th colspan=\"2\">Dutch cohort</th>\n      <th colspan=\"2\">Maela cohort</th>\n    </tr>\n    <tr>\n      <th>\u03c72 p-value</th>\n      <th>Age group</th>\n      <th>\u03c72 p-value</th>\n      <th>Age group</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Non-typeable</td>\n      <td>0.188</td>\n      <td>Adults</td>\n      <td>3.0 \u00d7 10\u20134</td>\n      <td>Adults</td>\n    </tr>\n    <tr>\n      <td>19A</td>\n      <td>0.089</td>\n      <td>Children</td>\n      <td>0.690</td>\n      <td>Children</td>\n    </tr>\n    <tr>\n      <td>11A</td>\n      <td>0.591</td>\n      <td>Children</td>\n      <td>0285</td>\n      <td>Adults</td>\n    </tr>\n    <tr>\n      <td>19F</td>\n      <td>1</td>\n      <td>Adults</td>\n      <td>0.131</td>\n      <td>Children</td>\n    </tr>\n    <tr>\n      <td>6C</td>\n      <td>0.022</td>\n      <td>Children</td>\n      <td>1</td>\n      <td>Adults</td>\n    </tr>\n    <tr>\n      <td>6B</td>\n      <td>0.099</td>\n      <td>Children</td>\n      <td>0.040</td>\n      <td>Children</td>\n    </tr>\n    <tr>\n      <td>35F</td>\n      <td>0.279</td>\n      <td>Children</td>\n      <td>0.100</td>\n      <td>Children</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>2.5 \u00d7 10\u20135</td>\n      <td>Adults</td>\n      <td>0.129</td>\n      <td>Adults</td>\n    </tr>\n    <tr>\n      <td>6A</td>\n      <td>0.709</td>\n      <td>Children</td>\n      <td>1</td>\n      <td>Children</td>\n    </tr>\n    <tr>\n      <td>23A</td>\n      <td>1</td>\n      <td>Adults</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>15B</td>\n      <td>0.023</td>\n      <td>Children</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>17F</td>\n      <td>0.943</td>\n      <td>Children</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>23B</td>\n      <td>0.727</td>\n      <td>Children</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>10A</td>\n      <td>0.155</td>\n      <td>Adults</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>15C</td>\n      <td>1.000</td>\n      <td>Adults</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>35B</td>\n      <td>0.775</td>\n      <td>Adults</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>22F</td>\n      <td>1</td>\n      <td>Adults</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>33F</td>\n      <td>0.132</td>\n      <td>Adults</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>23F</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.040</td>\n      <td>Children</td>\n    </tr>\n    <tr>\n      <td>14</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.949</td>\n      <td>Children</td>\n    </tr>\n    <tr>\n      <td>35C</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.961</td>\n      <td>Children</td>\n    </tr>\n    <tr>\n      <td>34</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.690</td>\n      <td>Children</td>\n    </tr>\n    <tr>\n      <td>13</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.756</td>\n      <td>Adults</td>\n    </tr>\n    <tr>\n      <td>10B</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.756</td>\n      <td>Adults</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.966</td>\n      <td>Children</td>\n    </tr>\n    <tr>\n      <td>5</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.710</td>\n      <td>Adults</td>\n    </tr>\n    <tr>\n      <td>33B</td>\n      <td>-</td>\n      <td>-</td>\n      <td>1</td>\n      <td>Children</td>\n    </tr>\n    <tr>\n      <td>28F</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.652</td>\n      <td>Children</td>\n    </tr>\n    <tr>\n      <td>19B</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.710</td>\n      <td>Adults</td>\n    </tr>\n    <tr>\n      <td>7F</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.971</td>\n      <td>Children</td>\n    </tr>\n    <tr>\n      <td>20</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.971</td>\n      <td>Children</td>\n    </tr>\n    <tr>\n      <td>18C</td>\n      <td>-</td>\n      <td>-</td>\n      <td>1</td>\n      <td>Adults</td>\n    </tr>\n  </tbody>\n</table>\n\n_\u03c72, chi-square; -, not applicable._\n\n**Table 2.**\n Chi-squared values for strains in the Dutch and Maela cohorts and the age group that the strain is affiliated with.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">GPSC</th>\n      <th colspan=\"2\">Dutch cohort</th>\n      <th colspan=\"2\">Maela cohort</th>\n    </tr>\n    <tr>\n      <th>\u03c72 p-value</th>\n      <th>Age group</th>\n      <th>\u03c72 p-value</th>\n      <th>Age group</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>60</td>\n      <td>0.568</td>\n      <td>Adults</td>\n      <td>0.727</td>\n      <td>Adults</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td>0.298</td>\n      <td>Children</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>0.392</td>\n      <td>Adults</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>7</td>\n      <td>0.858</td>\n      <td>Children</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>11</td>\n      <td>0.03</td>\n      <td>Children</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>35 and 36</td>\n      <td>0.617</td>\n      <td>Adults</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>29</td>\n      <td>0.049</td>\n      <td>Children</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>46</td>\n      <td>0.563</td>\n      <td>Children</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>75</td>\n      <td>0.666</td>\n      <td>Adults</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>19</td>\n      <td>0.978</td>\n      <td>Children</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>12</td>\n      <td>1.2 \u00d7 10\u20134</td>\n      <td>Adults</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>44</td>\n      <td>1</td>\n      <td>Adults</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>24</td>\n      <td>0.094</td>\n      <td>Children</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>49</td>\n      <td>1</td>\n      <td>Children</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>109</td>\n      <td>0.817</td>\n      <td>Adults</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>16</td>\n      <td>0.249</td>\n      <td>Adults</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>38</td>\n      <td>2.1 \u00d7 10\u20134</td>\n      <td>Adults</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>146</td>\n      <td>0.489</td>\n      <td>Children</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>99</td>\n      <td>1</td>\n      <td>Children</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>15</td>\n      <td>0.22</td>\n      <td>Adults</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>42</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.134</td>\n      <td>Children</td>\n    </tr>\n    <tr>\n      <td>1</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.276</td>\n      <td>Adults</td>\n    </tr>\n    <tr>\n      <td>28</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.110</td>\n      <td>Children</td>\n    </tr>\n    <tr>\n      <td>73</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.253</td>\n      <td>Children</td>\n    </tr>\n    <tr>\n      <td>10</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.777</td>\n      <td>Adults</td>\n    </tr>\n    <tr>\n      <td>9</td>\n      <td>-</td>\n      <td>-</td>\n      <td>1</td>\n      <td>Children</td>\n    </tr>\n    <tr>\n      <td>30</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.993</td>\n      <td>Children</td>\n    </tr>\n    <tr>\n      <td>20</td>\n      <td>-</td>\n      <td>-</td>\n      <td>7.0 \u00d7 10\u20133</td>\n      <td>Adults</td>\n    </tr>\n    <tr>\n      <td>128</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.042</td>\n      <td>Children</td>\n    </tr>\n    <tr>\n      <td>66</td>\n      <td>-</td>\n      <td>-</td>\n      <td>1</td>\n      <td>Children</td>\n    </tr>\n    <tr>\n      <td>87</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.450</td>\n      <td>Adults</td>\n    </tr>\n    <tr>\n      <td>63</td>\n      <td>-</td>\n      <td>-</td>\n      <td>1</td>\n      <td>Adults</td>\n    </tr>\n    <tr>\n      <td>45</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.129</td>\n      <td>Adults</td>\n    </tr>\n    <tr>\n      <td>130</td>\n      <td>-</td>\n      <td>-</td>\n      <td>1</td>\n      <td>Adults</td>\n    </tr>\n    <tr>\n      <td>74</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.040</td>\n      <td>Adults</td>\n    </tr>\n    <tr>\n      <td>149</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.686</td>\n      <td>Adults</td>\n    </tr>\n    <tr>\n      <td>8</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.364</td>\n      <td>Children</td>\n    </tr>\n    <tr>\n      <td>25</td>\n      <td>-</td>\n      <td>-</td>\n      <td>1</td>\n      <td>Adults</td>\n    </tr>\n    <tr>\n      <td>187</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.371</td>\n      <td>Adults</td>\n    </tr>\n    <tr>\n      <td>154</td>\n      <td>-</td>\n      <td>-</td>\n      <td>1</td>\n      <td>Adults</td>\n    </tr>\n    <tr>\n      <td>118</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0995</td>\n      <td>Children</td>\n    </tr>\n    <tr>\n      <td>110</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.995</td>\n      <td>Children</td>\n    </tr>\n    <tr>\n      <td>106</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.073</td>\n      <td>Adults</td>\n    </tr>\n  </tbody>\n</table>\n\n_\u03c72, chi-square; -, not applicable; GPSC, global pneumococcal sequence clusters._\n\nA phylogenetic tree of pooled sequences from both cohorts, with serotype, sequence cluster, age group, and cohort for each sequence, revealed clonal discrimination between cohorts (Figure 2). Combined with the effects shown in Figure 1, this highlighted a key feature of our analysis of these datasets, which was the genetic heterogeneity between the two cohorts. Individually, each dataset clearly has strains and serotypes with strong signals of host age differences, but the overall makeup of each dataset is very different (nine common serotypes are shared, but only a single common GPSC), and where there are shared serotypes these can have different effect directions between the two cohorts.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/69244/elife-69244-fig2-v3.jpg)\n\n**Figure 2.:** The rings show metadata for the samples. Depicted from inside to outside, these are serotype, sequence cluster (global pneumococcal sequence clusters [GPSC]), age, and source (Maela, Netherlands). Scale bar: 0.013 substitutions per site. An interactive version is available at here (project link available here).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69244/elife-69244-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The rings show metadata for the samples. Depicted from inside to outside, these are presence or absence of the unitig upstream to the aSec gene, age (adult or child), and source (Maela or Netherlands). Scale bar: 0.013 substitutions per site.\n\n### Host age is heritable and mostly explained by strain and serotype\n\nTo quantify the amount of variability in carriage age explained by variability in the genome, we calculated a heritability estimate (h2) for each cohort. For isolates in the Dutch cohort, we did not find strong evidence that genetic variability in bacteria was related to variance in host age (h2 = 0.10, 95% CI 0.00\u20130.69). In the Maela cohort, we found significant evidence that affinity with host age was heritable (h2 = 0.56, 95% CI 0.23\u20130.87) and thus genetic variation in this cohort explained variation in carriage age to a greater degree. In both cohorts, pan-genomic variation could be used to predict host age to some degree of accuracy (area under the receiver-operating characteristic [ROC] curve 0.82 [Dutch cohort]; 0.91 [Maela cohort]), suggestive of some level of heritability and association of host age with strain (Figure 3). Prediction between cohorts using a simple linear model failed as the genetic variants chosen as predictors were not found in the other cohort \u2013 again highlighting the high level of genetic heterogeneity between cohorts.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/69244/elife-69244-fig3-v3.jpg)\n\n**Figure 3.:** The smoothed receiver-operating characteristic (ROC) curve based on a linear predictor (elastic net fitted to unitigs, with strains used as folds for cross-validation) is shown. Area under the curve (AUC) is 0.5 for no predictive ability and 1 for perfect prediction.\n\nTo further investigate the association of serotype and sequence cluster to carriage age, we determined the proportion of variation in carriage age explained by serotype and sequence cluster alone. Here, we estimated h2serotype = 0.07 (95% CI 0.04\u20130.14) and h2GPSC = 0.06 (95% CI 0.03\u20130.13) for the Dutch cohort and h2serotype = 0.11 (95% CI 0.05\u20130.21) and h2GPSC = 0.20 (95% CI 0.12\u20130.31) for the Maela cohort, confirming a larger contribution of serotype and sequence cluster to carriage age heritability in sequences from the Dutch cohort. We also performed a genome-wide association analysis, but without controlling for population structure. This reveals genetic variants specific to serotype as determinants for carriage age (p-values<5.0 \u00d7 10\u20138) in both cohorts (Supplementary file 8, Dutch cohort, and Supplementary file 9, Maela cohort). Among the genetic variants with the lowest p-values were variants in capsule locus genes (Cps) in both cohorts. This further supports a role of strain and serotype in association with host age, but does not distinguish between the two.\n\n### Genome-wide association analysis does not find genetic variants independent of strain\n\nFollowing these observations that serotype and strain do not explain the full heritability, specifically in the Maela cohort, we performed a pathogen genome-wide association analysis to investigate whether we can detect genetic variants irrespective of the genetic background that are associated with carriage in children or adults. Though the cohorts have little genetic overlap in terms of genetic background, we would be well-powered to detect genetic variation independent of background (\u2018locus\u2019 associations) (Earle et al., 2016; Lees et al., 2016). In the Dutch cohort, none of the unitigs, SNPs, COGs, or rare variants surpassed the threshold for multiple testing correction (Figure 4\u2014figure supplement 1). The burden (sum) of rare variants in a gene for tryptophan synthase, trpB, approaches the multiple testing threshold, but was not significant. In the Maela cohort, unitigs in the ugpA gene surpassed the threshold for statistical significance (Figure 4\u2014figure supplement 2), but these did not hold after meta-analysis. After meta-analysis, there were two hits that surpassed the threshold for statistical significance (Figure 4).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/69244/elife-69244-fig4-v3.jpg)\n\n**Figure 4.:** (A) Minus log-transformed p-value on the y-axis and position of unitig and single-nucleotide polymorphism (SNP) variants on the S. pneumoniae genome on the x-axis (Manhattan plot). (B) Minus log-transformed p-value on the y-axis and sorted lowest to highest p-value for rare variant burden in genes (purple) and clusters of orthologous genes (COGs, blue) on the x-axis.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69244/elife-69244-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Minus log-transformed p-value on the y-axis and position of unitig and single-nucleotide polymorphism (SNP) variants on the S. pneumoniae genome on the x-axis (Manhattan plot). (B) Minus log-transformed p-value on the y-axis and sorted lowest to highest p-value for rare variant burden in genes (purple) and clusters of orthologous genes (COGs, blue) on the x-axis. Variants of interest have annotations added.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/69244/elife-69244-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Minus log-transformed p-value on the y-axis and position of unitig and single-nucleotide polymorphism (SNP) variants on the S. pneumoniae genome on the x-axis (Manhattan plot). (B) Minus log-transformed p-value on the y-axis and sorted lowest to highest p-value for rare variant burden in genes (purple) and clusters of orthologous genes (COGs, blue) on the x-axis. Variants of interest have annotations added.\n\nThe first is a nucleotide sequence marked by multiple unitigs of which the lowest has a p-value of 1.2 \u00d7 10\u20139 (Supplementary file 10). This sequence does not map to the S. pneumoniae D39V reference sequence (Altschul et al., 1990) For this reason, it is not visualized on the Manhattan plot, for which unitigs were mapped to the S. pneumoniae D39V reference sequence (Figure 4). Upon inspection of the individual sequences these unitigs are called from, we find them to map in the intergenic region between open-reading frames encoding the accessory Sec-dependent serine-rich glycoprotein adhesin and a MarR-like regulator, respectively. This region contains sequences resembling transposable elements and an open-reading frame encoding a transposase. The unitigs map upstream of the start codon of the accessory Sec-dependent serine-rich glycoprotein adhesin. The sequence is present in 169 out of 1282 (13%) sequences in the Dutch cohort and in 241 out of 3085 (8%) in the Maela cohort. The sequence is present in isolates dispersed over the phylogenetic tree and associated with carriage in children (Figure 2\u2014figure supplement 1). This protein is involved in adhesion to epithelial cells and biofilm formation (Chan et al., 2020; Middleton et al., 2021; Weiser et al., 2018). Given that this sequence lies just upstream of the start codon, it is plausible that variation of this sequence alters the expression of the Sec-dependent adhesin protein, and therefore affects carriage.\n\nThe second hit is a burden of rare variants in a gene for tryptophan synthase, trpB, that surpass the threshold for statistical significance at a p-value of 5.0 \u00d7 10\u20135. The variants are two frameshift variants of very low frequency. These result in a predicted dysfunctional trpB gene in 9 out of 1282 (1%) sequences in the Dutch cohort and in 12 out of 3073 (0.4%) sequences in the Maela cohort. This association of the trpB gene is likely to be an artifact of low allele frequency as we estimate we are only powered to detect variation in at least 5% of isolates.\n\n### Pilus gene presence does not determine carriage age independent of genetic background\n\nFinally, we investigated whether pneumococcal isolates containing a pilus gene preferentially colonize children in the Dutch cohort, as has been previously described in the Maela cohort (Binsker et al., 2020; Turner et al., 2012a). This study analyzed the Maela cohort and found that 934 out of 2557 (37%) isolates in children versus 95 out of 592 (16%) isolates in adults had pilus genes present. However, this association of pilus gene presence to carriage age was dependent on lineages within the population (Binsker et al., 2020). In the Dutch cohort, we found no evidence that host age was dependent on pilus gene presence (22 out of 208 [10%] in adults versus 129 out of 1099 [12%] in children). This was the case whether or not the genetic background was adjusted for (p=0.35, uncorrected for population structure, and p=0.69, corrected for population structure). Based on these findings, we suggest that the previously reported pilus-IgA1 association is not a universal explanation for difference in colonization between hosts of different ages.\n\n## Discussion\n\nThe age of the host is known to have an important effect on pneumococcal colonization (Croucher et al., 2018). Observational studies have demonstrated variation in serotype prevalence and carriage duration between infants and adults. Mechanistic studies in mice and humans have shown examples of differing immune responses depending both on host factors and pathogen factors. Findings from these studies include the observation that capsular polysaccharides (determinants of serotype) inhibit phagocytic clearance in animal models of upper respiratory tract colonization (Nelson et al., 2007). A pneumolysin-induced IL-1 response determined colonization persistence in an age-dependent manner Kuipers et al., 2018; and pilus-expressing strains were found to preferentially colonize children because of immune exclusion via secretory IgA in non-na\u00efve hosts (Binsker et al., 2020).\n\nBuilding upon these observations, we sought to investigate and quantify the contribution of pathogen genetic variation to carriage in infant versus adult hosts using a top-down approach to systematically test the effect of pathogen genome variation on niche specificity (with age as the niche). We used whole-genome sequencing and applied statistical genetic methods to two large S. pneumoniae carriage cohorts. We aimed to quantify the differing patterns of serotype and strain prevalence between the two age classes during carriage and search for other genetic factors associated with host age. We show evidence that bacterial genetic variability indeed influences predilection for host age, though the effect size appears to be highly variable between populations.\n\nStrain, or genetic background, explains 60% of the total heritability in the Dutch cohort, but only a minority in the Maela cohort. We found sequences in one region that map closely to the start codon of the accessory Sec-dependent serine-rich glycoprotein adhesin to be associated with carriage age independent of genetic background, in a meta-analysis of the two cohorts.\n\nIn previous bacterial GWAS of antimicrobial resistance (such as a single gene that causes antibiotic resistance), large monogenic effects have typically been found to have high heritabilities close to one, and the GWAS identify the causal variant precisely.(Earle et al., 2016; Chewapreecha et al., 2014b; Lees et al., 2020). When applied to virulence and carriage duration phenotypes, heritable effects have also been found, but these only explained some of the variation in the phenotype. These appeared to be caused by many weaker effects, known as a polygenic trait, not all of which could be detected using the relatively small cohorts available (Lees et al., 2017b; Lees et al., 2019a). Polygenic effects were also seen in another study on the contribution of genetic variation to disease severity of IPD (Cremers et al., 2019). We found similar results for host age heritability in our two cohorts.\n\nWe could not distinguish between genetic background or serotype being the primary effect due to their correlation. We did note a difference in effect size of serotype between the two cohorts, which may make it unlikely to be the single largest effect on host age. This difference in cohorts could be explained by strain/GPSC being the main and consistent effect on host age. As strains are different between cohorts and each serotype appears in multiple strains, combining them in different amounts would create different directions of effect for serotype.\n\nOur results are therefore suggestive of the following genetic architecture for association with host age. Primarily, whether a particular infant is colonized with a pneumococcus, when compared to an adult from the same population, is not due to the pathogen\u2019s genetics. This may be due to technical factors such as detectability related to pathogen load (which varies between adults and children, as well as between serotypes), different local forces of exposure, or other environmental or host factors such as diet (which may affect survival to trpB-defective pneumococci). However, some of the variation of these patterns can be explained by the pathogen\u2019s genetics. This appears largely to be driven by the fact that some strains and serotypes are more likely to be found in an infant or adult nasopharynx. In addition, there are likely to be many variants that each contribute a small amount to host age preference, but no single universally important gene or variant (a polygenic trait).\n\nFrom this study, we cannot say specifically which regions of the genome contain these small effects, but it is useful to rule out recently adaptive variants with individually strong effects. We did not replicate the association of piliated genomes in infant hosts in our newly sequenced cohort, further demonstrating important differences between populations. An important corollary of our work is on future pneumococcal vaccine optimization efforts. A promising approach for future vaccination strategies is to target the different age groups (Colijn et al., 2020). Whether these should consist of the dominant disease-causing serotypes overrepresented in carriage by each age group or whether there are age-specific pathogen proteins that should be included is an open question. Our study therefore suggests that targeting these age groups using serotype makeup alone would be sufficient and supports previous observational and modeling studies that advise targeting the serotype makeup in the vaccine at specific populations to maximize their effect.\n\nThree reasons can contribute to not finding individual effects: a high proportion of the heritability being caused by lineage effects; rare locus effects that could not be detected with the current sample size; and by sampling from a cohort with vaccinated children and unvaccinated adults and comparing with a cohort of unvaccinated children and adults, we had lower power due to the reduced overlap within and between cohorts in pan-genome content. Although differences in vaccination status between cohorts is one plausible explanation for interpreting our findings, we were unable to rule out other factors, for example, a population-specific host effect, geographical differences (Li et al., 2019), or the broad effects of different socioeconomic status between these cohorts. Pneumococcal factors such as differences in detectability due to carriage density could also influence results.\n\nOne important difference between our study cohorts was that children from the Dutch cohort were vaccinated, while children from the Maela cohort were not. While our findings demonstrate that vaccinated versus unvaccinated children were colonized with different bacterial serotypes and different sequence clusters, we observed differences in prevalence beyond just the serotypes included in the vaccine. Another difference between the cohorts was that adults from the Dutch cohort were males and females, while adults from the Maela cohort were females only.\n\nIn summary, we found an effect of pneumococcal genetics on carriage in children versus adult hosts, which varies between cohorts, and is likely primarily driven by serotype or strain (lineage) effects rather than large population-wide effects of individual genes.\n\n## Materials and methods\n\n### Cohort collection\n\nCohorts were selected based on availability. The Dutch cohort consists of parent\u2013child paired isolates of carriage samples from individuals obtained from three prospective carriage surveillance studies (Spijkerman et al., 2012; Bosch et al., 2016; van Beek et al., 2017). In these studies, carriage was assessed by conventional culture of nasopharyngeal or oropharyngeal swabs of vaccinated children (11 and 24 months of age) and their parents in 2009, 2010/2011, 2012, and 2013 (Spijkerman et al., 2012). All children were vaccinated with PCV-7 or PHiD-CV10 according to the Dutch national immunization program at 2, 3, 4, and 11 months of age. Vaccination status of the parents was unknown. Exclusion criteria are described elsewhere (Spijkerman et al., 2012; Bosch et al., 2016). Nasopharyngeal swabs were collected from all individuals and oropharyngeal swabs were collected from all adult subjects by trained study personnel using flexible, sterile swabs according to the standard procedures described by the World Health Organization (O Brien et al., 2003). After sampling, swabs were immediately placed in liquid Amies transport medium and transported to the microbiology laboratory at room temperature and cultured within 12 hr. Pneumococcal isolates were identified using conventional methods, as described previously (Trzci\u0144ski et al., 2013). The Maela cohort consists of samples from people from a camp for displaced persons on the Thailand\u2013Myanmar border, where monthly nasopharyngeal sampling was performed in unvaccinated children (0\u201324 months old) and their mothers. This cohort consists of mother\u2013child paired samples, some of which were sampled from the same mother or child over multiple time points, and unpaired samples from mothers and children. A subselection from this cohort was made to reflect the first sampled isolates for each mother\u2013child pair and unpaired samples to obtain isolates belonging to unique individuals. Procedures for collecting samples and generating whole-genome sequences have been previously described (Turner et al., 2012b; Chewapreecha et al., 2014b).\n\n### Informed consent\n\nWritten informed consent was obtained from both parents of each child participant and from all adult participants. Approval for the 2009 and 2012/2013 studies in children and their parents (NL24116 and NL40288/NTR3613) was received from the National Ethics Committee in the Netherlands (CCMO and METC Noord-Holland). For the 2010/2011 study, a National Ethics Committee in The Netherlands (STEG-METC, Almere) waived the requirement for EC approval. Informed consent for the Maela cohort is described elsewhere (Turner et al., 2012b). Studies were conducted in accordance with the European Statements for Good Clinical Practice and the Declaration of Helsinki of the World Medical Association.\n\n### Host age distribution in sequenced carriage cohorts\n\nIn the Dutch cohort, children had a median age of 23 months (interquartile range [IQR] 10\u201324 months). Adults had a median age of 35 (IQR 32\u201338) years. In the Maela cohort, the median age of children was 13 months (IQR 6\u201319 months), and for mothers (women of childbearing age) the exact age was unknown (Figure 1\u2014figure supplement 1; Turner et al., 2012b; Turner et al., 2013) In the Dutch cohort, all children were vaccinated with PCV-7 or PHiD-CV10. None of the members of the Maela cohort had received PCV.\n\n### DNA extraction and whole-genome sequencing\n\nFor the Dutch cohort, DNA extraction was performed with the Gentra Puregene Isolation Kit (QIAGEN), and quality control procedures were performed to determine yield and purity. Sequencing was performed using multiplexed libraries on the Illumina HiSeq platform to produce paired-end reads of 100 nucleotides in length (Illumina, San Diego, CA). Quality control involved analysis of contamination with Kraken (version 1.1.1)(Page et al., 2016), number and length of contigs, GC content, and N50 parameter. Sequences for which one or more of these quality control parameters deviated by more than 3 standard deviations from the mean were excluded. Sequences were assembled using a standard assembly pipeline (Page et al., 2016). Assembly statistics can be found in Supplementary file 11. Genome sequences were annotated with PROKKA, version 1.11 (Seemann, 2014). For the Maela cohort, DNA extraction, quality control, and whole-genome sequencing have been described elsewhere (Chewapreecha et al., 2014a). Serotypes were determined from the whole-genome sequence by in-house scripts (Croucher et al., 2011). Sequence clusters (strains) were defined as GPSC using PopPUNK (version 2.2.0) using a previously published reference database (Gladstone et al., 2019; Lees et al., 2019b). For 114 and 401 sequences in the Dutch and Maela cohorts, respectively, the GPSC could not be inferred due to low sequence quality.\n\n### Sequencing characteristics and quality control\n\nA total of 1361 bacterial isolates were sequenced as part of the Dutch cohort. During quality control, 32 sequences were excluded. Of these, 8 belonged to a different pathogen species, 9 had contamination, 14 were excluded based on the number of contigs or genome length, and 1 sequence failed annotation. For 47 sequences, host age was missing. The average length of the sequences was 2,105,305 nucleotides, with a standard deviation of 51,679 nucleotides. The mean number of contigs was 67, range 23\u2013226. The association analyses were performed on 1282 sequences in the Dutch cohort. Of these, 1052 were isolated from children and 230 from adults. There were 3085 sequences available from the Maela cohort. Quality control for this cohort was described previously (Chewapreecha et al., 2014a). There were 2503 sequences isolated from children and 582 from adults. In a subset from the Maela cohort, there were 762 isolates from unique hosts, of which 380 were paired isolates (190 from children and 190 from their mothers). For the determination of the frequency and odds ratio of serotype and GPSCs in children and adults, only the first isolate from each carriage episode for each child was included in the analysis. This resulted in 964 serotypes and 799 GPSCs (165 missing) in children, and 582 serotypes and 508 GPSCs (74 missing) in adults. For adults, chi-squared tests to calculate the p-value for association between serotype and strain with age were performed in R (version 4.0.0).\n\n### Phylogenetic tree\n\nA core genome for sequences from both cohorts together was generated with Roary (version 3.5.0, default parameters) using a 95% sequence identity threshold (Page et al., 2015). A maximum likelihood phylogeny of SNPs in the core genome of all sequenced isolates from both cohorts together was produced with IQ-TREE (version 1.6.5, including fast stochastic tree search algorithm, GTR+I+ G) assuming a general time-reversible model of nucleotide substitution with a discrete \u03b3-distributed rate heterogeneity and the allowance of invariable sites (Nguyen et al., 2015).\n\n### Heritability analysis\n\nBased on the kinship matrix and phenotypes, a heritability estimate was performed in limix (version 3.0.4 with default parameters) for both cohorts separately (Lippert et al., 2014). A confidence interval around the heritability estimate was determined with Accurate LMM-based heritability Bootstrap confidence Intervals (ALBI) based on the eigenvalue decomposed distances in the kinship matrix and the heritability estimate with the gglim package (version 0.0.1) in R (version 4.0.0) (Schweiger et al., 2018). To estimate the proportion of heritability attributable to serotype or strain alone, we calculated the heritability with limix, based on a kinship matrix treating serotypes or strains as genetic variants (Lees et al., 2017b; Lees et al., 2018). Again, a confidence interval around the heritability estimate was determined with ALBI (Schweiger et al., 2018). The code used to perform these analyses is available at https://github.com/philipkremer123/carriage_pneumo_heritability (Kremer, 2022a copy archived at swh:1:rev:73c4fa5c8d24d76945308b2616fbb5572d0c39b4) and https://github.com/johnlees/carriage-age-plots, (Kremer, 2022b copy archived at swh:1:rev:f9477d6b8382fee6926be7fd29b99afc15873fe8).\n\n### Determining bacterial genetic variation: Unitigs, SNPs, and COGs\n\nUsing the whole-genome sequence reads from both cohorts, we called SNPs, small insertions and deletions, and SNPs clustered as rare variants (deleterious variants at an allele frequency < 0.01) based on the S. pneumoniae D39V reference (CP027540) sequence using the Snippy pipeline (version 4.4.0, default parameters). We determined nonredundant sequence elements (unitigs) from assembled sequences in the Dutch cohort by counting nodes on compacted De Bruijn graphs with Unitig-counter (version 1.0.5, default minimum k-mer length of 31) (Jaillard et al., 2018). These unitigs were called in an indexed set of sequences from the Maela cohort with Unitig-caller (version 1.0.0, default parameters) (Lees et al., 2020). This gave us the distribution of sequences from both cohorts with consistent k-mer definitions, making it possible to run predictive models across cohorts. The same Roary run as was used to generate the core-genome alignment was used to extract accessory COGs (Page et al., 2015).\n\nThere were 9,966,794 unitigs counted from combined sequences in the Dutch cohort. Of these, 303,901 passed a minor allele frequency (MAF \u2013 the frequency of isolates a genetic sequence, or allele, is identified in) of 0.05 filter and had association testing performed. The 9,966,794 unitigs from the Dutch cohort were called in sequences from the Maela cohort to obtain 726,040 unitigs. Association testing in this group was done for 323,112 unitigs that were present at MAF 0.05 or more. Meta-analysis was performed on 251,733 overlapping unitigs. There were 313,143 SNPs called from sequences in the Dutch cohort, of which 43,556 passed MAF filtering. For the Maela cohort, 382,230 SNPs were called and 53,553 passed the MAF filter. For meta-analysis, 20,118 SNPs had overlapping positions and were included. There were 1997 rare variants called in the Dutch cohort, which were burdened in 538 genes. For the Maela cohort, these numbers were 1997 and 423. Together, 186 genes were included in the meta-analysis. Lastly, 2348 COGs were analyzed in the Dutch cohort and 4678 in the Maela cohort. In the meta-analysis, there were 627 overlapping COGs.\n\n### Genome-wide association study\n\nThe association analysis for SNPs, unitigs, rare variants, and COGs was run as a linear mixed model in Pyseer (version 1.1.1), with a minimum MAF of 0.05 (Lees et al., 2018). To correct for population structure, the model included a kinship matrix as covariates, which was calculated from the midpoint rooted phylogenetic tree. An association analysis not corrected for population structure was run with unitigs as sequence elements using a simple fixed-effects model in Pyseer. Rare variants were clustered in their corresponding gene and analyzed in a burden test. Meta-analysis was performed on summary statistics from the Pyseer results files with METAL (version released on August 28, 2018, default parameters) for each variant (Willer et al., 2010). A threshold for association of the phenotype with meta-analyzed variants was determined using a Bonferroni correction with alpha < 0.05 and the number of independent tests in the Dutch cohort, giving p<1.0 \u00d7 10\u20137 for unitigs, p<1.0 \u00d7 10\u20136 for SNPs, p<2.0 \u00d7 10\u20135 for COGs, and p<1.0 \u00d7 10\u20134 for rare variants. Unitigs were mapped to the S. pneumoniae D39V reference genome with bowtie-2 (version 2.2.3, with equal quality values and length of seed substrings 7 nucleotides). In accordance with the study populations in both cohorts, the phenotype was dichotomized as host age 0\u201324 months versus adult age. Manhattan plots were generated in R (version 3.5.1) with the package ggplot2 (version 3.1.0). Presence or absence of pilus genes was detected by nucleotide BLAST (version 2.6.0, default parameters) analysis. Pilus gene presence association to carriage age was calculated with a likelihood ratio test in Pyseer (version 1.1.1), corrected for population structure by including a kinship matrix as covariates.\n\nThe prediction analysis used the elastic net mode of Pyseer. This fitted an elastic net model with a default mixing parameter (0.0069 L1/L2) to the unitigs counted in each cohort using the strains from PopPUNK as folds to try and reduce overfitting (Lees et al., 2020). ROC curves for each cohort were drawn using the linear link output, with the R package pROC (version 1.16.2) using smoothing. To test inter-cohort prediction, the called unitigs from the other cohorts were used as predictors with the model from the opposing cohort.\n",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "bb7118e7-4fd6-4e8c-914b-31dddbf1d8ef",
+      "submission_id": "6d1c6a27-7fdc-4173-aafd-c59a71c6c244",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Bavesh D Kana, https://ror.org/03rp50x72 University of the Witwatersrand South Africa\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.69244.sa0](https://doi.org/10.7554/eLife.69244.sa0)\n\nStrain variability in bacterial infections is a confounding factor in the treatment and prevention of the associated diseases. Pneumococcal disease is widespread, and the current vaccine targets only a subset of circulating strains, with disease and vaccine efficacy likely varying with the age of the host. Using two large databases of pneumococcal genomes, this study explores the associations between genomic factors and the age of the human host. Ultimately, these data and related studies will establish whether and how vaccines should be differentially designed for children and the elderly. This work will be of interest to those working in bacterial infections and host\u2013pathogen genomics.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Bavesh D Kana, https://ror.org/03rp50x72 University of the Witwatersrand South Africa\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.69244.sa1](https://doi.org/10.7554/eLife.69244.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Pneumococcal genetic variability influences age-dependent bacterial carriage\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by Bavesh Kana as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Amelieke Cremers (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nMajor Comments:\n\n1. The Maela set is that these are mother-child samples. These seem like excellent sets to establish genomic features associated with age. Can the data be plotted for paired mother and child? At least for the serotype and sequence types that appear age-related.\n\n2. The work is performed to inform future pneumococcal vaccine formulations. The authors looked for genome-wide pneumococcal traits that made them more likely to colonize a human host of particular age category. Although the bioinformatics analyses are extensive and of high quality, the sampling strategy needs clarification before the conclusions can be evaluated.\n\n3. The manuscript may benefit from a hypothesis on what was expected. Were parents expected to acquire pneumococcal carriage from sources outside of their children? Or did the authors expect differences in viability or detectability of particular pneumococcal variants in adult carriage \u2013 i.e. a subset? What question does this study set up answer.\n\n4. Is it possible that the major finding is explained by sampling rather than a biological phenomenon? The eigenvalue decomposed distance in the kinship matrix is a measure to express the distance between isolates within a group. And the authors used this measure to signal overrepresentation of (undefined) genomic variants in either category. For infants, in the preceding serotype-based comparison only a first isolate of a carriage episode was included, discarding 75% of the (duplicate?) isolates. It is unclear whether repetitive isolates from adults and infants were included in the 'heritability analyses'. Could the authors clarify what samples of genomes were included in the kinship matrices, and how such choices may affect the representativity of results?\n\n5. Presentation of the results could be improved. While it is understandable that the sequencing data need to be compressed to a presentable format, essential information needs to be logically displayed for the sake of readers' understanding. As examples, the first section of the result section mentioned total numbers of isolates and serotypes from each cohort, but did not say how many of them were from children/adults. Figure 1 does have age information, but it is difficult to evaluate due to data transformation. Sequence clusters were mentioned without elaboration on what they mean. This style of data presentation may be readily comprehensive for sequencing gurus, but is hard to digest to the experimentalists like myself.\n\nOther comments that should be addressed:\n\n1. Supplementary Tables S8 and 9 would benefit from an annotations (or representative gene ID) associated with each of the regions.\n\n2. Paragraph starting line 214 and Figure 4: Given that genes were mapped to D39V, it would be very useful to provide an ID. Similarly, TableS10 has a column for Marker Name, but the IDs are not present only sequence segments.\n\n3. The description of the performed 'heritability analyses' requires more detail to enable the readership to repeat the analyses.\n\n4. The title of the manuscript may be reconsidered given the cross-sectional nature of the study performed.\n\n5. The discussion should contain a comparison to previous studies that performed pneumococcal GWAS on host age (f.e. doi.org/10.1093/cid/ciy417). The observed geographical differences in pneumococcal elements being associated with phenotype could also be related to previous studies reporting on this phenomenon (f.e. doi: 10.1038/s41467-018-07997-y).\n\n6. The authors may also want to discuss potential biases or alternative explanations for observed differences between infants and adults (f.e. detectability \u2013 while pneumococcal carriage density is lower in adults compared to children, serotype 3 generally grows with high load and is relatively more likely to be detected if present. Viability \u2013 Survival of trpB defective pneumococci may depend on age-dependent host factors like diet).\n\n7. Why do the authors present epidemiological arguments to prefer either serotypes or proteins as vaccine targets, while serotypes strongly co-occur with specific proteins across the pneumococcal population that could evenly be targeted? If they choose to do so, however, the report would benefit from concrete numbers to support the claim that based on this study serotypes would be a preferential vaccine target. Which vaccine-formulations would the authors recommend for the infant and parent populations studied here?\n",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "bb13f0c3-df1e-4048-914e-2c82e46f0e27",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C1",
+      "claim": "The characteristics of pneumococcal carriage vary between infants and adults.",
+      "claim_type": "EXPLICIT",
+      "source": "The characteristics of pneumococcal carriage vary between infants and adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a foundational premise of the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "f87c4dc2-6588-4429-a284-94a250417d56",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C2",
+      "claim": "Host immune factors have been shown to contribute to age-specific differences in pneumococcal carriage.",
+      "claim_type": "EXPLICIT",
+      "source": "Host immune factors have been shown to contribute to these age-specific differences, but the role of pathogen sequence variation is currently less well-known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by reference to existing literature on host immune factors.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "47998a94-adc2-4ba8-84a1-71dcfa139f1e",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C3",
+      "claim": "The role of pathogen sequence variation in age-specific differences in pneumococcal carriage is currently less well-known.",
+      "claim_type": "EXPLICIT",
+      "source": "Host immune factors have been shown to contribute to these age-specific differences, but the role of pathogen sequence variation is currently less well-known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a knowledge gap motivating the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "405ead6f-fc33-406d-8da4-23824a83fe98",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C4",
+      "claim": "Age-dependent colonization showed weak evidence of being heritable in the Dutch cohort (h2 = 0.10, 95% CI 0.00\u20130.69).",
+      "claim_type": "EXPLICIT",
+      "source": "Age-dependent colonization showed weak evidence of being heritable in the first cohort (h2 = 0.10, 95% CI 0.00\u20130.69) and stronger evidence in the second cohort (h2 = 0.56, 95% CI 0.23\u20130.87).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from heritability analysis performed on the Dutch cohort data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "6291ec8b-7fe1-43e0-ac9b-dadca0e04648",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C5",
+      "claim": "Age-dependent colonization showed stronger evidence of being heritable in the Maela cohort (h2 = 0.56, 95% CI 0.23\u20130.87).",
+      "claim_type": "EXPLICIT",
+      "source": "Age-dependent colonization showed weak evidence of being heritable in the first cohort (h2 = 0.10, 95% CI 0.00\u20130.69) and stronger evidence in the second cohort (h2 = 0.56, 95% CI 0.23\u20130.87).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from heritability analysis performed on the Maela cohort data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "5cf24d29-ffec-429e-853f-5e7b3b057b5c",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C6",
+      "claim": "Serotypes explained a proportion of the heritability in the Dutch cohort (h2serotype = 0.07, 95% CI 0.04\u20130.14).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that serotypes and genetic background (strain) explained a proportion of the heritability in the first cohort (h2serotype = 0.07, 95% CI 0.04\u20130.14 and h2GPSC = 0.06, 95% CI 0.03\u20130.13) and the second cohort (h2serotype = 0.11, 95% CI 0.05\u20130.21 and h2GPSC = 0.20, 95% CI 0.12\u20130.31).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from heritability analysis of serotype data in the Dutch cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "0fb1b282-8958-4e7b-aa0c-08b6700d1ce3",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C7",
+      "claim": "Genetic background (strain) explained a proportion of the heritability in the Dutch cohort (h2GPSC = 0.06, 95% CI 0.03\u20130.13).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that serotypes and genetic background (strain) explained a proportion of the heritability in the first cohort (h2serotype = 0.07, 95% CI 0.04\u20130.14 and h2GPSC = 0.06, 95% CI 0.03\u20130.13) and the second cohort (h2serotype = 0.11, 95% CI 0.05\u20130.21 and h2GPSC = 0.20, 95% CI 0.12\u20130.31).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from heritability analysis of strain data in the Dutch cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "ce459aa8-1edf-404e-8986-558695dd12ee",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C8",
+      "claim": "Serotypes explained a proportion of the heritability in the Maela cohort (h2serotype = 0.11, 95% CI 0.05\u20130.21).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that serotypes and genetic background (strain) explained a proportion of the heritability in the first cohort (h2serotype = 0.07, 95% CI 0.04\u20130.14 and h2GPSC = 0.06, 95% CI 0.03\u20130.13) and the second cohort (h2serotype = 0.11, 95% CI 0.05\u20130.21 and h2GPSC = 0.20, 95% CI 0.12\u20130.31).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from heritability analysis of serotype data in the Maela cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "9ebb5bbc-c1a5-4732-8fe4-c1ad5cb972c5",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C9",
+      "claim": "Genetic background (strain) explained a proportion of the heritability in the Maela cohort (h2GPSC = 0.20, 95% CI 0.12\u20130.31).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that serotypes and genetic background (strain) explained a proportion of the heritability in the first cohort (h2serotype = 0.07, 95% CI 0.04\u20130.14 and h2GPSC = 0.06, 95% CI 0.03\u20130.13) and the second cohort (h2serotype = 0.11, 95% CI 0.05\u20130.21 and h2GPSC = 0.20, 95% CI 0.12\u20130.31).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from heritability analysis of strain data in the Maela cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "8ba5ff0c-08df-4104-a937-fd1e45ea8d3d",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C10",
+      "claim": "A candidate association (p=1.2 \u00d7 10-9) was found upstream of an accessory Sec-dependent serine-rich glycoprotein adhesin in a meta-analysis of the cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "In a meta-analysis of these cohorts, we found one candidate association (p=1.2 \u00d7 10-9) upstream of an accessory Sec-dependent serine-rich glycoprotein adhesin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the genome-wide association meta-analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "c41657c5-db89-4c83-a79d-53ae2682682f",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C11",
+      "claim": "There is a small effect of pathogen genome variation on pneumococcal carriage between child and adult hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, while we did find a small effect of pathogen genome variation on pneumococcal carriage between child and adult hosts, this was variable between populations and does not appear to be caused by strong effects of individual genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the heritability and GWAS analyses performed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "38c4a1db-747b-4160-a676-8ecd3f93cf66",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C12",
+      "claim": "The effect of pathogen genome variation on pneumococcal carriage between child and adult hosts was variable between populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, while we did find a small effect of pathogen genome variation on pneumococcal carriage between child and adult hosts, this was variable between populations and does not appear to be caused by strong effects of individual genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the different heritability estimates between the Dutch and Maela cohorts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "bdb89d8b-6eb7-405a-aabf-6b05675e71f4",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C13",
+      "claim": "The effect of pathogen genome variation on pneumococcal carriage between child and adult hosts does not appear to be caused by strong effects of individual genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, while we did find a small effect of pathogen genome variation on pneumococcal carriage between child and adult hosts, this was variable between populations and does not appear to be caused by strong effects of individual genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of strong individual gene associations in the GWAS.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "46616063-09f0-49a3-a5e3-fee7cf1cfd38",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C14",
+      "claim": "Streptococcus pneumoniae is a common commensal of the human upper respiratory tract and nasopharynx.",
+      "claim_type": "EXPLICIT",
+      "source": "Streptococcus pneumoniae is a common commensal of the human upper respiratory tract and nasopharynx, but can also cause pneumonia and invasive diseases such as sepsis or meningitis (Bogaert et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Bogaert et al., 2004.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "ddf3e41e-2977-4eee-926e-5145f51a4f12",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C15",
+      "claim": "Streptococcus pneumoniae can cause pneumonia and invasive diseases such as sepsis or meningitis.",
+      "claim_type": "EXPLICIT",
+      "source": "Streptococcus pneumoniae is a common commensal of the human upper respiratory tract and nasopharynx, but can also cause pneumonia and invasive diseases such as sepsis or meningitis (Bogaert et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Bogaert et al., 2004.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "f6ab1540-0064-4e3e-876d-91eeb0d5d58f",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C16",
+      "claim": "Invasive pneumococcal disease (IPD) has a high mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "Invasive pneumococcal disease (IPD) has a high mortality, and the overall mortality rate from IPD is higher in extreme age ranges, such as infants and the elderly (Wahl et al., 2018; O Brien et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Wahl et al., 2018 and O Brien et al., 2009.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "d23416b5-16c4-4a4d-90e0-b6e97b51f57d",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C17",
+      "claim": "The overall mortality rate from IPD is higher in extreme age ranges, such as infants and the elderly.",
+      "claim_type": "EXPLICIT",
+      "source": "Invasive pneumococcal disease (IPD) has a high mortality, and the overall mortality rate from IPD is higher in extreme age ranges, such as infants and the elderly (Wahl et al., 2018; O Brien et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Wahl et al., 2018 and O Brien et al., 2009.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "0d24ac45-d772-4704-a73f-1889b258fc0e",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C18",
+      "claim": "In the Netherlands, pneumococcal carriage rates are higher in children than in adults, with a prevalence of up to 80% at 2 years of age.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Netherlands, pneumococcal carriage rates are higher in children than in adults, with a prevalence of up to 80% at 2 years of age (Wyllie et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Wyllie et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "aab7b89f-5abe-4fcd-8df9-9385a3ba5850",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C19",
+      "claim": "Host age is known to affect carriage prevalence and carriage duration of different serotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Host age is known to affect carriage prevalence and carriage duration of different serotypes (Stearns et al., 2015; Turner et al., 2012b), which is suggested to be driven by differences in immunity.(Wyllie et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Stearns et al., 2015 and Turner et al., 2012b.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "f94d2f1d-8b59-46fa-beef-077604647329",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C20",
+      "claim": "Age-dependent differences in carriage prevalence and duration are suggested to be driven by differences in immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Host age is known to affect carriage prevalence and carriage duration of different serotypes (Stearns et al., 2015; Turner et al., 2012b), which is suggested to be driven by differences in immunity.(Wyllie et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Wyllie et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "5e5c80f6-7b2f-44b0-ba81-524af4f54742",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C21",
+      "claim": "Studies in mice and humans showed evidence for age-dependent host\u2013pathogen interactions involving interleukin (IL)-1 response in reaction to the pore-forming pneumolysin (ply) toxin.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies in mice and humans showed evidence for age-dependent host\u2013pathogen interactions involving interleukin (IL)-1 response in reaction to the pore-forming pneumolysin (ply) toxin (Kuipers et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kuipers et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "7ac28d66-4fb8-4dc2-a369-e3bd53c2887c",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C22",
+      "claim": "IgA secretion is important in clearing S. pneumoniae from host upper respiratory tract mucosa.",
+      "claim_type": "EXPLICIT",
+      "source": "IgA secretion is important in clearing S. pneumoniae from host upper respiratory tract mucosa, and this secretion is more effective in previously exposed individuals, the adults (Binsker et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Binsker et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "e945dfbf-6547-4574-a454-195de6243377",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C23",
+      "claim": "IgA secretion is more effective in clearing S. pneumoniae in previously exposed individuals (adults).",
+      "claim_type": "EXPLICIT",
+      "source": "IgA secretion is important in clearing S. pneumoniae from host upper respiratory tract mucosa, and this secretion is more effective in previously exposed individuals, the adults (Binsker et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Binsker et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "df8ce93e-252d-46b8-a0cc-c97be13df041",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C24",
+      "claim": "Bacterial genetics has been shown to explain over 60% of the variability in carriage duration.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial genetics has been shown to explain over 60% of the variability in carriage duration, and specifically that the presence of a bacteriophage inserted in a mediator of genomic competence was associated with a decreased carriage duration (Lees et al., 2017b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Lees et al., 2017b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "c56f3d03-ffe3-415f-a1e2-8f1a9fcde82e",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C25",
+      "claim": "The presence of a bacteriophage inserted in a mediator of genomic competence was associated with a decreased carriage duration.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial genetics has been shown to explain over 60% of the variability in carriage duration, and specifically that the presence of a bacteriophage inserted in a mediator of genomic competence was associated with a decreased carriage duration (Lees et al., 2017b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Lees et al., 2017b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "c0a13ed8-75bc-4a54-a341-718830566d35",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C26",
+      "claim": "Pneumococci display over 100 diverse capsular serotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Pneumococci are highly genetically variable, displaying over 100 diverse capsular serotypes (Ganaie et al., 2020), which are a major antigen and the strongest predictor of carriage prevalence (Croucher et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Ganaie et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "c6bfccfa-4dbb-44ef-821f-0239620b76a7",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C27",
+      "claim": "Capsular serotypes are a major antigen and the strongest predictor of carriage prevalence.",
+      "claim_type": "EXPLICIT",
+      "source": "Pneumococci are highly genetically variable, displaying over 100 diverse capsular serotypes (Ganaie et al., 2020), which are a major antigen and the strongest predictor of carriage prevalence (Croucher et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Croucher et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "36a95009-f23d-4015-9e99-b8756522b33b",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C28",
+      "claim": "Pneumococcal conjugate vaccines (PCVs), targeting up to 13 capsule serotypes with high burden of invasive disease, decrease the rate of nasopharyngeal carriage and invasive disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Pneumococcal conjugate vaccines (PCVs), targeting up to 13 capsule serotypes with high burden of invasive disease, decrease the rate of nasopharyngeal carriage and invasive disease (Whitney et al., 2003; Poehling et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Whitney et al., 2003 and Poehling et al., 2006.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "7a8f3b51-74ab-4fe7-ae57-b4ce4f73a830",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C29",
+      "claim": "Vaccination with a PCV reduces the disease burden in the target population (young children).",
+      "claim_type": "EXPLICIT",
+      "source": "Besides a direct effect of vaccination with a PCV on the disease burden in the target population, that is, young children, it also reduces the disease burden caused by pneumococci with vaccine serotypes in the population not eligible for vaccination through indirect protection from colonization \u2013 reducing carriage rates in children reduces overall transmission of the most invasive serotypes (Croucher et al., 2018; Desai et al., 2015; von Gottberg et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Croucher et al., 2018; Desai et al., 2015; von Gottberg et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "2c2e8454-27c6-4eba-b521-a809d412de09",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C30",
+      "claim": "PCV vaccination reduces the disease burden caused by pneumococci with vaccine serotypes in the population not eligible for vaccination through indirect protection from colonization.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides a direct effect of vaccination with a PCV on the disease burden in the target population, that is, young children, it also reduces the disease burden caused by pneumococci with vaccine serotypes in the population not eligible for vaccination through indirect protection from colonization \u2013 reducing carriage rates in children reduces overall transmission of the most invasive serotypes (Croucher et al., 2018; Desai et al., 2015; von Gottberg et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Croucher et al., 2018; Desai et al., 2015; von Gottberg et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "25eb5e30-e96c-42df-bc1e-3c8baa3f8373",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C31",
+      "claim": "The introduction of PCV has resulted in the replacement of serotypes not covered by the vaccine.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the introduction of PCV has resulted in the replacement of serotypes not covered by the vaccine (Croucher et al., 2013; Corander et al., 2017), which in some countries reaches levels of invasive disease return towards pre-vaccine levels (Ladhani et al., 2018; Koelman et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Croucher et al., 2013 and Corander et al., 2017.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "517e5e95-a209-4a5d-ad34-5c46a3cf3fdf",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C32",
+      "claim": "In some countries, serotype replacement reaches levels of invasive disease return towards pre-vaccine levels.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the introduction of PCV has resulted in the replacement of serotypes not covered by the vaccine (Croucher et al., 2013; Corander et al., 2017), which in some countries reaches levels of invasive disease return towards pre-vaccine levels (Ladhani et al., 2018; Koelman et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ladhani et al., 2018 and Koelman et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "6c09b2c3-b0ff-437e-b46c-5e07ce75df25",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C33",
+      "claim": "The Dutch cohort was made up of 1329 S. pneumoniae isolates comprising 41 unique serotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "The Dutch cohort was made up of 1329 S. pneumoniae isolates comprising 41 unique serotypes (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct count from the sequenced samples in the Dutch cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "4cad4899-503a-4485-9991-88cf97d256a8",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C34",
+      "claim": "In the Dutch cohort, 689 (52%) isolates comprised seven serotypes: 19A (225; 17%), 11A (111; 8%), 6C (97; 7%), 23B (84; 6%), 10A (67; 5%), 16F (54; 4%), and 21 (51; 4%).",
+      "claim_type": "EXPLICIT",
+      "source": "Of these isolates, 689 (52%) comprised seven serotypes: 19A (225; 17%), 11A (111; 8%), 6C (97; 7%), 23B (84; 6%), 10A (67; 5%), 16F (54; 4%), and 21 (51; 4%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct count from the sequenced samples in the Dutch cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "f44404da-3558-4eda-8b81-080e62a5d9b9",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C35",
+      "claim": "In the Dutch cohort, a minority of isolates (101; 8%) belonged to one of the vaccine serotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "In this cohort of which the children were vaccinated, a minority of isolates (101; 8%) belonged to one of the vaccine serotypes (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct count from the sequenced samples in the Dutch cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "c872c06e-06a0-4ae2-8f44-a49ff78c86bf",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C36",
+      "claim": "A total of 3085 pneumococcal isolates of the Maela cohort comprised 64 unique serotype groups.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 3085 pneumococcal isolates of the Maela (unvaccinated) cohort comprised 64 unique serotype groups (Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct count from the sequenced samples in the Maela cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "a2a70c6c-66cf-4a33-b78d-547d04764f46",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C37",
+      "claim": "In the Maela cohort, 1631 (53%) isolates comprised five serotypes: non-typable (511; 17%), 19F (402, 13%), 23F (307, 10%), 6B (236; 8%), and 14 (175; 6%).",
+      "claim_type": "EXPLICIT",
+      "source": "Of these isolates, 1631 (53%) comprised five serotypes: non-typable (511; 17%), 19F (402, 13%), 23F (307, 10%), 6B (236; 8%), and 14 (175; 6%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct count from the sequenced samples in the Maela cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "de362783-0b8b-4679-8c65-cac1cd89a445",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C38",
+      "claim": "In the Dutch cohort, there were 59 unique sequence clusters of which the four largest were GPSC 4 (171; 13%), GPSC 3 (156; 12%), GPSC 7 (131; 10%), and GPSC 11 (119; 9%).",
+      "claim_type": "EXPLICIT",
+      "source": "In the Dutch cohort, there were 59 unique sequence clusters of which the four largest sequence clusters were GPSC 4 (171; 13%), GPSC 3 (156; 12%), GPSC 7 (131; 10%), and GPSC 11 (119; 9%) (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct count from the sequenced samples in the Dutch cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "b7413d93-1d4f-41b8-8e62-828eb9ea6cb1",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C39",
+      "claim": "There were 127 unique sequence clusters found in the Maela cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "There were 127 unique sequence clusters found in the Maela cohort (Supplementary file 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct count from the sequenced samples in the Maela cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "b0e12365-a308-4fbf-a7e7-8fb9db7e4cad",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C40",
+      "claim": "The four largest sequence clusters in the Maela cohort were GPSC 1 (352; 13%), GPSC 28 (190; 7%), GPSC 20 (168; 6%), and GPSC 42 (123; 5%).",
+      "claim_type": "EXPLICIT",
+      "source": "The four largest sequence clusters were GPSC 1 (352; 13%), GPSC 28 (190; 7%), GPSC 20 (168; 6%), and GPSC 42 (123; 5%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct count from the sequenced samples in the Maela cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "0499b22a-20c8-4ec7-a664-51a202e748ff",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C41",
+      "claim": "In the Dutch cohort, serotype 6C was overrepresented in children relative to adults (chi-squared test, p=0.02, not corrected for multiple testing).",
+      "claim_type": "EXPLICIT",
+      "source": "In the Dutch cohort, serotype 6C (chi-squared test, p=0.02, not corrected for multiple testing) and serotype 15B (p=0.02) were overrepresented in children relative to adults, serotype 3 was overrepresented in adults relative to children (p=2.5 \u00d7 10\u20135), while in the Maela cohort, serotype groups overrepresented in children were serotype 23F (chi-squared test, p=0.04) and serotype 6B (chi-squared test, p=0.04); while non-typeable serogroup was overrepresented in adults (chi-squared test, p=3.0 \u00d7 10\u20134) (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on chi-squared test results comparing serotype frequencies between age groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "cfddda1e-e9d3-456c-9eee-74f2120d8a69",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C42",
+      "claim": "In the Dutch cohort, serotype 15B was overrepresented in children relative to adults (p=0.02).",
+      "claim_type": "EXPLICIT",
+      "source": "In the Dutch cohort, serotype 6C (chi-squared test, p=0.02, not corrected for multiple testing) and serotype 15B (p=0.02) were overrepresented in children relative to adults, serotype 3 was overrepresented in adults relative to children (p=2.5 \u00d7 10\u20135), while in the Maela cohort, serotype groups overrepresented in children were serotype 23F (chi-squared test, p=0.04) and serotype 6B (chi-squared test, p=0.04); while non-typeable serogroup was overrepresented in adults (chi-squared test, p=3.0 \u00d7 10\u20134) (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on chi-squared test results comparing serotype frequencies between age groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "9cd2e1b7-c3bf-4078-9901-e0f8b17ad179",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C43",
+      "claim": "In the Dutch cohort, serotype 3 was overrepresented in adults relative to children (p=2.5 \u00d7 10\u20135).",
+      "claim_type": "EXPLICIT",
+      "source": "In the Dutch cohort, serotype 6C (chi-squared test, p=0.02, not corrected for multiple testing) and serotype 15B (p=0.02) were overrepresented in children relative to adults, serotype 3 was overrepresented in adults relative to children (p=2.5 \u00d7 10\u20135), while in the Maela cohort, serotype groups overrepresented in children were serotype 23F (chi-squared test, p=0.04) and serotype 6B (chi-squared test, p=0.04); while non-typeable serogroup was overrepresented in adults (chi-squared test, p=3.0 \u00d7 10\u20134) (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on chi-squared test results comparing serotype frequencies between age groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "6642ee11-1609-4966-8135-5e05347d7907",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C44",
+      "claim": "In the Maela cohort, serotype 23F was overrepresented in children (chi-squared test, p=0.04).",
+      "claim_type": "EXPLICIT",
+      "source": "In the Dutch cohort, serotype 6C (chi-squared test, p=0.02, not corrected for multiple testing) and serotype 15B (p=0.02) were overrepresented in children relative to adults, serotype 3 was overrepresented in adults relative to children (p=2.5 \u00d7 10\u20135), while in the Maela cohort, serotype groups overrepresented in children were serotype 23F (chi-squared test, p=0.04) and serotype 6B (chi-squared test, p=0.04); while non-typeable serogroup was overrepresented in adults (chi-squared test, p=3.0 \u00d7 10\u20134) (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on chi-squared test results comparing serotype frequencies between age groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "c5c31ed7-cda2-4c1b-92f2-6dd72d3d7e53",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C45",
+      "claim": "In the Maela cohort, serotype 6B was overrepresented in children (chi-squared test, p=0.04).",
+      "claim_type": "EXPLICIT",
+      "source": "In the Dutch cohort, serotype 6C (chi-squared test, p=0.02, not corrected for multiple testing) and serotype 15B (p=0.02) were overrepresented in children relative to adults, serotype 3 was overrepresented in adults relative to children (p=2.5 \u00d7 10\u20135), while in the Maela cohort, serotype groups overrepresented in children were serotype 23F (chi-squared test, p=0.04) and serotype 6B (chi-squared test, p=0.04); while non-typeable serogroup was overrepresented in adults (chi-squared test, p=3.0 \u00d7 10\u20134) (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on chi-squared test results comparing serotype frequencies between age groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "8766ddfe-53d4-414d-a3a6-4ccea86320db",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C46",
+      "claim": "In the Maela cohort, non-typeable serogroup was overrepresented in adults (chi-squared test, p=3.0 \u00d7 10\u20134).",
+      "claim_type": "EXPLICIT",
+      "source": "In the Dutch cohort, serotype 6C (chi-squared test, p=0.02, not corrected for multiple testing) and serotype 15B (p=0.02) were overrepresented in children relative to adults, serotype 3 was overrepresented in adults relative to children (p=2.5 \u00d7 10\u20135), while in the Maela cohort, serotype groups overrepresented in children were serotype 23F (chi-squared test, p=0.04) and serotype 6B (chi-squared test, p=0.04); while non-typeable serogroup was overrepresented in adults (chi-squared test, p=3.0 \u00d7 10\u20134) (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on chi-squared test results comparing serotype frequencies between age groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "679312fc-1014-4625-8be2-3590589133bd",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C47",
+      "claim": "None of the 20 largest groups of sequence clusters overlapped between the cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "None of the 20 largest groups of sequence clusters overlapped between the cohorts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of the sequence cluster distributions between cohorts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "0d0275d7-4cd4-48b6-bf2d-b2b05b86cbf8",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C48",
+      "claim": "In the Dutch cohort, only GPSC 11 was significantly associated with carriage in children (chi-squared test, p=0.03, not corrected for multiple testing).",
+      "claim_type": "EXPLICIT",
+      "source": "In the Dutch cohort, only GPSC 11 was significantly associated with carriage in children (chi-squared test, p=0.03, not corrected for multiple testing), while GPSC 12 (chi-squared test, p=1.2 \u00d7 10\u20134) and GPSC 38 (chi-squared test, p=2.1 \u00d7 10\u20134) were overrepresented in adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on chi-squared test results comparing strain frequencies between age groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "6dd45a7a-e28b-48d4-b41c-8b52e466b212",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C49",
+      "claim": "In the Dutch cohort, GPSC 12 was overrepresented in adults (chi-squared test, p=1.2 \u00d7 10\u20134).",
+      "claim_type": "EXPLICIT",
+      "source": "In the Dutch cohort, only GPSC 11 was significantly associated with carriage in children (chi-squared test, p=0.03, not corrected for multiple testing), while GPSC 12 (chi-squared test, p=1.2 \u00d7 10\u20134) and GPSC 38 (chi-squared test, p=2.1 \u00d7 10\u20134) were overrepresented in adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on chi-squared test results comparing strain frequencies between age groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "fd77e743-ee5c-48cb-a2a2-e11a68a7966c",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C50",
+      "claim": "In the Dutch cohort, GPSC 38 was overrepresented in adults (chi-squared test, p=2.1 \u00d7 10\u20134).",
+      "claim_type": "EXPLICIT",
+      "source": "In the Dutch cohort, only GPSC 11 was significantly associated with carriage in children (chi-squared test, p=0.03, not corrected for multiple testing), while GPSC 12 (chi-squared test, p=1.2 \u00d7 10\u20134) and GPSC 38 (chi-squared test, p=2.1 \u00d7 10\u20134) were overrepresented in adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on chi-squared test results comparing strain frequencies between age groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "e665da30-8d1d-4315-858e-00c38ee3c03b",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C51",
+      "claim": "In the Maela cohort, only sequence cluster GPSC 128 was overrepresented in children compared to adults (chi-squared test, p=0.04).",
+      "claim_type": "EXPLICIT",
+      "source": "In the Maela cohort, only sequence cluster GPSC 128 was overrepresented in children compared to adults (chi-squared test, p=0.04), while GPSC 20 (chi-squared test, p=7.0 \u00d7 10\u20133) and GPSC 74 (chi-squared test, p=0.04) were overrepresented in adults (Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on chi-squared test results comparing strain frequencies between age groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "e69098e3-ddf7-4ad2-8e0e-f9ea309f4082",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C52",
+      "claim": "In the Maela cohort, GPSC 20 was overrepresented in adults (chi-squared test, p=7.0 \u00d7 10\u20133).",
+      "claim_type": "EXPLICIT",
+      "source": "In the Maela cohort, only sequence cluster GPSC 128 was overrepresented in children compared to adults (chi-squared test, p=0.04), while GPSC 20 (chi-squared test, p=7.0 \u00d7 10\u20133) and GPSC 74 (chi-squared test, p=0.04) were overrepresented in adults (Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on chi-squared test results comparing strain frequencies between age groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "d1140c64-1cca-484d-ada0-1d2fffa619a3",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C53",
+      "claim": "In the Maela cohort, GPSC 74 was overrepresented in adults (chi-squared test, p=0.04).",
+      "claim_type": "EXPLICIT",
+      "source": "In the Maela cohort, only sequence cluster GPSC 128 was overrepresented in children compared to adults (chi-squared test, p=0.04), while GPSC 20 (chi-squared test, p=7.0 \u00d7 10\u20133) and GPSC 74 (chi-squared test, p=0.04) were overrepresented in adults (Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on chi-squared test results comparing strain frequencies between age groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "767cb97e-0ca4-4dfd-ac0f-531a1a3ba0f3",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C54",
+      "claim": "Pan-genomic variation could be used to predict host age to some degree of accuracy (area under the ROC curve 0.82 [Dutch cohort]; 0.91 [Maela cohort]).",
+      "claim_type": "EXPLICIT",
+      "source": "In both cohorts, pan-genomic variation could be used to predict host age to some degree of accuracy (area under the receiver-operating characteristic [ROC] curve 0.82 [Dutch cohort]; 0.91 [Maela cohort]), suggestive of some level of heritability and association of host age with strain (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on elastic net prediction models fitted to unitigs, as shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "daddceff-ab16-4135-9b90-e8bb44f26dad",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C55",
+      "claim": "Prediction between cohorts using a simple linear model failed as the genetic variants chosen as predictors were not found in the other cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "Prediction between cohorts using a simple linear model failed as the genetic variants chosen as predictors were not found in the other cohort \u2013 again highlighting the high level of genetic heterogeneity between cohorts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on attempting to use predictors from one cohort to predict age in the other cohort.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "b2c0dcac-2b50-4aae-8094-d2928689cb53",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C56",
+      "claim": "In the Dutch cohort, none of the unitigs, SNPs, COGs, or rare variants surpassed the threshold for multiple testing correction.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Dutch cohort, none of the unitigs, SNPs, COGs, or rare variants surpassed the threshold for multiple testing correction (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the GWAS results for the Dutch cohort shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "8c6246dc-051c-4583-b7ab-3a60261e0743",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C57",
+      "claim": "In the Maela cohort, unitigs in the ugpA gene surpassed the threshold for statistical significance.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Maela cohort, unitigs in the ugpA gene surpassed the threshold for statistical significance (Figure 4\u2014figure supplement 2), but these did not hold after meta-analysis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the GWAS results for the Maela cohort shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "ce6ecc80-d89d-405c-bff1-e9a37026939e",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C58",
+      "claim": "Unitigs in the ugpA gene that surpassed the threshold for statistical significance in the Maela cohort did not hold after meta-analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Maela cohort, unitigs in the ugpA gene surpassed the threshold for statistical significance (Figure 4\u2014figure supplement 2), but these did not hold after meta-analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparing the Maela cohort GWAS results with the meta-analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "948e8cd0-0610-440a-b017-6a76bc64dd1a",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C59",
+      "claim": "After meta-analysis, there were two hits that surpassed the threshold for statistical significance.",
+      "claim_type": "EXPLICIT",
+      "source": "After meta-analysis, there were two hits that surpassed the threshold for statistical significance (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the meta-analysis GWAS results shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "f875d0c5-9a8d-4ac6-919d-3dacebf81df7",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C60",
+      "claim": "The first significant hit is a nucleotide sequence marked by multiple unitigs with the lowest p-value of 1.2 \u00d7 10\u20139.",
+      "claim_type": "EXPLICIT",
+      "source": "The first is a nucleotide sequence marked by multiple unitigs of which the lowest has a p-value of 1.2 \u00d7 10\u20139 (Supplementary file 10).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the meta-analysis GWAS results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "148c3690-d49a-4861-8009-c040109da800",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C61",
+      "claim": "The significant nucleotide sequence does not map to the S. pneumoniae D39V reference sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "This sequence does not map to the S. pneumoniae D39V reference sequence (Altschul et al., 1990)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on mapping the unitigs to the reference genome.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "31861726-0556-418c-a418-f6cc51418b2e",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C62",
+      "claim": "The significant unitigs map in the intergenic region between open-reading frames encoding the accessory Sec-dependent serine-rich glycoprotein adhesin and a MarR-like regulator.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon inspection of the individual sequences these unitigs are called from, we find them to map in the intergenic region between open-reading frames encoding the accessory Sec-dependent serine-rich glycoprotein adhesin and a MarR-like regulator, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on manual inspection of the sequences containing the significant unitigs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "b46ee35c-6528-4b77-a385-e72bf160a95a",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C63",
+      "claim": "The intergenic region containing the significant unitigs contains sequences resembling transposable elements and an open-reading frame encoding a transposase.",
+      "claim_type": "EXPLICIT",
+      "source": "This region contains sequences resembling transposable elements and an open-reading frame encoding a transposase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on annotation of the region containing the significant unitigs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "92cbe07f-afb7-42ee-916c-2a312e865bf8",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C64",
+      "claim": "The significant unitigs map upstream of the start codon of the accessory Sec-dependent serine-rich glycoprotein adhesin.",
+      "claim_type": "EXPLICIT",
+      "source": "The unitigs map upstream of the start codon of the accessory Sec-dependent serine-rich glycoprotein adhesin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on mapping the unitigs relative to gene positions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "36dfd0ca-d6ba-4efe-b366-5c2680b82ffa",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C65",
+      "claim": "The significant sequence is present in 169 out of 1282 (13%) sequences in the Dutch cohort and in 241 out of 3085 (8%) in the Maela cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "The sequence is present in 169 out of 1282 (13%) sequences in the Dutch cohort and in 241 out of 3085 (8%) in the Maela cohort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on counting the presence of the sequence across samples in both cohorts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "157cfd5b-2f83-4b8c-af67-19c499091e56",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C66",
+      "claim": "The significant sequence is present in isolates dispersed over the phylogenetic tree and associated with carriage in children.",
+      "claim_type": "EXPLICIT",
+      "source": "The sequence is present in isolates dispersed over the phylogenetic tree and associated with carriage in children (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on mapping the sequence presence onto the phylogenetic tree shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "74890492-f6cf-462a-a0cf-83fd8e9d5eb3",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C67",
+      "claim": "The accessory Sec-dependent serine-rich glycoprotein adhesin protein is involved in adhesion to epithelial cells and biofilm formation.",
+      "claim_type": "EXPLICIT",
+      "source": "This protein is involved in adhesion to epithelial cells and biofilm formation (Chan et al., 2020; Middleton et al., 2021; Weiser et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Chan et al., 2020; Middleton et al., 2021; Weiser et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "30c2c0a8-fcee-4f0c-a87e-599f53a10772",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C68",
+      "claim": "Variation of the sequence upstream of the Sec-dependent adhesin protein start codon may alter the expression of the protein and affect carriage.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that this sequence lies just upstream of the start codon, it is plausible that variation of this sequence alters the expression of the Sec-dependent adhesin protein, and therefore affects carriage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the association finding based on the location of the variant.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "55fe8d6a-d6de-4070-bd48-fa355ca4d762",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C69",
+      "claim": "The second significant hit is a burden of rare variants in a gene for tryptophan synthase, trpB, with a p-value of 5.0 \u00d7 10\u20135.",
+      "claim_type": "EXPLICIT",
+      "source": "The second hit is a burden of rare variants in a gene for tryptophan synthase, trpB, that surpass the threshold for statistical significance at a p-value of 5.0 \u00d7 10\u20135.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the meta-analysis GWAS results for rare variant burden.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "5f3a6616-02ea-441a-81b7-32688b0539d9",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C70",
+      "claim": "The trpB variants are two frameshift variants of very low frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "The variants are two frameshift variants of very low frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on annotation of the rare variants in trpB.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "17a360e8-fa5b-4b99-bc72-08615fce62e8",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C71",
+      "claim": "The trpB frameshift variants result in a predicted dysfunctional trpB gene in 9 out of 1282 (1%) sequences in the Dutch cohort and in 12 out of 3073 (0.4%) sequences in the Maela cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "These result in a predicted dysfunctional trpB gene in 9 out of 1282 (1%) sequences in the Dutch cohort and in 12 out of 3073 (0.4%) sequences in the Maela cohort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on counting the presence of the frameshift variants across samples in both cohorts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "6770c8d5-cecb-4f02-a9dc-11bc841ef0b8",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C72",
+      "claim": "The association of the trpB gene is likely to be an artifact of low allele frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "This association of the trpB gene is likely to be an artifact of low allele frequency as we estimate we are only powered to detect variation in at least 5% of isolates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on power calculations and the observed allele frequency.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "fbad0461-1fb5-43a3-8fe6-97114aa5cba7",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C73",
+      "claim": "In the Dutch cohort, there was no evidence that host age was dependent on pilus gene presence (22 out of 208 [10%] in adults versus 129 out of 1099 [12%] in children).",
+      "claim_type": "EXPLICIT",
+      "source": "In the Dutch cohort, we found no evidence that host age was dependent on pilus gene presence (22 out of 208 [10%] in adults versus 129 out of 1099 [12%] in children).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on counting pilus gene presence across age groups in the Dutch cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "bdb00ba8-6835-4853-8fd1-ed5f95af1d27",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C74",
+      "claim": "In the Dutch cohort, pilus gene presence was not associated with host age whether or not the genetic background was adjusted for (p=0.35, uncorrected for population structure, and p=0.69, corrected for population structure).",
+      "claim_type": "EXPLICIT",
+      "source": "This was the case whether or not the genetic background was adjusted for (p=0.35, uncorrected for population structure, and p=0.69, corrected for population structure).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on statistical tests of pilus gene presence association with age in the Dutch cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "23fe3aca-de01-4983-affd-d68413839830",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C75",
+      "claim": "A previous study found that 934 out of 2557 (37%) isolates in children versus 95 out of 592 (16%) isolates in adults had pilus genes present in the Maela cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "This study analyzed the Maela cohort and found that 934 out of 2557 (37%) isolates in children versus 95 out of 592 (16%) isolates in adults had pilus genes present.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to previous findings from Binsker et al., 2020 and Turner et al., 2012a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "90c1e673-95d8-47a3-a725-9f79022118fe",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C76",
+      "claim": "The association of pilus gene presence to carriage age in the Maela cohort was dependent on lineages within the population.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this association of pilus gene presence to carriage age was dependent on lineages within the population (Binsker et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Binsker et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "cdb0ea84-110c-40d4-ad09-8da41b981fbd",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C77",
+      "claim": "The previously reported pilus-IgA1 association is not a universal explanation for difference in colonization between hosts of different ages.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these findings, we suggest that the previously reported pilus-IgA1 association is not a universal explanation for difference in colonization between hosts of different ages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the lack of pilus association in the Dutch cohort.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "1dad7dbf-02a7-43cf-8033-17b5a5a0292d",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C78",
+      "claim": "Strain, or genetic background, explains 60% of the total heritability in the Dutch cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "Strain, or genetic background, explains 60% of the total heritability in the Dutch cohort, but only a minority in the Maela cohort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the heritability estimates for strain (h2GPSC = 0.06) relative to total heritability (h2 = 0.10) in the Dutch cohort.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "327e993b-cdca-414e-8888-b13fac5ced17",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C79",
+      "claim": "Strain, or genetic background, explains only a minority of the total heritability in the Maela cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "Strain, or genetic background, explains 60% of the total heritability in the Dutch cohort, but only a minority in the Maela cohort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the heritability estimates for strain (h2GPSC = 0.20) relative to total heritability (h2 = 0.56) in the Maela cohort.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "a66d27b7-c2dd-4f2d-b0ec-aca794a99542",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C80",
+      "claim": "Whether a particular infant is colonized with a pneumococcus, when compared to an adult from the same population, is not primarily due to the pathogen's genetics.",
+      "claim_type": "EXPLICIT",
+      "source": "Primarily, whether a particular infant is colonized with a pneumococcus, when compared to an adult from the same population, is not due to the pathogen's genetics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the overall findings of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "f62433b2-40f9-47e0-9af6-9cf25866f60e",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C81",
+      "claim": "Some of the variation in colonization patterns between infants and adults can be explained by the pathogen's genetics.",
+      "claim_type": "EXPLICIT",
+      "source": "However, some of the variation of these patterns can be explained by the pathogen's genetics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the heritability estimates found in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "d753e423-c415-4004-b2f0-4afa076e6dea",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C82",
+      "claim": "Some strains and serotypes are more likely to be found in an infant or adult nasopharynx.",
+      "claim_type": "EXPLICIT",
+      "source": "This appears largely to be driven by the fact that some strains and serotypes are more likely to be found in an infant or adult nasopharynx.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the serotype and strain frequency differences observed between age groups.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "56a7141c-e114-4772-9beb-d5ced25af443",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C83",
+      "claim": "There are likely to be many variants that each contribute a small amount to host age preference (a polygenic trait).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, there are likely to be many variants that each contribute a small amount to host age preference, but no single universally important gene or variant (a polygenic trait).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the heritability findings and lack of strong individual gene associations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "af8d1b07-4758-441f-b15e-4bf604270def",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C84",
+      "claim": "There is no single universally important gene or variant for host age preference in pneumococcal carriage.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, there are likely to be many variants that each contribute a small amount to host age preference, but no single universally important gene or variant (a polygenic trait).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the lack of strong individual gene associations in the GWAS.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "6f761bb9-ed93-47bd-8227-89556ae714b0",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C85",
+      "claim": "Targeting age groups using serotype makeup alone would be sufficient for future pneumococcal vaccination strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study therefore suggests that targeting these age groups using serotype makeup alone would be sufficient and supports previous observational and modeling studies that advise targeting the serotype makeup in the vaccine at specific populations to maximize their effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the study findings and supported by previous studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "acd02135-0d56-4bfe-995e-3a2674081260",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C86",
+      "claim": "The Dutch cohort consists of parent\u2013child paired isolates of carriage samples from individuals obtained from three prospective carriage surveillance studies.",
+      "claim_type": "EXPLICIT",
+      "source": "The Dutch cohort consists of parent\u2013child paired isolates of carriage samples from individuals obtained from three prospective carriage surveillance studies (Spijkerman et al., 2012; Bosch et al., 2016; van Beek et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the source of the Dutch cohort samples with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "5cc05d6d-fd62-412d-a6e6-d5d0a8d7a5e6",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C87",
+      "claim": "In the Dutch cohort studies, carriage was assessed by conventional culture of nasopharyngeal or oropharyngeal swabs of vaccinated children (11 and 24 months of age) and their parents in 2009, 2010/2011, 2012, and 2013.",
+      "claim_type": "EXPLICIT",
+      "source": "In these studies, carriage was assessed by conventional culture of nasopharyngeal or oropharyngeal swabs of vaccinated children (11 and 24 months of age) and their parents in 2009, 2010/2011, 2012, and 2013 (Spijkerman et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methods used in the Dutch cohort studies with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "0a75c772-0350-46f4-80fc-e6ee82d0de3f",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C88",
+      "claim": "All children in the Dutch cohort were vaccinated with PCV-7 or PHiD-CV10 according to the Dutch national immunization program at 2, 3, 4, and 11 months of age.",
+      "claim_type": "EXPLICIT",
+      "source": "All children were vaccinated with PCV-7 or PHiD-CV10 according to the Dutch national immunization program at 2, 3, 4, and 11 months of age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the vaccination status of children in the Dutch cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "ef6716ad-a5c3-451b-bcd6-fb2e9701cbe1",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C89",
+      "claim": "Vaccination status of the parents in the Dutch cohort was unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "Vaccination status of the parents was unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation in the data for the Dutch cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "e658b7cb-0da6-4584-8b38-48d0a74e59b9",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C90",
+      "claim": "The Maela cohort consists of samples from people from a camp for displaced persons on the Thailand\u2013Myanmar border, where monthly nasopharyngeal sampling was performed in unvaccinated children (0\u201324 months old) and their mothers.",
+      "claim_type": "EXPLICIT",
+      "source": "The Maela cohort consists of samples from people from a camp for displaced persons on the Thailand\u2013Myanmar border, where monthly nasopharyngeal sampling was performed in unvaccinated children (0\u201324 months old) and their mothers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the source of the Maela cohort samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "2da4c879-4d40-44d5-a04c-af117066fc35",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C91",
+      "claim": "In the Dutch cohort, children had a median age of 23 months (interquartile range [IQR] 10\u201324 months).",
+      "claim_type": "EXPLICIT",
+      "source": "In the Dutch cohort, children had a median age of 23 months (interquartile range [IQR] 10\u201324 months).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic of the Dutch cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "64782b65-28bd-41a5-94c9-6988d409dd20",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C92",
+      "claim": "In the Dutch cohort, adults had a median age of 35 (IQR 32\u201338) years.",
+      "claim_type": "EXPLICIT",
+      "source": "Adults had a median age of 35 (IQR 32\u201338) years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic of the Dutch cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "dcbea304-89df-4a07-96ad-5ff024390cdb",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C93",
+      "claim": "In the Maela cohort, the median age of children was 13 months (IQR 6\u201319 months).",
+      "claim_type": "EXPLICIT",
+      "source": "In the Maela cohort, the median age of children was 13 months (IQR 6\u201319 months), and for mothers (women of childbearing age) the exact age was unknown (Figure 1\u2014figure supplement 1; Turner et al., 2012b; Turner et al., 2013)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a descriptive statistic of the Maela cohort with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "be8f64af-abe2-4302-9670-60d764e27f5e",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C94",
+      "claim": "In the Maela cohort, for mothers (women of childbearing age) the exact age was unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Maela cohort, the median age of children was 13 months (IQR 6\u201319 months), and for mothers (women of childbearing age) the exact age was unknown (Figure 1\u2014figure supplement 1; Turner et al., 2012b; Turner et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation in the data for the Maela cohort with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "0e765119-1435-4713-a2ef-96b954bd3f4b",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C95",
+      "claim": "In the Dutch cohort, all children were vaccinated with PCV-7 or PHiD-CV10.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Dutch cohort, all children were vaccinated with PCV-7 or PHiD-CV10.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the vaccination status of children in the Dutch cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "04abaf43-3d8a-48e5-a917-8fde2be7f1b8",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C96",
+      "claim": "None of the members of the Maela cohort had received PCV.",
+      "claim_type": "EXPLICIT",
+      "source": "None of the members of the Maela cohort had received PCV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the vaccination status of the Maela cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "dbae13e6-a480-44cb-833c-ca3aff629422",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C97",
+      "claim": "A total of 1361 bacterial isolates were sequenced as part of the Dutch cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 1361 bacterial isolates were sequenced as part of the Dutch cohort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a count of the sequenced samples in the Dutch cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "70e1ef30-c4a8-4160-9920-c13e2439e095",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C98",
+      "claim": "During quality control of the Dutch cohort, 32 sequences were excluded.",
+      "claim_type": "EXPLICIT",
+      "source": "During quality control, 32 sequences were excluded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the quality control process for the Dutch cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "1fc4a4f5-7ab5-455e-a6a5-eefd41cdd0dd",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C99",
+      "claim": "Of the excluded sequences in the Dutch cohort, 8 belonged to a different pathogen species, 9 had contamination, 14 were excluded based on the number of contigs or genome length, and 1 sequence failed annotation.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, 8 belonged to a different pathogen species, 9 had contamination, 14 were excluded based on the number of contigs or genome length, and 1 sequence failed annotation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the reasons for sequence exclusion in the Dutch cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "ec88970e-7bc2-47e3-b071-dd340e7baec5",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C100",
+      "claim": "For 47 sequences in the Dutch cohort, host age was missing.",
+      "claim_type": "EXPLICIT",
+      "source": "For 47 sequences, host age was missing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a data limitation in the Dutch cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "712a878c-067f-434d-b183-4312dce9abc8",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C101",
+      "claim": "The average length of the sequences in the Dutch cohort was 2,105,305 nucleotides, with a standard deviation of 51,679 nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "The average length of the sequences was 2,105,305 nucleotides, with a standard deviation of 51,679 nucleotides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic of the sequence quality in the Dutch cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "47b12787-7b1e-4569-b545-5b3349544a5d",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C102",
+      "claim": "The mean number of contigs in the Dutch cohort was 67, range 23\u2013226.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean number of contigs was 67, range 23\u2013226.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic of the sequence quality in the Dutch cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "ac6f865e-2f25-4483-b0b4-59736bf49bf5",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C103",
+      "claim": "The association analyses were performed on 1282 sequences in the Dutch cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "The association analyses were performed on 1282 sequences in the Dutch cohort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the final sample size for analysis in the Dutch cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "50bbc813-4161-4646-ae16-0bf4acc75544",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C104",
+      "claim": "Of the 1282 sequences analyzed in the Dutch cohort, 1052 were isolated from children and 230 from adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, 1052 were isolated from children and 230 from adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the age distribution of the analyzed samples in the Dutch cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "c7b002be-92ae-4095-9096-b2c98e493c95",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C105",
+      "claim": "There were 3085 sequences available from the Maela cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "There were 3085 sequences available from the Maela cohort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample size for the Maela cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "6dbb45a7-46fb-4188-aac4-0bfef2631b0f",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "claim_id": "C106",
+      "claim": "There were 2503 sequences isolated from children and 582 from adults in the Maela cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "There were 2503 sequences isolated from children and 582 from adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the age distribution of the samples in the Maela cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "be63a4e8-9fa8-4e62-ac42-60c807cf1caf",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study addresses a knowledge gap regarding the role of pathogen sequence variation in age-specific differences in pneumococcal carriage, building on established knowledge that host immune factors contribute to these differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 establish the scientific context and motivation for the study. C1 and C2 are supported by existing literature (KNOWLEDGE and CITATION evidence), while C3 identifies a legitimate knowledge gap that the study aims to address.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "dfcc7bd7-7322-4f09-80ef-b4be7adcf4dd",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Age-dependent colonization showed weak heritability in the Dutch cohort (h\u00b2 = 0.10, 95% CI 0.00\u20130.69) but stronger heritability in the Maela cohort (h\u00b2 = 0.56, 95% CI 0.23\u20130.87).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 report heritability estimates from statistical analysis of genomic data. The wide confidence interval for the Dutch cohort (overlapping zero) appropriately reflects weak evidence, while the Maela cohort shows stronger evidence. The methods describe appropriate heritability analysis using limix with ALBI confidence intervals.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "796c25b7-a07b-4351-9210-db9b3d9a2ab2",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Serotypes and genetic background (strain/GPSC) explained portions of heritability in both cohorts, with h\u00b2serotype = 0.07 and h\u00b2GPSC = 0.06 in the Dutch cohort, and h\u00b2serotype = 0.11 and h\u00b2GPSC = 0.20 in the Maela cohort.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C9 decompose the total heritability into components attributable to serotype and strain. The methods describe appropriate analysis treating serotypes/strains as genetic variants in the kinship matrix. The estimates are consistent with the total heritability values and show serotype and strain explain only partial heritability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "ab7b3c46-4658-4010-a0a8-5672816737d3",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A genome-wide association meta-analysis identified a significant association (p=1.2 \u00d7 10\u207b\u2079) with unitigs mapping upstream of an accessory Sec-dependent serine-rich glycoprotein adhesin gene, present in 13% of Dutch and 8% of Maela isolates and dispersed across the phylogenetic tree.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C60-C66 describe the primary GWAS finding. The p-value surpasses the stated Bonferroni threshold (p<1.0 \u00d7 10\u207b\u2077 for unitigs), the variant is present at reasonable frequency (8-13%), and phylogenetic dispersion supports it arose independently on multiple backgrounds. The methods describe appropriate GWAS with population structure correction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "7592fbff-3b49-4ea9-8d4c-c2754a2f967d",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The identified variant lies upstream of a Sec-dependent adhesin involved in epithelial cell adhesion and biofilm formation, and may alter protein expression affecting carriage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C67 is supported by citations establishing the protein's function. However, C68 is explicitly speculative (SPECULATION evidence type) about the functional consequence of the upstream variant. No experimental validation of altered expression or functional impact is provided, making the mechanistic interpretation uncertain.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "edbf4cc0-ae60-4ac8-af5f-ec018204b89f",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A rare variant burden in trpB (tryptophan synthase) showed statistical significance (p=5.0 \u00d7 10\u207b\u2075), but this is likely an artifact due to very low allele frequency (0.4-1%) below the study's detection power threshold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Claims C69-C72 describe a second GWAS hit, but C72 explicitly states this is likely an artifact. The p-value (5.0 \u00d7 10\u207b\u2075) is above the stated threshold for rare variants (p<1.0 \u00d7 10\u207b\u2074), and the authors acknowledge being powered only for variants at \u22655% frequency while these are at 0.4-1%. This self-identified artifact should not be considered a supported finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "63f88286-0ecd-4c1a-b68e-e5544ded37fe",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Individual cohort GWAS analyses found no significant associations in the Dutch cohort and ugpA associations in the Maela cohort that did not replicate in meta-analysis, with only two hits surviving meta-analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59 describe the GWAS results systematically. The lack of significant findings in individual cohorts and failure of the Maela ugpA signal to replicate demonstrates appropriate stringency. The meta-analysis approach combining cohorts is methodologically sound for increasing power while controlling for population-specific effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "67842c95-1b6e-4a9d-b9df-6a602f794bda",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Pan-genomic variation predicted host age with moderate accuracy within cohorts (AUC 0.82 Dutch, 0.91 Maela), but cross-cohort prediction failed due to lack of shared genetic variants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C55 report prediction analysis results. The within-cohort AUC values indicate moderate predictive ability consistent with the heritability estimates. The failure of cross-cohort prediction appropriately highlights the genetic heterogeneity between populations, which is a key finding supported by the phylogenetic analysis (C47) and methodological descriptions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "dcb004f6-1f18-4c7b-a60a-45251135b8bb",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Pilus gene presence was not associated with host age in the Dutch cohort (p=0.35 uncorrected, p=0.69 corrected), contrasting with previous findings in the Maela cohort where the association was lineage-dependent, suggesting pilus-IgA interaction is not a universal explanation for age-dependent colonization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C77 report negative findings for pilus genes in the Dutch cohort with appropriate statistical testing. The contrast with prior Maela findings (C75-C76, supported by citations) and the inference that this mechanism is not universal (C77) is reasonable given the data. The lack of association is properly tested with and without population structure correction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "426067a3-8288-4c6d-8d78-34850f24aeb8",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The Dutch cohort comprised 1329 isolates with 41 serotypes (52% in 7 dominant serotypes, 8% vaccine types) and 59 GPSCs, while the Maela cohort comprised 3085 isolates with 64 serotypes (53% in 5 dominant serotypes) and 127 GPSCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C40 provide descriptive statistics of the cohort compositions. These are direct counts from sequenced data with appropriate quality control described in the methods. The differences between cohorts (vaccinated vs. unvaccinated, different dominant serotypes/strains) are important for interpreting the comparative analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "4e79704a-3900-4c0c-8df3-e7187b480f48",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Specific serotypes showed age-dependent prevalence differences in each cohort (e.g., serotype 3 in Dutch adults p=2.5\u00d710\u207b\u2075, non-typeable in Maela adults p=3.0\u00d710\u207b\u2074), with no overlap in the 20 largest sequence clusters between cohorts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C41-C46 report chi-squared test results, but explicitly state these are NOT corrected for multiple testing. With 41-64 serotypes tested, multiple testing correction is essential. Some p-values (e.g., C41, C42, C44, C45) would likely not survive correction. C47 (no GPSC overlap) is supported and highlights genetic heterogeneity, but the serotype associations require correction for proper interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "12474939-ac87-4120-953d-44e892fb5474",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Specific GPSCs showed age-dependent prevalence differences, with GPSC 11 associated with children in the Dutch cohort (p=0.03) and GPSCs 12 and 38 with adults (p=1.2\u00d710\u207b\u2074, p=2.1\u00d710\u207b\u2074), while in Maela, GPSC 128 was associated with children (p=0.04) and GPSCs 20 and 74 with adults.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C48-C53 report strain associations, but C48 explicitly notes lack of multiple testing correction. With 59-127 GPSCs tested, correction is essential. The stronger p-values for Dutch adult GPSCs (C49, C50) might survive correction, but the marginal p-values (C48, C51, C53 at p=0.03-0.04) likely would not. These associations support the heritability findings but require proper statistical correction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "ac5951d3-c4b4-4c47-8001-2b76ae9ea1a6",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Strain (genetic background) explains 60% of total heritability in the Dutch cohort but only a minority in the Maela cohort.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C79 calculate the proportion of heritability explained by strain. For Dutch: h\u00b2GPSC/h\u00b2 = 0.06/0.10 = 60% (C78). For Maela: h\u00b2GPSC/h\u00b2 = 0.20/0.56 = 36% (C79, described as 'minority'). These calculations are mathematically correct given the reported heritability estimates (C4-C9), though the wide confidence intervals (especially for Dutch h\u00b2) should be noted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "db2f6c5a-4491-4997-b359-1838407557f9",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study concludes there is a small, population-variable effect of pathogen genome variation on age-dependent carriage, driven primarily by strain/serotype differences rather than strong individual gene effects, consistent with a polygenic architecture.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C13 and C80-C84 synthesize the study's findings into overall conclusions. These are appropriately supported by the heritability analyses (weak to moderate h\u00b2), the limited GWAS findings (one replicated association), the failure to find strong individual gene effects, and the population differences between cohorts. The polygenic interpretation (C83-C84) is reasonable given the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "6eedd51b-06b2-4569-9429-5719d4cb4106",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study recommends that future pneumococcal vaccination strategies targeting age groups should focus on serotype composition alone, supported by the findings and previous modeling studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C85 is a recommendation based on the study's findings that serotype/strain explain most heritable variation and individual genes show weak effects. This is a reasonable inference from the data, though it represents a policy recommendation rather than a direct experimental finding. The claim appropriately cites supporting prior work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "d35d8f31-eff1-4036-882c-3d31ff77db29",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The study cohorts consisted of vaccinated Dutch children (median 23 months) and parents (median 35 years) sampled 2009-2013, and unvaccinated Maela children (median 13 months) and mothers from Thailand-Myanmar border, with important differences in vaccination status and age distributions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C96 describe cohort characteristics and study design. These are supported by citations to the original cohort studies and represent factual descriptions of the samples. The differences between cohorts (vaccination status, age distributions, geographic origin) are important confounders acknowledged in the discussion and affect interpretation of comparative results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "5e726a4d-fa60-46ee-a7ef-b5118436518b",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "After quality control, 1282 Dutch sequences (1052 children, 230 adults) and 3085 Maela sequences (2503 children, 582 adults) were analyzed, with appropriate exclusions for contamination, quality, and missing data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C106 describe sample processing and quality control. The QC procedures (contamination checks, assembly quality metrics) are standard and appropriate. The final sample sizes are adequate for the analyses performed, though the imbalance between children and adults (especially in the Dutch cohort: 1052 vs 230) may affect power for detecting age-specific effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    },
+    {
+      "id": "d0d551c9-4a15-43da-99d4-e9212e34ceea",
+      "content_id": "4236d4a9-1eae-4322-9a97-8dd402e0dfc7",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The introduction establishes background knowledge on S. pneumoniae as a commensal and pathogen, age-dependent carriage patterns, immune mechanisms, bacterial genetic contributions to carriage, serotype diversity, and vaccine effects including serotype replacement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C32 provide background context supported by appropriate citations to established literature. These represent accepted knowledge in the field (KNOWLEDGE and CITATION evidence types) and appropriately frame the study's scientific context. No novel claims are made in this background section.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:32:32.842883Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "bb13f0c3-df1e-4048-914e-2c82e46f0e27",
+      "result_id": "be63a4e8-9fa8-4e62-ac42-60c807cf1caf"
+    },
+    {
+      "claim_id": "f87c4dc2-6588-4429-a284-94a250417d56",
+      "result_id": "be63a4e8-9fa8-4e62-ac42-60c807cf1caf"
+    },
+    {
+      "claim_id": "47998a94-adc2-4ba8-84a1-71dcfa139f1e",
+      "result_id": "be63a4e8-9fa8-4e62-ac42-60c807cf1caf"
+    },
+    {
+      "claim_id": "405ead6f-fc33-406d-8da4-23824a83fe98",
+      "result_id": "dfcc7bd7-7322-4f09-80ef-b4be7adcf4dd"
+    },
+    {
+      "claim_id": "6291ec8b-7fe1-43e0-ac9b-dadca0e04648",
+      "result_id": "dfcc7bd7-7322-4f09-80ef-b4be7adcf4dd"
+    },
+    {
+      "claim_id": "5cf24d29-ffec-429e-853f-5e7b3b057b5c",
+      "result_id": "796c25b7-a07b-4351-9210-db9b3d9a2ab2"
+    },
+    {
+      "claim_id": "0fb1b282-8958-4e7b-aa0c-08b6700d1ce3",
+      "result_id": "796c25b7-a07b-4351-9210-db9b3d9a2ab2"
+    },
+    {
+      "claim_id": "ce459aa8-1edf-404e-8986-558695dd12ee",
+      "result_id": "796c25b7-a07b-4351-9210-db9b3d9a2ab2"
+    },
+    {
+      "claim_id": "9ebb5bbc-c1a5-4732-8fe4-c1ad5cb972c5",
+      "result_id": "796c25b7-a07b-4351-9210-db9b3d9a2ab2"
+    },
+    {
+      "claim_id": "8ba5ff0c-08df-4104-a937-fd1e45ea8d3d",
+      "result_id": "ab7b3c46-4658-4010-a0a8-5672816737d3"
+    },
+    {
+      "claim_id": "f875d0c5-9a8d-4ac6-919d-3dacebf81df7",
+      "result_id": "ab7b3c46-4658-4010-a0a8-5672816737d3"
+    },
+    {
+      "claim_id": "148c3690-d49a-4861-8009-c040109da800",
+      "result_id": "ab7b3c46-4658-4010-a0a8-5672816737d3"
+    },
+    {
+      "claim_id": "31861726-0556-418c-a418-f6cc51418b2e",
+      "result_id": "ab7b3c46-4658-4010-a0a8-5672816737d3"
+    },
+    {
+      "claim_id": "b46ee35c-6528-4b77-a385-e72bf160a95a",
+      "result_id": "ab7b3c46-4658-4010-a0a8-5672816737d3"
+    },
+    {
+      "claim_id": "92cbe07f-afb7-42ee-916c-2a312e865bf8",
+      "result_id": "ab7b3c46-4658-4010-a0a8-5672816737d3"
+    },
+    {
+      "claim_id": "36dfd0ca-d6ba-4efe-b366-5c2680b82ffa",
+      "result_id": "ab7b3c46-4658-4010-a0a8-5672816737d3"
+    },
+    {
+      "claim_id": "157cfd5b-2f83-4b8c-af67-19c499091e56",
+      "result_id": "ab7b3c46-4658-4010-a0a8-5672816737d3"
+    },
+    {
+      "claim_id": "74890492-f6cf-462a-a0cf-83fd8e9d5eb3",
+      "result_id": "7592fbff-3b49-4ea9-8d4c-c2754a2f967d"
+    },
+    {
+      "claim_id": "30c2c0a8-fcee-4f0c-a87e-599f53a10772",
+      "result_id": "7592fbff-3b49-4ea9-8d4c-c2754a2f967d"
+    },
+    {
+      "claim_id": "55fe8d6a-d6de-4070-bd48-fa355ca4d762",
+      "result_id": "edbf4cc0-ae60-4ac8-af5f-ec018204b89f"
+    },
+    {
+      "claim_id": "5f3a6616-02ea-441a-81b7-32688b0539d9",
+      "result_id": "edbf4cc0-ae60-4ac8-af5f-ec018204b89f"
+    },
+    {
+      "claim_id": "17a360e8-fa5b-4b99-bc72-08615fce62e8",
+      "result_id": "edbf4cc0-ae60-4ac8-af5f-ec018204b89f"
+    },
+    {
+      "claim_id": "6770c8d5-cecb-4f02-a9dc-11bc841ef0b8",
+      "result_id": "edbf4cc0-ae60-4ac8-af5f-ec018204b89f"
+    },
+    {
+      "claim_id": "b2c0dcac-2b50-4aae-8094-d2928689cb53",
+      "result_id": "63f88286-0ecd-4c1a-b68e-e5544ded37fe"
+    },
+    {
+      "claim_id": "8c6246dc-051c-4583-b7ab-3a60261e0743",
+      "result_id": "63f88286-0ecd-4c1a-b68e-e5544ded37fe"
+    },
+    {
+      "claim_id": "ce6ecc80-d89d-405c-bff1-e9a37026939e",
+      "result_id": "63f88286-0ecd-4c1a-b68e-e5544ded37fe"
+    },
+    {
+      "claim_id": "948e8cd0-0610-440a-b017-6a76bc64dd1a",
+      "result_id": "63f88286-0ecd-4c1a-b68e-e5544ded37fe"
+    },
+    {
+      "claim_id": "767cb97e-0ca4-4dfd-ac0f-531a1a3ba0f3",
+      "result_id": "67842c95-1b6e-4a9d-b9df-6a602f794bda"
+    },
+    {
+      "claim_id": "daddceff-ab16-4135-9b90-e8bb44f26dad",
+      "result_id": "67842c95-1b6e-4a9d-b9df-6a602f794bda"
+    },
+    {
+      "claim_id": "fbad0461-1fb5-43a3-8fe6-97114aa5cba7",
+      "result_id": "dcb004f6-1f18-4c7b-a60a-45251135b8bb"
+    },
+    {
+      "claim_id": "bdb00ba8-6835-4853-8fd1-ed5f95af1d27",
+      "result_id": "dcb004f6-1f18-4c7b-a60a-45251135b8bb"
+    },
+    {
+      "claim_id": "23fe3aca-de01-4983-affd-d68413839830",
+      "result_id": "dcb004f6-1f18-4c7b-a60a-45251135b8bb"
+    },
+    {
+      "claim_id": "90c1e673-95d8-47a3-a725-9f79022118fe",
+      "result_id": "dcb004f6-1f18-4c7b-a60a-45251135b8bb"
+    },
+    {
+      "claim_id": "cdb0ea84-110c-40d4-ad09-8da41b981fbd",
+      "result_id": "dcb004f6-1f18-4c7b-a60a-45251135b8bb"
+    },
+    {
+      "claim_id": "6c09b2c3-b0ff-437e-b46c-5e07ce75df25",
+      "result_id": "426067a3-8288-4c6d-8d78-34850f24aeb8"
+    },
+    {
+      "claim_id": "4cad4899-503a-4485-9991-88cf97d256a8",
+      "result_id": "426067a3-8288-4c6d-8d78-34850f24aeb8"
+    },
+    {
+      "claim_id": "f44404da-3558-4eda-8b81-080e62a5d9b9",
+      "result_id": "426067a3-8288-4c6d-8d78-34850f24aeb8"
+    },
+    {
+      "claim_id": "c872c06e-06a0-4ae2-8f44-a49ff78c86bf",
+      "result_id": "426067a3-8288-4c6d-8d78-34850f24aeb8"
+    },
+    {
+      "claim_id": "a2a70c6c-66cf-4a33-b78d-547d04764f46",
+      "result_id": "426067a3-8288-4c6d-8d78-34850f24aeb8"
+    },
+    {
+      "claim_id": "de362783-0b8b-4679-8c65-cac1cd89a445",
+      "result_id": "426067a3-8288-4c6d-8d78-34850f24aeb8"
+    },
+    {
+      "claim_id": "b7413d93-1d4f-41b8-8e62-828eb9ea6cb1",
+      "result_id": "426067a3-8288-4c6d-8d78-34850f24aeb8"
+    },
+    {
+      "claim_id": "b0e12365-a308-4fbf-a7e7-8fb9db7e4cad",
+      "result_id": "426067a3-8288-4c6d-8d78-34850f24aeb8"
+    },
+    {
+      "claim_id": "0499b22a-20c8-4ec7-a664-51a202e748ff",
+      "result_id": "4e79704a-3900-4c0c-8df3-e7187b480f48"
+    },
+    {
+      "claim_id": "cfddda1e-e9d3-456c-9eee-74f2120d8a69",
+      "result_id": "4e79704a-3900-4c0c-8df3-e7187b480f48"
+    },
+    {
+      "claim_id": "9cd2e1b7-c3bf-4078-9901-e0f8b17ad179",
+      "result_id": "4e79704a-3900-4c0c-8df3-e7187b480f48"
+    },
+    {
+      "claim_id": "6642ee11-1609-4966-8135-5e05347d7907",
+      "result_id": "4e79704a-3900-4c0c-8df3-e7187b480f48"
+    },
+    {
+      "claim_id": "c5c31ed7-cda2-4c1b-92f2-6dd72d3d7e53",
+      "result_id": "4e79704a-3900-4c0c-8df3-e7187b480f48"
+    },
+    {
+      "claim_id": "8766ddfe-53d4-414d-a3a6-4ccea86320db",
+      "result_id": "4e79704a-3900-4c0c-8df3-e7187b480f48"
+    },
+    {
+      "claim_id": "679312fc-1014-4625-8be2-3590589133bd",
+      "result_id": "4e79704a-3900-4c0c-8df3-e7187b480f48"
+    },
+    {
+      "claim_id": "0d0275d7-4cd4-48b6-bf2d-b2b05b86cbf8",
+      "result_id": "12474939-ac87-4120-953d-44e892fb5474"
+    },
+    {
+      "claim_id": "6dd45a7a-e28b-48d4-b41c-8b52e466b212",
+      "result_id": "12474939-ac87-4120-953d-44e892fb5474"
+    },
+    {
+      "claim_id": "fd77e743-ee5c-48cb-a2a2-e11a68a7966c",
+      "result_id": "12474939-ac87-4120-953d-44e892fb5474"
+    },
+    {
+      "claim_id": "e665da30-8d1d-4315-858e-00c38ee3c03b",
+      "result_id": "12474939-ac87-4120-953d-44e892fb5474"
+    },
+    {
+      "claim_id": "e69098e3-ddf7-4ad2-8e0e-f9ea309f4082",
+      "result_id": "12474939-ac87-4120-953d-44e892fb5474"
+    },
+    {
+      "claim_id": "d1140c64-1cca-484d-ada0-1d2fffa619a3",
+      "result_id": "12474939-ac87-4120-953d-44e892fb5474"
+    },
+    {
+      "claim_id": "1dad7dbf-02a7-43cf-8033-17b5a5a0292d",
+      "result_id": "ac5951d3-c4b4-4c47-8001-2b76ae9ea1a6"
+    },
+    {
+      "claim_id": "327e993b-cdca-414e-8888-b13fac5ced17",
+      "result_id": "ac5951d3-c4b4-4c47-8001-2b76ae9ea1a6"
+    },
+    {
+      "claim_id": "c41657c5-db89-4c83-a79d-53ae2682682f",
+      "result_id": "db2f6c5a-4491-4997-b359-1838407557f9"
+    },
+    {
+      "claim_id": "38c4a1db-747b-4160-a676-8ecd3f93cf66",
+      "result_id": "db2f6c5a-4491-4997-b359-1838407557f9"
+    },
+    {
+      "claim_id": "bdb89d8b-6eb7-405a-aabf-6b05675e71f4",
+      "result_id": "db2f6c5a-4491-4997-b359-1838407557f9"
+    },
+    {
+      "claim_id": "a66d27b7-c2dd-4f2d-b0ec-aca794a99542",
+      "result_id": "db2f6c5a-4491-4997-b359-1838407557f9"
+    },
+    {
+      "claim_id": "f62433b2-40f9-47e0-9af6-9cf25866f60e",
+      "result_id": "db2f6c5a-4491-4997-b359-1838407557f9"
+    },
+    {
+      "claim_id": "d753e423-c415-4004-b2f0-4afa076e6dea",
+      "result_id": "db2f6c5a-4491-4997-b359-1838407557f9"
+    },
+    {
+      "claim_id": "56a7141c-e114-4772-9beb-d5ced25af443",
+      "result_id": "db2f6c5a-4491-4997-b359-1838407557f9"
+    },
+    {
+      "claim_id": "af8d1b07-4758-441f-b15e-4bf604270def",
+      "result_id": "db2f6c5a-4491-4997-b359-1838407557f9"
+    },
+    {
+      "claim_id": "6f761bb9-ed93-47bd-8227-89556ae714b0",
+      "result_id": "6eedd51b-06b2-4569-9429-5719d4cb4106"
+    },
+    {
+      "claim_id": "acd02135-0d56-4bfe-995e-3a2674081260",
+      "result_id": "d35d8f31-eff1-4036-882c-3d31ff77db29"
+    },
+    {
+      "claim_id": "5cc05d6d-fd62-412d-a6e6-d5d0a8d7a5e6",
+      "result_id": "d35d8f31-eff1-4036-882c-3d31ff77db29"
+    },
+    {
+      "claim_id": "0a75c772-0350-46f4-80fc-e6ee82d0de3f",
+      "result_id": "d35d8f31-eff1-4036-882c-3d31ff77db29"
+    },
+    {
+      "claim_id": "ef6716ad-a5c3-451b-bcd6-fb2e9701cbe1",
+      "result_id": "d35d8f31-eff1-4036-882c-3d31ff77db29"
+    },
+    {
+      "claim_id": "e658b7cb-0da6-4584-8b38-48d0a74e59b9",
+      "result_id": "d35d8f31-eff1-4036-882c-3d31ff77db29"
+    },
+    {
+      "claim_id": "2da4c879-4d40-44d5-a04c-af117066fc35",
+      "result_id": "d35d8f31-eff1-4036-882c-3d31ff77db29"
+    },
+    {
+      "claim_id": "64782b65-28bd-41a5-94c9-6988d409dd20",
+      "result_id": "d35d8f31-eff1-4036-882c-3d31ff77db29"
+    },
+    {
+      "claim_id": "dcbea304-89df-4a07-96ad-5ff024390cdb",
+      "result_id": "d35d8f31-eff1-4036-882c-3d31ff77db29"
+    },
+    {
+      "claim_id": "be8f64af-abe2-4302-9670-60d764e27f5e",
+      "result_id": "d35d8f31-eff1-4036-882c-3d31ff77db29"
+    },
+    {
+      "claim_id": "0e765119-1435-4713-a2ef-96b954bd3f4b",
+      "result_id": "d35d8f31-eff1-4036-882c-3d31ff77db29"
+    },
+    {
+      "claim_id": "04abaf43-3d8a-48e5-a917-8fde2be7f1b8",
+      "result_id": "d35d8f31-eff1-4036-882c-3d31ff77db29"
+    },
+    {
+      "claim_id": "dbae13e6-a480-44cb-833c-ca3aff629422",
+      "result_id": "5e726a4d-fa60-46ee-a7ef-b5118436518b"
+    },
+    {
+      "claim_id": "70e1ef30-c4a8-4160-9920-c13e2439e095",
+      "result_id": "5e726a4d-fa60-46ee-a7ef-b5118436518b"
+    },
+    {
+      "claim_id": "1fc4a4f5-7ab5-455e-a6a5-eefd41cdd0dd",
+      "result_id": "5e726a4d-fa60-46ee-a7ef-b5118436518b"
+    },
+    {
+      "claim_id": "ec88970e-7bc2-47e3-b071-dd340e7baec5",
+      "result_id": "5e726a4d-fa60-46ee-a7ef-b5118436518b"
+    },
+    {
+      "claim_id": "712a878c-067f-434d-b183-4312dce9abc8",
+      "result_id": "5e726a4d-fa60-46ee-a7ef-b5118436518b"
+    },
+    {
+      "claim_id": "47b12787-7b1e-4569-b545-5b3349544a5d",
+      "result_id": "5e726a4d-fa60-46ee-a7ef-b5118436518b"
+    },
+    {
+      "claim_id": "ac6f865e-2f25-4483-b0b4-59736bf49bf5",
+      "result_id": "5e726a4d-fa60-46ee-a7ef-b5118436518b"
+    },
+    {
+      "claim_id": "50bbc813-4161-4646-ae16-0bf4acc75544",
+      "result_id": "5e726a4d-fa60-46ee-a7ef-b5118436518b"
+    },
+    {
+      "claim_id": "c7b002be-92ae-4095-9096-b2c98e493c95",
+      "result_id": "5e726a4d-fa60-46ee-a7ef-b5118436518b"
+    },
+    {
+      "claim_id": "6dbb45a7-46fb-4188-aac4-0bfef2631b0f",
+      "result_id": "5e726a4d-fa60-46ee-a7ef-b5118436518b"
+    },
+    {
+      "claim_id": "46616063-09f0-49a3-a5e3-fee7cf1cfd38",
+      "result_id": "d0d551c9-4a15-43da-99d4-e9212e34ceea"
+    },
+    {
+      "claim_id": "ddf3e41e-2977-4eee-926e-5145f51a4f12",
+      "result_id": "d0d551c9-4a15-43da-99d4-e9212e34ceea"
+    },
+    {
+      "claim_id": "f6ab1540-0064-4e3e-876d-91eeb0d5d58f",
+      "result_id": "d0d551c9-4a15-43da-99d4-e9212e34ceea"
+    },
+    {
+      "claim_id": "d23416b5-16c4-4a4d-90e0-b6e97b51f57d",
+      "result_id": "d0d551c9-4a15-43da-99d4-e9212e34ceea"
+    },
+    {
+      "claim_id": "0d24ac45-d772-4704-a73f-1889b258fc0e",
+      "result_id": "d0d551c9-4a15-43da-99d4-e9212e34ceea"
+    },
+    {
+      "claim_id": "aab7b89f-5abe-4fcd-8df9-9385a3ba5850",
+      "result_id": "d0d551c9-4a15-43da-99d4-e9212e34ceea"
+    },
+    {
+      "claim_id": "f94d2f1d-8b59-46fa-beef-077604647329",
+      "result_id": "d0d551c9-4a15-43da-99d4-e9212e34ceea"
+    },
+    {
+      "claim_id": "5e5c80f6-7b2f-44b0-ba81-524af4f54742",
+      "result_id": "d0d551c9-4a15-43da-99d4-e9212e34ceea"
+    },
+    {
+      "claim_id": "7ac28d66-4fb8-4dc2-a369-e3bd53c2887c",
+      "result_id": "d0d551c9-4a15-43da-99d4-e9212e34ceea"
+    },
+    {
+      "claim_id": "e945dfbf-6547-4574-a454-195de6243377",
+      "result_id": "d0d551c9-4a15-43da-99d4-e9212e34ceea"
+    },
+    {
+      "claim_id": "df8ce93e-252d-46b8-a0cc-c97be13df041",
+      "result_id": "d0d551c9-4a15-43da-99d4-e9212e34ceea"
+    },
+    {
+      "claim_id": "c56f3d03-ffe3-415f-a1e2-8f1a9fcde82e",
+      "result_id": "d0d551c9-4a15-43da-99d4-e9212e34ceea"
+    },
+    {
+      "claim_id": "c0a13ed8-75bc-4a54-a341-718830566d35",
+      "result_id": "d0d551c9-4a15-43da-99d4-e9212e34ceea"
+    },
+    {
+      "claim_id": "c6bfccfa-4dbb-44ef-821f-0239620b76a7",
+      "result_id": "d0d551c9-4a15-43da-99d4-e9212e34ceea"
+    },
+    {
+      "claim_id": "36a95009-f23d-4015-9e99-b8756522b33b",
+      "result_id": "d0d551c9-4a15-43da-99d4-e9212e34ceea"
+    },
+    {
+      "claim_id": "7a8f3b51-74ab-4fe7-ae57-b4ce4f73a830",
+      "result_id": "d0d551c9-4a15-43da-99d4-e9212e34ceea"
+    },
+    {
+      "claim_id": "2c2e8454-27c6-4eba-b521-a809d412de09",
+      "result_id": "d0d551c9-4a15-43da-99d4-e9212e34ceea"
+    },
+    {
+      "claim_id": "25eb5e30-e96c-42df-bc1e-3c8baa3f8373",
+      "result_id": "d0d551c9-4a15-43da-99d4-e9212e34ceea"
+    },
+    {
+      "claim_id": "517e5e95-a209-4a5d-ad34-5c46a3cf3fdf",
+      "result_id": "d0d551c9-4a15-43da-99d4-e9212e34ceea"
+    }
+  ],
+  "comparisons": []
+}

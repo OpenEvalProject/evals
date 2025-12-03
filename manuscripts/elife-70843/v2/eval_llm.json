@@ -1,0 +1,308 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The manuscript provides background context on the COVID-19 pandemic and the role of RT-PCR testing. Claims establish that SARS-CoV-2 causes COVID-19, describe the pandemic's global impact with over 234 million cases by October 2021, note the resulting lockdowns and testing infrastructure investments, and characterize RT-PCR as the WHO gold standard that was rapidly deployed but led to reagent shortages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C8) are well-supported by appropriate citations to peer-reviewed literature and represent established knowledge about the pandemic context. They provide necessary background but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The manuscript reviews limitations of RT-PCR testing, noting that while PCR tests generally show 95-100% sensitivity and specificity, they can be affected by pre-analytical biases, may detect viral RNA weeks after symptom onset, and can have false-positive rates up to 4% at certain facilities, with particular concern for low-prevalence screening scenarios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C13 are supported by appropriate citations to prior work and accurately characterize known limitations of RT-PCR testing. These provide important context for the study's rationale but represent review of existing literature rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The manuscript reviews rapid antigen tests as an alternative to RT-PCR, noting they show similar specificity but lack sufficient sensitivity compared to RT-PCR, provide only binary readouts, but can improve accuracy through repeated testing and are suitable for large-scale screening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 are supported by appropriate citations and accurately summarize the characteristics of rapid antigen tests. This provides context for alternative testing approaches but represents literature review rather than original findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The manuscript establishes the theoretical advantages of LC-MS for SARS-CoV-2 detection, including sequence-based specificity through multiple product ions, high precision and quantitative performance, and the SISCAPA approach combining antibody enrichment with MS readout and stable isotope labeled standards to eliminate dependence on PCR amplification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C24 are supported by appropriate citations and established knowledge about LC-MS technology. These claims establish the rationale for the study approach but represent application of existing technology rather than methodological innovation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The manuscript reviews prior LC-MS work for SARS-CoV-2 detection and establishes the rationale for targeting NCAP. Prior studies demonstrated LC-MS detection of SARS-CoV-2 peptides but were hampered by matrix effects. NCAP is the most abundant viral protein (300-1000 copies/virion), making it an attractive target. The peptide AYNVTQAFGR was selected based on MRM response and immunoassay suitability, and is not affected by known viral mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 are supported by appropriate citations and experimental data. The selection of NCAP and the specific peptide AYNVTQAFGR is well-justified based on abundance and mutation stability, though the mutation analysis relies on database queries rather than experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The LC-MS method was characterized for analytical performance. Data processing used TargetLynx XS with threshold algorithms based on peak height, area, and ion ratios, requiring two MRM transitions for confirmation. The method showed linear dynamic range from 3 to 50,000 amol/\u00b5l (>4 orders), LLOQ of 3 amol/\u00b5l with precision \u226420% and bias \u00b120%, complete selectivity (no signal in negative samples), inter- and intra-day precision \u226420% CV, and peptide stability in autosampler for >48 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C44 are supported by experimental data shown in Figure 2 and Table 1. The analytical validation follows appropriate guidelines and demonstrates acceptable performance characteristics. The use of two MRM transitions and internal standards provides robust confirmation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Clinical sample analysis of 48 RT-PCR positive and 308 negative samples showed good correlation between LC-MS and RT-PCR (r=0.79), with similar turnaround times and quantitative readout corresponding to Ct equivalents of 21-34. Control pools (high: Ct<30, low: 30\u2264Ct<33) showed precision of 3.0% and 12.2% CV respectively. LC-MS data showed significant differentiation between positive and negative samples (p=0.00018, Mann-Whitney U test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C48 are supported by experimental data in Figure 3. The correlation of r=0.79 is moderate and the statistical significance is appropriately demonstrated. However, the correlation is not as strong as might be expected for a replacement diagnostic, and the study does not address whether this reflects true biological differences or analytical limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Using RT-PCR as reference, the LC-MS method showed 83.3% sensitivity (95% CI: 70.4-91.3%) and 100% specificity (95% CI: 98.8-100%) across all samples, with strong agreement (kappa=0.9, 95% CI: 0.83-0.97). When restricted to samples above the LLOQ (Ct\u226430), sensitivity improved to 94.7% (95% CI: 82.7-98.5%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 are supported by data in Figure 4 and follow CLSI EP 12-A2 guidelines. The statistical analysis is appropriate. However, the sensitivity of 83.3% for all samples is concerning for a diagnostic test, and the improvement to 94.7% when restricting to Ct\u226430 indicates the method cannot reliably detect low viral loads. The 100% specificity is impressive but based on only 308 negative samples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The manuscript discusses fundamental differences between RT-PCR and LC-MS: RT-PCR does not distinguish between infectious virus and non-infectious nucleic acids, while LC-MS detects viral proteins. Additionally, Ct values are not universally applicable as they differ between manufacturers and methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 are supported by appropriate citations. These represent important conceptual distinctions between the methods, though the manuscript does not experimentally validate whether protein detection better correlates with infectiousness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The manuscript argues that the combination of MS specificity with antibody enrichment provides advantages over RT-PCR and rapid tests. The SISCAPA method ensures high sensitivity and low false-positive risk through antibody enrichment, LC-MS separation and detection, and internal standards that enable accurate quantification and help distinguish false-positive peaks based on retention time and ion ratios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 are supported by the experimental data and established principles of the technology. The theoretical advantages are well-articulated, though the actual sensitivity (83.3% overall, 94.7% for Ct\u226430) suggests the practical performance does not fully realize these theoretical benefits for low viral loads.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "The manuscript speculates that sensitivity could be further improved by increasing sample load and that the method could be scaled to multiple viral protein targets by introducing additional anti-peptide antibodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62-C63 are speculative and not experimentally validated in this study. While plausible based on the technology, these represent future work rather than demonstrated capabilities. The feasibility and practical constraints of these improvements are not established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C110"
+    ],
+    "result": "The manuscript concludes that SISCAPA technology and LC-MS-based methods represent an attractive route forward for future pandemic surveillance systems, with accuracy that would tolerate low levels of positive samples without compromising positive predictive value in large-scale screening, providing a next-generation platform to complement RT-PCR technologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64-C65 and C110 represent broad conclusions that extend beyond what the data directly support. While the 100% specificity is promising for low-prevalence screening, the 83.3% overall sensitivity and limitation to Ct\u226430 are significant constraints. The claim that this would not compromise positive predictive value requires modeling or additional data not presented. The characterization as 'next-generation' and suitable for 'future pandemic surveillance' is aspirational rather than demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The study received ethical approval from the Link\u00f6ping Ethics Review Board (DNR 2020-06395), was conducted according to Helsinki Declaration principles, and obtained informed consent from all participants. Asymptomatic healthcare workers at an elderly care facility in Sweden were screened using self-collected three-point samples (throat, nasal, saliva) in PBS, transported within 8 hours, and heat-inactivated at 56\u00b0C for 30 min (not exceeding 60\u00b0C\u00b10.5\u00b0C) without affecting RT-PCR sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C73 describe appropriate ethical procedures and sample collection methods. The heat inactivation protocol is well-specified and validated for RT-PCR compatibility. The use of asymptomatic individuals is appropriate for the screening application but may not represent the full spectrum of clinical presentations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "RT-PCR was performed using the Sansure Biotech Novel Coronavirus Nucleic Acid Diagnostic Kit according to FDA-EUA guidelines, detecting ORF-1ab (FAM) and N gene (ROX) with human RNase P internal control (Cy5). Samples were lysed at room temperature for \u226510 min, analyzed on a CFX96 system with 45 cycles, and interpreted as positive if FAM/ROX amplification with Ct<40, or negative if no FAM/ROX amplification with Cy5 Ct<40.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C80 provide detailed RT-PCR methodology following established protocols. The use of FDA-EUA approved kit and appropriate controls is sound. The Ct<40 cutoff is standard, though the manuscript later focuses on Ct\u226430 for LC-MS comparison, which is appropriate given the method's detection limits.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The LC-MS sample preparation protocol involved: calibration using NCAP digest (serial dilution 2.2 pmol/\u00b5l to 3 amol/\u00b5l in pooled negative background); control pools from samples with Ct<30 (high) and 30\u2264Ct<33 (low); protein extraction with RapiGest and DTT at 56\u00b0C for 15 min; trypsin digestion at 37\u00b0C for 30 min; SIL peptide spiking; antibody-coupled magnetic bead enrichment for 1 hr; three washes with PBS/CHAPS buffer; and elution with formic acid/CHAPS buffer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C94 provide detailed methodology that appears technically sound. The use of pooled negative background for calibration is appropriate. The protocol is well-specified with temperatures, times, and reagent concentrations. However, the manuscript does not discuss potential matrix effects from the PBS swab medium or validate recovery efficiency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "LC-MS analysis used 20 \u00b5l injection onto ACQUITY Premier Peptide BEH C18 column (2.1\u00d750 mm, 1.7 \u00b5m, 300 \u00c5) with gradient elution (5-28% B over 4.5 min) at 0.6 ml/min, total run time 5.7 min with 6.5 min injection-to-injection cycle. Detection used Xevo TQ-XS tandem MS in positive ESI mode (capillary 0.5 kV, source 150\u00b0C, desolvation 600\u00b0C), calibrated at unit mass resolution, with MRM acquisition for light and heavy labeled peptides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C101 provide comprehensive LC-MS instrumental parameters. The method is well-specified and uses appropriate modern instrumentation. The 6.5 min cycle time is competitive with RT-PCR when considering the batch processing capability, though the manuscript's claim of 'similar turnaround times' may be misleading as it doesn't account for the sample preparation time (3.5 hours total).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Data processing used TargetLynx XS for signal processing, peak detection, and quantification including ion ratio calculations. Additional analysis used Python 3. Data were deposited to ProteomeXchange (PXD026366) and Panorama Public, including raw files, integrated peak areas, and chromatogram visualizations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C106 describe appropriate data processing and commendable data sharing practices. The deposition of raw data and processed results in public repositories supports reproducibility. However, the manuscript does not specify Python version, package versions, or provide analysis code, which limits full computational reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The study developed a scalable LC-MS analytical approach for detecting viral proteins based on peptide immuno-affinity enrichment. This multiplexed strategy using targeted proteomics is capable of precisely quantifying and confirming SARS-CoV-2 presence in PBS swab media from combined throat/nasopharynx/saliva samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 accurately summarize the method developed. The approach is demonstrated to work for the specific sample type and conditions tested. However, the claim of 'scalability' is not experimentally validated\u2014the study processed 356 samples but does not demonstrate throughput comparable to high-volume RT-PCR facilities or address cost-effectiveness.",
+    "result_type": "MAJOR"
+  }
+]

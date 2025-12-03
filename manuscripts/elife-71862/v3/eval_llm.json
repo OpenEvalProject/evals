@@ -1,0 +1,423 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The study cohort consisted of 44,709 UK Biobank participants aged 40-69 with a T2D onset prevalence of 1.79% over a mean follow-up of 7.3\u00b12.3 years, which is substantially lower than the general UK population prevalence of 6.3% due to selection and screening biases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C37-C42 provide clear cohort characteristics with specific numbers and inclusion/exclusion criteria. Claims C60-C62 acknowledge the selection bias and explain the lower prevalence compared to the general population (6.3%), which is well-documented in the UK Biobank literature (C58, C61). The data are internally consistent and the bias discussion is appropriately transparent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C10",
+      "C11",
+      "C12",
+      "C46",
+      "C199",
+      "C200",
+      "C201",
+      "C203",
+      "C205",
+      "C207",
+      "C208",
+      "C209"
+    ],
+    "result": "The anthropometric scorecard model using 8 easily measurable features (sex, age, weight, height, waist, hip, WHR, BMI) achieved auROC 0.81 (0.77-0.84) and OR 17.2 (5-66), stratifying participants into three risk groups with 1%, 5%, and 9% T2D risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C10-C12 specify the model features and performance metrics with confidence intervals. Claims C199-C201 detail the risk stratification. The performance metrics are consistent across multiple model forms (C203, C205, C207-C209) and are supported by appropriate statistical measures. The WHR and BMI are identified as the most predictive features (C46), which aligns with established diabetes risk factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C13",
+      "C14",
+      "C15",
+      "C48",
+      "C165",
+      "C212",
+      "C213",
+      "C214",
+      "C215",
+      "C216",
+      "C217",
+      "C218",
+      "C220",
+      "C221"
+    ],
+    "result": "The four blood test model using HbA1c%, GGT, HDL cholesterol, and triglycerides (plus age and sex) achieved auROC 0.87 (0.85-0.90) and OR \u00d748 (12-109), stratifying participants into four risk groups with 0.5%, 3%, 10%, and 23% T2D risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C13-C15 specify the model composition and performance. Claims C212-C215 detail the four risk groups with confidence intervals. The HbA1c% feature having highest predictive power (C48, C220) is expected given its diagnostic role. Performance metrics are consistent across model variants (C216-C218). The model uses common, clinically available blood tests, supporting practical applicability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C64",
+      "C206",
+      "C210",
+      "C211"
+    ],
+    "result": "The developed models outperformed the established FINDRISC (auROC 0.66, 0.62-0.70) and GDRS (auROC 0.73, 0.69-0.76) models when all were trained and tested on the same UK Biobank data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 report the baseline model performance with confidence intervals. Claims C64, C206 make comparative statements supported by the data in C210-C211. The comparison is fair as all models were trained and tested on identical datasets (C134, C154). However, the FINDRISC and GDRS were originally developed on different populations (Finnish and German), so this comparison primarily demonstrates performance on UK Biobank data rather than inherent model superiority.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C55",
+      "C56",
+      "C57",
+      "C228",
+      "C229",
+      "C231",
+      "C232",
+      "C233",
+      "C234"
+    ],
+    "result": "External validation on the Clalit Israeli cohort (N=17,132, 4.1% prevalence) showed reduced but still reasonable performance (auROC 0.75, 0.74-0.75) for the four blood test model, with performance degradation attributed to cohort differences including higher T2D prevalence and different selection biases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C55-C57, C228 provide specific performance metrics on the external cohort with confidence intervals. Claims C231-C234 acknowledge and explain the performance degradation. The external validation is valuable but limited: (1) only the four blood test model was validated (C230), (2) the Clalit cohort has different characteristics and biases (C58-C59, C233-C234), and (3) the follow-up time was simulated rather than observed (C104, C197). The performance drop from 0.87 to 0.75 auROC is substantial but the model retains predictive value.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C68",
+      "C69",
+      "C226",
+      "C227"
+    ],
+    "result": "When tested on HbA1c%-stratified subpopulations, the anthropometric model maintained performance in normoglycemic participants (auROC 0.81) but showed reduced performance in prediabetic participants (auROC 0.73), with training subcohort-specific models not improving results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 provide stratified performance metrics with confidence intervals. Claims C68-C69 summarize the performance differences and note that subcohort-specific training didn't help. The stratification by HbA1c% is clinically relevant (C170-C171), and the performance patterns make sense given that HbA1c% is a strong T2D predictor. The analysis demonstrates model robustness across different baseline risk groups, though with expected performance variation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C17",
+      "C224",
+      "C225"
+    ],
+    "result": "More complex models using 59 blood tests or 279 features plus genetics achieved marginally better performance (auROC 0.91) but were deemed not cost-efficient compared to the simpler four blood test model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C86, C224-C225 report performance metrics for complex models. Claim C17 states these models don't provide 'cost-efficient benefits,' but no formal cost-effectiveness analysis is presented. The performance improvement from auROC 0.87 to 0.91 is modest (overlapping confidence intervals), but the claim of cost-inefficiency is an inference without supporting economic analysis. The conclusion is reasonable but not rigorously demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C44",
+      "C45",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C162",
+      "C177",
+      "C178",
+      "C179",
+      "C181",
+      "C182",
+      "C183"
+    ],
+    "result": "Feature selection from an initial set of 798 features was performed through iterative elimination based on feature importance, ultimately selecting 8 anthropometric features and 4 blood tests as optimal for model simplicity and accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C111-C116 describe the systematic feature selection process. Claims C162, C177-C179, C181-C183 detail the specific procedures for selecting the final feature sets. The methodology is clearly described with appropriate use of training/validation splits (C148-C150). The decision to drop 'reticulocytes' (C116) demonstrates appropriate consideration of clinical practicality. The feature selection process appears rigorous and well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "The study employed a rigorous two-stage model development process with proper train/validation/test splits (70%/30%/20%), 200 iterations of hyperparameter tuning using 5-fold cross-validation, and final evaluation on a held-out test set.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73, C88-C93 specify the methods and software used with appropriate citations. Claims C90, C147-C154 detail the data splitting and evaluation strategy. The methodology follows best practices for avoiding overfitting: separate test set, cross-validation for hyperparameter tuning, and consistent datasets across models (C154). The use of established software packages (sklearn, LightGBM, lifelines) with citations (C91-C93) supports reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C94",
+      "C97",
+      "C98",
+      "C121",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190"
+    ],
+    "result": "Model calibration was performed using 1000 bootstrapping iterations with isotonic regression and 5-fold cross-validation to address the 1.79% class imbalance and provide probability estimates for T2D onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94, C97-C98, C185-C190 describe the calibration methodology in detail. The approach using bootstrapping and isotonic regression is appropriate for the severe class imbalance (C186). The calibration process is clearly described with specific parameters. However, the manuscript doesn't show calibration plots for all models or provide quantitative calibration metrics (e.g., Brier score, calibration slope), which would strengthen the evaluation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C122",
+      "C123",
+      "C191",
+      "C192",
+      "C193",
+      "C194"
+    ],
+    "result": "Scorecard models were created using weight of evidence (WoE) binning with monotonically increasing WoE, with risk group boundaries determined through bootstrapping on the validation set and evaluated on the test set.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101, C122-C123, C191-C194 describe the scorecard creation methodology. The WoE approach with monotonicity constraints (C100) is appropriate for creating interpretable scorecards. The choice of LR-based scorecards over Cox regression for flexibility in time frame selection (C194) is pragmatic. The methodology is clearly described, though more details on the specific binning algorithm and boundary selection criteria would enhance reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C132",
+      "C133"
+    ],
+    "result": "Missing data were handled by removing features with >50% missingness and participants with >25% missing features, followed by iterative imputation for continuous variables and one-hot encoding for categorical variables, with separate imputation for train/validation and test sets to prevent data leakage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C127, C132-C133 describe the missing data handling strategy. The approach is reasonable with appropriate thresholds and separate processing of train/test sets to avoid leakage (C126, C133). The correlation analysis (C125) justifies the imputation approach. However, the manuscript doesn't report the extent of missingness for key features or sensitivity analyses to assess the impact of imputation choices on model performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C176"
+    ],
+    "result": "Polygenic risk scores (PRS) were calculated from 41 GWAS summary statistics using the top 1000 SNPs per study (filtered to UKB array), resulting in 2267 unique SNPs, with GWAS data sourced from non-UKB studies to prevent data leakage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C131, C176 describe the PRS calculation methodology. The approach of using external GWAS to avoid data leakage (C131, C176) is appropriate. However, the PRS methodology is relatively simple (sum of effect sizes without weighting or LD pruning), and the manuscript doesn't report whether these PRSs significantly improved model performance or justify why 41 different PRSs were used rather than a single comprehensive T2D PRS.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C195",
+      "C196",
+      "C197",
+      "C198"
+    ],
+    "result": "The Clalit external validation cohort was constructed from 179,000 initial patients with specific HbA1c% criteria, with follow-up times simulated by randomly sampling from a normal distribution (mean=7.3, SD=2.3 years) to match the UKB cohort characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C106, C195-C198 describe the Clalit cohort construction. The simulation of follow-up times (C104, C197) is a significant methodological limitation that is not adequately discussed. This approach assumes the relationship between predictors and T2D onset is similar across different follow-up periods, which may not hold. The 1000 iterations (C104, C197) provide uncertainty estimates, but the fundamental issue is that the validation uses simulated rather than observed follow-up times, weakening the external validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The FINDRISC and GDRS baseline models were reconstructed using available UKB data with some feature approximations and missing data (e.g., family history limited to parents and siblings, no past medication data), then retrained using the same train/test splits as the developed models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C146 detail the baseline model reconstruction. The approach of retraining on the same data (C134) ensures fair comparison. The approximations and missing features (C137-C140) are clearly documented. However, these modifications mean the comparison is not to the original FINDRISC/GDRS but to adapted versions, which may partially explain the performance differences. The manuscript appropriately notes these limitations but could more explicitly discuss how the missing features might affect performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C36",
+      "C70",
+      "C238"
+    ],
+    "result": "The models are most relevant for UK populations aged 40-65 or similar populations, with application to other populations requiring further research and potential coefficient fine-tuning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C70, C238 appropriately acknowledge the limitations of model generalizability. The external validation on Clalit (C16, C228) partially addresses this but shows performance degradation. The age restriction (40-69 in training, C5, C37) is clearly stated. These are appropriate caveats, though the manuscript could more explicitly discuss which population characteristics (beyond age) are most important for model applicability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C235",
+      "C236",
+      "C237"
+    ],
+    "result": "The study cohort suffers from multiple biases including 'healthy volunteer' selection bias (reducing prevalence from 6% to 4.8% in UKB), attrition bias, and screening bias from including only healthy participants at baseline (further reducing to 1.79%), which limits generalizability to the general UK population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62, C235-C237 identify and discuss multiple sources of bias with supporting citations (C58, C61). The quantification of bias effects (C60, C61, C236) is helpful. This is an important limitation that is appropriately acknowledged. However, the manuscript doesn't discuss how these biases might affect model performance in the general population or whether recalibration could address some of these issues.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background claims about T2D epidemiology: T2D accounts for ~90% of diabetes cases, caused 6.7 million deaths in 2021, prevalence increased from 4.7% (1980) to 10% (2021), with rising rates in LMICs where 83.8% of undiagnosed cases occur and laboratory testing is limited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C21-C27 present epidemiological statistics with appropriate citations to authoritative sources (International Diabetes Federation, WHO). Claim C28 about prevention through lifestyle modifications is well-established and cited. These background claims provide appropriate context for the study's motivation and are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Prior work on T2D risk prediction includes FINDRISC (Finnish cohort, 10-year risk), GDRS (German EPIC-Potsdam cohort, 5-year risk), Di Camillo et al. models (auROC 0.83-0.90), and Lama et al. identifying BMI, WHR, age, and blood pressure as key features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C35 summarize relevant prior work with appropriate citations. The descriptions of FINDRISC (C29-C31) and GDRS (C32-C33) are accurate. The cited performance metrics (C34-C35) provide context for the current study's results. This literature review appropriately positions the current work within the existing research landscape.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C63",
+      "C239",
+      "C240"
+    ],
+    "result": "The study is motivated by the need for accurate yet accessible T2D prediction models, particularly for lower socio-demographic populations with limited resources, as early detection enables lifestyle/diet/medication interventions to reduce T2D incidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C63, C239-C240 articulate the study motivation. The rationale is well-supported by cited prevention studies (C28, C63). The focus on accessibility (C4, C72) is appropriate given health disparities. However, the study was conducted on UK Biobank data (predominantly white, higher socioeconomic status), which somewhat limits the direct applicability to the target populations mentioned in the motivation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C65",
+      "C71",
+      "C72"
+    ],
+    "result": "The authors assert their models make significant contributions through a highly predictive laboratory model and an easily accessible anthropometric scorecard, with potential to improve millions of lives and reduce economic burden on medical systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65, C71-C72 make broad impact statements. While the models show good performance (C10-C15), the claims about improving 'millions of lives' and reducing 'economic burden' (C65) are speculative without implementation studies, cost-effectiveness analyses, or demonstration of clinical utility beyond prediction accuracy. The models' potential is promising but these impact claims are not directly supported by the presented evidence.",
+    "result_type": "MINOR"
+  }
+]

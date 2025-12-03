@@ -1,0 +1,257 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C34",
+      "C122",
+      "C123"
+    ],
+    "result": "The VR system successfully reproduces free-walking behavior in silkmoths, with no significant differences in search success rate or relative distance between VR and free-walking experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C122, and C123 provide converging evidence that the VR system accurately replicates free-walking conditions. The validation is based on statistical comparisons showing no significant differences in key behavioral metrics, supporting the use of VR for subsequent experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C41",
+      "C42",
+      "C45",
+      "C77"
+    ],
+    "result": "Wind direction information is critical for silkmoth navigation success. Correct wind presentation (matching odor direction) significantly improves search success rates, while incorrect wind direction reduces success rates compared to odor-only conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C41, C42, C77 present consistent experimental evidence from VR experiments showing that correct wind information improves navigation (cond. 2 vs cond. 1), while incorrect wind reduces success (cond. 4 vs cond. 1). Statistical tests support these differences (p < 0.05). Claims C4 and C45 are reasonable inferences from this data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C43",
+      "C44"
+    ],
+    "result": "Visual stimuli have minimal direct effect on silkmoth search performance, as evidenced by similar trajectories and search performance metrics when visual conditions are varied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C43 provide quantitative evidence (EMD values, SPT values) showing minimal differences when visual stimuli are manipulated. Claims C39 and C44 are reasonable inferences from this data. However, this appears to contradict later findings about visual control of posture (C54-C56), suggesting vision plays a different role than initially assessed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Silkmoths use visual stimuli for postural control during navigation, as demonstrated by asymmetric left-right angular velocities when visual stimuli are presented in opposite directions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54 and C55 present experimental data with statistical testing (Wilcoxon rank sum test, p < 0.05) showing that visual manipulation affects rotational symmetry. Claim C56 is a reasonable inference connecting this to postural control mechanisms known in flying insects. This result clarifies the role of vision identified in the earlier result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C46",
+      "C47",
+      "C51",
+      "C52",
+      "C53",
+      "C57"
+    ],
+    "result": "Silkmoths modulate their movement speed and angular velocity based on whether wind and odor directions coincide, exhibiting faster, more active movement when directions match and slower, more careful movement when they do not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C47, C51, C52 provide detailed quantitative behavioral data showing different speed profiles under different wind-odor alignment conditions. Claims C5, C6, C57 summarize these patterns, and C7, C53 provide interpretations. The data consistently support behavioral modulation based on sensory congruence, though interpretations (C7, C53) remain somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "When wind and odor directions match, silkmoth movement speed peaks at odor detection frequencies of 0.7-0.8 Hz, matching female pheromone release frequency, suggesting males actively search until approaching the female and then slow down for mate location.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C46, C47, C92 present experimental observations about speed changes relative to odor frequency. However, claims C48-C50, C93-C94 are largely speculative interpretations about biological function. While the correlation with female pheromone release frequency (C48, C92) is interesting, the functional interpretations lack direct experimental validation and represent hypotheses rather than demonstrated results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C58",
+      "C59",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C80",
+      "C114",
+      "C115"
+    ],
+    "result": "The MiM2 mathematical model, incorporating multisensory behavioral modulation, successfully reproduces silkmoth search trajectories and outperforms conventional algorithms (surge-zigzagging and casting) in search success rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C58, C62, C63 provide simulation evidence with statistical testing showing MiM2 has higher success rates and better trajectory matching (EMD analysis). Claims C9, C80, C114, C115 extend these findings to comparisons with conventional algorithms. The convergence of trajectory similarity and performance metrics supports the model's validity, though real-world validation beyond simulation would strengthen this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Silkmoths can still navigate successfully (approximately 60% success rate) when wind information is unreliable or absent, possibly by increasing reliance on odor information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 presents experimental data showing maintained success rates under incorrect wind conditions. Claim C79 provides a reasonable interpretation about sensory prioritization, though this mechanism is not directly tested. The result is supported but the mechanistic explanation remains somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "When wind and odor directions do not match, silkmoths move at constant speed regardless of odor frequency, potentially as a strategy to avoid leaving the odor range and to estimate environmental turbulence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C99 presents experimental observation of constant speed under mismatched conditions. Claims C100 and C101 provide interpretations about adaptive strategy and turbulence estimation. While the behavioral observation is clear, the functional interpretations are speculative and would benefit from additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The VR system stimulators (odor, vision, wind) were validated to function correctly through behavioral responses and physical measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119, C120, C121 describe validation experiments for each stimulator component. C119 and C120 use behavioral responses as validation (elicited search behavior, neck tilt), while C121 uses PIV analysis. These validations are appropriate for confirming system functionality, though behavioral validation is somewhat circular (assuming the response indicates correct stimulation).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C73",
+      "C74"
+    ],
+    "result": "Previous insect navigation studies had limitations in stimulus control and spatiotemporal scale; the multimodal VR system developed here addresses these limitations by enabling simultaneous, continuous presentation of multiple sensory modalities during olfactory navigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65, C66, C68, C69, C73 identify specific limitations in prior work. Claims C67 and C74 describe how the current VR system addresses these gaps. This represents a valid methodological advance, though the assessment of prior work limitations (C65, C66) involves some inference about what constitutes 'natural' behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C110",
+      "C111"
+    ],
+    "result": "Current artificial odor-source search systems and bio-inspired algorithms fail to replicate insect performance because they do not incorporate context-dependent sensory integration and behavioral modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C110 describe limitations of current systems based on literature assessment. Claims C22, C111 identify specific gaps in modeling sensory feedback and behavioral modulation. These claims are supported by citations and represent a reasonable critique of the field, providing motivation for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Experimental methodology: Three repetitions with 10 moths per condition (n=30), 300-second time limit, success defined as reaching within 10mm of odor source.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C36, C37 describe methodological parameters. The sample size (n=30 per condition) is reasonable for behavioral experiments. The 300s time limit is justified by theoretical considerations (C36). Success criteria (C37) are clearly defined. These methodological choices appear appropriate for the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C40"
+    ],
+    "result": "Wind stimulus addition significantly affected search behavior as measured by EMD value of 10.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C40 states that an EMD value of 10 indicates significant behavioral effect, but no context is provided for interpreting this value. Without knowing the scale, baseline, or statistical testing of EMD values, it's difficult to assess whether this represents a meaningful difference. The claim needs better quantitative justification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Odor navigation strategies differ across organism scales: bacteria and nematodes use concentration gradients in stable environments, while larger animals face complex, turbulent odor fields where temporal patterns (odor arrival frequency) become important navigational cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C90 synthesize findings from multiple cited studies to build a comparative framework. The citations support the individual claims about different organisms and odor field properties. This provides important context for understanding why silkmoths might use temporal odor information, though it represents background knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "The authors hypothesized that silkmoths modulate behavior based on odor 'tempo' (frequency) similar to Drosophila.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 explicitly states this as a hypothesis that motivated including odor frequency in analyses. This is appropriately identified as speculation/hypothesis rather than a demonstrated result. The hypothesis is reasonable based on analogy to Drosophila findings (C90).",
+    "result_type": "MINOR"
+  }
+]

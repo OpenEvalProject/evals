@@ -1,0 +1,235 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The study performed paired small and long RNA sequencing on 20 human tissue samples (skin, acute wounds at days 1 and 7, and venous ulcers), detecting 562 miRNAs and 12,069 mRNAs. Principal component analysis showed clear separation of the four sample groups, and differential expression analysis identified a VU-specific gene signature with 22 upregulated and 10 downregulated miRNAs, and 221 upregulated and 203 downregulated mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 and C73-C76 describe the study design, sample collection, sequencing methodology, and initial results. The experimental design is clearly stated with appropriate controls (matched age, anatomical location), adequate sample sizes (n=5 per group for RNA-seq), and rigorous quality control. The PCA results demonstrate biological reproducibility and the differential expression analysis uses appropriate statistical thresholds (FDR <0.05, fold change \u22652 for miRs, \u22651.5 for mRNAs).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "WGCNA identified 13 miRNA coexpression modules, with specific modules associated with different wound healing phases: m2, m10, and m11 upregulated during inflammation (Wound1); m5 and m6 peaked during proliferation (Wound7); and m3, m7, m9 downregulated and m8, m12 upregulated in VU. Transcription factors KLF4, KLF5, GATA3, GRHL2, and TP53 showed enriched binding sites in m9 module genes and significant correlation with m9 miRNA expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C22 describe WGCNA results with appropriate methodology (module preservation analysis confirmed robustness). The identification of 84% of driver miRNAs as DEGs demonstrates consistency between WGCNA and differential expression analysis. The transcription factor enrichment analysis is supported by both computational prediction and correlation analysis (Pearson's r = 0.53-0.82, p < 0.05), with validation from prior literature (C22) and confirmation in the study's own RNA-seq data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "WGCNA identified 13 mRNA coexpression modules that confirmed known wound biology and revealed a VU molecular signature characterized by downregulated RNA/protein production (M1, M3, M5) and cell mitosis genes (M7), upregulated extracellular matrix organization genes (M9), and distinct immune signatures distinguishing chronic inflammation in VU (M11, M12 with adaptive immunity genes) from acute wound inflammation (M8 with neutrophil activation genes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 describe mRNA coexpression analysis with appropriate methodology and validation. The GO analysis results (C24) align with established wound biology knowledge, supporting data quality. The identification of master regulators (NFKB1, RELA for M1; E2F1 for M7) is supported by both enrichment analysis and literature citations. The VU molecular signature (C27-C28) represents a novel finding that is internally consistent with the miRNA analysis and supported by multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Integrative analysis revealed significantly negative correlations between differentially expressed miRNAs and their predicted mRNA targets in VU (p = 1.36e-12 to 1.27e-04). Specific negative correlations were identified between downregulated miRNA modules (m3, m7, m9) and upregulated mRNA modules (M9, M11, M12), and between upregulated miRNA modules (m8, m12) and downregulated mRNA module (M5). The study identified 17 pathologically relevant miRNAs with abnormal VU expression and targets enriched in the VU gene signature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 describe integrative miRNA-mRNA analysis using appropriate statistical methods (Pearson correlation, Fisher's exact test with OR >1, p <0.05). The negative correlations between miRNA and mRNA expression are consistent with the known mechanism of miRNA-mediated gene repression. The enrichment analysis appropriately accounts for multiple testing and uses biologically relevant thresholds. The identification of 17 pathologically relevant miRNAs (C33) represents a key finding that integrates expression changes with functional target enrichment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C77",
+      "C78"
+    ],
+    "result": "The study validated miRNA expression by qRT-PCR in 7 healthy donors and 12 VU patients, confirming 11 miRNAs (9 newly identified plus miR-34a-5p and miR-34c-5p from prior work). Expression was confirmed in CD45- epidermal cells by sRNA-seq (n=5) and in laser-capture microdissected epidermis by qRT-PCR (n=7), showing upregulation of miR-34a-5p and miR-424-5p in VU wound-edge epidermis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35, C77-C78 describe comprehensive validation using multiple orthogonal methods (qRT-PCR, sRNA-seq, laser capture microdissection) in independent cohorts. The validation cohort is appropriately matched for age and anatomical location. The use of cell-type-specific analysis (CD45- epidermal cells, LCM-isolated epidermis) addresses potential confounding from cellular heterogeneity. The consistency across methods and cohorts strongly supports the robustness of the initial RNA-seq findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C79",
+      "C80"
+    ],
+    "result": "Genome-wide microarray analysis in primary keratinocytes or fibroblasts overexpressing eight miRNAs showed that predicted strongest targets were significantly downregulated compared to non-targets (Wilcoxon p = 1.34e-25 to 1.91e-59). Experimentally validated targets of miR-218-5p, miR-34a-5p, miR-34c-5p, and miR-7704 showed significant enrichment for the VU gene signature (Fisher's exact test, OR >1, p <0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37, C79-C80 describe targetome validation using appropriate methodology (genome-wide microarray in primary human cells with miRNA overexpression). The statistical significance is very strong (p-values ranging from 1.34e-25 to 1.91e-59), and the enrichment analysis appropriately uses Fisher's exact test. The reanalysis of published data (GSE117506) for miR-34a/c adds rigor. The validation confirms computational predictions and links miRNA dysregulation to VU pathology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C61"
+    ],
+    "result": "miR-34a/c and miR-7704 targets were enriched for downregulated M5 module mRNAs in VU, while miR-218-5p targets were enriched for upregulated M9 module mRNAs. miR-34a/c were specifically upregulated in VU with stable low expression during normal wound healing, and overexpression reduced expression of 39 M5 hub genes in keratinocytes, with 26 showing negative correlation with miR-34a/c in vivo. miR-7704, a human-specific miRNA, showed significantly increased expression in VU.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C44, C61 integrate computational predictions, experimental validation, and in vivo correlation analysis. The microarray data showing downregulation of 39 M5 hub genes (log2FC \u2264-0.58, p <0.05) with 26 showing negative correlation in vivo (Pearson's r = -0.83 to -0.45, p <0.05) provides strong evidence for functional relevance. The identification of miR-7704 as human-specific is notable for translational relevance. The consistency between predicted and validated targets, combined with prior functional data (C38), strongly supports these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "VU-dysregulated miRNAs showed cooperativity through shared targets: miR-34a/c shared 8-10 targets with miR-424-5p or miR-7704; miR-96-5p and miR-218-5p shared 8 targets. Functional annotation revealed that upregulated miRNAs (miR-34a-5p, miR-34c-5p, miR-424-5p, miR-450-5p, miR-7704, miR-516-5p) promote inflammation but inhibit proliferation, while downregulated miRNAs (miR-218-5p, miR-96-5p) are required for cell growth and activation, suggesting cooperative contribution to stalled wound healing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 describe miRNA cooperativity based on target sharing and functional annotation. The identification of shared targets is supported by computational analysis, and the functional predictions are based on GO analysis of experimentally validated targets from microarray data. However, C49 is somewhat speculative as it infers cooperative effects without direct experimental validation of the combined miRNA effects at this stage. The logic is sound but represents an inference that requires further validation (which is provided in later claims C50-C54).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C56",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Experimental validation demonstrated that miR-34a-5p and miR-424-5p cooperatively suppressed keratinocyte proliferation (Ki-67 expression) and migration, with combination treatment showing stronger effects than individual miRNAs. miR-34a-5p and miR-516b-5p cooperatively enhanced inflammatory chemokine expression (CCL20). The miRNAs target different genes in the same pathways (e.g., cell cycle: miR-34a-5p targets CCND1, CDK6, HDAC1, E2F3; miR-424-5p targets ANAPC13, CCNE1, CDC25B, CDK1, CDKN1B, CHK1, WEE1, YWHAH; only CDC23 is co-targeted).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54, C56, C69-C72 provide direct experimental evidence for miRNA cooperativity using multiple assays (Ki-67 immunofluorescence, live cell imaging, scratch wound assays, qRT-PCR). The experiments include appropriate controls (individual miRNA overexpression/inhibition vs. combination) and show statistically significant differences. The pathway analysis (C69-C71) explains the mechanism of cooperativity through targeting different genes in the same pathway. The sample sizes appear adequate (n=3-10 depending on assay) and statistical tests are appropriate (one-way ANOVA, two-way ANOVA).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C81",
+      "C82"
+    ],
+    "result": "The study developed an open-access web resource (https://www.xulandenlab.com/humanwounds-mirna-mrna) presenting the analyzed dataset through an R Shiny app. Raw sequencing and microarray data were deposited in NCBI GEO under accession numbers GSE174661 and GSE196773.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55, C81-C82 describe data availability and resource development. The deposition of raw data in public repositories (GEO) follows best practices for reproducibility. The development of an interactive web resource adds value for the research community. These are straightforward factual claims that are verifiable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The introduction establishes background knowledge about wound healing biology, venous ulcers as a clinical problem, miRNA biology and function, and limitations of animal models for studying human wound healing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C11 present background information supported by appropriate citations to peer-reviewed literature. These claims establish the rationale for the study but do not present new findings. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The study proposes that targeting cooperating miRNAs could provide innovative wound treatment with higher therapeutic efficacy and specificity, and that miR-34 inhibition combined with modulation of other deregulated miRNAs might be a promising VU treatment approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C57, C88-C90 represent speculative conclusions about therapeutic potential. While the underlying data on miRNA cooperativity is well-supported (C50-C54), these claims extrapolate to therapeutic applications without direct evidence of efficacy in vivo or in clinically relevant models. C88 is particularly speculative as it suggests a specific therapeutic approach (miR-34 inhibition plus modulation of other miRNAs) without experimental validation of this combination. These represent reasonable hypotheses for future work but are not directly supported by the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C86",
+      "C87",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The discussion contextualizes findings within existing literature, noting that miRNA function is cell-type specific, that miR-34a has been identified in diabetic foot ulcers, that various miRNAs have known skin-related functions, and acknowledging study limitations including bulk RNA-seq limitations and challenges with single-cell sRNA-seq technology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C68, C86-C87, C91-C93 present discussion points supported by appropriate citations. The acknowledgment of limitations (C92-C93) is appropriate and honest. The contextualization of findings within existing literature is well-supported. These are primarily interpretive claims that appropriately reference prior work.",
+    "result_type": "MINOR"
+  }
+]

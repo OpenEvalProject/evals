@@ -1,0 +1,215 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C22"
+    ],
+    "result": "Klf9 expression is enriched in quiescent RGLs compared to activated RGLs. This was demonstrated using LacZ reporter mice (C9) and FISH analysis (C10), with consistency across gene expression profiling studies in multiple stem cell types (C22).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C10 provide direct experimental evidence with statistical significance (p=0.003 and significant enrichment respectively) showing Klf9 enrichment in quiescent vs. activated RGLs. C22 provides supporting evidence from prior literature across multiple stem cell populations. The convergence of multiple experimental approaches and consistency with prior work strongly supports this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C23"
+    ],
+    "result": "Klf9 regulates RGL activation state: conditional deletion of Klf9 in Gli1+ RGLs significantly increased the fraction of activated RGLs (C11), while genetic overexpression of Klf9 decreased activation (C12), demonstrating bidirectional control of RGL activation by Klf9 (C23).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11 and C12 provide complementary loss- and gain-of-function experiments with statistical significance (p<0.0001 for deletion, significant decrease for overexpression). The bidirectional effects strongly support a causal role for Klf9 in regulating RGL activation state. However, C47 indicates only ~32% recombination efficiency, which may underestimate the true effect size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C48"
+    ],
+    "result": "Loss of Klf9 in RGLs results in increased multi-RGL containing clones at 7 dpi, with many clones also containing neural progenitors and astrocytes, suggesting Klf9 deletion biases RGL expansion without preventing differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C13 provides detailed statistical analysis showing significantly more multi-RGL clones and fewer single-RGL clones (p<0.0001 for key comparisons). C48 adds important context that differentiation still occurs. The clonal analysis directly demonstrates RGL expansion, though the interpretation that this reflects symmetric self-renewal requires additional validation provided in subsequent claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C49",
+      "C50"
+    ],
+    "result": "Klf9 functions as a brake on symmetric self-renewal of RGLs. Longitudinal two-photon imaging demonstrated that deletion of Klf9 resulted in significantly more symmetric divisions (39 symmetric vs 38 asymmetric) compared to controls (18 symmetric vs 47 asymmetric), with 2.7\u00d7 higher odds of symmetric division (p=0.015).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14 and C15 provide direct in vivo imaging evidence with appropriate statistical analysis (likelihood-ratio test). C49 and C50 describe the morphological criteria used to distinguish division types, citing prior work (Pilz et al., 2018). The longitudinal imaging approach provides definitive evidence for the division mode, though the sample sizes are modest (8 control mice with 65 divisions, 10 experimental mice with 77 divisions). The convergence of clonal analysis (C13) and direct imaging strongly supports this major conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Loss of Klf9 in RGLs results in a coordinated transcriptional program: downregulation of quiescence factors (BMP4) and upregulation of genes involved in lipid metabolism, cell cycle, mitogen signaling, Notch signaling (including elevated NICD levels), and fatty acid oxidation pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 provide qRT-PCR validation of key DEGs and immunostaining confirmation of elevated NICD. Claims C24-C26 describe RNA-seq results with gene ontology analysis. The molecular profiling is comprehensive and internally consistent. However, C51 notes >50% recombination efficiency by qRT-PCR, which differs from the ~32% estimated by FISH (C47), raising questions about the cellular composition of the profiled population. Despite this, the validation of key genes by independent methods supports the overall transcriptional program.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C27",
+      "C28",
+      "C37",
+      "C52"
+    ],
+    "result": "Klf9 acts as a transcriptional regulator that both activates (BMP4) and represses (mitogen signaling, FAO, cell cycle genes) to control RGL expansion, with repression appearing to be the dominant mode of gene regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C27, C28, and C37 are inferences from the loss-of-function data about Klf9's transcriptional activity. C52 provides context that Klf9 can function as both activator and repressor. The inference that high Klf9 induces BMP4 and represses expansion-associated genes is reasonable given the loss-of-function data, though direct evidence of Klf9 binding to these gene regulatory regions is not provided. The mechanistic model is well-supported by the data but remains partially inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C36"
+    ],
+    "result": "Enhanced fatty acid \u03b2-oxidation (FAO) is a metabolic program recruited to sustain RGL expansion, and NSCs require high levels of FAO for symmetric self-renewal or expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C32 is inferred from bioinformatics analysis showing upregulation of FAO genes upon Klf9 deletion. Claim C36 is explicitly stated as a proposal based on comparison with other stem cell types. While the RNA-seq data shows upregulation of FAO pathway genes, there is no direct functional validation (e.g., FAO inhibition experiments in this system) to demonstrate that FAO is required for the observed RGL expansion. The claim is plausible but requires additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C38",
+      "C39"
+    ],
+    "result": "Notch signaling components, particularly Lfng and NICD, are upregulated upon Klf9 deletion and are implicated in sustaining symmetric divisions and RGL expansion based on prior studies in other systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 proposes Pla2g7 as a novel RGL marker based on expression patterns. Claims C30-C31 and C38-C39 cite prior research on Notch signaling in stem cell self-renewal. The upregulation of Lfng and elevated NICD levels (C19) in Klf9-deleted RGLs is experimentally validated. However, the functional requirement for Notch signaling in the observed RGL expansion phenotype is not directly tested in this study. The connection to symmetric self-renewal is inferred from prior work in other cell types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C53",
+      "C54"
+    ],
+    "result": "Prior studies in other stem cell systems have shown that FAO is important for stem cell maintenance and that FAO inhibition affects division modes, providing context for the observed upregulation of FAO genes upon Klf9 deletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 and C53-C54 cite prior research on FAO in various stem cell types. These are accurately represented citations that provide important context for interpreting the RNA-seq results. However, C54 notes ambiguity in prior hippocampal NSC studies about whether FAO inhibition effects were due to death or altered division modes, highlighting the need for direct functional validation in the current system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Klf9 may integrate experiential signals (steroid hormones, neural activity) through epigenetic mechanisms involving mSin3A corepressor complex recruitment, potentially linking to other signaling pathways (GABA, PTEN, FoxO3, glucocorticoid) that regulate RGL quiescence and activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C40-C42 and C56-C59 are largely speculative, connecting Klf9 to various signaling pathways based on prior literature. C41-C42 cite evidence that Klf9 is regulated by hormones/activity and recruits corepressor complexes. C56-C57 note the relationship between FoxO3 and Klf9. However, these connections are not experimentally validated in the current study. C59 explicitly states this is speculative ('may support'). While these are reasonable hypotheses for future work, they lack direct experimental support in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The RNA-seq dataset identifies candidate genes (Embigin, ChrnA7) with known roles in stem cell regulation in other systems, and Klf9 enrichment in other quiescent stem cell populations suggests broader relevance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 cite prior research showing roles for specific DEGs in other stem cell systems and document Klf9 enrichment in other quiescent stem cell populations. These are accurately represented citations that position the findings in a broader context. However, the functional relevance of these specific genes to RGL biology is not tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C51"
+    ],
+    "result": "The Gli1CreERT2 driver line targets long-term self-renewing RGLs, with estimated Klf9 recombination efficiency of approximately 32% by FISH analysis and >50% by qRT-PCR in targeted cell populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C46 cites prior work justifying the Gli1CreERT2 line choice. Claims C47 and C51 report different recombination efficiencies using different methods (32% by FISH vs >50% by qRT-PCR). This discrepancy is concerning and not adequately explained. The incomplete recombination means the observed effects may underestimate the true impact of Klf9 deletion, but also raises questions about the cellular composition of analyzed populations, particularly for the RNA-seq experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "Klf9 may directly suppress proneurogenic programs in RGLs, such as NeuroD4, based on its identification as a downregulated DEG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C55 is an inference from the observation that NeuroD4 is downregulated upon Klf9 deletion, supported by a citation to prior work on NeuroD4's proneurogenic function. However, there is no direct evidence that Klf9 binds to or directly regulates NeuroD4, nor functional validation that NeuroD4 downregulation contributes to the observed phenotype. This remains a plausible but unvalidated hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Background claims establishing that RGLs in the adult hippocampus give rise to neurons and astrocytes, that neurogenesis is experience-dependent, and that RGLs can undergo symmetric or asymmetric divisions with distinct functional consequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 are well-supported by multiple citations to prior research establishing the field's understanding of adult hippocampal neurogenesis and RGL division modes. C8 is a reasonable inference about the adaptive function of RGL amplification. These claims provide essential background context but do not represent novel findings from this study.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,388 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "DmDRA1 neurons in the medulla dorsal rim area (MEDRA) are polarization-sensitive, receiving input from DRA R7 photoreceptors. These neurons exhibit polarotopic organization with preferred angles of polarization shifting counter-clockwise from anterior to posterior in the right optic lobe, matching R8 photoreceptor tunings. DmDRA1 neurons show polarization opponency with excitation at preferred angles and inhibition at orthogonal angles and unpolarized light.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C44 are well-supported by calcium imaging data (Figures 1C-H), anatomical characterization (Figure 1B), and control experiments with polarizer removed (Figure 1E-F). The polarotopic organization is demonstrated with strong statistical correlations (\u03c1=0.85, p<10^-4), and PSI values show significant modulation (average 0.74 vs 0.20 background). The inference that R7 provides predominant input is supported by anatomical overlap, cited connectivity data, and the 90\u00b0 shift expected from inhibitory photoreceptors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "MeTu neurons receive polarization signals from DRA R7 photoreceptors both directly and via DmDRA1 neurons, forming a parallel pathway in the MEDRA. Trans-Tango tracing from DmDRA1 and Rh3/Rh4 photoreceptors labels MeTu neurons projecting to the intermediate-lateral domain of the AOTU. Single-cell clones reveal a consistent mapping from anterior-posterior position in MEDRA to ventral-dorsal position in AOTU.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C57 are supported by trans-Tango connectivity data (Figure 2B-C), anatomical proximity analysis (Figure 2\u2014supplement 1A), and single-cell MCFO clones (Figure 2E, supplement 1B-D). The parallel pathway inference is reasonable given the anatomical overlap and connectivity patterns. However, the trans-Tango technique labels putative connections that would ideally be confirmed with electrophysiology or more direct connectivity methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "MeTu neuron populations (R56F07 and R73C04) show statistically significant polarization sensitivity in the AOTU with spatially restricted high PSI values. Both populations exhibit predominant polarotopic organization with counter-clockwise shift in preferred angle from ventral to dorsal in the right AOTU, though approximately 20% of experiments showed alternative organizations including inverted polarotopy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 are supported by calcium imaging data showing significant PSI increases vs controls (Figure 2G), spatial PSI distributions (Figure 3A-B), and polarotopy analysis with significant correlations (R56F07: \u03c1=0.71, R73C04: \u03c1=0.56, p<10^-4). The observation of alternative polarotopic organizations in ~20% of experiments is documented but not fully explained, suggesting either biological variability or technical factors that warrant further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The AOTU contains functionally segregated regions encoding polarized light, unpolarized bar stimuli, and optic flow. Lateral MeTu terminals show vertical polarotopic organization, while intermediate regions respond to bars with retinotopic mapping. Responses to contralateral visual field stimuli suggest inter-hemispheric processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 are supported by combined activity maps (Figure 4A), tuning data for polarization (Figure 4B-C), bar responses (Figure 4D-E), and optic flow responses (Figure 4F). The retinotopic and polarotopic organizations are demonstrated with appropriate spatial analysis. The inference about inter-hemispheric processing from contralateral responses is reasonable but would benefit from additional circuit tracing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "TuTu neurons project via the inter-tubercle tract to the contralateral AOTU, predominantly innervating the intermediate-lateral domain. These neurons are polarization-sensitive with PSI values similar to MeTu neurons but show tunings to a limited range (~30\u00b0) centered around horizontal orientation. TuTu neurons do not respond to unpolarized bar stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C77 are supported by trans-Tango labeling (Figure 5A), anatomical characterization (Figure 5B), lack of bar responses (Figure 5C), and polarization tuning data (Figure 5E-F). The correspondence with hemibrain connectome TuTuB neurons strengthens the anatomical claims. However, the functional role of these neurons remains unclear given their limited tuning range and lack of bar responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "TuBu neuron dendrites in the AOTU show domain-specific polarization sensitivity: TuBua and TuBus (innervating AOTUil and AOTUl) have high PSI values and common polarotopic organization, while TuBui (innervating AOTUim) shows no significant polarization sensitivity. The polarotopy direction matches MeTu neurons but with shifted tuning positions along the ventrodorsal axis, suggesting either inhibitory input or integration of additional polarization-sensitive inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C83 are supported by PSI analysis (Figure 6B-C) and polarotopy data (Figure 6G-I). The domain-specific differences are clear and statistically significant. The mismatch in tuning positions between MeTu and TuBu is well-documented (Figure 6I vs Figure 3E-F), and the proposed explanations (inhibitory input or additional inputs) are reasonable inferences, though direct evidence for either mechanism is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "In the bulb, TuBu neuron outputs show region-specific polarization sensitivity: TuBua neurons in the anterior bulb (BUa) uniformly exhibit high PSI values (>0.5) with approximately uniform representation of preferred angles; TuBus neurons in the superior bulb (BUs) show mixed PSI values with non-uniform distribution favoring \u00b145\u00b0; TuBui neurons in the inferior bulb (BUi) show no appreciable polarization responses. Each TuBu neuron connects exclusively with one ring neuron.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C94 are supported by PSI spatial maps (Figure 7A), quantitative PSI analysis (Figure 7C), statistical comparisons (Figure 7E), and polar histograms (Figure 7F-G). The one-to-one connectivity with ring neurons is supported by light microscopy and hemibrain connectome data. The functional interpretation that BUa provides uniform polarization representation while BUs may detect specific polarization features is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "TuBu neuron populations show differential responses to unpolarized blue light: TuBus and TuBui are excited in both AOTU and bulb (more strongly in bulb), while TuBua neurons are inhibited in both regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 are supported by flash response data (Figure 7\u2014supplement 1B). The differential responses across TuBu subtypes are clear and consistent. This provides important context for understanding how these neurons integrate polarized and unpolarized visual information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Ring neurons ER2 and ER4m receive polarization signals in the bulb with different response properties: only a subset of ER2 neurons in BUs show polarization sensitivity, while ER4m neurons in BUa consistently show high PSI values (>0.5) with individual neurons exhibiting distinct angle preferences. ER4m neurons almost certainly acquire polarization-tuned responses from presynaptic TuBua neurons, though average PSI decreases from TuBua to ER4m.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C104 are supported by PSI analysis (Figure 8C-D), statistical comparisons (Figure 8E), tuning maps (Figure 8G), and GRASP connectivity data (Figure 8F). The inference that ER4m acquires responses from TuBua is well-supported by connectivity and response similarity. The PSI decrease suggests signal transformation, though the mechanism is not determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "ER4m ring neuron terminals in the ellipsoid body show polarization modulation with spatially localized high PSI regions. Individual terminals exhibit distinct angle preferences, but within each animal, preferred angles are similar and form unimodal distributions centered on different angles across animals. Population tuning vectors increase in length from TuBua (0.18) to ER4m dendrites (0.39) to ER4m terminals (0.51), indicating progressive reduction in the range of angles represented. This suggests ER4m populations deliver a preferential response to a specific angle that varies across individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C117 are supported by PSI maps (Figure 9A), tuning maps (Figure 9B), polar histograms (Figure 9C), population responses (Figure 9D), and population tuning vector analysis (Figure 9E-G). The progressive increase in vector length is well-documented and statistically significant. The interpretation that this represents a flexible, animal-specific heading signal is reasonable but speculative, as the functional significance is not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "E-PG compass neurons in the protocerebral bridge show polarization modulation but with substantially lower PSI values than ER4m neurons and unique response characteristics. PSI values cluster in 2-4 contiguous glomeruli with similar preferred angles, showing bilateral coupling. E-PG responses show inconsistent amplitude and peak position across polarizer rotation cycles, with less than half of glomeruli exhibiting periodicity matching the stimulus (43.3% vs 98.4% for ER4m and 100% for TuBua).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C132 are supported by GRASP connectivity (Figure 10\u2014supplement 1B), PSI analysis (Figure 10B-E), time-series data (Figure 10F-G), and auto-correlation analysis (Figure 10\u2014supplement 1C). The low PSI values and variable responses are well-documented. However, the small effect size (\u0394PSI=0.06) and PSI values often lower than background raise questions about the biological significance of these responses. The interpretation that this reflects flexible encoding is reasonable but the data could also reflect weak or inconsistent polarization sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "E-PG neurons show no common polarotopic organization across animals, with glomeruli at corresponding positions exhibiting different preferred angles. However, within individual animals, neighboring glomeruli (\u00b11 position from highest PSI) show similar tunings (within 15\u00b0), while glomeruli at \u00b12-4 positions shift toward orthogonal angles. This can be viewed as a limited representation of two approximately orthogonal angles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C137 are supported by tuning maps across animals (Figure 10C), scatter plot analysis (Figure 10H), and tuning shift analysis (Figure 10I, supplement 1F-H). The lack of common organization matches findings in locust CL1a neurons (cited). The local organization within animals is demonstrated, though the interpretation as a binary orthogonal system is somewhat speculative and would benefit from additional analysis or modeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C13",
+      "C14",
+      "C21",
+      "C22"
+    ],
+    "result": "Background on insect polarization vision: Many insects use skylight polarization patterns for navigation. The dorsal rim area is a specialized eye region for detecting skylight polarization. Drosophila have been shown behaviorally to orient relative to polarization patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C13, C14, C21, C22 represent well-established background knowledge supported by multiple citations to previous literature. These provide appropriate context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background on central complex function and sky compass pathways: The central complex in flies coordinates spatial memory, navigation, and homeostatic processes. It encodes heading direction that can be updated by proprioceptive and external cues. In other insects, the sky compass pathway transmits polarization signals from eyes to central complex. The anterior visual pathway in Drosophila has been postulated as the homologue, but polarization-processing neurons beyond the dorsal rim area had not been identified prior to this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C20 represent established background from cited literature and appropriately frame the knowledge gap addressed by the current study. The citations support the claims about central complex function and sky compass pathways in other insects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Main conclusion: Polarization-tuned neurons are found throughout the anterior visual pathway in Drosophila, connecting the optic lobes to the central complex via the AOTU and bulb. This pathway also conveys unpolarized visual features. The organization is homologous to sky compass pathways in other insects, with a transformation from consistent polarotopic organization in the periphery to reduced, flexible representation in the central brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5, C138-C141 represent the main conclusions of the study, which are well-supported by the comprehensive anatomical and functional data presented throughout the manuscript. The homology claim is supported by similarities in anatomy, connectivity, and function, though some differences from other insects (e.g., lack of fixed polarotopy in E-PG) are also noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Interpretation of MEDRA function: Almost the full extent of the DRA was stimulated by a single-point polarized light source, revealing a wide range of tunings in downstream neurons. This supports the idea that the MEDRA analyzes the overall sky polarization pattern to extract a predominant angle, rather than performing local estimates. DmDRA1 spatial integration could provide robustness to occlusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C146 are reasonable interpretations of the data, supported by the observation that a single stimulus point activated neurons with diverse tunings (Figure 1\u2014supplement 1E-F) and the anatomical properties of DmDRA1 neurons spanning ~10 columns. The interpretation is consistent with cited theoretical work on polarization vision, though direct evidence for the proposed functional benefits is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C147",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Interpretations of circuit organization and function: The parallel circuitry in MEDRA resembles color-processing pathways. The AOTU may be a site for signal modulation. TuBu neurons extract processed signals and divide them into functional groups. The site of celestial cue integration is not at the TuBu-ring neuron synapse. TuBus neurons may detect specific polarization features rather than accurately estimate orientation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C147, C149-C154 represent interpretations and inferences about circuit function that are reasonable given the data but lack direct experimental support. The comparison to color pathways is based on anatomical similarity. The proposed functional roles are speculative and would require additional experiments (e.g., behavioral assays, optogenetic manipulation) to confirm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Interpretation of ER4m function: ER4m ring neurons do not simply relay TuBua responses but deliver a subset of signals more prominently, bestowing the population with an ensemble response tuned to a specific angle that varies across animals. This may represent a flexible heading signal relative to polarized light cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C155-C157 are interpretations of the population tuning data (Figure 9) that are reasonable but speculative. The observation that population tuning varies across animals is well-documented, but the interpretation that this represents a flexible heading signal is not directly tested. Alternative explanations (e.g., developmental variability, rearing conditions) are not ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "Interpretations of E-PG responses: Polarization tunings in ER4m and E-PG neurons are not represented with a common retinotopic map across animals, matching findings for unpolarized stimuli and locust CL1a neurons. E-PG neurons may respond to one of two orthogonal angles, dividing the population into two groups suited for motor-centered processing. The lack of an activity bump is attributed to open-loop stimulation in immobilized animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C158-C164 are interpretations that are reasonable given the data and consistent with cited literature, but remain speculative. The binary orthogonal system interpretation (C161-C163) is an interesting hypothesis but not rigorously tested. The explanation for lack of activity bump (C164) is plausible but the flexible encoding interpretation is based on variable responses that could have alternative explanations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "Context for behavioral significance: In ants and beetles, polarization cues can dominate over other visual features in navigation. In Drosophila, intensity gradients have greater behavioral significance than polarized light, yet connectome analysis suggests polarization-sensitive ring neurons may be at the top of a sensory input hierarchy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C165-C167 are supported by citations to behavioral studies and connectome analysis. This provides important context for interpreting the functional significance of the identified pathway, though it also highlights an apparent discrepancy between circuit organization and behavioral importance that warrants further investigation.",
+    "result_type": "MINOR"
+  }
+]

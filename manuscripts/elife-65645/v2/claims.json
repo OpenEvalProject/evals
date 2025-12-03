@@ -1,0 +1,879 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Antibiotic resistant infections are responsible for tens of thousands of deaths annually.",
+    "claim_type": "EXPLICIT",
+    "source": "Antibiotic resistance is one of the biggest current public health problems, with antibiotic resistant infections responsible for tens of thousands of deaths annually (O'Neill, 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to O'Neill, 2015",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "Understanding the evolution of multidrug resistance (MDR) is typically not captured by our understanding of the evolution of single drug resistance.",
+    "claim_type": "EXPLICIT",
+    "source": "Despite its importance, understanding the evolution of MDR remains an ongoing challenge, as it is typically not captured by our understanding of the evolution of single drug resistance (for which there is a large body of theory; e.g., Blanquart, 2019; Bonhoeffer et al., 1997; Lipsitch et al., 2000; Bergstrom et al., 2004; Austin and Anderson, 1999).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to multiple theoretical works on single drug resistance",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "If D=0, then the evolution of resistance to each drug is independent, and so multiple drugs do not qualitatively alter the evolutionary dynamics of single drug resistance.",
+    "claim_type": "EXPLICIT",
+    "source": "If D=0, then the evolution of resistance to each drug is independent, and so multiple drugs do not qualitatively alter the evolutionary dynamics of single drug resistance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Based on logical inference from the mathematical relationship fAB = fA\u00b7fB + D",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "Whenever D\u22600, understanding the fitness costs and benefits of resistance to each drug in isolation is insufficient to understand the evolution of MDR.",
+    "claim_type": "EXPLICIT",
+    "source": "However, whenever D\u22600, understanding the fitness costs and benefits of resistance to each drug in isolation is insufficient to understand the evolution of MDR, because doing so will not tell us what factors govern the propagation of D, which in turn will affect fA and fB.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Based on logical inference from the mathematical relationship and the role of D in the dynamics",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "The challenge of understanding MDR evolution can be recast as understanding the dynamics of D (linkage disequilibrium).",
+    "claim_type": "EXPLICIT",
+    "source": "Thus the challenge of understanding MDR evolution can be recast as understanding the dynamics of D.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Based on logical inference from the preceding mathematical arguments",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "Linkage disequilibrium (LD) has been extensively studied in population genetics.",
+    "claim_type": "EXPLICIT",
+    "source": "The quantity D is referred to as linkage disequilibrium (LD), and it has been extensively studied in population genetics (e.g. Lewontin, 1964; Felsenstein, 1965; Ohta, 1982a; Barton, 1995; Rice, 2004; Slatkin, 2008), particularly as it relates to population structure (Ohta, 1982b; Slatkin, 1975; Li and Nei, 1974; Nei and Li, 1973; Lenormand and Otto, 2000; Martin et al., 2006).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by multiple citations to population genetics literature",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "There has been little attempt to apply linkage disequilibrium insights to MDR evolution.",
+    "claim_type": "EXPLICIT",
+    "source": "However, there has been little attempt to apply these insights to MDR evolution; often the dynamics of doubly resistant infections are neglected to simplify the analysis of single drug resistance (e.g. Bergstrom et al., 2004; Bonhoeffer et al., 1997; Beardmore et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations showing that doubly resistant infections are often neglected",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "Treatment is instantaneous and resistance is complete in the model.",
+    "claim_type": "EXPLICIT",
+    "source": "Treatment is instantaneous and resistance is complete, that is, if the host that receives treatment is infected by a strain sensitive to the drug, the infection is cleared instantaneously, whereas if the host that receives treatment is infected by a strain resistant to the drug, treatment has no effect.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a model assumption stated in the manuscript",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Transmission between infected hosts leads to superinfection with probability \u03c3 in which either strain is equally likely to instantaneously outcompete the other.",
+    "claim_type": "EXPLICIT",
+    "source": "Transmission between infected hosts leads to superinfection with probability \u03c3 in which either strain is equally likely to instantaneously outcompete the other (Nowak and May, 1994; Alizon, 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a model assumption supported by citations",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "The model does not allow for prolonged coinfection.",
+    "claim_type": "EXPLICIT",
+    "source": "We therefore do not allow for prolonged coinfection (Materials and methods 'Model derivation').",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a model assumption stated in the manuscript",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "Multiplicative costs of resistance will generate epistasis.",
+    "claim_type": "EXPLICIT",
+    "source": "for example, multiplicative costs will generate epistasis (Box 1; Materials and methods 'Equilibrium analysis of metapopulation consisting of independent populations').",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated in the Materials and methods section",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "Migration acts to reduce differences between populations.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, migration acts to reduce differences between populations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This follows from the mathematical analysis of Equation (3) and is a standard result in population genetics",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "Drug B treatment alters the predicted dynamics of resistance to drug A via two main effects: (i) the influence of epistasis and (ii) indirect selection on resistance to drug B mediated through the presence of LD.",
+    "claim_type": "EXPLICIT",
+    "source": "It follows that drug B treatment alters the predicted dynamics of resistance to drug A via two main effects: (i) the influence of epistasis and (ii) indirect selection on resistance to drug B mediated through the presence of LD (Dx\u22600).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This follows from the mathematical analysis of Equation (3)",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "Mutation and recombination remove any LD present at a rate proportional to the LD.",
+    "claim_type": "EXPLICIT",
+    "source": "Second, mutation and recombination removes any LD present at a rate proportional to the LD (Rice, 2004; Slatkin, 2008).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a standard result in population genetics, supported by citations",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "Positive epistasis could occur if double-resistance costs are less than expected or drugs are prescribed in combination.",
+    "claim_type": "EXPLICIT",
+    "source": "Positive epistasis could occur if double-resistance costs are less than expected (Trindade et al., 2009; MacLean et al., 2010; Hall and MacLean, 2011) or drugs are prescribed in combination (Bretscher et al., 2004; Day and Gandon, 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to empirical and theoretical studies",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "Migration does not require preexisting LD to operate on LD.",
+    "claim_type": "EXPLICIT",
+    "source": "Like epistasis, migration does not require preexisting LD to operate on LD (Li and Nei, 1974; Slatkin, 1975; Feldman and Christiansen, 1974; Ohta, 1982a; Ohta, 1982b).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a standard result in population genetics, supported by citations",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "LD in population x will be generated whenever the frequencies of resistance to drugs A and B differ between population x and any other connected population.",
+    "claim_type": "EXPLICIT",
+    "source": "In particular, LD in population x will be generated whenever the frequencies of resistance to drugs A and B differ between population x and any other connected population, say y.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This follows from the mathematical analysis of Equation (4)",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "If drug A resistance is more prevalent in one population, while drug B resistance is more prevalent in the other, migration will generate negative LD in both populations.",
+    "claim_type": "EXPLICIT",
+    "source": "If instead drug A resistance is more prevalent in one population, while drug B resistance is more prevalent in the other, migration will generate negative LD in both populations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This follows from the mathematical analysis of Equation (4)",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "When one population has much fewer total infections than another population, the ability of migration to propagate LD will be greater in the population with lower density of infections.",
+    "claim_type": "EXPLICIT",
+    "source": "However, when one population, say y, has much fewer total infections than population x, Iy\u226aIx, the term Ix/Iy will be very large, whereas Iy/Ix will be very small. Consequently, the ability of migration to propagate LD will be greater in population y than x, and so all else being equal we would predict the population with a lower density of infections will have a greater magnitude of LD than the population with a higher density of infections.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This follows from the mathematical analysis of Equation (4), specifically the presence of the Iy/Ix multiplier",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "The magnitude of population LD is maximized at intermediate migration rates.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the magnitude of population LD is actually maximized at intermediate migration rates (Figure 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the analysis and shown in Figure 2",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "There may be population LD but no metapopulation LD.",
+    "claim_type": "EXPLICIT",
+    "source": "likewise, there may be population LD, Dx\u22600, but no metapopulation LD, DM=0 (Nei and Li, 1973; Ohta, 1982a; Feldman and Christiansen, 1974).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This follows from the mathematical relationship and is supported by citations",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "More productive populations will have a disproportionate effect on the change in drug A resistance.",
+    "claim_type": "EXPLICIT",
+    "source": "In particular, more productive populations (larger rx) will have a disproportionate effect on the change in drug A resistance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This follows from the mathematical analysis of Equation (6) and the covariance term cov(r,fA)",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "The magnitude of metapopulation LD is a decreasing function of the per-capita migration rate and is maximized when migration is infrequent.",
+    "claim_type": "EXPLICIT",
+    "source": "It follows that, all else being equal, the magnitude of DM is a decreasing function of the per-capita migration rate, and so is maximized when migration is infrequent (Figure 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This follows from the mathematical analysis and is shown in Figure 2",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "At equilibrium, population differences can lead to MDR over-representation (DM > 0).",
+    "claim_type": "EXPLICIT",
+    "source": "Lehtinen et al., 2019 found that at equilibrium, population differences could lead to MDR over-representation (DM>0), and that populations with a longer duration of pathogen carriage were more likely to exhibit MDR, a result they attributed to an increased likelihood of antibiotic exposure per carriage episode.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a finding from Lehtinen et al., 2019",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "Populations with a longer duration of pathogen carriage were more likely to exhibit MDR.",
+    "claim_type": "EXPLICIT",
+    "source": "Lehtinen et al., 2019 found that at equilibrium, population differences could lead to MDR over-representation (DM>0), and that populations with a longer duration of pathogen carriage were more likely to exhibit MDR, a result they attributed to an increased likelihood of antibiotic exposure per carriage episode.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a finding from Lehtinen et al., 2019",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "To maintain metapopulation LD at equilibrium, there needs to be at minimum some mechanism maintaining metapopulation resistance diversity.",
+    "claim_type": "EXPLICIT",
+    "source": "To maintain metapopulation LD at equilibrium, there needs to be at minimum some mechanism maintaining metapopulation resistance diversity, otherwise DM=0.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This follows from logical inference about equilibrium conditions",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "Only when population differences generate correlations between the selection coefficients will they generate LD.",
+    "claim_type": "EXPLICIT",
+    "source": "Hence only when population differences generate correlations between the selection coefficients will they generate LD.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This follows from the mathematical analysis of Equation (3) and the equilibrium conditions",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "When costs are additive, variation in duration of carriage can lead to MDR evolution and LD through its effect upon susceptible density.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, when costs are 'additive' (Box 1), although variation in duration of carriage can lead to MDR evolution and LD through its effect upon susceptible density (Figure 3a), it is neither necessary (the same pattern can be produced by variation in transmissibility; Figure 3b) nor sufficient (variation in duration of carriage has no effect without explicit transmission costs, Figure 3c).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the analysis and shown in Figure 3",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "When costs are additive, variation in duration of carriage is neither necessary nor sufficient for MDR evolution and LD.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, when costs are 'additive' (Box 1), although variation in duration of carriage can lead to MDR evolution and LD through its effect upon susceptible density (Figure 3a), it is neither necessary (the same pattern can be produced by variation in transmissibility; Figure 3b) nor sufficient (variation in duration of carriage has no effect without explicit transmission costs, Figure 3c).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the analysis and shown in Figure 3",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "Variation in transmissibility can produce the same pattern of MDR as variation in duration of carriage when costs are additive.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, when costs are 'additive' (Box 1), although variation in duration of carriage can lead to MDR evolution and LD through its effect upon susceptible density (Figure 3a), it is neither necessary (the same pattern can be produced by variation in transmissibility; Figure 3b) nor sufficient (variation in duration of carriage has no effect without explicit transmission costs, Figure 3c).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the analysis and shown in Figure 3b",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "If there are more than two drugs and explicit transmission costs for resistance to each drug, susceptible density will generate a correlation between all the selection coefficients, which in turn will yield the pattern of 'nestedness'.",
+    "claim_type": "EXPLICIT",
+    "source": "More broadly, if there are more than two drugs, then provided that there are explicit transmission costs for resistance to each drug, susceptible density will generate a correlation between all the selection coefficients, which in turn will yield the pattern of 'nestedness' observed by Lehtinen et al., 2019.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This follows from the mathematical analysis and extends the results of Lehtinen et al., 2019",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "The Maela surveillance data set shows significant serotype LD.",
+    "claim_type": "EXPLICIT",
+    "source": "Although the prediction of positive (metapopulation) LD was met for most drug combinations (Lehtinen et al., 2019), inspection of the data set reveals significant serotype LD (Figure 4).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 4 using data from Turner et al., 2012",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "At equilibrium the simplest version of the model will result in each serotype being in linkage equilibrium (Dx=0).",
+    "claim_type": "EXPLICIT",
+    "source": "This is notable because, as we have detailed above, at equilibrium the simplest version of the model used in the previous section will result in each serotype being in linkage equilibrium, Dx=0.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This follows from the mathematical analysis of the equilibrium conditions",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "Long-term transient dynamics unfolding over months and years could plausibly provide an alternative explanation for the observed serotype LD.",
+    "claim_type": "EXPLICIT",
+    "source": "Although there are various possible explanations (e.g. an additional mechanism capable of maintaining diversity within-serotype), here we focus upon relaxing the assumption that the metapopulation is at equilibrium. That is, we are interested in whether long-term transient dynamics unfolding over months and years could plausibly suggest an alternative explanation for the observed serotype LD.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a hypothesis proposed and tested in the manuscript",
+    "evidence_type": [
+      "SPECULATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "Transient dynamics coupled with epistasis could provide a potential explanation for the significant within-serotype LD observed in S. pneumoniae.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, transient dynamics coupled with epistasis could provide a potential explanation for the significant within-serotype LD observed in S. pneumoniae (Figure 4).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a conclusion drawn from the analysis and simulations shown in Figure 5",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "The potential complexity of competing selective pressures associated with multilocus dynamics can lead to prolonged, but transient, polymorphisms and LD.",
+    "claim_type": "EXPLICIT",
+    "source": "More generally, the potential complexity of competing selective pressures associated with multilocus dynamics can lead to prolonged, but transient, polymorphisms and LD, and so surveillance data showing limited temporal change in resistance frequency should be treated cautiously and not assumed to be due to a stable equilibrium.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general conclusion drawn from the analysis",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "For a given population frequency of drug A and drug B resistance, negative LD (MDR under-representation) increases the likelihood that if treatment with one drug fails, treatment with the other drug will succeed.",
+    "claim_type": "EXPLICIT",
+    "source": "In particular, for a given population frequency of drug A and drug B resistance, negative LD (MDR under-representation) increases the likelihood that if treatment with one drug fails (due to resistance), treatment with the other drug will succeed.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This follows from logical inference about the implications of negative LD for treatment success",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "Positive LD (MDR over-representation) increases the likelihood of treatment failure, since a greater proportion of resistant infections are doubly-resistant.",
+    "claim_type": "EXPLICIT",
+    "source": "On the other hand, positive LD (MDR over-representation) increases the likelihood of treatment failure, since a greater proportion of resistant infections are doubly-resistant and so cannot be successfully treated with either drug.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This follows from logical inference about the implications of positive LD for treatment success",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "To generate negative LD, drugs should be deployed in a population specific fashion.",
+    "claim_type": "EXPLICIT",
+    "source": "Equations (4) and (7) show that to generate negative LD, drugs should be deployed in a population specific fashion, that is, drug A should be restricted to some populations and drug B restricted to the remaining populations (see also Lehtinen et al., 2019; Day and Gandon, 2012; Jacopin et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This follows from the mathematical analysis of Equations (4) and (7) and is supported by citations",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "Deploying drugs in a population specific fashion will create a negative covariance in selection, giving rise to negative LD and MDR under-representation.",
+    "claim_type": "EXPLICIT",
+    "source": "Doing so will create a negative covariance in selection, such that resistance to drug A (resp. drug B) will be favored in some populations and disfavored in the others. This negative covariance in selection will give rise to negative LD and MDR under-representation (Figure 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This follows from the mathematical analysis and is shown in Figure 2",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "Both mixing and combination generate a positive covariance in selection across populations, producing positive LD and MDR over-representation.",
+    "claim_type": "EXPLICIT",
+    "source": "As both drugs are prescribed at higher rates in the hospital than the community, both mixing and combination generate a positive covariance in selection across populations, producing positive LD and MDR over-representation (see Equation (4); Figure 6).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This follows from the mathematical analysis and is shown in Figure 6",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "When drugs are rotated rapidly between populations, infections in either population are likely to be exposed to both drugs, effectively creating a positive covariance in selection.",
+    "claim_type": "EXPLICIT",
+    "source": "When drugs are rotated rapidly between populations, infections in either population are likely to be exposed to both drugs. Because prescription rates are higher in the hospital, this effectively creates a positive covariance in selection (i.e. cycling behaves like mixing) and so when resistance emerges, infections tend to be doubly-resistant (MDR over-representation).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This follows from the mathematical analysis of the cycling scenario",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "When drugs are rotated less frequently, infections are more likely to be exposed to a single drug, creating a negative covariance in selection across populations.",
+    "claim_type": "EXPLICIT",
+    "source": "When drugs are rotated less frequently, infections are more likely to be exposed to a single drug, creating a negative covariance in selection across populations. In this circumstance, although single resistance can emerge at lower treatment rates then when rotations are more frequent, the negative LD produced by the negative covariance in selection inhibits the emergence of double-resistance (MDR under-representation; Figure 6).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This follows from the mathematical analysis and is shown in Figure 6",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "There is a trade-off: delaying the evolution of MDR promotes the evolution of single drug resistance, whereas delaying the evolution of single drug resistance promotes the evolution of MDR.",
+    "claim_type": "EXPLICIT",
+    "source": "These results emphasize an important trade-off: delaying the evolution of MDR (e.g. by decreasing time between rotations) promotes the evolution of single drug resistance, whereas delaying the evolution of single drug resistance promotes the evolution of MDR.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This follows from the mathematical analysis and simulations shown in Figures 6 and 7",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "When we maintain a constant treatment rate per individual, decreasing selection for the 'generalist' strategy (MDR) necessarily increases selection for the 'specialist' strategy (single drug resistance).",
+    "claim_type": "EXPLICIT",
+    "source": "This is logical: when we maintain a constant treatment rate per individual, decreasing selection for the 'generalist' strategy (MDR) necessarily increases selection for the 'specialist' strategy (single drug resistance) (Wilson and Yoshimura, 1994).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This follows from logical inference and is supported by citation to Wilson and Yoshimura, 1994",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "Cycling can either be the best, or worst, option for single drug resistance, with concomitant effects for MDR.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, cycling can either be the best, or worst, option for single drug resistance (Beardmore et al., 2017), but critically, this has concomitant effects for MDR (see also Figure 6).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This follows from the analysis and is shown in Figure 6, with support from citation to Beardmore et al., 2017",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "Studies comparing mixing, combination and cycling have largely ignored the consequences for MDR evolution.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, mixing, combination and cycling have been exhaustively compared in the context of single drug resistance (e.g. Bonhoeffer et al., 1997; Lipsitch et al., 2000; Bergstrom et al., 2004; Beardmore and Pena-Miller, 2010; Beardmore et al., 2017; Abel zur Wiesch et al., 2014; Tepekule et al., 2017); yet these studies largely ignored the consequences for MDR evolution.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation about the literature, supported by citations",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "Controlling for single drug resistance will have important consequences for MDR, and so it should not be considered in isolation.",
+    "claim_type": "EXPLICIT",
+    "source": "Our analysis suggests controlling for single drug resistance will have important consequences for MDR, and so it should not be considered in isolation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the analysis",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "The typical process in studying the problem of MDR is to introduce a model and then either proceed to a numerical analysis or simplify the model by neglecting the dynamics of double resistant infections.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the typical process in studying the problem of MDR is to introduce a model of the form of (2), and then either proceed to a numerical analysis of these equations or simplify the model further by neglecting the dynamics of double resistant infections (Bergstrom et al., 2004; Bonhoeffer et al., 1997; Beardmore et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation about the literature, supported by citations",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "Models of MDR evolution rapidly become intractable, a problem which is particularly acute when incorporating aspects of population structure.",
+    "claim_type": "EXPLICIT",
+    "source": "This is because models of MDR evolution rapidly become intractable, a problem which is particularly acute when incorporating aspects of population structure.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general observation about the complexity of MDR models",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "The LD perspective is particularly useful for analyzing and understanding transient evolutionary dynamics.",
+    "claim_type": "EXPLICIT",
+    "source": "The LD perspective is particularly useful for analyzing and understanding transient evolutionary dynamics (Figure 5), which cannot be understood by, for example, invasion analysis.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the analysis and shown in Figure 5",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "Metapopulation structure alone can generate and maintain LD (and so MDR), even in the absence of epistasis.",
+    "claim_type": "EXPLICIT",
+    "source": "Our analysis emphasizes that metapopulation structure alone can generate and maintain LD (and so MDR), even in the absence of epistasis (Nei and Li, 1973; Ohta, 1982a; Li and Nei, 1974; Slatkin, 1975).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This follows from the mathematical analysis and is supported by citations",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "In natural populations metapopulation structure is often hidden.",
+    "claim_type": "EXPLICIT",
+    "source": "Since in natural populations metapopulation structure is often hidden (e.g. Rosen et al., 2015), patterns of MDR should not be assumed to be due to epistasis, even if no structure is readily apparent.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general observation supported by citation to Rosen et al., 2015",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "Even if the metapopulation is in linkage equilibrium (DM=0), the populations need not be (Dx\u22600), and vice versa.",
+    "claim_type": "EXPLICIT",
+    "source": "even if the metapopulation is in linkage equilibrium, DM=0, the populations need not be, Dx\u22600, and vice versa (Equation (5))",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This follows from the mathematical relationship in Equation (5)",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "In more extreme cases, population and metapopulation LD can be of opposite sign.",
+    "claim_type": "EXPLICIT",
+    "source": "while in more extreme cases, population and metapopulation LD can be of opposite sign (Figure 5b,e).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 5b,e",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "When MDR is due to metapopulation structure rather than epistasis, prescribing drugs across different populations so as to create a negative covariance in selection can reduce the prevalence of MDR.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, when MDR is due to metapopulation structure rather than epistasis, prescribing drugs across different populations so as to create a negative covariance in selection can reduce the prevalence of MDR (Figure 6; Day and Gandon, 2012; Jacopin et al., 2020; Lehtinen et al., 2019)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This follows from the analysis, is shown in Figure 6, and is supported by citations",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "Stochasticity can play an important role in multilocus dynamics.",
+    "claim_type": "EXPLICIT",
+    "source": "However, it is widely appreciated in population genetics that stochasticity can play an important role in multilocus dynamics.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general observation from population genetics",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "LD can be generated through genetic drift.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, LD can be generated through genetic drift (Hill and Robertson, 1966; Barton, 1995; Lenormand and Otto, 2000; Otto and Barton, 2001; Keightley and Otto, 2006; Martin et al., 2006)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a standard result in population genetics, supported by citations",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "Genetic drift can interfere with the strength of selection.",
+    "claim_type": "EXPLICIT",
+    "source": "which in turn can interfere with the strength of selection (Hill and Robertson, 1966; Neher and Shraiman, 2011; Slatkin, 2008).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a standard result in population genetics, supported by citations",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "The (random) genetic background a rare mutation finds itself upon is critically important for its success.",
+    "claim_type": "EXPLICIT",
+    "source": "Similarly, the (random) genetic background a rare mutation finds itself upon is critically important for its success (Kouyos et al., 2006; Gillespie, 2000; Neher, 2013)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a standard result in population genetics, supported by citations",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "In finite populations, the random genetic background alone can generate LD.",
+    "claim_type": "EXPLICIT",
+    "source": "and in finite populations this alone can generate LD.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This follows from the discussion of random genetic backgrounds and is a standard result in population genetics",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "Little has been done to relate stochastic effects in population genetics to evolutionary epidemiology.",
+    "claim_type": "EXPLICIT",
+    "source": "However, little has been done to relate these results to evolutionary epidemiology, or to understand how epidemiological feedbacks can influence their predictions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation about the state of the literature",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "The role of stochasticity in the evolution of MDR remains an area in which further investigation is warranted.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, the role of stochasticity in the evolution of MDR remains an area in which further investigation is warranted.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the discussion of stochasticity",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  }
+]

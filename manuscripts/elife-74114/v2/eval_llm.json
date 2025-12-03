@@ -1,0 +1,263 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C11",
+      "C12",
+      "C14",
+      "C15",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The study assembled a dataset of 743 stringently matched apo/holo crystallographic pairs from high-resolution X-ray structures, with structures re-refined using phenix.refine and rebuilt using qFit-3.0 to consistently model conformational heterogeneity. A control dataset of 293 apo-apo pairs was also created.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C11, C12, C14, C15, C54, C55, and C56 collectively describe a rigorous dataset assembly and processing pipeline. The methods are clearly documented, quality control steps are described (C14), and the final dataset size is explicitly stated. The use of consistent refinement protocols addresses potential biases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The dataset has a median resolution of 1.6 \u00c5, contains 546 unique ligands with a median of 19 heavy atoms, and represents 315 unique proteins with a bias toward well-studied enzyme systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 provide descriptive statistics of the dataset that are clearly stated and supported by figures. These characterize the dataset composition and acknowledge biases toward model systems, which is important for interpreting generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Alternative conformations were modeled at low frequency in re-refined structures (1.7% of residues) compared to qFit structures (47.8%). In binding sites, re-refined structures showed bias toward gaining alternative conformations in holo structures, while qFit structures showed the opposite trend with holo structures losing alternative conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 are supported by explicit data comparisons shown in figures. The contrasting trends between re-refined and qFit datasets highlight the importance of consistent modeling approaches and suggest that manual modeling may introduce bias toward modeling more conformations in holo structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "B-factors were slightly higher in holo structures across all residues in both re-refined and qFit datasets, but there was no significant difference in B-factors between holo and apo structures specifically in binding site residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 present statistical comparisons with appropriate tests (Wilcoxon signed-rank) and p-values. The finding that B-factor changes are driven by sites distant from the binding site is well-supported and important for understanding the spatial distribution of conformational changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Rotamer analysis of binding site residues in qFit structures showed that 78.6% had no change, 15.5% had distinct rotamers, 2.6% showed remodeled-holo loss, and 3.8% showed remodeled-holo gain. Only 11% of binding sites had all residues with the same rotamer status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 provide a detailed classification of rotamer changes supported by figures and consistent with prior literature (C31 cites Gaudreault et al., 2012). The classification scheme is clearly defined and the percentages sum appropriately.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "RMSF analysis showed that apo residues have slightly greater conformational heterogeneity than holo residues overall, with this trend being stronger in binding site residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 present statistically significant findings with appropriate tests and p-values. The effect sizes are small but consistent, and the stronger effect in binding sites is mechanistically interpretable as ligand-induced rigidification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Order parameter analysis revealed a wider range of differences in apo/holo pairs compared to apo/apo controls, with binding site residues showing significantly increased order parameters (reduced heterogeneity) in holo structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 use order parameters to integrate harmonic and anharmonic heterogeneity, with appropriate statistical tests and controls. The comparison to apo/apo pairs strengthens the interpretation that ligand binding specifically affects conformational heterogeneity beyond experimental variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "When binding site residues become more rigid upon ligand binding, distant non-solvent-exposed residues tend to become more flexible, showing an inverse correlation (slope = \u22120.44, r\u00b2 = 0.46). This trend is significantly stronger than in apo-apo controls (slope = \u22120.28, r\u00b2 = 0.20), with bootstrap analysis confirming the difference is robust.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C36-C38 present a key finding with strong statistical support including correlation analysis, appropriate controls, and bootstrap validation. The mechanistic interpretation is supported by citations to prior work on protein packing and buried residue dynamics. This represents a major conceptual advance in understanding allosteric effects of ligand binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "Hydrogen bond analysis showed creation of 0.06 hydrogen bonds per residue in holo binding sites, translating to 10% of structures gaining one full hydrogen bond.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 is supported by data shown in supplementary figures and is consistent with prior literature (C62). The magnitude is modest but mechanistically relevant for understanding binding site stabilization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Ligand properties correlate with protein conformational heterogeneity: higher lipophilicity and larger molecular size are associated with more flexible binding sites, while more hydrogen bonds per heavy atom are associated with more rigid binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C40-C42 present statistically significant associations with appropriate corrections for multiple testing (Bonferroni). The findings are mechanistically interpretable and consistent with prior knowledge about specific vs. nonspecific interactions (C60-C61). Effect sizes are modest but consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Ligand occupancy affects binding site conformational heterogeneity: fully occupied ligands are associated with more rigid binding sites compared to partially occupied ligands or those with alternative conformations. Ligands with high B-factors (likely partially occupied) show greater binding site conformational heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 address an important confounding factor with appropriate statistical tests. The use of normalized B-factors as a proxy for partial occupancy is reasonable given the difficulty of distinguishing occupancy from B-factor effects. This analysis strengthens interpretation of the main findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Analysis of 13 CDK2 inhibitor complexes identified three distinct clusters of residues based on conformational heterogeneity changes: 13 residues that rigidify upon binding, 14 residues that become more flexible, and 5 residues that become more flexible except with type II inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C46-C50 present a detailed case study with hierarchical clustering analysis. The identification of inhibitor-type-specific effects (type I vs. type II) demonstrates the utility of the approach for understanding structure-activity relationships. The analysis is well-supported by figures showing structural details.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "The median increase in rigidity observed in binding site residues (0.03 order parameter increase) corresponds to an energetic penalty of approximately 0.1-0.5 kcal/mol, with restricting a single side-chain rotamer potentially costing ~0.5 kcal/mol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C51-C52 attempt to translate order parameter changes into thermodynamic consequences. While C51 cites prior work (Caro et al., 2017, 2021) for the conversion, and C52 cites protein folding studies, the direct application of these conversions to the current dataset is not validated. The range is broad (0.1-0.5 kcal/mol) and the relationship between crystallographic order parameters and solution entropy is complex.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "The use of cryo-cooled structures likely causes an underestimate of conformational heterogeneity and may bias results by locking in certain populations of the protein ensemble.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 acknowledges an important limitation supported by citation (Fraser et al., 2011). This is a well-known issue in crystallography and the authors appropriately discuss how it may affect their results. The limitation does not invalidate the findings but is important for interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C57"
+    ],
+    "result": "X-ray crystallography can capture both anharmonic disorder (modeled by alternative conformations) and harmonic disorder (modeled by B-factors), which can be integrated using order parameters that account for both chi1 angle variations and B-factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9, C10, and C57 establish the methodological foundation for the study. The approach is well-established in the literature (citations provided) and the order parameter calculation method is clearly described. The normalization procedure (C57) was optimized using control structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C26",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Prior work establishes that ligand binding reshapes protein conformational ensembles, that conformational entropy can contribute -2 to 4 kcal/mol to binding free energy, that side-chain heterogeneity measured by NMR relates to entropy, and that specific interactions like hydrogen bonds tend to rigidify binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C26, C60-C63 summarize relevant prior work with appropriate citations. These establish the conceptual framework and prior knowledge that motivates and contextualizes the current study. The citations appear appropriate and the claims accurately represent the cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C13"
+    ],
+    "result": "The majority of structures in the re-refined dataset had less than 2% of residues modeled with alternative conformations, likely reflecting undermodeling in the PDB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C13 is supported by citation to prior literature (Lang et al., 2010) documenting undermodeling in the PDB. This observation motivates the use of qFit for consistent multiconformer modeling and is important for interpreting differences between re-refined and qFit datasets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Binding site residues were defined as those within 5 \u00c5 of any ligand heavy atom, and residues with RASA \u226520% were considered solvent exposed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 define key operational criteria used throughout the analysis. The 5 \u00c5 cutoff is standard, and the RASA threshold is supported by citation (Wu et al., 2017). These definitions are clearly stated and consistently applied.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2276 @@
+{
+  "submission": {
+    "id": "aeb4855a-8b5c-41d4-8085-2cf764c4b650",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T20:55:19.144134Z",
+    "updated_at": "2025-12-03T20:55:19.144134Z"
+  },
+  "content": [
+    {
+      "id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "submission_id": "aeb4855a-8b5c-41d4-8085-2cf764c4b650",
+      "content_type": "manuscript",
+      "content_text": "# Multiple antagonist calcium-dependent mechanisms control CaM kinase-1 subcellular localization in a C. elegans thermal nociceptor\n\n## Authors\n\n- Domenica Ippolito<sup>1</sup> ([ORCID: 0000-0002-8793-5065](https://orcid.org/0000-0002-8793-5065))\n- Dominique A Glauser<sup>1</sup> ([ORCID: 0000-0002-3228-7304](https://orcid.org/0000-0002-3228-7304)) \u2020\n\n### Affiliations\n\n1. Department of Biology, University of Fribourg Fribourg Switzerland ([ROR:022fs9h90](https://ror.org/022fs9h90))\n\n\u2020 Corresponding author\n\n## Abstract\n\nNociceptive habituation is a conserved process through which pain sensitivity threshold is adjusted based on past sensory experience and which may be dysregulated in human chronic pain conditions. Noxious heat habituation in Caenorhabditis elegans involves the nuclear translocation of CaM kinase-1 (CMK-1) in the FLP thermo-nociceptors neurons, causing reduced animal heat sensitivity and avoidance responses. The phosphorylation of CMK-1 on T179 by CaM kinase kinase-1 (CKK-1) is required for nuclear entry. Recently, we identified a specific nuclear export sequence (NES) required to maintain CMK-1 in the cytoplasm at rest (20\u00b0C) and showed that Ca2+/CaM binding is sufficient to enhance CMK-1 affinity for IMA-3 via a specific nuclear localization signal (NLS) in order to promote nuclear entry after persistent heat stimulation (90 min at 28\u00b0C) (Ippolito et al., 2021). Here, we identified additional functional NES and NLS on CMK-1, whose activity can counteract previously identified elements. Furthermore, we clarify the relationship between the CaM-binding-dependent and T179-dependent effects. T179 phosphorylation can promote nuclear entry both downstream of CaM binding and as part of an independent/parallel pathway. Moreover, T179 phosphorylation can also produce the opposite effect by promoting nuclear export. Taken together, our studies suggest that multiple calcium-dependent regulatory mechanisms converge to bias the activity pattern across a network of NES/NLS elements, in order to control CMK-1 nucleo-cytoplasmic shuttling, and actuate stimulation-dependent nociceptive plasticity.\n\n## Introduction\n\nCa2+/CaM-dependent protein kinases (CaMK) are conserved effectors of the universal calcium second messenger, mediating important plasticity effects in the nervous system. In response to neuronal activation, these kinases phosphorylate diverse intracellular substrates in order to actuate changes in cell physiology (Soderling, 1999). CaMKI includes an N-terminal kinase domain and a C-terminal regulatory domain, which inhibits its catalytic activity (Goldberg et al., 1996; Hook and Means, 2001). This auto-inhibition is released upon binding of Ca2+/CaM in the regulatory domain and the kinase can be fully activated after phosphorylation of a specific threonine in the activation loop (T177 in human) by CaMK kinase I (CaMKKI). In mammals, CaM binding on CaMKI is a prerequisite prior to the phosphorylation of T177. The Caenorhabditis elegans CaMKI (named CMK-1) displays similar structural and functional properties, with a conserved activation loop threonine (T179 in the worm sequence) (Eto et al., 1999; Kimura et al., 2002). CMK-1 mediates multiple plasticity mechanisms, including during salt aversive learning, habituation to repeated mechanical stimulations, and thermal adaptation to innocuous and noxious heat (Ardiel et al., 2018; Lim et al., 2018; Neal et al., 2015; Satterlee et al., 2004; Schild et al., 2014; Yu et al., 2014). The subcellular localization of CMK-1 can be regulated in a stimulus-dependent manner in different contexts (Moss et al., 2016; Neal et al., 2015; Schild et al., 2014; Yu et al., 2014).\n\nThe role and the mechanisms controlling CMK-1 subcellular localization have been so far best characterized in FLP thermo-nociceptor neurons where CMK-1 regulates nociceptive habituation. Previous experiments conducted in transgenic animals expressing different CMK-1 mutants in FLP with constitutive nuclear or cytoplasmic localization notably showed that CMK-1 activity in the cytoplasm promotes heat avoidance response, while its activity in the nucleus acts antagonistically to reduce heat avoidance response (Schild et al., 2014). In wild type worms exposed to innocuous temperature (20\u00b0C), CMK-1 resides mostly in the FLP cytoplasm, where it promotes high sensitivity to heat and robust avoidance responses. Upon persistent noxious heat stimulation (90 min at 28\u00b0C) CMK-1 progressively translocates in the nucleus, where it acts to reduce the animal heat sensitivity and dampen avoidance responses. In our recent publication (Ippolito et al., 2021), we identified two key intrinsic determinants of CMK-1 that control localization in FLP. First, the NES288-294 canonical nuclear export sequence of CMK-1, located immediately adjacent to the CaM-binding domain in the regulatory domain and representing a major determinant of CMK-1 cytoplasmic localization at 20\u00b0C. Second, the NLS71-78 canonical nuclear localization sequence, located on the N-terminal catalytic domain of CMK-1, and which can interact with IMA-3 importin in vitro. We furthermore showed that the binding of Ca2+/CaM on CMK-1 can strengthen its interaction with IMA-3 importin via NLS71-78 (Ippolito et al., 2021), constituting a calcium-dependent mechanism through which thermosensory activity causes CMK-1 nuclear accumulation. Previous studies also suggested a second calcium-dependent mechanism involving the C. elegans CaMKKI (named CKK-1) and CMK-1 phosphorylation on T179. Indeed, a T179A mutation on CMK-1 as well as a null mutation in the ckk-1 gene can both decrease CMK-1 nuclear accumulation at 28\u00b0C (Schild et al., 2014). However, the mechanisms linking T179 phosphorylation to CMK-1 nuclear entry were still unclear. Furthermore, whereas the NES288-294/NLS71-78 sequence pair plays a major role, several lines of evidence indicate that additional, uncharacterized elements are also involved. Here, we expand the characterization of the mechanisms controlling CMK-1 localization in FLP neurons to (i) identify remaining CMK-1 elements working as secondary NES and NLS and (ii) better understand the role played by T179 phosphorylation. Our results elucidate how the interplay between multiple, antagonistic pathways are integrated to control CMK-1 localization, and furthermore suggest new regulation opportunities that might be used in other neurons and contexts, in order for CMK-1 localization to integrate different signaling inputs.\n\n## Results and discussion\n\n### Additional elements antagonize NLS71-78/NES288-294 -dependent regulation of CMK-1 localization\n\nOur previous studies identified NES288-294 as the major determinant of CMK-1 cytoplasmic localization at 20\u00b0C, and NLS71-78 as the main drive for CMK-1 nuclear entry after calcium increase at 28\u00b0C (Figure 1A schematic) (Ippolito et al., 2021). A series of previous observations also suggested that a layer of secondary localization determinants might also play a role (Ippolito et al., 2021). The presence of additional functional elements is most strikingly illustrated in an NLS71-78; NES288-294 double mutant lacking the two main regulatory regions. This double mutant is slightly enriched in the nucleus at 20\u00b0C and translocates in the cytoplasm at 28\u00b0C, corresponding to a reverted behavior as compared to wild type CMK-1 (Figure 1B). The simplest explanation for this behavior would involve a secondary pair of antagonistic NES/NLS determinants, whose activity becomes predominant only when the major drives (NES288-294/NLS71-78 -dependent pathways) are deactivated. In order to identify these secondary elements, we conducted further mutagenesis analyses in the CMK-1 NLS71-78; NES288-294 double mutant background.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/85260/elife-85260-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic of CMK-1 with positions of the tested NES and NLS candidates and their sequence. (B\u2013F) Subcellular localization of CMK-1::mNeonGreen reporters expressed in FLP and scored after 90 min at 20\u00b0C (blue) or at 28\u00b0C (red). Average nuclear/cytoplasm fluorescent signal ratio ( \u00b1 SEM, left) of wild type (wt) CMK-1 or indicated mutants as schematized (right). Detailed data distributions and ANOVA results are presented in Figure 1\u2014figure supplement 1. #p<0.01 between temperature conditions; *p<0.01 between indicated genotypes; ns, not significant by Bonferroni post hoc tests. The numbers of animals scored in each condition (n) are indicated for each bar. Datasets for CMK-1(wt) and CMK-1(NLS71-78; NES288-294) are common across panels. (G) Updated model of the multiple elements controlling CMK-1 nuclear export and import. At 20\u00b0C, NLS71-78-dependent entry is not active (dashed arrow), leaving NES288-294 as the main drive for cytoplasmic accumulation (thick arrow). At 28\u00b0C, NLS71-78-dependent entry is active (thickest arrow), becoming the predominant drive to shift CMK-1 equilibrium toward the nucleus. The NLS297-307-dependent nuclear entry pathway and the S325-dependent cytoplasmic accumulation favoring pathway are two secondary pathways (thin arrows), whose activity mostly manifests when one or more of the remaining elements are impaired. For simplicity, the S325-dependent pathway is schematized like an export pathway. However, the S325-dependent pathway could also work via an enhanced cytoplasmic retention.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85260/elife-85260-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Violin plots with superimposed datapoints depicting the distribution of nucleus/cytoplasmic ratios of the indicated CMK-1::mNG reporters and robust ANOVA results. Red bars: average. (A) Data corresponding to Figure 1B. (B) Data corresponding to Figure 1C. (C) Data corresponding to Figure 1D. (D) Data corresponding to Figure 1E. (E) Data corresponding to Figure 1F.\n\nOur first goal was to identify the NLS element that could be active at 20\u00b0C and promote the nuclear accumulation of the NLS71-78; NES288-294 double mutant. We previously identified NLS297-307 as a secondary canonical NLS making a minor contribution to the heat stimulus-evoked nuclear accumulation of CMK-1 (Ippolito et al., 2021). We thus wondered if NLS297-307 could be responsible for the nuclear accumulation of the NLS71-78; NES288-294 double mutant in FLP at 20\u00b0C. We found that impairing the NLS297-307 element with a K307Q mutation in the NLS71-78; NES288-294 double mutant background fully blocked its nuclear accumulation at 20\u00b0C (Figure 1C). This mutation could also reinforce the cytoplasmic enrichment at 28\u00b0C (Figure 1C). Therefore, we conclude that the NLS297-307-dependent nuclear entry pathway contributes to translocate CMK-1 in the nucleus, independently of the NLS71-78/NES288-294 pair.\n\nOur next goal was to identify the secondary element responsible for the heat stimulus-evoked cytoplasmic translocation of the NLS71-78; NES288-294 double mutant. Our first candidate was the putative NES315-323. This candidate element was dispensable for cytoplasmic accumulation of wild type CMK-1, in which NES288-294 is intact (Ippolito et al., 2021), but could potentially take over CMK-1 export when NES288-294 is lacking. We found that the NLS71-78; NES288-294; NES315-323 triple mutant protein could still be exported from the nucleus, like the NLS71-78; NES288-294 double (Figure 1D). Therefore, the candidate NES315-323 sequence does not mediate CMK-1 nuclear export in any of the conditions examined so far across our studies. In silico analysis tools focusing on the canonical exportin recognition motif (Fu et al., 2011; Xu et al., 2015) did not predict additional candidate NESs. To delineate additional candidates, we focused on the C-terminal region of CMK-1. Indeed, a CMK-1 (1\u2013304) mutant was previously shown to accumulate in the nucleus and proposed to lack some NES located in the 305\u2013348 region (Schild et al., 2014). Since we can now exclude the NES315-323 sequence as a functional canonical NES, we looked for additional candidate residues as part of a non-canonical cytoplasmic localization-promoting element in this region. The subcellular localization of protein is often regulated by their phosphorylation and there are precedents for this type of regulation among CaM kinases (Shioda and Fukunaga, 2018). Among five S/T residues in the C-terminal region of CMK-1, we focused on S325 which is a strong predicted phosphorylation site as part of an unstructured region (NetPhos3.1, Blom et al., 2004) and which matches the prevalent RXXS target substrate motif shared by multiple kinases (Bradley and Beltrao, 2019). We found that an S325A mutation produced a partial yet significant reduction in heat stimulus-evoked nuclear export when introduced in the NLS71-78; NES288-294 double mutant background (Figure 1D). Furthermore, as compared to CMK-1(wt), the single S325A mutant displayed a significantly more nuclear localization at both 20\u00b0C and 28\u00b0C (Figure 1E). A double mutant protein combining S325A and NES288-294 mutations markedly accumulated in the nucleus at both temperatures, reaching nuclear/cytoplasmic signal ratio values significantly higher than that of any single mutation (Figure 1E). Therefore, serine 325 is part of a functional element promoting CMK-1 cytoplasmic localization and regulating CMK-1 localization independently of NES288-294.\n\nThe S325A mutation that we examined so far is a \u2018phosphorylation-dead\u2019 mutation. If S325 can indeed be phosphorylated and if this modification regulates CMK-1 localization, then an S325D phosphomimic mutation should not have the same impact as the S325A mutation. Consistent with this view, the S325D mutant localization was the same as wild type (Figure 1F). These observations suggest (i) that an intact S325 residue is necessary for the normal nuclear export of CMK-1(wt) and (ii) that S325 phosphorylation might be the default state of CMK-1 in FLP under our conditions. Our data also suggest that the post-translational modification of S325 could be used as a regulatory switch to control CMK-1 localization. Nevertheless, we have so far no evidence that this latter mechanism is engaged in heat stimulus-evoked CMK-1 localization in FLP. We know that S325 promotes CMK-1 cytoplasmic accumulation independently of NES288-294 (as shown by the impact of the S325A mutation in a NES288-294 mutant background Figure 1D and E), but how the S325-element works remains to be determined. In principle, it could either function by promoting a non-canonical nuclear export or a cytoplasmic retention pathway, for example, by anchoring CMK-1 to some cytoplasmic components. Furthermore, it seems that S325 phosphorylation/dephosphorylation modifications are not involved in the heat-evoked CMK-1 re-localization process in FLP. However, we speculate that this mechanism might be relevant in other contexts in FLP and/or in other neuron types.\n\n### An updated model of the functional NES and NLS elements of CMK-1\n\nTogether with the results of our previous report (Ippolito et al., 2021), our data show that CMK-1 subcellular localization is regulated by multiple intrinsic elements:\n\nThe schematic in Figure 1G presents a working model of the regulation of wild type CMK-1 localization with the relative contribution of each pathway at 20\u00b0C and 28\u00b0C. At 20\u00b0C, the strong NLS71-78 -dependent nuclear entry pathway is inactive and the activity of the weaker NLS297-307 pathway is over-competed by both NES288-294-dependent and the S325-dependent export pathways, which are both active. At 28\u00b0C, the strong NLS71-78-dependent nuclear entry pathway is active and is the main drive to shift the equilibrium toward the nucleus, even if the other elements might still be active.\n\n### CMK-1 T179 phosphorylation is required for CMK-1 nuclear entry downstream of intracellular calcium elevation\n\nPrevious studies have shown that a phosphorylation-dead CMK-1(T179A) mutant protein displays impaired activity-dependent nuclear accumulation (Schild et al., 2014; Yu et al., 2014). We recapitulated these previous findings using a CMK-1::mNeonGreen reporter system (Hostettler et al., 2017). Indeed, while the T179A mutation left CMK-1 reporter localization unchanged in FLP at 20\u00b0C, it abolished its nuclear accumulation after 90 min of cell activation at 28\u00b0C (Figure 2A\u2013B). Hence, we confirm that the ability of CMK-1 to be phosphorylated on T179 is essential for its activity-dependent nuclear translocation.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/85260/elife-85260-fig2-v1.jpg)\n\n**Figure 2.:** (A) Schematic of calcium-dependent CMK-1 activation pathway involving CaM binding and CaM kinase kinase-1 (CKK-1) phosphorylation on T179. Illustration of the tested mutations and their effects. (B\u2013D) Subcellular localization of CMK-1::mNeonGreen reporters expressed in FLP and scored after 90 min at 20\u00b0C (blue) or at 28\u00b0C (red). Average nuclear/cytoplasm fluorescent signal ratio ( \u00b1 SEM) of wild type (wt) CMK-1 or indicated mutants. Detailed data distributions and ANOVA results are presented in Figure 2\u2014figure supplement 1. #p<0.01 between temperature conditions; *p<0.01 between indicated genotypes; ns, not significant by Bonferroni post hoc tests. The numbers of animals scored in each condition (n) are indicated for each bar. Datasets for CMK-1(wt) and CMK-1(T179A) are common across panels and CMK-1(wt) dataset is the same as in Figure 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85260/elife-85260-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Violin plots with superimposed datapoints depicting the distribution of nucleus/cytoplasmic ratios of the indicated CMK-1::mNG reporters and robust ANOVA results. Red bars: average. (A) Data corresponding to Figure 2B. (B) Data corresponding to Figure 2C. (C) Data corresponding to Figure 2D.\n\nThese results are in line with a simple model in which a prolonged temperature elevation, mirrored by prolonged intracellular calcium elevation in FLP (Saro et al., 2020), will activate CKK-1, which will phosphorylate CMK-1 as a necessary step for nuclear accumulation. To confirm that T179-dependent nuclear accumulation indeed takes place downstream of calcium elevation, we tested if the T179A mutation could block the effect of the unc-68(dom13) mutation, which chronically elevates FLP cytoplasmic calcium levels at both 20\u00b0C and 28\u00b0C to promote CMK-1 nuclear accumulation (Figure 2A; Ippolito et al., 2021; Marques et al., 2019). The CMK-1 nuclear accumulation caused by the unc-68(dom13) mutation was fully abolished by the T179A mutation at either temperature (Figure 2C). We conclude that the phosphorylation of T179 mediates the nuclear accumulation of CMK-1 downstream of Ca2+ elevation, irrespective of the temperature.\n\nNext, we assessed the interaction between T179A and a W305S mutation preventing CaM binding on CMK-1. Each of these mutations alone or in combination had little impact on the cytoplasmic localization of CMK-1 at 20\u00b0C (Figure 2D, top). At 28\u00b0C, the single mutations as well as the combined mutations had a similar effect, fully preventing the nuclear accumulation of CMK-1, with ratio values similar to the situation at 20\u00b0C (Figure 2D). These results confirm previous findings indicating that T179 phosphorylation and CaM binding are two major events controlling heat-evoked CMK-1 nuclear accumulation. Whereas we cannot rule out a floor effect in the ratio measure, the lack of a cumulative effect between the two mutations suggests that CaM binding and T179 phosphorylation might be part of the same pathway.\n\nCollectively, these results are consistent with a model in which T179 phosphorylation acts downstream of intracellular calcium elevation and CaM binding to regulate cell activity-dependent CMK-1 nuclear entry.\n\n### CMK-1 T179 phosphorylation favors nuclear translocation at 20\u00b0C independently of CaM binding\n\nHaving shown that T179 phosphorylation is required for CMK-1 nuclear accumulation at 28\u00b0C, we next wondered if it could be sufficient to trigger this re-localization event in the absence of cell stimulation and of CaM binding. To address this question, we examined the impact of the T179D phospho-mimicking mutation at 20\u00b0C and found it could favor nuclear accumulation in the absence of thermal stimulation (Figure 3A and B). It is however important to note that the effect of the T179D mutation at 20\u00b0C was not as strong as the impact of heat on CMK-1(wt). Therefore, whereas T179 phosphorylation directly contribute to trigger CMK-1(wt) nuclear accumulation at 28\u00b0C, additional mechanisms are likely to occur.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/85260/elife-85260-fig3-v1.jpg)\n\n**Figure 3.:** (A) Schematic of calcium-dependent CMK-1 activation pathways involving CaM binding and CaM kinase kinase-1 (CKK-1) phosphorylation on T179. Illustration of the tested mutations and their effects. (B\u2013F) Subcellular localization of CMK-1::mNeonGreen reporters expressed in FLP and scored after 90 min at 20\u00b0C (blue) or at 28\u00b0C (red). Average nuclear/cytoplasm fluorescent signal ratio ( \u00b1 SEM) of wild type (wt) CMK-1 or indicated mutants. Detailed data distributions and ANOVA results are presented in Figure 3\u2014figure supplement 1. #p<0.01 between temperature conditions; *p<0.01 between indicated genotypes; ns, not significant by Bonferroni post hoc tests. The numbers of animals scored in each condition (n) are indicated for each bar. Datasets for CMK-1(wt) and CMK-1(T179D) are common across panels and CMK-1(wt) dataset is the same as in Figures 1 and 2. (G) Schematic of the multiple cell stimulation-dependent pathways occurring downstream of calcium elevation (green arrows) and proposed to control CMK-1 nucleo-cytoplasmic shuttling. CaM binding to CMK-1 can (i) directly promote nuclear import via NLS71-78-dependent pathway, fostered by an enhanced affinity for IMA-3 and (ii) favor CKK-1-dependent phosphorylation of T179. In turn T179 phosphorylation has a dual effect. First, it promotes NLS71-78-dependent nuclear entry. Second, it promotes NES288-294-dependent nuclear export. This mechanism is proposed to sustain an enhanced nucleo-cytoplasmic shuttling activity and the progressive equilibrium shift toward the nucleus after prolonged heat-evoked FLP stimulation.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85260/elife-85260-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Violin plots with superimposed datapoints depicting the distribution of nucleus/cytoplasmic ratios of the indicated CMK-1::mNG reporters and robust ANOVA results. Red bars: average. (A) Data corresponding to Figure 3B. (B) Data corresponding to Figure 3C. (C) Data corresponding to Figure 3D. (D) Data corresponding to Figure 3E. (E) Data corresponding to Figure 3F.\n\nAt 20\u00b0C, the T179D mutation could also favor CMK-1 nuclear localization in a W305S mutant background abolishing CaM binding (Figure 3B; two-way ANOVA: main effect of T179D, p<0.001; main effect of W305S, p<0.001, T179D \u00d7 W305S interaction, p=0.637). Thus, the T179D phosphomimic mutation is sufficient to promote CMK-1 nuclear accumulation independently of CaM binding at 20\u00b0C, suggesting that T179 phosphorylation functions either downstream of CaM binding or in a separate pathway. Interestingly, our data also show that the W305S mutation produced a small cytoplasmic translocation effect in both wild type and T179D backgrounds (Figure 3B). These observations are compatible with the results of our previous protein interaction analyses, having shown that CaM binding can increase CMK-1 affinity for IMA-3 in an in vitro context devoid of CKK-1 and of T179 phosphorylation (Ippolito et al., 2021). The simplest model explaining these results would involve two mechanisms through which CaM binding promotes CMK-1 nuclear accumulation: (i) a direct pathway, through which CaM binding reinforces the interaction between IMA-3 and the NLS71-78 element of CMK-1 and (ii) an indirect pathway, through which CaM binding is required prior to phosphorylation of T179, which in turn promotes the nuclear accumulation of CMK-1.\n\n### CMK-1 T179 phosphorylation causes NLS71-78-dependent nuclear translocation at 20\u00b0C\n\nOur next goal was to determine how T179 phosphorylation could promote CMK-1 nuclear accumulation. We tested two hypothetical models implicating either NLS71-78 or NES288-294 because these two elements are the main regulators of stimulation-dependent CMK-1 localization. In the first model, T179 phosphorylation would act by masking NES288-294. In the second model, T179 phosphorylation would act by unmasking NLS71-78.\n\nTo test the first model, we examined the interaction between T179A and NES288-294 mutations. We found that T179A markedly promoted CMK-1 cytoplasmic retention at 28\u00b0C regardless of the NES288-294 mutation (Figure 3C, two-way ANOVA: main effect of T179A, p<0.001; main effect of NES288-294, p<0.001, T179A \u00d7 NES288-294 interaction, p=0.384). Therefore, it is unlikely that the T179A mutation predominantly causes CMK-1 cytoplasmic translocation by aberrantly revealing NES288-294 at 28\u00b0C.\n\nTo test the second model, we examined the interaction between T179D and NLS71-78 mutations. The T179D nuclear translocation effect at 20\u00b0C was abolished in a T179D; NLS71-78 double mutant (Figure 3D, significant interaction effect). Therefore, T179D phosphomimic mutation promotes NLS71-78-dependent CMK-1 nuclear entry.\n\nTaken together with our previous finding (Ippolito et al., 2021), our new results suggest a model in which multiple calcium-dependent events in the cytoplasm converge on CMK-1 NLS71-78 element to activate its nuclear import upon prolonged cell activation (see cytoplasmic green arrows in Figure 3G).\n\n### CMK-1 T179 phosphorylation favors cytoplasmic localization in a NES288-294-dependent manner at 28\u00b0C\n\nAs mentioned above, the nuclear accumulation caused by the T179D mutation at 20\u00b0C is not as marked as the one caused on wild type CMK-1 by the cell activation at 28\u00b0C. We considered two hypothetical explanations for this difference. On the one hand, the lack of CaM binding at 20\u00b0C might prevent a fully efficient nuclear entry despite the presence of the T179D mutation. On the other hand, the chronic phosphorylation-like state in the T179D mutant might also trigger an antagonist mechanism concomitantly promoting CMK-1 cytoplasmic translocation, and therefore tempering the nuclear accumulation of the T179D mutant protein. If the first model is true, one would predict the T179D mutant to further accumulate in the nucleus when the cell is activated at 28\u00b0C and Ca2+/CaM available for CMK-1 binding. In strong contrast to this prediction, CMK-1(T179D) mutant protein at 28\u00b0C was not more nuclear than CMK-1(wt), but actually significantly more cytoplasmic with a ratio similar to that of CMK-1(T179D) at 20\u00b0C (Figure 3E). Therefore, the impact of T179D mutation is context-dependent, and, in addition to its nuclear entry promoting effect revealed at 20\u00b0C, might also include an antagonistic nuclear export drive, which becomes apparent at 28\u00b0C to counteract the nuclear accumulation. In order to determine if T179D favors nuclear export via the NES288-294 element, we next examined the localization of double mutant proteins combining T179D with NES288-294-impairing mutations. We found that the T179D-evoked cytoplasmic drive was strongly reduced in the absence of an intact NES288-294 element (Figure 3F). We conclude that the T179D phospho-mimic mutation promotes CMK-1 nuclear export in a NES288-294-dependent manner.\n\nTaken together, our data suggest a model in which prolonged FLP stimulation causes T179 phosphorylation, which activates both NLS71-78-dependent nuclear entry (Figure 3G, cytoplasmic green arrow) and NES288-294-dependent export pathways (Figure 3G, nuclear green arrow). T179 phosphorylation would thus result in (i) an activated dynamic nucleo-cytoplasmic shuttling and (ii) a shift in CMK-1 equilibrium toward the nucleus. The latter effect most likely results from a synergy between the direct impact of T179 phosphorylation and the Ca2+/CaM-binding-evoked importin affinity increase, converging on NLS71-78 in order for this pathway to dominate over the antagonistic pathways into play.\n\n### Both CKK-1 isoforms localize to the cytoplasm of FLP regardless of heat stimulation\n\nOur next goal was to identify in which cellular compartment CMK-1 is most likely to be phosphorylated by CKK-1. In principle, T179 phosphorylation may take place in the cytoplasm, in the nucleus or in both compartments, depending on the localization of CKK-1. In rats, CaM kinase kinase alpha is expressed in the nucleus, whereas CaM kinase kinase beta is expressed in the nucleus and/or the cytoplasm depending on the tissue (Kitani et al., 2003). The worm genome encodes two predicted CKK-1 isoforms (CKK-1a and CKK-1b), produced via alternative transcription start (Figure 4A), which diverge in their N-terminal region. Their subcellular localization was unknown. Using different in silico prediction tools (Fu et al., 2011; Nguyen Ba et al., 2009; Xu et al., 2015), we did not identify any consensus NLS in either isoform, but only a weak predicted NES element, which suggested that CKK-1 might be excluded from the nucleus. To test this prediction empirically, we generated mNG protein fusion reporter for CKK-1a and -1b isoforms, respectively, and targeted their expression in FLP with the Q-system (Figure 4B; Schild and Glauser, 2015; Wei et al., 2012). Both isoforms were markedly enriched in the cytoplasm, with ratios similar to that of CMK-1 at rest (Figure 4C and D). Furthermore, their localization was not altered upon heat stimulation at 28\u00b0C for 90 min. These data suggest that most of CKK-1 activity in FLP is likely to occur in the cytoplasm and that CMK-1 phosphorylation might therefore primarily take place in this compartment (as depicted in Figure 3G).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/85260/elife-85260-fig4-v1.jpg)\n\n**Figure 4.:** (A) Schematic of ckk-1 gene locus showing genomic coordinates and the two predicted isoforms produced via alternative transcription start. Coding exon (black boxes), untranslated regions (gray boxes). (B) Schematic of the Q-system-based construct combinations used to drive mNeonGreen (mNG) fusion reporters for CKK-1a (B, left) and CKK-1b (B, right), respectively. (C) Subcellular localization of mNeonGreen reporters expressed in FLP and scored after 90 min at 20\u00b0C (blue) or at 28\u00b0C (red). Average nuclear/cytoplasm fluorescent signal ratio ( \u00b1 SEM) for the indicated reporters. Detailed data distributions presented in Figure 4\u2014figure supplement 1. #p<0.01 between temperature conditions by Student\u2019s t-test; ns, not significant. CMK-1 ratios are presented for comparison purpose. The numbers of animals scored in each condition (n) are indicated for each bar. (D) Representative fluorescence micrographs showing FLP signals. The nucleus is visible as a low-signal region (dark). Scale bars: 10 \u03bcm.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85260/elife-85260-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Violin plots with superimposed datapoints depicting the distribution of nucleus/cytoplasmic ratios of the indicated CMK-1::mNG and CKK-1::mNG reporters and robust ANOVA results. Red bars: average. Data corresponding to Figure 4C.\n\n### Perspective and conclusion\n\nCMK-1 subcellular localization contributes to adjust sensory neuron activity according to past experience. Heat-evoked CMK-1 nuclear entry in FLP thermo-nociceptor neurons causes a decrease in the animal responsiveness to noxious thermal stimuli (Schild et al., 2014). As expected for an intracellular signaling event able to modify animal behavior and survival prospects, CMK-1 subcellular localization control is a tightly regulated process, which needs to take place only in a specific context and over an appropriate timescale. Our studies have identified multiple functional intrinsic elements, including NES, NLS, and phosphorylation sites, and provide a more complete picture of their interplay in FLP thermo-nociceptor neurons. These elements have antagonistic effects, favoring either export or import, and in the case of the T179 phosphorylation, favoring both export and import. We speculate that the dual regulatory role of T179 phosphorylation in promoting bidirectional CMK-1 translocation across the nuclear envelope could be at the origin of cell stimulation-dependent CMK-1 shuttling cycles. Importin/exportin-based transport is an energy-consuming process. Therefore, if a single phosphorylation event promotes the two antagonistic pathways, it must also come with some benefits. Considering the cytoplasmic localization of CKK-1, we propose that a dynamic nucleo-cytoplasmic shuttling might contribute to ensure that the T179 phosphorylation status of CMK-1 is frequently \u2018refreshed\u2019, in order for the nuclear pool of CMK-1 to reflect the current activation status of CKK-1 in the cytoplasm. To test this hypothetical model, future studies will need to quantify the actual shuttling kinetics of wild type and mutant CMK-1 at different temperatures. Furthermore, the whole process is likely to be also influenced by the activity of phosphatase(s) responsible for CMK-1 dephosphorylation on T179. In order to obtain a full picture of the phosphorylation-dependent CMK-1 localization regulation, future studies will also need to identify these phosphatases and determine their subcellular locus of action in vivo.\n\nPrevious studies have reported transient, persistent, or sometimes no CMK-1 nuclear translocation in different neurons subjected to different stimulation regimens (Ippolito et al., 2021; Lim et al., 2018; Moss et al., 2016; Schild et al., 2014; Yu et al., 2014). We propose that the network of intrinsic regulatory elements that we have identified might be the target of multiple intracellular signaling events in order to fine-tune CMK-1 localization in a variety of contexts. While CaM binding and T179 phosphorylation converging on NLS71-78 and the antagonistic NES288-294-dependent export constitutes the primary mechanism explaining the CMK-1 equilibrium shift upon prolonged stimulation in FLP (Figure 3G), the other elements could be more relevant in different contexts. The fact that NLS297-307 overlaps with the CaM-binding site and the fact that S325 phosphorylation status affects its NES activity represent additional regulation opportunities, which could be engaged in different cells or situations. We speculate that, for example, this could be the case in cells with limited CKK-1 activity, like cells with little or no CKK-1 expression. Indeed, based on previous reporter analyses and single-cell RNA seq data, the expression of CMK-1 is much broader than that of CKK-1 (Kimura et al., 2002; Taylor et al., 2021). The activity of CaM kinase kinase in mammals was also shown to be regulated by post-translational modifications (Green et al., 2011; Nakanishi et al., 2017; Takabatake et al., 2019) and this pathway may be silenced in specific situations.\n\nBeing downstream effectors of intracellular calcium signaling, CaM kinases can couple cell activation with physiological changes taking place over relatively long timescales. Furthermore, multiple studies have shown that their kinase activity can be regulated by other signaling pathways (see Swulius and Waxham, 2008; Tokumitsu and Sakagami, 2022 for reviews), placing them as a hub for integrating multiple inputs. Our study supports the notion that not only CaM kinase activity, but also the regulation of its subcellular localization are important targets of convergent regulatory inputs. Owing to the large conservation of calcium signaling during evolution and in particular of the CaM kinase structural and functional architectures, similar mechanisms might be relevant for their regulation in different species and for different sensory modalities beyond thermo-nociceptive functions.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>DAG439</td>\n      <td>Ippolito et al., 2021</td>\n      <td>domSi439[mec-3p::cmk-1 (1\u2013348)::mNG::unc-54 3\u2019UTR] II</td>\n      <td>Expression of CMK-1(wt)::mNG in FLP</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>DAG703-704-705</td>\n      <td>Ippolito et al., 2021</td>\n      <td>domEx703-704-705[mec-3p::cmk-1(V292A/V294A)::mNG, unc-122p::RFP]</td>\n      <td>Expression of CMK-1(V292A/V294A)::mNG in FLP</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>DAG1032</td>\n      <td>Ippolito et al., 2021</td>\n      <td>domSi439[mec-3p::cmk-1::mNG::3xFlag::unc-54 3\u2019UTR] II;[unc-68(dom13)] V</td>\n      <td>Expression of CMK-1(wt)::mNG in FLP in unc-68 mutant background</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>DAG900-901-902</td>\n      <td>Ippolito et al., 2021</td>\n      <td>domEx900-901-902[mec-3p::cmk-1(K71A/R74Q/R77S/V292A/V294A)::mNG, unc-122p::RFP]</td>\n      <td>Expression of CMK-1(K71A/R74Q/R77S/V292A/V294A)::mNG in FLP</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>DAG700-701-702</td>\n      <td>Ippolito et al., 2021</td>\n      <td>domEx700-701-702[mec-3p::cmk-1(W305S)::mNG, unc-122p::RFP]</td>\n      <td>Expression of CMK-1(W305S)::mNG in FLP</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>DAG706-707-708</td>\n      <td>Ippolito et al., 2021</td>\n      <td>domEx706-707-708[mec-3p::cmk-1(K71A/R74Q/R77S)::mNG, unc-122p::RFP]</td>\n      <td>Expression of CMK-1(K71A/R74Q/R77S)::mNG in FLP</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>DAG709-710-711-1134-1135-1136</td>\n      <td>This study</td>\n      <td>domEx709-710-711-1134-1135-1136 [mec-3p::cmk-1(T179D)::mNeonGreen; unc-122p::RFP]</td>\n      <td>Expression of CMK-1(T179D)::mNG in FLP</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>DAG744-745-746-812-813</td>\n      <td>This study</td>\n      <td>domEx744-745-746-812-813[mec-3p::cmk-1(T179A)::mNeonGreen; unc-122p::RFP]</td>\n      <td>Expression of CMK-1(T179A)::mNG in FLP</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>DAG906-907-908</td>\n      <td>This study</td>\n      <td>domEx906-907-908[mec-3p::cmk-1(K71A/R74Q/R77S/ T179D)::mNeonGreen, unc-122p::RFP]</td>\n      <td>Expression of CMK-1(K71A/R74Q/ R77S/T179D)::mNG in FLP</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>DAG909-910-911</td>\n      <td>This study</td>\n      <td>domEx909-910-911[mec-3p::cmk-1(T179D/W305S)::mNeonGreen, unc-122p::RFP]</td>\n      <td>Expression of CMK-1(W305S/T179D)::mNG in FLP</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>DAG924-925-926</td>\n      <td>This study</td>\n      <td>domEx924-925-926[mec-3p::cmk-1(T179A/V292A/V294A)::mNeonGreen, unc-122p::RFP]</td>\n      <td>Expression of CMK-1(T179A/ V292A/V294A)::mNG in FLP</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>DAG1015-1016-1017</td>\n      <td>This study</td>\n      <td>domEx1015-1016-1017[mec-3p::cmk-1(T179A/W305S)::mNeonGreen, unc-122p::RFP]</td>\n      <td>Expression of CMK-1(W305S/T179A)::mNG in FLP</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>DAG1600-1601-1602</td>\n      <td>This study</td>\n      <td>domEx1600-1601-1602[mec-3p::cmk-1(S325D)::mNeonGreen; unc-122p::RFP]</td>\n      <td>Expression of CMK-1(S325D)::mNG in FLP</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>DAG1621-1622</td>\n      <td>This study</td>\n      <td>domEx1621-1622[mec-3p::cmk-1(S325A)::mNeonGreen; unc-122p::RFP]</td>\n      <td>Expression of CMK-1(S325A)::mNG in FLP</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>DAG1727-1728-1729</td>\n      <td>This study</td>\n      <td>domEx1727-1728-1729[mec-3p]::cmk-1(T179D/V292A/V294A)::mNeonGreen; unc-122p::RFP</td>\n      <td>Expression of CMK-1(T179D/V292A/V294A)::mNG in FLP</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>DAG1733-1734-1735</td>\n      <td>This study</td>\n      <td>domEx1733-1734-1735[mec-3p::cmk-1(K71A/R74Q/R77S/V292A/V294A/L321A/L323A)::mNeonGreen; unc-122p::RFP]</td>\n      <td>Expression of CMK-1(K71A/R74Q/R77S/V292A/V294A/L321A/L323A)::mNG in FLP</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>DAG1739-1740-1741</td>\n      <td>This study</td>\n      <td>domEx1739-1740-1741[mec-3p::cmk-1(K71A/R74Q/R77S/V292A/V294A/K307Q)::mNeonGreen; unc-122p::RFP]</td>\n      <td>Expression of CMK-1(K71A/R74Q/R77S/V292A/V294A/K307Q)::mNG in FLP</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>DAG1748-1749-1750</td>\n      <td>This study</td>\n      <td>domEx1748-1749-1750[mec-3p::QF]; [QUAS::ckk-1b::gfp]; [unc-122p::RFP]</td>\n      <td>Expression of CKK-1b::mNG in FLP</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>DAG1751-1752-1753</td>\n      <td>This study</td>\n      <td>domEx1751-1752-1753[mec-3p::QF]; [QUAS::ckk-1a::gfp]; [unc-122p::RFP]</td>\n      <td>Expression of CKK-1a::mNG in FLP</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>DAG1793-1794-1795</td>\n      <td>This study</td>\n      <td>domEx1793-1794-1795[mec-3p::cmk-1(V292A/V294A/S325A)::mNeonGreen; unc-122p::RFP]</td>\n      <td>Expression of CMK-1(V292A/V294A/S325A)::mNG in FLP</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>DAG1787-1788-1789</td>\n      <td>This study</td>\n      <td>domEx1787-1788-1789[mec-3p::cmk-1(K71A;R74Q;R77S;V292A;V294A;S325A)::mNG]; [unc-122p::RFP]</td>\n      <td>Expression of CMK-1(K71A/R74Q/R77S/V292A/V294A/S325A)::mNG in FLP</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>DAG1430-1431-1432</td>\n      <td>This study</td>\n      <td>domEx1430-1431-1432[mec-3p::cmk-1(T179A)::mNeonGreen, unc-122p::RFP];[unc-68(dom13)]V</td>\n      <td>Expression of CMK-1(T179A)::mNG in FLP in unc-68 mutant background</td>\n    </tr>\n  </tbody>\n</table>\n\n### C. elegans strains and growth conditions\n\nC. elegans strains used in this study are reported in the Key resources table. All strains were grown as previously described (Stiernagle, 2006) on nematode growth media (NGM) plates with OP50 Escherichia coli, at 20\u00b0C.\n\n### In silico sequence analysis\n\nNLS predictions were performed with NLStradamus (Nguyen Ba et al., 2009), NES predictions with LocNES (Xu et al., 2015), as well as NESsential (Fu et al., 2011), and phosphosite predictions with NetPhos3.1 (Blom et al., 2004).\n\n### Transgenesis\n\nPlasmid DNA was purified with the GenElute HP Plasmid miniprep kit (Sigma) and microinjected in the worm gonad according to a standard protocol (Evans, 2006). We used unc-122p::RFP as co-injection markers to identify transgenic animals.\n\n### Promoter plasmids (Multi-site Gateway slot 1)\n\nEntry plasmids containing specific promoters were constructed by PCR from N2 genomic DNA, with primers flanked with attB4 and attB1r recombination sites and cloned into pDONR-P4-P1R vector (Invitrogen) by BP recombination. Plasmids and primer sequences are reported in the Supplementary file 1.\n\n### Coding sequence plasmids (Multi-site Gateway slot 2)\n\nEntry plasmids containing specific coding DNA sequences were constructed by PCR from N2 cDNA with primers flanked with attB1 and attB2 recombination sites and cloned into pDONR_221 vector (Invitrogen) by BP recombination. Plasmids and primer sequences are listed in Supplementary file 1.\n\n### Site-directed mutagenesis\n\nAll the point mutations were generated by inverse PCR-based site-directed mutagenesis (Hemsley et al., 1989). In brief, whole plasmids (entry plasmids containing cmk-1 coding DNA sequences) were amplified with the KOD Hot Start DNA Polymerase (Novagen, Merck). Primers were phosphorylated in 5\u2019 and were designed to contain the desired point mutation(s) and to hybridize in a divergent and back-to-back manner on the plasmid. After electrophoresis, linear PCR products were purified from agarose gel (1%) with a Zymoclean-Gel DNA Recovery kit (Zymo Research) and circularized with DNA Ligation Kit \u2018Mighty Mix\u2019 (Takara). The plasmid templates, primer sequences, and names of resulting mutation-carrying plasmids are reported in Supplementary file 1.\n\n### Imaging of fluorescent CMK-1 reporter protein\n\n#### Worm preparation for CMK-1 imaging in FLP\n\nWorms were synchronized according to standard procedure with hypochlorite treatment and grown at 20\u00b0C. First-day adult animals were collected from NGM bacterial plates with distilled water, transferred to 1.5 ml microcentrifuge tubes, and washed once with distilled water. Twenty \u00b5l of a dense worm suspension were transferred to PCR tubes and incubated in a thermocycler at 20\u00b0C or 28\u00b0C for 1.5 hr. Prior to imaging, worms were immobilized with the addition of NaN3 (final concentration 1% m/v), transferred on a glass slide, and covered with a coverslip. Imaging was carried out during the next 5 min.\n\n#### Microscopy\n\nFLP images to measure the nuclear/cytoplasmic ratio were acquired in a Zeiss Axioplan2 fluorescence microscope, with a 40\u00d7 (air, NA = 0.95) objective and constant illumination parameters.\n\n### Determination of CMK-1 nuclear/cytoplasmic ratio\n\nFor CMK-1 subcellular localization analysis, the intensity of fluorescence was first measured for each neuron in three regions of interest (ROIs): nucleus, cytoplasm, background. The nuclear/cytoplasmic ratio was calculated as (nucleus-background)/(cytoplasm-background). A ratio >1 indicates a nuclear accumulation of CMK-1, while a value <1 a cytoplasmic biased ratio. All three ROIs were ellipses of the same area. The background ROI was defined in a worm region close to the neuron to take autofluorescence into account. Nuclear and cytoplasmic ROIs were defined based on the mNG green signal and the shape of the neuron, via a previously validated procedure (Ippolito et al., 2021).\n\n### Statistical tests\n\nComparisons were made with one-way and two-way ANOVAs followed by Bonferroni post hoc tests using Jamovi (The jamovi project (2021). jamovi (Version 1.6) [Computer Software]. Retrieved from https://www.jamovi.org). A visual inspection of Q-Q plots suggested that all datasets were following a normal or nearly normal distribution, but some datasets returned significant results with the Shapiro-Wilk test (p<0.01). For that reason, we conducted robust ANOVAs. No outlier was excluded.\n\n### Experimental design\n\nNo specific a priori power analysis was performed. N determination was based on previous similar experiments and adjustments made based on the actual measure variability. All Ns are mentioned in the figures. Ns represent independent animals (biological replicates). At least two independent transgenic lines (in most cases three lines or more, see Key resources table) were scored for each genotype, each on at least three different experimental days. Wild type control was systematically run in parallel. Thermal stimulation conditions at 20\u00b0C and 28\u00b0C were run in parallel during imaging session. Some wild type control data are reused across some figure panels for datasets matching the same acquisition sessions.\n\n### Materials availability statement\n\nStrains and plasmids generated during the study will be made available upon request.\n",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "acb33416-a87e-4ced-bdc8-05cbc51e24bf",
+      "submission_id": "aeb4855a-8b5c-41d4-8085-2cf764c4b650",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Manuel Zimmer, https://ror.org/03prydq77 University of Vienna Austria\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85260.sa0](https://doi.org/10.7554/eLife.85260.sa0)\n\nIn this follow-up study to their previous work (Ippolito, 2021), the authors report additional insights into a complex network of nuclear export (NES) and nuclear localisation (NLS) sequences in the CaM kinase\u20101 (CMK\u20101), which is implicated in the plastic regulation of the FLP thermo\u2010nociceptors neurons.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Manuel Zimmer, https://ror.org/03prydq77 University of Vienna Austria\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85260.sa1](https://doi.org/10.7554/eLife.85260.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Multiple antagonist calcium-dependent mechanisms control CaM Kinase-1 subcellular localization in a C. elegans thermal nociceptor\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Richard Aldrich as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Shawn Xu (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission. Overall, we are very excited about the work presented in this manuscript, but we think that a few revisions are needed to better support your major claims. We believe that the requested revisions are very feasible and can be addressed with some new experiments/data. Please address the points below and submit a point-by-point response alongside your revised manuscript.\n\nEssential revisions:\n\nReviewer #1:\n\n1) The authors identify a secondary NLS/NES structural element-pair that is, according to their claim, a basal, stimulation-independent structural modulator of CMK-1 subcellular distribution. The presented model suggests that this new NLS/NES pair regulates a basal shuttling rate of CMK-1 between the cytosol and the nucleus. However, this is not per se demonstrated in the current version of the manuscript. I suggest applying FLIP or iFRAP to demonstrate that these secondary elements are indeed regulating a basal nucleo-cytoplastic shuttling of CMK-1 in FLP neurons.\n\n2) It is not clearly described how the authors ended up studying S325. Is this the only strongly predicted phosphorylation site in the whole CT part of the protein? Did the Authors specifically perform phosphorylation-site prediction to define candidate sites?\n\n3) The axis of supplementary Figure 4 is clipped and some parts of the violin plots are missing.\n\nReviewer #2:\n\n1) Figures 1-3 share some of the same control datasets. For example, it seems like the nucleus/cytoplasm ratios of CMK-1 wild-type animals at 20{degree sign}C and 28{degree sign}C are from the same trial of experiments in Figure 1B and 2C. If data are re-used in different figures, this should be clearly clarified and stated in figure legends.\n\n2) Based on theory or data, it would be useful for the authors to be more specific about the extent to which a prolonged temperature rise and mutations in functional domains of CMK-1 would be expected to alter worms' FLP-related behaviors like heat avoidance reversals and heat adaptation. It would be helpful if the authors could include at least one functional behavioral assay to validate their findings in terms of the signaling pathway.\n\n3) Line 106: In silico analysis tools first appearing in the manuscript should be briefly explained by a few sentences or a citation. Besides, a detailed explanation of this method is missed in the \"Materials and methods\" section.\n\n4) Typos. Some examples:\n\nLine 62: \"through which\" instead of \"though which\".\n\nLine 65: \"decrease CMK-1 nuclear accumulation\".\n\nLine 194/ 218/ 236: in the three sub-headings \"T179D phosphor-mimic mutation\" could be replaced by \"T179 phosphorylation\".\n",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "89583ce6-d89f-4abd-897b-6cd5df2a2d3d",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C1",
+      "claim": "Nociceptive habituation is a conserved process through which pain sensitivity threshold is adjusted based on past sensory experience.",
+      "claim_type": "EXPLICIT",
+      "source": "Nociceptive habituation is a conserved process through which pain sensitivity threshold is adjusted based on past sensory experience and which may be dysregulated in human chronic pain conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about nociceptive habituation without specific experimental data in this manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "069d4bd4-4041-407c-8dc6-0e2f3779f379",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C2",
+      "claim": "Nociceptive habituation may be dysregulated in human chronic pain conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Nociceptive habituation is a conserved process through which pain sensitivity threshold is adjusted based on past sensory experience and which may be dysregulated in human chronic pain conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as speculative reasoning about the relevance to human disease.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "86dffc69-abe1-4348-9231-ae0997cc7f16",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C3",
+      "claim": "Noxious heat habituation in Caenorhabditis elegans involves the nuclear translocation of CaM kinase-1 (CMK-1) in the FLP thermo-nociceptors neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Noxious heat habituation in Caenorhabditis elegans involves the nuclear translocation of CaM kinase-1 (CMK-1) in the FLP thermo-nociceptors neurons, causing reduced animal heat sensitivity and avoidance responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by previous studies and experimental observations in this manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "5a2a86a3-1c7b-412b-9e10-ce0dd20357f8",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C4",
+      "claim": "Nuclear translocation of CMK-1 in FLP neurons causes reduced animal heat sensitivity and avoidance responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Noxious heat habituation in Caenorhabditis elegans involves the nuclear translocation of CaM kinase-1 (CMK-1) in the FLP thermo-nociceptors neurons, causing reduced animal heat sensitivity and avoidance responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by previous studies cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "e7bdf895-1de2-4837-aed6-1d2a22368f56",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C5",
+      "claim": "The phosphorylation of CMK-1 on T179 by CaM kinase kinase-1 (CKK-1) is required for nuclear entry.",
+      "claim_type": "EXPLICIT",
+      "source": "The phosphorylation of CMK-1 on T179 by CaM kinase kinase-1 (CKK-1) is required for nuclear entry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in this manuscript and previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "bfbac660-3cc8-4d13-b7d1-100c564eb5f1",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C6",
+      "claim": "A specific nuclear export sequence (NES) is required to maintain CMK-1 in the cytoplasm at rest (20\u00b0C).",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, we identified a specific nuclear export sequence (NES) required to maintain CMK-1 in the cytoplasm at rest (20\u00b0C) and showed that Ca2+/CaM binding is sufficient to enhance CMK-1 affinity for IMA-3 via a specific nuclear localization signal (NLS) in order to promote nuclear entry after persistent heat stimulation (90 min at 28\u00b0C) (Ippolito et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by previous work cited (Ippolito et al., 2021).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "bac3edfe-8fe6-4eb8-a89b-d1bf7949ed13",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C7",
+      "claim": "Ca2+/CaM binding is sufficient to enhance CMK-1 affinity for IMA-3 via a specific nuclear localization signal (NLS).",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, we identified a specific nuclear export sequence (NES) required to maintain CMK-1 in the cytoplasm at rest (20\u00b0C) and showed that Ca2+/CaM binding is sufficient to enhance CMK-1 affinity for IMA-3 via a specific nuclear localization signal (NLS) in order to promote nuclear entry after persistent heat stimulation (90 min at 28\u00b0C) (Ippolito et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by previous work cited (Ippolito et al., 2021).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "df014ea9-b205-42bd-ba44-76b2dd394878",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C8",
+      "claim": "Ca2+/CaM binding promotes CMK-1 nuclear entry after persistent heat stimulation (90 min at 28\u00b0C).",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, we identified a specific nuclear export sequence (NES) required to maintain CMK-1 in the cytoplasm at rest (20\u00b0C) and showed that Ca2+/CaM binding is sufficient to enhance CMK-1 affinity for IMA-3 via a specific nuclear localization signal (NLS) in order to promote nuclear entry after persistent heat stimulation (90 min at 28\u00b0C) (Ippolito et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by previous work cited (Ippolito et al., 2021).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "012cc830-0a72-455c-b723-ce016e4c6c72",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C9",
+      "claim": "Additional functional NES and NLS on CMK-1 can counteract previously identified elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we identified additional functional NES and NLS on CMK-1, whose activity can counteract previously identified elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data presented in this manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "4e3f99e7-b1cc-450f-b29f-296398c62be6",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C10",
+      "claim": "T179 phosphorylation can promote nuclear entry both downstream of CaM binding and as part of an independent/parallel pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "T179 phosphorylation can promote nuclear entry both downstream of CaM binding and as part of an independent/parallel pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data presented in this manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "70f83954-d98d-4aa8-9b91-8f96857c7f3a",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C11",
+      "claim": "T179 phosphorylation can promote nuclear export.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, T179 phosphorylation can also produce the opposite effect by promoting nuclear export.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data presented in this manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "942e7464-7a60-408e-9f99-e7f3e9e3389b",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C12",
+      "claim": "Multiple calcium-dependent regulatory mechanisms converge to bias the activity pattern across a network of NES/NLS elements to control CMK-1 nucleo-cytoplasmic shuttling.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our studies suggest that multiple calcium-dependent regulatory mechanisms converge to bias the activity pattern across a network of NES/NLS elements, in order to control CMK-1 nucleo-cytoplasmic shuttling, and actuate stimulation-dependent nociceptive plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "b28b86e3-ce77-4124-873f-9948313489e7",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C13",
+      "claim": "Ca2+/CaM-dependent protein kinases (CaMK) are conserved effectors of the universal calcium second messenger.",
+      "claim_type": "EXPLICIT",
+      "source": "Ca2+/CaM-dependent protein kinases (CaMK) are conserved effectors of the universal calcium second messenger, mediating important plasticity effects in the nervous system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about CaMKs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "db7d361d-7140-4a04-b7f8-6287e00d01bd",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C14",
+      "claim": "CaMKs mediate important plasticity effects in the nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "Ca2+/CaM-dependent protein kinases (CaMK) are conserved effectors of the universal calcium second messenger, mediating important plasticity effects in the nervous system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about CaMKs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "d04351a5-0819-4cca-8b8a-369bba2b6eef",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C15",
+      "claim": "CaMKs phosphorylate diverse intracellular substrates in response to neuronal activation to actuate changes in cell physiology.",
+      "claim_type": "EXPLICIT",
+      "source": "In response to neuronal activation, these kinases phosphorylate diverse intracellular substrates in order to actuate changes in cell physiology (Soderling, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Soderling, 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "1dbde068-44cf-4c8e-a868-ff712a0724f7",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C16",
+      "claim": "CaMKI includes an N-terminal kinase domain and a C-terminal regulatory domain.",
+      "claim_type": "EXPLICIT",
+      "source": "CaMKI includes an N-terminal kinase domain and a C-terminal regulatory domain, which inhibits its catalytic activity (Goldberg et al., 1996; Hook and Means, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Goldberg et al., 1996 and Hook and Means, 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "1e6ee373-e375-45a7-b5d4-855331add445",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C17",
+      "claim": "The C-terminal regulatory domain of CaMKI inhibits its catalytic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "CaMKI includes an N-terminal kinase domain and a C-terminal regulatory domain, which inhibits its catalytic activity (Goldberg et al., 1996; Hook and Means, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Goldberg et al., 1996 and Hook and Means, 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "920838f5-c090-4b05-a1b9-65abe73244a9",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C18",
+      "claim": "CaMKI auto-inhibition is released upon binding of Ca2+/CaM in the regulatory domain.",
+      "claim_type": "EXPLICIT",
+      "source": "This auto-inhibition is released upon binding of Ca2+/CaM in the regulatory domain and the kinase can be fully activated after phosphorylation of a specific threonine in the activation loop (T177 in human) by CaMK kinase I (CaMKKI).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about CaMKI regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "aa92a83a-95f0-4a63-8da3-9ff6158f1081",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C19",
+      "claim": "CaMKI can be fully activated after phosphorylation of T177 (in human) by CaMKKI.",
+      "claim_type": "EXPLICIT",
+      "source": "This auto-inhibition is released upon binding of Ca2+/CaM in the regulatory domain and the kinase can be fully activated after phosphorylation of a specific threonine in the activation loop (T177 in human) by CaMK kinase I (CaMKKI).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about CaMKI regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "7d96d15a-0dc7-4d7e-92cb-3b4d54255601",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C20",
+      "claim": "In mammals, CaM binding on CaMKI is a prerequisite prior to the phosphorylation of T177.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, CaM binding on CaMKI is a prerequisite prior to the phosphorylation of T177.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about mammalian CaMKI regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "bc2bf894-2c81-44c1-812e-a321788a5a51",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C21",
+      "claim": "The Caenorhabditis elegans CaMKI (named CMK-1) displays similar structural and functional properties to mammalian CaMKI.",
+      "claim_type": "EXPLICIT",
+      "source": "The Caenorhabditis elegans CaMKI (named CMK-1) displays similar structural and functional properties, with a conserved activation loop threonine (T179 in the worm sequence) (Eto et al., 1999; Kimura et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Eto et al., 1999 and Kimura et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "93106a59-2761-49ec-86c4-cd5a7ebc7a6b",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C22",
+      "claim": "C. elegans CMK-1 has a conserved activation loop threonine at position T179.",
+      "claim_type": "EXPLICIT",
+      "source": "The Caenorhabditis elegans CaMKI (named CMK-1) displays similar structural and functional properties, with a conserved activation loop threonine (T179 in the worm sequence) (Eto et al., 1999; Kimura et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Eto et al., 1999 and Kimura et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "a4e7409c-74d2-496c-8fb7-6ddd2d56f804",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C23",
+      "claim": "CMK-1 mediates multiple plasticity mechanisms, including during salt aversive learning, habituation to repeated mechanical stimulations, and thermal adaptation to innocuous and noxious heat.",
+      "claim_type": "EXPLICIT",
+      "source": "CMK-1 mediates multiple plasticity mechanisms, including during salt aversive learning, habituation to repeated mechanical stimulations, and thermal adaptation to innocuous and noxious heat (Ardiel et al., 2018; Lim et al., 2018; Neal et al., 2015; Satterlee et al., 2004; Schild et al., 2014; Yu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "f8913ce2-59d8-43f8-b261-9a39dcc8cfc3",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C24",
+      "claim": "The subcellular localization of CMK-1 can be regulated in a stimulus-dependent manner in different contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "The subcellular localization of CMK-1 can be regulated in a stimulus-dependent manner in different contexts (Moss et al., 2016; Neal et al., 2015; Schild et al., 2014; Yu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "cb31126a-13c6-4d94-8a67-64d856de4359",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C25",
+      "claim": "CMK-1 activity in the cytoplasm promotes heat avoidance response in FLP neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous experiments conducted in transgenic animals expressing different CMK-1 mutants in FLP with constitutive nuclear or cytoplasmic localization notably showed that CMK-1 activity in the cytoplasm promotes heat avoidance response, while its activity in the nucleus acts antagonistically to reduce heat avoidance response (Schild et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Schild et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "fd630357-e86f-47e8-af01-9663f03bd3d5",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C26",
+      "claim": "CMK-1 activity in the nucleus acts antagonistically to reduce heat avoidance response in FLP neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous experiments conducted in transgenic animals expressing different CMK-1 mutants in FLP with constitutive nuclear or cytoplasmic localization notably showed that CMK-1 activity in the cytoplasm promotes heat avoidance response, while its activity in the nucleus acts antagonistically to reduce heat avoidance response (Schild et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Schild et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "c375ae42-4ab7-41d1-9fc6-a4d5af040a0f",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C27",
+      "claim": "In wild type worms exposed to innocuous temperature (20\u00b0C), CMK-1 resides mostly in the FLP cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "In wild type worms exposed to innocuous temperature (20\u00b0C), CMK-1 resides mostly in the FLP cytoplasm, where it promotes high sensitivity to heat and robust avoidance responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental observations in this and previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "8948f9ee-f5b6-4298-a927-473ec365a7e7",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C28",
+      "claim": "Cytoplasmic CMK-1 promotes high sensitivity to heat and robust avoidance responses.",
+      "claim_type": "EXPLICIT",
+      "source": "In wild type worms exposed to innocuous temperature (20\u00b0C), CMK-1 resides mostly in the FLP cytoplasm, where it promotes high sensitivity to heat and robust avoidance responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the localization and functional data.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "0b1e884f-c874-4009-8eab-06879abb5ec4",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C29",
+      "claim": "Upon persistent noxious heat stimulation (90 min at 28\u00b0C) CMK-1 progressively translocates in the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon persistent noxious heat stimulation (90 min at 28\u00b0C) CMK-1 progressively translocates in the nucleus, where it acts to reduce the animal heat sensitivity and dampen avoidance responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in this and previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "7f02de22-da3e-4edf-a44a-d09fba66547e",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C30",
+      "claim": "Nuclear CMK-1 acts to reduce the animal heat sensitivity and dampen avoidance responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon persistent noxious heat stimulation (90 min at 28\u00b0C) CMK-1 progressively translocates in the nucleus, where it acts to reduce the animal heat sensitivity and dampen avoidance responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the localization and functional data.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "3c6cc3b5-4c69-4703-b3a9-fd276ad52d7c",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C31",
+      "claim": "NES288-294 is a canonical nuclear export sequence of CMK-1 located immediately adjacent to the CaM-binding domain in the regulatory domain.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the NES288-294 canonical nuclear export sequence of CMK-1, located immediately adjacent to the CaM-binding domain in the regulatory domain and representing a major determinant of CMK-1 cytoplasmic localization at 20\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by previous work cited (Ippolito et al., 2021).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "9b2e8187-391f-41b1-8fca-f1339185234e",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C32",
+      "claim": "NES288-294 represents a major determinant of CMK-1 cytoplasmic localization at 20\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the NES288-294 canonical nuclear export sequence of CMK-1, located immediately adjacent to the CaM-binding domain in the regulatory domain and representing a major determinant of CMK-1 cytoplasmic localization at 20\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by previous work cited (Ippolito et al., 2021).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "004d5671-21ec-4232-b209-3050e6334740",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C33",
+      "claim": "NLS71-78 is a canonical nuclear localization sequence located on the N-terminal catalytic domain of CMK-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the NLS71-78 canonical nuclear localization sequence, located on the N-terminal catalytic domain of CMK-1, and which can interact with IMA-3 importin in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by previous work cited (Ippolito et al., 2021).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "fcacc991-ade0-4b12-8410-b837a12a4e3c",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C34",
+      "claim": "NLS71-78 can interact with IMA-3 importin in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the NLS71-78 canonical nuclear localization sequence, located on the N-terminal catalytic domain of CMK-1, and which can interact with IMA-3 importin in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by previous work cited (Ippolito et al., 2021).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "dd422326-0e1d-445e-bd49-9217cc7cce2f",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C35",
+      "claim": "The binding of Ca2+/CaM on CMK-1 can strengthen its interaction with IMA-3 importin via NLS71-78.",
+      "claim_type": "EXPLICIT",
+      "source": "We furthermore showed that the binding of Ca2+/CaM on CMK-1 can strengthen its interaction with IMA-3 importin via NLS71-78 (Ippolito et al., 2021), constituting a calcium-dependent mechanism through which thermosensory activity causes CMK-1 nuclear accumulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by previous work cited (Ippolito et al., 2021).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "95609623-2781-41c5-aee4-99975b467906",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C36",
+      "claim": "Ca2+/CaM binding constitutes a calcium-dependent mechanism through which thermosensory activity causes CMK-1 nuclear accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We furthermore showed that the binding of Ca2+/CaM on CMK-1 can strengthen its interaction with IMA-3 importin via NLS71-78 (Ippolito et al., 2021), constituting a calcium-dependent mechanism through which thermosensory activity causes CMK-1 nuclear accumulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data cited.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "62b23f7c-eb38-4760-89fc-84624ffe1854",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C37",
+      "claim": "A T179A mutation on CMK-1 can decrease CMK-1 nuclear accumulation at 28\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a T179A mutation on CMK-1 as well as a null mutation in the ckk-1 gene can both decrease CMK-1 nuclear accumulation at 28\u00b0C (Schild et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Schild et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "4dd4dede-f7a2-466e-93e1-fcbc0d804a68",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C38",
+      "claim": "A null mutation in the ckk-1 gene can decrease CMK-1 nuclear accumulation at 28\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a T179A mutation on CMK-1 as well as a null mutation in the ckk-1 gene can both decrease CMK-1 nuclear accumulation at 28\u00b0C (Schild et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Schild et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "6997f84a-f04c-4d4e-8dfe-5ae82cb46a81",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C39",
+      "claim": "The NLS71-78; NES288-294 double mutant is slightly enriched in the nucleus at 20\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "This double mutant is slightly enriched in the nucleus at 20\u00b0C and translocates in the cytoplasm at 28\u00b0C, corresponding to a reverted behavior as compared to wild type CMK-1 (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "a2972f57-2a46-4ae6-9cbd-e53e4a49635c",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C40",
+      "claim": "The NLS71-78; NES288-294 double mutant translocates in the cytoplasm at 28\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "This double mutant is slightly enriched in the nucleus at 20\u00b0C and translocates in the cytoplasm at 28\u00b0C, corresponding to a reverted behavior as compared to wild type CMK-1 (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "f9137e51-5ed1-4496-8725-10061c40c7bd",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C41",
+      "claim": "The NLS71-78; NES288-294 double mutant displays reverted behavior as compared to wild type CMK-1.",
+      "claim_type": "EXPLICIT",
+      "source": "This double mutant is slightly enriched in the nucleus at 20\u00b0C and translocates in the cytoplasm at 28\u00b0C, corresponding to a reverted behavior as compared to wild type CMK-1 (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from comparison of the double mutant behavior to wild type.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "dc5e9b86-213a-409f-902e-eb01a01d937f",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C42",
+      "claim": "A secondary pair of antagonistic NES/NLS determinants becomes predominant when NES288-294/NLS71-78-dependent pathways are deactivated.",
+      "claim_type": "EXPLICIT",
+      "source": "The simplest explanation for this behavior would involve a secondary pair of antagonistic NES/NLS determinants, whose activity becomes predominant only when the major drives (NES288-294/NLS71-78 -dependent pathways) are deactivated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the behavior of the double mutant.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "ea5368be-698b-441e-9dd4-c79f478979e7",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C43",
+      "claim": "Impairing the NLS297-307 element with a K307Q mutation in the NLS71-78; NES288-294 double mutant background fully blocked its nuclear accumulation at 20\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that impairing the NLS297-307 element with a K307Q mutation in the NLS71-78; NES288-294 double mutant background fully blocked its nuclear accumulation at 20\u00b0C (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "ccead3e5-b495-4eb8-b630-7dadc879aaea",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C44",
+      "claim": "The K307Q mutation could reinforce the cytoplasmic enrichment at 28\u00b0C in the NLS71-78; NES288-294 double mutant background.",
+      "claim_type": "EXPLICIT",
+      "source": "This mutation could also reinforce the cytoplasmic enrichment at 28\u00b0C (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "67ccc7d4-98be-4478-84e7-9c0e97437379",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C45",
+      "claim": "The NLS297-307-dependent nuclear entry pathway contributes to translocate CMK-1 in the nucleus, independently of the NLS71-78/NES288-294 pair.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we conclude that the NLS297-307-dependent nuclear entry pathway contributes to translocate CMK-1 in the nucleus, independently of the NLS71-78/NES288-294 pair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data on the K307Q mutation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "cb76175b-353d-4524-8bd9-7cc3cb235fb6",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C46",
+      "claim": "The NLS71-78; NES288-294; NES315-323 triple mutant protein could still be exported from the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the NLS71-78; NES288-294; NES315-323 triple mutant protein could still be exported from the nucleus, like the NLS71-78; NES288-294 double (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "dbec97f4-dac8-4fbc-bb0f-29ac1bdf249e",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C47",
+      "claim": "The candidate NES315-323 sequence does not mediate CMK-1 nuclear export in any of the conditions examined.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the candidate NES315-323 sequence does not mediate CMK-1 nuclear export in any of the conditions examined so far across our studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of effect of the NES315-323 mutation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "f8f83202-ed48-425d-b23b-b1c4d09be6e0",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C48",
+      "claim": "A CMK-1 (1\u2013304) mutant was previously shown to accumulate in the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a CMK-1 (1\u2013304) mutant was previously shown to accumulate in the nucleus and proposed to lack some NES located in the 305\u2013348 region (Schild et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Schild et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "b02e5a1b-d43a-48b0-9e05-6345e9c143f1",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C49",
+      "claim": "CMK-1 (1\u2013304) mutant was proposed to lack some NES located in the 305\u2013348 region.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a CMK-1 (1\u2013304) mutant was previously shown to accumulate in the nucleus and proposed to lack some NES located in the 305\u2013348 region (Schild et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Schild et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "54b5dbcd-cc78-4efe-b86a-72d828f80a4b",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C50",
+      "claim": "An S325A mutation produced a partial yet significant reduction in heat stimulus-evoked nuclear export when introduced in the NLS71-78; NES288-294 double mutant background.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that an S325A mutation produced a partial yet significant reduction in heat stimulus-evoked nuclear export when introduced in the NLS71-78; NES288-294 double mutant background (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "d7c8b17b-984f-42f1-81ac-e42378eb4183",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C51",
+      "claim": "The single S325A mutant displayed a significantly more nuclear localization at both 20\u00b0C and 28\u00b0C as compared to CMK-1(wt).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, as compared to CMK-1(wt), the single S325A mutant displayed a significantly more nuclear localization at both 20\u00b0C and 28\u00b0C (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "ad5b059c-1b7b-45bf-937a-6c702ce4d7f0",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C52",
+      "claim": "A double mutant protein combining S325A and NES288-294 mutations markedly accumulated in the nucleus at both temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "A double mutant protein combining S325A and NES288-294 mutations markedly accumulated in the nucleus at both temperatures, reaching nuclear/cytoplasmic signal ratio values significantly higher than that of any single mutation (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "d38117cf-18b0-4f65-b79c-4244e24f168a",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C53",
+      "claim": "Serine 325 is part of a functional element promoting CMK-1 cytoplasmic localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, serine 325 is part of a functional element promoting CMK-1 cytoplasmic localization and regulating CMK-1 localization independently of NES288-294.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data on S325 mutations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "704a3490-536c-4c65-a145-062ba9ae5096",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C54",
+      "claim": "Serine 325 regulates CMK-1 localization independently of NES288-294.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, serine 325 is part of a functional element promoting CMK-1 cytoplasmic localization and regulating CMK-1 localization independently of NES288-294.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data on S325 mutations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "8e4b6468-0430-4c6e-9314-39a70b1d61de",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C55",
+      "claim": "The S325D mutant localization was the same as wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this view, the S325D mutant localization was the same as wild type (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "6a38bbfe-085d-459f-adf7-fa6deb1628c0",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C56",
+      "claim": "An intact S325 residue is necessary for the normal nuclear export of CMK-1(wt).",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest (i) that an intact S325 residue is necessary for the normal nuclear export of CMK-1(wt) and (ii) that S325 phosphorylation might be the default state of CMK-1 in FLP under our conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data on S325 mutations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "293bdc3a-9e59-4ca8-8927-6770ddf2526a",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C57",
+      "claim": "S325 phosphorylation might be the default state of CMK-1 in FLP under the experimental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest (i) that an intact S325 residue is necessary for the normal nuclear export of CMK-1(wt) and (ii) that S325 phosphorylation might be the default state of CMK-1 in FLP under our conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "bdf70990-3577-4874-b5de-ec1a2a8f42d6",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C58",
+      "claim": "The post-translational modification of S325 could be used as a regulatory switch to control CMK-1 localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data also suggest that the post-translational modification of S325 could be used as a regulatory switch to control CMK-1 localization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "2bb1db70-ead2-41f1-8f11-2c11cc7aca71",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C59",
+      "claim": "S325 promotes CMK-1 cytoplasmic accumulation independently of NES288-294.",
+      "claim_type": "EXPLICIT",
+      "source": "We know that S325 promotes CMK-1 cytoplasmic accumulation independently of NES288-294 (as shown by the impact of the S325A mutation in a NES288-294 mutant background Figure 1D and E), but how the S325-element works remains to be determined.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 1D and 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "13ed0081-255c-4bc1-bb5a-bc03f2922ccb",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C60",
+      "claim": "The S325-element could function by promoting a non-canonical nuclear export or a cytoplasmic retention pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "In principle, it could either function by promoting a non-canonical nuclear export or a cytoplasmic retention pathway, for example, by anchoring CMK-1 to some cytoplasmic components.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about possible mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "db3b8e3f-1147-4b42-97ce-babde97812c3",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C61",
+      "claim": "S325 phosphorylation/dephosphorylation modifications are not involved in the heat-evoked CMK-1 re-localization process in FLP.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, it seems that S325 phosphorylation/dephosphorylation modifications are not involved in the heat-evoked CMK-1 re-localization process in FLP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "7141413b-3dc4-45a3-809e-4bdcf01f20d4",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C62",
+      "claim": "The S325 phosphorylation mechanism might be relevant in other contexts in FLP and/or in other neuron types.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we speculate that this mechanism might be relevant in other contexts in FLP and/or in other neuron types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about possible broader relevance.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "095780a4-5a6f-4160-9ab2-b2c77fe8a42f",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C63",
+      "claim": "At 20\u00b0C, the strong NLS71-78-dependent nuclear entry pathway is inactive.",
+      "claim_type": "EXPLICIT",
+      "source": "At 20\u00b0C, the strong NLS71-78 -dependent nuclear entry pathway is inactive and the activity of the weaker NLS297-307 pathway is over-competed by both NES288-294-dependent and the S325-dependent export pathways, which are both active.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data and presented as a working model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "d0b52e28-73ec-4732-9bb1-c4076e42417d",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C64",
+      "claim": "At 20\u00b0C, the activity of the weaker NLS297-307 pathway is over-competed by both NES288-294-dependent and the S325-dependent export pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "At 20\u00b0C, the strong NLS71-78 -dependent nuclear entry pathway is inactive and the activity of the weaker NLS297-307 pathway is over-competed by both NES288-294-dependent and the S325-dependent export pathways, which are both active.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data and presented as a working model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "1e5d9a71-60f9-47ab-941b-b65dfb1d2663",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C65",
+      "claim": "At 28\u00b0C, the strong NLS71-78-dependent nuclear entry pathway is active and is the main drive to shift the equilibrium toward the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "At 28\u00b0C, the strong NLS71-78-dependent nuclear entry pathway is active and is the main drive to shift the equilibrium toward the nucleus, even if the other elements might still be active.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data and presented as a working model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "bcb72a9a-ac3c-4f94-aa38-19438e091ed1",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C66",
+      "claim": "A phosphorylation-dead CMK-1(T179A) mutant protein displays impaired activity-dependent nuclear accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that a phosphorylation-dead CMK-1(T179A) mutant protein displays impaired activity-dependent nuclear accumulation (Schild et al., 2014; Yu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Schild et al., 2014 and Yu et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "69ebdc72-c098-4ad2-ba02-cc4df0e92fdc",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C67",
+      "claim": "The T179A mutation left CMK-1 reporter localization unchanged in FLP at 20\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, while the T179A mutation left CMK-1 reporter localization unchanged in FLP at 20\u00b0C, it abolished its nuclear accumulation after 90 min of cell activation at 28\u00b0C (Figure 2A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 2A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "ecf22eee-989f-4c5a-b466-2555fb764431",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C68",
+      "claim": "The T179A mutation abolished CMK-1 nuclear accumulation after 90 min of cell activation at 28\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, while the T179A mutation left CMK-1 reporter localization unchanged in FLP at 20\u00b0C, it abolished its nuclear accumulation after 90 min of cell activation at 28\u00b0C (Figure 2A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 2A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "81c83e15-0f8e-432a-a509-37beebb29337",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C69",
+      "claim": "The ability of CMK-1 to be phosphorylated on T179 is essential for its activity-dependent nuclear translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, we confirm that the ability of CMK-1 to be phosphorylated on T179 is essential for its activity-dependent nuclear translocation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data on the T179A mutation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "6992401c-e36f-4f80-a4f1-88113bdf9fd7",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C70",
+      "claim": "The unc-68(dom13) mutation chronically elevates FLP cytoplasmic calcium levels at both 20\u00b0C and 28\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm that T179-dependent nuclear accumulation indeed takes place downstream of calcium elevation, we tested if the T179A mutation could block the effect of the unc-68(dom13) mutation, which chronically elevates FLP cytoplasmic calcium levels at both 20\u00b0C and 28\u00b0C to promote CMK-1 nuclear accumulation (Figure 2A; Ippolito et al., 2021; Marques et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to Ippolito et al., 2021 and Marques et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "fc800881-f019-4cc2-b151-88a705ecc39d",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C71",
+      "claim": "The unc-68(dom13) mutation promotes CMK-1 nuclear accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm that T179-dependent nuclear accumulation indeed takes place downstream of calcium elevation, we tested if the T179A mutation could block the effect of the unc-68(dom13) mutation, which chronically elevates FLP cytoplasmic calcium levels at both 20\u00b0C and 28\u00b0C to promote CMK-1 nuclear accumulation (Figure 2A; Ippolito et al., 2021; Marques et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to Ippolito et al., 2021 and Marques et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "28e4e6f2-8a9f-4b93-8d5d-e77b3aa90b33",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C72",
+      "claim": "The CMK-1 nuclear accumulation caused by the unc-68(dom13) mutation was fully abolished by the T179A mutation at either temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "The CMK-1 nuclear accumulation caused by the unc-68(dom13) mutation was fully abolished by the T179A mutation at either temperature (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "fb20b7b4-eba3-4c0f-b1b0-734cda5a49fe",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C73",
+      "claim": "The phosphorylation of T179 mediates the nuclear accumulation of CMK-1 downstream of Ca2+ elevation, irrespective of the temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the phosphorylation of T179 mediates the nuclear accumulation of CMK-1 downstream of Ca2+ elevation, irrespective of the temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data on T179A and unc-68(dom13) interactions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "efc625d2-d027-4692-99c7-fbd424103fcb",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C74",
+      "claim": "T179A and W305S mutations alone or in combination had little impact on the cytoplasmic localization of CMK-1 at 20\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of these mutations alone or in combination had little impact on the cytoplasmic localization of CMK-1 at 20\u00b0C (Figure 2D, top).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "800519ff-a5e7-4b5f-b48a-8493bc8cc7b2",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C75",
+      "claim": "At 28\u00b0C, the single T179A and W305S mutations as well as the combined mutations fully prevented the nuclear accumulation of CMK-1.",
+      "claim_type": "EXPLICIT",
+      "source": "At 28\u00b0C, the single mutations as well as the combined mutations had a similar effect, fully preventing the nuclear accumulation of CMK-1, with ratio values similar to the situation at 20\u00b0C (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "5d6e41f8-29ee-441b-b3de-1b6d32605fa4",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C76",
+      "claim": "The lack of a cumulative effect between T179A and W305S mutations suggests that CaM binding and T179 phosphorylation might be part of the same pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas we cannot rule out a floor effect in the ratio measure, the lack of a cumulative effect between the two mutations suggests that CaM binding and T179 phosphorylation might be part of the same pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data on the double mutant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "b770d32a-0eb3-4ee1-b54f-19c830271cdf",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C77",
+      "claim": "T179 phosphorylation acts downstream of intracellular calcium elevation and CaM binding to regulate cell activity-dependent CMK-1 nuclear entry.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results are consistent with a model in which T179 phosphorylation acts downstream of intracellular calcium elevation and CaM binding to regulate cell activity-dependent CMK-1 nuclear entry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "fe79e3ce-b9ad-4ee8-a313-c653a75ead2d",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C78",
+      "claim": "The T179D phospho-mimicking mutation can favor nuclear accumulation in the absence of thermal stimulation at 20\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this question, we examined the impact of the T179D phospho-mimicking mutation at 20\u00b0C and found it could favor nuclear accumulation in the absence of thermal stimulation (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 3A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "7b47d0d6-5499-4380-87e0-37f2b4dc5707",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C80",
+      "claim": "T179 phosphorylation directly contributes to trigger CMK-1(wt) nuclear accumulation at 28\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, whereas T179 phosphorylation directly contribute to trigger CMK-1(wt) nuclear accumulation at 28\u00b0C, additional mechanisms are likely to occur.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data on T179D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "23b486d0-7dce-4e64-ab3e-3ffdb1241722",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C81",
+      "claim": "Additional mechanisms beyond T179 phosphorylation are likely to contribute to CMK-1 nuclear accumulation at 28\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, whereas T179 phosphorylation directly contribute to trigger CMK-1(wt) nuclear accumulation at 28\u00b0C, additional mechanisms are likely to occur.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data on T179D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "553ebc64-3852-4448-9112-8a2903a76101",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C82",
+      "claim": "At 20\u00b0C, the T179D mutation can favor CMK-1 nuclear localization in a W305S mutant background abolishing CaM binding.",
+      "claim_type": "EXPLICIT",
+      "source": "At 20\u00b0C, the T179D mutation could also favor CMK-1 nuclear localization in a W305S mutant background abolishing CaM binding (Figure 3B; two-way ANOVA: main effect of T179D, p<0.001; main effect of W305S, p<0.001, T179D \u00d7 W305S interaction, p=0.637).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "4575255f-3fea-45c9-8e59-c2bffa7b438f",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C83",
+      "claim": "The T179D phosphomimic mutation is sufficient to promote CMK-1 nuclear accumulation independently of CaM binding at 20\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the T179D phosphomimic mutation is sufficient to promote CMK-1 nuclear accumulation independently of CaM binding at 20\u00b0C, suggesting that T179 phosphorylation functions either downstream of CaM binding or in a separate pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data on T179D and W305S interactions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "de50be1a-f1b2-4382-bc8c-58ce89ce8e48",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C84",
+      "claim": "T179 phosphorylation functions either downstream of CaM binding or in a separate pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the T179D phosphomimic mutation is sufficient to promote CMK-1 nuclear accumulation independently of CaM binding at 20\u00b0C, suggesting that T179 phosphorylation functions either downstream of CaM binding or in a separate pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data on T179D and W305S interactions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "8f1e5474-dd59-496b-86d9-a55d8055e61a",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C85",
+      "claim": "The W305S mutation produced a small cytoplasmic translocation effect in both wild type and T179D backgrounds.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, our data also show that the W305S mutation produced a small cytoplasmic translocation effect in both wild type and T179D backgrounds (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "04f9d16f-f00b-46a5-a857-3b12de68af51",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C86",
+      "claim": "CaM binding can increase CMK-1 affinity for IMA-3 in an in vitro context devoid of CKK-1 and of T179 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations are compatible with the results of our previous protein interaction analyses, having shown that CaM binding can increase CMK-1 affinity for IMA-3 in an in vitro context devoid of CKK-1 and of T179 phosphorylation (Ippolito et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ippolito et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "694cc257-a2a4-4137-b808-277faf8ef137",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C87",
+      "claim": "CaM binding promotes CMK-1 nuclear accumulation through a direct pathway by reinforcing the interaction between IMA-3 and the NLS71-78 element of CMK-1.",
+      "claim_type": "EXPLICIT",
+      "source": "The simplest model explaining these results would involve two mechanisms through which CaM binding promotes CMK-1 nuclear accumulation: (i) a direct pathway, through which CaM binding reinforces the interaction between IMA-3 and the NLS71-78 element of CMK-1 and (ii) an indirect pathway, through which CaM binding is required prior to phosphorylation of T179, which in turn promotes the nuclear accumulation of CMK-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data and presented as a model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "9da5e866-81f5-44d6-bbd3-8635b103d9bc",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C88",
+      "claim": "CaM binding promotes CMK-1 nuclear accumulation through an indirect pathway where CaM binding is required prior to phosphorylation of T179.",
+      "claim_type": "EXPLICIT",
+      "source": "The simplest model explaining these results would involve two mechanisms through which CaM binding promotes CMK-1 nuclear accumulation: (i) a direct pathway, through which CaM binding reinforces the interaction between IMA-3 and the NLS71-78 element of CMK-1 and (ii) an indirect pathway, through which CaM binding is required prior to phosphorylation of T179, which in turn promotes the nuclear accumulation of CMK-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data and presented as a model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "ee3b6873-4c67-4bd2-bd2d-6cef42970c22",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C89",
+      "claim": "T179A markedly promoted CMK-1 cytoplasmic retention at 28\u00b0C regardless of the NES288-294 mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that T179A markedly promoted CMK-1 cytoplasmic retention at 28\u00b0C regardless of the NES288-294 mutation (Figure 3C, two-way ANOVA: main effect of T179A, p<0.001; main effect of NES288-294, p<0.001, T179A \u00d7 NES288-294 interaction, p=0.384).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "faf3d36a-8785-4948-9973-2d01e9cbc8dc",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C90",
+      "claim": "It is unlikely that the T179A mutation predominantly causes CMK-1 cytoplasmic translocation by aberrantly revealing NES288-294 at 28\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it is unlikely that the T179A mutation predominantly causes CMK-1 cytoplasmic translocation by aberrantly revealing NES288-294 at 28\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of interaction between T179A and NES288-294 mutations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "8bd65c45-39d0-4765-951c-0a36865d4553",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C91",
+      "claim": "The T179D nuclear translocation effect at 20\u00b0C was abolished in a T179D; NLS71-78 double mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "The T179D nuclear translocation effect at 20\u00b0C was abolished in a T179D; NLS71-78 double mutant (Figure 3D, significant interaction effect).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "25d627d6-d50b-4e23-9809-db53c3bc95b4",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C92",
+      "claim": "T179D phosphomimic mutation promotes NLS71-78-dependent CMK-1 nuclear entry.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, T179D phosphomimic mutation promotes NLS71-78-dependent CMK-1 nuclear entry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data on T179D and NLS71-78 interactions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "bd65d5ef-d254-417e-84d7-80f3a7fe3cdb",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C93",
+      "claim": "Multiple calcium-dependent events in the cytoplasm converge on CMK-1 NLS71-78 element to activate its nuclear import upon prolonged cell activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together with our previous finding (Ippolito et al., 2021), our new results suggest a model in which multiple calcium-dependent events in the cytoplasm converge on CMK-1 NLS71-78 element to activate its nuclear import upon prolonged cell activation (see cytoplasmic green arrows in Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the experimental data and presented as a model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "0ec2659e-7f16-406c-8b72-e7e5fa35e655",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C94",
+      "claim": "CMK-1(T179D) mutant protein at 28\u00b0C was not more nuclear than CMK-1(wt), but actually significantly more cytoplasmic.",
+      "claim_type": "EXPLICIT",
+      "source": "In strong contrast to this prediction, CMK-1(T179D) mutant protein at 28\u00b0C was not more nuclear than CMK-1(wt), but actually significantly more cytoplasmic with a ratio similar to that of CMK-1(T179D) at 20\u00b0C (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "0d528739-3084-4c45-9ccc-f5af8513941c",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C95",
+      "claim": "The impact of T179D mutation is context-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the impact of T179D mutation is context-dependent, and, in addition to its nuclear entry promoting effect revealed at 20\u00b0C, might also include an antagonistic nuclear export drive, which becomes apparent at 28\u00b0C to counteract the nuclear accumulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data on T179D at different temperatures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "156eecb6-ebc8-4548-b998-37197c686862",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C96",
+      "claim": "T179D mutation might include an antagonistic nuclear export drive, which becomes apparent at 28\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the impact of T179D mutation is context-dependent, and, in addition to its nuclear entry promoting effect revealed at 20\u00b0C, might also include an antagonistic nuclear export drive, which becomes apparent at 28\u00b0C to counteract the nuclear accumulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data on T179D at different temperatures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "60a2a18b-cd33-4897-942f-1e12021efa9d",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C97",
+      "claim": "The T179D-evoked cytoplasmic drive was strongly reduced in the absence of an intact NES288-294 element.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the T179D-evoked cytoplasmic drive was strongly reduced in the absence of an intact NES288-294 element (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "4ca81aef-340c-455c-9035-6a6fb74cd1df",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C98",
+      "claim": "The T179D phospho-mimic mutation promotes CMK-1 nuclear export in a NES288-294-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the T179D phospho-mimic mutation promotes CMK-1 nuclear export in a NES288-294-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data on T179D and NES288-294 interactions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "9f05d865-d86f-4efd-8d3a-b96f452b662e",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C99",
+      "claim": "Prolonged FLP stimulation causes T179 phosphorylation, which activates both NLS71-78-dependent nuclear entry and NES288-294-dependent export pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our data suggest a model in which prolonged FLP stimulation causes T179 phosphorylation, which activates both NLS71-78-dependent nuclear entry (Figure 3G, cytoplasmic green arrow) and NES288-294-dependent export pathways (Figure 3G, nuclear green arrow).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the experimental data and presented as a model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "c8796243-6735-44a1-9f2e-b43765edcaf5",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C100",
+      "claim": "T179 phosphorylation results in an activated dynamic nucleo-cytoplasmic shuttling.",
+      "claim_type": "EXPLICIT",
+      "source": "T179 phosphorylation would thus result in (i) an activated dynamic nucleo-cytoplasmic shuttling and (ii) a shift in CMK-1 equilibrium toward the nucleus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data and presented as a model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "a5e3c4ee-9600-4d39-b879-fc597eb7a47c",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C101",
+      "claim": "T179 phosphorylation results in a shift in CMK-1 equilibrium toward the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "T179 phosphorylation would thus result in (i) an activated dynamic nucleo-cytoplasmic shuttling and (ii) a shift in CMK-1 equilibrium toward the nucleus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data and presented as a model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "482a121c-0022-4207-ad6a-8830314eff38",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C102",
+      "claim": "The shift in CMK-1 equilibrium toward the nucleus results from a synergy between the direct impact of T179 phosphorylation and the Ca2+/CaM-binding-evoked importin affinity increase, converging on NLS71-78.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter effect most likely results from a synergy between the direct impact of T179 phosphorylation and the Ca2+/CaM-binding-evoked importin affinity increase, converging on NLS71-78 in order for this pathway to dominate over the antagonistic pathways into play.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data and presented as a model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "1d57b7b4-1a74-4bd2-bc52-b5757b3a470e",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C103",
+      "claim": "In rats, CaM kinase kinase alpha is expressed in the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "In rats, CaM kinase kinase alpha is expressed in the nucleus, whereas CaM kinase kinase beta is expressed in the nucleus and/or the cytoplasm depending on the tissue (Kitani et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Kitani et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "0d2f1dd6-fc05-40c9-a0ad-de063528adad",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C104",
+      "claim": "In rats, CaM kinase kinase beta is expressed in the nucleus and/or the cytoplasm depending on the tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "In rats, CaM kinase kinase alpha is expressed in the nucleus, whereas CaM kinase kinase beta is expressed in the nucleus and/or the cytoplasm depending on the tissue (Kitani et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Kitani et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "8d98ba09-ca7a-403b-bf0e-a9ea85260f4b",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C105",
+      "claim": "The worm genome encodes two predicted CKK-1 isoforms (CKK-1a and CKK-1b), produced via alternative transcription start.",
+      "claim_type": "EXPLICIT",
+      "source": "The worm genome encodes two predicted CKK-1 isoforms (CKK-1a and CKK-1b), produced via alternative transcription start (Figure 4A), which diverge in their N-terminal region.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by genomic data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "d4d2fe6d-84ed-4a56-a3df-d8f402a9713d",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C106",
+      "claim": "CKK-1a and CKK-1b isoforms diverge in their N-terminal region.",
+      "claim_type": "EXPLICIT",
+      "source": "The worm genome encodes two predicted CKK-1 isoforms (CKK-1a and CKK-1b), produced via alternative transcription start (Figure 4A), which diverge in their N-terminal region.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by genomic data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "dd9b20db-fb59-4a7b-b075-744be6e773bd",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C107",
+      "claim": "Both CKK-1a and CKK-1b isoforms were markedly enriched in the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "Both isoforms were markedly enriched in the cytoplasm, with ratios similar to that of CMK-1 at rest (Figure 4C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 4C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "1176a079-c7a1-437b-9946-2d478fcd7d2d",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C108",
+      "claim": "CKK-1 localization was not altered upon heat stimulation at 28\u00b0C for 90 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, their localization was not altered upon heat stimulation at 28\u00b0C for 90 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "3e8b553c-ddf5-4646-a43c-a4964119d6fa",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C109",
+      "claim": "Most of CKK-1 activity in FLP is likely to occur in the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that most of CKK-1 activity in FLP is likely to occur in the cytoplasm and that CMK-1 phosphorylation might therefore primarily take place in this compartment (as depicted in Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the localization data of CKK-1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "2f168039-3587-4986-a7e2-5cb2d920e5a0",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C110",
+      "claim": "CMK-1 phosphorylation might primarily take place in the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that most of CKK-1 activity in FLP is likely to occur in the cytoplasm and that CMK-1 phosphorylation might therefore primarily take place in this compartment (as depicted in Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the localization data of CKK-1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "a694817a-3e1a-4a1b-80b1-6f569d2b24a1",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C111",
+      "claim": "CMK-1 subcellular localization contributes to adjust sensory neuron activity according to past experience.",
+      "claim_type": "EXPLICIT",
+      "source": "CMK-1 subcellular localization contributes to adjust sensory neuron activity according to past experience.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established from previous studies and the current work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "6cc9c6de-8625-458d-9763-97241c6ad053",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C112",
+      "claim": "Heat-evoked CMK-1 nuclear entry in FLP thermo-nociceptor neurons causes a decrease in the animal responsiveness to noxious thermal stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Heat-evoked CMK-1 nuclear entry in FLP thermo-nociceptor neurons causes a decrease in the animal responsiveness to noxious thermal stimuli (Schild et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Schild et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "005a87ee-e36a-4707-abcf-dbe44f4983a8",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C113",
+      "claim": "The dual regulatory role of T179 phosphorylation in promoting bidirectional CMK-1 translocation across the nuclear envelope could be at the origin of cell stimulation-dependent CMK-1 shuttling cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that the dual regulatory role of T179 phosphorylation in promoting bidirectional CMK-1 translocation across the nuclear envelope could be at the origin of cell stimulation-dependent CMK-1 shuttling cycles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "4da276a1-c4f0-4559-a580-b4e580d788fd",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C114",
+      "claim": "A dynamic nucleo-cytoplasmic shuttling might contribute to ensure that the T179 phosphorylation status of CMK-1 is frequently 'refreshed'.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the cytoplasmic localization of CKK-1, we propose that a dynamic nucleo-cytoplasmic shuttling might contribute to ensure that the T179 phosphorylation status of CMK-1 is frequently 'refreshed', in order for the nuclear pool of CMK-1 to reflect the current activation status of CKK-1 in the cytoplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "8b7ecac2-305d-4902-80b0-7f17e1aaccf7",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C115",
+      "claim": "The whole process is likely to be also influenced by the activity of phosphatase(s) responsible for CMK-1 dephosphorylation on T179.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the whole process is likely to be also influenced by the activity of phosphatase(s) responsible for CMK-1 dephosphorylation on T179.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about additional regulatory mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "1e34b52a-66c5-421b-9ab1-ec7d0a676df9",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C116",
+      "claim": "Previous studies have reported transient, persistent, or sometimes no CMK-1 nuclear translocation in different neurons subjected to different stimulation regimens.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have reported transient, persistent, or sometimes no CMK-1 nuclear translocation in different neurons subjected to different stimulation regimens (Ippolito et al., 2021; Lim et al., 2018; Moss et al., 2016; Schild et al., 2014; Yu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "5e37ba3e-7495-4580-893a-55c247d38d92",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C117",
+      "claim": "The network of intrinsic regulatory elements might be the target of multiple intracellular signaling events to fine-tune CMK-1 localization in a variety of contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that the network of intrinsic regulatory elements that we have identified might be the target of multiple intracellular signaling events in order to fine-tune CMK-1 localization in a variety of contexts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about broader implications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "77ab5ba1-9200-4433-9255-656b1d9776fd",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C118",
+      "claim": "CaM binding and T179 phosphorylation converging on NLS71-78 and the antagonistic NES288-294-dependent export constitutes the primary mechanism explaining the CMK-1 equilibrium shift upon prolonged stimulation in FLP.",
+      "claim_type": "EXPLICIT",
+      "source": "While CaM binding and T179 phosphorylation converging on NLS71-78 and the antagonistic NES288-294-dependent export constitutes the primary mechanism explaining the CMK-1 equilibrium shift upon prolonged stimulation in FLP (Figure 3G), the other elements could be more relevant in different contexts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the experimental data and presented as a model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "7cc2e7c7-7b9d-470a-b984-a2089ac8d96b",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C119",
+      "claim": "NLS297-307 overlaps with the CaM-binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that NLS297-307 overlaps with the CaM-binding site and the fact that S325 phosphorylation status affects its NES activity represent additional regulation opportunities, which could be engaged in different cells or situations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural analysis of CMK-1.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "ced6a1b8-1ed4-40a5-8420-2c10c0c11510",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C120",
+      "claim": "S325 phosphorylation status affects its NES activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that NLS297-307 overlaps with the CaM-binding site and the fact that S325 phosphorylation status affects its NES activity represent additional regulation opportunities, which could be engaged in different cells or situations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data on S325 mutations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "be055606-1099-4b58-9026-6fa045e4a284",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C121",
+      "claim": "The expression of CMK-1 is much broader than that of CKK-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, based on previous reporter analyses and single-cell RNA seq data, the expression of CMK-1 is much broader than that of CKK-1 (Kimura et al., 2002; Taylor et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kimura et al., 2002 and Taylor et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "f22b2a31-59f1-4c38-932a-372ca1126379",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C122",
+      "claim": "The activity of CaM kinase kinase in mammals was shown to be regulated by post-translational modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "The activity of CaM kinase kinase in mammals was also shown to be regulated by post-translational modifications (Green et al., 2011; Nakanishi et al., 2017; Takabatake et al., 2019) and this pathway may be silenced in specific situations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Green et al., 2011; Nakanishi et al., 2017; Takabatake et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "256546a0-33cb-4fcb-86a4-608a6301d334",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C123",
+      "claim": "CaM kinases can couple cell activation with physiological changes taking place over relatively long timescales.",
+      "claim_type": "EXPLICIT",
+      "source": "Being downstream effectors of intracellular calcium signaling, CaM kinases can couple cell activation with physiological changes taking place over relatively long timescales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about CaM kinases.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "1ce40702-8b47-42ea-93cf-85e77db72e39",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C124",
+      "claim": "CaM kinase activity can be regulated by other signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, multiple studies have shown that their kinase activity can be regulated by other signaling pathways (see Swulius and Waxham, 2008; Tokumitsu and Sakagami, 2022 for reviews), placing them as a hub for integrating multiple inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to review articles.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "ddd8bb60-6bdf-40f6-b916-2cbc115b5ca5",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C125",
+      "claim": "CaM kinases serve as a hub for integrating multiple inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, multiple studies have shown that their kinase activity can be regulated by other signaling pathways (see Swulius and Waxham, 2008; Tokumitsu and Sakagami, 2022 for reviews), placing them as a hub for integrating multiple inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the cited reviews.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "814123c3-c8d2-4c34-9836-ed582457ac36",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C126",
+      "claim": "Not only CaM kinase activity, but also the regulation of its subcellular localization are important targets of convergent regulatory inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study supports the notion that not only CaM kinase activity, but also the regulation of its subcellular localization are important targets of convergent regulatory inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental findings of this study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "0a88263e-4677-4fde-b5f4-24c2c43438d7",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "claim_id": "C127",
+      "claim": "Similar mechanisms might be relevant for CaM kinase regulation in different species and for different sensory modalities beyond thermo-nociceptive functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Owing to the large conservation of calcium signaling during evolution and in particular of the CaM kinase structural and functional architectures, similar mechanisms might be relevant for their regulation in different species and for different sensory modalities beyond thermo-nociceptive functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about broader evolutionary implications.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "181e7a1c-8ee4-42a4-825a-e0f9cd7654ac",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors identify NLS297-307 as a secondary nuclear localization signal that becomes functionally important when the primary NLS71-78 and NES288-294 elements are mutated. The NLS71-78; NES288-294 double mutant shows reversed localization behavior (nuclear at 20\u00b0C, cytoplasmic at 28\u00b0C), and introducing a K307Q mutation in NLS297-307 blocks nuclear accumulation at 20\u00b0C in this background.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C45 are well-supported by experimental data shown in Figure 1B-C. The double mutant behavior (C39-C41) demonstrates the existence of secondary regulatory elements, and the K307Q mutation experiments (C43-C44) directly demonstrate that NLS297-307 is responsible for nuclear accumulation in the double mutant background. The conclusion (C45) logically follows from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "5705eda1-4999-40ef-8ebe-b9a14ea5062a",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors test whether NES315-323 is a functional nuclear export sequence by creating a triple mutant (NLS71-78; NES288-294; NES315-323) and find that it still exports from the nucleus, demonstrating that NES315-323 is not functional under the conditions tested.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 are supported by experimental data in Figure 1D showing that the triple mutant behaves like the double mutant. The prior work cited (C48-C49) provides context for why this region was investigated. The negative result is clearly demonstrated and appropriately interpreted.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "7bdac26b-7356-4e4f-ac29-48713af49331",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors identify S325 as part of a functional element promoting CMK-1 cytoplasmic localization that operates independently of NES288-294. The S325A mutation increases nuclear localization both alone and in combination with NES288-294 mutation, with additive effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C54 are well-supported by experimental data in Figures 1D-E. The S325A mutation shows effects in both wild-type and NES288-294 mutant backgrounds, and the double mutant shows stronger nuclear accumulation than either single mutant, demonstrating independence and additivity. The conclusions (C53-C54) are appropriately drawn from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "83a43f78-4685-4a6a-8d06-eff8206823fa",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors test whether S325 phosphorylation regulates CMK-1 localization by comparing S325A (phospho-dead) and S325D (phospho-mimic) mutations. The S325D mutant behaves like wild-type, suggesting that S325 phosphorylation may be the default state and that this residue could serve as a regulatory switch.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C55 is supported by Figure 1F data. However, claims C56-C58 involve significant speculation. The interpretation that S325 phosphorylation is the 'default state' (C57) is one possible explanation but not definitively demonstrated. The suggestion that S325 could be a regulatory switch (C58) is speculative and not tested experimentally in the contexts where it might be relevant.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "cc5f9403-a9da-4ba6-9349-6375da677815",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors discuss the mechanism by which S325 promotes cytoplasmic localization, noting it works independently of NES288-294 but that the exact mechanism (non-canonical export vs. cytoplasmic retention) remains unclear. They also note that S325 phosphorylation changes do not appear involved in heat-evoked relocalization in FLP but might be relevant in other contexts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C59 is well-supported by the data in Figures 1D-E. Claims C60-C62 appropriately acknowledge uncertainty about mechanism (C60) and limitations of the current findings (C61), while C62 is reasonable speculation about broader relevance. The authors appropriately distinguish between what is demonstrated and what remains unknown.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "ad714bd1-ed31-494a-8399-355da396c18f",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors present an integrated model of CMK-1 localization regulation at 20\u00b0C and 28\u00b0C, proposing that at 20\u00b0C the NLS71-78 pathway is inactive while NES288-294 and S325-dependent pathways dominate, whereas at 28\u00b0C the NLS71-78 pathway becomes active and dominant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65 represent a synthesis of the experimental findings presented in Figure 1 and are depicted in the model in Figure 1G. The model is consistent with all the mutant data showing temperature-dependent and element-specific effects. This is an appropriate integration of the experimental results into a coherent mechanistic framework.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "da81078c-4fcf-4102-bac4-eb54d74a202f",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors confirm that T179 phosphorylation is essential for activity-dependent nuclear translocation of CMK-1. The T179A mutation does not affect localization at 20\u00b0C but completely abolishes nuclear accumulation at 28\u00b0C.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C69 are well-supported by experimental data in Figures 2A-B. The T179A mutation specifically blocks heat-evoked nuclear accumulation without affecting basal localization, demonstrating the requirement for T179 phosphorylation in activity-dependent translocation. This confirms prior findings (C66) with the current reporter system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "f43f7a46-1d86-4b02-bda4-0ea8aa8b8ce9",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors demonstrate that T179 phosphorylation mediates CMK-1 nuclear accumulation downstream of calcium elevation by showing that the T179A mutation blocks the nuclear accumulation caused by the unc-68(dom13) mutation, which chronically elevates cytoplasmic calcium.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C73 are well-supported by experimental data in Figure 2C and prior citations. The genetic epistasis experiment clearly demonstrates that T179 phosphorylation is required for calcium-induced nuclear accumulation at both temperatures, establishing T179 phosphorylation downstream of calcium signaling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "3660dfcc-7030-4163-b9a0-c8615fcf0110",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors test the relationship between CaM binding (W305S mutation) and T179 phosphorylation (T179A mutation) and find that both single mutations and the double mutation similarly prevent nuclear accumulation at 28\u00b0C, suggesting they may be part of the same pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C77 are supported by experimental data in Figure 2D. The lack of additive effect between T179A and W305S mutations suggests they act in the same pathway, though the authors appropriately note the caveat about potential floor effects (C76). The conclusion (C77) is a reasonable inference from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "b2205ebd-902a-4742-a000-acf670817426",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors show that the T179D phospho-mimicking mutation can promote nuclear accumulation at 20\u00b0C without thermal stimulation, but the effect is not as strong as heat stimulation on wild-type CMK-1, suggesting T179 phosphorylation contributes to but is not solely sufficient for full nuclear accumulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78, C80-C81 are well-supported by experimental data in Figures 3A-B. The T179D mutation causes partial nuclear accumulation at 20\u00b0C, demonstrating sufficiency for some nuclear entry, but the incomplete effect compared to heat-stimulated wild-type indicates additional mechanisms are involved. This is appropriately interpreted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "7d58d8af-9fab-4798-a8a9-915c8cca7b23",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors demonstrate that T179D can promote nuclear accumulation independently of CaM binding (in W305S background), suggesting T179 phosphorylation functions either downstream of or in parallel to CaM binding. They propose a model with both direct (CaM-IMA-3-NLS71-78) and indirect (CaM-dependent T179 phosphorylation) pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C88 are well-supported by experimental data in Figure 3B and prior work (C86). The T179D/W305S double mutant data (C82) clearly shows T179D can act independently of CaM binding. The small effect of W305S in both backgrounds (C85) is consistent with a direct CaM-importin interaction pathway. The two-pathway model (C87-C88) appropriately integrates these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "291f65e7-9840-4267-993b-b0a9b45f5867",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors test whether T179A prevents nuclear accumulation by revealing NES288-294 activity and find that T179A promotes cytoplasmic retention regardless of NES288-294 status, indicating T179A does not primarily work by aberrantly activating NES288-294.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C90 are supported by experimental data in Figure 3C showing lack of interaction between T179A and NES288-294 mutations. The two-way ANOVA shows main effects but no interaction, indicating independent mechanisms. The conclusion (C90) appropriately rules out one mechanistic hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "a9da47ae-06ec-490d-81db-9a9032f1981e",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors demonstrate that T179D promotes nuclear entry via NLS71-78 by showing that the T179D nuclear translocation effect at 20\u00b0C is abolished in a T179D; NLS71-78 double mutant. They propose that multiple calcium-dependent events converge on NLS71-78 to activate nuclear import.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C93 are well-supported by experimental data in Figure 3D. The genetic interaction clearly demonstrates that T179D requires NLS71-78 for its nuclear entry-promoting effect. The model (C93) integrating this with prior findings about CaM-dependent NLS71-78 activation is appropriate and depicted in Figure 3G.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "7417c63e-5d87-4d9f-8939-9e8bd75edbdd",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors discover that T179D mutant at 28\u00b0C is more cytoplasmic than wild-type, not more nuclear as predicted, revealing that T179 phosphorylation has context-dependent effects including an antagonistic nuclear export drive that becomes apparent at 28\u00b0C.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C96 are well-supported by the surprising experimental result in Figure 3E. This unexpected finding reveals the dual nature of T179 phosphorylation effects and is a key discovery of the paper. The interpretation that the effect is context-dependent (C95-C96) appropriately explains the temperature-dependent difference in T179D behavior.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "9466bab9-680a-4c4c-9ffb-1cb791beb978",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors demonstrate that T179D promotes nuclear export via NES288-294 by showing that the T179D-evoked cytoplasmic drive at 28\u00b0C is strongly reduced when NES288-294 is mutated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C98 are well-supported by experimental data in Figure 3F. The genetic interaction clearly demonstrates that T179D requires NES288-294 for its nuclear export-promoting effect, establishing the mechanism for the antagonistic effect of T179 phosphorylation discovered in the previous result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "1a2469e9-6829-40ce-9f00-1f8571dac07f",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors propose an integrated model where T179 phosphorylation activates both NLS71-78-dependent nuclear entry and NES288-294-dependent export, resulting in enhanced nucleo-cytoplasmic shuttling and a net shift toward the nucleus due to synergy between T179 phosphorylation and CaM-binding effects on NLS71-78.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C102 represent a synthesis of the T179 phosphorylation findings and are depicted in Figure 3G. The model appropriately integrates the dual effects of T179 phosphorylation (promoting both import and export) and explains how net nuclear accumulation occurs through synergy with CaM binding. This is a well-supported mechanistic framework consistent with all the experimental data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "08a6d4a2-7c7d-4140-a78f-0d3ed439dc15",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The authors characterize the subcellular localization of two CKK-1 isoforms and find that both are predominantly cytoplasmic and do not change localization upon heat stimulation, suggesting that CMK-1 phosphorylation by CKK-1 primarily occurs in the cytoplasm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C105-C110 are well-supported by genomic data (Figure 4A) and experimental localization data (Figures 4C-D). The cytoplasmic localization of both CKK-1 isoforms and lack of heat-induced relocalization clearly support the inference that CKK-1 activity and CMK-1 phosphorylation occur primarily in the cytoplasm (C109-C110).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "156dbd10-56f6-4a82-9259-487bdc1c491f",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The authors speculate that the dual role of T179 phosphorylation in promoting bidirectional translocation could enable stimulation-dependent shuttling cycles that keep the nuclear CMK-1 pool's phosphorylation status synchronized with cytoplasmic CKK-1 activity, with phosphatases also likely playing a role.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C113-C115 are explicitly speculative (as acknowledged by the authors) and represent hypotheses about the functional significance of the dual T179 phosphorylation effects. While these are reasonable hypotheses consistent with the data, they are not directly tested. Future experiments measuring shuttling kinetics and identifying relevant phosphatases would be needed to test these ideas.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "dd441528-0c67-4cd1-8084-6e04d0861114",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The authors propose that the network of regulatory elements they identified (NLS71-78, NES288-294, NLS297-307, S325) could be differentially engaged in different cellular contexts, with CaM binding/T179 phosphorylation/NLS71-78/NES288-294 being primary in FLP but other elements potentially more important elsewhere.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C117-C120 represent reasonable speculation about broader implications of the findings. The identification of multiple regulatory elements with different strengths (C118) is well-supported by the data. The suggestions about context-dependent engagement (C117) and additional regulatory opportunities through NLS297-307/CaM overlap and S325 phosphorylation (C119-C120) are appropriate extrapolations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    },
+    {
+      "id": "c58d47ad-244d-42fe-adfb-df424492328f",
+      "content_id": "dd2cc6ff-e596-4d35-b1a4-99bbd19bdcff",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The authors conclude that subcellular localization regulation, not just kinase activity, is an important target of convergent regulatory inputs for CaM kinases, and suggest similar mechanisms might be relevant across species and sensory modalities due to conservation of calcium signaling and CaM kinase architecture.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C126 is well-supported by the extensive characterization of multiple regulatory mechanisms controlling CMK-1 localization presented in this study. Claim C127 is reasonable speculation based on evolutionary conservation of the relevant molecular machinery, though direct evidence in other systems would be needed for confirmation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:55:19.144134Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6997f84a-f04c-4d4e-8dfe-5ae82cb46a81",
+      "result_id": "181e7a1c-8ee4-42a4-825a-e0f9cd7654ac"
+    },
+    {
+      "claim_id": "a2972f57-2a46-4ae6-9cbd-e53e4a49635c",
+      "result_id": "181e7a1c-8ee4-42a4-825a-e0f9cd7654ac"
+    },
+    {
+      "claim_id": "f9137e51-5ed1-4496-8725-10061c40c7bd",
+      "result_id": "181e7a1c-8ee4-42a4-825a-e0f9cd7654ac"
+    },
+    {
+      "claim_id": "dc5e9b86-213a-409f-902e-eb01a01d937f",
+      "result_id": "181e7a1c-8ee4-42a4-825a-e0f9cd7654ac"
+    },
+    {
+      "claim_id": "ea5368be-698b-441e-9dd4-c79f478979e7",
+      "result_id": "181e7a1c-8ee4-42a4-825a-e0f9cd7654ac"
+    },
+    {
+      "claim_id": "ccead3e5-b495-4eb8-b630-7dadc879aaea",
+      "result_id": "181e7a1c-8ee4-42a4-825a-e0f9cd7654ac"
+    },
+    {
+      "claim_id": "67ccc7d4-98be-4478-84e7-9c0e97437379",
+      "result_id": "181e7a1c-8ee4-42a4-825a-e0f9cd7654ac"
+    },
+    {
+      "claim_id": "cb76175b-353d-4524-8bd9-7cc3cb235fb6",
+      "result_id": "5705eda1-4999-40ef-8ebe-b9a14ea5062a"
+    },
+    {
+      "claim_id": "dbec97f4-dac8-4fbc-bb0f-29ac1bdf249e",
+      "result_id": "5705eda1-4999-40ef-8ebe-b9a14ea5062a"
+    },
+    {
+      "claim_id": "f8f83202-ed48-425d-b23b-b1c4d09be6e0",
+      "result_id": "5705eda1-4999-40ef-8ebe-b9a14ea5062a"
+    },
+    {
+      "claim_id": "b02e5a1b-d43a-48b0-9e05-6345e9c143f1",
+      "result_id": "5705eda1-4999-40ef-8ebe-b9a14ea5062a"
+    },
+    {
+      "claim_id": "54b5dbcd-cc78-4efe-b86a-72d828f80a4b",
+      "result_id": "7bdac26b-7356-4e4f-ac29-48713af49331"
+    },
+    {
+      "claim_id": "d7c8b17b-984f-42f1-81ac-e42378eb4183",
+      "result_id": "7bdac26b-7356-4e4f-ac29-48713af49331"
+    },
+    {
+      "claim_id": "ad5b059c-1b7b-45bf-937a-6c702ce4d7f0",
+      "result_id": "7bdac26b-7356-4e4f-ac29-48713af49331"
+    },
+    {
+      "claim_id": "d38117cf-18b0-4f65-b79c-4244e24f168a",
+      "result_id": "7bdac26b-7356-4e4f-ac29-48713af49331"
+    },
+    {
+      "claim_id": "704a3490-536c-4c65-a145-062ba9ae5096",
+      "result_id": "7bdac26b-7356-4e4f-ac29-48713af49331"
+    },
+    {
+      "claim_id": "8e4b6468-0430-4c6e-9314-39a70b1d61de",
+      "result_id": "83a43f78-4685-4a6a-8d06-eff8206823fa"
+    },
+    {
+      "claim_id": "6a38bbfe-085d-459f-adf7-fa6deb1628c0",
+      "result_id": "83a43f78-4685-4a6a-8d06-eff8206823fa"
+    },
+    {
+      "claim_id": "293bdc3a-9e59-4ca8-8927-6770ddf2526a",
+      "result_id": "83a43f78-4685-4a6a-8d06-eff8206823fa"
+    },
+    {
+      "claim_id": "bdf70990-3577-4874-b5de-ec1a2a8f42d6",
+      "result_id": "83a43f78-4685-4a6a-8d06-eff8206823fa"
+    },
+    {
+      "claim_id": "2bb1db70-ead2-41f1-8f11-2c11cc7aca71",
+      "result_id": "cc5f9403-a9da-4ba6-9349-6375da677815"
+    },
+    {
+      "claim_id": "13ed0081-255c-4bc1-bb5a-bc03f2922ccb",
+      "result_id": "cc5f9403-a9da-4ba6-9349-6375da677815"
+    },
+    {
+      "claim_id": "db3b8e3f-1147-4b42-97ce-babde97812c3",
+      "result_id": "cc5f9403-a9da-4ba6-9349-6375da677815"
+    },
+    {
+      "claim_id": "7141413b-3dc4-45a3-809e-4bdcf01f20d4",
+      "result_id": "cc5f9403-a9da-4ba6-9349-6375da677815"
+    },
+    {
+      "claim_id": "095780a4-5a6f-4160-9ab2-b2c77fe8a42f",
+      "result_id": "ad714bd1-ed31-494a-8399-355da396c18f"
+    },
+    {
+      "claim_id": "d0b52e28-73ec-4732-9bb1-c4076e42417d",
+      "result_id": "ad714bd1-ed31-494a-8399-355da396c18f"
+    },
+    {
+      "claim_id": "1e5d9a71-60f9-47ab-941b-b65dfb1d2663",
+      "result_id": "ad714bd1-ed31-494a-8399-355da396c18f"
+    },
+    {
+      "claim_id": "69ebdc72-c098-4ad2-ba02-cc4df0e92fdc",
+      "result_id": "da81078c-4fcf-4102-bac4-eb54d74a202f"
+    },
+    {
+      "claim_id": "ecf22eee-989f-4c5a-b466-2555fb764431",
+      "result_id": "da81078c-4fcf-4102-bac4-eb54d74a202f"
+    },
+    {
+      "claim_id": "81c83e15-0f8e-432a-a509-37beebb29337",
+      "result_id": "da81078c-4fcf-4102-bac4-eb54d74a202f"
+    },
+    {
+      "claim_id": "6992401c-e36f-4f80-a4f1-88113bdf9fd7",
+      "result_id": "f43f7a46-1d86-4b02-bda4-0ea8aa8b8ce9"
+    },
+    {
+      "claim_id": "fc800881-f019-4cc2-b151-88a705ecc39d",
+      "result_id": "f43f7a46-1d86-4b02-bda4-0ea8aa8b8ce9"
+    },
+    {
+      "claim_id": "28e4e6f2-8a9f-4b93-8d5d-e77b3aa90b33",
+      "result_id": "f43f7a46-1d86-4b02-bda4-0ea8aa8b8ce9"
+    },
+    {
+      "claim_id": "fb20b7b4-eba3-4c0f-b1b0-734cda5a49fe",
+      "result_id": "f43f7a46-1d86-4b02-bda4-0ea8aa8b8ce9"
+    },
+    {
+      "claim_id": "efc625d2-d027-4692-99c7-fbd424103fcb",
+      "result_id": "3660dfcc-7030-4163-b9a0-c8615fcf0110"
+    },
+    {
+      "claim_id": "800519ff-a5e7-4b5f-b48a-8493bc8cc7b2",
+      "result_id": "3660dfcc-7030-4163-b9a0-c8615fcf0110"
+    },
+    {
+      "claim_id": "5d6e41f8-29ee-441b-b3de-1b6d32605fa4",
+      "result_id": "3660dfcc-7030-4163-b9a0-c8615fcf0110"
+    },
+    {
+      "claim_id": "b770d32a-0eb3-4ee1-b54f-19c830271cdf",
+      "result_id": "3660dfcc-7030-4163-b9a0-c8615fcf0110"
+    },
+    {
+      "claim_id": "fe79e3ce-b9ad-4ee8-a313-c653a75ead2d",
+      "result_id": "b2205ebd-902a-4742-a000-acf670817426"
+    },
+    {
+      "claim_id": "7b47d0d6-5499-4380-87e0-37f2b4dc5707",
+      "result_id": "b2205ebd-902a-4742-a000-acf670817426"
+    },
+    {
+      "claim_id": "23b486d0-7dce-4e64-ab3e-3ffdb1241722",
+      "result_id": "b2205ebd-902a-4742-a000-acf670817426"
+    },
+    {
+      "claim_id": "553ebc64-3852-4448-9112-8a2903a76101",
+      "result_id": "7d58d8af-9fab-4798-a8a9-915c8cca7b23"
+    },
+    {
+      "claim_id": "4575255f-3fea-45c9-8e59-c2bffa7b438f",
+      "result_id": "7d58d8af-9fab-4798-a8a9-915c8cca7b23"
+    },
+    {
+      "claim_id": "de50be1a-f1b2-4382-bc8c-58ce89ce8e48",
+      "result_id": "7d58d8af-9fab-4798-a8a9-915c8cca7b23"
+    },
+    {
+      "claim_id": "8f1e5474-dd59-496b-86d9-a55d8055e61a",
+      "result_id": "7d58d8af-9fab-4798-a8a9-915c8cca7b23"
+    },
+    {
+      "claim_id": "04f9d16f-f00b-46a5-a857-3b12de68af51",
+      "result_id": "7d58d8af-9fab-4798-a8a9-915c8cca7b23"
+    },
+    {
+      "claim_id": "694cc257-a2a4-4137-b808-277faf8ef137",
+      "result_id": "7d58d8af-9fab-4798-a8a9-915c8cca7b23"
+    },
+    {
+      "claim_id": "9da5e866-81f5-44d6-bbd3-8635b103d9bc",
+      "result_id": "7d58d8af-9fab-4798-a8a9-915c8cca7b23"
+    },
+    {
+      "claim_id": "ee3b6873-4c67-4bd2-bd2d-6cef42970c22",
+      "result_id": "291f65e7-9840-4267-993b-b0a9b45f5867"
+    },
+    {
+      "claim_id": "faf3d36a-8785-4948-9973-2d01e9cbc8dc",
+      "result_id": "291f65e7-9840-4267-993b-b0a9b45f5867"
+    },
+    {
+      "claim_id": "8bd65c45-39d0-4765-951c-0a36865d4553",
+      "result_id": "a9da47ae-06ec-490d-81db-9a9032f1981e"
+    },
+    {
+      "claim_id": "25d627d6-d50b-4e23-9809-db53c3bc95b4",
+      "result_id": "a9da47ae-06ec-490d-81db-9a9032f1981e"
+    },
+    {
+      "claim_id": "bd65d5ef-d254-417e-84d7-80f3a7fe3cdb",
+      "result_id": "a9da47ae-06ec-490d-81db-9a9032f1981e"
+    },
+    {
+      "claim_id": "0ec2659e-7f16-406c-8b72-e7e5fa35e655",
+      "result_id": "7417c63e-5d87-4d9f-8939-9e8bd75edbdd"
+    },
+    {
+      "claim_id": "0d528739-3084-4c45-9ccc-f5af8513941c",
+      "result_id": "7417c63e-5d87-4d9f-8939-9e8bd75edbdd"
+    },
+    {
+      "claim_id": "156eecb6-ebc8-4548-b998-37197c686862",
+      "result_id": "7417c63e-5d87-4d9f-8939-9e8bd75edbdd"
+    },
+    {
+      "claim_id": "60a2a18b-cd33-4897-942f-1e12021efa9d",
+      "result_id": "9466bab9-680a-4c4c-9ffb-1cb791beb978"
+    },
+    {
+      "claim_id": "4ca81aef-340c-455c-9035-6a6fb74cd1df",
+      "result_id": "9466bab9-680a-4c4c-9ffb-1cb791beb978"
+    },
+    {
+      "claim_id": "9f05d865-d86f-4efd-8d3a-b96f452b662e",
+      "result_id": "1a2469e9-6829-40ce-9f00-1f8571dac07f"
+    },
+    {
+      "claim_id": "c8796243-6735-44a1-9f2e-b43765edcaf5",
+      "result_id": "1a2469e9-6829-40ce-9f00-1f8571dac07f"
+    },
+    {
+      "claim_id": "a5e3c4ee-9600-4d39-b879-fc597eb7a47c",
+      "result_id": "1a2469e9-6829-40ce-9f00-1f8571dac07f"
+    },
+    {
+      "claim_id": "482a121c-0022-4207-ad6a-8830314eff38",
+      "result_id": "1a2469e9-6829-40ce-9f00-1f8571dac07f"
+    },
+    {
+      "claim_id": "8d98ba09-ca7a-403b-bf0e-a9ea85260f4b",
+      "result_id": "08a6d4a2-7c7d-4140-a78f-0d3ed439dc15"
+    },
+    {
+      "claim_id": "d4d2fe6d-84ed-4a56-a3df-d8f402a9713d",
+      "result_id": "08a6d4a2-7c7d-4140-a78f-0d3ed439dc15"
+    },
+    {
+      "claim_id": "dd9b20db-fb59-4a7b-b075-744be6e773bd",
+      "result_id": "08a6d4a2-7c7d-4140-a78f-0d3ed439dc15"
+    },
+    {
+      "claim_id": "1176a079-c7a1-437b-9946-2d478fcd7d2d",
+      "result_id": "08a6d4a2-7c7d-4140-a78f-0d3ed439dc15"
+    },
+    {
+      "claim_id": "3e8b553c-ddf5-4646-a43c-a4964119d6fa",
+      "result_id": "08a6d4a2-7c7d-4140-a78f-0d3ed439dc15"
+    },
+    {
+      "claim_id": "2f168039-3587-4986-a7e2-5cb2d920e5a0",
+      "result_id": "08a6d4a2-7c7d-4140-a78f-0d3ed439dc15"
+    },
+    {
+      "claim_id": "005a87ee-e36a-4707-abcf-dbe44f4983a8",
+      "result_id": "156dbd10-56f6-4a82-9259-487bdc1c491f"
+    },
+    {
+      "claim_id": "4da276a1-c4f0-4559-a580-b4e580d788fd",
+      "result_id": "156dbd10-56f6-4a82-9259-487bdc1c491f"
+    },
+    {
+      "claim_id": "8b7ecac2-305d-4902-80b0-7f17e1aaccf7",
+      "result_id": "156dbd10-56f6-4a82-9259-487bdc1c491f"
+    },
+    {
+      "claim_id": "5e37ba3e-7495-4580-893a-55c247d38d92",
+      "result_id": "dd441528-0c67-4cd1-8084-6e04d0861114"
+    },
+    {
+      "claim_id": "77ab5ba1-9200-4433-9255-656b1d9776fd",
+      "result_id": "dd441528-0c67-4cd1-8084-6e04d0861114"
+    },
+    {
+      "claim_id": "7cc2e7c7-7b9d-470a-b984-a2089ac8d96b",
+      "result_id": "dd441528-0c67-4cd1-8084-6e04d0861114"
+    },
+    {
+      "claim_id": "ced6a1b8-1ed4-40a5-8420-2c10c0c11510",
+      "result_id": "dd441528-0c67-4cd1-8084-6e04d0861114"
+    },
+    {
+      "claim_id": "814123c3-c8d2-4c34-9836-ed582457ac36",
+      "result_id": "c58d47ad-244d-42fe-adfb-df424492328f"
+    },
+    {
+      "claim_id": "0a88263e-4677-4fde-b5f4-24c2c43438d7",
+      "result_id": "c58d47ad-244d-42fe-adfb-df424492328f"
+    }
+  ],
+  "comparisons": []
+}

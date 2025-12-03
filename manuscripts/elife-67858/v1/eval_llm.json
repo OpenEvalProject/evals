@@ -1,0 +1,493 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The authors generated 21 mouse lines (11 effector, 10 sensor) with lineage-specific expression of optogenetic proteins (opto\u03b11AR, opto\u03b22AR, CatCh2, GCaMP, RCaMP) in cardiovascular and related cell types, designed for direct biallelic combination without requiring Cre recombinase-mediated recombination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 and C64-C70 collectively describe the generation and design of the mouse lines. The manuscript provides detailed evidence including Table 1 listing all 21 lines, Figure 1 illustrating the construct design, and extensive characterization data throughout. The number of lines (21 total: 11 effector, 10 sensor), the specific optogenetic proteins used, and their functions are explicitly stated and supported by experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Hcn4BAC-CatCh2_IRES_LacZ mice express CatCh2 in cardiac conduction system cells (SA node, AV junction, ventricular conducting network) and enable optical cardiac pacing at 2-4 Hz with characteristic ECG changes (increased R-wave duration and PR interval) indicating peripheral SA nodal activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C27 and C71-C78 describe the Hcn4 line characterization and functional validation. Figure 2A-G provides X-gal staining confirming expression pattern, ECG recordings demonstrating optical pacing, and quantitative analysis of ECG parameters. The interpretation that increased R-wave duration and PR interval indicate peripheral SA nodal activation (C78) is reasonable given the data, though this is an inference rather than direct measurement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Hcn4BAC-GCaMP8 mice show GCaMP8 expression in the sinus venosus (embryonic) and SA nodal region (adult), with spontaneous Ca2+ signaling observed from E8.5 through postnatal stages, demonstrating conduction from atrium to ventricle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C88 describe the Hcn4-GCaMP8 sensor line. Figure 2I shows expression patterns, and Figure 2\u2014figure supplement 2 demonstrates spontaneous signaling at multiple developmental stages. The observation of conduction from atrium to ventricle (C87) is supported by video evidence (Figure 2\u2014video 2). The expression pattern similarity to Hcn4BAC-CatCh2 mice (C82) provides internal consistency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C198",
+      "C199"
+    ],
+    "result": "Biallelic Hcn4BAC-CatCh2/Myh6-GCaMP8 crosses demonstrate combined effector and sensor function, enabling optical cardiac pacing with simultaneous cardiomyocyte Ca2+ imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 and C198-C199 describe the key combinatorial experiment. Figure 2H and Figure 2\u2014video 1 show optical pacing coupled with GCaMP8 fluorescence in ventricular myocytes. This demonstrates the feasibility of the biallelic approach, which is a central innovation of the toolbox. The data clearly show temporal coupling between optical stimulation and Ca2+ responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Myh6-CatCh2_IRES_lacZ mice express CatCh2 throughout cardiomyocytes and enable optical ventricular pacing up to 8 Hz, with characteristic widened QRS complexes without P-waves, consistent with ventricular activation and myocyte refractory periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C96 describe the Myh6-CatCh2 line. Figure 3A-D provides X-gal staining showing widespread cardiomyocyte expression, ECG recordings demonstrating ventricular pacing at various frequencies, and quantitative analysis of R-wave duration. The interpretation that pacing loss above 8 Hz is consistent with ventricular myocyte refractory periods (C93) is reasonable. Control experiments (C94, Figure 3\u2014figure supplement 1) strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Myh6-GCaMP8 mice show widespread cardiomyocyte GCaMP8 expression with Ca2+ fluorescence coincident with heart contractions during the cardiac cycle, while vascular dextran fluorescence reports only motion-related changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C100 describe the Myh6-GCaMP8 sensor line. Figure 3G-I provides immunohistochemistry confirming expression, intravital two-photon imaging showing Ca2+ transients, and control dextran fluorescence demonstrating specificity of the GCaMP8 signal. The temporal correlation between Ca2+ fluorescence and contractions (C99) is clearly shown in Figure 3I.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Acta2BAC-GCaMP_GR and Acta2BAC-GCaMP8.1_mVermilion mice express ratiometric Ca2+ sensors in arterial smooth muscle extending to arteriolar-capillary junctions but not capillaries, showing Ca2+-dependent fluorescence increases during muscle contraction in blood vessels, airways, and gastrointestinal organs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C106 describe the Acta2 sensor lines. Figure 4A shows expression patterns in brain vessels with clear arterial specificity, and Figure 4\u2014figure supplement 1B demonstrates functional Ca2+ signaling coupled to intestinal contractions. The ratiometric design (mCherry/mVermilion remaining constant while GCaMP changes) is validated by the data, though mCherry constancy is noted as 'data not shown' for C106.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Acta2BAC optoeffector lines (Opto\u03b11AR, Opto\u03b22AR, CatCh2) show widespread expression in smooth muscle tissues (arteries, diaphragm, coronary vessels, bladder, bronchioles, intestines, kidney, uterus) with functional responses: Opto\u03b11AR and CatCh2 cause vasoconstriction, while Opto\u03b22AR causes vasodilation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 and C107-C114 describe Acta2 effector line expression and function. Figure 4B shows X-gal staining in brain arteries, Figure 5A demonstrates functional vascular responses in isolated arteries, and the text describes expression in multiple tissues. Control experiments (C31, C114, Figure 5\u2014figure supplement 1) confirm specificity. The widespread expression pattern is consistent with smooth muscle distribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C121",
+      "C122"
+    ],
+    "result": "Opto\u03b22AR photoactivation in arterial myocytes increases voltage-gated K+ current (IK) amplitude by 1.15\u00b10.04 fold (mesenteric) and 1.23\u00b10.05 fold (cerebral) at +60 mV, reaching a stable plateau ~80s after activation with near-maximal initial potentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 and C121-C122 describe electrophysiological validation of Opto\u03b22AR function. Figure 5B provides patch-clamp recordings showing IK potentiation with quantitative measurements from five experiments. The time course (~10s onset, ~80s plateau) and fold-changes are clearly documented. The interpretation of near-maximal potentiation (C122) is supported by the observation of limited additional effects from repeated light pulses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "CatCh2 optical stimulation in arterial myocytes evokes fast inward currents that terminate upon laser cessation, with cerebral myocytes showing higher currents than mesenteric arteries, an initial transient component that inactivates, and relatively small channel inactivation under experimental conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 and C123-C129 describe CatCh2 electrophysiological characterization. Figure 5C provides detailed patch-clamp recordings showing current kinetics, amplitude differences between cell types, and inactivation properties. The quantitative description of current amplitudes (~75 pA initial, 68\u00b11 pA steady-state in cerebral; ~125 pA transient, ~35 pA plateau) is well-documented. The interpretation of 'relatively small inactivation' (C123) is supported by the stable currents across repeated pulses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Cdh5BAC optoeffector and sensor lines show wide endothelial cell expression in heart, brain, and other tissues, with GCaMP8 signal sufficiently bright for intravital two-photon imaging of coronary microvasculature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C136 describe Cdh5 line characterization. Figure 6A-C provides X-gal staining showing endothelial expression across multiple tissues and two-photon imaging demonstrating functional GCaMP8 signal in coronary vessels. The expression pattern is consistent with endothelial cell distribution, and the imaging quality validates the sensor brightness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C138"
+    ],
+    "result": "Optical activation of Cdh5BAC-Opto\u03b11AR in femoral and cremaster arteries in vivo causes marked vasodilation (vs. slight vasoconstriction in controls), with bidirectional propagation showing delayed onset and amplitude attenuation, requiring 32.2 mW laser power; Opto\u03b22AR also causes vasodilation but without conducted dilation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 and C138 describe in vivo endothelial optogenetic function. Figure 7A-D provides quantitative vessel diameter measurements, spatial propagation analysis, and power-dependence data. The difference between Opto\u03b11AR (conducted dilation) and Opto\u03b22AR (no conduction) is clearly demonstrated. Control experiments (C40, C138) strengthen the conclusions. Statistical significance is shown (p=0.003, Figure 7A).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Additional optogenetic lines show tissue-specific expression: Gja5BAC-GCaMP_GR (arterial endothelia, ventricular conduction, atrial myocytes), DbhBAC-CatCh2 (locus coeruleus, adrenal medulla), Aldh1l1BAC-Opto\u03b11AR (cerebellar, olfactory, kidney), LckBAC-Opto\u03b11AR (spleen), Foxj1BAC-GCaMP8.1 (bronchioles, trachea, testis), SftpcBAC-GCaMP8 (alveolar cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C61 describe additional mouse lines. Figure 8A-E and supplementary figures provide immunohistochemistry and X-gal staining demonstrating expression patterns. Each line shows expected tissue-specific expression consistent with the promoter/BAC used. However, C191 notes incomplete expression in SftpcBAC-GCaMP8 (subset of type II cells lack expression), indicating a limitation acknowledged by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "Cre/Lox approaches for optogenetic mice have advantages (characterized Cre lines, strong promoters) but important drawbacks including variable recombination penetration, limited promoter specificity, inefficient biallelic production, complicated breeding for disease models, and insufficient transcriptional strength in some lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 and C168-C176 describe limitations of alternative approaches. These are supported by citations (Zariwala et al., 2012; Madisen et al., 2010) and represent established knowledge in the field. The authors' reasoning about breeding complexity and allelic requirements is logical and well-articulated, providing clear motivation for their alternative BAC-based approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C186",
+      "C187"
+    ],
+    "result": "The reported CHROMus lines provide direct, high-level tissue-specific expression enabling simple biallelic mating strategies, with verified BAC/cDNA insertion, confirmed viable breeding, and quality control through expression screening and multi-generation breeding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C177-C181 and C186-C187 describe advantages and validation of the CHROMus approach. The manuscript provides extensive characterization data for each line, demonstrating tissue-specific expression. The simplicity of biallelic crosses is demonstrated experimentally (e.g., Figure 2H). The quality control measures (screening, multi-generation breeding) are stated and supported by the consistent expression patterns observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C183",
+      "C184",
+      "C185",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194"
+    ],
+    "result": "CHROMus lines have limitations including unknown integration sites (potentially affecting other gene transcription or transgene fidelity), incomplete expression in some lines (e.g., SftpcBAC-GCaMP8 in subset of type II cells), lack of CNS expression in Hcn4BAC-CatCh (consistent with endogenous HCN4), and failure of ventricular stimulation to induce pacing in Hcn4BAC-CatCh mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C183-C194 describe acknowledged limitations. The authors transparently discuss the unknown integration site issue (C183-C185, C188) and provide specific examples of incomplete expression (C190-C191) and unexpected results (C192-C194). The citation of Kouranova et al., 2008 for C193 supports that the lack of CNS expression matches endogenous HCN4 patterns. This honest assessment of limitations strengthens the overall credibility of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Receptor-mediated activation of phospholipase C/InsP3 mediates smooth muscle contraction while adenylyl cyclase/cAMP mediates relaxation, with known linkage between cAMP/PKA signaling and voltage-gated K+ channels (Kv1, Kv2.1, BK) in arterial myocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C120 describe established physiological mechanisms. These are supported by multiple citations (Johnson et al., 2009; Luykenaar and Welsh, 2007; Nelson and Quayle, 1995; Wellman et al., 2001) and represent well-established knowledge that provides the mechanistic basis for the optogenetic experiments. The composition of IK (C120) is stated as part of the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C130",
+      "C131"
+    ],
+    "result": "Acta2 optoeffector lines express functional chimeric receptors and channel proteins, enabling optical modulation of smooth muscle signaling in various experimental conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C131 provide a summary conclusion based on the collective evidence from isolated vessel experiments (Figure 5A), electrophysiology (Figure 5B-C), and expression data (Figure 4). The functional validation across multiple experimental paradigms (ex vivo vessels, patch-clamp, in vivo imaging) strongly supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C137",
+      "C139",
+      "C140"
+    ],
+    "result": "Endothelium-induced vasodilation occurs via Ca2+ release and NO synthesis, and arterial dilation propagation following muscarinic stimulation is difficult to separate from agonist diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137, C139-C140 describe established vascular physiology supported by citations (Straub et al., 2014; Tallini et al., 2007; Welsh and Segal, 1998). These provide the scientific rationale for using optogenetic approaches to study conducted vasodilation without confounding agonist diffusion, which is a key advantage demonstrated in Figure 7B.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The CHROMus lines have significant potential applications for understanding cardiac conduction system failure (>200,000 pacemakers implanted annually in US), developing biological pacemakers, studying heart failure, cardiomyopathy-induced arrhythmias, and cell/gene-based therapies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C147 describe potential applications supported by citations (Mond and Proclemer, 2011; Bui et al., 2011; Meyers et al., 2016; Nyns et al., 2019; Vedantham, 2015; Asimaki et al., 2014; Nakamura and Murry, 2019). While these are forward-looking statements about utility rather than demonstrated results, they are reasonable inferences based on the demonstrated capabilities of the lines and cited literature on disease prevalence and research needs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "The authors report the first mice with lineage-specific expression enabling light-activated depolarization (CatCh2), intracellular Ca2+ release (Opto\u03b11AR), and smooth muscle relaxation (Opto\u03b22AR), with observed rhythmic endothelial Ca2+ signaling during the cardiac cycle enabling study of blood flow regulation and metabolic demand matching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C152 assert novelty and describe a specific observation. The novelty claim is supported by the comprehensive nature of the toolbox and lack of prior reports of such systematic BAC-based optogenetic mouse lines. The observation of rhythmic endothelial signaling (C151) is documented in the data, and the potential for studying blood flow regulation (C152) is a reasonable inference supported by citation (Duncker and Bache, 2008).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Similar optogenetic approaches have advanced understanding of metabolic vascular coupling in brain/arterioles, but cardiac studies face additional imaging challenges from the beating heart, addressed here using stabilized optical windows and deconvolution, with ratiometric sensor lines providing additional advantages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C156 describe technical context and solutions. Citations (Gonzales et al., 2020; Sonkusare et al., 2012, 2014) support prior advances in other tissues. The beating heart challenge (C154) is well-recognized, and the solutions (C155, stabilized windows and deconvolution) are demonstrated in Figures 2-3. The ratiometric lines (C156) are shown in Figure 4 and provide motion artifact correction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "The ability to initiate smooth muscle second messenger synthesis through light-sensitive chimeric receptors (\u03b11/\u03b22 adrenoceptors) provides important capabilities for probing vascular control mechanisms in individual cell types, with additional lines enabling studies of neurovascular/lung signaling, neurosecretion, neuromodulation, and excitation/secretion coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C161 describe capabilities and potential applications. The functional validation of chimeric receptors is demonstrated in Figures 5 and 7. The tissue-specific expression in additional lines (C159) is shown in Figure 8. The stated capabilities (C157-C158, C160-C161) are reasonable inferences based on the demonstrated expression patterns and functional validation, though some represent future potential rather than demonstrated applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "CHROMus mice will have utility when crossed with disease models (which exist for cardiovascular, neurovascular, airway, immune diseases), providing a direct way to apply optogenetics to pathophysiology and treatment studies; mice are available through JAX as a toolkit to advance optogenetics research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C167 describe anticipated utility and availability. The monoallelic design explicitly enables disease model crosses (demonstrated by biallelic crosses in Figure 2H). The existence of disease models (C163) is general knowledge. JAX availability (C166) is stated and verifiable. These are reasonable forward-looking statements about utility (C162, C164, C167) based on the demonstrated capabilities, though they represent potential rather than demonstrated applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C195",
+      "C196",
+      "C197",
+      "C200",
+      "C201",
+      "C202",
+      "C203"
+    ],
+    "result": "Separate targeting of cardiac conducting cells (SA node) and myocytes (ventricular) enabled light-activated heart activation through different pathways, with Hcn4BAC-GCaMP8 mice showing robust conduction signaling across developmental stages and exploiting improved GCaMP8 design for higher brightness and dynamic range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C195-C197 and C200-C203 summarize cardiac optogenetics results. The separate targeting is demonstrated in Figures 2 (SA node) and 3 (ventricle). The developmental expression (C200-C201) is shown in Figure 2\u2014figure supplement 2. The GCaMP8 improvements (C202-C203) are supported by citations (Ohkura et al., 2012b; Tian et al., 2009) describing the structural basis for enhanced performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Connexin40 (Gja5) is expressed in cardiac conduction system cells and arterial endothelial cells, with embryonic myocyte expression critical for heart function before mature conduction system development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 describe established knowledge about connexin40 supported by citation (Delorme et al., 1995). This provides the biological rationale for using the Gja5 locus to target both cardiac conduction cells and endothelium, as demonstrated in Figure 8A and supplementary figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Optogenetic effectors and sensors provide a novel real-time window into complex physiological processes, enabling determination of molecular signaling within functioning cellular networks, made practical by constructing optically compatible and genetically tractable mouse lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 provide the conceptual framework for the study. These represent the general motivation and are supported by the extensive functional validation throughout the manuscript. The practical implementation through genetic line construction (C18) is the core contribution of the work, demonstrated by the 21 characterized lines and their functional validation.",
+    "result_type": "MAJOR"
+  }
+]

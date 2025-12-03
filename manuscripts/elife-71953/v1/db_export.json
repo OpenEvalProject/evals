@@ -1,0 +1,1734 @@
+{
+  "submission": {
+    "id": "c8958fa5-bad0-4565-9b0d-b203bcea564b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T12:21:58.750865Z",
+    "updated_at": "2025-12-03T12:21:58.750865Z"
+  },
+  "content": [
+    {
+      "id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "submission_id": "c8958fa5-bad0-4565-9b0d-b203bcea564b",
+      "content_type": "manuscript",
+      "content_text": "# Aspirin\u2019s effect on kinetic parameters of cells contributes to its role in reducing incidence of advanced colorectal adenomas, shown by a multiscale computational study\n\n## Authors\n\n- Yifan Wang<sup>1</sup> ([ORCID: 0000-0003-3292-4972](https://orcid.org/0000-0003-3292-4972))\n- C Richard Boland<sup>2</sup> ([ORCID: 0000-0002-8120-5088](https://orcid.org/0000-0002-8120-5088))\n- Ajay Goel<sup>3</sup> ([ORCID: 0000-0003-1396-6341](https://orcid.org/0000-0003-1396-6341))\n- Dominik Wodarz<sup>1</sup> ([ORCID: 0000-0002-8017-3707](https://orcid.org/0000-0002-8017-3707))\n- Natalia L Komarova<sup>1</sup> ([ORCID: 0000-0003-4876-0343](https://orcid.org/0000-0003-4876-0343)) \u2020\n\n### Affiliations\n\n1. Department of Mathematics, University of California Irvine Irvine United States ([ROR:04gyf1771](https://ror.org/04gyf1771))\n2. Department of Medicine, University of California San Diego School of Medicine San Diego United States ([ROR:0168r3w48](https://ror.org/0168r3w48))\n3. Department of Molecular Diagnostics and Experimental Therapeutics, Beckman Research Institute of City of Hope Comprehensive Cancer Center Duarte United States ([ROR:00w6g5w60](https://ror.org/00w6g5w60))\n4. Department of Population Health and Disease Prevention, University of California Irvine Irvine United States ([ROR:04gyf1771](https://ror.org/04gyf1771))\n\n\u2020 Corresponding author\n\n## Abstract\n\nAspirin intake has been shown to lead to significant protection against colorectal cancer, for example with an up to twofold reduction in colorectal adenoma incidence rates at higher doses. The mechanisms contributing to protection are not yet fully understood. While aspirin is an anti-inflammatory drug and can thus influence the tumor microenvironment, in vitro and in vivo experiments have recently shown that aspirin can also have a direct effect on cellular kinetics and fitness. It reduces the rate of tumor cell division and increases the rate of cell death. The question arises whether such changes in cellular fitness are sufficient to significantly contribute to the epidemiologically observed protection. To investigate this, we constructed a class of mathematical models of in vivo evolution of advanced adenomas, parameterized it with available estimates, and calculated population level incidence. Fitting the predictions to age incidence data revealed that only a model that included colonic crypt competition can account for the observed age-incidence curve. This model was then used to predict modified incidence patterns if cellular kinetics were altered as a result of aspirin treatment. We found that changes in cellular fitness that were within the experimentally observed ranges could reduce advanced adenoma incidence by a sufficient amount to account for age incidence data in aspirin-treated patient cohorts. While the mechanisms that contribute to the protective effect of aspirin are likely complex and multi-factorial, our study demonstrates that direct aspirin-induced changes of tumor cell fitness can significantly contribute to epidemiologically observed reduced incidence patterns.\n\n## Introduction\n\nColorectal cancer currently affects about 5% of the population in the USA and is a major cause of cancer-related deaths (Siegel et al., 2020). Prevention of colorectal cancer is an important goal in the quest to reduce morbidity and mortality. In this respect, long-term aspirin use has been shown to be effective (Chan et al., 2012; Thun et al., 1991). Aspirin is a non-steroidal anti-inflammatory drug (NSAID) and is a cyclo-oxygenase (COX)\u20132 inhibitor (Goel et al., 2003). The CAPP2 trial Burn et al., 2011 demonstrated that the intake of 600 mg of aspirin per day for 2 years resulted in a 63% reduction in colorectal cancer incidence in Lynch Syndrome patients. Interestingly, observation of the protective effect of aspirin required a follow-up time of more than 55 months (Burn et al., 2011). In a range of studies, aspirin has also been shown to reduce incidence of sporadic colorectal cancer (Thun et al., 1991; Tougeron et al., 2014; Friis et al., 2015; Lochhead and Chan, 2016; Chan et al., 2007; Drew et al., 2016; Chan et al., 2005; Rothwell, 2013), and of adenomas (Sandler et al., 2003; Chan et al., 2004), which are a precursor of cancer. This was evident both in observational studies and in randomized controlled trials, which are reviewed for example in Lochhead and Chan, 2016; Drew et al., 2016. These studies report a reduction in cancer or adenoma incidence of the order of 10\u201350% in aspirin-treated compared to placebo groups, depending on the exact dose and frequency of aspirin intake. While some studies failed to detect significant protective effects of aspirin, larger studies with higher aspirin doses and longer treatment times yielded significant results.\n\nThe mechanisms underlying the protective effect of aspirin are likely complex and multi-factorial. Inflammation is a possible driver of colorectal carcinogenesis (Itzkowitz and Yio, 2004), and aspirin can reduce the extent of inflammation in the cellular microenvironment, which might contribute to a reduced development of disease. Other microenvironmental effects, such as the composition of the colorectal microbiome (Prizment et al., 2020; Brennan et al., 2021; Zhao et al., 2020), have also been shown to determine the degree of protection provided by aspirin. Our previous in vitro and in vivo work, however, has shown that physiologically relevant aspirin concentrations can have a direct effect on tumor cells, reducing their rate of proliferation and increasing their death rate (Shimura et al., 2020; Zumwalt et al., 2017). This not only results in reduced tumor growth, but can also lead to a lower probability that newly generated tumor cells successfully give rise to clonal expansion, thus increasing the likelihood that these initially transformed cells go extinct (Wodarz et al., 2017). This effect might contribute to the reduced incidence of colorectal cancer as a result of aspirin intake.\n\nWhile these direct effects of aspirin on tumor cell division and death rates have been documented by us in vitro and in vivo (Shimura et al., 2020; Zumwalt et al., 2017), and occurred under physiologically realistic doses, it is unclear to what extent these changes in cellular kinetics can potentially alter disease incidence. To evaluate this quantitatively, a mathematical modeling framework needs to be developed that predicts epidemiological incidence data based on cellular processes. There is a rich history of such approaches in the cancer literature in different contexts (Fisher and Hollomon, 1951; Nordling, 1953; Armitage and Doll, 1954; Luebeck and Moolgavkar, 2002; Meza et al., 2008; Moolgavkar, 1978; Hornsby et al., 2007), which has allowed researchers to gain fundamental insights into carcinogenic processes based on the interpretation of age-incidence data. Here, we describe a mathematical model of advanced adenoma formation and parameterize it by fitting epidemiological predictions to incidence data that document advanced adenoma occurrence as a function of age. We then use this model to test whether aspirin-mediated changes in cellular kinetics, as documented by our experiments, can result in reductions in advanced adenoma incidence that are comparable to those observed in aspirin-treated patient cohorts. We find that the magnitude of changes in the kinetics of transformed cell populations that we observed experimentally can result in a pronounced reduction of advanced adenoma incidence, and that the epidemiologically observed incidence reductions (between 10% and 50%) can be explained by our model. This indicates that the direct effects of aspirin on dividing cells can in principle explain a significant amount of the chemoprotective effect exerted by this drug. We note, however, that while this is a clear result that emerges from this mathematical modeling effort, other mechanisms of aspirin not included in this model (such as anti-inflammatory effects [Sostres et al., 2014] or modulation of the microbiome [Prizment et al., 2020; Brennan et al., 2021; Zhao et al., 2020]) are likely to also contribute to the observed protective effect.\n\nWe start by describing a mathematical model of advanced adenoma formation and show that when parameterized with experimentally obtained estimates, it can account for epidemiologically observed age-incidence curves, only as long as inter-crypt competition is explicitly included. We then use this model to simulate the effect of aspirin on the incidence of advanced adenomas in human populations, and compare model predictions to epidemiological data.\n\n## Results\n\n### Computational modeling\n\nIn order to quantify the effects of aspirin on colorectal cancer initiation and progression, we have designed a mathematical model that is rooted in the process of multistep carcinogenesis (Luebeck and Moolgavkar, 2002; Hornsby et al., 2007; Fearon, 2011; Ashley, 1969). Its assumptions are similar in principle to those in a recent study (Paterson et al., 2020), with important differences that are discussed below. There are two early molecular events that we postulate (without assuming their temporal order): (1) An inactivation of the APC gene, or a related event that affects the functioning of the beta-catenin/WNT signaling pathway, and (2) an activation of the KRAS oncogene (or another gain-of-function mutation). For simplicity, we will be referring to these mutations as APC- and KRAS-mutations, keeping in mind that the model still applies in the presence of a pair of another loss-of-function and a gain-of-function mutation (further discussed below). The inactivation of the APC tumor suppressor gene is a classic example of a loss-of-function mutation, which implies two molecular events, corresponding to the inactivation of the two copies of the gene. The associated mutation rate is therefore assumed to be u = 10\u20137 per cell division. The activation of the KRAS oncogene, on the other hand, is a gain-of-function event, whose mutation rate is about two orders of magnitude lower (\u03bc = 10\u20139 per cell division). The associated selection-mutation diagram is shown in Figure 1 and contains six different cell populations, denoted as types 1 through 6. The populations occupying the top row (types 1\u20133) are characterized by an unmutated KRAS oncogene; the populations of the bottom row (types 4\u20136) all have the KRAS mutation activated. Moving from left to right on this diagram, the number of inactivated copies of the APC gene increases from 0 to 2, such that populations of types 1 and 4 are APC+/+, populations of types 2 and 5 are both APC+/-, and populations of types 3 and 6 are APC-/-.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/71953/elife-71953-fig1-v1.jpg)\n\n**Figure 1.:** The six cell types are denoted by circles, the mutation rates that give rise to different types are marked by the straight arrows. Type 6 (late adenoma) is marked in red. Crypt conversion rates are indicated by circular arrows and crypt fission by multiple circles.\n\nThese different populations correspond to different stages in the pathway towards colorectal cancer. The presence of the APC-/- genotype has been related to the appearance of early adenomas (type 3) (Armaghany et al., 2012). Cells that have not inactivated APC but are characterized by KRAS activation (types 4 and 5) have been linked to aberrant crypt foci (Pretlow and Pretlow, 2005; Jass, 2006). The combination of both types of mutations (type 6) is thought to correlate with the growth of advanced adenomas (Armaghany et al., 2012). As in the previous study (Paterson et al., 2020), we assume flexibility regarding the order with which the different mutations can occur. Hence, it is assumed that the initial mutation can occur either in APC or in KRAS. It is, however, controversial whether adenoma formation can indeed be initiated by a mutation in KRAS. Some studies indicate that an initial mutation in KRAS leads to the formation of non-dysplastic polyps, which could represent an evolutionary dead end for neoplasias (Jen et al., 1994; Chan et al., 2003). On the other hand, it has been suggested that an initial KRAS mutation might be able to drive the initiation of colorectal carcinogenesis (Jass, 2006; Pretlow and Pretlow, 2005), based on mutation frequencies in aberrant crypt foci and adenomas. The assumed flexibility in the evolutionary pathway of the model accommodates these conflicting notions.\n\nWhile the model assumptions about the pathways to adenoma formation are clearly defined in our model, it is important to point out that there are uncertainties in those assumptions, and that there is heterogeneity in the types of mutations that can lead to colorectal carcinogenesis. For example, it has been reported that among non-hypermutated colorectal tumors, KRAS was mutated in only about 43% of patient samples (Network, 2012), indicating the importance of a variety of evolutionary pathways. Our model, however, does not depend on the identity of particular mutations, but assumes the occurrence of mutation types; these are the inactivation of a tumor suppressor gene (which is a loss-of-function mutation, e.g. APC-/-), and a gain-of-function mutation, which can be in KRAS or an alternative gene. Our model predictions hold as long as the evolutionary pathway to advanced adenomas involves these two types of mutational events, regardless of their identity. We note that our model does not apply to potential cases of advanced adenomas that might develop via pathways characterized by a different number or different types of initiating events.\n\nWe model the population dynamics of the colon by using a colonic crypt as a basic unit, which is similar in concept to recently published work (Paterson et al., 2020). Our model is related to many previous theoretical investigations of the cell population dynamics of crypts (Komarova et al., 2002; Komarova et al., 2003; Nowak et al., 2002; Shahriyari and Komarova, 2013; Shahriyari et al., 2016), where stem cells (SC) were assumed to acquire random mutations in a constant-population turnover (birth and death) process, and selection happened at the level of individual stem cells. Once it was discovered that there were very few stem cells per crypt (Nicholson et al., 2018; Humphries and Wright, 2008), it became clear that the evolutionary dynamics can be conveniently described at the level of crypts, because crypts are likely to be homogeneous with respect to the driver mutations. The rate at which a crypt changes its mutational status from i to j, denoted by Rij, depends on the population size (the number of stem cells per crypt), the mutation rate, and the relative fitness of the invading cell type compared to the resident cell type (Komarova et al., 2003; Nowak et al., 2002). The latter can be calculated from the cell displacement data reported in the literature. Cell types APC+/-, APC-/-, and KRAS + all have a selective advantage compared to the wild type, which we assume results in an increase of the SC division rate (see Section 2 of Appendix 1 for details).\n\nOur model keeps track of crypts of different types (denoted as ni for each type i). Modified crypts of types APC-/- and KRAS + have been reported to undergo crypt fission; in other words, while the total population of a single crypt remains constant (even though it is populated by SCs that are fitter than the wild-type SCs), the crypt can undergo a doubling, thus increasing the total number of such modified crypts. The fission rates of different crypt types have been reported in the literature (Paterson et al., 2020; Nicholson et al., 2018; Humphries et al., 2013; Baker et al., 2014) and are denoted by \u03b3i; we further denote by \u03b4 the death rate of crypts, see Birtwell et al., 2020 for the role of crypt turn-over. We model these dynamics by using the following system of ordinary differential equations:\n\n$$\nn\u02d9_{1}=\u2212(R_{12}+R_{14})n_{1},n\u02d9_{2}=R_{23}n_{1}\u2212(R_{23}+R_{25})n_{2},n\u02d9_{3}=R_{23}n_{2}\u2212R_{36}n_{3}+\\gamma3n_{3}(1\u2212\\frac{n_{3}+n_{4}+n_{5}}{K_{A}})\u2212\\deltan_{3}n\u02d9_{4}=R_{14}n_{1}\u2212R_{45}n_{4}+\\gamma4n_{4}(1\u2212\\frac{n_{3}+n_{4}+n_{5}}{K_{R}})\u2212\\deltan_{4}n\u02d9_{5}=R_{25}n_{2}\u2212R_{45}n_{4}\u2212R_{56}n_{5}+\\gamma5n_{5}(1\u2212\\frac{n_{3}+n_{4}+n_{5}}{K_{R}})\u2212\\deltan_{5},\n$$\n\nwhere on the left hand side we have the rate of change for the population of crypts of each type, and the terms with the carrying capacity (KA for KRAS- crypts and KR for KRAS+ crypts) represent competition among modified crypts that undergo crypt fission; in reference (Paterson et al., 2020) no crypt competition was included, such that KR = KA = \u221e in that model. The initial conditions for the system above are given by n1(0) = Ncrypt, ni(0) = 0, 1 < i \u2264 5, that is, initially all Ncrypt crypts are wild type. Parameter values are presented in Appendix 1\u2014table 2.\n\nThe probability to have produced a single crypt of type 6 (the APC-/-KRAS+ phenotype) by time t is denoted by P(t) and is approximated by the following equation Chou and Wang, 2015,\n\n$$\nP\u02d9=(R_{56}n_{5}+R_{36}n_{3})(1\u2212P),P(0)=0\n$$\n\nWe further assume that crypts of type 6 engage in a fission-death dynamics (with the corresponding rates \u03b36 and \u03b46). At the time of detection, an advanced adenoma is characterized by a certain size, N. If \u0394T denotes the expected time for the crypt population, n6, to grow to the size of detection, then the value P(t-\u0394T) calculated above approximates the mathematical expression for the age-incidence curve for advanced adenoma. These approximations were checked against stochastic (Gillespie) simulations recording the incidence of size N colonies of type 6 crypts, yielding excellent agreement (see Section 5 of Appendix 1 for details).\n\n### Fitting the adenoma incidence curve\n\nUntil recently, most of the parameters associated with cellular dynamics in colonic crypts were unknown, but presently many of the rates have been estimated with a high degree of confidence (Paterson et al., 2020), which makes it possible to parameterize the model and use it to answer questions about the process of crypt transformation and the dynamics of cancer initiation. Using the published data on the mutation rates, the total number of crypts, the number of SCs per crypt, and the relative fitness of different cell types (see Appendix 1\u2014table 2), we first attempted to fit the model in the absence of crypt competition (KR = KA = \u221e), by varying the SC division rate within the physiological range and finding the best fitting value for crypt fission rates. The best fitting parameter combinations always corresponded to zero crypt fission rates. Non-zero crypt fission rates resulted in a much steeper rise in the adenoma incidence compared to that reported in Brenner et al., 2014. A similar result was obtained when we used different values for fitness differences (the exhaustive parameter search and a model selection procedure are described in Section 3 of Appendix 1). Finally, using the reported crypt fission rates (Appendix 1\u2014table 2) we were not able to find a SC division rate within the biologically applicable range that would give the correct shape of the advanced adenoma incidence curve. The conclusion is that an unlimited exponential expansion of crypts by fission gives an unrealistically steep rise in incidence. This problem did not occur in reference (Paterson et al., 2020) because fitting of the age-specific incidence of CRC was not attempted, and instead, only the total life-time risk of CRC was compared to the model prediction.\n\nIncluding crypt competition in the model has resolved this issue. We fixed the carrying capacity of type 3\u20135 crypts (parameters KR and KA) to values much smaller than the initial number of healthy crypts, Ncrypt, to ensure the presence of significant competition among the partially transformed crypts. Using this model, we were able to fit the data for a wide range of the SC division rates, with the non-zero best-fitting crypt fission rates that have the correct order of magnitude. Additionally, fixing the crypt fission rates to their reported values, we were able to find very well-fitting incidence curves for a wide range of SC division rates (r1), with the carrying capacity parameters ranging between about 100 and about 5000.\n\nFor the model that includes crypt competition, it was possible to find nearly equally good fits for a range of biologically plausible parameter values, see Figure 2. The amount of data in the advanced adenoma incidence curve does not allow finding unique values for all the parameters, but instead it allows using many of the parameters fixed to their experimentally obtained values, and just fine-tuning the small number of remaining parameters whose value is unknown (such as KA and KR) or only its range is known (such as the SC division rate). When using the parameterized model to study the role of aspirin, instead of selecting the best fitting parameter set, we included a number of parameter sets from the best fitting parameter ranges, to see how this variability influences the result.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/71953/elife-71953-fig2-v1.jpg)\n\n**Figure 2.:** (a) The fitting error as a function of r1, for the best fitting pairs (\u03b33 and \u03b34) with KA = KR = 1000; see Figure 2\u2014source data 1. (b) The fitting error as a function of r1, for the best fitting values of (KA,KR). Two groups of fits are marked with yellow and green ovals for the analysis of pathways, Figure 3. See Figure 2\u2014source data 2. (c) The best fitting curves corresponding to increasing SC division rates, r1, are plotted together with the epidemiological data (the values of r1 are taken from the Region of low error, panel (b)). In all panels, \u03b4=\u03b46=0.05 yrs\u20131, \u03b36 = 1.01 yrs\u20131, expansion of n6 to N = 102 crypts, and the rest of the parameters are as in Appendix 1\u2014table 2. The code for panels (a\u2013c) is provided, see Source code 1.\n\n### Pathways to adenoma\n\nNext, we asked what is the most likely pathway that leads to the creation of the type 6 (advanced adenoma). It is possible that crypts of type 6 could be created by a KRAS mutation in a crypt of type 3 (we called this \u2018APC path\u2019), or by an APC mutation in a crypt of type 5 (\u2018KRAS path\u2019), see panel (a) of Figure 3. We found, consistent with (Paterson et al., 2020), that the likelihood of each of these two pathways is determined by the crypt fission rates, and not by mutation rates or crypt conversion rates (Figure 3(d)); in addition, it is sensitive of the carrying capacity parameters, KA and KR. This is demonstrated in Figure 3 by examining the best fitting parameter sets of Figure 2(b). They naturally fall into two groups (circled in yellow and green): for the former group, the best fitting carrying capacity satisfy KA >KR, and for the latter group this inequality is reversed (see Figure 3(b)). We consider the former group biologically relevant, not only because it yields a smaller fitting error, but also because it corresponds to the type (APC-/-,KRAS-) crypts having a larger carrying capacity, which is consistent with this type being a more advanced stage.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/71953/elife-71953-fig3-v1.jpg)\n\n**Figure 3.:** (a) A schematic representation of the two pathways. (b) For the two groups of fits in Figure 2(b), the pairs (KA,KR) are shown. The two groups are characterized by KA >KR and KA <KR, respectively. See Figure 3\u2014source data 1. (c) The probabilities PAPC and PKRAS are plotted as functions of time for these two groups of fits. (d) The proportion of the APC-path is shown as a function of the crypt fission rates, \u03b33 and \u03b34=\u03b35. Expansion to 102 type-6 crypts is assumed (see Appendix 1\u2014figure 10 for expansion to105 type-6 crypts); the rest of the parameters are as in Appendix 1\u2014table 2. The code for panels (b\u2013c) is provided, see Source code 1.\n\nThe model allows for the calculation of the probabilities to develop an advanced adenoma through the APC-/- and KRAS pathways, functions PAPC(t) and PKRAS(t). Panel (c) of Figure 3 plots these quantities as functions of age (t) for the two groups of parameters. We observe that for the biologically relevant group where the carrying capacity associated with type 3 (APC-/-,KRAS-) is larger, the pathway through the inactivation of the APC gene is predominant. This is consistent with the conclusions of reference (Paterson et al., 2020). We also generated probability distributions of the numbers of type 3 and type 5 crypts at the time when the first type 6 crypt is generated (Appendix 1\u2014figures 12 and 13). We observe that in the model, the number of type 3 (APC-/-,KRAS-) crypts is in the hundreds while type 5 (APC-/+,KRAS+) crypts are relatively rare. This might further argue against the importance of KRAS as an initiating event in disease evolution.\n\n### The effect of aspirin\n\nWe asked, given that a variety of parameter values could lead to the same incidence curve, can we still say anything about the possible role of aspirin in cancer prevention/delay? To model the effect of aspirin on the relevant kinetic parameters, we used a variety of sources. One type of data was obtained by us in our earlier studies, where the effect of aspirin was quantified by measuring cells\u2019 kinetic parameters with and without aspirin treatment, in vitro and in xenografts (Shimura et al., 2020; Zumwalt et al., 2017). In other work, it has also been demonstrated that a related non-steroidal anti-inflammatory drug, sulindac, inhibited the fission of APC-deficient crypts and thus reduced adenoma numbers in mice.\n\nIt is, however, unclear which exact cell populations aspirin might affect in vivo. Therefore, we implemented the effect of aspirin in the epidemiological model by testing different sets of assumptions: (a) aspirin affects the fitness of cells within crypts (intra-crypt dynamics), and it may or may not affect crypt turnover dynamics through crypt fission and death rates (inter-crypt dynamics); (b) the fitness of type 6 cells is reduced, and the fitness of type 2\u20135 cells may or may not be reduced as well. In other words, only the most transformed cell type (that is, the most modified cell type that combines both the APC-/- mutation and the KRAS + mutation) is affected by aspirin, or all mutated cells, that is types 2\u20146, are affected. Different combinations of these assumptions have been explored, as summarized in Figure 4(a).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/71953/elife-71953-fig4-v1.jpg)\n\n**Figure 4.:** (a) Modeling assumptions and references to figures that present the results. (b) A schematic showing the timing of the model with aspirin treatment. (c) Predicted advanced adenoma incidence in the absence of aspirin treatment (thin black lines are the fitted curves and black dots are incidence data); and under aspirin treatment where the drug affects both inter- and intra-crypt dynamics of types 2 to \u20136 (yellow line). Each panel corresponds to aspirin treatment administered during one decade (20\u201330 years, 30\u201340 years, etc). The treatment period is shaded light green. See Figure 4\u2014source data 1. (d) Relative incidence of advanced adenoma, where strong (yellow, the same as in panel (c)), medium (brown) and light (blue) aspirin treatment dose was used (Table 1). Treatment is applied for different decades (as marked under the bars), and the relative risk is evaluated at the end of the treatment decade (zero follow-up time). See Figure 4\u2014source data 2. Parameter set #2 (Appendix 1\u2014tables 1\u20133) was used. 2.5 \u00d7 105 and 5 \u00d7 105 independent simulations were used for each condition in panels (c) and (d) respectively. The code for panels (c\u2013d) is provided, see Source code 2 (Mathematica). See also Source code 3 (Fortran), a stochastic simulation that produces simulated late adenoma incidence.\n\nThe effect of aspirin on cellular kinetics is modeled by using results of our xenograft experiments (Shimura et al., 2020), where we documented a dose-dependent reduction in the cell division rate (fold difference Fr <1) and an increase in the cell death rate (fold difference Fd >1), see Table 1. The relationship between the experimentally used aspirin doses in mice (Shimura et al., 2020) and the number of aspirin pills per weeks in humans (Nair and Jacob, 2016) is also given in Table 1. The strongest dose we used in study (Shimura et al., 2020) roughly translates to 1\u20132 standard aspirin pills a day for humans, which is the second strongest dose considered in Chan et al., 2004 (6\u201314 pills per week), see Section 6 of Appendix 1. When aspirin is applied in our model, we assumed the following:\n\n#### Effect on the intra-crypt dynamics\n\n**Table 1.**\n Aspirin doses in xenograft experiments, the equivalent human dose and the resulting changes in kinetic rates.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Dose in xeno- grafts (mg/kg)</th>\n      <th>Equivalent dose in humans (325 cm pills per week)</th>\n      <th>Fold difference in division rate, Fr</th>\n      <th>Fold difference Un death rate, Fd</th>\n      <th>Fitness factor</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>15</td>\n      <td>1.8</td>\n      <td>0.9</td>\n      <td>1.5</td>\n      <td>0.86</td>\n    </tr>\n    <tr>\n      <td>50</td>\n      <td>6.1</td>\n      <td>0.75</td>\n      <td>1.75</td>\n      <td>0.70</td>\n    </tr>\n    <tr>\n      <td>100</td>\n      <td>12.2</td>\n      <td>0.5</td>\n      <td>2.0</td>\n      <td>0.45</td>\n    </tr>\n  </tbody>\n</table>\n\nFor the purposes of our model, it is the combined effect of aspirin on cell division and death rates that changes the cells' relative fitness and decreases the probability of crypt conversion. To translate this information into the fold decrease in SC fitness, we note that, while the fold-reduction in division rate could be directly implemented, an increase in death rate is less straightforward. This is because in contrast to cell lines, with SCs, cell removal can occur through a combination of apoptosis and loss through differentiation, which might be the dominant component in the colorectal tissue. Therefore, if the rate of SC apoptosis is increased, say, two-fold in the presence of aspirin, this does not translate to a two-fold reduction in SC fitness. In the extreme scenario of zero SC death in the absence of aspirin, a two-fold increase in this parameter will not lead to a change in SC fitness. To calculate the fitness factor, we assumed that the removal rate of SCs, d, is comprised of 90% differentiation and 10% apoptosis, and that it is the latter that is affected by aspirin. If in the absence of aspirin, cellular fitness is given by the ratio r/d, then in the presence of aspirin this changes to $r/d\\timesF_{r}/(0.9+0.1F_{d}),$ which gives the fitness factor in Table 1. This factor enters into the crypt conversion rate, see Section 2 of Appendix 1. In particular, if only type 6 is affected, then rates R36 and R56 will experience a reduction. If types 2 to \u20136 are affected, then all conversion rates will be reduced.\n\n#### Effect of inter-crypt dynamicsf\n\nIn addition to affecting cellular fitness within the crypts, it is also logical to assume that aspirin reduces crypt fission rates and increases crypt death rates (the bottom row of the table in Figure 4(a)). This is supported by data (Fischer et al., 2014), and the rationale behind this assumption is that crypt fission is ultimately connected with divisions of individual cells, and crypt death is associated with cell death. Therefore, we assume that under aspirin treatment, $\\gamma_{i}\u2192F_{r}\u2192\\gamma_{i}$ and $\\delta\u2192F_{d}\\delta$ (that is, the fold-differences apply to the crypt fission and death rates). Again, this could affect the most modified crypts only (type 6), thus reducing the rate \u03b36 and increasing the death rate \u03b4 6; alternatively, this could affect to all type 2 to \u20136 crypts, thus reducing all the crypt fission rates and increasing all the crypt death rates.\n\nThe delaying effect of aspirin was studied by using stochastic (Gillespie) simulations, where the models were run according to the schematic in Figure 4(b). In particular, model parameters were switched from their (best fitted, aspirin-free) values to their modified values for the duration of treatment from Tstart to Tend. Simulations were stopped when the colony of type-6 crypts grew to its detection size (or when T = 80 was reached). Many simulation runs were aggregated to derive the age-incidence curve for advanced adenoma. Figure 4(c) presents typical simulation results for the models where aspirin affects both intra-crypt (conversion) and inter-crypt (crypt fission and death) dynamics for all the mutated cell types. The thin black lines represent the incidence curve in the absence of treatment, as was obtained by fitting the advanced adenoma data from Brenner et al., 2014 (black dots). The yellow curves represent the predicted age-incidence for individuals who were undergoing aspirin treatment during the time-window (of 10 years) in different decades of their lives (see the green shading in each panel representing treatment). Panel (d) of Figure 4 shows the relative risk of advanced adenoma for patients that received aspirin treatment during different decades of their lives. This is calculated at the time-point that is referred as \u2018Relative risk assessment time\u2019 in panel (b), and corresponds to a zero follow up time in this case. The yellow bars correspond to the prediction for individuals treated with a relatively strong dose of aspirin (roughly 6\u201314 pills a week) for 10 years. We have further performed simulations to obtain model predictions pertaining to lower aspirin doses (Table 1), which we referred to as medium (about 6 pills a week, brown bars in Figure 4(d)), and light (less than two pills a week, blue bars in Figure 4(d)).\n\nWe can compare the predicted relative adenoma risk with the data reported in the literature, see e.g. (Chan et al., 2004; Cole et al., 2009; Cao et al., 2016; Drew et al., 2016). In particular, the dose-dependence of colorectal adenoma was studied (Chan et al., 2004), and it was shown that the relative risk for adenoma was 0.80 for women who used 0.5\u20131.5 standard (325 mg) tablets per week, 0.74 for those who used 2\u20135 tablets per week, 0.72 for those who used 6\u201314 tablets per week, and 0.49 for those who used more than 14 tablets per week. Comparing this with the relative advanced adenoma risk plot in Figure 4(d), we can see that the model predictions are consistent with the observed bounds: for the aspirin dose that corresponds to 6\u201314 tablets per week (referred to as high dose, Figure 4(d)), the predicted relative risk ranges between about 0.35 and 0.80, depending on the age when aspirin was administered. Consistently with (Chan et al., 2004), we found that the effect of aspirin decreases with smaller doses, resulting in the relative risk for intermediate doses varying roughly in the 0.6\u20130.9 range (brown bars in Figure 4(d)), while for the light dose it varied in the 0.8\u20130.9 range (blue bars in Figure 4(d)).\n\nNote that in our simulations for different scenarios, we observed remarkable quantitative consistency of results over a very wide range of parameters where uncertainties exist. For example, in Appendix 1\u2014figure 14, we compared two markedly different assumptions on the numbers of type-6 crypts that constitute advanced adenoma at detection (Lang et al., 2020; Sun et al., 2014; Kim et al., 2007; Tsai and Strum, 2011; Jones et al., 2008; Kang and Shibata, 2013; Dewanji et al., 2011), with the results remaining very similar.\n\nWhile in Figure 4(c and d) we assume that aspirin treatment lasts 10 years, in Appendix 1\u2014figure 18 we investigated the effect of a shorter duration of aspirin treatment for the high dose regime and found the relative risk closer to 0.80. One conclusion that follows from this and other simulations (see Appendix 1, section 6) is that the extent of the aspirin-induced reduction in the adenoma risk, resulting from the mechanisms studied here, is consistent with the reported risk reduction at least for a subset of the parameter combinations. Therefore, this mechanism cannot be rejected based on the predicted advanced adenoma incidence reduction.\n\nNext, we examined how changing model assumptions about the effect of aspirin alter these results. While the simulations of Figure 4 assume that both inter- and intra-crypt dynamics are affected by aspirin, Appendix 1\u2014figure 15 only includes aspirin\u2019s effect on intra-crypt dynamics. Under this assumption, even the strongest aspirin dose did not result in the magnitude of the effect reported in Chan et al., 2004: the reduction in advanced adenoma risk was within a few percent only. This suggests that including aspirin\u2019s effect on inter-crypt (fission/death) dynamics is essential to explain the data, which makes intuitive sense because crypt dynamics are thought to be drivers of disease development.\n\nWe also investigated the consequence of the assumption that aspirin only affects the most transformed (type 6) cells (Appendix 1\u2014figure 16), and found that while the effect is reduced compared to the full model of Figure 4, one still observes a significant decrease in advanced adenoma risk. Interestingly, if assessment time follows treatment immediately (zero follow-up time) then there is almost no difference between the prediction of the model where only type 6 is affected compared to that where crypts 2\u20146 are affected (Appendix 1\u2014figure 17). Increasing the follow-up time, however, reveals an increase of the difference between the two model predictions. For example, with a 15 years follow-up time, the model where all types 2\u20146 are affected shows the relative risk of about 0.6, while the model with only type 6 affected yields a relative risk of about 0.8. The reason for this is the lag-phase that exists between the generation of the first type-6 crypt and its growth to detection (which in our simulations takes between about 5 and 11 years).\n\nThere are several further patterns that emerge. We observe that risk reduction clearly depends on the age of the patients when aspirin was administered. As we see in Figure 4(d), the relative risk can be as low as about 0.4 for patients that started treatment at age 20 and assessed at age 30, compared to a more modest reduction to relative risk of 0.8 for patients receiving treatment later in life (see additional discussion below). Further, we will mention that aspirin-induced risk reduction, as predicted by this model, does not disappear even decades after aspirin treatment stopped (Figure 4(b)).\n\nFinally, we comment on another aspect of our model that is different from several other models used in the field (including Luebeck and Moolgavkar, 2002; Meza et al., 2008; Paterson et al., 2020). When predicting the age-incidence curve that results from the microscopic dynamics of selection and mutations, we explicitly included the growth of the most modified crypt type to its detectable size. While stopping the simulations once the first type-6 crypt is produced leads to qualitatively similar results, the inclusion of a relatively slow growth of the adenoma significantly changed numerical values of the fitted parameters. It appears that including this stage in the simulations helps improve the quantitative contribution (rather than a proof-of-principle) of this style of mathematical modeling.\n\n## Discussion\n\nWe used mathematical modeling approaches to test the hypothesis that the changes in tumor cell kinetics observed during aspirin treatment in vitro and in vivo can translate into a protective effect on a population level that is consistent with epidemiological observations for late adenoma. This was done by first constructing a mathematical model of in vivo carcinogenesis describing evolutionary events leading up to the late adenoma stage. This model was then used to calculate expected population incidence as a function of age. Many of the model parameters have recently been estimated experimentally, which provides a solid basis for this modeling effort. Remaining parameters were estimated by fitting the incidence prediction to epidemiological data on late adenoma detection. A linear model that did not include inter-crypt competition was rejected because its best fits corresponded to zero crypt fission rates, and the more (statistically) powerful model was adopted instead, where individual mutated crypts experienced both fission and nonlinear competition dynamics. This parameterized model was used as a basis to explore how changes in the kinetics / fitness of cells, brought about by aspirin, can modify the predicted incidence of late adenomas.\n\nOur previous in vitro and in vivo work (Shimura et al., 2020; Zumwalt et al., 2017) indicated that aspirin reduces the rate of colorectal tumor cell division and increases the rate of tumor cell death in a dose-dependent way, by up to twofold. In the current modeling study, three different experimental aspirin doses (converted to human aspirin intake) were explored, for which we previously measured their effect on the kinetic parameters. The mathematical analysis demonstrated that parameter changes of a magnitude that lies within our experimentally observed range can lead to significant reductions in predicted late adenoma incidence, which are consistent with the epidemiologically observed reductions (ranging between 10\u201350%, Chan et al., 2004). The model identified dose, treatment duration, and the age at which treatment was started as important determinants of protection in this context. We can conclude that the aspirin-induced changes in cellular fitness that we observed experimentally can in principle explain a significant portion of the protective effect observed on the population level.\n\nThis does of course not preclude alternative mechanisms that can further contribute to the protective effect. It is very likely that a reduction in the level of inflammation within the microenvironment of the cells can reduce the incidence of colorectal cancer, because inflammation has been identified as a driver of this disease (Itzkowitz and Yio, 2004). Moreover, other microenvironmental factors, such as the composition of the colorectal microbiome, have been shown to influence the ability of aspirin to reduce tumor growth (Prizment et al., 2020; Brennan et al., 2021; Zhao et al., 2020). This is therefore also likely to play a role in explaining the epidemiological data. Quantification of these further complexities in future work will allow us to introduce these additional aspects into the modeling framework, which would result in a refinement of predictions.\n\nAs with most mathematical modeling studies, there are uncertainties in assumptions that need to be kept in mind. Our experiments (Shimura et al., 2020; Zumwalt et al., 2017) were performed with tumor cell lines, both in vitro and in mouse xenografts. While the xenografts capture a higher degree of biological complexity than in vitro experiments, cellular processes in the human colon are even more complex. Colorectal tissues and tumors are characterized by stronger cell hierarchies than our experimental system, including stem, transit amplifying, and terminally differentiated cells. Our analysis was presented under the assumption that colorectal stem cells initiate and maintain tumor growth. While our experimental system did not specifically focus on stem cells, other studies indicate that the effect of aspirin on the kinetics of stem cells in particular is similar (Chen et al., 2018), thus justifying model assumptions. Another uncertainty concerns the cell type in which the tumor originates, and the exact identity of the cell compartment that maintains tumor growth. While we concentrated our model description around stem cells as the cell of origin that drives disease, the model defines this population as having the ability to self-renew thus maintaining the expansion of the tumor. Hence, this cell population in the model could also correspond to compartments downstream in the differentiation pathway, such as transit amplifying cells, given the marked plasticity within the intestinal epithelium. The model is thus in principle consistent with hypotheses that colorectal cancer might have a different cell of origin (Huels and Sansom, 2015). Interestingly, it has been shown that aspirin had a negative impact on colon organoids derived from non-neoplastic issues, and that aspirin particularly reduced the rapidly cycling transit amplifying cell population (Devall et al., 2021).\n\nAnother point of uncertainty concerns the identity of the cell populations that are affected by aspirin. To address this, we made several assumptions, and results remained robust. We first assumed that aspirin influences all mutated cell populations (type 2\u20136). Results, however, remained fairly similar in an alternative model, where only type 6 cells (characterized by APC-/- and KRAS + mutations) were affected by aspirin, although in this case the effect of aspirin is weaker, which is not surprising given that a smaller cell population loses fitness. More crucial was the assumption that aspirin influences not only the cell dynamics themselves, but also the crypt fission dynamics, reducing the rate at which crypts divide and/or increasing crypt death rate. While this is supported by data (Fischer et al., 2014), further experimental investigation into the exact mechanism by which aspirin affects inter-crypt dynamics is needed to back up our modeling assumptions.\n\nAn important component of all of this work is the underlying mathematical model of in vivo adenoma formation. The assumptions about the genetic events that occur during adenoma formation are consistent with our current understanding of adenoma evolution (Fearon, 2011), and a similar model that also includes evolutionary events beyond adenomas has recently been published (Paterson et al., 2020). While the model description in our and the previously published study (Paterson et al., 2020) was focused on APC-/- and KRAS + mutations as initial events, the same evolutionary dynamics would occur if the identity of mutations were different, as long as the evolutionary pathway involves the inactivation of a tumor suppressor gene and the activation of an oncogene, as specified in the model description.\n\nAn important difference between our and the previous model concerns assumptions about crypt fission dynamics. The previous study (Paterson et al., 2020) assumed that crypt fission can occur without density-dependent effects. Using experimentally available parameter estimates, this model could account for the life-time risk of colorectal cancer. When applying a similar model to late adenoma age incidence data, however, we could not obtain a good fit for the age-incidence curve, and the best fit was in fact obtained in the absence of any crypt fission. In the absence of inter-crypt competition (that is, with unlimited crypt fission), the predicted adenoma incidence rose too sharply with age compared to epidemiological data. When introducing density-dependence into the crypt fission process, however, late adenoma age incidence data could be readily fit, and so we used this model assumption to go forward. Indeed, it is likely that density-dependent effects play a role in crypt fission, because this process is probably influenced by signaling factors that become limiting as the number of crypts increases. It would be important to verify this assumption experimentally in future work.\n\nFinally, it is interesting to discuss the results of the ASPREE trial (McNeil et al., 2018; McNeil et al., 2021) in the context of the work presented here. This trial investigated the effect of aspirin treatment in a cohort of older individuals, 70 years or older without cardiovascular disease, dementia, or disability. It was found that cancer incidence was not significantly changed by aspirin, but that the aspirin-treated group experienced a higher rate of cancer-induced mortality. The absence of a significant effect of aspirin on cancer incidence in this study is consistent with our model predictions. Our mathematical analysis demonstrated that the effect of aspirin treatment on cancer incidence diminished when treatment was initiated in older ages. Our modeling approach, however, cannot make predictions about cancer-induced mortality, because it describes the evolutionary process up to the stage of advanced adenoma only. Our previous work (Wodarz et al., 2017), however, offers an interpretation of these data. Because of their advanced age, it is likely that a certain fraction of the ASPREE participants already harbored tumors that had not been detected yet due to the absence of overt clinical symptoms. In fact, a previous history of cancer was not an exclusion criterion in the trial. As the established tumors continue to grow during aspirin treatment, they likely do so with altered kinetics (reduced division rates and increased death rates, leading to a higher turnover). This means that by the time the tumor has reached a given size (e.g. at which it becomes clinically detectable), it will have undergone more cell divisions under aspirin treatment compared to the placebo group. Hence, the tumor will on average have accumulated more mutations once this detectable tumor size is reached. This in turn means that the aspirin-treated tumor might be more virulent and less responsive to therapies, resulting in more deaths. The theoretically derived notion that upon detection, an aspirin-treated tumor is more evolved than a tumor that grows without aspirin (Wodarz et al., 2017) is supported by the ASPREE analysis, which found that aspirin-treated patients were more likely to have metastasized cancers and stage 4 cancers compared to the placebo group (McNeil et al., 2018; McNeil et al., 2021).\n\nIn conclusion, this modeling analysis suggests that a direct impact of aspirin on the kinetics and fitness of mutated cells can significantly reduce the incidence of colorectal adenomas, with a magnitude that is consistent with epidemiological data. This highlights the importance of investigating this effect of aspirin experimentally in more detail, especially under experimental conditions that approximate cell dynamics in the human colorectal tissue with greater accuracy.\n\n## Materials and methods\n\n### The adenoma incidence data\n\nIn order to study the incidence of advanced adenoma, we used the data reported in Brenner et al., 2014 for the age-ranges 55\u201359, 60\u201364, 65\u201369, 70\u201374, and 75\u201379. While this study provides incidence data for nonadvanced adenoma, advanced adenoma, and colorectal cancer (CRC), we focused only on the combined incidence of advanced adenoma and cancer. This assumes that individuals that have developed CRC have most likely already developed an advanced adenoma by the age of testing, and further that nonadvanced adenoma likely refers to fewer mutational steps compared to our type 6, where both the APC gene is fully inactivated and the KRAS gene is mutated. The paper reports data separately for males and females; for our purposes we combined the two values to study the average, since the model is not sufficiently detailed to distinguish between the sexes.\n\n### Mathematical modeling\n\nThe mathematical model describes stochastic dynamics of colonic crypts. There are six types of crypts that are included in the model, which differ by their mutational status. The number of crypts of each type is denoted by ni, where i = 1 corresponds to the wild-type crypts, i = 2 to type APC+/-, i = 3 to APC-/-, i = 4 to KRAS+, i = 5 to KRAS+APC+/-, and i = 6 to KRAS+APC-/- (the most modified type associated with advanced adenoma). The model contains the processes of crypt conversion (whereby a mutation in a stem cell can fixate in a given crypt thus changing its mutational status), as well as crypt fission/death processes. Inter-crypt competition is included by way of nonlinear (logistic) terms. Given the initial condition (wild-type crypts only) and model parameters, the model outputs the probability to observe, by time t, a specified population of type-6 crypts (n6 = N), which is assumed to be associated with advanced adenoma detection. This represents a numerically generated age-incidence curve. The expected behavior was described by a system of ordinary differential equations (ODEs), and the prediction was fitted to the advanced adenoma incidence reported in Brenner et al., 2014. While the model was parameterized by using the rates found in literature and describing the kinetics in humans, a subset of parameters are unknown (or only their ranges are known); these parameters were estimated by the fitting procedure.\n\nUsing the parameterized model that is consistent with the advanced adenoma incidence, we incorporated the effect of aspirin by adjusting the kinetic parameters of cells (division and death rates of cells, which describes the effect of aspirin on intra-crypt dynamics), as well as kinetic rates of crypts (crypt fission and death rates, which describes the effect of aspirin on inter-crypt dynamics). This was done by using experimentally measured factors. Fully stochastic (Gillespie) simulations were used to quantify the predicted advanced adenoma incidence curves for patients that used different doses and durations of aspirin treatment. For further details of the modeling, see Appendix 1.\n",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "745c77e7-36bc-4d5f-a99c-ee2af72fc325",
+      "submission_id": "c8958fa5-bad0-4565-9b0d-b203bcea564b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Christopher S Williams, https://ror.org/02vm5rt34 Vanderbilt University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.71953.sa0](https://doi.org/10.7554/eLife.71953.sa0)\n\nThis work develops a multistage/component mathematical model to analyze advanced colorectal adenomas and the impact that aspirin therapy has on adenoma formation rates. This study will be interesting to the cancer evolution community and in particular those interested in colorectal cancer incidence. While the model is mainly focused on aspirin chemoprevention, the model could be adapted to test other putative preventative agents, and thus could have a broad impact.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Christopher S Williams, https://ror.org/02vm5rt34 Vanderbilt University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.71953.sa1](https://doi.org/10.7554/eLife.71953.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"The protective effect of aspirin in colorectal carcinogenesis: a multiscale computational study from mutant evolution to age incidence\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: E Georg Luebeck (Reviewer #2); Andrew Chan (Reviewer #3).\n\nAs is customary in eLife, the reviewers have discussed their critiques with one another. What follows below is the Reviewing Editor's edited compilation of the essential and ancillary points provided by reviewers in their critiques and in their interaction post-review. Please submit a revised version that addresses these concerns directly. Although we expect that you will address these comments in your response letter, we also need to see the corresponding revision clearly marked in the text of the manuscript. Some of the reviewers' comments may seem to be simple queries or challenges that do not prompt revisions to the text. Please keep in mind, however, that readers may have the same perspective as the reviewers. Therefore, it is essential that you attempt to amend or expand the text to clarify the narrative accordingly.\n\nEssential revisions:\n\n1)) Overall, the manuscript would benefit from a more precise explanation of the assumptions used in the models presented. This would include a more clear discussion/rationalization of advanced adenoma, adenoma classification, and how aspirins effect was implemented at the crypt level (see first reviewers comments)\n\n2) There needs to be increased justification (or modification of the model) for why the assumption of zero crypt death/fusion.\n\n3) Several reviewers mention limitations/concerns with the reliance on mutant KRAS (i.e. lack of determining KRAS status in adenomas/cancers, lack of APC/KRAS mutational status in predicting aspirin response and that the effect estimates are based on preclinical work using relatively high doses of aspirin. Please address these concerns in the manuscript and in response.\n\n4) Addressing the concern from reviewer #3 regarding the assumption that the cell of origin for CRC is an ISC as opposed to more recent theories suggesting alternative origins and suggestions on expanding the discussion to include more recent literature on age-differences in aspirins effects on CRC.\n\nReviewer #1 (Recommendations for the authors):\n\nIn addition to the points raised in the public review, I have the following comments:\n\nIt is unclear to me why the effect of reducing the fitness of type 6 is done through reducing the rates of mutation to type 6 (R36 and R56). What is the justification for that?\n\nFor the scenario when aspirin reduces gamma3 and gamma4, why does it also not reduce gamma5?\n\nIt would also be important to discuss more precisely (i.e. by referring to specific mathematical models) how the findings that aspirin changes division and death rates in cell culture, where there is no tissue hierarchy, translates to the in vivo setting, where the effects of aspirin may be felt by crypts, stem cells or progenitor cells.\n\nReviewer #3 (Recommendations for the authors):\n\nI read the manuscript with great interest and was pleased to see that the authors took care to acknowledge the limitations and clearly explain the base assumptions used in their approach. The manuscript is well-written and there are only minimal additions that may improve the manuscript.\n\n\u2013 Unless I have misunderstood, the basic model allows us to understand the probability of developing APC and/or KRAS mutant adenomas (and using this as a relative measure of the 'advanced' nature of the in silico 'neoplasm'). I appreciated the discussion relative to the formation of aberrant crypts vs. adenomas vs. more advanced precancers. However, it seems that everything operates on the basic premise that an intestinal stem cell must be the tumor cell of origin and that aspirin is having specific effects on these cells. This assumption may be too much an oversimplification to allow the model to have broad reaching applicability. For example, recent work has begun to describe that the tumor cell of origin may not be the classical intestinal stem cell in all CRC cases, especially with advancing age or under different dietary stressors, and separately in parallel, that aspirin may have effects on cell differentiation/states (e.g. Devall et al. Cancer Prev Res 2021), mechanism may be cell-context specific, or be significantly impacted by epithelial cell extrinsic factors not included in the model (e.g. gut microbiome, see A. Prizment et al. Aliment Pharmacol Ther 2020; C. Brennan et al. mBio 2020; R Zhao et al. Gastro 2020) While the authors do describe that these assumptions may be limiting, I think prudent for the authors to discuss the specific impacts of the assumption that aspirin has a direct effect on intestinal stem cells being tumor cell of origin has on model interpretation. How would estimates be potentially influenced if intestinal stem cells were not the target cell or aspirin only had effects in specific cell types or by cell extrinsic factors? What do these assumptions have on the broader generalizability of this model? Can the authors expand on how this may be expected to be accounted for in the future? What additional information or type of data is needed from clinical and preclinical experiments to allow for more accurate biological modeling of these complex interplays? The last question is particularly important to understand the broader impact of these findings and if the models have to potential to more directly inform future research.\n\n\u2013 Similarly, I think more discussion could be owed to the emerging literature around the intersection of age-differences and aspirin mechanism, especially in light of the recent results from the ASPREE trial that described an increase in cancer death as a result of aspirin intervention among adults over age 70. Is it possible to model the timing of aspirin intervention using this model, particularly in view of the probability differences arising from differential mutational priming outcomes (APC-/- vs. APC -/+ vs. KRAS+, etc.). The ASPREE results demonstrated that the increase in cancer mortality was not driven by a change in cancer incidence and I wonder if the authors can try to model these effects or at least discuss how the model findings should be interpreted in view of these recent results from trials.\n\n\u2013 The manuscript primarily discusses the CAPP2 trial as the evidence supporting aspirin chemoprevention of colorectal cancers. Although this obviously has clear implications for placing the results in the context of prevention of CRCs in Lynch syndrome, these tumors are neither sporadic, nor arise via the pathways included in the model. The authors could broaden the background to include the preponderance of evidence for the preventive effects in sporadic cases (or even FAP patients which are known to have APC mutant cancers) where aspirin has had less of a potent chemopreventive effect than in Lynch syndrome. However, these data are relevant to the most extreme phenotype in their model.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Aspirin's effect on kinetic parameters of cells contributes to its role in reducing the incidence of advanced colorectal adenomas, shown by a multiscale computational study\" for further consideration by eLife. Your revised article has been evaluated by the reviewers and by the Editors.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nReviewer #1 (Recommendations for the authors):\n\nThe authors have carefully addressed previous concerns, and I am satisfied with the revision.\n\nReviewer #2 (Recommendations for the authors):\n\nThe revised manuscript has gained considerably in strength and, by in large, clarifies the main points raised by the reviewers. I appreciate the extra work that went into refining/extending the model analysis, in particular the addition of a growth phase for the type 6 (advanced) adenoma.\n\nTwo lingering points. I hope they can be addressed.\n\n1. Please clarify whether the size distribution provided for type 3 (APC-/-) adenoma in Figure Appendix 1 Figure 12 and 13 refer to the particular type 3 adenoma (clone) in which the advanced adenoma first developed or to the entire population of type 3 adenomas in the colon. I think the authors should point out that their ODE model does NOT distinguish individual clones of abnormal crypts (ie individual adenomas). This is a limitation since detectable adenoma number of any kind (other than hyperplastics) is an important clinical factor.\n\n2. I understand the authors' point about postulating other potential gain-of-function mutations, similar to KRAS, such as BRAF. However, BRAF is a poor example as it is associated strongly with mismatch repair deficiency and SSAs, leading frequently to hypermutated cancers. While there may be other yet unidentified gain-of-function drivers for the advanced adenoma, there may also simply none required given the epigenetic plasticity and adaptive epigenetic changes as adenomas sojourn for years. In any case, the mention of BRAF is somewhat misleading in the context defined by the authors.\n\nReviewer #3 (Recommendations for the authors):\n\nThank you for a very complete response. The manuscript is excellent!\n",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7ec80d17-5a67-481d-b8e3-76cc546d8908",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C1",
+      "claim": "Aspirin intake leads to an up to twofold reduction in colorectal adenoma incidence rates at higher doses.",
+      "claim_type": "EXPLICIT",
+      "source": "Aspirin intake has been shown to lead to significant protection against colorectal cancer, for example with an up to twofold reduction in colorectal adenoma incidence rates at higher doses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the abstract and is supported by references to epidemiological studies throughout the manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "d8c8d925-83e3-4acc-8a0f-c55e70ea5355",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C2",
+      "claim": "Aspirin reduces the rate of tumor cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "in vitro and in vivo experiments have recently shown that aspirin can also have a direct effect on cellular kinetics and fitness. It reduces the rate of tumor cell division and increases the rate of cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the authors' previous experimental work cited in the manuscript (Shimura et al., 2020; Zumwalt et al., 2017).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "eb1697ab-5752-4ede-8b7e-8d1f9f15000b",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C3",
+      "claim": "Aspirin increases the rate of cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "in vitro and in vivo experiments have recently shown that aspirin can also have a direct effect on cellular kinetics and fitness. It reduces the rate of tumor cell division and increases the rate of cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the authors' previous experimental work cited in the manuscript (Shimura et al., 2020; Zumwalt et al., 2017).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "3d5a434c-e818-4fa7-b6d1-40701c7a754f",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C4",
+      "claim": "Only a model that included colonic crypt competition can account for the observed age-incidence curve.",
+      "claim_type": "EXPLICIT",
+      "source": "Fitting the predictions to age incidence data revealed that only a model that included colonic crypt competition can account for the observed age-incidence curve.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through mathematical modeling and fitting to epidemiological data as shown in the Results section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "fc4364c7-a2b1-473f-a5a4-f4eefaf06aa4",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C5",
+      "claim": "Changes in cellular fitness within experimentally observed ranges could reduce advanced adenoma incidence by a sufficient amount to account for age incidence data in aspirin-treated patient cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that changes in cellular fitness that were within the experimentally observed ranges could reduce advanced adenoma incidence by a sufficient amount to account for age incidence data in aspirin-treated patient cohorts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through computational modeling using experimentally measured parameters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "ba743a03-1a15-442d-b891-5212d29f86e9",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C6",
+      "claim": "Colorectal cancer currently affects about 5% of the population in the USA.",
+      "claim_type": "EXPLICIT",
+      "source": "Colorectal cancer currently affects about 5% of the population in the USA and is a major cause of cancer-related deaths (Siegel et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Siegel et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "9cabb9ca-986f-4ac4-ad28-07eb3328afee",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C7",
+      "claim": "Aspirin is a non-steroidal anti-inflammatory drug (NSAID) and is a cyclo-oxygenase (COX)\u20132 inhibitor.",
+      "claim_type": "EXPLICIT",
+      "source": "Aspirin is a non-steroidal anti-inflammatory drug (NSAID) and is a cyclo-oxygenase (COX)\u20132 inhibitor (Goel et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "22bf0018-bc97-4446-b34a-ef236c981ad8",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C8",
+      "claim": "The CAPP2 trial demonstrated that the intake of 600 mg of aspirin per day for 2 years resulted in a 63% reduction in colorectal cancer incidence in Lynch Syndrome patients.",
+      "claim_type": "EXPLICIT",
+      "source": "The CAPP2 trial Burn et al., 2011 demonstrated that the intake of 600 mg of aspirin per day for 2 years resulted in a 63% reduction in colorectal cancer incidence in Lynch Syndrome patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from the CAPP2 trial cited in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "d19690ef-e18c-4060-b928-0c487fcf7cd7",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C9",
+      "claim": "Observation of the protective effect of aspirin required a follow-up time of more than 55 months.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, observation of the protective effect of aspirin required a follow-up time of more than 55 months (Burn et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reported from the CAPP2 trial.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "1ad0b45c-00b4-4332-839a-2e61500feb8d",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C10",
+      "claim": "Studies report a reduction in cancer or adenoma incidence of the order of 10\u201350% in aspirin-treated compared to placebo groups, depending on the exact dose and frequency of aspirin intake.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies report a reduction in cancer or adenoma incidence of the order of 10\u201350% in aspirin-treated compared to placebo groups, depending on the exact dose and frequency of aspirin intake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from multiple studies cited in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "932ab974-2994-477a-85f8-8979eabdadd2",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C11",
+      "claim": "Inflammation is a possible driver of colorectal carcinogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Inflammation is a possible driver of colorectal carcinogenesis (Itzkowitz and Yio, 2004), and aspirin can reduce the extent of inflammation in the cellular microenvironment, which might contribute to a reduced development of disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Itzkowitz and Yio, 2004.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "cbfdceab-6717-4bd6-8d9c-ca64fa682163",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C12",
+      "claim": "Aspirin can reduce the extent of inflammation in the cellular microenvironment, which might contribute to a reduced development of disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Inflammation is a possible driver of colorectal carcinogenesis (Itzkowitz and Yio, 2004), and aspirin can reduce the extent of inflammation in the cellular microenvironment, which might contribute to a reduced development of disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic hypothesis supported by the anti-inflammatory properties of aspirin.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "37efdf50-3ced-48db-a7e4-08a2acbed379",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C13",
+      "claim": "The composition of the colorectal microbiome determines the degree of protection provided by aspirin.",
+      "claim_type": "EXPLICIT",
+      "source": "Other microenvironmental effects, such as the composition of the colorectal microbiome (Prizment et al., 2020; Brennan et al., 2021; Zhao et al., 2020), have also been shown to determine the degree of protection provided by aspirin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent studies on the microbiome and aspirin.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "018d8fb3-cf36-4c20-8777-9440a3ad88e9",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C14",
+      "claim": "Physiologically relevant aspirin concentrations can have a direct effect on tumor cells, reducing their rate of proliferation and increasing their death rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous in vitro and in vivo work, however, has shown that physiologically relevant aspirin concentrations can have a direct effect on tumor cells, reducing their rate of proliferation and increasing their death rate (Shimura et al., 2020; Zumwalt et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' own experimental work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "e1301814-1f68-4fb4-bd69-f8293caf89fd",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C15",
+      "claim": "Aspirin can lead to a lower probability that newly generated tumor cells successfully give rise to clonal expansion, thus increasing the likelihood that these initially transformed cells go extinct.",
+      "claim_type": "EXPLICIT",
+      "source": "This not only results in reduced tumor growth, but can also lead to a lower probability that newly generated tumor cells successfully give rise to clonal expansion, thus increasing the likelihood that these initially transformed cells go extinct (Wodarz et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction from previous modeling work by the authors.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "dc657eca-2ccc-4a86-84ae-b63204d8bf64",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C16",
+      "claim": "The model assumes two early molecular events: an inactivation of the APC gene and an activation of the KRAS oncogene.",
+      "claim_type": "EXPLICIT",
+      "source": "There are two early molecular events that we postulate (without assuming their temporal order): (1) An inactivation of the APC gene, or a related event that affects the functioning of the beta-catenin/WNT signaling pathway, and (2) an activation of the KRAS oncogene (or another gain-of-function mutation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explicit assumption of the mathematical model.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "fca48e89-2c9f-4f80-b8b3-e1b6f3223ac4",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C17",
+      "claim": "The inactivation of the APC tumor suppressor gene requires two molecular events, corresponding to the inactivation of the two copies of the gene.",
+      "claim_type": "EXPLICIT",
+      "source": "The inactivation of the APC tumor suppressor gene is a classic example of a loss-of-function mutation, which implies two molecular events, corresponding to the inactivation of the two copies of the gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about tumor suppressor genes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "28f2bf73-f531-485d-bdf4-40094e66e79e",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C18",
+      "claim": "The mutation rate for APC inactivation is assumed to be u = 10\u20137 per cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "The associated mutation rate is therefore assumed to be u = 10\u20137 per cell division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a parameter assumption based on literature values.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "51bd7aab-b5c3-45e4-b75a-95d71d762d9c",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C19",
+      "claim": "The mutation rate for KRAS activation is about two orders of magnitude lower than APC inactivation (\u03bc = 10\u20139 per cell division).",
+      "claim_type": "EXPLICIT",
+      "source": "The activation of the KRAS oncogene, on the other hand, is a gain-of-function event, whose mutation rate is about two orders of magnitude lower (\u03bc = 10\u20139 per cell division).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a parameter assumption based on literature values.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "14f5d08d-4c5c-4cfe-a3e6-976b1fb6929e",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C20",
+      "claim": "The presence of the APC-/- genotype has been related to the appearance of early adenomas.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of the APC-/- genotype has been related to the appearance of early adenomas (type 3) (Armaghany et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Armaghany et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "109915c4-1ead-431d-8bc2-8587ca3cfdc0",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C21",
+      "claim": "Cells that have not inactivated APC but are characterized by KRAS activation have been linked to aberrant crypt foci.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells that have not inactivated APC but are characterized by KRAS activation (types 4 and 5) have been linked to aberrant crypt foci (Pretlow and Pretlow, 2005; Jass, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Pretlow and Pretlow, 2005 and Jass, 2006.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "dd826632-abf0-442b-a5ee-529d1484358c",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C22",
+      "claim": "The combination of APC-/- and KRAS+ mutations is thought to correlate with the growth of advanced adenomas.",
+      "claim_type": "EXPLICIT",
+      "source": "The combination of both types of mutations (type 6) is thought to correlate with the growth of advanced adenomas (Armaghany et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Armaghany et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "5c1bdca5-d46a-450c-8ffd-755bef32d3da",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C23",
+      "claim": "Among non-hypermutated colorectal tumors, KRAS was mutated in only about 43% of patient samples.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, it has been reported that among non-hypermutated colorectal tumors, KRAS was mutated in only about 43% of patient samples (Network, 2012), indicating the importance of a variety of evolutionary pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from The Cancer Genome Atlas Network study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "fbc07e44-47b2-49ed-ad4d-9f479dfcefbe",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C24",
+      "claim": "A linear model that did not include inter-crypt competition was rejected because its best fits corresponded to zero crypt fission rates.",
+      "claim_type": "EXPLICIT",
+      "source": "We first attempted to fit the model in the absence of crypt competition (KR = KA = \u221e), by varying the SC division rate within the physiological range and finding the best fitting value for crypt fission rates. The best fitting parameter combinations always corresponded to zero crypt fission rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model fitting procedure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "fdf22ffd-fb8a-4bc2-82f7-c1c41f5ff931",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C25",
+      "claim": "Non-zero crypt fission rates resulted in a much steeper rise in the adenoma incidence compared to that reported in Brenner et al., 2014.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-zero crypt fission rates resulted in a much steeper rise in the adenoma incidence compared to that reported in Brenner et al., 2014.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from comparing model predictions to epidemiological data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "0b512684-e5b4-40d0-ad57-e26a65eed52a",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C26",
+      "claim": "Including crypt competition in the model resolved the issue of unrealistically steep rise in incidence.",
+      "claim_type": "EXPLICIT",
+      "source": "Including crypt competition in the model has resolved this issue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through model fitting results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "cf476fcf-6292-4840-ac2b-700d4af3a463",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C27",
+      "claim": "For the model that includes crypt competition, it was possible to find nearly equally good fits for a range of biologically plausible parameter values.",
+      "claim_type": "EXPLICIT",
+      "source": "For the model that includes crypt competition, it was possible to find nearly equally good fits for a range of biologically plausible parameter values, see Figure 2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 2 showing fitting results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "8a983bfd-8609-4e64-99e0-e62e5f5b4394",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C28",
+      "claim": "The likelihood of the APC pathway versus KRAS pathway is determined by the crypt fission rates, and not by mutation rates or crypt conversion rates.",
+      "claim_type": "EXPLICIT",
+      "source": "We found, consistent with (Paterson et al., 2020), that the likelihood of each of these two pathways is determined by the crypt fission rates, and not by mutation rates or crypt conversion rates (Figure 3(d)); in addition, it is sensitive of the carrying capacity parameters, KA and KR.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through model analysis and shown in Figure 3(d).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "9c93b5a9-9934-4710-96f7-20a00c6f4952",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C29",
+      "claim": "For the biologically relevant parameter group where the carrying capacity associated with type 3 (APC-/-,KRAS-) is larger, the pathway through the inactivation of the APC gene is predominant.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe that for the biologically relevant group where the carrying capacity associated with type 3 (APC-/-,KRAS-) is larger, the pathway through the inactivation of the APC gene is predominant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3(c) and is consistent with findings from Paterson et al., 2020.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "f9b6a582-e516-4e38-b611-0e8e472ff93f",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C30",
+      "claim": "In the model, the number of type 3 (APC-/-,KRAS-) crypts is in the hundreds while type 5 (APC-/+,KRAS+) crypts are relatively rare.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe that in the model, the number of type 3 (APC-/-,KRAS-) crypts is in the hundreds while type 5 (APC-/+,KRAS+) crypts are relatively rare.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Appendix 1\u2014figures 12 and 13.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "2fee0940-25a9-4591-abde-88e970aae7a5",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C31",
+      "claim": "Sulindac inhibited the fission of APC-deficient crypts and thus reduced adenoma numbers in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In other work, it has also been demonstrated that a related non-steroidal anti-inflammatory drug, sulindac, inhibited the fission of APC-deficient crypts and thus reduced adenoma numbers in mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Fischer et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "75777e67-83a3-42b6-9381-8f99138f3270",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C32",
+      "claim": "The model predictions are consistent with the observed bounds: for the aspirin dose that corresponds to 6\u201314 tablets per week, the predicted relative risk ranges between about 0.35 and 0.80, depending on the age when aspirin was administered.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing this with the relative advanced adenoma risk plot in Figure 4(d), we can see that the model predictions are consistent with the observed bounds: for the aspirin dose that corresponds to 6\u201314 tablets per week (referred to as high dose, Figure 4(d)), the predicted relative risk ranges between about 0.35 and 0.80, depending on the age when aspirin was administered.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by comparing model predictions in Figure 4(d) with data from Chan et al., 2004.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "68d2b393-c596-49b5-980b-97e986557a26",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C33",
+      "claim": "The effect of aspirin decreases with smaller doses, resulting in the relative risk for intermediate doses varying roughly in the 0.6\u20130.9 range.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently with (Chan et al., 2004), we found that the effect of aspirin decreases with smaller doses, resulting in the relative risk for intermediate doses varying roughly in the 0.6\u20130.9 range (brown bars in Figure 4(d)), while for the light dose it varied in the 0.8\u20130.9 range (blue bars in Figure 4(d)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4(d) and is consistent with Chan et al., 2004.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "175668ee-6ff6-4c57-b274-80b1cc3d1bd3",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C34",
+      "claim": "Including aspirin's effect on inter-crypt (fission/death) dynamics is essential to explain the data.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that including aspirin's effect on inter-crypt (fission/death) dynamics is essential to explain the data, which makes intuitive sense because crypt dynamics are thought to be drivers of disease development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Appendix 1\u2014figure 15 where only intra-crypt effects resulted in minimal risk reduction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "c533ae66-0498-4a1f-b858-40ffd0fbb8c8",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C35",
+      "claim": "Risk reduction clearly depends on the age of the patients when aspirin was administered.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe that risk reduction clearly depends on the age of the patients when aspirin was administered. As we see in Figure 4(d), the relative risk can be as low as about 0.4 for patients that started treatment at age 20 and assessed at age 30, compared to a more modest reduction to relative risk of 0.8 for patients receiving treatment later in life",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4(d).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "fedaa661-3241-420d-af13-b746710c26b3",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C36",
+      "claim": "Aspirin-induced risk reduction, as predicted by this model, does not disappear even decades after aspirin treatment stopped.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we will mention that aspirin-induced risk reduction, as predicted by this model, does not disappear even decades after aspirin treatment stopped (Figure 4(b)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prediction from the model simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "9fff2bdc-d2d6-426f-a66f-b3534d03a0b0",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C37",
+      "claim": "The inclusion of a relatively slow growth of the adenoma significantly changed numerical values of the fitted parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "While stopping the simulations once the first type-6 crypt is produced leads to qualitatively similar results, the inclusion of a relatively slow growth of the adenoma significantly changed numerical values of the fitted parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from comparing different modeling approaches.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "b11c81eb-a224-45b3-8c12-450e2c2c33e9",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C38",
+      "claim": "Changes in cellular fitness that were within the experimentally observed ranges can lead to significant reductions in predicted late adenoma incidence, which are consistent with the epidemiologically observed reductions (ranging between 10\u201350%).",
+      "claim_type": "EXPLICIT",
+      "source": "The mathematical analysis demonstrated that parameter changes of a magnitude that lies within our experimentally observed range can lead to significant reductions in predicted late adenoma incidence, which are consistent with the epidemiologically observed reductions (ranging between 10\u201350%, Chan et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion from the modeling study comparing predictions to epidemiological data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "ee358b36-a707-41ca-a32e-5f695bc51fa8",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C39",
+      "claim": "The aspirin-induced changes in cellular fitness that were observed experimentally can in principle explain a significant portion of the protective effect observed on the population level.",
+      "claim_type": "EXPLICIT",
+      "source": "We can conclude that the aspirin-induced changes in cellular fitness that we observed experimentally can in principle explain a significant portion of the protective effect observed on the population level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion from the study based on model predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "563ee0f2-386f-483d-98d8-0a33a762fb2a",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C40",
+      "claim": "The ASPREE trial found that cancer incidence was not significantly changed by aspirin in a cohort of older individuals (70 years or older).",
+      "claim_type": "EXPLICIT",
+      "source": "This trial investigated the effect of aspirin treatment in a cohort of older individuals, 70 years or older without cardiovascular disease, dementia, or disability. It was found that cancer incidence was not significantly changed by aspirin, but that the aspirin-treated group experienced a higher rate of cancer-induced mortality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reported from the ASPREE trial (McNeil et al., 2018; McNeil et al., 2021).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "7fb3dd83-72eb-4482-b0f3-13075f8a3f7b",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C41",
+      "claim": "The ASPREE trial found that the aspirin-treated group experienced a higher rate of cancer-induced mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "It was found that cancer incidence was not significantly changed by aspirin, but that the aspirin-treated group experienced a higher rate of cancer-induced mortality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reported from the ASPREE trial (McNeil et al., 2018; McNeil et al., 2021).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "ec9446ad-aaba-4df8-9cd2-a50c316cd90e",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C42",
+      "claim": "The absence of a significant effect of aspirin on cancer incidence in the ASPREE study is consistent with the model predictions that the effect of aspirin treatment on cancer incidence diminished when treatment was initiated in older ages.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of a significant effect of aspirin on cancer incidence in this study is consistent with our model predictions. Our mathematical analysis demonstrated that the effect of aspirin treatment on cancer incidence diminished when treatment was initiated in older ages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the ASPREE results in light of the model predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "4e0daf56-c45a-4024-b988-6282c6b13476",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C43",
+      "claim": "By the time the tumor has reached a given size, it will have undergone more cell divisions under aspirin treatment compared to the placebo group.",
+      "claim_type": "EXPLICIT",
+      "source": "As the established tumors continue to grow during aspirin treatment, they likely do so with altered kinetics (reduced division rates and increased death rates, leading to a higher turnover). This means that by the time the tumor has reached a given size (e.g. at which it becomes clinically detectable), it will have undergone more cell divisions under aspirin treatment compared to the placebo group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction based on the kinetic effects of aspirin.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "0d7fe53c-6e71-4398-853a-4540ef245428",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C44",
+      "claim": "The aspirin-treated tumor might be more virulent and less responsive to therapies, resulting in more deaths.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the tumor will on average have accumulated more mutations once this detectable tumor size is reached. This in turn means that the aspirin-treated tumor might be more virulent and less responsive to therapies, resulting in more deaths.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the ASPREE mortality findings based on theoretical reasoning.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "9e77a4df-1551-4fc2-bc09-d29a84f28749",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C45",
+      "claim": "Upon detection, an aspirin-treated tumor is more evolved than a tumor that grows without aspirin.",
+      "claim_type": "EXPLICIT",
+      "source": "The theoretically derived notion that upon detection, an aspirin-treated tumor is more evolved than a tumor that grows without aspirin (Wodarz et al., 2017) is supported by the ASPREE analysis, which found that aspirin-treated patients were more likely to have metastasized cancers and stage 4 cancers compared to the placebo group (McNeil et al., 2018; McNeil et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This theoretical prediction from Wodarz et al., 2017 is supported by findings from the ASPREE trial.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "b2c70fa6-fa74-47e1-ad2c-59de18d9991e",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C46",
+      "claim": "ASPREE analysis found that aspirin-treated patients were more likely to have metastasized cancers and stage 4 cancers compared to the placebo group.",
+      "claim_type": "EXPLICIT",
+      "source": "The theoretically derived notion that upon detection, an aspirin-treated tumor is more evolved than a tumor that grows without aspirin (Wodarz et al., 2017) is supported by the ASPREE analysis, which found that aspirin-treated patients were more likely to have metastasized cancers and stage 4 cancers compared to the placebo group (McNeil et al., 2018; McNeil et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the ASPREE trial analysis.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "f22a72b2-2c19-4b49-831e-79b42d84c00c",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C47",
+      "claim": "The model contains six different cell populations, denoted as types 1 through 6.",
+      "claim_type": "EXPLICIT",
+      "source": "The associated selection-mutation diagram is shown in Figure 1 and contains six different cell populations, denoted as types 1 through 6.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "504bcb2b-ee0e-4698-ae70-a33524fd6dfd",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C48",
+      "claim": "The populations occupying the top row (types 1\u20133) are characterized by an unmutated KRAS oncogene.",
+      "claim_type": "EXPLICIT",
+      "source": "The populations occupying the top row (types 1\u20133) are characterized by an unmutated KRAS oncogene; the populations of the bottom row (types 4\u20136) all have the KRAS mutation activated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the model definition shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "e46a2681-008e-49f5-a41d-c497f092dd8d",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C49",
+      "claim": "The populations of the bottom row (types 4\u20136) all have the KRAS mutation activated.",
+      "claim_type": "EXPLICIT",
+      "source": "The populations occupying the top row (types 1\u20133) are characterized by an unmutated KRAS oncogene; the populations of the bottom row (types 4\u20136) all have the KRAS mutation activated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the model definition shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "467904b5-82ca-46a3-9785-df21a6f9379d",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C50",
+      "claim": "Moving from left to right on the diagram, the number of inactivated copies of the APC gene increases from 0 to 2.",
+      "claim_type": "EXPLICIT",
+      "source": "Moving from left to right on this diagram, the number of inactivated copies of the APC gene increases from 0 to 2, such that populations of types 1 and 4 are APC+/+, populations of types 2 and 5 are both APC+/-, and populations of types 3 and 6 are APC-/-.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the model definition shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "a1a04ccc-c41b-427c-9e4f-10292c12a371",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C51",
+      "claim": "The model assumes flexibility regarding the order with which the different mutations can occur.",
+      "claim_type": "EXPLICIT",
+      "source": "As in the previous study (Paterson et al., 2020), we assume flexibility regarding the order with which the different mutations can occur. Hence, it is assumed that the initial mutation can occur either in APC or in KRAS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explicit assumption of the model.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "c7680f84-7aa4-47b7-aa9f-62cb86a960cb",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C52",
+      "claim": "Some studies indicate that an initial mutation in KRAS leads to the formation of non-dysplastic polyps, which could represent an evolutionary dead end for neoplasias.",
+      "claim_type": "EXPLICIT",
+      "source": "Some studies indicate that an initial mutation in KRAS leads to the formation of non-dysplastic polyps, which could represent an evolutionary dead end for neoplasias (Jen et al., 1994; Chan et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Jen et al., 1994 and Chan et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "445c9cb0-7b68-478d-9959-d1696768d488",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C53",
+      "claim": "It has been suggested that an initial KRAS mutation might be able to drive the initiation of colorectal carcinogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, it has been suggested that an initial KRAS mutation might be able to drive the initiation of colorectal carcinogenesis (Jass, 2006; Pretlow and Pretlow, 2005), based on mutation frequencies in aberrant crypt foci and adenomas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Jass, 2006 and Pretlow and Pretlow, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "f698b470-d951-478c-a710-0698805c2cb7",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C54",
+      "claim": "The model uses a colonic crypt as a basic unit.",
+      "claim_type": "EXPLICIT",
+      "source": "We model the population dynamics of the colon by using a colonic crypt as a basic unit, which is similar in concept to recently published work (Paterson et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explicit modeling assumption.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "967379b9-a6fb-4000-a966-d9e294672e22",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C55",
+      "claim": "There are very few stem cells per crypt.",
+      "claim_type": "EXPLICIT",
+      "source": "Once it was discovered that there were very few stem cells per crypt (Nicholson et al., 2018; Humphries and Wright, 2008), it became clear that the evolutionary dynamics can be conveniently described at the level of crypts, because crypts are likely to be homogeneous with respect to the driver mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Nicholson et al., 2018 and Humphries and Wright, 2008.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "cd54cb91-8c55-44ed-a122-bf887a34caeb",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C56",
+      "claim": "Crypts are likely to be homogeneous with respect to the driver mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Once it was discovered that there were very few stem cells per crypt (Nicholson et al., 2018; Humphries and Wright, 2008), it became clear that the evolutionary dynamics can be conveniently described at the level of crypts, because crypts are likely to be homogeneous with respect to the driver mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the small number of stem cells per crypt.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "3a7e2a43-0428-49c1-9246-28fd0c96e733",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C57",
+      "claim": "Cell types APC+/-, APC-/-, and KRAS + all have a selective advantage compared to the wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell types APC+/-, APC-/-, and KRAS + all have a selective advantage compared to the wild type, which we assume results in an increase of the SC division rate (see Section 2 of Appendix 1 for details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a modeling assumption based on biological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "517afde7-2e4a-4da2-99b9-19de4d8e6b0b",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C58",
+      "claim": "Modified crypts of types APC-/- and KRAS + have been reported to undergo crypt fission.",
+      "claim_type": "EXPLICIT",
+      "source": "Modified crypts of types APC-/- and KRAS + have been reported to undergo crypt fission; in other words, while the total population of a single crypt remains constant (even though it is populated by SCs that are fitter than the wild-type SCs), the crypt can undergo a doubling, thus increasing the total number of such modified crypts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by literature references cited in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "a8d20f19-5f8f-4be2-9767-7579e2fb5030",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C59",
+      "claim": "The fission rates of different crypt types have been reported in the literature.",
+      "claim_type": "EXPLICIT",
+      "source": "The fission rates of different crypt types have been reported in the literature (Paterson et al., 2020; Nicholson et al., 2018; Humphries et al., 2013; Baker et al., 2014) and are denoted by \u03b3i",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "d0b71032-e536-4675-9be2-86e6442e8cc0",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C60",
+      "claim": "The probability to have produced a single crypt of type 6 by time t is denoted by P(t).",
+      "claim_type": "EXPLICIT",
+      "source": "The probability to have produced a single crypt of type 6 (the APC-/-KRAS+ phenotype) by time t is denoted by P(t) and is approximated by the following equation Chou and Wang, 2015",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the mathematical model formulation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "f6bee8eb-2849-4e36-a52b-ffe6931c4b45",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C61",
+      "claim": "At the time of detection, an advanced adenoma is characterized by a certain size, N.",
+      "claim_type": "EXPLICIT",
+      "source": "We further assume that crypts of type 6 engage in a fission-death dynamics (with the corresponding rates \u03b36 and \u03b46). At the time of detection, an advanced adenoma is characterized by a certain size, N.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a modeling assumption.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "22d103c7-bd38-4a21-bc56-00c4f91576e8",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C62",
+      "claim": "The approximations were checked against stochastic (Gillespie) simulations recording the incidence of size N colonies of type 6 crypts, yielding excellent agreement.",
+      "claim_type": "EXPLICIT",
+      "source": "These approximations were checked against stochastic (Gillespie) simulations recording the incidence of size N colonies of type 6 crypts, yielding excellent agreement (see Section 5 of Appendix 1 for details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a validation of the mathematical approximations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "0cf14631-db1b-4047-b1e6-717ecad960f8",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C63",
+      "claim": "The relative risk for adenoma was 0.80 for women who used 0.5\u20131.5 standard (325 mg) tablets per week.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the dose-dependence of colorectal adenoma was studied (Chan et al., 2004), and it was shown that the relative risk for adenoma was 0.80 for women who used 0.5\u20131.5 standard (325 mg) tablets per week, 0.74 for those who used 2\u20135 tablets per week, 0.72 for those who used 6\u201314 tablets per week, and 0.49 for those who used more than 14 tablets per week.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from Chan et al., 2004.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "e2c7a39d-2299-435d-b9ad-0f7ffc6cc324",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C64",
+      "claim": "The relative risk for adenoma was 0.74 for women who used 2\u20135 tablets per week.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the dose-dependence of colorectal adenoma was studied (Chan et al., 2004), and it was shown that the relative risk for adenoma was 0.80 for women who used 0.5\u20131.5 standard (325 mg) tablets per week, 0.74 for those who used 2\u20135 tablets per week, 0.72 for those who used 6\u201314 tablets per week, and 0.49 for those who used more than 14 tablets per week.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from Chan et al., 2004.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "ac47b26c-fd0a-46ca-83f0-3840c4c80988",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C65",
+      "claim": "The relative risk for adenoma was 0.72 for women who used 6\u201314 tablets per week.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the dose-dependence of colorectal adenoma was studied (Chan et al., 2004), and it was shown that the relative risk for adenoma was 0.80 for women who used 0.5\u20131.5 standard (325 mg) tablets per week, 0.74 for those who used 2\u20135 tablets per week, 0.72 for those who used 6\u201314 tablets per week, and 0.49 for those who used more than 14 tablets per week.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from Chan et al., 2004.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "7edb0211-007a-4ebc-b8c2-f3dd4e8fb755",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C66",
+      "claim": "The relative risk for adenoma was 0.49 for women who used more than 14 tablets per week.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the dose-dependence of colorectal adenoma was studied (Chan et al., 2004), and it was shown that the relative risk for adenoma was 0.80 for women who used 0.5\u20131.5 standard (325 mg) tablets per week, 0.74 for those who used 2\u20135 tablets per week, 0.72 for those who used 6\u201314 tablets per week, and 0.49 for those who used more than 14 tablets per week.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from Chan et al., 2004.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "5e2e0d3a-cc3b-427d-a332-4a24a212f399",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C67",
+      "claim": "Aspirin had a negative impact on colon organoids derived from non-neoplastic tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, it has been shown that aspirin had a negative impact on colon organoids derived from non-neoplastic issues, and that aspirin particularly reduced the rapidly cycling transit amplifying cell population (Devall et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Devall et al., 2021.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "1d7d51df-6eb5-4fca-8603-8a4d63af4a74",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C68",
+      "claim": "Aspirin particularly reduced the rapidly cycling transit amplifying cell population.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, it has been shown that aspirin had a negative impact on colon organoids derived from non-neoplastic issues, and that aspirin particularly reduced the rapidly cycling transit amplifying cell population (Devall et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Devall et al., 2021.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "1d185459-2327-4df4-93ce-3b8a302b303a",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C69",
+      "claim": "The model assumes that the removal rate of SCs is comprised of 90% differentiation and 10% apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "To calculate the fitness factor, we assumed that the removal rate of SCs, d, is comprised of 90% differentiation and 10% apoptosis, and that it is the latter that is affected by aspirin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explicit modeling assumption.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "ae55539b-359d-42c1-b285-5541716bfed9",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C70",
+      "claim": "Aspirin affects the apoptosis component of SC removal but not the differentiation component.",
+      "claim_type": "EXPLICIT",
+      "source": "To calculate the fitness factor, we assumed that the removal rate of SCs, d, is comprised of 90% differentiation and 10% apoptosis, and that it is the latter that is affected by aspirin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explicit modeling assumption.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "d87ee5b9-388e-4866-9359-5ebe8160e0c7",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C71",
+      "claim": "The model assumes that under aspirin treatment, crypt fission rates are reduced and crypt death rates are increased.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to affecting cellular fitness within the crypts, it is also logical to assume that aspirin reduces crypt fission rates and increases crypt death rates (the bottom row of the table in Figure 4(a)). This is supported by data (Fischer et al., 2014), and the rationale behind this assumption is that crypt fission is ultimately connected with divisions of individual cells, and crypt death is associated with cell death.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a modeling assumption supported by data from Fischer et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "042cb598-ee28-480b-bee9-f87741fdefe0",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C72",
+      "claim": "Crypt fission is ultimately connected with divisions of individual cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This is supported by data (Fischer et al., 2014), and the rationale behind this assumption is that crypt fission is ultimately connected with divisions of individual cells, and crypt death is associated with cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a biological rationale for the modeling assumption.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "37ce9eea-f80b-4194-8257-6d623c4a942e",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C73",
+      "claim": "Crypt death is associated with cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "This is supported by data (Fischer et al., 2014), and the rationale behind this assumption is that crypt fission is ultimately connected with divisions of individual cells, and crypt death is associated with cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a biological rationale for the modeling assumption.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "c260705a-a1c1-4177-af19-2ef7270cf711",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C74",
+      "claim": "The study used advanced adenoma incidence data from Brenner et al., 2014 for age-ranges 55\u201359, 60\u201364, 65\u201369, 70\u201374, and 75\u201379.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to study the incidence of advanced adenoma, we used the data reported in Brenner et al., 2014 for the age-ranges 55\u201359, 60\u201364, 65\u201369, 70\u201374, and 75\u201379.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source used for model fitting.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "0f0eccb4-555c-4736-9478-ca6435a883ee",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C75",
+      "claim": "The study focused only on the combined incidence of advanced adenoma and cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "While this study provides incidence data for nonadvanced adenoma, advanced adenoma, and colorectal cancer (CRC), we focused only on the combined incidence of advanced adenoma and cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explicit methodological choice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "9c695bbd-3e91-459f-b851-c67032fe4e5d",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "claim_id": "C76",
+      "claim": "Individuals that have developed CRC have most likely already developed an advanced adenoma by the age of testing.",
+      "claim_type": "EXPLICIT",
+      "source": "This assumes that individuals that have developed CRC have most likely already developed an advanced adenoma by the age of testing, and further that nonadvanced adenoma likely refers to fewer mutational steps compared to our type 6, where both the APC gene is fully inactivated and the KRAS gene is mutated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a modeling assumption based on the adenoma-carcinoma sequence.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4163bc3c-1657-4062-9e9b-6b137bdcf654",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Aspirin directly affects tumor cell kinetics by reducing cell division rates and increasing cell death rates at physiologically relevant concentrations, as demonstrated in vitro and in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, and C14 are consistently supported by the authors' experimental work (Shimura et al., 2020; Zumwalt et al., 2017). The effects are documented with specific fold-changes in Table 1, providing quantitative evidence for these kinetic alterations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "f7fb366f-4b18-4346-a284-8d5b0113d99b",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A mathematical model incorporating inter-crypt competition is necessary to accurately fit advanced adenoma age-incidence curves; models without competition fail to reproduce epidemiological data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 demonstrate through systematic model fitting that linear models without competition yield unrealistic predictions (zero or excessively steep incidence curves). Claim C4 and C27 show that including competition with carrying capacity parameters resolves this issue and produces good fits across biologically plausible parameter ranges (Figure 2).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "04a2376c-1662-482d-ad10-b2620fa3b6fe",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Aspirin-induced changes in cellular fitness within experimentally observed ranges can account for the 10-50% reduction in advanced adenoma incidence observed in epidemiological studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C38, and C39 represent the central conclusion linking experimental kinetic measurements to population-level outcomes. The modeling demonstrates that experimentally measured fitness changes (Table 1) produce predicted risk reductions (0.35-0.80 relative risk, Figure 4d) consistent with epidemiological observations from Chan et al., 2004 (C32, C33).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "97fa0c15-fe28-4002-9c27-7efd545efd95",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The APC inactivation pathway is the predominant route to advanced adenoma formation, determined primarily by crypt fission rates and carrying capacity parameters rather than mutation rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C30 are supported by model analysis shown in Figure 3. The finding that pathway dominance depends on fission rates (not mutation rates) is consistent with Paterson et al., 2020. The model predicts hundreds of APC-/- crypts versus rare KRAS+ crypts, supporting APC pathway predominance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "593b26bf-b892-4209-aa9c-b3eb766b8015",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Model predictions for aspirin's dose-dependent protective effect match epidemiological data, with relative risks ranging from 0.35-0.80 for high doses and 0.6-0.9 for intermediate doses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32 and C33 demonstrate quantitative agreement between model predictions (Figure 4d) and Chan et al., 2004 data. The dose-response relationship is preserved across different aspirin doses, with appropriate relative risk ranges for each dose category.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "e9be5960-fbf6-49dd-9d3e-c678dab13e4c",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Aspirin's effect on inter-crypt dynamics (fission and death rates) is essential to explain epidemiologically observed risk reductions; intra-crypt effects alone are insufficient.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C34 is supported by comparison of model variants (Appendix 1-figure 15). Models with only intra-crypt effects produce minimal risk reduction (few percent), while including inter-crypt dynamics yields substantial reductions consistent with epidemiological data. This is biologically plausible given that crypt dynamics drive disease development.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "c8a1ac3a-60ff-4b09-966f-0c47bb66e5ea",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Aspirin's protective effect depends strongly on age at treatment initiation, with greater risk reduction when treatment starts earlier, and protection persists decades after treatment cessation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35 and C36 are demonstrated in Figure 4. Relative risk varies from ~0.4 (treatment at age 20) to ~0.8 (later treatment). The persistent effect after treatment cessation is a model prediction consistent with the biological mechanism of preventing early mutational events.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "9f27e2d2-5d59-40ee-a5ed-37fae8cc28f3",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The ASPREE trial findings of no significant cancer incidence reduction but increased mortality in elderly aspirin users are consistent with model predictions showing diminished protective effects when treatment begins at older ages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42 appropriately interpret ASPREE trial results in light of the model. The model predicts reduced efficacy with late-age treatment initiation (C35), consistent with ASPREE's null incidence finding (C40). The interpretation is appropriately cautious, noting the model only addresses incidence, not mortality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "aa467cf7-f1ac-4329-bf57-4f166139ca3c",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Aspirin-treated tumors may be more evolved at detection due to increased cell turnover, potentially explaining higher mortality rates and more advanced cancer stages observed in ASPREE.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C43-C44 present theoretical reasoning about tumor evolution under aspirin treatment but are speculative (C44 explicitly marked as speculation). While C45-C46 cite ASPREE data on metastasis and stage 4 cancers supporting this hypothesis, the causal mechanism remains unproven. The model does not simulate post-adenoma tumor evolution, limiting direct validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "74d107f0-83fc-4c26-8770-e93d59e60a48",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The model assumes a two-hit pathway to advanced adenomas involving APC inactivation (loss-of-function, mutation rate 10^-7) and KRAS activation (gain-of-function, mutation rate 10^-9), with specific associations to adenoma stages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C22 describe well-established model assumptions based on colorectal cancer biology. The two-hit hypothesis for tumor suppressors (C17) is standard knowledge. Mutation rates (C18-C19) and genotype-phenotype associations (C20-C22) are appropriately cited from literature. These form a reasonable biological foundation for the model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "17a72bca-b381-48cc-b3f5-c277fd00460b",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The mathematical model tracks six crypt populations defined by APC and KRAS mutational status, allowing flexible ordering of mutational events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C51 accurately describe the model structure shown in Figure 1. The six-population framework with flexible mutation ordering is clearly defined and appropriately accommodates biological uncertainty about pathway sequences. This is a straightforward methodological description.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "97624a46-bb77-4cd2-8f87-eef8460bd30a",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The model uses colonic crypts as the basic unit because crypts contain few stem cells and are likely homogeneous for driver mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 justify the crypt-level modeling approach based on established biology (Nicholson et al., 2018; Humphries and Wright, 2008). The reasoning that few stem cells per crypt leads to clonal homogeneity (C56) is a reasonable inference supported by population genetics principles.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "6e3b134e-67df-4080-a457-d7c46bcfa3ea",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Mutated crypt types have selective advantages and undergo crypt fission at rates reported in literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C59 describe model parameters based on literature values (Paterson et al., 2020; Nicholson et al., 2018; Humphries et al., 2013; Baker et al., 2014). These are appropriately cited biological assumptions that parameterize the model with experimentally derived values.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "9d7c5803-acad-4152-a484-5438c28273cb",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Mathematical approximations for adenoma incidence were validated against stochastic Gillespie simulations with excellent agreement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C62 describes appropriate model validation methodology. Comparing deterministic approximations to stochastic simulations is standard practice for verifying mathematical models. The reported excellent agreement (detailed in Appendix 1) supports the validity of the approximations used.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "012e3d3a-d3d8-4744-8fc3-ed6aa9c8afed",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Including adenoma growth phase in simulations (rather than stopping at first type-6 crypt) significantly changed fitted parameter values while maintaining qualitative results.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C37 identifies an important methodological consideration. The finding that including growth dynamics affects quantitative parameter estimates highlights the importance of modeling the complete biological process. This distinguishes the current work from some previous models and improves quantitative accuracy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "62fef8fc-422e-4fbb-a90e-5ca631c4cb11",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The model assumes stem cell removal comprises 90% differentiation and 10% apoptosis, with aspirin affecting only the apoptosis component.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C69-C70 describe a specific modeling assumption about how aspirin affects cell death. While the 90/10 split is stated as an assumption, no citation or experimental justification is provided for these specific proportions. This assumption significantly impacts how experimental death rate increases translate to fitness changes (Table 1), but its biological basis is unclear.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "2f4c0b1d-58e4-40cf-80b1-e048c5009ee6",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The model assumes aspirin reduces crypt fission rates and increases crypt death rates based on the biological rationale that these processes are connected to individual cell division and death.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C73 describe modeling assumptions with partial experimental support. While Fischer et al., 2014 data on sulindac supports the crypt fission assumption (C71), the specific quantitative relationship between cellular and crypt-level parameters (C72-C73) involves biological reasoning rather than direct measurement. The assumptions are plausible but involve extrapolation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "c4c9aaf2-8368-4893-bad6-2cd4dc0b94a5",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The study used combined advanced adenoma and colorectal cancer incidence data from Brenner et al., 2014, assuming CRC patients had already developed advanced adenomas.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C76 describe the epidemiological data source and methodological choices for model fitting. The decision to combine advanced adenoma and CRC incidence (C75) is justified by the adenoma-carcinoma sequence (C76). This is a reasonable approach given the model's focus on advanced adenoma formation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "9635a275-32f5-48eb-a833-f904f72f262d",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Epidemiological studies demonstrate aspirin's protective effect against colorectal cancer and adenomas, with 10-50% incidence reductions depending on dose and duration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8-C10 summarize established epidemiological findings from multiple cited studies (CAPP2 trial, Chan et al., 2004, and others). These provide the empirical context and target outcomes that the modeling study aims to explain. The claims are appropriately cited and represent accepted knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "9132e1b4-85f4-447e-8b15-9eef43057171",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Colorectal cancer affects about 5% of the US population, and aspirin is a COX-2 inhibiting NSAID.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C7 provide basic epidemiological and pharmacological background information, appropriately cited (Siegel et al., 2020; Goel et al., 2003). These are established facts providing context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "fc542249-b13b-45ba-95fc-5ac1bd954f97",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Inflammation and microbiome composition may contribute to aspirin's protective effects through microenvironmental mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C13 acknowledge alternative mechanisms beyond direct cellular effects. These are appropriately cited (Itzkowitz and Yio, 2004; Prizment et al., 2020; Brennan et al., 2021; Zhao et al., 2020) and represent important context. The authors appropriately note these mechanisms are not included in their model but may contribute to observed effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "c5882c94-b3b7-4643-a003-0bf465c2ea20",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Aspirin can increase the probability that newly generated tumor cells fail to establish clonal expansion and go extinct.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C15 describes a theoretical prediction from previous modeling work (Wodarz et al., 2017). This represents an established theoretical framework that motivates the current study's focus on cellular kinetics and extinction probabilities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "29470564-f29a-4c86-9be4-9ef3a28f3a3d",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "KRAS is mutated in only about 43% of non-hypermutated colorectal tumors, indicating pathway heterogeneity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C23 cites TCGA data (Network, 2012) to acknowledge biological heterogeneity. The authors appropriately note this limitation and explain that their model applies to pathways involving loss-of-function and gain-of-function mutations regardless of specific gene identity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "d7ba6e39-4c91-480d-b46d-fa54412fbc4c",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Sulindac, a related NSAID, inhibited APC-deficient crypt fission and reduced adenoma numbers in mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C31 cites experimental evidence (Fischer et al., 2014) supporting the biological plausibility of NSAIDs affecting crypt fission dynamics. This provides independent experimental support for a key modeling assumption about aspirin's inter-crypt effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "524c9b29-b04f-4cc7-a3a1-3d929dd552d1",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "There is controversy about whether initial KRAS mutations can drive colorectal carcinogenesis or represent evolutionary dead ends.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 acknowledge conflicting evidence in the literature about KRAS-initiated pathways (Jen et al., 1994; Chan et al., 2003 versus Jass, 2006; Pretlow and Pretlow, 2005). The authors appropriately note this uncertainty and explain how their model accommodates both possibilities through flexible pathway ordering.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "953def2a-6b5d-440a-8920-26b5a109ad9c",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "result_id": "R26",
+      "result_category": "llm",
+      "result": "Chan et al., 2004 reported dose-dependent relative risks for adenoma ranging from 0.80 (0.5-1.5 tablets/week) to 0.49 (>14 tablets/week).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C66 accurately report specific epidemiological data from Chan et al., 2004 that serves as the primary validation target for model predictions. These are straightforward data citations providing quantitative benchmarks for model evaluation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "9ca893a5-2c6b-45d7-bc05-6fa177224942",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "result_id": "R27",
+      "result_category": "llm",
+      "result": "Aspirin negatively impacts colon organoids from non-neoplastic tissue, particularly reducing transit amplifying cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 cite recent experimental work (Devall et al., 2021) showing aspirin effects on normal tissue organoids. This provides additional experimental context supporting aspirin's direct cellular effects, though the authors acknowledge their model focuses on stem cells while this work emphasizes transit amplifying cells.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    },
+    {
+      "id": "aaaa89cd-5dcc-430b-8c9e-bce5409e2149",
+      "content_id": "76ed892a-3734-4995-8a7e-9bb78d073bd6",
+      "result_id": "R28",
+      "result_category": "llm",
+      "result": "The model calculates probability of producing type-6 crypts by time t and assumes advanced adenomas are detected at a certain size N.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61 describe mathematical model components. These are standard modeling approaches for calculating incidence probabilities and defining detection thresholds. The formulation is appropriately cited (Chou and Wang, 2015) and represents established methodology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:21:58.750865Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d8c8d925-83e3-4acc-8a0f-c55e70ea5355",
+      "result_id": "4163bc3c-1657-4062-9e9b-6b137bdcf654"
+    },
+    {
+      "claim_id": "eb1697ab-5752-4ede-8b7e-8d1f9f15000b",
+      "result_id": "4163bc3c-1657-4062-9e9b-6b137bdcf654"
+    },
+    {
+      "claim_id": "018d8fb3-cf36-4c20-8777-9440a3ad88e9",
+      "result_id": "4163bc3c-1657-4062-9e9b-6b137bdcf654"
+    },
+    {
+      "claim_id": "3d5a434c-e818-4fa7-b6d1-40701c7a754f",
+      "result_id": "f7fb366f-4b18-4346-a284-8d5b0113d99b"
+    },
+    {
+      "claim_id": "fbc07e44-47b2-49ed-ad4d-9f479dfcefbe",
+      "result_id": "f7fb366f-4b18-4346-a284-8d5b0113d99b"
+    },
+    {
+      "claim_id": "fdf22ffd-fb8a-4bc2-82f7-c1c41f5ff931",
+      "result_id": "f7fb366f-4b18-4346-a284-8d5b0113d99b"
+    },
+    {
+      "claim_id": "0b512684-e5b4-40d0-ad57-e26a65eed52a",
+      "result_id": "f7fb366f-4b18-4346-a284-8d5b0113d99b"
+    },
+    {
+      "claim_id": "cf476fcf-6292-4840-ac2b-700d4af3a463",
+      "result_id": "f7fb366f-4b18-4346-a284-8d5b0113d99b"
+    },
+    {
+      "claim_id": "fc4364c7-a2b1-473f-a5a4-f4eefaf06aa4",
+      "result_id": "04a2376c-1662-482d-ad10-b2620fa3b6fe"
+    },
+    {
+      "claim_id": "b11c81eb-a224-45b3-8c12-450e2c2c33e9",
+      "result_id": "04a2376c-1662-482d-ad10-b2620fa3b6fe"
+    },
+    {
+      "claim_id": "ee358b36-a707-41ca-a32e-5f695bc51fa8",
+      "result_id": "04a2376c-1662-482d-ad10-b2620fa3b6fe"
+    },
+    {
+      "claim_id": "8a983bfd-8609-4e64-99e0-e62e5f5b4394",
+      "result_id": "97fa0c15-fe28-4002-9c27-7efd545efd95"
+    },
+    {
+      "claim_id": "9c93b5a9-9934-4710-96f7-20a00c6f4952",
+      "result_id": "97fa0c15-fe28-4002-9c27-7efd545efd95"
+    },
+    {
+      "claim_id": "f9b6a582-e516-4e38-b611-0e8e472ff93f",
+      "result_id": "97fa0c15-fe28-4002-9c27-7efd545efd95"
+    },
+    {
+      "claim_id": "75777e67-83a3-42b6-9381-8f99138f3270",
+      "result_id": "593b26bf-b892-4209-aa9c-b3eb766b8015"
+    },
+    {
+      "claim_id": "68d2b393-c596-49b5-980b-97e986557a26",
+      "result_id": "593b26bf-b892-4209-aa9c-b3eb766b8015"
+    },
+    {
+      "claim_id": "175668ee-6ff6-4c57-b274-80b1cc3d1bd3",
+      "result_id": "e9be5960-fbf6-49dd-9d3e-c678dab13e4c"
+    },
+    {
+      "claim_id": "c533ae66-0498-4a1f-b858-40ffd0fbb8c8",
+      "result_id": "c8a1ac3a-60ff-4b09-966f-0c47bb66e5ea"
+    },
+    {
+      "claim_id": "fedaa661-3241-420d-af13-b746710c26b3",
+      "result_id": "c8a1ac3a-60ff-4b09-966f-0c47bb66e5ea"
+    },
+    {
+      "claim_id": "563ee0f2-386f-483d-98d8-0a33a762fb2a",
+      "result_id": "9f27e2d2-5d59-40ee-a5ed-37fae8cc28f3"
+    },
+    {
+      "claim_id": "7fb3dd83-72eb-4482-b0f3-13075f8a3f7b",
+      "result_id": "9f27e2d2-5d59-40ee-a5ed-37fae8cc28f3"
+    },
+    {
+      "claim_id": "ec9446ad-aaba-4df8-9cd2-a50c316cd90e",
+      "result_id": "9f27e2d2-5d59-40ee-a5ed-37fae8cc28f3"
+    },
+    {
+      "claim_id": "4e0daf56-c45a-4024-b988-6282c6b13476",
+      "result_id": "aa467cf7-f1ac-4329-bf57-4f166139ca3c"
+    },
+    {
+      "claim_id": "0d7fe53c-6e71-4398-853a-4540ef245428",
+      "result_id": "aa467cf7-f1ac-4329-bf57-4f166139ca3c"
+    },
+    {
+      "claim_id": "9e77a4df-1551-4fc2-bc09-d29a84f28749",
+      "result_id": "aa467cf7-f1ac-4329-bf57-4f166139ca3c"
+    },
+    {
+      "claim_id": "b2c70fa6-fa74-47e1-ad2c-59de18d9991e",
+      "result_id": "aa467cf7-f1ac-4329-bf57-4f166139ca3c"
+    },
+    {
+      "claim_id": "dc657eca-2ccc-4a86-84ae-b63204d8bf64",
+      "result_id": "74d107f0-83fc-4c26-8770-e93d59e60a48"
+    },
+    {
+      "claim_id": "fca48e89-2c9f-4f80-b8b3-e1b6f3223ac4",
+      "result_id": "74d107f0-83fc-4c26-8770-e93d59e60a48"
+    },
+    {
+      "claim_id": "28f2bf73-f531-485d-bdf4-40094e66e79e",
+      "result_id": "74d107f0-83fc-4c26-8770-e93d59e60a48"
+    },
+    {
+      "claim_id": "51bd7aab-b5c3-45e4-b75a-95d71d762d9c",
+      "result_id": "74d107f0-83fc-4c26-8770-e93d59e60a48"
+    },
+    {
+      "claim_id": "14f5d08d-4c5c-4cfe-a3e6-976b1fb6929e",
+      "result_id": "74d107f0-83fc-4c26-8770-e93d59e60a48"
+    },
+    {
+      "claim_id": "109915c4-1ead-431d-8bc2-8587ca3cfdc0",
+      "result_id": "74d107f0-83fc-4c26-8770-e93d59e60a48"
+    },
+    {
+      "claim_id": "dd826632-abf0-442b-a5ee-529d1484358c",
+      "result_id": "74d107f0-83fc-4c26-8770-e93d59e60a48"
+    },
+    {
+      "claim_id": "f22a72b2-2c19-4b49-831e-79b42d84c00c",
+      "result_id": "17a72bca-b381-48cc-b3f5-c277fd00460b"
+    },
+    {
+      "claim_id": "504bcb2b-ee0e-4698-ae70-a33524fd6dfd",
+      "result_id": "17a72bca-b381-48cc-b3f5-c277fd00460b"
+    },
+    {
+      "claim_id": "e46a2681-008e-49f5-a41d-c497f092dd8d",
+      "result_id": "17a72bca-b381-48cc-b3f5-c277fd00460b"
+    },
+    {
+      "claim_id": "467904b5-82ca-46a3-9785-df21a6f9379d",
+      "result_id": "17a72bca-b381-48cc-b3f5-c277fd00460b"
+    },
+    {
+      "claim_id": "a1a04ccc-c41b-427c-9e4f-10292c12a371",
+      "result_id": "17a72bca-b381-48cc-b3f5-c277fd00460b"
+    },
+    {
+      "claim_id": "f698b470-d951-478c-a710-0698805c2cb7",
+      "result_id": "97624a46-bb77-4cd2-8f87-eef8460bd30a"
+    },
+    {
+      "claim_id": "967379b9-a6fb-4000-a966-d9e294672e22",
+      "result_id": "97624a46-bb77-4cd2-8f87-eef8460bd30a"
+    },
+    {
+      "claim_id": "cd54cb91-8c55-44ed-a122-bf887a34caeb",
+      "result_id": "97624a46-bb77-4cd2-8f87-eef8460bd30a"
+    },
+    {
+      "claim_id": "3a7e2a43-0428-49c1-9246-28fd0c96e733",
+      "result_id": "6e3b134e-67df-4080-a457-d7c46bcfa3ea"
+    },
+    {
+      "claim_id": "517afde7-2e4a-4da2-99b9-19de4d8e6b0b",
+      "result_id": "6e3b134e-67df-4080-a457-d7c46bcfa3ea"
+    },
+    {
+      "claim_id": "a8d20f19-5f8f-4be2-9767-7579e2fb5030",
+      "result_id": "6e3b134e-67df-4080-a457-d7c46bcfa3ea"
+    },
+    {
+      "claim_id": "22d103c7-bd38-4a21-bc56-00c4f91576e8",
+      "result_id": "9d7c5803-acad-4152-a484-5438c28273cb"
+    },
+    {
+      "claim_id": "9fff2bdc-d2d6-426f-a66f-b3534d03a0b0",
+      "result_id": "012e3d3a-d3d8-4744-8fc3-ed6aa9c8afed"
+    },
+    {
+      "claim_id": "1d185459-2327-4df4-93ce-3b8a302b303a",
+      "result_id": "62fef8fc-422e-4fbb-a90e-5ca631c4cb11"
+    },
+    {
+      "claim_id": "ae55539b-359d-42c1-b285-5541716bfed9",
+      "result_id": "62fef8fc-422e-4fbb-a90e-5ca631c4cb11"
+    },
+    {
+      "claim_id": "d87ee5b9-388e-4866-9359-5ebe8160e0c7",
+      "result_id": "2f4c0b1d-58e4-40cf-80b1-e048c5009ee6"
+    },
+    {
+      "claim_id": "042cb598-ee28-480b-bee9-f87741fdefe0",
+      "result_id": "2f4c0b1d-58e4-40cf-80b1-e048c5009ee6"
+    },
+    {
+      "claim_id": "37ce9eea-f80b-4194-8257-6d623c4a942e",
+      "result_id": "2f4c0b1d-58e4-40cf-80b1-e048c5009ee6"
+    },
+    {
+      "claim_id": "c260705a-a1c1-4177-af19-2ef7270cf711",
+      "result_id": "c4c9aaf2-8368-4893-bad6-2cd4dc0b94a5"
+    },
+    {
+      "claim_id": "0f0eccb4-555c-4736-9478-ca6435a883ee",
+      "result_id": "c4c9aaf2-8368-4893-bad6-2cd4dc0b94a5"
+    },
+    {
+      "claim_id": "9c695bbd-3e91-459f-b851-c67032fe4e5d",
+      "result_id": "c4c9aaf2-8368-4893-bad6-2cd4dc0b94a5"
+    },
+    {
+      "claim_id": "7ec80d17-5a67-481d-b8e3-76cc546d8908",
+      "result_id": "9635a275-32f5-48eb-a833-f904f72f262d"
+    },
+    {
+      "claim_id": "22bf0018-bc97-4446-b34a-ef236c981ad8",
+      "result_id": "9635a275-32f5-48eb-a833-f904f72f262d"
+    },
+    {
+      "claim_id": "d19690ef-e18c-4060-b928-0c487fcf7cd7",
+      "result_id": "9635a275-32f5-48eb-a833-f904f72f262d"
+    },
+    {
+      "claim_id": "1ad0b45c-00b4-4332-839a-2e61500feb8d",
+      "result_id": "9635a275-32f5-48eb-a833-f904f72f262d"
+    },
+    {
+      "claim_id": "ba743a03-1a15-442d-b891-5212d29f86e9",
+      "result_id": "9132e1b4-85f4-447e-8b15-9eef43057171"
+    },
+    {
+      "claim_id": "9cabb9ca-986f-4ac4-ad28-07eb3328afee",
+      "result_id": "9132e1b4-85f4-447e-8b15-9eef43057171"
+    },
+    {
+      "claim_id": "932ab974-2994-477a-85f8-8979eabdadd2",
+      "result_id": "fc542249-b13b-45ba-95fc-5ac1bd954f97"
+    },
+    {
+      "claim_id": "cbfdceab-6717-4bd6-8d9c-ca64fa682163",
+      "result_id": "fc542249-b13b-45ba-95fc-5ac1bd954f97"
+    },
+    {
+      "claim_id": "37efdf50-3ced-48db-a7e4-08a2acbed379",
+      "result_id": "fc542249-b13b-45ba-95fc-5ac1bd954f97"
+    },
+    {
+      "claim_id": "e1301814-1f68-4fb4-bd69-f8293caf89fd",
+      "result_id": "c5882c94-b3b7-4643-a003-0bf465c2ea20"
+    },
+    {
+      "claim_id": "5c1bdca5-d46a-450c-8ffd-755bef32d3da",
+      "result_id": "29470564-f29a-4c86-9be4-9ef3a28f3a3d"
+    },
+    {
+      "claim_id": "2fee0940-25a9-4591-abde-88e970aae7a5",
+      "result_id": "d7ba6e39-4c91-480d-b46d-fa54412fbc4c"
+    },
+    {
+      "claim_id": "c7680f84-7aa4-47b7-aa9f-62cb86a960cb",
+      "result_id": "524c9b29-b04f-4cc7-a3a1-3d929dd552d1"
+    },
+    {
+      "claim_id": "445c9cb0-7b68-478d-9959-d1696768d488",
+      "result_id": "524c9b29-b04f-4cc7-a3a1-3d929dd552d1"
+    },
+    {
+      "claim_id": "0cf14631-db1b-4047-b1e6-717ecad960f8",
+      "result_id": "953def2a-6b5d-440a-8920-26b5a109ad9c"
+    },
+    {
+      "claim_id": "e2c7a39d-2299-435d-b9ad-0f7ffc6cc324",
+      "result_id": "953def2a-6b5d-440a-8920-26b5a109ad9c"
+    },
+    {
+      "claim_id": "ac47b26c-fd0a-46ca-83f0-3840c4c80988",
+      "result_id": "953def2a-6b5d-440a-8920-26b5a109ad9c"
+    },
+    {
+      "claim_id": "7edb0211-007a-4ebc-b8c2-f3dd4e8fb755",
+      "result_id": "953def2a-6b5d-440a-8920-26b5a109ad9c"
+    },
+    {
+      "claim_id": "5e2e0d3a-cc3b-427d-a332-4a24a212f399",
+      "result_id": "9ca893a5-2c6b-45d7-bc05-6fa177224942"
+    },
+    {
+      "claim_id": "1d7d51df-6eb5-4fca-8603-8a4d63af4a74",
+      "result_id": "9ca893a5-2c6b-45d7-bc05-6fa177224942"
+    },
+    {
+      "claim_id": "d0b71032-e536-4675-9be2-86e6442e8cc0",
+      "result_id": "aaaa89cd-5dcc-430b-8c9e-bce5409e2149"
+    },
+    {
+      "claim_id": "f6bee8eb-2849-4e36-a52b-ffe6931c4b45",
+      "result_id": "aaaa89cd-5dcc-430b-8c9e-bce5409e2149"
+    }
+  ],
+  "comparisons": []
+}

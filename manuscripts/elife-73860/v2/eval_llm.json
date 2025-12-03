@@ -1,0 +1,312 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "CoSMoS is an established single-molecule fluorescence technique that has been successfully used for over two decades to study diverse biochemical processes including transcription, translation, DNA replication, and other complex molecular mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C25 provide extensive citation-based evidence documenting the successful application of CoSMoS methods across multiple biological systems over more than two decades. The breadth of applications and supporting citations establish CoSMoS as a validated technique for studying molecular mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "CoSMoS data analysis faces inherent challenges including low signal-to-noise ratios due to photobleaching constraints, non-specific binding artifacts, and existing methods that require subjective parameter tuning and produce binary classifications without confidence estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4 and C29-C42 collectively establish the technical challenges in CoSMoS analysis through a combination of established knowledge about fluorophore physics (C29-C32), cited literature on non-specific binding (C33, C35-C36), and logical inferences about limitations of integration-based and binary classification methods (C37-C42). These claims provide strong motivation for the development of Tapqir.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C43",
+      "C44",
+      "C45",
+      "C50",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C107",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Tapqir is a Bayesian machine learning method implemented in Pyro that uses a holistic, physics-based model (cosmos) to analyze CoSMoS data by explicitly accounting for multiple sources of uncertainty including photon noise, camera characteristics, optical non-uniformities, non-specific binding, and spot detection, while learning parameters directly from experimental data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C9, C43-C45, C50, and C90-C94 describe the implementation and features of Tapqir with appropriate citations for the Pyro framework. Claims C107 and C110-C114 detail the Bayesian approach and use of priors. The description is internally consistent and supported by the detailed mathematical model presented in the Materials and Methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C102"
+    ],
+    "result": "Tapqir assigns probabilistic spot classifications rather than binary decisions, enabling reliable inference of molecular properties with statistically justified uncertainty estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C102 describe a key conceptual advantage of Tapqir over prior methods. This is supported by the mathematical framework presented and demonstrated in the results showing probability distributions rather than binary classifications (Figures 3, 4, 6).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "Tapqir correctly detects fluorescent spots in both simulated data (SNR=3.76) and experimental data (SNR=1.61).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 are directly supported by Figure 3 showing spot detection results on both simulated and experimental data. The visual comparison between AOI images and spot detection demonstrates successful identification of spots under different SNR conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Tapqir robustly fits four diverse experimental CoSMoS datasets (SNR ranging from 1.61 to 4.23, varying non-specific binding densities) using the same model and priors without dataset-specific tuning, with posterior predictive simulations accurately reproducing experimental image characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 are strongly supported by Table 1 and Figure 3\u2014figure supplement 2, which show successful analysis of four experimental datasets with different characteristics. Claims C122-C125 provide specific SNR values for each dataset. The posterior predictive checks (C60-C61) demonstrate model adequacy. Claim C63 is particularly important as it shows the method's generalizability without manual tuning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "CoSMoS data contains sufficient information to reliably infer global model parameters, and the cosmos model is not obviously overparameterized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 are supported by Figure 3\u2014figure supplement 3 and Supplementary file 2, which show accurate recovery of global parameters (gain, \u03c0, \u03bb, \u03c3^xy) from simulated data with known ground truth values. The close agreement between true and fitted values across multiple simulations supports these inferences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C73"
+    ],
+    "result": "Tapqir performs excellently at SNR \u2265 1, with spots visually discernible by eye at SNR > 1 but not at SNR < 1, and the algorithm rarely misses true target-specific spots or falsely reports spots when none are present at adequate SNR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 are supported by visual inspection of simulated images in Figure 4A. Claim C73 is supported by MCC results in Figure 4D showing high classification accuracy at SNR \u2265 1. The convergence of subjective visual assessment and quantitative metrics strengthens these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C105"
+    ],
+    "result": "Tapqir effectively detects closely spaced target-specific and non-specific spots even when not completely resolved, and performs much better than the spot-picker method under these challenging conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 is supported by Figure 4H showing successful detection of closely spaced spots. Claims C76 and C105 are supported by Figure 4\u2014figure supplement 1, which directly compares Tapqir and spot-picker performance, showing Tapqir correctly identified 415/418 target-specific spots while spot-picker only identified 384/418 in the \u03bb=1 dataset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "Equilibrium constant measurements are much less affected than kinetic measurements by occasional false positives and false negatives in spot detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 is supported by the comparison in Figure 5C-E, which shows highly accurate equilibrium constant recovery (Figure 5E) even at high non-specific binding densities where kinetic rate constants show moderate systematic errors (Figure 5C-D). This is a logical consequence of equilibrium measurements being based on time-averaged occupancy rather than individual binding/unbinding events.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "Analysis of experimental datasets required a few hours of computation time on GPU-equipped computers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 is directly supported by computation times reported in Table 1, ranging from 7h 40min to 11h on specified GPU hardware. This demonstrates practical feasibility of the method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88",
+      "C97",
+      "C104"
+    ],
+    "result": "Tapqir is fully objective and performs at least comparably to the spot-picker method, which requires subjective threshold optimization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88 and C97 characterize the subjective nature of prior methods based on the authors' knowledge and experience. Claim C104 is supported by Figures 6 and related supplements showing comparable kinetic parameter estimates between Tapqir and spot-picker. The comparison is fair given that spot-picker was optimized by expert users.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "Tapqir was validated against simulated data with known properties and demonstrated to perform objective, automated analysis of diverse experimental datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 are supported by extensive validation results including parameter recovery from simulations (Figure 3\u2014figure supplement 3), classification accuracy analysis (Figure 4), and successful analysis of four experimental datasets (Table 1, Figures 6 and supplements). The breadth of validation is comprehensive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C95",
+      "C98",
+      "C101",
+      "C103"
+    ],
+    "result": "Tapqir's global Bayesian modeling approach enables estimation of molecular properties that accounts for known sources of uncertainty, while previous methods systematically underestimate uncertainties by assuming spot classifications are correct, likely explaining Tapqir's generally larger kinetic parameter error bars.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95, C98, and C101 present logical inferences about limitations of prior methods that are well-supported by the conceptual framework. Claim C103 is supported by comparison of error bars in Figure 6 and supplements, showing Tapqir generally produces larger credible intervals than spot-picker confidence intervals. This is a strength rather than weakness of the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96",
+      "C99",
+      "C106"
+    ],
+    "result": "Previous CoSMoS analysis methods employed multi-step processes with separate binary classification steps and required nuisance parameters to be measured separately, set heuristically, or determined in separate analysis steps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96, C99, and C106 characterize prior methods with appropriate citations (Friedman and Gelles 2015; Smith et al. 2019; Smith et al. 2015). These characterizations are accurate based on the cited literature and provide important context for understanding Tapqir's advantages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "Bayesian analysis has been used previously for single-molecule microscopy and explicitly incorporates prior knowledge of model parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 are supported by citation to Kinz-Thompson et al. 2021 and represent established knowledge about Bayesian methods. These provide appropriate context for the methodological approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "The cosmos model could potentially be extended to multi-state and multi-color analysis, and with more efficient algorithms, Tapqir could directly incorporate kinetic processes for direct inference of mechanisms and rate constants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115-C116 are speculative statements about future extensions with supporting citations for relevant algorithmic developments (S\u00e4rkk\u00e4 and Garc\u00eda-Fern\u00e1ndez 2019; Obermeyer et al. 2019b). While plausible given the probabilistic programming framework, these extensions have not been demonstrated and represent future work rather than current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Tapqir is available as free, open-source software with documentation and all source data for the manuscript are publicly available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C121 are factual statements about software and data availability with specific URLs provided. These can be verified and represent important contributions to reproducibility and community access.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C46",
+      "C47",
+      "C48",
+      "C53"
+    ],
+    "result": "CoSMoS experiments involve tethering target molecules to surfaces at low density, with binder molecules invisible when freely diffusing but detected as discrete fluorescent spots when bound, and preprocessing software for these experiments is widely available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 describe the CoSMoS experimental approach with appropriate citations (Rosen et al. 2020; Friedman et al. 2006; Friedman and Gelles 2015) and are illustrated in Figure 1. Claims C46-C48 describe preprocessing requirements with citations. Claim C53 about camera noise is supported by citation to van Vliet et al. 1998. These provide essential experimental context.",
+    "result_type": "MINOR"
+  }
+]

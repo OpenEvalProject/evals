@@ -1,0 +1,203 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C34",
+      "C35",
+      "C36",
+      "C43"
+    ],
+    "result": "Codon optimization of the Kras gene (Krasex3op allele) increases protein expression approximately 2-fold and shifts urethane-induced tumors from Q61 to G12 driver mutations. The Krasex3op allele has 27 rare codons in exon 3 converted to common codons, leading to roughly twice as much Kras protein in lungs. Tumors with oncogenic mutations in the Krasex3op allele from control Trp53+/+ mice had G12 oncogenic mutations, confirming the shift from canonical Q61 mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C34, C35, C36, and C43 collectively demonstrate that codon optimization increases Kras expression and shifts mutation tropism from Q61 to G12. The experimental data in Figure 2C confirms this shift, and the mechanism (codon optimization leading to increased translation) is well-supported by prior work (C34-C36). The finding replicates previous observations (C43 cites Pershing et al., 2015).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C38",
+      "C40",
+      "C41",
+      "C42",
+      "C44",
+      "C45"
+    ],
+    "result": "Loss of p53 increases tumor burden in mice with Krasex3op alleles and partially restores Q61 mutations in the Krasex3op allele. In p53-deficient mice, 40% of hotspot oncogenic mutations in the Krasex3op allele were detected at Q61, compared to predominantly G12 mutations in p53-proficient mice. The increased tumor burden appeared to be a product of more tumors with a trend towards larger tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C38, C40-C42, C44-C45 provide converging evidence that p53 loss reprograms RAS mutation tropism. The experimental data in Figures 1B-E and 2C demonstrate both increased tumorigenesis and the shift back to Q61 mutations. The interpretation (C41, C45) is consistent with the model that p53 suppresses oncogenic stress, allowing more active mutations to be tolerated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C60"
+    ],
+    "result": "Urethane maintains its mutational bias toward CA>CT mutations (generating Q61L) regardless of Kras allele type or p53 status, indicating that the shift in observed driver mutations is due to selection rather than altered mutagenesis. Maximum depth sequencing revealed that CA>CT mutations are significantly more frequent than GG>GA mutations in both Krasnat/nat and Krasex3op/ex3op mice, yet G12/13 mutations predominate in Krasex3op tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C46-C49, and C60 demonstrate through MDS analysis (Figure 3B-C) that urethane's mutational signature is unchanged across genetic backgrounds. The frequency data (C47) shows CA>CT mutations are significantly higher than GG>GA mutations, yet tumor sequencing reveals opposite patterns, supporting the selection model (C49). This is a critical finding that distinguishes mutational bias from selection pressure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "In p53-deficient mice, 60% of hotspot mutations in the Krasnat allele occurred at G12/13, and these tumors showed elevated mutant:wildtype mRNA ratios (~2:1) compared to Q61-mutant tumors (~0.8:1). G12/13-mutant tumors with high mutant:wildtype ratios (\u22651.5) were larger and reached the same size as Q61-mutant tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 demonstrate allelic imbalance in G12/13-mutant tumors and its functional significance. The waterfall plot analysis (C51-C52) and tumor size correlation (C53, Figure 4B) provide quantitative evidence that increased expression of less active G12/13 mutants compensates for their lower intrinsic activity. This supports the optimal signaling window model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Expression of MAPK pathway target genes (Dusp6, Egr1, Fosl1) is similar between Q61-mutant tumors and G12/13-mutant tumors with high mutant:wildtype ratios, suggesting convergence on an optimal signaling level. Tumors without p53 showed higher expression of these genes, and p53 loss tracked with higher mutant:wildtype allelic ratios in G12/13-mutant Krasex3op tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 provide molecular evidence for the optimal signaling model through expression analysis of three MAPK target genes (Figures 4C-H). The correlation between allelic imbalance and target gene expression (C56) and the effect of p53 loss (C57-C58) support the interpretation that different mutation types converge on similar signaling outputs. The choice of genes is well-justified (C59).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "The authors propose that RAS mutation tropism arises from selection in normal cells for specific mutations that impart a narrow window of signaling promoting proliferation without causing oncogenic stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 represents the central interpretive model of the manuscript. This interpretation is well-supported by the collective evidence: (1) codon optimization shifts mutations from Q61 to G12 despite urethane's mutational bias, (2) p53 loss partially reverses this shift, (3) allelic imbalance compensates for less active mutations, and (4) MAPK target gene expression converges across mutation types. The model integrates all major findings coherently.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C61"
+    ],
+    "result": "Different oncogenic RAS mutations have distinct biochemical activities, with Q61 mutations being more active than G12 mutations. Q61R mutations have slower intrinsic GTP hydrolysis rates, higher GTP loading, and more robust MAPK activation compared to G12D mutations. High oncogenic signaling can induce oncogenic stress mediated by p53.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C22-C30, and C61 establish the biochemical foundation for the study through extensive citation of prior work. These claims are well-supported by the literature (Burd et al., 2014; Kong et al., 2016; Parker et al., 2018; Buhrman et al., 2010; etc.). This background is essential for interpreting the experimental findings, though the authors acknowledge they did not directly measure protein levels or signaling in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "RAS genes are commonly mutated in human cancers, and individual cancer types exhibit tropism toward specific RAS mutations. Similar mutation tropism patterns exist for other oncogenes like EGFR and IDH1 across different cancer types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C9-C16 establish the biological context and motivation for the study. These are well-established facts supported by appropriate citations (Prior et al., 2020; Li et al., 2018; Chang et al., 2016). The calculation of 54 possible mutations (C11) is straightforward arithmetic. These claims provide essential background but are not novel findings of this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Oncogenic KRAS mutations occur early in tumorigenesis, have been detected in premalignant lesions and multiple tumor regions in humans, and can initiate tumors in mouse models. Oncogenic RAS induces proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 establish that RAS mutations are early events in tumorigenesis, which is critical for the study's rationale that mutation tropism reflects selection in normal cells. These claims are well-supported by citations to prior work (Kanda et al., 2012; Zhang et al., 2014a; McCreery and Balmain, 2017; Kwon and Berns, 2013). This background justifies the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Urethane is a carcinogen found in fermented foods that primarily induces pulmonary tumors with KrasQ61L or KrasQ61R driver mutations. Urethane-induced mutations conform to specific consensus sequences (A>T/G and CAN>CT/GN).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 describe the properties of urethane as a mutagen, supported by appropriate citations (Gowd et al., 2018; Dwyer-Nield et al., 2010; Westcott et al., 2015; Li et al., 2020; Valentine et al., 2020). This background is essential for understanding why urethane is an ideal model system for studying RAS mutation tropism, but represents prior knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37",
+      "C39"
+    ],
+    "result": "Conditionally inactivating Trp53 in the lung suppresses oncogenic stress due to high mutant Kras expression. Previous findings showed that the Krasex3op allele reduced urethane carcinogenesis in p53-proficient mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37 and C39 describe prior work establishing the rationale for the genetic manipulations used in this study. Both are supported by appropriate citations (Feldser et al., 2010; Junttila et al., 2010; Pershing et al., 2015). The contrast between C39 and the current findings (C38) highlights the importance of p53 status in determining the outcome.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The Krasex3op allele expresses more protein and increases MAPK signaling. Altering rare codons to common in KRAS increases translation and MAPK activation. Amplification of oncogenic Kras alleles has been documented in mouse models, though few tumors in this study showed genomic amplification of G12/13-mutant alleles. Increasing MAPK signaling can expand tumorigenic cell types, and co-expression of multiple oncogenic drivers can be growth suppressive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C68 provide supporting context from prior literature about Kras expression, allelic amplification, and oncogenic signaling. These are well-cited (Pershing et al., 2015; Sasine et al., 2018; Ali et al., 2017; etc.) and help interpret the current findings, particularly the observation of allelic imbalance at the mRNA level (C65) and the discussion of signaling thresholds (C66-C68).",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,354 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Empirical psychometric curves from rats performing a multisensory rate discrimination task show non-zero asymptotes (lapses), requiring a four-parameter model with separate lapse parameters for each condition. Model comparison strongly favors variable lapses over fixed or no lapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 provide converging statistical evidence that lapses are present and vary across conditions. The BIC/AIC model comparisons (C27-C30) provide quantitative support, with the variable lapses model preferred in 13/17 rats by BIC and all rats by AIC. The statistical rigor is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C35"
+    ],
+    "result": "When lapses are properly accounted for with variable parameters across conditions, multisensory integration performance is optimal rather than supra-optimal, and both sensitivity and lapse rates are reduced on multisensory compared to unisensory trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 demonstrate that apparent supra-optimality (p=0.0012) disappears when lapses vary freely across conditions. Claims C33 and C35 show consistent improvements in both sensitivity and lapse rates on multisensory trials (p=1.4e-4 for visual, p=1.5e-5 for auditory). The statistical tests are appropriate and the pattern is consistent across 17 rats.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Traditional explanations for lapses (fixed motor error, inattention) fail to account for the stimulus-dependence of lapses. Neutral multisensory trials show higher lapse rates than matched multisensory trials despite equal salience, contradicting the inattention model but consistent with uncertainty-dependent effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 provide logical and empirical evidence against traditional models. The neutral vs. matched comparison (C39) is a strong test because it controls for salience while varying perceptual uncertainty. The correlation between uncertainty and lapses (C40) is observed across multiple conditions, strengthening the inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Model comparison using BIC and AIC favors the uncertainty-guided exploration model over the inattention model for both pooled and individual subject data on the neutral vs. matched multisensory comparison.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 provide statistical model comparison results. However, the text notes this is for 3/5 subjects with sizable lapses, suggesting some subjects may not show the effect. The model comparison is appropriate but the limited sample size (5 rats for this specific manipulation) and exclusion of 2/5 subjects warrants noting this is strong but not universal support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Reward magnitude manipulations produce selective, asymmetric effects on lapses: increasing/decreasing reward for high-rate choices affects only high-rate lapses, not low-rate lapses, as uniquely predicted by the exploration model. Performance on sure-bet trials remains unaffected by reward manipulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 show the predicted asymmetric effects in 3 rats each (6976 and 11164 trials). Claim C50 confirms sure-bet trials are unaffected, supporting the uncertainty-dependence of the effect. The pattern matches exploration model predictions (C45) and contradicts inattention (C46) and fixed error (C47) models. The sample sizes are modest (n=3 rats per manipulation) but the effects are clear and consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Reward probability manipulations and reward history effects produce changes in lapses consistent with the exploration model: probabilistically rewarding incorrect high-rate choices increases high-rate lapses, and lapses vary with previous trial outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 shows the reward probability effect in 5 rats (347,537 trials total, though this appears to be the full dataset including other conditions). Claims C52-C53 show reward history effects in the same 17 rats from the main dataset. These provide additional support for value-dependent exploration, though the reward probability manipulation would benefit from clearer reporting of trial numbers specific to that manipulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Anatomical tracing demonstrates that secondary motor cortex (M2) and posterior striatum (pStr) receive convergent input from primary visual and auditory cortices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by viral tracing experiments shown in Figure 5\u2014figure supplement 1 and cited literature. This anatomical result provides the rationale for testing these regions in multisensory decisions. The evidence is direct and appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Unilateral muscimol inactivation of M2 or pStr produces asymmetric, modality-independent effects on lapses: inactivation affects lapses for stimuli associated with contralateral actions while sparing ipsilateral actions, and these effects are captured by a single-parameter scaling of contralateral action value across all three sensory modalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 describe the empirical pattern across areas and modalities (M2: n=8 rats; pStr: n=11 rats). Claim C60 shows the modeling result that a single parameter captures effects across modalities. The consistency across modalities is strong evidence for action value rather than sensory deficits. The sample sizes are adequate and the pattern is clear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Individual animal analysis of inactivation effects shows that the majority of animals are best fit by a biased value model (6/8 in M2, 7/11 in pStr), and model comparison across rats favors value scaling over sensory evidence reduction or motor effort increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 describe the pattern at the group level (n=9 and n=10 rats for different inactivation sides). Claims C63-C64 provide individual-level model fits and comparisons. The majority of animals show the value deficit pattern, though some show effort deficits. This heterogeneity is honestly reported and the overall pattern supports the value interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Performance on sure-bet trials and basic motor parameters (movement times, wait times) are spared following M2 and pStr inactivation, indicating that effects on uncertain trials are not due to motor impairment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 provide critical control data showing that inactivation effects are specific to uncertain decisions. The sure-bet data (Figure 5d) and movement parameter data (Figure 5\u2014figure supplement 7) rule out simple motor explanations. This strengthens the interpretation that inactivations affect value computations rather than motor execution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "M2 and pStr have a lateralized, modality-independent role in computing the expected value of actions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is the main conclusion from the inactivation experiments. It is well-supported by the convergent evidence from claims C56-C66, showing modality-independence, action-specificity, value-model fits, and sparing of motor parameters. This interpretation reconciles the current findings with previous literature on these regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C3",
+      "C8",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Lapses reflect uncertainty-guided exploration, representing a strategic trade-off between exploitation and exploration. This model makes three key predictions that are confirmed: (1) more lapses under higher uncertainty, (2) stimulus-specific reward effects on lapses, and (3) effects of perturbations to action-value encoding regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C8 state the main hypothesis and conclusion. Claims C68-C70 summarize the three key predictions that were tested and confirmed through the behavioral and neural experiments. The convergent evidence from multiple experimental approaches (multisensory integration, reward manipulations, neural inactivations) provides strong support for this interpretation over alternative models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Lapses are a well-established phenomenon in perceptual decision-making, traditionally treated as nuisance errors from inattention or motor noise, but their cognitive mechanisms remain poorly understood despite their importance for accurate psychometric parameter estimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C9-C12 establish the background and motivation from prior literature. These are well-cited claims about the field's understanding of lapses. This provides appropriate context for the novel contribution of the paper.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Traditional explanations for lapses include pre-decision noise from fluctuating attention (inattention model, variable precision model) and post-decision noise from motor errors or decision imprecision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 describe existing models from the literature with appropriate citations. These establish the alternative hypotheses that the paper tests against. The characterization of these models is accurate based on the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Previous observations show that lapses vary with learning, differ across stimuli within subjects, are elevated in children and patient populations, and are affected by perturbations to motor cortex and striatum, suggesting they may reflect integral decision-making processes rather than peripheral noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 cite multiple studies showing patterns that challenge fixed-noise explanations for lapses. These observations from prior literature motivate the need for a better explanation and set up the paper's contribution. The citations are appropriate and the characterization is accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "The ideal observer model predicts more certain rate estimates and steeper psychometric curves on multisensory trials, with perfect performance (asymptotes at 0 and 1) on the easiest stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 describe standard predictions from ideal observer theory. These are well-established theoretical predictions that serve as the baseline for comparison. The predictions are correctly derived from the model presented in the Methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "Multisensory trials show a slight bias toward high rates compared to unisensory trials, potentially reflecting weak influence of total event count in addition to rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 reports an observation with a speculative explanation citing previous work (Odoemene et al., 2018). This is a minor observation that doesn't affect the main conclusions about lapses. The speculation is appropriately qualified and cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "Thompson sampling, a form of uncertainty-guided exploration, is asymptotically optimal in many general environments and achieves lower regret than other exploration strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 cites theoretical results from the literature (Leike et al., 2016) and shows simulations in Figure 3\u2014figure supplement 2c. This establishes the theoretical optimality of the proposed mechanism. The citation is appropriate and the simulation supports the claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Value-based considerations have provided useful insights into apparently sub-optimal behavior in perceptual tasks, including speed-accuracy tradeoffs and the importance of exploration in uncertain environments. Thompson sampling can be implemented through sampling from learned value distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 provide theoretical context from the literature on value-based decision-making and exploration. These are well-established concepts with appropriate citations. This contextualizes the paper's contribution within the broader literature on decision-making.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Lower lapse rates on multisensory trials have been reported in other studies (rats, humans), and children show higher lapse rates consistent with greater exploratory behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 cite observations from other studies that are consistent with the exploration model. These provide external validation for the patterns observed in this study. The citations are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "One-sided reward manipulations distinguish between errors from lack of stimulus knowledge (inattention) versus uncertainty about action values (exploration).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 articulates the theoretical logic behind the reward manipulation experiments. This is a valid inference about how the experimental design can distinguish between competing hypotheses. The logic is sound and supported by the experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "The interpretation that inactivation effects arise from devaluation of contralateral action values reconciles previous findings of asymmetric inactivation effects with the known role of M2 and striatum in encoding action value during value-based decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 provide theoretical integration with previous literature. The interpretation is supported by the current data and reconciles apparently conflicting findings about these brain regions. The citations to previous work are appropriate and the synthesis is valuable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Multiple lines of evidence from the literature suggest dopamine may modulate uncertainty-guided exploration: dopamine signals reflect uncertainty, dopamine manipulations affect exploration, and dopaminergic disorders disrupt uncertainty-dependent lapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C87 cite multiple studies linking dopamine to exploration and lapses. These provide a mechanistic hypothesis for future work. The citations are appropriate and the synthesis suggests a promising direction, though this remains speculative for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C22",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The behavioral task and experimental methods are well-established, with rats performing 700-1200 trials per day across 18 conditions, and muscimol inactivations performed at specified concentrations for M2 and pStr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22 and C88-C94 describe the methods used in the study. These are clearly reported and cite previous work using similar methods. The task design, trial numbers, and inactivation parameters are appropriate for the questions being asked. The methods are reproducible based on the description provided.",
+    "result_type": "MINOR"
+  }
+]

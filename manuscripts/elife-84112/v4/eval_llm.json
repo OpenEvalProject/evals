@@ -1,0 +1,333 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C16"
+    ],
+    "result": "The authors identify incomplete, non-specific, and inhomogeneous staining as a major bottleneck preventing widespread use of tissue clearing techniques for imaging large volumes of human tissue. This problem is particularly acute when protocols developed for one antibody or tissue type are extended to different antibodies or tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9, and C16 establish the motivation for the study based on known challenges in the field. These are well-established problems in tissue clearing and IHC that are supported by the literature citations and the subsequent experimental work addressing these issues.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C64",
+      "C65"
+    ],
+    "result": "The authors empirically determined that tissue sections 0.5-1.0 mm thick with antibody incubation times of 18-24 hours are sufficient to assess IHC staining quality for protocol optimization, though signal at 24 hours may be limited by antibody depletion. For 500 \u03bcm mouse tissue, 3 days of incubation is sufficient for thorough staining with no downsides to longer incubation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C18, C64, and C65 are supported by empirical data shown in Figures 1-3 and supplementary figures. The methodology is clearly described and the tissue thickness and incubation times are validated experimentally, providing practical parameters for the optimization workflow.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C60"
+    ],
+    "result": "Different protocol conditions have differential effects on NeuN and Glut1 antibody staining quality. Increasing delipidation to 2 days improved NeuN but not Glut1 staining, while 3 days of delipidation decreased staining quality for both antibodies (except DAPI). Epitope unmasking at 50\u00b0C for 1 hour improved both antibodies, glycine treatment inhibited Glut1 but not NeuN, and room temperature antibody incubation improved both.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C25 and C60 are well-supported by experimental data in Figures 3-4 with quantitative analysis. The differential effects of protocol variations on different antibodies are clearly demonstrated, supporting the main conclusion that optimization is needed for each antibody-antigen pair. Statistical comparisons are provided in Figure 3c.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26"
+    ],
+    "result": "DAPI staining appears insensitive to the different IHC protocols tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 is supported by data in Figure 4 showing consistent DAPI staining across multiple protocol conditions. This is an important control demonstrating that the observed effects are specific to antibody-antigen interactions rather than general tissue properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C30"
+    ],
+    "result": "Inclusion of PFA in the hydrogel had opposite effects on different antibodies: it decreased IHC quality for Glut1 and NeuN but significantly improved staining of dopamine receptor 2. The optimal protocol for Glut1, NeuN, and DAPI would result in no staining of dopamine receptor 2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C28, and C30 are supported by experimental data in Figure 4\u2014figure supplement 1. This demonstrates a critical finding that no single protocol may be optimal for all antibodies, and some targets may require incompatible conditions for multiplexed staining.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "The optimal protocol for simultaneously staining Glut1, NeuN, and DAPI involves delipidation for 2 days, epitope unmasking at 50\u00b0C for 1 hour, and room temperature antibody incubation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 is supported by the systematic comparison of protocol conditions in Figures 3-4. The determination of optimal conditions is based on quantitative metrics of staining quality across multiple protocol variations, providing a data-driven recommendation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C31",
+      "C48",
+      "C50"
+    ],
+    "result": "The authors demonstrate that procedural differences do not influence every antibody-antigen pair in the same way, and minor protocol changes can have profound effects on labeling efficiency. Therefore, optimal IHC protocols should be determined for each individual target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C31, C48, and C50 represent the central conclusion of the study, supported by extensive experimental data across Figures 3-7 showing differential responses of multiple antibodies to the same protocol variations. This is a well-supported major finding with clear practical implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Two different GFAP antibodies (monoclonal and polyclonal) showed similar trends in staining quality across all tested conditions, suggesting that conditions enhancing GFAP stability and preventing epitope denaturation benefit all GFAP antibodies. This indicates that IHC of GFAP is limited more by epitope denaturation than antibody denaturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 are supported by experimental data in Figure 5 comparing monoclonal and polyclonal GFAP antibodies. The similar response patterns provide evidence for the interpretation that epitope preservation is the limiting factor, though the inference in C34 could benefit from additional controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C66"
+    ],
+    "result": "There was significantly more variability between tau antibodies than GFAP antibodies, primarily because DAKO total tau antibody could not effectively penetrate beyond the tissue surface, though this may be due to poor secondary antibody penetration. All three tau antibodies labeled similar structures in traditional thin-section IHC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C36-C38 are supported by data in Figure 6 and supplements, but C66 acknowledges uncertainty about whether the DAKO penetration issue is due to the primary or secondary antibody. This confounding factor limits the interpretation, and the authors appropriately note this limitation. Additional experiments with directly conjugated DAKO would resolve this uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "AT8 and HT7 anti-tau antibodies showed similar trends in optimal IHC protocols in mouse tissue expressing human tau and showed no labeling in knockout mice lacking tau expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39 and C40 are supported by data in Figure 6\u2014figure supplements 3 and 4. The negative control in knockout mice is particularly important for validating antibody specificity and strengthens confidence in the positive results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C54",
+      "C55"
+    ],
+    "result": "Mouse tissue is a good model system for determining large-volume IHC protocols for human samples. Testing of NeuN and Glut1 in human tissue showed similar changes in staining quality and depth compared to mouse tissue across protocol variations, though tissue preparations must be identical.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C41-C44, C54-C55 are supported by comparative data in Figure 7 showing parallel responses to protocol variations in mouse and human tissue. This is a surprising and practically important finding that enables protocol optimization using more readily available mouse tissue. The caveat about identical preparation (C55) is appropriate given the observed sensitivity to protocol variations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "The NeuN antibody appears to accumulate off-target in human tissue, which is not observed in mouse tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 is supported by visual observation in the experimental data comparing mouse and human tissue. This highlights a limitation of the NeuN antibody for human tissue studies and demonstrates that not all aspects of antibody performance translate perfectly between species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "Following the optimized protocol, the authors achieved complete penetration and simultaneous labeling of 1 mm thick human tissue with NeuN, Glut1, and AT8 antibodies, with well-defined Glut1-labeled vasculature and AT8-labeled tau that could be easily quantitated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46 and C47 are supported by data in Figure 8 demonstrating successful application of the optimized protocol to thick human tissue. This validates the practical utility of the optimization approach and demonstrates the quality of staining achievable with proper protocol selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "Poor staining is most often due to denaturation or blockage of the epitope rather than the antibody.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 is supported by the GFAP antibody comparison data (C32-C34) showing similar responses for different antibodies against the same target. However, this conclusion is based primarily on one target (GFAP) and the tau data show more variability, so the generalization could be strengthened with additional targets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "Using combinations of antibodies in the same tissue may require using a protocol with conditions that are acceptable for all antibodies, rather than conditions that are optimal for each individual antibody.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 is a logical inference from the experimental data showing differential optimal conditions for different antibodies (e.g., C27-C30). This is an important practical consideration for multiplexed staining experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Temperature, fixation conditions, and other investigated conditions have greater influence as tissue volume increases, and differences in staining are often not apparent at the surface. Therefore, tissue sections that are too thin do not allow for appropriate optimization of IHC protocols for thick tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52 and C53 are supported by the depth-dependent staining data throughout Figures 3-7 showing that protocol differences become more apparent with depth. This is an important methodological insight that justifies the use of 0.5-1.0 mm tissue sections for optimization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The requirement for human tissue to be processed longer than comparable-sized rodent tissue is not due to intrinsic differences between species, but rather differences in tissue state at the start of clearing experiments. Human tissue is often stored in fixative for extended periods, and even small increases in PFA exposure can significantly influence IHC quality and depth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 are supported by the mouse-human comparison data (Figure 7) and the PFA exposure experiments. The inference in C57 is reasonable given the similar responses when tissues are prepared identically, though direct testing of human tissue with varying fixation times would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "Samples can quickly become over-cleared and lose antigenicity, which may extend the amount of time previously reported as necessary for IHC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is supported by data showing reduced staining quality with 3 days versus 2 days of delipidation (C60). This is an important finding that challenges assumptions about longer clearing times always being beneficial and suggests optimization of clearing duration is critical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "Optimal IHC conditions can be determined for new antibodies within a few days using the described methodology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 is supported by the description of the workflow timeline. The rapid turnaround time is a key practical advantage of the tissue library approach compared to traditional optimization methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "It is recommended to use primary antibodies directly conjugated to fluorophores whenever possible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 is a reasonable recommendation based on the reduced protocol length and the uncertainty about secondary antibody penetration (C66). However, the experimental support is indirect, and direct comparison of conjugated versus unconjugated versions of the same primary antibody would strengthen this recommendation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "Conditions that reduce antigenicity may significantly enhance the apparent penetration rate, and depth to half-max staining does not separate issues of free antibody penetration speed from antibody depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is an important methodological caveat about interpreting the depth metrics used in the study. This demonstrates appropriate scientific caution in interpretation and acknowledges limitations of the quantification approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The authors provide detailed methodology for tissue sources, animal models, ethical approvals, baseline protocol specifications, tissue storage conditions, antibody concentrations, and sample stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C79 describe methodological details that are clearly stated in the Materials and Methods section. These provide essential information for reproducibility and are appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C63"
+    ],
+    "result": "The authors provide background knowledge about tissue clearing techniques, IHC fundamentals, sources of variability in IHC, and tau protein biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C10-C15, and C63 represent established knowledge in the field that is appropriately cited and provides context for the study. These are well-supported by the literature citations provided.",
+    "result_type": "MINOR"
+  }
+]

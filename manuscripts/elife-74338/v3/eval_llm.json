@@ -1,0 +1,351 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Fbw7\u2212/\u2212 and Fbw7R/+ mutations in Hct116 cells caused differential expression of 11.3% and 5.4% of protein-coding genes respectively, with increased p21 expression and modest increases in doubling time and S-phase fraction in both mutant lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 are supported by RNA-Seq data with appropriate statistical analysis (FDR<0.05, fold change>1.5) and complementary proliferation assays. The quantitative results are clearly stated with specific percentages and fold changes, and the proliferation phenotype is consistent with p21 upregulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C103",
+      "C104"
+    ],
+    "result": "Both Fbw7 mutations caused widespread transcriptional changes, with some changes common to both mutant cell lines and others mutation-specific, exhibiting a gradient of deregulation (Fbw7\u2212/\u2212>Fbw7R/+>WT).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C103, and C104 are well-supported by RNA-Seq data, hierarchical clustering analysis, and PCA showing distinct transcriptional profiles. The gradient pattern is demonstrated through multiple genes and loci showing intermediate effects in Fbw7R/+ cells, with independent derivation of the two mutant lines strengthening the conclusion that shared features are attributable to Fbw7 status.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "Gene sets related to EMT were enriched in upregulated transcripts in both Fbw7\u2212/\u2212 and Fbw7R/+ cells, and KLF protein binding sites were highly enriched in upregulated but not downregulated genes in both mutant lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28 and C29 are supported by Enrichr analysis of differentially expressed genes with appropriate citations linking findings to known Fbw7 substrates. The enrichment analysis methodology is standard and the asymmetric enrichment of KLF sites (upregulated only) provides mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "H3K27ac signal within 2-kb regions flanking TSSs was positively correlated with gene expression (r=0.44, p<2.2e\u221216), while H3K27me3 was negatively correlated (r=\u22120.22, p<2.2e\u221216).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30 and C31 are supported by correlation analysis of CUT&RUN and RNA-Seq data with highly significant p-values. These correlations validate the expected relationships between histone modifications and transcription, serving as positive controls for the chromatin profiling experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Genome-wide analysis identified differential H3K27ac sites in Fbw7 mutant cells (9.4% increased and 6.9% decreased in Fbw7\u2212/\u2212; 7.6% increased and 4.3% decreased in Fbw7R/+), with differential sites predominantly located in introns and intergenic regions rather than promoter-proximal regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 are supported by CUT&RUN differential binding analysis with appropriate statistical testing (Fisher test, p<0.0001) and genomic annotation. The preferential location of differential sites in distal regulatory elements is a key finding that is well-documented with quantitative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "The AP-1 motif was found in 32% of H3K27ac sites upregulated in Fbw7\u2212/\u2212 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is supported by motif discovery analysis (MEME-ChIP) with significant enrichment (p<1.8e\u22125). The finding is strengthened by FIMO analysis showing the AP-1 motif is enriched in differential but not nondifferential sites, implicating Jun family transcription factors in Fbw7-dependent chromatin regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Fbw7 was found in both chromatin and soluble fractions in WT cells but exclusively in the soluble fraction in Fbw7R/R cells, suggesting that substrates recruit Fbw7 to chromatin, which was further supported by proteasome inhibition shifting Fbw7 to the chromatin fraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 are supported by chromatin fractionation and western blot data with appropriate controls. The inference that substrates recruit Fbw7 to chromatin (C39) is logical given that Fbw7R mutations specifically prevent substrate binding, and the bortezomib experiment (C40) provides additional mechanistic support by stabilizing Fbw7-substrate complexes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Differential binding analysis showed that 5.3% and 3.8% of Jun sites and 2.2% and 3.3% of Myc sites exhibited differential occupancy in Fbw7\u2212/\u2212 and Fbw7R/+ cells respectively, with differential sites predominantly located in introns and intergenic regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 are supported by CUT&RUN differential binding analysis with appropriate statistical testing (Fisher test, p<0.001 for Myc, p<0.0001 for Jun). The genomic distribution analysis parallels the H3K27ac findings and is well-documented with quantitative data and statistical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Approximately 39% of genes with increased promoter-proximal Jun occupancy and 46% of genes with decreased promoter-proximal Jun occupancy in Fbw7\u2212/\u2212 cells exhibited corresponding changes in RNA expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47 and C48 are supported by integrated analysis of CUT&RUN and RNA-Seq data. The concordance rates (39% and 46%) demonstrate functional significance of Jun occupancy changes, though the authors appropriately note that many genes with differential Jun binding were either not captured or did not show significant expression changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "48% of differential Jun sites in Fbw7R/+ cells and 35% of differential Jun sites in Fbw7\u2212/\u2212 cells were common to both mutant cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49 and C50 are supported by overlap analysis with statistical validation (Fisher test, p<0.0001). The substantial overlap between independently derived cell lines strengthens the conclusion that these shared sites reflect direct consequences of Fbw7 mutations rather than clonal variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Approximately 20% of Myc and Jun binding sites overlapped in WT cells, and at co-occupied sites, Jun and Myc exhibited coordinate regulation by Fbw7 (78 sites with both increased, 53 sites with both decreased, and no sites with discordant changes in Fbw7\u2212/\u2212 cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 are supported by overlap analysis with statistical validation (Fisher test, p<0.0001). The complete absence of discordant changes (C54) is a striking finding that strongly supports coordinate regulation of Jun and Myc at shared binding sites, though the mechanism underlying this coordination requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "CIITA and MHC Class II genes were upregulated in Fbw7\u2212/\u2212 cells, with increased Jun and Myc occupancy at CIITA upstream regulatory elements, elevated CIITA pIII isoform expression, and increased MHC Class II protein surface expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55, C59-C66 are supported by multiple complementary approaches including RNA-Seq, CUT&RUN, RT-PCR, qPCR, flow cytometry, and western blotting. The mechanistic link from TF occupancy to CIITA expression to MHC Class II upregulation is well-established through this multi-level analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "CIITA expression was increased in Fbw7 mutant primary CRCs in TCGA datasets and in Fbw7 mutant CRC cell lines in the Cancer Cell Line Encyclopedia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67 and C68 are supported by analysis of TCGA and CCLE datasets. However, the authors appropriately note that TCGA tumors contain immune infiltrates, which could contribute to CIITA expression, making the CCLE cell line data more definitive for tumor cell-intrinsic effects. The analysis may underrepresent MHC Class II upregulation in Fbw7\u2212/\u2212 tumors since many contain Fbw7R/+ mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "MHC Class I genes were not differentially expressed in Fbw7 mutant cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 is supported by RNA-Seq data showing no differential expression of MHC Class I genes. This specificity for MHC Class II upregulation is important for understanding the mechanism and distinguishes these findings from other studies showing MHC Class I changes with Fbw7 mutations in different contexts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Acute Fbw7 deletion in NSCs caused differential expression of ~9% of protein-coding genes with enrichment of pathways similar to Hct116 cells (EMT, ECM, p53, MHC Class II, KLF-binding sites), and Jun occupancy changes (8.3% increased, 4.1% decreased) predominantly in introns and intergenic regions, including upregulation of CIITA and MHC Class II genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C76 are supported by RNA-Seq, Enrichr analysis, and CUT&RUN data in NSCs. The conservation of findings across two disparate cell systems (transformed clonal CRC cells vs. non-transformed non-clonal NSCs with acute deletion) strongly supports the conclusion that these features reflect fundamental Fbw7 functions rather than cell-type-specific or clonal effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "In NSCs, Jun and Myc were bound at CIITA regulatory regions, but only Myc occupancy was increased in Fbw7\u2212/\u2212 NSCs, and NSCs express a basal level of CIITA unlike Hct116 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 are supported by CUT&RUN and RNA-Seq data in NSCs. The difference from Hct116 cells (where both Jun and Myc occupancy increased) suggests cell-type-specific mechanisms of CIITA regulation, though both cell types show Fbw7-dependent CIITA upregulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Fbw7 loss affected approximately 10% of expressed genes, but only relatively small subsets of mapped H3K27ac and Jun/Myc binding sites were affected, with most differential sites falling within distal regulatory elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 are supported by the comprehensive RNA-Seq and CUT&RUN analyses. The observation that only small subsets of binding sites are affected despite widespread transcriptional changes is an important finding that suggests context-specific Fbw7 function, though the mechanisms underlying this specificity remain to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "By targeting an enhancer rather than individual promoters, Fbw7 might cooperatively regulate multiple genes via a single regulatory region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C83 is a speculative interpretation of the genomic distribution data. While the preferential location of differential sites in distal regulatory elements is well-established, the hypothesis that Fbw7 cooperatively regulates multiple genes through single enhancers requires direct experimental validation, such as enhancer deletion or functional studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Fbw7R/+ mutations may stabilize substrates requiring fully functional Fbw7 dimers, and the reduced transcriptional consequences in Fbw7R/+ cells may reflect regulation of just those substrates, consistent with the 'just-enough' model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84-C86 are speculative interpretations with supporting citations but lack direct experimental validation in this study. While the intermediate phenotype of Fbw7R/+ cells is well-documented, the mechanistic explanation involving dimer-dependent functions requires additional experiments such as testing substrate-specific effects or dimer disruption studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "Regulation of cancer-associated processes like EMT, ECM, and cell migration may be critical and shared consequences of Fbw7\u2212/\u2212 and Fbw7R/+ mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C87 is an inference based on enriched gene sets, but the authors appropriately note that the biological significance requires experimental validation. The enrichment analysis provides strong correlative evidence, but functional studies (e.g., migration assays, EMT markers, substrate identification) are needed to establish causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "The remarkably similar consequences of Fbw7 loss in Hct116 cells and NSCs suggest these features are fundamental properties of Fbw7's normal function and tumor suppression, with EMT and ECM pathways representing core Fbw7 targets conserved across cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88 and C89 are supported by the conservation of findings across two disparate cell systems with different experimental approaches (chronic vs. acute deletion, clonal vs. non-clonal). The inference that conserved features reflect fundamental Fbw7 functions is logical, though testing in additional cell types would further strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "KLF proteins are potential mediators of Fbw7-dependent transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C90 is an inference based on enrichment of KLF binding sites in upregulated genes and the fact that several KLF proteins are Fbw7 substrates. While the correlative evidence is strong, direct experimental validation (e.g., KLF knockdown/overexpression, ChIP for specific KLF proteins, or analysis of KLF protein levels) is needed to establish KLF proteins as mediators.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "Fbw7 loss augments CIITA expression through increased Jun and Myc occupancy at regulatory regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 is supported by the integrated CUT&RUN and RNA-Seq data showing coordinate increases in Jun/Myc occupancy, active histone marks, and CIITA expression. However, the causal relationship would be strengthened by perturbation experiments such as Jun/Myc knockdown or mutation of the binding sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C10",
+      "C97",
+      "C99"
+    ],
+    "result": "Fbw7 mutations may have immunotherapeutic implications for Fbw7-associated cancers, potentially conferring better prognosis in CRCs through MHC Class II upregulation, leading to increased immunogenicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10, C97, and C99 are speculative interpretations of the MHC Class II upregulation findings. While the correlation between Fbw7 mutations and CIITA expression is established, and the association between MHC Class II expression and favorable prognosis is cited, direct evidence linking Fbw7 mutations to clinical outcomes or immune responses is lacking. The cited observation that Fbw7 mutations and metastasis rarely co-occur is correlative and requires validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C105"
+    ],
+    "result": "The shared consequences of Fbw7 loss in Hct116 cells and NSCs support the conclusion that these observations reflect shared and direct consequences of Fbw7 loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C105 is supported by the conservation of findings across two different cell systems with different experimental designs. The use of non-clonal NSCs with acute deletion specifically addresses concerns about clonal variation in the Hct116 experiments, strengthening the conclusion that shared features are attributable to Fbw7 status.",
+    "result_type": "MAJOR"
+  }
+]

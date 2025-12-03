@@ -1,0 +1,230 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C119",
+      "C120"
+    ],
+    "result": "A well-resolved phylogeny of TRP channels was obtained, recovering monophyly with 98% support and dividing the family into two main groups: GI-TRPs (containing TRPA1, TRPV, TRPVL, TRPC, TRPGamma, TRPN1, TRPY/TRPF, TRPM, and TRPS) and GII-TRPs (containing PKD2 and MCLN). Within GI-TRPs, four well-supported clades were identified, and phylogenetic positions of unicellular TRP sequences were determined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C29 and C119-C120 collectively present phylogenetic results with strong bootstrap support values (98% for monophyly, and high support for major clades as shown in Figure 1). The methodology includes appropriate outgroups (KCNA2 and SCN8A), multiple tree searches with varied parameters, and ultrafast bootstrap validation. The phylogenetic hypothesis is well-supported by the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Multiple sequence alignment analysis revealed that transmembrane regions are well-defined and conserved, with gaps mostly confined to linkers between TM segments. Specific gap patterns characterize different subfamilies, such as longer preTM1-TM1 linkers in TRPM channels and extended TM3-TM4 loops in TRPC family.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C37 describe observations from multiple sequence alignments shown in Figures 2a and 2\u2014figure supplement 1. The patterns are clearly visible in the provided figures and are consistent with previous structural alignment studies (Huffer et al., 2020). The observations are descriptive and well-documented in the alignment data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C51",
+      "C52",
+      "C64"
+    ],
+    "result": "A discrete set of 12 highly conserved residues (W F \u03a6 G \u03a6 \u03a6 \u03a6 N L I A W; identity>90%) was identified as a fingerprint for GI-TRP channels. About 69% of TRP channels analyzed have all 12 residues, and 95% contain at least 9 of these conserved side chains. Different subfamilies show varying degrees of conservation (TRPVs, TRPCs, TRPMs: 12; TRPNs: 11; TRPA1: 10; TRPY: 8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40, C43-C46, C51-C52, and C64 present sequence conservation analysis results shown in Figure 2 and Table 1. The conservation percentages are clearly documented, and the fingerprint identification is corroborated by HMM analysis (C57, Figure 2\u2014figure supplement 2). The statistical thresholds (>90% identity) are appropriate and consistently applied across the dataset of 1481 sequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Comparison with non-TRP channels shows that voltage-gated potassium channels (KvAP: 5 residues, Kv1.2: 3 residues) and TPC channels (D1: 6 residues, D2: 5 residues) have fewer fingerprint residues than TRP channels. TPC and bacterial Nav channels exhibit the highest conservation scores outside the TRP family.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 and C59-C63 present comparative sequence analysis results documented in Table 1. The comparison provides context for the specificity of the TRP fingerprint by showing lower conservation in related channel families. The data support the conclusion that the fingerprint is relatively specific to TRP channels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C73",
+      "C75",
+      "C76"
+    ],
+    "result": "Structural mapping identified three well-defined patches of fingerprint residues: P1 (pre-TM1, TM1, TM4-TM5 linker, TDh), P2 (selectivity filter region with three phenyl residues), and P3 (lower gate region). An additional conserved aromatic (Tyr441) was identified in TM1. The three-dimensional arrangement of the fingerprint is robust across TRP structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68, C73, C75-C76 describe structural analysis results shown in Figure 3. The patch identification is based on structural mapping of conserved residues, and the 3D arrangement is validated by comparison with published structural alignments (Huffer et al., 2020, Figure 3\u2014figure supplement 1). The structural conservation is well-documented across multiple TRP structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Evolutionary coupling analysis (ECA) shows the highest covariance scores between the TM4-TM5 linker and the TDh, supporting the structural observation of conserved interaction between Gly563 and Trp697. ECA also links TM2 to the TDh, potentially involving lipid molecules like PIP2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 present results from evolutionary coupling analysis shown in Figure 3\u2014figure supplement 2. The ECA results corroborate structural observations and are appropriately interpreted. The inference about lipid involvement (C82) is reasonable given that direct structural contact is not observed, and is supported by citations to previous literature on lipid binding in this region.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Distance matrix analysis across 138 TRP structures shows that fingerprint residues within the same patch maintain low mean distances and low normalized variance, indicating they remain in close proximity across different conformational states. Regions of high variability are detected in pre-TM1, TM1-TM4, and between TM5-TM6, with fingerprint residues consistently located near regions of larger variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88, C90-C92 present statistical analysis of distance matrices shown in Figure 3d-e and Figure 3\u2014figure supplement 4. The methodology is clearly described (C\u03b2-C\u03b2 distances, feature selection with <4% gap frequency, 138 structures analyzed). The results appropriately characterize both conserved proximity within patches and variability in connecting regions, consistent with the multiple conformational states in the dataset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "An aromatic core (AC) composed of 5-8 inward-facing aromatic residues was identified in the TM1-TM4 region, present in all TRP subtypes and connecting 3-4 helices within the ligand-binding domain. TRPV1-4 exhibits the most extensive AC (8 aromatics with ordered stacking), while TRPA1 shows 5 aromatics without clear stacking, and crTRP1 does not form a compact-extended AC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95, C97-C102 describe the aromatic core identification shown in Figure 4. The analysis is based on structural inspection of multiple TRP structures and is supported by quantitative data in Figure 4\u2014figure supplement 1 (histogram of aromatic cluster sizes). The subfamily-specific differences are clearly documented and appropriately interpreted as potential specializations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C96",
+      "C109",
+      "C110"
+    ],
+    "result": "Voltage-gated potassium and sodium channels occupy equivalent positions with charged amino acids, short aliphatic chains, or aromatics at the membrane-water interface, contrasting with the TRP aromatic core. TPC channels show a rudimentary aromatic core in domain 1 (3 aromatics) that is less cohesive than in TRPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96, C109-C110 present comparative structural analysis shown in Figure 4a, 4c, and Figure 4\u2014figure supplement 1. The comparison with voltage-gated channels and TPCs provides context for the uniqueness of the TRP aromatic core. The structural observations are clearly documented in the figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The aromatic core is hypothesized to impart rigidity to the TM1-TM4 region and functionally link these helices. Distance analysis shows large variability in the TM1-TM4 region overall, but minimal change in distances among conserved aromatics, suggesting they stitch channel machinery in place rather than acting as a switch. Subfamily-specific differences in connectivity patterns support progressive structural transitions enabling functional specialization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C108 present a mechanistic hypothesis (C103) supported by distance analysis (C104-C105, Figure 4\u2014figure supplement 2). While the structural observations are sound, the functional interpretation (C106) is speculative and would require experimental validation through mutagenesis or other functional studies. The inference about progressive specialization (C108) is reasonable but remains a hypothesis requiring further testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "A conserved inter-subunit interaction was identified between a residue at the middle of TM4 and a residue preceding the signature residue in TM5 (Phe591 in rTRPV1), present in all surveyed structures despite varying in nature. This interaction potentially connects TM4 and TM5 from different subunits and may support long-range communication between patches P1 and P2 via the aromatic core in TRPV channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C113-C118 describe a conserved inter-subunit interaction shown in Figure 5. While the structural observation of the interaction is supported (C113-C114), the functional interpretations (C116-C118) are speculative. The proposed mechanism of long-range communication and functional connectivity would require experimental validation. The observation is interesting but the mechanistic claims remain hypothetical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Phylogenetic analysis of temperature-sensitive TRP channels suggests multiple gains and/or losses of temperature sensitivity across the family. Temperature sensitivity is conserved in TRPM subfamily (5/8 members), strongly conserved in TRPV group (except TRPV5/6), apparently lost in TRPCs (except TRPC5), and preserved in TRPA1 despite sequence changes in the allosteric nexus region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C126 present phylogenetic interpretation of temperature sensitivity phenotypes based on the established phylogeny and literature on functional properties. The inference of multiple gains/losses is reasonable given the phylogenetic distribution. However, the analysis is limited to interpretation of existing functional data rather than new experimental characterization of temperature sensitivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C128",
+      "C129"
+    ],
+    "result": "The collective molecular motion enabling temperature-dependent transitions involves a network of interactions including fingerprint residues Trp426 and Phe434, connecting to transmembrane helices via the aromatic core and TM4-TM5 linker/TDh interface. The conserved residues identified suggest new mutagenesis experiments to dissect the temperature-driven conformational wave.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C128-C129 present mechanistic speculation about temperature sensing based on integration of current findings with previous literature (Nadezhdin et al., 2021b; Kwon et al., 2021; Yang et al., 2018). While the hypothesis is plausible and builds on the structural findings, it remains speculative without direct experimental validation. Claim C129 appropriately frames this as a suggestion for future work.",
+    "result_type": "MINOR"
+  }
+]

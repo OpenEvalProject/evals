@@ -1,0 +1,342 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C43",
+      "C44",
+      "C51"
+    ],
+    "result": "The COVID-19 Infection Survey enrolled 440,479 participants from 217,887 households across the UK between April 2020 and March 2021, generating 3,312,159 RT-PCR test results with 27,902 (0.84%) positives. The survey used random household selection to provide a representative UK sample, recruiting consenting individuals aged 2+ years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C43, C44, and C51 provide consistent descriptive statistics about the study cohort, sampling methodology, and timeline. The data are internally consistent and the study design is clearly described with appropriate citations. The large sample size and representative sampling approach support the validity of subsequent analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Among positive tests, 37% detected three genes, 40% two genes, and 23% one gene, with median Ct of 29.2 (IQR 21.9-32.8). The majority of two-gene positives (86%) were ORF1ab+N from November 16, 2020 onwards, reflecting B.1.1.7 emergence with S-gene target failure. Single-gene positives almost invariably had Ct>30, while triple-gene positives and ORF1ab+N positives (compatible with B.1.1.7) showed widely varying Ct values even without symptoms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C10 present coherent viral detection patterns with appropriate statistical tests (Kruskal-Wallis p<0.0001) and cite external evidence for B.1.1.7 emergence. The observation that single-gene positives have high Ct while multi-gene positives show variation is biologically plausible and supported by Figure 1. The temporal association with B.1.1.7 is appropriately attributed to cited sources.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "The percentage reporting symptoms increased linearly as Ct values dropped from 35 (~30% symptomatic) to 28 (~60% symptomatic), but below Ct=28 the increase plateaued, reaching only ~70% at Ct=10.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11 and C12 describe a non-linear relationship between Ct values and symptom reporting, supported by Figure 2. The pattern is biologically plausible\u2014higher viral loads correlate with symptoms but not perfectly, consistent with asymptomatic transmission. The specific percentages and Ct thresholds are clearly stated and visualized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Positive tests were classified as 'higher' (77%), 'moderate' (17%), or 'lower' (6%) evidence based on Ct values, symptoms, and pre-test probability. 'Higher' evidence positives were more likely to be symptomatic (p<0.0001) and occur in households with other positives (p<0.0001), but had similar occupational risk factors (p=0.48) compared to 'moderate' evidence positives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 present a classification system with supporting statistical comparisons. The associations between evidence level and clinical/epidemiological features are internally consistent and statistically significant where claimed. However, the classification system itself is somewhat arbitrary (acknowledged by authors) and the definitions are referenced to Materials and methods rather than fully explained in these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "In multivariable regression, Ct values were independently lower (higher viral loads) with more genes detected (8.2 lower for triple vs single-gene, 95% CI 7.9-8.5), symptom reporting (2.0 lower, 1.8-2.2), first positive per participant (2.2 lower, 2.2-2.5), and household member positivity (1.4 lower, 1.2-1.6). Men had slightly lower Ct (0.3 lower, 0.1-0.5, p=0.001). Classic symptoms (cough/fever/anosmia/ageusia) showed stronger association (2.5 lower) than other symptoms (0.9 lower). No independent effects of age or deprivation were observed after adjustment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C25 present multivariable regression results with appropriate confidence intervals and p-values. The strongest predictor (number of genes detected) is clearly identified. The analysis appropriately adjusts for multiple factors and reports both significant and non-significant findings. Effect sizes are modest but precisely estimated given the large sample size. The statistical approach (quantile regression for median Ct) is appropriate for skewed data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C59",
+      "C60"
+    ],
+    "result": "When excluding number of genes detected and symptoms as potential mediators, Ct values were slightly lower with increasing deprivation (1.0 lower in most vs least deprived, 95% CI 0.6-1.5, p=0.0005) and in younger adults (those aged 17-24 had Ct 1.0 lower than those under 12 and 1.4 lower than those 70+, p=0.0001). This suggests age and deprivation effects on Ct are mediated through symptoms and number of genes detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C27, C59, and C60 present a mediation analysis showing that demographic effects operate through intermediate variables. The statistical approach is sound and the interpretation is appropriately cautious. The authors cite supporting (Jones et al., 2020) and contradictory (Jacot et al., 2020) prior work. The mediation framework is illustrated in Appendix 1-figure 2. This represents sophisticated epidemiological analysis of confounding and mediation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Ct values varied strongly over time (p<0.0001), being markedly higher in July-August 2020 when positivity rates were low. Ct values decreased in late August/early September and December 2020, coinciding with increases in symptom reporting and positivity rates. Ct values rose as positivity peaked during November 2020 and January 2021 lockdowns. Even within 'higher' evidence positives, median Ct varied over time, being higher in July/early August 2020 and after lockdowns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 describe temporal patterns in Ct values supported by Figures 3 and 4. The statistical significance is reported (p<0.0001) and the patterns are correlated with external data (ONS positivity estimates). The temporal dynamics are complex but consistently described across multiple evidence levels. The observation that Ct varies even within 'higher' evidence positives strengthens the finding that population-level viral burden changed over time.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C75",
+      "C76"
+    ],
+    "result": "'Lower' evidence positives formed a larger percentage of all tests during July/early August 2020 despite very low overall positivity (0.022%). From September 2020, 'lower' evidence positives increased proportionately with 'moderate' and 'higher' evidence positives. The lowest observed rate of 'low evidence' positives was 0.005%, providing an upper bound on false-positive rate and indicating test specificity of at least 99.995%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35, C75, and C76 present temporal patterns in evidence categories and infer test specificity. The logic is sound: if false-positives were constant, 'lower' evidence positives should not track with true positives. The proportionate increase from September supports genuine low-level infections rather than false-positives. The specificity estimate (\u226599.995%) is appropriately framed as an upper bound. This represents careful reasoning about test performance in a surveillance context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Among 6,540 participants with antibody testing, <5% were antibody-positive >30 days before first positive swab, rising to 12% in the 30 days before, 47% in the following 14 days, and 72-81% thereafter. Overall, 78% of 6,189 participants with post-positive antibody tests ever seroconverted, with higher rates in symptomatic (89%) vs asymptomatic (65%) individuals (p<0.0001). Median Ct was significantly lower in those who seroconverted (24.9, IQR 18.5-31.0) vs those who did not (33.0, IQR 29.9-34.3, p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C42 present seroconversion data with appropriate temporal stratification and statistical comparisons. The pattern (low pre-infection, rising post-infection) is biologically expected. The 78% overall seroconversion rate is lower than some prior studies but the authors appropriately explain this by their community setting with more asymptomatic/low viral load cases. The association between lower Ct (higher viral load) and seroconversion is biologically plausible and statistically robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "RT-PCR used the Thermo Fisher TaqPath kit for three SARS-CoV-2 genes (N, S, ORF1ab). Samples were called positive with at least N and/or ORF1ab detection (with or without S gene), without a specific Ct threshold. S gene alone was not considered reliable for positivity. Antibody positivity thresholds were >8 million units (fluorometric assay) or >42 units (colorimetric assay from March 1, 2021).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 describe laboratory methods with specific reagents, instruments, and thresholds. The RT-PCR approach (requiring N and/or ORF1ab) is conservative and appropriate. The lack of a fixed Ct threshold is explicitly stated and justified by the assay design. Antibody thresholds are cited to validation studies. These methodological details are essential for reproducibility and interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Ct values showed wide variation and were independently associated with several factors including symptoms, but individual-level effects were small compared to population-level variability. Triple-gene positives and B.1.1.7-compatible S-gene target failures without symptoms had widely varying Ct including many low values, potentially explaining super-spreading events. Lower Ct in those with classic symptoms (cough/fever/anosmia/ageusia) supports their importance for identifying infectious cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 synthesize key findings with appropriate citations to prior work. The observation that individual predictors have small effects relative to population variation is important for interpretation. The speculation about super-spreading (C54) is appropriately framed as potential explanation and cites relevant transmission dynamics literature. The inference about classic symptoms (C55) follows logically from the Ct associations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Lower Ct at first positive per participant likely reflects natural viral load dynamics post-infection, while higher Ct in those positive at their first study test reflects over-representation of long-term shedders. Lower Ct in men and non-white ethnicity, though small effects, are consistent with poorer outcomes in these groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 provide biological interpretations of statistical associations. The explanations are plausible and consistent with known infection dynamics and outcome disparities. However, these are inferences rather than directly demonstrated mechanisms. The authors appropriately note the effects are small and frame them as consistent with rather than proving causal relationships.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Temporal variation in Ct values with less severe infections during July/early August 2020 strongly refutes hypotheses that declining positivity was due to reduced viral fitness. Similar patterns were observed in other UK and European studies. Higher Ct even in 'higher' evidence positives during this period is consistent with shifting viral burden. Findings are consistent with lower viral inoculum, though the specific cause (behavioral, environmental, or other factors) cannot be determined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C66 present temporal findings and interpretations supported by external corroboration (REACT study, Lausanne data). The refutation of viral fitness decline (C61) is appropriately strong given the evidence. The speculation about causes (C66) is appropriately cautious, acknowledging multiple possible mechanisms. The consistency across evidence levels (C64) strengthens the inference of genuine viral burden shifts rather than artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Decreases in Ct values in July/early August 2020 preceded increases in positivity rates in England, while later Ct declines in early December coincided with (rather than preceded) positivity increases due to B.1.1.7 expansion. This difference may reflect faster B.1.1.7 transmission or greater sensitivity to Ct changes when case numbers are small.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 describe temporal relationships between Ct and positivity with appropriate caution about interpretation. The observation that timing differed between periods is clearly stated. The speculation about causes (C69, C70) appropriately presents alternative explanations without claiming to distinguish between them. This demonstrates careful epidemiological reasoning about lead-lag relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C8"
+    ],
+    "result": "Around 70% of positives had 'higher' evidence (2-3 genes detected), with only 0.1% of Ct values >37. Other UK studies (REACT, PHE Schools study) validated similar Ct thresholds, with samples Ct<37 confirmed on repeat testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71, C72, C73, and C8 provide assurance about result quality through internal metrics and external validation. The high proportion of multi-gene positives and very low proportion of high Ct values support test specificity. External validation from other UK studies strengthens confidence, though the authors appropriately note Ct values are not directly comparable across assays.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "False-positive rates should be approximately constant over time since they are random or driven by external factors. With 0.1% true prevalence, a test with 99.9% specificity yields 50% positive predictive value (PPV), while 99.5% specificity yields 17% PPV and 99.0% specificity yields 9% PPV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74, C93-C95 apply standard diagnostic test theory with correct calculations (citing Adams et al., 2020). The reasoning about temporal constancy of false-positives (C74) is sound, though the authors appropriately note cross-contamination could theoretically vary with prevalence. The PPV calculations illustrate the importance of specificity in low-prevalence settings and are mathematically correct.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Ct values show strong relationship with transmission to contacts. Prior studies found infectious virus recovered from only 8% (95% CI 3-18%) of samples with Ct>35, with no viral growth reported for Ct thresholds from >24 to >34 or higher. In this study, Ct values were 0.6 higher in positives at participants' first study test (where long-term shedders would be over-represented), but these comprised only 14% of positives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 cite prior work on Ct-infectiousness relationships and provide context for interpreting high Ct positives. The cited viral culture data (C78, C79) support that high Ct samples are less likely to yield infectious virus, though the wide range of reported thresholds indicates variability. The observation about long-term shedders (C80) provides evidence they are a minority of positives in this surveillance study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "A systematic review estimated 95% of adults with confirmed SARS-CoV-2 infection developed IgG antibodies peaking around 25 days, but only 23% of included studies were outpatient and 14% included only asymptomatic/mild disease. The lower seroconversion rate in this community study (78%) is likely explained by higher percentages without symptoms and higher Ct values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 appropriately contextualize the study's seroconversion findings relative to prior literature. The explanation for lower rates (community setting, more asymptomatic cases, higher Ct) is biologically plausible and consistent with the observed associations between symptoms/Ct and seroconversion. This demonstrates careful consideration of how study population affects results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "Presumed re-infections have been reported in other studies, including in individuals without previous functional/durable antibody responses. Data from this study and others suggest re-infections may occur in the presence of anti-spike antibodies, which correlate with neutralizing antibody titers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84 and C85 cite prior work on re-infections and report observing potential re-infections in antibody-positive individuals. However, the authors explicitly state whole-genome sequencing was not available to confirm re-infections, and acknowledge antibody results could reflect false-positives or identifier errors. Without genomic confirmation, these remain presumed rather than confirmed re-infections. The claim is appropriately cautious but the evidence is insufficient for strong conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Prior reviews estimated asymptomatic infection rates of 17-41% overall, but included many contact tracing studies. Higher rates (30-72%) were reported in screening and community surveillance studies. Studies generally indicate lower transmission rates from asymptomatic infection, which may be a proxy for viral load as a transmission determinant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 appropriately summarize prior literature on asymptomatic infection with relevant citations. The distinction between contact tracing and community surveillance studies is important for interpretation. The inference that lower transmission from asymptomatic cases may reflect lower viral load (C88) is plausible and consistent with this study's findings, though appropriately framed as a possibility rather than proven mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The findings support using Ct values and genes detected in public testing programs as an 'early warning' system for shifts in infectious load and transmission. Theoretical work has proposed linking effective reproduction numbers to population-level Ct. In this study, Ct declines preceded or coincided with positivity increases. Ct data are widely available in laboratory systems and could be used alongside risk factor and symptom information for public health responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 propose public health applications supported by the study findings and theoretical work (Hay et al., 2020). The observation that Ct changes preceded or coincided with positivity changes (C91) provides empirical support. However, the proposal for future use (C89, C92) is appropriately framed as potential application requiring further research, particularly regarding cross-assay comparability. The speculation about earlier detection in larger programs is reasonable but unproven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "Infection without recognition has potential for onward transmission, and unascertained infections are likely critical for avoiding resurgence after lifting lockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96 and C97 state general principles about asymptomatic/unrecognized transmission supported by citation (Hao et al., 2020). These are well-established concepts in infectious disease epidemiology and provide important context for interpreting the study's findings on asymptomatic infections and variable Ct values. The claims appropriately frame the public health significance of detecting infections regardless of symptoms.",
+    "result_type": "MINOR"
+  }
+]

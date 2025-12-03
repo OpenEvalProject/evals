@@ -1,0 +1,288 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The PVM infection model in RAGE-deficient mice successfully recapitulates key features of paucigranulocytic asthma, including increased mucus-secreting cells, increased airway smooth muscle mass, and significantly reduced levels of multiple cytokines including type I interferons (IFN-\u03b1, IFN-\u03b3) and pro-inflammatory mediators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C44 collectively establish the asthma model used in this study. The data in Figure 1 demonstrates significant increases in mucus secretion and ASM mass (C35-C36), along with significantly reduced cytokine levels (C37-C44), consistent with the paucigranulocytic asthma phenotype. The model validation is appropriately supported by comparison to prior work (C34) and provides the foundation for subsequent experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C67"
+    ],
+    "result": "Asthmatic mice infected with influenza A virus exhibited increased disease severity compared to non-asthmatic controls, characterized by greater weight loss, increased viral replication at 6 days post-infection, and impaired type I interferon responses (reduced IFN-\u03b1 and MX1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 and C67 are well-supported by experimental data shown in Figure 2. The weight loss data (C45), viral titre measurements (C46), and interferon response measurements (C47-C48) provide converging evidence for increased disease severity in the asthma model. Statistical significance is reported and the findings are consistent with the hypothesis linking impaired interferon responses to disease severity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Asthmatic mice showed significantly increased within-host viral diversity in the PB1 segment at 6 days post-infection, with 32 unique non-synonymous mutations detected in asthmatic samples compared to only 5 in non-asthmatic samples, concentrated around functionally important regions (priming loop, thumb, and C-terminal extension).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are supported by deep sequencing data presented in Figure 3 and Table 1. Shannon entropy analysis demonstrates significantly higher diversity in the PB1 segment (C49), mutation counting confirms the disparity between groups (C50), and structural mapping identifies functional clustering (C51). The 1% frequency threshold and read depth requirements are appropriate quality control measures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Two mutations unique to asthmatic mouse samples (S654N and K691R) were also detected at higher frequencies in clinical samples from asthmatic patients, with K691R reaching consensus-level frequency in two asthmatic mouse samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C52-C53 report intriguing correlations between mouse and human data (Table 1), but the clinical sample analysis has significant limitations. The authors acknowledge insufficient metadata to determine asthma phenotypes in patients, consensus sequences don't capture minority variants, and the statistical comparisons show marginal significance (p=0.051 for S654N, p=0.092 for K691R). The translational relevance remains uncertain without better-characterized clinical cohorts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Viruses isolated from asthmatic mouse lungs replicated to significantly higher titres than those from non-asthmatic mice in MDCK cells at 24 hours post-infection, and this increased replication was not associated with extensive additional in vitro adaptations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by in vitro replication data (Figure 5A) and sequence analysis of parent-daughter viral populations. The significantly higher replication at 24h in MDCK cells is clearly demonstrated (C54), and the comparison of pre- and post-replication sequences showing minimal new adaptations supports C55. However, only two viral samples were analyzed for adaptation, which is a limited sample size for this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The C693Y mutation identified exclusively in asthmatic hosts alters PB1-PB2 interactions through a predicted side chain interaction between PB1 C693Y and PB2 K32, and both C693Y and P651Q mutations increase viral polymerase activity compared to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 are supported by structural modeling (Figure 6A, C57) and minigenome assay data (Figure 7, C58). The FoldX predictions indicate stabilizing effects, the structural modeling identifies specific interactions (C57), and the functional assays demonstrate significantly increased polymerase activity for both mutations (C58). The convergence of computational and experimental evidence strengthens these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C91"
+    ],
+    "result": "Wild-type mice infected with asthmatic host-derived influenza virus exhibited significantly increased disease severity compared to those infected with non-asthmatic host-derived virus, including greater weight loss, lower blood oxygen saturation, higher viral titres, and upregulated cytokine responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 and C91 are well-supported by experimental data in Figure 8. Multiple independent measures of disease severity (weight loss, oxygen saturation, viral titres, cytokine levels) all show consistent increases with asthmatic-derived virus. This transmission experiment provides strong evidence that viral variants arising in asthmatic hosts have increased pathogenicity in naive hosts, supporting the broader conclusion in C91.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C75"
+    ],
+    "result": "Upon transmission to wild-type hosts, non-asthmatic-derived virus shows continued divergence in PB1 haplotypes while asthmatic-derived virus shows consolidation of mutations, suggesting that asthmatic hosts facilitate emergence of more pathogenic viral strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are supported by MDS analysis in Figure 9 showing distinct evolutionary trajectories. The divergence pattern for non-asthmatic virus versus consolidation for asthmatic virus suggests the latter contains pre-adapted, fitness-enhanced variants. Claims C65 and C75 represent reasonable inferences from the combined transmission and evolution data, though the caveat about transmission permitting (C75) appropriately acknowledges limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Influenza virus has high mutation rates due to poor polymerase proofreading, leading to rapid generation of viral variants within hosts, most of which are of reduced or unaltered virulence though some can display increased virulence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C10-C13 represent well-established background knowledge about influenza virus biology, appropriately cited to prior literature. These claims provide necessary context for the study but are not novel findings. The characterization of viral mutation rates and variant fitness distributions is standard virology knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C2",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Prior studies demonstrate that immunocompromised states (pregnancy, obesity) with impaired interferon responses are associated with increased influenza viral variants, increased viral loads, and enhanced virulence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C14-C18, C68-C71 accurately summarize prior literature on viral variant emergence in immunocompromised hosts. These are appropriately cited background claims that motivate the current study's focus on asthma. The authors correctly attribute findings to specific studies (Engels et al., Honce et al.) and use this foundation to justify their experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Asthma is a heterogeneous disease with multiple phenotypes showing variable associations with influenza severity; paucigranulocytic asthma affects up to 40% of patients in some populations and is associated with impaired interferon responses, making it a relevant model for studying viral variant emergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C19-C33 provide appropriate background on asthma heterogeneity and justify the focus on paucigranulocytic asthma. The epidemiological data (C20-C26) and phenotype descriptions (C28-C33) are well-cited. The apparent contradiction between clinical observations and allergic asthma mouse models (C27) motivates the study design. The rationale for studying this specific asthma subtype is well-established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The influenza polymerase complex structure and function are well-characterized, with specific regions (\u03b2-hairpin, C-terminus) playing critical roles in replication initiation and heterotrimer stability, and mutations in these regions can alter viral RNA yield and polymerase function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81 and C83-C85 represent established structural and functional knowledge about the influenza polymerase, appropriately cited to prior literature. This background information is necessary for interpreting the significance of the mutations identified in the study (particularly P651Q and C693Y) but does not constitute novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "The P651Q mutation may alter interaction with the 3' sugar-base of vRNA or benefit structural conformation during replication initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C82 is explicitly speculative ('it is possible that') and represents a mechanistic hypothesis rather than a demonstrated finding. While the speculation is informed by structural knowledge (C81) and the position of the residue, no direct experimental evidence is provided to test these specific molecular interactions. The minigenome assay (C58) shows functional effects but doesn't distinguish between the proposed mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "The absence of early type I interferon expression in asthmatic mice may allow emergence of viral variants that would be suppressed in healthy hosts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C72 represents a mechanistic interpretation that, while plausible and consistent with the data, is not directly tested. The correlation between impaired interferon responses and increased variants is demonstrated, but the causal mechanism (permissive environment vs. increased replication rounds) is not definitively established. This remains a reasonable hypothesis requiring further experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C89"
+    ],
+    "result": "At least a subset of asthma patients may be more susceptible to severe influenza and may be a source of new, more virulent influenza virus variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C9, and C89 represent the primary conclusions of the study, appropriately qualified with 'may be' and 'at least a subset.' These conclusions are supported by the convergence of multiple lines of evidence: increased disease severity in asthmatic mice (C45-C48), increased viral diversity (C49-C50), functional consequences of mutations (C58), and increased pathogenicity upon transmission (C59-C62). The authors appropriately acknowledge limitations (C90) while drawing reasonable inferences from their data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C92"
+    ],
+    "result": "The PB1 C693Y and P651Q mutations detected in asthmatic mice resulted in increased viral replication in epithelial cell lines and increased polymerase activity, contributing to increased diversity of influenza viral variants in the paucigranulocytic asthma model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86, C87, and C92 represent summary conclusions well-supported by the experimental data. The in vitro replication data (Figure 5), polymerase activity assays (Figure 7), and sequencing analyses (Figures 3-4, Table 1) provide converging evidence. These claims appropriately synthesize multiple experimental findings into coherent conclusions about the functional significance of the identified mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C66",
+      "C73",
+      "C74"
+    ],
+    "result": "Previous allergic asthma models showed protection from influenza, but in the current paucigranulocytic asthma model, non-asthmatic host-derived viruses showed adaptation with little morbidity while asthmatic host-derived virus caused increased morbidity in wild-type mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66, C73, and C74 appropriately contrast prior findings with current results. The citation of previous allergic asthma studies (C66) is accurate, and the transmission experiment data (C73-C74) clearly demonstrate differential outcomes. This comparison strengthens the argument that asthma phenotype matters for influenza outcomes and highlights the novelty of studying non-allergic asthma.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C88",
+      "C90"
+    ],
+    "result": "Single nucleotide variants can drastically change viral replication fidelity and pathogenicity, though paucigranulocytic asthma remains poorly understood and poorly characterized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 represents established virological knowledge appropriately cited to prior literature. Claim C90 is an honest acknowledgment of study limitations regarding the asthma phenotype used. Both claims are factually accurate and appropriately contextualize the study's findings and limitations.",
+    "result_type": "MINOR"
+  }
+]

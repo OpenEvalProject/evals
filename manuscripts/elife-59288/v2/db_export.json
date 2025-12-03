@@ -1,0 +1,1934 @@
+{
+  "submission": {
+    "id": "2df55797-9e8f-4525-bf6b-69b01af9e98d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T03:33:53.641784Z",
+    "updated_at": "2025-12-03T03:33:53.641784Z"
+  },
+  "content": [
+    {
+      "id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "submission_id": "2df55797-9e8f-4525-bf6b-69b01af9e98d",
+      "content_type": "manuscript",
+      "content_text": "# Discovery and characterization of a novel family of prokaryotic nanocompartments involved in sulfur metabolism\n\n## Authors\n\n- Robert J Nichols<sup>1</sup> ([ORCID: 0000-0002-8476-0554](https://orcid.org/0000-0002-8476-0554))\n- Benjamin LaFrance<sup>1</sup>\n- Naiya R Phillips<sup>1</sup> ([ORCID: 0000-0003-1836-5182](https://orcid.org/0000-0003-1836-5182))\n- Devon R Radford<sup>2</sup>\n- Luke M Oltrogge<sup>1</sup> ([ORCID: 0000-0001-5716-9980](https://orcid.org/0000-0001-5716-9980))\n- Luis E Valentin-Alvarado<sup>3</sup>\n- Amanda J Bischoff<sup>4</sup>\n- Eva Nogales<sup>1</sup> ([ORCID: 0000-0001-9816-3681](https://orcid.org/0000-0001-9816-3681)) \u2020\n- David F Savage<sup>1</sup> ([ORCID: 0000-0003-0042-2257](https://orcid.org/0000-0003-0042-2257)) \u2020\n\n### Affiliations\n\n1. Department of Molecular and Cell Biology, University of California, Berkeley Berkeley United States\n2. Department of Molecular Genetics, University of Toronto Toronto Canada\n3. Department of Plant and Microbial Biology, University of California, Berkeley Berkeley United States\n4. Department of Chemistry, University of California Berkeley Berkeley United States\n5. Howard Hughes Medical Institute, University of California, Berkeley Berkeley United States\n6. Molecular Biophysics and Integrated Bioimaging Division, Lawrence Berkeley National Laboratory Berkeley United States\n7. California Institute for Quantitative Biosciences (QB3), University of California, Berkeley Berkeley United States\n8. Molecular Biophysics and Integrated Bio-Imaging Division, Lawrence Berkeley National Laboratory Berkeley United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nProkaryotic nanocompartments, also known as encapsulins, are a recently discovered proteinaceous organelle-like compartment in prokaryotes that compartmentalize cargo enzymes. While initial studies have begun to elucidate the structure and physiological roles of encapsulins, bioinformatic evidence suggests that a great diversity of encapsulin nanocompartments remains unexplored. Here, we describe a novel encapsulin in the freshwater cyanobacterium Synechococcus elongatus PCC 7942. This nanocompartment is upregulated upon sulfate starvation and encapsulates a cysteine desulfurase enzyme via an N-terminal targeting sequence. Using cryo-electron microscopy, we have determined the structure of the nanocompartment complex to 2.2 \u00c5 resolution. Lastly, biochemical characterization of the complex demonstrated that the activity of the cysteine desulfurase is enhanced upon encapsulation. Taken together, our discovery, structural analysis, and enzymatic characterization of this prokaryotic nanocompartment provide a foundation for future studies seeking to understand the physiological role of this encapsulin in various bacteria.\n\n## Introduction\n\nSubcellular compartmentalization is an essential strategy used by cells to facilitate metabolic pathways that are incompatible with the rest of the cytosol. Contrary to common misconceptions that organelles are exclusive to eukaryotes, even prokaryotes partition metabolic pathways into unique chemical environments using subcellular compartments (Grant et al., 2018). For example, studies of the bacterial microcompartments called carboxysomes have shown how the complex sequesters the enzyme rubisco and facilitates substrate channeling by increasing the local concentration of CO2 (Oltrogge et al., 2020; Mangan et al., 2016; Kerfeld et al., 2018). In addition to modulating cargo activity, compartmentalization can also provide a means of sequestering toxic intermediates of metabolic pathways from the rest of the cell. For example, the propane-diol utilization (PDU) microcompartment sequesters a cytotoxic aldehyde intermediate from the cytoplasm and allows it to be subsequently converted by downstream, compartmentalized enzymes to efficiently generate the end products of the pathway (Sampson and Bobik, 2008; Crowley et al., 2010; Chowdhury et al., 2015; Kerfeld et al., 2018).\n\nRecently, another class of protein-bounded compartments, known as prokaryotic nanocompartments, has been discovered (Sutter et al., 2008). These nanocompartments, also called encapsulins, are smaller and less complex than microcompartments. They are typically found as a two-gene system which encodes a shell protein that self-assembles into an icosahedral capsid-like compartment, and a cargo protein that becomes encapsulated by the shell through a targeting peptide sequence (Giessen, 2016; Nichols et al., 2017). Many functionally diverse cargo proteins have been found to be associated with encapsulins, including ferritin-like proteins (FLP), iron mineralizing encapsulin cargo from firmicutes (IMEF), DyP-type peroxidases, and hydroxylamine oxidoreductase (HAO) (Sutter et al., 2008; Giessen et al., 2019; Giessen and Silver, 2017; Xing et al., 2020). The precise physiological role of these compartments remains elusive except for a few instances. Notably, the DyP-containing encapsulins from Myxococcus xanthus have been implicated in nutrient starvation and oxidative stress responses (Kim et al., 2009; Kim et al., 2019; McHugh et al., 2014). The FLP and IMEF containing encapsulins appear to be involved in iron storage and mitigation of toxic reactive oxygen species products of the Fenton reaction due to free iron during oxidative stress (Giessen et al., 2019; Giessen and Silver, 2017; He et al., 2016). Encapsulins are also thought to be integral to highly\u00a0specialized metabolism, such as that found in anammox bacteria, in which the HAO cargo has been hypothesized to reduce a cytotoxic hydroxylamine metabolic intermediate (Giessen and Silver, 2017; Kartal et al., 2013; Xing et al., 2020).\n\nBased on the evidence accumulated thus far, it appears that encapsulins play diverse physiological roles. Despite this diversity, encapsulation of redox reactions is a recurring theme (Nichols et al., 2017). Thus far, study of this expansive repertoire of encapsulins has been limited to the homologs of closely\u00a0related compartment shell proteins. Here, we describe a new family of nanocompartment systems that are evolutionarily distinct from those previously reported. Specifically, we implicated a role for this encapsulin family in the sulfur starvation response. Further, we have identified a unique cysteine desulfurase cargo enzyme and elucidated an N-terminal encapsulation targeting sequence that is necessary and sufficient for compartmentalization. Finally, we report a high-resolution structure (2.2 \u00c5) of the complex and identify the cargo binding site within the compartment. This structure greatly informs our model for the biochemical function of this novel organelle-like compartment.\n\n## Results\n\n### A novel family of predicted prokaryotic nanocompartments is widespread throughout bacterial phyla\n\nA unifying feature of the encapsulin nanocompartments is the shared HK97 phage-like fold of the shell protein (Giessen and Silver, 2017; Nichols et al., 2017). Bacteriophages belonging to the order Caudovirales also possess a major capsid protein that is structurally homologous to the HK97 fold. Given the shared homology of encapsulins and Caudovirales capsid proteins, an evolutionary relationship between the two has been proposed (Koonin and Krupovic, 2018; Krupovic et al., 2019; Krupovic and Koonin, 2017), and the existence of other bacteriophage-related nanocompartments beyond the close relatives of known encapsulins has been postulated (Radford, 2015; Giessen, 2016; Nichols et al., 2017). Recently, a bioinformatic study explored this possibility by searching prokaryotic genomes for phage capsid genes that are unlikely to be functional phages, but may actually be putative encapsulins (Radford, 2015). This search suggested that previously published encapsulins, hereafter referred to as Family 1 encapsulins, comprise a minor fraction of all encapsulin systems. Here, we report the first characterization of a novel encapsulin family, which we term Family 2. This novel family is even more prevalent than Family 1 encapsulins (Supplementary file 1) and is present in many model organisms. Despite the prevalence of Family 2 encapsulins, the experimental characterization of this family as a prokaryotic nanocompartment has never been explored.\n\nPhylogenetic analysis of the encapsulin shell proteins revealed that Family 2 encapsulins are distinct from the previously published Family 1 systems (Figure 1A). Family 2 further divides into what we propose as two distinct subfamilies, Family 2a and Family 2b. The subfamilies can be distinguished from each other by their phylogenetic clustering (Figure 1\u2014figure supplement 1). Notably, the two subfamilies are found in distinct genomic contexts. Family 2a is found adjacent to sulfur metabolism genes whereas Family 2b neighbors genes involved in terpenoid synthesis (Figure 1B; Figure 1\u2014figure supplement 2). Most prevalent among the Family 2a subfamily was the co-occurrence of a neighboring cysteine desulfurase gene, while the Family 2b shell genes were found to most often neighbor a polyprenyl diphosphate synthase gene (Supplementary file 2 and 3). The individual subfamilies can also be defined by the CRP/FNR cyclic nucleotide-binding domain that is predominantly found in the Family 2b shell sequences but not Family 2a. Our focus for the remainder of the paper will be on the Family 2a subfamily, which is widespread and found distributed in a polyphyletic fashion throughout 13 bacterial phyla (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/59288/elife-59288-fig1-v2.jpg)\n\n**Figure 1.:** (A) Maximum-likelihood phylogenetic tree of Family 2a encapsulin shell proteins using the T. maritima Family 1 encapsulin shell protein (WP_004080898.1) as a Family 1 representative. Scale bar, one substitution per site. (B) Genomic neighborhood of the Family 2a encapsulin shell gene from S. elongatus PCC 7942. (C) Size exclusion-chromatogram of purified SrpI shell protein (black solid line) and Bio-Rad gel filtration calibration standard (gray dashed line) using a Superose 6 Increase column (GE Life Sciences). Expected molecular weight was determined using Bio-Rad gel filtration calibration standard: 1. Thyroglobin (670 kDa) 2. \u03b3-globulin (158 kDa) 3. Ovalbumin (44 kDa) 3. Myoglobin (17 kDa) Vitamin B12 (1.4 kDa). (D) Negative stain TEM micrograph of resulting SrpI encapsulin-containing fraction post size-exclusion chromatography. Scale bar, 100 nm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59288/elife-59288-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Maximum likelihood phylogenetic tree of 1383 members of Family 2 encapsulins. Family 2a (dashed line grouping) and Family 2b (solid line grouping) represent two subfamilies. Family 2 encapsulins are found throughout 13 different bacterial phyla and are distributed in a polyphyletic fashion. Scale bar, one substitution per site.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/59288/elife-59288-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Schematic of representative genomic arrangements for Family 2b shell genes determined using the EFI-GNT web tool. One or both arrangements (A and B) may be found within a given genome. Family 2b shell genes possess a Crp/Fnr transcriptional regulator domain (gray) within the shell gene.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/59288/elife-59288-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** SDS-PAGE analysis of purified S. elongatus PCC 7942 Family 2 encapsulin (SrpI Enc) and T. maritima Family 1 encapsulin (Tm Enc). Lanes 1 and 2 correspond to samples that were not heat-denatured (Native). Lanes 3 and 4 correspond to samples that were heat denatured at 95\u00b0C for 15 min. Molecular weight marker (MW): Spectra Multicolor Broad Range Protein Ladder.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/59288/elife-59288-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Diameter of purified SrpI encapsulin determined by negative stain transmission electron microscopy.\u00a0Quantification of 180 particles from micrographs performed using FIJI image processing package.\n\nOne such occurrence of Family 2a is in the model cyanobacterium Synechococcus elongatus PCC 7942 (henceforth S. elongatus) and we sought to validate whether the predicted encapsulin shell gene (Synpcc7942_B2662, SrpI) was indeed part of a nanocompartment complex. Expression of the shell gene in Escherichia coli BL21 (DE3) cells, followed by purification and size-exclusion chromatography, revealed that the protein eluted with an estimated molecular weight of \u22482 MDa (Figure 1C), the typical size for many previously characterized encapsulins (Cassidy-Amstutz et al., 2016; Snijder et al., 2016). Consistent with the previously-characterized Family 1 encapsulin from Thermotoga maritima, a high-molecular-weight band was detected with SDS-PAGE analysis for non-heat denatured samples. Boiling the sample yielded a band at 35 kDa, the expected weight of the monomeric shell protein (Figure 1\u2014figure supplement 3; Cassidy-Amstutz et al., 2016). Negative stain transmission electron microscopy (TEM) of the purified sample indicated the complex forms a nanocompartment with an average diameter of 25\u00a0\u00b1\u00a01 nm (n\u00a0=\u00a0180) (Figure 1D, Figure 1\u2014figure supplement 4).\n\n### SrpI encapsulin is upregulated under sulfur starvation and hosts a cysteine desulfurase cargo protein\n\nPrevious work by Nicholson and colleagues in S. elongatus demonstrated that the encapsulin shell gene (Synpcc7942_B2662) is one of many whose mRNA expression level is upregulated upon sulfur starvation (Nicholson et al., 1995; Nicholson and Laudenbach, 1995). Thus, this gene, which is found on a plasmid encoding many sulfur-related genes, was termed SrpI for Sulfur regulated plasmid-encoded gene-I (Chen et al., 2008; Nicholson and Laudenbach, 1995). In order to validate this result at the protein level, we sulfur starved wild-type S. elongatus cells for the duration of a 48 hr time-course to detect the upregulation of the nanocompartment and, potentially, identify additional cargo via mass spectrometry.\n\nConsistent with previous studies of sulfur starvation in cyanobacteria, we observed the expected chlorosis phenotype due to the degradation of phycobilisomes (Collier and Grossman, 1992;\u00a0Cameron and Pakrasi, 2010). Chlorosis was confirmed by loss of phycocyanin absorbance at 620 nm (Figure 2A, Figure 2\u2014figure supplement 1). During this time-course, SDS-PAGE analysis of cell lysates also indicated upregulation of a high-molecular-weight complex (Figure 2B). Bands were excised, proteolytically digested, and analyzed via liquid chromatography\u2013mass spectrometry. After 48 hr of sulfur starvation, the top hits, as determined by total spectral counts, were the putative encapsulin shell protein, SrpI, and the product of the neighboring gene (Synpcc7942_B2661), a cysteine desulfurase (Figure 2C). While we were able to detect upregulation of SrpI and cysteine desulfurase during sulfur starvation, knockout mutants for these genes in S. elongatus PCC 7942 did not yield a growth defect phenotype under nutrient replete nor sulfur starvation conditions (Figure 2\u2014figure supplement 2). Taken together, these results suggest that the cysteine desulfurase, which neighbors the SrpI shell gene, is the encapsulated cargo protein (Supplementary file 2, Nichols et al., 2017).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/59288/elife-59288-fig2-v2.jpg)\n\n**Figure 2.:** (A) Absorbance spectra of S. elongatus liquid cultures under nutrient-replete conditions (+Sulfate) and sulfur starvation (-Sulfate) for 24 and 48 hr. Absorbance maxima of phycocyanin (PC) at 620 nm and chlorophyll (Chl) at 680 nm are indicated. Absorbance spectra are normalized to the same optical density at 750 nm. (B) Non-denaturing SDS-PAGE analysis of lysates from nutrient-replete and sulfur starved S. elongatus cultures visualized by silver stain. Inputs were normalized using absorbance at 280 nm. (C) Liquid chromatography-mass spectrometry of excised high-molecular-weight bands from SDS-PAGE analysis. Top protein hits from each condition are represented by total spectrum counts. Total spectrum count of all identified proteins can be found in Supplementary file 5.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59288/elife-59288-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Liquid cultures of S. elongatus PCC 7942 grown in nutrient replete medium (+Sulfate) or under sulfate starvation for 24 hr and 48 hr.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/59288/elife-59288-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Wild type, SrpI knockout-CmR, SrpI and CyD knockout-CmR, and NS3-CmR strains of S. elongatus PCC 7942 cells were (A) inoculated at OD750\u00a0=\u00a00.02 into nutrient replete BG-11 media with constant light (100 \u03bcE) at 30\u00b0C, bubbling in ambient air for mixing in a Photon Systems Instruments MC-1000 photobioreactor. (B) S. elongatus PCC 7942 strains were grown in in nutrient replete BG-11 until cells reached OD750\u00a0=\u00a00.4. Cells were washed three times and resuspended in sulfate dropout BG-11 media and grown in the photobioreactor with constant light (100 \u03bcE) at 30\u00b0C, bubbling in ambient air for mixing.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/59288/elife-59288-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Inputs were normalized using absorbance at 280 nm.\n\n### A disordered N-terminal domain targets cargo for SrpI encapsulation in vivo\n\nSequence alignment of the five cysteine desulfurases found in the S. elongatus genome revealed that the SrpI-associated cysteine desulfurase (Synpcc7942_B2661), hereafter named CyD, possesses a unique N-terminal domain in addition to the canonical cysteine desulfurase domain (Figure 3A, Figure 3\u2014figure supplement 1). This N-terminal domain is shared by cysteine desulfurases found adjacent to SrpI homologs in species possessing this encapsulin system. Structural prediction using the primary sequence of the SrpI-associated CyD revealed that the N-terminal domain (NTD) is highly disordered (Figure 3A). Intrinsically disordered domains are known to evolve rapidly, preserving bulk chemical characteristics even as the sequence diverges greatly (Moesa et al., 2012; Varadi et al., 2015). Accordingly, sequence conservation throughout the N-terminal domain is sparse. However, two motifs, \u2018LARLANEFFS\u2019 and \u2018AASPYYFLDG\u2019, can be found in most SrpI-associated CyD sequences (Figure 3\u2014figure supplement 2; Figure 3B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/59288/elife-59288-fig3-v2.jpg)\n\n**Figure 3.:** (A) Domain organization of cysteine desulfurase (CyD; Synpcc7942_B2661) and the predicted disorder scores calculated using DISOPRED3. CyD can be split into two domains \u2013 a highly disordered N-terminal domain and an ordered cysteine desulfurase domain. (B) Sequence WebLogos of conserved motifs found within the N-terminal domain of CyD calculated using the MEME suite motif discovery server. (C) SDS-PAGE analysis of CyD constructs fused to sfGFP. Loading of fusion cargo and untagged-sfGFP control was determined by fluorescence of the nanocompartment band prior to Coomassie staining.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59288/elife-59288-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Multiple sequence alignment of the SrpI encapsulin-associated cysteine desulfurase (Synpcc7942_B2661) and the other genomic cysteine desulfurases (Synpcc7942_2558, Synpcc7942_1929, Synpcc7942_1255, Synpcc7942_1738). Alignment was performed using ClustalOmega. An asterisk (*) indicates a fully conserved residue, a colon (:) indicates conservation between amino acids of strongly similar properties, and a period (.) indicates conservation between amino acids of weakly similar properties.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/59288/elife-59288-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Percent sequence identity from multiple sequence alignment of 997 F2A encapsulin-associated cysteine desulfurase sequences.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/59288/elife-59288-fig3-figsupp3-v2.jpg)\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/59288/elife-59288-fig3-figsupp4-v2.jpg)\n\nWe next sought to confirm that CyD is the cargo protein by using the N-terminal domain to target heterologous cargo to the compartment. To identify the minimal sequence necessary for encapsulation, truncated sequences of the CyD cargo gene were fused to the superfolder green fluorescent protein variant (sfGFP) and co-expressed with the shell protein in E. coli. This same approach has been applied to identify targeting sequences for the Family 1 encapsulins (Cassidy-Amstutz et al., 2016). Examination of these expressed constructs via SDS-PAGE and Coomassie stain showed that all constructs formed the nanocompartment complex, as indicated by the presence of the signature high-molecular-weight band that also served as a loading control. Encapsulation of the heterologous sfGFP-fusion cargo was assayed by measuring GFP fluorescence of the high-molecular-weight band (Figure 3C). The entire 225 amino acid N-terminal domain from CyD fused to sfGFP (CyD 1\u2013225-sfGFP) yielded the highest loading signal. Targeting with the first 100 amino acids of the NTD also functioned, albeit not as efficiently as the full N-terminus. The entire cysteine desulfurase fused to sfGFP was also encapsulated, yet again not as well as the 225-NTD. This discrepancy may be due to steric hindrance resulting in fewer copies of the larger full-length CyD-sfGFP construct physically packed inside the compartment. Lastly, CyD 155\u2013183-sfGFP, containing the conserved motif of \u2018AASPYYFLDG\u2019, was not sufficient to sequester cargo within the compartment, nor was the non-tagged sfGFP construct.\n\n### The CyD NTD is necessary and sufficient for loading heterologous cargo in vitro\n\nPrior work demonstrated that it is possible to assay cargo loading by disassembling the shell protein with a chaotrope, such as guanidine hydrochloride (GuHCl), and re-folding the shell protein in the presence of cargo protein (Cassidy-Amstutz et al., 2016). In this manner, we can control the amount of cargo protein and ensure that loading is due to the targeting sequence rather than mass-action. The shell protein was purified, unfolded in GuHCl, and then refolded by dilution in the presence of purified 225NTD-sfGFP or untagged sfGFP. After refolding and concentration of the sample, the loaded compartment fraction was separated from un-loaded cargo via size exclusion chromatography (Figure 4\u2014figure supplement 1). Again, encapsulation was assayed via SDS-PAGE analysis. Only the 225NTD-sfGFP construct displayed GFP fluorescence in the high-molecular-weight band, indicative of sfGFP loading (Figure 4A). Furthermore, analysis of the compartment and cargo fractions using denaturing SDS-PAGE showed the presence of cargo protein in the compartment fraction only for the 225NTD-sfGFP construct, whereas the presence of sfGFP lacking the NTD was only found in the cargo fraction (Figure 4B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/59288/elife-59288-fig4-v2.jpg)\n\n**Figure 4.:** (A)\u00a0Non-denaturing SDS-PAGE of sfGFP or the CyD N-terminal domain-sfGFP fusion (225NTD-sfGFP) loaded in vitro into SrpI encapsulin. sfGFP fluorescence followed by Coomassie staining of the encapsulin (Enc), cargo, and pre size-exclusion chromatography (Pre-SEC) fractions was performed to determine cargo loading and presence of nanocompartment, respectively. (B) Denaturing SDS-PAGE of in vitro loaded sfGFP and 225NTD-sfGFP samples to determine presence of SrpI shell monomer (35 kDa), sfGFP (27 kDa), and 225NTD-sfGFP (50 kDa) in the encapsulin and cargo fractions from size-exclusion chromatography. (C) Denaturing SDS-PAGE of in vitro loaded native cysteine desulfurase (WT CyD) and cysteine desulfurase with the N-terminal domain removed (\u0394NTD-CyD) to determine presence of SrpI shell monomer (35 kDa), WT CyD (68 kDa), and \u0394NTD-CyD (45 kDa) in the encapsulin and cargo fractions from size-exclusion chromatography. WT CyD is subject to proteolysis, leading to the presence of a \u0394NTD-CyD band in the WT CyD cargo fraction.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59288/elife-59288-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A and B) size exclusion chromatogram of SrpI encapsulin shell protein (35 kDa) refolded in the presence of untagged sfGFP (27 kDa) and 225NTD-sfGFP (50 kDa) respectively using a Superose 6 Increase column (GE Life Sciences). Fractions are labeled F1-F4 (C) SDS-PAGE analysis of fractions from size exclusion (F1-4), the pre-size exclusion input (I), and a molecular weight marker (M).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/59288/elife-59288-fig4-figsupp2-v2.jpg)\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/59288/elife-59288-fig4-figsupp3-v2.jpg)\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/59288/elife-59288-fig4-figsupp4-v2.jpg)\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/59288/elife-59288-fig4-figsupp5-v2.jpg)\n\nWe were also able to load the full-length cysteine desulfurase in vitro using the same procedure. We observed encapsulation of the native cargo as indicated by the co-elution of cargo in the compartment fraction (Figure 4C). Lastly, we found that the disordered NTD is essential for cargo loading. A mutant CyD lacking the entire N-terminal domain (\u0394NTD-CyD) was not measurably encapsulated, as evidenced by separate elution of compartment and truncated cargo (Figure 4C).\n\n### Visualization of cargo density by transmission electron microscopy\n\nTo further characterize the interaction between SrpI encapsulin and the CyD cargo, we first used negative stain TEM to understand the spatial organization of the CyD cargo within the nanocompartment. In order to obtain sufficient yield for analysis, SrpI and CyD were expressed and purified separately from E. coli. Holo-SrpI (CyD loaded) was generated by denaturation of the purified SrpI shell protein and re-folding the shell protein in the presence of CyD as described in the previous section. Apo-SrpI encapsulin (no cargo) was obtained by refolding the SrpI shell in absence of CyD cargo protein. Even in raw micrographs, a clear difference in density on the shell interior was observed when comparing the apo-SrpI encapsulin (no cargo) to the holo-SrpI encapsulin (CyD loaded) (Figure 5A,C). The apo-SrpI encapsulin structure revealed the shell without any internal cargo density, with modest features clearly visible as expected from a \u224820 \u00c5 negative stain reconstruction (Figure 5B, Materials\u00a0and\u00a0methods). The lack of density within the interior of the apo-SrpI capsid also demonstrates that the shell is permissive to uranyl formate stain, which would also allow definition of internal features for the cargo-loaded sample. For the cargo-loaded structure, clear density for the CyD exists at one of the sites of threefold symmetry within the complex (Figure 5D). A difference map, created by subtracting apo-SrpI from the holo-SrpI structure, revealed density corresponding to 1\u20132 copies of the cysteine desulfurase (Figure 5E).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/59288/elife-59288-fig5-v2.jpg)\n\n**Figure 5.:** (A) Negative stain micrograph of an apo-SrpI shell in contrast with (C) the holo-SrpI shell that includes the CyD cargo.\u00a0(B and D) 3D reconstruction of apo-Srpl and holo-SrpI, respectively. (E) Difference map showing additional density for the holo-SrpI with a homologous cysteine desulfurase dimer docked in (pdb:6c9e).\n\n### Structural details of the SrpI shell revealed by cryo-EM\n\nMotivated by our negative stain TEM results, we sought to obtain a high-resolution structure of the nanocompartment complex by single-particle cryo-electron microscopy (cryo-EM). All encapsulin structures published thus far have belonged to the Family 1 encapsulins. These structures are all icosahedral, vary in size from 24 to 42 nm in diameter, and have a triangulation number of T\u00a0=\u00a01, T\u00a0=\u00a03, or more recently, T\u00a0=\u00a04 (Sutter et al., 2008; Akita et al., 2007; McHugh et al., 2014; Giessen et al., 2019). Cryo-EM analysis was performed on purified holo-SrpI to resolve the shell structure at 2.2 \u00c5 resolution. This represents the first Family 2 encapsulin structure and is the highest resolution structure for an encapsulin to date, allowing for accurate atomic model building (Figure 6A, Figure 6\u2014figure supplements 1 and 2). The SrpI encapsulin is 24.5 nm in diameter and has a T\u00a0=\u00a01 icosahedral capsid formed by the self-assembly of 60 SrpI monomeric subunits (Figure 6A), similar to previously reported encapsulin structures. Given the structural similarity of the entire shell, it is unsurprising that the SrpI monomer also shares the canonical HK97 fold found in Family 1 encapsulins and Caudovirales bacteriophages (Figure 6B, Figure 6\u2014figure supplement 3C).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/59288/elife-59288-fig6-v2.jpg)\n\n**Figure 6.:** This Srpl encapsulin forms a T\u00a0=\u00a01 icosahedral structure 24.5 nm in diameter. Five subunits around a fivefold axis are shown in distinct colors. (B) SrpI monomer subunits have a HK97 fold with the characteristic A-Domain, E-Loop, P-Domain, and N-Arm. (C) Electrostatic surface potential at the fivefold symmetry axis indicates a relatively neutral pore with an electropositive exterior (left). At its constriction point, the pore is 3.7 \u00c5 in diameter. (D) Modeling of a cysteine amino acid at the fivefold axis illustrates the possible mechanism of substrate selection (permissivity to cysteines) by the pore. (E) Unassigned density (turquoise) near the threefold axis (gray triangle) revealed by symmetry expansion and focused classification of the holo-SrpI cryoEM map shown in two different orientations.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59288/elife-59288-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Processing workflow within RELION that used to reconstruct the holo-Srpl structure. An identical approach was used for the apo-Srpl encapsulin. Once both these structures were determined, symmetry expansion and focused classification was used to compare subtle differences in the density (not shown, see Figure 6E).\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/59288/elife-59288-fig6-figsupp2-v2.jpg)\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/59288/elife-59288-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** (A and B) Sequence conservation of Family 2a encapsulins mapped onto the atomic model and surface display for the Srpl shell respectively (conservation was calculated via ConSurf). (C) Single subunit of Srpl compared to other proteins with a known HK97 structure: The Family 1 encapsulin from T. maritima (pdb: 3DKT) and the HK97 bacteriophage capsid (pdb: 1OHG) (D) Radial coloring to show the spikes of the Srpl encapsulin morphology in comparison with the T. maritima encapsulin.\n\n![Figure 6\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/59288/elife-59288-fig6-figsupp4-v2.jpg)\n\n**Figure 6\u2014figure supplement 4.:** Coloring of individual subunits highlights the chainmail overlapping topology of the Srpl encapsulin.\n\n![Figure 6\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/59288/elife-59288-fig6-figsupp5-v2.jpg)\n\n**Figure 6\u2014figure supplement 5.:** Close-up and slice-through views of the five-fold, three-fold, and two-fold axes. Surfaces colored according to electrostatic potential (red=negative, blue=positive).\n\n![Figure 6\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/59288/elife-59288-fig6-figsupp6-v2.jpg)\n\n**Figure 6\u2014figure supplement 6.:** Ball and stick model of the fivefold pore (displayed exterior of the compartment facing out). Residues are colored by sequence conservation as calculated by the ConSurf webserver (cyan \u2013 conserved, magenta \u2013 variable). Labeled residues Gly 194 and Pro 196 form the most restrictive points of the pore. Residues Arg 192 and Arg 304 are residues that result in the positively charged pore of the SrpI encapsulin structure.\n\nMost of the topological elements are shared between the monomeric subunits of encapsulins and Caudovirales shells, including the A-domain (axial domain), E-loop (extended loop), and P-domain (peripheral domain). However, unlike other Family 1 encapsulin shell proteins, the Family 2a SrpI possesses an extended N-terminal arm (N-arm) that is more characteristic of bacteriophage structures (Figure 6\u2014figure supplement 3C; Duda and Teschke, 2019). Similar to other HK97 bacteriophage capsids, the N-arm of the SrpI shell intertwines with the neighboring subunit to create a chainmail-like topology (Figure 6\u2014figure supplement 4). The most striking differences in quaternary structure between the SrpI encapsulin and the previously studied Family 1 encapsulins can be observed at the major vertices that form the 5-fold axis of symmetry. The vertices of the SrpI encapsulin protrude from the capsid yielding a raised \u2018spike\u2019 morphology not found in the Family 1 encapsulins (Figure 6\u2014figure supplement 3D). This difference is due to an extended C-terminus in the SrpI shell protomer that is found near the A-domain, whereas the C-terminus of the Family 1 encapsulins is located farther away from the fivefold axis.\n\nInterestingly, the A-domain of SrpI that forms a pore at the fivefold axis is composed of residues that are positively charged (Figure 6C, Figure 6\u2014figure supplement 5), in contrast to the negatively charged fivefold axis pore of Family 1 encapsulins (Giessen et al., 2019). It is thought that the fivefold pore at the capsid vertices creates a selective barrier to allow encapsulin substrates into the compartment lumen (Giessen et al., 2019; Nichols et al., 2017; Sutter et al., 2008). Cysteine is a likely substrate for the SrpI encapsulin given its cysteine desulfurase cargo enzyme. At physiological pH for S. elongatus growing in light, pH 8\u20138.4 (Mangan et al., 2016), roughly 30\u201354% of free cysteine will have a net charge of \u22121 and therefore could traverse the positively charged pore exterior (Cameselle et al., 1986). While this charge selectivity makes sense in the uniquely high pH environment of S. elongatus PCC 7942, this compartment is also found in model bacteria that are known to have a lower cytoplasmic pH such as Mycobacterium smegmatis which has been measured to be between pH 6.1\u00a0and\u00a07.2 (Rao et al., 2001). Because of the wide discrepancy of the cytosolic pH for bacteria that possess the SrpI encapsulin, we sought to understand the sequence conservation of residues at the fivefold pore (Figure 6\u2014figure supplement 6). Residues that conferred the positive charge of the pore in S. elongatus PCC 7942, Arg 192, and Arg 304, appear not to be well-conserved in other organisms.\n\nIn contrast, the residues that appear most conserved are Gly 194 and Pro 196. These residues form the diameter of the inside of the pore. Therefore, it is likely that the size of the pore is also an important constraint for limiting the spectrum of substrates that can enter the compartment (Williams et al., 2018). The SrpI encapsulin fivefold pore is 3.7 \u00c5 in diameter at its most restrictive point (Figure 6C) as calculated by HOLE (Smart et al., 1996). Furthermore, modeling of cysteine in the pore demonstrates it is likely small enough to enter the nanocompartment (Figure 6D).\n\nUnfortunately, during processing and classification, the holo-SrpI encapsulin proved nearly indistinguishable from the apo-SrpI control (Figure 6\u2014figure supplement 1). The inability to resolve significant portions of the cargo density may be due to low occupancy, or conformational flexibility of the cargo, which disappears at higher resolutions when many particles are averaged together. The inability to fully resolve cargo protein within the nanocompartment has been observed for previously published encapsulin structures (Sutter et al., 2008). However, symmetry expansion and focused classification of the holo-SrpI encapsulin, guided by the 225-NTD-sfGFP-SrpI dataset, revealed additional EM density at the interior surface of the shell that was localized to the three-fold symmetry axis (Figure 6E). This corroborates our findings from the holo-SrpI structure obtained via negative stain TEM, which also demonstrated cargo interfacing with the shell at the axis of threefold symmetry (Figure 5D).\n\nWhile the cargo EM density was too weak to accurately build an atomic model of the cysteine desulfurase cargo residues, we were able to determine which shell residues likely interact with cargo density based on their proximity to the putative cargo EM density (Figure 6E). Of note, shell residues at the threefold axis neighboring the cargo EM density are highly conserved, which suggests that the interaction between the encapsulin cargo and shell may be conserved (Figure 6\u2014figure supplement 3A,B). Namely, residues F262, and Y273 are located near the suggested cargo density.\n\n### Encapsulation of CyD modulates enzymatic activity\n\nFinally, we wanted to understand the enzymatic activity of CyD and assess whether encapsulation affects the cargo\u00a0enzyme. Enzyme activity was monitored via NADH fluorescence using an assay coupling cysteine desulfurase, which produces alanine, to alanine dehydrogenase (Dos Santos, 2017). Unencapsulated CyD was active towards a cysteine substrate and exhibited a kcat of 10\u00a0\u00b1\u00a04 s\u22121 (Figure 7). In accordance with our hypothesis that free cysteine could enter the SrpI encapsulin pore, we found that the encapsulated CyD was roughly sevenfold more active than unencapsulated CyD, with a kcat of 67\u00a0\u00b1\u00a05 s\u22121 (Figure 7). Importantly, the N-terminal domain had no effect on catalytic activity, and unloaded SrpI encapsulin did not exhibit any cysteine desulfurase activity. Rate enhancement of cargo enzymes by Family 1 encapsulins has been observed previously and is discussed below (Rahmanpour and Bugg, 2013).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/59288/elife-59288-fig7-v2.jpg)\n\n**Figure 7.:** Substrate-dependent activity of encapsulated cysteine desulfurase (encapsulated CyD), unencapsulated cysteine desulfurase (CyD alone), unencapsulated cysteine desulfurase lacking its NTD (\u0394NTD-CyD alone), and empty nanocompartment using a coupled-enzyme assay with alanine dehydrogenase and production of NADH as a readout of cysteine desulfurase activity. Error bars are SD of 3\u20136 replicate experiments. Reactions were carried out at 25\u00b0C in 25 mM Tris-HCl pH 8, 150 mM NaCl, 5 mM NAD+, 0.4 Units of alanine dehydrogenase, 200 nM cysteine desulfurase, and varying L-cysteine concentrations.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59288/elife-59288-fig7-figsupp1-v2.jpg)\n\n## Discussion\n\nHere, we have identified a unique bacterial nanocompartment and established it as a member of a distinct family of encapsulins, which we name Family 2, that have thus far evaded characterization as an organelle-like compartment.\n\n### Structural analysis of SrpI encapsulin reveals a potential role as a prokaryotic nanocompartment\n\nWe report here the first high-resolution structure for Family 2 encapsulins and find that it shares the HK97 fold found in the Family 1 encapsulins. While there are many structural similarities between the Family 1 and Family 2 encapsulin shell proteins, there are notable differences in the structural properties of the individual domains within the HK97 fold that likely confer distinct functions. One considerable difference between the two encapsulin families is the nature of the pentameric vertex of the capsid that forms the major pore of the compartment. The fivefold pore is likely crucial to the organellular function of encapsulins, as it provides a selective barrier for the entrance of compartment substrates based on size and charge (Nichols et al., 2017; Williams et al., 2018; Giessen et al., 2019). Structures determined for the Family 1 encapsulins reveal pores that are negatively charged (Giessen et al., 2019; McHugh et al., 2014; Sutter et al., 2008). Many of the Family 1 encapsulins possess cargo that binds iron, such as the IMEF and FLP containing encapsulins that have been demonstrated to be capable of iron storage (Giessen et al., 2019; He et al., 2016). The negative charge of the Family 1 pores is therefore noteworthy because it may allow passage of the positively charged iron ions to enter the encapsulin lumen.\n\nIn the Family 2 encapsulin structure reported here, we find the electrostatic charge of the pore to be positive \u2013 opposite to what is observed in Family 1. The positive charge of the Family 2 encapsulin is consistent with its likely substrate, cysteine, which will have a net negative charge at physiological pH (Cameselle et al., 1986; Mangan et al., 2016). This contrast between pore charges suggests an overarching theme that may be shared among the encapsulins: the electrostatic charge of the pore is likely reflective of the charge characteristics of the cargo substrate. Furthermore, the size of the pore also appears to be an important parameter as it selects for the entry of substrate molecules while still maintaining a partitioned barrier from larger molecules in the surrounding environment. Initial work has begun toward dissecting how the size of the pore affects mass transport of substrates varying in size. One such study has engineered the pore of the T. maritima encapsulin to allow for the diffusion of metals such as terbium, which is nearly double the atomic radius of the native iron substrate (Williams et al., 2018). Further mutational studies of pore residues will be needed to better understand how the properties of encapsulin pores affect permeability and function of nanocompartments both in vitro and in vivo.\n\n### The effect of encapsulation on cargo protein function\n\nOur enzymatic activity data of the CyD cargo provide evidence that encapsulation of the enzyme is important for its activity. We found that the kcat for the encapsulated CyD was almost sevenfold higher than that of the naked cargo in vitro. Others have also reported changes in cargo activity upon encapsulation for the Family 1 encapsulins. One such example is the DyP-type peroxidase-containing encapsulin from Rhodococcus jostii, which was shown to exhibit an eightfold higher activity on a lignin substrate compared to the unencapsulated peroxidase (Rahmanpour and Bugg, 2013). The biochemical function of the FLP-containing encapsulin is also impeded in the absence of shell protein, as it loses the ability to properly store and mineralize iron (He et al., 2016; McHugh et al., 2014). The exact mechanism by which encapsulation affects cargo activity remains unknown and may differ for the various cargo types found in encapsulin systems. In the case of the CyD cargo, there are precedents for the enhancement of cysteine desulfurase activity in the presence of accessory proteins. For example, the protein SufE from E. coli has been shown to increase the activity of the cysteine desulfurase, SufS, 8- to 50-fold (Loiseau et al., 2003; Outten et al., 2003). SufE binding stimulates an allosteric change in SufS and enables faster regeneration of the SufS active site by the removal of persulfide from the SufS active site, thereby allowing additional reaction cycles (Outten et al., 2003; Singh et al., 2013). It is possible that SrpI may be acting as an accessory protein for the activity of its cysteine desulfurase cargo analogous to what has been observed for SufE and SufS. On the other hand, the increase in kcat may be merely incidental and the compartment sequesters CyD for a different reason. For example, if SrpI does act similarly to SufE, then it may accumulate a polysulfide chain (Ollagnier-de-Choudens et al., 2003) that may need to be protected from the reducing environment of the cytosol. Another possibility is CyD may be sequestered to prevent it from degrading too much cytosolic cysteine during sulfur starvation.\n\n### SrpI may be linked to the canonical sulfur starvation pathway in cyanobacteria\n\nThe physiological response to sulfur starvation in cyanobacteria has been studied for decades, yet much is still unknown about the interplay of the known components of the pathway. Genetic and biochemical approaches to study the sulfur starvation response in S. elongatus have shown that photosynthesis is halted as phycobiliproteins are disassembled from the thylakoid membrane and proteolyzed by the Clp protease complex to generate free amino acids such as cysteine (Baier et al., 2014; Collier and Grossman, 1992; Karradt et al., 2008). Among the other known responses to sulfur starvation are the upregulation of proteins involved in sulfate transport CysA, CysT, CysW, and SbpA (Green et al., 1989; Laudenbach and Grossman, 1991). Cyanobacteria are assimilatory sulfate reducers and thus, sulfate is sequentially reduced to sulfite and sulfide by the APS/PAPS pathway, which is then followed by the synthesis of L-cysteine via serine-O-acetyltransferase and cysteine synthase (Kopriva et al., 2008; Schmidt, 1990; Schmidt and Christen, 1978).\n\nHere, we report that S. elongatus cells deprived of sulfate dramatically upregulate the SrpI encapsulin and its cysteine desulfurase cargo. Furthermore, it is interesting to note that cyanobacteria that possess SrpI encapsulin genes are found in freshwater or brackish water, but not marine environments (Supplementary file 4). Sulfate is often a limiting nutrient in freshwater environments compared to marine habitats; therefore, the presence of SrpI exclusively in freshwater cyanobacteria suggests SrpI could play a role in sulfur starvation response (Giordano et al., 2005; Pilson, 2012; Tipping et al., 1998). Our biochemical characterization of this complex showed it is capable of using free L-cysteine as a substrate. Given that the previously characterized facets of the sulfur starvation pathway have been demonstrated to yield free cysteine, our findings suggest a potential link between the SrpI encapsulin and the rest of the known pathway. The physiological role of the SrpI encapsulin may be elucidated by determining the fate of the sulfide group from cysteine after conversion to alanine by the cysteine desulfurase. For example, the sulfur may be mobilized to a downstream sulfide carrier such as NifU or SufE to be incorporated into iron-sulfur clusters or thio-cofactors (Black and Dos Santos, 2015). Alternatively, the sulfide from cysteine may remain within the compartment in the form of polysulfide. In this second model, the encapsulin may act as a storage cage for sulfur, similar to how Family 1 encapsulins are thought to act as iron stores (Giessen et al., 2019; He et al., 2016).\n\n### Homologs of SrpI are found in pathogens\n\nWhile this report is the first to recognize SrpI as an encapsulin, previous work has observed a role for SrpI homologs in mycobacterial pathogenesis. Previous work on a SrpI homolog from both M. leprae and M. avium has shown SrpI is the most antigenic protein in human leprosy patients (Winter et al., 1995). Because of its ability to elicit a proliferative T-cell response in leprosy patients, SrpI homologs have been proposed as a useful antigen for vaccine development in disease-causing Mycobacteria (Abdellrazeq et al., 2018; Abdellrazeq et al., 2020; Leite et al., 2015). In their search for candidate antigens from M. avium subsp. paratuberculosis, Leite and colleagues enriched for a complex that was identified as MAP2121c and MAP2120c, the SrpI shell and cysteine desulfurase homologs respectively (Leite et al., 2015). Our results here validate the finding that these two proteins share a direct biochemical interaction. Moreover, we have identified the N-terminal domain of the cysteine desulfurase to be essential for its interaction with the shell and have presented structural evidence for the encapsulin shell residues with which the cysteine desulfurase may interact. Hopefully our structural and biochemical characterization of the compartment aids in future studies of the role of SrpI encapsulin in pathogenicity and host immune response.\n\n### The evolutionary origins of encapsulins and the prospect of additional undiscovered families\n\nAn evolutionary relationship between the encapsulins and Caudovirales bacteriophages is clear given the shared HK97 fold of the capsid proteins. Exactly how the encapsulins and Caudovirales bacteriophages are related, however, remains an open question (Koonin and Krupovic, 2018). It is possible that the HK97 fold derives from a cellular ancestor and was then recruited by a virus-like ancestor of Caudovirales phage (Krupovic and Koonin, 2017). Alternatively, the HK97 fold was of viral origin and cellular hosts co-opted the compartments as proteinaceous organelles that enabled some fitness benefit (Koonin and Krupovic, 2018; Krupovic and Koonin, 2017). These two scenarios may not be mutually exclusive, and it is possible that the ancestry of the HK97 fold is intermingled between the two systems with the interconversion of capsids functioning as Caudovirales phage or prokaryotic encapsulins repeatedly over evolutionary history (Radford, 2015). Our identification of SrpI and its homologs as members of an evolutionarily distinct encapsulin family may provide further insights into the divergence and origin of prokaryotic nanocompartments. Already, the breadth and diversity of known encapsulin systems is vast, yet it is likely that more await discovery.\n\n## Materials and methods\n\n### Phylogenetic analysis of encapsulin genes\n\nHomologs of SrpI were compiled using NCBI BLASTp with query sequence WP_011055154.1 (Synechococcus elongatus). BLASTp searches were carried out in February 2020 and hits with an E-value\u00a0<0.01 were collected and used in subsequent phylogenetic analysis. Sequences were aligned using MAFFT v7.453 along with the outgroup sequence WP_004080898.1 (Thermotoga maritima). The phylogenetic tree was generated from the MAFFT alignment using IQ-TREE (Kalyaanamoorthy et al., 2017) with LG model, four gamma categories and allowing for invariant sites and ultrafast bootstrap with 1000 replicates. Taxonomy metadata for the encapsulin sequences were compiled using the NCBI protein database. Phylogenetic trees were visualized and annotated using \u2018The Interactive Tree of Life v4\u2019 online server (Letunic and Bork, 2019).\n\nGenome neighborhood analysis of the Family 2 encapsulin sequences was performed using the Enzyme Function Initiative suite of web tools (Gerlt, 2017; Zallot et al., 2019). Sequences were compiled with the Enzyme Similarity Tool (ESI) using WP_011055154.1 (S. elongatus) as the query sequence. A Uniprot BLAST search was performed using ESI with an E value of 1E-5 and a maximum of 10,000 sequences. The resulting dataset was then submitted to the Genome Neighborhood Tool to identify the 10 genes upstream and downstream of every Family 2 encapsulin hit.\n\nSecondary structure and disorder prediction of the encapsulin-associated cysteine desulfurase, Synpcc7942_B2661, was performed using PsiPred4 and Disopred3 (Buchan and Jones, 2019; Jones and Cozzetto, 2015). Sequence identity scores for homologs of Synpcc7942_B2661, were determined by aligning sequences using Clustal Omega and analyzing results with Geneius Prime Version 2019.2.1 (Sievers et al., 2011). Conserved motifs within the cysteine desulfurase sequence homologs were determined using the MEME Suite 5.1.1 (Bailey et al., 2009). Using Clustal Omega, the compiled cysteine desulfurase sequences were aligned and truncated to only include the N-terminal domain sequence. These truncated sequences were then analyzed using MEME to create sequence logos of the top occurring motifs.\n\n### Molecular cloning, protein expression, and purification\n\nAll plasmids were constructed using either Gibson Assembly (NEB) or SLiCE (Zhang et al., 2012) homology-based cloning strategies. Each construct was cloned into a pET-14-based destination vector with a T7 promoter. These constructs were transformed into E. coli BL21 (DE3) LOBSTR cells for protein expression (Andersen et al., 2013). Cells were grown in LB media containing 60 \u03bcg/mL kanamycin at 37\u00b0C, shaking at 250 rpm to an optical density (OD600\u00a0=\u00a00.5\u20130.6) before lowering the temperature to 18\u00b0C, inducing with 0.5 mM IPTG, and growing overnight. Liquid cultures were harvested via centrifugation (4000 x g, 20 min, 4\u00b0C), flash frozen in liquid nitrogen, and stored at \u221280\u00b0C for future use.\n\nAll cysteine desulfurase constructs used in enzyme activity and electron microscopy experiments were purified using an N-terminal SUMO tag containing a poly-histidine sequence. Pellets were resuspended in lysis buffer (25 mM Tris-HCl pH 7.5, 150 mM NaCl, 20 mM imidazole) supplemented with 0.1 mg/ml lysozyme and 1 U/mL Benzonase Endonuclease (Millipore Sigma). Sample was lysed with three passages through an Avestin EmulsiFlex-C3 homogenizer and clarified via centrifugation (15,000 x g, 30 min, 4\u00b0C). The resulting supernatant was then bound to HisPur Ni-NTA resin (ThermoFisher Scientific) for 1 hr at 4\u00b0C, followed by application of the sample to a gravity column. The resin was then washed with 30 resin volumes of wash buffer (25 mM Tris-HCl pH 7.5, 150 mM NaCl, 40 mM imidazole) prior to eluting with 25 mM Tris-HCl pH 7.5, 150 mM NaCl, 350 mM imidazole. The eluate was then concentrated and desalted into 25 mM Tris-HCl pH 8, 150 mM NaCl using Econo-Pac 10DG desalting columns (Bio-Rad). The SUMO tag was removed by adding SUMO-protease to the purified sample at a 1:200 (protease: purified protein) molar ratio and allowing cleavage overnight at 4\u00b0C. The sample was then further purified by size exclusion chromatography using a Superose 6 Increase column (GE Life Sciences) and fractions were analyzed by SDS-PAGE using 4\u201320% Criterion polyacrylamide gels (Bio-Rad) and visualized with GelCode Blue stain (ThermoFisher).\n\n### In vitro loading of cargo into SrpI encapsulin\n\nTo obtain sufficient quantities of the SrpI shell for in vitro loading experiments, the protein was purified from E. coli inclusion bodies. Serendipitously, adding a C-terminal 6X-His tag to SrpI yielded high quantities of insoluble shell protein. Purification, denaturation, and folding of shell protein was performed as previously described (Palmer and Wingfield, 2012). Briefly, cell pellets were resuspended in solution buffer (50 mM Tris-HCl pH 8, 1% Triton-X100, 100 mM NaCl, 10 mM DTT, 0.1 mg/ml lysozyme, and 1 U/mL Benzonase Endonuclease) and lysed with an Avestin EmulsiFlex-C3 homogenizer. The lysate was then centrifuged at 11,000 x g for 20 min at 4\u00b0C, and the resulting pellet was resuspended in washing buffer A (50 mM Tris-HCl pH 8, 0.5% Triton-X100, 100 mM NaCl, 10 mM DTT) followed by sonication and centrifugation at 11,000 x g for 20 min, 4\u00b0C. The resulting pellet was then resuspended in washing buffer B (50 mM Tris-HCl pH 8, 100 mM NaCl, 10 mM DTT) followed by sonication and centrifugation again at 11,000 x g for 20 min, 4\u00b0C. The pellet containing SrpI shell protein was then solubilized with extraction buffer (50 mM Tris-HCl pH 7.4, 6M guanidine hydrochloride, 50 mM DTT), flash frozen and stored at \u221280\u00b0C for future use.\n\nRefolding was performed by 100-fold dilution in refolding buffer (50 mM CAPS pH 10, 250 mM arginine, 150 mM NaCl, 20% Glycerol, 10 mM DTT). For in vitro cargo loading, refolding was performed by adding cargo protein prior to shell protein in a 10:1, cargo: compartment ratio. Sample was concentrated in an Amicon stirred cell (Millipore Sigma) using a 10 kDa MWCO filter, followed by desalting into 50 mM CAPS pH 10, 250 mM arginine, 150 mM NaCl. Subsequent purification was performed using either a Superose 6 Increase column or a HiPrep 16/60 Sephacryl S-500 HR (GE Life Sciences).\n\n#### S. elongatus PCC 7942 growth and sulfate deprivation\n\nS.\u00a0elongatus PCC 7942 was grown in BG-11 media (Allen, 1968) at 30\u00b0C with shaking (185 rpm) under white fluorescent lights at 60\u2013100 \u03bcE. After the liquid culture reached log phase (OD750\u00a0=\u00a00.4\u20130.5), sulfate starvation was performed by centrifugation of liquid culture (5000 x g, 20 min, 25\u00b0C), resuspension of cells in BG-11 media lacking sulfate (Collier and Grossman, 1992), and repeated for a total of three washes. Control samples were washed and resuspended using normal BG-11. Samples were then returned to the above growth conditions for continued growth in sulfate dropout BG-11 media. Phycocyanin and chlorophyll levels were quantified by removing 1 mL of culture at predetermined times and measuring 620 nm and 680 nm absorbance levels respectively, normalized to cell density at 750 nm.\n\n### Identification of protein complex upregulated under sulfate starvation\n\nSulfate-starved and control S. elongatus PCC 7942 liquid cultures (50 mL) were harvested via centrifugation (4000 x g, 20 min, 4\u00b0C), flash-frozen in liquid nitrogen and stored at \u221280\u00b0C for future processing. Pellets were lysed via sonication and clarified by centrifugation (15,000 x g, 20 min, 4\u00b0C). Clarified lysates were analyzed using 4\u201320% Criterion polyacrylamide gels (Bio-Rad) and visualized by silver staining using Pierce Silver Stain Kit (ThermoFisher Scientific). Gel bands were excised and sent to UC Davis Proteomics Core Facility. In-gel proteolytic digestion of the samples was performed followed by LC/MS analysis with a Q Exactive Hybrid Quadrupole-Orbitrap. Spectra were searched against the S. elongatus PCC 7942 proteome and analyzed using Scaffold 4.\n\n### Generation of SrpI, SrpI, and CyD knockout strains\n\nDNA constructs were designed by flanking a chloramphenicol resistance gene with 1200 bp homology arms upstream and downstream the locus of interest \u2013 SrpI, SrpI and CyD, and neutral site 3 (NS3). Synechococcus elongatus PCC 7942 were transformed according to Golden and Sherman, 1984. Briefly, cultures were grown to OD750nm\u00a0=\u00a00.5. Cultures were centrifuged at 18,000 x g for 2 min. Pellets were washed with 100 mM CaCl2 and spun again at 18,000 x g for 2 min. Pellets were resuspended in BG-11 media followed by addition of plasmid and grown for 16 hr in the dark at 30\u00b0C. Transformants were then plated onto BG-11 agar plates containing chloramphenicol (10\u00a0\u00b5g/mL) and placed under 60 \u00b5E of light at 30\u00b0C. Single colonies were then genotyped by PCR amplification.\n\n### Cysteine desulfurase activity\n\nCysteine desulfurase activity was performed using a coupled enzyme assay with alanine dehydrogenase purchased from Sigma-Aldrich, product number 73603. Reactions were carried out at 25\u00b0C in 25 mM Tris-HCl pH 8, 150 mM NaCl, 5 mM NAD+, 0.4U alanine dehydrogenase, 200 nM cysteine desulfurase, and varying L-cysteine concentrations. Cysteine desulfurase concentration for compartment loaded and non-loaded samples was determined by PLP absorbance at 420 nm (Figure 7\u2014figure supplement 1). Activity was monitored by production of NADH using an Infinite M1000 plate reader (Tecan) with excitation at 340 nm and emission at 460 nm. Reactions excluding cysteine desulfurase were used as negative controls for background subtraction. Activity data is reported as the initial rate of product formation over substrate concentration and fitted with the Michaelis\u2013Menten equation using GraphPad Prism 8.\n\n### Negative stain TEM\n\nHolo-SrpI and apo-SrpI samples were diluted to 300 nM in TEM Buffer (50 mM CAPS pH 10, 250 mM arginine, 150 mM NaCl). Four \u00b5L of each sample was placed onto a 400-mesh continuous carbon grid that had been glow discharged (Tergeo, Pie Scientific). After adsorption of the sample onto the grid (2 min at room temperature), the sample was stained in five successive rinses with 40 \u00b5L droplets Uranyl Formate (UF; 2% w/v in water). To ensure stain was thick, and penetrated the shell interior, the grids sat for 30 s with a droplet of UF. Grids were briefly side-blotted with Whatman filter paper for 1 s, leaving a very thin, but still visible, amount of stain still on the grid, followed by air drying for 10 min. Grids were visualized with an FEI Tecnai F20 electron microscope operating at 120 keV. For each construct,~100 micrographs were collected on a Gatan Ultrascan 4 k CCD camera, at a magnification of 80,000x (1.37 \u00c5/pix) and a defocus range from \u22120.5 to \u22122.0 \u03bcm defocus.\n\nEach dataset was processed identically using RELION (Scheres, 2012). Briefly, CTF estimation was performed using CTFFIND4 (Rohou and Grigorieff, 2015), and particles were picked using RELION\u2019s built-in LoG autopicker. Roughly 5000 particles were extracted for each dataset, binned fourfold, followed by 2D classification into 20 classes. All classes that resembled particles (~80% of the initial particles picked), were selected for a final refinement without symmetry imposed using a hollow sphere of 25 nm as a reference. Both apo and holo constructs gave a final resolution estimate of\u00a0~18 \u00c5.\n\n### CryoEM sample preparation, data acquisition, and processing\n\nSamples were prepared on UltrAuFoil 1.2/1.3 gold grids (Quantifoil). Grids were initially washed with two drops of chloroform and allowed to air dry. Of note, no glow discharge step was performed. A 2 mg/mL solution of the SrpI encapsulin in TEM Buffer supplemented with 0.05% NP-40 was applied to the grid, and immediately plunge-frozen in liquid ethane using a Vitrobot Mark IV (blot force 5, 3 s blot, 100% humidity, 4\u00b0C, 1 s drain time). For microscope and collection parameters see Supplementary file 6. Briefly, the holo-SrpI sample was collected on a Titan Krios, and the apo- and sfGFP- samples on Talos Arctica. Data was processed within the RELION pipeline (Scheres, 2012), with defocus estimation using CTFFIND4 (Rohou and Grigorieff, 2015). Particles were automatically picked with LoG-picker and processed in accordance with Figure 6\u2014figure supplement 1.\n\n### Atomic model building and refinement\n\nThe final map for holo-SrpI was the highest resolution of all the states, and was therefore used for model building. The final reconstruction was post-processed in RELION following the default protocols with a solvent mask that extended\u00a0~5 \u00c5 past the reconstruction with a\u00a0~\u00a03 \u00c5 gaussian soft-edge (RELION calculated b-factor of \u221235). An atomic model of one asymmetric unit of the SrpI shell was built into this post-processed map with COOT (Emsley et al., 2010), and then refined with nearest neighbors using the real space refinement tool in PHENIX (Adams et al., 2010). The MTRIAGE program within PHENIX was used to compute the model vs. map FSC, and HOLE was used to analyze the pores at the fivefold symmetry axis (Smart et al., 1996). For the apo-SrpI and 225-NTD-sfGFP-SrpI structures, the shell density was indistinguishable compared to the holo-SrpI, so no model refinement was performed. Instead, these maps were used to guide interpretation of additional density within the shell, and to calculate difference maps between the holo- and apo- states using UCSF Chimera (Goddard et al., 2018). All coordinates and maps were visualized with UCSF ChimeraX and Pymol (Goddard et al., 2018); The PyMOL Molecular Graphics System, (Version 2.3.2 Shr\u00f6dinger, LLC).\n\nAdditionally, symmetry expansion and focused alignment-free 3D classification were performed with RELION for all states. For symmetry expansion, an asymmetric reconstruction was used as the input. The command relion_particle_symmetry_expand with the flag --sym I1 was used to expand the dataset 60-fold to account for the icosahedral symmetry, and properly reassign the Euler angles in order to place each unique subunit into the same location. Following expansion, a local refinement (C1) was performed to adjust for any slight variations in Euler angles that may exist. A generous mask encompassing a single subunit and extending about 50% of the way through neighboring subunits was used for focused alignment-free classification into eight classes. In order to prevent classification of noisy features, the expectation-step was limited to 20 \u00c5 and tau was set to 8. Three classes showed similar additional density in the region depicted in Figure 6E, while five classes showed no clear supplemental density beyond the shell itself.\n",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "95c07675-4e74-4dd6-8670-88e135b48892",
+      "submission_id": "2df55797-9e8f-4525-bf6b-69b01af9e98d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sriram Subramaniam, University of British Columbia Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.59288.sa1](https://doi.org/10.7554/eLife.59288.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nIn this study, Nichols et al. use a combination of biochemical and electron microscopic experiments to characterize a unique family of encapsulin nanocompartments in a prokaryotic cell. The study reveals structural determinants that likely confer family-specific substrate selectivity and suggests an evolutionary link between encapsulins and Caudovirales bacteriophages. The work represents a significant contribution to the body of literature on encapsulin systems and is of wider interest to those interested in the physiology and ecology of sulfate metabolism in bacteria.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Discovery and characterization of a novel family of prokaryotic nanocompartments involved in sulfur metabolism\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by Sriram Subramaniam as Reviewing Editor and Gisela Storz as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Jon Marles-Wright (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, when editors judge that a submitted work as a whole belongs in eLife but that some conclusions require a modest amount of additional new data, as they do with your paper, we are asking that the manuscript be revised to either limit claims to those supported by data in hand, or to explicitly state that the relevant conclusions require additional supporting data.\n\nOur expectation is that the authors will eventually carry out the additional experiments and report on how they affect the relevant conclusions either in a preprint on bioRxiv or medRxiv, or if appropriate, as a Research Advance in eLife, either of which would be linked to the original paper.\n\nSummary:\n\nIn this study Nichols et al., describe a detailed characterization of a unique family of encapsulin nanocompartments formed by SrpI shell protein in Synechococcus elongatus. The nanocompartment is conserved across bacterial phyla, is upregulated upon sulfur starvation, and encapsulates cysteine desulfurase (CyD) as a cargo enzyme. The molecular determinants of CyD encapsulation and its interactions with SrpI shell protein were further investigated by in-vitro experiments, negative stain TEM, and high-resolution structure determination of the noncompartment using cryo-EM. The study reveals structural determinants that likely confer family-specific substrate selectivity and suggests an evolutionary link between encapsulins and Caudovirales bacteriophages. The work represents a significant contribution to the body of literature on encapsulin systems and is of wider interest to those interested in the physiology and ecology of sulfate metabolism in bacteria.\n\nEssential revisions:\n\nThe authors have used \"organelle\" to describe SrpI encapsulins in some instances in the manuscript. It may be more appropriate replace it with \"organelle-like\" compartment/structure.\n\nThere is a lack of in vivo experimentation in S. elongatus (the host) that should be done with such an important/novel finding; especially given the expertise the Savage lab has with S. elongatus. Most importantly, what happens in a SrpI deletion mutant? What happens when you delete or overexpress CyD in S. elongatus with or without SrpI, with or without sulfur depletion. Are nanocompartments observed in TEM of wt S. elongatus that disappear in an SprI mutant? What is the compartment copy number in wt S. elongatus per cell? The findings suggest it should be roughly equivalent to enzyme copy number?\n\nOne thing of particular note is the extensive NTD encapsulation domain that the cysteine desulfurase possesses. It would be interesting to see more made of this in the results, especially in the context of the much shorter encapsulation sequences seen in the type 1 encapsulins. Given the unusual amino acid composition of this domain \u2013 to me it looks like a model rigid linker with the high proportion of proline residues interspersed with T/S \u2013 it may be more structured than predicted. Some bacteriophage proteins with HK97-like folds have an accessory protein that acts as a molecular staple. Could you comment on whether this domain may act in this way? Did you assay the \u0394-NTD version of the cysteine desulfurase to see if this domain influences the enzymatic activity?\n",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6f7dd579-06a8-4716-8572-80393cdcecd9",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C1",
+      "claim": "Prokaryotic nanocompartments, also known as encapsulins, are a recently discovered proteinaceous organelle-like compartment in prokaryotes that compartmentalize cargo enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "Prokaryotic nanocompartments, also known as encapsulins, are a recently discovered proteinaceous organelle-like compartment in prokaryotes that compartmentalize cargo enzymes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement about encapsulins that is supported by established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "5f348d23-79ca-424c-849e-273bc715c538",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C2",
+      "claim": "A novel encapsulin exists in the freshwater cyanobacterium Synechococcus elongatus PCC 7942.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we describe a novel encapsulin in the freshwater cyanobacterium Synechococcus elongatus PCC 7942.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented throughout the manuscript including protein purification, microscopy, and structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "6c784f0c-1bd8-4274-9b94-9ca79ba55f49",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C3",
+      "claim": "The SrpI nanocompartment is upregulated upon sulfate starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "This nanocompartment is upregulated upon sulfate starvation and encapsulates a cysteine desulfurase enzyme via an N-terminal targeting sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from sulfate starvation experiments and mass spectrometry analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "095f2923-98d1-4950-90c5-c645a407f751",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C4",
+      "claim": "The SrpI encapsulin encapsulates a cysteine desulfurase enzyme via an N-terminal targeting sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "This nanocompartment is upregulated upon sulfate starvation and encapsulates a cysteine desulfurase enzyme via an N-terminal targeting sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from in vivo and in vitro loading experiments shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "5de4e0d5-850a-46f6-9b31-8fabb5c3a34e",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C5",
+      "claim": "The structure of the SrpI nanocompartment complex has been determined to 2.2 \u00c5 resolution using cryo-electron microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Using cryo-electron microscopy, we have determined the structure of the nanocompartment complex to 2.2 \u00c5 resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cryo-EM data and structural analysis presented in Figure 6 and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "3534cd32-c42b-4205-a641-f03593cea846",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C6",
+      "claim": "The activity of the cysteine desulfurase is enhanced upon encapsulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, biochemical characterization of the complex demonstrated that the activity of the cysteine desulfurase is enhanced upon encapsulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by enzymatic activity assays shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "e8096dd8-d5c4-4d32-a815-167a867b5bf5",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C7",
+      "claim": "Subcellular compartmentalization is an essential strategy used by cells to facilitate metabolic pathways that are incompatible with the rest of the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "Subcellular compartmentalization is an essential strategy used by cells to facilitate metabolic pathways that are incompatible with the rest of the cytosol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement supported by established scientific knowledge and is referenced in the context of the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "dd08c966-680b-48e1-bea0-10864d140b59",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C8",
+      "claim": "Prokaryotes partition metabolic pathways into unique chemical environments using subcellular compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to common misconceptions that organelles are exclusive to eukaryotes, even prokaryotes partition metabolic pathways into unique chemical environments using subcellular compartments (Grant et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Grant et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "fc678ed0-9cfe-4523-adff-cf9c16d3f1cf",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C9",
+      "claim": "Carboxysomes sequester the enzyme rubisco and facilitate substrate channeling by increasing the local concentration of CO2.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, studies of the bacterial microcompartments called carboxysomes have shown how the complex sequesters the enzyme rubisco and facilitates substrate channeling by increasing the local concentration of CO2 (Oltrogge et al., 2020; Mangan et al., 2016; Kerfeld et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Oltrogge et al., 2020; Mangan et al., 2016; Kerfeld et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "0dd0a3f4-b34d-4abd-9978-19bb146378ec",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C10",
+      "claim": "The propane-diol utilization (PDU) microcompartment sequesters a cytotoxic aldehyde intermediate from the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the propane-diol utilization (PDU) microcompartment sequesters a cytotoxic aldehyde intermediate from the cytoplasm and allows it to be subsequently converted by downstream, compartmentalized enzymes to efficiently generate the end products of the pathway (Sampson and Bobik, 2008; Crowley et al., 2010; Chowdhury et al., 2015; Kerfeld et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Sampson and Bobik, 2008; Crowley et al., 2010; Chowdhury et al., 2015; Kerfeld et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "3d683a07-a964-483c-93ac-8a1507fb3959",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C11",
+      "claim": "Prokaryotic nanocompartments were discovered in 2008.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, another class of protein-bounded compartments, known as prokaryotic nanocompartments, has been discovered (Sutter et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Sutter et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "62dc608c-a2f1-444a-a46a-84a60f4e1d90",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C12",
+      "claim": "Encapsulins are typically found as a two-gene system which encodes a shell protein that self-assembles into an icosahedral capsid-like compartment, and a cargo protein that becomes encapsulated by the shell through a targeting peptide sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "They are typically found as a two-gene system which encodes a shell protein that self-assembles into an icosahedral capsid-like compartment, and a cargo protein that becomes encapsulated by the shell through a targeting peptide sequence (Giessen, 2016; Nichols et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Giessen, 2016; Nichols et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "c3a9be9d-bc1a-4c05-8979-e5d3d7032992",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C13",
+      "claim": "Many functionally diverse cargo proteins have been found to be associated with encapsulins, including ferritin-like proteins (FLP), iron mineralizing encapsulin cargo from firmicutes (IMEF), DyP-type peroxidases, and hydroxylamine oxidoreductase (HAO).",
+      "claim_type": "EXPLICIT",
+      "source": "Many functionally diverse cargo proteins have been found to be associated with encapsulins, including ferritin-like proteins (FLP), iron mineralizing encapsulin cargo from firmicutes (IMEF), DyP-type peroxidases, and hydroxylamine oxidoreductase (HAO) (Sutter et al., 2008; Giessen et al., 2019; Giessen and Silver, 2017; Xing et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Sutter et al., 2008; Giessen et al., 2019; Giessen and Silver, 2017; Xing et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "01ca8c04-6fc1-4eb1-a03d-633e7e65d2c3",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C14",
+      "claim": "DyP-containing encapsulins from Myxococcus xanthus have been implicated in nutrient starvation and oxidative stress responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the DyP-containing encapsulins from Myxococcus xanthus have been implicated in nutrient starvation and oxidative stress responses (Kim et al., 2009; Kim et al., 2019; McHugh et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kim et al., 2009; Kim et al., 2019; McHugh et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "884b3449-292c-4b3e-ae3d-b7db78056719",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C15",
+      "claim": "FLP and IMEF containing encapsulins appear to be involved in iron storage and mitigation of toxic reactive oxygen species products of the Fenton reaction due to free iron during oxidative stress.",
+      "claim_type": "EXPLICIT",
+      "source": "The FLP and IMEF containing encapsulins appear to be involved in iron storage and mitigation of toxic reactive oxygen species products of the Fenton reaction due to free iron during oxidative stress (Giessen et al., 2019; Giessen and Silver, 2017; He et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Giessen et al., 2019; Giessen and Silver, 2017; He et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "b4769b9d-77f9-427d-894d-2e5e11bade76",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C16",
+      "claim": "The HAO cargo in anammox bacteria has been hypothesized to reduce a cytotoxic hydroxylamine metabolic intermediate.",
+      "claim_type": "EXPLICIT",
+      "source": "Encapsulins are also thought to be integral to highly specialized metabolism, such as that found in anammox bacteria, in which the HAO cargo has been hypothesized to reduce a cytotoxic hydroxylamine metabolic intermediate (Giessen and Silver, 2017; Kartal et al., 2013; Xing et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Giessen and Silver, 2017; Kartal et al., 2013; Xing et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "82265c99-9b0e-4b3b-84d5-e212c0e63c6f",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C17",
+      "claim": "Encapsulation of redox reactions is a recurring theme among encapsulins.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this diversity, encapsulation of redox reactions is a recurring theme (Nichols et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Nichols et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "d6f9615f-8671-4b6e-9bbd-495214bdf497",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C18",
+      "claim": "A unifying feature of the encapsulin nanocompartments is the shared HK97 phage-like fold of the shell protein.",
+      "claim_type": "EXPLICIT",
+      "source": "A unifying feature of the encapsulin nanocompartments is the shared HK97 phage-like fold of the shell protein (Giessen and Silver, 2017; Nichols et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Giessen and Silver, 2017; Nichols et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "034e7e68-ff90-4350-9374-0e2b6fb912cd",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C19",
+      "claim": "Bacteriophages belonging to the order Caudovirales possess a major capsid protein that is structurally homologous to the HK97 fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacteriophages belonging to the order Caudovirales also possess a major capsid protein that is structurally homologous to the HK97 fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established scientific knowledge about bacteriophage structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "aa1605f6-6779-4dcb-b42b-add38be26d7f",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C20",
+      "claim": "An evolutionary relationship between encapsulins and Caudovirales capsid proteins has been proposed.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the shared homology of encapsulins and Caudovirales capsid proteins, an evolutionary relationship between the two has been proposed (Koonin and Krupovic, 2018; Krupovic et al., 2019; Krupovic and Koonin, 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Koonin and Krupovic, 2018; Krupovic et al., 2019; Krupovic and Koonin, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "48ad3357-514e-4a76-816d-37371083b724",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C21",
+      "claim": "Family 1 encapsulins comprise a minor fraction of all encapsulin systems.",
+      "claim_type": "EXPLICIT",
+      "source": "This search suggested that previously published encapsulins, hereafter referred to as Family 1 encapsulins, comprise a minor fraction of all encapsulin systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by bioinformatic analysis referenced in the text and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "3132899b-aa4b-414c-86e5-72577099afae",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C22",
+      "claim": "Family 2 encapsulins are more prevalent than Family 1 encapsulins.",
+      "claim_type": "EXPLICIT",
+      "source": "This novel family is even more prevalent than Family 1 encapsulins (Supplementary file 1) and is present in many model organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by bioinformatic data in Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "257f16ba-fe62-4f5d-9a16-2126808c1a8e",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C23",
+      "claim": "Family 2 encapsulins are distinct from the previously published Family 1 systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Phylogenetic analysis of the encapsulin shell proteins revealed that Family 2 encapsulins are distinct from the previously published Family 1 systems (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phylogenetic analysis shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "39362ff6-a167-4509-99b6-a99788fd81d1",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C24",
+      "claim": "Family 2 divides into two distinct subfamilies, Family 2a and Family 2b.",
+      "claim_type": "EXPLICIT",
+      "source": "Family 2 further divides into what we propose as two distinct subfamilies, Family 2a and Family 2b.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by phylogenetic clustering shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "bb8a8e50-fdef-4abf-b5a2-1265cc7d74d1",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C25",
+      "claim": "Family 2a is found adjacent to sulfur metabolism genes whereas Family 2b neighbors genes involved in terpenoid synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the two subfamilies are found in distinct genomic contexts. Family 2a is found adjacent to sulfur metabolism genes whereas Family 2b neighbors genes involved in terpenoid synthesis (Figure 1B; Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by genomic neighborhood analysis shown in Figure 1B and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "23ba6471-2c29-4a1a-af82-bbe10192dad4",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C26",
+      "claim": "A cysteine desulfurase gene is most prevalent among genes neighboring the Family 2a subfamily.",
+      "claim_type": "EXPLICIT",
+      "source": "Most prevalent among the Family 2a subfamily was the co-occurrence of a neighboring cysteine desulfurase gene, while the Family 2b shell genes were found to most often neighbor a polyprenyl diphosphate synthase gene (Supplementary file 2 and 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by genomic neighborhood data in Supplementary files 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "3aec3936-88ff-4c42-b92b-4e09c927fa08",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C27",
+      "claim": "Family 2b shell genes most often neighbor a polyprenyl diphosphate synthase gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Most prevalent among the Family 2a subfamily was the co-occurrence of a neighboring cysteine desulfurase gene, while the Family 2b shell genes were found to most often neighbor a polyprenyl diphosphate synthase gene (Supplementary file 2 and 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by genomic neighborhood data in Supplementary files 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "51b9bcb1-2eba-4172-bd25-b1a042ab3145",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C28",
+      "claim": "The CRP/FNR cyclic nucleotide-binding domain is predominantly found in the Family 2b shell sequences but not Family 2a.",
+      "claim_type": "EXPLICIT",
+      "source": "The individual subfamilies can also be defined by the CRP/FNR cyclic nucleotide-binding domain that is predominantly found in the Family 2b shell sequences but not Family 2a.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by sequence analysis of the two subfamilies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "7dc11ad5-69ec-48d0-bb2b-286cfac6f81e",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C29",
+      "claim": "Family 2a encapsulins are widespread and found distributed in a polyphyletic fashion throughout 13 bacterial phyla.",
+      "claim_type": "EXPLICIT",
+      "source": "Our focus for the remainder of the paper will be on the Family 2a subfamily, which is widespread and found distributed in a polyphyletic fashion throughout 13 bacterial phyla (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phylogenetic analysis shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "d822c1d6-56c8-4e68-bfc9-0a4f06edcf39",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C30",
+      "claim": "The SrpI shell protein eluted with an estimated molecular weight of approximately 2 MDa.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of the shell gene in Escherichia coli BL21 (DE3) cells, followed by purification and size-exclusion chromatography, revealed that the protein eluted with an estimated molecular weight of \u22482 MDa (Figure 1C), the typical size for many previously characterized encapsulins (Cassidy-Amstutz et al., 2016; Snijder et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by size-exclusion chromatography data shown in Figure 1C and citations to Cassidy-Amstutz et al., 2016; Snijder et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "a1372b3d-4edb-4320-aabf-99c735036209",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C31",
+      "claim": "The SrpI complex forms a nanocompartment with an average diameter of 25 \u00b1 1 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Negative stain transmission electron microscopy (TEM) of the purified sample indicated the complex forms a nanocompartment with an average diameter of 25 \u00b1 1 nm (n = 180) (Figure 1D, Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by negative stain TEM data shown in Figure 1D and Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "83a413d0-0305-4d05-be04-b3024935f48c",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C32",
+      "claim": "The encapsulin shell gene (Synpcc7942_B2662) is upregulated upon sulfur starvation in S. elongatus.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work by Nicholson and colleagues in S. elongatus demonstrated that the encapsulin shell gene (Synpcc7942_B2662) is one of many whose mRNA expression level is upregulated upon sulfur starvation (Nicholson et al., 1995; Nicholson and Laudenbach, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Nicholson et al., 1995; Nicholson and Laudenbach, 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "c101cd78-95aa-40fa-ad1b-9f0004d389e5",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C33",
+      "claim": "The SrpI gene is found on a plasmid encoding many sulfur-related genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, this gene, which is found on a plasmid encoding many sulfur-related genes, was termed SrpI for Sulfur regulated plasmid-encoded gene-I (Chen et al., 2008; Nicholson and Laudenbach, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Chen et al., 2008; Nicholson and Laudenbach, 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "44ff82d6-dbe3-42b8-8fae-b3a260ad435e",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C34",
+      "claim": "Sulfur starvation in cyanobacteria results in a chlorosis phenotype due to the degradation of phycobilisomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous studies of sulfur starvation in cyanobacteria, we observed the expected chlorosis phenotype due to the degradation of phycobilisomes (Collier and Grossman, 1992; Cameron and Pakrasi, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Collier and Grossman, 1992; Cameron and Pakrasi, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "4bedc78e-7a9f-4188-ba80-af195b59d1a5",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C35",
+      "claim": "Chlorosis was confirmed by loss of phycocyanin absorbance at 620 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Chlorosis was confirmed by loss of phycocyanin absorbance at 620 nm (Figure 2A, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by absorbance spectroscopy data shown in Figure 2A and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "e8332f3b-69af-4b4e-a095-77a2339d0d39",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C36",
+      "claim": "After 48 hr of sulfur starvation, the top hits by total spectral counts were the putative encapsulin shell protein, SrpI, and the product of the neighboring gene (Synpcc7942_B2661), a cysteine desulfurase.",
+      "claim_type": "EXPLICIT",
+      "source": "After 48 hr of sulfur starvation, the top hits, as determined by total spectral counts, were the putative encapsulin shell protein, SrpI, and the product of the neighboring gene (Synpcc7942_B2661), a cysteine desulfurase (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "f3ebeac3-2a6a-4e1f-8018-370ad6b3e52d",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C37",
+      "claim": "Knockout mutants for SrpI and cysteine desulfurase in S. elongatus PCC 7942 did not yield a growth defect phenotype under nutrient replete nor sulfur starvation conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "While we were able to detect upregulation of SrpI and cysteine desulfurase during sulfur starvation, knockout mutants for these genes in S. elongatus PCC 7942 did not yield a growth defect phenotype under nutrient replete nor sulfur starvation conditions (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by growth curve data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "6a73cf31-29ea-4602-969e-b7e1f2e31a42",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C38",
+      "claim": "The SrpI-associated cysteine desulfurase (CyD) possesses a unique N-terminal domain in addition to the canonical cysteine desulfurase domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequence alignment of the five cysteine desulfurases found in the S. elongatus genome revealed that the SrpI-associated cysteine desulfurase (Synpcc7942_B2661), hereafter named CyD, possesses a unique N-terminal domain in addition to the canonical cysteine desulfurase domain (Figure 3A, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence alignment data shown in Figure 3A and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "40e11437-1956-4032-aec6-26c5b2da32e0",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C39",
+      "claim": "The N-terminal domain of CyD is shared by cysteine desulfurases found adjacent to SrpI homologs in species possessing this encapsulin system.",
+      "claim_type": "EXPLICIT",
+      "source": "This N-terminal domain is shared by cysteine desulfurases found adjacent to SrpI homologs in species possessing this encapsulin system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from sequence analysis of homologous systems.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "af31e195-2445-41c2-9a8c-6a1d72ac6b4b",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C40",
+      "claim": "The N-terminal domain of CyD is highly disordered.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural prediction using the primary sequence of the SrpI-associated CyD revealed that the N-terminal domain (NTD) is highly disordered (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by disorder prediction analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "b4a97ef1-56c4-4511-97d7-c9404c3aa155",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C41",
+      "claim": "Intrinsically disordered domains evolve rapidly, preserving bulk chemical characteristics even as the sequence diverges greatly.",
+      "claim_type": "EXPLICIT",
+      "source": "Intrinsically disordered domains are known to evolve rapidly, preserving bulk chemical characteristics even as the sequence diverges greatly (Moesa et al., 2012; Varadi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Moesa et al., 2012; Varadi et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "4a4cf172-1293-4700-ab54-fdc71efe6110",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C42",
+      "claim": "Two motifs, 'LARLANEFFS' and 'AASPYYFLDG', can be found in most SrpI-associated CyD sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "However, two motifs, 'LARLANEFFS' and 'AASPYYFLDG', can be found in most SrpI-associated CyD sequences (Figure 3\u2014figure supplement 2; Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence motif analysis shown in Figure 3\u2014figure supplement 2 and Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "70067ddf-fbea-48fb-b7ec-62241ec95af3",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C43",
+      "claim": "The entire 225 amino acid N-terminal domain from CyD fused to sfGFP (CyD 1\u2013225-sfGFP) yielded the highest loading signal.",
+      "claim_type": "EXPLICIT",
+      "source": "The entire 225 amino acid N-terminal domain from CyD fused to sfGFP (CyD 1\u2013225-sfGFP) yielded the highest loading signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by SDS-PAGE and fluorescence data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "555a6b86-f7b8-417c-99d9-204beaa17d0a",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C44",
+      "claim": "Targeting with the first 100 amino acids of the NTD functioned, albeit not as efficiently as the full N-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeting with the first 100 amino acids of the NTD also functioned, albeit not as efficiently as the full N-terminus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by SDS-PAGE and fluorescence data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "8c3cacd4-49bc-4943-b02a-f73229b080f9",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C45",
+      "claim": "The entire cysteine desulfurase fused to sfGFP was encapsulated, yet not as well as the 225-NTD.",
+      "claim_type": "EXPLICIT",
+      "source": "The entire cysteine desulfurase fused to sfGFP was also encapsulated, yet again not as well as the 225-NTD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by SDS-PAGE and fluorescence data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "1bec0668-2a9e-4b1f-83d7-34f9205419a4",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C46",
+      "claim": "CyD 155\u2013183-sfGFP, containing the conserved motif of 'AASPYYFLDG', was not sufficient to sequester cargo within the compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, CyD 155\u2013183-sfGFP, containing the conserved motif of 'AASPYYFLDG', was not sufficient to sequester cargo within the compartment, nor was the non-tagged sfGFP construct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by SDS-PAGE and fluorescence data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "0c7dc5c7-4829-4316-bf8c-ca8e49b6f124",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C47",
+      "claim": "Only the 225NTD-sfGFP construct displayed GFP fluorescence in the high-molecular-weight band, indicative of sfGFP loading.",
+      "claim_type": "EXPLICIT",
+      "source": "Only the 225NTD-sfGFP construct displayed GFP fluorescence in the high-molecular-weight band, indicative of sfGFP loading (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vitro loading assay data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "7dc47910-d8c7-4608-8878-41e5500737d7",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C48",
+      "claim": "The native cysteine desulfurase cargo was encapsulated in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "We were also able to load the full-length cysteine desulfurase in vitro using the same procedure. We observed encapsulation of the native cargo as indicated by the co-elution of cargo in the compartment fraction (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vitro loading assay data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "956bc1e9-9a58-4902-9d76-7b660cd4a355",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C49",
+      "claim": "The disordered NTD is essential for cargo loading.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, we found that the disordered NTD is essential for cargo loading. A mutant CyD lacking the entire N-terminal domain (\u0394NTD-CyD) was not measurably encapsulated, as evidenced by separate elution of compartment and truncated cargo (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vitro loading assay data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "3cac2636-c5d8-4f83-ae95-56f27b39565b",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C50",
+      "claim": "A clear difference in density on the shell interior was observed when comparing the apo-SrpI encapsulin (no cargo) to the holo-SrpI encapsulin (CyD loaded).",
+      "claim_type": "EXPLICIT",
+      "source": "Even in raw micrographs, a clear difference in density on the shell interior was observed when comparing the apo-SrpI encapsulin (no cargo) to the holo-SrpI encapsulin (CyD loaded) (Figure 5A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by negative stain TEM data shown in Figure 5A and 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "b2e5cbd8-a7d5-482e-9e6a-fa823f663fd3",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C51",
+      "claim": "The apo-SrpI capsid is permissive to uranyl formate stain.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of density within the interior of the apo-SrpI capsid also demonstrates that the shell is permissive to uranyl formate stain, which would also allow definition of internal features for the cargo-loaded sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the negative stain TEM reconstruction shown in Figure 5B.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "13c54375-d293-43a0-97a2-bbf7842d2d39",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C52",
+      "claim": "Clear density for the CyD exists at one of the sites of threefold symmetry within the complex.",
+      "claim_type": "EXPLICIT",
+      "source": "For the cargo-loaded structure, clear density for the CyD exists at one of the sites of threefold symmetry within the complex (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by negative stain TEM reconstruction shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "80f7323e-02c3-4af1-8e7c-af3c2dc796db",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C53",
+      "claim": "A difference map revealed density corresponding to 1\u20132 copies of the cysteine desulfurase.",
+      "claim_type": "EXPLICIT",
+      "source": "A difference map, created by subtracting apo-SrpI from the holo-SrpI structure, revealed density corresponding to 1\u20132 copies of the cysteine desulfurase (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by difference map analysis shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "f7b33cac-d5ef-48f0-ae69-db6692978e3c",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C54",
+      "claim": "All encapsulin structures published thus far have belonged to the Family 1 encapsulins.",
+      "claim_type": "EXPLICIT",
+      "source": "All encapsulin structures published thus far have belonged to the Family 1 encapsulins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by knowledge of the published literature on encapsulin structures.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "b02cd09a-33a7-4677-8b88-ceb6e8383ff0",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C55",
+      "claim": "Family 1 encapsulin structures are all icosahedral, vary in size from 24 to 42 nm in diameter, and have a triangulation number of T = 1, T = 3, or T = 4.",
+      "claim_type": "EXPLICIT",
+      "source": "These structures are all icosahedral, vary in size from 24 to 42 nm in diameter, and have a triangulation number of T = 1, T = 3, or more recently, T = 4 (Sutter et al., 2008; Akita et al., 2007; McHugh et al., 2014; Giessen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Sutter et al., 2008; Akita et al., 2007; McHugh et al., 2014; Giessen et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "97b6b828-5cb8-4c0b-85b4-db7bfc4bd993",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C56",
+      "claim": "The SrpI encapsulin structure was resolved at 2.2 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Cryo-EM analysis was performed on purified holo-SrpI to resolve the shell structure at 2.2 \u00c5 resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cryo-EM data shown in Figure 6 and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "b74426fd-0ce5-418a-90b6-1c823b4130dd",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C57",
+      "claim": "The SrpI encapsulin structure represents the first Family 2 encapsulin structure and is the highest resolution structure for an encapsulin to date.",
+      "claim_type": "EXPLICIT",
+      "source": "This represents the first Family 2 encapsulin structure and is the highest resolution structure for an encapsulin to date, allowing for accurate atomic model building (Figure 6A, Figure 6\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cryo-EM data shown in Figure 6A and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "a0b7f50e-4345-4a47-9549-bac1d33f2641",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C58",
+      "claim": "The SrpI encapsulin is 24.5 nm in diameter and has a T = 1 icosahedral capsid formed by the self-assembly of 60 SrpI monomeric subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "The SrpI encapsulin is 24.5 nm in diameter and has a T = 1 icosahedral capsid formed by the self-assembly of 60 SrpI monomeric subunits (Figure 6A), similar to previously reported encapsulin structures.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cryo-EM structural analysis shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "c3a4a64a-91db-4f67-b1b9-0582d114200c",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C59",
+      "claim": "The SrpI monomer shares the canonical HK97 fold found in Family 1 encapsulins and Caudovirales bacteriophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the structural similarity of the entire shell, it is unsurprising that the SrpI monomer also shares the canonical HK97 fold found in Family 1 encapsulins and Caudovirales bacteriophages (Figure 6B, Figure 6\u2014figure supplement 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison shown in Figure 6B and Figure 6\u2014figure supplement 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "98a49f97-8a6a-4a4d-84c8-0a0f0bf3eb90",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C60",
+      "claim": "The Family 2a SrpI possesses an extended N-terminal arm (N-arm) that is more characteristic of bacteriophage structures.",
+      "claim_type": "EXPLICIT",
+      "source": "However, unlike other Family 1 encapsulin shell proteins, the Family 2a SrpI possesses an extended N-terminal arm (N-arm) that is more characteristic of bacteriophage structures (Figure 6\u2014figure supplement 3C; Duda and Teschke, 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural analysis shown in Figure 6\u2014figure supplement 3C and citation to Duda and Teschke, 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "c3c8e4d6-9000-428a-b74e-25ec9eb16ff5",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C61",
+      "claim": "The N-arm of the SrpI shell intertwines with the neighboring subunit to create a chainmail-like topology.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to other HK97 bacteriophage capsids, the N-arm of the SrpI shell intertwines with the neighboring subunit to create a chainmail-like topology (Figure 6\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural analysis shown in Figure 6\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "71304726-c6a0-498b-8acc-fe0c917030f1",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C62",
+      "claim": "The vertices of the SrpI encapsulin protrude from the capsid yielding a raised 'spike' morphology not found in the Family 1 encapsulins.",
+      "claim_type": "EXPLICIT",
+      "source": "The vertices of the SrpI encapsulin protrude from the capsid yielding a raised 'spike' morphology not found in the Family 1 encapsulins (Figure 6\u2014figure supplement 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison shown in Figure 6\u2014figure supplement 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "3b1f8b0c-b6e0-41a9-b5ef-40ba761e610c",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C63",
+      "claim": "The A-domain of SrpI that forms a pore at the fivefold axis is composed of residues that are positively charged.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the A-domain of SrpI that forms a pore at the fivefold axis is composed of residues that are positively charged (Figure 6C, Figure 6\u2014figure supplement 5), in contrast to the negatively charged fivefold axis pore of Family 1 encapsulins (Giessen et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrostatic analysis shown in Figure 6C and Figure 6\u2014figure supplement 5, and citation to Giessen et al., 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "66ba89cd-55c1-433f-8720-82846a8e6ba7",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C64",
+      "claim": "The fivefold pore at the capsid vertices creates a selective barrier to allow encapsulin substrates into the compartment lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "It is thought that the fivefold pore at the capsid vertices creates a selective barrier to allow encapsulin substrates into the compartment lumen (Giessen et al., 2019; Nichols et al., 2017; Sutter et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Giessen et al., 2019; Nichols et al., 2017; Sutter et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "c5a5462d-e18c-4738-9a19-011da3f7a30f",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C65",
+      "claim": "At physiological pH for S. elongatus growing in light (pH 8\u20138.4), roughly 30\u201354% of free cysteine will have a net charge of \u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "At physiological pH for S. elongatus growing in light, pH 8\u20138.4 (Mangan et al., 2016), roughly 30\u201354% of free cysteine will have a net charge of \u22121 and therefore could traverse the positively charged pore exterior (Cameselle et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Mangan et al., 2016 and Cameselle et al., 1986.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "c7f88958-8ccf-485d-a53d-25977f0d984f",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C66",
+      "claim": "Mycobacterium smegmatis has a cytoplasmic pH between pH 6.1 and 7.2.",
+      "claim_type": "EXPLICIT",
+      "source": "While this charge selectivity makes sense in the uniquely high pH environment of S. elongatus PCC 7942, this compartment is also found in model bacteria that are known to have a lower cytoplasmic pH such as Mycobacterium smegmatis which has been measured to be between pH 6.1 and 7.2 (Rao et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Rao et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "5b292ed6-9b15-4bf1-81a9-628290740d01",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C67",
+      "claim": "Residues Arg 192 and Arg 304 confer the positive charge of the pore in S. elongatus PCC 7942 and are not well-conserved in other organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Residues that conferred the positive charge of the pore in S. elongatus PCC 7942, Arg 192, and Arg 304, appear not to be well-conserved in other organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by sequence conservation analysis shown in Figure 6\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "73f2089a-8aab-49b8-991c-110b0f107519",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C68",
+      "claim": "The residues that appear most conserved at the fivefold pore are Gly 194 and Pro 196.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the residues that appear most conserved are Gly 194 and Pro 196. These residues form the diameter of the inside of the pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by sequence conservation analysis shown in Figure 6\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "def4f9ff-971a-4022-8322-e95ffb69fc29",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C69",
+      "claim": "The size of the pore is an important constraint for limiting the spectrum of substrates that can enter the compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it is likely that the size of the pore is also an important constraint for limiting the spectrum of substrates that can enter the compartment (Williams et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Williams et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "a7e01f9b-d982-4aa4-809a-97315fdf7e29",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C70",
+      "claim": "The SrpI encapsulin fivefold pore is 3.7 \u00c5 in diameter at its most restrictive point.",
+      "claim_type": "EXPLICIT",
+      "source": "The SrpI encapsulin fivefold pore is 3.7 \u00c5 in diameter at its most restrictive point (Figure 6C) as calculated by HOLE (Smart et al., 1996).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by pore analysis shown in Figure 6C and citation to Smart et al., 1996.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "0a0ff5c8-dd9f-4491-86c5-4b5f6aa0369f",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C71",
+      "claim": "Modeling of cysteine in the pore demonstrates it is likely small enough to enter the nanocompartment.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, modeling of cysteine in the pore demonstrates it is likely small enough to enter the nanocompartment (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by molecular modeling shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "4cbe6e82-8a0e-4c85-a24a-cc2c30ae885f",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C72",
+      "claim": "Symmetry expansion and focused classification of the holo-SrpI encapsulin revealed additional EM density at the interior surface of the shell that was localized to the three-fold symmetry axis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, symmetry expansion and focused classification of the holo-SrpI encapsulin, guided by the 225-NTD-sfGFP-SrpI dataset, revealed additional EM density at the interior surface of the shell that was localized to the three-fold symmetry axis (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cryo-EM analysis shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "50c023a9-82e3-4840-82a7-9b7201f201b6",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C73",
+      "claim": "Shell residues at the threefold axis neighboring the cargo EM density are highly conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, shell residues at the threefold axis neighboring the cargo EM density are highly conserved, which suggests that the interaction between the encapsulin cargo and shell may be conserved (Figure 6\u2014figure supplement 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence conservation analysis shown in Figure 6\u2014figure supplement 3A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "05f7c63f-8100-4e02-916e-21daf845d276",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C74",
+      "claim": "Residues F262 and Y273 are located near the suggested cargo density.",
+      "claim_type": "EXPLICIT",
+      "source": "Namely, residues F262, and Y273 are located near the suggested cargo density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural analysis of the cargo density location.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "e642ccc9-b5c7-4f85-aa98-50178dc072ac",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C75",
+      "claim": "Unencapsulated CyD exhibited a kcat of 10 \u00b1 4 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Unencapsulated CyD was active towards a cysteine substrate and exhibited a kcat of 10 \u00b1 4 s\u22121 (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by enzymatic activity assay data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "75782459-96bf-409d-b272-2f63400b58bb",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C76",
+      "claim": "Encapsulated CyD was roughly sevenfold more active than unencapsulated CyD, with a kcat of 67 \u00b1 5 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with our hypothesis that free cysteine could enter the SrpI encapsulin pore, we found that the encapsulated CyD was roughly sevenfold more active than unencapsulated CyD, with a kcat of 67 \u00b1 5 s\u22121 (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by enzymatic activity assay data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "2efa52da-729e-4ca0-85e3-e97bd5f9454d",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C77",
+      "claim": "The N-terminal domain had no effect on catalytic activity of CyD.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the N-terminal domain had no effect on catalytic activity, and unloaded SrpI encapsulin did not exhibit any cysteine desulfurase activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by enzymatic activity assay data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "c4b93c46-785e-41f0-8f12-6c6da6be61df",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C78",
+      "claim": "Unloaded SrpI encapsulin did not exhibit any cysteine desulfurase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the N-terminal domain had no effect on catalytic activity, and unloaded SrpI encapsulin did not exhibit any cysteine desulfurase activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by enzymatic activity assay data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "15192a09-389f-4daa-9447-923cb8e7d950",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C79",
+      "claim": "Rate enhancement of cargo enzymes by Family 1 encapsulins has been observed previously.",
+      "claim_type": "EXPLICIT",
+      "source": "Rate enhancement of cargo enzymes by Family 1 encapsulins has been observed previously and is discussed below (Rahmanpour and Bugg, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Rahmanpour and Bugg, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "f2ca39dd-bee0-41c4-a763-bcebbccb0d49",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C80",
+      "claim": "The Family 2 encapsulin structure shares the HK97 fold found in the Family 1 encapsulins.",
+      "claim_type": "EXPLICIT",
+      "source": "We report here the first high-resolution structure for Family 2 encapsulins and find that it shares the HK97 fold found in the Family 1 encapsulins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "75bb03d3-cca2-41d2-b34a-1feedc2e50f8",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C81",
+      "claim": "The electrostatic charge of the pore is likely reflective of the charge characteristics of the cargo substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "This contrast between pore charges suggests an overarching theme that may be shared among the encapsulins: the electrostatic charge of the pore is likely reflective of the charge characteristics of the cargo substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparison of Family 1 and Family 2 encapsulin structures and their respective substrates.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "929efb28-4ac1-42d1-8bdf-b5f5fc2f9ec2",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C82",
+      "claim": "The DyP-type peroxidase-containing encapsulin from Rhodococcus jostii exhibited an eightfold higher activity on a lignin substrate compared to the unencapsulated peroxidase.",
+      "claim_type": "EXPLICIT",
+      "source": "One such example is the DyP-type peroxidase-containing encapsulin from Rhodococcus jostii, which was shown to exhibit an eightfold higher activity on a lignin substrate compared to the unencapsulated peroxidase (Rahmanpour and Bugg, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Rahmanpour and Bugg, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "e7c3919d-dc8c-4bca-a5b1-428447779dbb",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C83",
+      "claim": "The biochemical function of the FLP-containing encapsulin is impeded in the absence of shell protein, as it loses the ability to properly store and mineralize iron.",
+      "claim_type": "EXPLICIT",
+      "source": "The biochemical function of the FLP-containing encapsulin is also impeded in the absence of shell protein, as it loses the ability to properly store and mineralize iron (He et al., 2016; McHugh et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to He et al., 2016; McHugh et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "35779528-ccf1-4a1f-aabe-39a6f39e2728",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C84",
+      "claim": "The protein SufE from E. coli has been shown to increase the activity of the cysteine desulfurase, SufS, 8- to 50-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the protein SufE from E. coli has been shown to increase the activity of the cysteine desulfurase, SufS, 8- to 50-fold (Loiseau et al., 2003; Outten et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Loiseau et al., 2003; Outten et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "d0a9d5bd-dd8b-4d36-8657-f72b46e0d5ea",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C85",
+      "claim": "SufE binding stimulates an allosteric change in SufS and enables faster regeneration of the SufS active site by the removal of persulfide from the SufS active site.",
+      "claim_type": "EXPLICIT",
+      "source": "SufE binding stimulates an allosteric change in SufS and enables faster regeneration of the SufS active site by the removal of persulfide from the SufS active site, thereby allowing additional reaction cycles (Outten et al., 2003; Singh et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Outten et al., 2003; Singh et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "4ae17ab7-3997-4382-bb0c-bf85b31c2ab3",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C86",
+      "claim": "SrpI may be acting as an accessory protein for the activity of its cysteine desulfurase cargo analogous to what has been observed for SufE and SufS.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that SrpI may be acting as an accessory protein for the activity of its cysteine desulfurase cargo analogous to what has been observed for SufE and SufS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on analogy to the SufE-SufS system.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "7c97e462-3396-4821-8fd6-32afe11a2ea1",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C87",
+      "claim": "Cyanobacteria are assimilatory sulfate reducers.",
+      "claim_type": "EXPLICIT",
+      "source": "Cyanobacteria are assimilatory sulfate reducers and thus, sulfate is sequentially reduced to sulfite and sulfide by the APS/PAPS pathway, which is then followed by the synthesis of L-cysteine via serine-O-acetyltransferase and cysteine synthase (Kopriva et al., 2008; Schmidt, 1990; Schmidt and Christen, 1978).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kopriva et al., 2008; Schmidt, 1990; Schmidt and Christen, 1978.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "9ad16ba2-5692-4079-9a01-bad3790e168b",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C88",
+      "claim": "Cyanobacteria that possess SrpI encapsulin genes are found in freshwater or brackish water, but not marine environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, it is interesting to note that cyanobacteria that possess SrpI encapsulin genes are found in freshwater or brackish water, but not marine environments (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Supplementary file 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "93b249d2-9c01-414b-9357-cdaf8dd17e9a",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C89",
+      "claim": "Sulfate is often a limiting nutrient in freshwater environments compared to marine habitats.",
+      "claim_type": "EXPLICIT",
+      "source": "Sulfate is often a limiting nutrient in freshwater environments compared to marine habitats; therefore, the presence of SrpI exclusively in freshwater cyanobacteria suggests SrpI could play a role in sulfur starvation response (Giordano et al., 2005; Pilson, 2012; Tipping et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Giordano et al., 2005; Pilson, 2012; Tipping et al., 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "e9c55459-0af1-4bf2-8523-a3f890552fbb",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C90",
+      "claim": "The presence of SrpI exclusively in freshwater cyanobacteria suggests SrpI could play a role in sulfur starvation response.",
+      "claim_type": "EXPLICIT",
+      "source": "Sulfate is often a limiting nutrient in freshwater environments compared to marine habitats; therefore, the presence of SrpI exclusively in freshwater cyanobacteria suggests SrpI could play a role in sulfur starvation response (Giordano et al., 2005; Pilson, 2012; Tipping et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the distribution of SrpI in freshwater cyanobacteria and the known sulfate limitation in freshwater environments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "c5a4d0cb-ed9f-479c-a0e5-6918241a267f",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C91",
+      "claim": "SrpI homologs from both M. leprae and M. avium are the most antigenic protein in human leprosy patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work on a SrpI homolog from both M. leprae and M. avium has shown SrpI is the most antigenic protein in human leprosy patients (Winter et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Winter et al., 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "40f09b5b-ba57-4fb8-8819-2218ee2343e8",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C92",
+      "claim": "SrpI homologs have been proposed as a useful antigen for vaccine development in disease-causing Mycobacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of its ability to elicit a proliferative T-cell response in leprosy patients, SrpI homologs have been proposed as a useful antigen for vaccine development in disease-causing Mycobacteria (Abdellrazeq et al., 2018; Abdellrazeq et al., 2020; Leite et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Abdellrazeq et al., 2018; Abdellrazeq et al., 2020; Leite et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "3f67fd30-6fc3-4dd8-be15-73d0ab07f90f",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C93",
+      "claim": "Leite and colleagues enriched for a complex that was identified as MAP2121c and MAP2120c, the SrpI shell and cysteine desulfurase homologs respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In their search for candidate antigens from M. avium subsp. paratuberculosis, Leite and colleagues enriched for a complex that was identified as MAP2121c and MAP2120c, the SrpI shell and cysteine desulfurase homologs respectively (Leite et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Leite et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "df8bb8b2-94d5-4b2b-b63a-17f9ca2d8262",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C94",
+      "claim": "An evolutionary relationship between the encapsulins and Caudovirales bacteriophages is clear given the shared HK97 fold of the capsid proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "An evolutionary relationship between the encapsulins and Caudovirales bacteriophages is clear given the shared HK97 fold of the capsid proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural similarity and established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "6f329636-9fcf-481c-b926-ddaa7f7c0741",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C95",
+      "claim": "It is possible that the HK97 fold derives from a cellular ancestor and was then recruited by a virus-like ancestor of Caudovirales phage.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that the HK97 fold derives from a cellular ancestor and was then recruited by a virus-like ancestor of Caudovirales phage (Krupovic and Koonin, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning supported by citation to Krupovic and Koonin, 2017.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "1aff27fe-bd91-4ae2-a47a-d0c0eff65b89",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "claim_id": "C96",
+      "claim": "The HK97 fold was of viral origin and cellular hosts co-opted the compartments as proteinaceous organelles that enabled some fitness benefit.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, the HK97 fold was of viral origin and cellular hosts co-opted the compartments as proteinaceous organelles that enabled some fitness benefit (Koonin and Krupovic, 2018; Krupovic and Koonin, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning supported by citations to Koonin and Krupovic, 2018; Krupovic and Koonin, 2017.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1ea40a56-03a6-4038-b434-a707f14e5ea6",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A novel family of encapsulins (Family 2) was identified through bioinformatic analysis, which is more prevalent than previously characterized Family 1 encapsulins. Family 2 divides into two subfamilies (2a and 2b) distinguished by phylogenetic clustering, genomic context (Family 2a neighbors sulfur metabolism genes; Family 2b neighbors terpenoid synthesis genes), and presence of a CRP/FNR domain in Family 2b. Family 2a is widespread across 13 bacterial phyla.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C29 are well-supported by bioinformatic analyses including phylogenetic trees (Figure 1A, Figure 1\u2014figure supplement 1), genomic neighborhood analysis (Figure 1B, Figure 1\u2014figure supplement 2), and sequence analysis (Supplementary files 1-3). The phylogenetic distinctness, prevalence, and genomic context differences are clearly demonstrated through multiple complementary approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "7b7d4c08-6651-4f2e-b625-74aab5689c2c",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The SrpI protein from Synechococcus elongatus PCC 7942 forms a nanocompartment with an estimated molecular weight of approximately 2 MDa and an average diameter of 25 \u00b1 1 nm, as determined by size-exclusion chromatography and negative stain TEM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C30, and C31 are supported by experimental data from size-exclusion chromatography (Figure 1C) and negative stain TEM (Figure 1D, Figure 1\u2014figure supplement 4). The measurements are consistent with known encapsulin sizes and include appropriate sample sizes (n=180 for diameter measurements) and controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "7f10daf2-88f6-4618-98be-d3170a5f33ed",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The SrpI encapsulin and its neighboring cysteine desulfurase are upregulated upon sulfate starvation in S. elongatus PCC 7942. After 48 hours of sulfate starvation, mass spectrometry identified SrpI and the cysteine desulfurase as the top hits by spectral counts. Sulfate starvation induced the expected chlorosis phenotype confirmed by loss of phycocyanin absorbance at 620 nm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C32-C36 are supported by multiple lines of evidence including prior literature (C32, C33), absorbance spectroscopy (Figure 2A, Figure 2\u2014figure supplement 1), SDS-PAGE (Figure 2B), and mass spectrometry (Figure 2C). The upregulation is clearly demonstrated at both the protein level and is consistent with prior mRNA-level observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "7c71d704-be05-4799-83da-5aa2eef9a6e3",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Knockout mutants for SrpI and cysteine desulfurase in S. elongatus PCC 7942 did not yield a growth defect phenotype under nutrient replete or sulfur starvation conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C37 is supported by growth curve data shown in Figure 2\u2014figure supplement 2. However, this negative result limits conclusions about the physiological role of the encapsulin system and suggests either functional redundancy or that the phenotype requires different conditions to manifest.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "2a8078e6-6bd3-41dc-98a9-029a76900ccf",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The SrpI-associated cysteine desulfurase (CyD) possesses a unique, highly disordered N-terminal domain (225 amino acids) that is shared by cysteine desulfurases adjacent to SrpI homologs. Despite sparse overall sequence conservation typical of intrinsically disordered domains, two conserved motifs ('LARLANEFFS' and 'AASPYYFLDG') were identified within this N-terminal domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C42 are supported by sequence alignment (Figure 3A, Figure 3\u2014figure supplement 1), disorder prediction (Figure 3A), and motif analysis (Figure 3B, Figure 3\u2014figure supplement 2). The characterization of the N-terminal domain is thorough and uses appropriate bioinformatic tools. The citation to support the rapid evolution of disordered domains (C41) provides proper context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "f481b7d5-ef65-4d0a-9fbb-8efbb971fd83",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In vivo cargo loading experiments using sfGFP fusions demonstrated that the 225 amino acid N-terminal domain of CyD is sufficient for encapsulation, with the full NTD (CyD 1-225-sfGFP) yielding the highest loading signal. The first 100 amino acids also functioned but less efficiently, while a shorter construct (CyD 155-183-sfGFP) containing only one conserved motif was insufficient for cargo sequestration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C43-C46 are supported by SDS-PAGE and fluorescence data (Figure 3C). The systematic truncation approach provides clear evidence for the minimal targeting sequence. However, the claim lacks quantification of loading efficiency, relying on qualitative assessment of fluorescence intensity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "c94c908a-c5ee-4586-8eed-1aa3507a8fe3",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In vitro loading experiments confirmed that the 225-NTD is necessary and sufficient for cargo loading. Only the 225NTD-sfGFP construct displayed GFP fluorescence in the high-molecular-weight compartment fraction. The native full-length cysteine desulfurase was successfully encapsulated in vitro, while a mutant lacking the entire N-terminal domain (\u0394NTD-CyD) was not measurably encapsulated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 are supported by in vitro loading assays with size-exclusion chromatography (Figure 4A-C, Figure 4\u2014figure supplements 1-5). The experiments include appropriate controls (untagged sfGFP, \u0394NTD-CyD) and use both fluorescence and denaturing SDS-PAGE to confirm loading. The methodology follows established protocols for encapsulin cargo loading studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "fb4f036a-b7f1-4314-ab0a-0a3f5638d6ff",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Negative stain TEM revealed clear differences in internal density between apo-SrpI (no cargo) and holo-SrpI (CyD loaded) encapsulins. The apo-SrpI capsid is permissive to uranyl formate stain. For the cargo-loaded structure, clear density for CyD exists at one of the sites of threefold symmetry, with difference mapping revealing density corresponding to 1-2 copies of the cysteine desulfurase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C53 are supported by negative stain TEM data (Figure 5A-E). The comparison between apo and holo structures is clear, and the difference map provides quantitative evidence for cargo localization. The resolution (~20 \u00c5) is appropriate for negative stain TEM and sufficient to identify cargo density location.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "f65f669e-e793-4065-b882-86de49ec0448",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The structure of the SrpI encapsulin was determined to 2.2 \u00c5 resolution by cryo-EM, representing the first Family 2 encapsulin structure and the highest resolution encapsulin structure to date. The SrpI encapsulin is 24.5 nm in diameter with a T=1 icosahedral capsid formed by 60 monomeric subunits. The SrpI monomer shares the canonical HK97 fold found in Family 1 encapsulins and Caudovirales bacteriophages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C56-C59, and C80 are supported by comprehensive cryo-EM data (Figure 6, Figure 6\u2014figure supplements 1-2). The resolution of 2.2 \u00c5 is excellent and well-documented through FSC curves and local resolution maps. The structural characterization is thorough, including atomic model building and refinement with appropriate validation metrics. The comparison to Family 1 encapsulins and bacteriophages is well-supported by structural alignments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "f4788c33-ab71-4756-8749-73f315e4028b",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Unlike Family 1 encapsulin shell proteins, the Family 2a SrpI possesses an extended N-terminal arm (N-arm) characteristic of bacteriophage structures. This N-arm intertwines with neighboring subunits to create a chainmail-like topology. The vertices of the SrpI encapsulin protrude from the capsid yielding a raised 'spike' morphology not found in Family 1 encapsulins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62 are supported by structural analysis and comparison to Family 1 encapsulins and bacteriophages (Figure 6\u2014figure supplements 3C, 3D, 4). The chainmail topology and spike morphology are clearly visualized in the structural models. The citation to Duda and Teschke, 2019 appropriately supports the comparison to bacteriophage structures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "8e422587-54b1-407a-b1be-bf4e00cab83c",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The A-domain of SrpI forms a positively charged pore at the fivefold axis (3.7 \u00c5 diameter at its most restrictive point), in contrast to the negatively charged pores of Family 1 encapsulins. At physiological pH for S. elongatus (pH 8-8.4), 30-54% of free cysteine will have a net charge of -1, allowing traversal through the positively charged pore. The residues conferring positive charge (Arg 192, Arg 304) are not well-conserved across organisms, while the most conserved residues (Gly 194, Pro 196) form the pore diameter, suggesting pore size is an important constraint for substrate selectivity. Modeling demonstrates cysteine is likely small enough to enter the nanocompartment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C71 and C81 are supported by electrostatic analysis (Figure 6C, Figure 6\u2014figure supplement 5), pore size calculations using HOLE (Figure 6C), sequence conservation analysis (Figure 6\u2014figure supplement 6), and molecular modeling (Figure 6D). The reasoning connecting pore charge to substrate charge is logical and supported by appropriate citations. However, the claim about cysteine charge at physiological pH (C65) relies on citations but the calculation could be more explicitly shown. The inference about charge selectivity (C81) is reasonable but somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "405e004e-070b-4fa8-aaa8-eee36c2ec200",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Symmetry expansion and focused classification of the holo-SrpI encapsulin revealed additional EM density at the interior surface of the shell localized to the three-fold symmetry axis. Shell residues at the threefold axis neighboring the cargo EM density (F262, Y273) are highly conserved, suggesting the interaction between encapsulin cargo and shell may be conserved.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C74 are supported by cryo-EM analysis (Figure 6E) and sequence conservation analysis (Figure 6\u2014figure supplement 3A,B). The symmetry expansion and focused classification approach is appropriate for identifying low-occupancy or flexible cargo. The conservation of residues near the cargo density provides supporting evidence for a functional interaction, though the cargo density is weak and could not be used for atomic model building.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "6efe6955-8178-44fd-bfa3-230f68e761f1",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Enzymatic activity assays demonstrated that encapsulated CyD exhibits a kcat of 67 \u00b1 5 s\u207b\u00b9, approximately sevenfold higher than unencapsulated CyD (kcat = 10 \u00b1 4 s\u207b\u00b9). The N-terminal domain had no effect on catalytic activity, and unloaded SrpI encapsulin did not exhibit any cysteine desulfurase activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C75-C78 are supported by enzymatic activity assays (Figure 7, Figure 7\u2014figure supplement 1). The assays include appropriate controls (\u0394NTD-CyD, empty encapsulin) and use a coupled enzyme assay with proper readout. Error bars indicate replicate measurements (3-6 replicates). The sevenfold enhancement is substantial and statistically significant based on the error bars. The concentration determination by PLP absorbance (Figure 7\u2014figure supplement 1) is appropriate for ensuring accurate enzyme quantification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "ec205f29-a049-442d-924d-b2ca2690c426",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "SrpI may be acting as an accessory protein for the activity of its cysteine desulfurase cargo analogous to what has been observed for SufE and SufS in E. coli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C86 is explicitly speculative and acknowledged as such in the text. While the analogy to the SufE-SufS system is reasonable and supported by appropriate citations (C84, C85), no direct evidence is provided to test this mechanism. The observed activity enhancement (C76) is consistent with this hypothesis but could also result from other mechanisms such as substrate concentration effects or protection from the cytosolic environment.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "5faffa2b-4697-45c5-a94b-9333e35e8ca7",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Cyanobacteria possessing SrpI encapsulin genes are found exclusively in freshwater or brackish water environments, not marine environments. Since sulfate is often a limiting nutrient in freshwater compared to marine habitats, the presence of SrpI exclusively in freshwater cyanobacteria suggests it could play a role in sulfur starvation response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C90 are supported by data in Supplementary file 4 and appropriate citations about sulfate availability in different aquatic environments (C89). The correlation between SrpI distribution and freshwater habitats is clear. However, the inference about sulfur starvation response (C90) is reasonable but somewhat speculative, as correlation does not prove causation. The lack of growth phenotype in knockout mutants (C37) also weakens this inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "b2c5bdef-a5c4-46db-8e70-94c5c1d8da13",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "SrpI homologs from M. leprae and M. avium are highly antigenic in human leprosy patients and have been proposed as useful antigens for vaccine development in disease-causing Mycobacteria. Previous work identified MAP2121c and MAP2120c (SrpI shell and cysteine desulfurase homologs) as a complex in M. avium subsp. paratuberculosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C93 are supported by appropriate citations to prior work (Winter et al., 1995; Abdellrazeq et al., 2018, 2020; Leite et al., 2015). These claims provide important context for the potential biomedical relevance of the SrpI encapsulin system. The structural and biochemical characterization presented in this manuscript validates the interaction between the shell and cysteine desulfurase previously observed by Leite et al.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "721743bb-eb74-4b1e-b271-0a1261ec8539",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background and context claims about encapsulins, bacterial microcompartments, and related systems are provided, including their discovery, structural features, cargo diversity, and physiological roles. These claims establish the scientific context for the novel Family 2 encapsulin characterization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7-C20, C54-C55, C79, C82-C85, C87, and C94 are background claims supported by appropriate citations to established literature. These claims provide necessary context but do not represent novel findings from this study. The citations appear accurate and appropriate for the statements made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    },
+    {
+      "id": "338c4f86-c3bf-4daa-92bb-4eb2d7a9a491",
+      "content_id": "960212f8-b8b1-44d5-ae09-a659334037c4",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Two alternative hypotheses are presented for the evolutionary origin of the HK97 fold: (1) it derives from a cellular ancestor and was recruited by a virus-like ancestor of Caudovirales phage, or (2) it was of viral origin and cellular hosts co-opted the compartments as proteinaceous organelles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C95 and C96 are explicitly speculative and present alternative hypotheses about evolutionary origins. These are supported by appropriate citations (Krupovic and Koonin, 2017; Koonin and Krupovic, 2018) but represent ongoing debates in the field rather than conclusions from this study. The discovery of Family 2 encapsulins may provide additional data points for this debate but does not resolve it.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:33:53.641784Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "48ad3357-514e-4a76-816d-37371083b724",
+      "result_id": "1ea40a56-03a6-4038-b434-a707f14e5ea6"
+    },
+    {
+      "claim_id": "3132899b-aa4b-414c-86e5-72577099afae",
+      "result_id": "1ea40a56-03a6-4038-b434-a707f14e5ea6"
+    },
+    {
+      "claim_id": "257f16ba-fe62-4f5d-9a16-2126808c1a8e",
+      "result_id": "1ea40a56-03a6-4038-b434-a707f14e5ea6"
+    },
+    {
+      "claim_id": "39362ff6-a167-4509-99b6-a99788fd81d1",
+      "result_id": "1ea40a56-03a6-4038-b434-a707f14e5ea6"
+    },
+    {
+      "claim_id": "bb8a8e50-fdef-4abf-b5a2-1265cc7d74d1",
+      "result_id": "1ea40a56-03a6-4038-b434-a707f14e5ea6"
+    },
+    {
+      "claim_id": "23ba6471-2c29-4a1a-af82-bbe10192dad4",
+      "result_id": "1ea40a56-03a6-4038-b434-a707f14e5ea6"
+    },
+    {
+      "claim_id": "3aec3936-88ff-4c42-b92b-4e09c927fa08",
+      "result_id": "1ea40a56-03a6-4038-b434-a707f14e5ea6"
+    },
+    {
+      "claim_id": "51b9bcb1-2eba-4172-bd25-b1a042ab3145",
+      "result_id": "1ea40a56-03a6-4038-b434-a707f14e5ea6"
+    },
+    {
+      "claim_id": "7dc11ad5-69ec-48d0-bb2b-286cfac6f81e",
+      "result_id": "1ea40a56-03a6-4038-b434-a707f14e5ea6"
+    },
+    {
+      "claim_id": "5f348d23-79ca-424c-849e-273bc715c538",
+      "result_id": "7b7d4c08-6651-4f2e-b625-74aab5689c2c"
+    },
+    {
+      "claim_id": "d822c1d6-56c8-4e68-bfc9-0a4f06edcf39",
+      "result_id": "7b7d4c08-6651-4f2e-b625-74aab5689c2c"
+    },
+    {
+      "claim_id": "a1372b3d-4edb-4320-aabf-99c735036209",
+      "result_id": "7b7d4c08-6651-4f2e-b625-74aab5689c2c"
+    },
+    {
+      "claim_id": "6c784f0c-1bd8-4274-9b94-9ca79ba55f49",
+      "result_id": "7f10daf2-88f6-4618-98be-d3170a5f33ed"
+    },
+    {
+      "claim_id": "83a413d0-0305-4d05-be04-b3024935f48c",
+      "result_id": "7f10daf2-88f6-4618-98be-d3170a5f33ed"
+    },
+    {
+      "claim_id": "c101cd78-95aa-40fa-ad1b-9f0004d389e5",
+      "result_id": "7f10daf2-88f6-4618-98be-d3170a5f33ed"
+    },
+    {
+      "claim_id": "44ff82d6-dbe3-42b8-8fae-b3a260ad435e",
+      "result_id": "7f10daf2-88f6-4618-98be-d3170a5f33ed"
+    },
+    {
+      "claim_id": "4bedc78e-7a9f-4188-ba80-af195b59d1a5",
+      "result_id": "7f10daf2-88f6-4618-98be-d3170a5f33ed"
+    },
+    {
+      "claim_id": "e8332f3b-69af-4b4e-a095-77a2339d0d39",
+      "result_id": "7f10daf2-88f6-4618-98be-d3170a5f33ed"
+    },
+    {
+      "claim_id": "f3ebeac3-2a6a-4e1f-8018-370ad6b3e52d",
+      "result_id": "7c71d704-be05-4799-83da-5aa2eef9a6e3"
+    },
+    {
+      "claim_id": "6a73cf31-29ea-4602-969e-b7e1f2e31a42",
+      "result_id": "2a8078e6-6bd3-41dc-98a9-029a76900ccf"
+    },
+    {
+      "claim_id": "40e11437-1956-4032-aec6-26c5b2da32e0",
+      "result_id": "2a8078e6-6bd3-41dc-98a9-029a76900ccf"
+    },
+    {
+      "claim_id": "af31e195-2445-41c2-9a8c-6a1d72ac6b4b",
+      "result_id": "2a8078e6-6bd3-41dc-98a9-029a76900ccf"
+    },
+    {
+      "claim_id": "b4a97ef1-56c4-4511-97d7-c9404c3aa155",
+      "result_id": "2a8078e6-6bd3-41dc-98a9-029a76900ccf"
+    },
+    {
+      "claim_id": "4a4cf172-1293-4700-ab54-fdc71efe6110",
+      "result_id": "2a8078e6-6bd3-41dc-98a9-029a76900ccf"
+    },
+    {
+      "claim_id": "095f2923-98d1-4950-90c5-c645a407f751",
+      "result_id": "f481b7d5-ef65-4d0a-9fbb-8efbb971fd83"
+    },
+    {
+      "claim_id": "70067ddf-fbea-48fb-b7ec-62241ec95af3",
+      "result_id": "f481b7d5-ef65-4d0a-9fbb-8efbb971fd83"
+    },
+    {
+      "claim_id": "555a6b86-f7b8-417c-99d9-204beaa17d0a",
+      "result_id": "f481b7d5-ef65-4d0a-9fbb-8efbb971fd83"
+    },
+    {
+      "claim_id": "8c3cacd4-49bc-4943-b02a-f73229b080f9",
+      "result_id": "f481b7d5-ef65-4d0a-9fbb-8efbb971fd83"
+    },
+    {
+      "claim_id": "1bec0668-2a9e-4b1f-83d7-34f9205419a4",
+      "result_id": "f481b7d5-ef65-4d0a-9fbb-8efbb971fd83"
+    },
+    {
+      "claim_id": "0c7dc5c7-4829-4316-bf8c-ca8e49b6f124",
+      "result_id": "c94c908a-c5ee-4586-8eed-1aa3507a8fe3"
+    },
+    {
+      "claim_id": "7dc47910-d8c7-4608-8878-41e5500737d7",
+      "result_id": "c94c908a-c5ee-4586-8eed-1aa3507a8fe3"
+    },
+    {
+      "claim_id": "956bc1e9-9a58-4902-9d76-7b660cd4a355",
+      "result_id": "c94c908a-c5ee-4586-8eed-1aa3507a8fe3"
+    },
+    {
+      "claim_id": "3cac2636-c5d8-4f83-ae95-56f27b39565b",
+      "result_id": "fb4f036a-b7f1-4314-ab0a-0a3f5638d6ff"
+    },
+    {
+      "claim_id": "b2e5cbd8-a7d5-482e-9e6a-fa823f663fd3",
+      "result_id": "fb4f036a-b7f1-4314-ab0a-0a3f5638d6ff"
+    },
+    {
+      "claim_id": "13c54375-d293-43a0-97a2-bbf7842d2d39",
+      "result_id": "fb4f036a-b7f1-4314-ab0a-0a3f5638d6ff"
+    },
+    {
+      "claim_id": "80f7323e-02c3-4af1-8e7c-af3c2dc796db",
+      "result_id": "fb4f036a-b7f1-4314-ab0a-0a3f5638d6ff"
+    },
+    {
+      "claim_id": "5de4e0d5-850a-46f6-9b31-8fabb5c3a34e",
+      "result_id": "f65f669e-e793-4065-b882-86de49ec0448"
+    },
+    {
+      "claim_id": "97b6b828-5cb8-4c0b-85b4-db7bfc4bd993",
+      "result_id": "f65f669e-e793-4065-b882-86de49ec0448"
+    },
+    {
+      "claim_id": "b74426fd-0ce5-418a-90b6-1c823b4130dd",
+      "result_id": "f65f669e-e793-4065-b882-86de49ec0448"
+    },
+    {
+      "claim_id": "a0b7f50e-4345-4a47-9549-bac1d33f2641",
+      "result_id": "f65f669e-e793-4065-b882-86de49ec0448"
+    },
+    {
+      "claim_id": "c3a4a64a-91db-4f67-b1b9-0582d114200c",
+      "result_id": "f65f669e-e793-4065-b882-86de49ec0448"
+    },
+    {
+      "claim_id": "f2ca39dd-bee0-41c4-a763-bcebbccb0d49",
+      "result_id": "f65f669e-e793-4065-b882-86de49ec0448"
+    },
+    {
+      "claim_id": "98a49f97-8a6a-4a4d-84c8-0a0f0bf3eb90",
+      "result_id": "f4788c33-ab71-4756-8749-73f315e4028b"
+    },
+    {
+      "claim_id": "c3c8e4d6-9000-428a-b74e-25ec9eb16ff5",
+      "result_id": "f4788c33-ab71-4756-8749-73f315e4028b"
+    },
+    {
+      "claim_id": "71304726-c6a0-498b-8acc-fe0c917030f1",
+      "result_id": "f4788c33-ab71-4756-8749-73f315e4028b"
+    },
+    {
+      "claim_id": "3b1f8b0c-b6e0-41a9-b5ef-40ba761e610c",
+      "result_id": "8e422587-54b1-407a-b1be-bf4e00cab83c"
+    },
+    {
+      "claim_id": "66ba89cd-55c1-433f-8720-82846a8e6ba7",
+      "result_id": "8e422587-54b1-407a-b1be-bf4e00cab83c"
+    },
+    {
+      "claim_id": "c5a5462d-e18c-4738-9a19-011da3f7a30f",
+      "result_id": "8e422587-54b1-407a-b1be-bf4e00cab83c"
+    },
+    {
+      "claim_id": "c7f88958-8ccf-485d-a53d-25977f0d984f",
+      "result_id": "8e422587-54b1-407a-b1be-bf4e00cab83c"
+    },
+    {
+      "claim_id": "5b292ed6-9b15-4bf1-81a9-628290740d01",
+      "result_id": "8e422587-54b1-407a-b1be-bf4e00cab83c"
+    },
+    {
+      "claim_id": "73f2089a-8aab-49b8-991c-110b0f107519",
+      "result_id": "8e422587-54b1-407a-b1be-bf4e00cab83c"
+    },
+    {
+      "claim_id": "def4f9ff-971a-4022-8322-e95ffb69fc29",
+      "result_id": "8e422587-54b1-407a-b1be-bf4e00cab83c"
+    },
+    {
+      "claim_id": "a7e01f9b-d982-4aa4-809a-97315fdf7e29",
+      "result_id": "8e422587-54b1-407a-b1be-bf4e00cab83c"
+    },
+    {
+      "claim_id": "0a0ff5c8-dd9f-4491-86c5-4b5f6aa0369f",
+      "result_id": "8e422587-54b1-407a-b1be-bf4e00cab83c"
+    },
+    {
+      "claim_id": "75bb03d3-cca2-41d2-b34a-1feedc2e50f8",
+      "result_id": "8e422587-54b1-407a-b1be-bf4e00cab83c"
+    },
+    {
+      "claim_id": "4cbe6e82-8a0e-4c85-a24a-cc2c30ae885f",
+      "result_id": "405e004e-070b-4fa8-aaa8-eee36c2ec200"
+    },
+    {
+      "claim_id": "50c023a9-82e3-4840-82a7-9b7201f201b6",
+      "result_id": "405e004e-070b-4fa8-aaa8-eee36c2ec200"
+    },
+    {
+      "claim_id": "05f7c63f-8100-4e02-916e-21daf845d276",
+      "result_id": "405e004e-070b-4fa8-aaa8-eee36c2ec200"
+    },
+    {
+      "claim_id": "3534cd32-c42b-4205-a641-f03593cea846",
+      "result_id": "6efe6955-8178-44fd-bfa3-230f68e761f1"
+    },
+    {
+      "claim_id": "e642ccc9-b5c7-4f85-aa98-50178dc072ac",
+      "result_id": "6efe6955-8178-44fd-bfa3-230f68e761f1"
+    },
+    {
+      "claim_id": "75782459-96bf-409d-b272-2f63400b58bb",
+      "result_id": "6efe6955-8178-44fd-bfa3-230f68e761f1"
+    },
+    {
+      "claim_id": "2efa52da-729e-4ca0-85e3-e97bd5f9454d",
+      "result_id": "6efe6955-8178-44fd-bfa3-230f68e761f1"
+    },
+    {
+      "claim_id": "c4b93c46-785e-41f0-8f12-6c6da6be61df",
+      "result_id": "6efe6955-8178-44fd-bfa3-230f68e761f1"
+    },
+    {
+      "claim_id": "4ae17ab7-3997-4382-bb0c-bf85b31c2ab3",
+      "result_id": "ec205f29-a049-442d-924d-b2ca2690c426"
+    },
+    {
+      "claim_id": "9ad16ba2-5692-4079-9a01-bad3790e168b",
+      "result_id": "5faffa2b-4697-45c5-a94b-9333e35e8ca7"
+    },
+    {
+      "claim_id": "93b249d2-9c01-414b-9357-cdaf8dd17e9a",
+      "result_id": "5faffa2b-4697-45c5-a94b-9333e35e8ca7"
+    },
+    {
+      "claim_id": "e9c55459-0af1-4bf2-8523-a3f890552fbb",
+      "result_id": "5faffa2b-4697-45c5-a94b-9333e35e8ca7"
+    },
+    {
+      "claim_id": "c5a4d0cb-ed9f-479c-a0e5-6918241a267f",
+      "result_id": "b2c5bdef-a5c4-46db-8e70-94c5c1d8da13"
+    },
+    {
+      "claim_id": "40f09b5b-ba57-4fb8-8819-2218ee2343e8",
+      "result_id": "b2c5bdef-a5c4-46db-8e70-94c5c1d8da13"
+    },
+    {
+      "claim_id": "3f67fd30-6fc3-4dd8-be15-73d0ab07f90f",
+      "result_id": "b2c5bdef-a5c4-46db-8e70-94c5c1d8da13"
+    },
+    {
+      "claim_id": "6f7dd579-06a8-4716-8572-80393cdcecd9",
+      "result_id": "721743bb-eb74-4b1e-b271-0a1261ec8539"
+    },
+    {
+      "claim_id": "e8096dd8-d5c4-4d32-a815-167a867b5bf5",
+      "result_id": "721743bb-eb74-4b1e-b271-0a1261ec8539"
+    },
+    {
+      "claim_id": "dd08c966-680b-48e1-bea0-10864d140b59",
+      "result_id": "721743bb-eb74-4b1e-b271-0a1261ec8539"
+    },
+    {
+      "claim_id": "fc678ed0-9cfe-4523-adff-cf9c16d3f1cf",
+      "result_id": "721743bb-eb74-4b1e-b271-0a1261ec8539"
+    },
+    {
+      "claim_id": "0dd0a3f4-b34d-4abd-9978-19bb146378ec",
+      "result_id": "721743bb-eb74-4b1e-b271-0a1261ec8539"
+    },
+    {
+      "claim_id": "3d683a07-a964-483c-93ac-8a1507fb3959",
+      "result_id": "721743bb-eb74-4b1e-b271-0a1261ec8539"
+    },
+    {
+      "claim_id": "62dc608c-a2f1-444a-a46a-84a60f4e1d90",
+      "result_id": "721743bb-eb74-4b1e-b271-0a1261ec8539"
+    },
+    {
+      "claim_id": "c3a9be9d-bc1a-4c05-8979-e5d3d7032992",
+      "result_id": "721743bb-eb74-4b1e-b271-0a1261ec8539"
+    },
+    {
+      "claim_id": "01ca8c04-6fc1-4eb1-a03d-633e7e65d2c3",
+      "result_id": "721743bb-eb74-4b1e-b271-0a1261ec8539"
+    },
+    {
+      "claim_id": "884b3449-292c-4b3e-ae3d-b7db78056719",
+      "result_id": "721743bb-eb74-4b1e-b271-0a1261ec8539"
+    },
+    {
+      "claim_id": "b4769b9d-77f9-427d-894d-2e5e11bade76",
+      "result_id": "721743bb-eb74-4b1e-b271-0a1261ec8539"
+    },
+    {
+      "claim_id": "82265c99-9b0e-4b3b-84d5-e212c0e63c6f",
+      "result_id": "721743bb-eb74-4b1e-b271-0a1261ec8539"
+    },
+    {
+      "claim_id": "d6f9615f-8671-4b6e-9bbd-495214bdf497",
+      "result_id": "721743bb-eb74-4b1e-b271-0a1261ec8539"
+    },
+    {
+      "claim_id": "034e7e68-ff90-4350-9374-0e2b6fb912cd",
+      "result_id": "721743bb-eb74-4b1e-b271-0a1261ec8539"
+    },
+    {
+      "claim_id": "aa1605f6-6779-4dcb-b42b-add38be26d7f",
+      "result_id": "721743bb-eb74-4b1e-b271-0a1261ec8539"
+    },
+    {
+      "claim_id": "f7b33cac-d5ef-48f0-ae69-db6692978e3c",
+      "result_id": "721743bb-eb74-4b1e-b271-0a1261ec8539"
+    },
+    {
+      "claim_id": "b02cd09a-33a7-4677-8b88-ceb6e8383ff0",
+      "result_id": "721743bb-eb74-4b1e-b271-0a1261ec8539"
+    },
+    {
+      "claim_id": "15192a09-389f-4daa-9447-923cb8e7d950",
+      "result_id": "721743bb-eb74-4b1e-b271-0a1261ec8539"
+    },
+    {
+      "claim_id": "929efb28-4ac1-42d1-8bdf-b5f5fc2f9ec2",
+      "result_id": "721743bb-eb74-4b1e-b271-0a1261ec8539"
+    },
+    {
+      "claim_id": "e7c3919d-dc8c-4bca-a5b1-428447779dbb",
+      "result_id": "721743bb-eb74-4b1e-b271-0a1261ec8539"
+    },
+    {
+      "claim_id": "35779528-ccf1-4a1f-aabe-39a6f39e2728",
+      "result_id": "721743bb-eb74-4b1e-b271-0a1261ec8539"
+    },
+    {
+      "claim_id": "d0a9d5bd-dd8b-4d36-8657-f72b46e0d5ea",
+      "result_id": "721743bb-eb74-4b1e-b271-0a1261ec8539"
+    },
+    {
+      "claim_id": "7c97e462-3396-4821-8fd6-32afe11a2ea1",
+      "result_id": "721743bb-eb74-4b1e-b271-0a1261ec8539"
+    },
+    {
+      "claim_id": "df8bb8b2-94d5-4b2b-b63a-17f9ca2d8262",
+      "result_id": "721743bb-eb74-4b1e-b271-0a1261ec8539"
+    },
+    {
+      "claim_id": "6f329636-9fcf-481c-b926-ddaa7f7c0741",
+      "result_id": "338c4f86-c3bf-4daa-92bb-4eb2d7a9a491"
+    },
+    {
+      "claim_id": "1aff27fe-bd91-4ae2-a47a-d0c0eff65b89",
+      "result_id": "338c4f86-c3bf-4daa-92bb-4eb2d7a9a491"
+    }
+  ],
+  "comparisons": []
+}

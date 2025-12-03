@@ -1,0 +1,761 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6"
+    ],
+    "result": "The manuscript establishes that over a third of the human genome consists of repetitive sequences, with STRs comprising 1-3% of the genome. This foundational genomic composition data is presented as established knowledge from prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, and C6 are well-supported by multiple citations to established genomic studies (de Koning et al., 2011; Gemmell, 2021; Britten and Kohne, 1968; Gymrek et al., 2016; Wyner et al., 2020; Lander et al., 2001). These are quantitative measurements from genome sequencing projects that represent consensus knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4"
+    ],
+    "result": "The conservation of genomic repeats across eukaryotic species and their high polymorphism rates suggest that STRs have important biological functions beyond pathogenic roles. This represents a key conceptual foundation for the manuscript's thesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C4 are supported by citations to evolutionary and population genetic studies (Eichler et al., 1995; Sulovari et al., 2019; Liquori et al., 2003; Willems et al., 2016). The inference that conservation plus high polymorphism implies function is logically sound and represents standard evolutionary reasoning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Repetitive DNA facilitates 3D genome folding through chromatin loop formation, as demonstrated by Hi-C studies showing co-localization of repetitive elements in nuclear space across multiple species. The enrichment of transcription factor binding sites near spatially associated repeats suggests a role in coordinating transcription of distant genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 are supported by Hi-C experimental data (Cournac et al., 2016; Bourque, 2009; Lu et al., 2021) and illustrated in Figure 1. The mechanistic inference about co-transcription (C32) is reasonable given the observed enrichment of transcription factor binding sites, though it remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "STRs regulate chromatin structure through differential nucleosome binding: CAG/CTG repeats incorporate nucleosomes while CGG repeats exclude them, creating distinct chromatin states. The nucleosome exclusion by CGG repeats may explain their enrichment in promoters and 5'UTRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 are supported by experimental studies (Nikumbh and Pfeifer, 2017; Sun et al., 2018; Volle and Delaney, 2012; Wang et al., 1996; Wang, 2007; Uesaka et al., 2014). The mechanistic data on nucleosome positioning is direct experimental evidence, and the inference about genomic distribution (C37) is reasonable given the functional properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "STRs influence DNA methylation patterns, with some STRs prone to methylation leading to gene silencing. STRs are commonly located near CpG islands and may influence their methylation states, with some STRs containing CpGs within their sequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 are supported by multiple studies (Quilez et al., 2016; Garg et al., 2021; Pappalardo and Barra, 2021; Deaton and Bird, 2011; Sun et al., 2018; Bolton et al., 2013). However, C41 is explicitly speculative ('may influence'), which is appropriately qualified. The genomic proximity data is solid, but the functional influence remains partially inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "In yeast, approximately 25% of promoters contain tandem repeats, with gene expression generally increasing with repeat size. TRs can both enhance transcription (through transcription factor binding, nucleosome exclusion, or DNA melting) and inhibit it (through secondary structure formation). The THO complex facilitates RNA polymerase elongation through GC-rich TR structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C51 are well-supported by the yeast genome-wide study (Vinces et al., 2009) and mechanistic studies of the THO complex (Kim et al., 2004; Abruzzi et al., 2004; multiple others). The FLO11 rescue experiments (C51) provide strong mechanistic validation. This represents a comprehensive experimental system demonstrating STR function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Human STRs can enhance or inhibit transcription depending on sequence and location, affecting gene expression through changes in methylation and chromatin structure, similar to mechanisms observed in yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 are supported by multiple human genomic studies (Gymrek et al., 2016; Fotsing et al., 2019; Quilez et al., 2016; Garg et al., 2021; Jakubosky et al., 2020). This represents a translation of yeast findings to humans with appropriate citation support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "STRs in RNA form complex secondary structures (G-quadruplexes, hairpins) that influence pre-mRNA splicing. Alternative splicing sites are enriched for STRs, which can facilitate splicing through complementary pairing or modulate it by affecting splicing factor recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 are supported by structural studies (Krzyzosiak et al., 2012; Sobczak et al., 2003; Malgowska et al., 2014) and bioinformatic analysis (Lian and Garner, 2005). The mechanistic models are reasonable inferences from the structural data, though some aspects remain inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Alternative splicing of the fibronectin EIIIB exon is regulated by an intronic TGCATG repeat that forms a hairpin structure and recruits the SRp40 splicing factor. Repeat contractions reduce exon inclusion while SRp40 overexpression stimulates it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 are supported by experimental studies of the fibronectin gene (Huh and Hynes, 1994; Lim and Sharp, 1998; Tacke et al., 1997). This provides a well-characterized example of STR-mediated splicing regulation with both loss-of-function and gain-of-function data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "STRs in RNA can regulate splicing in trans by sequestering splicing factors. The lncRNA PNCTR contains (TC)n repeats, binds PTBP1, negatively regulates PTBP1-mediated splicing, and when overexpressed causes mis-splicing and cell death, demonstrating global RBP regulation by STRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 are supported by the PNCTR study (Yap et al., 2018). The experimental evidence includes binding data, functional splicing assays, and phenotypic consequences. This provides strong support for trans-acting STR function in regulating RBP availability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "STRs in 3'UTRs serve as RNA localization signals. CAC-containing repeats identified by REPFIND in Xenopus function as localization elements, are conserved in zebrafish and humans, and facilitate RNA localization to neurites in hippocampal neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C73 are supported by the REPFIND studies (Betley et al., 2002; Andken et al., 2007). The mutational analysis (C70) provides strong functional validation, and the evolutionary conservation (C71) supports biological significance. The neuronal localization data (C73) extends this to a physiologically relevant context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "STRs in 5'UTRs regulate translation by forming stable secondary structures that impede ribosome processivity. The Task3 GGN repeat forms a G-quadruplex that inhibits translation but can be overcome by DHX36 helicase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 are supported by structural and functional studies (Krzyzosiak et al., 2012; Kozak, 1980; multiple others; Maltby et al., 2020). The Task3 example provides direct in vivo evidence of G-quadruplex formation and its functional consequences, with a defined regulatory mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Libraries of synthetic and natural hairpin sequences in 5'UTRs can precisely control translational output, with single-unit STR variations modulating protein expression in a size-dependent manner, suggesting applications in gene therapy dosing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 are supported by synthetic biology studies (Millette et al., 2022; Li et al., 2017; Niederer et al., 2022). This represents an application of STR biology to biotechnology, demonstrating the precision of STR-mediated translational control.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Eukaryotic proteins are more likely to contain repeats than prokaryotic proteins, with repeat-containing proteins often unique to eukaryotes. Protein repeat domains serve as binding sites for multi-protein complex formation, and STRs translated into proteins are thought to have similar functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 are supported by comparative proteomics (Marcotte et al., 1999) and structural studies (Andrade et al., 2001; Kajava, 2012; Sharma and Pandey, 2015; Schaefer et al., 2012; Faux, 2012). The inference that STRs function like larger repeat domains (C83) is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "CAG repeats are enriched in coding regions in the polyQ reading frame, suggesting native function. PolyQ stretches are enriched in multi-protein complexes involved in transcription, signaling, and chromatin remodeling. Their non-conserved location suggests they modulate protein-protein interactions rather than directly conferring function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C89 are supported by genomic distribution analysis and evolutionary studies (Schaefer et al., 2012; Orr, 2012; Nasrallah et al., 2012). The functional enrichment data is solid, and the evolutionary inference about modulatory function is reasonable given the positional variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "The polyQ tract in huntingtin protein serves as a flexible hinge allowing neighboring domains to fold into close proximity. HTT protein structure is altered with repeat expansion, demonstrating the structural importance of the polyQ STR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 are supported by structural studies (Caron et al., 2013) and illustrated in Figure 1. This provides direct structural evidence for STR function in protein folding and demonstrates how expansion disrupts native structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Repeat expansions alter local and global genome architecture. The DM1 CTG expansion alters chromatin structure and suppresses neighboring Six5 transcription. CGG expansions in FXS cause severe chromatin boundary disruptions that may explain replication defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 are supported by chromatin studies (Winchester et al., 1999; Brouwer et al., 2013; L\u00f3pez Castel et al., 2011; Sun et al., 2018) and replication studies (Subramanian et al., 1996; Chakraborty et al., 2020; Gerhardt et al., 2014). The mechanistic link between chromatin disruption and replication defects (C95) is inferential but reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "STRs are aberrantly methylated upon expansion. FMR1 CGG repeats >200 undergo methylation leading to gene silencing and loss of FMRP. The locus remains active in embryonic stem cells with silencing during differentiation. Some studies suggest silencing requires RNA-DNA heteroduplex formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 are well-supported by extensive molecular studies (Oberl\u00e9 et al., 1991; multiple others). C99 provides important developmental context. C100 is appropriately qualified as speculative ('some studies suggest') and represents a mechanistic hypothesis (Colak et al., 2014; Groh et al., 2014).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Premutation CGG repeats cause elevated FMR1 transcription, possibly through additional upstream transcription start sites or enrichment of activating chromatin factors. Both hypo- and hyperexpression may stem from complex DNA structures formed by CGG repeats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C104 are supported by expression studies (Tassone et al., 2000a; Tassone et al., 2000b; multiple others) and structural studies (Usdin and Woodford, 1995; Fry and Loeb, 1994). C102-C103 are appropriately qualified as speculative ('may'). C104 represents a unifying hypothesis that is reasonable but speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "HTT splicing is altered at expanded CAG repeats in Huntington's Disease, producing a toxic exon 1 protein found in patient tissues. SRSF6 overexpression increases incomplete splicing while knockdown decreases it, suggesting SRSF6-CAG interactions interfere with splicing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 are supported by multiple HD studies (Gipson et al., 2013; Sathasivam et al., 2013; Neueder et al., 2017; Neueder et al., 2018; Franich et al., 2019). The SRSF6 manipulation experiments provide strong mechanistic evidence, though the binding prediction (C108) is inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Global splicing defects in REDs result from sequestration of splicing factors by expanded STR-containing RNAs. In DM1, the CTG repeat sequesters MBNL1 and other RBPs, depleting splicing factors and causing widespread splicing defects and polyadenylation defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112 are extensively supported by DM1 studies (L\u00f3pez-Mart\u00ednez et al., 2020; Paul et al., 2011; Jiang et al., 2004; multiple others). This represents one of the best-characterized mechanisms in RED pathology with strong experimental support across multiple studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "In FXTAS, premutation CGG RNA sequesters multiple RBPs (DGCR8, Pur\u03b1, hnRNP A2/B1, Drosha, Sam68) involved in miRNA processing, mRNA transport, and splicing. Overexpressing sequestered RBPs or blocking their binding to CGG repeats improves disease defects, mirroring the native role of STRs as RBP reserves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C116 are supported by extensive FXTAS studies (Sellier et al., 2013; Jin et al., 2007; multiple others). The rescue experiments (C116) provide strong validation. C117 represents an important conceptual synthesis linking pathology to native function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C118",
+      "C119"
+    ],
+    "result": "Expanded STRs in RNA may cause toxicity through self-association (gelation/phase separation). However, these processes occur at sub-pathological repeat lengths, suggesting phase separation properties exist on a spectrum from physiologic to pathologic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C119 are supported by phase separation studies (Glineburg et al., 2018; Jain and Vale, 2017; Ciesiolka et al., 2017; Fay et al., 2017). C118 is appropriately qualified as speculative ('may'). C119 represents an important insight that pathological mechanisms may be exaggerations of normal processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Expanded STR RNAs can be retained in the nucleus through splicing defects, export-inhibiting RBP interactions, or nucleocytoplasmic transport dysfunction. SRSF proteins are critical for CGG and G4C2 repeat export, and inhibiting SRSF/SRPK1 reduces CGG export and toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C123 are supported by localization and transport studies (Davis et al., 1997; Sun et al., 2015; Zhang et al., 2015; Malik et al., 2021b; Hautbergue et al., 2017). The SRSF manipulation experiments (C123) provide functional validation of the transport mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Expanded STRs cause ribosome stalling leading to repeat-associated non-AUG (RAN) translation, producing toxic peptides in numerous REDs. At FMR1, RAN translation occurs in all three frames producing FMRpolyR, FMRpolyG, and FMRpolyA. STR-induced stalling also reduces downstream FMRP production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C128 are extensively supported by RAN translation studies (Glineburg et al., 2018; Kearse et al., 2016; Todd et al., 2013; multiple others). This represents a major pathogenic mechanism with strong experimental support across multiple disease systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "FMRpolyG and FMRpolyA are found in patient neuronal inclusions and are toxic in models. FMRpolyG is necessary for CGG repeat toxicity and inclusion formation. RAN/homopolymeric peptides are essential for toxicity and inclusion formation across multiple REDs, mirroring the native function of STRs in facilitating protein-protein interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C132 are supported by pathological studies and model systems (Sellier et al., 2017; Todd et al., 2013; multiple others). The necessity experiments (C131) provide strong mechanistic evidence. C133 represents an important conceptual link between pathology and native function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Translation through large STRs induces ribosome stalls and frameshifting, producing chimeric polypeptides. These frameshift products have distinct contributions to neuronal dysfunction in disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C136 are supported by emerging studies on translational frameshifting (Gaspar et al., 2000; Tabet et al., 2018; McEachin et al., 2020; Wright et al., 2022). This represents a newer area of investigation with growing experimental support for functional consequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Antisense transcription from FMR1 generates multiple asFMR1 lncRNAs. FMR4 regulates cell cycle and apoptosis. FMR6 is upregulated in premutation women, correlating with reduced oocyte number. AsFMR1 transcripts can undergo RAN translation. Antisense STR transcripts likely contribute to toxicity in many REDs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C143 are supported by antisense transcription studies (Ladd et al., 2007; Khalil et al., 2008; Elizur et al., 2016; Kearse et al., 2016; Mori et al., 2013a). The correlation data (C139-C140) is observational, and the generalization to other REDs (C143) is appropriately qualified as 'likely'.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "CGG repeats at native lengths (<55) are conserved across mammals. Low repeat numbers may associate with memory and language phenotypes. CGG RAN translation occurs at native lengths (25 repeats), acting as a uORF that inhibits FMRP translation and is critical for mGluR-stimulated translational changes in neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C148 are supported by evolutionary studies (Eichler et al., 1995) and the authors' own work (Kearse et al., 2016; Rodriguez et al., 2020). This represents a major finding linking pathogenic RAN translation to native function. The phenotypic associations at low repeat numbers (C145) are more tentative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C149",
+      "C150"
+    ],
+    "result": "uORFs are well-characterized regulatory elements that typically inhibit downstream translation. uORFs resulting from RAN translation of STRs may play a global role in regulating mRNA translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C149 is well-established knowledge (Hinnebusch et al., 2016). C150 is appropriately qualified as speculative ('may') and represents a reasonable extrapolation from the FMR1 example, though it requires additional experimental validation across multiple loci.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "In SCA1, CAG repeat expansion changes ATXN1 localization from cytoplasmic/nuclear shuttling to predominantly nuclear. Aberrant nuclear localization underlies SCA1 dysfunction, as modifications favoring nuclear localization are sufficient to cause disease phenotypes without repeat expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C154 are supported by SCA1 studies (Irwin et al., 2005; Lam et al., 2006; multiple others). The sufficiency experiments in mouse models (C154) provide strong evidence that altered localization is a key pathogenic mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "In SBMA, nuclear translocation of expanded polyQ-containing androgen receptor is required for toxicity. Within normal polyQ ranges, androgen receptor CAG repeat size inversely correlates with transactivation and correlates with infertility, suggesting native regulatory function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C157 are supported by SBMA studies (Katsuno et al., 2006; multiple others) and clinical correlations (Choong and Wilson, 1998; Osadchuk et al., 2022; Pan et al., 2016). The inference of native function (C157) is reasonable given the correlations at normal repeat lengths.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "CGG repeats function as dendritic localization factors through hnRNP A2 interaction with GA targeting elements. CGG repeat-containing RNAs, including FMR1 mRNA, compete for this pathway. Premutation expansion sequesters hnRNP A2, causing global dysfunction in transport of hnRNP A2-target mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C161 are supported by the dendritic localization study (Muslimov et al., 2011). This provides a clear example of native STR function (C160) and how expansion disrupts it (C161), linking normal biology to pathology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C162"
+    ],
+    "result": "A transcriptome-wide study of MBNL depletion in myotonic dystrophy uncovered a global role for MBNL in mRNA localization beyond its known splicing functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C162 is supported by the transcriptome-wide study (Wang et al., 2012). This represents an important discovery of additional RBP functions revealed through disease studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "Autophagy induction clears polyQ aggregates, attenuating toxicity. PolyQ tracts in ataxin 3 interact with and deubiquitinate beclin 1, permitting autophagy initiation. Other polyQ proteins competitively inhibit this interaction in a length-dependent manner, suggesting polyQ tracts engage quality control pathways basally but become aberrant upon expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C163-C167 are supported by autophagy studies (Rubinsztein, 2006; Ashkenazi et al., 2017). The competitive inhibition data (C166) is particularly strong. C167 represents an important conceptual synthesis linking native function to pathology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "DM2 results from CCTG expansion in ZNF9. CCTG and CTG repeats form similar structures and both sequester muscleblind, explaining phenotypic overlap. However, DM2 lacks genetic anticipation seen in DM1, likely due to differences in RBP interactions (rbFOX) and genic positioning/temporal expression affecting developmental processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C168-C173 are supported by DM2 studies (Liquori et al., 2001; Botta et al., 2008; Sellier et al., 2018; Thomas et al., 2017; Cerro-Herreros et al., 2017). This provides an excellent example of how subtle differences in repeat context lead to distinct disease manifestations despite shared core mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "Multiple pentanucleotide repeat disorders involve non-reference STRs (different sequences than normal alleles) in Alu polyA regions. Active Alu transposition requires pure polyA, creating selection pressure for mutations. Both reference and non-reference STRs likely arose to disrupt transposition, but stochastic differences created expansion-prone pathogenic alleles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C174-C181 are supported by disease studies (Ishiura et al., 2018; Sato et al., 2009; Nakamura et al., 2020; Deininger, 2011). The evolutionary inference (C180-C181) is reasonable given the genomic context, though it remains somewhat speculative. This represents an interesting example of how protective mutations can become pathogenic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C182",
+      "C183",
+      "C184",
+      "C185"
+    ],
+    "result": "Evolutionary pressures predict repeat expansions will be tolerated or selected for until reaching deleterious limits. Recent studies show selective STR expansion across phylogeny, especially in primates, particularly in 5'UTRs and coding regions where constraints are greatest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C182-C185 are supported by evolutionary logic and genomic studies (Gymrek et al., 2017). The evolutionary reasoning is sound, and the empirical data on selective expansion supports the inference that STRs have functional importance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R39",
+    "claim_ids": [
+      "C186",
+      "C187",
+      "C188"
+    ],
+    "result": "Many intergenic STRs (eSTRs) show correlations between size and neighboring gene expression, contributing meaningfully to population variance in expression profiles and disease-associated eQTLs. eSTRs are largely unconstrained unless near genes under strong constraint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C186-C188 are supported by population genomic studies (Fotsing et al., 2019; Gymrek et al., 2017). This represents important evidence for STR functional significance at the population level.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R40",
+    "claim_ids": [
+      "C189",
+      "C190",
+      "C191",
+      "C192"
+    ],
+    "result": "STR instability may allow more rapid trait variation through gene expression perturbations than single nucleotide mutations. FMR1 CGG repeat length variation exemplifies how repeat polymorphisms influence gene expression. Subtle repeat size changes can tune expression and function, potentially contributing to genetic differences between and within species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C189-C192 are supported by the evolutionary and functional data presented throughout, with Figure 3 illustrating the concept. C189 and C192 are appropriately qualified as speculative ('may'). This represents an important evolutionary hypothesis with supporting evidence, though it requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R41",
+    "claim_ids": [
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197"
+    ],
+    "result": "The authors predict more REDs will be discovered, citing recently described CGG repeatopathies (NIID, OPDM, OPML, leukoencephalopathy, autism/ID) mostly in 5'UTRs. NOTCH2NLC CGG expansion creates an AUG-initiated uORF producing polyglycine protein found in patient inclusions and required for disease phenotypes in mouse models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C193-C197 are supported by recent disease discoveries (Ishiura et al., 2019; Liu et al., 2022; Boivin et al., 2021; multiple others). The NOTCH2NLC example provides strong validation of convergent mechanisms. The prediction (C193) is reasonable given the pattern of discoveries.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R42",
+    "claim_ids": [
+      "C198",
+      "C199",
+      "C200",
+      "C201"
+    ],
+    "result": "The authors predict smaller repeat changes at multiple loci will serve as risk alleles for common conditions. Intermediate CAG expansions in ATXN1, ATXN2, and HTT associate with sporadic ALS. STR variations explain a fair proportion of unexplained GWAS signal and have been linked to ASD and schizophrenia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C198-C201 are supported by disease association studies (Elden et al., 2010; Rosas et al., 2020; Gymrek et al., 2016; Mitra et al., 2021; Trost et al., 2020; Mojarad et al., 2022). The prediction (C198) is reasonable given the existing evidence. This represents an important extension of RED biology to common disease.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R43",
+    "claim_ids": [
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206"
+    ],
+    "result": "The authors predict long-read sequencing will reveal ubiquitous impacts of STR variation on gene expression, with many affected genes having neuronal functions. Most REDs present with neurological symptoms, suggesting STRs play roles in neuronal health, though neurons may also be more prone to somatic instability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C202-C206 represent predictions appropriately qualified as such. C204 is an established observation. The inference about neuronal STR function (C205) is reasonable given the disease patterns, and the alternative hypothesis about neuronal vulnerability (C206) is appropriately presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R44",
+    "claim_ids": [
+      "C207",
+      "C208",
+      "C209"
+    ],
+    "result": "The authors predict bidirectional insights between native STR functions and disease mechanisms will reveal altered pathways in REDs that may be therapeutic targets applicable across all REDs, ultimately revealing mechanisms of neuronal regulation and therapeutic targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C207-C209 represent concluding predictions that are reasonable given the evidence presented throughout the manuscript. These are appropriately framed as predictions rather than established facts and represent logical extensions of the conceptual framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R45",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Historical overview of STR-disease associations: In the early 1990s, STR expansions were causally linked to multiple diseases including Fragile X Syndrome (the most common monogenic intellectual disability), Huntington's disease, and myotonic dystrophy. Fragile X involves a CGG repeat expansion in FMR1 causing a chromosomal fragile site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C15 represent well-established historical facts supported by extensive citations to the original disease-gene discovery papers from the early 1990s. This provides important historical context for the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R46",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The 'Sherman paradox' described incomplete penetrance in Fragile X families (79% males, 35% females affected) and generational risk patterns. Subsequent studies identified premutation alleles (55-200 repeats) with increased expansion risk during oogenesis, while normal individuals have 6-54 repeats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 are supported by the original Sherman studies and subsequent molecular characterization (Sherman et al., 1984; Sherman et al., 1985; Fu et al., 1991). This historical context is important for understanding the discovery of repeat instability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R47",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Fragile X premutation carriers can develop FXTAS (tremor/ataxia syndrome primarily in males) or FXPOI (premature ovarian insufficiency in females). More than 50 REDs show common molecular pathology mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 are supported by clinical characterization studies (Hagerman and Hagerman, 2015; Jacquemont et al., 2003; multiple others) and review articles (Malik et al., 2021a). This establishes the clinical context for the molecular mechanisms discussed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R48",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Early studies showed phenotypic consequences of repeat variation in yeast (flocculation/adhesion), dogs (morphology), and voles (behavior). Recent sequencing advances enable genome-wide STR characterization and study of repeat length effects on expression. STRs associated with expression differences are termed eSTRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 are supported by early phenotypic studies (Voynov et al., 2006; Fondon and Garner, 2004; Hammock and Young, 2005) and recent genomic studies (Willems et al., 2016; multiple others). This provides historical context for the shift from candidate gene to genome-wide approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R49",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "Barbara McClintock first discovered repetitive DNA elements ('controlling elements') in maize, which later became known as transposable elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C5 is a well-established historical fact supported by citations to McClintock's original work and historical reviews (Comfort, 2001; Ravindran, 2012; McClintock, 1950).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R50",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "General statement that repetitive elements can impact transcription through chromatin structure and epigenetic regulation, serving as an introduction to subsequent mechanistic sections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 is a general introductory statement that is supported by the detailed mechanisms described in subsequent claims. It serves as a framework for organizing the evidence.",
+    "result_type": "MINOR"
+  }
+]

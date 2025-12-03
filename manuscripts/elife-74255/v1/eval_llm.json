@@ -1,0 +1,535 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Deletion of Caf130, Cal4, or NAC components suppresses the \u0394acl4 growth defect and increases RPL4 mRNA levels approximately twofold. The Btt1-containing NAC heterodimer provides the main contribution to suppression, especially at elevated temperature, while Egd1-containing NAC operates in a partially redundant manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C50 are well-supported by genetic suppression data (growth assays) and qRT-PCR measurements showing ~2-fold increases in RPL4 mRNA levels in specific deletion mutants. The differential contributions of NAC \u03b2-subunits are demonstrated through systematic genetic analysis at multiple temperatures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "RPL3 mRNA exhibits similar regulation as RPL4 mRNA in \u0394caf130, \u0394egd2, and \u0394btt1/\u0394egd1 cells, but Cal4 deletion does not affect RPL3 levels. \u0394acl4 cells show decreased RPL4 and RPL3 mRNA levels, suggesting co-translational chaperone binding stabilizes these mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 are supported by qRT-PCR data showing differential regulation patterns. The specificity of Cal4 for RPL4 regulation and the inverse effect in \u0394acl4 cells provide strong evidence for the proposed stabilization mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The regulation of RPL3 and RPL4 mRNA levels occurs through mRNA stability rather than transcriptional changes. RNA-seq analysis reveals RPL3, RPL4A, and RPL4B are among the most prominently upregulated transcripts in \u0394caf130 cells, with no other RPG transcripts showing similar upregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 are well-supported by ChIP-qPCR data showing no changes in RNA Pol II occupancy (C55), rapamycin treatment experiments (C56), and comprehensive RNA-seq analysis (C57-C60) demonstrating the specificity of regulation to these three mRNAs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Not1 is naturally synthesized as two distinct protein isoforms in S. cerevisiae due to leaky scanning, differing by the presence or absence of the N-terminal 162 amino acids. These N-terminal residues are required for growth at elevated temperature and for mediating RPL3 and RPL4 mRNA regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 are supported by Western blot analysis showing two Not1 bands, mutagenesis experiments demonstrating leaky scanning mechanism, and complementation assays showing functional requirements of the N-terminal domain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Deletion of Ccr4-Not core components (Caf40, Not3, Caf1, Ccr4, Not4) does not suppress the \u0394acl4 growth defect but instead synergistically enhances it. Caf40 and Not3 are not required for negative regulation of RPL4 mRNA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 are supported by systematic genetic suppression analysis showing no suppression and synthetic enhancement of growth defects. The conclusion about Caf40 and Not3 (C65) is a reasonable inference from the genetic data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The Not5-NTD-mediated mechanism and several mRNA decay factors (Dhh1, Pat1, Xrn1, Ski2) are not part of the regulatory network controlling RPL3 and RPL4 mRNA abundance, as their deletion does not suppress the \u0394acl4 growth defect or increase mRNA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 are supported by genetic suppression analysis and qRT-PCR measurements. The negative results provide important specificity information about which pathways are not involved in the regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "GFP-Trap co-immunoprecipitation experiments establish that full-length Not1 co-purifies with Caf130, Btt1, and Cal4, but not with Egd1 or Egd2. The Not1.154C variant lacking the N-terminal 153 amino acids no longer co-purifies Caf130 and Cal4 but retains association with core Ccr4-Not components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 are well-supported by systematic GFP-Trap co-immunoprecipitation experiments with appropriate controls. The data clearly demonstrate the requirement of the N-terminal domain for Caf130 and Cal4 binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Yeast two-hybrid analysis reveals that Caf130 interacts with Not1, Cal4, and Btt1, but no direct interactions occur between Cal4-Not1, Cal4-Btt1, or Btt1-Not1/Cal4. Caf130 functions as a hub protein connecting Cal4 and Btt1 to the Ccr4-Not complex. At 16\u00b0C, Caf130 can interact with both Egd1 and Egd2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81 are supported by comprehensive Y2H analysis testing multiple protein combinations. The hub protein model (C79) is a well-supported inference from the interaction data. The temperature-dependent interaction with Egd1/Egd2 (C80-C81) provides mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Y2H mapping defines minimal interaction surfaces: Caf130 binds Not1 via amino acids 40-655, Btt1 via 292-655, and Cal4 via 686-938. Not1's minimal Caf130-binding surface (CaInD) spans amino acids 21-153. Btt1's minimal Caf130-binding region comprises the NAC domain (38-103) with a C-terminal extension. Both Caf130 and Egd2 bind to Btt1's NAC domain, suggesting mutually exclusive binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C89 are supported by systematic Y2H mapping experiments with deletion constructs. The minimal interaction surfaces are well-defined through progressive deletion analysis. The mutually exclusive binding model (C88) is a reasonable inference from the overlapping binding sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The rpl4a.W109C allele and BIV mutations (W106A/R107A/K108A/W109A) robustly suppress the \u0394acl4 growth defect at all tested temperatures. These mutations restore RPL4A-yEGFP fusion mRNA levels in wild-type cells to levels similar to \u0394caf130 cells, establishing W109 as a critical determinant for negative regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 are well-supported by growth assays at multiple temperatures and qRT-PCR measurements of mRNA levels. The genetic and molecular data converge to establish W109's critical role in regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Mapping experiments identify amino acids 78-139 of Rpl4a as sufficient for negative regulation, with W109 as a critical determinant. Mutations abolishing Acl4 interaction further reduce RPL4 mRNA levels, suggesting co-translational Acl4 binding stabilizes the mRNA. Cycloheximide treatment abrogates the regulatory difference, confirming translation dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C101 are supported by systematic deletion mapping, mutagenesis, qRT-PCR measurements, and cycloheximide experiments. The data provide strong evidence for the minimal regulatory region and the role of translation in the regulatory mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The regulation-conferring region on Rpl3 is contained within amino acids 8-52, with residues F16 and L17 serving as main determinants for efficient negative regulation. The F16A/L17A double substitution enables normal growth and does not affect Rrb1 interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C105 are supported by systematic deletion mapping, mutagenesis, qRT-PCR measurements, growth assays, and Y2H interaction studies. The data clearly define the regulatory region and key residues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Similar regulatory principles apply to RPL3 and RPL4 mRNA regulation, with maximal regulation requiring ~30 additional amino acids after the critical residues (F16/L17 for Rpl3, W109 for Rpl4). The nascent proteins harbor the regulatory signal, and co-translational chaperone binding precludes recognition by the regulatory machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 are supported by comparative analysis of mapping data for both proteins. The parallel regulatory mechanisms and the overlap of chaperone-binding and regulatory sites provide strong evidence for the proposed model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Overexpression of Rrb1 or Acl4 increases RPL3 or RPL4 mRNA levels by >2.5-fold, while depletion of these chaperones decreases the respective mRNA levels by >2-fold. The availability of the dedicated chaperone is a crucial parameter for determining mRNA stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 are well-supported by qRT-PCR measurements from overexpression and depletion experiments. The bidirectional effects provide strong evidence for the chaperone's role in mRNA stabilization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Overexpression of Rpl3 or Rpl4 variants with deregulated expression (W109C, BIV, F16A/L17A, R19A/K20A/R21A) severely compromises growth of \u0394tom1 cells and leads to increased protein aggregation. Tom1-mediated clearance is required to prevent aggregation, with detrimental effects occurring once an aggregation threshold is exceeded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C121 are supported by growth assays, protein aggregation assays (Western blots of insoluble fractions), and dose-dependent effects. The data demonstrate the physiological importance of the regulatory mechanism in preventing proteotoxic stress.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "Fluorescence microscopy reveals that mutant Rpl3 and Rpl4a variants display strong fluorescence signals in the nucle(ol)ar compartment of \u0394tom1 cells, indicating that induced overexpression leads to aggregation within the nucle(ol)ar compartment in cells lacking Tom1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C123 are supported by fluorescence microscopy experiments showing distinct localization patterns. The data provide spatial information about where aggregation occurs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Cells simultaneously lacking components of the regulatory machinery (Caf130, Not1's CaInD, NAC subunits, or Cal4) and Tom1 are inviable. Genetic suppression analysis demonstrates that moderate (~2-fold) surplus of either Rpl3 or Rpl4 is sufficient to perturb growth and proteostasis in \u0394tom1 cells, with both proteins contributing to the synthetic lethality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C131 are well-supported by systematic genetic analysis including tetrad dissection, suppression experiments, and complementation tests. The data establish the physiological importance of the regulatory mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Tom1 depletion in \u0394caf130 or \u0394cal4 cells leads to massive aggregation of Rpl3 and/or Rpl4 (detectable after 8 hr, extensive by 24 hr) and extensive perturbation of cellular proteostasis, with many additional proteins appearing in the insoluble fraction. The deregulated expression promotes aggregation and loss of proteostasis, accounting for synthetic lethality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C137 are supported by time-course protein aggregation assays, Western blot analysis, and mass spectrometry identification of co-aggregating proteins. The data provide strong evidence for the proteostatic consequences of deregulated expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The dedicated chaperones Rrb1 and Acl4 cooperate with the regulatory machinery to provide optimal levels of assembly-competent Rpl3 and Rpl4. By balancing de novo synthesis, pre-60S assembly can be sustained at high rates without requiring Tom1-mediated degradation. The main physiologically relevant targets are the RPL3 and RPL4A/B mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C140 are well-supported conclusions integrating multiple lines of evidence from the study. The specificity of regulation (C140) is demonstrated by RNA-seq data, and the physiological model (C138-C139) is supported by genetic and biochemical data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The proposed model suggests that under normal conditions, Rrb1 and Acl4 capture nascent Rpl3/Rpl4 and stabilize the mRNA. When chaperones are sequestered, NAC interaction with the regulatory segment persists, enabling recruitment of the regulatory machinery, which likely promotes mRNA degradation via the Caf1-Ccr4 deadenylase module.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C141-C144 represent a speculative model in the Discussion section. While the model is consistent with the data, key mechanistic details (NAC interaction persistence, transfer to regulatory machinery, role of Caf1-Ccr4) lack direct experimental evidence and are inferred from the genetic and biochemical data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Overexpression of Rrb1 or Acl4 leads to further increases in RPL3 or RPL4 mRNA levels, suggesting the chaperones are present in limiting amounts and that there is constant competition between chaperones and the regulatory machinery for nascent protein binding. Dedicated chaperones serve as molecular rheostats sensing pre-60S assembly status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C146 are supported by overexpression data showing further mRNA increases. The molecular rheostat concept (C147) is a well-supported interpretation integrating the chaperone availability, mRNA regulation, and assembly status data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C160"
+    ],
+    "result": "The meticulous adjustment of unassembled Rpl3/Rpl4 abundance may be essential for maintaining cellular proteostasis depending on the cell's proteostatic state. The autoregulatory feedback loop and ERISQ pathway constitute a robust buffering system to prevent harmful effects of excess Rpl3/Rpl4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C149, C160 are supported by the synthetic lethality data, aggregation experiments, and proteostasis perturbation observations. The data demonstrate the physiological importance of the regulatory system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "RPL3 and RPL4A/B genes contain category III promoters and show the highest Sfp1 dependence among RPGs. The co-translational regulation represents an elegant mechanism to reduce Rpl3/Rpl4 synthesis when unassembled levels exceed chaperone buffering capacity. The mechanism operates continuously under normal growth conditions, consistent with RPL3 and RPL4A/B transcripts having markedly shorter half-lives than other RPG mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C154 integrate prior knowledge (C150-C151, C154 citing published data) with the current study's findings (C152-C153). The continuous operation under normal conditions (C153) is supported by the basal regulation observed in wild-type cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "Rpl3 and Rpl4 are among the earliest assembling large subunit r-proteins and fulfill a central role in compaction/stabilization of early pre-60S particles. Temporary nuclear storage in complex with dedicated chaperones provides buffering capacity for rapid response to assembly demand and connects assembly status to de novo synthesis rate. The regulatory mechanism enables more rapid response compared to transcription-based adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C156 cite established knowledge about Rpl3/Rpl4 assembly timing and function. Claims C157-C159 are well-supported interpretations of the regulatory mechanism's advantages, integrating the study's findings with the biological context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "An involvement of Ccr4-Not core components in mRNA degradation can be supposed, with the Caf1-Ccr4 deadenylase module highly likely promoting RPL3 and RPL4 mRNA degradation. The utilization of a nascent polypeptide segment constitutes an unprecedented mechanism of Ccr4-Not recruitment to substrate mRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C161-C163 are speculative statements in the Discussion. While the Caf1-Ccr4 involvement is plausible given the complex's known role in mRNA decay, direct evidence for its role in RPL3/RPL4 degradation is lacking. The novelty claim (C163) is reasonable but the mechanism remains to be fully demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "Heterodimeric NAC is involved in substrate recognition based on the requirement of both subunits. The NAC-\u03b2 subunits may establish initial contact with the N-terminal part of the regulatory segment. Residues following key residues (F16/L17, W109) may promote nascent chain stalling. Timely chaperone association may preclude NAC interaction, while delayed capture allows NAC binding and fortified stalling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C164 is supported by genetic requirements, but C165-C168 are speculative mechanistic proposals based on structural data from C. elegans and general principles of exit tunnel length. These represent reasonable hypotheses but lack direct experimental validation in the yeast system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C170",
+      "C171"
+    ],
+    "result": "The study highlights Rpl3 and Rpl4 as potential drivers of cellular protein aggregation. The aggregation of unassembled r-proteins represents a threat to cellular proteostasis, which cells address through Tom1-mediated degradation (ERISQ) and stress response pathways (RASTR/RPAS).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C170-C171 are supported by the aggregation data in \u0394tom1 cells and integrate well with prior knowledge about ERISQ and RASTR/RPAS pathways. The data provide new evidence for Rpl3 and Rpl4 as aggregation-prone proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182"
+    ],
+    "result": "The Discussion connects the findings to human disease, noting that reduced r-protein supply causes proteotoxic stress in Drosophila, RPG mutations cause Diamond-Blackfan anemia (DBA), and unassembled r-proteins interact with MDM2/p53. Mutations in RPL3, RPL4, HUWE1 (Tom1 ortholog), and CNOT1 are associated with various developmental disorders. Perturbed proteostasis from unassembled RPL3/RPL4 could contribute to DBA, aging, and neurodegenerative diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C172-C181 accurately cite published literature connecting r-protein biology to disease. However, C174 and C182 are speculative proposals about potential disease mechanisms. While the speculation is reasonable given the study's findings, these connections remain hypothetical and require future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The Introduction provides established background knowledge about ribosome biogenesis, including ribosome composition, assembly complexity, r-protein production rates, biogenesis factors, structural advances, rRNA transcription and processing, RPG regulation, r-protein properties, quality control mechanisms (ERISQ, RASTR/RPAS), chaperone systems, nuclear import, dedicated chaperones, and autoregulatory feedback loops.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C40 represent background knowledge from the Introduction, appropriately cited from the literature. These claims establish the context for the study and are well-supported by the cited references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The study's main findings are that co-translational recognition of Rpl3 and Rpl4 by their dedicated chaperones (Rrb1 or Acl4) reduces degradation of RPL3 and RPL4 mRNAs. Negative regulation occurs when chaperone availability is limited and nascent proteins are accessible to a regulatory machinery consisting of NAC and the Caf130-associated Ccr4-Not complex. Deregulated expression leads to massive aggregation and proteostasis perturbation in \u0394tom1 cells. The mechanism adjusts de novo synthesis to consumption during ribosome assembly, protecting cells from detrimental effects of surplus production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C8 represent the core findings stated in the Abstract. These are well-supported by the comprehensive experimental data presented throughout the manuscript, including genetic, biochemical, and cell biological approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "A common regulatory machinery subjects RPL3 and RPL4 mRNAs to co-translational downregulation when dedicated chaperones are unavailable. Central to the mechanism is the Caf130-mediated connection between NAC and the Ccr4-Not complex via Not1's N-terminal domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 summarize key findings from the study. These are well-supported by the genetic, biochemical, and molecular data demonstrating the components and connections of the regulatory machinery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The W109 residue is located at the C-terminal end of Rpl4a's long internal loop (amino acids 44-113), which mediates Acl4 binding. The Rpl4a.W109C protein still interacts with Acl4, albeit to a lesser extent than wild-type, indicating the W109 side chain is not strictly required for interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 are supported by structural knowledge (C90, citing published structures) and Y2H interaction data (C91-C92). The data demonstrate that W109 contributes to but is not essential for Acl4 binding.",
+    "result_type": "MINOR"
+  }
+]

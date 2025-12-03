@@ -1,0 +1,1867 @@
+{
+  "submission": {
+    "id": "9d18ef91-f25f-4e20-abf5-1dacd6a2978d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T19:38:55.195148Z",
+    "updated_at": "2025-12-03T19:38:55.195148Z"
+  },
+  "content": [
+    {
+      "id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "submission_id": "9d18ef91-f25f-4e20-abf5-1dacd6a2978d",
+      "content_type": "manuscript",
+      "content_text": "# Exploiting the mediating role of the metabolome to unravel transcript-to-phenotype associations\n\n## Authors\n\n- Chiara Auwerx<sup>1</sup> ([ORCID: 0000-0003-3613-8450](https://orcid.org/0000-0003-3613-8450))\n- Marie C Sadler<sup>2</sup> ([ORCID: 0000-0002-2599-9207](https://orcid.org/0000-0002-2599-9207))\n- Tristan Woh<sup>4</sup> ([ORCID: 0000-0001-6916-0174](https://orcid.org/0000-0001-6916-0174))\n- Alexandre Reymond<sup>1</sup>\n- Zolt\u00e1n Kutalik<sup>2</sup> ([ORCID: 0000-0001-8285-7523](https://orcid.org/0000-0001-8285-7523)) \u2020\n- Eleonora Porcu<sup>1</sup> ([ORCID: 0000-0003-2878-7485](https://orcid.org/0000-0003-2878-7485)) \u2020\n\n### Affiliations\n\n1. Center for Integrative Genomics, University of Lausanne Lausanne Switzerland ([ROR:019whta54](https://ror.org/019whta54))\n2. Swiss Institute of Bioinformatics Lausanne Switzerland ([ROR:002n09z45](https://ror.org/002n09z45))\n3. University Center for Primary Care and Public Health Lausanne Switzerland\n4. Department of Computational Biology, University of Lausanne Lausanne Switzerland ([ROR:019whta54](https://ror.org/019whta54))\n\n\u2020 Corresponding author\n\n## Abstract\n\nDespite the success of genome-wide association studies (GWASs) in identifying genetic variants associated with complex traits, understanding the mechanisms behind these statistical associations remains challenging. Several methods that integrate methylation, gene expression, and protein quantitative trait loci (QTLs) with GWAS data to determine their causal role in the path from genotype to phenotype have been proposed. Here, we developed and applied a multi-omics Mendelian randomization (MR) framework to study how metabolites mediate the effect of gene expression on complex traits. We identified 216 transcript-metabolite-trait causal triplets involving 26 medically relevant phenotypes. Among these associations, 58% were missed by classical transcriptome-wide MR, which only uses gene expression and GWAS data. This allowed the identification of biologically relevant pathways, such as between ANKH and calcium levels mediated by citrate levels and SLC6A12 and serum creatinine through modulation of the levels of the renal osmolyte betaine. We show that the signals missed by transcriptome-wide MR are found, thanks to the increase in power conferred by integrating multiple omics layer. Simulation analyses show that with larger molecular QTL studies and in case of mediated effects, our multi-omics MR framework outperforms classical MR approaches designed to detect causal relationships between single molecular traits and complex phenotypes.\n\n## Introduction\n\nGenome-wide association studies (GWASs) have identified thousands of single nucleotide polymorphisms (SNPs) associated with a wide range of complex traits (MacArthur et al., 2017; Visscher et al., 2017). However, the path from GWAS to biology is not straightforward as most SNPs implicated by GWASs reside in non-coding regions of the genome (MacArthur et al., 2017) and do not directly inform on the functional mechanism through which variants exert their effect on phenotypes.\n\nGWASs have been performed on gene expression (V\u00f5sa et al., 2021), DNA methylation (Min et al., 2021), protein (Sun et al., 2018), and metabolite (Shin et al., 2014; Lotta et al., 2021) levels, identifying genetic variants influencing molecular traits, commonly referred to as molecular quantitative trait loci (molQTLs). The large overlap between complex and molecular trait-associated variants suggests that integrating these data can help interpreting GWAS loci (Vandiedonck, 2018; Taylor et al., 2019; Ongen et al., 2017). Advances in the field of transcriptomics make gene expression the best studied molecular phenotype, thanks to the presence of large expression QTL (eQTL) studies (e.g., eQTLGen Consortium [V\u00f5sa et al., 2021] N>30,000). Availability of these datasets fostered the development of summary statistic-based statistical approaches aiming at identifying associations between transcripts and complex traits (Zhu et al., 2016; Porcu et al., 2019; Hormozdiari et al., 2014; Gusev et al., 2016), prioritizing genes from known GWAS loci for functional follow-up, and inferring the directionality of these relations (Porcu et al., 2019; Porcu et al., 2021b). However, the cascade of events that mediates the effect of genetic variants on complex traits involves more than one molecular trait. Although approaches used for gene expression can be extended to other molecular data, investigating whether these molecular traits reside along the same causal pathway remains under-explored and only recently have studies applied colocalization and Mendelian randomization (MR) to methylation, gene expression, and protein levels data (Giambartolomei et al., 2018; Wu et al., 2018; Gleason et al., 2020; Sadler et al., 2022) and to a lesser extent to metabolic QTLs (mQTL) (Yin et al., 2022).\n\nMetabolites are often the final products of cellular regulatory processes and the most proximal omic layer to complex phenotypes. Their levels could thus represent the ultimate response of biological systems to genetic and environmental changes. For instance, the metabolic status of organisms reflects disease progression, as metabolic disturbances can often be observed several years prior to the symptomatic phase (Shah et al., 2010; Wang et al., 2011; Sabatine et al., 2005). Therefore, using metabolomics to identify early-stage biomarkers of complex phenotypes, such as prediabetes and COVID-19 susceptibility, has gained increased interest (Wang-Sattler et al., 2012; Julkunen et al., 2021). While two-sample MR approaches using metabolites as single exposure have revealed biomarkers for several diseases (Qian et al., 2021; Lord et al., 2021; Porcu et al., 2021a), these analyses focused on the prediction of disease risk rather than on deciphering the mechanisms of discovered associations.\n\nIntegrating transcriptomics with metabolomics data can provide insights into how metabolites are regulated, elucidating targetable functional mechanisms. Here, we develop a framework based on established MR methodology that hypothesizes a mediating role of the metabolome in the transcript-to-phenotype axis, with the primary exposure being defined as an upstream omic layer, namely gene expression. Specifically, our integrative MR analysis combines summary-level multi-omics (i.e., GWAS, eQTL, and mQTL) data to compute the indirect effect of gene expression on complex traits mediated by metabolites in three steps (Figure 1). First, we map the transcriptome to the metabolome by identifying causal associations between transcripts and metabolites. Next, we screen metabolites for downstream causal effects on 28 complex phenotypes, resulting in the identification of gene expression \u2192 metabolite \u2192 phenotype cascades (Figure 1A). In parallel, we prioritize trait-associated genes by testing the association of transcripts with phenotypes (Figure 1B). Third, for transcripts found to causally influence either a metabolite (A) or a complex phenotype (B), we test whether the identified target genes exert their effect on the phenotype through the metabolite using multivariable MR (MVMR; Figure 1C). Finally, we carried out extensive power analyses to determine under which conditions the mediation analysis (Figure 1C) outperforms the conventional exposure-outcome MR framework (Figure 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/81097/elife-81097-fig1-v1.jpg)\n\n**Figure 1.:** (A) Estimation of the causal transcript-to-metabolite and metabolite-to-phenotype effects through univariable Mendelian randomization (MR). (B) Estimation of the causal transcript-to-phenotype effects through univariable transcriptome-wide MR (TWMR). (C) Estimation of the direct (i.e., not mediated by the metabolites) and mediated effect of transcripts on phenotypes through multivariable MR (MVMR) by accounting for mediation through the metabolome.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81097/elife-81097-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Distribution of the number of IVs used by the univariable MR aiming at identifying (A) transcript-to-metabolite, (B) metabolite-to-phenotype, and (C) transcript-to-phenotype causal relations. Data related to Figure 1\u2014figure supplement 1 panels A to C are available in Figure 1\u2014figure supplement 1\u2014source data 1.\n\n## Results\n\n### Mapping the transcriptome onto the metabolome\n\nWe applied univariable MR to identify metabolites whose levels are causally influenced by transcript levels in whole blood (Figure 1A). Summary statistics for cis-eQTLs stem from the eQTLGen Consortium meta-analysis of 19,942 transcripts in 31,684 individuals (V\u00f5sa et al., 2021), while summary statistics for mQTLs originate from a meta-analysis of 453 metabolites in 7824 individuals from two independent European cohorts: TwinsUK (N = 6056) and KORA (N = 1768) (Shin et al., 2014). After selecting SNPs included in both the eQTL and mQTL studies, our analysis was restricted to 7884 transcripts with \u22653 instrumental variables (IVs) (see Methods, Figure 1\u2014figure supplement 1A) and 242 metabolites with an identifier in the Human Metabolome Database (HMDB) (Wishart et al., 2022) (see Methods, Supplementary file 1a). By testing each gene for association with the 242 metabolites, we detected 96 genes whose transcript levels causally impacted 75 metabolites, resulting in 133 unique transcript-metabolite associations (FDR 5% considering all 1,907,690 instrumentable gene-metabolite pairs; Supplementary file 1b). Most involved genes (86%; 83/96) were causally influencing the level of a single metabolite, with some notable exceptions acting as mQTL hubs, such as TMEM258 and FADS2 both affecting the same 11 metabolites, followed by FADS1 affecting a subset of six metabolites. While only 5 (3.8%) of the 133 associations were reported in HMDB, an automated literature review (see Methods) identified a match for 22 (16.5%) of the identified transcript-metabolite pairs (Supplementary file 1b).\n\n### Mapping the metabolome onto complex phenotypes\n\nUnivariable metabolome-wide MR (MWMR; Figure 1A) was used to identify causal relationships between 48 metabolites with \u22653 IVs (Figure 1\u2014figure supplement 1B) and 28 complex phenotypes. The latter include a wide range of anthropometric traits, cardiovascular assessments, and blood biomarkers, whose summary statistics originate from the UK Biobank (UKB) (Bycroft et al., 2018;Supplementary file 1c). Overall, 34 metabolites were associated with at least one phenotype (FDR 5% considering all 1344 metabolite-phenotype pairs), resulting in 132 unique metabolite-phenotype associations (Supplementary file 1d).\n\n### Mapping the transcriptome onto complex phenotypes\n\nWe applied univariable transcriptome-wide MR (TWMR [Porcu et al., 2019] Figure 1B) to identify associations between expression levels of 10,435 transcripts from the eQTLGen Consortium with \u22653 IVs (Figure 1\u2014figure supplement 1C) measured in both exposure and outcome datasets and the same 28 UKB phenotypes described in the previous section (Supplementary file 1c). In total, 5140 transcripts associated with at least one phenotype (FDR 5% considering all 292,170 gene-phenotype pairs) resulting in 13,141 unique transcript-phenotype associations (Supplementary file 1e).\n\n### Mapping metabolome-mediated effects of the transcriptome onto complex phenotypes\n\nThe mapping of putative causal effects performed in the previous steps provides the opportunity to infer the mediating role of the metabolome in biological processes leading to transcript-phenotype associations. We combined the 133 transcript-metabolite (FDR \u22645%) and 132 metabolite-trait (FDR \u22645%) associations to pinpoint 216 transcript-metabolite-phenotype causal triplets (FDR = 1\u20130.952 = 9.75%) (Supplementary file 1f). Among the 37 triplets for which the transcript and metabolite had previously been linked through automated literature review, none remained after incorporating a third term for the phenotype in the search and manually removing abstracts for which the search terms were used in an erroneous context. Relaxing the search criteria by omitting the metabolite term, 13/37 (35%) triplets returned at least one match for the gene-trait association.\n\nFor each of these 216 putative mechanisms, an MVMR approach to compute the direct effect of gene expression on the phenotype was applied (see Methods; Figure 1C; Supplementary file 1f). Regressing direct effects ($\\alpha_{d}$) on total effects ($\\alpha_{TP}$) and accounting for regression dilution bias (see Methods; Figure 2A), it was estimated that 77% [95% CI: 70\u201385%] of the transcript effect on the phenotype was direct and thus not mediated by the metabolites (Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/81097/elife-81097-fig2-v1.jpg)\n\n**Figure 2.:** (A) Graphical representation of the multivariable Mendelian randomization (MVMR) framework for mediation analysis: DNA represents genetic instrumental variables (IVs) chosen to be directly associated with either the exposure (transcript; $\\beta_{eQTL}$) or the mediator (metabolite; $\\beta_{mQTL}$) through summary statistics. The effect of these IVs on the outcome (phenotype; $\\beta_{GWAS}$) originates from genome-wide association studies (GWASs) summary statistics. Total effects $\\alpha_{TP}$ of transcripts on phenotypes are estimated by transcriptome-wide Mendelian randomization (TWMR), while direct effects $\\alpha_{d}$ are estimated by MVMR. Total effects $\\alpha_{TP}$ are assumed to equal the sum of the direct $\\alpha_{d}$ and indirect $\\alpha_{i}$ (i.e., mediated) effects, the two former being depicted in B. (B) Direct ($\\alpha_{d}$ ; y-axis) and total ($\\alpha_{TP}$ ; x-axis) effects for the 216 transcript-metabolite-trait causal triplets. The dashed line represents the identity, while the purple line represents the regression line with a shaded 95% confidence interval. Data related to Figure 2 panel B are available in Figure 2\u2014source data 1.\n\n### Molecular mechanisms of genotype-to-phenotype associations\n\nDissecting causal triplets allows gaining mechanistc insights into biological pathways linking genes to phenotypes. For instance, expression of TMEM258 [MIM: 617615], FADS1 [MIM: 606148], and FADS2 [MIM: 606149], all mapping to a region on chromosome 11 (Figure 3A), were found to influence a total of 17 complex phenotypes through modulation of 1-arachidonoylglycerophosphocholine (LPC(20:4); HMDB0010395; $\\alpha_{TMEM258\u2192LPC(20:4)}=\u22121.02$; P = 8.0\u00d710\u201381; $\\alpha_{FADS1\u2192LPC(20:4)}=\u22120.39$; P = 4.6\u00d710-15; $\\alpha_{FADS2\u2192LPC(20:4)}=\u22120.63$; P = 5.1\u00d710\u201362), 1-arachidonoylglycerophosphoethanolamine (LPE(20:4);HMDB0011517; $\\alpha_{TMEM258\u2192LPE(20:4)}=\u22120.68$; P = 1.1\u00d710\u201337; $\\alpha_{FADS1\u2192LPE(20:4)}=\u22120.30$; P = 1.4\u00d710\u201307; $\\alpha_{FADS2\u2192LPE(20:4)}=\u22120.37$; P = 1.2\u00d710\u201318), and 1-arachidonoylglycerophosphoinositol (LPI(20:4); HMDB0061690; $\\alpha_{TMEM258\u2192LPI(20:4)}=\u22120.51$; P = 8.2\u00d710\u201318; $\\alpha_{FADS2\u2192LPI(20:4)}=\u22120.28$; P = 6.3\u00d710\u201316) levels (Figure 3B\u2013C). These results align with the known pleiotropy of the region (i.e., >6000 associations reported in the GWAS Catalog as of May 2022). Interestingly, involved metabolites are complex lipids synthesized from arachidonic acid, a product of the rate-limiting enzymes encoded by FADS1 and FADS2 (Figure 3B). Recently, polymorphisms affecting the expression of these genes were shown to associate with the levels of over 50 complex lipids, including the ones identified by our study (Reynolds et al., 2020). Overall, this example illustrates how our method can capture meaningful biological associations and shed light on underlying molecular pathways of pleiotropy.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/81097/elife-81097-fig3-v1.jpg)\n\n**Figure 3.:** (A) Genome browser (GRCh37/hg19) view of the genomic region on chromosome 11 encompassing TMEM258, FADS1, and FADS2 (red). (B) Diagram of the mediation signals detected for TMEM258, FADS1, and FADS2. Two of the implicated genes encode enzymes involved in arachidonic synthesis (purple). Involved genes impact 17 phenotypes (pink) through alteration of the levels of three metabolites, 1-arachidonoylglycerophosphocholine (LPC(20:4)), 1-arachidonoylglycerophosphoethanolamine (LPE(20:4)), and 1-arachidonoylglycerophosphoinositol (LPI(20:4)) whose structure is depicted (orange). (C) Network of the 65 transcript-metabolite-trait causal triplets involving TMEM258, FADS1, and FADS2. Nodes represent genes (purple), metabolites (orange), or phenotypes (pink). Edges indicate the direction of the effects estimated through univariable Mendelian randomization. Width of edges is proportional to effect size and color indicates if the effect is positive (red) or negative (blue).\n\n### Power analysis\n\nImportantly, only 42% (90/216) of the causal triplets showed a significant total transcript-to-phenotype effect (i.e., estimated by TWMR), suggesting that the method lacks power under current settings. To characterize the parameter regime where the power to detect indirect effects is larger than it is for total effects, we performed simulations using different settings for the mediated effect. In each scenario we evaluated 500 transcripts and 80 metabolites and varied two parameters characterizing the mediation:\n\nTranscripts were simulated with 6% heritability (i.e., median $h^{2}$ in the eQTLGen data) and a causal effect of 0.035 (i.e., ~65% of power in TWMR at \u03b1=0.05) on a phenotype. Each scenario was simulated 10 times and results were averaged to assess the mean difference in power (see Methods).\n\nSimulations show that with current sample sizes (i.e., $N_{GWAS}=300,000$, $N_{eQTL}=32,000$, and $N_{mQTL}=8000$), when $\\alpha_{MP}>\\alpha_{TM}$ (i.e., $\\sigma<1$), TWMR has increased power to detect significant transcript-to-phenotype associations, especially when $\u03c1>0$ (i.e., direct and total effect have the same direction (Figure 4A)). However, for all 216 causal triplets, we observed $\\sigma>1$ (Figure 4\u2014figure supplement 1). Under this condition, and assuming that the total effect of the transcript on the phenotype is dominated by the effect mediated by the metabolite (i.e., $\u03c1<0.5$ and $\u03c1>1.5$), TWMR had less power than the approach identifying mediators (Figure 4A), confirming that significant associations were missed by TWMR due to power issues related to the proportion of mediated effect.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/81097/elife-81097-fig4-v1.jpg)\n\n**Figure 4.:** Heatmap showing the difference in statistical power between TWMR and mediation analysis through MVMR at current (A; $N=8000$) and realistic future (B; $N=90,000$) metabolic quantitative trait loci (mQTL) dataset sample sizes. The x-axis shows the proportion ($\u03c1$) of direct ($\\alpha_{d}$) to total ($\\alpha_{TP}$) effect (i.e., effect not mediated by the metabolite) ranging from \u20132 to 2, arrows indicating increasing proportion of direct effect. The y-axis shows the ratio ($\\sigma$) between the transcript-to-metabolite ($\\alpha_{TM}$) and the metabolite-to-phenotype ($\\alpha_{MP}$) effects, ranging from 0.1 to 10. Red vs. gray indicates higher power for TWMR vs. mediation analysis, respectively, while white represents equal power between the two approaches. Data related to Figure 4 panels A and B are available in Figure 4\u2014source data 1 and Figure 4\u2014source data 2, respectively.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81097/elife-81097-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Distribution of the proportion ($\u03c1$) of direct ($\\alpha_{d}$) to total ($\\alpha_{TP}$) effect (i.e., effect not mediated by the metabolite with arrows indicating increasing proportion of direct effect; x-axis) and ratio ($\\sigma$) between the transcript-to-metabolite ($\\alpha_{TM}$) and the metabolite-to-phenotype ($\\alpha_{MP}$) effects (top row indicates $\\sigma$ larger than 10; y-axis) for the 216 identified putative causal triplets. Color indicates the number of triplets under each combination of parameters, ranging from 0 (white). Data related to Figure 4\u2014figure supplement 1 are available in Figure 4\u2014figure supplement 1\u2014source data 1.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81097/elife-81097-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Heatmap showing the difference in statistical power between TWMR and mediation analysis through MVMR at metabolic quantitative trait locus (mQTL) dataset sample sizes smaller than the one in the main analysis: (A) N = 1000; (B) N = 2000; (C) N = 4000. The x-axis shows the proportion ($\u03c1$) of direct ($\\alpha_{d}$) to total ($\\alpha_{TP}$) effect (i.e., effect not mediated by the metabolite) ranging from \u20132 to 2. The y-axis shows the ratio ($\\sigma$) between the transcript-to-metabolite ($\\alpha_{TM}$) and the metabolite-to-phenotype ($\\alpha_{MP}$) effects, ranging from 0.1 to 10. Red vs. gray indicates higher power for TWMR vs. mediation analysis, respectively, while white represents equal power between the two approaches. Data related to Figure 4\u2014figure supplement 2 panels A, B, and C are available in Figure 4\u2014figure supplement 2\u2014source data 1\u20133, respectively.\n\nRepeating the simulations with an mQTL sample size of 90,000, nearing state-of-the-art sample sizes (Lotta et al., 2021), leads to a strong shift in the above-described trends (Figure 4B). Specifically, when the effect of the transcript on the phenotype is dominated by the effect mediated by the metabolite ($\u03c1<0.3$ and $\u03c1>1.7$), mediation analysis has more power than TWMR when $\\sigma>0.2$. For larger proportions of direct effect, TWMR has increased power the more $\\sigma$ differs from 1. In line with the increased power of mediation analysis with larger mQTL datasets, the gain in power of mediation analysis over TWMR decreases with decreasing mQTL dataset sample sizes (ranging between N = 1000 and N = 4000; Figure 4\u2014figure supplement 2), indicating that our approach is dependent on large sample sizes to reach its full potential.\n\n### Identifying new genotype-to-phenotype associations\n\nThe 126 triplets that were not identified through TWMR due to power issues represent putative new causal relations. This is well illustrated by a proof-of concept example involving ANKH [MIM: 605145] and calcium levels, for which 48 publications were identified through automated literature review (Supplementary file 1f). While the TWMR effect of ANKH expression on calcium levels was not significant ($\\alpha_{ANKH\u2192calcium}=-0.02$; P=0.03), ANKH expression decreased citrate levels ($\\alpha_{ANKH\u2192citrate}=-0.30$; P=2.2\u00d710\u201306), which itself increased serum calcium levels ($\\alpha_{citrate\u2192calcium}=0.07$; P=6.5\u00d710\u20130). Mutations in ANKH have been associated with several rare mineralization disorders [MIM: 123000, 118600] (Williams, 2016) due to the gene encoding a transmembrane protein that channels inorganic pyrophosphate to the extracellular matrix, where at low concentrations it inhibits mineralization (Ho et al., 2000). Recently, a study proposed that ANKH instead exports ATP to the extracellular space (where it is then rapidly converted to inorganic pyrophosphate), along with citrate (Szeri et al., 2020). Citrate has a high binding affinity for calcium and influences its bioavailability by complexing calcium-phosphate during extracellular matrix mineralization and releasing calcium during bone resorption (Granchi et al., 2019). Together, our data support the role of ANKH in calcium homeostasis through regulation of citrate levels, connecting previously established independent links into a causal triad.\n\nIn another example, SLC6A12 [MIM: 603080], which encodes the betaine/GABA transporter-1, involved in betaine and GABA uptake (Borden et al., 1995), was identified as a negative regulator of betaine ($\\alpha_{SLC6A12\u2192betaine}=-0.37$; P = 8.2\u00d710\u201308). While blood betaine levels negatively impacted serum creatinine levels ($\\alpha_{betaine\u2192creatinine}=-0.06$; P = 1.7\u00d710\u201307), the effect of SLC6A12 expression on creatinine was not significant ($\\alpha_{SLC6A12\u2192creatinine}=0.02$; P = 1.5\u00d710\u201303). This observation is particularly interesting given that betaine acts as a protective renal osmolyte whose plasma and kidney tissue concentration were found to be downregulated in renal ischemia/reperfusion injury (Jouret et al., 2016; Wei et al., 2014) and whose urine levels have been proposed as a biomarker for chronic kidney disease progression (Gil et al., 2018). As both renal conditions are commonly monitored through serum creatinine levels, our data support the critical role of osmolyte homeostasis in renal health.\n\n## Discussion\n\nIn this study, we combined MR approaches integrating eQTL, mQTL, and GWAS summary statistics to explore the role of the metabolome in mediating the effect of the transcriptome on complex phenotypes. Applied to 28 medically relevant traits, our approach revealed 216 causal transcript-metabolite-phenotype triplets. Our automated literature review indicates that while some detected associations were previously reported, a large fraction, especially among the triplets, appears to be novel. It should be noted that the number of previously reported associations is likely underestimated as our approach does not account for all synonyms of a given feature and requires the terms to appear in the title or abstract of the publication. This makes it more likely for hypothesis-driven studies, inherently biased toward well-studied genes and metabolites, to be identified. Conversely, high-throughput, hypothesis-free studies that report the given association in a supplemental table are likely to be missed. Furthermore, due to its automated nature, our search is context-blind, so that some of the identified studies might report negative results, associations only under specific conditions (e.g., different organisms, experimental settings), or usage of the search term with a different meaning. To attenuate the latter, we also performed manual review of the retained abstracts for transcript-to-phenotype searches. While flawed, this rough estimate of the amount of existing evidence supporting our findings can be interpreted in combination with other lines of evidence. For instance, among the 90 signals that were also identified through TWMR, 93% showed a directionally concordant effect between the transcript-to-phenotype, transcript-to-metabolite, and metabolite-to-phenotype estimates (i.e., sign of product of the transcript-to-metabolite and metabolite-to-phenotype effects agrees with the sign of the transcript-to-phenotype effect). In these situations, dissection of causal effects provides clues as to the molecular mechanism through which involved genes modify complex phenotypes. This information is particularly valuable to identify key molecular mediators of highly pleiotropic genetic regions, such as the TMEM258/FADS1/FADS2 locus (Figure 3). While transcript levels of these genes affected eleven metabolites, three complex lipids were highlighted as strong molecular mediators of the transcript-to-phenotype effects.\n\nStrikingly, 58% of the 216 causal transcript-metabolite-phenotype triplets were missed by TWMR \u2013 an approach that only considers gene expression and GWAS data. We highlight two novel but biologically plausible mechanisms linking ANKH to calcium levels through modulation of citrate and SLC6A12 to serum creatinine levels through regulation of the renal osmolyte betaine. Simulation analyses showed that these signals were likely missed by TWMR due to lack of power, as mediation analysis is better suited to detect associations with a low direct to total effect proportion and stronger transcript-to-metabolite than metabolite-to-phenotype effect. Promisingly, our simulations showed that mediation analysis becomes increasingly powerful over a wider range of parameter settings as the sample size of the mediator QTL study increases, highlighting the importance of generating large and publicly available molQTL datasets that can help to unravel functional gene-to-phenotype mechanisms.\n\nAs illustrated through the selected examples, a large fraction of detected mediations involves genes encoding metabolic enzymes or transporters/channels, with an enrichment for \u2018secondary active transmembrane transporter activity\u2019, for example (GO:0015291; FDR=0.021; background: 7884 genes with \u22653 IVs assessed through TWMR; STRING database). Matching the finding that the most likely effector genes of mQTLs are enriched for pathway-relevant enzymes and transporters (Smith et al., 2022), these results are not surprising given that the proteins encoded by these genes directly interact with metabolites, making it more likely that the effect of changes in their expression is mediated by metabolites. While our method is well suited to detect such effects, interpretation of discovered mediations is limited by the lack of spatial resolution of the mQTL data. Access to metabolite concentrations in different cellular compartments (e.g., extracellular space, cytosol, mitochondrial matrix, etc.) would generate more fine-tuned mechanistic hypotheses that consider the directionality of metabolite fluxes.\n\nThe observation that 77% of the transcript\u2019s effect on the phenotype is not mediated by metabolites suggests that either true direct effects are frequent or that other unassessed metabolites or molecular layers (e.g., proteins, post-translational modifications, etc.) play a crucial role in mediation. It is to note that in the presence of unmeasured mediators or measured mediators without genetic instruments, our mediation estimates are lower bounds of the total existing mediation. In addition, unmeasured mediators sharing genetic instruments with the measured ones can modify result interpretation as some of the observed mediators may simply be correlates of the true underlying mediators. While this is a limitation of all MR methods, metabolic networks may harbor particularly large number of genetically correlated metabolite species. Similarly, owing to linkage disequilibrium and regulatory variants affecting multiple genes, transcripts from adjacent genes might appear to be involved in the same signals, as exemplified with the TMEM258/FADS1/FADS2 locus (Figure 3). While literature supports the role of the FADS genes, one cannot exclude a role for TMEM258, nor disentangle the specific function of FADS1 and FADS2. Thanks to the flexibility of the proposed framework, we expect that in the future and upon availability of ever larger and more diverse datasets, our method could be applied to estimate the relative contribution of currently unassessed mediators in translating genotypic cascades.\n\nAnother consideration is that complex phenotypes can have a stronger impact on gene expression than the opposite (Porcu et al., 2021b). Due to the lack of genome-wide trans-eQTL association summary statistics, our method does not investigate reverse causality on metabolites and gene expression, nor the role of metabolites as regulators of gene expression. Metabolites might also integrate the effect of several transcripts (i.e., multiple transcripts causally impact the levels of the same metabolite) before affecting complex phenotypes (Supplementary file 1g) or multiple metabolites may jointly mediate the impact of a single transcript. Modelling the latter phenomenon, which is beyond the scope of our current work, requires the development of structural equation models accounting for such effects and will eventually lead to a more comprehensive modelling of causal relations in complex biological networks, nuancing the interpretation of the molecular mechanisms shaping complex traits.\n\nIn conclusion, we developed a modular MR framework that has increased power over classical MR approaches to detect causal transcript-to-phenotype relationships when these are mediated by alteration of metabolite levels and is likely to become increasingly powerful upon release of larger molQTL datasets.\n\n## Methods\n\n### Univariable MR analyses\n\nTWMR and MWMR (Porcu et al., 2019) were used to estimate the causal effects of transcript and metabolite levels (exposure) on various outcomes. For each transcript/metabolite, using inverse-variance weighted (IVW) method for summary statistics (Burgess et al., 2013), the causal effect of the molecular traits on the outcome was defined as\n\n$$\n\\alpha^=(\\beta^{\u2032}C^{\u22121}\\beta)^{\u22121}(\\beta^{\u2032}C^{\u22121}\\gamma)\n$$\n\nHere, $\\beta$ is a vector of length n containing the standardized effect size of n independent SNPs on the gene/metabolite, derived from eQTL/mQTL studies, with $\\beta^{`}$ being the transpose of $\\beta$. $\\gamma$ is a vector of length n containing the standardized effect size of each SNP on the outcome. C is the pairwise LD matrix between the n SNPs. The standardized effect sizes for molecular and outcome GWASs were obtained from Z-score of summary statistics standardized by the square root of the sample size to be on the same standard deviation scale.\n\nIVs were selected as autosomal, non-strand ambiguous, independent (r2 <0.01), and significant ($P_{eQTL}<1.8\\times10^{\u221205}$ / $P_{mQTL}<1.0\\times10^{\u221207}$) eQTL/mQTLs available in the UK10K reference panel (Huang et al., 2015) using PLINK (v1.9) (Chang et al., 2015). As retained SNPs are independent, we used the identity matrix to approximate C. SNPs with larger effects on the outcome than on the exposure were removed, as these potentially indicate violation of the MR assumptions (i.e., likely reverse causality and/or confounding).\n\nThe variance of \u03b1 can be calculated approximately by the Delta method\n\n$$\nvar(\\alpha^)=\u00a0(\\frac{\u2202\\alpha^}{\u2202\\beta})^{2}\u2217var(\\beta^)+(\\frac{\u2202\\alpha^}{\u2202\\gamma})^{2}\u2217var(\\gamma^)+(\\frac{\u2202\\alpha^}{\u2202\\beta})\u2217(\\frac{\u2202\\alpha^}{\u2202\\gamma})\u2217cov(\\beta^,\\gamma^)\n$$\n\nwhere cov($\\beta$,$\\gamma$) is 0 if $\\beta$ and $\\gamma$ are estimated from independent samples. The causal effect Z-statistic for transcript/metabolite i was defined as $\\frac{\\alpha^_{i}}{SE(\\alpha^_{i})}$, where $SE(\\alpha^_{i})=\\sqrt{var(\\alpha^)_{i,i}}$ .\n\nThe IVW method provides an unbiased estimate under the assumption that all genetic variants are valid IVs, that is, all three MR assumption hold. However, the third assumption (no pleiotropy) is easily violated, leading to inaccurate estimates when horizontal pleiotropy occurs (Verbanck et al., 2018). To test for the presence of pleiotropy, we used Cochran\u2019s Q test (Bowden et al., 2015; Burgess et al., 2017) to assess whether there were significant differences between the MR effects of an instrument (i.e., $\\alpha\\beta_{i}$) and the estimated effect of that instrument on phenotype/metabolite levels ($\\gamma_{i}$). We defined\n\n$$\nd_{i}=\\gamma_{i}\u2212\u00a0\\alpha\\beta_{i}\n$$\n\nand its variance as\n\n$$\nvar(d_{i})=var(\\gamma_{i})+(\\beta_{i})^{2}\u2217var(\\alpha)+\u00a0var(\\gamma_{i})\u2217(\\alpha)^{2}+\u00a0var(\\beta_{i})\u2217var(\\alpha)\n$$\n\nNext, the deviation of each SNP was tested using the test statistic\n\n$$\nT_{i}=\\frac{d_{i}^{2}}{var(d_{i})}\u00a0\u00a0\u223c\u00a0\u03c7_{1}^{2}\n$$\n\nWhen p<0.05, the SNP with largest | $d_{i}$ | was removed and the test was repeated.\n\n### Mediation analysis through MVMR analyses\n\nAn MVMR approach was used to dissect the total causal effect of transcript levels on phenotypes ($\\alpha_{TP}$) into a direct ($\\alpha_{d}$) and indirect ($\\alpha_{i}$) effect measured through a metabolite. Through inclusion of a metabolite and its associated genetic variants (r2 <0.01, pmQTL<1 \u00d7 10\u201307), the direct effect of gene expression on a phenotype can be estimated using a multivariable regression model (Burgess et al., 2013) as the first element of\n\n$$\n\\alpha^=(B^{\u2032}C^{\u22121}B)^{\u22121}(B^{\u2032}C^{\u22121}\\gamma)\n$$\n\nwhere $B$ is a matrix with two columns containing the standardized effect sizes of n IVs on transcript levels in the first column and on the metabolite levels in the second column, $\\gamma$ is a vector of length n containing the standardized effect size of each SNP on the phenotype, and C is the pairwise LD matrix between the n SNPs.\n\nThe proportion of direct effect $(\u03c1)$ is calculated by regressing direct effects ($\\alpha_{d}$) on total effects ($\\alpha_{TP}$) and then correcting for regression dilution bias:\n\n$$\n\u03c1_{corrected}=\u00a0\\frac{\u03c1}{\\sqrt{1\u2212\\frac{\\sum(SE(\\alpha_{TP}))^{2}}{\\sum\\alpha_{TP}^{2}}}}\n$$\n\n### Omics and traits summary statistics\n\nExpression QTL data originated from the eQTLGen Consortium (V\u00f5sa et al., 2021) (N = 31,684), which includes cis-eQTLs (<1 Mb from gene center, two-cohort filter) for 19,250 transcripts (16,934 with at least one significant cis-eQTL at FDR <0.05 corresponding to p<1.8 \u00d7 10\u201305). mQTL data originate from Shin et al., 2014, which used ultra-high performance liquid chromatography-tandem mass spectrometry to measure 486 whole blood metabolites in 7824 European individuals. Association analyses were carried out on ~2.1 million SNPs and are available for 453 metabolites at the Metabolomics GWAS Server (http://metabolomics.helmholtz-muenchen.de/gwas/). Among these metabolites, 242 were manually annotated with the HMDB identifiers (Supplementary file 1a) and used in this study. GWAS summary statistics for 28 outcome traits measured in the UKB originate from the Neale Lab (http://www.nealelab.is/uk-biobank/). Protein interactions with metabolites were downloaded from HMDB v5.0 (https://hmdb.ca/downloads/) and were used to annotate transcript-metabolites associations.\n\n### Automated literature review\n\nAn automated literature review of all transcript-metabolite associations (Supplementary file 1b) was conducted in PubMed (September 20, 2022) following the scheme:\n\n$$\n(Gene[Title/Abstract])\u00a0AND\u00a0((Met_{HMDB}[Title/Abstract])\u00a0OR\u00a0(Met_{Shin}[Title/Abstract]))\n$$\n\nWith $Gene$ being the name of the gene whose transcript is involved in the association, $Met_{HMDB}$ the involved metabolite\u2019s common name on HMDB, and $Met_{Shin}$ the involved metabolite\u2019s name as reported in Shin et al., 2014. Returned PubMed identifiers were retrieved (Supplementary file 1b).\n\nFor transcript-metabolite associations involved in a causal triplet and for which the transcript-metabolites returned at least one publication (Supplementary file 1f), the search was extend by (i) adding an additional search term for the trait (i.e., $AND\u00a0(trait[Title/Abstract])$) and (ii) substituting the metabolite term for the trait term. Returned PubMed identifiers were retrieved and corresponding abstracts were manually curated to exclude abstracts in which the search terms were used in a meaning other than the intended one (Supplementary file 1f).\n\n### Simulation analyses\n\nSimulation analyses were conducted to assess the gain in power upon inclusion of metabolomics data in the MR framework. In the simulated scenario, a transcript has an effect on a phenotype mediated by a metabolite. Two parameters were allowed to vary: the proportion ($\u03c1$) of direct effect (i.e., effect not mediated by the metabolite) and the ratio ($\\sigma$) between the effect of the transcript on the metabolite ($\\alpha_{TM}$) and of the metabolite on the phenotype ($\\alpha_{MP}$). Other parameters were fixed, including the heritability of the transcript at $h_{T}^{2}=0.06$ (corresponding to the median $h^{2}$ in the eQTLGen data), the number of IVs $N_{IVs}$ at 6 (corresponding to the median number of IVs used in TWMR analyses). Effect sizes $\\beta_{eQTL}$ are from a normal distribution $\\beta_{eQTL}\u223cN(0,\\frac{h_{T}^{2}}{N_{IVs}})$. The causal effect of the transcript on the phenotype ($\\alpha_{TP}$) was fixed to 0.035, which results in \u223c65% power to detect a significant effect with TWMR. These quantities allowed to define $\\beta_{GWAS}$ as $\\beta_{GWAS}= \\alpha_{TP}* \\beta_{eQTL}+ \\epsilon_{P}$ , where $\\epsilon_{P}\u223cN(0,\\frac{1}{N_{GWAS}})$ with $N_{GWAS}=300,000$ to reflect the sample size of UKB GWASs. The same vector of $\\beta_{eQTL}$ was used to define $\\beta_{mQTL}$ and estimate the causal effect of the transcript on the metabolite. $\\beta_{mQTL}$ was defined as $\\beta_{mQTL}=\\alpha_{TM}\u2217\\beta_{eQTL}+\\epsilon_{M}$ , where $\\epsilon_{M}\u223cN(0,\\frac{1}{N_{mQTL}})$ and $N_{mQTL}=8000$ to reflect the sample size of the mQTL study used in this work. Simulations were also performed at $N_{mQTL}=90,000,$ to reflect sample size of potential future studies and $N_{mQTL}=1000$, $N_{mQTL}=2000$ and $N_{mQTL}=4000$, to compare the two approaches\u2019 power were the developed framework to be applied on existing smaller mQTL datasets. The total effect $\\alpha_{TP}$ can be expressed as $\\alpha_{TP}=\\alpha_{TM}*\\alpha_{MP}+ \\alpha_{direct}$ , where $\\alpha_{direct}$ represents the direct effect of the transcript on the phenotype and $\\alpha_{TM}*\\alpha_{MP}$ is the indirect effect mediated by the metabolite. Equivalently, $\\alpha_{TM}*\\alpha_{MP}=\\alpha_{TP}*(1-\u03c1)$ where $\u03c1=\\frac{\\alpha_{direct}}{\\alpha_{TP}}.$ To assess the ratio between the effect of the transcript on the metabolite and the effect of the metabolite on the phenotype (i.e., $\\sigma=\\alpha_{TM}/\\alpha_{MP}$), $\\alpha_{TM}$ can be expressed as $\\alpha_{TM}=\\sqrt{\\alpha_{TP}\u2217(1\u2212\u03c1)\u2217\\sigma}$ . Similarly, to estimate the effect of the metabolite on the phenotype, a metabolite with heritability $h_{M}^{2}=0.04$ (corresponding to the median of $h^{2}$ in the KORA +TwinsUK mQTL data) and $N_{IVs}=5$ (corresponding to the median number of IVs used in MWMR analyses) is considered. Effect size $\\beta_{mQTL}$ are from a normal distribution $\\beta_{mQTL}\u223cN(0,\\frac{h_{M}^{2}}{N_{IVs}})$. These quantities allowed to define $\\beta_{GWAS}$ as $\\beta_{GWAS}= \\sqrt{\\alpha_{TP}*1-\u03c1/\\sigma}* \\beta_{mQTL}+ \\epsilon_{P}$ , where $\\epsilon_{P}\u223cN(0,\\frac{1}{N_{GWAS}})$. Ranging $\u03c1$ and $\\sigma$ from \u20132 to 2 and from 0.1 and 10, respectively, we run each simulation for 500 transcripts measuring 80 metabolites at each run and performed TWMR and MWMR starting from above-described $\\beta_{eQTL}$ , $\\beta_{mQTL}$, and $\\beta_{GWAS}.$ For each MR analysis the power to detect a significant association as well as the difference in power between TWMR and the mediation analyses (i.e., $power_{TP}- power_{TM}*power_{MP}$) was calculated. Each specific scenario was repeated 10 times and the average difference in power across simulation was plotted as a heatmap.\n\n### Data and code availability\n\nAll data used in this study are publicly available. GWAS summary statistics for outcome traits measured in the UKB originate from the Neale Lab (http://www.nealelab.is/uk-biobank/). eQTL data originated from the eQTLGen Consortium (https://www.eqtlgen.org) and was published in V\u00f5sa et al., 2021. mQTL data originate from Shin et al., 2014, and are available at the Metabolomics GWAS Server (http://metabolomics.helmholtz-muenchen.de/gwas/). The HMDB was used to annotate metabolites and the v5.0 release from November 9, 2021, of the \u2018All proteins\u2019 file was downloaded to extract transcript-metabolite interactions (https://hmdb.ca/downloads). PubMed was used for the automated literature review (https://pubmed.ncbi.nlm.nih.gov). The UCSC Genome Browser (https://genome.ucsc.edu/) was used to visualize the FADS locus, while the GWAS Catalog was used to assess the number of reported GWAS signals in the region (https://www.ebi.ac.uk/gwas/). The STRING database was used for the enrichment analysis (https://string-db.org/). Produced data is available as Supplementary file 1 and Source Data. Code used to perform analyses is freely available at https://github.com/eleporcu/Gene_Metab_Pheno; (Porcu, 2022 copy archived at swh:1:rev:c6bff8d094e369ff0d399751fc85fcd5ea250134).\n",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "dc3c99f2-5c2b-40cd-a49d-5854fd415d05",
+      "submission_id": "9d18ef91-f25f-4e20-abf5-1dacd6a2978d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Evan Graehl Williams, https://ror.org/036x5ad56 University of Luxembourg Luxembourg\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81097.sa0](https://doi.org/10.7554/eLife.81097.sa0)\n\nThe reviewers found that your article brings important new methods and insight for how to analyze large, complex, multi-omic datasets in order to highlight specific molecular hypotheses for follow-up validation. As realistic/affordable sample sizes for population studies with omics data have recently exploded in size, this has raised the clear need for new or adapted statistical methods for best exploiting the increased statistical power. This work is compelling and we believe it should be of general interest to biologists and biostatisticians, and of particular interest to those working on (or those who could work on) large cohorts.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Evan Graehl Williams, https://ror.org/036x5ad56 University of Luxembourg Luxembourg\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81097.sa1](https://doi.org/10.7554/eLife.81097.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Exploiting the mediating role of the metabolome to unravel transcript-to-phenotype associations\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, including Evan Graehl Williams as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by David James as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nIn brief, besides the reviewer-specific comments, there was a common thread regarding significances of the findings (both in the statistical sense and in the colloquial sense) and description of the method. I also apologize for the delay in the reviews; it was a huge challenge to get reviewers in July and August, and we potentially may consult a third reviewer for the revision.\n\nReviewer #1 (Recommendations for the authors):\n\nAuwerx et al. have taken a new (or recent?) approach to mine large existing datasets of intermediary molecular data between GWAS and phenotype, with the aim of uncovering novel insight into the molecular mechanisms which lead a GWAS hit to have a phenotypic effect. The authors show that you can get additional insight by integrating multiple omics layers rather than analyzing only a single molecular type, including a handful of specific examples, e.g. that the effect of SNPs in ANKH on calcium are mediated by citrate. Such additional data is necessary because, as the authors' point out, while we have thousands of SNPs with significant impact on phenotypes of interest, we often don't know at all the mechanism, given that the majority of significant SNPs found through GWAS are in non-coding (and often intergenic) regions.\n\nScientific comments\n\n(1) It's not quite clear to me whether the authors have designed a new method or have applied a recently-developed method. I follow that the general approach uses MR across multiple data types and then merges the results. I did look at the Github repo (\"Gene_Metab_Pheno\") but I'm not enough of a mathematical bioinformatician to really judge the novelty there, as to whether this is a new method or application of relatively recent other methods.\n\n(2) The sample sizes are huge here since it is a meta-analysis, which means it's not quite clear to me how this method would scale to studies where there are not tens of thousands of individuals measured. It would be good to already have some general idea of what are the requirements in terms of power (sample size/target effect size / etc) for this approach \u2013 either added as a figure panel or two in this paper or just as text if the necessary parameters have already been explained elsewhere. I guess this comes back to the p >> n issue. I see for instance that the authors have 21k transcripts but they narrow it down to 7883 with {greater than or equal to} 3 IVs, used against their sample size of n = 7824 patients. Is this just convenient that n ~= p, or were the required parameters tweaked exactly so that you could reduce the number of transcripts down to more or less the sample size? You have a section on \"Power Analysis\" already which I appreciate, but reading through it again I can't tell what the minimum N would be. Or can I use an N = 500 I just have to use some other way to select only 500 (or whatever) transcripts? The power calculations go up to N = 90'000 which indeed is \"state-of-the-art sample sizes\" and would be unattainably large for all but the largest of international human cohorts, and perhaps a few large yeast or cell line studies.\n\n(3) Related, I wasn't quite clear if the data from TwinsUK and KORA were analyzed separately, or if they were somehow merged.\n\n(4) The authors mention \"overall, 83% of the involved genes were causally influencing the level of a single metabolite, while TMEM258 and FADS2 affected 12 metabolites\". Firstly I would mention that they affect 12 metabolites each just to be clear \u2013 although it's clearly annotated in Table S1. Second, and more relevantly, it would be nice to know in this table how many of these hits already are known in the literature. For instance I see the most significant hit is MAF1 with 5-oxoproline which doesn't immediately turn up anything (albeit I did not look very long). Hit #7, for SLC22A4 and isovalerylcarnitine does appear to be known in the literature ( http://www.metabolomix.com/rs272889-slc22a4-octn1-with-acylcarnitines/ ). Doing a decent literature analysis on all 257 of these hits in Table S1 might take a while (and/or require someone who knows how to do automated literature mining, which isn't trivial for this type of task especially given metabolite names like \"X-12696\") but even just some cherry-picking and/or (better) systematic analysis of the top 20-50 would be nice to see. It greatly improved my confidence in the findings when I just looked into two of your hits just now and found that one of them appears to be reasonably well known by literature.\n\n(5) The authors mention that only 33% of the transcript-metabolite-phenotype triplets were observed by TWMR, but that 91% of those observed by all are in concordant directionality. I guess that means for those with concordant directionality, if no significant association was observed in one layer, there was just no cross-layer comparison? i.e. that the 91% \"concordant directionality\" are only checking among the 33% of hits by TWMR that were also observed both within and across layer?\n\n(6) The authors mention no availability of trans-eQTL data; is that because the sample size is not sufficient to do a proper trans-eQTL analysis, or is it because of data privacy and an inability to get the precomputed trans-eQTLs from the eQTLGen Consortium due to some potential conflict (GDPR?).\n\n(7) Back to Table S1: There are 257 hits here, with 191 genes (out of 7883) and 154 metabolites (out of 453), meaning that 299 metabolites didn't even have one significant association?\n\nReviewer #2 (Recommendations for the authors):\n\n1. In general, the methodological approach should be explained in more detail. The study presents a novel MR-based approach and thus, the discussion of the method basics should be elaborated. This pertains to the following points:\n\n\u2013 In the definition of causal effects from molecular traits on the outcome (eq. (1)), the symbol \u03b2' is not explained. The method used for standardization of effect sizes is not elaborated.\n\n\u2013 For the multivariable MR analysis (equation not numbered), no causal effect statistic is specified. As discussed in the public review, no significance testing has been performed, but we strongly urge the authors to do so or give reasons for this lack of testing in the case of causal triplets.\n\n\u2013 In the description of the simulation analyses, it should be made more clear how the definition of \u03b2GWAS as a function of \u03b2mQTL is reached.\n\n\u2013 The authors should include a thorough discussion and a description of the method employed to evaluate the comparison between total and direct transcript-phenotype effects in Figure 2B.\n\n2. There is some apparent inconsistency in the interpretation of results from the empirical study: The abstract states that 67 transcript-phenotype effects present within the 206 causal triplets were missed in a TWMR-only analyses, while the paragraph \"Power Analysis\" states that only 67 triplets showed a significant effect estimated by TWMR. The text relating to Figure 2B states that 79 % (~163) of the triplets were estimated to be due to direct effects by the transcript only. This should be presented in a more consistent and clear manner.\n\n3. Plots for the distribution of the number of IVs per transcript/metabolite should be included (as supplemental figures).\n\n4. It would be interesting to discuss potential modes of mediation between transcripts, metabolites and phenotypes. For example, individual metabolites might integrate the effects of several transcripts. This would not result in triplets, but ultimately, networks of mediation as shown for the TMEM258, FADS1, FADS2 case. How would such cases be treated in a statistically sound manner?\n",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3962cf6b-f209-489f-9dfb-3d225322ac89",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C1",
+      "claim": "Genome-wide association studies (GWASs) have identified thousands of single nucleotide polymorphisms (SNPs) associated with a wide range of complex traits.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide association studies (GWASs) have identified thousands of single nucleotide polymorphisms (SNPs) associated with a wide range of complex traits (MacArthur et al., 2017; Visscher et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to MacArthur et al., 2017 and Visscher et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "1127d39b-fb05-4871-838a-3f64de4f312c",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C2",
+      "claim": "Most SNPs implicated by GWASs reside in non-coding regions of the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the path from GWAS to biology is not straightforward as most SNPs implicated by GWASs reside in non-coding regions of the genome (MacArthur et al., 2017) and do not directly inform on the functional mechanism through which variants exert their effect on phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to MacArthur et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "6502e22e-104a-47e9-9a4a-c8854a2c9c69",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C3",
+      "claim": "SNPs in non-coding regions do not directly inform on the functional mechanism through which variants exert their effect on phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the path from GWAS to biology is not straightforward as most SNPs implicated by GWASs reside in non-coding regions of the genome (MacArthur et al., 2017) and do not directly inform on the functional mechanism through which variants exert their effect on phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established understanding of non-coding variant interpretation",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "a3189daf-a581-4c95-ad5f-51d77fc64084",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C4",
+      "claim": "GWASs have been performed on gene expression identifying genetic variants influencing molecular traits, commonly referred to as molecular quantitative trait loci (molQTLs).",
+      "claim_type": "EXPLICIT",
+      "source": "GWASs have been performed on gene expression (V\u00f5sa et al., 2021), DNA methylation (Min et al., 2021), protein (Sun et al., 2018), and metabolite (Shin et al., 2014; Lotta et al., 2021) levels, identifying genetic variants influencing molecular traits, commonly referred to as molecular quantitative trait loci (molQTLs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies (V\u00f5sa et al., 2021; Min et al., 2021; Sun et al., 2018; Shin et al., 2014; Lotta et al., 2021)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "7fbcc357-6df4-4641-ac97-f05d7b9796fb",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C5",
+      "claim": "The large overlap between complex and molecular trait-associated variants suggests that integrating these data can help interpreting GWAS loci.",
+      "claim_type": "EXPLICIT",
+      "source": "The large overlap between complex and molecular trait-associated variants suggests that integrating these data can help interpreting GWAS loci (Vandiedonck, 2018; Taylor et al., 2019; Ongen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Vandiedonck, 2018; Taylor et al., 2019; Ongen et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "b577d566-cf13-40b4-88df-b14b64d8ca54",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C6",
+      "claim": "Gene expression is the best studied molecular phenotype due to large expression QTL (eQTL) studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Advances in the field of transcriptomics make gene expression the best studied molecular phenotype, thanks to the presence of large expression QTL (eQTL) studies (e.g., eQTLGen Consortium [V\u00f5sa et al., 2021] N>30,000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to eQTLGen Consortium (V\u00f5sa et al., 2021) with sample size N>30,000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "c427b5c3-f30a-4e61-857d-07b711b7817f",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C7",
+      "claim": "The eQTLGen Consortium has N>30,000 samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Advances in the field of transcriptomics make gene expression the best studied molecular phenotype, thanks to the presence of large expression QTL (eQTL) studies (e.g., eQTLGen Consortium [V\u00f5sa et al., 2021] N>30,000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated sample size for eQTLGen Consortium",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "e9a2fccf-158c-45f8-8ceb-3064749dbe71",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C8",
+      "claim": "Availability of large eQTL datasets fostered the development of summary statistic-based statistical approaches aiming at identifying associations between transcripts and complex traits.",
+      "claim_type": "EXPLICIT",
+      "source": "Availability of these datasets fostered the development of summary statistic-based statistical approaches aiming at identifying associations between transcripts and complex traits (Zhu et al., 2016; Porcu et al., 2019; Hormozdiari et al., 2014; Gusev et al., 2016), prioritizing genes from known GWAS loci for functional follow-up, and inferring the directionality of these relations (Porcu et al., 2019; Porcu et al., 2021b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple methodological papers (Zhu et al., 2016; Porcu et al., 2019; Hormozdiari et al., 2014; Gusev et al., 2016)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "19855d37-1d9a-4ce7-a8a5-9ddebc5c460b",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C9",
+      "claim": "The cascade of events that mediates the effect of genetic variants on complex traits involves more than one molecular trait.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the cascade of events that mediates the effect of genetic variants on complex traits involves more than one molecular trait.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on understanding of biological pathways and multi-omics relationships",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "390b8596-e3f3-4516-8fd2-75e1f86f3a63",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C10",
+      "claim": "Investigating whether molecular traits reside along the same causal pathway remains under-explored.",
+      "claim_type": "EXPLICIT",
+      "source": "Although approaches used for gene expression can be extended to other molecular data, investigating whether these molecular traits reside along the same causal pathway remains under-explored and only recently have studies applied colocalization and Mendelian randomization (MR) to methylation, gene expression, and protein levels data (Giambartolomei et al., 2018; Wu et al., 2018; Gleason et al., 2020; Sadler et al., 2022) and to a lesser extent to metabolic QTLs (mQTL) (Yin et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to recent studies (Giambartolomei et al., 2018; Wu et al., 2018; Gleason et al., 2020; Sadler et al., 2022; Yin et al., 2022)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "ad887fb9-9a2d-4e2d-8895-6c795a6a9ff2",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C11",
+      "claim": "Metabolites are often the final products of cellular regulatory processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Metabolites are often the final products of cellular regulatory processes and the most proximal omic layer to complex phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established understanding of cellular metabolism and molecular hierarchies",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "6fad807e-bb3a-41b8-9a35-c577b73432ce",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C12",
+      "claim": "Metabolites are the most proximal omic layer to complex phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Metabolites are often the final products of cellular regulatory processes and the most proximal omic layer to complex phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on understanding of biological information flow from genotype to phenotype",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "a40ac9fc-0189-461b-8ace-f2103c65cc0d",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C13",
+      "claim": "Metabolite levels represent the ultimate response of biological systems to genetic and environmental changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Their levels could thus represent the ultimate response of biological systems to genetic and environmental changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference from metabolites being final products of cellular processes",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "d0309b61-23c3-44ab-8b08-c4f8cce9c11a",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C14",
+      "claim": "The metabolic status of organisms reflects disease progression.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the metabolic status of organisms reflects disease progression, as metabolic disturbances can often be observed several years prior to the symptomatic phase (Shah et al., 2010; Wang et al., 2011; Sabatine et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Shah et al., 2010; Wang et al., 2011; Sabatine et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "ddc330fd-8a32-47e5-ab12-4e1623564f60",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C15",
+      "claim": "Metabolic disturbances can often be observed several years prior to the symptomatic phase of disease.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the metabolic status of organisms reflects disease progression, as metabolic disturbances can often be observed several years prior to the symptomatic phase (Shah et al., 2010; Wang et al., 2011; Sabatine et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Shah et al., 2010; Wang et al., 2011; Sabatine et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "f2c982cd-1953-4a4d-9356-a68a76dc52fc",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C16",
+      "claim": "Using metabolomics to identify early-stage biomarkers of complex phenotypes has gained increased interest.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, using metabolomics to identify early-stage biomarkers of complex phenotypes, such as prediabetes and COVID-19 susceptibility, has gained increased interest (Wang-Sattler et al., 2012; Julkunen et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Wang-Sattler et al., 2012; Julkunen et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "3da88daf-d364-4d5a-87bb-df364b11b169",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C17",
+      "claim": "Two-sample MR approaches using metabolites as single exposure have revealed biomarkers for several diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "While two-sample MR approaches using metabolites as single exposure have revealed biomarkers for several diseases (Qian et al., 2021; Lord et al., 2021; Porcu et al., 2021a), these analyses focused on the prediction of disease risk rather than on deciphering the mechanisms of discovered associations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Qian et al., 2021; Lord et al., 2021; Porcu et al., 2021a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "ab04dbb3-4dfd-4f03-93d0-71dd65c6fd1e",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C18",
+      "claim": "Previous metabolite MR analyses focused on the prediction of disease risk rather than on deciphering the mechanisms of discovered associations.",
+      "claim_type": "EXPLICIT",
+      "source": "While two-sample MR approaches using metabolites as single exposure have revealed biomarkers for several diseases (Qian et al., 2021; Lord et al., 2021; Porcu et al., 2021a), these analyses focused on the prediction of disease risk rather than on deciphering the mechanisms of discovered associations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on characterization of previous studies cited (Qian et al., 2021; Lord et al., 2021; Porcu et al., 2021a)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "067521a9-d746-4e6c-a9bd-9b515f0c16d0",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C19",
+      "claim": "Integrating transcriptomics with metabolomics data can provide insights into how metabolites are regulated.",
+      "claim_type": "EXPLICIT",
+      "source": "Integrating transcriptomics with metabolomics data can provide insights into how metabolites are regulated, elucidating targetable functional mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference about multi-omics integration",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "37adb440-3916-47ec-a4b8-575a2ef5a00e",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C20",
+      "claim": "The study developed a framework based on established MR methodology that hypothesizes a mediating role of the metabolome in the transcript-to-phenotype axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we develop a framework based on established MR methodology that hypothesizes a mediating role of the metabolome in the transcript-to-phenotype axis, with the primary exposure being defined as an upstream omic layer, namely gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the study's methodological approach",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "f3de41f0-3349-4eaf-b4f7-7e806c12cc63",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C21",
+      "claim": "The integrative MR analysis combines summary-level multi-omics (GWAS, eQTL, and mQTL) data to compute the indirect effect of gene expression on complex traits mediated by metabolites in three steps.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, our integrative MR analysis combines summary-level multi-omics (i.e., GWAS, eQTL, and mQTL) data to compute the indirect effect of gene expression on complex traits mediated by metabolites in three steps (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of the study's analytical approach with reference to Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "c3bff659-4a82-4adc-b26c-62c20f48b20c",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C22",
+      "claim": "The study identified 216 transcript-metabolite-trait causal triplets involving 26 medically relevant phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 216 transcript-metabolite-trait causal triplets involving 26 medically relevant phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Primary finding from the study's analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "351d5712-2f32-4c0b-ba86-2f90bd2f302f",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C23",
+      "claim": "58% of the identified associations were missed by classical transcriptome-wide MR.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these associations, 58% were missed by classical transcriptome-wide MR, which only uses gene expression and GWAS data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative comparison of methods from the study's results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "823a0efb-d9c3-48cb-b281-f47bd558fab0",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C24",
+      "claim": "Classical transcriptome-wide MR only uses gene expression and GWAS data.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these associations, 58% were missed by classical transcriptome-wide MR, which only uses gene expression and GWAS data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the classical TWMR method",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "5d8600b9-02ad-4042-af2d-279ad14ad255",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C25",
+      "claim": "The study identified a causal relationship between ANKH and calcium levels mediated by citrate levels.",
+      "claim_type": "EXPLICIT",
+      "source": "This allowed the identification of biologically relevant pathways, such as between ANKH and calcium levels mediated by citrate levels and SLC6A12 and serum creatinine through modulation of the levels of the renal osmolyte betaine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specific finding from the study's analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "93691999-52c4-43b5-8f9c-38cde67854ad",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C26",
+      "claim": "The study identified a causal relationship between SLC6A12 and serum creatinine through modulation of the levels of the renal osmolyte betaine.",
+      "claim_type": "EXPLICIT",
+      "source": "This allowed the identification of biologically relevant pathways, such as between ANKH and calcium levels mediated by citrate levels and SLC6A12 and serum creatinine through modulation of the levels of the renal osmolyte betaine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specific finding from the study's analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "50ddebb1-eb68-4fe1-b82c-22155d5c3551",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C27",
+      "claim": "The signals missed by transcriptome-wide MR are found thanks to the increase in power conferred by integrating multiple omics layers.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the signals missed by transcriptome-wide MR are found, thanks to the increase in power conferred by integrating multiple omics layer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explanation of methodological advantage from the study",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "49b0b8ae-c994-4ca4-9d91-dcd3597a9675",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C28",
+      "claim": "With larger molecular QTL studies and in case of mediated effects, the multi-omics MR framework outperforms classical MR approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulation analyses show that with larger molecular QTL studies and in case of mediated effects, our multi-omics MR framework outperforms classical MR approaches designed to detect causal relationships between single molecular traits and complex phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Finding from simulation analyses conducted in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "7bcd84c8-04dc-4187-a525-f5cfdd569489",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C29",
+      "claim": "The study applied univariable MR to identify metabolites whose levels are causally influenced by transcript levels in whole blood.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied univariable MR to identify metabolites whose levels are causally influenced by transcript levels in whole blood (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of the study's analytical approach",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "95c3d942-c3b3-4556-a3c1-92c1c6375f7e",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C30",
+      "claim": "Summary statistics for cis-eQTLs stem from the eQTLGen Consortium meta-analysis of 19,942 transcripts in 31,684 individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Summary statistics for cis-eQTLs stem from the eQTLGen Consortium meta-analysis of 19,942 transcripts in 31,684 individuals (V\u00f5sa et al., 2021), while summary statistics for mQTLs originate from a meta-analysis of 453 metabolites in 7824 individuals from two independent European cohorts: TwinsUK (N = 6056) and KORA (N = 1768) (Shin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data sources used in the study with citation to V\u00f5sa et al., 2021",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "4da97a6a-9875-4630-ba01-b27ec89a4641",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C31",
+      "claim": "Summary statistics for mQTLs originate from a meta-analysis of 453 metabolites in 7824 individuals from two independent European cohorts: TwinsUK (N = 6056) and KORA (N = 1768).",
+      "claim_type": "EXPLICIT",
+      "source": "Summary statistics for cis-eQTLs stem from the eQTLGen Consortium meta-analysis of 19,942 transcripts in 31,684 individuals (V\u00f5sa et al., 2021), while summary statistics for mQTLs originate from a meta-analysis of 453 metabolites in 7824 individuals from two independent European cohorts: TwinsUK (N = 6056) and KORA (N = 1768) (Shin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data sources used in the study with citation to Shin et al., 2014",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "d1764d45-c23f-4fdd-aa5e-d6db53d53d47",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C32",
+      "claim": "The analysis was restricted to 7884 transcripts with \u22653 instrumental variables.",
+      "claim_type": "EXPLICIT",
+      "source": "After selecting SNPs included in both the eQTL and mQTL studies, our analysis was restricted to 7884 transcripts with \u22653 instrumental variables (IVs) (see Methods, Figure 1\u2014figure supplement 1A) and 242 metabolites with an identifier in the Human Metabolome Database (HMDB) (Wishart et al., 2022) (see Methods, Supplementary file 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of filtering criteria applied in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "6574fa18-0e7c-4ecb-8962-387fc4e3c827",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C33",
+      "claim": "The analysis was restricted to 242 metabolites with an identifier in the Human Metabolome Database (HMDB).",
+      "claim_type": "EXPLICIT",
+      "source": "After selecting SNPs included in both the eQTL and mQTL studies, our analysis was restricted to 7884 transcripts with \u22653 instrumental variables (IVs) (see Methods, Figure 1\u2014figure supplement 1A) and 242 metabolites with an identifier in the Human Metabolome Database (HMDB) (Wishart et al., 2022) (see Methods, Supplementary file 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of filtering criteria applied in the study with citation to Wishart et al., 2022",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "749de5b1-08a2-4cbe-972f-ec1513cc8e5b",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C34",
+      "claim": "The study detected 96 genes whose transcript levels causally impacted 75 metabolites, resulting in 133 unique transcript-metabolite associations.",
+      "claim_type": "EXPLICIT",
+      "source": "By testing each gene for association with the 242 metabolites, we detected 96 genes whose transcript levels causally impacted 75 metabolites, resulting in 133 unique transcript-metabolite associations (FDR 5% considering all 1,907,690 instrumentable gene-metabolite pairs; Supplementary file 1b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Primary finding from the transcript-to-metabolite analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "36ff2ade-aa66-41a0-9c32-eee59bcfd555",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C35",
+      "claim": "86% of involved genes were causally influencing the level of a single metabolite.",
+      "claim_type": "EXPLICIT",
+      "source": "Most involved genes (86%; 83/96) were causally influencing the level of a single metabolite, with some notable exceptions acting as mQTL hubs, such as TMEM258 and FADS2 both affecting the same 11 metabolites, followed by FADS1 affecting a subset of six metabolites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative characterization of transcript-metabolite relationships from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "9afdc920-99c0-42ca-9610-51d852cd37d4",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C36",
+      "claim": "TMEM258 and FADS2 both affect the same 11 metabolites.",
+      "claim_type": "EXPLICIT",
+      "source": "Most involved genes (86%; 83/96) were causally influencing the level of a single metabolite, with some notable exceptions acting as mQTL hubs, such as TMEM258 and FADS2 both affecting the same 11 metabolites, followed by FADS1 affecting a subset of six metabolites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specific finding from the study's analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "eb4f6905-2326-43c4-ae42-a09bf885468c",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C37",
+      "claim": "FADS1 affects a subset of six metabolites.",
+      "claim_type": "EXPLICIT",
+      "source": "Most involved genes (86%; 83/96) were causally influencing the level of a single metabolite, with some notable exceptions acting as mQTL hubs, such as TMEM258 and FADS2 both affecting the same 11 metabolites, followed by FADS1 affecting a subset of six metabolites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specific finding from the study's analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "0e39bb8d-6dd4-4548-8383-9dcdb44f366a",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C38",
+      "claim": "Only 5 (3.8%) of the 133 transcript-metabolite associations were reported in HMDB.",
+      "claim_type": "EXPLICIT",
+      "source": "While only 5 (3.8%) of the 133 associations were reported in HMDB, an automated literature review (see Methods) identified a match for 22 (16.5%) of the identified transcript-metabolite pairs (Supplementary file 1b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from literature validation analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "18d28e09-dbba-4e4e-beff-5d83cf4ca007",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C39",
+      "claim": "An automated literature review identified a match for 22 (16.5%) of the identified transcript-metabolite pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "While only 5 (3.8%) of the 133 associations were reported in HMDB, an automated literature review (see Methods) identified a match for 22 (16.5%) of the identified transcript-metabolite pairs (Supplementary file 1b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from literature validation analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "d715ee9f-17ea-4d66-8767-aa5b4b4ab215",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C40",
+      "claim": "Univariable metabolome-wide MR was used to identify causal relationships between 48 metabolites with \u22653 IVs and 28 complex phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Univariable metabolome-wide MR (MWMR; Figure 1A) was used to identify causal relationships between 48 metabolites with \u22653 IVs (Figure 1\u2014figure supplement 1B) and 28 complex phenotypes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of the metabolite-to-phenotype analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "4987bf37-5b4d-45c0-8e79-9826c25193ca",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C41",
+      "claim": "The 28 complex phenotypes include a wide range of anthropometric traits, cardiovascular assessments, and blood biomarkers.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter include a wide range of anthropometric traits, cardiovascular assessments, and blood biomarkers, whose summary statistics originate from the UK Biobank (UKB) (Bycroft et al., 2018;Supplementary file 1c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of phenotypes analyzed with citation to Bycroft et al., 2018",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "68c1f3c6-307f-46a0-abba-9d41a7318c65",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C42",
+      "claim": "Summary statistics for the 28 complex phenotypes originate from the UK Biobank (UKB).",
+      "claim_type": "EXPLICIT",
+      "source": "The latter include a wide range of anthropometric traits, cardiovascular assessments, and blood biomarkers, whose summary statistics originate from the UK Biobank (UKB) (Bycroft et al., 2018;Supplementary file 1c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data source with citation to Bycroft et al., 2018",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "c5bcb2af-4f52-4843-a91f-154124869ca4",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C43",
+      "claim": "34 metabolites were associated with at least one phenotype, resulting in 132 unique metabolite-phenotype associations.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, 34 metabolites were associated with at least one phenotype (FDR 5% considering all 1344 metabolite-phenotype pairs), resulting in 132 unique metabolite-phenotype associations (Supplementary file 1d).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Primary finding from the metabolite-to-phenotype analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "590e66e5-5019-4e18-ae13-ed152965ebb4",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C44",
+      "claim": "Univariable transcriptome-wide MR was applied to identify associations between expression levels of 10,435 transcripts with \u22653 IVs and the same 28 UKB phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied univariable transcriptome-wide MR (TWMR [Porcu et al., 2019] Figure 1B) to identify associations between expression levels of 10,435 transcripts from the eQTLGen Consortium with \u22653 IVs (Figure 1\u2014figure supplement 1C) measured in both exposure and outcome datasets and the same 28 UKB phenotypes described in the previous section (Supplementary file 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of the transcript-to-phenotype analysis with citation to Porcu et al., 2019",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "692d8073-283a-4c70-b0f5-e93dfbdec368",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C45",
+      "claim": "5140 transcripts associated with at least one phenotype, resulting in 13,141 unique transcript-phenotype associations.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 5140 transcripts associated with at least one phenotype (FDR 5% considering all 292,170 gene-phenotype pairs) resulting in 13,141 unique transcript-phenotype associations (Supplementary file 1e).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Primary finding from the transcript-to-phenotype analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "fbe970e5-48a2-43c6-82fd-af2d02d4d2f2",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C46",
+      "claim": "The study combined the 133 transcript-metabolite and 132 metabolite-trait associations to pinpoint 216 transcript-metabolite-phenotype causal triplets.",
+      "claim_type": "EXPLICIT",
+      "source": "We combined the 133 transcript-metabolite (FDR \u22645%) and 132 metabolite-trait (FDR \u22645%) associations to pinpoint 216 transcript-metabolite-phenotype causal triplets (FDR = 1\u20130.952 = 9.75%) (Supplementary file 1f).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the mediation analysis approach and its results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "0a31f8d5-c4c6-4627-9a9a-bac4dcd2ff90",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C47",
+      "claim": "Among the 37 triplets for which the transcript and metabolite had previously been linked through automated literature review, none remained after incorporating a third term for the phenotype in the search.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 37 triplets for which the transcript and metabolite had previously been linked through automated literature review, none remained after incorporating a third term for the phenotype in the search and manually removing abstracts for which the search terms were used in an erroneous context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from literature validation analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "24ba7619-87fc-41df-bf2d-b3769a8536e6",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C48",
+      "claim": "Relaxing the search criteria by omitting the metabolite term, 13/37 (35%) triplets returned at least one match for the gene-trait association.",
+      "claim_type": "EXPLICIT",
+      "source": "Relaxing the search criteria by omitting the metabolite term, 13/37 (35%) triplets returned at least one match for the gene-trait association.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from literature validation analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "09a05ded-04ac-468b-8caf-564434f4e94a",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C52",
+      "claim": "The TMEM258/FADS1/FADS2 region has >6000 associations reported in the GWAS Catalog as of May 2022.",
+      "claim_type": "EXPLICIT",
+      "source": "These results align with the known pleiotropy of the region (i.e., >6000 associations reported in the GWAS Catalog as of May 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "External validation from GWAS Catalog database",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "a5704578-372a-4144-a83d-352a07fad3dd",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C53",
+      "claim": "Involved metabolites are complex lipids synthesized from arachidonic acid.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, involved metabolites are complex lipids synthesized from arachidonic acid, a product of the rate-limiting enzymes encoded by FADS1 and FADS2 (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on established biochemical knowledge of lipid metabolism",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "f4b795e7-d98a-4620-a793-07ef5352ff25",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C54",
+      "claim": "Arachidonic acid is a product of the rate-limiting enzymes encoded by FADS1 and FADS2.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, involved metabolites are complex lipids synthesized from arachidonic acid, a product of the rate-limiting enzymes encoded by FADS1 and FADS2 (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on established biochemical knowledge of fatty acid desaturase function",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "410388ff-08ff-4ea0-9f68-585cbde19119",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C55",
+      "claim": "Polymorphisms affecting the expression of FADS1 and FADS2 were shown to associate with the levels of over 50 complex lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, polymorphisms affecting the expression of these genes were shown to associate with the levels of over 50 complex lipids, including the ones identified by our study (Reynolds et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Reynolds et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "c50fdf4d-fef3-4d0f-9d7a-659b690c99dc",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C56",
+      "claim": "Only 42% (90/216) of the causal triplets showed a significant total transcript-to-phenotype effect estimated by TWMR.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, only 42% (90/216) of the causal triplets showed a significant total transcript-to-phenotype effect (i.e., estimated by TWMR), suggesting that the method lacks power under current settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative comparison of methods from the study's results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "d3248a9e-5883-4b77-8b6f-2410da75b466",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C57",
+      "claim": "TWMR lacks power under current settings.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, only 42% (90/216) of the causal triplets showed a significant total transcript-to-phenotype effect (i.e., estimated by TWMR), suggesting that the method lacks power under current settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the observation that 58% of triplets were not detected by TWMR",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "99510bbe-248a-427b-817a-6cf38ca89da0",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C63",
+      "claim": "The gain in power of mediation analysis over TWMR decreases with decreasing mQTL dataset sample sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with the increased power of mediation analysis with larger mQTL datasets, the gain in power of mediation analysis over TWMR decreases with decreasing mQTL dataset sample sizes (ranging between N = 1000 and N = 4000; Figure 4\u2014figure supplement 2), indicating that our approach is dependent on large sample sizes to reach its full potential.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Finding from simulation analyses with varying sample sizes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "368a6a85-5e35-4c23-b2e1-00e1972fdf54",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C64",
+      "claim": "The mediation analysis approach is dependent on large sample sizes to reach its full potential.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with the increased power of mediation analysis with larger mQTL datasets, the gain in power of mediation analysis over TWMR decreases with decreasing mQTL dataset sample sizes (ranging between N = 1000 and N = 4000; Figure 4\u2014figure supplement 2), indicating that our approach is dependent on large sample sizes to reach its full potential.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Conclusion from simulation analyses with varying sample sizes",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "da3215c3-a532-414d-abe0-f4f1e7693bca",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C65",
+      "claim": "The 126 triplets that were not identified through TWMR represent putative new causal relations.",
+      "claim_type": "EXPLICIT",
+      "source": "The 126 triplets that were not identified through TWMR due to power issues represent putative new causal relations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the comparison of methods",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "727d2192-7c65-4e96-b7c7-98db6f043111",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C66",
+      "claim": "48 publications were identified through automated literature review for the association between ANKH and calcium levels.",
+      "claim_type": "EXPLICIT",
+      "source": "This is well illustrated by a proof-of concept example involving ANKH [MIM: 605145] and calcium levels, for which 48 publications were identified through automated literature review (Supplementary file 1f).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from literature validation analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "01e01393-528c-4406-9d86-5d02e3ff65bd",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C70",
+      "claim": "Mutations in ANKH have been associated with several rare mineralization disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in ANKH have been associated with several rare mineralization disorders [MIM: 123000, 118600] (Williams, 2016) due to the gene encoding a transmembrane protein that channels inorganic pyrophosphate to the extracellular matrix, where at low concentrations it inhibits mineralization (Ho et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Williams, 2016 and Ho et al., 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "69bbbd9f-851f-4670-aca8-dab1a02497a4",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C71",
+      "claim": "ANKH encodes a transmembrane protein that channels inorganic pyrophosphate to the extracellular matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in ANKH have been associated with several rare mineralization disorders [MIM: 123000, 118600] (Williams, 2016) due to the gene encoding a transmembrane protein that channels inorganic pyrophosphate to the extracellular matrix, where at low concentrations it inhibits mineralization (Ho et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ho et al., 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "bd55bc1f-03c8-4825-aaae-8b940c4d44bb",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C72",
+      "claim": "Inorganic pyrophosphate at low concentrations inhibits mineralization.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in ANKH have been associated with several rare mineralization disorders [MIM: 123000, 118600] (Williams, 2016) due to the gene encoding a transmembrane protein that channels inorganic pyrophosphate to the extracellular matrix, where at low concentrations it inhibits mineralization (Ho et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ho et al., 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "06b22990-727c-42e3-b008-9362c2f5fdcf",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C73",
+      "claim": "A study proposed that ANKH exports ATP to the extracellular space, along with citrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, a study proposed that ANKH instead exports ATP to the extracellular space (where it is then rapidly converted to inorganic pyrophosphate), along with citrate (Szeri et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Szeri et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "c2019578-e724-4792-ab71-621d37993c9d",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C74",
+      "claim": "Citrate has a high binding affinity for calcium.",
+      "claim_type": "EXPLICIT",
+      "source": "Citrate has a high binding affinity for calcium and influences its bioavailability by complexing calcium-phosphate during extracellular matrix mineralization and releasing calcium during bone resorption (Granchi et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Granchi et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "03561cea-b6db-4eef-9e9f-988a15fba7c9",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C75",
+      "claim": "Citrate influences calcium bioavailability by complexing calcium-phosphate during extracellular matrix mineralization and releasing calcium during bone resorption.",
+      "claim_type": "EXPLICIT",
+      "source": "Citrate has a high binding affinity for calcium and influences its bioavailability by complexing calcium-phosphate during extracellular matrix mineralization and releasing calcium during bone resorption (Granchi et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Granchi et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "b44559c1-23cb-4e76-b70d-f613aa81d123",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C76",
+      "claim": "The study's data support the role of ANKH in calcium homeostasis through regulation of citrate levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our data support the role of ANKH in calcium homeostasis through regulation of citrate levels, connecting previously established independent links into a causal triad.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the study's findings and existing literature",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "30153ebd-c545-4f07-8e02-8eeadbb11e8b",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C81",
+      "claim": "Betaine acts as a protective renal osmolyte.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation is particularly interesting given that betaine acts as a protective renal osmolyte whose plasma and kidney tissue concentration were found to be downregulated in renal ischemia/reperfusion injury (Jouret et al., 2016; Wei et al., 2014) and whose urine levels have been proposed as a biomarker for chronic kidney disease progression (Gil et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Jouret et al., 2016; Wei et al., 2014; Gil et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "c2ea9337-74c8-435d-bce2-8f7a70cb92b8",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C82",
+      "claim": "Betaine plasma and kidney tissue concentration were found to be downregulated in renal ischemia/reperfusion injury.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation is particularly interesting given that betaine acts as a protective renal osmolyte whose plasma and kidney tissue concentration were found to be downregulated in renal ischemia/reperfusion injury (Jouret et al., 2016; Wei et al., 2014) and whose urine levels have been proposed as a biomarker for chronic kidney disease progression (Gil et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Jouret et al., 2016; Wei et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "fcb42e8a-32c6-462a-b75c-dd319bfb416d",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C83",
+      "claim": "Betaine urine levels have been proposed as a biomarker for chronic kidney disease progression.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation is particularly interesting given that betaine acts as a protective renal osmolyte whose plasma and kidney tissue concentration were found to be downregulated in renal ischemia/reperfusion injury (Jouret et al., 2016; Wei et al., 2014) and whose urine levels have been proposed as a biomarker for chronic kidney disease progression (Gil et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gil et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "c3771c41-757c-49d0-b013-de330facad5f",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C84",
+      "claim": "Renal conditions are commonly monitored through serum creatinine levels.",
+      "claim_type": "EXPLICIT",
+      "source": "As both renal conditions are commonly monitored through serum creatinine levels, our data support the critical role of osmolyte homeostasis in renal health.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established clinical practice knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "eabbba4e-e2be-47d4-8874-c337544a6298",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C85",
+      "claim": "The study's data support the critical role of osmolyte homeostasis in renal health.",
+      "claim_type": "EXPLICIT",
+      "source": "As both renal conditions are commonly monitored through serum creatinine levels, our data support the critical role of osmolyte homeostasis in renal health.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the study's findings and existing knowledge",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "0b21e9b8-3874-465d-8b42-857b6fc53583",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C86",
+      "claim": "While some detected associations were previously reported, a large fraction, especially among the triplets, appears to be novel.",
+      "claim_type": "EXPLICIT",
+      "source": "Our automated literature review indicates that while some detected associations were previously reported, a large fraction, especially among the triplets, appears to be novel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from literature validation analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "a0948991-0dda-4b9a-8356-d1d05514435a",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C87",
+      "claim": "The number of previously reported associations is likely underestimated as the automated approach does not account for all synonyms of a given feature.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that the number of previously reported associations is likely underestimated as our approach does not account for all synonyms of a given feature and requires the terms to appear in the title or abstract of the publication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Acknowledgment of methodological limitation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "a8b4ae1b-6da8-4c5e-bb4d-7cd10c22b2c6",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C88",
+      "claim": "Among the 90 signals that were also identified through TWMR, 93% showed a directionally concordant effect between the transcript-to-phenotype, transcript-to-metabolite, and metabolite-to-phenotype estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, among the 90 signals that were also identified through TWMR, 93% showed a directionally concordant effect between the transcript-to-phenotype, transcript-to-metabolite, and metabolite-to-phenotype estimates (i.e., sign of product of the transcript-to-metabolite and metabolite-to-phenotype effects agrees with the sign of the transcript-to-phenotype effect).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative validation result from the study's analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "e881216c-2e95-43c3-9a92-6f1f9b2a6947",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C89",
+      "claim": "Dissection of causal effects provides clues as to the molecular mechanism through which involved genes modify complex phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "In these situations, dissection of causal effects provides clues as to the molecular mechanism through which involved genes modify complex phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion about the utility of the method",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "4abc4750-0917-4c08-8206-99da2d0c6c91",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C90",
+      "claim": "While transcript levels of TMEM258/FADS1/FADS2 affected eleven metabolites, three complex lipids were highlighted as strong molecular mediators of the transcript-to-phenotype effects.",
+      "claim_type": "EXPLICIT",
+      "source": "While transcript levels of these genes affected eleven metabolites, three complex lipids were highlighted as strong molecular mediators of the transcript-to-phenotype effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specific finding from the study's analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "f03abd49-58fd-4224-bc99-e315866f4bc8",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C91",
+      "claim": "A large fraction of detected mediations involves genes encoding metabolic enzymes or transporters/channels.",
+      "claim_type": "EXPLICIT",
+      "source": "As illustrated through the selected examples, a large fraction of detected mediations involves genes encoding metabolic enzymes or transporters/channels, with an enrichment for 'secondary active transmembrane transporter activity', for example (GO:0015291; FDR=0.021; background: 7884 genes with \u22653 IVs assessed through TWMR; STRING database).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Finding from enrichment analysis conducted in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "4d54059b-bc68-4e75-ab15-e561ade96ec5",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C92",
+      "claim": "There is an enrichment for 'secondary active transmembrane transporter activity' (GO:0015291; FDR=0.021) among genes involved in detected mediations.",
+      "claim_type": "EXPLICIT",
+      "source": "As illustrated through the selected examples, a large fraction of detected mediations involves genes encoding metabolic enzymes or transporters/channels, with an enrichment for 'secondary active transmembrane transporter activity', for example (GO:0015291; FDR=0.021; background: 7884 genes with \u22653 IVs assessed through TWMR; STRING database).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical result from enrichment analysis using STRING database",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "ad645b42-8cac-48ac-9951-4ab945d26a1e",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C93",
+      "claim": "The most likely effector genes of mQTLs are enriched for pathway-relevant enzymes and transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "Matching the finding that the most likely effector genes of mQTLs are enriched for pathway-relevant enzymes and transporters (Smith et al., 2022), these results are not surprising given that the proteins encoded by these genes directly interact with metabolites, making it more likely that the effect of changes in their expression is mediated by metabolites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Smith et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "a276b21c-0bec-444f-a16f-9bf142991142",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C94",
+      "claim": "Proteins encoded by metabolic enzymes and transporters directly interact with metabolites, making it more likely that the effect of changes in their expression is mediated by metabolites.",
+      "claim_type": "EXPLICIT",
+      "source": "Matching the finding that the most likely effector genes of mQTLs are enriched for pathway-relevant enzymes and transporters (Smith et al., 2022), these results are not surprising given that the proteins encoded by these genes directly interact with metabolites, making it more likely that the effect of changes in their expression is mediated by metabolites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference based on biochemical knowledge",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "92d80966-6353-46e7-9590-adb7e9d9bf92",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C95",
+      "claim": "Interpretation of discovered mediations is limited by the lack of spatial resolution of the mQTL data.",
+      "claim_type": "EXPLICIT",
+      "source": "While our method is well suited to detect such effects, interpretation of discovered mediations is limited by the lack of spatial resolution of the mQTL data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Acknowledgment of methodological limitation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "5b7641f5-4d45-4c00-863d-e67dea236f0b",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C96",
+      "claim": "The observation that 77% of the transcript's effect on the phenotype is not mediated by metabolites suggests that either true direct effects are frequent or that other unassessed metabolites or molecular layers play a crucial role in mediation.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that 77% of the transcript's effect on the phenotype is not mediated by metabolites suggests that either true direct effects are frequent or that other unassessed metabolites or molecular layers (e.g., proteins, post-translational modifications, etc.) play a crucial role in mediation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of the study's findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "cccd2416-704f-4556-a193-300170975f78",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C97",
+      "claim": "In the presence of unmeasured mediators or measured mediators without genetic instruments, mediation estimates are lower bounds of the total existing mediation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is to note that in the presence of unmeasured mediators or measured mediators without genetic instruments, our mediation estimates are lower bounds of the total existing mediation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Acknowledgment of methodological limitation based on statistical theory",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "be616d70-6a22-4dd6-babf-4a7c2bbfc905",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C98",
+      "claim": "Unmeasured mediators sharing genetic instruments with the measured ones can modify result interpretation as some of the observed mediators may simply be correlates of the true underlying mediators.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, unmeasured mediators sharing genetic instruments with the measured ones can modify result interpretation as some of the observed mediators may simply be correlates of the true underlying mediators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Acknowledgment of methodological limitation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "b9e9865e-704c-49b0-bc40-c60dd694ab73",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C99",
+      "claim": "Metabolic networks may harbor particularly large number of genetically correlated metabolite species.",
+      "claim_type": "EXPLICIT",
+      "source": "While this is a limitation of all MR methods, metabolic networks may harbor particularly large number of genetically correlated metabolite species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on understanding of metabolic network structure",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "9a2f4100-bbdd-425b-bd7d-7b443c273225",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C100",
+      "claim": "Owing to linkage disequilibrium and regulatory variants affecting multiple genes, transcripts from adjacent genes might appear to be involved in the same signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, owing to linkage disequilibrium and regulatory variants affecting multiple genes, transcripts from adjacent genes might appear to be involved in the same signals, as exemplified with the TMEM258/FADS1/FADS2 locus (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Acknowledgment of methodological limitation with example from the study",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "4a5c92f8-7eb0-47e0-96b1-774f5d074136",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C101",
+      "claim": "Complex phenotypes can have a stronger impact on gene expression than the opposite.",
+      "claim_type": "EXPLICIT",
+      "source": "Another consideration is that complex phenotypes can have a stronger impact on gene expression than the opposite (Porcu et al., 2021b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Porcu et al., 2021b",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "baa64237-deea-412a-88c0-43f002355d81",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C102",
+      "claim": "Due to the lack of genome-wide trans-eQTL association summary statistics, the method does not investigate reverse causality on metabolites and gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the lack of genome-wide trans-eQTL association summary statistics, our method does not investigate reverse causality on metabolites and gene expression, nor the role of metabolites as regulators of gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Acknowledgment of methodological limitation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "ccd33fa4-8eb8-4dd3-aa04-33dd0c3465cf",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C103",
+      "claim": "Metabolites might integrate the effect of several transcripts before affecting complex phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Metabolites might also integrate the effect of several transcripts (i.e., multiple transcripts causally impact the levels of the same metabolite) before affecting complex phenotypes (Supplementary file 1g) or multiple metabolites may jointly mediate the impact of a single transcript.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about potential biological scenarios",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "9c5a1b29-75de-4554-94c7-5fe3d308a294",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C104",
+      "claim": "Multiple metabolites may jointly mediate the impact of a single transcript.",
+      "claim_type": "EXPLICIT",
+      "source": "Metabolites might also integrate the effect of several transcripts (i.e., multiple transcripts causally impact the levels of the same metabolite) before affecting complex phenotypes (Supplementary file 1g) or multiple metabolites may jointly mediate the impact of a single transcript.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about potential biological scenarios",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "e2cf3e12-d8ad-4266-8711-d44db208454f",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C105",
+      "claim": "The study developed a modular MR framework that has increased power over classical MR approaches to detect causal transcript-to-phenotype relationships when these are mediated by alteration of metabolite levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, we developed a modular MR framework that has increased power over classical MR approaches to detect causal transcript-to-phenotype relationships when these are mediated by alteration of metabolite levels and is likely to become increasingly powerful upon release of larger molQTL datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion from the study's findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "1ac4f6e6-6f10-4749-b5e1-fcd981633164",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "claim_id": "C106",
+      "claim": "The framework is likely to become increasingly powerful upon release of larger molQTL datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, we developed a modular MR framework that has increased power over classical MR approaches to detect causal transcript-to-phenotype relationships when these are mediated by alteration of metabolite levels and is likely to become increasingly powerful upon release of larger molQTL datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Prediction based on simulation results",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c35fa538-3d8a-4119-a288-9f2f3fe52bad",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the background context that GWASs have identified thousands of SNPs associated with complex traits, most residing in non-coding regions that don't directly inform on functional mechanisms. Molecular QTL studies (eQTL, mQTL, etc.) have been performed, and the overlap between complex and molecular trait-associated variants suggests that integrating these data can help interpret GWAS loci.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 are well-supported by appropriate citations to established literature (MacArthur et al., 2017; Visscher et al., 2017; V\u00f5sa et al., 2021; and others). These claims represent accepted knowledge in the field and provide appropriate context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "7bf2334c-a9a0-48fe-bf9f-d4726d886338",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Gene expression is the best studied molecular phenotype due to large eQTL studies like the eQTLGen Consortium (N>30,000), and the availability of these datasets has fostered development of summary statistic-based approaches for identifying transcript-trait associations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C8 are supported by citation to the eQTLGen Consortium study (V\u00f5sa et al., 2021) and multiple methodological papers. The sample size and methodological developments are well-documented in the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "b7f88777-5c6f-4f46-b7c9-3da7034165f1",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The cascade of events mediating genetic variant effects on complex traits involves multiple molecular traits, but investigating whether these molecular traits reside along the same causal pathway remains under-explored.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10 are supported by citations to recent studies applying colocalization and MR to multi-omics data (Giambartolomei et al., 2018; Wu et al., 2018; Gleason et al., 2020; Sadler et al., 2022; Yin et al., 2022), establishing the gap in knowledge that this study addresses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "8713244f-7c70-416c-baac-0ee0617b2be3",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Metabolites are the final products of cellular regulatory processes and the most proximal omic layer to complex phenotypes, representing the ultimate response to genetic and environmental changes. Metabolic disturbances can be observed years before disease symptoms, making metabolomics valuable for identifying early-stage biomarkers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C16 are supported by appropriate citations (Shah et al., 2010; Wang et al., 2011; Sabatine et al., 2005; Wang-Sattler et al., 2012; Julkunen et al., 2021) and represent established understanding of metabolite biology and its relationship to disease.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "43ec4f41-7f5e-4bd6-91af-f1d09dcc455b",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Previous two-sample MR approaches using metabolites as single exposures have revealed disease biomarkers but focused on disease risk prediction rather than mechanistic understanding. Integrating transcriptomics with metabolomics can provide insights into metabolite regulation and elucidate targetable functional mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C19 are supported by citations to prior MR studies (Qian et al., 2021; Lord et al., 2021; Porcu et al., 2021a) and establish the rationale for the current study's mechanistic focus.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "60aef696-2890-4a1b-9ae0-cd5333b9d9c1",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The study developed a multi-omics MR framework that combines summary-level GWAS, eQTL, and mQTL data in three steps to compute the indirect effect of gene expression on complex traits mediated by metabolites. The analysis used eQTL data from eQTLGen (19,942 transcripts, 31,684 individuals) and mQTL data from TwinsUK/KORA (453 metabolites, 7,824 individuals), restricting analysis to 7,884 transcripts with \u22653 IVs and 242 metabolites with HMDB identifiers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C21 and C29-C33 describe the methodological framework and data sources with appropriate citations (V\u00f5sa et al., 2021; Shin et al., 2014; Wishart et al., 2022). The filtering criteria (\u22653 IVs, HMDB identifiers) are clearly stated and reasonable for MR analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "7a86bcff-4bce-4df5-aad1-1ca7e4039283",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The study detected 96 genes whose transcript levels causally impacted 75 metabolites, resulting in 133 unique transcript-metabolite associations at FDR 5%. Most genes (86%) influenced a single metabolite, with notable exceptions like TMEM258 and FADS2 affecting 11 metabolites and FADS1 affecting 6 metabolites. Only 5 (3.8%) associations were in HMDB, but automated literature review identified matches for 22 (16.5%) pairs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C39 present primary findings from the transcript-to-metabolite analysis with appropriate statistical thresholds (FDR 5%) and quantitative results. The literature validation provides context for novelty, though the authors acknowledge limitations of the automated approach (C87).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "178bba06-e25e-4c97-ae16-2995008fefc9",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Using univariable metabolome-wide MR, the study identified causal relationships between 48 metabolites with \u22653 IVs and 28 complex phenotypes from UK Biobank (anthropometric traits, cardiovascular assessments, blood biomarkers). Overall, 34 metabolites associated with at least one phenotype at FDR 5%, resulting in 132 unique metabolite-phenotype associations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C43 describe the metabolite-to-phenotype analysis with appropriate data sources (UK Biobank, Bycroft et al., 2018) and statistical thresholds. The results are clearly quantified and represent a systematic analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "bc13d794-a626-4e05-b818-3edae1928f06",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Using univariable transcriptome-wide MR (TWMR), the study identified associations between 10,435 transcripts with \u22653 IVs and 28 UKB phenotypes. In total, 5,140 transcripts associated with at least one phenotype at FDR 5%, resulting in 13,141 unique transcript-phenotype associations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45 describe the transcript-to-phenotype analysis with appropriate methodology (TWMR, Porcu et al., 2019) and statistical thresholds. The large number of associations provides a comprehensive baseline for comparison with the mediation analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "a441e4c3-7cd4-481f-9c78-6f12fc3bc07e",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study identified 216 transcript-metabolite-trait causal triplets involving 26 medically relevant phenotypes by combining the 133 transcript-metabolite and 132 metabolite-trait associations. Among these, 58% were missed by classical TWMR. Literature validation found that none of the 37 triplets with prior transcript-metabolite links remained when searching for all three terms together, but 13/37 (35%) had matches for the gene-trait association when omitting the metabolite term.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C23 and C46-C48 present the key finding that integrating metabolomics data identifies associations missed by TWMR alone. The FDR calculation (9.75%) for triplets is appropriate given the combination of two 5% FDR thresholds. The literature validation provides context for novelty, though the authors acknowledge limitations (C86-C87).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "d22472c1-92a1-419e-8145-696c4cc4cb0c",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study identified biologically relevant pathways including ANKH\u2192citrate\u2192calcium and SLC6A12\u2192betaine\u2192creatinine. The TMEM258/FADS1/FADS2 locus showed extensive pleiotropy (>6,000 GWAS Catalog associations), with these genes affecting 11 metabolites that are complex lipids synthesized from arachidonic acid (a product of FADS1/FADS2 enzymes). Three complex lipids were highlighted as strong mediators of transcript-to-phenotype effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C26, C36-C37, C52-C55, and C90 describe specific biological examples with appropriate supporting evidence from GWAS Catalog and prior literature (Reynolds et al., 2020). The biochemical relationships (FADS enzymes producing arachidonic acid, which is used to synthesize complex lipids) are well-established.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "eb966c9f-9f7a-4dde-82bb-045c021f5281",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Only 42% (90/216) of causal triplets showed significant total transcript-to-phenotype effects by TWMR, suggesting TWMR lacks power under current settings. Simulation analyses showed that with larger mQTL datasets and in cases of mediated effects, the multi-omics MR framework outperforms classical MR approaches. The gain in power decreases with decreasing mQTL sample sizes (N=1,000-4,000), indicating the approach depends on large sample sizes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57, C27-C28, and C63-C64 are supported by both empirical results (90/216 triplets detected by TWMR) and systematic simulation analyses varying key parameters (\u03c1, \u03c3, sample size). The simulations appropriately explore the parameter space and demonstrate conditions under which mediation analysis has advantages. Figure 4 and supplements provide clear visualization of these relationships.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "3e45f028-9c80-4840-a649-e1e19624a2b4",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The 126 triplets not identified by TWMR represent putative new causal relations. The ANKH\u2192citrate\u2192calcium pathway exemplifies this: while ANKH-calcium association had 48 publications and is not significant by TWMR (P=0.03), ANKH decreases citrate (P=2.2\u00d710\u207b\u2076), which increases calcium (P=6.5\u00d710\u207b\u2079). ANKH encodes a transmembrane protein that exports ATP and citrate to the extracellular space, and citrate influences calcium bioavailability through binding and complexing with calcium-phosphate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 and C70-C76 present a well-supported biological example with appropriate citations (Williams, 2016; Ho et al., 2000; Szeri et al., 2020; Granchi et al., 2019). The statistical evidence (effect sizes and P-values) supports the mediation pathway, and the biological mechanism is plausible based on established protein function and calcium-citrate chemistry.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "3399a21f-6bb8-4d62-a2de-187b381d923a",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The SLC6A12\u2192betaine\u2192creatinine pathway represents another novel finding. Betaine acts as a protective renal osmolyte whose levels are downregulated in renal ischemia/reperfusion injury and proposed as a biomarker for chronic kidney disease progression. Since renal conditions are monitored through serum creatinine, the data support the critical role of osmolyte homeostasis in renal health.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C85 present a biologically plausible pathway supported by appropriate citations (Jouret et al., 2016; Wei et al., 2014; Gil et al., 2018). The connection between betaine as a renal osmolyte and creatinine as a clinical marker of renal function is well-established, making this a compelling mechanistic finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "1f861698-645f-4394-9203-ba2a5a9f3312",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "While some detected associations were previously reported, a large fraction (especially triplets) appears novel, though this is likely underestimated due to limitations of the automated literature review. Among the 90 signals also identified by TWMR, 93% showed directionally concordant effects between transcript-to-phenotype, transcript-to-metabolite, and metabolite-to-phenotype estimates. Dissection of causal effects provides clues to molecular mechanisms through which genes modify complex phenotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C89 provide important validation of the results. The 93% directional concordance (C88) is strong evidence for the validity of the mediation framework. The authors appropriately acknowledge limitations of their literature review approach (C87), which strengthens rather than weakens the evaluation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "fd04c66f-fcbe-4d7d-820b-614c3353bc7c",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "A large fraction of detected mediations involves genes encoding metabolic enzymes or transporters/channels, with enrichment for 'secondary active transmembrane transporter activity' (GO:0015291; FDR=0.021). This matches findings that mQTL effector genes are enriched for pathway-relevant enzymes and transporters, which is expected since proteins encoded by these genes directly interact with metabolites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C94 present enrichment analysis results with appropriate statistical testing (FDR=0.021) and biological interpretation. The finding is supported by citation to Smith et al., 2022, and the biological reasoning (direct protein-metabolite interactions) is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "b469fb48-b10f-48e7-9158-d36ecd41064e",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The study acknowledges several important limitations: interpretation is limited by lack of spatial resolution in mQTL data; 77% of transcript effects are not mediated by measured metabolites (suggesting direct effects or unmeasured mediators); mediation estimates are lower bounds when mediators are unmeasured or lack genetic instruments; unmeasured mediators sharing instruments with measured ones can confound interpretation; metabolic networks may have many genetically correlated species; linkage disequilibrium and regulatory variants can cause adjacent genes to appear in the same signals; complex phenotypes can impact gene expression more than the reverse; and the method doesn't investigate reverse causality due to lack of trans-eQTL data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C102 represent thoughtful acknowledgment of methodological limitations. These are appropriately discussed and represent honest assessment of the study's scope and potential confounders. The 77% non-mediated effect (C96) is quantified from the regression analysis in Figure 2B, and the other limitations are based on established understanding of MR assumptions and biological complexity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "bf0c0c6d-2abb-4fa6-bd72-6339d47f525a",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The study notes that metabolites might integrate effects of several transcripts before affecting phenotypes, or multiple metabolites may jointly mediate the impact of a single transcript, but these scenarios are not modeled in the current framework.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C103-C104 are appropriately labeled as speculation about potential biological scenarios that the current framework doesn't address. These represent directions for future methodological development rather than claims about the current results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    },
+    {
+      "id": "f074d2a8-5d84-4510-a897-01e7e525d941",
+      "content_id": "782b3e59-ad81-48f6-a783-b6338ecc8176",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The study concludes that it developed a modular MR framework with increased power over classical MR approaches to detect causal transcript-to-phenotype relationships when mediated by metabolite levels, and the framework is likely to become increasingly powerful with larger molQTL datasets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C105-C106 represent the main conclusions supported by the empirical findings (58% of associations missed by TWMR) and simulation analyses (Figure 4 showing increased power with larger sample sizes). The prediction about future improvements (C106) is reasonable based on the simulation results, though appropriately qualified as speculation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:38:55.195148Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3962cf6b-f209-489f-9dfb-3d225322ac89",
+      "result_id": "c35fa538-3d8a-4119-a288-9f2f3fe52bad"
+    },
+    {
+      "claim_id": "1127d39b-fb05-4871-838a-3f64de4f312c",
+      "result_id": "c35fa538-3d8a-4119-a288-9f2f3fe52bad"
+    },
+    {
+      "claim_id": "6502e22e-104a-47e9-9a4a-c8854a2c9c69",
+      "result_id": "c35fa538-3d8a-4119-a288-9f2f3fe52bad"
+    },
+    {
+      "claim_id": "a3189daf-a581-4c95-ad5f-51d77fc64084",
+      "result_id": "c35fa538-3d8a-4119-a288-9f2f3fe52bad"
+    },
+    {
+      "claim_id": "7fbcc357-6df4-4641-ac97-f05d7b9796fb",
+      "result_id": "c35fa538-3d8a-4119-a288-9f2f3fe52bad"
+    },
+    {
+      "claim_id": "b577d566-cf13-40b4-88df-b14b64d8ca54",
+      "result_id": "7bf2334c-a9a0-48fe-bf9f-d4726d886338"
+    },
+    {
+      "claim_id": "c427b5c3-f30a-4e61-857d-07b711b7817f",
+      "result_id": "7bf2334c-a9a0-48fe-bf9f-d4726d886338"
+    },
+    {
+      "claim_id": "e9a2fccf-158c-45f8-8ceb-3064749dbe71",
+      "result_id": "7bf2334c-a9a0-48fe-bf9f-d4726d886338"
+    },
+    {
+      "claim_id": "19855d37-1d9a-4ce7-a8a5-9ddebc5c460b",
+      "result_id": "b7f88777-5c6f-4f46-b7c9-3da7034165f1"
+    },
+    {
+      "claim_id": "390b8596-e3f3-4516-8fd2-75e1f86f3a63",
+      "result_id": "b7f88777-5c6f-4f46-b7c9-3da7034165f1"
+    },
+    {
+      "claim_id": "ad887fb9-9a2d-4e2d-8895-6c795a6a9ff2",
+      "result_id": "8713244f-7c70-416c-baac-0ee0617b2be3"
+    },
+    {
+      "claim_id": "6fad807e-bb3a-41b8-9a35-c577b73432ce",
+      "result_id": "8713244f-7c70-416c-baac-0ee0617b2be3"
+    },
+    {
+      "claim_id": "a40ac9fc-0189-461b-8ace-f2103c65cc0d",
+      "result_id": "8713244f-7c70-416c-baac-0ee0617b2be3"
+    },
+    {
+      "claim_id": "d0309b61-23c3-44ab-8b08-c4f8cce9c11a",
+      "result_id": "8713244f-7c70-416c-baac-0ee0617b2be3"
+    },
+    {
+      "claim_id": "ddc330fd-8a32-47e5-ab12-4e1623564f60",
+      "result_id": "8713244f-7c70-416c-baac-0ee0617b2be3"
+    },
+    {
+      "claim_id": "f2c982cd-1953-4a4d-9356-a68a76dc52fc",
+      "result_id": "8713244f-7c70-416c-baac-0ee0617b2be3"
+    },
+    {
+      "claim_id": "3da88daf-d364-4d5a-87bb-df364b11b169",
+      "result_id": "43ec4f41-7f5e-4bd6-91af-f1d09dcc455b"
+    },
+    {
+      "claim_id": "ab04dbb3-4dfd-4f03-93d0-71dd65c6fd1e",
+      "result_id": "43ec4f41-7f5e-4bd6-91af-f1d09dcc455b"
+    },
+    {
+      "claim_id": "067521a9-d746-4e6c-a9bd-9b515f0c16d0",
+      "result_id": "43ec4f41-7f5e-4bd6-91af-f1d09dcc455b"
+    },
+    {
+      "claim_id": "37adb440-3916-47ec-a4b8-575a2ef5a00e",
+      "result_id": "60aef696-2890-4a1b-9ae0-cd5333b9d9c1"
+    },
+    {
+      "claim_id": "f3de41f0-3349-4eaf-b4f7-7e806c12cc63",
+      "result_id": "60aef696-2890-4a1b-9ae0-cd5333b9d9c1"
+    },
+    {
+      "claim_id": "7bcd84c8-04dc-4187-a525-f5cfdd569489",
+      "result_id": "60aef696-2890-4a1b-9ae0-cd5333b9d9c1"
+    },
+    {
+      "claim_id": "95c3d942-c3b3-4556-a3c1-92c1c6375f7e",
+      "result_id": "60aef696-2890-4a1b-9ae0-cd5333b9d9c1"
+    },
+    {
+      "claim_id": "4da97a6a-9875-4630-ba01-b27ec89a4641",
+      "result_id": "60aef696-2890-4a1b-9ae0-cd5333b9d9c1"
+    },
+    {
+      "claim_id": "d1764d45-c23f-4fdd-aa5e-d6db53d53d47",
+      "result_id": "60aef696-2890-4a1b-9ae0-cd5333b9d9c1"
+    },
+    {
+      "claim_id": "6574fa18-0e7c-4ecb-8962-387fc4e3c827",
+      "result_id": "60aef696-2890-4a1b-9ae0-cd5333b9d9c1"
+    },
+    {
+      "claim_id": "749de5b1-08a2-4cbe-972f-ec1513cc8e5b",
+      "result_id": "7a86bcff-4bce-4df5-aad1-1ca7e4039283"
+    },
+    {
+      "claim_id": "36ff2ade-aa66-41a0-9c32-eee59bcfd555",
+      "result_id": "7a86bcff-4bce-4df5-aad1-1ca7e4039283"
+    },
+    {
+      "claim_id": "9afdc920-99c0-42ca-9610-51d852cd37d4",
+      "result_id": "7a86bcff-4bce-4df5-aad1-1ca7e4039283"
+    },
+    {
+      "claim_id": "eb4f6905-2326-43c4-ae42-a09bf885468c",
+      "result_id": "7a86bcff-4bce-4df5-aad1-1ca7e4039283"
+    },
+    {
+      "claim_id": "0e39bb8d-6dd4-4548-8383-9dcdb44f366a",
+      "result_id": "7a86bcff-4bce-4df5-aad1-1ca7e4039283"
+    },
+    {
+      "claim_id": "18d28e09-dbba-4e4e-beff-5d83cf4ca007",
+      "result_id": "7a86bcff-4bce-4df5-aad1-1ca7e4039283"
+    },
+    {
+      "claim_id": "d715ee9f-17ea-4d66-8767-aa5b4b4ab215",
+      "result_id": "178bba06-e25e-4c97-ae16-2995008fefc9"
+    },
+    {
+      "claim_id": "4987bf37-5b4d-45c0-8e79-9826c25193ca",
+      "result_id": "178bba06-e25e-4c97-ae16-2995008fefc9"
+    },
+    {
+      "claim_id": "68c1f3c6-307f-46a0-abba-9d41a7318c65",
+      "result_id": "178bba06-e25e-4c97-ae16-2995008fefc9"
+    },
+    {
+      "claim_id": "c5bcb2af-4f52-4843-a91f-154124869ca4",
+      "result_id": "178bba06-e25e-4c97-ae16-2995008fefc9"
+    },
+    {
+      "claim_id": "590e66e5-5019-4e18-ae13-ed152965ebb4",
+      "result_id": "bc13d794-a626-4e05-b818-3edae1928f06"
+    },
+    {
+      "claim_id": "692d8073-283a-4c70-b0f5-e93dfbdec368",
+      "result_id": "bc13d794-a626-4e05-b818-3edae1928f06"
+    },
+    {
+      "claim_id": "c3bff659-4a82-4adc-b26c-62c20f48b20c",
+      "result_id": "a441e4c3-7cd4-481f-9c78-6f12fc3bc07e"
+    },
+    {
+      "claim_id": "351d5712-2f32-4c0b-ba86-2f90bd2f302f",
+      "result_id": "a441e4c3-7cd4-481f-9c78-6f12fc3bc07e"
+    },
+    {
+      "claim_id": "fbe970e5-48a2-43c6-82fd-af2d02d4d2f2",
+      "result_id": "a441e4c3-7cd4-481f-9c78-6f12fc3bc07e"
+    },
+    {
+      "claim_id": "0a31f8d5-c4c6-4627-9a9a-bac4dcd2ff90",
+      "result_id": "a441e4c3-7cd4-481f-9c78-6f12fc3bc07e"
+    },
+    {
+      "claim_id": "24ba7619-87fc-41df-bf2d-b3769a8536e6",
+      "result_id": "a441e4c3-7cd4-481f-9c78-6f12fc3bc07e"
+    },
+    {
+      "claim_id": "5d8600b9-02ad-4042-af2d-279ad14ad255",
+      "result_id": "d22472c1-92a1-419e-8145-696c4cc4cb0c"
+    },
+    {
+      "claim_id": "93691999-52c4-43b5-8f9c-38cde67854ad",
+      "result_id": "d22472c1-92a1-419e-8145-696c4cc4cb0c"
+    },
+    {
+      "claim_id": "9afdc920-99c0-42ca-9610-51d852cd37d4",
+      "result_id": "d22472c1-92a1-419e-8145-696c4cc4cb0c"
+    },
+    {
+      "claim_id": "eb4f6905-2326-43c4-ae42-a09bf885468c",
+      "result_id": "d22472c1-92a1-419e-8145-696c4cc4cb0c"
+    },
+    {
+      "claim_id": "09a05ded-04ac-468b-8caf-564434f4e94a",
+      "result_id": "d22472c1-92a1-419e-8145-696c4cc4cb0c"
+    },
+    {
+      "claim_id": "a5704578-372a-4144-a83d-352a07fad3dd",
+      "result_id": "d22472c1-92a1-419e-8145-696c4cc4cb0c"
+    },
+    {
+      "claim_id": "f4b795e7-d98a-4620-a793-07ef5352ff25",
+      "result_id": "d22472c1-92a1-419e-8145-696c4cc4cb0c"
+    },
+    {
+      "claim_id": "410388ff-08ff-4ea0-9f68-585cbde19119",
+      "result_id": "d22472c1-92a1-419e-8145-696c4cc4cb0c"
+    },
+    {
+      "claim_id": "4abc4750-0917-4c08-8206-99da2d0c6c91",
+      "result_id": "d22472c1-92a1-419e-8145-696c4cc4cb0c"
+    },
+    {
+      "claim_id": "c50fdf4d-fef3-4d0f-9d7a-659b690c99dc",
+      "result_id": "eb966c9f-9f7a-4dde-82bb-045c021f5281"
+    },
+    {
+      "claim_id": "d3248a9e-5883-4b77-8b6f-2410da75b466",
+      "result_id": "eb966c9f-9f7a-4dde-82bb-045c021f5281"
+    },
+    {
+      "claim_id": "50ddebb1-eb68-4fe1-b82c-22155d5c3551",
+      "result_id": "eb966c9f-9f7a-4dde-82bb-045c021f5281"
+    },
+    {
+      "claim_id": "49b0b8ae-c994-4ca4-9d91-dcd3597a9675",
+      "result_id": "eb966c9f-9f7a-4dde-82bb-045c021f5281"
+    },
+    {
+      "claim_id": "99510bbe-248a-427b-817a-6cf38ca89da0",
+      "result_id": "eb966c9f-9f7a-4dde-82bb-045c021f5281"
+    },
+    {
+      "claim_id": "368a6a85-5e35-4c23-b2e1-00e1972fdf54",
+      "result_id": "eb966c9f-9f7a-4dde-82bb-045c021f5281"
+    },
+    {
+      "claim_id": "da3215c3-a532-414d-abe0-f4f1e7693bca",
+      "result_id": "3e45f028-9c80-4840-a649-e1e19624a2b4"
+    },
+    {
+      "claim_id": "727d2192-7c65-4e96-b7c7-98db6f043111",
+      "result_id": "3e45f028-9c80-4840-a649-e1e19624a2b4"
+    },
+    {
+      "claim_id": "01e01393-528c-4406-9d86-5d02e3ff65bd",
+      "result_id": "3e45f028-9c80-4840-a649-e1e19624a2b4"
+    },
+    {
+      "claim_id": "69bbbd9f-851f-4670-aca8-dab1a02497a4",
+      "result_id": "3e45f028-9c80-4840-a649-e1e19624a2b4"
+    },
+    {
+      "claim_id": "bd55bc1f-03c8-4825-aaae-8b940c4d44bb",
+      "result_id": "3e45f028-9c80-4840-a649-e1e19624a2b4"
+    },
+    {
+      "claim_id": "06b22990-727c-42e3-b008-9362c2f5fdcf",
+      "result_id": "3e45f028-9c80-4840-a649-e1e19624a2b4"
+    },
+    {
+      "claim_id": "c2019578-e724-4792-ab71-621d37993c9d",
+      "result_id": "3e45f028-9c80-4840-a649-e1e19624a2b4"
+    },
+    {
+      "claim_id": "03561cea-b6db-4eef-9e9f-988a15fba7c9",
+      "result_id": "3e45f028-9c80-4840-a649-e1e19624a2b4"
+    },
+    {
+      "claim_id": "b44559c1-23cb-4e76-b70d-f613aa81d123",
+      "result_id": "3e45f028-9c80-4840-a649-e1e19624a2b4"
+    },
+    {
+      "claim_id": "30153ebd-c545-4f07-8e02-8eeadbb11e8b",
+      "result_id": "3399a21f-6bb8-4d62-a2de-187b381d923a"
+    },
+    {
+      "claim_id": "c2ea9337-74c8-435d-bce2-8f7a70cb92b8",
+      "result_id": "3399a21f-6bb8-4d62-a2de-187b381d923a"
+    },
+    {
+      "claim_id": "fcb42e8a-32c6-462a-b75c-dd319bfb416d",
+      "result_id": "3399a21f-6bb8-4d62-a2de-187b381d923a"
+    },
+    {
+      "claim_id": "c3771c41-757c-49d0-b013-de330facad5f",
+      "result_id": "3399a21f-6bb8-4d62-a2de-187b381d923a"
+    },
+    {
+      "claim_id": "eabbba4e-e2be-47d4-8874-c337544a6298",
+      "result_id": "3399a21f-6bb8-4d62-a2de-187b381d923a"
+    },
+    {
+      "claim_id": "0b21e9b8-3874-465d-8b42-857b6fc53583",
+      "result_id": "1f861698-645f-4394-9203-ba2a5a9f3312"
+    },
+    {
+      "claim_id": "a0948991-0dda-4b9a-8356-d1d05514435a",
+      "result_id": "1f861698-645f-4394-9203-ba2a5a9f3312"
+    },
+    {
+      "claim_id": "a8b4ae1b-6da8-4c5e-bb4d-7cd10c22b2c6",
+      "result_id": "1f861698-645f-4394-9203-ba2a5a9f3312"
+    },
+    {
+      "claim_id": "e881216c-2e95-43c3-9a92-6f1f9b2a6947",
+      "result_id": "1f861698-645f-4394-9203-ba2a5a9f3312"
+    },
+    {
+      "claim_id": "f03abd49-58fd-4224-bc99-e315866f4bc8",
+      "result_id": "fd04c66f-fcbe-4d7d-820b-614c3353bc7c"
+    },
+    {
+      "claim_id": "4d54059b-bc68-4e75-ab15-e561ade96ec5",
+      "result_id": "fd04c66f-fcbe-4d7d-820b-614c3353bc7c"
+    },
+    {
+      "claim_id": "ad645b42-8cac-48ac-9951-4ab945d26a1e",
+      "result_id": "fd04c66f-fcbe-4d7d-820b-614c3353bc7c"
+    },
+    {
+      "claim_id": "a276b21c-0bec-444f-a16f-9bf142991142",
+      "result_id": "fd04c66f-fcbe-4d7d-820b-614c3353bc7c"
+    },
+    {
+      "claim_id": "92d80966-6353-46e7-9590-adb7e9d9bf92",
+      "result_id": "b469fb48-b10f-48e7-9158-d36ecd41064e"
+    },
+    {
+      "claim_id": "5b7641f5-4d45-4c00-863d-e67dea236f0b",
+      "result_id": "b469fb48-b10f-48e7-9158-d36ecd41064e"
+    },
+    {
+      "claim_id": "cccd2416-704f-4556-a193-300170975f78",
+      "result_id": "b469fb48-b10f-48e7-9158-d36ecd41064e"
+    },
+    {
+      "claim_id": "be616d70-6a22-4dd6-babf-4a7c2bbfc905",
+      "result_id": "b469fb48-b10f-48e7-9158-d36ecd41064e"
+    },
+    {
+      "claim_id": "b9e9865e-704c-49b0-bc40-c60dd694ab73",
+      "result_id": "b469fb48-b10f-48e7-9158-d36ecd41064e"
+    },
+    {
+      "claim_id": "9a2f4100-bbdd-425b-bd7d-7b443c273225",
+      "result_id": "b469fb48-b10f-48e7-9158-d36ecd41064e"
+    },
+    {
+      "claim_id": "4a5c92f8-7eb0-47e0-96b1-774f5d074136",
+      "result_id": "b469fb48-b10f-48e7-9158-d36ecd41064e"
+    },
+    {
+      "claim_id": "baa64237-deea-412a-88c0-43f002355d81",
+      "result_id": "b469fb48-b10f-48e7-9158-d36ecd41064e"
+    },
+    {
+      "claim_id": "ccd33fa4-8eb8-4dd3-aa04-33dd0c3465cf",
+      "result_id": "bf0c0c6d-2abb-4fa6-bd72-6339d47f525a"
+    },
+    {
+      "claim_id": "9c5a1b29-75de-4554-94c7-5fe3d308a294",
+      "result_id": "bf0c0c6d-2abb-4fa6-bd72-6339d47f525a"
+    },
+    {
+      "claim_id": "e2cf3e12-d8ad-4266-8711-d44db208454f",
+      "result_id": "f074d2a8-5d84-4510-a897-01e7e525d941"
+    },
+    {
+      "claim_id": "1ac4f6e6-6f10-4749-b5e1-fcd981633164",
+      "result_id": "f074d2a8-5d84-4510-a897-01e7e525d941"
+    }
+  ],
+  "comparisons": []
+}

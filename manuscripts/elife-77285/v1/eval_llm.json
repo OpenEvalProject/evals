@@ -1,0 +1,376 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C10"
+    ],
+    "result": "Over 1100 independent GWAS associations for BMD have been identified to date.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C10 are consistent statements about the number of BMD GWAS associations, both supported by citations to Morris et al., 2019 and other studies. This represents established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C11"
+    ],
+    "result": "Despite the success of GWAS, identifying causal genes underlying BMD associations has been challenging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C11 consistently state the challenge of identifying causal genes from GWAS, supported by citations to relevant literature. This establishes the motivation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The study identified 512 protein-coding genes that were significant in both TWAS (2156 total significant genes) and eQTL colocalization (1182 total colocalizing genes) analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C19, C20, and C21 present the primary computational findings with specific numbers and statistical thresholds (Bonferroni p\u22640.05, RCP\u22650.1). The methodology is described and results are presented in supplementary files, providing adequate support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C22",
+      "C26",
+      "C27"
+    ],
+    "result": "The 512 prioritized genes were enriched for known bone genes and bone-relevant biological processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C22, C26, and C27 demonstrate validation of the prioritization approach through enrichment analysis. The enrichment of known bone genes (OR=1.72, p=1.0\u00d710\u207b\u2074) and GO terms like 'ossification' (p=3.1\u00d710\u207b\u2076) provide statistical support. The inclusion of known regulators like RUNX2, IGF1, and LRP6 further validates the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The prioritized genes had colocalizing eQTL across all 49 GTEx tissues and mapped to approximately half (49%) of the autosomal GWAS loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C24, and C25 describe the distribution of prioritized genes across tissues and GWAS loci. The data show coverage across all GTEx tissues with specific counts provided, and mapping statistics are clearly stated (542/1097 loci contain at least one prioritized gene).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "The closest gene approach showed stronger enrichment for known bone genes (OR=2.56, p=6.37\u00d710\u207b\u00b9\u2079) compared to the TWAS/colocalization approach, with 40% overlap between the two methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28 and C29 provide a comparison between the prioritization approach and the traditional closest gene method. The statistical comparison is clear and the overlap percentage is stated, though this somewhat undermines the superiority of the TWAS/colocalization approach for enrichment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Of the 512 prioritized genes, 142 had been tested by IMPC, with 64 showing nominally significant BMD alterations in knockout mice, and 76.5% of these were not previously known bone genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C31, and C32 provide validation through independent mouse phenotyping data from IMPC. The percentages and counts are specific, and the finding that most validated genes were novel (76.5% not in known bone gene list) supports the discovery potential of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "GPATCH1 was identified as a prioritized gene with the strongest TWAS association (p=3.44\u00d710\u207b\u00b2\u00b2\u2076) and strongest colocalization (RCP=0.36) in its region, with IMPC data showing decreased BMD in Gpatch1 heterozygous female mice (p=2.17\u00d710\u207b\u2078).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 present GPATCH1 as an example validation case. The computational evidence (TWAS and colocalization) is strong, and independent IMPC data confirm the BMD phenotype. The directional inference (C37) is logical based on eQTL/GWAS concordance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "PPP6R3 was selected as the top novel candidate gene, showing the strongest TWAS association (Bonferroni=5.7\u00d710\u207b\u2079\u00b3) in its region and being the only gene with colocalizing eQTL in four GTEx tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C39-C43 establish PPP6R3 as the primary candidate for functional validation. The selection criteria are clearly stated (strongest support, not previously implicated), and the computational evidence is robust with very strong TWAS significance and unique colocalization in the region.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The most significant PPP6R3 eQTL SNP (rs10047483) and the most significant eBMD GWAS SNP (rs11228240) in the locus are in high LD (r\u00b2=0.941), with opposing allele effects suggesting decreased PPP6R3 expression would increase BMD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 provide detailed genetic evidence for the PPP6R3 association. The LD calculation and p-values are specific, and the directional inference (C47) is based on the observed opposing effects between eQTL and GWAS.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "PPP6R3 was also significantly associated with fracture risk by TWAS (Bonferroni p=6.0\u00d710\u207b\u00b3), with the same eQTL colocalizing with the fracture GWAS association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 extend the PPP6R3 findings to fracture risk, a related phenotype. The TWAS significance and colocalization data are provided, strengthening the case for PPP6R3 as a bone-relevant gene.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Western blotting confirmed absence of PPP6R3 protein in mutant mice, and RNA-seq showed differential expression (padj=3.67\u00d710\u207b\u00b9\u2070\u2074, log2FC=-1.63) with no changes in other genes in the locus including Lrp5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 provide molecular validation of the knockout model. Western blot (Figure 4B) confirms protein absence, and RNA-seq provides quantitative expression data. The specificity to PPP6R3 (no changes in Lrp5) is important for interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Analysis of Estrada et al. 2012 GWAS data showed the PPP6R3 locus was significant for lumbar spine BMD but not femoral neck BMD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 provide site-specific GWAS evidence that informed the experimental design. The differential significance between LSBMD and FNBMD is clearly stated and shown in Figure 4\u2014figure supplement 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C57",
+      "C58",
+      "C59",
+      "C91"
+    ],
+    "result": "Ppp6r3 deletion in mice resulted in decreased lumbar spine BMD (WT vs. MUT p=0.01) but not femoral BMD (p=0.26), consistent with human GWAS predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C57-C59, and C91 present the primary phenotypic finding. DXA measurements show site-specific effects matching GWAS predictions. Body weight was controlled (C57), strengthening the interpretation. The consistency between mouse and human data supports causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C60",
+      "C64",
+      "C65"
+    ],
+    "result": "Ppp6r3 mutant mice showed significantly decreased femoral width (AP: p=0.02; ML: p=2.2\u00d710\u207b\u2076) and decreased total area (p=0.00724) and medullary area (p=0.00903) at the femoral midshaft.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C64, and C65 describe femoral geometry changes. The measurements are specific with clear p-values, and the consistency between caliper and \u03bcCT measurements strengthens the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "\u03bcCT analysis showed significant decreases in trabecular bone volume fraction (BV/TV, p=0.015) and volumetric BMD (vBMD, p=0.015) in the lumbar spine, but no significant changes in TMD, trabecular separation, thickness, or number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 provide detailed microarchitectural analysis. The significant changes in BV/TV and vBMD are clearly stated, while the lack of changes in other parameters is also reported. This suggests subtle cumulative effects rather than dramatic structural changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "No changes in trabecular bone parameters were observed in the distal femur.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 reports negative findings for the distal femur, consistent with the site-specific effects observed in the lumbar spine. This is appropriately reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "P1NP levels were significantly increased in mutant mice (p=0.00422), suggesting the decreased bone mass is due to increased bone turnover.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C67 presents significant P1NP elevation, but C68's interpretation that this indicates increased bone turnover is incomplete. P1NP is a marker of bone formation, not turnover per se. Without bone resorption markers (e.g., CTX), the mechanism remains unclear. Increased P1NP could indicate increased formation as a compensatory response.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "No significant effects of Ppp6r3 genotype on bone matrix composition were observed by Raman spectroscopy, possibly due to the use of relatively young mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 reports negative findings from Raman spectroscopy (Figure 4\u2014figure supplements 3-6). Claim C70 provides speculation about age effects, which is reasonable but unproven. The negative result is appropriately reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "The observed decrease in bone volume fraction and BMD may be explained by cumulative subtle effects of Ppp6r3 deletion on trabecular thickness and number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C92 is speculative inference based on non-significant trends. While the authors acknowledge the lack of statistical significance, this interpretation is not strongly supported by the data and represents post-hoc rationalization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C93",
+      "C47"
+    ],
+    "result": "The observed direction of effect in mice (decreased BMD with Ppp6r3 deletion) was opposite to the hypothesis based on eQTL and GWAS data (decreased expression should increase BMD).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93 and C47 acknowledge a discrepancy between prediction and observation. This is honestly reported and discussed in the context of tissue-specific effects and limitations of using non-bone eQTL data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The study's limitations include lack of bone-specific eQTL data, potential false positives from using multiple non-bone tissues, and tissue-specific directional effects that may explain discrepancies between predictions and observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C77 provide thoughtful discussion of limitations. The comparison with Mullin et al. (C73-C75) showing only 38% overlap for colocalizing eQTL demonstrates missed bone-specific genes. The speculation about false positives (C76) and directional effects (C77) is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "Due to reliance on eQTL data, genes affecting BMD through non-expression-related mechanisms were not captured.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 correctly identifies a fundamental limitation of the eQTL-based approach. This is a logical inference about the scope of the methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The PPP6R3 locus shows allelic heterogeneity involving multiple genes including LRP5 (a known BMD regulator with a missense mutation rs4988321) and PPP6R3, despite LRP5 not showing significant TWAS or colocalization signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C90 describe the complexity of the locus. The evidence for LRP5 involvement (known function, missense mutation) is strong despite lack of eQTL signals. The inference of allelic heterogeneity (C90) is reasonable given the multiple independent associations and genes in the region.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The study demonstrates that combined TWAS/colocalization approaches can prioritize putatively causal genes even without tissue-specific eQTL data, providing an updated resource of BMD genes and identifying PPP6R3 as a putatively causal BMD gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C99 present the main conclusions. The approach successfully identified genes enriched for bone function and validated in mice (C94-C95). The resource of 512 genes is provided (C96). PPP6R3 validation supports causality despite directional discrepancy (C97). The broader impact claims (C98-C99) are reasonable given the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Comparison with the PhenomeXcan project showed 72.4% overlap (55/76 genes) with this study's prioritized genes, including PPP6R3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 provide external validation through comparison with independent analysis. The overlap percentage is clearly stated, and differences are explained by sample size and multiple testing thresholds. PPP6R3 identification in both studies strengthens its candidacy.",
+    "result_type": "MINOR"
+  }
+]

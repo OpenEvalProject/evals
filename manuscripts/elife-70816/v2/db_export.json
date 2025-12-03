@@ -1,0 +1,1827 @@
+{
+  "submission": {
+    "id": "b8f7fc32-34c2-4e80-86f6-fb559210f5bf",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T10:35:16.664154Z",
+    "updated_at": "2025-12-03T10:35:16.664154Z"
+  },
+  "content": [
+    {
+      "id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "submission_id": "b8f7fc32-34c2-4e80-86f6-fb559210f5bf",
+      "content_type": "manuscript",
+      "content_text": "# Volume growth in animal cells is cell cycle dependent and shows additive fluctuations\n\n## Authors\n\n- Clotilde Cadart<sup>1</sup> \u2020\n- Larisa Venkova<sup>1</sup> ([ORCID: 0000-0001-5721-7962](https://orcid.org/0000-0001-5721-7962))\n- Matthieu Piel<sup>1</sup>\n- Marco Cosentino Lagomarsino<sup>3</sup> ([ORCID: 0000-0003-0235-0445](https://orcid.org/0000-0003-0235-0445)) \u2020\n\n### Affiliations\n\n1. Institut Pierre-Gilles de Gennes, PSL Research University Paris France\n2. Institut Curie, PSL Research University, CNRS Paris France\n3. FIRC Institute of Molecular Oncology (IFOM) Milan Italy\n4. Physics Department, University of Milan, and INFN Milan Italy\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe way proliferating animal cells coordinate the growth of their mass, volume, and other relevant size parameters is a long-standing question in biology. Studies focusing on cell mass have identified patterns of mass growth as a function of time and cell cycle phase, but little is known about volume growth. To address this question, we improved our fluorescence exclusion method of volume measurement (FXm) and obtained 1700 single-cell volume growth trajectories of HeLa cells. We find that, during most of the cell cycle, volume growth is close to exponential and proceeds at a higher rate in S-G2 than in G1. Comparing the data with a mathematical model, we establish that the cell-to-cell variability in volume growth arises from constant-amplitude fluctuations in volume steps rather than fluctuations of the underlying specific growth rate. We hypothesize that such \u2018additive noise\u2019 could emerge from the processes that regulate volume adaptation to biophysical cues, such as tension or osmotic pressure.\n\n## Introduction\n\nThe regulation of animal cell growth is a central question in cell biology (Cadart et al., 2019; Lloyd, 2013; Goranov and Amon, 2010), but our knowledge is limited by the lack of methods to reliably measure cellular growth at the single-cell level. In the last decade, several sophisticated approaches measuring buoyant mass (Godin et al., 2010; Son et al., 2012), dry mass (Park et al., 2010; Mir et al., 2011; Sung et al., 2013; Liu et al., 2020), and volume (Cadart et al., 2018; Zlotek-Zlotkiewicz et al., 2015) have produced new data revealing unexpected features at several levels. In particular, in contrast to what has been observed in unicellular organisms such as Schizosaccharomyces pombe (Horv\u00e1th et al., 2013; Cooper, 2013), Saccharomyces cerevisiae (Di Talia et al., 2007), or Escherichia coli (Wang et al., 2010), growth patterns of single animal cells in vitro cannot easily be associated to a simple growth mode, such as mono-exponential, linear, or bilinear. Instead, single animal cells show complex growth patterns that remain poorly understood to date. Note that to avoid ambiguity we hereon call \u2018growth speed\u2019 the time derivative of mass or volume (e.g., $\\frac{dV}{dt}$) and \u2018mass- or volume-specific growth rate,\u2019 the growth speed divided by mass or volume (e.g., $\\frac{1}{V}\\frac{dV}{dt}$).\n\nSo far, studies on single animal cell growth have focused on patterns observed at timescales ranging from several hours to a cell cycle. For HeLa cells, growth was reported to couple with cell size, thus contributing to cell size homeostasis (Cadart et al., 2018; Kafri et al., 2013). These cells were shown to grow, while in G1, at a faster-than-average volume-specific growth rate if they were born smaller than average (Cadart et al., 2018). This finding was paralleled by the observation that inhibition of cell cycle progression or growth pathways has antagonistic effects on mass-specific growth rate or cell cycle progression, respectively (Ginzberg et al., 2018). A second type of growth pattern was identified in studies measuring cell mass and showed an association between mass-specific growth rate and cell cycle progression or cell age. One study showed that in L1210 cells that undergo polyploidization mass-specific growth rate follows a bell-shaped dependency on mass over the course of each cell cycle, independently of the increasing mass of the cell as ploidy increases (Mu et al., 2020). This suggests that the bell-shape pattern of mass-specific growth rate is a function of cell cycle progression, not mass itself. Two other studies reported that the mass growth speed of several cell types displayed periodic oscillations. Although the characteristics of the oscillations identified differ in the two studies, these results show that mass growth follows an oscillatory pattern that depends on time since birth (Kesavan et al., 2014) or time until division (Liu et al., 2020).\n\nAt shorter timescales (1 hr or less), single adherent cells display cell volume (Cadart et al., 2018) and cell mass (Son et al., 2012; Liu et al., 2020) growth trajectories that vary in time and across cells. These fluctuations have not yet been analyzed in detail, and their origin remains poorly understood. Mass or volume changes in a given time interval are the combined consequence of biosynthesis (via transcription and translation) and mechanisms that import or export mass (import of molecules via endocytosis/exocytosis) (Son et al., 2015b) or volume (import of water via osmotic balance, hydrostatic pressure, and membrane turnover) (Cadart et al., 2019). Variability in growth can thus result from variability in either or both categories of mechanisms. While seminal studies have revealed the origins of \u2018noise\u2019 in transcription in animal cells (Raj et al., 2006; Padovan-Merhar et al., 2015), the processes leading to noisy mass and volume growth in animal cells still need exploration.\n\nCrucially, with most of the above-cited studies focusing on cell mass, volume growth remains poorly characterized, although it is clear that it follows independent patterns from cell mass throughout the cell cycle (Zlotek-Zlotkiewicz et al., 2015; Miettinen et al., 2019; Son et al., 2015a). Regarding cell volume, open questions remain regarding both the identification of a mean growth mode (e.g., linear or mono-exponential), and on the determination of the fluctuations around this trend. While the study of mean trends is possible with medium-size datasets (hundreds of cells), the study of fluctuations in growth requires much larger datasets (thousands of cells), which remain difficult to generate for animal cells. In a previous study (Cadart et al., 2018), we dynamically measured the volume of single adherent animal cells using a fluorescence exclusion technique (FXm) (Cadart et al., 2017). Our results indicated that, on average, volume growth speed increases with cell volume, but the data obtained were not sufficient for deeper analysis. Here, we report an improvement of the FXm method that produces higher throughput in volume readouts. We obtained a dataset of around 1700 single-cell volume curves of HeLa cells, combined with the tracking of key cell cycle transitions (birth, G1/S, and mitosis). The data show that volume-specific growth rate depends on both cell cycle phase and cell volume. Our unprecedented statistical resolution also allows us to investigate the variability in volume growth and to show that it arises from constant-amplitude additive fluctuations of growth speed rather than from fluctuations of the specific growth rate.\n\n## Results\n\n### An improved FXm method produces high-throughput dynamic measurements of single-cell volume\n\nTo obtain high-throughput measurements of volume growth of single cells, we improved the fluorescence exclusion-based measurement (FXm) of cell volume we previously developed (Zlotek-Zlotkiewicz et al., 2015; Cadart et al., 2017). Briefly, this method relies on seeding cells in chambers of known height in the presence of a fluorescent probe (10 kDa dextran) that does not enter or harm the cell (Figure 1a and b). Since the cell excludes the dye, the measured fluorescence in the area containing a cell is negatively proportional to the volume of that cell. We combined these volume measurements with cell cycle phase analysis using the hgeminin-GFP part of the FUCCI system (Sakaue-Sawano et al., 2008; Sakaue-Sawano et al., 2013), the expression of which marks S phase entry (Figure 1c). We performed four independent 24-hr-long experiments in which we imaged thousands of cells growing asynchronously in the FXm chambers (Figure 1\u2014figure supplement 1). To extract cell volume through time for each individual cell, we developed an automated cell tracking algorithm (Figure 1b) and verified that the segmentation and lineage tracing (recording of mitotic events) were accurate by manual inspection of each single-cell trace. Birth was defined as the onset of cytokinesis, the G1/S transition was defined as the onset of increase in hgeminin-GFP intensity (Figure 1c and d) and mitosis was defined as the onset of the mitotic volume overshoot (Cadart et al., 2018; Zlotek-Zlotkiewicz et al., 2015; Son et al., 2015a). Using this approach, we obtained 1696 verified single-cell volume trajectories that contained all available cell cycle information (time of birth, time of G1/S, and/or time of entry into mitosis, Figure 1e and f). This high-quality, high-throughput measurement of animal cell volume was used to analyze the patterns and regulation of cell volume growth with unprecedented statistical resolution.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/70816/elife-70816-fig1-v2.jpg)\n\n**Figure 1.:** (a) Representative image of a field acquired in an FXm device. The FXm chamber contains a fluorescent dye (Dextran-Alexa-645) that is excluded from the cells and the pillars of the chamber. Hence, the pillars appear in black (large circles), cells are gray, and the background is bright. (b) FXm images are automatically segmented using custom MATLAB software, then volume is calculated for each time point. (c) Same field as in (a) but imaging hgeminin-GFP, a cell cycle marker expressed in the nuclei of the cells. (a\u2013c: scale bar indicates 100 \u00b5m). (d) Representative curve of hgeminin-GFP over time in the cell cycle for a single cell. The change of slope in the signal marks the G1/S transition. (e) Histogram of the duration of each single-cell volume curve measured. We obtained a total of 1696 curves. (f) 72 representative single-cell volume curves from birth to mitosis. (g) Representative single-cell volume curve (middle panel) showing trends at timescales of several hours (left panel) and around 1 hr (right panel). Volume growth speed $\\frac{dV}{dt}$ was defined from these plots as the time derivative of volume vs. time.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70816/elife-70816-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Experiment 1: mean \u00b1 SD = 102 \u00b1 111 \u00b5m3\u00b7h\u20131, n = 50,708; experiment 2: mean \u00b1 SD = 102 \u00b1 142 \u00b5m3\u00b7h\u20131, n = 23,739; experiment 3: mean \u00b1 SD = 101 \u00b1 196 \u00b5m3\u00b7h\u20131, n = 4570; experiment 4: mean \u00b1 SD = 96 \u00b1 138 \u00b5m3\u00b7h\u20131, n = 12,494.\n\n### Volume growth is close to exponential for a wide range of volumes\n\nFirst, we considered the growth mode of cells \u2013 a central question to understanding both cell growth and size homeostasis (Schmoller, 2017; Zatulovskiy and Skotheim, 2020). Typical limit cases are linear or exponential growth. As previously reported for adherent cell types (Liu et al., 2020; Cadart et al., 2018), single-cell trajectories show highly variable behavior (Figure 1g), making it difficult to associate them with any simple behavior. We turned to an alternative method based on population averages. We reasoned that, in the case of an average simple exponential growth model, growth speed should increase, on average, linearly with volume and the slope $\\alpha$ followed by $\\frac{dV}{dt}$ vs. $V$ (formally the trend of a conditional average) can be used to define an average volume-specific growth rate (Cadart et al., 2019). All four experiments consistently showed that, for volumes higher than 1800 \u00b5m3 (and lower than 4000 \u00b5m3), growth speed increases on average linearly with volume, with a slope $\\alpha$ that was very close to the (unconditional) average of $\u27e81/V\u00a0dV/dt\u27e9$ (Figure 2a). The agreement of these two different estimates supports the idea that average exponential growth describes these data well. All four experiments were also very similar with values of $\\alpha$ ranging from 0.038 to 0.047 h\u20131. Thus, we conclude that volume growth is faster than linear, and on average close to exponential in this range of cell sizes. Cells with volumes below 1800 \u00b5m3 did not follow the same trend, likely due to a different pattern of growth early in the cell cycle (see below).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/70816/elife-70816-fig2-v2.jpg)\n\n**Figure 2.:** (a) Top panel: growth speed $\\frac{dV}{dt}$ (in units volume/time) as a function of volume for each experiment (points are average bins of width = 250 \u00b5m3, the ribbon represents the standard error on the mean for each bin, N = 4, n > 25 different cells in each bin). Bottom panel: table showing the results of the linear fit of growth speed as a function of volume for each experiment. Derivatives are computed on 50 min windows. (b) Specific volume growth rate, defined as the binned average of $\\frac{1}{V}\\frac{dV}{dt}$ at fixed volume $V$, plotted as a function of volume (average bins of width = 200 \u00b5m3 \u00b1 standard error on the mean). Vertical dashed lines indicate the range where growth rate increases linearly with volume, between 1800 and 3100 \u00b5m3. (dots are average bins of width = 200 \u00b5m3, the ribbon represents the standard error on the mean for each bin, N = 4, n > 100 different cells per bin). (c) Same as (b) but grouped by cell cycle stage (G1 vs. S-G2).\n\n### Specific volume growth rate depends on cell cycle progression\n\nWhen we considered in more detail an estimated volume-specific growth rate, defined by the conditional average of $\\frac{1}{V}\\frac{dV}{dt}$ vs. volume $V$ (which has units 1/time), as a function of volume, we observed a slight but significant increase with volume for cells between 1800 and 3100 \u00b5m3 (Figure 2b). Outside this range, the trend is more complex but the robustness of the observed behavior may be limited due to the lower number of observations at these extreme sizes. We hypothesized that one potential cause of increase in volume-specific growth rate during the cell cycle could be a cell cycle stage dependency, which we could test using data on the transition from G1 to S-G2 phase. To address this question, we repeated the plot of volume-specific growth rate as a function of volume, also grouping the data by cell cycle phase (G1 vs. S-G2). This analysis shows that estimated volume-specific growth rate is nearly constant with volume for a given phase, and growth rate in S-G2 is about 15% higher than in G1 (Figure 2c). These results show that progression from G1 into S/G2 is accompanied by an increase in the volume-specific growth rate.\n\n### Newborn cells show a distinct pattern of volume growth\n\nThe observation that small cells show a different growth behavior than the rest of the cells (Figure 2a and b) prompted us to test whether growing cells could follow different patterns early in the cell cycle. We examined volume growth speed $\\frac{dV}{dt}$ as a function of time from birth for the three experiments that had more than 80 cells (to ensure that we had enough statistical power, even when analyzing each experiment separately). In all three experiments, volume growth speed showed a fast increase during the first 1.3 hr after birth and increased more slowly and steadily after that point in time (Figure 3a). This suggests that during the initial 1.3 hr after birth, cells follow patterns different from those observed during the rest of the cell cycle. To gain more insight into the details of volume growth during this initial period, we pooled the three experiments together and grouped cells by their volume at birth. The largest cells at birth started their cell cycle with a negative growth speed (meaning that they were losing volume) during the first hour after birth. Small, intermediate, and large cells ultimately converged on the same growth speed at 1.3 hr after birth (Figure 3b). We note that in our data, birth is defined as the first time point of cytokinesis onset (a process that is then typically completed within 20\u201330 min; Cadart et al., 2018), thus the 1.3 hr period comprises the end of cytokinesis as well as early G1 phase. The fact that volume follows a distinct pattern early in the cell cycle suggests a different mechanism of volume growth regulation as cells re-enter interphase.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/70816/elife-70816-fig3-v2.jpg)\n\n**Figure 3.:** (a) Growth speed (proxied by the discrete derivative $\\frac{dV}{dt}$ taken on 50 min windows) as a function of time from birth (onset of cytokinesis) for the three experiments that yielded more than 80 different cells. The vertical line indicates 1.3 hr after birth. Circles are averages bins containing at least 100 cells (N = 3). (b) Zoom of the first 2 hr of the data shown in panel a with the data pooled by volume at birth (blue, orange, and pink lines correspond, respectively, to sliding averages of the largest 20% birth volume, smallest 20% birth volume, and the rest of the cells, the dashed horizontal line indicates a growth speed equal to 0, the black vertical line indicates 1.3 hr from birth).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70816/elife-70816-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The solid lines represent averages (each bin contains at least 100 cells) and the ribbon the standard error on the mean. Black vertical line indicates 1.3 hr after birth (N = 4).\n\n### Volume growth rate fluctuations decrease with cell volume\n\nOur analyses so far indicate that, excluding the initial (Figure 3) stage of the cell cycle, volume growth is close to exponential for a wide range of volumes (Figure 2a), at a rate that changes with cell cycle phase (Figure 2c). Next, since little is known about the cell-specific variations around this average behavior, we set out to evaluate the fluctuations, focusing on the range of volumes for which the growth behavior is well characterized (cells between 1800 and 3100 \u00b5m3 [Figure 2b] and starting 1.3 hr after birth [Figure 3a]). Volume growth is the result of the combination of both biosynthetic pathways that act over the cell cycle and homeostatic pathways (that typically act at shorter timescales) that maintain a balance of cellular osmosis, hydrostatic pressure, and density (Cadart et al., 2019; Neurohr and Amon, 2020). We first quantified the variability of volume growth by the variance of the specific growth rate, proxied by $\\frac{1}{V}\\frac{dV}{dt}$ , for cells grouped in different volume bins, and we found that this variance decreases rapidly with the timescale $dt$ over which one takes the discrete derivative (Figure 4a). Hence, the timescale must be specified for a meaningful comparison of the size of such fluctuations (e.g., across different studies). Moreover, we found that, at fixed timescale of the discrete derivative, the variance in specific growth rate decreases with volume (Figure 4a). Since this observation was robust across all derivative timescales, we decided to focus on the fluctuations of growth rate measured at the shortest accessible timescale (50 min, corresponding to five frames). When we plotted together the mean and standard deviation of specific growth rate as a function of volume (Figure 4b), the standard deviation of specific growth rate clearly decreased with volume.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/70816/elife-70816-fig4-v2.jpg)\n\n**Figure 4.:** (a) Variance of specific growth rate quantified by $\\frac{1}{V}\\frac{dV}{dt}$ using discrete derivatives of fixed volume bins calculated over increasing time windows (x axis) and for groups cells of increasing volume (colored lines). Circles are averages computed for bins that contain at least 100 different cells, N = 4. (b) Mean (line) and standard deviation (gray ribbon) of growth rate (quantified by $\\frac{1}{V}\\frac{dV}{dt}$ using discrete derivatives on fixed volume bins and a timescale of 50 min) plotted as a function of volume and by phase. Values are calculated on sliding windows of 200 \u00b5m3, and bins contain at least 100 cells (N = 4).\n\n### Growth rate fluctuations are dominated by constant noise\n\nTo better understand the observation of a reduction in growth rate noise with cell volume, we used a stochastic mathematical model describing cell growth (see Apppendix 1 and Figure 5a). This model has a long history of applications outside biology (Cox, 1997; Lo et al., 2011), but it was recently proposed by Pirjol et al., 2017 in the context of cell growth. The model considers that cells on average grow exponentially and describes fluctuations around this mean growth as noise:\n\n$$\n\\frac{dV}{dt}=\\alphaV+\u03bd_{\\alpha}V^{\\gamma}\n$$\n\nwhere $\\alpha$ is the mean specific growth rate and $\u03bd_{\\alpha}$ is a white noise term. Thanks to the factor $V^{\\gamma}$, this equation interpolates the limit cases of \u2018additive\u2019 (constant amplitude) fluctuations and \u2018multiplicative\u2019 (volume-specific) fluctuations (Figure 5a, see also Appendix 1 for details and Figure 5\u2014figure supplement 1a for the validation with simulations). Central to the model is the definition of the parameter $\\gamma$ (0 \u2264 $\\gamma$ \u2264 1) that sets the relative weight between two kinds of noise: when $\\gamma=1$, we obtain $dV/dt=\\alpha+\u03bd_{\\alpha}V$, and the model describes multiplicative specific growth rate fluctuations (Figure 5b). These fluctuations are symmetric with respect to a reference specific growth rate $\\alpha$, hence they can be interpreted as emerging from noise in biosynthetic rates (e.g., surface synthesis, protein synthesis, etc.). When $\\gamma=0$, the model describes an additive noise of constant amplitude, acting symmetrically on growth speed $dV/dt$ , which can be interpreted as resulting from any of the homeostatic processes that contribute to setting steady-state volume (e.g., homeostatic constraints of biophysical origin on hydrostatic pressure, osmotic pressure, etc.). The model also allows for intermediate values of $\\gamma$, which would effectively describe the combined presence of additive and multiplicative noise sources on growth.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/70816/elife-70816-fig5-v2.jpg)\n\n**Figure 5.:** (a) Schematic representing the exponential growth of a cell (dashed blue circle) adding volume $dV$ (solid blue circle) proportionately to its volume at a rate $\\alpha$ and to timescale $dt$. Two limit cases for fluctuations around this baseline exponential growth are a \u2018multiplicative noise,\u2019 which is volume-specific, hence increases with volume, or an \u2018additive\u2019 noise, whose amplitude is constant. (b) Mean-normalized variance (Fano factor) of the conditional \u2018log return\u2019 $dq|_{V}=[log\u2061(V(t+dt))\u2212log\u2061(V(t))]|_{V}$ , computed in sliding volume bins, and plotted as a function of volume. The dashed lines represent the theoretical prediction of the model in the case of pure multiplicative (orange dashed line) or pure additive noise (green dashed line), assuming that the amplitude of the noise is set by the fluctuations in the smallest volume bin (yielding a constant line with an intercept $b=Fano(dq|_{V=1800\u00a0\\mum^{3}})$ for multiplicative noise, and a power law $\u223cb/V^{2}$ with the same condition for additive noise). (c) The Fano factor quantifies fluctuations robustly over different timescales. Left panel: comparison of the variance-specific growth rate (quantified by $\\frac{1}{V}\\frac{dV}{dt}$ using discrete derivatives on fixed volume) as a function of the timescale of the discrete derivatives in the data (symbols) and the theoretical model predictions (solid gray lines) for different volume bins. Right panel: the Fano factor of the conditional log return $dq|_{V}$ defined above (same symbols) is robust to timescale changes, as predicted by the model.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70816/elife-70816-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) Theoretical model predictions agree with direct simulations of the stochastic exponential growth model. The plot compares simulations (circles) with the theoretical predictions (lines) for the Fano factor of the conditional log return (the logarithmic size increment at fixed volume) from the same set of parameters. Model parameters were derived from a fit of the pulled experimental data from experiments 1 and 2 in the volume range 1800\u20134000 \u00b5m3: \u03b1 = 0.038\u00b7h\u20131, \u03c3 = 41.5 (\u00b5m3)1-\u03b3\u00b7h-(1/2), \u03b3 = 0.12. (b) Mean-normalized variance (Fano factor) of the conditional \u2018log return\u2019 $dq|_{V}=[log\u2061(V(t+dt))\u2212log\u2061(V(t))]|_{V}$ , computed in sliding volume bins, and plotted as a function of volume and phase.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70816/elife-70816-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (a) Example of segmentation areas of increasing dimensions drawn around a cell to calculate its volume. (b) Calculated cell volume plotted as a function of the segmentation area (each color corresponds to a different cell, vertical lines indicate the range of areas used by the automated segmentation algorithm to calculate volume). (c) Zoom of plot (b) for the range of areas used by the segmentation algorithm to calculate cell volume. The plot shows that there is no trend between calculated volume and the segmentation area (provided that this is larger than the cell) and that the errors are within \u00b12%. (d) Representative image illustrating the control used to compare volume and background fluctuations. This experiment compares background areas with areas of the same size containing a cell (scale bar: 100 \u00b5m). (e) Representative plot showing the approach used to detrend the curves. Left: for each cell and background area, volume was calculated over time, and an average volume trend computed over sliding windows of eight frames (80 min) was calculated (solid red line). Right: the average volume trend was subtracted from the volume curve to obtain a detrended volume curve. (f) On cells that do not grow (measured for 9 s every 30 ms), volume fluctuations (mean [SD] = 11.2 \u00b5m3, n cells = 97) are very close to those of the background (mean [SD] = 3.60 \u00b5m3, n background areas = 60) and much smaller to volume fluctuations of cells that grow and are measured every 10 min (mean [SD] = 59.5 \u00b5m3, n cells = 143).\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/70816/elife-70816-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (a) Cells measured every 20 s (n = 177) and linearly detrended reach a covariance of 0 at a lag of 760 s. (b) As a control, the background fluctuations are not autocorrelated (20 s, n = 92), providing further evidence that cell volume fluctuations likely have biological origin. (c) The autocovariance analysis for cells measured every 10 min confirms that fluctuations covary for a lag of 10\u201320 min.\n\nAn important prediction of the model (Figure 5c) is that the mean-normalized variance of growth rate (Fano factor) is not dependent on the timescale of the derivative. When we examined our experimental data, we observed that this was indeed the case (Figure 5c). The Fano factor of growth rate depends on $\\gamma$, the mean specific growth rate $\\alpha$, and constant $\\sigma$ as follows:\n\n$$\nFano(dq)|_{V}=\\frac{\\sigma^{2}V^{2(\\gamma\u22121)}}{\\alpha_{q}(V)}\n$$\n\nwhere $\\alpha_{q}$ is the average log-return rate at fixed volume (see Appendix 1), and $dq|_{V}=[log\u2061(V(t+dt))\u2212log(V)]|_{V}$ is a conditional \u2018log return\u2019 and quantifies the volume-specific growth rate in the presence of possible multiplicative fluctuations. Importantly, other estimators of variability such as variance, SD, or CV do depend on the timescale of the discrete derivatives in both the model and the data. We thus decided to use the Fano factor to estimate the variability in growth rate. We found that the Fano factor of volume growth rate (measured using the \u2018log return\u2019 $dq$) decreased rapidly with volume and that the trends measured in G1 and S-G2 overlapped well (Figure 5\u2014figure supplement 1b). This suggests that the decay in volume growth rate variability is independent of cell cycle phase. We thus pooled the two phases together and compared the decay with our model predictions (Figure 5b). Comparison of the model predictions for the two extreme cases ($\\gamma=1$ and $\\gamma=0$) and the data shows that the data are very close to a scenario where $\\gamma\u22430$ and fluctuations are almost entirely additive (Figure 5b).\n\nTo estimate whether such additive noise came from extrinsic experimental noise, we conducted a series of experimental controls. We first observe that, to measure cell volume, we use areas much larger than the cell, thus naturally preventing from errors induced by poor segmentation. Importantly, previous validation of the FXm (Zlotek-Zlotkiewicz et al., 2015; Cadart et al., 2017) as well as new controls (shown in Figure 5\u2014figure supplement 2a\u2013c) show that FXm accuracy is independent of the excess area around the cell used to calculate volume. A recent study also showed that volume measurement using FXm is not altered by cell shape changes (Venkova et al., 2021). As a second test, we compared the fluctuations of detrended cell volume curves to background areas (Figure 5\u2014figure supplement 2d and e). This analysis shows that cell volume fluctuations are about 20-fold larger than those of the background (Figure 5\u2014figure supplement 2f). Hence, technical sources of noise (which equally impact background and cell volume measurements) contribute minimally to measured volume fluctuations. Third, we measured volume fluctuations on cells imaged at high temporal resolution (every 30 ms) for time spans of 9 s. At this timescale, cells showed much smaller fluctuations compared with cells measured every 10 min (approximately sixfold less), thus strongly suggesting that the volume fluctuations we report are of biological origin and only appear at timescales larger than 9 s (Figure 5\u2014figure supplement 2f). To identify the timescale of such fluctuations, we performed 20 s time-lapse experiments over 1 hr and subtracted a linear trend from the data to compensate for the average growth. The autocovariance function of these data shows that fluctuations decay over a timescale of ~10 min (Figure 5\u2014figure supplement 3a and b), and this plot matches the analysis of the 10 min time-lapse experiments (Figure 5\u2014figure supplement 3c). Overall, this analysis shows that volume fluctuations come principally from a constant-amplitude noise in instantaneously added volume, rather than from random variations of the volume-specific growth rate itself.\n\n## Discussion\n\nMost recent studies on animal cell growth have considered the patterns of dry or buoyant mass (Liu et al., 2020; Ghenim et al., 2021). Here, we complement this knowledge by providing a high-throughput dataset of volume trajectories in adhering cells, allowing us to compare the behavior of these different parameters.\n\nDuring a period following birth that lasts on average about 1.3 hr, volume growth displays a pattern where cells of intermediate and small volume grow slowly while larger cells at birth lose volume. This is very different from the mass pattern previously reported (Miettinen et al., 2019). Our volume curves exclude the period in mitosis where cell volume transiently increases by 10\u201330% in volume called the mitotic volume overshoot (Zlotek-Zlotkiewicz et al., 2015; Son et al., 2015a). This post-birth period also spans both the period of completion of cytokinesis and the beginning of G1 phase, ruling out the hypothesis that mitosis alone determines the early volume growth pattern. Several studies recently showed that the rate of cell spreading associates with cell volume loss because of the coupled mechano-osmotic regulation of cell volume (Venkova et al., 2021; Guo et al., 2017; Perez Gonzalez et al., 2018; Adar and Safran, 2020; Xie et al., 2018). We speculate that this phenomenon likely contributes to the decrease in volume as large cells spread following mitotic cell rounding (Cadart et al., 2014; Lancaster and Baum, 2014) and division. Additionally, while mass growth is known to pause briefly during mitosis, from anaphase to late cytokinesis (Miettinen et al., 2019), cell volume undergoes a drastic reversible increase during the same period, causing a drop in cellular density (Zlotek-Zlotkiewicz et al., 2015; Son et al., 2015a). While mass growth seems to start rapidly after cytokinesis (Miettinen et al., 2019), ours and previous observations (Tzur et al., 2009) suggest that volume growth is initially slower. The post-birth period we identify therefore points to an interesting period of the cell cycle where regulatory mechanisms related to mechanical tension (cell spreading), osmotic pressure (volume overshoot recovery), and density (balance between mass and volume increase) compete until volume-specific growth rate reaches a steady behavior that lasts for the rest of the interphase.\n\nThroughout the cell cycle, mass growth has been reported to oscillate periodically in HeLa cells (Liu et al., 2020; Ghenim et al., 2021). We find that this phenomenon is not simply reflected by cell volume. We found some oscillations in volume growth speed as a function of time from birth only in birth volume outliers, and not matching the period and amplitude of the mass oscillations reported previously (Liu et al., 2020; Ghenim et al., 2021; Figure 3\u2014figure supplement 1). This finding suggests that dry mass biosynthesis and volume growth, while being interrelated, can be independent in specific phases of the cell cycle. It is commonly assumed that volume follows mass, due, for example, to osmotic pressure changes (Cadart et al., 2019; Koivusalo et al., 2009; Hoffmann et al., 2009). Under this assumption, an average exponential growth in volume is explained by an exponential growth in mass. Investigation of the molecular mechanisms coupling mass and volume growth in animal cells is still incomplete. There is consensus on a role of mTORC1 (Demian et al., 2019), mTORC2 (Eltschinger and Loewith, 2016; Berchtold et al., 2012), and of the Hippo pathway (Perez-Gonzalez et al., 2019), and one study showed that the YAP/TAZ/Hippo pathway may also regulate cell volume independently of mTORC and protein synthesis (Perez-Gonzalez et al., 2019), suggesting that a decoupling can occur at the regulatory level. Of note, time variability in ribosome levels and autocatalysis would lead to a fluctuating mass-specific biosynthesis rate, hence to multiplicative fluctuations (not additive) in mass growth rate. Thus, under the hypothesis that volume strictly follows mass, volume would also likely exhibit multiplicative fluctuations. Studies combining measurements of cell shape, mass, and volume at high time resolution will be particularly important to clarify the complex interplay between these parameters.\n\nWe find that volume-specific growth rate is 15% higher in S-G2 than in G1. Mathematical frameworks and experiments clearly showed that growth rate modulation as a function of cell size (Cadart et al., 2018; Kafri et al., 2013; Ginzberg et al., 2018) contributes to cell size homeostasis. The other identified growth modulations along the cell cycle (Mu et al., 2020; Tzur et al., 2009) and the previously reported mass oscillations (Liu et al., 2020; Ghenim et al., 2021) do not appear to be cell size dependent and are thus unlikely to contribute to cell size control. The mechanisms driving such growth variations and their role in cell physiology remain mysterious. The molecular pathways underlying size homeostasis (Tan et al., 2021; Liu et al., 2018; Zatulovskiy et al., 2020) may provide some explanations, but the identification and investigation of novel biosynthetic regulatory mechanisms may also be important. For example, the 15% increase in volume-specific growth rate in S-G2 may be the result of a similar increase in protein biosynthesis, but this would not meet the common expectations, given that both transcript levels (Padovan-Merhar et al., 2015; Swaffer et al., 2021) and ribosome amounts (Scott et al., 2010) scale linearly with cell volume \u2013 at least within the physiological range of cell volume (Neurohr et al., 2019). Future experiments may determine whether other factors such as DNA copy number, translation rate (Ingolia, 2014), or import of nutrients and small molecules (Son et al., 2015b) play a role in the observed volume growth rate change in S-G2.\n\nThe high number of curves in our study allows us to investigate systematically the fluctuations in volume growth. Our observation that volume growth shows additive fluctuations counters the idea that the volume-specific growth rate itself fluctuates (Figure 5a and b). What could be the origin of such additive noise and how can we explain the absence of noise on the rate itself? Our controls show that extrinsic experimental noise only minimally contributes to the additive fluctuations we measure (Figure 5\u2014figure supplement 2) and that the decay timescale of the constant-amplitude fluctuations is 5\u201310 min (Figure 5\u2014figure supplement 3a). Cell volume is a physical parameter that results from an equilibrium of cell hydrostatic pressure, osmolarity, and membrane tension at timescales of minutes to hours (Cadart et al., 2019) and much less understood mechanisms that maintain cell density (Neurohr and Amon, 2020; Oh et al., 2021; Knapp et al., 2019; Delarue et al., 2018) by coupling mass and volume at timescales of several hours. The timescale at which we observe the fluctuations and the additive nature of these fluctuations suggest that the measured volume variations may come from the mechano-osmotic processes involved in volume regulation at the minute timescale. Future experiments perturbing these processes (Venkova et al., 2021; Guo et al., 2017; Perez Gonzalez et al., 2018; Adar and Safran, 2020; Jiang and Sun, 2013) while tracking single-cell volume at high temporal resolution may help understand why noise for such processes is additive. It is also remarkable that no multiplicative noise on volume-specific growth rate is observed. In a scenario where volume is unidirectionally coupled to mass, even if mass growth rate is noisy (Shahrezaei and Marguerat, 2015), one could potentially obtain an apparent volume growth rate with fluctuations that are only due to the coupling. None of the available studies considering cell mass has addressed the question of whether mass biosynthesis fluctuations are themselves mass specific. Many important findings regarding mass growth were made using the Suspended Mass Resonator (Son et al., 2012; Mu et al., 2020; Cermak et al., 2016; Godin et al., 2010). However, because it measures cells in suspension, volume fluctuations associated to fast cell shape changes (such as cell spreading or cell migration) are likely minimal in these conditions. The comparison of the noise of mass and volume growth rate on these cells with that of adherent cells obtained with other measurements methods (Liu et al., 2020) could be informative.\n\nFinally, our analysis shows that growth rate variability, quantified by variance, SD, or CV is strongly dependent on the timescale used to evaluate discrete derivatives (Figures 4a and 5c). This result poses an important caveat for the quantitative comparison of growth rate fluctuations across different studies as absolute values of growth rate fluctuations evaluated in different ways and on different timescales (or smoothing windows) may strongly differ. In general, single-cell growth studies are currently limited by the development of theoretical tools that could quantify the contribution of the different determinants of growth such as size, time, and cell cycle phase that act at different timescales. These tools, together with experimental approaches that allow the combined measurement of several size parameters (mass, volume) concomitantly, are needed to further elucidate the growth patterns of animal cells.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HeLa hgeminin-GFP</td>\n      <td>Gift form Buzz Baum lab</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DMEM, high glucose, GlutaMAX Supplement</td>\n      <td>Thermo Fisher</td>\n      <td>61965026</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DMEM, high glucose, no glutamine, no phenol red</td>\n      <td>Thermo Fisher</td>\n      <td>31053044</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>GlutaMAX</td>\n      <td>Thermo Fisher</td>\n      <td>35050061</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Fetal bovine serum</td>\n      <td>Biowest</td>\n      <td>S1810-500</td>\n      <td>Use at 10%</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Penicillin/streptomycin</td>\n      <td>Thermo Fisher</td>\n      <td>15070063</td>\n      <td>Use at 1% final</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Dextran, Alexa Fluor 647; 10,000 MW, Anionic, Fixable</td>\n      <td>Sigma-Aldrich</td>\n      <td>D22914</td>\n      <td>Stock at 10 mg/mL in PBS</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Fibronectin</td>\n      <td>Sigma-Aldrich</td>\n      <td>F1141-1MG</td>\n      <td>50 \u00b5g/mL in PBS</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Software for FXm image analysis and volume calculation</td>\n      <td>Available upon request to the authors</td>\n      <td>RRID:SCR_001622</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell line and cell culture\n\nHeLa cells expressing hgeminin-GFP were a kind gift from Buzz Baum\u2019s lab (UCL, London, UK). Cells were cultured in DMEM-GlutaMAX media and imaged in DMEM without phenol red, supplemented with GlutaMAX. Both media were supplemented with 10% FBS and 1% penicillin-streptomycin. Cell lines were tested monthly for mycoplasma contamination using the PCR Mycoplasma Test Kit I/C from PromoCell and always came back negative.\n\n### Volume measurement with FXm\n\nThe detailed protocol for FXm was described previously (Cadart et al., 2017), and the design is described in Cadart et al., 2018. Briefly, measurement chambers were replicated in PDMS (crosslinker:PDMS, 1:10). To prevent leakage of the fluorescent dextran from the chamber, 4 mm high PDMS cubes were stuck on top of the inlets before punching 2 mm diameter holes for every inlet. The chamber was then irreversibly bound to the 35-mm-diameter glass-bottom FluoroDish by plasma treatment, coated with fibronectin 50 (\u00b5g/mL) for about 30 min, then rinsed and incubated in phenol-free media overnight. To ensure that cells were in a similar growth phase when starting an experiment, cells were seeded at constant density (1.9 \u00d7 104 \u00d7 cm\u20132) 2 days prior to the experiment. The day of the experiment, cells were detached by incubating with EDTA for 15\u201320 min, recovered, and seeded at intermediate density in the measurement chamber (Figure 1a). 4 hr after seeding, the media was replaced with equilibrated media containing 1 mg/mL of 10 kDa Dextran Alexa-645. Imaging started 2\u20134 hr after changing the media. While imaging, cells were kept at 37\u00b0C with 5% CO2 atmosphere. Imaging was performed on an inverted epifluorescence microscope (Ti inverted [Nikon] or DMi8 inverted [Leica]) equipped with an LED excitation source. Images were acquired with a CoolSnap HQ2 camera (Photometrics) or an ORCA-FLASh4.0 camera (Hamamatsu). Images were obtained using a low-magnification (10\u00d7), low numerical aperture objective (NA = 0.3, phase) every 10 min (FXm measurement, main dataset), and 30 min (hgeminin-GFP imaging). Images were taken every 20 s for the timescale analysis (Figure 5\u2014figure supplement 3a and b) and every 30 ms for the background fluctuation analysis (Figure 5\u2014figure supplement 2f).\n\n### Software analysis\n\nTo extract cell volume and cell cycle information from the images, we used a custom-made MATLAB software (Cadart et al., 2017). The software contained an image analysis algorithm previously optimized (Cadart et al., 2017) that performed successive image treatments to normalize the background intensity and correct for background inhomogeneity (e.g., due to an inhomogeneous light source). The algorithm then segmented the pillars and background to calibrate the fluorescence intensity signal using: (i) the average background intensity to calculate $I_{max}$ , (ii) the average intensity under the pillars in the chamber to calculate $I_{min}$, and (iii) the known height of the chamber. The software then segmented and tracked single cells (Figure 1b) throughout the duration of the movie. If a cell divided, the event was recorded and the lineage tree for that cell recorded. Finally, the cell volume and hgeminin-GFP intensity were calculated over the segmented area for each cell and each movie frame.\n\nThe background normalization algorithm required the user to manually set several parameters. To ensure that these parameters were accurately chosen, a graphical user interface allowed the user to visualize the results of the image treatment given a set value for each parameter and assess its validity. This allowed, after a few trial and errors, setting a set of parameter values that were optimal for each set of movies obtained in the same FXm chamber. There were four steps to set these parameter values. First, to detect the pillars and later calculate $I_{min}$, the user manually set a threshold that segmented the pillars (from 0 to 1 on a normalized image), the user also set a \u2018distance of influence\u2019 around each pillar that consisted in an area larger than the pillar where cell volume would not be calculated to prevent potential artifacts of volume calculation due to a shadow caused by the pillars (see Cadart et al., 2017). Second, to estimate the background and later calculate $I_{max}$, the user chose a threshold to detect the cells (from 0 to 1 on a normalized image) and set the parameter called \u2018noise factor.\u2019 Third, using these parameter values, the image treatment algorithm was applied to the image. Fourth, on the resulting renormalized image, the user set the parameter values for cell segmentation and tracking: the average size of the mask and the threshold value to detect the cell, the maximum moving distance for a cell from one image to the next, the radius around each detected cell (to prevent measuring cells that were too close to each other), the minimum cell size and a parameter \u2018sigma\u2019 that represented a threshold allowing splitting of an object into two distinct object (e.g., after cell division or when two cells are near each other).\n\nDuring the optimization phase of the analysis pipeline, we reran the analysis on the same movies using different parameter values to test the robustness of the volume calculated to variabilities in user-defined parameter values. The volume curves obtained were very similar and indicated that errors in volume measurement due to variability in parameter settings were negligible. Once the algorithm parameters were set, the software processed hundreds of movies in batch mode using parallel processing to increase the speed of processing. The analysis of a set of movies coming from one experiment took 2\u20133 full days of computer processing. At the end of this step, we obtained hundreds of movies showing the tracking results (Figure 1b). Each movie was then visually checked to correct any errors of segmentation.\n\n### Visual assessment and manual curation of the single-cell tracks\n\nEach single-cell trajectory was visually checked. We verified that the segmentation and lineage tracing (recording of mitotic events) were accurate. During this manual curation, we visually assessed and noted, for each cell, (i) potential frames when the volume calculated should be excluded from the analysis due to a segmentation error, and (ii) if the cell divided, the frame when the cell started rounding and the frame when the first evidence of cytokinesis occurred. We also checked for and corrected mistakes in the lineage tracking. For the first experiment analyzed, we also noted any frames where a cell was near another cell (typically right after birth when the two daughter cells are near each other or later when two cells bump into each other). We then checked that the presence of a neighboring cell was not affecting the volume curve in an obvious way. Since it did not, we stopped tracking this information for the subsequent experiments. This visual assessment and manual curation, although time consuming, was essential to our analysis because it increased our confidence that any fluctuation seen on the resulting volume curve was not due to an identifiable artifact. The resulting volume curves and hgeminin-GFP signal were then imported into R. Using a graphical user interface, each curve was plotted and the user manually selected, for each cell, (i) the beginning and the end of the mitotic volume overshoot (Cadart et al., 2018; Zlotek-Zlotkiewicz et al., 2015; Son et al., 2015a) on the volume curve and (ii) the point of increase in hgeminin-GFP intensity indicating G1/S transition (Figure 1d).\n\n### Volume curve smoothing and calculation of growth speed\n\nTo then get into the analysis of volume growth speed and growth rate fluctuations, we developed a cleaning and algorithm that would filter out the clear outliers and smooth fluctuations that are within the noise of our measurement technique. Several algorithms were tested, each time checking visually the resulting comparison of the raw volume measurement with the smoothed, filtered curve. The final algorithm selected worked in two steps. First, to filter out clear outliers, a histogram of values on sliding windows of 11 frames was established and the fourth quantile ($Q_{4}$) and interquartile range ($IQR$) of that distribution were calculated. Then, points that were above or below $Q_{4}\\pm0.9*IQR$ were removed from the volume curves. Second, a smoothing algorithm based on centered averages on sliding windows of three frames was applied. To calculate growth speed ($\\frac{dV}{dt}$), local robust linear fits of single-cell volume curves as a function of time were performed on sliding windows of five frames (all figures except Figure 4a where the fits were performed on increasingly long windows of time). The slope coefficient of the fit corresponds to the instantaneous growth speed. We compared this approach to calculating the discrete time derivative by plotting the resulting local fits from both methods and visually concluded that the robust linear fit method gave a more faithful representation of the curve fluctuations.\n\n### Background fluctuations and autocovariance analysis\n\nFor the comparison of fluctuations on cell volume curves vs. background areas (Figure 5\u2014figure supplement 2d\u2013f) and for the autocovariance analysis (Figure 5\u2014figure supplement 3), volume curves were detrended as follows: (i) for the 10 min time-lapse experiment, curves were detrended using smoothing average over windows of eight frames = 80 min; and (ii) for all other experiments (20 s and 30 m time lapse), which were shorter than 80 min, a linear robust fit was performed.\n\n### Model and simulations\n\nThe model and analytical calculations to estimate cell-to-cell variability are presented in Appendix 1. These calculations were compared with simulations based on a discrete-time realization of the Langevin equation defining the model (see Figure 5\u2014figure supplement 1).\n\n### Statistical analysis\n\nAll figure generation and statistical analysis were performed in R. Packages used were \u2018ggplot2,\u2019 \u2018gridExtra,\u2019 \u2018tidyr,\u2019 \u2018dplyr,\u2019 and \u2018robustbase\u2019.\n\n### Data availability\n\nThe dataset, C simulation code of the model, and MATLAB code for data analysis are available on the repository (Cadart et al., 2022).\n",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "1137f927-fbad-4481-94cc-c4c9fc848324",
+      "submission_id": "b8f7fc32-34c2-4e80-86f6-fb559210f5bf",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Agnese Seminara, University of Genoa Italy\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70816.sa0](https://doi.org/10.7554/eLife.70816.sa0)\n\nThe regulation of cell growth is crucial for our understanding of how cells control their size as well as how they balance cell mass and volume. While recent studies carefully measured single-cell mass trajectories during the cell cycle, revealing complex growth patterns, the volume growth patterns of animal cells are poorly understood. In this interesting study, Cadart et al. now present high-precision measurements of 1700 HeLa cell growth trajectories and offer evidence for the mechanisms that regulate volume growth-rate fluctuations. This is an important demonstration of cell-autonomous volume regulation.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Agnese Seminara, University of Genoa Italy\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70816.sa1](https://doi.org/10.7554/eLife.70816.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Volume growth in animal cells is cell cycle dependent and shows additive fluctuations\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Aleksandra Walczak as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Ran Kafri (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Please provide evidence that potential sources of experimental noise coming from segmentation, autofluorescence, movement are not the root cause of the observed noise. For example with the experiments suggested by Referee 1 point 1.\n\n2) Please try to obtain the timescale of fluctuation correlations by increasing the temporal resolution.\n\n3) Please further explain the rationale for removing outliers or include them in the statistics.\n\n4) Please discuss the connection of your results with previous literature (eLife 2018 PMID: 29889021 and Science 2009 PMID: 19589995) and to previously proposed molecular mechanisms\n\n5) Please discuss the possibility that exponential growth in volume is due to exponential growth in mass. You may include a further test modifying osmotic conditions, but it is not a requirement.\n\nReviewer #2 (Recommendations for the authors):\n\nIn \"Volume growth in animal cells is cell cycle dependent and shows additive fluctuations\", the authors use a volume exclusion-based measurements to quantify single cell trajectories of volume increase in HeLa cells. The study represents one of the most careful measurements on volume regulation in animal cells and presents evidence for feedback mechanisms that slow the growth of larger cells. This is an important demonstration of cell autonomous volume regulation.\n\nFrom these measurements, they describe two insights:\n\n1) A cell's growth rate is a joint function of both cell size and cell cycle stage.\n\n2) Our observation that volume growth shows additive fluctuations.\n\nWhile the subject matter of the present study is important, the insights provided are significantly limited because the authors failed to place their findings in the context of previous literature. The authors present what seems to be remarkably accurate single cell growth trajectories. In animal cells, a joint dependency of growth rate on cell size and cell cycle stage has been previously reported (see eLife 2018 PMID: 29889021 and Science 2009 PMID: 19589995). In Ginzberg et al., it is reported \"Our data revealed that, twice during the cell cycle, growth rates are selectively increased in small cells and reduced in large cells\". Nonetheless, these previous studies do not negate the novelty in Cadart et al. While both Cadart and Ginzberg investigate a dependency of cellular growth rate on cell size and cell cycle stage, the two studies are complimentary. This is because, while Ginzberg characterise the growth in cell mass, Cadart characterise the growth in cell volume. The authors should compare the findings from these previous studies with their own and draw conclusions from the similarities and differences. Are the cell cycle stage dependent growth rate similar or different when cell size is quantified as mass or volume? Does the faster growth of smaller cells (the negative correlation of growth rate and cell size) occur in different cell cycle stages when growth is quantified by volume as compared to mass?\n\nSeparate from the phenomenological findings, the authors provide little mechanistic insight. In recent years, mechanisms of cell size regulation have gained more molecular grounding. At least two studies have shown that the selective growth of small cells is mediated by a cell size checkpoint in G1 (Dev Cell 2021 PMID: 34022133). Further, the linkage of cell mass and cell volume has been linked to NKCC1 (PMID: 31067471) and mTORC1. While phenotypic findings are not inferior to molecular ones, the authors should not ignore previous mechanistic findings -if only to prevent the misleading notion that their phenotypic observations stand in mechanistic vacuum and molecular mechanisms on growth regulation are non-existent.\n\nAs for the authors findings on the additive fluctuations in volume growth rate, the authors do not address the following trivial possibility. When considering cell mass, one could easily imagine why larger cells would grow faster. Larger cell mass can correlate with more ribosomes, for example, which can result in faster rates of protein synthesis. Similarly, cells that are larger in mass can have more ion channels or aquaporins, which can affect how fast cells increase their volume. By contrast, if cells increase their water content and become larger in volume only (as is the case in hypoosmotic conditions), I would not expect a proportional increase in growth rate. I suspect that, while the authors measure volume and not mass, the exponential kinetics that they observe still derive from the dependency of growth rate on cell mass (and not cell volume). It is only because mass and volume correlate that the authors observe exponential kinetics in volume. While my suspicion can prove false, it cannot be assumed false until empirically shown to be so. One path to test this is to dissociate volume and mass (e.g. changes in osmolarity).\n\nThe authors report a distinction in the growth of newborn cells, as compared to cells at the later stages of cell cycle. These results are potentially interesting but are at jeopardy of being an artifact of the morphological changes that characterise newborn cells. Shortly after cell division, cells are less flat and occupy a higher volume from the glass surface on which they are cultured. These morphological changes distance the cells from the objective focal plane and can distort the measurement light intensity. The authors should find a way to control for this possible artifact or exclude this data.\n",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "771fdf1e-9f7d-4d09-b3a6-097407327927",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C1",
+      "claim": "The FXm method relies on seeding cells in chambers of known height in the presence of a fluorescent probe (10 kDa dextran) that does not enter or harm the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, this method relies on seeding cells in chambers of known height in the presence of a fluorescent probe (10 kDa dextran) that does not enter or harm the cell (Figure 1a and b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the technical methodology of the FXm approach, referencing figures that illustrate the method.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "408f5cdf-3e6d-4b87-8422-76fbcf6f7b81",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C2",
+      "claim": "The cell excludes the fluorescent dye, making the measured fluorescence in the area containing a cell negatively proportional to the volume of that cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the cell excludes the dye, the measured fluorescence in the area containing a cell is negatively proportional to the volume of that cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the measurement principle underlying the FXm method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "eb1c7625-52cf-43ed-aaf0-5835b977c7a2",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C3",
+      "claim": "Volume measurements were combined with cell cycle phase analysis using the hgeminin-GFP part of the FUCCI system.",
+      "claim_type": "EXPLICIT",
+      "source": "We combined these volume measurements with cell cycle phase analysis using the hgeminin-GFP part of the FUCCI system (Sakaue-Sawano et al., 2008; Sakaue-Sawano et al., 2013), the expression of which marks S phase entry (Figure 1c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental approach and cites references for the FUCCI system.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "f59971be-1aad-40cd-9edd-d06958fc37c5",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C4",
+      "claim": "Four independent 24-hr-long experiments were performed in which thousands of cells growing asynchronously in the FXm chambers were imaged.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed four independent 24-hr-long experiments in which we imaged thousands of cells growing asynchronously in the FXm chambers (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the experimental design and references a supplementary figure showing data from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "bfc0937c-2d92-4a89-a1d8-a4d85446b53d",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C5",
+      "claim": "An automated cell tracking algorithm was developed to extract cell volume through time for each individual cell.",
+      "claim_type": "EXPLICIT",
+      "source": "To extract cell volume through time for each individual cell, we developed an automated cell tracking algorithm (Figure 1b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the computational method developed for data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "4cecb3ce-dfbb-462c-968c-4b45fa8a38a9",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C6",
+      "claim": "The segmentation and lineage tracing were verified by manual inspection of each single-cell trace.",
+      "claim_type": "EXPLICIT",
+      "source": "and verified that the segmentation and lineage tracing (recording of mitotic events) were accurate by manual inspection of each single-cell trace.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the quality control procedure for the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "6b3ecec7-3895-471f-91d2-249a30d02804",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C7",
+      "claim": "Birth was defined as the onset of cytokinesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Birth was defined as the onset of cytokinesis",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides an explicit definition of a cell cycle event.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "c20cd6a0-cd1f-4072-815a-6c84c307a1ca",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C8",
+      "claim": "The G1/S transition was defined as the onset of increase in hgeminin-GFP intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "the G1/S transition was defined as the onset of increase in hgeminin-GFP intensity (Figure 1c and d)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides an explicit definition of a cell cycle event with reference to figures.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "c87b96cd-a5b9-4418-abe0-c8c164b0325e",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C9",
+      "claim": "Mitosis was defined as the onset of the mitotic volume overshoot.",
+      "claim_type": "EXPLICIT",
+      "source": "and mitosis was defined as the onset of the mitotic volume overshoot (Cadart et al., 2018; Zlotek-Zlotkiewicz et al., 2015; Son et al., 2015a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides an explicit definition of a cell cycle event with citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "f7221040-644a-4faa-8f06-149e0a23f7c3",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C10",
+      "claim": "1696 verified single-cell volume trajectories were obtained that contained all available cell cycle information.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this approach, we obtained 1696 verified single-cell volume trajectories that contained all available cell cycle information (time of birth, time of G1/S, and/or time of entry into mitosis, Figure 1e and f).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the size of the dataset obtained from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "666aabe2-4e31-411d-a662-b85c920fba7a",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C11",
+      "claim": "For volumes higher than 1800 \u00b5m\u00b3 and lower than 4000 \u00b5m\u00b3, growth speed increases on average linearly with volume.",
+      "claim_type": "EXPLICIT",
+      "source": "All four experiments consistently showed that, for volumes higher than 1800 \u00b5m3 (and lower than 4000 \u00b5m3), growth speed increases on average linearly with volume",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports a finding from analysis of the experimental data across all four experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "98fd3151-077e-4da9-a660-2849e7d5235d",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C14",
+      "claim": "Volume growth is faster than linear and on average close to exponential in the range of 1800-4000 \u00b5m\u00b3.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we conclude that volume growth is faster than linear, and on average close to exponential in this range of cell sizes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript draws a conclusion from the analysis of growth speed vs. volume data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "d8208696-9c87-4032-a3eb-dab6bac4e567",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C15",
+      "claim": "Cells with volumes below 1800 \u00b5m\u00b3 did not follow the same growth trend as larger cells, likely due to a different pattern of growth early in the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells with volumes below 1800 \u00b5m3 did not follow the same trend, likely due to a different pattern of growth early in the cell cycle (see below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports an observation and provides a speculative explanation.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "a67c0ecd-237c-43dc-b830-871c051648cf",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C17",
+      "claim": "Volume-specific growth rate is nearly constant with volume for a given cell cycle phase.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis shows that estimated volume-specific growth rate is nearly constant with volume for a given phase",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports a finding from analysis of data grouped by cell cycle phase.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "538e133d-4588-4fce-ad0a-f2355cce90fb",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C18",
+      "claim": "Growth rate in S-G2 is about 15% higher than in G1.",
+      "claim_type": "EXPLICIT",
+      "source": "and growth rate in S-G2 is about 15% higher than in G1 (Figure 2c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports a quantitative comparison of growth rates between cell cycle phases.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "98bbf3c8-65f2-4c9c-875c-e129b90b1df5",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C19",
+      "claim": "Progression from G1 into S/G2 is accompanied by an increase in the volume-specific growth rate.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that progression from G1 into S/G2 is accompanied by an increase in the volume-specific growth rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript draws a conclusion from the analysis of growth rate by cell cycle phase.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "f881a132-0f9f-4433-b01f-05a9bb0ef558",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C20",
+      "claim": "Volume growth speed showed a fast increase during the first 1.3 hr after birth and increased more slowly and steadily after that point in time.",
+      "claim_type": "EXPLICIT",
+      "source": "In all three experiments, volume growth speed showed a fast increase during the first 1.3 hr after birth and increased more slowly and steadily after that point in time (Figure 3a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports a finding from analysis of growth speed as a function of time from birth.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "4a5da3a4-bbcf-46ab-9029-38fed6b5e3ab",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C21",
+      "claim": "During the initial 1.3 hr after birth, cells follow patterns different from those observed during the rest of the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that during the initial 1.3 hr after birth, cells follow patterns different from those observed during the rest of the cell cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript draws an inference from the observed change in growth pattern.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "f0c4b9a8-5fac-4561-a887-5cf0e0087b50",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C22",
+      "claim": "The largest cells at birth started their cell cycle with a negative growth speed during the first hour after birth.",
+      "claim_type": "EXPLICIT",
+      "source": "The largest cells at birth started their cell cycle with a negative growth speed (meaning that they were losing volume) during the first hour after birth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports a finding from analysis of cells grouped by birth volume.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "084effc9-dc4f-42e4-8cc3-dad2a42ad5c4",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C23",
+      "claim": "Small, intermediate, and large cells ultimately converged on the same growth speed at 1.3 hr after birth.",
+      "claim_type": "EXPLICIT",
+      "source": "Small, intermediate, and large cells ultimately converged on the same growth speed at 1.3 hr after birth (Figure 3b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports a finding from analysis of cells grouped by birth volume.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "22fba081-0d55-40f9-862f-fa71acad657d",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C24",
+      "claim": "Birth is defined as the first time point of cytokinesis onset, a process that is typically completed within 20\u201330 min.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that in our data, birth is defined as the first time point of cytokinesis onset (a process that is then typically completed within 20\u201330 min; Cadart et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a definition and cites prior work for the duration of cytokinesis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "491b0cb7-96a4-4949-9ef9-0f5bebaa193a",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C25",
+      "claim": "The 1.3 hr period after birth comprises the end of cytokinesis as well as early G1 phase.",
+      "claim_type": "EXPLICIT",
+      "source": "thus the 1.3 hr period comprises the end of cytokinesis as well as early G1 phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides an interpretation of the timing of the observed growth pattern.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "13698f9b-f4b4-4a31-961e-8747db7a3db7",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C26",
+      "claim": "The fact that volume follows a distinct pattern early in the cell cycle suggests a different mechanism of volume growth regulation as cells re-enter interphase.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that volume follows a distinct pattern early in the cell cycle suggests a different mechanism of volume growth regulation as cells re-enter interphase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a speculative interpretation of the observed growth pattern.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "3ecc970b-dc6b-4ad0-856f-d93c000550f1",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C28",
+      "claim": "At fixed timescale of the discrete derivative, the variance in specific growth rate decreases with volume.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we found that, at fixed timescale of the discrete derivative, the variance in specific growth rate decreases with volume (Figure 4a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports a finding from analysis of growth rate variance as a function of volume.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "8233dc7f-e9d2-4a6e-9420-2f47874dc7c8",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C29",
+      "claim": "The standard deviation of specific growth rate clearly decreased with volume.",
+      "claim_type": "EXPLICIT",
+      "source": "When we plotted together the mean and standard deviation of specific growth rate as a function of volume (Figure 4b), the standard deviation of specific growth rate clearly decreased with volume.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports a finding from analysis of growth rate variability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "8c202342-9811-4ad7-9aba-1bc55c42e6bd",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C35",
+      "claim": "Additive noise can be interpreted as resulting from homeostatic processes that contribute to setting steady-state volume.",
+      "claim_type": "EXPLICIT",
+      "source": "which can be interpreted as resulting from any of the homeostatic processes that contribute to setting steady-state volume (e.g., homeostatic constraints of biophysical origin on hydrostatic pressure, osmotic pressure, etc.).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a biological interpretation of a model parameter.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "c17d3bbf-9f35-461f-960b-28263f2fe4b9",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C36",
+      "claim": "The Fano factor of growth rate is not dependent on the timescale of the derivative.",
+      "claim_type": "EXPLICIT",
+      "source": "An important prediction of the model (Figure 5c) is that the mean-normalized variance of growth rate (Fano factor) is not dependent on the timescale of the derivative. When we examined our experimental data, we observed that this was indeed the case (Figure 5c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports that a model prediction is confirmed by experimental data.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "e14e3949-faab-4c5d-ad70-c72e6600fd51",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C37",
+      "claim": "Other estimators of variability such as variance, SD, or CV depend on the timescale of the discrete derivatives in both the model and the data.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, other estimators of variability such as variance, SD, or CV do depend on the timescale of the discrete derivatives in both the model and the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports a finding about different measures of variability.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "847358d1-4ea9-41c2-8372-a38469144f4f",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C39",
+      "claim": "The trends in Fano factor measured in G1 and S-G2 overlapped well.",
+      "claim_type": "EXPLICIT",
+      "source": "and that the trends measured in G1 and S-G2 overlapped well (Figure 5\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports a finding from analysis of growth rate variability by cell cycle phase.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "857b7a1e-fd57-4977-92a3-a34193dd5a47",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C40",
+      "claim": "The decay in volume growth rate variability is independent of cell cycle phase.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the decay in volume growth rate variability is independent of cell cycle phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript draws an inference from the overlap of trends between cell cycle phases.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "9e661778-78fd-4fc2-ae84-69ef2b67c580",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C42",
+      "claim": "FXm accuracy is independent of the excess area around the cell used to calculate volume.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, previous validation of the FXm (Zlotek-Zlotkiewicz et al., 2015; Cadart et al., 2017) as well as new controls (shown in Figure 5\u2014figure supplement 2a\u2013c) show that FXm accuracy is independent of the excess area around the cell used to calculate volume.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports validation of the measurement method with citations and new control experiments.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "cf8df183-10c4-4b0c-a4dd-43cd0d67bf8a",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C43",
+      "claim": "Volume measurement using FXm is not altered by cell shape changes.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study also showed that volume measurement using FXm is not altered by cell shape changes (Venkova et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a recent study validating the measurement method.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "0229e3ad-4dd1-4e7b-a9d8-bd07b07653e8",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C44",
+      "claim": "Cell volume fluctuations are about 20-fold larger than those of the background.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis shows that cell volume fluctuations are about 20-fold larger than those of the background (Figure 5\u2014figure supplement 2f).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports a quantitative comparison from a control experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "7a0e59a2-ad87-44ec-b337-5a1dce38dd45",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C45",
+      "claim": "Technical sources of noise contribute minimally to measured volume fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, technical sources of noise (which equally impact background and cell volume measurements) contribute minimally to measured volume fluctuations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript draws a conclusion from the comparison of cell and background fluctuations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "2ad64e2d-ac28-4506-95f1-523b6011c398",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C46",
+      "claim": "Cells measured at high temporal resolution (every 30 ms) for 9 s showed much smaller fluctuations compared with cells measured every 10 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, we measured volume fluctuations on cells imaged at high temporal resolution (every 30 ms) for time spans of 9 s. At this timescale, cells showed much smaller fluctuations compared with cells measured every 10 min (approximately sixfold less)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports a finding from a control experiment at different temporal resolutions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "4d6a818a-6bfe-40a6-a4ad-2d5a76fae17b",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C47",
+      "claim": "The volume fluctuations reported are of biological origin and only appear at timescales larger than 9 s.",
+      "claim_type": "EXPLICIT",
+      "source": "thus strongly suggesting that the volume fluctuations we report are of biological origin and only appear at timescales larger than 9 s (Figure 5\u2014figure supplement 2f).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript draws a conclusion from the comparison of fluctuations at different timescales.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "90502b1b-8e02-4d59-8c9e-6d7b5235398d",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C48",
+      "claim": "Fluctuations decay over a timescale of ~10 min.",
+      "claim_type": "EXPLICIT",
+      "source": "The autocovariance function of these data shows that fluctuations decay over a timescale of ~10 min (Figure 5\u2014figure supplement 3a and b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports a finding from autocovariance analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "659d1af8-39e1-43b8-8e6d-1f075e083ab8",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C49",
+      "claim": "Volume fluctuations come principally from a constant-amplitude noise in instantaneously added volume, rather than from random variations of the volume-specific growth rate itself.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, this analysis shows that volume fluctuations come principally from a constant-amplitude noise in instantaneously added volume, rather than from random variations of the volume-specific growth rate itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript draws a conclusion from the combined analysis of model and experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "ef488130-b646-4e5a-bd85-fb3502abb719",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C50",
+      "claim": "During a period following birth that lasts on average about 1.3 hr, volume growth displays a pattern where cells of intermediate and small volume grow slowly while larger cells at birth lose volume.",
+      "claim_type": "EXPLICIT",
+      "source": "During a period following birth that lasts on average about 1.3 hr, volume growth displays a pattern where cells of intermediate and small volume grow slowly while larger cells at birth lose volume.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes a key finding in the Discussion section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "19470dea-c008-43de-a4d3-197113304cef",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C51",
+      "claim": "The post-birth volume growth pattern is very different from the mass pattern previously reported.",
+      "claim_type": "EXPLICIT",
+      "source": "This is very different from the mass pattern previously reported (Miettinen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript compares the current findings with prior work on mass growth.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "45337be5-6c97-4d6d-9c2a-e46b68054660",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C52",
+      "claim": "The post-birth period spans both the period of completion of cytokinesis and the beginning of G1 phase.",
+      "claim_type": "EXPLICIT",
+      "source": "This post-birth period also spans both the period of completion of cytokinesis and the beginning of G1 phase, ruling out the hypothesis that mitosis alone determines the early volume growth pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides an interpretation that rules out an alternative hypothesis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "d13126eb-5d01-400e-9a8d-9e10ad9b2da8",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C53",
+      "claim": "The rate of cell spreading associates with cell volume loss because of the coupled mechano-osmotic regulation of cell volume.",
+      "claim_type": "EXPLICIT",
+      "source": "Several studies recently showed that the rate of cell spreading associates with cell volume loss because of the coupled mechano-osmotic regulation of cell volume (Venkova et al., 2021; Guo et al., 2017; Perez Gonzalez et al., 2018; Adar and Safran, 2020; Xie et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple studies supporting this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "fb5ee400-e9fa-4df5-ae8d-269678c9aeab",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C54",
+      "claim": "This mechano-osmotic phenomenon likely contributes to the decrease in volume as large cells spread following mitotic cell rounding and division.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that this phenomenon likely contributes to the decrease in volume as large cells spread following mitotic cell rounding (Cadart et al., 2014; Lancaster and Baum, 2014) and division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a speculative interpretation with citations to relevant work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "0b82527f-2691-4250-9d6e-06571826b00b",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C55",
+      "claim": "Mass growth is known to pause briefly during mitosis, from anaphase to late cytokinesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, while mass growth is known to pause briefly during mitosis, from anaphase to late cytokinesis (Miettinen et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites prior work on mass growth during mitosis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "9f2aa973-15f7-4695-82cc-76b67895d1bc",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C56",
+      "claim": "Cell volume undergoes a drastic reversible increase during mitosis, causing a drop in cellular density.",
+      "claim_type": "EXPLICIT",
+      "source": "cell volume undergoes a drastic reversible increase during the same period, causing a drop in cellular density (Zlotek-Zlotkiewicz et al., 2015; Son et al., 2015a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites prior work on volume changes during mitosis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "ee854a4b-51b1-4608-948e-2832b2c2ea50",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C57",
+      "claim": "Mass growth seems to start rapidly after cytokinesis.",
+      "claim_type": "EXPLICIT",
+      "source": "While mass growth seems to start rapidly after cytokinesis (Miettinen et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites prior work on mass growth after cytokinesis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "31d6dfd2-659c-401f-a90e-c9e9d6e84419",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C58",
+      "claim": "Volume growth is initially slower after cytokinesis.",
+      "claim_type": "EXPLICIT",
+      "source": "ours and previous observations (Tzur et al., 2009) suggest that volume growth is initially slower.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript compares current findings with prior observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "ed3722d2-d688-4e9c-909d-12af7b1941eb",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C59",
+      "claim": "Mass growth has been reported to oscillate periodically in HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Throughout the cell cycle, mass growth has been reported to oscillate periodically in HeLa cells (Liu et al., 2020; Ghenim et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites prior work on mass growth oscillations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "ccc80097-46ee-4036-9c86-3b782126661c",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C60",
+      "claim": "This mass oscillation phenomenon is not simply reflected by cell volume.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that this phenomenon is not simply reflected by cell volume.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports a finding that contrasts with prior work on mass.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "fbd2d0a0-1974-41f1-8d20-f87e4f63f049",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C61",
+      "claim": "Some oscillations in volume growth speed as a function of time from birth were found only in birth volume outliers, not matching the period and amplitude of the mass oscillations reported previously.",
+      "claim_type": "EXPLICIT",
+      "source": "We found some oscillations in volume growth speed as a function of time from birth only in birth volume outliers, and not matching the period and amplitude of the mass oscillations reported previously (Liu et al., 2020; Ghenim et al., 2021; Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports a finding and compares it with prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "afad0d0e-ae48-4876-8547-b6bdf00f57bf",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C62",
+      "claim": "Dry mass biosynthesis and volume growth, while being interrelated, can be independent in specific phases of the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding suggests that dry mass biosynthesis and volume growth, while being interrelated, can be independent in specific phases of the cell cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript draws a conclusion from the comparison of volume and mass growth patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "54e64422-cc18-4e30-9199-784b799fd9a9",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C63",
+      "claim": "It is commonly assumed that volume follows mass, due, for example, to osmotic pressure changes.",
+      "claim_type": "EXPLICIT",
+      "source": "It is commonly assumed that volume follows mass, due, for example, to osmotic pressure changes (Cadart et al., 2019; Koivusalo et al., 2009; Hoffmann et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites prior work supporting a common assumption in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "66be65aa-d199-4002-a6c9-30c0bedd32ac",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C64",
+      "claim": "Under the assumption that volume follows mass, an average exponential growth in volume is explained by an exponential growth in mass.",
+      "claim_type": "EXPLICIT",
+      "source": "Under this assumption, an average exponential growth in volume is explained by an exponential growth in mass.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a logical inference based on a stated assumption.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "6f742241-dce7-4efe-a9a6-1b64d408f69c",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C65",
+      "claim": "Investigation of the molecular mechanisms coupling mass and volume growth in animal cells is still incomplete.",
+      "claim_type": "EXPLICIT",
+      "source": "Investigation of the molecular mechanisms coupling mass and volume growth in animal cells is still incomplete.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "88081275-c519-4b7c-acbf-182dad52e83f",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C66",
+      "claim": "There is consensus on a role of mTORC1, mTORC2, and the Hippo pathway in coupling mass and volume growth.",
+      "claim_type": "EXPLICIT",
+      "source": "There is consensus on a role of mTORC1 (Demian et al., 2019), mTORC2 (Eltschinger and Loewith, 2016; Berchtold et al., 2012), and of the Hippo pathway (Perez-Gonzalez et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple studies supporting consensus on molecular mechanisms.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "8533db03-b362-4cb2-a882-b6ce6a6a3a99",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C67",
+      "claim": "The YAP/TAZ/Hippo pathway may regulate cell volume independently of mTORC and protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "and one study showed that the YAP/TAZ/Hippo pathway may also regulate cell volume independently of mTORC and protein synthesis (Perez-Gonzalez et al., 2019), suggesting that a decoupling can occur at the regulatory level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a study and draws an inference about regulatory mechanisms.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "c1d4de50-6722-41bd-8cc5-a63fb0c0e438",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C68",
+      "claim": "Time variability in ribosome levels and autocatalysis would lead to a fluctuating mass-specific biosynthesis rate, hence to multiplicative fluctuations in mass growth rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, time variability in ribosome levels and autocatalysis would lead to a fluctuating mass-specific biosynthesis rate, hence to multiplicative fluctuations (not additive) in mass growth rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a theoretical argument about the expected nature of fluctuations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "cc26560a-d17f-43ee-8188-382565066c69",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C69",
+      "claim": "Under the hypothesis that volume strictly follows mass, volume would also likely exhibit multiplicative fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, under the hypothesis that volume strictly follows mass, volume would also likely exhibit multiplicative fluctuations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a logical inference based on a stated hypothesis.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "a8009266-171e-4de7-9523-e4571e202c5a",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C70",
+      "claim": "Volume-specific growth rate is 15% higher in S-G2 than in G1.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that volume-specific growth rate is 15% higher in S-G2 than in G1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes a key quantitative finding in the Discussion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "c5bc2c41-ce8f-4730-b44a-36d7b33c1372",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C71",
+      "claim": "Growth rate modulation as a function of cell size contributes to cell size homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Mathematical frameworks and experiments clearly showed that growth rate modulation as a function of cell size (Cadart et al., 2018; Kafri et al., 2013; Ginzberg et al., 2018) contributes to cell size homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple studies supporting this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "c1a94cff-ace5-4b75-8140-905f990638a0",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C72",
+      "claim": "Previously reported mass oscillations do not appear to be cell size dependent and are thus unlikely to contribute to cell size control.",
+      "claim_type": "EXPLICIT",
+      "source": "The other identified growth modulations along the cell cycle (Mu et al., 2020; Tzur et al., 2009) and the previously reported mass oscillations (Liu et al., 2020; Ghenim et al., 2021) do not appear to be cell size dependent and are thus unlikely to contribute to cell size control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites prior work and draws an inference about cell size control.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "6c5f297f-a2b3-4872-a533-d467b972ca0c",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C73",
+      "claim": "The 15% increase in volume-specific growth rate in S-G2 may be the result of a similar increase in protein biosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the 15% increase in volume-specific growth rate in S-G2 may be the result of a similar increase in protein biosynthesis",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a speculative explanation for the observed growth rate change.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "97ab6ff1-6fb2-4899-9042-be2c73080085",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C74",
+      "claim": "Both transcript levels and ribosome amounts scale linearly with cell volume within the physiological range.",
+      "claim_type": "EXPLICIT",
+      "source": "but this would not meet the common expectations, given that both transcript levels (Padovan-Merhar et al., 2015; Swaffer et al., 2021) and ribosome amounts (Scott et al., 2010) scale linearly with cell volume \u2013 at least within the physiological range of cell volume (Neurohr et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple studies supporting this claim about scaling relationships.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "bd422fea-210c-466d-aa96-60406446428a",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C75",
+      "claim": "Extrinsic experimental noise only minimally contributes to the additive fluctuations measured.",
+      "claim_type": "EXPLICIT",
+      "source": "Our controls show that extrinsic experimental noise only minimally contributes to the additive fluctuations we measure (Figure 5\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes findings from control experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "bb32e023-ae20-45d5-ae40-8c79169d3a63",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C76",
+      "claim": "The decay timescale of the constant-amplitude fluctuations is 5\u201310 min.",
+      "claim_type": "EXPLICIT",
+      "source": "and that the decay timescale of the constant-amplitude fluctuations is 5\u201310 min (Figure 5\u2014figure supplement 3a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports a quantitative finding from autocovariance analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "83a5ed9e-49f5-4ecb-9c40-aea250b14e7e",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C77",
+      "claim": "Cell volume results from an equilibrium of cell hydrostatic pressure, osmolarity, and membrane tension at timescales of minutes to hours.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell volume is a physical parameter that results from an equilibrium of cell hydrostatic pressure, osmolarity, and membrane tension at timescales of minutes to hours (Cadart et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites prior work on the biophysical determinants of cell volume.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "0883cec6-7448-44b3-aa0f-1cf530eff66f",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C78",
+      "claim": "The measured volume variations may come from the mechano-osmotic processes involved in volume regulation at the minute timescale.",
+      "claim_type": "EXPLICIT",
+      "source": "The timescale at which we observe the fluctuations and the additive nature of these fluctuations suggest that the measured volume variations may come from the mechano-osmotic processes involved in volume regulation at the minute timescale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a speculative interpretation of the observed fluctuations.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "0b966b5e-39e4-4448-9605-8c659da5bfd7",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C79",
+      "claim": "No multiplicative noise on volume-specific growth rate is observed.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also remarkable that no multiplicative noise on volume-specific growth rate is observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript highlights a notable finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "a96473c2-15fe-4c3f-9bbe-6df7797eb15c",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C80",
+      "claim": "Growth rate variability, quantified by variance, SD, or CV, is strongly dependent on the timescale used to evaluate discrete derivatives.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, our analysis shows that growth rate variability, quantified by variance, SD, or CV is strongly dependent on the timescale used to evaluate discrete derivatives (Figures 4a and 5c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes a key methodological finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "d391ddca-1f6d-4770-a438-27037863829a",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C81",
+      "claim": "This result poses an important caveat for the quantitative comparison of growth rate fluctuations across different studies.",
+      "claim_type": "EXPLICIT",
+      "source": "This result poses an important caveat for the quantitative comparison of growth rate fluctuations across different studies as absolute values of growth rate fluctuations evaluated in different ways and on different timescales (or smoothing windows) may strongly differ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript draws a conclusion about the implications for comparing studies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "560ffb57-c6e4-42b9-bce9-a712221ae93b",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C82",
+      "claim": "HeLa cells expressing hgeminin-GFP were a kind gift from Buzz Baum's lab.",
+      "claim_type": "EXPLICIT",
+      "source": "HeLa cells expressing hgeminin-GFP were a kind gift from Buzz Baum's lab (UCL, London, UK).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides information about the source of the cell line used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "3ffe441a-d4b4-4338-8186-c72dbb512b9e",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C83",
+      "claim": "Cells were cultured in DMEM-GlutaMAX media and imaged in DMEM without phenol red, supplemented with GlutaMAX.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells were cultured in DMEM-GlutaMAX media and imaged in DMEM without phenol red, supplemented with GlutaMAX.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the cell culture conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "aa7a5088-3dfc-4004-bea7-acdf31e42624",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C84",
+      "claim": "Both media were supplemented with 10% FBS and 1% penicillin-streptomycin.",
+      "claim_type": "EXPLICIT",
+      "source": "Both media were supplemented with 10% FBS and 1% penicillin-streptomycin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the cell culture conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "b943a922-c839-48fd-ab56-ff36d0c276b5",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C85",
+      "claim": "Cell lines were tested monthly for mycoplasma contamination and always came back negative.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell lines were tested monthly for mycoplasma contamination using the PCR Mycoplasma Test Kit I/C from PromoCell and always came back negative.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes quality control procedures for cell culture.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "8f438963-e879-4be2-9e5f-03559a334b93",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C86",
+      "claim": "Measurement chambers were replicated in PDMS (crosslinker:PDMS, 1:10).",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, measurement chambers were replicated in PDMS (crosslinker:PDMS, 1:10).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the fabrication of measurement chambers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "0ca3343f-ac1d-4b03-b5f7-da55ee05728c",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C87",
+      "claim": "To ensure that cells were in a similar growth phase when starting an experiment, cells were seeded at constant density 2 days prior to the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "To ensure that cells were in a similar growth phase when starting an experiment, cells were seeded at constant density (1.9 \u00d7 104 \u00d7 cm\u20132) 2 days prior to the experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental protocol to control for cell cycle synchronization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "a20bd382-e840-4bf4-b9e5-1f8acbdfa8d6",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C88",
+      "claim": "4 hr after seeding, the media was replaced with equilibrated media containing 1 mg/mL of 10 kDa Dextran Alexa-645.",
+      "claim_type": "EXPLICIT",
+      "source": "4 hr after seeding, the media was replaced with equilibrated media containing 1 mg/mL of 10 kDa Dextran Alexa-645.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental protocol for FXm measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "1990b6ce-1482-4f8a-900b-46f5a1b3e0c9",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C89",
+      "claim": "Imaging started 2\u20134 hr after changing the media.",
+      "claim_type": "EXPLICIT",
+      "source": "Imaging started 2\u20134 hr after changing the media.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the timing of the imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "ef722be5-47a0-4145-b026-5441628aa4c0",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C90",
+      "claim": "While imaging, cells were kept at 37\u00b0C with 5% CO2 atmosphere.",
+      "claim_type": "EXPLICIT",
+      "source": "While imaging, cells were kept at 37\u00b0C with 5% CO2 atmosphere.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the environmental conditions during imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "8e137174-4838-4418-89bb-6c3ddd181734",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C91",
+      "claim": "Images were obtained using a low-magnification (10\u00d7), low numerical aperture objective (NA = 0.3, phase) every 10 min for FXm measurement.",
+      "claim_type": "EXPLICIT",
+      "source": "Images were obtained using a low-magnification (10\u00d7), low numerical aperture objective (NA = 0.3, phase) every 10 min (FXm measurement, main dataset)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the imaging parameters for the main dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "1df48f54-36e8-4fa7-a95b-e9bea4a4f873",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C92",
+      "claim": "hgeminin-GFP imaging was performed every 30 min.",
+      "claim_type": "EXPLICIT",
+      "source": "and 30 min (hgeminin-GFP imaging).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the imaging frequency for cell cycle marker.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "71596684-4c89-41dc-89ba-4ee1024c71bb",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C93",
+      "claim": "Images were taken every 20 s for the timescale analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Images were taken every 20 s for the timescale analysis (Figure 5\u2014figure supplement 3a and b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the imaging frequency for a specific analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "07fe6c08-efd0-4451-8502-f66b8454717a",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C94",
+      "claim": "Images were taken every 30 ms for the background fluctuation analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "and every 30 ms for the background fluctuation analysis (Figure 5\u2014figure supplement 2f).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the imaging frequency for a control experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "441050b3-9312-4308-9f9b-138714707f3f",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C95",
+      "claim": "A custom-made MATLAB software was used to extract cell volume and cell cycle information from the images.",
+      "claim_type": "EXPLICIT",
+      "source": "To extract cell volume and cell cycle information from the images, we used a custom-made MATLAB software (Cadart et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the software used for data analysis with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "08bdf6bb-ddf4-4f63-8faa-bc46a1c9a3e2",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C96",
+      "claim": "The software contained an image analysis algorithm previously optimized that performed successive image treatments to normalize the background intensity and correct for background inhomogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "The software contained an image analysis algorithm previously optimized (Cadart et al., 2017) that performed successive image treatments to normalize the background intensity and correct for background inhomogeneity (e.g., due to an inhomogeneous light source).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the image processing steps with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "2cafe19f-54f4-4f0c-bca3-c3d8399ce5c9",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C97",
+      "claim": "Each single-cell trajectory was visually checked to verify that the segmentation and lineage tracing were accurate.",
+      "claim_type": "EXPLICIT",
+      "source": "Each single-cell trajectory was visually checked. We verified that the segmentation and lineage tracing (recording of mitotic events) were accurate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the quality control procedure for data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "88716c48-6915-496e-b582-7780b79b4188",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C98",
+      "claim": "This visual assessment and manual curation was essential to increase confidence that any fluctuation seen on the resulting volume curve was not due to an identifiable artifact.",
+      "claim_type": "EXPLICIT",
+      "source": "This visual assessment and manual curation, although time consuming, was essential to our analysis because it increased our confidence that any fluctuation seen on the resulting volume curve was not due to an identifiable artifact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explains the rationale for the manual curation step.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "6f9be991-a620-48b4-9ae1-ec1a21950eff",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C100",
+      "claim": "The slope coefficient of the fit corresponds to the instantaneous growth speed.",
+      "claim_type": "EXPLICIT",
+      "source": "The slope coefficient of the fit corresponds to the instantaneous growth speed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explains the interpretation of the fitting parameter.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "a9f53424-07ba-4c32-b619-989d3bacdfb3",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C101",
+      "claim": "For the 10 min time-lapse experiment, curves were detrended using smoothing average over windows of eight frames = 80 min.",
+      "claim_type": "EXPLICIT",
+      "source": "For the comparison of fluctuations on cell volume curves vs. background areas (Figure 5\u2014figure supplement 2d\u2013f) and for the autocovariance analysis (Figure 5\u2014figure supplement 3), volume curves were detrended as follows: (i) for the 10 min time-lapse experiment, curves were detrended using smoothing average over windows of eight frames = 80 min",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the detrending method for a specific analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "30597116-e4e5-4d18-815d-77b58a7305b0",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C102",
+      "claim": "For experiments shorter than 80 min, a linear robust fit was performed for detrending.",
+      "claim_type": "EXPLICIT",
+      "source": "and (ii) for all other experiments (20 s and 30 m time lapse), which were shorter than 80 min, a linear robust fit was performed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the detrending method for shorter experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "acc415c4-6ad8-4793-90a6-08ecb55f44cf",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C103",
+      "claim": "All figure generation and statistical analysis were performed in R.",
+      "claim_type": "EXPLICIT",
+      "source": "All figure generation and statistical analysis were performed in R.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the software used for analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "b8f68e3c-5ebf-4c72-82b6-bd1dc868f247",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C104",
+      "claim": "Packages used for analysis were 'ggplot2,' 'gridExtra,' 'tidyr,' 'dplyr,' and 'robustbase'.",
+      "claim_type": "EXPLICIT",
+      "source": "Packages used were 'ggplot2,' 'gridExtra,' 'tidyr,' 'dplyr,' and 'robustbase'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript lists the R packages used for analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "ca579b62-3218-4a60-bf7f-c5f72880eb16",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "claim_id": "C105",
+      "claim": "The dataset, C simulation code of the model, and MATLAB code for data analysis are available on a repository.",
+      "claim_type": "EXPLICIT",
+      "source": "The dataset, C simulation code of the model, and MATLAB code for data analysis are available on the repository (Cadart et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides information about data and code availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "02aac62b-0295-4afb-9948-0de1947021d7",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed an improved FXm method combining fluorescence exclusion-based volume measurement with cell cycle tracking using hgeminin-GFP. Four independent 24-hour experiments with automated tracking and manual validation yielded 1696 verified single-cell volume trajectories with cell cycle information.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C10 collectively describe a well-validated methodological approach. The manual inspection of all trajectories (C6) and the large dataset size (C10) provide confidence in data quality. The method builds on previously published work and includes appropriate controls.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "d0dc51f4-495c-4398-b394-6b6f345d0a9a",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Volume growth is close to exponential (faster than linear) for cells with volumes between 1800-4000 \u03bcm\u00b3, with growth speed increasing linearly with volume across all four experiments. Cells below 1800 \u03bcm\u00b3 showed different growth patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C14, and C15 are supported by consistent findings across all four independent experiments (Figure 2a). The linear relationship between growth speed and volume with high R\u00b2 values (0.990-0.997) provides strong evidence for near-exponential growth in the specified volume range.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "8cc4d1a7-5141-4290-952b-305bfef525ee",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Volume-specific growth rate is nearly constant within a given cell cycle phase but increases by approximately 15% upon progression from G1 to S-G2 phase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C19 and C70 are supported by phase-specific analysis shown in Figure 2c. The 15% quantitative difference is consistently reported and the phase-dependency is clearly demonstrated. However, the mechanism underlying this increase remains unexplored.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "bb5feca6-4d64-4eb3-98e8-b4ad22c9c7de",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "During the first 1.3 hours after birth (encompassing cytokinesis completion and early G1), cells show distinct volume growth patterns: small/intermediate cells grow slowly while large cells lose volume, ultimately converging to the same growth speed at 1.3 hours.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C26 and C50 describe a consistent pattern observed across three experiments (Figure 3). The convergence at 1.3 hours is clearly demonstrated. However, C26 is speculative about mechanisms. The temporal definition (C24-C25) appropriately accounts for cytokinesis duration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "f55a5d5e-5c1b-4573-bd7f-178571cdc834",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Variance in specific growth rate decreases with cell volume at fixed timescales. The Fano factor of growth rate is independent of derivative timescale (unlike variance, SD, or CV), and this decay is independent of cell cycle phase. This poses important caveats for comparing growth rate fluctuations across studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C29, C36-C37, C39-C40, and C80-C81 are well-supported by systematic analysis (Figures 4 and 5c). The model prediction about Fano factor independence from timescale (C36) is confirmed experimentally. The methodological insight (C81) is an important contribution for the field.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "56fa8882-8b31-4f88-a346-17f1892e44ca",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Volume fluctuations arise principally from constant-amplitude additive noise in instantaneously added volume rather than multiplicative fluctuations in volume-specific growth rate. These fluctuations have a decay timescale of 5-10 minutes and may originate from mechano-osmotic processes involved in volume regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35, C49, C75-C76, C78-C79 are supported by model fitting (Figure 5b showing \u03b3\u22430) and autocovariance analysis (Figure 5\u2014supplement 3). Control experiments (C75) rule out technical noise. However, C35 and C78 are speculative interpretations about biological mechanisms that require further experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "42bbee8b-d143-442d-9fd8-59fb73ca8396",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Multiple control experiments validate that FXm measurements are robust: volume calculations are independent of segmentation area, unaffected by cell shape changes, and cell volume fluctuations are ~20-fold larger than background. High temporal resolution imaging shows fluctuations are biological in origin and only appear at timescales >9 seconds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C48 describe comprehensive validation controls (Figure 5\u2014supplements 2-3). The 20-fold difference (C44) and temporal resolution experiments (C46-C47) provide strong evidence that measured fluctuations are biological. Previous validations are appropriately cited (C42-C43).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "ea2c1847-15f2-476f-ae08-752a61cfb522",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Post-birth volume growth patterns differ substantially from previously reported mass growth patterns. Volume growth is initially slower after cytokinesis while mass growth starts rapidly. The volume decrease in large cells may result from mechano-osmotic coupling during cell spreading after mitotic rounding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52 and C57-C58 appropriately compare current findings with prior work on mass. Claims C55-C56 accurately cite prior findings. However, C53-C54 are speculative about mechanisms (mechano-osmotic coupling), though they cite relevant supporting studies. The comparison reveals important differences between volume and mass dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "cf85ad5f-8f22-485f-b66b-cefa74df3efe",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Previously reported periodic mass oscillations in HeLa cells are not simply reflected in cell volume. Volume oscillations were found only in birth volume outliers and did not match the period/amplitude of mass oscillations, suggesting mass biosynthesis and volume growth can be independent in specific cell cycle phases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C62 appropriately cite prior work (C59) and report negative/discordant findings (C60-C61). The conclusion (C62) is a reasonable inference but represents an absence of correlation rather than direct mechanistic evidence. The finding is important for understanding mass-volume coupling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "78ddd338-7e65-48aa-aa2b-bbabb38d9e4e",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "While it is commonly assumed that volume follows mass due to osmotic pressure, the molecular mechanisms coupling mass and volume growth remain incomplete. Under the hypothesis that volume strictly follows mass, volume would exhibit multiplicative fluctuations, but this is not observed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C67 appropriately cite prior work and state current knowledge gaps. Claims C68-C69 provide theoretical reasoning about expected fluctuation patterns. The logic is sound: if volume followed mass with noisy biosynthesis, multiplicative noise would be expected, but the data show additive noise instead, suggesting more complex regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "2050dd60-f396-4196-bd45-1ed9c257286a",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Growth rate modulation as a function of cell size contributes to size homeostasis, while other growth modulations (including mass oscillations) do not appear size-dependent. The 15% increase in S-G2 growth rate may result from increased protein biosynthesis, though this conflicts with expectations given that transcripts and ribosomes scale linearly with volume.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C71-C72 appropriately cite prior work. However, C73-C74 highlight a paradox: the observed 15% growth rate increase in S-G2 is difficult to explain given linear scaling of biosynthetic machinery (C74). This represents an unresolved mechanistic question requiring future investigation. The speculation (C73) lacks supporting evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "ebb029ed-3652-4487-84ab-6845b2e5de40",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Detailed experimental methods are provided including cell line source, culture conditions, chamber fabrication, imaging parameters at multiple temporal resolutions (10 min, 30 min, 20 s, 30 ms), and quality control procedures including monthly mycoplasma testing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C94 provide comprehensive methodological details. The multiple imaging frequencies (C91-C94) enable different analyses. Quality control measures (C85, C87) are appropriate. The level of detail supports reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "d4c54bbd-5f6b-4c9b-aae2-7d98d71e02f8",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Custom MATLAB software was used for image analysis with previously optimized algorithms for background normalization and segmentation. All trajectories underwent manual visual inspection. Analysis was performed in R using standard packages, and all data/code are publicly available.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C105 describe computational methods with appropriate citations to prior work (C95-C96). The manual curation (C97-C98) is time-consuming but essential for data quality. Software packages are specified (C104) and data/code availability (C105) supports reproducibility. The methods are thorough and well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    },
+    {
+      "id": "482765dd-fe71-46ff-adc5-9a2ff8a543df",
+      "content_id": "7ef3e316-3da9-4948-8af3-4955ce27397b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Cell volume results from an equilibrium of hydrostatic pressure, osmolarity, and membrane tension at timescales of minutes to hours.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C77 appropriately cites prior work (Cadart et al., 2019) establishing the biophysical basis of cell volume regulation. This represents established knowledge that provides context for interpreting the observed fluctuations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:35:16.664154Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "771fdf1e-9f7d-4d09-b3a6-097407327927",
+      "result_id": "02aac62b-0295-4afb-9948-0de1947021d7"
+    },
+    {
+      "claim_id": "408f5cdf-3e6d-4b87-8422-76fbcf6f7b81",
+      "result_id": "02aac62b-0295-4afb-9948-0de1947021d7"
+    },
+    {
+      "claim_id": "eb1c7625-52cf-43ed-aaf0-5835b977c7a2",
+      "result_id": "02aac62b-0295-4afb-9948-0de1947021d7"
+    },
+    {
+      "claim_id": "f59971be-1aad-40cd-9edd-d06958fc37c5",
+      "result_id": "02aac62b-0295-4afb-9948-0de1947021d7"
+    },
+    {
+      "claim_id": "bfc0937c-2d92-4a89-a1d8-a4d85446b53d",
+      "result_id": "02aac62b-0295-4afb-9948-0de1947021d7"
+    },
+    {
+      "claim_id": "4cecb3ce-dfbb-462c-968c-4b45fa8a38a9",
+      "result_id": "02aac62b-0295-4afb-9948-0de1947021d7"
+    },
+    {
+      "claim_id": "6b3ecec7-3895-471f-91d2-249a30d02804",
+      "result_id": "02aac62b-0295-4afb-9948-0de1947021d7"
+    },
+    {
+      "claim_id": "c20cd6a0-cd1f-4072-815a-6c84c307a1ca",
+      "result_id": "02aac62b-0295-4afb-9948-0de1947021d7"
+    },
+    {
+      "claim_id": "c87b96cd-a5b9-4418-abe0-c8c164b0325e",
+      "result_id": "02aac62b-0295-4afb-9948-0de1947021d7"
+    },
+    {
+      "claim_id": "f7221040-644a-4faa-8f06-149e0a23f7c3",
+      "result_id": "02aac62b-0295-4afb-9948-0de1947021d7"
+    },
+    {
+      "claim_id": "666aabe2-4e31-411d-a662-b85c920fba7a",
+      "result_id": "d0dc51f4-495c-4398-b394-6b6f345d0a9a"
+    },
+    {
+      "claim_id": "98fd3151-077e-4da9-a660-2849e7d5235d",
+      "result_id": "d0dc51f4-495c-4398-b394-6b6f345d0a9a"
+    },
+    {
+      "claim_id": "d8208696-9c87-4032-a3eb-dab6bac4e567",
+      "result_id": "d0dc51f4-495c-4398-b394-6b6f345d0a9a"
+    },
+    {
+      "claim_id": "a67c0ecd-237c-43dc-b830-871c051648cf",
+      "result_id": "8cc4d1a7-5141-4290-952b-305bfef525ee"
+    },
+    {
+      "claim_id": "538e133d-4588-4fce-ad0a-f2355cce90fb",
+      "result_id": "8cc4d1a7-5141-4290-952b-305bfef525ee"
+    },
+    {
+      "claim_id": "98bbf3c8-65f2-4c9c-875c-e129b90b1df5",
+      "result_id": "8cc4d1a7-5141-4290-952b-305bfef525ee"
+    },
+    {
+      "claim_id": "a8009266-171e-4de7-9523-e4571e202c5a",
+      "result_id": "8cc4d1a7-5141-4290-952b-305bfef525ee"
+    },
+    {
+      "claim_id": "f881a132-0f9f-4433-b01f-05a9bb0ef558",
+      "result_id": "bb5feca6-4d64-4eb3-98e8-b4ad22c9c7de"
+    },
+    {
+      "claim_id": "4a5da3a4-bbcf-46ab-9029-38fed6b5e3ab",
+      "result_id": "bb5feca6-4d64-4eb3-98e8-b4ad22c9c7de"
+    },
+    {
+      "claim_id": "f0c4b9a8-5fac-4561-a887-5cf0e0087b50",
+      "result_id": "bb5feca6-4d64-4eb3-98e8-b4ad22c9c7de"
+    },
+    {
+      "claim_id": "084effc9-dc4f-42e4-8cc3-dad2a42ad5c4",
+      "result_id": "bb5feca6-4d64-4eb3-98e8-b4ad22c9c7de"
+    },
+    {
+      "claim_id": "22fba081-0d55-40f9-862f-fa71acad657d",
+      "result_id": "bb5feca6-4d64-4eb3-98e8-b4ad22c9c7de"
+    },
+    {
+      "claim_id": "491b0cb7-96a4-4949-9ef9-0f5bebaa193a",
+      "result_id": "bb5feca6-4d64-4eb3-98e8-b4ad22c9c7de"
+    },
+    {
+      "claim_id": "13698f9b-f4b4-4a31-961e-8747db7a3db7",
+      "result_id": "bb5feca6-4d64-4eb3-98e8-b4ad22c9c7de"
+    },
+    {
+      "claim_id": "ef488130-b646-4e5a-bd85-fb3502abb719",
+      "result_id": "bb5feca6-4d64-4eb3-98e8-b4ad22c9c7de"
+    },
+    {
+      "claim_id": "3ecc970b-dc6b-4ad0-856f-d93c000550f1",
+      "result_id": "f55a5d5e-5c1b-4573-bd7f-178571cdc834"
+    },
+    {
+      "claim_id": "8233dc7f-e9d2-4a6e-9420-2f47874dc7c8",
+      "result_id": "f55a5d5e-5c1b-4573-bd7f-178571cdc834"
+    },
+    {
+      "claim_id": "c17d3bbf-9f35-461f-960b-28263f2fe4b9",
+      "result_id": "f55a5d5e-5c1b-4573-bd7f-178571cdc834"
+    },
+    {
+      "claim_id": "e14e3949-faab-4c5d-ad70-c72e6600fd51",
+      "result_id": "f55a5d5e-5c1b-4573-bd7f-178571cdc834"
+    },
+    {
+      "claim_id": "847358d1-4ea9-41c2-8372-a38469144f4f",
+      "result_id": "f55a5d5e-5c1b-4573-bd7f-178571cdc834"
+    },
+    {
+      "claim_id": "857b7a1e-fd57-4977-92a3-a34193dd5a47",
+      "result_id": "f55a5d5e-5c1b-4573-bd7f-178571cdc834"
+    },
+    {
+      "claim_id": "a96473c2-15fe-4c3f-9bbe-6df7797eb15c",
+      "result_id": "f55a5d5e-5c1b-4573-bd7f-178571cdc834"
+    },
+    {
+      "claim_id": "d391ddca-1f6d-4770-a438-27037863829a",
+      "result_id": "f55a5d5e-5c1b-4573-bd7f-178571cdc834"
+    },
+    {
+      "claim_id": "8c202342-9811-4ad7-9aba-1bc55c42e6bd",
+      "result_id": "56fa8882-8b31-4f88-a346-17f1892e44ca"
+    },
+    {
+      "claim_id": "659d1af8-39e1-43b8-8e6d-1f075e083ab8",
+      "result_id": "56fa8882-8b31-4f88-a346-17f1892e44ca"
+    },
+    {
+      "claim_id": "bd422fea-210c-466d-aa96-60406446428a",
+      "result_id": "56fa8882-8b31-4f88-a346-17f1892e44ca"
+    },
+    {
+      "claim_id": "bb32e023-ae20-45d5-ae40-8c79169d3a63",
+      "result_id": "56fa8882-8b31-4f88-a346-17f1892e44ca"
+    },
+    {
+      "claim_id": "0883cec6-7448-44b3-aa0f-1cf530eff66f",
+      "result_id": "56fa8882-8b31-4f88-a346-17f1892e44ca"
+    },
+    {
+      "claim_id": "0b966b5e-39e4-4448-9605-8c659da5bfd7",
+      "result_id": "56fa8882-8b31-4f88-a346-17f1892e44ca"
+    },
+    {
+      "claim_id": "9e661778-78fd-4fc2-ae84-69ef2b67c580",
+      "result_id": "42bbee8b-d143-442d-9fd8-59fb73ca8396"
+    },
+    {
+      "claim_id": "cf8df183-10c4-4b0c-a4dd-43cd0d67bf8a",
+      "result_id": "42bbee8b-d143-442d-9fd8-59fb73ca8396"
+    },
+    {
+      "claim_id": "0229e3ad-4dd1-4e7b-a9d8-bd07b07653e8",
+      "result_id": "42bbee8b-d143-442d-9fd8-59fb73ca8396"
+    },
+    {
+      "claim_id": "7a0e59a2-ad87-44ec-b337-5a1dce38dd45",
+      "result_id": "42bbee8b-d143-442d-9fd8-59fb73ca8396"
+    },
+    {
+      "claim_id": "2ad64e2d-ac28-4506-95f1-523b6011c398",
+      "result_id": "42bbee8b-d143-442d-9fd8-59fb73ca8396"
+    },
+    {
+      "claim_id": "4d6a818a-6bfe-40a6-a4ad-2d5a76fae17b",
+      "result_id": "42bbee8b-d143-442d-9fd8-59fb73ca8396"
+    },
+    {
+      "claim_id": "90502b1b-8e02-4d59-8c9e-6d7b5235398d",
+      "result_id": "42bbee8b-d143-442d-9fd8-59fb73ca8396"
+    },
+    {
+      "claim_id": "19470dea-c008-43de-a4d3-197113304cef",
+      "result_id": "ea2c1847-15f2-476f-ae08-752a61cfb522"
+    },
+    {
+      "claim_id": "45337be5-6c97-4d6d-9c2a-e46b68054660",
+      "result_id": "ea2c1847-15f2-476f-ae08-752a61cfb522"
+    },
+    {
+      "claim_id": "d13126eb-5d01-400e-9a8d-9e10ad9b2da8",
+      "result_id": "ea2c1847-15f2-476f-ae08-752a61cfb522"
+    },
+    {
+      "claim_id": "fb5ee400-e9fa-4df5-ae8d-269678c9aeab",
+      "result_id": "ea2c1847-15f2-476f-ae08-752a61cfb522"
+    },
+    {
+      "claim_id": "0b82527f-2691-4250-9d6e-06571826b00b",
+      "result_id": "ea2c1847-15f2-476f-ae08-752a61cfb522"
+    },
+    {
+      "claim_id": "9f2aa973-15f7-4695-82cc-76b67895d1bc",
+      "result_id": "ea2c1847-15f2-476f-ae08-752a61cfb522"
+    },
+    {
+      "claim_id": "ee854a4b-51b1-4608-948e-2832b2c2ea50",
+      "result_id": "ea2c1847-15f2-476f-ae08-752a61cfb522"
+    },
+    {
+      "claim_id": "31d6dfd2-659c-401f-a90e-c9e9d6e84419",
+      "result_id": "ea2c1847-15f2-476f-ae08-752a61cfb522"
+    },
+    {
+      "claim_id": "ed3722d2-d688-4e9c-909d-12af7b1941eb",
+      "result_id": "cf85ad5f-8f22-485f-b66b-cefa74df3efe"
+    },
+    {
+      "claim_id": "ccc80097-46ee-4036-9c86-3b782126661c",
+      "result_id": "cf85ad5f-8f22-485f-b66b-cefa74df3efe"
+    },
+    {
+      "claim_id": "fbd2d0a0-1974-41f1-8d20-f87e4f63f049",
+      "result_id": "cf85ad5f-8f22-485f-b66b-cefa74df3efe"
+    },
+    {
+      "claim_id": "afad0d0e-ae48-4876-8547-b6bdf00f57bf",
+      "result_id": "cf85ad5f-8f22-485f-b66b-cefa74df3efe"
+    },
+    {
+      "claim_id": "54e64422-cc18-4e30-9199-784b799fd9a9",
+      "result_id": "78ddd338-7e65-48aa-aa2b-bbabb38d9e4e"
+    },
+    {
+      "claim_id": "66be65aa-d199-4002-a6c9-30c0bedd32ac",
+      "result_id": "78ddd338-7e65-48aa-aa2b-bbabb38d9e4e"
+    },
+    {
+      "claim_id": "6f742241-dce7-4efe-a9a6-1b64d408f69c",
+      "result_id": "78ddd338-7e65-48aa-aa2b-bbabb38d9e4e"
+    },
+    {
+      "claim_id": "88081275-c519-4b7c-acbf-182dad52e83f",
+      "result_id": "78ddd338-7e65-48aa-aa2b-bbabb38d9e4e"
+    },
+    {
+      "claim_id": "8533db03-b362-4cb2-a882-b6ce6a6a3a99",
+      "result_id": "78ddd338-7e65-48aa-aa2b-bbabb38d9e4e"
+    },
+    {
+      "claim_id": "c1d4de50-6722-41bd-8cc5-a63fb0c0e438",
+      "result_id": "78ddd338-7e65-48aa-aa2b-bbabb38d9e4e"
+    },
+    {
+      "claim_id": "cc26560a-d17f-43ee-8188-382565066c69",
+      "result_id": "78ddd338-7e65-48aa-aa2b-bbabb38d9e4e"
+    },
+    {
+      "claim_id": "c5bc2c41-ce8f-4730-b44a-36d7b33c1372",
+      "result_id": "2050dd60-f396-4196-bd45-1ed9c257286a"
+    },
+    {
+      "claim_id": "c1a94cff-ace5-4b75-8140-905f990638a0",
+      "result_id": "2050dd60-f396-4196-bd45-1ed9c257286a"
+    },
+    {
+      "claim_id": "6c5f297f-a2b3-4872-a533-d467b972ca0c",
+      "result_id": "2050dd60-f396-4196-bd45-1ed9c257286a"
+    },
+    {
+      "claim_id": "97ab6ff1-6fb2-4899-9042-be2c73080085",
+      "result_id": "2050dd60-f396-4196-bd45-1ed9c257286a"
+    },
+    {
+      "claim_id": "560ffb57-c6e4-42b9-bce9-a712221ae93b",
+      "result_id": "ebb029ed-3652-4487-84ab-6845b2e5de40"
+    },
+    {
+      "claim_id": "3ffe441a-d4b4-4338-8186-c72dbb512b9e",
+      "result_id": "ebb029ed-3652-4487-84ab-6845b2e5de40"
+    },
+    {
+      "claim_id": "aa7a5088-3dfc-4004-bea7-acdf31e42624",
+      "result_id": "ebb029ed-3652-4487-84ab-6845b2e5de40"
+    },
+    {
+      "claim_id": "b943a922-c839-48fd-ab56-ff36d0c276b5",
+      "result_id": "ebb029ed-3652-4487-84ab-6845b2e5de40"
+    },
+    {
+      "claim_id": "8f438963-e879-4be2-9e5f-03559a334b93",
+      "result_id": "ebb029ed-3652-4487-84ab-6845b2e5de40"
+    },
+    {
+      "claim_id": "0ca3343f-ac1d-4b03-b5f7-da55ee05728c",
+      "result_id": "ebb029ed-3652-4487-84ab-6845b2e5de40"
+    },
+    {
+      "claim_id": "a20bd382-e840-4bf4-b9e5-1f8acbdfa8d6",
+      "result_id": "ebb029ed-3652-4487-84ab-6845b2e5de40"
+    },
+    {
+      "claim_id": "1990b6ce-1482-4f8a-900b-46f5a1b3e0c9",
+      "result_id": "ebb029ed-3652-4487-84ab-6845b2e5de40"
+    },
+    {
+      "claim_id": "ef722be5-47a0-4145-b026-5441628aa4c0",
+      "result_id": "ebb029ed-3652-4487-84ab-6845b2e5de40"
+    },
+    {
+      "claim_id": "8e137174-4838-4418-89bb-6c3ddd181734",
+      "result_id": "ebb029ed-3652-4487-84ab-6845b2e5de40"
+    },
+    {
+      "claim_id": "1df48f54-36e8-4fa7-a95b-e9bea4a4f873",
+      "result_id": "ebb029ed-3652-4487-84ab-6845b2e5de40"
+    },
+    {
+      "claim_id": "71596684-4c89-41dc-89ba-4ee1024c71bb",
+      "result_id": "ebb029ed-3652-4487-84ab-6845b2e5de40"
+    },
+    {
+      "claim_id": "07fe6c08-efd0-4451-8502-f66b8454717a",
+      "result_id": "ebb029ed-3652-4487-84ab-6845b2e5de40"
+    },
+    {
+      "claim_id": "441050b3-9312-4308-9f9b-138714707f3f",
+      "result_id": "d4c54bbd-5f6b-4c9b-aae2-7d98d71e02f8"
+    },
+    {
+      "claim_id": "08bdf6bb-ddf4-4f63-8faa-bc46a1c9a3e2",
+      "result_id": "d4c54bbd-5f6b-4c9b-aae2-7d98d71e02f8"
+    },
+    {
+      "claim_id": "2cafe19f-54f4-4f0c-bca3-c3d8399ce5c9",
+      "result_id": "d4c54bbd-5f6b-4c9b-aae2-7d98d71e02f8"
+    },
+    {
+      "claim_id": "88716c48-6915-496e-b582-7780b79b4188",
+      "result_id": "d4c54bbd-5f6b-4c9b-aae2-7d98d71e02f8"
+    },
+    {
+      "claim_id": "6f9be991-a620-48b4-9ae1-ec1a21950eff",
+      "result_id": "d4c54bbd-5f6b-4c9b-aae2-7d98d71e02f8"
+    },
+    {
+      "claim_id": "a9f53424-07ba-4c32-b619-989d3bacdfb3",
+      "result_id": "d4c54bbd-5f6b-4c9b-aae2-7d98d71e02f8"
+    },
+    {
+      "claim_id": "30597116-e4e5-4d18-815d-77b58a7305b0",
+      "result_id": "d4c54bbd-5f6b-4c9b-aae2-7d98d71e02f8"
+    },
+    {
+      "claim_id": "acc415c4-6ad8-4793-90a6-08ecb55f44cf",
+      "result_id": "d4c54bbd-5f6b-4c9b-aae2-7d98d71e02f8"
+    },
+    {
+      "claim_id": "b8f68e3c-5ebf-4c72-82b6-bd1dc868f247",
+      "result_id": "d4c54bbd-5f6b-4c9b-aae2-7d98d71e02f8"
+    },
+    {
+      "claim_id": "ca579b62-3218-4a60-bf7f-c5f72880eb16",
+      "result_id": "d4c54bbd-5f6b-4c9b-aae2-7d98d71e02f8"
+    },
+    {
+      "claim_id": "83a5ed9e-49f5-4ecb-9c40-aea250b14e7e",
+      "result_id": "482765dd-fe71-46ff-adc5-9a2ff8a543df"
+    }
+  ],
+  "comparisons": []
+}

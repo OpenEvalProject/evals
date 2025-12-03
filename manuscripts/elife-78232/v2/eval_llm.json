@@ -1,0 +1,395 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C6",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C47",
+      "C90",
+      "C91"
+    ],
+    "result": "GPR extends nomogram age range by 20 years compared to SWA, covering ages 45-82 versus 52-72, enabling evaluation of 86% versus 56% of ADNI diagnostic groups. GPR is more data efficient, achieving comparable accuracy with only 5% of training data versus 17% for SWA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42, C6, C84-C91 provide converging evidence that GPR successfully extends the age range and improves data efficiency. The quantitative comparisons are clearly stated with specific percentages and age ranges. The methodological explanation (C40-C41) clarifies why SWA requires smoothing that limits its range. Computational efficiency (C47) and data efficiency findings (C90-C91) are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "GPR nomograms confirm sex and laterality differences in HV: males have higher median HV than females (4162\u00b1222 vs 3883\u00b1170 mm\u00b3), right HV exceeds left HV in both sexes, and males show faster decline (-20.3 vs -14.6 mm\u00b3/year). HV peaks at 53.5 years in females and 50 years in males.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 present consistent quantitative findings about sex and laterality differences with specific numerical values. These findings replicate known patterns in the literature, providing validation of the GPR method. However, C89 notes the male peak may be an artifact of under-sampling, introducing some uncertainty about this specific feature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C74"
+    ],
+    "result": "PGS for HV shows significant positive correlation with measured HV across all p-value thresholds (p<2.7E-24), with R\u00b2 peaks at 1E-7 and 0.75 thresholds. PGS explains more variance in males than females and in bilateral versus unilateral measurements. The top and bottom 20% of PGS scores account for 41% of HV variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C54, C74 provide comprehensive statistical evidence for PGS validity. The highly significant p-values, consistent R\u00b2 patterns across thresholds, and quantitative variance explanations are well-documented. The bimodal R\u00b2 pattern (C53) is interpreted as reflecting oligogenic and polygenic effects (C82), which is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C8",
+      "C9",
+      "C75"
+    ],
+    "result": "Genetic stratification by PGS shifts nomograms by ~50 mm\u00b3 (1.2% of mean HV) in each direction, creating a total difference of ~100 mm\u00b3 (2.3%) between high and low PGS groups. This shift corresponds to approximately 3 years of normal aging for a 65-year-old and is statistically significant (F>19, p<8.04E-6).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58, C8-C9, C75 provide quantitative evidence for the genetic effect on nomograms with clear statistical support. The comparison to aging effects (C9, C75) provides meaningful clinical context. The ANOVA results (C58) confirm statistical significance. The magnitude is modest but biologically plausible given the heritability of HV.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "Genetic adjustment using ICV or AD PGS instead of HV PGS did not meaningfully shift nomograms, demonstrating specificity of the HV PGS effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 provides a critical negative control showing that the nomogram shifts are specific to HV-related genetic variants rather than general genetic or disease-related effects. This strengthens the interpretation that the observed shifts reflect healthy genetic variation in HV.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C12",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "In ADNI validation, genetic adjustment reduced intra-diagnostic-group variance by an average of 68% relative reduction. For CN participants, the gap between high and low PGS groups decreased from 10% to 1% (90% relative reduction). Similar reductions were observed for MCI (60%) and AD (56%) groups, with greater impact on CN samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C68, C12, C93-C95 demonstrate that genetic adjustment reduces phenotypic heterogeneity within diagnostic groups. The quantitative reductions are clearly stated with specific percentages. The finding that CN samples show greater benefit than MCI/AD samples (C94) is explained by the larger pathological effects in disease groups (C96) overwhelming the genetic adjustment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C11",
+      "C98"
+    ],
+    "result": "Genetically adjusted nomograms did not improve prediction of MCI-to-AD conversion in longitudinal analysis. Cox proportional hazards models showed identical hazard ratios (0.97) for both adjusted and unadjusted nomograms, confirming that lower HV percentiles predict earlier conversion but genetic adjustment provides no additional predictive value.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73, C11, C98 provide clear evidence that genetic adjustment does not improve longitudinal prediction of disease progression. The identical hazard ratios and statistical significance levels for both models are well-documented. This negative finding is important and honestly reported, though C99 speculates about potential utility in earlier disease stages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C34",
+      "C35"
+    ],
+    "result": "The study distinguishes between genetic variants affecting healthy HV variation versus disease-associated variants like APOE. APOE is associated with AD risk rather than healthy HV variation, and stratifying by APOE would theoretically decrease sensitivity to pathological decline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79, C34-C35 articulate an important conceptual distinction between healthy genetic variation and disease-associated variants. The reasoning is supported by citation to GWAS studies (C77) showing minimal AD-SNP influence in healthy populations. However, C78-C79 are theoretical predictions rather than empirically tested claims, introducing some uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The S-shaped relationship between PGS percentiles and HV reflects both oligogenic effects (few SNPs with large effect sizes at 1E-7 threshold) and polygenic effects (many SNPs with small effect sizes at 0.75 threshold), consistent with patterns observed in other traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 provide a reasonable interpretation of the observed R\u00b2 pattern, supported by citations to similar findings in other studies (C81, C83). The distinction between oligogenic and polygenic effects is conceptually sound and consistent with genetic architecture theory. However, this is primarily an interpretation of the data pattern rather than direct empirical evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The study identifies several limitations and future directions: integrating PGS directly into GP models, addressing PGS site effects, using sex- and hemisphere-specific GWAS, exploring other brain regions with higher heritability, accounting for PGS uncertainty, and residual site effects from harmonization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C108 honestly acknowledge methodological limitations and suggest improvements. These are reasonable concerns supported by citations to relevant methodological literature (C106, C108). However, these are speculative suggestions for future work rather than empirical findings, and their actual impact on results is uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "FreeSurfer consistently overestimates HV compared to manual segmentation, representing a potential systematic bias in the measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 acknowledge a known limitation of the HV measurement method, supported by citations to validation studies. This is an important caveat for interpreting absolute HV values, though it may not affect relative comparisons if the bias is consistent across groups.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C36",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The UKB dataset comprised 35,686 healthy subjects aged 44-82 after excluding 453 for medical conditions, 3,497 for genetic ancestry, and 28 outliers. HV was estimated using FreeSurfer with preprocessing including ancestry restriction, outlier removal, and regression of ICV and scan date.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C36, C109-C115 clearly document the dataset composition and preprocessing steps. The exclusion criteria are appropriate for creating a healthy reference population, and the preprocessing steps (ICV regression, outlier removal) are standard practices. The restriction to British ancestry (C113) controls for population stratification but limits generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C10",
+      "C37",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The ADNI validation dataset comprised 818 subjects aged 55-95 after excluding 26 for genetic ancestry and 314 for HV quality. HV was estimated using FreeSurfer v5.1, and NeuroCombat harmonization was applied across 58 batches (UKB + 57 ADNI sites) while preserving biological variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C37, C116-C121 document the validation dataset and harmonization procedures. The use of NeuroCombat for multi-site harmonization is appropriate, though C108 acknowledges residual site effects may remain. The preservation of biological variation (ICV, sex, diagnosis) in the harmonization model is methodologically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The SWA methodology used 100 overlapping quantile bins (10% of samples each, 90% overlap) smoothed with a Gaussian kernel of width 20.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C124 clearly describe the SWA methodology used as a baseline comparison. The parameters are taken from the Nobis et al. 2019 study (C41), ensuring a fair comparison. The description is sufficient for replication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "GPR models were trained using the laGP R library with squared exponential kernel, initialized with vertical scale as mean HV and length scale as mean age difference. Models were generated for ages 45-82 in 0.25-year increments at nine quantile levels for left, right, and mean HV in each sex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C132 provide detailed methodological description of the GPR implementation. The choice of kernel function and initialization parameters is standard practice. The use of laGP for computational efficiency (C126) is appropriate for the large dataset. The methodology is sufficiently detailed for replication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "PGS were calculated using PRSice v2 based on ENIGMA GWAS (26,814 subjects), with filtering for MAF>0.05, missingness<0.1, and 250kb clumping, yielding 70,251 SNPs for UKB and 114,812 for ADNI. PGS were generated at 14 p-value thresholds (1E-8 to 1.0), and the top/bottom 30% were used for stratification based on optimal balance of sample size and performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C141 thoroughly document the PGS calculation methodology. The filtering parameters and p-value thresholds are standard in PGS research. The choice of 30% stratification cutoff (C140-C141) is empirically justified by Figure 2-supplement 4. The methodology is reproducible with the cited GWAS summary statistics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C142",
+      "C143"
+    ],
+    "result": "ANOVA tests were used to evaluate genetic adjustment impact, and specificity was assessed using ICV and AD PGS as negative controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C143 describe appropriate statistical methods for evaluating the genetic adjustment. The use of ICV and AD PGS as negative controls (C143) is a strength that supports the specificity of findings (C60).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C144",
+      "C145"
+    ],
+    "result": "Longitudinal analysis examined MCI patients who either converted to AD or remained stable within 5 years, using Cox proportional hazards models adjusted for sex and age to test whether PGS-adjusted nomograms improved prognostic separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C145 describe appropriate methodology for the longitudinal analysis. Cox proportional hazards models are the standard approach for time-to-event analysis. The adjustment for sex and age is appropriate, though additional covariates might have been considered.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Nomograms are widely used clinical tools for normative modeling that identify cases as outliers to healthy control distributions. Current normative models do not account for genetic heterogeneity, despite HV being a key endophenotype for brain disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C13-C15 establish the clinical and scientific context for the study. These are well-established facts in the field, supported by citations (C13, C15). The identification of the gap regarding genetic heterogeneity (C3) motivates the study's contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Brain structures show high heritability (whole brain 90\u00b14.8%, HV 75\u00b15%, cortical areas 34-80%), but GWAS-identified variants explain only a fraction of this variation (HV 13\u00b11.5%, cortical surface 34\u00b13%, cortical thickness 26\u00b12%). This 'missing heritability' may be captured through polygenic scores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C23 summarize established findings from heritability and GWAS studies, all supported by appropriate citations. The concept of missing heritability (C22) is well-established in genetics. The suggestion that PGS may capture missing heritability (C23) is reasonable but somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The hippocampus is integral to memory and its damage is associated with multiple disorders including depression, schizophrenia, epilepsy, and Alzheimer's disease. AD affects 7% of people over 60 (70% of dementia cases), with pathology preceding atrophy that begins in the hippocampus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C33 provide clinical context for focusing on HV, all supported by appropriate citations to clinical and epidemiological literature. These establish the clinical relevance of the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "The peak observed in male nomograms at age 50 is suspected to be an artifact due to under-sampling of younger participants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C89 is explicitly speculative ('we suspect') and identifies a potential artifact in the data. This honest acknowledgment of uncertainty is appropriate, but the claim cannot be evaluated as supported without additional analysis to confirm or refute the hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "Genetic adjustment may prove more useful for early detection of deviation in cognitively normal subjects with presymptomatic neurodegeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C99 is explicitly speculative ('may prove more useful') about potential future applications. While this is a reasonable hypothesis given the findings, it requires empirical testing in appropriate cohorts with presymptomatic individuals.",
+    "result_type": "MINOR"
+  }
+]

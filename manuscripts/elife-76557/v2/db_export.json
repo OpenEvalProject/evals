@@ -1,0 +1,1556 @@
+{
+  "submission": {
+    "id": "fad6f7bb-0188-478a-9ed8-0baacacd039b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T12:17:15.850839Z",
+    "updated_at": "2025-12-03T12:17:15.850839Z"
+  },
+  "content": [
+    {
+      "id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "submission_id": "fad6f7bb-0188-478a-9ed8-0baacacd039b",
+      "content_type": "manuscript",
+      "content_text": "# Contingency and selection in mitochondrial genome dynamics\n\n## Authors\n\n- Christopher J Nunn<sup>1</sup> ([ORCID: 0000-0002-9598-1045](https://orcid.org/0000-0002-9598-1045)) \u2020\n- Sidhartha Goyal<sup>1</sup> ([ORCID: 0000-0002-7452-892X](https://orcid.org/0000-0002-7452-892X)) \u2020\n\n### Affiliations\n\n1. Department of Physics, University of Toronto Toronto Canada ([ROR:03dbr7087](https://ror.org/03dbr7087))\n2. IBBME, University of Toronto Toronto Canada ([ROR:03dbr7087](https://ror.org/03dbr7087))\n\n\u2020 Corresponding author\n\n## Abstract\n\nHigh frequencies of mutant mitochondrial DNA (mtDNA) in human cells lead to cellular defects that are associated with aging and disease. Yet much remains to be understood about the dynamics of the generation of mutant mtDNAs and their relative replicative fitness that informs their fate within cells and tissues. To address this, we utilize long-read single-molecule sequencing to track mutational trajectories of mtDNA in the model organism Saccharomyces cerevisiae. This model has numerous advantages over mammalian systems due to its much larger mtDNA and ease of artificially competing mutant and wild-type mtDNA copies in cells. We show a previously unseen pattern that constrains subsequent excision events in mtDNA fragmentation in yeast. We also provide evidence for the generation of rare and contentious non-periodic mtDNA structures that lead to persistent diversity within individual cells. Finally, we show that measurements of relative fitness of mtDNA fit a phenomenological model that highlights important biophysical parameters governing mtDNA fitness. Altogether, our study provides techniques and insights into the dynamics of large structural changes in genomes that we show are applicable to more complex organisms like humans.\n\n## Introduction\n\nThe mitochondrial DNA (mtDNA) in eukaryotic cells encodes a subset of enzymes involved in cellular respiration. Interestingly, the integrity of mtDNA has been implicated in critical biological processes other than respiration such as in apoptosis, trace element and intermediary metabolism, heme synthesis, and iron-sulfur cluster biogenesis (Veatch et al., 2009). Because mtDNA exists in multiple copies within numerous mitochondrial compartments, localized mtDNA damage produces heteroplasmic states with coexisting mutant and wild-type mtDNA in cells. Both intracellular mtDNA dynamics and intercellular selection then ultimately shape the fate of cell populations, with mtDNA damage resulting in cellular defects in single-celled organisms such as yeast and aging and disease in multicellular organisms such as humans.\n\nIn humans, large mtDNA deletions accumulate during the course of aging in skeletal muscle and brain tissue (Fayet et al., 2002; Kraytsberg et al., 2006; Payne and Chinnery, 2015), and result in observable cellular defects (Chan, 2006). The same types of deletions have also been implicated in numerous diseases, including Parkinson\u2019s disease (Bender et al., 2006). While these mtDNA deletions have been widely observed, much remains to be understood about the dynamics that lead to the propagation of these deletions within cells and resultantly in the tissues of humans. This is partly because of the strong dependence of human cells on mtDNA for their survival, and the complexities in artificially creating heteroplasmy or modifying mtDNA in mammalian systems (Mok et al., 2020). To address some outstanding questions regarding the dynamics of mutant mtDNA, in this article, we explore mtDNA dynamics using yeast as a model organism. Yeast is particularly well suited to study mtDNA dynamics due to the dispensability of mtDNA and because heteroplasmic cells containing mutant and wild-type mtDNA are easy to artificially construct.\n\nIn yeast, mtDNA deletions were first linked to the Petite phenotype (Ephrussi, 1949; Ephrussi, 1953; Ephrussi et al., 1949). Petite colonies are smaller than their wild-type counterparts under respiration conditions due to mtDNA deletions that render cells incapable of respiration. These deletions are due to destructive recombination events between short repeated homology in mtDNA that excise portions of the wild-type genome (Bernardi et al., 1976; Bernardi and Bernardi, 1980; Marotta et al., 1982; de Zamaroczy et al., 1983). Excision events are followed by selection for sub-genomic (nonfunctional) mtDNA fragments that contain a high density of replication origins (Goursot et al., 1980; Blanc and Dujon, 1980; de Zamaroczy et al., 1979; de Zamaroczy et al., 1981). When subgenomic fragments have replication origin densities higher than the larger wild-type genome, they consistently outcompete or \u2018suppress\u2019 wild-type genomes within cells. Suppressivity, which is a measure of this replicative advantage of Petite mtDNAs over wild-type, was shown to correlate with origin density and was reduced when replication origins were disrupted or absent, constituting the rules of suppressivity (de Zamaroczy et al., 1981; Mangin et al., 1983; Bernardi, 2005). Altogether, rolling circle replication coupled with this excision and selection for replication origins results in the formation of complex concatemer structures in the mtDNA of Petite cells that often contain multiple replication origins from distant locations of the wild-type genome (Locker et al., 1974; Locker et al., 1979; Faugeron-Fonty et al., 1979).\n\nNear the time of the complete sequencing of the mitochondrial genome of yeast in 1998 (Foury et al., 1998), work on the structural details of mtDNA that lead to the aforementioned discoveries in Petites appeared to wane. However, a number of open questions about the dynamics of Petite mtDNAs, which are at their core a result of mtDNA deletions, remain to be explored fully.\n\nRegarding the structure and generation of Petite mtDNA, three questions remained to be addressed. These include: (1) What drives mtDNA excision events in Petites to cluster near replication origins? Previous work shows that excisions occur all throughout the genome but with a higher density near replication origins (Bernardi and Bernardi, 1980; de Zamaroczy et al., 1983; de Zamaroczy and Bernardi, 1986; Marotta et al., 1982; Osman et al., 2015). The interplay between location-specific excision frequencies and selection for origin-containing fragments remains entangled. (2) What is the nature and dynamics of the ongoing excision cascades in Petites, that is, how do subsequent excisions relate to previous excisions? Previous work in Bernardi et al., 1976; Lewin et al., 1978; Lewin et al., 1979; Locker et al., 1979 showed qualitatively that persistent heterogeneity in mtDNA content was present in the sequencing of Petite strains, pointing to continuing excision events. However, these works did not provide a quantitative description of this heterogeneity or explore the relationship between the structure of the coexisting mtDNAs. (3) Are the contentious and rare non-periodic mtDNA structures observed in yeast real? The studies of Heyting et al., 1979; Bos et al., 1980 provides evidence for non-periodic structures, which is unexpected given that rolling circle replication produces periodic, tandemly duplicated structures. The work in Faugeron-Fonty et al., 1983 refutes these observations, providing a conflicting hypothesis which remains to be reconciled.\n\nConcerning the distribution of mtDNAs at a cell population level, another open question is: (4) How is the observed structural heterogeneity of mtDNA in yeast colonies partitioned among individual cells? The work in Lewin et al., 1978; Lewin et al., 1979; Locker et al., 1979 points to homoplasmic contributions to Petite-colony heterogeneity. The extent of homoplasmic and heteroplasmic contributions to colony-level heterogeneity remains to be quantified.\n\nAnd finally, given an understanding of both mtDNA structure dynamics and its partitioning in populations, the final question we address is related to the structure-function relationship of mtDNA: (5) What contributes to the fitness of mtDNA structures, and how does structure inform suppressivity? The suppressivity rules provided previously in de Zamaroczy et al., 1981, which described how mtDNA structure influenced suppressivity, were limited to reduced Petite genomes with small sizes and relatively high suppressivities. Do these same rules explain suppressivity across a larger range of genome structures and suppressivities, and can we construct a biophysical model of suppressivity that relies on these rules?\n\nIn this study, we address each of these long-standing questions with new long-read sequencing technology and accompanying structural inference methods. We highlight some advantages of Nanopore sequencing in addressing these questions and future ones, but also technical challenges specific to structure reconstruction with Nanopore sequencing of the mtDNA in yeast. Among new answers to all of the aforementioned questions, we showcase a previously unseen pattern that constrains subsequent excision events in generating new Petite mtDNA structures from existing ones, settle contention in the literature surrounding the existence and generation of non-periodic \u2018mixed\u2019 Petite structures, and propose a phenomenological model of suppressivity that highlights important biophysical parameters governing mtDNA fitness. Finally, we connect these observations in yeast to mtDNA deletions in humans which exhibit remarkably similar patterns.\n\n## Results\n\n### Overview of the structure of Grande and Petite mtDNA\n\nTo quantify mtDNA structure and their dynamics, we opted to sequence both Petite and Grande colonies with a Nanopore MinION single-molecule sequencing platform. We expected the long reads generated from this sequencing technology to improve structure reconstruction for both high and low frequency structures compared to short-read sequencing approaches. In total, we sequenced 38 Petite colonies derived from 9 spontaneous Petite colonies through passaging and 10 Grande (wild-type) colonies of the same Saccharomyces cerevisiae strain. Four of these Grande colonies were cultured under non-fermentable media (YPG), and six in fermentable media (YPAD). Starting with nine spontaneous Petite colonies, each colony was passaged twice onto new media (YPAD), storing and culturing three colonies at each passage. This generated families of Petite colonies, with nine colonies sharing each spontaneous progenitor after two passages (Figure 1a). The suppressivities of all colonies sharing a progenitor were measured (see Materials and methods), but only a subset was sequenced (dotted circles in Figure 1a). Subfamilies, labeled in Figure 1a as a subscript, were grouped based on differing mtDNA content from other members in the same family. The coverage curves from the sequencing of each Petite colony and a subset of Grande colonies are shown in Figure 1b and provide a coarse picture of their mtDNA content. It is evident that some Petite colonies within families, such as families 1 and 4, have differing mtDNA content but share the same spontaneous Petite colony progenitor. This diversity is most likely the result of early mtDNA instability in spontaneous progenitor colonies that segregate into different cells through genome bottlenecks and are sampled through passaging. It is also possible that this diversity is a result of ongoing mtDNA changes during the growth of the colony before sequencing. Nevertheless, comparing the mtDNA content in colonies that share second passage progenitors reveals that two passages followed by culturing (~32 generations) was sufficient to homogenize mtDNA content in all cases except family 1. Family 1 we believe to be a special case where early mtDNA instability occurred in the spontaneous progenitor, and then again in the second passage progenitor of colonies 1b and 1c or during their growth. Given that we sampled such a case in our experiments suggests roughly 1 in 10 chances of such events, but would require a larger study to quantify it.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/76557/elife-76557-fig1-v2.jpg)\n\n**Figure 1.:** (a) An overview of the architecture of the Petite colony sequencing experiment in this study. Nine spontaneous Petite colonies were passaged twice onto new media, culturing and storing three colonies for each passage. This produced families of colonies (indicated by color), where all colonies after two passages were derived from the same spontaneous Petite colony progenitor, but only a subset of colonies was cultured and then sequenced with a Nanopore MinION sequencing device (indicated by dotted circles). In addition to families, subfamilies are labeled as a subscript and grouped based on the predominant mtDNA structure present in these colonies according to sequencing results. (b) The sequencing coverage (arbitrary coverage scaling, consistent genome reference location) in all Petite colonies in addition to a subset of wild-type (WT), or Grande colonies sequenced. Ten Grande colonies were sequenced as a reference, four after growth under non-fermentable conditions (YPG), and six under fermentable conditions (YPAD). Border colors correspond to (a), and black borders are examples of Grande colony coverages.\n\nMapping of the mtDNA to a reference sequence, followed by careful filtering of inverted duplication artifacts (Appendix 1\u2014figure 1) and clustering of alignment breakpoint signals with a variety of parameters (see Materials and methods), revealed both inverted and non-inverted mtDNA breakpoints in all Petite colonies and rare mtDNA breakpoints in Grande colonies. These breakpoint signals delineate sequence alignments that are collinear with the reference mtDNA sequence, but merged in such a way that disjoint alignment locations on the reference genome have been brought together. Non-inverted breakpoints indicate the merging of disjoint sequences in the reference from the same strand, or with the same orientation, while inverted breakpoints indicate the merging of disjoint mtDNA sequences on opposite strands (Figure 2a). Long reads with an average read length of 6 kbp and maximum length of 120 kbp directly revealed that these breakpoint signals were contributed by concatemer structures in Petites, composed of tandem repeats of sub-genome sized repeat units that had been excised from the wild-type genome and amplified into repeated structures (Figure 2b \u2014leftmost spiral). Grande reads also revealed concatemer structures manifested in reads as subsamples of genome-sized repeating units devoid of breakpoint signals (Figure 2b \u2014rightmost spiral). These concatemer structures in Petites with sub-genome sized repeat units are consistent with the existing literature on mtDNA structure in Petites that relied on restriction digestion mapping and electron microscopy (Bernardi et al., 1975; Bernardi et al., 1976; Lewin et al., 1978; Locker et al., 1979; Faugeron-Fonty et al., 1979; Bernardi and Bernardi, 1980).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/76557/elife-76557-fig2-v2.jpg)\n\n**Figure 2.:** (a) A schematic of the definition of alignments and breakpoint signals. Alignments (which are sequences collinear with the reference genome) with their location on the reference are shown as colored arrows alongside the coordinates of alignment edges (a, b) and (c, d). A hypothetical read is shown below these alignments, indicating how the alignments are oriented with respect to each other and the coordinates of the alignment edges in contact that define the breakpoints denoted as arcs. Non-inverted breakpoints represent merged alignments from disjoint locations on the reference that map to the same strand of DNA (red arcs), while inverted breakpoints represent the same disjoint merging of alignments but with different orientation (black arcs). (b) Representative examples of mtDNA structures from sequencing reads in Petite and Grande samples. The top of this panel shows the mitochondrial reference and annotated features of the genome in colored blocks. Below the reference are long sequencing reads wrapped around themselves in a spiral that display the same annotated features as colored blocks. These spiral plots also include red bars which indicate breakpoint locations. Black regions indicate unmapped portions near the ends of the read due to adapters and barcodes. The spiral on the left is a sequencing read from a Petite colony, showing that two origins of replication have been excised from the wild-type genome and tandemly repeated in a concatemer structure. The spiral on the right is a read from a Grande colony showing a portion of a linear segment of the genome, without breakpoints (red bars) except at the ends of the reads which mark the end of alignments. (c) Summary of mtDNA breakpoints detected across 38 Petite colonies, that were derived from 9 spontaneous petite colonies through passaging (above diagonal), and 10 Grande colonies (below diagonal). In this scatter plot, each marker represents the centroid of a cluster of mtDNA breakpoint signals in reference coordinates from reads in a single sample. X and Y coordinates of each marker are the regions of mtDNA that interact to produce the breakpoint. The numbers of breakpoints in each family are indicated in the legend, as well as the numbers of colonies in each family sequenced. Also indicated are the regions on the reference genome that make up the repeating unit in the Petite read shown in (b) and the subsection of the reference genome that contributes to the Grande read in (b).\n\nAll Petite colonies contained at least one breakpoint signal and often a diverse set of breakpoints totaling 84 breakpoints across 38 Petite colonies, whereas in Grande colonies sequenced only 2 had high confidence breakpoints detected, with a total of 3 breakpoints across 10 Grande colonies (Figure 2c and Appendix 1\u2014figure 2). The diversity in location of mtDNA breakpoints within Petite families and breakpoint counts greater than the number of members of each family/subfamily also echo the diversity observed in the coverage plots but with more detail. These diverse breakpoint distributions within families indicate either structural diversity in the progenitor colony, continued changes in mtDNA structure resulting in subfamilies or coexisting structures in colonies, or multiple breakpoint signals within colonies indicating more complex mtDNA structures generated by multiple excision events.\n\n### What drives mtDNA excision events in Petites to cluster near replication origins?\n\nThe prevailing theory for the formation of Petites relies on sequence-specific illegitimate recombination within the wild-type DNA molecule between repeated GC clusters and AT stretches (Bernardi and Bernardi, 1980; de Zamaroczy et al., 1983; de Zamaroczy and Bernardi, 1986), which are prevalent in all noncoding regions of the mitochondrial genome in yeast. In particular, the extensive homology of the eight mitochondrial origins of replication and their inclusion of similar GC clusters (de Zamaroczy and Bernardi, 1986) suggest important regions for illegitimate recombinations. Evidence for hybrid origins resulting from recombination between adjacent origins in the wild-type genome have been seen in restriction digestion data (Marotta et al., 1982). Large structural variations and smaller mtDNA variations have also been observed in Illumina sequencing of Petites to cluster within origins and within close proximity to origins (Osman et al., 2015). Given that replication origins were implicated in previously observed Petite mtDNA excisions and a variety of mtDNA variations, we were curious to understand the involvement of replication origins across the diverse set of excision events we observed. Placing non-inverted breakpoint locations and replication origin locations on mitochondrial reference coordinates reveals the clustering of breakpoints near edges of interacting origins of the same orientation (Figure 3a). In fact, ~30% of breakpoints reside within replication origins, indicating that the structures containing these breakpoints have origins that are perturbed by excisions, or hybrid origins. An additional ~20% of breakpoints reside within 275 bp of the edge of an origin. The remaining 50% of breakpoints are located from 275 bp to 3 kbp from the edge of an origin.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/76557/elife-76557-fig3-v2.jpg)\n\n**Figure 3.:** (a) The colocalization of replication origins and alignment breakpoint locations due to excisions. Black dots represent the centroids of breakpoint clusters (see Materials and methods), and blue and green shading highlights replication origins and their orientation. Darker black dots are due to overlaps of breakpoints, indicating high densities of breakpoints at these locations. (b) A cumulative plot of the displacements between breakpoint edges and closest origins of replication, where the blue curve shows this enrichment of breakpoints near replication origins (top left, (c)). The orange curve represents a simulation of uniform random alignments placed on the reference genome following the true alignment length distribution in the data (bottom left, (c)). The black curve represents the simulation of alignments between randomly selected perfect repeats \u226511 bp on the reference sequence (bottom right, (c)). The green curve agrees much better with the data (blue) curve, which is the same simulation of random alignments placed on the reference following the length distribution of the data, but with the requirement that these alignments span some portion of a randomly selected origin of replication (top right, (c)). (c) A schematic of the models plotted in (b). Alignments are denoted as arrows, with distances between alignment edges (breakpoints) and replication origins (dotted boxes) as dimension lines. Circled drawings depict that uniformly random alignments are selected in the orange model, whereas alignments conditioned on spanning replication origins are present in the green model.\n\nNext, we asked if this non-uniform pattern of excision revealed new rules for mtDNA fragmentation. Besides the potential role of homology of the replication origins, it has been noted that a high density of unperturbed replication origins in Petite structures result in a replication advantage for Petite mtDNAs over wild-type mtDNAs (Blanc and Dujon, 1980; de Zamaroczy et al., 1981; Mangin et al., 1983). In concatemer structures, this means that smaller repeated fragments containing replication origins are more fit than wild-type fragments when in competition with each other. This leads to a natural question of whether or not clustering near origins is due to higher frequency recombination within or near replication origins, or if it is due to selection on a pool of arbitrary excisions with selection for the resulting small fragments containing replication origins. To this end, we compared the distribution of displacements between breakpoints and the closest replication origins (Figure 3b, blue curve) to three different models. In the first model (Figure 3b, orange curve), we plotted the same displacement distribution for uniform random mtDNA fragments, with a size distribution given by the sequencing data, placed on the reference mitochondrial genome. In the second model (Figure 3b, black curve), we plotted the displacement distribution for random fragments between perfect repeats of greater than 11 bp in the reference, which is motivated by the fact that excisions require perfect repeats or highly homologous regions. In the third model (Figure 3b, green curve), we plotted uniform random fragments as in the orange curve, with a length distribution from the sequencing data, but conditioned on spanning a portion of a randomly selected origin of replication. A schematic summarizing these models is provided in Figure 3c.\n\nThe orange and black distribution captures the breakpoint displacements from origins expected from random excision events and no selection for replication origin containing fragments. Note that the similarity between the black and orange curves demonstrates the prevalence of repeated homology in the mitochondrial reference genome. The green curve captures random excision, but strong selection for small replication origin containing fragments due to the requirement for alignments to contain a portion of an origin in this model. The observed data agrees nicely with the green curve for most of the domain of the distribution. The empirical origin to breakpoint distributions and their agreement with the green model are also consistent across a variety of breakpoint clustering/filtering parameter regimes, which have minor effects on the individual breakpoints extracted from the sequencing data, but little effect on these distributions (Appendix 1\u2014figure 3, Appendix 2\u2014table 2). Thus, while we cannot exclude a model of non-random excisions favoring close origin proximity, the bulk of the minimum breakpoint to origin displacement distributions observed can be explained by random excision and strong selection for small origin containing fragments which is in agreement with the prevailing theory of Petite mtDNA formation.\n\n### What is the nature and dynamics of the ongoing excision cascades in Petites?\n\nNext, we were curious to know if we could observe ongoing excision cascades and whether or not subsequent excisions in Petites differed from initial excisions in Grandes that generated the first Petite mtDNAs. In 16 Petite samples sequenced from families {1a, 1b, 2, 3, 8a} there were detectable levels of repeated structures that differed from the \u2018primary\u2019 mtDNA structures which span the longest portion of the reference genome and generally contribute to the majority of mtDNA (see Materials and methods on details of structure reconstruction). These lower frequency structures, or \u2018alternate\u2019 structures as they will be described from here on, were found to contribute from 0.1% to 59% of total mitochondrial content in these samples. Following multiple passagings of Petite colonies before sequencing, which would rapidly dilute any initially coexisting structures due to mtDNA bottlenecks (Ling and Shibata, 2004), these alternate structures most likely result from subsequent excisions of the primary structure during culturing. Such \u2018excision cascades,\u2019 where further excisions act on existing Petite fragments were hypothesized and discussed by Locker et al., 1979; Marotta et al., 1982; Bernardi, 2005, where it was suggested that the varying levels of alternate structures will depend on their generation rate and selective advantage in replication over the primary structure. Part of what makes the dynamics of mtDNA within these cascades interesting is the multiplicity afforded by a large variety and number of potential excisions. Particular excisions that bring regions of homology together may open up entirely new trajectories of excision dynamics that were previously unlikely or inaccessible due to mtDNA conformation.\n\nAn extreme example of such an excision cascade is given in Figure 4a, where both primary and alternate alignments are shown on the reference mitochondrial genome location in addition to sequencing coverage. In Figure 4b, the structures of the repeated units composed of these alignments are also shown alongside their calculated mitochondrial content frequencies (see Materials and methods\u2014Primary/alternate structural frequency calculations). The first thing to note is that the locations of alignments extracted from our structural detection pipeline that are involved in repeat units align well with the total sequencing coverage in Figure 4a. This diversity of alignments in Figure 4a is also corroborated by colonies that share the same progenitor. Each of the coverage curves of members of family 1 in Figure 1b share peaks with the coverage curve in Figure 4a. Second, there is significant diversity in the type of repeat units and necessary steps in their generation which stitch together these alignments in Figure 4b: Repeat unit #1 shown in Figure 4b (yellow and pink) is an example of a secondary excision across a segment of mtDNA containing the preexisting primary breakpoint, as both alignments come from opposite ends of the primary alignment and are stitched together. This immediately suggests that the excision occurred in mtDNA in a concatemer form, and across the repeat unit breakpoint (green and purple Type II excision; Figure 4c). Repeat unit #2 (blue, maroon, and green) also spans the primary breakpoint, but has an additional alignment in a different orientation that either resulted from two excisions or recombination of different repeat units (green, purple, and gray Type II excision; Figure 4c). Repeat unit #3 (green) is an example of an excision within the primary repeat unit and away from its edges (Type I excision; Figure 4c). Repeat unit #4 (purple) is an example of a repeat unit that shares only one edge with the primary alignment, but with this edge interacting with a different region of the genome producing a new alignment (Type III excision; Figure 4c).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/76557/elife-76557-fig4-v2.jpg)\n\n**Figure 4.:** (a) Example locations of alignments from mapped reads (linear alignments here are bounded by breakpoints) observed in long reads within Petite sample 1b. Endpoints of arrows are the mean breakpoint location for the cluster of breakpoint signals that punctuate alignments in repeats. The first panel shows a primary alignment which has the longest span on the genome and exists in long repeats. The second panel shows smaller alternate alignments that exist within detected repeated structures at a lower frequency. Also included in gray is a sequencing coverage map of this sample. (b) Excision cascade in Petite sample 1b. This plot shows the same primary repeat unit in the first panel, and its contribution to total mitochondrial content as a percentage. The second panel shows the forms of alternate structures present in the same sample which were derived from the primary alignment, alongside their mitochondrial contribution as a percentage. (c) A schematic of the multiplicity of excision events that generate alternate repeat units. The primary concatemer is the red structure, where arrows indicate the alignments (contiguous regions of the reference) that make up the repeating units. The primary breakpoint between these alignments is denoted as a red arc. Colored rectangles above the alignments with the same colors indicate regions of homology in the primary structure that can interact to produce an excision. Dotted rectangles indicate excision sites that produce the alignments shown below them. In the lower half of the figure, five distinct excision events that can generate different repeat units are shown. These are grouped into three excision classes in the data: Type I, where excision occurs within primary alignments, Type II, where excisions span the existing primary breakpoint, and Type III, where excisions share one edge of the primary breakpoint. (d) The frequency of each class of excision across 35 alternate structures detected in the data. (e) A plot of the distance between alternate alignment edges and their closest primary alignment edge across all three classes, normalized by primary alignment length.\n\nIn Figure 4c, we provide a schematic of the types of alternate repeat units observed across all samples and the plausible mechanisms of generation. We classify the resulting alternate repeat unit into three easily distinguishable classes in our data: Type I alternate repeat units are regions excised from the interior of primary repeat units. Type II alternate repeats contain or span the primary breakpoint, resulting from an excision across the breakpoint between two primary repeat units in a concatemer form. Type III alternate repeat units share one edge with the primary breakpoint and have a new edge within the primary alignment. For the technical details in the classification of these repeat unit types, see Materials and methods\u2014Type I/II/III repeat unit classification. The proportions of each class of alternate repeats (35 total) across all samples are shown in Figure 4d, where it is clear Type III breakpoints make up the majority (57%) of alternate repeated structures observed across the 16 colonies where we see alternate structures. In Figure 4e, we also plot the distance between the closest primary and alignment edges for each class of repeat normalized by the primary alignment length. It is clear from this figure how close subsequent excisions are to primary breakpoints in the most abundant class, Type III, with a mean and median fractional distance between the alternate and primary edge of 2% and 1%, respectively. The mean and median fractional distances of Type II and Type III repeats are also comparable, which is only expected if Type III repeats truly share an edge of the primary breakpoint; Type II repeats directly recapitulate both primary alignment edges as they contain a perfect copy of the breakpoint. Meanwhile, Type III structures just need to have an edge close enough to either edge in the primary breakpoint to be within the sequencing error that defines the size of breakpoint clusters. So, the fact that both Type II and Type III are comparable in these distances, strongly suggests that Type III structures reuse part of the primary excision site. Therefore, the abundance of Type III repeats indicates a strong preference for secondary excisions at the site that produced the primary alignment itself, that ultimately constrains the trajectories of subsequent excision events in an unexpected, and previously unreported way. It is unclear at this time whether Type II repeats, which encompass intact primary breakpoints, are related to this phenomenon. In general, this pattern of a preference of excisions around or across primary breakpoints is consistent across a variety of clustering/filtering parameters for breakpoints detection (Appendix 1\u2014figure 4, Appendix 2\u2014Tables 1 and 2), the details of which are described in methods.\n\n### Are the contentious and rare non-periodic mtDNA structures observed in yeast real?\n\nSeven colonies within family 3 in Figure 1b displayed distinguishably higher variance in coverage than the rest of the Petite colonies sequenced. This variance in coverage suggested either a complex repeat unit which itself contained smaller repeated units, or heterogeneity of mtDNA content in these samples. As such, we were interested to understand the source of this coverage variability. In these colonies, sequencing revealed non-periodic or non-tandemly duplicated primary structures involving partial inverted duplications of sequences. This is in contrast to the repeated units as concatemers that are found in the remainder of the Petite colonies and are primarily in tandemly repeated (non-inverted) forms. These non-periodic structures resemble the \u2018mixed\u2019 structures first characterized in detail in Heyting et al., 1979. The structure of one of these colonies is detailed in Figure 5 and is representative of all seven \u2018mixed\u2019 structure colonies as they contain indistinguishable alignments and are derived from the same spontaneous Petite colony. In Figure 5a, four alignments of different lengths and reference locations are depicted as arrows. Note that all four alignments share the common region of the red alignment. Also included is the sequencing coverage of this particular colony, which aligns nicely with these alignments extracted from our structural repeat detection pipeline, as well as the ranked length and absolute count of alignments. Correcting for sampling bias (see Materials and methods\u2014Mixed structure alignment frequency calculations) due to the sampled read length distributions across seven colonies with this same structure reveals that each alignment exists in equal proportions in colonies that harbor this structure (Figure 5b). Example structures in long reads selected from one of these samples are provided in Figure 5c, where the mixed structure is evident with seemingly random orientations of alignments. These \u2018mixed\u2019 structures are clear examples of intramolecular heterogeneity in mtDNA and likely intermolecular heterogeneity across a population of mtDNA fragments within cells given the differences in the content of the fragments observed. To attempt to make sense of this structure, which is at odds with the concatemer structures observed in all other colonies, we applied the repeat detection pipeline to see if any reads exhibited repeated structures. Interestingly, while superficially, this structure seems devoid of a clear pattern and appears uniformly randomized, across all seven colonies with the structure shown in Figure 5c, we did see some evidence of partially repeated structures, where the same alignments were repeated with the same orientation but separated by other single inverted alignments (Figure 5d). In all seven colonies with these same four alignments, these partially repeated structures are composed of the concatenation of largest and smallest alignments with opposite orientation, or the concatenation of the second-largest and second-smallest alignments.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/76557/elife-76557-fig5-v2.jpg)\n\n**Figure 5.:** (a) Alignment locations and their raw counts present in the primary structure of a \u2018mixed\u2019 repeat Petite colony. (b) Proportions of each four alignments across seven mixed Petite colonies sequenced after accounting for sampling bias (see Materials and methods). (c) Example structures in sequencing reads in this colony, displaying a collection of coexisting isoforms with identical base pair content but varying structures with two distinct inverted duplication breakpoints delimiting alignments. (d) Example partially repeated units detected after observing 1.5 periods in the repeat detection pipeline. (e) Interconvertibility of detected partial repeats. Arrow directions indicate the strand to which alignments have been mapped, in addition to the prime notation on length ranks of each structure which indicates an inverted alignment. (f) Crossover events in the background of concatemers that can produce all breakpoint transitions and structures observed in the data.\n\nThe detection of the partial repeats in Figure 5d and the overlapping context in Figure 5a led us to the proposed mechanism of generation provided in Figure 5e\u2013f. With this new evidence of partially detected repeat units, we build upon the crossover mechanism first hypothesized in Bos et al., 1980 for what we believe is the same structure we observed. In Figure 5e, we show how the only detected partially repeat units are interconvertible through a single crossover event relying on interactions of oppositely oriented regions. This crossover event in concatemers or repeat units results in the inversion of the non-repeated sequences, and such an event can produce all of the \u2018mixed\u2019 read structures we observed across seven samples (Figure 5f). The generative picture given this proposed mechanism is the following: (1) First a recombination event produces one of the repeat units in Figure 5d, by a crossover mechanism like that suggested in Faugeron-Fonty et al., 1983, or origin-dependent mechanisms like those observed in yeast and proposed in Brewer et al., 2011; Brewer et al., 2015. (2) This repeat unit is amplified, forming a concatemer through rolling circle replication, which exists in this form only transiently. (3) High frequency recombination at the region of shared context which was also suggested by Bos et al., 1980 produces nearly uniformly random orientations of alignments in a concatemer form. This proposed mechanism, and the fact that seven colonies derived from the passaging of one spontaneous Petite all had this \u2018mixed\u2019 structure, strongly suggests that cells in these colonies are heteroplasmic in these various structures because they are not readily segregated. As such, this structure represents a unique example of coexisting structural isoforms in the mtDNA of baker\u2019s yeast, that are produced through rapid recombination events that counteract the periodic structures produced by rolling-circle replication and any strong selection for particular configurations of mtDNA.\n\n### How is the observed structural heterogeneity of mtDNA in yeast colonies partitioned among individual cells?\n\nGiven the evidence of heteroplasmy in \u2018mixed\u2019 structure colonies, we were curious to understand the nature of the low frequency alternate mtDNA structures we observed in both Grande and Petite colonies. In the bulk sequencing of colonies, low frequency structures can be contributed by both heteroplasmic cells and mixed populations of cells homoplasmic for primary and alternate structures. In the heteroplasmic limit (Figure 6a), the majority of alternate structure content in a colony is contributed by cells in a heteroplasmic state. One consequence of being in this limit is that biological replicates of colonies would be expected to have low variance in total alternate structure content if heteroplasmy persists. In the homoplasmic limit, the major contribution to total alternate structure content comes from cells solely containing alternate structures (Figure 6b). In this limit, stochasticity in the time of generation of the mutational event would be expected to result in high variance in alternate structure content across biological replicates. Furthermore, in circumstances that enable differential selection on homoplasmic lineages, such as in Petite lineages within Grande colonies in non-fermentable conditions, one would expect the alternate structure content to change as a function of growth conditions if there were homoplasmic contributions.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/76557/elife-76557-fig6-v2.jpg)\n\n**Figure 6.:** (a) A schematic of the two limits of cellular contributions to mtDNA content in a colony. Left: In the heteroplasmic limit, most of the contribution to total alternate structure content comes from cells containing coexisting alternate and primary structures. Right: In the homoplasmic limit, most alternate structure content comes from cells homogeneous in alternate structure content. (b) The total fraction in bp of reads that include any breakpoint not expected from the primary structure in Grande samples in YPD (fermentable carbon source), YPG (non-fermentable), and Petite samples in YPD. Each dot represents the alternate structure content fraction for a single colony, which is the fractional contribution to total mitochondrial content of reads that contain breakpoints that differ from breakpoints in the primary structure. The box plot displays the median value, and the minimum, maximum, first quartile, and third quartile. Blue vectors indicate heteroplasmic/homoplasmic contributions in Grande colonies in YPD. The orange vector indicates heteroplasmic contributions in Grande colonies in YPG. (c) Contributions of petite families/subfamilies to the Petite YPD alternate structure bp fractions in (b) sorted by variance in alternate structure basepair fractions in each subfamily. The arrow indicates that increasing variance is expected to be accompanied by increasing homoplasmic contributions.\n\nIn 10 Grande colonies sequenced, 4 were grown in YPG (non-fermentable media) and 6 in YPD (fermentable media). Only one colony in each growth condition harbored high confidence Petite concatemer structures according to our structural detection pipeline, represented by the two distinct breakpoint clusters in the lower half of Figure 2d. One of these high confidence structures within a YPG colony is shown in Appendix 1\u2014figure 5. With a spontaneous Petite frequency of 10% in the genetic background of the strains sequenced (Dimitrov et al., 2009), these low detection rates are due to our conservative approach to detecting breakpoints. In our pipeline, we require at least three breakpoints from three separate reads to form a believable cluster of breakpoint signals (see Materials and methods). In Grande colonies that produce a diverse set of Petite structures afforded by excisions of the intact WT genome, forming high confidence breakpoint clusters, let alone clusters themselves, is unlikely. Therefore, to compute alternate structure frequencies in this analysis, we abandoned the requirement of breakpoint signals to form a cluster. Instead, we simply counted the total base-pair contribution of reads that included any detected breakpoints internal to the primary alignments as long as they were not accompanied by inverted duplication artifacts which are known to introduce spurious breakpoints due to noise in the latter half of the read (Spealman et al., 2020; Appendix 1\u2014figure 5).\n\nThe results of this read enumeration approach (Figure 6b) provide two lines of evidence for heteroplasmy and homoplasmy in Grande cells when comparing mtDNA colony composition under fermentable/non-fermentable media. In Grande colonies grown under non-fermentable conditions (YPG), we argue that the presence of Petite (fragmented) mtDNA in bulk sequencing is contributed by heteroplasmic cells or recent heteroplasmy (orange vector in Figure 6b). This is because in contrast to the heteroplasmic cells containing Grande mtDNA, cells homoplasmic for Petite mtDNA cannot replicate under non-fermentable conditions. With this notion, any observed Petite mtDNA in YPG resides either in cells with Grande mtDNA in a heteroplasmic state or is stuck in homoplasmic Petite cells which are unable to replicate but are a product of recent heteroplasmy. The second argument is that the observed increase in Petite mtDNA fraction that accompanies a switch to fermentable media (YPD) in Figure 6b is predominantly due to homoplasmic cells. Again, since under non-fermentable media homoplasmic Petites are suppressed, any increase in Petite mtDNA once we relax respiration requirements should primarily be due to homoplasmic Petite cells. Thus, these results in Grande colonies suggest that both heteroplasmic and homoplasmic cells (sum of blue vectors in Figure 6b) are contributing to alternate structures in fermentable conditions.\n\nIn Petite colonies where all cells regardless of mtDNA content are equally fit in fermentable media, we point to two lines of evidence indicating heteroplasmic and homoplasmic contributions to alternate structure frequencies in Figure 6. The following arguments are based on the median value of the alternate structure frequency that is shown in Figure 6b, and the variance of the same frequencies grouped into Petite families/subfamilies in Figure 6c. The first argument we make for evidence of heteroplasmy in Petite colonies is based on the observation that the median alternate structure frequency in Petites is lower than that of Grandes in Figure 6b. We suggest this is due to stronger out-competition of alternate structures by primary structures in Petites than in Grandes. Because small Petite primary structures replicate much faster than Grandes, alternate structures in Petites are less likely to take hold in this competition. Under this assumption, part of the alternate structure signals must be due to cells in at least transiently heteroplasmic states to enable this competition. Using Figure 6c and known properties of mtDNA transmission, we also argue that most variance in alternate structure frequencies within Petite families is due to stochasticity in the generation of homoplasmic lineages. This is because mtDNA transmission bottlenecks and within-cell selection favor the production of homoplasmic clones containing alternate structures (Ling and Shibata, 2004). However, we also highlight that some families have distinguishably lower variance in alternate structure fractions in Figure 6c (e.g., 2 and 4b), which is at odds with this hypothesis. As such, these low variance alternate structure fractions in select Petite families appear to indicate persistent heteroplasmic contributions. Thus, as in Grande colonies, we are able to tease apart indications of heteroplasmic and homoplasmic contributions to mtDNA diversity in Petite colonies.\n\n### What contributes to the fitness of mtDNA structures, and how does structure inform suppressivity?\n\n#### The role of origins of replication and GC clusters in mtDNA replication\n\nThe mechanism of generation of Petite mtDNAs, as well as our explanation of the distribution of excisions observed in spontaneous Petites, relied on the presence of replication origins. Given their importance in conferring a replication advantage to Petite mtDNAs, we were interested to look for mtDNAs without replication origins that we expected would exist at a low frequency. We were also curious to know if mtDNAs devoid of replication origins had any shared structural characteristics that might explain their propagation. Consistent with the notion that repeated structures with high densities of replication origins have a selective replication advantage over wild-type Grande mtDNA (de Zamaroczy et al., 1981; Bernardi, 2005), 32 of the 47 repeat structures detected across the 16 Petite colonies that contain alternate structures exhibit a higher replication origin content fraction than wild-type mtDNA (Figure 7a). Furthermore, all primary structures contain at least a portion of an origin. However, some of the detected alternate structures encircled in red in Figure 7a have no replication origin content at all. These resemble the \u2018surrogate\u2019 replication origin structures described in Goursot et al., 1982 and appear to contain GC clusters in similar configurations to replication origins (peaks above 0.6 GC content in Appendix 1\u2014figure 8), which are known to be important for replication and transcription initiation (Baldacci and Bernardi, 1982; de Zamaroczy and Bernardi, 1986). Consistent with this idea, seven of the nine structures without replication origins are enriched in GC clusters compared to the average GC cluster content of wild-type mtDNA (Figure 7b). Besides the suggested involvement of GC clusters in replication, the enrichment in GC clusters here is also consistent with the observation that GC clusters themselves may be preferred over AT-rich regions as excision sites (Faugeron-Fonty et al., 1979; Gaillard et al., 1980). While structures without replication origins are rare in cultured spontaneous Petites (Goursot et al., 1982), high depth long-read sequencing has provided access to these low frequency structures. The ease of identification of these mtDNA structures through long-read sequencing and accompanying structural inference techniques may prove useful in exploring the minimal sequences required for replication in yeast, as well as low frequency genome diversity in other systems.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/76557/elife-76557-fig7-v2.jpg)\n\n**Figure 7.:** (a) Replication origin content fractions in primary/alternate structures detected in all samples where both are present. Each dot represents the base pair fraction of any of the eight origins of replication in detected structures. Orange dots are the origin fractions in alternate structures, blue in primary structures, and the green line is the origin content fraction in the wild-type mitochondrial genome. Highlighted by a red bubble are nine alternate structures that are devoid of an origin of replication. (b) Black curves (nine total) represent the cumulative distribution of GC content fraction in a sliding window of 10 bp in the highlighted zero-ori alternate samples. The red curve highlights this same GC distribution but in the wild-type (Grande) mitochondrial reference. The gray region indicates GC content fractions in sliding windows that are consistent with GC clusters found in replication origins (Appendix 1\u2014figure 8). The inset shows the fraction of black lines above the red line as a function of GC fraction in the 10 bp window.\n\n#### How mtDNA structure informs suppressivity\n\nTo understand the rules of competition between wild-type and mutant mtDNA, we measured the suppressivity of all Petite colonies within families (see Materials and methods). Suppressivity is a measure of the fraction of Petite progeny in a cross between each Petite sample and a Grande tester strain. Unlike previous work that studied the relationship between structure and suppressivity in highly suppressive Petites with suppressivity upwards of 90% (de Zamaroczy et al., 1981), our strains exhibit suppressivities from the basal rate of the Petite frequency of the Grande strain at 10%, to ~90%, and these suppressivities correlate well with repeat unit lengths of up to 70 kbp (Appendix 1\u2014figure 9). In contrast, the repeat units in previous work were smaller than 10 kbp. While this difference in repeat unit size was due to the intentional selection of small repeat units in the previous work, distributions of deletion sizes and therefore observed suppressivities have been shown to be dependent on numerous nuclear genes (Bradshaw et al., 2017; Ling et al., 2019). To describe how the structure of mtDNA in our samples informs suppressivity, we developed a phenomenological model (Figure 8a) which assumes each repeat unit is independently competing (we discuss alternate models in Appendix 1\u2014figure 10). The key assumptions of the model that explains the data well are: (a) in mating both Grande and Petite cells contribute equal mitochondrial content, $M$, which is motivated by the observation of equal Grande and Petite contributions observed in MacAlpine et al., 2001, (b) the number of repeat units initially contributed by Grande and Petite cells during mating is given by $M$ over the average repeat unit length ($L_{G}$ or $L_{P}$ , $G$ for Grande, $P$ for Petite), and (c) Petite and Grande repeat units replicate independently and exponentially with a replication rate linearly dependent on a mtDNA replication speed ($\u03bd_{G}$ , $\u03bd_{P}$) and replication origin density ($\u03c1_{G}$ , $\u03c1_{P}$). The suppressivity is then the fraction of Petite repeat units after a certain competition time ($t$) and is given by the ratio of the time evolution of an exponentially growing population of Petite repeat units $N_{P}=M/L_{P}e^{\u03bd_{P}\u03c1_{P}t}$ to total repeat units $N_{P}+N_{G}=M/L_{P}e^{\u03bd_{P}\u03c1_{P}t}+M/L_{G}e^{\u03bd_{G}\u03c1_{G}t}$ given in equation (1):\n\n$$\nSuppressivity=\\frac{1}{1+\\frac{N_{G}}{N_{P}}}=\\frac{1}{1+\\frac{L_{P}}{L_{G}}e^{\u03bd_{G}\u03c1_{G}-\u03bd_{P}\u03c1_{P}t}}\n$$\n\n![Figure 8.](https://cdn.elifesciences.org/articles/76557/elife-76557-fig8-v2.jpg)\n\n**Figure 8.:** (a) A visual depiction of a phenomenological model of suppressivity. Grande and Petite cells are assumed to contribute equal quantities of mtDNA. It is also assumed that each repeat unit replicates independently and exponentially and that during mating the repeat unit input fractions of Grandes and Petites are inversely proportional to repeat unit length. Exponential growth rates are the product of mtDNA replication speeds and origin densities. (b) Suppressivity of all samples compared to a fit of equation (1), which is the black line. The fit parameters are $\u03bd_{g}t^{*}=10677$ bp, $\u03bd_{p}t^{*}=2296$ bp, and the coefficient of determination is $R^{2}=0.85$. Dots are the average suppressivity across three second passage Petite colonies that share the same first passage progenitor and belong to the families indicated in the legend (same colored dots share a spontaneous Petite colony progenitor). Y-axis error bars are \u00b1 the standard deviation in suppressivities across these three second passage Petites colonies. Samples containing inverted breakpoints in their primary structure are those derived from families 2 and 3, the orange and yellow dots, respectively. Family 3 is the mixed structures described in the text.\n\nThe data and least-squares fit of this model, with $\u03bd_{G}t^{*}$ and $\u03bd_{P}t^{*}$ as fit parameters, are shown in Figure 8b. These fit parameters are the products of mtDNA replication speeds in Grandes and Petites with the competition time ($t^{*}$) over which competition of Grande/Petite structures occurs following mating. The repeat unit lengths $L_{G}$ and $L_{P}$ in equation (1) are taken to be the sum of unique alignment lengths in each sample, and $N_{G}/N_{P}$ is the second term in the denominator of equation (1), which is the ratio of the Grande to Petite fragment population. To understand the values of the fit parameters and whether or not they are reasonable, we compare them to equivalent parameters inferred from an exponential growth model of a budding Grande cell: First we assume that the mtDNA competition window ($t^{*}$) is equal to the doubling time in a diploid Grande population of cells (90 min). This is a reasonable assumption, as zygotes generally give rise to their first bud within 90 min in our mating experiments and early zygote dynamics dominate suppressivity results. If we also assume that the exponential replication rate of mtDNA in the Grande cell is the product of replication origin density (1 every 10 kbp in Grandes) and replication speed, then the average mtDNA replication speed in Grande cells is 82 bp/min if mtDNA is duplicated over the cell doubling time. This is of the same order as $\u03bd_{G}$ and is within an order of magnitude of $\u03bd_{P}$ in Figure 8b. We note, however, that these mtDNA replication speeds are coarse grained parameters in the model and should not be compared to directly measured DNA fork velocities which require careful consideration of numerous biological parameters (Hawkins et al., 2013).\n\nWith respect to the architecture of the model, a variety of alternative models were also tested in Appendix 1\u2014figure 10, revealing that both exponential growth and a repeat unit input fraction inversely proportional to repeat unit length are statistically important inclusions in improving the model in most regimes. The inverse repeat unit length terms seem to suggest that within yeast zygotes, early competition operates in a repeat unit limit where concatemers are reduced to monomeric forms which then undergo replication. Interestingly, active concatemer to monomer partitioning has been observed during mitosis in yeast (Ling and Shibata, 2002; Ling and Shibata, 2004; Ling et al., 2007), although to our knowledge little is known about the structure of mtDNA during mating and zygote formation. Thus, according to this model, the rules of competition between wild-type and mutant mtDNA in yeast depend on the exponential replication of monomeric forms of mtDNA in zygotes, where replication rates are proportional to replication origin densities in repeat units. This highlights the possibility that Petite mtDNAs may have both a replication advantage and segregational advantage if replication occurs in physically separated repeat units in zygotes.\n\n## Discussion\n\nIn this article, we studied the dynamics of mtDNA fragmentation in yeast through long-read sequencing and quantified Petite mtDNA fitness through mating experiments. The use of long-read sequencing technology, in conjunction with structural inference methods we developed, which to our knowledge have never been applied to Petite mtDNA in yeast, gave us the ability to reconstruct complex mtDNA structures within populations of growing Petite colonies. This experimental approach enabled us to answer some important open questions about Petite mtDNA formation and propagation. On Petite mtDNA generation, we discovered contingency as a driving force behind mtDNA excision dynamics where previous fragmentation sites seed new events. This along with evidence for the generation of non-periodic \u2018mixed\u2019 mtDNA structures shows the power of our approach to understand structural variants and their dynamics. On Petite mtDNA propagation, this article reinforced that within cell (intracellular) selection plays a key role in the fragmentation dynamics of Petite mtDNA. A replicative advantage for mtDNA fragments with a high density of replication origins explains why mtDNA excisions tend to cluster near origins and was a critical component of the biophysical model of mtDNA fitness we developed. Both intracellular and cell-level (intercellular) selection also helped explain the distribution of altered mtDNAs among cells in a colony.\n\nBuilding upon previous work, which alluded to ongoing mtDNA fragmentation in Petites, we provided direct evidence for this fragmentation in Petite colonies and discovered that subsequent mtDNA fragmentation is contingent on previous fragmentation. The presence of various levels of heterogeneity observed within Petite strains indicated by non-primary sub-stoichiometric bands in the restriction digests of Petite mtDNA (Bernardi et al., 1976; Lewin et al., 1978; Lewin et al., 1979; Locker et al., 1979; Marotta et al., 1982) suggested that the excision mechanism was ongoing, continuously producing lower complexity Petite structures in a hypothesized excision \u2018cascade\u2019 (Locker et al., 1979; Bernardi, 2005). Here, we have demonstrated unequivocal evidence of secondary excisions that operate on primary structures in sequenced colonies, and unlike the previous work, were quantitative in computing the frequencies of these coexisting structures. We also showed, for the first time, that subsequent excisions are contingent on previous excisions that produced the primary structure in these colonies. This apparent preference for the reuse of existing excision locations constrained the fate of structures formed through subsequent excisions. The reuse of excision sites highlights a tension between contingency and repeatability in the formation of new Petite mtDNA structures. It also seems to suggest that the breakpoints in primary Petite structures are persistent instabilities in mtDNA, perhaps akin to structures like R-loops (Holt, 2019) that may promote strand invasion and recombination at or near these sites. Exploration of the nature of these instabilities in the mtDNA of yeast remains an interesting direction for future studies.\n\nThen we established that previously hypothesized non-periodic \u2018mixed\u2019 mtDNA structures are real and indeed non-periodic, which is at odds with the structures of most Petite mtDNAs observed. Hints of non-periodic or non-tandemly duplicated structures (\u2018mixed\u2019 structures) have been commented on previously in ethidium bromide treated Petites (Locker et al., 1974; Locker et al., 1979) and spontaneous Petites (Heyting et al., 1979; Bos et al., 1980; Faugeron-Fonty et al., 1983). The first proposal of a model for the generation of these structures was provided in Bos et al., 1980, but was subsequently refuted in Faugeron-Fonty et al., 1983,- where the claim was that these were larger ranging periodic structures produced by an unknown mechanism. However, our evidence of partially repeated units in Figure 5d, where two alignments are repeated with the same orientation but separated by an inverted alignment, precludes the structure proposed in Faugeron-Fonty et al., 1983. Thus, this structure is indicative of rapid recombination within mtDNA concatemers that opposes the homogeneity produced by rolling-circle replication and segregation through bud bottlenecks, which results in a collection of coexisting structural isoforms of mtDNA. While coexisting concatemers of various lengths and forms have been observed in yeast mtDNA with the same repeat units (Locker et al., 1979), as well as coexisting isoforms in plant mitochondria (Kozik et al., 2019), the \u2018mixed\u2019 structures we have observed are a rare glimpse of this phenomenon in yeast that provide a unique example of persistent intramolecular and intermolecular heterogeneity. These structures are also interesting from the perspective of reverse excision events thought to partition concatemers into monomers during bud formation (Ling and Shibata, 2002). It is unclear how a monomer should be defined in these \u2018mixed\u2019 samples, and therefore how it is partitioned, given that circular repeat units are the predominant species in new buds.\n\nOur quantitative analysis, despite using bulk sequencing, allowed us to address an important unaddressed question of how mutant mtDNAs were distributed among cells within colonies. Persistent heterogeneity in Petite colony mtDNA was observed previously as sub-molar restriction digestion fragments (Lewin et al., 1979). These fragments were persistent across biological replicates but seen to disappear and reappear with varying intensities during subcloning. While their persistence indicated heteroplasmy, the varying intensities pointed toward clonal divergence through segregation into homoplasmic clones. Similarly, we argued that most of the variation in mtDNA structure we observed within colonies is likely due to homoplasmic clones in Petites, but with hints of heteroplasmic contributions in a few examples. Our observation of alternate structures in Grande samples under non-fermentable growth conditions is a direct indicator of heteroplasmy which is usually difficult to resolve from coexisting homoplasmic clones in bulk sequencing data. Recently, a variety of single-cell sequencing approaches have been adapted for use in yeast (Jariani et al., 2020; Urbonaite et al., 2021; Dohn et al., 2021) that are poised to enable direct observations of mtDNA heteroplasmy in yeast cells like they have in humans (Maeda et al., 2020). These tools will also provide an opportunity for quantification of mtDNA heteroplasmy (Lareau et al., 2021) which remains a promising direction for future work.\n\nThe inferred fine structures of Petite mtDNA from long reads allowed us to develop a phenomenological model for how structure informs fitness measured through the suppressivity of Petite samples. The relationship between suppressivity and mtDNA structure was explored in de Zamaroczy et al., 1981, which provided two general rules: (1) Partial deletions or rearrangements of origins of replication, including inversions of fragments containing origins, reduce suppressivity, and (2), suppressivity is inversely proportional to repeat unit length. This was followed with an observed exception to the second rule (Rayko et al., 1988), which suggested that flanking regions also influenced suppressivity.\n\nIn agreement with these rules, we showed that intact replication origins are indeed enriched in both primary and alternate Petite structures compared to wild-type, and that surrogate origins are present in rare alternate structures devoid of canonical origins. We also showed that selection drives mtDNA excision events in Petites to cluster near replication origins. The colocalization of mtDNA excisions and replication origins we observed is consistent with a recent study using short-read sequencing (Osman et al., 2015). The study of Osman et al., 2015 suggested that the colocalization of origins and structural mtDNA variations may be due to replication origins themselves being recombination hotspots, resulting in preferential excisions at these locations. However, we demonstrated through comparisons to excision models that selection for small origin-containing fragments following excisions throughout the entire genome can explain the empirical excision distribution. At the same time, although we cannot see smaller mtDNA variations like SNPs in the present study, rare single-base changes at inferred excision sites in Petite strains have been observed close to origins in de Zamaroczy et al., 1983 and in Osman et al., 2015. This may mean that like the larger structural variations we observe in Petites, small variations may also be observed to be clustered near replication origins just by virtue of these regions being strongly selected for, rather than preferential mutations at these locations. It is also important to note that the mtDNA recombination landscape in wild-type yeast (Fritsch et al., 2014) also varies significantly from the excision distribution we observed. However, we attribute these differences to the selection of origin containing fragments in Petites, as well as differences between homologous recombination (between DNA molecules) and sequence-specific illegitimate recombination (within individual DNA molecules) responsible for excisions.\n\nConsistent with the role of repeat unit length in defining Petite mtDNA fitness, the most predictive model of suppressivity was in limit which assumes that both Grande and Petite mtDNAs are independently replicating in their monomeric repeated units. We note, however, that the observed size distribution of concatemers between Grandes and Petites has been highly variable. Haploid Petite cells have been found to have both larger and smaller average molecular sizes than Grandes depending on the strain, and in both cases, harbor a pool of concatemers of various sizes (Locker et al., 1979). This seems to suggest that in haploid cells, as opposed to zygotes which we consider in the model, mtDNA competition may not be operating in the repeat unit limit. Nevertheless, if the numbers of independent mtDNA concatemers in haploid cells regardless of their size are inversely proportional to repeat unit length, this would be consistent with our model. In fact, in new buds, which all cells start as, concatemer to monomer partitioning has been observed in experiments (Ling and Shibata, 2002; Ling and Shibata, 2004; Ling et al., 2007). So even if during replication each monomer expands to different sized concatemers, the numbers of independent mtDNAs can still be inversely proportional to repeat unit length.\n\nGiven the emphasis in our suppressivity model on repeat unit size, but also notable outliers such as family 2 in Figure 8b, it is also possible that effective repeat unit sizes are dictated by the possible secondary structures for a given concatemer. Suppressivities in Petite family 2, which contain tandemly repeated inverted dimers, deviate most from the theoretical curve. Inverted sequences like those in family 2 would also be expected to form the hairpin structure hypothesized in the generative model of the mixed repeats. If this hairpin persists, it will consume directly repeated regions that are preferred in crossover events. The result would be a reduction in the density of repeated regions accessible to excision events, which upon eventual fragmentation would produce a larger effective repeat unit. This may in part explain the lower suppresivity of Petite family 2 from the theoretical value. Overall, more data is likely required to aggregate these apparent exceptions or outliers into a more encompassing model of suppressivity, but the present study provides a foundation of modern techniques and lessons to build upon in this goal.\n\nConsidering the diversity and destructiveness of the Petite mutations that this study revealed, it is also worthwhile to comment on the tolerance of the Petite mutation in yeast populations and why their mtDNA might have evolved to produce a structure susceptible to such destruction. Lab strains of S. cerevisiae, like the one investigated in this study, generally have higher Petite frequencies than feral yeast strains due to a collection of nuclear mutations (Dimitrov et al., 2009). However, feral yeast strains of S. cerevisiae still have highly repetitive mtDNA that is susceptible to excision, albeit at a lower frequency. A natural question is then, why did evolution yield such a structure? It has been suggested that the addition of repetitive origins and surrogate origin sequences may have conferred a replicative or transcriptional advantage to the wild-type genome (de Zamaroczy and Bernardi, 1986; Bernardi, 2005). It is also possible that high rates of recombination enabled by this repetition is advantageous for genetic complementation. Another possibility of having a highly recombinant DNA and machinery is for the destruction of invasive foreign DNA. Finally, population-level selection for respiring yeast cells also likely played a central role in opposing the negative effects of this mtDNA instability in populations, helping maintain intact mtDNA in Petite-positive yeast over evolutionary timescales. As such, mtDNA dynamics and the Petite mutation in S. cerevisiae is a wonderful example of how multilevel selection can shape the evolutionary trajectories of genomes.\n\nFinally, we comment on the applicability of the findings in this study to other organisms. We motivated in this article that long-read sequencing and the structural inference methods we developed were able to reconstruct complex coexisting mtDNA structures in yeast colonies. This methodology will also be beneficial for the exploration of other systems that contain complex and repetitive mtDNA structures. A promising area of use is in plants, where complex mtDNA isoforms have been shown to coexist within cells (Kozik et al., 2019).\n\nInterestingly, it turns out that the same components of the process that lead to mtDNA deletions in yeast\u2014recombination followed by excision, selection, and persistent instability\u2014also lead to mtDNA deletions in the human tissues. These mtDNA deletions in humans have been seen to accumulate during aging in skeletal muscle and brain tissue (Fayet et al., 2002; Kraytsberg et al., 2006; Payne and Chinnery, 2015) and are also associated with a variety of diseases including Parkinson\u2019s (Chan, 2006; Bender et al., 2006). Like in yeast, excisions of mtDNA due to recombination between repeated homology have been suggested to be the cause of large mtDNA deletions in humans (Guo et al., 2010). Remarkably, the \u2018common deletion\u2019 in humans, which is a ~5 kbp deletion delimited by interacting 13 bp repeats, appears to be most frequent because of selection for replication origins. While numerous repeats exist in human mtDNA, and result in a multitude of deletions associated with disease, the \u2018common deletion\u2019 retains both replication origins unlike lower frequency deletions (Samuels et al., 2004). This suggests that the most common mutant mtDNA propagated in human cells is also governed by the same type of intracellular selection for replication origins that drives the Petite mutation. Persistent mtDNA instabilities in human mtDNA, which are suggested to be due to mtDNA content inducing replication fork stalling, have also been observed to create recombination hotspots and colocalize with mtDNA deletions (Kraytsberg et al., 2004; Phillips et al., 2017). This type of instability studied in humans is precisely the type of event that may help explain the contingency in mtDNA fragmentation we observe in yeast.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>W303</td>\n      <td>GenBank: JRIU00000000.1</td>\n      <td>MATa/MAT\u03b1 leu2-3,112 trp1-1 can1-100 ura3-1 ade2-1 his3-11,15</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (S. cerevisiae)</td>\n      <td>yCO362</td>\n      <td>Boris Shraiman lab at UCSB/GenBank: JRIU00000000.1</td>\n      <td>MATa W303 leu2-3,112 can1-100 ura3-1 ade2-1 his3-11,15</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (S. cerevisiae)</td>\n      <td>SY2081</td>\n      <td>Grant Brown lab at UofT/GenBank: JRIU00000000.1</td>\n      <td>W303 MAT\u03b1 leu2-3,112 can1-100 ura3-1 ade2-1 his3-11,15 trp1-1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (S. cerevisiae)</td>\n      <td>10T3</td>\n      <td>This study</td>\n      <td>W303 MAT\u03b1 leu2-3,112 can1-100 ade2-1 his3-11,15 trp1-1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Qiagen 20/G Genomic-tip</td>\n      <td>QIAGEN</td>\n      <td>Cat. no./ID: 10223</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>MinION Mk1B with Starter Pack</td>\n      <td>Oxford Nanopore</td>\n      <td>Starter Pack(Flow Cell FLO-MIN106 R9.4.1)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>EXP-NBD104 and EXP_NBD114Native barcoding expansion</td>\n      <td>Oxford Nanopore</td>\n      <td>EXP-NBD104EXP_NBD114</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>SQK-LSK109Ligation sequencing kit</td>\n      <td>Oxford Nanopore</td>\n      <td>SQK-LSK109</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>AMPureXP purification and cleanup kit</td>\n      <td>Beckman Coulter</td>\n      <td>A63881</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Minimap2</td>\n      <td>Li, 2018</td>\n      <td>Minimap2</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Yeast strains and their construction for suppressivity testing\n\nThe Grande tester strain used in mating with Petites was the baker\u2019s yeast strain yCO362 W303 MATa leu2-3,112 can1-100 ura3-1 ade2-1 his3-11,15, which was a gift from the Boris Shraiman lab at UCSB. To construct the Grande progenitor of Petite strains, we restored URA3 function in SY2081 W303 MAT\u03b1 leu2-3,112 can1-100 ura3-1 ade2-1 his3-11,15 trp1-1 which was a gift from the Grant Brown lab at the University of Toronto. To this end, we grew an Escherichia coli strain harboring pFA6a-URA3, which was a gift from Jon Houseley & David Tollervey (Addgene #61924). Plasmids were extracted and the URA3 fragment PCR amplified with primers that share 20 nt of short flanking homology with the reference yeast mitochondrial genome following the standard short flanking homology targeted recombination method (Petracek and Longtine, 2002). Expected PCR fragment sizes were confirmed on a gel and then transfected into SY2081 using the high-efficiency LiOAC yeast transformation protocol (Brown et al., 2015). Integration at the expected location was confirmed through PCR of flanking regions overlapping each breakpoint, and Sanger sequencing. To ensure integration was exclusive to our target location, we then performed tetrad analysis on the transformed SY2081 (named 10T3 hereafter) \u00d7 yCO362 and observed 2:2 segregation as expected for a single integration site.\n\n### Media and growth conditions\n\nBoth Grande and Petite colonies were cultured in YPAD medium (1% yeast extract, 2% bacto-peptone, 2% glucose, and 0.072% adenine hemisulfate). Petite colonies were detected under growth in YPADG medium (1% yeast extract, 2% bacto-peptone, 0.1% glucose, 3% glycerol, and 0.072% adenine hemisulfate). With a reduced glucose content, Petite colonies appear smaller and more translucent than their Grande counterparts in this media and the differences were discernible beyond 4 days at 30\u00b0C (Dimitrov et al., 2009). YPG medium (1% yeast extract, 2% bacto-peptone, and 3% glycerol) was used in culturing a subset of Grande colonies and verifying the respiratory deficiency of identified Petites. To measure suppressivity, we used SC-ura-trp (DG carbon source) media (0.67% bacto yeast nitrogen base w/o amino acids, 0.1% glucose, 3% glycerol, 0.2% dropout powder lacking uracil and tryptophan) which selects for zygotes due to strain auxotrophies. Liquid cultures were grown at 30\u00b0C in a linear shaking water bath, while solid media growth took place in a forced air incubator also at 30\u00b0C.\n\n### Isolation of spontaneous Petite colonies\n\nLiquid culture of strain 10T3 inoculated in YPAD media was washed in dH2O and plated on YPADG media. Respiratory deficiency of these Petite colonies was confirmed through replica plating on to YPG, as well as patching onto separate YPG plates. Following confirmation of these colonies being Petites, nine different colonies were streaked onto YPAD agar as a first passage. Three colonies were randomly selected from this first passage plate and streaked again onto YPAD agar, constituting a second passage. Three colonies from each second passage plate were cultured, stored as frozen stocks, had their suppressivities measured, and a subset was sequenced.\n\n### Yeast suppressivity assay\n\nCultures of Grande (yCO362) and Petite strains (10T3 derived) were grown overnight in YPAD liquid media. Cultures were diluted to 0.1OD and grown for 3 hr. Equal volumes of each culture were mixed and incubated at room temperature for 20 hr to allow for mating. A small aliquot of this mating mixture was observed under a hemocytometer to calculate appropriate dilutions for plating. The mating mixture was diluted and washed in dH20, then plated onto SC-ura-trp (DG carbon source). After 5 days at 30\u00b0C, Petri dishes were scanned, and the fraction of small to total colonies on these plates was recorded as the suppressivity of the strain, calculated based on an average of 250 colonies labeled per strain. The average standard deviation in suppressivity across strains related by the same first passage progenitor was ~5%.\n\n### Nanopore sequencing\n\nThree or more progeny from 9 separate spontaneous Petites derived from strain 10T3, and 10 Grande colonies under YPD (6) /YPG (4) liquid culture growth of the same strain were sequenced on an Oxford Nanopore MinION Mk1B (Figure 1). Whole genomic DNA from these 48 colonies following culturing was extracted using a modified enzymatic Hoffman-Winston DNA extraction protocol as described in Boeke et al., 1985. DNA was then purified with a Qiagen 20/G Genomic-tip and barcoded with the Oxford Nanopore EXP-NBD104 and EXP_NBD114 barcoding kits in conjunction with the SQK-LSK109 ligation sequencing kit with long fragment Agencourt AMPureXP purification, following manufacturer\u2019s instructions. Twenty-four barcoded samples were pooled at a time in two FLO-MIN106 flow cells with R9.4.1 chemistry. Sequencing generated a total of 8.5Gbases of reads across both flow cells within 24 hr, with a mean read length of ~6 kbp and maximum length of 120 kbp. About 429 Mbases of reads were mapped to mitochondrial DNA, resulting in an average coverage per primary structure of ~700 across all Petite samples sequenced.\n\n### Read basecalling, alignment, and filtering\n\nRaw Nanopore reads were basecalled and demultiplexed with the ONT Guppy package 3.1.5-1. Reads that passed default quality score filtering (>9 qscore) were aligned using Minimap2 with default parameters (Li, 2018) to the S. cerevisiae reference release R64-2-1_20150113 (Engel et al., 2014) available from yeastgenome.org. Following initial alignment, unmapped regions in reads were recursively aligned to the reference sequence to combat the Z-drop heuristic, which exists to remove spurious alignment artifacts introduced due to the expectation of collinearity between alignment anchors. This is a particularly insidious heuristic when mapping Petite structures due to large numbers of repeats within reads. See Appendix 1\u2014figure 12, where we provide an example of the effect of this Z-drop heuristic in resolving Petite structures, and how in a small subset of reads the pseudo-global alignment produced in our recursive mapping improves structure resolution. Alignments in reads were kept with PHRED scaled mapping quality scores>20, and alignment lengths>300 bp due to the high degree of homology between mt replication origins which makes alignment of these small regions of context difficult (de Zamaroczy et al., 1981).\n\n### Mitochondrial DNA alignment breakpoint detection\n\nAlignment breakpoints are defined in our pipeline to be deviations of more than 30 bp between the read and reference coordinates in adjacent alignments within one read. They are also identified by strand changes across adjacent alignments regardless of the separation in reference/read coordinates. As such, these breakpoint signals encompass large insertions, and deletions, and inversions within reads, and are delineated by alignment termination from the mapping program Minimap2 (with default parameters), which are stored and processed in a structural detection pipeline written in Python.\n\n### Removal of prevalent inverted duplication artifacts\n\nBefore breakpoint signals can be clustered, inverted duplication artifacts, which are prevalent in our particular sequencing chemistry and are apparently affected by growth media (Appendix 1\u2014figure 1a), must be filtered out from real inverted duplication breakpoint signals. These artifacts appear to be due to complementary strands being pulled in succession through the pore, resulting in an unfolding of a double-stranded DNA molecule into a molecule of double the length with a characteristic inversion. This may be due to either physical tethering or lingering of the separated complementary strand near the pore opening. In any case, conveniently this results in a nearly centered inversion within such reads (Appendix 1\u2014figure 1b), that is sometimes skewed toward the end of the read because of increased translocation speed and self-interaction of the strands in a ratcheting mechanism as described in Spealman et al., 2020. This increased speed also results in reduced read quality in the latter half as reported in Spealman et al., 2020 and Appendix 1\u2014figure 6a, which means that distances between reference positions of alignments at inversions have the distribution in Appendix 1\u2014figure 6b. Given that 90% of artifacts result in adjacent alignment edges with distances less than 1000 bp, we take this to be one of our criteria for an inversion artifact.\n\nInverted duplication artifacts are filtered from real inverted duplications at two levels before clustering: (1) Breakpoint signals where within read positioning of the inverted breakpoint is >1% likely to be derived from the purely artifact distribution in Appendix 1\u2014figure 1b is recorded in a list. (2) If breakpoints that follow criteria (1) are derived from reads with only a single inverted duplication signal, then they are considered artifacts.\n\n### Breakpoint clustering\n\nInverted/non-inverted breakpoints are clustered separately using the DBSCAN algorithm (Ester et al., 1996). This algorithm requires two parameters: $\u03f5$, which defines the neighborhood of a breakpoint as a radius in base pairs, and $minPts$, which is the number points required within $\u03f5$ of a breakpoint to be considered a core point, or dense region. Breakpoints within dense regions are then connected together iteratively to produce a density-connected cluster. In case this density-based clustering inadvertently merges true clusters, k-means clustering, with k=2, is also performed within clusters output from DBSCAN. This handles the case where breakpoints transitions in a read occur within a DBSCAN cluster, indicating too coarse clustering. These marginal cases, however, only occurred in 3/35 alternate structures, and never in primary structures.\n\nFor both inverted and non-inverted breakpoints, we set $minPts=3$, to capture even the smallest clusters which will undergo further filtering described later. For non-inverted breakpoints, $\u03f5=1$ kbp, which is a lenient choice given that the most catastrophic deviations in expected breakpoint positions due to sequencing error in inverted duplication artifacts are largely under 1 kbp. For inverted breakpoints post artifact-filtering described above, an optimal $\u03f5$ is computed by sorting nearest-neighbor distances across all inverted breakpoints and computing the Euclidean distance to the nearest-neighbor that results in the largest curvature in a plot of nearest-neighbour distance versus breakpoint number. This is the so-called \u2018elbow\u2019 method. Then $\u03f5=minoptimal\u03f5,1kbp$ is taken to be the nearest-neighbor radius for inverted breakpoints. This extra step for inverted breakpoints is required solely because of the possibility of low frequency artifact noise that is not present for non-inverted breakpoints.\n\n### Breakpoint filtering based on read support and a majority voting scheme\n\nFollowing clustering with the above parameters, breakpoint clusters are then required to have a minimum of three separate reads supporting them to be considered real. Furthermore, in reads that contain a detected inverted duplication artifact, we use the duplicated signals on either side of this artifact to our advantage in a majority voting scheme: For breakpoints belonging to cluster $j$, we count the number of times a breakpoint belonging to $j$ is recapitulated on either side of an inverted duplication artifact, $P_{j}$ , and the number of times it isn\u2019t, $N_{j}$ . If $P_{j}>N_{j}$ we consider this breakpoint to be real. In the case that $P_{j}=N_{j}=0$, meaning that the breakpoint does not exist in reads that contain inverted duplication artifacts, we perform a similar majority vote on the basis of a breakpoint being repeated or not within reads. The notion here is that real breakpoints should be repeated within reads because of the expected concatemer structure of Petites, while spurious breakpoints that are low frequency are less likely to be. To this end we compute $NR_{j}$ and $PR_{j}$ , which are the number of times a breakpoint from cluster $j$ is present in a read with repeats but is not repeated itself, and the number of times a breakpoint assigned to cluster $j$ is repeated, respectively. Similar to the above, if $PR_{j}>NR_{j}$ we consider this cluster to be real.\n\nSee Appendix 2\u2014table 1 for a summary of all parameters in our pipeline described in this section and the three preceding it. See Appendix 1\u2014figure 13 for the effect that changing these parameters has on breakpoint counts. See Appendix 1\u2014figure 11 for the effect that this majority voting scheme has on removing spurious breakpoints.\n\n### Breakpoint labeling and read encoding schemes\n\nBreakpoints are labeled based on the segmentation provided by a Python implementation of DBSCAN (an integer), in addition to two other features: (1) the strand in this transition (\u00b1), and (2) the transition from a low (L) to high (H) or vice-versa reference base position. This means that read with a repeated excised repeat unit with the same orientation and in the +strand takes the form: [2LH, 2LH, 2LH, ..., 2LH] in the number transition encoding, and [2++, 2++, 2++, ..., 2++] in the orientation encoding scheme. In addition to these two schemes, the mapped ends of the reads in reference locations are also stored and used later in assigning reads to inferred structures. Both encoding schemes are necessary when considering complex structures such as the \u2018mixed\u2019 repeat structures described in results where only two breakpoints exist, but permutations in their orientation produce four unique alignments which would be missed with a simple numerical labeling scheme.\n\n### Reconstructing mtDNA repeat structures from reads\n\nFor long reads containing small repeated structures with numerous breakpoints passing filtering criteria, repeats are detected by directly computing the longest common prefix within a read in both read encoding schemes described above. We require two periods to be present for this type of repeat detection method to produce a candidate structure, and that the detected repeat is a tandem repeat, meaning there are no intervening breakpoints between periods. This is how all low frequency alternate structures are detected within samples, and for some samples primary structures when small enough to be repeated within single reads.\n\nLarge primary structures that are too large to be fully repeated twice within reads are inferred through the construction of a breakpoint transition matrix, $T_{ij}$ , that stores the number of transitions between breakpoint i to breakpoint $j$ across all reads within a sample. If two entries in this matrix share a breakpoint, and if the fractional difference in their average counts to individual counts is <0.34, these breakpoint transitions are merged into a list together. This is a Binomial merging criterion for being within one standard deviation of the average counts assuming that both breakpoint transitions sharing a breakpoint come from the same structure. Following recursive merging of transitions and then lists of transitions with the same criteria, if in each list the number of breakpoints equals the number of unique transitions (meaning this structure is a true repeat), then the structure is recorded alongside its average count and its span on the reference. Structures inferred from this method with the largest span on the reference are considered to be primary repeats, and if small enough are recapitulated by the direct repeat detection scheme described above.\n\n### Mixed structure alignment frequency calculations\n\nConsider an alignment of length $L_{1}$ , where we are interested in computing its frequency in these mixed samples that contain four alignments with lengths ${L_{1},L_{2},L_{3},L_{4}}$, accounting for read sampling bias. Given a read of length $x>L_{1}$ , assuming sampling of a random pattern of all four alignments (or equivalently, random sampling of a periodic pattern including all four alignments), the probability this read is not truncating an alignment with length $L_{1}$ is $1-\\frac{L_{1}}{L_{1}+L_{2}+L_{3}+L_{4}}$ .\n\nThe estimated probability that we see this read of length $x>L_{1}$ is:\n\n$$\n\\int_{x=L_{1}}^{x=\u221e}P_{R}xdx\n$$\n\nwhere $P_{R}x$ is an exponential fit to the empirical read length distribution (Appendix 1\u2014figure 14), with the following form, and is the read length probability distribution:\n\n$$\nP_{R}x=\\frac{1}{\\beta}e^{\\frac{-x-\\mu}{\\beta}}\n$$\n\nwhere $\\beta$ and \u00b5 are the scale and location parameters determined from the fit.\n\nThe joint probability that we have a read long enough to see an alignment, and that it does not abruptly truncate the alignment at its ends is the product of these two terms:\n\n$$\nQ_{L_{1}}=1-\\frac{L_{1}}{L_{1}+L_{2}+L_{3}+L_{4}}e^{-\\frac{L_{1}-\\mu}{\\beta}}\n$$\n\nAlignment frequencies can then be computed by normalizing raw observed counts $N_{i}$ by $Q_{L_{i}}$ , and computing their relative frequency, $\u03bd_{i}$ :\n\n$$\n\u03bd_{i}=\\frac{\\frac{N_{i}}{Q_{L_{i}}}}{\\sum_{i=1}^{i=4}\\frac{N_{i}}{Q_{L_{i}}}}\n$$\n\n### Primary/alternate structure frequency calculations\n\nUnlike mixed samples where breakpoint identity does not uniquely define alignments (permutations of two breakpoints result in four alignments), in most samples we can simply count breakpoints, assuming that repeat units ~ unique breakpoint counts in a particular structure and perform a similar normalization to account for sampling bias.\n\nTo do this, each read is assigned to one class of potential structures based on the maximal overlap between breakpoint labels in known structures and the read, conditioned on containing content only within the known structure. Because we are counting breakpoints, we no longer have to worry about truncation of a whole alignment and can consider reads smaller than the expected alignment length.\n\nConsider a repeat unit with period $L_{k}$ in bp, and a breakpoint count $J_{k}$ that is unique to this structure. The probability that we see this structure given the read distribution in this sample is:\n\n$$\nQ_{L_{k}}=\\int_{x=L_{k}}^{x=\u221e}P_{R}xdx+\\int_{x=u}^{x=L_{k}}\\frac{x}{L_{k}}P_{R}xdx\n$$\n\nThe first term is the product of the probability (=1) that we see this breakpoint for read lengths $x>L_{k}$ and the probability that we have such reads ($P_{R}x$ is the read-length distribution fit as described above). The second term is the product of the probability we see this breakpoint for reads $x<L_{k}$ ($\\frac{x}{L_{k}}$) and the probability that we see reads with these lengths.\n\nThe relative frequency can then be calculated by normalizing counts $J_{k}$ by $Q_{L_{k}}$ and computing relative frequency across all structures as in the previous section.\n\n### Type I/II/III repeat unit classification\n\nType I repeat units are those excised from the interior of a primary Petite alignment. Type II repeat units contain alignments that span the primary alignment breakpoint when it is present in a concatemer form. Type III repeat units share one edge with the primary alignment and have another edge internal to the primary alignment. Because each edge in a reconstructed structure is truly a cluster of edge signals, for an alignment edge to be considered \u2018shared\u2019 the means of alignment edge location distributions must be equal to within one standard deviation of each other. Thus, according to this criteria, Type I repeats have no shared edges, Type II repeat units have two such shared edges and multiple alignments, and Type III repeat units have one shared edge and one alignment.\n\n### Data availability\n\nRaw Nanopore sequencing data (that has been demultiplexed and labeled with the corresponding colony name in the main text) is available alongside sequence alignment code and Python code for primary/alternate structure analysis. The data is available at https://doi.org/10.5061/dryad.vdncjsxwx. The code for analysis is available at https://doi.org/10.5281/zenodo.5851771. Preprocessed data and code to produce the plots in this article are available at https://github.com/javathejhut/ContingencyAndSelection, (copy archived at swh:1:rev:5b6f6c7e1fbff2a537f29d3b26bc292035170f6b; Nunn, 2022).\n",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "0ddfbef5-6371-43ba-bcbd-1864503ce2e1",
+      "submission_id": "fad6f7bb-0188-478a-9ed8-0baacacd039b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kevin J Verstrepen, https://ror.org/02bpp8r91 VIB-KU Leuven Center for Microbiology Belgium\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76557.sa0](https://doi.org/10.7554/eLife.76557.sa0)\n\nThis work provides further insight into long-time outstanding questions in the field of mitochondrial genetics using long-read sequence analysis and biophysical modeling. Specifically, the authors show how replication origins in mitochondrial DNA are recombination hotspots that can result in excision cascades, that lead to a variety of different mitochondrial mutants and in some cases even heteroplasmic cells. Finally, crossing wild-type cells with various mitochondrial mutants allowed the development of a model for the suppressivity (fitness) of different mitochondrial variants that suggests that the density of replication origins in different repeated units is a major determinant of mtDNA suppressivity.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Kevin J Verstrepen, https://ror.org/02bpp8r91 VIB-KU Leuven Center for Microbiology Belgium\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76557.sa1](https://doi.org/10.7554/eLife.76557.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Contingency and selection in mitochondrial genome dynamics\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Kevin J Verstrepen as Reviewer #1 and Reviewing Editor, and the evaluation has been overseen by Naama Barkai as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Konstantin Khrapko (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nAll three reviewers essentially reach the same conclusion, namely that your study's use of today's high-throughput long- read length technology yielded a valuable comprehensive view of mt DNA dynamics in Saccharomyces. However, we all feel that the work falls short when it comes to clear framing of the results in a broader context. Hence, we feel that a thorough revision of the introduction and Discussion section is needed to better summarize the existing literature in a concise and accessible way.\n\nEssential revisions:\n\n1. Please clearly listing the existing knowledge and open questions and which of these are confirmed, revised or answered with this new study.\n\n2. In the Discussion section, please frame the results more broadly, and discuss the parallels and differences to other organisms, including humans and human mitochondrial diseases.\n\n3. Please consider the more detailed comments in the each of the reviewer's comments below and adapt the text accordingly, or provide an argument why changes are not needed.\n\nReviewer #1 (Recommendations for the authors):\n\nSpecific questions and concerns\n\nNote that the text does not contain line numbers, making it difficult to pinpoint specific sections\u2026\n\nOverall, the text is long and wordy, and not always clearly written, especially for non-experts. It would be advisable to rework the introduction section, and better summarize and explain existing literature, as well and clearly define principles like \"suppression\". It seems that the most relevant existing body of literature can be summarized in a much more compact text, that stresses the existing hypothesis that the formation of petite mutants is driven by the presence in the mitochondrial DNA of short repeats that favor recombination events, followed by the selection of (nonfunctional) fragments that contain a large density of replication origins, causing these fragments to be replicated more efficiently than the larger, complete mt genome. The selection for a higher density of origins also favors the formation of complex concatemers of mtDNA fragments that contain multiple origins. When this is summarized in the first paragraph of the introduction, it becomes much easier for the reader to understand the more specific questions about the formation and selection of mt fragments and the questions that remain unanswered.\n\nPage 7: \"Whether this theory of origin-origin recombination, or preferred excisions near replication origins holds up, we were curious to understand the role replication origins might play in the excision process.\" \u25ca revise sentence\n\nFigure 3, legend \u2013 please provide a title for the figure, and make sure that the first line for each panel describes what is in the panel. (this is OK for panel b, but not for a and c).\n\nFigure 3, panel B: why does the green curve have such a strong inflection point near zero? Why is it not symmetrical around zero?\n\nParagraph on heterplasmy \u2013 I am not sure that I understand the arguments for the presence of heterplasmy. This seems very indirect. Please explain in a more clear way. Also, why not simply do single-cell sequencing?\n\nDiscussion section regarding the outliers in repeat size \u2013 is it also possible that some outliers might simply reflect that selection is still in progress? Not all structures with sub-optimal fitness disappear instantly \u2013 selection often takes some time (ie replication cycles).\n\nDiscussion, last paragraph: I do not agree with the conclusion that these findings suggest that feral yeasts have maintained their mtDNA as a result of continuous selection for respiratory metabolism. It would be useful to consider and discuss the fact that feral yeasts generally have much lower petite formation; and consider if and how the use of a laboratory strain like W303 influences the results.\n\nNote that laboratory strains and some beer yeasts likely lost the mechanisms that reduce mt DNA instability because they have been relieved from selection for respiratory metabolism for many years of repeated growth under fermentative conditions in laboratory medium (high glucose, inducing Crabtree repression); but feral yeasts do not need continuous selection for respiration to maintain their mtDNA.\n\nReviewer #2 (Recommendations for the authors):\n\n1. In Figure 2b and 2c, having the entire schematic of the yeast mitochondrial genomes rather than just sub-sections would make your point about the repeat concatemer structure found Petite genomes while also making the work more accessible by those who don't use yeast as their model organism.\n\n2. Additionally, please move the legend in figure 2c off the figure. Also, increasing the visibility of the red breakpoint locations (especially in the Grande genome illustration) will allow readers to better compare the structural differences in the genomes.\n\n3. The use of the x,y plot for figure 2d is a bit confusing. Mapping all the breakpoint locations to schematic of the yeast mtDNA genome might more clearly illustrate the greater quantity and distribution of breakpoints found in the Petite genomes as compared to the Grande genomes.\n\n4. In the Discussion section, citing other systems that this sequencing and structural inference system could be applied to would help to increase the relevance of this system outside of your specific research question.\n\nReviewer #3 (Recommendations for the authors):\n\nIt is imperative that all data is made available to the reader in the raw and processed format, with annotation sufficient to repeat analyses and to run novel analyses. At this point I do not see clear data availability section.\n",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "15161c9e-9c21-407a-b9e3-33e1fa1c3856",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C1",
+      "claim": "High frequencies of mutant mitochondrial DNA (mtDNA) in human cells lead to cellular defects that are associated with aging and disease.",
+      "claim_type": "EXPLICIT",
+      "source": "High frequencies of mutant mitochondrial DNA (mtDNA) in human cells lead to cellular defects that are associated with aging and disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement in the abstract that references established knowledge about mtDNA mutations and their effects.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "25617807-7496-4e75-ba42-cbe52c2e66e5",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C2",
+      "claim": "Long-read single-molecule sequencing can track mutational trajectories of mtDNA in Saccharomyces cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this, we utilize long-read single-molecule sequencing to track mutational trajectories of mtDNA in the model organism Saccharomyces cerevisiae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors describe their experimental approach using long-read sequencing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "ca234971-842a-44e9-a238-c68372bfcbb2",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C3",
+      "claim": "Saccharomyces cerevisiae has advantages over mammalian systems for studying mtDNA dynamics due to its much larger mtDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "This model has numerous advantages over mammalian systems due to its much larger mtDNA and ease of artificially competing mutant and wild-type mtDNA copies in cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a rationale for using yeast as a model organism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "5dc53c92-22ea-4a1c-b51c-d344a4d577bb",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C4",
+      "claim": "Saccharomyces cerevisiae has advantages over mammalian systems for studying mtDNA dynamics due to ease of artificially competing mutant and wild-type mtDNA copies in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This model has numerous advantages over mammalian systems due to its much larger mtDNA and ease of artificially competing mutant and wild-type mtDNA copies in cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a rationale for using yeast as a model organism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "09591d29-6431-484d-8506-ec2c45e9f1c4",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C5",
+      "claim": "A previously unseen pattern constrains subsequent excision events in mtDNA fragmentation in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "We show a previously unseen pattern that constrains subsequent excision events in mtDNA fragmentation in yeast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "1e0ca1f6-6711-4535-9f3f-9f8a2dad8f0a",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C6",
+      "claim": "Rare and contentious non-periodic mtDNA structures lead to persistent diversity within individual cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We also provide evidence for the generation of rare and contentious non-periodic mtDNA structures that lead to persistent diversity within individual cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "7c902101-29f4-4aa7-8c16-b5c914478f8b",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C7",
+      "claim": "Measurements of relative fitness of mtDNA fit a phenomenological model that highlights important biophysical parameters governing mtDNA fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we show that measurements of relative fitness of mtDNA fit a phenomenological model that highlights important biophysical parameters governing mtDNA fitness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "75fca953-6312-41d3-9ffa-e864a37e8ba1",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C8",
+      "claim": "The findings in yeast are applicable to more complex organisms like humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our study provides techniques and insights into the dynamics of large structural changes in genomes that we show are applicable to more complex organisms like humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion in the abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "9ecac658-4b01-412c-bb5e-768ef3ce546c",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C9",
+      "claim": "Mitochondrial DNA encodes a subset of enzymes involved in cellular respiration.",
+      "claim_type": "EXPLICIT",
+      "source": "The mitochondrial DNA (mtDNA) in eukaryotic cells encodes a subset of enzymes involved in cellular respiration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about mtDNA function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "671184f5-ab4d-4b87-b033-40686d18712f",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C10",
+      "claim": "The integrity of mtDNA has been implicated in apoptosis, trace element and intermediary metabolism, heme synthesis, and iron-sulfur cluster biogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the integrity of mtDNA has been implicated in critical biological processes other than respiration such as in apoptosis, trace element and intermediary metabolism, heme synthesis, and iron-sulfur cluster biogenesis (Veatch et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "abde1a16-663f-402d-aa88-673ac0f3f8b9",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C11",
+      "claim": "mtDNA exists in multiple copies within numerous mitochondrial compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "Because mtDNA exists in multiple copies within numerous mitochondrial compartments, localized mtDNA damage produces heteroplasmic states with coexisting mutant and wild-type mtDNA in cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about mtDNA organization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "973c487b-89fd-4668-9b28-3ddcf0a2a2a4",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C12",
+      "claim": "Localized mtDNA damage produces heteroplasmic states with coexisting mutant and wild-type mtDNA in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Because mtDNA exists in multiple copies within numerous mitochondrial compartments, localized mtDNA damage produces heteroplasmic states with coexisting mutant and wild-type mtDNA in cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical consequence of multiple mtDNA copies and localized damage.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "19f525c5-0a1b-4f17-b34d-acffedc4dafa",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C13",
+      "claim": "Large mtDNA deletions accumulate during aging in skeletal muscle and brain tissue in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, large mtDNA deletions accumulate during the course of aging in skeletal muscle and brain tissue (Fayet et al., 2002; Kraytsberg et al., 2006; Payne and Chinnery, 2015), and result in observable cellular defects (Chan, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "5c8a3b23-949a-4877-aee0-149bb2cf0187",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C14",
+      "claim": "Large mtDNA deletions result in observable cellular defects in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, large mtDNA deletions accumulate during the course of aging in skeletal muscle and brain tissue (Fayet et al., 2002; Kraytsberg et al., 2006; Payne and Chinnery, 2015), and result in observable cellular defects (Chan, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "86627c4d-474c-4afc-8d23-b3f507f95da1",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C15",
+      "claim": "mtDNA deletions have been implicated in Parkinson's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "The same types of deletions have also been implicated in numerous diseases, including Parkinson's disease (Bender et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "e1f0f666-a57d-4898-80cf-dec066df5233",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C16",
+      "claim": "Human cells have strong dependence on mtDNA for their survival.",
+      "claim_type": "EXPLICIT",
+      "source": "This is partly because of the strong dependence of human cells on mtDNA for their survival, and the complexities in artificially creating heteroplasmy or modifying mtDNA in mammalian systems (Mok et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known characteristic of human cells, supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "21b260db-26b4-45e4-b4d8-15879630e263",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C17",
+      "claim": "There are complexities in artificially creating heteroplasmy or modifying mtDNA in mammalian systems.",
+      "claim_type": "EXPLICIT",
+      "source": "This is partly because of the strong dependence of human cells on mtDNA for their survival, and the complexities in artificially creating heteroplasmy or modifying mtDNA in mammalian systems (Mok et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "07ef7574-21dc-425b-a6e6-f2a64e5cb049",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C18",
+      "claim": "Yeast is well suited to study mtDNA dynamics due to the dispensability of mtDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Yeast is particularly well suited to study mtDNA dynamics due to the dispensability of mtDNA and because heteroplasmic cells containing mutant and wild-type mtDNA are easy to artificially construct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a rationale for using yeast as a model organism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "ea90849f-b955-4820-99de-420c4915972a",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C19",
+      "claim": "Heteroplasmic cells containing mutant and wild-type mtDNA are easy to artificially construct in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Yeast is particularly well suited to study mtDNA dynamics due to the dispensability of mtDNA and because heteroplasmic cells containing mutant and wild-type mtDNA are easy to artificially construct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a rationale for using yeast as a model organism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "066f4d0f-25ff-4e8c-b72c-d108e0e72e89",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C20",
+      "claim": "mtDNA deletions in yeast were first linked to the Petite phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "In yeast, mtDNA deletions were first linked to the Petite phenotype (Ephrussi, 1949; Ephrussi, 1953; Ephrussi et al., 1949).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to historical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "f52d50bb-1047-400a-87fd-5812de2825d8",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C21",
+      "claim": "Petite colonies are smaller than their wild-type counterparts under respiration conditions due to mtDNA deletions that render cells incapable of respiration.",
+      "claim_type": "EXPLICIT",
+      "source": "Petite colonies are smaller than their wild-type counterparts under respiration conditions due to mtDNA deletions that render cells incapable of respiration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the Petite phenotype.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "7f857295-bd93-4d18-aeae-82bb9d39ec1b",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C22",
+      "claim": "mtDNA deletions in yeast are due to destructive recombination events between short repeated homology in mtDNA that excise portions of the wild-type genome.",
+      "claim_type": "EXPLICIT",
+      "source": "These deletions are due to destructive recombination events between short repeated homology in mtDNA that excise portions of the wild-type genome (Bernardi et al., 1976; Bernardi and Bernardi, 1980; Marotta et al., 1982; de Zamaroczy et al., 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "810be27c-9b1a-48a2-bc5c-599cf58f2777",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C23",
+      "claim": "Excision events are followed by selection for sub-genomic mtDNA fragments that contain a high density of replication origins.",
+      "claim_type": "EXPLICIT",
+      "source": "Excision events are followed by selection for sub-genomic (nonfunctional) mtDNA fragments that contain a high density of replication origins (Goursot et al., 1980; Blanc and Dujon, 1980; de Zamaroczy et al., 1979; de Zamaroczy et al., 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "6c201b87-afb7-4f21-be51-cf7b989d5597",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C24",
+      "claim": "Subgenomic fragments with replication origin densities higher than the larger wild-type genome consistently outcompete or 'suppress' wild-type genomes within cells.",
+      "claim_type": "EXPLICIT",
+      "source": "When subgenomic fragments have replication origin densities higher than the larger wild-type genome, they consistently outcompete or 'suppress' wild-type genomes within cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about Petite mtDNA behavior.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "5adec7df-b719-4234-b04b-ddd649052a31",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C25",
+      "claim": "Suppressivity correlates with origin density and is reduced when replication origins are disrupted or absent.",
+      "claim_type": "EXPLICIT",
+      "source": "Suppressivity, which is a measure of this replicative advantage of Petite mtDNAs over wild-type, was shown to correlate with origin density and was reduced when replication origins were disrupted or absent, constituting the rules of suppressivity (de Zamaroczy et al., 1981; Mangin et al., 1983; Bernardi, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "c5a2e52a-fa95-46aa-bafb-ad1cc9daaae0",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C26",
+      "claim": "Rolling circle replication coupled with excision and selection for replication origins results in the formation of complex concatemer structures in the mtDNA of Petite cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, rolling circle replication coupled with this excision and selection for replication origins results in the formation of complex concatemer structures in the mtDNA of Petite cells that often contain multiple replication origins from distant locations of the wild-type genome (Locker et al., 1974; Locker et al., 1979; Faugeron-Fonty et al., 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "3a0719c8-e01a-429f-ae9f-544ad53f09ad",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C27",
+      "claim": "Petite mtDNA concatemer structures often contain multiple replication origins from distant locations of the wild-type genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, rolling circle replication coupled with this excision and selection for replication origins results in the formation of complex concatemer structures in the mtDNA of Petite cells that often contain multiple replication origins from distant locations of the wild-type genome (Locker et al., 1974; Locker et al., 1979; Faugeron-Fonty et al., 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "71fbd26c-3b45-4abb-aa77-583e0d475759",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C28",
+      "claim": "Previous work shows that excisions occur all throughout the genome but with a higher density near replication origins.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work shows that excisions occur all throughout the genome but with a higher density near replication origins (Bernardi and Bernardi, 1980; de Zamaroczy et al., 1983; de Zamaroczy and Bernardi, 1986; Marotta et al., 1982; Osman et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "f5eb4830-6eab-4a1a-b129-013900828bc9",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C29",
+      "claim": "Persistent heterogeneity in mtDNA content was present in the sequencing of Petite strains, pointing to continuing excision events.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work in Bernardi et al., 1976; Lewin et al., 1978; Lewin et al., 1979; Locker et al., 1979 showed qualitatively that persistent heterogeneity in mtDNA content was present in the sequencing of Petite strains, pointing to continuing excision events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "c4838bee-ed67-44e6-aa4a-6c4aa05faf3d",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C30",
+      "claim": "Studies of Heyting et al., 1979; Bos et al., 1980 provide evidence for non-periodic structures in yeast mtDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The studies of Heyting et al., 1979; Bos et al., 1980 provides evidence for non-periodic structures, which is unexpected given that rolling circle replication produces periodic, tandemly duplicated structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "dc8c79a1-f86d-4907-9a9d-649e83b43a8f",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C31",
+      "claim": "The work in Faugeron-Fonty et al., 1983 refutes observations of non-periodic structures in yeast mtDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The work in Faugeron-Fonty et al., 1983 refutes these observations, providing a conflicting hypothesis which remains to be reconciled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "ba989b08-7d98-4613-a583-617fd0120b2c",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C32",
+      "claim": "38 Petite colonies were sequenced, derived from 9 spontaneous Petite colonies through passaging.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, we sequenced 38 Petite colonies derived from 9 spontaneous Petite colonies through passaging and 10 Grande (wild-type) colonies of the same Saccharomyces cerevisiae strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "0d7eaa70-9562-4b8e-a503-ccee9c1e500d",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C33",
+      "claim": "10 Grande (wild-type) colonies of the same Saccharomyces cerevisiae strain were sequenced.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, we sequenced 38 Petite colonies derived from 9 spontaneous Petite colonies through passaging and 10 Grande (wild-type) colonies of the same Saccharomyces cerevisiae strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "d2e1ffd5-a1f5-45ea-92ed-a962a2e4a068",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C34",
+      "claim": "Four Grande colonies were cultured under non-fermentable media (YPG).",
+      "claim_type": "EXPLICIT",
+      "source": "Four of these Grande colonies were cultured under non-fermentable media (YPG), and six in fermentable media (YPAD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "96ca7a99-cf71-4660-80f8-7bfac8c365ba",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C35",
+      "claim": "Six Grande colonies were cultured in fermentable media (YPAD).",
+      "claim_type": "EXPLICIT",
+      "source": "Four of these Grande colonies were cultured under non-fermentable media (YPG), and six in fermentable media (YPAD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "de14ead6-48dd-4de9-8dfc-725a6cc0dabe",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C36",
+      "claim": "Two passages followed by culturing (~32 generations) was sufficient to homogenize mtDNA content in all cases except family 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, comparing the mtDNA content in colonies that share second passage progenitors reveals that two passages followed by culturing (~32 generations) was sufficient to homogenize mtDNA content in all cases except family 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "18e2d6ae-a7f3-4f0f-b9e2-77465c50e7cd",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C37",
+      "claim": "All Petite colonies contained at least one breakpoint signal.",
+      "claim_type": "EXPLICIT",
+      "source": "All Petite colonies contained at least one breakpoint signal and often a diverse set of breakpoints totaling 84 breakpoints across 38 Petite colonies, whereas in Grande colonies sequenced only 2 had high confidence breakpoints detected, with a total of 3 breakpoints across 10 Grande colonies (Figure 2c and Appendix 1\u2014figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the sequencing data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "693820ba-9f8f-49b3-9d90-cc3d5252037c",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C38",
+      "claim": "84 breakpoints were detected across 38 Petite colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "All Petite colonies contained at least one breakpoint signal and often a diverse set of breakpoints totaling 84 breakpoints across 38 Petite colonies, whereas in Grande colonies sequenced only 2 had high confidence breakpoints detected, with a total of 3 breakpoints across 10 Grande colonies (Figure 2c and Appendix 1\u2014figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the sequencing data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "5b4bfb77-155d-4352-aabd-436657bc4416",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C39",
+      "claim": "Only 2 Grande colonies had high confidence breakpoints detected.",
+      "claim_type": "EXPLICIT",
+      "source": "All Petite colonies contained at least one breakpoint signal and often a diverse set of breakpoints totaling 84 breakpoints across 38 Petite colonies, whereas in Grande colonies sequenced only 2 had high confidence breakpoints detected, with a total of 3 breakpoints across 10 Grande colonies (Figure 2c and Appendix 1\u2014figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the sequencing data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "a5ee1a3e-3a22-49e8-8254-4e4298574723",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C40",
+      "claim": "A total of 3 breakpoints were detected across 10 Grande colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "All Petite colonies contained at least one breakpoint signal and often a diverse set of breakpoints totaling 84 breakpoints across 38 Petite colonies, whereas in Grande colonies sequenced only 2 had high confidence breakpoints detected, with a total of 3 breakpoints across 10 Grande colonies (Figure 2c and Appendix 1\u2014figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the sequencing data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "8e5eebcf-46fd-460d-9cd8-04d3adb332b0",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C41",
+      "claim": "Long reads with an average read length of 6 kbp and maximum length of 120 kbp directly revealed that breakpoint signals were contributed by concatemer structures in Petites.",
+      "claim_type": "EXPLICIT",
+      "source": "Long reads with an average read length of 6 kbp and maximum length of 120 kbp directly revealed that these breakpoint signals were contributed by concatemer structures in Petites, composed of tandem repeats of sub-genome sized repeat units that had been excised from the wild-type genome and amplified into repeated structures (Figure 2b \u2014leftmost spiral).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the sequencing data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "90a07fc4-699d-488f-baef-5940c7b887eb",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C42",
+      "claim": "Petite concatemer structures are composed of tandem repeats of sub-genome sized repeat units that had been excised from the wild-type genome and amplified into repeated structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Long reads with an average read length of 6 kbp and maximum length of 120 kbp directly revealed that these breakpoint signals were contributed by concatemer structures in Petites, composed of tandem repeats of sub-genome sized repeat units that had been excised from the wild-type genome and amplified into repeated structures (Figure 2b \u2014leftmost spiral).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the sequencing data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "1522cee9-0864-4921-ae7f-338dc4b73ebc",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C43",
+      "claim": "Grande reads revealed concatemer structures manifested in reads as subsamples of genome-sized repeating units devoid of breakpoint signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Grande reads also revealed concatemer structures manifested in reads as subsamples of genome-sized repeating units devoid of breakpoint signals (Figure 2b \u2014rightmost spiral).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the sequencing data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "d501bc56-9599-4173-97a4-702c4fd6a0cb",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C44",
+      "claim": "~30% of breakpoints reside within replication origins.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, ~30% of breakpoints reside within replication origins, indicating that the structures containing these breakpoints have origins that are perturbed by excisions, or hybrid origins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "648d028f-6d64-414b-b25f-7c5d1caa4575",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C45",
+      "claim": "An additional ~20% of breakpoints reside within 275 bp of the edge of an origin.",
+      "claim_type": "EXPLICIT",
+      "source": "An additional ~20% of breakpoints reside within 275 bp of the edge of an origin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "c2928be5-3e2d-42fc-9469-bf398db7e0d1",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C46",
+      "claim": "The remaining 50% of breakpoints are located from 275 bp to 3 kbp from the edge of an origin.",
+      "claim_type": "EXPLICIT",
+      "source": "The remaining 50% of breakpoints are located from 275 bp to 3 kbp from the edge of an origin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "5fbb893b-48c1-4639-9789-84d931de9fb0",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C47",
+      "claim": "The bulk of the minimum breakpoint to origin displacement distributions observed can be explained by random excision and strong selection for small origin containing fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while we cannot exclude a model of non-random excisions favoring close origin proximity, the bulk of the minimum breakpoint to origin displacement distributions observed can be explained by random excision and strong selection for small origin containing fragments which is in agreement with the prevailing theory of Petite mtDNA formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing empirical data to models shown in Figure 3b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "3fb57e66-ce66-462a-94d5-5f4c8c61bf06",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C48",
+      "claim": "In 16 Petite samples sequenced from families {1a, 1b, 2, 3, 8a} there were detectable levels of repeated structures that differed from the 'primary' mtDNA structures.",
+      "claim_type": "EXPLICIT",
+      "source": "In 16 Petite samples sequenced from families {1a, 1b, 2, 3, 8a} there were detectable levels of repeated structures that differed from the 'primary' mtDNA structures which span the longest portion of the reference genome and generally contribute to the majority of mtDNA (see Materials and methods on details of structure reconstruction).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the sequencing data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "f0f383e3-8df3-4643-8c0d-bd39d97ba9c9",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C49",
+      "claim": "Lower frequency alternate structures were found to contribute from 0.1% to 59% of total mitochondrial content in Petite samples.",
+      "claim_type": "EXPLICIT",
+      "source": "These lower frequency structures, or 'alternate' structures as they will be described from here on, were found to contribute from 0.1% to 59% of total mitochondrial content in these samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "61125c0b-ab6d-4e10-bc06-9b18f39a2190",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C50",
+      "claim": "Type III breakpoints make up the majority (57%) of alternate repeated structures observed across the 16 colonies where alternate structures are seen.",
+      "claim_type": "EXPLICIT",
+      "source": "The proportions of each class of alternate repeats (35 total) across all samples are shown in Figure 4d, where it is clear Type III breakpoints make up the majority (57%) of alternate repeated structures observed across the 16 colonies where we see alternate structures.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative observation from the data shown in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "329a0572-fb7a-4858-817a-8db88493b380",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C51",
+      "claim": "The mean and median fractional distances of Type III repeats between alternate and primary edges are 2% and 1%, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "It is clear from this figure how close subsequent excisions are to primary breakpoints in the most abundant class, Type III, with a mean and median fractional distance between the alternate and primary edge of 2% and 1%, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from the data analysis shown in Figure 4e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "355fdb90-91d3-4cd8-b023-bb04c03ce51a",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C52",
+      "claim": "The abundance of Type III repeats indicates a strong preference for secondary excisions at the site that produced the primary alignment itself.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the abundance of Type III repeats indicates a strong preference for secondary excisions at the site that produced the primary alignment itself, that ultimately constrains the trajectories of subsequent excision events in an unexpected, and previously unreported way.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the quantitative data on Type III repeats.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "4b02f3db-2a7f-4d43-8418-7d148d57f80b",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C53",
+      "claim": "Seven colonies within family 3 displayed distinguishably higher variance in coverage than the rest of the Petite colonies sequenced.",
+      "claim_type": "EXPLICIT",
+      "source": "Seven colonies within family 3 in Figure 1b displayed distinguishably higher variance in coverage than the rest of the Petite colonies sequenced.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the coverage data shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "a0e6533e-e39a-4ae6-b8fb-2a7906965f1f",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C54",
+      "claim": "Seven colonies in family 3 displayed non-periodic or non-tandemly duplicated primary structures involving partial inverted duplications of sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "In these colonies, sequencing revealed non-periodic or non-tandemly duplicated primary structures involving partial inverted duplications of sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "21219865-3f3e-4643-83d6-f26b394519f4",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C55",
+      "claim": "Correcting for sampling bias reveals that each alignment exists in equal proportions in colonies that harbor the mixed structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Correcting for sampling bias (see Materials and methods\u2014Mixed structure alignment frequency calculations) due to the sampled read length distributions across seven colonies with this same structure reveals that each alignment exists in equal proportions in colonies that harbor this structure (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative observation after correcting for sampling bias, shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "1bbef8d0-df6a-4576-af13-e3335282ff32",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C56",
+      "claim": "Across all seven colonies with the mixed structure, there is evidence of partially repeated structures where the same alignments were repeated with the same orientation but separated by other single inverted alignments.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, while superficially, this structure seems devoid of a clear pattern and appears uniformly randomized, across all seven colonies with the structure shown in Figure 5c, we did see some evidence of partially repeated structures, where the same alignments were repeated with the same orientation but separated by other single inverted alignments (Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the sequencing data shown in Figure 5d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "963fa45c-7890-4939-b788-e177463f59c8",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C57",
+      "claim": "The fact that seven colonies derived from the passaging of one spontaneous Petite all had the mixed structure strongly suggests that cells in these colonies are heteroplasmic in these various structures.",
+      "claim_type": "EXPLICIT",
+      "source": "This proposed mechanism, and the fact that seven colonies derived from the passaging of one spontaneous Petite all had this 'mixed' structure, strongly suggests that cells in these colonies are heteroplasmic in these various structures because they are not readily segregated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that multiple colonies share the same mixed structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "36c626da-dedb-4f9e-90d5-b441c9b12795",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C58",
+      "claim": "The mixed structure represents a unique example of coexisting structural isoforms in the mtDNA of baker's yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, this structure represents a unique example of coexisting structural isoforms in the mtDNA of baker's yeast, that are produced through rapid recombination events that counteract the periodic structures produced by rolling-circle replication and any strong selection for particular configurations of mtDNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observations of the mixed structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "750ff7eb-fda5-493c-991f-147c6f95e6a3",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C59",
+      "claim": "In Grande colonies grown under non-fermentable conditions (YPG), the presence of Petite (fragmented) mtDNA in bulk sequencing is contributed by heteroplasmic cells or recent heteroplasmy.",
+      "claim_type": "EXPLICIT",
+      "source": "In Grande colonies grown under non-fermentable conditions (YPG), we argue that the presence of Petite (fragmented) mtDNA in bulk sequencing is contributed by heteroplasmic cells or recent heteroplasmy (orange vector in Figure 6b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the fact that homoplasmic Petite cells cannot replicate under non-fermentable conditions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "5c52e3ca-9da9-4de4-9e09-4f030a6ce2ba",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C60",
+      "claim": "The observed increase in Petite mtDNA fraction that accompanies a switch to fermentable media (YPD) is predominantly due to homoplasmic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The second argument is that the observed increase in Petite mtDNA fraction that accompanies a switch to fermentable media (YPD) in Figure 6b is predominantly due to homoplasmic cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the observation that homoplasmic Petites are suppressed under non-fermentable media.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "617783fb-f276-42ac-b055-be2f11efea6d",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C61",
+      "claim": "Both heteroplasmic and homoplasmic cells are contributing to alternate structures in Grande colonies in fermentable conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, these results in Grande colonies suggest that both heteroplasmic and homoplasmic cells (sum of blue vectors in Figure 6b) are contributing to alternate structures in fermentable conditions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the observations in Figure 6b.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "715b136d-2284-4d56-8564-a205e562f785",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C62",
+      "claim": "32 of the 47 repeat structures detected across the 16 Petite colonies that contain alternate structures exhibit a higher replication origin content fraction than wild-type mtDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the notion that repeated structures with high densities of replication origins have a selective replication advantage over wild-type Grande mtDNA (de Zamaroczy et al., 1981; Bernardi, 2005), 32 of the 47 repeat structures detected across the 16 Petite colonies that contain alternate structures exhibit a higher replication origin content fraction than wild-type mtDNA (Figure 7a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative observation from the data shown in Figure 7a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "850e9e03-78d1-424e-933c-a53123b972aa",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C63",
+      "claim": "All primary structures contain at least a portion of an origin.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, all primary structures contain at least a portion of an origin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "3f2fac60-f583-4115-b560-0c416436a561",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C64",
+      "claim": "Some detected alternate structures have no replication origin content at all.",
+      "claim_type": "EXPLICIT",
+      "source": "However, some of the detected alternate structures encircled in red in Figure 7a have no replication origin content at all.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the data shown in Figure 7a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "cc38bfa3-e69c-438f-9418-0180104ebb2b",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C65",
+      "claim": "Seven of the nine structures without replication origins are enriched in GC clusters compared to the average GC cluster content of wild-type mtDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, seven of the nine structures without replication origins are enriched in GC clusters compared to the average GC cluster content of wild-type mtDNA (Figure 7b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative observation from the data shown in Figure 7b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "64099363-36f7-4960-99ef-d133955d5acb",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C66",
+      "claim": "The strains exhibit suppressivities from the basal rate of the Petite frequency of the Grande strain at 10%, to ~90%.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike previous work that studied the relationship between structure and suppressivity in highly suppressive Petites with suppressivity upwards of 90% (de Zamaroczy et al., 1981), our strains exhibit suppressivities from the basal rate of the Petite frequency of the Grande strain at 10%, to ~90%, and these suppressivities correlate well with repeat unit lengths of up to 70 kbp (Appendix 1\u2014figure 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative observation from the suppressivity measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "681cf640-bdb2-43f7-aa2a-ee82cacadce1",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C67",
+      "claim": "Suppressivities correlate well with repeat unit lengths of up to 70 kbp.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike previous work that studied the relationship between structure and suppressivity in highly suppressive Petites with suppressivity upwards of 90% (de Zamaroczy et al., 1981), our strains exhibit suppressivities from the basal rate of the Petite frequency of the Grande strain at 10%, to ~90%, and these suppressivities correlate well with repeat unit lengths of up to 70 kbp (Appendix 1\u2014figure 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative observation from the data shown in Appendix 1\u2014figure 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "d2903255-6283-4245-b028-4448c48fb4eb",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C68",
+      "claim": "The phenomenological model of suppressivity assumes each repeat unit is independently competing.",
+      "claim_type": "EXPLICIT",
+      "source": "To describe how the structure of mtDNA in our samples informs suppressivity, we developed a phenomenological model (Figure 8a) which assumes each repeat unit is independently competing (we discuss alternate models in Appendix 1\u2014figure 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the model developed by the authors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "3c94748d-5d2e-4e20-82cc-3c026fb314bd",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C73",
+      "claim": "Both exponential growth and a repeat unit input fraction inversely proportional to repeat unit length are statistically important inclusions in improving the model in most regimes.",
+      "claim_type": "EXPLICIT",
+      "source": "With respect to the architecture of the model, a variety of alternative models were also tested in Appendix 1\u2014figure 10, revealing that both exponential growth and a repeat unit input fraction inversely proportional to repeat unit length are statistically important inclusions in improving the model in most regimes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion from testing alternative models shown in Appendix 1\u2014figure 10.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "2b1a4454-1ae5-447f-aa91-a0784581ed63",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C74",
+      "claim": "The same components of the process that lead to mtDNA deletions in yeast\u2014recombination followed by excision, selection, and persistent instability\u2014also lead to mtDNA deletions in human tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, it turns out that the same components of the process that lead to mtDNA deletions in yeast\u2014recombination followed by excision, selection, and persistent instability\u2014also lead to mtDNA deletions in the human tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison drawn between yeast and human systems.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "f1df0fc3-f29a-4ea1-a30e-6dcd33ead42e",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C75",
+      "claim": "mtDNA deletions in humans have been seen to accumulate during aging in skeletal muscle and brain tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "These mtDNA deletions in humans have been seen to accumulate during aging in skeletal muscle and brain tissue (Fayet et al., 2002; Kraytsberg et al., 2006; Payne and Chinnery, 2015) and are also associated with a variety of diseases including Parkinson's (Chan, 2006; Bender et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "f0dfa7cb-bb09-4ed4-ac25-7acb062cf703",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C76",
+      "claim": "mtDNA deletions in humans are associated with a variety of diseases including Parkinson's.",
+      "claim_type": "EXPLICIT",
+      "source": "These mtDNA deletions in humans have been seen to accumulate during aging in skeletal muscle and brain tissue (Fayet et al., 2002; Kraytsberg et al., 2006; Payne and Chinnery, 2015) and are also associated with a variety of diseases including Parkinson's (Chan, 2006; Bender et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "185b575b-c656-405e-82de-785d9830cdaf",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C77",
+      "claim": "Excisions of mtDNA due to recombination between repeated homology have been suggested to be the cause of large mtDNA deletions in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Like in yeast, excisions of mtDNA due to recombination between repeated homology have been suggested to be the cause of large mtDNA deletions in humans (Guo et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "76f3940f-4f51-494e-9e9d-70ffffa29a25",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C78",
+      "claim": "The 'common deletion' in humans is a ~5 kbp deletion delimited by interacting 13 bp repeats.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the 'common deletion' in humans, which is a ~5 kbp deletion delimited by interacting 13 bp repeats, appears to be most frequent because of selection for replication origins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about human mtDNA deletions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "9d10fe1d-6796-4760-8dfe-50c0ffeaee69",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C79",
+      "claim": "The 'common deletion' in humans retains both replication origins unlike lower frequency deletions.",
+      "claim_type": "EXPLICIT",
+      "source": "While numerous repeats exist in human mtDNA, and result in a multitude of deletions associated with disease, the 'common deletion' retains both replication origins unlike lower frequency deletions (Samuels et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "d5192126-d354-420c-a218-e8bbdf1fd3a5",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C80",
+      "claim": "The most common mutant mtDNA propagated in human cells is governed by the same type of intracellular selection for replication origins that drives the Petite mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the most common mutant mtDNA propagated in human cells is also governed by the same type of intracellular selection for replication origins that drives the Petite mutation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the comparison between yeast and human mtDNA deletions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "82ee0d0e-4042-482b-bca4-5295611e602e",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C81",
+      "claim": "Persistent mtDNA instabilities in human mtDNA have been observed to create recombination hotspots and colocalize with mtDNA deletions.",
+      "claim_type": "EXPLICIT",
+      "source": "Persistent mtDNA instabilities in human mtDNA, which are suggested to be due to mtDNA content inducing replication fork stalling, have also been observed to create recombination hotspots and colocalize with mtDNA deletions (Kraytsberg et al., 2004; Phillips et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "8f00c33e-0635-4a47-b9f2-ca00c8ab5325",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C82",
+      "claim": "Sequencing generated a total of 8.5Gbases of reads across both flow cells within 24 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequencing generated a total of 8.5Gbases of reads across both flow cells within 24 hr, with a mean read length of ~6 kbp and maximum length of 120 kbp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sequencing output.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "8bac0e0c-154e-4fb8-9922-0e0f79674084",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C83",
+      "claim": "About 429 Mbases of reads were mapped to mitochondrial DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "About 429 Mbases of reads were mapped to mitochondrial DNA, resulting in an average coverage per primary structure of ~700 across all Petite samples sequenced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sequencing output.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "39bb49a6-ba3f-48f9-9011-adc45177d44c",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "claim_id": "C84",
+      "claim": "The average coverage per primary structure is ~700 across all Petite samples sequenced.",
+      "claim_type": "EXPLICIT",
+      "source": "About 429 Mbases of reads were mapped to mitochondrial DNA, resulting in an average coverage per primary structure of ~700 across all Petite samples sequenced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sequencing output.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c4f30ff6-40f6-4614-8aba-5d5d0f92c4c1",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Long-read Nanopore sequencing successfully characterized mtDNA structures in yeast colonies. The authors sequenced 38 Petite and 10 Grande colonies, generating 8.5 Gbases with reads averaging 6 kbp (max 120 kbp). This revealed 84 breakpoints across Petite colonies versus only 3 in Grande colonies, with long reads directly showing concatemer structures composed of tandem repeats of sub-genomic fragments in Petites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C32-C35, C37-C43, C82-C84 collectively demonstrate successful application of long-read sequencing to characterize mtDNA structures. The experimental design is clearly described, sequencing metrics are provided, and the structural observations (concatemers, breakpoints) are directly supported by the data shown in Figure 2. The high coverage (~700\u00d7) and long read lengths enabled direct visualization of complex repeat structures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "780857c3-0049-4576-878a-40638a3e3ac0",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Breakpoints cluster near replication origins due to selection for origin-containing fragments rather than preferential excision at origins. Approximately 30% of breakpoints reside within origins, 20% within 275 bp of origin edges, and 50% from 275 bp to 3 kbp away. Modeling shows this distribution is explained by random excision followed by strong selection for small fragments containing origins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47 are well-supported by quantitative data and modeling shown in Figure 3. The comparison of empirical breakpoint distributions to three different models (random excision, perfect repeats, and origin-conditioned selection) provides strong evidence that selection rather than preferential excision drives the observed clustering. The consistency across different clustering parameters (Appendix 1-figure 3) strengthens this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "9e2e2aa9-38b7-45e0-af18-e5c303e62013",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Secondary excisions preferentially reuse primary excision sites, constraining subsequent fragmentation trajectories. In 16 Petite samples, alternate structures contributing 0.1-59% of mtDNA were detected. Type III repeats (sharing one edge with primary breakpoints) comprised 57% of alternate structures, with mean/median fractional distances of only 2%/1% between alternate and primary edges.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C52 demonstrate a novel pattern of contingency in mtDNA fragmentation. The quantitative data on alternate structure frequencies (C49), Type III repeat abundance (C50), and proximity measurements (C51) directly support the inference of preferential reuse of excision sites (C52). Figure 4 provides clear visual and quantitative evidence. This pattern is consistent across multiple clustering parameters (Appendix 1-figure 4).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "be44667d-7e4a-4ff3-9255-a744fe152aeb",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Non-periodic 'mixed' mtDNA structures exist in yeast and represent persistent heteroplasmy. Seven colonies in family 3 displayed non-tandemly duplicated structures with partial inverted duplications. Four alignments exist in equal proportions after correcting for sampling bias, with evidence of partially repeated structures. The persistence across seven colonies from one progenitor indicates these structures are not readily segregated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C58 resolve a long-standing controversy about non-periodic structures in yeast mtDNA. The observations are well-documented with coverage data (C53, Figure 1b), structural characterization (C54-C56, Figure 5), and the inference of heteroplasmy (C57-C58) is logically sound given the persistence across multiple colonies. The proposed crossover mechanism (Figure 5e-f) provides a plausible explanation, though direct mechanistic validation would strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "2b4ba4be-97b8-4940-bf3f-4afc7c47c92b",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Both heteroplasmic and homoplasmic cells contribute to mtDNA diversity in colonies. In Grande colonies under non-fermentable conditions (YPG), Petite mtDNA must come from heteroplasmic cells since homoplasmic Petites cannot replicate. The increase in Petite mtDNA fraction upon switching to fermentable media (YPD) indicates homoplasmic contributions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 present logical inferences based on the biological constraints of respiration-deficient cells. The reasoning is sound: homoplasmic Petites cannot grow on non-fermentable media, so any Petite mtDNA detected in YPG must be from heteroplasmic cells (C59). The increased Petite fraction in YPD (C60, Figure 6b) logically indicates homoplasmic contributions. However, this is bulk sequencing data, so direct single-cell validation would strengthen these inferences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "74df5a7a-7604-4465-a885-0397ee98488f",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Replication origins and GC clusters drive mtDNA fragment fitness. Of 47 detected repeat structures, 32 have higher origin content than wild-type, and all primary structures contain at least part of an origin. Nine alternate structures lack origins entirely, but seven of these are enriched in GC clusters compared to wild-type mtDNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C65 are supported by quantitative data in Figure 7. The observation that most structures are enriched in origins (C62-C63) confirms established theory. The novel finding of origin-free structures enriched in GC clusters (C64-C65) suggests alternative replication mechanisms. The data directly support these observations, though the functional significance of GC cluster enrichment could benefit from additional experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "c757ee07-7bdf-4488-9da2-58d0df052d91",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A phenomenological model explains how mtDNA structure determines suppressivity. The model assumes independent competition of repeat units with exponential replication rates proportional to origin density and input fractions inversely proportional to repeat unit length. Suppressivities range from 10-90% and correlate with repeat unit lengths up to 70 kbp. Model testing confirmed that both exponential growth and inverse length-dependent input fractions are statistically important.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C68, C73, and C7 describe a well-supported phenomenological model. The fit to data (Figure 8b, R\u00b2=0.85) is good, and alternative models were tested (Appendix 1-figure 10) to validate model architecture choices. The fit parameters (\u03bd\u2090t* and \u03bd\u209at*) are biophysically reasonable when compared to known cell doubling times. However, notable outliers exist (e.g., family 2), and the model is phenomenological rather than mechanistic, limiting deeper biological interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "ab6d3ec5-6fe6-4c8e-8fd5-f854ce6c6c50",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The mechanisms of mtDNA deletion in yeast are applicable to humans. Both systems involve recombination-mediated excision, selection for replication origins, and persistent instabilities. The human 'common deletion' retains both replication origins unlike less frequent deletions, suggesting similar intracellular selection. Persistent mtDNA instabilities in humans create recombination hotspots that colocalize with deletions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C81 and C8 draw parallels between yeast and human mtDNA dynamics, supported by multiple citations to human studies (C75-C77, C79, C81). The comparison is conceptually sound: both systems show recombination-mediated deletions, selection for origins, and persistent instabilities. The 'common deletion' example (C78-C80) provides specific evidence for origin-based selection in humans. However, this remains a comparative/inferential argument rather than direct experimental validation in human systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "4aab5466-66de-4fdc-a3f8-b03ab78b3988",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Two passages followed by culturing (~32 generations) was sufficient to homogenize mtDNA content in all cases except family 1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C36 is directly supported by the observation that colonies sharing second passage progenitors have similar mtDNA content (Figure 1b), with family 1 as the noted exception. This demonstrates the effectiveness of the passaging protocol for generating homogeneous populations, though the exception indicates some variability in mtDNA dynamics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "e8ce45fe-faf3-437a-ba11-785b1b64bb17",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background on mtDNA function and disease associations in humans, and rationale for using yeast as a model system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C9-C17 provide established background knowledge supported by appropriate citations. These claims establish the biological context and justify the experimental approach. They are well-supported by the literature but represent prior knowledge rather than new findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    },
+    {
+      "id": "a4f5b3aa-5e5a-4379-a6bd-242ff3b6f6bc",
+      "content_id": "2e4e14d8-cb16-444a-b4f1-9394d2332b13",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background on yeast mtDNA biology, Petite phenotype, and historical context of mtDNA fragmentation studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4, C18-C31 provide established background on yeast mtDNA biology and the Petite phenotype, supported by extensive citations to historical work. These claims establish the scientific context and identify open questions (C30-C31 regarding non-periodic structures) but represent prior knowledge rather than new experimental findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:17:15.850839Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "25617807-7496-4e75-ba42-cbe52c2e66e5",
+      "result_id": "c4f30ff6-40f6-4614-8aba-5d5d0f92c4c1"
+    },
+    {
+      "claim_id": "ba989b08-7d98-4613-a583-617fd0120b2c",
+      "result_id": "c4f30ff6-40f6-4614-8aba-5d5d0f92c4c1"
+    },
+    {
+      "claim_id": "0d7eaa70-9562-4b8e-a503-ccee9c1e500d",
+      "result_id": "c4f30ff6-40f6-4614-8aba-5d5d0f92c4c1"
+    },
+    {
+      "claim_id": "d2e1ffd5-a1f5-45ea-92ed-a962a2e4a068",
+      "result_id": "c4f30ff6-40f6-4614-8aba-5d5d0f92c4c1"
+    },
+    {
+      "claim_id": "96ca7a99-cf71-4660-80f8-7bfac8c365ba",
+      "result_id": "c4f30ff6-40f6-4614-8aba-5d5d0f92c4c1"
+    },
+    {
+      "claim_id": "18e2d6ae-a7f3-4f0f-b9e2-77465c50e7cd",
+      "result_id": "c4f30ff6-40f6-4614-8aba-5d5d0f92c4c1"
+    },
+    {
+      "claim_id": "693820ba-9f8f-49b3-9d90-cc3d5252037c",
+      "result_id": "c4f30ff6-40f6-4614-8aba-5d5d0f92c4c1"
+    },
+    {
+      "claim_id": "5b4bfb77-155d-4352-aabd-436657bc4416",
+      "result_id": "c4f30ff6-40f6-4614-8aba-5d5d0f92c4c1"
+    },
+    {
+      "claim_id": "a5ee1a3e-3a22-49e8-8254-4e4298574723",
+      "result_id": "c4f30ff6-40f6-4614-8aba-5d5d0f92c4c1"
+    },
+    {
+      "claim_id": "8e5eebcf-46fd-460d-9cd8-04d3adb332b0",
+      "result_id": "c4f30ff6-40f6-4614-8aba-5d5d0f92c4c1"
+    },
+    {
+      "claim_id": "90a07fc4-699d-488f-baef-5940c7b887eb",
+      "result_id": "c4f30ff6-40f6-4614-8aba-5d5d0f92c4c1"
+    },
+    {
+      "claim_id": "1522cee9-0864-4921-ae7f-338dc4b73ebc",
+      "result_id": "c4f30ff6-40f6-4614-8aba-5d5d0f92c4c1"
+    },
+    {
+      "claim_id": "8f00c33e-0635-4a47-b9f2-ca00c8ab5325",
+      "result_id": "c4f30ff6-40f6-4614-8aba-5d5d0f92c4c1"
+    },
+    {
+      "claim_id": "8bac0e0c-154e-4fb8-9922-0e0f79674084",
+      "result_id": "c4f30ff6-40f6-4614-8aba-5d5d0f92c4c1"
+    },
+    {
+      "claim_id": "39bb49a6-ba3f-48f9-9011-adc45177d44c",
+      "result_id": "c4f30ff6-40f6-4614-8aba-5d5d0f92c4c1"
+    },
+    {
+      "claim_id": "d501bc56-9599-4173-97a4-702c4fd6a0cb",
+      "result_id": "780857c3-0049-4576-878a-40638a3e3ac0"
+    },
+    {
+      "claim_id": "648d028f-6d64-414b-b25f-7c5d1caa4575",
+      "result_id": "780857c3-0049-4576-878a-40638a3e3ac0"
+    },
+    {
+      "claim_id": "c2928be5-3e2d-42fc-9469-bf398db7e0d1",
+      "result_id": "780857c3-0049-4576-878a-40638a3e3ac0"
+    },
+    {
+      "claim_id": "5fbb893b-48c1-4639-9789-84d931de9fb0",
+      "result_id": "780857c3-0049-4576-878a-40638a3e3ac0"
+    },
+    {
+      "claim_id": "3fb57e66-ce66-462a-94d5-5f4c8c61bf06",
+      "result_id": "9e2e2aa9-38b7-45e0-af18-e5c303e62013"
+    },
+    {
+      "claim_id": "f0f383e3-8df3-4643-8c0d-bd39d97ba9c9",
+      "result_id": "9e2e2aa9-38b7-45e0-af18-e5c303e62013"
+    },
+    {
+      "claim_id": "61125c0b-ab6d-4e10-bc06-9b18f39a2190",
+      "result_id": "9e2e2aa9-38b7-45e0-af18-e5c303e62013"
+    },
+    {
+      "claim_id": "329a0572-fb7a-4858-817a-8db88493b380",
+      "result_id": "9e2e2aa9-38b7-45e0-af18-e5c303e62013"
+    },
+    {
+      "claim_id": "355fdb90-91d3-4cd8-b023-bb04c03ce51a",
+      "result_id": "9e2e2aa9-38b7-45e0-af18-e5c303e62013"
+    },
+    {
+      "claim_id": "4b02f3db-2a7f-4d43-8418-7d148d57f80b",
+      "result_id": "be44667d-7e4a-4ff3-9255-a744fe152aeb"
+    },
+    {
+      "claim_id": "a0e6533e-e39a-4ae6-b8fb-2a7906965f1f",
+      "result_id": "be44667d-7e4a-4ff3-9255-a744fe152aeb"
+    },
+    {
+      "claim_id": "21219865-3f3e-4643-83d6-f26b394519f4",
+      "result_id": "be44667d-7e4a-4ff3-9255-a744fe152aeb"
+    },
+    {
+      "claim_id": "1bbef8d0-df6a-4576-af13-e3335282ff32",
+      "result_id": "be44667d-7e4a-4ff3-9255-a744fe152aeb"
+    },
+    {
+      "claim_id": "963fa45c-7890-4939-b788-e177463f59c8",
+      "result_id": "be44667d-7e4a-4ff3-9255-a744fe152aeb"
+    },
+    {
+      "claim_id": "36c626da-dedb-4f9e-90d5-b441c9b12795",
+      "result_id": "be44667d-7e4a-4ff3-9255-a744fe152aeb"
+    },
+    {
+      "claim_id": "750ff7eb-fda5-493c-991f-147c6f95e6a3",
+      "result_id": "2b4ba4be-97b8-4940-bf3f-4afc7c47c92b"
+    },
+    {
+      "claim_id": "5c52e3ca-9da9-4de4-9e09-4f030a6ce2ba",
+      "result_id": "2b4ba4be-97b8-4940-bf3f-4afc7c47c92b"
+    },
+    {
+      "claim_id": "617783fb-f276-42ac-b055-be2f11efea6d",
+      "result_id": "2b4ba4be-97b8-4940-bf3f-4afc7c47c92b"
+    },
+    {
+      "claim_id": "715b136d-2284-4d56-8564-a205e562f785",
+      "result_id": "74df5a7a-7604-4465-a885-0397ee98488f"
+    },
+    {
+      "claim_id": "850e9e03-78d1-424e-933c-a53123b972aa",
+      "result_id": "74df5a7a-7604-4465-a885-0397ee98488f"
+    },
+    {
+      "claim_id": "3f2fac60-f583-4115-b560-0c416436a561",
+      "result_id": "74df5a7a-7604-4465-a885-0397ee98488f"
+    },
+    {
+      "claim_id": "cc38bfa3-e69c-438f-9418-0180104ebb2b",
+      "result_id": "74df5a7a-7604-4465-a885-0397ee98488f"
+    },
+    {
+      "claim_id": "64099363-36f7-4960-99ef-d133955d5acb",
+      "result_id": "c757ee07-7bdf-4488-9da2-58d0df052d91"
+    },
+    {
+      "claim_id": "681cf640-bdb2-43f7-aa2a-ee82cacadce1",
+      "result_id": "c757ee07-7bdf-4488-9da2-58d0df052d91"
+    },
+    {
+      "claim_id": "d2903255-6283-4245-b028-4448c48fb4eb",
+      "result_id": "c757ee07-7bdf-4488-9da2-58d0df052d91"
+    },
+    {
+      "claim_id": "3c94748d-5d2e-4e20-82cc-3c026fb314bd",
+      "result_id": "c757ee07-7bdf-4488-9da2-58d0df052d91"
+    },
+    {
+      "claim_id": "7c902101-29f4-4aa7-8c16-b5c914478f8b",
+      "result_id": "c757ee07-7bdf-4488-9da2-58d0df052d91"
+    },
+    {
+      "claim_id": "2b1a4454-1ae5-447f-aa91-a0784581ed63",
+      "result_id": "ab6d3ec5-6fe6-4c8e-8fd5-f854ce6c6c50"
+    },
+    {
+      "claim_id": "f1df0fc3-f29a-4ea1-a30e-6dcd33ead42e",
+      "result_id": "ab6d3ec5-6fe6-4c8e-8fd5-f854ce6c6c50"
+    },
+    {
+      "claim_id": "f0dfa7cb-bb09-4ed4-ac25-7acb062cf703",
+      "result_id": "ab6d3ec5-6fe6-4c8e-8fd5-f854ce6c6c50"
+    },
+    {
+      "claim_id": "185b575b-c656-405e-82de-785d9830cdaf",
+      "result_id": "ab6d3ec5-6fe6-4c8e-8fd5-f854ce6c6c50"
+    },
+    {
+      "claim_id": "76f3940f-4f51-494e-9e9d-70ffffa29a25",
+      "result_id": "ab6d3ec5-6fe6-4c8e-8fd5-f854ce6c6c50"
+    },
+    {
+      "claim_id": "9d10fe1d-6796-4760-8dfe-50c0ffeaee69",
+      "result_id": "ab6d3ec5-6fe6-4c8e-8fd5-f854ce6c6c50"
+    },
+    {
+      "claim_id": "d5192126-d354-420c-a218-e8bbdf1fd3a5",
+      "result_id": "ab6d3ec5-6fe6-4c8e-8fd5-f854ce6c6c50"
+    },
+    {
+      "claim_id": "82ee0d0e-4042-482b-bca4-5295611e602e",
+      "result_id": "ab6d3ec5-6fe6-4c8e-8fd5-f854ce6c6c50"
+    },
+    {
+      "claim_id": "75fca953-6312-41d3-9ffa-e864a37e8ba1",
+      "result_id": "ab6d3ec5-6fe6-4c8e-8fd5-f854ce6c6c50"
+    },
+    {
+      "claim_id": "de14ead6-48dd-4de9-8dfc-725a6cc0dabe",
+      "result_id": "4aab5466-66de-4fdc-a3f8-b03ab78b3988"
+    },
+    {
+      "claim_id": "15161c9e-9c21-407a-b9e3-33e1fa1c3856",
+      "result_id": "e8ce45fe-faf3-437a-ba11-785b1b64bb17"
+    },
+    {
+      "claim_id": "9ecac658-4b01-412c-bb5e-768ef3ce546c",
+      "result_id": "e8ce45fe-faf3-437a-ba11-785b1b64bb17"
+    },
+    {
+      "claim_id": "671184f5-ab4d-4b87-b033-40686d18712f",
+      "result_id": "e8ce45fe-faf3-437a-ba11-785b1b64bb17"
+    },
+    {
+      "claim_id": "abde1a16-663f-402d-aa88-673ac0f3f8b9",
+      "result_id": "e8ce45fe-faf3-437a-ba11-785b1b64bb17"
+    },
+    {
+      "claim_id": "973c487b-89fd-4668-9b28-3ddcf0a2a2a4",
+      "result_id": "e8ce45fe-faf3-437a-ba11-785b1b64bb17"
+    },
+    {
+      "claim_id": "19f525c5-0a1b-4f17-b34d-acffedc4dafa",
+      "result_id": "e8ce45fe-faf3-437a-ba11-785b1b64bb17"
+    },
+    {
+      "claim_id": "5c8a3b23-949a-4877-aee0-149bb2cf0187",
+      "result_id": "e8ce45fe-faf3-437a-ba11-785b1b64bb17"
+    },
+    {
+      "claim_id": "86627c4d-474c-4afc-8d23-b3f507f95da1",
+      "result_id": "e8ce45fe-faf3-437a-ba11-785b1b64bb17"
+    },
+    {
+      "claim_id": "e1f0f666-a57d-4898-80cf-dec066df5233",
+      "result_id": "e8ce45fe-faf3-437a-ba11-785b1b64bb17"
+    },
+    {
+      "claim_id": "21b260db-26b4-45e4-b4d8-15879630e263",
+      "result_id": "e8ce45fe-faf3-437a-ba11-785b1b64bb17"
+    },
+    {
+      "claim_id": "ca234971-842a-44e9-a238-c68372bfcbb2",
+      "result_id": "a4f5b3aa-5e5a-4379-a6bd-242ff3b6f6bc"
+    },
+    {
+      "claim_id": "5dc53c92-22ea-4a1c-b51c-d344a4d577bb",
+      "result_id": "a4f5b3aa-5e5a-4379-a6bd-242ff3b6f6bc"
+    },
+    {
+      "claim_id": "07ef7574-21dc-425b-a6e6-f2a64e5cb049",
+      "result_id": "a4f5b3aa-5e5a-4379-a6bd-242ff3b6f6bc"
+    },
+    {
+      "claim_id": "ea90849f-b955-4820-99de-420c4915972a",
+      "result_id": "a4f5b3aa-5e5a-4379-a6bd-242ff3b6f6bc"
+    },
+    {
+      "claim_id": "066f4d0f-25ff-4e8c-b72c-d108e0e72e89",
+      "result_id": "a4f5b3aa-5e5a-4379-a6bd-242ff3b6f6bc"
+    },
+    {
+      "claim_id": "f52d50bb-1047-400a-87fd-5812de2825d8",
+      "result_id": "a4f5b3aa-5e5a-4379-a6bd-242ff3b6f6bc"
+    },
+    {
+      "claim_id": "7f857295-bd93-4d18-aeae-82bb9d39ec1b",
+      "result_id": "a4f5b3aa-5e5a-4379-a6bd-242ff3b6f6bc"
+    },
+    {
+      "claim_id": "810be27c-9b1a-48a2-bc5c-599cf58f2777",
+      "result_id": "a4f5b3aa-5e5a-4379-a6bd-242ff3b6f6bc"
+    },
+    {
+      "claim_id": "6c201b87-afb7-4f21-be51-cf7b989d5597",
+      "result_id": "a4f5b3aa-5e5a-4379-a6bd-242ff3b6f6bc"
+    },
+    {
+      "claim_id": "5adec7df-b719-4234-b04b-ddd649052a31",
+      "result_id": "a4f5b3aa-5e5a-4379-a6bd-242ff3b6f6bc"
+    },
+    {
+      "claim_id": "c5a2e52a-fa95-46aa-bafb-ad1cc9daaae0",
+      "result_id": "a4f5b3aa-5e5a-4379-a6bd-242ff3b6f6bc"
+    },
+    {
+      "claim_id": "3a0719c8-e01a-429f-ae9f-544ad53f09ad",
+      "result_id": "a4f5b3aa-5e5a-4379-a6bd-242ff3b6f6bc"
+    },
+    {
+      "claim_id": "71fbd26c-3b45-4abb-aa77-583e0d475759",
+      "result_id": "a4f5b3aa-5e5a-4379-a6bd-242ff3b6f6bc"
+    },
+    {
+      "claim_id": "f5eb4830-6eab-4a1a-b129-013900828bc9",
+      "result_id": "a4f5b3aa-5e5a-4379-a6bd-242ff3b6f6bc"
+    },
+    {
+      "claim_id": "c4838bee-ed67-44e6-aa4a-6c4aa05faf3d",
+      "result_id": "a4f5b3aa-5e5a-4379-a6bd-242ff3b6f6bc"
+    },
+    {
+      "claim_id": "dc8c79a1-f86d-4907-9a9d-649e83b43a8f",
+      "result_id": "a4f5b3aa-5e5a-4379-a6bd-242ff3b6f6bc"
+    }
+  ],
+  "comparisons": []
+}

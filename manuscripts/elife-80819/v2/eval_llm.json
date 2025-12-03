@@ -1,0 +1,297 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "The first COVID-19 wave in the Netherlands was controlled through nation-wide non-pharmaceutical interventions that affected all areas equally, despite heterogeneous spatial and temporal distribution of infections and healthcare burden.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 establish the context of national interventions in the Netherlands and globally. These are well-supported by citations (C1, C2) and established knowledge about COVID-19 policy (C2, C3). The observation about heterogeneous disease distribution versus uniform intervention burden (C3) is a reasonable inference based on the nature of national policies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Subnational intervention strategies could potentially reduce societal burden while maintaining epidemiological control, with benefits including more efficient resource use, reduced economic losses, and decreased intervention-adherence fatigue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4-C7 are entirely speculative statements about potential benefits of subnational approaches made in the introduction. These represent hypotheses to be tested rather than demonstrated results. The actual evidence for these claims is provided later in the manuscript through modeling results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Epidemiological analysis of infectious disease control requires capturing spatio-temporal heterogeneities and local embedding, including demographic composition, mobility patterns, and mixing behaviors across different groups and regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 establish methodological requirements for epidemiological modeling. These are well-supported by multiple citations to relevant literature (C8, C9, C11) and represent established principles in the field. The inference about analytical needs (C10) follows logically from the cited complexity of epidemiological dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "During the first COVID-19 wave, intervention measures were insufficient to spatially contain the virus, reliable real-time data were unavailable, and national policies were informed by models lacking spatio-temporal heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 describe the context and limitations of early COVID-19 response. These are supported by established knowledge about the pandemic's spread (C12-C14) and appropriate citations documenting policy-informing models (C15, C16). The characterization of data availability and modeling approaches is consistent with documented early pandemic conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The first COVID-19 wave in the Netherlands (February 27 - June 1, 2020) started in the south related to Carnaval celebrations and progressed through four distinct policy phases with escalating then relaxing interventions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C22 establish the timeline and policy context for the study. These are based on established knowledge about Dutch COVID-19 history and policy, representing well-documented facts about the pandemic timeline, outbreak origins, and intervention phases in the Netherlands.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The analysis framework uses an agent-based model with 170,721 agents (each representing ~100 residents) stratified by 11 demographic categories and 380 municipalities, with mobility based on mobile phone data and mixing based on surveys, creating a dynamic contact network at hourly resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C30 describe the core methodology. These are well-supported by clear descriptions of data sources (CBS registry data, mobile phone signals, survey data from Prem et al. 2017) and modeling approaches. The framework is methodologically sound with appropriate data sources and reasonable modeling choices for the stated objectives.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The epidemic transmission model was initialized using hospital admissions data, incorporated mobility changes from Google data and mixing changes from surveys, calibrated behavioral parameters to match epidemic trends, and used a cohort model to translate infections to hospitalizations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C38 describe the transmission modeling and calibration approach. These are supported by appropriate data sources (hospital admissions, Google Mobility, survey data from Backer et al. 2021, NICE registration) and citations (C34, C36). The use of 40 stochastic simulations for calibration (C38) is methodologically appropriate for capturing uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The calibrated model successfully reproduced national hospital admissions over three months including doubling time, predicted demographic patterns consistent with observed seroprevalence, and captured geographic spread from south to north via western cities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 describe model validation results shown in Figure 2. The model successfully reproduces hospital admissions (C40), which were the most reliable data source (C41). Predictions for demographic patterns (C42) and seroprevalence (C43) match observations. Geographic spread patterns (C44-C45) approximately reflect reality, with appropriate caveats about ensemble variability. This represents strong model validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Mobility reductions contributed most to epidemic control (preventing approximate doubling of cases without them), behavioral changes had considerable but lower impact, and school closure had little impact due to late implementation (March 16), though earlier closure would have been beneficial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 describe intervention effectiveness results from Figure 3. The findings about mobility (C46-C47) and behavioral changes (C48) are based on model simulations with clear counterfactuals. The limited impact of school closure (C49) is appropriately contextualized by the late closure date (C50, established knowledge) and inference about earlier closure benefits (C51, supported by Appendix 2.3 simulations).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Subnational interventions were simulated by initiating municipality-level lockdowns when local infectious prevalence exceeded thresholds (3%, 1%, 0.33%, 0.1%), with lower thresholds ensuring earlier implementation but potentially unnecessary restrictions, and higher thresholds risking delayed control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 describe the subnational intervention simulation methodology. The approach (C52) is clearly defined and appropriate for comparing scenarios. The trade-offs described (C53-C54) are logical inferences about threshold choices. The range of thresholds tested (C55) is appropriately wide for exploring the parameter space.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Subnational interventions at 0.33% threshold resulted in only 410 additional hospital admissions (3.4% increase) compared to national lockdown, with 167 municipalities delaying interventions and 36 million additional person-days intervention-free, with intervention-free municipalities mainly in rural northern and eastern regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C65 present the main subnational intervention results from Figure 4. The quantitative findings are clearly presented with specific numbers for different thresholds. The 0.33% threshold scenario (C59-C62) shows a favorable balance between health burden and societal benefit. Geographic patterns (C64) are shown in Figure 4(d), and the characterization of these areas as rural/isolated (C65) is a reasonable inference from mobility data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The Dutch government did not implement subnational measures during the first wave, reasoning that the virus would have already spread nationally once detected locally, but model results show that with live infection tracking, subnational interventions could have been postponed or tailored without excessive health burden.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 contextualize the findings with actual policy decisions. The description of Dutch policy (C66-C67) and rationale (C68) are based on established knowledge. Hospital data showing differential regional impact (C69) supports the potential for subnational approaches. The conclusion (C70) is appropriately qualified as requiring live infection tracking, with realistic caveats about implementation requirements (C71).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The framework has limitations including inability to model household-level dynamics, mobile phone data lacking individual itineraries (causing shorter average movements but more locations visited), and use of national mobility patterns, though these limitations have limited impact for small, highly connected countries at epidemic start.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 acknowledge important methodological limitations. The household limitation (C72) is appropriately cited with relevant studies. The mobile phone data limitation (C73) is clearly described with its implications. The assessment that these limitations have limited impact in the Dutch context (C74) is a reasonable inference, appropriately contrasted with larger geographies (C75, with citations). Suggestions for addressing limitations (C77) are constructive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The framework can be adapted to other countries with appropriate data sources and extended to address additional policy questions including isolating affected areas (potentially reducing admissions by 30%), transport route restrictions, mass event bans, and vaccination strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C82 are largely speculative about future applications. The adaptability claim (C78) is reasonable but undemonstrated. The 30% reduction from area isolation (C79) is based on Appendix 2.3 simulations, providing some support. However, claims about transport routes (C80), mass events (C81), and vaccination (C82) are speculative suggestions for future work rather than demonstrated capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "For the Netherlands, 167 municipalities could have remained open initially with only 3.4% more hospital admissions, and since the Netherlands is highly connected and densely populated, similar subnational approaches would likely benefit other countries even more.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 present the main policy conclusion. The specific numbers (C83) are directly from model results. The inference that subnational approaches would benefit the Netherlands despite high connectivity (C84) is supported by the modeling results. The extrapolation to other countries (C85) is appropriately qualified as creating 'expectations' rather than certainty, representing a reasonable inference from the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "The methodological merit of the approach lies in capturing local context through coupling empirical data on demography, mobility, and spatial clustering with disease transmission, enabling decoupling of individual interventions like mobility reduction and behavioral changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 describe the methodological contribution. The characterization of the approach's merit (C86) is a reasonable inference from the demonstrated capabilities. The ability to decouple interventions (C87) is demonstrated in Figure 3 and represents a genuine capability enabled by the explicit modeling of mobility and behavior, with appropriate caveats about limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The effectiveness of subnational interventions varies across countries and cultures depending on timeliness, feasibility, and enforcement, with examples of success in China (high enforcement), New Zealand/Australia (geographic isolation), and failure in Northern Italy (implemented too late).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 provide important context about generalizability. The inference about variability (C88) is appropriately cautious. The examples of China, New Zealand/Australia (C89-C90), and Northern Italy (C91) are all supported by citation to Sachs et al. 2022 and Waitzberg et al. 2022, providing evidence for the claim that context matters for subnational intervention effectiveness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The model implementation used 170,721 agents with Dirichlet distributions for mobility, covered February 27 - June 1, 2020, incorporated phase-specific travel reductions (31.7%, 42.4%, 20.1% for phases 2-4) primarily from work-from-home policies, mixing changes from survey data, and school closure by relocating students and parents to home.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C104 provide methodological details. Agent numbers and Dirichlet distributions (C93-C94) are clearly described. Timeline (C97) is established knowledge. Travel reductions (C98-C100) are shown in Table 1. Work-from-home as primary driver (C102) is established knowledge. Mixing changes (C103) are supported by citation to Backer et al. 2021. School closure implementation (C104) is clearly described. All details are appropriately documented.",
+    "result_type": "MINOR"
+  }
+]

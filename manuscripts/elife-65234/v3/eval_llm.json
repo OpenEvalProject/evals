@@ -1,0 +1,330 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Cells surviving initial cisplatin exposure remain equally sensitive to subsequent cisplatin treatment, indicating a non-genetic mechanism of resistance. After pulsed cisplatin exposure, cells show increased size (2-6 fold) and reduced proliferation, but recover to pre-treatment size and cell cycle distribution over 7-42 days. Re-challenge with cisplatin produces a near-identical response to the initial pulse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 are well-supported by experimental data from Figure 1, including time-lapse imaging, immunofluorescence, and flow cytometry. The re-challenge experiments demonstrate that surviving cells maintain equal sensitivity to cisplatin, supporting the conclusion of a non-genetic resistance mechanism. The data are internally consistent across multiple cell lines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "After cisplatin treatment, larger cells display markers of senescence (\u03b2-gal, p16/p21) and reduced proliferative capacity. Repopulation is driven by a small fraction of cells, with the number of clones impacted by p53 status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 are supported by \u03b2-gal staining, flow cytometry for p16/p21, and LeGO RGB clonal tracking (Figure 2). The data consistently show that enlarged cells are senescent and that clonal outgrowth varies with p53 status. The inference that larger cells are senescent is well-justified by the molecular markers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "In vivo validation shows that cisplatin treatment increases cell size across all cell lines, with p53 status correlating with proliferation suppression. A sub-population maintains normal size and proliferative capacity, remaining equally sensitive to subsequent cisplatin treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32 are supported by in vivo IHC data (Figure 3) showing increased cell size and differential PCNA staining based on p53 status. The in vivo findings corroborate the in vitro observations, strengthening the overall conclusion. The data are consistent with the non-genetic resistance mechanism proposed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "RNAseq analysis reveals that cisplatin-treated stable-sized cells show distinct transcriptional profiles compared to enlarged cells, with upregulation of DNA repair pathways (BRCA1, ATM, HR) and lack of p53/p21-dependent cell cycle arrest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 are supported by comprehensive RNAseq analysis (Figure 4) including IPA and GSEA. The data show clear transcriptional differences between stable and enlarged cells. However, the manuscript lacks validation of key differentially expressed genes by independent methods (qPCR, Western blot), which would strengthen these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Single-cell FUCCI tracking reveals that cells in late G1/early S phase at the time of cisplatin exposure have greater capacity for multiple divisions compared to cells in G1 or late S/G2/M phases, indicating a cell cycle-dependent resistance mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 are strongly supported by FUCCI time-lapse imaging and single-cell fate tracking (Figure 5). The data show statistically significant differences in division capacity based on cell cycle phase at exposure. The sample size (400 cells) and statistical analysis are appropriate. This is a key finding of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "In vivo FUCCI imaging confirms that ~70-80% of cells are in G1 phase prior to treatment, with cell cycle responses to carboplatin varying by p53 status. Wild-type p53 correlates with higher G2-exit and senescence rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 are supported by in vivo optical window imaging (Figure 5E-F). The data corroborate in vitro findings and demonstrate physiological relevance. The longitudinal imaging approach is technically sound, though the sample size (n=3 mice) is modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Cell synchronization experiments demonstrate that targeting cells in late G1/early S phase with cisplatin results in significantly more cells completing multiple divisions (13-16/50) compared to G1 (0/50) or late S phase (4/50) targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 are well-supported by synchronization experiments using palbociclib and thymidine (Figure 6). The data provide strong evidence for cell cycle-dependent differences in proliferative capacity after cisplatin exposure. The experimental design appropriately controls for cell cycle phase at exposure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Live-cell imaging of 53BP1 foci reveals that early S phase cells accumulate fewer foci during replication and can repair DNA damage more efficiently across multiple generations compared to G1 or mid/late S phase cells, which show persistent damage and mitotic defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C63 are supported by sophisticated 4D live-cell imaging with dual biosensors (Figure 7). The data provide mechanistic insight into cell cycle-dependent DNA repair capacity. The quantitative analysis of foci number and size is rigorous. However, the sample size for individual cell tracking is not explicitly stated, which limits assessment of statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Inhibition of DNA repair pathways (PARP or RAD51) reduces the proliferative capacity of early S phase cells after cisplatin treatment, increasing DNA damage (53BP1 foci, \u03b3-H2AX) and promoting G2-exit without substantially increasing cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C73 are supported by experiments combining cisplatin with PARP inhibitor (olaparib) or RAD51 inhibitor (RI-1) (Figure 8). The data demonstrate that targeting HR repair reduces proliferation of resistant cells. However, the observation that PARP inhibition causes only modest increases in death (C66) suggests that additional mechanisms may be required for therapeutic efficacy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The study identifies a novel non-genetic, cell cycle-dependent mechanism of platinum resistance in LUAD, where cells in late G1/early S phase at exposure have greater proliferative capacity after cisplatin treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 represent the main conclusions of the study, supported by the collective evidence from all experimental approaches. The integration of multiple techniques (time-lapse imaging, FUCCI, synchronization, in vivo validation, RNAseq, DNA damage biosensors) provides strong support for this novel mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Cells in G1 phase (>70% of population) predominantly arrest in S/G2 after cisplatin exposure, with sustained DNA damage leading to ATR-mediated checkpoint signaling, p21 expression, and G2-exit/senescence, particularly in p53-proficient cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 synthesize experimental findings with cited literature to explain the G1 cell response. The mechanistic model is well-supported by the data and consistent with established DNA damage response pathways. The citations appropriately support the proposed mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Cells in mid-late S or G2/M phase proceed through division with chromatin bridges, leading to mitotic/post-mitotic death. Loss or mutation of p53 increases mitotic entry and death. Chromatin bridges indicate replication stress and can lead to chromosome instability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 are supported by experimental data (Figure 7) and appropriate citations. The observation of chromatin bridges and their consequences is well-documented. The connection to chromosome instability and chemoresistance (C87) is supported by cited literature, though not directly tested in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Early S phase cells show enhanced DNA repair through high-fidelity HR (peaking in mid-S), while G1 and late S cells rely on error-prone NHEJ. 53BP1 nuclear bodies in daughter cells enable efficient repair and pulsed p21 response, promoting continued proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C93 integrate experimental findings with mechanistic explanations supported by appropriate citations. The model of differential repair pathway usage based on cell cycle phase is consistent with established DNA repair biology. The role of 53BP1 nuclear bodies is well-supported by recent literature (C91-C92).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Pre- or co-administration of palbociclib with platinum may inadvertently synchronize cells in late G1/early S phase, potentially reducing efficacy. Clinical trials support this concern, while post-cisplatin palbociclib administration shows improved response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 draw clinically relevant conclusions from the experimental findings, supported by appropriate clinical trial citations (C95-C96). This represents an important translational insight, though the direct mechanistic link between the in vitro findings and clinical outcomes requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Background on lung adenocarcinoma epidemiology, platinum therapy history, and resistance mechanisms in LUAD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide established background information supported by appropriate citations. These claims accurately represent the current state of knowledge regarding LUAD treatment and platinum resistance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background on cisplatin pharmacokinetics, DNA damage mechanisms, repair pathways, and prior work on resistance mechanisms in LUAD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C15 provide methodological rationale and background on DNA repair pathways, supported by appropriate citations including the authors' prior work. The pulsed exposure model (C9) is well-justified by pharmacokinetic data (C8).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C16"
+    ],
+    "result": "Summary statement of the main finding regarding late G1/early S phase cells and DNA repair capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C16 is a summary statement of the main finding, supported by the comprehensive experimental data presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C52",
+      "C64"
+    ],
+    "result": "Hypotheses regarding enhanced DNA repair capacity in early S phase cells through HR pathway utilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C52 and C64 are explicitly stated as hypotheses by the authors. While supported by circumstantial evidence and appropriate citations, these represent proposed mechanisms rather than directly demonstrated findings. Further experiments specifically testing HR pathway dependence would be needed to confirm these hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "RAD51 inhibition alone has no significant effect on cell growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 is supported by data in Figure 8\u2014figure supplement 1A, providing an appropriate control for the combination experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "Similar heterogeneous responses to cisplatin observed in head and neck cancer cells suggest broader applicability of the mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 is supported by citation to Luong et al., 2016. This suggests potential generalizability of the findings, though direct experimental validation in other cancer types would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "Concluding statement on the need for novel combination therapies targeting non-genetic, cell cycle-dependent resistance mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 is a reasonable conclusion drawn from the experimental findings and represents an appropriate forward-looking statement based on the demonstrated mechanism.",
+    "result_type": "MINOR"
+  }
+]

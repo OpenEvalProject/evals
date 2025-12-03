@@ -1,0 +1,2119 @@
+{
+  "submission": {
+    "id": "3df19293-76ec-4dd4-b618-acdef130bcdf",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T06:16:13.500754Z",
+    "updated_at": "2025-12-03T06:16:13.500754Z"
+  },
+  "content": [
+    {
+      "id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "submission_id": "3df19293-76ec-4dd4-b618-acdef130bcdf",
+      "content_type": "manuscript",
+      "content_text": "# Identification of drugs associated with reduced severity of COVID-19 \u2013 a case-control study in a large population\n\n## Authors\n\n- Ariel Israel<sup>1</sup> ([ORCID: 0000-0003-4389-8896](https://orcid.org/0000-0003-4389-8896)) \u2020\n- Alejandro A Sch\u00e4ffer<sup>2</sup> ([ORCID: 0000-0002-2147-8033](https://orcid.org/0000-0002-2147-8033))\n- Assi Cicurel<sup>1</sup>\n- Kuoyuan Cheng<sup>2</sup>\n- Sanju Sinha<sup>2</sup>\n- Eyal Schiff<sup>4</sup>\n- Ilan Feldhamer<sup>1</sup>\n- Ameer Tal<sup>1</sup>\n- Gil Lavie<sup>1</sup>\n- Eytan Ruppin<sup>2</sup> ([ORCID: 0000-0002-7862-3940](https://orcid.org/0000-0002-7862-3940)) \u2020\n\n### Affiliations\n\n1. Division of Planning and Strategy, Clalit Health Services Tel Aviv Israel\n2. Cancer Data Science Laboratory, National Cancer Institute, National Institutes of Health Bethesda United States\n3. Clalit Health Services, Southern District and Faculty of Health Sciences, Ben-Gurion University of the Negev Beer-Sheva Israel\n4. Sheba Medical Center, Tel-Aviv University Ramat Gan Israel\n5. Ruth and Bruce Rappaport Faculty of Medicine, Technion \u2013 Israel Institute of Technology Haifa Israel\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:Until coronavirus disease 2019 (COVID-19) drugs specifically developed to treat COVID-19 become more widely accessible, it is crucial to identify whether existing medications have a protective effect against severe disease. Toward this objective, we conducted a large population study in Clalit Health Services (CHS), the largest healthcare provider in Israel, insuring over 4.7 million members.Methods:Two case-control matched cohorts were assembled to assess which medications, acquired in the last month, decreased the risk of COVID-19 hospitalization. Case patients were adults aged 18 to 95 hospitalized for COVID-19. In the first cohort, five control patients, from the general population, were matched to each case (n=6202); in the second cohort, two non-hospitalized SARS-CoV-2 positive control patients were matched to each case (n=6919). The outcome measures for a medication were: odds ratio (OR) for hospitalization, 95% confidence interval (CI), and the p-value, using Fisher\u2019s exact test. False discovery rate was used to adjust for multiple testing.Results:Medications associated with most significantly reduced odds for COVID-19 hospitalization include: ubiquinone (OR=0.185, 95% CI [0.058 to 0.458], p<0.001), ezetimibe (OR=0.488, 95% CI [0.377 to 0.622], p<0.001), rosuvastatin (OR=0.673, 95% CI [0.596 to 0.758], p<0.001), flecainide (OR=0.301, 95% CI [0.118 to 0.641], p<0.001), and vitamin D (OR=0.869, 95% CI [0.792 to 0.954], p<0.003). Remarkably, acquisition of artificial tears, eye care wipes, and several ophthalmological products were also associated with decreased risk for hospitalization.Conclusions:Ubiquinone, ezetimibe, and rosuvastatin, all related to the cholesterol synthesis pathway were associated with reduced hospitalization risk. These findings point to a promising protective effect which should be further investigated in controlled, prospective studies.Funding:This research was supported in part by the Intramural Research Program of the National Institutes of Health, NCI.\n\n## Introduction\n\nSARS-CoV-2 is a new single-stranded RNA virus, which was first identified in December 2019, and has rapidly spread into a global pandemic of primarily respiratory illness designated as coronavirus disease 2019 (COVID-19). This disease is associated with significant mortality, particularly among elderly or overweight individuals, raising considerable concerns for public health. Until a vaccine or specifically designed therapies are available, it is urgent to identify whether existing medications have protective effects against COVID-19 complications using available real-world data. With this aim, we performed a case-control study on electronic health records (EHRs) from Clalit Health Services (CHS), the largest healthcare provider in Israel.\n\n## Materials and methods\n\n### Participants and data sources\n\nWe collected data from the CHS data warehouse on adult patients aged 18 to 95 years, who tested positive for SARS-CoV-2 from the beginning of the pandemic through November 30, 2020, and were admitted for hospitalization through December 31, 2020. Each patient was assigned an index date, which is the first date at which a positive RT-PCR test for SARS-CoV-2 was collected for the patient. Patients\u2019 demographic characteristics were extracted, along with existing comorbidities, clinical characteristics including body mass index\u00a0(BMI), and estimated glomerular filtration rate (eGFR) at the baseline, defined as of February 2020. In addition, the list of drugs or products acquired by each patient in CHS pharmacies was collected for the month preceding the index date, defined as the 35 days prior to this date.\n\nReliable identification of medications procured for a given month is enabled by the fact that in CHS, distinct prescriptions are issued for each calendar month. When medications are provided in advance for multiple months, the date at which the prescription for each month of treatment begins is recorded.\n\nThis study has been approved by the CHS Institutional Review Board (IRB) with a waiver of informed consent, approval number: COM-0046\u201320. Patient data that could identify participants were removed prior to the statistical analyses in accordance with the protocol approved by the CHS IRB.\n\n### Software\n\nPatients\u2019 data were extracted and processed from CHS data\u00a0warehouse using programs developed in-house in Python and SQL.\n\n### Case-control design and matching\n\nHospitalized COVID-19 patients were assigned to two distinct case-control cohorts, which differ in the way control individuals were selected. In cohort 1, control patients were chosen among the general population of CHS members. Since controls can be selected from among millions of individuals, five controls were selected to match each case (5:1), with comprehensively matched baseline attributes, including age, sex, BMI category, socio-economic and smoking status, chronic kidney disease (CKD) stage for patients with renal impairment, and main comorbidities diagnoses (hypertension, diabetes, CKD, congestive heart failure [CHF], chronic obstructive pulmonary disease [COPD], malignancy, ischemic heart disease). For the matching procedure, patients with undocumented BMI were considered as having a normal BMI, unless an obesity diagnosis was present. Each control was assigned the same index date as the matched case, provided that the patient was still alive and a member of CHS at this date. EHR data were collected for controls using the same procedure described for cases. Cohort 1 is designed to identify drugs that affect the overall risk for hospitalization for COVID-19, where the effect could combine a decreased risk of detectable infection, and a decreased risk for hospitalization once infected.\n\nIn cohort 2, control patients were chosen among patients who had a positive test for SARS-CoV-2 but had not been hospitalized as of December 31, 2020. Given the smaller size of the pool from which controls can be drawn, only two controls were matched for each case patient. Attributes that were matched were the age, sex, smoking status, Adjusted Clinical Groups (ACG) measure of comorbidity (Shadmi et al., 2011) and presence/absence of an obesity diagnosis. The index date taken was the date of the first positive SARS-CoV-2 PCR test both for cases and for controls. Cohort 2 is more specifically suited to identify drugs that are associated with a decreased risk for COVID-19 hospitalization in patients who had a proven infection with the virus. In both cohorts, there were a minority of case individuals for which enough matching controls could not be found; these cases were not included in their respective cohorts. Patients who were pregnant since February 2020 were also excluded.\n\n### Outcome measures\n\nIn each cohort, and for each medication anatomical therapeutic chemical (ATC) class, the odds ratio\u00a0(OR) for hospitalization was computed, comparing the number of patients who acquired a medication belonging to the class in the 35 days preceding the index date, in the case and the control groups.\n\n### Statistical analysis\n\nOR for hospitalization for drugs acquired in the case versus control groups and statistical significance were assessed by Fisher\u2019s exact test. Correction for multiple testing was performed using the Benjamini-Hochberg procedure (Benjamini and Hochberg, 1995), which gives an estimation of the false discovery rate (FDR) in the list. To assess the effects of being in one of two high-risk subgroups, Ultra-Orthodox Jews and Arabs, we used multivariable conditional logistic regression analyses performed in each of the cohorts. In each cohort, we modelized the OR for hospitalization, using subgroup membership and purchased medications as explanatory factors.\n\nTo assess for possible associations between the protective effect of a medication and BMI, we partition the matched subjects into four BMI ranges: <25, 25\u00a0to\u00a030, 30\u00a0to\u00a035, >35. Then we redid our association analyses in each range.\n\nStatistical analyses were performed in R statistical software version 3.6 (R Foundation for statistical computing).\n\n### Role of the funding source\n\nThe funder of the study had no role in study design, data collection, data analysis, data interpretation, or writing of the report. AI, IF, and AT had full access to all the data in the study and had final responsibility for the decision to submit for publication.\n\n## Results\n\nThrough December 31, 2020, 10,295 adult patients between the ages of 18 and 95 had a recorded COVID-19 related hospitalization in the CHS database. The matching procedure was able to identify control individuals from the general population in ratio 5:1 for 6530 patients in the first cohort, and control patients in ratio 2:1 for 6953 SARS-CoV-2 positive individuals in the second cohort. The characteristics of the matched populations are shown in Table 1.\n\n**Table 1.**\n Demographics and clinical characteristics of the two matched cohorts of patients (hospitalized versus\u00a0non-hospitalized).\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"2\">Cohort 1</th>\n      <th colspan=\"2\">Cohort 2</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>COVID-19 hospitalized (cases)</th>\n      <th>Not hospitalized (controls)</th>\n      <th>COVID-19 hospitalized (cases)</th>\n      <th>Not hospitalized (controls)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>n</td>\n      <td>6530</td>\n      <td>32,650</td>\n      <td>6953</td>\n      <td>13,906</td>\n    </tr>\n    <tr>\n      <td>Age (mean, SD)</td>\n      <td>64.6 (16.1)</td>\n      <td>64.8 (15.8)</td>\n      <td>65.7 (16.0)</td>\n      <td>65.7 (15.8)</td>\n    </tr>\n    <tr>\n      <td>Sex, female (%)</td>\n      <td>3259 (49.9)</td>\n      <td>16,295 (49.9)</td>\n      <td>3381 (48.6)</td>\n      <td>6762 (48.6)</td>\n    </tr>\n    <tr>\n      <td>Hospitalization severity (n, %)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Mild condition</td>\n      <td>3008 (46.1)</td>\n      <td></td>\n      <td>2676 (38.5)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Serious condition</td>\n      <td>851 (13.0)</td>\n      <td></td>\n      <td>1043 (15.0)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Severe condition</td>\n      <td>1621 (24.8)</td>\n      <td></td>\n      <td>1903 (27.4)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Deceased</td>\n      <td>1050 (16.1)</td>\n      <td></td>\n      <td>1331 (19.1)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Smoking status (%)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Never smoker</td>\n      <td>5012 (76.8)</td>\n      <td>24,218 (74.2)</td>\n      <td>5156 (74.2)</td>\n      <td>10,312 (74.2)</td>\n    </tr>\n    <tr>\n      <td>Past smoker</td>\n      <td>1115 (17.1)</td>\n      <td>5808 (17.8)</td>\n      <td>1338 (19.2)</td>\n      <td>2676 (19.2)</td>\n    </tr>\n    <tr>\n      <td>Current smoker</td>\n      <td>403 (6.2)</td>\n      <td>2624 (8.0)</td>\n      <td>459 (6.6)</td>\n      <td>918 (6.6)</td>\n    </tr>\n    <tr>\n      <td>Nb visits at primary doctor in last year (mean, SD)</td>\n      <td>8.1 (7.9)</td>\n      <td>7.9 (7.3)</td>\n      <td>8.2 (8.4)</td>\n      <td>7.5 (7.1)</td>\n    </tr>\n    <tr>\n      <td>Comorbidity (%)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Arrhythmia</td>\n      <td>887 (13.6)</td>\n      <td>4242 (13.0)</td>\n      <td>1278 (18.4)</td>\n      <td>2221 (16.0)</td>\n    </tr>\n    <tr>\n      <td>Asthma</td>\n      <td>527 (8.1)</td>\n      <td>2941 (9.0)</td>\n      <td>650 (9.3)</td>\n      <td>1376 (9.9)</td>\n    </tr>\n    <tr>\n      <td>Congestive heart failure (CHF)</td>\n      <td>228 (3.5)</td>\n      <td>1140 (3.5)</td>\n      <td>784 (11.3)</td>\n      <td>851 (6.1)</td>\n    </tr>\n    <tr>\n      <td>Chronic obstructive pulmonary disease (COPD)</td>\n      <td>148 (2.3)</td>\n      <td>740 (2.3)</td>\n      <td>603 (8.7)</td>\n      <td>776 (5.6)</td>\n    </tr>\n    <tr>\n      <td>Diabetes</td>\n      <td>2976 (45.6)</td>\n      <td>14,880 (45.6)</td>\n      <td>3425 (49.3)</td>\n      <td>5549 (39.9)</td>\n    </tr>\n    <tr>\n      <td>Hypertension</td>\n      <td>3850 (59.0)</td>\n      <td>19,062 (58.4)</td>\n      <td>4396 (63.2)</td>\n      <td>8102 (58.3)</td>\n    </tr>\n    <tr>\n      <td>Ischemic heart disease (IHD)</td>\n      <td>1464 (22.4)</td>\n      <td>7320 (22.4)</td>\n      <td>1838 (26.4)</td>\n      <td>3113 (22.4)</td>\n    </tr>\n    <tr>\n      <td>Malignancy</td>\n      <td>1087 (16.6)</td>\n      <td>5435 (16.6)</td>\n      <td>1280 (18.4)</td>\n      <td>2766 (19.9)</td>\n    </tr>\n    <tr>\n      <td>Chronic kidney disease (CKD)</td>\n      <td>102 (1.6)</td>\n      <td>510 (1.6)</td>\n      <td>1086 (15.6)</td>\n      <td>1117 (8.0)</td>\n    </tr>\n    <tr>\n      <td>Obesity (documented diagnosis)</td>\n      <td>3761 (57.6)</td>\n      <td>17,837 (54.6)</td>\n      <td>3975 (57.2)</td>\n      <td>7950 (57.2)</td>\n    </tr>\n    <tr>\n      <td>Body mass index (BMI) (mean, SD)</td>\n      <td>28.7 (5.7)</td>\n      <td>28.6 (6.5)</td>\n      <td>29.1 (6.3)</td>\n      <td>28.5 (5.7)</td>\n    </tr>\n    <tr>\n      <td>BMI group (%)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>&lt;18.5</td>\n      <td>17 (0.3)</td>\n      <td>85 (0.3)</td>\n      <td>51 (0.7)</td>\n      <td>93 (0.7)</td>\n    </tr>\n    <tr>\n      <td>18.5\u00a0to\u00a025</td>\n      <td>1070 (16.4)</td>\n      <td>5350 (16.4)</td>\n      <td>1244 (17.9)</td>\n      <td>2471 (17.8)</td>\n    </tr>\n    <tr>\n      <td>25\u00a0to\u00a030</td>\n      <td>2295 (35.1)</td>\n      <td>11,475 (35.1)</td>\n      <td>2264 (32.6)</td>\n      <td>4870 (35.0)</td>\n    </tr>\n    <tr>\n      <td>30\u00a0to\u00a035</td>\n      <td>2053 (31.4)</td>\n      <td>10,265 (31.4)</td>\n      <td>2005 (28.8)</td>\n      <td>4267 (30.7)</td>\n    </tr>\n    <tr>\n      <td>35\u00a0to\u00a040</td>\n      <td>761 (11.7)</td>\n      <td>3805 (11.7)</td>\n      <td>886 (12.7)</td>\n      <td>1562 (11.2)</td>\n    </tr>\n    <tr>\n      <td>&gt;40</td>\n      <td>334 (5.1)</td>\n      <td>1670 (5.1)</td>\n      <td>503 (7.2)</td>\n      <td>643 (4.6)</td>\n    </tr>\n    <tr>\n      <td>Glomerular filtration rate (GFR) (mean, SD)</td>\n      <td>85.7 (21.6)</td>\n      <td>85.8 (20.3)</td>\n      <td>78.7 (28.2)</td>\n      <td>83.4 (22.4)</td>\n    </tr>\n    <tr>\n      <td>Chronic kidney disease (CKD) staging (n, %)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>G1</td>\n      <td>3047 (46.7)</td>\n      <td>15,145 (46.4)</td>\n      <td>2837 (40.8)</td>\n      <td>6090 (43.8)</td>\n    </tr>\n    <tr>\n      <td>G2</td>\n      <td>2679 (41.0)</td>\n      <td>13,747 (42.1)</td>\n      <td>2535 (36.5)</td>\n      <td>5722 (41.1)</td>\n    </tr>\n    <tr>\n      <td>G3a</td>\n      <td>558 (8.5)</td>\n      <td>2817 (8.6)</td>\n      <td>689 (9.9)</td>\n      <td>1257 (9.0)</td>\n    </tr>\n    <tr>\n      <td>G3b</td>\n      <td>203 (3.1)</td>\n      <td>836 (2.6)</td>\n      <td>391 (5.6)</td>\n      <td>571 (4.1)</td>\n    </tr>\n    <tr>\n      <td>G4</td>\n      <td>41 (0.6)</td>\n      <td>89 (0.3)</td>\n      <td>186 (2.7)</td>\n      <td>160 (1.2)</td>\n    </tr>\n    <tr>\n      <td>G5</td>\n      <td></td>\n      <td></td>\n      <td>63 (0.9)</td>\n      <td>28 (0.2)</td>\n    </tr>\n    <tr>\n      <td>Dialysis</td>\n      <td>2 (0.0)</td>\n      <td>16 (0.0)</td>\n      <td>252 (3.6)</td>\n      <td>78 (0.6)</td>\n    </tr>\n  </tbody>\n</table>\n\nIn each of the two cohorts, we counted the number of patients from each group who acquired drugs and other medical products from each ATC class and computed the OR and p-values using Fisher\u2019s exact\u00a0test. The distribution of OR for drugs for which the p-value was statistically significant (p<0.05) is shown in Figure 1. The OR for most drugs are neutral or associated with an increased risk of COVID-19 hospitalization. Only a small number of items are associated with decreased risk: 1.15% in cohort 1 and 1.75% in cohort 2.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/68165/elife-68165-fig1-v2.jpg)\n\n**Figure 1.:** The overwhelming majority of medications are associated with neutral effect (gray) or increased risk for hospitalization (black, OR>1), only a few are associated with significantly decreased risk (black, OR<1).\n\nTable 2\u00a0presents the list of drugs and products that were found to be negatively associated with COVID-19 hospitalization in a statistically significant manner in cohort 1 (A) and in cohort 2 (B). We display items for which the p-value is below 0.05, and for which the FDR is less than 0.20, meaning that at least 80% of the items in the displayed list are expected to be true positives. Items are sorted in decreasing order of significance.\n\n**Table 2.**\n Most significant associations for medications acquired in the 35 days preceding the index date in two matched cohorts.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>ATC code and class</th>\n      <th>Use in case</th>\n      <th>Use in contr.</th>\n      <th>Case %</th>\n      <th>Contr. %</th>\n      <th>Odds ratio (95% conf. int.)</th>\n      <th>p-Value</th>\n      <th>FDR</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"8\">(A) Cohort 1 (N = 6530 hospitalization cases, N=32,650 controls taken from the general population)</td>\n    </tr>\n    <tr>\n      <td>C10AA07 Rosuvastatin</td>\n      <td>328</td>\n      <td>2380</td>\n      <td>5.02</td>\n      <td>7.29</td>\n      <td>0.673 (0.596 to 0.758)</td>\n      <td>&lt;0.0001</td>\n      <td>&lt;0.001</td>\n    </tr>\n    <tr>\n      <td>C10AX09 Ezetimibe</td>\n      <td>73</td>\n      <td>740</td>\n      <td>1.12</td>\n      <td>2.27</td>\n      <td>0.488 (0.377 to 0.622)</td>\n      <td>&lt;0.0001</td>\n      <td>&lt;0.001</td>\n    </tr>\n    <tr>\n      <td>A16AX30 Ubiquinone (CoQ-10)</td>\n      <td>6</td>\n      <td>165</td>\n      <td>0.09</td>\n      <td>0.51</td>\n      <td>0.181 (0.065 to 0.403)</td>\n      <td>&lt;0.0001</td>\n      <td>&lt;0.001</td>\n    </tr>\n    <tr>\n      <td>C01BC04 Flecainide</td>\n      <td>7</td>\n      <td>116</td>\n      <td>0.11</td>\n      <td>0.36</td>\n      <td>0.301 (0.118 to 0.641)</td>\n      <td>0.00039</td>\n      <td>0.005</td>\n    </tr>\n    <tr>\n      <td>J07AL02 Pneumococcus vaccine conjugate</td>\n      <td>21</td>\n      <td>220</td>\n      <td>0.32</td>\n      <td>0.67</td>\n      <td>0.476 (0.288 to 0.746)</td>\n      <td>0.00049</td>\n      <td>0.006</td>\n    </tr>\n    <tr>\n      <td>C09BA05 Ramipril-hydrochlorothiazide</td>\n      <td>127</td>\n      <td>859</td>\n      <td>1.95</td>\n      <td>2.63</td>\n      <td>0.734 (0.603 to 0.887)</td>\n      <td>0.00099</td>\n      <td>0.011</td>\n    </tr>\n    <tr>\n      <td>A10BD07 Sitagliptin-metformin</td>\n      <td>243</td>\n      <td>1501</td>\n      <td>3.72</td>\n      <td>4.60</td>\n      <td>0.802 (0.696 to 0.922)</td>\n      <td>0.00159</td>\n      <td>0.017</td>\n    </tr>\n    <tr>\n      <td>C10AA03 Pravastatin</td>\n      <td>52</td>\n      <td>385</td>\n      <td>0.80</td>\n      <td>1.18</td>\n      <td>0.673 (0.493 to 0.902)</td>\n      <td>0.00659</td>\n      <td>0.060</td>\n    </tr>\n    <tr>\n      <td>N06AB10 Escitalopram</td>\n      <td>216</td>\n      <td>1302</td>\n      <td>3.31</td>\n      <td>3.99</td>\n      <td>0.824 (0.708 to 0.955)</td>\n      <td>0.00930</td>\n      <td>0.078</td>\n    </tr>\n    <tr>\n      <td>M01AC01 Piroxicam</td>\n      <td>24</td>\n      <td>205</td>\n      <td>0.37</td>\n      <td>0.63</td>\n      <td>0.584 (0.365 to 0.894)</td>\n      <td>0.00980</td>\n      <td>0.082</td>\n    </tr>\n    <tr>\n      <td>C09CA06 Candesartan</td>\n      <td>65</td>\n      <td>451</td>\n      <td>1.00</td>\n      <td>1.38</td>\n      <td>0.718 (0.544 to 0.934)</td>\n      <td>0.01237</td>\n      <td>0.100</td>\n    </tr>\n    <tr>\n      <td>M05BA07 Risedronic acid</td>\n      <td>56</td>\n      <td>396</td>\n      <td>0.86</td>\n      <td>1.21</td>\n      <td>0.705 (0.522 to 0.935)</td>\n      <td>0.01319</td>\n      <td>0.103</td>\n    </tr>\n    <tr>\n      <td>G04CB02 Dutasteride</td>\n      <td>30</td>\n      <td>240</td>\n      <td>0.46</td>\n      <td>0.74</td>\n      <td>0.623 (0.411 to 0.914)</td>\n      <td>0.01367</td>\n      <td>0.105</td>\n    </tr>\n    <tr>\n      <td>A11CC05 Cholecalciferol</td>\n      <td>660</td>\n      <td>3634</td>\n      <td>10.11</td>\n      <td>11.13</td>\n      <td>0.898 (0.821 to 0.980)</td>\n      <td>0.01600</td>\n      <td>0.119</td>\n    </tr>\n    <tr>\n      <td>C09AA08 Cilazapril</td>\n      <td>17</td>\n      <td>153</td>\n      <td>0.26</td>\n      <td>0.47</td>\n      <td>0.554 (0.315 to 0.918)</td>\n      <td>0.01743</td>\n      <td>0.124</td>\n    </tr>\n    <tr>\n      <td>G04BE08 Tadalafil</td>\n      <td>29</td>\n      <td>229</td>\n      <td>0.44</td>\n      <td>0.70</td>\n      <td>0.632 (0.413 to 0.933)</td>\n      <td>0.01862</td>\n      <td>0.132</td>\n    </tr>\n    <tr>\n      <td>S01ED61 Timolol-travoprost</td>\n      <td>8</td>\n      <td>90</td>\n      <td>0.12</td>\n      <td>0.28</td>\n      <td>0.444 (0.186 to 0.913)</td>\n      <td>0.02068</td>\n      <td>0.142</td>\n    </tr>\n    <tr>\n      <td>A10BH01 Sitagliptin</td>\n      <td>33</td>\n      <td>250</td>\n      <td>0.51</td>\n      <td>0.77</td>\n      <td>0.658 (0.443 to 0.950)</td>\n      <td>0.02461</td>\n      <td>0.162</td>\n    </tr>\n    <tr>\n      <td>J07BB02 Influenza vaccine inac</td>\n      <td>392</td>\n      <td>2205</td>\n      <td>6.00</td>\n      <td>6.75</td>\n      <td>0.882 (0.787 to 0.986)</td>\n      <td>0.02548</td>\n      <td>0.165</td>\n    </tr>\n    <tr>\n      <td>N06DX02 Ginkgo folium</td>\n      <td>2</td>\n      <td>42</td>\n      <td>0.03</td>\n      <td>0.13</td>\n      <td>0.238 (0.028 to 0.915)</td>\n      <td>0.02552</td>\n      <td>0.165</td>\n    </tr>\n    <tr>\n      <td>A12CC04 Magnesium citrate</td>\n      <td>31</td>\n      <td>237</td>\n      <td>0.48</td>\n      <td>0.73</td>\n      <td>0.652 (0.433 to 0.952)</td>\n      <td>0.02597</td>\n      <td>0.166</td>\n    </tr>\n    <tr>\n      <td>A10BK01 Dapagliflozin</td>\n      <td>35</td>\n      <td>255</td>\n      <td>0.54</td>\n      <td>0.78</td>\n      <td>0.685 (0.466 to 0.978)</td>\n      <td>0.03283</td>\n      <td>0.193</td>\n    </tr>\n    <tr>\n      <td colspan=\"8\">(B) Cohort 2 (N = 6953 hospitalization cases, N=13,906 controls taken from patients SARS-CoV-2 positive)</td>\n    </tr>\n    <tr>\n      <td>C10AA07 Rosuvastatin</td>\n      <td>354</td>\n      <td>950</td>\n      <td>5.09</td>\n      <td>6.83</td>\n      <td>0.732 (0.643 to 0.831)</td>\n      <td>&lt;0.0001</td>\n      <td>0.000</td>\n    </tr>\n    <tr>\n      <td>C10AX09 Ezetimibe</td>\n      <td>92</td>\n      <td>303</td>\n      <td>1.32</td>\n      <td>2.18</td>\n      <td>0.602 (0.471 to 0.764)</td>\n      <td>0.00001</td>\n      <td>0.000</td>\n    </tr>\n    <tr>\n      <td>J07AL02 Pneumococcus vaccine conjugate</td>\n      <td>20</td>\n      <td>95</td>\n      <td>0.29</td>\n      <td>0.68</td>\n      <td>0.419 (0.245 to 0.685)</td>\n      <td>0.00021</td>\n      <td>0.003</td>\n    </tr>\n    <tr>\n      <td>M05BA07 Risedronic acid</td>\n      <td>47</td>\n      <td>165</td>\n      <td>0.68</td>\n      <td>1.19</td>\n      <td>0.567 (0.400 to 0.789)</td>\n      <td>0.00042</td>\n      <td>0.005</td>\n    </tr>\n    <tr>\n      <td>A16AX30 Ubiquinone (CoQ-10)</td>\n      <td>9</td>\n      <td>56</td>\n      <td>0.13</td>\n      <td>0.40</td>\n      <td>0.321 (0.139 to 0.653)</td>\n      <td>0.00052</td>\n      <td>0.006</td>\n    </tr>\n    <tr>\n      <td>N06AB10 Escitalopram</td>\n      <td>236</td>\n      <td>610</td>\n      <td>3.39</td>\n      <td>4.39</td>\n      <td>0.766 (0.654 to 0.894)</td>\n      <td>0.00061</td>\n      <td>0.007</td>\n    </tr>\n    <tr>\n      <td>C09BA05 Ramipril-hydrochlorothiazide</td>\n      <td>121</td>\n      <td>342</td>\n      <td>1.74</td>\n      <td>2.46</td>\n      <td>0.702 (0.565 to 0.869)</td>\n      <td>0.00082</td>\n      <td>0.009</td>\n    </tr>\n    <tr>\n      <td>C01BC04 Flecainide</td>\n      <td>7</td>\n      <td>43</td>\n      <td>0.10</td>\n      <td>0.31</td>\n      <td>0.325 (0.123 to 0.729)</td>\n      <td>0.00253</td>\n      <td>0.023</td>\n    </tr>\n    <tr>\n      <td>S01XA40 Hydroxypropyl-methylcellulose (tears)</td>\n      <td>67</td>\n      <td>203</td>\n      <td>0.96</td>\n      <td>1.46</td>\n      <td>0.657 (0.490 to 0.871)</td>\n      <td>0.00273</td>\n      <td>0.025</td>\n    </tr>\n    <tr>\n      <td>A11CC05 Cholecalciferol</td>\n      <td>737</td>\n      <td>1669</td>\n      <td>10.60</td>\n      <td>12.00</td>\n      <td>0.869 (0.792 to 0.954)</td>\n      <td>0.00280</td>\n      <td>0.025</td>\n    </tr>\n    <tr>\n      <td>B01AE07 Dabigatran etexilate</td>\n      <td>37</td>\n      <td>124</td>\n      <td>0.53</td>\n      <td>0.89</td>\n      <td>0.595 (0.400 to 0.866)</td>\n      <td>0.00543</td>\n      <td>0.042</td>\n    </tr>\n    <tr>\n      <td>C09AA08 Cilazapril</td>\n      <td>15</td>\n      <td>64</td>\n      <td>0.22</td>\n      <td>0.46</td>\n      <td>0.468 (0.247 to 0.831)</td>\n      <td>0.00579</td>\n      <td>0.044</td>\n    </tr>\n    <tr>\n      <td>N02CC04 Rizatriptan</td>\n      <td>1</td>\n      <td>17</td>\n      <td>0.01</td>\n      <td>0.12</td>\n      <td>0.118 (0.003 to 0.750)</td>\n      <td>0.01065</td>\n      <td>0.075</td>\n    </tr>\n    <tr>\n      <td>A12CC04 Magnesium citrate</td>\n      <td>33</td>\n      <td>108</td>\n      <td>0.48</td>\n      <td>0.78</td>\n      <td>0.609 (0.399 to 0.908)</td>\n      <td>0.01191</td>\n      <td>0.080</td>\n    </tr>\n    <tr>\n      <td>S01KA01 Hyaluronic acid (artificial tears)</td>\n      <td>5</td>\n      <td>31</td>\n      <td>0.07</td>\n      <td>0.22</td>\n      <td>0.322 (0.098 to 0.836)</td>\n      <td>0.01249</td>\n      <td>0.083</td>\n    </tr>\n    <tr>\n      <td>C09DB01 Valsartan-amlodipine</td>\n      <td>227</td>\n      <td>549</td>\n      <td>3.27</td>\n      <td>3.95</td>\n      <td>0.821 (0.698 to 0.963)</td>\n      <td>0.01445</td>\n      <td>0.094</td>\n    </tr>\n    <tr>\n      <td>A10BD07 Sitagliptin-metformin</td>\n      <td>233</td>\n      <td>560</td>\n      <td>3.35</td>\n      <td>4.03</td>\n      <td>0.826 (0.704 to 0.967)</td>\n      <td>0.01721</td>\n      <td>0.108</td>\n    </tr>\n    <tr>\n      <td>B03BA51 Vit.B12 combinations</td>\n      <td>31</td>\n      <td>100</td>\n      <td>0.45</td>\n      <td>0.72</td>\n      <td>0.618 (0.399 to 0.934)</td>\n      <td>0.01979</td>\n      <td>0.119</td>\n    </tr>\n    <tr>\n      <td>G03CA03 Estradiol</td>\n      <td>18</td>\n      <td>67</td>\n      <td>0.26</td>\n      <td>0.48</td>\n      <td>0.536 (0.300 to 0.914)</td>\n      <td>0.02047</td>\n      <td>0.122</td>\n    </tr>\n    <tr>\n      <td>C09DA01 Losartan-hydrochlorothiazide</td>\n      <td>124</td>\n      <td>315</td>\n      <td>1.78</td>\n      <td>2.27</td>\n      <td>0.783 (0.630 to 0.969)</td>\n      <td>0.02424</td>\n      <td>0.140</td>\n    </tr>\n    <tr>\n      <td>S01ED01 Timolol</td>\n      <td>20</td>\n      <td>70</td>\n      <td>0.29</td>\n      <td>0.50</td>\n      <td>0.570 (0.328 to 0.949)</td>\n      <td>0.02492</td>\n      <td>0.143</td>\n    </tr>\n    <tr>\n      <td>G04BD12 Mirabegron</td>\n      <td>22</td>\n      <td>74</td>\n      <td>0.32</td>\n      <td>0.53</td>\n      <td>0.593 (0.351 to 0.967)</td>\n      <td>0.02998</td>\n      <td>0.163</td>\n    </tr>\n    <tr>\n      <td>S01XA02 Retinol (eye ointment)</td>\n      <td>3</td>\n      <td>21</td>\n      <td>0.04</td>\n      <td>0.15</td>\n      <td>0.285 (0.054 to 0.956)</td>\n      <td>0.03015</td>\n      <td>0.163</td>\n    </tr>\n    <tr>\n      <td>Z01CE01 Eye care wipes</td>\n      <td>3</td>\n      <td>21</td>\n      <td>0.04</td>\n      <td>0.15</td>\n      <td>0.285 (0.054 to 0.956)</td>\n      <td>0.03015</td>\n      <td>0.163</td>\n    </tr>\n    <tr>\n      <td>N06AX12 Bupropion</td>\n      <td>6</td>\n      <td>30</td>\n      <td>0.09</td>\n      <td>0.22</td>\n      <td>0.399 (0.136 to 0.976)</td>\n      <td>0.03385</td>\n      <td>0.177</td>\n    </tr>\n    <tr>\n      <td>N06BA04 Methylphenidate</td>\n      <td>8</td>\n      <td>36</td>\n      <td>0.12</td>\n      <td>0.26</td>\n      <td>0.444 (0.178 to 0.972)</td>\n      <td>0.03656</td>\n      <td>0.186</td>\n    </tr>\n    <tr>\n      <td>A12AX05 Calcium-zinc CD</td>\n      <td>0</td>\n      <td>10</td>\n      <td>0.00</td>\n      <td>0.07</td>\n      <td>0.000 (0.000 to 0.892)</td>\n      <td>0.03696</td>\n      <td>0.186</td>\n    </tr>\n    <tr>\n      <td>A11JC02 Multivitamins for ocular use</td>\n      <td>25</td>\n      <td>81</td>\n      <td>0.36</td>\n      <td>0.58</td>\n      <td>0.616 (0.376 to 0.976)</td>\n      <td>0.03827</td>\n      <td>0.191</td>\n    </tr>\n  </tbody>\n</table>\n\n_Numbers are of patients from the group who have acquired a medication from the class in the last month before the index date.p-Values are calculated according to Fisher's exact test. Medications are sorted by increasing order of p-values.OR: odds ratio; [95% CI]: 95% confidence interval; FDR: false discovery rate calculated according to Benjamini-Hochberg (BH) procedure.Shown in this table are\u00a0anatomical therapeutic chemical\u00a0(ATC) classes for which the p-value is less than 0.05, and for which the FDR is less than 0.20 (about 80% of entries are expected to be true positive)._\n\nThe top ranked medications by significance in cohort 1 were rosuvastatin (OR=0.673, 95% confidence interval [CI] 0.596 to 0.758), ezetimibe (OR=0.488, CI 0.377 to 0.622), and ubiquinone (OR=0.181, CI 0.065 to 0.403); these same three medications were also in the top five by significance of cohort 2: rosuvastatin (OR=0.732, CI 0.643 to 0.83), ezetimibe (OR=0.602; CI 0.471 to 0.764), and ubiquinone (OR=0.181, CI 0.065 to 0.403). It is remarkable that these three drugs act on the cholesterol and ubiquinone synthesis pathways, which both stem from the mevalonate pathway (Buhaescu and Izzedine, 2007); the intermediate product at the branch point is farnesyl polyphosphate (FPP) (Figure 2). Rosuvastatin and other statins specifically inhibit he enzyme HMG-CoA reductase. Ubiquinone is a food supplement available over the counter, which is often recommended to patients prone to muscular pain and receiving a statin treatment\u00a0(Qu et al., 2018). Risedronate, which also acts on this pathway, and is commonly used to prevent osteoporosis, by blocking the enzyme FPP synthase, is also identified by both cohorts, and is ranked 4th by significance in cohort 2 (OR=0.567; CI 0.400 to 0.789), and 13th in cohort 1 (OR=0.705; CI 0.522 to 0.935).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/68165/elife-68165-fig2-v2.jpg)\n\n**Figure 2.:** Ubiquinone and cholesterol biosynthesis pathways originate from a branching of the mevalonate pathway at FPP. Rosuvastatin and other statins can inhibit the HMG-CoA reductase, while risedronic acid and other bisphosphonates can inhibit the FPP synthase. Ac-CoA: acetyl coenzyme A, HMG-CoA: hydroxymethylglutaryl coenzyme A, GPP: geranyl pyrophosphate, FPP: farnesyl pyrophosphate, PPP: polyprenyl pyrophosphate.\n\nOther medications that fulfilled the stringent criteria of being identified by both cohorts with an\u00a0FDR of 80% include the pneumococcal conjugate vaccine (OR=0.476, CI 0.288 to 0.746 in cohort 1; 0.602, CI 0.245 to 0.685 in cohort 2), magnesium citrate (OR=0.652, CI 0.433 to 0.952 in cohort 1; 0.609, CI 0.399 to 0.908 in cohort 2), vitamin D (OR=0.898, CI 0.821 to 0.980 in cohort 1; 0.869, CI 0.792 to 0.954 in cohort 2), flecainide (OR=0.301, CI 0.118 to 0.641 in cohort 1; 0.325, CI 0.123 to 0.729 in cohort 2), escitalopram (OR=0.824, CI 0.708 to 0.955 in cohort 1; 0.766, CI 0.654 to 0.894 in cohort 2), cilazapril (OR=0.554, CI 0.315 to 0.918 in cohort 1; 0.468, CI 0.247 to 0.831 in cohort 2), ramipril combined with hydrochlorothiazide (OR=0.734, CI 0.603 to 0.887 in cohort 1; 0.702, CI 0.565 to 0.869 in cohort 2), and sitagliptin combined with metformin (OR=0.802, CI 0.696 to 0.922 in cohort 1; 0.826, CI 0.704 to 0.967 in cohort 2). Sitagliptin alone is also significant in cohort 1 (OR=0.658, CI 0.443 to 0.950).\n\nIn addition, we observe interesting patterns in cohort 2, which is designed to identify drugs associated with decreased hospitalization risk in SARS-CoV-2 positive patients: several vitamin or mineral supplementation items appear to have a protective effect, in addition to vitamin D and magnesium citrate, which were identified by both cohorts: vitamin B12 combinations (OR=0.618, CI 0.399 to 0.934), multivitamins for ocular use (OR=0.616, CI\u00a00.376 to 0.976), and calcium-zinc combinations (OR=0.000, CI 0.000 to 0.892).\n\nSeveral ophthalmic items also appear to be associated with significantly decreased odds for hospitalization, including artificial tears, hydroxypropyl-methylcellulose-based (OR=0.657, CI 0.490 to 0.871), or hyaluronic acid based (OR=0.322, CI 0.098 to 0.836); decreased OR are also found for items that may act as a physical barrier to the eye: eye care wipes, which are sterile wipes sold to clean the eyes (OR=0.285, CI 0.054 to 0.956), a retinol-based ointment used to treat cornea abrasion (OR=0.285, CI 0.054 to 0.956), and timolol drops used to treat glaucoma (OR=0.570, CI 0.328 to 0.949).\n\nAlso associated with decreased odds for hospitalization are several drugs based on an ACE inhibitor or an angiotensin receptor blocker (ARB), sometimes in combination with another compound. In addition to cilazapril and ramipril-hydrochlorothiazide that were highly ranked in both cohorts, cohort 1 identifies candesartan (OR=0.718, CI 0.544 to 0.934), and cohort 2 identifies valsartan with amlodipine (OR=0.821, CI 0.698 to 0.963), and losartan with hydrochlorothiazide (OR=0.783, CI 0.630 to 0.969).\n\nRemarkably, several drugs acting on receptors to neurotransmitters also appear to decrease hospitalization risk: rizatriptan (OR=0.118, CI 0.003 to 0.750), bupropion (OR=0.399, CI 0.136 to 0.976), and methylphenidate (OR=0.444, CI 0.178 to 0.972).\n\nIn the Israeli population, the two groups that have been reported to be at higher risk are Ultra-Orthodox Jews and Arabs (Muhsen et al., 2021). Therefore, we performed additional analyses with the goal to eliminate membership in either of these groups as a potential confounder and to eliminate possible confounding in concurrently used medications. We performed multivariate conditional logistic regression (Materials\u00a0and\u00a0methods) in each of the cohorts. In each cohort, we modelized the OR for hospitalization, using ethnicity and purchased medications as explanatory factors. See Supplementary file 1. Either Ultra-Orthodox or Arab identity indeed appear to be each associated with increased risk for hospitalization. However, even after adjusting for the subgroup membership, most of the medications identified by individual Fisher\u2019s\u00a0exact tests maintain statistically significant protective effect.\n\nBecause of the established association between high BMI and COVID-19 severity, it is of interest to know whether any of the protective medications are especially protective in high BMI individuals. Therefore, we performed a subgroup analysis, by partitioning partition BMI into four ranges (see Materials\u00a0and\u00a0methods). The results are shown as a forest plot in Supplementary file 1-table 3. In general, the protective effects were seen in most or all BMI ranges and we did not see any striking association between a protective medication and high BMI.\n\n## Discussion\n\nIn this large-scale retrospective study, we identified several drugs and products that are significantly associated with reduced odds for COVID-19 hospitalization, both in the general population and in patients with laboratory-proven SARS-CoV-2 infection. Several other research groups have recognized the potential for EHRs to enable large-scale studies in COVID-19 and the challenges of this sort of retrospective research are reviewed in Dagliati et al., 2021; Sudat et al., 2021. To give a few examples, EHRs have also been used to predict: (i) COVID-19 mortality based on pre-existing conditions (Estiri et al., 2021; Osborne et al., 2020), (ii) early diagnosis of COVID-19 based on clinical notes (Wagner et al., 2020), and (iii) eligibility of COVID-19 patients for clinical trials by matching trial criteria with patient records (Kim et al., 2021).\n\nMajor strengths of our study include: (i) the large sample of hospitalized COVID-19 patients, (ii) the ability to collect comprehensive data about individual demographic and comorbidity characteristics and to build matched case and control populations, (iii) the ability to track hospitalizations and disease severity, owing to a central database established by the Israeli Ministry of Health, and (iv) the capacity to track which drugs and products have been acquired by patients in the period that have preceded SARS-CoV-2 infection, owing to comprehensive digital systems integration in CHS.\n\nAnother strength is the dual cohort design, with control individuals taken from the general population in the first cohort and from individuals positive for SARS-CoV-2 in the second cohort, with each using different matching criteria, mitigates potential bias that could affect each cohort. The two cohorts allowed us to evaluate the protective effect of drugs that act either by reducing the initial risk of infection or by reducing the risk of hospitalization in those infected. Analyses are based on items procured in the 35 days before the initial positive test. This window was chosen in accordance with the monthly renewal of prescription policy in place in CHS.\n\nLimitations of this study are related to it being observational in nature. Best efforts were made to use matching so that patients in case and controls are similar regarding most of the known factors for disease severity, and notably, age, obesity, smoking, and baseline comorbidity. The cases and controls were not matched for ethnicity, which could be a substantial confounding factor. We aimed to get a sensible tradeoff between controlling for confounding factors by rigorous matching and keeping enough patients so that cohorts are representative of the general population. Our analysis is based on medication acquisition in pharmacies and does not ascertain that medications purchased were used. Notably, some of the drugs associated with a protective effect may have been stopped during patient\u2019s hospitalization so that our analysis may have underestimated the full achievable benefits for some of the drugs. Conversely, since drugs tested here were acquired before patients were positive for SARS-CoV-2, the protective effect of some of the drugs may be fully attained only when treatment is started before or early in the infection.\n\nThe variable behavior of people during the pandemic has been an important factor that can affect the risk of exposure and the severity of infection. We tried to address this cause of variable risk by performing matching in two distinct cohorts and by using only PCR-positive patients in the second cohort. Nevertheless, behavioral factors, which could not measure, can still account for some of the observed differences.\n\nOur analyses counted the purchase of each medication, but not the dose or the patient compliance. Therefore, we cannot comment on whether higher doses of the beneficial medications, such as rosuvastatin and ubiquinone, are associated with reduced risk.\n\nThe medications that are protective are prescribed for a variety of conditions. It is conceivable but unlikely that it is the medical condition, or comorbidity, that provides the protection rather than the medication itself. Three of the comorbidities that have been prominently suggested as relevant to COVID-19 severity and outcome include high BMI, diabetes, and hypertension. Therefore, at the helpful suggestion of the reviewers, we did both subgroup analysis and regression analysis to show that the protective effect of the most protective medications appears not to be associated with BMI (Supplementary file 1). The study design explicitly matched for diabetes and hypertension, so it follows that these two diseases are not associated with the protective effects of the drugs listed in Table 2A and B. However, we recognize the limitation that when the association between the medical condition and the prescription is very specific, such as flecainide for cardiac arrhythmia, we lack suitable data to separate the possible effects of the condition and the medication.\n\nBearing these strengths and potential limitations in mind, our analyses seem to indicate several viral vulnerability points, which can potentially be exploited to effectively reduce disease severity with drugs that are already available. The drugs identified as protective include ubiquinone, which is a food supplement with a very good safety profile that does not even require a prescription in our health system, and rosuvastatin and ezetimibe, two drugs prescribed routinely to reduce cholesterol and that have a very good safety profile. These findings are in line with previous reports that RNA viruses need cholesterol to enter cells, for virion assembly, and to maintain structural stability (Aizaki et al., 2008; Bajimaya et al., 2017; Rossman et al., 2010; Sun and Whittaker, 2003), and that prescribing statins may protect against infection with RNA viruses such as members of family Flaviviridae, including dengue virus, Zika virus, and West Nile virus (Gower and Graham, 2001; Osuna-Ramos et al., 2018; Whitehorn et al., 2016). The involvement of the cholesterol/ubiquinone pathway is further confirmed by the fact that risedronic acid, a drug acting on the enzyme farnesyl pyrophoshate synthase (Tsoumpra et al., 2015; Figure 2) which catalyzes the production of FPP from which the cholesterol and the ubiquinone synthesis pathways split (Buhaescu and Izzedine, 2007), is identified as protective as well, even though it is prescribed for osteoporosis regardless of the presence of hypercholesterolemia.\n\nTaken together, our findings lend (albeit indirect) support to the possibility that SARS-CoV-2 hijacks the cholesterol synthesis pathway, possibly to boost production of the cellular cholesterol it needs as an RNA virus. The fact that ubiquinone protects against severe disease suggests that SARS-CoV-2 may tilt the mevalonate pathway toward cholesterol synthesis and away from ubiquinone synthesis. Such a pathway imbalance would ultimately result in deficiency of ubiquinone that could lead to cell death unless counteracted by ubiquinone supplementation.\n\nIt is remarkable that the protective effect of anti-cholesterol drugs was observed mostly for rosuvastatin \u2013 and in cohort 1 for pravastatin \u2013 but not for other statins. Rosuvastatin was found to significantly increase 25-OH vitamin D levels in the blood (Yavuz et al., 2009), much more than what could be observed with other statins. Yavuz and Ertugrul, 2012 suggested that the increase in 25-OH vitamin D observed following rosuvastatin treatment could be mediated by the Niemann-Pick C1 like 1 (NPC1L1) membrane transporter that is involved in intestinal absorption of vitamin D. Interestingly, the NPC1L1 membrane transporter is also the target of ezetimibe, identified by our study to decrease significantly the hospitalization risk of COVID-19 patients.\n\nIn both cohorts, we observed a significant decrease of the odds for hospitalization for COVID-19 patients treated with either vitamin D or magnesium citrate. Vitamin D deficiency has been shown to be associated with increased risk for COVID-19 in multiple studies (Israel et al., 2020; Merzon et al., 2020). Magnesium is needed for vitamin D activation (Uwitonze and Razzaque, 2018) and its levels in drinking water in Israel are low, as water is produced in great part through desalination of sea water (Koren et al., 2017). The decreased hospitalization rate revealed here for patients taking magnesium supplementation may suggest a role for supplementation of this element along with vitamin D. Hospitalization risk was also found to be decreased in patients taking vitamin B12 and calcium-zinc, as identified by other studies (Ragan et al., 2020; Trasino, 2020; Wessels et al., 2020).\n\nAnother medication that was associated with decreased odds for hospitalization is flecainide, an antiarrhythmic drug that blocks sodium channels in the heart, and inhibits ryanodine receptor 2, a major regulator of sarcoplasmic release of stored calcium ions. It may prevent apoptosis by release of calcium from the endoplasmic reticulum\u00a0(ER) once the cell mitochondria cease to function. An expert review recommended that patients with arrhythmia who get COVID-19 should continue flecainide treatment if already prescribed (Ci et al., 2020). In our study, the protective effect observed in both cohorts is even more marked for severe patients, suggesting that this drug, which can be given intravenously (Antonelli et al., 2006), could be administered to patients in respiratory distress, if the protective effect is confirmed in clinical trials.\n\nSeveral drugs acting as ACE inhibitors or ARBs appeared to slightly decrease the odds for hospitalization, either alone or in combination (cilazapril, ramipril-hydrochlorothiazide, losartan-hydrochlorothiazide, valsartan amlodipine). These results are consistent with ACE and ARBs treated patients shown to not have an increased risk for COVID-19 (Morales et al., 2021), and there is therefore no reason to discontinue these medications to decrease COVID-19 risk. Our findings also confirm and substantially extend recent EHR-based findings about the favorable association between metformin use and COVID-19 outcomes (Bramante et al., 2021).\n\nIn addition, several drugs acting on synapses (escitalopram, bupropion, mirabegron, and timolol) were associated with decreased risk of hospitalization. This is consistent with SARS-CoV-2 invading neuronal cells (Iroegbu et al., 2020; Meinhardt et al., 2021; Song et al., 2021), as manifest by symptoms of loss of smell and taste, where it may spread throughout the nervous system across synapses. Decreased neurotransmitter internalization may therefore reduce the infectious potential of the virus.\n\nInterestingly, items that could improve the physical barrier of the eye surface were among the top items decreasing odds of hospitalization, including eye wipes, artificial tears, and eye ointments. Interestingly, the protective effect for these items was observed foremost among patients from cohort 2 in which controls are already SARS-CoV-2 positive. This suggests that these barrier items could not only protect against the initial risk of infection, but, notably, also reduce disease severity in patients already infected. The beneficial effect observed here for many different ophthalmologic preparations raises the possibility that autoinoculation of the virus to the eyes, prevented by these items, has a role in the virulence of SARS-CoV-2. The possibility that invasion of the central nervous system by the virus through the eyes could increase the risk of COVID-19 complications is also supported by the fact that eyeglass wearers were shown previously to be at decreased risk for COVID-19 hospitalization (Zeng et al., 2020). Until the meaning of these findings is fully understood, it may be helpful to advise COVID-19 patients to avoid touching their eyes in order to reduce the risk of complications.\n\nIn conclusion, this study shows apparently protective effects for several medications and dietary supplements, such as rosuvastatin, ezetimibe, ubiquinone, risedronate, vitamin D, and magnesium. We suggest to further investigate these, and other products identified by this study, in prospective trials aimed to reduce disease severity in COVID-19 patients. In the meantime, we believe that the observed protective effects of these drugs provide important evidence supporting their safe continuation for COVID-19 patients.\n",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "8a58f45b-e008-48fd-b0a3-9e8ec415751d",
+      "submission_id": "3df19293-76ec-4dd4-b618-acdef130bcdf",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Frank L van de Veerdonk, Radboudumc Center for Infectious Diseases Netherlands\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.68165.sa1](https://doi.org/10.7554/eLife.68165.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nYour work is of interest to epidemiologists working on COVID19 research or clinical scientists with an interest in prospective trials to study drugs to reduce COVID19 hospitalization. It provides an extensive list of drugs that are associated with reduced hospitalization for COVID19, studied in both in a patient-control cohort as well as positive vs hospitalized SARS-CoV-2 patients. The findings that cholesterol lowering drugs and drugs to treat the eyes are novel and of interest and might open and support explorative trials with these drugs in COVID19.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Identification of drugs associated with reduced severity of COVID-19: A case-control study in a large population\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, including Frank L van de Veerdonk as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Jos van der Meer as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Both reviewers felt that there are some limitations to the study that have not been addressed. Importantly the behavior of people during the pandemic can be a huge factor of exposure and risk of severity of infection. Although the authors address this by using the second cohort, which is also PCR positive patients, it could still influence the load of exposure, and thus severity of disease. This discussion on behavior and possible outcome needs to be included in the manuscript.\n\n2) What if not the drugs, but the underlying disease or other comorbidities are the protective factor? This could be further analyzed using different statistical methods such as linear regression models instead of Fishers exact test.\n\n3) During the matching, did you also match for etnicity? This could be a strong confounder and might be necessary to be taken into account\n\n4) The matching for co-morbidities is indeed taken into account. However, the severity of the condition which can be reflected by the use and dose of medication is not taken into account. Understandable since this would need a significant amount of extra information and statistics, but at least it needs to be discussed.\n\n5) This might be phrasing, but did you match for gender or sex? These are two different things\n\n6) Could you elaborate and perhaps perform extra analyses on the effects of the underlying comorbidities and BMI on the findings? Were the findings stronger or weaker in some subsets of patients / weight? Did they correlate with the diseases that the medication is used for? This might help unravel the question whether the drug or the disease causes this effect. Instead of using Fishers test, you could use linear regression models to analyze this.\n",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "35466e61-4874-4b7e-a5b9-9c807425391f",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C1",
+      "claim": "Through December 31, 2020, 10,295 adult patients between the ages of 18 and 95 had a recorded COVID-19 related hospitalization in the CHS database.",
+      "claim_type": "EXPLICIT",
+      "source": "Through December 31, 2020, 10,295 adult patients between the ages of 18 and 95 had a recorded COVID-19 related hospitalization in the CHS database.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the number of hospitalized COVID-19 patients in the study database during the specified time period.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "7a123bc6-dc4b-4721-98ad-0282c29e17ee",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C2",
+      "claim": "The matching procedure identified control individuals from the general population in ratio 5:1 for 6530 patients in the first cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "The matching procedure was able to identify control individuals from the general population in ratio 5:1 for 6530 patients in the first cohort, and control patients in ratio 2:1 for 6953 SARS-CoV-2 positive individuals in the second cohort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study design and matching results for cohort 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "d3167415-7ea9-4819-b3aa-afd1c6b81bf2",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C3",
+      "claim": "The matching procedure identified control patients in ratio 2:1 for 6953 SARS-CoV-2 positive individuals in the second cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "The matching procedure was able to identify control individuals from the general population in ratio 5:1 for 6530 patients in the first cohort, and control patients in ratio 2:1 for 6953 SARS-CoV-2 positive individuals in the second cohort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study design and matching results for cohort 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "b8ad4a7d-ba49-4332-82c2-93ff7be426a1",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C4",
+      "claim": "In cohort 1, ubiquinone was associated with reduced COVID-19 hospitalization with OR=0.185, 95% CI [0.058 to 0.458], p<0.001.",
+      "claim_type": "EXPLICIT",
+      "source": "Medications associated with most significantly reduced odds for COVID-19 hospitalization include: ubiquinone (OR=0.185, 95% CI [0.058 to 0.458], p<0.001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the case-control analysis in cohort 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "6e25c374-413b-4e76-9c02-b2c4a62dfe1e",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C5",
+      "claim": "In cohort 1, ezetimibe was associated with reduced COVID-19 hospitalization with OR=0.488, 95% CI [0.377 to 0.622], p<0.001.",
+      "claim_type": "EXPLICIT",
+      "source": "Medications associated with most significantly reduced odds for COVID-19 hospitalization include: ubiquinone (OR=0.185, 95% CI [0.058 to 0.458], p<0.001), ezetimibe (OR=0.488, 95% CI [0.377 to 0.622], p<0.001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the case-control analysis in cohort 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "a84848f8-f8a9-461f-a079-be5deb1235fd",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C6",
+      "claim": "In cohort 1, rosuvastatin was associated with reduced COVID-19 hospitalization with OR=0.673, 95% CI [0.596 to 0.758], p<0.001.",
+      "claim_type": "EXPLICIT",
+      "source": "Medications associated with most significantly reduced odds for COVID-19 hospitalization include: ubiquinone (OR=0.185, 95% CI [0.058 to 0.458], p<0.001), ezetimibe (OR=0.488, 95% CI [0.377 to 0.622], p<0.001), rosuvastatin (OR=0.673, 95% CI [0.596 to 0.758], p<0.001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the case-control analysis in cohort 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "146d02dd-b415-46ee-8c06-16a1e5b8b0e8",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C7",
+      "claim": "In cohort 1, flecainide was associated with reduced COVID-19 hospitalization with OR=0.301, 95% CI [0.118 to 0.641], p<0.001.",
+      "claim_type": "EXPLICIT",
+      "source": "Medications associated with most significantly reduced odds for COVID-19 hospitalization include: ubiquinone (OR=0.185, 95% CI [0.058 to 0.458], p<0.001), ezetimibe (OR=0.488, 95% CI [0.377 to 0.622], p<0.001), rosuvastatin (OR=0.673, 95% CI [0.596 to 0.758], p<0.001), flecainide (OR=0.301, 95% CI [0.118 to 0.641], p<0.001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the case-control analysis in cohort 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "51036d0f-f05c-4b2c-b4b7-7560b5828452",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C8",
+      "claim": "In cohort 1, vitamin D was associated with reduced COVID-19 hospitalization with OR=0.869, 95% CI [0.792 to 0.954], p<0.003.",
+      "claim_type": "EXPLICIT",
+      "source": "Medications associated with most significantly reduced odds for COVID-19 hospitalization include: ubiquinone (OR=0.185, 95% CI [0.058 to 0.458], p<0.001), ezetimibe (OR=0.488, 95% CI [0.377 to 0.622], p<0.001), rosuvastatin (OR=0.673, 95% CI [0.596 to 0.758], p<0.001), flecainide (OR=0.301, 95% CI [0.118 to 0.641], p<0.001), and vitamin D (OR=0.869, 95% CI [0.792 to 0.954], p<0.003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the case-control analysis in cohort 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "d31ed5c4-1c81-4991-beb0-8438e573ccd3",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C9",
+      "claim": "Acquisition of artificial tears was associated with decreased risk for COVID-19 hospitalization.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, acquisition of artificial tears, eye care wipes, and several ophthalmological products were also associated with decreased risk for hospitalization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the case-control analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "a1cd9f6b-e266-4e10-b131-2de4a983421c",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C10",
+      "claim": "Acquisition of eye care wipes was associated with decreased risk for COVID-19 hospitalization.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, acquisition of artificial tears, eye care wipes, and several ophthalmological products were also associated with decreased risk for hospitalization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the case-control analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "cab5ed33-f405-49f0-a2fd-6600acf76dd3",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C11",
+      "claim": "Acquisition of several ophthalmological products was associated with decreased risk for COVID-19 hospitalization.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, acquisition of artificial tears, eye care wipes, and several ophthalmological products were also associated with decreased risk for hospitalization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the case-control analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "709e64e6-74a8-4899-9a69-e942e95cdaa7",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C12",
+      "claim": "Ubiquinone, ezetimibe, and rosuvastatin are all related to the cholesterol synthesis pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Ubiquinone, ezetimibe, and rosuvastatin, all related to the cholesterol synthesis pathway were associated with reduced hospitalization risk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement connects the three medications to a common biochemical pathway.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "9e6217b7-e910-42ed-8f12-43bad430247c",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C13",
+      "claim": "SARS-CoV-2 is a new single-stranded RNA virus which was first identified in December 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "SARS-CoV-2 is a new single-stranded RNA virus, which was first identified in December 2019, and has rapidly spread into a global pandemic of primarily respiratory illness designated as coronavirus disease 2019 (COVID-19).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about SARS-CoV-2 characteristics and timeline.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "7e569338-18a4-4ddc-bde0-e77735eda760",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C14",
+      "claim": "SARS-CoV-2 has rapidly spread into a global pandemic of primarily respiratory illness designated as COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "SARS-CoV-2 is a new single-stranded RNA virus, which was first identified in December 2019, and has rapidly spread into a global pandemic of primarily respiratory illness designated as coronavirus disease 2019 (COVID-19).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the COVID-19 pandemic.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "4ec7f46c-f8c6-474f-94a3-431d1dd60424",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C15",
+      "claim": "COVID-19 is associated with significant mortality, particularly among elderly or overweight individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "This disease is associated with significant mortality, particularly among elderly or overweight individuals, raising considerable concerns for public health.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about COVID-19 risk factors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "fc344152-4c76-4b27-b01f-084b330a7999",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C16",
+      "claim": "Data were collected from CHS data warehouse on adult patients aged 18 to 95 years who tested positive for SARS-CoV-2 from the beginning of the pandemic through November 30, 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "We collected data from the CHS data warehouse on adult patients aged 18 to 95 years, who tested positive for SARS-CoV-2 from the beginning of the pandemic through November 30, 2020, and were admitted for hospitalization through December 31, 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data collection methodology and timeframe.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "75ff309f-0814-4f09-84ed-4d790c3ee5f5",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C17",
+      "claim": "Patients were admitted for hospitalization through December 31, 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "We collected data from the CHS data warehouse on adult patients aged 18 to 95 years, who tested positive for SARS-CoV-2 from the beginning of the pandemic through November 30, 2020, and were admitted for hospitalization through December 31, 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the hospitalization timeframe for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "d5c44dfe-4b22-4881-b9bf-aab5628ff7f4",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C18",
+      "claim": "Each patient was assigned an index date, which is the first date at which a positive RT-PCR test for SARS-CoV-2 was collected for the patient.",
+      "claim_type": "EXPLICIT",
+      "source": "Each patient was assigned an index date, which is the first date at which a positive RT-PCR test for SARS-CoV-2 was collected for the patient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for defining the index date.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "f562c062-47dc-4cee-8193-bce3531b8609",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C19",
+      "claim": "In CHS, distinct prescriptions are issued for each calendar month.",
+      "claim_type": "EXPLICIT",
+      "source": "Reliable identification of medications procured for a given month is enabled by the fact that in CHS, distinct prescriptions are issued for each calendar month.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the prescription system in CHS that enables medication tracking.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "7cceda82-44c6-4bee-be94-c00b5d3ed720",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C20",
+      "claim": "In cohort 1, control patients were chosen among the general population of CHS members.",
+      "claim_type": "EXPLICIT",
+      "source": "In cohort 1, control patients were chosen among the general population of CHS members.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the control selection methodology for cohort 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "da697074-f47f-429f-aa69-34d8849eed70",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C21",
+      "claim": "In cohort 1, five controls were selected to match each case (5:1).",
+      "claim_type": "EXPLICIT",
+      "source": "Since controls can be selected from among millions of individuals, five controls were selected to match each case (5:1), with comprehensively matched baseline attributes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the matching ratio for cohort 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "9ec6f53c-9709-4226-a09a-d8d3db9975f4",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C22",
+      "claim": "In cohort 1, controls were matched on age, sex, BMI category, socio-economic and smoking status, chronic kidney disease stage for patients with renal impairment, and main comorbidities diagnoses.",
+      "claim_type": "EXPLICIT",
+      "source": "Since controls can be selected from among millions of individuals, five controls were selected to match each case (5:1), with comprehensively matched baseline attributes, including age, sex, BMI category, socio-economic and smoking status, chronic kidney disease (CKD) stage for patients with renal impairment, and main comorbidities diagnoses (hypertension, diabetes, CKD, congestive heart failure [CHF], chronic obstructive pulmonary disease [COPD], malignancy, ischemic heart disease).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the matching criteria for cohort 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "76c99354-deb3-417f-98e0-2370f2e44096",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C23",
+      "claim": "Cohort 1 is designed to identify drugs that affect the overall risk for hospitalization for COVID-19, where the effect could combine a decreased risk of detectable infection and a decreased risk for hospitalization once infected.",
+      "claim_type": "EXPLICIT",
+      "source": "Cohort 1 is designed to identify drugs that affect the overall risk for hospitalization for COVID-19, where the effect could combine a decreased risk of detectable infection, and a decreased risk for hospitalization once infected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the purpose and design rationale for cohort 1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "768123e5-0461-4726-a5ea-94005b4768fb",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C24",
+      "claim": "In cohort 2, control patients were chosen among patients who had a positive test for SARS-CoV-2 but had not been hospitalized as of December 31, 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "In cohort 2, control patients were chosen among patients who had a positive test for SARS-CoV-2 but had not been hospitalized as of December 31, 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the control selection methodology for cohort 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "906c955c-5846-4aac-9f06-0cbbddbf014d",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C25",
+      "claim": "In cohort 2, only two controls were matched for each case patient.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the smaller size of the pool from which controls can be drawn, only two controls were matched for each case patient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the matching ratio for cohort 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "bfae2b6c-5f94-4632-ba21-760e27020970",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C26",
+      "claim": "In cohort 2, attributes that were matched were age, sex, smoking status, Adjusted Clinical Groups (ACG) measure of comorbidity and presence/absence of an obesity diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Attributes that were matched were the age, sex, smoking status, Adjusted Clinical Groups (ACG) measure of comorbidity (Shadmi et al., 2011) and presence/absence of an obesity diagnosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the matching criteria for cohort 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "84680041-c53b-4688-9868-61850c3277fa",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C27",
+      "claim": "Cohort 2 is more specifically suited to identify drugs that are associated with a decreased risk for COVID-19 hospitalization in patients who had a proven infection with the virus.",
+      "claim_type": "EXPLICIT",
+      "source": "Cohort 2 is more specifically suited to identify drugs that are associated with a decreased risk for COVID-19 hospitalization in patients who had a proven infection with the virus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the purpose and design rationale for cohort 2.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "8c972c75-610e-4f4a-ab60-ba027cb49839",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C28",
+      "claim": "Patients who were pregnant since February 2020 were excluded from both cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients who were pregnant since February 2020 were also excluded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an exclusion criterion for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "0b2f96e3-16a4-4d1f-bb99-fe856edca163",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C29",
+      "claim": "The odds ratio for hospitalization and statistical significance were assessed by Fisher's exact test.",
+      "claim_type": "EXPLICIT",
+      "source": "OR for hospitalization for drugs acquired in the case versus control groups and statistical significance were assessed by Fisher's exact test.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical method used for analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "738bf213-566a-4b36-83c3-e3623e18975a",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C30",
+      "claim": "Correction for multiple testing was performed using the Benjamini-Hochberg procedure.",
+      "claim_type": "EXPLICIT",
+      "source": "Correction for multiple testing was performed using the Benjamini-Hochberg procedure (Benjamini and Hochberg, 1995), which gives an estimation of the false discovery rate (FDR) in the list.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical method used for multiple testing correction.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "86e2b664-43db-4d2f-a9f0-929a56fd98fe",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C31",
+      "claim": "The Benjamini-Hochberg procedure gives an estimation of the false discovery rate (FDR) in the list.",
+      "claim_type": "EXPLICIT",
+      "source": "Correction for multiple testing was performed using the Benjamini-Hochberg procedure (Benjamini and Hochberg, 1995), which gives an estimation of the false discovery rate (FDR) in the list.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a property of the Benjamini-Hochberg procedure.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "cbc96306-8ced-4a35-855a-aa47b0289227",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C32",
+      "claim": "Only 1.15% of drugs with statistically significant p-values (p<0.05) in cohort 1 were associated with decreased risk of COVID-19 hospitalization.",
+      "claim_type": "EXPLICIT",
+      "source": "Only a small number of items are associated with decreased risk: 1.15% in cohort 1 and 1.75% in cohort 2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary statistic from the analysis, also shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "d88c0b52-1dea-47c3-b928-8d8e888a90e0",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C33",
+      "claim": "Only 1.75% of drugs with statistically significant p-values (p<0.05) in cohort 2 were associated with decreased risk of COVID-19 hospitalization.",
+      "claim_type": "EXPLICIT",
+      "source": "Only a small number of items are associated with decreased risk: 1.15% in cohort 1 and 1.75% in cohort 2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary statistic from the analysis, also shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "d4cc7d37-5ff5-4485-a0c9-d72ac004eb4e",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C34",
+      "claim": "The overwhelming majority of medications are associated with neutral effect or increased risk for hospitalization.",
+      "claim_type": "EXPLICIT",
+      "source": "The OR for most drugs are neutral or associated with an increased risk of COVID-19 hospitalization.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary finding from the analysis, also shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "bef6fa25-e93f-4860-b33a-89ef012004a4",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C35",
+      "claim": "In cohort 1, rosuvastatin was the top ranked medication by significance with OR=0.673, 95% CI [0.596 to 0.758].",
+      "claim_type": "EXPLICIT",
+      "source": "The top ranked medications by significance in cohort 1 were rosuvastatin (OR=0.673, 95% confidence interval [CI] 0.596 to 0.758), ezetimibe (OR=0.488, CI 0.377 to 0.622), and ubiquinone (OR=0.181, CI 0.065 to 0.403)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the case-control analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "c6c27196-bfaf-4563-bac2-3d297f54714a",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C36",
+      "claim": "In cohort 1, ezetimibe was ranked second by significance with OR=0.488, 95% CI [0.377 to 0.622].",
+      "claim_type": "EXPLICIT",
+      "source": "The top ranked medications by significance in cohort 1 were rosuvastatin (OR=0.673, 95% confidence interval [CI] 0.596 to 0.758), ezetimibe (OR=0.488, CI 0.377 to 0.622), and ubiquinone (OR=0.181, CI 0.065 to 0.403)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the case-control analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "63755a53-0209-4458-aba9-a4a3d4219381",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C37",
+      "claim": "In cohort 1, ubiquinone was ranked third by significance with OR=0.181, 95% CI [0.065 to 0.403].",
+      "claim_type": "EXPLICIT",
+      "source": "The top ranked medications by significance in cohort 1 were rosuvastatin (OR=0.673, 95% confidence interval [CI] 0.596 to 0.758), ezetimibe (OR=0.488, CI 0.377 to 0.622), and ubiquinone (OR=0.181, CI 0.065 to 0.403)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the case-control analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "bfd55629-b284-45fa-901a-865114b26ed2",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C38",
+      "claim": "In cohort 2, rosuvastatin was in the top five medications by significance with OR=0.732, 95% CI [0.643 to 0.83].",
+      "claim_type": "EXPLICIT",
+      "source": "these same three medications were also in the top five by significance of cohort 2: rosuvastatin (OR=0.732, CI 0.643 to 0.83), ezetimibe (OR=0.602; CI 0.471 to 0.764), and ubiquinone (OR=0.181, CI 0.065 to 0.403).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the case-control analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "19caf6b2-67b7-4175-86d7-edee7c603149",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C39",
+      "claim": "In cohort 2, ezetimibe was in the top five medications by significance with OR=0.602, 95% CI [0.471 to 0.764].",
+      "claim_type": "EXPLICIT",
+      "source": "these same three medications were also in the top five by significance of cohort 2: rosuvastatin (OR=0.732, CI 0.643 to 0.83), ezetimibe (OR=0.602; CI 0.471 to 0.764), and ubiquinone (OR=0.181, CI 0.065 to 0.403).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the case-control analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "aa059fda-e81e-46bc-9eff-cb36cad0ef04",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C40",
+      "claim": "In cohort 2, ubiquinone was in the top five medications by significance with OR=0.181, 95% CI [0.065 to 0.403].",
+      "claim_type": "EXPLICIT",
+      "source": "these same three medications were also in the top five by significance of cohort 2: rosuvastatin (OR=0.732, CI 0.643 to 0.83), ezetimibe (OR=0.602; CI 0.471 to 0.764), and ubiquinone (OR=0.181, CI 0.065 to 0.403).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the case-control analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "e6dfa3dc-6705-4dda-8aab-3d5c60d41e74",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C41",
+      "claim": "Rosuvastatin, ezetimibe, and ubiquinone act on the cholesterol and ubiquinone synthesis pathways, which both stem from the mevalonate pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "It is remarkable that these three drugs act on the cholesterol and ubiquinone synthesis pathways, which both stem from the mevalonate pathway (Buhaescu and Izzedine, 2007)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established biochemical knowledge, supported by citation and illustrated in Figure 2.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "55903a0e-e6dd-43c3-b254-f7aae5ea2d3c",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C42",
+      "claim": "The intermediate product at the branch point of cholesterol and ubiquinone synthesis pathways is farnesyl polyphosphate (FPP).",
+      "claim_type": "EXPLICIT",
+      "source": "the intermediate product at the branch point is farnesyl polyphosphate (FPP) (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established biochemical knowledge illustrated in Figure 2.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "25818e88-a01a-4a0a-877c-9da0a1d5ffc0",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C43",
+      "claim": "Rosuvastatin and other statins specifically inhibit the enzyme HMG-CoA reductase.",
+      "claim_type": "EXPLICIT",
+      "source": "Rosuvastatin and other statins specifically inhibit he enzyme HMG-CoA reductase.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established pharmacological knowledge, also illustrated in Figure 2.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "6f320bd4-3a72-49f6-8c66-91ee5e5b8c9d",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C44",
+      "claim": "Ubiquinone is a food supplement available over the counter.",
+      "claim_type": "EXPLICIT",
+      "source": "Ubiquinone is a food supplement available over the counter, which is often recommended to patients prone to muscular pain and receiving a statin treatment (Qu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about ubiquinone availability and use.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "30ddcc53-5dd4-4e5c-bd98-d0fbcd1c5815",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C45",
+      "claim": "Ubiquinone is often recommended to patients prone to muscular pain and receiving a statin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Ubiquinone is a food supplement available over the counter, which is often recommended to patients prone to muscular pain and receiving a statin treatment (Qu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established clinical practice, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "2bb5e606-6b8b-4b42-a5b4-af052622d97a",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C46",
+      "claim": "Risedronate acts on the mevalonate pathway and is commonly used to prevent osteoporosis by blocking the enzyme FPP synthase.",
+      "claim_type": "EXPLICIT",
+      "source": "Risedronate, which also acts on this pathway, and is commonly used to prevent osteoporosis, by blocking the enzyme FPP synthase, is also identified by both cohorts",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established pharmacological knowledge, also illustrated in Figure 2.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "a8179b30-c476-4502-8fba-49147bf8451f",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C47",
+      "claim": "In cohort 2, risedronate was ranked 4th by significance with OR=0.567, 95% CI [0.400 to 0.789].",
+      "claim_type": "EXPLICIT",
+      "source": "Risedronate, which also acts on this pathway, and is commonly used to prevent osteoporosis, by blocking the enzyme FPP synthase, is also identified by both cohorts, and is ranked 4th by significance in cohort 2 (OR=0.567; CI 0.400 to 0.789)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the case-control analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "df2251d4-75ac-4125-8fbc-f60801cc2380",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C48",
+      "claim": "In cohort 1, risedronate was ranked 13th by significance with OR=0.705, 95% CI [0.522 to 0.935].",
+      "claim_type": "EXPLICIT",
+      "source": "Risedronate, which also acts on this pathway, and is commonly used to prevent osteoporosis, by blocking the enzyme FPP synthase, is also identified by both cohorts, and is ranked 4th by significance in cohort 2 (OR=0.567; CI 0.400 to 0.789), and 13th in cohort 1 (OR=0.705; CI 0.522 to 0.935).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the case-control analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "b29be915-e746-429e-98dc-a0db27804194",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C49",
+      "claim": "The pneumococcal conjugate vaccine was identified by both cohorts with OR=0.476, 95% CI [0.288 to 0.746] in cohort 1 and OR=0.419, 95% CI [0.245 to 0.685] in cohort 2.",
+      "claim_type": "EXPLICIT",
+      "source": "Other medications that fulfilled the stringent criteria of being identified by both cohorts with an FDR of 80% include the pneumococcal conjugate vaccine (OR=0.476, CI 0.288 to 0.746 in cohort 1; 0.602, CI 0.245 to 0.685 in cohort 2)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the case-control analysis in both cohorts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "6faa1b74-5a9b-43a1-ade6-989425ce4709",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C50",
+      "claim": "Magnesium citrate was identified by both cohorts with OR=0.652, 95% CI [0.433 to 0.952] in cohort 1 and OR=0.609, 95% CI [0.399 to 0.908] in cohort 2.",
+      "claim_type": "EXPLICIT",
+      "source": "Other medications that fulfilled the stringent criteria of being identified by both cohorts with an FDR of 80% include the pneumococcal conjugate vaccine (OR=0.476, CI 0.288 to 0.746 in cohort 1; 0.602, CI 0.245 to 0.685 in cohort 2), magnesium citrate (OR=0.652, CI 0.433 to 0.952 in cohort 1; 0.609, CI 0.399 to 0.908 in cohort 2)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the case-control analysis in both cohorts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "4bb8ed02-38fa-4b4b-aedf-f1a055347ec9",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C51",
+      "claim": "Vitamin D was identified by both cohorts with OR=0.898, 95% CI [0.821 to 0.980] in cohort 1 and OR=0.869, 95% CI [0.792 to 0.954] in cohort 2.",
+      "claim_type": "EXPLICIT",
+      "source": "vitamin D (OR=0.898, CI 0.821 to 0.980 in cohort 1; 0.869, CI 0.792 to 0.954 in cohort 2)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the case-control analysis in both cohorts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "2f04857b-7fc9-4c16-b127-585e2485ec5c",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C52",
+      "claim": "Flecainide was identified by both cohorts with OR=0.301, 95% CI [0.118 to 0.641] in cohort 1 and OR=0.325, 95% CI [0.123 to 0.729] in cohort 2.",
+      "claim_type": "EXPLICIT",
+      "source": "flecainide (OR=0.301, CI 0.118 to 0.641 in cohort 1; 0.325, CI 0.123 to 0.729 in cohort 2)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the case-control analysis in both cohorts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "85d86323-9c58-4fcc-98fa-3c7459854b3b",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C53",
+      "claim": "Escitalopram was identified by both cohorts with OR=0.824, 95% CI [0.708 to 0.955] in cohort 1 and OR=0.766, 95% CI [0.654 to 0.894] in cohort 2.",
+      "claim_type": "EXPLICIT",
+      "source": "escitalopram (OR=0.824, CI 0.708 to 0.955 in cohort 1; 0.766, CI 0.654 to 0.894 in cohort 2)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the case-control analysis in both cohorts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "9e42b78f-d726-46d5-9f28-4312d39f2ef5",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C54",
+      "claim": "Cilazapril was identified by both cohorts with OR=0.554, 95% CI [0.315 to 0.918] in cohort 1 and OR=0.468, 95% CI [0.247 to 0.831] in cohort 2.",
+      "claim_type": "EXPLICIT",
+      "source": "cilazapril (OR=0.554, CI 0.315 to 0.918 in cohort 1; 0.468, CI 0.247 to 0.831 in cohort 2)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the case-control analysis in both cohorts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "83633c58-be07-4f0b-b7cc-3c18ac235d6f",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C55",
+      "claim": "Ramipril combined with hydrochlorothiazide was identified by both cohorts with OR=0.734, 95% CI [0.603 to 0.887] in cohort 1 and OR=0.702, 95% CI [0.565 to 0.869] in cohort 2.",
+      "claim_type": "EXPLICIT",
+      "source": "ramipril combined with hydrochlorothiazide (OR=0.734, CI 0.603 to 0.887 in cohort 1; 0.702, CI 0.565 to 0.869 in cohort 2)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the case-control analysis in both cohorts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "ac9796cc-6e64-4055-96c3-064be21f09b2",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C56",
+      "claim": "Sitagliptin combined with metformin was identified by both cohorts with OR=0.802, 95% CI [0.696 to 0.922] in cohort 1 and OR=0.826, 95% CI [0.704 to 0.967] in cohort 2.",
+      "claim_type": "EXPLICIT",
+      "source": "sitagliptin combined with metformin (OR=0.802, CI 0.696 to 0.922 in cohort 1; 0.826, CI 0.704 to 0.967 in cohort 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the case-control analysis in both cohorts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "0ce60d66-6254-4cca-8acb-697dbc646a51",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C57",
+      "claim": "In cohort 1, sitagliptin alone was significant with OR=0.658, 95% CI [0.443 to 0.950].",
+      "claim_type": "EXPLICIT",
+      "source": "Sitagliptin alone is also significant in cohort 1 (OR=0.658, CI 0.443 to 0.950).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the case-control analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "a5497a72-02b7-4489-9772-37ef668c6317",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C58",
+      "claim": "In cohort 2, vitamin B12 combinations were associated with decreased hospitalization with OR=0.618, 95% CI [0.399 to 0.934].",
+      "claim_type": "EXPLICIT",
+      "source": "several vitamin or mineral supplementation items appear to have a protective effect, in addition to vitamin D and magnesium citrate, which were identified by both cohorts: vitamin B12 combinations (OR=0.618, CI 0.399 to 0.934)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the case-control analysis in cohort 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "503a8047-1763-4f31-96d0-8d324b57add2",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C59",
+      "claim": "In cohort 2, multivitamins for ocular use were associated with decreased hospitalization with OR=0.616, 95% CI [0.376 to 0.976].",
+      "claim_type": "EXPLICIT",
+      "source": "several vitamin or mineral supplementation items appear to have a protective effect, in addition to vitamin D and magnesium citrate, which were identified by both cohorts: vitamin B12 combinations (OR=0.618, CI 0.399 to 0.934), multivitamins for ocular use (OR=0.616, CI 0.376 to 0.976)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the case-control analysis in cohort 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "677e7015-1a6f-440b-a563-e9d3a8505803",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C60",
+      "claim": "In cohort 2, calcium-zinc combinations were associated with decreased hospitalization with OR=0.000, 95% CI [0.000 to 0.892].",
+      "claim_type": "EXPLICIT",
+      "source": "several vitamin or mineral supplementation items appear to have a protective effect, in addition to vitamin D and magnesium citrate, which were identified by both cohorts: vitamin B12 combinations (OR=0.618, CI 0.399 to 0.934), multivitamins for ocular use (OR=0.616, CI 0.376 to 0.976), and calcium-zinc combinations (OR=0.000, CI 0.000 to 0.892).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the case-control analysis in cohort 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "09f27b4f-ef93-4fbd-b26e-ca397979dab1",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C61",
+      "claim": "In cohort 2, artificial tears (hydroxypropyl-methylcellulose-based) were associated with decreased hospitalization with OR=0.657, 95% CI [0.490 to 0.871].",
+      "claim_type": "EXPLICIT",
+      "source": "Several ophthalmic items also appear to be associated with significantly decreased odds for hospitalization, including artificial tears, hydroxypropyl-methylcellulose-based (OR=0.657, CI 0.490 to 0.871)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the case-control analysis in cohort 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "19492c2f-5018-47c5-9d6a-f082ed1091dd",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C62",
+      "claim": "In cohort 2, artificial tears (hyaluronic acid based) were associated with decreased hospitalization with OR=0.322, 95% CI [0.098 to 0.836].",
+      "claim_type": "EXPLICIT",
+      "source": "Several ophthalmic items also appear to be associated with significantly decreased odds for hospitalization, including artificial tears, hydroxypropyl-methylcellulose-based (OR=0.657, CI 0.490 to 0.871), or hyaluronic acid based (OR=0.322, CI 0.098 to 0.836)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the case-control analysis in cohort 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "facdac0a-0e2c-4e40-a775-c2882b98e10f",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C63",
+      "claim": "In cohort 2, eye care wipes were associated with decreased hospitalization with OR=0.285, 95% CI [0.054 to 0.956].",
+      "claim_type": "EXPLICIT",
+      "source": "decreased OR are also found for items that may act as a physical barrier to the eye: eye care wipes, which are sterile wipes sold to clean the eyes (OR=0.285, CI 0.054 to 0.956)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the case-control analysis in cohort 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "18017050-4752-43ff-b1cc-b8d3c1fd1cc6",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C64",
+      "claim": "In cohort 2, a retinol-based ointment used to treat cornea abrasion was associated with decreased hospitalization with OR=0.285, 95% CI [0.054 to 0.956].",
+      "claim_type": "EXPLICIT",
+      "source": "decreased OR are also found for items that may act as a physical barrier to the eye: eye care wipes, which are sterile wipes sold to clean the eyes (OR=0.285, CI 0.054 to 0.956), a retinol-based ointment used to treat cornea abrasion (OR=0.285, CI 0.054 to 0.956)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the case-control analysis in cohort 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "6502aaa8-fb8f-4fba-85d4-06f2ff6e5802",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C65",
+      "claim": "In cohort 2, timolol drops used to treat glaucoma were associated with decreased hospitalization with OR=0.570, 95% CI [0.328 to 0.949].",
+      "claim_type": "EXPLICIT",
+      "source": "decreased OR are also found for items that may act as a physical barrier to the eye: eye care wipes, which are sterile wipes sold to clean the eyes (OR=0.285, CI 0.054 to 0.956), a retinol-based ointment used to treat cornea abrasion (OR=0.285, CI 0.054 to 0.956), and timolol drops used to treat glaucoma (OR=0.570, CI 0.328 to 0.949).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the case-control analysis in cohort 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "a0101a18-9152-4010-b929-e18c88cfa81f",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C66",
+      "claim": "In cohort 1, candesartan was associated with decreased hospitalization with OR=0.718, 95% CI [0.544 to 0.934].",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to cilazapril and ramipril-hydrochlorothiazide that were highly ranked in both cohorts, cohort 1 identifies candesartan (OR=0.718, CI 0.544 to 0.934)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the case-control analysis in cohort 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "fa0df8d1-d357-449d-ac61-faf9186c7e19",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C67",
+      "claim": "In cohort 2, valsartan with amlodipine was associated with decreased hospitalization with OR=0.821, 95% CI [0.698 to 0.963].",
+      "claim_type": "EXPLICIT",
+      "source": "cohort 2 identifies valsartan with amlodipine (OR=0.821, CI 0.698 to 0.963)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the case-control analysis in cohort 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "d49c652b-21fe-451e-a940-ca9c00d566e9",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C68",
+      "claim": "In cohort 2, losartan with hydrochlorothiazide was associated with decreased hospitalization with OR=0.783, 95% CI [0.630 to 0.969].",
+      "claim_type": "EXPLICIT",
+      "source": "cohort 2 identifies valsartan with amlodipine (OR=0.821, CI 0.698 to 0.963), and losartan with hydrochlorothiazide (OR=0.783, CI 0.630 to 0.969).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the case-control analysis in cohort 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "c46582a7-064e-4a64-b90d-61ccc3fea2da",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C69",
+      "claim": "In cohort 2, rizatriptan was associated with decreased hospitalization with OR=0.118, 95% CI [0.003 to 0.750].",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, several drugs acting on receptors to neurotransmitters also appear to decrease hospitalization risk: rizatriptan (OR=0.118, CI 0.003 to 0.750)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the case-control analysis in cohort 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "eb1c958b-81fc-4236-907a-e2d59c456830",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C70",
+      "claim": "In cohort 2, bupropion was associated with decreased hospitalization with OR=0.399, 95% CI [0.136 to 0.976].",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, several drugs acting on receptors to neurotransmitters also appear to decrease hospitalization risk: rizatriptan (OR=0.118, CI 0.003 to 0.750), bupropion (OR=0.399, CI 0.136 to 0.976)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the case-control analysis in cohort 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "f39c2e7e-75d0-449c-978c-0d783d5b9e1b",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C71",
+      "claim": "In cohort 2, methylphenidate was associated with decreased hospitalization with OR=0.444, 95% CI [0.178 to 0.972].",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, several drugs acting on receptors to neurotransmitters also appear to decrease hospitalization risk: rizatriptan (OR=0.118, CI 0.003 to 0.750), bupropion (OR=0.399, CI 0.136 to 0.976), and methylphenidate (OR=0.444, CI 0.178 to 0.972).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the case-control analysis in cohort 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "65b1aa45-fc72-4bcf-ad4e-a11c8de91e51",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C72",
+      "claim": "Ultra-Orthodox Jews and Arabs have been reported to be at higher risk for COVID-19 in the Israeli population.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Israeli population, the two groups that have been reported to be at higher risk are Ultra-Orthodox Jews and Arabs (Muhsen et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from prior research, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "c421fe79-dcaa-4e8a-8576-93e2c4be1096",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C73",
+      "claim": "Ultra-Orthodox or Arab identity appear to be each associated with increased risk for COVID-19 hospitalization.",
+      "claim_type": "EXPLICIT",
+      "source": "Either Ultra-Orthodox or Arab identity indeed appear to be each associated with increased risk for hospitalization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the multivariate conditional logistic regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "44df8a52-2aad-4f06-8dc2-3843b5d2a1d2",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C74",
+      "claim": "After adjusting for subgroup membership (Ultra-Orthodox or Arab), most of the medications identified by individual Fisher's exact tests maintain statistically significant protective effect.",
+      "claim_type": "EXPLICIT",
+      "source": "However, even after adjusting for the subgroup membership, most of the medications identified by individual Fisher's exact tests maintain statistically significant protective effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the multivariate conditional logistic regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "ecb3d6ac-117d-4946-838b-7ee621210adf",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C75",
+      "claim": "The protective effects of medications were seen in most or all BMI ranges.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, the protective effects were seen in most or all BMI ranges and we did not see any striking association between a protective medication and high BMI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the BMI subgroup analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "7ac109f1-4b62-46c3-8ba8-dea279523a49",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C76",
+      "claim": "There was no striking association between a protective medication and high BMI.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, the protective effects were seen in most or all BMI ranges and we did not see any striking association between a protective medication and high BMI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the BMI subgroup analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "5540c03a-1f7a-4980-af6c-f8e043842dbd",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C77",
+      "claim": "RNA viruses need cholesterol to enter cells, for virion assembly, and to maintain structural stability.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings are in line with previous reports that RNA viruses need cholesterol to enter cells, for virion assembly, and to maintain structural stability (Aizaki et al., 2008; Bajimaya et al., 2017; Rossman et al., 2010; Sun and Whittaker, 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from prior research, supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "09e01b4f-1942-4ff9-840c-d372e05144c9",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C78",
+      "claim": "Prescribing statins may protect against infection with RNA viruses such as members of family Flaviviridae, including dengue virus, Zika virus, and West Nile virus.",
+      "claim_type": "EXPLICIT",
+      "source": "and that prescribing statins may protect against infection with RNA viruses such as members of family Flaviviridae, including dengue virus, Zika virus, and West Nile virus (Gower and Graham, 2001; Osuna-Ramos et al., 2018; Whitehorn et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from prior research, supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "712dd5c9-bcdb-41dc-b93f-bd7a86297f25",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C79",
+      "claim": "Risedronic acid acts on the enzyme farnesyl pyrophosphate synthase.",
+      "claim_type": "EXPLICIT",
+      "source": "The involvement of the cholesterol/ubiquinone pathway is further confirmed by the fact that risedronic acid, a drug acting on the enzyme farnesyl pyrophoshate synthase (Tsoumpra et al., 2015; Figure 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established pharmacological knowledge, supported by citation and illustrated in Figure 2.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "cdb1eddb-8206-470b-b604-3a18f7828ef3",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C80",
+      "claim": "Farnesyl pyrophosphate synthase catalyzes the production of FPP from which the cholesterol and the ubiquinone synthesis pathways split.",
+      "claim_type": "EXPLICIT",
+      "source": "which catalyzes the production of FPP from which the cholesterol and the ubiquinone synthesis pathways split (Buhaescu and Izzedine, 2007)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established biochemical knowledge, supported by citation and illustrated in Figure 2.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "7f520662-2461-40e4-9a53-a0cd4d6ad937",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C81",
+      "claim": "SARS-CoV-2 may hijack the cholesterol synthesis pathway, possibly to boost production of the cellular cholesterol it needs as an RNA virus.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our findings lend (albeit indirect) support to the possibility that SARS-CoV-2 hijacks the cholesterol synthesis pathway, possibly to boost production of the cellular cholesterol it needs as an RNA virus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the study findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "78285a56-cbea-4d17-b4ea-2b22728ecece",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C82",
+      "claim": "SARS-CoV-2 may tilt the mevalonate pathway toward cholesterol synthesis and away from ubiquinone synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that ubiquinone protects against severe disease suggests that SARS-CoV-2 may tilt the mevalonate pathway toward cholesterol synthesis and away from ubiquinone synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the study findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "016e4385-622c-4f66-8fc8-5d9f6eeaaec8",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C83",
+      "claim": "A pathway imbalance tilting toward cholesterol and away from ubiquinone would ultimately result in deficiency of ubiquinone that could lead to cell death unless counteracted by ubiquinone supplementation.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a pathway imbalance would ultimately result in deficiency of ubiquinone that could lead to cell death unless counteracted by ubiquinone supplementation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the study findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "aa59b92d-d706-4a34-8644-21c030268725",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C84",
+      "claim": "The protective effect of anti-cholesterol drugs was observed mostly for rosuvastatin and in cohort 1 for pravastatin, but not for other statins.",
+      "claim_type": "EXPLICIT",
+      "source": "It is remarkable that the protective effect of anti-cholesterol drugs was observed mostly for rosuvastatin \u2013 and in cohort 1 for pravastatin \u2013 but not for other statins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the study findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "1d212aeb-7a39-4a7e-866f-a2c10d28a486",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C85",
+      "claim": "Rosuvastatin was found to significantly increase 25-OH vitamin D levels in the blood.",
+      "claim_type": "EXPLICIT",
+      "source": "Rosuvastatin was found to significantly increase 25-OH vitamin D levels in the blood (Yavuz et al., 2009), much more than what could be observed with other statins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from prior research, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "7df656a9-aca3-4564-a79d-a91c7f9577f2",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C86",
+      "claim": "Rosuvastatin increases 25-OH vitamin D levels much more than what could be observed with other statins.",
+      "claim_type": "EXPLICIT",
+      "source": "Rosuvastatin was found to significantly increase 25-OH vitamin D levels in the blood (Yavuz et al., 2009), much more than what could be observed with other statins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from prior research, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "ec37a205-67df-45c6-87bb-92a4b25d0465",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C87",
+      "claim": "The increase in 25-OH vitamin D observed following rosuvastatin treatment could be mediated by the Niemann-Pick C1 like 1 (NPC1L1) membrane transporter that is involved in intestinal absorption of vitamin D.",
+      "claim_type": "EXPLICIT",
+      "source": "Yavuz and Ertugrul, 2012 suggested that the increase in 25-OH vitamin D observed following rosuvastatin treatment could be mediated by the Niemann-Pick C1 like 1 (NPC1L1) membrane transporter that is involved in intestinal absorption of vitamin D.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis from prior research, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "bcaf2802-8c98-4821-b6db-bf08fb77b859",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C88",
+      "claim": "The NPC1L1 membrane transporter is the target of ezetimibe.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the NPC1L1 membrane transporter is also the target of ezetimibe, identified by our study to decrease significantly the hospitalization risk of COVID-19 patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established pharmacological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "9cdad2b5-18e3-4be4-a83b-6162b3cd0ed1",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C89",
+      "claim": "Vitamin D deficiency has been shown to be associated with increased risk for COVID-19 in multiple studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Vitamin D deficiency has been shown to be associated with increased risk for COVID-19 in multiple studies (Israel et al., 2020; Merzon et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from prior research, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "3d3e851f-3172-49d0-b9e5-54b865b7c4df",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C90",
+      "claim": "Magnesium is needed for vitamin D activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Magnesium is needed for vitamin D activation (Uwitonze and Razzaque, 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established biochemical knowledge, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "f29f0c6a-498c-4dd9-aa1f-acabd4e6710b",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C91",
+      "claim": "Magnesium levels in drinking water in Israel are low, as water is produced in great part through desalination of sea water.",
+      "claim_type": "EXPLICIT",
+      "source": "and its levels in drinking water in Israel are low, as water is produced in great part through desalination of sea water (Koren et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about water supply in Israel, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "7627751d-6a85-4b89-9d6f-7b2fb3bb9d35",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C92",
+      "claim": "Flecainide is an antiarrhythmic drug that blocks sodium channels in the heart and inhibits ryanodine receptor 2.",
+      "claim_type": "EXPLICIT",
+      "source": "Another medication that was associated with decreased odds for hospitalization is flecainide, an antiarrhythmic drug that blocks sodium channels in the heart, and inhibits ryanodine receptor 2, a major regulator of sarcoplasmic release of stored calcium ions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established pharmacological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "7858237e-3575-4f7e-8084-b931d220a916",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C93",
+      "claim": "Ryanodine receptor 2 is a major regulator of sarcoplasmic release of stored calcium ions.",
+      "claim_type": "EXPLICIT",
+      "source": "an antiarrhythmic drug that blocks sodium channels in the heart, and inhibits ryanodine receptor 2, a major regulator of sarcoplasmic release of stored calcium ions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established biochemical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "50232f97-03a1-45d9-ba55-f80a5396b9e7",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C94",
+      "claim": "Flecainide may prevent apoptosis by release of calcium from the endoplasmic reticulum once the cell mitochondria cease to function.",
+      "claim_type": "EXPLICIT",
+      "source": "It may prevent apoptosis by release of calcium from the endoplasmic reticulum (ER) once the cell mitochondria cease to function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative mechanism of action.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "99ba3037-fae0-4ba1-99b7-07c825b1603f",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C95",
+      "claim": "An expert review recommended that patients with arrhythmia who get COVID-19 should continue flecainide treatment if already prescribed.",
+      "claim_type": "EXPLICIT",
+      "source": "An expert review recommended that patients with arrhythmia who get COVID-19 should continue flecainide treatment if already prescribed (Ci et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a clinical recommendation from prior literature, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "02ef0937-cec1-41a0-b9f4-b995894f5376",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C96",
+      "claim": "The protective effect of flecainide observed in both cohorts is even more marked for severe patients.",
+      "claim_type": "EXPLICIT",
+      "source": "In our study, the protective effect observed in both cohorts is even more marked for severe patients",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the study findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "ea3e7f2c-e19a-40c2-9452-5fab1e8c3f49",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C97",
+      "claim": "Flecainide can be given intravenously.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that this drug, which can be given intravenously (Antonelli et al., 2006), could be administered to patients in respiratory distress, if the protective effect is confirmed in clinical trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established clinical knowledge, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "3fc4387f-2540-484e-b3d0-930f0d83b683",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C98",
+      "claim": "ACE and ARB treated patients have been shown to not have an increased risk for COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with ACE and ARBs treated patients shown to not have an increased risk for COVID-19 (Morales et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from prior research, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "42d8d8e0-8f9a-412c-917d-beb247988fb6",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C99",
+      "claim": "There is no reason to discontinue ACE inhibitors or ARBs to decrease COVID-19 risk.",
+      "claim_type": "EXPLICIT",
+      "source": "and there is therefore no reason to discontinue these medications to decrease COVID-19 risk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a clinical inference based on the study findings and prior research.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "c17a2cd2-8722-4dc6-afcd-c2589b79fda2",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C100",
+      "claim": "Recent EHR-based findings show a favorable association between metformin use and COVID-19 outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings also confirm and substantially extend recent EHR-based findings about the favorable association between metformin use and COVID-19 outcomes (Bramante et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from prior research, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "611462bb-c918-4619-8219-ba7b755358a8",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C101",
+      "claim": "SARS-CoV-2 invades neuronal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with SARS-CoV-2 invading neuronal cells (Iroegbu et al., 2020; Meinhardt et al., 2021; Song et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from prior research, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "e0a9b23c-e7a9-4b43-9e2b-33ce56f08f00",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C102",
+      "claim": "SARS-CoV-2 may spread throughout the nervous system across synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "as manifest by symptoms of loss of smell and taste, where it may spread throughout the nervous system across synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative mechanism based on clinical observations and prior research.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "b676b471-742c-4ca9-ade5-9f559bb9f556",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C103",
+      "claim": "Decreased neurotransmitter internalization may reduce the infectious potential of SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Decreased neurotransmitter internalization may therefore reduce the infectious potential of the virus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative mechanism to explain the protective effect of neurotransmitter-acting drugs.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "446a808c-0134-4d0b-b209-0939d2b558eb",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C104",
+      "claim": "Items that could improve the physical barrier of the eye surface were among the top items decreasing odds of hospitalization.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, items that could improve the physical barrier of the eye surface were among the top items decreasing odds of hospitalization, including eye wipes, artificial tears, and eye ointments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the study findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "49a51faf-0669-49a9-8ccd-9bea601b77ff",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C105",
+      "claim": "The protective effect for ophthalmologic barrier items was observed foremost among patients from cohort 2 in which controls are already SARS-CoV-2 positive.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the protective effect for these items was observed foremost among patients from cohort 2 in which controls are already SARS-CoV-2 positive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the study findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "954d3800-d654-4e35-b946-0b0de91ae4c5",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C106",
+      "claim": "Ophthalmologic barrier items could not only protect against the initial risk of infection, but also reduce disease severity in patients already infected.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that these barrier items could not only protect against the initial risk of infection, but, notably, also reduce disease severity in patients already infected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the cohort 2 findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "c54fd07b-9b30-4146-ade6-e2af76d8ee69",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C107",
+      "claim": "Autoinoculation of SARS-CoV-2 to the eyes may have a role in the virulence of SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "The beneficial effect observed here for many different ophthalmologic preparations raises the possibility that autoinoculation of the virus to the eyes, prevented by these items, has a role in the virulence of SARS-CoV-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the study findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "177a3c38-27d9-4589-8d96-8dacda4e4e27",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C108",
+      "claim": "Eyeglass wearers were shown previously to be at decreased risk for COVID-19 hospitalization.",
+      "claim_type": "EXPLICIT",
+      "source": "The possibility that invasion of the central nervous system by the virus through the eyes could increase the risk of COVID-19 complications is also supported by the fact that eyeglass wearers were shown previously to be at decreased risk for COVID-19 hospitalization (Zeng et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from prior research, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "9cc77068-ebaa-40aa-8727-7bc26a6ef214",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C109",
+      "claim": "Invasion of the central nervous system by SARS-CoV-2 through the eyes could increase the risk of COVID-19 complications.",
+      "claim_type": "EXPLICIT",
+      "source": "The possibility that invasion of the central nervous system by the virus through the eyes could increase the risk of COVID-19 complications is also supported by the fact that eyeglass wearers were shown previously to be at decreased risk for COVID-19 hospitalization (Zeng et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation supported by prior research.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "08096ff1-efc3-4249-ba73-cb9432d25bd2",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C110",
+      "claim": "The study shows apparently protective effects for rosuvastatin, ezetimibe, ubiquinone, risedronate, vitamin D, and magnesium.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, this study shows apparently protective effects for several medications and dietary supplements, such as rosuvastatin, ezetimibe, ubiquinone, risedronate, vitamin D, and magnesium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the study findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "6024ec9c-a063-4912-9a28-8a8d57c205dc",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C111",
+      "claim": "The observed protective effects of rosuvastatin, ezetimibe, ubiquinone, risedronate, vitamin D, and magnesium provide important evidence supporting their safe continuation for COVID-19 patients.",
+      "claim_type": "EXPLICIT",
+      "source": "In the meantime, we believe that the observed protective effects of these drugs provide important evidence supporting their safe continuation for COVID-19 patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a clinical recommendation based on the study findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "55d9be52-45d2-4f67-81ab-cbcb40abbe22",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C112",
+      "claim": "Clalit Health Services is the largest healthcare provider in Israel, insuring over 4.7 million members.",
+      "claim_type": "EXPLICIT",
+      "source": "Toward this objective, we conducted a large population study in Clalit Health Services (CHS), the largest healthcare provider in Israel, insuring over 4.7 million members.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is factual information about the healthcare system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "5ec1acc4-24f5-4d69-9117-2cf6b26b47b4",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C113",
+      "claim": "The study was approved by the CHS Institutional Review Board with a waiver of informed consent, approval number: COM-0046\u201320.",
+      "claim_type": "EXPLICIT",
+      "source": "This study has been approved by the CHS Institutional Review Board (IRB) with a waiver of informed consent, approval number: COM-0046\u201320.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is information about the ethical approval of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "403fc602-ce23-4c6c-a1af-5958987cac53",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C114",
+      "claim": "Patient data that could identify participants were removed prior to the statistical analyses in accordance with the protocol approved by the CHS IRB.",
+      "claim_type": "EXPLICIT",
+      "source": "Patient data that could identify participants were removed prior to the statistical analyses in accordance with the protocol approved by the CHS IRB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data privacy procedures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "c6a3a63d-b3e1-429c-a690-ba3150b02b32",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "claim_id": "C115",
+      "claim": "The funder of the study had no role in study design, data collection, data analysis, data interpretation, or writing of the report.",
+      "claim_type": "EXPLICIT",
+      "source": "The funder of the study had no role in study design, data collection, data analysis, data interpretation, or writing of the report.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the independence of the research.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f02b78bd-60ed-4120-b3ca-35602f460137",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study successfully assembled two matched case-control cohorts from the CHS database: Cohort 1 with 6,530 hospitalized COVID-19 cases matched 5:1 with general population controls, and Cohort 2 with 6,953 hospitalized cases matched 2:1 with SARS-CoV-2 positive non-hospitalized controls. The cohorts were designed to identify medications affecting overall hospitalization risk (Cohort 1) and hospitalization risk in infected patients (Cohort 2).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The study design and cohort assembly are well-documented with clear inclusion/exclusion criteria, matching procedures, and rationale for the dual-cohort approach. The matching variables are appropriate for controlling confounding factors, though ethnicity was not matched and required subsequent adjustment. The sample sizes are substantial and the methodology is transparent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "81f54f81-32ee-453f-b819-e6169bce9bfd",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Three medications acting on the cholesterol/ubiquinone synthesis pathways (rosuvastatin, ezetimibe, and ubiquinone) were the top-ranked protective medications in both cohorts, with highly significant odds ratios. Risedronate, which acts on the same mevalonate pathway by blocking FPP synthase, was also identified as protective in both cohorts. These medications all target the mevalonate pathway at different points.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The statistical associations are strong with tight confidence intervals and highly significant p-values across both cohorts. The biochemical pathway connection is well-established and properly cited. The convergence of findings across two independent cohorts with different control populations strengthens the evidence. However, this is an observational study and causality cannot be definitively established without prospective trials.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "d98c6c00-67ef-4a5f-8878-4ea91df1134c",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Flecainide, an antiarrhythmic drug that blocks sodium channels and inhibits ryanodine receptor 2, was associated with significantly reduced COVID-19 hospitalization risk in both cohorts (OR=0.301 in Cohort 1, OR=0.325 in Cohort 2), with the protective effect being even more marked in severe patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the statistical associations are significant in both cohorts, the sample sizes for flecainide are small (7 cases in Cohort 1, 7 cases in Cohort 2 based on Table 2), leading to wide confidence intervals. The proposed mechanism (C94) is speculative. The observation about enhanced protection in severe patients (C96) lacks supporting statistical data in the manuscript. The finding warrants further investigation but requires validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "218956ee-71bf-476b-99ec-75759a64b5c6",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Vitamin D, magnesium citrate, and pneumococcal conjugate vaccine were identified as protective in both cohorts. Additional vitamin/mineral supplements (vitamin B12 combinations, multivitamins for ocular use, calcium-zinc combinations) showed protective effects in Cohort 2. These findings align with established knowledge about vitamin D deficiency and COVID-19 risk, and the role of magnesium in vitamin D activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The vitamin D and magnesium findings are consistent with prior research and have plausible biological mechanisms. The statistical significance is maintained across both cohorts for these supplements. However, the calcium-zinc result (C60) shows OR=0.000 with CI [0.000 to 0.892], which is problematic - an OR of exactly 0 suggests zero cases acquired this supplement, making the statistical estimate unreliable. This specific finding should be interpreted with extreme caution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "72555745-ede1-45f8-9de6-d57abbe80f7e",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Multiple ophthalmologic products (artificial tears, eye care wipes, eye ointments, timolol drops) were associated with decreased hospitalization risk, particularly in Cohort 2 (SARS-CoV-2 positive patients). The authors propose this suggests that autoinoculation of virus to the eyes may play a role in COVID-19 virulence, supported by prior findings that eyeglass wearers have reduced hospitalization risk.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the statistical associations are significant for several ophthalmologic products in Cohort 2, the sample sizes are very small (e.g., 3 cases for eye care wipes and retinol ointment), leading to extremely wide confidence intervals. The mechanistic interpretation (C106, C107, C109) is highly speculative and represents a substantial inferential leap from the observational data. The finding is intriguing but requires validation in larger samples and mechanistic studies before the proposed explanation can be accepted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "7e7b492f-d911-46ed-bd0e-f91f79a9db9a",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Several ACE inhibitors and ARBs (cilazapril, ramipril-hydrochlorothiazide, candesartan, valsartan-amlodipine, losartan-hydrochlorothiazide) and diabetes medications (sitagliptin-metformin, sitagliptin alone) were associated with reduced hospitalization risk. These findings are consistent with prior research showing ACE/ARB medications do not increase COVID-19 risk and support continuation of these medications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The findings for ACE inhibitors/ARBs and metformin-containing medications are consistent with prior literature and show statistical significance across one or both cohorts. The effect sizes are modest but consistent. The clinical recommendation to continue these medications (C99) is reasonable given the data, though the observational nature limits causal inference.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "625a3a45-3a7d-4113-9364-4bc82972a7e3",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Several drugs acting on neurotransmitter receptors (rizatriptan, bupropion, methylphenidate) were associated with decreased hospitalization risk in Cohort 2. The authors propose this may relate to SARS-CoV-2 neuronal invasion and spread across synapses, with decreased neurotransmitter internalization potentially reducing viral spread.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The statistical associations are significant but based on very small sample sizes (1 case for rizatriptan, 6 for bupropion, 8 for methylphenidate), resulting in extremely wide confidence intervals. The mechanistic explanation (C102, C103) is highly speculative with no direct supporting evidence. While SARS-CoV-2 neuronal invasion is established (C101), the proposed mechanism linking neurotransmitter-acting drugs to reduced viral spread is conjecture requiring experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "a9e206f4-85d4-4742-956d-048230159752",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Statistical analysis using Fisher's exact test with Benjamini-Hochberg correction for multiple testing revealed that only 1.15% of medications in Cohort 1 and 1.75% in Cohort 2 were associated with decreased hospitalization risk, with the overwhelming majority showing neutral or increased risk.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The statistical methodology is appropriate for the case-control design. Fisher's exact test is suitable for the data, and Benjamini-Hochberg correction properly addresses multiple testing. The summary statistics accurately reflect the distribution shown in Figure 1. The low percentage of protective medications is consistent with the expectation that most medications would not have specific effects on COVID-19 outcomes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "a4ca08fa-92a6-4c82-9f46-1de36ff247e7",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Multivariate conditional logistic regression analysis confirmed that Ultra-Orthodox or Arab ethnicity was associated with increased hospitalization risk, but most protective medications maintained statistical significance after adjusting for ethnicity. Subgroup analysis by BMI showed protective effects across most or all BMI ranges without striking associations between protective medications and high BMI.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The additional analyses appropriately address potential confounding by ethnicity and BMI. The multivariate regression approach is sound, and the finding that protective effects persist after adjustment strengthens the medication associations. The BMI subgroup analysis (referenced in Supplementary file 1) addresses an important potential effect modifier. These sensitivity analyses enhance confidence in the primary findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "060daed5-bb33-49c1-a231-0f57e68b1589",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors propose that SARS-CoV-2 may hijack the cholesterol synthesis pathway and tilt the mevalonate pathway toward cholesterol and away from ubiquinone synthesis, potentially leading to ubiquinone deficiency and cell death. They note that rosuvastatin specifically (but not other statins) shows protective effects, which may relate to its unique ability to increase vitamin D levels via the NPC1L1 transporter, which is also the target of ezetimibe.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The mechanistic proposals (C81, C82, C83) are speculative interpretations not directly supported by the observational data. While the cited prior research (C77, C78) establishes that RNA viruses require cholesterol, the specific proposed mechanism for SARS-CoV-2 is conjecture. The observation about rosuvastatin specificity (C84) is interesting and the vitamin D connection (C85-C88) is supported by citations, but this remains correlative. The proposed mechanisms require experimental validation through mechanistic studies measuring pathway metabolites and cellular effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    },
+    {
+      "id": "d6ad028f-953f-4880-86b5-4c74080ee8c1",
+      "content_id": "2ac5afdb-e987-48e4-9fbb-26ad9d2a654e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study concludes that rosuvastatin, ezetimibe, ubiquinone, risedronate, vitamin D, and magnesium show apparently protective effects and recommends their safe continuation for COVID-19 patients, while suggesting further investigation in prospective trials.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The conclusion appropriately summarizes the main findings and correctly qualifies them as 'apparently protective' given the observational nature. The recommendation for safe continuation (C111) is reasonable for medications already prescribed for other indications, given the observed associations. The call for prospective trials is appropriate and acknowledges the limitations of the observational design. However, the conclusion should more strongly emphasize that causality has not been established.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:16:13.500754Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "35466e61-4874-4b7e-a5b9-9c807425391f",
+      "result_id": "f02b78bd-60ed-4120-b3ca-35602f460137"
+    },
+    {
+      "claim_id": "7a123bc6-dc4b-4721-98ad-0282c29e17ee",
+      "result_id": "f02b78bd-60ed-4120-b3ca-35602f460137"
+    },
+    {
+      "claim_id": "d3167415-7ea9-4819-b3aa-afd1c6b81bf2",
+      "result_id": "f02b78bd-60ed-4120-b3ca-35602f460137"
+    },
+    {
+      "claim_id": "fc344152-4c76-4b27-b01f-084b330a7999",
+      "result_id": "f02b78bd-60ed-4120-b3ca-35602f460137"
+    },
+    {
+      "claim_id": "75ff309f-0814-4f09-84ed-4d790c3ee5f5",
+      "result_id": "f02b78bd-60ed-4120-b3ca-35602f460137"
+    },
+    {
+      "claim_id": "d5c44dfe-4b22-4881-b9bf-aab5628ff7f4",
+      "result_id": "f02b78bd-60ed-4120-b3ca-35602f460137"
+    },
+    {
+      "claim_id": "7cceda82-44c6-4bee-be94-c00b5d3ed720",
+      "result_id": "f02b78bd-60ed-4120-b3ca-35602f460137"
+    },
+    {
+      "claim_id": "da697074-f47f-429f-aa69-34d8849eed70",
+      "result_id": "f02b78bd-60ed-4120-b3ca-35602f460137"
+    },
+    {
+      "claim_id": "9ec6f53c-9709-4226-a09a-d8d3db9975f4",
+      "result_id": "f02b78bd-60ed-4120-b3ca-35602f460137"
+    },
+    {
+      "claim_id": "76c99354-deb3-417f-98e0-2370f2e44096",
+      "result_id": "f02b78bd-60ed-4120-b3ca-35602f460137"
+    },
+    {
+      "claim_id": "768123e5-0461-4726-a5ea-94005b4768fb",
+      "result_id": "f02b78bd-60ed-4120-b3ca-35602f460137"
+    },
+    {
+      "claim_id": "906c955c-5846-4aac-9f06-0cbbddbf014d",
+      "result_id": "f02b78bd-60ed-4120-b3ca-35602f460137"
+    },
+    {
+      "claim_id": "bfae2b6c-5f94-4632-ba21-760e27020970",
+      "result_id": "f02b78bd-60ed-4120-b3ca-35602f460137"
+    },
+    {
+      "claim_id": "84680041-c53b-4688-9868-61850c3277fa",
+      "result_id": "f02b78bd-60ed-4120-b3ca-35602f460137"
+    },
+    {
+      "claim_id": "8c972c75-610e-4f4a-ab60-ba027cb49839",
+      "result_id": "f02b78bd-60ed-4120-b3ca-35602f460137"
+    },
+    {
+      "claim_id": "b8ad4a7d-ba49-4332-82c2-93ff7be426a1",
+      "result_id": "81f54f81-32ee-453f-b819-e6169bce9bfd"
+    },
+    {
+      "claim_id": "6e25c374-413b-4e76-9c02-b2c4a62dfe1e",
+      "result_id": "81f54f81-32ee-453f-b819-e6169bce9bfd"
+    },
+    {
+      "claim_id": "a84848f8-f8a9-461f-a079-be5deb1235fd",
+      "result_id": "81f54f81-32ee-453f-b819-e6169bce9bfd"
+    },
+    {
+      "claim_id": "bef6fa25-e93f-4860-b33a-89ef012004a4",
+      "result_id": "81f54f81-32ee-453f-b819-e6169bce9bfd"
+    },
+    {
+      "claim_id": "c6c27196-bfaf-4563-bac2-3d297f54714a",
+      "result_id": "81f54f81-32ee-453f-b819-e6169bce9bfd"
+    },
+    {
+      "claim_id": "63755a53-0209-4458-aba9-a4a3d4219381",
+      "result_id": "81f54f81-32ee-453f-b819-e6169bce9bfd"
+    },
+    {
+      "claim_id": "bfd55629-b284-45fa-901a-865114b26ed2",
+      "result_id": "81f54f81-32ee-453f-b819-e6169bce9bfd"
+    },
+    {
+      "claim_id": "19caf6b2-67b7-4175-86d7-edee7c603149",
+      "result_id": "81f54f81-32ee-453f-b819-e6169bce9bfd"
+    },
+    {
+      "claim_id": "aa059fda-e81e-46bc-9eff-cb36cad0ef04",
+      "result_id": "81f54f81-32ee-453f-b819-e6169bce9bfd"
+    },
+    {
+      "claim_id": "e6dfa3dc-6705-4dda-8aab-3d5c60d41e74",
+      "result_id": "81f54f81-32ee-453f-b819-e6169bce9bfd"
+    },
+    {
+      "claim_id": "55903a0e-e6dd-43c3-b254-f7aae5ea2d3c",
+      "result_id": "81f54f81-32ee-453f-b819-e6169bce9bfd"
+    },
+    {
+      "claim_id": "25818e88-a01a-4a0a-877c-9da0a1d5ffc0",
+      "result_id": "81f54f81-32ee-453f-b819-e6169bce9bfd"
+    },
+    {
+      "claim_id": "2bb5e606-6b8b-4b42-a5b4-af052622d97a",
+      "result_id": "81f54f81-32ee-453f-b819-e6169bce9bfd"
+    },
+    {
+      "claim_id": "a8179b30-c476-4502-8fba-49147bf8451f",
+      "result_id": "81f54f81-32ee-453f-b819-e6169bce9bfd"
+    },
+    {
+      "claim_id": "df2251d4-75ac-4125-8fbc-f60801cc2380",
+      "result_id": "81f54f81-32ee-453f-b819-e6169bce9bfd"
+    },
+    {
+      "claim_id": "712dd5c9-bcdb-41dc-b93f-bd7a86297f25",
+      "result_id": "81f54f81-32ee-453f-b819-e6169bce9bfd"
+    },
+    {
+      "claim_id": "cdb1eddb-8206-470b-b604-3a18f7828ef3",
+      "result_id": "81f54f81-32ee-453f-b819-e6169bce9bfd"
+    },
+    {
+      "claim_id": "709e64e6-74a8-4899-9a69-e942e95cdaa7",
+      "result_id": "81f54f81-32ee-453f-b819-e6169bce9bfd"
+    },
+    {
+      "claim_id": "146d02dd-b415-46ee-8c06-16a1e5b8b0e8",
+      "result_id": "d98c6c00-67ef-4a5f-8878-4ea91df1134c"
+    },
+    {
+      "claim_id": "2f04857b-7fc9-4c16-b127-585e2485ec5c",
+      "result_id": "d98c6c00-67ef-4a5f-8878-4ea91df1134c"
+    },
+    {
+      "claim_id": "7627751d-6a85-4b89-9d6f-7b2fb3bb9d35",
+      "result_id": "d98c6c00-67ef-4a5f-8878-4ea91df1134c"
+    },
+    {
+      "claim_id": "7858237e-3575-4f7e-8084-b931d220a916",
+      "result_id": "d98c6c00-67ef-4a5f-8878-4ea91df1134c"
+    },
+    {
+      "claim_id": "50232f97-03a1-45d9-ba55-f80a5396b9e7",
+      "result_id": "d98c6c00-67ef-4a5f-8878-4ea91df1134c"
+    },
+    {
+      "claim_id": "99ba3037-fae0-4ba1-99b7-07c825b1603f",
+      "result_id": "d98c6c00-67ef-4a5f-8878-4ea91df1134c"
+    },
+    {
+      "claim_id": "02ef0937-cec1-41a0-b9f4-b995894f5376",
+      "result_id": "d98c6c00-67ef-4a5f-8878-4ea91df1134c"
+    },
+    {
+      "claim_id": "ea3e7f2c-e19a-40c2-9452-5fab1e8c3f49",
+      "result_id": "d98c6c00-67ef-4a5f-8878-4ea91df1134c"
+    },
+    {
+      "claim_id": "51036d0f-f05c-4b2c-b4b7-7560b5828452",
+      "result_id": "218956ee-71bf-476b-99ec-75759a64b5c6"
+    },
+    {
+      "claim_id": "4bb8ed02-38fa-4b4b-aedf-f1a055347ec9",
+      "result_id": "218956ee-71bf-476b-99ec-75759a64b5c6"
+    },
+    {
+      "claim_id": "6faa1b74-5a9b-43a1-ade6-989425ce4709",
+      "result_id": "218956ee-71bf-476b-99ec-75759a64b5c6"
+    },
+    {
+      "claim_id": "b29be915-e746-429e-98dc-a0db27804194",
+      "result_id": "218956ee-71bf-476b-99ec-75759a64b5c6"
+    },
+    {
+      "claim_id": "a5497a72-02b7-4489-9772-37ef668c6317",
+      "result_id": "218956ee-71bf-476b-99ec-75759a64b5c6"
+    },
+    {
+      "claim_id": "503a8047-1763-4f31-96d0-8d324b57add2",
+      "result_id": "218956ee-71bf-476b-99ec-75759a64b5c6"
+    },
+    {
+      "claim_id": "677e7015-1a6f-440b-a563-e9d3a8505803",
+      "result_id": "218956ee-71bf-476b-99ec-75759a64b5c6"
+    },
+    {
+      "claim_id": "9cdad2b5-18e3-4be4-a83b-6162b3cd0ed1",
+      "result_id": "218956ee-71bf-476b-99ec-75759a64b5c6"
+    },
+    {
+      "claim_id": "3d3e851f-3172-49d0-b9e5-54b865b7c4df",
+      "result_id": "218956ee-71bf-476b-99ec-75759a64b5c6"
+    },
+    {
+      "claim_id": "f29f0c6a-498c-4dd9-aa1f-acabd4e6710b",
+      "result_id": "218956ee-71bf-476b-99ec-75759a64b5c6"
+    },
+    {
+      "claim_id": "d31ed5c4-1c81-4991-beb0-8438e573ccd3",
+      "result_id": "72555745-ede1-45f8-9de6-d57abbe80f7e"
+    },
+    {
+      "claim_id": "a1cd9f6b-e266-4e10-b131-2de4a983421c",
+      "result_id": "72555745-ede1-45f8-9de6-d57abbe80f7e"
+    },
+    {
+      "claim_id": "cab5ed33-f405-49f0-a2fd-6600acf76dd3",
+      "result_id": "72555745-ede1-45f8-9de6-d57abbe80f7e"
+    },
+    {
+      "claim_id": "09f27b4f-ef93-4fbd-b26e-ca397979dab1",
+      "result_id": "72555745-ede1-45f8-9de6-d57abbe80f7e"
+    },
+    {
+      "claim_id": "19492c2f-5018-47c5-9d6a-f082ed1091dd",
+      "result_id": "72555745-ede1-45f8-9de6-d57abbe80f7e"
+    },
+    {
+      "claim_id": "facdac0a-0e2c-4e40-a775-c2882b98e10f",
+      "result_id": "72555745-ede1-45f8-9de6-d57abbe80f7e"
+    },
+    {
+      "claim_id": "18017050-4752-43ff-b1cc-b8d3c1fd1cc6",
+      "result_id": "72555745-ede1-45f8-9de6-d57abbe80f7e"
+    },
+    {
+      "claim_id": "6502aaa8-fb8f-4fba-85d4-06f2ff6e5802",
+      "result_id": "72555745-ede1-45f8-9de6-d57abbe80f7e"
+    },
+    {
+      "claim_id": "446a808c-0134-4d0b-b209-0939d2b558eb",
+      "result_id": "72555745-ede1-45f8-9de6-d57abbe80f7e"
+    },
+    {
+      "claim_id": "49a51faf-0669-49a9-8ccd-9bea601b77ff",
+      "result_id": "72555745-ede1-45f8-9de6-d57abbe80f7e"
+    },
+    {
+      "claim_id": "954d3800-d654-4e35-b946-0b0de91ae4c5",
+      "result_id": "72555745-ede1-45f8-9de6-d57abbe80f7e"
+    },
+    {
+      "claim_id": "c54fd07b-9b30-4146-ade6-e2af76d8ee69",
+      "result_id": "72555745-ede1-45f8-9de6-d57abbe80f7e"
+    },
+    {
+      "claim_id": "177a3c38-27d9-4589-8d96-8dacda4e4e27",
+      "result_id": "72555745-ede1-45f8-9de6-d57abbe80f7e"
+    },
+    {
+      "claim_id": "9cc77068-ebaa-40aa-8727-7bc26a6ef214",
+      "result_id": "72555745-ede1-45f8-9de6-d57abbe80f7e"
+    },
+    {
+      "claim_id": "85d86323-9c58-4fcc-98fa-3c7459854b3b",
+      "result_id": "7e7b492f-d911-46ed-bd0e-f91f79a9db9a"
+    },
+    {
+      "claim_id": "9e42b78f-d726-46d5-9f28-4312d39f2ef5",
+      "result_id": "7e7b492f-d911-46ed-bd0e-f91f79a9db9a"
+    },
+    {
+      "claim_id": "83633c58-be07-4f0b-b7cc-3c18ac235d6f",
+      "result_id": "7e7b492f-d911-46ed-bd0e-f91f79a9db9a"
+    },
+    {
+      "claim_id": "ac9796cc-6e64-4055-96c3-064be21f09b2",
+      "result_id": "7e7b492f-d911-46ed-bd0e-f91f79a9db9a"
+    },
+    {
+      "claim_id": "0ce60d66-6254-4cca-8acb-697dbc646a51",
+      "result_id": "7e7b492f-d911-46ed-bd0e-f91f79a9db9a"
+    },
+    {
+      "claim_id": "a0101a18-9152-4010-b929-e18c88cfa81f",
+      "result_id": "7e7b492f-d911-46ed-bd0e-f91f79a9db9a"
+    },
+    {
+      "claim_id": "fa0df8d1-d357-449d-ac61-faf9186c7e19",
+      "result_id": "7e7b492f-d911-46ed-bd0e-f91f79a9db9a"
+    },
+    {
+      "claim_id": "d49c652b-21fe-451e-a940-ca9c00d566e9",
+      "result_id": "7e7b492f-d911-46ed-bd0e-f91f79a9db9a"
+    },
+    {
+      "claim_id": "3fc4387f-2540-484e-b3d0-930f0d83b683",
+      "result_id": "7e7b492f-d911-46ed-bd0e-f91f79a9db9a"
+    },
+    {
+      "claim_id": "42d8d8e0-8f9a-412c-917d-beb247988fb6",
+      "result_id": "7e7b492f-d911-46ed-bd0e-f91f79a9db9a"
+    },
+    {
+      "claim_id": "c17a2cd2-8722-4dc6-afcd-c2589b79fda2",
+      "result_id": "7e7b492f-d911-46ed-bd0e-f91f79a9db9a"
+    },
+    {
+      "claim_id": "c46582a7-064e-4a64-b90d-61ccc3fea2da",
+      "result_id": "625a3a45-3a7d-4113-9364-4bc82972a7e3"
+    },
+    {
+      "claim_id": "eb1c958b-81fc-4236-907a-e2d59c456830",
+      "result_id": "625a3a45-3a7d-4113-9364-4bc82972a7e3"
+    },
+    {
+      "claim_id": "f39c2e7e-75d0-449c-978c-0d783d5b9e1b",
+      "result_id": "625a3a45-3a7d-4113-9364-4bc82972a7e3"
+    },
+    {
+      "claim_id": "611462bb-c918-4619-8219-ba7b755358a8",
+      "result_id": "625a3a45-3a7d-4113-9364-4bc82972a7e3"
+    },
+    {
+      "claim_id": "e0a9b23c-e7a9-4b43-9e2b-33ce56f08f00",
+      "result_id": "625a3a45-3a7d-4113-9364-4bc82972a7e3"
+    },
+    {
+      "claim_id": "b676b471-742c-4ca9-ade5-9f559bb9f556",
+      "result_id": "625a3a45-3a7d-4113-9364-4bc82972a7e3"
+    },
+    {
+      "claim_id": "0b2f96e3-16a4-4d1f-bb99-fe856edca163",
+      "result_id": "a9e206f4-85d4-4742-956d-048230159752"
+    },
+    {
+      "claim_id": "738bf213-566a-4b36-83c3-e3623e18975a",
+      "result_id": "a9e206f4-85d4-4742-956d-048230159752"
+    },
+    {
+      "claim_id": "86e2b664-43db-4d2f-a9f0-929a56fd98fe",
+      "result_id": "a9e206f4-85d4-4742-956d-048230159752"
+    },
+    {
+      "claim_id": "cbc96306-8ced-4a35-855a-aa47b0289227",
+      "result_id": "a9e206f4-85d4-4742-956d-048230159752"
+    },
+    {
+      "claim_id": "d88c0b52-1dea-47c3-b928-8d8e888a90e0",
+      "result_id": "a9e206f4-85d4-4742-956d-048230159752"
+    },
+    {
+      "claim_id": "d4cc7d37-5ff5-4485-a0c9-d72ac004eb4e",
+      "result_id": "a9e206f4-85d4-4742-956d-048230159752"
+    },
+    {
+      "claim_id": "65b1aa45-fc72-4bcf-ad4e-a11c8de91e51",
+      "result_id": "a4ca08fa-92a6-4c82-9f46-1de36ff247e7"
+    },
+    {
+      "claim_id": "c421fe79-dcaa-4e8a-8576-93e2c4be1096",
+      "result_id": "a4ca08fa-92a6-4c82-9f46-1de36ff247e7"
+    },
+    {
+      "claim_id": "44df8a52-2aad-4f06-8dc2-3843b5d2a1d2",
+      "result_id": "a4ca08fa-92a6-4c82-9f46-1de36ff247e7"
+    },
+    {
+      "claim_id": "ecb3d6ac-117d-4946-838b-7ee621210adf",
+      "result_id": "a4ca08fa-92a6-4c82-9f46-1de36ff247e7"
+    },
+    {
+      "claim_id": "7ac109f1-4b62-46c3-8ba8-dea279523a49",
+      "result_id": "a4ca08fa-92a6-4c82-9f46-1de36ff247e7"
+    },
+    {
+      "claim_id": "7f520662-2461-40e4-9a53-a0cd4d6ad937",
+      "result_id": "060daed5-bb33-49c1-a231-0f57e68b1589"
+    },
+    {
+      "claim_id": "78285a56-cbea-4d17-b4ea-2b22728ecece",
+      "result_id": "060daed5-bb33-49c1-a231-0f57e68b1589"
+    },
+    {
+      "claim_id": "016e4385-622c-4f66-8fc8-5d9f6eeaaec8",
+      "result_id": "060daed5-bb33-49c1-a231-0f57e68b1589"
+    },
+    {
+      "claim_id": "5540c03a-1f7a-4980-af6c-f8e043842dbd",
+      "result_id": "060daed5-bb33-49c1-a231-0f57e68b1589"
+    },
+    {
+      "claim_id": "09e01b4f-1942-4ff9-840c-d372e05144c9",
+      "result_id": "060daed5-bb33-49c1-a231-0f57e68b1589"
+    },
+    {
+      "claim_id": "aa59b92d-d706-4a34-8644-21c030268725",
+      "result_id": "060daed5-bb33-49c1-a231-0f57e68b1589"
+    },
+    {
+      "claim_id": "1d212aeb-7a39-4a7e-866f-a2c10d28a486",
+      "result_id": "060daed5-bb33-49c1-a231-0f57e68b1589"
+    },
+    {
+      "claim_id": "7df656a9-aca3-4564-a79d-a91c7f9577f2",
+      "result_id": "060daed5-bb33-49c1-a231-0f57e68b1589"
+    },
+    {
+      "claim_id": "ec37a205-67df-45c6-87bb-92a4b25d0465",
+      "result_id": "060daed5-bb33-49c1-a231-0f57e68b1589"
+    },
+    {
+      "claim_id": "bcaf2802-8c98-4821-b6db-bf08fb77b859",
+      "result_id": "060daed5-bb33-49c1-a231-0f57e68b1589"
+    },
+    {
+      "claim_id": "08096ff1-efc3-4249-ba73-cb9432d25bd2",
+      "result_id": "d6ad028f-953f-4880-86b5-4c74080ee8c1"
+    },
+    {
+      "claim_id": "6024ec9c-a063-4912-9a28-8a8d57c205dc",
+      "result_id": "d6ad028f-953f-4880-86b5-4c74080ee8c1"
+    }
+  ],
+  "comparisons": []
+}

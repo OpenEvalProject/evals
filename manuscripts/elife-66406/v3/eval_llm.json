@@ -1,0 +1,364 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C52"
+    ],
+    "result": "Cas12a array performance is hypersensitive to the GC content of gRNA spacers, particularly at the 3' end near the Cas12a cleavage site. High-GC spacers impair activity of the downstream gRNA, with the GC content of the last 3 nucleotides being more predictive of array performance (R\u00b2=0.52) than overall spacer GC content (R\u00b2=0.45).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C20-C25, and C52 are well-supported by experimental data from 51 CRISPR arrays with varying GC content (Figure 1F-K). The sliding window analysis and predictive power calculations provide quantitative evidence for the importance of 3' end GC content. The percentage of GFP+ cells serves as a sensitive readout, though the study only uses HEK293T cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C53"
+    ],
+    "result": "High GC content promotes RNA secondary structure formation (R\u00b2=0.66), which likely causes poor gRNA performance. Secondary structures can be restricted to a single gRNA or involve two consecutive gRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26 and C53 are supported by RNAfold computational predictions (Figure 1L-M) and experimental validation with designed secondary structures (Figure 3\u2014figure supplement 1A,B). The correlation between predicted structure and performance is stronger when both dummy and GFP-targeting gRNAs are included (R\u00b2=0.57 vs 0.27), supporting the mechanism. However, these are computational predictions rather than direct structural measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C70",
+      "C71"
+    ],
+    "result": "Analysis of 727 naturally occurring Cas12a spacers from 30 bacterial species shows no depletion of high-GC spacers (average 39%, range 10-70%), but the 79 separator sequences analyzed show strong bias for low GC content with little sequence conservation except for a moderately conserved 5' region (GTYTA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C28-C31, C70-C71 are supported by comprehensive bioinformatic analysis of natural CRISPR arrays (Figure 2A-C). The dataset size is substantial (727 spacers, 79 separators from 30 species). The observation that spacers are not GC-depleted while separators are AT-rich is a key finding supporting the separator's functional role. The conserved GTYTA motif is speculative but reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C72"
+    ],
+    "result": "Cas13d separators from 12 bacterial species also show strong bias for low GC content, particularly at the 3' end near the Cas13d cleavage site, suggesting that sensitivity to spacer GC content has shaped evolution of multiple CRISPR-Cas systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 and C72 are supported by analysis of Cas13d separators (Figure 2\u2014figure supplement 1C). The parallel observation in a different CRISPR system strengthens the evolutionary argument. However, the dataset is smaller (12 species) and the evolutionary claim (C34) is inferential rather than directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C37",
+      "C42",
+      "C55"
+    ],
+    "result": "Short (4-nt) AT-rich synthetic separators (synSeparators) successfully remove disruptive effects between gRNAs and improve CRISPR array performance. Multiple synSeparator sequences (AAAT, AAT, AT, T, and sequences from other bacterial species) show this effect, and it is not limited to the L. bacterium sequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C37, C42, and C55 are well-supported by experimental data (Figure 3D, 3I). Multiple synSeparator sequences were tested with dummy spacers of varying GC content (30%, 50%, 70%), showing consistent improvement. The effect is demonstrated across different sequences, supporting generalizability. However, the mechanism is inferred from structure predictions rather than direct measurement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C41"
+    ],
+    "result": "The synSeparator exerts its main effect by facilitating gRNA insulation and processing rather than by adding a 3' extension to the spacer. It acts both by physically insulating gRNAs and by breaking up secondary structures involving consecutive gRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38 and C41 are supported by position-swap experiments (Figure 3E-F) and rescue experiments with designed secondary structures (Figure 3\u2014figure supplement 1B). The comparison of variants 2 vs 3 provides clear evidence for the insulation mechanism. However, a small additional effect from 3' extension cannot be completely ruled out (variant 4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "Addition of AT-rich separators appears to loosen up secondary structures or create an accessible bulge at the Cas12a cleavage site, based on RNAfold predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 is supported by computational RNA structure predictions (Figure 3H) showing structural changes with separator addition. However, this is based on computational modeling rather than experimental structure determination. The predictions are consistent with functional data but represent indirect evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40"
+    ],
+    "result": "CRISPR array performance is sensitive to both secondary structures limited to the dummy spacer and structures that involve the GFP-targeting gRNA's repeat region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 is supported by experiments with rationally designed secondary structures (Figure 3\u2014figure supplement 1A,B). Both types of structures impair performance, and synSeparators rescue both. The experimental design directly tests the hypothesis with appropriate controls.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "Enhanced Cas12a from A. species (denAsCas12a) is also sensitive to spacer GC content, and its performance is improved by a TTTT synSeparator, indicating the effect is not limited to LbCas12a.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 is supported by experimental data (Figure 3J) showing that denAsCas12a exhibits similar GC sensitivity and responds to synSeparators. This demonstrates generalizability across Cas12a variants. However, only one alternative Cas12a variant was tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "No positional effect is observed from changing the spacer's position within a CRISPR array (in the absence of tight secondary structures in specific regions).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 is supported by experiments with 4-gRNA arrays where the GFP-targeting spacer was placed in different positions (Figure 3\u2014figure supplement 1C,D). No difference in GFP activation was observed. However, the authors acknowledge this may not hold when arrays form tight secondary structures, as observed by Liao et al.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C54"
+    ],
+    "result": "In vitro cleavage assays demonstrate that CRISPR arrays are processed by Cas12a both with and without synSeparators, but processing is more efficient with synSeparators. Arrays containing disruptive high-GC gRNAs are processed inefficiently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 and C54 are supported by in vitro Bioanalyzer data (Figure 4B-E) showing time-course processing with quantification. The synSeparator-containing array shows consistently higher processing efficiency at all time points. However, the authors acknowledge that in vitro conditions (16:1 Cas12a:array ratio, extended incubation) may not reflect cellular conditions. The quantification method is clearly described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C56"
+    ],
+    "result": "The synSeparator enables enhanced simultaneous activation of seven endogenous genes in human HEK293T cells, with improvement ranging from 1.1-fold to 8.0-fold across all target genes. The effect is consistent at both mRNA and protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C48-C51, and C56 are supported by RT-qPCR data for seven genes and flow cytometry for GFP (Figure 5B-D). The improvement is consistent across all targets, though variable in magnitude. However, only two biological replicates were performed, cells were not sorted for transfection efficiency, and only HEK293T cells were tested. The authors acknowledge the improvement is smaller than with worst-case dummy spacers, possibly because spacers were pre-selected for functionality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C73"
+    ],
+    "result": "Including the full 16-nt natural separator from L. bacterium almost completely abolished array function, likely because Cas12a cannot fully excise it in mammalian cells and it remains attached to the 3' end of spacers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 and C73 are supported by experimental data (Figure 3B) and citations to previous studies. The observation is consistent with prior work (Liu et al., 2019; Nguyen et al., 2020) showing that long 3' extensions impair gRNA function. The mechanism is well-supported by literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C57",
+      "C67"
+    ],
+    "result": "The CRISPR separator found in natural Cas12a arrays acts as an insulator that reduces interference between adjacent gRNAs by providing an AT-rich sequence that maximizes Cas12a accessibility to its cleavage site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57 and C67 represent the main biological conclusion, integrating evidence from natural sequence analysis (C5, C31), functional experiments (C6, C37, C48), mechanistic studies (C38, C41, C45-C47), and structural predictions (C39). The conclusion is well-supported by converging lines of evidence, though the mechanism involves some inference from computational predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "The insulating effect of AT-rich CRISPR separators may be important enough to have helped shape the evolution of Cas12a CRISPR arrays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C58 is speculative and based on the observation that natural separators are consistently AT-rich across species (C5, C31, C33). While the functional importance is demonstrated, the evolutionary claim requires additional evidence such as phylogenetic analysis, selection pressure measurements, or experimental evolution studies. The claim is plausible but not directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Cas12a can process its own CRISPR array without requiring tracrRNA and RNase III (unlike Cas9), enabling multi-gene control that has been used to edit or regulate multiple genes in human cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8, C60-C62 represent established background knowledge supported by multiple citations to previous studies (Fonfara et al., 2016; Zetsche et al., 2015; Brouns et al., 2008; McCarty et al., 2020; Breinig et al., 2019; Campa et al., 2019; Kleinstiver et al., 2019; Tak et al., 2017; Zetsche et al., 2017). These are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C2",
+      "C9",
+      "C10"
+    ],
+    "result": "CRISPR arrays often exhibit unpredictable performance due to interference between multiple gRNAs, with array processing by Cas12a being uneven such that processed gRNAs may differ 10- to 100-fold in abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C9-C10 represent the problem motivating this study, supported by citations to small-RNA-seq studies (Campa et al., 2019; Liao et al., 2019b) and the experimental work in this manuscript. This is established prior knowledge that frames the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The CRISPR separator (~16-18 nt) gets excised during gRNA processing by Cas12a (3' end) and an unknown enzyme (5' end). It has been omitted in eukaryotic expression systems and was thought to have no known role, yet its evolutionary conservation suggests a biological function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13, C63-C65 represent background knowledge and the study's hypothesis. The processing mechanism is supported by citations (Swarts, 2019; Zetsche et al., 2017). The observation that separators have been omitted is documented (Campa et al., 2019; Kleinstiver et al., 2019; Tak et al., 2017; Zetsche et al., 2017). The evolutionary conservation argument (C65) is inferential but reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "RNA secondary structure is known to impede Cas protein binding and processing in various contexts, including Cas12a, Cas13, and other CRISPR systems. High GC content promotes secondary structure formation due to stronger G-C base pairing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19 represent established background knowledge supported by multiple citations (Liao et al., 2019a,b; Creutzburg et al., 2020; Abudayyeh et al., 2016; Yan et al., 2018; Chan et al., 2009). This provides the mechanistic framework for understanding the study's findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C22"
+    ],
+    "result": "The percentage of GFP+ cells is a more sensitive measure of array performance than median GFP fluorescence in this experimental system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C22 is supported by comparison of the two metrics (Figure 1G vs Figure 1\u2014figure supplement 1A,B). The authors provide a reasonable explanation that even low GFP transcription leads to bright fluorescence. However, this is specific to their experimental system with a weak activator and may not generalize to all conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "Cas13d can process its own gRNA, making it attractive for multi-gene regulation on the RNA level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 is supported by multiple citations (Konermann et al., 2018; Yan et al., 2018; Zhang et al., 2018, 2019). This is established background knowledge used to support the generalizability of findings to other CRISPR systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "The conserved GTYTA region at the 5' end of the separator possibly acts as a recognition motif for the unknown enzyme responsible for 5' cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C66 is speculative, based on the observation of sequence conservation (C30). While the hypothesis is reasonable, no experimental evidence is provided to test whether this motif is functionally important for enzyme recognition. This would require mutagenesis studies or enzyme identification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "A method was developed for assembling CRISPR arrays using oligonucleotide hybridization and ligation, capable of assembling arrays containing up to 30 gRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 is supported by the detailed methods description. The method is a technical achievement enabling the study's experiments. However, no data is shown demonstrating successful assembly of 30-gRNA arrays, and the largest array tested in the study contains 7 gRNAs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "The 51 dummy spacer sequences were adapted from a negative-control sgRNA library generated by Gilbert et al., 2014.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 is a methodological detail supported by citation. The sequences were modified for length (20 nt) and GC content to create the experimental library.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Guide-RNA performance can be increased by adding RNA extensions to the 3' end of the spacer, but Cas12a gRNA performance drops if extensions >13 nt are attached.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 represent prior knowledge supported by citations (Creutzburg et al., 2020; Kocak et al., 2019; Nguyen et al., 2020). This contextualizes why the full 16-nt separator impairs function while short synSeparators improve it.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C59",
+      "C76"
+    ],
+    "result": "Design inspired by the natural CRISPR system can improve efficacy of CRISPR tools. CRISPR-mediated multi-gene activation is increasingly used for stem cell reprogramming and large-scale genetic screening, which this method will enhance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59 and C76 represent the broader implications and applications of the work. C59 is supported by the study's findings. C76 is supported by citations (Replogle et al., 2020; Weltner et al., 2018). However, the claim that this method \"will enhance\" these applications is prospective and not directly demonstrated.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,555 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "Hdac1 and Hdac2 are the major maternally endowed HDACs during early Xenopus development, with Hdac1 showing the highest RNA expression among all HDACs examined and both proteins being present at relatively constant levels from unfertilized egg to mid-gastrula stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 are well-supported by RNA-seq data (C1) and western blot analyses (C2) showing consistent expression patterns. The conclusion that Hdac1/2 are the major maternal HDACs (C3) logically follows from the comparative expression data across HDAC family members.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Hdac1 progressively binds to the zygotic genome during early development, with binding sites increasing from 1,340 regions at mid-blastula (st8) to 22,681 regions at early gastrula (st10.5), showing increased enrichment at promoter regions and coinciding with the timing of zygotic genome activation (ZGA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 provide quantitative ChIP-seq data with IDR analysis showing progressive binding. Claims C7-C8, C15-C17 describe the temporal and spatial patterns of this binding, all supported by ChIP-seq and ChIP-qPCR data. The inference that Hdac1 is involved in epigenetic regulation during ZGA (C18) is reasonable given the timing coincidence, though the causal role requires additional functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9"
+    ],
+    "result": "Genes associated with sustained Hdac1 binding (Cluster c) show higher expression levels during gastrulation compared to genes in other clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C9 is supported by TPM expression analysis comparing gene expression levels across different Hdac1 binding clusters. The correlation between sustained Hdac1 binding and higher gene activity is demonstrated through quantitative expression data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Hdac2 gradually accumulates on the embryonic genome with extensive overlap with Hdac1 binding sites (99% at stage 9 and 97% at stage 10.5), and Hdac1 peaks show significantly higher Hdac2 enrichment compared to Hdac2-only peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 are supported by Hdac2 ChIP-seq data, Venn diagram analyses showing peak overlaps, and violin plot comparisons of signal intensities. The high degree of co-localization is well-documented with quantitative metrics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14"
+    ],
+    "result": "The majority of Hdac1 peaks are located in intergenic or intronic regions, with a minor fraction in exons or transcriptional termination sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C14 is supported by genomic feature annotation analysis of Hdac1 peaks shown in Figure 1E. The distribution across genomic features is clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C95",
+      "C97",
+      "C144"
+    ],
+    "result": "Hdac1 binding at late blastula stage is independent of zygotic transcription and is instead instructed by maternal factors, as demonstrated by \u03b1-amanitin injection experiments showing maintained Hdac1 binding patterns despite transcriptional blockade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 and C95 are supported by ChIP-seq analysis in \u03b1-amanitin-injected embryos showing high correlation with uninjected controls. Claim C97 appropriately references yeast studies for context. The conclusion about maternal instruction (C144) is well-supported by the experimental evidence, though the specific maternal factors require further identification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C98"
+    ],
+    "result": "Maternal transcription factors Foxh1 and Sox3 facilitate Hdac1 recruitment during ZGA, as evidenced by motif enrichment analysis, extensive co-occupancy (>80% overlap), sequential ChIP confirmation, and reduced Hdac1 binding upon Foxh1/Sox3 depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C26 and C98 are well-supported by multiple lines of evidence: de novo motif analysis (C21), peak overlap analysis (C22-C23), sequential ChIP-qPCR (C24), and morpholino depletion experiments (C25). The convergence of these independent approaches strongly supports the proposed role of Foxh1/Sox3 in Hdac1 recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Hdac1 binds to genomic regions with active epigenetic signatures, including co-localization with Ep300 (HAT), presence of histone acetylation marks (H3K9ac, H3K18ac, H3K27ac, pan-H3Kac), and active histone methylation marks (H3K4me1, H3K4me3), while showing minimal H3K36me3 signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32 are supported by comprehensive ChIP-seq analyses of multiple histone modifications and Ep300 binding. The characterization of active epigenetic signatures at Hdac1-bound regions is well-documented with appropriate citations to prior literature for mark interpretations (C30-C31).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Hdac1 binds to facultative but not constitutive heterochromatin regions, showing minimal overlap with constitutive heterochromatin marks (H3K9me2, H3K9me3, H4K20me3) but displaying H3K27me3 signals at a fraction of binding sites, suggesting involvement in developmental gene repression rather than constitutive silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 and C103-C105 are supported by ChIP-seq data for repressive histone marks with appropriate citations for mark interpretations (C34, C36). The distinction between facultative and constitutive heterochromatin is well-established through comparative analysis showing ~90% non-overlapping peaks (C104), supporting the inference about developmental program regulation (C105).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Hdac1-bound regions can be classified into four functionally distinct CRM types based on H3K27 modifications: heterogeneous CRMs (3,548 peaks with both H3K27ac and H3K27me3), repressive CRMs (1,389 peaks with only H3K27me3), active CRMs (13,669 peaks with only H3K27ac), and unmarked CRMs (4,836 peaks with neither modification), with Hdac1 binding correlating with higher transcriptional activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 are supported by peak overlap analysis and expression comparisons. The classification scheme is logical and data-driven. However, the interpretation of heterogeneous CRMs (C38) as reflecting spatial heterogeneity is speculative since whole embryo samples were used, though this is a reasonable hypothesis. The correlation between Hdac1 binding and transcriptional activity (C42-C43) is supported by expression data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "HDAC inhibition by TSA or VPA causes developmental arrest at gastrula stage with presence of dorsal blastopore lip, indicating defective gastrulation progression rather than initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by phenotypic observations of TSA and VPA-treated embryos. The morphological assessment distinguishing between initiation and progression defects (C45) is based on observable features, though more detailed molecular markers could strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "TSA treatment does not affect Hdac1 and Hdac2 protein levels or alter Hdac1 recruitment to the genome, as shown by western blot and high Pearson correlations between TSA-treated and control embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are supported by western blot data and ChIP-seq correlation analyses. The high Pearson correlations and minimal differential peaks provide strong evidence that TSA affects enzymatic activity rather than protein levels or genomic recruitment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "TSA treatment causes drastically increased levels of H3K9ac, H3K18ac, and H3K27ac, while H3K14ac, H3K56ac, and H4K20ac are not detected during gastrulation, demonstrating that HDAC activity is required to maintain proper histone acetylation levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are supported by western blot analyses with appropriate citation (C49). The absence of certain acetylation marks (C50) is clearly documented. The inference about HDAC activity requirement (C51) logically follows from the observed increases upon inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Pan-H3Kac marks show germ-layer-specific patterns with ~75% being specifically marked in ectodermal (~37%) or endodermal (~38%) layers, and the histone acetylation profile correlates with spatially localized gene expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 are supported by pan-H3Kac ChIP-seq in dissected AC and VG explants with corresponding RNA-seq data. The quantitative analysis of peak distributions and correlation with gene expression provides strong evidence for spatial regulation of histone acetylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "HDAC inhibition leads to global increase of pan-H3Kac signals across all Hdac1 CRM clusters, with repressive CRMs showing the highest fold increase and active CRMs showing the lowest fold increase, though the absolute amount of increase is similar across clusters, suggesting similar catalytic activity regardless of CRM type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C64 are supported by quantitative spike-in normalized ChIP-seq analysis. The differential fold changes (C59-C60) versus similar absolute increases (C61) provide important mechanistic insights. The inference about similar catalytic activity (C62) is reasonable given the data, though direct enzymatic assays would provide stronger support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Germ-layer-specific CRMs show greater responsiveness to HDAC inhibition, with CRMs having low baseline acetylation being more responsive than highly acetylated CRMs, and spatial patterns being disrupted upon inhibition (AC CRMs gain acetylation in VG and vice versa), demonstrating spatial regulation of Hdac1 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 are supported by fold change analyses of spatial CRM categories. The anti-correlation between baseline acetylation and responsiveness (C65) and the spatial disruption patterns (C67-C68) provide strong evidence for spatial regulation. The conclusion about spatial regulation (C69) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Genes associated with Hdac1-bound CRMs can be classified into three classes based on epigenetic marks: Class 1 (3,104 genes with mixed H3K27ac/me3), Class 2 (629 genes with only H3K27me3), and Class 3 (5,913 genes with only H3K27ac), showing distinct temporal expression patterns with Class 1 and 3 being continuously active after ZGA while Class 2 genes are activated from early neurula onward.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C76 are supported by gene classification based on CRM marks and temporal expression analysis. The distinct expression patterns across classes provide evidence that Hdac1 regulates both active and silent genes, though the causal relationship requires functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "Greater than 85% of Class 2 genes (repressive CRM-associated) are prematurely activated during gastrulation upon HDAC inhibition, supporting temporal regulation of these genes by Hdac1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 are supported by differential expression analysis showing premature activation. The high percentage of affected genes provides strong evidence for Hdac1's role in temporal gene regulation, though the mechanism of temporal control requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Class 1 and 3 genes show both up- and down-regulation upon HDAC inhibition in a spatially regulated manner, with endodermal genes being misactivated in ectoderm (AC) and ectodermal/mesodermal genes being down-regulated in their respective layers, suggesting Hdac1 both prevents aberrant activation and maintains proper expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C85 are supported by spatial expression analysis of differentially regulated genes. The bidirectional effects (both up- and down-regulation) provide important evidence for dual functions of Hdac1. The correlation between VG CRM hyperacetylation and endodermal gene misactivation in AC (C82) strengthens the mechanistic link.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The state of histone acetylation on CRMs associated with active genes is dynamic, and disruption of this equilibrium by excessive acetylation impairs normal transcription, with Hdac1 maintaining proper gene expression levels in each germ layer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 are supported by the observation that HDAC inhibition leads to both excessive acetylation and reduced expression of active genes. However, C86 and C87 are explicitly labeled as speculation/proposals, indicating the authors recognize these as mechanistic hypotheses requiring further validation. The comprehensive analysis (C88) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Class 1 genes display higher expression variability between germ layers compared to Class 3 genes, indicating that genes undergoing active H3K27me3 suppression are more intimately associated with germ-layer determination, with Hdac1 maintaining germ-layer gene integrity both temporally and spatially.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 are supported by standard deviation analysis of expression levels across germ layers. The inference about association with germ-layer determination (C90) is reasonable given the higher variability. The comprehensive conclusion (C91) is well-supported by the temporal and spatial analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Progressive binding of Hdac1 to the genome shapes the zygotic histone acetylome and reinforces proper germ-layer-specific transcriptomes both temporally and spatially, establishing Hdac1 as an essential epigenetic regulator of embryonic cell identity and lineage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 represent the main conclusions of the study, synthesizing findings from Hdac1 binding, histone acetylation, and gene expression analyses. These conclusions are well-supported by the comprehensive dataset, though C94 is explicitly labeled as a proposal/speculation about TF-HDAC interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "While maternal TFs (Foxh1, Vegt, Otx1) bind the genome as early as 32-64 cell stage, genome-wide Hdac1 binding begins at blastula and becomes widespread at early gastrula, with potential roles for both maternal TFs and pre-existing epigenetic marks (DNA methylation, H3K4me3) in Hdac1 recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 are supported by cited literature and the study's ChIP-seq data. Claims C101-C102 appropriately cite prior work on Hdac1 complex recruitment mechanisms, though C102 is explicitly speculative about the role of maternally instructed histone modifications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Hdac1 functions at both active and inactive CRMs, with HDAC inhibition causing increased pan-H3Kac across all Hdac1-bound CRMs (including active ones), drastic hyperacetylation of repressive CRMs, and disruption of germ-layer-specific acetylation patterns, consistent with prior studies showing dynamic histone acetylation at active loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C110 are supported by quantitative ChIP-seq analysis upon HDAC inhibition with appropriate citations to prior work (C106). The hypothesis about dual function (C107) is supported by the experimental evidence, though direct co-binding experiments were not performed. The three lines of evidence (C108-C110) provide strong support for the proposed model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "A dual function model for Hdac1 is proposed where it prevents histone acetylation at inactive CRMs (preserving H3K27 as unacetylated, though not always coupled with H3K27me3) and participates in dynamic acetylation-deacetylation cycles at active CRMs (where Ep300 and Hdac1 binding profiles overlap), maintaining active CRMs in dynamic equilibrium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C118 present a mechanistic model supported by the experimental data. The observation that H3K27me3 is not always present at inactive CRMs (C112-C113) is important for understanding the uncoupling of deacetylation and methylation. The model of dynamic equilibrium at active CRMs (C114-C117) is supported by overlapping Ep300/Hdac1 binding and response to inhibition, with appropriate citation to prior work (C118). However, direct co-binding experiments were not performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Hdac1 maintains histone hypoacetylation at repressive CRMs to prevent premature gene expression temporally (>85% of Class 2 genes activated upon inhibition) and safeguards against spatial misactivation of heterogeneous and active CRM-associated genes, with predicted differential H3K27me3 or acetylation marking in different germ layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C122 and C125 are well-supported by temporal expression analysis and spatial misactivation data. Claims C123-C124 appropriately cite prior work on spatial H3K27me3 deposition, though C124 is explicitly a prediction requiring validation. The comprehensive conclusion about temporal and spatial gene suppression (C125) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Hdac1 plays an unexpected activator role in sustaining active gene expression during germ-layer formation, with down-regulated genes upon HDAC inhibition being enriched in their respective germ layers, suggesting that dynamic equilibrium between acetylation and deacetylation is essential for sustained transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C127 are supported by spatial expression analysis of down-regulated genes. Claim C128 appropriately cites prior studies reporting similar paradoxical activator roles. Claims C129-C130 are explicitly speculative proposals, though they are reasonable hypotheses based on the data. The unexpected finding of Hdac1 as an activator is well-documented but the mechanism requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Prior studies in yeast and metazoans demonstrate roles for HDAC activity in transcriptional fidelity, including suppression of intragenic and cryptic transcription, with evidence for simultaneous HAT/HDAC binding at active regions and effects on transcript levels under specific conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C137 appropriately cite and summarize prior literature from yeast (C131-C132), metazoans (C133-C134), and cancer/developmental contexts (C135-C136). The inference about transcriptional fidelity (C137) is reasonable based on the cited studies. These claims provide important context for interpreting the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Excessive histone acetylation following HDAC inhibition results in reduced expression of active and heterogeneous CRM-associated genes, potentially through interference with transcriptional machinery, altered chromatin interactions (increased aberrant contacts, reduced native contacts), or sequestration of BRD proteins away from active genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C138 is supported by the study's data correlating excessive acetylation with reduced expression. Claim C139 is explicitly speculative. Claims C140-C143 appropriately cite recent studies providing potential mechanisms (Gryder et al., 2019; Slaughter et al., 2021). The inferences (C141, C143) are reasonable based on the cited work, though direct testing in this system would strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C145",
+      "C146"
+    ],
+    "result": "A comprehensive dual function model is proposed where Hdac1 represses gene expression by sustaining histone hypoacetylation on inactive chromatin while maintaining gene expression through dynamic acetylation-deacetylation cycles on active chromatin, thereby maintaining differential histone acetylation states between germ layers and reinforcing transcriptional programs underlying cell lineage identities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C146 represent the central mechanistic model of the study, integrating findings from multiple experimental approaches. The model is well-supported by the comprehensive dataset including ChIP-seq, RNA-seq, and inhibitor studies across different developmental stages and germ layers. However, some mechanistic details remain to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Histone acetylation plays an essential role in modulating zygotic transcription and cell lineage specification, appearing during ZGA onset across multiple species including Drosophila, zebrafish, Xenopus, and mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C152 provide important background context, appropriately citing prior work across multiple species (C149-C152). Claim C147 synthesizes established knowledge with the current study's findings. These claims establish the broader significance of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "Background on histone acetylation mechanisms: acetylation occurs on \u03b5-amino groups of lysine residues in histone tails, is reversibly catalyzed by HATs and HDACs, affects both histone and non-histone proteins, is associated with active transcription through charge neutralization and BRD protein recruitment, and HDACs are grouped into four classes based on phylogenetic conservation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C160 provide essential background information with appropriate citations to established literature. These are well-accepted facts in the field and provide necessary context for understanding the study's findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "Prior studies demonstrate that HDACs, particularly Hdac1, function as transcriptional repressors in various developmental contexts (Drosophila, zebrafish, Xenopus) but can also act as activators, with genome-wide studies showing HDAC occupancy at active genes correlating with gene activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C168 appropriately cite and summarize prior literature establishing both repressor and activator functions of HDACs. These claims provide important context for the dual function model proposed in the current study and demonstrate that the paradoxical activator role is not unprecedented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C169"
+    ],
+    "result": "Current evidence suggests that the early embryonic genome in Xenopus and other non-mammalian systems is relatively naive with major chromatin modifications occurring at or after ZGA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C169 appropriately cites multiple prior studies establishing the context for the current work. This provides important justification for studying Hdac1 function during the ZGA period.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "Recent work in yeast shows that active transcription shapes histone acetylation patterns through RNAPII-mediated recruitment and activation of H4 HATs but not HDACs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 appropriately cites recent work (Martin et al., 2021) providing context for interpreting the \u03b1-amanitin experiments. This supports the interpretation that Hdac1 recruitment is not transcription-dependent.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2401 @@
+{
+  "submission": {
+    "id": "cb557814-079b-49bd-a8ee-456c4b28a4ed",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T16:38:38.913289Z",
+    "updated_at": "2025-12-03T16:38:38.913289Z"
+  },
+  "content": [
+    {
+      "id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "submission_id": "cb557814-079b-49bd-a8ee-456c4b28a4ed",
+      "content_type": "manuscript",
+      "content_text": "# Structure of SARS-CoV-2 M protein in lipid nanodiscs\n\n## Authors\n\n- Kimberly A Dolan<sup>1</sup> ([ORCID: 0000-0002-9335-7791](https://orcid.org/0000-0002-9335-7791))\n- Mandira Dutta<sup>3</sup>\n- David M Kern<sup>2</sup>\n- Abhay Kotecha<sup>4</sup>\n- Gregory A Voth<sup>3</sup> ([ORCID: 0000-0002-3267-6748](https://orcid.org/0000-0002-3267-6748))\n- Stephen G Brohawn<sup>2</sup> ([ORCID: 0000-0001-6768-3406](https://orcid.org/0000-0001-6768-3406)) \u2020\n\n### Affiliations\n\n1. Biophysics Graduate Group, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))\n2. Department of Molecular and Cell Biology, Helen Wills Neuroscience Institute, and California Institute for Quantitative Biosciences (QB3), University of California, Berkeley Berkeley United States ([ROR:04n1n3n22](https://ror.org/04n1n3n22))\n3. Department of Chemistry, Chicago Center for Theoretical Chemistry, Institute for Biophysical Dynamics, and James Franck Institute, The University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))\n4. Materials and Structural Analysis Division, Thermo Fisher Scientific Eindhoven Netherlands ([ROR:01139ec29](https://ror.org/01139ec29))\n\n\u2020 Corresponding author\n\n## Abstract\n\nSARS-CoV-2 encodes four structural proteins incorporated into virions, spike (S), envelope (E), nucleocapsid (N), and membrane (M). M plays an essential role in viral assembly by organizing other structural proteins through physical interactions and directing them to sites of viral budding. As the most abundant protein in the viral envelope and a target of patient antibodies, M is a compelling target for vaccines and therapeutics. Still, the structure of M and molecular basis for its role in virion formation are unknown. Here, we present the cryo-EM structure of SARS-CoV-2 M in lipid nanodiscs to 3.5 \u00c5 resolution. M forms a 50 kDa homodimer that is structurally related to the SARS-CoV-2 ORF3a viroporin, suggesting a shared ancestral origin. Structural comparisons reveal how intersubunit gaps create a small, enclosed pocket in M and large open cavity in ORF3a, consistent with a structural role and ion channel activity, respectively. M displays a strikingly electropositive cytosolic surface that may be important for interactions with N, S, and viral RNA. Molecular dynamics simulations show a high degree of structural rigidity in a simple lipid bilayer and support a role for M homodimers in scaffolding viral assembly. Together, these results provide insight into roles for M in coronavirus assembly and structure.\n\n## Introduction\n\nCoronaviruses encode four structural proteins that are incorporated into mature enveloped virions: the transmembrane spike (S), membrane (M), and envelope (E) proteins, and the soluble nucleocapsid (N) protein (Masters, 2006). S proteins protrude from the virion, creating the eponymous corona in electron micrographs, and mediate fusion of viral and host cell membranes. E proteins form cationic viroporins that promote viral assembly and modulate the host immune response. N is an RNA-binding protein that packages the viral RNA genome. M organizes the assembly and structure of new virions and is essential for virus formation (Sturman et al., 1980; Armstrong et al., 1984; Yu et al., 2021; Finkel et al., 2021). M is the most abundant membrane protein in the viral envelope and anti-M antibodies are found in plasma of patients infected with SARS-CoV-2 and other coronaviruses (Godet et al., 1992; He et al., 2005; Hotop et al., 2022; Heffron et al., 2021; Martin et al., 2021; J\u00f6rri\u00dfen et al., 2021). Based on its functional importance and immunogenicity, M has been proposed as a target for coronavirus vaccines or therapeutics.\n\nIn infected cells, M mediates virus assembly and budding by interacting with all other structural proteins and directing their localization to the ER-Golgi intermediate compartment (Masters, 2006; de Haan et al., 1999; Cavanagh, 2005; Siu et al., 2008; Neuman et al., 2011; Kuo et al., 2016a; Kuo et al., 2016b; Lim and Liu, 2001; Boson et al., 2021). M is proposed to interact with E through its transmembrane region and S and N through a cytosolic C-terminal region (Kuo et al., 2016a; Kuo et al., 2016b; Lim and Liu, 2001; Boson et al., 2021). ER export and Golgi localization sequences in M determine its subcellular localization and M, in turn, modulates localization and posttranslational processing of S to promote virion assembly (Boson et al., 2021; Perrier et al., 2019). Across a wide range of coronaviruses (including SARS-CoV-2, SARS-CoV-1, MERS, mouse hepatitis virus [MHV], infectious bronchitis virus, and transmittable gastroenteritis virus), M is required for minimal virus-like particle (VLP) formation in transfected cells (Siu et al., 2008; Vennema et al., 1996; Hsieh et al., 2005; Xu et al., 2020; Plescia et al., 2021). M is insufficient for VLP formation alone, however, and co-required components vary in different systems. SARS-CoV-2 VLP formation requires M co-expression with S or N (Xu et al., 2020; Plescia et al., 2021).\n\nM has further been implicated in modulating host antiviral innate immunity. M inhibits the innate immune response by interfering with MAVS-mediated signaling and interferon production (Fu et al., 2021; Sui et al., 2021). In mouse models of infection, M expression results in lung epithelial cell apoptosis in vitro and in vivo and may contribute to lung injury and pulmonary edema found in severe disease (Sui et al., 2021).\n\nDespite its essential role in viral assembly and implication in pathogenesis, the molecular determinants of M function remain largely unknown. MHV M was proposed to adopt long and compact structures that differentially facilitate membrane bending and recruitment of other structural proteins based on low-resolution tomographic analysis (Neuman et al., 2011). Intriguingly, a structural and evolutionary relationship between SARS-CoV-2 M and the accessory viroporin ORF3a was reported (Tan et al., 2021; Pezeshkian et al., 2021) based on predicted homology to our experimental ORF3a structures (Kern et al., 2021). The manner in which distinct functional roles for M and ORF3a can be achieved in the context of a shared architecture remains to be determined. Here, we report the cryo-EM structure of SARS-CoV-2 M in lipid nanodiscs and perform molecular dynamics (MD) simulations to provide insight into M structure, function, and dynamics.\n\n## Results\n\nWe determined the structure of SARS-CoV-2 M in lipid nanodiscs (Figure 1). Full-length M was expressed in Spodoptera frugiperda (Sf9) cells with a cleavable C-terminal GFP tag. Gel filtration chromatography of protein extracted in DDM/CHS detergent shows M runs predominantly as a single species consistent with a 50 kDa homodimer. We do not observe evidence of specific higher-order oligomerization at low concentrations by fluorescence size exclusion chromatography or at higher concentrations in large-scale purifications (Figure 1\u2014figure supplement 1). SARS-CoV-2 ORF3a, in contrast, assembles into stable homodimers and homotetramers under similar conditions (Kern et al., 2021).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/81702/elife-81702-fig1-v2.jpg)\n\n**Figure 1.:** (a) A 3.5 \u00c5 resolution cryo-EM map of SARS-CoV-2 M in MSP1E3D1 nanodiscs viewed from the membrane. One subunit is colored pink, and the second subunit is colored blue. Density corresponding to the lipid nanodisc is shown transparent. (b,c) Model of M viewed (b) from the membrane in two rotations and (c) from the extracellular or lumenal side. (d) Cartoon schematic of an M monomer with secondary structure elements indicated.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81702/elife-81702-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Fluorescence size exclusion chromatogram of M expressed in insect cells and extracted in DDM/CHS. (b) Size exclusion chromatogram of M expressed in insect cells and extracted and purified in DDM/CHS. (c) Size exclusion chromatogram of M reconstituted into MSP1E3D1 lipid nanodiscs. Samples were run on Superose 6 columns. Blue bars indicate pooled fractions.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81702/elife-81702-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) Representative micrograph, (b) selected 2D class averages, (c) angular distribution of particles used in final refinement, (d) Fourier shell correlation (FSC) relationships, and (e) local resolution estimated in cryoSPARC colored as indicated on the final map. Side, top, and bottom views are shown.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/81702/elife-81702-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (a) Overlay of the experimental and AlphaFold2 predicted M structures (Jumper et al., 2021). (b) Overlay of experimental and one RoseTTAfold predicted M structure (Heo and Feig, 2020). Major differences are observed in chain topology in the transmembrane region and relative orientation of transmembrane and cytosolic domains.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/81702/elife-81702-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) Alignment of 42 M protein sequences colored by conservation in a ramp from white (not conserved) to dark blue (highly conserved). Accession numbers are indicated. Sequences were selected from representative species from each Coronavirus subgenus. Secondary structure from SARS-CoV-2 M is drawn above the alignment.\n\nWe reconstituted homodimeric SARS-CoV-2 M in nanodiscs made from the scaffold protein MSP1E3D1 and lipids (DOPE:POPC:POPS in a 2:1:1 ratio) and determined its structure by cryo-EM (Figure 1, Figure 1\u2014figure supplement 2, Supplementary file 1). The majority of M (189 of 222 amino acids per subunit) was de novo modeled in the cryo-EM map (Figure 1, Figure 1\u2014figure supplement 2). The N-terminus (amino acids 1\u201316) and C-terminus (amino acids 205\u2013222) are not resolved in the map and were not modeled. Loops connecting transmembrane helices (amino acids 36\u201342 and 71\u201378) are the least well-resolved regions of the structure. The relatively weak density is consistent with a lack of stabilizing interactions between these and other M regions and likely indicates they adopt a range of conformations among particles used to generate the final map.\n\nM is ~70 \u00c5 tall when viewed from the membrane with an ~40 \u00c5 transmembrane spanning region and ~30 \u00c5 cytosolic domain (CD) extending into the intracellular solution (Figure 1). Each subunit contains an extracellular or lumenal N-terminus, three transmembrane helices (amino acids 17\u201336, 43\u201371, and 79\u2013105) connected by short linkers, and a \u03b2-strand rich C-terminal cytosolic domain. We note that AlphaFold and RoseTTAFold predicted M structures diverge substantially from the experimental structure (Figure 1\u2014figure supplement 3; Heo and Feig, 2020; Jumper et al., 2021). In the predicted structures, TM1s are swapped between subunits in addition to differences in the relative positions of transmembrane and cytosolic domains.\n\nViewed from above, TM1-TM3 from each subunit is positioned along a flattened ellipse with a long major (~50 \u00c5) and short minor (~16 \u00c5) axis. Within each subunit, TM2-TM3 are closely juxtaposed and tightly packed while TM1-TM2 are more distant and loosely connected. The two subunits assemble along their long axis, with TM1 from one protomer forming extensive interactions with the TM2-TM3 unit of the second protomer. As they project toward the cytoplasm, the three transmembrane helices twist counterclockwise and splay outward in the inner leaflet, creating an expanded ellipse with ~55 and ~40 \u00c5 axes at the intracellular leaflet.\n\nThe transmembrane region is connected to the cytosolic domain through a tight turn-helix-turn segment comprised of residues 106\u2013116. Within the cytosolic domain, each protomer chain forms a pair of opposing \u03b2-sheets packed against one another in an eight stranded \u03b2-sandwich (Figure 1B and D). The outer sheet is formed by strands \u03b21, \u03b22, \u03b26, the N-terminal half of \u03b27, and the C-terminal half of \u03b28. The inner sheet is formed by strands \u03b23, \u03b24, \u03b25, the C-terminal half of \u03b27, and the N-terminal half of \u03b28. The inner sheets from each protomer interact through a large (~690 \u00c52 buried surface area per chain) and complementary interface with residues L138, V139, V143, L145, F193, A195 contributing to a hydrophobic core surrounded by additional polar interactions.\n\nUsing Dali (Holm, 2020) to compare the M structure to all experimentally determined protein structures returns SARS-CoV-2 ORF3a (Kern et al., 2021) as the only structural homolog with a shared fold. Superposition of the two viral proteins reveals a similar fold topology and homodimeric assembly with an overall RMSD of 4.4 \u00c5. Isolated transmembrane and cytosolic domains from individual protomers are better superimposed (RMSD = 2.7 and 2.5 \u00c5, respectively) (Figure 2). Substantial differences in M and ORF3a structure are observed in three regions: TM2-TM3, the transmembrane-cytosolic domain junction, and the cytoplasmic domain interface. TM1s of M and ORF3a are well superimposed, but TM2-TM3 of M are splayed further out into the membrane and are less twisted about the twofold symmetry axis to create a flatter and tighter interaction surface. The angle between TM3 and the cytosolic domain is ~25\u00b0 more acute in M. The cytosolic domains of M are rotated ~15\u00b0 away from the symmetry axis relative to ORF3a, shifting the cytosolic domain interface between subunits further from the membrane.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/81702/elife-81702-fig2-v2.jpg)\n\n**Figure 2.:** (a) Overlay of M and ORF3a structures. M is colored with one subunit pink and the second subunit blue and ORF3a is white. (b) Overlay of a single subunit indicating major conformational rearrangements. (c) Overlay of isolated transmembrane and cytosolic domains from each protein.\n\nWhat are the consequences of the structural rearrangement in M relative to ORF3a? Association of subunits in the M homodimer creates a polar and, presumably, water-filled pocket, reminiscent of the polar cavity created between subunits in ORF3a. However, the included volumes are different in several key respects (Figure 3). First, the M pocket is ~\u2153 smaller with an enclosed volume of ~840\u00a0\u00c53 compared to ~1300\u00a0\u00c53 in ORF3a. Second, the M pocket is completely sealed by protein to the surrounding membrane and cytoplasm; no openings large enough for water passage are observed connecting the pocket and protein exterior. In contrast, ORF3a displays three pairs of tunnels connecting its internal cavity to the membrane and cytoplasm (two are displayed in Figure 3). Third, the position of the M pocket and ORF3a cavity are different. In M, the gap between subunits is confined to the region between cytosolic domains because transmembrane helices from opposing subunits form tight interactions across the entire lipid bilayer. In ORF3a, the gap extends from the region between cytosolic domains to approximately halfway across the membrane because transmembrane helices are less tightly associated across the membrane inner leaflet.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/81702/elife-81702-fig3-v2.jpg)\n\n**Figure 3.:** (a) M shown as a cartoon and (b) surface with enclosed pocket volume calculated with CASTp36 shown as a blue surface. The enclosed pocket in M is formed between cytosolic domains and is sealed to the surrounding solution by protein. (c,d) Same as (a,b), but for SARS-CoV-2 ORF3a. The cavity in ORF3a begins closer to the lipid bilayer, extends approximately halfway across the membrane, and is open to surrounding solution and lipids through multiple openings (Kern et al., 2021).\n\nAnother major difference in M and ORf3a structures is shown in Figure 4. The cytosolic domain of M is strikingly electropositive across nearly the entire exposed surface. Electropositive character is contributed by 17 basic amino acids in three surface patches. The first covers the wide face of the cytosolic domains and consists of eight residues (R44, H125, R131, R146, H148, H155, R158, and R198). The second covers the narrow face of M and consists of four residues (R101, R105, R107, and R174). The third covers the underside of M and consists of five residues (K162, K166, K180, R186, and R200). ORF3a, in contrast, presents mixed electrostatic character with electropositive patches closer to the membrane and electronegative patches toward the cytoplasm. Such uniform electropositivity across the M cytosolic surface could facilitate the close juxtaposition of M present at high concentration in viral envelope with the negatively charged viral RNA genome.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/81702/elife-81702-fig4-v2.jpg)\n\n**Figure 4.:** (a,b) Views of the wide and narrow faces of (a) M and (b) ORF3a colored according to electrostatic surface potential from red (electronegative, \u201310 kbTec-1) to blue (electropositive, +10 kbTec-1). (c) Views of three electropositive surface patches on M cytosolic domains with basic residues labeled and shown as sticks with blue nitrogen atoms.\n\nThe large, complementary, and hydrophobic interface between transmembrane and cytosolic regions of subunits in the M structure suggests a structurally rigid core. However, a previous tomographic study of MHV suggesting that M adopts distinct long and compact structures (Neuman et al., 2011), M\u2019s structural homology to the viroporin ORF3a (Tan et al., 2021; Kern et al., 2021), and the dissociation of cytosolic regions shown in predicted SARS-CoV-2 M structures (Heo and Feig, 2020) suggest the possibility that M is capable of undergoing large-scale structural rearrangements. We next performed MD simulations to explore potential conformational dynamics of M.\n\nWe equilibrated M in a lipid environment and ran an all-atom MD simulation for 2 \u00b5s. Major conformational changes related to protein function typically take place on a timescale ranging from a microsecond to seconds (Xue et al., 2012; Klepeis et al., 2009; Don et al., 2018). Prior work has reported that microsecond simulations can capture large conformational changes of membrane proteins in a lipid bilayer (Monje-Galvan and Voth, 2021; Brandner et al., 2019; Nury et al., 2010; Monje-Galvan and Voth, 2020). We therefore expected to capture a subset of possible structural changes in our simulation that correspond to relatively frequently accessed states. Overall, we did not observe substantial conformational rearrangements in M during the simulation (Figure 5A and B). Superposition of the experimental and final M structure following the simulation shows minor deviations through most of the protein (overall RMSD of 2.5 \u00c5) (Figure 5A). The largest difference is a shift in TM1 up toward the extracellular/lumenal side by approximately half a helical turn, enabled by rearrangement of the TM1-TM2 linker (Figure 5A). This relatively subtle movement is consistent with weaker density for the TM1-TM2 linker in the cryo-EM map and fewer packing interactions for TM1 than TM2 or TM3. Per residue deviations ranged from ~1 to 4 \u00c5 and, aside from the movement of TM1, were similar between subunits and largest in the TM2-TM3 linker, transmembrane to cytosolic region connection, and loops connecting strands in the cytosolic domain. Minimal structural deviation was observed during the simulation within or between subunits as judged by the number of close C\u03b1 contacts, the angle between transmembrane and cytosolic regions, the distance between transmembrane regions, or the distance between cytosolic domains (Figure 5D\u2013H). Consistent with limited movement of the transmembrane region and a lack of evidence for lipid binding in the cryo-EM structure, no obvious enrichment of specific lipids around M was identified following simulation (Figure 5\u2014figure supplement 1). Finally, the internal M pocket remained similar in size and sealed from the surrounding solution throughout the simulation (Figure 5I and J). Taken together, these data suggest that M adopts a stable structure with minimal dynamic rearrangements on the microsecond timescale, at physiological temperature, and in the absence of additional binding proteins. These results are consistent with the absence of other highly populated conformations in our cryo-EM data, though we cannot exclude the possibility that M undergoes rare large-scale conformational changes under these conditions not captured in the simulation.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/81702/elife-81702-fig5-v2.jpg)\n\n**Figure 5.:** (a) Overlay of M cryo-EM structure (colored in pink and blue) and final structure (in white) following 2.0 \u03bcs all-atom molecular dynamics simulation. (b) Overall RMSD between simulated and initial structure during simulation. (c) Root mean square fluctuation of protein residues in the simulation. Orange and yellow colors correspond to individual M protein chains. (d) Number of C-alpha contacts between two monomers. (e) Structural representation of distances and angles used for calculations in (f\u2013h). (f) A188-R107-I73 angle plot for each monomer. One monomer has slightly higher values than the other. (g) Center of mass distance between I73 residues at the top of the TM2-TM3 linker. (h) Center of mass distance between A188 residues at the base of the cytosolic domains. (i) Mean radius of the enclosed pocket in M over the simulation trajectory versus distance along the symmetry axis. At its widest positions, the pocket is wide enough to accommodate two water molecules. (j) Minimum hole radius versus the frame number in the simulation. The lack of substantial changes in radius indicates a stable pocket size and shape that does not open to solution during the simulation.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81702/elife-81702-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) Equilibrated membrane (M) structure in lipid membrane consisting of DOPE:POPS:POPC in a 2:1:1 mass ratio. (b) Final M structure of the simulation shown with the pocket colored red where the radius is too small for a water molecule, green where it can accommodate a single water molecule, and blue where it can accommodate two water molecules. (c) Lipid sorting patterns. Darker regions indicate higher density of the lipids. Black color is the average location of the M dimer. No obvious pattern of enrichment is observed.\n\n## Discussion\n\nThe structure of the SARS-CoV-2 M protein that we have obtained by cryo-EM reveals a homodimeric fold that is structurally homologous to the nonselective Ca2+ permeable cation channel of SARS-CoV-2, ORF3a. As with 3a, each subunit of M contains three transmembrane helices and a C-terminal \u03b2-sandwich domain. However, the structure differs from ORF3a in several key ways that provide insight into how these structurally similar proteins can fill drastically different apparent roles in the coronavirus life cycle.\n\nWhen viewed from the plane of the membrane, M is considerably wider and flatter than ORF3a, due to differences in transmembrane helix packing and a rotation about the central axis of the cytosolic domain. Among the consequences of this flattening out of M are distinct differences in the dimer interface across the membrane, where M shows a tighter dimer interface closer to the membrane outer leaflet as well as a gap between cytosolic domain subunits that forms an enclosed pocket lined by polar residues. In ORF3a, transmembrane regions are less closely opposed and a gap between subunits extends from halfway across the membrane to halfway down the cytosolic domains. The result is a larger cavity that is open to the membrane and cytoplasm. Mutations in the ORF3a cavity alter ion channel activity, consistent with the cavity forming part of the conduction path. Tight subunit association may therefore be important for the structural role of M, while loose subunit association that creates a large open cavity may be essential for the viroporin activity of ORF3a.\n\nIn further contrast to ORF3a, which was seen to form stable tetramers through electrostatic interactions between neighboring dimers, we see no evidence that M forms higher-order oligomers under similar experimental conditions. Surface characteristics of the M dimer lend credence to the possibility that M exists solely as a dimer in the membrane \u2013 one striking feature of the M C-terminal \u03b2-sandwich domain is the presence of three sizable patches of positive charge that dominate its solvent exposed surface. MD simulations of M show that the dimer is stable and does not readily adopt alternate conformations at physiological temperature over the 1.6 \u00b5s trajectory. These data suggest that M could play a structural role in mediating morphological changes in host cell membranes through interactions with other SARS-CoV-2 structural proteins and perhaps negatively charged lipid headgroups or viral RNA.\n\nA complementary study published during review of this work includes two structures of SARS-CoV-2 M solubilized in detergent micelles and in complex with Fab antibody fragments bound to the cytosolic domain (Zhang et al., 2022). One structure (termed short form) is similar to that reported here. The second structure (termed long form) adopts a distinct conformation that is taller and narrower in the membrane. The conformations are suggestive of short and long forms of MHV M observed in low-resolution tomograms (Neuman et al., 2011). Our data suggests that M in a simple lipid mixture predominantly adopts the short form. It may be that the alternate M long form, stabilized by Fab binding for structure determination, is similarly promoted in a physiological context by interactions with lipids, spike, N, or viral RNA. Evidence for possible higher-order oligomerization was also reported in some 2D classes of M solubilized in a different detergent, suggesting that M-M interactions may occur under certain biochemical conditions. Whether distinct M conformations have distinct functional roles in virus assembly, as has been suggested for MHV M, remains to be determined.\n\nM has been shown to play a crucial role in viral assembly through protein-protein interactions with other coronavirus structural proteins such as N and S. Spike proteins are incorporated into coronavirus virions via interactions between the cytosolic tail of S and the cytosolic domain of M, however the precise details of this interaction are unknown (Boson et al., 2021). In SARS-CoV-2, M and N or S are the minimal components required for forming VLPs when expressed heterologously in cells (Xu et al., 2020; Plescia et al., 2021). Several recent studies have suggested that the C-terminal domain of N is the site of interaction between SARS-CoV-2 M and N, but as with S a precise binding site has not been established (Cubuk et al., 2021; Lu et al., 2021). It is possible that M-N interactions are mediated by favorable electrostatic interactions between negatively charged residues of the N CTD and one or more of the basic patches identified on the surface of the cytosolic domain of M, a model supported by co-immunoprecipitation of N and M proteins expressed in 293T cells (Zhang et al., 2022). Through the sheer abundance of M dimers found in the membrane of SARS-CoV-2 virions, M and N together might facilitate VLP formation via a mechanism similar to the Gag precursor of HIV, where the high concentration of M C-terminal domains at the cytoplasmic membrane surface recruit and organize many N proteins that together physically extrude a membranous bud.\n\nAt present the World Health Organization puts the confirmed number of COVID-19 cases worldwide at nearly 530 million. Over the last 2 years the SARS-CoV-2 virus has undergone many mutations that have been extensively documented through sequencing efforts worldwide (Hadfield et al., 2018). Despite this, the M protein sequence has remained virtually unchanged \u2013 a testament to the critical role that M plays in viral replication and assembly (Cagliani et al., 2020). Furthermore, while only 20 amino acids in length, the N-terminus of M has been found to be highly immunogenic in COVID-19 patients (Hotop et al., 2022; Heffron et al., 2021; Martin et al., 2021; J\u00f6rri\u00dfen et al., 2021). M has also been shown to modulate innate immune response and could contribute to lung injury often seen in severe cases (Fu et al., 2021; Sui et al., 2021). Given its clear importance in the coronavirus life cycle and pathogenicity, M presents an attractive target for therapeutics or vaccines. While M is well conserved across Coronaviridae (Figure 1\u2014figure supplement 4), it shows particularly high conservation between SARS-CoV-1 and SARS-CoV-2, with a sequence similarity of 90.54%, highlighting its potential as a therapeutic target for emergent coronaviruses in the future.\n\n## Methods\n\n### Cloning and protein expression\n\nThe coding sequence for SARS-Cov-2 M protein (Uniprot P0DTC5) was synthesized (IDT, Newark, NJ) and cloned into a vector based on the pACEBAC1 backbone (MultiBac; Geneva Biotech, Geneva, Switzerland) with an added C-terminal PreScission protease (PPX) cleavage site, linker sequence, superfolder GFP (sfGFP), and 7xHis tag, generating a construct for expression of M-SNS-LEVLFQGP-SRGGSGAAAGSGSGS-sfGFP-GSS-7xHis (Kern and Brohawn, 2021). MultiBac cells were used to generate a Bacmid according to the manufacturer\u2019s instructions. Sf9 cells were cultured in ESF 921 medium (Expression Systems, Davis, CA) and P1 virus was generated from cells transfected with Escort IV reagent (MilliporeSigma, Burlington, MA) according to the manufacturer\u2019s instructions. P2 virus was then generated by infecting cells at 2 million cells/mL with P1 virus at an MOI ~ 0.1, with infection monitored by fluorescence and harvested at 72 hr. P3 virus was generated in a similar manner to expand the viral stock. The P2 or P3 viral stock was then used to infect Sf9 cells at 4 million cells/mL at an MOI ~ 2\u20135. At 72 hr, infected cells containing expressed M-sfGFP protein were harvested by centrifugation at 2500 \u00d7 g for 10 min and frozen at \u201380\u00b0C.\n\n### Protein purification\n\nInfected Sf9 cells from 1 L of culture (~15 mL of cell pellet) were thawed in 100 mL of Lysis Buffer containing 50 mM HEPES, 150 mM KCl, 1 mM EDTA pH 8. Protease inhibitors (final concentrations: E64 [1 \u00b5M], pepstatin A [1 \u00b5g/mL], soy trypsin inhibitor [10 \u00b5g/mL], benzamidine [1 mM], aprotinin [1 \u00b5g/mL], leupeptin [1 \u00b5g/mL], AEBSF [1 mM], and PMSF [1 mM]) were added to the lysis buffer immediately before use. Benzonase (4 \u00b5L) was added after the cell pellet thawed. Cells were then lysed by sonication and centrifuged at 150,000 \u00d7 g for 45 min. The supernatant was discarded, and residual nucleic acid was removed from the top of the membrane pellet using DPBS. Membrane pellets were scooped into a dounce homogenizer containing extraction buffer (50 mM HEPES, 150 mM KCl, 1 mM EDTA, 1% n-dodecyl-\u03b2-D-maltopyranoside (DDM, Anatrace, Maumee, OH), 0.2% cholesteryl hemisuccinate Tris salt (CHS, Anatrace, Maumee, OH) pH 8). A stock solution of 10% DDM, 2% CHS was dissolved and clarified by bath sonication in 200 mM HEPES pH 8 prior to addition to buffer to the indicated final concentration. Membrane pellets were then homogenized in extraction buffer and this mixture (150 mL final volume) was gently stirred at 4\u00b0C for 1.5 hr. The extraction mixture was centrifuged at 33,000 \u00d7 g for 45 min and the supernatant, containing solubilized membrane protein, was bound to 4 mL of Sepharose resin coupled to anti-GFP nanobody for 1.5 hr at 4\u00b0C. The resin was then collected in a column and washed with 10 mL of buffer 1 (20 mM HEPES, 150 mM KCl, 1 mM EDTA, 0.025% DDM, 0.005% CHS, pH 7.4), 40 mL of buffer 2 (20 mM HEPES, 500 mM KCl, 1 mM EDTA, 0.025% DDM, 0.005% CHS, pH 7.4), and 10 mL of buffer 1. The resin was then resuspended in 6 mL of buffer 1 with 0.5 mg of PPX protease and rocked gently in the capped column for 2 hr. Timing of this step was critical as longer incubations in detergent significantly reduced yield and sample quality. Cleaved M protein was then eluted with an additional 12 mL of wash buffer, spin concentrated to ~1 mL with Amicon Ultra spin concentrator 10 kDa cutoff (Millipore), and loaded onto a Superose 6 increase column (GE Healthcare, Chicago, IL) on an NGC system (Bio-Rad, Hercules, CA) equilibrated in buffer 1. Peak fractions containing M protein were then collected and spin concentrated prior to incorporation into nanodiscs.\n\n### Nanodisc formation\n\nFreshly purified M protein in buffer 1 was reconstituted into MSP1E3D1 nanodiscs with a mixture of lipids (DOPE:POPS:POPC at a 2:1:1 mass ratio, Avanti, Alabaster, AL) at a final molar ratio of 1:4:400 (M:MSP1E3D1:lipid).\n\nTwenty mM solubilized lipid in lipid dilution buffer (20 mM HEPES, 150 mM KCl, pH 7.4) was mixed with additional DDM/CHS detergent and M protein at 4\u00b0C for 30 min before addition of purified MSP1E3D1. This addition brought the final concentrations to approximately 10 \u00b5M M protein, 40 \u00b5M MSP1E3D1, 4 mM lipid mix, 10 mM DDM, and 1.7 mM CHS. The solution with MSP1E3D1 was mixed at 4\u00b0C for 15 min before addition of 150 mg of Biobeads SM2. Biobeads (washed into methanol, water, and then Nanodisc Formation Buffer) were weighed after liquid was removed by pipetting (damp weight). This final mixture was then gently tumbled at 4\u00b0C overnight (~12 hr). Supernatant was cleared of beads by letting large beads settle and carefully removing liquid with a pipette. Sample was spun for 10 min at 21,000 \u00d7 g before loading onto a Superose 6 increase column in 20 mM HEPES, 150 mM KCl, pH 7.4. Peak fractions corresponding to M protein in MSP1E3D1 were collected, 10 kDa cutoff spin concentrated, and used for grid preparation. MSP1E3D1 was prepared as previously described (Ritchie et al., 2009) without cleavage of the His-tag.\n\n### Cryo-EM sample preparation and data collection\n\nM in MSP1E3D1 was prepared at a final concentration of 1.3 mg/mL. Concentrated sample was cleared by a 10 min 21,000 \u00d7 g spin at 4\u00b0C prior to grid preparation; 3.4 \u00b5l of protein was applied to freshly glow discharged Holey Carbon, 300 mesh R 1.2/1.3 gold grids (Quantifoil, Gro\u00dfl\u00f6bichau, Germany) and plunge frozen in liquid ethane using an FEI Vitrobot Mark IV (Thermo Fisher Scientific) was used with 4\u00b0C, 100% humidity, 1 blot force, a wait time of ~5 s, and a 3 s blot time.\n\nGrids were clipped and sent to Thermo Fisher Scientific RnD division in Eindhoven, The Netherlands, for data collection. Grids were loaded onto a Krios G4 microscope equipped with a Cold Field Emission gun and operated at 300 kV. Data were collected on a Falcon 4 detector mounted behind a Selectris X energy filter. The slit width of the energy filter was set to 10 eV; 7588 movie stacks containing 1251 frames were collected with EER (electron event representation) mode (Guo et al., 2020) of Falcon 4 detector at a magnification of 165,000 corresponding to a pixel size of 0.727 \u00c5. Each movie stack was recorded with a total dose of 50 e-/\u00c52 on sample and a defocus range between 0.5 and 1.2 \u00b5m.\n\nSee Supplementary file 1 for data collection statistics.\n\n### Cryo-EM data processing\n\nMotion correction and dose weighting were performed on all 7588 videos using RELION 4.0\u2019s implementation of MotionCor2 at 0.727 \u00c5 per pixel. Contrast transfer function (CTF) parameters were fit with CTFFIND-4.1. Template-free auto-picking of particles was performed with RELION 4.0\u2019s Laplacian-of-Gaussian filter on Video CTF fit to 5.0 \u00c5 or better, yielding an initial set of 2,379,507 particles. These particles were then extracted at a 288-pixel box size and transferred to cryoSPARC v.3.2 for 2D classification.\n\nIterative rounds of 2D classification resulted in a set of 31,126 particles which were then extracted in RELION 4.0 and their coordinates were used in the Topaz particle-picking pipeline (Bepler et al., 2019). Topaz training, picking, and extraction yielded 2,376,190 particles which were then subjected to one round of 2D classification in RELION 4.0 to remove obvious noise. The resulting 2,007,561 particles were extracted and then iteratively 2D classified in cryoSPARC v3.2, resulting in a set of 54,747 \u2018good\u2019 particles.\n\nBoth the initial auto-picked particle set and subsequent Topaz particle set were lacking in good 2D classes of side views, so a subset of 13,698 particles from the best side view classes were extracted in RELION 4.0 and used to train and pick new particles in Topaz. As before, the resulting 2,186,648 particles were subjected to one round of 2D classification in RELION 4.0 then imported into cryoSPARC v3.2 for further 2D classification.\n\nGood particles from the initial auto-picked particle set and both Topaz particle sets were pooled and duplicates within 100 \u00c5 were removed to yield 105,535 particles. These particles were extracted and imported into cryoSPARC v3.2 for three rounds of 2D classification to remove remaining junk. An ab initio reconstruction of the remaining 69,182 particles was performed to provide an initial volume and a subsequent non-uniform refinement (C2, 2 extra passes, 16 \u00c5 initial resolution) produced a map with a 4.0 \u00c5 overall resolution. This map was post-processed in RELION 4.0 and used for Bayesian particle polishing.\n\nThe resulting \u2018shiny\u2019 particles were imported back into cryoSPARC v3.2 for one additional round of 2D classification. The final 64,966 particles were used to generate a new ab initio and a subsequent non-uniform refinement (C2, 2 extra passes, 16 \u00c5 initial resolution, 1.5 adaptive window factor) yielded the final map at 3.5 \u00c5 nominal resolution.\n\n### Modeling, refinement, and analysis\n\ncryoSPARC sharpened cryo-EM maps were used to de novo model M using Coot (Emsley et al., 2010). The model was real space refined in Phenix (Afonine et al., 2018) and validated using Molprobity (Williams et al., 2018). Cavity and tunnel measurements were made with CASTp (Tian et al., 2018). Comparisons to the structure database were performed with DALI (Holm, 2020). Figures were prepared using ChimeraX (Goddard et al., 2018), Prism, Adobe Photoshop, and Adobe Illustrator software.\n\n### Fluorescence size exclusion chromatography\n\nSf9 cells (~4 million) from the third day of infection were pelleted, frozen, and then thawed into extraction buffer (20 mM Tris pH 8, 150 mM KCl, all protease inhibitors used for protein purification, 1 mM EDTA, 1% DDM, 0.2% CHS). Extraction was performed at 4\u00b0C for 1 hr and lysate was then pelleted at 21,000 \u00d7 g at 4\u00b0C for 1 hr to clear the supernatant. Supernatant was then run on a Superose 6 Increase column with fluorescence detection for GFP into 20 mM HEPES, pH 7.4, 150 mM KCl, 0.025% DDM, 0.005% CHS.\n\n### Molecular dynamics\n\nThe initial MD system of M protein and lipid bilayer was built using CHARMM-GUI Membrane Builder (Jo et al., 2008; Brooks et al., 2009; Lee et al., 2016; Jo et al., 2007). A 20\u00d720 nm lipid bilayer membrane was taken with a mixture of DOPE, POPS, and POPC lipids in a 2:1:1 mass ratio. A fully hydrated bilayer was built around the M protein, centering the transmembrane region close to the lipid bilayer center. To neutralize the system, a 0.15 M KCl salt concentration was used. The simulations were performed on GROMACS MD simulation package (Abraham et al., 2015) with the CHARMM36m force field (Huang et al., 2017). An initial minimization of the system was carried out following six-step protocols provided on CHARMM-GUI (Jo et al., 2009). A time step of 2fs was used with periodic boundary conditions for the simulations. A simulation temperature of 310.15 K was maintained with a Nose-Hoover thermostat (Hoover, 1985; Nos\u00e9, 1984) and a coupling time constant of 1.0 ps in GROMACS. The pressure was set at 1 bar with a Berendsen barostat (Berendsen et al., 1984) during initial relaxation. For the production runs, the Parrinello-Rahman barostat was used semi-isotropically with the compressibility of 4.5\u00d710\u20135 and a coupling time constant of 5.0 ps (Nos\u00e9 and Klein, 1983; Parrinello and Rahman, 1981). For the non-bonded interactions a switching function between 1.0 and 1.2 nm was used. The long-range electrostatics were computed using particle Mesh Ewald (Darden et al., 1993). The LINCS algorithm was used to constrain hydrogen bonds (Hess et al., 1997). We performed 1.6 \u00b5s production run for the system and used Frontera (TACC), and Midway2 (Research Computing Center at the University of Chicago) to run these simulations.\n\nThe RMSD of the protein and RMSF per residue (Figure 5B and C) were calculated using the GROMACS module. The center-of-mass distances between two residues (Figure 5G and H), number of C\u03b1 contacts between two monomers (Figure 5D), and angles between transmembrane and cytosolic regions (Figure 5F) were also calculated using the GROMACS package (Abraham et al., 2015). The analysis of the M pocket was performed using the HOLE program (Smart et al., 1996) implemented in MDAnalysis (Michaud-Agrawal et al., 2011; Figure 5I and J). In Figure 5J, each frame was taken at a 4 ns time step. The lipid distribution around the M protein was calculated using the MDAnalysis Python packages (Michaud-Agrawal et al., 2011; Figure 5\u2014figure supplement 1). Visual Molecular Dynamics (VMD) (Humphrey et al., 1996) and PyMOL were used as visualization software.\n",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "cf8320db-4ad4-422b-b943-c2c5903c70de",
+      "submission_id": "cb557814-079b-49bd-a8ee-456c4b28a4ed",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Owen Pornillos, https://ror.org/0153tk833 University of Virginia United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81702.sa0](https://doi.org/10.7554/eLife.81702.sa0)\n\nThe SARS-CoV2 M protein is an abundant protein in the viral envelope and is a potential target for vaccine and therapeutic development. M is one of only four structural proteins that are incorporated into mature SARS-CoV2 virions. This paper describes a single-particle cryo-electron microscopy structure of M in lipid nanodiscs. M forms a dimer similar to the previously characterized SARS-CoV2 ORF3a viroporin, which was proposed to function as an ion channel. Structural analysis and molecular dynamics simulations indicate that, unlike ORF3a, M functions as a structural scaffold protein. The highly charged surface of the M's cytosolic domain suggests how it might interact with other structural proteins and/or the charged RNA genome during virion packaging.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Owen Pornillos, https://ror.org/0153tk833 University of Virginia United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81702.sa1](https://doi.org/10.7554/eLife.81702.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Structure of SARS-CoV-2 M protein in lipid nanodiscs\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Sara Sawyer as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe Reviewers are in agreement that the paper reports an important structure. Both reviewers highlight some questions that they would like the authors to address in a revision:\n\n1) Please elaborate on the time scale of the MD simulation and how it is informative on protein function.\n\n2) Please update the discussion on available functional data, in light of the new structure.\n\nReviewer #1 (Recommendations for the authors):\n\nI have no strong comments or criticisms. The work is very well done, the writing is clear, and the figures are well designed and very clear. The work is overall relatively simple, with the structure being the main result and the supporting molecular dynamics contributing somewhat.\n\nOne point I would hope that the authors could clarify concerns the molecular dynamics simulations: These were apparently carried out to determine whether the M protein is flexible, as had been suggested by some prior (indirect) data. But, is 1.6 microseconds enough time to confidently say that the M protein is conformationally stable? I'm not familiar with the literature concerning MD to study conformational changes, but my naive sense is that one needs to do a very long simulation to see large-scale conformational changes. However, I'm not sure what \"very long\" means in this context. Some clarification, and perhaps a bit more explanation in the text, would be helpful.\n\nI am hopeful that the authors are using their ability to purify this protein for further interesting experiments, which need not be included in this work but would nonetheless be very interesting for future studies. For example, direct interaction assays with the cytosolic domain of the S protein or the C-terminal domain of the N protein. Biochemical and even structural characterization of these interactions, should they prove to be specific enough, would be extremely exciting.\n\nReviewer #2 (Recommendations for the authors):\n\nDolan and colleagues report cryo-EM structure of the SARS-CoV-2 M protein. It is an impressive achievement in that the authors obtained ~3.5 \u00c5 resolution structure of a small 50 kDa membrane protein. The structural data and analyses were clearly presented in this manuscript. Molecular dynamics simulations supported the rather rigid structural scaffold of the M protein. One concern is that the study did not include any functional data of M, thus providing no mechanistic insight into its role in viral assembly. Otherwise, the manuscript is well written and suitable for publication.\n",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "bc6892f5-ef94-4534-8fb9-38b18c503405",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C1",
+      "claim": "SARS-CoV-2 encodes four structural proteins incorporated into virions: spike (S), envelope (E), nucleocapsid (N), and membrane (M).",
+      "claim_type": "EXPLICIT",
+      "source": "SARS-CoV-2 encodes four structural proteins incorporated into virions, spike (S), envelope (E), nucleocapsid (N), and membrane (M).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citation to established knowledge about coronavirus structural proteins.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "ccb991b9-af24-46fb-9984-4c87c721eaf1",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C2",
+      "claim": "M plays an essential role in viral assembly by organizing other structural proteins through physical interactions and directing them to sites of viral budding.",
+      "claim_type": "EXPLICIT",
+      "source": "M plays an essential role in viral assembly by organizing other structural proteins through physical interactions and directing them to sites of viral budding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations in the introduction section.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "f1114e9f-e58a-440a-a5c9-693e557f83e1",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C3",
+      "claim": "M is the most abundant protein in the viral envelope.",
+      "claim_type": "EXPLICIT",
+      "source": "As the most abundant protein in the viral envelope and a target of patient antibodies, M is a compelling target for vaccines and therapeutics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "18bb19bf-6397-479f-b08e-06104398e7f8",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C4",
+      "claim": "M is a target of patient antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "As the most abundant protein in the viral envelope and a target of patient antibodies, M is a compelling target for vaccines and therapeutics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to studies showing anti-M antibodies in infected patients.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "cabe3ce1-b525-456e-bd5f-c4fbd845c0ee",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C5",
+      "claim": "The cryo-EM structure of SARS-CoV-2 M in lipid nanodiscs was determined to 3.5 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we present the cryo-EM structure of SARS-CoV-2 M in lipid nanodiscs to 3.5 \u00c5 resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the abstract and supported by experimental data in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "a1c0e0ce-9688-46f4-8bf1-d40103b719b1",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C6",
+      "claim": "M forms a 50 kDa homodimer.",
+      "claim_type": "EXPLICIT",
+      "source": "M forms a 50 kDa homodimer that is structurally related to the SARS-CoV-2 ORF3a viroporin, suggesting a shared ancestral origin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by gel filtration chromatography data and the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "2e3c724d-341b-4253-9c38-7d83a73ad111",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C7",
+      "claim": "M is structurally related to the SARS-CoV-2 ORF3a viroporin, suggesting a shared ancestral origin.",
+      "claim_type": "EXPLICIT",
+      "source": "M forms a 50 kDa homodimer that is structurally related to the SARS-CoV-2 ORF3a viroporin, suggesting a shared ancestral origin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural comparison data and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "82634247-87b5-4709-b7f8-355a83b69cc7",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C8",
+      "claim": "Intersubunit gaps create a small, enclosed pocket in M.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural comparisons reveal how intersubunit gaps create a small, enclosed pocket in M and large open cavity in ORF3a, consistent with a structural role and ion channel activity, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural analysis and cavity measurements presented in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "15919357-bf70-4d1b-898e-573269c6c6b9",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C9",
+      "claim": "Intersubunit gaps create a large open cavity in ORF3a.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural comparisons reveal how intersubunit gaps create a small, enclosed pocket in M and large open cavity in ORF3a, consistent with a structural role and ion channel activity, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural comparison data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "a93d115f-41be-4329-8c33-b7b7d1e9c905",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C10",
+      "claim": "The small enclosed pocket in M is consistent with a structural role.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural comparisons reveal how intersubunit gaps create a small, enclosed pocket in M and large open cavity in ORF3a, consistent with a structural role and ion channel activity, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural features observed.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "ae86090d-6bd5-4f96-88a5-f24921f308f8",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C11",
+      "claim": "The large open cavity in ORF3a is consistent with ion channel activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural comparisons reveal how intersubunit gaps create a small, enclosed pocket in M and large open cavity in ORF3a, consistent with a structural role and ion channel activity, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on structural features and known function of ORF3a.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "4e879649-b155-4658-8e98-0e005ab10d2a",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C12",
+      "claim": "M displays a strikingly electropositive cytosolic surface.",
+      "claim_type": "EXPLICIT",
+      "source": "M displays a strikingly electropositive cytosolic surface that may be important for interactions with N, S, and viral RNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrostatic surface potential calculations shown in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "71683f21-06a5-455d-8b5a-9741e2b8eccf",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C13",
+      "claim": "The electropositive cytosolic surface of M may be important for interactions with N, S, and viral RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "M displays a strikingly electropositive cytosolic surface that may be important for interactions with N, S, and viral RNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the observed structural features.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "06178b90-deef-4ff8-8253-03234a470172",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C14",
+      "claim": "Molecular dynamics simulations show a high degree of structural rigidity of M in a simple lipid bilayer.",
+      "claim_type": "EXPLICIT",
+      "source": "Molecular dynamics simulations show a high degree of structural rigidity in a simple lipid bilayer and support a role for M homodimers in scaffolding viral assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by MD simulation data presented in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "b5a4e260-4b61-4203-a2e3-a6600e416447",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C15",
+      "claim": "Molecular dynamics simulations support a role for M homodimers in scaffolding viral assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Molecular dynamics simulations show a high degree of structural rigidity in a simple lipid bilayer and support a role for M homodimers in scaffolding viral assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the MD simulation results showing structural stability.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "bf71718f-541b-443d-a04a-2c51157b04d5",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C16",
+      "claim": "S proteins protrude from the virion, creating the eponymous corona in electron micrographs.",
+      "claim_type": "EXPLICIT",
+      "source": "S proteins protrude from the virion, creating the eponymous corona in electron micrographs, and mediate fusion of viral and host cell membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about coronavirus structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "91d81132-12eb-4e0a-9ddb-89c10096121f",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C17",
+      "claim": "S proteins mediate fusion of viral and host cell membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "S proteins protrude from the virion, creating the eponymous corona in electron micrographs, and mediate fusion of viral and host cell membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about spike protein function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "d72436e4-d9aa-4cda-986e-54bfa4b9242b",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C18",
+      "claim": "E proteins form cationic viroporins that promote viral assembly and modulate the host immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "E proteins form cationic viroporins that promote viral assembly and modulate the host immune response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about E protein function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "090365c8-d651-4e57-8eae-f39e25e103ad",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C19",
+      "claim": "N is an RNA-binding protein that packages the viral RNA genome.",
+      "claim_type": "EXPLICIT",
+      "source": "N is an RNA-binding protein that packages the viral RNA genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about nucleocapsid protein function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "4b54ce3b-931d-4b4b-a7e4-7735a380f15a",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C20",
+      "claim": "M organizes the assembly and structure of new virions and is essential for virus formation.",
+      "claim_type": "EXPLICIT",
+      "source": "M organizes the assembly and structure of new virions and is essential for virus formation (Sturman et al., 1980; Armstrong et al., 1984; Yu et al., 2021; Finkel et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "ce5955f8-cfe5-4699-b537-cf9c6d802449",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C21",
+      "claim": "Anti-M antibodies are found in plasma of patients infected with SARS-CoV-2 and other coronaviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "M is the most abundant membrane protein in the viral envelope and anti-M antibodies are found in plasma of patients infected with SARS-CoV-2 and other coronaviruses (Godet et al., 1992; He et al., 2005; Hotop et al., 2022; Heffron et al., 2021; Martin et al., 2021; J\u00f6rri\u00dfen et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to clinical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "0e07f1df-a602-41b8-8bf4-6724e422f291",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C22",
+      "claim": "M has been proposed as a target for coronavirus vaccines or therapeutics based on its functional importance and immunogenicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on its functional importance and immunogenicity, M has been proposed as a target for coronavirus vaccines or therapeutics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the properties of M described in the literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "1d02957f-df2f-43c6-b514-9d5f20c57204",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C23",
+      "claim": "M mediates virus assembly and budding by interacting with all other structural proteins in infected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In infected cells, M mediates virus assembly and budding by interacting with all other structural proteins and directing their localization to the ER-Golgi intermediate compartment (Masters, 2006; de Haan et al., 1999; Cavanagh, 2005; Siu et al., 2008; Neuman et al., 2011; Kuo et al., 2016a; Kuo et al., 2016b; Lim and Liu, 2001; Boson et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "29672412-32f2-41bd-b5a8-7db11b10f551",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C24",
+      "claim": "M directs localization of other structural proteins to the ER-Golgi intermediate compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "In infected cells, M mediates virus assembly and budding by interacting with all other structural proteins and directing their localization to the ER-Golgi intermediate compartment (Masters, 2006; de Haan et al., 1999; Cavanagh, 2005; Siu et al., 2008; Neuman et al., 2011; Kuo et al., 2016a; Kuo et al., 2016b; Lim and Liu, 2001; Boson et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "178e4086-e43a-4edb-b2e1-0e800b9cf51b",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C25",
+      "claim": "M is proposed to interact with E through its transmembrane region.",
+      "claim_type": "EXPLICIT",
+      "source": "M is proposed to interact with E through its transmembrane region and S and N through a cytosolic C-terminal region (Kuo et al., 2016a; Kuo et al., 2016b; Lim and Liu, 2001; Boson et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "1a158558-d946-4356-82f2-590133d95fd9",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C26",
+      "claim": "M is proposed to interact with S and N through a cytosolic C-terminal region.",
+      "claim_type": "EXPLICIT",
+      "source": "M is proposed to interact with E through its transmembrane region and S and N through a cytosolic C-terminal region (Kuo et al., 2016a; Kuo et al., 2016b; Lim and Liu, 2001; Boson et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "3570e8f3-62dd-4373-89eb-3190ad729823",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C27",
+      "claim": "ER export and Golgi localization sequences in M determine its subcellular localization.",
+      "claim_type": "EXPLICIT",
+      "source": "ER export and Golgi localization sequences in M determine its subcellular localization and M, in turn, modulates localization and posttranslational processing of S to promote virion assembly (Boson et al., 2021; Perrier et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "dc470b61-525b-4fd9-9973-5a0078f6db56",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C28",
+      "claim": "M modulates localization and posttranslational processing of S to promote virion assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "ER export and Golgi localization sequences in M determine its subcellular localization and M, in turn, modulates localization and posttranslational processing of S to promote virion assembly (Boson et al., 2021; Perrier et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "31f56f73-23b6-4959-84b3-17f5705074a7",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C29",
+      "claim": "M is required for minimal virus-like particle (VLP) formation in transfected cells across a wide range of coronaviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Across a wide range of coronaviruses (including SARS-CoV-2, SARS-CoV-1, MERS, mouse hepatitis virus [MHV], infectious bronchitis virus, and transmittable gastroenteritis virus), M is required for minimal virus-like particle (VLP) formation in transfected cells (Siu et al., 2008; Vennema et al., 1996; Hsieh et al., 2005; Xu et al., 2020; Plescia et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to VLP formation studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "e74e2ffa-b73b-4a64-b698-803e82d3679b",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C30",
+      "claim": "M is insufficient for VLP formation alone.",
+      "claim_type": "EXPLICIT",
+      "source": "M is insufficient for VLP formation alone, however, and co-required components vary in different systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to VLP formation studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "baafab8e-a681-486b-8148-565527eaded0",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C31",
+      "claim": "SARS-CoV-2 VLP formation requires M co-expression with S or N.",
+      "claim_type": "EXPLICIT",
+      "source": "SARS-CoV-2 VLP formation requires M co-expression with S or N (Xu et al., 2020; Plescia et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to SARS-CoV-2 VLP studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "d1ff0937-5824-4eef-ab93-9bb30eb198cc",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C32",
+      "claim": "M inhibits the innate immune response by interfering with MAVS-mediated signaling and interferon production.",
+      "claim_type": "EXPLICIT",
+      "source": "M inhibits the innate immune response by interfering with MAVS-mediated signaling and interferon production (Fu et al., 2021; Sui et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to immunology studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "5e32810c-3491-489b-ae7f-55eef306df4d",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C33",
+      "claim": "M expression results in lung epithelial cell apoptosis in vitro and in vivo in mouse models of infection.",
+      "claim_type": "EXPLICIT",
+      "source": "In mouse models of infection, M expression results in lung epithelial cell apoptosis in vitro and in vivo and may contribute to lung injury and pulmonary edema found in severe disease (Sui et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a mouse model study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "5d32ef9a-d570-4c7f-a906-d114651d77b9",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C34",
+      "claim": "M may contribute to lung injury and pulmonary edema found in severe disease.",
+      "claim_type": "EXPLICIT",
+      "source": "In mouse models of infection, M expression results in lung epithelial cell apoptosis in vitro and in vivo and may contribute to lung injury and pulmonary edema found in severe disease (Sui et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the cited mouse model study.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "75039d57-9e16-4f94-9b6e-fbaf66ecc33d",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C35",
+      "claim": "MHV M was proposed to adopt long and compact structures that differentially facilitate membrane bending and recruitment of other structural proteins based on low-resolution tomographic analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "MHV M was proposed to adopt long and compact structures that differentially facilitate membrane bending and recruitment of other structural proteins based on low-resolution tomographic analysis (Neuman et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a tomography study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "8aeaab93-3824-4a58-8664-c26768ccf9b3",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C36",
+      "claim": "A structural and evolutionary relationship between SARS-CoV-2 M and the accessory viroporin ORF3a was reported based on predicted homology to experimental ORF3a structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, a structural and evolutionary relationship between SARS-CoV-2 M and the accessory viroporin ORF3a was reported (Tan et al., 2021; Pezeshkian et al., 2021) based on predicted homology to our experimental ORF3a structures (Kern et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prediction studies and the experimental ORF3a structure.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "c290784e-6e9c-43d3-9ac7-3fa576f4cf20",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C37",
+      "claim": "Full-length M was expressed in Spodoptera frugiperda (Sf9) cells with a cleavable C-terminal GFP tag.",
+      "claim_type": "EXPLICIT",
+      "source": "Full-length M was expressed in Spodoptera frugiperda (Sf9) cells with a cleavable C-terminal GFP tag.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "85258013-be11-412d-bc4f-9445205612a6",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C38",
+      "claim": "Gel filtration chromatography of protein extracted in DDM/CHS detergent shows M runs predominantly as a single species consistent with a 50 kDa homodimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Gel filtration chromatography of protein extracted in DDM/CHS detergent shows M runs predominantly as a single species consistent with a 50 kDa homodimer.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "8ea6aa11-db5b-420f-9cc1-4e713b77cd63",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C39",
+      "claim": "There is no evidence of specific higher-order oligomerization of M at low concentrations by fluorescence size exclusion chromatography or at higher concentrations in large-scale purifications.",
+      "claim_type": "EXPLICIT",
+      "source": "We do not observe evidence of specific higher-order oligomerization at low concentrations by fluorescence size exclusion chromatography or at higher concentrations in large-scale purifications (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "ce4ab76c-03c3-4580-b37b-8f8ccb55175a",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C40",
+      "claim": "SARS-CoV-2 ORF3a assembles into stable homodimers and homotetramers under similar conditions to M.",
+      "claim_type": "EXPLICIT",
+      "source": "SARS-CoV-2 ORF3a, in contrast, assembles into stable homodimers and homotetramers under similar conditions (Kern et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the ORF3a structure paper.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "6e5fa810-d8e6-4f15-aac3-539737534629",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C42",
+      "claim": "The N-terminus (amino acids 1\u201316) and C-terminus (amino acids 205\u2013222) of M are not resolved in the map and were not modeled.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-terminus (amino acids 1\u201316) and C-terminus (amino acids 205\u2013222) are not resolved in the map and were not modeled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of limitations in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "ae4af495-8807-4305-a5d3-4e4b19d32d99",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C43",
+      "claim": "Loops connecting transmembrane helices (amino acids 36\u201342 and 71\u201378) are the least well-resolved regions of the M structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Loops connecting transmembrane helices (amino acids 36\u201342 and 71\u201378) are the least well-resolved regions of the structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the cryo-EM map quality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "11e32b7e-6528-48af-be2c-4e4d10f72665",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C44",
+      "claim": "The relatively weak density of loops connecting transmembrane helices is consistent with a lack of stabilizing interactions between these and other M regions and likely indicates they adopt a range of conformations among particles used to generate the final map.",
+      "claim_type": "EXPLICIT",
+      "source": "The relatively weak density is consistent with a lack of stabilizing interactions between these and other M regions and likely indicates they adopt a range of conformations among particles used to generate the final map.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed density in the cryo-EM map.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "8060316f-c999-46ed-a6e3-3b615dc29b56",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C45",
+      "claim": "M is ~70 \u00c5 tall when viewed from the membrane with an ~40 \u00c5 transmembrane spanning region and ~30 \u00c5 cytosolic domain extending into the intracellular solution.",
+      "claim_type": "EXPLICIT",
+      "source": "M is ~70 \u00c5 tall when viewed from the membrane with an ~40 \u00c5 transmembrane spanning region and ~30 \u00c5 cytosolic domain (CD) extending into the intracellular solution (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "7a044937-23db-44d9-aaa1-ab150f7b00d4",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C46",
+      "claim": "Each subunit of M contains an extracellular or lumenal N-terminus, three transmembrane helices (amino acids 17\u201336, 43\u201371, and 79\u2013105) connected by short linkers, and a \u03b2-strand rich C-terminal cytosolic domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Each subunit contains an extracellular or lumenal N-terminus, three transmembrane helices (amino acids 17\u201336, 43\u201371, and 79\u2013105) connected by short linkers, and a \u03b2-strand rich C-terminal cytosolic domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the structure determined by cryo-EM.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "d9e2bd62-4c95-412c-9107-49c84f6ed4aa",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C47",
+      "claim": "AlphaFold and RoseTTAFold predicted M structures diverge substantially from the experimental structure.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that AlphaFold and RoseTTAFold predicted M structures diverge substantially from the experimental structure (Figure 1\u2014figure supplement 3; Heo and Feig, 2020; Jumper et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of the experimental structure to predicted structures shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "6a40f219-e2fd-43df-9695-8c9c50158873",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C48",
+      "claim": "In the predicted structures, TM1s are swapped between subunits in addition to differences in the relative positions of transmembrane and cytosolic domains.",
+      "claim_type": "EXPLICIT",
+      "source": "In the predicted structures, TM1s are swapped between subunits in addition to differences in the relative positions of transmembrane and cytosolic domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of differences between experimental and predicted structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "3b666703-be1e-4c53-9188-6468ec24a62c",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C49",
+      "claim": "TM1-TM3 from each M subunit is positioned along a flattened ellipse with a long major (~50 \u00c5) and short minor (~16 \u00c5) axis when viewed from above.",
+      "claim_type": "EXPLICIT",
+      "source": "Viewed from above, TM1-TM3 from each subunit is positioned along a flattened ellipse with a long major (~50 \u00c5) and short minor (~16 \u00c5) axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "b4639d1d-e1fc-499b-b79c-f042ffbc715b",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C50",
+      "claim": "Within each M subunit, TM2-TM3 are closely juxtaposed and tightly packed while TM1-TM2 are more distant and loosely connected.",
+      "claim_type": "EXPLICIT",
+      "source": "Within each subunit, TM2-TM3 are closely juxtaposed and tightly packed while TM1-TM2 are more distant and loosely connected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the structure determined by cryo-EM.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "5682705d-98a5-4446-94e9-69324cb892cb",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C51",
+      "claim": "The two M subunits assemble along their long axis, with TM1 from one protomer forming extensive interactions with the TM2-TM3 unit of the second protomer.",
+      "claim_type": "EXPLICIT",
+      "source": "The two subunits assemble along their long axis, with TM1 from one protomer forming extensive interactions with the TM2-TM3 unit of the second protomer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the dimer interface in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "9b20b520-422a-42a5-bf67-8819004a6fb4",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C52",
+      "claim": "As the three transmembrane helices of M project toward the cytoplasm, they twist counterclockwise and splay outward in the inner leaflet, creating an expanded ellipse with ~55 and ~40 \u00c5 axes at the intracellular leaflet.",
+      "claim_type": "EXPLICIT",
+      "source": "As they project toward the cytoplasm, the three transmembrane helices twist counterclockwise and splay outward in the inner leaflet, creating an expanded ellipse with ~55 and ~40 \u00c5 axes at the intracellular leaflet.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description and measurement from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "20db70dd-161d-40a6-8c79-1a6bc945e641",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C53",
+      "claim": "The transmembrane region of M is connected to the cytosolic domain through a tight turn-helix-turn segment comprised of residues 106\u2013116.",
+      "claim_type": "EXPLICIT",
+      "source": "The transmembrane region is connected to the cytosolic domain through a tight turn-helix-turn segment comprised of residues 106\u2013116.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the structure determined by cryo-EM.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "ce38d71c-3b36-4782-8b41-07fd8d293125",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C54",
+      "claim": "Within the cytosolic domain of M, each protomer chain forms a pair of opposing \u03b2-sheets packed against one another in an eight stranded \u03b2-sandwich.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the cytosolic domain, each protomer chain forms a pair of opposing \u03b2-sheets packed against one another in an eight stranded \u03b2-sandwich (Figure 1B and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the structure determined by cryo-EM.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "e204f2fe-27b7-43fa-b818-3ba8d2ddc23c",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C55",
+      "claim": "The outer sheet of the M cytosolic domain is formed by strands \u03b21, \u03b22, \u03b26, the N-terminal half of \u03b27, and the C-terminal half of \u03b28.",
+      "claim_type": "EXPLICIT",
+      "source": "The outer sheet is formed by strands \u03b21, \u03b22, \u03b26, the N-terminal half of \u03b27, and the C-terminal half of \u03b28.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the structure determined by cryo-EM.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "9bfa5118-045e-46d9-99c6-a11c52731e13",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C56",
+      "claim": "The inner sheet of the M cytosolic domain is formed by strands \u03b23, \u03b24, \u03b25, the C-terminal half of \u03b27, and the N-terminal half of \u03b28.",
+      "claim_type": "EXPLICIT",
+      "source": "The inner sheet is formed by strands \u03b23, \u03b24, \u03b25, the C-terminal half of \u03b27, and the N-terminal half of \u03b28.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the structure determined by cryo-EM.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "8e39bffd-c557-4382-afd2-756174fdee76",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C57",
+      "claim": "The inner sheets from each M protomer interact through a large (~690 \u00c52 buried surface area per chain) and complementary interface.",
+      "claim_type": "EXPLICIT",
+      "source": "The inner sheets from each protomer interact through a large (~690 \u00c52 buried surface area per chain) and complementary interface with residues L138, V139, V143, L145, F193, A195 contributing to a hydrophobic core surrounded by additional polar interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement and description from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "2c305997-c6ca-49ba-b2d4-d17a327a9cb8",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C58",
+      "claim": "Residues L138, V139, V143, L145, F193, A195 of M contribute to a hydrophobic core at the interface between inner sheets.",
+      "claim_type": "EXPLICIT",
+      "source": "The inner sheets from each protomer interact through a large (~690 \u00c52 buried surface area per chain) and complementary interface with residues L138, V139, V143, L145, F193, A195 contributing to a hydrophobic core surrounded by additional polar interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the structure determined by cryo-EM.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "07a73f6e-1726-4d26-8255-a57f1619254a",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C59",
+      "claim": "SARS-CoV-2 ORF3a is the only structural homolog of M with a shared fold when comparing the M structure to all experimentally determined protein structures using Dali.",
+      "claim_type": "EXPLICIT",
+      "source": "Using Dali (Holm, 2020) to compare the M structure to all experimentally determined protein structures returns SARS-CoV-2 ORF3a (Kern et al., 2021) as the only structural homolog with a shared fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural comparison using the Dali database.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "33c1aeef-a26e-465e-8fc1-79a54c5549c4",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C60",
+      "claim": "Superposition of M and ORF3a reveals a similar fold topology and homodimeric assembly with an overall RMSD of 4.4 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Superposition of the two viral proteins reveals a similar fold topology and homodimeric assembly with an overall RMSD of 4.4 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "2c8fa6af-b718-44c4-8d45-8bc23f782415",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C61",
+      "claim": "Isolated transmembrane and cytosolic domains from individual M and ORF3a protomers are better superimposed (RMSD = 2.7 and 2.5 \u00c5, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Isolated transmembrane and cytosolic domains from individual protomers are better superimposed (RMSD = 2.7 and 2.5 \u00c5, respectively) (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement from structural comparison shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "5a1cc4b0-1619-4e65-ad47-96bda5428743",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C62",
+      "claim": "Substantial differences in M and ORF3a structure are observed in three regions: TM2-TM3, the transmembrane-cytosolic domain junction, and the cytoplasmic domain interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Substantial differences in M and ORF3a structure are observed in three regions: TM2-TM3, the transmembrane-cytosolic domain junction, and the cytoplasmic domain interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of structural comparison results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "f0a4e9c6-2fa5-44bf-9a7b-5362830ef659",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C63",
+      "claim": "TM1s of M and ORF3a are well superimposed.",
+      "claim_type": "EXPLICIT",
+      "source": "TM1s of M and ORF3a are well superimposed, but TM2-TM3 of M are splayed further out into the membrane and are less twisted about the twofold symmetry axis to create a flatter and tighter interaction surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of structural comparison results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "6b86e25f-c852-4acc-9372-a76d642fce7b",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C64",
+      "claim": "TM2-TM3 of M are splayed further out into the membrane and are less twisted about the twofold symmetry axis compared to ORF3a to create a flatter and tighter interaction surface.",
+      "claim_type": "EXPLICIT",
+      "source": "TM1s of M and ORF3a are well superimposed, but TM2-TM3 of M are splayed further out into the membrane and are less twisted about the twofold symmetry axis to create a flatter and tighter interaction surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of structural comparison results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "a95292a7-e43b-41f6-bfee-2570698af83f",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C65",
+      "claim": "The angle between TM3 and the cytosolic domain is ~25\u00b0 more acute in M compared to ORF3a.",
+      "claim_type": "EXPLICIT",
+      "source": "The angle between TM3 and the cytosolic domain is ~25\u00b0 more acute in M.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "ded4d349-b380-4a73-9f15-5c2338029a66",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C66",
+      "claim": "The cytosolic domains of M are rotated ~15\u00b0 away from the symmetry axis relative to ORF3a, shifting the cytosolic domain interface between subunits further from the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The cytosolic domains of M are rotated ~15\u00b0 away from the symmetry axis relative to ORF3a, shifting the cytosolic domain interface between subunits further from the membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "b6628e68-5e81-46da-8a65-65771f2a7b41",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C67",
+      "claim": "Association of subunits in the M homodimer creates a polar and, presumably, water-filled pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "Association of subunits in the M homodimer creates a polar and, presumably, water-filled pocket, reminiscent of the polar cavity created between subunits in ORF3a.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the structure with speculation about water content.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "824b5767-f075-4b7b-8776-d74b0751ec8e",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C68",
+      "claim": "The M pocket is ~\u2153 smaller with an enclosed volume of ~840 \u00c53 compared to ~1300 \u00c53 in ORF3a.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the M pocket is ~\u2153 smaller with an enclosed volume of ~840 \u00c53 compared to ~1300 \u00c53 in ORF3a.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from cavity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "828c04e2-4f5b-4b49-9871-d6539ad0b39c",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C69",
+      "claim": "The M pocket is completely sealed by protein to the surrounding membrane and cytoplasm; no openings large enough for water passage are observed connecting the pocket and protein exterior.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the M pocket is completely sealed by protein to the surrounding membrane and cytoplasm; no openings large enough for water passage are observed connecting the pocket and protein exterior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description from cavity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "f493ee73-468f-46be-9d4d-8d98d96adb34",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C70",
+      "claim": "ORF3a displays three pairs of tunnels connecting its internal cavity to the membrane and cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, ORF3a displays three pairs of tunnels connecting its internal cavity to the membrane and cytoplasm (two are displayed in Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the ORF3a structure and shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "6a0c5699-9c8f-4fff-8c7b-f5075aaa220e",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C71",
+      "claim": "In M, the gap between subunits is confined to the region between cytosolic domains because transmembrane helices from opposing subunits form tight interactions across the entire lipid bilayer.",
+      "claim_type": "EXPLICIT",
+      "source": "In M, the gap between subunits is confined to the region between cytosolic domains because transmembrane helices from opposing subunits form tight interactions across the entire lipid bilayer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "b9271226-089c-453a-98a3-f9fc8bcd1cc6",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C72",
+      "claim": "In ORF3a, the gap extends from the region between cytosolic domains to approximately halfway across the membrane because transmembrane helices are less tightly associated across the membrane inner leaflet.",
+      "claim_type": "EXPLICIT",
+      "source": "In ORF3a, the gap extends from the region between cytosolic domains to approximately halfway across the membrane because transmembrane helices are less tightly associated across the membrane inner leaflet.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the ORF3a structure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "de3b2a80-309d-4f96-849c-256d18bbb29e",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C73",
+      "claim": "The cytosolic domain of M is strikingly electropositive across nearly the entire exposed surface.",
+      "claim_type": "EXPLICIT",
+      "source": "The cytosolic domain of M is strikingly electropositive across nearly the entire exposed surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrostatic surface potential calculations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "27fe2d2e-0927-4c30-9fc2-9424a89c39a7",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C74",
+      "claim": "Electropositive character of M is contributed by 17 basic amino acids in three surface patches.",
+      "claim_type": "EXPLICIT",
+      "source": "Electropositive character is contributed by 17 basic amino acids in three surface patches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description from structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "16bed58e-b6ac-44a0-8410-001919bc771d",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C75",
+      "claim": "The first electropositive patch on M covers the wide face of the cytosolic domains and consists of eight residues (R44, H125, R131, R146, H148, H155, R158, and R198).",
+      "claim_type": "EXPLICIT",
+      "source": "The first covers the wide face of the cytosolic domains and consists of eight residues (R44, H125, R131, R146, H148, H155, R158, and R198).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description from structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "3dd27cb7-aba9-4497-8fa8-0715a3bb15aa",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C76",
+      "claim": "The second electropositive patch on M covers the narrow face of M and consists of four residues (R101, R105, R107, and R174).",
+      "claim_type": "EXPLICIT",
+      "source": "The second covers the narrow face of M and consists of four residues (R101, R105, R107, and R174).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description from structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "5b18c430-ab59-40e2-98f6-85447f73aa3e",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C77",
+      "claim": "The third electropositive patch on M covers the underside of M and consists of five residues (K162, K166, K180, R186, and R200).",
+      "claim_type": "EXPLICIT",
+      "source": "The third covers the underside of M and consists of five residues (K162, K166, K180, R186, and R200).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description from structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "08e68abb-b996-4f97-b5c3-b6c58b144dc4",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C78",
+      "claim": "ORF3a presents mixed electrostatic character with electropositive patches closer to the membrane and electronegative patches toward the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "ORF3a, in contrast, presents mixed electrostatic character with electropositive patches closer to the membrane and electronegative patches toward the cytoplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrostatic surface potential calculations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "f25d4d17-9523-42dc-8e6f-24c46fbf343d",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C79",
+      "claim": "Uniform electropositivity across the M cytosolic surface could facilitate the close juxtaposition of M present at high concentration in viral envelope with the negatively charged viral RNA genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Such uniform electropositivity across the M cytosolic surface could facilitate the close juxtaposition of M present at high concentration in viral envelope with the negatively charged viral RNA genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the observed structural features.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "8a1544df-a0e7-4e21-b0ea-7806ab5b8bae",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C80",
+      "claim": "The large, complementary, and hydrophobic interface between transmembrane and cytosolic regions of subunits in the M structure suggests a structurally rigid core.",
+      "claim_type": "EXPLICIT",
+      "source": "The large, complementary, and hydrophobic interface between transmembrane and cytosolic regions of subunits in the M structure suggests a structurally rigid core.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed structural features.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "86e00f88-bdb2-43f6-979e-051778115792",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C81",
+      "claim": "M was equilibrated in a lipid environment and an all-atom MD simulation was run for 2 \u00b5s.",
+      "claim_type": "EXPLICIT",
+      "source": "We equilibrated M in a lipid environment and ran an all-atom MD simulation for 2 \u00b5s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the computational method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "1efd8bf7-504c-480f-97db-33f62bad993e",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C82",
+      "claim": "Major conformational changes related to protein function typically take place on a timescale ranging from a microsecond to seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "Major conformational changes related to protein function typically take place on a timescale ranging from a microsecond to seconds (Xue et al., 2012; Klepeis et al., 2009; Don et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies on protein dynamics.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "1afc20c6-94a6-40a0-8536-4b5f34876c99",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C83",
+      "claim": "Microsecond simulations can capture large conformational changes of membrane proteins in a lipid bilayer.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior work has reported that microsecond simulations can capture large conformational changes of membrane proteins in a lipid bilayer (Monje-Galvan and Voth, 2021; Brandner et al., 2019; Nury et al., 2010; Monje-Galvan and Voth, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous MD simulation studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "5947382e-b341-4780-b5e0-fe451c17604f",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C84",
+      "claim": "Substantial conformational rearrangements in M were not observed during the MD simulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we did not observe substantial conformational rearrangements in M during the simulation (Figure 5A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MD simulation data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "6f908d82-1062-4fb7-941c-1a105b1b1bcd",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C85",
+      "claim": "Superposition of the experimental and final M structure following the simulation shows minor deviations through most of the protein (overall RMSD of 2.5 \u00c5).",
+      "claim_type": "EXPLICIT",
+      "source": "Superposition of the experimental and final M structure following the simulation shows minor deviations through most of the protein (overall RMSD of 2.5 \u00c5) (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement from MD simulation analysis shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "2555b2bc-dfb9-44d8-a046-b94a5c6f2081",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C86",
+      "claim": "The largest difference in M structure during MD simulation is a shift in TM1 up toward the extracellular/lumenal side by approximately half a helical turn, enabled by rearrangement of the TM1-TM2 linker.",
+      "claim_type": "EXPLICIT",
+      "source": "The largest difference is a shift in TM1 up toward the extracellular/lumenal side by approximately half a helical turn, enabled by rearrangement of the TM1-TM2 linker (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of MD simulation results shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "3eb402ae-03d8-4479-90ff-078021f9600d",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C87",
+      "claim": "The relatively subtle movement of TM1 in MD simulation is consistent with weaker density for the TM1-TM2 linker in the cryo-EM map and fewer packing interactions for TM1 than TM2 or TM3.",
+      "claim_type": "EXPLICIT",
+      "source": "This relatively subtle movement is consistent with weaker density for the TM1-TM2 linker in the cryo-EM map and fewer packing interactions for TM1 than TM2 or TM3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting MD simulation results to cryo-EM observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "fc4c483a-c119-436c-973f-7299a14a79d0",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C88",
+      "claim": "Per residue deviations in M during MD simulation ranged from ~1 to 4 \u00c5 and were largest in the TM2-TM3 linker, transmembrane to cytosolic region connection, and loops connecting strands in the cytosolic domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Per residue deviations ranged from ~1 to 4 \u00c5 and, aside from the movement of TM1, were similar between subunits and largest in the TM2-TM3 linker, transmembrane to cytosolic region connection, and loops connecting strands in the cytosolic domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of MD simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "1c049b58-cd22-46d9-9cd2-fde6aef2109e",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C89",
+      "claim": "Minimal structural deviation was observed during the MD simulation within or between M subunits as judged by the number of close C\u03b1 contacts, the angle between transmembrane and cytosolic regions, the distance between transmembrane regions, or the distance between cytosolic domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Minimal structural deviation was observed during the simulation within or between subunits as judged by the number of close C\u03b1 contacts, the angle between transmembrane and cytosolic regions, the distance between transmembrane regions, or the distance between cytosolic domains (Figure 5D\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MD simulation analysis shown in Figure 5D-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "3e8654a6-b953-4456-9924-51c86946e2b5",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C90",
+      "claim": "No obvious enrichment of specific lipids around M was identified following MD simulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with limited movement of the transmembrane region and a lack of evidence for lipid binding in the cryo-EM structure, no obvious enrichment of specific lipids around M was identified following simulation (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by lipid distribution analysis from MD simulation shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "69c5c397-e31a-4b7b-b739-d1987092e9cf",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C91",
+      "claim": "The internal M pocket remained similar in size and sealed from the surrounding solution throughout the MD simulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the internal M pocket remained similar in size and sealed from the surrounding solution throughout the simulation (Figure 5I and J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by pocket analysis from MD simulation shown in Figure 5I and J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "50649e0a-56b9-4444-8d56-ca08fa5d802e",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C92",
+      "claim": "M adopts a stable structure with minimal dynamic rearrangements on the microsecond timescale, at physiological temperature, and in the absence of additional binding proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data suggest that M adopts a stable structure with minimal dynamic rearrangements on the microsecond timescale, at physiological temperature, and in the absence of additional binding proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the MD simulation results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "cee68e93-a00f-4e36-a070-a6d636cf452c",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C93",
+      "claim": "The MD simulation results are consistent with the absence of other highly populated conformations in the cryo-EM data.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with the absence of other highly populated conformations in our cryo-EM data, though we cannot exclude the possibility that M undergoes rare large-scale conformational changes under these conditions not captured in the simulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting MD simulation and cryo-EM results with acknowledgment of limitations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "cf272c1f-b2e8-4f8f-8e5b-6a53ed098420",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C94",
+      "claim": "M is considerably wider and flatter than ORF3a when viewed from the plane of the membrane, due to differences in transmembrane helix packing and a rotation about the central axis of the cytosolic domain.",
+      "claim_type": "EXPLICIT",
+      "source": "When viewed from the plane of the membrane, M is considerably wider and flatter than ORF3a, due to differences in transmembrane helix packing and a rotation about the central axis of the cytosolic domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description from structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "e39d6e6c-0ed5-4dcd-b69f-dd164bd9b4ee",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C95",
+      "claim": "M shows a tighter dimer interface closer to the membrane outer leaflet compared to ORF3a.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the consequences of this flattening out of M are distinct differences in the dimer interface across the membrane, where M shows a tighter dimer interface closer to the membrane outer leaflet as well as a gap between cytosolic domain subunits that forms an enclosed pocket lined by polar residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description from structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "dde7f189-8ee7-4267-a2d1-b8dec1b07d62",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C96",
+      "claim": "In ORF3a, transmembrane regions are less closely opposed and a gap between subunits extends from halfway across the membrane to halfway down the cytosolic domains.",
+      "claim_type": "EXPLICIT",
+      "source": "In ORF3a, transmembrane regions are less closely opposed and a gap between subunits extends from halfway across the membrane to halfway down the cytosolic domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description from structural comparison.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "96aec246-5f32-4724-abaf-101c4668c704",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C97",
+      "claim": "Mutations in the ORF3a cavity alter ion channel activity, consistent with the cavity forming part of the conduction path.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in the ORF3a cavity alter ion channel activity, consistent with the cavity forming part of the conduction path.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous functional studies of ORF3a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "fa0e2e4e-d577-44aa-8bec-d44577d5e3d8",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C98",
+      "claim": "Tight subunit association may be important for the structural role of M.",
+      "claim_type": "EXPLICIT",
+      "source": "Tight subunit association may therefore be important for the structural role of M, while loose subunit association that creates a large open cavity may be essential for the viroporin activity of ORF3a.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on structural comparison.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "8a0344fa-4a19-43fb-95ce-06e4f670eebd",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C99",
+      "claim": "Loose subunit association that creates a large open cavity may be essential for the viroporin activity of ORF3a.",
+      "claim_type": "EXPLICIT",
+      "source": "Tight subunit association may therefore be important for the structural role of M, while loose subunit association that creates a large open cavity may be essential for the viroporin activity of ORF3a.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on structural comparison and known function.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "72b1d148-b5d0-450f-864a-d1bdc1488da4",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C100",
+      "claim": "There is no evidence that M forms higher-order oligomers under experimental conditions similar to those where ORF3a forms stable tetramers.",
+      "claim_type": "EXPLICIT",
+      "source": "In further contrast to ORF3a, which was seen to form stable tetramers through electrostatic interactions between neighboring dimers, we see no evidence that M forms higher-order oligomers under similar experimental conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from gel filtration chromatography.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "b6c6e797-ff56-4bcb-9a9e-9cfa5c1defa4",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C101",
+      "claim": "Surface characteristics of the M dimer lend credence to the possibility that M exists solely as a dimer in the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Surface characteristics of the M dimer lend credence to the possibility that M exists solely as a dimer in the membrane \u2013 one striking feature of the M C-terminal \u03b2-sandwich domain is the presence of three sizable patches of positive charge that dominate its solvent exposed surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on structural observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "3cb5c5da-182b-4a76-9f6e-b50e94196a92",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C102",
+      "claim": "MD simulations of M show that the dimer is stable and does not readily adopt alternate conformations at physiological temperature over the 1.6 \u00b5s trajectory.",
+      "claim_type": "EXPLICIT",
+      "source": "MD simulations of M show that the dimer is stable and does not readily adopt alternate conformations at physiological temperature over the 1.6 \u00b5s trajectory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by MD simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "7b56477b-04ff-48e0-b396-a7c6ed662775",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C103",
+      "claim": "M could play a structural role in mediating morphological changes in host cell membranes through interactions with other SARS-CoV-2 structural proteins and perhaps negatively charged lipid headgroups or viral RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that M could play a structural role in mediating morphological changes in host cell membranes through interactions with other SARS-CoV-2 structural proteins and perhaps negatively charged lipid headgroups or viral RNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the structural features and MD simulation results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "acc236c3-f1fa-4926-b89f-e5b6da427db0",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C104",
+      "claim": "A complementary study published during review includes two structures of SARS-CoV-2 M solubilized in detergent micelles and in complex with Fab antibody fragments bound to the cytosolic domain.",
+      "claim_type": "EXPLICIT",
+      "source": "A complementary study published during review of this work includes two structures of SARS-CoV-2 M solubilized in detergent micelles and in complex with Fab antibody fragments bound to the cytosolic domain (Zhang et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to a complementary study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "a8eb6715-845a-4064-b0b8-5a1f8fd77263",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C105",
+      "claim": "One structure from the complementary study (termed short form) is similar to the structure reported in this work.",
+      "claim_type": "EXPLICIT",
+      "source": "One structure (termed short form) is similar to that reported here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to another published structure.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "2e2a3eaa-e68d-4713-918d-8734885c8b78",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C106",
+      "claim": "The second structure from the complementary study (termed long form) adopts a distinct conformation that is taller and narrower in the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The second structure (termed long form) adopts a distinct conformation that is taller and narrower in the membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of another published structure.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "89ca26f4-0c2c-482b-8fa9-aa169a3c16ad",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C107",
+      "claim": "The short and long form conformations are suggestive of short and long forms of MHV M observed in low-resolution tomograms.",
+      "claim_type": "EXPLICIT",
+      "source": "The conformations are suggestive of short and long forms of MHV M observed in low-resolution tomograms (Neuman et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the observed structures to previous tomography data.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "ffbd444a-91f3-4a88-8386-d140a3ed8f39",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C108",
+      "claim": "M in a simple lipid mixture predominantly adopts the short form.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggests that M in a simple lipid mixture predominantly adopts the short form.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the cryo-EM and MD simulation data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "4a7b83fb-440b-4f10-8e86-4a4be310c153",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C109",
+      "claim": "The alternate M long form, stabilized by Fab binding for structure determination, may be similarly promoted in a physiological context by interactions with lipids, spike, N, or viral RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "It may be that the alternate M long form, stabilized by Fab binding for structure determination, is similarly promoted in a physiological context by interactions with lipids, spike, N, or viral RNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the physiological relevance of the long form.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "61e83dfc-e8af-4b8c-99b1-6f4e1ed9d2e7",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C110",
+      "claim": "Evidence for possible higher-order oligomerization of M was reported in some 2D classes of M solubilized in a different detergent.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence for possible higher-order oligomerization was also reported in some 2D classes of M solubilized in a different detergent, suggesting that M-M interactions may occur under certain biochemical conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to observations from the complementary study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "0cd84dba-aa2e-4e86-bf3b-e424293ff871",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C111",
+      "claim": "M-M interactions may occur under certain biochemical conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence for possible higher-order oligomerization was also reported in some 2D classes of M solubilized in a different detergent, suggesting that M-M interactions may occur under certain biochemical conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on observations from the complementary study.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "9e35ff61-198b-4ade-8922-56eb5389992d",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C112",
+      "claim": "M has been shown to play a crucial role in viral assembly through protein-protein interactions with other coronavirus structural proteins such as N and S.",
+      "claim_type": "EXPLICIT",
+      "source": "M has been shown to play a crucial role in viral assembly through protein-protein interactions with other coronavirus structural proteins such as N and S.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "0ef23f91-601a-4bbc-b379-52920b03d176",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C113",
+      "claim": "Spike proteins are incorporated into coronavirus virions via interactions between the cytosolic tail of S and the cytosolic domain of M.",
+      "claim_type": "EXPLICIT",
+      "source": "Spike proteins are incorporated into coronavirus virions via interactions between the cytosolic tail of S and the cytosolic domain of M, however the precise details of this interaction are unknown (Boson et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "75ca234d-f601-4c18-be21-3ed5e4f31586",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C114",
+      "claim": "The precise details of the interaction between S and M are unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "Spike proteins are incorporated into coronavirus virions via interactions between the cytosolic tail of S and the cytosolic domain of M, however the precise details of this interaction are unknown (Boson et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges a gap in current knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "02230359-46b2-4350-9589-96159e5038c1",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C115",
+      "claim": "Several recent studies have suggested that the C-terminal domain of N is the site of interaction between SARS-CoV-2 M and N.",
+      "claim_type": "EXPLICIT",
+      "source": "Several recent studies have suggested that the C-terminal domain of N is the site of interaction between SARS-CoV-2 M and N, but as with S a precise binding site has not been established (Cubuk et al., 2021; Lu et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "b5e7a112-2e29-4153-a20c-e755f7f9502d",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C116",
+      "claim": "A precise binding site for M-N interaction has not been established.",
+      "claim_type": "EXPLICIT",
+      "source": "Several recent studies have suggested that the C-terminal domain of N is the site of interaction between SARS-CoV-2 M and N, but as with S a precise binding site has not been established (Cubuk et al., 2021; Lu et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges a gap in current knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "cad63957-b8fd-4e79-b2e9-4cd83be396a9",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C117",
+      "claim": "M-N interactions may be mediated by favorable electrostatic interactions between negatively charged residues of the N CTD and one or more of the basic patches identified on the surface of the cytosolic domain of M.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that M-N interactions are mediated by favorable electrostatic interactions between negatively charged residues of the N CTD and one or more of the basic patches identified on the surface of the cytosolic domain of M, a model supported by co-immunoprecipitation of N and M proteins expressed in 293T cells (Zhang et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by co-immunoprecipitation data from a cited study.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "f680938e-7c97-475e-96cf-efd4d842f816",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C118",
+      "claim": "Through the abundance of M dimers in the membrane of SARS-CoV-2 virions, M and N together might facilitate VLP formation via a mechanism similar to the Gag precursor of HIV.",
+      "claim_type": "EXPLICIT",
+      "source": "Through the sheer abundance of M dimers found in the membrane of SARS-CoV-2 virions, M and N together might facilitate VLP formation via a mechanism similar to the Gag precursor of HIV, where the high concentration of M C-terminal domains at the cytoplasmic membrane surface recruit and organize many N proteins that together physically extrude a membranous bud.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the mechanism of VLP formation based on structural features and analogy to HIV.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "22126604-39c8-4bc4-a585-57728b4589af",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C119",
+      "claim": "The World Health Organization puts the confirmed number of COVID-19 cases worldwide at nearly 530 million.",
+      "claim_type": "EXPLICIT",
+      "source": "At present the World Health Organization puts the confirmed number of COVID-19 cases worldwide at nearly 530 million.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about COVID-19 case numbers from WHO.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "a73cd5be-30c0-492f-a947-66ece052773d",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C120",
+      "claim": "The SARS-CoV-2 virus has undergone many mutations over the last 2 years that have been extensively documented through sequencing efforts worldwide.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the last 2 years the SARS-CoV-2 virus has undergone many mutations that have been extensively documented through sequencing efforts worldwide (Hadfield et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to sequencing database.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "51724dd2-9954-4e41-a16f-a60652968548",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C121",
+      "claim": "The M protein sequence has remained virtually unchanged despite many mutations in SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this, the M protein sequence has remained virtually unchanged \u2013 a testament to the critical role that M plays in viral replication and assembly (Cagliani et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a sequence analysis study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "b798ee5b-dd94-4f10-bdc6-fecfed31ff6d",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C122",
+      "claim": "The conservation of M protein sequence is a testament to the critical role that M plays in viral replication and assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this, the M protein sequence has remained virtually unchanged \u2013 a testament to the critical role that M plays in viral replication and assembly (Cagliani et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on sequence conservation data.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "cbbaffc6-be8c-4d3e-9a63-a87a39f98bfa",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C123",
+      "claim": "The N-terminus of M (only 20 amino acids in length) has been found to be highly immunogenic in COVID-19 patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, while only 20 amino acids in length, the N-terminus of M has been found to be highly immunogenic in COVID-19 patients (Hotop et al., 2022; Heffron et al., 2021; Martin et al., 2021; J\u00f6rri\u00dfen et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to immunology studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "a7f13a54-e3b3-4bef-aa8d-f11b3e397157",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C124",
+      "claim": "M has been shown to modulate innate immune response and could contribute to lung injury often seen in severe cases.",
+      "claim_type": "EXPLICIT",
+      "source": "M has also been shown to modulate innate immune response and could contribute to lung injury often seen in severe cases (Fu et al., 2021; Sui et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to immunology and pathology studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "0192aec3-c183-4ce3-9723-d8209a016bc0",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C125",
+      "claim": "M presents an attractive target for therapeutics or vaccines given its importance in the coronavirus life cycle and pathogenicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Given its clear importance in the coronavirus life cycle and pathogenicity, M presents an attractive target for therapeutics or vaccines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the functional importance and immunogenicity of M.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "c7c23940-0dac-4881-b301-3bd057021bc7",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C126",
+      "claim": "M is well conserved across Coronaviridae.",
+      "claim_type": "EXPLICIT",
+      "source": "While M is well conserved across Coronaviridae (Figure 1\u2014figure supplement 4), it shows particularly high conservation between SARS-CoV-1 and SARS-CoV-2, with a sequence similarity of 90.54%, highlighting its potential as a therapeutic target for emergent coronaviruses in the future.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence alignment shown in Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "8dea1b1f-021b-471f-b0db-0e4e28a328d9",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C127",
+      "claim": "M shows particularly high conservation between SARS-CoV-1 and SARS-CoV-2, with a sequence similarity of 90.54%.",
+      "claim_type": "EXPLICIT",
+      "source": "While M is well conserved across Coronaviridae (Figure 1\u2014figure supplement 4), it shows particularly high conservation between SARS-CoV-1 and SARS-CoV-2, with a sequence similarity of 90.54%, highlighting its potential as a therapeutic target for emergent coronaviruses in the future.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from sequence comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "fd4204bb-1386-410a-bcfd-f6ee8c185758",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "claim_id": "C128",
+      "claim": "The high conservation of M between SARS-CoV-1 and SARS-CoV-2 highlights its potential as a therapeutic target for emergent coronaviruses in the future.",
+      "claim_type": "EXPLICIT",
+      "source": "While M is well conserved across Coronaviridae (Figure 1\u2014figure supplement 4), it shows particularly high conservation between SARS-CoV-1 and SARS-CoV-2, with a sequence similarity of 90.54%, highlighting its potential as a therapeutic target for emergent coronaviruses in the future.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on sequence conservation data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7c6a4b7a-1152-4153-ba45-f9b263a1aa14",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The cryo-EM structure of SARS-CoV-2 M protein in lipid nanodiscs was determined to 3.5 \u00c5 resolution, revealing that M forms a 50 kDa homodimer. The structure shows M contains three transmembrane helices per subunit connected to a \u03b2-strand rich cytosolic domain, with specific architectural features including an ~70 \u00c5 height, flattened elliptical transmembrane arrangement, and a large hydrophobic interface between subunits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The cryo-EM structure determination is well-documented with appropriate resolution (C5), supported by gel filtration data confirming the homodimeric state (C38), and detailed structural descriptions are consistent with the reported density map quality and modeling (C42-C58). The experimental workflow from expression through structure determination follows standard protocols and the structural features are directly observable in the presented data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "acc98a91-e206-4241-89b6-f3d3475d342b",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "SARS-CoV-2 M protein is structurally related to the SARS-CoV-2 ORF3a viroporin, with ORF3a being the only structural homolog identified by Dali search. The proteins share similar fold topology and homodimeric assembly (RMSD 4.4 \u00c5 overall, 2.7 \u00c5 and 2.5 \u00c5 for isolated transmembrane and cytosolic domains), but M is wider and flatter than ORF3a due to differences in transmembrane helix packing and cytosolic domain orientation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structural homology is supported by systematic Dali database comparison (C59) and quantitative RMSD measurements (C60-C61). The specific structural differences are well-documented with angular measurements (C65-C66) and detailed descriptions of conformational variations (C62-C64, C94). This represents a novel finding connecting two SARS-CoV-2 proteins through structural analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "7c526ee5-5fc9-4d27-83d4-2e2b1fd7a0e1",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Structural comparison reveals that M contains a small enclosed pocket (~840 \u00c5\u00b3) completely sealed from the surrounding environment, while ORF3a contains a larger open cavity (~1300 \u00c5\u00b3) with tunnels connecting to membrane and cytoplasm. In M, the gap between subunits is confined to the cytosolic domain region, whereas in ORF3a it extends halfway across the membrane.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The cavity measurements are quantitative (C68) and supported by structural analysis using CASTp software (C69). The differences in pocket/cavity architecture are clearly described with specific structural features explaining the distinctions (C71-C72). The comparison provides mechanistic insight into functional differences between the two proteins.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "43cd5ae8-4d00-4a2f-b78f-2fd6c139e6fe",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The structural features of M and ORF3a are consistent with their distinct functional roles: the small enclosed pocket in M supports a structural role, while the large open cavity in ORF3a is consistent with ion channel activity. Tight subunit association may be important for M's structural role, while loose association creating an open cavity may be essential for ORF3a's viroporin activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the structural observations are well-supported (C8-C9, C68-C72), the functional interpretations (C10-C11, C98-C99) are largely speculative inferences based on structural features and prior knowledge of ORF3a function (C97). No direct functional assays of M are presented to test the structural role hypothesis, making these mechanistic claims uncertain despite being structurally plausible.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "79d13760-a89f-42ce-a757-bf4ab93a805b",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The cytosolic domain of M displays a strikingly electropositive surface contributed by 17 basic amino acids organized in three distinct patches, contrasting with ORF3a which presents mixed electrostatic character. The electropositive patches are located on the wide face (8 residues), narrow face (4 residues), and underside (5 residues) of the cytosolic domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The electrostatic surface characterization is supported by computational analysis (C73) with specific residues identified and mapped (C74-C77). The contrast with ORF3a is documented (C78). This is a direct structural observation from the determined structure with clear quantification of contributing residues.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "0caef372-0210-4558-a655-43692fa49ee9",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The electropositive cytosolic surface of M may facilitate interactions with negatively charged partners including N protein, S protein, and viral RNA. M-N interactions may be mediated by electrostatic interactions between the N C-terminal domain and M's basic patches, and M and N together might facilitate VLP formation through a mechanism analogous to HIV Gag.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These are speculative hypotheses (C13, C79, C103, C117, C118) based on the observed electropositive surface and general principles of electrostatic interactions. While the structural observation is solid (C12, C73-C77), no direct binding experiments, mutagenesis studies, or functional assays are presented to test these interaction models. The analogy to HIV Gag is purely speculative without experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "61593452-cab2-4586-9077-3484e35f46cd",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Molecular dynamics simulations over 2 \u03bcs show that M adopts a stable structure with minimal conformational rearrangements at physiological temperature. The overall RMSD is 2.5 \u00c5 with the largest change being a subtle shift in TM1. Multiple structural metrics (C\u03b1 contacts, domain angles, distances, pocket size) remain stable throughout the simulation, and no specific lipid enrichment is observed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The MD simulation is well-documented with appropriate duration (C81, C82-C83 provide context for timescale), and multiple quantitative metrics support structural stability (C85-C91). The simulation parameters and analysis methods are described. The conclusion of structural rigidity (C92, C102) is supported by the data, though the authors appropriately acknowledge limitations regarding rare conformational changes (C93).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "4308115b-13f9-4ca2-8553-0f1913765362",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The structural rigidity observed in MD simulations and the large hydrophobic interface between subunits support a role for M homodimers in scaffolding viral assembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the structural stability is well-demonstrated by MD simulations (C14, C84-C91), the inference that this supports a scaffolding role in viral assembly (C15, C80) is speculative. No assembly assays, VLP formation experiments with M mutants, or other functional data are presented to directly test the scaffolding hypothesis. This remains a plausible but unvalidated inference from structural data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "b227385a-e952-4a50-8eea-390bc0ecdc68",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "AlphaFold and RoseTTAFold predicted structures of M diverge substantially from the experimental structure, with TM1s swapped between subunits and differences in relative domain positions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The comparison between experimental and predicted structures is documented with visual evidence (Figure 1\u2014figure supplement 3) and specific structural differences are described (C48). This represents an important validation of the experimental structure and highlights limitations of computational prediction for this particular protein.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "38a70829-2e9d-4f48-8e66-b68ecbab1f34",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "M does not form higher-order oligomers under experimental conditions similar to those where ORF3a forms stable tetramers. Surface characteristics of the M dimer, particularly the electropositive patches, support the possibility that M exists solely as a dimer in the membrane.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The absence of higher-order oligomerization is supported by multiple experimental approaches including fluorescence size exclusion chromatography and large-scale purifications (C39, C100). The contrast with ORF3a behavior is documented (C40). However, the inference that M exists solely as a dimer (C101) is somewhat speculative, as the authors acknowledge in discussion of the complementary study (C110-C111).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "98fbfa60-6f1f-4e9c-9576-0af3fa3dc5a0",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "A complementary study reported two M conformations (short and long forms), with the short form similar to the structure reported here. The data suggest M in simple lipid mixtures predominantly adopts the short form, while the long form may be promoted by interactions with other viral components or lipids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This result integrates findings from another study (C104-C107) with the current work. While the comparison is appropriate, the claims about which form predominates (C108) and what promotes the long form (C109) are speculative inferences. The possibility of M-M interactions under certain conditions (C110-C111) is acknowledged but not directly tested in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "abe5dd5f-80ce-4882-adc8-63acbc6e3a7d",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background information on SARS-CoV-2 structural proteins and M protein function, including established roles in viral assembly, interactions with other structural proteins, VLP formation requirements, immune modulation, and prior structural studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent established knowledge from the literature, appropriately cited throughout (C1-C36, C112-C116). They provide necessary context for the study but are not novel findings from this work. The citations appear appropriate and the background accurately represents prior knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "d763a828-f8ae-46c2-8657-a2c1fa7449a2",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "M protein sequence is highly conserved across SARS-CoV-2 variants and shows 90.54% similarity between SARS-CoV-1 and SARS-CoV-2, reflecting its critical role in viral replication. M is immunogenic and modulates immune responses, making it an attractive therapeutic target.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The sequence conservation data is supported by appropriate citations (C120-C122, C126-C127) and sequence analysis (Figure 1\u2014figure supplement 4). The immunogenicity claims are well-cited (C123-C124). However, the conclusion that M is an attractive therapeutic target (C125, C128) is more of an inference/opinion based on these properties rather than a demonstrated result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    },
+    {
+      "id": "6aed0716-d37a-4a80-9ca2-cd89784bd03b",
+      "content_id": "6361a3fd-c932-4ff7-aed6-3f6a35fe2a6c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background on MD simulation timescales: major conformational changes typically occur on microsecond to second timescales, and microsecond simulations can capture large conformational changes of membrane proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims provide methodological context for the MD simulations, supported by appropriate citations to prior simulation studies (C82-C83). This justifies the 2 \u03bcs simulation duration used in the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:38.913289Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "cabe3ce1-b525-456e-bd5f-c4fbd845c0ee",
+      "result_id": "7c6a4b7a-1152-4153-ba45-f9b263a1aa14"
+    },
+    {
+      "claim_id": "a1c0e0ce-9688-46f4-8bf1-d40103b719b1",
+      "result_id": "7c6a4b7a-1152-4153-ba45-f9b263a1aa14"
+    },
+    {
+      "claim_id": "c290784e-6e9c-43d3-9ac7-3fa576f4cf20",
+      "result_id": "7c6a4b7a-1152-4153-ba45-f9b263a1aa14"
+    },
+    {
+      "claim_id": "85258013-be11-412d-bc4f-9445205612a6",
+      "result_id": "7c6a4b7a-1152-4153-ba45-f9b263a1aa14"
+    },
+    {
+      "claim_id": "8ea6aa11-db5b-420f-9cc1-4e713b77cd63",
+      "result_id": "7c6a4b7a-1152-4153-ba45-f9b263a1aa14"
+    },
+    {
+      "claim_id": "6e5fa810-d8e6-4f15-aac3-539737534629",
+      "result_id": "7c6a4b7a-1152-4153-ba45-f9b263a1aa14"
+    },
+    {
+      "claim_id": "ae4af495-8807-4305-a5d3-4e4b19d32d99",
+      "result_id": "7c6a4b7a-1152-4153-ba45-f9b263a1aa14"
+    },
+    {
+      "claim_id": "11e32b7e-6528-48af-be2c-4e4d10f72665",
+      "result_id": "7c6a4b7a-1152-4153-ba45-f9b263a1aa14"
+    },
+    {
+      "claim_id": "8060316f-c999-46ed-a6e3-3b615dc29b56",
+      "result_id": "7c6a4b7a-1152-4153-ba45-f9b263a1aa14"
+    },
+    {
+      "claim_id": "7a044937-23db-44d9-aaa1-ab150f7b00d4",
+      "result_id": "7c6a4b7a-1152-4153-ba45-f9b263a1aa14"
+    },
+    {
+      "claim_id": "3b666703-be1e-4c53-9188-6468ec24a62c",
+      "result_id": "7c6a4b7a-1152-4153-ba45-f9b263a1aa14"
+    },
+    {
+      "claim_id": "b4639d1d-e1fc-499b-b79c-f042ffbc715b",
+      "result_id": "7c6a4b7a-1152-4153-ba45-f9b263a1aa14"
+    },
+    {
+      "claim_id": "5682705d-98a5-4446-94e9-69324cb892cb",
+      "result_id": "7c6a4b7a-1152-4153-ba45-f9b263a1aa14"
+    },
+    {
+      "claim_id": "9b20b520-422a-42a5-bf67-8819004a6fb4",
+      "result_id": "7c6a4b7a-1152-4153-ba45-f9b263a1aa14"
+    },
+    {
+      "claim_id": "20db70dd-161d-40a6-8c79-1a6bc945e641",
+      "result_id": "7c6a4b7a-1152-4153-ba45-f9b263a1aa14"
+    },
+    {
+      "claim_id": "ce38d71c-3b36-4782-8b41-07fd8d293125",
+      "result_id": "7c6a4b7a-1152-4153-ba45-f9b263a1aa14"
+    },
+    {
+      "claim_id": "e204f2fe-27b7-43fa-b818-3ba8d2ddc23c",
+      "result_id": "7c6a4b7a-1152-4153-ba45-f9b263a1aa14"
+    },
+    {
+      "claim_id": "9bfa5118-045e-46d9-99c6-a11c52731e13",
+      "result_id": "7c6a4b7a-1152-4153-ba45-f9b263a1aa14"
+    },
+    {
+      "claim_id": "8e39bffd-c557-4382-afd2-756174fdee76",
+      "result_id": "7c6a4b7a-1152-4153-ba45-f9b263a1aa14"
+    },
+    {
+      "claim_id": "2c305997-c6ca-49ba-b2d4-d17a327a9cb8",
+      "result_id": "7c6a4b7a-1152-4153-ba45-f9b263a1aa14"
+    },
+    {
+      "claim_id": "2e3c724d-341b-4253-9c38-7d83a73ad111",
+      "result_id": "acc98a91-e206-4241-89b6-f3d3475d342b"
+    },
+    {
+      "claim_id": "07a73f6e-1726-4d26-8255-a57f1619254a",
+      "result_id": "acc98a91-e206-4241-89b6-f3d3475d342b"
+    },
+    {
+      "claim_id": "33c1aeef-a26e-465e-8fc1-79a54c5549c4",
+      "result_id": "acc98a91-e206-4241-89b6-f3d3475d342b"
+    },
+    {
+      "claim_id": "2c8fa6af-b718-44c4-8d45-8bc23f782415",
+      "result_id": "acc98a91-e206-4241-89b6-f3d3475d342b"
+    },
+    {
+      "claim_id": "5a1cc4b0-1619-4e65-ad47-96bda5428743",
+      "result_id": "acc98a91-e206-4241-89b6-f3d3475d342b"
+    },
+    {
+      "claim_id": "f0a4e9c6-2fa5-44bf-9a7b-5362830ef659",
+      "result_id": "acc98a91-e206-4241-89b6-f3d3475d342b"
+    },
+    {
+      "claim_id": "6b86e25f-c852-4acc-9372-a76d642fce7b",
+      "result_id": "acc98a91-e206-4241-89b6-f3d3475d342b"
+    },
+    {
+      "claim_id": "a95292a7-e43b-41f6-bfee-2570698af83f",
+      "result_id": "acc98a91-e206-4241-89b6-f3d3475d342b"
+    },
+    {
+      "claim_id": "ded4d349-b380-4a73-9f15-5c2338029a66",
+      "result_id": "acc98a91-e206-4241-89b6-f3d3475d342b"
+    },
+    {
+      "claim_id": "cf272c1f-b2e8-4f8f-8e5b-6a53ed098420",
+      "result_id": "acc98a91-e206-4241-89b6-f3d3475d342b"
+    },
+    {
+      "claim_id": "82634247-87b5-4709-b7f8-355a83b69cc7",
+      "result_id": "7c526ee5-5fc9-4d27-83d4-2e2b1fd7a0e1"
+    },
+    {
+      "claim_id": "b6628e68-5e81-46da-8a65-65771f2a7b41",
+      "result_id": "7c526ee5-5fc9-4d27-83d4-2e2b1fd7a0e1"
+    },
+    {
+      "claim_id": "824b5767-f075-4b7b-8776-d74b0751ec8e",
+      "result_id": "7c526ee5-5fc9-4d27-83d4-2e2b1fd7a0e1"
+    },
+    {
+      "claim_id": "828c04e2-4f5b-4b49-9871-d6539ad0b39c",
+      "result_id": "7c526ee5-5fc9-4d27-83d4-2e2b1fd7a0e1"
+    },
+    {
+      "claim_id": "6a0c5699-9c8f-4fff-8c7b-f5075aaa220e",
+      "result_id": "7c526ee5-5fc9-4d27-83d4-2e2b1fd7a0e1"
+    },
+    {
+      "claim_id": "15919357-bf70-4d1b-898e-573269c6c6b9",
+      "result_id": "7c526ee5-5fc9-4d27-83d4-2e2b1fd7a0e1"
+    },
+    {
+      "claim_id": "f493ee73-468f-46be-9d4d-8d98d96adb34",
+      "result_id": "7c526ee5-5fc9-4d27-83d4-2e2b1fd7a0e1"
+    },
+    {
+      "claim_id": "b9271226-089c-453a-98a3-f9fc8bcd1cc6",
+      "result_id": "7c526ee5-5fc9-4d27-83d4-2e2b1fd7a0e1"
+    },
+    {
+      "claim_id": "a93d115f-41be-4329-8c33-b7b7d1e9c905",
+      "result_id": "43cd5ae8-4d00-4a2f-b78f-2fd6c139e6fe"
+    },
+    {
+      "claim_id": "ae86090d-6bd5-4f96-88a5-f24921f308f8",
+      "result_id": "43cd5ae8-4d00-4a2f-b78f-2fd6c139e6fe"
+    },
+    {
+      "claim_id": "96aec246-5f32-4724-abaf-101c4668c704",
+      "result_id": "43cd5ae8-4d00-4a2f-b78f-2fd6c139e6fe"
+    },
+    {
+      "claim_id": "fa0e2e4e-d577-44aa-8bec-d44577d5e3d8",
+      "result_id": "43cd5ae8-4d00-4a2f-b78f-2fd6c139e6fe"
+    },
+    {
+      "claim_id": "8a0344fa-4a19-43fb-95ce-06e4f670eebd",
+      "result_id": "43cd5ae8-4d00-4a2f-b78f-2fd6c139e6fe"
+    },
+    {
+      "claim_id": "4e879649-b155-4658-8e98-0e005ab10d2a",
+      "result_id": "79d13760-a89f-42ce-a757-bf4ab93a805b"
+    },
+    {
+      "claim_id": "de3b2a80-309d-4f96-849c-256d18bbb29e",
+      "result_id": "79d13760-a89f-42ce-a757-bf4ab93a805b"
+    },
+    {
+      "claim_id": "27fe2d2e-0927-4c30-9fc2-9424a89c39a7",
+      "result_id": "79d13760-a89f-42ce-a757-bf4ab93a805b"
+    },
+    {
+      "claim_id": "16bed58e-b6ac-44a0-8410-001919bc771d",
+      "result_id": "79d13760-a89f-42ce-a757-bf4ab93a805b"
+    },
+    {
+      "claim_id": "3dd27cb7-aba9-4497-8fa8-0715a3bb15aa",
+      "result_id": "79d13760-a89f-42ce-a757-bf4ab93a805b"
+    },
+    {
+      "claim_id": "5b18c430-ab59-40e2-98f6-85447f73aa3e",
+      "result_id": "79d13760-a89f-42ce-a757-bf4ab93a805b"
+    },
+    {
+      "claim_id": "08e68abb-b996-4f97-b5c3-b6c58b144dc4",
+      "result_id": "79d13760-a89f-42ce-a757-bf4ab93a805b"
+    },
+    {
+      "claim_id": "71683f21-06a5-455d-8b5a-9741e2b8eccf",
+      "result_id": "0caef372-0210-4558-a655-43692fa49ee9"
+    },
+    {
+      "claim_id": "f25d4d17-9523-42dc-8e6f-24c46fbf343d",
+      "result_id": "0caef372-0210-4558-a655-43692fa49ee9"
+    },
+    {
+      "claim_id": "7b56477b-04ff-48e0-b396-a7c6ed662775",
+      "result_id": "0caef372-0210-4558-a655-43692fa49ee9"
+    },
+    {
+      "claim_id": "cad63957-b8fd-4e79-b2e9-4cd83be396a9",
+      "result_id": "0caef372-0210-4558-a655-43692fa49ee9"
+    },
+    {
+      "claim_id": "f680938e-7c97-475e-96cf-efd4d842f816",
+      "result_id": "0caef372-0210-4558-a655-43692fa49ee9"
+    },
+    {
+      "claim_id": "06178b90-deef-4ff8-8253-03234a470172",
+      "result_id": "61593452-cab2-4586-9077-3484e35f46cd"
+    },
+    {
+      "claim_id": "86e00f88-bdb2-43f6-979e-051778115792",
+      "result_id": "61593452-cab2-4586-9077-3484e35f46cd"
+    },
+    {
+      "claim_id": "5947382e-b341-4780-b5e0-fe451c17604f",
+      "result_id": "61593452-cab2-4586-9077-3484e35f46cd"
+    },
+    {
+      "claim_id": "6f908d82-1062-4fb7-941c-1a105b1b1bcd",
+      "result_id": "61593452-cab2-4586-9077-3484e35f46cd"
+    },
+    {
+      "claim_id": "2555b2bc-dfb9-44d8-a046-b94a5c6f2081",
+      "result_id": "61593452-cab2-4586-9077-3484e35f46cd"
+    },
+    {
+      "claim_id": "3eb402ae-03d8-4479-90ff-078021f9600d",
+      "result_id": "61593452-cab2-4586-9077-3484e35f46cd"
+    },
+    {
+      "claim_id": "fc4c483a-c119-436c-973f-7299a14a79d0",
+      "result_id": "61593452-cab2-4586-9077-3484e35f46cd"
+    },
+    {
+      "claim_id": "1c049b58-cd22-46d9-9cd2-fde6aef2109e",
+      "result_id": "61593452-cab2-4586-9077-3484e35f46cd"
+    },
+    {
+      "claim_id": "3e8654a6-b953-4456-9924-51c86946e2b5",
+      "result_id": "61593452-cab2-4586-9077-3484e35f46cd"
+    },
+    {
+      "claim_id": "69c5c397-e31a-4b7b-b739-d1987092e9cf",
+      "result_id": "61593452-cab2-4586-9077-3484e35f46cd"
+    },
+    {
+      "claim_id": "50649e0a-56b9-4444-8d56-ca08fa5d802e",
+      "result_id": "61593452-cab2-4586-9077-3484e35f46cd"
+    },
+    {
+      "claim_id": "cee68e93-a00f-4e36-a070-a6d636cf452c",
+      "result_id": "61593452-cab2-4586-9077-3484e35f46cd"
+    },
+    {
+      "claim_id": "3cb5c5da-182b-4a76-9f6e-b50e94196a92",
+      "result_id": "61593452-cab2-4586-9077-3484e35f46cd"
+    },
+    {
+      "claim_id": "b5a4e260-4b61-4203-a2e3-a6600e416447",
+      "result_id": "4308115b-13f9-4ca2-8553-0f1913765362"
+    },
+    {
+      "claim_id": "8a1544df-a0e7-4e21-b0ea-7806ab5b8bae",
+      "result_id": "4308115b-13f9-4ca2-8553-0f1913765362"
+    },
+    {
+      "claim_id": "d9e2bd62-4c95-412c-9107-49c84f6ed4aa",
+      "result_id": "b227385a-e952-4a50-8eea-390bc0ecdc68"
+    },
+    {
+      "claim_id": "6a40f219-e2fd-43df-9695-8c9c50158873",
+      "result_id": "b227385a-e952-4a50-8eea-390bc0ecdc68"
+    },
+    {
+      "claim_id": "72b1d148-b5d0-450f-864a-d1bdc1488da4",
+      "result_id": "38a70829-2e9d-4f48-8e66-b68ecbab1f34"
+    },
+    {
+      "claim_id": "8ea6aa11-db5b-420f-9cc1-4e713b77cd63",
+      "result_id": "38a70829-2e9d-4f48-8e66-b68ecbab1f34"
+    },
+    {
+      "claim_id": "ce4ab76c-03c3-4580-b37b-8f8ccb55175a",
+      "result_id": "38a70829-2e9d-4f48-8e66-b68ecbab1f34"
+    },
+    {
+      "claim_id": "b6c6e797-ff56-4bcb-9a9e-9cfa5c1defa4",
+      "result_id": "38a70829-2e9d-4f48-8e66-b68ecbab1f34"
+    },
+    {
+      "claim_id": "acc236c3-f1fa-4926-b89f-e5b6da427db0",
+      "result_id": "98fbfa60-6f1f-4e9c-9576-0af3fa3dc5a0"
+    },
+    {
+      "claim_id": "a8eb6715-845a-4064-b0b8-5a1f8fd77263",
+      "result_id": "98fbfa60-6f1f-4e9c-9576-0af3fa3dc5a0"
+    },
+    {
+      "claim_id": "2e2a3eaa-e68d-4713-918d-8734885c8b78",
+      "result_id": "98fbfa60-6f1f-4e9c-9576-0af3fa3dc5a0"
+    },
+    {
+      "claim_id": "89ca26f4-0c2c-482b-8fa9-aa169a3c16ad",
+      "result_id": "98fbfa60-6f1f-4e9c-9576-0af3fa3dc5a0"
+    },
+    {
+      "claim_id": "ffbd444a-91f3-4a88-8386-d140a3ed8f39",
+      "result_id": "98fbfa60-6f1f-4e9c-9576-0af3fa3dc5a0"
+    },
+    {
+      "claim_id": "4a7b83fb-440b-4f10-8e86-4a4be310c153",
+      "result_id": "98fbfa60-6f1f-4e9c-9576-0af3fa3dc5a0"
+    },
+    {
+      "claim_id": "61e83dfc-e8af-4b8c-99b1-6f4e1ed9d2e7",
+      "result_id": "98fbfa60-6f1f-4e9c-9576-0af3fa3dc5a0"
+    },
+    {
+      "claim_id": "0cd84dba-aa2e-4e86-bf3b-e424293ff871",
+      "result_id": "98fbfa60-6f1f-4e9c-9576-0af3fa3dc5a0"
+    },
+    {
+      "claim_id": "bc6892f5-ef94-4534-8fb9-38b18c503405",
+      "result_id": "abe5dd5f-80ce-4882-adc8-63acbc6e3a7d"
+    },
+    {
+      "claim_id": "ccb991b9-af24-46fb-9984-4c87c721eaf1",
+      "result_id": "abe5dd5f-80ce-4882-adc8-63acbc6e3a7d"
+    },
+    {
+      "claim_id": "f1114e9f-e58a-440a-a5c9-693e557f83e1",
+      "result_id": "abe5dd5f-80ce-4882-adc8-63acbc6e3a7d"
+    },
+    {
+      "claim_id": "18bb19bf-6397-479f-b08e-06104398e7f8",
+      "result_id": "abe5dd5f-80ce-4882-adc8-63acbc6e3a7d"
+    },
+    {
+      "claim_id": "bf71718f-541b-443d-a04a-2c51157b04d5",
+      "result_id": "abe5dd5f-80ce-4882-adc8-63acbc6e3a7d"
+    },
+    {
+      "claim_id": "91d81132-12eb-4e0a-9ddb-89c10096121f",
+      "result_id": "abe5dd5f-80ce-4882-adc8-63acbc6e3a7d"
+    },
+    {
+      "claim_id": "d72436e4-d9aa-4cda-986e-54bfa4b9242b",
+      "result_id": "abe5dd5f-80ce-4882-adc8-63acbc6e3a7d"
+    },
+    {
+      "claim_id": "090365c8-d651-4e57-8eae-f39e25e103ad",
+      "result_id": "abe5dd5f-80ce-4882-adc8-63acbc6e3a7d"
+    },
+    {
+      "claim_id": "4b54ce3b-931d-4b4b-a7e4-7735a380f15a",
+      "result_id": "abe5dd5f-80ce-4882-adc8-63acbc6e3a7d"
+    },
+    {
+      "claim_id": "ce5955f8-cfe5-4699-b537-cf9c6d802449",
+      "result_id": "abe5dd5f-80ce-4882-adc8-63acbc6e3a7d"
+    },
+    {
+      "claim_id": "0e07f1df-a602-41b8-8bf4-6724e422f291",
+      "result_id": "abe5dd5f-80ce-4882-adc8-63acbc6e3a7d"
+    },
+    {
+      "claim_id": "1d02957f-df2f-43c6-b514-9d5f20c57204",
+      "result_id": "abe5dd5f-80ce-4882-adc8-63acbc6e3a7d"
+    },
+    {
+      "claim_id": "29672412-32f2-41bd-b5a8-7db11b10f551",
+      "result_id": "abe5dd5f-80ce-4882-adc8-63acbc6e3a7d"
+    },
+    {
+      "claim_id": "178e4086-e43a-4edb-b2e1-0e800b9cf51b",
+      "result_id": "abe5dd5f-80ce-4882-adc8-63acbc6e3a7d"
+    },
+    {
+      "claim_id": "1a158558-d946-4356-82f2-590133d95fd9",
+      "result_id": "abe5dd5f-80ce-4882-adc8-63acbc6e3a7d"
+    },
+    {
+      "claim_id": "3570e8f3-62dd-4373-89eb-3190ad729823",
+      "result_id": "abe5dd5f-80ce-4882-adc8-63acbc6e3a7d"
+    },
+    {
+      "claim_id": "dc470b61-525b-4fd9-9973-5a0078f6db56",
+      "result_id": "abe5dd5f-80ce-4882-adc8-63acbc6e3a7d"
+    },
+    {
+      "claim_id": "31f56f73-23b6-4959-84b3-17f5705074a7",
+      "result_id": "abe5dd5f-80ce-4882-adc8-63acbc6e3a7d"
+    },
+    {
+      "claim_id": "e74e2ffa-b73b-4a64-b698-803e82d3679b",
+      "result_id": "abe5dd5f-80ce-4882-adc8-63acbc6e3a7d"
+    },
+    {
+      "claim_id": "baafab8e-a681-486b-8148-565527eaded0",
+      "result_id": "abe5dd5f-80ce-4882-adc8-63acbc6e3a7d"
+    },
+    {
+      "claim_id": "d1ff0937-5824-4eef-ab93-9bb30eb198cc",
+      "result_id": "abe5dd5f-80ce-4882-adc8-63acbc6e3a7d"
+    },
+    {
+      "claim_id": "5e32810c-3491-489b-ae7f-55eef306df4d",
+      "result_id": "abe5dd5f-80ce-4882-adc8-63acbc6e3a7d"
+    },
+    {
+      "claim_id": "5d32ef9a-d570-4c7f-a906-d114651d77b9",
+      "result_id": "abe5dd5f-80ce-4882-adc8-63acbc6e3a7d"
+    },
+    {
+      "claim_id": "75039d57-9e16-4f94-9b6e-fbaf66ecc33d",
+      "result_id": "abe5dd5f-80ce-4882-adc8-63acbc6e3a7d"
+    },
+    {
+      "claim_id": "8aeaab93-3824-4a58-8664-c26768ccf9b3",
+      "result_id": "abe5dd5f-80ce-4882-adc8-63acbc6e3a7d"
+    },
+    {
+      "claim_id": "9e35ff61-198b-4ade-8922-56eb5389992d",
+      "result_id": "abe5dd5f-80ce-4882-adc8-63acbc6e3a7d"
+    },
+    {
+      "claim_id": "0ef23f91-601a-4bbc-b379-52920b03d176",
+      "result_id": "abe5dd5f-80ce-4882-adc8-63acbc6e3a7d"
+    },
+    {
+      "claim_id": "75ca234d-f601-4c18-be21-3ed5e4f31586",
+      "result_id": "abe5dd5f-80ce-4882-adc8-63acbc6e3a7d"
+    },
+    {
+      "claim_id": "02230359-46b2-4350-9589-96159e5038c1",
+      "result_id": "abe5dd5f-80ce-4882-adc8-63acbc6e3a7d"
+    },
+    {
+      "claim_id": "b5e7a112-2e29-4153-a20c-e755f7f9502d",
+      "result_id": "abe5dd5f-80ce-4882-adc8-63acbc6e3a7d"
+    },
+    {
+      "claim_id": "22126604-39c8-4bc4-a585-57728b4589af",
+      "result_id": "d763a828-f8ae-46c2-8657-a2c1fa7449a2"
+    },
+    {
+      "claim_id": "a73cd5be-30c0-492f-a947-66ece052773d",
+      "result_id": "d763a828-f8ae-46c2-8657-a2c1fa7449a2"
+    },
+    {
+      "claim_id": "51724dd2-9954-4e41-a16f-a60652968548",
+      "result_id": "d763a828-f8ae-46c2-8657-a2c1fa7449a2"
+    },
+    {
+      "claim_id": "b798ee5b-dd94-4f10-bdc6-fecfed31ff6d",
+      "result_id": "d763a828-f8ae-46c2-8657-a2c1fa7449a2"
+    },
+    {
+      "claim_id": "cbbaffc6-be8c-4d3e-9a63-a87a39f98bfa",
+      "result_id": "d763a828-f8ae-46c2-8657-a2c1fa7449a2"
+    },
+    {
+      "claim_id": "a7f13a54-e3b3-4bef-aa8d-f11b3e397157",
+      "result_id": "d763a828-f8ae-46c2-8657-a2c1fa7449a2"
+    },
+    {
+      "claim_id": "0192aec3-c183-4ce3-9723-d8209a016bc0",
+      "result_id": "d763a828-f8ae-46c2-8657-a2c1fa7449a2"
+    },
+    {
+      "claim_id": "c7c23940-0dac-4881-b301-3bd057021bc7",
+      "result_id": "d763a828-f8ae-46c2-8657-a2c1fa7449a2"
+    },
+    {
+      "claim_id": "8dea1b1f-021b-471f-b0db-0e4e28a328d9",
+      "result_id": "d763a828-f8ae-46c2-8657-a2c1fa7449a2"
+    },
+    {
+      "claim_id": "fd4204bb-1386-410a-bcfd-f6ee8c185758",
+      "result_id": "d763a828-f8ae-46c2-8657-a2c1fa7449a2"
+    },
+    {
+      "claim_id": "1efd8bf7-504c-480f-97db-33f62bad993e",
+      "result_id": "6aed0716-d37a-4a80-9ca2-cd89784bd03b"
+    },
+    {
+      "claim_id": "1afc20c6-94a6-40a0-8536-4b5f34876c99",
+      "result_id": "6aed0716-d37a-4a80-9ca2-cd89784bd03b"
+    }
+  ],
+  "comparisons": []
+}

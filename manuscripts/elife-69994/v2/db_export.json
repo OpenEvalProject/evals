@@ -1,0 +1,2046 @@
+{
+  "submission": {
+    "id": "25a7af61-7923-4111-8c09-0f751b564e39",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T06:54:38.567602Z",
+    "updated_at": "2025-12-03T06:54:38.567602Z"
+  },
+  "content": [
+    {
+      "id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "submission_id": "25a7af61-7923-4111-8c09-0f751b564e39",
+      "content_type": "manuscript",
+      "content_text": "# Neural dynamics between anterior insular cortex and right supramarginal gyrus dissociate genuine affect sharing from perceptual saliency of pretended pain\n\n## Authors\n\n- Yili Zhao<sup>1</sup> ([ORCID: 0000-0003-4535-6636](https://orcid.org/0000-0003-4535-6636))\n- Lei Zhang<sup>1</sup> ([ORCID: 0000-0002-9586-595X](https://orcid.org/0000-0002-9586-595X))\n- Markus R\u00fctgen<sup>1</sup> ([ORCID: 0000-0003-4947-7734](https://orcid.org/0000-0003-4947-7734))\n- Ronald Sladky<sup>1</sup> ([ORCID: 0000-0002-5986-1572](https://orcid.org/0000-0002-5986-1572))\n- Claus Lamm<sup>1</sup> ([ORCID: 0000-0002-5422-0653](https://orcid.org/0000-0002-5422-0653)) \u2020\n\n### Affiliations\n\n1. Social, Cognitive and Affective Neuroscience Unit, Department of Cognition, Emotion, and Methods in Psychology, Faculty of Psychology, University of Vienna Vienna Austria\n2. Vienna Cognitive Science Hub, University of Vienna Vienna Austria\n\n\u2020 Corresponding author\n\n## Abstract\n\nEmpathy for pain engages both shared affective responses and self-other distinction. In this study, we addressed the highly debated question of whether neural responses previously linked to affect sharing could result from the perception of salient affective displays. Moreover, we investigated how the brain network involved in affect sharing and self-other distinction underpinned our response to a pain that is either perceived as genuine or pretended (while in fact both were acted for reasons of experimental control). We found stronger activations in regions associated with affect sharing (anterior insula [aIns] and anterior mid-cingulate cortex) as well as with affective self-other distinction (right supramarginal gyrus [rSMG]), in participants watching video clips of genuine vs. pretended facial expressions of pain. Using dynamic causal modeling, we then assessed the neural dynamics between the right aIns and rSMG in these two conditions. This revealed a reduced inhibitory effect on the aIns to rSMG connection for genuine pain compared to pretended pain. For genuine pain only, brain-to-behavior regression analyses highlighted a linkage between this inhibitory effect on the one hand, and pain ratings as well as empathic traits on the other. These findings imply that if the pain of others is genuine and thus calls for an appropriate empathic response, neural responses in the aIns indeed seem related to affect sharing and self-other distinction is engaged to avoid empathic over-arousal. In contrast, if others merely pretend to be in pain, the perceptual salience of their painful expression results in neural responses that are down-regulated to avoid inappropriate affect sharing and social support.\n\n## Introduction\n\nAs social beings, our own affective states are influenced by other people\u2019s feelings and affective states. The facial expression of pain by others acts as a distinctive cue to signal their pain to others, and thus results in sizeable affective responses in the observer. Certifying such responses as evidence for empathy, however, requires successful self-other distinction, the ability to distinguish the affective response experienced by ourselves from the affect experienced by the other person.\n\nStudies using a wide variety of methods convergently have shown that observing others in pain engages neural responses aligning with those coding for the affective component of self-experienced pain, with the anterior insula (aIns) and the anterior mid-cingulate cortex (aMCC) being two key areas in which such an alignment has been detected (Lamm et al., 2011; R\u00fctgen et al., 2015; Jauniaux et al., 2019; Xiong et al., 2019; Zhou et al., 2020; Fallon et al., 2020, for meta-analyses). However, there is consistent debate on whether activity observed in these areas should indeed be related to the sharing of pain affect or whether it may not rather result from automatic responses to salient perceptual cues \u2013 with pain vividly expressed on the face being one particularly prominent example (Zaki et al., 2016, for review). It was thus one major aim of our study to address this question. In this respect, contextual factors, individuals\u2019 appraisals, and attentional processes would all impact their exact response to the affective states of others (Gu and Han, 2007; Hein and Singer, 2008, for review; Lamm et al., 2010; Forbes and Hamilton, 2020; Zhao et al., 2021). Recently, Coll et al., 2017 have thus proposed a framework that attempts to capture these influences on affect sharing and empathic responses. This model posits that individuals who see identical negative facial expressions of others may have different empathic responses due to distinct contextual information and that this may depend on identification of the underlying affective state displayed by the other. In the current functional magnetic resonance imaging (fMRI) study, we therefore created a situation where we varied the genuineness of the pain affect felt by participants while keeping the perceptual saliency (i.e., the quality and strength of pain expressions) identical. To this end, participants were shown video clips of other persons who supposedly displayed genuine pain on their face vs. merely pretended to be in pain. Note that for reasons of experimental control, all painful expressions on the videos had been acted. This enabled us to interpret possible differences between conditions to the observers\u2019 appraisal of the situation rather than to putative visual and expressive differences. This way, we sought to identify the extent to which responses in affective nodes (such as the aIns and the aMCC) genuinely track the pain of others, rather than resulting predominantly from the salient facial expressions associated with the pain.\n\nAnother major aim of our study was to assess how self-other distinction allowed individuals to distinguish between the sharing of actual pain vs. regulating an inappropriate and potentially misleading \u2018sharing\u2019 of what in reality is only a pretended affective state. We focused on the right supramarginal gyrus (rSMG), which has been suggested to act as a major hub selectively engaged in affective self-other distinction (Silani et al., 2013; Steinbeis et al., 2015; Hoffmann et al., 2016; Bukowski et al., 2020). Though previous studies have indicated that rSMG is functionally connected with areas associated with affect processing (Mars et al., 2012; Bukowski et al., 2020), we lack more nuanced insights into how exactly rSMG interacts with these areas, and thus how it supports accurate empathic responses. Hence, we used dynamic causal modeling (DCM) to investigate the hypothesized brain patterns of affective responses and self-other distinction for the genuine and pretended pain situations, focusing on the aIns, aMCC, and their interaction with rSMG. Furthermore, we investigated the relationship between neural activity and behavioral responses as well as empathic traits. In line with the literature reviewed above, we expected that, on the behavioral level, genuine pain would result in \u2013 alongside the obvious other-oriented higher pain ratings \u2013 higher self-oriented unpleasantness ratings. On the neural level, we predicted aIns and aMCC to show a stronger response to the genuine expressions of pain, but that these areas would also respond to the pretended pain, but to a lower extent. Differences in rSMG engagement and distinct patterns of this area\u2019s effective connectivity with aIns and aMCC were expected to relate to self-other distinction, and thus to explain the different empathic responses to genuine pain vs. pretended pain.\n\n## Results\n\n### Behavioral results\n\nThree repeated-measures ANOVAs were performed with the factors genuineness (genuine vs. pretended and pain [pain vs. no pain]), for each of the three behavioral ratings. For ratings of painful expressions in others (Figure 1C, left), there was a main effect of the factor genuineness: participants showed higher ratings for the genuine vs. pretended conditions, Fgenuineness (1, 42) = 8.816, p=0.005, \u03b7\u00b2 = 0.173. There was also a main effect of pain: participants showed higher ratings for the pain vs. no pain conditions, Fpain (1, 42) = 1718.645, p<0.001, \u03b7\u00b2 = 0.976. The interaction term was significant as well, Finteraction (1, 42) = 7.443, p=0.009, \u03b7\u00b2 = 0.151, and this was related to higher ratings of painful expressions in others for the genuine pain compared to the pretended pain condition. For ratings of painful feelings in others (Figure 1C, middle), there was a main effect of genuineness: participants showed higher ratings for the genuine vs. pretended conditions, Fgenuineness (1, 42) = 770.140, p<0.001, \u03b7\u00b2 = 0.948. There was also a main effect of pain, as participants showed higher ratings for the pain vs. no pain conditions, Fpain (1, 42) = 1544.762, p<0.001, \u03b7\u00b2 = 0.974. The interaction for painful feelings ratings was significant as well, Finteraction (1, 42) = 752.618, p<0.001, \u03b7\u00b2 = 0.947, and this was related to higher ratings of painful feelings in others for the genuine pain compared to the pretended pain condition. For ratings of unpleasantness in self (Figure 1C, right), there was a main effect of genuineness: participants showed higher ratings for the genuine vs. pretended conditions, Fgenuineness (1, 42) = 74.989, p<0.001, \u03b7\u00b2 = 0.641. There was also a main effect of pain: participants showed higher ratings for the pain vs. no pain conditions, Fpain (1,42) = 254.709, p<0.001, \u03b7\u00b2 = 0.858. The interaction for unpleasantness ratings was significant as well, Finteraction (1, 42) = 73.620, p<0.001, \u03b7\u00b2 = 0.637, and this was related to higher ratings of unpleasantness in self for the genuine pain compared to the pretended pain condition. In sum, the behavioral data indicated higher ratings and large effect sizes of painful feelings in others and unpleasantness in self for the genuine pain compared to the pretended pain condition. Ratings of pain expressions also differed in terms of genuineness, at comparably low effect size, though they were expected to not show a difference by way of our experimental design and the pilot study.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/69994/elife-69994-fig1-v2.jpg)\n\n**Figure 1.:** (A) Overview of the experimental design with the four conditions genuine vs. pretended, pain vs. no pain. Examples show static images, while in the experiment participants were shown video clips. (B) Overview of experimental timeline. At the outset of each block, a reminder of \u2019genuine\u2018 or \u2019pretended\u2018 was shown (both terms are shown here for illustrative purposes, in the experiment either genuine or pretended was displayed). After a fixation cross, a video in the corresponding condition appeared on the screen. Followed by a short jitter, three questions about the video were separately presented and had to be rated on a visual analogue scale. These would then be followed by the next video clip and questions (not shown). (C) Violin plots of the three types of ratings for all conditions. Participants generally demonstrated higher ratings for painful expressions in others, painful feelings in others, and unpleasantness in self in the genuine pain condition than in the pretended pain condition. Ratings of all three questions were higher in the painful situation than in the neutral situation, regardless of whether in the genuine or pretended condition. The thick black lines illustrate mean values, and the white boxes indicate a 95% CI. The dots are individual data, and the \u201cviolin\u201d outlines illustrate their estimated density at different points of the scale. (D) Correlations of painful feelings in others and unpleasantness in self for the genuine pain and the pretended pain (the relevant questions were highlighted with a green rectangular). Results revealed a significant Pearson correlation between the two questions in the genuine pain condition, but no correlation in the pretended pain condition. The lines represent the fitted regression lines, bands indicate a 95% CI.\n\nWe also found a significant correlation between behavioral ratings of painful feelings in others and unpleasantness in self in the genuine pain condition, r = 0.691, p<0.001, while in the pretended pain condition, the correlation was not significant, r = 0.249, p=0.107 (Figure 1D). A bootstrapping comparison showed a significant difference between the two correlation coefficients, p=0.002, 95 % Confidence Interval (CI) = [0.230, 1.060].\n\n### fMRI results: mass-univariate analyses\n\nThree contrasts were computed: (1) genuine: pain \u2013 no pain, (2) pretended: pain \u2013 no pain, and (3) genuine (pain \u2013 no pain) \u2013 pretended (pain \u2013 no pain). Across all three contrasts, we found activations as hypothesized in bilateral aIns, aMCC, and rSMG (Figure 2A and Table 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/69994/elife-69994-fig2-v2.jpg)\n\n**Figure 2.:** (A) Activation maps of genuine: pain \u2013 no pain (top), pretended: pain - no pain (middle), and genuine (pain \u2013 no pain) \u2013 pretended (pain \u2013 no pain) (bottom). As expected, we found brain activations in the bilateral aIns, aMCC, and rSMG in all three contrasts (except for the bottom contrast, where the right aIns is only close to the significance threshold). (B) The multiple regression analysis demonstrated significant clusters in the left (peak: [\u201342, 15,\u20132]) and right anterior insular cortex (peak: [45, 5, 8]) that were positively correlated with the ratings of unpleasantness in self comparing genuine pain vs. pretended pain. All activations are thresholded with cluster-level family-wise error correction, p<0.05 (p<0.001 uncorrected initial selection threshold). The lines of the scatterplots represent the fitted regression lines, bands indicate a 95% confidence interval (CI).\n\n**Table 1.**\n Results of mass-univariate functional segregation analyses in the MNI space.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Region label</th>\n      <th>BA</th>\n      <th>Cluster size</th>\n      <th>X</th>\n      <th>Y</th>\n      <th>Z</th>\n      <th>t-value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"7\">Genuine: pain - no pain</td>\n    </tr>\n    <tr>\n      <td>Lingual_R</td>\n      <td>18</td>\n      <td>183,732</td>\n      <td>11</td>\n      <td>\u221284</td>\n      <td>\u22123</td>\n      <td>13.38</td>\n    </tr>\n    <tr>\n      <td>Temporal_Pole_Sup_R</td>\n      <td>38</td>\n      <td></td>\n      <td>30</td>\n      <td>33</td>\n      <td>\u221233</td>\n      <td>13.31</td>\n    </tr>\n    <tr>\n      <td>Supp_Motor_Area_R</td>\n      <td>8</td>\n      <td></td>\n      <td>5</td>\n      <td>15</td>\n      <td>51</td>\n      <td>12.96</td>\n    </tr>\n    <tr>\n      <td>Supp_Motor_Area_R</td>\n      <td>8</td>\n      <td></td>\n      <td>3</td>\n      <td>17</td>\n      <td>50</td>\n      <td>12.92</td>\n    </tr>\n    <tr>\n      <td>Supp_Motor_Area_L</td>\n      <td>8</td>\n      <td></td>\n      <td>\u22125</td>\n      <td>17</td>\n      <td>48</td>\n      <td>12.56</td>\n    </tr>\n    <tr>\n      <td>Insula_L</td>\n      <td>45</td>\n      <td></td>\n      <td>\u221232</td>\n      <td>26</td>\n      <td>6</td>\n      <td>12.32</td>\n    </tr>\n    <tr>\n      <td>Insula_R</td>\n      <td>45</td>\n      <td></td>\n      <td>33</td>\n      <td>29</td>\n      <td>3</td>\n      <td>12.09</td>\n    </tr>\n    <tr>\n      <td>Frontal_Inf_Oper_R</td>\n      <td>44</td>\n      <td></td>\n      <td>51</td>\n      <td>14</td>\n      <td>15</td>\n      <td>12.01</td>\n    </tr>\n    <tr>\n      <td>Frontal_Inf_Oper_R</td>\n      <td>44</td>\n      <td></td>\n      <td>50</td>\n      <td>12</td>\n      <td>18</td>\n      <td>11.79</td>\n    </tr>\n    <tr>\n      <td>Precentral_L</td>\n      <td>6</td>\n      <td></td>\n      <td>\u221242</td>\n      <td>3</td>\n      <td>39</td>\n      <td>11.72</td>\n    </tr>\n    <tr>\n      <td>Fusiform_R</td>\n      <td>20</td>\n      <td>463</td>\n      <td>36</td>\n      <td>\u22125</td>\n      <td>\u221241</td>\n      <td>5.58</td>\n    </tr>\n    <tr>\n      <td colspan=\"7\">Pretended: pain - no pain</td>\n    </tr>\n    <tr>\n      <td>Supp_Motor_Area_R</td>\n      <td>8</td>\n      <td>59,665</td>\n      <td>5</td>\n      <td>20</td>\n      <td>48</td>\n      <td>11.80</td>\n    </tr>\n    <tr>\n      <td>Supp_Motor_Area_L</td>\n      <td>8</td>\n      <td></td>\n      <td>\u22126</td>\n      <td>18</td>\n      <td>50</td>\n      <td>11.14</td>\n    </tr>\n    <tr>\n      <td>Frontal_Inf_Oper_L</td>\n      <td>44</td>\n      <td></td>\n      <td>\u221250</td>\n      <td>15</td>\n      <td>15</td>\n      <td>10.39</td>\n    </tr>\n    <tr>\n      <td>Insula_R</td>\n      <td>45</td>\n      <td></td>\n      <td>33</td>\n      <td>29</td>\n      <td>0</td>\n      <td>9.81</td>\n    </tr>\n    <tr>\n      <td>Insula_L</td>\n      <td>45</td>\n      <td></td>\n      <td>\u221229</td>\n      <td>30</td>\n      <td>0</td>\n      <td>9.60</td>\n    </tr>\n    <tr>\n      <td>Frontal_Inf_Tri_R</td>\n      <td>44</td>\n      <td></td>\n      <td>47</td>\n      <td>15</td>\n      <td>26</td>\n      <td>9.21</td>\n    </tr>\n    <tr>\n      <td>Precuneus_L</td>\n      <td>7</td>\n      <td>35,136</td>\n      <td>\u22129</td>\n      <td>\u221271</td>\n      <td>41</td>\n      <td>10.27</td>\n    </tr>\n    <tr>\n      <td>Parietal_Inf_L</td>\n      <td>39</td>\n      <td></td>\n      <td>\u221232</td>\n      <td>\u221251</td>\n      <td>41</td>\n      <td>9.39</td>\n    </tr>\n    <tr>\n      <td>Precuneus_R</td>\n      <td>7</td>\n      <td></td>\n      <td>9</td>\n      <td>\u221269</td>\n      <td>38</td>\n      <td>8.44</td>\n    </tr>\n    <tr>\n      <td>Temporal_Mid_L</td>\n      <td>21</td>\n      <td></td>\n      <td>\u221253</td>\n      <td>\u221247</td>\n      <td>5</td>\n      <td>7.67</td>\n    </tr>\n    <tr>\n      <td>Occipital_Mid_L</td>\n      <td>19</td>\n      <td></td>\n      <td>\u221244</td>\n      <td>\u221278</td>\n      <td>2</td>\n      <td>7.47</td>\n    </tr>\n    <tr>\n      <td>Parietal_Inf_R</td>\n      <td>39</td>\n      <td></td>\n      <td>39</td>\n      <td>\u221250</td>\n      <td>41</td>\n      <td>7.25</td>\n    </tr>\n    <tr>\n      <td>Temporal_Mid_R</td>\n      <td>22</td>\n      <td>12,970</td>\n      <td>51</td>\n      <td>\u221220</td>\n      <td>\u20136</td>\n      <td>7.70</td>\n    </tr>\n    <tr>\n      <td>Lingual_R</td>\n      <td>17</td>\n      <td></td>\n      <td>12</td>\n      <td>\u221286</td>\n      <td>\u22122</td>\n      <td>7.40</td>\n    </tr>\n    <tr>\n      <td>Fusiform_R</td>\n      <td>37</td>\n      <td></td>\n      <td>47</td>\n      <td>\u221233</td>\n      <td>\u221227</td>\n      <td>5.32</td>\n    </tr>\n    <tr>\n      <td>Occipital_Mid_R</td>\n      <td>18</td>\n      <td></td>\n      <td>33</td>\n      <td>\u221286</td>\n      <td>3</td>\n      <td>5.23</td>\n    </tr>\n    <tr>\n      <td>Cingulum_Mid_R</td>\n      <td>23</td>\n      <td>1666</td>\n      <td>\u22123</td>\n      <td>\u221214</td>\n      <td>27</td>\n      <td>6.35</td>\n    </tr>\n    <tr>\n      <td>Cingulum_Mid_L</td>\n      <td>23</td>\n      <td></td>\n      <td>\u22123</td>\n      <td>\u221224</td>\n      <td>32</td>\n      <td>5.57</td>\n    </tr>\n    <tr>\n      <td>Temporal_Pole_Sup_R</td>\n      <td>47</td>\n      <td>589</td>\n      <td>32</td>\n      <td>35</td>\n      <td>\u221233</td>\n      <td>7.18</td>\n    </tr>\n    <tr>\n      <td>Frontal_Sup_Orb_R</td>\n      <td>11</td>\n      <td></td>\n      <td>17</td>\n      <td>41</td>\n      <td>\u221224</td>\n      <td>3.36</td>\n    </tr>\n    <tr>\n      <td>Genuine (pain \u2013 no pain) \u2013 pretended (pain \u2013 no pain)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>SupraMarginal_L</td>\n      <td>40</td>\n      <td>1877</td>\n      <td>\u221266</td>\n      <td>\u221221</td>\n      <td>32</td>\n      <td>4.94</td>\n    </tr>\n    <tr>\n      <td>Postcentral_L</td>\n      <td>1</td>\n      <td></td>\n      <td>\u221250</td>\n      <td>\u221221</td>\n      <td>26</td>\n      <td>3.75</td>\n    </tr>\n    <tr>\n      <td>SupraMarginal_R</td>\n      <td>40</td>\n      <td>1833</td>\n      <td>63</td>\n      <td>\u221220</td>\n      <td>42</td>\n      <td>5.09</td>\n    </tr>\n    <tr>\n      <td>Rolandic_Oper_R</td>\n      <td>40</td>\n      <td></td>\n      <td>59</td>\n      <td>\u221215</td>\n      <td>14</td>\n      <td>4.47</td>\n    </tr>\n    <tr>\n      <td>Insula_L</td>\n      <td>13</td>\n      <td>1299</td>\n      <td>\u221238</td>\n      <td>\u22123</td>\n      <td>\u22122</td>\n      <td>5.01</td>\n    </tr>\n    <tr>\n      <td>Rolandic_Oper_L</td>\n      <td>4</td>\n      <td></td>\n      <td>\u221245</td>\n      <td>\u22126</td>\n      <td>8</td>\n      <td>4.8</td>\n    </tr>\n    <tr>\n      <td>Cingulum_Ant_L</td>\n      <td>32</td>\n      <td>1138</td>\n      <td>0</td>\n      <td>41</td>\n      <td>17</td>\n      <td>4.54</td>\n    </tr>\n    <tr>\n      <td>Cingulum_Mid_R</td>\n      <td>32</td>\n      <td></td>\n      <td>2</td>\n      <td>24</td>\n      <td>32</td>\n      <td>4.45</td>\n    </tr>\n    <tr>\n      <td>Cingulum_Mid_L</td>\n      <td>24</td>\n      <td></td>\n      <td>0</td>\n      <td>2</td>\n      <td>35</td>\n      <td>4.43</td>\n    </tr>\n    <tr>\n      <td>Cingulum_Ant_R</td>\n      <td>8</td>\n      <td></td>\n      <td>2</td>\n      <td>32</td>\n      <td>27</td>\n      <td>4.42</td>\n    </tr>\n    <tr>\n      <td>Lingual_R</td>\n      <td>18</td>\n      <td>1003</td>\n      <td>9</td>\n      <td>\u221284</td>\n      <td>\u22123</td>\n      <td>5.72</td>\n    </tr>\n    <tr>\n      <td>Calcarine_R</td>\n      <td>17</td>\n      <td></td>\n      <td>18</td>\n      <td>\u221278</td>\n      <td>8</td>\n      <td>3.61</td>\n    </tr>\n    <tr>\n      <td>Insula_R</td>\n      <td>13</td>\n      <td>225</td>\n      <td>39</td>\n      <td>8</td>\n      <td>\u22123</td>\n      <td>3.91</td>\n    </tr>\n    <tr>\n      <td>Rolandic_Oper_R</td>\n      <td>13</td>\n      <td></td>\n      <td>41</td>\n      <td>0</td>\n      <td>11</td>\n      <td>3.77</td>\n    </tr>\n  </tbody>\n</table>\n\nTo identify whether or which brain activity was selectively related to the behavioral ratings described above, we performed a multiple regression analysis where we explored the relationship of activation in the contrast genuine pain \u2013 pretended pain with the three behavioral ratings. We found significant clusters in bilateral aIns, visual cortex, and cerebellum that could be selectively explained by the ratings of self-unpleasantness rather than ratings of painful expressions in others or painful feelings in others (Figure 2B).\n\n### DCM results\n\nWe performed DCM analysis to specifically examine the modulatory effect of genuineness on the effective connectivity between the right aIns and rSMG. More specifically, we sought to assess whether the experimental manipulation of genuine pain vs. pretended pain tuned the bidirectional neural dynamics from aIns to rSMG and vice versa, in terms of both directionality (sign of the DCM parameter) and intensity (magnitude of the DCM parameter). If the experimental manipulation modulated the effective connectivity, we would observe a strong posterior probability (pp>0.95) of the modulatory effect. Our original analysis plan was to include aMCC in the DCM analyses, but based on the fact that aMCC did not show as strong evidence (in terms of the multiple regression analysis) as the aIns of being involved in our task, we decided to use a more parsimonious DCM model without the aMCC.\n\nWe found strong evidence of inhibitory effects on the aIns to rSMG connection both in the genuine pain condition and in the pretended pain condition (Figure 1A-C). Comparing the strength of these modulatory effects on the aIns to rSMG connection revealed a reduced inhibitory effect for genuine pain as opposed to pretended pain, t41 = 2.671, p=0.011 (meangenuine pain = \u22120.821, 95% CI = [\u22120.878, \u22120.712]; meanpretended pain = \u22120.934, 95% CI = [\u22121.076, \u22120.822]; Figure 3C). There was no evidence of a modulatory effect on the rSMG to aIns connection.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/69994/elife-69994-fig3-v2.jpg)\n\n**Figure 3.:** (A) ROIs included in the DCM: aIns (blue; peak: [33, 29, 2]) and rSMG (green; peak: [41, \u201339, 42]). (B) Posterior probability of modulatory effects for the genuine pain and the pretended pain. (C) The group-average DCM model. Green arrows indicate neural excitation, and orange arrows indicate neural inhibition. Importantly, we found strong evidence of inhibitory effects on the connection of aIns to rSMG for both the genuine pain condition and the pretended pain condition. Values without the bracket quantify the strength of connections and values in the bracket indicate the posterior probability of connections. All DCM parameters of the optimal model showed greater than a 95% posterior probability (i.e., strong evidence) except for the intrinsic connection of aIns to rSMG (pp = 0.80). Paired sample t-test showed less inhibitory effects of the aIns-to-rSMG connection for the genuine pain than the pretended pain. This result is highlighted with a gray rectangular. Data are mean \u00b1 95% CI. (D) The multiple linear regression model revealed a positive correlation between the inhibitory effect and painful feelings in others and not with the other two ratings for genuine pain but no correlation for pretended pain.\n\n### Individual associations between modulatory effects, behavioral ratings, and questionnaires\n\nTo examine how the modulatory effects from the DCM were related to the behavioral ratings, we computed two multiple linear regression models for each condition. For the genuine pain condition, we find that the modulatory effect was significantly related to the rating of painful feelings in others (t = 2.317, p=0.026), but not related to the rating of either painful expressions in others (t = \u22121.492, p=0.144) or unpleasantness in self (t = 0.058, p=0.954). For the pretended pain condition, none of the ratings was significantly related to the modulatory effect (Figure 3D). The variance inflation factors (VIFs) for three ratings in both models were calculated to diagnose collinearity, showing no severe collinearity problem (all VIFs < 5; the smallest VIF = 1.132 and the largest VIF = 4.387).\n\nIn addition, we tested two multiple stepwise linear regression models to investigate whether subscales of all three questionnaires could explain modulatory effects for genuine pain and pretended pain. In the genuine pain condition, we found that the modulatory effect was significantly explained by scores of two subscales, that is affective ability and affective reactivity of the ECQ: Fmodel (1, 39) = 6.829, p=0.003, R2 = 0.270; Baffective ability = 0.052, beta = 0.497, p=0.002; Baffective reactivity = \u22120.040, beta = \u22120.421, p=0.008. No significant predictor was found with the other questionnaires (i.e., IRI and TAS). In the pretended pain condition, none of the three questionnaires significantly predicted variations of the modulatory effect. No severe collinearity problem was detected for either regression model (all VIFs < 2; the smallest VIF = 1.011 and the largest VIF = 1.600).\n\n## Discussion\n\nIn this study, we developed and used a novel experimental paradigm in which participants watched video clips of persons who supposedly either genuinely experienced pain or merely pretended to be in strong pain. Combining mass-univariate analysis with effective connectivity (DCM) analyses, our study provides evidence on the distinct neural dynamics between regions suggestive of affect processing (i.e., aIns and aMCC) and self-other distinction (i.e., rSMG) for genuinely sharing vs. responding to pretended, non-genuine pain. With this, we aimed to clarify two main questions: First, whether neural responses in areas such as the aIns and aMCC to the pain of others are indeed related to a veridical sharing of affect, as opposed to simply tracking automatic responses to salient affective displays. And second, how processes related to self-other distinction, implemented in the rSMG, enable appropriate empathic responses to genuine vs. merely pretended affective states.\n\nThe mass-univariate analyses suggest that the increased activity in aIns for genuine pain as opposed to pretended pain properly reflects affect sharing. As aforementioned, the network of affective sharing and certain domain-general processes (e.g., salience detection and automatic emotion processing) overlap in aIns and aMCC (Zaki et al., 2016, for review). This indicates that indeed, part of the activation in these areas could be related to perceptual salience, which is why it has been widely debated as a potential confound of empathy and affect sharing models (Zaki et al., 2016, for review; Lamm et al., 2019, for review). However, when comparing genuine pain versus pretended pain, activity in these areas was not only found to be stronger in response to genuine pain, but the increased activation in aIns was also selectively correlated with ratings of self-oriented unpleasantness and was not correlated with either other-related painful expressions or painful feelings in terms of the regression analysis. That only aIns and not also aMCC shows such correlation may be explained by previous studies, according to which aIns is more specifically associated with affective representations, while the role of aMCC rather seems to evaluate and regulate emotions that arise due to empathy (Fan et al., 2011; Lamm et al., 2011; Jauniaux et al., 2019). Taken together, the activation and brain-behavior findings provide evidence that responses in aIns (and to a lesser extent also the aMCC) are not simply automatic responses triggered by perceptually salient events (otherwise the increased aIns activation should also be explained by other behavioral ratings in the sense of shared influence by domain-general effects). Rather, they seem to track the actual affective states of the other person, and thus the shared neural representation of that response (see Zhou et al., 2020, for similar recent conclusions based on multi-voxel pattern analyses). Our findings are also in line with the proposed model of Coll et al., 2017, which suggests that affect sharing is the consequence of emotion identification. More specifically, while part of the activation in the aIns and aMCC is indeed related to an (presumably earlier) automatic response, the added engagement of these areas once they have identified the pain as genuine shows that only in this condition, they then also engage in proper affect sharing. Ideally, one should be able to discern these processes in time, but neither the temporal resolution of our fMRI measurements nor the paradigm in which we always announced the conditions beforehand would have been sensitive enough to do so. Thus, future studies including complementary methods, such as EEG and MEG, and tailored experimental designs are needed to pinpoint the exact sequence of processes engaged in automatic affective responses vs. proper affect sharing.\n\nBeyond higher activation in affective nodes supporting (pain) empathy, increased activation was also found in rSMG. The inferior parietal lobule was shown to be generally engaged in selective attention, action observation, and imitating emotions (Bach et al., 2010; Pokorny et al., 2015; Gola, 2017; Hawco et al., 2017). Importantly, a specific role in affective rather than cognitive self-other distinction has been identified for rSMG (Silani et al., 2013; Steinbeis et al., 2015; Bukowski et al., 2020). Based on such findings, it has been proposed that the rSMG allows for a rapid switching between or the integration of self- and other-related representations, as two processes that may underpin the functional basis of successful self-other distinction (Lamm et al., 2016, for review). Theoretical models of empathy and related socio-affective responses suggest that such regulation is especially important to avoid so-called empathic over-arousal, which would shift the focus away from empathy and the other\u2019s needs, toward taking care of one\u2019s own personal distress (Batson et al., 1987, for review; Decety and Lamm, 2011, for review). Concerning the current findings, we thus propose that the higher rSMG engagement in the genuine pain condition reflects an increasing demand for self-other distinction imposed by the stronger shared negative affect experienced in this condition.\n\nBeyond these differences in the magnitude of rSMG activation, the DCM analysis demonstrated less inhibition on the aIns-to-rSMG connection for genuine pain compared to pretended pain. Note that our focus on the right aIns rather than bilateral aIns was because it is located in the same hemisphere as the right SMG. Various theoretical accounts suggest that areas such as the aIns and rSMG may play a key role in comparing self-related information with the sensory evidence (Decety and Lamm, 2007, for review; Seth, 2013, for review). According to recent theories on predictive processing (Clark, 2013, for review) and active inference (Friston, 2010, for review), the brain can be regarded as a \u201cprediction machine\u201d, in which the top-down signals pass over predictions and the bottom-up signals convey prediction errors across different levels of cortical hierarchies (Chen et al., 2009; Friston, 2010, for review; Bastos et al., 2015). It is suggested that these top-down predictions are mediated by inhibitory neural connections (Zhang et al., 2008; Bastos et al., 2015; Miska et al., 2018). Our findings align with such views, by suggesting that the inhibitory connection from aIns to rSMG can be explained as the predictive mismatch between the top-down predictions of self-related information (e.g., personal affect) and sensory inputs (e.g., pain facial expressions). This suppression of neural activity leads to an explaining away of incoming bottom-up prediction error. This is reflected by the absence of any condition-dependent modulatory effects on the rSMG to aIns connection, suggesting that the influence of the task conditions is sufficiently modeled by the predictions from aIns to rSMG. Therefore, the stronger inhibition for pretended pain, compared to genuine pain, could indicate a higher demand to overcome the mismatch between the visual inputs and the agent\u2019s prior beliefs and contextual information about the situation (i.e., \u201cthis person looks like in pain, but I know he/she does not actually feel it\u201d). We speculate that a dynamic interaction between sensory-driven and control processes is underlying the modulatory effect: when individuals realized after an initial sensory-driven response to the facial expression that it was not genuinely expressing pain, control, and appraisal processes led to a reappraisal of the triggered emotional response, and thus a dampening of the unpleasantness. The reduced inhibition in the genuine pain condition could moreover be a mechanism that explains the higher rSMG activation in this condition.\n\nModel comparison showed that the best model to explain the inhibitory effect with the behavioral ratings for both the genuine and pretended pain is the model without interactions between ratings. That is, if any behavioral rating contributed to the modulation of aIns to rSMG, the effect would be more likely coming from single ratings rather than their interactions. Specifically, we found the strength of the inhibitory effect in the genuine pain condition to correlate with ratings of painful feelings in others, but not with the ratings of pain expression in others or unpleasantness in self. For the pretended pain condition, none of the ratings showed a correlation. The latter could in principle be due to a lack of variation in the ratings (which by way of the design were mostly close to zero or one). We deem it more plausible, though, that the correlation findings provide further evidence that the modulation of aIns to rSMG is implicated in encoding others\u2019 emotional states, which serves as a functional foundation for self-other processing when participants engaged in genuine affect sharing. This regulation cannot be totally attributed to domain-general processes, otherwise other ratings should have also explained this variation. It is also interesting to note that the found correlation relates to cognitive evaluations of the other\u2019s pain rather than to own affect, as tracked by the unpleasantness in self-ratings. This would to some extent be in line with DCM findings by Kanske et al., 2016. These authors found that the inhibition of the temporoparietal junction (TPJ) by the aIns was linked to interactions between Theory of Mind (ToM) and empathic distress, that is the interaction of \u2018cognitive\u2019 vs. \u2018affective\u2019 processes engaged in understanding others\u2019 cognitive and affective states. Note that the right TPJ is an overarching area involved in self-other distinction of which rSMG is considered a part or at least closely connected to Decety and Lamm, 2007, for review.\n\nThe correlations between the DCM inhibitory effect and empathic traits assessed via questionnaires provide further refinements for the relevance of rSMG in implementing self-other distinction to allow for an appropriate empathic response. When participants shared genuine affect, the inhibitory effect on the aIns to rSMG connection was positively correlated with affective ability and negatively correlated with affective reactivity. Affective ability reflects the capacity to subjectively share emotions with others, while affective reactivity plays a role in the susceptibility to vicarious distress and thus to more automatic responses to another\u2019s emotion (Batchelder et al., 2017). Again, as for the correlations with the three rating scales, we did not find correlations of empathic traits for the pretended pain condition. Taken together, the DCM results and their qualification by the correlation findings suggest that in the genuine pain condition, which requires an accurate sharing of pain, rSMG interacts with aIns to achieve \u2018affective-to-affective\u2019 self-other distinction \u2013 that is disambiguating affective signals originating in the self from those attributable to the other person. The aIns to rSMG connection in the pretended pain condition may reflect a related, yet slightly distinct mechanism. Here, it seems that \u2018cognitive-to-affective\u2019 self-other distinction is at play, which helps resolve conflicting information between the top-down contextual information (i.e., that the demonstrator is not actually in pain) from what seems an unavoidable affective response to the highly salient perceptual cue of the facial expression of pain. Given our behavioral and trait data did not allow us to distinguish more precisely between these different types of self-other distinction, this however remains an interpretation and a hypothesis that will require further investigation. This inhibitory effect might be related to socioemotional disturbances of individuals with autism spectrum disorders (ASD), who show impairments in social cognition, including self- and other-related processing (Hoffmann et al., 2016; Lamm et al., 2016, for review). It is thus likely that ASD individuals exhibit distinct inhibition of the aIns-to-rSMG connectivity pattern compared to healthy controls. Further research with ASD individuals is required.\n\nOne potential limitation of the study could be the slightly higher ratings of other-oriented pain expressions for genuine pain, which were hypothesized to have no difference, as compared to pretended pain. As we found the enhanced aIns activation in the genuine pain condition mainly tracked personal unpleasantness rather than perceptually domain-general processes, and because the effect size of the pain expression difference was much smaller than for the affect ratings, we consider this difference did not fundamentally influence the interpretation of our findings. An additional limitation was that our study design did not aim to explicitly quantify self-other distinction. Rather, in line with previous research and based on our theoretical framework and rationale, we inferred the engagement of this process from the experimental conditions and the associated behavioral and neural responses. We expect our findings to prompt and inform future research designed to quantify and experimentally disentangle self- and other-related processes more explicitly. Note though that our participants and the targets shown in the videos were balanced with respect to their sex/gender. Yet sex/gender effects (for a review, though, see Christov-Moore, 2014) were outside the scope of the current study, and we thus did not perform any sex/gender-related analyses.\n\nIn conclusion, the current study advances our understanding of two main aspects of empathy. First, we provide evidence that empathy-related responses in the aIns can indeed be linked to affective sharing, rather than attributing them to responses triggered only by perceptual saliency. Second, we show how aIns and rSMG are orchestrated to track what another person really feels, thus enabling us to appropriately respond to their actual needs. Beyond these basic research insights, our study provides novel avenues for clinical application, and the investigation of contextual and interpersonal factors in the accurate diagnosis of pain and its expression.\n\n## Materials and methods\n\n### Participants\n\nForty-eight participants took part in the study. Five of them were excluded because of excessive head motion ( >15% scans with the frame-wise displacement over 0.5 mm in one session). Data of the remaining 43 participants (21 females; age: Mean = 26.72 years, S.D. = 4.47) were entered into analyses. This sample size was determined on a priori power analysis in Gpower 3.1 (Faul et al., 2007). We assumed a medium effect size of Cohen\u2019s d = 0.5. After calculation, the minimum sample size statistically required for this study was 34 (\u03b1 = 0.05, two-tailed, 1\u2212\u03b2 = 0.80). Participants were pre-screened by an MRI safety-check questionnaire, assuring normal or corrected to normal vision and no presence or history of neurologic, psychiatric, or major medical disorders. All participants were being right-handed (self-reported) and provided written consent including post-disclosure of any potential deception. The study was approved by the ethics committee of the Medical University of Vienna and was conducted in line with the latest version of the World Medical Association, 2013.\n\n### Manipulation of facial expressions\n\nAs part of our study, we developed a novel experimental design and corresponding stimuli, which consisted of video clips showing different demonstrators ostensibly in four different situations: (1) Genuine pain: the demonstrator\u2019s right cheek was penetrated by a hypodermic needle attached to a syringe, and the demonstrator\u2019s facial expression changed from neutral to a strongly painful facial expression. (2) Genuine no pain: the demonstrator maintained a neutral facial expression when a Q-tip fixed on the backend of the same syringe touched their right cheek. (3) Pretended pain: the demonstrator\u2019s right cheek was approached by the same syringe and the hypodermic needle, with the latter covered by a protective cap; upon touch by the cap, the demonstrator\u2019s facial expression changed from neutral to a strongly painful facial expression. (4) Pretended no pain: the demonstrator maintained a neutral facial expression when a Q-tip fixed on the backend of the same syringe touched their right cheek.\n\nTo create these stimuli, we recruited 20 demonstrators (10 females), with experience in acting, and filmed them in front of a dark blue background. An experimenter who stood on the right side of the demonstrators, but of whom only the right hand holding the syringe could be seen, administered the injections and touches. Unbeknownst to the participants, all painful expressions were acted, as the needle was a telescopic needle (i.e., a needle that seemed to enter the cheek upon contact, but in reality, was invisibly retracting into the syringe). The reason for using a protective cap in the pretended pain condition was to match the perceptual situation that an aversive object was approaching a body part in both pain conditions. In all situations, the demonstrator was instructed to look naturally toward the camera 1.5 m in front of them. As soon as the needle or the cap touched the demonstrator\u2019s cheek, the demonstrator made a painful facial expression, as naturally and vividly as possible. In the neutral control conditions, demonstrators maintained a neutral facial expression when a Q-tip fixed at the backend of the syringe touched their cheek. Again, a syringe with a needle attached to the other end was used to perceptually control for the presence of an aversive object in all four conditions. Note that in another set of conditions, demonstrators showed disgusted or neutral expressions. Data from these conditions will be reported elsewhere. All demonstrators signed an agreement that their video clips and static images could be used for scientific purposes.\n\n### Stimulus validation and pilot study\n\nTo validate the stimuli, we performed an online validation study with N = 110 participants, who were asked to rate a total of 120 video clips of 2 s duration of the two conditions (60 of each condition) showing painful expressions (i.e., the genuine and the pretended pain conditions). The main aim of the validation study was to identify a set of demonstrators that expressed pain with comparable intensity and quality, and whose pain expressions in the genuine and pretended conditions were comparable. After each video clip, participants rated three questions on a visual analog scale with nine tick-marks and the two end-points marked as \u2018almost not at all\u2019 to \u2018unbearable\u2019: (1) How much pain did the person express on his/her face? (2) How much pain did the person actually feel? (3) How unpleasant did you feel to watch the person in this situation? The order of these three questions was pseudo-randomized. Moreover, eight catch trials randomly interspersed across the validation study to test whether participants maintained attention to the stimuli. Here, participants were asked to correctly select the demonstrator they had seen in the last video, between two static images of the correct and a distractor demonstrator displayed side by side, both showing neutral facial expressions.\n\nThe validation study was implemented within the online survey platform SoSci Survey (https://www.soscisurvey.de), with a study participation invite published on Amazon Mechanical Turk (https://www.mturk.com/), a globally commercial platform allowing for online testing. Survey data of 62 of 110 participants (34 females; age: mean = 28.71 years, S.D. = 10.11) were entered into analysis (inclusion criteria: false rate for the test questions < 2/8, survey duration > 20 min and <150 min, and the maximum number of continuous identical ratings < 5). Based on this validation step, we had to exclude videos of six demonstrators (three females) for which participants showed a significant difference in painful expressions in others between the genuine pain and the pretended pain conditions. As a result of this validation, videos of 14 demonstrators (7 females), which showed no difference in the pain expression rating between genuine and pretended conditions and which overall showed comparable mean ratings in all three ratings, were selected for the subsequent pilot study.\n\nIn the pilot study, 47 participants (24 females; age: mean = 26.28 years, S.D. = 8.80) were recruited for a behavioral experiment in the behavioral laboratory. The aim was to verify the experimental effects and the feasibility of the experimental procedures that we intended to use in the main fMRI experiment, as well as to identify video stimuli that may not yield the predicted responses. Thus, all four conditions described above were presented to the participants. Participants were explicitly instructed that they would watch other persons\u2019 genuine painful expressions in some blocks, while in other blocks, they would see other persons acting out painful expressions (recall that in reality, all demonstrators had been actors, and the information about this type of necessary deception was conveyed to participants at the debriefing stage). They would see all demonstrators\u2019 neutral expressions as well. Participants were instructed to rate the three questions mentioned above. Upon screening for video clips that showed aberrant responses, we excluded videos of two demonstrators (one female), for whom the pain expression rating difference between the pretended vs. genuine expressions was large. Forty-eight videos of 12 demonstrators entered the following analyses. Three separate repeated-measures ANOVAs were respectively performed for the three rating questions. For the main effect of genuineness (genuine vs. pretended), it was not significant and low in effect size for painful expressions in others (Fgenuineness (1, 46) = 2.939, p=0.093, \u03b7\u00b2 = 0.060), but was significant with high effect size for the painful feelings in others (Fgenuineness (1, 46) = 280.112, p<0.001, \u03b7\u00b2 = 0.859) as well as the unpleasantness in self (Fgenuineness (1, 46) = 43.143, p<0.001, \u03b7\u00b2 = 0.484). The main effects of pain (pain vs. no pain) for all three questions were found significant with high effect size (the smallest effect size was for the rating of unpleasantness in self, Fpain (1, 46) = 82.199, p<0.001, \u03b7\u00b2 = 0.641). Our pilot study thus (1) provided assuring evidence that the novel experimental paradigm worked as expected and (b) made it possible to select video clips that we could match for the two conditions (i.e., genuine pain and pretended pain). More specifically, as expected and required for the main study, participants rated the painfulness of the demonstrators to be substantially higher when it was genuine as compared to those that were pretended, and this also resulted in much higher unpleasantness experienced in the self. It is worth noting that, the two conditions did not differ with respect to the ratings of the painful facial expressions, implying that putative differences in ratings as well as the subsequent brain imaging data could only be attributed to the contextual appraisal of the demonstrators\u2019 actual painful states, rather than the differences in facial pain perception. Based on this pilot study, we thus decided on video clips of 12 demonstrators (6 females) in the main fMRI experiment.\n\n### Experimental design and procedure of the fMRI study\n\nThe experiment was implemented using Cogent 2000 (version 1.33; http://www.vislab.ucl.ac.uk/cogent_2000.php). MRI scanning took place at the University of Vienna MRI Center. Once participants arrived at the scanner site, an experimenter instructed them that they would watch videos from the four conditions outlined above. Participants were explicitly instructed to recreate the feelings of the demonstrators shown in the videos as vividly and intensely as possible. Based on the validation and pilot study, the painful expressions for the genuine and pretended conditions were matched. We also counterbalanced the demonstrators appearing in the genuine and pretended conditions across participants, thus controlling for differences in behavioral and brain response that could be explained by differences between the stimulus sets. Note that, all video clips were validated and piloted multiple times to ensure the experimental effect (details can be found in the section above).\n\nThe participant performed the fMRI experiment in two runs (Figure 1). Each run was composed of two blocks showing genuine pain and two blocks showing pretended pain. In each block, the participant watched nine video clips containing both painful and neutral videos. To remind participants\u2019 the condition of the upcoming block, a label of 4 s duration appeared at the beginning of each block, showing either \u2018genuine\u2019 or \u2018pretended\u2019 (in German). Each trial started with a fixation cross (+) presented for 4\u20137 s (in steps of 1.5 s, mean = 5.5 s). After that, the video (duration = 2 s) was played. A short jitter was inserted after the video for 0.5\u20131.0 s (in steps of 0.05 s, mean = 0.75 s). After the jitter, the following three questions were displayed (in German) one after the other in a pseudo-randomized order: (1) How much pain did the person express on his/her face? (2) How much pain did the person actually feel? (3) How unpleasant did you feel to watch the person in this situation? Beneath each question, a visual analog scale ranging from 0 (not at all) to 8 (unbearable) with nine tick-marks was positioned. The participant moved the marker along the scale by pressing the left or right keys on the button box, and they pressed the middle key to confirm their answer. The marker initially was always located at the midpoint (\u20184\u2019) of the scale. When the confirmed key was pressed, the marker turned from black to red. All ratings lasted for 4 s even when the participant pressed the confirmed key before the end of this period. Between the two runs, the participant had a short break (1\u20132 min).\n\nBefore entering the scanner, participants conducted practice trials on the computer to get familiarized with the button box and the experimental interface. After that, participants were moved into the scanner and performed the task. Following the functional imaging runs, a 6.5 min structural scanning was employed. When participants finished the scanning session, they were scheduled for a date to complete three questionnaires in the lab: the Empathy Components Questionnaire (ECQ) (Batchelder, 2015; Batchelder et al., 2017), the Interpersonal Reactivity Index (IRI) (Davis, 1980), and the Toronto Alexithymia Scale (TAS) (Bagby et al., 1994). For the ECQ, there are 27 items in total to be categorized into five subscales: cognitive ability, cognitive drive, affective ability, affective drive, and affective reactivity, using a 4-point Likert scale ranging from 1 (\u2018strongly disagree\u2019) to 4 (\u2018strongly agree\u2019) (Batchelder, 2015; Batchelder et al., 2017). For the IRI, there are 28 items divided into four subscales: perspective taking, fantasy, empathic concern, and personal distress, using a 5-point Likert scale ranging from 0 (\u2018does not describe me well\u2019) to 4 (\u2018describes me very well\u2019) (Davis, 1980). For the TAS, there are 20 items and three subscales \u2013 difficulty describing feelings, difficulty identifying feelings, and externally oriented thinking, using a 5-point Likert scale ranging from 1 (\u2018strongly disagree\u2019) to 5 (\u2018strongly agree\u2019) (Bagby et al., 1994). The average interval between the scanning session and the lab survey was 1 week. The participant was debriefed after completing the whole study.\n\n### Behavioral data analysis\n\nWe applied repeated-measures ANOVAs to investigate the main effects and the interaction of the two factors genuine vs. pretended and pain vs. no pain, using SPSS (version 26.0; IBM). Furthermore, we conducted Pearson correlations to examine whether ratings of painful feelings in others were correlated with unpleasantness in self for the genuine pain and the pretended pain. The correlation coefficients were further compared using a bootstrap approach with the R package bootcorci [https://github.com/GRousselet/bootcorci (Rousselet, 2021)].\n\n### fMRI data acquisition\n\nfMRI data were collected using a Siemens Magnetom Skyra MRI scanner (Siemens, Erlangen, Germany), with a 32-channel head coil. Functional whole-brain scans were collected using a multiband-accelerated T2*-weighted echoplanar imaging sequence (multiband acceleration factor = 4, interleaved ascending acquisition in multi-slice mode, 52 slices co-planar to the connecting line between anterior and posterior commissure, TR = 1200 ms, TE = 34 ms, acquisition matrix = 96 \u00d7 96 voxels, FOV = 210 \u00d7 210 mm2, flip angle = 66\u00b0, inter-slice gap = 0.4 mm, voxel size = 2.2 \u00d7 2.2 \u00d7 2 mm3). Two functional imaging runs, each lasting around 16 min (~800 images per run), were performed. Structural images were acquired with a magnetization-prepared rapid gradient-echo sequence (TE/TR = 2.43/2300 ms, flip angle = 8\u00b0, ascending acquisition, single-shot multi-slice mode, FOV = 240 \u00d7 240 mm2, voxel size = 0.8 \u00d7 0.8 \u00d7 0.8 mm3, 208 sagittal slices, slice thickness = 0.8 mm).\n\n### fMRI data processing and mass-univariate functional segregation analyses\n\nImaging data were preprocessed with a combination of Nipype (Gorgolewski et al., 2011) and MATLAB (version R2018b 9.5.0; MathWorks), with Statistical Parametric Mapping (SPM12; https://www.fil.ion.ucl.ac.uk/spm/software/spm12/). Raw data were imported into BIDS format (http://bids.neuroimaging.io/). Functional data were subsequently preprocessed using slice timing correction to the middle slice (Sladky, 2011), realignment to the first image of each session, co-registration to the T1 image, segmentation between gray matter, white matter, and cerebrospinal fluid, normalization to MNI template space using Diffeomorphic Anatomical Registration Through Exponentiated Lie Algebra (DARTEL) toolbox (Ashburner, 2007), and smoothing with a 6 mm full width at half-maximum three-dimensional Gaussian kernel.\n\nTo improve data quality, we performed data scrubbing of the functional scans for those whose frame-wise displacements (FD) were over 0.5 mm (Power et al., 2012; Power et al., 2014). In other words, we identified individual outlier scans and flagged the volume indices as nuisance regressors in the general linear model (GLM) for the first-level analysis.\n\nIn order to perform mass-univariate functional segregation analyses, a first-level GLM design matrix was created and composed of two identically modeled runs for each participant. Seven regressors of interest were entered in each model: stimulation phase of the four conditions (i.e., genuine pain, genuine no pain, pretended pain, pretended no pain; 2000 ms) and rating phase of the three questions (i.e., painful expressions in others, painful feelings in others, and unpleasantness in self; 12,000 ms). Six head motion parameters and the scrubbing regressors (FD > 0.5 mm, if applicable) were additionally entered as nuisance regressors. Individual contrasts of the four conditions and the three ratings (all across the two runs) against implicit baseline were respectively created.\n\nOn the second level, a flexible factorial design was employed to perform the group-level analysis. The design included three factors: a between-subject factor (i.e., subject) that was specified independent and with equal variance, a within-subject factor (i.e., genuine or pretended) that was specified dependent and with equal variance, and a second within-subject factor (i.e., pain or no pain) that was specified dependent and with equal variance (Gl\u00e4scher and Gitelman, 2008). Three contrasts were computed: (1) main effect of genuine: pain \u2013 no pain, (2) main effect of pretended: pain \u2013 no pain, and (3) interaction: genuine (pain \u2013 no pain) \u2013 pretended (pain \u2013 no pain). We applied an initial threshold of p<0.001 (uncorrected) at the voxel level and a family-wise error (FWE) correction (p<0.05) at the cluster level. The cluster extent threshold was determined by the SPM extension \u2018cp_cluster_Pthresh.m\u2019 (https://goo.gl/kjVydz).\n\n### Brain-behavior relationships\n\nA multiple regression model was built on the group level to investigate the relationship between specific brain activations and behavioral ratings. In this model, the contrast genuine pain \u2013 pretended pain was set as the dependent variable, and differences between conditions for three behavioral ratings were specified as independent variables. The reason that we used the comparison between conditions for both brain signals and behavioral ratings was to control for potential effects of perceptual salience. All covariates were mean-centered. An intercept was added in the model. To test whether the order of entering ratings into the regression model influence the results, we performed five additional regression analyses with all possible orders of three ratings. The results were consistent across all six regression models, and we only showed the result for one regression (i.e., expression+ feeling + unpleasantness) in the Results section. Note that, we performed the regression model with the contrast genuine pain \u2013 pretended pain instead of the more exhaustive contrast genuine (pain - no pain) - pretended (pain \u2013 no pain), and this was because the genuine and the pretended pain conditions were the main focus of our work. Moreover, the pain contrast showed more robust (in terms of statistical effect size) and widespread activations across the brain, making it more likely to pick up possible brain-behavior relationships. The same threshold as above was applied in this analysis.\n\nWe aimed to assess these brain-behavior relationships for the following regions of interest (ROI): (1) aIns and aMCC, that is two regions associated with affective processes and specifically with empathy for pain, (2) rSMG, an area implicated in affective self-other distinction. The ROI masks were defined as the conjunction of the averaging contrast between genuine and pretended: pain \u2013 no pain (threshold: voxel-wise FWE correction, P < 0.05) and the anatomical masks created by the Wake Forest University (WFU) Pick Atlas SPM toolbox (http://fmri.wfubmc.edu) with the automated anatomical atlas (AAL). The ROI masks were created with Marsbar ROI Toolbox implemented in SPM12 (Brett et al., 2002). Note that we specifically selected the ROIs this way, such that they were orthogonal (i.e., independent) to the subsequent analyses of interest. As exploratory analyses found significant correlations mainly in aIns, rather than in aMCC, we will focus in the results section on two ROIs: the right aIns and the rSMG. Focusing on the right aIns instead of the left one was because the right aIns is on the ipsilateral hemisphere as rSMG.\n\n### Analyses using DCM\n\nTo investigate the functional network involved in affective processes and self-other distinction and how it was modulated by our experimental manipulations (i.e., genuine pain and pretended pain), we used DCM to estimate the effective connectivity between the ROIs based on the tasked-related brain responses (Stephan and Friston, 2010, for review). The DCM analyses were conducted with DCM12.5 implemented in SPM12 (v. 7771). First, we extracted individual time series separately for each ROI. To ensure the selected voxels engaged in a task-relevant activity but not random signal fluctuations, we determined the voxels both on a group-level threshold and an individual-level threshold (Holmes et al., 2020). An initial threshold was set as p<0.05, uncorrected. The significant voxels in the main effect of genuine pain and pretended pain were further selected by an individual threshold. For each participant, an individual peak coordinate within the ROI mask was searched, and an individual mask was consequently defined using a sphere of the 6 mm radius around the peak. As a result, the individual time series for each ROI was extracted from the significant voxels of the individual mask and summarized by the first eigenvariate. One participant was excluded as no voxels survived significance testing. Second, we specified three regressors of interest: genuine pain, pretended pain, and the video input condition (the combination of genuine pain and pretended pain). That we did not specify no-pain conditions was because (1) the pain conditions were our main focus, and (2) adding no-interest conditions would inevitably increase the model complexity. Then, a fully connected DCM model for each participant was created. Three parameters were specified: (1) bidirectional connections between regions and self-connections (matrix A), (2) modulatory effects (i.e., genuine pain and pretended pain) on the between-region connections (matrix B), and (3) driving inputs (i.e., the video input condition) into the model on both regions (matrix C) (Zeidman et al., 2019a). To remain parsimonious, we did not set modulatory effects on the self-connections in matrix A. Then the full DCM model was individually estimated. Finally, group-level DCM inference was performed using parametric empirical Bayes (Zeidman et al., 2019b). We conducted an automatic search over the entire model space (max. n = 256) using Bayesian model reduction and random-effects Bayesian model averaging, resulting in a final group model that takes accuracy, complexity, and uncertainty into account (Zeidman et al., 2019b). The threshold of the Bayesian posterior probability was set to pp>0.95 (i.e., strong evidence) but we reported all parameters above pp>0.75 (i.e., positive evidence) for full transparency of the DCM results. Finally, a paired sample t-test was performed to compare modulatory effects between the genuine pain and the pretended pain conditions.\n\nTo probe whether task-related modulatory effects were associated with behavioral measurements, we performed multiple linear regression analyses of modulatory parameters with (1) the three behavioral ratings and (2) the empathy-related questionnaires (i.e., IRI, ECQ, and TAS). We set up regression models for the genuine pain condition and the pretended pain condition, respectively, in which the DCM parameters of modulatory effects were determined as dependent variables and the ratings of painful expressions in others, painful feelings in others, and unpleasantness in self as independent variables. Considering that interactions between behavioral ratings might contribute to the regression model, we tested five regression models (with and without interaction; See Supplementary file 1) for both genuine pain and pretended pain. Results showed that for both genuine pain and pretend pain, the model without any interaction outperformed other models. The results of the winning multiple regression model are reported in the Results section. We performed additional two regression models for both conditions in which DCM modulatory effects were set as dependent variables and scores of each subscale of all questionnaires were set as independent variables, respectively. Considering the number of independent variables was relatively large (>10), we performed the analyses for questionnaires using a stepwise regression approach. As two participants did not complete all three questionnaires, we excluded their data from the regression analyses. The statistical significance of the regression analysis was set to p<0.05. The multicollinearity for independent variables was diagnosed using the VIF that measures the correlation among independent variables, in the R package car (https://cran.r-project.org/web/packages/car/index.html). Here we used a rather conservative threshold of VIF < 5 as a sign of no severe multicollinearity (Menard, 2002; James et al., 2013).\n",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "55f7c347-0493-4ced-a679-024ba9962359",
+      "submission_id": "25a7af61-7923-4111-8c09-0f751b564e39",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Muireann Irish, University of Sydney Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.69994.sa1](https://doi.org/10.7554/eLife.69994.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nThis is a novel exploration of the brain dynamics of empathy in response to facial expressions of simulated versus genuine pain in others. The findings suggest that activation of the anterior insula for genuine pain reflects affect sharing rather than automatic responses triggered by the perceptual salience of events. The paper will be of broad interest to an audience of social and affective neuroscientists interested in how humans track the emotional responses of others.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Neural dynamics between anterior insular cortex and right supramarginal gyrus dissociate genuine affect sharing from automatic responses to pretended pain\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Christian B\u00fcchel as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. It is not clear that the experimental paradigm allows one to unambiguously disentangle self vs. other processing (as mentioned in the abstract \"..we investigated how affect sharing and self-other distinction interact..\"). For example, genuine vs. pretended pain could be distinguished from the participants' own experience in a comparable way. The higher rating of unpleasantness for genuine pain in others does not necessarily mean that the participants cannot separate own from others' experiences. At the very least, this needs to be mentioned as a limitation of the study.\n\n2. Similarly, the experimental design does not unambiguously allow the authors to disentangle genuine vs pretended pain from other factors, such as the differences in pain expression, painful feeling in others and higher unpleasantness in these two conditions. I understand that the intensity of pain expression, painful feeling in others and unpleasantness for others is inherently tied to genuine vs. pretended pain. But the authors already saw that the instruction of \"genuine vs. pretend\" influences ratings of pain expression. Hence, this allows two interpretations of the results: either the anterior Insula influence on the rSMG is driven by higher perceived pain expression, painful feelings in others and unpleasantness or by the conditions of genuine vs. pretended pain. Or (more likely) by an interaction between these factors. The authors need to consider the possibility of an interaction and discuss the different factors (pain expression, etc) that likely contribute to the differences between genuine vs. pretended pain.\n\n3. It would help to explore the association between the aIns-rSMG interaction and pain expression ratings (or painful feeling in others or higher unpleasantness) in videos with genuine pain and pretended pain separately.\n\n4. The multiple regression analyses revealed an association between the unpleasantness for the participants and the aIns, when accounting for the painful expression and the pain experienced by others. This, however, does not reveal the specificity of the aIns for encoding the unpleasantness for the participants. It might well be that variance is shared in the association between the aIns and pain expression and pain by the other and unpleasantness for the participants, but simply strongest for unpleasantness. Such ambiguity could be resolved by additional multiple regressions of (1) pain expression (controlling for pain by the other and unpleasantness for the participants) and (2) pain for the other (controlling for pain expression and unpleasantness for the participants). Further, it would be helpful to clarify if an intercept was included in the regression model. Finally, please provide a scatterplot of responses.\n\n5. I would have liked more justification for focusing on the rSMG as an area implicated in self-other distinction given its role in selective attention (or perhaps they are related?). The inclusion of the rSMG into the DCM model was not clearly motivated. If this was based on previous literature, then one could also argue that the aMCC should be added into the model as well. Further, while the rSMG emerges as playing an important role, the current experiment does not reveal the actual processes driving this involvement. The authors state that the rSMG is involved in action observation or imitating emotions (page 9, line 200), however this is not substantiated by the current data.\n\n6. In general, the results support the distinction between the experimental conditions of genuine vs. pretended pain in the aIns and a modulatory influence on the connectivity between the aIns and the rSMG. However, the authors aimed to test if genuine vs. pretended pain modulate regulatory influences from the aIns on the rSMG that are connected to self-other distinction (as proposed in the discussion page 8, line 170). Yet, any insights about self-other distinction are only inferred reversely, since there is no outcome that indicates how well participants distinguished between themselves and the other person. For example, in the discussion the authors state that: \"we thus propose that the higher rSMG engagement in genuine pain conditions reflects an increasing demand for self-other distinction imposed by the stronger shared negative affect experiences in this condition\". This is not supported by the current results.\n\n7. Furthermore, the title mentions automated responses to pretended pain, which I could not understand, given the current results.\n\nReviewer #1 (Recommendations for the authors):\n\nThis is one of those rare studies where there is genuinely very little to critique. The authors have done an exemplary job in creating an innovative experimental paradigm with appropriate piloting, power calculations, and a very elegant experimental manipulation. Inclusion of targeted questionnaires to capture individual differences in empathic response is a further strength. I also appreciated the use of Dynamic Causal Modelling with Bayesian Model Reduction and random-effects Bayesian model averaging to understand the direction and magnitude of the aIns-SMG relationship. The manuscript itself is very well written and appropriate consideration is given to potential limitations and directions for future study.\n\nReviewer #2 (Recommendations for the authors):\n\nRegression analysis: I would further like to ask the methodological detail, if an intercept was included in the regression model.\n\nRegression analysis: please provide a scatterplot of responses.\n",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "390d1d84-faa2-464c-9fc2-efce390dfc83",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C1",
+      "claim": "Empathy for pain engages both shared affective responses and self-other distinction.",
+      "claim_type": "EXPLICIT",
+      "source": "Empathy for pain engages both shared affective responses and self-other distinction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement in the abstract that draws from established scientific consensus about empathy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "0d0809e7-f596-485b-8787-b4d490a2791a",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C2",
+      "claim": "Observing others in pain engages neural responses aligning with those coding for the affective component of self-experienced pain, with the anterior insula (aIns) and the anterior mid-cingulate cortex (aMCC) being two key areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies using a wide variety of methods convergently have shown that observing others in pain engages neural responses aligning with those coding for the affective component of self-experienced pain, with the anterior insula (aIns) and the anterior mid-cingulate cortex (aMCC) being two key areas in which such an alignment has been detected (Lamm et al., 2011; R\u00fctgen et al., 2015; Jauniaux et al., 2019; Xiong et al., 2019; Zhou et al., 2020; Fallon et al., 2020, for meta-analyses).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior meta-analyses and studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "db0419d6-b952-4f6a-9f90-62159859dc1b",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C3",
+      "claim": "There is debate on whether activity in aIns and aMCC should be related to the sharing of pain affect or whether it may result from automatic responses to salient perceptual cues.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there is consistent debate on whether activity observed in these areas should indeed be related to the sharing of pain affect or whether it may not rather result from automatic responses to salient perceptual cues \u2013 with pain vividly expressed on the face being one particularly prominent example (Zaki et al., 2016, for review).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a review article discussing this debate.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "4529986a-bd0f-484b-9fd8-7384e1864820",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C4",
+      "claim": "Contextual factors, individuals' appraisals, and attentional processes impact their exact response to the affective states of others.",
+      "claim_type": "EXPLICIT",
+      "source": "In this respect, contextual factors, individuals' appraisals, and attentional processes would all impact their exact response to the affective states of others (Gu and Han, 2007; Hein and Singer, 2008, for review; Lamm et al., 2010; Forbes and Hamilton, 2020; Zhao et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "6685a22f-594a-47d2-9170-86c46177de30",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C5",
+      "claim": "Coll et al., 2017 proposed a framework that individuals who see identical negative facial expressions of others may have different empathic responses due to distinct contextual information.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, Coll et al., 2017 have thus proposed a framework that attempts to capture these influences on affect sharing and empathic responses. This model posits that individuals who see identical negative facial expressions of others may have different empathic responses due to distinct contextual information and that this may depend on identification of the underlying affective state displayed by the other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Coll et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "4fe4f6dd-db02-4829-b838-3d4ab05cd621",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C6",
+      "claim": "The right supramarginal gyrus (rSMG) has been suggested to act as a major hub selectively engaged in affective self-other distinction.",
+      "claim_type": "EXPLICIT",
+      "source": "We focused on the right supramarginal gyrus (rSMG), which has been suggested to act as a major hub selectively engaged in affective self-other distinction (Silani et al., 2013; Steinbeis et al., 2015; Hoffmann et al., 2016; Bukowski et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "40b42dc1-f986-43b1-88d8-7467e1412259",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C7",
+      "claim": "rSMG is functionally connected with areas associated with affect processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Though previous studies have indicated that rSMG is functionally connected with areas associated with affect processing (Mars et al., 2012; Bukowski et al., 2020), we lack more nuanced insights into how exactly rSMG interacts with these areas, and thus how it supports accurate empathic responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Mars et al., 2012 and Bukowski et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "da960b11-971d-4ef0-a569-84782cc099c0",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C8",
+      "claim": "Participants showed higher ratings for the genuine vs. pretended conditions for ratings of painful expressions in others.",
+      "claim_type": "EXPLICIT",
+      "source": "For ratings of painful expressions in others (Figure 1C, left), there was a main effect of the factor genuineness: participants showed higher ratings for the genuine vs. pretended conditions, Fgenuineness (1, 42) = 8.816, p=0.005, \u03b7\u00b2 = 0.173.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of behavioral data presented in the manuscript and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "80ad729f-ad99-41ab-900f-1e81b3facfe9",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C9",
+      "claim": "Participants showed higher ratings for the pain vs. no pain conditions for ratings of painful expressions in others.",
+      "claim_type": "EXPLICIT",
+      "source": "There was also a main effect of pain: participants showed higher ratings for the pain vs. no pain conditions, Fpain (1, 42) = 1718.645, p<0.001, \u03b7\u00b2 = 0.976.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of behavioral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "9bfe0d5c-f38e-4789-8043-f5f3c27d12b4",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C10",
+      "claim": "The interaction term for ratings of painful expressions in others was significant and related to higher ratings for the genuine pain compared to the pretended pain condition.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction term was significant as well, Finteraction (1, 42) = 7.443, p=0.009, \u03b7\u00b2 = 0.151, and this was related to higher ratings of painful expressions in others for the genuine pain compared to the pretended pain condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of behavioral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "04e38d5d-7105-440c-88ff-e16b4fe91267",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C11",
+      "claim": "Participants showed higher ratings for the genuine vs. pretended conditions for ratings of painful feelings in others.",
+      "claim_type": "EXPLICIT",
+      "source": "For ratings of painful feelings in others (Figure 1C, middle), there was a main effect of genuineness: participants showed higher ratings for the genuine vs. pretended conditions, Fgenuineness (1, 42) = 770.140, p<0.001, \u03b7\u00b2 = 0.948.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of behavioral data and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "733eca4b-d069-48bd-a768-087711c81d44",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C12",
+      "claim": "Participants showed higher ratings for the pain vs. no pain conditions for ratings of painful feelings in others.",
+      "claim_type": "EXPLICIT",
+      "source": "There was also a main effect of pain, as participants showed higher ratings for the pain vs. no pain conditions, Fpain (1, 42) = 1544.762, p<0.001, \u03b7\u00b2 = 0.974.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of behavioral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "80ec8e0d-b2a8-4d45-86b3-ab4c65eb2da7",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C13",
+      "claim": "The interaction for painful feelings ratings was significant and related to higher ratings for the genuine pain compared to the pretended pain condition.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction for painful feelings ratings was significant as well, Finteraction (1, 42) = 752.618, p<0.001, \u03b7\u00b2 = 0.947, and this was related to higher ratings of painful feelings in others for the genuine pain compared to the pretended pain condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of behavioral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "e162ce84-bf8f-4140-baaf-39717bd9c216",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C14",
+      "claim": "Participants showed higher ratings for the genuine vs. pretended conditions for ratings of unpleasantness in self.",
+      "claim_type": "EXPLICIT",
+      "source": "For ratings of unpleasantness in self (Figure 1C, right), there was a main effect of genuineness: participants showed higher ratings for the genuine vs. pretended conditions, Fgenuineness (1, 42) = 74.989, p<0.001, \u03b7\u00b2 = 0.641.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of behavioral data and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "b8e73c58-bcd3-4d82-97c4-0fc7a0ad367f",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C15",
+      "claim": "Participants showed higher ratings for the pain vs. no pain conditions for ratings of unpleasantness in self.",
+      "claim_type": "EXPLICIT",
+      "source": "There was also a main effect of pain: participants showed higher ratings for the pain vs. no pain conditions, Fpain (1,42) = 254.709, p<0.001, \u03b7\u00b2 = 0.858.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of behavioral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "100dde63-e7f0-4709-9376-67cfdba52602",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C16",
+      "claim": "The interaction for unpleasantness ratings was significant and related to higher ratings for the genuine pain compared to the pretended pain condition.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction for unpleasantness ratings was significant as well, Finteraction (1, 42) = 73.620, p<0.001, \u03b7\u00b2 = 0.637, and this was related to higher ratings of unpleasantness in self for the genuine pain compared to the pretended pain condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of behavioral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "c8f8ce34-6594-4fe3-87c4-fd7f75b9642d",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C17",
+      "claim": "There was a significant correlation between behavioral ratings of painful feelings in others and unpleasantness in self in the genuine pain condition.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found a significant correlation between behavioral ratings of painful feelings in others and unpleasantness in self in the genuine pain condition, r = 0.691, p<0.001, while in the pretended pain condition, the correlation was not significant, r = 0.249, p=0.107 (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis of behavioral data and shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "83d9bf40-8640-47e0-9bfa-554845ee88d0",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C18",
+      "claim": "The correlation between painful feelings in others and unpleasantness in self was not significant in the pretended pain condition.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found a significant correlation between behavioral ratings of painful feelings in others and unpleasantness in self in the genuine pain condition, r = 0.691, p<0.001, while in the pretended pain condition, the correlation was not significant, r = 0.249, p=0.107 (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis of behavioral data and shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "c31e94de-89de-4396-bd08-afa283fbcf27",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C19",
+      "claim": "A bootstrapping comparison showed a significant difference between the two correlation coefficients for genuine pain and pretended pain conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "A bootstrapping comparison showed a significant difference between the two correlation coefficients, p=0.002, 95 % Confidence Interval (CI) = [0.230, 1.060].",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis using bootstrapping.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "1acefe3b-2b6e-4fa6-888c-82629356e927",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C20",
+      "claim": "Activations were found in bilateral aIns, aMCC, and rSMG across all three contrasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Across all three contrasts, we found activations as hypothesized in bilateral aIns, aMCC, and rSMG (Figure 2A and Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fMRI data analysis shown in Figure 2A and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "bc1e3933-343e-4096-8d46-f39119e30749",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C21",
+      "claim": "Multiple regression analysis demonstrated significant clusters in the left and right anterior insular cortex that were positively correlated with the ratings of unpleasantness in self comparing genuine pain vs. pretended pain.",
+      "claim_type": "EXPLICIT",
+      "source": "The multiple regression analysis demonstrated significant clusters in the left (peak: [\u201342, 15,\u20132]) and right anterior insular cortex (peak: [45, 5, 8]) that were positively correlated with the ratings of unpleasantness in self comparing genuine pain vs. pretended pain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by multiple regression analysis of fMRI data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "1aad64a4-1d54-4bf4-b71a-1e19f5be1aca",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C22",
+      "claim": "There were strong evidence of inhibitory effects on the aIns to rSMG connection both in the genuine pain condition and in the pretended pain condition.",
+      "claim_type": "EXPLICIT",
+      "source": "We found strong evidence of inhibitory effects on the aIns to rSMG connection both in the genuine pain condition and in the pretended pain condition (Figure 1A-C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by DCM analysis of fMRI data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "dc183ec3-36a9-4984-b2f6-3b6f564ec2e9",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C23",
+      "claim": "Comparing the strength of modulatory effects on the aIns to rSMG connection revealed a reduced inhibitory effect for genuine pain as opposed to pretended pain.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the strength of these modulatory effects on the aIns to rSMG connection revealed a reduced inhibitory effect for genuine pain as opposed to pretended pain, t41 = 2.671, p=0.011 (meangenuine pain = \u22120.821, 95% CI = [\u22120.878, \u22120.712]; meanpretended pain = \u22120.934, 95% CI = [\u22121.076, \u22120.822]; Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by DCM analysis and statistical comparison shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "b6b22d1d-1828-45d2-9873-d5ba28dead35",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C24",
+      "claim": "There was no evidence of a modulatory effect on the rSMG to aIns connection.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no evidence of a modulatory effect on the rSMG to aIns connection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by DCM analysis of fMRI data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "019e64df-8787-4d17-bd5b-c5b48bf83407",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C25",
+      "claim": "For the genuine pain condition, the modulatory effect was significantly related to the rating of painful feelings in others.",
+      "claim_type": "EXPLICIT",
+      "source": "For the genuine pain condition, we find that the modulatory effect was significantly related to the rating of painful feelings in others (t = 2.317, p=0.026), but not related to the rating of either painful expressions in others (t = \u22121.492, p=0.144) or unpleasantness in self (t = 0.058, p=0.954).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple linear regression analysis of DCM parameters and behavioral ratings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "05b49fa2-b035-4c40-8aa8-a16eb5eaa7e0",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C26",
+      "claim": "For the genuine pain condition, the modulatory effect was not related to the rating of painful expressions in others or unpleasantness in self.",
+      "claim_type": "EXPLICIT",
+      "source": "For the genuine pain condition, we find that the modulatory effect was significantly related to the rating of painful feelings in others (t = 2.317, p=0.026), but not related to the rating of either painful expressions in others (t = \u22121.492, p=0.144) or unpleasantness in self (t = 0.058, p=0.954).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple linear regression analysis of DCM parameters and behavioral ratings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "e551688a-e7bf-41ca-ae6b-8ab49f1a68a3",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C27",
+      "claim": "For the pretended pain condition, none of the ratings was significantly related to the modulatory effect.",
+      "claim_type": "EXPLICIT",
+      "source": "For the pretended pain condition, none of the ratings was significantly related to the modulatory effect (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by multiple linear regression analysis shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "4df005e7-fc69-4618-8650-2b3bf2b131a3",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C28",
+      "claim": "In the genuine pain condition, the modulatory effect was significantly explained by scores of affective ability and affective reactivity of the ECQ.",
+      "claim_type": "EXPLICIT",
+      "source": "In the genuine pain condition, we found that the modulatory effect was significantly explained by scores of two subscales, that is affective ability and affective reactivity of the ECQ: Fmodel (1, 39) = 6.829, p=0.003, R2 = 0.270; Baffective ability = 0.052, beta = 0.497, p=0.002; Baffective reactivity = \u22120.040, beta = \u22120.421, p=0.008.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple stepwise linear regression analysis of DCM parameters and questionnaire scores.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "dfed6540-3981-41d9-a0c8-cc7b643ac544",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C29",
+      "claim": "In the pretended pain condition, none of the three questionnaires significantly predicted variations of the modulatory effect.",
+      "claim_type": "EXPLICIT",
+      "source": "In the pretended pain condition, none of the three questionnaires significantly predicted variations of the modulatory effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple stepwise linear regression analysis of DCM parameters and questionnaire scores.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "4507f7a3-c5bd-484d-a936-7a40f7bbfa05",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C30",
+      "claim": "The increased activity in aIns for genuine pain as opposed to pretended pain properly reflects affect sharing.",
+      "claim_type": "EXPLICIT",
+      "source": "The mass-univariate analyses suggest that the increased activity in aIns for genuine pain as opposed to pretended pain properly reflects affect sharing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the fMRI data analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "6499cc04-4185-47cb-aae0-423538f2d2f4",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C31",
+      "claim": "The increased activation in aIns was selectively correlated with ratings of self-oriented unpleasantness and was not correlated with either other-related painful expressions or painful feelings in terms of the regression analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when comparing genuine pain versus pretended pain, activity in these areas was not only found to be stronger in response to genuine pain, but the increased activation in aIns was also selectively correlated with ratings of self-oriented unpleasantness and was not correlated with either other-related painful expressions or painful feelings in terms of the regression analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by regression analysis of fMRI data and behavioral ratings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "38a0091d-7c8c-4a2c-94b9-0e7a9ead5e5b",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C32",
+      "claim": "aIns is more specifically associated with affective representations, while the role of aMCC rather seems to evaluate and regulate emotions that arise due to empathy.",
+      "claim_type": "EXPLICIT",
+      "source": "That only aIns and not also aMCC shows such correlation may be explained by previous studies, according to which aIns is more specifically associated with affective representations, while the role of aMCC rather seems to evaluate and regulate emotions that arise due to empathy (Fan et al., 2011; Lamm et al., 2011; Jauniaux et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "3ffe0286-fa54-45d6-b5cd-f1967b4e387b",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C33",
+      "claim": "Responses in aIns and aMCC are not simply automatic responses triggered by perceptually salient events but seem to track the actual affective states of the other person.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the activation and brain-behavior findings provide evidence that responses in aIns (and to a lesser extent also the aMCC) are not simply automatic responses triggered by perceptually salient events (otherwise the increased aIns activation should also be explained by other behavioral ratings in the sense of shared influence by domain-general effects). Rather, they seem to track the actual affective states of the other person, and thus the shared neural representation of that response (see Zhou et al., 2020, for similar recent conclusions based on multi-voxel pattern analyses).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the data analysis results, supported by citation to Zhou et al., 2020.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "8cbe272f-9189-4cb4-94c3-a640d8e3d51b",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C34",
+      "claim": "The findings are in line with the proposed model of Coll et al., 2017, which suggests that affect sharing is the consequence of emotion identification.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings are also in line with the proposed model of Coll et al., 2017, which suggests that affect sharing is the consequence of emotion identification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings in relation to a cited theoretical model.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "3761e046-07f9-494f-aa88-8b19b0363e80",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C35",
+      "claim": "Part of the activation in the aIns and aMCC is related to an automatic response, and the added engagement of these areas once they have identified the pain as genuine shows that only in this condition, they then also engage in proper affect sharing.",
+      "claim_type": "EXPLICIT",
+      "source": "More specifically, while part of the activation in the aIns and aMCC is indeed related to an (presumably earlier) automatic response, the added engagement of these areas once they have identified the pain as genuine shows that only in this condition, they then also engage in proper affect sharing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the data analysis results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "60d8bb5f-94e7-469f-b227-9bfd575f0405",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C36",
+      "claim": "The inferior parietal lobule was shown to be generally engaged in selective attention, action observation, and imitating emotions.",
+      "claim_type": "EXPLICIT",
+      "source": "The inferior parietal lobule was shown to be generally engaged in selective attention, action observation, and imitating emotions (Bach et al., 2010; Pokorny et al., 2015; Gola, 2017; Hawco et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "44d9fd21-0819-4c97-b9bf-b778be727422",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C37",
+      "claim": "The rSMG allows for a rapid switching between or the integration of self- and other-related representations, as two processes that may underpin the functional basis of successful self-other distinction.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on such findings, it has been proposed that the rSMG allows for a rapid switching between or the integration of self- and other-related representations, as two processes that may underpin the functional basis of successful self-other distinction (Lamm et al., 2016, for review).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a review article.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "4542a1c7-7bc3-43c3-b3db-84b076da67cd",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C38",
+      "claim": "Theoretical models of empathy suggest that regulation is especially important to avoid empathic over-arousal, which would shift the focus away from empathy and the other's needs, toward taking care of one's own personal distress.",
+      "claim_type": "EXPLICIT",
+      "source": "Theoretical models of empathy and related socio-affective responses suggest that such regulation is especially important to avoid so-called empathic over-arousal, which would shift the focus away from empathy and the other's needs, toward taking care of one's own personal distress (Batson et al., 1987, for review; Decety and Lamm, 2011, for review).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to review articles.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "e47d45b5-5505-4960-83f5-592bfb6a5941",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C39",
+      "claim": "The higher rSMG engagement in the genuine pain condition reflects an increasing demand for self-other distinction imposed by the stronger shared negative affect experienced in this condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Concerning the current findings, we thus propose that the higher rSMG engagement in the genuine pain condition reflects an increasing demand for self-other distinction imposed by the stronger shared negative affect experienced in this condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the fMRI data analysis results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "1922cde4-08cd-4382-ac62-553290418d50",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C40",
+      "claim": "Areas such as the aIns and rSMG may play a key role in comparing self-related information with the sensory evidence.",
+      "claim_type": "EXPLICIT",
+      "source": "Various theoretical accounts suggest that areas such as the aIns and rSMG may play a key role in comparing self-related information with the sensory evidence (Decety and Lamm, 2007, for review; Seth, 2013, for review).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to review articles.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "095e06a6-d831-436c-90b0-6f91931a30dc",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C41",
+      "claim": "According to theories on predictive processing and active inference, the brain can be regarded as a 'prediction machine', in which the top-down signals pass over predictions and the bottom-up signals convey prediction errors across different levels of cortical hierarchies.",
+      "claim_type": "EXPLICIT",
+      "source": "According to recent theories on predictive processing (Clark, 2013, for review) and active inference (Friston, 2010, for review), the brain can be regarded as a \"prediction machine\", in which the top-down signals pass over predictions and the bottom-up signals convey prediction errors across different levels of cortical hierarchies (Chen et al., 2009; Friston, 2010, for review; Bastos et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to review articles and research papers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "eccad9f3-6a22-430e-9497-7430607bfb10",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C42",
+      "claim": "Top-down predictions are mediated by inhibitory neural connections.",
+      "claim_type": "EXPLICIT",
+      "source": "It is suggested that these top-down predictions are mediated by inhibitory neural connections (Zhang et al., 2008; Bastos et al., 2015; Miska et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "3bd571bd-8a05-4b99-9074-4d086f801979",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C43",
+      "claim": "The inhibitory connection from aIns to rSMG can be explained as the predictive mismatch between the top-down predictions of self-related information and sensory inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings align with such views, by suggesting that the inhibitory connection from aIns to rSMG can be explained as the predictive mismatch between the top-down predictions of self-related information (e.g., personal affect) and sensory inputs (e.g., pain facial expressions).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the DCM analysis results in the context of predictive processing theories.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "e7971b74-ccf1-4732-b821-60eb72f13e43",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C44",
+      "claim": "The suppression of neural activity leads to an explaining away of incoming bottom-up prediction error.",
+      "claim_type": "EXPLICIT",
+      "source": "This suppression of neural activity leads to an explaining away of incoming bottom-up prediction error.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on predictive processing theory.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "b518bd89-1324-4d29-b624-2721835cdbf3",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C45",
+      "claim": "The absence of any condition-dependent modulatory effects on the rSMG to aIns connection suggests that the influence of the task conditions is sufficiently modeled by the predictions from aIns to rSMG.",
+      "claim_type": "EXPLICIT",
+      "source": "This is reflected by the absence of any condition-dependent modulatory effects on the rSMG to aIns connection, suggesting that the influence of the task conditions is sufficiently modeled by the predictions from aIns to rSMG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the DCM analysis results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "c0030ce7-a81c-4c6c-96b8-f4d0233c8fc4",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C46",
+      "claim": "The stronger inhibition for pretended pain, compared to genuine pain, could indicate a higher demand to overcome the mismatch between the visual inputs and the agent's prior beliefs and contextual information about the situation.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the stronger inhibition for pretended pain, compared to genuine pain, could indicate a higher demand to overcome the mismatch between the visual inputs and the agent's prior beliefs and contextual information about the situation (i.e., \"this person looks like in pain, but I know he/she does not actually feel it\").",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the DCM analysis results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "e8cef4b0-cebd-4721-a80d-3eee85a88669",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C47",
+      "claim": "A dynamic interaction between sensory-driven and control processes is underlying the modulatory effect.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that a dynamic interaction between sensory-driven and control processes is underlying the modulatory effect: when individuals realized after an initial sensory-driven response to the facial expression that it was not genuinely expressing pain, control, and appraisal processes led to a reappraisal of the triggered emotional response, and thus a dampening of the unpleasantness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "ad03bab8-7e7a-418e-8e8a-5e7bc553e98e",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C48",
+      "claim": "The reduced inhibition in the genuine pain condition could be a mechanism that explains the higher rSMG activation in this condition.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduced inhibition in the genuine pain condition could moreover be a mechanism that explains the higher rSMG activation in this condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the DCM and fMRI analysis results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "b3801c35-cfd8-45fa-acd7-c26dd51b2e77",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C49",
+      "claim": "The modulation of aIns to rSMG is implicated in encoding others' emotional states, which serves as a functional foundation for self-other processing when participants engaged in genuine affect sharing.",
+      "claim_type": "EXPLICIT",
+      "source": "We deem it more plausible, though, that the correlation findings provide further evidence that the modulation of aIns to rSMG is implicated in encoding others' emotional states, which serves as a functional foundation for self-other processing when participants engaged in genuine affect sharing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the correlation findings between DCM parameters and behavioral ratings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "502903f8-8401-453f-b55e-22511eb2acf1",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C50",
+      "claim": "The found correlation relates to cognitive evaluations of the other's pain rather than to own affect, as tracked by the unpleasantness in self-ratings.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also interesting to note that the found correlation relates to cognitive evaluations of the other's pain rather than to own affect, as tracked by the unpleasantness in self-ratings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the correlation findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "8e1739f3-fdc0-4acd-bc4c-2fef7e439260",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C51",
+      "claim": "Kanske et al., 2016 found that the inhibition of the temporoparietal junction (TPJ) by the aIns was linked to interactions between Theory of Mind (ToM) and empathic distress.",
+      "claim_type": "EXPLICIT",
+      "source": "This would to some extent be in line with DCM findings by Kanske et al., 2016. These authors found that the inhibition of the temporoparietal junction (TPJ) by the aIns was linked to interactions between Theory of Mind (ToM) and empathic distress, that is the interaction of 'cognitive' vs. 'affective' processes engaged in understanding others' cognitive and affective states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Kanske et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "b7171ebe-14bf-4830-8a04-0f6119b8a441",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C52",
+      "claim": "The right TPJ is an overarching area involved in self-other distinction of which rSMG is considered a part or at least closely connected to.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the right TPJ is an overarching area involved in self-other distinction of which rSMG is considered a part or at least closely connected to Decety and Lamm, 2007, for review.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a review article.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "5de3f78b-a6f4-4ef7-b6b3-c1035cb5333b",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C53",
+      "claim": "When participants shared genuine affect, the inhibitory effect on the aIns to rSMG connection was positively correlated with affective ability and negatively correlated with affective reactivity.",
+      "claim_type": "EXPLICIT",
+      "source": "When participants shared genuine affect, the inhibitory effect on the aIns to rSMG connection was positively correlated with affective ability and negatively correlated with affective reactivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by regression analysis of DCM parameters and questionnaire scores.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "42f92810-b3f5-4702-b422-a374fa8ffb41",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C54",
+      "claim": "Affective ability reflects the capacity to subjectively share emotions with others, while affective reactivity plays a role in the susceptibility to vicarious distress and thus to more automatic responses to another's emotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Affective ability reflects the capacity to subjectively share emotions with others, while affective reactivity plays a role in the susceptibility to vicarious distress and thus to more automatic responses to another's emotion (Batchelder et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Batchelder et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "6f9fd469-267a-4beb-a1b8-1a5cf49585d7",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C55",
+      "claim": "In the genuine pain condition, which requires an accurate sharing of pain, rSMG interacts with aIns to achieve 'affective-to-affective' self-other distinction.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the DCM results and their qualification by the correlation findings suggest that in the genuine pain condition, which requires an accurate sharing of pain, rSMG interacts with aIns to achieve 'affective-to-affective' self-other distinction \u2013 that is disambiguating affective signals originating in the self from those attributable to the other person.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the DCM and correlation analysis results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "6d8e8302-7a9f-4484-9cd0-b88e441c8766",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C56",
+      "claim": "The aIns to rSMG connection in the pretended pain condition may reflect 'cognitive-to-affective' self-other distinction, which helps resolve conflicting information between the top-down contextual information and what seems an unavoidable affective response to the highly salient perceptual cue of the facial expression of pain.",
+      "claim_type": "EXPLICIT",
+      "source": "The aIns to rSMG connection in the pretended pain condition may reflect a related, yet slightly distinct mechanism. Here, it seems that 'cognitive-to-affective' self-other distinction is at play, which helps resolve conflicting information between the top-down contextual information (i.e., that the demonstrator is not actually in pain) from what seems an unavoidable affective response to the highly salient perceptual cue of the facial expression of pain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the DCM analysis results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "d0dedc2b-93d3-48f0-bad8-ddba2c043cca",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C57",
+      "claim": "This inhibitory effect might be related to socioemotional disturbances of individuals with autism spectrum disorders (ASD), who show impairments in social cognition, including self- and other-related processing.",
+      "claim_type": "EXPLICIT",
+      "source": "This inhibitory effect might be related to socioemotional disturbances of individuals with autism spectrum disorders (ASD), who show impairments in social cognition, including self- and other-related processing (Hoffmann et al., 2016; Lamm et al., 2016, for review).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation supported by citations to prior research.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "b4b64bfa-de04-455f-8950-545e5f42a453",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C58",
+      "claim": "ASD individuals likely exhibit distinct inhibition of the aIns-to-rSMG connectivity pattern compared to healthy controls.",
+      "claim_type": "EXPLICIT",
+      "source": "It is thus likely that ASD individuals exhibit distinct inhibition of the aIns-to-rSMG connectivity pattern compared to healthy controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the findings and prior research on ASD.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "d74504d3-00a2-49b2-bef4-5438e93c8981",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C59",
+      "claim": "The enhanced aIns activation in the genuine pain condition mainly tracked personal unpleasantness rather than perceptually domain-general processes.",
+      "claim_type": "EXPLICIT",
+      "source": "As we found the enhanced aIns activation in the genuine pain condition mainly tracked personal unpleasantness rather than perceptually domain-general processes, and because the effect size of the pain expression difference was much smaller than for the affect ratings, we consider this difference did not fundamentally influence the interpretation of our findings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the regression analysis results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "d7e33ad0-8d59-4d6a-a280-4dd38b11715e",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C60",
+      "claim": "The study design did not aim to explicitly quantify self-other distinction.",
+      "claim_type": "EXPLICIT",
+      "source": "An additional limitation was that our study design did not aim to explicitly quantify self-other distinction. Rather, in line with previous research and based on our theoretical framework and rationale, we inferred the engagement of this process from the experimental conditions and the associated behavioral and neural responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the study design and methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "8e68ae87-ba5d-497e-90d8-a204fd49e5cc",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C61",
+      "claim": "The study provides evidence that empathy-related responses in the aIns can indeed be linked to affective sharing, rather than attributing them to responses triggered only by perceptual saliency.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, the current study advances our understanding of two main aspects of empathy. First, we provide evidence that empathy-related responses in the aIns can indeed be linked to affective sharing, rather than attributing them to responses triggered only by perceptual saliency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the data analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "f7c15c7b-4007-448f-85fb-e0677101bfee",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C62",
+      "claim": "The study shows how aIns and rSMG are orchestrated to track what another person really feels, thus enabling us to appropriately respond to their actual needs.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we show how aIns and rSMG are orchestrated to track what another person really feels, thus enabling us to appropriately respond to their actual needs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the DCM analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "911f304a-7435-421d-93e2-6688a85a1e3b",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C63",
+      "claim": "Forty-three participants (21 females; age: Mean = 26.72 years, S.D. = 4.47) were entered into analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "Data of the remaining 43 participants (21 females; age: Mean = 26.72 years, S.D. = 4.47) were entered into analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the study sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "696a1796-84d3-4000-9c25-e1fe8d41e72c",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C64",
+      "claim": "Five participants were excluded because of excessive head motion.",
+      "claim_type": "EXPLICIT",
+      "source": "Five of them were excluded because of excessive head motion ( >15% scans with the frame-wise displacement over 0.5 mm in one session).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the exclusion criteria applied to the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "6f3e9c98-a87d-4efc-9799-a2df525d46e0",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C65",
+      "claim": "The minimum sample size statistically required for this study was 34.",
+      "claim_type": "EXPLICIT",
+      "source": "After calculation, the minimum sample size statistically required for this study was 34 (\u03b1 = 0.05, two-tailed, 1\u2212\u03b2 = 0.80).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result of a priori power analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "4b73ef98-a856-40ef-b931-f4014c51c9ce",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C66",
+      "claim": "All participants were right-handed.",
+      "claim_type": "EXPLICIT",
+      "source": "All participants were being right-handed (self-reported) and provided written consent including post-disclosure of any potential deception.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the participant characteristics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "579870f7-2c68-496b-bf29-76103b7d0725",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C67",
+      "claim": "The study was approved by the ethics committee of the Medical University of Vienna.",
+      "claim_type": "EXPLICIT",
+      "source": "The study was approved by the ethics committee of the Medical University of Vienna and was conducted in line with the latest version of the World Medical Association, 2013.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical approval.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "9dc3c5b5-6311-428e-8adb-5a52366205a4",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C68",
+      "claim": "All painful expressions were acted, as the needle was a telescopic needle.",
+      "claim_type": "EXPLICIT",
+      "source": "Unbeknownst to the participants, all painful expressions were acted, as the needle was a telescopic needle (i.e., a needle that seemed to enter the cheek upon contact, but in reality, was invisibly retracting into the syringe).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental manipulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "340c710c-2654-45aa-8d3b-06f5c5bca5fa",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C69",
+      "claim": "An online validation study with N = 110 participants was performed to validate the stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "To validate the stimuli, we performed an online validation study with N = 110 participants, who were asked to rate a total of 120 video clips of 2 s duration of the two conditions (60 of each condition) showing painful expressions (i.e., the genuine and the pretended pain conditions).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the validation study methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "7a9311b8-503f-4cf4-8a91-9ab9a1fe2d2c",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C70",
+      "claim": "Survey data of 62 of 110 participants were entered into analysis for the validation study.",
+      "claim_type": "EXPLICIT",
+      "source": "Survey data of 62 of 110 participants (34 females; age: mean = 28.71 years, S.D. = 10.11) were entered into analysis (inclusion criteria: false rate for the test questions < 2/8, survey duration > 20 min and <150 min, and the maximum number of continuous identical ratings < 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the validation study sample and inclusion criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "1026391a-bace-464c-ac79-15568b854be0",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C71",
+      "claim": "Videos of six demonstrators were excluded for which participants showed a significant difference in painful expressions in others between the genuine pain and the pretended pain conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on this validation step, we had to exclude videos of six demonstrators (three females) for which participants showed a significant difference in painful expressions in others between the genuine pain and the pretended pain conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the stimulus selection process based on validation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "82e860f0-701e-4579-97f9-8333c494a6fa",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C72",
+      "claim": "Videos of 14 demonstrators were selected for the subsequent pilot study.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result of this validation, videos of 14 demonstrators (7 females), which showed no difference in the pain expression rating between genuine and pretended conditions and which overall showed comparable mean ratings in all three ratings, were selected for the subsequent pilot study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the stimulus selection process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "98096f5c-3495-4613-989d-bab866fbd2a8",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C73",
+      "claim": "In the pilot study, 47 participants were recruited for a behavioral experiment in the behavioral laboratory.",
+      "claim_type": "EXPLICIT",
+      "source": "In the pilot study, 47 participants (24 females; age: mean = 26.28 years, S.D. = 8.80) were recruited for a behavioral experiment in the behavioral laboratory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the pilot study sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "92dd9e58-4f30-44bc-9dbe-cf477c59fbaa",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C74",
+      "claim": "Videos of two demonstrators were excluded after the pilot study for whom the pain expression rating difference between the pretended vs. genuine expressions was large.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon screening for video clips that showed aberrant responses, we excluded videos of two demonstrators (one female), for whom the pain expression rating difference between the pretended vs. genuine expressions was large.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the stimulus selection process based on pilot data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "46f6b18f-ee40-4cbf-9c61-9966cd9d5aa9",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C75",
+      "claim": "Forty-eight videos of 12 demonstrators entered the analyses for the pilot study.",
+      "claim_type": "EXPLICIT",
+      "source": "Forty-eight videos of 12 demonstrators entered the following analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the final stimulus set for the pilot study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "05c21655-4247-4fce-bb86-88d7b6659c65",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C76",
+      "claim": "In the pilot study, the main effect of genuineness was not significant and low in effect size for painful expressions in others.",
+      "claim_type": "EXPLICIT",
+      "source": "For the main effect of genuineness (genuine vs. pretended), it was not significant and low in effect size for painful expressions in others (Fgenuineness (1, 46) = 2.939, p=0.093, \u03b7\u00b2 = 0.060), but was significant with high effect size for the painful feelings in others (Fgenuineness (1, 46) = 280.112, p<0.001, \u03b7\u00b2 = 0.859) as well as the unpleasantness in self (Fgenuineness (1, 46) = 43.143, p<0.001, \u03b7\u00b2 = 0.484).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of pilot study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "5e6ed543-289d-400f-903e-1432f3d1d516",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C77",
+      "claim": "In the pilot study, the main effect of genuineness was significant with high effect size for the painful feelings in others and the unpleasantness in self.",
+      "claim_type": "EXPLICIT",
+      "source": "For the main effect of genuineness (genuine vs. pretended), it was not significant and low in effect size for painful expressions in others (Fgenuineness (1, 46) = 2.939, p=0.093, \u03b7\u00b2 = 0.060), but was significant with high effect size for the painful feelings in others (Fgenuineness (1, 46) = 280.112, p<0.001, \u03b7\u00b2 = 0.859) as well as the unpleasantness in self (Fgenuineness (1, 46) = 43.143, p<0.001, \u03b7\u00b2 = 0.484).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of pilot study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "17e70955-5802-478d-b1d0-12721645983d",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C78",
+      "claim": "In the pilot study, the main effects of pain for all three questions were found significant with high effect size.",
+      "claim_type": "EXPLICIT",
+      "source": "The main effects of pain (pain vs. no pain) for all three questions were found significant with high effect size (the smallest effect size was for the rating of unpleasantness in self, Fpain (1, 46) = 82.199, p<0.001, \u03b7\u00b2 = 0.641).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of pilot study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "d8b8121e-57c6-4fa9-ad6d-c22c5c716976",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C79",
+      "claim": "Participants rated the painfulness of the demonstrators to be substantially higher when it was genuine as compared to those that were pretended in the pilot study.",
+      "claim_type": "EXPLICIT",
+      "source": "More specifically, as expected and required for the main study, participants rated the painfulness of the demonstrators to be substantially higher when it was genuine as compared to those that were pretended, and this also resulted in much higher unpleasantness experienced in the self.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the pilot study findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "2a1a2803-c008-4b54-8133-9d9c39b82ee4",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C80",
+      "claim": "The two conditions did not differ with respect to the ratings of the painful facial expressions in the pilot study.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that, the two conditions did not differ with respect to the ratings of the painful facial expressions, implying that putative differences in ratings as well as the subsequent brain imaging data could only be attributed to the contextual appraisal of the demonstrators' actual painful states, rather than the differences in facial pain perception.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the pilot study findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "8eae6645-e640-48ab-a879-0bcc1f7f98b3",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C81",
+      "claim": "Videos of 12 demonstrators (6 females) were used in the main fMRI experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on this pilot study, we thus decided on video clips of 12 demonstrators (6 females) in the main fMRI experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the final stimulus set for the main experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "27ef5024-43a6-46e6-99fe-10a8454174c0",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C82",
+      "claim": "The experiment was implemented using Cogent 2000 (version 1.33).",
+      "claim_type": "EXPLICIT",
+      "source": "The experiment was implemented using Cogent 2000 (version 1.33; http://www.vislab.ucl.ac.uk/cogent_2000.php).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental software.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "101a7c8e-1f7c-4e3d-8257-6b2d13c0165f",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C83",
+      "claim": "Participants were explicitly instructed to recreate the feelings of the demonstrators shown in the videos as vividly and intensely as possible.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants were explicitly instructed to recreate the feelings of the demonstrators shown in the videos as vividly and intensely as possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental instructions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "4886cf26-16f7-4a2e-b091-281aa665dec8",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C84",
+      "claim": "The demonstrators appearing in the genuine and pretended conditions were counterbalanced across participants.",
+      "claim_type": "EXPLICIT",
+      "source": "We also counterbalanced the demonstrators appearing in the genuine and pretended conditions across participants, thus controlling for differences in behavioral and brain response that could be explained by differences between the stimulus sets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "aeaee500-1eae-499b-8a6d-1b3b046e6d77",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C85",
+      "claim": "The participant performed the fMRI experiment in two runs.",
+      "claim_type": "EXPLICIT",
+      "source": "The participant performed the fMRI experiment in two runs (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the experimental procedure shown in Figure 1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "3cdf1ccd-cba2-4301-b7eb-3d38d7ab0e5f",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C86",
+      "claim": "Each run was composed of two blocks showing genuine pain and two blocks showing pretended pain.",
+      "claim_type": "EXPLICIT",
+      "source": "Each run was composed of two blocks showing genuine pain and two blocks showing pretended pain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "7db9e412-ad27-49c1-a3c7-8b0314fe59d4",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C87",
+      "claim": "In each block, the participant watched nine video clips containing both painful and neutral videos.",
+      "claim_type": "EXPLICIT",
+      "source": "In each block, the participant watched nine video clips containing both painful and neutral videos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "c4161ccd-4107-45f7-a069-d30a516693d7",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C88",
+      "claim": "fMRI data were collected using a Siemens Magnetom Skyra MRI scanner with a 32-channel head coil.",
+      "claim_type": "EXPLICIT",
+      "source": "fMRI data were collected using a Siemens Magnetom Skyra MRI scanner (Siemens, Erlangen, Germany), with a 32-channel head coil.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the MRI equipment.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "767059ec-075e-4334-b84c-bbc222770101",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C89",
+      "claim": "Functional whole-brain scans were collected using a multiband-accelerated T2*-weighted echoplanar imaging sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional whole-brain scans were collected using a multiband-accelerated T2*-weighted echoplanar imaging sequence (multiband acceleration factor = 4, interleaved ascending acquisition in multi-slice mode, 52 slices co-planar to the connecting line between anterior and posterior commissure, TR = 1200 ms, TE = 34 ms, acquisition matrix = 96 \u00d7 96 voxels, FOV = 210 \u00d7 210 mm2, flip angle = 66\u00b0, inter-slice gap = 0.4 mm, voxel size = 2.2 \u00d7 2.2 \u00d7 2 mm3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the MRI acquisition parameters.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "be4a2564-ae34-4c22-8fc6-918efc7e9386",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C90",
+      "claim": "Two functional imaging runs, each lasting around 16 min, were performed.",
+      "claim_type": "EXPLICIT",
+      "source": "Two functional imaging runs, each lasting around 16 min (~800 images per run), were performed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the MRI acquisition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "7e4b0cb0-d21f-450f-92ba-04ac1ba2b46d",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C91",
+      "claim": "Imaging data were preprocessed with a combination of Nipype and MATLAB, with Statistical Parametric Mapping (SPM12).",
+      "claim_type": "EXPLICIT",
+      "source": "Imaging data were preprocessed with a combination of Nipype (Gorgolewski et al., 2011) and MATLAB (version R2018b 9.5.0; MathWorks), with Statistical Parametric Mapping (SPM12; https://www.fil.ion.ucl.ac.uk/spm/software/spm12/).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data preprocessing software.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "c017ff86-4fd3-47f3-93cc-b88964822de7",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C92",
+      "claim": "Data scrubbing of the functional scans was performed for those whose frame-wise displacements (FD) were over 0.5 mm.",
+      "claim_type": "EXPLICIT",
+      "source": "To improve data quality, we performed data scrubbing of the functional scans for those whose frame-wise displacements (FD) were over 0.5 mm (Power et al., 2012; Power et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data quality control procedure, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "e1c7465e-425c-4fd2-bb14-89c54c17f7e5",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C93",
+      "claim": "An initial threshold of p<0.001 (uncorrected) at the voxel level and a family-wise error (FWE) correction (p<0.05) at the cluster level were applied.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied an initial threshold of p<0.001 (uncorrected) at the voxel level and a family-wise error (FWE) correction (p<0.05) at the cluster level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the statistical thresholding procedure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "828926ff-c616-4689-8f7e-74313b6bbd8c",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C94",
+      "claim": "Dynamic causal modeling (DCM) was used to estimate the effective connectivity between the ROIs based on the tasked-related brain responses.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate the functional network involved in affective processes and self-other distinction and how it was modulated by our experimental manipulations (i.e., genuine pain and pretended pain), we used DCM to estimate the effective connectivity between the ROIs based on the tasked-related brain responses (Stephan and Friston, 2010, for review).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the DCM analysis method, supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "f9ded64d-402b-45d6-919c-fdd0daabbe3d",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C95",
+      "claim": "The DCM analyses were conducted with DCM12.5 implemented in SPM12 (v. 7771).",
+      "claim_type": "EXPLICIT",
+      "source": "The DCM analyses were conducted with DCM12.5 implemented in SPM12 (v. 7771).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the DCM analysis software.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "c5bd8229-4d95-4e1b-848e-0b90bc7296ed",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C96",
+      "claim": "One participant was excluded from DCM analysis as no voxels survived significance testing.",
+      "claim_type": "EXPLICIT",
+      "source": "One participant was excluded as no voxels survived significance testing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the exclusion criteria for DCM analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "14d69954-1cac-4c69-854a-744e35f6a2de",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C97",
+      "claim": "Group-level DCM inference was performed using parametric empirical Bayes.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, group-level DCM inference was performed using parametric empirical Bayes (Zeidman et al., 2019b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the DCM analysis method, supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "d572485b-b198-4046-a323-842ff3ea8554",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C98",
+      "claim": "An automatic search over the entire model space (max. n = 256) was conducted using Bayesian model reduction and random-effects Bayesian model averaging.",
+      "claim_type": "EXPLICIT",
+      "source": "We conducted an automatic search over the entire model space (max. n = 256) using Bayesian model reduction and random-effects Bayesian model averaging, resulting in a final group model that takes accuracy, complexity, and uncertainty into account (Zeidman et al., 2019b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the DCM model selection procedure, supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "d613f067-19b4-49ca-b3e7-b73985c8e4a4",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C99",
+      "claim": "The threshold of the Bayesian posterior probability was set to pp>0.95 (i.e., strong evidence).",
+      "claim_type": "EXPLICIT",
+      "source": "The threshold of the Bayesian posterior probability was set to pp>0.95 (i.e., strong evidence) but we reported all parameters above pp>0.75 (i.e., positive evidence) for full transparency of the DCM results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the statistical threshold for DCM analysis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "9c5d32fb-421b-47be-a3f6-f2e9683d26df",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C100",
+      "claim": "The model without any interaction outperformed other models for both genuine pain and pretend pain in the regression analysis of DCM parameters with behavioral ratings.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that interactions between behavioral ratings might contribute to the regression model, we tested five regression models (with and without interaction; See Supplementary file 1) for both genuine pain and pretended pain. Results showed that for both genuine pain and pretend pain, the model without any interaction outperformed other models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by model comparison analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "23036fcc-bbe4-4539-aa0c-35bcfd52e63e",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C101",
+      "claim": "Two participants did not complete all three questionnaires and were excluded from the regression analyses with questionnaires.",
+      "claim_type": "EXPLICIT",
+      "source": "As two participants did not complete all three questionnaires, we excluded their data from the regression analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the exclusion criteria for regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "03aa6bc3-3f5b-4701-80d9-969781ecc82d",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "claim_id": "C102",
+      "claim": "A conservative threshold of VIF < 5 was used as a sign of no severe multicollinearity.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we used a rather conservative threshold of VIF < 5 as a sign of no severe multicollinearity (Menard, 2002; James et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the multicollinearity diagnostic threshold, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d30a623d-b67e-4426-8656-790eaf1e2aef",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Participants showed higher ratings for genuine vs. pretended pain across all three behavioral measures (painful expressions in others, painful feelings in others, and unpleasantness in self), with significant main effects of genuineness and pain, and significant interactions indicating stronger effects for genuine pain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C16 provide converging statistical evidence from repeated-measures ANOVAs showing consistent main effects and interactions across all three rating scales. The statistical tests are appropriate, sample size is adequate (N=43), and effect sizes are reported. The findings are internally consistent and well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "1a7a0487-004c-4068-a3dc-4379e8da288b",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Behavioral ratings of painful feelings in others and unpleasantness in self were significantly correlated in the genuine pain condition (r=0.691, p<0.001) but not in the pretended pain condition (r=0.249, p=0.107), with bootstrapping confirming a significant difference between correlations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C19 demonstrate a condition-specific correlation pattern supported by appropriate statistical tests including bootstrapping for comparing correlation coefficients. The differential correlation pattern provides evidence for distinct processing of genuine vs. pretended pain.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "b5b04f55-0d31-4d1a-b2e4-93911d5cb3cd",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "fMRI analysis revealed activations in bilateral aIns, aMCC, and rSMG across contrasts, with bilateral aIns activation positively correlated with self-unpleasantness ratings when comparing genuine vs. pretended pain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C21 are supported by mass-univariate fMRI analyses with appropriate statistical thresholding (p<0.001 uncorrected voxel-level, p<0.05 FWE cluster-level). The regression analysis linking aIns activation to self-unpleasantness provides brain-behavior correspondence. Results are visualized in Figures 2A-B and Table 1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "c5c66cb3-18e0-4e10-abc6-ca878d29a638",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "DCM analysis revealed inhibitory effects on the aIns to rSMG connection in both conditions, with significantly reduced inhibition for genuine pain compared to pretended pain (p=0.011), and no evidence of modulatory effects on the rSMG to aIns connection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 are supported by DCM analysis using appropriate Bayesian methods (parametric empirical Bayes, model reduction, and averaging). The directional finding (inhibitory aIns\u2192rSMG but not rSMG\u2192aIns) and the condition difference are statistically significant with reported confidence intervals.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "bf537eae-398c-4e20-a6b4-8b669e846359",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "For genuine pain, the aIns-to-rSMG modulatory effect was significantly related to ratings of painful feelings in others (p=0.026) but not to painful expressions or self-unpleasantness. For pretended pain, no ratings were significantly related to the modulatory effect. Model comparison showed the model without interactions best explained the data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27 and C100 are supported by multiple linear regression analyses with appropriate model comparison. The selective association with 'painful feelings in others' for genuine pain only provides specificity. Multicollinearity was assessed (VIF<5), and the model selection approach was systematic.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "7563cb47-10e5-4af6-9742-3d9374cac3ed",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In the genuine pain condition, the aIns-to-rSMG modulatory effect was significantly explained by affective ability (positive) and affective reactivity (negative) subscales of the ECQ (R\u00b2=0.270, p=0.003). No questionnaire subscales predicted the modulatory effect in the pretended pain condition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C29 are supported by stepwise regression analysis with appropriate statistical reporting. The condition-specific trait associations (genuine pain only) align with the theoretical framework. Multicollinearity was assessed (VIF<2), though the stepwise approach may capitalize on chance with multiple predictors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "ea01df80-0d8a-4ef7-807a-1d617623813b",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The study provides evidence that aIns activation for genuine vs. pretended pain reflects genuine affect sharing rather than automatic responses to perceptual salience, as aIns activation was selectively correlated with self-unpleasantness and tracked actual affective states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30, C31, C33, and C61 represent the primary interpretation that aIns responses reflect affect sharing. This is supported by the selective correlation with self-unpleasantness (C21, C31) and the condition-specific behavioral correlations (C17-C19). However, the interpretation relies on the assumption that the experimental manipulation successfully isolated affect sharing from salience, which is partially confounded by the small but significant difference in pain expression ratings (C8).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "d7ce56de-d08e-4394-a0c9-3ae3b0ce6e00",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study proposes that higher rSMG engagement in genuine pain reflects increased demand for self-other distinction, with the inhibitory aIns\u2192rSMG connection representing predictive mismatch between self-related information and sensory inputs. Reduced inhibition in genuine pain may explain higher rSMG activation and enable 'affective-to-affective' self-other distinction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C39, C43, C46, C48, C55, and C62 represent interpretations of the DCM findings within a predictive processing framework. While the DCM results (C22-C24) are statistically supported, the mechanistic interpretation linking reduced inhibition to increased rSMG activation and specific types of self-other distinction is speculative. The directionality of the inhibitory effect and its functional meaning require additional validation, as DCM parameters do not directly measure neural excitation/inhibition at the cellular level.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "0d6312f1-398b-459e-b2c7-1986f2964dc1",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The findings align with Coll et al.'s (2017) model that affect sharing follows emotion identification, with aIns and aMCC showing both automatic responses and proper affect sharing for genuine pain. The aIns-to-rSMG modulation encodes others' emotional states and relates to cognitive evaluations rather than own affect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C34, C35, C49, C50, and C56 represent theoretical interpretations linking the findings to existing models. While the data show condition differences and selective correlations, the temporal sequence of automatic vs. controlled processing (C35) cannot be resolved with the current fMRI design. The distinction between 'affective-to-affective' and 'cognitive-to-affective' self-other distinction (C55-C56) is speculative and not directly tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "0b7f2750-8af7-43c6-a0d7-61538b6750b4",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study employed extensive stimulus validation through online (N=110, analyzed N=62) and pilot (N=47) studies to select 12 demonstrators whose genuine and pretended pain expressions were matched for perceptual features but differed in perceived genuineness and felt pain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C81 describe a rigorous multi-stage stimulus validation process. The pilot study (C76-C80) successfully demonstrated that genuine and pretended conditions did not differ in pain expression ratings (p=0.093, \u03b7\u00b2=0.060) but differed significantly in painful feelings (\u03b7\u00b2=0.859) and self-unpleasantness (\u03b7\u00b2=0.484), validating the experimental manipulation. However, the main study showed a small but significant difference in pain expression ratings (C8), suggesting imperfect matching.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "70f67020-284b-41d8-8af0-ffa98dc71ad4",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study included 43 participants (21 females, mean age 26.72\u00b14.47 years) after excluding 5 for excessive head motion, meeting the a priori power analysis requirement of N=34 for detecting medium effects (d=0.5) with 80% power.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C67 document appropriate sample size determination and participant characteristics. The a priori power analysis (C65) and exclusion criteria (C64) are clearly stated. The sample exceeds the minimum required size, though the power analysis assumes a medium effect size which may not be appropriate for all analyses (particularly DCM).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "6007a942-0f56-4147-8812-3f31c5f13430",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The fMRI experiment used a blocked design with counterbalanced demonstrators across conditions, multiband-accelerated EPI acquisition (TR=1200ms), standard preprocessing including data scrubbing (FD>0.5mm), and cluster-level FWE correction (p<0.05) for statistical inference.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C93 describe standard and appropriate fMRI methodology. The counterbalancing (C84) controls for stimulus-specific effects, data scrubbing (C92) addresses motion artifacts, and the statistical thresholding (C93) balances sensitivity and specificity. The multiband acceleration (C89) enables faster TR for better temporal resolution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "2ea8391a-794e-4431-9403-213b66c96dc2",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "DCM analysis used parametric empirical Bayes with automatic model space search (max 256 models) via Bayesian model reduction and averaging, with posterior probability threshold of pp>0.95 for strong evidence. One participant was excluded due to insufficient voxel activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C99 describe state-of-the-art DCM methodology using recent advances in Bayesian model comparison. The automatic search approach (C98) is more comprehensive than manual model specification. However, the exclusion of aMCC from the DCM model (mentioned in text but not in claims) represents a post-hoc decision that may affect interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "54d05c18-47a2-45f3-88dc-1b6f0f2ea47d",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Two participants were excluded from questionnaire regression analyses for incomplete data. Multicollinearity was assessed using VIF<5 as a conservative threshold, with no severe collinearity detected in any model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C101-C102 describe appropriate handling of missing data and multicollinearity diagnostics. The VIF threshold of 5 (C102) is indeed conservative compared to the commonly used threshold of 10, strengthening confidence in the regression results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "9d90dc28-bbd5-4b7c-b5b0-cda45a0ea4f7",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The introduction establishes that empathy for pain engages aIns and aMCC (with debate about whether this reflects affect sharing vs. salience detection), that contextual factors influence empathic responses, and that rSMG is implicated in affective self-other distinction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 accurately summarize prior literature with appropriate citations. These claims establish the theoretical background and motivation for the study, correctly identifying the key debate (C3) and relevant brain regions (C2, C6) based on meta-analyses and reviews.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "5b1c67c6-5889-4c65-a1fa-d1ae93acd0a3",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The discussion contextualizes findings within prior literature on aIns/aMCC functional roles, rSMG's role in self-other distinction, predictive processing theories, and empathy models, with appropriate citations to support theoretical interpretations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32, C36-C38, C40-C42, C51-C52, and C54 accurately represent cited literature and provide theoretical context for interpreting the findings. These claims appropriately distinguish between established knowledge from prior work and the current study's novel contributions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "9e024573-8b19-4990-9166-1036752ed648",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The study proposes that neural suppression explains away prediction error, that the absence of rSMG\u2192aIns modulation indicates sufficient modeling by aIns\u2192rSMG predictions, and that dynamic sensory-control interactions underlie the modulatory effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C44, C45, and C47 represent theoretical interpretations of the DCM findings. While consistent with predictive processing frameworks, these interpretations are speculative (C47 explicitly uses 'we speculate'). The absence of an effect (C45) is difficult to interpret definitively, as it could reflect insufficient power or true absence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "5d97576f-faf3-4104-9e1b-fe6ce35edc24",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The study speculates that the inhibitory aIns-to-rSMG effect might relate to socioemotional disturbances in autism spectrum disorders (ASD), with ASD individuals likely exhibiting distinct connectivity patterns compared to healthy controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C57-C58 are explicitly speculative (C58 uses 'likely') and represent potential clinical implications rather than tested hypotheses. While the speculation is grounded in cited literature on ASD and self-other processing, no ASD participants were included in the study, making this purely hypothetical.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    },
+    {
+      "id": "ff499ff6-b194-41a0-89e0-84d08209b95e",
+      "content_id": "c1b766e3-0983-4e64-9d32-002925891bb7",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The study acknowledges limitations including that enhanced aIns activation tracked personal unpleasantness rather than domain-general processes, and that self-other distinction was inferred rather than explicitly quantified.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 represent appropriate acknowledgment of study limitations. C59 addresses the small but significant difference in pain expression ratings, while C60 acknowledges that self-other distinction was not directly measured but inferred from the experimental design and neural responses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:54:38.567602Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "da960b11-971d-4ef0-a569-84782cc099c0",
+      "result_id": "d30a623d-b67e-4426-8656-790eaf1e2aef"
+    },
+    {
+      "claim_id": "80ad729f-ad99-41ab-900f-1e81b3facfe9",
+      "result_id": "d30a623d-b67e-4426-8656-790eaf1e2aef"
+    },
+    {
+      "claim_id": "9bfe0d5c-f38e-4789-8043-f5f3c27d12b4",
+      "result_id": "d30a623d-b67e-4426-8656-790eaf1e2aef"
+    },
+    {
+      "claim_id": "04e38d5d-7105-440c-88ff-e16b4fe91267",
+      "result_id": "d30a623d-b67e-4426-8656-790eaf1e2aef"
+    },
+    {
+      "claim_id": "733eca4b-d069-48bd-a768-087711c81d44",
+      "result_id": "d30a623d-b67e-4426-8656-790eaf1e2aef"
+    },
+    {
+      "claim_id": "80ec8e0d-b2a8-4d45-86b3-ab4c65eb2da7",
+      "result_id": "d30a623d-b67e-4426-8656-790eaf1e2aef"
+    },
+    {
+      "claim_id": "e162ce84-bf8f-4140-baaf-39717bd9c216",
+      "result_id": "d30a623d-b67e-4426-8656-790eaf1e2aef"
+    },
+    {
+      "claim_id": "b8e73c58-bcd3-4d82-97c4-0fc7a0ad367f",
+      "result_id": "d30a623d-b67e-4426-8656-790eaf1e2aef"
+    },
+    {
+      "claim_id": "100dde63-e7f0-4709-9376-67cfdba52602",
+      "result_id": "d30a623d-b67e-4426-8656-790eaf1e2aef"
+    },
+    {
+      "claim_id": "c8f8ce34-6594-4fe3-87c4-fd7f75b9642d",
+      "result_id": "1a7a0487-004c-4068-a3dc-4379e8da288b"
+    },
+    {
+      "claim_id": "83d9bf40-8640-47e0-9bfa-554845ee88d0",
+      "result_id": "1a7a0487-004c-4068-a3dc-4379e8da288b"
+    },
+    {
+      "claim_id": "c31e94de-89de-4396-bd08-afa283fbcf27",
+      "result_id": "1a7a0487-004c-4068-a3dc-4379e8da288b"
+    },
+    {
+      "claim_id": "1acefe3b-2b6e-4fa6-888c-82629356e927",
+      "result_id": "b5b04f55-0d31-4d1a-b2e4-93911d5cb3cd"
+    },
+    {
+      "claim_id": "bc1e3933-343e-4096-8d46-f39119e30749",
+      "result_id": "b5b04f55-0d31-4d1a-b2e4-93911d5cb3cd"
+    },
+    {
+      "claim_id": "1aad64a4-1d54-4bf4-b71a-1e19f5be1aca",
+      "result_id": "c5c66cb3-18e0-4e10-abc6-ca878d29a638"
+    },
+    {
+      "claim_id": "dc183ec3-36a9-4984-b2f6-3b6f564ec2e9",
+      "result_id": "c5c66cb3-18e0-4e10-abc6-ca878d29a638"
+    },
+    {
+      "claim_id": "b6b22d1d-1828-45d2-9873-d5ba28dead35",
+      "result_id": "c5c66cb3-18e0-4e10-abc6-ca878d29a638"
+    },
+    {
+      "claim_id": "019e64df-8787-4d17-bd5b-c5b48bf83407",
+      "result_id": "bf537eae-398c-4e20-a6b4-8b669e846359"
+    },
+    {
+      "claim_id": "05b49fa2-b035-4c40-8aa8-a16eb5eaa7e0",
+      "result_id": "bf537eae-398c-4e20-a6b4-8b669e846359"
+    },
+    {
+      "claim_id": "e551688a-e7bf-41ca-ae6b-8ab49f1a68a3",
+      "result_id": "bf537eae-398c-4e20-a6b4-8b669e846359"
+    },
+    {
+      "claim_id": "9c5d32fb-421b-47be-a3f6-f2e9683d26df",
+      "result_id": "bf537eae-398c-4e20-a6b4-8b669e846359"
+    },
+    {
+      "claim_id": "4df005e7-fc69-4618-8650-2b3bf2b131a3",
+      "result_id": "7563cb47-10e5-4af6-9742-3d9374cac3ed"
+    },
+    {
+      "claim_id": "dfed6540-3981-41d9-a0c8-cc7b643ac544",
+      "result_id": "7563cb47-10e5-4af6-9742-3d9374cac3ed"
+    },
+    {
+      "claim_id": "4507f7a3-c5bd-484d-a936-7a40f7bbfa05",
+      "result_id": "ea01df80-0d8a-4ef7-807a-1d617623813b"
+    },
+    {
+      "claim_id": "6499cc04-4185-47cb-aae0-423538f2d2f4",
+      "result_id": "ea01df80-0d8a-4ef7-807a-1d617623813b"
+    },
+    {
+      "claim_id": "3ffe0286-fa54-45d6-b5cd-f1967b4e387b",
+      "result_id": "ea01df80-0d8a-4ef7-807a-1d617623813b"
+    },
+    {
+      "claim_id": "8e68ae87-ba5d-497e-90d8-a204fd49e5cc",
+      "result_id": "ea01df80-0d8a-4ef7-807a-1d617623813b"
+    },
+    {
+      "claim_id": "e47d45b5-5505-4960-83f5-592bfb6a5941",
+      "result_id": "d7ce56de-d08e-4394-a0c9-3ae3b0ce6e00"
+    },
+    {
+      "claim_id": "3bd571bd-8a05-4b99-9074-4d086f801979",
+      "result_id": "d7ce56de-d08e-4394-a0c9-3ae3b0ce6e00"
+    },
+    {
+      "claim_id": "c0030ce7-a81c-4c6c-96b8-f4d0233c8fc4",
+      "result_id": "d7ce56de-d08e-4394-a0c9-3ae3b0ce6e00"
+    },
+    {
+      "claim_id": "ad03bab8-7e7a-418e-8e8a-5e7bc553e98e",
+      "result_id": "d7ce56de-d08e-4394-a0c9-3ae3b0ce6e00"
+    },
+    {
+      "claim_id": "6f9fd469-267a-4beb-a1b8-1a5cf49585d7",
+      "result_id": "d7ce56de-d08e-4394-a0c9-3ae3b0ce6e00"
+    },
+    {
+      "claim_id": "f7c15c7b-4007-448f-85fb-e0677101bfee",
+      "result_id": "d7ce56de-d08e-4394-a0c9-3ae3b0ce6e00"
+    },
+    {
+      "claim_id": "8cbe272f-9189-4cb4-94c3-a640d8e3d51b",
+      "result_id": "0d6312f1-398b-459e-b2c7-1986f2964dc1"
+    },
+    {
+      "claim_id": "3761e046-07f9-494f-aa88-8b19b0363e80",
+      "result_id": "0d6312f1-398b-459e-b2c7-1986f2964dc1"
+    },
+    {
+      "claim_id": "b3801c35-cfd8-45fa-acd7-c26dd51b2e77",
+      "result_id": "0d6312f1-398b-459e-b2c7-1986f2964dc1"
+    },
+    {
+      "claim_id": "502903f8-8401-453f-b55e-22511eb2acf1",
+      "result_id": "0d6312f1-398b-459e-b2c7-1986f2964dc1"
+    },
+    {
+      "claim_id": "6d8e8302-7a9f-4484-9cd0-b88e441c8766",
+      "result_id": "0d6312f1-398b-459e-b2c7-1986f2964dc1"
+    },
+    {
+      "claim_id": "9dc3c5b5-6311-428e-8adb-5a52366205a4",
+      "result_id": "0b7f2750-8af7-43c6-a0d7-61538b6750b4"
+    },
+    {
+      "claim_id": "340c710c-2654-45aa-8d3b-06f5c5bca5fa",
+      "result_id": "0b7f2750-8af7-43c6-a0d7-61538b6750b4"
+    },
+    {
+      "claim_id": "7a9311b8-503f-4cf4-8a91-9ab9a1fe2d2c",
+      "result_id": "0b7f2750-8af7-43c6-a0d7-61538b6750b4"
+    },
+    {
+      "claim_id": "1026391a-bace-464c-ac79-15568b854be0",
+      "result_id": "0b7f2750-8af7-43c6-a0d7-61538b6750b4"
+    },
+    {
+      "claim_id": "82e860f0-701e-4579-97f9-8333c494a6fa",
+      "result_id": "0b7f2750-8af7-43c6-a0d7-61538b6750b4"
+    },
+    {
+      "claim_id": "98096f5c-3495-4613-989d-bab866fbd2a8",
+      "result_id": "0b7f2750-8af7-43c6-a0d7-61538b6750b4"
+    },
+    {
+      "claim_id": "92dd9e58-4f30-44bc-9dbe-cf477c59fbaa",
+      "result_id": "0b7f2750-8af7-43c6-a0d7-61538b6750b4"
+    },
+    {
+      "claim_id": "46f6b18f-ee40-4cbf-9c61-9966cd9d5aa9",
+      "result_id": "0b7f2750-8af7-43c6-a0d7-61538b6750b4"
+    },
+    {
+      "claim_id": "05c21655-4247-4fce-bb86-88d7b6659c65",
+      "result_id": "0b7f2750-8af7-43c6-a0d7-61538b6750b4"
+    },
+    {
+      "claim_id": "5e6ed543-289d-400f-903e-1432f3d1d516",
+      "result_id": "0b7f2750-8af7-43c6-a0d7-61538b6750b4"
+    },
+    {
+      "claim_id": "17e70955-5802-478d-b1d0-12721645983d",
+      "result_id": "0b7f2750-8af7-43c6-a0d7-61538b6750b4"
+    },
+    {
+      "claim_id": "d8b8121e-57c6-4fa9-ad6d-c22c5c716976",
+      "result_id": "0b7f2750-8af7-43c6-a0d7-61538b6750b4"
+    },
+    {
+      "claim_id": "2a1a2803-c008-4b54-8133-9d9c39b82ee4",
+      "result_id": "0b7f2750-8af7-43c6-a0d7-61538b6750b4"
+    },
+    {
+      "claim_id": "8eae6645-e640-48ab-a879-0bcc1f7f98b3",
+      "result_id": "0b7f2750-8af7-43c6-a0d7-61538b6750b4"
+    },
+    {
+      "claim_id": "911f304a-7435-421d-93e2-6688a85a1e3b",
+      "result_id": "70f67020-284b-41d8-8af0-ffa98dc71ad4"
+    },
+    {
+      "claim_id": "696a1796-84d3-4000-9c25-e1fe8d41e72c",
+      "result_id": "70f67020-284b-41d8-8af0-ffa98dc71ad4"
+    },
+    {
+      "claim_id": "6f3e9c98-a87d-4efc-9799-a2df525d46e0",
+      "result_id": "70f67020-284b-41d8-8af0-ffa98dc71ad4"
+    },
+    {
+      "claim_id": "4b73ef98-a856-40ef-b931-f4014c51c9ce",
+      "result_id": "70f67020-284b-41d8-8af0-ffa98dc71ad4"
+    },
+    {
+      "claim_id": "579870f7-2c68-496b-bf29-76103b7d0725",
+      "result_id": "70f67020-284b-41d8-8af0-ffa98dc71ad4"
+    },
+    {
+      "claim_id": "27ef5024-43a6-46e6-99fe-10a8454174c0",
+      "result_id": "6007a942-0f56-4147-8812-3f31c5f13430"
+    },
+    {
+      "claim_id": "101a7c8e-1f7c-4e3d-8257-6b2d13c0165f",
+      "result_id": "6007a942-0f56-4147-8812-3f31c5f13430"
+    },
+    {
+      "claim_id": "4886cf26-16f7-4a2e-b091-281aa665dec8",
+      "result_id": "6007a942-0f56-4147-8812-3f31c5f13430"
+    },
+    {
+      "claim_id": "aeaee500-1eae-499b-8a6d-1b3b046e6d77",
+      "result_id": "6007a942-0f56-4147-8812-3f31c5f13430"
+    },
+    {
+      "claim_id": "3cdf1ccd-cba2-4301-b7eb-3d38d7ab0e5f",
+      "result_id": "6007a942-0f56-4147-8812-3f31c5f13430"
+    },
+    {
+      "claim_id": "7db9e412-ad27-49c1-a3c7-8b0314fe59d4",
+      "result_id": "6007a942-0f56-4147-8812-3f31c5f13430"
+    },
+    {
+      "claim_id": "c4161ccd-4107-45f7-a069-d30a516693d7",
+      "result_id": "6007a942-0f56-4147-8812-3f31c5f13430"
+    },
+    {
+      "claim_id": "767059ec-075e-4334-b84c-bbc222770101",
+      "result_id": "6007a942-0f56-4147-8812-3f31c5f13430"
+    },
+    {
+      "claim_id": "be4a2564-ae34-4c22-8fc6-918efc7e9386",
+      "result_id": "6007a942-0f56-4147-8812-3f31c5f13430"
+    },
+    {
+      "claim_id": "7e4b0cb0-d21f-450f-92ba-04ac1ba2b46d",
+      "result_id": "6007a942-0f56-4147-8812-3f31c5f13430"
+    },
+    {
+      "claim_id": "c017ff86-4fd3-47f3-93cc-b88964822de7",
+      "result_id": "6007a942-0f56-4147-8812-3f31c5f13430"
+    },
+    {
+      "claim_id": "e1c7465e-425c-4fd2-bb14-89c54c17f7e5",
+      "result_id": "6007a942-0f56-4147-8812-3f31c5f13430"
+    },
+    {
+      "claim_id": "828926ff-c616-4689-8f7e-74313b6bbd8c",
+      "result_id": "2ea8391a-794e-4431-9403-213b66c96dc2"
+    },
+    {
+      "claim_id": "f9ded64d-402b-45d6-919c-fdd0daabbe3d",
+      "result_id": "2ea8391a-794e-4431-9403-213b66c96dc2"
+    },
+    {
+      "claim_id": "c5bd8229-4d95-4e1b-848e-0b90bc7296ed",
+      "result_id": "2ea8391a-794e-4431-9403-213b66c96dc2"
+    },
+    {
+      "claim_id": "14d69954-1cac-4c69-854a-744e35f6a2de",
+      "result_id": "2ea8391a-794e-4431-9403-213b66c96dc2"
+    },
+    {
+      "claim_id": "d572485b-b198-4046-a323-842ff3ea8554",
+      "result_id": "2ea8391a-794e-4431-9403-213b66c96dc2"
+    },
+    {
+      "claim_id": "d613f067-19b4-49ca-b3e7-b73985c8e4a4",
+      "result_id": "2ea8391a-794e-4431-9403-213b66c96dc2"
+    },
+    {
+      "claim_id": "23036fcc-bbe4-4539-aa0c-35bcfd52e63e",
+      "result_id": "54d05c18-47a2-45f3-88dc-1b6f0f2ea47d"
+    },
+    {
+      "claim_id": "03aa6bc3-3f5b-4701-80d9-969781ecc82d",
+      "result_id": "54d05c18-47a2-45f3-88dc-1b6f0f2ea47d"
+    },
+    {
+      "claim_id": "390d1d84-faa2-464c-9fc2-efce390dfc83",
+      "result_id": "9d90dc28-bbd5-4b7c-b5b0-cda45a0ea4f7"
+    },
+    {
+      "claim_id": "0d0809e7-f596-485b-8787-b4d490a2791a",
+      "result_id": "9d90dc28-bbd5-4b7c-b5b0-cda45a0ea4f7"
+    },
+    {
+      "claim_id": "db0419d6-b952-4f6a-9f90-62159859dc1b",
+      "result_id": "9d90dc28-bbd5-4b7c-b5b0-cda45a0ea4f7"
+    },
+    {
+      "claim_id": "4529986a-bd0f-484b-9fd8-7384e1864820",
+      "result_id": "9d90dc28-bbd5-4b7c-b5b0-cda45a0ea4f7"
+    },
+    {
+      "claim_id": "6685a22f-594a-47d2-9170-86c46177de30",
+      "result_id": "9d90dc28-bbd5-4b7c-b5b0-cda45a0ea4f7"
+    },
+    {
+      "claim_id": "4fe4f6dd-db02-4829-b838-3d4ab05cd621",
+      "result_id": "9d90dc28-bbd5-4b7c-b5b0-cda45a0ea4f7"
+    },
+    {
+      "claim_id": "40b42dc1-f986-43b1-88d8-7467e1412259",
+      "result_id": "9d90dc28-bbd5-4b7c-b5b0-cda45a0ea4f7"
+    },
+    {
+      "claim_id": "38a0091d-7c8c-4a2c-94b9-0e7a9ead5e5b",
+      "result_id": "5b1c67c6-5889-4c65-a1fa-d1ae93acd0a3"
+    },
+    {
+      "claim_id": "60d8bb5f-94e7-469f-b227-9bfd575f0405",
+      "result_id": "5b1c67c6-5889-4c65-a1fa-d1ae93acd0a3"
+    },
+    {
+      "claim_id": "44d9fd21-0819-4c97-b9bf-b778be727422",
+      "result_id": "5b1c67c6-5889-4c65-a1fa-d1ae93acd0a3"
+    },
+    {
+      "claim_id": "4542a1c7-7bc3-43c3-b3db-84b076da67cd",
+      "result_id": "5b1c67c6-5889-4c65-a1fa-d1ae93acd0a3"
+    },
+    {
+      "claim_id": "1922cde4-08cd-4382-ac62-553290418d50",
+      "result_id": "5b1c67c6-5889-4c65-a1fa-d1ae93acd0a3"
+    },
+    {
+      "claim_id": "095e06a6-d831-436c-90b0-6f91931a30dc",
+      "result_id": "5b1c67c6-5889-4c65-a1fa-d1ae93acd0a3"
+    },
+    {
+      "claim_id": "eccad9f3-6a22-430e-9497-7430607bfb10",
+      "result_id": "5b1c67c6-5889-4c65-a1fa-d1ae93acd0a3"
+    },
+    {
+      "claim_id": "8e1739f3-fdc0-4acd-bc4c-2fef7e439260",
+      "result_id": "5b1c67c6-5889-4c65-a1fa-d1ae93acd0a3"
+    },
+    {
+      "claim_id": "b7171ebe-14bf-4830-8a04-0f6119b8a441",
+      "result_id": "5b1c67c6-5889-4c65-a1fa-d1ae93acd0a3"
+    },
+    {
+      "claim_id": "42f92810-b3f5-4702-b422-a374fa8ffb41",
+      "result_id": "5b1c67c6-5889-4c65-a1fa-d1ae93acd0a3"
+    },
+    {
+      "claim_id": "e7971b74-ccf1-4732-b821-60eb72f13e43",
+      "result_id": "9e024573-8b19-4990-9166-1036752ed648"
+    },
+    {
+      "claim_id": "b518bd89-1324-4d29-b624-2721835cdbf3",
+      "result_id": "9e024573-8b19-4990-9166-1036752ed648"
+    },
+    {
+      "claim_id": "e8cef4b0-cebd-4721-a80d-3eee85a88669",
+      "result_id": "9e024573-8b19-4990-9166-1036752ed648"
+    },
+    {
+      "claim_id": "d0dedc2b-93d3-48f0-bad8-ddba2c043cca",
+      "result_id": "5d97576f-faf3-4104-9e1b-fe6ce35edc24"
+    },
+    {
+      "claim_id": "b4b64bfa-de04-455f-8950-545e5f42a453",
+      "result_id": "5d97576f-faf3-4104-9e1b-fe6ce35edc24"
+    },
+    {
+      "claim_id": "d74504d3-00a2-49b2-bef4-5438e93c8981",
+      "result_id": "ff499ff6-b194-41a0-89e0-84d08209b95e"
+    },
+    {
+      "claim_id": "d7e33ad0-8d59-4d6a-a280-4dd38b11715e",
+      "result_id": "ff499ff6-b194-41a0-89e0-84d08209b95e"
+    }
+  ],
+  "comparisons": []
+}

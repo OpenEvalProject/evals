@@ -1,0 +1,277 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C40",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C102",
+      "C103"
+    ],
+    "result": "NLRP3 inflammasome activation in non-RPE cells, specifically F4/80+ macrophages and activated microglia, but not in RPE cells, promotes CNV formation. This was demonstrated using VegfahyperBest1Cre/+Nlrp3A350V/A350V mice with constitutively active NLRP3 only in RPE cells, which showed similar CNV reduction as VegfahyperNlrp3-/- mice lacking NLRP3 in all cells. Immunolabeling confirmed caspase-1 activation predominantly in F4/80+ cells infiltrating CNV lesions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cell-type specific genetic approach using Best1Cre is well-validated (C102) with PCR confirmation of RPE-specific recombination (C103). The similar CNV phenotypes between global Nlrp3-/- and RPE-specific constitutively active Nlrp3 mice (C40, C42) provide strong evidence. Immunolabeling data consistently show caspase-1 in F4/80+ cells but not RPE (C45, C46). The logic is sound: if RPE NLRP3 were important, constitutive activation would worsen CNV, but it doesn't.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Inflammasome activation in Vegfahyper mice occurs through both NLRP3-dependent and NLRP3-independent mechanisms. VegfahyperNlrp3-/- mice show persistent caspase-1 p10 activation despite absence of NLRP3 protein, and VegfahyperCasp1-/-Casp11-/- mice (lacking all inflammasomes) show greater CNV reduction than VegfahyperNlrp3-/- mice, indicating contribution of non-NLRP3 inflammasomes to CNV pathology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Western blot data clearly demonstrate caspase-1 p10 in VegfahyperNlrp3-/- mice despite confirmed absence of NLRP3 protein (C53, C54), directly supporting NLRP3-independent inflammasome activation. The quantitative CNV data showing greater reduction in Casp1-/-Casp11-/- than Nlrp3-/- mice (C59, C60) provides functional evidence. Immunolabeling confirms caspase-1 in F4/80+ cells of Nlrp3-/- mice (C57). The logic is internally consistent and well-supported by multiple complementary approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The caspase-11 non-canonical inflammasome does not contribute to CNV formation in Vegfahyper mice. VegfahyperCasp11-/- mice show no reduction in CNV lesion numbers or sizes compared to Vegfahyper mice, and caspase-1 p10 levels remain unchanged in these mice. However, VegfahyperCasp1-/-Casp11-/- mice (lacking both canonical and non-canonical inflammasomes) show potent reduction in both CNV numbers and sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic controls are appropriate, with clear documentation that Casp1-/- mice have incidental Casp11 mutation (C61) while Casp11-/- mice retain functional Casp1 (C99). Western blot confirms no reduction in p10 in Casp11-/- mice (C63) and absence of caspase-1 in Casp1-/-Casp11-/- mice (C62). CNV quantification shows no effect of Casp11 deletion alone (C64) but strong effect of combined deletion (C66). The conclusion is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C34",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C78",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Complement C3 and inflammasomes promote CNV through independent mechanisms. VegfahyperC3-/- mice show significantly reduced CNV lesion numbers (in males) but maintain robust inflammasome activation (>3-fold increase in caspase-1 p10). VegfahyperCasp1-/-Casp11-/- mice show greater CNV reduction than VegfahyperC3-/- mice, indicating that if C3 were critical for inflammasome activation, both should show similar phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The key evidence is the persistence of inflammasome activation in C3-/- mice (C81, C82) despite significant CNV reduction (C75). Immunolabeling confirms C3 and C5b-9 absence in C3-/- lesions (C73, C74). The differential CNV reduction between Casp1-/-Casp11-/- and C3-/- mice (C86) supports independence. However, the sex-specific effect (C78) adds complexity and is appropriately acknowledged. The conclusion of independence is well-supported, though a minor contribution of C3 to inflammasome activation cannot be completely excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Sex-specific differences exist in complement-mediated CNV promotion, with C3 deficiency reducing CNV only in male mice. Female Vegfahyper mice have fewer baseline CNV lesions than males, and the protective effect of C3 deletion is observed only in males, consistent with reported reduced C5b-9-mediated inflammation in female C57BL/6 mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sex difference is clearly documented in the data (C77, C78) and appropriately referenced to prior literature (C79). The authors acknowledge this finding and provide a mechanistic hypothesis based on terminal complement pathway differences (C80). This represents good scientific practice in recognizing and reporting sex-specific effects. The statistical analyses appropriately separate male and female cohorts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "CNV lesion initiation (lesion numbers) and growth (lesion area) are differentially regulated. C3 and NLRP3 targeting primarily affect lesion numbers but not area, while targeting all inflammasomes (Casp1-/-Casp11-/-) potently inhibits both lesion numbers and area, suggesting NLRP3- and C3-independent mechanisms also affect lesion growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative data consistently show this pattern across multiple genotypes (C87, C88). The distinction between lesion initiation and growth is biologically plausible and well-documented in the figures. The inference about additional mechanisms (C89) is reasonable given the data pattern. This represents a nuanced analysis of the phenotypic data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C39"
+    ],
+    "result": "Inflammasome activation increases progressively with age in Vegfahyper mice, correlating with age-dependent exacerbation of AMD pathologies. Caspase-1 p10 levels are already elevated >2-fold at 6 weeks when CNV lesions are quantified, and continue to increase with age in both Vegfahyper and VegfahyperNlrp3-/- mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Western blot data at multiple time points (6 weeks, 2 months, 13 months) consistently show age-dependent increases in p10 (C51, C52, C39). The quantification with \u03b2-actin normalization is appropriate. This temporal correlation supports the pathogenic role of inflammasome activation, though causality requires the genetic knockout experiments which are provided elsewhere.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "C3 deficiency causes no major RPE or retinal morphological abnormalities at 6 weeks of age when CNV is quantified, though aged C3-/- mice develop retinal abnormalities. The RPE maintains normal honeycomb morphology even at 12 months in C3-/- mice, but retinal function may be affected with lifelong C3 deficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Morphological data at 6 weeks show no abnormalities (C90), and RPE morphology is preserved at 12 months (C91). The authors appropriately cite prior literature showing age-related retinal changes (C92) and acknowledge uncertainty about whether therapeutic C3 targeting in adults would cause similar issues (C93). This represents balanced interpretation acknowledging both the current findings and limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C35",
+      "C95"
+    ],
+    "result": "Combination therapies targeting both inflammasomes and complement may offer synergistic therapeutic benefits for neovascular AMD, based on the finding that these pathways promote CNV through independent mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "While the independence of complement and inflammasome pathways is well-supported (Result 4), the therapeutic claims (C5, C35, C95) are speculative. No combination therapy experiments were performed. The inference of synergy from pathway independence is logical but unproven. This represents a reasonable hypothesis for future work but cannot be considered a supported result without direct experimental evidence of combination treatment effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C37",
+      "C38",
+      "C17",
+      "C18"
+    ],
+    "result": "The Vegfahyper mouse model develops spontaneous CNV lesions that can be accurately quantified at 6 weeks of age, before lesions merge with age. At sites without CNV, young Vegfahyper mice show normal RPE and retinal morphology, while aged mice develop RPE atrophy and photoreceptor attenuation resembling non-exudative AMD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model characterization is thorough with clear documentation of age-dependent progression (C23, C24, C37, C38). The choice of 6-week time point for quantification is well-justified to capture early lesions before confluence. Previous publications support the model validity (C17, C18). This provides appropriate context for interpreting the experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Background on inflammasome biology: Canonical inflammasomes are activated by PRRs (including NLRP3 and other NLRs) that oligomerize with ASC to activate caspase-1, leading to IL-1\u03b2 and IL-18 maturation. AMD risk factors like oxidative stress and lipid accumulation are known NLRP3 activators, and IL-1\u03b2 promotes inflammatory angiogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent well-established background knowledge appropriately cited to the literature (C6-C12). They provide necessary context for the experimental work but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Prior literature on inflammasomes in AMD shows conflicting results: some studies report NLRP3 in RPE and protective effects of IL-18, while others find no NLRP3 in AMD RPE or no IL-18 effect on CNV. These discrepancies may reflect differences in models (acute injury vs. genetic) and incomplete assessment of inflammasome activation markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors provide a balanced review of conflicting prior literature (C13-C16, C26-C28), appropriately noting methodological limitations of cited studies (C27). This contextualizes the need for the current study and demonstrates awareness of the field's controversies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Prior literature suggests complement activation products (C5b-9, C3a) can activate inflammasomes in vitro, and complement-mediated inflammation is implicated in AMD pathogenesis. Complement activation products accumulate in AMD lesions, and genetic studies link complement to neovascular AMD risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims appropriately summarize prior literature with proper citations (C29-C31, C67-C70). They establish the rationale for investigating complement-inflammasome interactions. The distinction between in vitro findings and in vivo relevance is appropriately noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C32"
+    ],
+    "result": "Prior work by the authors in Vegfahyper mice showed that IL-18 inactivation does not affect CNV, while Nlrp3, Casp1, or Il1r inactivation potently inhibits CNV, indicating IL-1\u03b2 rather than IL-18 mediates inflammasome effects. Inflammasome activation correlates with oxidative stress and lipid deposits in CNV lesions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims summarize the authors' prior published work (C19-C22, C32) with appropriate self-citations. They provide essential background for the current study's hypotheses and experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Methods and genetic model validation: The Vegfahyper allele results from insertion into the Vegfa 3'UTR, ocular abnormalities co-segregate with this allele, Casp1-/- mice have incidental Casp11 mutation while Casp11-/- mice retain functional Casp1, and Nlrp3A350V mice require Cre-mediated removal of a floxed neo cassette for NLRP3 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological details are appropriately documented with citations to original sources (C96-C101). They provide essential information for interpreting the genetic experiments and are consistent with established knowledge about these mouse strains.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "F4/80+ cells infiltrate the subretinal space at sites of RPE barrier breakdown in Vegfahyper mice and are spatiotemporally associated with CNV lesion formation. Macrophage ablation inhibits laser-induced CNV, supporting a role for these cells in CNV initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The spatiotemporal association is supported by prior work (C49), and the functional importance is supported by macrophage depletion studies from multiple groups (C50). This provides biological plausibility for the finding that inflammasome activation in F4/80+ cells drives CNV.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,419 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The authors established differentiation protocols to generate ventricular-like cardiomyocytes (VCM) and sinoatrial node-like cardiomyocytes (SANCM) from hiPSCs. VCM differentiation used WNT inhibition for 96 hours, while SANCM differentiation used a cocktail including BMP4, RA, WNT inhibitor, FGF inhibitor, and ALK5 inhibitor from day 4-6. Both protocols yielded 60-90% cardiomyocytes by day 19. SANCM showed higher expression of SAN markers (SHOX2, TBX3, TBX18, ISL1) and faster beating rates, while VCM expressed ventricular markers (MYL2, HOPX, MYH7).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C43 collectively describe well-established differentiation protocols with appropriate controls and characterization. The flow cytometry data (C37), RT-qPCR (C38-C41), and immunofluorescence (C42-C43) provide converging evidence for distinct cardiomyocyte subtypes. The protocols are based on prior published methods (C32, C34) and show expected phenotypic differences (C36).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "SANCM and VCM display distinct electrophysiological properties consistent with their respective identities. SANCM showed higher expression of pacemaker-associated ion channels (HCN1, HCN4, CACNA1D, CACNA1G, KCNJ3) and lower SCN5A expression. Single-cell patch clamp revealed SANCM had shorter cycle length (496.6\u00b133.0 ms vs 1241.5\u00b1111.7 ms), less negative MDP (-62.5\u00b11.9 mV vs -69.9\u00b11.4 mV), lower APA, slower Vmax (5.2\u00b10.9 V/s vs 23.1\u00b13.7 V/s), and shorter APDs compared to VCM. Ivabradine significantly increased SANCM cycle length but not VCM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C55 provide comprehensive electrophysiological characterization with appropriate sample sizes (N=12 for action potentials, N=6 for ivabradine). The data are internally consistent and match expected properties of SAN vs ventricular cells. The comparison to freshly isolated human SAN cells (C52) validates the in vitro model. The ivabradine response (C54-C55) functionally confirms If channel activity in SANCM.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Single-cell RNA sequencing of day 19 differentiated cells identified distinct transcriptional profiles for SANCM and VCM populations. After quality control, 1287 cells were analyzed using SCTransform normalization with batch correction. Unsupervised clustering identified 12 clusters, with 3 excluded due to low quality. VCM clusters (0-3) and SANCM clusters (4-8) did not overlap, confirming transcriptionally distinct cardiomyocyte subtypes. Non-cardiomyocyte side populations were protocol-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C63 describe appropriate scRNA-seq methodology with quality control steps. The use of SCTransform normalization and batch correction (C57) addresses technical variation. The exclusion of low-quality clusters (C59-C60) is justified. The non-overlapping clusters (C62) and protocol-specific side populations (C63) support the generation of distinct cell types. Methods are well-documented with appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "VCM differentiation generated multiple cardiomyocyte populations including ventricular cells (clusters 2-3 expressing MYH7/MYL2), outflow tract-like cells (cluster 1 expressing HAPLN1/GPC3/SEMA3C/BMP4/ISL1/PITX2), and fetal endocardial-like cells (cluster 0 expressing NFATC1/FOXC1/NRG1/NPR3). Cluster 2 showed higher HOPX expression suggesting greater maturity, while cluster 3 expressed HEY2 and IRX4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C72 identify VCM subpopulations based on established marker genes with appropriate citations to prior literature. The interpretation of cluster 1 as outflow tract-like (C69-C70) and cluster 0 as endocardial-like (C72) is supported by marker expression and comparison to published studies. The inference about HOPX indicating maturity (C67) is appropriately qualified and cited. The co-differentiation of outflow tract cells (C71) is consistent with prior findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "SANCM differentiation generated multiple pacemaker subpopulations resembling in vivo SAN regions. Clusters 4-6 expressed SAN markers (TBX3, ISL1, BMP4) at varying levels. Cluster 6 (SAN-head-like) was TBX18+/NKX2-5-, cluster 5 (SAN-tail-like) was TBX18-/TBX3+/NKX2-5+, and cluster 4 (SAN-TZ-like) expressed both pacemaker and atrial genes including CPNE5. Cluster 7 was identified as sinus venosus-like (TBX18+/SHOX2+/BMP4+/ISL1+/TBX3-/NKX2-5-) and cluster 8 as proepicardial cells (TBX18+/KRT8+/KRT18+/WT1+/BNC1+).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C82 identify SANCM subpopulations based on well-established marker combinations with appropriate comparisons to mouse SAN regions (C75-C76) and in vivo SAN-TZ cells (C78). The marker expression patterns are internally consistent and supported by multiple citations. The identification of sinus venosus-like (C81) and proepicardial cells (C82) is based on established markers. This represents a key finding demonstrating the complexity of the in vitro differentiation system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The authors identified VSNL1 and GNAO1 as markers specifically expressed in SANCM clusters compared to VCM. VSNL1 (a Ca2+-binding protein) and GNAO1 (G-protein subunit \u03b1) were previously identified in mouse, primate, and human SAN. Immunofluorescence confirmed robust expression of both proteins in E17.5 mouse SAN, with lower expression in atria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 identify novel markers with validation in mouse tissue. The scRNA-seq data (C83) is supported by immunofluorescence validation (C85, C87-C88). The functional context for VSNL1 and GNAO1 is provided with appropriate citations (C84, C86). The validation in mouse tissue strengthens the findings, though human tissue validation would be ideal.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "The authors conclude that hiPSC differentiation toward SANCM closely recapitulates in vivo development, generating subpopulations resembling SAN-head, SAN-tail, and SAN-TZ cardiomyocytes. The co-differentiation of sinus venosus-like and proepicardial-like cells alongside SANCM reflects shared developmental origins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 represent appropriate conclusions based on the comprehensive scRNA-seq characterization (C73-C82). The presence of multiple SAN subpopulations with marker expression matching in vivo patterns supports the recapitulation claim. The co-differentiation of proepicardial cells (C90) is consistent with known developmental biology and provides additional validation of the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Time course scRNA-seq analysis (days 0, 4, 5, 6, 10, 19) revealed transcriptional changes during SANCM differentiation. After quality control, 3103 cells were analyzed across 14 clusters. Cells progressed from pluripotent (SOX2+/NANOG+/POU5F1+) through cardiac mesoderm (EOMES+/MESP1+/MESP2+) to posterior cardiac progenitors (HOXA1+/NR2F2+/TBX5+). TBX18 and TBX3 expression began at day 6, ISL1 and SHOX2 from day 10. RT-qPCR confirmed SHOX2 expression from day 8, with most subpopulation markers expressed from day 8 onward (except FLRT3 at day 6).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C108 provide a comprehensive developmental trajectory with appropriate temporal resolution. The progression through established developmental stages (C96-C98) with known markers is well-supported by citations. The RT-qPCR validation (C106-C108) complements the scRNA-seq data. The identification of marker expression timing provides valuable insights into specification dynamics. The inference about halted differentiation (C102) is reasonable based on cluster composition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C109"
+    ],
+    "result": "The authors conclude that the in vitro differentiation model is valuable for studying early pacemaker cell specification, overcoming limitations of accessing comparable in vivo developmental stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C109 is a reasonable conclusion based on the time course analysis (C91-C108) showing progression through developmental stages. The model provides access to early time points (days 5-6) that are difficult to study in vivo, particularly in humans. This represents an appropriate assessment of the model's utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "URD trajectory inference analysis reconstructed developmental trajectories from cardiac mesoderm (day 4) to differentiated cells (day 19). The analysis identified six main segments with cells from days 5-6 and some day 10 cells forming a common progenitor pool (segment 1). The tree branched into proepicardial (segment 2) and myocardial (segment 3) lineages at day 10. Most myocardial cells remained uncommitted at day 10, with SAN-head (segment 6) and SAN-tail (segment 5) specification occurring after day 10. A small fraction committed to SAN-TZ lineage (segment 4) by day 10. Similar findings were obtained with Slingshot.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C122 describe appropriate trajectory inference methodology with validation using a second method (Slingshot, C119). The identification of day 10 as a critical branching point (C122) is supported by the trajectory structure and gene expression patterns (C120-C121). The inference about uncommitted cells (C117-C118) is reasonable based on pseudotime ordering. The use of two independent methods strengthens confidence in the trajectory reconstruction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "WNT signaling determines myocardial versus proepicardial fate divergence. GO analysis identified TGF\u03b2 and WNT signaling genes in both lineages. Experimental manipulation showed that active TGF\u03b2 signaling (without ALK5 inhibitor) did not alter cell fate. However, removing WNT inhibitor reduced cardiomyocytes to ~10% TNNT2+ while increasing PDPN+ proepicardial cells. WNT agonist had similar effects. RT-qPCR confirmed higher WT1 and lower TNNT2 in WNTBasal and WNTAct conditions. The authors conclude that WNT inhibition is crucial for myocardial differentiation while active WNT with BMP and RA promotes proepicardial fate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C130 provide strong experimental evidence for WNT's role in lineage divergence. The GO analysis (C123-C124) identified candidate pathways, and experimental manipulation (C126-C128) directly tested WNT's role with clear results. The TGF\u03b2 control experiment (C125) appropriately rules out this pathway for lineage divergence. The conclusions (C129-C130) are well-supported by the data. Sample sizes appear adequate (N=5 for flow cytometry experiments).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "WNT and TGF\u03b2 signaling have stage-specific roles in SANCM subpopulation specification. GO analysis revealed WNT modulators (DKK1, WNT5A, SFRP1, APP) enriched in SAN-head and TGF\u03b2/BMP pathway members (BMP4 in SAN-head, BMP2 in SAN-TZ, HTRA1 in SAN-head/tail, FBN2 in SAN-TZ) in day 19 subpopulations. WNT inhibition from days 10-17 significantly increased SAN-head genes (SHOX2, NTM, VSNL1) without affecting SAN-tail/TZ genes. TGFB2 supplementation (days 4-6) downregulated SAN-head genes (SHOX2, NTM) and showed trends for higher SAN-tail (KCNIP2) and SAN-TZ genes (NPPA, ADM), though not statistically significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C131-C143 identify stage-specific signaling roles, but the evidence is mixed. The WNT inhibition experiment (C133) shows significant effects on SAN-head genes with appropriate controls (C134). However, the TGF\u03b2 experiment (C141-C142) shows only trends without statistical significance, weakening support for TGF\u03b2's role in SAN-tail/TZ specification at this stage. The conclusion (C143) may be overstated given the non-significant TGF\u03b2 results. Additional replicates or alternative approaches would strengthen these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Comparative scRNA-seq of SANCM, SANCMTGFB2, and ACM at day 19 identified five cardiomyocyte clusters. Cluster 0 contained atrial cells, cluster 1 pacemaker cells, cluster 2 transitional cells (expressing NKX2-5, NPPA, HAMP, and CPNE5), cluster 3 sinus venosus-like cells, and cluster 4 likely atrial cells (IRX5+). SANCM cells were in clusters 1 and 2, ACM in clusters 0 and 2, and SANCMTGFB2 mainly in cluster 2. SAN-TZ and SANCMTGFB2 cells clustered together in cluster 2, while SAN-head and SAN-tail formed cluster 1. The authors conclude TGFB2 supplementation steers cells toward a transitional phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C155 provide clear evidence that TGFB2 treatment enriches for transitional cells. The clustering analysis (C144-C145) is appropriate, and cell type assignments (C146-C150) are based on established markers. The distribution of cells across conditions (C151-C153) and the co-clustering of SAN-TZ with SANCMTGFB2 (C154) strongly support the conclusion (C155). This represents a key experimental validation of TGF\u03b2's role in SAN-TZ specification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "SAN-TZ cells from SANCMTGFB2 cultures displayed electrophysiological properties intermediate between SANCM and ACM. They showed longer cycle length (792.3\u00b149.1 ms) than SANCM (552.8\u00b129.1 ms), more negative MDP (-69.1\u00b11.8 mV) than SANCM (-60.1\u00b13.3 mV) but less negative than ACM (-77.4\u00b11.4 mV), and higher Vmax comparable to ACM. APD parameters did not differ between SANCM and SAN-TZ. The authors conclude TGF\u03b2 signaling plays a critical role in SAN-TZ specification with intermediate characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C160 provide functional validation of the SAN-TZ phenotype with appropriate electrophysiological characterization. The intermediate properties (C157-C158) support the transitional cell identity. Sample sizes are adequate (n=6-8). The conclusion (C160) is well-supported by both transcriptional (C144-C155) and functional (C156-C159) data. This represents strong evidence for TGF\u03b2's role in SAN-TZ specification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "Quantification of SANCM subpopulations revealed 54% NKX2-5-/TNNT2+ cells, with 18% resembling sinus venosus (lower TNNT2/ACTN2, SHOX2+, TBX3-), 36% SAN-head-like (NKX2-5-/TBX18+/TBX3+), 19% SAN-tail-like (NKX2-5+/TBX18-/TBX3+), and 17% transitional cell-like (NKX2-5+/CPNE5+/TBX3+).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C163-C167 provide quantitative assessment of subpopulation composition based on scRNA-seq data. The percentages are derived from established marker combinations with appropriate citations (C167). This quantification is important for comparing to prior protocols and understanding the heterogeneity of the differentiation system. The data support the presence of multiple SAN subpopulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "The authors conclude that in vitro differentiation recapitulates in vivo pacemaker development. Cells at day 5 correspond to posterior second heart field progenitors (HOX/TBX gene expression), and day 8 cells correspond to E8.5-E9.5 mouse development (SHOX2/ISL1 expression). SAN subpopulation marker expression begins at day 6 (FLRT3) with most from day 8 onward. Trajectory analysis suggests SAN-TZ specification occurs earlier than SAN-head/tail, with day 10 progenitors committed to SAN-TZ but not SAN-head/tail lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C168-C173 draw appropriate conclusions about developmental correspondence based on marker expression timing and trajectory analysis. The comparison to mouse development (C169) is supported by citations. The inference about SAN-TZ specification timing (C172-C173) is based on trajectory analysis (C117) and is reasonable. These conclusions appropriately synthesize the time course and trajectory data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179"
+    ],
+    "result": "The authors compare their in vitro trajectory to mouse SAN development. In mouse, Tbx18- progenitors form atrial myocardium, while Tbx18+ progenitors form SAN components in anatomical order: transitional cells, SAN tail, SAN-head, then sinus venosus. The in vitro SANCM trajectory recapitulates this temporal aspect. Some day 19 cells formed a common segment before separating into SAN-head/tail, suggesting incomplete differentiation. The authors conclude SAN-head, SAN-tail, and SAN-TZ originate from a common progenitor that diversifies under signaling pathway influence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C174-C179 appropriately compare in vitro findings to established mouse developmental biology (C174-C176 with citations). The conclusion about temporal recapitulation (C177) is supported by the trajectory analysis showing SAN-TZ specification before SAN-head/tail. The inference about incomplete differentiation (C178) is reasonable. The overall conclusion (C179) is well-supported by the trajectory and experimental manipulation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185"
+    ],
+    "result": "The authors place their findings in context of prior literature. TGF\u03b2/BMP signaling mediators are enriched in embryonic and adult SAN and proposed to be involved in proepicardial cell recruitment and interstitial remodeling. WNT signaling is described as critical for SAN development. The authors focused on TGF\u03b2 due to limited knowledge about SAN-TZ cells and identified that TGF\u03b2 with WNT and RA drives differentiation exclusively toward SAN-TZ cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C180-C185 appropriately contextualize findings with prior literature (C180-C183 with citations). The rationale for focusing on TGF\u03b2 (C184) is reasonable given limited SAN-TZ knowledge. The conclusion about TGF\u03b2 driving SAN-TZ differentiation (C185) is supported by the experimental data (C144-C160), though 'exclusively' may be slightly overstated given some cells in other clusters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C186",
+      "C187",
+      "C188"
+    ],
+    "result": "The authors speculate about future applications: principles of stage-specific signaling manipulation can be applied to other stem cell lines including patient-specific lines to create physiologically relevant models. Generation of SAN subpopulations is crucial for developing novel treatments including cell-based approaches. Incorporating subpopulations in biomimetic constructs would permit evaluation of optimal configurations for regenerating dysfunctional pacemaker tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C186-C188 are speculative statements about potential applications. While reasonable based on the findings, these represent future work rather than demonstrated results. The speculation is appropriately qualified but cannot be evaluated as supported or unsupported without additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The introduction establishes background knowledge about the SAN, its dysfunction, heterogeneous structure, developmental origins, and the limitations of current understanding, particularly regarding human SAN development. The SAN is the primary pacemaker, its dysfunction causes bradyarrhythmia, and current electronic pacemaker treatment is suboptimal. The SAN contains multiple cell types including head, tail, and transitional cardiomyocytes. Pacemaker cells originate from Tbx18+ progenitors shared with proepicardium. Most SAN development data comes from animal models with limited human insights. hiPSCs provide a model to study human heart development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C26 establish appropriate background context with citations to prior literature. These represent established knowledge in the field and provide rationale for the study. The statements about limited human SAN development knowledge (C4, C14, C24-C25) justify the research approach. The utility of hiPSCs (C26) is well-established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The abstract summarizes the main findings: scRNA-seq and trajectory inference on differentiating hiPSCs constructed a roadmap of transcriptional changes. Differentiated SANCM contain clusters resembling in vivo SAN subpopulations. Proepicardial cells co-differentiate with SANCM suggesting shared ontogeny. WNT signaling determines SANCM/proepicardial divergence. TGF\u03b2 and WNT signaling are involved in branching of transitional and head SANCM subtypes. The differentiation recapitulates developmental programs with remarkable fidelity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C10 and C27-C31 accurately summarize the main findings that are supported by the detailed results. These abstract claims are validated by the comprehensive experimental data presented in the manuscript. The claim of 'remarkable fidelity' (C27) is supported by the presence of multiple SAN subpopulations with appropriate marker expression and the recapitulation of developmental timing.",
+    "result_type": "MAJOR"
+  }
+]

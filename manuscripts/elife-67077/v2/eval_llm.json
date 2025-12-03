@@ -1,0 +1,298 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The authors established an experimental system using LCLs from six individuals, which were reprogrammed into IPSCs and differentiated into cardiomyocytes (CMs). The system included 28 treatments and two controls, performed in duplicate across 12 batches, with CM purities ranging from 44.9-95%. PCA analysis confirmed three distinct cell type clusters, and marker gene expression (e.g., TNNT2) validated cell type identities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 describe the experimental design and quality control measures. The study design is clearly documented with appropriate replication (C3, C4), cell type validation through PCA (C7) and marker genes (C8), and purity measurements (C6). The metabolic shift procedure (C5) is supported by citations. These foundational claims are well-supported by the described methods and validation data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Differential gene expression analysis identified between 53 and 21,593 DEGs (FDR < 10%) across treatments and cell types. Enrichment analyses confirmed expected biological responses (e.g., glucose catabolic pathways for insulin in CMs, metal ion transport for copper in LCLs). 4835 genes showed cell type \u00d7 treatment interaction effects, with 96% of insulin-responsive genes in CMs being cell-type specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C13 report differential expression results with appropriate statistical thresholds (FDR < 10%) and biological validation through pathway enrichment. The large range in DEG counts (C9) is expected given different treatment potencies. The enrichment results (C10, C11) provide biological validation. The interaction analysis (C12) and cell-type specificity (C13) are statistically sound and biologically meaningful.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C18"
+    ],
+    "result": "Splicing analysis identified 22,334,519 unique introns across all conditions, with 9-4106 differentially spliced genes (DSGs) per treatment-cell type combination. Ten out of 36 environments showed consistent directional shifts in intron splicing. On average, only 12.6% of DSGs were also DEGs, indicating largely independent regulatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 describe comprehensive splicing analysis using LeafCutter with appropriate statistical thresholds. The low overlap between DSGs and DEGs (C18) is well-documented and supports the interpretation of independent regulatory mechanisms. The directional splicing analysis (C16) adds mechanistic insight. The large number of introns identified (C14) is consistent with deep sequencing of multiple conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Variance partitioning revealed that cell type identity explains the most variance in both gene expression and splicing (median 74% and 70%, respectively). Individual contribution was largest in CMs (55% expression, 45% splicing), while treatment effects were greatest in LCLs (22% expression, 12% splicing). Treatment explained at least half the variance for 64% of genes when considering measured variables only.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 report variance partitioning results using appropriate statistical methods (variancePartition package). The findings are internally consistent and align with biological expectations (cell type as major source of variation). The hierarchical pattern across cell types (C20, C21) is clearly documented. The analysis appropriately distinguishes between total variance and variance explained by measured variables (C22).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "ASE analysis quantified 282,278 unique SNPs in 22,397 genes, with 15,497 SNPs (23%) showing evidence of ASE in any condition. The study identified 7866 instances of cell type cASE, 1409 instances of treatment cASE, and 929 instances of cell type \u00d7 treatment cASE. High correlation between technical replicates (median Spearman's \u03c1=0.66) confirmed reproducibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C29 describe comprehensive ASE analysis with appropriate quality control (C26). The ANOVA-based approach for detecting ASE is methodologically sound, and the identification of different types of cASE (C27-C29) using fixed-effect models with FDR < 10% is statistically rigorous. The high technical reproducibility (C26) validates the measurements. The numbers reported are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C35",
+      "C70"
+    ],
+    "result": "In CMs, 3033 genes showed ASE, with 50-52% being eGenes in GTEx heart tissues. However, treatment cASE genes in CMs were not significantly enriched in GTEx eGenes (odds ratio ~1.0). On average, half of the genes with dynamic regulatory interactions were missed by large eQTL mapping studies, highlighting the importance of exploring multiple environmental conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32, C35, and C70 demonstrate that while ASE genes overlap significantly with GTEx eGenes, treatment cASE genes do not, indicating context-specific regulation missed by large studies. The enrichment analysis is appropriately conducted with Fisher's exact test. The conclusion (C70) is well-supported by the data showing substantial numbers of cASE genes not identified as eGenes in GTEx, though the exact proportion may vary by tissue and condition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Most treatment cASE SNPs (80.5%) were specific to one treatment, showing limited sharing between treatments. ASE and cASE SNPs were significantly enriched in 5' and 3' UTRs and among missense/stop-altering variants, but depleted in introns and splicing sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 describe the genomic distribution and treatment specificity of cASE SNPs. The enrichment analysis using Fisher's exact test with FDR correction is appropriate. The enrichment in UTRs and depletion in splicing sites (C44, C45) provides mechanistic insight consistent with the interpretation that these SNPs affect transcription/stability rather than splicing. The high treatment specificity (C43) is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "cASE genes showed significant enrichment for cardiovascular traits and disease associations. Heart rate was significantly enriched for CM-specific cASE. Metal treatments (cadmium, copper, zinc) showed the greatest overlap with CAD-associated genes. Three Mendelian heart disease genes (PSMA6, AARS2, DSC2) displayed treatment cASE, with AARS2 responding to nicotine and DSC2 to copper.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48, C52-C55 demonstrate clinically relevant associations between cASE and cardiovascular traits/diseases. The enrichment analyses use appropriate statistical tests, and the findings are biologically plausible (e.g., heart rate enrichment in CMs, metal treatment overlap with CAD). The identification of Mendelian disease genes with treatment cASE (C53-C55) is particularly compelling, though the sample size (n=6) limits the generalizability of specific gene-treatment interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Heritability partitioning using RHE-mc showed that CM cell type cASE was significantly enriched for diastolic blood pressure, autoimmune disease, and height. Treatment-specific enrichments included vitamin A for blood pressure traits, caffeine for respiratory disease, and selenium for smoking status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 report heritability partitioning results using an appropriate method (RHE-mc) with UK Biobank data. The enrichments are statistically significant and biologically plausible. However, the interpretation should be cautious given the relatively small number of cASE genes and the complexity of heritability partitioning. The results support the functional relevance of cASE but would benefit from replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Variance partitioning of ASE revealed that cell type captured the most variance overall, but treatment effects explained 16.6-17.5% of ASE variance within cell types (compared to 3.6-21.9% for total expression). DEGs showed high ASE and increased residual variance, while genes associated with complex traits had lower ASE. Genes with TATA boxes, higher GC/CpG content, and those under negative selection showed distinct variance patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C69 describe comprehensive variance analysis of ASE with appropriate mixed-effects models. The findings are internally consistent and biologically interpretable. The observation that treatment explains more variance in ASE than in total expression (C60) is particularly interesting. The associations with genomic features (C62-C69) are statistically sound, though some interpretations (e.g., C68 about 'less stringent genetic control') are somewhat speculative. The analysis appropriately adjusts for sequencing depth.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The study demonstrates that cellular responses to environmental treatments involve different genes and pathways for expression and splicing, are highly context-dependent, and include thousands of genes with variable allelic expression. Cell type \u00d7 treatment interactions indicate that transcriptional responses vary by cell type, potentially leading to cell-type-dependent G\u00d7E effects. These findings highlight the importance of studying environmental effects across multiple cell types and conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C106 represent the major conclusions of the study, synthesizing findings from multiple analyses. These conclusions are well-supported by the data presented in earlier claims. The interpretation of cell type \u00d7 treatment interactions (C104, C105) is reasonable, though C105 is somewhat speculative. The recommendation to study multiple cell types and conditions (C106) is justified by the data showing context-specific effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The low overlap between DEGs and DSGs (12.6%) suggests that gene expression and splicing represent distinct regulatory mechanisms for cellular responses to the environment. The interaction between environment and cellular context determines directional shifts in intron retention/excision, with both co-transcriptional and independent mechanisms controlling transcriptional responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 provide mechanistic interpretations of the DEG/DSG overlap data. The interpretation that low overlap indicates distinct mechanisms (C107, C109) is reasonable and supported by the enrichment analyses showing different biological processes. However, the interpretation is somewhat limited by the fact that the analyses use different statistical approaches (DESeq2 vs. LeafCutter) and thresholds, which could contribute to the low overlap. The conclusions are plausible but could be strengthened with additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The limited sharing of cASE between treatments (80.5% treatment-specific) suggests independent regulatory variants in context-specific cis-regulatory modules. Large eQTL studies like GTEx, which map eQTLs under single conditions, miss genetic effects that occur transiently or under specific environmental conditions. Interrogating additional environmental conditions is necessary for a complete understanding of genetic control of gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C114 provide important interpretations about the limitations of existing eQTL studies and the value of multi-condition approaches. The interpretation of limited sharing (C111) is well-supported by the data (C43). The conclusion about GTEx missing context-specific effects (C112) is supported by the enrichment analyses (C35) and cited literature. The recommendation for multi-condition studies (C113) is justified, though the optimal number and types of conditions remain unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The authors hypothesize that greater residual variance in ASE indicates less stringent genetic control, which may depend on regulatory architecture and enable large fluctuations in expression across contexts. Genes tolerant to loss-of-function mutations show greater residual variance, suggesting that redundancy allows for less stringent control and potentially enables evolution of new regulatory elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115-C119 present hypotheses and speculations about the biological meaning of residual variance in ASE. While the associations with gene features are statistically supported (C117), the mechanistic interpretations (C115, C116, C118, C119) are speculative and not directly tested. The hypothesis is plausible and consistent with evolutionary theory, but would require additional experimental validation (e.g., functional studies of regulatory variants, evolutionary analyses) to be considered supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C121"
+    ],
+    "result": "Residual variance of allelic expression is conserved across cell types (r=0.55-0.59), indicating that intrinsic properties controlling variation in allelic expression are consistent across tissues and have biological significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C121 reports a clear statistical finding (correlation of residual variance across cell types) with appropriate confidence intervals. The interpretation that this indicates consistent intrinsic properties is reasonable, though the biological significance could be further elaborated. The finding is interesting and suggests that some aspects of regulatory variation are cell-type independent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The manuscript cites extensive prior work establishing that: environmental variation affects gene expression and splicing; eQTLs show tissue specificity; reQTLs have been identified for various stimuli; genes with G\u00d7E are enriched for complex trait associations; gene expression noise is gene-specific and under selection; iPSC-derived CMs are valid models; and various molecular mechanisms (splicing, NMD, codon optimization) can affect gene regulation. These citations provide context for the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C98 represent background knowledge from cited literature. These claims are appropriately attributed to prior work and provide necessary context for the study. The citations appear relevant and accurate based on the descriptions provided. However, as these are claims about prior work rather than findings from the current study, they should be evaluated based on the accuracy of the citations rather than as novel results. The claims appear to accurately represent the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Prior work has shown that cadmium causes endothelial dysfunction and promotes atherosclerosis, copper deficiency is linked to CAD development, and FAM213A is involved in redox regulation. These findings provide biological context for the observed cASE in metal treatments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 cite prior work to provide biological context for the study's findings. The citations appear appropriate and relevant to the interpretation of metal treatment effects on CAD-associated genes. These are background claims rather than novel findings, and they are properly attributed to prior studies.",
+    "result_type": "MINOR"
+  }
+]

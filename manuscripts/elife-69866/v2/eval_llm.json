@@ -1,0 +1,244 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C83"
+    ],
+    "result": "The FDA authorized CCP therapy through the EAP (starting April 2020) and EUA (August 23, 2020), both restricted to hospitalized patients. Approximately 500,000 patients received CCP during the first year of the pandemic in the USA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C9, C10, C11, and C83 are well-documented regulatory and descriptive facts supported by citations to official sources and the study's own data collection. These provide essential context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C29",
+      "C30",
+      "C46",
+      "C91",
+      "C92"
+    ],
+    "result": "CCP usage per admission peaked in Fall 2020, with more than 40% of inpatients receiving CCP between late September and early November 2020. Peak utilization per capita occurred in early October 2020, after which usage declined sharply.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C29, C30, C46, C91, and C92 are directly supported by the data presented in Figures 1 and 2, showing temporal patterns of CCP distribution and utilization rates. The findings are internally consistent across multiple claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C15",
+      "C21",
+      "C72",
+      "C73",
+      "C94"
+    ],
+    "result": "Following publication of RCTs showing no mortality benefit, CCP usage declined substantially beginning in November 2020, reaching less than 10% by March 2021. This decline was documented by institutional reports and blood banking organizations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C15, C21, C72, C73, and C94 are supported by temporal data, citations to specific RCTs, and reports from medical institutions and blood banking organizations. The temporal correlation between negative RCT results and declining usage is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C31"
+    ],
+    "result": "There was a strong inverse correlation (r = \u22120.52, p=0.002) between CCP usage per hospital admission and deaths occurring 2 weeks after admission. This correlation was robust across different time lags (1-3 weeks).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, and C31 present the core statistical finding with appropriate correlation coefficients and p-values, shown in Figure 3 and supplementary figures. The robustness analysis across different time lags strengthens the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C32",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Potential confounders including hospital admission rates, patient age demographics, and SARS-CoV-2 variants (particularly B.1.1.7) could not explain the inverse correlation between CCP use and mortality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C32, C53, C54, C55, and C56 present analyses excluding major confounders. The data show no correlation between admissions and mortality (r = \u22120.02), no correlation with age demographics (Figure 3\u2014supplement 3), and low prevalence of B.1.1.7 variant during the study period.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "CCP usage data from Blood Centers of America showed strong correlation (Spearman's rho = 0.953, p<0.001) with EAP transfusion data, capturing >95% of all CCP administered. Mortality data were obtained from OWID and CDC databases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C25, C84, C85, C86, and C87 describe the data sources and validation methods. The strong correlation between distributed and transfused units (Figure 1\u2014supplement 1) validates the proxy measure, though the >95% capture estimate relies on citation rather than direct verification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "A weighted linear regression model explained 25% of CFR variance using CCP utilization ratio. The model estimated CFR decreased by 1.8 percentage points per 10 percentage point increase in CCP utilization (p=0.004), with a y-intercept of 25.2% mortality without CCP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C34, C35, C88, C89, and C90 describe the statistical modeling approach and results. The methods are clearly stated, including the 2-week lag adjustment and weighting by hospitalizations. The R\u00b2 of 0.254 indicates modest explanatory power, appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The model's y-intercept (25.2% mortality without CCP) aligned with US study averages (23.5%), RECOVERY trial data (24%), and EAP late-treatment data (30%). Extrapolation to 100% CCP usage yielded 7.6% mortality, near the 6.2% reported for early high-titer CCP treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C36-C40 compare model estimates to external data sources. While the y-intercept shows reasonable agreement with cited studies, the extrapolation to 100% usage (C39) extends beyond the data range and is appropriately cautioned by the authors. The comparison provides face validity but doesn't constitute independent validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C50",
+      "C79"
+    ],
+    "result": "Using the linear model, the authors estimated 29,018 (95% CI: 3,535\u201354,501) excess deaths from reduced CCP usage between mid-November 2020 and February 2021. Alternative scenarios estimated 62,383 fewer deaths with 50% utilization and 94,436\u201395,026 excess deaths had CCP never been deployed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claims C8, C42, C43, C44, C45, C50, and C79 present excess death estimates based on the linear model. However, these estimates assume causality from an observational correlation (R\u00b2=0.254), which explains only 25% of variance. The wide confidence intervals, potential for unmeasured confounding, and ecological fallacy (population-level correlation \u2260 individual-level effect) make these causal estimates insufficiently supported. The authors acknowledge this limitation with conditional language ('might have resulted'), but the estimates remain speculative without RCT-level evidence of causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Mortality rates differed between high CCP utilization period (18.16% for 257,424 patients, Sept 21\u2013Nov 8, 2020) and low utilization period (20.08% for 1,344,463 patients, Nov 9, 2020\u2013Mar 22, 2021).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48 and C49 present descriptive statistics from Table 1 comparing two time periods. The data are clearly presented, though the difference in mortality could reflect factors beyond CCP usage given the observational design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The authors review prior evidence on CCP, noting early safety data, correlation between antibody levels and survival, mixed RCT results (some showing no benefit, others showing 40% mortality reduction), and mechanistic evidence including antiviral activity, animal model protection, and anti-inflammatory effects. They argue negative RCTs used late treatment in advanced disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C20 and C59-C71 summarize prior literature with appropriate citations. The characterization of mixed RCT evidence is accurate, though the authors' interpretation favoring CCP efficacy represents their perspective on weighing conflicting evidence. The mechanistic evidence cited is properly attributed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C22",
+      "C23",
+      "C57",
+      "C58"
+    ],
+    "result": "Mortality among hospitalized COVID-19 patients decreased through most of 2020 but began rising in late November/early December 2020, coinciding with reduced CCP use. No new effective therapies were introduced or withdrawn during October 2020\u2013March 2021 except declining CCP use.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C52, C22, C23, C57, and C58 describe temporal patterns in mortality and treatment availability. The mortality reversal is documented with citations, and the claim about no new therapies is based on knowledge of clinical practice during this period. However, the temporal coincidence doesn't establish causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The authors argue CCP remains a viable early treatment option that is readily available, inexpensive, and safe. They attribute declining usage to 'plasma hesitancy'\u2014overemphasis on negative RCT results while dismissing other evidence\u2014and note guidelines from AABB and Brazil emphasize early treatment with high-antibody plasma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74-C77 and C80-C82 present the authors' interpretation and advocacy position. While CCP availability and safety are well-documented (C75), the characterization of 'plasma hesitancy' (C80) is speculative. The guideline citations (C76, C77) are factual, but the overall argument represents the authors' perspective rather than established fact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "The decline in CCP use was strongly associated with an increase in mortality among hospitalized COVID-19 patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 accurately summarizes the correlation finding (r = \u22120.52, p=0.002) as an association. The language appropriately avoids claiming causation, though the authors' broader interpretation suggests causal inference.",
+    "result_type": "MAJOR"
+  }
+]

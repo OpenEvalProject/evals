@@ -1,0 +1,390 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C43",
+      "C44",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The study generated combinatorially complete mutational libraries for CR9114 (16 mutations, 65,536 variants) and CR6261 (11 mutations, 2,048 variants), reconstructing all evolutionary intermediates from germline to somatic sequences. These libraries were assayed using high-throughput yeast display and Tite-Seq to measure equilibrium binding affinities against diverse influenza HA antigens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C43-C44, C53-C60 collectively describe the experimental design and library generation. The combinatorially complete nature of the libraries is well-documented, the yeast display system is appropriate for these antibodies (which engage antigens solely through heavy chains), and the Tite-Seq method is validated by prior work. The experimental approach is sound and well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The Tite-Seq measurements are reproducible across biological triplicates (average standard error 0.047 -logKD units) and accurate as verified by isogenic flow cytometry and published solution-based measurements. Affinities outside titration boundaries were pinned to physiologically relevant limits, and antibody expression was not strongly impacted by sequence identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C67 establish the technical validity of the measurements. The reproducibility is quantified with appropriate error metrics, accuracy is validated through multiple independent methods (isogenic flow cytometry and comparison to published data), and the data processing decisions (boundary pinning) are justified by physiological relevance. The validation is thorough and convincing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "CR9114 and CR6261 exhibit strikingly different binding patterns: CR9114 shows a hierarchical structure where most variants (97%) bind H1, fewer bind H3 (11%), and very few bind influenza B (0.3%), with binding to more divergent antigens requiring specific nested combinations of mutations. In contrast, most CR6261 variants bind both H1 (92%) and H9 (81%) with similar affinity distributions and many variants displaying intermediate affinity to both antigens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C81 describe the primary experimental findings about binding patterns. The hierarchical structure of CR9114 and the more permissive binding of CR6261 are clearly demonstrated through quantitative data (percentages of binding variants) and visualizations (force-directed graphs, scatterplots). The nested structure is evident from the data showing that sequences binding H3 and influenza B are localized and overlapping in genotype space. These are well-supported major findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The study used cross-validated linear models with interaction terms to infer epistasis, identifying optimal models with fifth-order interactions for CR9114 H1, fourth-order for CR9114 H3, first-order for CR9114 influenza B, and fourth-order for CR6261 H1 and H9. Alternative approaches (global epistasis, Walsh-Hadamard transformations) were explored but did not substantially change the conclusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C92 describe the analytical framework for epistasis inference. The use of cross-validation to select model order is appropriate and conservative. The authors acknowledge limitations (inference power depends on number of binding sequences) and tested alternative approaches, finding consistent results. The statistical methodology is sound and well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Individual mutations show diverse effects: some enhance binding to all antigens (e.g., S83F for CR9114), while others create trade-offs (e.g., F30S reduces H1 affinity but enhances influenza B affinity). Large-effect mutations generally contact HA. For CR9114, three mutations (K82I, I57S, S83F) are required for H3 binding and eight for influenza B binding, exhibiting a nested structure where mutations beneficial for H1 are required for H3, and H3-required mutations are required for influenza B.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C103 describe first-order mutational effects and their structural context. The findings are supported by quantitative data (frequency of mutations in binding sequences >90%), structural analysis (contact surface area correlations), and consistency with prior structural studies. The nested structure is a key finding that explains the hierarchical binding landscape and is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Epistasis is widespread, accounting for 18-33% of explained variance (except influenza B). Pairwise interactions are dominated by a few mutations (F30S for CR9114, S35R for CR6261) that exhibit many interactions with other mutations. Mutations with strong pairwise interactions tend to be structurally close, though long-range interactions exist, likely mediated by antigen interactions or conformational changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 characterize pairwise epistasis. The quantification of epistatic contributions to variance is appropriate, the identification of key interacting residues is data-driven, and the structural analysis (distance vs. interaction strength) is well-executed. The interpretation of long-range interactions is reasonable given the structural context and supported by citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C121"
+    ],
+    "result": "For CR9114 H1 binding, five key mutations (F30S, I57S, A65T, K82I, S83F) distributed across three heavy chain regions participate in extensive high-order epistasis (third to fifth order). These mutations largely determine the overall landscape structure, though interactions with other mutations exist. The five mutations also underlie significant epistasis for H3 and influenza B binding. Complex sign epistasis is observed, such as F30S being less deleterious with S83F and becoming beneficial with additional I57S mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C121 describe high-order epistasis centered on five key residues. The identification of these residues is data-driven (enrichment of significant interaction terms), the visualization (force-directed graphs colored by genotype) clearly demonstrates their importance, and specific examples of sign epistasis are quantitatively shown. The mechanistic interpretations are supported by structural data and citations. This is a major finding about the complexity of the binding landscape.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "CR6261 higher-order epistasis is dominated by mutations in CDR1 and FW3 at positions similar to CR9114 key sites. These mutations exhibit strong diminishing returns epistasis at third and fourth order, counteracting synergistic pairwise effects, in a similar manner across both H1 and H9 antigens. Many fourth-order combinations show similar interaction coefficients, possibly indicating even higher-order interactions beyond the study's inference power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C125 characterize CR6261 epistasis patterns. The identification of key residues and the pattern of diminishing returns epistasis are well-supported by the data. The authors appropriately acknowledge limitations in inferring very high-order interactions due to statistical power. The similarity of epistatic patterns across H1 and H9 is consistent with the more correlated binding affinities observed for CR6261.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Only a small fraction of mutational paths from germline to somatic are strictly uphill (0.00005% for CR9114 H1, 0.2% for CR6261 H1). The somatic sequences are not global maxima of the landscapes, and some mutations have deleterious effects on average. Strictly uphill paths are only possible due to sign epistasis, where normally deleterious mutations become beneficial in specific genetic backgrounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C129 quantify pathway constraints. The calculation of uphill paths is straightforward given the complete landscape data, and the finding that somatic sequences are not global maxima is directly observable. The inference that sign epistasis enables uphill paths is logically sound given that some mutations are deleterious on average but the somatic sequence is reachable. The quantification includes appropriate error estimates (bootstrap).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "For CR9114, improvements in H1 binding occur early, while H3 and influenza B binding improvements require more mutations, forcing sequential acquisition of affinity. There are more uphill paths to the somatic sequence under sequential selection (H1\u2192H3\u2192influenza B) than under single-antigen selection. For CR6261, improvements in binding to both antigens can occur early, and the number of uphill paths is similar across single-antigen and sequential selection scenarios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C139 analyze evolutionary pathways. The analysis of maximum affinity by number of mutations is straightforward from the data, and the counting of uphill paths under different scenarios is computationally tractable. The findings logically follow from the nested structure of CR9114 (requiring specific mutations for each antigen) versus the more permissive structure of CR6261. The bootstrap error estimates are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "The study developed a framework to evaluate total probability of mutational pathways under various selection scenarios (individual, sequential, mixed), assuming higher probability for steps that increase binding affinity. The framework was tested with multiple selection strengths (strong, moderate, weak) and mixed-antigen modeling approaches (average, random), showing consistent major results. The models simplify in vivo complexities but provide insight into relative pathway probabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C148 describe the pathway probability framework. The modeling approach is reasonable and well-justified, with appropriate exploration of parameter sensitivity and alternative formulations. The authors clearly acknowledge simplifications and limitations (e.g., not capturing B cell lineage dynamics, nucleotide-level mutational bias). The consistency of results across different model variants strengthens confidence in the conclusions. The framework is appropriate for the study's goals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "For CR9114, the vast majority of likely selection scenarios involve sequential exposure (H1\u2192H3\u2192influenza B). Under optimal sequential selection, binding affinity improves substantially for each antigen in turn, while H1-only scenarios show more gradual improvements. The average mixed scenario shows similar paths to optimal sequential but with lower probability, while random mixed scenarios are much less likely. Under optimal sequential selection, most genotypes are unlikely intermediates, and specific mutations (I57S, K82I, S83F) must occur early while F30S is constrained to intermediate timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C157 present the pathway analysis results for CR9114. The findings logically follow from the nested structure of the binding landscape and the pathway probability framework. The visualization of most likely paths and mutation order probabilities clearly supports the conclusions. The constraint on F30S timing due to sign epistasis is a specific, testable prediction that follows from the epistasis analysis. These results provide mechanistic insight into how the landscape structure constrains evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "For CR6261, all selection scenarios have relatively similar likelihood, though sequential scenarios beginning with H1 are more likely than those beginning with H9 due to early mutations improving H1 affinity more. Unlike CR9114, many likely paths continually improve binding to both antigens in single-antigen and mixed scenarios. Mutation order is initially constrained by synergistic epistasis, with T29P highly likely to occur first in H1-first scenarios as the only single mutation improving H1 affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C165 present the pathway analysis for CR6261. The findings are consistent with the more permissive binding landscape structure (most variants bind both antigens with intermediate affinity). The preference for H1-first sequential scenarios is explained by specific mutational effects shown in the data. The constraint on T29P is a specific, data-supported observation. The contrast with CR9114 is clear and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "Evolutionary pathways to bnAbs are highly contingent on epistatic and pleiotropic effects. CR9114 breadth acquisition is extremely constrained and likely occurred through sequential exposure to diverse antigens in a specific order due to correlations and interactions between mutational effects. CR6261 could have acquired affinity to H1 and H9 continuously and simultaneously, possibly because these antigens are more similar, with breadth to H9 likely acquired by chance since H9 is not commonly circulating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C170 present the main conclusions about evolutionary constraints. These conclusions are well-supported by the comprehensive landscape characterization, epistasis analysis, and pathway modeling. The contrast between CR9114 (highly constrained, sequential) and CR6261 (less constrained, simultaneous) is clearly demonstrated. The speculation about CR6261's H9 breadth being acquired by chance is reasonable given H9's rarity and is appropriately qualified with a citation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C50",
+      "C192",
+      "C193",
+      "C194"
+    ],
+    "result": "The nested patterns of mutational effects provide molecular insight into why sequential exposure to diverse antigens often favors greater breadth. The results demonstrate that the lower effectiveness of mixed-antigen regimens compared to sequential regimens may be due to the intrinsic structure of the mutational landscape, defined by complex interactions of mutational effects across antigens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C192-C194 connect the study's findings to broader observations in the field. The molecular mechanism (nested mutational effects requiring sequential acquisition) provides a clear explanation for the empirical observation that sequential exposure favors breadth. This is supported by the pathway analysis showing higher probability for sequential scenarios. The connection to prior work is well-cited and the interpretation is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183"
+    ],
+    "result": "The study acknowledges several limitations: it cannot conclusively determine how CR9114 and CR6261 evolved in vivo; phage display isolation may have introduced biases or artifacts; selection pressures on virions may differ from those on recombinant HA; stem-targeting bnAbs experience additional selection pressures (e.g., against autoreactivity) not captured by the measurements; and the specific antigens involved in vivo selection are unknown. Despite these limitations, the antibody sequences occupy useful regions of sequence space for understanding sequence-affinity-breadth relationships, and the diverse HA subtypes employed capture representative variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C171-C183 present important caveats and limitations. The authors appropriately acknowledge uncertainties about in vivo evolution, potential experimental artifacts, and unmeasured selection pressures. These limitations are well-recognized and do not invalidate the main findings about landscape structure and evolutionary constraints. The justifications for the experimental choices (recombinant HA, specific antigens) are reasonable and supported by citations showing correlation with neutralization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191"
+    ],
+    "result": "This work provides the first comprehensive characterization of antibody affinity landscapes and advances understanding of molecular constraints on bnAb evolution. The landscapes are among the largest combinatorially complete mutation collections published. While observations of high-order interactions are consistent with prior work on other proteins, the strongly synergistic nested mutations crucial for CR9114 breadth are unusual, possibly due to antibody-antigen interface properties or affinity maturation dynamics. These interactions may play a substantial role in affinity maturation and contribute to bnAb rarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52, C185-C191 assess the novelty and significance of the work. The claim of being the first comprehensive characterization of antibody affinity landscapes is supported by the scale (combinatorially complete libraries of 11-16 mutations) and depth (multiple antigens, high-order epistasis) of the analysis. The comparison to prior work is appropriate and well-cited. The speculation about implications for bnAb rarity is reasonable given the findings but appropriately qualified as speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The introduction establishes the context: bnAbs have been isolated over two decades with structural characterization providing molecular insights, but understanding of evolutionary pathways remains limited. Influenza vaccination is challenging due to HA evolution, and most vaccine-elicited antibodies protect against limited strains. CR9114 and CR6261 are well-studied bnAbs with different breadth levels, derived from similar germlines and binding the HA stem, but with many mutations whose contributions to affinity remain unclear. Epistasis in antibody-antigen interactions is understudied, and prior studies have been limited in scope due to practical constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C14-C42 provide background and motivation. These claims are well-supported by extensive citations to the literature and accurately represent the state of the field. The identification of knowledge gaps (evolutionary pathways, mutational effects, epistasis) is appropriate and justifies the study. The description of CR9114 and CR6261 properties is consistent with cited structural and functional studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C13",
+      "C195",
+      "C196"
+    ],
+    "result": "The results may explain the molecular basis for sequential exposure favoring greater breadth, if generalizable to other bnAbs. Future studies of diverse antibody binding landscapes could reveal how features generalize across different germlines, mutation profiles, and antigens. These insights will be valuable for predicting, designing, and eliciting bnAbs for therapeutic and immunization applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C13, C195-C196 make speculative statements about generalizability and future applications. While the findings for CR9114 and CR6261 are well-supported, the generalizability to other bnAbs is uncertain and explicitly qualified by the authors ('if generalizable'). The potential applications are reasonable but speculative. These are appropriate forward-looking statements but cannot be evaluated as supported by the current data alone.",
+    "result_type": "MINOR"
+  }
+]

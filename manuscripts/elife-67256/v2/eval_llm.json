@@ -1,0 +1,387 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C23",
+      "C24"
+    ],
+    "result": "The study addresses an apparent conflict between two views of motor cortex (MC): one as an autonomous dynamical system with rotational dynamics arising from intrinsic connections, and another as a feedback controller where sensory feedback and interactions with other brain areas contribute substantially to MC processing. The authors identify a gap in understanding whether networks with external feedback exhibit rotational dynamics and whether these dynamics are exclusive to MC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C23 accurately describe established perspectives in the field based on prior literature. Claim C24 appropriately identifies the research gap that motivates the study. These claims provide valid context and rationale for the investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C25",
+      "C26",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The authors developed a multi-layer recurrent neural network (RNN) that controlled a two-link model arm and received delayed sensory feedback about limb state (joint position, velocity, muscle activities). The network had input and output layers with intrinsic recurrent connections and was trained to counteract perturbations and perform reaching movements by minimizing kinematic error.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C25, C26, C34-C39 describe the computational model architecture and training protocol. The model design is clearly specified with appropriate biological constraints (50 ms delay, muscle dynamics, joint mechanics). The methodology is sufficiently detailed and references Figure 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "In the REC network during the posture task, rotational dynamics were observed in both output and input layers (frequencies 2.0 Hz and 0.7 Hz for output layer top-2 jPC planes, capturing 60% variance; R\u00b2=0.55 for constrained fit, p=0.001). Kinematic signals exhibited rotational dynamics (1.1 Hz, R\u00b2=0.39-0.48), while muscle activities showed poor fits (R\u00b2=0.02-0.31). Sensory feedback signals could reproduce network dynamics with high accuracy (R\u00b2=0.99).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C61 present jPCA analysis results with specific quantitative metrics (frequencies, variance explained, R\u00b2 values, p-values) and appropriate statistical comparisons using TME null distributions. The finding that rotational dynamics appear in neural and kinematic signals but not muscle activity is well-supported by the data in Figure 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Five monkeys performing a similar posture perturbation task exhibited rotational dynamics in pooled MC neurons (n=553, frequencies 1.3 Hz and 1.1 Hz, capturing 63% variance, R\u00b2=0.41 for constrained fit, p<0.001). Individual monkeys P, A, X, and Pu showed significant rotational dynamics (mean R\u00b2=0.45, p<0.01), while Monkey M showed weaker but still significant rotational structure (R\u00b2=0.21, p=0.003).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C74 present experimental data from monkey recordings with appropriate sample sizes and statistical testing. The variability across animals (particularly Monkey M) is acknowledged. Results are consistent with prior literature and provide biological validation of the computational findings. Data are referenced to Figure 4 and Figure 5.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Rotational dynamics were observed in pooled somatosensory and parietal cortex neurons (n=219, frequencies 1.7 Hz and 1.1 Hz, R\u00b2=0.49 for constrained fit, p<0.001), comparable to MC. Muscle activities showed no rotational dynamics (poor fits, R\u00b2=0.02-0.09), while joint kinematics exhibited clear rotational dynamics (frequency 1.4\u00b10.1 Hz, R\u00b2=0.38-0.54) significantly greater than down-sampled neural activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C80 extend the rotational dynamics findings beyond MC to somatosensory/parietal areas, with appropriate statistical comparisons. The contrast between neural/kinematic signals (showing rotational dynamics) and muscle activity (not showing rotational dynamics) is consistently demonstrated. Results are referenced to Figure 5.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The REC network trained on a delayed center-out reaching task exhibited rotational dynamics in both output layer (frequencies 2.1 Hz and 1.1 Hz, 83% variance, R\u00b2=0.70 for constrained fit, p<0.001) and input layer (frequencies 2.1 Hz and 0.9 Hz, R\u00b2=0.54, p=0.01). The constrained/unconstrained R\u00b2 ratio (0.84) was comparable to prior studies. Muscle activities showed no rotational dynamics, while kinematic signals exhibited rotational dynamics (0.94 Hz).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C93 demonstrate that rotational dynamics generalize to the reaching task with quantitative metrics and appropriate comparisons to prior work (Churchland et al., 2012). The pattern of results (rotational dynamics in neural and kinematic signals but not muscle) is consistent with the posture task. Results are referenced to Figures 6 and 7.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Monkeys H and C performing center-out reaching exhibited rotational dynamics in somatosensory area 2 (frequencies 1.0 Hz and 1.7 Hz, R\u00b2=0.51 for constrained fit, p<0.001) and in kinematics (frequencies 1.3 Hz and 1.2 Hz, R\u00b2=0.39 for constrained fit, p<0.001-0.02). These monkeys made slightly slower reaches (~400 ms) than those in Churchland et al., 2012 (~300 ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C99 provide experimental validation that rotational dynamics occur in somatosensory cortex during reaching, not just posture perturbation. The acknowledgment of differences in reach speed compared to prior studies is appropriate. Results are referenced to Figure 6\u2014figure supplement 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Networks without recurrent connections (NO-REC) exhibited rotational dynamics during both posture (frequencies 1.0 Hz and 0.74 Hz, 92% variance, R\u00b2=0.43 for constrained fit, p=0.02) and reaching tasks (frequencies 1.4 Hz and 0.85 Hz, 82% variance, R\u00b2=0.46 for constrained fit, p=0.01). The NO-REC network showed greater variability in time to reach goal compared to REC network but achieved qualitatively similar performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C109 present the critical finding that rotational dynamics persist even without intrinsic recurrent connections, demonstrating they can arise from sensory feedback alone. The quantitative metrics and statistical tests support this conclusion. The acknowledgment of performance differences (greater variability) is appropriate. Results are referenced to Figures 6\u2014figure supplement 2 and Figure 8.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Analysis of the REC network revealed that while synaptic weight ratios (recurrent/sensory) were slightly greater than one, the current ratios (recurrent/sensory) were centered near 0.5, indicating sensory contribution was ~2\u00d7 larger than recurrent contribution across neurons. This demonstrates sensory inputs had substantial impact in generating dynamics in REC networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 provide important mechanistic insight by analyzing the relative contributions of recurrent vs. sensory inputs. The distinction between weight ratios and current ratios (which account for input activity levels) is methodologically sound. Results are referenced to Figure 8\u2014figure supplement 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "When motor noise was added, continuous feedback networks outperformed pulse feedback networks during posture tasks and outperformed fully autonomous networks during reaching tasks across motor noise levels, demonstrating the functional advantage of continuous sensory feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114 demonstrate the functional benefit of continuous feedback through systematic comparison of network architectures under motor noise. This provides computational evidence for the importance of feedback control. Results are referenced to Figure 8\u2014figure supplement 2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Increasing sensory feedback delays (0, 50, 100 ms) resulted in modest reductions in rotational frequencies and fit qualities for both REC and NO-REC networks during posture and reaching tasks. For example, in the posture task, frequencies decreased from 1.60 to 1.42 Hz with increasing delay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117 systematically examine the effect of sensory delays on rotational dynamics. The trends are clearly described with quantitative values. The modest effects suggest rotational dynamics are relatively robust to physiological delays. Results are referenced to Figure 8\u2014figure supplement 3.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Networks trained with cartesian-based sensory feedback (hand position/velocity) showed reduced rotational dynamics compared to joint-based feedback during the posture task (R\u00b2=0.2 vs 0.55 for constrained fit). However, kinematic signals in cartesian coordinates still showed strong fits (R\u00b2=0.67), and networks initialized with Gaussian distributions exhibited stronger rotational dynamics (R\u00b2=0.5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C122 examine how sensory feedback representation affects rotational dynamics. The finding that cartesian feedback reduces rotational dynamics is interesting and suggests the coordinate frame matters. The effect of initialization method is also documented. Results are referenced to Figure 8\u2014figure supplement 4.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "During a constant-velocity tracking task, both REC and NO-REC networks exhibited substantially reduced rotational dynamics compared to posture and reaching tasks (frequencies 0.18 Hz and 0.08 Hz, R\u00b2=0.13 for constrained fit). Kinematic signals also showed poor fits (R\u00b2=0.04-0.08). The constrained fit was still statistically significant according to TME null distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C130 demonstrate task-specificity of rotational dynamics. The tracking task disrupts the phase relationship between position and velocity that gives rise to rotational dynamics in other tasks. This provides important boundary conditions for the phenomenon. Results are referenced to Figure 9.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C28",
+      "C131",
+      "C132",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The study's central finding is that rotational dynamics can arise from sensory feedback alone, without requiring intrinsic recurrent connections. Networks exhibited rotational structure in activities and sensory feedback signals even when recurrent connections were removed, suggesting rotational dynamics in MC may reflect internal dynamics, system inputs, or any weighted combination of the two.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C28, C131-C132, C143-C145 synthesize the main computational findings. The conclusion that rotational dynamics can arise from feedback alone is strongly supported by the NO-REC network results (C102-C109). This challenges the prevailing interpretation that rotational dynamics necessarily reflect autonomous pattern generation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C29",
+      "C133",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Experimental recordings from monkeys revealed rotational dynamics not only in MC but also in somatosensory cortex (S1, A2) and parietal cortex (A5) during both posture perturbation and reaching tasks. These areas are important components of frontoparietal circuits involved in planning and execution of arm motor function, indicating rotational dynamics are distributed throughout the voluntary motor system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C29, C133, C146-C149 establish that rotational dynamics are widespread across sensorimotor cortex, not exclusive to MC. This is a key empirical finding that supports the feedback control interpretation. The functional roles of these areas are appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C8",
+      "C30",
+      "C134"
+    ],
+    "result": "The authors conclude that rotational dynamics are a characteristic present throughout the sensorimotor system (except muscles) and may reflect dynamics throughout the voluntary motor system involved in online control of motor actions, generated by intrinsic dynamics in MC and/or through dynamics of the entire motor system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C30, C134 present the study's main interpretation. This conclusion is well-supported by the combined computational and experimental findings showing rotational dynamics in multiple cortical areas, in kinematic feedback, and in networks without recurrent connections. The caveat about muscles is consistently demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The study identifies that rotational dynamics in sensory feedback arise from phase offsets between joint position and velocity during posture perturbation and reaching tasks. Primary and secondary afferents signal muscle length and velocity, which can be used to estimate joint kinematics. The tracking task disrupted this phase relationship, substantively reducing rotational dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C142 provide mechanistic explanation for rotational dynamics in kinematic signals. The phase offset explanation is supported by the data and prior work. The tracking task serves as an important control demonstrating that disrupting the phase relationship eliminates rotational dynamics. This is well-reasoned and supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "The authors emphasize that finding rotational dynamics across fronto-parietal circuits is not trivial, as other brain areas (supplementary motor area during reaching, hand area of MC during grasping-only) do not exhibit rotational dynamics. A growing body of work has revealed diverse neural dynamics (rotational, helical, stationary, ramping) across different behavioral tasks supporting various computations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C154 appropriately contextualize the findings within the broader literature on neural dynamics. The citations to prior work showing absence of rotational dynamics in some contexts and presence in others support the claim that the findings are not trivial. This demonstrates appropriate scientific perspective.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "The authors acknowledge a limitation: the model does not capture complex multi-phasic activity patterns that precede movement onset by 100-150 ms, which must arise from internal processing. However, given sensory feedback reaches cortex in 20 ms, the results suggest sensory feedback likely contributes heavily to MC dynamics during movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C157 appropriately acknowledge model limitations while drawing reasonable inferences about the contribution of sensory feedback during movement based on known feedback latencies. This demonstrates balanced interpretation of the model's scope.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "The authors discuss optimal feedback control (OFC) as an alternative framework emphasizing continuous sensory feedback and internal feedback from efference copies. OFC includes state estimation and control policy components, requires both sensory feedback and intrinsic processing (for generating time-varying feedback gains), and suggests MC rotational dynamics are generated by multiple factors including local connections, inputs from other areas, and sensory feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C170 provide appropriate theoretical context from the OFC literature. The discussion accurately represents OFC principles and appropriately notes that OFC also requires intrinsic processing, not just feedback. The conclusion that rotational dynamics may reflect multiple factors is well-reasoned. Claim C168 is appropriately labeled as speculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "The authors discuss recent studies suggesting MC uses an initial planning stage when processing visual feedback during movement. They note that activity associated with generating motor output may still reflect sensory and internal feedback, and suggest the planning stage may reflect model predictive control, though it remains unclear if feedback responses to systematic errors evoke the same patterns as motor noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C171-C175 appropriately discuss recent literature on planning stages in MC and relate it to the current findings. The interpretation is cautious and acknowledges open questions. Claim C175 is appropriately labeled as speculation. This demonstrates engagement with relevant recent work.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,390 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The crystal structure of MtaLonA N-terminal domain (NTD) was determined at 2.1 \u00c5 resolution, revealing a bilobal fold with an N-terminal lobe (one \u03b1-helix and six \u03b2-strands forming three \u03b2-sheets) and a C-terminal lobe (five-helix bundle) connected by an 18-residue linker. The structure is similar to EcLon and MacLon NTDs but differs from BsLon NTD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C53 are well-supported by crystallographic data presented in Table 1 and Figure 2. The resolution, structural features, and comparative analysis with other LonA NTDs are documented with appropriate crystallographic statistics and electron density maps. The structural characterization is rigorous and complete.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C35",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The six NTDs of hexameric MtaLonA tumble independently of the ~0.5 MDa hexameric core complex, being attached via flexible ~40-residue linkers. This was demonstrated by NMR spectroscopy showing superimposable 15N-1H correlations between isolated NN206 and full-length deuterated MtaLonA, with favorable relaxation properties enabling high-quality NMR spectra.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C58 are strongly supported by NMR data (Figure 2E, Figure 2\u2014figure supplement 1). The observation of ~200 well-resolved correlations from a 0.5 MDa complex, superimposable with isolated NTD spectra, provides compelling evidence for independent tumbling. The crystallographic data showing disorder past residue 210 further supports the flexible linker model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The NTD is essential for MtaLonA to degrade thermally damaged proteins (Ig2) and degron-tagged proteins, but not required for degrading intrinsically disordered \u03b1-casein. The AAAP construct lacking the NTD showed severely impaired activity against thermally unfolded Ig2 while retaining near wild-type activity against \u03b1-casein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C120 are well-supported by degradation assays shown in Figure 1B-C. The differential activity of AAAP versus full-length MtaLonA against different substrate types provides clear evidence for substrate-specific NTD requirements. The experimental design with appropriate controls (full-length vs. AAAP) is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C60",
+      "C61",
+      "C62",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The NTD selectively interacts with thermally unfolded proteins and protein aggregates via two hydrophobic patches in its N-lobe (helix \u03b11, loops L1-L3, and \u03b2-sheet \u03b22/\u03b25/\u03b24). Temperature cycling NMR experiments showed no interaction with folded Ig2 at 32\u00b0C but dramatic spectral changes at 55\u00b0C when Ig2 is unfolded. Mutations P22A/M85A (NN206*) significantly reduced binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C77 are strongly supported by temperature-dependent NMR experiments (Figure 3A-H) and mutagenesis studies. The CSP mapping clearly identifies the binding interface, and the mutant NN206* provides validation of specific residues. The experimental design using temperature to control substrate folding state is elegant and well-executed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C32",
+      "C65",
+      "C66",
+      "C122"
+    ],
+    "result": "The NTD does not interact with intrinsically disordered \u03b1-casein, showing little to no chemical shift perturbations upon addition. The NTD is specific for substrates with exposed hydrophobic regions (damaged/unfolded proteins) but not for intrinsically disordered proteins lacking hydrophobic-rich regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C122 are supported by NMR data (Figure 3\u2014figure supplement 2) showing minimal CSPs with \u03b1-casein, contrasting with substantial changes observed with unfolded proteins. This selectivity is consistent with the degradation assays and provides mechanistic insight into substrate discrimination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The NTD recognizes protein aggregates through its N-lobe hydrophobic patches. Addition of TCEP-treated denatured lysozyme caused substantial spectral changes in NN206 but only marginal changes in NN206*. Full-length MtaLonA efficiently degrades denatured-reduced lysozyme but not native lysozyme, while AAAP is inactive against both.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C87 are well-supported by NMR titration experiments (Figure 3\u2014figure supplement 5A-C) and degradation assays (Figure 3\u2014figure supplement 5D-E). The use of TCEP-treated lysozyme as a model aggregate is appropriate, and the differential behavior of wild-type vs. mutant NTD validates the binding site identification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The NTD recognizes degron-tagged proteins through hydrophobic interactions with the Sul20 degron. NMR experiments with Ig2D5-S20 showed that residues Y19 and H20 of Sul20 are critical for binding to the N-lobe hydrophobic patches (P22, M85). The Y19A/H20A double mutant significantly reduced both NTD binding and MtaLonA degradation efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C101 are strongly supported by NMR titration experiments (Figure 4) and degradation assays (Figure 4\u2014figure supplement 2A). The identification of Y19/H20 as critical residues through resonance broadening, combined with mutagenesis validation, provides robust evidence for the degron recognition mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The NTD stabilizes thermally unfolded conformations of substrate proteins. Temperature cycling experiments with Ig2D5 showed that in the presence of NN206 or full-length LonA*, only ~15% of Ig2D5 refolded after thermal treatment (vs. ~72% without NTD). The mutant NN206* showed reduced ability to prevent refolding (~75% folded), indicating the hydrophobic patches are critical for stabilizing unfolded states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C117 are well-supported by temperature cycling NMR experiments (Figure 5). The quantitative analysis of folded ratios provides clear evidence that NTD engagement prevents substrate refolding. The differential effects of wild-type vs. mutant NTD and full-length vs. AAAP strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C139",
+      "C142"
+    ],
+    "result": "Two conserved hydrophobic patches (hpI: L10, V14, I15, P22, V23, M85; hpII: M75, L77, P78, L82) mediate substrate binding. Structural comparison reveals that EcLon, MacLon, and BsLon NTDs all exhibit similar exposed hydrophobic patches with slight variations, suggesting these patches are conserved features responsible for substrate selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C142 are supported by comprehensive NMR CSP mapping (Figure 6A) and structural comparisons (Figure 6B-D). The identification of specific residues through multiple substrate binding experiments and validation through mutagenesis provides strong evidence. The structural conservation across species strengthens the functional significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "In isolated NTD, substrate binding affects only the N-lobe hydrophobic patches. However, in full-length LonA*, both N- and C-lobes show chemical shift changes and line broadening upon substrate binding, suggesting multiple NTDs of the hexamer may cooperatively interact with substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C159 are supported by comparative NMR experiments with isolated NN206 vs. full-length LonA* (Figure 7A-B). The differential behavior of C-lobe signals in the hexameric context provides evidence for multi-NTD engagement. However, the interpretation of cooperative binding is somewhat speculative and would benefit from additional quantitative analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C38",
+      "C125",
+      "C126",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "The authors propose a model where flexibly linked NTDs survey and selectively capture damaged proteins through their hydrophobic patches. Multiple NTDs can cooperatively engage substrates (avidity effect), facilitating substrate unfolding and translocation. LonA operates through two modes: NTD-requiring mode for damaged/degron-tagged proteins and NTD-non-requiring mode for intrinsically disordered substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10-C164 represent a mechanistic model that integrates the experimental findings. While the model is consistent with the data (flexible linkers, selective binding, differential substrate requirements), key aspects remain speculative. The cooperative multi-NTD engagement is inferred from line broadening but lacks direct quantitative evidence. The proposed avidity effect and detailed translocation mechanism require additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C59",
+      "C103",
+      "C104"
+    ],
+    "result": "Thermal stability measurements show MtaLonA (Tm=68\u00b0C), NN206 (Tm=85.5\u00b0C), and Ig2/Ig2D5 (Tm=46\u00b0C) have distinct melting temperatures. The high thermal stability of MtaLonA and NN206 enables temperature cycling experiments where Ig2 is thermally denatured at 55\u00b0C while the NTD remains folded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C104 are supported by thermal shift assay data (Figure 1\u2014figure supplement 1, Figure 5\u2014figure supplement 1C). The Tm values justify the experimental design using 55\u00b0C for substrate denaturation. This is a well-executed control experiment that validates the temperature cycling approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Size exclusion chromatography analysis after thermal cycling showed that more than half of Ig2 became unfolded or aggregated while the NTD remained well-folded. The NTD-Ig2 aggregate complex showed a dissociable SEC profile, suggesting dynamic NTD-substrate interactions that may facilitate translocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 are supported by SEC data (Figure 3D). The dissociable profile provides evidence for dynamic binding. However, the functional interpretation regarding translocation facilitation (C71) is speculative and represents a hypothesis rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "The Sul20 degron exhibits low heteronuclear NOE values indicating high flexibility and solvent exposure. The NTD recognizes aromatic/hydrophobic residues (Y19, H20) through non-specific hydrophobic interactions without inducing disorder-to-order transitions. The N-lobe engages non-contiguous hydrophobic patches to trap substrates near the AAA+ ring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C151 are supported by NOE measurements (Figure 4D) and chemical shift analysis showing Sul20 remains disordered upon binding (Figure 4\u2014figure supplement 1D). The characterization of binding as non-specific hydrophobic interactions is well-supported. The functional interpretation about substrate trapping (C151) is reasonable but somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Background information on LonA: it is a ubiquitous ATP-dependent AAA+ protease that forms homo-hexamers and degrades damaged proteins and degron-tagged proteins. The NTD is thought to mediate substrate recognition, while ATP-dependent translocation and proteolysis mechanisms have been characterized. Previous structural studies of LonA NTDs exist, but substrate interactions had not been analyzed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C23 represent established background knowledge supported by appropriate citations. These claims accurately summarize prior work and identify the knowledge gap addressed by this study. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The experimental system uses thermostable MtaLonA from Meiothermus taiwanensis, enabling temperature cycling experiments. Five substrate proteins were employed: Ig2 (Ig-fold dimer, folded up to 40\u00b0C), \u03b1-casein (intrinsically disordered), native and reduced lysozyme (forming aggregates), Ig2D5 (single domain), and degron-tagged Ig2D5-S20.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 describe the experimental system and are supported by thermal stability data and established knowledge about the substrate proteins. The choice of MtaLonA for its thermal stability is well-justified and enables the key temperature cycling experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C102",
+      "C123",
+      "C124",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Comparative analysis with other AAA+ proteases and chaperones: ClpB NTD recognizes exposed hydrophobic stretches and stabilizes unfolded conformations (similar to LonA NTD), but ClpB NTD interacts with \u03b1-casein while MtaLonA NTD does not. The ~40 residue linker region is structurally flexible with multiple protease sites, consistent with previous findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C133 provide comparative context supported by appropriate citations and the current study's data. The comparison with ClpB is informative and highlights both similarities and differences in substrate recognition mechanisms. The NMR assignment completion (96% for Ig2D5) demonstrates technical rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C140",
+      "C141",
+      "C143"
+    ],
+    "result": "Structural comparison of LonA NTDs from different species: BsLon adopts a domain-swapped dimer, while MtaLon, EcLon, and MacLon show N- and C-lobes joined by a short linker. All structures exhibit conserved hydrophobic patches (hpI and hpII) with variations in spacing and organization, potentially conferring substrate selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C143 are supported by structural alignments (Figure 6\u2014figure supplement 1) and surface analysis (Figure 6B-D). The structural comparison is thorough and well-documented. The speculation about functional significance (C143) is reasonable given the conservation pattern but remains a hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Summary of NTD-substrate interaction principles: The NTD stabilizes unfolded conformations through hydrophobic interactions involving both NTD and substrate hydrophobic residues. Aromatic and hydrophobic side chains normally buried in native proteins are important recognition determinants for selective capture and degradation of damaged proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C154 represent well-supported conclusions that integrate multiple experimental observations (temperature cycling, CSP mapping, mutagenesis, degradation assays). These summary statements accurately reflect the collective evidence presented in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "MtaLonA contains no cysteine residues, therefore TCEP (used to reduce lysozyme disulfide bonds) does not affect the structure of MtaLonA NTD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 are supported by sequence analysis and provide important experimental controls for the lysozyme aggregation experiments. This validates that observed effects are due to substrate changes rather than NTD perturbation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C165"
+    ],
+    "result": "The substrate polypeptide chain is pulled inside the chamber and undergoes proteolysis by protease modules of LonA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C165 represents established knowledge about LonA mechanism supported by prior literature. This is background information rather than a novel finding of this study.",
+    "result_type": "MINOR"
+  }
+]

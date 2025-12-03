@@ -1,0 +1,447 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C50",
+      "C51",
+      "C52",
+      "C55",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "EF3 of calmodulin is specifically required for H2O2-induced potentiation of KV7.4 channels. Mutations preventing Ca2+ binding to EF3 (but not EF1, EF2, or EF4) abolish the H2O2 response, while retigabine (acting at a different site) remains effective. Ca2+ chelation with BAPTA-AM also eliminates the H2O2 effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C43-C47 provide convergent electrophysiological evidence that EF3 mutations specifically block H2O2 effects while preserving retigabine responses (C47), demonstrating specificity. The BAPTA-AM experiment (C51) and cysteine mutation control (C52) strengthen the conclusion. Sample sizes appear adequate (n=6-13) with appropriate statistical testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "EF3 is the primary EF-hand responsible for Ca2+-dependent conformational changes in the isolated CRD, as measured by FRET between helices A and B. The AB/CaM124 complex (only EF3 functional) retains ~80% of wild-type Ca2+ response, while CaM3 (EF3 disabled) shows only ~30% response. EF4 plays a secondary role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C69 provide systematic FRET data with multiple CaM mutants (n=6 each), showing clear hierarchy: EF3 > EF4 >> EF1/EF2. The use of isolated CRD removes confounding effects from other channel domains. Results are internally consistent across KV7 family members (C113-C115). However, the isolated CRD may not fully recapitulate behavior in the intact channel.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C98",
+      "C99",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C179",
+      "C183"
+    ],
+    "result": "S2S3 peptides cause a Ca2+-dependent reversal of FRET signals in the CRD, with the effect requiring functional EF3. At high peptide concentrations (\u226510 \u03bcM), FRET increases rather than decreases in the presence of Ca2+, suggesting altered AB fork orientation. Oxidized S2S3 peptides lose this effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C11 and C98-C105 demonstrate the Ca2+-dependent FRET reversal with appropriate controls (no effect without Ca2+ or with oxidized peptide). The dose-dependent nature (C98) and requirement for functional EF3 (C103-C104) strengthen the conclusion. However, the molecular interpretation of FRET changes (C99, C105) involves some speculation about structural rearrangements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C153",
+      "C154",
+      "C157",
+      "C159"
+    ],
+    "result": "S2S3 peptides interact with dansylated CaM, producing a leftward shift in emission spectrum and increased fluorescence. The effect is larger in the absence of Ca2+ (2-fold greater increase), and the shifts caused by Ca2+ and peptide are additive, indicating concurrent interaction of both with CaM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81 describe D-CaM fluorescence changes with appropriate controls and dose-response curves (EC50 values reported). The additive nature of Ca2+ and peptide effects (C79) supports concurrent binding. Results are consistent across KV7.1-7.5 peptides (C77). The interpretation that Ca2+ mitigates peptide effects (C81, C154) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C186",
+      "C188",
+      "C190"
+    ],
+    "result": "NMR chemical shift perturbation analysis reveals that S2S3 peptides interact predominantly with the C-lobe of CaM, particularly the EF3 loop (residues D94, N98, Y100, I102, A104). Changes at EF4 (I131, E139) are interpreted as allosteric effects rather than direct contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 provide NMR CSP data identifying specific residues affected by S2S3 binding. The predominant C-lobe interaction (C82, C186) is consistent across experiments. The interpretation of EF4 changes as allosteric (C89) is reasonable given lack of direct contacts in MD simulations (C88). However, the NMR experiments lack quantitative binding affinity measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C87",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C147",
+      "C148"
+    ],
+    "result": "Molecular dynamics simulations show that the S2S3 peptide interacts mainly with the EF3 loop and CaM linker region. The C-terminal helix of S2S3 is stable (\u226597.8% \u03b1-helix), while the N-terminal helix becomes unstructured. Ca2+ occupancy of EF3 reduces interaction stability and shifts peptide contacts toward the CaM linker.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87, C90-C97 describe MD simulation results with appropriate analysis of contacts and structural stability. The differential stability of S2S3 helices (C91-C92, C147-C148) and Ca2+-dependent contact shifts (C93-C96) are clearly documented. However, MD simulations have inherent limitations (initial bias noted in C187), and the 500 ns timescale may not capture all relevant dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C151"
+    ],
+    "result": "Oxidation of S2S3 peptides abolishes their ability to affect CaM-CRD interactions and FRET signals. Treatment with DTT partially reverses this effect, restoring peptide function. The CRD itself is not affected by H2O2 or DTT treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C112 demonstrate reversible oxidation effects on peptide function using multiple assays (D-CaM fluorescence, FRET). The control showing CRD is unaffected by oxidation (C109) is important. Partial rather than complete recovery with DTT (C112) is appropriately noted. Sample sizes appear adequate (n\u22656).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C100",
+      "C116",
+      "C117",
+      "C150",
+      "C152"
+    ],
+    "result": "The role of EF3 in Ca2+-dependent signaling and S2S3 peptide interactions is conserved across the KV7 family (KV7.1-7.5). All family members show similar FRET responses and peptide effects, though Ca2+ affinity differences in the presence of peptides were not statistically significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100, C116-C117 demonstrate conservation across KV7 family members with appropriate replication (n=4 experiments). The lack of significant Ca2+ affinity differences (C116) is honestly reported. This supports generalizability of the mechanism but could benefit from more extensive characterization of family-specific differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C139",
+      "C140"
+    ],
+    "result": "CaM mutants with disabled EF3 (CaM3, CaM34, CaM1234) produce a small (~10 mV) leftward shift in KV7.4 voltage dependence, consistent with removal of tonic inhibition by Ca2+-loaded EF3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53 and C139 report consistent voltage shifts across EF3 mutants with appropriate statistical analysis. The interpretation as removal of tonic inhibition (C54, C140) is reasonable but somewhat speculative. The effect size is small, and the authors appropriately note inconsistencies in the literature regarding this phenomenon (C137-C138).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Under in vitro conditions, CaM remains stably bound to the AB fork for at least 3 hours, with no exchange observed in the presence or absence of Ca2+. The C-lobe of CaM remains bound to helix A in the presence of Ca2+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 describe CaM exchange experiments with appropriate controls (n=4). The lack of exchange over 3 hours (C61) supports stable binding. The C-lobe localization (C62) is supported by prior NMR data (cited). However, in vitro conditions may not fully reflect in vivo dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C13",
+      "C39",
+      "C56",
+      "C57",
+      "C58",
+      "C118",
+      "C143",
+      "C168"
+    ],
+    "result": "The authors propose that oxidation of S2S3 cysteine residues relieves KV7 channels from constitutive inhibition imposed by Ca2+-loaded EF3 interacting with the voltage sensor. This represents a novel redox signaling mechanism mediated by CaM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C13, C39, and C118 represent the central mechanistic model, but several components remain speculative. While the requirement for EF3 and S2S3 cysteines is well-established, the proposed mechanism of voltage sensor inhibition (C56-C58, C143, C168) lacks direct experimental validation. The model is consistent with available data but alternative mechanisms are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The number of cysteine residues in S2S3 is not the sole determinant of redox sensitivity. KV7.1 (one cysteine) shows no redox response, while engineered three-cysteine KV7.1 shows weak response. KV7.4 (three cysteines) shows strong response, but one-cysteine KV7.4 retains partial response. Low channel open probability may be an additional requirement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C132 synthesize prior published work (appropriately cited) with current findings to propose additional determinants of redox sensitivity beyond cysteine number. The hypothesis about open probability (C130-C132) is reasonable but speculative, based on KV7.3 behavior. This represents thoughtful integration of literature but would benefit from direct experimental testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Background claims establishing that KV7 channels are sensitive to ROS, particularly H2O2, and that ROS-induced M-current augmentation provides neuroprotection. KV7 channels are among the most ROS-sensitive proteins, responding to H2O2 concentrations as low as 5 \u03bcM or even nM range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C14-C24 represent well-established background knowledge appropriately cited from the literature. These provide essential context but are not novel findings of this study. The citations appear appropriate and the characterizations accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Background structural and functional information about KV7 channels and calmodulin, including channel architecture, CRD structure, CaM requirement for function, and prior evidence for EF3-voltage sensor interactions from structural studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C38 provide structural and functional background with appropriate citations. These establish the foundation for the current work but represent prior knowledge rather than new findings. The structural information is accurately presented and properly attributed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C59",
+      "C106",
+      "C107"
+    ],
+    "result": "Control experiments and methodological details: retigabine acts at a site distinct from CaM binding, CaM overexpression affects channel surface expression, and S2S3 contains redox-sensitive cysteine residues that mediate increased channel open probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 and C59 provide important controls and caveats appropriately cited from literature. C106-C107 describe established properties of the S2S3 region. These are necessary methodological considerations but not primary findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C160",
+      "C161",
+      "C162",
+      "C192",
+      "C193",
+      "C194"
+    ],
+    "result": "Background on prior structural and functional studies suggesting EF3-S2S3 interactions and the prevailing view of EF-hand cooperativity within CaM lobes. Prior work on CaM interactions with other proteins through EF-hands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 and C160-C162 describe prior structural findings and prevailing models that the current work challenges. C192-C194 provide precedent for EF-hand interactions with target proteins. These are appropriately cited background claims that contextualize the novelty of the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "The authors conclude that EF3-mediated signaling is an intrinsic property of the CRD, not derived from 3D constraints of the intact channel. This challenges the prevailing view that EF-hand specificity requires the full channel architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 and C163-C165 represent a key conceptual advance, demonstrating EF3 specificity in the isolated CRD. This is supported by the FRET experiments with purified components (C40 cites prior work, C42 and C165 are conclusions from current data). However, the relationship between isolated CRD behavior and intact channel function requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Background on the kinetics and reversibility of the redox response, effects on voltage dependence, and inconsistencies in the literature regarding voltage shifts with CaM mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C138 summarize prior findings on redox response characteristics with appropriate citations. The acknowledgment of inconsistent findings in the literature (C138) is scientifically honest. These provide context but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C145",
+      "C146",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "Mechanistic proposals for how CaM-EF3 interactions regulate channel gating through effects on the voltage sensor and helix A orientation. The authors propose a dual signaling system with conditional effects depending on PIP2 occupancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C141-C142 and C145-C146 propose mechanisms for voltage sensor regulation (marked as speculation). C166-C174 describe a complex dual signaling model involving voltage sensor and gate regulation. While consistent with available data and prior structural studies (appropriately cited), these remain hypothetical mechanisms requiring direct experimental validation. The complexity of proposed interactions (C172-C174) may explain contradictory Ca2+ effects in different systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "The authors note that Ca2+ effects on M-currents vary across experimental systems (inhibition in neurons/CHO cells, potentiation in oocytes) and propose this reflects an intricate network of signaling processes involving PIP2, redox regulation, and Ca2+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C175-C176 accurately cite contradictory findings from the literature. C177-C178 propose that the current findings are compatible with prior work and highlight signaling complexity. This represents thoughtful integration of disparate findings, though the mechanistic basis for system-dependent differences remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C180",
+      "C181",
+      "C182",
+      "C155",
+      "C156",
+      "C158"
+    ],
+    "result": "Summary of key findings: S2S3 interacts with CaM in both presence and absence of Ca2+, but Ca2+ occupancy of EF3 is required for CRD reorganization and functional redox effects. The influence of S2S3 on AB helix orientation is only manifested in the presence of Ca2+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C180-C182 and C155-C156 synthesize major findings from multiple experimental approaches. C158 provides an important negative result (no conformational change without Ca2+). These summary claims are well-supported by the collective data, though some mechanistic details remain to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C184",
+      "C185",
+      "C187",
+      "C189",
+      "C191"
+    ],
+    "result": "Discussion of technical considerations and interpretations: FRET reversal may indicate tighter AB fork packing, MD simulations have initial condition bias, N-lobe sites are pre-occupied with Ca2+ under basal conditions, and CSP differences may reflect allosteric EF-hand coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C184-C185 provide reasonable structural interpretations of FRET data with appropriate caveats. C187 acknowledges MD simulation limitations. C189 and C191 offer mechanistic explanations for NMR observations. These represent thoughtful consideration of technical limitations and alternative interpretations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C195"
+    ],
+    "result": "The authors propose that Ca2+ signal transduction through direct EF-hand interactions with target proteins could be a widespread mechanism beyond KV7 channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C195 represents a speculative generalization based on the current findings and limited precedent from other systems (C192-C194). While the KV7 data support this mode of regulation, broader applicability requires validation in other protein systems. This is appropriately framed as a hypothesis.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,328 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C32",
+      "C33",
+      "C34",
+      "C36",
+      "C37"
+    ],
+    "result": "The Tara Oceans expedition collected and sequenced metagenomic samples from 113 worldwide stations across six operational size fractions (0-0.22 \u03bcm, 0.22-1.6/3 \u03bcm, 0.8-5 \u03bcm, 5-20 \u03bcm, 20-180 \u03bcm, 180-2000 \u03bcm), producing 24.2 terabases of sequence data. The study analyzed a subset of 11.9 terabases after validation, along with 738 million 18S V9 ribosomal DNA marker sequences, focusing on the sunlit epipelagic layer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C32-C34, C36-C37 collectively describe the sampling design and data generation. The manuscript provides explicit quantitative details about sampling locations, size fractions, sequencing depth, and data subsetting with appropriate references to supplementary materials and methods validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C107",
+      "C108"
+    ],
+    "result": "Cross-contamination between size fractions was quantified, showing that prokaryote-enriched fractions contained an average of 12% eukaryotic reads, while eukaryote-enriched fractions contained varying percentages of prokaryotic reads (39% in 0.8-5 \u03bcm, 23% in 5-20 \u03bcm, 3% in 20-180 \u03bcm, 5% in 180-2000 \u03bcm).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C107-C108 describe the methodology and results for estimating cross-contamination between size fractions. The manuscript explicitly provides quantitative estimates with clear methodological description, though the biological interpretation of these percentages and their impact on downstream analyses could be more thoroughly discussed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C15",
+      "C16",
+      "C40",
+      "C42",
+      "C56"
+    ],
+    "result": "Multiple independent measures of \u03b2-diversity (metagenomic dissimilarity, OTU dissimilarity, MAG-based dissimilarity, and imaging-based dissimilarity) were correlated with each other, validating the consistency of different analytical approaches. Metagenomic and OTU dissimilarities showed correlations of \u03c1 0.53-0.97 across size fractions, while metagenomic and MAG \u03b2-diversity were highly correlated (\u03c1 0.94).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C15-C16, C40, C42, C56 demonstrate methodological validation through comparison of multiple independent measures. The high correlations between different approaches (metagenomic, OTU, MAG, imaging) provide strong evidence for the robustness of the \u03b2-diversity measurements, though imaging data showed weaker correlations as expected from lower resolution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C43"
+    ],
+    "result": "Global ocean plankton communities exhibit substantial heterogeneity with average pairwise metagenomic dissimilarity >80% between stations. The oceanic ecosystem is dominated by a small number of abundant and cosmopolitan taxa, with a much larger number of less abundant taxa found at fewer sampling sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C43 describe the fundamental structure of plankton diversity. The manuscript provides explicit quantitative evidence for high dissimilarity values and references supporting figures. This characterization is consistent with known ecological patterns and is supported by multiple data types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C44"
+    ],
+    "result": "Large-scale biogeographical patterns exist within all plankton size classes, with genomic provinces mostly composed of geographically clustered stations. Smaller plankton (<20 \u03bcm) provinces tend to be limited to single ocean basins, while larger plankton (>20 \u03bcm) provinces span multiple basins. Distant stations with shared environmental conditions (e.g., upwelling zones) also grouped together.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11, C44 describe the core biogeographical findings. The manuscript provides robust evidence through hierarchical clustering, PCoA-RGB visualization, and multiple supporting figures. The size-dependent pattern is consistently observed and well-documented, representing a major finding of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C12",
+      "C21",
+      "C22",
+      "C45",
+      "C46"
+    ],
+    "result": "Environmental parameters, particularly temperature and nutrients, significantly differentiate among genomic provinces in a size-dependent manner. Small plankton provinces (<20 \u03bcm) correspond with combined nutrient and temperature variations, while larger plankton provinces (>20 \u03bcm) are more closely related to temperature alone and global-scale circulation patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C21-C22, C45-C46 describe the environmental correlates of biogeographical patterns. The manuscript provides statistical evidence (Kruskal-Wallis test, p<10\u207b\u2075) and multiple visualizations showing the size-dependent relationship between plankton biogeography and environmental parameters. This represents a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C18",
+      "C50",
+      "C51"
+    ],
+    "result": "Community composition differences between stations are significantly correlated with ocean current travel time (Tmin), with maximal correlations (\u03c1 0.45-0.71) for station pairs separated by Tmin <~1.5 years. This timescale corresponds to the average time to travel across a basin or gyre. Beyond ~1.5 years, correlations decrease. No similar unimodal pattern was found for geographic distance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14, C18, C50-C51 describe the relationship between plankton community turnover and ocean transport. The manuscript provides strong statistical evidence with specific correlation values and demonstrates that travel time (not geographic distance) is the relevant metric. The ~1.5 year timescale is a novel and well-supported finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C17",
+      "C19",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Environmental conditions and plankton community composition covary along ocean current systems for Tmin <~1.5 years. Beyond ~1.5 years, the correlation with temperature increases while correlation with nutrients decreases, though both remain strong. Temperature correlations remain strong at longer transit times due to Earth-scale processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C19, C60-C62 describe the concurrent changes in environment and community composition. The manuscript provides explicit evidence for covariation and the divergent behavior of temperature vs. nutrient correlations at longer timescales, with appropriate mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C20",
+      "C23",
+      "C24"
+    ],
+    "result": "Smaller plankton size classes (<20 \u03bcm) exhibit shorter metagenomic turnover times (~1 year) compared to larger plankton (~2 years) in the North Atlantic current system. For smaller plankton, correlations with nutrient differences are strongest at Tmin up to ~1.5 years, while for larger plankton, correlations with temperature are strongest for Tmin beyond ~1.5 years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C23-C24 describe size-dependent differences in community turnover and environmental correlations. The manuscript provides exponential fits for turnover times and explicit comparisons of correlation patterns. This represents a key mechanistic finding explaining size-dependent biogeography.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Ocean circulation modeling using MITgcm Darwin simulation (18 km resolution, 6-year run) was used to compute minimum travel times (Tmin) between station pairs. The simulation generated 50.8 million trajectories representing dominant transport paths. Many genomic provinces were spatially consistent with ocean basin-scale circulation patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49, C89-C95 describe the ocean circulation modeling approach and its validation. The manuscript provides detailed methodological information about the simulation parameters, trajectory construction, and quality control measures. The consistency between modeled transport and observed biogeography provides strong support for the role of currents.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Size-dependent biogeographical patterns reflect different ecological constraints and life history strategies. Larger plankton (dominated by multicellular eukaryotes with longer life cycles) are less affected by nutrient limitation and depend more on temperature gradients, potentially linked to metabolic rate scaling. Smaller plankton with shorter life cycles can rapidly adapt to restricted ecological niches. This indicates significant size-based decoupling within planktonic food webs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C68-C75 provide mechanistic interpretation of size-dependent patterns. The manuscript integrates observations with ecological theory and provides appropriate citations. While some aspects are interpretive, the overall framework is well-supported by the data and consistent with established ecological principles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Correlations with ocean transport time were far weaker for zooplankton imaging data than for metagenomic data, interpreted as resulting from the significantly lower resolution of imaging data compared to metagenomic data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 compare imaging and metagenomic approaches. The manuscript provides explicit comparison showing weaker correlations for imaging data and offers a reasonable interpretation based on methodological differences in resolution. This validates the use of high-resolution metagenomic data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C64"
+    ],
+    "result": "The correlation between transport times and metagenomic dissimilarity despite a 3-year pan-season sampling campaign (with genomic provinces spanning 4.7\u00b12.8 months and 2.7\u00b11.2 seasons) suggests that large-scale seascape impacts create biogeographical structure resilient to seasonal variations. The large separation among stations allowed detection of large-scale circulation effects superimposed on smaller-scale effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59, C64 address the robustness of findings to temporal variability. The manuscript provides quantitative data on temporal sampling distribution and cites supporting literature. The interpretation that large-scale patterns supersede seasonal variation is well-supported by the data and sampling design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The study proposes a mechanistic hypothesis for genomic province formation: within basins, periodic recirculation creates smooth variations in community structure and nutrients, leading to stable patterns. Among basins, environmental heterogeneity across circulation patterns disrupts equilibrium, creating distinguishable ecological continua. Distant stations with similar oceanographic phenomena (e.g., upwelling) produce similar conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63, C65-C67 present mechanistic hypotheses for observed patterns. While the manuscript explicitly labels these as hypotheses and provides supporting observations, direct experimental validation of the proposed mechanisms is not provided. The hypotheses are plausible and consistent with observations but remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C81",
+      "C82"
+    ],
+    "result": "The integration of seascape processes over time and space produces quasi-stationary biological partitioning that supersedes short-term variability. The study hypothesizes that ocean currents act as a conveyor for environmental and biological effects, with direct current effects (e.g., turbulent diffusivity) being secondary. The combination of ocean circulation modeling with metagenomic DNA provides sufficient resolution to assess transport's role in community turnover.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79, C81-C82 present the study's main conceptual framework and conclusions. While some aspects are hypothetical (C77-C79), the overall framework is well-supported by the comprehensive data integration. The manuscript appropriately distinguishes between demonstrated patterns and mechanistic hypotheses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C41",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Metagenomic dissimilarity was calculated using k-mer based methods (31 bp k-mers from 100 million reads per sample) to measure differences in genomic identity at species/subspecies resolution. This approach likely overestimates \u03b2-diversity but provides consistent measurements across size fractions. OTU dissimilarity incorporates more rare taxa but at lower taxonomic resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39, C41, C85-C87 describe the computational methodology for measuring community dissimilarity. The manuscript provides detailed methodological information and acknowledges limitations (overestimation of \u03b2-diversity). The validation through comparison with OTU data supports the robustness of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C88",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Statistical analyses used UPGMA clustering (optimal for biogeography), restricted to surface samples from open ocean locations, with Spearman correlations calculated via Mantel tests (1000 permutations, p<0.01). Genomic e-folding times were calculated from exponential fits for the North Atlantic system (winter sampling only). Some size fractions lacked sufficient data for certain analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88, C96-C101 describe statistical methods and data filtering. The manuscript provides appropriate justification for methodological choices with supporting citations, clearly states inclusion/exclusion criteria, and acknowledges data limitations. The methods are appropriate for the research questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C102",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Imaging data were collected using WP2 nets (200 \u03bcm mesh, 0-100 m vertical tows) and analyzed using ZooScan with taxonomic classification via Ecotaxa. Analysis was restricted to day-collected samples to match genomic data collection timing. MAG data were obtained from published sources and used to calculate Bray-Curtis dissimilarities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102, C104-C106 describe complementary data collection and analysis methods. The manuscript provides clear methodological descriptions with appropriate citations and explains the rationale for restricting analyses to day samples. The integration of multiple data types strengthens the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The study addresses limitations of previous plankton biogeography research by using DNA-based methods that can be standardized across all plankton sizes. Plankton are constantly transported by ocean currents (advection and mixing) and influenced by physicochemical and biological processes while also impacting seawater chemistry. Previous studies were geographically or taxonomically restricted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C31 provide context and rationale for the study. The manuscript appropriately cites previous work, clearly articulates the advantages of the DNA-based approach, and accurately describes the complexity of plankton-seascape interactions. This establishes the novelty and significance of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C35",
+      "C80",
+      "C83",
+      "C84"
+    ],
+    "result": "The study was limited to the sunlit epipelagic layer; relationships may differ at greater depths. The open ocean planktonic ecosystem is fundamentally different from other planetary ecosystems. The study provides a basis to understand and potentially predict ocean ecosystem structuring under rapid environmental and current system changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C80, C83-C84 acknowledge study limitations and discuss broader implications. The manuscript appropriately recognizes the depth limitation and provides appropriate citations for the uniqueness of ocean ecosystems. The predictive potential is presented cautiously as a future application rather than a demonstrated capability.",
+    "result_type": "MINOR"
+  }
+]

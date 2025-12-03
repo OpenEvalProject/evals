@@ -1,0 +1,212 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Participants successfully learned auditory-visual associations and visual-outcome pairings, and demonstrated inferential behavior during the inference test. Performance on the inference test was predicted by memory for auditory-visual associations, with participants correctly inferring outcomes when they could recall the intermediary visual cue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C50 describe the behavioral task design and results showing successful learning and inference. The statistical analyses (C42-C44, C46-C49) demonstrate significant effects with appropriate tests (ANOVA, t-tests, correlations) and adequate sample sizes (n=19-22). The behavioral paradigm is well-controlled with appropriate chance levels and post-hoc filtering.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "During memory recall in the inference test, BOLD signal in both visual cortex and hippocampus was significantly elevated for 'remembered' versus 'forgotten' trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 report significant fMRI findings with whole-volume FWE correction (p<0.001 for visual cortex, p=0.017 for hippocampus). The analysis appropriately contrasts remembered vs forgotten trials and uses proper multiple comparison correction. However, the authors acknowledge compromised fMRI quality in the combined sequence (Figure 3\u2014figure supplement 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C101"
+    ],
+    "result": "During the question period of memory recall, the glu/GABA ratio transiently increased, driven primarily by a decrease in GABA. This effect was specific to the recall period and not observed during auditory cue presentation or inter-trial intervals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 and C101 report the primary fMRS finding with appropriate statistical tests (t-tests, permutation testing, Monte Carlo simulations). The temporal specificity (C54) strengthens the interpretation. The use of permutation testing (C55) and Monte Carlo simulations (C56) to control for potential biases is rigorous. However, the interpretation is complicated by the indirect relationship between MRS measures and neurotransmitter activity (acknowledged in C73-C87).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Hippocampal BOLD activity during memory recall predicted the increase in glu/GABA ratio in visual cortex, with this relationship being anatomically selective to the hippocampus across the imaged brain volume.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 demonstrate a correlation between hippocampal BOLD and V1 glu/GABA ratio with appropriate statistics (Spearman correlations, whole-brain FWE-corrected analysis). The anatomical specificity (C59, p=0.005 FWE-corrected) strengthens the interpretation. However, correlation does not establish causation, and the mechanism remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C32",
+      "C33",
+      "C34",
+      "C60",
+      "C118"
+    ],
+    "result": "The hippocampus gates memory recall by transiently perturbing neocortical excitatory-inhibitory balance through a disinhibitory mechanism, releasing memories from inhibitory control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4-C6, C32-C34, C60, and C118 represent the main interpretive conclusion. While the data show correlations between hippocampal activity and glu/GABA changes (supported by C53-C59), the mechanistic interpretation as 'disinhibition' is inferential. The study does not directly test circuit-level mechanisms, and the relationship between MRS measures and physiological EI balance is acknowledged as complex (C73-C87). The conclusion requires validation through additional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C105",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "A combined fMRI-fMRS sequence was successfully implemented to simultaneously measure hippocampal BOLD activity and time-resolved neurometabolite changes in visual cortex. A non-edited MRS sequence (sLASER) with unconstrained GABA fitting was used to detect dynamic changes in GABA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 and C105-C112 describe the methodological approach. The combined sequence is validated by prior work (C24 cites Ip et al. 2019, 2017). Monte Carlo simulations (C109) support the ability to detect GABA changes with the non-edited approach. The methodological choice to disable default GABA constraints (C111) is justified but results in higher absolute GABA values (C112), which is appropriately acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C87"
+    ],
+    "result": "The relationship between MRS-derived measures of glutamate/GABA and physiological excitatory-inhibitory balance is complex and indirect. MRS cannot dissociate neurotransmitter from metabolic pools, detects primarily cytoplasmic metabolites, and operates on a slower timescale than synaptic neurotransmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28 and C73-C82, C87 acknowledge important limitations of the MRS technique, supported by appropriate citations. These limitations are critical for interpreting the main findings and are appropriately discussed. The authors acknowledge that validation of event-related fMRS changes in unconstrained metabolite pools remains to be established (C87).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C106",
+      "C107",
+      "C113",
+      "C114"
+    ],
+    "result": "Detecting dynamic changes in GABA using MRS is challenging due to low concentration and spectral overlap. The non-edited sLASER sequence used here provides comparable data quality to other 7T MRS studies and avoids disadvantages of spectral editing for event-related designs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C107 and C113-C114 justify the methodological choices with appropriate citations. The comparison to other 7T studies (C113-C114) and the trade-offs between edited and non-edited sequences (C106-C107) are well-documented. The data quality metrics (Figure 4\u2014figure supplement 3) support the adequacy of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The inference task engages hippocampal-dependent associative memory recall, providing an appropriate paradigm to investigate hippocampal-neocortical interactions during memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 establish the rationale for using the inference task, supported by citations to prior work in humans and rodents (C35-C36). The hippocampal-dependence is established by lesion and optogenetic studies in rodents (C36), providing strong justification for the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C99",
+      "C100"
+    ],
+    "result": "Event-related fMRS with temporal resolution of ~3 seconds can detect task-relevant dynamic changes in neurometabolites, overcoming limitations of traditional block-design MRS that obscures temporal dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 and C99-C100 describe advantages of event-related fMRS over block designs, supported by citations and the authors' own data (C93, C95, C99). The temporal resolution achieved (~3s) is demonstrated to be sufficient for relating metabolite changes to memory recall (C99). This represents a methodological advance in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C17",
+      "C22",
+      "C23",
+      "C67",
+      "C68",
+      "C117"
+    ],
+    "result": "The hippocampus may modulate neocortical computations by transiently disrupting excitatory-inhibitory balance during memory recall, potentially through disinhibitory circuits analogous to those observed in rodent studies of attention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C17, C22-C23, C67-C68, and C117 represent speculative hypotheses and interpretations. While the analogy to rodent disinhibitory circuits (C65-C66) is reasonable, these mechanisms have not been directly tested in the current study. The proposed mechanism remains a hypothesis requiring validation through additional experiments, particularly at the circuit level.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Twenty-two participants were recruited with appropriate ethical approval, with two excluded due to technical issues. No significant effects of sex were observed on behavioral or MRS measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C122 describe participant recruitment and exclusion criteria. The sample size (n=19-22 depending on analysis) is adequate for the statistical tests performed. Ethical approval is documented (C120), and the lack of sex effects (C122) is appropriately reported.",
+    "result_type": "MINOR"
+  }
+]

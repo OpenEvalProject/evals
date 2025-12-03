@@ -1,0 +1,1857 @@
+{
+  "submission": {
+    "id": "cb2e57be-1aa3-4336-a80c-9c63f6ace972",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T07:00:43.175302Z",
+    "updated_at": "2025-12-03T07:00:43.175302Z"
+  },
+  "content": [
+    {
+      "id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "submission_id": "cb2e57be-1aa3-4336-a80c-9c63f6ace972",
+      "content_type": "manuscript",
+      "content_text": "# The roles of history, chance, and natural selection in the evolution of antibiotic resistance\n\n## Authors\n\n- Alfonso Santos-Lopez<sup>1</sup> ([ORCID: 0000-0002-9163-9947](https://orcid.org/0000-0002-9163-9947)) \u2020\n- Christopher W Marshall<sup>1</sup> ([ORCID: 0000-0001-6669-3231](https://orcid.org/0000-0001-6669-3231)) \u2020\n- Allison L Haas<sup>1</sup> ([ORCID: 0000-0002-2154-4328](https://orcid.org/0000-0002-2154-4328))\n- Caroline Turner<sup>1</sup> ([ORCID: 0000-0003-1347-518X](https://orcid.org/0000-0003-1347-518X))\n- Javier Rasero<sup>2</sup> ([ORCID: 0000-0003-1661-2856](https://orcid.org/0000-0003-1661-2856))\n- Vaughn S Cooper<sup>1</sup> ([ORCID: 0000-0001-7726-0765](https://orcid.org/0000-0001-7726-0765)) \u2020\n\n### Affiliations\n\n1. Department of Microbiology and Molecular Genetics, School of Medicine, University of Pittsburgh Pittsburgh United States\n2. Department of Psychology, Carnegie Mellon University Pittsburgh United States\n3. Center for Evolutionary Biology and Medicine, University of Pittsburgh Pittsburgh United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nHistory, chance, and selection are the fundamental factors that drive and constrain evolution. We designed evolution experiments to disentangle and quantify effects of these forces on the evolution of antibiotic resistance. Previously, we showed that selection of the pathogen Acinetobacter baumannii in both structured and unstructured environments containing the antibiotic ciprofloxacin produced distinct genotypes and phenotypes, with lower resistance in biofilms as well as collateral sensitivity to \u03b2-lactam drugs (Santos-Lopez et al., 2019). Here we study how this prior history influences subsequent evolution in new \u03b2-lactam antibiotics. Selection was imposed by increasing concentrations of ceftazidime and imipenem and chance differences arose as random mutations among replicate populations. The effects of history were reduced by increasingly strong selection in new drugs, but not erased, at times revealing important contingencies. A history of selection in structured environments constrained resistance to new drugs and led to frequent loss of resistance to the initial drug by genetic reversions and not compensatory mutations. This research demonstrates that despite strong selective pressures of antibiotics leading to genetic parallelism, history can etch potential vulnerabilities to orthogonal drugs.\n\n## Introduction\n\nEvolution can be propelled by natural selection, it can wander with the chance effects of mutation and genetic drift, and it can be constrained by history, whereby past events limit or even potentiate the future (Travisano et al., 1995; Keller and Taylor, 2008; Meyer et al., 2012; Kryazhimskiy et al., 2014; Rebolleda-Gomez and Travisano, 2019). The relative roles of these forces has been debated, with the constraints of history the most contentious (Blount et al., 2018). A wealth of recent research has shown that evolution can be surprisingly repeatable when selection is strong even among distantly related lineages or in different environments (Lieberman et al., 2011; Lassig et al., 2017; Turner et al., 2018), but disparate outcomes become more likely as the footprint of history (i.e. differences in genetic background caused by chance and selection in different environments) increases (Blount et al., 2018; Benton et al., 2021; Mahrt et al., 2021) (For definitions of the forces and their role in the evolution of antibiotic resistance, see Box 1). In the absence of chance and history, selection will cause the most fit genotype to fix in the particular environment, and provided this variant is available, evolution will be perfectly predictable (Bailey et al., 2015; Lassig et al., 2017). However, historical and stochastic processes inevitably produce some degree of contingency, making evolution less predictable, reflecting the importance of evolutionary history (Blount et al., 2008; Meyer et al., 2012; Baji\u0107 et al., 2018; Blount et al., 2018; Card et al., 2019; Galardini et al., 2019). The evolution of a new trait, whether by horizontally acquired genes or de novo mutation, is a stochastic process that depends on available genetic variation capable of producing a new trait (Khan et al., 2011; Salverda et al., 2011). As any other evolved trait, antimicrobial resistance (AMR) is subjected to these three evolutionary forces (Box 1).\n\nAntibiotics can impose strong selection pressure on microbial populations, leading to highly repeatable evolutionary outcomes (Vogwill et al., 2014; Luka\u010di\u0161inov\u00e1 et al., 2020; Scribner et al., 2020), with the level of parallelism predicted to depend on the strength of antibiotic pressure (Wistrand-Yuen et al., 2018). However, evolutionary history can also alter the distribution of fitness effects of AMR mutations, their mechanisms of action, or their degree of conferred resistance (Eyre-Walker and Keightley, 2007; Hall and MacLean, 2011; Yen and Papin, 2017; Barbosa et al., 2019). The phenotypic effect of any given mutation acquired is contingent on prior events and will determine the potential of further adaptations to a given environment (Travisano et al., 1995). For example, the effects of a given mutation can vary in different genetic backgrounds (epistasis) or in different environments (pleiotropy) and those mutations can constrain further adaptations (Trindade et al., 2009; Hall and MacLean, 2011; Yen and Papin, 2017; Gifford et al., 2018; Santos-Lopez et al., 2019). Additionally, chance differences in the mutations acquired, their order of occurrence, or compensatory mutations that decrease resistance costs can affect the eventual level of resistance and its evolutionary success in the population (Salverda et al., 2011; Wistrand-Yuen et al., 2018).\n\nThe study of mutational pathways to AMR has become accessible by applying population-wide whole-genome sequencing (WGS) to experimentally evolved populations (for a review, see Baquero, 2021). Growth in antibiotics will select for resistant phenotypes whose genotypes can be determined by WGS, and their frequencies and trajectories indicate relative genotype fitness. When large populations, 1 \u00d7 107 CFU/mL or higher, of bacteria are propagated, the probability that every base pair is mutated at least once approaches 99% after ~80 generations (Lynch et al., 2016; Santos-Lopez et al., 2019). Yet chance still remains important because most mutations are initially rare and subject to genetic drift until they reach a critical frequency of establishment, when selection dominates their fate (Heffernan and Wahl, 2002; Good et al., 2017; Cooper, 2018). Furthermore, many mutations arise concurrently and those with higher fitness tend to exclude other alleles, known as clonal interference. Thus, the success of new mutations will be determined by their survival of drift, the chance that they co-occur with other fit mutants, and by their relative fitness, which is shaped by selection and history (Nguyen Ba et al., 2019).\n\nThe contributions of history, chance, and selection to evolution can be measured using an elegant experimental design (depicted in Figure 1A, Box 1, and described in detail in the Methods) introduced by Travisano et al., 1995, in which replicate populations are propagated from multiple ancestral strains with different evolutionary histories. This experimental design has been used to quantify effects of these forces and to predict evolution in prokaryotes, eukaryotes and even digital organisms (Travisano et al., 1995; Flores-Moya et al., 2008; Keller and Taylor, 2008; Meyer et al., 2012; Kryazhimskiy et al., 2014; Matos et al., 2015; Rebolleda-Gomez and Travisano, 2019; Bundy et al., 2021), but has not been applied to calculate effects of these forces in the evolution of AMR, one of the most critical threats in modern medicine. Here we use this framework to measure the relative roles of history, chance, and selection in the evolution of AMR phenotypes and genotypes in the ESKAPE (Enterococcus faecium, Staphylococcus aureus, Klebsiella pneumoniae, Acinetobacter baumannii, Pseudomonas aeruginosa, and Enterobacter spp.) pathogen Acinetobacter baumannii, a leading agent of multidrug-resistant infections worldwide and named as an urgent threat by the CDC (CDC, 2019). Quantifying contributions of these evolutionary forces is essential if we are ever to predict the evolution of drug resistance of pathogens, including HIV and malaria, and of various cancers (Hughes and Andersson, 2015; Verlinden et al., 2016; MacLean and San Millan, 2019; Pokhriyal et al., 2019; Gerstung et al., 2020).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/70676/elife-70676-fig1-v2.jpg)\n\n**Figure 1.:** (A) Potential outcomes of replicate evolved populations estimated by the resistance level before and after the antibiotic treatment. Grey and black symbols denote starting clones with different resistance levels. A more detailed description of this design is in the Methods section, modified from Travisano et al., 1995. The asterisk denotes the case in which chance and selection both erase historical effects. (B) Six different clones with distinct genotypes and CIP susceptibility were used to found new replicate populations that evolved in increasing CAZ or IMI for 12 days (Santos-Lopez et al., 2019). (C) MIC of the six ancestors in CIP, CAZ and IMI (\u00b1 SEM). (D) Ancestral genotypes prior to the selection phase.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70676/elife-70676-fig1-figsupp1-v2.jpg)\n\n## Results\n\nPreviously (Santos-Lopez et al., 2019), we propagated a single clone of A. baumannii (strain 17978-mff) for 12 days or 80 generations in increasing concentrations of the fluoroquinolone antibiotic ciprofloxacin (CIP). In that experiment, which established the history for the present study and is analogous to prior exposure in a clinical setting, three replicate populations each were propagated in biofilm conditions or planktonic conditions (hereafter B1\u2013B3 and P1\u2013P3 respectively, Figure 1B). These environments selected for different genetic pathways to CIP resistance and replicate populations also diverged by chance, which produced the genetic and phenotypic histories of the ancestral strains in the current study (Figure 1C,D, Figure 1\u2014source data 1). Key historical differences include reduced ceftazidime (CAZ) resistance in B populations but increased CAZ resistance in P populations (Figure 1C Santos-Lopez et al., 2019).\n\nIn the current study, the \u2018selection\u2019 phase (Figure 1B) involved experimental evolution in increasing concentrations of the cephalosporin CAZ or the carbapenem imipenem (IMI) for 12 days via serial dilution of planktonic cultures. CAZ or IMI concentrations were doubled every three days (ca. 20 generations), starting with 0.5\u00d7 minimum inhibitory concentration (MIC; Figure 1\u2014source data 1) for each clone and finishing with 4\u00d7 MIC, where maximum killing has been observed with \u03b2-lactams antibiotics (Nightingale, 1980). Each population was therefore exposed to the same selective pressure during evolutionary rescue. In this study design (Figure 1A, Supplementary Text), the extent of increased resistance represents selection, effects of chance are the phenotypic variation among triplicate populations propagated from the same ancestor, and differences between populations derived from different ancestors quantifies effects of history (Figure 1B).\n\nWhile the scale of this experiment could seem small, it is well suited for studying the evolution of resistance as 160 generations correspond to ca. 100 days, 15 days, or 170 days of growth in patients of Escherichia coli, P. aeruginosa, or Salmonella enterica, respectively (Gibson et al., 2018). In addition, the genetic contributions of chance, history, and selection were determined by sequencing whole populations to a mean site coverage of 358 (S.D. \u00b1 106) bases at the end of the experiment.\n\n### Contributions of evolutionary forces under antibiotic treatment\n\nAntibiotic treatments are designed to achieve sufficient concentration in vivo to clear the infection and prevent the development of new resistant mutants. However, for several reasons including poor drug pharmacokinetics, poor drug distribution, or poor patient compliance, antibiotic concentrations are often below the MIC in body compartments (Andersson and Hughes, 2014). It is expected that as drug concentrations increase, the strength of selection relative to other forces also increases. We therefore analyzed resistance phenotypes of the whole population after 3 days of evolution under subinhibitory drug concentration and after 12 days of evolution in increasing drug levels that concluded at four times the MIC. We analyzed population-wide resistance instead of measures of single isolates because heterogeneity can determine the success or failure of an antibiotic treatment in clinical scenarios (S\u00e1nchez-Romero and Casades\u00fas, 2014; Dewachter et al., 2019).\n\nWe estimated the role of each force as described by Travisano et al., 1995. Briefly, we estimated the effect of history as the square root of the variance among all propagated populations; the effect of chance as the square root of the variance between the replicates propagated from the same ancestor, and the effect of selection was calculated as the difference in grand mean of the propagated replicates and their ancestors (see Materials and methods for details of this calculations). We estimated effects of these forces during propagation in two antibiotics, CAZ and IMI, and present results of each treatment sequentially. First, after 3 days of growth in subinhibitory concentrations of CAZ, history explained the largest variation in resistance phenotypes (61.7% of variation, p<0.05), with 30.7% for selection and only 7.6% chance (Figure 2A,E, Materials and methods). As expected, CAZ resistance increased overall, but some individual populations did not differ significantly from their ancestor (populations P2, P3, Figure 2A). However, by day 12, following propagation in 4\u00d7 MIC CAZ, the amount of variation explained by selection increased to 47.8% and effects of history dropped to 31.4% (Figure 2B,E), indicating that strong selective pressures can diminish or erase the effects of history.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/70676/elife-70676-fig2-v2.jpg)\n\n**Figure 2.:** (A, C) and after 12 days of increasing concentrations (B, D). Empty and filled symbols (3 days, left; and 12 days, right) represent CAZ or IMI MIC after 3 and 12 days of evolution. Blue symbols evolved from B ancestors were isolated from prior biofilm selection; red squares were evolved from P ancestors with a prior history in planktonic culture. Some symbols representing identical data points are jittered to be visible. MICs were measured in triplicate and shown\u00b1 SEM. All populations increased CAZ resistance at day 3 (nested one-way ANOVA, Tukey\u2019s multiple comparison tests MIC day 0 vs. MIC day 3, p=0.0080 q = 4.428, df = 51) and at the end of the experiment (nested one-way ANOVA Tukey\u2019s multiple comparison tests MIC 0 vs. MIC day 12, p\u22640.0001, q = 11.12, df = 51). All populations increased IMI resistance at day 12 but not at early timepoints (day 3) (nested one-way ANOVA Tukey\u2019s multiple comparison tests MIC at day 0 vs. MIC at day 12, p<0.0001, q = 9.519, df = 51; MIC at day 0 vs. MIC at day 3, p=0.3524, q = 1.969, df = 51). (E) Absolute and relative contributions of each evolutionary force. Error bars indicate 95% confidence intervals. Asterisks denote p<0.05.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70676/elife-70676-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** There are three possible outcomes by correlating the original MIC and the fold dilution change: (1) a negative correlation, in which the populations with lower initial MICs increased their resistance level more than populations with higher MICs, which implies that the selection erased the previous effects of history; (2) a positive correlation indicates that initial differences in MIC were magnified by selection; and (3) a lack of correlation indicates that the effect of history did not change before and after selection. Evolving in presence of CAZ, no correlation was found after three days of antibiotic treatment (Spearman r = \u20130.08, p=0.919), but the increases in resistance levels and time were negatively correlated with the starting values at day 12 (Spearman r = \u20130.84, p=0.044) (Figure 2B and ). Evolving in the presence of IMI, increases in resistance levels and time were negatively correlated at day 3 (Spearman r = \u20130.9258, p=0.033) but not at day 12 (Spearman r = \u20130.6262, p=0.1833).\n\nPrevious studies have shown that other evolved traits such as fitness itself show declining adaptability: less fit populations adapt faster and to a greater extent than more fit populations when propagated under the same environmental conditions (Wiser et al., 2013; Kryazhimskiy et al., 2014), which would lead to reduced variance in fitness traits among populations. This homogeneity indeed emerged as prolonged CAZ selection overcame historical variation. Populations with lower initial MICs, which by necessity were exposed to lower concentrations of CAZ, increased their resistance level more than populations with higher MICs (Figure 2\u2014figure supplement 1), implying weak selection for further resistance in populations exceeding the MIC threshold and hence declining rates of resistance gains. This finding also suggests that the level of evolved resistance converges and may be predictable (Meyer et al., 2012; Kryazhimskiy et al., 2014), but effects of genetic background remain (Figure 2). Strong antibiotic selection has the potential to overcome but do not entirely eliminate historical differences in resistance.\n\n### Evolutionary trade-offs arise from past antibiotic selection\n\nEvolutionary trade-offs occur when changes in a given gene or trait increase fitness in one environment but reduce fitness in another. For example, a history of adaptation to one antibiotic could alter resistance and subsequent evolution in the presence of a subsequent antibiotic. The phenomena of cross-resistance and collateral sensitivity are specific examples of pleiotropy, where the mechanism of resistance to the initial drug either directly increases or decreases resistance to other drugs, respectively (Pal et al., 2015). Additionally, the resistance mechanism could interact with other genes or alleles in the genome, a form of epistasis, and also promote or impede resistance evolution. We hypothesized that resistance mechanisms arising during selection in CAZ would alter resistance to other antibiotics both by genotype-independent (pleiotropy) and genotype-dependent (epistasis) mechanisms. Recall that during the history phase of the experiment (Santos-Lopez et al., 2019), populations propagated in increasing concentrations of CIP became from 4- to 200-fold more resistant to CIP (Figure 1C, Santos-Lopez et al., 2019). Some of these strains also became more resistant to CAZ (populations P1\u2013P3), while others became more susceptible (populations B1 and B3, for more details, see Santos-Lopez et al., 2019), and given that these populations originated from the same ancestor, this variation in collateral resistance phenotypes is best explained by pleiotropy. In the current study, after 12 days evolving in the presence of CAZ, the grand mean of CIP resistance levels did not change, so history was the dominant force shaping the MIC to CIP (Figure 3A). However, if we analyze the P and the B populations independently, B populations became significantly more sensitive to CIP but the P populations did not (Figure 3A), showing that the emergence of collateral sensitivity may depend on prior selection in different environments. These results also indicate that CAZ resistance mechanisms interact with CIP resistance in potentially useful ways.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/70676/elife-70676-fig3-v2.jpg)\n\n**Figure 3.:** Panel (A) shows CIP resistance and (B) shows IMI resistance following 12 days of CAZ treatment. Panel (C) shows CIP resistance and (D) shows CAZ resistance following 12 days of IMI treatment. Blue symbols: populations evolved from B (biofilm-evolved) ancestors; red squares: populations evolved from P ancestors (planktonic-evolved). Some symbols representing identical data points are jittered to be visible. MICs were measured in triplicate and shown \u00b1 SEM. (E) Contributions of each evolutionary force. Error bars indicate 95% confidence intervals. Asterisks denote p<0.05.\n\nWe also tested if evolving in the presence of CAZ-altered resistance to the carbapenem antibiotic IMI (Figure 3B). As CAZ and IMI are both \u03b2-lactam antibiotics and mutations in efflux pumps can alter resistance to both (Lee et al., 2017), we predicted selection in CAZ would also increase IMI resistance and further, that the contributions of each evolutionary force to IMI resistance would follow that measured for CAZ (Figure 2B). As expected, all 12 populations evolved in CAZ became more resistant to IMI (two-tailed nested t-test p<0.0001, t = 7.507, df = 34), and selection was the most important force (p<0.05), explaining almost 44.3% of the variation, while history contributed 23.0% and chance 32.2% (Figure 3E).\n\n### Replaying the antibiotic treatment using a different antibiotic\n\nWe learned that the evolution of resistance in A. baumannii to one drug, CAZ, is substantially influenced by prior history of selection in another drug, CIP, as well as the prior growth environment, planktonic (P) or biofilm (B). Namely, B-derived populations evolved CAZ resistance at the expense of their prior CIP resistance, reversing this tradeoff. To test whether these results are repeatable and not limited to CAZ and CIP, we replayed the \u2018selection phase\u2019 with the same genotypes using the carbapenem IMI (Figures 1 and 2 Santos-Lopez et al., 2019). Here, no overall change in resistance occurred following 3 days in subinhibitory concentrations of IMI (Figure 2C) but did increase by experiment\u2019s end at 4\u00d7 MIC (Figure 2D). After the subinhibitory treatment, the more sensitive populations experienced greater gains in IMI resistance than the less sensitive populations, erasing some effects of history (Figure 2C and Figure 2\u2014figure supplement 1). In total, selection again predominated (p<0.05) and explained 43.1% of the phenotypic variation in this experiment, while history explained 33.2% (Figure 2B, D and F).\n\nAs predicted by the CAZ experiment, evolution in IMI did not affect CIP resistance on average and history explained 75% of the variation in MIC (Figure 3F), but again produced collateral sensitivity in two B populations (Figure 3C). This result demonstrates that mechanisms of IMI resistance also interact with historical resistance to CIP and produce tradeoffs. The biggest difference between the CAZ and IMI experiments is an asymmetry in cross-resistance between these drugs. Selection in CAZ increased IMI resistance (Figure 3B), but not vice versa (Figure 3D). These divergent cross-resistance networks result from the particular mutations that were selected in both experiments, which are explained below.\n\n### Phenotypic divergence despite genetic parallelism\n\nWhen multiple lineages evolve independently in the same environment, phenotypic convergence is usually observed, but the genotypes may be more variable (Meyer et al., 2012; Bedhomme et al., 2013; Kryazhimskiy et al., 2014). In our experiment, large populations were exposed to strong antibiotic pressure, so we predicted convergence at the genetic level owing to few solutions that improve both fitness and resistance (Lenski, 2017; Cooper, 2018). We conducted whole-population genomic sequencing of all populations at the end of the experiment to identify all contending mutations above a detection threshold of 5% and analyzed the genetic contributions of history, chance, and selection using Manhattan distance estimators as a metric for the genotypic distance between populations (Figure 4). We calculated the genotypic role of chance as the mean distance between evolved populations sharing the same ancestor; history as the mean distance between evolved populations with different ancestors, after subtracting the effect of chance; and selection as the mean distance between ancestral and evolved populations, after subtracting the effects of chance and history. Using these metrics, we infer that evolution in CAZ at the genotypic level was shaped more by selection than history, but the opposite was seen in IMI, and effects of chance were similar in both experiments (Figure 4).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/70676/elife-70676-fig4-v2.jpg)\n\n**Figure 4.:** Each column represents a population propagated in CAZ (A) or in IMI (B). Grey shading indicates the mutated genes present in the ancestral clones derived from the \u201chistory phase\u201d. Blue and red denote mutated genes after the \u2018selection phase\u2019 in CAZ or IMI and if those lines experienced prior planktonic selection (red) or biofilm growth (blue). Only genes in which mutations reached 75% or greater frequency or that became mutated in more than one population are shown here. A full report of all mutations is in Figure 4\u2014source data 1. The relative contributions of history, chance, and selection to these genetic changes are shown in the insets. Below: log2 changes in evolved resistance for each population shown as a heatmap summarizing the data from Figures 2 and 3.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70676/elife-70676-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Each column represents a population propagated in CAZ. Gray shading indicates the mutated genes present in the ancestral clones derived from the \u2019history phase\u2018. Red denote mutated genes after the \u2019selection phase\u2019 in CAZ. Only genes in which mutations reached 75% or greater frequency or that became mutated in more than one population are shown here.\n\nClinical CAZ-resistant A. baumannii isolates commonly acquire mutations that increase the activity of Acinetobacter drug efflux (ade) pumps (Lee et al., 2017). In the history phase of CIP selection, biofilm lines (Figure 1B) selected mutations in adeL, the regulator of the adeFGH pump, which produce collateral sensitivity to CAZ and other \u03b2-lactams (Figure 1D). In contrast, P lines became cross-resistant to CAZ by adeN mutations that regulate the adeIJK complex or pgpB mutations that are also regulated by adeN (Figure 1D; Santos-Lopez et al., 2019). Subsequently, evolution in increasing concentrations of CAZ selected at least one mutation in adeJ in 16/18 populations (Figure 4A); this gene encodes the permease subunit of AdeIJK that is a known cause of CAZ resistance (Lee et al., 2017). The two exception populations instead acquired mutations in adeN, in ACX60_RS2390, a gene of unknown function, and in ftsI, the target of CAZ. Evolution in IMI also selected mutations in the ftsI gene in all populations (Figure 4B); this gene encodes penicillin binding-protein 2, one of the most common causes of de novo resistance to IMI in clinical isolates (Lee et al., 2017). Therefore, evolution in \u03b2-lactam antibiotics generated convergent evolution regardless of the genetic background (Vogwill et al., 2014; Scribner et al., 2020).\n\nYet despite these genetic similarities, replicate populations reached different resistance levels (Figure 2B,D). As the resistant phenotype was measured in mixed populations with diverse genetic backgrounds, it is possible that even though a resistance allele is fixed, different genotypes within each population could explain the phenotypic differences. Evidence of this heterogeneity might be seen when comparing the five replicate IMI populations that acquired the same mutation in ftsI (A579V) but differ in resistance levels by up to fourfold (Figure 4 and Figure 1\u2014source data 1). Another potential explanation for different phenotypes associated with mutations in the same gene is that different mutations may produce different resistance levels. Evidence for this possible explanation is seen when comparing replicate populations derived from ancestor P1, where different SNPs in adeJ (Figure 4, Figure 1\u2014source data 2) produce varied resistance (Figure 2), perhaps by altering the function of this permease in different ways. Follow-up experiments with reconstructed variants in isogenic backgrounds are needed to test this hypothesis. To summarize, both varied pleiotropy of different mutations in the same drug targets and interactions between mutations in different drug targets may constrain AMR evolution.\n\n### Collateral sensitivity resulting from genetic reversions\n\nAntibiotic resistance mutations typically incur a fitness cost that favor sensitive strains in the absence of antibiotics. Phenotypic reversion to sensitive states is commonly caused by secondary mutations in other genes (Dur\u00e3o et al., 2018; Dunai et al., 2019), but it could also be caused by genotypic reversions in which the ancestral allele is selected under drug-free conditions (Teotonio and Rose, 2000; Bedhomme et al., 2013; Rebolleda-Gomez and Travisano, 2019). In our experimental system, assuming a conservative uniform distribution of mutation rate of 10\u20133/genome/generation (Lynch et al., 2016), each base pair experiences approximately three mutations on average during the 12 days of serial transfers (Santos-Lopez et al., 2019). This estimate implies that reversion mutations affecting historical CIP resistance did occur amidst billions of cell divisions, but nonetheless they are expected be much rarer than suppressor mutations in other genes. Surprisingly, we identified genetic reversion of adeL mutations five different times in CAZ lines and three different times in IMI lines (Figure 4A,B, respectively), and these back-mutations reversed resistance tradeoffs between \u03b2-lactams and CIP (Figures 3A and 4A for CAZ, Figures 3C and 4B for IMI). We also observed genetic reversion of parC mutations in each P3 replicate propagated in CAZ (Figure 4A). The topoisomerase IV parC is one of the canonical targets of CIP but these mutations have been shown to incur a high fitness cost in the absence of CIP (Kugelberg et al., 2005). Selection in the presence of CAZ or IMI therefore favored these reversions in the absence of CIP, but in this case without notable loss of CIP resistance presumably via secondary mutations in pgpB (Figure 4A, Santos-Lopez et al., 2019). It can be argued that we propagated polygenic colonies bearing the resistant genotype and the sensitive genotype at very low frequencies but undetectable by our analysis methods. For example, we detected standing genetic variation in adeL in the B2 ancestral clone that could explain the reversion to the sensitive genotype. However, with a depth of ca. 300\u00d7 coverage, we did not detect any low frequent variants either in B3 or P3 that could explain the reversions. To test the unlikely possibility that the sensitive allele was present in the ancestral clone, we re-isolated the P3 ancestral clone, selected a single clone, and propagated it again in increasing concentrations of CAZ. By re-plating the ancestral clone , we reduced the possibility that the sensitive allele was present at low frequencies in the new selected clone. At the end of the experiment, we detected the parC reversion in one out of three evolved lines (Figure 4\u2014figure supplement 1), confirming that the sensitive allele arose by chance and was selected for in presence of CAZ. The high frequency of mutational reversion observed in these experiments indicates that these resistant determinants are under enormous constraint and impose fitness costs in the presence of CAZ or IMI (Pennings et al., 2021).\n\n## Discussion\n\nStephen Jay Gould famously argued that replaying the tape of life is impossible because historical contingencies are ubiquitous (Gould, 1990). The evolution and spread of AMR provide a test of this hypothesis because countless evolution experiments are initiated each day with each new prescription to combat infections caused by bacteria with different histories. Previous studies suggest that the predictability of antibiotic resistance \u2013 or the fidelity of the replay \u2013 depends on the pathogen, the antibiotic treatment, and the growth environment (Vogwill et al., 2014; Gifford et al., 2018; Wistrand-Yuen et al., 2018; Card et al., 2019; Santos-Lopez et al., 2019; Scribner et al., 2020). Here, we have quantified contributions of history, chance, and selection to AMR evolution, using six different ancestors replicated in each of two different antibiotic treatments. In the end, selection is unsurprisingly the predominant force in the evolution of AMR and produced convergent evolution even at the nucleotide level in some instances. Yet history and chance play clear and important roles in the emergence of new resistance phenotypes (Figures 3B,D,5, Vogwill et al., 2014), the extent of evolved resistance (Figures 2 and 3), the generation of collateral sensitivity networks, (Pal et al., 2015), and the predictability of the final resistance phenotype (Figures 1 and 4, Gifford et al., 2018; Scribner et al., 2020). If we consider that the established history of these experimental populations is shallow \u2013 the result of only 80 prior generations of growth in a different antibiotic that selected between one and three mutations \u2013 it is remarkable how deeply these genotypes were imprinted, resulting in divergent evolutionary trajectories under stringent selection in new drugs. Our data also suggest that, as in Drosophila (Teotonio and Rose, 2000), viruses (Bedhomme et al., 2013) and yeast (Rebolleda-Gomez and Travisano, 2019), history and chance may determine the reversibility of acquired traits (Figure 5).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/70676/elife-70676-fig5-v2.jpg)\n\n**Figure 5.:** A sensitive population (left panel) is subjected to two successive treatments (antibiotic A and antibiotic B, middle and right panels respectively). First, the population was treated with antibiotic A in either of two different environments (middle panel top and bottom) that selected different genotypes (mutations A1 and A2) with distinct resistance phenotypes (middle panel insets). During subsequent exposure to a second antibiotic (B), this evolutionary history determined resistance levels (right panel) to both drugs A and B, for instance resulting in the loss of resistance to drug A (top right panel).\n\nThis probability of reversion is potentially clinically important because exploitable collateral sensitivity networks can arise, such as the tradeoff between CIP resistance and \u03b2-lactam resistance identified here (Pal et al., 2015). Finally, our data reveals that evolution of AMR follows a clear diminishing return pattern, where antibiotic pressure selects for mutations with progressively smaller phenotypic effects as the population is treated with higher antibiotic concentrations (Figure 2\u2014figure supplement 1). This result mirrors findings in the original Travisano et al. paper (Travisano et al., 1995), where populations that were pre-adapted to compete well in maltose did not adapt further, but populations with major deficiencies in maltose evolved to become just as fit. This result may be instructive for AMR management: on the one hand, more resistant populations at the outset did not increase this phenotype further, but on the other hand, more susceptible lines rapidly compensated for this deficit.\n\nOur experiment was performed in planktonic cultures and was limited to a sensitive strain of A. baumannii treated with a single fluoroquinolone followed by one of two \u03b2-lactam drugs. These were deliberate experimental design choices that allowed careful assessment of the evolutionary forces at play in a rapidly evolving population but may be considered limitations for some broader applications. Despite these limitations, our finding that history and chance are ancillary forces compared to the strength of selection imposed by antibiotics is universal and is well supported by the literature. For instance, exposure to fluroquinolones in Gram-positive or Gram-negative bacteria commonly selects for mutations in gyrA (Seward and Towner, 1998; Weigel et al., 1998; Hooper and Jacoby, 2015). However, we also observed that history and chance can play important roles in resistance evolution in certain specific environments. For example, the reversions in adeL are probably lifestyle dependent and would not be expected to occur if we replay the experiment in the biofilm lifestyle instead of planktonic.\n\nFinally, our experiment focuses solely on de novo mutations and does not allow the opportunity for horizontal gene transfer from other species or strains, which is the principal mechanism of the emergence of AMRs in most clinical settings (MacLean and San Millan, 2019). However, genetic background also affects the fitness of transmissible elements (Alonso-del Valle et al., 2021) and epidemiological data indicate that evolutionary history constrains the persistence of resistance mediated by plasmids (Dunn et al., 2019; Le\u00f3n-Sampedro et al., 2021). The framework defined here illustrates the potential to identify genetic and environmental conditions where selection is the most dominant evolutionary force and it predictably produces antagonism between resistance traits. With ever greater knowledge of the present state, we gain hope for guiding the future to exploit the past.\n\n## Materials and methods\n\n### Summary of experimental design\n\nFollowing Travisano et al., 1995, consider replicate populations founded by a single clone that are propagated in the same environment for a certain number of generations. We can dissect the roles of each evolutionary force by measuring changes in the mean and variance of an important trait (e.g., fitness or antibiotic resistance) (Figure 1A). In the first scenario, the mean and variance of the studied trait did not change, so one can conclude that the trait did not evolve (Top left panel, Figure 1A). In the second scenario, while the grand mean of the trait remains the same as the ancestral value, trait variance increases (top middle panel, Figure 1A). Here, the main evolutionary force is chance, comprised of mutation and genetic drift. In the third scenario, the grand trait mean increases significantly, but not the variance (top right panel, Figure 1A), a change that is best explained by natural selection. Combining these two forces of chance and natural selection, we would expect both trait mean and variance to increase (bottom left panel, Figure 1A). Note that these four scenarios describe outcomes when starting from a single clone, that is with no genetic variation, but this rarely happens in nature. If we conduct the same experiment using different ancestors that vary in the studied trait, two additional scenarios are possible. In the first, the initial variation among the different ancestors is erased by chance and adaptation (bottom middle panel, Figure 1A), which cause the trait variance and mean to increase to identical values, regardless of the ancestral value. In the last scenario, the effect of history constrains the evolution of the trait, where the final trait value correlates with the ancestral value (bottom right panel, Figure 1A) despite contributions of both chance (increased variance) and selection increasing the trait.\n\n### Experimental evolution\n\n#### Historical phase\n\nBefore the start of the antibiotic evolution experiment, we planktonically propagated one clone of the susceptible A. baumannii strain ATCC 17978-mf (Figure 1\u2014figure supplement 1) in a modified M9 medium (referred to as M9+) containing 0.37 mM CaCl2, 8.7 mM MgSO4, 42.2 mM Na2HPO4, 22 mM KH2PO4, 21.7 mM NaCl, 18.7 mM NH4Cl, and 0.2 g/L glucose and supplemented with 20 mL/L MEM essential amino acids (Gibco 11130051), 10 mL/L MEM nonessential amino acids (Gibco 11140050), and 10 mL each of trace mineral solutions A, B, and C (Corning 25021\u20133 Cl). This preadaptation phase was conducted in the absence of antibiotics for 10 days (ca. 66 generations) with a dilution factor of 100 per day. All experimental evolutions described here \u2212 preadaptation, historical phase and selection phase \u2212 were performed in 18 mm glass tubes containing 5 mL of M9+.\n\nAfter 10 days of preadaptation to M9+ medium, we selected a single clone and propagated for 24 hr in M9+ in the absence of antibiotic. We then subcultured this population into 20 replicate populations. Ten of the populations (5 planktonic and 5 biofilm) were propagated every 24 hr in constant subinhibitory concentrations of CIP, 0.0625 mg/L, which corresponds to 0.5\u00d7 the minimum inhibitory concentration (MIC). We doubled the CIP concentrations every 72 hr until 4\u00d7 MIC (Figure 1B).\n\n#### Selection phase\n\nUpon the conclusion of the \u2018historical phase\u2019, we selected one clone from three populations previously adapted in biofilm and three populations previously adapted in planktonic conditions. We streaked the populations on \u00bd Tryptic soy agar (Difco Laboratories Inc, NJ) and selected one clone per population that were sequenced as explained later, growing during 24 hr in M9+. Clone B2 was found to contain standing genetic variation after 24 hr growing in M9+ (Figure 4\u2014source data 1). We determined their resistance level to CIP, CAZ, and IMI. Then, we propagated planktonically each clone independently with a dilution factor of 100 or in the presence of increasing concentrations of CAZ or in increasing concentrations of IMI. For each population, we used their own MIC to CAZ or IMI to determine the concentrations used in this phase (Figure 1\u2014source data 1). We serially passaged 50 \u00b5L into 5 mL of M9+ which corresponds to approximately 6.64 generations per day. The average population size at day 1 was 4.7 \u00d7 108 ( \u00b1 1.1 \u00d7 108) CFU/mL and 2.8 \u00d7 109 ( \u00b1 1.4 \u00d7 109) at day 12. As a control, we propagated two replicates of the pre-adapted A. baumannii clone in the absence of antibiotics for 12 days. We froze 1 mL of the propagated populations at days 1, 3, 4, 6, 7, 9, 10, and 12 in 9% of DMSO.\n\n### Antimicrobial susceptibility characterization\n\nWe determined the MIC of CAZ, CIP, and IMI of the whole population by broth microdilution in Mueller-Hinton as explained before according to the Clinical and Laboratory Standards Institute guidelines (Santos-Lopez et al., 2019), in which each bacterial sample was tested in twofold-increasing concentrations of each antibiotic. To perform the MICs, we streaked the ancestral clones and the evolved populations in \u00bd Tryptic soy agar (Difco Laboratories Inc, NJ) without antibiotics. For clones, we selected three to five clones and resuspended them in PBS, and for the populations, we took a full loop of the frozen biomass to obtain a representation of the whole population. In order to follow the CLSI standards, both the clones and the populations were diluted to a 0.5 MacFarland units. Then, we diluted the PBS containing bacteria 1/10 times in Mueller\u2013Hinton broth and performed the MICs as recommended by the CLSI guidelines. The CIP, CAZ, and IMI were provided by Alfa Aesar (Alfa Aesar, Wardhill, MA), Acros Organics (Across Organics, Pittsburgh, PA), and Sigma (Sigma-Aldrich Inc, St. Louis, MO), respectively.\n\n### Genome sequencing\n\nWe sequenced the two replicate drug-free passaged controls, six ancestral clones, and whole populations of the 36 evolving populations (18 evolved in the presence of CAZ and 18 evolved in the presence of IMI) at the end of the experiment. We revived each population or clone from a freezer stock in the growth conditions under which they were isolated (i.e. 5 mL of M9+ in 18 mm glass tubes adding the same CAZ or IMI concentration which they were exposed to during the experiment) and grew for 24 hr. We centrifuged 1 mL of the ON culture, and we extracted DNA using the Qiagen DNAeasy Blood and Tissue kit (Qiagen, Hiden, Germany) following the indications from the manufacturers. The sequencing library was prepared as described by Turner et al., 2018 according to the protocol of Baym et al., 2015, using the Illumina Nextera kit (Illumina Inc, San Diego, CA) and sequenced using an Illumina NextSeq500 at the Microbial Genome Sequencing Center. The mutations detected in the drug-free passage controls (Figure 4\u2014source data 2) were subtracted from subsequent analyses.\n\n### Statistical analysis of the role of each evolutionary force\n\nWe calculated the phenotypic effect of the evolutionary forces using a nested linear mixed model. By means of this nested linear mixed model including ancestors and replicates as random effects, we estimated the effect of history as the square root of the variance among all propagated populations; the effect of chance as the square root of the variance between the replicates propagated from the same ancestor; and the effect of selection was calculated as the difference in grand mean of the propagated replicates and their ancestors (Figure 2\u2014source data 1).\n\nPercentile bootstrap was employed to compute the confidence intervals of each force at the level of significance \u03b1 = 0.05 by taking 1000 random samples with replacement. In addition, the statistical evidence of each force was assessed adopting a Bayesian approach, which allows to circumvent the issues associated to null hypothesis statistical testing (Wagenmakers, 2007). Specifically, a set of models excluding each force (Null hypotheses) were confronted against the full model including the three forces (Alternative Hypothesis). Thus, let BIC1 be the Bayesian Information Criterion associated to the alternative model and BIC0 the Bayesian Information Criterion for one of the null models. Then, a Bayes factor can be approximated as follows:\n\n$$\nBF_{10}\u2248\\frac{Pr(D\u2223H_{1})}{Pr(D\u2223H_{0})}=exp((BIC_{0}\u2212BIC_{1})/2)\n$$\n\nwhere Pr(D|H0) and Pr(D|H1) are the marginal probabilities of the data under the null and alternative models respectively. Hence, the Bayes factor allows to quantify how likely the inclusion of a force is with respect to its absence according to the observed data. All these estimations were performed using blme v1.0\u20134 R package (https://cran.r-project.org/package=blme). All values were normalized to one to calculate the influence of each evolutionary force.\n\nThe roles of the evolutionary forces at the genotypic level were calculated using all identified mutations above a detection threshold of 5% based on the Manhattan distance (dM) between populations. For a pair of populations j and k with n genes,\n\n$$\nd_{M}=\\sumi=1n|x_{ij}\u2212x_{ik}|\n$$\n\nwhere xij is the frequency of mutated alleles in gene i in population j, relative to the A. baumannii strain ATCC 17978-mff. For a given gene, xij \u2212 xik is zero if there are no mutations present in that gene in either population j or k or if the frequency of mutated alleles is the same in both populations. If multiple mutations in a given gene were present in a population, the frequency of mutated alleles was the sum of the frequencies of all mutated alleles in that gene. This assumes that each mutation occurred on a different genetic background.\n\nThe genotypic role of chance was calculated as half the mean dM between all pairs of evolved populations founded from the same ancestral clone. The genotypic role of history was calculated as half the mean dM between all pairs of evolved populations founded from the different ancestral clones minus the role of chance. The genotypic role of selection was calculated as the mean dM between evolved populations and their founding clone, minus the roles of chance and history. In comparing the role of the different forces, we accounted for the fact that chance and history are calculated as the distance between two evolved populations, whereas selection is calculated as the distance between ancestral and evolved populations, by defining the roles of chance and history as half the mean dM. In calculating selection, mutations present in the founding clone were not excluded when subtracting the effect of history.\n\nTo analyze the role of each force, it is important to note some limitations of the study. First, the analysis of the forces makes no assumption about the linearity or additivity of their effects. Phenotypic variation between populations is simply partitioned between three possible pools: differences between ancestral and evolved populations (selection), differences between evolved populations with different ancestors (history), and differences between evolved populations with the same ancestor (chance). For the genotypic metric, the same logic applies and differences in the frequencies of mutations are attributed to the same three pools. Where non-additive effects become important to consider is in interpreting the differences between the phenotypic and genotypic metrics. The contributions of the forces at the genotypic and phenotypic levels would be the same if every mutation that arose had an equal effect on the phenotype (or at least that the frequency of each mutation in the population was proportional to its phenotype) and phenotypic effects were additive, with no epistasis. The greater the deviation from those assumptions, the greater the differences will be between the genotypic and phenotypic roles of history, chance, and selection. Second, while the three forces play ongoing roles during evolution, it is important to note that the moment when we analyze their role has been arbitrarily selected. For instance, historical effects are cumulative and every moment in the course of evolution may be contingent on previous historical adaptations (Travisano et al., 1995). Here, we analyze how evolution in two lifestyles, planktonic and biofilm, challenged by one antibiotic, CIP, influences further adaptation to a second antibiotic, CAZ or IMI. Therefore, we consider evolutionary history to any adaptation occurred before exposure to CAZ or IMI, and we measured the role of the forces at only two timepoints: after 3 or 12 days exposing the populations to the antibiotic.\n\nAll statistical comparisons of MIC values were performed on the log2 transformed values. Differences in grand means between populations were analyzed by a one-way nested ANOVA with Tukey\u2019s multiple comparison tests or by a nested t-test. Spearman correlation was performed using the grand means to determine the correlation between the ancestral MIC and the fold change of MIC acquired during the experiment. There are three possible outcomes by correlating the original MIC and the fold dilution change: (1) a negative correlation, in which the populations with lower initial MICs increased their resistance level more than populations with higher MICs, implies that the selection erased the previous effects of history; (2) a positive correlation indicates that initial differences in MIC were magnified by selection; and (3) a lack of correlation indicates that the effect of history did not change before and after selection.\n\n### Data processing\n\nThe variants were called using the breseq software v0.31.0 (Barrick et al., 2014) using the default parameters and the -p flag when required for identifying polymorphisms in populations after all sequences were first quality filtered and trimmed with the Trimmomatic software v0.36 (Bolger et al., 2014) using the criteria: LEADING:20 TRAILING:20 SLIDINGWINDOW:4:20 MINLEN:70. The version of A. baumannii ATCC 17978-mff (GCF_001077675.1 downloaded from the NCBI RefSeq database,17-Mar-2017) was used as the reference genome for variant calling. We added the two additional plasmid sequences present in the A. baumannii strain (NC009083, NC_009084) to the chromosome NZ_CP012004 and plasmid NZ_CP012005. Mutations were then manually curated and filtered to remove false positives under the following criteria: mutations were filtered if the gene was found to contain a mutation when the ancestor sequence was compared to the reference genome or if a mutation never reached a cumulative frequency of 10% across all replicate populations.\n",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "8e79a509-3435-4158-998d-09f8d909b357",
+      "submission_id": "cb2e57be-1aa3-4336-a80c-9c63f6ace972",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mar\u00eda Mercedes Zambrano, CorpoGen Colombia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70676.sa1](https://doi.org/10.7554/eLife.70676.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nThis work uses an elegant and well-designed experimental evolution strategy to investigate the roles of history, chance, and selection on the evolution of antibiotic resistance in the clinical pathogen Acinetobacter baumannii. The authors show that while history impacts the evolution of antimicrobial resistance, this effect decreases with increasing drug selection strength and indicates that natural selection is a dominant driver. The work presents clear, unambiguous data on the importance of antibiotic exposure on the evolution of resistance.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"The roles of history, chance, and natural selection in the evolution of antibiotic resistance\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Dominique Soldati-Favre as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Alan McNally (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nWhile the work addresses a very relevant and interesting question, the reviewers raised some concerns that need to be addressed in order to improve the manuscript. Additional experimental details should be included, and clarification is needed regarding some of the concepts used. More importantly, the limitations of the approach need to be specifically addressed and some of the claims and interpretations should be toned down, particularly given the absence of a drug-free control.\n\n1) A main concern is in the interpretation of populations having the same genetics but different phenotypes (eg lines 300-310) \u2013 this conclusion is wrong given the experimental design. The authors provide several explanations but leave out a high likelihood alternative which is that different experiments consist of mixed populations with diverse genetic makeups. Alternatively, if the authors meant instead to focus on specific mutations (ie same mutations/localized mutations) regardless of the background, then this conclusion is trivial \u2013 it is known that pleiotropy exists.\n\n2) I agree with the author's definitions of change due to history vs change due to selection given the evolution they designed \u2013 and I found this quite innovative and overall strong. However, the definition and calculations of evolution due to chance here are shaky given the three replicates only. There are plenty of extremely rigorous estimates of genetic drift during bacterial evolution (see all of Lenski's work) \u2013 three populations is quite small to make that claim and run the statistics. Including chance as a possible contributor didn't add much to the story, and it raised more questions than answers given the extremely diverse genetics that were observed, and that data of the mixed populations below 75% was not included.\n\n3) Experiments are flawed without a no drug control. Was the reversion of CIP resistance specific to the new drug selection, or is it simply the lack of CIP pressure? This is important as the authors make claims about drug-specific evolutionary tradeoffs and collateral sensitivity. The methods in line 428: \"We froze 1 mL of the control populations on days\u2026\" but this is the only place a control population is mentioned.\n\n4) Much of the data was difficult to follow, such as the fold changes for MICs \u2013 for example, following the discussion of CIP resistance, maintenance, and reversion was nearly impossible with the reference to figure 4 fold changes only. Also going back and forth between IMI and CAZ, which is discussed in parallel near the beginning, but then broken down later on, is another example.\n\n5) Key experimental details are missing. What volume were the populations propagated in? Population experiments were not well described \u2013 how were replicate MICs initiated? How much volume was used for sequencing? So on and so forth. These are particularly important to interpret the results.\n\n6) Why was a 75% threshold used to determine alleles if the populations were sequenced to a level of 5%?\n\n7) Despite being described in great detail in the methods, it doesn't come across to non-modeler such as myself exactly how selection, history, and chance were quantified in the phenotypic experiments shown in figure 2. I am a bit clearer as to how these were quantified for the genomic data. However, I think a broad readership may benefit from a layman's description of how these were differentiated. It is vital to the science and data shown and I would certainly have appreciated a clarification, especially for the phenotypic data in figure 2.\n\n8) In line 307. In the absence of bacterial genetic experiments to confirm that these historical infections are actually driving the 4 fold differences in phenotype, I think this inference needs to be toned down.\n\n9) Line 343: Is there a benefit to be had of fitness experiments in antibiotic-free medium to confirm the supposition made here?\n\n10) In some cases, I found the framing of the results in terms of history, chance, and selection to be a bit overly general, which sometimes obscured the specific results being reported. The paper could be improved by using more specific language-perhaps restricted in scope- in describing and interpreting the results, both because 1) it's not obvious to me that the results would apply generally to antibiotic resistance beyond the very nice, but potentially system-specific, results presented here; and 2) the terms themselves (history, chance, selection) could conceivably have different meanings in different contexts (more on this below).\n\n11) The study design has been used in numerous previous studies; it is well established, elegant, and has given rise to many new insights. However, as I understand it, there are some inherent assumptions of the approach that should be briefly discussed. Most notably, does the approach inherently assume that the effects of history, chance, and selection are additive (or perhaps linear) in some sense (in terms of phenotypic variance measurements or the Manhattan-based genotype metric)? While this simplifying assumption seems critical to the power of the approach, it is not clear to me that this assumption holds in general. When I try to think of this in terms of, say, a simple population dynamics model, the terms history, chance and selection are themselves somewhat nebulous, and it's not clear to me that they could be unambiguously and uniquely defined even in simplified theoretical models (or more directly, that the variance-based phenotype measures correspond to well-defined features or parameters of population dynamics models). I say this not to criticize the approach-again, its power lies in the simplicity of the design and the intuitive value of separating these three evolutionary features and attempting to quantify their contributions. But I think the article could be strengthened by briefly discussing the underlying assumptions-ideally by pointing to previous work (if it exists) that establishes that the features are additive and measurable in the sense required by the experimental design. If not, I think it would be worth discussing that limitation briefly, as I worry the inherently nonlinear nature of these very complicated, evolving systems could lead us to misinterpret the results. Given the general success of similar approaches in past work, I suspect the authors have thought through these issues in detail; discussing those points might open the paper to a broader audience not intimately familiar with all the previous studies.\n\n12) One example related (but not identical to) the point above: in the current experiment, the role of history is defined in terms of previous selection conditions (drug and growth phase). But the new evolution experiment itself has multiple time points, and even qualitatively distinct epochs (sub- and super-MIC drug). So one might argue that history is playing a role continuously throughout the experiment-history not merely of the previous selection in fluoroquinolones, but also history of the previous time points / epochs of the new evolution (\u03b2-lactams). My point is that it is important to clearly define the terms at all stages and discuss, at least briefly, the limitations of the definitions that are chosen.\n\n13) While history, chance, and selection are quantified at both the genetic and phenotype level, it's not clear to me that these numbers can be directly compared to one another (though it's tempting to do so!). Could the authors briefly comment on the connection between these measures-that is, when (and to what extent) one would expect correlations between them (e.g. high levels of historical influence at the genetic level leads to high levels of historical influence at the phenotype (MIC) level\u2026.assuming the definitions used here).\n\n14) Do the authors have any thoughts on how the results might be affected by the fact that the new evolution experiments take place in planktonic (rather than biofilm) conditions? How might the results differ if they had been performed in biofilm, and what could you learn from the fully symmetric experiment (P/ B initial strains evolved in both P and B new selection conditions). The authors may wish to discuss this avenue for future work.\n",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b1976673-7182-491f-babf-ad62faf3dead",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C1",
+      "claim": "Selection of Acinetobacter baumannii in structured and unstructured environments containing ciprofloxacin produced distinct genotypes and phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we showed that selection of the pathogen Acinetobacter baumannii in both structured and unstructured environments containing the antibiotic ciprofloxacin produced distinct genotypes and phenotypes, with lower resistance in biofilms as well as collateral sensitivity to \u03b2-lactam drugs (Santos-Lopez et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Santos-Lopez et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "78599831-980b-4da1-9b5e-d6b704abecf1",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C2",
+      "claim": "Selection of A. baumannii in biofilms resulted in lower resistance to ciprofloxacin compared to planktonic selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we showed that selection of the pathogen Acinetobacter baumannii in both structured and unstructured environments containing the antibiotic ciprofloxacin produced distinct genotypes and phenotypes, with lower resistance in biofilms as well as collateral sensitivity to \u03b2-lactam drugs (Santos-Lopez et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Santos-Lopez et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "4c753003-0071-44de-84e3-cbe87a6068a6",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C3",
+      "claim": "Selection of A. baumannii in biofilms resulted in collateral sensitivity to \u03b2-lactam drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we showed that selection of the pathogen Acinetobacter baumannii in both structured and unstructured environments containing the antibiotic ciprofloxacin produced distinct genotypes and phenotypes, with lower resistance in biofilms as well as collateral sensitivity to \u03b2-lactam drugs (Santos-Lopez et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Santos-Lopez et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "0b395da6-b2dc-4adb-920b-8606fd54024e",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C4",
+      "claim": "The effects of history were reduced by increasingly strong selection in new drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "The effects of history were reduced by increasingly strong selection in new drugs, but not erased, at times revealing important contingencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data presented in the manuscript showing changes in variance contributions over time",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "297dd079-52fc-4e16-a6ed-6ce0b562ea23",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C5",
+      "claim": "A history of selection in structured environments constrained resistance to new drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "A history of selection in structured environments constrained resistance to new drugs and led to frequent loss of resistance to the initial drug by genetic reversions and not compensatory mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data showing lower resistance evolution in biofilm-derived populations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "6da33a0e-8b42-48b1-a2b2-d6c7fb63985f",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C6",
+      "claim": "A history of selection in structured environments led to frequent loss of resistance to the initial drug by genetic reversions and not compensatory mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "A history of selection in structured environments constrained resistance to new drugs and led to frequent loss of resistance to the initial drug by genetic reversions and not compensatory mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by genomic sequencing data showing reversion mutations in adeL",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "c3b088cd-37ed-491a-9d65-6ba6ef611aab",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C7",
+      "claim": "Despite strong selective pressures of antibiotics leading to genetic parallelism, history can etch potential vulnerabilities to orthogonal drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "This research demonstrates that despite strong selective pressures of antibiotics leading to genetic parallelism, history can etch potential vulnerabilities to orthogonal drugs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data showing collateral sensitivity patterns",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "289b178b-eee6-4ce3-8c95-760c52409445",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C8",
+      "claim": "Evolution can be surprisingly repeatable when selection is strong even among distantly related lineages or in different environments.",
+      "claim_type": "EXPLICIT",
+      "source": "A wealth of recent research has shown that evolution can be surprisingly repeatable when selection is strong even among distantly related lineages or in different environments (Lieberman et al., 2011; Lassig et al., 2017; Turner et al., 2018), but disparate outcomes become more likely as the footprint of history (i.e. differences in genetic background caused by chance and selection in different environments) increases (Blount et al., 2018; Benton et al., 2021; Mahrt et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "1875b7ed-8f15-43e4-b3f3-d4a24dac6786",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C9",
+      "claim": "Disparate evolutionary outcomes become more likely as the footprint of history increases.",
+      "claim_type": "EXPLICIT",
+      "source": "A wealth of recent research has shown that evolution can be surprisingly repeatable when selection is strong even among distantly related lineages or in different environments (Lieberman et al., 2011; Lassig et al., 2017; Turner et al., 2018), but disparate outcomes become more likely as the footprint of history (i.e. differences in genetic background caused by chance and selection in different environments) increases (Blount et al., 2018; Benton et al., 2021; Mahrt et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "4f299b91-31e6-47b7-a21f-05a629f6bc7d",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C10",
+      "claim": "In the absence of chance and history, selection will cause the most fit genotype to fix in the particular environment.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of chance and history, selection will cause the most fit genotype to fix in the particular environment, and provided this variant is available, evolution will be perfectly predictable (Bailey et al., 2015; Lassig et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations and established evolutionary theory",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "80ffe71d-8205-4a63-8175-b9202187e1c5",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C11",
+      "claim": "Historical and stochastic processes inevitably produce some degree of contingency, making evolution less predictable.",
+      "claim_type": "EXPLICIT",
+      "source": "However, historical and stochastic processes inevitably produce some degree of contingency, making evolution less predictable, reflecting the importance of evolutionary history (Blount et al., 2008; Meyer et al., 2012; Baji\u0107 et al., 2018; Blount et al., 2018; Card et al., 2019; Galardini et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "d577880f-f846-4075-a33d-d34eb8d9a7aa",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C12",
+      "claim": "The evolution of a new trait is a stochastic process that depends on available genetic variation capable of producing a new trait.",
+      "claim_type": "EXPLICIT",
+      "source": "The evolution of a new trait, whether by horizontally acquired genes or de novo mutation, is a stochastic process that depends on available genetic variation capable of producing a new trait (Khan et al., 2011; Salverda et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Khan et al., 2011 and Salverda et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "53c4d528-14d5-4c10-b1f1-467e8d5d95a1",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C13",
+      "claim": "Antibiotics can impose strong selection pressure on microbial populations, leading to highly repeatable evolutionary outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibiotics can impose strong selection pressure on microbial populations, leading to highly repeatable evolutionary outcomes (Vogwill et al., 2014; Luka\u010di\u0161inov\u00e1 et al., 2020; Scribner et al., 2020), with the level of parallelism predicted to depend on the strength of antibiotic pressure (Wistrand-Yuen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "22557414-d916-4cc4-84cf-e6ceb6eb4124",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C14",
+      "claim": "The level of parallelism in antibiotic resistance evolution is predicted to depend on the strength of antibiotic pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibiotics can impose strong selection pressure on microbial populations, leading to highly repeatable evolutionary outcomes (Vogwill et al., 2014; Luka\u010di\u0161inov\u00e1 et al., 2020; Scribner et al., 2020), with the level of parallelism predicted to depend on the strength of antibiotic pressure (Wistrand-Yuen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wistrand-Yuen et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "7028f027-d4de-4c23-9816-0cc7abd71834",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C15",
+      "claim": "Evolutionary history can alter the distribution of fitness effects of AMR mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, evolutionary history can also alter the distribution of fitness effects of AMR mutations, their mechanisms of action, or their degree of conferred resistance (Eyre-Walker and Keightley, 2007; Hall and MacLean, 2011; Yen and Papin, 2017; Barbosa et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "c17523c7-2fcf-4ad4-a6db-81207fd213c7",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C16",
+      "claim": "The phenotypic effect of any given mutation acquired is contingent on prior events.",
+      "claim_type": "EXPLICIT",
+      "source": "The phenotypic effect of any given mutation acquired is contingent on prior events and will determine the potential of further adaptations to a given environment (Travisano et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Travisano et al., 1995",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "6357f509-adba-4300-aa81-a09355f32f1f",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C17",
+      "claim": "The effects of a given mutation can vary in different genetic backgrounds (epistasis).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the effects of a given mutation can vary in different genetic backgrounds (epistasis) or in different environments (pleiotropy) and those mutations can constrain further adaptations (Trindade et al., 2009; Hall and MacLean, 2011; Yen and Papin, 2017; Gifford et al., 2018; Santos-Lopez et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies and established genetic knowledge",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "096cc0a0-7f57-46e6-88e3-a89fbab7aefd",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C18",
+      "claim": "The effects of a given mutation can vary in different environments (pleiotropy).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the effects of a given mutation can vary in different genetic backgrounds (epistasis) or in different environments (pleiotropy) and those mutations can constrain further adaptations (Trindade et al., 2009; Hall and MacLean, 2011; Yen and Papin, 2017; Gifford et al., 2018; Santos-Lopez et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies and established genetic knowledge",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "ef7019bf-e679-47d1-9fc8-6c0cd0c022bd",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C19",
+      "claim": "Chance differences in the mutations acquired, their order of occurrence, or compensatory mutations can affect the eventual level of resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, chance differences in the mutations acquired, their order of occurrence, or compensatory mutations that decrease resistance costs can affect the eventual level of resistance and its evolutionary success in the population (Salverda et al., 2011; Wistrand-Yuen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Salverda et al., 2011 and Wistrand-Yuen et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "6131260c-a81f-4b8f-bd07-5e1d0bdbde3a",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C20",
+      "claim": "When large populations of 1 \u00d7 10^7 CFU/mL or higher are propagated, the probability that every base pair is mutated at least once approaches 99% after ~80 generations.",
+      "claim_type": "EXPLICIT",
+      "source": "When large populations, 1 \u00d7 107 CFU/mL or higher, of bacteria are propagated, the probability that every base pair is mutated at least once approaches 99% after ~80 generations (Lynch et al., 2016; Santos-Lopez et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lynch et al., 2016 and Santos-Lopez et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "bee42b66-695c-480f-9847-887a7c7d584f",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C21",
+      "claim": "Most mutations are initially rare and subject to genetic drift until they reach a critical frequency of establishment, when selection dominates their fate.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet chance still remains important because most mutations are initially rare and subject to genetic drift until they reach a critical frequency of establishment, when selection dominates their fate (Heffernan and Wahl, 2002; Good et al., 2017; Cooper, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies and established population genetics theory",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "f77ede4e-ee39-4450-add7-1e34d8bc4055",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C22",
+      "claim": "The success of new mutations will be determined by their survival of drift, the chance that they co-occur with other fit mutants, and by their relative fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the success of new mutations will be determined by their survival of drift, the chance that they co-occur with other fit mutants, and by their relative fitness, which is shaped by selection and history (Nguyen Ba et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Nguyen Ba et al., 2019 and inference from population genetics principles",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "9fe9bbfb-d89c-420e-9dc7-a26613343bb7",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C23",
+      "claim": "Acinetobacter baumannii is a leading agent of multidrug-resistant infections worldwide.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we use this framework to measure the relative roles of history, chance, and selection in the evolution of AMR phenotypes and genotypes in the ESKAPE (Enterococcus faecium, Staphylococcus aureus, Klebsiella pneumoniae, Acinetobacter baumannii, Pseudomonas aeruginosa, and Enterobacter spp.) pathogen Acinetobacter baumannii, a leading agent of multidrug-resistant infections worldwide and named as an urgent threat by the CDC (CDC, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to CDC, 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "975fdef7-c1df-4799-a2c2-5a41ab4187af",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C24",
+      "claim": "Acinetobacter baumannii is named as an urgent threat by the CDC.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we use this framework to measure the relative roles of history, chance, and selection in the evolution of AMR phenotypes and genotypes in the ESKAPE (Enterococcus faecium, Staphylococcus aureus, Klebsiella pneumoniae, Acinetobacter baumannii, Pseudomonas aeruginosa, and Enterobacter spp.) pathogen Acinetobacter baumannii, a leading agent of multidrug-resistant infections worldwide and named as an urgent threat by the CDC (CDC, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to CDC, 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "5e6d5976-f864-47b4-b9be-1e287431a2f3",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C25",
+      "claim": "Six different clones with distinct genotypes and CIP susceptibility were used to found new replicate populations that evolved in increasing CAZ or IMI for 12 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Six different clones with distinct genotypes and CIP susceptibility were used to found new replicate populations that evolved in increasing CAZ or IMI for 12 days (Santos-Lopez et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental design description and Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "16bd2ba0-5f1f-48ae-9dec-8b0a3bf126a2",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C26",
+      "claim": "After 3 days of growth in subinhibitory concentrations of CAZ, history explained 61.7% of variation in resistance phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "First, after 3 days of growth in subinhibitory concentrations of CAZ, history explained the largest variation in resistance phenotypes (61.7% of variation, p<0.05), with 30.7% for selection and only 7.6% chance (Figure 2A,E, Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of experimental data shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "0b079744-b4d6-4ebd-807a-e707b3d2e069",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C27",
+      "claim": "After 3 days of growth in subinhibitory concentrations of CAZ, selection explained 30.7% of variation in resistance phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "First, after 3 days of growth in subinhibitory concentrations of CAZ, history explained the largest variation in resistance phenotypes (61.7% of variation, p<0.05), with 30.7% for selection and only 7.6% chance (Figure 2A,E, Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of experimental data shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "b391ae97-dcdb-4d9c-b6d2-3941830d995d",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C28",
+      "claim": "After 3 days of growth in subinhibitory concentrations of CAZ, chance explained 7.6% of variation in resistance phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "First, after 3 days of growth in subinhibitory concentrations of CAZ, history explained the largest variation in resistance phenotypes (61.7% of variation, p<0.05), with 30.7% for selection and only 7.6% chance (Figure 2A,E, Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of experimental data shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "4a38d8e7-b4c2-4df2-b83e-a5f1dc6904f4",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C29",
+      "claim": "By day 12 of CAZ treatment, selection explained 47.8% of variation in resistance phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, by day 12, following propagation in 4\u00d7 MIC CAZ, the amount of variation explained by selection increased to 47.8% and effects of history dropped to 31.4% (Figure 2B,E), indicating that strong selective pressures can diminish or erase the effects of history.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of experimental data shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "8806a2c4-de3e-41d7-888c-8cb5f9b52458",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C30",
+      "claim": "By day 12 of CAZ treatment, history explained 31.4% of variation in resistance phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, by day 12, following propagation in 4\u00d7 MIC CAZ, the amount of variation explained by selection increased to 47.8% and effects of history dropped to 31.4% (Figure 2B,E), indicating that strong selective pressures can diminish or erase the effects of history.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of experimental data shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "4ef3897d-8d1f-4a55-acfd-7222e36b98e0",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C31",
+      "claim": "Strong selective pressures can diminish or erase the effects of history.",
+      "claim_type": "EXPLICIT",
+      "source": "However, by day 12, following propagation in 4\u00d7 MIC CAZ, the amount of variation explained by selection increased to 47.8% and effects of history dropped to 31.4% (Figure 2B,E), indicating that strong selective pressures can diminish or erase the effects of history.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the change in variance contributions over time shown in experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "99ded33d-1eb1-418f-87e1-a55d34996f58",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C32",
+      "claim": "Populations with lower initial MICs increased their resistance level more than populations with higher MICs during CAZ selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Populations with lower initial MICs, which by necessity were exposed to lower concentrations of CAZ, increased their resistance level more than populations with higher MICs (Figure 2\u2014figure supplement 1), implying weak selection for further resistance in populations exceeding the MIC threshold and hence declining rates of resistance gains.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "39bb0450-82e8-4e94-baa0-d7ad446e862a",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C33",
+      "claim": "The level of evolved resistance converges and may be predictable.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding also suggests that the level of evolved resistance converges and may be predictable (Meyer et al., 2012; Kryazhimskiy et al., 2014), but effects of genetic background remain (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from experimental data and supported by citations",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "24ca7a62-fefa-470f-bb5e-7adac332eb52",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C34",
+      "claim": "Strong antibiotic selection has the potential to overcome but do not entirely eliminate historical differences in resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Strong antibiotic selection has the potential to overcome but do not entirely eliminate historical differences in resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data showing reduced but persistent historical effects",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "6fa40d64-eca7-4481-82a1-88f4b3ab0b29",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C35",
+      "claim": "After 12 days evolving in the presence of CAZ, the grand mean of CIP resistance levels did not change.",
+      "claim_type": "EXPLICIT",
+      "source": "In the current study, after 12 days evolving in the presence of CAZ, the grand mean of CIP resistance levels did not change, so history was the dominant force shaping the MIC to CIP (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "329595d1-e2c6-4137-a0c1-57d6055719a3",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C36",
+      "claim": "B populations became significantly more sensitive to CIP after CAZ selection, but P populations did not.",
+      "claim_type": "EXPLICIT",
+      "source": "However, if we analyze the P and the B populations independently, B populations became significantly more sensitive to CIP but the P populations did not (Figure 3A), showing that the emergence of collateral sensitivity may depend on prior selection in different environments.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "37e5969c-1c9a-460b-b836-511caf97f432",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C37",
+      "claim": "The emergence of collateral sensitivity may depend on prior selection in different environments.",
+      "claim_type": "EXPLICIT",
+      "source": "However, if we analyze the P and the B populations independently, B populations became significantly more sensitive to CIP but the P populations did not (Figure 3A), showing that the emergence of collateral sensitivity may depend on prior selection in different environments.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from differential responses of B and P populations shown in experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "dd318b9f-9c26-4c0e-ae77-70773e813dd3",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C38",
+      "claim": "All 12 populations evolved in CAZ became more resistant to IMI.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, all 12 populations evolved in CAZ became more resistant to IMI (two-tailed nested t-test p<0.0001, t = 7.507, df = 34), and selection was the most important force (p<0.05), explaining almost 44.3% of the variation, while history contributed 23.0% and chance 32.2% (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of experimental data shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "e9456493-f1a5-48a4-8bff-a25bdeec5321",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C39",
+      "claim": "For IMI resistance after CAZ selection, selection explained 44.3% of the variation, history contributed 23.0%, and chance 32.2%.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, all 12 populations evolved in CAZ became more resistant to IMI (two-tailed nested t-test p<0.0001, t = 7.507, df = 34), and selection was the most important force (p<0.05), explaining almost 44.3% of the variation, while history contributed 23.0% and chance 32.2% (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of experimental data shown in Figure 3E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "38c7ac55-6bca-4cd8-b933-26e606bac103",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C40",
+      "claim": "No overall change in resistance occurred following 3 days in subinhibitory concentrations of IMI.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, no overall change in resistance occurred following 3 days in subinhibitory concentrations of IMI (Figure 2C) but did increase by experiment's end at 4\u00d7 MIC (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "0ea4418e-7d06-4d22-a456-76a36346e466",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C41",
+      "claim": "IMI resistance increased by experiment's end at 4\u00d7 MIC.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, no overall change in resistance occurred following 3 days in subinhibitory concentrations of IMI (Figure 2C) but did increase by experiment's end at 4\u00d7 MIC (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "063b8b73-2a0a-4401-9304-03ad04fadd82",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C42",
+      "claim": "After subinhibitory IMI treatment, the more sensitive populations experienced greater gains in IMI resistance than the less sensitive populations.",
+      "claim_type": "EXPLICIT",
+      "source": "After the subinhibitory treatment, the more sensitive populations experienced greater gains in IMI resistance than the less sensitive populations, erasing some effects of history (Figure 2C and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2C and Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "464c2083-7e05-4b26-8790-53b6c05441e4",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C43",
+      "claim": "For IMI resistance evolution, selection explained 43.1% of the phenotypic variation, while history explained 33.2%.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, selection again predominated (p<0.05) and explained 43.1% of the phenotypic variation in this experiment, while history explained 33.2% (Figure 2B, D and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of experimental data shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "932137d3-7b7f-4dfd-86e7-00e586826c66",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C44",
+      "claim": "Evolution in IMI did not affect CIP resistance on average and history explained 75% of the variation in MIC.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted by the CAZ experiment, evolution in IMI did not affect CIP resistance on average and history explained 75% of the variation in MIC (Figure 3F), but again produced collateral sensitivity in two B populations (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of experimental data shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "151b613d-976a-4e4d-87e7-da7ce6788a9d",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C45",
+      "claim": "Evolution in IMI produced collateral sensitivity to CIP in two B populations.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted by the CAZ experiment, evolution in IMI did not affect CIP resistance on average and history explained 75% of the variation in MIC (Figure 3F), but again produced collateral sensitivity in two B populations (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "0f3559bf-30e5-429e-afed-030c25fd5afa",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C46",
+      "claim": "Selection in CAZ increased IMI resistance, but selection in IMI did not increase CAZ resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "The biggest difference between the CAZ and IMI experiments is an asymmetry in cross-resistance between these drugs. Selection in CAZ increased IMI resistance (Figure 3B), but not vice versa (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figures 3B and 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "f6f01170-b331-4442-b580-93ce1172a684",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C47",
+      "claim": "Evolution in CAZ at the genotypic level was shaped more by selection than history.",
+      "claim_type": "EXPLICIT",
+      "source": "Using these metrics, we infer that evolution in CAZ at the genotypic level was shaped more by selection than history, but the opposite was seen in IMI, and effects of chance were similar in both experiments (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genomic analysis shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "a1fed120-3859-43d5-b779-5ee381708035",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C48",
+      "claim": "Evolution in IMI at the genotypic level was shaped more by history than selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Using these metrics, we infer that evolution in CAZ at the genotypic level was shaped more by selection than history, but the opposite was seen in IMI, and effects of chance were similar in both experiments (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genomic analysis shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "767d6e90-d851-4a7f-90e7-a5cbf4c38ea1",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C49",
+      "claim": "Clinical CAZ-resistant A. baumannii isolates commonly acquire mutations that increase the activity of Acinetobacter drug efflux (ade) pumps.",
+      "claim_type": "EXPLICIT",
+      "source": "Clinical CAZ-resistant A. baumannii isolates commonly acquire mutations that increase the activity of Acinetobacter drug efflux (ade) pumps (Lee et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lee et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "99146880-6cc1-4748-b177-10813645fea8",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C50",
+      "claim": "Biofilm lines selected mutations in adeL, the regulator of the adeFGH pump, which produce collateral sensitivity to CAZ and other \u03b2-lactams.",
+      "claim_type": "EXPLICIT",
+      "source": "In the history phase of CIP selection, biofilm lines (Figure 1B) selected mutations in adeL, the regulator of the adeFGH pump, which produce collateral sensitivity to CAZ and other \u03b2-lactams (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genomic data shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "0cbeadcb-d663-4993-82be-a4a37fe5b6d8",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C51",
+      "claim": "P lines became cross-resistant to CAZ by adeN mutations that regulate the adeIJK complex or pgpB mutations that are also regulated by adeN.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, P lines became cross-resistant to CAZ by adeN mutations that regulate the adeIJK complex or pgpB mutations that are also regulated by adeN (Figure 1D; Santos-Lopez et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genomic data shown in Figure 1D and citation to Santos-Lopez et al., 2019",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "82d618f0-3cff-492a-a513-90c8f5d23e5c",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C52",
+      "claim": "Evolution in increasing concentrations of CAZ selected at least one mutation in adeJ in 16/18 populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, evolution in increasing concentrations of CAZ selected at least one mutation in adeJ in 16/18 populations (Figure 4A); this gene encodes the permease subunit of AdeIJK that is a known cause of CAZ resistance (Lee et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genomic sequencing data shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "9ff1a64c-ba51-45e2-acdc-c1bdc66a7984",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C53",
+      "claim": "adeJ encodes the permease subunit of AdeIJK that is a known cause of CAZ resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, evolution in increasing concentrations of CAZ selected at least one mutation in adeJ in 16/18 populations (Figure 4A); this gene encodes the permease subunit of AdeIJK that is a known cause of CAZ resistance (Lee et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lee et al., 2017 and established genetic knowledge",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "db184407-17ba-4b98-8d65-2e618944bfce",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C54",
+      "claim": "Evolution in IMI selected mutations in the ftsI gene in all populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Evolution in IMI also selected mutations in the ftsI gene in all populations (Figure 4B); this gene encodes penicillin binding-protein 2, one of the most common causes of de novo resistance to IMI in clinical isolates (Lee et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genomic sequencing data shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "8f8127c6-e048-42e8-a098-c12548794b47",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C55",
+      "claim": "ftsI encodes penicillin binding-protein 2, one of the most common causes of de novo resistance to IMI in clinical isolates.",
+      "claim_type": "EXPLICIT",
+      "source": "Evolution in IMI also selected mutations in the ftsI gene in all populations (Figure 4B); this gene encodes penicillin binding-protein 2, one of the most common causes of de novo resistance to IMI in clinical isolates (Lee et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lee et al., 2017 and established genetic knowledge",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "56973b46-421a-476f-b380-4e7f99bedc41",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C56",
+      "claim": "Evolution in \u03b2-lactam antibiotics generated convergent evolution regardless of the genetic background.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, evolution in \u03b2-lactam antibiotics generated convergent evolution regardless of the genetic background (Vogwill et al., 2014; Scribner et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental data and supported by citations",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "53b897a9-94a9-49b7-9096-beb102eeec15",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C57",
+      "claim": "Five replicate IMI populations that acquired the same mutation in ftsI (A579V) differ in resistance levels by up to fourfold.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence of this heterogeneity might be seen when comparing the five replicate IMI populations that acquired the same mutation in ftsI (A579V) but differ in resistance levels by up to fourfold (Figure 4 and Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genomic and phenotypic data shown in Figure 4 and source data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "5e1aa4a7-b631-44d2-bf83-7ab765cac59d",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C58",
+      "claim": "Genetic reversion of adeL mutations occurred five different times in CAZ lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we identified genetic reversion of adeL mutations five different times in CAZ lines and three different times in IMI lines (Figure 4A,B, respectively), and these back-mutations reversed resistance tradeoffs between \u03b2-lactams and CIP (Figures 3A and 4A for CAZ, Figures 3C and 4B for IMI).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genomic sequencing data shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "454a496c-8719-487a-99d9-21c40b42b9d4",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C59",
+      "claim": "Genetic reversion of adeL mutations occurred three different times in IMI lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we identified genetic reversion of adeL mutations five different times in CAZ lines and three different times in IMI lines (Figure 4A,B, respectively), and these back-mutations reversed resistance tradeoffs between \u03b2-lactams and CIP (Figures 3A and 4A for CAZ, Figures 3C and 4B for IMI).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genomic sequencing data shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "fdd82ba9-8dad-4264-b163-68b9b76d4247",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C60",
+      "claim": "Back-mutations in adeL reversed resistance tradeoffs between \u03b2-lactams and CIP.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we identified genetic reversion of adeL mutations five different times in CAZ lines and three different times in IMI lines (Figure 4A,B, respectively), and these back-mutations reversed resistance tradeoffs between \u03b2-lactams and CIP (Figures 3A and 4A for CAZ, Figures 3C and 4B for IMI).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genomic and phenotypic data shown in Figures 3 and 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "35d967ca-860c-4d3b-bb11-aeda6aaa1436",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C61",
+      "claim": "Genetic reversion of parC mutations occurred in each P3 replicate propagated in CAZ.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed genetic reversion of parC mutations in each P3 replicate propagated in CAZ (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genomic sequencing data shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "b444dd30-9baa-409d-b74c-677304610c5a",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C62",
+      "claim": "The topoisomerase IV parC is one of the canonical targets of CIP.",
+      "claim_type": "EXPLICIT",
+      "source": "The topoisomerase IV parC is one of the canonical targets of CIP but these mutations have been shown to incur a high fitness cost in the absence of CIP (Kugelberg et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kugelberg et al., 2005 and established knowledge",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "b9ea7d66-4d3c-48c4-b5eb-60eef8846f03",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C63",
+      "claim": "parC mutations incur a high fitness cost in the absence of CIP.",
+      "claim_type": "EXPLICIT",
+      "source": "The topoisomerase IV parC is one of the canonical targets of CIP but these mutations have been shown to incur a high fitness cost in the absence of CIP (Kugelberg et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kugelberg et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "48a10239-0b10-4d87-bcb2-d4fc44e6f78a",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C64",
+      "claim": "The high frequency of mutational reversion observed indicates that these resistant determinants are under enormous constraint and impose fitness costs in the presence of CAZ or IMI.",
+      "claim_type": "EXPLICIT",
+      "source": "The high frequency of mutational reversion observed in these experiments indicates that these resistant determinants are under enormous constraint and impose fitness costs in the presence of CAZ or IMI (Pennings et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the frequency of reversions observed and supported by citation",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "ef5e1f7f-05e0-46e8-a594-bf51a3fe9f96",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C65",
+      "claim": "Selection is the predominant force in the evolution of AMR.",
+      "claim_type": "EXPLICIT",
+      "source": "In the end, selection is unsurprisingly the predominant force in the evolution of AMR and produced convergent evolution even at the nucleotide level in some instances.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data showing selection as the largest contributor in most cases",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "2d4a2b51-b253-47b0-9ed7-35a2fe789a84",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C66",
+      "claim": "History and chance play clear and important roles in the emergence of new resistance phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet history and chance play clear and important roles in the emergence of new resistance phenotypes (Figures 3B,D,5, Vogwill et al., 2014), the extent of evolved resistance (Figures 2 and 3), the generation of collateral sensitivity networks, (Pal et al., 2015), and the predictability of the final resistance phenotype (Figures 1 and 4, Gifford et al., 2018; Scribner et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in multiple figures and citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "f6c04d6d-79a6-4a81-b92b-180b893ea9cd",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C67",
+      "claim": "Evolution of AMR follows a clear diminishing return pattern, where antibiotic pressure selects for mutations with progressively smaller phenotypic effects as the population is treated with higher antibiotic concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, our data reveals that evolution of AMR follows a clear diminishing return pattern, where antibiotic pressure selects for mutations with progressively smaller phenotypic effects as the population is treated with higher antibiotic concentrations (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "3811a84a-c3a3-42ba-b37a-9c8bfc74ebce",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C68",
+      "claim": "More resistant populations at the outset did not increase resistance further.",
+      "claim_type": "EXPLICIT",
+      "source": "This result may be instructive for AMR management: on the one hand, more resistant populations at the outset did not increase this phenotype further, but on the other hand, more susceptible lines rapidly compensated for this deficit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data showing differential resistance gains",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "c567bff1-61b7-40ac-9383-16cb0f335377",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C69",
+      "claim": "More susceptible lines rapidly compensated for their resistance deficit.",
+      "claim_type": "EXPLICIT",
+      "source": "This result may be instructive for AMR management: on the one hand, more resistant populations at the outset did not increase this phenotype further, but on the other hand, more susceptible lines rapidly compensated for this deficit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data showing differential resistance gains",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "830a447d-1738-44c7-b5cf-b17e1113ab26",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C70",
+      "claim": "Exposure to fluroquinolones in Gram-positive or Gram-negative bacteria commonly selects for mutations in gyrA.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, exposure to fluroquinolones in Gram-positive or Gram-negative bacteria commonly selects for mutations in gyrA (Seward and Towner, 1998; Weigel et al., 1998; Hooper and Jacoby, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "b5f62d90-428d-465f-9252-726add5511c7",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C71",
+      "claim": "Genetic background affects the fitness of transmissible elements.",
+      "claim_type": "EXPLICIT",
+      "source": "However, genetic background also affects the fitness of transmissible elements (Alonso-del Valle et al., 2021) and epidemiological data indicate that evolutionary history constrains the persistence of resistance mediated by plasmids (Dunn et al., 2019; Le\u00f3n-Sampedro et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Alonso-del Valle et al., 2021, Dunn et al., 2019, and Le\u00f3n-Sampedro et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "6cb6b236-1466-4683-89f0-b48bfade6a90",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C72",
+      "claim": "Evolutionary history constrains the persistence of resistance mediated by plasmids.",
+      "claim_type": "EXPLICIT",
+      "source": "However, genetic background also affects the fitness of transmissible elements (Alonso-del Valle et al., 2021) and epidemiological data indicate that evolutionary history constrains the persistence of resistance mediated by plasmids (Dunn et al., 2019; Le\u00f3n-Sampedro et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dunn et al., 2019 and Le\u00f3n-Sampedro et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "24353a2e-cd9d-432b-9540-23cf590899dc",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C73",
+      "claim": "160 generations correspond to ca. 100 days, 15 days, or 170 days of growth in patients of Escherichia coli, P. aeruginosa, or Salmonella enterica, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "While the scale of this experiment could seem small, it is well suited for studying the evolution of resistance as 160 generations correspond to ca. 100 days, 15 days, or 170 days of growth in patients of Escherichia coli, P. aeruginosa, or Salmonella enterica, respectively (Gibson et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gibson et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "179afe6c-2f79-4c6b-8c0a-f5eb6a618664",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C74",
+      "claim": "All populations increased CAZ resistance at day 3.",
+      "claim_type": "EXPLICIT",
+      "source": "All populations increased CAZ resistance at day 3 (nested one-way ANOVA, Tukey's multiple comparison tests MIC day 0 vs. MIC day 3, p=0.0080 q = 4.428, df = 51) and at the end of the experiment (nested one-way ANOVA Tukey's multiple comparison tests MIC 0 vs. MIC day 12, p\u22640.0001, q = 11.12, df = 51).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "42494587-7ba6-4b99-a419-8669ae9babb3",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C75",
+      "claim": "All populations increased CAZ resistance at the end of the experiment (day 12).",
+      "claim_type": "EXPLICIT",
+      "source": "All populations increased CAZ resistance at day 3 (nested one-way ANOVA, Tukey's multiple comparison tests MIC day 0 vs. MIC day 3, p=0.0080 q = 4.428, df = 51) and at the end of the experiment (nested one-way ANOVA Tukey's multiple comparison tests MIC 0 vs. MIC day 12, p\u22640.0001, q = 11.12, df = 51).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "2c683eb3-5133-4d85-b134-f732cce38f20",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C76",
+      "claim": "All populations increased IMI resistance at day 12 but not at early timepoints (day 3).",
+      "claim_type": "EXPLICIT",
+      "source": "All populations increased IMI resistance at day 12 but not at early timepoints (day 3) (nested one-way ANOVA Tukey's multiple comparison tests MIC at day 0 vs. MIC at day 12, p<0.0001, q = 9.519, df = 51; MIC at day 0 vs. MIC at day 3, p=0.3524, q = 1.969, df = 51).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "ad0732b8-09df-45ef-9a54-8f544757c5e1",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C77",
+      "claim": "Maximum killing with \u03b2-lactam antibiotics has been observed at 4\u00d7 MIC.",
+      "claim_type": "EXPLICIT",
+      "source": "CAZ or IMI concentrations were doubled every three days (ca. 20 generations), starting with 0.5\u00d7 minimum inhibitory concentration (MIC; Figure 1\u2014source data 1) for each clone and finishing with 4\u00d7 MIC, where maximum killing has been observed with \u03b2-lactams antibiotics (Nightingale, 1980).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Nightingale, 1980",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "0b6e1e02-332b-497a-a8bf-8b675f75d560",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C78",
+      "claim": "The average population size at day 1 was 4.7 \u00d7 10^8 (\u00b1 1.1 \u00d7 10^8) CFU/mL.",
+      "claim_type": "EXPLICIT",
+      "source": "The average population size at day 1 was 4.7 \u00d7 108 ( \u00b1 1.1 \u00d7 108) CFU/mL and 2.8 \u00d7 109 ( \u00b1 1.4 \u00d7 109) at day 12.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "86bdb06a-8af9-4952-bf49-0702af80e821",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C79",
+      "claim": "The average population size at day 12 was 2.8 \u00d7 10^9 (\u00b1 1.4 \u00d7 10^9) CFU/mL.",
+      "claim_type": "EXPLICIT",
+      "source": "The average population size at day 1 was 4.7 \u00d7 108 ( \u00b1 1.1 \u00d7 108) CFU/mL and 2.8 \u00d7 109 ( \u00b1 1.4 \u00d7 109) at day 12.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "00f755ef-d3a5-45d9-9f45-9927317f9001",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C80",
+      "claim": "Whole-population genomic sequencing was conducted with a mean site coverage of 358 (S.D. \u00b1 106) bases.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the genetic contributions of chance, history, and selection were determined by sequencing whole populations to a mean site coverage of 358 (S.D. \u00b1 106) bases at the end of the experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by sequencing methodology description",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "f8f2916f-c4ca-41ce-94cd-5af47ffb17cd",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C81",
+      "claim": "Clone B2 was found to contain standing genetic variation after 24 hr growing in M9+.",
+      "claim_type": "EXPLICIT",
+      "source": "Clone B2 was found to contain standing genetic variation after 24 hr growing in M9+ (Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genomic sequencing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "9578da32-f9f6-47de-8a45-8f6519763120",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C82",
+      "claim": "Evolving in presence of CAZ, increases in resistance levels and time were negatively correlated with the starting values at day 12.",
+      "claim_type": "EXPLICIT",
+      "source": "Evolving in presence of CAZ, no correlation was found after three days of antibiotic treatment (Spearman r = \u20130.08, p=0.919), but the increases in resistance levels and time were negatively correlated with the starting values at day 12 (Spearman r = \u20130.84, p=0.044) (Figure 2B and ).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "d835fc27-a0d7-44cd-a0bc-a7b1a02bc7ba",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "claim_id": "C83",
+      "claim": "Evolving in the presence of IMI, increases in resistance levels and time were negatively correlated at day 3 but not at day 12.",
+      "claim_type": "EXPLICIT",
+      "source": "Evolving in the presence of IMI, increases in resistance levels and time were negatively correlated at day 3 (Spearman r = \u20130.9258, p=0.033) but not at day 12 (Spearman r = \u20130.6262, p=0.1833).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4801639f-2edd-4957-85e4-cefad9d5ae9e",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Prior work (Santos-Lopez et al., 2019) established that selection of A. baumannii in biofilm versus planktonic environments with ciprofloxacin produced distinct genotypes and phenotypes, with biofilm-selected populations showing lower ciprofloxacin resistance and collateral sensitivity to \u03b2-lactam drugs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 are all supported by citation to the same prior work (Santos-Lopez et al., 2019) and establish the historical context for the current study. These claims describe prior work rather than current findings and are appropriately attributed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "d05a4fc6-b58b-464b-ade1-4f052b89b42e",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "After 3 days of subinhibitory CAZ selection, history was the dominant force explaining 61.7% of phenotypic variation in resistance, with selection contributing 30.7% and chance only 7.6%. All populations showed significant increases in CAZ resistance at this timepoint.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28 and C74 are supported by statistical analysis (nested ANOVA with p-values reported) and experimental data shown in Figure 2. The variance partitioning methodology is described and appropriate for the experimental design. The claim that all populations increased resistance is statistically supported (p=0.0080).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "6462b2ad-12fb-47b0-91a3-29e438cb67e1",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "By day 12 of CAZ treatment at 4\u00d7 MIC, selection became the dominant force (47.8% of variation) while history's contribution decreased to 31.4%, indicating that strong selective pressure can diminish but not erase historical effects. All populations showed significant resistance increases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31 and C75 are supported by statistical analysis shown in Figure 2 with appropriate p-values (p\u22640.0001). The temporal shift in variance contributions from history-dominated to selection-dominated is clearly demonstrated. The inference that strong selection diminishes historical effects (C31) is appropriately drawn from the quantitative data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "4e4ede3b-63a7-4f4a-9a0e-fc0f5de69886",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Populations with lower initial CAZ MICs increased resistance more than those with higher initial MICs, showing a diminishing returns pattern. More resistant populations did not increase resistance further, while susceptible populations rapidly compensated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32 and C82 are supported by correlation analysis (Spearman r = -0.84, p=0.044 at day 12) shown in Figure 2\u2014figure supplement 1. The negative correlation at day 12 supports the diminishing returns interpretation. Claims C68-C69 appropriately summarize this pattern, though they are somewhat redundant with C32.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "e24c9b6e-c6d3-4867-bf2f-acfebb7cf8ca",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "During IMI selection, no overall resistance change occurred at day 3 (subinhibitory concentrations), but significant increases occurred by day 12 at 4\u00d7 MIC. More sensitive populations gained more resistance than less sensitive ones at day 3, showing negative correlation with initial MIC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 and C76 are supported by statistical analysis (nested ANOVA, p=0.3524 for day 3, p<0.0001 for day 12) shown in Figure 2. Claim C42 is supported by data in Figure 2C and supplement. Claim C83 provides correlation statistics (Spearman r = -0.9258, p=0.033 at day 3) supporting the pattern.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "5ff20cf6-7cbd-486b-a8b3-5578999ff443",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "For IMI resistance evolution, selection explained 43.1% of phenotypic variation while history explained 33.2%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C43 is supported by statistical analysis shown in Figure 2 with significance indicated (p<0.05). The variance partitioning is consistent with the methodology described and appropriately quantifies the relative contributions of evolutionary forces.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "01ce4d3d-69a1-4d43-988b-8939e852a90e",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "After 12 days of CAZ selection, the grand mean of CIP resistance did not change overall, but biofilm-derived populations became significantly more sensitive to CIP while planktonic-derived populations did not, demonstrating that collateral sensitivity emergence depends on prior selection environment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 are supported by experimental data in Figure 3A showing differential responses between B and P populations. The inference in C37 that collateral sensitivity depends on prior environment is appropriately drawn from the differential responses observed. However, statistical tests for the B vs P comparison are not explicitly reported in the text.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "79cad1a5-2dc0-4416-837e-750c46af9dfd",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "All 12 populations evolved in CAZ became more resistant to IMI, with selection explaining 44.3% of variation, history 23.0%, and chance 32.2%, demonstrating cross-resistance between these \u03b2-lactam antibiotics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39 are well-supported by statistical analysis (nested t-test p<0.0001, t=7.507, df=34) and variance partitioning shown in Figure 3E. The cross-resistance pattern is clearly demonstrated with appropriate statistical rigor.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "cf99f7e4-d534-4403-ab46-1f4959556247",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Evolution in IMI did not affect CIP resistance on average (history explained 75% of variation), but produced collateral sensitivity to CIP in two biofilm-derived populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45 are supported by experimental data shown in Figure 3C and 3F. The dominance of history (75%) is clearly shown. However, the claim of collateral sensitivity in \"two B populations\" should be verified against the figure data to ensure accurate counting.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "ce256d98-133b-47ed-a799-88de01932416",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Selection in CAZ increased IMI resistance, but selection in IMI did not increase CAZ resistance, revealing an asymmetry in cross-resistance between these drugs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C46 is supported by experimental data shown in Figures 3B and 3D, which clearly demonstrate the asymmetric cross-resistance pattern. This is an important finding that distinguishes the mechanisms of resistance to these two \u03b2-lactam antibiotics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "0446950e-acc9-4b34-b8a2-769551ccf4b5",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "At the genotypic level, evolution in CAZ was shaped more by selection than history, while the opposite pattern was seen in IMI, with similar effects of chance in both experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 are supported by genomic analysis using Manhattan distance metrics shown in Figure 4. The methodology for calculating genotypic contributions of evolutionary forces is described in detail in the Materials and Methods. The contrasting patterns between CAZ and IMI are clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "0b6b3c5e-4745-4b4b-be20-4333957f2dad",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "During the history phase, biofilm lines selected mutations in adeL (regulator of adeFGH pump) producing collateral sensitivity to \u03b2-lactams, while planktonic lines selected adeN or pgpB mutations conferring cross-resistance to CAZ.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51 are supported by genomic data shown in Figure 1D and citation to prior work (Santos-Lopez et al., 2019). This establishes the mechanistic basis for the differential evolutionary trajectories observed in the selection phase.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "7c5e6514-f216-433c-b299-9f92142451a8",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Evolution in CAZ selected at least one mutation in adeJ (encoding the permease subunit of AdeIJK efflux pump) in 16 of 18 populations, a known cause of CAZ resistance in clinical isolates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C52 is supported by genomic sequencing data shown in Figure 4A with clear quantification (16/18 populations). Claim C53 is supported by citation to Lee et al., 2017 and represents established knowledge about the function of adeJ in CAZ resistance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "ba917568-801c-47c5-8093-00f1fd2b8614",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Evolution in IMI selected mutations in ftsI (encoding penicillin binding-protein 2) in all populations, one of the most common causes of de novo IMI resistance in clinical isolates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C54 is supported by genomic sequencing data shown in Figure 4B demonstrating 100% penetrance. Claim C55 is supported by citation to Lee et al., 2017 and represents established knowledge about ftsI's role in IMI resistance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "f6e4d850-d5ee-44d0-b69e-197b61ee57e1",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Evolution in \u03b2-lactam antibiotics generated convergent evolution at the genetic level regardless of genetic background.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C56 is supported by the high frequency of mutations in the same genes (adeJ for CAZ, ftsI for IMI) across populations with different ancestral backgrounds, as shown in Figure 4. The inference is appropriately supported by citations to similar findings in other studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "f1cb4214-0b15-480c-aae2-4ad4317abcf2",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Five replicate IMI populations that acquired the same mutation in ftsI (A579V) differed in resistance levels by up to fourfold, suggesting that genetic background or additional mutations influence phenotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C57 is supported by genomic and phenotypic data shown in Figure 4 and source data. This demonstrates that identical mutations can produce different phenotypes depending on genetic context, though the authors acknowledge that follow-up experiments are needed to definitively test this hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "ae2c1bbb-aabe-439c-bcec-fca3121f082f",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Genetic reversions of adeL mutations occurred five times in CAZ lines and three times in IMI lines, and these back-mutations reversed resistance tradeoffs between \u03b2-lactams and CIP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 are supported by genomic sequencing data shown in Figure 4A-B and phenotypic data in Figure 3. The frequency of reversions is clearly quantified. The connection between reversions and phenotypic changes is demonstrated by comparing genomic and phenotypic data across figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "5f407817-e80e-49c8-8868-20c3065f6c34",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Genetic reversion of parC mutations occurred in each P3 replicate propagated in CAZ.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C61 is supported by genomic sequencing data shown in Figure 4A. The authors also conducted a follow-up experiment (Figure 4\u2014figure supplement 1) to confirm that the reversion arose de novo rather than from standing variation, strengthening this result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "2c56b436-bf0a-4793-81ec-0a368ca0c70f",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The high frequency of mutational reversions indicates that resistance determinants selected during the history phase are under enormous constraint and impose fitness costs in the presence of CAZ or IMI.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C64 is an inference supported by the observed frequency of reversions (C58-C61) and citation to Pennings et al., 2021. The logic is sound: reversions would only be selected if the original mutations impose fitness costs in the new selective environment. However, direct fitness measurements would strengthen this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "8d7c6bd0-d911-4eea-ab5e-9563500efe77",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Selection is the predominant force in AMR evolution and produces convergent evolution, but history and chance play important roles in the emergence of resistance phenotypes, extent of resistance, collateral sensitivity networks, and predictability of final phenotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 appropriately synthesize the major findings from the variance partitioning analyses (Figures 2-4) and are supported by the experimental data throughout the manuscript. The nuanced conclusion that selection dominates but does not eliminate effects of history and chance is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "b7976cc6-2e6e-41a8-aa88-a2d4d7c7bdf5",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Evolution of AMR follows a diminishing returns pattern, where antibiotic pressure selects for mutations with progressively smaller phenotypic effects as populations are treated with higher antibiotic concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C67 is supported by experimental data shown in Figure 2\u2014figure supplement 1 demonstrating negative correlations between initial MIC and resistance gains. This pattern is consistent with established evolutionary theory and similar findings in other systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "47f752ca-9944-45d2-9f22-1b1a1f6391aa",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Strong selection in new drugs reduced but did not erase historical effects, revealing important contingencies. A history of biofilm selection constrained resistance to new drugs and led to frequent genetic reversions rather than compensatory mutations, creating potential vulnerabilities to orthogonal drugs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims synthesize the main findings of the study and are supported by the variance partitioning analyses (showing reduced but persistent historical effects), the reversion data (C58-C61), and the collateral sensitivity patterns (C36-C37, C45). The claims appropriately integrate phenotypic and genotypic data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "93efe5de-361d-4ec8-8f6c-955b1ba4ed6c",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "The manuscript reviews established evolutionary theory and prior work on the roles of history, chance, and selection in evolution, including specific applications to antibiotic resistance evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C22 are all supported by appropriate citations to prior work and represent established knowledge in evolutionary biology and AMR research. These claims provide necessary background context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "89f1f177-cbaa-4ce8-9d48-e47d57f24f54",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Acinetobacter baumannii is a leading agent of multidrug-resistant infections worldwide and is named as an urgent threat by the CDC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C24 are supported by citation to CDC, 2019 and represent established public health knowledge about the clinical importance of A. baumannii.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "ddd27ec9-ae68-4bc9-a1f7-69f103083cce",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "The level of evolved resistance converges and may be predictable, though effects of genetic background remain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C33 is inferred from the diminishing returns pattern (C32, C67) and supported by citations, but the predictability aspect is speculative. The data show convergence in some aspects (genetic parallelism) but persistent divergence in others (phenotypic variation despite same mutations). The claim is appropriately hedged with \"may be\" but requires further work to definitively establish predictability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "55e1c654-3d7a-4e40-b714-4bb529c42345",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "result_id": "R26",
+      "result_category": "llm",
+      "result": "The manuscript cites established knowledge about resistance mechanisms in clinical isolates and the effects of genetic background on resistance evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49, C62-C63, C70-C72 are all supported by appropriate citations to prior work and represent established knowledge relevant to interpreting the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "be969500-68ef-4e49-8224-9a2c96b9c762",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "result_id": "R27",
+      "result_category": "llm",
+      "result": "The experimental timescale (160 generations over 12 days) is clinically relevant and the antibiotic concentrations used (up to 4\u00d7 MIC) are appropriate for studying resistance evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C73 is supported by citation to Gibson et al., 2018 providing context for the clinical relevance of the timescale. Claim C77 is supported by citation to Nightingale, 1980 regarding maximum killing at 4\u00d7 MIC. These claims justify the experimental design choices.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    },
+    {
+      "id": "6aaa5f73-d710-4ef7-a55b-2706f7526f61",
+      "content_id": "bf093b96-8e2c-460e-a7ec-9cc138c75df9",
+      "result_id": "R28",
+      "result_category": "llm",
+      "result": "The manuscript reports key methodological details including population sizes (4.7\u00d710^8 CFU/mL at day 1, 2.8\u00d710^9 at day 12), sequencing coverage (mean 358\u00d7 \u00b1 106), and detection of standing genetic variation in clone B2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C81 report methodological details that are appropriately documented. These are important for assessing the adequacy of population sizes for detecting mutations and the quality of genomic data. The detection of standing variation in B2 (C81) is relevant for interpreting some results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:00:43.175302Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b1976673-7182-491f-babf-ad62faf3dead",
+      "result_id": "4801639f-2edd-4957-85e4-cefad9d5ae9e"
+    },
+    {
+      "claim_id": "78599831-980b-4da1-9b5e-d6b704abecf1",
+      "result_id": "4801639f-2edd-4957-85e4-cefad9d5ae9e"
+    },
+    {
+      "claim_id": "4c753003-0071-44de-84e3-cbe87a6068a6",
+      "result_id": "4801639f-2edd-4957-85e4-cefad9d5ae9e"
+    },
+    {
+      "claim_id": "5e6d5976-f864-47b4-b9be-1e287431a2f3",
+      "result_id": "d05a4fc6-b58b-464b-ade1-4f052b89b42e"
+    },
+    {
+      "claim_id": "16bd2ba0-5f1f-48ae-9dec-8b0a3bf126a2",
+      "result_id": "d05a4fc6-b58b-464b-ade1-4f052b89b42e"
+    },
+    {
+      "claim_id": "0b079744-b4d6-4ebd-807a-e707b3d2e069",
+      "result_id": "d05a4fc6-b58b-464b-ade1-4f052b89b42e"
+    },
+    {
+      "claim_id": "b391ae97-dcdb-4d9c-b6d2-3941830d995d",
+      "result_id": "d05a4fc6-b58b-464b-ade1-4f052b89b42e"
+    },
+    {
+      "claim_id": "179afe6c-2f79-4c6b-8c0a-f5eb6a618664",
+      "result_id": "d05a4fc6-b58b-464b-ade1-4f052b89b42e"
+    },
+    {
+      "claim_id": "4a38d8e7-b4c2-4df2-b83e-a5f1dc6904f4",
+      "result_id": "6462b2ad-12fb-47b0-91a3-29e438cb67e1"
+    },
+    {
+      "claim_id": "8806a2c4-de3e-41d7-888c-8cb5f9b52458",
+      "result_id": "6462b2ad-12fb-47b0-91a3-29e438cb67e1"
+    },
+    {
+      "claim_id": "4ef3897d-8d1f-4a55-acfd-7222e36b98e0",
+      "result_id": "6462b2ad-12fb-47b0-91a3-29e438cb67e1"
+    },
+    {
+      "claim_id": "42494587-7ba6-4b99-a419-8669ae9babb3",
+      "result_id": "6462b2ad-12fb-47b0-91a3-29e438cb67e1"
+    },
+    {
+      "claim_id": "99ded33d-1eb1-418f-87e1-a55d34996f58",
+      "result_id": "4e4ede3b-63a7-4f4a-9a0e-fc0f5de69886"
+    },
+    {
+      "claim_id": "9578da32-f9f6-47de-8a45-8f6519763120",
+      "result_id": "4e4ede3b-63a7-4f4a-9a0e-fc0f5de69886"
+    },
+    {
+      "claim_id": "3811a84a-c3a3-42ba-b37a-9c8bfc74ebce",
+      "result_id": "4e4ede3b-63a7-4f4a-9a0e-fc0f5de69886"
+    },
+    {
+      "claim_id": "c567bff1-61b7-40ac-9383-16cb0f335377",
+      "result_id": "4e4ede3b-63a7-4f4a-9a0e-fc0f5de69886"
+    },
+    {
+      "claim_id": "38c7ac55-6bca-4cd8-b933-26e606bac103",
+      "result_id": "e24c9b6e-c6d3-4867-bf2f-acfebb7cf8ca"
+    },
+    {
+      "claim_id": "0ea4418e-7d06-4d22-a456-76a36346e466",
+      "result_id": "e24c9b6e-c6d3-4867-bf2f-acfebb7cf8ca"
+    },
+    {
+      "claim_id": "063b8b73-2a0a-4401-9304-03ad04fadd82",
+      "result_id": "e24c9b6e-c6d3-4867-bf2f-acfebb7cf8ca"
+    },
+    {
+      "claim_id": "2c683eb3-5133-4d85-b134-f732cce38f20",
+      "result_id": "e24c9b6e-c6d3-4867-bf2f-acfebb7cf8ca"
+    },
+    {
+      "claim_id": "d835fc27-a0d7-44cd-a0bc-a7b1a02bc7ba",
+      "result_id": "e24c9b6e-c6d3-4867-bf2f-acfebb7cf8ca"
+    },
+    {
+      "claim_id": "464c2083-7e05-4b26-8790-53b6c05441e4",
+      "result_id": "5ff20cf6-7cbd-486b-a8b3-5578999ff443"
+    },
+    {
+      "claim_id": "6fa40d64-eca7-4481-82a1-88f4b3ab0b29",
+      "result_id": "01ce4d3d-69a1-4d43-988b-8939e852a90e"
+    },
+    {
+      "claim_id": "329595d1-e2c6-4137-a0c1-57d6055719a3",
+      "result_id": "01ce4d3d-69a1-4d43-988b-8939e852a90e"
+    },
+    {
+      "claim_id": "37e5969c-1c9a-460b-b836-511caf97f432",
+      "result_id": "01ce4d3d-69a1-4d43-988b-8939e852a90e"
+    },
+    {
+      "claim_id": "dd318b9f-9c26-4c0e-ae77-70773e813dd3",
+      "result_id": "79cad1a5-2dc0-4416-837e-750c46af9dfd"
+    },
+    {
+      "claim_id": "e9456493-f1a5-48a4-8bff-a25bdeec5321",
+      "result_id": "79cad1a5-2dc0-4416-837e-750c46af9dfd"
+    },
+    {
+      "claim_id": "932137d3-7b7f-4dfd-86e7-00e586826c66",
+      "result_id": "cf99f7e4-d534-4403-ab46-1f4959556247"
+    },
+    {
+      "claim_id": "151b613d-976a-4e4d-87e7-da7ce6788a9d",
+      "result_id": "cf99f7e4-d534-4403-ab46-1f4959556247"
+    },
+    {
+      "claim_id": "0f3559bf-30e5-429e-afed-030c25fd5afa",
+      "result_id": "ce256d98-133b-47ed-a799-88de01932416"
+    },
+    {
+      "claim_id": "f6f01170-b331-4442-b580-93ce1172a684",
+      "result_id": "0446950e-acc9-4b34-b8a2-769551ccf4b5"
+    },
+    {
+      "claim_id": "a1fed120-3859-43d5-b779-5ee381708035",
+      "result_id": "0446950e-acc9-4b34-b8a2-769551ccf4b5"
+    },
+    {
+      "claim_id": "99146880-6cc1-4748-b177-10813645fea8",
+      "result_id": "0b6b3c5e-4745-4b4b-be20-4333957f2dad"
+    },
+    {
+      "claim_id": "0cbeadcb-d663-4993-82be-a4a37fe5b6d8",
+      "result_id": "0b6b3c5e-4745-4b4b-be20-4333957f2dad"
+    },
+    {
+      "claim_id": "82d618f0-3cff-492a-a513-90c8f5d23e5c",
+      "result_id": "7c5e6514-f216-433c-b299-9f92142451a8"
+    },
+    {
+      "claim_id": "9ff1a64c-ba51-45e2-acdc-c1bdc66a7984",
+      "result_id": "7c5e6514-f216-433c-b299-9f92142451a8"
+    },
+    {
+      "claim_id": "db184407-17ba-4b98-8d65-2e618944bfce",
+      "result_id": "ba917568-801c-47c5-8093-00f1fd2b8614"
+    },
+    {
+      "claim_id": "8f8127c6-e048-42e8-a098-c12548794b47",
+      "result_id": "ba917568-801c-47c5-8093-00f1fd2b8614"
+    },
+    {
+      "claim_id": "56973b46-421a-476f-b380-4e7f99bedc41",
+      "result_id": "f6e4d850-d5ee-44d0-b69e-197b61ee57e1"
+    },
+    {
+      "claim_id": "53b897a9-94a9-49b7-9096-beb102eeec15",
+      "result_id": "f1cb4214-0b15-480c-aae2-4ad4317abcf2"
+    },
+    {
+      "claim_id": "5e1aa4a7-b631-44d2-bf83-7ab765cac59d",
+      "result_id": "ae2c1bbb-aabe-439c-bcec-fca3121f082f"
+    },
+    {
+      "claim_id": "454a496c-8719-487a-99d9-21c40b42b9d4",
+      "result_id": "ae2c1bbb-aabe-439c-bcec-fca3121f082f"
+    },
+    {
+      "claim_id": "fdd82ba9-8dad-4264-b163-68b9b76d4247",
+      "result_id": "ae2c1bbb-aabe-439c-bcec-fca3121f082f"
+    },
+    {
+      "claim_id": "35d967ca-860c-4d3b-bb11-aeda6aaa1436",
+      "result_id": "5f407817-e80e-49c8-8868-20c3065f6c34"
+    },
+    {
+      "claim_id": "48a10239-0b10-4d87-bcb2-d4fc44e6f78a",
+      "result_id": "2c56b436-bf0a-4793-81ec-0a368ca0c70f"
+    },
+    {
+      "claim_id": "ef5e1f7f-05e0-46e8-a594-bf51a3fe9f96",
+      "result_id": "8d7c6bd0-d911-4eea-ab5e-9563500efe77"
+    },
+    {
+      "claim_id": "2d4a2b51-b253-47b0-9ed7-35a2fe789a84",
+      "result_id": "8d7c6bd0-d911-4eea-ab5e-9563500efe77"
+    },
+    {
+      "claim_id": "f6c04d6d-79a6-4a81-b92b-180b893ea9cd",
+      "result_id": "b7976cc6-2e6e-41a8-aa88-a2d4d7c7bdf5"
+    },
+    {
+      "claim_id": "0b395da6-b2dc-4adb-920b-8606fd54024e",
+      "result_id": "47f752ca-9944-45d2-9f22-1b1a1f6391aa"
+    },
+    {
+      "claim_id": "297dd079-52fc-4e16-a6ed-6ce0b562ea23",
+      "result_id": "47f752ca-9944-45d2-9f22-1b1a1f6391aa"
+    },
+    {
+      "claim_id": "6da33a0e-8b42-48b1-a2b2-d6c7fb63985f",
+      "result_id": "47f752ca-9944-45d2-9f22-1b1a1f6391aa"
+    },
+    {
+      "claim_id": "c3b088cd-37ed-491a-9d65-6ba6ef611aab",
+      "result_id": "47f752ca-9944-45d2-9f22-1b1a1f6391aa"
+    },
+    {
+      "claim_id": "4ef3897d-8d1f-4a55-acfd-7222e36b98e0",
+      "result_id": "47f752ca-9944-45d2-9f22-1b1a1f6391aa"
+    },
+    {
+      "claim_id": "24ca7a62-fefa-470f-bb5e-7adac332eb52",
+      "result_id": "47f752ca-9944-45d2-9f22-1b1a1f6391aa"
+    },
+    {
+      "claim_id": "289b178b-eee6-4ce3-8c95-760c52409445",
+      "result_id": "93efe5de-361d-4ec8-8f6c-955b1ba4ed6c"
+    },
+    {
+      "claim_id": "1875b7ed-8f15-43e4-b3f3-d4a24dac6786",
+      "result_id": "93efe5de-361d-4ec8-8f6c-955b1ba4ed6c"
+    },
+    {
+      "claim_id": "4f299b91-31e6-47b7-a21f-05a629f6bc7d",
+      "result_id": "93efe5de-361d-4ec8-8f6c-955b1ba4ed6c"
+    },
+    {
+      "claim_id": "80ffe71d-8205-4a63-8175-b9202187e1c5",
+      "result_id": "93efe5de-361d-4ec8-8f6c-955b1ba4ed6c"
+    },
+    {
+      "claim_id": "d577880f-f846-4075-a33d-d34eb8d9a7aa",
+      "result_id": "93efe5de-361d-4ec8-8f6c-955b1ba4ed6c"
+    },
+    {
+      "claim_id": "53c4d528-14d5-4c10-b1f1-467e8d5d95a1",
+      "result_id": "93efe5de-361d-4ec8-8f6c-955b1ba4ed6c"
+    },
+    {
+      "claim_id": "22557414-d916-4cc4-84cf-e6ceb6eb4124",
+      "result_id": "93efe5de-361d-4ec8-8f6c-955b1ba4ed6c"
+    },
+    {
+      "claim_id": "7028f027-d4de-4c23-9816-0cc7abd71834",
+      "result_id": "93efe5de-361d-4ec8-8f6c-955b1ba4ed6c"
+    },
+    {
+      "claim_id": "c17523c7-2fcf-4ad4-a6db-81207fd213c7",
+      "result_id": "93efe5de-361d-4ec8-8f6c-955b1ba4ed6c"
+    },
+    {
+      "claim_id": "6357f509-adba-4300-aa81-a09355f32f1f",
+      "result_id": "93efe5de-361d-4ec8-8f6c-955b1ba4ed6c"
+    },
+    {
+      "claim_id": "096cc0a0-7f57-46e6-88e3-a89fbab7aefd",
+      "result_id": "93efe5de-361d-4ec8-8f6c-955b1ba4ed6c"
+    },
+    {
+      "claim_id": "ef7019bf-e679-47d1-9fc8-6c0cd0c022bd",
+      "result_id": "93efe5de-361d-4ec8-8f6c-955b1ba4ed6c"
+    },
+    {
+      "claim_id": "6131260c-a81f-4b8f-bd07-5e1d0bdbde3a",
+      "result_id": "93efe5de-361d-4ec8-8f6c-955b1ba4ed6c"
+    },
+    {
+      "claim_id": "bee42b66-695c-480f-9847-887a7c7d584f",
+      "result_id": "93efe5de-361d-4ec8-8f6c-955b1ba4ed6c"
+    },
+    {
+      "claim_id": "f77ede4e-ee39-4450-add7-1e34d8bc4055",
+      "result_id": "93efe5de-361d-4ec8-8f6c-955b1ba4ed6c"
+    },
+    {
+      "claim_id": "9fe9bbfb-d89c-420e-9dc7-a26613343bb7",
+      "result_id": "89f1f177-cbaa-4ce8-9d48-e47d57f24f54"
+    },
+    {
+      "claim_id": "975fdef7-c1df-4799-a2c2-5a41ab4187af",
+      "result_id": "89f1f177-cbaa-4ce8-9d48-e47d57f24f54"
+    },
+    {
+      "claim_id": "39bb0450-82e8-4e94-baa0-d7ad446e862a",
+      "result_id": "ddd27ec9-ae68-4bc9-a1f7-69f103083cce"
+    },
+    {
+      "claim_id": "767d6e90-d851-4a7f-90e7-a5cbf4c38ea1",
+      "result_id": "55e1c654-3d7a-4e40-b714-4bb529c42345"
+    },
+    {
+      "claim_id": "b444dd30-9baa-409d-b74c-677304610c5a",
+      "result_id": "55e1c654-3d7a-4e40-b714-4bb529c42345"
+    },
+    {
+      "claim_id": "b9ea7d66-4d3c-48c4-b5eb-60eef8846f03",
+      "result_id": "55e1c654-3d7a-4e40-b714-4bb529c42345"
+    },
+    {
+      "claim_id": "830a447d-1738-44c7-b5cf-b17e1113ab26",
+      "result_id": "55e1c654-3d7a-4e40-b714-4bb529c42345"
+    },
+    {
+      "claim_id": "b5f62d90-428d-465f-9252-726add5511c7",
+      "result_id": "55e1c654-3d7a-4e40-b714-4bb529c42345"
+    },
+    {
+      "claim_id": "6cb6b236-1466-4683-89f0-b48bfade6a90",
+      "result_id": "55e1c654-3d7a-4e40-b714-4bb529c42345"
+    },
+    {
+      "claim_id": "24353a2e-cd9d-432b-9540-23cf590899dc",
+      "result_id": "be969500-68ef-4e49-8224-9a2c96b9c762"
+    },
+    {
+      "claim_id": "ad0732b8-09df-45ef-9a54-8f544757c5e1",
+      "result_id": "be969500-68ef-4e49-8224-9a2c96b9c762"
+    },
+    {
+      "claim_id": "0b6e1e02-332b-497a-a8bf-8b675f75d560",
+      "result_id": "6aaa5f73-d710-4ef7-a55b-2706f7526f61"
+    },
+    {
+      "claim_id": "86bdb06a-8af9-4952-bf49-0702af80e821",
+      "result_id": "6aaa5f73-d710-4ef7-a55b-2706f7526f61"
+    },
+    {
+      "claim_id": "00f755ef-d3a5-45d9-9f45-9927317f9001",
+      "result_id": "6aaa5f73-d710-4ef7-a55b-2706f7526f61"
+    },
+    {
+      "claim_id": "f8f2916f-c4ca-41ce-94cd-5af47ffb17cd",
+      "result_id": "6aaa5f73-d710-4ef7-a55b-2706f7526f61"
+    }
+  ],
+  "comparisons": []
+}

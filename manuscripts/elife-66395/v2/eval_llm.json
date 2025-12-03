@@ -1,0 +1,285 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C22",
+      "C49"
+    ],
+    "result": "In 70.4% of AITL/PTCL-NOS patients, CH-associated mutations (primarily TET2 and DNMT3A) were shared between the primary lymphoma and BM/PB. These shared mutations had significantly higher VAFs (mean 22.5%) compared to tumor involvement-related variants (mean ~1%, p<0.0001). 44 variants from 14 genes were identified in BM/PB specimens, with 37 mutations shared between lymphoma and BM/PB in 19 of 27 cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C15, C22, and C49 provide converging evidence from targeted sequencing of 27 paired samples. The methodology is clearly described (C9), statistical significance is demonstrated (C22), and the frequency and distribution of mutations are well-documented. The distinction between CH-associated and tumor involvement variants is methodologically sound based on VAF analysis and tumor burden estimation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "In addition to CH-associated mutations, 65 late mutations were identified in AITL/PTCL-NOS, enriched in RHOA (67%), TET2 (48%), IDH2 (33%), and other oncogenes. These late mutations were characterized by absence of DNMT3A mutations and significant enrichment of missense mutations (75.2% vs 36.1% in CH mutations, p<0.0001). IDH2, PLCG1, and TP53 mutations were found exclusively as late mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 present a coherent picture of late-stage mutations with appropriate statistical testing (C20). The distinction between early CH-associated and late mutations is well-supported by the data, including the differential enrichment of mutation types and specific genes. The findings are internally consistent and build on the CH mutation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C51",
+      "C55",
+      "C78",
+      "C85"
+    ],
+    "result": "The study provides evidence that AITL/PTCL-NOS emerges from mutated hematopoietic stem cells (HSC) that are associated with CH and serve as lymphoma precursors. TET2/DNMT3A mutations occur early in HSCs before lineage commitment, establishing a link between CH and AITL development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C51, C55, C78, and C85 represent the central mechanistic conclusion of the study. This interpretation is well-supported by the shared mutation data (C11-C14), the presence of mutations in multiple lineages (C39-C43), and is consistent with established models of clonal hematopoiesis. The inference is reasonable given the data, though direct HSC sequencing was not performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C68",
+      "C69",
+      "C82"
+    ],
+    "result": "CH-associated mutations showed comparable transition and transversion rates (54.76% vs 45.24%) with C>T (44%) and C>G (20%) as predominant substitutions. Mutational signature analysis identified CH_Sign.01 matching COSMIC Signature 2 (CCS=0.65), associated with AID/APOBEC activity, which dominated in 75% of samples. A second signature (CH_Sign.02) matched COSMIC Signature 15 (CCS\u22480.50), linked to defective DNA mismatch repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28, C68-C69, and C82 present mutational signature analysis with appropriate methodology. The cosine similarity scores are reasonable (0.5-0.65), and the association with AID/APOBEC is consistent with the mutation spectrum observed. The statistical analysis is appropriate, though the moderate CCS values indicate the signatures are not perfect matches to COSMIC references.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C83"
+    ],
+    "result": "Late mutations showed enrichment of C>A substitutions (36.7%) compared to CH mutations (mean 38.8% vs 5.95%, p=0.0024), with 67% of cases showing C>A substitutions versus 16% in CH mutations. Signature analysis identified LM_Sign.01 matching COSMIC Signature 4 (CCS\u22480.5), associated with tobacco smoking, active in 75% of samples. This signature exhibited transcriptional strand bias (C>A forward strand 2.4-fold higher than G>T reverse strand).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 and C83 provide strong evidence for smoking-associated mutational signatures in late mutations. The statistical comparison is significant (p=0.0024), the signature analysis methodology is appropriate, and the transcriptional strand bias is characteristic of tobacco-induced mutations. The CCS of 0.5 is moderate but acceptable for biological signatures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C86"
+    ],
+    "result": "The incidence rate of lung cancer in AITL/PTCL-NOS patients was 172.3 times higher than age-matched general population (11,547 vs 67 per 100,000, p<0.00001). Despite 73.1% of patients being documented non-smokers, the smoking-associated COSMIC Signature 4 was present in non-smokers, suggesting undocumented secondhand smoke (SHS) exposure. Historical data indicates 83.9% of US non-smokers had detectable nicotine metabolites in the early 1990s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C34-C38, C63-C66, and C86 present an intriguing association between AITL and lung cancer risk, with a highly significant incidence rate difference. However, the causal link to smoking/SHS is uncertain. The presence of Signature 4 in non-smokers is explained by historical SHS exposure data, but this is speculative (C65). No direct measurement of SHS exposure was performed in this cohort, and the lack of difference in C>A burden between smokers and non-smokers (C36) weakens the direct smoking association. The conclusion about SHS as a risk factor requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Four AITL patients presented with additional hematologic neoplasms of other lineages (myeloid or B-lymphoid), either preceding or following AITL diagnosis. These cases showed shared mutations between AITL and the concomitant malignancies, supporting divergent evolution from common mutated hematopoietic precursors. All four cases had multiple (>1) pathogenic TET2 mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 present compelling case studies with genetic evidence for common clonal origin. The shared mutations between different lineage malignancies (C40-C42) provide strong support for the HSC origin model. The observation that all four cases had multiple TET2 mutations (C44) is notable and leads to the biomarker analysis. The sample size is small (n=4) but the genetic evidence is clear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C80",
+      "C84"
+    ],
+    "result": "AITL patients with \u22652 pathogenic TET2 mutations at \u226515% VAF had significantly shorter time to development of concomitant hematologic neoplasms (CHN) (p=0.0006, HR=14.01, 95% CI 3.1-63). This biomarker showed 97.2% specificity, 72.7% sensitivity, 88.9% PPV, and 92.1% NPV for predicting CHN risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48, C80, and C84 present survival analysis with appropriate statistical methods (Kaplan-Meier, Cox proportional hazards). The p-value is highly significant, and the hazard ratio is substantial. The diagnostic performance metrics are strong, particularly specificity and NPV. However, the sample size for the high-risk group is small (n=11), and the analysis combined the study cohort with an external dataset, which could introduce heterogeneity. The biomarker requires prospective validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "One case (patient #14) demonstrated that a subset of DLBCL may originate from mutated HSC, with shared TET2 mutations among CH, AITL, and DLBCL. This represents the first reported case of a mutated HSC developing into three distinct tumors of diverse lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 present a novel case study with clear genetic evidence of shared mutations across three different hematologic malignancies. The claim of being the first such reported case (C58) is supported by the authors' literature knowledge. While based on a single case, the genetic evidence is compelling and the finding is scientifically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "CH-associated TET2 and DNMT3A mutations are insufficient for tumorigenesis, requiring additional genetic alterations. This is supported by animal model data showing that TET2 disruption or RHOAG17V expression alone failed to induce AITL, but combined mutations led to AITL-like lymphoma development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 integrate the current study's findings (68.4% of cases had late mutations) with published animal model data. The conclusion is well-supported by both the observational data from this study and experimental evidence from cited literature. The multi-hit model is consistent with established cancer biology principles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The average VAF of CH-associated mutations in the cohort (22.5%) was higher than in the general population, consistent with increased risk of hematologic malignancy associated with VAF >10%. Different TET2 mutations showed variable capacity to generate CH, as demonstrated by patient #28 with three TET2 mutations having different VAFs in BM (0%, 5.47%, 10.89%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 present observations about VAF distributions with appropriate comparison to published literature (C53). The example from patient #28 (C54) illustrates clonal heterogeneity and differential driver strength. The interpretation is reasonable, though the mechanism underlying differential CH generation capacity is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "C>A mutations associated with Signature 4 are caused by mis-replication or mis-repair of tobacco carcinogen-induced DNA damage, predominantly resulting in missense mutations. This is consistent with the finding that 75.2% of late non-CH mutations were missense.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 connect published mechanistic understanding of tobacco-induced mutagenesis with the observed mutation spectrum. The consistency between expected (missense enrichment from tobacco) and observed (75.2% missense) supports the interpretation. However, this is correlative rather than mechanistic evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C71",
+      "C77",
+      "C81"
+    ],
+    "result": "The study suggests potential clinical interventions and future research directions: smoking cessation/SHS avoidance may prevent AITL in high-risk populations with CH; AID might be a therapeutic target for AITL; the TET2 biomarker may help clinical stratification; and single-cell methodology could definitively determine clonal architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67, C71, C77, and C81 represent speculative proposals for future work and clinical applications. While these suggestions are reasonable based on the study findings, they are explicitly speculative (C67, C71, C81) or require prospective validation (C77). These are appropriate discussion points but not supported results from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "Inactivation of AID reduced C>T mutation accumulation and blocked B-cell malignancy development in aging TET2-deficient mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 reports findings from published literature (Mouly et al., 2018) that support the potential role of AID in lymphomagenesis. This is appropriately cited prior work that contextualizes the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Previously identified CH features predictive of malignancy include >1 mutated gene, VAF >10%, and mutations in TP53/IDH1/2, but TET2 has not been implicated. The multiple-hit TET2 biomarker may be specific to AITL with CH. Mechanistically, multiple high-burden TET2 mutations may increase clonal expansion and/or disrupt TET2 activity more severely, increasing risk for additional driver mutations, consistent with diverse malignancies in aging TET2-deficient mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72-C76 discuss the novelty and potential mechanism of the TET2 biomarker. While C72-C73 accurately cite prior literature, C74-C75 are speculative mechanistic explanations without direct experimental support. The mouse model data (C76) provides indirect support but doesn't directly test the multiple-hit hypothesis. The specificity of this biomarker to AITL requires validation in other contexts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "The impacts of TET2/DNMT3A mutations may be most felt in T-cells of follicular helper cell origin (TFH).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C56 is explicitly speculative, proposing that TFH cells are particularly susceptible to TET2/DNMT3A mutations. While this is consistent with AITL arising from TFH cells, there is no direct experimental evidence in this study to support differential impact across T-cell subsets. This is reasonable speculation but unsupported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Background information on AITL: it is the most common PTCL subtype (21-36.1%), arises from TFH cells expressing markers like PD1/CXCR5/BCL-6/CD10/CXCL13/ICOS-1, has poor 5-year survival (33% OS, 18% FFS), and is characterized by mutations in TET2/RHOA/DNMT3A/IDH2. TET2 and DNMT3A are also associated with myeloid malignancies and CH, an aging-related process of clonal expansion in hematopoietic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 present established background information appropriately cited from published literature. These provide context for the study but are not novel findings. The information is accurately represented based on the citations provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "Large cohort studies have demonstrated increased risk of hematologic malignancy for individuals with CH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 accurately cites established findings from large cohort studies (Genovese et al., 2014; Jaiswal et al., 2014). This is well-established prior work that provides context for the current study.",
+    "result_type": "MINOR"
+  }
+]

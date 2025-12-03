@@ -1,0 +1,445 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The authors conducted a meta-analysis of publicly available CBMC microarray datasets from NCBI's Gene Expression Omnibus, identifying 354 datasets, of which 17 contained relevant metadata on perinatal asthma risk factors. A total of 605 unique transcriptomes were included in the final analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 describe the dataset identification and selection process with specific numbers that are internally consistent and documented in Table 1. The search strategy and inclusion criteria are clearly described in the methods section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Univariate meta-analyses identified differential gene expression (FDR < 1%) associated with perinatal risk factors: 122 genes for sex, 34 for gestational age, 4 for birthweight, and 12 for maternal pre-pregnancy BMI. Expected sex-linked genes on X and Y chromosomes showed the largest effects, and HBE1 was associated with preterm gestational ages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24 report specific statistical findings from the meta-analysis with appropriate FDR thresholds. The identification of expected sex-linked genes (C23) and HBE1 (C24) provides internal validation. Results are documented in Supplementary files 1-4 and Figure 2A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "The gestational age meta-analysis results were validated against published DNA methylation data, showing that genes with increased methylation during gestation exhibited decreased expression with gestational age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 describes an orthogonal validation using independent methylation data from Bohlin et al., 2016. The inverse relationship between methylation and expression is biologically expected and shown in Figure 2\u2014figure supplement 1 with statistical significance (p < 2.2e-16).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Gene set enrichment analysis identified 18 GO terms enriched in low-risk profiles (involving innate immune signaling and defense) and 19 GO terms enriched in high-risk profiles (involving translation and RNA metabolic processes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 report GSEA results with appropriate FDR thresholds (< 1%) and biologically coherent functional categories. The enrichment patterns are visualized in Figure 2B and align with the hypothesis about myeloid differentiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Analysis using Human Protein Atlas data revealed that low-risk genes showed increased expression in myeloid cells (particularly neutrophils) while high-risk genes showed increased expression in lymphoid cells, suggesting lower risk individuals have increased myeloid cell populations in CBMCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 describe cell-type enrichment analysis using external reference data (HPA). The pattern is shown in Figure 2C. However, C32 is an inference about cell composition that cannot be definitively established from gene expression patterns alone without direct cell counting, though the inference is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "The pooled z-score effectively amalgamated information across all univariate analyses, with the strongest contributions from gestational age at birth, newborn sex, and birthweight meta-analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 describe validation of the pooled z-score approach through correlation analysis shown in Figure 2D. The analysis demonstrates that the pooling method appropriately weights the individual analyses without over-representation of any single factor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Validation in the UIH cohort identified 51 genes with replication score > 3 that corresponded well with gestational age, sex, and birthweight meta-analyses (median p-values 0.02, 0.01, 0.11 respectively) but showed limited correlation with maternal PP BMI (median p-value 0.58).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 describe the replication analysis with specific statistical thresholds and p-values. The replication score method is novel but clearly defined in the methods. Results are shown in Figure 3A and demonstrate successful validation for most risk factors except maternal BMI.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Replicating genes were enriched for vesicle biology processes, with low-risk genes enriched for neutrophil-specific granule components (MS4A3, CEACAM8, OLR1, CAMP, LTF, CHI3L1, SLPI, PGLYRP1) and high-risk genes enriched for vesicle sorting/production and membrane biology genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 describe functional enrichment of validated genes with specific gene lists. The enrichment for neutrophil-specific granule components is a key finding supported by Figure 3\u2014figure supplement 2 and literature citations (R\u00f8rvig et al., 2013).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "Principal component analysis of the 51 replicating genes showed a significant inverse association between the first eigenvector and number of epidemiologic risk factors (R = -0.51, p < 0.01) in the UIH cohort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 reports a specific statistical association with confidence intervals and p-value shown in Figure 3B. The first eigenvector explained 41.3% of variance, indicating it captures substantial information about the gene signature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "Re-analysis of mass cytometry data from Olin et al., 2018 showed cord blood neutrophil abundance was inversely associated with number of risk factors (R = -0.57, Bonferroni p-adj < 0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 describes secondary analysis of published data with appropriate multiple testing correction. The strong correlation (R = -0.57) with stringent significance threshold provides independent validation of the relationship between risk factors and neutrophil abundance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Re-analysis of plasma protein data from Olin et al., 2018 showed that serum proteins from low-risk genes had negative correlations with number of risk factors, with neutrophil-enriched proteins (CEACAM8, PGLYRP-1, CHIT1, sIL6R\u03b1, MMP-9, OSM) showing strong correlations with both neutrophil abundance and risk factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 describe protein-level validation of transcriptomic findings using independent data. The concordance between mRNA and protein levels for specific granule proteins strengthens the biological interpretation, shown in Figure 4B-C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "In the UIH cohort, PGLYRP-1 protein concentration correlated with its mRNA (R = 0.39, p < 0.05) and was inversely associated with number of risk factors (R = -0.51, p < 0.01), while sIL6R\u03b1 showed no association with its mRNA or risk factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 demonstrate differential behavior of PGLYRP-1 versus sIL6R\u03b1, supporting the hypothesis that specific granule proteins (PGLYRP-1) are transcriptionally regulated while sIL6R\u03b1 derives from post-translational processes. Data shown in Figure 4D with appropriate statistics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "PGLYRP-1 and sIL6R\u03b1 concentrations did not differ significantly between UIH and Project Viva cohorts, and the two proteins were positively correlated in both cohorts (UIH: R = 0.21; Project Viva: R = 0.19).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 establish comparability between cohorts and a consistent relationship between the two proteins. The positive correlation suggests both are neutrophil-derived, though they differ in their associations with risk factors. Data shown in Figure 4\u2014figure supplement 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "In Project Viva, PGLYRP-1 showed a negative association with number of risk factors (\u03b2 = -0.22, p = 0.003) driven by gestational age and sex, with no association for PP BMI or birthweight. sIL6R\u03b1 showed no association with risk factors but was inversely associated with maternal Black/African-American race in both cohorts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 describe detailed demographic associations in the larger Project Viva cohort, confirming UIH findings for PGLYRP-1 and revealing a race-specific association for sIL6R\u03b1. The differential associations support distinct biological roles for these proteins. Data in Table 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "PGLYRP-1 was significantly associated with reduced odds of current asthma at mid-childhood (adjusted OR = 0.50, p = 0.003) but not at early-teen follow-up. sIL6R\u03b1 showed no significant associations with asthma at either time point.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 report the primary outcome analysis with appropriate adjustment for confounders (Model 3). The lack of association at early-teen follow-up is acknowledged as potentially due to reduced power from differential attrition. Results shown in Figure 5A and Table 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "PGLYRP-1 showed a trend toward association with FEV1/FVC at mid-childhood (\u03b2 = 1.18, p = 0.09) and significant association at early-teen follow-up (\u03b2 = 1.15, p = 0.02). Neither protein was associated with bronchodilator response, and sIL6R\u03b1 showed no association with FEV1/FVC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 describe pulmonary function outcomes with appropriate statistical reporting. The progression from trend to significance suggests a persistent effect of PGLYRP-1 on lung function. Results shown in Figure 5B and Table 4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "Variance decomposition analysis showed PGLYRP-1 was the most important predictor for mid-childhood asthma (model R\u00b2 \u2248 18%) and second most important for early-teen FEV1/FVC (model R\u00b2 \u2248 26%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 quantify the relative importance of PGLYRP-1 compared to other risk factors using appropriate variance decomposition methods. Results shown in Figure 5\u2014figure supplement 2 demonstrate PGLYRP-1 contributes substantially to outcome prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Subset analyses revealed effect modification by small for gestational age and race/ethnicity ('Other') for mid-childhood asthma, and by small for gestational age and maternal obesity for FEV1/FVC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 identify potential effect modifiers through subset analysis shown in Figure 5\u2014figure supplement 3. However, these analyses involve multiple comparisons and small subgroups, so findings should be considered exploratory and require validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "At early-teen follow-up, the Project Viva subset had 9% asthma prevalence versus 15% in the full cohort, likely due to differential attrition with 68% of asthmatics having missing responses versus 27% of non-asthmatics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 document an important limitation regarding differential attrition that could bias results. The authors appropriately acknowledge this could explain the lack of association between PGLYRP-1 and asthma at the early-teen time point.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Lower risk individuals had higher expression of genes encoding neutrophil-specific granule components (both luminal and membrane proteins), and the additive effect of multiple risk factors was associated with reduced transcription and protein abundance of specific granule contents, with PGLYRP-1 correlating with neutrophil abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 synthesize findings across transcriptomic, proteomic, and cellular analyses. The convergence of evidence from multiple data types and cohorts strongly supports the central conclusion about specific granule biology and asthma risk.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The study demonstrates that transcription of genes involved in myeloid differentiation in cord blood is inversely associated with pediatric asthma risk factors, with validation showing specific association with neutrophil-specific granule genes. PGLYRP-1 protein concentration was inversely associated with mid-childhood asthma and early-teen FEV1/FVC, leading to the conclusion that neutrophil-specific granule abundance at birth predicts pediatric asthma risk and pulmonary function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C102 represent the main conclusions of the study, synthesizing findings from meta-analysis, validation cohorts, and outcome analyses. The evidence chain is strong: transcriptomic signature \u2192 specific granule genes \u2192 PGLYRP-1 protein \u2192 clinical outcomes. However, C102 makes a causal inference ('predicts') that is not fully established by observational data, though the evidence is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C80"
+    ],
+    "result": "PGLYRP-1 abundance reflects neutrophil degranulation and transcription, while sIL6R\u03b1 derives from receptor shedding and splicing. The differential associations suggest specific granule contents have stronger associations with asthma risk than total neutrophil abundance, with PGLYRP-1 serving as a marker of neutrophil functional maturity and sIL6R\u03b1 representing total neutrophil abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75, C80 provide mechanistic interpretation supported by citations and the differential behavior of PGLYRP-1 versus sIL6R\u03b1. The interpretation that PGLYRP-1 reflects functional maturity while sIL6R\u03b1 reflects abundance is reasonable but somewhat speculative (C80), as direct functional assays were not performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "PGLYRP-1 was associated with gestational age, sex, and mode of delivery (factors that may influence neutrophil functionality), while sIL6R\u03b1 was only associated with maternal Black/African-American race (consistent with known baseline neutrophil count differences in individuals of African descent).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 interpret the demographic associations in biological context. The association of sIL6R\u03b1 with race (C78) is interesting given known ethnic differences in neutrophil counts (C79, supported by Reich et al., 2009). C77 makes a reasonable inference about functionality based on Lawrence et al., 2017.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "Multiple perinatal risk factors for pediatric asthma can be ascertained at birth, including maternal characteristics, demographics, and birth characteristics. Meta-analyses have established strong associations between these factors and asthma risk, though many risk factors co-occur.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 establish the background and rationale for the study, supported by multiple meta-analysis citations. These are well-established facts in the field that motivate the current investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Previous studies identified eosinophil-associated methylation signatures in school-aged children with asthma consistent with T2 inflammation, but these signatures were not present in cord blood. Cord blood T2 responses and IgE do not predict later asthma, and interventions targeting early-life immunity have failed to prevent asthma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C9 summarize prior literature establishing the knowledge gap that motivates this study. All claims are supported by appropriate citations. This background establishes why the authors focused on non-T2 immune features at birth.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Fetal hematopoiesis undergoes developmental changes during gestation, with myeloid lineage production most pronounced in later gestational ages. Certain cell populations abundant in cord blood are rapidly depleted postnatally, and in utero factors can transiently impair neutrophil abundance and function at birth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 provide biological context about perinatal hematopoiesis, supported by appropriate citations. This background establishes the biological plausibility of the study's findings regarding gestational age effects on neutrophil biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Literature evidence shows that SLPI deficiency impairs neutrophil development, individuals with specific granule deficiency syndrome have abnormal neutrophils and increased infection susceptibility, supporting the notion that neutrophil differentiation depends on secondary granule generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 cite relevant literature to support the biological importance of specific granules. C72 is an inference that is reasonable given the cited evidence, though it represents the authors' interpretation rather than a direct finding from those studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "PGLYRP-1 has antimicrobial function, though cord blood concentrations are below in vitro antimicrobial thresholds. It functions synergistically with other antimicrobials, and pglyrp-1\u2212/\u2212 mice show increased infection susceptibility. However, mammalian PGLYRP-1 lacks peptidoglycan hydrolysis activity and may have non-antimicrobial roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 discuss PGLYRP-1 function based on literature. The authors appropriately note that cord blood concentrations (C81) are below antimicrobial thresholds from in vitro studies, suggesting caution in interpreting antimicrobial function as the primary mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Murine studies show that genetic absence of pglyrp1 leads to moderately reduced airway resistance and T2 responses to allergen challenge, though protection is incomplete. Bone marrow reconstitution experiments suggest PGLYRP-1 at time of sensitization drives increased airway resistance. PGLYRP-1 is a pro-inflammatory TREM-1 ligand and is associated with inflammatory conditions in adults.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 discuss murine studies and adult disease associations. The authors appropriately note limitations of comparing germline knockout studies in adult mice to perinatal human biology. The pro-inflammatory role (C89-C90) seems paradoxical given the protective association in their human data, which the authors acknowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "PGLYRP-1 and other specific granule proteins are dramatically reduced in serum at 1 week postnatal compared to cord blood and show poor correlation with cord blood concentrations, suggesting important temporal variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 cite Olin et al., 2018 to establish the temporal dynamics of specific granule proteins. This supports the authors' emphasis on the unique biology of the perinatal period and suggests timing of measurement is critical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "Literature shows that reduced expiratory pulmonary function in adolescence and adulthood is associated with childhood asthma diagnosis, and current pediatric asthma can impair FEV1/FVC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 cite relevant literature to contextualize the FEV1/FVC findings. This supports the authors' discussion of whether PGLYRP-1 associations with adolescent lung function reflect persistent effects or consequences of childhood asthma.",
+    "result_type": "MINOR"
+  }
+]

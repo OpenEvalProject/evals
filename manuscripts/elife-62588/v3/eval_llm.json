@@ -1,0 +1,277 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C15",
+      "C16",
+      "C21",
+      "C78"
+    ],
+    "result": "Release probability (Pr) at CA3-CA1 synapses increases with distance from the soma in apical dendrites. Using optical quantal analysis (OQA) of Ca2+ signals in dendritic spines, the authors measured Pr at 67 individual synapses and found a highly significant centrifugal trend (p < 0.001, r = 0.413), with average Pr rising from ~0.2 at 50 \u00b5m to ~0.5 at 300 \u00b5m from the soma. This trend remained significant when measured from primary apical dendrites, suggesting it applies to oblique branches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C15, C16, C21, and C78 collectively provide strong experimental evidence for the centrifugal increase in Pr. The OQA method provides direct measurements of Pr at individual synapses with clear statistical significance (p < 0.001). The finding is replicated when measuring from primary dendrites (C21, p = 0.00231), strengthening the conclusion. The sample size (n=67 synapses from 53 cells) is adequate for detecting the trend despite biological variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C29",
+      "C30",
+      "C31",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Paired-pulse ratio (PPR) of release probabilities decreases with distance from the soma, consistent with the increase in Pr. PPR decreased from ~3 to ~1.1 over the 50-300 \u00b5m distance range for both P2 and P2* measurements. The probability of both stimuli initiating successful release showed minimal distance dependence, and second-release Pr values were evenly distributed along dendrites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C29-C31, and C101-C103 provide consistent evidence that PPR decreases with distance, which is the expected inverse relationship with Pr. The use of two PPR calculation methods (P2/P1 and P2*/P1) strengthens the finding by addressing potential detection artifacts. The observation that second-release Pr values are evenly distributed (C31) is consistent with the PPR decrease compensating for the first-pulse Pr increase.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C104",
+      "C105"
+    ],
+    "result": "iGluSnFR-based measurements of glutamate release confirm the distance-dependent trend in release probability. Paired-pulse iGluSnFR signals showed a clear trend toward lower PPR (hence higher Pr) with greater distances from s. pyramidale (p < 0.001, r = -0.846, n = 33), qualitatively consistent with OQA Ca2+ signal data. The first iGluSnFR response amplitude showed no distance dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 and C104-C105 provide independent validation of the Pr trend using a different methodological approach. The strong correlation (r = -0.846, p < 0.001) for PPR vs. distance is highly significant. The authors appropriately acknowledge that iGluSnFR signals reflect multiple local synapses (C42), making this approach suitable for PPR but not direct Pr measurements. The lack of distance dependence for first response amplitude (C45, C105) is appropriately explained by confounding factors (C46).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Similar-fidelity synapses (those with similar Pr values) tend to cluster together along the same dendrite. Analysis of synapse pairs on the same dendritic branch showed that the percentage difference in Pr between two synapses correlates with the distance between them (p = 0.00987, r = 0.623), suggesting local homogenization of Pr values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C23-C25 provide evidence for local clustering of similar Pr values. The correlation between Pr difference and inter-synapse distance (p = 0.00987, r = 0.623) is statistically significant with n=15 synapse pairs. This finding extends previous observations in cultured neurons (C24) to ex vivo tissue. However, the sample size is relatively small, and the mechanism underlying this clustering is not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C26",
+      "C28"
+    ],
+    "result": "Release probability shows no significant trends with respect to synapse position relative to local dendrite branching points. No correlation was found between Pr and relative synapse position within dendritic branches (p = 0.176, r = 0.173), suggesting that signal normalization within branches remains valid during sustained activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C26, and C28 demonstrate the absence of Pr gradients within individual dendritic branches. The lack of statistical significance (p = 0.176) with n=63 synapses is appropriately interpreted. The authors acknowledge reduced statistical power due to shorter branch lengths compared to overall dendritic length. The inference about signal normalization (C28) is reasonable but speculative, as it is not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Dendritic spine density increases toward distal dendrites and correlates positively with Pr but not with PPR. Longitudinal spine density increased with distance from soma (p = 0.0207, r = 0.286) and showed positive correlation with Pr (p = 0.0460, r = 0.245) but no correlation with PPR values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 provide evidence for increased spine density distally that correlates with Pr. The statistical significance is modest (p = 0.0207 and p = 0.0460) with relatively low correlation coefficients, but the trends are consistent across n=65 and n=67 synapses respectively. The authors appropriately note that optical resolution may limit detection of smallest spines (C87), suggesting these measurements primarily reflect larger, mushroom-type spines.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "The slope of iGluSnFR responses to five-pulse bursts increases significantly with distance from s. pyramidale (p < 0.001, r = 0.641), suggesting greater fidelity in signal transfer by spike bursts toward more distal dendrites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 provide evidence that burst responses show distance-dependent enhancement. The statistical significance is strong (p < 0.001, r = 0.641) with n=61 boutons. However, the inference about signal transfer fidelity (C48) is based on a slope measurement that serves as a crude indicator of short-term plasticity. The functional interpretation requires validation through the modeling studies that follow.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C50",
+      "C51",
+      "C52",
+      "C56",
+      "C59",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Computational modeling with a realistic CA1 pyramidal cell demonstrates that the observed Pr trend boosts signal transfer fidelity, particularly at higher input frequencies. The Pr trend adds ~13% to single-pulse EPSP amplitude while decreasing PPR by ~20%, and improves signal transfer with effects increasing monotonically at higher frequencies, both with and without short-term plasticity mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C50-C52, C56, C59, and C106-C109 describe comprehensive modeling results using a realistic NEURON model. The simulations appropriately incorporate experimental Pr distributions and short-term plasticity kinetics from published data (C57-C58). The model includes 100 stochastic trials per condition, providing adequate statistical power. The finding that Pr trends improve signal transfer at higher frequencies is consistent across multiple simulation paradigms (paired-pulse, five-pulse bursts, Poisson input with and without STP). The model parameters are clearly specified and based on experimental measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The authors propose that the Pr pattern found in apical dendrites plays a key role in memory trace formation because high-frequency bursting associated with sharp-wave ripples is linked to learning and memory consolidation in the hippocampus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5-C6 and C93-C96 connect the experimental findings to memory function through established knowledge about high-frequency bursting and sharp-wave ripples. While the citations support the role of bursting in learning (C93-C95) and the modeling shows enhanced signal transfer at high frequencies (C4, C56, C59), the direct link to memory trace formation (C6, C96) remains speculative. No experiments directly test memory or learning outcomes, making this an inference rather than a demonstrated result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The current findings appear to contradict an earlier study using MK801-based approaches that found no distance-dependent Pr trends. However, the MK801 method is sensitive to glutamate spillover, which could mask the Pr trend, and that study did show 15-50% lower PPR values distally without reaching statistical significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 appropriately address an apparent discrepancy with prior work. The authors provide a reasonable explanation for the difference based on methodological limitations of the MK801 approach (C19, supported by citation). The observation that the earlier study showed PPR trends in the expected direction but without statistical significance (C20) actually supports the current findings. This represents appropriate scientific discourse about conflicting results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Optical quantal analysis (OQA) provides methodological advantages over electrophysiological approaches for measuring Pr, including direct measurement of absolute Pr values, confirmation of individual synapse activation, and avoidance of confounds from axon excitability. However, OQA has limitations including low signal-to-noise ratio and rapid saturation of Ca2+ indicators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 and C72-C74 provide a balanced assessment of OQA methodology. The advantages are well-established in the field and supported by the authors' previous work. The limitations are honestly acknowledged, and the authors describe appropriate strategies to address them (focusing on synapses with clear success/failure distinction, using two PPR measures). The sampling still covered Pr range 0.1-0.9 (C74), indicating adequate coverage despite selection criteria.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "iGluSnFR recordings with extracellular stimulation cannot reliably detect failures because glutamate can travel ~2 \u00b5m from synapses, and individual synapses have >60 neighbors within this proximity. Combined with the ~1 \u00b5m focal plane thickness of two-photon imaging, iGluSnFR signals reflect release from multiple local synapses, making the approach suitable for PPR but not direct Pr measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C42 provide a clear explanation for why iGluSnFR cannot detect individual release failures. The reasoning is based on established biophysical parameters (glutamate diffusion distance C37, synapse density C38, imaging properties C40) and appropriate calculations (C39). The conclusion that iGluSnFR signals reflect multiple synapses (C42) is a logical inference that appropriately limits the interpretation of these data to PPR measurements rather than absolute Pr values.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The authors argue that low Pearson's r values in their data reflect biological variability rather than weak correlations, and that statistical significance of the trend (p-value for non-zero slope) is more important than prediction power for individual measurements in establishing population-average trends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 provide appropriate statistical reasoning for interpreting correlation coefficients in the context of population trends. The argument that unexplained variance reflects biological variability (C75) is reasonable given the known heterogeneity of synapses. The distinction between prediction power for individual measurements versus establishing population trends (C76) is statistically sound. The emphasis on p-values over r values (C77) is appropriate for the study design, though both metrics provide useful information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The manuscript reviews established knowledge about dendritic integration in CA1 pyramidal cells, including distance-dependent increases in receptor numbers, regenerative ion channel properties, and the relationship between Pr and synaptic discharge rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 and C60-C65 summarize well-established findings from the literature, appropriately cited. These provide necessary context for interpreting the current results but do not represent new findings from this study. The review of prior work is accurate and relevant to the study's motivation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The current findings are consistent with previous observations that Pr varies with synapse size, that individual CA3-CA1 axons make multiple distal synapses, and that location-dependent synaptic features occur in neocortical neurons. Together, these observations support the idea that synaptic organization compensates for electrotonic weakness of distal synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C86 appropriately integrate current findings with prior literature. The connections drawn between Pr variation with synapse size (C79), receptor number increases (C80), and the current distance-dependent Pr trend are logical. The comparison to neocortical findings (C82) and the integration with observations about multiple distal synapses (C85-C86) strengthen the interpretation. However, these are primarily inferences connecting multiple lines of evidence rather than direct experimental tests.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Comparing current results in apical dendrites with previous findings in basal dendrites suggests starkly different dendritic integration traits. Basal dendrites show opposite Pr trends and different spine density patterns, which may relate to their distinct inputs and the role of dendritic spikes in distal signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 provide appropriate comparison with prior work on basal dendrites. The contrast between apical and basal dendrite Pr patterns is clearly stated, with appropriate acknowledgment of methodological differences. The discussion of different inputs to basal dendrites (C89) and spine density patterns (C90) provides context. However, the functional interpretation regarding dendritic spikes (C91-C92) is speculative and based on modeling from other studies rather than direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The experimental methods employed appropriate preparations (300-350 \u00b5m hippocampal slices from 3-4 week old rats), whole-cell recording with Ca2+ indicators, and stimulation protocols that produced clearly distinguishable success and failure signals (>2 SD separation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C100 describe standard, well-established experimental methods. The preparations and recording conditions are appropriate for the experiments. The criterion for distinguishing successes from failures (>2 SD, C100) is reasonable and supported by the data shown in Figure 1\u2014figure supplement 1D. These methodological details are adequately described.",
+    "result_type": "MINOR"
+  }
+]

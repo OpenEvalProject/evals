@@ -1,0 +1,1580 @@
+{
+  "submission": {
+    "id": "cc6be9c0-750f-4380-baa0-8185e7ab083a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T07:44:24.024119Z",
+    "updated_at": "2025-12-03T07:44:24.024119Z"
+  },
+  "content": [
+    {
+      "id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "submission_id": "cc6be9c0-750f-4380-baa0-8185e7ab083a",
+      "content_type": "manuscript",
+      "content_text": "# Quantifying the relationship between SARS-CoV-2 viral load and infectiousness\n\n## Authors\n\n- Aur\u00e9lien Marc<sup>1</sup> ([ORCID: 0000-0002-6936-5388](https://orcid.org/0000-0002-6936-5388)) \u2020\n- Marion Kerioui<sup>1</sup>\n- Fran\u00e7ois Blanquart<sup>1</sup>\n- Julie Bertrand<sup>1</sup>\n- Oriol Mitj\u00e0<sup>3</sup>\n- Marc Corbacho-Monn\u00e9<sup>3</sup>\n- Michael Marks<sup>7</sup>\n- Jeremie Guedj<sup>1</sup> ([ORCID: 0000-0002-5534-5482](https://orcid.org/0000-0002-5534-5482)) \u2020\n\n### Affiliations\n\n1. Universit\u00e9 de Paris, IAME, INSERM Paris France\n2. Centre for Interdisciplinary Research in Biology (CIRB), Coll\u00e8ge de France, CNRS, INSERM, PSL Research University Paris France\n3. Fight AIDS and Infectious Diseases Foundation, Hospital Universitari Germans Trias i Pujol Badalona Spain\n4. Lihir Medical Centre, International SOS Londolovit Papua New Guinea\n5. Hospital Universitari Parc Taul\u00ed Sabadell Spain\n6. Facultat de Medicina\u2013Universitat de Barcelona Barcelona Spain\n7. London School of Hygiene and Tropical Medicine London United Kingdom\n8. Hospital for Tropical Diseases London United Kingdom\n9. Division of infection and Immunity, University College London London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe relationship between SARS-CoV-2 viral load and infectiousness is poorly known. Using data from a cohort of cases and high-risk contacts, we reconstructed viral load at the time of contact and inferred the probability of infection. The effect of viral load was larger in household contacts than in non-household contacts, with a transmission probability as large as 48% when the viral load was greater than 1010 copies per mL. The transmission probability peaked at symptom onset, with a mean probability of transmission of 29%, with large individual variations. The model also projects the effects of variants on disease transmission. Based on the current knowledge that viral load is increased by two- to eightfold with variants of concern and assuming no changes in the pattern of contacts across variants, the model predicts that larger viral load levels could lead to a relative increase in the probability of transmission of 24% to 58% in household contacts, and of 15% to 39% in non-household contacts.\n\n## Introduction\n\nAfter more than 18 months of an unprecedented pandemic, some key aspects of virus transmission remain poorly understood. While respiratory droplets and aerosols have rapidly been demonstrated as a major route of transmission of SARS-CoV-2 (Tang et al., 2020), the role of the viral load as a driver of infectiousness has been established (He et al., 2020) but not quantified. This lack of evidence is due to the fact that high-risk contacts occur mostly before the index has been diagnosed, with no information on the viral load level at the time of the contact. The relationship between viral load and infectiousness determines the timing of transmission, the inter-individual heterogeneity in transmission, and ultimately the impact of interventions (contact, case isolation, vaccination) on transmission. In the context of variants of concern, that are associated with larger viral loads (Teyssou et al., 2021;\u00a0Liu et al., 2021;\u00a0Elie et al., 2021; Cosentino et al., 2021; Jones et al., 2021), it becomes even more critical to delineate the contribution of viral load from other factors associated with an increased transmission. Further, as antiviral drugs and vaccine strategies are being implemented, that dramatically reduce the amount of viral shedding (Levine-Tiefenbrun et al., 2021), it is essential to understand how they may contribute to a reduction in virus transmission.\n\nOne of the most documented clinical study to address the question of viral load and infectiousness has been obtained through individuals included in a randomised controlled trial conducted in March-April 2020 in Spain, that aimed to assess the efficacy of hydroxychloroquine on SARS-CoV-2 transmission (Mitj\u00e0 et al., 2021; Marks et al., 2021). Overall, 282 index and their 753 high-risk contacts were frequently monitored to assess their virological and clinical evolution. An association was found between the probability of being infected after a high-risk contact and the viral load measured at the time of diagnosis in the index case (Marks et al., 2021). This suggests that viral load is associated with transmission; however, it does not quantify the role of viral load in disease transmission, as the viral load at the exact time of the contact remains unknown and may greatly differ from that measured, several days later, at the time of diagnosis.\n\nIn order to study in detail the role of viral load on the probability of transmission, we reanalysed these data by using a within-host model of viral dynamics (N\u00e9ant et al., 2021; Gon\u00e7alves et al., 2020) to reconstruct the viral load levels of the index cases at the time of contact, and to infer the relationship between viral load and the probability of transmission after a high-risk contact. Further, we used the model to predict the effects of changes in viral load levels on the probability of transmission, representing the effects of infection with a variant of concern or infection in an individual in which vaccine would confer a partial protection against viral replication.\n\n## Results\n\n### Baseline characteristics\n\nA total of 259 index cases and their 582 high-risk contacts (simply called contacts in the following) were included in our analysis (Figure 1\u2014figure supplement 1).\n\nThe majority of index cases were female (72%) with a median age of 42 (90% Inter Quantile Range (IQR): [24, 61]). A total of 544 swab samples were performed at days 0, 3 and 7 days after study inclusion. The first swab was performed after a median time of 4 days (90% IQR: [2, 6]) after symptom onset. The maximum median viral load obtained during follow-up was 8.4 log10 copies per mL (90% IQR:[5.1, 10.6]).\n\nThe majority of contacts were female (56%) with a median age of 41 (90% IQR: [20, 65]). The form of contacts was categorized as either household (60%) or non-household (40%).\n\nOverall, 87 household contact led to an infection (proportion of transmission of 24.9%) and 29 non-household contacts led to an infection (proportion of transmission of 12.4%). The majority of contacts (65%) and of infection events (65%) occurred \u00b11 day from symptom onset of the index cases (Figure 1\u2014figure supplement 2).\n\n### Viral dynamic model\n\nWe used a target cell limited model to reconstruct the viral load kinetics of the index cases over time, assuming that the incubation period has a log-normal distribution with a mean value of 5 days (N\u00e9ant et al., 2021; Lauer et al., 2020). Although several models relating viral load to infectiousness were evaluated (see below), they all provided nearly identical fits to the viral load data predicted in the index cases (Figure 1). Additionally, we tested several models with a fixed incubation period ranging from 4 to 7 days, and they all yielded similar results (Supplementary file 1). In the best model (Model M2, see below), the basic within-host reproductive number, $R_{0}$, quantifying the number of cell infections that occur from a single infected cell at the beginning, was estimated at 13.6, the loss rate of productively infected cells, $\\delta$, at 0.84 d\u22121 (corresponding to a half-life of 20 hr) and viral production $p$, at $2.8\\times10^{5}cells^{-1}$ d\u22121 (Table 1). When reconstructing the viral load profiles, the model predicted that the median peak viral load coincided with symptom onset, with a median peak value of 9.4 log10 copies per mL (90% IQR: [8.0, 10.0]).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/69302/elife-69302-fig1-v2.jpg)\n\n**Figure 1.:** Black dots represent the measured viral load. Squares indicate documented high-risk contacts, with empty squares representing contacts without transmission, and red squares representing contacts with a subsequent infection. Results obtained in the 41 index cases having three viral load measurements.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69302/elife-69302-fig1-figsupp1-v2.jpg)\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/69302/elife-69302-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Distribution of the times at which a high-risk contact occurred between an index and a contact, with reference to the time of symptom onset of the index case. This indicates that most contacts reported in the study occurred at the time of symptom onset of the index, and that many contacts occurred during the pre-symptomatic period of the index. All contacts (Left). Household contacts (Middle). Non-household contacts (Right).\n\nWe tested several models of probability transmission (see Materials and methods) and estimated the parameters of both viral dynamics and probability of transmission simultaneously. The two model assuming an effect of viral load on the probability of transmission (Model M2 and M3) provided an improvement in BIC as compared to the model M1, supporting an effect of viral load on the probability of infection. In both models, viral load was significantly associated with the probability of transmission after household contact (p<0.01, Wald test on \u03b31); however, the effect was lower after non-household transmission (p<0.05, Wald test on \u03b32). Because we fixed the probability of transmission to 5% for viral load levels below six log10 copies/mL, which is generally the threshold for virus culture in vitro (Jones et al., 2021; N\u00e9ant et al., 2021; van Kampen et al., 2021; Mollan et al., 2021), we tested models with threshold values ranging from 4 to 8 log10 copies/mL and they all yielded similar results (Supplementary file 2).\n\nAs a mean to evaluate the model adjustment to data, we also used simulations to compare the observed proportion of transmission in the original data to the mean probability of transmission obtained from the simulated individuals. The model-based simulations showed good agreement with the observed data, and reproduced well the increase in the transmission probability associated with higher viral load level (Figure 2). The model predicted that the mean probability of transmission increased from the fixed nominal value of 5% for viral load levels < 6 log10 copies per mL, to as much as 48% and 20% for viral load \u2265 10 log10 copies per mL for household and non-household contacts, respectively. This is close to the values of 56% and 20% obtained on the predicted individuals. (Figure 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/69302/elife-69302-fig2-v2.jpg)\n\n**Figure 2.:** Bars represent the mean predicted probability of transmission obtained from 1000 simulations of the model M2 and stratified by viral load level at the time of contact. Black dots are the proportion of transmission events observed in the data stratified by the predicted viral load of the index cases at the time of contact (along with their 95% confidence intervals). Household contacts (Left). Non-household contacts (Right).\n\nThe model considers two levels of individual variability, one on the viral load dynamics (Chen et al., 2021) (as measured by the standard deviation of the associated random effects, $\\omega_{R_{0}},\\omega_{\\delta}$ and $\\omega_{p}$), and another one on the probability of transmission (with a standard deviation $\\omega_{\\beta}$). Of note, $\\omega_{\\beta}$ was equal to 85%, indicating that several other factors are involved in the transmission probability, even after adjustment for viral load levels (see Supplementary file 3 for the results obtained with a model assuming a similar value for $\\beta$ in all individuals).\u00a0This variability is shown on Figure 3, where 1000 individuals were sampled in the population distribution to obtain the probability of transmission over time and across individuals. Over the time of infection, the median probability of transmission peaked at the time of symptom onset with a mean value of 29% in household contacts. However, there was large inter-individual variabilities due to both viral load levels and individual characteristics, with a 90% inter quantile range of 6-96% (Figure 3). The peak of transmission was much lower in non-household contacts, with a mean value of 13% (90% IQR: [5, 38]). As a consequence of our assumption that the probability of transmission after a high-risk contact returned to baseline level when viral load dropped below 6 log10 copies per mL, the window for infection was shorter than the duration of viral shedding. The probability of transmission was above 5% for a median duration of 12 days (90% IQR: [9, 15]).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/69302/elife-69302-fig3-v2.jpg)\n\n**Figure 3.:** Prediction interval of the viral load (black) and the probability of transmission over time after a high-risk contact obtained from 1000 simulations of the model. The shaded area represents the 90% inter quantile range. Household contacts (Left). Non-household contacts (Right).\n\n### Sampling the generation interval\n\nAs a mean to validate the model prediction, we also calculated the generation interval, that\u00a0is the time elapsed between the infection of an individual and the infection of a contact. We considered two potential distributions of contact times, one in which the rate of contacts is constant during the whole considered period, and one in which the rate of contacts decreases rapidly after 5 days, reflecting self-isolation and/or diagnosis (Figure 4A). The median generation interval was estimated to be 5.1 days (90% IQR: [1, 10]) and 4.8 days (90% IQR: [1, 11]) for household and non-household contacts respectively, when a time-varying rate of contacts was used. Those estimates are close, albeit with higher variability, to what has been found in other studies (Cereda et al., 2020; Bi et al., 2020). When using a constant contact rate, we obtained larger estimates of 7.7 days (90% IQR: [2.4, 17]) and 8.2 (90% IQR: [1.6, 18]) in household contacts and non-household contacts, respectively (Figure 4B). Because the time varying contact rate was more realistic (Cereda et al., 2020; Bi et al., 2020; Ferretti et al., 2020; Wu et al., 2020), we used it as our central scenario in what follows.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/69302/elife-69302-fig4-v2.jpg)\n\n**Figure 4.:** (A) We considered a rate of contacts that could either decline after 5 days (top) or remain constant for the whole considered period (bottom). (B) Distribution of the generation interval using model M2 under each scenario. (C) Impact of changes in viral production on the average probability of transmission. (D) Impact of changes in viral production on the relative change from the baseline scenario in model M2.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69302/elife-69302-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Effect of variants of concern (Top). Effect of vaccination rollout (Bottom). We only displayed the median trajectories over the simulated individuals. Viral load (Black). Transmission probability for household contacts (Blue). Transmission probability for non-household contacts (Orange).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/69302/elife-69302-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Using a time-varying distribution of contacts (Top) or a constant distribution of contacts (Bottom).\n\n### Impact of variants of concern and vaccination on the probability of transmission\n\nWe used the model to characterize the effects of changes of viral load dynamics due to infection with variants of concern. For that purpose, we evaluated the impact of a change in the viral production rate, p, by a fold 2\u2013100, which corresponds to an average increase in viral load of 1\u20137 cycle thresholds (Ct), at each time point (Figure 4\u2014figure supplement 1). As a metrics of comparison, we calculated in each scenario the average probability of transmission after a high-risk contact in the 20 days following infection (see methods).\n\nFor the baseline scenario using the parameters estimated in our population, the average transmission probability was 18% and 9% for household and non-household contacts, respectively.\n\nWith an increased value of viral production, p, by a factor 2, which corresponds to the viral load increase caused by B1.1.7 strain in large-scale epidemiological studies (Golubchik et al., 2021; Roquebert et al., 2021; Kidd et al., 2021), the average probability of transmission would increase to 22% and 11% for household and non-household contacts respectively. With a fourfold increase, as suggested elsewhere (Teyssou et al., 2021), the average probability of transmission would increase to 26% and 12% for household and non-household contacts, respectively (Figure 4C). The estimates for the P1 and B1.1.351 variants are less established, with values ranging from a twofold (Teyssou et al., 2021) to a 10-fold increase (Naveca et al., 2021). Assuming an increase by eightfold of the viral load, the average probability of transmission would increase to 29% and 13% for household and non-household contacts, respectively. As compared to the results observed with the historical virus a two-, four-, or eightfold increase in viral production rate would therefore lead to a relative increase in the average transmission probability of 24, 42, or 58% for household contacts, and of 15, 27, or 39% for non-household contacts (Figure 4D). Because increasing the production rate mostly impacts the early viral dynamics and less the post-peak dynamics (Figure 4\u2014figure supplement 1), the effects of VOC is lower when a uniform distribution is used. In other words, self-isolation after symptoms or a positive test implies that more transmission happens early in infection, thus amplifies the impact of the viral production rate on transmission. In this case, we estimated a relative increase in the average transmission probability of 6, 15, or 24% for household contacts, and of 4, 10, or 16% for non-household contacts.\n\nConversely, we studied the effects of lower levels of viral load, as expected from a partial protection conferred by vaccination. Epidemiological studies in Israel reported a 3-5-fold lower viral load in infected vaccinated individuals as compared to unvaccinated individuals (Levine-Tiefenbrun et al., 2021). Assuming a reduction by a factor 4 of the viral production rate, $p$, would lead to an average probability of transmission of 7% and 6% for household and non-household contacts respectively (Figure 4). In other studies relying on systematic repeated viral testing in both symptomatic and asymptomatic individuals, the effect of vaccine was much more dramatic, with a 30-100-fold reduction in viral load levels (McEllistrem et al., 2021; Thompson et al., 2021; Bailly et al., 2021). Assuming a reduction of 16-fold (~4 Ct) of the viral load, the average probability of transmission would decrease to its nominal value of 5% for both household and non-household contacts. As compared to the results observed with the historical virus, a 4- or 16-fold reduction in viral production rate would lead to a relative decrease in the average transmission probability of 61% or 72% for household contacts and of 38 or 47% for non-household contacts. The effect of vaccination is lower if a uniform distribution of contact is used, with a relative decrease in the average transmission probability of 23 or 66% for household-contacts and of 11 or 38% for non-household contacts (Figure 4).\n\nResults obtained with model M3 were largely consistent and are given in Figure 4\u2014figure supplement 2.\n\n## Discussion\n\nHere, we quantified the impact of viral load on infectiousness using data obtained in a prospective cohorts of index and contact cases (Mitj\u00e0 et al., 2021). The effect of viral load was particularly large in household contacts, with a mean transmission probability that increased to as much as 48% when the viral load was over 10 log10 copies per mL. Consistent with reports suggesting that the probability of transmission (Edwards et al., 2021) greatly vary between individuals, the effect of viral load was individual-dependent. For instance, at the peak of infectiousness, the mean probability of transmission during household contact was 29% with a 90% inter quantile range of 6\u201396%.\n\nThe model also provided information on the effects of variants on disease transmission. We relied on results found in both large-scale epidemiological data and longitudinal evaluation of Ct values (Elie et al., 2021; Cosentino et al., 2021), that reported an average increase of the B1.1.7 virus by 1-2 Ct (Teyssou et al., 2021; Golubchik et al., 2021; Roquebert et al., 2021), which can be reproduced in our model by assuming that viral production increases by a factor 2-4. Alternatively, as only the product p\u00a0\u00d7\u00a0T0 can be identified, this could also be due to B1.1.7 being able to infect twice as much target cells, as suggested by the fact that the N501Y substitution improved the affinity of the viral spike protein (Liu et al., 2021). Regardless of the origin of this increased viral load, we estimated that an increase of viral load by a factor of 2, 4, or 8 would lead to a relative increase in the average transmission probability of 24, 42, or 58% in household contacts and of 15, 27, or 39% for non-household contact. As raised by one of the reviewers, it is important to recognize that the association between VOC and viral load levels relies on observational studies, with data mostly collected after symptom onset, both factors limiting a formal causation. In fact, another modelling study performed in a small population of frequently sampled individuals diagnosed early in their infection did not find an effect of B1.1.7 on viral kinetics (Ke et al., 2021).\n\nConversely, vaccination rollout is expected to confer a large level of protection, partly due to lower virus carriage in infected individuals. The exact magnitude of this decrease is difficult to quantify, and depends on the design of the study that relied on systematic testing or included only symptomatic individuals. This may explain the variability in the reports from the literature from 5- to 100-fold reduction in viral load levels (McEllistrem et al., 2021). Whatever the exact value, our predictions indicate that reductions of fourfold or more will dramatically reduce the probability of transmission carried by vaccinated infected individuals.\n\nOur study has important limitations. First, the reporting of high-risk contacts is prone to several biases. One of them is the fact that at the time where the study was conducted, the role of pre-symptomatic transmission was not known. This could explain why a large number of high-risk household contact were reported to occur the day of symptom onset (Figure 1\u2014figure supplement 2). Also, it is possible that recollection bias leads to an overestimation of contacts reporting on the day of symptom onset. Because this will equally affect contacts that resulted in a transmission event and those that did not lead to a transmission event, it is unlikely that our estimates of transmission will be affected by this bias. To address a potential overestimation of the contacts occurring at symptom onset, we used two theoretical distributions of contacts in our simulations, assuming either a constant distribution of contact during the infectious period, or a more realistic scenario in which most contacts occurred during the first 5 days after infection. Also, we assumed the same patterns of contacts in our different scenarios. Although there are no data on these aspects yet, it is possible that larger levels of viral shedding could lead to a more severe infection or, inversely, that lower viral load could produce milder infections, thereby modifying the incubation period and more generally the patterns of contact. Another important limitation is that household contacts may not be unique and could occur multiple times. Because we had no information on these contacts, we did not conduct specific analyses on repeated contacts, but this is something that future epidemiological studies will need to investigate. Finally, it is always possible that infection observed in contacts individuals did not originate from the identified index case. In most infected contacts, we did not have data on the time of symptom onset, making it difficult to detect unplausible transmission event. However, the temporality of symptoms would not be sufficient to bring a decisive information on the infection event. Indeed, the study was conducted during the first epidemic wave in Spain, where most individuals, including in hospital settings, had not yet applied social distancing and masking, causing dozens of thousands of individuals infected every day. Both the possibility of repeated contacts in household and infection of contacts outside the identified contact network may have led us to overestimate the difference in the probability of transmission between household and non-household contacts. Specifically, infections outside of the identified probability contact would flatten the estimated relationship between viral load and transmission compared to the true relationship. It is also important to note that viral load data in index cases were collected on average 3\u20134 days after symptom onset, in the declining phase of viral load, several days after most of the contacts had occurred. Although our population parameters were estimated with a reasonable precision (Table 1), it nonetheless brings uncertainty on the predictions of individual trajectories. This limitation is inherent to the nature of SARS-CoV-2, where the peak viral load coincides with symptom onset, making difficult to obtain data during the replicating phase of the virus where individuals are largely asymptomatic.\n\n**Table 1.**\n Parameters estimates of the three candidate models.$R_{0}$, within-host basic reproductive number; $\\delta$, loss rate of infected cells; $p$, rate of viral production; $\\gamma_{1}$ represents the effect of household contacts on the transmission probability; $\\gamma_{0}$ represents the effect of non-household contacts on the transmission probability. M1 assumes that transmission probability does not depend on the viral load. M2 and M3 use different parametric functions to relate the transmission probability to viral load at the time of contact. The distribution of the incubation period was fixed to values from the literature (see Materials and methods).\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"7\">Parameter estimates (RSE %)</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th colspan=\"2\">No effect of viral load (M1)</th>\n      <th colspan=\"2\">Logit-Linear (M2)</th>\n      <th colspan=\"3\">Log-Linear model (M3)</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>Fixed effect</th>\n      <th>Random effect SD</th>\n      <th>Fixed effect</th>\n      <th>Random effect SD</th>\n      <th>Fixed effect</th>\n      <th>Random effect SD</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Incubation period (d)</td>\n      <td>5</td>\n      <td>0.125</td>\n      <td>5</td>\n      <td>0.125</td>\n      <td>5</td>\n      <td colspan=\"2\">0.125</td>\n    </tr>\n    <tr>\n      <td>R0</td>\n      <td>12.20 (14)</td>\n      <td>0.32 (34)</td>\n      <td>13.60 (15)</td>\n      <td>0.38 (21)</td>\n      <td>13.40 (22)</td>\n      <td colspan=\"2\">0.423 (35)</td>\n    </tr>\n    <tr>\n      <td>\u03b4(d-1)</td>\n      <td>0.83 (1)</td>\n      <td>0.019 (47)</td>\n      <td>0.84 (4)</td>\n      <td>0.037 (77)</td>\n      <td>0.832 (100)</td>\n      <td colspan=\"2\">0.023 (74)</td>\n    </tr>\n    <tr>\n      <td>p (cells\u22121.d\u22121)</td>\n      <td>1.97 \u00d7 105 (41)</td>\n      <td>2.38 (9)</td>\n      <td>2.8\u00a0\u00d7\u00a0105\u00a0(50)</td>\n      <td>2.35 (8)</td>\n      <td>2.40\u00a0\u00d7\u00a0105\u00a0(47)</td>\n      <td colspan=\"2\">2.3 (9)</td>\n    </tr>\n    <tr>\n      <td>\u03b31</td>\n      <td>1.28 (38)</td>\n      <td rowspan=\"2\">0.82 (55)</td>\n      <td>0.49 (20)</td>\n      <td rowspan=\"2\">0.85 (32)</td>\n      <td>0.47 (6)</td>\n      <td rowspan=\"2\" colspan=\"2\">0.545 (23)</td>\n    </tr>\n    <tr>\n      <td>\u03b32</td>\n      <td>0.57 (62)</td>\n      <td>0.21 (44)</td>\n      <td>0.25 (17)</td>\n    </tr>\n    <tr>\n      <td>BIC</td>\n      <td colspan=\"2\">2502</td>\n      <td colspan=\"2\">2497</td>\n      <td colspan=\"3\">2500</td>\n    </tr>\n  </tbody>\n</table>\n\nBeside viral load, several factors are associated with a transmission event. One important one is face masking, for both the index and the contact. In the original analysis of Marks et al., 2021, the use of face mask by contacts was not found associated with a decreased viral load, but this probably reflects the lack of more detailed data on the type of mask, the use of other personal protective equipment and infection control practices. It is also important to recall that face masking was poorly reported and was missing in about 35% of contacts, limiting statistical power (Supplementary file 4). The use of face mask by index cases was not collected in the original study. This information might be of a greater importance as it has a far more substantial effect on viral shedding and thus on transmission. Collecting this information in future studies should probably contribute to a reduction in the variance of the random effect parameter associated with transmission ($\\omega_{\\beta}$).\n\nTo conclude, our study quantifies the probability of infection according to viral load level after a high-risk contact. This relationship can be used to predict the effects of changes in virus paradigm, caused by the emergence of new variants and/or the rollout of vaccination. We estimate that two- to eightfold increase in viral load level observed with variants of concern could lead to an increase in the probability of transmission by 24\u201358% in household contacts.\n\n## Materials and methods\n\n### Data collection\n\nData used come from a cluster-randomised trial which included individuals with PCR-confirmed COVID-19 and their close contacts, and evaluated the efficacy of hydroxychloroquine as a pre- or post-exposure prophylaxis. The trial was conducted between March, 17 and April 28, 2020 in three out of nine health-care area in Catalonia, Spain. More details on the study protocol and main results can be found in the original publication (Mitj\u00e0 et al., 2021).\n\n### Study participants\n\nAll index cases were individuals aged 18 years or older, identified by the Catalan epidemiological surveillance system, with no hospitalisation, nasopharyngeal PCR positive results at baseline and mild symptoms onset within 5 days of inclusion and had no reported symptoms of SARS-CoV-2 infections in their accommodation or workplace within the 14 days before enrolment. High-risk contacts were adults with a recent history of exposure (i.e. >15 min within 2 m up to 7 days before enrolment) and absence of COVID-19 like symptoms within the 14 days preceding enrolment, and who had an increased risk of infection (e.g. health care worker a household contact, a nursing-home worker, or a nursing-home resident). Contacts were quarantined upon enrolment to the study. In the original study, 282 index cases and the resulting 753 contacts were enrolled (Marks et al., 2021); here we did not include three index individuals (and their corresponding 25 contacts) for which no viral load data was available, eight index individuals (19 contacts) for which no viral load was detected at any time point, and 12 index cases (127 contacts) for which no date of contact was available. Thus, our analysis was performed on 259 index and 582 contacts (Figure 1\u2014figure supplement 1). In 12 index cases, the date of symptoms onset was not known and was imputed to 4 days before their first swab sampling, which corresponds to the median value observed in the population study. Type of contact was considered as household or non-household, the latter included nursing home contacts, health-care worker and other undefined contacts.\n\n### Reconstructing viral load in index cases using a viral kinetic model\n\nWe used a target cell-limited model to reconstruct nasopharyngeal viral kinetics in index cases (N\u00e9ant et al., 2021; Madelain et al., 2018; Baccam et al., 2006). The model includes three populations of cells, namely Target cells $(T)$, infected cells in their eclipse phase $(I_{1})$ and productively infected cells $(I_{2})$. Target cells $(T)$ are infected at a constant rate $\\beta$ by infectious virus $(V_{I})$. Infected cells enter an eclipse phase at a rate $k$ before becoming productively infected cells $(I_{2})$. We assumed productively infected cells have a constant loss rate $\\delta$. Virions are released from productively infected cells at a rate $p$ and are loss at a rate $c$. A proportion \u00b5 of produced viruses are infectious $(V_{I})$ and the remaining $(1-\\mu)$ are non-infectious viruses $(V_{NI})$, both are cleared at a rate $c$. The model can be written as follows:\n\n$$\n\\frac{dT}{dt}=\u2212\\betaTV_{I}\n$$\n\n\n\n$$\n\\frac{dI_{1}}{dt}=\\betaTV_{I}\u2212kI_{1}\n$$\n\n\n\n$$\n\\frac{dI_{2}}{dt}=kI_{1}\u2212\\delta_{x}I_{2}\n$$\n\n\n\n$$\n\\frac{dV_{I}}{dt}=p\\muI_{2}\u2212cV_{I}\n$$\n\n\n\n$$\n\\frac{dV_{NI}}{dt}=p(1\u2212\\mu)I_{2}\u2212cV_{NI}\n$$\n\nBased on this model, the basic reproduction number, $R_{0}$, defined as the number of newly infected cells by one infected cell at the beginning of the infection (Best et al., 2017) is, $R_{0}=\\frac{p\\betaT_{0}\\mu}{c\\delta}$. Given the absence of any antiviral effect of hydroxychloroquine against SARS-CoV-2 (Mitj\u00e0 et al., 2021; Maisonnasse et al., 2020; Boulware et al., 2020), we did not consider any effect of hydroxychloquine in the model.\n\n### Assumptions on parameter values\n\nSome parameters were fixed to ensure identifiability. The clearance rate $c$ was fixed at $10d^{-1}$ and the eclipse phase $k$ to $4d^{-1}$ based on previous work (N\u00e9ant et al., 2021; Gon\u00e7alves et al., 2020; Gon\u00e7alves et al., 2021). The proportion of infectious virus \u00b5 was assumed constant over time and was fixed to 10\u22124 as observed in animal model (Gon\u00e7alves et al., 2021). The initial number of target cells, $T_{0}$, was fixed to $T_{0}=1.33\\times10^{5}cells.mL^{-1}$ (more details in N\u00e9ant et al., 2021). We assumed that at the moment of infection there was exactly one productively infected cell in the upper respiratory tract. Hence, at $t=t_{inf}$,$T=T_{0};I_{1}=0;I_{2}=\\frac{1}{30};V_{I}=0\u00a0and\u00a0V_{NI}=0$.\n\nWe assumed that the incubation period was lognormally distributed around 5 days before symptoms onset with a standard deviation of 0.125 days, corresponding to 90% of individuals having an incubation period varying between 4 and 6 days (Jones et al., 2021; Lauer et al., 2020).\n\n### Statistical model for viral kinetics\n\nParameter estimations were performed using non-linear mixed-effect model. The structural model used to describe the observed $log_{10}$ viral load is $y_{i,j}=log_{10}Vt_{i,j},\u03a8_{i}^{V}+e_{i,j}$, where $y_{i,j}$ is the $j^{th}$ observation of index $i$ at time $t_{i,j}$ with $i\u03f51,\u2026,N$ and $j\u03f51,\u2026,n_{i}$ with $N$ the number of index and $n_{i}$ is the number of observations for index $i$. $Vt_{i,j},\u03a8_{i}^{V}$ is the function describing the total viral load dynamics $V_{I}t_{i,j}+V_{NI}(t_{i,j})$ predicted by the model at time $t_{i,j}$. The vector of viral kinetic parameters for index $i$ is noted $\u03a8_{i}^{V}$ and $e_{i,j}$ is the additive residual Gaussian error term of constant standard deviation $\\sigma$. The vector of individual parameters depends on a fixed effects vector and on an individual random effects vector, which follows a normal centred distribution with a diagonal variance-covariance matrix $\u03a9$. To ensure positivity, the individual parameters follow a lognormal distribution.\n\n### Probability of transmission\n\nWe noted $x_{i}^{c}$ the outcome of the $c^{th}$ contact of index case $i$ (i.e. $x_{i}^{c}=1$ if the contact resulted in transmission and 0 otherwise) and $c\u03f51,\u2026,C_{i}$, with $C_{i}$ the number of contacts of index $i$. The probability of transmission depends on the time of contact $t_{i}^{c}$, the nature of contact, namely household $(h_{i}^{c}=1)$ or not $(h_{i}^{c}=0)$, and the vector of individual parameters $\u03a8_{i}$, which contains the viral parameters $\u03a8_{i}^{V}$ and individual transmission parameters $\\beta_{i}$. Three models of transmission were tested (M1-M3), described as follows:\n\n#### Model M1\n\nNo effect of viral load.\n\n$$\nlogit\u00a0P(x_{i}^{c}=1|t_{i}^{c},\u03a8_{i},h_{i}^{c})=\\alpha+\\beta_{i}\n$$\n\nwhere: $\\beta_{i}=(\\gamma_{1}h_{i}^{c}+\\gamma_{0}1-h_{i}^{c})\\timesexp\u2061(b_{i})$ with $\\gamma_{1}$ (resp. $\\gamma_{0}$) the effect of household contact (resp. non-household) on the probability of transmission, and $b_{i}$ is an individual random effect assumed to follow a Gaussian distribution of variance $\\omega_{\\beta}^{2}.$ The baseline probability of transmission was fixed to 5% ($\\alpha=-2.94$).\n\n#### Model M2\n\nLogit-linear effect of viral load.\n\n$$\nlogit\u00a0P(x_{i}^{c}=1|t_{i}^{c},\u03a8_{i},h_{i}^{c})={\\alpha\u00a0iflog_{10}\u2061V(t_{i}^{c},\u03a8_{i}^{V})\\leq6\\alpha+\\beta_{i}\\times(log_{10}\u2061V(t_{i}^{c},\u03a8_{i}^{V})\u22126)iflog_{10}\u2061V(t_{i}^{c},\u03a8_{i}^{V})>6\n$$\n\nwhere: $\\beta_{i}=(\\gamma_{1}h_{i}^{c}+\\gamma_{0}1-h_{i}^{c})\\timesexp\u2061(b_{i})$ with $\\gamma_{1}$ (resp. $\\gamma_{0}$) the effect of viral load on the probability of transmission in household contact (resp. non-household), and $b_{i}$ a Gaussian individual random effect with variance $\\omega_{\\beta}^{2}$. The baseline probability of transmission was fixed to 5% ($\\alpha=-2.94$) for viral load lower than 6 log10 copies per mL, which corresponds to the threshold for viral culture (N\u00e9ant et al., 2021; Ke et al., 2020) (see Supplementary file 2 for additional scenarios with different threshold values).\n\n#### Model M3\n\nLog-linear effect of viral load.\n\n$$\nlog\u2061\u00a0P(x_{i}^{c}=1|t_{i}^{c},\u03a8_{i},h_{i}^{c})={\\alpha\u00a0if\u00a0log_{10}\u2061V(t_{i}^{c},\u03a8_{i}^{V})\\leq6\\alpha+\\beta_{i}\\times(log_{10}\u2061V(t_{i}^{c},\u03a8_{i}^{V})\u22126)iflog_{10}\u2061V(t_{i}^{c},\u03a8_{i}^{V})>6\n$$\n\nwhere: $\\beta_{i}=(\\gamma_{1}h_{i}^{c}+\\gamma_{0}(1\u2212h_{i}^{c}))\\timesexp(b_{i})with\u00a0\\gamma_{1}(resp.\\gamma_{0})$ the effect of viral load on the probability of transmission in household contact (resp. non-household), and $b_{i}$ a Gaussian individual random effect with variance $\\omega_{\\beta}^{2}$. The baseline probability of transmission was fixed to 5% ($\\alpha=-2.99$) and the probability was bounded to 1.\n\n### Parameter estimation\n\nFor each model, we estimated simultaneously the vector of individual parameter $\u03a8_{i}$, which depends on both the parameters of the viral kinetic model $(R_{0},\\delta,p,\\omega_{R_{0}},\\omega_{\\delta},\\omega_{p})$ and the parameters of the transmission model $\\beta,\\omega_{\\beta}$. The model providing the lowest BIC was retained. All parameters were estimated by computing the maximum-likelihood estimator using the stochastic approximation expectation-maximization (SAEM) algorithm implemented in Monolix Software 2020R1 (http://www.lixoft.eu/) (Comets et al., 2017; Delyon et al., 1999; Monolix version 2020R1, 2019).\n\n### Simulations settings\n\nWe provided prediction intervals for viral load and transmission probability over time, depending on the nature of contact, namely household $(h=1)$ or not $(h=0)$. We sampled $M=1,000$ individual from the estimated population distribution and we calculated the predicted viral load $V(t,\u03a8_{m}^{V})$ and the predicted transmission probability according to the type of contact $Px_{m}|t,\u03a8_{m},h$ for all $M$ individuals. We derived the mean transmission probability over the $M$ simulated individuals at all times, as well as the 90% inter quantile range to provide prediction intervals.\n\nAll simulations were performed using the Simulx package on R.3.6.0.\n\n### Calculating the average probability of transmission\n\nUsing our model, we also aimed to visualise the impact of a therapeutic intervention or a virus mutation on the probability of transmission. To this purpose, we defined several scenarios of simulation by modifying the corresponding parameters in the viral dynamic model. First, we increased the viral production parameter, $p$, by a factor of 2 to 100 corresponding to observed increases of 1-7 $C_{t}$ value for different variants (Teyssou et al., 2021; Roquebert et al., 2021; Kidd et al., 2021). Second, we decreased the production parameters $p$ by a factor of 2, 4, 8, and 16 as well (Liu et al., 2021) to emulate the impact of vaccination (Levine-Tiefenbrun et al., 2021; McEllistrem et al., 2021; Figure 4\u2014figure supplement 1).\n\nWe used as a metrics of the effect of variants the average probability of transmission during the contact period, defined as\n\n$$\nP_{h}\u00af=\\int_{m,t}^{}P(x_{m}=1|t,\u03a8_{m},h)g(t)d\u03a8_{m}dt\n$$\n\nwhere $P_{h}-=\\int_{m,t}^{}Px_{m}=1|t,\u03a8_{m},hg(t)d\u03a8_{m}dt$ is the probability of infection after a high-risk contact occurring at time $Px_{m}=1|t,\u03a8_{m},h$ given the parameters of individual $t$. We considered two possible distributions of contacts $m$, (i) a constant function during the first five days following infection, followed by a decreasing function afterwards, reflecting the time-decreasing likelihood of contacts due to detection and/or symptom onset; (ii) a constant function during the first 20 days following infection (e.g. uniform distribution of the contact).\n\n### Generation interval\n\nAs a means to validate the model predictions, we also calculated the generation interval, defined as the time between the infection of the index and the infection of the contact. Given the difficulty to account for random effects, the generation time was calculated by simulations as follows.\n\nWe first sampled a vector of individual parameter $g(t)$ in the simulated population distribution. We then sampled a time of contact $\u03a8_{m}$ in the contact distribution. Finally, the contact outcome (i.e. infection or not) was obtained by drawing in the binomial distribution of parameter $t_{c}$. We repeated these steps 500,000 times to obtain the distribution of the generation time.\n",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "48f00abd-0219-4fcd-8a78-d53d15c661ef",
+      "submission_id": "cc6be9c0-750f-4380-baa0-8185e7ab083a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sarah E Cobey, University of Chicago United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.69302.sa1](https://doi.org/10.7554/eLife.69302.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis study carefully evaluates the relationship between viral load and infectiousness by coupling data on viral load with information from epidemiological contact tracing. The quantification of household and non-household transmission as a function of viral load is an important advance in SARS-CoV-2 epidemiology with implications for other respiratory pathogens.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Quantifying the relationship between SARS-CoV-2 viral load and infectiousness\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Jos van der Meer as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe reviewers and the editors find these results interesting and a potentially valuable contribution, assuming they can be shown to be robust to several modeling assumptions and limitations of the data, and these caveats more directly conveyed in the text. The following major suggestions emerged from the reviews and consultation session:\n\n1. Data on contacts and viral loads are particularly weak during the time during which most transmission takes place, i.e., during the presymptomatic and early symptomatic period. How do the results change with other methods of extrapolating peak viral load, including allowing variation in the incubation period? Are the results impacted if participants are assumed to report contacts most faithfully around the day of symptom onset?\n\n2. Mask use was recorded and surely affects the \"effective\" viral load for infectiousness. Does accounting for it change the results?\n\n3. Reviewer 2 highlighted ambiguity about the importance of variation in infectiousness between individuals v. over time. Do the data support real differences between people (after accounting for mask use and contacts)?\n\n4. Both reviewers also expressed skepticism about the strength of evidence underlying VOC viral loads.\n\nI'd like to clarify that the main suggestion here is for a more careful analysis. If the results change (assuming key parameters remain identifiable), this paper can still make a useful contribution.\n\nPlease see the two reviews for more detailed suggestions.\n\nReviewer #1:\n\nThe study of Marc et al., evaluated the relationship between viral load and infectiousness using a set of data containing both viral load and epidemiological contact tracing information collected from infected individuals during the first wave of SARS-CoV-2 outbreak in Spain (i.e. March-April, 2020). A subset of individuals where both longitudinal viral load measurements and high-risk of contacts were reported. The authors first fit a viral dynamic model, i.e. a type of model describing viral infection process in infected individuals, to longitudinal viral load data. This model gives predictions of viral load trajectories over time including the viral load at the time of the high-risk contacts. Then regression models were used to assess how the probability of transmission changes with viral loads. The authors found that the risk of transmission differs between house-hold contacts and non-house hold contacts; and for both types of contacts, the risk increases with increases in Log viral load. The authors also use the model to evaluate the transmissibility of the variant B117 assuming B117 causes a 2-4 fold higher viral load.\n\nThis is an interesting and novel study that addresses an important question: how viral load is related to transmission. An accurate understanding of this question will help to understand how the transmission patterns at the epidemiological level are driven by viral progression at the individual level and to predict impacts of interventions that reduce viral loads on transmission.\n\nThere are several limitations in the datasets and model predictions (as the authors have already rightly pointed out). Some of these limitations may potentially impact the conclusion. Rigorous robustness analyses need to be performed to test whether the conclusions are sensitive to the assumptions in the model or limitations in the datasets.\n\nFirst, limitation in the contact tracing data. Supplementary Figure 2 shows that a high level of contacts occurred at the time of symptom onset. This is a strong signal of certain biases in the survey data. Usually, one would expect that either contacts are roughly uniformly distributed (in the case of mildly symptomatic cases) or the number of contacts is higher before symptom onset and lower after symptom onset (for severely symptomatic cases). The data shown in supplementary Figure 2 clearly do not follow any of these patterns, i.e. it shows that the number of contacts suddenly become high on the day of symptom onset and decreased afterwards. One potential explanation of this observation is that when people start to have symptoms, they are more aware of the contacts they made on the day of symptom onset and a few days before and afterwards. This could influence the results in the study.\n\nSecond, limitation in the predicted viral loads at the time of high-risk contacts. It seems that there are 3 viral load measurements per infected individual in general, and these measurements were made approximately 4 days post symptom onset. In contrast, the transmission events and contacts were mostly occurred before or at symptom onset, i.e. several days before the first viral load data is available. Therefore, the viral load at the time of contacts were back extrapolated from data. Statistically speaking, back extrapolation using 3 data points would work well if the underlying function is a straight line; however, viral load kinetics seem to be more complicated. It is not clear to me whether this back extrapolation is accurate. Furthermore, as the authors pointed out, the model assumes a fixed incubation period of 5 days. However, the incubation period ranges widely between 1-14 days as most frequently quoted. All these uncertainties need to be formally addressed (by testing different scenarios) before we can be sure that the predicted viral loads at the time of contacts are accurate and thus the inferred relationship are reliable.\n\nThird, limitation in understanding of the viral load time course of the B117 strain. The authors' analysis assumes that the strain has a 2-4 fold higher viral load than WT (or non-B117) strain. I am not very convinced by these assumptions. How the viral load trajectories of B117 differ from other strains are not well established due to lack of longitudinal data. These estimates seem to be made mostly based on cross sectional studies, where the viral loads measured in cross sectional studies can be influenced by many factors (for example, the stage of the epidemic) in addition to true differences in viral load trajectories. In addition, transmission potential is influenced by multiple factors (in addition to viral load), such as the resulting severity of infection, the ability to initiate an infection etc. Therefore, I think the predictions concerning the transmission potential of this strain is premature.\n\nTo address the first limitation, this potential bias in the contact tracing data shall be accounted before the data is used to calculate how the risk of transmission is related to viral load, unless the authors provide a convincing explanation/argument for the observed pattern.\n\nTo address the second limitation, one suggestion I have is to run a simulation study to test accuracy of the predicted viral load at symptom onset (when the assumptions in the model are relaxed). For example, in the simulations, incubation period ranges between 1-14 days, and synthetic data are collected after day 4 post symptom onset (with certain measurement noise). One can fit the model to the synthetic data assuming a 5-day incubation period and test how accurate the inferred viral load at the time of the contacts compared to the viral load in the simulations that generated the data.\n\nReviewer #2:\n\nUsing data from a cluster-randomised trial of the use of hydroxychloroquine as prophylaxis in the prevention of SARS-CoV-2 infection among exposed close contacts [Mitja et al., NEJM 2021] and continuing their investigation on factors affecting transmissibility including viral shedding (load) of the index cases [Marks et al., Lancet Inf Dis 2021], in this manuscript, Marc et al. attempted to define the quantitative relationship between viral shedding of the index cases and the transmission probability to close contacts using joint models. It was done by first modelling the viral kinetics of the index using a within-host (target cell-limited) model, and then using probabilistic models with data on observed viral load and secondary transmission events to estimate the parameters of viral dynamics and transmission probability. Their results suggested (1) higher viral load was associated with higher transmission probability (but was not a linear relationship); (2) the effect of viral load on transmission probability was more prominent in households than other settings such as healthcare settings or nursing homes, with as much as 37% when viral load was >10 log10 copies/mL; (3) transmission probability peaked at symptom onset of the index; and (4) based on viral shedding data of different variants, one may estimate the transmission probability of emerging variants such as B1.1.7. The authors suggested/ concluded that such analytic approach could help inform the effects of virus evolution or vaccination on transmission probability.\n\nAuthors state in their introduction that \"\u2026the role of the viral load as a driver of infectiousness has been suspected but not formally established\". However, this statement is incorrect as the link between viral load and infectiousness has been known for more than a year for example as reported by He et al., (Nat Med 2020), among others. Authors reproduced this observation and therefore this work does not appear to make a substantial contribution to knowledge. On the other hand, this manuscript is well-written, using a unique dataset, earlier publications provided detailed description of the data used, the analytical approach used in this manuscript was clearly described with data used made available allowing reproducibility, and limitations adequately acknowledged. Unfortunately, the limitations described below, some of which also acknowledged by the authors, would suggest that the reliability of the identified quantitative relationship between viral load and transmission probability in this manuscript is unclear.\n\nThe manuscript seems has confused over two separate issues. First, viral loads in the respiratory tract are known to peak at around the time of symptom onset and then decline, consistent with the overall trajectory in contagiousness. Second, there is variability in viral loads between individuals, for example suggested by Chen et al., (eLife 2021, https://elifesciences.org/articles/65774), but it is not clear whether the individuals with higher viral loads are more contagious. Authors do seem to allow for person-to-person variability in their analysis, but it is not clear to this reviewer whether the person-to-person variability is necessary to explain contagiousness. What I believe authors should have done is fitted a model with temporal variability in shedding, and compared to this a model with temporal and person-to-person variability, to determine whether the person-to-person variability is correlated with transmission. In other words, do people with higher peak viral load (or longer duration in shedding) have higher contagiousness?\n\nMeasuring virus in respiratory swabs only and use it as a proxy of viral shedding/ infectiousness of the host as a whole is also unlikely to tell the full story. Prior research such as those by Milton et al., (PNAS 2018) and Leung et al., (Nat Med 2020) have shown, depending on the respiratory virus studied, there is a possibility of relatively weak correlation between viral loads in respiratory swabs versus in exhaled aerosols. Depending on the relative importance of different modes of transmission, the different viral shedding at different 'sites' may have implications on the relationship between viral shedding and host's contagiousness.\n\nTherefore, although authors noted on page 8 that \"several other factors are involved in transmission, besides viral load\", I would posit one factor would be individual variation in viral load that does not seem to have been taken into account, and a second factor would be the difference between viral load in exhaled breath versus viral load in respiratory swab. Both of these factors would actually count as \"viral load\" factors, rather than \"factors \u2026 besides viral load\".\n\nIn addition, although in Marks et al., (Lancet Inf Dis 2021) the use of facemasks by contacts was not identified as a significant factor associated with transmission, the effect of the use of facemasks by index was not assessed despite the data was collected as described in the study protocol from Mitja et al., (NEJM 2021). This is likely an important factor on \"effective\" viral shedding of the index [Leung et al., Nat Med 2020] which was not accounted for in the present analyses, and based on the data that around 60% of contacts reported routine use of masks [Mitja et al., NEJM 2021], it was likely that a substantial proportion of index would have worn masks too.\n\nAuthors go on to extrapolate to VOCs, and note \"In the context of variants of concern, that are likely associated with larger viral loads, it becomes even more critical to delineate the contribution of viral shedding from other suspected factors associated with an increased transmission.\", although the relationship between different strains and respiratory swab viral load is still unclear, and no available data so far on viral load in exhaled aerosols for different virus strains.\n\nAdditional limitations included (1) the unknown timing of the effective contact between the index and exposed contact leading to transmission, due to the unrecognised risk of pre-symptomatic transmission at the time the study was conducted so that most (household) contacts were reported to have happened on the day of symptom onset, and the inability to single-out the contact episode among several repeated contact episodes that actually led to transmission; and (2) the difficult in identifying the viral load during the presymptomatic phase of the index due to lack of data. Overall, I agree with the authors that to identify the quantitative relationship between viral shedding and transmissibility probability for SARS-CoV-2 in the present study (or any future studies) is challenging due to the difficulty in collecting viral shedding data during the presymptomatic transmission phase of SARS-CoV-2.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Quantifying the relationship between SARS-CoV-2 viral load and infectiousness\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Jos Van der Meer as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThis study evaluates the relationship between viral load and infectiousness and is of potential interest to infectious disease modelers and policy makers. The work reaches similar conclusions to other recent studies, although significant uncertainties remain.\n\nThe revisions have greatly improved the manuscript, and the reviewers and I ask only that small changes be made for clarity, to help future readers.\n\n1) As suggested by reviewer 2, please mention the lack of information on face mask usage in index cases and the impact this might have on the results.\n\n2) As suggested by reviewer 1 (point 2), please reconsider whether the data have sufficient power to demonstrate saturation and revise accordingly.\n\n3) Please also consider the conflicting evidence on B.1.1.7 viral loads (reviewer 1, point 3).\n\nReviewer #1:\n\nI would like to thank the authors for their efforts to address my comments and concerns. The additional analyses are sufficient and rigorous enough. I still have some concerns with respect to how the results of the study is interpreted and discussed. I would like to recommend publication if these points below are sufficiently addressed.\n\n1. In the revised model fitting, the authors assumed a log-normal distribution for the incubation period (instead of a fixed number). This is a MUCH MORE realistic assumption. However, I still think there are large uncertainties in predicting the viral load at the time of transmission event, especially given that only 3 data points taken on days after transmission events are available. For example, in Figure 1, it seems that the model predicts that the peak viral load occurs in most individuals and the peak viral load is on a back extrapolation of a line from the three data points. It is well known viral load data are very noisy. This extrapolation is unlikely to be very accurate. Although this limitation is partially discussed in lines 241 and 243, I feel this is the uncertainties in predicting pre-peak and peak viral load (where transmission events occurred) that shall be discussed more thoroughly.\n\n2. In line 192-193, it is stated: 'Unlike what has been suggested by theoretical models, the probability of transmission increased continuously with viral load and no saturation effects were visible at high viral loads.' I do not find strong evidence in the manuscript to rule out the possibility that transmission saturates with high viral loads. The saturation effect was not formally tested, because none of the 3 models in the manuscript include the saturation effect. The similar BIC values in Table 1 seem to suggest that this dataset may not be sufficient to test whether a saturation effect exists.\n\n3. For the assumption of increased peak viral load for B.1.1.7, I agree with the authors several cross-sectional studies indicate this VOC had high viral loads. However, as I mentioned in my original review, these studies (including the Jones et al., Science study) are mostly from clinical studies where individuals are enrolled days after symptom onset. The type of dataset is not well reliable in predicting peak viral loads of an infection (related to point 1). On the contrary, a recent longitudinal study shows that there is no difference in peak viral loads (most relevant for transmission) between the wild-type and the B.1.1.7 strain (Ke et al., medRxiv; DOI: 10.1101/2021.07.12.21260208). Infectiousness inferred from cell culture data suggests no difference between the wild-type and B.1.1.7 either. Therefore, I do not think there exists a consensus as why B.1.1.7 is more transmissible -factors other than viral load may be important. Having said that, I agree with the authors that the analysis is very useful for VOCs in general, given that some VOCs may have a high viral load as a transmission advantage. Therefore, I feel that the analysis is very valuable, but the conflict findings of B.1.1.7 viral loads shall be fully acknowledged. Currently, the manuscript seems to indicate that it is certain that B.1.1.7 gains transmission advantage through higher viral loads.\n\n4. One complication in the prediction of increased transmissibility of VOCs is that the overall transmission is influenced by both infectiousness (arising from viral loads) and pattern of contacts. The analysis in the manuscript implicitly assumes the contact patterns are the same across these different groups whereas in reality this may not be true. For example, some VOCs may cause more severe infections whereas vaccinated individuals will have milder infections and thus less changes in the number of contacts. The assumption is ok (without data on contact patterns); but it is better to state this assumption clearly in the abstract and the discussed in the Discussion, so that the uncertainties/assumptions are transparent to the general readers.\n\n5. Typo: 'different' is repeated in the first sentence in the caption of Figure 4.\n",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c11558be-abb8-46ec-84e3-4881215b2e14",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C1",
+      "claim": "Respiratory droplets and aerosols have been demonstrated as a major route of transmission of SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "While respiratory droplets and aerosols have rapidly been demonstrated as a major route of transmission of SARS-CoV-2 (Tang et al., 2020), the role of the viral load as a driver of infectiousness has been established (He et al., 2020) but not quantified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tang et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "1565eea4-814f-4045-b111-e0e172b62066",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C2",
+      "claim": "The role of viral load as a driver of infectiousness has been established but not quantified.",
+      "claim_type": "EXPLICIT",
+      "source": "While respiratory droplets and aerosols have rapidly been demonstrated as a major route of transmission of SARS-CoV-2 (Tang et al., 2020), the role of the viral load as a driver of infectiousness has been established (He et al., 2020) but not quantified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to He et al., 2020 and statement about lack of quantification",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "752f62ec-bd65-4add-93e8-d274bf551a13",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C3",
+      "claim": "High-risk contacts occur mostly before the index has been diagnosed, with no information on the viral load level at the time of the contact.",
+      "claim_type": "EXPLICIT",
+      "source": "This lack of evidence is due to the fact that high-risk contacts occur mostly before the index has been diagnosed, with no information on the viral load level at the time of the contact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about timing of contacts relative to diagnosis",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "4e24471a-10aa-4238-ae63-a9a9ea4dec6d",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C4",
+      "claim": "Variants of concern are associated with larger viral loads.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of variants of concern, that are associated with larger viral loads (Teyssou et al., 2021; Liu et al., 2021; Elie et al., 2021; Cosentino et al., 2021; Jones et al., 2021), it becomes even more critical to delineate the contribution of viral load from other factors associated with an increased transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to studies on variants",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "f1aefd81-4e97-4098-a699-5114872d5629",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C5",
+      "claim": "Antiviral drugs and vaccine strategies dramatically reduce the amount of viral shedding.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, as antiviral drugs and vaccine strategies are being implemented, that dramatically reduce the amount of viral shedding (Levine-Tiefenbrun et al., 2021), it is essential to understand how they may contribute to a reduction in virus transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Levine-Tiefenbrun et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "ce15d5de-8464-4ebc-93a6-79397e974f91",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C6",
+      "claim": "A randomised controlled trial was conducted in March-April 2020 in Spain to assess the efficacy of hydroxychloroquine on SARS-CoV-2 transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the most documented clinical study to address the question of viral load and infectiousness has been obtained through individuals included in a randomised controlled trial conducted in March-April 2020 in Spain, that aimed to assess the efficacy of hydroxychloroquine on SARS-CoV-2 transmission (Mitj\u00e0 et al., 2021; Marks et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Mitj\u00e0 et al., 2021 and Marks et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "abb393ee-24ee-4f80-9bcc-cf67def9fe0c",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C7",
+      "claim": "282 index cases and their 753 high-risk contacts were frequently monitored to assess their virological and clinical evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, 282 index and their 753 high-risk contacts were frequently monitored to assess their virological and clinical evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about study design and sample size",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "965634cf-3b2b-4567-8661-bad650cefe3c",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C8",
+      "claim": "An association was found between the probability of being infected after a high-risk contact and the viral load measured at the time of diagnosis in the index case.",
+      "claim_type": "EXPLICIT",
+      "source": "An association was found between the probability of being infected after a high-risk contact and the viral load measured at the time of diagnosis in the index case (Marks et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Marks et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "6b4d1b91-263c-4d84-a43d-bea9d9f5b2ed",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C9",
+      "claim": "259 index cases and their 582 high-risk contacts were included in the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 259 index cases and their 582 high-risk contacts (simply called contacts in the following) were included in our analysis (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statement about final sample size with reference to figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "5943ad65-a92b-4f08-ba72-5658a6baa1c2",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C10",
+      "claim": "The majority of index cases were female (72%) with a median age of 42.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of index cases were female (72%) with a median age of 42 (90% Inter Quantile Range (IQR): [24, 61]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Descriptive statistics from the study population",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "d2e621fc-930d-4556-abdc-f49d60a3df8a",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C11",
+      "claim": "A total of 544 swab samples were performed at days 0, 3 and 7 days after study inclusion.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 544 swab samples were performed at days 0, 3 and 7 days after study inclusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about data collection protocol",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "2d4a4473-e861-48f1-834b-90487dfb9077",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C12",
+      "claim": "The first swab was performed after a median time of 4 days after symptom onset.",
+      "claim_type": "EXPLICIT",
+      "source": "The first swab was performed after a median time of 4 days (90% IQR: [2, 6]) after symptom onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Descriptive statistics from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "13eee434-40de-4edb-8918-4293e8a3d143",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C13",
+      "claim": "The maximum median viral load obtained during follow-up was 8.4 log10 copies per mL.",
+      "claim_type": "EXPLICIT",
+      "source": "The maximum median viral load obtained during follow-up was 8.4 log10 copies per mL (90% IQR:[5.1, 10.6]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Descriptive statistics from viral load measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "4ac8042e-c9ee-407e-8938-5858737aa701",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C14",
+      "claim": "The majority of contacts were female (56%) with a median age of 41.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of contacts were female (56%) with a median age of 41 (90% IQR: [20, 65]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Descriptive statistics from the study population",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "865cea67-5380-4c43-bd00-d431974b300a",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C15",
+      "claim": "60% of contacts were household contacts and 40% were non-household contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "The form of contacts was categorized as either household (60%) or non-household (40%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Descriptive statistics from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "83c9c53f-73bb-45bc-80be-492ba9f493dd",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C16",
+      "claim": "87 household contacts led to an infection with a proportion of transmission of 24.9%.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, 87 household contact led to an infection (proportion of transmission of 24.9%) and 29 non-household contacts led to an infection (proportion of transmission of 12.4%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Descriptive statistics from transmission outcomes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "44a2ce94-0e63-4ee2-a5a1-4fec87339297",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C17",
+      "claim": "29 non-household contacts led to an infection with a proportion of transmission of 12.4%.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, 87 household contact led to an infection (proportion of transmission of 24.9%) and 29 non-household contacts led to an infection (proportion of transmission of 12.4%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Descriptive statistics from transmission outcomes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "3d1428c6-eefe-4ef8-af61-2411385d8bb3",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C18",
+      "claim": "The majority of contacts (65%) and of infection events (65%) occurred \u00b11 day from symptom onset of the index cases.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of contacts (65%) and of infection events (65%) occurred \u00b11 day from symptom onset of the index cases (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Descriptive statistics with reference to figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "fe8bfccc-81d3-4a4d-bda3-619af68c79b5",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C19",
+      "claim": "The incubation period has a log-normal distribution with a mean value of 5 days.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a target cell limited model to reconstruct the viral load kinetics of the index cases over time, assuming that the incubation period has a log-normal distribution with a mean value of 5 days (N\u00e9ant et al., 2021; Lauer et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model assumption supported by citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "5cbe74aa-b978-4eed-ba24-a1a47131f4b6",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C23",
+      "claim": "The model predicted that the median peak viral load coincided with symptom onset, with a median peak value of 9.4 log10 copies per mL.",
+      "claim_type": "EXPLICIT",
+      "source": "When reconstructing the viral load profiles, the model predicted that the median peak viral load coincided with symptom onset, with a median peak value of 9.4 log10 copies per mL (90% IQR: [8.0, 10.0]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model prediction based on fitted parameters",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "89c5c462-2e53-4898-a8a3-8c8e6200e580",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C24",
+      "claim": "Models assuming an effect of viral load on the probability of transmission (Model M2 and M3) provided an improvement in BIC compared to the model without viral load effect (Model M1).",
+      "claim_type": "EXPLICIT",
+      "source": "The two model assuming an effect of viral load on the probability of transmission (Model M2 and M3) provided an improvement in BIC as compared to the model M1, supporting an effect of viral load on the probability of infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model comparison using BIC criterion",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "9e0f9759-2cb1-4e84-b582-45f72095de17",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C25",
+      "claim": "Viral load was significantly associated with the probability of transmission after household contact (p<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "In both models, viral load was significantly associated with the probability of transmission after household contact (p<0.01, Wald test on \u03b31); however, the effect was lower after non-household transmission (p<0.05, Wald test on \u03b32).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical test result from model fitting",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "6e50f899-8a53-4cda-8595-b85c36199202",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C26",
+      "claim": "The effect of viral load on transmission was lower after non-household transmission (p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "In both models, viral load was significantly associated with the probability of transmission after household contact (p<0.01, Wald test on \u03b31); however, the effect was lower after non-household transmission (p<0.05, Wald test on \u03b32).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical test result from model fitting",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "51cad2ca-0858-48ae-8c54-81c777f707a5",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C27",
+      "claim": "The probability of transmission was fixed to 5% for viral load levels below six log10 copies/mL, which is generally the threshold for virus culture in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Because we fixed the probability of transmission to 5% for viral load levels below six log10 copies/mL, which is generally the threshold for virus culture in vitro (Jones et al., 2021; N\u00e9ant et al., 2021; van Kampen et al., 2021; Mollan et al., 2021), we tested models with threshold values ranging from 4 to 8 log10 copies/mL and they all yielded similar results (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model assumption supported by citations to virus culture studies",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "7e93e83e-edde-4ad0-8b72-d33ad7bdcc6f",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C28",
+      "claim": "The mean probability of transmission increased from 5% for viral load levels < 6 log10 copies per mL to 48% for viral load \u2265 10 log10 copies per mL for household contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "The model predicted that the mean probability of transmission increased from the fixed nominal value of 5% for viral load levels < 6 log10 copies per mL, to as much as 48% and 20% for viral load \u2265 10 log10 copies per mL for household and non-household contacts, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model prediction based on fitted parameters",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "03e13bc7-c16b-4a75-9d60-5af1d1aeabe1",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C29",
+      "claim": "The mean probability of transmission increased from 5% for viral load levels < 6 log10 copies per mL to 20% for viral load \u2265 10 log10 copies per mL for non-household contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "The model predicted that the mean probability of transmission increased from the fixed nominal value of 5% for viral load levels < 6 log10 copies per mL, to as much as 48% and 20% for viral load \u2265 10 log10 copies per mL for household and non-household contacts, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model prediction based on fitted parameters",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "1eab4dd7-4753-4648-a02f-c07bddb5d6ec",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C31",
+      "claim": "The median probability of transmission peaked at the time of symptom onset with a mean value of 29% in household contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the time of infection, the median probability of transmission peaked at the time of symptom onset with a mean value of 29% in household contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model prediction based on simulations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "4e86dddc-940c-4f17-81c3-937e5447a3dd",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C32",
+      "claim": "At the peak of transmission in household contacts, there was large inter-individual variability with a 90% inter quantile range of 6-96%.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there was large inter-individual variabilities due to both viral load levels and individual characteristics, with a 90% inter quantile range of 6-96% (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Model prediction showing variability",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "765f8160-e6db-465b-a6dc-4a9d4902e560",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C33",
+      "claim": "The peak of transmission was much lower in non-household contacts, with a mean value of 13%.",
+      "claim_type": "EXPLICIT",
+      "source": "The peak of transmission was much lower in non-household contacts, with a mean value of 13% (90% IQR: [5, 38]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model prediction based on simulations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "c710c838-12cc-4f3d-a246-88426d0894d9",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C34",
+      "claim": "The probability of transmission was above 5% for a median duration of 12 days.",
+      "claim_type": "EXPLICIT",
+      "source": "The probability of transmission was above 5% for a median duration of 12 days (90% IQR: [9, 15]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model prediction based on simulations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "401afa13-7b2a-4339-a206-f2daf35c6b0a",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C35",
+      "claim": "The median generation interval was estimated to be 5.1 days for household contacts when a time-varying rate of contacts was used.",
+      "claim_type": "EXPLICIT",
+      "source": "The median generation interval was estimated to be 5.1 days (90% IQR: [1, 10]) and 4.8 days (90% IQR: [1, 11]) for household and non-household contacts respectively, when a time-varying rate of contacts was used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model prediction based on simulations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "5481218b-d35c-4f92-ad3c-917fbc3a6440",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C36",
+      "claim": "The median generation interval was estimated to be 4.8 days for non-household contacts when a time-varying rate of contacts was used.",
+      "claim_type": "EXPLICIT",
+      "source": "The median generation interval was estimated to be 5.1 days (90% IQR: [1, 10]) and 4.8 days (90% IQR: [1, 11]) for household and non-household contacts respectively, when a time-varying rate of contacts was used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model prediction based on simulations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "9a2d1d49-bc3e-4dd6-8c94-e6eba4417da6",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C37",
+      "claim": "The generation interval estimates are close to what has been found in other studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Those estimates are close, albeit with higher variability, to what has been found in other studies (Cereda et al., 2020; Bi et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with literature supported by citations",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "95e1b6b5-c4d5-4dc4-87fb-895339c51434",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C38",
+      "claim": "For the baseline scenario, the average transmission probability was 18% for household contacts and 9% for non-household contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "For the baseline scenario using the parameters estimated in our population, the average transmission probability was 18% and 9% for household and non-household contacts, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model prediction for baseline scenario",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "f7f1a558-95e3-441b-8eae-f62bf0f5d388",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C39",
+      "claim": "With a twofold increase in viral production (corresponding to B1.1.7 strain), the average probability of transmission would increase to 22% for household contacts and 11% for non-household contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "With an increased value of viral production, p, by a factor 2, which corresponds to the viral load increase caused by B1.1.7 strain in large-scale epidemiological studies (Golubchik et al., 2021; Roquebert et al., 2021; Kidd et al., 2021), the average probability of transmission would increase to 22% and 11% for household and non-household contacts respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model prediction based on variant data from literature",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "ddbc5d6f-eb30-4cd0-92c9-192268ec9d19",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C40",
+      "claim": "With a fourfold increase in viral production, the average probability of transmission would increase to 26% for household contacts and 12% for non-household contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "With a fourfold increase, as suggested elsewhere (Teyssou et al., 2021), the average probability of transmission would increase to 26% and 12% for household and non-household contacts, respectively (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Model prediction based on variant data from literature",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "b22315ff-35c1-4949-8dab-5eec1c3cb99d",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C41",
+      "claim": "Assuming an eightfold increase in viral load, the average probability of transmission would increase to 29% for household contacts and 13% for non-household contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming an increase by eightfold of the viral load, the average probability of transmission would increase to 29% and 13% for household and non-household contacts, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model prediction based on variant data",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "26dcc3dd-066a-4e29-9bd1-c1421811090d",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C42",
+      "claim": "A two-, four-, or eightfold increase in viral production rate would lead to a relative increase in the average transmission probability of 24, 42, or 58% for household contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "As compared to the results observed with the historical virus a two-, four-, or eightfold increase in viral production rate would therefore lead to a relative increase in the average transmission probability of 24, 42, or 58% for household contacts, and of 15, 27, or 39% for non-household contacts (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Model prediction comparing scenarios",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "e41d19d6-2709-4ab0-a91c-1b8af1e09af4",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C43",
+      "claim": "A two-, four-, or eightfold increase in viral production rate would lead to a relative increase in the average transmission probability of 15, 27, or 39% for non-household contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "As compared to the results observed with the historical virus a two-, four-, or eightfold increase in viral production rate would therefore lead to a relative increase in the average transmission probability of 24, 42, or 58% for household contacts, and of 15, 27, or 39% for non-household contacts (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Model prediction comparing scenarios",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "196cc37a-3a56-4e9b-83f1-afc6956f91c2",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C44",
+      "claim": "Epidemiological studies in Israel reported a 3-5-fold lower viral load in infected vaccinated individuals compared to unvaccinated individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Epidemiological studies in Israel reported a 3-5-fold lower viral load in infected vaccinated individuals as compared to unvaccinated individuals (Levine-Tiefenbrun et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Levine-Tiefenbrun et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "9522e7fb-9d31-4f23-9ebf-3cdeb3e6b777",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C46",
+      "claim": "Some studies relying on systematic repeated viral testing reported a 30-100-fold reduction in viral load levels with vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "In other studies relying on systematic repeated viral testing in both symptomatic and asymptomatic individuals, the effect of vaccine was much more dramatic, with a 30-100-fold reduction in viral load levels (McEllistrem et al., 2021; Thompson et al., 2021; Bailly et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "4634b482-3544-47c5-b76f-79d5a2606b07",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C47",
+      "claim": "Assuming a 16-fold reduction in viral load, the average probability of transmission would decrease to its nominal value of 5% for both household and non-household contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming a reduction of 16-fold (~4 Ct) of the viral load, the average probability of transmission would decrease to its nominal value of 5% for both household and non-household contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model prediction for vaccination scenario",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "4b71ba9f-c2ca-4b18-9114-0e6c91c6fdf6",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C48",
+      "claim": "A 4- or 16-fold reduction in viral production rate would lead to a relative decrease in the average transmission probability of 61% or 72% for household contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "As compared to the results observed with the historical virus, a 4- or 16-fold reduction in viral production rate would lead to a relative decrease in the average transmission probability of 61% or 72% for household contacts and of 38 or 47% for non-household contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model prediction comparing vaccination scenarios",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "b3385188-510c-40c2-a628-edf79a25f82f",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C49",
+      "claim": "A 4- or 16-fold reduction in viral production rate would lead to a relative decrease in the average transmission probability of 38% or 47% for non-household contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "As compared to the results observed with the historical virus, a 4- or 16-fold reduction in viral production rate would lead to a relative decrease in the average transmission probability of 61% or 72% for household contacts and of 38 or 47% for non-household contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model prediction comparing vaccination scenarios",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "f4ec15c1-0261-48cb-a181-d58be1df97b9",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C50",
+      "claim": "The effect of viral load was particularly large in household contacts, with a mean transmission probability that increased to as much as 48% when the viral load was over 10 log10 copies per mL.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we quantified the impact of viral load on infectiousness using data obtained in a prospective cohorts of index and contact cases (Mitj\u00e0 et al., 2021). The effect of viral load was particularly large in household contacts, with a mean transmission probability that increased to as much as 48% when the viral load was over 10 log10 copies per mL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of model findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "164af66f-ff8c-4c92-8afe-08874b120bb7",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C51",
+      "claim": "The effect of viral load on transmission was individual-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with reports suggesting that the probability of transmission (Edwards et al., 2021) greatly vary between individuals, the effect of viral load was individual-dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model finding supported by citation",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "ba4c3dee-65ff-4e08-9831-49d3886f26c8",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C52",
+      "claim": "At the peak of infectiousness, the mean probability of transmission during household contact was 29% with a 90% inter quantile range of 6\u201396%.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, at the peak of infectiousness, the mean probability of transmission during household contact was 29% with a 90% inter quantile range of 6\u201396%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model prediction showing variability",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "123c6717-45d0-48f1-8688-3601526cad5c",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C53",
+      "claim": "Large-scale epidemiological data reported an average increase of the B1.1.7 virus by 1-2 Ct.",
+      "claim_type": "EXPLICIT",
+      "source": "We relied on results found in both large-scale epidemiological data and longitudinal evaluation of Ct values (Elie et al., 2021; Cosentino et al., 2021), that reported an average increase of the B1.1.7 virus by 1-2 Ct (Teyssou et al., 2021; Golubchik et al., 2021; Roquebert et al., 2021), which can be reproduced in our model by assuming that viral production increases by a factor 2-4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to epidemiological studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "140c62a1-4adf-41fe-8408-0f19cebbc6a9",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C54",
+      "claim": "The N501Y substitution improved the affinity of the viral spike protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, as only the product p \u00d7 T0 can be identified, this could also be due to B1.1.7 being able to infect twice as much target cells, as suggested by the fact that the N501Y substitution improved the affinity of the viral spike protein (Liu et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Liu et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "f17e1281-ce42-4430-97a2-9f97973aedc2",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C55",
+      "claim": "An increase of viral load by a factor of 2, 4, or 8 would lead to a relative increase in the average transmission probability of 24, 42, or 58% in household contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of the origin of this increased viral load, we estimated that an increase of viral load by a factor of 2, 4, or 8 would lead to a relative increase in the average transmission probability of 24, 42, or 58% in household contacts and of 15, 27, or 39% for non-household contact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model prediction for variant scenarios",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "7432f8af-b0ce-4754-b778-5564fb113894",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C56",
+      "claim": "An increase of viral load by a factor of 2, 4, or 8 would lead to a relative increase in the average transmission probability of 15, 27, or 39% for non-household contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of the origin of this increased viral load, we estimated that an increase of viral load by a factor of 2, 4, or 8 would lead to a relative increase in the average transmission probability of 24, 42, or 58% in household contacts and of 15, 27, or 39% for non-household contact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model prediction for variant scenarios",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "a83cb652-85fb-4d04-81bc-28c716324b9a",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C57",
+      "claim": "Another modelling study performed in a small population of frequently sampled individuals diagnosed early in their infection did not find an effect of B1.1.7 on viral kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, another modelling study performed in a small population of frequently sampled individuals diagnosed early in their infection did not find an effect of B1.1.7 on viral kinetics (Ke et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ke et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "7020afab-f937-46fa-b4bb-a354dd50d9ea",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C58",
+      "claim": "The exact magnitude of viral load decrease with vaccination depends on the design of the study.",
+      "claim_type": "EXPLICIT",
+      "source": "The exact magnitude of this decrease is difficult to quantify, and depends on the design of the study that relied on systematic testing or included only symptomatic individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Discussion of methodological factors affecting estimates",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "1af8b286-0a1d-4929-bda0-564c83464417",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C59",
+      "claim": "Reductions of fourfold or more in viral load will dramatically reduce the probability of transmission carried by vaccinated infected individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Whatever the exact value, our predictions indicate that reductions of fourfold or more will dramatically reduce the probability of transmission carried by vaccinated infected individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model prediction for vaccination scenarios",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "3c587d92-6a4a-4aaf-80f5-a751086ebc52",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C60",
+      "claim": "At the time the study was conducted, the role of pre-symptomatic transmission was not known.",
+      "claim_type": "EXPLICIT",
+      "source": "One of them is the fact that at the time where the study was conducted, the role of pre-symptomatic transmission was not known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about knowledge at time of study",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "bbee040f-f5a5-4fea-adb5-91df211e2d32",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C61",
+      "claim": "It is possible that recollection bias leads to an overestimation of contacts reporting on the day of symptom onset.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, it is possible that recollection bias leads to an overestimation of contacts reporting on the day of symptom onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Discussion of potential bias",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "7c9e9eee-6073-4bef-9bba-7d97439a2a9b",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C62",
+      "claim": "The study was conducted during the first epidemic wave in Spain, where most individuals had not yet applied social distancing and masking.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the study was conducted during the first epidemic wave in Spain, where most individuals, including in hospital settings, had not yet applied social distancing and masking, causing dozens of thousands of individuals infected every day.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about study context",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "83c609a9-e1b2-4219-b567-551a3bd069aa",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C63",
+      "claim": "Viral load data in index cases were collected on average 3\u20134 days after symptom onset, in the declining phase of viral load.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also important to note that viral load data in index cases were collected on average 3\u20134 days after symptom onset, in the declining phase of viral load, several days after most of the contacts had occurred.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about data collection timing",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "270fe45c-74d8-4e61-bf0c-396e8a00311b",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C64",
+      "claim": "The peak viral load coincides with symptom onset in SARS-CoV-2 infection.",
+      "claim_type": "EXPLICIT",
+      "source": "This limitation is inherent to the nature of SARS-CoV-2, where the peak viral load coincides with symptom onset, making difficult to obtain data during the replicating phase of the virus where individuals are largely asymptomatic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about SARS-CoV-2 viral kinetics",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "e9534d76-7310-4e6d-a9e0-d0287b30b080",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C65",
+      "claim": "In the original analysis, the use of face mask by contacts was not found associated with a decreased viral load.",
+      "claim_type": "EXPLICIT",
+      "source": "In the original analysis of Marks et al., 2021, the use of face mask by contacts was not found associated with a decreased viral load, but this probably reflects the lack of more detailed data on the type of mask, the use of other personal protective equipment and infection control practices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Marks et al., 2021 with interpretation",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "4c7605f6-d295-465a-8a02-4c8d535b2538",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C66",
+      "claim": "Face masking was poorly reported and was missing in about 35% of contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also important to recall that face masking was poorly reported and was missing in about 35% of contacts, limiting statistical power (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about data quality",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "d111857b-2f06-4e40-b65d-5387ad5cc649",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C67",
+      "claim": "The use of face mask by index cases has a far more substantial effect on viral shedding and thus on transmission than mask use by contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "This information might be of a greater importance as it has a far more substantial effect on viral shedding and thus on transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about relative importance of mask use",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "9b399cbd-fc0c-4c0e-a0ae-12b466a268bc",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C68",
+      "claim": "Two- to eightfold increase in viral load level observed with variants of concern could lead to an increase in the probability of transmission by 24\u201358% in household contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimate that two- to eightfold increase in viral load level observed with variants of concern could lead to an increase in the probability of transmission by 24\u201358% in household contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of main finding",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "fc71da6c-0f73-4604-9847-404b80fa91d5",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C69",
+      "claim": "The trial was conducted between March 17 and April 28, 2020 in three out of nine health-care areas in Catalonia, Spain.",
+      "claim_type": "EXPLICIT",
+      "source": "The trial was conducted between March, 17 and April 28, 2020 in three out of nine health-care area in Catalonia, Spain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about study design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "75fc8ebd-1b7b-48fd-a981-569217bf5c68",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C70",
+      "claim": "All index cases were individuals aged 18 years or older with nasopharyngeal PCR positive results at baseline and mild symptoms onset within 5 days of inclusion.",
+      "claim_type": "EXPLICIT",
+      "source": "All index cases were individuals aged 18 years or older, identified by the Catalan epidemiological surveillance system, with no hospitalisation, nasopharyngeal PCR positive results at baseline and mild symptoms onset within 5 days of inclusion and had no reported symptoms of SARS-CoV-2 infections in their accommodation or workplace within the 14 days before enrolment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about inclusion criteria",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "7542f0d9-6b47-4f39-9463-a8eb933818a7",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C71",
+      "claim": "High-risk contacts were adults with a recent history of exposure (>15 min within 2 m up to 7 days before enrolment) and absence of COVID-19 like symptoms within the 14 days preceding enrolment.",
+      "claim_type": "EXPLICIT",
+      "source": "High-risk contacts were adults with a recent history of exposure (i.e. >15 min within 2 m up to 7 days before enrolment) and absence of COVID-19 like symptoms within the 14 days preceding enrolment, and who had an increased risk of infection (e.g. health care worker a household contact, a nursing-home worker, or a nursing-home resident).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about inclusion criteria",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "bf0218d0-68c8-4121-9529-b28b439cf04d",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C72",
+      "claim": "Contacts were quarantined upon enrolment to the study.",
+      "claim_type": "EXPLICIT",
+      "source": "Contacts were quarantined upon enrolment to the study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about study protocol",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "9ef4aa32-35cf-4dfb-b61e-4ffc1dcd4a80",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C73",
+      "claim": "Three index individuals and their corresponding 25 contacts were excluded because no viral load data was available.",
+      "claim_type": "EXPLICIT",
+      "source": "In the original study, 282 index cases and the resulting 753 contacts were enrolled (Marks et al., 2021); here we did not include three index individuals (and their corresponding 25 contacts) for which no viral load data was available, eight index individuals (19 contacts) for which no viral load was detected at any time point, and 12 index cases (127 contacts) for which no date of contact was available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about exclusion criteria",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "73011952-1250-4db4-a948-87745a98f95f",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C74",
+      "claim": "Eight index individuals and 19 contacts were excluded because no viral load was detected at any time point.",
+      "claim_type": "EXPLICIT",
+      "source": "In the original study, 282 index cases and the resulting 753 contacts were enrolled (Marks et al., 2021); here we did not include three index individuals (and their corresponding 25 contacts) for which no viral load data was available, eight index individuals (19 contacts) for which no viral load was detected at any time point, and 12 index cases (127 contacts) for which no date of contact was available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about exclusion criteria",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "28c9ceef-5270-4fd6-8da7-9adee0cbc67c",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C75",
+      "claim": "Twelve index cases and 127 contacts were excluded because no date of contact was available.",
+      "claim_type": "EXPLICIT",
+      "source": "In the original study, 282 index cases and the resulting 753 contacts were enrolled (Marks et al., 2021); here we did not include three index individuals (and their corresponding 25 contacts) for which no viral load data was available, eight index individuals (19 contacts) for which no viral load was detected at any time point, and 12 index cases (127 contacts) for which no date of contact was available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about exclusion criteria",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "dbb21f49-d506-4759-9d01-65a874950474",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C76",
+      "claim": "In 12 index cases, the date of symptoms onset was not known and was imputed to 4 days before their first swab sampling.",
+      "claim_type": "EXPLICIT",
+      "source": "In 12 index cases, the date of symptoms onset was not known and was imputed to 4 days before their first swab sampling, which corresponds to the median value observed in the population study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about data imputation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "2a85a6d0-a3c5-4be9-b733-69dbfc46e720",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C79",
+      "claim": "The proportion of infectious virus \u00b5 was assumed constant over time and was fixed to 10^-4 as observed in animal model.",
+      "claim_type": "EXPLICIT",
+      "source": "The proportion of infectious virus \u00b5 was assumed constant over time and was fixed to 10\u22124 as observed in animal model (Gon\u00e7alves et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model assumption supported by citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "0f19563c-3c26-4b81-9bea-4a3b17da4cc1",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C81",
+      "claim": "At the moment of infection there was exactly one productively infected cell in the upper respiratory tract.",
+      "claim_type": "EXPLICIT",
+      "source": "We assumed that at the moment of infection there was exactly one productively infected cell in the upper respiratory tract.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model assumption",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "dc6ed565-2c1b-45d1-b374-be1a1da500dd",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C82",
+      "claim": "90% of individuals have an incubation period varying between 4 and 6 days.",
+      "claim_type": "EXPLICIT",
+      "source": "We assumed that the incubation period was lognormally distributed around 5 days before symptoms onset with a standard deviation of 0.125 days, corresponding to 90% of individuals having an incubation period varying between 4 and 6 days (Jones et al., 2021; Lauer et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model assumption supported by citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "19e748bd-0cb1-4073-a6a8-1df8fe42c1ae",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C83",
+      "claim": "Parameter estimations were performed using non-linear mixed-effect model.",
+      "claim_type": "EXPLICIT",
+      "source": "Parameter estimations were performed using non-linear mixed-effect model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about statistical methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "c4919eaf-8ea4-49ca-a0a2-3d7d57a0d33f",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C84",
+      "claim": "All parameters were estimated by computing the maximum-likelihood estimator using the stochastic approximation expectation-maximization (SAEM) algorithm implemented in Monolix Software 2020R1.",
+      "claim_type": "EXPLICIT",
+      "source": "All parameters were estimated by computing the maximum-likelihood estimator using the stochastic approximation expectation-maximization (SAEM) algorithm implemented in Monolix Software 2020R1 (http://www.lixoft.eu/) (Comets et al., 2017; Delyon et al., 1999; Monolix version 2020R1, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about statistical methods with citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "1082a25f-5828-4993-9d90-fabe538f5d13",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C86",
+      "claim": "All simulations were performed using the Simulx package on R.3.6.0.",
+      "claim_type": "EXPLICIT",
+      "source": "All simulations were performed using the Simulx package on R.3.6.0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about software used",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "9478038e-3f25-48c0-944c-89c9ce5837c0",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C87",
+      "claim": "The transmission probability as large as 48% when the viral load was greater than 10^10 copies per mL in household contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect of viral load was larger in household contacts than in non-household contacts, with a transmission probability as large as 48% when the viral load was greater than 1010 copies per mL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of main finding from abstract",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "6e776f6c-ecb1-4ba2-827d-2a03fc1163f4",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C88",
+      "claim": "The transmission probability peaked at symptom onset, with a mean probability of transmission of 29%, with large individual variations.",
+      "claim_type": "EXPLICIT",
+      "source": "The transmission probability peaked at symptom onset, with a mean probability of transmission of 29%, with large individual variations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of main finding from abstract",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "334b3d81-01f7-4d0e-bc1e-4ba5b4cefec1",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C89",
+      "claim": "Viral load is increased by two- to eightfold with variants of concern.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the current knowledge that viral load is increased by two- to eightfold with variants of concern and assuming no changes in the pattern of contacts across variants, the model predicts that larger viral load levels could lead to a relative increase in the probability of transmission of 24% to 58% in household contacts, and of 15% to 39% in non-household contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about variants from abstract based on literature",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "a1af6e08-9806-4977-99af-996b4adec717",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C90",
+      "claim": "Larger viral load levels could lead to a relative increase in the probability of transmission of 24% to 58% in household contacts for variants of concern.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the current knowledge that viral load is increased by two- to eightfold with variants of concern and assuming no changes in the pattern of contacts across variants, the model predicts that larger viral load levels could lead to a relative increase in the probability of transmission of 24% to 58% in household contacts, and of 15% to 39% in non-household contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model prediction from abstract",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "227318ba-cf85-41b8-8682-132189afe6ae",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "claim_id": "C91",
+      "claim": "Larger viral load levels could lead to a relative increase in the probability of transmission of 15% to 39% in non-household contacts for variants of concern.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the current knowledge that viral load is increased by two- to eightfold with variants of concern and assuming no changes in the pattern of contacts across variants, the model predicts that larger viral load levels could lead to a relative increase in the probability of transmission of 24% to 58% in household contacts, and of 15% to 39% in non-household contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model prediction from abstract",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7b5e5370-63ef-4641-a1df-38944c87a5b8",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study analyzed 259 index cases and 582 high-risk contacts from a randomized controlled trial conducted in Spain (March-April 2020). Index cases were predominantly female (72%), median age 42, with viral load measurements collected at median 4 days post-symptom onset. Contacts were 60% household and 40% non-household, with transmission rates of 24.9% and 12.4% respectively, and 65% of contacts occurred within \u00b11 day of symptom onset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C18 and C69-C76 provide comprehensive descriptive statistics and study design details that are internally consistent and appropriately documented. The sample sizes, demographic characteristics, timing of measurements, and transmission outcomes are clearly stated with appropriate exclusion criteria. The data collection protocol is well-described.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "8f92b5c1-2f5d-46c4-a935-2e52886cf293",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A target cell-limited viral kinetics model was developed with fixed parameters from literature (incubation period: log-normal, mean 5 days; clearance rate c=10 d\u207b\u00b9; eclipse phase k=4 d\u207b\u00b9; infectious virus proportion \u03bc=10\u207b\u2074). The model predicted median peak viral load of 9.4 log10 copies/mL coinciding with symptom onset. Parameters were estimated using non-linear mixed-effects modeling with the SAEM algorithm in Monolix 2020R1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19, C23, C79, C81-C84, C86 describe a well-established modeling approach with parameters appropriately fixed based on literature citations. The model structure is standard for viral kinetics, and the statistical methodology (SAEM algorithm) is appropriate. The prediction that peak viral load coincides with symptom onset is consistent with known SARS-CoV-2 biology (C64).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "2192e313-8a02-4326-af23-c64b60bcb3ed",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Models incorporating viral load effects (M2, M3) showed improved BIC compared to the no-effect model (M1). Viral load was significantly associated with household transmission (p<0.01) but had a weaker effect on non-household transmission (p<0.05). The model predicted transmission probability increased from 5% (at <6 log10 copies/mL) to 48% for household and 20% for non-household contacts at \u226510 log10 copies/mL.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C29 present model comparison results with appropriate statistical criteria (BIC) and significance testing (Wald tests). The threshold of 6 log10 copies/mL is justified by virus culture literature (C27). The predictions are supported by model simulations shown in Figure 2, which demonstrate good agreement between observed and predicted transmission proportions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "a5022682-d2a2-47ef-acec-90533ad93f93",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The model predicted that transmission probability peaked at symptom onset with mean values of 29% (household, 90% IQR: 6-96%) and 13% (non-household, 90% IQR: 5-38%). Large inter-individual variability was observed due to both viral load levels and individual characteristics. The probability of transmission remained above 5% for a median duration of 12 days (90% IQR: 9-15 days).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C34, C50-C52, C87-C88 present consistent model predictions with appropriate uncertainty quantification. The large inter-individual variability (\u03c9_\u03b2 = 85% from Table 1) is appropriately acknowledged. Figure 3 provides visual support for these predictions. The findings are internally consistent across the abstract and results sections.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "e7134986-93c7-4256-92d6-54a511c7d18b",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The model estimated median generation intervals of 5.1 days (household, 90% IQR: 1-10) and 4.8 days (non-household, 90% IQR: 1-11) when using a time-varying contact rate. These estimates are consistent with other published studies, though with higher variability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 present generation interval estimates that serve as model validation. The comparison with literature (Cereda et al., 2020; Bi et al., 2020) provides external validation. The acknowledgment of higher variability is appropriate given the modeling approach. The time-varying contact rate assumption is more realistic than constant contact rate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "d8983ab3-300c-4c2a-beec-7377e221462e",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Model simulations predicted that 2-8-fold increases in viral production (corresponding to variants of concern like B.1.1.7) would lead to relative increases in average transmission probability of 24-58% for household contacts and 15-39% for non-household contacts. The baseline scenario predicted 18% (household) and 9% (non-household) average transmission probability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C38-C43, C53-C56, C68, C89-C91 present model predictions for variant scenarios based on literature reports of 1-2 Ct increases (2-4-fold viral load increases). However, the authors acknowledge (C57) that another modeling study found no effect of B.1.1.7 on viral kinetics, and note that the association between VOC and viral load relies on observational data with limitations. The predictions are model-based extrapolations that require empirical validation. The assumption of no changes in contact patterns across variants may not hold.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "a59fa456-aa6c-4c10-8787-2830d7d8af94",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Model simulations predicted that 4-16-fold reductions in viral production (representing vaccination effects) would lead to relative decreases in average transmission probability of 61-72% for household contacts and 38-47% for non-household contacts. The exact magnitude of viral load reduction with vaccination varies across studies (3-100-fold) depending on study design.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C44, C46-C49, C58-C59 present model predictions for vaccination scenarios based on variable literature reports (3-100-fold reductions). The authors appropriately acknowledge (C58) that the exact magnitude depends on study design (systematic testing vs. symptomatic individuals only). The wide range of reported effects (3-100-fold) introduces substantial uncertainty into the predictions. These are model-based projections requiring empirical validation in vaccinated populations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "2013545c-dec6-4336-acfa-4941eb7c0778",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study has several acknowledged limitations: pre-symptomatic transmission was not well understood at the time of data collection, potential recollection bias for contact timing, viral load data collected 3-4 days post-symptom onset (declining phase), and poor reporting of face mask use (missing in ~35% of contacts). The study was conducted during the first wave in Spain when social distancing and masking were not widely practiced.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C67 provide an honest assessment of study limitations. The authors appropriately acknowledge temporal limitations (knowledge at time of study), measurement timing issues (viral load collected post-peak), potential biases (recollection bias), and missing data (face mask use). The discussion of these limitations is critical and demonstrates scientific rigor. The contextual information about the first wave in Spain (C62) is important for interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "1fcdf43c-10cf-4c61-9ca4-b570267a1dd4",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Prior work has established respiratory droplets/aerosols as major SARS-CoV-2 transmission routes and identified viral load as a driver of infectiousness, but the relationship has not been quantified. Variants of concern are associated with larger viral loads, and vaccines reduce viral shedding, making it critical to understand viral load's contribution to transmission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 accurately summarize prior knowledge with appropriate citations. These claims establish the scientific context and rationale for the study. The statements about variants (C4) and vaccines (C5) are supported by multiple literature citations and represent consensus knowledge at the time of publication.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    },
+    {
+      "id": "099001f7-15fa-4d25-bca9-f38bccca1ee3",
+      "content_id": "1368b115-68de-49ae-b744-2e3f121ee54d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "A prior randomized controlled trial in Spain (March-April 2020) with 282 index cases and 753 contacts found an association between transmission probability and viral load at diagnosis, but did not quantify the relationship because viral load at the time of contact was unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C8 accurately describe the source data from Mitj\u00e0 et al., 2021 and Marks et al., 2021. These claims establish the foundation for the current reanalysis. The limitation that viral load at contact time was unknown (C8) provides the key motivation for the modeling approach used in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:44:24.024119Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6b4d1b91-263c-4d84-a43d-bea9d9f5b2ed",
+      "result_id": "7b5e5370-63ef-4641-a1df-38944c87a5b8"
+    },
+    {
+      "claim_id": "5943ad65-a92b-4f08-ba72-5658a6baa1c2",
+      "result_id": "7b5e5370-63ef-4641-a1df-38944c87a5b8"
+    },
+    {
+      "claim_id": "d2e621fc-930d-4556-abdc-f49d60a3df8a",
+      "result_id": "7b5e5370-63ef-4641-a1df-38944c87a5b8"
+    },
+    {
+      "claim_id": "2d4a4473-e861-48f1-834b-90487dfb9077",
+      "result_id": "7b5e5370-63ef-4641-a1df-38944c87a5b8"
+    },
+    {
+      "claim_id": "13eee434-40de-4edb-8918-4293e8a3d143",
+      "result_id": "7b5e5370-63ef-4641-a1df-38944c87a5b8"
+    },
+    {
+      "claim_id": "4ac8042e-c9ee-407e-8938-5858737aa701",
+      "result_id": "7b5e5370-63ef-4641-a1df-38944c87a5b8"
+    },
+    {
+      "claim_id": "865cea67-5380-4c43-bd00-d431974b300a",
+      "result_id": "7b5e5370-63ef-4641-a1df-38944c87a5b8"
+    },
+    {
+      "claim_id": "83c9c53f-73bb-45bc-80be-492ba9f493dd",
+      "result_id": "7b5e5370-63ef-4641-a1df-38944c87a5b8"
+    },
+    {
+      "claim_id": "44a2ce94-0e63-4ee2-a5a1-4fec87339297",
+      "result_id": "7b5e5370-63ef-4641-a1df-38944c87a5b8"
+    },
+    {
+      "claim_id": "3d1428c6-eefe-4ef8-af61-2411385d8bb3",
+      "result_id": "7b5e5370-63ef-4641-a1df-38944c87a5b8"
+    },
+    {
+      "claim_id": "fc71da6c-0f73-4604-9847-404b80fa91d5",
+      "result_id": "7b5e5370-63ef-4641-a1df-38944c87a5b8"
+    },
+    {
+      "claim_id": "75fc8ebd-1b7b-48fd-a981-569217bf5c68",
+      "result_id": "7b5e5370-63ef-4641-a1df-38944c87a5b8"
+    },
+    {
+      "claim_id": "7542f0d9-6b47-4f39-9463-a8eb933818a7",
+      "result_id": "7b5e5370-63ef-4641-a1df-38944c87a5b8"
+    },
+    {
+      "claim_id": "bf0218d0-68c8-4121-9529-b28b439cf04d",
+      "result_id": "7b5e5370-63ef-4641-a1df-38944c87a5b8"
+    },
+    {
+      "claim_id": "9ef4aa32-35cf-4dfb-b61e-4ffc1dcd4a80",
+      "result_id": "7b5e5370-63ef-4641-a1df-38944c87a5b8"
+    },
+    {
+      "claim_id": "73011952-1250-4db4-a948-87745a98f95f",
+      "result_id": "7b5e5370-63ef-4641-a1df-38944c87a5b8"
+    },
+    {
+      "claim_id": "28c9ceef-5270-4fd6-8da7-9adee0cbc67c",
+      "result_id": "7b5e5370-63ef-4641-a1df-38944c87a5b8"
+    },
+    {
+      "claim_id": "dbb21f49-d506-4759-9d01-65a874950474",
+      "result_id": "7b5e5370-63ef-4641-a1df-38944c87a5b8"
+    },
+    {
+      "claim_id": "fe8bfccc-81d3-4a4d-bda3-619af68c79b5",
+      "result_id": "8f92b5c1-2f5d-46c4-a935-2e52886cf293"
+    },
+    {
+      "claim_id": "5cbe74aa-b978-4eed-ba24-a1a47131f4b6",
+      "result_id": "8f92b5c1-2f5d-46c4-a935-2e52886cf293"
+    },
+    {
+      "claim_id": "2a85a6d0-a3c5-4be9-b733-69dbfc46e720",
+      "result_id": "8f92b5c1-2f5d-46c4-a935-2e52886cf293"
+    },
+    {
+      "claim_id": "0f19563c-3c26-4b81-9bea-4a3b17da4cc1",
+      "result_id": "8f92b5c1-2f5d-46c4-a935-2e52886cf293"
+    },
+    {
+      "claim_id": "dc6ed565-2c1b-45d1-b374-be1a1da500dd",
+      "result_id": "8f92b5c1-2f5d-46c4-a935-2e52886cf293"
+    },
+    {
+      "claim_id": "19e748bd-0cb1-4073-a6a8-1df8fe42c1ae",
+      "result_id": "8f92b5c1-2f5d-46c4-a935-2e52886cf293"
+    },
+    {
+      "claim_id": "c4919eaf-8ea4-49ca-a0a2-3d7d57a0d33f",
+      "result_id": "8f92b5c1-2f5d-46c4-a935-2e52886cf293"
+    },
+    {
+      "claim_id": "1082a25f-5828-4993-9d90-fabe538f5d13",
+      "result_id": "8f92b5c1-2f5d-46c4-a935-2e52886cf293"
+    },
+    {
+      "claim_id": "89c5c462-2e53-4898-a8a3-8c8e6200e580",
+      "result_id": "2192e313-8a02-4326-af23-c64b60bcb3ed"
+    },
+    {
+      "claim_id": "9e0f9759-2cb1-4e84-b582-45f72095de17",
+      "result_id": "2192e313-8a02-4326-af23-c64b60bcb3ed"
+    },
+    {
+      "claim_id": "6e50f899-8a53-4cda-8595-b85c36199202",
+      "result_id": "2192e313-8a02-4326-af23-c64b60bcb3ed"
+    },
+    {
+      "claim_id": "51cad2ca-0858-48ae-8c54-81c777f707a5",
+      "result_id": "2192e313-8a02-4326-af23-c64b60bcb3ed"
+    },
+    {
+      "claim_id": "7e93e83e-edde-4ad0-8b72-d33ad7bdcc6f",
+      "result_id": "2192e313-8a02-4326-af23-c64b60bcb3ed"
+    },
+    {
+      "claim_id": "03e13bc7-c16b-4a75-9d60-5af1d1aeabe1",
+      "result_id": "2192e313-8a02-4326-af23-c64b60bcb3ed"
+    },
+    {
+      "claim_id": "1eab4dd7-4753-4648-a02f-c07bddb5d6ec",
+      "result_id": "a5022682-d2a2-47ef-acec-90533ad93f93"
+    },
+    {
+      "claim_id": "4e86dddc-940c-4f17-81c3-937e5447a3dd",
+      "result_id": "a5022682-d2a2-47ef-acec-90533ad93f93"
+    },
+    {
+      "claim_id": "765f8160-e6db-465b-a6dc-4a9d4902e560",
+      "result_id": "a5022682-d2a2-47ef-acec-90533ad93f93"
+    },
+    {
+      "claim_id": "c710c838-12cc-4f3d-a246-88426d0894d9",
+      "result_id": "a5022682-d2a2-47ef-acec-90533ad93f93"
+    },
+    {
+      "claim_id": "f4ec15c1-0261-48cb-a181-d58be1df97b9",
+      "result_id": "a5022682-d2a2-47ef-acec-90533ad93f93"
+    },
+    {
+      "claim_id": "164af66f-ff8c-4c92-8afe-08874b120bb7",
+      "result_id": "a5022682-d2a2-47ef-acec-90533ad93f93"
+    },
+    {
+      "claim_id": "ba4c3dee-65ff-4e08-9831-49d3886f26c8",
+      "result_id": "a5022682-d2a2-47ef-acec-90533ad93f93"
+    },
+    {
+      "claim_id": "9478038e-3f25-48c0-944c-89c9ce5837c0",
+      "result_id": "a5022682-d2a2-47ef-acec-90533ad93f93"
+    },
+    {
+      "claim_id": "6e776f6c-ecb1-4ba2-827d-2a03fc1163f4",
+      "result_id": "a5022682-d2a2-47ef-acec-90533ad93f93"
+    },
+    {
+      "claim_id": "401afa13-7b2a-4339-a206-f2daf35c6b0a",
+      "result_id": "e7134986-93c7-4256-92d6-54a511c7d18b"
+    },
+    {
+      "claim_id": "5481218b-d35c-4f92-ad3c-917fbc3a6440",
+      "result_id": "e7134986-93c7-4256-92d6-54a511c7d18b"
+    },
+    {
+      "claim_id": "9a2d1d49-bc3e-4dd6-8c94-e6eba4417da6",
+      "result_id": "e7134986-93c7-4256-92d6-54a511c7d18b"
+    },
+    {
+      "claim_id": "95e1b6b5-c4d5-4dc4-87fb-895339c51434",
+      "result_id": "d8983ab3-300c-4c2a-beec-7377e221462e"
+    },
+    {
+      "claim_id": "f7f1a558-95e3-441b-8eae-f62bf0f5d388",
+      "result_id": "d8983ab3-300c-4c2a-beec-7377e221462e"
+    },
+    {
+      "claim_id": "ddbc5d6f-eb30-4cd0-92c9-192268ec9d19",
+      "result_id": "d8983ab3-300c-4c2a-beec-7377e221462e"
+    },
+    {
+      "claim_id": "b22315ff-35c1-4949-8dab-5eec1c3cb99d",
+      "result_id": "d8983ab3-300c-4c2a-beec-7377e221462e"
+    },
+    {
+      "claim_id": "26dcc3dd-066a-4e29-9bd1-c1421811090d",
+      "result_id": "d8983ab3-300c-4c2a-beec-7377e221462e"
+    },
+    {
+      "claim_id": "e41d19d6-2709-4ab0-a91c-1b8af1e09af4",
+      "result_id": "d8983ab3-300c-4c2a-beec-7377e221462e"
+    },
+    {
+      "claim_id": "123c6717-45d0-48f1-8688-3601526cad5c",
+      "result_id": "d8983ab3-300c-4c2a-beec-7377e221462e"
+    },
+    {
+      "claim_id": "140c62a1-4adf-41fe-8408-0f19cebbc6a9",
+      "result_id": "d8983ab3-300c-4c2a-beec-7377e221462e"
+    },
+    {
+      "claim_id": "f17e1281-ce42-4430-97a2-9f97973aedc2",
+      "result_id": "d8983ab3-300c-4c2a-beec-7377e221462e"
+    },
+    {
+      "claim_id": "7432f8af-b0ce-4754-b778-5564fb113894",
+      "result_id": "d8983ab3-300c-4c2a-beec-7377e221462e"
+    },
+    {
+      "claim_id": "9b399cbd-fc0c-4c0e-a0ae-12b466a268bc",
+      "result_id": "d8983ab3-300c-4c2a-beec-7377e221462e"
+    },
+    {
+      "claim_id": "334b3d81-01f7-4d0e-bc1e-4ba5b4cefec1",
+      "result_id": "d8983ab3-300c-4c2a-beec-7377e221462e"
+    },
+    {
+      "claim_id": "a1af6e08-9806-4977-99af-996b4adec717",
+      "result_id": "d8983ab3-300c-4c2a-beec-7377e221462e"
+    },
+    {
+      "claim_id": "227318ba-cf85-41b8-8682-132189afe6ae",
+      "result_id": "d8983ab3-300c-4c2a-beec-7377e221462e"
+    },
+    {
+      "claim_id": "196cc37a-3a56-4e9b-83f1-afc6956f91c2",
+      "result_id": "a59fa456-aa6c-4c10-8787-2830d7d8af94"
+    },
+    {
+      "claim_id": "9522e7fb-9d31-4f23-9ebf-3cdeb3e6b777",
+      "result_id": "a59fa456-aa6c-4c10-8787-2830d7d8af94"
+    },
+    {
+      "claim_id": "4634b482-3544-47c5-b76f-79d5a2606b07",
+      "result_id": "a59fa456-aa6c-4c10-8787-2830d7d8af94"
+    },
+    {
+      "claim_id": "4b71ba9f-c2ca-4b18-9114-0e6c91c6fdf6",
+      "result_id": "a59fa456-aa6c-4c10-8787-2830d7d8af94"
+    },
+    {
+      "claim_id": "b3385188-510c-40c2-a628-edf79a25f82f",
+      "result_id": "a59fa456-aa6c-4c10-8787-2830d7d8af94"
+    },
+    {
+      "claim_id": "7020afab-f937-46fa-b4bb-a354dd50d9ea",
+      "result_id": "a59fa456-aa6c-4c10-8787-2830d7d8af94"
+    },
+    {
+      "claim_id": "1af8b286-0a1d-4929-bda0-564c83464417",
+      "result_id": "a59fa456-aa6c-4c10-8787-2830d7d8af94"
+    },
+    {
+      "claim_id": "3c587d92-6a4a-4aaf-80f5-a751086ebc52",
+      "result_id": "2013545c-dec6-4336-acfa-4941eb7c0778"
+    },
+    {
+      "claim_id": "bbee040f-f5a5-4fea-adb5-91df211e2d32",
+      "result_id": "2013545c-dec6-4336-acfa-4941eb7c0778"
+    },
+    {
+      "claim_id": "7c9e9eee-6073-4bef-9bba-7d97439a2a9b",
+      "result_id": "2013545c-dec6-4336-acfa-4941eb7c0778"
+    },
+    {
+      "claim_id": "83c609a9-e1b2-4219-b567-551a3bd069aa",
+      "result_id": "2013545c-dec6-4336-acfa-4941eb7c0778"
+    },
+    {
+      "claim_id": "270fe45c-74d8-4e61-bf0c-396e8a00311b",
+      "result_id": "2013545c-dec6-4336-acfa-4941eb7c0778"
+    },
+    {
+      "claim_id": "e9534d76-7310-4e6d-a9e0-d0287b30b080",
+      "result_id": "2013545c-dec6-4336-acfa-4941eb7c0778"
+    },
+    {
+      "claim_id": "4c7605f6-d295-465a-8a02-4c8d535b2538",
+      "result_id": "2013545c-dec6-4336-acfa-4941eb7c0778"
+    },
+    {
+      "claim_id": "d111857b-2f06-4e40-b65d-5387ad5cc649",
+      "result_id": "2013545c-dec6-4336-acfa-4941eb7c0778"
+    },
+    {
+      "claim_id": "c11558be-abb8-46ec-84e3-4881215b2e14",
+      "result_id": "1fcdf43c-10cf-4c61-9ca4-b570267a1dd4"
+    },
+    {
+      "claim_id": "1565eea4-814f-4045-b111-e0e172b62066",
+      "result_id": "1fcdf43c-10cf-4c61-9ca4-b570267a1dd4"
+    },
+    {
+      "claim_id": "752f62ec-bd65-4add-93e8-d274bf551a13",
+      "result_id": "1fcdf43c-10cf-4c61-9ca4-b570267a1dd4"
+    },
+    {
+      "claim_id": "4e24471a-10aa-4238-ae63-a9a9ea4dec6d",
+      "result_id": "1fcdf43c-10cf-4c61-9ca4-b570267a1dd4"
+    },
+    {
+      "claim_id": "f1aefd81-4e97-4098-a699-5114872d5629",
+      "result_id": "1fcdf43c-10cf-4c61-9ca4-b570267a1dd4"
+    },
+    {
+      "claim_id": "ce15d5de-8464-4ebc-93a6-79397e974f91",
+      "result_id": "099001f7-15fa-4d25-bca9-f38bccca1ee3"
+    },
+    {
+      "claim_id": "abb393ee-24ee-4f80-9bcc-cf67def9fe0c",
+      "result_id": "099001f7-15fa-4d25-bca9-f38bccca1ee3"
+    },
+    {
+      "claim_id": "965634cf-3b2b-4567-8661-bad650cefe3c",
+      "result_id": "099001f7-15fa-4d25-bca9-f38bccca1ee3"
+    }
+  ],
+  "comparisons": []
+}

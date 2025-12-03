@@ -1,0 +1,256 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "HBV membrane fusion is independent of acidic pH, NTCP receptor, and HSPG. Cell-cell fusion assays showed that HBV glycoproteins induced similar levels of fusion at neutral and acidic pH, in cells lacking or expressing NTCP, and in the presence of soluble heparin or in cells lacking HSPGs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 are well-supported by experimental data in Figure 1A-C showing pH-independent fusion and independence from NTCP and HSPG. The cell-cell fusion assay appropriately isolates late fusion events from receptor binding steps, and controls (VSV-G, CCHFV) demonstrate the assay can detect pH-dependent fusion. The inference (C28, C29) logically follows from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Both L and S glycoproteins are required for HBV membrane fusion, while M protein is dispensable. Individual expression of L, M, or S proteins did not induce fusion, but co-expression of L and S (without M) induced fusion at levels comparable to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 are supported by experimental data in Figure 1D-F showing that neither L, M, nor S alone can induce fusion, but L+S together are sufficient. This is consistent with prior infectivity studies (C32) and cell-surface expression controls confirm proper protein localization. The inference that fusion determinants reside in L and S (C33) is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "A fusion peptide is located in the preS1 domain (aa 48-66) of the L protein. Computational hydrophobicity analysis identified two candidate regions (preS1: aa 48-66; preS2: aa 127-145). Mutations in the preS1 peptide abolished infectivity and cell-cell fusion without affecting viral particle production, while preS2 mutations had no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C44 are well-supported by combined computational (MPEx analysis, Figure 2\u2014supplement 1) and experimental approaches (Figure 2C-J). The preS1 mutations specifically ablate both infection and fusion without affecting particle production or surface expression, strongly supporting a fusion peptide role. The preS2 region serves as an appropriate negative control. The inference (C44) is justified by the convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Thiol/disulfide exchange reactions are required for early HBV fusion events. DTNB inhibited HDV infection only when added within 2 hours post-infection and reduced cell-cell fusion in a dose-dependent manner when added at the onset of co-culture, without affecting glycoprotein surface expression or causing cytotoxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 are supported by time-of-addition experiments (Figure 3A, Figure 3\u2014supplement 1) and cell-cell fusion assays (Figure 3B) with appropriate controls for cytotoxicity and surface expression (Figure 3C-D, Figure 1\u2014supplement 2). The temporal window of DTNB sensitivity specifically implicates early fusion steps. The inference (C47, C50) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "A putative allosteric cross-strand disulfide (CSD) bond exists between C301 and C310 in the HBV S protein. Computational predictions (RaptorX contact prediction, JPred secondary structure) identified a \u03b2-hairpin motif containing a C301-C310 disulfide bond classified as a '-H Staple conformation' associated with allosteric function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C51-C54 are based entirely on computational predictions (Figure 4A-C, Figure 4\u2014supplements 1-2) without direct experimental validation of the disulfide bond itself. While the predictions are methodologically sound and the classification is based on established criteria (Hogg, 2003), the existence and allosteric nature of this specific disulfide bond remain unconfirmed. Functional data (C55-C59) provide indirect support but do not directly demonstrate the C301-C310 bond.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Stabilizing the putative CSD bond with a T303C/G308C double mutation prevents HBV fusion and infection. The double mutant produced viral particles at normal levels and bound cells normally but was non-infectious and completely abolished cell-cell fusion activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 are well-supported by experimental data (Figure 5A-D, Figure 6A) showing that the T303C/G308C mutation specifically blocks fusion and infection without affecting particle production, GP expression, or cell binding. Single mutations serve as appropriate controls. The inference (C59) that stabilization prevents conformational rearrangements is reasonable, though the molecular mechanism remains indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "ERp57 is involved in HBV membrane fusion. PDI inhibitors targeting ERp57 (NTZ and EGCG) strongly reduced HDV and HBV infection and cell-cell fusion without affecting viral particle binding to cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 are supported by pharmacological inhibition experiments (Figure 6A-D) showing that ERp57-targeting inhibitors specifically block infection and fusion at a post-binding step. Multiple inhibitors and both HDV and authentic HBV particles provide convergent evidence. However, the specificity of NTZ and EGCG for ERp57 over other PDIs is not definitively established, introducing some uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "ERp57 knockdown reduces HBV infection and fusion. shRNA-mediated down-regulation of ERp57, but not ERp46 or ERp72, strongly reduced HDV infection, HBV infection, and cell-cell fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 are well-supported by genetic knockdown experiments (Figure 7A-D, Figure 7\u2014supplements 1-2) with appropriate controls (ERp46, ERp72 knockdowns). Flow cytometry and western blots confirm knockdown efficiency. The specificity for ERp57 over other PDIs strengthens the conclusion, though off-target effects of shRNA cannot be completely excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "ERp57 localizes to late endosomes. Confocal microscopy showed ERp57 colocalization with Rab7 (late endosomes) but not with Rab5 (early endosomes), Rab11 (recycling endosomes), or Lamp1 (lysosomes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 are supported by immunofluorescence and colocalization analysis (Figure 8A-B) using Pearson's correlation coefficients. The preferential localization to late endosomes is consistent with prior reports of HBV fusion occurring in late endosomes (Macovei et al., 2013). The inference (C70) is reasonable given the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "ERp57 inhibition with NTZ delays HBV infection in vivo. In humanized liver mice, NTZ treatment before and shortly after HBV inoculation delayed viremia by approximately 4 weeks compared to control mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 are supported by in vivo experiments in humanized mice (Figure 9A-B, Figure 9\u2014supplement 1). The short treatment window and NTZ's short half-life (C87-C88) support an effect on entry rather than post-entry steps. However, the small sample size (N=3-5 per group) and lack of statistical analysis limit the strength of the conclusion. Additional controls and replicates would strengthen this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C93"
+    ],
+    "result": "Proposed model: HBV membrane fusion is triggered by ERp57-mediated thiol/disulfide exchange that regulates isomerization of critical CSDs, leading to exposition of the fusion peptide in preS1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73 and C93 present a speculative mechanistic model integrating the study's findings. While the individual components (ERp57 involvement, thiol/disulfide exchange, preS1 fusion peptide) are supported, the specific molecular mechanism\u2014that ERp57 directly isomerizes the C301-C310 CSD to expose the preS1 fusion peptide\u2014is not directly demonstrated. The model is plausible and consistent with the data but requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The cell-cell fusion assay reveals late entry events independent of receptor binding. The assay demonstrates that HBV fusion triggering is independent of NTCP receptor interaction and low pH-induced protonation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 are supported by the experimental design and results (Figure 1). The cell-cell fusion assay appropriately bypasses receptor binding and internalization steps, allowing isolation of fusion mechanisms. The independence from NTCP and pH is well-demonstrated. The inference is logically sound and consistent with prior knowledge of similar assays for other viruses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background knowledge on HBV structure, epidemiology, and entry mechanisms. These claims establish the context for the study, including HBV glycoprotein structure, receptor interactions (HSPG, NTCP), endocytosis mechanisms, and prior evidence for thiol/disulfide exchange in entry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C19 are background information supported by citations to prior literature. These establish the scientific context and are appropriately referenced. While some controversies exist (e.g., caveolin vs. clathrin-mediated endocytosis, C12-C14), the authors accurately represent the state of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Additional background and contextual information. These claims provide context on disulfide bonds in viral fusion, PDI family proteins, prior studies on HBV fusion peptides, and pharmacokinetic properties of NTZ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C92 are background information appropriately supported by citations to prior literature. These provide necessary context for interpreting the study's findings and are accurately represented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C81",
+      "C89"
+    ],
+    "result": "Computational modeling and therapeutic implications. The T303C/G308C mutant generates two structural CSDs according to modeling, and ERp57 is validated as a therapeutic target for HBV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C81 is based on computational modeling without direct experimental validation of the disulfide bond structure. Claim C89 regarding ERp57 as a validated therapeutic target is an overstatement\u2014while the data support ERp57's role in entry, therapeutic validation requires additional preclinical and clinical studies. The in vivo experiment (C71-C72) provides preliminary support but is insufficient for full validation.",
+    "result_type": "MINOR"
+  }
+]

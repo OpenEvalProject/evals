@@ -1,0 +1,238 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The authors identify a technological gap in optogenetics: existing multiphoton techniques require high power and address small neuron populations, while one-photon techniques have limited resolution or volume. Two-photon systems are expensive and have limited adoption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 establish the motivation for the work by characterizing limitations of existing optogenetic technologies. These are well-supported by citations and represent accurate assessments of the field based on established knowledge (C3, C4, C10, C11) and observational evidence (C5, C14).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "3D-MAP is a novel one-photon light sculpting technique that modulates light in both spatial and angular domains at multi-kHz rates, achieving high degrees of freedom through the product of DMD pixels and scanning mirror angles, enabling high spatial resolution over large volumes with fast computation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C28-C38 describe the core technical innovation of 3D-MAP. The design principles are clearly explained with supporting data (C36, C37) and theoretical justification (C28, C29). The synchronization mechanism (C33, C34) and computational advantages (C38) are well-documented. The multi-kHz speed claim (C31, C37) is supported by hardware specifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "3D-MAP achieves optical resolution of 5\u00d75\u00d718 \u03bcm\u00b3 (473 nm) in the center of the field of view and can simultaneously generate 25 foci in a 744\u00d7744\u00d7400 \u03bcm\u00b3 volume. Resolution degrades with distance from center and with tissue scattering, with red light showing better performance through tissue than blue light.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 present optical characterization data with specific measurements. The optical PSF measurements (C39) and multi-site capability (C40) are directly demonstrated. The spatial variation in resolution (C41) and scattering effects (C42, C43) are quantified with appropriate controls. All measurements are supported by figures and represent direct experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "3D-MAP provides high-resolution photostimulation with physiological spatial resolution of 29\u00b10.8 \u03bcm laterally and 44\u00b11.6 \u03bcm axially in vitro, and spiking resolution of 16\u00b12.4 \u03bcm laterally and 44\u00b18.9 \u03bcm axially in brain slices, and 19\u00b13.7 \u03bcm laterally and 45\u00b16.1 \u03bcm axially in vivo. This is approximately two-fold worse than multiphoton optogenetics under comparable conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 present physiological characterization with appropriate sample sizes (9 cells for PPSF, 5 cells in vitro, 8 cells in vivo). The comparison to multiphoton techniques (C45) provides important context. The measurements are consistent across conditions and represent direct electrophysiological recordings with clear error estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "Connectivity mapping with 3D-MAP reveals spatial clusters of approximately 30 \u03bcm in size, consistent with the spatial resolution limit and typical observations when mapping synaptic input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 describe connectivity mapping results with appropriate citation to prior work (C49). The cluster size (C50) is consistent with the measured spatial resolution (C44), providing internal validation. The observation is supported by Figure 4D-E.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Multi-site simultaneous stimulation generates greater net synaptic input compared to the linear sum of individual responses (p=0.0488, two-way ANOVA), potentially due to engagement of polysynaptic network activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 presents a statistically significant result with appropriate statistical test and p-value. The data is shown in Figure 5D-E. However, C52 is speculative about the mechanism. The result is supported but the mechanistic interpretation remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "All-optical 3D-MAP can simultaneously photostimulate and image 80 user-selected L2/3 neurons in vivo with 480 \u03bcW total power, achieving all-optical spatial resolution of 49\u00b121 \u03bcm laterally and 53\u00b128 \u03bcm axially. Under sparse expression conditions, neurons show strong calcium activity when stimulated and minimal activity when adjacent neurons are stimulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C60 demonstrate all-optical interrogation capabilities. The TTX control (C55) validates that calcium signals reflect neural activity. The all-optical PPSF measurements (C56) have appropriate sample size (n=10). The 80-neuron experiment (C57-C58) demonstrates scalability with low power. The specificity observation (C59) is supported by the data, though limited to sparse expression conditions (C60).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C65",
+      "C67"
+    ],
+    "result": "3D-MAP is the first system to achieve 3D multi-site illumination with high degrees of freedom by simultaneously sculpting the 4D light field, achieving orders of magnitude more DoF than previous systems at a fraction of the cost of two-photon systems, with a maximum defocus range of 720 \u03bcm compared to 40 \u03bcm for microlens array-based methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61, C63, C65 assert novelty and priority, which are supported by the technical distinctions explained in the manuscript. The cost advantage (C62) is referenced to a comparison table. The defocus range comparison (C67) is supported by data in Figure 2\u2014figure supplement 1A. These claims represent valid comparisons to prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Both one-photon and two-photon multi-site photostimulation are subject to spatial cross-talk. Under sparse opsin expression conditions, 3D-MAP shows minimal cross-talk, but off-target effects are likely when neuron separation is closer than the all-optical PPSF. Temporal multiplexing could potentially mitigate cross-talk at high densities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 accurately describe limitations and conditions under which 3D-MAP performs well. C68 is general knowledge, C69 is supported by experimental data (Figure 7), and C70 is a logical inference from the resolution measurements. C71 is speculative about future strategies but appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Two-photon photostimulation techniques typically restrict power below 4 W and can activate tens to over a hundred neurons at full power, while 3D-MAP can photostimulate dozens of neurons simultaneously with only 480 \u03bcW.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 characterize two-photon techniques with appropriate citations. C74 presents experimental data from Figure 7F-G demonstrating the low power requirements of 3D-MAP. This represents a valid comparison showing the power efficiency advantage of the technique.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Like all one-photon techniques, 3D-MAP's effective resolution in brain tissue is limited by scattering. Red-shifted illumination can reduce scattering but accessible depth remains limited to the first few hundred microns. Deeper stimulation would require surgical removal of cortex or miniaturized microscopes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 accurately describe fundamental limitations of one-photon techniques with supporting data in Figures 2 and 6. C77 suggests potential strategies with appropriate citations to prior work. These represent honest assessments of the technique's limitations and potential solutions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Existing one-photon photostimulation approaches have significant limitations: scanning-based methods cannot stimulate distributed ensembles simultaneously; DMD-based widefield illumination lacks axial sectioning; and CGH has limited throughput, slow refresh rates, computationally intensive pattern generation, and suffers from spatial cross-talk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C25 characterize limitations of existing one-photon approaches with appropriate citations. These represent accurate assessments of prior technologies based on established knowledge and cited literature, providing context for the advantages of 3D-MAP.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Optogenetics enables rapid and reversible neural control. Two-photon photostimulation offers high spatial resolution and immunity to scattering but can only stimulate small ensembles due to high power requirements that cause tissue heating and damage. One-photon systems require 100-1000\u00d7 less power and are simpler and cheaper to implement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C16 provide background on optogenetic technologies with appropriate citations. These represent accurate characterizations of the field based on established knowledge and cited literature, providing essential context for understanding the motivation and contribution of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "3D-MAP operates at low stimulation powers far below photodamage thresholds and is easily scalable to address large neural ensembles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C48 is supported by the low power measurements throughout the manuscript (e.g., C57, C74) and the demonstration of multi-site stimulation. The scalability is demonstrated by the 80-neuron experiment. This represents a valid inference from the experimental data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8"
+    ],
+    "result": "3D-MAP can be broadly adopted for high-throughput all-optical interrogation of brain circuits owing to its powerful combination of scale, speed, simplicity, and cost.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C8 is a forward-looking prediction about adoption that cannot be fully evaluated from the current manuscript. While the technical advantages (scale, speed, simplicity, cost) are demonstrated, actual broad adoption depends on factors beyond the scope of this work. This represents speculation about future impact rather than a demonstrated result.",
+    "result_type": "MINOR"
+  }
+]

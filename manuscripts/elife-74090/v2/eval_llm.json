@@ -1,0 +1,367 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C16",
+      "C17",
+      "C18",
+      "C104",
+      "C108"
+    ],
+    "result": "The tlc1-tm mutant, which introduces telomeric repeats lacking the GGG motif required for Rap1 binding, grows similarly to wild-type cells despite substantially reduced Rap1 association at telomeres. Rap1 binding is reduced to ~13% at fully mutant telomeres (VII-L-MUT) as measured by ChIP-qPCR and EMSA, yet cells remain viable with only modestly altered telomere profiles compared to other template mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent assays (ChIP-qPCR in C16, EMSA in C18, growth curves in C3, Southern blots in C13) consistently demonstrate that tlc1-tm cells survive with dramatically reduced Rap1 at telomeres. The convergence of biochemical binding data, in vivo association measurements, and phenotypic analysis provides strong support for this core finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Depletion of Rap1 at tlc1-tm telomeres causes defects in telomere length regulation consistent with loss of the protein counting mechanism. Nearly all (92%) tlc1-tm telomeres are extended in a single cell cycle compared to the subset normally extended in wild-type cells, and tlc1-tm sequence inserted into otherwise wild-type telomeres increases telomere length proportionally without being sensed by the Rap1 counting mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The iSTEX data (C40) directly demonstrates 92% extension frequency versus the normal subset extension, Southern blot analysis (C37) shows proportional length increases with tlc1-tm insertions, and these observations align with the established protein counting model (C33-C35). The multiple experimental approaches converge on a coherent mechanistic explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C120",
+      "C121"
+    ],
+    "result": "tlc1-tm telomeres exhibit telomere capping defects, particularly upon loss of telomerase. Cells with mutant telomeres senesce rapidly (~40 population doublings after telomerase loss versus ~60-70 for wild-type), and mutant telomeres become extremely heterogeneous and degraded, consistent with increased degradation limiting telomere length in the absence of telomerase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Senescence assays (C45) and Southern blot analysis (C46) provide direct evidence for accelerated senescence and telomere degradation. The observation that tlc1\u0394 cells with mutant telomeres also show extensive degradation (C120) supports the interpretation that reduced Rap1 compromises telomere protection, though the specific molecular mechanisms require further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Cdc13, the main single-stranded telomeric DNA binding protein, associates equally well with wild-type and tlc1-tm mutant telomeres, consistent with preservation of the GNGT binding motif in the mutant sequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ChIP-qPCR data (C22) directly demonstrates equivalent Cdc13 association at wild-type and mutant telomeres. The sequence analysis (C21) confirms presence of the GNGT motif, providing a mechanistic basis for maintained binding. This is a straightforward, well-supported observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Unlike S. cerevisiae strains with TTAGGG repeats where Tbf1 compensates for Rap1 loss, tlc1-tm telomeres show no change in Tbf1 levels, indicating that loss of Rap1 is not compensated by Tbf1 recruitment. The tlc1-tm sequence lacks the RCCCT Tbf1 consensus binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ChIP-qPCR data (C27) directly shows no change in Tbf1 at tlc1-tm telomeres, and sequence analysis (C28) confirms absence of the binding motif. The comparison to TTAGGG strains (C24-C26, C109-C111) provides important context showing this is a distinct situation from previously studied Rap1-depleted telomeres.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C6",
+      "C134"
+    ],
+    "result": "Rap1 depletion at tlc1-tm telomeres differentially affects recruitment of its binding partners: Rif1 and Sir4 are reduced (to 16% and 31% respectively), while Rif2 and Sir3 association is maintained. The maintained Rif2 and Sir3 association suggests Rap1-independent recruitment mechanisms, potentially involving MRX complex interactions for Rif2 and histone interactions for Sir3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ChIP-qPCR data (C48, C49) directly demonstrate the differential effects on protein recruitment. The maintained Rif2 association despite reduced Rap1 (C6, C49) is unexpected given established recruitment mechanisms (C47, C134), but the data are clear. The proposed alternative mechanisms (C50-C53) are reasonable hypotheses supported by literature but require further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Despite reduced levels of Rap1, Rif1, and Sir4 at tlc1-tm telomeres, both TERRA transcription and subtelomeric gene silencing remain unaffected, indicating that residual protein levels are sufficient for these functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RT-qPCR data for TERRA (C55) and URA3 silencing (C57) combined with 5-FOA growth assays (C57) provide multiple lines of evidence that transcriptional regulation is maintained. This demonstrates functional redundancy or threshold effects in these Rap1-mediated processes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Deletion of RIF1 increases telomere length in both TLC1 and tlc1-tm cells, while deletion of SIR4 has no effect in tlc1-tm cells (though it decreases length in TLC1 cells). This indicates Rif1 continues to negatively regulate telomerase at tlc1-tm telomeres despite reduced recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Southern blot analysis (C62-C64) directly demonstrates the differential effects of RIF1 and SIR4 deletions. The maintained Rif1 effect despite reduced recruitment (from C48) suggests that even reduced levels are functionally significant, while Sir4's lack of effect may reflect already-reduced levels at tlc1-tm telomeres.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C112"
+    ],
+    "result": "Rif2 is crucial for protecting tlc1-tm telomeres from degradation. Deletion of RIF2 causes dramatic telomere degradation in tlc1-tm cells, with poor growth that is exacerbated by RAD52 deletion. Rad52-mediated homologous recombination helps cope with uncapped rif2\u0394 tlc1-tm telomeres and is important for maintaining tlc1-tm telomeres generally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Southern blot analysis (C65, C67) clearly shows extensive telomere degradation in rif2\u0394 tlc1-tm cells. Growth assays and colony size measurements (C68-C70) demonstrate the severe fitness defect. The genetic interactions with RAD52 (C67, C69-C71) and the longer telomeres in rad52\u0394 tlc1-tm cells (C72) support the role of HR in maintaining these telomeres.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The rif1\u0394 rif2\u0394 double mutant suppresses the telomere degradation seen in rif2\u0394 tlc1-tm cells, producing very long telomeres without degradation. Additionally, TEL1 deletion does not affect the rif2\u0394 tlc1-tm telomere degradation phenotype, indicating Rif2 does not protect tlc1-tm telomeres by inhibiting Tel1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Southern blot data (C74, C76, C77) directly demonstrate these genetic interactions. The epistasis analysis with TEL1 (C75-C78) rules out one potential mechanism, though the positive mechanism by which RIF1 deletion suppresses degradation remains unclear and warrants further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Rif2 protects tlc1-tm telomeres by inhibiting the MRX complex. Mre11 association is increased ~5-fold at tlc1-tm telomeres compared to wild-type, and deletion of RAD50 completely rescues the telomere degradation observed in rif2\u0394 tlc1-tm cells. This builds on prior work showing Rap1 binding inhibits Mre11 recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ChIP-qPCR data (C85, C123) demonstrate increased MRX at tlc1-tm telomeres, and Southern blot analysis (C86) shows complete rescue of degradation by RAD50 deletion. The mechanistic model (C79-C84) is well-supported by cited literature. This represents a clear demonstration that Rif2 inhibits MRX-mediated degradation at Rap1-depleted telomeres.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The Yku complex protects tlc1-tm telomeres by inhibiting Exo1 exonuclease. Yku70 is present at similar levels at wild-type and mutant telomeres, yku70\u0394 tlc1-tm cells show extensive telomere degradation, and this degradation is suppressed by EXO1 deletion. In contrast, the cdc13-1 mutation does not cause extensive degradation in tlc1-tm cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ChIP-qPCR (C88) shows maintained Yku70 levels, Southern blots (C91-C93) demonstrate degradation in yku70\u0394 and rescue by exo1\u0394. The genetic epistasis clearly indicates Yku inhibits Exo1 at these telomeres. The cdc13-1 result (C91) suggests the CST complex is less critical than Yku for protecting tlc1-tm telomeres, though cdc13-1 is a hypomorphic allele.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C95",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Rif2 and the Yku complex function in parallel pathways to protect tlc1-tm telomeres, as rif2\u0394 yku70\u0394 tlc1-tm triple mutants are inviable. This contrasts with TLC1 cells where rif2\u0394 yku70\u0394 double mutants remain viable, indicating Rap1 has an important role alongside Rif2 and Yku in inhibiting telomere degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Tetrad dissection (C9) and colony size analysis (C8) clearly demonstrate synthetic lethality. The comparison to TLC1 cells (C125-C126) where the double mutant is viable highlights the critical importance of Rap1 in the protection mechanism. The inviability of tlc1-476A rif2\u0394 cells (C128) further supports the hierarchy of protection mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C113",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Other tlc1 template mutants show similar or more severe phenotypes. The tlc1-476A mutant, predicted to disrupt Rap1 binding even more than tlc1-tm, shows telomere degradation and is completely dependent on Rif2 for survival. The extent of telomere elongation and degradation in template mutants correlates with decreased Rap1 binding, and the ~13% residual Rap1 at tlc1-tm telomeres likely prevents more extensive defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Southern blot data (C96) and tetrad analysis (C99) demonstrate the severe tlc1-476A phenotype. The comparative analysis with other template mutants (C113, C115-C117) and the correlation with Rap1 levels (C117-C119) provide a coherent framework for understanding the spectrum of phenotypes. However, direct measurement of Rap1 binding at tlc1-476A telomeres would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C135",
+      "C136"
+    ],
+    "result": "Rap1-independent recruitment of Rif2 to tlc1-tm telomeres requires both a DNA end and the MRX complex. Rif2 associates with wild-type but not tlc1-tm sequence at an internal chromosomal location, and Rif2 association to tlc1-tm telomeres is lost in rad50\u0394 strains. The MRX complex itself is increased at tlc1-tm telomeres.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ChIP-qPCR experiments at internal sites (C100) and at telomeres in rad50\u0394 backgrounds (C101-C102) provide clear evidence for the requirements. The increased MRX at tlc1-tm telomeres (C136) supports a model where MRX recruits Rif2, which then inhibits MRX activity. This represents a novel feedback mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C103"
+    ],
+    "result": "The Rap1-Rif2 interaction remains important in tlc1-tm cells, as a Rif2 mutant unable to interact with Rap1 (Rif2-L44R,V45E,E347R) cannot rescue rif2\u0394 tlc1-tm cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the data (Figure 7\u2014figure supplement 1) show that the Rif2 mutant fails to rescue, the authors acknowledge an alternative interpretation: the mutations may disrupt Rif2 function independently of Rap1 binding (C103). Without additional controls or complementary experiments, it's unclear whether this reflects continued importance of Rap1-Rif2 interaction or a separate defect in the mutant protein.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The redundant telomere capping mechanisms observed in tlc1-tm cells offer an explanation for the rapid evolution of telomere sequences and telomere-binding proteins in budding yeast species. Similar tolerance for changes disrupting main telomere-binding proteins has been observed in K. lactis and S. pombe, suggesting independent evolution of redundant mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The evolutionary argument (C129-C130) is a reasonable inference from the experimental findings showing viability despite Rap1 depletion. The comparative examples from K. lactis (C131) and S. pombe (C132-C133) support the generality of this principle. However, this remains an evolutionary hypothesis rather than a directly tested result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Rif2 and Sae2 have opposing roles in regulating the MRX complex, with Sae2 limiting Rif2 function at DSBs while Rif2 may limit Sae2 function at telomeres. Rif2 has a prominent role at telomeres but minor role at DSBs, while the inverse is true for Sae2. In wild-type cells, Rap1 recruitment explains Rif2's prominent telomeric role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims about opposing roles (C138-C145) are well-supported by cited literature (Marsella et al., 2021; Bonetti et al., 2021). The inference about Rap1 recruitment (C146) is reasonable. However, the mechanism by which Rif2 maintains its prominent role at tlc1-tm telomeres without Rap1-dependent recruitment remains unclear and is acknowledged as requiring further study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Sir3 deletion in tlc1-tm cells increases telomere length but does not cause the telomere degradation seen in rif2\u0394 tlc1-tm cells and does not affect cell growth. Similarly, SIR3 deletion in tlc1-476A cells affects neither telomere profile nor growth, indicating Sir3's presence at Rap1-depleted telomeres serves a different purpose than Rif2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The data (C148-C149, Figure 4\u2014figure supplement 1) clearly show that Sir3 deletion has distinct effects from Rif2 deletion. While Sir3 is maintained at tlc1-tm telomeres (C49) and can inhibit DSB resection (C147), its role at these telomeres remains unclear. This is a well-documented observation that raises interesting questions for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C114"
+    ],
+    "result": "Telomeres can remain sufficiently capped for cell viability in the absence of both Rap1 and Tbf1 binding, as demonstrated by viable tlc1 template mutants that disrupt consensus binding sites for both proteins. This challenges the view that specific double-stranded DNA binding proteins are absolutely required for telomere capping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The viability of tlc1-tm and other template mutants (C113-C114) that lack binding sites for both Rap1 and Tbf1 provides strong evidence for this conclusion. Combined with maintained Cdc13 binding (C22) and the protection provided by Rif2 and Yku (C7-C9), this demonstrates that telomere capping can be achieved through alternative mechanisms when canonical double-stranded DNA binding is disrupted.",
+    "result_type": "MAJOR"
+  }
+]

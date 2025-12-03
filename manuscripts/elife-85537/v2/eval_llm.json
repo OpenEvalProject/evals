@@ -1,0 +1,240 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C115"
+    ],
+    "result": "AlphaFold2 structural predictions accurately recapitulate experimental cryo-EM structures and can be used to identify 7TMIC homologs. The AlphaFold2 model of A. bakeri Orco shows striking similarity to the experimental cryo-EM structure (TM-score=0.96), and models of known 7TMIC family members display substantial structural similarity to Orco. Multiple algorithms (AlphaFold2, trRosetta, RaptorX) predict the same global fold, and a Dali Z-score threshold >10 was used to screen the AlphaFold database.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 provide strong quantitative and qualitative evidence that AlphaFold2 models are highly accurate for 7TMICs (TM-score 0.96, visual similarity). The use of multiple prediction algorithms (C41) strengthens confidence. The methodological approach (C31, C115) is clearly described with appropriate thresholds. The validation against experimental structures provides a solid foundation for the screening approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C49",
+      "C50"
+    ],
+    "result": "7TMIC-like proteins were identified in disease-causing trypanosomes (L. infantum and T. brucei). These proteins have the characteristic 7TMIC fold and are characterized by N-terminal MORN-repeat domains. BLAST searches identified homologs only within trypanosomes, and these findings support that 7TMICs evolved in or prior to the last eukaryotic common ancestor and represent the first example of fusion with a distinct cytoplasmic domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 provide structural and sequence evidence for trypanosome 7TMICs with MORN domains (shown in Figure 1D-G, Table 1). The restricted phylogenetic distribution (C46) is consistent with the structural screening approach. Claims C49-C50 draw reasonable evolutionary inferences from the data, though C49 acknowledges it reinforces a previous conclusion. The domain fusion observation (C50) is novel and well-supported by structural analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C13"
+    ],
+    "result": "PHTF proteins are candidate vertebrate 7TMIC homologs. Human PHTF1 and PHTF2 share 54.1% amino acid identity, have characteristic 7TMIC topology including split TM7, and show structural similarity to A. bakeri Orco. PHTF homologs are highly conserved across Eukaryota, forming a single eukaryotic clade, with PHTF1-PHTF2 duplication occurring in jawed vertebrates. These findings counter previous assumptions of complete loss of 7TMICs in Chordata.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C59 provide strong structural evidence for PHTF as 7TMIC homologs (Figure 2A-C, Table 1), including the characteristic split TM7. Phylogenetic analysis (C60-C62, Figure 2E) supports a single eukaryotic PHTF clade with vertebrate-specific duplication. The broad taxonomic distribution (C60) and structural similarity metrics strengthen the homology argument. Claim C13 is a major conclusion that is well-supported by the identification of PHTFs in chordates, though the authors acknowledge the possibility of convergent evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "PHTF proteins show tissue-specific expression patterns, with human PHTF1 enriched in cerebellum and testis, PHTF2 in skeletal muscle and arteries, and D. melanogaster Phtf in testis (specifically in developing spermatocytes and spermatids). Previous studies suggest roles in spermatogenesis and possible links to cell proliferation and cancer, but the biological function remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 are well-supported by RNA-seq data analysis (Figure 2F-G, GTEx, FlyAtlas 2.0, Fly Cell Atlas). Claims C67-C69 appropriately cite previous literature on PHTF localization and function. Claim C70 honestly acknowledges the current knowledge gap. The expression data are consistent across species and methods, providing reliable evidence for tissue-specific patterns, though functional characterization is lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C9"
+    ],
+    "result": "Ten D. melanogaster proteins identified in the structural screen are divergent 7TMICs termed gustatory receptor-like (Grl) proteins. These proteins have similar length and TM topology to Grs and Ors, with predicted folds very similar to A. bakeri Orco, but almost completely lack defining sequence features of canonical Gr or Or families.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 are supported by structural analysis (Figure 3A, Table 1) showing topology and fold similarity to known 7TMICs while lacking sequence features. The identification of 10 proteins with consistent structural characteristics but divergent sequences is well-documented. The naming as Grl proteins (C9, C76) is appropriate given their structural similarity but sequence divergence. Quantitative structural comparisons in Table 1 support the fold similarity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Grls show restricted phylogenetic distribution, with seven D. melanogaster Grls having homologs only in drosophilids, two (Grl40a, Grl65a) in drosophilids and other flies, and one (GrlHz) broadly distributed across Holozoa including chordates and single-cell eukaryotes. A subset of GrlHz homologs contain N-terminal WD40 repeat domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 are supported by BLAST searches and phylogenetic analysis (Figure 3\u2014figure supplements 1-4). The restricted distribution of most Grls (C77) contrasts with the broad distribution of GrlHz (C79), suggesting different evolutionary histories. The WD40 domain finding (C80) is supported by domain analysis. The phylogenetic data are consistent with the proposed distributions, though the limited conservation of most Grls makes their evolutionary origins uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Grl36a and Grl43a share evolutionary ancestry with Gr36 and Gr59c/d based on genomic proximity, conserved intron positions, and similar TM7 motifs. Grl36a is adjacent to Gr36 genes across drosophilids, both Grl36a and Grl43a have a phase 0 intron before the TM7-encoding exon aligning with the Gr intron position, and they share a variant TM7 motif [T(H/N)(S/A)hhhhQ(Y/F/W)] with Gr36 and Gr59c/d. Phylogenetic analysis supports Grl36a/Grl43a as sister clade to Gr36, diverging after Gr59c/d emergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C93 provide multiple lines of evidence for common ancestry: synteny (C85-C86, Figure 3C), conserved intron positions (C87-C88, Figure 3D), shared TM7 motif variants (C89-C91, Figure 3D), and phylogenetic analysis (C92-C93, Figure 3E). The convergence of genomic, structural, and phylogenetic evidence strongly supports the proposed evolutionary relationship. Claims C81-C84 establish the broader context that most Grls lack obvious sequence similarity, making the Grl36a/Grl43a case particularly notable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C10",
+      "C11"
+    ],
+    "result": "Several D. melanogaster Grls display selective expression in taste neurons. Most Grls show very low expression in bulk RNA-seq, but Grl36a, Grl62a, and Grl62c are specifically expressed in Gr66a-expressing bitter/aversive neurons in single-cell data, while GrlHz is broadly expressed in various tissues. This expression pattern suggests that at least three Grls (Grl36a, Grl62a, Grl62c) are previously unrecognized insect chemoreceptors for aversive stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C99 are well-supported by RNA-seq data from multiple sources (FlyAtlas 2.0, labellum bulk RNA-seq, Fly Cell Atlas single-cell data; Figures 2\u2014figure supplement 5, 3F-G). The specific expression of three Grls in bitter/aversive neurons (C98) provides strong evidence for a chemosensory role. Claims C10-C11 and C100 draw reasonable inferences from the expression data, though functional validation is lacking. The contrast between low bulk expression (C94) and specific single-cell expression (C98) is consistent with restricted cellular expression patterns typical of chemoreceptors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C12",
+      "C49",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The findings support the origin of 7TMICs in a eukaryotic common ancestor, though remarkable structural convergence cannot be excluded. The 7TMIC fold (>300 amino acids) is much larger than most documented cases of convergent evolution, which typically involve small domains or motifs. If convergent, the fold would represent an energetically favorable packing of seven TMs; if homologous, it highlights remarkable sequence diversification potential while maintaining tertiary structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C12 and C49 state the main evolutionary conclusion, but C101 explicitly acknowledges that convergent evolution cannot be excluded. Claims C102-C104 provide context about sequence divergence and fold size, while C105-C107 explore implications of both hypotheses. The evidence for broad phylogenetic distribution is strong, but the extreme sequence divergence (as low as 8% identity, C23, C102) makes definitive distinction between homology and convergence difficult. The authors appropriately present this as uncertain, comparing it to unresolved debates about rhodopsin evolution (C104). This is an honest assessment of the limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C108"
+    ],
+    "result": "The 7TMIC protein fold exhibits extreme evolvability, likely underlying its functional diversification in different cellular contexts. The apparent presence of an anchor domain in all 7TMICs raises the possibility that complex formation is a common biochemical property.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C14 is an inference from the extreme sequence divergence while maintaining structural similarity, which is well-documented. However, C15 is explicitly speculative about the functional implications of evolvability. Claim C108 is a reasonable inference based on structural features (anchor domain presence) and known Or complex formation, but lacks direct experimental evidence for other 7TMIC family members. These are plausible hypotheses that require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Available expression data points to roles of different 7TMICs in specific but diverse cell types (chemosensory neurons, developing spermatocytes, muscle), but definitive functional characterization is lacking. Even for insect Grs with abundant in vivo evidence for tastant-evoked activity, definitive demonstration of ligand-gated ion conduction has been elusive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 appropriately summarize the state of functional knowledge. C111 is supported by the expression data presented throughout the manuscript (Figures 2F-G, 3F-G). Claims C109-C110 honestly acknowledge the gap between in vivo functional evidence and direct biochemical characterization, even for well-studied family members. This is an accurate assessment of the field's current limitations and appropriately tempers functional claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C47",
+      "C48"
+    ],
+    "result": "Background and methodological context for the study, including the definition of 7TMICs, their known phylogenetic distribution (previously thought absent in Chordata), extreme sequence divergence, classification criteria, and the rationale for using structure-based screening with AlphaFold2 and cryo-EM structures as queries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the scientific context and are well-supported by appropriate citations to prior literature (C1-C3, C16-C26, C32-C37, C47-C48) and describe established methodological approaches (C27-C30). The historical context about the perceived absence of 7TMICs in Chordata (C21-C22) sets up the significance of the PHTF findings. The methodological rationale (C27-C31) is sound, leveraging the principle that tertiary structure is more conserved than primary structure.",
+    "result_type": "MINOR"
+  }
+]

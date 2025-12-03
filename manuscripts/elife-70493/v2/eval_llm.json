@@ -1,0 +1,266 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "Prior research on inter-brain neural relationships has focused exclusively on similarity measures (correlation and coherence), leaving the difference in neural activity between brains unexplored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 establish the research gap through extensive literature review. The claims are well-supported by numerous citations showing that prior work used correlation/coherence measures (C1-C2), and the assertion that difference has remained unexplored (C3) is a reasonable inference from this literature review.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5"
+    ],
+    "result": "Inter-brain difference contains information beyond what is captured by correlation measures and is more than simply a lack of correlation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 present the conceptual motivation for the study. While initially speculative, these claims are subsequently validated by the experimental findings showing that difference components have distinct temporal dynamics (C18, C22) that are not dictated by correlation alone (C28-C31).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The study used wireless neural recordings from pairs of Egyptian fruit bats in their frontal cortex during social interactions (one-chamber) and non-social conditions (two-chambers), recording four types of neural signals including LFP power in previously validated frequency bands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C14 describe the experimental design and are well-supported by direct statements, citations to prior work validating the approach, and detailed methods. The choice of species, brain region, recording methods, and experimental conditions are all appropriately justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "During social interactions (one-chamber), the difference component of neural activity had smaller magnitudes and faster timescales than the mean component, while in non-social conditions (two-chambers) the components were comparable. This pattern was consistent across all four neural signal types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C26 present the core experimental findings, supported by extensive data shown in Figure 1 and supplements. The observations are quantified using variance and power spectral centroid measures, shown to be robust across all sessions (C21-C22) and all neural signal types (C25), with appropriate statistical testing indicated in Figure 1M-T.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The relative magnitudes of mean and difference components are mathematically implied by inter-brain correlation, but the relative timescales are not constrained by correlation or relative magnitudes, as demonstrated through surrogate data analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 establish a critical theoretical point through mathematical analysis and surrogate data. The mathematical relationship between correlation and variance is derived (C27, C95), and the independence of timescales is convincingly demonstrated by constructing surrogate data with identical correlations and variances but opposite timescale relationships (C29-C31, Figure 2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C36",
+      "C37"
+    ],
+    "result": "A linear differential equation model with functional across-brain coupling reproduces the experimental observations, with the mechanism involving opposite feedback: positive feedback amplifying and slowing the mean component, and negative feedback suppressing and speeding up the difference component.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 describe the model and its key mechanism. The model qualitatively reproduces experimental patterns (C33-C34, Figure 3B-F), and the opposite feedback mechanism is derived from mathematical analysis of the model's eigenvectors and eigenvalues (C36-C37, detailed in Materials and methods).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Functional across-brain coupling is necessary to explain persistent inter-brain correlation after removing periods of coordinated behavior, as demonstrated by comparing models with and without this coupling mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 test whether behavioral coordination alone can explain the data. The experimental observation (C42, Figure 4A-B) is reproduced by the full model (C43) but not by a model lacking functional coupling (C44), demonstrating necessity of the coupling mechanism (C45, Figure 4E-G).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The Kuramoto model with phase-coupling reproduces inter-brain correlation and relative magnitudes but fails to reproduce the relative timescales, demonstrating that not all forms of functional coupling can explain the inter-brain relationship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 test an alternative coupling mechanism. The Kuramoto model's partial success and specific failure (Figure 4\u2014figure supplement 1) provides important validation that the observed timescale relationships require a specific form of coupling, strengthening the main model's explanatory power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The model predicts that correlation between neural activity variables varies with axes rotation in a manner that mirrors functional coupling strength, and this prediction is confirmed by experimental data for both one-chamber and two-chambers conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 present and validate a novel model prediction. The prediction follows logically from the model structure (C49, Figure 5A-B), and is clearly confirmed by data (C50-C51, Figure 5C, F), providing strong independent validation of the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "The model predicts linear relationships between variance ratio and power spectral centroid ratio across sessions, which is confirmed by experimental data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 present another model prediction and its validation. The linear relationship is predicted from the model (Figure 5G) and observed in data (Figure 5H). The detailed mathematical analysis in Materials and methods (Figure 5\u2014figure supplement 1) demonstrates this is not due to systematic behavioral variations but to the neural dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The model predicts that each bat's neural activity should encode the other bat's behavior independently of its own behavior, and this prediction is confirmed by ROC analysis showing stronger encoding in one-chamber than two-chambers sessions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 present a third model prediction and validation. The prediction follows from the model structure (C54-C55), is confirmed in simulations (C56, Figure 6C), and validated in data (C57, Figure 6D-F). The analysis appropriately controls for spurious correlations by regressing out each bat's own behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The opposite feedback mechanism generalizes to larger social groups (n>2), as demonstrated by extending the model to 4 bats and confirming predictions with experimental data from 4-bat social interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C70 extend the findings to group interactions. The model naturally generalizes to n bats (C58), makes specific predictions about the difference subspace (Figure 7C-E), and these predictions are qualitatively confirmed by 4-bat experimental data (C66-C69, Figure 7F-H), demonstrating the mechanism's broader applicability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The model provides a unified explanation for diverse previously observed features of inter-brain relationships, including neural correlation across brains, correlation beyond behavioral coordination, and correlation as a function of timescale.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 synthesize how the model explains prior findings from the literature. Each phenomenon (C71-C73) is explained by the opposite feedback mechanism, and the model's broad explanatory power (C74) is supported by its ability to account for seven distinct aspects of inter-brain relationships listed in the claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Inter-brain relationships have been studied in three non-human species (bats, mice, birds), with bats and mice showing similar patterns but birds showing anti-correlated activity during duetting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 provide comparative context from the literature. These claims are well-supported by appropriate citations and help frame the generalizability and species-specificity of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Detailed experimental methods including subjects, ethical approval, setup, behavioral annotation, surgery, electrophysiology, histology, and data processing procedures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C94 describe methodological details. These are well-documented with appropriate specificity, citations to prior work where applicable, and sufficient detail for reproducibility. The methods build on previously published and validated approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Mathematical and modeling details including the relationship between correlation and variance, validation of the first-order Markov chain for behavior modeling, and quantitative model-data comparison showing average correlation of 0.72.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C99 provide technical validation of modeling choices. The mathematical derivation (C95) is sound, the Markov model selection is justified by likelihood comparison (C96, Figure 3\u2014figure supplement 2A-B), and the model-data correlation (C99) demonstrates reasonable quantitative agreement.",
+    "result_type": "MINOR"
+  }
+]

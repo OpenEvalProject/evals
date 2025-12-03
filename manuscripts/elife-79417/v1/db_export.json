@@ -1,0 +1,2021 @@
+{
+  "submission": {
+    "id": "fef1006f-3361-40a8-acf1-98ab03b6193d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T17:13:02.207836Z",
+    "updated_at": "2025-12-03T17:13:02.207836Z"
+  },
+  "content": [
+    {
+      "id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "submission_id": "fef1006f-3361-40a8-acf1-98ab03b6193d",
+      "content_type": "manuscript",
+      "content_text": "# Mandrill mothers associate with infants who look like their own offspring using phenotype matching\n\n## Authors\n\n- Marie JE Charpentier<sup>1</sup> ([ORCID: 0000-0001-6530-5874](https://orcid.org/0000-0001-6530-5874)) \u2020\n- Cl\u00e9mence Poirotte<sup>2</sup>\n- Berta Roura-Torres<sup>2</sup>\n- Paul Amblard-Rambert<sup>3</sup>\n- Eric Willaume<sup>4</sup>\n- Peter M Kappeler<sup>2</sup>\n- Fran\u00e7ois Rousset<sup>1</sup>\n- Julien P Renoult<sup>5</sup>\n\n### Affiliations\n\n1. ISEM, Univ Montpellier, CNRS, IRD, EPHE Montpellier France ([ROR:01cah1n37](https://ror.org/01cah1n37))\n2. Behavioral Ecology and Sociobiology Unit, German Primate Center, Leibniz Institute of Primate Research G\u00f6ttingen Germany ([ROR:02f99v835](https://ror.org/02f99v835))\n3. Projet Mandrillus, SODEPAL Bakoumba Gabon\n4. SODEPAL-COMILOG Bakoumba Gabon\n5. CEFE, Univ Montpellier, CNRS, EPHE, IRD Montpellier France ([ROR:008rywf59](https://ror.org/008rywf59))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBehavioral discrimination of kin is a key process structuring social relationships in animals. In this study, we provide evidence for discrimination towards non-kin by third-parties through a mechanism of phenotype matching. In mandrills, we recently demonstrated increased facial resemblance among paternally related juvenile and adult females indicating adaptive opportunities for paternal kin recognition. Here, we hypothesize that mandrill mothers use offspring\u2019s facial resemblance with other infants to guide offspring\u2019s social opportunities towards similar-looking ones. Using deep learning for face recognition in 80 wild mandrill infants, we first show that infants sired by the same father resemble each other the most, independently of their age, sex or maternal origin, extending previous results to the youngest age class. Using long-term behavioral observations on association patterns, and controlling for matrilineal origin, maternal relatedness and infant age and sex, we then show, as predicted, that mothers are spatially closer to infants that resemble their own offspring more, and that this maternal behavior leads to similar-looking infants being spatially associated. We then discuss the different scenarios explaining this result, arguing that an adaptive maternal behavior is a likely explanation. In support of this mechanism and using theoretical modeling, we finally describe a plausible evolutionary process whereby mothers gain fitness benefits by promoting nepotism among paternally related infants. This mechanism, that we call \u2018second-order kin selection\u2019, may extend beyond mother-infant interactions and has the potential to explain cooperative behaviors among non-kin in other social species, including humans.\n\n## Introduction\n\nKin selection is an evolutionary process promoting traits that provide fitness benefits for genetic relatives of individuals expressing them (Hamilton, 1964). Empirical observations of diverse interactions arising from kin selection have been pervasively reported in natura and constitute the foundations of many studies on social evolution (Clutton-Brock, 2002). Kin selection sometimes necessitates kin recognition, which can operate through phenotype matching (Penn and Frommen, 2010). This mechanism, based on learning processes of, for example, odors, sounds, or visual cues, allows individuals to recognize kin based on phenotypic resemblance either with self (\u2018self-referent phenotype matching\u2019 Hauber and Sherman, 2001; Mateo and Johnston, 2003) or with other kin used as templates (Sherman et al., 1997). Self-referent phenotype matching requires individuals to evaluate their own phenotype (e.g. through smell in rodents Mateo and Johnston, 2003; Mateo, 2010), which may be challenging in some situations. For example, although face recognition is a crucial prerequisite for visual communication and therefore for the maintenance of social relationships in many species (Sheehan and Tibbetts, 2011), including our own lineage (e.g. Alvergne et al., 2009; DeBruine et al., 2008; Parr, 2011; Sheehan and Nachman, 2014), in natural contexts, animals other than humans have probably limited access to cues regarding their own facial traits (but see Hauber and Sherman, 2001; Hauser et al., 1995). Using familiar kin as templates to recognize unfamiliar kin also requires particular conditions, including the presence of relatives during template formation. This mechanism has been rarely demonstrated in the wild (but see Levr\u00e9ro et al., 2015 and Holmes, 1986; Mateo, 2003 for lab studies). A crucial question is therefore how an individual may recognize unfamiliar kin when it cannot match phenotypes to itself or to other templates.\n\nMandrills are non-human primates from Central Africa that live in large matrilineal societies, characterized by family units of philopatric, maternally-related and highly nepotistic females. Males, the dispersing sex, are only temporary residents in these groups, and the highest-ranking male sires a large proportion of infants born into different matrilines each year (Charpentier et al., 2005; Charpentier et al., 2020). Each cohort of new-borns therefore includes numerous paternal half-sibs that behaviorally discriminate each other from non-kin. Indeed, both maternal and paternal half-sibs associate, groom, but also aggress each other more compared to non-kin, as early as juvenility (Charpentier et al., 2007), and this kin bias extends until adulthood, at least among the philopatric female mandrills (Charpentier et al., 2020). Previously, we have further demonstrated that unfamiliar kin recognize each other using phenotype matching based on acoustic (Levr\u00e9ro et al., 2015) and possibly visual cues (Charpentier et al., 2017), and that facial resemblance correlates positively with genetic relatedness across female mandrills (Charpentier et al., 2020).\n\nCrucially, paternal half-sisters resemble each other visually more than maternal half-sisters do (Charpentier et al., 2020), even though both kin categories share, on average, similar degrees of genetic relatedness (r~0.25; and see Appendix 1). This heightened facial resemblance among paternal half-sisters compared to maternal half-sisters, possibly resulting from genomic imprinting processes (Haig, 2002; Moore and Haig, 1991), indicates adaptive opportunities for paternal kin recognition, necessarily mediated by phenotype matching mechanisms. Using self-referent phenotype matching to discriminate paternal half-sibs appears, however, unrealistic in wild mandrills because of environmental constraints (no physical medium to allow facial self-recognition). Facial similarity could also result from selection processes on other self-evaluable phenotypic traits such as body odors, but this mechanism appears less parsimonious to explain the increased facial resemblance observed among paternal half-sisters (Appendix 1) than a mechanism based on direct selection on facial traits to provide cues of paternity. Using the father\u2019s face as a template is also unlikely in mandrills because of the highly pronounced sexual dimorphism and morphological differences between adults and immatures in this species (infants do not resemble their father: Appendix 1\u2014figure 1 and Appendix 1\u2014table 1).\n\nIn (Charpentier et al., 2020), we discussed an alternative mechanism where third-parties would use increased facial resemblance among paternal half-sibs to shape their social relationships. We proposed that mothers could evaluate their offspring\u2019s facial resemblance with other youngsters and guide their offspring\u2019s social opportunities towards similar-looking ones, paving the way for the differentiated social relationships that we previously reported among paternal half-sibs. If mothers indeed manipulate their offspring\u2019s social preferences, we expect this to occur very early during development, in infants aged \u22641 yr, for two reasons. First, in nonhuman primates, the first year of life represents a developmental stage where infants are still under strong maternal control (Maestripieri, 2018). Second, the average difference in facial resemblance among paternal half-sisters compared to maternal half-sisters or non-kin was higher during juvenility (2\u20134 yrs) than during adulthood (Charpentier et al., 2020), suggesting that cues of paternity are present, and particularly pronounced, early in life.\n\nIn this study, we provide empirical evidence that mothers and their offspring both associate more with similar-looking other infants, who are more likely than expected by chance to be their offsprings\u2019 paternal half-sibs. However, because paternal kin only share paternal genes, this maternal behavior cannot be explained as a standard form of kin selection, which requires relatedness between an actor (here the mother) and a non-descendant recipient (here the similar-looking infant). To address the question of how and whether such a behavior may evolve, we formally demonstrate an evolutionary mechanism by which mothers may gain fitness benefits from favoring nepotism between their own offspring and their offsprings\u2019 paternal half-sibs, as infants themselves benefit from interacting repeatedly with kin, following predictions of the kin selection theory. The mechanism that we propose to call \u2018second-order kin selection\u2019, can be generalized beyond mother-infant interactions. While it is a novel explanation for the evolution of nepotism, second-order kin selection perfectly fits into the mathematical framework offered by inclusive fitness theory (Gardner et al., 2011; Hamilton, 1964).\n\n## Results and discussion\n\n### Empirical evidence in mandrills\n\n#### Increased resemblance among paternal half-sibs during infancy\n\nWe first show that, during infancy, paternal half-sibs resemble each other more than maternal half-sibs and non-kin do. We retrained VGG-Face, a popular algorithm for human face recognition, to recognize 112 individual mandrills from their face, independently of their position, lighting or facial expression, using approximately 12 k training pictures. These pictures were taken in the course of a long-term field project on a large, natural social group of mandrills in Gabon. We used this retrained model to predict facial distance (calculated within the encoding space of the model, see Materials and methods) among 80 individually recognized infants (0\u20131 yr) of both sexes (39 females, 41 males), represented by a total of 204 new pictures (1\u201310 pictures/infant), not used for training the model. Maternal identity was known for all 80 infants based on direct observations. Due to field constraints, paternal identity was determined genetically for only 32 infants. For the remaining 48 infants with unknown paternity, we differentiated between pairs of infants conceived during the tenure of the same alpha male from those conceived under tenures of different alpha males. Indeed, reproductive skew in mandrills is high, with alpha males monopolizing 60\u201370% of all conceptions (Charpentier et al., 2005; Charpentier et al., 2020). While infants born during the tenures of \u2018different alpha males\u2019 are thus most likely not paternally related, those born during the tenure of the \u2018same alpha male\u2019 presumably include a large proportion of paternal half-sibs. Using a linear mixed model (LMM) on this large dataset (N=2556 dyads), and controlling for infant age and sex as well as maternal identity, we found that paternal half-sibs resemble each other facially more than any other dyads of infants. In addition, these paternal half-sibs, but also those conceived during the tenure of the same alpha male, resemble each other significantly more (lower average facial distance; Figure 1, Table 1) than those sired by two different fathers or conceived during the tenures of two different alpha males (higher average facial distance). In contrast, at these young ages, maternal half-sibs do not look more alike than infants born to different mothers (Table 1). This result therefore strongly supports and extends one of our previous key results: starting as early as infancy (this study) and continuing throughout juvenility and adulthood for females (Charpentier et al., 2020), paternal half-sibs resemble each other more than maternal half-sibs do.\n\n**Table 1.**\n Predictors for facial distance among infants.Significant predictors (p<0.05) are in bold (LMM with a Gaussian response).\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\"></th>\n      <th rowspan=\"2\"></th>\n      <th colspan=\"4\">Infants\u2019 facial distanceN=2556 dyads</th>\n    </tr>\n    <tr>\n      <th>\u03c72</th>\n      <th>p &gt; \u03c72</th>\n      <th>Estimate</th>\n      <th>Standard error</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"5\">Predictors</td>\n      <td>Father/alpha male at infants\u2019conception*Same alpha vs.same fatherDifferent alphas vs.different fathersSame alpha vs.different alphas</td>\n      <td>28.075.871.068.16</td>\n      <td>&lt;0.0010.0150.300.004</td>\n      <td>Same alpha:\u20130.24Different father:0.10Same father:\u20130.67</td>\n      <td>0.080.090.17</td>\n    </tr>\n    <tr>\n      <td>Infants\u2019 mother(s)\u2020</td>\n      <td>0.32</td>\n      <td>0.57</td>\n      <td>0.12</td>\n      <td>0.19</td>\n    </tr>\n    <tr>\n      <td>Infants\u2019 difference in age</td>\n      <td>1231.8</td>\n      <td>&lt;0.001</td>\n      <td>1.18</td>\n      <td>0.03</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Infants\u2019 sex\u2021</td>\n      <td rowspan=\"2\">0.84</td>\n      <td rowspan=\"2\">0.66</td>\n      <td>FF: \u20130.36</td>\n      <td>0.41</td>\n    </tr>\n    <tr>\n      <td>FM: \u20130.17</td>\n      <td>0.21</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Reference: different alpha males.\u2020Reference: different mothers.\u2021Reference: MM (male-male)._\n\n![Figure 1.](https://cdn.elifesciences.org/articles/79417/elife-79417-fig1-v1.jpg)\n\n**Figure 1.:** For each estimate, the 50% (inner), 70% (middle), and 95% (outer) Wald confidence intervals are shown. Pink shades highlight variables of interest while blue shades correspond to control variables. The following variables are displayed: father identity (top three rows: infants born to different fathers -\u2019Father:different\u2019-; infants conceived during the same alpha male tenure -\u2019Alpha:same\u2019-; infants born to the same father -\u2019Father:same\u2019-; reference category: Alpha:different); mother identity (infants born to the same mother -\u2019Mother:same\u2019-; reference category: Mother:different); infants\u2019 difference in age (\u2018Age difference\u2019); infants\u2019 difference in sexes (\u2018Sex:FM\u2019 and \u2018Sex:FF\u2019; reference category: MM). Bold y-axis labels highlight variables with significant effects (p<0.05).\n\n#### Mothers and their offspring associate more with similar-looking other infants\n\nWe then restricted our image data set to those infant dyads for which we had detailed records on spatial associations routinely collected during behavioral observations (N=48 infants and their 30 mothers). Using generalized linear mixed models (GLMM with negative binomial family for over-dispersed count data), we analyzed spatial associations (i) among infants (\u2018infant-infant\u2019, N=282 dyads); (ii) between infants and other mothers (\u2018mother-infant\u2019, N=580); and (iii) among mothers having infants at the same time (\u2018mother-mother\u2019, N=325) as a function of the residuals (see Materials and methods) of facial distance among infants, and controlling for matrilineal origin, maternal relatedness and rank, and infant sex and age (at the time of observations).\n\nWe found that mothers associate significantly more with infants that look like their own infants compared to infants that do not (Figure 2, Table 2). Infants also associate significantly more with other infants that look more like them. In contrast, associations among mothers are not influenced by the average facial distance of their offspring (Figure 2, Table 2), although both mothers should be also spatially close (but more distant) given mother-offspring association patterns (Appendix 1\u2014figure 2). This last result suggests that mother-infant and infant-infant association patterns do not emerge as by-products of mother-mother association patterns. Pre-existing friendships among mothers, or among these mothers and a common father (Appendix 1\u2014table 1), are thus unlikely to explain the relationships observed between mother-infant and infant-infant dyads. This interpretation is further supported by the analysis of grooming relationships among mothers having infants at the same time (\u2018mother-mother\u2019, N=310 dyads) as a function of the residuals of facial distance among infants, and the same confounding variables as above (Materials and methods). As for spatial associations, grooming relationships among mothers are not related to facial resemblance of their offspring (LRT, \u03c72=1.71, p=0.19). Similar models on infant-infant and mother-infant grooming relationships were not performed because infants never groom each other, and, of a total of 560 mother-infant dyads, only 6 were observed grooming each other during the course of this study. An important implication of this last observation is that mothers probably bring infants into proximity to each other but do not invest into other social behaviors such as grooming (i.e. infants \u2018do the rest\u2019).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/79417/elife-79417-fig2-v1.jpg)\n\n**Figure 2.:** For each estimate, the 50% (inner), 70% (middle) and 95% (outer) Wald confidence intervals are shown. Pink shades highlight the variable of interest (\u2018facial distance\u2019) while blue shades correspond to control variables. Note that a negative estimate (as for \u2018facial distance\u2019) indicates a negative correlation between spatial association and that variable (\u2018facial distance\u2019): individuals associate more with low values of \u2018facial distance\u2019 (high resemblance). The following variables are displayed: infants\u2019 residuals of facial distance (\u2018Facial distance\u2019); different vs. same mothers\u2019 matrilines (\u2018Matriline:same\u2019; reference category: different); mothers\u2019 relatedness (\u2018Relatedness\u2019); mothers\u2019 difference in rank (\u2018Rank difference\u2019); infants\u2019 difference in age (\u2018Age difference\u2019); infants\u2019 difference in sexes (\u2018Sex:FM\u2019 and \u2018Sex:FF\u2019; reference category: MM). Bold y-axis labels indicate variables with significant effects (p<0.05). Pictures depict three male infants with their average facial distances: B and C resemble each other most, in contrast to A.\n\n**Table 2.**\n Predictors of the spatial associations recorded across mother-infant, infant-infant and mother-mother dyads.Significant predictors (p<0.05) are in bold (GLMM with negative binomial response family and log link). The reported dispersion parameter is the so-called shape parameter of the negative binomial distribution.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\" colspan=\"2\"></th>\n      <th colspan=\"4\">Mother-infant associationN=580 dyadsDispersion parameter = 2.43</th>\n      <th colspan=\"4\">Infant-infant associationN=282 dyadsDispersion parameter = 2.635</th>\n      <th colspan=\"4\">Mother-mother associationN=325 dyadsDispersion parameter = 1.281</th>\n    </tr>\n    <tr>\n      <th>\u03c72</th>\n      <th>p &gt; \u03c72</th>\n      <th>Estimate</th>\n      <th>Standard error</th>\n      <th>\u03c72</th>\n      <th>p &gt; \u03c72</th>\n      <th>Estimate</th>\n      <th>Standard error</th>\n      <th>\u03c72</th>\n      <th>p &gt; \u03c72</th>\n      <th>Estimate</th>\n      <th>Standard error</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"7\">Predictors</td>\n      <td>Infants\u2019 facial distance (residuals)</td>\n      <td>7.72</td>\n      <td>0.005</td>\n      <td>\u20130.14</td>\n      <td>0.05</td>\n      <td>5.30</td>\n      <td>0.021</td>\n      <td>\u20130.16</td>\n      <td>0.07</td>\n      <td>1.33</td>\n      <td>0.248</td>\n      <td>\u20130.08</td>\n      <td>0.07</td>\n    </tr>\n    <tr>\n      <td>Infants\u2019 matriline*</td>\n      <td>18.11</td>\n      <td>&lt;0.001</td>\n      <td>0.70</td>\n      <td>0.15</td>\n      <td>7.85</td>\n      <td>0.005</td>\n      <td>0.61</td>\n      <td>0.21</td>\n      <td>3.45</td>\n      <td>0.063</td>\n      <td>0.44</td>\n      <td>0.23</td>\n    </tr>\n    <tr>\n      <td>Mothers\u2019 relatedness</td>\n      <td>31.17</td>\n      <td>&lt;0.001</td>\n      <td>0.27</td>\n      <td>0.05</td>\n      <td>24.04</td>\n      <td>&lt;0.001</td>\n      <td>0.32</td>\n      <td>0.06</td>\n      <td>17.01</td>\n      <td>&lt;0.001</td>\n      <td>0.31</td>\n      <td>0.07</td>\n    </tr>\n    <tr>\n      <td>Mothers\u2019 rank difference</td>\n      <td>37.47</td>\n      <td>&lt;0.001</td>\n      <td>\u20130.37</td>\n      <td>0.06</td>\n      <td>10.74</td>\n      <td>0.001</td>\n      <td>\u20130.28</td>\n      <td>0.08</td>\n      <td>28.49</td>\n      <td>&lt;0.001</td>\n      <td>\u20130.44</td>\n      <td>0.08</td>\n    </tr>\n    <tr>\n      <td>Infants\u2019 age difference\u2020</td>\n      <td>13.77</td>\n      <td>&lt;0.001</td>\n      <td>\u20130.23</td>\n      <td>0.06</td>\n      <td>10.49</td>\n      <td>0.001</td>\n      <td>\u20130.27</td>\n      <td>0.09</td>\n      <td>6.20</td>\n      <td>0.013</td>\n      <td>\u20130.20</td>\n      <td>0.08</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Infants\u2019sex\u2020</td>\n      <td rowspan=\"2\">1.39</td>\n      <td rowspan=\"2\">0.499</td>\n      <td>FF: \u20130.20</td>\n      <td>FF: 0.21</td>\n      <td rowspan=\"2\">0.66</td>\n      <td rowspan=\"2\">0.719</td>\n      <td>FF: \u20130.21</td>\n      <td>FF: 0.27</td>\n      <td rowspan=\"2\">8.94</td>\n      <td rowspan=\"2\">0.011</td>\n      <td>FF: \u20130.72</td>\n      <td>FF: 0.25</td>\n    </tr>\n    <tr>\n      <td>FM: \u20130.18</td>\n      <td>FM: 0.15</td>\n      <td>FM: \u20130.11</td>\n      <td>FM 0.21</td>\n      <td>FM: \u20130.50</td>\n      <td>FM: 0.19</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Reference: different matrilines.\u2020Reference: MM (male-male)._\n\nIn mandrills, mothers constitute the main social partner for their offspring for several months or years. During their first year of life, infants are closely associated with their mother (Appendix 1\u2014figure 2). To confirm that mothers, and not infants, drive patterns of association with similarly-looking other infants, we analyzed the directionality of mother-offspring follows and approaches. We found that infants follow and approach their mothers in 97.6% and 89.4% of these events, respectively (follow: N=2,387 total events recorded on 139 mother-infant dyads; approach: N=4,482 total events recorded on 155 mother-infant dyads). Therefore, in the vast majority of cases, infants go, indeed, where their mothers are or go. Finally, we studied the correlation between the rate of association recorded among the 282 dyads of infants and the average rate of association recorded between each of these infants and the mother of the other infant (Appendix 1\u2014figure 3): 71% of the variance in infant-infant associations is explained by the average mother-infant association (and vice-versa; Pearson correlation test: r=0.85, p<0.0001). Altogether, these correlational results support the hypothesis that mothers are responsible for the increased association observed among infants that depends on several factors, including infants\u2019 facial resemblance.\n\nIn other mammals, from rodents to humans, mothers often show some form of control over social opportunities and preferences of their offspring, and maternal behavior may impact both their infants\u2019 neural and social development (Rilling and Young, 2014). In chimpanzees, mothers with sons are more gregarious and associate more with adult males than mothers with daughters, thereby shaping their sons\u2019 social trajectories (Murray et al., 2014). Despite strong maternal control over offspring\u2019s social choices in mammals (East et al., 2009; Rilling and Young, 2014), we explore below an alternative scenario where fathers, not mothers, may use prominent visual resemblance among paternal half-sibs to target paternal care and mediate nepotism among them, thereby ultimately favoring the transmission of paternal genes.\n\n#### Alternative hypothesis: Is increased resemblance among paternal half-sibs driven by father-based selection?\n\nTo care for their own offspring, mandrill fathers need some form of paternity certainty because females mate with several males around ovulation (Setchell, 2016). In some other promiscuous species, true paternal care has been unambiguously demonstrated: male baboons, for example, selectively support their own offspring in agonistic disputes (Buchan et al., 2003). If mandrill fathers know with certainty at least one or a few of their offspring, then increased facial resemblance may help discriminating others. This mechanism, although plausible, is subject to cognitive constraints and a precise knowledge about female fertility as female mandrills are only fertile during a restricted time window (May-Sept Dezeure et al., 2022). More parsimoniously, mothers may remember whom they mated with and associate with the putative father after birth to promote paternal care. Heightened facial resemblance among paternal half-sibs could then help fathers to discriminate all of their offspring from other infants. Contrary to male baboons, however, paternal care in mandrills is elusive: males neither carry infants nor do they groom or affiliate with them (MJEC pers. obs.), even though in captivity, males are spatially closer to their own juvenile offspring than to unrelated juveniles of similar age (Charpentier et al., 2007). While we cannot exclude paternal care as a driving force for increased facial resemblance among paternal half-sibs, patterns of male residency in this natural mandrill population do not provide strong support for this scenario. Indeed, males are mainly present during the short breeding season, although some males remain in the group from a few days to a few months (Brockmeyer et al., 2015). Among 69 male.years (N=29 different subordinate and dominant males) observed throughout 8 reproductive seasons, only 44.7% and 54.5% of males, respectively, that were present during a given reproductive season remained in the study group until the next birth season. Opportunities for fathers to personally care for their infants therefore occur statistically only half of the time. Finally, those males that were present during a given reproductive cycle are probably not responsible for maintaining proximity with either infants or their mothers (MJEC and BRT, pers. obs.), but exploring this alternative mechanism would require detailed data on male-infant relationships that are not available yet. To conclude, we present empirical evidence that mandrill mothers may influence offsprings\u2019 association patterns towards similar-looking infants, and our knowledge of the natural history of mandrills makes less plausible fathers to be also involved in this process, although we are currently unable to analytically exclude this alternative mechanism with available data. In the future, showing that fathers rather than non-fathers are more likely to stay in the group at their offsprings\u2019 birth and that they actively intervene in their offsprings\u2019 social interactions would help to disentangle the respective role of mothers and fathers in offsprings\u2019 social development.\n\n### The mother\u2019s benefits of matching her infants with related ones\n\nBecause paternal half-siblings share paternal, not maternal genes, we finally show how, under minimal assumptions, mothers can obtain fitness benefits by fostering interactions between their offspring and paternally-related siblings. Key steps to that conclusion are that infants engage in repeated interactions within dyads and that such interactions are mostly of two types, \u2018repeatedly cooperate\u2019 or \u2018repeatedly defect\u2019, so that only dyads of cooperators can repeatedly cooperate. Then, any maternal behavior that increases the likelihood that her offspring will repeatedly cooperate rather than repeatedly defect may be favored. This two-step reasoning does not require a statistical association (linkage disequilibrium) between alleles affecting the control of assortment of infants by mothers, and alleles affecting cooperation. To reach this conclusions, we will use a \u2018one-generation\u2019 formalism (Lehmann and Rousset, 2014) suitable to take into account both the interactions between relatives and multilocus processes, and which has proven useful in particular to avoid double counting of fitness benefits (as may happen when compounding fitness effects of related individuals over different generations). In the present case, it allows to correctly account for fitness benefits to mothers when infants are involved in social interactions.\n\nIn this formalism, selection on an allele affecting the mother\u2019s fitness W is quantified as a covariance (Price, 1970) between an indicator variable zf for presence of the allele in a mother, and mother\u2019s fitness. More specifically the expected effect of selection on the change in frequency of the allele over one generation is proportional to cov(zf,W) (it would be equal to this covariance if all adults expressed the allele, rather than only females). W is her expected number of (adult) offspring, expressed as a function w(xf, xp) of her own behavior xf and of that xp of her social partners (neighbor-modulated fitness), and then as a function of gene effects underlying such behaviors (that is, the value of xf and xp are conceived as functions of the allele borne by the respective individuals, e.g. xf = x0+zf\u03b4 may represent the extent of female associative behavior whether she bears (xf = x0+\u03b4 when zf=1) or not (xf = x0 when zf = 0) the allele under consideration). The covariance expression for selection then involves expected values of products of the mother\u2019s and partners\u2019 indicator variables, that can be interpreted in terms of relatedness coefficients, and linkage disequilibria when several loci are involved. In the present case, we will see that many such products can be ignored, allowing a simple characterization of selection on maternal behavior.\n\nFor simplicity, we assume effects on infant survival. We could alternatively assume effects on infant reproductive potential (\u2018quality\u2019) but then the fitness of a mother should be measured as a weighted sum of numbers of offspring of different quality, which would complicate the model formulation without modifying its conclusions. Likewise, formal models including pairing processes are generally complex to formulate but such a formulation is not required to understand the key qualitative features of the present scenario.\n\nFirst, consider the fitness benefits for paired infants. Let us assume that pairs of infants play an iterated prisoner\u2019s dilemma in its canonical form (with R indicating the \u2018rewards\u2019 received by two cooperating infants, P the \u2018punishment\u2019 payoff received by two defecting infants, T the \u2018temptation\u2019 payoff received by a defecting infant interacting with a cooperating infant, and S the \u2018sucker\u2019s\u2019 payoff received by a cooperating infant interacting with a defecting infant, and w the probability of iteration [Axelrod and Hamilton, 1981]), and a tit-for-tat strategy in response to defection. Accordingly, after multiple interactions the expected payoffs are $R/(1\u2212w)$ for pairs of cooperators, $P/(1\u2212w)$ for pairs of defectors, and respectively $S+Pw/(1\u2212w)$ and $T+Pw/(1\u2212w)$ for a cooperator and a defector paired together. Provisionally assuming that cooperators and defectors are equally frequent, the average payoff is therefore $(R+P)/(2(1\u2212w))$ for identical dyads, and $((1\u2212w)(S+T)+2Pw)/(2(1\u2212w))$ for non-identical dyads. For long-lasting interactions ($w\u21921$), the relative values of the payoffs of identical and non-identical dyads compare essentially as $R+P$ vs. $2P$. Given that cooperation is mutually beneficial ($R>P$), identical dyads are favored over non-identical ones. If cooperators and defectors are not equally frequent, the average payoff of identical dyads will scale as a weighted average of $R$ and $P$ but the reasoning and main conclusion is otherwise unchanged: identical dyads still enjoy an average fitness benefit proportional to $R-P$. This conclusion embodies the fact that, on average over cases where they cooperate and cases where they do not, individuals can benefit from increasing the likelihood of interacting with identically-behaved ones, whether relatives of not. Therefore, they can benefit by increasing the likelihood of interactions between relatives, and it would readily explain kin recognition by infants, which we do not assume here (see Appendix 1\u2014table 1).\n\nNext, consider selective effects on alleles acting in mothers to control the assortment of their infants. For simplicity, let us assume that payoffs affect infant survival, so that the mother\u2019s fitness is proportional to the survival probability of her offspring. We can write the expected payoff (and, up to a constant factor, the linearized survival benefits) for a focal infant as $W:=\\beta_{0}+\\beta_{z}z+\\beta_{z_{p}}z_{p}+\\beta_{zz_{p}}zz_{p}$, where $z$ is the indicator variable for the event that the focal infant initiates the interaction by cooperating, $z_{p}$ is the same variable for its partner, and the \u03b2s are functions of the model parameters. Then, if a \u2018mutant\u2019 allele increases by $\\delta$, relative to a \u2018resident\u2019 allele, the likelihood that infants assort in identical pairs, this mutant will experience a total fitness effect proportional to $\\delta\u0394W$, where $\u0394W:=\\beta_{z}\u0394E(z)+\\beta_{z_{p}}\u0394E(z_{p})+\\beta_{zz_{p}}\u0394E(zz_{p})$ where for any variable $x$, $\u0394Ex$ is the difference in expected value of $x$ between infants of mothers bearing the mutant vs. those of mothers bearing the resident allele.\n\nWe first focus on the last term of the selective effect $\u0394W$, $\\beta_{zz_{p}}\u0394Ezz_{p}$ as we will later see that other terms are comparatively negligible. This represents the fitness effect of the interaction of events represented by $z$ and $z_{p}$. The system of four equations, implied by the expression for $W$ for all combinations of the two indicator variables, shows that $\\beta_{zz_{p}}$ is the difference between the unweighted average payoff of identical dyads (z and zp equal to each other) and the unweighted average payoff of non-identical dyads. As shown above, this difference is proportional to $R\u2212P>0$. Consider further that phenotypes are affected by the additive effect of the alleles transmitted by the parents, $z=C_{m}+C_{f}$ where $C_{m}$ and $C_{f}$ are effects inherited from mother and father, respectively. Likewise, for the infant partner, $z_{p}=C_{mp}+C_{fp}$ in terms of effects $C_{mp}$ and $C_{fp}$ inherited from the partner\u2019s mother and father. Then the survival of an offspring will increase with any of the products $C_{m}C_{mp}$ , $C_{m}C_{fp}$ , $C_{f}C_{mp}$ , and $C_{f}C_{fp}$ .\n\nWe do not assume any relatedness among mothers (which would increase the expected value of $C_{m}C_{m(p)}$), nor do we assume any form of (dis-)assortative mating increasing or reducing the expected value of cross-sex products. Then, only $\\delta\\beta_{zz_{p}}\u0394EC_{f}C_{fp}$ remains, meaning that any maternal behavior that increases the expected value of $C_{f}C_{fp}$ over offspring would enjoy fitness benefits. The conditions under which such benefits may outweigh costs possibly associated with the choice process are general conditions favoring choice: a high variance in quality (here, a high variance of inherited effects on cooperative behavior), and a strong impact of choice on expectation of $C_{f}C_{fp}$ , which is dependent on a high variance in male reproductive success within a cohort of infants (the case in mandrills Charpentier et al., 2005; Setchell et al., 2005) and on the existence of cues to infer paternal relatedness between infants, here increased facial resemblance among paternal half-sibs.\n\nThis fitness effect results from the fact that infants being more similar at loci controlling phenotypic similarity are more similar at loci controlling cooperation. Such shared similarity (\u2018identity disequilibrium\u2019) automatically results from an increased likelihood of shared paternity. It is expected, indeed, in any population where there is variation in relatedness among individuals, even in a finite panmictic population (Sved, 1971). When some pairs of individuals are more related to each other than other pairs, the fact that a pair is identical at one locus is an indication that the pair is more related than a random pair on average and then, it also tends to be more identical than random pairs at other loci in the genome (Grafen, 1990). By contrast, $\\delta\u0394Ez$ may be positive only if the alleles affecting the control of assortment of infants become statistically associated to cooperator alleles in mothers\u2019 genotypes. Such linkage disequilibria are typically of lower magnitude than identity disequilibrium, as recombination is generally efficient in reducing them (Rousset and Roze, 2007). Likewise, $\\delta\u0394Ez_{p}$ depends on a statistical association between the alleles affecting the control of assortment and cooperator alleles borne by the infant partner, and given that we do not assume that mothers are able to recognize any cooperator allele in any infant, such an association is all the more likely to be weak.\n\nAlthough this mechanism does not assume any increased relatedness among mothers of interacting dyads over mothers of non-interacting dyads, such variation in relatedness may be difficult to fully exclude in natural populations. If it is present, a selection effect $\\delta\\beta_{zz_{p}}\u0394EC_{m}C_{mp}$ , analogous to the above one, arises and represents a standard kin selection effect since actor and recipient are then related. Yet, this kin-selection effect arises only in conditions where the previous effect arises and will be comparatively small when maternal relatedness is small relative to the relatedness between paternally-derived gene copies. Thus, even if present, a kin-selection effect will be small compared to the main selection effect favoring assortment between paternal half-sibs.\n\nThe main conclusion is therefore that selection on mother\u2019s control of assortment of infants is proportional to $R-P$ and to the identity disequilibrium she creates by such control. By favoring nepotism between their own offspring and their paternal half-sibs, mothers would therefore derive direct fitness benefits (Figure 3, scenario A). The mechanism described here can be generalized to any actor whose behaviors promote positive interactions between a non-kin recipient and any actor\u2019s kin (Figure 3, scenario B). We term the mechanisms described in this generalized version \u2018second-order kin selection\u2019.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/79417/elife-79417-fig3-v1.jpg)\n\n**Figure 3.:** The actor (here a focal mother, face on the top) has the control over her behaviors with social partners (all three faces on the bottom including actor\u2019s offspring, other kin and non-kin in red). Plain black arrows represent the inclusive fitness framework of the kin selection theory. Dashed red arrows represent the second-order kin selection process where an actor\u2019s social behaviors towards a non-kin recipient (e.g. an offspring\u2019s paternal half-sib) favor the latter\u2019s social behaviors towards the actor\u2019s kin (offspring or other kin). We provide a few examples (A: the mechanism explored in this study; B: a generalization of the mechanism to other actor\u2019s kin) where this process may occur (and see discussion). Importantly, the second-order kin selection necessitates that non-kin recipient in red shares genetic or reproductive interests with the actor\u2019s kin (double-arrows).\n\n### Conclusion and future directions\n\nGiven mandrills\u2019 biology, and based on the analytical evidence shown here, we propose that the most plausible interpretation of the heightened facial resemblance observed among paternally related individuals, from infancy to adulthood (Charpentier et al., 2020), is that this resemblance has been selected to allow mothers to foster interactions between their offspring and their offspring\u2019s paternal relatives. The alternative, but not mutually exclusive explanation that fathers could reinforce this pattern cannot be totally excluded with current data. We propose the term \u2018second-order kin selection\u2019 to explain such maternal behavior. This process is, indeed, distinct from classic kin selection as actors (mothers) may derive direct fitness benefits from interacting with non-kin recipients (their offspring\u2019s paternal half-sibs) because of the benefits of these interactions towards the actors\u2019 own kin that occur through the increased expected payoffs of reciprocal interactions between kin.\n\nTwo critical conditions of this process are the ability to predict relatedness between assorted individuals (here by phenotype matching) and the occurrence of reciprocal interactions between the matched social partners. We provided evidence that the first condition is met in mandrills. In particular, we have both shown that cues of relatedness are present in mandrills\u2019 face at all ages and that these cues are likely used by mothers (although we do not assume this process to be conscious) who modify their behavior (here, spatial association) accordingly. A firm demonstration of the second condition, in particular that early associated individuals remain associated throughout their life and reciprocate more with each other than non-associated individuals, would necessitate longitudinal behavioral and demographic data that are not yet available for mandrills (but for preliminary results on patterns of association among 1- to 2-year-old juveniles, see Appendix 1\u2014figure 4). However, reciprocal interactions among kin have been well demonstrated in other species. Females baboons, for example, form the most enduring and reciprocal social bonds with their close kin (Silk et al., 2006). In addition, the positive and strong relationship between individual fitness and the quality of the social environment, often approximated using measures of spatial association, is no longer in question. Indeed, social integration is one of the strongest predictors of health and longevity in humans (Holt-Lunstad et al., 2010; Stringhini et al., 2017). This conspicuous relationship is also observed in many social mammals \u2013 with effect sizes of strikingly high amplitudes (Snyder-Mackler et al., 2020). In all mammalian orders, individuals that are poorly socially integrated display considerably shorter life spans and decreased reproductive success than individuals enjoying a rich social life (Silk et al., 2010; Barocas et al., 2011; Stanton et al., 2012; Archie et al., 2014; Vander Wal et al., 2015). In semi-free ranging mandrills, notably, affiliation and grooming exchanged during juvenility translate into reproductive benefits in females in adulthood: females who are more socially integrated give birth on average a year before females that are less socially integrated (Charpentier et al., 2012).\n\nTo the best of our knowledge, the second-order kin selection as presented here, has been overlooked so far, and how this process shapes the social structure of animal societies is still unknown. Yet, cooperation among non-genetically related in-laws (affinal kin), often reported in humans (Alvard, 2009; Koster, 2018; Salali et al., 2016), fits into this selection model because affinal kin or spouses may share genetic interests in the next generation (see also Burton-Chellew and Dunbar, 2011; Dyble et al., 2018). In nonhuman animals, the generality of this process will depend on the taxonomic distribution of reciprocal interactions. Other modulating factors involve the variance in male parenting, which influences the benefits for a kin recognition mechanism, the conditions that the matched individuals are unable to perform this recognition themselves, and the opportunity for control of assortment of relatives. Several of these conditions may be widespread in animal societies. Although the opportunity for control of kin assortment may be the most restrictive condition, mothers guide their offspring\u2019s social development in many social mammals (Maestripieri, 2018; Rilling and Young, 2014) and other conditions similarly leading to direct selection for assortment of related offspring could operate elsewhere, such as in the various forms of cooperative breeding or nest parasitism in birds. Finally, our study highlights how state-of-the-art artificial intelligence algorithms combined with long-term field data can help unravelling adaptive details of social complexity that would otherwise go completely unnoticed.\n\n## Materials and methods\n\n### Study population\n\nSince 2012 and within the framework of the \u2018Mandrillus Project\u2019 (Brockmeyer et al., 2015; Charpentier et al., 2020), we have been monitoring the only habituated, free-ranging and non-provisioned group of mandrills, living in a protected area and its surroundings (L\u00e9k\u00e9di Park, Bakoumba), in Southern Gabon. This group originated from 65 individuals that initially lived in a semi-free ranging population housed at CIRMF (Centre International de Recherches M\u00e9dicales de Franceville, Gabon) and released on two occasions into the protected area (2002 and 2006 Peignot et al., 2008). Captive-born females reproduced with wild immigrant males starting the first year post-release. In 2020, the group was composed of ca. 250 individuals of both sexes and all ages, about 200 of them being individually known and monitored on a daily basis; the remaining 7 captive-born adult females represented less than 3% of the animals studied for this project.\n\nDuring daily observations, we record detailed data on group composition and individual behaviors. In addition, we take pictures of unambiguously identified individuals when visible and close (less than 10 m away). In this study, we considered a total of 80 infants (39 females, 41 males; aged 4\u2013365 days) who contributed to the dataset of portrait images and 48 infants (24 females, 24 males) born to 30 different mothers contributing to the study of spatial associations as a function of facial resemblance (excluding those infants that were aged more than a year apart or those for whom no behavioral data was available). Dates of birth were exactly known for 31 infants and estimated within a time-window of one day to two months for the remaining 49 infants based on patterns of mother\u2019s sexual swellings and infants\u2019 physical appearance.\n\nAlthough the 80 studied infants were born into the same natural social group, under similar environmental conditions and were chosen randomly, they constitute a sample of all infants born (N = 292 from 2012 to 2021). We cannot exclude this sample to be biased towards e.g. fearless individuals (that would be easier to observe than shy animals). However, we do not see how this possible sampling bias could have affected our results in a non-random direction as infants were sampled independently of their maternal or paternal origins.\n\n### Measuring facial resemblance\n\n#### Image database and pre-processing\n\nThe mandrill face database includes ~16 k images representing 276 different mandrills originating from the study natural population (12.9 k images), a semi-captive population housed at CIRMF (Centre International de Recherches M\u00e9dicales de Franceville, Gabon; 2.7 k images) and other sources (the Internet, the Wildlife Reserves of Singapore, Zoo of Grandy; 0.4 k images). Images from Gabon (natural and CIRMF populations) were taken between 2012 and 2018. Pictures represent individuals that are awake and passive, awake and active (i.e. feeding, grooming, vocalizing) or anesthetized during several captures that occurred between 2012 and 2015 (representing 1.1 k images). We frequently photographed active individuals using the slow burst mode of cameras, which allows to capture variation in face position and expression while avoiding identical frames. The multiple frames obtained when using the slow burst mode are hereafter referred to as a \u2018burst-mode series\u2019. Images were then manually oriented to align pupils horizontally and cropped to generate square portraits centered on the nose and excluding the ears.\n\nFor training the DNN for both face identification and face verification, we used a learning dataset of 12.2 k pictures representing all individuals of the mandrill face database >1 yr, plus infants \u22641 yr not belonging to the 80 studied infants. Based on preliminary tests described previously (Charpentier et al., 2020), we included in the learning set all pictures displaying a face in frontal view (approx. <30\u00b0) and with less than 50% of occlusion, of whatever quality provided that field assistants individually recognize the animal. Because the face of a given individual varies considerably between its different age classes (infant, juvenile, adolescent -only for males-, subadult -only for males- and adult), we used \u2018ind-age\u2019 classes rather than individuals for the identification task, that is, we treated two ind-age classes representing the same individual as distinct and independent classes. The final learning dataset contained 168 ind-age classes. This learning set was split further into a training set and a validation set. The validation set was used to parameterize the model for the face identification task. It contained two images of each class. For a correct evaluation of training performances, we ensured that none of the validation image was from a burst-mode series that also contained images present in the training set. The training set contained all other images of the learning set. Because we were able to reach high performances despite a large imbalance between classes in the training sets, we did not attempt to correct for this imbalance.\n\nThe test dataset includes images of infants (\u22641 yr) from the study natural population. To maximize the quality of dissimilarity measurements, we selected only the best-quality pictures: face in frontal view, sharp image, neutral light, occlusion limited to below the mouth, neutral facial expression, no shadow or lighting spot, single image of a burst-mode series. Eventually, we analyzed 204 images representing 80 different infants (mean \u00b1 SD = 2.55\u00b11.79 pictures per infant). For the sake of clarity, we alternatively use expressions like \u2018facial resemblance\u2019 (facial similarities) in the main text or \u2018facial distance\u2019 (facial dissimilarities). In other words, pairs of infants that look like each other present, on average, low facial distances.\n\n#### Face identification\n\nWe trained a DNN to identify ind-age classes as a goal to learn a deep representation of mandrill faces. We used the popular VGG-Face (Parkhi et al., 2015) as a starting point and retrained this network with mandrill portraits. This procedure, called \u2018transfer learning\u2019, allows to reach high model performance even with relatively small datasets (Yosinski et al., 2014). VGG-face is a VGG16 that previously learned to recognize 2.6 k different humans from a total of 2.6 M portrait pictures. We replaced the last softmax classification layer of VGG-face by a new layer of 168 dimensions (which corresponds to the number of classes in the new mandrill identification task). We included two dropout layers (with 50% dropout probability), one after each fully connected layer, to limit the risk of overfitting. We trained the network using a stochastic gradient descent with momentum optimizer, with initial learning rate of 10\u20135 for all convolutional layers except for the two fully connected layers and the classification layer, for which the learning rate was set to 10\u20133. The learning rate decreased by a factor 10 every 5 epochs. Learning continued until the validation loss did not decrease further after three consecutive epochs. In order to match the input size of VGG-face, mandrill portraits were downsized to 224\u00d7224 pixels \u00d73 colors prior to analyses. We set the batch size to 32. We limited overfitting further by using \u2018data augmentation\u2019: for each iteration, images were shifted horizontally and vertically (by a number of pixels randomly selected within the range [\u201340 40]), rotated (range of degree: [\u201320 20]) and scaled (range of factor: [\u20130.7 1.2]). The entire training procedure was repeated 10 times. Eventually, after approximately 15 epochs, VGG-Mandrill was able to identify mandrill faces individually with a maximal accuracy of 93.42% (sem:\u00b10.13), and high generalization capacity (i.e. limited overfitting; Appendix 1\u2014figure 5).\n\n#### Face verification\n\nWe retrained the DNN using the full learning set to maximize the number of images (i.e. with both the training and validation sets). VGG-Mandrill was then used to extract deep feature activation vectors, a compact (4,096-dimensional) and informative representation of a mandrill face. Previous experiments revealed that face verification with mandrills was the most performant when using activation vectors from the first fully connected layer (after RELU nonlinear transformation), compared to using vectors from the second, or from both fully connected layers (Charpentier et al., 2020). The distance between feature activation vectors predicts the resemblance between images (Zhang et al., 2018). In this study, we used a \u03c72 distance calculated with normalized features (for details on the normalization step, see Charpentier et al., 2020).\n\nLast, we used a linear support vector machine (SVM) to learn a distance metric, with the goal to find the feature weights that optimize face verification. We randomly selected 15 k pairs of images representing different individuals and 15 k pairs representing same individuals, and for each pair we calculated the \u03c72 difference (as in Parkhi et al., 2015). We then ran the SVM with the \u03c72 differences as explanatory variables and 0 (different-individual pairs) or 1 (same-individual pairs) as a response variable. The SVM outputs the accuracy of the face verification task as well as the weight of each feature. We found that the classifier could verify mandrill identity from their face with an accuracy of 86.87% (sem: \u00b10.01). Weights were eventually used to calculate a weighted \u03c72 distance between every pairs of images in the test set. Pairwise distances were averaged for every different pairs of individual (N=3,160 pairs of infants represented by a total of 20,421 pairs of pictures) to provide our final estimates of facial distance across pairs of infants (mean \u00b1 SD: 6.46\u00b16.99 pairs of pictures for each pair of infants).\n\n#### Behavioral observations\n\nTrained observers, blind to the study questions, perform daily behavioral observations on all individually-recognized mandrills using either ad libitum data or 5 min focal sampling. During each focal observation, we record social interactions including time spent grooming or receiving grooming from all focal\u2019s groupmates. During these focal observations, we also record scans on one to three occasions to measure spatial associations between the focal animal and all groupmates that are located less than five meters away (termed \u2018scan\u2019). Since 2012, we obtained 9,305 scans from 48 infants and their 30 mothers during their offspring\u2019s first year of life (mean \u00b1 SD: 124.1\u00b1178.3 scans per individual). We restricted our analyses on association rates to infant-infant (169\u00b177 scans per pair), mother-infant (174\u00b180) and mother-mother (174\u00b191) dyads with at least 5 scans (and at least one scan for either partner) and when both individuals were alive and infants aged \u22641 yr. For each association rate, we matched the average facial distance of the corresponding pair of infants aged \u22641 yr. For mother-mother dyads, we also retrieved the frequency of grooming exchanged, recorded during their offspring\u2019s first year of life and restricted our analysis to those dyads observed during at least 30 minutes (N=310 dyads; mean time of observation per dyad \u00b1 SD: 8.98\u00b16.67 hours).\n\nBehavioral observations further allowed to examine patterns of two conspicuous mother-infant behaviors, \u201cfollows\u201d and \u201capproaches\u201d recorded as bouts during focal samplings of infants and their mothers. Finally, we reconstructed both male and female dominance hierarchies, using the outcomes of approach-avoidance interactions obtained during ad libitum and focal samplings and calculated using normalized David\u2019s score (as per Charpentier et al., 2020). We divided adult females into three classes of rank of similar size across the entire study period (2012\u20132020; high-ranking, medium-ranking, low-ranking). For males, we used monthly rank, distinguishing the alpha male from all other subordinates. When the alpha position was highly disputed for a given month, we considered the male\u2019s hierarchy as unclear (see also below).\n\n### Matrilineal identity and genetic relatedness\n\nMaternity was known for all 80 studied infants thanks to daily monitoring. Matrilineal identity was determined for all of them, including those 48 infants and associated 30 mothers used in the proximity analyses, thanks to detailed data on births and pedigree information available since the beginning of the project (Charpentier et al., 2020) and at CIRMF (Charpentier et al., 2005). In particular, individuals belong to the same matriline when they share a common mother, maternal grand-mother, great-grand mother and so-on with the exception of those females born at CIRMF that belonged to the same matriline but were released on two different occasions. In these cases, major social disruptions involved changes in female\u2019s dominance hierarchy, with females released in 2006 being automatically lower in rank than all other females released in 2002, whatever the initial rank they achieved. In these cases, females released in 2006 formed a new matriline, independent from their matrilineal origin at CIRMF.\n\nGenetic relatedness was determined using pedigree data obtained from paternity analyses performed on most adult mandrills and on a subset of immature individuals (see for details Charpentier et al., 2020). We determined paternity for 32 of the 80 portrayed infants. These 32 infants were randomly sampled across all studied matrilines. For the proximity analyses, we restricted our data set to those infant dyads (and associated mother-infant and mother-mother dyads) for whom the mothers\u2019 pedigree was known to the previous generation (maternal grand-father and grand-mother known) in order to obtain good estimates of mother-mother relatedness. Relatedness across the 285 different pairs of mothers vary from 0.01 to 0.66 (mean \u00b1 SD: 0.13\u00b10.12).\n\n### Statistical analyses\n\nAll data were analyzed using R v. 3.6.1. using the package spaMM.\n\nWe first fitted a General Linear Mixed Model (LMM) to study variation in the averaged facial distance among pairs of 80 infants aged \u22641 yr as a function of the averaged distance in ages across all pairs of pictures collected on each studied pair of infants, their sex (class variable with three modalities: \u201cFF\u201d, \u201cFM\u201d, \u201cMM\u201d), whether or not they share a common mother (class variable with two modalities: \u201csame mother\u201d, \u201cdifferent mother\u201d), and whether or not they either share a common father and whether or not they were conceived during the tenure of the same alpha male (class variable with four modalities: \u201csame father\u201d, \u201cdifferent father\u201d, \u201csame alpha\u201d, \u201cdifferent alpha\u201d). We excluded those infants (and the corresponding pairs) conceived during a month when the alpha position was disputed and unclear, resulting in 2,556 pairs of infants represented by 16,755 pairs of pictures (mean \u00b1 SD: 6.56\u00b16.86 pairs of pictures for each pair of infants). We included an autocorrelated random effect with distinct levels for each pair, to represent correlations between pairs of facial distance values involving a same infant in both distances, with a single correlation value for all such pairs. Its correlation is equal to 1 between permuted pairs (which are thus affected by the same value of the random effect), equal to a correlation value \u03c1 (fitted to the data) between pairs sharing one individual, and to 0 for non-overlapping pairs. The case where \u03c1 equals 0.5 represents the case of two additive individual random effects, each with the same variance. The fitted correlation model is therefore more general than this particular case. It is formally identical to a random effect model for a \u201cdiallel\u201d experiment as considered in quantitative genetics, where the same individual may be the \u201cfirst\u201d or the \u201csecond\u201d member of a mating pair across different mating pairs, and more specifically assuming that in each case it would express the same effect on its offspring (implying that there is a single variance parameter to be fitted). The present random effect structure accounts for the analogous symmetry of effects on facial distance. The case where \u03c1=0.5 represents additive random effects from each individual (analogous to \u201cgeneral combining abilities\u201d in quantitative genetics; Lynch and Walsh, 1998) and deviations from \u03c1=0.5 additionally represent non-additive effects (\u201cspecific combining abilities\u201d). We fitted a heteroscedastic residual variance with prior weights defined as the total number of pairs of pictures collected on each dyad of infants (giving more weight to those pairs with more numerous pictures). We standardized the averaged distance in ages to allow comparisons with other estimates.\n\nWe then fitted three Generalized Linear Mixed Models (GLMM) with negative binomial response family and log link to assess predictors of the frequency of spatial association among dyads of (i) infants (\u2018infant-infant\u2019); (ii) infants and other mothers (\u201cmother-infant\u201d); and (iii) mothers having infants in the social group (\u201cmother-mother\u201d). The response is the number of observed spatial associations. We considered only pairs of infants (and associated mothers) born into the same cohort (conceived during the same reproductive season). Each fitted model includes an offset (the logarithm of the total number of scans recorded on both individuals of the focal pairs), six fixed effects, a random effect term representing the effect of two additive individual random effects under the constraints of symmetry, as for \u201cgeneral combining ability\u201d in a \u201cdiallel\u201d experiment, in models of symmetrical interactions (mother-mother and infant-infant), and standard individual-level random effects for mothers and for infants in the mother-infant model. The six fixed effects are whether the infants belonged to the same matriline (class variable with two modalities: \u201csame matriline\u201d, \u201cdifferent matriline\u201d), relatedness between mothers (continuous variable), mothers\u2019 rank difference (continuous variable with three values: \u201c0\u201d for no rank difference, \u201c1\u201d for one rank difference, for example, between high-ranking and medium-ranking mothers; \u201c2\u201d for two rank differences, for example, between high-ranking and low-ranking mothers), infants\u2019 age difference when behaviors (not photographs) were recorded (continuous variable in days and <365), infants\u2019 sex (class variable with three modalities: \u201cFF\u201d, \u201cFM\u201d, \u201cMM\u201d), and the residuals of infant facial distance. Indeed, to assess the effect of infant facial distance unconfounded by the effect of infant age differences (at the time of pictures\u2019 collection), we used the residuals of such distance obtained from the fit of an LMM as performed above and that included as predictor the age difference (averaged distance in ages across all pairs of pictures), and an autocorrelated random effect with the same \u201cdiallel\u201d correlation structure as above (N=3,160 pairs of infants, represented by 20,421 pairs of pictures).\n\nBoth matrilineal origin and females\u2019 relatedness were independent from facial distance values meaning that highly resembling infants were not more likely to be found within the same matriline than lowly resembling infants nor were they the offspring of highly related females (e.g., \u201cinfant-infant\u201d data set: Pearson correlation between facial distance and mothers\u2019 relatedness: r=0.008, P=0.89; facial distance within same vs. different matriline, mean \u00b1 SD: 13.03\u00b12.12, N=56 pairs of infants vs. 13.21\u00b11.90, N=226 pairs of infants; and see Appendix 1).\n\nFinally, we ran a last similar GLMM as above to assess the same predictors of grooming frequency among mothers (calculated as the frequency of grooming exchanged between each dyad of mothers).\n\nWe standardized all continuous predictors to allow comparisons of the estimates and we preliminary checked that no significant first-order interaction occurred among all these explanatory variables (not shown) and kept full models as final models. In all these three GLMM, we further checked for possible hazardous multicollinearities between continuous predictors by calculating variances of inflation (VIF <2). For the two significant negative effects of facial-distance residuals, we excluded individuals one at a time and checked that there was no apparent error in the data for individuals most supporting the negative relationships. To validate the models, we finally verified that the magnitude of standardized residuals is independent of the fitted values.\n",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "67bfad2d-d8bc-4a3f-a8c4-6ed6b83c6eb0",
+      "submission_id": "fef1006f-3361-40a8-acf1-98ab03b6193d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ashleigh S Griffin, https://ror.org/052gg0110 University of Oxford United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79417.sa0](https://doi.org/10.7554/eLife.79417.sa0)\n\nThis study shows that, 60 years after the development of kin selection theory, new implications are still being uncovered. The authors report results of a long-term field study of a mandrill population in the forests of Gabon. Facial-pattern analyses and accompanying theoretical work support the hypothesis that females \"socially engineer\" relationships between their offspring and other offspring, based on facial resemblance. Via this mechanism, mothers appear to promote associations with individuals that are more likely to treat them as relatives, increasing the likelihood of future benefits from cooperative interactions. The authors suggest that their discovery could explain cooperative behaviours among non-kin in other social species, including humans.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Ashleigh S Griffin, https://ror.org/052gg0110 University of Oxford United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79417.sa1](https://doi.org/10.7554/eLife.79417.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Primate mothers promote proximity between their offspring and infants who look like them\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen Christian Rutz as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: James Higham (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this decision letter to help you prepare a revised submission. The reviewers were unanimous in identifying the need for more data to support the conclusions as stated. The decision to invite resubmission was marginal -- please carefully revise your article, to address the points raised below. We are planning to send out the revised article for re-evaluation.\n\nEssential revisions:\n\n1) The manuscript should be revised to more accurately report the level of support for the hypothesis of phenotype-matching by mothers to promote kin-selected cooperation towards offspring. The evidence in support of the single hypothesis is currently overstated. A more balanced article would be considerably toned down, with appropriate notes of caution about the evidence for the proposed mechanism, critical tests, and alternative explanations. What is the evidence for potential benefits from sib interactions?\n\n2) A revision should help readers assess the likelihood of alternative hypotheses: paternal sibs look alike and associate more with each other than expected, but to what extent can we attribute maternal behaviour to explain this?\n\nNote: Please note that eLife has adopted the STRANGE framework, to help improve reporting standards and reproducibility in animal behaviour research. In your revision, please consider scope for sampling biases and potential limitations to the generalisability of your findings:\n\nhttps://reviewer.elifesciences.org/author-guide/journal-policies\n\nhttps://doi.org/10.1038/d41586-020-01751-5\n\nReviewer #1 (Recommendations for the authors):\n\nThe paper is generally clear and well-written.\n\nLines 102-103: Please drop unnecessary acronyms: MHS and PHS. Seems designed purely to save having to type and they are confusing as 'S' of MHS refers to sisters, but 'S' of PHS refers to sibs.\n\nLine 115: Suggest a new paragraph to start from \"In Charmentier\u2026\"\n\nLines 142-143: Perhaps a little more context here would be helpful about the study population. For example, perhaps important to note that the group is semi-captive in the main text.\n\nFigure 1: My only significant difficulty is with interpreting Figure 2 -- the figure showing the main result. From the text from which it is referred to (lines 209 and 211), I'm looking for evidence of an association between females and offspring that look like their own offspring. None of the Y-axis categories seems to correspond to this group. The \"variable of interest\" is presented in pink as \"facial distance\". The legend was not helpful at all.\n\nReviewer #2 (Recommendations for the authors):\n\nSuggestions to improve the paper.\n\n1. The spatial proximity data are interesting but suggestive and preliminary. I would therefore recommend toning down the interpretation in places. For example, I think the subheading \"The driving role of mothers\" is too strong. You haven't shown this. Also, the second paragraph of the Conclusion seems to be arguing strongly that spatial proximity scores, as measured here, must convert into benefits in the longer term. That might be the case but not necessarily so; for example, there might be local competition effects.\n\n2. I wasn't clear why you did not analyse any other data to try to test your hypothesis. In line 570 you state \"Here, we exclusively studied association rates and no other social behavior such as grooming because scans were more numerous than any other behavioral records, and also because we reasoned that if mothers influence their offspring's social opportunities, this will mainly take the form of increased associations and not of an increased investment into potentially costly social behavior.\" I don't understand this reasoning. First, just because scans are more numerous is not a reason in itself to ignore other behavioural data. Were the other data too scant to be analysed? Did you analyse them, but not include them, because there was no pattern? A bit of transparency would be helpful here.\n\nSecond, it doesn't seem a good reason to not analyse something because you 'think' that's not the way second-order kin selection will work. For example, mothers might bring infants into proximity with each other, and they do the rest; or mothers might be more active in the process. Presumably, you don't know until you examine the data. So neither of these reasons for excluding information are good ones.\n\n3. In the second paragraph of the conclusion you state that \"a firm demonstration of the second condition [namely the occurrence of reciprocal interactions between the matched social partners] will necessitate years of detailed behavioural and demographic data and is beyond the scope of this paper\"; this seems a bit odd -- like you are trying to convince the reader that you haven't done any other tests because they would all take years. Are there really no other tests that could be done in a shorter time frame, or with the data you have?\n\n4. Finally, I wondered about other factors that might contribute to the enhanced facial similarity in PHS compared to MHS. If I have understood correctly, paternal half-sibs are offspring born to different mothers fathered by the same \u03b1, whereas maternal half-sibs would be born to the same mother with different fathers. This would seem to imply that PHS is clustered temporally together (within the tenure of the same \u03b1) whereas the MHS are necessarily spread out temporally (across two different \u03b1 male tenures). Is that the case, and can you rule out temporal clumping as a factor influencing patterns of variation in the data?\n\nReviewer #3 (Recommendations for the authors):\n\nI think that an appropriate reworking would present the manuscript differently, as a demonstration that paternal siblings look alike and that they associate. The authors could then go on to explore different possible explanations for this using their association data, make the case that maternal behavior is the most plausible (but not the only) explanation, and present their model of how such behavior could bring fitness benefits. In my view, such a paper would be publishable, but the current presentation is problematic.\n",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6e068be3-696e-4d9a-8975-6bc8dd989ef6",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C1",
+      "claim": "Kin selection is an evolutionary process promoting traits that provide fitness benefits for genetic relatives of individuals expressing them.",
+      "claim_type": "EXPLICIT",
+      "source": "Kin selection is an evolutionary process promoting traits that provide fitness benefits for genetic relatives of individuals expressing them (Hamilton, 1964).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hamilton, 1964, which is foundational work on kin selection theory.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "328d8173-78de-47c6-b301-fb8f79251ded",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C2",
+      "claim": "Empirical observations of diverse interactions arising from kin selection have been pervasively reported in natura and constitute the foundations of many studies on social evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Empirical observations of diverse interactions arising from kin selection have been pervasively reported in natura and constitute the foundations of many studies on social evolution (Clutton-Brock, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Clutton-Brock, 2002, which reviews empirical evidence for kin selection.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "d3a9cfff-61f0-4da2-aeac-b3775af78d2d",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C3",
+      "claim": "Kin selection sometimes necessitates kin recognition, which can operate through phenotype matching.",
+      "claim_type": "EXPLICIT",
+      "source": "Kin selection sometimes necessitates kin recognition, which can operate through phenotype matching (Penn and Frommen, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Penn and Frommen, 2010, which discusses phenotype matching mechanisms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "bb2e56ef-540a-436f-ba22-f19c5162560e",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C4",
+      "claim": "Phenotype matching allows individuals to recognize kin based on phenotypic resemblance either with self or with other kin used as templates.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism, based on learning processes of, for example, odors, sounds, or visual cues, allows individuals to recognize kin based on phenotypic resemblance either with self ('self-referent phenotype matching' Hauber and Sherman, 2001; Mateo and Johnston, 2003) or with other kin used as templates (Sherman et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations describing self-referent phenotype matching and template-based recognition.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "9361cdb7-1b07-45f6-82f0-70a874a62368",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C5",
+      "claim": "Self-referent phenotype matching requires individuals to evaluate their own phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Self-referent phenotype matching requires individuals to evaluate their own phenotype (e.g. through smell in rodents Mateo and Johnston, 2003; Mateo, 2010), which may be challenging in some situations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to studies on rodent self-evaluation through smell.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "be6a9bc1-2c9c-4356-9972-bb73c3747080",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C6",
+      "claim": "Face recognition is a crucial prerequisite for visual communication and therefore for the maintenance of social relationships in many species.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, although face recognition is a crucial prerequisite for visual communication and therefore for the maintenance of social relationships in many species (Sheehan and Tibbetts, 2011), including our own lineage (e.g. Alvergne et al., 2009; DeBruine et al., 2008; Parr, 2011; Sheehan and Nachman, 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations across species including humans.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "374bad8b-aaec-40eb-9d27-9c0e671464a9",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C7",
+      "claim": "In natural contexts, animals other than humans have probably limited access to cues regarding their own facial traits.",
+      "claim_type": "EXPLICIT",
+      "source": "in natural contexts, animals other than humans have probably limited access to cues regarding their own facial traits (but see Hauber and Sherman, 2001; Hauser et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference about environmental constraints, with citations to exceptions.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "3ca85039-6248-4c77-9f26-b1ac2fec5fa6",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C8",
+      "claim": "Using familiar kin as templates to recognize unfamiliar kin requires particular conditions, including the presence of relatives during template formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Using familiar kin as templates to recognize unfamiliar kin also requires particular conditions, including the presence of relatives during template formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference about the requirements for template-based recognition.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "96bf5d92-6397-42c0-b6af-02c389d0c51a",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C9",
+      "claim": "Template-based kin recognition has been rarely demonstrated in the wild.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism has been rarely demonstrated in the wild (but see Levr\u00e9ro et al., 2015 and Holmes, 1986; Mateo, 2003 for lab studies).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to rare examples in wild and lab settings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "e316ad95-8581-43ec-8a56-4dd77bbc7e19",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C10",
+      "claim": "Mandrills are non-human primates from Central Africa that live in large matrilineal societies.",
+      "claim_type": "EXPLICIT",
+      "source": "Mandrills are non-human primates from Central Africa that live in large matrilineal societies, characterized by family units of philopatric, maternally-related and highly nepotistic females.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Descriptive statement about mandrill social structure based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "e78a1de0-437d-4234-920c-9a297f953c3d",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C11",
+      "claim": "In mandrills, males are the dispersing sex and are only temporary residents in groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Males, the dispersing sex, are only temporary residents in these groups",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Descriptive statement about mandrill male behavior based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "97bdb509-23d6-47a2-bffa-67da4c73a434",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C12",
+      "claim": "In mandrills, the highest-ranking male sires a large proportion of infants born into different matrilines each year.",
+      "claim_type": "EXPLICIT",
+      "source": "the highest-ranking male sires a large proportion of infants born into different matrilines each year (Charpentier et al., 2005; Charpentier et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies on mandrill reproductive patterns.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "f3918ae3-30ef-4276-83b1-36085a9b1be8",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C13",
+      "claim": "In mandrills, both maternal and paternal half-sibs associate, groom, and aggress each other more compared to non-kin, as early as juvenility.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, both maternal and paternal half-sibs associate, groom, but also aggress each other more compared to non-kin, as early as juvenility (Charpentier et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study on mandrill social behavior.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "615b7f06-0234-4e8b-8b9c-b3527905220e",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C14",
+      "claim": "In mandrills, kin bias in social behavior extends until adulthood, at least among philopatric female mandrills.",
+      "claim_type": "EXPLICIT",
+      "source": "and this kin bias extends until adulthood, at least among the philopatric female mandrills (Charpentier et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "b90a30c9-093e-455a-95db-5c3ee861ba3c",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C15",
+      "claim": "Unfamiliar kin in mandrills recognize each other using phenotype matching based on acoustic cues.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we have further demonstrated that unfamiliar kin recognize each other using phenotype matching based on acoustic (Levr\u00e9ro et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study on acoustic recognition.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "1102ec13-0740-4ab1-a057-60dcfe890c97",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C16",
+      "claim": "Unfamiliar kin in mandrills possibly recognize each other using phenotype matching based on visual cues.",
+      "claim_type": "EXPLICIT",
+      "source": "and possibly visual cues (Charpentier et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study, though stated as possible rather than definitive.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "f40ad8a1-51d4-4b6a-9b18-474b84b99b46",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C17",
+      "claim": "In mandrills, facial resemblance correlates positively with genetic relatedness across female mandrills.",
+      "claim_type": "EXPLICIT",
+      "source": "and that facial resemblance correlates positively with genetic relatedness across female mandrills (Charpentier et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "a121b9d6-7798-4e93-bb29-2ecb483945d8",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C18",
+      "claim": "In mandrills, paternal half-sisters resemble each other visually more than maternal half-sisters do.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, paternal half-sisters resemble each other visually more than maternal half-sisters do (Charpentier et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "e5eea79c-1e4a-456e-9f8b-0221df04dd83",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C19",
+      "claim": "In mandrills, paternal half-sisters and maternal half-sisters share, on average, similar degrees of genetic relatedness (r~0.25).",
+      "claim_type": "EXPLICIT",
+      "source": "even though both kin categories share, on average, similar degrees of genetic relatedness (r~0.25; and see Appendix 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on genetic theory and supported by reference to appendix.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "dff8ba24-efbe-49eb-8ae3-21495edbeca8",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C20",
+      "claim": "Heightened facial resemblance among paternal half-sisters compared to maternal half-sisters indicates adaptive opportunities for paternal kin recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "This heightened facial resemblance among paternal half-sisters compared to maternal half-sisters, possibly resulting from genomic imprinting processes (Haig, 2002; Moore and Haig, 1991), indicates adaptive opportunities for paternal kin recognition, necessarily mediated by phenotype matching mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the observed pattern, with citations to genomic imprinting theory.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "d50a1964-f1a7-4613-a271-3ee6ef67612e",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C21",
+      "claim": "Using self-referent phenotype matching to discriminate paternal half-sibs appears unrealistic in wild mandrills because of environmental constraints.",
+      "claim_type": "EXPLICIT",
+      "source": "Using self-referent phenotype matching to discriminate paternal half-sibs appears, however, unrealistic in wild mandrills because of environmental constraints (no physical medium to allow facial self-recognition).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference about environmental constraints in the wild.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "6728a76f-0151-4201-98b0-ccc3025bbfe9",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C22",
+      "claim": "Using the father's face as a template is unlikely in mandrills because of the highly pronounced sexual dimorphism and morphological differences between adults and immatures.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the father's face as a template is also unlikely in mandrills because of the highly pronounced sexual dimorphism and morphological differences between adults and immatures in this species (infants do not resemble their father: Appendix 1\u2014figure 1 and Appendix 1\u2014table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on inference about morphological constraints, supported by data in appendix figures and tables.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "7ebcfaa9-3652-411c-87a5-86c632e11600",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C23",
+      "claim": "In mandrills, the first year of life represents a developmental stage where infants are still under strong maternal control.",
+      "claim_type": "EXPLICIT",
+      "source": "First, in nonhuman primates, the first year of life represents a developmental stage where infants are still under strong maternal control (Maestripieri, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to primate developmental literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "dc027f50-3fcc-4de4-8dba-95b16edb2910",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C24",
+      "claim": "In mandrills, the average difference in facial resemblance among paternal half-sisters compared to maternal half-sisters or non-kin was higher during juvenility (2\u20134 yrs) than during adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the average difference in facial resemblance among paternal half-sisters compared to maternal half-sisters or non-kin was higher during juvenility (2\u20134 yrs) than during adulthood (Charpentier et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "1fd4eaad-0902-4ff6-8d3c-1632a1f8ab4e",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C25",
+      "claim": "In mandrills, cues of paternity are present and particularly pronounced early in life.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that cues of paternity are present, and particularly pronounced, early in life.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the pattern of facial resemblance differences across age classes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "450059ad-71ad-4992-942c-06c3e835313d",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C26",
+      "claim": "In mandrills, mothers and their offspring both associate more with similar-looking other infants.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we provide empirical evidence that mothers and their offspring both associate more with similar-looking other infants",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as empirical evidence from this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "5cbc0fc6-dd65-46f1-9667-6667f9b5853b",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C27",
+      "claim": "In mandrills, similar-looking infants are more likely than expected by chance to be paternal half-sibs.",
+      "claim_type": "EXPLICIT",
+      "source": "who are more likely than expected by chance to be their offsprings' paternal half-sibs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on data analysis showing association between facial resemblance and paternal relatedness.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "7dc6618b-67c5-4314-a6ed-42f12e3d258c",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C28",
+      "claim": "Maternal behavior promoting association with similar-looking infants cannot be explained as a standard form of kin selection because paternal kin only share paternal genes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, because paternal kin only share paternal genes, this maternal behavior cannot be explained as a standard form of kin selection, which requires relatedness between an actor (here the mother) and a non-descendant recipient (here the similar-looking infant).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference about the requirements of standard kin selection theory.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "956135d8-3d16-432f-9d56-180109ac7212",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C29",
+      "claim": "Mothers may gain fitness benefits from favoring nepotism between their own offspring and their offsprings' paternal half-sibs.",
+      "claim_type": "EXPLICIT",
+      "source": "we formally demonstrate an evolutionary mechanism by which mothers may gain fitness benefits from favoring nepotism between their own offspring and their offsprings' paternal half-sibs, as infants themselves benefit from interacting repeatedly with kin, following predictions of the kin selection theory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through theoretical modeling presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "ec987fca-2712-4daf-8058-f11571aa58bc",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C30",
+      "claim": "Second-order kin selection fits into the mathematical framework offered by inclusive fitness theory.",
+      "claim_type": "EXPLICIT",
+      "source": "While it is a novel explanation for the evolution of nepotism, second-order kin selection perfectly fits into the mathematical framework offered by inclusive fitness theory (Gardner et al., 2011; Hamilton, 1964).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on theoretical analysis with citations to inclusive fitness theory.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "2b4de9d6-73e4-4a34-ba4c-ae3451d27616",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C31",
+      "claim": "During infancy in mandrills, paternal half-sibs resemble each other more than maternal half-sibs and non-kin do.",
+      "claim_type": "EXPLICIT",
+      "source": "We first show that, during infancy, paternal half-sibs resemble each other more than maternal half-sibs and non-kin do.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from this study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "69364078-d914-4a49-bc2b-b3fd0578f3e9",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C32",
+      "claim": "VGG-Face was retrained to recognize 112 individual mandrills from their face using approximately 12k training pictures.",
+      "claim_type": "EXPLICIT",
+      "source": "We retrained VGG-Face, a popular algorithm for human face recognition, to recognize 112 individual mandrills from their face, independently of their position, lighting or facial expression, using approximately 12 k training pictures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the methods used in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "5f6a83fe-4ef2-46ec-9a82-b7443d90cb4e",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C33",
+      "claim": "The retrained model was used to predict facial distance among 80 individually recognized infants represented by 204 new pictures.",
+      "claim_type": "EXPLICIT",
+      "source": "We used this retrained model to predict facial distance (calculated within the encoding space of the model, see Materials and methods) among 80 individually recognized infants (0\u20131 yr) of both sexes (39 females, 41 males), represented by a total of 204 new pictures (1\u201310 pictures/infant), not used for training the model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the methods and data used in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "9fcca62c-bd85-488a-8b17-cc23c43791b4",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C34",
+      "claim": "Maternal identity was known for all 80 infants based on direct observations.",
+      "claim_type": "EXPLICIT",
+      "source": "Maternal identity was known for all 80 infants based on direct observations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data collection methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "433bbee8-c672-49ad-b63c-9daad8659935",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C35",
+      "claim": "Paternal identity was determined genetically for 32 of the 80 infants.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to field constraints, paternal identity was determined genetically for only 32 infants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data collection methods and constraints.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "452c6f12-7a87-4782-916e-a9d7a6bc5696",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C36",
+      "claim": "In mandrills, reproductive skew is high, with alpha males monopolizing 60\u201370% of all conceptions.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, reproductive skew in mandrills is high, with alpha males monopolizing 60\u201370% of all conceptions (Charpentier et al., 2005; Charpentier et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies on mandrill reproductive patterns.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "b754a92b-bdc2-4baf-8481-d17f1ce9bf35",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C37",
+      "claim": "Infants born during the tenures of different alpha males are most likely not paternally related.",
+      "claim_type": "EXPLICIT",
+      "source": "While infants born during the tenures of 'different alpha males' are thus most likely not paternally related",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the high reproductive skew of alpha males.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "8ec50f2f-0413-4a53-bd15-4bf0866f843d",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C38",
+      "claim": "Infants born during the tenure of the same alpha male presumably include a large proportion of paternal half-sibs.",
+      "claim_type": "EXPLICIT",
+      "source": "those born during the tenure of the 'same alpha male' presumably include a large proportion of paternal half-sibs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the high reproductive skew of alpha males.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "4408aee0-a841-412e-8949-9609f77a85ab",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C39",
+      "claim": "Paternal half-sibs resemble each other facially more than any other dyads of infants.",
+      "claim_type": "EXPLICIT",
+      "source": "we found that paternal half-sibs resemble each other facially more than any other dyads of infants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on linear mixed model analysis of facial distance data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "b455838b-5b71-4285-a789-cdebcfad3502",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C40",
+      "claim": "Paternal half-sibs and those conceived during the tenure of the same alpha male resemble each other significantly more than those sired by two different fathers or conceived during the tenures of two different alpha males.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, these paternal half-sibs, but also those conceived during the tenure of the same alpha male, resemble each other significantly more (lower average facial distance; Figure 1, Table 1) than those sired by two different fathers or conceived during the tenures of two different alpha males (higher average facial distance).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on statistical analysis with results shown in Figure 1 and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "c370c139-8e07-4a77-94ff-17948bc4dd2e",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C41",
+      "claim": "At young ages in mandrills, maternal half-sibs do not look more alike than infants born to different mothers.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, at these young ages, maternal half-sibs do not look more alike than infants born to different mothers (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on statistical analysis with results shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "eb783090-dac1-4421-b9f4-a6739face9aa",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C42",
+      "claim": "Mothers are spatially closer to infants that resemble their own offspring more.",
+      "claim_type": "EXPLICIT",
+      "source": "we then show, as predicted, that mothers are spatially closer to infants that resemble their own offspring more",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on behavioral observation data and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "a880470e-32de-4d10-b843-0045e0a4e50f",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C43",
+      "claim": "Maternal behavior leads to similar-looking infants being spatially associated.",
+      "claim_type": "EXPLICIT",
+      "source": "and that this maternal behavior leads to similar-looking infants being spatially associated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on behavioral observation data and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "e53c7866-22fc-43de-9c2e-dd1950d01aec",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C44",
+      "claim": "Mothers associate significantly more with infants that look like their own infants compared to infants that do not.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that mothers associate significantly more with infants that look like their own infants compared to infants that do not (Figure 2, Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on GLMM analysis with results shown in Figure 2 and Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "2e4c60a2-8b29-4414-af34-ac50f8eb3ff9",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C45",
+      "claim": "Infants associate significantly more with other infants that look more like them.",
+      "claim_type": "EXPLICIT",
+      "source": "Infants also associate significantly more with other infants that look more like them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on GLMM analysis of spatial association data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "8c9bd6c7-d82f-49a4-8099-729a0d7e6ad2",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C46",
+      "claim": "Associations among mothers are not influenced by the average facial distance of their offspring.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, associations among mothers are not influenced by the average facial distance of their offspring (Figure 2, Table 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on GLMM analysis with results shown in Figure 2 and Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "501f6003-9152-48e4-8b36-d7548fd4f78e",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C47",
+      "claim": "Mother-infant and infant-infant association patterns do not emerge as by-products of mother-mother association patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "This last result suggests that mother-infant and infant-infant association patterns do not emerge as by-products of mother-mother association patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the lack of association between mother-mother proximity and offspring facial resemblance.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "8ac4b22b-0361-47f4-8b2f-755b21a55fb3",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C48",
+      "claim": "Pre-existing friendships among mothers, or among these mothers and a common father, are unlikely to explain the relationships observed between mother-infant and infant-infant dyads.",
+      "claim_type": "EXPLICIT",
+      "source": "Pre-existing friendships among mothers, or among these mothers and a common father (Appendix 1\u2014table 1), are thus unlikely to explain the relationships observed between mother-infant and infant-infant dyads.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the pattern of results and supported by data in appendix.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "7fc42f40-e47c-4729-b323-591bac6ca3f9",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C49",
+      "claim": "Grooming relationships among mothers are not related to facial resemblance of their offspring.",
+      "claim_type": "EXPLICIT",
+      "source": "As for spatial associations, grooming relationships among mothers are not related to facial resemblance of their offspring (LRT, \u03c72=1.71, p=0.19).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on statistical analysis of grooming data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "1e560c2c-d0a0-4d8b-8f26-7a372b192512",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C50",
+      "claim": "In mandrills, infants never groom each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar models on infant-infant and mother-infant grooming relationships were not performed because infants never groom each other",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on observational data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "d4050c22-8f28-4143-999f-3d7cc01702d2",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C51",
+      "claim": "Of 560 mother-infant dyads, only 6 were observed grooming each other during the course of this study.",
+      "claim_type": "EXPLICIT",
+      "source": "and, of a total of 560 mother-infant dyads, only 6 were observed grooming each other during the course of this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on observational data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "d2eb5075-3b2f-47c4-9842-1fed34f5ddf2",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C52",
+      "claim": "Mothers probably bring infants into proximity to each other but do not invest into other social behaviors such as grooming.",
+      "claim_type": "EXPLICIT",
+      "source": "An important implication of this last observation is that mothers probably bring infants into proximity to each other but do not invest into other social behaviors such as grooming (i.e. infants 'do the rest').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the pattern of spatial association without corresponding grooming behavior.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "59c492f3-6413-4490-bd66-401c045ad3b5",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C53",
+      "claim": "In mandrills, infants follow their mothers in 97.6% of follow events.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that infants follow and approach their mothers in 97.6% and 89.4% of these events, respectively (follow: N=2,387 total events recorded on 139 mother-infant dyads; approach: N=4,482 total events recorded on 155 mother-infant dyads).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on behavioral observation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "3dd89230-aac4-45bc-ab93-38ac84115484",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C54",
+      "claim": "In mandrills, infants approach their mothers in 89.4% of approach events.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that infants follow and approach their mothers in 97.6% and 89.4% of these events, respectively (follow: N=2,387 total events recorded on 139 mother-infant dyads; approach: N=4,482 total events recorded on 155 mother-infant dyads).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on behavioral observation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "50d6db57-34ef-4710-85ab-3198be2360b1",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C55",
+      "claim": "In the vast majority of cases, infants go where their mothers are or go.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, in the vast majority of cases, infants go, indeed, where their mothers are or go.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the high percentage of infant-initiated follows and approaches.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "df1e6635-1c0a-4cbb-93f9-71af367ee958",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C56",
+      "claim": "71% of the variance in infant-infant associations is explained by the average mother-infant association.",
+      "claim_type": "EXPLICIT",
+      "source": "71% of the variance in infant-infant associations is explained by the average mother-infant association (and vice-versa; Pearson correlation test: r=0.85, p<0.0001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on correlation analysis of association data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "598739cb-ffd1-4ae2-9049-14938b8ad8aa",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C57",
+      "claim": "Mothers are responsible for the increased association observed among infants that depends on several factors, including infants' facial resemblance.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these correlational results support the hypothesis that mothers are responsible for the increased association observed among infants that depends on several factors, including infants' facial resemblance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from multiple lines of correlational evidence.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "872e4f71-a0ea-4ed1-949c-308da9bbebb8",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C58",
+      "claim": "In mammals, from rodents to humans, mothers often show some form of control over social opportunities and preferences of their offspring.",
+      "claim_type": "EXPLICIT",
+      "source": "In other mammals, from rodents to humans, mothers often show some form of control over social opportunities and preferences of their offspring, and maternal behavior may impact both their infants' neural and social development (Rilling and Young, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to review of maternal behavior across mammals.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "d8f5f55b-d895-4bcd-b7de-acc1d55e7ab1",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C59",
+      "claim": "In chimpanzees, mothers with sons are more gregarious and associate more with adult males than mothers with daughters.",
+      "claim_type": "EXPLICIT",
+      "source": "In chimpanzees, mothers with sons are more gregarious and associate more with adult males than mothers with daughters, thereby shaping their sons' social trajectories (Murray et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to study on chimpanzee maternal behavior.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "a7b9b46b-c626-4e70-9772-cf4babfe1604",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C60",
+      "claim": "In mandrills, females mate with several males around ovulation.",
+      "claim_type": "EXPLICIT",
+      "source": "To care for their own offspring, mandrill fathers need some form of paternity certainty because females mate with several males around ovulation (Setchell, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to study on mandrill mating behavior.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "9595aa01-6124-4a1b-ac8f-18066e659a69",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C61",
+      "claim": "In some promiscuous species, true paternal care has been unambiguously demonstrated.",
+      "claim_type": "EXPLICIT",
+      "source": "In some other promiscuous species, true paternal care has been unambiguously demonstrated: male baboons, for example, selectively support their own offspring in agonistic disputes (Buchan et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to study on baboon paternal care.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "aead3569-68f8-4d0d-907a-2e1d0355184f",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C62",
+      "claim": "In mandrills, paternal care is elusive: males neither carry infants nor do they groom or affiliate with them.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to male baboons, however, paternal care in mandrills is elusive: males neither carry infants nor do they groom or affiliate with them (MJEC pers. obs.)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on personal observations by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "8c1b32f7-d2b4-4fbf-8df5-b8b16b7a2ac3",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C63",
+      "claim": "In captivity, male mandrills are spatially closer to their own juvenile offspring than to unrelated juveniles of similar age.",
+      "claim_type": "EXPLICIT",
+      "source": "even though in captivity, males are spatially closer to their own juvenile offspring than to unrelated juveniles of similar age (Charpentier et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study on captive mandrills.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "82b4bd63-8186-40cb-8aab-f9c71ddffeea",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C64",
+      "claim": "In the natural mandrill population studied, males are mainly present during the short breeding season.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, males are mainly present during the short breeding season, although some males remain in the group from a few days to a few months (Brockmeyer et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to study on male residency patterns.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "5c192106-13c5-4c4d-b00a-07fc75f007d5",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C65",
+      "claim": "Among 69 male.years observed, only 44.7% and 54.5% of males that were present during a given reproductive season remained in the study group until the next birth season.",
+      "claim_type": "EXPLICIT",
+      "source": "Among 69 male.years (N=29 different subordinate and dominant males) observed throughout 8 reproductive seasons, only 44.7% and 54.5% of males, respectively, that were present during a given reproductive season remained in the study group until the next birth season.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on observational data from the long-term study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "d65aa65c-351d-43a2-929e-1aaf42421d45",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C66",
+      "claim": "Opportunities for fathers to personally care for their infants occur statistically only half of the time in the studied mandrill population.",
+      "claim_type": "EXPLICIT",
+      "source": "Opportunities for fathers to personally care for their infants therefore occur statistically only half of the time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the male residency data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "d34c76e7-5f0b-450c-8b72-2c2bd9f26087",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C67",
+      "claim": "Males that were present during a given reproductive cycle are probably not responsible for maintaining proximity with either infants or their mothers.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, those males that were present during a given reproductive cycle are probably not responsible for maintaining proximity with either infants or their mothers (MJEC and BRT, pers. obs.)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on personal observations by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "05b92ffe-09e8-48f8-8fff-a073a34553d3",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C68",
+      "claim": "The most plausible interpretation of heightened facial resemblance among paternally related mandrills is that this resemblance has been selected to allow mothers to foster interactions between their offspring and their offspring's paternal relatives.",
+      "claim_type": "EXPLICIT",
+      "source": "Given mandrills' biology, and based on the analytical evidence shown here, we propose that the most plausible interpretation of the heightened facial resemblance observed among paternally related individuals, from infancy to adulthood (Charpentier et al., 2020), is that this resemblance has been selected to allow mothers to foster interactions between their offspring and their offspring's paternal relatives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from multiple lines of evidence including behavioral data, theoretical modeling, and natural history.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "6b223d1f-42f8-412f-a262-e15ee5f0632a",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C69",
+      "claim": "Two critical conditions of second-order kin selection are the ability to predict relatedness between assorted individuals and the occurrence of reciprocal interactions between the matched social partners.",
+      "claim_type": "EXPLICIT",
+      "source": "Two critical conditions of this process are the ability to predict relatedness between assorted individuals (here by phenotype matching) and the occurrence of reciprocal interactions between the matched social partners.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from the theoretical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "c1a2f10c-c166-4431-911a-d254ff6e1b0d",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C70",
+      "claim": "Cues of relatedness are present in mandrills' face at all ages.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we have both shown that cues of relatedness are present in mandrills' face at all ages",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on data from this study and previous studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "66003134-ba11-456a-8803-9cd56f747dfd",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C71",
+      "claim": "Cues of relatedness in mandrills' faces are likely used by mothers who modify their behavior accordingly.",
+      "claim_type": "EXPLICIT",
+      "source": "and that these cues are likely used by mothers (although we do not assume this process to be conscious) who modify their behavior (here, spatial association) accordingly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the correlation between facial resemblance and maternal association patterns.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "c8b1b4e7-0dc6-4b8d-b998-3b729cad422f",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C72",
+      "claim": "Reciprocal interactions among kin have been well demonstrated in other species.",
+      "claim_type": "EXPLICIT",
+      "source": "However, reciprocal interactions among kin have been well demonstrated in other species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge from other species.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "6df48f41-6750-4152-951f-c963cb090a3c",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C73",
+      "claim": "Female baboons form the most enduring and reciprocal social bonds with their close kin.",
+      "claim_type": "EXPLICIT",
+      "source": "Females baboons, for example, form the most enduring and reciprocal social bonds with their close kin (Silk et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to study on baboon social bonds.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "efd72efb-d79c-49ac-bb0a-d7071599d870",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C74",
+      "claim": "Social integration is one of the strongest predictors of health and longevity in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, social integration is one of the strongest predictors of health and longevity in humans (Holt-Lunstad et al., 2010; Stringhini et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to studies on human health and social integration.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "e03f258c-d828-4a2c-bc7c-06225907ac6f",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C75",
+      "claim": "The relationship between social integration and fitness is observed in many social mammals with effect sizes of strikingly high amplitudes.",
+      "claim_type": "EXPLICIT",
+      "source": "This conspicuous relationship is also observed in many social mammals \u2013 with effect sizes of strikingly high amplitudes (Snyder-Mackler et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to review of social effects on fitness in mammals.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "e13b87fb-4b88-4300-bc94-15d1756e547f",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C76",
+      "claim": "In all mammalian orders, individuals that are poorly socially integrated display considerably shorter life spans and decreased reproductive success than individuals enjoying a rich social life.",
+      "claim_type": "EXPLICIT",
+      "source": "In all mammalian orders, individuals that are poorly socially integrated display considerably shorter life spans and decreased reproductive success than individuals enjoying a rich social life (Silk et al., 2010; Barocas et al., 2011; Stanton et al., 2012; Archie et al., 2014; Vander Wal et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to studies across mammalian taxa.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "52f182f8-356d-4371-842f-306ae90b4cd5",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C77",
+      "claim": "In semi-free ranging mandrills, females who are more socially integrated give birth on average a year before females that are less socially integrated.",
+      "claim_type": "EXPLICIT",
+      "source": "In semi-free ranging mandrills, notably, affiliation and grooming exchanged during juvenility translate into reproductive benefits in females in adulthood: females who are more socially integrated give birth on average a year before females that are less socially integrated (Charpentier et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study on mandrill reproductive success.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "a1574ddd-734c-449b-9339-8db4e7c2dc8f",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C78",
+      "claim": "Cooperation among non-genetically related in-laws (affinal kin) in humans fits into the second-order kin selection model.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, cooperation among non-genetically related in-laws (affinal kin), often reported in humans (Alvard, 2009; Koster, 2018; Salali et al., 2016), fits into this selection model because affinal kin or spouses may share genetic interests in the next generation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the theoretical model with citations to studies on human cooperation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "7c162833-e80c-44a0-a3c2-fc3df8bf9fa5",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C79",
+      "claim": "The generality of second-order kin selection in nonhuman animals will depend on the taxonomic distribution of reciprocal interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "In nonhuman animals, the generality of this process will depend on the taxonomic distribution of reciprocal interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on speculation about the applicability of the mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "209292c8-f021-4742-a715-43cd006e5a22",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C80",
+      "claim": "Modulating factors for second-order kin selection involve the variance in male parenting, conditions that matched individuals are unable to perform recognition themselves, and the opportunity for control of assortment of relatives.",
+      "claim_type": "EXPLICIT",
+      "source": "Other modulating factors involve the variance in male parenting, which influences the benefits for a kin recognition mechanism, the conditions that the matched individuals are unable to perform this recognition themselves, and the opportunity for control of assortment of relatives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the theoretical model about conditions favoring the mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "d9aa1258-78cf-486b-8256-648fb5d13f29",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C81",
+      "claim": "Several conditions favoring second-order kin selection may be widespread in animal societies.",
+      "claim_type": "EXPLICIT",
+      "source": "Several of these conditions may be widespread in animal societies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on speculation about the prevalence of favorable conditions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "7ddb7c49-381a-4207-bf95-c7d23ab1ada5",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C82",
+      "claim": "Mothers guide their offspring's social development in many social mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the opportunity for control of kin assortment may be the most restrictive condition, mothers guide their offspring's social development in many social mammals (Maestripieri, 2018; Rilling and Young, 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to reviews of maternal behavior in mammals.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "0cd65e04-530b-4057-b05d-5ee5634064cf",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C83",
+      "claim": "Conditions leading to direct selection for assortment of related offspring could operate in various forms of cooperative breeding or nest parasitism in birds.",
+      "claim_type": "EXPLICIT",
+      "source": "and other conditions similarly leading to direct selection for assortment of related offspring could operate elsewhere, such as in the various forms of cooperative breeding or nest parasitism in birds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on speculation about potential applications of the mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "4f9200d2-e4c7-4ed5-bfbe-b1daf12cab91",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C84",
+      "claim": "State-of-the-art artificial intelligence algorithms combined with long-term field data can help unravelling adaptive details of social complexity.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, our study highlights how state-of-the-art artificial intelligence algorithms combined with long-term field data can help unravelling adaptive details of social complexity that would otherwise go completely unnoticed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on reflection on the methodological approach used in this study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "41e0908f-0aab-4256-a9b6-8bd03b60df22",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C85",
+      "claim": "The study population originated from 65 individuals that initially lived in a semi-free ranging population at CIRMF and were released into a protected area on two occasions (2002 and 2006).",
+      "claim_type": "EXPLICIT",
+      "source": "This group originated from 65 individuals that initially lived in a semi-free ranging population housed at CIRMF (Centre International de Recherches M\u00e9dicales de Franceville, Gabon) and released on two occasions into the protected area (2002 and 2006 Peignot et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the study population history with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "075b7463-ff3b-441c-94ab-5a34d9268195",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C86",
+      "claim": "Captive-born females in the study population reproduced with wild immigrant males starting the first year post-release.",
+      "claim_type": "EXPLICIT",
+      "source": "Captive-born females reproduced with wild immigrant males starting the first year post-release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the study population history.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "d6d0df70-5297-45a3-ae2a-92399d9127ab",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C87",
+      "claim": "In 2020, the study group was composed of ca. 250 individuals of both sexes and all ages.",
+      "claim_type": "EXPLICIT",
+      "source": "In 2020, the group was composed of ca. 250 individuals of both sexes and all ages",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the study population at the time of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "32d09eec-1143-408f-8991-1f95f97a0971",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C88",
+      "claim": "About 200 individuals in the study group are individually known and monitored on a daily basis.",
+      "claim_type": "EXPLICIT",
+      "source": "about 200 of them being individually known and monitored on a daily basis",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the study population monitoring.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "3a592d1f-09a8-4ba5-86dc-c3b92c736c77",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C89",
+      "claim": "The remaining 7 captive-born adult females represented less than 3% of the animals studied for this project.",
+      "claim_type": "EXPLICIT",
+      "source": "the remaining 7 captive-born adult females represented less than 3% of the animals studied for this project.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the study population composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "f6d672ed-16f4-41a4-9196-e7acc7e405d7",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C90",
+      "claim": "The mandrill face database includes ~16k images representing 276 different mandrills.",
+      "claim_type": "EXPLICIT",
+      "source": "The mandrill face database includes ~16 k images representing 276 different mandrills originating from the study natural population (12.9 k images), a semi-captive population housed at CIRMF (Centre International de Recherches M\u00e9dicales de Franceville, Gabon; 2.7 k images) and other sources (the Internet, the Wildlife Reserves of Singapore, Zoo of Grandy; 0.4 k images).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the image database used for training.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "9c0b6b02-c559-4055-bdbd-cc88ec18788c",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C91",
+      "claim": "VGG-Mandrill was able to identify mandrill faces individually with a maximal accuracy of 93.42%.",
+      "claim_type": "EXPLICIT",
+      "source": "Eventually, after approximately 15 epochs, VGG-Mandrill was able to identify mandrill faces individually with a maximal accuracy of 93.42% (sem:\u00b10.13), and high generalization capacity (i.e. limited overfitting; Appendix 1\u2014figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on model performance evaluation with results shown in appendix.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "d6254ca7-4575-4c22-bd7e-1459114e72bd",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C92",
+      "claim": "The classifier could verify mandrill identity from their face with an accuracy of 86.87%.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the classifier could verify mandrill identity from their face with an accuracy of 86.87% (sem: \u00b10.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on SVM classifier performance evaluation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "336dd508-4330-40c0-a19d-115d80bc88b8",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C93",
+      "claim": "Since 2012, 9,305 scans were obtained from 48 infants and their 30 mothers during their offspring's first year of life.",
+      "claim_type": "EXPLICIT",
+      "source": "Since 2012, we obtained 9,305 scans from 48 infants and their 30 mothers during their offspring's first year of life (mean \u00b1 SD: 124.1\u00b1178.3 scans per individual).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the behavioral observation data collected.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "44a8c711-7fe9-4123-854f-ddbc3ecc7783",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C94",
+      "claim": "Matrilineal identity was determined for all 80 studied infants thanks to detailed data on births and pedigree information.",
+      "claim_type": "EXPLICIT",
+      "source": "Matrilineal identity was determined for all of them, including those 48 infants and associated 30 mothers used in the proximity analyses, thanks to detailed data on births and pedigree information available since the beginning of the project (Charpentier et al., 2020) and at CIRMF (Charpentier et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of how matrilineal identity was determined with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "19e3d60e-5bc4-4683-b377-d25e8e02eabf",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C95",
+      "claim": "Relatedness across the 285 different pairs of mothers varies from 0.01 to 0.66 (mean \u00b1 SD: 0.13\u00b10.12).",
+      "claim_type": "EXPLICIT",
+      "source": "Relatedness across the 285 different pairs of mothers vary from 0.01 to 0.66 (mean \u00b1 SD: 0.13\u00b10.12).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the genetic relatedness data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "fb58e7cf-dd48-47a8-9d9b-8727942a9962",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C96",
+      "claim": "Matrilineal origin and females' relatedness were independent from facial distance values.",
+      "claim_type": "EXPLICIT",
+      "source": "Both matrilineal origin and females' relatedness were independent from facial distance values meaning that highly resembling infants were not more likely to be found within the same matriline than lowly resembling infants nor were they the offspring of highly related females (e.g., \"infant-infant\" data set: Pearson correlation between facial distance and mothers' relatedness: r=0.008, P=0.89; facial distance within same vs. different matriline, mean \u00b1 SD: 13.03\u00b12.12, N=56 pairs of infants vs. 13.21\u00b11.90, N=226 pairs of infants; and see Appendix 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on statistical analysis showing no correlation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "70cac6ea-08ff-4f0a-9c00-be3d887a9e40",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C97",
+      "claim": "Selection on an allele affecting the mother's fitness is quantified as a covariance between an indicator variable for presence of the allele in a mother and mother's fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "In this formalism, selection on an allele affecting the mother's fitness W is quantified as a covariance (Price, 1970) between an indicator variable zf for presence of the allele in a mother, and mother's fitness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on theoretical framework with citation to Price equation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "f17a5f45-9d28-43ca-ab37-698bc794f95f",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C100",
+      "claim": "On average over cases where they cooperate and cases where they do not, individuals can benefit from increasing the likelihood of interacting with identically-behaved ones, whether relatives or not.",
+      "claim_type": "EXPLICIT",
+      "source": "This conclusion embodies the fact that, on average over cases where they cooperate and cases where they do not, individuals can benefit from increasing the likelihood of interacting with identically-behaved ones, whether relatives of not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the theoretical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "41200f9e-b841-4b93-900b-48c48b1b0545",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C101",
+      "claim": "Any maternal behavior that increases the likelihood that her offspring will repeatedly cooperate rather than repeatedly defect may be favored.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, any maternal behavior that increases the likelihood that her offspring will repeatedly cooperate rather than repeatedly defect may be favored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the theoretical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "7d4d6723-4d6d-47c2-80a6-c7bf77ea849b",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C104",
+      "claim": "A strong impact of choice on expectation of CfCfp is dependent on a high variance in male reproductive success within a cohort of infants and on the existence of cues to infer paternal relatedness between infants.",
+      "claim_type": "EXPLICIT",
+      "source": "which is dependent on a high variance in male reproductive success within a cohort of infants (the case in mandrills Charpentier et al., 2005; Setchell et al., 2005) and on the existence of cues to infer paternal relatedness between infants, here increased facial resemblance among paternal half-sibs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the theoretical model with citations to empirical data on mandrill reproductive skew.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "aff980c9-c0eb-45ce-97f8-9f0d11144b00",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C105",
+      "claim": "Infants being more similar at loci controlling phenotypic similarity are more similar at loci controlling cooperation due to shared similarity (identity disequilibrium) that automatically results from an increased likelihood of shared paternity.",
+      "claim_type": "EXPLICIT",
+      "source": "This fitness effect results from the fact that infants being more similar at loci controlling phenotypic similarity are more similar at loci controlling cooperation. Such shared similarity ('identity disequilibrium') automatically results from an increased likelihood of shared paternity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from population genetics theory.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "1c21a357-4a3c-4b00-9efe-8d9347c37559",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C106",
+      "claim": "Identity disequilibrium is expected in any population where there is variation in relatedness among individuals, even in a finite panmictic population.",
+      "claim_type": "EXPLICIT",
+      "source": "It is expected, indeed, in any population where there is variation in relatedness among individuals, even in a finite panmictic population (Sved, 1971).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to population genetics theory.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "00393127-1560-4cb8-9dfb-b6c1057c8524",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C107",
+      "claim": "When some pairs of individuals are more related to each other than other pairs, the fact that a pair is identical at one locus indicates that the pair is more related than a random pair on average and tends to be more identical than random pairs at other loci in the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "When some pairs of individuals are more related to each other than other pairs, the fact that a pair is identical at one locus is an indication that the pair is more related than a random pair on average and then, it also tends to be more identical than random pairs at other loci in the genome (Grafen, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to theoretical work on identity disequilibrium.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "e4ff0221-df19-46f6-b240-d77b64c3968b",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C110",
+      "claim": "By favoring nepotism between their own offspring and their paternal half-sibs, mothers would derive direct fitness benefits.",
+      "claim_type": "EXPLICIT",
+      "source": "By favoring nepotism between their own offspring and their paternal half-sibs, mothers would therefore derive direct fitness benefits (Figure 3, scenario A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on inference from the theoretical model with illustration in Figure 3.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "995f6bd3-bef1-419b-9419-5c6fe3a552f4",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "claim_id": "C111",
+      "claim": "The mechanism of second-order kin selection can be generalized to any actor whose behaviors promote positive interactions between a non-kin recipient and any actor's kin.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism described here can be generalized to any actor whose behaviors promote positive interactions between a non-kin recipient and any actor's kin (Figure 3, scenario B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on inference from the theoretical model with illustration in Figure 3.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d5e27e4c-beed-49b2-be4c-c9072246979a",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "During infancy in mandrills, paternal half-siblings show significantly greater facial resemblance than maternal half-siblings or non-kin. Using a retrained VGG-Face deep learning model on 204 images of 80 infants (0-1 year), the authors found that paternal half-sibs and infants conceived during the same alpha male's tenure had lower facial distances than other dyads, while maternal half-sibs showed no increased resemblance compared to non-kin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C41 provide converging evidence from deep learning facial recognition analysis (C32-C33, C39-C40), genetic/behavioral data (C34-C38), and statistical modeling (C40-C41, Figure 1, Table 1). The methodology is well-described with appropriate controls for confounding variables (age, sex, maternal identity). The finding extends previous work to the infant age class with a robust sample size and validated computational approach (93.42% identification accuracy, C91).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "21e5ad04-5ad5-4bb6-b080-06da751dd0b7",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Mandrill mothers preferentially associate with infants that facially resemble their own offspring, and this maternal behavior leads to increased spatial association among similar-looking infants. Mothers and infants both show significant positive associations with similar-looking infants (C44-C45), while mother-mother associations are independent of offspring facial resemblance (C46). Infants follow/approach mothers in 97.6%/89.4% of events (C53-C54), and 71% of infant-infant association variance is explained by mother-infant associations (C56).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C57 present multiple converging lines of evidence from GLMM analyses controlling for matrilineal origin, maternal relatedness, rank, and infant characteristics (Table 2, Figure 2). The directionality analyses (C53-C56) strengthen causal inference that mothers drive infant associations. The lack of mother-mother association effects (C46, C49) and minimal grooming (C50-C51) rule out alternative explanations. Statistical rigor is appropriate with negative binomial models for count data and proper control variables.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "68b2c6d2-423b-450c-926e-6885971ab464",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors develop a theoretical model demonstrating that mothers can gain direct fitness benefits by promoting associations between their offspring and paternal half-siblings through a mechanism termed 'second-order kin selection'. The model uses Price equation formalism (C97) and shows that maternal behavior increasing offspring cooperation likelihood is favored (C101) through identity disequilibrium (C105-C107), where infants similar at phenotypic loci are also similar at cooperation loci due to shared paternity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C111 present a mathematically coherent theoretical framework grounded in established inclusive fitness theory (C30, citations to Hamilton 1964, Gardner et al. 2011). The model appropriately uses Price equation formalism (C97) and identity disequilibrium concepts (C106-C107, citing Sved 1971, Grafen 1990). The logic connecting phenotypic similarity to cooperation through shared paternity is sound (C105), and the model correctly identifies key conditions (high reproductive skew C104, reciprocal interactions). However, the model makes strong assumptions about cooperation payoffs and requires empirical validation of long-term reciprocal interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "b8add0e8-632f-4971-8ff3-d5e116ec2661",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors evaluate and largely reject the alternative hypothesis that fathers drive the observed facial resemblance patterns. While paternal care exists in some promiscuous primates (C61), mandrill males show minimal paternal care (C62), are only present ~50% of the time when infants are born (C65-C66), and do not maintain proximity with infants or mothers (C67). The authors conclude maternal behavior is the most plausible explanation (C68).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C60-C68 provide circumstantial evidence against paternal involvement through male residency patterns (C64-C66) and observational data on lack of paternal care (C62, C67). However, the evidence is incomplete: C62 and C67 rely on personal observations without quantitative data, male-infant interaction data are acknowledged as unavailable, and the ~50% male presence (C65) still allows substantial paternal influence. The conclusion (C68) is reasonable but not definitively supported\u2014the alternative hypothesis is weakened but not eliminated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "61987620-411b-4371-affe-5ef5ebaba3b3",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors identify two critical conditions for second-order kin selection: ability to predict relatedness through phenotype matching (C69, C70-C71) and occurrence of reciprocal interactions between matched partners (C69, C72-C77). They demonstrate the first condition is met in mandrills (C70-C71) and cite extensive literature showing reciprocal kin interactions and fitness benefits of social integration across mammals (C72-C77).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C69-C71 are well-supported for the first condition (phenotype matching ability) by the empirical data presented in this study. However, C72-C77 rely entirely on citations to other species (baboons C73, humans C74, general mammals C75-C76) and one semi-captive mandrill study (C77). The critical second condition\u2014that early-associated mandrill infants maintain reciprocal relationships throughout life\u2014lacks direct empirical support in the wild population studied. The authors acknowledge this limitation, noting longitudinal data are unavailable. This is a significant gap for validating the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "647e2e0d-49ef-4b4b-b361-28d96aa71baf",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The retrained VGG-Face model (VGG-Mandrill) achieved 93.42% accuracy in identifying individual mandrills and 86.87% accuracy in face verification. The model was trained on ~16k images representing 276 mandrills using transfer learning from human face recognition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C92 describe appropriate deep learning methodology with transfer learning, adequate sample size (~16k training images, 276 individuals), proper train/validation/test splits, and data augmentation to prevent overfitting. The reported accuracies (93.42% identification, 86.87% verification) are reasonable for this task. The use of \u03c7\u00b2 distance in encoding space and SVM for metric learning (C92) follows established computer vision practices. Appendix 1-figure 5 reportedly shows limited overfitting, supporting generalization claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "2d35a072-8bbc-4af8-91de-ac45b6d27b64",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The study population consists of ~250 mandrills in Gabon, originating from 65 captive-released individuals (2002, 2006), with ~200 individually monitored daily. The study analyzed 80 infants with known maternity, 32 with genetic paternity, and collected 9,305 behavioral scans. Matrilineal origin and maternal relatedness were independent of facial distance (C96).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C96 provide thorough description of study population, data collection methods, and sample sizes. The population history is documented (C85-C86), sample sizes are substantial (80 infants, 9,305 scans C93), and genetic/behavioral data collection is described with appropriate citations. The independence of matrilineal origin and maternal relatedness from facial distance (C96, r=0.008, p=0.89) is an important control ruling out confounding by maternal kinship. The limitation that only 32/80 infants have genetic paternity (C35) is acknowledged and addressed through alpha male tenure as a proxy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "99f634fd-0a73-4c53-b79a-c8af739b0acd",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The introduction establishes theoretical background on kin selection, phenotype matching mechanisms for kin recognition, and the challenges of self-referent and template-based recognition in natural contexts. These mechanisms are well-established in the literature but rarely demonstrated in wild populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C9 accurately summarize established theory with appropriate citations to foundational (Hamilton 1964, C1) and review literature (Clutton-Brock 2002, Penn & Frommen 2010, C2-C3). The characterization of self-referent phenotype matching challenges (C5, C7) and rarity of template-based recognition in the wild (C9) are reasonable inferences supported by cited literature. These are standard background claims establishing context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "fd0b7550-bf61-46c4-b905-69c795dc8994",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The introduction describes mandrill social biology and previous findings on kin recognition. Mandrills live in matrilineal societies with male dispersal and high reproductive skew (C10-C12). Previous work showed kin-biased behavior (C13-C14), acoustic/visual kin recognition (C15-C16), and heightened facial resemblance among paternal vs. maternal half-sisters despite similar relatedness (C17-C19). The authors argue self-referent and father-template matching are unlikely in wild mandrills (C21-C22), and that paternity cues are strongest early in life (C23-C25).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C25 accurately cite previous work by the same research group (Charpentier et al. 2005, 2007, 2020; Levr\u00e9ro et al. 2015) establishing the biological context. The key prior finding that paternal half-sisters resemble each other more than maternal half-sisters (C18) despite similar relatedness (C19, r~0.25) is well-documented. The inferences about environmental constraints on self-recognition (C21) and father-template use (C22, supported by Appendix data) are reasonable. These claims appropriately set up the study's hypotheses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "5f489c78-c7d8-4298-b86c-4febe3f63a86",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors state their main empirical finding that mothers and offspring associate more with similar-looking infants who are more likely to be paternal half-sibs (C26-C27), and that this cannot be explained by standard kin selection because mothers are not related to their offspring's paternal half-sibs (C28).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28 accurately summarize the study's key empirical findings (detailed in C42-C57) and correctly identify the theoretical puzzle. The logic in C28 is sound: standard kin selection requires relatedness between actor and recipient, which is absent between mothers and their offspring's paternal half-sibs (who share only paternal genes). This sets up the need for the novel theoretical mechanism (second-order kin selection) developed in C29-C111.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "0f4fe5bc-acee-4252-8a4b-35793ad9ca2b",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors cite comparative evidence that mothers control offspring social development in mammals generally (C58) and specifically in chimpanzees where mothers with sons associate more with adult males (C59).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 appropriately cite relevant comparative literature (Rilling & Young 2014, Murray et al. 2014) showing maternal influence on offspring social development is widespread in mammals. These citations provide context that the proposed maternal behavior in mandrills is biologically plausible and has precedent in related species. The claims are accurately represented from the cited sources.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "c409a008-b5a0-4ce7-89b2-376e89f136f1",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors discuss the potential generality of second-order kin selection, noting it may explain cooperation among human affinal kin (C78) and that its prevalence in nonhuman animals depends on distribution of reciprocal interactions (C79) and other modulating factors (C80). They speculate several favorable conditions may be widespread (C81-C83).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C78-C83 are largely speculative about the broader applicability of the proposed mechanism. C78 makes a reasonable connection to human affinal kin cooperation with appropriate citations, but C79-C83 are explicitly speculative (C79, C81, C83 use 'may' and conditional language). The claim that maternal control of offspring social development is widespread (C82) is supported by citations, but whether this translates to second-order kin selection in other species remains untested. These are appropriate discussion points but lack empirical support beyond mandrills.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    },
+    {
+      "id": "0d618bc3-d52e-456b-ab8d-8fddc9354ed0",
+      "content_id": "f88a33aa-c260-4900-af28-cfdee9d721ac",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors conclude that combining AI algorithms with long-term field data can reveal adaptive details of social complexity that would otherwise go unnoticed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C84 is a reasonable methodological conclusion supported by the study's successful application of deep learning to detect subtle facial resemblance patterns (C91-C92) that correlate with behavioral associations (C42-C57) in a long-term field study. This integration of computational and behavioral methods did reveal patterns (maternal preferential association based on offspring facial resemblance) that would be difficult to detect without the facial recognition technology. The claim is appropriately modest and well-supported by the study's execution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:13:02.207836Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2b4de9d6-73e4-4a34-ba4c-ae3451d27616",
+      "result_id": "d5e27e4c-beed-49b2-be4c-c9072246979a"
+    },
+    {
+      "claim_id": "69364078-d914-4a49-bc2b-b3fd0578f3e9",
+      "result_id": "d5e27e4c-beed-49b2-be4c-c9072246979a"
+    },
+    {
+      "claim_id": "5f6a83fe-4ef2-46ec-9a82-b7443d90cb4e",
+      "result_id": "d5e27e4c-beed-49b2-be4c-c9072246979a"
+    },
+    {
+      "claim_id": "9fcca62c-bd85-488a-8b17-cc23c43791b4",
+      "result_id": "d5e27e4c-beed-49b2-be4c-c9072246979a"
+    },
+    {
+      "claim_id": "433bbee8-c672-49ad-b63c-9daad8659935",
+      "result_id": "d5e27e4c-beed-49b2-be4c-c9072246979a"
+    },
+    {
+      "claim_id": "452c6f12-7a87-4782-916e-a9d7a6bc5696",
+      "result_id": "d5e27e4c-beed-49b2-be4c-c9072246979a"
+    },
+    {
+      "claim_id": "b754a92b-bdc2-4baf-8481-d17f1ce9bf35",
+      "result_id": "d5e27e4c-beed-49b2-be4c-c9072246979a"
+    },
+    {
+      "claim_id": "8ec50f2f-0413-4a53-bd15-4bf0866f843d",
+      "result_id": "d5e27e4c-beed-49b2-be4c-c9072246979a"
+    },
+    {
+      "claim_id": "4408aee0-a841-412e-8949-9609f77a85ab",
+      "result_id": "d5e27e4c-beed-49b2-be4c-c9072246979a"
+    },
+    {
+      "claim_id": "b455838b-5b71-4285-a789-cdebcfad3502",
+      "result_id": "d5e27e4c-beed-49b2-be4c-c9072246979a"
+    },
+    {
+      "claim_id": "c370c139-8e07-4a77-94ff-17948bc4dd2e",
+      "result_id": "d5e27e4c-beed-49b2-be4c-c9072246979a"
+    },
+    {
+      "claim_id": "eb783090-dac1-4421-b9f4-a6739face9aa",
+      "result_id": "21e5ad04-5ad5-4bb6-b080-06da751dd0b7"
+    },
+    {
+      "claim_id": "a880470e-32de-4d10-b843-0045e0a4e50f",
+      "result_id": "21e5ad04-5ad5-4bb6-b080-06da751dd0b7"
+    },
+    {
+      "claim_id": "e53c7866-22fc-43de-9c2e-dd1950d01aec",
+      "result_id": "21e5ad04-5ad5-4bb6-b080-06da751dd0b7"
+    },
+    {
+      "claim_id": "2e4c60a2-8b29-4414-af34-ac50f8eb3ff9",
+      "result_id": "21e5ad04-5ad5-4bb6-b080-06da751dd0b7"
+    },
+    {
+      "claim_id": "8c9bd6c7-d82f-49a4-8099-729a0d7e6ad2",
+      "result_id": "21e5ad04-5ad5-4bb6-b080-06da751dd0b7"
+    },
+    {
+      "claim_id": "501f6003-9152-48e4-8b36-d7548fd4f78e",
+      "result_id": "21e5ad04-5ad5-4bb6-b080-06da751dd0b7"
+    },
+    {
+      "claim_id": "8ac4b22b-0361-47f4-8b2f-755b21a55fb3",
+      "result_id": "21e5ad04-5ad5-4bb6-b080-06da751dd0b7"
+    },
+    {
+      "claim_id": "7fc42f40-e47c-4729-b323-591bac6ca3f9",
+      "result_id": "21e5ad04-5ad5-4bb6-b080-06da751dd0b7"
+    },
+    {
+      "claim_id": "1e560c2c-d0a0-4d8b-8f26-7a372b192512",
+      "result_id": "21e5ad04-5ad5-4bb6-b080-06da751dd0b7"
+    },
+    {
+      "claim_id": "d4050c22-8f28-4143-999f-3d7cc01702d2",
+      "result_id": "21e5ad04-5ad5-4bb6-b080-06da751dd0b7"
+    },
+    {
+      "claim_id": "d2eb5075-3b2f-47c4-9842-1fed34f5ddf2",
+      "result_id": "21e5ad04-5ad5-4bb6-b080-06da751dd0b7"
+    },
+    {
+      "claim_id": "59c492f3-6413-4490-bd66-401c045ad3b5",
+      "result_id": "21e5ad04-5ad5-4bb6-b080-06da751dd0b7"
+    },
+    {
+      "claim_id": "3dd89230-aac4-45bc-ab93-38ac84115484",
+      "result_id": "21e5ad04-5ad5-4bb6-b080-06da751dd0b7"
+    },
+    {
+      "claim_id": "50d6db57-34ef-4710-85ab-3198be2360b1",
+      "result_id": "21e5ad04-5ad5-4bb6-b080-06da751dd0b7"
+    },
+    {
+      "claim_id": "df1e6635-1c0a-4cbb-93f9-71af367ee958",
+      "result_id": "21e5ad04-5ad5-4bb6-b080-06da751dd0b7"
+    },
+    {
+      "claim_id": "598739cb-ffd1-4ae2-9049-14938b8ad8aa",
+      "result_id": "21e5ad04-5ad5-4bb6-b080-06da751dd0b7"
+    },
+    {
+      "claim_id": "956135d8-3d16-432f-9d56-180109ac7212",
+      "result_id": "68b2c6d2-423b-450c-926e-6885971ab464"
+    },
+    {
+      "claim_id": "ec987fca-2712-4daf-8058-f11571aa58bc",
+      "result_id": "68b2c6d2-423b-450c-926e-6885971ab464"
+    },
+    {
+      "claim_id": "70cac6ea-08ff-4f0a-9c00-be3d887a9e40",
+      "result_id": "68b2c6d2-423b-450c-926e-6885971ab464"
+    },
+    {
+      "claim_id": "f17a5f45-9d28-43ca-ab37-698bc794f95f",
+      "result_id": "68b2c6d2-423b-450c-926e-6885971ab464"
+    },
+    {
+      "claim_id": "41200f9e-b841-4b93-900b-48c48b1b0545",
+      "result_id": "68b2c6d2-423b-450c-926e-6885971ab464"
+    },
+    {
+      "claim_id": "7d4d6723-4d6d-47c2-80a6-c7bf77ea849b",
+      "result_id": "68b2c6d2-423b-450c-926e-6885971ab464"
+    },
+    {
+      "claim_id": "aff980c9-c0eb-45ce-97f8-9f0d11144b00",
+      "result_id": "68b2c6d2-423b-450c-926e-6885971ab464"
+    },
+    {
+      "claim_id": "1c21a357-4a3c-4b00-9efe-8d9347c37559",
+      "result_id": "68b2c6d2-423b-450c-926e-6885971ab464"
+    },
+    {
+      "claim_id": "00393127-1560-4cb8-9dfb-b6c1057c8524",
+      "result_id": "68b2c6d2-423b-450c-926e-6885971ab464"
+    },
+    {
+      "claim_id": "e4ff0221-df19-46f6-b240-d77b64c3968b",
+      "result_id": "68b2c6d2-423b-450c-926e-6885971ab464"
+    },
+    {
+      "claim_id": "995f6bd3-bef1-419b-9419-5c6fe3a552f4",
+      "result_id": "68b2c6d2-423b-450c-926e-6885971ab464"
+    },
+    {
+      "claim_id": "a7b9b46b-c626-4e70-9772-cf4babfe1604",
+      "result_id": "b8add0e8-632f-4971-8ff3-d5e116ec2661"
+    },
+    {
+      "claim_id": "9595aa01-6124-4a1b-ac8f-18066e659a69",
+      "result_id": "b8add0e8-632f-4971-8ff3-d5e116ec2661"
+    },
+    {
+      "claim_id": "aead3569-68f8-4d0d-907a-2e1d0355184f",
+      "result_id": "b8add0e8-632f-4971-8ff3-d5e116ec2661"
+    },
+    {
+      "claim_id": "8c1b32f7-d2b4-4fbf-8df5-b8b16b7a2ac3",
+      "result_id": "b8add0e8-632f-4971-8ff3-d5e116ec2661"
+    },
+    {
+      "claim_id": "82b4bd63-8186-40cb-8aab-f9c71ddffeea",
+      "result_id": "b8add0e8-632f-4971-8ff3-d5e116ec2661"
+    },
+    {
+      "claim_id": "5c192106-13c5-4c4d-b00a-07fc75f007d5",
+      "result_id": "b8add0e8-632f-4971-8ff3-d5e116ec2661"
+    },
+    {
+      "claim_id": "d65aa65c-351d-43a2-929e-1aaf42421d45",
+      "result_id": "b8add0e8-632f-4971-8ff3-d5e116ec2661"
+    },
+    {
+      "claim_id": "d34c76e7-5f0b-450c-8b72-2c2bd9f26087",
+      "result_id": "b8add0e8-632f-4971-8ff3-d5e116ec2661"
+    },
+    {
+      "claim_id": "05b92ffe-09e8-48f8-8fff-a073a34553d3",
+      "result_id": "b8add0e8-632f-4971-8ff3-d5e116ec2661"
+    },
+    {
+      "claim_id": "6b223d1f-42f8-412f-a262-e15ee5f0632a",
+      "result_id": "61987620-411b-4371-affe-5ef5ebaba3b3"
+    },
+    {
+      "claim_id": "c1a2f10c-c166-4431-911a-d254ff6e1b0d",
+      "result_id": "61987620-411b-4371-affe-5ef5ebaba3b3"
+    },
+    {
+      "claim_id": "66003134-ba11-456a-8803-9cd56f747dfd",
+      "result_id": "61987620-411b-4371-affe-5ef5ebaba3b3"
+    },
+    {
+      "claim_id": "c8b1b4e7-0dc6-4b8d-b998-3b729cad422f",
+      "result_id": "61987620-411b-4371-affe-5ef5ebaba3b3"
+    },
+    {
+      "claim_id": "6df48f41-6750-4152-951f-c963cb090a3c",
+      "result_id": "61987620-411b-4371-affe-5ef5ebaba3b3"
+    },
+    {
+      "claim_id": "efd72efb-d79c-49ac-bb0a-d7071599d870",
+      "result_id": "61987620-411b-4371-affe-5ef5ebaba3b3"
+    },
+    {
+      "claim_id": "e03f258c-d828-4a2c-bc7c-06225907ac6f",
+      "result_id": "61987620-411b-4371-affe-5ef5ebaba3b3"
+    },
+    {
+      "claim_id": "e13b87fb-4b88-4300-bc94-15d1756e547f",
+      "result_id": "61987620-411b-4371-affe-5ef5ebaba3b3"
+    },
+    {
+      "claim_id": "52f182f8-356d-4371-842f-306ae90b4cd5",
+      "result_id": "61987620-411b-4371-affe-5ef5ebaba3b3"
+    },
+    {
+      "claim_id": "9c0b6b02-c559-4055-bdbd-cc88ec18788c",
+      "result_id": "647e2e0d-49ef-4b4b-b361-28d96aa71baf"
+    },
+    {
+      "claim_id": "d6254ca7-4575-4c22-bd7e-1459114e72bd",
+      "result_id": "647e2e0d-49ef-4b4b-b361-28d96aa71baf"
+    },
+    {
+      "claim_id": "69364078-d914-4a49-bc2b-b3fd0578f3e9",
+      "result_id": "647e2e0d-49ef-4b4b-b361-28d96aa71baf"
+    },
+    {
+      "claim_id": "f6d672ed-16f4-41a4-9196-e7acc7e405d7",
+      "result_id": "647e2e0d-49ef-4b4b-b361-28d96aa71baf"
+    },
+    {
+      "claim_id": "41e0908f-0aab-4256-a9b6-8bd03b60df22",
+      "result_id": "2d35a072-8bbc-4af8-91de-ac45b6d27b64"
+    },
+    {
+      "claim_id": "075b7463-ff3b-441c-94ab-5a34d9268195",
+      "result_id": "2d35a072-8bbc-4af8-91de-ac45b6d27b64"
+    },
+    {
+      "claim_id": "d6d0df70-5297-45a3-ae2a-92399d9127ab",
+      "result_id": "2d35a072-8bbc-4af8-91de-ac45b6d27b64"
+    },
+    {
+      "claim_id": "32d09eec-1143-408f-8991-1f95f97a0971",
+      "result_id": "2d35a072-8bbc-4af8-91de-ac45b6d27b64"
+    },
+    {
+      "claim_id": "3a592d1f-09a8-4ba5-86dc-c3b92c736c77",
+      "result_id": "2d35a072-8bbc-4af8-91de-ac45b6d27b64"
+    },
+    {
+      "claim_id": "336dd508-4330-40c0-a19d-115d80bc88b8",
+      "result_id": "2d35a072-8bbc-4af8-91de-ac45b6d27b64"
+    },
+    {
+      "claim_id": "44a8c711-7fe9-4123-854f-ddbc3ecc7783",
+      "result_id": "2d35a072-8bbc-4af8-91de-ac45b6d27b64"
+    },
+    {
+      "claim_id": "19e3d60e-5bc4-4683-b377-d25e8e02eabf",
+      "result_id": "2d35a072-8bbc-4af8-91de-ac45b6d27b64"
+    },
+    {
+      "claim_id": "fb58e7cf-dd48-47a8-9d9b-8727942a9962",
+      "result_id": "2d35a072-8bbc-4af8-91de-ac45b6d27b64"
+    },
+    {
+      "claim_id": "6e068be3-696e-4d9a-8975-6bc8dd989ef6",
+      "result_id": "99f634fd-0a73-4c53-b79a-c8af739b0acd"
+    },
+    {
+      "claim_id": "328d8173-78de-47c6-b301-fb8f79251ded",
+      "result_id": "99f634fd-0a73-4c53-b79a-c8af739b0acd"
+    },
+    {
+      "claim_id": "d3a9cfff-61f0-4da2-aeac-b3775af78d2d",
+      "result_id": "99f634fd-0a73-4c53-b79a-c8af739b0acd"
+    },
+    {
+      "claim_id": "bb2e56ef-540a-436f-ba22-f19c5162560e",
+      "result_id": "99f634fd-0a73-4c53-b79a-c8af739b0acd"
+    },
+    {
+      "claim_id": "9361cdb7-1b07-45f6-82f0-70a874a62368",
+      "result_id": "99f634fd-0a73-4c53-b79a-c8af739b0acd"
+    },
+    {
+      "claim_id": "be6a9bc1-2c9c-4356-9972-bb73c3747080",
+      "result_id": "99f634fd-0a73-4c53-b79a-c8af739b0acd"
+    },
+    {
+      "claim_id": "374bad8b-aaec-40eb-9d27-9c0e671464a9",
+      "result_id": "99f634fd-0a73-4c53-b79a-c8af739b0acd"
+    },
+    {
+      "claim_id": "3ca85039-6248-4c77-9f26-b1ac2fec5fa6",
+      "result_id": "99f634fd-0a73-4c53-b79a-c8af739b0acd"
+    },
+    {
+      "claim_id": "96bf5d92-6397-42c0-b6af-02c389d0c51a",
+      "result_id": "99f634fd-0a73-4c53-b79a-c8af739b0acd"
+    },
+    {
+      "claim_id": "e316ad95-8581-43ec-8a56-4dd77bbc7e19",
+      "result_id": "fd0b7550-bf61-46c4-b905-69c795dc8994"
+    },
+    {
+      "claim_id": "e78a1de0-437d-4234-920c-9a297f953c3d",
+      "result_id": "fd0b7550-bf61-46c4-b905-69c795dc8994"
+    },
+    {
+      "claim_id": "97bdb509-23d6-47a2-bffa-67da4c73a434",
+      "result_id": "fd0b7550-bf61-46c4-b905-69c795dc8994"
+    },
+    {
+      "claim_id": "f3918ae3-30ef-4276-83b1-36085a9b1be8",
+      "result_id": "fd0b7550-bf61-46c4-b905-69c795dc8994"
+    },
+    {
+      "claim_id": "615b7f06-0234-4e8b-8b9c-b3527905220e",
+      "result_id": "fd0b7550-bf61-46c4-b905-69c795dc8994"
+    },
+    {
+      "claim_id": "b90a30c9-093e-455a-95db-5c3ee861ba3c",
+      "result_id": "fd0b7550-bf61-46c4-b905-69c795dc8994"
+    },
+    {
+      "claim_id": "1102ec13-0740-4ab1-a057-60dcfe890c97",
+      "result_id": "fd0b7550-bf61-46c4-b905-69c795dc8994"
+    },
+    {
+      "claim_id": "f40ad8a1-51d4-4b6a-9b18-474b84b99b46",
+      "result_id": "fd0b7550-bf61-46c4-b905-69c795dc8994"
+    },
+    {
+      "claim_id": "a121b9d6-7798-4e93-bb29-2ecb483945d8",
+      "result_id": "fd0b7550-bf61-46c4-b905-69c795dc8994"
+    },
+    {
+      "claim_id": "e5eea79c-1e4a-456e-9f8b-0221df04dd83",
+      "result_id": "fd0b7550-bf61-46c4-b905-69c795dc8994"
+    },
+    {
+      "claim_id": "dff8ba24-efbe-49eb-8ae3-21495edbeca8",
+      "result_id": "fd0b7550-bf61-46c4-b905-69c795dc8994"
+    },
+    {
+      "claim_id": "d50a1964-f1a7-4613-a271-3ee6ef67612e",
+      "result_id": "fd0b7550-bf61-46c4-b905-69c795dc8994"
+    },
+    {
+      "claim_id": "6728a76f-0151-4201-98b0-ccc3025bbfe9",
+      "result_id": "fd0b7550-bf61-46c4-b905-69c795dc8994"
+    },
+    {
+      "claim_id": "7ebcfaa9-3652-411c-87a5-86c632e11600",
+      "result_id": "fd0b7550-bf61-46c4-b905-69c795dc8994"
+    },
+    {
+      "claim_id": "dc027f50-3fcc-4de4-8dba-95b16edb2910",
+      "result_id": "fd0b7550-bf61-46c4-b905-69c795dc8994"
+    },
+    {
+      "claim_id": "1fd4eaad-0902-4ff6-8d3c-1632a1f8ab4e",
+      "result_id": "fd0b7550-bf61-46c4-b905-69c795dc8994"
+    },
+    {
+      "claim_id": "450059ad-71ad-4992-942c-06c3e835313d",
+      "result_id": "5f489c78-c7d8-4298-b86c-4febe3f63a86"
+    },
+    {
+      "claim_id": "5cbc0fc6-dd65-46f1-9667-6667f9b5853b",
+      "result_id": "5f489c78-c7d8-4298-b86c-4febe3f63a86"
+    },
+    {
+      "claim_id": "7dc6618b-67c5-4314-a6ed-42f12e3d258c",
+      "result_id": "5f489c78-c7d8-4298-b86c-4febe3f63a86"
+    },
+    {
+      "claim_id": "872e4f71-a0ea-4ed1-949c-308da9bbebb8",
+      "result_id": "0f4fe5bc-acee-4252-8a4b-35793ad9ca2b"
+    },
+    {
+      "claim_id": "d8f5f55b-d895-4bcd-b7de-acc1d55e7ab1",
+      "result_id": "0f4fe5bc-acee-4252-8a4b-35793ad9ca2b"
+    },
+    {
+      "claim_id": "a1574ddd-734c-449b-9339-8db4e7c2dc8f",
+      "result_id": "c409a008-b5a0-4ce7-89b2-376e89f136f1"
+    },
+    {
+      "claim_id": "7c162833-e80c-44a0-a3c2-fc3df8bf9fa5",
+      "result_id": "c409a008-b5a0-4ce7-89b2-376e89f136f1"
+    },
+    {
+      "claim_id": "209292c8-f021-4742-a715-43cd006e5a22",
+      "result_id": "c409a008-b5a0-4ce7-89b2-376e89f136f1"
+    },
+    {
+      "claim_id": "d9aa1258-78cf-486b-8256-648fb5d13f29",
+      "result_id": "c409a008-b5a0-4ce7-89b2-376e89f136f1"
+    },
+    {
+      "claim_id": "7ddb7c49-381a-4207-bf95-c7d23ab1ada5",
+      "result_id": "c409a008-b5a0-4ce7-89b2-376e89f136f1"
+    },
+    {
+      "claim_id": "0cd65e04-530b-4057-b05d-5ee5634064cf",
+      "result_id": "c409a008-b5a0-4ce7-89b2-376e89f136f1"
+    },
+    {
+      "claim_id": "4f9200d2-e4c7-4ed5-bfbe-b1daf12cab91",
+      "result_id": "0d618bc3-d52e-456b-ab8d-8fddc9354ed0"
+    }
+  ],
+  "comparisons": []
+}

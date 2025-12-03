@@ -1,0 +1,442 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "ARG1 is predominantly expressed in myeloid cells in human pancreatic cancer. RNA in situ hybridization and sc-RNA-seq analysis of human PDA samples showed prevalent ARG1 expression in CD45+ immune cells (primarily myeloid cells) with minimal expression in epithelial cells, CD4+ T cells, CD8+ T cells, and fibroblasts. ARG2 was expressed at high levels in endocrine cells and at lower levels in epithelial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 are well-supported by multiple complementary techniques (RNA ISH, sc-RNA-seq) applied to human PDA samples. The data consistently show ARG1 is predominantly expressed in myeloid cells with minimal expression in other cell types. Quantification is provided in Figure 1B, and sc-RNA-seq data from 16 human samples (Figure 1D) corroborates the ISH findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "High ARG1 expression correlates with worse survival in pancreatic cancer patients. Analysis of the GSE71729 microarray dataset showed that patients with high ARG1 expression had significantly worse overall survival compared to those with low ARG1 expression, suggesting a functional role for ARG1 in human PDA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by survival analysis of a publicly available dataset (GSE71729) with 125 patients. The Kaplan-Meier analysis (Figure 1E) shows statistically significant correlation (p=0.0027) between high ARG1 expression and worse survival. However, this is correlative data and does not establish causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "ARG1 is highly expressed in macrophages in mouse pancreatic cancer models. Sc-RNA-seq and immunofluorescence analysis showed that Arg1 expression was highest in macrophages and enriched in PDA-infiltrating macrophages compared to normal pancreas. ARG1 protein was not detected in healthy pancreas but showed frequent co-localization with F4/80+ macrophages in both PanIN and PDA lesions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C63 are well-supported by multiple complementary approaches including sc-RNA-seq from healthy and KPC tumor-bearing mice (Figure 1G) and immunofluorescence staining (Figure 1H-I). The data consistently demonstrate macrophage-specific Arg1 expression that increases during disease progression. Quantification is provided showing significant differences between disease stages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Genetic deletion of Arg1 in macrophages results in elevated extracellular arginine levels. Western blot confirmed efficient deletion of ARG1 protein in Lyz2Cre/+;Arg1f/f tumor-associated macrophages, and LC-MS/MS metabolomics showed elevated L-arginine in the culture medium of Arg1-deficient TAMs compared to wild-type TAMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 are supported by western blot data (Figure 2B) showing efficient Arg1 deletion and metabolomics data (Figure 2C) showing elevated arginine in Arg1-deficient TAM media. The metabolomics provides direct biochemical evidence that Arg1 deletion prevents arginine depletion. Sample sizes appear adequate (n=4 per group based on heatmap).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Myeloid-specific Arg1 deletion reduces progression to invasive pancreatic cancer but induces compensatory Arg1 expression in epithelial cells. In aged KFCA mice (9-16 months), only 21% developed invasive disease compared to 62% of control KF mice. However, KFCA mice showed substantial ARG1 expression in epithelial cells (absent in KF mice), representing a compensatory mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C73 are supported by histopathological evaluation (Figure 2E, n=24-26 per group, p<0.05 by chi-square test) and immunofluorescence data (Figure 2F). The reduced progression to invasive disease is statistically significant. The compensatory epithelial Arg1 expression is clearly demonstrated by IF staining and represents an important finding about resistance mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Tuft cells are the source of compensatory epithelial ARG1 expression in KFCA mice. The ARG1-expressing epithelial cells in KFCA pancreata had elongated morphology consistent with tuft cells, and co-immunostaining with the tuft cell marker COX1 confirmed that tuft cells are the exclusive source of epithelial ARG1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 are supported by morphological observations and co-immunostaining data (Figure 2\u2014figure supplement 2A) showing co-localization of ARG1 with COX1+ tuft cells. The identification of tuft cells as the source is well-documented. The interpretation that this represents a response to accumulating arginine (C77) is reasonable but remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Arg1 deletion in myeloid cells induces macrophage repolarization with reduced tumor-promoting APOE expression and compensatory Arg2 upregulation. Sc-RNA-seq identified five macrophage subpopulations with similar total macrophage percentages between KF and KFCA. KFCA macrophages showed reduced APOE expression (a tumor-promoting factor) and upregulation of Arg2, mainly in macrophage population 4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C85 are supported by sc-RNA-seq analysis (Figure 2H-I) and immunofluorescence validation (Figure 2\u2014figure supplement 3D-E). The identification of five macrophage subpopulations and differential gene expression patterns is well-documented. The Arg2 upregulation represents an important compensatory mechanism. However, the sc-RNA-seq is from n=1 per genotype, which limits statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "KFCA macrophages show upregulation of MHC I antigen processing and presentation pathways. Reactome pathway enrichment analysis revealed that KFCA macrophages, particularly the macrophage 3 population, exhibited upregulation of signaling pathways involved in MHC I antigen processing and cross presentation, suggesting improved antigen-specific CD8+ T cell activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 are supported by pathway enrichment analysis (Figure 2J) and differential gene expression data (Figure 2\u2014figure supplement 3H). The upregulation of MHC I-related pathways is clearly demonstrated. However, the interpretation that this leads to improved CD8+ T cell activation (C87) is an inference that requires functional validation, which is provided in subsequent experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Arg1 deletion in myeloid cells increases CD8+ T cell infiltration, activation, and exhaustion. KFCA pancreata showed increased CD8+ T cell infiltration by IHC. Sc-RNA-seq revealed increased percentages of both cytotoxic and exhausted CD8+ T cells, with upregulation of activation markers (Gzmb, Prfn1, Ifng) and exhaustion markers (Ctla4, Furin, Lag3, Pdcd1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C93 are well-supported by multiple complementary approaches including IHC (Figure 3A), sc-RNA-seq (Figure 3D-F, I), and immunofluorescence validation (Figure 3G-H). The data consistently show increased CD8+ T cell infiltration and activation, but also increased exhaustion markers. This represents a key finding about the dual effects of Arg1 deletion. Sample sizes appear adequate (n=5-6 for IHC, n=3 for IF).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "Pharmacological arginase inhibition with CB-1158 increases CD8+ T cell infiltration and activation in orthotopic pancreatic tumors. Treatment with CB-1158 increased CD8+ T cell infiltration by IHC and increased the frequency of GZMB+ CD8+ T cells by immunofluorescence, recapitulating findings from the genetic model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 are supported by IHC data (Figure 4B-C, p=0.0325) and immunofluorescence data (Figure 4D-E). The pharmacological approach validates the genetic findings and demonstrates that systemic arginase inhibition can increase CD8+ T cell infiltration and activation. Sample sizes appear adequate (n=4-6 per group).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "CB-1158 combined with anti-PD1 significantly reduces tumor growth in orthotopic pancreatic cancer. The combination treatment showed significant tumor weight reduction compared to vehicle control, with increased tumor arginine levels, large necrotic areas, decreased proliferation, and increased apoptosis. ARG1 protein expression was unchanged, consistent with CB-1158 inhibiting enzyme activity rather than expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C102 are well-supported by tumor weight measurements (Figure 4G, n=10-12 per group, p<0.05 by two-way ANOVA), metabolomics (Figure 4H), and histological analyses (Figure 4\u2014figure supplement 1). The combination therapy shows statistically significant efficacy. The observation that ARG1 protein levels are unchanged (C97-C98) is consistent with the known mechanism of CB-1158 as an enzyme inhibitor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "CD8+ T cells require arginine for proliferation and activation, and arginine breakdown products cannot fully rescue arginine deprivation. In vitro assays showed that arginine deprivation reduced CD8+ T cell proliferation and activation. Ornithine partially rescued proliferation defects but not activation defects, while urea slightly enhanced proliferation in complete media but did not rescue arginine deprivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C110 are supported by in vitro CD8+ T cell assays (Figure 4J-K) with appropriate controls and multiple conditions tested. The data clearly demonstrate arginine requirement for T cell function and show that breakdown products have limited rescue capacity. The experimental design is sound with n=3 replicates. Statistical significance is shown for key comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C111",
+      "C142"
+    ],
+    "result": "Arginase inhibition combined with anti-PD1 reduces immune suppression and decreases pancreatic cancer tumor growth by depleting arginine and inhibiting T cell activation. This represents the main conclusion integrating all experimental findings from genetic and pharmacological approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111 and C142 represent the main conclusions of the study, supported by the totality of evidence from genetic models (KFCA mice), pharmacological interventions (CB-1158), and mechanistic studies (metabolomics, T cell assays). The data consistently support the model that Arg1 drives immune suppression through arginine depletion. The combination therapy approach is well-validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Pancreatic ductal adenocarcinoma is characterized by poor survival, KRAS mutations, and limited treatment options. PDA is the third leading cause of cancer-related deaths with 12% 5-year survival, commonly harbors KRASG12D mutations, and current standard chemotherapy provides limited survival benefit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 are background information supported by appropriate citations to established literature. These claims provide context for the study but do not represent novel findings. The citations appear appropriate and the information is consistent with current knowledge about PDA.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "KRAS-targeted therapies are emerging but resistance is expected, highlighting the need for immunotherapy approaches. KRASG12C inhibitors show promise in lung cancer but have limited applicability in PDA. New KRASG12D inhibitors are entering the clinic, but resistance is expected based on lung cancer data and mouse models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C13 are background information supported by appropriate citations. These claims provide rationale for the study's focus on immunotherapy but do not represent novel findings. The speculation about future resistance (C12-C13) is reasonable based on cited evidence but remains predictive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The pancreatic tumor microenvironment is immunosuppressive with abundant myeloid cells and rare, exhausted CD8+ T cells. Immune checkpoint inhibitors are ineffective in PDA due to the immunosuppressive TME. Myeloid cell depletion activates anti-tumor T cell responses in mouse models, but clinical efficacy has been limited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C24 are background information supported by appropriate citations to established literature. These claims provide important context and rationale for the study but do not represent novel findings from this work. The citations appear appropriate and comprehensive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "ARG1 is a metabolic enzyme expressed in myeloid cells that breaks down arginine, which is necessary for CD8+ T cell function. ARG1 is expressed in tumor-associated macrophages across multiple cancer types and may deplete arginine in the TME to dampen anti-tumor T cell activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C36 are background information supported by appropriate citations, including the authors' previous work. These claims establish the biological rationale for the study. The inference that myeloid cells may deplete arginine to dampen T cell activity (C36) is reasonable based on the cited literature and is tested experimentally in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "CB-1158 is a small-molecule arginase inhibitor that decreased tumor growth in Lewis lung carcinoma models and is being tested in clinical trials. CB-1158 treatment as monotherapy or combined with anti-PD-1 decreased tumor growth in mice with Lewis lung carcinoma and is being tested in phase I trials in patients with solid tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 are background information about CB-1158 supported by appropriate citations. These claims establish the rationale for using CB-1158 in this study but do not represent novel findings. The information about clinical trials is factual and verifiable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The study used dual-recombinase and pharmacological approaches to investigate Arg1 function in pancreatic cancer. A dual-recombinase genetic model was used to delete Arg1 in myeloid cells while inducing oncogenic Kras in epithelial cells, and a pharmacological approach using CB-1158 was employed to overcome compensatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 describe the experimental approaches used in the study. These are methodological claims that are well-supported by the detailed methods section and experimental data. The dual-recombinase approach is innovative and appropriate for the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "Infiltration of myeloid cells, specifically macrophages, in pancreatic cancer portends worse patient survival. This is established knowledge supported by citations to Sanford et al., 2013 and Tsujikawa et al., 2017.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is background information supported by appropriate citations. This provides context for the study but does not represent a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Myeloid cells in the TME are associated with poor prognosis while T cells correlate with better survival. Macrophages are traditionally classified as M1/M2 but TAMs are now recognized as distinct and heterogeneous. ARG1 is classically considered an M2 marker.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C118 are background information from the Discussion section, supported by appropriate citations. These claims provide context for interpreting the study's findings but do not represent novel results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Arginases are enzymes that hydrolyze arginine to urea and ornithine, with two isoforms (ARG1 and ARG2) located in different cellular compartments. L-arginine is reduced in PDA tumor interstitial fluid while ornithine levels increase, suggesting arginase contribution to immunosuppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C127 are background information from the Discussion section, supported by appropriate citations. The inference about arginase contribution to immunosuppression (C122) is reasonable based on the cited metabolomics data from Sullivan et al., 2019.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Prior studies in other cancer models demonstrated that myeloid Arg1 expression impairs T cell function and that arginase inhibition reduces tumor growth in a T cell-dependent manner. Studies in Lewis lung carcinoma, KrasG12D lung cancer, and neuroblastoma models showed that Arg1 expression or arginase activity promotes tumor growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C132 are background information from the Discussion section, supported by appropriate citations to prior work in other cancer models. These claims provide important context showing that the concept has been validated in other systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "CB-1158 is not cell permeable and does not inhibit liver ARG1, avoiding toxicity. In vitro, CB-1158 inhibits both human ARG1 and ARG2, and its in vivo action is attributed to inhibition of extracellular ARG1 released by myeloid cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C135 are background information about CB-1158's mechanism of action, supported by citation to Steggerda et al., 2017. This information is important for understanding the drug's selectivity and mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Arg2 may play a role in obesity-driven pancreatic cancer and could be a target of CB-1158 in human patients. In obesity-driven PDA models, Arg2 is upregulated in epithelial cells and promotes tumor growth. While Arg2 was not observed in epithelial cells in non-obese KF mice, low but detectable Arg2 expression was found in human epithelial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C136-C138 are supported by citations and data, but C139 is speculative about CB-1158's mechanism in human patients. The speculation is reasonable given the data showing Arg2 expression in human epithelial cells, but this remains untested and represents a hypothesis for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C140",
+      "C141"
+    ],
+    "result": "Myeloid Arg1 overexpression and activity is one mechanism by which myeloid cells promote immune suppression and tumor growth in pancreatic cancer, and arginase inhibition may be an effective therapeutic strategy. This represents the authors' interpretation and therapeutic implications of their findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C141 represent the authors' conclusions based on the totality of their experimental data. C140 is well-supported by the genetic and pharmacological evidence presented. C141 is more speculative about clinical translation but is reasonable based on the preclinical data and ongoing clinical trials.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C143"
+    ],
+    "result": "CB-1158 is currently being evaluated in clinical trials as a single agent and in combination with immune checkpoint therapy or chemotherapy in patients with solid tumors. This is factual information about ongoing clinical trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C143 is factual information supported by reference to clinical trial registrations (NCT02903914 and NCT03314935). This provides important context about the clinical translation of the preclinical findings.",
+    "result_type": "MINOR"
+  }
+]

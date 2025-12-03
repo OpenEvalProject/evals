@@ -1,0 +1,301 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C14",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Activin ligands are dimeric proteins formed from two disulfide-linked inhibin \u03b2 (Inh\u03b2) subunit chains of approximately 120 amino acids. These ligands are processed from precursor proteins comprising a prodomain (which aids in proper folding and ligand maturation) and a C-terminal signaling domain (which forms the covalent dimers). Activins can exist as homodimers (ActA: Inh\u03b2A/Inh\u03b2A; ActC: Inh\u03b2C/Inh\u03b2C) or heterodimers (ActAC: Inh\u03b2A:Inh\u03b2C).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C14, C29-C31 describe well-established structural features of activin ligands that are supported by extensive prior literature and are consistent with general knowledge in the TGF\u03b2 superfamily field. These are foundational background claims that provide context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "ActC and ActAC activate SMAD2/3-dependent signaling exclusively through the type I receptor ALK7, while ActA signals predominantly through ALK4, and ActB and ActAC signal through both ALK4 and ALK7. In HEK293T (CAGA)12-luciferase cells, ActC did not induce reporter activity up to 5 nM in the absence of ALK7, but activated signaling to a similar extent as ActB when ALK7st was transfected. An anti-ALK7 neutralizing antibody nearly completely abrogated ActC signaling while only partially reducing ActB signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C37-C54 collectively demonstrate ActC's exclusive ALK7 signaling through multiple complementary approaches: luciferase reporter assays with receptor-specific transfections (C43-C48), neutralizing antibody experiments (C49-C51), and appropriate controls (C40-C41, C44-C45). The data are internally consistent and support the conclusion that ActC signals exclusively through ALK7, distinguishing it from other activins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "Extracellular ActC does not antagonize ActA signaling. Titration of ActC against constant ActA resulted in no significant reduction in ActA signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 are supported by data shown in Figure 1\u2014figure supplement 1, which demonstrates that ActC does not competitively inhibit ActA signaling. This challenges a prior hypothesis (C25-C26) that ActC functions as a direct antagonist of ActA through competitive receptor binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "ActC exhibits significantly lower affinity for activin type II receptors (ActRIIA and ActRIIB) compared to ActA and ActB. SPR experiments showed ActA binds ActRIIA-Fc and ActRIIB-Fc with KD values of 22 pM and 8.1 pM, respectively, while ActC binding was much weaker with significantly faster dissociation rates. ActAC showed intermediate affinity (150 pM for ActRIIA-Fc, 90 pM for ActRIIB-Fc). ActC showed preference for ActRIIA over ActRIIB. Native gel analysis confirmed that ActA and ActAC, but not ActC, formed stable complexes with type II receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C57-C68 are well-supported by comprehensive SPR binding data (Figure 2) and native gel analysis (Figure 2\u2014figure supplement 2). The experiments were performed in duplicate with appropriate controls, and the data consistently demonstrate ActC's unusually low affinity for type II receptors compared to other activin class ligands. This is a key distinguishing feature of ActC.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "ALK7 is a low-affinity receptor for all activin ligands when tested individually, with little to no binding observed for ALK7-Fc alone. However, the heterodimeric receptor fusion ActRIIB-ALK7-Fc showed dramatically enhanced binding to ActC (2 nM) compared to ActRIIB-Fc alone (40-fold increase), while ActA binding to ActRIIB-ALK7-Fc was sevenfold lower than to ActRIIB-Fc alone. ActC failed to bind ActRIIB-ALK4-Fc.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C81 are supported by SPR data (Figure 2 and Figure 2\u2014figure supplement 1C) demonstrating that ALK7 contributes to ActC binding only in the context of the heterodimeric receptor complex, explaining how ActC can signal through ALK7 despite low individual receptor affinities. The 40-fold enhancement in ActC binding to ActRIIB-ALK7-Fc versus ActRIIB-Fc alone (C76) is particularly striking and mechanistically important.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Despite low affinity for type II receptors, ActC and ActAC require type II receptors (with preference for ActRIIA) for signaling via ALK7. ActRIIA-Fc and ActRIIB-Fc dose-dependently inhibited ActA and ActAC signaling via ALK4st and ablated ActB signaling via ALK7st, but did not inhibit ActAC or ActC signaling through ALK7st even at 25 nM. Neutralizing antibodies against ActRIIA significantly reduced ActC signaling in ALK7st-transfected cells, with lesser effects from ActRIIB blockade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C93 are supported by ligand trap experiments (Figure 3B-C) and neutralizing antibody assays (Figure 3E-F). The data demonstrate that ActC requires type II receptors for signaling despite weak binding affinity, consistent with an avidity model where both type I and type II receptor engagement is necessary. The preference for ActRIIA (C91-C93) is clearly shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "ActC is resistant to neutralization by the extracellular antagonists follistatin-288 (Fst-288) and follistatin-like 3 (FSTL3). Fst-288 robustly inhibited ActA and ActB signaling via ALK4st and moderately inhibited ActAC signaling, but had no impact on ActC actions. FSTL3 showed similar results. This resistance to classical activin antagonists distinguishes ActC from other activin class ligands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C94-C99 are supported by luciferase reporter assays with Fst-288 and FSTL3 (Figure 4A-B). The experiments included appropriate positive controls (ActA, ActB inhibition) and tested both antagonists at multiple concentrations. The complete lack of ActC inhibition by follistatin is a striking and reproducible finding that distinguishes ActC from all other activin class ligands.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "Inhibin A dose-dependently attenuated ActC signaling with an IC50 value of 0.08 nM (SD \u00b1 0.04 nM), similar to its effect on ActA signaling (IC50 = 0.2 nM, SD \u00b1 0.2 nM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 are supported by dose-response data shown in Figure 4C. The similar IC50 values for ActC and ActA indicate that inhibin A can antagonize ActC despite ActC's resistance to follistatin, consistent with inhibin A's mechanism of binding type II receptors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The glutamine substitution at position 267 in ActC (IQP motif) in place of the conserved alanine (IAP motif) found in other activin class ligands weakens affinity for both type II receptors and follistatin. Structural modeling suggests Gln267 would be sterically unfavorable for interactions with ActRIIB and Fst-288. The Q267A mutant of ActC showed increased type II receptor binding (especially for ActRIIA-Fc: 620 pM) and increased sensitivity to Fst-288 and FSTL3 inhibition compared to wild-type ActC, while maintaining similar ALK7st-dependent signaling activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C111 are supported by sequence alignment (Figure 5A), structural modeling (Figure 5C-D), SPR binding data (Figure 5F), and functional assays (Figure 5E, G). The mutagenesis experiment provides strong evidence that the glutamine substitution is a key molecular determinant of ActC's unique properties. The Q267A mutant behaves more like other activins in terms of receptor binding and follistatin sensitivity while maintaining ALK7 signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C11",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "In mature murine adipocytes differentiated from stromal vascular fraction (SVF), which exhibit high ALK7 expression, ActC elicited a SMAD2/3 response similar to ActB. ActC stimulated SMAD2 phosphorylation in SVF-derived adipocytes but not in 3T3-L1-derived adipocytes, correlating with significantly higher ALK7 expression in SVF cells. Fst-288 blocked ActB but not ActC action in mature adipocytes, and a neutralizing ALK7 antibody blocked ActC-induced pSMAD2, confirming ALK7-dependent signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C112-C119 are supported by western blot data (Figure 6B-C, E), qPCR data (Figure 6D), and appropriate controls. The experiments demonstrate ActC signaling in a physiologically relevant cell type with endogenous ALK7 expression, confirming the findings from heterologous expression systems. The correlation between ALK7 expression and ActC responsiveness (C112-C113) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "ActA and ActB exposure during early differentiation of SVF cells inhibits adipogenesis, impairing expression of Pparg2 and Cebpa transcription factors, while ActC treatment at this early stage did not affect adipogenesis. Follistatin antagonized the anti-adipogenic effects of ActA and ActB. However, ActC significantly reduced Pnpla2 expression and lipid content in mature adipocytes, consistent with late-stage effects of ActB-ALK7 signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C124 are supported by microscopy images (Figure 6F), qPCR data (Figure 6G), and Oil Red O quantification (Figure 6G). The differential effects of ActC versus ActA/ActB during adipogenesis are explained by the timing of ALK7 expression (low during early differentiation, high in mature adipocytes). The data are internally consistent and mechanistically coherent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C12",
+      "C125",
+      "C126"
+    ],
+    "result": "ActC and ActAC are active signaling ligands that exhibit a distinct receptor and antagonist profile compared to other activins. ActC can act as a canonical TGF\u03b2 ligand, transducing SMAD2/3 responses similar to ActA and ActB while avoiding inhibition by follistatin. ActC is specific for ALK7 and shows preference for the type II receptor ActRIIA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C125-C126 represent the main conclusions of the study, synthesizing findings from multiple experimental approaches. These conclusions are well-supported by the collective evidence from luciferase assays, SPR binding studies, neutralizing antibody experiments, mutagenesis, and adipocyte studies. The claims accurately summarize the key distinguishing features of ActC.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C13",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C27",
+      "C28",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Background information on activin biology, including prior characterization of ActA and ActB, limited knowledge about ActC and ActAC, sequence identities among Inh\u03b2 chains, tissue expression patterns, receptor binding mechanisms, and SMAD signaling cascades.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C13, C15-C24, C27-C28, C32-C36 represent background information from the literature that provides context for the study. These claims are appropriately cited and consistent with established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C7",
+      "C25",
+      "C26"
+    ],
+    "result": "Prior hypotheses suggested that the Inh\u03b2C chain functions to interfere with ActA production by forming less active ActAC heterodimers, and that ActC directly antagonizes ActA signaling by binding to ActA receptors as a non-signaling competitive inhibitor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claims C7, C25-C26 represent prior hypotheses from the literature that are challenged by the current study's findings. The data presented (particularly C55-C56) demonstrate that extracellular ActC does not antagonize ActA signaling, contradicting the competitive inhibitor hypothesis. These claims are appropriately identified as speculation or prior hypotheses, and the study provides evidence against them.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Speculative discussion about potential biological roles of ActC, including possible function as a hepatokine in fat regulation, role during liver regeneration, and potential functional overlap with ActE based on sequence similarities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C127-C134 represent speculative discussion about ActC's biological roles and relationship to ActE. While these speculations are reasonable based on expression patterns (C127 is cited) and sequence similarities (C132 is data), they are not directly tested in this study. The claims are appropriately presented as possibilities requiring future investigation.",
+    "result_type": "MINOR"
+  }
+]

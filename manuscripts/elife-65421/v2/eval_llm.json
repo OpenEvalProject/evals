@@ -1,0 +1,324 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Naturally occurring HPFH mutations in the HBG promoter increase fetal hemoglobin expression and ameliorate symptoms in patients with beta-hemoglobinopathies. HbF is normally silenced after birth to ~1% of total hemoglobin, but HPFH mutations reactivate gamma-globin expression, providing clinical benefit to patients with sickle cell disease or beta-thalassemia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C4-C8 establish well-documented background knowledge about HPFH, HbF structure, developmental regulation, and clinical benefits. These claims are supported by multiple citations to established literature (Jacob and Raper 1958; Bauer and Orkin 2012; Thein 2018) and represent consensus scientific understanding in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C35",
+      "C89",
+      "C90",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Known HPFH mutations create de novo binding sites for erythroid activators (TAL1, KLF1, GATA1) or disrupt binding sites for repressors (BCL11A, ZBTB7A/LRF). The \u2013175T>C, \u2013198T>C, and \u2013113A>G mutations create activator binding sites, while mutations around \u2013115 bp and \u2013200 bp disrupt repressor binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C10, C35, C89-C96 describe well-characterized HPFH mutations and their molecular mechanisms, supported by extensive citations to prior work (Fischer and Nowock 1990; Martyn et al. 2018, 2019; Wienert et al. 2015, 2017; Liu et al. 2018). This represents established knowledge that provides context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C82",
+      "C83"
+    ],
+    "result": "Nuclease-mediated approaches to introduce HPFH mutations have significant limitations, including inefficient homology-directed repair, high indel rates, and frequent 4.9 kb deletions between HBG1 and HBG2 genes due to simultaneous DSBs in the highly homologous promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C12, C82, C83 describe limitations of nuclease-based editing approaches, supported by citations to Cavazzana et al. 2017, Li et al. 2018, M\u00e9tais et al. 2019, Wienert et al. 2017, and Traxler et al. 2016. This establishes the rationale for using base editing approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Base editors (ABE and CBE) efficiently create point mutations in the HBG promoter with minimal indels and significantly fewer 4.9 kb deletions compared to Cas9. HUDEP-2 cells stably expressing ABE or CBE showed editing efficiencies of 10-51% (ABE) and 59-73% (CBE), with <2% indels and only 2-32% deletion frequency (ABE) or 0-12% (CBE) compared to 76% with Cas9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C22 demonstrate the technical advantages of base editing over Cas9 for HBG promoter editing. The data show consistent editing efficiency, low indel rates, reduced deletion frequency, and preserved gene expression profiles (Figure 1, Figure 1\u2014figure supplement 1). The comparison to Cas9 is well-controlled and statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "A comprehensive screen of 41 gRNAs targeting the HBG proximal promoter (320 bp upstream of TSS) identified multiple regions that increase HbF expression. After excluding low-efficiency gRNAs, 30 ABE and 25 CBE gRNAs showed total editing efficiencies of 12-81% (ABE) and 13-80% (CBE), with HbF-positive cells ranging from 2-44% (ABE) and 1-35% (CBE). Five ABE gRNAs and one CBE gRNA showed >40% HbF-positive cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C34 describe a systematic screen of the HBG promoter region. The data are comprehensive, with editing efficiency measured by NGS and CRISPResso-2 analysis, and functional outcomes measured by flow cytometry (Figure 2, Figure 2\u2014figure supplements 1-3). ABE showed higher product purity than CBE, consistent with prior literature. The K562 control experiments appropriately test for disruption of activator binding sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Validation of the top eight gRNAs from the screen confirmed high editing efficiency (24-78% ABE, 36-85% CBE) with individual base conversions of 0-65% (A-to-G) and 1-57% (C-to-T), <2% indels, and equal editing efficiency between HBG1 and HBG2 promoters. Five gRNAs (gRNA-2, -10, -11, -32, -34) were effective with both ABE and CBE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C42 validate the screening results with detailed characterization of editing patterns. The data show consistent editing between HBG1 and HBG2 (Figure 3\u2014figure supplement 1c-d), appropriate bystander editing patterns, and low indel frequencies. The phasing analysis using SNVs to distinguish HBG1 and HBG2 is methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Base editing with top gRNAs significantly increased HBG mRNA expression (p<0.01-0.0001 for all ABE gRNAs; p<0.05-0.0001 for CBE gRNAs-2, -10, -11, -42) and gamma-globin chain levels (10-30% of beta-like globin for ABE; 6-45% for CBE) without affecting erythroid differentiation. The 4.9 kb deletion frequency was 2-32% (ABE) and 0-12% (CBE), with high correlation (r=0.71) between deletion frequency and reduced HBG2 expression in ABE samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C51 demonstrate functional consequences of base editing with appropriate molecular and cellular assays (qRT-PCR, RP-HPLC, flow cytometry). The reciprocal changes in gamma- and beta-globin chains maintain the alpha/beta-like ratio. The correlation analysis appropriately distinguishes deletion-dependent (ABE) from deletion-independent (CBE) mechanisms of reduced HBG2 expression (Figure 3\u2014figure supplement 3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "HPLC analysis confirmed significant HbF induction in all eight ABE-edited samples (gRNAs-2, -3, -4, -10, -11, -15, -32, -34) and four CBE-edited samples (gRNAs-2, -10, -11, -42), with compensatory downregulation of adult hemoglobin. The hyperactive ABE8e variant achieved >95% base substitution with increased HbF levels and significantly reduced deletion frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 demonstrate functional HbF production at the protein level using HPLC. The ABE8e data (Figure 3\u2014figure supplement 4) show that improved editing efficiency correlates with better outcomes and fewer deletions, supporting the hypothesis that higher processivity reduces deletion formation. The relationship between editing efficiency and HbF expression is appropriately analyzed by PCA (Figure 3i).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The screen identified novel regulatory regions including the \u2013123 cluster, where ABE-mediated \u2013123T>C and \u2013124T>C mutations induced HbF expression equivalent to known BCL11A-disrupting mutations. Known mutations (gRNAs-2, -3, -4) disrupt BCL11A/LRF binding or create GATA1/KLF1/TAL1 binding sites, while novel mutations (gRNAs-10, -11, -15, -21, -32, -34) identify previously unknown regulatory elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 identify novel regulatory regions while confirming known HPFH mutations. The comparison between novel \u2013123/\u2013124 mutations and known BCL11A-disrupting mutations is well-supported by multiple functional assays. The identification of five novel regulatory regions represents a significant advance in understanding HBG regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Base editing of CD34+ HSPCs from healthy donors with ABE8e mRNA and gRNA-11 (\u2013123 cluster) or gRNA-2 (BCL11A site) achieved high editing efficiency (89-91% at \u2013123/\u2013124; 66-80% at \u2013113/\u2013116) and induced >5-6 fold increase in HBG expression with robust HbF production, without affecting erythroid differentiation or enucleation. The \u2013123 cluster mutations showed comparable or higher HbF induction than BCL11A-disrupting mutations, with minimal 4.9 kb deletions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C72 demonstrate therapeutic potential in clinically relevant CD34+ HSPCs. The data include comprehensive characterization: editing efficiency (Figure 4b), gene expression (Figure 4d), protein levels (Figure 4e-g), differentiation markers (Figure 4h-i), and deletion frequency (Figure 4c). The use of transient mRNA delivery and ABE8e variant minimizes deletions. This represents strong proof-of-concept for therapeutic application.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The \u2013123T>C and \u2013124T>C mutations create a consensus KLF1 binding site. EMSA demonstrated modest but clear KLF1 binding to the double mutant probe but not to wild-type or single mutant probes. ChIP-qPCR showed weak KLF1 enrichment at the edited HBG promoter, suggesting KLF1 binding may be weak and near the detection limit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C77 propose KLF1 binding as the mechanism for \u2013123/\u2013124 mutations. While EMSA clearly shows binding to the double mutant (Figure 5c-d, Figure 5\u2014figure supplement 1a-b), the ChIP signal is weak and not significantly different from a negative control locus (VEGF) (Figure 5\u2014figure supplement 1c). The authors appropriately acknowledge this limitation and note that alternative mechanisms (other activators, indirect BCL11A effects) are possible. Additional experiments are needed to definitively establish the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C111"
+    ],
+    "result": "Off-target analysis showed no DNA off-target editing at predicted sites for gRNA-11 with ABE. Transcriptome-wide RNA sequencing showed similar A-to-I (ABE) and C-to-U (CBE) conversion frequencies in edited and control cells, with no significant differential gene expression except for gamma- and delta-globin genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81, C111 demonstrate specificity of base editing. DNA off-target analysis by NGS at 11 predicted sites showed no editing (Figure 6a). RNA-seq analysis showed no increase in transcriptome-wide deamination (Figure 6b-e) and no off-target gene expression changes (Figure 6\u2014figure supplement 1). These data support the safety profile of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Base editing avoids DSBs and largely prevents large deletions, though some 4.9 kb deletions still occur. The deletions may result from concurrent single-strand breaks (SSBs) at HBG1 and HBG2 promoters, conversion of persistent nicks to DSBs by replication forks, or adjacent SSBs on the same strand, as reported in plants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84-C88 propose mechanisms for residual deletions with base editors. While the observation of reduced but non-zero deletions is well-supported by data (C17-C18, C49-C51), the mechanistic explanations are speculative, based on literature from other systems (Ran et al. 2013a; Schiml et al. 2016; Kuzminov 2001; Wimberly et al. 2013). The variable deletion rates across gRNAs and between ABE/CBE suggest multiple factors, but direct experimental evidence for the proposed mechanisms is lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C113",
+      "C114"
+    ],
+    "result": "The screen identified five novel regulatory regions (\u201369, \u201370, \u2013122, \u2013123, \u2013124) and nine gRNAs that introduce HPFH-like mutations without generating indels. The novel mutations induced gamma-globin expression levels similar to well-characterized naturally occurring HPFH mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98, C113-C114 summarize the key discoveries from the screen. The identification of novel regulatory regions is well-supported by the comprehensive screening data (Figure 2-3), functional validation (Figure 3-4), and comparison to known HPFH mutations. The claim of five novel regulatory regions is clearly documented in Figure 7.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "The observation that KLF1 binding sites at different positions (\u2013198, \u2013123/\u2013124) can upregulate HBG suggests that introducing KLF1 binding sites anywhere around the HBG promoter could potentially upregulate expression. The proximity of the \u2013123/\u2013124 site to the BCL11A site (\u2013117) suggests it may also affect BCL11A binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C100 are speculative hypotheses about mechanisms and general principles. While the data support that multiple KLF1 sites can activate HBG, the generalization that KLF1 sites 'anywhere' would work is not tested. The suggestion about BCL11A binding is reasonable given proximity but lacks experimental support. These represent interesting hypotheses for future work rather than established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The screening approach has technical limitations including: PAM sequence availability constraining resolution, non-uniform editing efficiency across target regions, inability to test transversion mutations with current base editors, and bystander mutations complicating identification of functional single nucleotides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C104 appropriately acknowledge limitations of the approach. These are well-recognized constraints of base editing technology (supported by citations to Koblan et al. 2018; Gaudelli et al. 2017; Komor et al. 2016) and are honestly discussed. The authors suggest appropriate solutions including alternative PAM variants, hyperactive editors, dual base editors, and prime editing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Base editing offers advantages over Cas9 for therapeutic applications in HSPCs. While Cas9 editing causes genotoxicity/cytotoxicity from DSBs and results in HBG2 deletions that are under-represented after engraftment (27% deletion frequency in nonhuman primates), base editing shows low indel formation and reduced deletion frequency. ABE has inherent advantages over CBE in product purity and indel formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C110 discuss translational implications, supported by citation to Humbert et al. 2019 for nonhuman primate data and Lee et al. 2018 for ABE/CBE comparison. The data from this study (C108-C110) support the advantages of base editing, particularly ABE, for therapeutic applications. However, long-term engraftment studies in animal models would strengthen these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C112",
+      "C115"
+    ],
+    "result": "CRISPR base editing can drive HbF expression to therapeutically relevant levels in erythroid progenitor cells and HSPCs, and may become a pre-eminent therapeutic strategy for monogenetic disorders like beta-hemoglobinopathies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C112 is well-supported by the comprehensive data in HUDEP-2 cells and CD34+ HSPCs showing therapeutically relevant HbF levels (>5-6 fold increase, 10-45% of beta-like globin). Claim C115 is speculative about future therapeutic applications but is reasonable given the proof-of-concept data. However, clinical translation requires additional validation including long-term engraftment studies, in vivo efficacy in disease models, and safety assessments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "CBE-mediated base conversion at positions \u2013114 and \u2013115 resulted in significantly greater HbF induction than multiple A-to-G substitutions at \u2013110, \u2013112, \u2013113, and \u2013116 positions made by ABE at the \u2013115 cluster.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 compares CBE and ABE editing at the \u2013115 cluster (BCL11A binding site). The data show that CBE editing at \u2013114/\u2013115 (which directly disrupts the core BCL11A binding motif) is more effective than ABE editing at surrounding positions. This is consistent with the known importance of the \u2013114/\u2013115 positions for BCL11A binding (Martyn et al. 2018; Liu et al. 2018).",
+    "result_type": "MINOR"
+  }
+]

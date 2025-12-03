@@ -1,0 +1,1714 @@
+{
+  "submission": {
+    "id": "2eae99b4-ae8c-4e02-b84a-deb53735d1fa",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T03:29:14.391250Z",
+    "updated_at": "2025-12-03T03:29:14.391250Z"
+  },
+  "content": [
+    {
+      "id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "submission_id": "2eae99b4-ae8c-4e02-b84a-deb53735d1fa",
+      "content_type": "manuscript",
+      "content_text": "# Complementary biosensors reveal different G-protein signaling modes triggered by GPCRs and non-receptor activators\n\n## Authors\n\n- Mikel Garcia-Marcos<sup>1</sup> ([ORCID: 0000-0001-9513-4826](https://orcid.org/0000-0001-9513-4826)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry, Boston University School of Medicine Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nIt has become evident that activation of heterotrimeric G-proteins by cytoplasmic proteins that are not G-protein-coupled receptors (GPCRs) plays a role in physiology and disease. Despite sharing the same biochemical guanine nucleotide exchange factor (GEF) activity as GPCRs in vitro, the mechanisms by which these cytoplasmic proteins trigger G-protein-dependent signaling in cells have not been elucidated. Heterotrimeric G-proteins can give rise to two active signaling species, G\u03b1-GTP and dissociated G\u03b2\u03b3, with different downstream effectors, but how non-receptor GEFs affect the levels of these two species in cells is not known. Here, a systematic comparison of GPCRs and three unrelated non-receptor proteins with GEF activity in vitro (GIV/Girdin, AGS1/Dexras1, and Ric-8A) revealed high divergence in their contribution to generating G\u03b1-GTP and free G\u03b2\u03b3 in cells directly measured with live-cell biosensors. These findings demonstrate fundamental differences in how receptor and non-receptor G-protein activators promote signaling in cells despite sharing similar biochemical activities in vitro.\n\n## Introduction\n\nHeterotrimeric G-proteins are ubiquitous molecular switches that transduce extracellular signals into intracellular cascades of biochemical reactions to steer cellular responses (Gilman, 1987). The ON/OFF state of these switches is defined by their nucleotide binding status\u2014GDP-bound G-proteins are OFF, whereas GTP-bound G-proteins are ON. The switching between states is primarily determined by two biochemical events. The first one is nucleotide exchange of GDP for GTP, which determines the rate of activation, and the second one is hydrolysis of GTP to GDP, which determines the rate of inactivation. While these two reactions can be carried out spontaneously by G-proteins, they are tightly regulated by the enzymatic activity of other proteins in the cellular context. The G-protein regulatory mechanism controlled by G-protein-coupled receptors (GPCRs) is the best characterized to date (Pierce et al., 2002; Weis and Kobilka, 2018). GPCRs in their active conformation are guanine\u00a0nucleotide exchange factors (GEFs) that catalyze nucleotide exchange on the G\u03b1 subunit of G\u03b1-G\u03b2\u03b3 heterotrimers. Upon GTP\u00a0loading, G\u03b2\u03b3 disengages from G\u03b1, leading to the formation of two active signaling species, that\u00a0is, G\u03b1-GTP and free G\u03b2\u03b3, that can engage their respective intracellular effectors to initiate signaling cascades. In addition to GPCR-mediated activation, G-proteins are regulated by many cytoplasmic proteins with different enzymatic activities (Sato et al., 2006; Siderovski and Willard, 2005). These include proteins that accelerate the intrinsic rate of nucleotide hydrolysis by G-proteins (GTPase accelerating proteins [GAPs]) (Ross and Wilkie, 2000), proteins that block nucleotide exchange (guanine\u00a0nucleotide dissociation inhibitors [GDIs]) (Blumer et al., 2012), or even GEFs that are not GPCRs (Cismowski et al., 2000; DiGiacomo et al., 2018; Tall, 2013; Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/65620/elife-65620-fig1-v2.jpg)\n\n**Figure 1.:** (A) Diagram of the G-protein-coupled receptor\u00a0(GPCR)/G-protein activation cycle and different types of cytoplasmic G-protein regulators. (B) Diagram of the experimental approach used to control the activating input for G-protein regulators and simultaneously monitor the G-protein activity output. Chemically\u00a0induced recruitment of various G-protein regulators to the vicinity of G-proteins at the plasma membrane is achieved through rapamycin-mediated dimerization of FKBP and FRB domains, and G-protein activity is recorded using live-cell bioluminescence resonance energy transfer\u00a0(BRET) biosensors for free G\u03b2\u03b3 or G\u03b1i-GTP. G\u03b2\u03b3 tagged with a split YFP (Venus) binds to the C-terminal domain of GRK3 (GRK3ct) fused to nanoluciferase (Nluc) when dissociated from G\u03b1, resulting in BRET from Nluc to YFP. G\u03b1i3 internally tagged with a YFP (Citrine) at the \u03b1b/\u03b1c loop binds to the synthetic sequence KB-1753 fused to Nluc when bound to GTP, resulting in BRET from Nluc to YFP.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65620/elife-65620-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Bioluminescence resonance energy transfer\u00a0(BRET) ratios were determined in HEK293T cells expressing the components of the biosensor for free G\u03b2\u03b3 (top) or G\u03b1i-GTP (bottom), the membrane-anchored FRB construct, and the indicated FKBP-fused G-protein regulators (GIVGBA, AGS1*, Ric-8A*, or R12 GL) under resting conditions. Mean\u00a0\u00b1\u00a0SD, n\u00a0=\u00a06\u20138. Representative immunoblots confirming the expression of FKBP-fused constructs and different G-proteins are shown. Some of the results with Ric-8A* using the G\u03b1i-GTP biosensor have been previously shown in Maziarz et al., 2020 but are displayed here again for clarity (with permission from the publisher).\n\nFrom a historical perspective, the heterotrimeric G-protein research field has relied heavily on reductionist approaches. Breaking down complex systems into defined biochemical entities that can be reconstituted and rigorously characterized in vitro has been a powerful approach to subsequently understand the mechanisms operating in cells. This approach has proven particularly successful for understanding GPCR-mediated regulation of G-proteins, a mechanism with broad biomedical implications that has been extensively characterized at the molecular level and that represents one of the most widely pursued pharmacological targets (Sriram and Insel, 2018). Similar biochemical reductionist approaches have also been useful to define the enzymatic activities of cytoplasmic regulators of G-proteins like GAPs, GDIs, and non-receptor GEFs, but have left several open questions about how these regulatory mechanisms operate in cells. For example, if G-protein signaling activity in cells is defined by the formation of G\u03b1-GTP or free G\u03b2\u03b3, as each one of these species is sufficient to trigger downstream signaling, it is unclear how some GDIs and non-receptor GEFs affect G-protein signaling as a whole. For example, GDIs of the GoLoco motif family have paradoxical effects on G-proteins. On one hand, they bind to inactive, GDP-loaded G\u03b1 subunits to prevent the formation of G\u03b1-GTP in vitro (De Vries et al., 2000; Kimple et al., 2002; Natochin et al., 2000). On the other hand, they also prevent the association of G\u03b2\u03b3 with G\u03b1-GDP (Ghosh et al., 2003; Webb et al., 2005). In fact, GoLoco motif GDIs were originally identified in a genetic screen for \u2018activators of G-protein signaling (AGS)\u2019 in yeast that relied on signaling readouts activated by free G\u03b2\u03b3 (Cismowski et al., 1999). The situation with several non-receptor GEFs is similarly unclear. A group of non-receptor GEFs characterized by a G\u03b1-binding-and-activating (GBA) motif has been shown not only to promote nucleotide exchange in vitro, but also to physically displace G\u03b2\u03b3 from GDP-bound G\u03b1 (Aznar et al., 2015; Garcia-Marcos et al., 2009; Maziarz et al., 2018), raising the question of what is the relative contribution of each mechanism, G\u03b1-GTP formation and G\u03b2\u03b3 release, to downstream signaling in cells. Other non-receptor GEFs like Ric-8 proteins promote nucleotide exchange on monomeric G\u03b1 but not on G\u03b1-G\u03b2\u03b3 heterotrimers (Tall et al., 2003), which has led to the contentious speculation that Ric-8 proteins might not regulate directly G-protein activity in cells, but rather work primarily as folding chaperones (Chan et al., 2013; Tall et al., 2013). Yet another non-receptor GEF, AGS1 (a.k.a. Dexras1), has been shown to activate nucleotide exchange on both monomeric G\u03b1 or G\u03b1-G\u03b2\u03b3 heterotrimers in vitro (Cismowski et al., 2000), but how it influences G-protein signaling in cells is not understood well.\n\nDespite these gaps in mechanistic knowledge, activation of G-proteins by cytoplasmic proteins has been proven to impact various cellular processes and its dysregulation to be linked to different pathologies. This has been made particularly evident for non-receptor GEFs of the GBA family, for which the G-protein regulatory activity can be specifically disabled through mutagenesis (Coleman et al., 2016; de Opakua et al., 2017; Garcia-Marcos et al., 2009; Garcia-Marcos et al., 2012; Maziarz et al., 2018). This surgical approach has been leveraged to establish that G-protein regulation by GBA proteins, like GIV(a.k.a. Girdin) and DAPLE, is involved in normal physiological processes (e.g., formation of the neural tube during embryonic development), or in disease (e.g., cancer metastasis or birth defects) (Aznar et al., 2015; Garcia-Marcos et al., 2015; Ghosh, 2015; Leyme et al., 2017; Marivin et al., 2019). Overall, the involvement of these cytoplasmic regulators in (patho)physiological processes make imperative a more detailed understanding of their mechanisms of action in cells.\n\nThe slow progress in understanding G-protein regulation by cytoplasmic proteins compared to their regulation by GPCRs could be due to two experimental issues. One is that the G-protein regulatory function of many GPCRs can be stimulated (and inhibited) with high precision by the simple addition of extracellular ligands, whereas this is not possible for cytoplasmic regulators of G-proteins. The second experimental issue is that approaches to directly detect G-protein activity in cells have typically relied on the detection of G\u03b1-G\u03b2\u03b3 dissociation instead of detecting G\u03b1-GTP. While these two signaling events correlate well in the process of GPCR-mediated G-protein activation, this is not necessarily the case for many cytoplasmic regulators of G-proteins, making evident the need for detecting both free G\u03b2\u03b3 and G\u03b1-GTP formation to understand how they operate in cells. Here, a cell-based approach was developed and implemented to overcome current limitations to study the mechanisms of G-protein regulation by cytoplasmic proteins. For this, the action of individual cytoplasmic regulators on their cognate G-proteins was triggered with an exogenous small molecule, and the responses evaluated with real-time biosensors for both G\u03b1-GTP and free G\u03b2\u03b3. The resulting experimental system allows to precisely modulate and detect G-protein activity, similar to what can be done biochemically with purified proteins in vitro, but in the more physiologically relevant environment of the cell. This newly developed approach allowed to pinpoint key differences between the modes of G-protein signaling regulation in cells exerted by various proteins with GEF activity, including both receptor (i.e., GPCRs) and non-receptor proteins.\n\n## Results\n\n### Direct interrogation of G-protein activity regulation by cytoplasmic proteins in cells\n\nTo dissect the specific impact of cytoplasmic proteins on the activity of heterotrimeric G-proteins in cells, a strategy to control the signal input and simultaneously assess possible signal outputs was envisioned (Figure 1B). These studies were focused on Gi proteins because this is the group of heterotrimeric G-proteins for which cytoplasmic regulators have been discovered and characterized more extensively. The premise to establish control over the input is that triggering the relocalization of G-protein regulators from the cytosol to the plasma membrane would allow their action on their constitutively membrane-anchored Gi protein substrates by virtue of increasing the local concentration of the reactants. This was achieved by implementing chemically\u00a0induced dimerization with rapamycin, which has been successfully applied in the past to rapidly modulate Gi signaling with some GAPs and non-receptor GEFs (Muntean and Martemyanov, 2016; Parag-Sharma et al., 2016). The simultaneous assessment of signaling outputs was carried out by using optical biosensors based on bioluminescence resonance energy transfer (BRET). Because G-protein signaling can be propagated via either G\u03b1-GTP or free G\u03b2\u03b3 subunits, biosensors for each one of these two active species were implemented in parallel (Figure 1B). The free G\u03b2\u03b3 biosensor is based on a previous design by Hollins et al., 2009; Masuho et al., 2015, whereas the G\u03b1i-GTP biosensor is based on a recently described design by Maziarz et al., 2020. In both cases, activity is reported as an increase in BRET due to binding of fluorescent protein (FP)-tagged G-protein to a luciferase-tagged protein module that specifically binds to either dissociated G\u03b2\u03b3 (i.e., the C-terminal region of GRK3, GRK3ct) or GTP-bound G\u03b1i (i.e., the synthetic peptide KB-1753).\n\nThree unrelated non-receptor GEFs were investigated: GIV (Garcia-Marcos et al., 2009), AGS1 (Cismowski et al., 2000), and Ric-8A (Tall et al., 2003). For comparison, the GoLoco motif of RGS12 (R12 GL), which has GDI instead of GEF activity in vitro (Kimple et al., 2001), was also investigated (Figure 1B), and the M4 muscarinic receptor (M4R), a prototypical Gi-activating GPCR, was used as an internal reference to benchmark responses. All cytoplasmic G-protein regulators were fused to the rapamycin-binding domain FKBP separated by a flexible linker. For GIV, Ric-8A and R12 GL, only the specific domains or motifs that are necessary and sufficient to regulate G-protein activity in vitro were used in the constructs (see 'Materials and methods' for details). This was done to avoid potential confounding factors for the interpretation of results, like indirect effects on G-protein signaling or undesired association with membranes in the absence of rapamycin via other domains of the proteins. Along the same lines, the prenylation CAAX motif of AGS1 was mutated to prevent its membrane targeting. To direct the FKBP-fused G-protein regulators to membranes upon rapamycin stimulation, the FRB domain that dimerizes with FKBP was fused to a membrane targeting sequence. These constructs were co-expressed in HEK293T cells along with the BRET biosensor components. It should be noted that under these experimental conditions G-proteins or their regulators are not necessarily expressed in cells at the same levels as their native counterparts, and that G-proteins and regulators are modified by fluorescent protein\u00a0(FP) tagging and truncation/mutation, respectively. Despite this limitation of the approach, the effect of different regulators on G-protein activity can be precisely interrogated and directly compared under the same experimental conditions while benchmarking against GPCR-mediated responses.\n\nFKBP-fused constructs were expressed at comparable levels (Figure 1\u2014figure supplement 1). Consistent with the expectation that FKBP-fused constructs localized in the cytosol cannot effectively reach and activate G-proteins, no significant changes in BRET were observed in cells expressing the FKBP fusions in the absence of rapamycin stimulation (Figure 1\u2014figure supplement 1). These constructs did not cause changes in the total levels of G-proteins expressed either. The exception was a modest increase in G\u03b1i-GTP BRET upon expression of Ric-8A, which was paralleled by a modest increase in the protein levels of G\u03b1i-YFP (Maziarz et al., 2020). The most likely explanation for the increased BRET is not the direct activation of G-proteins by Ric-8A, but an increase in non-specific donor-acceptor collisions due to the modest increase in BRET acceptor expression.\n\n### Non-receptor GEFs display different abilities to promote G\u03b1-GTP and/or free G\u03b2\u03b3 formation\n\nRapamycin stimulation led to rapid and robust formation of free G\u03b2\u03b3 in cells expressing either GIV or AGS1, whereas cells expressing Ric-8A did not display any response (Figure 2, top). The amplitude of the responses by the two non-receptor GEFs was comparable to that observed upon stimulation of the M4 muscarinic receptor (M4R), a prototypical Gi-activating GPCR, with an agonist concentration that elicits maximal activation in this assay format (Garcia-Marcos et al., 2020). In contrast, formation of G\u03b1i-GTP upon rapamycin stimulation was only detected in cells expressing AGS1 but not in cells expressing GIV or Ric-8A (Figure 2, top). The G\u03b1i-GTP response with AGS1 was comparable to that observed upon M4R stimulation. Consistent with a previous report (Maziarz et al., 2020), R12 GL, which has GDI activity in vitro, also led to an increase in free G\u03b2\u03b3 but caused no change in G\u03b1i-GTP levels (Figure 2). The increase in free G\u03b2\u03b3 was somewhat smaller than that observed with GIV or AGS1. To further characterize and compare the mechanism of G-protein activation by non-receptor GEFs and GPCRs, we investigated the effect of pertussis toxin (PTX) on the G\u03b2\u03b3 responses observed upon stimulation of GIV, AGS1, or M4R. PTX ADP-ribosylates a cysteine residue in the C-terminal tail of G\u03b1i proteins, which precludes their binding to and activation by GPCRs. As expected, PTX completely suppressed the G\u03b2\u03b3 response upon M4R stimulation (Figure 2\u2014figure supplement 1). As for the two non-receptor GEFs, PTX did not affect the G\u03b2\u03b3 response elicited by GIV, but greatly diminished the response by AGS1 (Figure 2\u2014figure supplement 1). The lack of effect of PTX on the GIV-mediated response is consistent with the lack of involvement of the C-terminus of G\u03b1i in binding to GIV (de Opakua et al., 2017).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/65620/elife-65620-fig2-v2.jpg)\n\n**Figure 2.:** HEK293T cells expressing the components of the bioluminescence resonance energy transfer\u00a0(BRET) biosensor for free G\u03b2\u03b3 (top) or G\u03b1i-GTP (bottom), the membrane-anchored FRB construct, and the indicated FKBP-fused G-protein regulators GIV\u00a0GBA, AGS1*, Ric-8A*, or R12 GL were stimulated with rapamycin (0.5 \u03bcM) at the indicated time during kinetic BRET measurements. Stimulation of ectopically expressed M4 muscarinic receptor (M4R) with carbachol (100 \u03bcM) was done as a reference condition, and rapamycin stimulation of cells not expressing FKBP-fused constructs was done as a negative control. Bar graphs on the right summarize the BRET changes 90 s after addition of rapamycin or carbachol. Mean\u00a0\u00b1\u00a0SD, n\u00a0=\u00a03\u20134. In the kinetic traces, the SD is displayed as bars of lighter color tone than data points and only in the positive direction for clarity.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65620/elife-65620-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** HEK293T cells expressing the components of the BRET biosensor for free G\u03b2\u03b3, M4R, the membrane-anchored FRB construct, and FKBP-GIV GBA, or FKBP-AGS1* were pretreated (red) or not (black) with PTX. Cells were stimulated with carbachol (100 \u03bcM) or rapamycin (0.5 \u03bcM) during kinetic BRET measurements as indicated. Mean\u00a0\u00b1\u00a0SD, n\u00a0=\u00a04. SD is displayed as bars of lighter color tone than data points and only in the positive direction for clarity.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65620/elife-65620-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** HEK293T cells expressing the components of the BRET biosensor for free G\u03b2\u03b3 (top) or G\u03b1i-GTP (bottom), the membrane-anchored FRB construct, and FKBP-fused GIV GBA or GIV-CT were stimulated with rapamycin (0.5 \u03bcM) at the indicated time during kinetic BRET measurements. Stimulation of ectopically expressed M4R with carbachol (100 \u03bcM) was done as a reference condition, and rapamycin stimulation of cells not expressing FKBP-fused constructs was done as a negative control. Mean\u00a0\u00b1\u00a0SD, n\u00a0=\u00a03\u20134. SD is displayed as bars of lighter color tone than data points and only in the positive direction for clarity. Representative immunoblots confirming the expression of similar amounts of FKBP-fused GIV GBA and GIV-CT and different G-proteins are shown on the right.\n\nTogether, these results highlight marked differences in G-protein activation mechanisms among non-receptor GEFs. AGS1 mimics GPCRs in that it activates proportionately G\u03b1-GTP and free G\u03b2\u03b3 formation, and that its action is suppressed by PTX. In contrast, GIV and Ric-8A fail to promote detectable G\u03b1-GTP formation, despite possessing GEF activity in vitro. For Ric-8A, this could be explained by previous observations that it cannot promote nucleotide exchange on G-protein heterotrimers (Tall et al., 2003), which might be the predominant G-protein species in cells (Krumins and Gilman, 2006). The lack of G\u03b2\u03b3 formation by Ric-8A would also be in agreement with this interpretation. The lack of measurable G\u03b1i-GTP formation by GIV is more puzzling for several reasons. First, the release of G\u03b2\u03b3 under the same experimental conditions demonstrates that GIV can rapidly act on G\u03b1i within G-protein heterotrimers in cells. Second, previous work has shown that GIV can promote the formation of G\u03b1i-GTP in cells by using antibodies that specifically recognize this species (Lin et al., 2014; Lopez-Sanchez et al., 2014; Midde et al., 2015). And third, even with a very similar experimental paradigm of chemically\u00a0induced membrane recruitment, GIV has been shown to inhibit cAMP (Maziarz et al., 2018), presumably via inhibition of adenylyl cyclase by G\u03b1i-GTP. The next sections focus on addressing this puzzle on the mechanism of G-protein activation by GIV.\n\n### GIV-CT has the same G-protein activating properties as GIV GBA motif\n\nOne potential caveat of the experiments with GIV above is that the construct used contained only its GBA motif. Although it is unlikely that this would explain the lack of G\u03b1i-GTP formation, because the GBA motif is sufficient to promote nucleotide exchange in vitro (de Opakua et al., 2017), this issue was investigated more thoroughly by using a larger GIV construct. Experiments in this assay format with full-length GIV are not feasible because the protein is\u00a0>250 KDa and contains multiple domains that associate with membranes or cytoskeletal components. Instead, a C-terminal region of 210 amino acids (1660\u20131870, GIV-CT) was used. GIV-CT not only fully recapitulates the properties of GIV GBA motif in activating G-proteins in vitro (de Opakua et al., 2017), but also recapitulates the properties of full-length GIV in promoting G-protein-dependent signaling in cells (Ma et al., 2015a; Midde et al., 2015). Rapamycin-induced recruitment of GIV-CT induced an increase in free G\u03b2\u03b3 levels similar to that caused by GIV GBA (Figure 2\u2014figure supplement 2). Also like GIV GBA, it failed to elicit any detectable increase in G\u03b1i-GTP, suggesting that the lack of G\u03b1i-GTP response is not an inherent defect of the shorter construct.\n\n### cAMP dampening by GIV\u2019s GBA motif is blocked upon G\u03b2\u03b3 scavenging\n\nSuppression of cAMP through direct inhibition of adenylyl cyclase activity is what originally defined the Gi subfamily of G-proteins. Although this is widely attributed to the action of G\u03b1i-GTP on adenylyl cyclases, G\u03b2\u03b3 can also directly modulate the production of cAMP by adenylyl cyclases (Sadana and Dessauer, 2009; Sunahara et al., 1996). GIV has been previously shown to decrease cAMP levels in cells (Maziarz et al., 2018; Midde et al., 2015), and the results presented above (Figure 2) indicate that it promotes the formation of detectable levels of G\u03b2\u03b3 but not of G\u03b1i-GTP. Together, the above prompted the investigation of whether GIV-induced cAMP dampening is mediated though G\u03b2\u03b3. For this, the effect of GIV recruitment to membranes on forskolin-induced cAMP was determined with or without co-expression of the C-terminal region of GRK2 (GRK2ct) (Figure 3). GRK2ct binds with high affinity to free G\u03b2\u03b3 subunits and precludes their binding to effectors (Koch et al., 1994). Consistent with previous findings by Maziarz et al., 2018, GIV recruitment to membranes led to a decrease in cAMP (Figure 3). This effect of GIV was efficiently suppressed by expression of GRK2ct (Figure 3), suggesting that it is primarily mediated by the formation of free G\u03b2\u03b3 subunits rather than by G\u03b1i-GTP.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/65620/elife-65620-fig3-v2.jpg)\n\n**Figure 3.:** HEK293T cells were transfected with plasmids for the expression of the cAMP sensor Nluc-EPAC-VV, the membrane-anchored FRB construct, and FKBP-fused GIV GBA or an empty plasmid in the presence or absence of GRK2ct as indicated. Cells were stimulated with forskolin (black) or sequentially with forskolin and rapamycin (red) at the indicated times during kinetic BRET measurements. Forkolin (Fsk)\u00a0=\u00a03 \u03bcM; rapamycin\u00a0=\u00a00.5 \u03bcM. Time traces are from one representative experiment, and the quantification of rapamycin-induced inhibition of the forskolin cAMP response shown presented in the scatter plot on the bottom left is the mean\u00a0\u00b1\u00a0SD of four independent experiments. A representative immunoblot confirming the expression of GIV GBA and GRK2ct is shown on the bottom right.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65620/elife-65620-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Top, diagram summarizing the model proposed by Kalogriopoulos et al., 2020 to explain the role of GIV in facilitating G\u03b1i activation by RTK-mediated phosphorylation is shown on the left. The panel on the right displays a diagram of the experimental approach utilized to mimic the recruitment of GIV to RTKs and assess its direct consequences on G\u03b1i-GTP or free G\u03b2\u03b3 formation. Bottom, HEK293T cells expressing exogenous EGFR, the components of the BRET biosensor for free G\u03b2\u03b3 (top) or G\u03b1i-GTP (bottom), the membrane-anchored FRB construct, and Grb2-GBA WT (green) or Grb2-GBA FA mutant (red) constructs were stimulated with EGF (50 ng/\u03bcl) at the indicated time during kinetic BRET measurements. Stimulation of ectopically expressed M4R with carbachol (100 \u03bcM) was done as a reference condition, and EGF stimulation of cells not expressing Grb2-GBA constructs was done as a negative control. Mean\u00a0\u00b1\u00a0SD, n\u00a0=\u00a02. SD is displayed as bars of lighter color tone than data points and only in the positive direction for clarity. Representative immunoblots confirming the expression of similar amounts of Grb2-GBA WT and Grb2-GBA FA are shown on the right.\n\n### Recruitment of GIV\u2019s GBA motif to RTKs promotes G\u03b2\u03b3 release but not G\u03b1i-GTP formation\n\nKalogriopoulos et al., 2020 have recently proposed that GIV facilitates EGFR-mediated phosphorylation of G\u03b1i by binding simultaneously to the inactive G-protein and the active, auto-phosphorylated RTK. Formation of this complex leads to G\u03b1i phosphorylation by EGFR, which in turn promotes GTP loading by accelerating nucleotide exchange (Figure 3\u2014figure supplement 1, top). This posits that a mechanism by which GIV promotes G\u03b1i-GTP formation in cells is through GBA motif-dependent recruitment of G\u03b1i to the vicinity of EGFR. To directly test this model (Figure 3\u2014figure supplement 1, top), G\u03b1i-GTP BRET was determined upon EGF stimulation in HEK293T cells expressing EGFR and GIV. In initial experiments with cells expressing GIV-CT, which contains both the G-protein and the RTK binding regions (Lin et al., 2014), no G\u03b1i-GTP or free G\u03b2\u03b3 formation was detected upon EGF stimulation (data not shown), suggesting that recruitment of GIV to EGFR is inefficient under these conditions. As an alternative to overcome this limitation, we addressed the impact of GIV-dependent recruitment of G\u03b1i to EGFR by fusing GIV\u2019s GBA motif to the adaptor protein Grb2, which is efficiently recruited to active EGFR (Lowenstein et al., 1992;\u00a0Figure 3\u2014figure supplement 1). In cells expressing the Grb2-GBA fusion, EGF stimulation led to an increase of free G\u03b2\u03b3 but not of G\u03b1i-GTP (Figure 3\u2014figure supplement 1). The G\u03b2\u03b3 response was not recapitulated when a Grb2-GBA construct bearing the G\u03b1i binding-deficient mutation F1685A (FA) of GIV (de Opakua et al., 2017; Garcia-Marcos et al., 2009) was used (Figure 3\u2014figure supplement 1), indicating that the observed response is specifically caused by GIV\u2019s GBA motif and not by other EGFR triggered signaling events. These results show that, while an active EGFR-GIV complex engages Gi proteins to promote the release of G\u03b2\u03b3, it is still inefficient in promoting the formation of G\u03b1i-GTP.\n\n### G\u03b2\u03b3 release by GIV is insensitive to cellular GTP depletion\n\nIt is possible that (i) GIV promotes the formation of G\u03b1i-GTP below the detection levels of the BRET assay used above, and that (ii) this in turn contributes to the formation of larger levels of free G\u03b2\u03b3. The former is suggested by previous evidence of GIV-dependent G\u03b1i-GTP formation in cells by using an antibody-based approach (Maziarz et al., 2018; Midde et al., 2015), which might be more sensitive than the BRET assay above. The latter is suggested by the observation that R12 GL promotes a smaller increase of free G\u03b2\u03b3 than GIV (Figure 2), even though R12 GL has an affinity for G\u03b1i about 10\u00a0times higher than that of GIV (de Opakua et al., 2017). It is therefore conceivable that GIV utilizes mechanisms other than just physical displacement by mass action to achieve formation of free G\u03b2\u03b3 more efficiently than R12 GL. For example, after displacing G\u03b2\u03b3 from G\u03b1i, GIV might weakly promote G\u03b1i-GTP formation to sustain the dissociated status of G\u03b2\u03b3, which R12 GL could not because it is a GDI. This point was addressed by investigating the requirement of GTP for GIV-mediated G\u03b2\u03b3 responses using a nucleotide depletion protocol in semi-permeabilized cells previously described by Qin et al., 2011;\u00a0Qin et al., 2008. BRET responses triggered by different regulators were compared in cells depleted of nucleotides or replenished with near-physiological levels of GTP (0.25 mM). GIV-induced G\u03b2\u03b3 responses were very similar in the presence or absence of added GTP after the nucleotide depletion protocol (Figure 4). Similar observations were made for R12 GL-induced G\u03b2\u03b3 BRET responses, which are not expected to require GTP. In contrast, agonist-stimulated GPCR G\u03b2\u03b3 BRET responses were larger in the GTP-replenished condition (Figure 4).\u00a0Although it is unclear if the GPCR response observed in the absence of GTP addition is due to incomplete nucleotide depletion and/or a G-protein rearrangement that occurs upon engagement with active GPCRs in the absence of nucleotides (Chung et al., 2011; Rasmussen et al., 2011), these results indicate that G\u03b2\u03b3 release induced by GIV is largely independent of the presence of physiological levels of GTP.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/65620/elife-65620-fig4-v2.jpg)\n\n**Figure 4.:** HEK293T cells expressing the components of the BRET biosensor for free G\u03b2\u03b3, the membrane-anchored FRB construct, and FKBP-fused GIV GBA or R12 GL were depleted of nucleotides (black) or replenished with GTP (0.25 mM, red) as indicated in 'Materials and methods'. Cells were stimulated with rapamycin (0.5 \u03bcM) at the indicated time during kinetic BRET measurements. Stimulation of ectopically expressed M4R with carbachol (100 \u03bcM) was done as a reference condition, and rapamycin stimulation of cells not expressing FKBP-fused constructs was done as a negative control. The bar graph on the bottom summarizes the BRET changes 90 s after addition of rapamycin or carbachol. Mean\u00a0\u00b1\u00a0SD, n\u00a0=\u00a03\u20134. In the kinetic traces, the SD is displayed as bars of lighter color tone than data points and only in the positive direction for clarity.\n\n### GIV GBA does not suppress GPCR-mediated G\u03b1-GTP formation like R12 GL\n\nData presented above shows that GIV GBA and R12 GL display similar G-protein signaling properties in cells despite having striking different behavior in vitro\u2014that\u00a0is, the former is a GEF and the latter is a GDI. Next, the effects of GIV GBA and R12 GL on G\u03b1-GTP formation were compared under conditions of GPCR stimulation, which represent a regime of high nucleotide exchange not present in the previously investigated resting conditions. After stimulation of M4R with carbachol, addition of rapamycin led to a rapid drop of G\u03b1i-GTP in cells expressing R12 GL compared to controls, whereas no significant change in G\u03b1i-GTP was observed in cells expressing GIV GBA (Figure 5). These results suggest that the GDI activity of R12 GL efficiently sequesters monomeric G\u03b1-GDP, reducing the pool of G\u03b1(GDP)-G\u03b2\u03b3 trimeric substrate used by the GPCR to sustain the higher steady-state levels of G\u03b1-GTP achieved upon stimulation. In contrast, GIV GBA, which is even more efficient than R12 GL in dissociating G\u03b1-G\u03b2\u03b3 complexes (Figure 2), does not seem to significantly prevent the utilization of G\u03b1(GDP)-G\u03b2\u03b3 by GPCRs, suggesting that it does not lead to sequestration of monomeric G\u03b1-GDP. As opposed to what occurs with a GDI like R12 GL, which locks G\u03b1 in its GDP-bound state, GIV-bound G\u03b1 can exchange nucleotides. Then, GIV would dissociate from the G-protein upon transient formation of G\u03b1i-GTP, which would be rapidly converted into G\u03b1-GDP to replenish G\u03b1(GDP)-G\u03b2\u03b3 levels.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/65620/elife-65620-fig5-v2.jpg)\n\n**Figure 5.:** HEK293T cells expressing the components of the BRET biosensor for G\u03b1i-GTP, the membrane-anchored FRB construct, M4R, and FKBP-fused GIV GBA or R12 GL were sequentially stimulated with carbachol (100 \u03bcM) and rapamycin (0.5 \u03bcM) at the indicated times during kinetic BRET measurements. Mean\u00a0\u00b1\u00a0SD, n\u00a0=\u00a04. SD is displayed as bars of lighter color tone than data points and only in the positive direction for clarity.\n\n### GIV GBA does not hinder GPCR-mediated activation of G-proteins\n\nThe sequestration model proposed above was further investigated by characterizing how different cytoplasmic regulators affect GPCR-mediated G-protein activation. Essentially, three qualitative scenarios were proposed and tested considering that the availability of G\u03b1(GDP)-G\u03b2\u03b3 complexes is limiting their utilization by GPCRs to generate G\u03b1i-GTP and free G\u03b2\u03b3 (Figure 6A). In each scenario, the action of cytoplasmic regulators is triggered before GPCR stimulation, which leads to a new dynamic equilibrium between G\u03b1(GDP)-G\u03b2\u03b3 and active G\u03b1/G\u03b2\u03b3 species prior to receptor-mediated activation. In scenario one, the GDI R12 GL reduces the availability of G\u03b1(GDP)-G\u03b2\u03b3 by dissociating G\u03b1 from G\u03b2\u03b3 and locking it in the G\u03b1-GDP state. In two, GIV GBA does not reduce the availability of G\u03b1(GDP)-G\u03b2\u03b3 because the association with G\u03b1-GDP can be reversed upon nucleotide exchange. In three, the GEF AGS1 reduces the availability of G\u03b1(GDP)-G\u03b2\u03b3 by competing for it with GPCRs to independently generate G\u03b1-GTP and free G\u03b2\u03b3 through multiple turnover cycles. Consistent with these proposed models, the formation of G\u03b1i-GTP and free G\u03b2\u03b3 upon M4R stimulation with carbachol were reduced by pretreatment with rapamycin in cells expressing R12 GL or AGS1 but not in cells expressing GIV (Figure 6B,C). The total G\u03b2\u03b3 BRET change observed after GIV recruitment and GPCR stimulation (time 240 s, Figure 6C) was larger than in any of the other conditions, indicating that the reduced GPCR response by R12 GL or AGS1 was not due to reaching a maximum signal. Furthermore, if the association of GIV GBA with G\u03b1-GDP can be reverted as proposed, one would also expect that its ability to generate free G\u03b2\u03b3 would be hampered after GPCR stimulation due to competitive removal of available G\u03b1(GDP)-G\u03b2\u03b3. In other words, once a GPCR is activated, formation of G\u03b1(GDP)-GIV (and subsequent generation of free G\u03b2\u03b3) would be disfavored because the equilibrium of G-protein complexes is shifted toward formation of receptor-G\u03b1(GDP)-G\u03b2\u03b3. Indeed, the G\u03b2\u03b3 response to GIV GBA was diminished in cells in which M4R had been pre-stimulated with carbachol (Figure 6\u2014figure supplement 1). Taken together, these results suggest that GIV, despite efficiently triggering G-protein signaling via G\u03b2\u03b3, does oppose activation of G-proteins by GPCRs.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/65620/elife-65620-fig6-v2.jpg)\n\n**Figure 6.:** (A) Proposed models to explain the mode of action of different cytoplasmic regulators of G-proteins on GPCR-mediated activation. (B, C) HEK293T cells expressing the components of the BRET biosensor for G\u03b1i-GTP (B) or free G\u03b2\u03b3 (C), M4R, the membrane-anchored FRB construct, and the indicated FKBP-fused G-protein regulators (R12 GL, GIV GBA, or AGS1*) were sequentially stimulated with rapamycin (0.5 \u03bcM) and carbachol at the indicated times during kinetic BRET measurements. Stimulation of cells not expressing FKBP-fused constructs with rapamycin was done as a control. Bar graphs on the top summarize the BRET changes 90 s after addition of carbachol. Mean\u00a0\u00b1\u00a0SD, n\u00a0=\u00a04. In the kinetic traces, the SD is displayed as bars of lighter color tone than data points and only in the positive direction for clarity.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65620/elife-65620-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** HEK293T cells expressing the components of the BRET biosensor for free G\u03b2\u03b3, M4R, the membrane-anchored FRB construct, and FKBP-GIV GBA were pretreated with carbachol (100 \u03bcM, red) or not (black) for 2 min before stimulation with rapamycin (0.5 \u03bcM) as indicated during kinetic BRET measurements. Mean\u00a0\u00b1\u00a0SD, n\u00a0=\u00a04. The SD is displayed as bars of lighter color tone than data points and only in the positive direction for clarity.\n\n## Discussion\n\nThis work introduces an experimental paradigm to investigate the regulation of G-proteins in cells with high precision and for a wide range of regulators beyond GPCRs. The experimental framework presented here is poised to complement other approaches that have traditionally been used to study G-protein signaling, like reductionist biochemical assays with purified proteins and genetic manipulations for more complex systems like cultured cells or whole organisms. Experiments with purified proteins allow gaining detailed insights into molecular mechanisms but can suffer from lack of physiological context, whereas genetic manipulations can reveal functionality in more physiological contexts but can fall short in delivering mechanistic detail at the molecular level. The approach presented here leverages some advantages of reductionism, in that it permits studying isolated G-protein biochemical events like nucleotide binding status and subunit dissociation upon modulation by specific protein regulators, but within the more physiological context of the cell. In this sense, it could be considered a \u2018cell-based reductionist\u2019 approach. The benefits of this are demonstrated here by the discovery that G-protein signaling modes in cells can differ greatly among proteins with similar G-protein regulatory functions in vitro, including differences between receptor and non-receptor GEFs or even among different non-receptor GEFs (see further discussion below). Also, the interplay between GPCRs and different cytoplasmic regulators in controlling G-protein activity in cells was further clarified. Like with biochemical reductionist approaches, a limitation of the studies presented here and the approach in general if considered alone is that they still rely on non-native conditions, like the use of overexpression, protein fragment fusions, or artificial means to alter the subcellular localization of proteins. It is in the context of complementarity with other well-established approaches like in vitro biochemistry and genetics that this limitation is outweighed by the additional mechanistic insights it can provide.\n\nThe in-depth characterization of the mechanisms by which non-GPCR proteins of the GBA family trigger G-protein signaling in cells exemplifies well the additional insights that can be gained through the approach presented in this work. On one hand, it was known from in vitro biochemical experiments that GBA motifs have GEF activity on G\u03b1i proteins and that they also promote the dissociation of G\u03b2\u03b3 from G\u03b1i-GDP (Aznar et al., 2015; Coleman et al., 2016; de Opakua et al., 2017; Garcia-Marcos et al., 2011a; Garcia-Marcos et al., 2010; Garcia-Marcos et al., 2009; Garcia-Marcos et al., 2012; Garcia-Marcos et al., 2011c; Marivin et al., 2019; Maziarz et al., 2018). On the other hand, genetic approaches had also established that the GBA motif of some proteins, like GIV and DAPLE, controls G-protein signaling in cells or whole organisms (Aznar et al., 2015; Garcia-Marcos et al., 2011a; Garcia-Marcos et al., 2010; Garcia-Marcos et al., 2009; Garcia-Marcos et al., 2012; Landin Malt et al., 2020; Leyme et al., 2016; Leyme et al., 2017; Leyme et al., 2015; Lin et al., 2014; Lo et al., 2015; Lopez-Sanchez et al., 2014; Ma et al., 2015b; Marivin et al., 2019; Midde et al., 2015; Sasaki et al., 2015). Thus, an unresolved question so far had been the relative contribution of the two potentially overlapping mechanism of G-protein activation-mediated GBA motifs, that\u00a0is, generation of G\u03b1i-GTP and formation of free G\u03b2\u03b3. A key conclusion of the studies presented here (Figure 2, Figure 4) is that GIV, and most likely other GBA proteins, activates G-protein signaling in cells primarily through the formation of free G\u03b2\u03b3 rather than through the\u00a0formation of G\u03b1i-GTP, despite its GEF activity in vitro. GIV enhances nucleotide exchange in vitro approximately 2.5- to 3-fold (Garcia-Marcos et al., 2011a; Garcia-Marcos et al., 2010; Garcia-Marcos et al., 2009; Garcia-Marcos et al., 2012), which is very similar to the approximately 3-fold enhancement mediated by AGS1 under similar conditions in vitro (Cismowski et al., 2000). In contrast, the studies described here reveal that AGS1 efficiently triggers the formation of G\u03b1i-GTP in cells, whereas GIV does not (Figure 2). Similarly, the enhancement of nucleotide exchange on Gi by a GPCR (e.g. \u03b12 adrenergic receptor) in vitro is 3- to 6-fold (Cerione et al., 1986; Kurose et al., 1991), which is stronger than that of GIV or AGS1 but still within the same order of magnitude. Thus, the results presented here indicate that the relative GEF activity in vitro across different G-protein activators does not correlate well with their ability to generate G\u03b1-GTP in cells. These observations not only provide mechanistic insights into G-protein activation by GBA proteins that were not evident from experiments using other approaches, but also highlight the importance of elucidating the molecular mechanisms of G-protein regulation in a cellular context.\n\nThe conclusion that GIV promotes G-protein signaling in cells primarily through the formation of free G\u03b2\u03b3 prompts the re-evaluation of previous signaling studies in cells. In fact, the vast majority of signaling readouts regulated by the GBA motif of GIV (or DAPLE) have been shown or are known to be controlled by G\u03b2\u03b3 rather than by G\u03b1i-GTP. This includes activation of the PI3K-Akt axis (Aznar et al., 2015; Bhandari et al., 2015; Garcia-Marcos et al., 2010; Garcia-Marcos et al., 2009; Garcia-Marcos et al., 2012; Gupta et al., 2016; Leyme et al., 2016; Leyme et al., 2017; Leyme et al., 2015; Ma et al., 2015a), p114RhoGEF-mediated activation of RhoA (Marivin et al., 2019), or Rac1 activation (Aznar et al., 2015). Although GBA-mediated inhibition of adenylyl cyclase (Aznar et al., 2015; Maziarz et al., 2018; Midde et al., 2015) could have been explained as an effect of G\u03b1i-GTP, evidence presented here (Figure 3) strongly suggests that this is indeed mediated by G\u03b2\u03b3 as well. Thus, although previous evidence has identified detectable levels of G\u03b1i-GTP in cells upon GIV action (Lin et al., 2014; Lopez-Sanchez et al., 2014; Midde et al., 2015), these are probably much lower than those achieved upon activation of a GPCR and insufficient to drive robust signaling directly. Thus, the functional role of the weak GEF activity of proteins with a GBA motif remains to be elucidated, whereas efficient release of G\u03b2\u03b3 subunits seems to be main mechanism by which this type of G-protein activator promotes signaling in cells.\n\nResults shown here (Figure 5, Figure 6) also indicate that proteins with a GBA motif differ mechanistically from other regulators that promote the dissociation of G\u03b2\u03b3 from G-protein heterotrimers, like GDIs that contain a GoLoco motif. This in turn might be important for the interplay between GBA proteins and GPCRs in regulating G-proteins. The data suggest that activation of G-proteins by GIV, which in many cases is triggered by surface receptors different from GPCRs (Garcia-Marcos et al., 2015; Leyme et al., 2015; Lopez-Sanchez et al., 2014), might operate without opposing efficient GPCR-mediated G-protein activation. In contrast, GDIs with a GoLoco motif efficiently suppress GPCR-mediated activation of G-proteins. Interestingly, the artificial system implemented here to recruit GIV to membranes mimics the recruitment of native GIV from the cytosol to membranes when it binds non-GPCR surface receptors upon ligand stimulation (Ghosh et al., 2010; Leyme et al., 2015), which might be the mechanism by which GIV action on G-proteins is controlled under native conditions (Parag-Sharma et al., 2016). Nevertheless, the role of GIV in the interplay between GPCR and non-GPCR receptors in G-protein regulation needs to be characterized in more detail in the future.\n\nBeyond insights gained in the understanding of GBA-mediated mechanisms of G-protein signaling regulation, the present study also provides other useful information. For example, it was shown that pertussis toxin is not a generic inhibitor of all mechanisms of Gi activation or a specific inhibitor of GPCR-mediated activation of Gi proteins (Figure 2\u2014figure supplement 1), which warranties caution in the interpretation of past and future experiments with this widely\u00a0used reagent. In addition, the chemogenetic tools presented here could be easily adapted for other applications, like synthetic biology approaches to turn different modes of G-protein signaling ON and OFF.\n\nIn summary, the combination of chemogenetics and optical biosensors presented here has demonstrated the\u00a0potential to become an experimental paradigm to expand how we study and understand signal transduction mechanisms mediated by heterotrimeric G-proteins.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HEK293T cells</td>\n      <td>ATCC</td>\n      <td>CRL3216</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>\u03b1-Tubulin (mouse monoclonal)</td>\n      <td>Sigma</td>\n      <td>T6074</td>\n      <td>Immunoblotting dilution (1: 2500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>RFP (rabbit polyclonal)</td>\n      <td>Rockland</td>\n      <td>600-401-379</td>\n      <td>Immunoblotting dilution (1: 1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>GFP (mouse monoclonal)</td>\n      <td>Clontech/Takara Bio</td>\n      <td>Cat# 632380</td>\n      <td>Immunoblotting dilution (1: 1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Hemagglutinin (HA) tag (clone 12CA5) (mouse monoclonal)</td>\n      <td>Roche</td>\n      <td>Cat# 11583816001</td>\n      <td>Immunoblotting dilution (1: 1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>MYC tag (9B11) (mouse monoclonal)</td>\n      <td>Cell Signaling</td>\n      <td>Cat# 2276</td>\n      <td>Immunoblotting dilution (1: 1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>G\u03b1i3 (rabbit polyclonal)</td>\n      <td>Santa Cruz Biotechnology</td>\n      <td>Cat# sc-262</td>\n      <td>Immunoblotting dilution (1:250)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Pan-G\u03b2 (rabbit polyclonal)</td>\n      <td>Santa Cruz Biotechnology</td>\n      <td>Cat# sc-261</td>\n      <td>Immunoblotting dilution (1: 250)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat anti-rabbit Alexa Fluor 680 (goat polyclonal)</td>\n      <td>Life Technologies</td>\n      <td>Cat# A21077</td>\n      <td>Immunoblotting dilution (1:10,000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat anti-mouse IRDye 800 (goat polyclonal)</td>\n      <td>LiCor</td>\n      <td>Cat# 926\u201332210</td>\n      <td>Immunoblotting dilution (1:10,000)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pmRFP-FKBP-pseudojanin (plasmid)</td>\n      <td>Addgene</td>\n      <td>Cat#\u00a037999</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pmRFP-FKBP-GIV GBA (plasmid)</td>\n      <td>Parag-Sharma et al., 2016</td>\n      <td></td>\n      <td>Contains human GIV aa1660-1705</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pmRFP-FKBP-AGS1* (plasmid)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Contains rat AGS1 with C278S mutation. See details in \u2018Plasmids\u2019 section of 'Materials and methods'</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pmRFP-FKBP-Ric-8A* (plasmid)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Contains rat Ric-8A aa12-492 See details in \u2018Plasmids\u2019 section of 'Materials and methods'</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pmRFP-FKBP-R12 GL (plasmid)</td>\n      <td>Maziarz et al., 2020</td>\n      <td></td>\n      <td>Contains mouse RGS12 aa1185-1221 See details in \u2018Plasmids\u2019 section of 'Materials and methods'</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Lyn11-FRB (plasmid)</td>\n      <td>Parag-Sharma et al., 2016</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pcDNA3.1-Venus(155-239)-G\u03b21 (plasmid)</td>\n      <td>Hollins et al., 2009</td>\n      <td></td>\n      <td>For the mammalian expression of G\u03b21 tagged with a fragment of Venus (VC-G\u03b21). Provided by N. Lambert (Augusta University, Augusta,\u00a0GA)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pcDNA3.1-Venus(1-155)-G\u03b32 (plasmid)</td>\n      <td>Hollins et al., 2009</td>\n      <td></td>\n      <td>For the mammalian expression of G\u03b32 tagged with a fragment of Venus (VN-G\u03b32). Provided by N. Lambert (Augusta University, Augusta,\u00a0GA)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pcDNA3.1-G\u03b21 (plasmid)</td>\n      <td>Hollins et al., 2009</td>\n      <td></td>\n      <td>For the mammalian expression of untagged G\u03b21. Provided by N. Lambert (Augusta University, Augusta,\u00a0GA)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pcDNA3.1-G\u03b32 (plasmid)</td>\n      <td>Hollins et al., 2009</td>\n      <td></td>\n      <td>For the mammalian expression of untagged G\u03b32. Provided by N. Lambert (Augusta University, Augusta,\u00a0GA)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pcDNA3-G\u03b1i3 (plasmid)</td>\n      <td>Garcia-Marcos et al., 2010</td>\n      <td></td>\n      <td>For the mammalian expression of rat G\u03b1i3</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pcDNA3.1(-)-G\u03b1i3-YFP</td>\n      <td>Marivin et al., 2016</td>\n      <td></td>\n      <td>Citrine variant of YFP inserted in the \u03b1b/\u03b1c loop of G\u03b1i3</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pcDNA3.1-masGRK3ct-Nluc (plasmid)</td>\n      <td>Masuho et al., 2015</td>\n      <td></td>\n      <td>Provided by K. Martemyanov (Scripps Research Institute, Jupiter,\u00a0FL)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pcDNA3.1-mas-KB-1753-Nluc (plasmid)</td>\n      <td>Maziarz et al., 2020</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pcDNA3.1-Nluc-EPAC-VV (plasmid)</td>\n      <td>Masuho et al., 2015</td>\n      <td></td>\n      <td>Provided by K. Martemyanov (Scripps Research Institute, Jupiter,\u00a0FL)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCS2+\u22126xMyc-GRK2ct-PM</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Contains bovine GRK2 aa495-689 fused to human Rit aa185-247 See details in \u2018Plasmids\u2019 section of 'Materials and methods'</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pcDNA3.1-3xHA-M4R (plasmid)</td>\n      <td>cDNA Resource Center at Bloomsburg University</td>\n      <td>Cat# MAR040TN00</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pcDNA6A-EGFR (plasmid)</td>\n      <td>Addgene</td>\n      <td>Cat# 42665</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Grb2-GBA</td>\n      <td>Parag-Sharma et al., 2016</td>\n      <td></td>\n      <td>Contains Grb2 fused to GIV aa1660-1705</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>NanoGlo Luciferase Assay System</td>\n      <td>Promega</td>\n      <td>Cat# N1120</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Carbachol</td>\n      <td>Acros Organics</td>\n      <td>Cat# AC-10824</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Ramapycin</td>\n      <td>Alfa Aesar</td>\n      <td>Cat# J62473</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Forskolin</td>\n      <td>Trocis</td>\n      <td>Cat# 1099</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Pertussis Toxin</td>\n      <td>List Biologicals</td>\n      <td>Cat#179A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>EGF</td>\n      <td>Gold Biotechnology</td>\n      <td>Cat# 1150-04-100</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Reagents\n\nUnless otherwise indicated, all chemical reagents were obtained from Sigma-Aldrich or Fisher Scientific. Rapamycin was purchased from Alfa Aesar (#J62473) and carbachol from Acros Organics (#AC-10824). PTX was obtained from List Biologicals (#179A) and forskolin from Tocris Bioscience (#1099). Human EGF was from Gold Biotechnology (#1150-04-100) and \u03b1-hemolysin from Sigma-Aldrich (#H9395).\n\n### Plasmids\n\nThe plasmids encoding FKBP-fused constructs were generated by replacing the pseudojanin sequence between the NruI/BamHI sites of pmRFP-FKBP-pseudojanin (Addgene, #37999) by different sequences: for pmRFP-FKBP-GIV GBA it was human GIV amino acids 1660\u20131705 (Parag-Sharma et al., 2016); for pmRFP-FKBP-AGS1* it was full length rat AGS1 (aka DEXRAS) bearing a C278S mutation to disrupt its CAAX box that allows membrane targeting; for pmRFP-FKBP-Ric-8A* it was rat Ric-8A amino acids 12\u2013492 (Maziarz et al., 2020; Thomas et al., 2011); for pmRFP-FKBP-R12 GL it was mouse RGS12 amino acids 1185\u20131221 (Maziarz et al., 2020); and for pmRFP-FKBP-GIV-CT it was human GIV amino acids 1660\u20131870 (Parag-Sharma et al., 2016). In all cases, the sequence of the G-protein regulator was separated from the FKBP domain by the flexible linker sequence SAGGSAGGSAGGSAGGSAGGPRAQASRGSG. The plasmid encoding Lyn11-FRB has been described previously (Parag-Sharma et al., 2016). The plasmid encoding bovine GRK3ct (aa 495\u2013688) fused to nanoluciferase and a membrane anchoring sequence (mas) (pcDNA3.1-masGRK3ct-NanoLuc) used as the BRET donor component in the G\u03b2\u03b3 biosensor was a kind gift from K. Martemyanov (Scripps Research Institute, Jupiter,\u00a0FL) (Masuho et al., 2015; Posokhova et al., 2013), and plasmids encoding the BRET acceptor Venus-tagged G\u03b2\u03b3 (pcDNA3.1-Venus[1-155]-G\u03b32[VN-G\u03b32] and pcDNA3.1-Venus[155-239]-G\u03b21[VC-G\u03b21]) were kindly provided by N. Lambert (Augusta University, Augusta,\u00a0GA) (Hollins et al., 2009; Qin et al., 2011). The generation of the plasmid encoding KB-1753-Nluc with a membrane anchoring sequence (pcDNA3.1-mas-KB-1753-Nluc) used as the BRET donor in the G\u03b1i-GTP biosensor has been described previously (Maziarz et al., 2020), and the plasmid expressing the G\u03b1i3 construct internally tagged with YFP at the \u2018b/c loop\u2019 (G\u03b1i3-YFP) used as the BRET acceptor has also been described elsewhere (Marivin et al., 2016). The plasmid encoding untagged rat G\u03b1i3 (pcDNA3-G\u03b1i3) has been previously described (Garcia-Marcos et al., 2011b; Ghosh et al., 2008) and the plasmids encoding untagged human G\u03b21 (pcDNA3.1-G\u03b21), and untagged human G\u03b32 (pcDNA3.1-G\u03b32) were kindly provided by N. Lambert (Augusta University, Augusta,\u00a0GA) (Hollins et al., 2009; Qin et al., 2011). The plasmid encoding the human M4R was obtained from the cDNA Resource Center at Bloomsburg University (pcDNA3.1-3xHA-M4R, cat# MAR040TN00). The plasmid encoding the cAMP biosensor Nluc-EPAC-VV (pcDNA3.1-Nluc-EPAC-VV) (Masuho et al., 2015) was a gift from K. Martemyanov (Scripps Research Institute,\u00a0Jupiter, FL). The plasmid encoding EGFR (pcDNA6A-EGFR) was obtained from Addgene (#42665). The plasmids encoding Grb2-GBA WT and Grb2-GBA FA have been described previously (Parag-Sharma et al., 2016). The plasmid encoding GRK2ct was generated by inserting a sequence of bovine GRK2 amino acids 495\u2013689 (GRK2ct) fused to a plasma membrane targeting sequence (human Rit amino acids 185\u2013247) provided by P. Wedegaertner (Thomas Jefferson University, Philadelphia,\u00a0PA) (Irannejad and Wedegaertner, 2010) into SdaI/SmaI sites of a pCS2+\u00a0plasmid that places a 6xMyc tag sequence at the N-terminus of the insert (Marivin et al., 2019).\n\n### G-protein live-cell BRET measurements\n\nHEK293T cells (ATCC, cat# CRL-3216) were grown at 37\u00b0C, 5%CO2 in high-glucose Dulbecco\u2019s modified eagle medium (DMEM) supplemented with 10% FBS, 100 U/ml penicillin, 100 \u00b5g/ml streptomycin, and 1% L-glutamine. HEK293T cells were not authenticated by STR profiling or tested for mycoplasma contamination. Approximately 400,000 cells/well were seeded on 6-well plates coated with 0.1% gelatin and transfected\u00a0~24 hr later using the calcium phosphate method. For experiments aimed at detecting free G\u03b2\u03b3, cells were transfected with the following amounts of plasmid DNA per well: 1 \u03bcg for G\u03b1i3, 0.2 \u03bcg for VC-G\u03b21, 0.2 \u03bcg VN-G\u03b32, and 0.1 \u03bcg of mas-GRK3ct-Nluc. For experiments aimed at detecting G\u03b1i-GTP, cells were transfected with the following amounts of plasmid DNA per well: 1 \u03bcg for G\u03b1i3-YFP, 0.2 \u03bcg for G\u03b21, 0.2 \u03bcg G\u03b32, and 0.1 \u03bcg of mas-KB-1753-Nluc. For either G\u03b2\u03b3 or G\u03b1i-GTP measurements, cells were co-transfected with the following amounts of plasmid DNA per well: 3 \u03bcg for Lyn11-FRB, 0.2 \u03bcg for M4R, 0.5 \u03bcg for FKBP-GIV GBA, 0.125 \u03bcg for FKBP-AGS1*, 0.05 \u03bcg for FKBP-Ric8A*, 0.1 \u03bcg for FKBP-R12 GL, and 0.5 \u03bcg for FKBP-GIV-CT. Total DNA amount per well was equalized by supplementing with empty pcDNA3.1 as needed. For experiments shown in Figure 3\u2014figure supplement 1, Lyn11-FRB and FKBP-fused constructs were omitted and the following amounts of plasmid DNA transfected instead: 1 \u03bcg for EGFR and 2 \u03bcg for Grb2-GBA.\n\nApproximately 18\u201324 hr after transfection, cells were washed with PBS, harvested by gentle scraping, and centrifuged for 5 min at 550 \u00d7 g. Cells were resuspended in assay buffer (140 mM NaCl, 5 mM KCl, 1 mM MgCl2, 1 mM CaCl2, 0.37 mM NaH2PO4, 20 mM HEPES pH 7.4, 0.1% glucose) at a concentration of approximately 1 million cells/ml; 25,000\u201350,000 cells were added to a white opaque 96-well plate (Opti-Plate, Perkin Elmer) and mixed with the nanoluciferase substrate Nano-Glo (Promega, cat# N1120, final dilution 1:200) for 2 min before measuring luminescence signals in a POLARstar OMEGA plate reader (BMG Labtech) at 28\u00b0C. Luminescence was measured at 460\u00a0\u00b1\u00a040 and 535\u00a0\u00b1\u00a010 nm, and BRET was calculated as the ratio between the emission intensity at 535\u00a0\u00b1\u00a010 nm divided by the emission intensity at 460\u00a0\u00b1\u00a040 nm. For kinetic BRET measurements, luminescence signals were measured every 0.24 s for the duration of the experiment. Reagents were added to the wells during live measurements using injectors. Kinetic measurement data are presented as the BRET change relative to the baseline signal (the average BRET ratio of the 30 s pre-stimulation). For endpoint measurements shown in Figure 1\u2014figure supplement 1, data is presented as raw BRET ratios (535 nm luminescence/460 nm luminescence) of unstimulated cells. For Figure 2\u2014figure supplement 1, PTX treatments consisted of overnight incubations with 0.2 \u00b5g/ml of the toxin. For Figure 4, cells were nucleotide-depleted by following a previously described protocol (Qin et al., 2011; Qin et al., 2008). Procedures were as described above except that cells were resuspended in a different assay buffer (140 mM potassium gluconate, 5 mM KCl, 10 mM HEPES, 1 mM EGTA, 0.3 mM CaCl2, 1 mM MgCl2, pH 7.2), and treated with 1000 U/ml of \u03b1-hemolysin and 5 mM KCN for 10 min before the start of the measurements to semi-permeabilize cells and block nucleotide synthesis, respectively. As indicated in the figures, 0.25 mM GTP was added in some cases for 2 min before stimulation with rapamycin or carbachol.\n\nAt the end of some BRET experiments, a separate aliquot of the same pool of cells used for the luminescence measurements was centrifuged for 1 min at 14,000 \u00d7 g and pellets stored at \u221220\u00b0C for subsequent immunoblot analysis (see \u2018Protein electrophoresis and Immunoblotting\u2019 section below).\n\n### cAMP live-cell BRET measurements\n\nHEK293T cells were seeded and transfected using the calcium phosphate method as in \u2018G-protein live-cell BRET measurements\u2019 section\u00a0but using the following amounts of plasmid DNA per well: 3 \u03bcg for Lyn11-FRB, 0.5 \u03bcg for FKBP-GIV GBA, 0.05 \u03bcg for Nluc-EPAC-VV, and 2 \u03bcg for GRK2ct. Total DNA amount per well was equalized by supplementing with empty pcDNA3.1 as needed. Luminescence measurements were also carried out as described in \u2018G-protein live-cell BRET measurements\u2019\u00a0section, except that signals were measured every 4 s instead of every 0.24 s. Results were presented as the inverse of the BRET ratio after subtraction of the basal BRET signal measured for 60 s before any stimulation (BRET change\u22121). Inhibition of forskolin-induced cAMP after 15 min was determined by calculating the difference in BRET changes with and without rapamycin addition after subtraction of a baseline signal measured in parallel with unstimulated cells. Samples for immunoblotting were prepared as in \u2018G-protein live-cell BRET measurements\u2019 and processed as described in \u2018Protein electrophoresis and Immunoblotting\u2019 section\u00a0below.\n\n### Protein electrophoresis and immunoblotting\n\nPellets of HEK293T cells used in BRET experiments were resuspended on ice with lysis buffer (20 mM Hepes, pH 7.2, 5 mM Mg(CH3COO)2, 125 mM K(CH3COO), 0.4% (v:v) TritonX-100, 1 mM DTT, 10 mM \u03b2-glycerophosphate, and 0.5 mM Na3VO4 supplemented with a protease inhibitor cocktail [SigmaFAST, cat# S8830]). Lysates were cleared by centrifugation (10 min at 14,000 \u00d7 g, 4\u00b0C) and boiled for 5 min in Laemmli sample buffer before protein separation by SDS-PAGE and electrophoretic transfer to PVDF membranes for 2 hr. PVDF membranes were blocked with TBS supplemented with 5% non-fat dry milk for 1 hr, and then incubated sequentially with primary and secondary antibodies. Primary antibody species, vendors, and dilutions were as follows: RFP (Rabbit, Rockland Immunochemicals, #600-401-379), 1:1000; G\u03b1i3 (Rabbit, Santa Cruz Biotechnology, #sc-262), 1:250; pan-G\u03b2 (Rabbit, Santa Cruz Biotechnology, #sc-261), 1:250; \u03b1-tubulin (Mouse, Sigma-Aldrich, #T6074); HA, 1:1000; GFP (Mouse, Clontech/Takara Bio, #632380), 1:1000; Myc (Mouse, Cell Signaling Technologies, #2276), 1:1000. Secondary antibodies (goat anti-rabbit conjugated to AlexaFluor 680 [Life Technologies, #A-21077] or goat anti-mouse conjugated to IRDye 800 [LI-COR Biosciences, #926\u201332210]) were used at 1:10,000. Infrared imaging of immunoblots was performed according to manufacturer\u2019s recommendations using an Odyssey CLx infrared imaging system (LI-COR Biosciences). Images were processed using the ImageJ software (NIH) and assembled for presentation using Photoshop and Illustrator software (Adobe).\n",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "906bd738-6956-4ff3-af52-df831931a8cb",
+      "submission_id": "2eae99b4-ae8c-4e02-b84a-deb53735d1fa",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Volker D\u00f6tsch, Goethe University Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.65620.sa1](https://doi.org/10.7554/eLife.65620.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Complementary biosensors reveal different G-protein signaling modes triggered by GPCRs and non-receptor activators\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Volker D\u00f6tsch as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Jonathan Cooper as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Sudarshan Rajagopal (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nOne issue that was discussed in particular between the reviewers is the relevance of the proposed method to normal function in light of the overexpression used and the truncation of full-length proteins.\n\nEssential revisions:\n\n1) It would be good to somehow get a handle at how \"out of range\" the expression levels for these proteins are. How much more GIV is being produced compared to native? How much native GIV is membrane targeted as opposed to elsewhere? Has a CRISPR knock-in of the FA mutant of GIV been tested?\n\n2) Although the BRET reporter system has been described before, it would be good still to describe it in Figure 1, so we don't have to dig in the experimentals to get a sense of how the various players are labeled.\n\n3) The complex formation should not be described as \"irreversible\": \"In one, the GDI R12 GL reduces the availability of G\u03b1(GDP)-G\u03b2\u03b3 by irreversibly binding to G\u03b1-GDP.\" Unless it is covalent, it is reversible. It could be effectively irreversible if the affinities and protein concentrations are high enough (unclear that is the case here although reported affinities are order of magnitude better than that of GIV).\n\n4) In Figure 6C the GIV data need some clarification. It appears because carbachol induces a similar shift in BRET in the presence of GIV compared to the GPCR alone, it is said that GIV does not hinder activation of the GPCR. It would seem that the pool of Gbg being released by GIV (before addition of carbachol) would be different than the pool of Gbg that the receptor liberates? This is different from the other three cases where the total BRET signal ends up being the same regardless of the protein. Why the difference?\n\n5) It would be better to report SD rather than SE. SD measures the amount of variability, or dispersion, from the individual data values to the mean, while the standard error measures how far the sample mean (average) of the data is likely to be from the true population mean. In these experiments, one is more interested in the SD.\n\n6) Gbg is also required for recruitment of GRK2. Has the author assessed GRK2 activity in this setting?\n\nReviewer #1:\n\nMikel Garcia-Marcos describes in this manuscript two different aspects: First he introduces a new method that can be used to investigate the effect of cellular effector proteins on the activation of G-proteins. This method is based on induced hetero-dimerization using the small drug rapamycin that has been established many years ago. He uses this system to recruit proteins with a presumed GEF activity to the membrane where they can interact with heterotrimeric G-proteins. The effect he measures on identifying the concentration of Gbeta/\u03b3 and Galpha-GTP.\n\nIn the second part he uses this system to investigate the effect of three GEF proteins on membrane-anchored Gi protein. He finds that within the group of three GEF proteins (GIV, AGS1 and Ric-8a), GIV promotes activation by dissociation of the Gbeta/\u03b3 dimer but not by formation of Galpha-GTP despite its in vitro GEF function. This result is surprising but the data are compelling.\n\nOverall, the method is interesting, enlarging the tool box for investigating the activation mechanism of G-proteins. The data on the different GEF proteins are likewise interesting and within the framework of this assay plausible.\n\nReviewer #2:\n\nThis is an interesting manuscript that addresses a very important question in the field of G-protein signaling \u2013 whether their activation by G protein-coupled receptors (GPCRs) is similar to other activators of G protein signaling such as GIV, AGS1, etc. Such an analysis has previously been limited by a lack of tools to detect free Gbg and Ga-GTP formation. The author uses novel biosensors of Gai-GTP and Gbg to probe this system. The author finds that GIV, unlike other GBA proteins, activates G protein signaling in cells primarily through the formation of free Gbg rather than through the formation of Gai-GTP, although it has GEF activity in vitro. This is unlike AGS1, which triggers the formation of Gai-GTP. Notably, both R12 and AGS1 hinder activation of G proteins while GIV does not. This clearly demonstrates that activation of heterotrimeric G proteins can occur through multiple mechanisms with different signaling outcomes. Notably, a larger role for Gbg is appreciated in promoting signaling through a variety of pathways, including inhibition of adenylyl cyclase.\n\nReviewer #3:\n\nIn this paper, the author sought to study the ability of a series of non-receptor GEFs, in particular GIV/girdin, to activate both Galpha subunits and Gbg subunits under more physiological settings. About 11 years ago the lead author reported GEF activity by GIV using purified components, although this activity was lower than that mediated by GPCRs and at orders of magnitude higher EC50. Because GIV and some other non-receptor regulators (i.e. AGS1, and RGS12) can possess the ability to displace Gbg subunits, a key question that could be addressed with these experiments is whether it is the released Gbg subunits or the GEF activity that is important for GIV function in cells.\n\nThe strength of the approach used here is that the author can trigger recruitment of the G protein binding domains of GIV and other proteins by addition of rapamycin, which allows one to study that binding interaction in the absence of the many other interactions that could be formed by these proteins in cells. The setting is more physiological than when using purified components but key weaknesses remain in that (a) all the proteins in the system are being over expressed relative to native levels, and (b) it requires truncations that have fewer competing interactions that could arguably prevent the proteins from interacting at all if they were present at native concentrations. The bottom line is that the experiments are still far from physiological.\n\nThat said, the BRET assay data look clean, reasonable control experiments are run, and they together give a surprising result in that, within the context of these experiments, there is little or no GEF activity provided by GIV, but that it can release Gbg. This is a bit of a paradigm shift for the GIV non-receptor GEF field , which has lately been the domain of two alumni from the Fahrquar lab where studies of the protein originated. In many papers to date, the underlying hypothesis from these labs, even in 2020, has been that the GEF activity of GIV drives its physiological effects. Thus it is quite admirable to perform and publish a more definitive experiment even when it goes against the standard mantra. That's good science. The data in Figure 3 was particularly illuminating, where inhibition of cAMP production was eliminated by GRK2ct, showing in this context that it is not a result of GIV GEF activity on Gi.\n\nThe methods deployed in this study should be useful to the field, in particular the rapamycin-based recruitment which could add a new dimension to cell based studies where one normally just overexpresses the proteins of interest. Its impact however is questionable because one is now potentially targeting the domains to regions they would not necessarily go because the proteins are not full length, especially when they have many other reported interaction partners and furthermore when they are being over expressed so one can measure significant BRET signal in the first place.\n\nImpact is somewhat further diminished by some backpedalling on the GEF story based on data in Figures 5 and 6. The author concludes that there may still be meaningful GEF activity mediated by GIV in vitro that serves to prevent GIV from holding on to Galpha subunits too long (they do not bind Ga-GTP). This is an attempt to explain why GIV has no effect on GPCR signaling function, while other proteins tested (AGS1, R12) do. A more parsimonious conclusion would be that GIV just doesn't have meaningful GEF activity in cells, even when overexpressed as a membrane-recruitable fragment. This seems particularly likely considering that GIV has lower affinity for Galpha subunits relative to GPCRs by orders of magnitude, and with a high nM EC50 that seems unlikely to function at physiological concentrations of these proteins.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Complementary biosensors reveal different G-protein signaling modes triggered by GPCRs and non-receptor activators\" for further consideration by eLife. Your revised article has been evaluated by Jonathan Cooper (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nReviewer #2:\n\nThe revisions have addressed my concerns.\n\nReviewer #3:\n\nDr. Garcia-Marcos has addressed many of the concerns brought up by my prior review. The paper is now easier to interpret and the figures are first class.\n\nI have mixed feelings about impact. I like the fact that the work represents a paradigm shift, straight from the lab of the world leader on this topic. The observation that this fragment of GIV can efficiently release Gbg subunits could be a game changer. On the other hand, this is a bit of a niche field in the realm of heterotrimeric G protein signaling, and many are agnostic about the ability of GIV to serve as a GEF in the first place. This is in part because a lot of the evidence comes from studies that use fragments or overexpression etc. The killer in vivo experiment has not yet been performed (a GIV knock-in that eliminates the proposed function of the GIV domain in question at physiological levels). And if one is agnostic about this issue, and if one thinks of it as more \"niche\", then it is not much of a paradigm shift.\n\nA real strength from a technical perspective here is the parallel examination of different soluble regulators of heterotrimeric G proteins using the same rapamycin membrane recruitment system. The author has done a good job describing the caveats in interpreting the data because it is true that the system, especially for GIV, is a long way from physiological\u2026GIV has many proposed interaction partners in the cell. However, the results are interesting because of the dramatically different effects on observes in the system with the various proteins and the potential for their use, at the very least, and chemical biological tools to probe G protein signaling. I agree with the author that the best way to sell this work is as an effort to characterize possible mechanisms in a cellular context. One might argue this is still \"in vitro\", but the fact that quite different answers are achieved here versus the test tube is interesting.\n\nOnly one major remaining concern. I understand the author's desire in trying to incorporate the GEF activity that has been observed with purified fragments at high concentrations in the test tube or at low levels in living cells into a working model. However, upon examining all the data in this paper, there seems to be little or no evidence here that this fragment of GIV is leading to any nucleotide exchange on Gi in the cell. And this is even after overexpression of a fragment free from other interactions in the cell. The rapamycin treatments with the Gi sensor are completely inert when it comes to GIV. Unless one argues that the Gi sensor is just not that great and the signal gets lost in the noise (and I am not sure it is wise to make that argument). Regardless, the data in this paper just doesn't support a model where GEF activity factors in (Figure 6). The GIV fragment just seems really good at liberating Gbg by some other mechanism than GTP loading, at least when it is membrane targeted in this way.\n\nThe thoughtful discussion does come up with a few ideas about how weak GEF activity might still play into the GIV system; it is just that to me the paper seems to make such speculation unnecessary. I would be comfortable with a much more simple conclusion that membrane recruitment of GIV by any mechanism could lead to Gbg release in the absence of GPCRs. That's interesting and simple.\n\nIt could be that the previously observed low \"GEF activity\" in living cells is a consequence of release of the tonic GDI activity of Gbg, allowing Gi to exchange on its own. But I'd have to dig into the papers to figure out what the controls were. I am just speculating.\n\nTypos. line 375: nor should be \"not\". Line 370: \"in controlled\" should be \"is controlled\".\n",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "773ee150-0128-493d-a996-361414b8f9ee",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C1",
+      "claim": "Activation of heterotrimeric G-proteins by cytoplasmic proteins that are not G-protein-coupled receptors (GPCRs) plays a role in physiology and disease.",
+      "claim_type": "EXPLICIT",
+      "source": "It has become evident that activation of heterotrimeric G-proteins by cytoplasmic proteins that are not G-protein-coupled receptors (GPCRs) plays a role in physiology and disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the established importance of non-receptor G-protein activators, drawing on established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "91e75bda-15eb-4486-8d99-aadf415a4dfe",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C2",
+      "claim": "Non-receptor proteins with GEF activity share the same biochemical guanine nucleotide exchange factor (GEF) activity as GPCRs in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite sharing the same biochemical guanine nucleotide exchange factor (GEF) activity as GPCRs in vitro, the mechanisms by which these cytoplasmic proteins trigger G-protein-dependent signaling in cells have not been elucidated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references established biochemical characterization of non-receptor GEFs compared to GPCRs from prior literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "e412de29-cc0f-410c-b70a-45eb8b8262b2",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C3",
+      "claim": "The mechanisms by which cytoplasmic proteins with GEF activity trigger G-protein-dependent signaling in cells have not been elucidated.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite sharing the same biochemical guanine nucleotide exchange factor (GEF) activity as GPCRs in vitro, the mechanisms by which these cytoplasmic proteins trigger G-protein-dependent signaling in cells have not been elucidated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a knowledge gap that the study aims to address.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "bdf7fa34-f1b3-4f81-bf10-27d4c1d5fbeb",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C4",
+      "claim": "Heterotrimeric G-proteins can give rise to two active signaling species: G\u03b1-GTP and dissociated G\u03b2\u03b3.",
+      "claim_type": "EXPLICIT",
+      "source": "Heterotrimeric G-proteins can give rise to two active signaling species, G\u03b1-GTP and dissociated G\u03b2\u03b3, with different downstream effectors, but how non-receptor GEFs affect the levels of these two species in cells is not known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about G-protein signaling mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "86b94da2-f97e-4942-a505-b5e2667b48b4",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C5",
+      "claim": "G\u03b1-GTP and dissociated G\u03b2\u03b3 have different downstream effectors.",
+      "claim_type": "EXPLICIT",
+      "source": "Heterotrimeric G-proteins can give rise to two active signaling species, G\u03b1-GTP and dissociated G\u03b2\u03b3, with different downstream effectors, but how non-receptor GEFs affect the levels of these two species in cells is not known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about G-protein signaling pathways.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "9b959ba2-7a99-4073-9a7d-76d06962f802",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C6",
+      "claim": "How non-receptor GEFs affect the levels of G\u03b1-GTP and free G\u03b2\u03b3 in cells is not known.",
+      "claim_type": "EXPLICIT",
+      "source": "Heterotrimeric G-proteins can give rise to two active signaling species, G\u03b1-GTP and dissociated G\u03b2\u03b3, with different downstream effectors, but how non-receptor GEFs affect the levels of these two species in cells is not known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a specific knowledge gap addressed by the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "53275889-b729-4c69-a5c6-b02c0e39864c",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C7",
+      "claim": "GPCRs and three unrelated non-receptor proteins with GEF activity in vitro (GIV/Girdin, AGS1/Dexras1, and Ric-8A) show high divergence in their contribution to generating G\u03b1-GTP and free G\u03b2\u03b3 in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, a systematic comparison of GPCRs and three unrelated non-receptor proteins with GEF activity in vitro (GIV/Girdin, AGS1/Dexras1, and Ric-8A) revealed high divergence in their contribution to generating G\u03b1-GTP and free G\u03b2\u03b3 in cells directly measured with live-cell biosensors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "6b29f6fe-c200-4bd5-b927-7c956919ef37",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C8",
+      "claim": "There are fundamental differences in how receptor and non-receptor G-protein activators promote signaling in cells despite sharing similar biochemical activities in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings demonstrate fundamental differences in how receptor and non-receptor G-protein activators promote signaling in cells despite sharing similar biochemical activities in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "4a412dd1-48c4-428f-8e07-a7f23fce9a6f",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C9",
+      "claim": "Heterotrimeric G-proteins are ubiquitous molecular switches that transduce extracellular signals into intracellular cascades of biochemical reactions to steer cellular responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Heterotrimeric G-proteins are ubiquitous molecular switches that transduce extracellular signals into intracellular cascades of biochemical reactions to steer cellular responses (Gilman, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation to Gilman, 1987.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "4d9a21cb-0a4d-4412-81f3-c4f5714b5d15",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C10",
+      "claim": "The ON/OFF state of G-protein switches is defined by their nucleotide binding status\u2014GDP-bound G-proteins are OFF, whereas GTP-bound G-proteins are ON.",
+      "claim_type": "EXPLICIT",
+      "source": "The ON/OFF state of these switches is defined by their nucleotide binding status\u2014GDP-bound G-proteins are OFF, whereas GTP-bound G-proteins are ON.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about G-protein regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "9ed6d59c-be1e-469d-b1e8-526e39b2d891",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C11",
+      "claim": "The switching between G-protein states is primarily determined by nucleotide exchange of GDP for GTP (which determines the rate of activation) and hydrolysis of GTP to GDP (which determines the rate of inactivation).",
+      "claim_type": "EXPLICIT",
+      "source": "The switching between states is primarily determined by two biochemical events. The first one is nucleotide exchange of GDP for GTP, which determines the rate of activation, and the second one is hydrolysis of GTP to GDP, which determines the rate of inactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about G-protein biochemistry.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "84d19618-d483-4c3d-b2e3-b232036857da",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C12",
+      "claim": "G-proteins can carry out nucleotide exchange and GTP hydrolysis spontaneously, but these reactions are tightly regulated by the enzymatic activity of other proteins in the cellular context.",
+      "claim_type": "EXPLICIT",
+      "source": "While these two reactions can be carried out spontaneously by G-proteins, they are tightly regulated by the enzymatic activity of other proteins in the cellular context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about G-protein regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "c6ad5114-f79c-49a6-bbf0-d1713af488fa",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C13",
+      "claim": "The G-protein regulatory mechanism controlled by G-protein-coupled receptors (GPCRs) is the best characterized to date.",
+      "claim_type": "EXPLICIT",
+      "source": "The G-protein regulatory mechanism controlled by G-protein-coupled receptors (GPCRs) is the best characterized to date (Pierce et al., 2002; Weis and Kobilka, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge in the field, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "87847710-30b6-4c0c-a673-cca559d899a4",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C14",
+      "claim": "GPCRs in their active conformation are guanine nucleotide exchange factors (GEFs) that catalyze nucleotide exchange on the G\u03b1 subunit of G\u03b1-G\u03b2\u03b3 heterotrimers.",
+      "claim_type": "EXPLICIT",
+      "source": "GPCRs in their active conformation are guanine nucleotide exchange factors (GEFs) that catalyze nucleotide exchange on the G\u03b1 subunit of G\u03b1-G\u03b2\u03b3 heterotrimers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about GPCR function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "6ac9cc11-49f6-4879-9aa3-4ed365bcba87",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C15",
+      "claim": "Upon GTP loading of G\u03b1, G\u03b2\u03b3 disengages from G\u03b1, leading to the formation of two active signaling species: G\u03b1-GTP and free G\u03b2\u03b3.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon GTP loading, G\u03b2\u03b3 disengages from G\u03b1, leading to the formation of two active signaling species, that is, G\u03b1-GTP and free G\u03b2\u03b3, that can engage their respective intracellular effectors to initiate signaling cascades.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about G-protein activation by GPCRs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "5f0fab9b-9cba-4022-b237-5a2d7aba3648",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C16",
+      "claim": "G\u03b1-GTP and free G\u03b2\u03b3 can engage their respective intracellular effectors to initiate signaling cascades.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon GTP loading, G\u03b2\u03b3 disengages from G\u03b1, leading to the formation of two active signaling species, that is, G\u03b1-GTP and free G\u03b2\u03b3, that can engage their respective intracellular effectors to initiate signaling cascades.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about G-protein signaling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "a4dee97f-1dd4-45cc-aa10-8e3c0fc933bb",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C17",
+      "claim": "In addition to GPCR-mediated activation, G-proteins are regulated by many cytoplasmic proteins with different enzymatic activities.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to GPCR-mediated activation, G-proteins are regulated by many cytoplasmic proteins with different enzymatic activities (Sato et al., 2006; Siderovski and Willard, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "d126bf26-5abd-4966-8867-63f88c1d14dc",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C18",
+      "claim": "Cytoplasmic regulators of G-proteins include proteins that accelerate the intrinsic rate of nucleotide hydrolysis by G-proteins (GTPase accelerating proteins [GAPs]).",
+      "claim_type": "EXPLICIT",
+      "source": "These include proteins that accelerate the intrinsic rate of nucleotide hydrolysis by G-proteins (GTPase accelerating proteins [GAPs]) (Ross and Wilkie, 2000), proteins that block nucleotide exchange (guanine nucleotide dissociation inhibitors [GDIs]) (Blumer et al., 2012), or even GEFs that are not GPCRs (Cismowski et al., 2000; DiGiacomo et al., 2018; Tall, 2013; Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "576fe3ca-bdff-4419-8ca9-3cc0ccda8d0c",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C19",
+      "claim": "Cytoplasmic regulators of G-proteins include proteins that block nucleotide exchange (guanine nucleotide dissociation inhibitors [GDIs]).",
+      "claim_type": "EXPLICIT",
+      "source": "These include proteins that accelerate the intrinsic rate of nucleotide hydrolysis by G-proteins (GTPase accelerating proteins [GAPs]) (Ross and Wilkie, 2000), proteins that block nucleotide exchange (guanine nucleotide dissociation inhibitors [GDIs]) (Blumer et al., 2012), or even GEFs that are not GPCRs (Cismowski et al., 2000; DiGiacomo et al., 2018; Tall, 2013; Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "9a77ef80-b519-4ffb-bbe6-038616e45d80",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C20",
+      "claim": "Cytoplasmic regulators of G-proteins include GEFs that are not GPCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "These include proteins that accelerate the intrinsic rate of nucleotide hydrolysis by G-proteins (GTPase accelerating proteins [GAPs]) (Ross and Wilkie, 2000), proteins that block nucleotide exchange (guanine nucleotide dissociation inhibitors [GDIs]) (Blumer et al., 2012), or even GEFs that are not GPCRs (Cismowski et al., 2000; DiGiacomo et al., 2018; Tall, 2013; Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "4be36bbf-2b5b-4956-b93c-35489c53736e",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C21",
+      "claim": "Rapamycin stimulation led to rapid and robust formation of free G\u03b2\u03b3 in cells expressing GIV.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapamycin stimulation led to rapid and robust formation of free G\u03b2\u03b3 in cells expressing either GIV or AGS1, whereas cells expressing Ric-8A did not display any response (Figure 2, top).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "d3dcbb76-24f1-4f80-8a3b-89cfe04f0dd0",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C22",
+      "claim": "Rapamycin stimulation led to rapid and robust formation of free G\u03b2\u03b3 in cells expressing AGS1.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapamycin stimulation led to rapid and robust formation of free G\u03b2\u03b3 in cells expressing either GIV or AGS1, whereas cells expressing Ric-8A did not display any response (Figure 2, top).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "b4aa2fe8-0cb8-489e-8dc0-44a1bbbd48f7",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C23",
+      "claim": "Cells expressing Ric-8A did not display any free G\u03b2\u03b3 response upon rapamycin stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapamycin stimulation led to rapid and robust formation of free G\u03b2\u03b3 in cells expressing either GIV or AGS1, whereas cells expressing Ric-8A did not display any response (Figure 2, top).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "aada6687-0ecc-4e90-9fce-463dc1e32df3",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C24",
+      "claim": "The amplitude of the free G\u03b2\u03b3 responses by GIV and AGS1 was comparable to that observed upon stimulation of the M4 muscarinic receptor (M4R) with an agonist concentration that elicits maximal activation.",
+      "claim_type": "EXPLICIT",
+      "source": "The amplitude of the responses by the two non-receptor GEFs was comparable to that observed upon stimulation of the M4 muscarinic receptor (M4R), a prototypical Gi-activating GPCR, with an agonist concentration that elicits maximal activation in this assay format (Garcia-Marcos et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2 and a citation to Garcia-Marcos et al., 2020.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "08902072-279d-4bbf-9547-ad565dcdca2a",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C25",
+      "claim": "Formation of G\u03b1i-GTP upon rapamycin stimulation was only detected in cells expressing AGS1 but not in cells expressing GIV or Ric-8A.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, formation of G\u03b1i-GTP upon rapamycin stimulation was only detected in cells expressing AGS1 but not in cells expressing GIV or Ric-8A (Figure 2, top).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "a6d6ab6c-91e0-4b26-9d8a-01f61206ca71",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C26",
+      "claim": "The G\u03b1i-GTP response with AGS1 was comparable to that observed upon M4R stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The G\u03b1i-GTP response with AGS1 was comparable to that observed upon M4R stimulation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "eddc1982-7010-4952-95be-f53e6d1ad23c",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C27",
+      "claim": "R12 GL led to an increase in free G\u03b2\u03b3 but caused no change in G\u03b1i-GTP levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a previous report (Maziarz et al., 2020), R12 GL, which has GDI activity in vitro, also led to an increase in free G\u03b2\u03b3 but caused no change in G\u03b1i-GTP levels (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2 and a citation to Maziarz et al., 2020.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "0024c557-2cfe-42c0-8d8f-dc16a0f57777",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C28",
+      "claim": "The increase in free G\u03b2\u03b3 by R12 GL was somewhat smaller than that observed with GIV or AGS1.",
+      "claim_type": "EXPLICIT",
+      "source": "The increase in free G\u03b2\u03b3 was somewhat smaller than that observed with GIV or AGS1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "be0ae588-815c-4659-9ad0-25fac63304ba",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C29",
+      "claim": "PTX completely suppressed the G\u03b2\u03b3 response upon M4R stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, PTX completely suppressed the G\u03b2\u03b3 response upon M4R stimulation (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "0481b771-6fbc-4191-831a-41bec8235a84",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C30",
+      "claim": "PTX did not affect the G\u03b2\u03b3 response elicited by GIV.",
+      "claim_type": "EXPLICIT",
+      "source": "As for the two non-receptor GEFs, PTX did not affect the G\u03b2\u03b3 response elicited by GIV, but greatly diminished the response by AGS1 (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "5d4da345-9fdc-447c-87e6-a49672dc2214",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C31",
+      "claim": "PTX greatly diminished the G\u03b2\u03b3 response by AGS1.",
+      "claim_type": "EXPLICIT",
+      "source": "As for the two non-receptor GEFs, PTX did not affect the G\u03b2\u03b3 response elicited by GIV, but greatly diminished the response by AGS1 (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "5fe584c1-f7b3-4beb-ab70-86c7df4777eb",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C32",
+      "claim": "The lack of effect of PTX on the GIV-mediated response is consistent with the lack of involvement of the C-terminus of G\u03b1i in binding to GIV.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of effect of PTX on the GIV-mediated response is consistent with the lack of involvement of the C-terminus of G\u03b1i in binding to GIV (de Opakua et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on experimental data and supported by a citation to de Opakua et al., 2017.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "7eef20c2-97d6-4412-a13f-54685328d33a",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C33",
+      "claim": "AGS1 mimics GPCRs in that it activates proportionately G\u03b1-GTP and free G\u03b2\u03b3 formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results highlight marked differences in G-protein activation mechanisms among non-receptor GEFs. AGS1 mimics GPCRs in that it activates proportionately G\u03b1-GTP and free G\u03b2\u03b3 formation, and that its action is suppressed by PTX.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in Figure 2 and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "cfb0e524-eec8-428e-8d9f-2a4dfa545ee2",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C34",
+      "claim": "AGS1's action is suppressed by PTX.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results highlight marked differences in G-protein activation mechanisms among non-receptor GEFs. AGS1 mimics GPCRs in that it activates proportionately G\u03b1-GTP and free G\u03b2\u03b3 formation, and that its action is suppressed by PTX.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "97c3a330-444e-4872-8303-e2776768ce6f",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C35",
+      "claim": "GIV and Ric-8A fail to promote detectable G\u03b1-GTP formation, despite possessing GEF activity in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, GIV and Ric-8A fail to promote detectable G\u03b1-GTP formation, despite possessing GEF activity in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in Figure 2 and knowledge of their in vitro activities.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "f5812da1-5323-49dc-a10e-16f722b31046",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C36",
+      "claim": "Ric-8A cannot promote nucleotide exchange on G-protein heterotrimers.",
+      "claim_type": "EXPLICIT",
+      "source": "For Ric-8A, this could be explained by previous observations that it cannot promote nucleotide exchange on G-protein heterotrimers (Tall et al., 2003), which might be the predominant G-protein species in cells (Krumins and Gilman, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations to Tall et al., 2003 and Krumins and Gilman, 2006.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "661fa3af-2314-480d-a430-18f3aeb6209d",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C37",
+      "claim": "G-protein heterotrimers might be the predominant G-protein species in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For Ric-8A, this could be explained by previous observations that it cannot promote nucleotide exchange on G-protein heterotrimers (Tall et al., 2003), which might be the predominant G-protein species in cells (Krumins and Gilman, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation to Krumins and Gilman, 2006.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "122d9adf-2b9f-4947-9d53-a6bae1e84600",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C38",
+      "claim": "The lack of G\u03b2\u03b3 formation by Ric-8A is in agreement with the interpretation that it cannot act on G-protein heterotrimers.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of G\u03b2\u03b3 formation by Ric-8A would also be in agreement with this interpretation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on experimental data and prior knowledge.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "afac0b20-f945-4683-92bf-2a8b8dd2fb73",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C39",
+      "claim": "GIV can promote the formation of G\u03b1i-GTP in cells by using antibodies that specifically recognize this species.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, previous work has shown that GIV can promote the formation of G\u03b1i-GTP in cells by using antibodies that specifically recognize this species (Lin et al., 2014; Lopez-Sanchez et al., 2014; Midde et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations to Lin et al., 2014; Lopez-Sanchez et al., 2014; Midde et al., 2015.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "5c174bd5-f3c5-4f24-b18c-6e5c109d6e66",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C40",
+      "claim": "GIV has been shown to inhibit cAMP, presumably via inhibition of adenylyl cyclase by G\u03b1i-GTP.",
+      "claim_type": "EXPLICIT",
+      "source": "And third, even with a very similar experimental paradigm of chemically induced membrane recruitment, GIV has been shown to inhibit cAMP (Maziarz et al., 2018), presumably via inhibition of adenylyl cyclase by G\u03b1i-GTP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation to Maziarz et al., 2018.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "18b426e4-e4ac-4093-bbc6-6a3a40f75c63",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C41",
+      "claim": "Rapamycin-induced recruitment of GIV-CT induced an increase in free G\u03b2\u03b3 levels similar to that caused by GIV GBA.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapamycin-induced recruitment of GIV-CT induced an increase in free G\u03b2\u03b3 levels similar to that caused by GIV GBA (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "272d4d5b-3fc3-4855-a002-50438449ff99",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C42",
+      "claim": "GIV-CT failed to elicit any detectable increase in G\u03b1i-GTP, like GIV GBA.",
+      "claim_type": "EXPLICIT",
+      "source": "Also like GIV GBA, it failed to elicit any detectable increase in G\u03b1i-GTP, suggesting that the lack of G\u03b1i-GTP response is not an inherent defect of the shorter construct.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "070bdd04-849e-453c-a043-cb1fc1da669a",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C43",
+      "claim": "The lack of G\u03b1i-GTP response is not an inherent defect of the shorter GIV GBA construct.",
+      "claim_type": "EXPLICIT",
+      "source": "Also like GIV GBA, it failed to elicit any detectable increase in G\u03b1i-GTP, suggesting that the lack of G\u03b1i-GTP response is not an inherent defect of the shorter construct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on experimental data comparing GIV GBA and GIV-CT.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "1787494b-ecf2-4525-a397-325ae8bd389d",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C44",
+      "claim": "G\u03b2\u03b3 can directly modulate the production of cAMP by adenylyl cyclases.",
+      "claim_type": "EXPLICIT",
+      "source": "Although this is widely attributed to the action of G\u03b1i-GTP on adenylyl cyclases, G\u03b2\u03b3 can also directly modulate the production of cAMP by adenylyl cyclases (Sadana and Dessauer, 2009; Sunahara et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations to Sadana and Dessauer, 2009; Sunahara et al., 1996.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "111fb9e3-3e4a-4d56-a698-451cfbf29df9",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C45",
+      "claim": "GIV has been previously shown to decrease cAMP levels in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "GIV has been previously shown to decrease cAMP levels in cells (Maziarz et al., 2018; Midde et al., 2015), and the results presented above (Figure 2) indicate that it promotes the formation of detectable levels of G\u03b2\u03b3 but not of G\u03b1i-GTP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations to Maziarz et al., 2018; Midde et al., 2015.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "5bfd66a9-1d76-44e7-a997-be3b62d1dffb",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C46",
+      "claim": "GRK2ct binds with high affinity to free G\u03b2\u03b3 subunits and precludes their binding to effectors.",
+      "claim_type": "EXPLICIT",
+      "source": "GRK2ct binds with high affinity to free G\u03b2\u03b3 subunits and precludes their binding to effectors (Koch et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation to Koch et al., 1994.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "ccc38900-fcb4-408e-8e9f-461b489b1692",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C47",
+      "claim": "GIV recruitment to membranes led to a decrease in cAMP.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous findings by Maziarz et al., 2018, GIV recruitment to membranes led to a decrease in cAMP (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3 and a citation to Maziarz et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "8bf7c226-8245-424b-b6ba-07273c0f3ba3",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C48",
+      "claim": "The effect of GIV on cAMP was efficiently suppressed by expression of GRK2ct.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect of GIV was efficiently suppressed by expression of GRK2ct (Figure 3), suggesting that it is primarily mediated by the formation of free G\u03b2\u03b3 subunits rather than by G\u03b1i-GTP.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "19193f2d-ace6-4fe6-a1dc-3097fe8e8ecf",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C49",
+      "claim": "GIV-induced cAMP dampening is primarily mediated by the formation of free G\u03b2\u03b3 subunits rather than by G\u03b1i-GTP.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect of GIV was efficiently suppressed by expression of GRK2ct (Figure 3), suggesting that it is primarily mediated by the formation of free G\u03b2\u03b3 subunits rather than by G\u03b1i-GTP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "373f78c9-b119-424e-b30f-135eaa959543",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C50",
+      "claim": "Kalogriopoulos et al., 2020 have proposed that GIV facilitates EGFR-mediated phosphorylation of G\u03b1i by binding simultaneously to the inactive G-protein and the active, auto-phosphorylated RTK.",
+      "claim_type": "EXPLICIT",
+      "source": "Kalogriopoulos et al., 2020 have recently proposed that GIV facilitates EGFR-mediated phosphorylation of G\u03b1i by binding simultaneously to the inactive G-protein and the active, auto-phosphorylated RTK.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a model proposed by Kalogriopoulos et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "f5e25a5c-88a4-42aa-a516-62f07bbf7931",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C51",
+      "claim": "According to Kalogriopoulos et al., 2020, formation of the GIV-EGFR-G\u03b1i complex leads to G\u03b1i phosphorylation by EGFR, which in turn promotes GTP loading by accelerating nucleotide exchange.",
+      "claim_type": "EXPLICIT",
+      "source": "Formation of this complex leads to G\u03b1i phosphorylation by EGFR, which in turn promotes GTP loading by accelerating nucleotide exchange (Figure 3\u2014figure supplement 1, top).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about a model proposed by Kalogriopoulos et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "6b756077-280f-4a54-b761-b257d4dbefc7",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C52",
+      "claim": "In cells expressing the Grb2-GBA fusion, EGF stimulation led to an increase of free G\u03b2\u03b3 but not of G\u03b1i-GTP.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells expressing the Grb2-GBA fusion, EGF stimulation led to an increase of free G\u03b2\u03b3 but not of G\u03b1i-GTP (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "00ccb8c1-3868-498d-94df-2d4108c4f480",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C53",
+      "claim": "The G\u03b2\u03b3 response to Grb2-GBA was not recapitulated when a Grb2-GBA construct bearing the G\u03b1i binding-deficient mutation F1685A (FA) of GIV was used.",
+      "claim_type": "EXPLICIT",
+      "source": "The G\u03b2\u03b3 response was not recapitulated when a Grb2-GBA construct bearing the G\u03b1i binding-deficient mutation F1685A (FA) of GIV (de Opakua et al., 2017; Garcia-Marcos et al., 2009) was used (Figure 3\u2014figure supplement 1), indicating that the observed response is specifically caused by GIV's GBA motif and not by other EGFR triggered signaling events.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 1 and citations to de Opakua et al., 2017; Garcia-Marcos et al., 2009.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "c2a597b2-0846-4d5b-81eb-f5b319175520",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C54",
+      "claim": "The observed G\u03b2\u03b3 response to Grb2-GBA is specifically caused by GIV's GBA motif and not by other EGFR triggered signaling events.",
+      "claim_type": "EXPLICIT",
+      "source": "The G\u03b2\u03b3 response was not recapitulated when a Grb2-GBA construct bearing the G\u03b1i binding-deficient mutation F1685A (FA) of GIV (de Opakua et al., 2017; Garcia-Marcos et al., 2009) was used (Figure 3\u2014figure supplement 1), indicating that the observed response is specifically caused by GIV's GBA motif and not by other EGFR triggered signaling events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "233560ce-613c-4f03-b596-0effde55d510",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C55",
+      "claim": "While an active EGFR-GIV complex engages Gi proteins to promote the release of G\u03b2\u03b3, it is still inefficient in promoting the formation of G\u03b1i-GTP.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that, while an active EGFR-GIV complex engages Gi proteins to promote the release of G\u03b2\u03b3, it is still inefficient in promoting the formation of G\u03b1i-GTP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "8c143391-4f53-489d-a601-6ad808c60a82",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C56",
+      "claim": "R12 GL promotes a smaller increase of free G\u03b2\u03b3 than GIV.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter is suggested by the observation that R12 GL promotes a smaller increase of free G\u03b2\u03b3 than GIV (Figure 2), even though R12 GL has an affinity for G\u03b1i about 10 times higher than that of GIV (de Opakua et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2 and a citation to de Opakua et al., 2017.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "d2795218-65be-450a-94dc-94f038f1d424",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C57",
+      "claim": "R12 GL has an affinity for G\u03b1i about 10 times higher than that of GIV.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter is suggested by the observation that R12 GL promotes a smaller increase of free G\u03b2\u03b3 than GIV (Figure 2), even though R12 GL has an affinity for G\u03b1i about 10 times higher than that of GIV (de Opakua et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation to de Opakua et al., 2017.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "872e4512-d175-4125-a580-c07692fdfe06",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C58",
+      "claim": "GIV-induced G\u03b2\u03b3 responses were very similar in the presence or absence of added GTP after the nucleotide depletion protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "GIV-induced G\u03b2\u03b3 responses were very similar in the presence or absence of added GTP after the nucleotide depletion protocol (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "ad6da321-024f-4ee4-8b9d-ca2240a499ab",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C59",
+      "claim": "R12 GL-induced G\u03b2\u03b3 BRET responses were similar in the presence or absence of added GTP after nucleotide depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar observations were made for R12 GL-induced G\u03b2\u03b3 BRET responses, which are not expected to require GTP.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "925649e2-3642-4d4a-a443-3a310d537732",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C60",
+      "claim": "Agonist-stimulated GPCR G\u03b2\u03b3 BRET responses were larger in the GTP-replenished condition.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, agonist-stimulated GPCR G\u03b2\u03b3 BRET responses were larger in the GTP-replenished condition (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "161abb27-789d-4a8a-a5e7-56c651718380",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C61",
+      "claim": "G\u03b2\u03b3 release induced by GIV is largely independent of the presence of physiological levels of GTP.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it is unclear if the GPCR response observed in the absence of GTP addition is due to incomplete nucleotide depletion and/or a G-protein rearrangement that occurs upon engagement with active GPCRs in the absence of nucleotides (Chung et al., 2011; Rasmussen et al., 2011), these results indicate that G\u03b2\u03b3 release induced by GIV is largely independent of the presence of physiological levels of GTP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "2e1d965e-6633-45be-87e9-47316c152e53",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C62",
+      "claim": "After stimulation of M4R with carbachol, addition of rapamycin led to a rapid drop of G\u03b1i-GTP in cells expressing R12 GL compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "After stimulation of M4R with carbachol, addition of rapamycin led to a rapid drop of G\u03b1i-GTP in cells expressing R12 GL compared to controls, whereas no significant change in G\u03b1i-GTP was observed in cells expressing GIV GBA (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "a2e5db44-2fb2-4901-98c1-11fe76742d5d",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C63",
+      "claim": "No significant change in G\u03b1i-GTP was observed in cells expressing GIV GBA after M4R stimulation followed by rapamycin addition.",
+      "claim_type": "EXPLICIT",
+      "source": "After stimulation of M4R with carbachol, addition of rapamycin led to a rapid drop of G\u03b1i-GTP in cells expressing R12 GL compared to controls, whereas no significant change in G\u03b1i-GTP was observed in cells expressing GIV GBA (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "16fc3ac6-adfe-4223-8406-de4a202c006f",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C64",
+      "claim": "The GDI activity of R12 GL efficiently sequesters monomeric G\u03b1-GDP, reducing the pool of G\u03b1(GDP)-G\u03b2\u03b3 trimeric substrate used by the GPCR to sustain the higher steady-state levels of G\u03b1-GTP achieved upon stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the GDI activity of R12 GL efficiently sequesters monomeric G\u03b1-GDP, reducing the pool of G\u03b1(GDP)-G\u03b2\u03b3 trimeric substrate used by the GPCR to sustain the higher steady-state levels of G\u03b1-GTP achieved upon stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "b3876cb7-095d-49b8-9f3f-3df61ebcfba2",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C65",
+      "claim": "GIV GBA does not significantly prevent the utilization of G\u03b1(GDP)-G\u03b2\u03b3 by GPCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, GIV GBA, which is even more efficient than R12 GL in dissociating G\u03b1-G\u03b2\u03b3 complexes (Figure 2), does not seem to significantly prevent the utilization of G\u03b1(GDP)-G\u03b2\u03b3 by GPCRs, suggesting that it does not lead to sequestration of monomeric G\u03b1-GDP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on experimental data shown in Figure 5 and Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "9cf44611-72d2-4348-9cee-7714699d6180",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C66",
+      "claim": "GIV-bound G\u03b1 can exchange nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "As opposed to what occurs with a GDI like R12 GL, which locks G\u03b1 in its GDP-bound state, GIV-bound G\u03b1 can exchange nucleotides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known GEF activity of GIV and the experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "cbc4abc3-47ec-4871-a687-a072faafc343",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C67",
+      "claim": "GIV would dissociate from the G-protein upon transient formation of G\u03b1i-GTP, which would be rapidly converted into G\u03b1-GDP to replenish G\u03b1(GDP)-G\u03b2\u03b3 levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, GIV would dissociate from the G-protein upon transient formation of G\u03b1i-GTP, which would be rapidly converted into G\u03b1-GDP to replenish G\u03b1(GDP)-G\u03b2\u03b3 levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative model proposed to explain the experimental observations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "bb635edc-4771-40e7-bdf7-3a54fd730ea7",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C68",
+      "claim": "The formation of G\u03b1i-GTP and free G\u03b2\u03b3 upon M4R stimulation with carbachol were reduced by pretreatment with rapamycin in cells expressing R12 GL.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these proposed models, the formation of G\u03b1i-GTP and free G\u03b2\u03b3 upon M4R stimulation with carbachol were reduced by pretreatment with rapamycin in cells expressing R12 GL or AGS1 but not in cells expressing GIV (Figure 6B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "12baf4dd-29c5-4bb8-bc89-84284e0f3a73",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C69",
+      "claim": "The formation of G\u03b1i-GTP and free G\u03b2\u03b3 upon M4R stimulation with carbachol were reduced by pretreatment with rapamycin in cells expressing AGS1.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these proposed models, the formation of G\u03b1i-GTP and free G\u03b2\u03b3 upon M4R stimulation with carbachol were reduced by pretreatment with rapamycin in cells expressing R12 GL or AGS1 but not in cells expressing GIV (Figure 6B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "da04b0b4-9bed-47f4-833c-a5456dab83e8",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C70",
+      "claim": "The formation of G\u03b1i-GTP and free G\u03b2\u03b3 upon M4R stimulation with carbachol were not reduced by pretreatment with rapamycin in cells expressing GIV.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these proposed models, the formation of G\u03b1i-GTP and free G\u03b2\u03b3 upon M4R stimulation with carbachol were reduced by pretreatment with rapamycin in cells expressing R12 GL or AGS1 but not in cells expressing GIV (Figure 6B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "e6686e7f-57af-402d-b321-b4729ea29a07",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C71",
+      "claim": "The total G\u03b2\u03b3 BRET change observed after GIV recruitment and GPCR stimulation was larger than in any of the other conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The total G\u03b2\u03b3 BRET change observed after GIV recruitment and GPCR stimulation (time 240 s, Figure 6C) was larger than in any of the other conditions, indicating that the reduced GPCR response by R12 GL or AGS1 was not due to reaching a maximum signal.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "55957279-787d-446a-8af3-f35ff25df0f4",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C72",
+      "claim": "The G\u03b2\u03b3 response to GIV GBA was diminished in cells in which M4R had been pre-stimulated with carbachol.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the G\u03b2\u03b3 response to GIV GBA was diminished in cells in which M4R had been pre-stimulated with carbachol (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "5f36874f-4d91-45da-93aa-01308a19f1e9",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C73",
+      "claim": "GIV, despite efficiently triggering G-protein signaling via G\u03b2\u03b3, does not oppose activation of G-proteins by GPCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that GIV, despite efficiently triggering G-protein signaling via G\u03b2\u03b3, does oppose activation of G-proteins by GPCRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "95d0074a-f216-497e-bd59-e53292895eb6",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C74",
+      "claim": "GIV promotes G-protein signaling in cells primarily through the formation of free G\u03b2\u03b3 rather than through the formation of G\u03b1i-GTP, despite its GEF activity in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "A key conclusion of the studies presented here (Figure 2, Figure 4) is that GIV, and most likely other GBA proteins, activates G-protein signaling in cells primarily through the formation of free G\u03b2\u03b3 rather than through the formation of G\u03b1i-GTP, despite its GEF activity in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a major conclusion drawn from experimental data shown in Figure 2 and Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "fa810de0-2ad8-47ba-8325-0b309ac15368",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C75",
+      "claim": "GIV enhances nucleotide exchange in vitro approximately 2.5- to 3-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "GIV enhances nucleotide exchange in vitro approximately 2.5- to 3-fold (Garcia-Marcos et al., 2011a; Garcia-Marcos et al., 2010; Garcia-Marcos et al., 2009; Garcia-Marcos et al., 2012), which is very similar to the approximately 3-fold enhancement mediated by AGS1 under similar conditions in vitro (Cismowski et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations to Garcia-Marcos et al., 2011a; Garcia-Marcos et al., 2010; Garcia-Marcos et al., 2009; Garcia-Marcos et al., 2012.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "97c83e67-a48e-4f29-9304-fcff8fad80f3",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C76",
+      "claim": "AGS1 enhances nucleotide exchange approximately 3-fold under similar conditions in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "GIV enhances nucleotide exchange in vitro approximately 2.5- to 3-fold (Garcia-Marcos et al., 2011a; Garcia-Marcos et al., 2010; Garcia-Marcos et al., 2009; Garcia-Marcos et al., 2012), which is very similar to the approximately 3-fold enhancement mediated by AGS1 under similar conditions in vitro (Cismowski et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation to Cismowski et al., 2000.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "ddfd7af7-d0d3-4785-b42e-2ea04b3d26c9",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C77",
+      "claim": "The enhancement of nucleotide exchange on Gi by a GPCR (e.g. \u03b12 adrenergic receptor) in vitro is 3- to 6-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the enhancement of nucleotide exchange on Gi by a GPCR (e.g. \u03b12 adrenergic receptor) in vitro is 3- to 6-fold (Cerione et al., 1986; Kurose et al., 1991), which is stronger than that of GIV or AGS1 but still within the same order of magnitude.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations to Cerione et al., 1986; Kurose et al., 1991.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "d31aba10-7311-4118-b1ad-20fef7608920",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C78",
+      "claim": "The relative GEF activity in vitro across different G-protein activators does not correlate well with their ability to generate G\u03b1-GTP in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the results presented here indicate that the relative GEF activity in vitro across different G-protein activators does not correlate well with their ability to generate G\u03b1-GTP in cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing in vitro GEF activities with cellular data from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "b2d4e624-662f-4f67-bafb-888493992ad9",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C79",
+      "claim": "The vast majority of signaling readouts regulated by the GBA motif of GIV (or DAPLE) have been shown or are known to be controlled by G\u03b2\u03b3 rather than by G\u03b1i-GTP.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the vast majority of signaling readouts regulated by the GBA motif of GIV (or DAPLE) have been shown or are known to be controlled by G\u03b2\u03b3 rather than by G\u03b1i-GTP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "f6d8ea6f-d1bf-47ac-a202-64bf5ca30d48",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C80",
+      "claim": "GBA-mediated activation of the PI3K-Akt axis is controlled by G\u03b2\u03b3.",
+      "claim_type": "EXPLICIT",
+      "source": "This includes activation of the PI3K-Akt axis (Aznar et al., 2015; Bhandari et al., 2015; Garcia-Marcos et al., 2010; Garcia-Marcos et al., 2009; Garcia-Marcos et al., 2012; Gupta et al., 2016; Leyme et al., 2016; Leyme et al., 2017; Leyme et al., 2015; Ma et al., 2015a), p114RhoGEF-mediated activation of RhoA (Marivin et al., 2019), or Rac1 activation (Aznar et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "23d438b1-2391-48c5-afc2-cd8fb8cd2fe9",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C81",
+      "claim": "GBA-mediated p114RhoGEF-mediated activation of RhoA is controlled by G\u03b2\u03b3.",
+      "claim_type": "EXPLICIT",
+      "source": "This includes activation of the PI3K-Akt axis (Aznar et al., 2015; Bhandari et al., 2015; Garcia-Marcos et al., 2010; Garcia-Marcos et al., 2009; Garcia-Marcos et al., 2012; Gupta et al., 2016; Leyme et al., 2016; Leyme et al., 2017; Leyme et al., 2015; Ma et al., 2015a), p114RhoGEF-mediated activation of RhoA (Marivin et al., 2019), or Rac1 activation (Aznar et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation to Marivin et al., 2019.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "aa7a545c-dbd1-47f3-8bab-6a6118dc783e",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C82",
+      "claim": "GBA-mediated Rac1 activation is controlled by G\u03b2\u03b3.",
+      "claim_type": "EXPLICIT",
+      "source": "This includes activation of the PI3K-Akt axis (Aznar et al., 2015; Bhandari et al., 2015; Garcia-Marcos et al., 2010; Garcia-Marcos et al., 2009; Garcia-Marcos et al., 2012; Gupta et al., 2016; Leyme et al., 2016; Leyme et al., 2017; Leyme et al., 2015; Ma et al., 2015a), p114RhoGEF-mediated activation of RhoA (Marivin et al., 2019), or Rac1 activation (Aznar et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation to Aznar et al., 2015.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "1754c8f1-0d14-4202-9fd5-a1b0f179e44f",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C83",
+      "claim": "GBA-mediated inhibition of adenylyl cyclase is mediated by G\u03b2\u03b3.",
+      "claim_type": "EXPLICIT",
+      "source": "Although GBA-mediated inhibition of adenylyl cyclase (Aznar et al., 2015; Maziarz et al., 2018; Midde et al., 2015) could have been explained as an effect of G\u03b1i-GTP, evidence presented here (Figure 3) strongly suggests that this is indeed mediated by G\u03b2\u03b3 as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "ffcb9dab-f1c0-4f04-8265-c3c4d0217877",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C84",
+      "claim": "Proteins with a GBA motif differ mechanistically from other regulators that promote the dissociation of G\u03b2\u03b3 from G-protein heterotrimers, like GDIs that contain a GoLoco motif.",
+      "claim_type": "EXPLICIT",
+      "source": "Results shown here (Figure 5, Figure 6) also indicate that proteins with a GBA motif differ mechanistically from other regulators that promote the dissociation of G\u03b2\u03b3 from G-protein heterotrimers, like GDIs that contain a GoLoco motif.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data shown in Figure 5 and Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "50e246f2-f2fc-44ce-90b2-a39f7385ff8b",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C85",
+      "claim": "Activation of G-proteins by GIV might operate without opposing efficient GPCR-mediated G-protein activation.",
+      "claim_type": "EXPLICIT",
+      "source": "The data suggest that activation of G-proteins by GIV, which in many cases is triggered by surface receptors different from GPCRs (Garcia-Marcos et al., 2015; Leyme et al., 2015; Lopez-Sanchez et al., 2014), might operate without opposing efficient GPCR-mediated G-protein activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data and supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "11e228aa-d510-4781-a74a-004aa802f0e1",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C86",
+      "claim": "GDIs with a GoLoco motif efficiently suppress GPCR-mediated activation of G-proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, GDIs with a GoLoco motif efficiently suppress GPCR-mediated activation of G-proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "51d01919-232e-4872-9af4-bb1bbfeb53b2",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C87",
+      "claim": "Pertussis toxin is not a generic inhibitor of all mechanisms of Gi activation or a specific inhibitor of GPCR-mediated activation of Gi proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, it was shown that pertussis toxin is not a generic inhibitor of all mechanisms of Gi activation or a specific inhibitor of GPCR-mediated activation of Gi proteins (Figure 2\u2014figure supplement 1), which warranties caution in the interpretation of past and future experiments with this widely used reagent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "78fb9761-2ee2-4108-8b2d-d00aad6b9b30",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "claim_id": "C88",
+      "claim": "The combination of chemogenetics and optical biosensors has demonstrated the potential to become an experimental paradigm to expand how we study and understand signal transduction mechanisms mediated by heterotrimeric G-proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the combination of chemogenetics and optical biosensors presented here has demonstrated the potential to become an experimental paradigm to expand how we study and understand signal transduction mechanisms mediated by heterotrimeric G-proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a concluding statement about the significance of the approach developed in the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b5312062-3390-4708-9035-52a1d00ccde0",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study addresses a knowledge gap regarding how non-receptor GEFs affect the levels of G\u03b1-GTP and free G\u03b2\u03b3 in cells, despite sharing similar biochemical GEF activity with GPCRs in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 establish the background and motivation for the study. These claims accurately describe established knowledge about G-protein signaling and identify a clear gap in understanding how non-receptor GEFs function in cells, which the study aims to address.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "3eb12531-1072-46a0-afd3-ecc612661eeb",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Systematic comparison of GPCRs and three non-receptor GEFs (GIV, AGS1, Ric-8A) reveals fundamental differences in their contribution to generating G\u03b1-GTP and free G\u03b2\u03b3 in cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8 represent the main finding of the study, supported by extensive experimental data shown in Figures 2-6. The use of complementary biosensors and chemogenetic control provides strong evidence for divergent signaling modes among these activators.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "85b1d3d1-8ec8-4090-b1eb-fee346a7b9f3",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "GIV and AGS1 promote robust free G\u03b2\u03b3 formation comparable to M4R stimulation, while only AGS1 generates detectable G\u03b1i-GTP. Ric-8A shows no response for either species. R12 GL increases free G\u03b2\u03b3 without affecting G\u03b1i-GTP levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C28 are directly supported by experimental data in Figure 2. The BRET biosensor measurements provide quantitative evidence for differential G-protein activation patterns. The comparison to M4R provides appropriate benchmarking, though the study acknowledges limitations of overexpression systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "7e9ce9c7-685f-4396-bbdc-13e42ab3aa97",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "PTX completely suppresses M4R-mediated G\u03b2\u03b3 response and greatly diminishes AGS1-mediated response, but does not affect GIV-mediated response. AGS1 mimics GPCRs in proportionate activation and PTX sensitivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C34 are supported by data in Figure 2\u2014figure supplement 1. The differential PTX sensitivity provides mechanistic insight into how these regulators interact with G-proteins. The interpretation regarding GIV's binding mechanism is supported by cited structural data (C32).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "f375159f-5138-463f-b083-85c808edc5fa",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "GIV and Ric-8A fail to promote detectable G\u03b1i-GTP formation despite possessing GEF activity in vitro. For Ric-8A, this is explained by its inability to act on G-protein heterotrimers, which are the predominant species in cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38 integrate experimental observations with prior knowledge. The lack of G\u03b1i-GTP formation by GIV and Ric-8A is clearly demonstrated in Figure 2. The mechanistic explanation for Ric-8A is well-supported by cited literature, though the explanation for GIV requires further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "ac12b9cd-f8ab-4cce-9d1d-73888e3ad2d2",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "GIV-CT (a larger construct containing the GBA motif) shows similar G-protein activation properties to GIV GBA, producing free G\u03b2\u03b3 but no detectable G\u03b1i-GTP, indicating the lack of G\u03b1i-GTP response is not an artifact of the shorter construct.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C43 are supported by data in Figure 2\u2014figure supplement 2. This control experiment addresses a potential concern about construct design and strengthens the conclusion that GIV's signaling mode is fundamentally different from GPCRs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "c6fed317-6263-4eb7-b2f1-1f3c211c5668",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "GIV-induced cAMP dampening is primarily mediated by free G\u03b2\u03b3 rather than G\u03b1i-GTP, as demonstrated by efficient suppression with GRK2ct (a G\u03b2\u03b3 scavenger).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C49 are supported by experimental data in Figure 3. The use of GRK2ct as a G\u03b2\u03b3 scavenger provides a mechanistic test of the hypothesis. This result is consistent with the observation that GIV produces free G\u03b2\u03b3 but not detectable G\u03b1i-GTP, and resolves a previous ambiguity about the mechanism of cAMP inhibition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "5b20f4de-476a-444f-b530-d62ad1a75689",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Testing a model where GIV recruitment to EGFR promotes G\u03b1i activation, the Grb2-GBA fusion system shows that EGFR-GIV complexes promote G\u03b2\u03b3 release but not G\u03b1i-GTP formation, with specificity confirmed by the F1685A mutation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C55 are supported by data in Figure 3\u2014figure supplement 1. The experiment tests a specific model from the literature and provides evidence that even when GIV is recruited to active RTKs, it still fails to efficiently generate G\u03b1i-GTP. The mutation control (C53-C54) strengthens the specificity of the observation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "6a1bbc44-f687-4415-96d0-80f889dd2657",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "GIV-induced G\u03b2\u03b3 release is largely independent of physiological GTP levels, as demonstrated by nucleotide depletion experiments showing similar responses with or without GTP replenishment, unlike GPCR responses which are GTP-dependent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C61 are supported by data in Figure 4. The nucleotide depletion experiments provide strong evidence that GIV operates through a mechanism distinct from nucleotide exchange-dependent activation. However, the interpretation acknowledges uncertainty about incomplete depletion (C61), which is appropriately cautious.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "57ca5305-1b89-4d27-b358-9a688aba2d50",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "R12 GL suppresses GPCR-mediated G\u03b1i-GTP formation by sequestering monomeric G\u03b1-GDP, while GIV does not prevent GPCR utilization of G-protein heterotrimers. This suggests GIV-bound G\u03b1 can exchange nucleotides and dissociate upon transient G\u03b1i-GTP formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C65 are supported by data in Figure 5. The differential effects of R12 GL and GIV on GPCR-mediated signaling provide mechanistic insight. However, C66-C67 are more speculative models to explain the observations, representing reasonable inferences but requiring further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "2dc0a606-2fe2-45c5-b321-45a489587cf6",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Pretreatment with R12 GL or AGS1, but not GIV, reduces GPCR-mediated G-protein activation. GIV's G\u03b2\u03b3 response is diminished when M4R is pre-stimulated. This suggests GIV does not oppose GPCR-mediated G-protein activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C73 are supported by data in Figure 6B, C and Figure 6\u2014figure supplement 1. The sequential stimulation experiments provide strong evidence for different modes of interaction with GPCR-mediated signaling. The conclusion (C73) is well-supported by the experimental observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "84c6783e-4e34-45be-b4dc-c9fc83903b4d",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Despite similar in vitro GEF activities (2.5-6 fold enhancement), the relative GEF activity in vitro does not correlate with ability to generate G\u03b1i-GTP in cells. GIV activates G-protein signaling primarily through free G\u03b2\u03b3 formation rather than G\u03b1i-GTP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C78 integrate experimental findings with literature values to draw a key conclusion. The comparison of in vitro GEF activities (C75-C77, supported by citations) with cellular responses demonstrates a fundamental disconnect between biochemical and cellular behavior. This is a major conceptual advance of the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "ee33321d-5ebd-42ce-8328-cb26576a66f7",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The vast majority of GBA-mediated signaling readouts (PI3K-Akt, p114RhoGEF-RhoA, Rac1, adenylyl cyclase inhibition) are controlled by G\u03b2\u03b3 rather than G\u03b1i-GTP, consistent with the finding that GIV primarily generates free G\u03b2\u03b3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C82 are supported by extensive literature citations. Claim C83 integrates the current study's findings (Figure 3) with prior literature to reinterpret the mechanism of adenylyl cyclase inhibition. This represents a significant reinterpretation of existing data in light of new mechanistic insights.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "f2bacf3e-6446-4daf-ac8a-5dabcd7e4537",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "GBA proteins differ mechanistically from GoLoco motif GDIs in their interaction with GPCR-mediated signaling. GIV may operate without opposing GPCR activation, while GoLoco GDIs efficiently suppress GPCR-mediated G-protein activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C86 are supported by data in Figures 5-6. The comparison between GIV and R12 GL provides clear evidence for mechanistic differences. The conclusion about non-opposition to GPCR signaling (C85) is appropriately cautious, acknowledging that GIV is often triggered by non-GPCR receptors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "2262ff8d-9741-4729-a152-76dc4a4d4dc2",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Pertussis toxin is not a generic inhibitor of all Gi activation mechanisms or specific to GPCR-mediated activation, as demonstrated by differential effects on GIV versus AGS1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C87 is supported by data in Figure 2\u2014figure supplement 1. This is an important methodological insight that has implications for interpretation of many studies using PTX. The observation is well-documented and the caution is warranted.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    },
+    {
+      "id": "ccf49b8e-31c0-47b4-921c-28d5954858f9",
+      "content_id": "ebadfafb-3a9b-406c-b84e-38b7f78b365e",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The combination of chemogenetics and optical biosensors demonstrates potential as an experimental paradigm to expand understanding of G-protein signal transduction mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C88 is a concluding statement about the methodological contribution of the study. The successful application of this approach throughout the manuscript supports this claim. The approach enables precise temporal control and simultaneous measurement of multiple G-protein species, which has yielded significant mechanistic insights.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:29:14.391250Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "773ee150-0128-493d-a996-361414b8f9ee",
+      "result_id": "b5312062-3390-4708-9035-52a1d00ccde0"
+    },
+    {
+      "claim_id": "91e75bda-15eb-4486-8d99-aadf415a4dfe",
+      "result_id": "b5312062-3390-4708-9035-52a1d00ccde0"
+    },
+    {
+      "claim_id": "e412de29-cc0f-410c-b70a-45eb8b8262b2",
+      "result_id": "b5312062-3390-4708-9035-52a1d00ccde0"
+    },
+    {
+      "claim_id": "bdf7fa34-f1b3-4f81-bf10-27d4c1d5fbeb",
+      "result_id": "b5312062-3390-4708-9035-52a1d00ccde0"
+    },
+    {
+      "claim_id": "86b94da2-f97e-4942-a505-b5e2667b48b4",
+      "result_id": "b5312062-3390-4708-9035-52a1d00ccde0"
+    },
+    {
+      "claim_id": "9b959ba2-7a99-4073-9a7d-76d06962f802",
+      "result_id": "b5312062-3390-4708-9035-52a1d00ccde0"
+    },
+    {
+      "claim_id": "53275889-b729-4c69-a5c6-b02c0e39864c",
+      "result_id": "3eb12531-1072-46a0-afd3-ecc612661eeb"
+    },
+    {
+      "claim_id": "6b29f6fe-c200-4bd5-b927-7c956919ef37",
+      "result_id": "3eb12531-1072-46a0-afd3-ecc612661eeb"
+    },
+    {
+      "claim_id": "4be36bbf-2b5b-4956-b93c-35489c53736e",
+      "result_id": "85b1d3d1-8ec8-4090-b1eb-fee346a7b9f3"
+    },
+    {
+      "claim_id": "d3dcbb76-24f1-4f80-8a3b-89cfe04f0dd0",
+      "result_id": "85b1d3d1-8ec8-4090-b1eb-fee346a7b9f3"
+    },
+    {
+      "claim_id": "b4aa2fe8-0cb8-489e-8dc0-44a1bbbd48f7",
+      "result_id": "85b1d3d1-8ec8-4090-b1eb-fee346a7b9f3"
+    },
+    {
+      "claim_id": "aada6687-0ecc-4e90-9fce-463dc1e32df3",
+      "result_id": "85b1d3d1-8ec8-4090-b1eb-fee346a7b9f3"
+    },
+    {
+      "claim_id": "08902072-279d-4bbf-9547-ad565dcdca2a",
+      "result_id": "85b1d3d1-8ec8-4090-b1eb-fee346a7b9f3"
+    },
+    {
+      "claim_id": "a6d6ab6c-91e0-4b26-9d8a-01f61206ca71",
+      "result_id": "85b1d3d1-8ec8-4090-b1eb-fee346a7b9f3"
+    },
+    {
+      "claim_id": "eddc1982-7010-4952-95be-f53e6d1ad23c",
+      "result_id": "85b1d3d1-8ec8-4090-b1eb-fee346a7b9f3"
+    },
+    {
+      "claim_id": "0024c557-2cfe-42c0-8d8f-dc16a0f57777",
+      "result_id": "85b1d3d1-8ec8-4090-b1eb-fee346a7b9f3"
+    },
+    {
+      "claim_id": "be0ae588-815c-4659-9ad0-25fac63304ba",
+      "result_id": "7e9ce9c7-685f-4396-bbdc-13e42ab3aa97"
+    },
+    {
+      "claim_id": "0481b771-6fbc-4191-831a-41bec8235a84",
+      "result_id": "7e9ce9c7-685f-4396-bbdc-13e42ab3aa97"
+    },
+    {
+      "claim_id": "5d4da345-9fdc-447c-87e6-a49672dc2214",
+      "result_id": "7e9ce9c7-685f-4396-bbdc-13e42ab3aa97"
+    },
+    {
+      "claim_id": "5fe584c1-f7b3-4beb-ab70-86c7df4777eb",
+      "result_id": "7e9ce9c7-685f-4396-bbdc-13e42ab3aa97"
+    },
+    {
+      "claim_id": "7eef20c2-97d6-4412-a13f-54685328d33a",
+      "result_id": "7e9ce9c7-685f-4396-bbdc-13e42ab3aa97"
+    },
+    {
+      "claim_id": "cfb0e524-eec8-428e-8d9f-2a4dfa545ee2",
+      "result_id": "7e9ce9c7-685f-4396-bbdc-13e42ab3aa97"
+    },
+    {
+      "claim_id": "97c3a330-444e-4872-8303-e2776768ce6f",
+      "result_id": "f375159f-5138-463f-b083-85c808edc5fa"
+    },
+    {
+      "claim_id": "f5812da1-5323-49dc-a10e-16f722b31046",
+      "result_id": "f375159f-5138-463f-b083-85c808edc5fa"
+    },
+    {
+      "claim_id": "661fa3af-2314-480d-a430-18f3aeb6209d",
+      "result_id": "f375159f-5138-463f-b083-85c808edc5fa"
+    },
+    {
+      "claim_id": "122d9adf-2b9f-4947-9d53-a6bae1e84600",
+      "result_id": "f375159f-5138-463f-b083-85c808edc5fa"
+    },
+    {
+      "claim_id": "18b426e4-e4ac-4093-bbc6-6a3a40f75c63",
+      "result_id": "ac12b9cd-f8ab-4cce-9d1d-73888e3ad2d2"
+    },
+    {
+      "claim_id": "272d4d5b-3fc3-4855-a002-50438449ff99",
+      "result_id": "ac12b9cd-f8ab-4cce-9d1d-73888e3ad2d2"
+    },
+    {
+      "claim_id": "070bdd04-849e-453c-a043-cb1fc1da669a",
+      "result_id": "ac12b9cd-f8ab-4cce-9d1d-73888e3ad2d2"
+    },
+    {
+      "claim_id": "1787494b-ecf2-4525-a397-325ae8bd389d",
+      "result_id": "c6fed317-6263-4eb7-b2f1-1f3c211c5668"
+    },
+    {
+      "claim_id": "111fb9e3-3e4a-4d56-a698-451cfbf29df9",
+      "result_id": "c6fed317-6263-4eb7-b2f1-1f3c211c5668"
+    },
+    {
+      "claim_id": "5bfd66a9-1d76-44e7-a997-be3b62d1dffb",
+      "result_id": "c6fed317-6263-4eb7-b2f1-1f3c211c5668"
+    },
+    {
+      "claim_id": "ccc38900-fcb4-408e-8e9f-461b489b1692",
+      "result_id": "c6fed317-6263-4eb7-b2f1-1f3c211c5668"
+    },
+    {
+      "claim_id": "8bf7c226-8245-424b-b6ba-07273c0f3ba3",
+      "result_id": "c6fed317-6263-4eb7-b2f1-1f3c211c5668"
+    },
+    {
+      "claim_id": "19193f2d-ace6-4fe6-a1dc-3097fe8e8ecf",
+      "result_id": "c6fed317-6263-4eb7-b2f1-1f3c211c5668"
+    },
+    {
+      "claim_id": "373f78c9-b119-424e-b30f-135eaa959543",
+      "result_id": "5b20f4de-476a-444f-b530-d62ad1a75689"
+    },
+    {
+      "claim_id": "f5e25a5c-88a4-42aa-a516-62f07bbf7931",
+      "result_id": "5b20f4de-476a-444f-b530-d62ad1a75689"
+    },
+    {
+      "claim_id": "6b756077-280f-4a54-b761-b257d4dbefc7",
+      "result_id": "5b20f4de-476a-444f-b530-d62ad1a75689"
+    },
+    {
+      "claim_id": "00ccb8c1-3868-498d-94df-2d4108c4f480",
+      "result_id": "5b20f4de-476a-444f-b530-d62ad1a75689"
+    },
+    {
+      "claim_id": "c2a597b2-0846-4d5b-81eb-f5b319175520",
+      "result_id": "5b20f4de-476a-444f-b530-d62ad1a75689"
+    },
+    {
+      "claim_id": "233560ce-613c-4f03-b596-0effde55d510",
+      "result_id": "5b20f4de-476a-444f-b530-d62ad1a75689"
+    },
+    {
+      "claim_id": "8c143391-4f53-489d-a601-6ad808c60a82",
+      "result_id": "6a1bbc44-f687-4415-96d0-80f889dd2657"
+    },
+    {
+      "claim_id": "d2795218-65be-450a-94dc-94f038f1d424",
+      "result_id": "6a1bbc44-f687-4415-96d0-80f889dd2657"
+    },
+    {
+      "claim_id": "872e4512-d175-4125-a580-c07692fdfe06",
+      "result_id": "6a1bbc44-f687-4415-96d0-80f889dd2657"
+    },
+    {
+      "claim_id": "ad6da321-024f-4ee4-8b9d-ca2240a499ab",
+      "result_id": "6a1bbc44-f687-4415-96d0-80f889dd2657"
+    },
+    {
+      "claim_id": "925649e2-3642-4d4a-a443-3a310d537732",
+      "result_id": "6a1bbc44-f687-4415-96d0-80f889dd2657"
+    },
+    {
+      "claim_id": "161abb27-789d-4a8a-a5e7-56c651718380",
+      "result_id": "6a1bbc44-f687-4415-96d0-80f889dd2657"
+    },
+    {
+      "claim_id": "2e1d965e-6633-45be-87e9-47316c152e53",
+      "result_id": "57ca5305-1b89-4d27-b358-9a688aba2d50"
+    },
+    {
+      "claim_id": "a2e5db44-2fb2-4901-98c1-11fe76742d5d",
+      "result_id": "57ca5305-1b89-4d27-b358-9a688aba2d50"
+    },
+    {
+      "claim_id": "16fc3ac6-adfe-4223-8406-de4a202c006f",
+      "result_id": "57ca5305-1b89-4d27-b358-9a688aba2d50"
+    },
+    {
+      "claim_id": "b3876cb7-095d-49b8-9f3f-3df61ebcfba2",
+      "result_id": "57ca5305-1b89-4d27-b358-9a688aba2d50"
+    },
+    {
+      "claim_id": "9cf44611-72d2-4348-9cee-7714699d6180",
+      "result_id": "57ca5305-1b89-4d27-b358-9a688aba2d50"
+    },
+    {
+      "claim_id": "cbc4abc3-47ec-4871-a687-a072faafc343",
+      "result_id": "57ca5305-1b89-4d27-b358-9a688aba2d50"
+    },
+    {
+      "claim_id": "bb635edc-4771-40e7-bdf7-3a54fd730ea7",
+      "result_id": "2dc0a606-2fe2-45c5-b321-45a489587cf6"
+    },
+    {
+      "claim_id": "12baf4dd-29c5-4bb8-bc89-84284e0f3a73",
+      "result_id": "2dc0a606-2fe2-45c5-b321-45a489587cf6"
+    },
+    {
+      "claim_id": "da04b0b4-9bed-47f4-833c-a5456dab83e8",
+      "result_id": "2dc0a606-2fe2-45c5-b321-45a489587cf6"
+    },
+    {
+      "claim_id": "e6686e7f-57af-402d-b321-b4729ea29a07",
+      "result_id": "2dc0a606-2fe2-45c5-b321-45a489587cf6"
+    },
+    {
+      "claim_id": "55957279-787d-446a-8af3-f35ff25df0f4",
+      "result_id": "2dc0a606-2fe2-45c5-b321-45a489587cf6"
+    },
+    {
+      "claim_id": "5f36874f-4d91-45da-93aa-01308a19f1e9",
+      "result_id": "2dc0a606-2fe2-45c5-b321-45a489587cf6"
+    },
+    {
+      "claim_id": "95d0074a-f216-497e-bd59-e53292895eb6",
+      "result_id": "84c6783e-4e34-45be-b4dc-c9fc83903b4d"
+    },
+    {
+      "claim_id": "fa810de0-2ad8-47ba-8325-0b309ac15368",
+      "result_id": "84c6783e-4e34-45be-b4dc-c9fc83903b4d"
+    },
+    {
+      "claim_id": "97c83e67-a48e-4f29-9304-fcff8fad80f3",
+      "result_id": "84c6783e-4e34-45be-b4dc-c9fc83903b4d"
+    },
+    {
+      "claim_id": "ddfd7af7-d0d3-4785-b42e-2ea04b3d26c9",
+      "result_id": "84c6783e-4e34-45be-b4dc-c9fc83903b4d"
+    },
+    {
+      "claim_id": "d31aba10-7311-4118-b1ad-20fef7608920",
+      "result_id": "84c6783e-4e34-45be-b4dc-c9fc83903b4d"
+    },
+    {
+      "claim_id": "b2d4e624-662f-4f67-bafb-888493992ad9",
+      "result_id": "ee33321d-5ebd-42ce-8328-cb26576a66f7"
+    },
+    {
+      "claim_id": "f6d8ea6f-d1bf-47ac-a202-64bf5ca30d48",
+      "result_id": "ee33321d-5ebd-42ce-8328-cb26576a66f7"
+    },
+    {
+      "claim_id": "23d438b1-2391-48c5-afc2-cd8fb8cd2fe9",
+      "result_id": "ee33321d-5ebd-42ce-8328-cb26576a66f7"
+    },
+    {
+      "claim_id": "aa7a545c-dbd1-47f3-8bab-6a6118dc783e",
+      "result_id": "ee33321d-5ebd-42ce-8328-cb26576a66f7"
+    },
+    {
+      "claim_id": "1754c8f1-0d14-4202-9fd5-a1b0f179e44f",
+      "result_id": "ee33321d-5ebd-42ce-8328-cb26576a66f7"
+    },
+    {
+      "claim_id": "ffcb9dab-f1c0-4f04-8265-c3c4d0217877",
+      "result_id": "f2bacf3e-6446-4daf-ac8a-5dabcd7e4537"
+    },
+    {
+      "claim_id": "50e246f2-f2fc-44ce-90b2-a39f7385ff8b",
+      "result_id": "f2bacf3e-6446-4daf-ac8a-5dabcd7e4537"
+    },
+    {
+      "claim_id": "11e228aa-d510-4781-a74a-004aa802f0e1",
+      "result_id": "f2bacf3e-6446-4daf-ac8a-5dabcd7e4537"
+    },
+    {
+      "claim_id": "51d01919-232e-4872-9af4-bb1bbfeb53b2",
+      "result_id": "2262ff8d-9741-4729-a152-76dc4a4d4dc2"
+    },
+    {
+      "claim_id": "78fb9761-2ee2-4108-8b2d-d00aad6b9b30",
+      "result_id": "ccf49b8e-31c0-47b4-921c-28d5954858f9"
+    }
+  ],
+  "comparisons": []
+}

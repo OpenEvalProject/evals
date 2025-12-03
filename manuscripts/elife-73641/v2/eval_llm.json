@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "SARS-CoV-2 infection depends on Spike-ACE2 binding, with glycosylation playing a critical role. Recombinant soluble human ACE2 (rshACE2) can neutralize SARS-CoV-2 and is undergoing clinical trials. Soluble ACE2-based therapeutics offer advantages over antibodies due to reduced risk of viral escape through mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C66-C73 establish the biological context and therapeutic rationale for the study. These claims are well-supported by multiple citations to published literature and clinical trial registrations. The background information provides appropriate justification for the experimental work that follows.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C62",
+      "C63",
+      "C64",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Both Spike and ACE2 are heavily glycosylated proteins. Computational modeling and MD simulations were used to study glycan effects on the Spike-ACE2 interaction, as experimental structural biology cannot resolve glycan structures due to their flexibility and heterogeneity. The authors constructed fully glycosylated atomistic models and performed MD simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 and C62-C90 describe the glycosylation status of Spike and ACE2 and establish the methodological approach. The glycosylation data are supported by citations and the authors' own glycoproteomic analysis (Figure 1\u2014figure supplement 1). The computational methodology is clearly described and appropriately justified given the limitations of experimental structural methods for studying glycans.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "MD simulations identified specific Spike glycans (N122, N165, N234, N331, N343) that interact with ACE2 or influence Spike conformation. The glycan at N343 interacts directly with ACE2, while N331 interacts with neighboring Spike monomers. The N234 glycan stabilizes the 'up' conformation of the RBD. These findings are consistent with published experimental data showing effects of glycan removal on infectivity and antibody sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C23 describe computational predictions about Spike glycan roles that are corroborated by citations to experimental studies. The MD simulation data (Figures 1-2) support the structural interpretations. The agreement between computational predictions and published experimental observations (C13-C15, C22) strengthens confidence in the modeling approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C65"
+    ],
+    "result": "MD simulations revealed that ACE2 glycans account for up to 51% of the Spike-ACE2 interface area (12.6 nm\u00b2 of 24.6 nm\u00b2 total). Four ACE2 glycans (N53, N90, N322, N546) interact with Spike, with N90 forming up to 30 hydrogen bonds and contributing up to 10 nm\u00b2 of interface area. Formation of the Spike-ACE2 complex significantly reduces conformational freedom of glycans at N90 and N322, suggesting these glycans hamper binding through steric or entropic penalties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C33 and C65 present quantitative MD simulation results showing the substantial contribution of ACE2 glycans to the interface. The data are clearly presented in Figure 3 with appropriate analysis methods (SASA calculations, contact analysis, hydrogen bond counting). The prediction that N90 and N322 glycans hamper binding (C33) is a reasonable inference from the conformational restriction data (Figure 4), though it remains a computational prediction requiring experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C6"
+    ],
+    "result": "Removal of N90 and N322 glycans by site-directed mutagenesis does not compromise the structural integrity of ACE2. DSC measurements showed that ACE2-Fc glycomutants had slightly higher Tm1 values (53.3-54.0\u00b0C) compared to wild-type (52.2\u00b0C), with Tm2 and Tm3 unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 and C6 are directly supported by DSC data in Figure 5. The maintained or improved thermal stability demonstrates that the glycan removal mutations do not destabilize the protein structure. This is an important control validating that subsequent functional differences are due to glycan effects rather than protein misfolding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C4"
+    ],
+    "result": "Site-directed mutagenesis to remove N-glycosylation at N90 (T92Q mutation) or N322 resulted in up to twofold higher binding affinities to RBD compared to wild-type ACE2-Fc. BLI measurements showed KD values of 8.0 \u00b1 0.7 nM (ACE2-T92Q-Fc), 11.4 \u00b1 0.3 nM (ACE2-N322Q-Fc), and 16.2 \u00b1 0.7 nM (ACE2-wt-Fc).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 and C4 are directly supported by BLI data in Figure 6. The measurements were performed in triplicate with appropriate controls and fitting models. The twofold improvement in affinity for the N90 mutant validates the computational prediction that this glycan hampers binding. The data quality appears good with reasonable error bars.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C5"
+    ],
+    "result": "ACE2 glycomutants showed enhanced SARS-CoV-2 neutralization in Vero E6 cell infection assays. ACE2-T92Q-Fc showed significantly greater reduction in viral load compared to ACE2-wt-Fc. ACE2-N322Q-Fc also showed enhanced neutralization but was less effective than ACE2-T92Q-Fc.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 and C5 are supported by virus neutralization data in Figure 7. The experiments were performed with appropriate replicates and statistical analysis (Kruskal-Wallis test with p-values reported). The correlation between improved binding affinity and enhanced neutralization is logical, though the magnitude of neutralization improvement appears larger than the affinity improvement (discussed in claims C106-C111).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Double mutant ACE2-T92Q-N322Q-Fc and enzymatically deglycosylated ACE2-wt-Fc showed KD values similar to the single N90 mutant (8.2 \u00b1 0.2 nM and 7.6 \u00b1 0.3 nM, respectively). Desialylated ACE2-wt-Fc showed intermediate affinity (11.3 \u00b1 0.4 nM). Deglyco-ACE2-wt-Fc and ACE2-T92Q-N322Q-Fc displayed the highest neutralization potencies, while desialo-ACE2-wt-Fc showed effects comparable to ACE2-N322Q-Fc.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 are supported by BLI data (Figure 6b) and neutralization assays (Figure 7). The correlation between binding affinity and neutralization potency is consistent. The lack of additive effect for the double mutant suggests N90 is the dominant glycan affecting binding, which is consistent with the MD simulation predictions showing N90 has the largest interface contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C8"
+    ],
+    "result": "Enzymatically deglycosylated clinical-grade rshACE2 (deglyco-rshACE2) showed twofold higher binding affinity to RBD (KD = 5.1 \u00b1 0.5 nM) compared to native rshACE2 (KD = 10.5 \u00b1 0.4 nM). Deglyco-rshACE2 displayed improved SARS-CoV-2 neutralization in Vero E6 cells, with significant reduction in viral replication at 200 \u00b5g/mL compared to native rshACE2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 and C8 are supported by BLI data (Figure 6b) and neutralization assays (Figure 8). The use of clinical-grade rshACE2 is particularly important as it demonstrates the translational potential of the approach. The statistical significance (p = 0.0026) and multiple replicates strengthen the conclusion. This represents a key finding for potential therapeutic application.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C7"
+    ],
+    "result": "ACE2 glycomutants retained substantial catalytic activity: ACE2-T92Q-Fc (65% \u00b1 11%), ACE2-N322Q-Fc (69% \u00b1 7%), and ACE2-T92Q-N322Q-Fc (79% \u00b1 11%) compared to ACE2-wt-Fc. This contrasts with other reported ACE2 mutants that show impaired enzymatic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 and C7 are supported by enzymatic activity assays in Figure 9. The retention of catalytic activity is important for potential therapeutic use, as ACE2's enzymatic function may provide beneficial effects beyond viral neutralization (claim C116). The comparison to other mutants with impaired activity (C117) is appropriately cited. However, the 'modest' reduction descriptor may understate a 21-35% loss of activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C61"
+    ],
+    "result": "Enzymatically deglycosylated or desialylated ACE2 variants showed enhanced catalytic activity compared to native forms: deglyco-ACE2-wt-Fc (149% \u00b1 1%), desialo-ACE2-wt-Fc (160% \u00b1 2%), and deglyco-rshACE2 (113% \u00b1 2%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 and C61 are supported by enzymatic activity data in Figure 10. The unexpected enhancement of catalytic activity upon glycan removal is interesting and suggests glycans may restrict access to the active site or substrate binding. This finding strengthens the therapeutic case for deglycosylated ACE2, as it maintains or improves both Spike-binding and enzymatic functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Structure-guided glycoengineering successfully developed ACE2 variants with improved SARS-CoV-2 neutralization properties without compromising structural stability and catalytic activity. Computational models rationalized published data and led to predictions confirmed by experimental binding studies and neutralization assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 and C103-C105 represent the overarching conclusions of the study. These are well-supported by the combined computational and experimental data presented throughout the manuscript. The integration of MD simulations, binding assays, neutralization assays, DSC, and enzymatic activity measurements provides strong converging evidence for the main conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Enzymatic desialylation of ACE2 results in reproducibly increased affinity to RBD without detectable structural penalties. Desialylated ACE2 is more efficient at neutralizing SARS-CoV-2. MD simulations suggest terminal sialic acids on N90 and N322 glycans mask parts of the Spike-ACE2 interface and could interfere with binding through steric clashes and/or electrostatic effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 are supported by BLI data (Figure 6b), DSC data (Figure 5), neutralization assays (Figure 7), and MD simulations (Figure 4\u2014figure supplement 1). The mechanistic explanation for sialic acid effects is reasonable given the structural data, though it remains somewhat speculative (C94). The finding is corroborated by citation to Allen et al., 2021.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Elimination of N-glycans at N90 is largely responsible for improved Spike-binding properties of deglycosylated ACE2. Substitution of ACE2 residues N90 or T92 could provide an alternative approach for developing improved ACE2 variants. Ablation of N90 glycosylation could potentially be combined with mutations at N322 and other sites for even higher neutralizing potency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 are supported by the binding and neutralization data showing N90 mutations have the largest effect. The conclusion is corroborated by citations to Chan et al., 2020 and Chu et al., 2021. Claim C98 is somewhat speculative as the double mutant did not show additive effects, but the authors appropriately frame this as a possibility for future exploration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Expression of ACE2 lacking all N-glycosylation sites in cells led to reduced susceptibility to SARS-CoV-2 due to lower cellular protein content, demonstrating the importance of N-glycosylation for proper folding. The authors conclude that enzymatically deglycosylated rshACE2 has superior clinical potential compared to glycomutants due to expression concerns and potential immunological side effects of mutations. Treatment with PNGase F followed by polishing represents a GMP-compliant approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C100 are supported by citation to Chu et al., 2021. However, claims C101-C102 represent opinions/speculations about clinical potential and manufacturing feasibility. While the reasoning is logical (expression yields, immunogenicity concerns, GMP compliance), these claims lack direct experimental support. The authors have not demonstrated GMP-scale production, immunogenicity testing, or comparative expression yields. The conclusion may be reasonable but requires validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The authors propose several mechanisms to explain why modest improvements in binding affinity (2-fold) translate to larger improvements in neutralization: cooperative/avidity effects from multivalent Spike-ACE2 interactions, RBD conformational equilibrium effects, threshold effects for viral shedding, low MOI experimental conditions leading to complete neutralization, and potential effects of glycans on other aspects of viral entry beyond docking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C112 represent speculative explanations for the affinity-neutralization discrepancy. While the proposed mechanisms are plausible and supported by citations (Monod et al., 1965; Magnus, 2013; Monteil et al., 2020; Yang et al., 2020), they remain hypothetical. The authors appropriately acknowledge this as a discussion point requiring further investigation. The low MOI observation (C110-C111) is supported by data in Figure 7\u2014figure supplement 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "All virus neutralization experiments were performed using Vero E6 cells. The authors acknowledge the need to repeat assays with human lung-derived cells (e.g., Calu-3). Native ACE2 does not display cytotoxic effects at high concentrations. rshACE2 regulates blood pressure and protects organs via angiotensin II degradation. Other ACE2 mutants show impaired enzymatic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C117 provide important context and limitations. C113 is a methodological fact. C114 appropriately identifies a limitation and future direction. C115-C117 are supported by citations to the authors' previous work and published literature. The acknowledgment of the Vero E6 limitation is important for interpreting the translational potential of the findings.",
+    "result_type": "MINOR"
+  }
+]

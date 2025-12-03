@@ -1,0 +1,181 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "This retrospective cohort study analyzed 1007 HR+ DCIS patients who underwent mastectomy between 2006-2016, with 791 receiving endocrine therapy (ET) and 216 not receiving ET. The median follow-up was 86 months, and baseline demographic and clinical characteristics were balanced between groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C40 provide comprehensive methodological details including study design, patient selection criteria, sample sizes, follow-up duration, and baseline comparisons. The study design is clearly described with appropriate inclusion criteria and outcome definitions. The baseline balance between groups (C40) supports valid comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C69"
+    ],
+    "result": "Endocrine therapy after mastectomy did not significantly improve disease-free survival (DFS) or reduce tumor recurrence rates in HR+ DCIS patients. The 5-year DFS rates were 98.36% vs. 99.07% (p=0.44) for ET vs. non-ET groups, with recurrence rates of 2.40% vs. 1.85% (p>0.05). This lack of benefit persisted across all subgroups including those with high-risk factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the data show no significant difference in DFS between groups (C48, C49), the study has critical limitations acknowledged by the authors (C80): retrospective design and small number of events (only 23 recurrences total). With such low event rates, the study is severely underpowered to detect clinically meaningful differences. The wide confidence intervals in stratified analyses (Table 3) further indicate insufficient statistical power. Additionally, the imbalance in high-grade DCIS within the microinvasive subgroup (42% vs. 10%, C71) suggests potential confounding that could bias results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C75",
+      "C76",
+      "C77",
+      "C63"
+    ],
+    "result": "Endocrine therapy after mastectomy was associated with significantly increased adverse events compared to no ET. Overall, 37.04% of ET patients experienced adverse events vs. 15.28% in the non-ET group, with significantly higher rates of musculoskeletal dysfunction (14.54%), gynecological events, and abnormal liver function in the ET group.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C77 consistently demonstrate higher adverse event rates in the ET group with statistical significance noted for multiple categories (C62, C75). The data are presented with specific percentages and include detailed breakdowns by adverse event type. Figure 3 provides visual confirmation of these differences. However, the retrospective nature may introduce ascertainment bias if adverse events were more carefully documented in the ET group.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C79",
+      "C82"
+    ],
+    "result": "The authors conclude that endocrine therapy after mastectomy may not be recommended for HR+ DCIS patients, even those with high-risk factors, and suggest ET may be decreased in dose/duration or completely avoided to improve quality of life.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "This clinical recommendation (C13-C15, C79, C82) is premature given the study's acknowledged limitations (C80, C81). The retrospective design, small number of events (23 total), and resulting lack of statistical power make it impossible to definitively conclude non-inferiority or equivalence of outcomes. The authors themselves state that \"further validation of these findings is warranted in a large, randomized prospective trial\" (C81), which directly contradicts making definitive clinical recommendations. The recommendation to avoid or reduce ET requires prospective validation before implementation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The authors observed that patients with microinvasive DCIS in the ET group had a higher proportion of high-grade disease (42%) compared to the non-ET group (10%), which they suggest might explain a trend toward worse DFS in the ET microinvasive subgroup.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70-C72 identify an important imbalance in tumor grade within the microinvasive subgroup that could confound results. However, this post-hoc explanation (C72) is speculative and highlights a potential selection bias in treatment assignment. This imbalance undermines the claim of balanced baseline characteristics (C40) and suggests unmeasured confounding may affect the primary conclusions. Proper adjustment for this imbalance was not performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C73"
+    ],
+    "result": "The authors provide background context on DCIS treatment patterns, noting that approximately 60% of Chinese DCIS patients receive mastectomy (higher than the ~30% in the USA), and that while ET is recommended after breast-conserving surgery, its role after mastectomy in Chinese patients has not been previously reported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C29, C64-C67, C73 provide appropriate background context supported by citations to prior literature. The authors correctly identify a gap in knowledge regarding ET efficacy after mastectomy in Chinese HR+ DCIS patients (C29, C73). The background claims about treatment patterns and guidelines are appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C74",
+      "C78"
+    ],
+    "result": "The authors note that long-term endocrine therapy can cause multiple adverse effects affecting quality of life, and that the majority of HR+ DCIS patients in their cohort chose mastectomy with long DFS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C74, C78 are supported by established knowledge about ET adverse effects and the study's own data showing high DFS rates in both groups. These contextual claims appropriately frame the risk-benefit consideration for ET use.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "In this study, 78.55% of HR+ DCIS patients were treated with post-mastectomy endocrine therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 is a straightforward calculation from the study data (791/1007 = 78.55%) and accurately describes the treatment pattern in this cohort.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "The authors acknowledge that their study was retrospective with a small number of events, and state that further validation in a large randomized prospective trial is warranted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 appropriately acknowledge critical study limitations. The authors correctly identify that only 23 events occurred, which severely limits statistical power. The call for prospective validation is appropriate and necessary before changing clinical practice.",
+    "result_type": "MINOR"
+  }
+]

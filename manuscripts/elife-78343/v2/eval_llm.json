@@ -1,0 +1,379 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Follicular epithelial cells in Drosophila melanogaster form a closed monolayer epithelium that undergoes collective migration along a stationary basement membrane for approximately 2 days, with stable migration direction throughout. This migration occurs without external guidance cues or leader-follower partitioning, instead relying on local interactions between migrating cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C15-C25 establish the biological context and are well-supported by citations to published literature (C10-C25) and data shown in Figure 1. The structural organization, migration behavior, and unique features of this system (closed topology, lack of external cues) are documented in prior work and serve as established background for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Follicle cell migration is driven by lamellipodial protrusions built by the WAVE complex, which activates Arp2/3 to create branched actin networks. Ena-dependent filopodia are embedded within lamellipodia but are dispensable for migration, while removal of WAVE complex subunits eliminates all protrusive structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C35 describe the molecular machinery of protrusions and are supported by citations to established literature (C27-C31) and experimental data shown in Figure 1D-F. The hierarchical relationship between WAVE complex and filopodia is demonstrated through RNAi experiments showing differential effects of ena-RNAi versus abi-RNAi on protrusion structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Fat2, an atypical cadherin localized to the trailing edge of follicle cells, is required for both planar polarity of protrusions and collective migration. Fat2 promotes protrusion formation at the leading edge of the cell behind, and there is bidirectional dependence between Fat2 polarity and epithelial migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C42 summarize prior knowledge about Fat2's role and are supported by multiple citations to published literature. These establish the foundation for the current study's investigation of the mechanism by which Fat2 regulates protrusions. The bidirectional relationship between Fat2 polarity and migration (C41-C42) is particularly important context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C43",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Fat2 localizes to the trailing edge of each follicle cell and acts in trans to concentrate WAVE complex activity at one long-lived region along the leading edge of the cell behind. Without Fat2, protrusions are reduced or lost.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C43, C50-C52 describe Fat2's localization and its effect on WAVE complex distribution. C2 and C50-C52 are supported by prior literature citations. C3-C4 and C43 represent key findings of the current study supported by experimental data throughout the Results section, particularly the mosaic analysis (Figure 5) and colocalization studies (Figure 8).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C127",
+      "C128"
+    ],
+    "result": "The protrusivity of fat2 epithelia is variable and overlaps with both control and CK-666-treated epithelia. In control epithelia, protrusions are polarized in the direction of migration, while in fat2 epithelia they are distributed in all directions or biased in two opposite directions. Fat2 not only promotes protrusion at the leading edge but also restricts protrusion to that edge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55, C127-C128 are supported by quantitative analysis of membrane protrusions shown in Figure 3. The computational segmentation method (Figure 2) provides objective measurements of protrusion length and orientation. The finding that fat2 protrusivity is intermediate and variable (C53) is important for understanding Fat2's dual role in promoting and restricting protrusions (C128).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C129",
+      "C130"
+    ],
+    "result": "In mosaic epithelia where small groups of fat2 cells are carried along by migratory control cells, fat2 cells remain protrusive but their protrusions are not polarized in the direction of migration. This demonstrates that Fat2 acts locally at the scale of groups of cells to polarize protrusions in alignment with collective migration direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58, C129-C130 are supported by mosaic analysis shown in Figure 4. This experiment elegantly separates Fat2's role in protrusion polarity from its role in maintaining tissue-wide migration. The finding that fat2 cells in migratory tissue still fail to polarize protrusions (C57, C130) is critical evidence that Fat2 acts locally rather than indirectly through global migration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "A CRISPR-generated Sra1-GFP line was validated as a functional WAVE complex marker. Sra1-GFP flies are viable and fertile when homozygous, localize to follicle cell leading edges like other WAVE complex labels, depend on Abi for localization, and show normal F-actin protrusions. Migration is slower with two copies of Sra1-GFP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 describe validation of the Sra1-GFP tool and are supported by data in Figure 5 and Figure 5\u2014figure supplement 1. The validation includes viability/fertility (C59), comparison to other WAVE complex markers (C60), dependence on complex integrity (C61), normal protrusion morphology (C62), and dose-dependent effects on migration speed (C63). This thorough validation supports use of Sra1-GFP as an endogenous WAVE complex reporter.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "WAVE complex levels are reduced at the basal surface of follicle cells lacking Fat2, and planar polarity of Sra1-GFP across the epithelium is lost in the absence of Fat2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 are supported by prior literature (C64) and quantitative analysis shown in Figure 5\u2014figure supplement 2 (C65-C66). The measurements of Sra1-GFP fluorescence intensity at cell-cell interfaces and as a function of interface angle provide quantitative evidence for both reduced WAVE complex levels and loss of planar polarity in fat2 epithelia.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Fat2 acts non-cell-autonomously to localize the WAVE complex to leading edges. In mosaic epithelia, Sra1-GFP is normally enriched at leading edges of fat2 cells if control cells are ahead, but reduced at leading edges of control cells if fat2 cells are ahead. This results in tissue-wide planar polarization of protrusive activity and collective cell migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C73 are supported by mosaic analysis shown in Figure 5D-E and Figure 5\u2014figure supplement 2. The non-cell-autonomous pattern (C67, C71) is demonstrated by measuring Sra1-GFP levels at interfaces between control and fat2 cells (C68-C70). The statistical analysis uses repeated measures ANOVA with appropriate post-hoc tests. The conclusions about tissue-wide effects (C72-C73) logically follow from the local non-cell-autonomous mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "In fat2 epithelia, the WAVE complex can still form regions of enrichment in individual cells and these regions are active, as evidenced by coincident F-actin protrusions and Sra1-GFP enrichment at protrusion tips. The WAVE complex can accumulate and build protrusions in the absence of Fat2, tissue-wide planar polarity, and collective cell migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 are supported by imaging data in Figure 6A and Figure 6\u2014figure supplement 1. The observation of heterogeneous Sra1-GFP distribution in fat2 cells (C74) and its correlation with F-actin protrusions (C75) demonstrates that WAVE complex can still form active regions without Fat2. The enrichment at protrusion tips (C77) confirms WAVE complex activity. The conclusion (C78) appropriately summarizes these observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C44",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "In control epithelia, Sra1-GFP is strongly and stably enriched along leading-trailing interfaces over 20 minutes, with side interfaces mostly devoid of Sra1-GFP except for infrequent transient accumulations. In fat2 epithelia, the WAVE complex distribution expands around the cell perimeter and fluctuates over time, with regions of greatest enrichment changing substantially and multiple enriched regions often present simultaneously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C44, C79-C83 are supported by timelapse imaging and kymograph analysis shown in Figure 6B-F. The kymographs provide clear visualization of WAVE complex stability over time, showing stable enrichment at leading-trailing interfaces in control cells versus dynamic, fluctuating enrichment in fat2 cells. The mosaic analysis (C83) confirms these differences persist even in migratory tissue.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C45",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Without Fat2, protrusive activity is reduced and unpolarized. In control cells, protrusion polarity is stable over 20 minutes with ~2% of interfaces switching polarity per hour, while in fat2 cells protrusion polarity often shifts substantially with ~60% of interfaces switching per hour. Fat2 stabilizes WAVE complex and protrusive activity distributions for repeated cycles of protrusion from one long-lived cell region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C45, C84-C88 are supported by timelapse imaging and quantitative analysis shown in Figure 7. The measurement of interface protrusion polarity switches (C86-C87) provides a quantitative metric for protrusion stability, showing a ~30-fold difference between control and fat2 epithelia. The statistical analysis (unpaired t-test, p=0.0002) supports the significance of this difference. The conclusion (C88) integrates findings about both WAVE complex and protrusion stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C7",
+      "C46",
+      "C47",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Fat2's influence is very local, with sub-micron-scale puncta of Fat2 along the trailing edge concentrating the WAVE complex in corresponding puncta just across the leading-trailing cell-cell interface. Fat2-3xGFP and Abi-mCherry puncta strongly colocalize (Spearman's r=0.71\u00b10.04) and move together through protrusion cycles. The interaction is non-cell-autonomous but very local, with the WAVE complex occasionally 'escaping' Fat2-dependent concentration at the leading edge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C46-C47, C89-C97 are supported by colocalization analysis shown in Figure 8A-E. The Spearman correlation coefficient (C91) provides quantitative evidence for strong colocalization. The negative control with E-cadherin-GFP (C92-C93) demonstrates specificity. Timelapse imaging (C94) shows dynamic colocalization. The observation of transient Abi accumulations at cell sides (C95) supports the 'escape' model (C97). The conclusions about local action (C7, C46-C47, C96) are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C102",
+      "C103"
+    ],
+    "result": "Fat2\u0394ICD-3xGFP, which lacks the intracellular domain, distributes more broadly around the cell perimeter than wild-type Fat2 but remains punctate. The distribution of Abi-mCherry expands correspondingly in the Fat2\u0394ICD background. Fat2 controls WAVE complex distribution by concentrating it in adjacent puncta, and the Fat2 intracellular domain is dispensable for Fat2-WAVE complex interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100, C102-C103 are supported by imaging and colocalization analysis shown in Figure 8A and E. The Fat2\u0394ICD experiment tests whether Fat2 puncta distribution determines WAVE complex distribution. The finding that Abi-mCherry distribution expands with Fat2\u0394ICD distribution (C100) while maintaining similar colocalization strength (C103, Spearman's r=0.71\u00b10.05 vs 0.71\u00b10.04) supports the conclusion that Fat2 controls WAVE complex distribution locally (C102) and that the intracellular domain is dispensable for the interaction (C103).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C48",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Fat2 and WAVE complex puncta colocalize at the tips of filopodia embedded within the lamellipodium. Fat2-3xGFP and Abi-mCherry are enriched just ahead of the F-actin-rich region along filopodia, with Fat2-3xGFP shifted slightly forward from Abi-mCherry consistent with separation by a cell-cell interface. This demonstrates a stereotyped organization with Fat2 at the trailing edge across the interface from leading edge components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C104-C108 are supported by imaging and quantitative analysis shown in Figure 8C-H. The colocalization with Ena-labeled filopodia tips (C105) and fluorescence intensity profiles along filopodia (C106-C107) provide spatial information about the organization. The interpretation of the Fat2-Abi spatial offset as reflecting trans interaction across the interface (C107) is reasonable given the known biology. The summary diagram (Figure 8H) integrates these findings (C108).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "In ena-RNAi-expressing epithelia where filopodia are depleted, Fat2-3xGFP and Abi-mCherry remain punctate and their colocalization is only slightly reduced (Spearman's r=0.71\u00b10.04 vs 0.65\u00b10.03). Ena and filopodia are not required mediators of the spatial relationship between Fat2 and the WAVE complex, indicating that Fat2-WAVE complex colocalization reflects Fat2 recruitment of the WAVE complex locally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112 are supported by colocalization analysis in ena-RNAi background shown in Figure 8\u2014figure supplement 1B. This experiment tests whether filopodia mediate Fat2-WAVE complex interaction. The finding that colocalization persists with only slight reduction despite filopodia loss (C109-C110) supports the conclusion that filopodia are not required (C111) and that colocalization reflects direct recruitment (C112). The statistical comparison is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C49",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "A trans interaction between Fat2 and the WAVE complex creates stable regions of protrusive activity in each cell and aligns cells' protrusions across the epithelium for directionally persistent collective migration. Fat2 acts locally at the scale of individual puncta to concentrate the WAVE complex in adjacent puncta across the cell-cell interface, which has the broader effect of stabilizing a region of WAVE complex enrichment at the leading edge. This allows cells to exert force in a common direction and achieve highly coordinated collective cell migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C49, C113-C120 represent the main conclusions of the study, integrating findings from multiple experiments. The trans interaction (C8, C115-C116) is supported by mosaic analysis (Figure 5). The local action at puncta scale (C113) is supported by colocalization data (Figure 8). The stabilization of WAVE complex regions (C114, C117-C118) is supported by dynamics analysis (Figures 6-7). The tissue-scale alignment (C9, C119) follows logically from the local mechanism. The functional significance for collective migration (C120) is well-supported by the integrated findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Local coupling of leading and trailing edges through asymmetric interactions across their shared interface is a recurring motif in epithelial collective cell migrations. These coupling systems could operate with longer-range cues to reinforce planar polarity, and may be especially critical in migrations with closed topology and no extrinsic directional cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C126 place the findings in broader context by comparing to other collective migration systems. C121-C124 are supported by citations to published literature describing similar mechanisms in other systems. C125-C126 are speculative statements (appropriately identified as such in evidence_type) about how different polarity mechanisms might work together and the importance of local coupling in specific contexts. These are reasonable interpretations that appropriately acknowledge uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The presence of axial orientation bias in some fat2 epithelia indicates Fat2-independent planar polarity, possibly mediated by undiscovered signaling molecules or mechanical cues. The authors hypothesize that Fat2 acts as an activity-entraining directional cue for the WAVE complex, promoting WAVE complex accumulation within a stable region by acting through positive regulators, thereby controlling where the excitation threshold is crossed. Without Fat2, site selection becomes more stochastic and long-lasting protrusive regions cannot form.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C131-C140 present interpretations and hypotheses about mechanisms. C131 is an inference from data (Figure 3) that is reasonable but not definitively proven. C132 is appropriately speculative. C133-C134 are supported by citations to published literature. C135 is a hypothesis that is reasonable given the data but not directly tested. C136-C137 are established knowledge. C138-C140 present a proposed mechanism that is consistent with the data but represents a model rather than proven mechanism. These claims appropriately distinguish between what is demonstrated and what is inferred or hypothesized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The receptor tyrosine phosphatase Lar is part of the bridge between Fat2 and the WAVE complex, with Fat2 recruiting Lar to leading edges. In Lar's absence, WAVE complex levels and protrusions are reduced, but the remaining WAVE complex still colocalizes with Fat2. Therefore, at least one other transmembrane protein must work alongside Lar to mediate the Fat2-WAVE complex interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C145 integrate prior work (C141-C143, supported by citations and data in Figure 8\u2014figure supplement 1) with new findings (C144, supported by colocalization analysis in lar mutants). The inference that another transmembrane protein must be involved (C145) is logical given that Fat2-WAVE complex colocalization persists in lar mutants. This represents appropriate integration of prior and current work to identify gaps in understanding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Fat2's punctate distribution is unaffected by loss of the WAVE complex, indicating Fat2 puncta shape WAVE complex distribution rather than vice versa. The authors propose that by concentrating and/or stabilizing WAVE complex distribution, Fat2 facilitates filopodia formation, though filopodia are dispensable for migration. Cadherins commonly form puncta, and for some like Flamingo, clustering is important for planar polarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C152 discuss the relationship between Fat2 puncta, WAVE complex, and filopodia. C146-C147 are supported by prior literature and represent important context. C148 is a reasonable proposal based on observations but appropriately identified as speculative. C149 is established knowledge. C150-C152 provide broader context about cadherin puncta formation supported by citations. These claims appropriately distinguish between established facts, current observations, and proposed mechanisms.",
+    "result_type": "MINOR"
+  }
+]

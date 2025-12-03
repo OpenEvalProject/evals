@@ -1,0 +1,288 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C19",
+      "C20",
+      "C24",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The authors identify a novel LClike cell population in the dermis that is distinct from classical Langerhans cells. These LClike cells are CD207+CD326+CD11blowF4/80low, migrate slowly to lymph nodes, are long-lived and radio-resistant, but unlike LCs are gradually replenished by bone marrow-derived precursors. LClike cells together with cDC1s, not classical LCs, are the main migratory CD207+CD326+ cells in lymph nodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of LClike cells is well-supported by multiple complementary approaches including flow cytometry (C19-C29), fate mapping (C47-C50, C64-C66), bone marrow chimeras (C53-C60), and LC depletion experiments (C75-C79). The characterization of their phenotype, ontogeny, turnover kinetics, and migratory behavior is demonstrated through convergent experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Single-cell RNA-sequencing analysis confirms that LC and LClike cells are two independent cell populations in the dermis. While they share some LC signature genes and transcription factors, they have distinct gene expression profiles and cluster separately from cDC1s and other dermal DC populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The scRNA-seq analysis (C30-C44) provides comprehensive molecular characterization showing that LC and LClike cells are related but distinct populations. The unsupervised clustering, differential gene expression analysis, and transcription factor profiling all support this conclusion. The data quality and analytical approaches appear appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Yolk sac fate mapping demonstrates that LCs partially derive from yolk sac progenitors (~12% YFP labeling at E7.5), while LClike cells do not originate from yolk sac (~5% YFP labeling, attributed to HSC spillover). This establishes distinct ontogenetic origins for LC and LClike cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The E7.5 fate mapping experiments (C47-C50) clearly demonstrate differential yolk sac contribution to LCs versus LClike cells. The ~12% labeling of LCs is consistent with prior literature (C45), while the significantly lower ~5% labeling of LClike cells (comparable to other dermal DCs) supports their distinct ontogeny. The interpretation of the 5% signal as HSC spillover is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Bone marrow chimera experiments reveal that LClike cells have a dual origin, being gradually replaced by BM-derived cells over time (from ~10% at 1 month to ~50% at 4 months), unlike LCs which remain host-derived and other DCs which are rapidly replaced. BM-derived and resident LClike cells show ~85% gene expression overlap, suggesting microenvironment determines cell identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The BM chimera data (C53-C63) convincingly demonstrate the unique replacement kinetics of LClike cells, distinguishing them from both self-renewing LCs and rapidly-replaced conventional DCs. The RNA-seq comparison of CD45.1+ and CD45.2+ LClike cells (C62-C63) supports the conclusion about microenvironmental determination of identity. The experimental design and temporal analysis are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C70"
+    ],
+    "result": "Fate mapping analysis under steady-state conditions shows LClike cells display slow turnover kinetics, gradually accumulating YFP label from 10% to 60% over 8 months, and exhibit higher proliferative capability than LCs and other DC subsets to maintain their population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The KitMerCreMer/R26 fate mapping experiments (C64-C66) provide clear evidence for slow turnover of LClike cells under non-irradiated conditions, avoiding potential artifacts from BM chimera generation. The cell cycle analysis (C67) supports the higher proliferative capacity. This complements the BM chimera data and strengthens the characterization of LClike cell biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Using a novel DC-SIGN-DTR mouse model, the authors demonstrate that LCs can be selectively depleted without affecting LClike cells, and that LC depletion does not alter the BM-derived replenishment of LClike cells. This establishes the independence of LClike cells from classical LCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The DC-SIGN-DTR model (C71-C79) provides critical genetic evidence for LC/LClike independence. The selective expression of DC-SIGN/DTR in LCs but not LClike cells is confirmed by qPCR (C71-C72), and the lack of DC-SIGN downregulation upon LC activation (C73-C74) rules out phenotypic conversion. The depletion experiments show selective LC loss without affecting LClike cells (C75-C77), and fate mapping in LC-depleted mice confirms normal LClike replenishment (C79).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C9"
+    ],
+    "result": "In contact hypersensitivity experiments, LC depletion results in enhanced and prolonged ear swelling, increased proinflammatory cytokines (IL-6, TNF-\u03b1, IL-1\u03b2), elevated VEGF-\u03b1, and augmented IFN-\u03b3-producing CD8+ T cells, without affecting dermal Tregs. This demonstrates that LCs suppress effector T-cell functions and inflammation locally in the skin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The CHS experiments (C80-C84) provide multiple converging lines of evidence for LC-mediated local immunosuppression. The enhanced inflammation phenotype in LC-depleted mice is consistent with prior studies using other LC-ablation models (C80). The molecular (qPCR) and cellular (flow cytometry) measurements support the mechanism. The lack of Treg involvement (C84) is consistent with cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C90",
+      "C8"
+    ],
+    "result": "Tolerance experiments using multiple DTR mouse strains demonstrate that cutaneous tolerance to haptens depends specifically on LClike cells, not LCs or cDC1s. Only mice lacking LClike cells (CD207-DTR) failed to develop tolerance, showing robust ear inflammation, enhanced IFN-\u03b3+ CD8+ T cells, and reduced ICOS+FOXP3+ Tregs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The tolerance experiments (C85-C90) use an elegant genetic dissection approach comparing CD207-DTR (lacks LCs, LClike, and cDC1), DC-SIGN-DTR (lacks only LCs), and Clec9A-DTR (lacks only cDC1) mice. The differential phenotypes clearly implicate LClike cells as the critical population for tolerance induction. The correlation with Treg expansion (C88) provides mechanistic insight. The experimental design effectively controls for different cell populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The authors propose a revised model where LCs at steady state are sessile and act locally in the skin (similar to tissue-resident macrophages), while dermal LClike cells assume many functions previously attributed to LCs, including migration to lymph nodes and tolerance induction. This challenges the established paradigm of LCs as the main migrating APCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This synthesis (C91-C93, C105-C107) is well-supported by the collective experimental evidence: absence of F4/80hiCD11bhi LCs in lymph nodes (C27), presence of LClike cells in LN (C6), independence of LClike from LCs (C78), LClike-dependent tolerance (C90), and LC-mediated local suppression (C9). The model integrates all major findings and is consistent with cited intravital microscopy studies (C94-C96).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The manuscript provides historical and literature context for Langerhans cells and skin dendritic cell biology, including their discovery, classification, characteristics, and the complexity of the skin DC network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C10-C18) provide appropriate background and are supported by citations to established literature. They accurately represent the historical development of LC biology and the current understanding of skin DC complexity. This contextualizes the novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C19",
+      "C21",
+      "C22",
+      "C23",
+      "C25",
+      "C26"
+    ],
+    "result": "Flow cytometry characterization establishes the phenotypic markers distinguishing different skin DC populations, including epidermal LCs (CD11bhiF4/80hiCD326+CD207+), dermal LCs, cDC1s (CD103+CD11b-CD326+CD207+), LClike cells (CD103-CD11blowCD326+CD207+), and other DC subsets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The flow cytometry gating strategies and phenotypic characterization (C19-C26) are clearly presented in Figure 1 and supplementary figures. The marker combinations are consistent with established DC biology and allow clear discrimination of populations. The expression patterns of Sirpa, CD80, and CD86 provide additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C45",
+      "C51",
+      "C52",
+      "C68",
+      "C69"
+    ],
+    "result": "The manuscript cites established knowledge about LC and DC ontogeny and turnover, including that LCs derive from yolk sac progenitors, are radio-resistant and self-renewing, while other DCs are short-lived and BM-derived.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C45, C51-C52, C68-C69) accurately cite and represent established literature on LC and DC biology. The citations are appropriate and the statements are consistent with current understanding in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The authors cite and interpret intravital microscopy studies showing that epidermal LCs are sessile under steady-state conditions while dermal DCs actively migrate, and reinterpret previously reported slow migratory cells as LClike cells rather than LCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The citations to intravital microscopy studies (C94-C96) are appropriate and support the differential migratory behavior of epidermal versus dermal DCs. The reinterpretation of slow migratory cells (C103-C104) is a reasonable inference based on the current study's findings, though it remains somewhat speculative without direct re-examination of those prior studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The authors draw parallels between LClike cells and tissue-resident macrophages in other organs, suggesting that both fetal-derived and BM-derived LClike cells coexist and that microenvironment determines their identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison to tissue-resident macrophages (C97) is supported by appropriate citations. The conclusion about microenvironmental determination of LClike identity (C98-C99) is well-supported by the RNA-seq data showing high similarity between CD45.1+ and CD45.2+ LClike cells (C62-C63).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C108"
+    ],
+    "result": "The authors speculate about potential human correlates of murine LClike cells and therapeutic implications for inflammatory skin disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The speculation about human CD207+ dermal myeloid DCs being analogous to murine LClike cells (C100-C101) is reasonable given the cited literature, but remains unproven. The therapeutic implications (C108) are appropriately framed as future possibilities but lack supporting data. These are reasonable directions for future research but should not be considered established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "ICOS+CD4+FOXP3+ Tregs exhibit suppressive activity in contact hypersensitivity to DNFB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim (C89) is supported by citation to Vocanson et al., 2010, and is consistent with established Treg biology. It provides mechanistic context for the tolerance experiments.",
+    "result_type": "MINOR"
+  }
+]

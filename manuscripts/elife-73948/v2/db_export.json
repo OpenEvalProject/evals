@@ -1,0 +1,1689 @@
+{
+  "submission": {
+    "id": "c0a16a44-ec61-4d19-aca7-ccf6dda2f049",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T11:42:14.866203Z",
+    "updated_at": "2025-12-03T11:42:14.866203Z"
+  },
+  "content": [
+    {
+      "id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "submission_id": "c0a16a44-ec61-4d19-aca7-ccf6dda2f049",
+      "content_type": "manuscript",
+      "content_text": "# Particle foraging strategies promote microbial diversity in marine environments\n\n## Authors\n\n- Ali Ebrahimi<sup>1</sup> ([ORCID: 0000-0003-1079-7976](https://orcid.org/0000-0003-1079-7976))\n- Akshit Goyal<sup>2</sup> ([ORCID: 0000-0002-9425-8269](https://orcid.org/0000-0002-9425-8269))\n- Otto X Cordero<sup>1</sup> ([ORCID: 0000-0002-2695-270X](https://orcid.org/0000-0002-2695-270X)) \u2020\n\n### Affiliations\n\n1. Ralph M. Parsons Laboratory for Environmental Science and Engineering, Department of Civil and Environmental Engineering, Massachusetts Institute of Technology Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))\n2. Physics of Living Systems, Department of Physics, Massachusetts Institute of Technology Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))\n\n\u2020 Corresponding author\n\n## Abstract\n\nMicrobial foraging in patchy environments, where resources are fragmented into particles or pockets embedded in a large matrix, plays a key role in natural environments. In the oceans and freshwater systems, particle-associated bacteria can interact with particle surfaces in different ways: some colonize only during short transients, while others form long-lived, stable colonies. We do not yet understand the ecological mechanisms by which both short- and long-term colonizers can coexist. Here, we address this problem with a mathematical model that explains how marine populations with different detachment rates from particles can stably coexist. In our model, populations grow only while on particles, but also face the increased risk of mortality by predation and sinking. Key to coexistence is the idea that detachment from particles modulates both net growth and mortality, but in opposite directions, creating a trade-off between them. While slow-detaching populations show the highest growth return (i.e., produce more net offspring), they are more susceptible to suffer higher rates of mortality than fast-detaching populations. Surprisingly, fluctuating environments, manifesting as blooms of particles (favoring growth) and predators (favoring mortality) significantly expand the likelihood that populations with different detachment rates can coexist. Our study shows how the spatial ecology of microbes in the ocean can lead to a predictable diversification of foraging strategies and the coexistence of multiple taxa on a single growth-limiting resource.\n\n## Introduction\n\nMicrobes in nature are remarkably diverse, with thousands of species coexisting in any few milliliters of seawater or grains of soils (Azam and Malfatti, 2007; Young and Crawford, 2004). This extreme diversity is puzzling since it conflicts with classic ecological predictions. This puzzle has classically been termed \u2018the paradox of the plankton\u2019, referring to the discrepancy between the measured diversity of planktons in the ocean, and the diversity expected based on the number of limiting nutrients (Ghilarov, 1984; Shoresh et al., 2008; Hutchinson, 1961; Goyal and Maslov, 2018). Decades of work have helped, in part, to provide solutions for this paradox in the context of free-living (i.e., planktonic) microbes in the ocean. Many have suggested new sources of diversity, such as spatiotemporal variability, microbial interactions, and grazing (Rodriguez-Valera et al., 2009; Muscarella et al., 2019; Saleem et al., 2013). However, in contrast with free-living microbes, the diversity of particle-associated microbes \u2014 often an order of magnitude greater than free-living ones \u2014 has been overlooked (Milici et al., 2017; Ganesh et al., 2014; Crespo et al., 2013). In contrast with planktonic bacteria, which float freely in the ocean and consume nutrients from dissolved organic matter, particle-associated microbes grow by attaching to and consuming small fragments of particulate organic matter (POM) (of the order of micrometers to millimeters). It is thus instructive to ask: what factors contribute to the observed diversity of particle-associated microbes, and how do these factors collectively influence the coexistence of particle-associated microbes?\n\nThe dispersal strategies of particle-associated microbes can be effectively condensed into one parameter: the rate at which they detach from particles. This rate, which is the inverse of the average time that microbes spend on a particle, is the key trait distinguishing particle-associated microbial populations from planktonic ones Yawata et al., 2020; Fernandez et al., 2019. The detachment rates of such particle-associated taxa can be quite variable (Grossart et al., 2003; Yawata et al., 2014). Bacteria with low detachment rates form biofilms on particles for efficient exploitation of the resources locally, while others with high detachment rates frequently attach and detach across many different particles to access new resources (Ebrahimi et al., 2019). Therefore, to understand how diversity is maintained in particle-associated bacteria we must be able to explain how bacteria with different dispersal rates can coexist. In this study, we address this question. Specifically, we ask how two populations with different dispersal strategies can coexist while competing for the same set of particles, under a range of conditions relevant for marine microbes.\n\nWe hypothesize that dispersal is key to the coexistence of particle-associated microbes and thus might explain their high diversity. The degree of species coexistence on particles depends on the balance between growth and mortality. On particles, net mortality rates can be higher than for planktonic cells because of the large congregation of cells on particles, which exposes them to the possibility of a large and sudden local population collapse. The collapse of a particle-attached population can be induced by a variety of mechanisms, including particles sinking below a habitable zone (Boeuf et al., 2019), or predation of whole bacterial colonies by viruses or grazers. For instance, after a lytic phage bursts out of a few cells on a particle, virions can rapidly engulf the entire bacterial population, leading to its local demise (Ganesh et al., 2014; Dupont et al., 2015; L\u00f3pez-P\u00e9rez et al., 2016). Such particle-wide mortality may kill more than 30% of particle-associated populations in the ocean (Proctor and Fuhrman, 1991; Weinbauer et al., 2009). The longer a population stays on a particle, the higher the chance it will be wiped out. This trade-off between growth and risk of mortality suggests that there could be an optimal residence time on particles. It is however unclear whether sucha trade-off could enable the coexistence of populations with different dispersal strategies and, if so, under what conditions.\n\nHere, we study this trade-off using mathematical models and stochastic simulations. These models reveal that the trade-off between growth and survival against predation can indeed lead to the stable coexistence of particle-associated microbial populations with different dispersal strategies (in our work, detachment rates). We also study how environmental parameters, such as the supply rate of new particles, determine the dominant dispersal strategy and the range of stable coexistence. Our results show that in bloom conditions, when the particle supply is high, fast dispersers that rapidly hop between particles are favored. In contrast, under oligotrophic conditions, when particles are rare, rarely detaching bacteria have a competitive advantage. Overall, our work shows that differences in dispersal strategies alone can enable the coexistence of particle-associated marine bacteria, in part explaining their impressive natural diversity.\n\n## Results\n\n### Overview of the model\n\nTo understand how differences in dispersal strategies affect bacterial coexistence, we developed a mathematical model that describes the population dynamics of bacteria colonizing a bath of particles with a chosen dispersal strategy. More specifically, in our model, bacterial cells attach to particles from a free-living population in the bulk of the bath; they then grow and reproduce while attached. Detachment is stochastic with a fixed rate. After detachment, cells re-enter the free-living population and repeat the process. During the time spent attached to particles, all bacteria on a particle may die with a fixed probability per unit time, corresponding to their particle-wide mortality rate (Figure 1A). Another important feature of the model is density-dependent growth, which means that per capita growth rates decrease with increasing population size. For this, we use the classic logistic growth equation, which contains a simple linear density dependence (Figure 1B; Methods). Free-living subpopulations cannot grow, but die at a fixed mortality rate due to starvation. The probability of a bacterium encountering particles controls bacterial attachment, which we calculate using random walk theory as the hitting probability of two objects with defined sizes (Leventhal et al., 2019; Frazier and Alber, 2012; see Methods for details). We assume that the detachment rate is an intrinsic property of a bacterial population and comprises its dispersal strategy independent of the abiotic environment. In our simulations, it is the only trait that varies between different bacterial populations. Growing evidence has shown that bacterial detachment rates differ significantly across marine bacterial communities from solely planktonic cells to biofilm-forming cells on particles (Yawata et al., 2014; Ebrahimi et al., 2019). Using this mathematical model, we asked how variation in detachment rate affects bacterial growth dynamics and the ability of multiple subpopulations to coexist on particles. For this, we simulated bacterial population dynamics on a bath of several particles and measured each population\u2019s relative abundance at a steady state (example in Figure 1C).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/73948/elife-73948-fig1-v2.jpg)\n\n**Figure 1.:** (A) The model assumes that the predation on a particle or sinking out of system\u2019s boundaries kills its all associated populations. After infection, the noncolonized particle is then recolonized by free-living populations. As resources on a particle are consumed, its associated populations are dispersed and are added to the free-living populations. In this case, the old particle is replaced by a new uncolonized particle in the system. (B) The growth kinetics on a single particle is assumed to be density dependent and decreases linearly as a function of the number of cells colonizing the particle. Nt represents the carrying capacity of the particle. (C) The dynamics of particle-associated cells and their corresponding growth rates are shown for a system with 1000 particles. The mean values over many particles and an example of dynamics on a single particle are illustrated.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73948/elife-73948-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Encounter probability of a bacterial cell and a particle as a function of cell\u2013particle distance, Dc,p. An analytical model based on the hitting probability of two objects from random walk theory is used to obtain the encounter probability (Equation 5). Bacterial cell and particle sizes are assumed to be 1 and 100 \u00b5m, respectively. Simulations are performed for two time intervals of 1 and 10 s. (B) The rate of free-living bacterial cells attachment to particles as a function of time for various number particle availability in the environment.\n\n### Bacterial mortality determines optimal foraging strategies\n\nOur model simulates growth, competition, and dispersal in a patchy landscape, similar to classical models of resource foraging, with the additional element of mortality, both within and outside patches (i.e., particles). We hypothesized that the inclusion of mortality could play an important role in affecting the success of a dispersal strategy (i.e., detachment rate), since it would alter the cost of staying on a particle. To investigate how mortality affects dispersal strategies, we studied its effect on the optimal strategy, which forms the focus of many classical models of foraging. According to optimal foraging theory (OFT), the optimal time spent on a particle is one that balances the time spent without food while searching for a new patch, with the diminishing returns from staying on a continuously depleting patch (Yawata et al., 2020; Charnov, 1976). In our model, particles are analogous to resource patches, and the detachment rate is simply the inverse of the time spent on a particle (residence time). We assumed that the optimal strategy maximizes the total biomass yield of the population.\n\nAs expected, OFT predicts the optimal detachment rate given a distribution of resources and search times, but only in the absence of mortality (Figure 2A). To test if our model agrees with the predictions of OFT, we calculated the optimal detachment rate (dopt) using simulations of our model in the absence of mortality and compared it with OFT predictions (Methods). We found that the optimal detachment rate, which outcompetes all other detachment rates, was consistent with OFT predictions across a wide range of particle numbers in our system (Figure 2A). Strikingly, in the presence of mortality, the optimal detachment rate (dopt) changed significantly, either increasing or decreasing depending on the type of mortality. When mortality was particle-wide, the optimal detachment rate was much higher than predicted by OFT, often resulting in residence times that were many days shorter than the OFT prediction (Figure 2A). This is because it is more beneficial to detach faster when there is a higher risk of particle-wide extinction. In contrast, when mortality was only present in free-living populations (affecting individuals, not particles, at a constant per capita rate), the optimal detachment rate was much lower than predicted by OFT (Figure 2A). These results expand on our knowledge of OFT and explain that the source and strength of mortality \u2013 on individuals or on whole particles \u2013 can differently impact the optimal detachment rate.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/73948/elife-73948-fig2-v2.jpg)\n\n**Figure 2.:** (A) Optimal residence time predicted by the population-based model and optimal foraging theory (OFT; Methods). Three scenarios with various particle-wide mortality (mp) and mortality on free-living populations (mF) are simulated with the following rates: (1) particle-wide mortality (mp = 0.05 hr\u22121, mF = 0.02 hr\u22121), (2) free-living mortality (mp = 0 hr\u22121, mF = 0.05 hr\u22121), and (3) no mortality (mp = 0 hr\u22121, mF = 0 hr\u22121). To calculate optimal residence time based on OFT, we used our model and tracked individual cells attaching to a particle. The time-averaged uptake rate of the attached cell and its instantaneous uptake rate were calculated. The residence time with similar instantaneous and time-averaged uptake rates is assumed to be optimal residence time based on OFT (see Method for details). In our population-based model, the optimal residence time is assumed to be a residence time that maximizes the growth return from the particles. (B) The relative abundance of population 1 is shown for competition experiments of two populations with different detachment rates. The relative abundance is measured at the equilibrium, where no changes in the sizes of both populations are observed. The area with white color represents the conditions where either one of the populations is extinct. The mortality on particles is assumed 0.02 hr\u22121. (inset) Phase diagram of the coexistence as a function of detachment rates for two competing populations. dopt represents the optimal detachment rate that the coexistence range nears zero. (B) The attachment rates are kept constant at 0.0005 hr\u22121. The number of particles is assumed to be 60 L\u22121. The carrying capacity of the particle is assumed to be 5e106. Simulations are performed using our population-based mathematical model.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73948/elife-73948-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The detachment rates of the populations B1 and B2 in scenarios I and II are (0.7 hr\u22121, 0.2 hr\u22121) and (0.7 hr\u22121, 1 hr\u22121), respectively. These population dynamics correspond to the conditions simulated in Figure 2B.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/73948/elife-73948-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The parameters for the simulations are selected similar to Figure 2A, except with no particle-wide mortality.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/73948/elife-73948-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** The relative abundances of populations with different detachment rates are shown over time. The simulations start with 100 populations with the same relative abundances that they only differ in their detachment rates. In this simulation, bacterial cells colonize 1000 particles with a constant attachment rate (~0.0005 hr\u22121). Two mortality rates are simulated (low: 0.04 hr\u22121 and high 0.08 hr\u22121).\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/73948/elife-73948-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) Schematic representation of various growth kinetics on particles as a function of the number of bacteria on particles. (B) The coexistence range among two populations is shown as a function of the detachment rate of the second population. The coexistence range represents a range of detachment rates for both populations that coexist at the equilibrium. Inset panel represents the relative abundance of population 1 for different detachment rates. Detachment rates with relative abundances less than 5% is assumed extinct. The mortality on particles is assumed 0.02 hr\u22121. The attachment rates are kept constant at 0.0005 hr\u22121. The number of particles is assumed to be 60 L\u20131. The carrying capacity and maximum growth rates are assumed, Nt = 5 \u00d7 106 and \u00b5max = 0.50 hr\u22121, respectively.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/73948/elife-73948-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** The relative abundance of population 1 is shown for competition experiments of two populations with different detachment rates and for two different values of maximum growth rates and carrying capacities. The area with white color represents the conditions where either one of the populations is extinct. The mortality on particles is assumed 0.02 hr\u22121. The attachment rates are kept constant at 0.0005 hr\u22121. The number of particles is assumed to be 60 L\u20131.\n\n### A trade-off between growth and mortality enables the coexistence of dispersal strategies\n\nHaving observed that mortality can greatly affect the success of a dispersal strategy, we next sought to understand whether it could enable the coexistence of bacterial populations with different strategies (detachment rates). Simulations where we competed a pair of bacterial populations with different detachment rates revealed that differences in detachment rates alone are sufficient to enable coexistence on particles (Figure 2B). We assessed coexistence by measuring the relative abundances of populations at equilibrium (Figure 2\u2014figure supplement 1). Interestingly, such a nontrivial coexistence only emerged in the presence of particle-wide mortality. In the absence of mortality on particles, we only observed trivial coexistence (coexisting populations had identical detachment rates, and for the purposes of the model, were one and the same; Figure 2\u2014figure supplement 2). These results suggested that the presence of particle-wide mortality, where the entire population on a particle suffers rapid death, was crucial for populations with different dispersal strategies to coexist.\n\nTo investigate the underlying mechanisms that may give rise to the coexistence of populations with different detachment rates, we quantified the growth return of particle-associated populations as well as their survival rate on particles (Figure 3A, B). We calculated the average growth return based on the average number of offspring produced per capita during one single attachment\u2013detachment event. The survival rate on particles was obtained by subtracting the mortality rate per capita from the offspring production rate per capita (Figure 3B; see Methods). The results revealed that a trade-off between bacterial growth return and survival rate emerged on particles, supporting the coexistence of populations with different detachment rates (Figure 3C, D). Populations that detach slowly from particles have higher growth returns but are also more susceptible to particle-associated mortality. In contrast, populations with low residence time on particles (high detachment rate) have low growth returns but they are less likely to die by predation or sink beyond the habitable zone. We next investigated whether such a trade-off was necessary to enable coexistence in our model.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/73948/elife-73948-fig3-v2.jpg)\n\n**Figure 3.:** (A) The growth return of a single cell on a particle is calculated based on the number of offsprings produced during a single attachment/detachment event. (B) The growth rate on particles slows down as the particle is populated by offspring cells or new attaching cells that limit the net growth return from a particle. (C) The ratio of growth returns and survival of populations 1\u20132 per capita as a function of their radios of residence times is shown. The residence time on the particle is assumed to be the inverse of each population\u2019s detachment rate. The relative abundance of population 1 is shown for its corresponding simulations. The data are shown for the simulations where detachment rate of population 2 was kept constant at 0.2 hr\u22121. Constant residence time for the population 2 (4 hr) is considered while varying the residence time of the first population across simulations. 1:1 line represents a coarse-grained model for the coexistence criteria of two competing populations.\n\nWe developed a coarse-grained model to address the conditions under which we might observe coexistence between populations whose only intrinsic difference was their detachment rates in our system. Our simple model expands on classical literature which describes coexistence among various dispersal strategies in spatially structured habitats (Levin and Paine, 1974; Kneitel and Chase, 2004; Tilman, 1994; Amarasekare, 2003). We simplified many details in favor of analytical tractability. Chiefly, we assumed that the growth dynamics on each particle were much faster than the dispersal dynamics across particles. This allowed us to replace detailed growth dynamics on single particles with a single number quantifying the bacterial population, N, after growth on each particle. In the model, we considered two particle-associated populations that competed for a shared pool of particles. To keep track of populations, we quantified the number of particles they had successfully colonized as B1 and B2, respectively. Individuals from both populations could detach from particles they had already colonized and migrate toa number E of yet-unoccupied particles, with a rate proportional to their detachment rates, d1 and d2, respectively. Once migrated, individuals rapidly grew on unoccupied particles to their fixed per particle growth returns, N1 and N2. To model particle-wide mortality, we assumed a fixed per particle mortality rate, $m_{p}$. The population dynamics for the system of particles could therefore be written as follows:\n\n$$\n\\frac{dB_{i}}{dt}=(N_{i}d_{i}E\u2212m_{p})B_{i}\n$$\n\nAt equilibrium ($\\frac{dB_{i}}{dt}=0\u00a0\u2200\u00a0i$), either population can survive in the system if and only if its net colonization and mortality rates are equal ($N_{i}d_{i}E\u2248m_{p}$). Consequently, the product of the growth return per particle and the detachment rate of either population should be equal ($N_{1}d_{1}\u2248N_{2}d_{2}$). By simplifying Equation 1 at equilibrium, this model predicts that for two competing populations to coexist, their growth returns and detachment rates on particles must follow the relation:\n\n$$\n\\frac{N_{1}}{N_{2}}= \\frac{d_{2}}{d_{1}}\n$$\n\nThis relationship shows that coexistence demands a trade-off between the growth return (N) of a bacterial population, and its detachment rate (d), that is, the inverse of an individual\u2019s residence time on a particle. In other words, coexistence only emerges when the growth returns increase with the residence time on the particle ($\\frac{N_{1}}{N_{2}}~\\frac{T_{1}}{T_{2}}$). In agreement with this, simulations from our detailed model revealed that coexistence between two populations with different detachment rates only occurred in conditions where the two populations obeyed such a relationship, or trade-off (Figure 3C, gray region). We obtain the same relationship in Equation 2 through an alternate calculation, where the relative abundances of both populations remain fixed, while the particle number varies.\n\nWhile the trade-off in Equation 2 allows coexistence and is necessary condition for it, it does not strictly hold across all parameter values, and hence prevents certain pairs of detachment rates to coexist (Figure 3C, white region). In particular, no detachment rate can coexist with the optimal detachment rate, thus rendering coexistence between any other set of detachment rates susceptible to invasion by this optimal strategy. Other strategies, when paired with the optimal strategy, disobey the condition in Equation 2, and thus cannot coexist with it. Therefore, if detachment rates were allowed to evolve, only one population would survive in the long run \u2013 the one with the optimal detachment rate (Figure 2\u2014figure supplement 3). Motivated by this observation, we next asked whether environmental fluctuations would render coexistence evolutionarily stable, or whether they would further destabilize the coexistence of populations with nonoptimal dispersal strategies.\n\n### Environmental fluctuations stabilize and enhance the diversity of dispersal strategies\n\nThe existence of a unique optimal strategy, even in the presence of particle-wide mortality (Figure 2A), suggests that the coexistence that we observed between populations with different detachment rates (Figure 2B) may not be evolutionarily stable. However, in the oceans, both the abundance of particles and the density of predators (such as phage) exhibit temporal and spatial fluctuations (Nilsson et al., 2019; Garin-Fernandez et al., 2018; Luo et al., 2017), in turn affecting the foraging dynamics of particle-associated bacterial populations. We used our model to study how the particle-wide mortality rate affects the likelihood of two particle-associated bacterial populations to coexist (see Methods). Surprisingly, we found a negative correlation between the mortality rate and particle abundance that enhances the range of coexistence among different detachment rates (Figure 4A). At low mortality rates, slow-detaching populations outcompete faster ones, as it is more advantageous to stay longer on particles and grow, that is, these populations derive higher net growth returns. However, a higher mortality rate on particles allows faster-detaching populations to instead gain an advantage over the slow-detaching populations, since they can better avoid particle-wide mortality events.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/73948/elife-73948-fig4-v2.jpg)\n\n**Figure 4.:** (A) The coexistence probability is shown for a range of particle abundances and predation rates. The coexistence probability is calculated by performing multiple competition experiments across populations with various detachment rates and quantifying the number of conditions that the coexistence between two populations is found. (B) For three particle abundances in A, the relative abundance of population 1 is shown in competition experiments of two populations. The numbers in circles refer to conditions in A. Simulations are assumed to be at the equilibrium when no changes in the size of either population are observed. The area with white color represents the conditions where either one of the populations is extinct. (C) A sine function is introduced to represent particle abundance fluctuations. (D) The coexistence range represents a range of detachment rates for populations that coexist at the equilibrium. Populations with relative abundances less than 5% of the most abundant population is assumed extinct. (E) The coexistence range is shown as a function of particle fluctuation period. The attachment rate and mortality rates are assumed to be ~0.0005 and ~0.045 hr\u22121.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73948/elife-73948-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The particle abundances are extracted over many field observations across many aquatic environments at different geographical locations (M\u00f6ller, 2012; Ashjian et al., 2005; Gallager et al., 2004; Norrbin et al., 1996). The mean particle abundance over these field data is approximately 25 per liter.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/73948/elife-73948-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) The fluctuations in particle abundance are characterized by quantifying fluctuation periods from the time difference between two neighboring local minimum and maximum, as illustrated in the schematic. (B) Probability distribution functions for fluctuation periods in particle abundances obtained from field observations.\n\nWe extended our model to ask how variation in the total number of particles (or particle abundance) affect population dynamics and the coexistence range of populations with different dispersal strategies. The results indicated that an intermediate number of particles maximize the likelihood of coexistence of two populations with different dispersal strategies (Figure 4A). Here, we simulated a range of particle abundances, between 1 and 80 particles L\u22121, which corresponds to the commonly observed range of particle abundances in aquatic environments (mean ~25 particles L\u22121; Figure 4\u2014figure supplement 1). Low particle abundances (0\u201320 L\u22121) promote the growth of slow-detaching populations while at high particle abundances, fast-detaching populations dominate. The reason for this is the following: at particle abundances less than 20 L\u22121, the probability of free-living cells finding and attaching to particles is less than 50% of the probability at high particle abundances (100 L\u22121 in Figure 1\u2014figure supplement 1). This makes particle search times very high, thus explaining how slow-detaching strategies have an advantage. As the number of particles increases, the entire system can support more cells (has a higher carrying capacity). This drives a decrease in particle search times, and thus increasingly advantages faster detaching strategies.\n\nInterestingly, our results indicate that the optimal detachment rate (dopt) is affected by the particle abundance and increases with the number of particles in the system (Figure 4B). We thus hypothesized that fluctuations in particle abundance may also induce fluctuations in the optimal detachment rate, such that no specific detachment rate would be uniquely favored at all times. Thus, environmental stochasticity would continuously change the optimal detachment rate; low particle abundances would favor fast-detaching populations, while higher particle abundances would favor slow-detaching populations. Such a \u2018fluctuating optimum\u2019 may create temporal niches and promote higher bacterial diversity on marine particles. To test this hypothesis using our model, we simulated competition between 100 populations with different detachment rates under a periodically varying particle abundance (Figure 4C). The chosen frequencies of variation in particle abundance (Fp) were selected to be consistent with the observed frequencies in the ocean, with periods ranging between 10 and 100 hr (Figure 4\u2014figure supplement 2; Lampitt et al., 1993). We quantified the range of detachment rates, a proxy for bacterial diversity, that could coexistat equilibrium (Figure 4D). The results revealed that the scenario with fastest fluctuations in particle numbers (Fp = 10 hr\u22121) supported higher diversity among populations with different detachment rates (Figure 4D). Consistent with the fluctuation periods observed in the ocean, our simulations showed that fluctuation at the daily scale is sufficient to support the coexistence of different dispersal strategies. Overall, our model provides a framework to study how environmental fluctuations contribute to observed diversity in the dispersal strategies of particle-associated populations in marine environments.\n\n## Discussion\n\nIn this study, we have shown a mechanism by which diverse dispersal strategies can coexist among bacterial populations that colonize and degrade POM in marine environments using a mathematical model. In our model, coexistence among populations with different dispersal strategies emerges from a trade-off between growth return and the probability of survival on particles. Such a trade-off determines the net number of detaching cells from particles that disperse into the bulk environment and colonize new particles. While slow-detaching populations are able to increase their growth return on particles and produce a relatively high number of offspring, they also experience higher mortality on particles that reduces their ability to colonize new particles. In contrast, faster-detaching populations can better avoid mortality by spending less time on particles, but this comes at the expense of lowering their growth return on a particle. Such populations can instead disperse and colonize a larger fraction of fresh yet-unoccupied particles. Interestingly, our results indicated that in the absence of mortality on particles, no coexistence is expected and there is a single dispersal strategy that provides the highest fitness advantage over dispersing populations, indicating that mortality on a particle is a key factor for the emergence of diverse dispersal strategies. Such correlated mortality with dispersal is the direct result of spatial structures created by particle-associated lifestyle, unlike the planktonic phase where predation probability per capita is expected to be uniform among planktonic cells. This study expands on the existing knowledge that spatial structure plays a critical role in promoting bacterial diversity in nature (Eckburg et al., 2005; Zhang et al., 2014), by incorporating the idea of particle-wide predation, which are events of correlated predation of an entire population on a particle. Such correlated predation could be an ecologically relevant mechanism that explains, in part, why we observe a higher diversity in particle-associated bacteria than planktonic bacteria in nature (Milici et al., 2017; Ganesh et al., 2014; Crespo et al., 2013). Our model assumes a general form of predation on particles that is insensitive to population type. However in the context of viral infection, field observations often show high strain specificity Holmfeldt et al., 2007; Roux et al., 2012; Suttle and Chan, 1994; Suttle, 2005 that is likely to contribute to higher diversity in particle-associated populations. Viral infection act as a driving force to create a continuous succession of bacterial populations on particles by replacing phage exposed populations with less susceptible ones.\n\nConsistent with the literature on OFT (Fernandez et al., 2019; Taylor and Stocker, 2012; Vetter et al., 1998), our model predicts the existence of an optimal foraging strategy for bacterial population colonizing particles in marine environments. Building on previous studies (e.g., Yawata et al., 2020) that show the optimal detachment rate is a function of search time for new resources, our study suggests that optimal detachment rate could be significantly impacted by the predation rate on particles. Our results indicated that a high mortality rate on particles shifts the optimal foraging strategy to populations with fast detachment rates. This finding agrees with previous OFT models that considered mortality, showing that optimal foraging effort and residence time on patches decrease significantly as the density of predators increase (Newman, 1991; Abrams, 1993). Interestingly, we showed that the variability in optimal detachment rate, due to environmental fluctuations in particle number and predation rate, could lead to evolutionarily stable coexistence among diverse dispersal strategies. Our results indicate that in the absence of any environmental fluctuations, there is a unique optimal dispersal strategy. However, the optimal dispersal strategy depends on the abundance of particles, and thus fluctuations in their abundance at ecological timescales could sustain multiple dispersal strategies for long times. This finding is consistent with previous theoretical and empirical studies showing that environmental fluctuations such as light and temperature may lead to the stable coexistence of species (Litchman, 2003; Li and Chesson, 2016; Catorci et al., 2017; Sousa, 1979). Our model also predicts a loss of diversity when particle abundances significantly increase, consistent with field observations from algal blooms (Teeling et al., 2012; West et al., 2008; Wemheuer et al., 2014).\n\nWhile we simplified bacterial colonization dynamics on particles by only considering competitive growth kinetics, variants of our model suggest that coexistence between different dispersal strategies is also expected under more complex microbial interactions observed on marine particles, including cooperative growth dynamics (Figure 2\u2014figure supplement 4). Such simplifications allowed us to explore the role of dispersal in maintaining microbial diversity in natural systems, in addition to previously observed factors such as metabolic interaction, resource heterogeneities, and succession (Muscarella et al., 2019; Datta et al., 2016; Dal Bello et al., 2021). However, future studies, which can build on our model, could study how additional ecological factors contribute to bacterial marine diversity, such as complex trophic interactions leading to successional dynamics (Boeuf et al., 2019; Datta et al., 2016; Lauro et al., 2009; Pascual-Garc\u00eda et al., 2021). Additionally, while we assumed diffusional searching for simplicity, extensions of our work could include more realistic bacterial search strategies, such as active motility and chemotaxis, which can play a big role in foraging in aquatic microorganisms (Son et al., 2016; Stocker et al., 2008). Finally, though we assumed a fixed detachment rate for each population, dispersal strategies can be quite complex, depending on local conditions such as bacterial and nutrient density on particles; a more thorough exploration of the relative costs and benefits of such myriad of dispersal strategies remains another promising avenue for future work. Overall, our model provides a reliable framework to further study how diverse dispersal strategies and mortality could contribute to the emergence of complex community dynamics on marine particles and how environmental factors impact microbial processes in regulating POM turnover at the ecosystem level.\n\n## Materials and methods\n\nIn this study, a population-based model is developed that represents the interactions between the bacterial cells with different detachment rates and particles in a chemostat system, where the total number of particles is kept constant. The following provides a detailed procedure of the modeling steps as represented schematically in Figure 1. We have made the simulation code available in the following GitHub repository: https://github.com/alieb-mit-edu/Bacterial-dispersal-model.\n\n### Modeling population dynamics on particles\n\nOur model simulates the dynamics of two competing particle-associated populations ($B_{p}$) that colonize the same set of particles. Two populations (i and j) are assumed to be identical, except for their detachment rates, d, from a particle ($d_{i}\\neqd_{j}$). The dynamics of the particle-associated populations are determined by the rate at which cells attach to particles ($\\alpha$) from the free-living population ($B_{F}$), the growth rate of attached cells ($\\mu$) and detachment rate ($d$), as follows:\n\n$$\n\\frac{dB_{p,n,i}}{dt}=\\alpha_{i}B_{Fi}+\\mu_{i}(B_{p,n})B_{p,n,i}\u2212d_{i}B_{p,n,i}\n$$\n\nwhere $n$ represents the particle index and its associated population, i. Equation 3 can be formulated for any other population at the same particle. In a system with $N_{p}$ particles and M populations, we numerically solve a finite set of equations ($N_{p}\\timesM$) at each time interval. The growth rate of population, i ($\\mu_{i}$ is a function of total particle-associated cells ($B_{p,n}$)), as described later in Equation 6.\n\nFrom number conservation, the free-living bacterial pool $B_{Fi}$ of any population i results from particle detachment and attachment dynamics. The rate of change of all free-living pools results from a combination of three factors: (1) the rate at which cells detach from the particles $d_{i}$, (2) the rate $\\alpha_{i}$ at which cells attach to the particles, and (3) a mortality rate due to starvation $m_{Fi}$, as the following equation:\n\n$$\n\\frac{dB_{Fi}}{dt}=\\sumn=1N_{p}d_{i}B_{p,n,i}\u2212N_{p}\\alpha_{i}B_{Fi}\u2212m_{Fi}B_{Fi}\n$$\n\nWe run all dynamical simulations until an equilibrium is reached and there are no noticeable changes in the population size of particle-associated and free-living cells, that is,\u2009$\\frac{dB_{p}}{dt}\u22480$ and $\\frac{dB_{F}}{dt}\u22480$.\n\n### Bacteria-particle encounter rate\n\nWe assume that a bacterial cell can attach to the particle it encounters and stay attached for a period of time (\u2018residence time\u2019). The encounter probability of a spherical cell with radius $r_{c}$ and a spherical particle with a radius of $r_{p}$ at a given time $t$\u2009can be calculated using the hitting probability from random walk theory (Leventhal et al., 2019; Frazier and Alber, 2012):\n\n$$\nP_{e}(i)=\\frac{R}{r_{c,p}}erfc(\\frac{r_{c,p}\u2212R}{\\sqrt{4D_{.}t}})\n$$\n\nwhere R is the total radius ($R=r_{p}+r_{c}$), D is an effective diffusion coefficient ($D=D_{c}+D_{p}$) for a bacterial cell (c) starting at a distance ($r_{c,p}$), and erfc represents the standard complementary error function (1 - erf). The diffusion coefficient can be calculated from an empirical model: $D=k_{B}T/6\\pi\u00b5r$, where $k_{B}\u22481.38\u00a0\\times10^{\u221223}\u00a0J\u00a0K^{\u22121}$ is Boltzmann\u2019s constant, T = 293 K is the ambient temperature, $\\mu=1.003\u00a0mPa\u00a0s$ is the viscosity of water at the given ambient temperature. In aquatic environments, the size of marine snow (>100 \u00b5m) is often a lot larger than the cell size, we thus assume that the effective diffusion is generally controlled by cell diffusion coefficient ($D \u2248D_{c}$). From Equation 5, we calculate the total number attaching cells to a particle at a given time (t) from free-living cells of population i by multiplying the hitting probability to the total number of free-living cells.\n\n### Growth and reproduction on particles\n\nWe assume that per capita access to particulate resources decreases in proportion to the total number of cells that colonize the surface. This leads us to model bacterial competition on a given particle, n, with a linear negative density-dependent growth function.\n\nIn this model, we assume that the bacterial growth on the particle is competitive in which the growth rate, \u03bci is not constant but changes as a function of the total biomass on a particle. The negative density-dependent growth is modeled by assuming a linear function with the total particle-associated cells ($B_{p,n}=\\sumB_{p,n,i}$) on particle, n,\n\n$$\n{\\mu_{i}=\\mu_{max}(1\u2212\\frac{B_{p,n}}{N_{t}})\\mu_{i}=0,\u00a0\u00a0\u00a0\u00a0\u00a0B_{p,n}>N_{t}\n$$\n\nwhere $B_{p,n}=\\sumB_{p,n,i}$ represents the total number of particle-attached cells, \u00b5i represents that growth rate of population i, $\\mu_{max}$ indicates the maximal growth rate, in the absence of competition, and Nt represents the particle-specific carrying capacity. The net growth rate is assumed to be zero if more cells colonize a particle where bacteria have reached their carrying capacity; this occurs when bacteria have fully covered a particle\u2019s surface, such that the death or detachment of any cell is quickly replaced by the growth of another cell. The model assumes that free-living cells cannot grow. We performed a sensitivity analysis to competitive growth kinetic parameterizations (maximum growth rate \u03bcmax and carrying capacity Nt) and showed that coexistence among bacterial detachment strategies is robust for a wide range of parameters (Figure 2\u2014figure supplement 5).\n\nOffspring production on the particle only occurs when particle-associated cells accumulate a total biomass that is larger than the biomass of a single cell ($m_{d}$). For simplicity, we only measured biomass based on the dry mass of the cells. The biomass accumulation rate on a particle for population i is proportional to the available biomass on the particle, n and its exponential growth rate ($\\frac{dB_{p,n,i}}{dt}=B_{p,n,i}\\mu_{i}$). With this, the total number of offspring ($N_{o,i}$) on a particle for a time interval of, $\\Deltat$ can then be calculated as:\n\n$$\nN_{o,i}=\\frac{B_{p,n,i}\\mu_{i}}{m_{d}}\u0394t,\u00a0\u00a0\u00a0\u00a0\u00a0B_{p,n,i}\\mu_{i}\u0394t>m_{d}N_{o,i}=0,\n$$\n\n### Particle-wide bacterial mortality\n\nIn the model, a general form of mortality on particles is considered that accounts for mortality induced by predation or particle sinking, taking cells beyond their preferred habitat. A constant fraction of particles ($m_{p}$) is randomly selected at each time interval ($\u0394t$) and their associated cells are removed from the particle. This fraction represents the particle-scale mortality rate ($m_{p}$). To maintain particle number equilibrium, a fraction $m_{p}$ of uncolonized particles is introduced into the system and colonized by free-living populations ($B_{p,n,i}$ = 0).\n\nMortality of free-living cells is assumed to be caused by loss of biomass over a prolonged period of starvations from the absence of substrate uptake in the free-living phase. As described in Equation 4, free-living cells ($B_{F}$) lose a constant fraction of their biomass ($m_{Fi}$) every time step as the cell maintenance. Note that though detachment of cells from a particle appears similar to mortality on particles, in the former, detached cells move to the free-living pool, while in the latter, cells die and do not add to either pool.\n\n### Particle degradation and turnover\n\nWe assume that a particle contains a finite amount of resources that is degraded by bacterial cells with a constant yield of converting the resources into biomass. From a previous study, we assume that the yield is about 5% and a significant fraction of particle degradation products are lost to the environment before being taken up by the cells (Ebrahimi et al., 2019).\n\n### Optimal residence time from OFT\n\nOFT describes the dispersal behavior of microbial populations in patchy environments assuming maximized growth return using the marginal value theorem. According to OFT, the growth return of particle-associated bacteria is maximized if a bacterial cell detaches from the particle when its time-averaged uptake rate reaches its instantaneous uptake rate. We applied this assumption to obtain the optimal residence time on particles by tracking individual cells in our model and numerically calculating their instantaneous uptake rate ($u(t)$) on a particle from the attachment time ($t_{a}$) to detachment using our population-based model. The residence time ($t_{r}$) is considered optimal when the following equation is satisfied (Yawata et al., 2020):\n\n$$\nu(t_{r})=\\int_{t_{a}}^{t_{r}}\\frac{u(t)dt}{(\\tau_{s}+(t_{r}(\\tau_{s})\u2212t_{a}))}\n$$\n\nwhere $\\tau_{s}$ is the search time and a function of the number of particles in the system. We calculated the search time from Equation 5 when the probability of the cell and particle encounter is above 95% (Figure 1\u2014figure supplement 1).\n",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "ab9834d6-25f5-4398-bb79-cd004d3546e5",
+      "submission_id": "c0a16a44-ec61-4d19-aca7-ccf6dda2f049",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Maureen L Coleman, https://ror.org/024mw5h28 University of Chicago United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73948.sa0](https://doi.org/10.7554/eLife.73948.sa0)\n\nThis manuscript tackles an under-explored area in understanding microbial coexistence in marine and aquatic environments. This manuscript adds to the recently renewed interest on applications of optimal foraging theory to the study of microbial growth on marine snow.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Maureen L Coleman, https://ror.org/024mw5h28 University of Chicago United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73948.sa1](https://doi.org/10.7554/eLife.73948.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Particle foraging strategies promote microbial diversity in marine environments\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Aleksandra Walczak as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: James O' Dwyer (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Ensure modeling choices are clearly explained and documented (including making code available)\n\n2) Discuss the generality and limitations of the model and results\n\n3) Provide additional background context/discussion of prior work as suggested by the reviewers\n\nReviewer #1 (Recommendations for the authors):\n\n- In framing the paper, I think the authors are right to focus on dispersal and detachment as under-explored mechanisms. But readers will benefit from reference to other work (even on particle-associated microbes) related to resource diversity, succession, and crossfeeding. That can only help put the current study in context with other mechanisms for the maintenance of microbial diversity.\n\nTo expand on this, I know the authors have worked also on how microbial interactions, cross-feeding, and succession can maintain diversity, or at least add to our understanding of it on marine particles. Is the situation here envisioned significantly different than those experiments? If not, i think it is fine to focus on this different trait axis, and just consider the particles to in effect be a single resource, without resource preferences, etc. But I wanted to make sure I was understanding that correctly---maybe there is something different about the situation envisaged here that would make it less likely to have all of those other interactions (which clearly can contribute to many species being maintained). Martina Dal Ballo and Jeff Gore's work also seems relevant to this (where many resources are produced endogenously in an experimental system) and also work on resource heterogeneity in DOM in natural systems (e.g. Muscarella, Boot, Broeckling , Lennon).\n\nAgain, I don't think any of this detracts from the motivation for the present study. Just might fill out a fuller picture.\n\n- There is a population growth process when a cell settles on a new particle. This is assumed to be logistic growth, though in the end, it seems likely that the precise dynamics of the growth process don't matter so much as the final abundance (carrying capacity). However, this seemed subtle to me for three reasons.\n\n(i) It seems to me that the detachment rate should directly affect this final abundance---as an additional source of \"mortality\" (in the sense of removing individuals from the particle) contributing to the net growth rate. Maybe that effect will always be small, but this could be made clearer for readers if so.\n\n(ii) The authors' conceptual diagram shows that one possible end point of this process is that the microbial population in effect eat the whole particle (Figure 1). This sharpens the issue to me of what the true dynamics are likely to be on a particle. For example, should I think of the population growing to a capacity that is roughly the surface area of the particle, and then gradually changing thereafter as the particle's physical size is reduced? And what direction would this change be? Could I think of a thickening of the film of particles and population size continuing to grow (maybe linearly) in time as interior layers continue to eat the particle? Or should I think of outer individuals as being shed, and the carrying capacity in effect reducing as the particle size reduces?\n\n(iii) The issue of what is actually going to happen once a population reaches carrying capacity is also at the center of my final point here. It seems from the thought experiment above that it is unlikely that growth as such will stop when cells fill out the surface of a particle, since there are still resources to take up. So I am interested to know whether zero growth rate means to the authors that cells stop reproducing, or are cells dying to balance growth, or are they being shed from the particle?\n\nIt's possible that none of this matters too much if all that's important is a final population size. However, it might help to clarify the process for readers if we have a conceptual picture of what this final population size represents (surface of particle being filled? or volume of particle entirely eaten up) and if there is a truer picture of the dynamics than logistic growth.\n\n- The relationship between the trade-off (between different detachment rates) derived in Equation 2 versus the optimal detachment rate (derived in the methods) is framed a little confusingly. If I understand correctly, the \"trade-off\" actually comes from the condition that a population will have net non-negative growth rate in the absence of other populations with different strategies. So it may be reasonable to frame this as a threshold---a necessary condition rather than a sufficient condition for a given population to persist. The reason I say this is that it is a bit confusing to have a trade-off that suggests a range of detachment rates can coexist so long as they differ in their carrying capacities, since it is then stated that the optimal detachment rate outcompetes all the others. Maybe I misunderstood something important being assumed about the carrying capacity for the optimal case, but a trade-off that also has an optimum is an odd outcome.\n\nIn short, it was not clear to me whether to populations satisfying this tradeoff in Equation (2) would tend to coexist. Or would in general one population (say the one closer to the optimum strategy) tend to outcompete the other? If so it might help to define more clearly what this tradeoff means. If I understood this correctly, I would not say that this issue merely indicates that the tradeoff is not \"evolutionarily stable\".\n\n- In the end, it seems critical that for multiple strategies to be maintained in the population that there is not only whole-particle mortality (which in effect is highly correlated catastrophic dynamics for an individual microbial population), but that the inflow of resources itself fluctuates. Did I interpret that correctly? Readers may appreciate a slightly clearer description of how this environmental stochasticity differs from the previous possibility of whole-cell mortality, and this also left me wondering how to quantity the kind of environmental stochasticity that will generally lead to multiple strategies coexisting.\n\nSo my understanding from this was that whole-cell mortality was not on its own to avoid a single population outcompeting others. but I did not get such a clear picture of what environmental stochasticity WOULD allow for coexistence.\n\n- One other reference that might be tangentially related, but I thought could be relevant: \"The importance of being discrete: Life always wins on the surface\" by Shnerb et al. This describes growth on particles in 2d or 3d, and shedding (which seems different from but not entirely different from detachment).\n\nThis could be an important reference because in this stochastic model, the effective growth rate is different from what you would have with the naive mean field model. So I am wondering if this might change any of the outcomes of Equations 1 and 2.\n\nReviewer #2 (Recommendations for the authors):\n\nThe authors investigated an interesting question related to the coexistence of bacterial species with different detachment strategies on particles. The results of this investigation are interesting and relevant for our understanding of microbial diversity in particle-associated communities, but the manuscript would benefit from a more in depth discussion of results from recent papers on microbial community dynamics of particles, many of which are cited in the current version but only in passing. There are also many possible extensions of this work, which the authors are probably aware of, which would be interesting to explore in future work. For example, the role of search strategies (e.g., random walks vs chemotaxis vs Levy walks) and detachment rates that depend non-linearly on the concentration of bacteria on the particle.\n\nThe authors seem to adopt a somewhat strict definition of Optimal Foraging Theory (OFP) limited to the Marginal Value Theorem (MVT). There are examples of OFT studies that do consider mortality and predation risk, finding that predictions of the MVT do not hold in these settings, e.g.:\n\nAbrams, PA. \"Optimal traits when there are several costs: the interaction of mortality and energy costs in determining foraging behavior.\" Behavioral Ecology, vol. 4, no. 3, 1993, pp. 246-259.\n\nNewman, JA. \" Patch use under predation hazard: foraging behavior in a simple stochastic environment.\" Oikos, vol. 61, 1991,\n\npp. 29-44.\n\nIt would be important to know how this study relates to previous results of OFT that do include mortality and predation risk.\n\nIn its current form, there are a few places where better description of the numerical simulations performed would critically enhance the manuscript and the reproducibility of the results. Specifically:\n\n- There is a deterministic particle mortality rate mp,i in Equation 3, and an additional, stochastic particle mortality in the section \"Bacterial mortality\". Are the two implemented with the same rate, and what is the rationale for implementing both forms of mortality? The manuscript text only seems to describe the stochastic particle mortality, but is never too explicit about it. As described in lines 385-394, it seems that the stochastic mortality rate depends on the numerical integration time step: because mp is a rate, a fraction mp * dt of particles, where dt is the integration time step, should be chosen at each time step to impose mortality, rather than a \"fraction\" mp as suggested by the text at lines 387-389.\n\n- The most problematic section is \"Bacteria-particle encounter rate\". The authors mention explicitly the encounter probability of spherical cells undergoing random walks, but they need a rate to incorporate in the equations via parameter \u03b1. An explicit expression for \u03b1 is not provided, and I would have expected \u03b1 to be the diffusive flux towards a spherical absorber (see, e.g., Berg's \"Random walks in biology\" page 27, Equation 2.20): I = 4 \\pi D R C0, where C0 is the concentration of detached bacteria, but this is not mentioned. Also, what is d in Equation 5? It should be Dc,p, and it can't be the detachment rate d. The estimate for the diffusion coefficient of cells via the Einstein-Stokes relationship is too small if bacteria are motile, as suggested by Figure 1. For motile cells, cell diffusion can be orders of magnitude larger than the Einstein-Stokes estimate (see, e.g., Berg's \"Random walks in biology\" page 93 \u2013 Movement of self-propelled objects). The sentence \"From Equation 5, we calculated the total number attaching cells to a particle at a given time (t) from free living cells of population i by multiplying the hitting probability to the total number of free-living cells\" is very hard for me to interpret: which choice of Dc,p was used in Equation 5? I would also mention explicitly that this entire section assumes instantaneous attachment of bacteria to particles with an infinite rate coefficient.\n\nFor a study that is mostly numerical such as this one, availability of the computer code for peer review would greatly enhance the reproducibility of the results and would have clarified some of the doubts expressed above. I would encourage the authors to post it on Github for peer review, or provide it as supplementary material with the submission.\n\nIt would be very informative to know under which conditions the analytical approximation described at lines 174-216 breaks down. At low particle density, the search time may be much longer than the growth period on the particle, but at high particle densities this may not be true. Would the approximation work less well in those conditions?\n",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a06f85c9-1df2-4a3f-969a-5158f09db96d",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C1",
+      "claim": "Microbial foraging in patchy environments plays a key role in natural environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Microbial foraging in patchy environments, where resources are fragmented into particles or pockets embedded in a large matrix, plays a key role in natural environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract that sets up the context of the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "6e4fb5b7-7ca6-4946-b67f-1d0eca55bdf7",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C2",
+      "claim": "In oceans and freshwater systems, some particle-associated bacteria colonize only during short transients while others form long-lived, stable colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "In the oceans and freshwater systems, particle-associated bacteria can interact with particle surfaces in different ways: some colonize only during short transients, while others form long-lived, stable colonies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes observed diversity in bacterial colonization strategies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "d5b24a71-7268-4d32-a161-bbaa6c4b174c",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C3",
+      "claim": "Populations grow only while on particles in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "In our model, populations grow only while on particles, but also face the increased risk of mortality by predation and sinking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about a model assumption.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "0fb7ea5f-dd50-4736-b500-fcbaec46c981",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C4",
+      "claim": "Populations on particles face increased risk of mortality by predation and sinking.",
+      "claim_type": "EXPLICIT",
+      "source": "In our model, populations grow only while on particles, but also face the increased risk of mortality by predation and sinking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about a model assumption based on ecological understanding.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "5400a6e7-09aa-4b7a-b732-f80f1116edd2",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C5",
+      "claim": "Detachment from particles modulates both net growth and mortality in opposite directions, creating a trade-off.",
+      "claim_type": "EXPLICIT",
+      "source": "Key to coexistence is the idea that detachment from particles modulates both net growth and mortality, but in opposite directions, creating a trade-off between them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from the model presented in the abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "42232291-1117-4d22-9514-1712e048739f",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C6",
+      "claim": "Slow-detaching populations show the highest growth return.",
+      "claim_type": "EXPLICIT",
+      "source": "While slow-detaching populations show the highest growth return (i.e., produce more net offspring), they are more susceptible to suffer higher rates of mortality than fast-detaching populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "a8b53b9e-bd8f-41ec-a5ac-30ed2c3cb6f0",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C7",
+      "claim": "Slow-detaching populations are more susceptible to higher rates of mortality than fast-detaching populations.",
+      "claim_type": "EXPLICIT",
+      "source": "While slow-detaching populations show the highest growth return (i.e., produce more net offspring), they are more susceptible to suffer higher rates of mortality than fast-detaching populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "2b94cd7d-8876-41f3-8898-ee26eb0762e1",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C8",
+      "claim": "Fluctuating environments significantly expand the likelihood that populations with different detachment rates can coexist.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, fluctuating environments, manifesting as blooms of particles (favoring growth) and predators (favoring mortality) significantly expand the likelihood that populations with different detachment rates can coexist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from the model presented in the abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "36508a7f-00f0-4e65-bb7d-5370a6a54ae7",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C9",
+      "claim": "Thousands of microbial species coexist in any few milliliters of seawater or grains of soils.",
+      "claim_type": "EXPLICIT",
+      "source": "Microbes in nature are remarkably diverse, with thousands of species coexisting in any few milliliters of seawater or grains of soils (Azam and Malfatti, 2007; Young and Crawford, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "e170d262-8f2e-4cea-91e1-dfde299649d5",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C10",
+      "claim": "Extreme microbial diversity conflicts with classic ecological predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "This extreme diversity is puzzling since it conflicts with classic ecological predictions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the paradox of the plankton based on ecological theory.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "b80b9c7d-a868-4275-b21d-5b6556d96c11",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C11",
+      "claim": "The paradox of the plankton refers to the discrepancy between measured diversity of planktons in the ocean and the diversity expected based on the number of limiting nutrients.",
+      "claim_type": "EXPLICIT",
+      "source": "This puzzle has classically been termed 'the paradox of the plankton', referring to the discrepancy between the measured diversity of planktons in the ocean, and the diversity expected based on the number of limiting nutrients (Ghilarov, 1984; Shoresh et al., 2008; Hutchinson, 1961; Goyal and Maslov, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "c32546c3-9d55-44c2-aa69-71d339d72784",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C12",
+      "claim": "Spatiotemporal variability, microbial interactions, and grazing have been suggested as sources of diversity for free-living microbes in the ocean.",
+      "claim_type": "EXPLICIT",
+      "source": "Many have suggested new sources of diversity, such as spatiotemporal variability, microbial interactions, and grazing (Rodriguez-Valera et al., 2009; Muscarella et al., 2019; Saleem et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "d832a54e-f9c1-4ada-9659-eef207282fbf",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C13",
+      "claim": "The diversity of particle-associated microbes is often an order of magnitude greater than free-living ones.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in contrast with free-living microbes, the diversity of particle-associated microbes \u2014 often an order of magnitude greater than free-living ones \u2014 has been overlooked (Milici et al., 2017; Ganesh et al., 2014; Crespo et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "b4baae0a-7491-4dba-9902-86eedb353da2",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C14",
+      "claim": "Planktonic bacteria float freely in the ocean and consume nutrients from dissolved organic matter.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast with planktonic bacteria, which float freely in the ocean and consume nutrients from dissolved organic matter, particle-associated microbes grow by attaching to and consuming small fragments of particulate organic matter (POM) (of the order of micrometers to millimeters).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of planktonic bacteria based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "8cf9eb0b-d849-40e5-8bab-3add1d041a31",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C15",
+      "claim": "Particle-associated microbes grow by attaching to and consuming small fragments of particulate organic matter of the order of micrometers to millimeters.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast with planktonic bacteria, which float freely in the ocean and consume nutrients from dissolved organic matter, particle-associated microbes grow by attaching to and consuming small fragments of particulate organic matter (POM) (of the order of micrometers to millimeters).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of particle-associated microbes based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "fce95673-ce19-42d0-86d2-ba7702f53f0b",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C16",
+      "claim": "The dispersal strategies of particle-associated microbes can be effectively condensed into one parameter: the rate at which they detach from particles.",
+      "claim_type": "EXPLICIT",
+      "source": "The dispersal strategies of particle-associated microbes can be effectively condensed into one parameter: the rate at which they detach from particles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a modeling assumption stated in the introduction.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "18f1273b-79f7-48a4-b743-49f1525bc3d3",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C17",
+      "claim": "The detachment rate is the inverse of the average time that microbes spend on a particle.",
+      "claim_type": "EXPLICIT",
+      "source": "This rate, which is the inverse of the average time that microbes spend on a particle, is the key trait distinguishing particle-associated microbial populations from planktonic ones Yawata et al., 2020; Fernandez et al., 2019.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "c03b8577-963b-4d6b-95ee-0b46e2afd0c7",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C18",
+      "claim": "The detachment rates of particle-associated taxa can be quite variable.",
+      "claim_type": "EXPLICIT",
+      "source": "The detachment rates of such particle-associated taxa can be quite variable (Grossart et al., 2003; Yawata et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "e9b7bbdf-7a4b-4913-9121-72319de6e4d4",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C19",
+      "claim": "Bacteria with low detachment rates form biofilms on particles for efficient exploitation of resources locally.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacteria with low detachment rates form biofilms on particles for efficient exploitation of the resources locally, while others with high detachment rates frequently attach and detach across many different particles to access new resources (Ebrahimi et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "d94d4af6-7c89-4ca1-ab36-904648afdd2c",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C20",
+      "claim": "Bacteria with high detachment rates frequently attach and detach across many different particles to access new resources.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacteria with low detachment rates form biofilms on particles for efficient exploitation of the resources locally, while others with high detachment rates frequently attach and detach across many different particles to access new resources (Ebrahimi et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "3ab4b4e6-425c-4f3f-98cc-6831fa388f5d",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C21",
+      "claim": "Net mortality rates on particles can be higher than for planktonic cells because of the large congregation of cells on particles.",
+      "claim_type": "EXPLICIT",
+      "source": "On particles, net mortality rates can be higher than for planktonic cells because of the large congregation of cells on particles, which exposes them to the possibility of a large and sudden local population collapse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on ecological reasoning.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "dcf80205-96c7-4f50-a48c-6687e2b1d8f1",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C22",
+      "claim": "The collapse of a particle-attached population can be induced by particles sinking below a habitable zone.",
+      "claim_type": "EXPLICIT",
+      "source": "The collapse of a particle-attached population can be induced by a variety of mechanisms, including particles sinking below a habitable zone (Boeuf et al., 2019), or predation of whole bacterial colonies by viruses or grazers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "22c8df0e-0ea8-4be8-afd4-1d60729247b3",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C23",
+      "claim": "The collapse of a particle-attached population can be induced by predation of whole bacterial colonies by viruses or grazers.",
+      "claim_type": "EXPLICIT",
+      "source": "The collapse of a particle-attached population can be induced by a variety of mechanisms, including particles sinking below a habitable zone (Boeuf et al., 2019), or predation of whole bacterial colonies by viruses or grazers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about mechanisms of population collapse based on ecological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "9e693169-ec24-4c5e-b316-a6fc30033559",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C24",
+      "claim": "After a lytic phage bursts out of a few cells on a particle, virions can rapidly engulf the entire bacterial population, leading to its local demise.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, after a lytic phage bursts out of a few cells on a particle, virions can rapidly engulf the entire bacterial population, leading to its local demise (Ganesh et al., 2014; Dupont et al., 2015; L\u00f3pez-P\u00e9rez et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "5d66ed4a-30ea-43d4-b287-23d51b90ee55",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C25",
+      "claim": "Particle-wide mortality may kill more than 30% of particle-associated populations in the ocean.",
+      "claim_type": "EXPLICIT",
+      "source": "Such particle-wide mortality may kill more than 30% of particle-associated populations in the ocean (Proctor and Fuhrman, 1991; Weinbauer et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "ae8c3d0c-e37e-4bff-ab5f-a99ca6b10653",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C26",
+      "claim": "The longer a population stays on a particle, the higher the chance it will be wiped out.",
+      "claim_type": "EXPLICIT",
+      "source": "The longer a population stays on a particle, the higher the chance it will be wiped out.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the description of particle-wide mortality.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "ae553a20-7931-425c-805c-f1d473a6fedc",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C27",
+      "claim": "The trade-off between growth and survival against predation can lead to the stable coexistence of particle-associated microbial populations with different dispersal strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "These models reveal that the trade-off between growth and survival against predation can indeed lead to the stable coexistence of particle-associated microbial populations with different dispersal strategies (in our work, detachment rates).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from the mathematical models and simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "953c0dbf-a684-4d76-b393-aa13a435f2b2",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C28",
+      "claim": "In bloom conditions when particle supply is high, fast dispersers that rapidly hop between particles are favored.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that in bloom conditions, when the particle supply is high, fast dispersers that rapidly hop between particles are favored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "d0dd4959-bc37-40d1-bae4-b844b2a58b5c",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C29",
+      "claim": "Under oligotrophic conditions when particles are rare, rarely detaching bacteria have a competitive advantage.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, under oligotrophic conditions, when particles are rare, rarely detaching bacteria have a competitive advantage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "e5a2a966-d980-4f3d-8d12-6cd597ea7fa2",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C30",
+      "claim": "Bacterial cells attach to particles from a free-living population in the bulk of the bath in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "More specifically, in our model, bacterial cells attach to particles from a free-living population in the bulk of the bath; they then grow and reproduce while attached.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "bec83eef-973e-422e-a0cc-b19a9fe9f997",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C31",
+      "claim": "Bacteria grow and reproduce while attached to particles in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "More specifically, in our model, bacterial cells attach to particles from a free-living population in the bulk of the bath; they then grow and reproduce while attached.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "952d9d8f-a3ec-4f04-9181-516b2d6fe21f",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C32",
+      "claim": "Detachment is stochastic with a fixed rate in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "Detachment is stochastic with a fixed rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "c149b032-bd7a-4eeb-a3ba-f3fe873a89e4",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C33",
+      "claim": "After detachment, cells re-enter the free-living population and repeat the process.",
+      "claim_type": "EXPLICIT",
+      "source": "After detachment, cells re-enter the free-living population and repeat the process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "02529854-1d30-4e16-8aee-5f9aab9e0c16",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C34",
+      "claim": "All bacteria on a particle may die with a fixed probability per unit time corresponding to their particle-wide mortality rate.",
+      "claim_type": "EXPLICIT",
+      "source": "During the time spent attached to particles, all bacteria on a particle may die with a fixed probability per unit time, corresponding to their particle-wide mortality rate (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the model structure with reference to Figure 1A.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "558a7745-f3b6-46a9-8b66-4382eb4b877e",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C35",
+      "claim": "The model uses the classic logistic growth equation which contains a simple linear density dependence.",
+      "claim_type": "EXPLICIT",
+      "source": "For this, we use the classic logistic growth equation, which contains a simple linear density dependence (Figure 1B; Methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the model structure with reference to Figure 1B.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "a427e3a7-eeef-4173-aaaa-83ef114cdabc",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C36",
+      "claim": "Free-living subpopulations cannot grow but die at a fixed mortality rate due to starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "Free-living subpopulations cannot grow, but die at a fixed mortality rate due to starvation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "34dc1058-7b4a-4f26-b158-b728caea6776",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C37",
+      "claim": "The probability of a bacterium encountering particles is calculated using random walk theory as the hitting probability of two objects with defined sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "The probability of a bacterium encountering particles controls bacterial attachment, which we calculate using random walk theory as the hitting probability of two objects with defined sizes (Leventhal et al., 2019; Frazier and Alber, 2012; see Methods for details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model structure supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "d21ff09d-bf5d-4914-bce5-0853db20997c",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C38",
+      "claim": "The detachment rate is assumed to be an intrinsic property of a bacterial population independent of the abiotic environment.",
+      "claim_type": "EXPLICIT",
+      "source": "We assume that the detachment rate is an intrinsic property of a bacterial population and comprises its dispersal strategy independent of the abiotic environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a modeling assumption.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "a52017d5-caab-43f8-bc03-54f2d1944c3b",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C39",
+      "claim": "Detachment rate is the only trait that varies between different bacterial populations in the simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "In our simulations, it is the only trait that varies between different bacterial populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the simulation setup.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "5ce67c03-e682-4ae6-af79-9583793158b0",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C40",
+      "claim": "Bacterial detachment rates differ significantly across marine bacterial communities from solely planktonic cells to biofilm-forming cells on particles.",
+      "claim_type": "EXPLICIT",
+      "source": "Growing evidence has shown that bacterial detachment rates differ significantly across marine bacterial communities from solely planktonic cells to biofilm-forming cells on particles (Yawata et al., 2014; Ebrahimi et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "7aee5c2d-a827-464c-8629-90a67451d150",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C41",
+      "claim": "Optimal foraging theory predicts the optimal detachment rate given a distribution of resources and search times in the absence of mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, OFT predicts the optimal detachment rate given a distribution of resources and search times, but only in the absence of mortality (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about optimal foraging theory with reference to Figure 2A.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "8b48b805-7b01-4786-86ed-88f53beccbee",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C42",
+      "claim": "The optimal detachment rate from the model was consistent with OFT predictions across a wide range of particle numbers in the absence of mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the optimal detachment rate, which outcompetes all other detachment rates, was consistent with OFT predictions across a wide range of particle numbers in our system (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from comparing model results to OFT predictions, shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "730940c5-7189-46ec-aa27-aaf56880f43f",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C43",
+      "claim": "In the presence of particle-wide mortality, the optimal detachment rate was much higher than predicted by OFT.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, in the presence of mortality, the optimal detachment rate (dopt) changed significantly, either increasing or decreasing depending on the type of mortality. When mortality was particle-wide, the optimal detachment rate was much higher than predicted by OFT, often resulting in residence times that were many days shorter than the OFT prediction (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model simulations shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "7f8d2bc2-45e9-4e59-abad-b33c65e8f480",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C44",
+      "claim": "When mortality was only present in free-living populations, the optimal detachment rate was much lower than predicted by OFT.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when mortality was only present in free-living populations (affecting individuals, not particles, at a constant per capita rate), the optimal detachment rate was much lower than predicted by OFT (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model simulations shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "7a0970d5-e08b-481b-9626-a66d91b8fdf0",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C45",
+      "claim": "Differences in detachment rates alone are sufficient to enable coexistence on particles.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulations where we competed a pair of bacterial populations with different detachment rates revealed that differences in detachment rates alone are sufficient to enable coexistence on particles (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model simulations shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "f4b22900-5e81-4bc7-bf15-45a5467c0255",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C46",
+      "claim": "Nontrivial coexistence only emerged in the presence of particle-wide mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, such a nontrivial coexistence only emerged in the presence of particle-wide mortality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "d6666a3e-6797-4326-81a9-fc11e312f468",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C47",
+      "claim": "In the absence of mortality on particles, only trivial coexistence was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of mortality on particles, we only observed trivial coexistence (coexisting populations had identical detachment rates, and for the purposes of the model, were one and the same; Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model simulations shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "46f0ef9e-25e3-4b44-aced-72b23eaf9ea4",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C48",
+      "claim": "A trade-off between bacterial growth return and survival rate emerged on particles.",
+      "claim_type": "EXPLICIT",
+      "source": "The results revealed that a trade-off between bacterial growth return and survival rate emerged on particles, supporting the coexistence of populations with different detachment rates (Figure 3C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model analysis shown in Figures 3C and 3D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "a2bfc2f4-fe48-44b2-8484-4eb3c503a2a5",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C49",
+      "claim": "Populations that detach slowly from particles have higher growth returns but are more susceptible to particle-associated mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "Populations that detach slowly from particles have higher growth returns but are also more susceptible to particle-associated mortality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "29438b3b-e4dd-4067-969f-e334208acda8",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C50",
+      "claim": "Populations with low residence time on particles have low growth returns but are less likely to die by predation or sink beyond the habitable zone.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, populations with low residence time on particles (high detachment rate) have low growth returns but they are less likely to die by predation or sink beyond the habitable zone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "6c1951cb-abbd-419c-92ad-b4acc0c9e568",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C53",
+      "claim": "No detachment rate can coexist with the optimal detachment rate.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, no detachment rate can coexist with the optimal detachment rate, thus rendering coexistence between any other set of detachment rates susceptible to invasion by this optimal strategy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "43d20ba3-47e9-4871-9612-d2ad81cf39ea",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C54",
+      "claim": "If detachment rates were allowed to evolve, only one population would survive in the long run \u2013 the one with the optimal detachment rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, if detachment rates were allowed to evolve, only one population would survive in the long run \u2013 the one with the optimal detachment rate (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion from the model analysis shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "e1c51580-50a4-4146-a5ed-77eeece59979",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C55",
+      "claim": "In the oceans, both the abundance of particles and the density of predators exhibit temporal and spatial fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the oceans, both the abundance of particles and the density of predators (such as phage) exhibit temporal and spatial fluctuations (Nilsson et al., 2019; Garin-Fernandez et al., 2018; Luo et al., 2017), in turn affecting the foraging dynamics of particle-associated bacterial populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "87f8bee5-3119-49d8-a4ac-377cc5af2685",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C56",
+      "claim": "A negative correlation between mortality rate and particle abundance enhances the range of coexistence among different detachment rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we found a negative correlation between the mortality rate and particle abundance that enhances the range of coexistence among different detachment rates (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model simulations shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "bdf5a973-9346-4784-a8a3-8225957fc45d",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C57",
+      "claim": "At low mortality rates, slow-detaching populations outcompete faster ones.",
+      "claim_type": "EXPLICIT",
+      "source": "At low mortality rates, slow-detaching populations outcompete faster ones, as it is more advantageous to stay longer on particles and grow, that is, these populations derive higher net growth returns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "65b6cc4c-a6f9-4a2b-af90-d7b23bddc7d3",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C58",
+      "claim": "A higher mortality rate on particles allows faster-detaching populations to gain an advantage over slow-detaching populations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a higher mortality rate on particles allows faster-detaching populations to instead gain an advantage over the slow-detaching populations, since they can better avoid particle-wide mortality events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "1cccaf4e-6d0f-493b-a7d3-39ca2f3178bd",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C59",
+      "claim": "An intermediate number of particles maximize the likelihood of coexistence of two populations with different dispersal strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "The results indicated that an intermediate number of particles maximize the likelihood of coexistence of two populations with different dispersal strategies (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model simulations shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "cb258a0d-51ec-4ecb-8988-a50a2fa1b592",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C60",
+      "claim": "The commonly observed range of particle abundances in aquatic environments is between 1 and 80 particles L\u22121 with a mean of approximately 25 particles L\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we simulated a range of particle abundances, between 1 and 80 particles L\u22121, which corresponds to the commonly observed range of particle abundances in aquatic environments (mean ~25 particles L\u22121; Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by reference to Figure 4\u2014figure supplement 1 which shows field data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "0484476a-af42-4f3a-8a2b-e191512898ed",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C61",
+      "claim": "Low particle abundances (0\u201320 L\u22121) promote the growth of slow-detaching populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Low particle abundances (0\u201320 L\u22121) promote the growth of slow-detaching populations while at high particle abundances, fast-detaching populations dominate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "a61cd538-eacb-4a4a-84c3-997f983b828b",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C62",
+      "claim": "At high particle abundances, fast-detaching populations dominate.",
+      "claim_type": "EXPLICIT",
+      "source": "Low particle abundances (0\u201320 L\u22121) promote the growth of slow-detaching populations while at high particle abundances, fast-detaching populations dominate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "2e531adb-f702-4c02-b4fb-932def5c1c0b",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C63",
+      "claim": "At particle abundances less than 20 L\u22121, the probability of free-living cells finding and attaching to particles is less than 50% of the probability at high particle abundances (100 L\u22121).",
+      "claim_type": "EXPLICIT",
+      "source": "The reason for this is the following: at particle abundances less than 20 L\u22121, the probability of free-living cells finding and attaching to particles is less than 50% of the probability at high particle abundances (100 L\u22121 in Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an explanation based on model results shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "fbfa08e8-ac26-416c-bf71-370fd486b1f6",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C64",
+      "claim": "The optimal detachment rate is affected by particle abundance and increases with the number of particles in the system.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, our results indicate that the optimal detachment rate (dopt) is affected by the particle abundance and increases with the number of particles in the system (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model simulations shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "fa329bc2-de23-473f-b354-5f1d984c63fc",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C65",
+      "claim": "The scenario with fastest fluctuations in particle numbers (Fp = 10 hr\u22121) supported higher diversity among populations with different detachment rates.",
+      "claim_type": "EXPLICIT",
+      "source": "The results revealed that the scenario with fastest fluctuations in particle numbers (Fp = 10 hr\u22121) supported higher diversity among populations with different detachment rates (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model simulations shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "b7f4c770-b63d-4602-b4fe-a2a1dcf5c446",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C66",
+      "claim": "Fluctuation at the daily scale is sufficient to support the coexistence of different dispersal strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the fluctuation periods observed in the ocean, our simulations showed that fluctuation at the daily scale is sufficient to support the coexistence of different dispersal strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "2f992224-4064-4a65-844b-3525b375c8e0",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C67",
+      "claim": "In the absence of mortality on particles, no coexistence is expected and there is a single dispersal strategy that provides the highest fitness advantage.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, our results indicated that in the absence of mortality on particles, no coexistence is expected and there is a single dispersal strategy that provides the highest fitness advantage over dispersing populations, indicating that mortality on a particle is a key factor for the emergence of diverse dispersal strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "89196a5b-7b45-4fe5-b213-a89c0263679a",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C68",
+      "claim": "Mortality on a particle is a key factor for the emergence of diverse dispersal strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, our results indicated that in the absence of mortality on particles, no coexistence is expected and there is a single dispersal strategy that provides the highest fitness advantage over dispersing populations, indicating that mortality on a particle is a key factor for the emergence of diverse dispersal strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the model analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "853ef38d-3d80-4adc-9b18-5fe0ea3ea389",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C69",
+      "claim": "Spatial structure plays a critical role in promoting bacterial diversity in nature.",
+      "claim_type": "EXPLICIT",
+      "source": "This study expands on the existing knowledge that spatial structure plays a critical role in promoting bacterial diversity in nature (Eckburg et al., 2005; Zhang et al., 2014), by incorporating the idea of particle-wide predation, which are events of correlated predation of an entire population on a particle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "6a25d539-dffe-4a5e-8615-7f959cd431a2",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C70",
+      "claim": "Field observations often show high strain specificity in viral infection.",
+      "claim_type": "EXPLICIT",
+      "source": "However in the context of viral infection, field observations often show high strain specificity Holmfeldt et al., 2007; Roux et al., 2012; Suttle and Chan, 1994; Suttle, 2005 that is likely to contribute to higher diversity in particle-associated populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "59958e70-6a1f-4f04-9e31-c65bcd16c0aa",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C71",
+      "claim": "Viral infection acts as a driving force to create a continuous succession of bacterial populations on particles by replacing phage exposed populations with less susceptible ones.",
+      "claim_type": "EXPLICIT",
+      "source": "Viral infection act as a driving force to create a continuous succession of bacterial populations on particles by replacing phage exposed populations with less susceptible ones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on ecological reasoning.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "a21f60a4-c558-454d-a730-d2cbdea57254",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C72",
+      "claim": "The model predicts the existence of an optimal foraging strategy for bacterial population colonizing particles in marine environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the literature on OFT (Fernandez et al., 2019; Taylor and Stocker, 2012; Vetter et al., 1998), our model predicts the existence of an optimal foraging strategy for bacterial population colonizing particles in marine environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model that is consistent with previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "b64d657b-51f5-4bfe-8829-eea577754ecd",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C73",
+      "claim": "Optimal detachment rate is a function of search time for new resources.",
+      "claim_type": "EXPLICIT",
+      "source": "Building on previous studies (e.g., Yawata et al., 2020) that show the optimal detachment rate is a function of search time for new resources, our study suggests that optimal detachment rate could be significantly impacted by the predation rate on particles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "7c69d60e-aef1-48ea-95d3-272303a6afea",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C74",
+      "claim": "Optimal detachment rate could be significantly impacted by the predation rate on particles.",
+      "claim_type": "EXPLICIT",
+      "source": "Building on previous studies (e.g., Yawata et al., 2020) that show the optimal detachment rate is a function of search time for new resources, our study suggests that optimal detachment rate could be significantly impacted by the predation rate on particles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "972c2d52-e24d-4def-9ea8-b47f203ae690",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C75",
+      "claim": "A high mortality rate on particles shifts the optimal foraging strategy to populations with fast detachment rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicated that a high mortality rate on particles shifts the optimal foraging strategy to populations with fast detachment rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "990c9a74-7126-43ac-9883-48c0398e59af",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C76",
+      "claim": "Previous OFT models that considered mortality show that optimal foraging effort and residence time on patches decrease significantly as the density of predators increase.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding agrees with previous OFT models that considered mortality, showing that optimal foraging effort and residence time on patches decrease significantly as the density of predators increase (Newman, 1991; Abrams, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "6999ff11-732a-40b3-9c1f-31b1735a92c0",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C77",
+      "claim": "Variability in optimal detachment rate due to environmental fluctuations in particle number and predation rate could lead to evolutionarily stable coexistence among diverse dispersal strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we showed that the variability in optimal detachment rate, due to environmental fluctuations in particle number and predation rate, could lead to evolutionarily stable coexistence among diverse dispersal strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "38d5bf27-3090-4ff3-a4c7-5bd158e9ea34",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C78",
+      "claim": "In the absence of environmental fluctuations, there is a unique optimal dispersal strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that in the absence of any environmental fluctuations, there is a unique optimal dispersal strategy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "ffc8a6e8-b0cd-46dd-8d76-c90427e23c7d",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C79",
+      "claim": "Environmental fluctuations such as light and temperature may lead to the stable coexistence of species.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding is consistent with previous theoretical and empirical studies showing that environmental fluctuations such as light and temperature may lead to the stable coexistence of species (Litchman, 2003; Li and Chesson, 2016; Catorci et al., 2017; Sousa, 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "1cd26a26-705c-4e15-9de4-a66d56f16673",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C80",
+      "claim": "The model predicts a loss of diversity when particle abundances significantly increase, consistent with field observations from algal blooms.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model also predicts a loss of diversity when particle abundances significantly increase, consistent with field observations from algal blooms (Teeling et al., 2012; West et al., 2008; Wemheuer et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the model that is consistent with field observations cited.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "df674d58-1944-42a7-943d-a0d0e43d8057",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C81",
+      "claim": "Coexistence between different dispersal strategies is expected under cooperative growth dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "While we simplified bacterial colonization dynamics on particles by only considering competitive growth kinetics, variants of our model suggest that coexistence between different dispersal strategies is also expected under more complex microbial interactions observed on marine particles, including cooperative growth dynamics (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from model variants shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "8b2962e2-6c60-4a16-b3be-87fb604a3669",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C82",
+      "claim": "The yield of converting particle resources into biomass is about 5%.",
+      "claim_type": "EXPLICIT",
+      "source": "From a previous study, we assume that the yield is about 5% and a significant fraction of particle degradation products are lost to the environment before being taken up by the cells (Ebrahimi et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model parameter based on a previous study cited.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "43432e6d-8cce-4da1-a203-d862533992aa",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "claim_id": "C83",
+      "claim": "A significant fraction of particle degradation products are lost to the environment before being taken up by cells.",
+      "claim_type": "EXPLICIT",
+      "source": "From a previous study, we assume that the yield is about 5% and a significant fraction of particle degradation products are lost to the environment before being taken up by the cells (Ebrahimi et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model assumption based on a previous study cited.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0a3fd12c-2381-4d12-8185-c2e853d46394",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a mathematical model where bacterial populations attach to particles from a free-living pool, grow on particles with logistic density-dependent kinetics, detach stochastically at fixed rates, and face particle-wide mortality. Free-living cells cannot grow but die at a fixed rate, and detachment rate is the only trait varying between populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4, C30-C39 collectively describe the model structure and assumptions. These are clearly stated modeling choices that define the system being studied. The model is internally consistent and the assumptions are explicitly documented in both the main text and Methods section.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "5fa73544-04f4-40ee-a05b-fa5988ccc453",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In the absence of mortality, the model's optimal detachment rate matches optimal foraging theory (OFT) predictions across a wide range of particle numbers. However, particle-wide mortality increases the optimal detachment rate above OFT predictions, while free-living mortality decreases it below OFT predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C44 describe model validation against OFT and the effect of mortality type on optimal strategies. Figure 2A shows clear agreement with OFT in the no-mortality case and divergence with different mortality types. The results are consistent with ecological reasoning about mortality effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "eaa69f87-b043-4ab0-bb18-78a136b28ea6",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Differences in detachment rates alone are sufficient to enable coexistence on particles, but only in the presence of particle-wide mortality. Without particle-wide mortality, only trivial coexistence (identical detachment rates) occurs, indicating that particle-wide mortality is key for diverse dispersal strategies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47, C67-C68 establish the necessity of particle-wide mortality for coexistence. Figure 2B shows coexistence regions with particle-wide mortality, while Figure 2\u2014figure supplement 2 shows only trivial coexistence without it. The conclusion is well-supported by simulation results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "3ceeea49-c00e-4903-91a7-4956a55df0cb",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A trade-off emerges between bacterial growth return and survival rate on particles: slow-detaching populations have higher growth returns but higher mortality susceptibility, while fast-detaching populations have lower growth returns but better survival against particle-wide mortality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50 describe the mechanistic trade-off enabling coexistence. Figure 3C-D demonstrate this trade-off quantitatively, showing the inverse relationship between growth return and survival as a function of residence time. This is the core mechanism explaining coexistence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "4dce9005-2d83-4a8f-8235-ddd2c1d3aa42",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "No detachment rate can coexist with the optimal detachment rate, making coexistence susceptible to invasion. If detachment rates could evolve, only the population with the optimal detachment rate would survive long-term.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54 describe evolutionary instability of coexistence. Figure 2\u2014figure supplement 3 shows that when multiple populations compete, the optimal strategy eventually dominates. This is a logical consequence of the model structure and is demonstrated through simulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "79833af8-719e-40e2-b54d-9a96cf6ee8a5",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A negative correlation between mortality rate and particle abundance enhances coexistence range. Low particle abundances favor slow-detaching populations, high abundances favor fast-detaching populations, and intermediate abundances maximize coexistence likelihood. The optimal detachment rate increases with particle number.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C64 describe how environmental parameters affect coexistence and optimal strategies. Figure 4A-B show clear patterns of coexistence probability and optimal detachment rates across particle abundances and mortality rates. The mechanistic explanations based on encounter probabilities (Figure 1\u2014figure supplement 1) are consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "927d5c42-c083-4239-bf87-5ccedd9da5af",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Fluctuating environments (particle and predator blooms) significantly expand coexistence likelihood. Fast fluctuations (10 hr\u207b\u00b9 period) support higher diversity than slower fluctuations. Daily-scale fluctuations are sufficient for coexistence. Without fluctuations, only a unique optimal strategy exists, but fluctuations create evolutionarily stable coexistence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C65-C66, C77-C78 describe the effect of environmental fluctuations on coexistence. Figure 4D-E show that faster fluctuations increase coexistence range, with daily fluctuations being sufficient. The mechanism\u2014fluctuating optimal strategies creating temporal niches\u2014is clearly demonstrated and ecologically reasonable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "3268e3d4-de5d-4e2e-864e-98eaaa88b508",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The trade-off between growth and survival against predation leads to stable coexistence of populations with different dispersal strategies. In bloom conditions with high particle supply, fast dispersers are favored, while in oligotrophic conditions with rare particles, slow-detaching bacteria have competitive advantage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C29 summarize key findings about coexistence mechanisms and environmental context. These are well-supported by the detailed results in Figures 2-4 and represent the main conclusions of the modeling work. The claims are consistent with all supporting evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "40de8d20-712f-4016-9b6b-a1952c0af489",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Detachment from particles creates a trade-off by modulating net growth and mortality in opposite directions. Slow-detaching populations show highest growth return but are more susceptible to higher mortality rates than fast-detaching populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7 state the core finding about the trade-off mechanism. These are directly supported by the model results shown in Figures 2-3, particularly the quantitative analysis of growth returns and survival rates as functions of detachment rate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "c85a42cd-2162-487f-9e15-045561fad483",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The commonly observed range of particle abundances in aquatic environments is between 1 and 80 particles L\u207b\u00b9 with a mean of approximately 25 particles L\u207b\u00b9.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C60 provides empirical context for model parameters. Figure 4\u2014figure supplement 1 shows field data from multiple aquatic environments supporting this range. The claim is appropriately cited and the data distribution is shown.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "43c98576-e44d-4e1c-b87b-b0f793cae83a",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The model predicts an optimal foraging strategy for bacterial populations colonizing particles, consistent with OFT literature. Building on previous work showing optimal detachment rate depends on search time, this study shows it is also significantly impacted by predation rate on particles, with high mortality shifting the optimum toward fast detachment rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C76 contextualize findings within OFT framework. The model results (Figure 2A) clearly show mortality effects on optimal strategies, and the agreement with previous OFT models considering predation (C76, cited) strengthens the interpretation. The extension of OFT to include particle-wide mortality is novel and well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "5b435656-da1e-443b-99dd-7b4ef17a2acb",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The model predicts a loss of diversity when particle abundances significantly increase, consistent with field observations from algal blooms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C80 connects model predictions to field observations. Figure 4A shows reduced coexistence probability at high particle abundances, and the claim is supported by citations to field studies of algal blooms. The prediction is a logical consequence of fast-detaching strategies dominating at high particle abundance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "0224b340-e611-4672-bc7e-c2c7f9298ea3",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Coexistence between different dispersal strategies is expected under cooperative growth dynamics in addition to the competitive growth kinetics modeled in the main analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C81 extends findings to alternative growth models. Figure 2\u2014figure supplement 4 shows that coexistence occurs under cooperative growth dynamics, demonstrating robustness of the main conclusions to different interaction types. This is a valuable sensitivity analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "18a3a20e-416b-48fd-9bec-817571a2fb5c",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Microbial foraging in patchy environments plays a key role in nature. Thousands of microbial species coexist in small volumes of seawater or soil, creating a paradox since this conflicts with classic ecological predictions. Particle-associated microbes show diversity an order of magnitude greater than free-living microbes, yet this has been overlooked.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C9-C15 provide background context from established literature. All claims are appropriately cited to previous work (Azam and Malfatti 2007, Hutchinson 1961, Milici et al. 2017, etc.). These establish the motivation and ecological context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "ccced403-ab08-4dcf-9a81-b604a10de9bb",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Dispersal strategies of particle-associated microbes can be condensed into one parameter: detachment rate (inverse of residence time). Detachment rates are quite variable across taxa, with low-detachment bacteria forming biofilms for local resource exploitation and high-detachment bacteria frequently moving between particles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C20, C40 establish the key trait being modeled and its biological basis. The simplification to a single parameter is a modeling choice (C16), while the variability and behavioral differences are supported by citations (Grossart et al. 2003, Yawata et al. 2014, Ebrahimi et al. 2019).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "0db42f03-6b49-4d59-ae07-23249cb0c5ae",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Net mortality rates on particles can be higher than for planktonic cells due to congregation enabling sudden population collapse. Collapse mechanisms include particle sinking and predation by viruses or grazers. Particle-wide mortality may kill more than 30% of particle-associated populations in the ocean, with longer residence times increasing wipeout probability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C26 establish the biological basis for particle-wide mortality in the model. The mechanisms are supported by appropriate citations (Boeuf et al. 2019, Ganesh et al. 2014, Proctor and Fuhrman 1991). The 30% mortality estimate (C25) is directly cited. The logical inference about residence time (C26) follows from the described mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "a67746b4-599b-4d67-b265-dd90f51a9d96",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Spatial structure plays a critical role in promoting bacterial diversity. Field observations show high strain specificity in viral infection, which likely contributes to higher diversity in particle-associated populations. Viral infection may drive continuous succession by replacing phage-exposed populations with less susceptible ones.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C69-C70 are supported by citations, but C71 is speculative (marked as SPECULATION in evidence_type). While the hypothesis about viral-driven succession is plausible and consistent with the model framework, it is not directly tested or demonstrated in this study. The claim goes beyond what the model shows.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "291146ff-67eb-4d15-9095-e051e4337153",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Environmental fluctuations such as light and temperature may lead to stable coexistence of species, consistent with previous theoretical and empirical studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C79 contextualizes the fluctuation results within broader ecological theory. The statement is appropriately cited to previous work (Litchman 2003, Li and Chesson 2016, etc.) and serves to connect the specific findings about particle/predator fluctuations to general principles of fluctuation-mediated coexistence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    },
+    {
+      "id": "9721647f-f104-418b-9262-4823539f615a",
+      "content_id": "7cf63d5d-775b-4c46-b6b5-0bd1b2bb2826",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The yield of converting particle resources into biomass is about 5%, and a significant fraction of particle degradation products are lost to the environment before being taken up by cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C83 describe model parameters based on previous work (Ebrahimi et al. 2019). These are appropriately cited assumptions that inform the model's resource dynamics. The parameters are reasonable for marine bacterial systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:42:14.866203Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d5b24a71-7268-4d32-a161-bbaa6c4b174c",
+      "result_id": "0a3fd12c-2381-4d12-8185-c2e853d46394"
+    },
+    {
+      "claim_id": "0fb7ea5f-dd50-4736-b500-fcbaec46c981",
+      "result_id": "0a3fd12c-2381-4d12-8185-c2e853d46394"
+    },
+    {
+      "claim_id": "e5a2a966-d980-4f3d-8d12-6cd597ea7fa2",
+      "result_id": "0a3fd12c-2381-4d12-8185-c2e853d46394"
+    },
+    {
+      "claim_id": "bec83eef-973e-422e-a0cc-b19a9fe9f997",
+      "result_id": "0a3fd12c-2381-4d12-8185-c2e853d46394"
+    },
+    {
+      "claim_id": "952d9d8f-a3ec-4f04-9181-516b2d6fe21f",
+      "result_id": "0a3fd12c-2381-4d12-8185-c2e853d46394"
+    },
+    {
+      "claim_id": "c149b032-bd7a-4eeb-a3ba-f3fe873a89e4",
+      "result_id": "0a3fd12c-2381-4d12-8185-c2e853d46394"
+    },
+    {
+      "claim_id": "02529854-1d30-4e16-8aee-5f9aab9e0c16",
+      "result_id": "0a3fd12c-2381-4d12-8185-c2e853d46394"
+    },
+    {
+      "claim_id": "558a7745-f3b6-46a9-8b66-4382eb4b877e",
+      "result_id": "0a3fd12c-2381-4d12-8185-c2e853d46394"
+    },
+    {
+      "claim_id": "a427e3a7-eeef-4173-aaaa-83ef114cdabc",
+      "result_id": "0a3fd12c-2381-4d12-8185-c2e853d46394"
+    },
+    {
+      "claim_id": "34dc1058-7b4a-4f26-b158-b728caea6776",
+      "result_id": "0a3fd12c-2381-4d12-8185-c2e853d46394"
+    },
+    {
+      "claim_id": "d21ff09d-bf5d-4914-bce5-0853db20997c",
+      "result_id": "0a3fd12c-2381-4d12-8185-c2e853d46394"
+    },
+    {
+      "claim_id": "a52017d5-caab-43f8-bc03-54f2d1944c3b",
+      "result_id": "0a3fd12c-2381-4d12-8185-c2e853d46394"
+    },
+    {
+      "claim_id": "7aee5c2d-a827-464c-8629-90a67451d150",
+      "result_id": "5fa73544-04f4-40ee-a05b-fa5988ccc453"
+    },
+    {
+      "claim_id": "8b48b805-7b01-4786-86ed-88f53beccbee",
+      "result_id": "5fa73544-04f4-40ee-a05b-fa5988ccc453"
+    },
+    {
+      "claim_id": "730940c5-7189-46ec-aa27-aaf56880f43f",
+      "result_id": "5fa73544-04f4-40ee-a05b-fa5988ccc453"
+    },
+    {
+      "claim_id": "7f8d2bc2-45e9-4e59-abad-b33c65e8f480",
+      "result_id": "5fa73544-04f4-40ee-a05b-fa5988ccc453"
+    },
+    {
+      "claim_id": "7a0970d5-e08b-481b-9626-a66d91b8fdf0",
+      "result_id": "eaa69f87-b043-4ab0-bb18-78a136b28ea6"
+    },
+    {
+      "claim_id": "f4b22900-5e81-4bc7-bf15-45a5467c0255",
+      "result_id": "eaa69f87-b043-4ab0-bb18-78a136b28ea6"
+    },
+    {
+      "claim_id": "d6666a3e-6797-4326-81a9-fc11e312f468",
+      "result_id": "eaa69f87-b043-4ab0-bb18-78a136b28ea6"
+    },
+    {
+      "claim_id": "2f992224-4064-4a65-844b-3525b375c8e0",
+      "result_id": "eaa69f87-b043-4ab0-bb18-78a136b28ea6"
+    },
+    {
+      "claim_id": "89196a5b-7b45-4fe5-b213-a89c0263679a",
+      "result_id": "eaa69f87-b043-4ab0-bb18-78a136b28ea6"
+    },
+    {
+      "claim_id": "46f0ef9e-25e3-4b44-aced-72b23eaf9ea4",
+      "result_id": "3ceeea49-c00e-4903-91a7-4956a55df0cb"
+    },
+    {
+      "claim_id": "a2bfc2f4-fe48-44b2-8484-4eb3c503a2a5",
+      "result_id": "3ceeea49-c00e-4903-91a7-4956a55df0cb"
+    },
+    {
+      "claim_id": "29438b3b-e4dd-4067-969f-e334208acda8",
+      "result_id": "3ceeea49-c00e-4903-91a7-4956a55df0cb"
+    },
+    {
+      "claim_id": "6c1951cb-abbd-419c-92ad-b4acc0c9e568",
+      "result_id": "4dce9005-2d83-4a8f-8235-ddd2c1d3aa42"
+    },
+    {
+      "claim_id": "43d20ba3-47e9-4871-9612-d2ad81cf39ea",
+      "result_id": "4dce9005-2d83-4a8f-8235-ddd2c1d3aa42"
+    },
+    {
+      "claim_id": "87f8bee5-3119-49d8-a4ac-377cc5af2685",
+      "result_id": "79833af8-719e-40e2-b54d-9a96cf6ee8a5"
+    },
+    {
+      "claim_id": "bdf5a973-9346-4784-a8a3-8225957fc45d",
+      "result_id": "79833af8-719e-40e2-b54d-9a96cf6ee8a5"
+    },
+    {
+      "claim_id": "65b6cc4c-a6f9-4a2b-af90-d7b23bddc7d3",
+      "result_id": "79833af8-719e-40e2-b54d-9a96cf6ee8a5"
+    },
+    {
+      "claim_id": "1cccaf4e-6d0f-493b-a7d3-39ca2f3178bd",
+      "result_id": "79833af8-719e-40e2-b54d-9a96cf6ee8a5"
+    },
+    {
+      "claim_id": "0484476a-af42-4f3a-8a2b-e191512898ed",
+      "result_id": "79833af8-719e-40e2-b54d-9a96cf6ee8a5"
+    },
+    {
+      "claim_id": "a61cd538-eacb-4a4a-84c3-997f983b828b",
+      "result_id": "79833af8-719e-40e2-b54d-9a96cf6ee8a5"
+    },
+    {
+      "claim_id": "2e531adb-f702-4c02-b4fb-932def5c1c0b",
+      "result_id": "79833af8-719e-40e2-b54d-9a96cf6ee8a5"
+    },
+    {
+      "claim_id": "fbfa08e8-ac26-416c-bf71-370fd486b1f6",
+      "result_id": "79833af8-719e-40e2-b54d-9a96cf6ee8a5"
+    },
+    {
+      "claim_id": "2b94cd7d-8876-41f3-8898-ee26eb0762e1",
+      "result_id": "927d5c42-c083-4239-bf87-5ccedd9da5af"
+    },
+    {
+      "claim_id": "fa329bc2-de23-473f-b354-5f1d984c63fc",
+      "result_id": "927d5c42-c083-4239-bf87-5ccedd9da5af"
+    },
+    {
+      "claim_id": "b7f4c770-b63d-4602-b4fe-a2a1dcf5c446",
+      "result_id": "927d5c42-c083-4239-bf87-5ccedd9da5af"
+    },
+    {
+      "claim_id": "6999ff11-732a-40b3-9c1f-31b1735a92c0",
+      "result_id": "927d5c42-c083-4239-bf87-5ccedd9da5af"
+    },
+    {
+      "claim_id": "38d5bf27-3090-4ff3-a4c7-5bd158e9ea34",
+      "result_id": "927d5c42-c083-4239-bf87-5ccedd9da5af"
+    },
+    {
+      "claim_id": "ae553a20-7931-425c-805c-f1d473a6fedc",
+      "result_id": "3268e3d4-de5d-4e2e-864e-98eaaa88b508"
+    },
+    {
+      "claim_id": "953c0dbf-a684-4d76-b393-aa13a435f2b2",
+      "result_id": "3268e3d4-de5d-4e2e-864e-98eaaa88b508"
+    },
+    {
+      "claim_id": "d0dd4959-bc37-40d1-bae4-b844b2a58b5c",
+      "result_id": "3268e3d4-de5d-4e2e-864e-98eaaa88b508"
+    },
+    {
+      "claim_id": "5400a6e7-09aa-4b7a-b732-f80f1116edd2",
+      "result_id": "40de8d20-712f-4016-9b6b-a1952c0af489"
+    },
+    {
+      "claim_id": "42232291-1117-4d22-9514-1712e048739f",
+      "result_id": "40de8d20-712f-4016-9b6b-a1952c0af489"
+    },
+    {
+      "claim_id": "a8b53b9e-bd8f-41ec-a5ac-30ed2c3cb6f0",
+      "result_id": "40de8d20-712f-4016-9b6b-a1952c0af489"
+    },
+    {
+      "claim_id": "cb258a0d-51ec-4ecb-8988-a50a2fa1b592",
+      "result_id": "c85a42cd-2162-487f-9e15-045561fad483"
+    },
+    {
+      "claim_id": "a21f60a4-c558-454d-a730-d2cbdea57254",
+      "result_id": "43c98576-e44d-4e1c-b87b-b0f793cae83a"
+    },
+    {
+      "claim_id": "b64d657b-51f5-4bfe-8829-eea577754ecd",
+      "result_id": "43c98576-e44d-4e1c-b87b-b0f793cae83a"
+    },
+    {
+      "claim_id": "7c69d60e-aef1-48ea-95d3-272303a6afea",
+      "result_id": "43c98576-e44d-4e1c-b87b-b0f793cae83a"
+    },
+    {
+      "claim_id": "972c2d52-e24d-4def-9ea8-b47f203ae690",
+      "result_id": "43c98576-e44d-4e1c-b87b-b0f793cae83a"
+    },
+    {
+      "claim_id": "990c9a74-7126-43ac-9883-48c0398e59af",
+      "result_id": "43c98576-e44d-4e1c-b87b-b0f793cae83a"
+    },
+    {
+      "claim_id": "1cd26a26-705c-4e15-9de4-a66d56f16673",
+      "result_id": "5b435656-da1e-443b-99dd-7b4ef17a2acb"
+    },
+    {
+      "claim_id": "df674d58-1944-42a7-943d-a0d0e43d8057",
+      "result_id": "0224b340-e611-4672-bc7e-c2c7f9298ea3"
+    },
+    {
+      "claim_id": "a06f85c9-1df2-4a3f-969a-5158f09db96d",
+      "result_id": "18a3a20e-416b-48fd-9bec-817571a2fb5c"
+    },
+    {
+      "claim_id": "6e4fb5b7-7ca6-4946-b67f-1d0eca55bdf7",
+      "result_id": "18a3a20e-416b-48fd-9bec-817571a2fb5c"
+    },
+    {
+      "claim_id": "36508a7f-00f0-4e65-bb7d-5370a6a54ae7",
+      "result_id": "18a3a20e-416b-48fd-9bec-817571a2fb5c"
+    },
+    {
+      "claim_id": "e170d262-8f2e-4cea-91e1-dfde299649d5",
+      "result_id": "18a3a20e-416b-48fd-9bec-817571a2fb5c"
+    },
+    {
+      "claim_id": "b80b9c7d-a868-4275-b21d-5b6556d96c11",
+      "result_id": "18a3a20e-416b-48fd-9bec-817571a2fb5c"
+    },
+    {
+      "claim_id": "c32546c3-9d55-44c2-aa69-71d339d72784",
+      "result_id": "18a3a20e-416b-48fd-9bec-817571a2fb5c"
+    },
+    {
+      "claim_id": "d832a54e-f9c1-4ada-9659-eef207282fbf",
+      "result_id": "18a3a20e-416b-48fd-9bec-817571a2fb5c"
+    },
+    {
+      "claim_id": "b4baae0a-7491-4dba-9902-86eedb353da2",
+      "result_id": "18a3a20e-416b-48fd-9bec-817571a2fb5c"
+    },
+    {
+      "claim_id": "8cf9eb0b-d849-40e5-8bab-3add1d041a31",
+      "result_id": "18a3a20e-416b-48fd-9bec-817571a2fb5c"
+    },
+    {
+      "claim_id": "fce95673-ce19-42d0-86d2-ba7702f53f0b",
+      "result_id": "ccced403-ab08-4dcf-9a81-b604a10de9bb"
+    },
+    {
+      "claim_id": "18f1273b-79f7-48a4-b743-49f1525bc3d3",
+      "result_id": "ccced403-ab08-4dcf-9a81-b604a10de9bb"
+    },
+    {
+      "claim_id": "c03b8577-963b-4d6b-95ee-0b46e2afd0c7",
+      "result_id": "ccced403-ab08-4dcf-9a81-b604a10de9bb"
+    },
+    {
+      "claim_id": "e9b7bbdf-7a4b-4913-9121-72319de6e4d4",
+      "result_id": "ccced403-ab08-4dcf-9a81-b604a10de9bb"
+    },
+    {
+      "claim_id": "d94d4af6-7c89-4ca1-ab36-904648afdd2c",
+      "result_id": "ccced403-ab08-4dcf-9a81-b604a10de9bb"
+    },
+    {
+      "claim_id": "5ce67c03-e682-4ae6-af79-9583793158b0",
+      "result_id": "ccced403-ab08-4dcf-9a81-b604a10de9bb"
+    },
+    {
+      "claim_id": "3ab4b4e6-425c-4f3f-98cc-6831fa388f5d",
+      "result_id": "0db42f03-6b49-4d59-ae07-23249cb0c5ae"
+    },
+    {
+      "claim_id": "dcf80205-96c7-4f50-a48c-6687e2b1d8f1",
+      "result_id": "0db42f03-6b49-4d59-ae07-23249cb0c5ae"
+    },
+    {
+      "claim_id": "22c8df0e-0ea8-4be8-afd4-1d60729247b3",
+      "result_id": "0db42f03-6b49-4d59-ae07-23249cb0c5ae"
+    },
+    {
+      "claim_id": "9e693169-ec24-4c5e-b316-a6fc30033559",
+      "result_id": "0db42f03-6b49-4d59-ae07-23249cb0c5ae"
+    },
+    {
+      "claim_id": "5d66ed4a-30ea-43d4-b287-23d51b90ee55",
+      "result_id": "0db42f03-6b49-4d59-ae07-23249cb0c5ae"
+    },
+    {
+      "claim_id": "ae8c3d0c-e37e-4bff-ab5f-a99ca6b10653",
+      "result_id": "0db42f03-6b49-4d59-ae07-23249cb0c5ae"
+    },
+    {
+      "claim_id": "853ef38d-3d80-4adc-9b18-5fe0ea3ea389",
+      "result_id": "a67746b4-599b-4d67-b265-dd90f51a9d96"
+    },
+    {
+      "claim_id": "6a25d539-dffe-4a5e-8615-7f959cd431a2",
+      "result_id": "a67746b4-599b-4d67-b265-dd90f51a9d96"
+    },
+    {
+      "claim_id": "59958e70-6a1f-4f04-9e31-c65bcd16c0aa",
+      "result_id": "a67746b4-599b-4d67-b265-dd90f51a9d96"
+    },
+    {
+      "claim_id": "ffc8a6e8-b0cd-46dd-8d76-c90427e23c7d",
+      "result_id": "291146ff-67eb-4d15-9095-e051e4337153"
+    },
+    {
+      "claim_id": "8b2962e2-6c60-4a16-b3be-87fb604a3669",
+      "result_id": "9721647f-f104-418b-9262-4823539f615a"
+    },
+    {
+      "claim_id": "43432e6d-8cce-4da1-a203-d862533992aa",
+      "result_id": "9721647f-f104-418b-9262-4823539f615a"
+    }
+  ],
+  "comparisons": []
+}

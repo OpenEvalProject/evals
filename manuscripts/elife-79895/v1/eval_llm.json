@@ -1,0 +1,503 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Lung cancer epidemiology and clinical context: Lung cancer is the most frequently diagnosed cancer with highest mortality burden worldwide. NSCLC comprises 85% and SCLC 15% of cases. Five-year survival drops from 56% to 6% with metastasis, the lowest among common cancers. Recent decades show mortality decline attributed to reduced smoking, early diagnosis, and new therapies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 are all supported by appropriate citations to epidemiological studies and reviews. These are well-established facts in the lung cancer field that provide necessary background context. The statistics cited are consistent with current cancer registry data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C33"
+    ],
+    "result": "Lung cancer mutational landscape: Lung cancers are among the most highly mutated tumors, with KRAS, EGFR, ALK, TP53, and LKB1 as the most commonly mutated genes. KRAS mutations are the most frequent oncogenic driver mutations in human lung cancer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C10, and C33 are supported by citations to large-scale genomic studies including TCGA. These findings are well-established in the literature and represent consensus knowledge about lung cancer genomics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Tumor microenvironment composition and function: Non-transformed cells in tumors have pivotal roles in tumor initiation, progression, and metastasis. The TME is a double-edged sword with anti-tumor activities early but may promote progression later. TME contains pro-tumorigenic cells (M2-macrophages, MDSCs, Treg cells) and anti-tumorigenic cells (M1-macrophages, CD8+ T cells, NK cells). Immune checkpoint inhibitors disrupt PD-L1/PD-1 interactions, but only a subgroup of patients respond effectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C16 are well-supported by appropriate citations to established TME biology literature. These represent consensus understanding of TME composition and immune checkpoint biology. The limitation of ICI response is a well-documented clinical observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "Tumor growth kinetics suggest microenvironment suppression: Tumor doubling times (60-200 days) are orders of magnitude slower than cancer cell doubling times (1-2 days), arguing for suppressive function of the normal microenvironment where the majority of cancer cells die before establishing a tumor mass.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 present a logical inference supported by citations. The discrepancy between cell and tumor doubling times is well-documented and the interpretation that this reflects microenvironmental suppression is reasonable, though alternative explanations (nutrient limitation, spatial constraints) could also contribute.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Tumor mutational burden and immunogenicity: TMB (non-synonymous mutations per megabase) is associated with immunotherapy outcomes. Cancer cell recognition relies on MHC presentation of tumor antigens. TMB serves as an indicator of neoantigen load. Common lung mutations (KRAS, TP53) have high TMB associated with increased immunogenicity. High TMB correlates with greater neoantigen probability and boosts immunogenicity through cytotoxic T cell recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24 are supported by appropriate citations establishing the TMB-immunotherapy response relationship. The mechanistic connection through neoantigen presentation is well-established. However, the relationship is correlative rather than definitively causal, and TMB is an imperfect predictor of response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Clinical trial evidence for TMB as predictive biomarker: In KEYNOTE-158, TMB-high status predicted tumor remission with pembrolizumab. In CHECKMATE-026, high TMB patients on nivolumab showed longer PFS (9.7 vs 5.8 months, HR=0.62) and higher response rates (47% vs 28%) than chemotherapy. Combined high TMB and PD-L1 >50% showed 75% response rate. In CHECKMATE-227, nivolumab plus ipilimumab resulted in longer PFS (7.2 vs 5.5 months, HR=0.58) in TMB \u226510 mut/Mb patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 report specific clinical trial results with appropriate citations. The data are from published trials with statistical measures provided. These represent important evidence for TMB as a predictive biomarker, though the authors appropriately note in the discussion that TMB has limitations and standardization issues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Aneuploidy correlates with immune phenotype: Aneuploidy is positively correlated with mutation number in most cancers including lung. Tumor aneuploidy negatively correlates with immune evasion markers and tumor-infiltrating leukocytes. Highly aneuploid tumors show reduced expression of adaptive immunity genes, CD8+ T cell cytotoxic activity, and pro-inflammatory cytokine pathways, and are associated with poorer patient survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 are supported by citations to three independent studies showing consistent findings. The negative correlation between aneuploidy and immune infiltration is well-documented. However, the mechanistic basis for this relationship remains incompletely understood and may involve multiple pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "KRAS mutations create immunosuppressive TME through NF-\u03baB: KRAS-mutant lung cancers show pro-tumorigenic, immunosuppressed TME enriched in M2 macrophages, MDSCs, Th17 cells, and Treg cells. KRAS is a GTPase activating MAPK pathways. Mutant RAS activates NF-\u03baB pathway in cancer cells. NF-\u03baB binding sites are in enhancers/promoters of immunoregulatory genes. NF-\u03baB target genes include cytokines/chemokines (IL6, TNF\u03b1, IL-1\u03b1/\u03b2, CXCL1/2/5/8, CCL2, ICAM1) and cell cycle/anti-apoptotic proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 are well-supported by citations establishing the KRAS-NF-\u03baB-cytokine axis. The connection between KRAS mutation and immunosuppressive TME is documented, and the NF-\u03baB pathway's role in cytokine production is well-established. This represents a mechanistic framework linking oncogenic mutation to TME phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "IL-6/JAK1/STAT3 axis in KRAS-mutant tumors: Mutant KRAS cancer cells secrete IL-6, activating JAK1 to induce STAT3 phosphorylation in TME macrophages. Pharmacological IL-6 blockade in preclinical mouse models suppresses KRAS-mutant lung cancer progression, inhibits STAT3 activation, and diminishes M2 macrophages, MDSCs, and Treg cells while increasing CD8+ T-cell responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 are supported by appropriate citations. The IL-6/STAT3 pathway is well-characterized in cancer biology. The preclinical evidence from mouse models is compelling, though translation to human patients requires clinical validation. The mechanistic connection is biologically plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "CXCL8 role in KRAS-driven tumorigenesis: Mutant KRASG12V transcriptionally induces CXCL8 through RAF-MAPK, PI3K, and NF-\u03baB pathways. Anti-CXCL8 antibody attenuates survival and neo-angiogenesis and reduces inflammatory immune cell infiltration in mouse xenografts. KrasG12D mouse model shows elevated CXCL8 homologues (KC, MIP-2). CXCR2 receptor blockade reduces lung tumor frequency and progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 are supported by citations to mechanistic studies and mouse models. The CXCL8 pathway's role in KRAS-driven tumorigenesis is well-documented across multiple experimental systems. The convergent evidence from different approaches strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "IL-1 as master cytokine regulating chemokine networks: IL-1\u03b1/\u03b2 can induce transcriptional and post-transcriptional expression of IL-6, CXCL8, and multiple chemokines simultaneously through signaling pathway networks including NF-\u03baB in normal and cancer cells. The IL-1 system can be pharmacologically targeted by IL-1RA, canakinumab (anti-IL-1\u03b2 antibody), or rilonacept (IL-1 receptor IgG fusion). IL-1RA suppresses both IL-1\u03b1 and IL-1\u03b2, while canakinumab is IL-1\u03b2-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are well-supported by citations to IL-1 biology literature. The concept of IL-1 as a master regulator of cytokine networks is well-established. The pharmacological agents mentioned are clinically approved drugs with well-characterized mechanisms of action.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "IL-1\u03b1 and IL-1\u03b2 have distinct roles in lung TME: Nuclear IL-1\u03b1 acts as a genotoxic stress signal binding DNA damage sites, regulating tissue inflammation. In mouse models, both IL-1\u03b2 deficiency and excess IL-1 activity (IL-1RA deficiency) resulted in reduced T cell activity and poor prognosis. IL-1\u03b2-deficient mice showed increased Treg numbers/activities; IL-1RA-deficient mice showed enhanced MDSC accumulation/activity, both suppressing antitumor immunity. IL-17-deficient mice showed reduced tumor progression with improved T cell function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by citations to studies using knockout mouse models. The findings reveal complex, non-linear relationships where both deficiency and excess of IL-1 activity can be detrimental. This highlights the importance of balance in immune regulation, though the specific mechanisms in human tumors may differ.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "IL-1/IL-17 axis in KRAS-driven lung cancer: KRAS mutations in lung epithelial cells lead to Th17 cell recruitment and increased IL-17 production, associated with tumorigenesis. IL-17 from tumor-infiltrating Th17 cells induces EMT in lung cancer cells, promoting migration, intravasation, and metastasis. IL-17 blockade in mouse models reduces lung tumor metastasis. IL-17C genetic ablation in KrasG12D mice improved anti-PD1 response. Th17 lymphocyte numbers in lung cancer patients negatively correlate with overall survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 are supported by citations to multiple studies showing consistent findings across mouse models and human correlative data. The IL-17 pathway's role in KRAS-driven lung cancer is well-documented. The connection to immunotherapy response adds clinical relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Opposing roles of IL-1\u03b1 and IL-1\u03b2 in malignancy: Based on multiple studies, Apte et al. concluded that membrane-associated IL-1\u03b1 is mainly immunostimulatory while secreted IL-1\u03b2 is mainly pro-inflammatory, promoting tumorigenesis, invasiveness, and immunosuppression. In murine breast cancer, IL-1\u03b2-deficiency resulted in IL-12 secretion by CD11b+ dendritic cells and antitumor immunity by activated CD8+ lymphocytes expressing IFN\u03b3, TNF\u03b1, and granzyme B. Sequential treatment with anti-IL-1\u03b2 then anti-PD-1 antibodies completely abrogated tumor progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 are supported by citations to studies from the Apte laboratory and others. The distinction between IL-1\u03b1 and IL-1\u03b2 functions is supported by experimental evidence, though the generalizability across different tumor types requires further validation. The combination therapy result is compelling but from a single study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "CANTOS trial: IL-1\u03b2 blockade reduces lung cancer incidence and mortality: In the CANTOS trial, canakinumab treatment showed dose-dependent reduction in lung cancer incidence (HR=0.33 for 300mg vs placebo) and mortality (HR=0.23 for 300mg vs placebo). COSMIC ctDNA mutations were detected in 65% of lung cancer patients. Median time to diagnosis was shorter with detectable baseline ctDNA mutations (407 vs 837 days). High baseline CRP and IL-6 trended toward shorter time to diagnosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 report findings from the CANTOS trial with appropriate citations. The lung cancer findings were unexpected secondary outcomes from a cardiovascular trial, which raises questions about mechanism and generalizability. The ctDNA analysis provides additional mechanistic insight. However, these were post-hoc analyses requiring prospective validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "EGFR mutations create distinct immunosuppressive TME: EGFR mutations upregulate intrinsic PD-L1 expression on cancer cells, suppress T cell function, and increase pro-inflammatory cytokines in the TME, marking an immune escape phenotype. EGFR-mutant patients have fewer PD-L1+/CD8+ TIL infiltrations and reduced tumor shrinking in response to immune activation. EML4-ALK rearrangements show increased regulatory T cells compared to reduced cytotoxic T cells in EGFR-mutant tumors, supporting that different driver oncogenes induce distinct immunosuppressive mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 are supported by appropriate citations. The distinct TME phenotypes associated with different driver mutations are well-documented. The comparison between EGFR and ALK alterations highlights mutation-specific immune effects. This explains differential ICI responses across molecular subtypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "MYC/KRAS cooperation creates immunosuppressive TME: MYC regulates cell-cycle progression, apoptosis, senescence, and metabolism. MYC/KRAS co-occurrence accelerates lung tumor development and reduces survival in mouse models. MYC-induced immunosuppression relies on CCL9 and IL-23. CCL9 recruits CD206+ pro-tumor macrophages and causes PD-L1-dependent T/B cell expulsion. IL-23 boosts CCL9 effects by eliminating adaptive T/B cells and innate NK cells. Blocking CCL9 and IL-23 abrogates tumor aggressiveness in KRAS/MYC mice by re-establishing tumor-suppressive microenvironment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C73 are supported by citations to mouse model studies. The mechanistic pathway from MYC/KRAS through CCL9/IL-23 to immune suppression is well-characterized in the cited work. The therapeutic intervention data strengthen the causal interpretation, though translation to human tumors requires validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "TP53 mutations shape inflamed immunosuppressive TME: TP53 is the most frequently mutated gene in cancer, with 46% in lung adenocarcinoma to >90% in SCLC. TP53-mutant tumors show increased PD-L1 expression and CD8+ T cell infiltration, suggesting adaptive immune resistance and high immunogenicity. TP53 mutations elevate NF-\u03baB activity. Enhanced NF-\u03baB suppresses p53-mediated gene activation, promoting apoptosis resistance. In KRAS/TP53 co-mutant cells, increased NF-\u03baB confers pro-survival signals. KRAS/TP53 tumors show increased PD-L1 expression and higher PD-L1+/CD8a+ T cells compared to single mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C79 are supported by appropriate citations. The high frequency of TP53 mutations and their association with distinct TME phenotypes are well-documented. The NF-\u03baB connection provides mechanistic insight. The co-mutation analysis reveals synergistic effects on TME phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "TP53 mutations affect protein secretion machinery: TP53 inactivation activates PAQR11-mediated prometastatic secretory vesicle biogenesis, resulting in PLAU receptor/STAT3/PAQR11 feedforward loop triggering immunosuppressive TME. TP53 loss induces G55-dependent secretion promoting angiogenesis and CD8+ T cell exhaustion. Missense TP53 mutations induce endoplasmic reticulum UDPase ENTPD5 driving the calnexin/calreticulin cycle for secreted protein folding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 are supported by citations to recent mechanistic studies. These findings reveal non-canonical functions of TP53 in regulating secretory pathways. The evidence is compelling but represents relatively recent discoveries that may require additional validation across different contexts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "KRAS/LKB1 co-mutations alter serine metabolism affecting T cells: KRAS/LKB1 co-mutation occurs in ~25% of KRAS-mutant lung adenocarcinomas. LKB1 is a serine-threonine kinase regulating metabolism and energy stress through AMPK. KRAS/LKB1 cooperation induces the serine-glycine-one-carbon pathway, enhancing SAM synthesis for DNA methylation. Extracellular serine is essential for T cell expansion through glycine and one-carbon units for nucleotide biosynthesis. Upregulated serine-glycine-one-carbon pathway in LKB1-mutant cells depletes extracellular serine, regulating T cell proliferation and function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 are supported by appropriate citations. The metabolic competition between cancer cells and T cells for serine represents an important non-cell-autonomous mechanism of immune suppression. The mechanistic pathway is well-characterized, though the quantitative impact on T cell function in vivo requires further study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "KRAS/LKB1 co-mutations alter nitrogen metabolism and confer immunotherapy resistance: KRAS/LKB1 tumors show altered nitrogen metabolism. KRAS/LKB1-mutant cells depend on unorthodox pyrimidine biosynthesis using mitochondrial carbamoyl phosphate through CPS1 upregulation. CPS1 confers resistance to arginine depletion, a strategy of pro-tumor macrophages to inhibit T cell responses. Primary PD-1 therapy resistance in KRAS-mutant patients is mainly associated with LKB1 alterations. Lkb1 ablation induces anti-PD-1/PD-L1 resistance in murine Kras-mutant models. KRAS/LKB1 mutations establish non-T cell inflamed TME with reduced CD3+/CD4+/CD8+ T cell infiltration and low PD-1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94 are supported by citations to metabolic studies and clinical observations. The connection between LKB1 loss, altered metabolism, and immunotherapy resistance is well-documented. The mechanistic insights into CPS1-mediated arginine independence provide therapeutic opportunities. Clinical correlation strengthens translational relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Immune system shapes tumor genomic landscape: Immunodeficient mice have increased tumor susceptibility and cancer cells from immunodeficient mice have higher immunogenicity compared to wild-type mice. Immunosuppressed transplant recipients developed secondary tumors after transplantation from undetected cancer of organ donors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 are supported by appropriate citations. These observations provide evidence that the immune system exerts selective pressure on developing tumors. The transplant data provide compelling human evidence, though these are rare cases. This supports the concept of immunoediting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Immune selection favors poorly presented oncogenic mutations: Mutations in known oncogenes and tumor suppressor genes have higher PHBR scores (less immune recognition probability) than random mutations. Positive correlation exists between PHBR score and mutation frequency in tumors. Oncogenic mutations can acquire high frequency not only from cell-autonomous fitness benefits but also from poor mutant peptide presentation, rendering mutations undetectable to immune cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 are supported by citation to the Marty et al. study introducing the PHBR score concept. This represents an important insight into how immune selection shapes the mutational landscape. However, this is based on computational predictions that would benefit from experimental validation of the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "HLA LOH as immune escape mechanism: Tumors with clonal HLA LOH are associated with high neoantigen burden, APOBEC-mediated mutagenesis, and elevated PD-L1-positive immune cells compared to tumors without HLA LOH, suggesting HLA LOH is an immune escape mechanism. Cancer cell subclones with HLA LOH may be positively selected based on CD8+ T cell recognition evasion capability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C103 are supported by citation to the McGranahan et al. study. HLA LOH as an immune escape mechanism is well-established. The association with high neoantigen burden suggests this occurs under immune selection pressure. The interpretation is logical though the specific dynamics of clonal selection require further study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "Single cytokine/chemokine targeting has limited efficacy: A comprehensive survey of clinical trials concluded that, with few exceptions, inhibiting or enhancing a single cytokine or chemokine pathway is unlikely to have sustained activity against advanced-stage cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C104 is supported by citation to a comprehensive review. This represents an important clinical lesson from numerous failed trials. However, the CANTOS results (C60-C64) suggest IL-1\u03b2 may be an exception, and the statement may be too broad given emerging combination therapy approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "Single-cell approaches reveal TME heterogeneity: At single-cell level, gene expression occurs stochastically with genes undergoing bursts and inactivity cycles. Combining whole-exome and transcriptomic data from >1000 ICI-treated patients with single-cell RNA-seq from neoantigen-reactive CD8+ TILs identified CCR5 and CXCL13 as T cell-intrinsic markers of ICI sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 are supported by appropriate citations. The stochastic gene expression concept is well-established. The identification of CCR5 and CXCL13 as ICI sensitivity markers represents an important application of single-cell approaches, though these markers require prospective validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "TMB as FDA-approved biomarker: Meta-analysis showed high TMB (\u226510 mut/Mb) significantly correlated with prolonged PFS in patients receiving PD-L1/PD-1 therapies. Pembrolizumab received FDA approval for adult and pediatric patients with unresectable or metastatic TMB-H \u226510 mut/Mb solid tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 are supported by appropriate citations. The FDA approval represents regulatory validation of TMB as a predictive biomarker. However, the authors appropriately note elsewhere that TMB has limitations including technical challenges, lack of standardized cutoffs, and imperfect predictive value.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Mutation-specific biomarkers for immunotherapy response: NSCLC patients with EGFR mutation showed unfavorable response to PD-L1/PD-1 inhibitors compared to wild-type EGFR, related to low TMB and immunosuppressive TME. HLA-I LOH is a negative predictor of overall survival in non-squamous NSCLC patients treated with ICIs. Combining TMB and HLA-I LOH improved survival prediction, suggesting better patient subcategorization for immunotherapy benefit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 are supported by appropriate citations. The poor ICI response in EGFR-mutant patients is well-documented clinically. The combination of TMB and HLA-I LOH represents a rational approach to improve patient selection, though prospective validation is needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "Spatial TME features predict survival: Lower density of anti-tumor M1-like macrophages and higher proximity of cancer cells to pro-tumor M2-like macrophages are associated with poor survival in NSCLC. Accumulation of Th9 and Th17 cells in lung tumors correlates with poor survival in lung cancer patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 are supported by citations to the authors' own work using multiplex immunofluorescence. The spatial analysis approach is rigorous and the findings are consistent with TME biology. However, these are correlative observations that require validation in independent cohorts and mechanistic studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "Metabolic vulnerabilities in LKB1-mutant tumors: LKB1 loss increases sensitivity to energetic stress triggered by metformin and phenformin. Enhanced dependence on CPS1-associated pyrimidine pool in KRAS/LKB1 mutated cells suggests higher sensitivity to DNA replication stress, which can lead to DNA damage and cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 are supported by appropriate citations. These findings identify potential therapeutic vulnerabilities in LKB1-mutant tumors. The metabolic dependencies are well-characterized, though clinical translation of these vulnerabilities remains to be demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Osimertinib efficacy and PD-L1 relationship: In ADAURA study, adjuvant osimertinib significantly improved disease-free survival in stage IB-IIIA EGFR-mutant NSCLC. Osimertinib can induce PD-L1 degradation and reduce PD-L1 mRNA in vitro, but clinical data on PD-L1 association with osimertinib is contradictory. Brown et al. showed osimertinib efficacy was unaffected by PD-L1 expression, while Hsu et al. reported strong PD-L1 expression associated with poorer prognosis in osimertinib-treated patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C116-C119 present contradictory clinical findings regarding PD-L1's role in osimertinib response. While C116 is well-supported by the ADAURA trial, the conflicting results in C118-C119 highlight uncertainty in this area. The in vitro data (C117) may not reflect complex in vivo dynamics. Further studies are needed to resolve these discrepancies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C120",
+      "C121"
+    ],
+    "result": "EGFR-TKI effects on TME are transient: EGFR-TKIs induce rapid, temporary increase of cytotoxic CD8+ T cells, dendritic cells, and reduction of pro-tumor M2-macrophages in EGFR-driven mouse models. However, most anti-tumor effects gradually diminished with continued treatment while MDSCs consistently became more dominant during tumor development under treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C121 are supported by citation to mouse model studies. The transient nature of EGFR-TKI immune effects and MDSC accumulation provide important insights into resistance mechanisms. However, these are mouse model findings that require validation in human patients receiving EGFR-TKIs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "Macrophage reprogramming as therapeutic strategy: Chemotherapy-resistant KRAS patients have large populations of pro-tumor M2-macrophages supporting immunosuppressive TME phenotype. Re-programming M2-protumor macrophages through Wnt/\u03b2-catenin pathway modulation reduced primary and metastatic lung tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C123 are supported by appropriate citations. The concept of macrophage reprogramming is well-established. The Wnt/\u03b2-catenin modulation approach shows promise in preclinical models, though clinical translation and optimal therapeutic strategies remain to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Evolutionary model of TME-cancer cell co-evolution: In initial tumor growth, TME has tumor-suppressive phenotype with mainly anti-tumor immune cells (M1-like TAMs, CD8+ T cells). During progression, TME reaches steady state with anti-tumor and pro-tumor components in equilibrium. Through evolutionary selection, cancer cell clones with unique genomic landscape and higher fitness reshape TME to enhance pro-tumor components supporting growth and proliferation. Less fit clones are targeted by anti-tumor TME elements and depleted during progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C128 describe a conceptual model illustrated in Figure 1. This evolutionary framework is supported by the broader literature on tumor evolution and immunoediting. The model integrates multiple lines of evidence presented in the review, though it represents a simplified view of complex, dynamic processes.",
+    "result_type": "MAJOR"
+  }
+]

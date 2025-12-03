@@ -1,0 +1,1572 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Lead-OR is an open-source software tool that integrates stereotactic planning, neuroimaging, microelectrode recordings, and high-resolution atlas data for DBS surgery visualization.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, we present a tool that integrates resources from stereotactic planning, neuroimaging, MER, and high-resolution atlas data to create a real-time visualization of the implant trajectory.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The abstract explicitly states the tool's capabilities and components.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "The Lead-OR tool was validated using a retrospective cohort of 52 DBS patients.",
+    "claim_type": "EXPLICIT",
+    "source": "We validate the tool based on a retrospective cohort of DBS patients (N = 52) offline and present single-use cases of the real-time platform.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The abstract states the validation was performed on 52 patients.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "There is general correspondence between features derived from neuroimaging and electrophysiological recordings.",
+    "claim_type": "EXPLICIT",
+    "source": "We show a general correspondence between features derived from neuroimaging and electrophysiological recordings and present examples that demonstrate the functionality of the tool.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The abstract explicitly states this finding from the validation study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "Roughly every fifth DBS patient's surgical plan is altered based on electrophysiological signals at the authors' center.",
+    "claim_type": "EXPLICIT",
+    "source": "While the necessity of the former step has been debated (Aviles-Olmos et al., 2014) and the procedure may lead to slightly increased rates of complications (Zrinzo et al., 2012), the experience of our own high-volume center is that roughly every fifth patient's surgical plan will be slightly altered based on electrophysiological signals, with similar experiences reported by others (Lozano et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The text provides institutional experience data about surgical plan alterations.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "Brain shift during DBS surgery can lead to nonlinear displacement of the brain relative to the skull and stereotactic frame.",
+    "claim_type": "EXPLICIT",
+    "source": "Of specific relevance is the role of brain shift occurring due to air entering the skull during surgery: even with optimal imaging and meticulous surgical planning beforehand, brain shift may lead to nonlinear displacement of the brain relative to the skull and stereotactic frame (Halpern et al., 2008), which can only be monitored intraoperatively (e.g., using the electrophysiological data recorded with microelectrode probes).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The text cites a reference supporting the occurrence of brain shift during surgery.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "The HaGuide system is an FDA and CE-approved machine-learning algorithm for facilitating microelectrode recording monitoring.",
+    "claim_type": "EXPLICIT",
+    "source": "While most centers analyze MERs by visual and auditory inspection from expert neurosurgeons or neurologists, the first FDA and CE-approved machine-learning algorithms that facilitate this monitoring step have recently been introduced, for instance, in the form of the HaGuide system created by the company Alpha Omega Engineering (Nazareth, Israel; Thompson et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The text explicitly states the regulatory approval status of the HaGuide system.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "Lead-OR is implemented as a 3D Slicer extension.",
+    "claim_type": "EXPLICIT",
+    "source": "The tools used in this study are implemented in the form of a 3D Slicer (Slicer) (Fedorov et al., 2012; Kapur et al., 2016) extension (https://github.com/netstim/SlicerNetstim).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section explicitly describes the implementation environment.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "Lead-OR currently supports integration with Brainlab Elements planning software and the NeuroOmega system.",
+    "claim_type": "EXPLICIT",
+    "source": "The software framework is made available as an open-source package (https://github.com/netstim/SlicerNetstim) and currently supports integration with the Brainlab Elements (Brainlab AG, Munich, Germany) planning software and a direct interface to the NeuroOmega system (Alpha Omega Engineering).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The introduction explicitly lists the currently supported commercial systems.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "The Ben-Gun microarray configuration is used with the NeuroOmega setup.",
+    "claim_type": "EXPLICIT",
+    "source": "As mentioned, currently, support for the NeuroOmega setup has been implemented, which uses a Ben-Gun array first introduced by the team of Alim-Louis Benabid (Benazzouz et al., 2002).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section describes the microarray configuration used.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "The stereotactic planning procedure uses anterior commissure, posterior commissure, and a midsagittal point to create the transform between image and frame coordinate systems.",
+    "claim_type": "EXPLICIT",
+    "source": "Specifically, the anterior commissure (AC) and posterior commissure (PC), as well as a midsagittal point (MS), are used to create the transform (implemented using the fiducial registration module available within Slicer).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section describes the fiducial points used for co-registration.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Lead-OR uses nuclei from the DISTAL and MNI PD 25 histology atlases defined in MNI space.",
+    "claim_type": "EXPLICIT",
+    "source": "For the present examples within the article, we used nuclei from the DISTAL (Ewert et al., 2018) and MNI PD 25 histology atlases (Xiao et al., 2017) that were defined in MNI space (ICBM 2009b Nonlinear Asymmetric, Fonov et al., 2009).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section specifies the atlas resources used.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "A multispectral four-stage normalization step using the symmetric normalization (SyN) transformation model was used to calculate the initial deformation field.",
+    "claim_type": "EXPLICIT",
+    "source": "Namely, an initial deformation field was calculated via a multispectral four-stage normalization step using the symmetric normalization (SyN) transformation model implemented within Advanced Normalization Tools (ANTs; http://stnava.github.io/ANTs/; Avants et al., 2008).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section describes the normalization algorithm used.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "WarpDrive is a novel manual refinement method for improving automated normalization of subcortical structures.",
+    "claim_type": "EXPLICIT",
+    "source": "To account for this, we built on the long-standing methods development within Lead-DBS (Horn and K\u00fchn, 2015; Horn et al., 2019; Ewert et al., 2019; Vogel et al., 2020; Edlow et al., 2019) but drastically extended the procedure with a novel manual refinement method, termed WarpDrive.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section introduces WarpDrive as a novel tool.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "WarpDrive allows users to manually refine displacement fields using point-to-point and line-to-line fiducials as well as a smudge tool.",
+    "claim_type": "EXPLICIT",
+    "source": "Using WarpDrive, an experienced user can recognize such mismatches included in the automated normalization and manually refine the displacement field using point-to-point and line-to-line fiducials as well as a smudge tool.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section describes the functionality of WarpDrive.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "The NeuroOmega C++ SDK was included as part of a Slicer loadable module for real-time implementation.",
+    "claim_type": "EXPLICIT",
+    "source": "To make this possible, we included the NeuroOmega C++ SDK as part of a Slicer loadable module.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section describes the technical implementation for real-time functionality.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "The NRMS value is computed as described in Zaidel et al., 2009.",
+    "claim_type": "EXPLICIT",
+    "source": "The first is the signal's normalized root mean square (NRMS) value, which is computed as described in Zaidel et al., 2009.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section cites the source for the NRMS computation method.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "Spike analysis is implemented using the WaveClus automatic pipeline.",
+    "claim_type": "EXPLICIT",
+    "source": "The second processing pipeline is based on spike analysis. This is implemented by running the WaveClus (Chaure et al., 2018) automatic pipeline with negative threshold on the recorded files once the drive moves to the next position.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section describes the spike analysis implementation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "Spike clusters with less than 100 spikes, or in which 10% of inter spike intervals are below 3 ms, or in which signal-to-noise ratio is less than 1.5 are discarded.",
+    "claim_type": "EXPLICIT",
+    "source": "Clusters with less than 100 spikes or in which 10% of the inter spike intervals (ISIs) are below 3 ms or in which signal-to-noise ratio (SNR) is less than 1.5 are discarded.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section specifies the criteria for discarding spike clusters.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "The simplified method proposed by Dembek et al., 2017 is used to estimate the volume of tissue activated (VTA).",
+    "claim_type": "EXPLICIT",
+    "source": "To estimate the VTA, we use the simplified method proposed by Dembek et al., 2017, which defines the radius of a sphere based on stimulation amplitude and pulse width.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section cites the VTA estimation method used.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "The NeuroOmega System was used with 2\u20135 microelectrodes in orthogonal (0\u00b0) or rotated (45\u00b0) Ben-Gun configuration.",
+    "claim_type": "EXPLICIT",
+    "source": "The NeuroOmega System (Alpha Omega Engineering) was used with 2\u20135 microelectrodes in orthogonal (0\u00b0) or rotated (45\u00b0) Ben-Gun configuration to acquire MERs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section describes the recording configuration used during surgery.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "Microelectrode recordings were carried out from 10 mm above to 4 mm below the target with step sizes between 0.2 mm and 0.5 mm.",
+    "claim_type": "EXPLICIT",
+    "source": "Recordings were carried out from 10 mm above to 4 mm below the target with step sizes between 0.2 mm and 0.5 mm (with some exceptions common to clinical practice).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section describes the recording protocol.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "4 patients were discarded based on poor imaging quality and 16 based on poor electrophysiology signals.",
+    "claim_type": "EXPLICIT",
+    "source": "Of the 52 patients included in this study, 4 were discarded based on poor imaging quality and 16 based on poor electrophysiology signals (both determined by visual inspection).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section describes the exclusion criteria applied to the cohort.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "The final cohort analyzed consisted of 32 patients (56 hemispheres) with a total of 236 trajectories.",
+    "claim_type": "EXPLICIT",
+    "source": "With these considerations, we analyzed a final cohort of 32 patients (56 hemispheres) with a total of 236 trajectories.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section specifies the final sample size after exclusions.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "Brain shift correction was performed using postoperative CT data through the Lead-DBS pipeline.",
+    "claim_type": "EXPLICIT",
+    "source": "Using the Lead-DBS pipeline, we carried out brain shift correction using postoperative CT data (Horn et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section describes the brain shift correction procedure.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "Recorded activity from inside the imaging-defined STN was significantly higher than recordings from outside of it.",
+    "claim_type": "EXPLICIT",
+    "source": "Comparing the NRMS from the bottom 20% (outside of the STN) to the top 20% revealed an anatomical region with significant differences (p<0.01) within the imaging-defined STN boundaries (defined as the median of the top 20% STN boundaries). In other words, the recorded activity from inside this part of the STN was significantly higher than the ones recorded outside of it.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The results section presents statistical comparison showing significant differences.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "The cluster density volume showed 95% overlap with the STN region at a 50% cluster density threshold.",
+    "claim_type": "EXPLICIT",
+    "source": "The cluster density volume in MNI space also showed a general agreement with the imaging-derived STN: when thresholding the volume based on increasing density values, the overlap with the STN region was higher (95% overlap at a 50% cluster density threshold; Figure 5).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The results section presents quantitative overlap analysis with reference to Figure 5.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "Most clinical active contact coordinates lie inside the STN and coincide with high-activity regions depicted by microelectrode recordings.",
+    "claim_type": "EXPLICIT",
+    "source": "In Figure 5\u2014figure supplement 3, we show clinical active contact coordinates with respect to the results of the group analysis as shown in Figure 5. Most of the coordinates rely inside the STN and coincide with high-activity regions as depicted by the microelectrode recordings.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The results section describes the relationship between active contacts and MER activity with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "Lead-OR is not approved by any regulatory authorities and is intended for purely research-driven purposes under IRB approval.",
+    "claim_type": "EXPLICIT",
+    "source": "The tools, methods, and software described here are not approved by any regulatory authorities and are not intended to assist in making clinical decisions. Rather, we present them for use for purely research-driven purposes under proper IRB approval in study contexts.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The discussion explicitly states the regulatory status and intended use of the tool.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "The agreement between imaging and electrophysiology data is not 100%.",
+    "claim_type": "EXPLICIT",
+    "source": "However, as can be seen in Figure 5, the agreement is not 100%. Namely, we can observe the presence of activity and high neuronal density in some locations outside of our image-derived model of the STN and vice versa (we observe no activity within voxels that form part of the STN).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The discussion acknowledges limitations in the correspondence between modalities with reference to data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "Some discrepancies between imaging and electrophysiology are associated with the occurrence of brain shift.",
+    "claim_type": "EXPLICIT",
+    "source": "In our brain shift analysis, we could demonstrate that some of these discrepancies are associated with the occurrence of brain shift.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The discussion interprets the brain shift analysis results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "The cross-correlation-derived features may be used as indicators to quantify discrepancies between MER and imaging data in a real-time setting.",
+    "claim_type": "EXPLICIT",
+    "source": "Specifically, the cross-correlation-derived features may be used as indicators (provided by the program) to quantify discrepancies between MER and imaging data in a real-time setting.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The discussion proposes a potential application of the analysis method.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "Multispectral sets of preoperative images that include specialized sequences optimized for the basal ganglia should ideally be used for optimal registration accuracy.",
+    "claim_type": "EXPLICIT",
+    "source": "Ideally, multispectral sets of preoperative images that include specialized sequences optimized for the basal ganglia should be used (Krauss et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The discussion provides recommendations for optimal imaging with citation support.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "Anesthesia and wakefulness of patients have an impact on recordable neurophysiological activity patterns.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, anesthesia and wakefulness of patients have an impact on the recordable neurophysiological activity patterns and should be considered when making assumptions about the relationship between neuroanatomy and neurophysiology.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The discussion acknowledges a limitation related to patient state during recording.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "The J\u00fclich group has announced an upcoming version of the BigBrain dataset that will be available in 1 \u00b5m resolution.",
+    "claim_type": "EXPLICIT",
+    "source": "For instance, the J\u00fclich group has announced an upcoming version of the BigBrain dataset (Figure 7, Figure 4\u2014video 1) that will be available in 1 \u00b5m resolution (Horn, 2021).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The discussion cites a future development in atlas resources.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "A recent normative diffusion-MRI connectome available in 760 \u00b5m resolution was based on a 9-hr-long scan of a living human brain.",
+    "claim_type": "EXPLICIT",
+    "source": "A recent normative diffusion-MRI connectome available in 760 \u00b5m resolution was based on a 9-hr-long scan of a living human brain (Wang et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The discussion cites a recent high-resolution connectome resource.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "Lead-OR is based on Slicer's world-coordinate system (RAS).",
+    "claim_type": "EXPLICIT",
+    "source": "Lead-OR is based on Slicer's world-coordinate system (RAS).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section describes the coordinate system used.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "A linear transform is used to match the Head-Ring center and positive axes to the origin of the world-coordinate system.",
+    "claim_type": "EXPLICIT",
+    "source": "We use a linear transform to match the Head-Ring center and positive axes to the origin of this world-coordinate system.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section describes the transformation approach.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "The planned central trajectory is defined based on target coordinates, mounting type, and ring and arc angles.",
+    "claim_type": "EXPLICIT",
+    "source": "The planned central trajectory is then defined based on target coordinates, mounting type, and ring and arc angles.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section describes how the central trajectory is defined.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "Other trajectories are defined relative to the central one, following the configuration of the Ben-Gun microarray.",
+    "claim_type": "EXPLICIT",
+    "source": "The other trajectories are defined relative to the central one, following the configuration of the Ben-Gun microarray.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section describes the trajectory configuration.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "Up to five trajectories are currently supported by the Lead-OR software.",
+    "claim_type": "EXPLICIT",
+    "source": "Up to five trajectories are currently supported by the software.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section specifies the number of trajectories supported.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "The distance to the target is controlled by the NeuroOmega system or can be set manually within the tool.",
+    "claim_type": "EXPLICIT",
+    "source": "In our current setup, the distance to the target is controlled by the NeuroOmega system, accessed with its Software Development Kit (SDK) \u2013 but can alternatively be set manually within the tool itself.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section describes two options for controlling distance to target.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "Histological sections from the BigBrain atlas were imported into Lead-OR.",
+    "claim_type": "EXPLICIT",
+    "source": "Similarly, we imported histological sections from the BigBrain atlas (Amunts et al., 2013) and fiber tract definitions provided by the holographic basal ganglia pathway atlas (Petersen et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section lists the atlas resources imported.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "Fiber tract definitions from the holographic basal ganglia pathway atlas were imported into Lead-OR.",
+    "claim_type": "EXPLICIT",
+    "source": "Similarly, we imported histological sections from the BigBrain atlas (Amunts et al., 2013) and fiber tract definitions provided by the holographic basal ganglia pathway atlas (Petersen et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section lists the atlas resources imported.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "The 'effective: low variance + subcortical refinement' preset in Lead-DBS has been optimized for normalization of subcortical structures.",
+    "claim_type": "EXPLICIT",
+    "source": "This was implemented using the 'effective: low variance + subcortical refinement' preset defined in Lead-DBS, which has been optimized for normalization of subcortical structures (Horn et al., 2019) and has shown to yield accurate segmentations of subcortical nuclei that rival the ones carried out manually by experts (Ewert et al., 2019; Vogel et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section describes the normalization preset with citation support for its validation.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "Automated normalization using the Lead-DBS preset has shown to yield accurate segmentations of subcortical nuclei that rival manual expert segmentations.",
+    "claim_type": "EXPLICIT",
+    "source": "This was implemented using the 'effective: low variance + subcortical refinement' preset defined in Lead-DBS, which has been optimized for normalization of subcortical structures (Horn et al., 2019) and has shown to yield accurate segmentations of subcortical nuclei that rival the ones carried out manually by experts (Ewert et al., 2019; Vogel et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section cites validation studies showing accuracy comparable to expert segmentations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "Accurate automated registration of basal ganglia nuclei presents a challenge to intensity-based registration methods given their low contrast between regions.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, accurate automated registration of the basal ganglia nuclei presents a challenge to intensity-based registration methods given their low contrast between regions (Ewert et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section explains a technical challenge with citation support.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "Manually entered fiducials in WarpDrive are fed into the Plastimatch software.",
+    "claim_type": "EXPLICIT",
+    "source": "Manually entered fiducials are fed into the Plastimatch software (Sharp et al., 2010) (accessed as a command line module from within Slicer).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section describes the technical implementation of WarpDrive.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "Lead-OR provides live data about how distant the microelectrodes are to the target through the NeuroOmega interface.",
+    "claim_type": "EXPLICIT",
+    "source": "The interface to the NeuroOmega device provides live data about how distant the microelectrodes are to the target and also streams out electrophysiological recordings made in a real-time manner.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section describes the real-time capabilities of the NeuroOmega interface.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "Test stimulations can be visualized in Lead-OR, including a function for live-tractography visualization estimating 'activated' or 'modulated' tracts.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, test stimulations can be visualized, including a function for live-tractography visualization estimating 'activated' or 'modulated' tracts.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section describes the stimulation visualization capabilities.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "The computation of features from recordings takes a few seconds depending on available hardware.",
+    "claim_type": "EXPLICIT",
+    "source": "The computation of features is continuously executed for each position of the microdrive, updating the recording stream at each time point. This process takes a few seconds (depending on available hardware), and the visualization is then updated.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section describes the computational performance.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "NRMS values along the trajectory are divided by the median of the first five stable steps to obtain a normalized measure.",
+    "claim_type": "EXPLICIT",
+    "source": "To obtain a normalized measure, the values along the trajectory are divided by the median of the first five stable steps.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section describes the normalization procedure for NRMS.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "Lead-OR projects a tube along the trajectory with varying radius and color to visualize NRMS results in space.",
+    "claim_type": "EXPLICIT",
+    "source": "To visualize results in space, Lead-OR projects a tube along the trajectory with varying radius and color \u2013 both redundantly representing NRMS magnitude.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section describes the visualization approach for NRMS.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "Signal-to-noise ratio (SNR) for spike clusters is computed as described in Joshua et al., 2007 using the residual method.",
+    "claim_type": "EXPLICIT",
+    "source": "SNR is computed as described in Joshua et al., 2007 using the residual method.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section cites the method for SNR computation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "The recordings are assumed to capture single-unit activity (SUA) instead of multiunit activity (MUA).",
+    "claim_type": "EXPLICIT",
+    "source": "We assume the recordings capture singe-unit activity (SUA) instead of multiunit activity (MUA), and thus each recording can represent none or one cluster of spikes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section states an assumption about the nature of recorded activity.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "Spike clusters are represented as fiducials placed in the position they were detected.",
+    "claim_type": "EXPLICIT",
+    "source": "Spike clusters are represented as fiducials placed in the position they were detected.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section describes the visualization of spike clusters.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "Fiber analysis was carried out by accessing the logic of the SlicerDMRI module.",
+    "claim_type": "EXPLICIT",
+    "source": "Fiber analysis was carried out by accessing the logic of the SlicerDMRI module (Norton et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section describes the fiber analysis implementation with citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "Obtaining preoperative diffusion MRI data is not part of clinical practice at all DBS centers.",
+    "claim_type": "EXPLICIT",
+    "source": "Obtaining preoperative diffusion MRI data is not part of clinical practice at all DBS centers.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section states a limitation in clinical practice.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "Normative fibers defined in template space and warped into patient space can be used as an alternative when patient-specific dMRI data is not available.",
+    "claim_type": "EXPLICIT",
+    "source": "In cases where patient-specific dMRI data is not available, an alternative is to use normative fibers that are defined in template space and warped into patient space (similar to other types of atlas data).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section describes an alternative approach for fiber tractography.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "Using manually curated normative datasets can come with advantages such as the absence of false-positive fibers.",
+    "claim_type": "EXPLICIT",
+    "source": "This process can at times even come with advantages, for example, the absence of false-positive fibers when using manually curated normative datasets (Petersen et al., 2019; for a more thorough discussion, see Horn and Fox, 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section discusses advantages of normative datasets with citations.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "Further studies are needed to titrate the k2 value on a group level and validate the stimulation module of Lead-OR.",
+    "claim_type": "EXPLICIT",
+    "source": "Currently, this part of this article should be seen as exploratory as an example of feasibility. Data to validate the approach on a larger number of patients beyond the present case was lacking. Further studies are needed to titrate the k2 value on a group level and validate the stimulation module of Lead-OR in general.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section acknowledges limitations and need for future validation.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "Surgery was performed either awake or under general anesthesia.",
+    "claim_type": "EXPLICIT",
+    "source": "Surgery was either performed awake or under general anesthesia.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section describes the surgical conditions.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "When surgery was performed under general anesthesia, the depth of narcosis was reduced before MERs to reduce potential effects of anesthetic drugs.",
+    "claim_type": "EXPLICIT",
+    "source": "In case of the latter, the depth of narcosis was reduced before MERs to reduce potential effects of anesthetic drugs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section describes the anesthesia protocol.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "Neuroprobe Sonus non-shielded microelectrodes were used as micro-/macroelectrodes.",
+    "claim_type": "EXPLICIT",
+    "source": "Neuroprobe Sonus non-shielded microelectrodes (Alpha Omega Engineering) were used as micro-/macroelectrodes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section specifies the electrode type used.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "Stimulations were done at increasing amplitude steps of 0.5 mA until identifying permanent side effects.",
+    "claim_type": "EXPLICIT",
+    "source": "Stimulations were done at increasing amplitude steps of 0.5 mA until identifying permanent side effects.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section describes the stimulation protocol.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "Patients who underwent general anesthesia received additional EMG using needle electrodes to evaluate motor unit activity of eight muscles.",
+    "claim_type": "EXPLICIT",
+    "source": "Patients who underwent general anesthesia received additional EMG using needle electrodes to evaluate motor unit activity of eight muscles as indicator for the activation of corticobulbar and corticospinal tracts.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section describes the EMG monitoring protocol.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "The surgical team decided upon the optimal depth and trajectory for permanent electrode implantation based on imaging, electrophysiological, and clinical findings.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, based on imaging, electrophysiological, and clinical findings, the surgical team decided upon the optimal depth and trajectory for permanent electrode implantation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section describes the decision-making process during surgery.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "Four left and four right hemispheres were discarded based on low quality of electrophysiology data.",
+    "claim_type": "EXPLICIT",
+    "source": "Additionally, taking the same considerations, four left and four right hemispheres were also discarded based on a low quality of electrophysiology data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section describes additional exclusions at the hemisphere level.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "MER segments were discarded if they were contaminated by artifacts or when their recording length was less than 4 s.",
+    "claim_type": "EXPLICIT",
+    "source": "Segments were discarded if they were contaminated by artifacts or when their recording length was less than 4 s.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section specifies quality control criteria for recordings.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "Pre- and postoperative imaging data were co-registered and normalized using Lead-DBS followed by visual inspection and refinement using WarpDrive if necessary.",
+    "claim_type": "EXPLICIT",
+    "source": "Pre- and postoperative imaging data were co-registered and normalized using Lead-DBS (Horn et al., 2019) followed by visual inspection and, if necessary, refinement using WarpDrive.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section describes the imaging processing pipeline.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "NRMS values were resampled on a linear space with 0.1 mm distance to target resolution.",
+    "claim_type": "EXPLICIT",
+    "source": "We computed the NRMS of all trajectories and resampled them on a linear space with 0.1 mm distance to target resolution.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section describes the data processing for NRMS.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "The median of displacements was taken as the amount of brain shift for each trajectory.",
+    "claim_type": "EXPLICIT",
+    "source": "For each trajectory, each recording position was displaced using the brain shift correction transform. We took the median of displacements as the amount of brain shift for each trajectory.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section describes how brain shift was quantified.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "The most recently available clinical stimulation settings were retrieved from all 32 patients, with visits ranging from 3 to 44 months after surgery.",
+    "claim_type": "EXPLICIT",
+    "source": "The most recently available clinical stimulation settings were retrieved from all 32 patients (visits ranging from 3 to 44 months after surgery).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section describes the clinical follow-up data collection.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "DBS electrodes were reconstructed based on the standard Lead-DBS pipeline.",
+    "claim_type": "EXPLICIT",
+    "source": "We reconstructed DBS electrodes based on the standard Lead-DBS pipeline and denoted the coordinate of the active contact (in case of multiple active contacts, their locations were averaged).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section describes the electrode reconstruction method.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "A reference point in each trajectory was computed as the nearest point to the STN target coordinates in MNI space from Caire et al., 2013.",
+    "claim_type": "EXPLICIT",
+    "source": "We then took a reference point in each trajectory computed as the nearest point to the STN target coordinates in MNI space from Caire et al., 2013.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section describes the reference point definition with citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "All spike clusters were mapped to the left hemisphere of the MNI space with right hemisphere coordinates nonlinearly flipped.",
+    "claim_type": "EXPLICIT",
+    "source": "All spike clusters were mapped to the left hemisphere of the MNI space (right hemisphere coordinates were nonlinearly flipped).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section describes the spatial normalization of spike data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "A cluster density volume was created with 0.22 mm isotropic resolution where each voxel represented the number of clusters detected divided by the number of segment recordings within 1 mm of the voxel's center.",
+    "claim_type": "EXPLICIT",
+    "source": "Then, we created an image of 0.22 mm isotropic resolution where each voxel represented the number of clusters detected divided by the number of segment recordings within 1 mm of the voxel's center.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section describes the creation of the cluster density volume.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "NRMS values and STN distances for each trajectory were transformed with the inverse tangent function resulting in similar distributions.",
+    "claim_type": "EXPLICIT",
+    "source": "Additionally, NRMS values and STN distances for each trajectory were transformed with the inverse tangent function resulting in similar distributions of the two.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section describes a data transformation step.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "Cross-correlation of NRMS and STN distance signals along each trajectory resulted in a maximum cross-correlation value and the lag at which this maximum occurred.",
+    "claim_type": "EXPLICIT",
+    "source": "Subsequent cross-correlation of these two signals along each trajectory resulted in a maximum cross-correlation value and the lag (displacement) at which this maximum occurred (Figure 5\u2014source code 2).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section describes the cross-correlation analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "Trajectories were sorted according to their maximum cross-correlation and split in half, retaining trajectories in close proximity to the STN with electrophysiological activity.",
+    "claim_type": "EXPLICIT",
+    "source": "In the next step, we sorted the trajectories according to their maximum cross-correlation and split the data in half, retaining the trajectories that were in close proximity to the STN and showed electrophysiological activity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section describes the data filtering approach.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "The high-lag group was defined by taking trajectories with lag values above 1 standard deviation of the lags.",
+    "claim_type": "EXPLICIT",
+    "source": "The high-lag group was defined by taking trajectories with lag values above 1 standard deviation of the lags.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section defines the high-lag group criterion.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "The low-lag group was composed of the same number of trajectories as the high-lag group, taken from the data sorted according to the lag.",
+    "claim_type": "EXPLICIT",
+    "source": "The low-lag group is composed of the same number of trajectories taken from the data sorted according to the lag.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section describes the composition of the low-lag group.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "Data were compared using nonparametric Wilcoxon's signed-rank test and multiple comparisons were corrected using false discovery rate (FDR).",
+    "claim_type": "EXPLICIT",
+    "source": "Data were compared using nonparametric Wilcoxon's signed-rank test and multiple comparisons were corrected using false discovery rate (FDR) (Benjamini et al., 2006).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The results section describes the statistical methods used.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "Lead-OR should be seen as a satellite application to existing intraoperative electrophysiology software tools, not an attempt to replace them.",
+    "claim_type": "EXPLICIT",
+    "source": "Lead-OR should be seen as a satellite application to existing intraoperative electrophysiology software tools, not an attempt to replace them.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The discussion clarifies the intended role of the tool.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "The tool is intended to run in parallel to existing software either on a secondary machine or on the same computer.",
+    "claim_type": "EXPLICIT",
+    "source": "The aim of our application is to augment these existing tools by a projection of recorded signals to anatomical space. It is intended to run in parallel to existing software (either on a secondary machine or on the same computer).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The discussion describes the intended deployment of the tool.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "Thorough inspection and analysis of electrophysiological signals will remain unchanged for users of existing software while Lead-OR adds additional insights into anatomical origins of recorded signals.",
+    "claim_type": "EXPLICIT",
+    "source": "Hence, thorough inspection and analysis of electrophysiological signals will remain unchanged for users of existing software, while our tool could hopefully add additional insights into the anatomical origins of recorded signals.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The discussion explains how the tool complements existing workflows.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "Cardioballistic artifacts and gradual displacement of brain tissue leading to attenuation of spike amplitudes are recognized problems when applying spike-sorting algorithms.",
+    "claim_type": "EXPLICIT",
+    "source": "Second, cardioballistic artifacts, as well as gradual displacement of brain tissue leading to attenuation of spike amplitudes, are recognized problems when applying spike-sorting algorithms in general.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The discussion acknowledges known technical challenges in spike sorting.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "Durations of recordings and distances in recording steps when advancing towards the target were not exactly consistent throughout the whole dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "First, as the data was collected in retrospective fashion, durations of recordings and distances in recording steps when advancing towards the target were not exactly consistent throughout the whole dataset.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The discussion acknowledges a limitation in data consistency.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "Signal quality was sufficient for expert-based decision-making at the authors' center.",
+    "claim_type": "EXPLICIT",
+    "source": "However, we operate in an experienced high-volume DBS center where surgical decisions are made based on the data used here. In other words, signal quality was sufficient for expert-based decision-making.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The discussion provides context about the clinical utility of the data quality.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "The main aim of the article was to demonstrate the use and feasibility of the tool rather than investigate specific neuroscientific questions.",
+    "claim_type": "EXPLICIT",
+    "source": "In general, however, the main aim of this article was to demonstrate the use and feasibility of the tool, while dedicated analyses investigating specific neuroscientific questions should take aforementioned nuances into consideration further.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The discussion clarifies the primary objective of the study.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "All processed data and code needed to reproduce the main findings are made openly available in deidentified form.",
+    "claim_type": "EXPLICIT",
+    "source": "All processed data and code needed to reproduce the main findings of the study are made openly available in deidentified form (see figure legends). This can be found in https://github.com/simonoxen/Lead-OR_Supplementary, (copy archived at swh:1:rev:c7b8661f0587db992e7eba978d61da8cd7cdc88b; Oxenford, 2022a) and attached to the publication.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The data availability section states the open availability of processed data and code.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "Raw patient data cannot be publicly shared due to data privacy regulations.",
+    "claim_type": "EXPLICIT",
+    "source": "Due to data privacy regulations of patient data, raw data cannot be publicly shared.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The data availability section explains restrictions on raw data sharing.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "Raw data can be made available upon reasonable request after setting up a data-sharing agreement between Charit\u00e9 and the inquiring party.",
+    "claim_type": "EXPLICIT",
+    "source": "Upon reasonable request to the corresponding author, data can be made available after setting up a data-sharing agreement between our host institution (Charit\u00e9 \u2013 Universit\u00e4tsmedizin Berlin) and the inquiring party.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The data availability section describes the process for accessing raw data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "The collection and analysis of all patient data were approved by the local ethics committee of Charit\u00e9 \u2013 Universit\u00e4tsmedizin Berlin (master vote EA2/145/21).",
+    "claim_type": "EXPLICIT",
+    "source": "The collection and analysis of all patient data used for this article were approved by the local ethics committee of Charit\u00e9 \u2013 Universit\u00e4tsmedizin Berlin (master vote EA2/145/21).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The ethics statement provides the IRB approval information.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "No explicit patient consent to analyze and publish was obtained or necessary following local guidelines in Berlin/Brandenburg and NIH guidelines.",
+    "claim_type": "EXPLICIT",
+    "source": "All data were analyzed retrospectively and obtained in deidentified form from Medical Records of Charit\u00e9. Hence, following local guidelines in Berlin/Brandenburg as well as NIH guidelines for human subjects research, no explicit patient consent to analyze and publish was obtained/necessary.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The ethics statement explains why patient consent was not required.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "Lead-OR is intended for purely academic research use and does not have any form of government body regulatory approval.",
+    "claim_type": "EXPLICIT",
+    "source": "Lead-OR is intended for purely academic research use and does not have any form of government body regulatory approval.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The ethics statement explicitly states the regulatory status of the tool.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "Any use of Lead-OR is strictly limited to Institutional Review Board (IRB)-approved research studies at individual academic institutions.",
+    "claim_type": "EXPLICIT",
+    "source": "As such, any use of Lead-OR is strictly limited to Institutional Review Board (IRB)-approved research studies at individual academic institutions, while legal frameworks and practices may differ from country to country.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The ethics statement specifies the permitted use cases for the tool.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C105",
+    "claim": "The necessity of microelectrode recordings during DBS surgery has been debated.",
+    "claim_type": "EXPLICIT",
+    "source": "While the necessity of the former step has been debated (Aviles-Olmos et al., 2014) and the procedure may lead to slightly increased rates of complications (Zrinzo et al., 2012), the experience of our own high-volume center is that roughly every fifth patient's surgical plan will be slightly altered based on electrophysiological signals, with similar experiences reported by others (Lozano et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The introduction cites literature discussing debate about MER necessity.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C106",
+    "claim": "Microelectrode recording procedures may lead to slightly increased rates of complications.",
+    "claim_type": "EXPLICIT",
+    "source": "While the necessity of the former step has been debated (Aviles-Olmos et al., 2014) and the procedure may lead to slightly increased rates of complications (Zrinzo et al., 2012), the experience of our own high-volume center is that roughly every fifth patient's surgical plan will be slightly altered based on electrophysiological signals, with similar experiences reported by others (Lozano et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The introduction cites literature about complication rates associated with MER.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C107",
+    "claim": "Kr\u00fcger, 2020 introduced the concept of navigated DBS surgery showing that visual feedback of microelectrode position can be helpful.",
+    "claim_type": "EXPLICIT",
+    "source": "To account for this, Kr\u00fcger, 2020 introduced the concept of navigated DBS surgery, showing that a visual feedback of the microelectrode position can be helpful to mentally envision the ongoing 3D scene.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The introduction cites prior work on navigated DBS surgery.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C108",
+    "claim": "Reconstructions of DBS target regions based on elaborate MRI sequences have become increasingly precise.",
+    "claim_type": "EXPLICIT",
+    "source": "In parallel, reconstructions of DBS target regions based on elaborate MRI sequences have become increasingly precise (Horn, 2019; Krauss et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The introduction cites literature about improvements in MRI-based target reconstruction.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C109",
+    "claim": "Specialized MRI sequences have been introduced to maximize visibility and boundary definitions of pallidal, thalamic, and subthalamic targets.",
+    "claim_type": "EXPLICIT",
+    "source": "Specialized MRI sequences have been introduced to maximize visibility and boundary definitions of pallidal, thalamic (Tourdias et al., 2014; Sudhyadhom et al., 2009; Vassal et al., 2012), and subthalamic (Santin et al., 2017; Wang and Liu, 2015) targets.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The introduction cites literature about specialized MRI sequences for different targets.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C110",
+    "claim": "Modern reconstruction pipelines can reconstruct the STN and GPi with a precision that rivals manual expert segmentations when using standard T1 and T2 sequences.",
+    "claim_type": "EXPLICIT",
+    "source": "But even when relying on a set of standard sequences (e.g., T1 and T2), modern reconstruction pipelines have the capability to reconstruct the subthalamic nucleus (STN) and internal segment of the globus pallidus (GPi) with a precision that rivals manual expert segmentations (Ewert et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The introduction cites validation of automated reconstruction methods.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C111",
+    "claim": "These reconstruction methods have made it possible to transform 2D representations of stereotactic imaging slices into realistic and meaningful 3D models.",
+    "claim_type": "EXPLICIT",
+    "source": "Over recent years, these methods have made it possible to transform the 2D representations of stereotactic imaging slices into 3D models that are not only graphically appealing but indeed realistic and meaningful (Horn and K\u00fchn, 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The introduction cites work on 3D visualization of DBS targets.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C112",
+    "claim": "These tools have made it possible to accurately register atlas data into the patient-specific model.",
+    "claim_type": "EXPLICIT",
+    "source": "As a by-product, these tools have made it possible to accurately register atlas data into the patient-specific model.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The introduction states a capability enabled by reconstruction methods.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C113",
+    "claim": "Atlas data can be based on histology, postmortem MRI, or expert anatomical knowledge aggregated in three-dimensional fashion.",
+    "claim_type": "EXPLICIT",
+    "source": "With atlas data, here, we generally refer to an array of ultra-high-resolution imaging resources that could be based on histology (Ilinsky et al., 2018; Ewert et al., 2018; Amunts et al., 2013), postmortem MRI (Edlow et al., 2019), or even expert anatomical knowledge aggregated in three-dimensional fashion (Petersen et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The introduction defines types of atlas data with citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C114",
+    "claim": "Atlas data can represent optimal stimulation sites defined on a group level in the form of probabilistic sweet spot targets.",
+    "claim_type": "EXPLICIT",
+    "source": "Similarly, atlas data could represent optimal stimulation sites defined on a group level, for instance, in the form of probabilistic sweet spot targets (Dembek et al., 2019; Boutet et al., 2021; Elias et al., 2021; Horn et al., 2017) or tractography-defined DBS target atlases (Li et al., 2020; Treu et al., 2020; Al-Fatly et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The introduction cites literature on probabilistic target definitions.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C115",
+    "claim": "Atlas data can represent tractography-defined DBS target atlases.",
+    "claim_type": "EXPLICIT",
+    "source": "Similarly, atlas data could represent optimal stimulation sites defined on a group level, for instance, in the form of probabilistic sweet spot targets (Dembek et al., 2019; Boutet et al., 2021; Elias et al., 2021; Horn et al., 2017) or tractography-defined DBS target atlases (Li et al., 2020; Treu et al., 2020; Al-Fatly et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The introduction cites literature on tractography-based target definitions.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C116",
+    "claim": "Lead-OR builds on methods for postoperative electrode localization established within Lead-DBS software.",
+    "claim_type": "EXPLICIT",
+    "source": "Second, we port our methodology for postoperative electrode localization established within Lead-DBS software (https://www.lead-dbs.org; Horn and K\u00fchn, 2015) to the pre- and intraoperative realm, that is, the one of stereotactic planning, MERs, and intraoperative testing.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The introduction describes the methodological foundation of Lead-OR.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C117",
+    "claim": "Lead-OR incorporates patient-specific imaging, stereotactic planning information, real-time microelectrode localization, MER feature extraction, and high-resolution atlas imaging data into a live visualization scene.",
+    "claim_type": "EXPLICIT",
+    "source": "To achieve this, we present and validate a novel unified software framework termed Lead-OR that incorporates the following resources into a live visualization scene: (1) patient-specific imaging, (2) stereotactic planning information, (3) real-time microelectrode localization, (4) MER feature extraction, and (5) high-resolution atlas imaging data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The introduction lists the components integrated into Lead-OR.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C118",
+    "claim": "The tool includes the possibility to visualize test stimulations and real-time fiber tractography.",
+    "claim_type": "EXPLICIT",
+    "source": "Beyond this feature, the tool also includes the possibility to visualize test stimulations and real-time fiber tractography.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The introduction describes additional capabilities of the tool.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C119",
+    "claim": "Further integrations with other systems beyond Brainlab Elements and NeuroOmega are planned in the future.",
+    "claim_type": "EXPLICIT",
+    "source": "The software framework is made available as an open-source package (https://github.com/netstim/SlicerNetstim) and currently supports integration with the Brainlab Elements (Brainlab AG, Munich, Germany) planning software and a direct interface to the NeuroOmega system (Alpha Omega Engineering). Further integrations with other systems are planned in the future.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The introduction states plans for future development.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C120",
+    "claim": "Interfacing to similar systems as the NeuroOmega device will be possible given the open-source nature of the tool.",
+    "claim_type": "EXPLICIT",
+    "source": "Interfacing to similar systems as the NeuroOmega device will be possible given the open-source nature of our tool and creating such interfaces with other systems is in our interest for the future.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section discusses future extensibility of the tool.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C121",
+    "claim": "Support for alternative planning tools to Brainlab Elements is planned for the future.",
+    "claim_type": "EXPLICIT",
+    "source": "Currently, an interface with the Brainlab Elements (Brainlab AG) stereotactic planning software is implemented (via PDF export in Elements and automated import in Lead-OR). Again, support for alternative planning tools is planned for the future.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The methods section states plans for supporting additional planning software.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C122",
+    "claim": "The Ben-Gun configuration shows additional posterolateral and anteromedial trajectories, 2 mm apart from the central one.",
+    "claim_type": "EXPLICIT",
+    "source": "The Ben-Gun configuration presented in the figure shows additional posterolateral and anteromedial trajectories, 2 mm apart from the central one.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Figure 1 caption describes the Ben-Gun configuration geometry.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C123",
+    "claim": "Relevant subcortical nuclei have been warped to patient space via a manually refined normalization.",
+    "claim_type": "EXPLICIT",
+    "source": "Relevant subcortical nuclei have been warped to patient space via a manually refined normalization.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Figure 1 caption describes the atlas registration approach.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C124",
+    "claim": "An automatic pipeline for preprocessing data retrieved from a PACS system is setup at the authors' center using the NORA medical imaging platform.",
+    "claim_type": "EXPLICIT",
+    "source": "At our center, an automatic pipeline for preprocessing data retrieved from a picture archiving and communication system (PACS) system is setup using the NORA medical imaging platform (https://www.nora-imaging.com/) to automatically run the core Lead-DBS pipeline once images arrive in the hospital's PACS system.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Figure 3 caption describes the automated preprocessing pipeline at the authors' institution.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C125",
+    "claim": "The automatic preprocessing pipeline automatically runs the core Lead-DBS pipeline once images arrive in the hospital's PACS system.",
+    "claim_type": "EXPLICIT",
+    "source": "At our center, an automatic pipeline for preprocessing data retrieved from a picture archiving and communication system (PACS) system is setup using the NORA medical imaging platform (https://www.nora-imaging.com/) to automatically run the core Lead-DBS pipeline once images arrive in the hospital's PACS system.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Figure 3 caption describes the automated workflow.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C126",
+    "claim": "The automatic preprocessing pipeline is largely specific to the authors' center and not discussed in detail in the article.",
+    "claim_type": "EXPLICIT",
+    "source": "This part (right-hand side) is not discussed in detail since it is largely specific to our center.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Figure 3 caption acknowledges the center-specific nature of the preprocessing pipeline.",
+    "evidence_type": [
+      "DATA"
+    ]
+  }
+]

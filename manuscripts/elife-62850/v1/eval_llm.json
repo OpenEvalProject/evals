@@ -1,0 +1,351 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Laying worker honey bee colonies contain a continuum of behavioral phenotypes, with 54% of workers laying eggs, 28% foraging, 10.8% performing both behaviors on the same day at least once, and 1.3% being exceptional generalists performing both behaviors consistently across multiple days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C11 collectively demonstrate extensive behavioral variation through automated tracking of 115,281 egg-laying events and 96,086 foraging trips across six colonies. The behavioral tracking methodology using CNNs provides robust quantitative evidence for the continuum of phenotypes, with specific proportions of specialists and generalists clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Ovary activation status differs between behavioral groups, with 100% of specialized egg-layers and generalists having active ovaries (scores 3-5), compared to only 54% of specialized foragers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 are supported by ovary dissection data shown in Figure 1D. The physiological validation confirms the behavioral classifications and demonstrates a decoupling between ovary activation and foraging behavior in some individuals. Sample sizes appear adequate for the reported percentages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Foragers and layers show widespread differential gene expression in the brain, with 4506 genes (46% of expressed genes) differentially expressed between these groups, while generalists show intermediate expression patterns with fewer DEGs relative to specialists (648 vs. layers, 374 vs. foragers).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 are well-supported by RNAseq data analyzed with edgeR (FDR < 0.05). The magnitude of differential expression (46% of genes) is substantial and the GO enrichment showing 114 of 115 terms enriched in forager-biased genes provides functional context. The intermediate position of generalists is consistent across multiple comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Chromatin accessibility differs significantly between foragers and layers (1794 DAPs proximal to 1207 genes), with forager-biased DAPs overlapping significantly with forager-biased DEGs (1.2x enrichment, p=0.01), while generalists show minimal differential accessibility relative to specialists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C27 are supported by ATACseq data showing robust differential accessibility between specialists. The overlap between DAPs and DEGs (C23) provides mechanistic support for transcriptional regulation. The lack of DAPs between foragers and generalists (C25) and only 16 DAPs between generalists and layers (C26) is consistent with the intermediate molecular profile of generalists. The Kolmogorov-Smirnov test (C24) validates the functional relevance of accessible chromatin.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C101",
+      "C102"
+    ],
+    "result": "Brain gene expression and chromatin accessibility profiles are continuously correlated with individual behavioral variation, with generalists showing intermediate molecular profiles between specialists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C28-C31, C101-C102 demonstrate continuous correlation between molecular and behavioral phenotypes through PCA. Gene expression PC1 and PC2 (explaining 31.1% and 11.9% variance) and chromatin accessibility PCs 2, 3, and 4 all correlate significantly with specialist scores. The intermediate position of generalists in both behavioral and molecular space is consistently demonstrated across multiple analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C43",
+      "C44",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Transcription factor activity is highly predictive of specialist behavior, with TF expression correctly predicting 100% of foragers and 94% of layers (82% overall accuracy), while generalists are poorly predicted (only 1 of 8 correct). The ASTRIX GRN model identified 4500 interactions between 190 TFs and 2190 target genes, with many TF modules correlated with specific behavioral metrics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C32-C35, C43-C44, C64-C66 are well-supported by individualized GRN analysis and machine learning classification. The Random Forest model with leave-one-out cross-validation achieved 82% accuracy (p=1\u00d710\u207b\u2078 vs. random), with excellent prediction of specialists but poor prediction of generalists. The correlation of 50, 74, and 41 TF modules with different behavioral metrics (C32-C34) and 23 modules with all nine metrics (C35) demonstrates the broad regulatory role of TFs. However, the poor prediction of generalists (C44) suggests their molecular profiles are genuinely intermediate rather than simply noisy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Behavior-associated regulatory regions show enrichment of TF motifs, with 77 of 223 motifs enriched in forager vs. layer DAPs and 14 motifs enriched in forager-upregulated DEG regulatory regions. Nine motifs are common to both sets, including binding sites for TFs involved in nervous system development, JH signaling, chromatin modification, and circadian rhythms. Minimal motif enrichment is observed in generalist comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C36-C42 are supported by comprehensive motif enrichment analysis using hypergeometric tests. The enrichment of 77 motifs in DAPs (q<0.01) and 14 in DEG regulatory regions (q<0.2) is statistically robust. The CentriMo analysis (C39-C40) showing central enrichment in DAPs and bimodal enrichment in promoters provides spatial validation. The functional annotation of the nine common motifs (C38) links the findings to known biological processes. The lack of enrichment in generalist comparisons (C41-C42) is consistent with their intermediate molecular profiles and the small number of DAPs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Forager vs. layer DEGs show significant overlap with genes differentially expressed in other social insect castes and subcastes, genes under positive selection in honey bees and across eusocial lineages, and TF motifs associated with social complexity evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C54 demonstrate evolutionary conservation through multiple hypergeometric tests showing significant overlaps with published datasets. The overlaps with queenright colony forager/nurse differences (C45-C48), queen/worker differences in other species (C49-C50), genes under selection (C51-C53), and evolutionarily-implicated TF motifs (C54) are all statistically significant. The directional consistency (e.g., forager-biased genes overlapping with forager-biased genes in other studies) strengthens the interpretation. However, one unexpected result (C49 discussion text mentions opposite direction for queen/worker comparison in one study) suggests some complexity in cross-species comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Source colony genetics influences behavioral specialization, with workers from different SDI source colonies showing biased representation in forager vs. layer groups, though individuals from both sources are found in all behavioral categories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 are supported by behavioral tracking data showing clear source colony effects in colonies D-F (SDI colonies) while similar patterns occur in colonies A-C (naturally mated queens). The presence of both foragers and layers from each source colony (C99) demonstrates that genetics is not deterministic, and the similarity across colony types (C100) shows the patterns are not artifacts of reduced genetic diversity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Genes with extreme PC loading values for gene expression and chromatin accessibility are enriched for specific biological processes, including metabolism and sensory perception for gene expression PCs, and neuronal processes for chromatin accessibility PCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106 are supported by GO enrichment analysis of extreme PC loadings (top and bottom 5%). The enrichment for transmembrane transport, respiration, and energy for PC1 (C103), light detection and sensory perception for PC2 (C104), and neuronal processes for accessibility PCs (C105-C106) provides functional interpretation of the molecular variation. The overlap of 11 of 37 GO terms between accessibility PCs 2 and 3 (C106) suggests shared biological processes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The 23 TF modules correlated with all behavioral metrics include TFs involved in JH signaling, histone acetylation, neuronal remodeling, and circadian rhythms. GRN activity is consistent within behavioral groups but generalists show high variation and less defined GRN activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C112 are supported by individualized GRN analysis and functional annotation. The identification of specific TF functions (C107) provides biological context. The cross-referencing of enriched motifs with differentially expressed TFs (C108) strengthens the mechanistic interpretation. The consistency of GRN activity within groups (C109) and the high variation and less defined activity in generalists (C110-C111) are consistent with the classification results and support the intermediate molecular profile interpretation (C112).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "The automated behavioral detectors achieved high performance, with the egg-laying detector showing 99.71% accuracy and 100% specificity (but only 35.39% sensitivity), and the trophallaxis detector showing 88.9% accuracy in determining trophallactic role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 are supported by performance evaluation on independent test sets. The egg-laying detector's high specificity but low sensitivity (C55) is acknowledged and justified by the authors (bees lay multiple eggs, so low sensitivity per event is acceptable). The trophallaxis detector performance (C56) is adequate for the nectar collection annotation. These are methodological validations supporting the behavioral data quality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "RNAseq and ATACseq data processing achieved high quality metrics, with 96.7% of RNAseq reads mapping uniquely, 84.8% assigned to genes, 98.1% of ATACseq reads mapping, 30.2% duplication rate, and 51.0% of reads in called peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C63 report standard quality control metrics for sequencing data. The high mapping rates (C58, C61), high assignment rates (C59), reasonable duplication levels (C62), and adequate fraction of reads in peaks (C63) all indicate high-quality data. These are technical quality metrics supporting the reliability of downstream analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "Behavioral plasticity is subserved by continuously varying molecular programs rather than threshold-based changes, potentially through spatial and temporal integration of discrete TF binding events aggregated at the whole brain level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C82 is an inference from the observed continuous variation in both behavior and molecular profiles, which is well-supported by the data. However, C83 is explicitly speculative (uses 'may lead to') and proposes a mechanism without direct evidence. While the speculation is reasonable and cites supporting literature (Araya et al., 2014), the mechanism of how discrete TF binding events aggregate to produce continuous variation is not directly tested in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C84"
+    ],
+    "result": "JH signaling regulates behavioral division of labor between specialized egg-layers and foragers in queenless colonies, consistent with previous findings of JH titer differences between these groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 is an inference from the correlation of JH-related TF modules (usp, Kr-h1, Blimp-1) with behavior, supported by the GRN analysis. Claim C86 cites previous work (Robinson et al., 1992) showing JH titer differences, providing independent support. Claim C84 establishes the known roles of JH through citations. Together, these claims provide convergent evidence for JH involvement, though the current study does not directly measure JH levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C87",
+      "C54"
+    ],
+    "result": "Regulatory regions that arise during evolutionary transitions to eusociality may be maintained and refined for regulation of specialized subcastes, as evidenced by overlap between evolutionarily-implicated TF motifs and those enriched in specialist regulatory regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 is an inference from the significant overlap (p=0.015) between TF motifs associated with social complexity evolution (Kapheim et al., 2015) and those enriched in specialist DAPs/DEG regulatory regions (C54). The inference is reasonable given the statistical support, though it remains correlative. The evolutionary interpretation is strengthened by the multiple lines of evidence from comparative analyses (C45-C53).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The phenotypic continuum observed in laying worker colonies, including generalists performing both reproductive and non-reproductive behaviors, supports the Ovarian Ground Plan Hypothesis and suggests that the decoupling of these behavioral programs is at least partially reversible or incomplete in honey bees, potentially through incremental changes in GRN activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 accurately describes the OGPH with appropriate citations. Claims C89 and C90 are inferences from the observed behavioral and molecular continuum, particularly the existence of generalists. The inference is well-supported by the data showing intermediate molecular profiles and the ability of individuals to perform both behaviors. Claim C91 cites supporting literature linking TF activity to social evolution. The evolutionary interpretation is reasonable but remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "Specialization along a reproductive/non-reproductive axis in queenless colonies may lead to increased drone production and represents an adaptive form of colony organization rather than chaos and competition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92 and C93 are inferences about the adaptive significance of the observed specialization. While the specialization is well-documented, the claims about increased drone production (C92) and adaptive organization (C93) are speculative. The authors acknowledge this is difficult to evaluate because the incidence of permanently queenless colonies in natural populations is unknown. The comparison to bumble bees provides some support, but direct evidence for the adaptive value is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C94",
+      "C73"
+    ],
+    "result": "Behavioral variation in queenless workers likely involves coordinated actions of multiple tissue types including the ovary, based on previous demonstrations of tissue cross-talk and the observed decoupling of ovary status from behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 is an inference from the decoupling of ovary activation and foraging behavior (C12-C14) combined with cited evidence of tissue cross-talk (Ament et al., 2012; Wheeler et al., 2013). Claim C73 establishes the precedent for peripheral tissue effects on brain GRNs. The inference is reasonable given the physiological data and cited literature, though direct evidence of tissue cross-talk in this system is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "Genetic variation may contribute to individual behavioral differences, but for egg-laying and generalist individuals, a combination of hereditary and environmental factors likely influences behavioral phenotype development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 cites established literature on genetic effects on behavior. Claim C96 is an inference from the plastic nature of egg-laying induction in queenless conditions and the observation that individuals from both source colonies show all behavioral types (C99). The inference is reasonable and appropriately cautious, acknowledging both genetic and environmental contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C84",
+      "C86",
+      "C88",
+      "C91",
+      "C97"
+    ],
+    "result": "Background claims establishing the role of GRNs in phenotypic plasticity, honey bee biology, laying worker behavior, and relevant prior work on social insect behavior and evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C81, C84, C86, C88, C91, and C97 are background claims supported by citations to published literature or established knowledge. These provide context for the current study and are appropriately referenced. The claims accurately represent the cited work and established knowledge in the field.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,307 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "The manuscript establishes the empirical and theoretical context for studying manipulative cheating. Claims C1-C3 describe the traditional view of cheating (C1), note that empirical data suggests more complex forms involving arms races (C2), and assert that evolutionary theory lags behind empirical studies (C3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 are well-supported by the literature review and citations provided. Claim C3 is an assessment of the field that motivates the current work and is reasonable given the gap identified between empirical observations (C15-C20) and existing theory (C21). This provides appropriate context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C98",
+      "C99",
+      "C100",
+      "C133",
+      "C134"
+    ],
+    "result": "The core finding is that individuals can be selected to manipulate others' behavior (manipulative cheating), and this can lead to evolutionary arms races involving selfishness, manipulation, and suppression. The model predicts manipulation is favored across wide conditions, especially at low relatedness, and suppression can also be favored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C98-C100 represent the main theoretical predictions from the game-theoretical model and simulations (C25-C59). The analytical approach (C46-C47) and simulations (C48-C50, C59) provide converging evidence. Figures 2-3 show ESS predictions match simulations. The mathematical framework (Equations 1-3) is clearly derived and the results are robust across parameter space (C55, C67).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The ESS analysis predicts that selfishness, manipulation, and suppression all show negative relationships with relatedness. At lower relatedness, individuals invest more in selfishness, manipulation, and suppression. These predictions hold across broad parameter space and are validated by simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 present specific predictions from the ESS analysis shown in Figure 2. The analytical derivation (Equation 2) is mathematically sound and the neighbor-modulated fitness approach is appropriate. Simulation validation (C59) provides strong support. The robustness analysis (C55) and parameter exploration (Figure 3, C66-C67) demonstrate generality. The mechanistic explanation (C57) is logical given the model structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C95",
+      "C96",
+      "C102"
+    ],
+    "result": "When multiple manipulation mechanisms are present simultaneously, the model predicts oscillating dynamics in selfishness, manipulation, and suppression under certain conditions (intermediate shape parameters, low relatedness). Oscillations arise from coevolutionary interactions between traits and can be prevented by eliminating selfishness mutation or trait linkage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C78 describe oscillatory dynamics observed in simulations with multiple mechanisms (Figure 4). The harmonic regression analysis (C70, Figure 4b) provides statistical evidence for periodic oscillations rather than noise. The mechanistic explanation (C72-C73) is plausible. Supporting analyses (C74-C78) test specific hypotheses about oscillation mechanisms. However, the conditions for oscillations are narrow (intermediate parameters), limiting generality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C93"
+    ],
+    "result": "Recombination between traits eliminates oscillations arising from coevolutionary interactions (endogenous oscillations) by removing linkage disequilibrium, suggesting oscillations are more likely in asexual species. However, recombination does not affect arms races from sequential trait invasion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is supported by simulations with recombination (Appendix 1-4.4, 4.8). The interpretation (C80) is consistent with established theory on linkage disequilibrium and evolutionary branching, supported by appropriate citations. The conclusion about asexual species (C81) follows logically. The distinction between endogenous and exogenous oscillations (C93) is conceptually clear and mechanistically justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C92",
+      "C94",
+      "C103"
+    ],
+    "result": "When manipulation mechanisms arise sequentially through mutation, the model predicts evolutionary arms races where new forms of manipulation spread, then are suppressed, leading to recurring dynamics and variable levels of traits. This represents a trait substitution sequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 describe dynamics from simulations with sequential trait introduction (Figure 5). The pattern is clear: manipulation spreads \u2192 selfishness decreases \u2192 suppression evolves \u2192 manipulation decreases and selfishness increases. The mechanistic explanations (C87, C89) are logical. The connection to trait substitution sequences (C92) is appropriate. However, Figure 5 shows only one illustrative example with specific parameters (a=0.5, b=0.01), and generality across parameter space is not fully demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C97",
+      "C104",
+      "C126"
+    ],
+    "result": "The model results provide possible explanations for observed genetic variation in cheating and cheating suppression in ants, slime molds, and bacteria. Multiple manipulation types can be maintained, and non-equilibrium dynamics could explain genetic diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97, C104, and C126 connect theoretical predictions to empirical observations (C15-C18). While the model demonstrates mechanisms that could maintain variation, the connection to specific empirical systems is speculative. The model makes general predictions but does not directly test against empirical data or make quantitative predictions that could be validated. The claim that results 'provide possible explanations' is appropriately cautious but remains hypothetical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C33",
+      "C37",
+      "C42",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The model extends the classic tragedy of the commons framework by adding manipulation and suppression traits. The model assumes asexual haploid populations with specific fitness structure and uses both analytical (neighbor-modulated fitness) and simulation approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C50 describe the model structure and analytical methods. The model is clearly specified with explicit assumptions (C25, C30-C31, C33). The extension to the classic model (C27-C29) is well-motivated. The analytical approach (C46-C47) is appropriate and properly cited. The simulation approach (C48-C50) allows exploration of dynamics. The treatment of nonlinearities (C42, C45) is justified. The robustness check with personal reproduction costs (C37) strengthens conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The manuscript reviews established theory on social cooperation and cheating, including the trade-off between group productivity and individual share, examples from social insects, slime molds, and bacteria, and predictions about coexistence of cheats and cooperators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C14 provide background on cooperation theory and are well-supported by appropriate citations. These claims accurately represent established knowledge in the field and provide necessary context for the current work. The examples (C7-C9, C11-C12) are standard and properly cited. The theoretical predictions (C13-C14) are correctly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Empirical evidence from slime molds, ants, bacteria, and other systems shows complex forms of cheating involving resistance evolution, arms races, and variation in exploitation ability, suggesting cheating involves more than just reduced cooperation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 summarize empirical findings from the literature with appropriate citations. These observations motivate the theoretical work by demonstrating that real biological systems exhibit complexity not captured by simple 'cooperate less' models. The inference (C19) is reasonable given the cited examples. This establishes the empirical foundation for the theoretical investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Most evolutionary models assume individuals control their own investment in selfish vs. cooperative behaviors. The manuscript proposes manipulative cheating as an alternative, where individuals manipulate others' behavior through various mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C21 accurately characterizes existing models with appropriate citations. Claims C22-C24 present hypothetical examples of manipulative cheating to illustrate the concept. While speculative (C22-C24 are marked as speculation), these examples are plausible and help motivate the theoretical framework. The contrast with existing theory is clear and appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "The quantitative ESS predictions depend on shape parameters. When shape parameters covary, effects combine. Both manipulation and suppression can be favored across wide parameter ranges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 describe parameter sensitivity analysis shown in Figure 3. The systematic exploration of shape parameters (a and b) demonstrates robustness of qualitative predictions while showing quantitative sensitivity. The analysis is thorough and appropriately presented. This strengthens confidence in the main results by showing they are not artifacts of specific parameter choices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The study aims to investigate cheating beyond 'cooperate less' by modeling manipulation and coercion rather than mutualistic signaling. Future work should examine different genetic systems and caste determination mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C109 clarify the scope and conceptual framework of the study. The distinction between coercion and mutualistic signaling (C107-C109) is important and properly cited. Claims C110-C111 suggest reasonable future directions. These claims appropriately frame the work and acknowledge limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The manuscript discusses potential biological mechanisms for manipulative cheating and suppression across different systems (bacteria, slime molds, social insects, RNA replicators), noting that specific mechanisms could vary but share common conceptual features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C118 present hypothetical mechanisms (appropriately marked as speculation) while C119-C122 cite empirical evidence for suppression mechanisms. The discussion appropriately distinguishes speculation from established findings. The conceptual synthesis (C117, C122) is reasonable. This section effectively connects abstract theory to potential biological implementations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The manuscript situates the current work within existing literature on conflict suppression, coevolution of offense and defense, manipulation in kin groups, and communication. The current work examines a different route to selfishness through manipulation of non-kin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C132 provide appropriate literature context with proper citations. The distinctions drawn between the current work and previous models (C123-C125) are clear and accurate. The connections to related work (C127-C132) are appropriate. This demonstrates scholarly awareness and properly positions the contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C26",
+      "C101"
+    ],
+    "result": "Natural selection can maintain a variety of strategies at equilibrium and allow ongoing oscillating dynamics. When multiple manipulation mechanisms are allowed, non-equilibrium dynamics such as oscillations can occur.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26 and C101 are high-level summaries of the main findings, supported by the detailed results in other claim groups. These represent accurate synthesis of the analytical and simulation results. The evidence from both ESS analysis and multiple-mechanism simulations supports these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Future research should determine the extent of complex cheating in nature, which will require elucidating mechanisms that may differ across species. Manipulation and suppression could arise at all levels of life.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C137 appropriately identify future research directions with relevant citations (C135). The acknowledgment of challenges (C136) is realistic. The broad concluding statement (C137) is appropriately speculative given the generality of the theoretical framework. These claims provide appropriate closure and perspective.",
+    "result_type": "MINOR"
+  }
+]

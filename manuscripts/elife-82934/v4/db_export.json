@@ -1,0 +1,2083 @@
+{
+  "submission": {
+    "id": "5220ace2-1c5e-4f91-987b-31e8882916f7",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T19:03:50.773255Z",
+    "updated_at": "2025-12-03T19:03:50.773255Z"
+  },
+  "content": [
+    {
+      "id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "submission_id": "5220ace2-1c5e-4f91-987b-31e8882916f7",
+      "content_type": "manuscript",
+      "content_text": "# Mesenchymal stem cell suppresses the efficacy of CAR-T toward killing lymphoma cells by modulating the microenvironment through stanniocalcin-1\n\n## Authors\n\n- Rui Zhang<sup>1</sup>\n- Qingxi Liu<sup>2</sup>\n- Sa Zhou<sup>4</sup>\n- Hongpeng He<sup>4</sup>\n- Mingfeng Zhao<sup>1</sup> \u2020\n- Wenjian Ma<sup>3</sup> ([ORCID: 0000-0002-3392-1549](https://orcid.org/0000-0002-3392-1549)) \u2020\n\n### Affiliations\n\n1. Department of Hematology, Tianjin First Central Hospital, School of Medicine, Nankai University Tianjin China ([ROR:01y1kjr75](https://ror.org/01y1kjr75))\n2. State Key Laboratory of Medicinal Chemical Biology and College of Life Sciences, Nankai University Tianjin China ([ROR:01y1kjr75](https://ror.org/01y1kjr75))\n3. Qilu Institute of Technology Shandong China\n4. College of Biotechnology, Tianjin University of Science and Technology Tianjin China ([ROR:018rbtf37](https://ror.org/018rbtf37))\n\n\u2020 Corresponding author\n\n## Abstract\n\nStem cells play critical roles both in the development of cancer and therapy resistance. Although mesenchymal stem cells (MSCs) can actively migrate to tumor sites, their impact on chimeric antigen receptor modified T cell (CAR-T) immunotherapy has been little addressed. Using an in vitro cell co-culture model including lymphoma cells and macrophages, here we report that CAR-T cell-mediated cytotoxicity was significantly inhibited in the presence of MSCs. MSCs caused an increase of CD4+ T cells and Treg cells but a decrease of CD8+ T cells. In addition, MSCs stimulated the expression of indoleamine 2,3-dioxygenase and programmed cell death-ligand 1 which contributes to the immune-suppressive function of tumors. Moreover, MSCs suppressed key components of the NLRP3 inflammasome by modulating mitochondrial reactive oxygen species release. Interestingly, all these suppressive events hindering CAR-T efficacy could be abrogated if the stanniocalcin-1 (STC1) gene, which encodes the glycoprotein hormone STC-1, was knockdown in MSC. Using xenograft mice, we confirmed that CAR-T function could also be inhibited by MSC in vivo, and STC1 played a critical role. These data revealed a novel function of MSC and STC-1 in suppressing CAR-T efficacy, which should be considered in cancer therapy and may also have potential applications in controlling the toxicity arising from the excessive immune response.\n\n## Introduction\n\nAdvances in chimeric antigen receptor modified T cell therapy (CAR-T) in recent years have shown enormous promise in cancer immunotherapy, which has produced unprecedented clinical outcomes, most notably for patients with hematologic malignancies (Singh et al., 2016; Park et al., 2018). Despite the striking achievements, CAR-T therapy is also facing many challenges such as the treatment-related severe toxicity and side effects, including cytokine release syndrome (CRS) and neurotoxicity (Hong et al., 2020; Freyer and Porter, 2020). CRS is the most common acute toxicity associated with an excessive immune response that causes fever, hypotension, and respiratory insufficiency. The neurotoxicity induced by CAR-T therapy exhibits a diverse array of neurologic symptoms such as tremors, expressive aphasia, and impaired attention. The precise mechanism that causes these life-threatening side effects remains unclear (Freyer and Porter, 2020; Jiang et al., 2019). On the other hand, the success of CAR-T therapy in treating solid tumors is still very limited (Martinez and Moon, 2019). Identifying hurdles and potential mechanisms that impede the function of CAR-T cells is of vital importance to expanding its use. The immunosuppressive tumor microenvironment (TME) is one of the obstacles that diminishes the efficacy of CAR-T therapy, especially for solid tumors.\n\nAmong the many factors that can modulate TME and immune response, the impact of mesenchymal stem cell (MSC) on CAR-T therapy has been little studied. MSC is a type of adult stem cell with high proliferative activity and multidirectional differentiation capacity. However, MSCs have additional paracrine effects that are believed to underlie their therapeutic functions (Jiang and Xu, 2020). By secreting a variety of cytokines into the tissue microenvironment, it has been known that MSCs can modulate extracellular matrix, promote angiogenesis, and suppress inflammation and apoptosis (Keating, 2012; Wang et al., 2014; Regmi et al., 2019). Some MSC-secreted cytokines, such as stromal cell-derived factor 1 and stem cell factor, play important roles in hematopoietic and immune regulation (Kawaguchi et al., 2019; Markov et al., 2007). In addition, studies suggest that MSCs can modulate the function of monocytic lineages cells, especially macrophages (N\u00e9meth et al., 2009; Yl\u00d6stalo et al., 2012; Choi et al., 2011). Some reports also showed that MSCs could directly affect the functionality and cellular responses of T cells, Tregs, and memory T cells (Cen et al., 2019; Tumangelova-Yuzeir et al., 2019; Luque-Campos et al., 2019).\n\nIt was reported that human mesenchymal stem cells (hMSCs) could be activated by lipopolysaccharide (LPS)-stimulated macrophages to increase the expression and secretion of stanniocalcin-1 (STC1) (Oh et al., 2014). STC1 was a mitochondria-related glycoprotein originally identified as a calcium/phosphate regulating hormone in bony fishes, and later on, it was found to be a pleiotropic factor involved in various degenerative diseases such as ocular and renal disease, as well as idiopathic pulmonary fibrosis (Yeung et al., 2012; Ohkouchi et al., 2015). STC1 could improve the cell survival and regeneration of MSCs in a paracrine fashion (Ono et al., 2015). There was also evidence suggesting that STC1 played an oncogenic role in various types of tumors (Du et al., 2011; Liu et al., 2010). Based on a retrospective study of ~1500 clinical samples, it was concluded that high STC1 expression is associated with the poor clinical outcome of breast cancer (Chang et al., 2015). It was proved that STC1 is involved in several oxidative and cancer-related signaling pathways, such as NF-\u03baB, extracellular-signal-regulated kinase (ERK), and c-Jun NH(2)-terminal kinase (JNK) pathways (Nguyen et al., 2009; Chan et al., 2017). The expression and secretion of STC1 in cancer tissue can be stimulated by external stimuli, including external cytokines and oxidative stress (Nguyen et al., 2009). Under hypoxia conditions, STC1 could be modulated by Hypoxia-inducible factor-1 (HIF-1) to facilitate the reprogramming of tumor metabolism from oxidative to glycolytic metabolism (Yeung et al., 2005). STC1 was also reported to participate in the process of epithelial-to-mesenchymal transition, which is associated with tumor invasion and the reshape of the tumor microenvironment, as well as increasing therapy resistance (Pastushenko and Blanpain, 2019).\n\nConsidering the pleiotropic role of STC1, especially its intercellular linkage between MSCs, cancer cells, and macrophage stimulation, it is interesting to know what role it plays in connection to the functions of MSC in TME. Therefore, we generated a stable STC1 knockdown MSC cell line. With a cell co-culture model containing CAR-T cells, hMSCs, macrophages, and Pfeiffer lymphoma cells to partially mimic the tumor microenvironment together with a xenograft mice model, here we studied the impacts of MSC on CAR-T efficacy and the potential immune response change in the presence and absence of STC1.\n\n## Results\n\n### Stable knockdown of STC1 in hMSC-inhibited cell migration, slightly suppressed cell proliferation, but no increase in apoptosis\n\nTo study the function of STC1, we first generated a stable knockdown cell line by lentivirus-based shRNA for the STC1 gene, and the expression of STC1 protein was evaluated by Western blot (Figure 1A). STC1 stable knockdown in hMSCs exhibited a minor effect in cell survival (Figure 1B) and slightly reduced proliferation rate based on the small increase in the proportion of cells in G0/G1 phases versus that in the S phase (Figure 1C) as determined by MTT (3-[4,5-dimethylthiazol-2-yl]-2,5 diphenyl tetrazolium bromide) and Fluorescence-activated Cell Sorting (FACS) analysis. To investigate whether knockdown of STC1 affects cell migration, wound healing and transwell chamber assays were performed. After creating a \u2018scratch\u2019 in a monolayer of hMSCs, the closure of the gap was determined after 24 hr. As shown in Figure 1D, compared to control hMSCs, the gap was less filled in hMSCshSTC1. The inhibitory effect on cell migration was further confirmed by a transwell assay. As shown in Figure 1E, there were significant migration and invasion observed in hMSCsshCtrl, whereas there was a >30% reduction in migration across the transwell chamber membrane in hMSCsshSTC1. To further determine whether knockdown of STC1 may have any lethal effect, apoptosis was determined by two different assays. To measure the early apoptosis, cells were stained with the Alexa Fluor 488 annexin V and the propidium iodide (PI) followed by flow cytometry to detect apoptosis-associated phosphatidylserine (PS) expression and membrane permeability (Figure 1F). Parallelly, no DNA fragmentation was detected as determined with the TUNEL assay (Figure 1G, the green dots were from the background due to overexposure). Both studies showed that knockdown of STC1 did not cause apoptosis of hMSCs.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/82934/elife-82934-fig1-v4.jpg)\n\n**Figure 1.:** (A) Western blot analysis of STC1 protein expression in hMSCs. (B) Cell viability determined by MTT, measurements are shown as the mean \u00b1 SD from three independent experiments. (C) FACS analysis of cell cycle progression on hMSCs w/o STC1 knockdown. (D, E) Knockdown of STC1 suppressed cell migration as determined by wound healing and transwell chamber assays. (F) Apoptosis determination by the Alexa Fluor 488 annexin V and PI detection. (G) DNA fragmentation determination by transferase-mediated dUTP nick-end labeling (TUNEL) assay.\n\n### The presence of hMSCs inhibited CAR-T cell killing activity, but knockdown of STC1 completely abrogated this inhibition\n\nTo investigate the impact of hMSCs on CAR-T treatment, we used an in vitro cell co-culture model modified according to previous studies to mimic a simplified situation of tumor environment (Singh et al., 2017; Liu et al., 2021). The co-culture contained CD19 CAR-T cells, Pfeiffer cells that were from human diffuse large cell lymphoma, and M2 macrophages (derived from THP-1 cells by phorbol-12-myristate-13-acetate [PMA] polarization for 24 hr) at a cell number ratio of 1:3:1. The cell-killing activity of CAR-T cells toward Pfeiffer cells was determined by lactate dehydrogenase (LDH) cytotoxicity assay on total cell co-culture. As shown in Figure 2A, 67% of Pfeiffer cells were killed after being exposed to CAR-T cells for 24 hr, and 93% were killed at 48 hr as compared to mock-treated control. After adding hMSCs into the co-culture, the cell-killing activity of CAR-T was significantly inhibited (Figure 2A). The number of hMSC added was the same as the CAR-T cell. Interestingly, the inhibitory effect of hMSCs on CAR-T cytotoxicity could be completely abrogated if knockdown STC1 gene in hMSCs. These results for the first time revealed that CAR-T efficacy could be affected by the presence of MSCs, and the gene STC1 played a critical role.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/82934/elife-82934-fig2-v4.jpg)\n\n**Figure 2.:** The cell co-culture contained chimeric antigen receptor modified T cell (CAR-T) cells, Pfeiffer cells, M2 macrophages, and control or stanniocalcin-1 (STC1) knockdown hMSCs in a ratio of 1:3:1:1. After 24 hr (or 48 hr for cytotoxicity) incubation, the following analysis was conducted: (A) The impact of hMSC (w/o STC1) on the cytotoxicity of CAR-T toward Pfeiffer cells; (B) FACS analysis of CD4+ and CD8+ composition. (C) Quantitation of the FACS data on CD4+ and CD8+; (D) FACS analysis of Treg+ cells (CD4+CD127+CD25+); (E) Quantitation of Treg+ cells. (F) Western blot analysis of indoleamine 2,3-dioxygenase (IDO) and programmed cell death-ligand 1 (PD-L1) expression in the cell co-culture. Data in bar graphs are presented as the mean \u00b1 SD from three independent experiments (p values are as indicated, n=3).\n\n### Co-culturing with hMSCs caused an increase of CD4+ T cells and Treg cells but a decrease of CD8+ T cells\n\nPrevious studies have demonstrated that the composition of CD4+ and CD8+ T cell subsets was crucial for CAR-T cell efficacy (Sommermeyer et al., 2016; Turtle et al., 2016). To investigate the mechanism of how hMSC inhibited the cytotoxicity of CAR-T, the amount of CD4+ and CD8+ T cells were analyzed by flow cytometry 24 hr after co-culture. As shown in Figure 2B and C, the ratio between CD4+ and CD8+ was about 1:4 when there were no hMSCs in co-culture (Figure 2C). However, the addition of hMSC caused a significant increase of CD4+ and a decrease of CD8+ T cells (Figure 2B), resulting in a ratio change to 2:1. Similar to the change of CD4+ T cells, the percentage of regulatory T cells (Treg) was also significantly increased from ~3 to 12% when co-culture with hMSC (Figure 2D and E). When using hMSCshSTC1, all the changes were completely reversed back to the level similar to that of co-culture without hMSCs. This explains the reduced CAR-T cytotoxicity since CD8+ T cells are directly responsible for specific lytic activity against lymphoma (Sommermeyer et al., 2016). Tregs, which account for 5\u201310% of the total number of CD4+ T cells, are known to play a role in suppressing the function of T cells and other immune cells (Zhang et al., 2018). Therefore, the above results indicate that hMSCs\u2019 inhibitory effect on CAR-T cytotoxicity was due to both suppression of CD8+ cells and the induction of Treg cells, and the presence of STC1 was indispensable for these impacts of hMSC.\n\n### The presence of hMSC enhanced immune suppression and STC1 played a key role\n\nThe immune-suppressive TME is the main cause of CAR-T cell exhaustion which attenuates its efficacy. To further investigate the function of STC1 and the molecular mechanism of hMSC on CAR-T resistance, some key regulators of TME were determined. As shown in Figure 2F, the addition of hMSC to the cell co-culture stimulated the expression of indoleamine 2,3-dioxygenase (IDO) and programmed cell death-ligand 1 (PD-L1). IDO and PD-L1 are two of the most important immunosuppressive proteins. IDO is an intracellular enzyme that converts tryptophan into inhibitory metabolites for T-cell activity (Ninomiya et al., 2015). PD-L1 is expressed in tumor cells and immune cells contributing to the immune-suppressive TME (Ribas and Hu-Lieskovan, 2016). When using hMSCshSTC1, the expression level of IDO and PD-L1 was both significantly reduced by more than 50%, though still higher than that without hMSC. These results indicated that the presence of hMSC can enhance the expression of immune suppressive proteins in Pfeiffer cells and macrophages, and the presence of STC1 is important for hMSC to exert these effects.\n\n### hMSCs suppressed key components of the NLRP3 inflammasome by modulating mitochondrial ROS release\n\nIn the co-culture model, M2 macrophages were included since a previous study showed that macrophages could activate hMSCs to secrete STC1 (Cen et al., 2019). In addition, the macrophage is a critical part of immune response and an important regulator of immunotherapy (DeNardo and Ruffell, 2019). To further identify the mechanisms mediating the inhibitory effects of hMSCs, the activation of the NLRP3 inflammasome was determined. The NLRP3 inflammasome is a critical component of the innate immune system mediating caspase-1 activation and proinflammatory cytokines secretion in response to harmful stimuli such as infection and endogenous stress (Menu and Vince, 2011). As shown in Figure 3A, the release of cleaved caspase-1 p20 in cell lysates, which is the indicator of caspase-1 activation, was detected after the PMA polarization of THP-1 cells to form the M1 macrophages (M-THP1). Following co-culture with CD19 CAR-T, the level of cleaved caspase-1 was significantly upregulated. The increase of active caspase-1 was abrogated when hMSCs were added into the co-culture. knock-down of STC1 led to another reverse and completely blocked the inhibitory function of hMSCs (Figure 3A). Concomitant with the reduction in active caspase-1, the cleaved IL-1\u03b2 mature form and absent-in-melanoma 2 (AIM2), two key components of the inflammasome (Kelley et al., 2019), were both increasingly expressed following M-THP1 polarization and further incubation with CAR-T (Figure 3A). Compared to the partial inhibition of the active caspase-1 formation, the addition of hMSC in the cell co-culture showed a stronger inhibition of these two proteins, and their expression level was returned to the base level of Pfeiffer plus CAR-T (Figure 3A). This result suggests that the immune-suppressive effect of hMSC was through its impact on macrophages, not CAR-T or Pfeiffer cells. Knockdown of STC1 abrogated the inhibition of hMSC on IL-1\u03b2 and AIM2 (Figure 3A). The levels of IL-1\u03b2 in the supernatants measured by ELISA showed similar results as cell lysate (Figure 3B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/82934/elife-82934-fig3-v4.jpg)\n\n**Figure 3.:** (A) The protein expression of IL-1\u03b2, caspase-1, and AIM2 in cell lysates was analyzed by Western blot. (B) Quantitation of IL-1\u03b2 secretion in the supernatants by ELISA. (C) FACS analysis of ROS level and mitochondria mass with fluorescent dye CellROX Deep Red and MitoTracker Green. (D) Quantitation of mitochondria-specific ROS level based on the percentage of cells that were both positive for CellROX and MitoTracker. All samples were collected 24 hr post the co-culture of different cells. For the measurements of IL-\u03b2, results are shown as the mean \u00b1 SD from three independent experiments (p values are as indicated, n=3).\n\nMitochondrial dysfunction is one of the major stimuli that activates the NLRP3 inflammasome, and it was reported that exogenous STC1 is internalized by macrophages within 10 min and localizes to mitochondria to suppress superoxide generation (Wang et al., 2009). Therefore, we determined the impact of hMSC on the intracellular level of reactive oxygen species (ROS) and mitochondria mass in macrophages by fluorescent dye CellROX and MitoTracker Green, respectively. As shown in Figure 3C and D, the presence of hMSCsshCtrl markedly suppressed both the cellular and mitochondrial ROS induced by the co-culture of CAR-T cells, tumor cells, and macrophages. Knockdown of STC1 eliminated the function of hMSC in suppressing ROS. This result correlates well with the expression of caspase-1, IL-1\u03b2, and AIM, suggesting that hMSCs inhibited NLRP3 inflammasome activation in macrophages was most likely by inhibiting the oxidative burst.\n\n### hMSCs showed strong inhibition on CD19 CAR-T therapy in xenograft mice, which was abrogated by STC1 knockdown\n\nThe immune-suppressive impact of hMSC on CAR-T therapy and the function of STC1 were further evaluated in a xenograft model. Upon injection of Pfeiffer cells and confirmation of engraftment, we injected hMSC into the tumor area while applying CAR-T treatment by tail vein injection. As shown in Figure 4A, CD19 CAR-T treatment combined with the injection of hMSCshSTC1 achieved a significant curative effect, and the tumors nearly disappeared at day 38. However, the hMSCshCtrl group showed a continued increase in tumor size and spreading of tumor.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/82934/elife-82934-fig4-v4.jpg)\n\n**Figure 4.:** (A) The formation and progression of tumor in three groups of mice monitored with bioluminescence imaging: the control group without any treatment, CAR-T/M-THP1/hMSCsshSTC1 group, and CAR-T/M-THP1/hMSCsshCtrl group. Day 0 was set when the engraftment was confirmed after injecting the Pfeiffer cells. (B) Immunohistochemical analysis of IL-1\u03b2, CD4+, CD8+, and Treg cells (using FOXP3 as the biomarker) in tumor tissue at day 10, positive cells display brown or brownish-yellow staining color. (C) The tumor size change with time. (D) The counted average radiance, presented as the mean \u00b1 SD (p values are as indicated, n=3).\n\nBased on the immunohistochemical analysis of IL-1\u03b2 in tumor tissue on day 10, the number of positive cells (brownish-yellow staining) ranged from 76 to 100% in the hMSCshSTC1 group, while it ranged from 5 to 20% in the hMSCshCtrl group, indicating that hMSC could suppress TME and STC1 knockdown significantly diminished this impact (Figure 4B). Consistent with the results in vitro, a large amount of CD4+ T cells were detected in the hMSCshCtrl group but much less in the hMSCshSTC1 group. On the contrary, the amount of CD8+ T cells was significantly increased in the hMSCshSTC1 group compared to that of the hMSCshCtrl group (Figure 4B). Based on the staining of FOXP3 (forkhead box P3), a master regulator involved in the development of Treg cells, the amount of Treg cells was also evidently increased in the hMSCshCtrl group compared to that of the hMSCshSTC1 group (Figure 4B). These results further confirmed that knockdown of STC1 abrogated the immune-suppressive capability of MSC.\n\nThe changes in the average radiance were consistent with the changes in the tumor size (Figure 4C and D). The survival time of mice demonstrated that mice in CAR-T combined with the hMSCshSTC1 group had the longest survival with no death by day 38 (Figure 4D). Compared to the control group with no CAR-T treatment, tumor spreading in the hMSCshCtrl group was slower, and all survived for 6 days more. These results confirmed the inhibitory effects of hMSC on CAR-T therapy under in vivo situations and demonstrated that STC1 is an important factor affecting therapy efficacy.\n\n## Discussion\n\nStem cells are believed to play critical roles in resistance to cancer therapy, which is a major contributor to poor treatment responses and tumor relapse. Previous studies have been mainly focused on the role of cancer stem cells. In the current study, we presented evidences that the presence of MSCs in TME may also be an important source of cancer treatment resistance. By modulating TME, MSCs showed a strong suppressive function on CAR-T efficacy toward lymphoma cells, and interestingly, the presence of the STC1 gene played a critical role.\n\nThe role of STC1 in cancer is paradoxical. Some reports showed that it exerts an oncogenic role, whereas other studies suggested the opposite (Chen et al., 2019). The aberrant expression of STC1 has been reported to impact various types of cancer, such as triggering tumor angiogenesis by upregulating the expression of VEGF in gastric cancer cells (He et al., 2011), causing tumorigenesis and poor clinical outcomes in ovarian, colorectal, and lung cancers (Yeung et al., 2012; Chen et al., 2019). To date, the potential roles of STC1 in immunotherapy are still largely unknown. Here, we demonstrated that the presence of STC1 is critical for MSC to exert its immunosuppressive role by inhibiting cytotoxic T cell subsets, activating some key immune suppressive/escape mechanisms, and crosstalk with other immune cells.\n\nFirst, a significant downregulation of CD8+ T Cells together with the upregulation of CD4+ T helper cell subsets and Tregs indicated that the suppressed CAR-T efficacy was at least partially associated with MSC\u2019s function in modulating the proliferation of different T-cell subsets. Since the suppression of CD8+ T cells was completely abrogated if knockdown STC1 in MSCs, it is clear that STC1 played a key role here. Moreover, considering that STC1 is secreted into the extracellular matrix in a paracrine manner, MSCs\u2019 modulation of the T cell subsets is most likely indirectly via altered cytokine expression or other secondary molecules activated by STC1. In line with our study, it was recently reported that STC-1 negatively correlates with immunotherapy ef\ufb01cacy and T cell activation by trapping calreticulin, which abrogates membrane calreticulin-directed antigen presentation function and phagocytosis (Lin et al., 2021).\n\nThe presence of MSCs also stimulated the expression of IDO and PD-L1, two important immune-suppressive molecules. Upregulation of IDO is an endogenous feedback mechanism controlling excessive immune responses, which can be produced both by tumor cells and macrophages (Uyttenhove et al., 2003). IDO-mediated formation of immunosuppressive metabolites can inhibit T-cell proliferation and induce T-cell death through the dioxin receptor (Opitz et al., 2011; Frumento et al., 2002). PD-L1 is a well-characterized molecule of the major escape mechanism of immunotherapy by inhibiting PD-1-mediated effector T cell function and downregulating antigen tolerance (Ribas and Hu-Lieskovan, 2016). There have been numerous studies reporting the bidirectional interactions between MSCs and cancer cells, resulting in regulating the expression of PD-L1 on the surface of various cancer cells or TME (Aboulkheyr and Bigdeli, 2022; Krueger et al., 2019; O\u2019Malley et al., 2018; Sun et al., 2018). Importantly, here we demonstrated that the upregulated expression of both IDO and PD-L1 by MSCs was much reduced if the STC1 gene was knockdown.\n\nThe paracrine activity of MSCs is now widely recognized as an important cellular mechanism to communicate with immune cells and various other cell types in TME (Teixeira et al., 2013). Consistent with previous studies, we found that the addition of hMSCs to the co-culture cell model suppressed the formation of NLRP3 inflammasome in macrophages as determined by the downregulation of some key proteins including IL-1\u03b2, the activated caspase-1, and AIM. It was reported that CD4+ T cells could inhibit inflammasome-mediated caspase-1 activation and IL-1\u03b2 release through TNF ligands or by interferon signaling (Guarda et al., 2009). Therefore, the modulation of T-cell subsets and activation of the NLRP3 inflammasome by hMSC appear to be closely connected. Since NLRP3 inflammasome is a key factor in the neuroinflammation onset in CNS injuries (Menu and Vince, 2011), the suppression of NLRP3 inflammasome by hMSC may be potentially beneficial in reducing the exacerbated immune responses associated with CAR-T therapy.\n\nThe formation of the NLRP3 inflammasome was reported to be through NF-\u03baB-dependent transcription of IL-1\u03b2, IL-18, and NLRP3, whereas its activation is triggered by extracellular stimuli such as lysosomal permeability, potassium efflux, and oxidative stress (Kelley et al., 2019). It has been proved that the expression and secretion of STC1 in multiple cell lines can be stimulated by external stimuli, including cytokines and oxidative stress (Nguyen et al., 2009). Considering that exogenous STC1 could be internalized by macrophages within 10 min and localizes to mitochondria and played a suppressing role in ROS generation (Wang et al., 2009), we speculated that the inhibition of NLRP3 inflammasome formation might be a feedback mechanism that occurred between macrophages and hMSC. It was reported that LPS-stimulated macrophages do stimulate the expression and secretion of STC1 in hMSCs (Oh et al., 2014). Our data further demonstrated that knockdown of STC1 deprived the function of hMSC in suppressing all the three markers used in the current study in determining NLRP3 inflammasome formation, as well as the suppression of mitochondria ROS production. These data support the idea that a feedback regulation mechanism exists between hMSC and macrophages during CAR-T therapy.\n\nUsing the Xenograft mice model, we confirmed that the tumor-killing efficacy of CAR-T could also be inhibited by hMSCs in vivo, whereas knockdown of STC1 effectively abolished the inhibition. Immunohistochemical data indicated that the downregulation of CD8+ T cells, upregulation of CD4+ T helper cell subsets, and Tregs were all dependent on the function of STC1. Need to note that the amount of the injected hMSCs was much higher than that of the in vivo situation. Nevertheless, the results give a clear indication that STC1 is critical for the immune-suppressive function of hMSC.\n\nIn summary, the present study revealed a significant impact of hMSC in suppressing CAR-T efficacy and provided evidence that the STC1 gene played a critical role in the regulation of various immune-suppressive mechanisms. A speculative schema of the signaling and interactions among hMSC, macrophage, CAR-T, and tumor cells based on our current data is shown in Figure 5. In this model, activated macrophages or stress signals during CAR-T therapy may prompt MSCs to secret STC-1 into the extracellular matrix of TME, serving as a pleiotropic factor to negatively impact the function of T cells and stimulate the expression of molecules that inactivate immune responses, ultimately providing an immunosuppressive effect of MSC. While further studies are needed to understand the detailed molecular interactions underlying, the findings we presented here are no doubt that would have potential clinical applications toward improving the efficiency of CAR-T therapy as well as reducing the excessive toxicity by modulating the level of STC1 in TME.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/82934/elife-82934-fig5-v4.jpg)\n\n**Figure 5.:** When cancer cells were destroyed by CAR-T cells, the release of fragmented DNA and other stimulating factors activated the release of mitochondria reactive oxygen species (ROS) and the formation of NLPR3 inflammasome. Signals from activated macrophages and other extracellular molecules as well as oxidative stress may stimulate mesenchymal stem cell (MSC) to express and secrete stanniocalcin-1 (STC1). Then STC1 serves as a pleiotropic factor to suppress CAR-T cytotoxicity and other immune responses via direct or indirect pathways.\n\n## Materials and methods\n\n### Cell culture and isolation of primary cells\n\nHEK-293T, Peiffer, and THP-1 cells were obtained from the American Type Culture Collection (Manassas, VA, USA). The cell lines were tested mycoplasma negative using a Mycoplasma Stain Assay Kit. HEK-293T was grown in Dulbecco's Modified Eagle Medium (DMEM, Gibco) supplemented with 10% Fetal calf serum (FCS, Gibco). Peiffer cells were grown in RPMI 1640 medium supplemented with 10% FCS. Human umbilical cord blood-derived MSCs were established from consenting mothers and processed within the optimal period of 6 hr as described (Qiao et al., 2008), isolated cells were confirmed by surface antigen markers with flow cytometry. Peripheral blood samples were obtained from healthy donors (n=3). The scFv targeting CD19 plasmid was originated from the FMC63 clone. The CAR vectors containing scFv, human 4-1BB, and CD3z signaling domains were subcloned into the pCDHMND-MCS-T2A-Puro lentiviral plasmid. The CAR sequence was preceded by the RQR8 tag separated by a short T2A peptide for detection purposes (Philip et al., 2014). Ethical approval and informed consent were obtained in Tianjin First Central Hospital Medical Ethics Committee (Tianjin, China) for all human samples used in the current study, which was approved under clinical trial #ChiCTR-ONN-16009862.\n\n### Lentivirus production\n\nPreparation of the lentivirus was performed according to the manufacturer\u2019s instructions (GeneCopoeia). Briefly, HEK-293T lentiviral packaging cells in DMEM supplemented with 10% heat-inactivated fetal bovine serum (FBS) followed by transfection when cells are 70\u201380% confluent. Dilute 2.5 \u00b5g of lentiviral expression plasmid and 2.5 \u00b5g of Lenti-Pac HIV mix into 200 \u00b5l of Opti-MEM I (Invitrogen). In a separate tube dilute 15 \u00b5l of EndoFectin Lenti into 200 \u00b5l of Opti-MEM I, then drop-wise add to the plasmid mix and incubate for 10\u201325 min at room temperature. Collect the pseudovirus-containing culture medium 48 hr post-transfection followed by ultracentrifugation, and the pellets were resuspended in complete X-Vivo15 media and stored at \u201380\u00b0C until use.\n\n### Production and detection of CAR-T cells\n\nCD3+ T cells from healthy donors were separated from PBMCs using CD3 immunomagnetic beads (#130-097-043, Miltenyi Biotec, Germany), then amplified using CD3/CD28 stimulation beads (#11131D, Thermo Fisher Scientific) and IL-2 (100 IU/mL; Miltenyi Biotec) in X-VIVO 15 medium (Lonza). Cells were activated and expanded for 48 hr followed by transduction 2 hr later with lentivirus. T cells were generally engineered for 9\u201312 days to express a CD19-specific CAR and stained with Alexa-Fluor 647-labeled polyclonal goat anti-mouse IgG (H+L) antibodies (Affinity) to detect CAR-T cells. All cells were further confirmed by staining with fluorescein isothiocyanate (FITC)-labeled anti-CD3 antibodies (Abcam).\n\n### Cell co-culture model\n\nTHP-1 cells (5\u00d7105/well) were seeded into six-well plates and polarized into M2 macrophages by first treating with 320 nM PMA (Sigma) for 24 hr, then added 20 ng/mL IL-4 (PeproTech) and 20 ng/mL IL-13 (PeproTech) in the presence of PMA for another 24 hr to obtain M2 phenotype. The formation of M2 macrophages was validated by flow-cytometry based on the surface markers (CD11b+CD163+). After washing to remove all PMA and cytokines, 2\u00d7105 M2 macrophages were co-cultured with 2\u00d7105 CAR-T cells, 6\u00d7105 Pfeiffer cells, and 2\u00d7105 hMSCs in X-VIVO15 medium (Lonza) containing IL-2(100 IU/mL, MiltenyiBiotec) for 24 or 48 hr.\n\n### Generation of STC1 knockdown cells\n\nLentiviral particles PLKO.1 and PLKO.1-shSTC1 were provided by the Beijing Institute of Radiation Medicine. Viruses were packaged by co-transfection with PLKO.1 and PLKO.1-shSTC1 into 293T cells. The supernatants containing viruses were collected 48 hr after transfection, then the centrifuged and resuspended lentivirus were used for further transduction of hMSCs in Opti-MEM. The stable STC1 knockdown hMSCs were obtained after 7\u201310 days of puromycin selection in 96-well plates. Transduction efficiency was determined by fluorescent microscopy.\n\n### MTT assay\n\nCell viability was examined by 3-(4,5-dimethylthiazol-2-yl)\u20132,5-diphenyltetrazolium (MTT) assay (Sigma). The absorbance was measured using a Synergy 4 plate reader (Bioteck) with a test wavelength at 490 nm and a reference wavelength at 630 nm.\n\n### Cell migration determination by wound healing and transwell chamber assay\n\nhMSCsshCtrl and hMSCsshSTC1 were grown on six-well plates and wounded using a sterile pipette tip. The progress of migration was recorded immediately following injury, and photo-micrographs were taken at zero and 48 hr.\n\nFor transwell assay, hMSCsshCtrl and hMSCsshSTC1 were seeded into the upper chamber of a transwell cell culture insert with 1.0\u00d7104 cells in 200 \u00b5L of a 1% FBS-containing medium. The lower chamber was filled with 600 \u00b5L of medium containing 10% FBS. Twenty-four hours later, cells that had migrated to the lower side of the membrane were fixed in 4% paraformaldehyde and stained with DAPI. The migrated cells were counted and photographed in five fields of view and were done in three independent experiments.\n\n### Apoptosis detection with annexin V-FITC and PI and TUNEL assay\n\nAn increase in the plasma membrane PS externalization occurs early in apoptosis and can be detected by annexin V staining. hMSCsshCtrl and hMSCsshSTC1 were isolated and stained with annexin V-FITC and PI (Invitrogen), then apoptosis-positive cells were analyzed using FACS (Millipore Muse).\n\nThe terminal deoxynucleotidyl transferase-mediated dUTP nick-end labeling (TUNEL) assay was used to monitor the extent of DNA fragmentation as a measure of apoptosis (Latha et al., 2005). After hMSCsshCtrl and hMSCsshSTC1 were fixed by formaldehyde, immunohistochemical detection of apoptotic cells was carried out using DeadEnd Fluorometric TUNEL System (Promega). The cells were washed with PBS and blocked with 10% goat serum, then used DAPI to stain nuclei. The samples were photographed with a confocal laser microscope (Olympus), and TUNEL-positive cells were quantitated.\n\n### Quantitative real-time PCR\n\nTotal RNA was extracted using TRIzol reagent (Invitrogen), serving as a template for real-time PCR using random primers and M-MLV reverse transcriptase. The primers used were as follows: human TSP1: forward: 5\u2019-TTGTTAAGAGGTTTGAG TAGGAGAG-3\u2019 and reverse: 5\u2019-CCCACCTTACTTACCTAAAATCACA-3\u2019.\n\n### Western blotting and cytokine release analysis\n\nWestern immunoblotting was performed as previously described (Zhang et al., 2016). After SDS-PAGE and blotting, proteins were detected using the following antibodies: rabbit anti- IL-1\u03b2 (Abcam, ab9722), anti-Caspase-1 p20 (Bioss, bs-10442R), AIM2 (Abcam, ab93015), IDO (Bioss, bs-15493R), PD-L1 (Bioss, bsm-54472R), and mouse anti-GAPDH (Santa Cruz) primary antibodies. The secondary antibodies were IRDye-800-conjugated anti-mouse and anti-rabbit immunoglobulin G (Li-COR Biosciences) (1:200). Immunofluorescence was detected using Odyssey Infrared Imaging System (Gene Company Ltd.). GAPDH expression was used as an internal control. The relative quantification of protein expression was analyzed using ImageJ software. The level of IL-1\u03b2 in the serum was detected using ELISA by electrochemiluminescence (R&D Systems, France).\n\n### Flow cytometry\n\nThe expression of CD4, CD8, CD127, and CD25 in CAR-T cells was analyzed using flow cytometry with the following fluorochrome-conjugated monoclonal/polyclonal antibodies (all from Caprico Biotechnologies): anti-human CD4 (CD004210403), anti-human CD8 (CD008210301), anti-human CD127 (CD127210501), and anti-human CD25 (CD025210301).\n\n### In vitro analysis of CAR-T cytotoxicity toward Pfeiffer cells\n\nSeeding CD19 CAR-T cells (4\u00d7105 cells/group) in a co-culture with Pfeiffer cells and macrophages polarized from M-THP1 at a 1:3:1 ratio and incubate for 48 hr. The cell killing of CAR-T toward Pfeiffer cells was determined using a LDH cytotoxicity test kit (Dojindo Molecular Technologies, Inc) and measured at 0, 24, and 48 hr after cell co-culture.\n\n### Cellular and mitochondrial ROS detection\n\nROS was measured using CellROX Deep Red Reagent (Invitrogen) and MitoTracker Green FM Dye (Invitrogen) (Lagadinou et al., 2013; Minai et al., 2013). Briefly, cells were co-cultured for 24 hr followed by loading with CellROX dye (5 mM) and MitoTracker Green dye (100 nM) at 37\u00b0C for 30 min, then analyzed by flow cytometry. The data were analyzed using Flowjo software (Tree Star Inc, Ashland, OR).\n\n### Xenograft tumor model\n\nFemale 6\u20138-week-old NOD/Shi-scid IL-2R\u03b3(null) (NOG) mice weighing 20\u00b11.6 g (n=36, Vitonlihua Experimental Animal Technology Co., Ltd, Beijing, China) were injected with 5\u00d7106 Pfeiffer cells expressing luciferase by subcutaneous injection on each side. Established tumors were monitored by bioluminescence imaging (BLI). Upon confirmation of engraftment after 25 days, the mice were randomized into three groups and treated by tail vein injection of 5\u00d7106 CD19 CAR-T cells and 2.5\u00d7106 M-THP1. At the same time, 5\u00d7106 cells/mice of hMSCsshSTC1 or hMSCsshCtrl were injected into multi-points of the tumor area. Tumor progression was photographed with BLI following intraperitoneal injection with D-luciferin (Goldbio, 150 mg/kg) at 14, 28, and 38 days. All the mice were sacrificed when either experimental or humane endpoints were reached. All animal experiments and procedures were approved by the Ethics Committee of Tianjin First Central Hospital (Tianjin, China. #2021-SYDWLL-000301).\n\n### Immunohistochemical analysis of IL-1\u03b2, CD4+, CD8+, and Treg cells in vivo\n\nMice were sacrificed on day 10 after CAR-T/M-THP1 and hMSC injection, and tumor samples were fixed with formalin and embedded in paraffin. Tumor tissues were examined by immunohistochemistry staining as previously described (Jiang et al., 2018). Briefly, the sections were exposed to 3% H2O2 in methanol after deparaffinization and rehydration and then blocked with 1% BSA for 30 min at room temperature. After blocking, the sections were incubated with primary antibodies (all from Servicebio Technology Co., China) for IL-1\u03b2 (GB11113), CD4+ (GB13064-1), CD8+ (GB13068), and FOXP3 (GB11093) overnight at 4\u00b0C, followed by incubation with peroxidase-conjugated secondary antibodies. IL-1\u03b2+ cells were quantified by measuring the number of stained cells.\n",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "9789548b-7f62-4599-9134-66f09fcd0544",
+      "submission_id": "5220ace2-1c5e-4f91-987b-31e8882916f7",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ping-Chih Ho, https://ror.org/02cn3rm21 Ludwig Institute for Cancer Research Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82934.sa0](https://doi.org/10.7554/eLife.82934.sa0)\n\nThis study uncovers the contributions of MSC on modulating CAR T-cell behaviour. Based on the importance in basic biology and its immediate impact on translational potential, all reviewers are satisfied on the advances in this study.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Ping-Chih Ho, https://ror.org/02cn3rm21 Ludwig Institute for Cancer Research Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82934.sa1](https://doi.org/10.7554/eLife.82934.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Mesenchymal stem cell suppresses the efficacy of CAR-T toward killing lymphoma cells by modulating the microenvironment through stanniocalcin-1\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, one of whom is a member of our board of Reviewing Editors, and the evaluation has been overseen by Tadatsugu Taniguchi as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe mechanistic understanding will be improved if new data can be included. Please pay attention to the following points.\n\n1) How STC1 controls changes in MSCs' ability for hampering CAR T cell-mediated anti-tumor responses is unclear.\n\n2) What does the author think about using MSC with STC-1 knockout? Can it still help reduce toxicity while maintaining CAR-T efficacy? This might be a potential application.\n\nReviewer #1 (Recommendations for the authors):\n\nOverall, the mechanistic part of this manuscript should be largely improved. Moreover, a careful evaluation of how MSCs modulate CAR T cell properties and differentiation should be examined. In addition, the methodology part should be elaborated since it is vague in many experimental settings.\n\nReviewer #2 (Recommendations for the authors):\n\n1. Were all experiments repeated at least three times? This info should be stated in methods or figure legend. statistical significance should be added to Figure 1B and figure 4D.\n\n2. Page 8, how was CAR-T cytotoxicity determined, isolated Pfeiffer cell or the total cell co-culture? Similarly, was ROS determined specifically in macrophage, or the cell co-culture?\n\n3. The fonts in Figure 1C are rather small, and should be enlarged.\n\n4. What are the green dots in Figure 1 G's right panel? There should be some explanation either in legend or text.\n\n5. Quantitation of protein expression level should be added in Figure 2F western blot.\n",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "be6681a3-d1a9-4dc5-809a-d47aa085489b",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C1",
+      "claim": "CAR-T therapy has produced unprecedented clinical outcomes for patients with hematologic malignancies.",
+      "claim_type": "EXPLICIT",
+      "source": "Advances in chimeric antigen receptor modified T cell therapy (CAR-T) in recent years have shown enormous promise in cancer immunotherapy, which has produced unprecedented clinical outcomes, most notably for patients with hematologic malignancies (Singh et al., 2016; Park et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Singh et al., 2016 and Park et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "6c57c0b9-ef6c-41b2-8ac8-ffb936fee4cc",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C2",
+      "claim": "CAR-T therapy is associated with severe toxicity and side effects including cytokine release syndrome (CRS) and neurotoxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the striking achievements, CAR-T therapy is also facing many challenges such as the treatment-related severe toxicity and side effects, including cytokine release syndrome (CRS) and neurotoxicity (Hong et al., 2020; Freyer and Porter, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hong et al., 2020 and Freyer and Porter, 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "1ffa6e77-fea7-4f7a-8089-d5b835474899",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C3",
+      "claim": "CRS is the most common acute toxicity associated with CAR-T therapy that causes fever, hypotension, and respiratory insufficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "CRS is the most common acute toxicity associated with an excessive immune response that causes fever, hypotension, and respiratory insufficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established scientific knowledge about CRS symptoms",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "858d4320-04f9-46dd-bea0-29b6fde0d6cc",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C4",
+      "claim": "CAR-T-induced neurotoxicity exhibits diverse neurologic symptoms such as tremors, expressive aphasia, and impaired attention.",
+      "claim_type": "EXPLICIT",
+      "source": "The neurotoxicity induced by CAR-T therapy exhibits a diverse array of neurologic symptoms such as tremors, expressive aphasia, and impaired attention.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established scientific knowledge about neurotoxicity symptoms",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "0e505b0b-ee30-4a42-b316-32d765881d15",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C5",
+      "claim": "The precise mechanism that causes CAR-T-related life-threatening side effects remains unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "The precise mechanism that causes these life-threatening side effects remains unclear (Freyer and Porter, 2020; Jiang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Freyer and Porter, 2020 and Jiang et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "2097c2c4-4561-4068-904f-7309fc0981f7",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C6",
+      "claim": "The success of CAR-T therapy in treating solid tumors is very limited.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the success of CAR-T therapy in treating solid tumors is still very limited (Martinez and Moon, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Martinez and Moon, 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "9621ae5f-82f8-4105-a131-e6129d111ade",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C7",
+      "claim": "The immunosuppressive tumor microenvironment (TME) is one of the obstacles that diminishes the efficacy of CAR-T therapy, especially for solid tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "The immunosuppressive tumor microenvironment (TME) is one of the obstacles that diminishes the efficacy of CAR-T therapy, especially for solid tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established scientific knowledge about TME effects on CAR-T therapy",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "2bcc34b4-9bcb-4b03-9ad7-963ab5be2fa9",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C8",
+      "claim": "The impact of mesenchymal stem cell (MSC) on CAR-T therapy has been little studied.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the many factors that can modulate TME and immune response, the impact of mesenchymal stem cell (MSC) on CAR-T therapy has been little studied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the literature review presented",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "883361a1-39e1-43d6-bff0-30bf7f9c975a",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C9",
+      "claim": "MSC is a type of adult stem cell with high proliferative activity and multidirectional differentiation capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "MSC is a type of adult stem cell with high proliferative activity and multidirectional differentiation capacity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established scientific knowledge about MSC characteristics",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "ba1d9373-4614-4ab5-b277-ecc6f324a90f",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C10",
+      "claim": "MSCs have paracrine effects that are believed to underlie their therapeutic functions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, MSCs have additional paracrine effects that are believed to underlie their therapeutic functions (Jiang and Xu, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Jiang and Xu, 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "62604173-a5fd-46f7-8fdc-8bc106212d44",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C11",
+      "claim": "MSCs can modulate extracellular matrix, promote angiogenesis, and suppress inflammation and apoptosis by secreting cytokines.",
+      "claim_type": "EXPLICIT",
+      "source": "By secreting a variety of cytokines into the tissue microenvironment, it has been known that MSCs can modulate extracellular matrix, promote angiogenesis, and suppress inflammation and apoptosis (Keating, 2012; Wang et al., 2014; Regmi et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Keating, 2012; Wang et al., 2014; Regmi et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "adc39df7-94a6-439d-b651-eb4c37d4169e",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C12",
+      "claim": "MSC-secreted cytokines such as stromal cell-derived factor 1 and stem cell factor play important roles in hematopoietic and immune regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Some MSC-secreted cytokines, such as stromal cell-derived factor 1 and stem cell factor, play important roles in hematopoietic and immune regulation (Kawaguchi et al., 2019; Markov et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kawaguchi et al., 2019 and Markov et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "4445a91a-664c-4393-a0db-3f58120cd14b",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C13",
+      "claim": "MSCs can modulate the function of monocytic lineages cells, especially macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, studies suggest that MSCs can modulate the function of monocytic lineages cells, especially macrophages (N\u00e9meth et al., 2009; Yl\u00d6stalo et al., 2012; Choi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to N\u00e9meth et al., 2009; Yl\u00d6stalo et al., 2012; Choi et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "bd57c86c-7cd0-4946-9550-cb7d0c62be62",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C14",
+      "claim": "MSCs could directly affect the functionality and cellular responses of T cells, Tregs, and memory T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Some reports also showed that MSCs could directly affect the functionality and cellular responses of T cells, Tregs, and memory T cells (Cen et al., 2019; Tumangelova-Yuzeir et al., 2019; Luque-Campos et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Cen et al., 2019; Tumangelova-Yuzeir et al., 2019; Luque-Campos et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "bddb9b4f-eb28-4a8f-8ba8-970bd32c811c",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C15",
+      "claim": "Human mesenchymal stem cells (hMSCs) could be activated by lipopolysaccharide (LPS)-stimulated macrophages to increase the expression and secretion of stanniocalcin-1 (STC1).",
+      "claim_type": "EXPLICIT",
+      "source": "It was reported that human mesenchymal stem cells (hMSCs) could be activated by lipopolysaccharide (LPS)-stimulated macrophages to increase the expression and secretion of stanniocalcin-1 (STC1) (Oh et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Oh et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "932c3afd-4158-4796-b3cf-0222b0dd891c",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C16",
+      "claim": "STC1 was originally identified as a calcium/phosphate regulating hormone in bony fishes.",
+      "claim_type": "EXPLICIT",
+      "source": "STC1 was a mitochondria-related glycoprotein originally identified as a calcium/phosphate regulating hormone in bony fishes, and later on, it was found to be a pleiotropic factor involved in various degenerative diseases such as ocular and renal disease, as well as idiopathic pulmonary fibrosis (Yeung et al., 2012; Ohkouchi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Yeung et al., 2012 and Ohkouchi et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "0c49c60a-2fe3-4dcb-bf11-1427126ca8e7",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C17",
+      "claim": "STC1 is a pleiotropic factor involved in various degenerative diseases such as ocular and renal disease, as well as idiopathic pulmonary fibrosis.",
+      "claim_type": "EXPLICIT",
+      "source": "STC1 was a mitochondria-related glycoprotein originally identified as a calcium/phosphate regulating hormone in bony fishes, and later on, it was found to be a pleiotropic factor involved in various degenerative diseases such as ocular and renal disease, as well as idiopathic pulmonary fibrosis (Yeung et al., 2012; Ohkouchi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Yeung et al., 2012 and Ohkouchi et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "a58c1634-5087-4745-a9ed-6ff147e17164",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C18",
+      "claim": "STC1 could improve the cell survival and regeneration of MSCs in a paracrine fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "STC1 could improve the cell survival and regeneration of MSCs in a paracrine fashion (Ono et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ono et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "b5a08c33-c8da-429b-9fcc-1a2428fb94ac",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C19",
+      "claim": "STC1 played an oncogenic role in various types of tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "There was also evidence suggesting that STC1 played an oncogenic role in various types of tumors (Du et al., 2011; Liu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Du et al., 2011 and Liu et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "02e24eee-503c-49d6-b460-70c96197f4f1",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C20",
+      "claim": "High STC1 expression is associated with the poor clinical outcome of breast cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on a retrospective study of ~1500 clinical samples, it was concluded that high STC1 expression is associated with the poor clinical outcome of breast cancer (Chang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chang et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "3ebe3c63-cedb-4939-a711-e669d3f16813",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C21",
+      "claim": "STC1 is involved in several oxidative and cancer-related signaling pathways, such as NF-\u03baB, extracellular-signal-regulated kinase (ERK), and c-Jun NH(2)-terminal kinase (JNK) pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "It was proved that STC1 is involved in several oxidative and cancer-related signaling pathways, such as NF-\u03baB, extracellular-signal-regulated kinase (ERK), and c-Jun NH(2)-terminal kinase (JNK) pathways (Nguyen et al., 2009; Chan et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Nguyen et al., 2009 and Chan et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "7d3e6bb9-be60-45e5-892e-0628fd4752a6",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C22",
+      "claim": "The expression and secretion of STC1 in cancer tissue can be stimulated by external stimuli, including external cytokines and oxidative stress.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression and secretion of STC1 in cancer tissue can be stimulated by external stimuli, including external cytokines and oxidative stress (Nguyen et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Nguyen et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "2d44ab81-08d3-4e79-9873-da375b45ee73",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C23",
+      "claim": "Under hypoxia conditions, STC1 could be modulated by Hypoxia-inducible factor-1 (HIF-1) to facilitate the reprogramming of tumor metabolism from oxidative to glycolytic metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Under hypoxia conditions, STC1 could be modulated by Hypoxia-inducible factor-1 (HIF-1) to facilitate the reprogramming of tumor metabolism from oxidative to glycolytic metabolism (Yeung et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yeung et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "0f373bc1-41b9-411a-9779-89c50a7bacf3",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C24",
+      "claim": "STC1 was reported to participate in the process of epithelial-to-mesenchymal transition, which is associated with tumor invasion and the reshape of the tumor microenvironment, as well as increasing therapy resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "STC1 was also reported to participate in the process of epithelial-to-mesenchymal transition, which is associated with tumor invasion and the reshape of the tumor microenvironment, as well as increasing therapy resistance (Pastushenko and Blanpain, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pastushenko and Blanpain, 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "f41f0830-d01a-4fe2-8430-9b8daf0ffbe0",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C25",
+      "claim": "Stable knockdown of STC1 in hMSC inhibited cell migration.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate whether knockdown of STC1 affects cell migration, wound healing and transwell chamber assays were performed. After creating a 'scratch' in a monolayer of hMSCs, the closure of the gap was determined after 24 hr. As shown in Figure 1D, compared to control hMSCs, the gap was less filled in hMSCshSTC1. The inhibitory effect on cell migration was further confirmed by a transwell assay. As shown in Figure 1E, there were significant migration and invasion observed in hMSCsshCtrl, whereas there was a >30% reduction in migration across the transwell chamber membrane in hMSCsshSTC1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from wound healing and transwell assays shown in Figure 1D and 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "d68003d4-3094-4a3f-a384-c3071213639b",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C26",
+      "claim": "Stable knockdown of STC1 in hMSC slightly suppressed cell proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "STC1 stable knockdown in hMSCs exhibited a minor effect in cell survival (Figure 1B) and slightly reduced proliferation rate based on the small increase in the proportion of cells in G0/G1 phases versus that in the S phase (Figure 1C) as determined by MTT (3-[4,5-dimethylthiazol-2-yl]-2,5 diphenyl tetrazolium bromide) and Fluorescence-activated Cell Sorting (FACS) analysis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from MTT and FACS analysis shown in Figure 1B and 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "ca73f4ec-bfa6-4d63-a018-af4b5ccc7ae2",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C27",
+      "claim": "Knockdown of STC1 did not cause apoptosis of hMSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "To further determine whether knockdown of STC1 may have any lethal effect, apoptosis was determined by two different assays. To measure the early apoptosis, cells were stained with the Alexa Fluor 488 annexin V and the propidium iodide (PI) followed by flow cytometry to detect apoptosis-associated phosphatidylserine (PS) expression and membrane permeability (Figure 1F). Parallelly, no DNA fragmentation was detected as determined with the TUNEL assay (Figure 1G, the green dots were from the background due to overexposure). Both studies showed that knockdown of STC1 did not cause apoptosis of hMSCs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from annexin V/PI staining and TUNEL assay shown in Figure 1F and 1G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "b6e34119-94a8-4d9b-a44a-4549e512aadc",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C28",
+      "claim": "The presence of hMSCs inhibited CAR-T cell killing activity toward Pfeiffer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2A, 67% of Pfeiffer cells were killed after being exposed to CAR-T cells for 24 hr, and 93% were killed at 48 hr as compared to mock-treated control. After adding hMSCs into the co-culture, the cell-killing activity of CAR-T was significantly inhibited (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from LDH cytotoxicity assay shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "924197f3-d7f7-4804-a460-baa97c2e3273",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C29",
+      "claim": "Knockdown of STC1 in hMSCs completely abrogated the inhibition of CAR-T cytotoxicity by hMSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the inhibitory effect of hMSCs on CAR-T cytotoxicity could be completely abrogated if knockdown STC1 gene in hMSCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from LDH cytotoxicity assay shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "1bf83613-44ce-44bc-b834-6b96b5dc4abe",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C30",
+      "claim": "Co-culturing with hMSCs caused an increase of CD4+ T cells and a decrease of CD8+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2B and C, the ratio between CD4+ and CD8+ was about 1:4 when there were no hMSCs in co-culture (Figure 2C). However, the addition of hMSC caused a significant increase of CD4+ and a decrease of CD8+ T cells (Figure 2B), resulting in a ratio change to 2:1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from flow cytometry shown in Figure 2B and 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "c639e764-39dc-47ec-a2a6-a6435afd3ff2",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C31",
+      "claim": "Co-culturing with hMSCs caused an increase of Treg cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the change of CD4+ T cells, the percentage of regulatory T cells (Treg) was also significantly increased from ~3 to 12% when co-culture with hMSC (Figure 2D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from flow cytometry shown in Figure 2D and 2E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "cba01268-1047-4fa9-8e48-62816ab17d33",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C32",
+      "claim": "Using hMSCshSTC1, all the changes in T cell subsets were completely reversed back to the level similar to that of co-culture without hMSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "When using hMSCshSTC1, all the changes were completely reversed back to the level similar to that of co-culture without hMSCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from flow cytometry shown in Figure 2B-E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "9db8605a-e85f-4e4d-9783-55cffab53743",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C33",
+      "claim": "CD8+ T cells are directly responsible for specific lytic activity against lymphoma.",
+      "claim_type": "EXPLICIT",
+      "source": "This explains the reduced CAR-T cytotoxicity since CD8+ T cells are directly responsible for specific lytic activity against lymphoma (Sommermeyer et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sommermeyer et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "f233ffa6-d21b-435c-b85b-6e8d7f6cd745",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C34",
+      "claim": "Tregs account for 5\u201310% of the total number of CD4+ T cells and play a role in suppressing the function of T cells and other immune cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Tregs, which account for 5\u201310% of the total number of CD4+ T cells, are known to play a role in suppressing the function of T cells and other immune cells (Zhang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zhang et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "2351201e-6a1a-4e8b-8978-db0123942220",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C35",
+      "claim": "The addition of hMSC to the cell co-culture stimulated the expression of indoleamine 2,3-dioxygenase (IDO) and programmed cell death-ligand 1 (PD-L1).",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2F, the addition of hMSC to the cell co-culture stimulated the expression of indoleamine 2,3-dioxygenase (IDO) and programmed cell death-ligand 1 (PD-L1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from Western blot shown in Figure 2F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "1443df2b-c573-466f-81f6-8d7757f1ed78",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C36",
+      "claim": "IDO is an intracellular enzyme that converts tryptophan into inhibitory metabolites for T-cell activity.",
+      "claim_type": "EXPLICIT",
+      "source": "IDO is an intracellular enzyme that converts tryptophan into inhibitory metabolites for T-cell activity (Ninomiya et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ninomiya et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "0862ceb5-65fe-431c-a208-895d061593f4",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C37",
+      "claim": "PD-L1 is expressed in tumor cells and immune cells contributing to the immune-suppressive TME.",
+      "claim_type": "EXPLICIT",
+      "source": "PD-L1 is expressed in tumor cells and immune cells contributing to the immune-suppressive TME (Ribas and Hu-Lieskovan, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ribas and Hu-Lieskovan, 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "a722457c-a677-4a0b-a418-092d349713e9",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C38",
+      "claim": "When using hMSCshSTC1, the expression level of IDO and PD-L1 was both significantly reduced by more than 50%.",
+      "claim_type": "EXPLICIT",
+      "source": "When using hMSCshSTC1, the expression level of IDO and PD-L1 was both significantly reduced by more than 50%, though still higher than that without hMSC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from Western blot shown in Figure 2F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "be48fe89-81f9-4fa1-baa1-3e2c8e42616a",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C39",
+      "claim": "Macrophages could activate hMSCs to secrete STC1.",
+      "claim_type": "EXPLICIT",
+      "source": "In the co-culture model, M2 macrophages were included since a previous study showed that macrophages could activate hMSCs to secrete STC1 (Cen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cen et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "c877f966-99cf-4428-bdfc-7c073932b5fb",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C40",
+      "claim": "The macrophage is a critical part of immune response and an important regulator of immunotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the macrophage is a critical part of immune response and an important regulator of immunotherapy (DeNardo and Ruffell, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to DeNardo and Ruffell, 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "06fa631c-670f-450a-8ee1-deb7717a325e",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C41",
+      "claim": "The NLRP3 inflammasome is a critical component of the innate immune system mediating caspase-1 activation and proinflammatory cytokines secretion in response to harmful stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "The NLRP3 inflammasome is a critical component of the innate immune system mediating caspase-1 activation and proinflammatory cytokines secretion in response to harmful stimuli such as infection and endogenous stress (Menu and Vince, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Menu and Vince, 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "311488f0-ad03-409b-b45a-41ac4511da5d",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C42",
+      "claim": "The release of cleaved caspase-1 p20 was detected after the PMA polarization of THP-1 cells to form the M1 macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3A, the release of cleaved caspase-1 p20 in cell lysates, which is the indicator of caspase-1 activation, was detected after the PMA polarization of THP-1 cells to form the M1 macrophages (M-THP1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from Western blot shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "ef59285d-45e5-49e1-bd4b-cf22f04df554",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C43",
+      "claim": "Following co-culture with CD19 CAR-T, the level of cleaved caspase-1 was significantly upregulated.",
+      "claim_type": "EXPLICIT",
+      "source": "Following co-culture with CD19 CAR-T, the level of cleaved caspase-1 was significantly upregulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from Western blot shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "2176077d-1afa-4087-83ea-9f8a33695032",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C44",
+      "claim": "The increase of active caspase-1 was abrogated when hMSCs were added into the co-culture.",
+      "claim_type": "EXPLICIT",
+      "source": "The increase of active caspase-1 was abrogated when hMSCs were added into the co-culture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from Western blot shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "b40f1ec4-5f1a-4100-a938-ac0628d1a6c2",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C45",
+      "claim": "Knockdown of STC1 led to another reverse and completely blocked the inhibitory function of hMSCs on active caspase-1.",
+      "claim_type": "EXPLICIT",
+      "source": "knock-down of STC1 led to another reverse and completely blocked the inhibitory function of hMSCs (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from Western blot shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "39329ac4-8e8a-49e9-be1a-18afdec40ec8",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C46",
+      "claim": "The cleaved IL-1\u03b2 mature form and absent-in-melanoma 2 (AIM2) are two key components of the inflammasome.",
+      "claim_type": "EXPLICIT",
+      "source": "Concomitant with the reduction in active caspase-1, the cleaved IL-1\u03b2 mature form and absent-in-melanoma 2 (AIM2), two key components of the inflammasome (Kelley et al., 2019), were both increasingly expressed following M-THP1 polarization and further incubation with CAR-T (Figure 3A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kelley et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "d59d5929-8689-431e-a7cb-8e8de33e9e11",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C47",
+      "claim": "The addition of hMSC in the cell co-culture showed a strong inhibition of IL-1\u03b2 and AIM2, and their expression level was returned to the base level of Pfeiffer plus CAR-T.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the partial inhibition of the active caspase-1 formation, the addition of hMSC in the cell co-culture showed a stronger inhibition of these two proteins, and their expression level was returned to the base level of Pfeiffer plus CAR-T (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from Western blot shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "9908c2ca-3831-4b1a-adb3-cb3053ac8df0",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C48",
+      "claim": "The immune-suppressive effect of hMSC was through its impact on macrophages, not CAR-T or Pfeiffer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that the immune-suppressive effect of hMSC was through its impact on macrophages, not CAR-T or Pfeiffer cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from the experimental data showing effects on macrophage markers",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "f110f4a9-4491-409a-a0fd-24a6f163e059",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C49",
+      "claim": "Knockdown of STC1 abrogated the inhibition of hMSC on IL-1\u03b2 and AIM2.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of STC1 abrogated the inhibition of hMSC on IL-1\u03b2 and AIM2 (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from Western blot shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "e7e068c8-31c8-460d-9884-8381867b3609",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C50",
+      "claim": "The levels of IL-1\u03b2 in the supernatants measured by ELISA showed similar results as cell lysate.",
+      "claim_type": "EXPLICIT",
+      "source": "The levels of IL-1\u03b2 in the supernatants measured by ELISA showed similar results as cell lysate (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from ELISA shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "cbc8acae-2574-4ae1-a052-98a4d9b438d3",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C51",
+      "claim": "Mitochondrial dysfunction is one of the major stimuli that activates the NLRP3 inflammasome.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitochondrial dysfunction is one of the major stimuli that activates the NLRP3 inflammasome, and it was reported that exogenous STC1 is internalized by macrophages within 10 min and localizes to mitochondria to suppress superoxide generation (Wang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established scientific knowledge and supported by citation to Wang et al., 2009",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "7048f3af-f01d-40c0-a9ab-480f520f421a",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C52",
+      "claim": "Exogenous STC1 is internalized by macrophages within 10 min and localizes to mitochondria to suppress superoxide generation.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitochondrial dysfunction is one of the major stimuli that activates the NLRP3 inflammasome, and it was reported that exogenous STC1 is internalized by macrophages within 10 min and localizes to mitochondria to suppress superoxide generation (Wang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wang et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "2e3b3cc1-4454-4105-9196-ba6857e37bb9",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C53",
+      "claim": "The presence of hMSCsshCtrl markedly suppressed both the cellular and mitochondrial ROS induced by the co-culture of CAR-T cells, tumor cells, and macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3C and D, the presence of hMSCsshCtrl markedly suppressed both the cellular and mitochondrial ROS induced by the co-culture of CAR-T cells, tumor cells, and macrophages.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from flow cytometry shown in Figure 3C and 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "e1bd5c38-6dbf-4c0c-ad64-d4af4f1a94b0",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C54",
+      "claim": "Knockdown of STC1 eliminated the function of hMSC in suppressing ROS.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of STC1 eliminated the function of hMSC in suppressing ROS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from flow cytometry shown in Figure 3C and 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "881c0280-97a4-422f-8f6d-07041394093d",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C55",
+      "claim": "hMSCs inhibited NLRP3 inflammasome activation in macrophages by inhibiting the oxidative burst.",
+      "claim_type": "EXPLICIT",
+      "source": "This result correlates well with the expression of caspase-1, IL-1\u03b2, and AIM, suggesting that hMSCs inhibited NLRP3 inflammasome activation in macrophages was most likely by inhibiting the oxidative burst.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from the correlation between ROS suppression and inflammasome markers",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "739b1f48-23a6-40a3-9014-6fd7ac0b04ff",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C56",
+      "claim": "CD19 CAR-T treatment combined with the injection of hMSCshSTC1 achieved a significant curative effect, and the tumors nearly disappeared at day 38 in xenograft mice.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 4A, CD19 CAR-T treatment combined with the injection of hMSCshSTC1 achieved a significant curative effect, and the tumors nearly disappeared at day 38.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from bioluminescence imaging shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "620db89c-1fba-4c37-99c6-8703f029e686",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C57",
+      "claim": "The hMSCshCtrl group showed a continued increase in tumor size and spreading of tumor in xenograft mice.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the hMSCshCtrl group showed a continued increase in tumor size and spreading of tumor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from bioluminescence imaging shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "0f981d87-6f2a-4cfa-959b-08554587730c",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C58",
+      "claim": "The number of IL-1\u03b2 positive cells ranged from 76 to 100% in the hMSCshSTC1 group, while it ranged from 5 to 20% in the hMSCshCtrl group in tumor tissue on day 10.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the immunohistochemical analysis of IL-1\u03b2 in tumor tissue on day 10, the number of positive cells (brownish-yellow staining) ranged from 76 to 100% in the hMSCshSTC1 group, while it ranged from 5 to 20% in the hMSCshCtrl group, indicating that hMSC could suppress TME and STC1 knockdown significantly diminished this impact (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from immunohistochemistry shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "1cb7f579-93c1-4b57-8810-c0693895fd94",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C59",
+      "claim": "A large amount of CD4+ T cells were detected in the hMSCshCtrl group but much less in the hMSCshSTC1 group in tumor tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the results in vitro, a large amount of CD4+ T cells were detected in the hMSCshCtrl group but much less in the hMSCshSTC1 group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from immunohistochemistry shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "899f36b0-50ea-4169-81a6-b4e10e45248d",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C60",
+      "claim": "The amount of CD8+ T cells was significantly increased in the hMSCshSTC1 group compared to that of the hMSCshCtrl group in tumor tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "On the contrary, the amount of CD8+ T cells was significantly increased in the hMSCshSTC1 group compared to that of the hMSCshCtrl group (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from immunohistochemistry shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "764299fb-d577-48ac-8ba3-25ffa09aeff3",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C61",
+      "claim": "The amount of Treg cells was evidently increased in the hMSCshCtrl group compared to that of the hMSCshSTC1 group in tumor tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the staining of FOXP3 (forkhead box P3), a master regulator involved in the development of Treg cells, the amount of Treg cells was also evidently increased in the hMSCshCtrl group compared to that of the hMSCshSTC1 group (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from immunohistochemistry shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "cb31e8a2-6ede-4b8b-a90f-6d14a2395fcc",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C62",
+      "claim": "Mice in CAR-T combined with the hMSCshSTC1 group had the longest survival with no death by day 38.",
+      "claim_type": "EXPLICIT",
+      "source": "The survival time of mice demonstrated that mice in CAR-T combined with the hMSCshSTC1 group had the longest survival with no death by day 38 (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from survival analysis shown in Figure 4D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "3815b0ab-549b-4f31-bd2e-aad10afdba9f",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C63",
+      "claim": "Compared to the control group with no CAR-T treatment, tumor spreading in the hMSCshCtrl group was slower, and all survived for 6 days more.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the control group with no CAR-T treatment, tumor spreading in the hMSCshCtrl group was slower, and all survived for 6 days more.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from survival analysis shown in Figure 4D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "56b21979-9b22-4c57-95a9-089f0dd5f689",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C64",
+      "claim": "STC1 is an important factor affecting CAR-T therapy efficacy in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "These results confirmed the inhibitory effects of hMSC on CAR-T therapy under in vivo situations and demonstrated that STC1 is an important factor affecting therapy efficacy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the in vivo experimental results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "830b3221-fbb7-428d-a9db-e81468f73d89",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C65",
+      "claim": "The presence of MSCs in TME may be an important source of cancer treatment resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "In the current study, we presented evidences that the presence of MSCs in TME may also be an important source of cancer treatment resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the experimental data presented in the study",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "07cdaf3e-990c-4b1f-9ef7-1895c27d5d36",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C66",
+      "claim": "MSCs showed a strong suppressive function on CAR-T efficacy toward lymphoma cells by modulating TME.",
+      "claim_type": "EXPLICIT",
+      "source": "By modulating TME, MSCs showed a strong suppressive function on CAR-T efficacy toward lymphoma cells, and interestingly, the presence of the STC1 gene played a critical role.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from in vitro and in vivo studies",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "807a20f7-a81a-4ca5-84e9-aba317dc1310",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C67",
+      "claim": "The role of STC1 in cancer is paradoxical, with some reports showing it exerts an oncogenic role, whereas other studies suggested the opposite.",
+      "claim_type": "EXPLICIT",
+      "source": "The role of STC1 in cancer is paradoxical. Some reports showed that it exerts an oncogenic role, whereas other studies suggested the opposite (Chen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chen et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "f183aa37-768e-4457-8007-dc04ce3831bd",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C68",
+      "claim": "STC1 triggers tumor angiogenesis by upregulating the expression of VEGF in gastric cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The aberrant expression of STC1 has been reported to impact various types of cancer, such as triggering tumor angiogenesis by upregulating the expression of VEGF in gastric cancer cells (He et al., 2011), causing tumorigenesis and poor clinical outcomes in ovarian, colorectal, and lung cancers (Yeung et al., 2012; Chen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to He et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "3702e9d5-c322-49bf-a35a-0c99520eedcc",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C69",
+      "claim": "STC1 causes tumorigenesis and poor clinical outcomes in ovarian, colorectal, and lung cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "The aberrant expression of STC1 has been reported to impact various types of cancer, such as triggering tumor angiogenesis by upregulating the expression of VEGF in gastric cancer cells (He et al., 2011), causing tumorigenesis and poor clinical outcomes in ovarian, colorectal, and lung cancers (Yeung et al., 2012; Chen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Yeung et al., 2012 and Chen et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "b892c747-57d5-4852-b8a0-0418ae357643",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C70",
+      "claim": "The presence of STC1 is critical for MSC to exert its immunosuppressive role by inhibiting cytotoxic T cell subsets, activating some key immune suppressive/escape mechanisms, and crosstalk with other immune cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrated that the presence of STC1 is critical for MSC to exert its immunosuppressive role by inhibiting cytotoxic T cell subsets, activating some key immune suppressive/escape mechanisms, and crosstalk with other immune cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the experimental data presented in the study",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "a2c27bde-3a98-488b-bb1e-51e4ded67d23",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C71",
+      "claim": "The suppression of CD8+ T cells by MSCs was completely abrogated if knockdown STC1 in MSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the suppression of CD8+ T cells was completely abrogated if knockdown STC1 in MSCs, it is clear that STC1 played a key role here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from flow cytometry",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "701c5669-78ed-4724-8a7a-e5aed68416b0",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C72",
+      "claim": "MSCs' modulation of the T cell subsets is most likely indirectly via altered cytokine expression or other secondary molecules activated by STC1.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, considering that STC1 is secreted into the extracellular matrix in a paracrine manner, MSCs' modulation of the T cell subsets is most likely indirectly via altered cytokine expression or other secondary molecules activated by STC1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from the paracrine nature of STC1",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "62029e41-8eb3-4738-86d9-27cb7428376a",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C73",
+      "claim": "STC-1 negatively correlates with immunotherapy ef\ufb01cacy and T cell activation by trapping calreticulin, which abrogates membrane calreticulin-directed antigen presentation function and phagocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with our study, it was recently reported that STC-1 negatively correlates with immunotherapy ef\ufb01cacy and T cell activation by trapping calreticulin, which abrogates membrane calreticulin-directed antigen presentation function and phagocytosis (Lin et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lin et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "b51992f3-c7c7-45f6-a545-a0e72b836750",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C74",
+      "claim": "Upregulation of IDO is an endogenous feedback mechanism controlling excessive immune responses, which can be produced both by tumor cells and macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Upregulation of IDO is an endogenous feedback mechanism controlling excessive immune responses, which can be produced both by tumor cells and macrophages (Uyttenhove et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Uyttenhove et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "c65b1a7e-585d-4cef-a723-d928903ff724",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C75",
+      "claim": "IDO-mediated formation of immunosuppressive metabolites can inhibit T-cell proliferation and induce T-cell death through the dioxin receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "IDO-mediated formation of immunosuppressive metabolites can inhibit T-cell proliferation and induce T-cell death through the dioxin receptor (Opitz et al., 2011; Frumento et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Opitz et al., 2011 and Frumento et al., 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "afdfc228-d435-496f-b300-8152d418f25b",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C76",
+      "claim": "PD-L1 is a well-characterized molecule of the major escape mechanism of immunotherapy by inhibiting PD-1-mediated effector T cell function and downregulating antigen tolerance.",
+      "claim_type": "EXPLICIT",
+      "source": "PD-L1 is a well-characterized molecule of the major escape mechanism of immunotherapy by inhibiting PD-1-mediated effector T cell function and downregulating antigen tolerance (Ribas and Hu-Lieskovan, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ribas and Hu-Lieskovan, 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "462ed59d-2e46-4f68-b791-ad214b206818",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C77",
+      "claim": "There have been numerous studies reporting the bidirectional interactions between MSCs and cancer cells, resulting in regulating the expression of PD-L1 on the surface of various cancer cells or TME.",
+      "claim_type": "EXPLICIT",
+      "source": "There have been numerous studies reporting the bidirectional interactions between MSCs and cancer cells, resulting in regulating the expression of PD-L1 on the surface of various cancer cells or TME (Aboulkheyr and Bigdeli, 2022; Krueger et al., 2019; O'Malley et al., 2018; Sun et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Aboulkheyr and Bigdeli, 2022; Krueger et al., 2019; O'Malley et al., 2018; Sun et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "e9d898f7-f89d-4a02-8c8b-e2ad0398310f",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C78",
+      "claim": "The upregulated expression of both IDO and PD-L1 by MSCs was much reduced if the STC1 gene was knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, here we demonstrated that the upregulated expression of both IDO and PD-L1 by MSCs was much reduced if the STC1 gene was knockdown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from Western blot",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "e5e6d006-779b-4f03-b1b3-0aa12e53ff0e",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C79",
+      "claim": "The paracrine activity of MSCs is now widely recognized as an important cellular mechanism to communicate with immune cells and various other cell types in TME.",
+      "claim_type": "EXPLICIT",
+      "source": "The paracrine activity of MSCs is now widely recognized as an important cellular mechanism to communicate with immune cells and various other cell types in TME (Teixeira et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Teixeira et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "86cafc3f-d9a7-4c0a-8530-21bbf4f08e75",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C80",
+      "claim": "The addition of hMSCs to the co-culture cell model suppressed the formation of NLRP3 inflammasome in macrophages as determined by the downregulation of IL-1\u03b2, the activated caspase-1, and AIM.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous studies, we found that the addition of hMSCs to the co-culture cell model suppressed the formation of NLRP3 inflammasome in macrophages as determined by the downregulation of some key proteins including IL-1\u03b2, the activated caspase-1, and AIM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from Western blot and ELISA",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "1d4f614b-674f-4270-8928-456bb0595ec0",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C81",
+      "claim": "CD4+ T cells could inhibit inflammasome-mediated caspase-1 activation and IL-1\u03b2 release through TNF ligands or by interferon signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "It was reported that CD4+ T cells could inhibit inflammasome-mediated caspase-1 activation and IL-1\u03b2 release through TNF ligands or by interferon signaling (Guarda et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Guarda et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "81ca61db-67ba-43d7-8934-5f5395eebc21",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C82",
+      "claim": "The modulation of T-cell subsets and activation of the NLRP3 inflammasome by hMSC appear to be closely connected.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the modulation of T-cell subsets and activation of the NLRP3 inflammasome by hMSC appear to be closely connected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from the experimental data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "017a08a0-3c2a-4206-9327-6de588ddef38",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C83",
+      "claim": "NLRP3 inflammasome is a key factor in the neuroinflammation onset in CNS injuries.",
+      "claim_type": "EXPLICIT",
+      "source": "Since NLRP3 inflammasome is a key factor in the neuroinflammation onset in CNS injuries (Menu and Vince, 2011), the suppression of NLRP3 inflammasome by hMSC may be potentially beneficial in reducing the exacerbated immune responses associated with CAR-T therapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Menu and Vince, 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "46b01aa3-bc13-48fd-b52a-83bedc350426",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C84",
+      "claim": "The suppression of NLRP3 inflammasome by hMSC may be potentially beneficial in reducing the exacerbated immune responses associated with CAR-T therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Since NLRP3 inflammasome is a key factor in the neuroinflammation onset in CNS injuries (Menu and Vince, 2011), the suppression of NLRP3 inflammasome by hMSC may be potentially beneficial in reducing the exacerbated immune responses associated with CAR-T therapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Involves speculative reasoning about potential therapeutic benefits",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "b35fb575-709c-488a-a10b-f272941025fa",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C85",
+      "claim": "The formation of the NLRP3 inflammasome was reported to be through NF-\u03baB-dependent transcription of IL-1\u03b2, IL-18, and NLRP3.",
+      "claim_type": "EXPLICIT",
+      "source": "The formation of the NLRP3 inflammasome was reported to be through NF-\u03baB-dependent transcription of IL-1\u03b2, IL-18, and NLRP3, whereas its activation is triggered by extracellular stimuli such as lysosomal permeability, potassium efflux, and oxidative stress (Kelley et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kelley et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "c3d6287f-c585-4d89-87e7-089494b6adf1",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C86",
+      "claim": "NLRP3 inflammasome activation is triggered by extracellular stimuli such as lysosomal permeability, potassium efflux, and oxidative stress.",
+      "claim_type": "EXPLICIT",
+      "source": "The formation of the NLRP3 inflammasome was reported to be through NF-\u03baB-dependent transcription of IL-1\u03b2, IL-18, and NLRP3, whereas its activation is triggered by extracellular stimuli such as lysosomal permeability, potassium efflux, and oxidative stress (Kelley et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kelley et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "4e8c1b23-5e4e-483f-9d35-baf0256b11ae",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C87",
+      "claim": "LPS-stimulated macrophages stimulate the expression and secretion of STC1 in hMSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "It was reported that LPS-stimulated macrophages do stimulate the expression and secretion of STC1 in hMSCs (Oh et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Oh et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "27caa167-bd30-45a3-a8e7-b8d10c61031e",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C88",
+      "claim": "Knockdown of STC1 deprived the function of hMSC in suppressing all the three markers used in determining NLRP3 inflammasome formation, as well as the suppression of mitochondria ROS production.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data further demonstrated that knockdown of STC1 deprived the function of hMSC in suppressing all the three markers used in the current study in determining NLRP3 inflammasome formation, as well as the suppression of mitochondria ROS production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from Western blot and flow cytometry",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "8a5c516e-8138-4abc-a2b1-f08ebc9730c5",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C89",
+      "claim": "A feedback regulation mechanism exists between hMSC and macrophages during CAR-T therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "These data support the idea that a feedback regulation mechanism exists between hMSC and macrophages during CAR-T therapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from the experimental data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "efa29392-e2ec-447b-85a3-7265b1dc8e29",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C90",
+      "claim": "The tumor-killing efficacy of CAR-T could be inhibited by hMSCs in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the Xenograft mice model, we confirmed that the tumor-killing efficacy of CAR-T could also be inhibited by hMSCs in vivo, whereas knockdown of STC1 effectively abolished the inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from xenograft mouse model",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "ea7a93f4-8172-495b-ab2e-3ef180559a89",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C91",
+      "claim": "Knockdown of STC1 effectively abolished the inhibition of CAR-T efficacy by hMSCs in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the Xenograft mice model, we confirmed that the tumor-killing efficacy of CAR-T could also be inhibited by hMSCs in vivo, whereas knockdown of STC1 effectively abolished the inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from xenograft mouse model",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "71cfa3c0-3785-4727-9c10-d368bcf6c180",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C92",
+      "claim": "The downregulation of CD8+ T cells, upregulation of CD4+ T helper cell subsets, and Tregs were all dependent on the function of STC1 in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunohistochemical data indicated that the downregulation of CD8+ T cells, upregulation of CD4+ T helper cell subsets, and Tregs were all dependent on the function of STC1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from immunohistochemistry",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "a7c38109-77b2-4ec3-bdb2-2cd24e50ba4c",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C93",
+      "claim": "The amount of the injected hMSCs in the xenograft model was much higher than that of the in vivo situation.",
+      "claim_type": "EXPLICIT",
+      "source": "Need to note that the amount of the injected hMSCs was much higher than that of the in vivo situation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Acknowledgment of experimental limitation",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "3a78291d-7d79-47a0-8fcb-1fb01a87f377",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C94",
+      "claim": "STC1 is critical for the immune-suppressive function of hMSC.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the results give a clear indication that STC1 is critical for the immune-suppressive function of hMSC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the experimental data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "d05c02fd-bdd6-40e8-97fe-869fec17f6f6",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C95",
+      "claim": "hMSC has a significant impact in suppressing CAR-T efficacy.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the present study revealed a significant impact of hMSC in suppressing CAR-T efficacy and provided evidence that the STC1 gene played a critical role in the regulation of various immune-suppressive mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from in vitro and in vivo studies",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "63694cec-03fa-4532-88eb-d9badead4485",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C96",
+      "claim": "The STC1 gene played a critical role in the regulation of various immune-suppressive mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the present study revealed a significant impact of hMSC in suppressing CAR-T efficacy and provided evidence that the STC1 gene played a critical role in the regulation of various immune-suppressive mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from in vitro and in vivo studies",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "5fdd4802-9042-47f0-87f3-780f99cf3a21",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C97",
+      "claim": "Activated macrophages or stress signals during CAR-T therapy may prompt MSCs to secret STC-1 into the extracellular matrix of TME.",
+      "claim_type": "EXPLICIT",
+      "source": "In this model, activated macrophages or stress signals during CAR-T therapy may prompt MSCs to secret STC-1 into the extracellular matrix of TME, serving as a pleiotropic factor to negatively impact the function of T cells and stimulate the expression of molecules that inactivate immune responses, ultimately providing an immunosuppressive effect of MSC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Involves speculative reasoning based on the experimental data",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "3b8d17e3-276c-45ff-8c68-4a650fa41f23",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C98",
+      "claim": "STC-1 serves as a pleiotropic factor to negatively impact the function of T cells and stimulate the expression of molecules that inactivate immune responses.",
+      "claim_type": "EXPLICIT",
+      "source": "In this model, activated macrophages or stress signals during CAR-T therapy may prompt MSCs to secret STC-1 into the extracellular matrix of TME, serving as a pleiotropic factor to negatively impact the function of T cells and stimulate the expression of molecules that inactivate immune responses, ultimately providing an immunosuppressive effect of MSC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the experimental data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "fa050a6f-be0c-46ab-a39e-f10fa811e8cb",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C99",
+      "claim": "The findings have potential clinical applications toward improving the efficiency of CAR-T therapy as well as reducing the excessive toxicity by modulating the level of STC1 in TME.",
+      "claim_type": "EXPLICIT",
+      "source": "While further studies are needed to understand the detailed molecular interactions underlying, the findings we presented here are no doubt that would have potential clinical applications toward improving the efficiency of CAR-T therapy as well as reducing the excessive toxicity by modulating the level of STC1 in TME.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Involves speculative reasoning about potential clinical applications",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "f6b86366-e1ee-42d8-a960-022542403178",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C100",
+      "claim": "CAR-T cell-mediated cytotoxicity was significantly inhibited in the presence of MSCs in an in vitro cell co-culture model.",
+      "claim_type": "EXPLICIT",
+      "source": "Using an in vitro cell co-culture model including lymphoma cells and macrophages, here we report that CAR-T cell-mediated cytotoxicity was significantly inhibited in the presence of MSCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from LDH cytotoxicity assay",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "84985f58-190f-4fb0-bf17-5584e72f8475",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C101",
+      "claim": "All the suppressive events hindering CAR-T efficacy could be abrogated if the stanniocalcin-1 (STC1) gene was knockdown in MSC.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, all these suppressive events hindering CAR-T efficacy could be abrogated if the stanniocalcin-1 (STC1) gene, which encodes the glycoprotein hormone STC-1, was knockdown in MSC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from in vitro and in vivo studies",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "120aea3e-9fde-4791-99ee-9073b25ed002",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C102",
+      "claim": "CAR-T function could be inhibited by MSC in vivo, and STC1 played a critical role.",
+      "claim_type": "EXPLICIT",
+      "source": "Using xenograft mice, we confirmed that CAR-T function could also be inhibited by MSC in vivo, and STC1 played a critical role.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from xenograft mouse model",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "7d33eec7-c919-4976-b2c8-2a7bf0a4af1e",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "claim_id": "C103",
+      "claim": "The composition of CD4+ and CD8+ T cell subsets was crucial for CAR-T cell efficacy.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have demonstrated that the composition of CD4+ and CD8+ T cell subsets was crucial for CAR-T cell efficacy (Sommermeyer et al., 2016; Turtle et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Sommermeyer et al., 2016 and Turtle et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2fb5866f-ee58-4ad0-8eba-a0559bc0da39",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Stable knockdown of STC1 in hMSCs inhibited cell migration by >30%, slightly suppressed cell proliferation (increased G0/G1 phase cells), but did not induce apoptosis as measured by annexin V/PI staining and TUNEL assay.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27 are well-supported by multiple complementary assays shown in Figure 1. The wound healing and transwell assays demonstrate migration inhibition, MTT and FACS data show modest proliferation effects, and both annexin V/PI and TUNEL assays confirm no apoptosis. The experimental design is appropriate with proper controls.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "c5bc9736-34a3-4cf2-af32-2f9142afdfea",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "hMSCs significantly inhibited CAR-T cell killing activity toward Pfeiffer lymphoma cells (reducing cytotoxicity from 67% to lower levels at 24h), but this inhibition was completely abrogated when STC1 was knocked down in hMSCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C29 and C100 are supported by LDH cytotoxicity assay data in Figure 2A showing clear differences between control and STC1 knockdown conditions. The rescue experiment with STC1 knockdown provides strong evidence for STC1's critical role. However, exact quantification of inhibition magnitude is not clearly stated in the text.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "112375f1-91ef-45aa-a7d5-2d0cacedaab7",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Co-culturing with hMSCs altered T cell subset composition, increasing CD4+ T cells and Tregs while decreasing CD8+ T cells (changing CD4:CD8 ratio from 1:4 to 2:1, and Tregs from ~3% to 12%). These changes were completely reversed with STC1 knockdown hMSCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32 are well-supported by flow cytometry data in Figure 2B-E showing clear shifts in T cell populations. The reversal with STC1 knockdown provides strong mechanistic evidence. Claim C103 appropriately cites prior literature establishing the importance of CD4/CD8 ratios for CAR-T efficacy, providing context for the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "db00dc6c-b925-40fe-acd2-eba56e3feb5e",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "hMSCs stimulated expression of immunosuppressive proteins IDO and PD-L1 in the co-culture system, with expression reduced by >50% when STC1 was knocked down (though still elevated compared to no hMSC control).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35 and C38 are supported by Western blot data in Figure 2F. Claims C36-C37 appropriately cite literature establishing the immunosuppressive functions of IDO and PD-L1. However, the Western blot lacks quantification and loading controls appear inconsistent. The claim that levels remain 'still higher than without hMSC' (C38) requires more rigorous quantification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "3139a446-da3f-4da9-af65-cc9d6643542d",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "hMSCs suppressed NLRP3 inflammasome activation in macrophages, as evidenced by reduced levels of cleaved caspase-1, IL-1\u03b2, and AIM2. This suppression was dependent on STC1, as knockdown completely blocked the inhibitory function of hMSCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C50 are supported by Western blot (Figure 3A) and ELISA data (Figure 3B) showing consistent patterns across multiple inflammasome markers. The STC1 dependency is demonstrated by rescue experiments. However, the Western blots lack proper quantification, and the claim of 'complete' blockade (C45) may be overstated given the semi-quantitative nature of Western blotting.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "4525ae75-00ed-42ef-b789-65e7573bd9bd",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "hMSCs markedly suppressed both cellular and mitochondrial ROS in the co-culture system, an effect eliminated by STC1 knockdown. This suggests hMSCs inhibit NLRP3 inflammasome activation by suppressing oxidative burst.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55 are supported by flow cytometry data in Figure 3C-D showing clear ROS suppression that is STC1-dependent. Claims C51-C52 appropriately cite literature linking mitochondrial dysfunction to inflammasome activation and STC1's mitochondrial localization. The mechanistic inference (C55) is reasonable given the correlation between ROS and inflammasome markers, though direct causation is not definitively proven.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "ee6a4b5e-12e6-4507-a48c-73358560c97c",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In xenograft mice, CAR-T combined with STC1-knockdown hMSCs achieved significant tumor regression (tumors nearly disappeared by day 38 with 100% survival), while control hMSCs showed continued tumor growth. This demonstrates that hMSCs inhibit CAR-T efficacy in vivo in an STC1-dependent manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57, C62-C63, and C90-C91 are supported by bioluminescence imaging (Figure 4A) and survival data (Figure 4D) showing clear differences between groups. However, the study acknowledges (C93) that hMSC doses were much higher than physiological levels, limiting translational relevance. Sample sizes appear small (n=3 per group based on error bars), which may limit statistical power.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "d0d2ae5a-9c38-44b7-ae8c-418acccfea4b",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Immunohistochemical analysis of tumor tissue showed that STC1 knockdown resulted in increased IL-1\u03b2 positive cells (76-100% vs 5-20%), decreased CD4+ T cells, increased CD8+ T cells, and decreased Tregs compared to control hMSCs, confirming in vivo that these effects are STC1-dependent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C61 and C92 are supported by immunohistochemistry data in Figure 4B. The patterns are consistent with in vitro findings, strengthening the overall conclusions. However, the quantification method for IHC is not clearly described, and the wide ranges reported (e.g., 76-100%) suggest high variability or subjective scoring. More rigorous quantification methods would strengthen these claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "fce102d2-ec3f-477c-8737-ac388a1efe9f",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study demonstrates that STC1 is critical for MSC's immunosuppressive function, acting through multiple mechanisms including modulation of T cell subsets, induction of immunosuppressive molecules, and suppression of inflammasome activation, likely via paracrine signaling and feedback regulation with macrophages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These mechanistic and interpretive claims (C48, C70-C72, C82, C89, C94-C96) are reasonable inferences from the collective experimental data. The consistent reversal of effects with STC1 knockdown across multiple assays provides strong support. However, some claims involve speculation about indirect mechanisms (C72) and feedback loops (C89) that are not directly tested. The paracrine mechanism is inferred from STC1's secreted nature but not directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "71f082e2-4534-432b-a310-d38bc1fc7226",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "MSCs in the tumor microenvironment represent an important source of cancer treatment resistance by strongly suppressing CAR-T efficacy through modulation of the TME, with all suppressive events being STC1-dependent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 and C101 represent the study's main conclusions, which are well-supported by the convergent evidence from multiple in vitro and in vivo experiments. However, the claim that MSCs are an 'important source' of resistance (C65) in clinical settings requires caution, as the experimental model uses supraphysiological MSC doses (acknowledged in C93) and a simplified tumor model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "c2487a3d-f762-499c-a093-8571e1021638",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors speculate that MSC suppression of NLRP3 inflammasome may reduce CAR-T-associated toxicity, and that modulating STC1 levels could have clinical applications for improving CAR-T efficacy and reducing toxicity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C84, C97, and C99 are explicitly speculative (marked as SPECULATION in evidence_type). While the mechanistic data support the possibility, these therapeutic implications are not tested. The connection between inflammasome suppression and reduced neurotoxicity (C84) is particularly speculative, as the study did not measure neurotoxicity or CRS-related outcomes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "867854c9-a46b-4396-91b6-82315821ce7a",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background claims establishing that CAR-T therapy shows promise for hematologic malignancies but faces challenges including severe toxicity (CRS, neurotoxicity), limited efficacy in solid tumors due to immunosuppressive TME, and that MSC impact on CAR-T has been little studied.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8 are appropriately cited background information from the literature that establishes context and rationale for the study. These are standard knowledge claims in the CAR-T field and are properly attributed to relevant citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "9caf0951-55ad-459a-be7d-92ae9b4c078c",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background on MSC biology: MSCs are adult stem cells with proliferative capacity that exert paracrine effects through cytokine secretion, modulating extracellular matrix, angiogenesis, inflammation, and immune cell function including macrophages and T cells. LPS-stimulated macrophages can activate MSCs to secrete STC1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C15 provide well-cited background on MSC biology from the literature, establishing the biological context for investigating MSC-CAR-T interactions. These are appropriately referenced to relevant prior studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "6c7e131c-7d41-4c02-8d10-ff40001e35d0",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background on STC1: Originally identified as a calcium/phosphate hormone in fish, STC1 is a pleiotropic factor involved in degenerative diseases and cancer, with oncogenic roles reported in multiple tumor types. It participates in oxidative stress responses, cancer signaling pathways, metabolic reprogramming, and epithelial-to-mesenchymal transition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C24 provide comprehensive, well-cited background on STC1 biology from the literature. The paradoxical roles of STC1 in cancer (later discussed in C67) are appropriately acknowledged. These background claims establish the rationale for investigating STC1's role in MSC-mediated immunosuppression.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "59921c98-4dc7-4f82-8e52-f3bf54c979dc",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Literature-based mechanistic context claims about T cell biology, immunosuppressive molecules (IDO, PD-L1), inflammasome biology, and MSC-immune cell interactions that provide interpretive framework for the experimental findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C33-C34, C36-C37, C39-C41, C46, C51-C52, C73-C77, C79, C81, C83, C85-C87) are appropriately cited literature references that provide mechanistic context for interpreting the experimental results. They establish the biological significance of the observed changes in T cell subsets, immunosuppressive molecules, and inflammasome components.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "6f221e87-8525-4646-b8f6-633686951b52",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Discussion claims noting that STC1's role in cancer is paradoxical, with evidence for both oncogenic effects (triggering angiogenesis, causing poor outcomes in multiple cancers) and opposite effects in other contexts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C69 appropriately acknowledge the complexity and context-dependency of STC1's roles in cancer, citing relevant literature. This nuanced discussion strengthens the paper by acknowledging that STC1's effects may vary by context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "9f716902-fecc-40c1-ae71-2fd64e990e60",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Summary claims reiterating that STC1 knockdown reduced IDO/PD-L1 expression, suppressed inflammasome formation, and eliminated MSC's suppressive functions across multiple markers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78, C80, and C88 are summary statements in the Discussion that accurately reflect the experimental findings already evaluated in other result groups. They appropriately synthesize the data without overstating conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "dfc5f3fe-75fa-4130-ae31-ce778e2db335",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Acknowledgment that the amount of injected hMSCs in the xenograft model was much higher than physiological levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C93 is an important limitation acknowledged by the authors. This transparency is appropriate and necessary for proper interpretation of the in vivo results. However, the lack of dose-response experiments or physiologically relevant MSC concentrations is a significant weakness of the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    },
+    {
+      "id": "ce7b4539-a805-4c2b-8c8b-e56ba3c05c86",
+      "content_id": "da8ca0a4-ca53-499c-aac3-5c71cadb98a0",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Interpretive claim that STC-1 serves as a pleiotropic factor to negatively impact T cell function and stimulate expression of molecules that inactivate immune responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C98 is a reasonable synthesis of the experimental findings, though it involves some inference about STC1's pleiotropic nature. The multiple effects observed (T cell modulation, IDO/PD-L1 induction, inflammasome suppression) support this characterization, though direct evidence that STC1 itself (rather than MSCs via STC1) causes all these effects is incomplete.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:03:50.773255Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f41f0830-d01a-4fe2-8430-9b8daf0ffbe0",
+      "result_id": "2fb5866f-ee58-4ad0-8eba-a0559bc0da39"
+    },
+    {
+      "claim_id": "d68003d4-3094-4a3f-a384-c3071213639b",
+      "result_id": "2fb5866f-ee58-4ad0-8eba-a0559bc0da39"
+    },
+    {
+      "claim_id": "ca73f4ec-bfa6-4d63-a018-af4b5ccc7ae2",
+      "result_id": "2fb5866f-ee58-4ad0-8eba-a0559bc0da39"
+    },
+    {
+      "claim_id": "b6e34119-94a8-4d9b-a44a-4549e512aadc",
+      "result_id": "c5bc9736-34a3-4cf2-af32-2f9142afdfea"
+    },
+    {
+      "claim_id": "924197f3-d7f7-4804-a460-baa97c2e3273",
+      "result_id": "c5bc9736-34a3-4cf2-af32-2f9142afdfea"
+    },
+    {
+      "claim_id": "f6b86366-e1ee-42d8-a960-022542403178",
+      "result_id": "c5bc9736-34a3-4cf2-af32-2f9142afdfea"
+    },
+    {
+      "claim_id": "1bf83613-44ce-44bc-b834-6b96b5dc4abe",
+      "result_id": "112375f1-91ef-45aa-a7d5-2d0cacedaab7"
+    },
+    {
+      "claim_id": "c639e764-39dc-47ec-a2a6-a6435afd3ff2",
+      "result_id": "112375f1-91ef-45aa-a7d5-2d0cacedaab7"
+    },
+    {
+      "claim_id": "cba01268-1047-4fa9-8e48-62816ab17d33",
+      "result_id": "112375f1-91ef-45aa-a7d5-2d0cacedaab7"
+    },
+    {
+      "claim_id": "7d33eec7-c919-4976-b2c8-2a7bf0a4af1e",
+      "result_id": "112375f1-91ef-45aa-a7d5-2d0cacedaab7"
+    },
+    {
+      "claim_id": "2351201e-6a1a-4e8b-8978-db0123942220",
+      "result_id": "db00dc6c-b925-40fe-acd2-eba56e3feb5e"
+    },
+    {
+      "claim_id": "a722457c-a677-4a0b-a418-092d349713e9",
+      "result_id": "db00dc6c-b925-40fe-acd2-eba56e3feb5e"
+    },
+    {
+      "claim_id": "1443df2b-c573-466f-81f6-8d7757f1ed78",
+      "result_id": "db00dc6c-b925-40fe-acd2-eba56e3feb5e"
+    },
+    {
+      "claim_id": "0862ceb5-65fe-431c-a208-895d061593f4",
+      "result_id": "db00dc6c-b925-40fe-acd2-eba56e3feb5e"
+    },
+    {
+      "claim_id": "311488f0-ad03-409b-b45a-41ac4511da5d",
+      "result_id": "3139a446-da3f-4da9-af65-cc9d6643542d"
+    },
+    {
+      "claim_id": "ef59285d-45e5-49e1-bd4b-cf22f04df554",
+      "result_id": "3139a446-da3f-4da9-af65-cc9d6643542d"
+    },
+    {
+      "claim_id": "2176077d-1afa-4087-83ea-9f8a33695032",
+      "result_id": "3139a446-da3f-4da9-af65-cc9d6643542d"
+    },
+    {
+      "claim_id": "b40f1ec4-5f1a-4100-a938-ac0628d1a6c2",
+      "result_id": "3139a446-da3f-4da9-af65-cc9d6643542d"
+    },
+    {
+      "claim_id": "39329ac4-8e8a-49e9-be1a-18afdec40ec8",
+      "result_id": "3139a446-da3f-4da9-af65-cc9d6643542d"
+    },
+    {
+      "claim_id": "d59d5929-8689-431e-a7cb-8e8de33e9e11",
+      "result_id": "3139a446-da3f-4da9-af65-cc9d6643542d"
+    },
+    {
+      "claim_id": "f110f4a9-4491-409a-a0fd-24a6f163e059",
+      "result_id": "3139a446-da3f-4da9-af65-cc9d6643542d"
+    },
+    {
+      "claim_id": "e7e068c8-31c8-460d-9884-8381867b3609",
+      "result_id": "3139a446-da3f-4da9-af65-cc9d6643542d"
+    },
+    {
+      "claim_id": "2e3b3cc1-4454-4105-9196-ba6857e37bb9",
+      "result_id": "4525ae75-00ed-42ef-b789-65e7573bd9bd"
+    },
+    {
+      "claim_id": "e1bd5c38-6dbf-4c0c-ad64-d4af4f1a94b0",
+      "result_id": "4525ae75-00ed-42ef-b789-65e7573bd9bd"
+    },
+    {
+      "claim_id": "881c0280-97a4-422f-8f6d-07041394093d",
+      "result_id": "4525ae75-00ed-42ef-b789-65e7573bd9bd"
+    },
+    {
+      "claim_id": "cbc8acae-2574-4ae1-a052-98a4d9b438d3",
+      "result_id": "4525ae75-00ed-42ef-b789-65e7573bd9bd"
+    },
+    {
+      "claim_id": "7048f3af-f01d-40c0-a9ab-480f520f421a",
+      "result_id": "4525ae75-00ed-42ef-b789-65e7573bd9bd"
+    },
+    {
+      "claim_id": "739b1f48-23a6-40a3-9014-6fd7ac0b04ff",
+      "result_id": "ee6a4b5e-12e6-4507-a48c-73358560c97c"
+    },
+    {
+      "claim_id": "620db89c-1fba-4c37-99c6-8703f029e686",
+      "result_id": "ee6a4b5e-12e6-4507-a48c-73358560c97c"
+    },
+    {
+      "claim_id": "cb31e8a2-6ede-4b8b-a90f-6d14a2395fcc",
+      "result_id": "ee6a4b5e-12e6-4507-a48c-73358560c97c"
+    },
+    {
+      "claim_id": "3815b0ab-549b-4f31-bd2e-aad10afdba9f",
+      "result_id": "ee6a4b5e-12e6-4507-a48c-73358560c97c"
+    },
+    {
+      "claim_id": "efa29392-e2ec-447b-85a3-7265b1dc8e29",
+      "result_id": "ee6a4b5e-12e6-4507-a48c-73358560c97c"
+    },
+    {
+      "claim_id": "ea7a93f4-8172-495b-ab2e-3ef180559a89",
+      "result_id": "ee6a4b5e-12e6-4507-a48c-73358560c97c"
+    },
+    {
+      "claim_id": "120aea3e-9fde-4791-99ee-9073b25ed002",
+      "result_id": "ee6a4b5e-12e6-4507-a48c-73358560c97c"
+    },
+    {
+      "claim_id": "0f981d87-6f2a-4cfa-959b-08554587730c",
+      "result_id": "d0d2ae5a-9c38-44b7-ae8c-418acccfea4b"
+    },
+    {
+      "claim_id": "1cb7f579-93c1-4b57-8810-c0693895fd94",
+      "result_id": "d0d2ae5a-9c38-44b7-ae8c-418acccfea4b"
+    },
+    {
+      "claim_id": "899f36b0-50ea-4169-81a6-b4e10e45248d",
+      "result_id": "d0d2ae5a-9c38-44b7-ae8c-418acccfea4b"
+    },
+    {
+      "claim_id": "764299fb-d577-48ac-8ba3-25ffa09aeff3",
+      "result_id": "d0d2ae5a-9c38-44b7-ae8c-418acccfea4b"
+    },
+    {
+      "claim_id": "71cfa3c0-3785-4727-9c10-d368bcf6c180",
+      "result_id": "d0d2ae5a-9c38-44b7-ae8c-418acccfea4b"
+    },
+    {
+      "claim_id": "9908c2ca-3831-4b1a-adb3-cb3053ac8df0",
+      "result_id": "fce102d2-ec3f-477c-8737-ac388a1efe9f"
+    },
+    {
+      "claim_id": "b892c747-57d5-4852-b8a0-0418ae357643",
+      "result_id": "fce102d2-ec3f-477c-8737-ac388a1efe9f"
+    },
+    {
+      "claim_id": "a2c27bde-3a98-488b-bb1e-51e4ded67d23",
+      "result_id": "fce102d2-ec3f-477c-8737-ac388a1efe9f"
+    },
+    {
+      "claim_id": "701c5669-78ed-4724-8a7a-e5aed68416b0",
+      "result_id": "fce102d2-ec3f-477c-8737-ac388a1efe9f"
+    },
+    {
+      "claim_id": "81ca61db-67ba-43d7-8934-5f5395eebc21",
+      "result_id": "fce102d2-ec3f-477c-8737-ac388a1efe9f"
+    },
+    {
+      "claim_id": "8a5c516e-8138-4abc-a2b1-f08ebc9730c5",
+      "result_id": "fce102d2-ec3f-477c-8737-ac388a1efe9f"
+    },
+    {
+      "claim_id": "3a78291d-7d79-47a0-8fcb-1fb01a87f377",
+      "result_id": "fce102d2-ec3f-477c-8737-ac388a1efe9f"
+    },
+    {
+      "claim_id": "d05c02fd-bdd6-40e8-97fe-869fec17f6f6",
+      "result_id": "fce102d2-ec3f-477c-8737-ac388a1efe9f"
+    },
+    {
+      "claim_id": "63694cec-03fa-4532-88eb-d9badead4485",
+      "result_id": "fce102d2-ec3f-477c-8737-ac388a1efe9f"
+    },
+    {
+      "claim_id": "830b3221-fbb7-428d-a9db-e81468f73d89",
+      "result_id": "71f082e2-4534-432b-a310-d38bc1fc7226"
+    },
+    {
+      "claim_id": "07cdaf3e-990c-4b1f-9ef7-1895c27d5d36",
+      "result_id": "71f082e2-4534-432b-a310-d38bc1fc7226"
+    },
+    {
+      "claim_id": "84985f58-190f-4fb0-bf17-5584e72f8475",
+      "result_id": "71f082e2-4534-432b-a310-d38bc1fc7226"
+    },
+    {
+      "claim_id": "46b01aa3-bc13-48fd-b52a-83bedc350426",
+      "result_id": "c2487a3d-f762-499c-a093-8571e1021638"
+    },
+    {
+      "claim_id": "5fdd4802-9042-47f0-87f3-780f99cf3a21",
+      "result_id": "c2487a3d-f762-499c-a093-8571e1021638"
+    },
+    {
+      "claim_id": "fa050a6f-be0c-46ab-a39e-f10fa811e8cb",
+      "result_id": "c2487a3d-f762-499c-a093-8571e1021638"
+    },
+    {
+      "claim_id": "be6681a3-d1a9-4dc5-809a-d47aa085489b",
+      "result_id": "867854c9-a46b-4396-91b6-82315821ce7a"
+    },
+    {
+      "claim_id": "6c57c0b9-ef6c-41b2-8ac8-ffb936fee4cc",
+      "result_id": "867854c9-a46b-4396-91b6-82315821ce7a"
+    },
+    {
+      "claim_id": "1ffa6e77-fea7-4f7a-8089-d5b835474899",
+      "result_id": "867854c9-a46b-4396-91b6-82315821ce7a"
+    },
+    {
+      "claim_id": "858d4320-04f9-46dd-bea0-29b6fde0d6cc",
+      "result_id": "867854c9-a46b-4396-91b6-82315821ce7a"
+    },
+    {
+      "claim_id": "0e505b0b-ee30-4a42-b316-32d765881d15",
+      "result_id": "867854c9-a46b-4396-91b6-82315821ce7a"
+    },
+    {
+      "claim_id": "2097c2c4-4561-4068-904f-7309fc0981f7",
+      "result_id": "867854c9-a46b-4396-91b6-82315821ce7a"
+    },
+    {
+      "claim_id": "9621ae5f-82f8-4105-a131-e6129d111ade",
+      "result_id": "867854c9-a46b-4396-91b6-82315821ce7a"
+    },
+    {
+      "claim_id": "2bcc34b4-9bcb-4b03-9ad7-963ab5be2fa9",
+      "result_id": "867854c9-a46b-4396-91b6-82315821ce7a"
+    },
+    {
+      "claim_id": "883361a1-39e1-43d6-bff0-30bf7f9c975a",
+      "result_id": "9caf0951-55ad-459a-be7d-92ae9b4c078c"
+    },
+    {
+      "claim_id": "ba1d9373-4614-4ab5-b277-ecc6f324a90f",
+      "result_id": "9caf0951-55ad-459a-be7d-92ae9b4c078c"
+    },
+    {
+      "claim_id": "62604173-a5fd-46f7-8fdc-8bc106212d44",
+      "result_id": "9caf0951-55ad-459a-be7d-92ae9b4c078c"
+    },
+    {
+      "claim_id": "adc39df7-94a6-439d-b651-eb4c37d4169e",
+      "result_id": "9caf0951-55ad-459a-be7d-92ae9b4c078c"
+    },
+    {
+      "claim_id": "4445a91a-664c-4393-a0db-3f58120cd14b",
+      "result_id": "9caf0951-55ad-459a-be7d-92ae9b4c078c"
+    },
+    {
+      "claim_id": "bd57c86c-7cd0-4946-9550-cb7d0c62be62",
+      "result_id": "9caf0951-55ad-459a-be7d-92ae9b4c078c"
+    },
+    {
+      "claim_id": "bddb9b4f-eb28-4a8f-8ba8-970bd32c811c",
+      "result_id": "9caf0951-55ad-459a-be7d-92ae9b4c078c"
+    },
+    {
+      "claim_id": "932c3afd-4158-4796-b3cf-0222b0dd891c",
+      "result_id": "6c7e131c-7d41-4c02-8d10-ff40001e35d0"
+    },
+    {
+      "claim_id": "0c49c60a-2fe3-4dcb-bf11-1427126ca8e7",
+      "result_id": "6c7e131c-7d41-4c02-8d10-ff40001e35d0"
+    },
+    {
+      "claim_id": "a58c1634-5087-4745-a9ed-6ff147e17164",
+      "result_id": "6c7e131c-7d41-4c02-8d10-ff40001e35d0"
+    },
+    {
+      "claim_id": "b5a08c33-c8da-429b-9fcc-1a2428fb94ac",
+      "result_id": "6c7e131c-7d41-4c02-8d10-ff40001e35d0"
+    },
+    {
+      "claim_id": "02e24eee-503c-49d6-b460-70c96197f4f1",
+      "result_id": "6c7e131c-7d41-4c02-8d10-ff40001e35d0"
+    },
+    {
+      "claim_id": "3ebe3c63-cedb-4939-a711-e669d3f16813",
+      "result_id": "6c7e131c-7d41-4c02-8d10-ff40001e35d0"
+    },
+    {
+      "claim_id": "7d3e6bb9-be60-45e5-892e-0628fd4752a6",
+      "result_id": "6c7e131c-7d41-4c02-8d10-ff40001e35d0"
+    },
+    {
+      "claim_id": "2d44ab81-08d3-4e79-9873-da375b45ee73",
+      "result_id": "6c7e131c-7d41-4c02-8d10-ff40001e35d0"
+    },
+    {
+      "claim_id": "0f373bc1-41b9-411a-9779-89c50a7bacf3",
+      "result_id": "6c7e131c-7d41-4c02-8d10-ff40001e35d0"
+    },
+    {
+      "claim_id": "9db8605a-e85f-4e4d-9783-55cffab53743",
+      "result_id": "59921c98-4dc7-4f82-8e52-f3bf54c979dc"
+    },
+    {
+      "claim_id": "f233ffa6-d21b-435c-b85b-6e8d7f6cd745",
+      "result_id": "59921c98-4dc7-4f82-8e52-f3bf54c979dc"
+    },
+    {
+      "claim_id": "1443df2b-c573-466f-81f6-8d7757f1ed78",
+      "result_id": "59921c98-4dc7-4f82-8e52-f3bf54c979dc"
+    },
+    {
+      "claim_id": "0862ceb5-65fe-431c-a208-895d061593f4",
+      "result_id": "59921c98-4dc7-4f82-8e52-f3bf54c979dc"
+    },
+    {
+      "claim_id": "be48fe89-81f9-4fa1-baa1-3e2c8e42616a",
+      "result_id": "59921c98-4dc7-4f82-8e52-f3bf54c979dc"
+    },
+    {
+      "claim_id": "c877f966-99cf-4428-bdfc-7c073932b5fb",
+      "result_id": "59921c98-4dc7-4f82-8e52-f3bf54c979dc"
+    },
+    {
+      "claim_id": "06fa631c-670f-450a-8ee1-deb7717a325e",
+      "result_id": "59921c98-4dc7-4f82-8e52-f3bf54c979dc"
+    },
+    {
+      "claim_id": "39329ac4-8e8a-49e9-be1a-18afdec40ec8",
+      "result_id": "59921c98-4dc7-4f82-8e52-f3bf54c979dc"
+    },
+    {
+      "claim_id": "cbc8acae-2574-4ae1-a052-98a4d9b438d3",
+      "result_id": "59921c98-4dc7-4f82-8e52-f3bf54c979dc"
+    },
+    {
+      "claim_id": "7048f3af-f01d-40c0-a9ab-480f520f421a",
+      "result_id": "59921c98-4dc7-4f82-8e52-f3bf54c979dc"
+    },
+    {
+      "claim_id": "62029e41-8eb3-4738-86d9-27cb7428376a",
+      "result_id": "59921c98-4dc7-4f82-8e52-f3bf54c979dc"
+    },
+    {
+      "claim_id": "b51992f3-c7c7-45f6-a545-a0e72b836750",
+      "result_id": "59921c98-4dc7-4f82-8e52-f3bf54c979dc"
+    },
+    {
+      "claim_id": "c65b1a7e-585d-4cef-a723-d928903ff724",
+      "result_id": "59921c98-4dc7-4f82-8e52-f3bf54c979dc"
+    },
+    {
+      "claim_id": "afdfc228-d435-496f-b300-8152d418f25b",
+      "result_id": "59921c98-4dc7-4f82-8e52-f3bf54c979dc"
+    },
+    {
+      "claim_id": "462ed59d-2e46-4f68-b791-ad214b206818",
+      "result_id": "59921c98-4dc7-4f82-8e52-f3bf54c979dc"
+    },
+    {
+      "claim_id": "e5e6d006-779b-4f03-b1b3-0aa12e53ff0e",
+      "result_id": "59921c98-4dc7-4f82-8e52-f3bf54c979dc"
+    },
+    {
+      "claim_id": "1d4f614b-674f-4270-8928-456bb0595ec0",
+      "result_id": "59921c98-4dc7-4f82-8e52-f3bf54c979dc"
+    },
+    {
+      "claim_id": "017a08a0-3c2a-4206-9327-6de588ddef38",
+      "result_id": "59921c98-4dc7-4f82-8e52-f3bf54c979dc"
+    },
+    {
+      "claim_id": "b35fb575-709c-488a-a10b-f272941025fa",
+      "result_id": "59921c98-4dc7-4f82-8e52-f3bf54c979dc"
+    },
+    {
+      "claim_id": "c3d6287f-c585-4d89-87e7-089494b6adf1",
+      "result_id": "59921c98-4dc7-4f82-8e52-f3bf54c979dc"
+    },
+    {
+      "claim_id": "4e8c1b23-5e4e-483f-9d35-baf0256b11ae",
+      "result_id": "59921c98-4dc7-4f82-8e52-f3bf54c979dc"
+    },
+    {
+      "claim_id": "807a20f7-a81a-4ca5-84e9-aba317dc1310",
+      "result_id": "6f221e87-8525-4646-b8f6-633686951b52"
+    },
+    {
+      "claim_id": "f183aa37-768e-4457-8007-dc04ce3831bd",
+      "result_id": "6f221e87-8525-4646-b8f6-633686951b52"
+    },
+    {
+      "claim_id": "3702e9d5-c322-49bf-a35a-0c99520eedcc",
+      "result_id": "6f221e87-8525-4646-b8f6-633686951b52"
+    },
+    {
+      "claim_id": "e9d898f7-f89d-4a02-8c8b-e2ad0398310f",
+      "result_id": "9f716902-fecc-40c1-ae71-2fd64e990e60"
+    },
+    {
+      "claim_id": "86cafc3f-d9a7-4c0a-8530-21bbf4f08e75",
+      "result_id": "9f716902-fecc-40c1-ae71-2fd64e990e60"
+    },
+    {
+      "claim_id": "27caa167-bd30-45a3-a8e7-b8d10c61031e",
+      "result_id": "9f716902-fecc-40c1-ae71-2fd64e990e60"
+    },
+    {
+      "claim_id": "a7c38109-77b2-4ec3-bdb2-2cd24e50ba4c",
+      "result_id": "dfc5f3fe-75fa-4130-ae31-ce778e2db335"
+    },
+    {
+      "claim_id": "3b8d17e3-276c-45ff-8c68-4a650fa41f23",
+      "result_id": "ce7b4539-a805-4c2b-8c8b-e56ba3c05c86"
+    }
+  ],
+  "comparisons": []
+}

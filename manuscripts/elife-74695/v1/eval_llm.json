@@ -1,0 +1,248 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Worker number manipulation (10, 20, or 30 workers) did not affect total egg production, worker pupae production, or queen lifespan, though queen lifespan was highly variable (CV=32.2%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 provide consistent statistical evidence (glmmTMB and Cox regression analyses with appropriate p-values) showing no significant effects of worker number on these reproductive parameters. The experimental design with n=31-34 per treatment and appropriate statistical tests supports these null findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Queens with 10 workers produced significantly fewer queen pupae than queens with 20 or 30 workers, with no difference between 20 and 30 worker colonies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 present statistically significant results (p=0.005 and p=0.009) with effect sizes reported, showing a threshold effect where colonies with fewer than 20 workers produce fewer queen pupae. The statistical approach is appropriate and sample sizes are adequate (n=31-34).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Sex ratio was highly female-biased (median=0.85), male pupae production was unaffected by treatment, and queens produced very few winged males (mean=0.36, median=0).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 provide descriptive statistics and statistical tests showing consistent patterns across treatments. The borderline p-value for male production (p=0.05 for 10 vs 20) appropriately does not reach significance threshold, supporting the conclusion of no treatment effect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Queens exhibited a fixed pattern of late-life investment in sexual offspring independent of colony size and queen lifespan, with an initial peak in queen pupae around week 15, followed by increasing queen bias with age, while total pupa production peaked just before death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 describe a consistent reproductive pattern observed across experimental conditions. The data from 99 colonies tracked over their lifetime, analyzed separately for short- and long-lived queens (C21), demonstrates this pattern is robust to individual variation. Figure 2 provides visual support for these temporal patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Workers from colonies with 10 workers had significantly smaller head widths (2-3% smaller) than those from colonies with 20 or 30 workers, with no difference between 20 and 30 worker colonies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 present statistically significant morphometric differences (p=0.026 and p=0.007) with appropriate sample sizes (n=160, 112, 68). The small effect sizes (2-3%) are biologically meaningful for worker quality and the threshold pattern mirrors the queen pupae production results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Mean-standardized relative fecundity peaked at ~16 weeks before median lifespan (~25 weeks), while investment in sexual pupae peaked late in life (~28 weeks), and mortality remained below average until week 30.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 describe the temporal dynamics of aging using appropriate mean-standardization methods (citing Jones et al., 2014). The analysis of 99 queens provides robust data for these patterns. The key finding that sexual investment peaks after fecundity decline but before mortality increase is well-supported by Figure 4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Worker mortality patterns were similar to queen mortality patterns despite different timescales, suggesting aging is a genetically fixed trait expressed by both castes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While C28-C29 present appropriate statistical analyses showing similar mortality shapes, the inference in C30 that this demonstrates genetic fixation is speculative. Alternative explanations (e.g., shared environmental factors, colony-level effects) are not ruled out. The sample size for workers (n=40) is also smaller than for queens.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "In head-thorax tissue, 17.8% of genes were differentially expressed between middle-aged and prope mortem queens, showing signs of physiological decay (reduced translation, proteasomal, ribosomal, and mitochondrial function; increased splicing and transcript processing), with age but not fertility separating samples in PCA, and no change in gene network connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 present comprehensive RNAseq analysis with appropriate statistical methods (DESeq2, FDR<0.001, PERMANOVA). The GO enrichment analysis identifies biologically relevant aging-related processes. However, the lack of effect of duplication percentage on PCA separation (C36) contrasts with later findings in gaster tissue, which should be noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "In gaster tissue, 24.3% of genes were differentially expressed between age groups, showing fundamental aging processes (DNA damage, telomere maintenance, transcription enrichment), with significantly different gene network connectivity and PCA separation by age, fertility, and duplication percentage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C37-C41 present RNAseq results, but C41 reveals a confounding technical artifact (duplication percentage affects PCA separation, F=4.83, p=0.002). While spike-in controls showed linear relationships (C75, Figure 5-supplement 7), the different slopes between age groups in gaster samples suggest biological changes may be confounded with technical issues. This undermines confidence in the gaster-specific findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "Despite tissue-specific differences, 104 GO terms were enriched in both head-thorax and gaster tissues, indicating similar physiological pathologies occur in reproductive and non-reproductive tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 appropriately identify overlap between tissues despite the technical concerns with gaster samples. The finding of 104 shared GO terms provides evidence for systemic aging effects. However, the interpretation should be tempered by the duplication percentage confound in gaster tissue (C41).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Most new queens were produced after mean queen lifespan, mortality increased after sexual pupae production peaked (not after maturity or fecundity decline), and transcriptome profiles of prope mortem queens revealed broad physiological pathologies in both reproductive (gaster) and non-reproductive (head-thorax) tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 synthesize the reproductive timing and transcriptomic data to support the main conclusion. The integration of lifetime tracking data (C44-C45) with molecular evidence (C46-C47) is logical, though the gaster tissue findings should be interpreted cautiously given the technical confound noted in C41.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Previous studies found no aging signs in 18-week-old queens at peak fecundity (opposite regulation compared to aged Drosophila) and higher connectivity in middle-aged queens, suggesting physiology is maintained until the fitness peak, then undergoes deterioration while still reproductively active.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 appropriately cite prior work (von Wyschetzki et al., 2015; Harrison et al., 2021) and integrate it with current findings. The synthesis supports the interpretation that aging is delayed until after peak fitness, though this relies on cross-study comparisons which may have methodological differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The authors propose 'continuusparity' as a novel life history strategy combining lifelong continuous reproduction with late-life fitness peaks, emerging from superorganismality and combining iteroparous and semelparous characteristics, predicting no antagonistic pleiotropic genes because there is no 'later in life' past the fitness peak.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C51-C56 present a theoretical framework that is creative and potentially valuable, but remains speculative. While the data support late-life fitness peaks and delayed senescence, the mechanistic predictions (C56) about absence of antagonistic pleiotropy are untested. The framework requires validation through comparative studies across social insect species and direct tests of the predicted genetic architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "C. obscurior is well-suited for aging research due to short queen lifespan (~6 months), and previous work showed queens that lay more eggs live longer, apparently evading the reproduction-maintenance trade-off.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 provide appropriate background on the study system with citations. The characterization of C. obscurior biology and prior findings on the positive fecundity-longevity relationship (Kramer et al., 2015) establish the rationale for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The experimental design involved 138 queens from a Japanese population, manipulated to have 10, 20, or 30 workers (representing field colony size quantiles), tracked from January 2019-2020, with egg counts correlating with pupae production and separate worker aging experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C70 describe the experimental design with appropriate detail. The worker numbers are justified by field data (C66), sample sizes are adequate, and the correlation between egg and pupae counts (C68, \u03c4=0.59-0.73, p<0.001) validates the counting methods. The design is well-suited to test the hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "A Gompertz model best fit mortality data, and RNAseq sampling included 18 middle-aged queens (19-21 weeks) and 18 prope mortem queens (28-49 weeks) selected across fertility levels, with RNA extraction, spike-in controls, and some degraded gaster samples (8/72 with RIN<7).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 describe appropriate analytical and experimental methods. Model selection using DIC (C71) is appropriate, RNAseq sampling design accounts for fertility variation (C72-C73), and quality control measures including spike-ins (C75) are properly implemented. The acknowledgment of degraded samples (C76) is important for interpreting gaster results.",
+    "result_type": "MINOR"
+  }
+]

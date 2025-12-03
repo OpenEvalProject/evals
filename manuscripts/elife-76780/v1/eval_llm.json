@@ -1,0 +1,298 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The authors developed a simulation pipeline to model MTB epidemics using an Exposed-Infectious (EI) compartmental model with stochastic transmission dynamics, implemented through BEAST/MASTER for phylogenetic tree simulation and Seq-gen for sequence evolution, followed by phylogenetic inference and clustering analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C110 comprehensively describe a well-defined simulation methodology with appropriate software tools (BEAST/MASTER, Seq-gen, RAxML-NG, TreeCluster), clear model parameters, and 1000 replicates per condition. The approach is standard for phylodynamic simulations and the methods are sufficiently detailed for reproducibility, with code availability stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The authors define a '95% sensitivity SNP threshold' as the minimum threshold where \u226595% of samples cluster in \u226595% of simulations, acknowledging that specificity cannot be estimated from their single-transmission-chain model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C103 clearly articulate the rationale for threshold definition and its limitations. The approach is logically sound given the simulation design where all samples share a transmission chain by construction. The acknowledgment that specificity cannot be estimated (C101) demonstrates appropriate awareness of model limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Higher molecular clock rates, lower sampling proportions, and shorter sampling periods all resulted in lower clustering rates and longer terminal branch lengths (TBL), while sample size (minimum tree tips) had no effect on these metrics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 report consistent directional effects from simulation experiments detailed in Appendices 1-4. The findings are internally consistent and align with theoretical expectations about how these parameters should affect phylogenetic patterns. The robustness check on sample size (C25) strengthens confidence in the other results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Longer latency periods resulted in lower clustering rates and longer TBL, with 95% sensitivity thresholds of 10, 6, and 5 SNPs for long (~16.6 months), mid (~8.3 months), and short (~4.2 months) median latency periods, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 present specific quantitative results from simulations with three latency conditions, supported by Figure 2 and Table 1. The results show clear dose-response relationships and are biologically plausible. The latency values tested span realistic ranges for TB based on cited literature (Ku et al., 2021).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "Higher transmission rates led to higher clustering rates and shorter TBL, while the sampling rate (which determines infectious period length) had no major effect on these metrics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 report clear directional effects from transmission rate simulations (Appendix 5). The finding that sampling rate has minimal effect while transmission rate has strong effects is important for interpretation, though this appears to contradict the later finding about R0 (which depends on both parameters).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "R0 (the basic reproductive number) only correlates with clustering rates and TBL when the denominator (\u03c3+\u03b5) is held constant; when infectious period varies across scenarios with different R0 values, no correlation exists between R0 and these phylogenetic metrics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C37 present a critical finding supported by Table 2 and Figure 3. The mathematical reasoning (C31-C35) is sound, and the simulation results (C36-C37) demonstrate the predicted pattern. This is a key result showing that clustering/TBL cannot directly infer epidemic growth without additional assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "In a practical example comparing two MTB types with different epidemiological parameters, Type 2 (declining, R0=0.9) showed higher clustering rates and shorter TBL than Type 1 (growing, R0=1.1) due to shorter latency and lower clock rate, demonstrating that standard interpretations can be misleading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C44 present a compelling worked example using biologically realistic parameters (C43). The counterintuitive result\u2014that a declining population shows patterns typically interpreted as increased transmission\u2014effectively illustrates the main thesis. The example is supported by Figure 4 and Table 3 with specific quantitative values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Clustering results and TBL depend on multiple factors beyond transmission (latency period, molecular clock rate, sampling period, sampling proportion), and cannot determine epidemic dynamics (stable, growing, shrinking) without knowing or assuming these parameters are identical across sub-populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 and C46-C48 synthesize the main findings from the simulation studies. These conclusions are well-supported by the comprehensive set of simulation experiments (C22-C37) showing that each of these factors independently affects clustering and TBL. The logical inference about limitations for epidemic inference is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Epidemic growth depends on the ratio \u03bb/(\u03b5+\u03c3), not transmission rate alone, and TBL/clustering can only estimate sub-population dynamics by assuming identical clock rates, latency/infectious periods, sampling periods, and sampling proportions between sub-populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 present fundamental epidemiological principles (C49) correctly and draw appropriate inferences from the simulation results (C50-C51). The conclusion that multiple parameters must be assumed equal for valid comparisons is a direct logical consequence of the demonstrated dependencies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Simple comparisons of clustering rates and TBL without formal statistical inference disregard stochastic effects, as the same epidemiological process can generate different outcomes, requiring statistical testing for significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 make an important methodological point about the stochastic nature of the simulations. This is inherent in the Poisson process model (C85) and the use of 1000 replicates (C96) demonstrates awareness of this variability. The recommendation for statistical inference is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The optimal SNP threshold for clustering depends on epidemiological conditions, ranging from 3-11 SNPs across simulated scenarios, and sub-populations with different characteristics should not be analyzed with the same threshold to avoid biased results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 and C59-C61 present important practical implications supported by the range of thresholds observed across all simulation conditions. The recommendation against using uniform thresholds (C20, C61) follows logically from the demonstrated threshold variability. The specific range (3-11 SNPs, C59) is empirically grounded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Consistent global patterns of different clustering rates and TBL between MTB lineages (L2 with shorter TBL/higher clustering vs. L1 with longer TBL/lower clustering) are likely due to intrinsic bacterial factors (clock rates, latency, transmission rates), but clustering/TBL analyses cannot distinguish between latency and transmission rate differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C71 apply simulation findings to interpret real-world patterns across multiple geographic regions (C63-C64, well-cited). The inference that intrinsic factors explain consistent patterns (C65) is reasonable given the geographic consistency. The acknowledgment that latency and transmission cannot be distinguished (C69) and that effects are additive (C70-C71) shows appropriate nuance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C21",
+      "C72",
+      "C73",
+      "C74",
+      "C78"
+    ],
+    "result": "Different clustering rates and TBL between MTB lineages are probably due to intrinsic bacterial factors rather than necessarily indicating transmission differences, and while clustering remains useful for detecting linked strains, conclusions about transmission differences among sub-populations should not be over-interpreted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C72-C74, and C78 present the main conclusions appropriately qualified with 'probably' (C21) and 'at best a simplification' (C74). The distinction between utility for detecting linked strains (C73) versus inferring transmission differences (C74) is well-supported by the simulation results and represents a balanced conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "The findings resonate with Poon (2016), who reported that HIV clustering methods were biased toward detecting sampling rate differences rather than transmission rate variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 appropriately contextualizes the findings within prior work on HIV, suggesting the issues identified are not unique to MTB. The parallel is apt given both involve phylogenetic clustering approaches, though the citation alone provides limited detail about the HIV study's methods and findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Alternative approaches for inferring transmission dynamics include using temporal changes in case proportions as a proxy for relative R0, absolute case number increases to infer R0>1, and estimating latent/infectious period lengths from prevalence surveys and notification data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 propose complementary epidemiological approaches based on sound reasoning (C56-C57) and established methods (C58, citing Ku et al., 2021). These represent reasonable alternatives to clustering analysis, though the manuscript does not test these approaches or demonstrate their superiority.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Phylodynamic methods for estimating epidemiological parameters from genomic data are becoming available but have inherent limits and are challenging to apply to current MTB datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 accurately summarize the state of phylodynamic methods with appropriate citations (K\u00fchnert et al., Didelot et al., Volz and Siveroni, Louca et al., Walter et al.). The acknowledgment of both promise and limitations is balanced, though the manuscript does not detail what specific challenges exist for MTB.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C45"
+    ],
+    "result": "The manuscript reviews established practices in MTB molecular epidemiology, including the use of clustering to identify transmission, SNP thresholds (commonly 6 SNPs but varying by setting), and the interpretation that clustered strains indicate transmission while singletons indicate novel introductions or resistance acquisition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C15 and C45 provide well-cited background on current practices in MTB molecular epidemiology. The citations are appropriate and comprehensive, covering the key literature. These claims establish the context and standard interpretations that the manuscript challenges, making them essential background rather than novel findings.",
+    "result_type": "MINOR"
+  }
+]

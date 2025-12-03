@@ -1,0 +1,238 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C61"
+    ],
+    "result": "A genome-wide CRISPR-Cas9 screen in murine macrophages successfully identified known and novel regulators of IFN\u03b3-inducible MHCII surface expression. The screen achieved high editing efficiency (85-99%) in clonal Cas9+ macrophages and correctly identified known pathway components (Ifngr1, Ifngr2, Jak1, Stat1, Ciita, Rfx5, Rfxank) while also revealing new candidates, with 9 of 15 validated candidates showing significant effects with both sgRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C18-C23, and C61 collectively demonstrate successful screen execution and validation. The high editing efficiency (C18), positive control validation with Rfx5 (C19), specificity for IFN\u03b3 (C20), identification of known pathway components (C21-C22), and strong validation rate (C23, C61) provide converging evidence for screen quality and robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "MED16 is uniquely required among mediator complex subunits for IFN\u03b3-mediated MHCII expression and controls Ciita transcription. Loss of MED16 significantly inhibited both Ciita and H2aa induction following IFN\u03b3 treatment, while other mediator subunits (Med1, Med12, Med17) showed normal MHCII upregulation. This requirement was confirmed in physiological co-culture experiments with NK cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C30 provide strong evidence for MED16's specific role. The screen ranking (C24), specificity among mediator subunits (C25-C26), transcriptional effects on both Ciita and H2aa (C27-C28), and validation in NK cell co-culture (C29-C30) demonstrate convergent support across multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C71"
+    ],
+    "result": "GSK3\u03b2 and GSK3\u03b1 coordinately regulate IFN\u03b3-mediated MHCII expression, with GSK3\u03b2 playing a primary role and GSK3\u03b1 contributing in the absence of GSK3\u03b2. Loss of Gsk3b inhibited Ciita and H2-Aa expression, and pharmacological inhibition of both GSK3\u03b1/\u03b2 with CHIR99021 had stronger effects than Gsk3b loss alone. GSK3\u03b1 does not compensate through altered expression or activation, and GSK3\u03b1/\u03b2 activity is required early after IFN\u03b3 stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 and C71 provide comprehensive evidence through genetic (Gsk3b KO, Gsk3a/Gsk3b double KO) and pharmacological (CHIR99021) approaches. The additive effects of GSK3\u03b1 targeting in Gsk3b KO cells (C33-C34), time-course experiments (C36), and mechanistic studies (C35) support the coordinated regulation model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C37",
+      "C38"
+    ],
+    "result": "GSK3\u03b2 and MED16 control IFN\u03b3-mediated Ciita induction and MHCII expression through two independent parallel pathways. CHIR99021 treatment of Med16 KO cells completely eliminated residual MHCII induction, demonstrating that the pathways function independently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C37, and C38 demonstrate pathway independence through additive effects. The complete loss of MHCII induction when both pathways are blocked (C37) and the distinct transcriptional profiles (addressed in other results) support the parallel pathway model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C63",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "mTORC1 differentially regulates distinct IFN\u03b3-inducible genes and functions independently of Med16 and GSK3\u03b1/\u03b2 to control MHCII expression. Blocking mTORC1 with Torin2 reduced MHCII expression but increased PD-L1 expression, and mTORC1 inhibition had additive effects in Gsk3b KO and Med16 KO cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 and C63, C74-C76 demonstrate mTORC1's role through pharmacological inhibition experiments. The opposite effects on MHCII versus PD-L1 (C40) and additive effects in knockout cells (C41-C42, C76) support independent pathway function and differential gene regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "MED16 and GSK3\u03b2 control distinct transcriptional networks in macrophages following IFN\u03b3 activation. RNA-seq analysis revealed that both knockouts had distinct transcriptional signatures, with only 8 non-MHCII genes shared between the 69 and 90 differentially expressed genes for MED16 and GSK3\u03b2 respectively. Importantly, 8 of the top 20 IFN\u03b3-regulated genes including Irf1 and canonical STAT1 targets were unaffected by loss of either gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49 provide comprehensive transcriptomic evidence. The PCA analysis (C43-C44), preservation of core IFN\u03b3 responses like Irf1 (C45-C46), limited overlap in affected genes (C47-C49), and stringent differential expression analysis support distinct regulatory roles rather than global IFN\u03b3 pathway control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Med16 KO cells showed an elevated type I interferon transcriptional response when stimulated with IFN\u03b3, but this effect is cell-autonomous. Co-culture experiments demonstrated that Med16 KO cells failed to induce MHCII while NTC cells in the same well induced MHCII normally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 are supported by RNA-seq data showing type I IFN signature (C50) and co-culture experiments ruling out paracrine effects (C51). The cell-autonomous nature is clearly demonstrated, though the mechanism underlying the type I IFN signature remains unexplained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "Loss of Gsk3b resulted in 284 differentially expressed genes in unstimulated macrophages, indicating GSK3\u03b2 regulates basal macrophage transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is directly supported by RNA-seq differential expression analysis. This finding is consistent with GSK3\u03b2's known multifunctional roles and provides context for understanding its effects on IFN\u03b3 responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Loss of either MED16 or GSK3\u03b2 prevents effective activation of CD4+ T cells by macrophages. In ex vivo T cell activation assays using NR1 TCR-transgenic cells, Med16 KO macrophages reduced IFN\u03b3+ T cells by 10-fold and fluorescence intensity by 100-fold, while Gsk3b KO reduced IFN\u03b3+ T cells over 2-fold and intensity over 4-fold. Double knockout of Gsk3a and Gsk3b almost completely blocked T cell activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C53-C60 demonstrate functional consequences through well-controlled T cell activation assays. The peptide-specificity (C53-C54), dose-dependent effects with GSK3 (C55-C57), severe impairment with Med16 loss (C58), and complete blockade with combined pathway inhibition (C59) provide strong evidence for biological significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C64"
+    ],
+    "result": "The CRISPR screen identified multiple novel regulatory pathways including mTOR signaling and metabolism/lysosome function genes (Lamtor2, Lamtor4), suggesting many new regulatory mechanisms of IFN\u03b3-inducible MHCII expression remain to be characterized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62 and C64 are supported by the high validation rate (9/15 candidates) and pathway enrichment analysis. However, these candidates represent future work rather than fully characterized mechanisms in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "MED16 acts independently of CDK8 in controlling IFN\u03b3-mediated gene expression. CDK8 was not identified in the CRISPR screen, and major IFN\u03b3-dependent genes controlled by CDK8 (Tap1, Irf1) remained unchanged in Med16 KO macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 is supported by negative screen results for CDK8 and RNA-seq data showing preserved expression of CDK8-regulated genes. This effectively rules out a previously plausible mechanism and supports MED16's distinct regulatory role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background claims establishing the importance of IFN\u03b3-mediated MHCII expression in immunity, the canonical IFN\u03b3 signaling pathway, and the clinical relevance of MHCII dysregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C6-C17 represent established knowledge supported by appropriate citations to prior literature. These provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C70",
+      "C72",
+      "C73",
+      "C77",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Background claims about MED16, GSK3, and related pathways from prior literature, including their known functions and relevance to the current findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68, C70, C72-C73, C77, C79-C82 represent prior knowledge appropriately cited to contextualize the current findings. Some claims (C72) are explicitly contradicted by the authors' data for MHCII regulation, which is appropriately noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "Fzd4, a Wnt signaling pathway member, was identified in the screen as required for MHCII expression, supporting a possible role for Wnt signaling in IFN\u03b3-induced MHCII regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C78 is based on screen results but lacks experimental validation. While suggestive of Wnt pathway involvement (consistent with GSK3's role in Wnt signaling, C77), this remains speculative without follow-up experiments.",
+    "result_type": "MINOR"
+  }
+]

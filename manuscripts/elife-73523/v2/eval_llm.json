@@ -1,0 +1,320 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "IPMK physically interacts with SWI/SNF complex subunits. Yeast two-hybrid screening identified SMARCB1 as the only protein present in both duplicates (C37, C38). APEX2-mediated proximity labeling identified multiple SWI/SNF subunits including SMARCB1, BRG1, SMARCC2, ARID1A, PBRM1, and SMARCC1 as IPMK interactors, with SMARCB1 showing the most significant interaction (C39, C40). Core histones were also detected as IPMK interactors (C41).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Two independent unbiased screening methods (yeast two-hybrid and APEX2 proximity labeling) converge on identifying SMARCB1 and other SWI/SNF subunits as IPMK interactors (C37-C41). The consistency between methods and detection of histones (which bind to SWI/SNF-associated nucleosomes) provides strong support. However, proximity labeling detects proteins in close spatial proximity, not necessarily direct binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "IPMK directly binds to SMARCB1, BRG1, and BAF155 in vitro and in vivo. In vitro binding assays demonstrated direct IPMK-SMARCB1 interaction (C42). Binary protein-interaction assays in Sf9 cells showed IPMK directly interacts with SMARCB1, BRG1, and BAF155, but not BAF170 (C43, C44). Co-immunoprecipitation experiments confirmed endogenous IPMK-SMARCB1 association in mESCs and MEFs (C45-C49). GST pull-down assays with purified complexes further validated these interactions (C55-C57).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple orthogonal approaches (in vitro binding, binary interaction assays, co-IP in multiple cell types, GST pull-downs with purified complexes) consistently demonstrate direct physical interactions between IPMK and specific SWI/SNF subunits (C42-C49, C55-C57). The specificity is demonstrated by lack of interaction with BAF170 in some assays. The convergence of evidence from different experimental systems strongly supports direct binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "IPMK and SMARCB1 knockdowns do not affect each other's protein levels but reduce co-immunoprecipitation signals. IPMK knockdown does not affect SWI/SNF subunit protein levels, and SMARCB1 knockdown does not affect IPMK levels (C50, C51). However, IPMK knockdown significantly reduces SMARCB1 signals in IPMK immunoprecipitates (C52), SMARCB1 knockdown reduces SMARCB1 and BRG1 signals in IPMK immunoprecipitates (C53), and IPMK-null MEFs show reduced IPMK signals in SMARCB1 immunoprecipitates (C54).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The knockdown experiments demonstrate that the interaction is not mediated by changes in protein expression levels (C50, C51), and the reduced co-IP signals upon knockdown confirm specificity of the interaction (C52-C54). This provides important controls showing the interaction is direct rather than mediated by expression changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The Rpt1 and Rpt2 domains of SMARCB1 and exons 3, 4, and 6 of IPMK mediate their interaction. Yeast two-hybrid and immunoprecipitation with deletion constructs mapped the interaction to Rpt1 and Rpt2 domains of SMARCB1 (C58-C64), with specific structural requirements (\u03b2-sheets and \u03b1-helices in Rpt1, \u03b2-sheets in Rpt2). The IPMK-SMARCB1 binding is mediated by IPMK exons 3, 4, and 6, comprising the inositol binding site and kinase domain (C65).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Systematic domain mapping using yeast two-hybrid and deletion constructs in mammalian cells consistently identifies specific domains required for interaction (C58-C65). The structural detail (specific \u03b2-sheets and \u03b1-helices) and reciprocal mapping of both proteins provides strong support. However, the functional significance of these specific domains is not tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "IPMK co-localizes with BRG1 on chromatin at promoters and enhancers. Chromatin fractionation showed IPMK is distributed across cytoplasm, nucleoplasm, and chromatin, while SMARCB1 and BRG1 are primarily in chromatin (C66, C67). Knockdowns do not affect subcellular distribution (C68, C69). CUT&RUN assays demonstrated IPMK co-localizes with BRG1 genome-wide (C70), with both significantly enriched at promoters (C71, C72). Highly enriched BRG1 and IPMK localize at enhancers (C73, C74).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "CUT&RUN data directly demonstrates genome-wide co-localization of IPMK and BRG1 (C70-C74), consistent with physical interaction data. The chromatin fractionation provides supporting evidence that both proteins are present on chromatin (C66-C69). Peak annotation analysis confirms enrichment at functionally relevant genomic regions (promoters and enhancers).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "IPMK depletion reduces BRG1 occupancy at low-enriched BRG1 peaks in a kinase-independent manner. Both siRNA and shRNA-mediated IPMK depletion significantly reduced BRG1 intensity at low BRG1 peaks (C75, C76). This reduction is not due to changes in BRG1 or SWI/SNF subunit expression (C77) or changes in peak distribution (C78), but affects global BRG1 occupancy at low-enriched peaks (C79). Rescue experiments with wild-type and catalytically dead IPMK both increased BRG1 intensity, indicating enzymatic activity is not required (C80-C82).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of evidence support that IPMK regulates BRG1 occupancy: consistent effects with different knockdown methods (C75, C76), appropriate controls excluding indirect effects (C77, C78), and rescue experiments demonstrating kinase-independent function (C80-C82). The specificity for low BRG1 peaks is well-documented (C79). The rescue with catalytically dead IPMK is particularly important for mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "IPMK regulates BRG1-mediated chromatin accessibility genome-wide. IPMK knockdown reduced BRG1 occupancy at low BRG1 peaks (C84), and both BRG1 occupancy and chromatin accessibility (ATAC-seq) were significantly reduced at these peaks genome-wide (C85, C86). This effect was detected at low BRG1 peaks at promoter-TSS regions (C87), leading to the conclusion that IPMK regulates global BRG1 occupancy and chromatin accessibility (C88).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The integration of CUT&RUN and ATAC-seq data demonstrates that IPMK depletion affects both BRG1 localization and chromatin accessibility (C84-C87). The genome-wide analysis and focus on promoter-TSS regions provides comprehensive evidence. The correlation between reduced BRG1 and reduced chromatin accessibility supports a functional consequence of the interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "BRG1 localizes at -1 and +1 nucleosomes flanking TSSs in mESCs. Analysis of BRG1 CUT&RUN, MNase-seq, and ATAC-seq showed BRG1 is abundant near TSSs with two major peaks at -1 and +1 nucleosomes (C89, C90). Nucleosome-depleted regions (NFRs) are present at TSSs (C91). BRG1 intensity and chromatin accessibility vary by promoter type (high in H3K4me3-Only, moderate in bivalent, low in H3K4me3-Low) (C92). IPMK knockdown reduces BRG1 occupancy at both H3K4me3-Only and bivalent promoters (C93).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The integration of multiple genomic datasets (CUT&RUN, MNase-seq, ATAC-seq) provides strong evidence for BRG1 localization patterns (C89-C92). The promoter classification method is validated by consistency with prior studies. The effect of IPMK knockdown on different promoter types is well-documented (C93).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "IPMK depletion preferentially affects chromatin accessibility at bivalent promoters. ATAC-seq signals were significantly reduced upon IPMK knockdown at both promoter types (C96), with similar effects to BRG1 knockdown (C97). However, bivalent promoters showed greater reduction than H3K4me3-Only promoters (C98, C99). H3K4me3-Only promoters retain more BRG1 after IPMK knockdown (C100). The authors conclude IPMK plays a pivotal role in maintaining chromatin accessibility at bivalent promoters by safeguarding BRG1 occupancy at -1 nucleosomes (C104-C106).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential effect on bivalent vs. H3K4me3-Only promoters is well-documented with ATAC-seq data (C96-C99). The mechanistic explanation involving remaining BRG1 levels and compensatory chromatin remodelers is supported by the data (C100). However, the conclusion about -1 nucleosome specificity (C104-C106) is somewhat inferential, relying on integration with prior studies rather than direct demonstration in this work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C111",
+      "C112"
+    ],
+    "result": "IPMK depletion reduces gene expression, particularly at bivalent promoters. mRNA levels of genes with H3K4me3-Only or bivalent promoters were down-regulated upon IPMK knockdown (C107), with greater down-regulation at bivalent promoters (C108). RT-qPCR confirmed down-regulation of genes with decreased BRG1 occupancy and reduced ATAC-seq signals (C109). BRG1 occupancy and chromatin accessibility were both reduced near TSSs of down-regulated genes (C111). The authors conclude IPMK maintains gene expression by safeguarding BRG1 occupancy and chromatin accessibility at promoter-TSSs (C112).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The integration of mRNA-seq, CUT&RUN, and ATAC-seq data demonstrates correlation between IPMK depletion, reduced BRG1 occupancy, reduced chromatin accessibility, and reduced gene expression (C107-C112). However, the causal relationship is inferential - the data show correlation but do not definitively prove that reduced BRG1 occupancy causes reduced expression. Additional experiments (e.g., rescue of specific genes) would strengthen causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "IPMK regulates endodermal gene expression during mESC differentiation. During EB formation, pluripotency markers decreased similarly in control and IPMK-depleted cells (C113), but endodermal markers (Foxa1, Foxa2, Gata6, Sox17) showed significantly decreased levels upon IPMK depletion from day 0 onwards (C114, C115). Ectodermal and mesodermal markers showed minimal or no changes (C116-C118). IPMK depletion had the most severe impact on endodermal markers (C119). All reduced endodermal markers have bivalent promoters in mESCs (C120), and most showed decreased BRG1 occupancy upon IPMK depletion (C121, C122). BRG1 depletion similarly decreased endodermal marker expression (C123), suggesting IPMK regulates these genes through BRG1 (C124).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The EB differentiation experiments demonstrate specific effects on endodermal lineage markers (C113-C119). The connection to bivalent promoters and reduced BRG1 occupancy provides a mechanistic link to earlier findings (C120-C122). The parallel effects of BRG1 depletion support the proposed mechanism (C123). However, the conclusion that IPMK regulates endodermal development (C124) is somewhat overstated - the data show effects on marker gene expression but do not demonstrate functional consequences for lineage commitment or differentiation efficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "IPMK preferentially regulates BRG1 occupancy at regions with low BRG1 levels. The authors conclude that IPMK depletion has greater impact at low BRG1 peaks compared to high BRG1 peaks (C125), with greater effects on bivalent promoters (low BRG1) than H3K4me3-Only promoters (high BRG1) (C126). They propose IPMK primarily regulates BRG1 occupancy and downstream effects at regions with originally low BRG1 levels (C127).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a synthesis of multiple results throughout the paper (C125-C127). The pattern is consistently observed across different analyses (CUT&RUN, ATAC-seq, mRNA-seq) and promoter classifications. However, the mechanistic explanation for this context-dependency is speculative and not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C128",
+      "C129"
+    ],
+    "result": "Proposed model: IPMK physically binds SWI/SNF subunits to maintain BRG1 occupancy and chromatin accessibility. The authors propose a model where IPMK physically binds SMARCB1, BRG1, and BAF155, maintaining appropriate BRG1 occupancy and chromatin accessibility at promoter-TSSs, thereby regulating gene expression (C128). When IPMK is depleted, BRG1 localization is perturbed and chromatin accessibility decreased (C129).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This model integrates the major findings of the paper: physical interaction (C6, C42-C49), co-localization (C70-C74), regulation of BRG1 occupancy (C75-C88), effects on chromatin accessibility (C84-C106), and gene expression (C107-C124). The model is well-supported by the data, though the precise mechanism by which IPMK regulates BRG1 localization remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background on IPMK function. IPMK is a key enzyme in IP metabolism (C1, C14) and a pleiotropic signaling factor (C2) that acts as a PI3-kinase producing PIP3 (C15) and non-catalytically controls mTOR, AMPK, and TRAF6 (C16). Nuclear IPMK regulates gene expression (C17), originally identified in yeast as Arg82 (C18), which interacts with MCM1 (C19, C20). In mammals, IPMK-SRF binding is critical for gene expression (C21), and IPMK interacts with p53, SF1, and CBP/p300 (C22).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are established facts from prior literature, appropriately cited (C1, C2, C14-C22). They provide necessary background context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Background on SWI/SNF and IP-chromatin remodeling connections. SWI/SNF plays a critical role in gene expression by regulating chromatin accessibility (C3, C4). Chromatin remodeling is essential for transcription (C23), and SWI/SNF is a large family of ATP-dependent chromatin remodeling complexes (C24, C25) with specific subunit composition (C26, C27) that regulates nucleosome positioning (C28) and is critical for transcription, cell cycle, and differentiation (C29). Prior yeast studies showed IP4/IP5 stimulate SWI/SNF while IP6 inhibits other remodelers (C30, C31), and Arg82 mutation impairs SWI/SNF recruitment (C32-C34). In mammals, IP6K1 interacts with JMJD2C to regulate gene expression (C35, C36).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are established facts from prior literature, appropriately cited (C3, C4, C23-C36). They provide necessary background on SWI/SNF function and prior connections between IPs and chromatin remodeling, motivating the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "Knowledge gap: The direct link between IPMK and chromatin remodelers remains unclear (C5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This accurately describes the knowledge gap that motivates the study (C5). The current work addresses this gap by demonstrating direct physical interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C83",
+      "C94",
+      "C95",
+      "C101",
+      "C103"
+    ],
+    "result": "Background on BRG1 function at promoters. BRG1 regulates chromatin accessibility at NFRs of TSSs (C83). BRG1 at -1 nucleosome in wide NFRs positively regulates accessibility, while BRG1 at +1 nucleosome in narrow NFRs tends to inhibit accessibility (C94, C95). Most chromatin remodelers show higher enrichment at H3K4me3-Only vs. bivalent promoters (C101). BRG1 depletion reduces ATAC-seq signals more at bivalent than H3K4me3-Only promoters (C103).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are established facts from prior literature (primarily de Dieuleveult et al., 2016), appropriately cited (C83, C94, C95, C101, C103). They provide necessary context for interpreting the current findings about differential effects at different promoter types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "Validation of prior findings: Various chromatin remodelers show higher occupancy at H3K4me3-Only vs. bivalent promoters. The authors analyzed publicly released data and confirmed that CHD1, CHD2, CHD4, CHD6, CHD8, CHD9, and EP400 show higher occupancy at H3K4me3-Only promoters compared to bivalent promoters (C102).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a validation of prior findings using publicly available data (C102). It confirms the expected pattern and supports the interpretation that compensatory chromatin remodelers may explain differential effects at different promoter types.",
+    "result_type": "MINOR"
+  }
+]

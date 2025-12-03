@@ -1,0 +1,225 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Phosphoproteomic analysis reveals that Ism1 and insulin signaling overlap by 53%, with Ism1 inducing phosphorylation changes in approximately 445 proteins not shared with insulin, particularly enriched in mTOR complex and muscle-related proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C29-C34 are well-supported by comprehensive phosphoproteomic data (Figure 1, n=6 biological replicates pooled into n=2 technical replicates). PCA analysis (C31) demonstrates reproducibility and distinct separation between treatment groups. The Venn diagram analysis (C32-C33) provides quantitative overlap metrics. However, the small technical replicate number (n=2) after pooling is a limitation for statistical power in proteomics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Detailed phosphosite mapping demonstrates that Ism1 and insulin induce distinct phosphorylation patterns on shared proteins (e.g., Irs2, Rps6) and that Ism1 uniquely phosphorylates muscle-related proteins including Apc, Svil, and Frs2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C47 are supported by phosphoproteomic data shown in Figure 2 with appropriate statistical testing (empirical Bayes with FDR correction). The site-specific phosphorylation differences (C36, C38, C39-C40) provide mechanistic insight into signaling divergence. However, functional validation of these novel phosphosites is lacking, and the biological significance of specific phosphorylation events (e.g., C40 inhibition of Rps6) requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "GO enrichment analysis of Ism1-regulated phosphoproteome identifies associations with metabolic processes, nervous system development, immune system, and notably muscle-related pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by GO enrichment analysis (Figure 2P) using appropriate statistical methods (Kolmogorov-Smirnov test, p<0.01). The identification of muscle pathways (C51) is particularly relevant to the manuscript's focus. However, GO enrichment alone does not establish functional relevance, and some associations (nervous system, immune) may reflect Ism1's broader biological roles rather than the specific muscle phenotype studied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C62",
+      "C64",
+      "C100"
+    ],
+    "result": "Ism1 induces phosphorylation of Akt and S6 in C2C12 muscle cells and stimulates protein synthesis (2.5-fold increase) in an mTOR-dependent manner, as demonstrated by rapamycin inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60, C62, C64, and C100 are well-supported by Western blot data (Figure 3A-C) and [35S]-methionine incorporation assays (Figure 3D-E, n=3). The time course (C55), dose-response (C57), and rapamycin inhibition (C62) experiments provide strong evidence for mTOR-dependent protein synthesis. The comparison with IGF-1 (C56, C59) provides appropriate positive controls. Sample sizes are adequate for cell culture experiments, though biological replicate numbers are not always clearly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Whole-body Ism1 knockout mice exhibit significantly reduced muscle fiber cross-sectional area (40% reduction in fed state, >20% in fasted state) and impaired muscle force, without changes in total muscle mass, body weight, or blood glucose levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C79 are supported by multiple lines of evidence: scRNA-seq data (C68, Figure 4-supplement 1), morphometric analysis (C73-C76, Figure 4D-F, n=3 mice per group with 60-100 myofibers quantified per image), and grip strength measurements (C77, n=15 per group). The blinded quantification by two independent investigators strengthens the fiber size analysis. However, the lack of significant change in total muscle mass (C78, C119) despite reduced fiber size is puzzling and inadequately explained. The study is limited to male mice only, as acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Ism1 ablation does not affect ambulatory activity, respiratory exchange ratio, energy expenditure, food intake, mitochondrial OXPHOS complex expression, or most muscle fiber type markers, suggesting that the muscle phenotype is independent of metabolic or mitochondrial dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 are supported by metabolic cage measurements (Figure 5A-D, n=4 per group), Western blot analysis of OXPHOS complexes (Figure 5E-F, n=3), and gene expression analysis (Figure 5G-H). The appropriate statistical tests (ANOVA, ANCOVA) were applied. These negative results are important for ruling out alternative explanations for the muscle phenotype. However, the relatively small sample sizes (n=3-4) may limit power to detect subtle differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C94",
+      "C96",
+      "C101",
+      "C102"
+    ],
+    "result": "Ism1-KO mice show reduced muscle protein content, decreased protein synthesis (measured by [35S]-methionine incorporation), increased expression of atrophy genes (FoxO1 and targets), and reduced phosphorylation of Akt, mTOR, and S6 in skeletal muscle under both fed and fasted conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 and C86-C96 are supported by multiple complementary assays: total protein content measurement (C86, Figure 6A, n=9-12), in vivo [35S]-methionine incorporation (C87, Figure 6C, n=9-12), gene expression analysis (C88-C90, Figure 6D-E, n=5-6), Western blots for p27 and phospho-proteins (C91, C94, Figure 6F-G, n=3). The convergent evidence from protein synthesis, degradation markers, and signaling pathways provides strong mechanistic support. However, the ~10% reduction in protein content (C110) seems modest relative to the 40% reduction in fiber size, suggesting additional mechanisms may be involved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "Ism1-KO mice show no difference in IRS1 phosphorylation at S307 compared to WT mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 is supported by Western blot data (Figure 6-supplement 1, n=3). This negative result is important for demonstrating that Ism1 deficiency does not induce canonical insulin resistance signaling at this specific site. However, this is a single phosphosite measurement and does not comprehensively assess insulin sensitivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C2",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Ism1 signaling is not simply activation of the identical insulin/IGF-1 pathway; while Ism1 and insulin share pAkt and pS6 networks, Ism1 induces only a subset of insulin targets and does not directly phosphorylate IR/IGFRs but does phosphorylate IRS proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C104-C106 represent interpretive conclusions well-supported by the phosphoproteomic data (Figures 1-2). The distinct phosphorylation patterns (C37-C38, C106) and differential target activation (C35-C36, C105) provide strong evidence for signaling divergence. However, these are largely descriptive observations; the mechanistic basis for how Ism1 activates Akt without directly phosphorylating IR/IGFRs remains unclear and would require identification of the Ism1 receptor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "A 60% decrease in pAktS473 levels in Ism1-KO muscle leads to approximately 10% reduction in muscle protein content, consistent with previous reports showing 40% reduction in protein synthesis upon complete Akt ablation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 are supported by quantitative data from Figures 6A and 6G, with appropriate comparison to published literature (Jaiswal et al., 2022). The proportional relationship between partial Akt reduction and protein content decrease is logical. However, the discrepancy between modest protein content reduction (~10%) and substantial fiber size reduction (40%) is not adequately explained and suggests additional mechanisms beyond protein content may contribute to fiber atrophy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Despite reduced muscle protein content and fiber size, Ism1-KO mice do not show significant loss of total muscle mass, and femur length and body weights are unchanged, suggesting the fiber size reduction is not due to general growth impairment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C118-C120 identify an unexpected finding supported by data in Figures 4B and 4-supplement 2. While the measurements are straightforward, the biological interpretation is problematic. The authors acknowledge this is \"somewhat unexpected\" but provide no satisfactory explanation for how fiber size can decrease 40% without proportional muscle mass loss. Possible explanations (increased water, glycogen, lipid content, or increased fiber number) are mentioned in discussion but not tested. This represents an important gap in understanding the phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C63"
+    ],
+    "result": "mTOR activity is required for Ism1 signaling capacity, as demonstrated by rapamycin inhibition of Ism1-induced signaling in 3T3-F442A cells and its inhibitory effects on muscle hypertrophy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61 and C63 are supported by citation to prior work (Jiang et al., 2021; Pallafacchina et al., 2002) and current data (Figure 3E). The rapamycin inhibition experiment (C62) provides functional validation. However, C61 relies on previous work rather than new data in this manuscript, and the mechanistic relationship between Ism1 and mTOR (upstream vs. parallel pathways) is not fully resolved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C103",
+      "C115"
+    ],
+    "result": "Ism1 appears to be an important protein regulating metabolism during fed and fasted conditions, with potential biological significance due to Akt's dual role in regulating mTORC1 and FoxO genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103 and C115 represent broad interpretive conclusions reasonably supported by the cumulative data showing Ism1 effects under both fed and fasted conditions (Figures 4-6). The dual regulation of anabolic (mTORC1) and catabolic (FoxO) pathways is well-established for Akt. However, these are somewhat speculative extrapolations from the data; direct demonstration of Ism1 effects on both pathways simultaneously in vivo is limited.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,368 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C31",
+      "C37"
+    ],
+    "result": "rIFG lesion patients showed a more than fivefold increase in trigger failure rate (16%) compared to healthy comparisons (3%) and non-rIFG lesion patients (2%), as measured by the P(TF) parameter from BEESTS modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C31, and C37 converge on the same finding using BEESTS modeling with appropriate Bayesian inference (Bayesian p=0.02 for rIFG vs. healthy; p=0 for rIFG vs. non-rIFG). The sample size (N=16 per group) matches the original Aron et al. 2003 study, and the effect is large and specific to rIFG lesions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C41",
+      "C46",
+      "C47",
+      "C69"
+    ],
+    "result": "rIFG lesion patients showed significantly reduced frontal \u03b2-bursts on successful stop trials compared to both healthy comparisons (p=0.002, d=-0.965) and non-rIFG lesion patients (p=0.014, d=-0.922), with no increase in \u03b2-burst rate on stop vs. go trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C41, C46, C47, and C69 are supported by EEG data showing a significant GROUP \u00d7 TRIAL TYPE interaction (p=0.019) and planned contrasts with large effect sizes. The specificity to rIFG lesions is demonstrated by the absence of this effect in non-rIFG patients (C43-C45). Statistical tests are appropriate and corrections are noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C48",
+      "C49",
+      "C50",
+      "C54",
+      "C70",
+      "C71"
+    ],
+    "result": "When frontal \u03b2-bursts did occur, all groups including rIFG lesion patients showed normal upregulation of sensorimotor \u03b2-bursts, indicating intact implementation of inhibitory control once triggered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C48-C50, C54, C70-C71 are supported by EEG data showing no significant group differences in sensorimotor \u03b2-burst patterns following frontal bursts (p>0.05 at all timepoints). This dissociation between initiation (impaired) and implementation (intact) is the key mechanistic finding. However, the analysis lacks correction for multiple comparisons across timepoints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "rIFG lesion patients showed lower \u03bcgo and higher \u03c4go parameters, resulting in a Go-RT distribution with a faster leading edge but larger skew, while mean Go-RT did not differ from controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 are supported by BEESTS modeling results with appropriate Bayesian inference. The trade-off between \u03bcgo and \u03c4go is well-characterized, and the interpretation that mean RT remains unchanged despite distributional differences is mathematically sound. This pattern suggests attentional lapses rather than general slowing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "rIFG lesion patients showed increased \u03bcstop (Bayesian p=0.06) and mean SSRT (Bayesian p=0.03) with constant \u03c4stop, interpreted as reflecting attentional deficits in stop-signal encoding rather than inhibitory deficits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C28-C30, C32-C34 show increased SSRT parameters, but the interpretation relies heavily on the framework from Matzke et al. 2017b (C33). The Bayesian p-value for \u03bcstop (0.06) is marginal, and the distinction between 'encoding' vs. 'decisional/inhibitory' components based solely on the pattern of \u03bc vs. \u03c4 changes requires stronger theoretical justification. The interpretation is plausible but not definitively established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Non-rIFG lesion patients showed no significant differences from healthy comparisons in go/stop parameters, trigger failures, or frontal \u03b2-burst patterns (except for \u03c3stop).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36, C43-C45 establish the specificity of the rIFG findings through appropriate control comparisons. The statistical tests show no significant effects for non-rIFG patients, though the exception of \u03c3stop (C35) is noted. This control group strengthens the causal inference about rIFG's specific role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38"
+    ],
+    "result": "The high trigger failure rate in rIFG lesion patients inflated non-parametric SSRT estimates, with the largest attenuation (-39 ms) when comparing BEESTS to integration method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C38 is supported by comparison of BEESTS vs. non-parametric SSRT showing the largest discrepancy in the rIFG group. This validates the importance of accounting for trigger failures and supports the methodological premise of the study. The comparison is appropriate and the inference is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C72",
+      "C80",
+      "C81",
+      "C91",
+      "C92"
+    ],
+    "result": "The authors conclude that rIFG's role is to trigger/initiate inhibitory control rather than implement it, requiring fundamental reinterpretation of the dominant model where rIFG 'implements a brake over response tendencies.'",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52, C72, C80-C81, C91-C92 represent the main theoretical conclusion. This is well-supported by the convergence of behavioral (increased trigger failures) and neurophysiological (reduced frontal \u03b2-bursts but intact sensorimotor \u03b2-bursts) evidence. The dissociation between initiation and implementation is the key finding. However, the conclusion relies on the interpretation of \u03b2-bursts as markers of initiation vs. implementation, which is based on prior work (C15-C20, C64-C68).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The authors propose that inhibitory control implementation occurs through a subcortical cascade involving the subthalamic nucleus, basal ganglia output nuclei, and motor thalamus, with rIFG connected monosynaptically to the subthalamic nucleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C79 synthesize prior literature to propose a mechanistic model. The claims are well-supported by citations to relevant work (Jahanshahi et al. 2015, Chen et al. 2020, Coxon et al. 2012, etc.). However, this is primarily a synthesis of prior work rather than new empirical findings from this study. The model is plausible and consistent with the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The authors discuss an alternative framework where rIFG functions as part of a ventral attention network detecting salient stimuli, which automatically trigger motor inhibition as part of the orienting response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C63 present an alternative theoretical framework based on prior literature (Corbetta & Shulman 2002, Sokolov 1963, etc.). The discussion is well-grounded in citations and provides important context for interpreting the findings. However, the current study does not directly test this alternative framework, so the support is indirect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The study included 16 rIFG lesion patients, 16 non-rIFG lesion patients, and 32 matched controls, recruited from the University of Iowa registry, with diverse lesion etiologies and appropriate exclusion criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22, C93-C99 describe the participant characteristics and recruitment. The sample size matches the original Aron et al. 2003 study, and the inclusion of a non-rIFG lesion control group strengthens the design. The exclusion of patients with developmental lesions did not affect results (C97). Appropriate ethical approval is documented (C98).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C23",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "BEESTS modeling was appropriately implemented with censoring for RTs >1000ms, showing good model fit for rIFG patients and controls, with minor misfit at short SSDs for non-rIFG groups that did not affect qualitative conclusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C102-C109 describe the BEESTS implementation and validation. The model is well-established (Matzke et al. 2013, 2017b), and the authors appropriately assessed model fit using posterior predictive checks. The robustness analysis excluding short SSDs (C109) strengthens confidence in the results. The censoring approach is appropriate for the task design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "EEG data were recorded with 64 channels at 500 Hz, preprocessed with ICA artifact removal and CSD transformation, and \u03b2-bursts were detected using a 2\u00d7 median threshold following recent recommendations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C122 describe standard EEG preprocessing and analysis methods. The procedures are appropriate and well-documented, with citations to established methods (ICA, CSD, \u03b2-burst detection). The change from 6\u00d7 to 2\u00d7 median threshold follows recent recommendations (Enz et al. 2021). Normalization did not affect results (C122).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "The subcortical areas involved in inhibitory control implementation were intact in the rIFG lesion patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C82 is stated as fact but is not directly verified. While the lesion overlap maps (Figure 1) show cortical damage, there is no explicit documentation of subcortical integrity through imaging analysis. This is an important assumption for the interpretation but lacks direct empirical support in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The lesions in this study closely resemble those in Aron et al. 2003, with both centers of gravity falling within the pars triangularis of rIFG, though the current lesions were somewhat more rostral.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 compare lesion locations to the original study. The comparison is appropriate and acknowledges the limitation that no two lesion samples are identical. The overlap in pars triangularis provides reasonable confidence in comparability, though the rostral shift is noted as a potential limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The authors argue that coincidental damage to the anterior insula is unlikely to account for the findings, based on its role in error processing, timing relative to SSRT, and prominence in failed vs. successful stops.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 address a potential confound through synthesis of prior literature (Boehler et al. 2010, Cai et al. 2014, Bartoli et al. 2018). The argument is logical and well-supported by citations, though it remains somewhat speculative since anterior insula damage is present in the lesions (visible in Figure 1A). The reasoning is plausible but not definitive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "The stop-signal task used a staircase procedure with 50ms adjustments to achieve ~50% inhibition rate, with 480 total trials (320 go, 160 stop).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 describe standard stop-signal task parameters following established guidelines (Verbruggen et al. 2019). The design is appropriate for BEESTS modeling, with more trials than typically needed for standard SSRT estimation. The staircase procedure is standard.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C10"
+    ],
+    "result": "Prior work by Aron et al. 2003 showed that rIFG lesions increase SSRT and proposed that response inhibition can be localized to rIFG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C10 accurately represent the prior work by Aron et al. 2003. This is the foundational study being re-examined, and the characterization is appropriate. The citation is correct and the claims are factual about what that study showed and proposed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C13"
+    ],
+    "result": "SSRT is confounded by trigger failures, which inflate SSRT estimates but reflect attentional rather than inhibitory deficits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C13 accurately represent the methodological critique of SSRT from recent work (Band et al. 2003, Matzke et al. 2017a,b). This is the key motivation for the current study and is well-established in the cited literature. The characterization is accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C14"
+    ],
+    "result": "rIFG is a key region implicated in stimulus-driven attention more generally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C14 is supported by citation to Corbetta & Shulman 2002, a seminal paper on the ventral attention network. This provides important theoretical context for predicting increased trigger failures in rIFG patients. The characterization of prior work is accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "\u03b2-bursts are a neurophysiological signature of inhibitory control, with frontal bursts reflecting initiation and sensorimotor bursts reflecting implementation of the inhibitory cascade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 accurately represent recent work on \u03b2-bursts (Wessel 2020, Diesburg et al. 2021, etc.). This framework is essential for interpreting the EEG findings. The characterization is accurate, though the interpretation of \u03b2-bursts as specifically reflecting 'initiation' vs. 'implementation' involves some inference from the cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "\u03b2 activity in the LFP occurs in transient bursts, with frontal \u03b2-bursts increasing during stopping and followed by sensorimotor \u03b2-bursts reflecting return to an inhibited motor state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 accurately represent prior work on \u03b2-burst dynamics (Kilavik et al. 2013, Feingold et al. 2015, Wessel 2020, etc.). This provides the theoretical foundation for the EEG analyses. The characterization is accurate and well-supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C12"
+    ],
+    "result": "Some subsequent lesion studies have cast doubt on specific claims of the rIFG theory by showing that other regions lead to comparable deficits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C12 accurately represents subsequent lesion work (Picton et al. 2007, Swick et al. 2008, Yeung et al. 2021) that has challenged the specificity of rIFG's role. This provides important context for the current study. The characterization is accurate.",
+    "result_type": "MINOR"
+  }
+]

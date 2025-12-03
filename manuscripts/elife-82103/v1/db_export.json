@@ -1,0 +1,1892 @@
+{
+  "submission": {
+    "id": "cc6ce7b9-01a4-445d-b52d-0d8f4db422ab",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T18:55:41.507668Z",
+    "updated_at": "2025-12-03T18:55:41.507668Z"
+  },
+  "content": [
+    {
+      "id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "submission_id": "cc6ce7b9-01a4-445d-b52d-0d8f4db422ab",
+      "content_type": "manuscript",
+      "content_text": "# Activity in developing prefrontal cortex is shaped by sleep and sensory experience\n\n## Authors\n\n- Lex J G\u00f3mez<sup>1</sup> ([ORCID: 0000-0003-4643-0869](https://orcid.org/0000-0003-4643-0869)) \u2020\n- James C Dooley<sup>2</sup> ([ORCID: 0000-0002-9868-9840](https://orcid.org/0000-0002-9868-9840))\n- Mark S Blumberg<sup>1</sup> ([ORCID: 0000-0001-6969-2955](https://orcid.org/0000-0001-6969-2955)) \u2020\n\n### Affiliations\n\n1. Interdisciplinary Graduate Program in Neuroscience, University of Iowa Iowa City United States ([ROR:036jqmy94](https://ror.org/036jqmy94))\n2. Department of Psychological and Brain Sciences, University of Iowa Iowa City United States ([ROR:036jqmy94](https://ror.org/036jqmy94))\n3. DeLTA Center, University of Iowa Iowa City United States ([ROR:036jqmy94](https://ror.org/036jqmy94))\n4. Iowa Neuroscience Institute, University of Iowa Iowa City United States ([ROR:036jqmy94](https://ror.org/036jqmy94))\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn developing rats, behavioral state exerts a profound modulatory influence on neural activity throughout the sensorimotor system, including primary motor cortex (M1). We hypothesized that similar state-dependent modulation occurs in prefrontal cortical areas with which M1 forms functional connections. Here, using 8- and 12-day-old rats cycling freely between sleep and wake, we record neural activity in M1, secondary motor cortex (M2), and medial prefrontal cortex (mPFC). At both ages in all three areas, neural activity increased during active sleep (AS) compared with wake. Also, regardless of behavioral state, neural activity in all three areas increased during periods when limbs were moving. The movement-related activity in M2 and mPFC, like that in M1, is driven by sensory feedback. Our results, which diverge from those of previous studies using anesthetized pups, demonstrate that AS-dependent modulation and sensory responsivity extend to prefrontal cortex. These findings expand the range of possible factors shaping the activity-dependent development of higher-order cortical areas.\n\n## Introduction\n\nThe functional development of cerebral cortex is a sinuous and often surprising process, even for those structures with the most transparent of adult functions. Consider primary motor cortex (M1), whose name reflects its well-established role in adult motor control: In early development, M1 does not contribute to motor control at all, but instead functions exclusively as a sensory structure (Bruce et al., 1980; Chakrabarty and Martin, 2005; Young et al., 2012; Tiriac et al., 2014; Dooley and Blumberg, 2018; Singleton et al., 2021). The early-emerging somatosensory map in M1 provides the foundation upon which its later-emerging motor map is built (Dooley and Blumberg, 2018).\n\nAnother surprising aspect of M1 in early development is that its activity is modulated by behavioral state, in particular active sleep (AS, or REM sleep). In infant rats, this modulation reflects AS-dependent increases in neural activity that are enhanced by limb movements during AS, called twitches, that discretely and preferentially trigger sensory feedback to M1 (Dooley and Blumberg, 2018; Glanz et al., 2021). Importantly, AS-dependent modulation of activity is not unique to M1 but is seen in many developing sensorimotor structures (Blumberg, 2015; Blumberg et al., 2020). Given that AS predominates in early life (Jouvet-Mounier et al., 1969; Gramsbergen et al., 1970), it has been posited that this sleep state plays an outsized role in typical and atypical development (Blumberg et al., 2022).\n\nThat sleep so profoundly modulates neural activity in developing sensorimotor structures raises the possibility that it also modulates activity in cortical areas that are directly or indirectly influenced by sensorimotor input, including higher-order areas like prefrontal cortex. Of particular interest here are two areas with which M1 forms connections: secondary motor cortex (M2) and medial prefrontal cortex (mPFC) (Van Eden et al., 1992; Bedwell et al., 2014; Bedwell et al., 2017). As its name implies, M2 has a particularly close functional and anatomical connection with M1: It integrates multimodal sensory cues for motor planning and modulates M1 activity during goal-directed action (Yin, 2009; Omlor et al., 2019; Barthas and Kwan, 2017; Morandell and Huber, 2017; Wang et al., 2020). Like M1, M2 develops a somatotopic map, further highlighting its dependence on sensory input (Yin, 2009; Kunori and Takashima, 2016; Omlor et al., 2019; Barthas and Kwan, 2017; Chen et al., 2017; Singleton et al., 2021). Thus, we hypothesize that, in infant rats, M2 is similar to M1 with respect to sensory responsiveness and modulation by behavioral state.\n\nIn contrast with M1 and M2, mPFC in adults is not closely associated with sensorimotor functions, but rather with cognitive processes such as decision-making and attention (Tanji and Hoshi, 2001; Tanji and Hoshi, 2008; Miller et al., 2002; Barbas and Zikopoulos, 2007; Euston et al., 2012). In infant rats, it is not known whether behavioral state modulates activity in mPFC, nor is it known whether mPFC processes sensory input. In fact, it has been theorized that prefrontal cortex, including mPFC, develops its unique higher-order functions precisely because it develops independently of sensory input (Johnson et al., 2015).\n\nWhat is currently known about functional development in mPFC derives primarily from neural recordings from rat pups under urethane anesthesia (Brockmann et al., 2011; Bitzenhofer et al., 2015). Although urethane precludes natural sleep\u2013wake cycles, it does not prevent expression of spindle bursts in mPFC (Brockmann et al., 2011). Spindle bursts are brief thalamocortical oscillations that, in primary sensory areas, are closely associated with the processing of sensory stimuli (Khazipov et al., 2004; Hanganu et al., 2007; Dooley et al., 2020). In the mPFC of urethanized pups, however, spindle bursts appear to occur spontaneously. Here, we determine if this is also the case in unanesthetized pups\u2014as well as test the hypothesis that the infant mPFC, like M1, is modulated by behavioral state.\n\nUsing unanesthetized rats at postnatal days (P) 8 and P12, we find that M2 and mPFC exhibit state-dependent modulation such that neural firing rates are highest during AS, especially during periods of twitching. We also find that neurons in M2 and mPFC respond to sensory input arising from limb movements that are self-generated (i.e., reafference) or other-generated (i.e., exafference). Finally, to explain discrepancies between the present findings and those reported earlier, we show that urethane administration at P8 prevents expression of behavioral state and brain\u2013behavior relations. Altogether, these findings demonstrate that previously documented effects of behavioral state and sensory experience on somatosensory activity in M1 extend to M2 and mPFC, thus pointing toward new directions for conceptualizing activity-dependent development of higher-order cortical areas.\n\n## Results\n\nWe recorded extracellular unit activity in M1, M2, and mPFC in head-fixed rats at P8 and P12 (Figure 1A). For each pup, dual recordings were performed first in the forelimb regions of M1 and M2 (also referred to as the caudal and rostral forelimb areas, respectively) for 40 min, followed by 50 manual stimulations of the forelimb contralateral to the recording sites. Next, the M2 electrode was repositioned in mPFC and the recording and stimulation procedure was repeated but now with dual recordings in M1 and mPFC. Electrode locations in M1, M2, and mPFC were confirmed histologically (Figure 1B). At P8, we collected eight M1\u2013M2 recordings (107 M1 units, 118 M2 units) and eight M1\u2013mPFC recordings (117 M1 units; 103 mPFC units); at P12 we collected nine M1\u2013M2 recordings (217 M1 units; 204 M2 units) and eight M1\u2013mPFC recordings (222 M1 units; 179 mPFC units). Neural activity, electromyographic (EMG) activity in the nuchal and biceps muscles, and high-speed video (100 frames/s) were recorded as pups cycled between sleep and wake (Figure 1C, D). As expected (Dooley et al., 2021; Glanz et al., 2021; G\u00f3mez et al., 2021), pups spent more time in AS than wake at P8 (AS: 57.7 \u00b1 2.5%; wake: 30.9 \u00b1 1.9%) and P12 (AS: 44.0 \u00b1 3.6%; wake: 39.3 \u00b1 3.5%). Also, the transition from discontinuous cortical activity at P8 to continuous activity at P12 was evident in all three areas, as described previously in primary somatosensory, motor, and visual cortex (Golshani et al., 2009; Rochefort et al., 2009; van der Bourg et al., 2017; Glanz et al., 2021; Riyahi et al., 2021).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/82103/elife-82103-fig1-v1.jpg)\n\n**Figure 1.:** (A) Illustration showing the surface locations of M1 (blue), M2 (magenta), and mPFC (gold). These color codes are used in all other figures. (B) From left to right, illustrations of coronal sections of M1, M2, and mPFC beneath corresponding brightfield coronal sections that show a fluorescent electrode track in each area. (C) Representative 20-s segments of data from paired recordings in M1 and M2 at P8 (left) and P12 (right) across behavioral states. For each record from the top, data are presented as follows: M2 local field potential (LFP) (magenta trace), M2 unit activity (magenta ticks), M1 LFP (blue trace), M1 unit activity (blue ticks), forelimb movement, and nuchal electromyography (EMG). Bottom row: Behavioral states marked as active sleep (dark gray) or wake (light gray). (D) Same as in C, but for paired recordings in M1 and mPFC (mPFC LFP, gold trace; mPFC unit activity, gold ticks).\n\n### Neural activity in M2 and mPFC is modulated by behavioral state\n\nAt P8, representative recordings in M1, M2, and mPFC illustrate substantial and often abrupt increases in neural activity during AS (Figure 2A). In each area, the mean firing rate was significantly higher during AS than wake (t(7)s \u2265 4.38, ps \u2264 0.003, Cohen\u2019s Ds \u2265 1.55; Figure 2B; see Figure 2\u2014figure supplement 1 for data from representative recordings). State-dependent modulation of cortical activity continued through P12 (Figure 2C); once again, the mean firing rate in each area was significantly higher during AS than wake (t(7\u20138)s \u2265 3.17, ps \u2264 0.016, Cohen\u2019s Ds \u2265 1.12, Figure 2D). Similarly, at P8, the rate of spindle bursts was higher during AS than wake for all three areas (t(7)s \u2265 3.805, ps \u2264 0.007, Cohen\u2019s Ds \u2265 1.35; Figure 3) and were associated with increases in unit activity (Figure 3\u2014figure supplement 1). (Spindle bursts were not analyzed at P12 as they are not clearly discernable at this age.) Thus, like M1, neural activity in M2 and mPFC is modulated at both ages in a state-dependent manner.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/82103/elife-82103-fig2-v1.jpg)\n\n**Figure 2.:** (A) Representative 10-min segments of data from a P8 rat showing mean firing rate (2-s bins) in relation to active sleep (dark gray) and wake (light gray). Top: Units in M1 and M2. Bottom: Units in M1 and mPFC. (B) Top: Mean firing rates for M1 and M2 units during active sleep (AS) and wake (W). Bottom: Mean firing rates for M1 and mPFC units during AS and wake. Mean firing rates for individual pups are shown as gray lines. Means \u00b1 standard error of the mean (SEM). Asterisks denote significant difference between states, p \u2264 0.025. (C) Same as in A, but for a P12 rat. (D) Same as in B, but for P12 rats. (For M2, the values for one data pair exceed 8 spikes/s and are not shown.)\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82103/elife-82103-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Firing rates of individual units from representative pairs of M1\u2013M2 (left), and M1\u2013mPFC (right) recordings during active sleep (AS) and wake (W) at P8. Light colored lines represent individual multiunit clusters, whereas dark colored lines represent individual single units. Black lines represent the mean across units. Means \u00b1 standard error of the mean (SEM). (B) Same as in A, but at P12.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/82103/elife-82103-fig3-v1.jpg)\n\n**Figure 3.:** (A) Left column: Representative 50-s segment of local field potential (LFP) data showing spindle bursts in the spectrogram for a paired M1 (top) and M2 (bottom) recording across active sleep (dark gray) and wake (light gray). Right column: Same as for left column, but for a paired M1 (top) and mPFC (bottom) recording. (B) Illustration to show method for detecting spindle bursts and calculating their amplitude and duration. Spindle bursts were defined when the median LFP amplitude exceeded, for at least 100 ms, an established threshold (horizontal dashed lines). (C) Bar graphs showing mean spindle-burst rate in M1, M2, and mPFC during active sleep (AS) and wake (W). Mean firing rates for individual pups are shown as gray lines. Means \u00b1 standard error of the mean (SEM). Asterisks denote significant difference between states, p \u2264 0.025.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82103/elife-82103-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Perievent time histograms showing mean (\u00b1 standard error of the mean [SEM]) firing rate in M1 and M2 (left) and M1 and mPFC (right) relative to the onset of a spindle burst. (B) Same as in A, but with normalized peak firing rates.\n\n### Neural activity in M2 and mPFC increases during periods of self-generated movement\n\nIn infant rats, AS-dependent increases in M1 activity correspond with periods of limb movement (e.g., Glanz et al., 2021). Thus, we next determined whether the same is true for M2 and mPFC (Figure 4A). At both ages, the mean firing rate in each area increased significantly during periods of movement (Figure 4B). For all cases, repeated-measures analyses of variance (ANOVAs) revealed significant main effects of behavioral state (F(1,7\u20138)s \u2265 16.90, ps \u2264 0.005, \u03b7p2s \u2265 0.71) and movement (F(1,7\u20138)s \u2265 6.83, ps \u2264 0.035, \u03b7p2s \u2265 0.49). None of the state \u00d7 movement interactions was significant (F(1,7\u20138)s \u2264 5.35), except for one of the M1 tests at P8 (F(1,7) = 6.11, p = 0.043, \u03b7p2 = 0.47).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/82103/elife-82103-fig4-v1.jpg)\n\n**Figure 4.:** (A) Representative 20-s segment of data showing unit activity (blue ticks), movement data (black trace), movement periods (green blocks), movement-detection threshold (horizontal dotted line), and behavioral state. (B) Bar graphs showing mean firing rates for neurons in M1, M2, and mPFC during periods of movement (Mvt) or no movement (No Mvt) across active sleep (AS) and wake (W). Mean firing rates for individual pups are shown as gray circles. Means \u00b1 standard error of the mean (SEM). Brackets denote significant difference between groups, p \u2264 0.0125. (C) Same as in B, but for P12.\n\nFor each of the eight repeated-measures ANOVAs across P8 and P12, four planned comparisons were conducted to compare firing rates within behavioral state across movement conditions and within movement conditions across behavioral state (Figure 4B, C). Of the 32 planned comparisons, 31 were significant (t(7\u20138)s \u2265 3.51, ps \u2264 0.01, Cohen\u2019s Ds \u2265 1.24). The general pattern was for firing rates to be highest during AS-related periods of movement (i.e., twitching), intermediate during periods of AS-related periods of no movement and wake-related periods of movement, and lowest during wake-related periods of no movement.\n\nIn summary, at P8 and P12, neural activity in M1, M2, and mPFC reflects the interactive effects of behavioral state and movement. Given that all three areas exhibited similar movement-related increases in activity and that M1 is known to respond to movement-related sensory feedback (Dooley and Blumberg, 2018; G\u00f3mez et al., 2021), we determined next whether M2 and mPFC are also responsive to sensory input.\n\n### Neurons in M2 and mPFC respond to sensory input\n\nWe quantified neural responses in M1, M2, and mPFC to forelimb twitches, wake movements, and stimulations (Figure 5A). As expected (and in M1, consistent with previous results; Tiriac et al., 2014; Dooley and Blumberg, 2018; Glanz et al., 2021; G\u00f3mez et al., 2021), units in M1 and M2 at both ages responded to sensory input arising from twitches, wake movements, and stimulations; surprisingly, so did units in mPFC. The percentage of responsive units in all three areas varied by age and event type. At P8, M1 generally exhibited the highest percentage of responsive units, followed by M2 and then mPFC (t(7)s \u2265 4.44, ps \u2264 0.003, Cohen\u2019s Ds \u2265 1.57; Figure 5B). Mean M2 responsiveness was 60.9 \u00b1 10.2% for twitches, 46.5 \u00b1 11.9% for wake movements, and 36.7 \u00b1 9.1% for stimulations; for mPFC, these values were 37.8 \u00b1 8.0%, 20.6 \u00b1 7.5%, and 9.4 \u00b1 5.5%, respectively. At P12, responsiveness declined to low levels in all three areas, but M1 was still more responsive than M2 or mPFC (t(7\u20138)s \u2265 3.13, ps \u2264 0.017, Cohen\u2019s Ds \u2265 1.11; Figure 5C).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/82103/elife-82103-fig5-v1.jpg)\n\n**Figure 5.:** (A) Methodology for determining sensory responsiveness of individual units. Left: Perievent time histogram (PETH) of unit firing rate (blue line) relative to a sensory event, showing the baseline window (BLW) and response window (RW). Event onset denoted by dotted line at Te. Middle: Bar graph showing mean unit activity during the BLW and RW, response threshold (dotted line), and the threshold calculation. Right: Stacked plot showing the percentage of units that exceeded the response threshold (blue) and percentage of units that did not (gray). (B) Stacked plots showing mean percentage of responsive (colored) and unresponsive (gray) units across pups at P8. Top: Data from M1 (blue) and M2 (magenta) recordings. Bottom: Data from M1 (blue) and mPFC (gold) recordings. Means + standard error of the mean (SEM). Asterisks denote significant difference between cortical areas, p \u2264 0.017. PETHs to the right of each stacked plot show normalized unit firing rates for responsive units only in each cortical area. (C) Same as in B, but at P12.\n\nRegardless of the mean responsiveness of a cortical area at a given age, when units were responsive they exhibited response profiles (i.e., perievent time histograms, PETHs) that were strikingly similar to each other. These profiles indicate sensory responding because the peaks in activity occurred after the movement or stimulation (Figure 5B, C). Such response profiles were observed even when responsive units were rare (e.g., mPFC at P12).\n\nTo assess whether M1, M2, and mPFC were similarly activated by sensory events, we next measured each area\u2019s activation rate to compare the reliability with which each area responded to sensory events. The activation rate was defined as the percentage of twitches, wake movements, or stimulations for which at least 30% of responsive units in the area showed an increase in activity (Figure 6A); this threshold was chosen based on prior study of population responses in M1 to self-generated movements at P8 and P12 (Glanz et al., 2021). At P8, M2 and mPFC showed mean activation rates that were similar to those in M1 (t(7)s \u2264 2.28) (Figure 6B), with one exception: mPFC had a significantly lower mean activation rate than M1 for stimulations (t(7) = 5.91, p < 0.001, Cohen\u2019s D = 2.09). At P12, mean activation rates in M2 and M1 were also similar (t(8)s \u2264 2.53) (Figure 6C); for mPFC, the mean activation rate for twitches was similar to that for M1 (t(7) = 1.73), but mean activation rates were significantly lower in mPFC for wake movements and stimulations (t(7)s \u2265 4.06, ps \u2264 0.005, Cohen\u2019s Ds \u2265 1.43). Thus, whereas M1 and M2 had comparable activation rates to all three kinds of sensory events at both ages, mPFC was generally less responsive than M1.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/82103/elife-82103-fig6-v1.jpg)\n\n**Figure 6.:** (A) Methodology for determining the activation rate of cortical areas to sensory events. Left: Illustration of responsive (orange) and unresponsive (gray) units within an area. Right: Illustration of activity of responsive neurons (opaque) to individual sensory events. For each of the three sensory events indicated, the percentage of responsive units is determined. Based on the percentage of events that exceeds threshold (>30%; check marks), the activation rate is calculated. (B) Activation rates in M1, M2, and mPFC at P8 to twitches (Twitch), wake movements (Wake), and stimulations (Stim). Left: Bar graphs showing percentage of sensory events that evoked a response in M1 and M2. Right: Same as at left, but for M1 and mPFC. Mean activation rates for individual pups are shown as gray lines. Means \u00b1 standard error of the mean (SEM). Asterisks denote significant difference between areas, p \u2264 0.017. (C) Same as in B, but at P12.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82103/elife-82103-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Method for detecting spindles bursts in the local field potential (LFP) and relating them to sensory events (tick marks). Spindle bursts were defined when the median LFP amplitude exceeded, for at least 100 ms, an established threshold (horizontal dashed lines). This analysis was performed separately for twitches (left), wake movements (middle), and stimulations (right). (B) Left: Illustration of a spindle burst preceded by a sensory event. Right: Graphs showing the probability that, given a spindle burst, there was a preceding sensory event for M1, M2, and mPFC to twitches (Twitch), wake movements (Wake), and stimulations (Stim). Mean probabilities for individual pups are shown as gray lines. Means \u00b1 standard error of the mean (SEM). Orange dotted lines denote the chance conditional probability of a sensory event given a spindle burst. Vertical brackets denote significant difference from chance; horizontal brackets denote significant difference between cortical areas, p \u2264 0.017.\n\nSpindle bursts in all three areas were associated with sensory events. In M1 and M2, spindle bursts were significantly more likely to occur following twitches, wake movements, and stimulations when compared to shuffled data (t(7)s \u2265 5.79; ps \u2264 0.001; Cohen\u2019s Ds \u2265 0.93) (Figure 6\u2014figure supplement 1). Likewise, spindle bursts in mPFC reliably followed wake movements and stimulations (t(7)s \u2265 4.27; ps \u2264 0.004; Cohen\u2019s Ds \u2265 1.00), though not twitches (t(7) = 2.16). In most cases, sensory events were equally likely to trigger spindle bursts across areas, with the exception of twitches for M2 and stimulations for mPFC (t(7)s \u2265 3.51, ps \u2264 0.01, Cohen\u2019s Ds \u2265 1.24).\n\nFinally, the fact that M1, M2, and mPFC all exhibited sensory responses at these ages led us to consider the sources of this sensory input, as done previously for M1 and primary somatosensory cortex (S1; G\u00f3mez et al., 2021). Specifically, we performed analyses to determine if sensory input is conveyed in parallel to these structures or serially between them (e.g., from M1 to M2). However, unlike with M1 and S1, this analysis yielded a null result: Individual sensory events did not reliably trigger contemporaneous unit activity in M1 and M2, or M1 and mPFC above chance (data not shown). This result suggests that the pathways through which sensory input reaches M2 and mPFC are distinct from those that reach M1 and S1, and presently remain unknown.\n\nIn summary, as found previously in M1, both M2 and mPFC respond to sensory input in early development with increases in spiking activity and spindle bursts.\n\n### Urethane anesthesia suppresses behavior and neural activity in M1 and mPFC\n\nThe prefrontal activity described thus far does not resemble that reported previously in urethanized pups (Brockmann et al., 2011; Bitzenhofer et al., 2015; Chini et al., 2019). To determine whether the use of urethane accounts for this disparity, we recorded M1 and mPFC activity in an additional set of P8 rats (n = 6/group) before and after administration of urethane (1.0 mg/g b.w. SC) or sterile saline.\n\nUrethane administration produced rapid and dramatic effects on behavior and neural activity (Figure 7A). Before urethane injection, pups cycled between sleep and wake, as evidenced by alternating periods of high and low muscle tone accompanied by bouts of wake movements and twitches, respectively. In contrast, urethane (but not saline) injection produced muscle atonia (with occasional spasmodic increases in muscle tone) and suppressed limb movements, thus precluding identification of sleep\u2013wake states. Compared with saline, urethane injection produced significant percentage decreases in limb movements (urethane: \u221287.14 \u00b1 6.75%; t(5) = 11.90, p < 0.001, Cohen\u2019s D = 4.86; saline: +10.84 \u00b1 5.84%, t(5) = 1.00). Of the limb movements that remained after urethane, most occurred during brief whole-body spasms; twitch-like movements were rarely observed.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/82103/elife-82103-fig7-v1.jpg)\n\n**Figure 7.:** (A) Representative 20-s segments of data from recordings in M1 and mPFC before (left) and after (right) injection of urethane (1.0 mg/g b.w.). For each record from the top, data are presented as follows: mPFC local field potential (LFP) (gold trace), mPFC unit activity (gold ticks), M1 LFP (blue trace), M1 unit activity (blue ticks), forelimb movement, and nuchal electromyography (EMG). (B) Representative 75-min segment of data showing mean unit firing rate (in 2-s bins) in M1 (blue) and mPFC (gold) before and after injection of urethane (vertical dashed line). (C) Bar graphs showing mean firing rates of neurons across pups in M1 (left) and mPFC (right) during the pre-injection (Pre) and post-injection (Post) periods for the urethane (UR) and saline (SAL) groups. Mean firing rates for individual pups are shown as gray circles. Means \u00b1 standard error of the mean (SEM). (D) Left: Survivor plots of pooled interspike intervals (ISIs) for M1 units during the pre- and post-injection periods for pups in the urethane (solid blue line) and saline (dashed blue line). Right: Same as at left but for mPFC during the pre-injection (dark gold) and post-injection (light gold) periods. Asterisks denote significant difference (p \u2264 0.025) between urethane and saline groups for ISI values at the bottom fifth percentile (dashed horizontal lines).\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82103/elife-82103-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Representative spectrograms showing 20 s of data pre- and post-urethane administration in M1 (top) and mPFC (bottom). Forelimb movements are shown at the bottom. (B) Bar graphs showing mean rate of spindle bursts across pups in M1 (left) and mPFC (right) during the pre-injection (Pre) and post-injection (Post) periods in the urethane (UR) and saline (SAL) groups. Mean rates of spindle bursts for individual pups are shown as gray circles. Means \u00b1 standard error of the mean (SEM). Asterisks denote significant difference between groups, p \u2264 0.025.\n\nUrethane administration also disrupted neural activity in M1 and mPFC (Figure 7A, B), causing reductions in firing rate of over 85% (Figure 7C). Mean reductions in firing rate were significant for both M1 (t(10) = 3.83, p = 0.003, Cohen\u2019s D = 2.21) and mPFC (t(10) = 5.01, p < 0.001, Cohen\u2019s D = 2.94). Urethane also dramatically and significantly reduced the mean rate of spindle bursts in the two areas (t(10)s \u2265 3.18, ps \u2264 0.01, Cohen\u2019s Ds \u2265 1.83) (Figure 7\u2014figure supplement 1).\n\nUrethane also changed the temporal patterning of neural activity (Figure 7A). In the absence of urethane, neural activity in both areas exhibited the discontinuous pattern characteristic of cortical activity at P8 (Golshani et al., 2009; van der Bourg et al., 2017; Glanz et al., 2021). In contrast, urethane injection produced a burst-suppression pattern that is characteristic of general anesthesia as well as coma, hypothermia, and neonatal trauma (Grigg-Damberger et al., 1989; Steriade et al., 1994; Hellstro\u0308m-Westas et al., 2006; Shanker et al., 2021). This pattern, comprising population bursts separated by periods of relative silence lasting 10 s or longer, is illustrated by survivor plots of interspike intervals (ISIs) (Figure 7D): In both areas, whereas the pre-injection ISI distributions for urethane and saline are indistinguishable, the post-injection distributions for the urethane group deviates substantially from the saline group, especially for longer ISIs where the pronounced shoulders in the plots, indicative of inter-burst silence, are evident. For the bottom fifth percentile of ISIs, we found a significant difference between urethane and saline groups during the post-injection period in both M1 and mPFC (t(5)s \u2265 3.36; ps \u2264 0.007; Cohen\u2019s Ds \u2265 1.94), but not during the pre-injection period (t(5)s \u2264 1.64).\n\nIn summary, urethane anesthesia at P8 eradicates sleep\u2013wake cycling, suppresses behavior, and produces atypical neural activity.\n\n## Discussion\n\nWe demonstrate here in P8 and P12 rats that neurons in two prefrontal areas\u2014M2 and mPFC\u2014exhibit state-dependent neural activity and responsivity to somatosensory stimuli. First, at both ages, neural activity in M2 and mPFC increases specifically during AS, similar to previous findings at these ages in M1 and S1 (Tiriac et al., 2014; Dooley et al., 2020; Glanz et al., 2021). Second, we find that neurons in M2 and mPFC respond to reafference arising from twitches and wake movements, and exafference arising from manual stimulation, with the proportion of responsive neurons generally being highest in M1 and decreasing across M2 and mPFC. Finally, we show that urethane thwarts accurate assessments of brain\u2013behavior relations in developing cortex by suppressing neural activity and abolishing sleep\u2013wake states, thus explaining discrepancies between the present and previous findings. Altogether, these results highlight the potential importance of sleep and sensory experience for the functional development of prefrontal cortex.\n\n### Prefrontal cortex is most active during sleep\n\nIn developing rats, AS modulates spiking and oscillatory activity in M1 and S1 (Blumberg et al., 2020; Dooley et al., 2020; Glanz et al., 2021), findings that we now extend to M2 and mPFC. Neural activity in these two areas was highest during movement-related periods of AS, but it was also higher during AS than wake even in the absence of movement. These findings suggest that state-dependent neuromodulation is a general feature of infant cortical activity. Although neuromodulators like acetylcholine and serotonin, respectively, influence early cortical activity (Hanganu et al., 2007; Janiesch et al., 2011) and development (Kolk and Rakic, 2022), it is not yet known whether these and other neuromodulators are released in a state-dependent fashion, as is known to occur in adults (Lee and Dan, 2012; Jones, 2020).\n\n### Prefrontal cortex responds to sensory input\n\nSensory experience in early life scaffolds developing sensory and sensorimotor systems, providing information about the growing body and the world it inhabits (Blumberg, 2015). Notably, recent evidence from the visual system of both rodents and primates suggests that how sensory input reaches cortex is fundamentally different in infants and adults. In adults, sensory information flows through a hierarchical network, from primary cortical areas to higher-order cortical areas. But, in the developing visual system, both primary and higher-order visual areas receive parallel sensory input directly from thalamus (Warner et al., 2012; Murakami et al., 2022). Likewise, in the developing sensorimotor system, both M1 and S1 receive parallel sensory input (Dooley and Blumberg, 2018; G\u00f3mez et al., 2021). This ascending sensory input to M1 and S1 may refine somatotopy and connectivity within and between these cortical areas, thus laying a foundation for their further development, including the later emergence of M1\u2019s motor functionality (Dooley and Blumberg, 2018; G\u00f3mez et al., 2021).\n\nM2 is a higher-order sensorimotor area with a somatotopic representation, though its organization is coarser than M1\u2019s (Mohammed and Jain, 2014; Mohammed and Jain, 2016). Thus, it is perhaps not surprising that we found that M2 units, like those in M1, exhibit short-latency sensory responses to self- and other-generated forelimb movements. In contrast, mPFC does not exhibit somatotopic organization. Indeed, it has been theorized that the development of higher-order functions in prefrontal cortex derives in part from its relative independence from sensory input, relying instead on intrinsic (or spontaneous) neural activity (Johnson et al., 2015; Johnson et al., 2021; Werchan and Amso, 2017). Thus, it was surprising to find that mPFC units exhibit short-latency sensory responses with profiles that are nearly identical with those in M1 and M2 (Figure 5B, C).\n\nThe similar response profiles in M1, M2, and mPFC imply that the sensory events were triggered by the same subcortical source, as is the case with M1 and S1 at these ages (G\u00f3mez et al., 2021). However, our attempts to identify this source yielded null results. Thus, the source of M2 and mPFC\u2019s short-latency sensory responses in early development remains unknown, and likely differs from the source for M1 and S1. Moving forward, future studies may need to combine precise stimulation of ascending pathways with recordings in M2 and mPFC.\n\nAcross M1, M2, and mPFC, we observed a declining proportion of sensory-responsive units, with the highest proportion in M1 and the lowest in mPFC. Importantly, because mPFC is not somatotopically organized, by testing only forelimb sensory input it is likely that we are underestimating the proportion of mPFC units that respond to somatosensory input. Thus, the decreasing sensory responsiveness across M1, M2, and mPFC likely reflects their decreasing somatotopic homogeneity (Figure 8; Asanuma and Mackel, 1989; Bedwell et al., 2014; Barthas and Kwan, 2017).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/82103/elife-82103-fig8-v1.jpg)\n\n**Figure 8.:** Somatotopic organization (red) is more homogeneous in M1 than in M2 and mPFC. In contrast, functional organization (lavender) is more heterogeneous in mPFC than in M2 and M1.\n\nFurther, there is no reason to believe that sensory responses in the developing mPFC are exclusive to the somatosensory system. In adults, mPFC receives multimodal inputs (Hoover and Vertes, 2007; Bedwell et al., 2014) and is responsive to auditory stimuli arriving from the posterior medial thalamic nucleus (Martin-Cortecero and Nu\u00f1ez, 2016). Accordingly, we expect neurons in developing mPFC to respond to somatosensory input from other parts of the body, as well as visual, auditory, olfactory, and gustatory input. Thus, whereas unimodal sensory input to primary sensory areas enables the development of somatotopic homogeneity, multimodal sensory input to prefrontal cortex may enable the development of functional heterogeneity.\n\n### Urethane abolishes brain\u2013behavior relations\n\nUntil now, developmental investigations of rat prefrontal cortex were conducted in urethanized pups (Brockmann et al., 2011; Bitzenhofer et al., 2015). Although urethane is known to alter neural activity and behavior (Dyer and Rigdon, 1987; Simons et al., 1992; Sorrenti et al., 2021), prior studies have discounted the significance of these affects. In fact, it has been claimed that urethane mimics natural sleep in infant and adult rodents (Clement et al., 2008; Pagliardini et al., 2013; Bitzenhofer et al., 2015).\n\nThe present findings cannot be reconciled with these claims. Despite using a light dose in P8 rats, urethane eradicated natural sleep\u2013wake states and profoundly suppressed neural activity and limb movements. Also, firing rates and oscillatory activity in M1 and mPFC exhibited a burst-suppression pattern that is not observed in healthy unanesthetized pups (Grigg-Damberger et al., 1989; Steriade et al., 1994; Hellstro\u0308m-Westas et al., 2006; Iyer et al., 2014; Shanker et al., 2021). Finally, we were unable to assess the effects of urethane on the sensitivity of mPFC to reafferent and exafferent stimuli because, respectively, urethane suppressed self-generated movements and exafferent processing was nearly absent even in unanesthetized pups.\n\nThus, as is increasingly appreciated in adults (Akeju and Brown, 2017; Mondino et al., 2022), anesthesia in infants is not a suitable proxy for natural sleep or sleep-related neural activity. Nor is it compatible with the goal of understanding brain\u2013behavior relations in early development. Accordingly, extreme caution is warranted when interpreting results from anesthetized infant animals.\n\n### Conclusions\n\nConsistent with previous findings in sensorimotor cortex, we find that behavioral states and sensory experiences influence neural activity in developing PFC. These findings raise the possibility that the development of prefrontal cortex is influenced by more than intrinsic activity alone and that\u2014similar to the discovery of the sensory foundations of \u2018motor cortex\u2019 (Chakrabarty and Martin, 2005; Dooley and Blumberg, 2018; Glanz et al., 2021; Singleton et al., 2021)\u2014the early activity in PFC may not be related in obvious ways to its higher-order functions in adults. Thus, we propose that state-dependent modulation and sensory responsiveness are general features of developing cortex. In other words, the early functional development of primary and higher-order cortical areas may be more similar than currently appreciated.\n\nFinally, although the similarities and differences between rodent and primate PFC have been debated for decades (Preuss, 1995; Uylings et al., 2003; Barthas and Kwan, 2017; Carl\u00e9n, 2017; Laubach et al., 2018), there is still no consensus regarding the extent to which non-primates have cortical areas homologous to primate PFC. When defining PFC, different researchers variously emphasize anatomical connectivity and functional criteria, resulting in terminological confusion. For example, in rodents, M2 goes by many names and may perhaps be considered part of mPFC (Barthas and Kwan, 2017). The current study does not resolve these issues and was not designed to do so, but does suggest that a developmental-comparative approach will prove useful for clarifying PFC\u2019s evolutionary and functional history, as it has for other cortical domains (Krubitzer and Dooley, 2013).\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Rattus norvegicus)</td>\n      <td>Sprague-Dawley Norway Rats</td>\n      <td>Envigo</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Vybrant Dil Cell-Labeling Solution</td>\n      <td>Life Technologies</td>\n      <td>Cat #: V22885</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>3,3\u2032-Diaminobenzidine Tetrahydrochloride (DAB)</td>\n      <td>Spectrum</td>\n      <td>TCI-D0078-5G</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Isoflurane</td>\n      <td>Phoenix Pharmaceuticals</td>\n      <td>Item #: 0010250</td>\n      <td>3\u20135%</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Ketamine hydrochloride</td>\n      <td>Akorn Animal Health</td>\n      <td>NDC: 59399-114-10</td>\n      <td>10:1 with xylazine (cocktail: &gt;0.08 mg/kg, IP)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Xylazine</td>\n      <td>Lloyd Laboratories</td>\n      <td>sc-362949Rx</td>\n      <td>1:10 with ketamine (cocktail: &gt;0.08 mg/kg, IP)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Catalase from bovine liver</td>\n      <td>Sigma-Aldrich</td>\n      <td>C9322</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Cytochrome c from equine heart</td>\n      <td>Sigma-Aldrich</td>\n      <td>C2506</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Carprofen</td>\n      <td>Putney</td>\n      <td>#200-522</td>\n      <td>0.1 mg/kg</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Bupivacaine</td>\n      <td>Pfizer</td>\n      <td>NDC 0409-1162-19</td>\n      <td>0.25%</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Urethane</td>\n      <td>Sigma-Aldrich</td>\n      <td>CAS #: 51-79-6</td>\n      <td>1.0 mg/g b.w.</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MATLAB, version 2020a</td>\n      <td>Mathworks</td>\n      <td>RRID: SCR_001622</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Spike2, version 8</td>\n      <td>Cambridge Electronic Design</td>\n      <td>RRID: SCR_000903</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Adobe Illustrator</td>\n      <td>Adobe</td>\n      <td>RRID:SCR_010279</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Adobe Photoshop</td>\n      <td>Adobe</td>\n      <td>RRID:SCR_014199</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Spinview</td>\n      <td>FLIR</td>\n      <td>https://www.flir.com/products/spinnaker-sdk/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Kilosort</td>\n      <td>Marius Pachitariu</td>\n      <td>https://github.com/MouseLand/Kilosort; Pachitariu, 2023</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Phy2</td>\n      <td>The Cortical Processing Laboratory at UCL</td>\n      <td>https://github.com/cortex-lab/phy; Rossant and Harris, 2022</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>SPSS</td>\n      <td>IBM</td>\n      <td>RRID:SCR_019096</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Synapse</td>\n      <td>Tucker Davis Technologies</td>\n      <td>https://www.tdt.com/component/synapse-software/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Vetbond</td>\n      <td>3M</td>\n      <td>https://www.3m.com/</td>\n      <td>Tissue adhesive</td>\n    </tr>\n  </tbody>\n</table>\n\n### Experimental animals\n\nAll experiments were conducted in accordance with the National Institutes of Health Guide for the Care and Use of Laboratory Animals (NIH Publication No. 80-23) and were approved by the Institutional Animal Care and Use Committee of the University of Iowa (protocol # 0021955).\n\nSprague-Dawley rats at P8\u20139 (hereafter \u2018P8\u2019; body weight: 20.76 \u00b1 1.77 g) and P12\u2013P13 (hereafter \u2018P12\u2019; body weight: 30.74 \u00b1 2.16 g) were used. Pups were born to dams housed in standard laboratory cages (48 \u00d7 20 \u00d7 26 cm) with a 12-hr light/dark cycle. Food and water were available ad libitum. The day of birth was considered P0 and litters were culled to eight pups by P3. To protect against litter effects, pups selected from the same litter were always assigned to different experimental groups (Abbey and Howard, 1973; Lazic and Essioux, 2013). In addition, pups were randomly assigned to experimental groups.\n\n### Experiment 1: Recordings in unanesthetized pups\n\nIn Experiment 1, we recorded M1, M2, and mPFC activity from unanesthetized rats at P8 and P12.\n\n#### Experimental procedure\n\n##### Surgical preparation\n\nSurgery was performed using established methods (Blumberg et al., 2015; Glanz et al., 2021). Briefly, on the day of recording a pup of healthy weight and with a visible milk-band was removed from the litter, anesthetized with isoflurane (3.5\u20135%, Phoenix Pharmaceuticals, Burlingame, CA), and placed on a heating pad. Bipolar electrodes (California Fine Wire, Grover Beach, CA) were inserted into the nuchal muscle and left and right forelimb muscles (biceps brachii) and secured with collodion. An anti-inflammatory agent (Carprofen, 0.1 mg/kg SC; Putney, Portland, ME) was administered and the torso of the pup was wrapped in soft surgical tape. The scalp was sterilized with iodine and ethanol, and a portion of the scalp was removed to reveal the skull; a topical analgesic (bupivacaine, 0.25%; Pfizer, New Work, NY) was applied to the skull surface and surrounding skin, and then a veterinary adhesive (Vetbond; 3M, St. Paul, MN) was used to secure the skin to the skull. A steel head-fix (Neurotar, Helsinki, Finland) was attached to the skull using super glue (Loctite; Henkel Corporation, Westlake, OH) and dried with accelerant (INSTA-SET; Bob Smith Industries, Atascadero, CA). The pup was secured in a stereotaxic apparatus (Kopf Instruments, Tujunga, CA) and, under isoflurane anesthesia, a steel trephine (1.8 mm; Fine Science Tools, Foster City, CA) was used to drill openings in the skull over forelimb M1 (all coordinates from bregma; P8: +1.0 mm rostrocaudal (RC), 1.8 mm mediolateral (ML); P12: +1.0 mm RC, 1.8\u20132.0 mm ML), forelimb M2 (P8 and 12: +2.0 mm RC, 1.0 mm ML), and mPFC (P8 and P12: +1.8 mm RC, 0.5 mm ML). The pup was then transported to the recording rig, where it recovered for at least 1 hr. Recording began only after regular sleep\u2013wake cycles were observed and intracranial temperature reached 36\u00b0C.\n\n##### Data acquisition\n\nNeurophysiological and EMG data were collected using a data acquisition system (Tucker-Davis Technologies, Gainsville, FL) with sampling rates of approximately 25 and 1.5 kHz, respectively. Neural data were collected simultaneously from two cortical locations using 16-site, 3 or 5 mm silicon-iridium electrodes (A1x16-3 mm-100-177-A16 or A1x16-5 mm-100-177-A16; NeuroNexus, Ann Arbor, MI). Before insertion, electrodes were coated with a fluorescent dye (DiI; Invitrogen, Waltham, MA) for later confirmation of placement. A chlorinated silver wire (0.25 mm in diameter; Medwire, Mt. Vernon, NY) was inserted into occipital cortex and used as both reference and ground. Neural data were recorded and visualized using Synapse software (Tucker-Davis Technologies). Video was collected using a BlackFly-S camera (100 fps) and SpinView software (FLIR Integrated Systems, Wilsonville, OR). To enable synchronization of the video and electrophysiological records, an LED was positioned within the camera frame and was programmed to flash once every 3 s (Dooley et al., 2021).\n\n##### Experimental design\n\nWe performed two sequential recordings in 10 pups at P8 (five female) and 14 pups at P12 (seven female). We first recorded activity from the forelimb regions of M1 and M2. Electrodes were inserted into the target sites and allowed to settle for at least 10 min. To confirm electrode placements in the forelimb region of both areas before recording began, the experimenter used a cotton-tipped dowel to move the contralateral forelimb while monitoring neural activity. If forelimb-related activity was not detected during the first electrode placement (a rare occurrence), the electrode was withdrawn, repositioned, and lowered again; electrodes were never repositioned more than twice. Video and neurophysiological data were recorded for 40 min as the pup cycled freely between sleep and wake. This period was followed by 50 manual stimulations of the right forelimb (as described above), delivered approximately 2\u20133 s apart. Upon completion of the stimulation protocol, the electrode in M2 was carefully withdrawn, coated again with DiI, and reinserted into mPFC (the M1 electrode was not disturbed). After the electrode settled in mPFC for at least 10 min, we again recorded video and neurophysiological data for 40 min, followed by 50 stimulations of the right forelimb. In total, the M1\u2013M2 dataset consisted of eight recordings at P8 and nine at P12; the M1\u2013mPFC dataset consisted of eight recordings at P8 and eight at P12.\n\n### Data analysis\n\n#### Processing of neurophysiological data\n\nNeurophysiological data were filtered for unit activity (bandpass: 300\u20135000 Hz) and converted into binary files. Templates for putative spikes were extracted using Kilosort (Pachitariu et al., 2016) and visualized using Phy2 (Rossant and Harris, 2022), as previously (Dooley et al., 2021; Glanz et al., 2021; G\u00f3mez et al., 2021). Spike waveforms and autocorrelations were used to identify single units and multiunits. Preliminary analyses were performed to confirm that the activity profiles of single units and multiunits did not differ in any systematic way. Thus, all subsequent analyses were conducted using both single-unit and multiunit activity (hereafter \u2018units\u2019 or \u2018unit activity\u2019). To obtain local field potentials (LFPs), neurophysiological data were downsampled to ~1000 Hz, smoothed (0.005 s), and converted into binary files. Spike-time and LFP data were imported into MATLAB for analysis. To extract spindle bursts, LFP signals were bandpass filtered at 10\u201320 Hz (stopband attenuation: \u2212\u221260 dB; transition gap: 1 Hz) and the phase and amplitude of the filtered signal were calculated using a Hilbert transform (Glanz et al., 2021). Spindle bursts were defined as events for which the waveform amplitude exceeded, for at least 100 ms, the median amplitude plus two standard deviations of the baseline amplitude. Spindle-burst onset was determined using previously described methods (Dooley et al., 2020).\n\n#### Analysis of behavioral state\n\nMotor activity and behavioral state were assessed visually using video and corroborated with EMG. We used custom-written MATLAB scripts to detect frame-by-frame changes in pixel intensity within user-defined regions of interest (Dooley et al., 2021). We selected two regions, one encompassing the right forelimb and the other encompassing the entire body, to allow detection of movement periods. Movements were represented as changes in pixel intensity across time. We then imported movement, neurophysiological, and EMG data into Spike2 (Cambridge Electronic Design, Cambridge, UK).\n\nRecording data were separated into periods of AS and wake. AS was defined by the presence of myoclonic twitches occurring against a background of nuchal muscle atonia. Twitches appear as brief, jerky limb movements and as sharp spikes in the EMG record. Wake was defined by the presence of increased nuchal muscle tone relative to AS, most commonly initiated by and containing large-amplitude movements of multiple limbs (Del Rio-Bermudez et al., 2020; Glanz et al., 2021). Periods of behavioral quiescence that were not defined as AS or wake were examined but not included in the present analyses. Behavioral state was always scored blind to neural activity.\n\nTo quantify differences in firing rate across AS and wake, for each unit we calculated the mean firing rate over the duration of each state; we then calculated mean firing rate across units within each brain area for each pup. At P8, we also assessed whether the occurrence of spindle bursts was state dependent. For each area in each animal, we determined the mean rate of spindle bursts during AS and wake, and then calculated the mean rates across pups. Spectrograms of oscillatory activity were generated using the sonogram function in Spike2. (This analysis was not performed at P12 because spindle bursts are not clearly discernable at this age.)\n\nTo delineate differences between state- and movement-dependent changes in firing rate in M1, M2, and mPFC, we calculated the mean firing rate in each area during periods of movement. Movement and non-movement periods were extracted using custom MATLAB scripts from whole-body movement data (derived from video as described above). The onset of a movement period occurred when movement data exceeded a threshold value of 3\u00d7 greater than baseline for at least 250 ms; the offset of a movement period occurred when movement data decreased below threshold. Movement and non-movement periods were categorized as to whether they occurred during AS or wake. Mean firing rates were calculated for each unit during the following conditions: AS with movement, AS with no movement, wake with movement, and wake with no movement. We determined the mean firing rate across units within an area and then the mean rate across pups.\n\n#### Analysis of sensory activity\n\nWe analyzed neural activity in M1, M2, and mPFC in response to twitches, wake movements, and stimulations (hereafter referred to collectively as \u2018sensory events\u2019). First, we scored twitches of the right forelimb during AS. The onset of a twitch was defined as the first video frame showing movement. When a bout of rapid twitching was detected, the first twitch in the bout was always scored; subsequent twitches in the bout were also scored if they could be clearly distinguished from the previous twitch (e.g., by a change in movement direction). We also scored individual forelimb wake movements; because wake movements typically occur as bouts of long continuous sequences, only the first limb movement in a bout was scored. The onset time of each forelimb stimulation was scored as the first video frame in which the dowel touched the forelimb. Sensory events were also always scored blind to neural activity.\n\nTo determine whether units in M1, M2, and mPFC were responsive to sensory input, we constructed PETHs for unit activity triggered on sensory events. We calculated PETHs in spikes/s for each unit, triggered on sensory events (window = 1 s, offset = 0.5 s, bin size = 10 ms). We then defined a baseline window (BLW; \u2212500 to \u2212200 ms before the event) and a sensory-response window (RW; 0\u2013200 ms after the event) and calculated the mean firing rate within each window. If the firing rate during the RW was greater than the mean baseline firing rate plus 2\u00d7 the standard deviation of the baseline value ($x\u00af_{RW}>x\u00af_{BLW}+2\u2217\\sigma_{BLW}$), the unit was categorized as \u2018responsive\u2019. Using only responsive units, we again calculated average PETHs within each structure and normalized the data to the maximum value within each PETH.\n\nTo assess the reliability of neural responses to sensory events, we examined the activation rate, defined as the percentage of events to which each area responded. Again, using only responsive units, we examined the activity of each unit before and after each sensory event, using the same BLW as above but increasing the RW to 0\u2013300 ms after the event so that the window durations were equal. For a given unit within a cortical area, if the summed unit activity within the RW exceeded a threshold defined as 1.5\u00d7 the summed unit activity within the BLW ($\\sumRW>1.5\u2217\\sumBLW$), the unit was categorized as having an event response. When more than 30% of recorded units within a cortical area exceeded this threshold, it was determined that the area as a whole for that pup was activated (Glanz et al., 2021). If a pup had no responsive units in a given area, that area\u2019s activation rate was set to zero.\n\nFinally, to assess whether spindle bursts are associated with sensory events in M1, M2, and mPFC, we calculated the probability that a spindle burst was preceded by a sensory event for each area. First, for each spindle burst, we defined a window of time spanning 500 ms before the spindle burst onset. If a sensory event occurred within that window, we inferred that the sensory event triggered the spindle burst. We then divided the number of spindle bursts preceded by a sensory event by the total number of spindle bursts to derive a probability for that behavioral state or stimulation period. Probabilities were calculated for each area in each animal, and then averaged across animals. To establish the probability that a spindle burst was preceded by a sensory event due to chance, we performed 100 random reshuffles of sensory-event and spindle-burst onset times within a behavioral state or stimulation period. We used the mean probability of these 100 reshuffles to derive the expected (chance) probability for each type of sensory event. We then compared the expected and observed probabilities to determine whether spindle bursts were reliably preceded by sensory events. Finally, we compared spindle-event probabilities across areas to determine if the reliability of a sensory event preceding a spindle was similar across areas.\n\n### Experiment 2: Recordings in urethanized pups\n\nIn Experiment 2, we used P8 rats to assess the effects of urethane anesthesia on behavior and neural activity in M1 and mPFC.\n\n#### Experimental procedure\n\n##### Surgical preparation\n\nSurgical preparation. Pups were prepared for neurophysiological recording as in Experiment 1, with one exception: After securing EMG electrodes, a small (1-mm) incision was made in the skin near the base of the tail and surgical-grade silicon tubing (inner diameter: 0.020 in; outer diameter: 0.037 in; SAI Infusion Technologies, Lake Villa, IL) was secured subcutaneously with veterinary adhesive.\n\n##### Data acquisition\n\nNeurophysiological and video data were acquired as in Experiment 1.\n\n##### Experimental design\n\nWe recorded from P8 rats before and after injection of urethane (n = 7) or saline (n = 6). We recorded baseline video and neurophysiological data for 30 min while pups cycled between sleep and wake, followed by 50 stimulations of the right forelimb as in Experiment 1. We then infused urethane (1.0 mg/g b.w.; Sigma-Aldrich, St. Louis, MO) or an equivalent volume of sterile saline (Fresenius Kabi, Bad Homburg, Germany) through the implanted cannula. This procedure minimized disruption of the pup and allowed for uninterrupted recording of data. Also, subcutaneous infusion of urethane produces a comparable level of surgical anesthesia as intraperitoneal injection and reduces the likelihood of organ puncture (Maggi and Meli, 1986; Field and Lang, 1988; Matsuura and Downie, 2000). We waited at least 10 min for the drug to take effect, after which data were again recorded for 30 min followed by 50 stimulations of the right forelimb. One pup was excluded from analysis due to the complete loss of neural activity after urethane administration.\n\n### Data analysis\n\n#### Processing of neurophysiological and video data\n\nNeurophysiological and video data were processed as in Experiment 1. However, because sleep\u2013wake states were eradicated in the urethanized pups, they were not scored and analyzed.\n\n#### Analysis of changes in movement quantity\n\nWe compared the effects of urethane and saline administration on movement based on pixel-change data derived from video, as in Experiment 1. For each pup, we visualized the smoothed (0.01 s) whole-body movement data in Spike2 to determine the baseline level of activity. Baseline movement activity was based on the mean pixel change across five 1-s windows during which no movement occurred. Then, in MATLAB, we summed the movement data (in pixel intensity changes per frame) separately during the pre- and post-injection periods; for each period, we performed a baseline subtraction. The sums of the movement data in the pre- and post-injection periods were divided by the total duration of each period. Next, for each pup we calculated the percentage change in movement between the pre- and post-injection periods. Finally, we calculated the mean percentage change across pups for each experimental group.\n\n#### Analysis of changes in firing rate\n\nWe calculated the mean firing rate of each unit in M1 and mPFC during the pre- and post-injection periods. For each pup, we calculated mean unit firing rate within each area, and then calculated mean firing rates for each area across pups in the two experimental groups.\n\n#### Analysis of ISIs\n\nFor each pup, we calculated the bottom fifth percentile of ISIs during the pre- and post-injection periods for the two experimental groups.\n\n#### Analysis of changes in spindle-burst activity\n\nWe identified spindle bursts from LFP data as described in Experiment 1, using the pre-injection period to calculate the baseline LFP amplitude. The rate of spindle bursts was calculated for the pre- and post-injection periods.\n\n### Histology\n\nAt the end of each experiment, pups were overdosed with ketamine\u2013xylazine (>0.08 mg/kg, intraperitoneal) and perfused transcardially with phosphate-buffered saline (PBS, 1 M) followed by 4% paraformaldehyde (PFA). The brain was extracted and fixed for at least 24 hr in PFA and 48 hr in phosphate-buffered sucrose. Brain tissue was sliced coronally (80 \u00b5m) using a freezing microtome (Leica Biosystems, Wetlzar, Germany) and tissue was wet-mounted to locate the electrode tracks using fluorescence microscopy (\u00d72.5\u20135 magnification; Leica Microsystems). Sections were placed in well plates and stained for cytochrome oxidase (CO) to visualize cortical layers. Well plates were filled with CO solution (catalase, cytochrome C, DAB, phosphate-buffered H2O, and DiH2O) and sections were allowed to develop in solution for 3\u20136 hr on a heating pad (Dooley et al., 2021). Sections were then rinsed with PBS, slide-mounted, and allowed to dry for 48 hr; slides were then placed in citrus clearing solution for 5 min, after which they were cover-slipped with dibutylphthalate polystyrene xylene (DPX) mounting medium. Cover-slipped slides were allowed to dry for at least 24 hr. Fluorescent and brightfield images (at \u00d72.5\u20135 magnification) were imported into Adobe Illustrator (San Jose, CA) and electrode tracks were reconstructed. CO-stained slides were used to determine the border between S1 and M1 (using layer 4 as a boundary). We demarcated mPFC and M2 based on the structure and orientation of cortical layers and with the aid of brain atlases (Paxinos and Watson, 2009; Khazipov et al., 2015).\n\n### Statistical analyses\n\nAll statistical analyses were performed in SPSS (IBM) and MATLAB. Probabilities and percentages were arcsine transformed before statistical testing to correct for edge effects. For all tests, \u03b1 was set to 0.05, unless otherwise specified; when appropriate, the Bonferroni correction procedure was used. A Shapiro\u2013Wilk test was used to assess normality. We tested for significance using repeated-measures ANOVA and paired and unpaired t tests. Means are reported with their standard error (SEM). We report effect sizes for ANOVA as partial eta square (\u03b7p2) and for t tests as Cohen\u2019s D.\n",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "9a1b44f3-3b1e-4250-ac85-8272c5bfe623",
+      "submission_id": "cc6ce7b9-01a4-445d-b52d-0d8f4db422ab",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Muriel Thoby-Brisson, https://ror.org/02feahw73 CNRS Universit\u00e9 de Bordeaux France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82103.sa0](https://doi.org/10.7554/eLife.82103.sa0)\n\nThis manuscript examines neural activity in several cortical areas (such as the primary and secondary motor cortex and the medial prefrontal cortex) across sleep-wake states and under anesthesia. The quality of the recordings in infant rats is excellent, evidence is solid, and results are important in the field of research into the role of active sleep in the neuronal and circuit mechanisms of early cortical development. Some of the findings presented and the hypothesis developed are novel, and some should hopefully prompt future developmental studies to look at sleep as an essential component that cannot be replaced by using anesthetics.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Muriel Thoby-Brisson, https://ror.org/02feahw73 CNRS Universit\u00e9 de Bordeaux France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82103.sa1](https://doi.org/10.7554/eLife.82103.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Activity in developing prefrontal cortex is shaped by sleep and sensory experience\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Laura Colgin as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Lukas I Schmitt (Reviewer #1); Anita L\u00fcthi (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n(1) Further analysis: Data presented are mainly descriptive and remain at an observational state rather than bringing functional insights. Further analysis are absolutely required on, for example: (1) the nature of the relationship of single unit firing with sleep states, spindle activity, sensory inputs or motor activity across different development stages, (2) correlation between single unit responses with the different types of events investigated, spike train variability, unit properties description, correlation between M1-M2 units\u2026.\n\n(2) Further analysis must also include more statistics.\n\n(3) The authors should consider toning down some of their claims that are not sufficiently substantiated by the actual experiments. For instance, the effects of sensory stimulation under urethane anesthesia have not been performed but could be useful to argue on the effects of urethane. If the authors choose to run new experiments, they can publish those later as a Research Advance that will be associated with this paper, should it ultimately be accepted. Alternatively, should the authors already have data available that suggests possible neural substrates of early sensory responsiveness (e.g., histological data regarding the connectivity of motor and prefrontal areas at these early stages of development), then you may want to consider adding these additional data.\n\n(4) The term sensory feedback seems to be inappropriately used.\n\nReviewer #1 (Recommendations for the authors):\n\nThe manuscript should be revised with additional analysis included. Additional experiments may also be needed if some analysis cannot be performed on the data already collected. Suggestions for these additional analysis and potential experiments as well as critical issues with presentation are listed below.\n\n(1) As currently presented, analysis of the recordings made by the authors are largely descriptive and so their findings are difficult to interpret beyond the initial observation of state-related activity in the three areas examined. While it is true, as the authors state that \"These findings expand the range of factors shaping the activity-dependent development of higher-order cortical areas\", it is not particularly clear what exactly these factors are or how the activity observed may be involved in development. To address this, the authors should further analyze recorded activity to clarify the nature of the relationship of single unit firing with active sleep as well as with spindle activity, sensory input, and movements across the developmental ages examined. For example, to link activity at the single unit level with spindles, the authors could assess spindle-associated firing rates and spike phase relationships in recorded units across areas (i.e. as in Dickey et al., Nat. Comm. 2021). PETH histograms like those used for motor and sensory events could also be useful for this purpose. More generally, assessment of the correlation between responses of single units to different types of events (i.e. in figure 5), at least for responding neurons, would help to determine whether there are connections between activity elicited.\n\n(2) Analysis of the effects of Urethane, while informative, is incomplete in that the authors do not connect the observed effects of Urethane administration with their other observations. For instance, it does not appear that the response to sensory events is assessed. If there is another means to more directly link the observed urethane dependent changes with their other analysis, then this experiment (sensory stimulation under urethane anesthesia) should be performed. It would also be important to compare effect size across areas to support the idea that urethane obscures state-related activity specifically in higher cortical areas such as PFC.\n\n(3) In the discussion, the authors consider differences across the areas recorded and suggest that the \"decreasing somatotopic homogeneity and increasing functional heterogeneity\" of PFC relative to M1 suggests that \"sensory input in early development likely serves different functional roles\" for these areas. While this idea is interesting and the illustration of this claim in Figure 8 suggests that the authors think it is important for their overall message, the supporting evidence included in the manuscript is relatively weak. It is not clear that the observation of different percentages of responsive neurons in different areas shows any sort of functional heterogeneity and, in any case, it is not clear what this would mean from a functional perspective. If the authors want to include this claim, which I think does add to the value of the study overall, they should include additional analysis such as correlating single unit responses to different types of events. Comparison of spike-train variability (e.g. Ruyter vavn Steveninck et al. science 1997) across areas may also be useful for this purpose.\n\nReviewer #2 (Recommendations for the authors):\n\nThe study is very well done and the data is clearly described. One wonders whether the authors could go a step further to provide more analytic insight. Do these areas receive synaptic projections from subcortical somatosensory areas? Are these innervation patterns consistent with the decline of responsiveness from P8 to P12? And what is the role of M1-M2 or M1-mPFC projections?\n\nThe study could also go a step further in the analysis of the existing data. For example, a presentation of unit properties is missing, which leaves the reader uninformed about unit heterogeneity and distribution across layers.\n\nThe non-expert reader may wonder about the general description of twitches, wake-related movements and external sensory stimuli as \"sensory feedback\". It is not clear what is meant with feedback during external sensory stimuli. It is also unclear what role proprioceptive stimuli, e.g. the ones from muscle spindles play here. This also raises the question could look at whether individual units share responsiveness to twitches, wake movements and stimulation.\n\nFigure 1C intriguingly suggests that M2 units discharge in a manner that seems to be complementary to the one observed for M1 units. This seems much less to be the case for mPFC units. This would deserve some more in-depth analysis. This in particular is because the mean firing plots in Figure 2 do not seem to replicate this. How is the dataset shown in Figure 1 related to the one in Figure 2?\n\nEven though the criteria to score active sleep and to distinguish it from wakefulness seem clear to the authors, this is not obvious in the short data stretches presented. In particular, the authors description of a nuchal atonia is not evident in Figure 1C. What were the thresholds set for this atonia?\n\nIt would also be great to have some more quantitative information about the distinct LFP activity patterns in M2 and PFC at P8 and P12. Why were they not taken into account to score states of vigilance? What are the frequencies of the rhythmic activity pattern evident at P12 but not at P8 that seems typical for active sleep? Time-frequency plots of the kinds shown in Figure 3 would be helpful to get a more quantitative insight.\n\nI am not sure the time-frequency plot shown in Figure 3A is really helpful. Here, instead of such a plot, a dataset illustrating the presence of spindle bursts in unfiltered and band-pass filtered data would instead be helpful to recognize the individual events.\n\nDoes the LED light that was used for synchronization purposes disrupt the sleep-wake activity of these pups?\n\nLine 133-134. This sentence is difficult to read: what are periods of AS-related periods of quiescence?\n\nLine 423 specify what the 5 ms time indications is for the smoothing \u2013 a sliding window length or a filter?\n\n438 behavioral states, what is the distribution\n\nFigure 1B should be shown at higher magnification\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Activity in developing prefrontal cortex is shaped by sleep and sensory experience\" for further consideration by eLife. Your revised article has been evaluated by Laura Colgin (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nReviewer #2 (Recommendations for the authors):\n\nIn my view, the authors have improved the manuscript and addressed some important issues with the original submission. In particular, the assessment of event-associated response characteristics in Figure 3, S1 is helpful for understanding spindle-associated activity. Nonetheless, some further revisions and clarifications would be important prior to acceptance. These suggestions are detailed below:\n\n(1) One issue pointed out in the review of the first submission was the apparent disconnect between the investigation of sleep-associated regional dynamics that are the major focus of the study and the latter section examining the effects of Urethane. The authors' explanation as to the reason for not including an assessment of mPFC responses under anaesthesia presented in their response to review is reasonable but this point should be made more clearly in the discussion.\n\n(2) Although the authors now include a discussion regarding links between M1, M2, and PFC, relevant to the dynamics they observe, this still does not really address the question of whether processing across these regions occurs in parallel or as part of a connected series. While it is difficult to address this point conclusively, as mentioned in the manuscript the similarity in the response profile peak timing across regions suggests that they are engaged in parallel (e.g. in Figure 5). To make this point more formally, it might be helpful to show the distribution of peak latency from threshold across the responding units in each region for the different conditions and developmental stages. This would help to more completely address the concerns raised in \"Essential Revisions 3\". Alternatively, the authors could present the evidence against the coactivation of neurons across the recorded regions mentioned in line 185 but not currently included in the manuscript.\n\nReviewer #3 (Recommendations for the authors):\n\nThe authors have responded to my comments and have improved the manuscript by:\n\n- Clarifying their scoring procedure;\n\n- Adding additional datasets on unit activity in two new figures;\n\n- Changing an existing figure by adding more representative data.\n\nI also like a lot the newly added discussion part that makes the significance of the present findings more clear. In fact, that PFC is responsive to sensory stimuli at early stages of development is a game changer in how one should think about cortical development. Furthermore, the comparison between anesthesia and sleep is also helpful. It should hopefully prompt future developmental studies to look at sleep as an essential component that cannot be replaced by using anesthetics.\n",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3e20d1de-5c43-4bce-af6b-9cbd9991f005",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C1",
+      "claim": "In developing rats, behavioral state exerts a profound modulatory influence on neural activity throughout the sensorimotor system, including primary motor cortex (M1).",
+      "claim_type": "EXPLICIT",
+      "source": "In developing rats, behavioral state exerts a profound modulatory influence on neural activity throughout the sensorimotor system, including primary motor cortex (M1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work and is consistent with the experimental findings presented in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "119e545f-7f0e-4bd1-8048-ebbd04b3cbec",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C2",
+      "claim": "M1 forms functional connections with secondary motor cortex (M2) and medial prefrontal cortex (mPFC).",
+      "claim_type": "EXPLICIT",
+      "source": "Of particular interest here are two areas with which M1 forms connections: secondary motor cortex (M2) and medial prefrontal cortex (mPFC) (Van Eden et al., 1992; Bedwell et al., 2014; Bedwell et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous anatomical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "7a9858bb-63b4-4c7c-883e-7d84e4633ac8",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C3",
+      "claim": "At P8 and P12, neural activity in M1, M2, and mPFC increased during active sleep (AS) compared with wake.",
+      "claim_type": "EXPLICIT",
+      "source": "At both ages in all three areas, neural activity increased during active sleep (AS) compared with wake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by experimental data presented in the manuscript, including statistical comparisons showing significant differences in firing rates between AS and wake states.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "21057028-bd9a-4315-97ed-16e16a1ca91e",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C4",
+      "claim": "Neural activity in M1, M2, and mPFC increased during periods when limbs were moving, regardless of behavioral state.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, regardless of behavioral state, neural activity in all three areas increased during periods when limbs were moving.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing significant main effects of movement on firing rates across all three cortical areas.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "3ef8bd62-242b-4395-836f-57b2609d5671",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C5",
+      "claim": "Movement-related activity in M2 and mPFC is driven by sensory feedback.",
+      "claim_type": "EXPLICIT",
+      "source": "The movement-related activity in M2 and mPFC, like that in M1, is driven by sensory feedback.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing that neurons in M2 and mPFC respond to both self-generated movements (reafference) and experimenter-generated stimulations (exafference).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "2a11635e-1586-4946-890b-c5240dff67cd",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C6",
+      "claim": "In early development, M1 does not contribute to motor control but instead functions exclusively as a sensory structure.",
+      "claim_type": "EXPLICIT",
+      "source": "In early development, M1 does not contribute to motor control at all, but instead functions exclusively as a sensory structure (Bruce et al., 1980; Chakrabarty and Martin, 2005; Young et al., 2012; Tiriac et al., 2014; Dooley and Blumberg, 2018; Singleton et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "b2b1148f-0f9c-4001-b0ef-2e72ba444f4f",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C7",
+      "claim": "The early-emerging somatosensory map in M1 provides the foundation upon which its later-emerging motor map is built.",
+      "claim_type": "EXPLICIT",
+      "source": "The early-emerging somatosensory map in M1 provides the foundation upon which its later-emerging motor map is built (Dooley and Blumberg, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "acb965d8-0872-4d03-8e2d-1df5af28bfc6",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C8",
+      "claim": "In infant rats, AS-dependent modulation of M1 activity reflects AS-dependent increases in neural activity that are enhanced by limb movements during AS, called twitches.",
+      "claim_type": "EXPLICIT",
+      "source": "In infant rats, this modulation reflects AS-dependent increases in neural activity that are enhanced by limb movements during AS, called twitches, that discretely and preferentially trigger sensory feedback to M1 (Dooley and Blumberg, 2018; Glanz et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "8b8ffa4a-64dc-41fe-8622-e314e372538e",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C9",
+      "claim": "AS-dependent modulation of activity is seen in many developing sensorimotor structures, not just M1.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, AS-dependent modulation of activity is not unique to M1 but is seen in many developing sensorimotor structures (Blumberg, 2015; Blumberg et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "092e25bf-3e79-40da-8585-3666bfd62f6e",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C10",
+      "claim": "Active sleep predominates in early life.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that AS predominates in early life (Jouvet-Mounier et al., 1969; Gramsbergen et al., 1970), it has been posited that this sleep state plays an outsized role in typical and atypical development (Blumberg et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "b52ac304-e311-4847-bc7a-806efd71c725",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C11",
+      "claim": "M2 integrates multimodal sensory cues for motor planning and modulates M1 activity during goal-directed action.",
+      "claim_type": "EXPLICIT",
+      "source": "It integrates multimodal sensory cues for motor planning and modulates M1 activity during goal-directed action (Yin, 2009; Omlor et al., 2019; Barthas and Kwan, 2017; Morandell and Huber, 2017; Wang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "75aae362-616d-47e3-a31d-bbbd9382f37d",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C12",
+      "claim": "M2 develops a somatotopic map.",
+      "claim_type": "EXPLICIT",
+      "source": "Like M1, M2 develops a somatotopic map, further highlighting its dependence on sensory input (Yin, 2009; Kunori and Takashima, 2016; Omlor et al., 2019; Barthas and Kwan, 2017; Chen et al., 2017; Singleton et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "41bc4b03-c8d2-4a2b-ab03-e82f24c26b70",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C13",
+      "claim": "In infant rats, M2 is similar to M1 with respect to sensory responsiveness and modulation by behavioral state.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we hypothesize that, in infant rats, M2 is similar to M1 with respect to sensory responsiveness and modulation by behavioral state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis stated by the authors, which is then tested in the experiments.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "c8d40af2-1223-4f3e-a1f0-0010d28aaee3",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C14",
+      "claim": "In adults, mPFC is associated with cognitive processes such as decision-making and attention, not closely with sensorimotor functions.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast with M1 and M2, mPFC in adults is not closely associated with sensorimotor functions, but rather with cognitive processes such as decision-making and attention (Tanji and Hoshi, 2001; Tanji and Hoshi, 2008; Miller et al., 2002; Barbas and Zikopoulos, 2007; Euston et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "866460b1-00e1-4ace-a56c-5eb7f21f0e38",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C15",
+      "claim": "It is not known whether behavioral state modulates activity in mPFC in infant rats.",
+      "claim_type": "EXPLICIT",
+      "source": "In infant rats, it is not known whether behavioral state modulates activity in mPFC, nor is it known whether mPFC processes sensory input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement identifies a gap in knowledge that the current study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "0bf55f3a-56ad-4183-8ad2-b9196994bbad",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C16",
+      "claim": "It has been theorized that prefrontal cortex develops its unique higher-order functions because it develops independently of sensory input.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, it has been theorized that prefrontal cortex, including mPFC, develops its unique higher-order functions precisely because it develops independently of sensory input (Johnson et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a theoretical paper.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "0bf4be83-57b4-4e91-8c19-95f0f92805ce",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C17",
+      "claim": "Current knowledge about functional development in mPFC derives primarily from neural recordings from rat pups under urethane anesthesia.",
+      "claim_type": "EXPLICIT",
+      "source": "What is currently known about functional development in mPFC derives primarily from neural recordings from rat pups under urethane anesthesia (Brockmann et al., 2011; Bitzenhofer et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "871e5383-91d7-4359-b845-6e5874c76d46",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C18",
+      "claim": "Urethane does not prevent expression of spindle bursts in mPFC.",
+      "claim_type": "EXPLICIT",
+      "source": "Although urethane precludes natural sleep\u2013wake cycles, it does not prevent expression of spindle bursts in mPFC (Brockmann et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "49e32663-4bb3-427c-aad8-0bebb7dfd2ae",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C19",
+      "claim": "Spindle bursts are brief thalamocortical oscillations that, in primary sensory areas, are closely associated with the processing of sensory stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Spindle bursts are brief thalamocortical oscillations that, in primary sensory areas, are closely associated with the processing of sensory stimuli (Khazipov et al., 2004; Hanganu et al., 2007; Dooley et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "836ecaf9-2554-4a16-8929-9abb595877d0",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C20",
+      "claim": "In the mPFC of urethanized pups, spindle bursts appear to occur spontaneously.",
+      "claim_type": "EXPLICIT",
+      "source": "In the mPFC of urethanized pups, however, spindle bursts appear to occur spontaneously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on previous research in urethanized pups.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "88b5cbf5-4147-4484-9d50-a0830b34e017",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C21",
+      "claim": "At P8, pups spent more time in AS (57.7 \u00b1 2.5%) than wake (30.9 \u00b1 1.9%).",
+      "claim_type": "EXPLICIT",
+      "source": "As expected (Dooley et al., 2021; Glanz et al., 2021; G\u00f3mez et al., 2021), pups spent more time in AS than wake at P8 (AS: 57.7 \u00b1 2.5%; wake: 30.9 \u00b1 1.9%) and P12 (AS: 44.0 \u00b1 3.6%; wake: 39.3 \u00b1 3.5%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and citations to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "63bf252b-4441-4c65-90a8-20b982c4f18d",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C22",
+      "claim": "At P12, pups spent more time in AS (44.0 \u00b1 3.6%) than wake (39.3 \u00b1 3.5%).",
+      "claim_type": "EXPLICIT",
+      "source": "As expected (Dooley et al., 2021; Glanz et al., 2021; G\u00f3mez et al., 2021), pups spent more time in AS than wake at P8 (AS: 57.7 \u00b1 2.5%; wake: 30.9 \u00b1 1.9%) and P12 (AS: 44.0 \u00b1 3.6%; wake: 39.3 \u00b1 3.5%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and citations to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "e3813667-922e-4b9b-b633-5caa8204c2e0",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C23",
+      "claim": "The transition from discontinuous cortical activity at P8 to continuous activity at P12 was evident in M1, M2, and mPFC.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, the transition from discontinuous cortical activity at P8 to continuous activity at P12 was evident in all three areas, as described previously in primary somatosensory, motor, and visual cortex (Golshani et al., 2009; Rochefort et al., 2009; van der Bourg et al., 2017; Glanz et al., 2021; Riyahi et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and citations to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "969cae57-d314-4621-ad6e-f68f598265ae",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C24",
+      "claim": "At P8, the mean firing rate in M1, M2, and mPFC was significantly higher during AS than wake.",
+      "claim_type": "EXPLICIT",
+      "source": "In each area, the mean firing rate was significantly higher during AS than wake (t(7)s \u2265 4.38, ps \u2264 0.003, Cohen's Ds \u2265 1.55; Figure 2B; see Figure 2\u2014figure supplement 1 for data from representative recordings).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data and is illustrated in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "a0244f13-00a2-4de5-a5e1-5ce6d940d1c8",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C25",
+      "claim": "At P12, the mean firing rate in M1, M2, and mPFC was significantly higher during AS than wake.",
+      "claim_type": "EXPLICIT",
+      "source": "State-dependent modulation of cortical activity continued through P12 (Figure 2C); once again, the mean firing rate in each area was significantly higher during AS than wake (t(7\u20138)s \u2265 3.17, ps \u2264 0.016, Cohen's Ds \u2265 1.12, Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data and is illustrated in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "7fe5e371-a36c-4c3c-9345-545bad7101a3",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C26",
+      "claim": "At P8, the rate of spindle bursts was higher during AS than wake for M1, M2, and mPFC.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, at P8, the rate of spindle bursts was higher during AS than wake for all three areas (t(7)s \u2265 3.805, ps \u2264 0.007, Cohen's Ds \u2265 1.35; Figure 3) and were associated with increases in unit activity (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data and is illustrated in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "f0380609-3adb-405d-9f29-b0f4a5c7da5d",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C27",
+      "claim": "Spindle bursts at P8 were associated with increases in unit activity in M1, M2, and mPFC.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, at P8, the rate of spindle bursts was higher during AS than wake for all three areas (t(7)s \u2265 3.805, ps \u2264 0.007, Cohen's Ds \u2265 1.35; Figure 3) and were associated with increases in unit activity (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data illustrated in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "6c3232a7-cb9b-4d94-91ee-0df307e5bcba",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C28",
+      "claim": "At both P8 and P12, the mean firing rate in M1, M2, and mPFC increased significantly during periods of movement.",
+      "claim_type": "EXPLICIT",
+      "source": "At both ages, the mean firing rate in each area increased significantly during periods of movement (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis (repeated-measures ANOVAs) of experimental data and is illustrated in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "749d7ade-7597-4c33-aba4-4988e5c169ec",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C29",
+      "claim": "For M1, M2, and mPFC at P8 and P12, repeated-measures ANOVAs revealed significant main effects of behavioral state on firing rate.",
+      "claim_type": "EXPLICIT",
+      "source": "For all cases, repeated-measures analyses of variance (ANOVAs) revealed significant main effects of behavioral state (F(1,7\u20138)s \u2265 16.90, ps \u2264 0.005, \u03b7p2s \u2265 0.71) and movement (F(1,7\u20138)s \u2265 6.83, ps \u2264 0.035, \u03b7p2s \u2265 0.49).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "b8bd8e77-1bf8-4c98-ad99-d4804d301291",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C30",
+      "claim": "For M1, M2, and mPFC at P8 and P12, repeated-measures ANOVAs revealed significant main effects of movement on firing rate.",
+      "claim_type": "EXPLICIT",
+      "source": "For all cases, repeated-measures analyses of variance (ANOVAs) revealed significant main effects of behavioral state (F(1,7\u20138)s \u2265 16.90, ps \u2264 0.005, \u03b7p2s \u2265 0.71) and movement (F(1,7\u20138)s \u2265 6.83, ps \u2264 0.035, \u03b7p2s \u2265 0.49).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "28c3a761-8b6d-4941-979b-b4b1349dc4ed",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C31",
+      "claim": "Firing rates were highest during AS-related periods of movement (twitching), intermediate during periods of AS-related periods of no movement and wake-related periods of movement, and lowest during wake-related periods of no movement.",
+      "claim_type": "EXPLICIT",
+      "source": "The general pattern was for firing rates to be highest during AS-related periods of movement (i.e., twitching), intermediate during periods of AS-related periods of no movement and wake-related periods of movement, and lowest during wake-related periods of no movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the pattern of results from planned comparisons of firing rates across conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "2c67ba58-b168-45b0-81b1-2418ce1fe351",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C32",
+      "claim": "Units in M1, M2, and mPFC at P8 and P12 responded to sensory input arising from twitches, wake movements, and stimulations.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected (and in M1, consistent with previous results; Tiriac et al., 2014; Dooley and Blumberg, 2018; Glanz et al., 2021; G\u00f3mez et al., 2021), units in M1 and M2 at both ages responded to sensory input arising from twitches, wake movements, and stimulations; surprisingly, so did units in mPFC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing neural responses to sensory events.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "bd26e942-c903-47ff-9be4-1cee61339cb5",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C33",
+      "claim": "At P8, M1 generally exhibited the highest percentage of responsive units, followed by M2 and then mPFC.",
+      "claim_type": "EXPLICIT",
+      "source": "At P8, M1 generally exhibited the highest percentage of responsive units, followed by M2 and then mPFC (t(7)s \u2265 4.44, ps \u2264 0.003, Cohen's Ds \u2265 1.57; Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data and is illustrated in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "3ddeed9d-24bf-43e7-8ff0-6ac19064b144",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C34",
+      "claim": "At P8, mean M2 responsiveness was 60.9 \u00b1 10.2% for twitches, 46.5 \u00b1 11.9% for wake movements, and 36.7 \u00b1 9.1% for stimulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean M2 responsiveness was 60.9 \u00b1 10.2% for twitches, 46.5 \u00b1 11.9% for wake movements, and 36.7 \u00b1 9.1% for stimulations; for mPFC, these values were 37.8 \u00b1 8.0%, 20.6 \u00b1 7.5%, and 9.4 \u00b1 5.5%, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "0959fec1-0a19-4a72-aff2-584dcd611801",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C35",
+      "claim": "At P8, mean mPFC responsiveness was 37.8 \u00b1 8.0% for twitches, 20.6 \u00b1 7.5% for wake movements, and 9.4 \u00b1 5.5% for stimulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean M2 responsiveness was 60.9 \u00b1 10.2% for twitches, 46.5 \u00b1 11.9% for wake movements, and 36.7 \u00b1 9.1% for stimulations; for mPFC, these values were 37.8 \u00b1 8.0%, 20.6 \u00b1 7.5%, and 9.4 \u00b1 5.5%, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "8b5f158a-3f5b-4628-971f-5e56677d07e7",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C36",
+      "claim": "At P12, responsiveness declined to low levels in M1, M2, and mPFC, but M1 was still more responsive than M2 or mPFC.",
+      "claim_type": "EXPLICIT",
+      "source": "At P12, responsiveness declined to low levels in all three areas, but M1 was still more responsive than M2 or mPFC (t(7\u20138)s \u2265 3.13, ps \u2264 0.017, Cohen's Ds \u2265 1.11; Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data and is illustrated in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "28e71a10-2e24-4511-8444-d3f279d9e4d0",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C37",
+      "claim": "When units in M1, M2, and mPFC were responsive to sensory events, they exhibited response profiles that were strikingly similar to each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of the mean responsiveness of a cortical area at a given age, when units were responsive they exhibited response profiles (i.e., perievent time histograms, PETHs) that were strikingly similar to each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on analysis of perievent time histograms shown in Figure 5B and 5C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "5895898a-ffce-4ecd-b8cc-3bb5d521bd6e",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C38",
+      "claim": "The response profiles in M1, M2, and mPFC indicate sensory responding because the peaks in activity occurred after the movement or stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "These profiles indicate sensory responding because the peaks in activity occurred after the movement or stimulation (Figure 5B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on the temporal relationship between sensory events and neural responses shown in Figure 5B and 5C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "3057336c-1cce-4420-8cc2-97db358a683b",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C39",
+      "claim": "At P8, M2 and mPFC showed mean activation rates that were similar to those in M1, with one exception: mPFC had a significantly lower mean activation rate than M1 for stimulations.",
+      "claim_type": "EXPLICIT",
+      "source": "At P8, M2 and mPFC showed mean activation rates that were similar to those in M1 (t(7)s \u2264 2.28) (Figure 6B), with one exception: mPFC had a significantly lower mean activation rate than M1 for stimulations (t(7) = 5.91, p < 0.001, Cohen's D = 2.09).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data and is illustrated in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "d0f5a089-53d9-478c-ac6b-2a51de9a29cf",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C40",
+      "claim": "At P12, mean activation rates in M2 and M1 were similar.",
+      "claim_type": "EXPLICIT",
+      "source": "At P12, mean activation rates in M2 and M1 were also similar (t(8)s \u2264 2.53) (Figure 6C); for mPFC, the mean activation rate for twitches was similar to that for M1 (t(7) = 1.73), but mean activation rates were significantly lower in mPFC for wake movements and stimulations (t(7)s \u2265 4.06, ps \u2264 0.005, Cohen's Ds \u2265 1.43).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data and is illustrated in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "4fa608e9-ddc0-4311-9f9a-b05eb555cab2",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C41",
+      "claim": "At P12, the mean activation rate for twitches in mPFC was similar to that for M1.",
+      "claim_type": "EXPLICIT",
+      "source": "At P12, mean activation rates in M2 and M1 were also similar (t(8)s \u2264 2.53) (Figure 6C); for mPFC, the mean activation rate for twitches was similar to that for M1 (t(7) = 1.73), but mean activation rates were significantly lower in mPFC for wake movements and stimulations (t(7)s \u2265 4.06, ps \u2264 0.005, Cohen's Ds \u2265 1.43).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data and is illustrated in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "d8676360-7a20-40ac-a184-8cdc777def58",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C42",
+      "claim": "At P12, mean activation rates in mPFC were significantly lower than M1 for wake movements and stimulations.",
+      "claim_type": "EXPLICIT",
+      "source": "At P12, mean activation rates in M2 and M1 were also similar (t(8)s \u2264 2.53) (Figure 6C); for mPFC, the mean activation rate for twitches was similar to that for M1 (t(7) = 1.73), but mean activation rates were significantly lower in mPFC for wake movements and stimulations (t(7)s \u2265 4.06, ps \u2264 0.005, Cohen's Ds \u2265 1.43).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data and is illustrated in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "eb52ac2d-9763-4626-a2b1-a54e7f9fa99f",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C43",
+      "claim": "M1 and M2 had comparable activation rates to all three kinds of sensory events at both P8 and P12.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, whereas M1 and M2 had comparable activation rates to all three kinds of sensory events at both ages, mPFC was generally less responsive than M1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a summary of the activation rate results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "0c003ab9-895e-40c8-a513-1b66031d1cf3",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C44",
+      "claim": "mPFC was generally less responsive than M1 to sensory events.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, whereas M1 and M2 had comparable activation rates to all three kinds of sensory events at both ages, mPFC was generally less responsive than M1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a summary of the activation rate results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "3d471b88-a69b-4e3a-9594-fca98395fc61",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C45",
+      "claim": "Spindle bursts in M1, M2, and mPFC were associated with sensory events.",
+      "claim_type": "EXPLICIT",
+      "source": "Spindle bursts in all three areas were associated with sensory events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing that spindle bursts were more likely to occur following sensory events than expected by chance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "63d17484-35ec-46e8-ab41-1e6396a6972f",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C46",
+      "claim": "In M1 and M2, spindle bursts were significantly more likely to occur following twitches, wake movements, and stimulations when compared to shuffled data.",
+      "claim_type": "EXPLICIT",
+      "source": "In M1 and M2, spindle bursts were significantly more likely to occur following twitches, wake movements, and stimulations when compared to shuffled data (t(7)s \u2265 5.79; ps \u2264 0.001; Cohen's Ds \u2265 0.93) (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data and is illustrated in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "c9e1bf4b-d506-482a-aca2-8d3d915a75af",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C47",
+      "claim": "Spindle bursts in mPFC reliably followed wake movements and stimulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, spindle bursts in mPFC reliably followed wake movements and stimulations (t(7)s \u2265 4.27; ps \u2264 0.004; Cohen's Ds \u2265 1.00), though not twitches (t(7) = 2.16).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "097aef31-229e-4580-ac93-0b7f5a1309fb",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C48",
+      "claim": "Spindle bursts in mPFC did not reliably follow twitches.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, spindle bursts in mPFC reliably followed wake movements and stimulations (t(7)s \u2265 4.27; ps \u2264 0.004; Cohen's Ds \u2265 1.00), though not twitches (t(7) = 2.16).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "d66b47c5-5a91-421d-b95b-7c8a42d9c76a",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C49",
+      "claim": "Individual sensory events did not reliably trigger contemporaneous unit activity in M1 and M2, or M1 and mPFC above chance.",
+      "claim_type": "EXPLICIT",
+      "source": "However, unlike with M1 and S1, this analysis yielded a null result: Individual sensory events did not reliably trigger contemporaneous unit activity in M1 and M2, or M1 and mPFC above chance (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on analysis that yielded a null result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "6215f555-e7ae-4086-9923-ad1620e1136b",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C50",
+      "claim": "The pathways through which sensory input reaches M2 and mPFC are distinct from those that reach M1 and S1.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that the pathways through which sensory input reaches M2 and mPFC are distinct from those that reach M1 and S1, and presently remain unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference based on the null result of the contemporaneous activity analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "9976ac6c-8503-40f2-abef-c855da952c7b",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C51",
+      "claim": "Urethane administration produced rapid and dramatic effects on behavior and neural activity in P8 rats.",
+      "claim_type": "EXPLICIT",
+      "source": "Urethane administration produced rapid and dramatic effects on behavior and neural activity (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data illustrated in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "b2ada98e-57c9-42a4-a1e4-56aed40980e5",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C52",
+      "claim": "Urethane injection produced muscle atonia and suppressed limb movements in P8 rats.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, urethane (but not saline) injection produced muscle atonia (with occasional spasmodic increases in muscle tone) and suppressed limb movements, thus precluding identification of sleep\u2013wake states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "9d4d804f-0ae3-4cd7-8b78-d6417e00531a",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C53",
+      "claim": "Compared with saline, urethane injection produced significant percentage decreases in limb movements (urethane: \u221287.14 \u00b1 6.75%).",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with saline, urethane injection produced significant percentage decreases in limb movements (urethane: \u221287.14 \u00b1 6.75%; t(5) = 11.90, p < 0.001, Cohen's D = 4.86; saline: +10.84 \u00b1 5.84%, t(5) = 1.00).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "625a930e-7b1b-433d-aca6-c0dc0a20d00e",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C54",
+      "claim": "Urethane administration caused reductions in firing rate of over 85% in M1 and mPFC.",
+      "claim_type": "EXPLICIT",
+      "source": "Urethane administration also disrupted neural activity in M1 and mPFC (Figure 7A, B), causing reductions in firing rate of over 85% (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data illustrated in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "2d31bc41-55e0-4dc1-98a3-5dcdda7e74e5",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C55",
+      "claim": "Mean reductions in firing rate after urethane administration were significant for both M1 and mPFC.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean reductions in firing rate were significant for both M1 (t(10) = 3.83, p = 0.003, Cohen's D = 2.21) and mPFC (t(10) = 5.01, p < 0.001, Cohen's D = 2.94).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "c989caa4-bf27-44b2-a2ab-02f9d167ac43",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C56",
+      "claim": "Urethane dramatically and significantly reduced the mean rate of spindle bursts in M1 and mPFC.",
+      "claim_type": "EXPLICIT",
+      "source": "Urethane also dramatically and significantly reduced the mean rate of spindle bursts in the two areas (t(10)s \u2265 3.18, ps \u2264 0.01, Cohen's Ds \u2265 1.83) (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data and is illustrated in Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "9531b8ed-8888-4888-90d4-94f011d2b485",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C57",
+      "claim": "Urethane injection produced a burst-suppression pattern in neural activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, urethane injection produced a burst-suppression pattern that is characteristic of general anesthesia as well as coma, hypothermia, and neonatal trauma (Grigg-Damberger et al., 1989; Steriade et al., 1994; Hellstr\u00f6m-Westas et al., 2006; Shanker et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations and citations to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "da1dbdb4-e648-4766-aeb5-fb8ddebbe0b8",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C58",
+      "claim": "The burst-suppression pattern comprises population bursts separated by periods of relative silence lasting 10 s or longer.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern, comprising population bursts separated by periods of relative silence lasting 10 s or longer, is illustrated by survivor plots of interspike intervals (ISIs) (Figure 7D): In both areas, whereas the pre-injection ISI distributions for urethane and saline are indistinguishable, the post-injection distributions for the urethane group deviates substantially from the saline group, especially for longer ISIs where the pronounced shoulders in the plots, indicative of inter-burst silence, are evident.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data illustrated in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "94961cc5-21e8-4985-a1cc-71c8d9c3a9bd",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C59",
+      "claim": "For the bottom fifth percentile of ISIs, there was a significant difference between urethane and saline groups during the post-injection period in both M1 and mPFC.",
+      "claim_type": "EXPLICIT",
+      "source": "For the bottom fifth percentile of ISIs, we found a significant difference between urethane and saline groups during the post-injection period in both M1 and mPFC (t(5)s \u2265 3.36; ps \u2264 0.007; Cohen's Ds \u2265 1.94), but not during the pre-injection period (t(5)s \u2264 1.64).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "31b7cadf-ac97-43ff-b651-d93fe8cc9e71",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C60",
+      "claim": "Urethane anesthesia at P8 eradicates sleep\u2013wake cycling, suppresses behavior, and produces atypical neural activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, urethane anesthesia at P8 eradicates sleep\u2013wake cycling, suppresses behavior, and produces atypical neural activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a summary of the urethane experiment results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "1037b35b-c9ff-43a9-b327-e88ff7127e81",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C61",
+      "claim": "Neurons in M2 and mPFC exhibit state-dependent neural activity at P8 and P12.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate here in P8 and P12 rats that neurons in two prefrontal areas\u2014M2 and mPFC\u2014exhibit state-dependent neural activity and responsivity to somatosensory stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a summary of the main findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "1686f7a7-9dd1-4c7d-8574-2e0f579b7ee9",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C62",
+      "claim": "Neurons in M2 and mPFC exhibit responsivity to somatosensory stimuli at P8 and P12.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate here in P8 and P12 rats that neurons in two prefrontal areas\u2014M2 and mPFC\u2014exhibit state-dependent neural activity and responsivity to somatosensory stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a summary of the main findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "6181f763-e49e-43cd-9e72-42452040d7dc",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C63",
+      "claim": "At P8 and P12, neural activity in M2 and mPFC increases specifically during AS, similar to previous findings in M1 and S1.",
+      "claim_type": "EXPLICIT",
+      "source": "First, at both ages, neural activity in M2 and mPFC increases specifically during AS, similar to previous findings at these ages in M1 and S1 (Tiriac et al., 2014; Dooley et al., 2020; Glanz et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and citations to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "13caaedf-c6d5-455e-8956-88ceec5f149b",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C64",
+      "claim": "Neurons in M2 and mPFC respond to reafference arising from twitches and wake movements, and exafference arising from manual stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we find that neurons in M2 and mPFC respond to reafference arising from twitches and wake movements, and exafference arising from manual stimulation, with the proportion of responsive neurons generally being highest in M1 and decreasing across M2 and mPFC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "189b1d8e-ca72-4af4-9b3b-04a0cffe6e3f",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C65",
+      "claim": "The proportion of responsive neurons to sensory events is generally highest in M1 and decreases across M2 and mPFC.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we find that neurons in M2 and mPFC respond to reafference arising from twitches and wake movements, and exafference arising from manual stimulation, with the proportion of responsive neurons generally being highest in M1 and decreasing across M2 and mPFC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "ed371aed-daed-4525-a125-f37f891fe55d",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C66",
+      "claim": "Urethane thwarts accurate assessments of brain\u2013behavior relations in developing cortex by suppressing neural activity and abolishing sleep\u2013wake states.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we show that urethane thwarts accurate assessments of brain\u2013behavior relations in developing cortex by suppressing neural activity and abolishing sleep\u2013wake states, thus explaining discrepancies between the present and previous findings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the urethane experiment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "ae7c5036-cfd2-41bc-8c41-39bfa4164394",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C67",
+      "claim": "State-dependent neuromodulation is a general feature of infant cortical activity.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that state-dependent neuromodulation is a general feature of infant cortical activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference based on the finding that M2 and mPFC, like M1 and S1, show state-dependent modulation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "c72d06da-f90f-4383-b1e4-236087ecb715",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C68",
+      "claim": "It is not yet known whether neuromodulators like acetylcholine and serotonin are released in a state-dependent fashion in infant rats.",
+      "claim_type": "EXPLICIT",
+      "source": "Although neuromodulators like acetylcholine and serotonin, respectively, influence early cortical activity (Hanganu et al., 2007; Janiesch et al., 2011) and development (Kolk and Rakic, 2022), it is not yet known whether these and other neuromodulators are released in a state-dependent fashion, as is known to occur in adults (Lee and Dan, 2012; Jones, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim identifies a gap in knowledge and is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "48565412-9836-4554-9dcb-4b0aa1e4469d",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C69",
+      "claim": "In the developing visual system of both rodents and primates, both primary and higher-order visual areas receive parallel sensory input directly from thalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "But, in the developing visual system, both primary and higher-order visual areas receive parallel sensory input directly from thalamus (Warner et al., 2012; Murakami et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "169d176e-515b-4441-8064-4fec40a75cb8",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C70",
+      "claim": "In the developing sensorimotor system, both M1 and S1 receive parallel sensory input.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, in the developing sensorimotor system, both M1 and S1 receive parallel sensory input (Dooley and Blumberg, 2018; G\u00f3mez et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "1601b752-6844-4ab3-a6f0-bdd2c2ddae48",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C71",
+      "claim": "Ascending sensory input to M1 and S1 may refine somatotopy and connectivity within and between these cortical areas.",
+      "claim_type": "EXPLICIT",
+      "source": "This ascending sensory input to M1 and S1 may refine somatotopy and connectivity within and between these cortical areas, thus laying a foundation for their further development, including the later emergence of M1's motor functionality (Dooley and Blumberg, 2018; G\u00f3mez et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a hypothesis supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "0a59dbad-7de6-4962-83b6-031192258699",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C72",
+      "claim": "M2 is a higher-order sensorimotor area with a somatotopic representation, though its organization is coarser than M1's.",
+      "claim_type": "EXPLICIT",
+      "source": "M2 is a higher-order sensorimotor area with a somatotopic representation, though its organization is coarser than M1's (Mohammed and Jain, 2014; Mohammed and Jain, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "7b8132bd-8400-4225-af0d-6a184630b486",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C73",
+      "claim": "mPFC does not exhibit somatotopic organization.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, mPFC does not exhibit somatotopic organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about mPFC organization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "59768496-adeb-4e07-a30b-f347f78e3438",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C74",
+      "claim": "The similar response profiles in M1, M2, and mPFC imply that the sensory events were triggered by the same subcortical source.",
+      "claim_type": "EXPLICIT",
+      "source": "The similar response profiles in M1, M2, and mPFC imply that the sensory events were triggered by the same subcortical source, as is the case with M1 and S1 at these ages (G\u00f3mez et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference based on the similarity of response profiles and is supported by a citation to previous research.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "feac5457-c621-4f47-89ad-0b6f1eb7455d",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C75",
+      "claim": "The source of M2 and mPFC's short-latency sensory responses in early development remains unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the source of M2 and mPFC's short-latency sensory responses in early development remains unknown, and likely differs from the source for M1 and S1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the null result of the contemporaneous activity analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "be051972-3335-4981-ab99-3d9ef7fa50db",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C76",
+      "claim": "The decreasing sensory responsiveness across M1, M2, and mPFC likely reflects their decreasing somatotopic homogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the decreasing sensory responsiveness across M1, M2, and mPFC likely reflects their decreasing somatotopic homogeneity (Figure 8; Asanuma and Mackel, 1989; Bedwell et al., 2014; Barthas and Kwan, 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is an inference based on the pattern of results and is supported by citations to previous research and illustrated in Figure 8.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "c39f83df-0086-454b-888a-b73b414d5713",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C77",
+      "claim": "There is no reason to believe that sensory responses in the developing mPFC are exclusive to the somatosensory system.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, there is no reason to believe that sensory responses in the developing mPFC are exclusive to the somatosensory system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a logical inference based on the multimodal nature of mPFC in adults.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "1137a74a-4233-4c0c-a3d8-c7bdf7618101",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C78",
+      "claim": "In adults, mPFC receives multimodal inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "In adults, mPFC receives multimodal inputs (Hoover and Vertes, 2007; Bedwell et al., 2014) and is responsive to auditory stimuli arriving from the posterior medial thalamic nucleus (Martin-Cortecero and Nu\u00f1ez, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "961ca7b3-1605-4969-b6b9-6f44d4ae9b4a",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C79",
+      "claim": "Neurons in developing mPFC are expected to respond to somatosensory input from other parts of the body, as well as visual, auditory, olfactory, and gustatory input.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we expect neurons in developing mPFC to respond to somatosensory input from other parts of the body, as well as visual, auditory, olfactory, and gustatory input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a hypothesis based on the multimodal nature of mPFC in adults.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "3441d32b-fe65-4fe3-b3dc-4308880276cd",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C80",
+      "claim": "Unimodal sensory input to primary sensory areas enables the development of somatotopic homogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, whereas unimodal sensory input to primary sensory areas enables the development of somatotopic homogeneity, multimodal sensory input to prefrontal cortex may enable the development of functional heterogeneity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a hypothesis based on the pattern of results.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "85aa6b33-9f4a-4606-bdec-081f5db919d8",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C81",
+      "claim": "Multimodal sensory input to prefrontal cortex may enable the development of functional heterogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, whereas unimodal sensory input to primary sensory areas enables the development of somatotopic homogeneity, multimodal sensory input to prefrontal cortex may enable the development of functional heterogeneity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a hypothesis based on the pattern of results.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "be45fce5-b127-42c3-9dcc-f66de9e2a4d6",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C82",
+      "claim": "Urethane is known to alter neural activity and behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Although urethane is known to alter neural activity and behavior (Dyer and Rigdon, 1987; Simons et al., 1992; Sorrenti et al., 2021), prior studies have discounted the significance of these affects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "bfb90e87-b753-483f-9a7e-ddee253654cd",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C83",
+      "claim": "It has been claimed that urethane mimics natural sleep in infant and adult rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, it has been claimed that urethane mimics natural sleep in infant and adult rodents (Clement et al., 2008; Pagliardini et al., 2013; Bitzenhofer et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "1ac4a10b-b04e-4b81-9892-4c0b9e95643d",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C84",
+      "claim": "The present findings cannot be reconciled with claims that urethane mimics natural sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "The present findings cannot be reconciled with these claims.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the experimental findings showing that urethane abolishes sleep-wake states and produces atypical neural activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "248665a5-f926-484f-bee6-08d5e6fc9dc1",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C85",
+      "claim": "Despite using a light dose of urethane in P8 rats, urethane eradicated natural sleep\u2013wake states and profoundly suppressed neural activity and limb movements.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite using a light dose in P8 rats, urethane eradicated natural sleep\u2013wake states and profoundly suppressed neural activity and limb movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "b6a58207-6a30-4986-9199-8340b95b18a1",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C86",
+      "claim": "Firing rates and oscillatory activity in M1 and mPFC exhibited a burst-suppression pattern after urethane administration that is not observed in healthy unanesthetized pups.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, firing rates and oscillatory activity in M1 and mPFC exhibited a burst-suppression pattern that is not observed in healthy unanesthetized pups (Grigg-Damberger et al., 1989; Steriade et al., 1994; Hellstr\u00f6m-Westas et al., 2006; Iyer et al., 2014; Shanker et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and citations to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "6e8bedf9-a09b-430e-b51e-b1553417cdfa",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C87",
+      "claim": "Anesthesia in infants is not a suitable proxy for natural sleep or sleep-related neural activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, as is increasingly appreciated in adults (Akeju and Brown, 2017; Mondino et al., 2022), anesthesia in infants is not a suitable proxy for natural sleep or sleep-related neural activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference based on the experimental findings and is supported by citations to previous research.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "7f217906-dbfa-4afe-aa4d-42f0546c037c",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C88",
+      "claim": "Anesthesia is not compatible with the goal of understanding brain\u2013behavior relations in early development.",
+      "claim_type": "EXPLICIT",
+      "source": "Nor is it compatible with the goal of understanding brain\u2013behavior relations in early development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference based on the experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "bcb3fd11-0df4-432c-b5cb-e27e99a938b2",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C89",
+      "claim": "Extreme caution is warranted when interpreting results from anesthetized infant animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, extreme caution is warranted when interpreting results from anesthetized infant animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a recommendation based on the experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "99d34ff3-d840-47b2-bbcb-8a00a3685d50",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C90",
+      "claim": "Behavioral states and sensory experiences influence neural activity in developing PFC.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous findings in sensorimotor cortex, we find that behavioral states and sensory experiences influence neural activity in developing PFC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a summary of the main findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "5f815902-3808-4db9-921f-ac42cb5d8ba8",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C91",
+      "claim": "The development of prefrontal cortex may be influenced by more than intrinsic activity alone.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings raise the possibility that the development of prefrontal cortex is influenced by more than intrinsic activity alone and that\u2014similar to the discovery of the sensory foundations of 'motor cortex' (Chakrabarty and Martin, 2005; Dooley and Blumberg, 2018; Glanz et al., 2021; Singleton et al., 2021)\u2014the early activity in PFC may not be related in obvious ways to its higher-order functions in adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a hypothesis based on the experimental findings and is supported by citations to previous research.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "f746c510-a9d8-4c7f-840b-9753a0bf127e",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C92",
+      "claim": "The early activity in PFC may not be related in obvious ways to its higher-order functions in adults.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings raise the possibility that the development of prefrontal cortex is influenced by more than intrinsic activity alone and that\u2014similar to the discovery of the sensory foundations of 'motor cortex' (Chakrabarty and Martin, 2005; Dooley and Blumberg, 2018; Glanz et al., 2021; Singleton et al., 2021)\u2014the early activity in PFC may not be related in obvious ways to its higher-order functions in adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a hypothesis based on the experimental findings and is supported by citations to previous research.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "ab801b0c-832f-41d9-9294-71e282c4331c",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C93",
+      "claim": "State-dependent modulation and sensory responsiveness are general features of developing cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we propose that state-dependent modulation and sensory responsiveness are general features of developing cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a hypothesis based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "fa117d63-307e-4e83-98fa-01e64ac3d81c",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C94",
+      "claim": "The early functional development of primary and higher-order cortical areas may be more similar than currently appreciated.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, the early functional development of primary and higher-order cortical areas may be more similar than currently appreciated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a hypothesis based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "f8e213be-93ae-40a5-9e5d-d4538b95ce2b",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C95",
+      "claim": "There is still no consensus regarding the extent to which non-primates have cortical areas homologous to primate PFC.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, although the similarities and differences between rodent and primate PFC have been debated for decades (Preuss, 1995; Uylings et al., 2003; Barthas and Kwan, 2017; Carl\u00e9n, 2017; Laubach et al., 2018), there is still no consensus regarding the extent to which non-primates have cortical areas homologous to primate PFC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "18061766-b4d1-480d-979b-1be50de3c8ba",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "claim_id": "C96",
+      "claim": "A developmental-comparative approach will prove useful for clarifying PFC's evolutionary and functional history.",
+      "claim_type": "EXPLICIT",
+      "source": "The current study does not resolve these issues and was not designed to do so, but does suggest that a developmental-comparative approach will prove useful for clarifying PFC's evolutionary and functional history, as it has for other cortical domains (Krubitzer and Dooley, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a hypothesis supported by a citation to previous research.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5d916bac-6bb5-40b3-8850-3da71063bcb5",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "At P8 and P12, neural activity in M2 and mPFC is modulated by behavioral state, with significantly higher firing rates and spindle burst rates during active sleep (AS) compared to wake. This state-dependent modulation is similar to that previously observed in M1 and S1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C24, C25, C26, C27, C61, and C63 collectively demonstrate state-dependent modulation in M2 and mPFC with appropriate statistical support (t-tests with p \u2264 0.016, Cohen's D \u2265 1.12 at P12; p \u2264 0.007, Cohen's D \u2265 1.35 for spindle bursts at P8). The data are illustrated in Figures 2 and 3 and show consistent patterns across both ages and all three cortical areas.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "84d0b012-9316-4ae4-95bc-a677ce25b518",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Neural activity in M1, M2, and mPFC increases during periods of limb movement regardless of behavioral state, with the highest firing rates during AS-related movement (twitching). Repeated-measures ANOVAs revealed significant main effects of both behavioral state and movement on firing rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C28, C29, C30, and C31 are supported by repeated-measures ANOVAs showing significant main effects of behavioral state (F \u2265 16.90, p \u2264 0.005, \u03b7p\u00b2 \u2265 0.71) and movement (F \u2265 6.83, p \u2264 0.035, \u03b7p\u00b2 \u2265 0.49). The pattern of results from 31 of 32 planned comparisons (p \u2264 0.01, Cohen's D \u2265 1.24) supports the hierarchical pattern of firing rates described in C31.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "fdb88e33-bb1c-4a32-ba2e-c81e972fa4dc",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Neurons in M2 and mPFC respond to sensory input from twitches, wake movements, and manual stimulations, with response profiles similar to M1. The proportion of responsive units is highest in M1, intermediate in M2, and lowest in mPFC at both P8 and P12.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C32-C38, C62, C64, and C65 are supported by experimental data showing sensory responses in all three areas. Statistical comparisons (t-tests with p \u2264 0.017, Cohen's D \u2265 1.11) confirm the gradient of responsiveness across areas. The temporal profiles (peaks after events) support the interpretation of sensory responding. However, the claim that movement-related activity is 'driven by' sensory feedback (C5) is an inference that could benefit from additional causal evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "c9c82b58-17e7-442f-ae0e-113223994f7a",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "M1 and M2 show comparable activation rates to sensory events at both P8 and P12, while mPFC generally shows lower activation rates than M1, particularly for wake movements and stimulations at P12.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C44 are supported by statistical analyses comparing activation rates across areas. The 30% threshold for defining area activation is justified by prior work (Glanz et al., 2021). Statistical tests appropriately compare areas (t-tests with Bonferroni correction, p \u2264 0.017), though the choice of the 30% threshold could be better justified in the current context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "73349c8a-b7bd-4d8f-8778-ed7afddf3a30",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Spindle bursts in M1, M2, and mPFC are associated with sensory events. In M1 and M2, spindle bursts reliably follow all three types of sensory events (twitches, wake movements, stimulations), while in mPFC they reliably follow wake movements and stimulations but not twitches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48 are supported by statistical comparisons to shuffled data (t-tests with p \u2264 0.004, Cohen's D \u2265 0.93 for significant associations). The null result for twitches in mPFC (C48, t(7) = 2.16, p > 0.05) is appropriately reported. The analysis method (500 ms window before spindle burst onset) is reasonable, though the choice of window duration could be better justified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "2bec0119-4fb1-40d2-8f75-32118a87f401",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Individual sensory events did not reliably trigger contemporaneous unit activity between M1 and M2 or between M1 and mPFC above chance levels, suggesting that the pathways conveying sensory input to M2 and mPFC differ from those reaching M1 and S1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C49, C50, C74, and C75 report a null result without providing the actual data or statistical tests ('data not shown'). While the inference about distinct pathways (C50, C75) is logical given the null result, the lack of reported data makes it impossible to evaluate the quality of the analysis or rule out methodological issues. The claim that response profiles are 'strikingly similar' (C74) appears to contradict the null result for contemporaneous activity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "9f05927a-cff4-4579-9394-00b7f17e2056",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Urethane anesthesia (1.0 mg/g b.w.) at P8 eradicates sleep-wake cycling, suppresses limb movements by ~87%, reduces neural firing rates by >85%, dramatically reduces spindle burst rates, and produces a burst-suppression pattern characteristic of deep anesthesia. These effects demonstrate that urethane is not a suitable proxy for natural sleep.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C60, C66, C84-C86 are supported by experimental data with appropriate statistical comparisons between urethane and saline groups. The effects on movement (t(5) = 11.90, p < 0.001, Cohen's D = 4.86), firing rates (t(10) \u2265 3.83, p \u2264 0.003, Cohen's D \u2265 2.21), spindle bursts (t(10) \u2265 3.18, p \u2264 0.01, Cohen's D \u2265 1.83), and ISI distributions (t(5) \u2265 3.36, p \u2264 0.007, Cohen's D \u2265 1.94) are all statistically significant with large effect sizes. The sample sizes are adequate (n=6-7 per group).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "1266bf33-d9e4-450a-ba6a-9ffe0190d53b",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "At P8, pups spent 57.7 \u00b1 2.5% of time in AS and 30.9 \u00b1 1.9% in wake; at P12, they spent 44.0 \u00b1 3.6% in AS and 39.3 \u00b1 3.5% in wake. A developmental transition from discontinuous to continuous cortical activity was evident in all three areas between P8 and P12.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23 report basic behavioral and developmental observations that are consistent with prior literature (cited in C21-C22) and are illustrated in the figures. These are straightforward descriptive findings that establish the experimental context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "d5df106a-a099-41d2-977c-82f4ec4a1d22",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "State-dependent neuromodulation and sensory responsiveness are proposed as general features of developing cortex, suggesting that the early functional development of primary and higher-order cortical areas may be more similar than currently appreciated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67, C90, C93, and C94 are reasonable inferences from the experimental findings showing similar state-dependent modulation and sensory responsiveness across M1, M2, and mPFC. However, these are generalizations based on a limited set of cortical areas at two developmental time points. The claims would be strengthened by data from additional cortical regions and ages.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "68ad22b2-f640-48cb-a95c-76f605adbd1c",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The decreasing sensory responsiveness across M1, M2, and mPFC likely reflects their decreasing somatotopic homogeneity. It is proposed that multimodal sensory input to prefrontal cortex may enable the development of functional heterogeneity, while unimodal input to primary sensory areas enables somatotopic homogeneity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C76, C77, C79, C80, and C81 present hypotheses about the relationship between sensory input patterns and cortical organization. While the gradient of responsiveness is well-documented (C76), the mechanistic claims about how different input patterns shape development (C80, C81) are speculative and not directly tested. The expectation of multimodal responses in mPFC (C79) is reasonable but untested in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "6a4acf18-0da1-402a-9d4f-0866a0973b07",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Anesthesia in infant animals is not a suitable proxy for natural sleep or sleep-related neural activity and is incompatible with understanding brain-behavior relations in early development. Extreme caution is warranted when interpreting results from anesthetized infant animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C89 are reasonable inferences based on the experimental findings showing profound effects of urethane on behavior and neural activity (C51-C60). The conclusions are supported by citations to similar findings in adults (Akeju and Brown, 2017; Mondino et al., 2022). However, the generalization to all anesthetics and all developmental studies may be overly broad.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "c730592f-ed08-41da-881b-6abc04ec0f32",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The development of prefrontal cortex may be influenced by more than intrinsic activity alone, and the early activity in PFC may not be related in obvious ways to its higher-order functions in adults, similar to the sensory foundations of motor cortex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91 and C92 are reasonable hypotheses based on the experimental findings and the analogy to M1 development (supported by citations). However, these are speculative claims about developmental mechanisms that are not directly tested in this study. The findings challenge the theory that PFC develops independently of sensory input (C16) but do not definitively establish alternative mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "d5bf592e-7659-4c84-92c9-88fba931f774",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims about prior work establish that: (1) behavioral state modulates neural activity in developing sensorimotor systems including M1; (2) M1 functions as a sensory structure in early development; (3) M1 forms connections with M2 and mPFC; (4) M2 integrates sensory cues and develops a somatotopic map; (5) mPFC in adults is associated with cognitive functions; and (6) prior studies of mPFC development used urethane anesthesia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C6-C12, C14, C16-C20 are background claims supported by appropriate citations to prior literature. These establish the context and rationale for the current study. The accuracy of these claims depends on the cited literature, which appears appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "8bf06bd7-6970-4d74-adee-634d4357a814",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study addresses gaps in knowledge by testing the hypothesis that M2 is similar to M1 with respect to sensory responsiveness and behavioral state modulation, and by investigating whether behavioral state modulates activity in mPFC and whether mPFC processes sensory input.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13 and C15 clearly state the hypotheses and knowledge gaps that motivated the study. These are appropriate research questions given the prior literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    },
+    {
+      "id": "96155c07-a993-4464-bb04-7a83390a5189",
+      "content_id": "6b9a809a-13e4-493c-a8f6-7dc98973a239",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Discussion claims about mechanisms, comparative anatomy, and future directions note that: (1) state-dependent release of neuromodulators in infants is unknown; (2) parallel sensory input to primary and higher-order areas occurs in developing visual and sensorimotor systems; (3) M2 has coarser somatotopy than M1 while mPFC lacks somatotopy; (4) there is ongoing debate about rodent-primate PFC homology; and (5) a developmental-comparative approach may clarify PFC evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C73, C78, C82, C83, C95, and C96 are discussion points supported by appropriate citations. These place the findings in broader context and identify important open questions. The claims are appropriately qualified as speculative or uncertain where evidence is lacking.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:55:41.507668Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7a9858bb-63b4-4c7c-883e-7d84e4633ac8",
+      "result_id": "5d916bac-6bb5-40b3-8850-3da71063bcb5"
+    },
+    {
+      "claim_id": "969cae57-d314-4621-ad6e-f68f598265ae",
+      "result_id": "5d916bac-6bb5-40b3-8850-3da71063bcb5"
+    },
+    {
+      "claim_id": "a0244f13-00a2-4de5-a5e1-5ce6d940d1c8",
+      "result_id": "5d916bac-6bb5-40b3-8850-3da71063bcb5"
+    },
+    {
+      "claim_id": "7fe5e371-a36c-4c3c-9345-545bad7101a3",
+      "result_id": "5d916bac-6bb5-40b3-8850-3da71063bcb5"
+    },
+    {
+      "claim_id": "f0380609-3adb-405d-9f29-b0f4a5c7da5d",
+      "result_id": "5d916bac-6bb5-40b3-8850-3da71063bcb5"
+    },
+    {
+      "claim_id": "1037b35b-c9ff-43a9-b327-e88ff7127e81",
+      "result_id": "5d916bac-6bb5-40b3-8850-3da71063bcb5"
+    },
+    {
+      "claim_id": "6181f763-e49e-43cd-9e72-42452040d7dc",
+      "result_id": "5d916bac-6bb5-40b3-8850-3da71063bcb5"
+    },
+    {
+      "claim_id": "21057028-bd9a-4315-97ed-16e16a1ca91e",
+      "result_id": "84d0b012-9316-4ae4-95bc-a677ce25b518"
+    },
+    {
+      "claim_id": "6c3232a7-cb9b-4d94-91ee-0df307e5bcba",
+      "result_id": "84d0b012-9316-4ae4-95bc-a677ce25b518"
+    },
+    {
+      "claim_id": "749d7ade-7597-4c33-aba4-4988e5c169ec",
+      "result_id": "84d0b012-9316-4ae4-95bc-a677ce25b518"
+    },
+    {
+      "claim_id": "b8bd8e77-1bf8-4c98-ad99-d4804d301291",
+      "result_id": "84d0b012-9316-4ae4-95bc-a677ce25b518"
+    },
+    {
+      "claim_id": "28c3a761-8b6d-4941-979b-b4b1349dc4ed",
+      "result_id": "84d0b012-9316-4ae4-95bc-a677ce25b518"
+    },
+    {
+      "claim_id": "3ef8bd62-242b-4395-836f-57b2609d5671",
+      "result_id": "fdb88e33-bb1c-4a32-ba2e-c81e972fa4dc"
+    },
+    {
+      "claim_id": "2c67ba58-b168-45b0-81b1-2418ce1fe351",
+      "result_id": "fdb88e33-bb1c-4a32-ba2e-c81e972fa4dc"
+    },
+    {
+      "claim_id": "bd26e942-c903-47ff-9be4-1cee61339cb5",
+      "result_id": "fdb88e33-bb1c-4a32-ba2e-c81e972fa4dc"
+    },
+    {
+      "claim_id": "3ddeed9d-24bf-43e7-8ff0-6ac19064b144",
+      "result_id": "fdb88e33-bb1c-4a32-ba2e-c81e972fa4dc"
+    },
+    {
+      "claim_id": "0959fec1-0a19-4a72-aff2-584dcd611801",
+      "result_id": "fdb88e33-bb1c-4a32-ba2e-c81e972fa4dc"
+    },
+    {
+      "claim_id": "8b5f158a-3f5b-4628-971f-5e56677d07e7",
+      "result_id": "fdb88e33-bb1c-4a32-ba2e-c81e972fa4dc"
+    },
+    {
+      "claim_id": "28e71a10-2e24-4511-8444-d3f279d9e4d0",
+      "result_id": "fdb88e33-bb1c-4a32-ba2e-c81e972fa4dc"
+    },
+    {
+      "claim_id": "5895898a-ffce-4ecd-b8cc-3bb5d521bd6e",
+      "result_id": "fdb88e33-bb1c-4a32-ba2e-c81e972fa4dc"
+    },
+    {
+      "claim_id": "1686f7a7-9dd1-4c7d-8574-2e0f579b7ee9",
+      "result_id": "fdb88e33-bb1c-4a32-ba2e-c81e972fa4dc"
+    },
+    {
+      "claim_id": "13caaedf-c6d5-455e-8956-88ceec5f149b",
+      "result_id": "fdb88e33-bb1c-4a32-ba2e-c81e972fa4dc"
+    },
+    {
+      "claim_id": "189b1d8e-ca72-4af4-9b3b-04a0cffe6e3f",
+      "result_id": "fdb88e33-bb1c-4a32-ba2e-c81e972fa4dc"
+    },
+    {
+      "claim_id": "3057336c-1cce-4420-8cc2-97db358a683b",
+      "result_id": "c9c82b58-17e7-442f-ae0e-113223994f7a"
+    },
+    {
+      "claim_id": "d0f5a089-53d9-478c-ac6b-2a51de9a29cf",
+      "result_id": "c9c82b58-17e7-442f-ae0e-113223994f7a"
+    },
+    {
+      "claim_id": "4fa608e9-ddc0-4311-9f9a-b05eb555cab2",
+      "result_id": "c9c82b58-17e7-442f-ae0e-113223994f7a"
+    },
+    {
+      "claim_id": "d8676360-7a20-40ac-a184-8cdc777def58",
+      "result_id": "c9c82b58-17e7-442f-ae0e-113223994f7a"
+    },
+    {
+      "claim_id": "eb52ac2d-9763-4626-a2b1-a54e7f9fa99f",
+      "result_id": "c9c82b58-17e7-442f-ae0e-113223994f7a"
+    },
+    {
+      "claim_id": "0c003ab9-895e-40c8-a513-1b66031d1cf3",
+      "result_id": "c9c82b58-17e7-442f-ae0e-113223994f7a"
+    },
+    {
+      "claim_id": "3d471b88-a69b-4e3a-9594-fca98395fc61",
+      "result_id": "73349c8a-b7bd-4d8f-8778-ed7afddf3a30"
+    },
+    {
+      "claim_id": "63d17484-35ec-46e8-ab41-1e6396a6972f",
+      "result_id": "73349c8a-b7bd-4d8f-8778-ed7afddf3a30"
+    },
+    {
+      "claim_id": "c9e1bf4b-d506-482a-aca2-8d3d915a75af",
+      "result_id": "73349c8a-b7bd-4d8f-8778-ed7afddf3a30"
+    },
+    {
+      "claim_id": "097aef31-229e-4580-ac93-0b7f5a1309fb",
+      "result_id": "73349c8a-b7bd-4d8f-8778-ed7afddf3a30"
+    },
+    {
+      "claim_id": "d66b47c5-5a91-421d-b95b-7c8a42d9c76a",
+      "result_id": "2bec0119-4fb1-40d2-8f75-32118a87f401"
+    },
+    {
+      "claim_id": "6215f555-e7ae-4086-9923-ad1620e1136b",
+      "result_id": "2bec0119-4fb1-40d2-8f75-32118a87f401"
+    },
+    {
+      "claim_id": "59768496-adeb-4e07-a30b-f347f78e3438",
+      "result_id": "2bec0119-4fb1-40d2-8f75-32118a87f401"
+    },
+    {
+      "claim_id": "feac5457-c621-4f47-89ad-0b6f1eb7455d",
+      "result_id": "2bec0119-4fb1-40d2-8f75-32118a87f401"
+    },
+    {
+      "claim_id": "9976ac6c-8503-40f2-abef-c855da952c7b",
+      "result_id": "9f05927a-cff4-4579-9394-00b7f17e2056"
+    },
+    {
+      "claim_id": "b2ada98e-57c9-42a4-a1e4-56aed40980e5",
+      "result_id": "9f05927a-cff4-4579-9394-00b7f17e2056"
+    },
+    {
+      "claim_id": "9d4d804f-0ae3-4cd7-8b78-d6417e00531a",
+      "result_id": "9f05927a-cff4-4579-9394-00b7f17e2056"
+    },
+    {
+      "claim_id": "625a930e-7b1b-433d-aca6-c0dc0a20d00e",
+      "result_id": "9f05927a-cff4-4579-9394-00b7f17e2056"
+    },
+    {
+      "claim_id": "2d31bc41-55e0-4dc1-98a3-5dcdda7e74e5",
+      "result_id": "9f05927a-cff4-4579-9394-00b7f17e2056"
+    },
+    {
+      "claim_id": "c989caa4-bf27-44b2-a2ab-02f9d167ac43",
+      "result_id": "9f05927a-cff4-4579-9394-00b7f17e2056"
+    },
+    {
+      "claim_id": "9531b8ed-8888-4888-90d4-94f011d2b485",
+      "result_id": "9f05927a-cff4-4579-9394-00b7f17e2056"
+    },
+    {
+      "claim_id": "da1dbdb4-e648-4766-aeb5-fb8ddebbe0b8",
+      "result_id": "9f05927a-cff4-4579-9394-00b7f17e2056"
+    },
+    {
+      "claim_id": "94961cc5-21e8-4985-a1cc-71c8d9c3a9bd",
+      "result_id": "9f05927a-cff4-4579-9394-00b7f17e2056"
+    },
+    {
+      "claim_id": "31b7cadf-ac97-43ff-b651-d93fe8cc9e71",
+      "result_id": "9f05927a-cff4-4579-9394-00b7f17e2056"
+    },
+    {
+      "claim_id": "ed371aed-daed-4525-a125-f37f891fe55d",
+      "result_id": "9f05927a-cff4-4579-9394-00b7f17e2056"
+    },
+    {
+      "claim_id": "1ac4a10b-b04e-4b81-9892-4c0b9e95643d",
+      "result_id": "9f05927a-cff4-4579-9394-00b7f17e2056"
+    },
+    {
+      "claim_id": "248665a5-f926-484f-bee6-08d5e6fc9dc1",
+      "result_id": "9f05927a-cff4-4579-9394-00b7f17e2056"
+    },
+    {
+      "claim_id": "b6a58207-6a30-4986-9199-8340b95b18a1",
+      "result_id": "9f05927a-cff4-4579-9394-00b7f17e2056"
+    },
+    {
+      "claim_id": "88b5cbf5-4147-4484-9d50-a0830b34e017",
+      "result_id": "1266bf33-d9e4-450a-ba6a-9ffe0190d53b"
+    },
+    {
+      "claim_id": "63bf252b-4441-4c65-90a8-20b982c4f18d",
+      "result_id": "1266bf33-d9e4-450a-ba6a-9ffe0190d53b"
+    },
+    {
+      "claim_id": "e3813667-922e-4b9b-b633-5caa8204c2e0",
+      "result_id": "1266bf33-d9e4-450a-ba6a-9ffe0190d53b"
+    },
+    {
+      "claim_id": "ae7c5036-cfd2-41bc-8c41-39bfa4164394",
+      "result_id": "d5df106a-a099-41d2-977c-82f4ec4a1d22"
+    },
+    {
+      "claim_id": "99d34ff3-d840-47b2-bbcb-8a00a3685d50",
+      "result_id": "d5df106a-a099-41d2-977c-82f4ec4a1d22"
+    },
+    {
+      "claim_id": "ab801b0c-832f-41d9-9294-71e282c4331c",
+      "result_id": "d5df106a-a099-41d2-977c-82f4ec4a1d22"
+    },
+    {
+      "claim_id": "fa117d63-307e-4e83-98fa-01e64ac3d81c",
+      "result_id": "d5df106a-a099-41d2-977c-82f4ec4a1d22"
+    },
+    {
+      "claim_id": "be051972-3335-4981-ab99-3d9ef7fa50db",
+      "result_id": "68ad22b2-f640-48cb-a95c-76f605adbd1c"
+    },
+    {
+      "claim_id": "c39f83df-0086-454b-888a-b73b414d5713",
+      "result_id": "68ad22b2-f640-48cb-a95c-76f605adbd1c"
+    },
+    {
+      "claim_id": "961ca7b3-1605-4969-b6b9-6f44d4ae9b4a",
+      "result_id": "68ad22b2-f640-48cb-a95c-76f605adbd1c"
+    },
+    {
+      "claim_id": "3441d32b-fe65-4fe3-b3dc-4308880276cd",
+      "result_id": "68ad22b2-f640-48cb-a95c-76f605adbd1c"
+    },
+    {
+      "claim_id": "85aa6b33-9f4a-4606-bdec-081f5db919d8",
+      "result_id": "68ad22b2-f640-48cb-a95c-76f605adbd1c"
+    },
+    {
+      "claim_id": "6e8bedf9-a09b-430e-b51e-b1553417cdfa",
+      "result_id": "6a4acf18-0da1-402a-9d4f-0866a0973b07"
+    },
+    {
+      "claim_id": "7f217906-dbfa-4afe-aa4d-42f0546c037c",
+      "result_id": "6a4acf18-0da1-402a-9d4f-0866a0973b07"
+    },
+    {
+      "claim_id": "bcb3fd11-0df4-432c-b5cb-e27e99a938b2",
+      "result_id": "6a4acf18-0da1-402a-9d4f-0866a0973b07"
+    },
+    {
+      "claim_id": "5f815902-3808-4db9-921f-ac42cb5d8ba8",
+      "result_id": "c730592f-ed08-41da-881b-6abc04ec0f32"
+    },
+    {
+      "claim_id": "f746c510-a9d8-4c7f-840b-9753a0bf127e",
+      "result_id": "c730592f-ed08-41da-881b-6abc04ec0f32"
+    },
+    {
+      "claim_id": "3e20d1de-5c43-4bce-af6b-9cbd9991f005",
+      "result_id": "d5bf592e-7659-4c84-92c9-88fba931f774"
+    },
+    {
+      "claim_id": "119e545f-7f0e-4bd1-8048-ebbd04b3cbec",
+      "result_id": "d5bf592e-7659-4c84-92c9-88fba931f774"
+    },
+    {
+      "claim_id": "2a11635e-1586-4946-890b-c5240dff67cd",
+      "result_id": "d5bf592e-7659-4c84-92c9-88fba931f774"
+    },
+    {
+      "claim_id": "b2b1148f-0f9c-4001-b0ef-2e72ba444f4f",
+      "result_id": "d5bf592e-7659-4c84-92c9-88fba931f774"
+    },
+    {
+      "claim_id": "acb965d8-0872-4d03-8e2d-1df5af28bfc6",
+      "result_id": "d5bf592e-7659-4c84-92c9-88fba931f774"
+    },
+    {
+      "claim_id": "8b8ffa4a-64dc-41fe-8622-e314e372538e",
+      "result_id": "d5bf592e-7659-4c84-92c9-88fba931f774"
+    },
+    {
+      "claim_id": "092e25bf-3e79-40da-8585-3666bfd62f6e",
+      "result_id": "d5bf592e-7659-4c84-92c9-88fba931f774"
+    },
+    {
+      "claim_id": "b52ac304-e311-4847-bc7a-806efd71c725",
+      "result_id": "d5bf592e-7659-4c84-92c9-88fba931f774"
+    },
+    {
+      "claim_id": "75aae362-616d-47e3-a31d-bbbd9382f37d",
+      "result_id": "d5bf592e-7659-4c84-92c9-88fba931f774"
+    },
+    {
+      "claim_id": "c8d40af2-1223-4f3e-a1f0-0010d28aaee3",
+      "result_id": "d5bf592e-7659-4c84-92c9-88fba931f774"
+    },
+    {
+      "claim_id": "0bf55f3a-56ad-4183-8ad2-b9196994bbad",
+      "result_id": "d5bf592e-7659-4c84-92c9-88fba931f774"
+    },
+    {
+      "claim_id": "0bf4be83-57b4-4e91-8c19-95f0f92805ce",
+      "result_id": "d5bf592e-7659-4c84-92c9-88fba931f774"
+    },
+    {
+      "claim_id": "871e5383-91d7-4359-b845-6e5874c76d46",
+      "result_id": "d5bf592e-7659-4c84-92c9-88fba931f774"
+    },
+    {
+      "claim_id": "49e32663-4bb3-427c-aad8-0bebb7dfd2ae",
+      "result_id": "d5bf592e-7659-4c84-92c9-88fba931f774"
+    },
+    {
+      "claim_id": "836ecaf9-2554-4a16-8929-9abb595877d0",
+      "result_id": "d5bf592e-7659-4c84-92c9-88fba931f774"
+    },
+    {
+      "claim_id": "41bc4b03-c8d2-4a2b-ab03-e82f24c26b70",
+      "result_id": "8bf06bd7-6970-4d74-adee-634d4357a814"
+    },
+    {
+      "claim_id": "866460b1-00e1-4ace-a56c-5eb7f21f0e38",
+      "result_id": "8bf06bd7-6970-4d74-adee-634d4357a814"
+    },
+    {
+      "claim_id": "c72d06da-f90f-4383-b1e4-236087ecb715",
+      "result_id": "96155c07-a993-4464-bb04-7a83390a5189"
+    },
+    {
+      "claim_id": "48565412-9836-4554-9dcb-4b0aa1e4469d",
+      "result_id": "96155c07-a993-4464-bb04-7a83390a5189"
+    },
+    {
+      "claim_id": "169d176e-515b-4441-8064-4fec40a75cb8",
+      "result_id": "96155c07-a993-4464-bb04-7a83390a5189"
+    },
+    {
+      "claim_id": "1601b752-6844-4ab3-a6f0-bdd2c2ddae48",
+      "result_id": "96155c07-a993-4464-bb04-7a83390a5189"
+    },
+    {
+      "claim_id": "0a59dbad-7de6-4962-83b6-031192258699",
+      "result_id": "96155c07-a993-4464-bb04-7a83390a5189"
+    },
+    {
+      "claim_id": "7b8132bd-8400-4225-af0d-6a184630b486",
+      "result_id": "96155c07-a993-4464-bb04-7a83390a5189"
+    },
+    {
+      "claim_id": "1137a74a-4233-4c0c-a3d8-c7bdf7618101",
+      "result_id": "96155c07-a993-4464-bb04-7a83390a5189"
+    },
+    {
+      "claim_id": "be45fce5-b127-42c3-9dcc-f66de9e2a4d6",
+      "result_id": "96155c07-a993-4464-bb04-7a83390a5189"
+    },
+    {
+      "claim_id": "bfb90e87-b753-483f-9a7e-ddee253654cd",
+      "result_id": "96155c07-a993-4464-bb04-7a83390a5189"
+    },
+    {
+      "claim_id": "f8e213be-93ae-40a5-9e5d-d4538b95ce2b",
+      "result_id": "96155c07-a993-4464-bb04-7a83390a5189"
+    },
+    {
+      "claim_id": "18061766-b4d1-480d-979b-1be50de3c8ba",
+      "result_id": "96155c07-a993-4464-bb04-7a83390a5189"
+    }
+  ],
+  "comparisons": []
+}

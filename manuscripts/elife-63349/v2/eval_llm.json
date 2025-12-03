@@ -1,0 +1,446 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Fly septin hexamers are highly homologous to human septins (65-75% identity) and have a predicted palindromic arrangement with Pnut in the center, DSep1 at the termini, and DSep2 in between.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 provide sequence identity data from alignment analysis, and C36 infers the palindromic arrangement from phylogenetic analysis and previous mammalian septin studies. The sequence homology is directly measured, and the structural arrangement is reasonably inferred from established phylogenetic relationships and recent structural data on mammalian septins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Computational prediction indicates that fly septin C-termini form coiled-coils: DSep1 has a 28-residue (4 nm) coiled-coil, while DSep2 and Pnut have 86-residue (13 nm) coiled-coils.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 report predictions from the COILS algorithm, and C39-C40 calculate physical lengths based on standard alpha-helix parameters (1.5 \u00c5/residue). The computational predictions are appropriately applied and the length calculations are mathematically correct. However, these remain predictions rather than experimentally determined structures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "In solution, fly septin hexamers form bundles at concentrations \u2265200 nM, with rapid assembly (<2 min) producing stiff, straight bundles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 are directly observed by TIRF microscopy (C42-C44 with data support) and inferred from bundle morphology (C45). The concentration threshold, kinetics, and mechanical properties are consistently documented across the imaging data. The inference of stiffness from lack of thermal undulations is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "Yeast septins form thin semiflexible paired filaments with mass-per-length of ~20 kDa/nm and occasional double-stranded structures with 17-27 nm spacing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 are measured by STEM with TMV rods as mass standards. The MPL measurement (~20 kDa/nm) is close to the theoretical value for paired filaments (23.2 kDa/nm), and the double-stranded spacing is consistent with previous EM studies. The use of internal calibration standards strengthens the quantitative measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Fly septin bundles in solution are 3D structures with concentration-dependent dimensions: at 200 nM, bundles have tapered ends with ~250 kDa/nm MPL and 31 nm width (\u22653 monolayers); at 500 nM, bundles reach 280 nm width and ~5000 kDa/nm MPL (\u22656 monolayers).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 provide STEM measurements with quantitative analysis, while C53 infers 3D growth from the dimensional data. The MPL and width measurements are internally consistent, and the calculations of hexamer numbers per cross-section are mathematically sound. The inference of 3D rather than 2D growth is well-supported by the geometric analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Fly septin hexamers bind to anionic lipid bilayers (PS and PI(4,5)P2) through electrostatic interactions, with membrane recruitment occurring rapidly (<3 min) and showing a transition from sparse bundles to dense layers with increasing anionic lipid content.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 are directly observed by TIRF imaging, C60 infers the electrostatic mechanism from the similar behavior on PS vs PI(4,5)P2, and C61 provides quantitative support by comparing the lipid concentrations needed for the transition. The inference of electrostatic interactions is well-supported by the comparative data showing that net charge, rather than specific lipid identity, governs binding. The rapid kinetics and concentration-dependent morphology are consistently documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "On PS-containing bilayers, fly septins show concentration-dependent assembly: at 10-50 nM, only puncta are observed; at \u2265100 nM, fibrillar meshworks form; above 200 nM, solution-phase bundles coexist with membrane-bound meshworks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 are observed by TIRF and off-TIRF-angle imaging. The concentration thresholds are clearly defined and the morphological transitions are well-documented. The observation that solution-phase bundling occurs above 200 nM is consistent with the earlier findings in C42-C43.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Membrane-bound septins are immobile with negligible subunit exchange, while the underlying lipid bilayer remains fluid.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 are demonstrated by FRAP experiments on both septins and lipids. The contrasting behavior (immobile septins vs. fluid lipids with D \u2248 1.2 \u03bcm\u00b2/s) is clearly documented and indicates stable septin-membrane attachment without compromising membrane fluidity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "On lipid monolayers containing PS and/or PI(4,5)P2, fly septin hexamers form densely packed arrays of paired filaments (5.7 \u00b1 0.8 nm center-to-center spacing, 3.6 \u00b1 0.53 nm width) with orthogonal or diagonal bridges at 24 nm intervals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 are directly measured from TEM images. The filament dimensions are consistent with the expected 4 nm width of hexamers, and the bridge lengths correspond to single or double hexamer rods. The quantitative measurements are well-documented with appropriate sample sizes and error estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Mammalian septin hexamers form similar paired filament arrays with orthogonal/diagonal connections on lipid monolayers, though with some structural differences from fly septins; similar arrays were previously observed for yeast septins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72 and C74 are observed in TEM images of mammalian septins, while C73 is supported by citations to previous yeast septin studies. The observation of conserved architectural features across species is well-documented, though the subtle differences (continuous vs. isolated bridging filaments) are noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "CryoEM confirms paired septin filaments on PI(4,5)P2-containing vesicles with 5.7 \u00b1 0.8 nm spacing, along with occasional single filaments and orthogonal/oblique interconnections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 are observed in cryoEM images. The center-to-center spacing measurement is in excellent agreement with the negative stain EM data (C68), providing independent validation. The observation of single filaments and bridges is consistent with the monolayer data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Septin-decorated vesicles are larger (542 \u00b1 199 nm) than control vesicles (358 \u00b1 180 nm) and show faceted contours, with cryo-tomography confirming membrane binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 are measured from cryoEM images, and C80 is demonstrated by cryo-tomography. The size difference suggests curvature-dependent binding, and the faceting indicates membrane deformation by septins. The tomography provides definitive evidence of membrane association.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "AFM reveals concentration-dependent septin organization on bilayers: at 12 nM, sparse threads (5.1 \u00b1 0.9 nm height, 11.5-16.6 nm width); at 24 nM, mixed isolated and dense regions; at 60 nM, dense coverage with threads up to 100s of nm wide and 8-18 nm tall, suggesting lateral alignment and vertical stacking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C88 are measured by AFM with appropriate quantification. The height and width distributions are consistent with single/paired filaments at low concentration and multilayer structures at high concentration. The inference of lateral alignment and vertical stacking from the dimensional data is reasonable, though tip convolution effects are acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Unfixed septins show similar morphology to GTA-fixed samples, with isolated filaments at 4 nm height (single layer) and bundled areas at 8-12 nm height (stacked layers).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 compare fixed and unfixed samples by AFM. The similar morphologies validate that fixation does not significantly alter structure. The height measurements directly support the interpretation of single vs. stacked layers, with 4 nm corresponding to the hexamer G-domain height.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "AFM scanning reveals that dense septin arrays are mechanically stable while isolated filaments are more easily disrupted; bundles can be displaced without destruction, suggesting stiff, ductile filaments with fluid membrane attachment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 are observed in consecutive AFM scans, C94 infers mechanical stabilization from density-dependent stability, and C95-C96 infer mechanical properties from bundle displacement behavior. The observations are consistent across fixed and unfixed samples, and the inferences about mechanical properties are reasonable based on the displacement patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "QCM-D measurements show that septin hexamers stably bind to anionic lipid bilayers (PS and/or PI(4,5)P2) but not to neutral PC bilayers, with self-limiting film growth reaching maximum thickness of ~18 nm (by AFM) after ~50 min.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C105 combine AFM and QCM-D data. The QCM-D kinetics show stable binding with saturation, the lack of binding to PC confirms the requirement for anionic lipids, and the self-limiting growth is consistently observed across lipid compositions. The maximum thickness from AFM (C97) is consistent with the QCM-D estimates (C109-C110).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "QCM-D frequency shifts indicate septin film thicknesses of 15 nm (20% PS), 13 nm (5% PI(4,5)P2), and 19 nm (20% PS + 5% PI(4,5)P2), consistent with AFM measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 report measured frequency shifts, C109 calculates thicknesses using the Sauerbrey equation, and C110 compares with AFM data. The calculations are appropriate for the Sauerbrey equation (assuming rigid films), and the consistency between QCM-D and AFM validates both measurements. However, the Sauerbrey equation assumes a rigid, uniform film, which may not fully apply given the \u0394D values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "Membrane-bound septins show \u0394D/-\u0394f ratios of 0.20 \u00d7 10\u207b\u2076/Hz (low coverage) to 0.09 \u00d7 10\u207b\u2076/Hz (high coverage), consistent with flexible linkages between coiled-coils and globular domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C111 reports measured \u0394D/-\u0394f ratios, and C112 infers flexibility from comparison with other proteins. The ratios are higher than for rigid globular proteins, supporting the interpretation of flexible hinges. The comparison with other protein systems provides appropriate context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "C-terminally truncated (\u0394CC) fly septin hexamers form stable hexamers that only form short rods (20-80 nm) in solution but assemble into dense arrays of aligned filaments on lipid monolayers, with filaments more closely spaced (4.5 nm) and slightly narrower (3.5 nm) than wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C120 are observed by TEM. The \u0394CC mutant behavior demonstrates that membrane binding promotes polymerization even without coiled-coils, and the closer spacing suggests direct G-domain contacts. The comparison with yeast septin behavior (C116) provides appropriate context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "QCM-D shows that \u0394CC septins bind to bilayers but form much thinner layers (-\u0394f < 10 Hz, consistent with monolayers), demonstrating that coiled-coils are not required for membrane binding but are essential for filament pairing, cross-bridging, and stacking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C122 are measured by QCM-D, and C123 synthesizes the EM and QCM-D data to conclude the role of coiled-coils. The conclusion is well-supported by the contrasting behavior of wild-type (multilayer) vs. \u0394CC (monolayer) septins. This is a key mechanistic finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Fly septin hexamers have high affinity for negatively charged bilayers and form dense, immobile membrane-associated meshworks of paired filaments that laterally associate and stack, with coiled-coils crucial for higher-order organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C130 synthesize findings from multiple techniques (TIRF, EM, AFM, FRAP, QCM-D). The high affinity, dense meshwork formation, paired filament structure, lateral association, stacking, and role of coiled-coils are all consistently documented across the different experimental approaches. This represents a comprehensive characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Membrane binding catalyzes animal septin polymerization and has a dramatic impact on septin self-assembly, with C-terminal coiled-coils playing a key role in higher-order filament organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C133 are overarching conclusions synthesizing the entire study. The catalytic effect of membrane binding is demonstrated by the >10-fold reduction in polymerization threshold (C134), the dramatic impact is shown by the transition from 3D bundles to 2D arrays, and the role of coiled-coils is established by the \u0394CC mutant experiments. These conclusions are well-supported by the comprehensive data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Membrane binding lowers the polymerization threshold >10-fold (from 200 nM to <12 nM), likely due to 2D confinement increasing effective concentration and possibly orienting septins to promote polymerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C134 compares TIRF and AFM data for solution vs. membrane conditions, C135 proposes a mechanism based on 2D confinement, and C136 suggests an additional orientation mechanism by analogy to annexin A5. The quantitative comparison is well-documented, and the proposed mechanisms are reasonable, though C136 is more speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Both animal and yeast septins form paired filaments (~2 nm spacing) on membranes that are interconnected by bridges corresponding to single protomers, with similar arrays observed in yeast cells but not yet in animal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C138 compare the current findings with previous yeast septin studies, and C139 notes the lack of similar observations in animal cells. The comparisons are appropriately cited and highlight conserved features across species. The caveat about animal cells is important for contextualizing the in vitro findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Fly septins have stronger bundling propensity than yeast septins in solution, but on membranes both form similar paired filament structures, suggesting competition between septin-membrane and septin-septin interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C143 compare fly and yeast septin behavior in solution vs. on membranes. The stronger bundling of fly septins in solution is documented by TIRF and STEM (C140), the transition on membranes is observed by TIRF (C141), yeast behavior is confirmed by STEM and citations (C142), and the conclusion (C143) is well-supported by the comparative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Fly septins bind membranes based on net surface charge rather than specific lipid identity, contrasting with yeast septins that are highly selective for phosphoinositides; septins likely interact via N-terminal polybasic regions similar to other PI(4,5)P2-binding proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C144 is concluded from the similar behavior on PS vs. PI(4,5)P2 membranes, C145 contrasts with yeast septin selectivity (cited), and C146-C147 discuss the likely binding mechanism (cited). The conclusion about electrostatic vs. specific binding is well-supported by the comparative lipid data, and the proposed mechanism is consistent with known polybasic-lipid interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Yeast and animal septins differ in C-terminal length and coiled-coil structure (yeast 2-3\u00d7 longer), which may explain differences in organization; the high conservation between fly and mammalian septins (65-75% identity) makes fly septins a valuable model for understanding animal septin function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C150 compare structural features between yeast and animal septins based on sequence analysis and coiled-coil predictions, and C151 discusses the significance of studying fly septins. The structural comparisons are well-documented, and the rationale for using fly septins as a model is sound given the high conservation with mammalian septins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C2",
+      "C3"
+    ],
+    "result": "Binding to flat lipid membranes requires electrostatic interactions with anionic lipids and promotes ordered self-assembly of fly septins into filamentous meshworks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims from the abstract are supported by the comprehensive experimental data showing: (1) no binding to neutral PC membranes (C104), (2) binding to PS and PI(4,5)P2 membranes with similar behavior suggesting electrostatic interactions (C60, C144), and (3) formation of ordered paired filament meshworks on membranes (C67-C71, C75-C77). The abstract claims accurately summarize the main findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Both fly and mammalian septins form arrays of single and paired filaments; fly filaments form mechanically rigid 12-18 nm thick double layers, while C-terminally truncated mutants form 4 nm monolayers, indicating coiled-coils are required for stacking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These abstract claims are supported by: TEM showing paired filaments for both fly and mammalian septins (C67, C72), AFM and QCM-D showing 12-18 nm thickness for wild-type (C88, C97, C109), and QCM-D showing 4 nm monolayers for \u0394CC mutants (C122). The conclusion about coiled-coil requirement is well-supported by the \u0394CC mutant data (C123).",
+    "result_type": "MAJOR"
+  }
+]

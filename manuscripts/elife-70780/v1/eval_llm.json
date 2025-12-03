@@ -1,0 +1,481 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C30",
+      "C52",
+      "C63",
+      "C68",
+      "C117"
+    ],
+    "result": "The LOTUS initiative successfully curated and disseminated 750,000+ referenced structure-organism pairs from 2.5M+ initial entries, containing 290,000+ unique chemical structures, 40,000+ distinct organisms, and 75,000+ references.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C30, C52, C63, C68, and C117 consistently report the same quantitative outcomes of the curation process. The data processing pipeline is described in detail in the methods, and validation results (C62: 97% true positives) support the quality of the automated curation. The numbers are internally consistent across multiple claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "LOTUS implemented a multi-stage harmonization, processing, and validation pipeline using a Single Source of Truth (SSOT) architecture to curate data from 36+ electronic natural product resources, with manual validation of 420 entries and automated validation achieving 97% true positive rate on 100 test entries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The curation methodology is well-documented with specific validation metrics (C62: 97% true positives). The SSOT architecture (C50, C51) and multi-stage processing (C49) are clearly described. Manual validation criteria (C61) are explicit and reasonable. The scale of the challenge (C56: 2.5M+ entries) justifies the automated approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C38",
+      "C39",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "LOTUS data is disseminated through dual hosting on Wikidata and LNPN (lotus.naturalproducts.net), with regular synchronization via SSOT, providing complementary access methods: Wikidata offers flexible SPARQL queries while LNPN provides a graphical interface with structure drawing capabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dual dissemination strategy is clearly described with specific URLs and functionality. The complementary advantages of each platform (C88, C89) are well-articulated. The synchronization mechanism via SSOT (C86) ensures data consistency. This represents a practical solution to different user needs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C225",
+      "C226",
+      "C227",
+      "C228",
+      "C229",
+      "C230",
+      "C231",
+      "C232",
+      "C233",
+      "C234",
+      "C235",
+      "C236",
+      "C237"
+    ],
+    "result": "The curation pipeline processed chemical structures, organisms, and references with varying success rates: 85% of InChI, 84% of SMILES, and 56% of chemical names were successfully sanitized; 50% of clean organism fields and 83% of dirty organism fields yielded canonical names; reference processing success rates ranged from 4% to 60% depending on the initial format.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide detailed quantitative metrics for each stage of the curation pipeline. The numbers are specific and internally consistent. The variation in success rates across different input formats is expected and reasonable. The lower success rate for chemical names (56%) vs. structural identifiers (84-85%) is chemically plausible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The distribution of chemical structures across biological kingdoms shows Plants contain 95,191 structures (95% specific), Fungi 22,594 structures (89% specific), Animals 15,242 structures (78% specific), and Bacteria 15,895 structures (89% specific), with varying levels of chemical class specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are directly supported by Table 3 in the manuscript. The data show clear quantitative differences in both the number of structures and their taxonomic specificity across kingdoms. The high specificity percentages (78-95%) are consistent with known biosynthetic capabilities of different kingdoms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C238",
+      "C239",
+      "C240",
+      "C241"
+    ],
+    "result": "LOTUS data reveals limited coverage of natural product chemical space: on average, 3 organisms per structure and 11 structures per organism, with half of all structures reported from a single organism and half of organisms containing \u22645 structures. Less than 10% of species contain >80% of structural diversity, while 80% of species are linked to <10% of structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C138 and C238-C241 are directly supported by Figure 4 and accompanying text. The specific examples (A. thaliana: 687 structures; \u03b2-sitosterol: 3979 organisms) provide concrete validation. The skewed distribution is consistent with known publication biases in natural products research (C13, C141, C150).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "The limited coverage in LOTUS is attributed to publication biases favoring novel/bioactive compounds, differential reporting of chemical classes (e.g., alkaloids are overrepresented due to their bioactivity, ease of extraction, and MS ionization), and the time-intensive nature of physical isolation. Future expansion could leverage computational metabolite annotation and mass spectrometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The interpretation of data limitations is well-reasoned and supported by citations (C139: metabolomics studies). The explanation for alkaloid overrepresentation (C142) is chemically sound. The acknowledgment of current limitations (C143, C144) is appropriate. The prospective solutions (C147, C148) are plausible but remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The validation process prioritized data quality over quantity, resulting in high rejection rates. Redundant entries existed among source databases, and some correct entries were likely falsely rejected. All rejected entries (1.75M+) were preserved for future manual inspection at https://doi.org/10.5281/zenodo.5794597.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The acknowledgment of false rejections (C66) demonstrates scientific honesty. The preservation of rejected data (C67) for future curation is good practice. The quality-over-quantity philosophy (C65) is explicitly stated and justified by the restrictive validation rules (C212). The redundancy among sources (C64) is expected when aggregating multiple databases.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208",
+      "C209",
+      "C210",
+      "C211",
+      "C212",
+      "C213",
+      "C214"
+    ],
+    "result": "The LOTUS curation pipeline has acknowledged limitations including complexity with many dependencies, potential data quality degradation during processing (e.g., systematic sanitization may incorrectly process valid salts/charged molecules), imperfect name-to-structure translations, challenging organism name resolution (e.g., 'Lotus' refers to both a plant genus and Nelumbo nucifera), incomplete translation dictionaries, and imperfect validation rules leading to some incorrect uploads to Wikidata.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This comprehensive acknowledgment of limitations (C197-C214) demonstrates scientific rigor and honesty. Specific examples of challenging cases (C208, C209) illustrate real problems. The systematic sanitization issue (C201-C203) is a known trade-off in cheminformatics. The expectation that community curation will improve data quality over time (C214) is reasonable given the Wikidata platform.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Wikidata was selected as the primary dissemination platform because it provides cross-disciplinary and multilingual support, collaborative community curation (~20,000 monthly contributors), >1 billion statements (~100 million entries), independence from individual/institutional funding, and powerful SPARQL query capabilities for exploring data from multiple angles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The rationale for using Wikidata (C71-C74) is well-articulated. The quantitative characteristics (C32-C34) are factual statements about Wikidata. The advantages cited (community curation, funding independence, query flexibility) are real benefits of the platform. The existence of established workflows for life sciences data (C35) supports the feasibility of this approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "While SPARQL queries are powerful, they can be complex and require in-depth understanding. Traditional natural product queries (structural/spectral searches) are not currently available in Wikidata, necessitating the LNPN interface which allows structure drawing. Future versions are envisioned to include predicted MS spectra for mass/spectral-based queries, with a spectral database already available at https://doi.org/10.5281/zenodo.5607264.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The limitations of Wikidata for natural products research (C75, C76) are honestly acknowledged. The LNPN solution (C77) addresses these limitations. The statement about routine use of LC-MS (C78) is accurate for the field. The future vision (C79) is clearly marked as prospective, and the existing spectral database (C80) demonstrates progress toward this goal.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C118",
+      "C119"
+    ],
+    "result": "LOTUS enables community contribution through multiple pathways: users can contribute to external NP resources (which are periodically re-imported), or directly create/edit Wikidata entries. The SSOT mechanism prevents reprocessing of previously treated data. Automated scripts handle batch uploads by checking for existing entries and upserting as needed. Contributors are encouraged to use the LOTUS curation pipeline before direct Wikidata upload.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The contribution mechanisms are clearly described with appropriate caveats (C108: SSOT not yet open for direct public write access). The SSOT approach (C107) prevents duplicate processing. The automated upload scripts (C118) are described in sufficient detail. The recommendation to use the curation pipeline (C115) is sensible for maintaining data quality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Scientific advances can invalidate previously uploaded data, making continuous editing capabilities essential for data quality and sustainability. Wikidata supports both manual curation by human experts (irreplaceable standard) and automated correction via approved bots (e.g., NPimporterBot) capable of thousands of edits, reducing incorrect data requiring manual editing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dynamic nature of scientific knowledge (C120) is well-recognized. The dual approach of automated and manual curation (C123) is appropriate. The acknowledgment that human expertise remains irreplaceable (C126) despite automation benefits (C125) shows balanced judgment. The bot approval process (C124) ensures quality control.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C242",
+      "C243"
+    ],
+    "result": "Among all chemical structures in LOTUS, only heptadecanoic acid and \u03b2-carotene were found in all biological kingdoms. Within fungi, Basidiomycotina show higher biosynthetic specificity toward terpenoids compared to other fungi which focus on polyketides production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The finding of only two compounds across all kingdoms (C242) is a specific, verifiable result from the data. The observation about Basidiomycotina (C243) is supported by Figure 7 and represents a chemotaxonomic insight consistent with known fungal biosynthetic capabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C161",
+      "C170",
+      "C171",
+      "C172",
+      "C174",
+      "C175",
+      "C178"
+    ],
+    "result": "The LOTUS initiative holds promise to reshape natural products research by enabling novel queries and transformational perspectives, facilitating exploration of eco-evolutionary mechanisms, guiding drug discovery, providing molecular arguments for biodiversity conservation, and offering insights into the history of pharmacognosy. Future applications include linking spectral data to Wikidata entries for improved dereplication, annotation, and metabolomic analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C1, C7, C42-C46, C161, C170-C172, C174, C175, C178) are largely prospective and speculative about future benefits and applications. While the potential is plausible given the data infrastructure created, actual realization of these benefits requires future work and community adoption. The claims are appropriately framed as possibilities rather than demonstrated outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C2",
+      "C20",
+      "C48"
+    ],
+    "result": "Current natural products databases are characterized by non-standardized, insular, and specialized formats with largely inhomogeneous data structures. No open, cross-kingdom, comprehensive, and computer-interpretable electronic NP resource currently links natural products to their containing organisms with references to underlying experimental work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C2, C20, C48) represent the authors' assessment of the current state of natural products databases, which motivated the LOTUS initiative. The assessment is supported by the detailed review of existing resources (C21-C28) and the heterogeneity encountered during data harmonization. The need for LOTUS validates this assessment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "To handle taxonomic complexity, all taxon identifiers from all accepted taxonomic databases were retained for each taxon name. The Open Tree of Life (OTL) initiative will help reduce taxonomic discrepancies through regular expert curation and new data. A new 'Open Tree of Life ID' property (P9157) was created in Wikidata.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The approach to handling taxonomic complexity (C81) is pragmatic given the evolving nature of taxonomy. The creation of the OTL property in Wikidata (C84) is a concrete contribution. The prospective claim about OTL reducing discrepancies (C82) is reasonable given OTL's characteristics (C83), though the timeline is uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "A dedicated IDSM/Sachem endpoint was created for LOTUS to enable substructure and similarity searches via SPARQL on Wikidata compounds. The endpoint indexes isomeric and canonical SMILES codes, which are automatically downloaded from Wikidata daily to maintain currency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The development of the IDSM/Sachem endpoint (C92-C94) is supported by citations and represents a technical solution to Wikidata's lack of native chemical structure search. The daily updates (C96) ensure data currency. This infrastructure enables chemical queries that would otherwise be impossible in Wikidata.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "Current LOTUS data remains imperfect and partially biased due to publication practices emphasizing novel/bioactive compounds and overrepresentation of ubiquitous bioactive compounds. While data provides reasonable approximation for well-studied organisms like Arabidopsis thaliana, it remains patchy for many organisms. Community participation through LOTUS and Wikidata editing opportunities is essential for achieving better documentation of NP occurrences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The acknowledgment of data imperfections and biases (C149-C151) is scientifically honest and supported by citations. The assessment of current data quality (C156-C157) is realistic. The emphasis on community participation (C158-C160) as the solution is appropriate given the scale of the challenge and the platform's capabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "Researchers worldwide acknowledge limitations caused by unavailability of essential raw data. LOTUS data is open with a clear CC0 license, addressing the major impediment of closed data to scientific advancement. The lack of progress in data sharing is partly due to classical publication formats that complicate or discourage sharing. Raw data (spectroscopic, instrumental measurements, calculations) are valued but disseminated by few. Better acknowledgment of data preparation and reuse efforts is needed in academia, government, and industry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims about the importance of open data (C163-C169) are well-supported by citations. The CC0 license for LOTUS (C164) represents a concrete commitment to openness. The analysis of barriers to data sharing (C166-C167) is insightful. The call for better recognition of data work (C169) is supported by citations and represents an important cultural issue in science.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185"
+    ],
+    "result": "Observing chemical and biological diversity at various granularities offers new insights. Documenting chemical taxonomies for Wikidata entries is important but complex, requiring addressing stability and coverage issues first. Existing chemical taxonomies (ChEBI, ClassyFire, NPClassifier) evolve steadily, necessitating constant tool updates. Efforts to automate inclusion of Wikidata structures into chemical ontologies exploit SMILES and SMARTS properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The value of multi-granularity analysis (C179) is demonstrated by Figure 7\u2014figure supplement 1. The challenges in documenting chemical taxonomies (C180-C181) are honestly acknowledged. The dynamic nature of chemical classification systems (C182) is a real issue requiring ongoing maintenance (C183). The automated ontology work (C184-C185) represents progress toward addressing these challenges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190"
+    ],
+    "result": "Repositioning natural products within their biosynthetic context is a major research challenge. LOTUS dissemination through Wikidata will facilitate integration with biological pathway knowledge bases like WikiPathways. In ecology, molecular traits are gaining attention, and LOTUS can help associate classical plant traits with organisms and compare them with associated chemicals. Biogeography data from GBIF could be exploited to study 'chemodiversity hotspots'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C186-C190) describe important research directions and potential applications. The biosynthetic context challenge (C186) is real. The potential for integration with WikiPathways (C187) is plausible and supported by citations. The ecological applications (C188-C190) are promising but remain prospective. Actual realization requires future work beyond the current LOTUS implementation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196"
+    ],
+    "result": "Other NP-related information remains poorly formatted, particularly traditional medicine knowledge, which represents a fascinating yet underutilized body of information. The pharmacology and toxicology literature on natural products is compound-centric, steadily increasing, and scattered but highly relevant for human health. LOTUS represents a potential framework for valuing and conserving traditional medicine information in the digital era, with transformative value for traditional medicine advancement and drug discovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The assessment of traditional medicine data as poorly formatted (C191-C193) is reasonable. The characterization of pharmacology/toxicology literature (C194) is accurate. However, the claims about LOTUS's transformative value for traditional medicine (C195-C196) are prospective and speculative. While the potential exists, actual realization requires significant additional work in data integration and curation beyond the current scope.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C215",
+      "C216",
+      "C217",
+      "C218",
+      "C219"
+    ],
+    "result": "LOTUS data is already accessible by third-party projects built on Wikidata (SLING, Plant Humanities Lab) and has been integrated into PubChem. All underlying resources represent data in multidimensional space as interconnected graphs. Federated queries allow navigation of these graphs, and interfaces like RDFFrames will facilitate machine learning approaches for automated reasoning on knowledge graphs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The integration with third-party projects (C215) and PubChem (C216) demonstrates real-world adoption and utility. The graph-based data representation (C217) is inherent to the RDF/Wikidata model. The power of federated queries (C218) is supported by citations. The potential for machine learning applications (C219) is plausible though prospective.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C220",
+      "C221",
+      "C222",
+      "C223",
+      "C224"
+    ],
+    "result": "The LOTUS initiative aims to make more and better data available. While efforts were made to ensure high data quality, the current pipeline still removes many correct entries and misses or induces some incorrect ones. The project paves the way for an open, durable, and expandable electronic NP resource. The design reflects conviction that integration of NP research results requires a truly open and FAIR approach with high-quality data flowing from source to public knowledge bases. LOTUS has potential to fuel a virtuous cycle of research habits and contribute to better understanding of Life and its chemistry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The honest acknowledgment of current limitations (C221) while maintaining the vision (C220, C222) is appropriate. The philosophical foundation (C223) is clearly articulated and implemented through the technical choices made. The aspirational claim about impact (C224) is reasonable given the infrastructure created, though actual realization depends on community adoption and future developments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C244",
+      "C245"
+    ],
+    "result": "Integration of multiple knowledge sources (genetics for NP-producing gene clusters, taxonomies, occurrence databases) opens opportunities to understand whether an organism biosynthesizes a natural product or merely contains it. This understanding is crucial for chemotaxonomy and for determining the role of microorganisms (endosymbionts) in host development and NP expression potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C244-C245) describe an important research direction supported by a citation (C244). The scientific question is valid and important for the field. However, this represents future research potential rather than current LOTUS capabilities. The integration of genetic data with LOTUS would require substantial additional work beyond the current implementation.",
+    "result_type": "MINOR"
+  }
+]

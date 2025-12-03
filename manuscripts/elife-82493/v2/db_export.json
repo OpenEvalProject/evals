@@ -1,0 +1,1781 @@
+{
+  "submission": {
+    "id": "1404fcdf-b7c6-49fb-a8ed-62a420539dbc",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T16:30:58.156269Z",
+    "updated_at": "2025-12-03T16:30:58.156269Z"
+  },
+  "content": [
+    {
+      "id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "submission_id": "1404fcdf-b7c6-49fb-a8ed-62a420539dbc",
+      "content_type": "manuscript",
+      "content_text": "# Quantifying how post-transcriptional noise and gene copy number variation bias transcriptional parameter inference from mRNA distributions\n\n## Authors\n\n- Xiaoming Fu<sup>1</sup> ([ORCID: 0000-0003-4073-9822](https://orcid.org/0000-0003-4073-9822))\n- Heta P Patel<sup>4</sup> ([ORCID: 0000-0002-1618-951X](https://orcid.org/0000-0002-1618-951X))\n- Stefano Coppola<sup>4</sup>\n- Libin Xu<sup>1</sup>\n- Zhixing Cao<sup>1</sup> ([ORCID: 0000-0003-2600-5806](https://orcid.org/0000-0003-2600-5806)) \u2020\n- Tineke L Lenstra<sup>4</sup> ([ORCID: 0000-0002-4440-9962](https://orcid.org/0000-0002-4440-9962)) \u2020\n- Ramon Grima<sup>2</sup> ([ORCID: 0000-0002-1266-8169](https://orcid.org/0000-0002-1266-8169)) \u2020\n\n### Affiliations\n\n1. Key Laboratory of Smart Manufacturing in Energy Chemical Process, East China University of Science and Technology Shanghai China ([ROR:01vyrm377](https://ror.org/01vyrm377))\n2. School of Biological Sciences, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))\n3. Center for Advanced Systems Understanding, Helmholtz-Zentrum Dresden-Rossendorf G\u00f6rlitz Germany ([ROR:01zy2cs03](https://ror.org/01zy2cs03))\n4. The Netherlands Cancer Institute, Oncode Institute, Division of Gene Regulation Amsterdam Netherlands ([ROR:01n92vv28](https://ror.org/01n92vv28))\n\n\u2020 Corresponding author\n\n## Abstract\n\nTranscriptional rates are often estimated by fitting the distribution of mature mRNA numbers measured using smFISH (single molecule fluorescence in situ hybridization) with the distribution predicted by the telegraph model of gene expression, which defines two promoter states of activity and inactivity. However, fluctuations in mature mRNA numbers are strongly affected by processes downstream of transcription. In addition, the telegraph model assumes one gene copy but in experiments, cells may have two gene copies as cells replicate their genome during the cell cycle. While it is often presumed that post-transcriptional noise and gene copy number variation affect transcriptional parameter estimation, the size of the error introduced remains unclear. To address this issue, here we measure both mature and nascent mRNA distributions of GAL10 in yeast cells using smFISH and classify each cell according to its cell cycle phase. We infer transcriptional parameters from mature and nascent mRNA distributions, with and without accounting for cell cycle phase and compare the results to live-cell transcription measurements of the same gene. We find that: (i) correcting for cell cycle dynamics decreases the promoter switching rates and the initiation rate, and increases the fraction of time spent in the active state, as well as the burst size; (ii) additional correction for post-transcriptional noise leads to further increases in the burst size and to a large reduction in the errors in parameter estimation. Furthermore, we outline how to correctly adjust for measurement noise in smFISH due to uncertainty in transcription site localisation when introns cannot be labelled. Simulations with parameters estimated from nascent smFISH data, which is corrected for cell cycle phases and measurement noise, leads to autocorrelation functions that agree with those obtained from live-cell imaging.\n\n## Introduction\n\nTranscription in single cells occurs in stochastic bursts (Suter et al., 2011; Larsson et al., 2019). Although the first observation of bursting occurred more than 40 years ago (McKnight and Miller, 1977), the precise mechanisms behind this phenomenon are still under active investigation (Nicolas et al., 2017; Tunnacliffe and Chubb, 2020). The direct measurement of the dynamic properties of bursting employs live-cell imaging approaches, which allow visualization of bursts as they occur in living cells (Donovan et al., 2019). However, in practice, such live-cell measurements are challenging because they are low-throughput and require genome-editing (Brouwer et al., 2020; Lenstra and Larson, 2016). To circumvent this, one can exploit the fact that bursting creates heterogeneity in a population. In this case, it is relatively straightforward to obtain a steady-state distribution of the number of mRNAs per cell from smFISH or single-cell sequencing experiments. These distributions have been used to infer dynamics by comparison to theoretical models. The simplest mathematical model describing bursting is the telegraph (or two-state) model (Peccoud and Ycart, 1995; Raj et al., 2006). In this model, promoters switch between an active and inactive state, where initiation occurs during the active promoter state. The model makes the further simplifying assumption that the gene copy number is one and that all the reactions are effectively first-order. The mRNA in this model can be interpreted as cellular (mature) mRNA since its removal via various decay pathways in the cytoplasm is known to follow single-exponential (first-order) decay kinetics in eukaryotic cells (Wang et al., 2002; Herzog et al., 2017). The solution of the telegraph model for the steady-state distribution of mRNA numbers has been fitted to experimental mature mRNA number distributions to estimate the transcriptional parameters (Raj et al., 2006; Kim and Marioni, 2013; Suter et al., 2011; Larsson et al., 2019).\n\nHowever, the reliability of the estimates of transcriptional parameters from mRNA distributions is questionable because the noise in mature mRNA (and consequently the shape of the mRNA distribution) is affected by a wide variety of factors. Recent extensions of the telegraph model have carefully investigated how mRNA fluctuations are influenced by the number of promoter states (Zhou and Zhang, 2012; Ham et al., 2020b), polymerase dynamics (Cao et al., 2020), cell-to-cell variability in the rate parameter values (Dattani and Barahona, 2017; Ham et al., 2020a), replication and binomial partitioning due to cell division (Cao and Grima, 2020), nuclear export (Singh and Bokes, 2012) and cell cycle duration variability (Perez-Carrasco et al., 2020). One way to avoid noise from various post-transcriptional sources is to measure distributions of nascent mRNA rather than mature mRNA, and then fit these to the distributions predicted by an appropriate mathematical model. A nascent mRNA (Zenklusen et al., 2008; Larson et al., 2009) is an mRNA that is being actively transcribed, that is it is still tethered to an RNA polymerase II (Pol II) moving along a gene during transcriptional elongation. Fluctuations in nascent mRNA numbers thus directly reflect the process of transcription. Because nascent mRNA removal is not first-order, an extension of the telegraph model has been developed (the delay telegraph model) (Xu et al., 2016).\n\nHowever, nascent mRNA data still suffers from other sources of noise due to cell-to-cell variability. For example in an asynchronous population of dividing cells, cells can have either one or two gene copies. In the absence of a molecular mechanism that compensates for the increase in gene copy number upon replication, cells with two gene copies which cannot be spatially resolved will have a different distribution of nascent mRNA numbers (one with higher mean) than cells with one gene copy. The importance of the cell cycle is illustrated by the finding (Zopf et al., 2013) that noisy transcription from the synthetic TetO promoter in S. cerevisiae is dominated by its dependence on the cell cycle. The estimation of transcriptional parameters from nascent mRNA data for pre- and post-replication phases of the cell cycle has, to the best of our knowledge, only been reported in Skinner et al., 2016.\n\nInterestingly, all the studies that estimate transcriptional parameters from nascent mRNA data (Skinner et al., 2016; Xu et al., 2015; Zoller et al., 2018; Senecal et al., 2014; Fritzsch et al., 2018) do not compare them with transcriptional parameters estimated from cellular (mature) mRNA data measured in the same experiment. Similarly, a quantitative comparison between inference from cell-cycle-specific data and data which contains information from all cell cycle phases is lacking. Likely, this is because it is considered evident that quantifying fluctuations earlier in the gene expression process and adjusted for the cell-cycle will improve estimates. However, nascent mRNA distributions are technically more challenging to acquire than mature mRNA distributions; and inference from nascent mRNA distributions is substantially more complex (Xu et al., 2016). Thus, it still needs to be shown that acquiring nascent mRNA data is a necessity from a parameter inference point of view, i.e. that it leads to significantly different and more robust estimates than using mature mRNA data. We also note that current studies report parameter inference from organisms where it is possible to label introns to identify mRNA located at the transcription site. This is not possible in many yeast genes and other microorganisms, and in these cases it is unclear how to correct parameter estimates for uncertainty in the transcription site location.\n\nIn this paper, we sought to understand the precise impact of post-transcriptional noise and cell-to-cell variability on the accuracy of transcriptional parameters inferred from mature mRNA data. The fitting algorithms (for mature and nascent mRNA data) were first tested on simulated data, where limitations of the algorithms were uncovered in accurately estimating the transcriptional parameters in certain regions of parameter space. The algorithms were then applied to four independent experimental data sets, each measuring GAL10 mature and nascent mRNA data from smFISH in galactose-induced budding yeast, conditional on the stage of the cell cycle (G1 or G2) for thousands of cells. Comparison of the transcriptional parameter estimates allowed us to separate the influence of ignoring cell cycle variability from that of post-transcriptional noise (mature vs nascent mRNA data). We found that only fitting of nascent cell-cycle data, corrected for measurement noise (due to uncertainty in the transcription site location), provided good agreement with measurements from live-cell data. Cell-cycle specific analysis also revealed that upon transition from G1 to G2, yeast cells show dosage compensation by reducing burst frequency, similar to mammalian cells (Padovan-Merhar et al., 2015). Our systematic comparison highlights the challenges of obtaining kinetic information from static data, and provides insight into potential biases when inferring transcriptional parameters from smFISH distributions.\n\n## Results\n\n### Inference from mature mRNA data vs inference from nascent mRNA data: testing inference accuracy using synthetic data\n\nTo understand the accuracy of the inference algorithms from nascent and mature mRNA data, in various regions of parameter space, (i) we generated synthetic data using stochastic simulations with certain known values of the parameters; (ii) applied the inference algorithms to estimate the parameters from the synthetic data; (iii) compared the true and inferred kinetic parameter values.\n\nThe generation of synthetic mature mRNA data (mature mRNA measurements in each of 104 cells) using stochastic simulations of the telegraph model (Figure 1a) is described in Methods Sections Mathematical model and Generation of synthetic mature mRNA data. The inference algorithm is described in detail in Methods Section Steps of the algorithm to estimate parameters from mature mRNA data. It is based on a maximization of the likelihood of observing the single cell mature mRNA numbers measured in a population of cells. The likelihood of observing a certain number of mature mRNA numbers from a given cell is given by evaluating the telegraph model\u2019s steady-state mature mRNA count probability distribution.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/82493/elife-82493-fig1-v2.jpg)\n\n**Figure 1.:** (a) A schematic illustration of the telegraph model. (b). A schematic of the delay telegraph model. The double horizontal line for nascent mRNA removal indicates this is a delayed reaction. (c) Illustration showing promoter switching between two states, Pol II binding to the promoter in the ON state and subsequently undergoing productive elongation. Note that the length of the nascent mRNA tail increases until Pol II terminates at the end of the gene. As Pol II travels through the 14 repeats of the PP7 loops, the intensity of the mRNA increases due to fluorescent probe binding to the mRNA; intensity saturates as Pol II enters the GAL10 gene body. (d) Illustration of the algorithms to generate synthetic data and to perform inference from mature and nascent mRNA data. The green boxes are only applicable for the inference of the fluorescence signal intensity of nascent mRNAs; note that in nascent mRNA inference, the \"RNA number\" in the flow chart should be interpreted as the number of bound Pol II molecules on the gene. A large iteration step $N_{max}$ ($\\geq10^{4}$) is chosen as the termination condition for the optimizer.\n\nFor nascent RNA data, we used stochastic simulations of the delay telegraph model (Figure 1b) to generate the position of bound Pol II molecules from which we constructed the synthetic smFISH signal in each of 104 cells (Methods Section Generation of synthetic nascent mRNA data). An inference algorithm estimates the parameters, based on a maximization of the likelihood of observing the single cell total fluorescence intensity measured in a population of cells (Methods Section Steps of the algorithm to estimate parameters from nascent mRNA data). Note that the likelihood of observing a certain fluorescence signal intensity from a cell is given by extension of the delay telegraph model (but not directly by the delay telegraph model itself) to account for the smFISH probe positions.\n\nThis extension takes into account that the experimental fluorescence data used in this manuscript was acquired from smFISH of PP7-GAL10 in budding yeast, where probes were hybridized to the PP7 sequences. Because the PP7 sequences are positioned at the 5\u2019 of the GAL10 gene, the fluorescence intensity of a single mRNA on the DNA locus resembles a trapezoidal pulse (see Figure 1 for an illustration). As the Pol II molecule travels through the 14 repeats of the PP7 loops, the fluorescence intensity increases as the fluorescent probes binds to the nascent mRNA (this is the linear part of the trapezoidal pulse). However, once all 14 loops on the nascent mRNA are bound by the fluorescent probes, the intensity of a single mRNA reaches maximal intensity and the plot plateaus as the RNA elongates through the GAL10 gene body before termination and release. The total fluorescent signal density function is hence given by\n\n$$\np(s;\\theta)=\\sumk=0\u221ep(s|k)P(k;\\theta),\n$$\n\nwhere $p\u2062(s|k)$ is the density function of the signal $s$ given there are $k$ bound Pol II molecules and $P\u2062(k;\\theta)$ is the steady-state solution of the delay telegraph model giving the probability of observing $k$ bound Pol II molecules for the parameter set $\\theta$. In Methods Section Mathematical model, we show how $p\u2062(s|k)$ can be approximately calculated for the trapezoidal pulse. Hence Equation (1) represents the extension of the delay telegraph model to predict the smFISH fluorescent signal of the transcription site. Note that both of these inference algorithms were used to infer the promoter switching and initiation rate parameters. The degradation rate and the elongation time were not estimated but assumed to be known. The inference and synthetic data generation procedures are summarised and illustrated in Figure 1d.\n\nThe accuracy of inference was first calculated as the mean of the relative error in the estimated parameters $\\sigma_{off},\\sigma_{on}$, and $\u03c1$ (for its definition see Methods, Equation (6)); note that this error measures deviations from the known ground truth values. Figure 2a shows, by means of a 3D scatter plot, the ratio of the mean relative error from nascent mRNA data (using delay telegraph model) and the mean relative error from mature mRNA data (using the telegraph model) for 789 independent parameter sets sampled on a grid (for each of these sets, we simulated 104 cells). The overall bluish hue of the plot suggested that the mean relative error from nascent mRNA data was typically less than the error from mature mRNA data. This was confirmed in Figure 2b where the same data was plotted but now as a function of the fraction of ON time (defined as $f_{ON}=\\sigma_{on}/(\\sigma_{off}+\\sigma_{on})$). Out of 789 parameter sets, for 483 of them ($\u224861%$) the inference accuracy was higher when using nascent mRNA data.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/82493/elife-82493-fig2-v2.jpg)\n\n**Figure 2.:** (a) 3D scatter plot showing the ratio of the mean relative error from nascent mRNA data (using delay telegraph model $MRE_{delay}$) and the mean relative error from mature mRNA data (using the telegraph model $MRE_{tele}$) for 789 independent parameter sets sampled on a grid. Red data points indicate parameter sets with lower relative errors for mature data compared to nascent data, blue datapoints indicate parameter sets with lower relative error for nascent data compared to mature data (b) Same data as (a) but shown as a function of the fraction of ON time, $f_{ON}$. For $\u224861%$ of the parameters, the inference accuracy is higher when using nascent mRNA data. (c) Sampling from the same parameter space, we then add log-normal distributed noise (size 5%) to the initiation rate $\u03c1$ (see text for details) to mimic external noise due to post-transcriptional processing that is only present in mature mRNA. Log10 of the ratio of the median relative error (MRE) using perturbed mature mRNA data against Log10 MRE using nascent mRNA data is shown as a function of the true fraction of ON time, $f_{ON}$. For $\u224864%$ of the parameters, the inference accuracy is higher when using nascent mRNA data. (d) The median relative error of each transcriptional parameter as a function of the fraction of ON time, using synthetic nascent mRNA, synthetic mature mRNA data and synthetic mature mRNA with external noise. Inference from nascent data is generally more accurate than using mature mRNA data.\n\nThus far, we have implicitly assumed that fluctuations in both nascent and mature mRNA are due to transcriptional bursting. However, it is clear that mature mRNA data exhibit a higher degree of noise due to post-transcriptional processing. For example, it has been shown that transcriptional noise is typically amplified during mRNA nuclear export (Hansen et al., 2018). In addition, cell-to-cell variation in the number of nuclear pore complexes has recently been identified as the source of heterogeneity in nuclear export rates within isogenic yeast populations (Durrieu et al., 2022). To take into account these additional noise sources, which we call external noise, we added noise to the initiation rate $\u03c1$ in the telegraph model since this rate implicitly models all processes between the synthesis of the transcript and the appearance of mature mRNA in the cytoplasm. Specifically, for each of the 789 parameter sets previously used, we changed $\u03c1$ to $\u03c1^{\u2032}$ where the latter is a log-normal distributed random variable such that its mean is $\u03c1$ and its standard deviation is equal to 0.05 of the mean (5% external noise). Note that this implies that at the time of measurement, each cell in the population had a different value of the initiation rate. Simulations with this perturbed set of parameters led to a synthetic mature mRNA data set from which we re-inferred parameters using the telegraph model. In Figure 2c we show the ratio of mean relative error from nascent mRNA data and the mean relative error from perturbed mature mRNA data as a function of the fraction of ON time, $f_{ON}$. The percentage of parameters where nascent mRNA is more accurate is slightly increased compared to the data without noise (64% versus 61% of the parameters; compare Figure 2c and Figure 2b). However, the addition of even more noise (10% external noise added to the initiation rate) increases the inference accuracy for 91% of the parameter sets when the nascent mRNA data is used (Appendix 1 and Appendix 1\u2014figure 1).\n\nTo obtain more insight into the accuracy of the individual parameters, we next plotted the median relative error of transcriptional parameters $\\sigma_{off},\\sigma_{on},\u03c1$, burst size and the inferred fraction of ON time, as a function of the true fraction of ON time (Figure 2d). We compared the results using synthetic nascent mRNA, synthetic mature mRNA data and synthetic mature mRNA with 5% external noise. The median of the relative error for each transcriptional parameter (as given by the second equation of Equation 8) was obtained for the subset of the 789 parameter sets for which the true fraction of ON time $f_{ON}$ falls into the interval $[x-0.05,x+0.05]$ where $x=0.1,0.2,\u2026,0.9$. From the plots, the following can be deduced: (i) the errors in $\\sigma_{on}$ (the burst frequency), $\\sigma_{off}$ and the burst size $\u03c1/\\sigma_{off}$ tend to increase with $f_{ON}$ while the rest of the parameters ($\u03c1$ and the estimated value of $f_{ON}$) decrease; (ii) for small $f_{ON}$, the best estimated parameters are the burst frequency and size while for large $f_{ON}$, it was $\u03c1$ and the estimated value of $f_{ON}$. The worst estimated parameter was $\\sigma_{off}$, independent of the value of $f_{ON}$; (iii) the addition of external noise to mature mRNA data had a small impact on inference for small $f_{ON}$; in contrast, for large $f_{ON}$ the noise appreciably increased the relative error in $\\sigma_{off}$ and to a lesser extent the error in the other parameters too.\n\nAdditionally, in Appendices 1 and 2 we show that (i) independent of the accuracy of parameter estimation, the best fit distributions accurately matched the ground truth distributions (Appendix 1 and Appendix 1\u2014figure 2); (ii) the parameters ordered by relative error were in agreement with the parameters ordered by sample variability (Appendix 1 and Appendix 1\u2014table 1) and by profile likelihood error (Kreutz et al., 2013) (Appendix 1, Appendix 1\u2014tables 2 and 3). Since from experimental data, only the sample variability and the profile likelihood error are available, it follows that the results of our synthetic data study in Figure 2 based on relative error from the ground truth have wide practical applicability; (iii) stochastic perturbation of the mature or nascent mRNA data (due to errors in the measurement of the number of spots and the fluorescent intensity) had little effect on the inference quality, unless the gene spent a large proportion of time in the OFF state (Appendix 1\u2014tables 4 and 5); (iv) if one utilized the conventional telegraph model to fit the nascent data generated by the delay telegraph model, it was possible to obtain a distribution fitting as good as the delay telegraph model but with low-fidelity parameter estimation (Appendix 2, Appendix 2\u2014figure 1 and Appendix 2\u2014table 1). Analytically, the telegraph model is only an accurate approximation of the delay telegraph model when the promoter switching timescales are much longer than the time spent by Pol II on a gene or the off switching rates are very small such that gene expression is nearly constitutive.\n\nIn summary, by means of synthetic experiments, we have clarified how the accuracy of the parameter inference strongly depends on the type of data (nascent or mature mRNA) and the fraction of time spent in the ON state (which determines the mode of gene expression).\n\n### Applications to experimental yeast mRNA data\n\nNow that we have introduced the inference algorithms and tested them thoroughly using synthetic data, we applied the algorithms to experimental data (see Method Section Experimental data acquisition and processing for details of the data acquisition). Note that in what follows, delay telegraph model refers to the extended delay telegraph model that accounts for the smFISH probe positions that was used to predict the smFISH fluorescent signal of the transcription site.\n\n#### Inference from mature mRNA data: experimental artifacts\n\nWe have four independent datasets from which we determined mRNA count and nascent RNA distributions. Figure 3a shows an example cell with mature single RNAs in the cytoplasm, and a bright nuclear spot representing the site of nascent transcription. Spots and cell outlines were identified using automated pipelines. Importantly, to obtain an accurate estimation of transcriptional parameters, the experimental input distributions of mRNA count and nascent RNAs require high accuracy. We therefore first determined how technical artifacts in the analysis affects the inference estimates.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/82493/elife-82493-fig3-v2.jpg)\n\n**Figure 3.:** (a) Representative smFISH image of a yeast cell with PP7-GAL10 RNAs labeled with Cy3 and the nucleus labeled with DAPI. (b) The DAPI and Cy3 signals were used to determine the nuclear and cellular mask, respectively. Detected and fitted spots are indicated in green. Mature RNA count distribution (pink) for segmentation method 1 with a best fit obtained from the telegraph model (gray curve). Scale bar is 5 \u03bcm(c-d) The DAPI and Cy3 signals were used to determine the nuclear and cellular mask using a second independent segmentation tool (segmentation 2). Mature RNA count distribution (gray and cyan) with/without counting the transcription site (TS) for segmentation method 2 with a best fit obtained from the telegraph model (gray curves). (e) Bar graphs of inferred transcriptional parameters (merged mature RNA data) from fitting the distributions of the two segmentation methods (\u2018seg1\u2019 and \u2018seg2\u2019) as well as the distribution of mature RNAs only (\u2018seg2 -TS\u2019 which indicates the exclusion of one spot in each cell that represents the transcription site). The burst size was computed as $\u03c1/\\sigma_{off}$ and the fraction of ON time as $\\sigma_{on}/(\\sigma_{on}+\\sigma_{off})$. Error bars indicate standard deviation computed over the four datasets. (f) Distribution of the integrated DAPI intensity for each cell. Cyan line represents a Gaussian bimodal fit with highlighted regions indicating the intensity-based classification of G1 and G2 cells. Distributions of the mature RNA count for all cells (merged) and cell-cycle classified cells (G1 cells and G2 cells). (g) Tables and bar graphs of inferred parameters for merged and cell-cycle-specific data. Note that the transcriptional parameters $\\sigma_{on},\\sigma_{off},\u03c1$ are normalised by the degradation rate and hence dimensionless. For the cell-cycle-specific data, parameters were inferred per gene copy.\n\nFirst, if the number of mRNA transcripts per cell is high, accurate determination of the number of transcripts may be challenging, as transcripts may overlap. To determine if this occurred in our datasets, we analyzed the distributions of intensities of the cytoplasmic spots, which revealed unimodal distributions where \u223c90% of the detected spots fell in the range 0.5\u00d7 median \u2013 1.5\u00d7 median (Figure 4a). We therefore concluded that overlapping spots are not a large confounder in our data. In fact, in our experiments, the number of detected mature mRNA transcripts per cell was lower than expected, based on the number of nascent transcripts (compare Figure 3 with Figure 4). This discrepancy between nascent and mature transcripts likely arises because the addition of the PP7 loops to the GAL10 RNA destabilizes the RNA, resulting in faster mRNA turnover compared to most endogenous RNAs (Miller et al., 2011; Wang et al., 2002; Holstege et al., 1998; Geisberg et al., 2014). Previously, both shorter and longer mRNA half-lives from the addition of stem loops have been observed, which may be caused because changes in the 5\u2019 UTR length or sequence affect its recognition by the mRNA degradation machinery (Heinrich et al., 2017; Tutucci et al., 2018; Garcia and Parker, 2015). In our case, we note that such high turnover should aid transcriptional parameter estimates, as it closely reflects transcriptional activity.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/82493/elife-82493-fig4-v2.jpg)\n\n**Figure 4.:** (a) Normalized nascent mRNA distributions of merged cell-cycle data were obtained by normalizing the signal intensity of the transcription site (defined as the brightest spot in the cell) by the median signal intensity of the cytoplasmic spots (shown in orange and zoom-in depicted in the inset). In all 4 datasets, approximately 90% of the detected cytoplasmic spots fell in the range 0.5\u00d7 median \u2013 1.5\u00d7 median (grey bargraph). Black line in normalized distribution on the right represents best fit with delay telegraph model. (b) Nascent RNA distributions for cell-cycle-specific data. Black lines represent best fits with delay telegraph model. (c) Bar graphs comparing the transcriptional parameters, burst size, fraction of ON time and Fano factor for cell-cycle-specific and merged data. Error bars indicate standard deviation of the four datasets. (d) Normalized ACF plots of cell-cycle-specific and merged data. The ACF plots are generated by stochastic simulations using estimated parameters from merged and cell-cycle specific nascent mRNA data for each of the four data sets; these were compared with the ACF measured directly using live-cell data in Donovan et al., 2019 (green line). (e) The sum of squared ACF residuals of merged and cell-cycle-specific data from each dataset (this is the sum of squared deviations between the measured and estimated normalised ACF where the sum was calculated over all time points).\n\nA second possible source of error is cell segmentation. To test how cell segmentation errors contribute to the mature mRNA distribution and the transcriptional bursting estimates, we compared two independent segmentation tools, where segmentation 1 often resulted in missed spots (Figure 3b), resulting in an underestimation of the mean mRNA count and of the variance (compare Figure 3b and c). We inferred the transcriptional parameters using the algorithm described in Methods Section Steps of the algorithm to estimate parameters from mature mRNA data. In the absence of an experimental measurement of the degradation rate, we could only estimate the three transcriptional parameters normalised by $d$. The best fits of dataset 1 are shown in (Figure 3b and c) and the transcriptional parameters (for all four datasets) are summarized in (Figure 3e). Note that the estimated parameters for all four datasets, using both segmentations, are shown in Appendix 3\u2014table 1 and the associated best fit distributions in Appendix 3\u2014figure 1a. Notably the segmentation algorithms led to similar estimates for the burst frequency but considerably different estimates for the rest of the parameters. In particular segmentation 1 suggested that burst expression is infrequent (\u224820% of the time) whereas segmentation 2 was consistent with burst expression occurring half of the time. Given that accurate cell segmentation remains challenging, this analysis illustrates that parameter estimation from mature mRNA counts may be affected by technical errors. For the remainder of the mature mRNA analysis, we have used only segmentation 2 data.\n\nLastly, it may be challenging to distinguish the nascent transcription site from a mature RNA, especially if few nascent RNAs are being produced. Either one can decide to include all cellular spots in the total mRNA count, including the transcription site, with the result that the number of mature transcripts is overestimated with one RNA for cells which show a transcription site. Or conversely, one can decide to exclude the transcription site by subtracting one spot from each cell, with the result that the number of mature mRNAs may be underestimated by one RNA for cells that are transcriptionally silent. To understand how this choice affects the accuracy of parameter inference, we compared both options in (Figure 3c, d and e), where seg2 included all spots, and seg2-TS excluded transcription sites (by subtracting 1 from each cell). The estimated parameters for all four datasets are shown in Appendix 3\u2014table 1 and the associated best fit distributions in Appendix 3\u2014figure 1a. Although the mean was lower when transcription sites were excluded, all the parameters except the burst frequency $\\sigma_{on}$ were within the error, indicating that the choice of whether or not to include the transcription site in the mature mRNA count had a small influence on parameter estimation. For the remainder of the analysis, we included all spots, and counted the transcription site as one RNA.\n\n#### Inference from mature mRNA data: merged versus cell-cycle specific\n\nThe above analysis was performed using the merged data from all cells, irrespective of their position in the cell cycle. The inferred parameters of all four datasets are shown in Figure 3g (grey). To understand the effect of the cell cycle on these parameter estimates, we compared this inference with cell-cycle-specific data. We used the integrated nuclear DAPI intensity as a measure for DNA content to classify cells into G1 or G2 cells (Figure 3f (left)) to obtain separate mature mRNA distributions for G1 and G2 cells.\n\nTo infer the transcriptional parameters from mature mRNA data of cells in G1, the inference protocol remained the same. However for cells in the G2 stage, this protocol needed to be altered since G2 cells have two gene copies, whereas the solution of the telegraph model assumes one gene copy. Assuming the transcriptional activities of the two gene copies are independent, the distribution of the total molecule number is the convolution of the molecule number (obtained from the telegraph model) with itself for mature mRNA data. This convolved distribution was used in steps (ii) and (iii) of the inference algorithm in Methods Section Steps of the algorithm to estimate parameters from mature mRNA data. A difference between our method of estimating parameters in G2 from that in the literature (Skinner et al., 2016) is that we do not assume that the burst frequency is the only parameter that changes upon replication, and we estimated all transcription parameters simultaneously.\n\nNote that the independence of gene copy transcription has been verified for genes in some eukaryotic cells (Skinner et al., 2016) where the two copies can be easily resolved. For yeast data, as we are analyzing in this paper, it is generally not possible to resolve the two copies of the allele in G2 because they are within the diffraction limit. However, in the absence of experimental evidence, the independence assumption is the simplest reasonable assumption that we could make (see later for a relaxation of this assumption).\n\nFor both G1 and G2 cells, we performed inference for cell-cycle specific mature mRNA data, the results of which are shown in Figure 3f (centre and right) and Figure 3g \u2013 see Appendix 3\u2014table 2 for the confidence intervals of the estimates calculated using profile likelihood. As expected, the mean number of mRNAs in G2 cells was larger than that in G1 cells. For both merged and cell-cycle specific data, the parameters ordered by increasing variability of the estimates from independent samples (the standard deviation divided by the mean) were: $\u03c1$, $f_{ON}$, $\\sigma_{ON}$, burst size and $\\sigma_{OFF}$, and the same order was predicted by the relative error (from ground truth values) from our synthetic experiments (compare with $f_{ON}=0.50$ and $f_{ON}=0.80$ in the middle and right panels of Figure 2d) and by sample variability (Appendix 1). In Appendix 3 and Appendix 3\u2014table 3 we show that the relaxation of the assumption of independence between the allele copies in G2 (by instead assuming perfect state correlation of the two alleles) had practically no influence on the inference of the two best estimated parameters ($\u03c1$, $f_{ON}$).\n\nA comparison of the two types of data predicted different behaviour (Figure 3g bottom): merged data indicated behaviour consistent with the gene being ON half of the time and small burst sizes, while cell-cycle-specific data implied the gene is ON \u224880% of the time with large burst sizes. We note that the burst sizes have considerable sample variability, exemplifying burst size estimates of transcriptional parameters from mature mRNA distributions have to be treated with caution. Nevertheless, in line with this high fraction ON and large burst size, which start to approach constitutive expression, the variation introduced by the transcription kinetics is relatively modest with Fano factors not far from one: $2.43\\pm0.21$ for merged data and $1.75\\pm0.45$ for cell-cycle data (the slightly higher value for merged data likely was due to heterogeneity stemming from varying gene copy numbers per cell).\n\nComparing the mean rates between the G1 and G2 phases, we found that $\\sigma_{off}$, $\\sigma_{on}$, $\u03c1$ decreased while $f_{ON}$ and the burst size increased upon replication. However, taking into account the variability in estimates across the four datasets, the only two parameters which were well-separated between the two phases were $\\sigma_{on}$ and $\u03c1$. These two parameters decreased by 65% and 21%, respectively, which suggests that upon replication, there are mechanisms at play which reduce the expression of each copy to partially compensate for the doubling of the gene copy number (gene dosage compensation) (Skinner et al., 2016).\n\nIn conclusion, what is particularly surprising in our analysis is the differences in the inference results using merged and cell-cycle specific data: the former suggests the gene spends only half of its time in the ON state while the latter implies the gene is mostly in its ON state.\n\n### Inference from nascent mRNA data: cell cycle effects, experimental artifacts and comparison with mature mRNA inference\n\n#### Cell-cycle-specific versus merged data\n\nTo determine the number of nascent transcripts at the transcription site, we selected the brightest spot from each nucleus and normalized its intensity to the median intensity of the cytoplasmic spots. As the distribution of intensities of the cytoplasmic mRNAs followed a narrow unimodal distribution, its median likely represents the intensity of a single RNA (orange distribution in the central panel of Figure 4a). The inference of transcriptional parameters using the merged data was done using the algorithm described in Methods Section Steps of the algorithm to estimate parameters from nascent mRNA data.\n\nSimilar to above, to account for two gene copies in G2 cells, we assumed that the transcriptional activities of the two gene copies are independent. The distribution of the total fluorescent signal from both gene copies was the convolution of the signal distribution (obtained from the extended delay telegraph model, i.e. Equation (1)) with itself. This convolved distribution was then used in steps (ii) and (iii) of the inference algorithm.\n\nThe inference of transcriptional parameters from nascent RNA data was done using a fixed elongation time, which was measured previously at a related galactose-responsive gene (GAL3) at $65\u2062bp/s$ (Donovan et al., 2019). Since the total transcript length is $3062\u2062bp$ (see Figure 1c), the elongation time ($\\tau$ in our model) is $\u224847.1\u2062s\u22480.785\u2062 min$. The fixed elongation rate enabled us to infer the absolute values of the three transcriptional parameters $\\sigma_{off},\\sigma_{on}$ and $\u03c1$.\n\nBest fits of the extended delay telegraph model to the distribution of signal intensity of nascent mRNAs at the transcription site are shown in Figure 4a and b for dataset 1; for the other datasets see Appendix 4\u2014figure 1. The corresponding estimates of the transcriptional parameters are shown in Appendix 4\u2014table 1 and also illustrated by bar charts in Figure 4c. The confidence intervals of the transcriptional parameters (computed using the profile likelihood method) are shown in Appendix 4\u2014table 2.\n\nComparing this estimation with that from mature mRNA, we observed that in both cases $f_{ON}\u22480.5$ for merged data and in the range $0.7-0.8$ for cell-cycle-specific data. Also in both cases, the Fano factors of merged data were larger than those of cell-cycle-specific data. Hence, we are confident that not accounting for the cell cycle phase leads to an over-estimation of the time spent in the OFF state and of the Fano factor. In addition, comparing the burst sizes in Figure 3g and Appendix 4\u2014table 1, we found that not taking into account post-transcriptional noise (by using mature mRNA data) led to an lower estimation of the burst size (2.6-fold, 2.6-fold, and 1.1-fold lower for inference from merged, G1 and G2 data, respectively). We note that it would be useful to directly compare the absolute estimates of the other transcriptional parameters from mature and nascent mRNA data. However, this was not possible because the telegraph model only estimates the switching rates and the initiation rate scaled by the degradation rate, and the latter is unknown. On the other hand, the estimates from nascent data were rates multiplied by the average elongation time, which is known and hence the absolute rates can be estimated from nascent mRNA data only. The only quantities that could be directly compared were the burst size and the fraction of ON time, since these are both non-dimensional.\n\nComparing the variability of the parameter estimates, we found that $\u03c1$ and $f_{ON}$ were the parameters with the smallest variability across samples for the nascent data, as for inference from mature data. However, the inferred parameter variability across samples was on average about 2.5-fold lower for nascent data compared to mature mRNA data (this was obtained by computing the standard deviation divided by the mean for each parameter and then averaging over all parameters and over merged, G1 and G2 data). Likely this is because nascent data does not suffer from post-transcriptional noise. Indeed, synthetic experiments suggested that the errors in parameter inference using nascent data are often less than those in mature data when $f_{ON}\u22480.80$ (Figure 2d). In summary, we have more confidence in the parameter estimates from nascent data, in particular those from cell-cycle separated data.\n\nTo further investigate the hypothesis that estimates from cell-cycle-specific data are more accurate than merged data, we compared the estimates from merged and cell-cycle-specific data to previous live-cell transcription measurements of the same gene (Donovan et al., 2019). Because live-cell traces and simulated traces with the estimated transcriptional parameters are difficult to compare directly, we instead compared their normalized autocorrelation functions (ACFs). Specifically, the live-cell traces displayed cell-to-cell variation in overall fluorescent intensities arising from differences in the PP7 coat protein expression level, precluding a direct comparison of the live-cell intensities with the smFISH distributions. The normalized ACFs are normalized per trace and thus can be used to directly compare the kinetics. For this, we fed the parameter estimates to the SSA to generate synthetic live-cell data and then calculated the corresponding ACF (Appendix 5). We found that the estimates from cell-cycle-specific data produced ACFs that match the live-cell data closer than that from the merged data (Figure 4d). This was also clear from the sum of squared residuals which for each dataset was smaller for the ACF computed using the cell-cycle-specific estimates rather than those from merged data (Figure 4e).\n\nUsing nascent data, we also reinvestigated the hypothesis that the gene exhibits dosage compensation. Comparing the mean rates between the G1 and G2 phases, we found that $\\sigma_{off}$, $\\sigma_{on}$, $\u03c1$, $f_{ON}$ decreased while the burst size increased upon replication. However, taking into account the variability in estimates across the four datasets, the only two parameters which were cleanly separated between the two phases were $\\sigma_{on}$ and $f_{ON}$. These two decreased by 41% and 5%, respectively. These results had some similarity to those deduced from cell-cycle separated mature mRNA data (the decrease of $\\sigma_{on}$) but they also displayed differences. Namely, from mature mRNA data it was predicted that $\u03c1$ decreased upon replication while from nascent data we predicted that $\u03c1$ did not change and it was rather $f_{ON}$ that decreased by a small degree. The decrease of the burst frequency $\\sigma_{on}$ after replication has also been reported for some genes in mammalian cells (Skinner et al., 2016; Padovan-Merhar et al., 2015), indicating that this could be a general mechanism for gene dosage compensation. Our results are consistent with a population-based ChIP-seq study (Voichek et al., 2016) that showed DNA dosage compensation after replication in budding yeast. We note that our single-cell analysis only revealed partial dosage compensation, where the mean signal intensity of nascent mRNAs in G2 is not the same as in G1, but 1.7-fold higher in G2 than in G1 (Figure 4c).\n\n#### Correcting for experimental artefacts\n\nAlthough inference on cell cycle separated data outperformed inference on merged data, we noticed that the corresponding best fit distributions did not match well to the experimental signal distributions in the lower bins (Figure 4b and Appendix 4\u2014figure 1). In all cases, the experimental distributions showed high intensities in bins 1, 2, and 3, which was likely an artifact of the experimental data acquisition system. Since we defined the transcription site as the brightest spot, this implies that in the absence of a transcription site, a mature transcript can be misclassified as a nascent transcript. We therefore investigated two methods to correct for this, the \u2018rejection\u2019 method and the \u2018fusion\u2019 method.\n\nThe rejection method removed all data associated with the first $k$ bins of the experimentally obtained histogram of fluorescent intensities (Figure 5a shows the fits for dataset 1; for the other datasets see Appendix 4\u2014figure 2). We found that the parameter estimates varied strongly when the number of bins from which data was rejected ($k$) was changed (Figure 5b; see also Appendix 4\u2014table 3). Although the distributions fit well to the experimental histograms (Appendix 4\u2014figure 1), comparison with the live-cell normalized ACF indicated that the estimates actually became worse than non-curated estimates, with a higher sum of squared residuals (Figure 5c and d). The rejection method therefore does not produce reliable estimates.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/82493/elife-82493-fig5-v2.jpg)\n\n**Figure 5.:** (a) Nascent RNA distributions for cell-cycle-specific and merged data. Black lines represent best fits with delay telegraph model using the rejection method. (only the distributions for dataset #1 $k=4$ are shown). (b) Estimated transcriptional parameters, burst size, fraction of ON time and Fano factor (mean values and standard deviation error bars of the four datasets) by rejecting the first $k$ bins with $k=1,2,3,4$. The estimated parameters are listed in Appendix 4\u2014table 3. (c) Normalized autocorrelation function (ACF) predicted by stochastic simulations using the estimated parameters (for $k=4$) for each of the four data sets versus that measured directly using live-cell data (green line). (d) The sum of squared residuals of the ACF of cell-cycle-specific data from each dataset without/with rejection when $k=4$.\n\nNext, we considered another data curation method which we call the fusion method. This works by setting to zero all fluorescent intensities in a cell population which were below a certain threshold. In other words, we fused or combined the first $k$ bins of the experimentally obtained histogram of fluorescent intensities, thereby taking into account that the true intensity of bin 0 was artificially distributed over some of the first bins.\n\nFigure 6 and Appendix 4\u2014table 4 show that the fusion method led to estimates that varied little with $k$ which enhanced our degree of confidence in them (note that $k=1$ is the same as the uncurated data). The peak at the zero bin for both G1 and G2 was better captured using the fusion method than using non-curated data (compare Figure 4b and Appendix 4\u2014figure 1, with Figure 6b). Comparison to the autocorrelation function of the live-cell data shows that correction with the fusion method also led to improved transcriptional estimates, as indicated by a reduction in the sum of the squared residuals for all four data sets (Figure 6c).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/82493/elife-82493-fig6-v2.jpg)\n\n**Figure 6.:** (a) Estimated burst size, fraction of ON and Fano factor (mean values and standard deviation error bars of the four datasets) by combining the first $k$ bins with $k=1,2,3,4$. (b) Corresponding fitted distributions for G1 (top row) and G2 (bottom row) using delay telegraph model with the fusion method (only the distributions for $k=4$ are shown). Magenta bar represents the combined bin 0\u20133 when $k=4$. (c) Normalised autocorrelation function (ACF) predicted by stochastic simulations using the estimated parameters (for $k=4$) for each of the four data sets versus that measured directly using live-cell data (green line). The sum of squared residuals of the ACF plots using cell-cycle specific data without/with fusion method when $k=4$. (d) Estimated parameters of cell cycle specified data and merged data of nascent mRNAs with fusion method with $k=4$ (fusing bins 0\u20133). These correspond to the fitted distributions in b. The elongation time $\\tau$ is fixed to 0.785 min. See the inferred parameters in Appendix 4\u2014table 4 for all other values of $k$.\n\nOverall, we conclude that for inferring parameters from the smFISH data, the optimal method is to use nascent cell-cycle-specific data, corrected by the fusion method. The optimally inferred parameters for the four data sets in our study are those given in Appendix 4\u2014figure 2d. The profile likelihood estimates of the 95% confidence intervals of these parameters are shown in Appendix 4\u2014table 5. Note that in line with our synthetic data study in Figure 2, the parameters suffering from the least sample variability were $f_{ON}$ and $\u03c1$. The rest of the parameters ($\\sigma_{off},\\sigma_{on}$ and burst size) suffered more sample variability because the fraction of ON time was high; however since their standard deviation divided by the mean (computed over the four datasets) was not high (in the range of 10-20%), they still can be regarded as useful estimates. Note also that the previous prediction that gene dosage compensation involves regulation of the burst frequency did not change upon correction of the nascent data using the fusion method. All these results were deduced assuming that the two copies in G2 are independent from each other. Inferring rates under the opposite assumption of perfectly synchronized copies (Appendix 4\u2014table 6) gave very similar estimates for $\u03c1$ and $f_{ON}$ (to be expected since according to the synthetic data study, these two are the most robustly estimated parameters for genes spending most of their time in the active state) but different estimates for the rest of the parameters. While such perfect synchronization of alleles is unlikely, some degree of synchronization is plausible and further improvement of the transcriptional parameters in the G2 phase will require its precise experimental quantification.\n\n## Discussion\n\nIn this study, we compared the reliability of transcriptional parameter inference from mature and nascent mRNA distributions, with and without taking into account the cell cycle phase. Although these distributions come from the same experiment, we found that the different fits produced very different parameter estimates, ranging from small bursts to very large bursts. Comparison to live-cell data revealed that the optimal inference method is to use nascent mRNA data that is separated by cell cycle.\n\nOur findings illustrate the risk of inferring transcriptional parameters from fitting of mRNA distributions. First of all, as we have shown, these fits are sensitive to the segmentation method which can lead to large errors in the estimates. Secondly, the most common method of parameter inference in the literature is fitting of mature mRNA distributions that are not separated by cell cycle (Larsson et al., 2019; Raj et al., 2006; Zenklusen et al., 2008). Obtaining such distributions is straightforward using methods such as smFISH, where one can directly count the number of mRNAs per cell. Additionally, with the advance of single-cell mRNA sequencing technologies, it is possible to obtain mRNA distributions for many genes simultaneously and it is tempting to use these to estimate bursting behaviour across the genome (Kim and Marioni, 2013; Larsson et al., 2019). However, our comparisons on the same dataset show that the values obtained from mature mRNA fits (using merged data) can be significantly different from the optimal values (using nascent cell-cycle separated data corrected using the fusion method), with underestimation of the burst sizes of almost 10-fold and underestimation of the active fraction of more than 1.5-fold. These results indicate that parameter inference from merged mature mRNA data should be treated with caution. There were smaller differences between the burst size and the active fraction inferred from cell-cycle separated mature and nascent data (only these two can be directly compared because these are non-dimensional); however the relative errors in the estimates (computed over the four datasets) were more than twofold higher for mature data likely due to post-transcriptional noise which nascent data is free from.\n\nIt is more common to fit mature distributions rather than nascent distributions because nascent distributions are technically more challenging to obtain. As nascent single-cell sequencing methods are still in the early phase (Hendriks et al., 2019), the only method available so far for nascent measurements is smFISH (Patel et al., 2021). In such smFISH experiments, intronic probes can be used to specifically label nascent RNA, although there may be some effects of splicing kinetics on the distribution (Wan et al., 2021). If introns are not present, like for most yeast genes, one can use exonic probes instead (Zenklusen et al., 2008). Since exonic probes label both nascent and mature mRNA transcript, it may be challenging to identify the nascent transcription site unambiguously, especially at lower transcription levels. We show in this manuscript that the fusion method can correct for this bias by combining bins below k RNAs, which results in an improvement of the parameter estimates.\n\nOur analysis also emphasizes the importance of separately analyzing G1 and G2 cells (Skinner et al., 2016). It is important to note that for cell-cycle-specific analysis, experimental adjustments or cell-cycle synchronized cultures are not required. Although asynchronous cultures consist of a mix G1, S and G2 cells, the integrated DNA intensity of the nucleus of each cell, for example from a DAPI signal, can be used to separate these cells by cell cycle phase in silico (Skinner et al., 2016; Roukos et al., 2015). As most smFISH experiments already include a DNA-labelled channel, adding an extra analysis step should in principle not limit the incorporation of this step in future smFISH fitting procedures.\n\nEven with our optimal fitting strategy, there is a residual error of the simulated ACF and the measured ACF from live-cell measurements. This difference may be the result of different experimental biases of the two measurements. For example, live-cell measurements have a detection threshold below which RNAs may not be detected. In addition, live-cell measurements include cells in S phase, which are not analyzed in smFISH. There could also be differences in the exact percentage of G1 and G2 cells, or other noise sources between live-cell and smFISH experiments. Alternatively, the fit may be imperfect because there might be parameter sets, others than the ones which our inference algorithm found, which provide an accurate fit of the nascent mRNA distribution and perhaps an even better fit to the ACF than we found. We cannot exclude this possibility because we estimated $f_{ON}$ to be $0.7-0.8$ and using synthetic data we showed that the accuracy of some parameters ($\\sigma_{on},\\sigma_{off}$ and the burst size) deteriorated as $f_{ON}$ approached 1 (Figure 2d). Another factor which could explain the residual error between the simulated ACF and the measured ACF is that perhaps the two-state model may be too simplistic to cover the true promoter states in living cells and may therefore not be able to describe the true in vivo kinetics. The promoter may switch between more than 2 states, or there may be sources of extrinsic noise other than the cell cycle that contribute to the heterogeneity. Previous studies have for example identified extrinsic noise on the elongation rate (Fritzsch et al., 2018). However, these more complex transcription models also have more parameters, which in practice often means that very few will be identifiable with the current set of experimental observations. To fit these models, one requires temporal data on the transcription kinetics (Fritzsch et al., 2018; Rodriguez et al., 2019), or simultaneous measurements of various sources of extrinsic noise, such as single-cell transcription factor concentration and RNA polymerase number measurements, cellular volume, local cell crowding, etc, which are often not available in standard smFISH experiments (Battich et al., 2015; Foreman and Wollman, 2020). Nevertheless, given that there is no explicit time component in smFISH data, the closeness of the simulated ACF to the measured ACF provides confidence we are close to the real values.\n\nThe optimal parameter set (Figure 6d) indicates long ON promoter times of 75 s, during which almost 50 RNAs are produced in a burst. Large burst sizes (>70) have been previously reported for mouse embryonic stem cells (Skinner et al., 2016, mouse hepatocytes Bahar Halpern et al., 2015 and human fibroblasts Larsson et al., 2019). The large burst size and high active fraction of 0.78 suggests that GAL10 expression is reaching its limit of maximal expression, which may not be surprising as it is already one of the most highly expressed genes in yeast. It is also interesting to note that the ON time of 75 s is longer than the residence time of a single transcript (47 s), which means that RNA polymerases in the beginning of a burst have already left the locus before the burst has finished.\n\nThe optimal parameter set (Figure 6d) also indicates partial gene dosage compensation. Specifically the burst frequency per gene copy ($\\sigma_{on}$) in the G2 phase is 0.66 that in the G1 phase; the other transcriptional rates are not significantly different between the two cell cycle phases. The fold change in the burst frequency per gene copy was previously estimated for the $O\u2062c\u2062t\u20624$ and $N\u2062a\u2062n\u2062o\u2062g$ genes to be 0.63 and 0.71 respectively, in mouse embryonic stem cells (Skinner et al., 2016). The similarity of our estimate of the fold change to those previously measured could be explained by the results of a recent study (Jia et al., 2021); using a detailed model of gene expression, it was shown that in the absence of a dependence of the initiation rate on cell volume, gene dosage compensation optimally leads to approximate mRNA concentration homeostasis when the fold change in the burst frequency upon DNA replication is $\\sqrt{2}/2\u22480.71$.\n\nIn conclusion, obtaining kinetic information from static distributions can introduce biases. However, we show that it is possible to obtain reasonable estimates that agree with live-cell measurements, if one infers parameters from nascent mRNA distributions that are accounted for cell cycle phase.\n\n## Methods\n\n### Inference from mature mRNA data\n\n#### Mathematical model\n\nThe steady-state solution of the telegraph model of gene expression (Peccoud and Ycart, 1995) gives mature mRNA distributions. The reaction steps in this model are illustrated in Figure 1a. Next we describe the generation of synthetic mature mRNA data and the algorithm used to infer parameters from this data.\n\n#### Generation of synthetic mature mRNA data\n\nWe generate parameter sets on an equidistant mesh grid laid over the space:\n\n$$\n(\\sigma_{off},\\sigma_{on},\u03c1)\\in[Uniform(0,150),Uniform(0,150),Uniform(0,250)],\n$$\n\nwhere the units are inverse minute. Furthermore we apply a constraint on the effective transcription rate\n\n$$\n\u03c1^=\\frac{\u03c1\\sigma_{on}}{\\sigma_{on}+\\sigma_{off}}<100.\n$$\n\nIn each of the three dimensions of the parameter space, we take 10 points that are equidistant, leading to a total of 1000 parameter sets which reduce to 789 after the effective transcription rate constraint is enforced.\n\nWe additionally fix the degradation rate $d=1$ min-1. Note that we choose not to vary the degradation rate (as we did for the other three parameters) since it is not possible to infer all four rates simultaneously \u2013 this is because the steady-state solution of the telegraph model is a function of the non-dimensional parameter ratios $\u03c1/d,\\sigma_{off}/d$ and $\\sigma_{on}/d$ (Raj et al., 2006).\n\nOnce a set of parameters is chosen, we use the stochastic simulation algorithm (SSA Gillespie, 2007) to simulate the telegraph model reactions in Figure 1a and generate 104 samples of synthetic data. Note that each sample mimicks a single cell measurement of mature mRNA.\n\n#### Steps of the algorithm to estimate parameters from mature mRNA data\n\nThe inference procedure consists of the following steps: (i) select a set of random transcriptional parameters; (ii) use the solution of the telegraph model to calculate the probability of observing the number of mature mRNA measured for each cell; (iii) evaluate the likelihood function for the observed data; (iv) iterate the procedure until the negative log-likelihood is minimized; (v) the set of parameters that accomplishes the latter provides the best point-estimate of the parameters of the telegraph model that describes the measured mature mRNA fluctuations.\n\nFor step (i), we restrict the search for optimal parameters in the following region of parameter space\n\n$$\n(\\sigma_{off},\\sigma_{on},\u03c1)\\in[Uniform(0,250),Uniform(0,250),Uniform(0,300)](min^{-1})=:\u0398.\n$$\n\nThe degradation rate is fixed to $d=1$ min-1.\n\nStep (ii) can be obtained either by computing the distribution from the analytical solution (Peccoud and Ycart, 1995 or by using the finite state projection (FSP) method Munsky and Khammash, 2006). Here, for the sake of computational efficiency, we use the FSP method to compute the probability distribution of mature mRNA numbers.\n\nFor step (iii) we calculate the likelihood of observing the data given a chosen parameter set $\\theta$\n\n$$\nL(\\theta)=\\prodj=1N_{cell}P(n_{j};\\theta),\n$$\n\nwhere $P\u2062(n_{j};\\theta)$ is the probability distribution of mature mRNA numbers obtained from step (ii) given a parameter set $\\theta$, nj is the total number of mature mRNA from cell $j$ and $N_{cell}$ is the total number of cells.\n\nSteps (i) and (iv) involve an optimization problem. Specifically we use a gradient-free optimization algorithm, namely adaptive differential evolution optimizer (ADE optimizer) using BlackBoxOptim.jl (https://github.com/robertfeldt/BlackBoxOptim.jl; Feldt and Stukalov, 2022) within the Julia programming language to find the optimal parameters\n\n$$\n\\theta^{\u2217}=arg\u2061min\u00a0\\theta\\in\u0398(\u2212\\sumj=1N_{cell}log\u2061P(n_{j};\\theta)).\n$$\n\nThe minimization of the negative log-likelihood is equivalent to maximizing the likelihood. Note the optimization algorithm is terminated when the number of iterations is larger than 104; this number is chosen because we have found that invariably after this number of iterations, the likelihood has converged to some maximal value. Note that the inference algorithm is particularly low cost computationally, with the optimal parameter values estimated in at most a few minutes.\n\nOnce the best parameter set $\\theta^{*}$ is found, we calculate the mean relative error (MRE) which is defined as\n\n$$\nMRE=\\frac{1}{M}\\sumi=1MRelative error(\\theta_{i}^{\u2217},\\theta_{true,i}),Relative error(\\theta_{i}^{\u2217},\\theta_{true,i})=\\frac{|\\theta_{i}^{\u2217}\u2212\\theta_{true,i}|}{|\\theta_{true,i}|}\n$$\n\nwhere $\\theta_{i}^{*}$ and $\\theta_{true,i}$ represent the $i$-th estimated and true parameters respectively, and $M$ denotes the number of the estimated parameters. Thus, the mean relative error reflects the deviation of the estimated parameters from the true parameters.\n\n### Inference from nascent mRNA data\n\n#### Mathematical model\n\nThe steady-state solution of the delay telegraph model (Xu et al., 2016) gives the distribution of the number of bound Pol II. In Appendix 6, we present an alternative approach to derive the steady-state solution. The reaction steps are illustrated in Figure 1a.\n\nThe position of a Pol II molecule on the gene determines the fluorescence intensity of the mRNA attached to it. In particular for fluorescence data acquired from smFISH PP7-GAL10, the fluorescence intensity of a single mRNA on the DNA locus looks like a trapezoidal pulse (see Figure 1b for an illustration). This presents a problem because although we can predict the distribution of the number of bound Pol II using the delay telegraph model, we do not have any specific information on their spatial distribution along the gene. However, since the delay telegraph model implicitly assumes that a Pol II molecule has fixed velocity and that Pol II molecules do not interact with each other (via volume exclusion), it is reasonable to assume that in steady-state, the bound Pol II molecules are uniformly distributed along the gene. This hypothesis is confirmed by stochastic simulations of the delay telegraph model where the position of a Pol II molecule is calculated as the product of the constant Pol II velocity and the time since its production.\n\nBy the uniform distribution assumption and the measured trapezoidal fluorescence intensity profile, it follows that the signal intensity of each bound Pol II has the density function $g$ defined by\n\n$$\ng\u2062(s)=\\frac{L_{1}}{L}\u2062\u03c7_{[0,1]}\u2062(s)+\\frac{L_{2}}{L}\u2062\\delta_{1}\u2062(s),s\\in[0,1],\n$$\n\nwhere $L_{1}=862\u2062 bp\u2062(base pairs),L_{2}=2200\u2062 bp,L=L_{1}+L_{2}$ as defined in Figure 1b. The indicator function $\u03c7_{[0,1]}\u2062(s)=1$ if and only if $s\\in[0,1]$ and $\\delta_{1}\u2062(s)$ is the Dirac function at 1. The probability of the signal $s$ being between 0 and 1 is due to the first part of the trapezoid function and hence is multiplied by $L_{1}/L$ which is the probability of being in this region if Pol II is uniformly distributed. Similarly, the probability of $s$ being 1 is due to the L2 part of the trapezoid and hence the probability is $L_{2}/L$ by the uniform distribution assumption. Note that the signal $s$ from each Pol II is at most 1 because in practice, the signal intensity from the transcription site is normalized by the median intensity of single cytoplasmic mRNAs (Zenklusen et al., 2008).\n\nThe total signal is the sum of the signals from each bound Pol II. Hence, the density function of the sum is given by the convolution of the signal densities from each bound Pol II. Defining $p\u2062(s|k)$ as the density function of the signal given there are $k$ bound Pol II molecules, we have that $p\u2062(s|k)$ is the $k$\u2013th convolution power of $g$, that is\n\n$$\np\u2062(s|k)=(g\u2217g\u2062\u22ef\u2217g)\u2062(s)=g^{*k}\u2062(s),g^{*0}\u2062(s)=\\delta_{0}\u2062(s),\n$$\n\nwhere $\\delta_{0}(s)$ is the Dirac function at. Finally we can write the total fluorescent signal density function as\n\n$$\np(s;\\theta)=\\sumk=0\u221ep(s|k)P(k;\\theta),\n$$\n\nwhere $P\u2062(k;\\theta)$ is the steady-state solution of the delay telegraph model giving the probability of observing $k$ bound Pol II molecules for the parameter set $\\theta$. Hence Equation (8) represents the extension of the delay telegraph model to predict the smFISH fluorescent signal of the transcription site.\n\nComparison to the algorithm in Xu et al., 2016. Both algorithms take into account the fact that the signal intensity depends on the position of Pol II on the gene, albeit this is done in different ways. In Xu et al., 2016 a master equation is written for the joint distribution of gene state and the number of nascent mRNA. In this case the number of nascent RNAs can have non-integer values since it represents the experimentally measured signal from the (incomplete) nascent RNA. Solution of this master equation proceeds by (a) a discretization of the continuous nascent mRNA signal into bins which are much smaller than one; (b) solution using finite state projection (FSP). This approach can lead to a large state space which incurs a large computational cost. In contrast, in our method, we use FSP to solve for the delay telegraph model, i.e. the distribution of the discrete number of bound Pol II from which we construct (using convolution) the approximate distribution of the continuous nascent mRNA signal by assuming the Pol II is uniformly distributed on the gene. Since the state space of bound Pol II is typically not large, our method will typically be more computationally efficient than the one described in Xu et al., 2016.\n\n#### Generation of synthetic nascent mRNA data\n\nWe generated synthetic smFISH signal data by using the SSA, modified to include delay to simulate the delay telegraph model (Fu et al., 2022). Specifically, we use Algorithm 2 described in Barrio et al., 2006. One run of the algorithm simulates the fluctuating number of bound Pol II molecules in a single cell.\n\nThe total fluorescence intensity (mimicking smFISH) is obtained as follows. When a particular bound Pol II is produced by a firing of the transcription reaction $G\u2192G+N$, we record this production time; since the elongation rate is assumed to be constant, given the production time we can calculate the position of the Pol II molecule on the gene at any later time and hence using Figure 1b we can deduce the fluorescent signal due to this Pol II molecule.\n\nSpecifically we normalize each transcribing Pol II\u2019s position to $[0,1]$ and map the position to its normalized signal by\n\n$$\nq(x)={x\\frac{L}{L_{1}}x\\in[0,\\frac{L_{1}}{L}],1x\\in[\\frac{L_{1}}{L},1],\n$$\n\nwhere $x$ is the normalized position on the gene. Thus at a given time, the total fluorescent signal from the $n$-th cell (the $n$-th realization of the SSA) equals\n\n$$\nq_{n}=\\sumj=1J_{n}q(x_{j}),\n$$\n\nwhere $J_{n}$ is the number of bound Pol II molecules in the $n$-th cell, and ${x_{j}}$ with $j=1,\u2026,J_{n}$ is the vector of all Pol II positions on the gene. The total signal from each cell is a real number but it is discretized into an integer.\n\nThe kinetic parameters are chosen from the same region of parameter space as in (2), on the same equidistant mesh grid and with the same constraint on the effective transcription rate. Unlike the mature mRNA case, here there is no degradation rate; instead we have the elongation time, which we fix to $\\tau=0.5\u2062 (min)$. Note that fixing this time is necessary since it is not possible to infer the three transcriptional parameters rates and the elongation time simultaneously because the steady-state solution of the delay telegraph model is a function of the non-dimensional parameter ratios $\u03c1\u2062\\tau,\\sigma_{off}\u2062\\tau$ and $\\sigma_{on}\u2062\\tau$.\n\nOnce a set of parameters is chosen, we use the modified SSA (as described above) to simulate the signal intensity in each of 104 cells.\n\n#### Steps of the algorithm to estimate parameters from nascent mRNA data\n\nThe inference procedure is essentially the same as steps (i)-(v) described in mature mRNA inference except for the following points.\n\nIn step (ii), the probability of observing a total signal of intensity $i$ from a single cell is obtained by integrating $p\u2062(s;\\theta)$ in Equation (8) on an interval $[i-1,i]$ for $i\\in\u2115$ which, in our numerical scheme, means\n\n$$\nS(i;\\theta):=\\sumk=0KP(k;\\theta)\\int_{i\u22121}^{i}g^{\u2217k}(x)dx,i=1,2,\u2026\n$$\n\nNote that the integration over the interval of length 1 is to match the discretization of the synthetic data and $\\theta\\in\u0398$. Intuitively, one can always choose a positive integer $K$ such that $P\u2062(k)=0$ for any $k\\geqK$. The computation of the solution of the delay telegraph model $P\u2062(k)$ can be done either using the analytical solution (evaluated using high precision) or using the finite state projection algorithm (FSP) Munsky and Khammash, 2006. In Appendix 6\u2014figure 1 and Appendix 6\u2014table 1, we show that the two methods yield comparable accuracy and CPU time.\n\nFor step (iii) we calculate the likelihood of observing the data given a chosen parameter set $\\theta$\n\n$$\nL(\\theta)=\\prodj=1N_{cell}S(q_{j};\\theta),\n$$\n\nwhere qj is the discretized total signal intensity from cell $j$ and $N_{cell}$ is the total number of cells. In the optimization, we aim to find\n\n$$\n\\theta^{\u2217}=arg\u2061min\u00a0\\theta\\in\u0398(\u2212\\sumj=1N_{cell}log\u2061S(q_{j};\\theta)).\n$$\n\nThe whole procedure (for both mature and nascent mRNA inference) is summarized by a flow-chart in Figure 1c.\n\n### Experimental data acquisition and processing\n\nA diploid yeast strain of BY4743 background with a single integration of 14xPP7 loops at the 5\u2019UTR of GAL10 (strain YTL047 Donovan et al., 2019) was used in this study. Four replicate yeast cultures were grown in synthetic complete media with 2% galactose to early mid-log (OD 0.5), fixed with 5% paraformaldehyde (PFA) for 20 min, permeabilized with 300 units of lyticase and hybridized with 7.5 pmol each of four PP7 probes labeled with Cy3 (Integrated DNA Technologies) as described in Trcek et al., 2012 and Lenstra et al., 2015; Patel et al., 2021, resulting in four technical replicates. The PP7 probe sequences are: atatcgtctgctcctttcta, atatgctctgctggtttcta, gcaattaggtaccttaggat, aatgaacccgggaatactgc. Coverslips were mounted on microscope slides using mounting media with DAPI (ProLong Gold, Life Technologies).\n\nThe coverslips were imaged on a Zeiss AxioObserver (Zeiss, USA) widefield microscope with a Plan-Apochromat 40x1.4 NA oil DIC UV objective and a 1.25 x optovar. For Cy3, a 562 nm longpass dichroic (Chroma T562lpxr), 595/50 nm emission filter (Chroma ET595/50 m) and 550/15 nm LED excitation at full power (Spectra X, Lumencor) were used. For DAPI, a 425 nm longpass dichroic (Chroma T425lpxr) and a 460/50 nm emission filter (Chroma ET460/50 m) and LED excitation at 395/25 nm at 25% power (Spectra X, Lumencor) were used. The signal was detected on a Hamamatsu ORCA-Flash4.0 V3 Digital CMOS camera (Hamamatsu Photonics, Japan). For each sample and each channel, we utilized the Micro-Manager software (UCSF) to acquire at least 20 fields-of-view based on the DAPI channel. Each field-of-view consisted of 13 z-stacks (with a z-step of 0.5 \u00b5m) at 25ms exposure for DAPI and 250ms exposure for Cy3.\n\nA custom python pipeline was used for analysis (https://github.com/Lenstralab/smFISH; Pomp, 2022). Maximum intensity projected images were used to segment the cell and nucleus using Otsu thresholding and watershedding (segmentation 1). In addition, we segmented cells using CellProfiler (segmentation 2). The diffraction-limited Cy3 spots were detected per z-slice using band-pass filtering and refined using iterative Gaussian mask localization procedure (Crocker and Grier, 1996; Thompson et al., 2002; Larson et al., 2005; Larson et al., 2011 and Coulon et al., 2014). Cells in which no spots were detected were excluded from further analysis since a visual inspection indicated that these cells were not properly segmented or were improperly permeabilized.\n\nSpots were classified as nuclear or cytoplasmic and the brightest nuclear spots were classified as transcription sites. The intensity of the brightest nuclear spot in a cell was normalized with the median fluorescence intensity of all the cytoplasmic spots in all cells. This is due to the fact that 90% of cytoplasmic mRNAs are isolated (Figure 4a), thus the median of the fluorescence signal of cytoplasmic mRNAs can be considered as the normalizing value. The distribution of the normalised intensity of the brightest nuclear spot, calculated over the cell population, is the experimental equivalent of the total fluorescent signal density function as given by the solution of the modified delay telegraph model, Equation (8).\n\nThe number of mature mRNA in each cell is given by counting the number of spots in the entire cell, that is nuclear plus cytoplasmic. The transcription site is counted as 1 mRNA, regardless of its intensity. We show in Figure 3c that this has negligible influence on the estimated parameters since the mean number of mature mRNA is much greater than 1. The distribution of the number of spots is the experimental equivalent of the solution of the telegraph model, that is the marginal distribution of mature mRNA numbers in steady-state conditions.\n\nThe integrated nuclear intensity of each cell was calculated by summing the DNA content intensity (DAPI) of all the pixels within the nucleus mask. The distribution of the intensities was fit with a bimodal Gaussian distribution. Those cells whose intensity was within a standard deviation of the mean of the first (second) Gaussian peak was classified as G1 (G2) (see Figure 3e left). This gave similar results to a different cell cycle classication method using the Fried/Baisch model (Johnston et al., 1978) which was recently employed in Skinner et al., 2016. See Appendix 7\u2014figure 1 for a comparison of the two methods. We note that cells in late G2 may contain two separate transcription sites, one in the mother and one in the bud. When the nucleus moves into the bud, buds often contain less DNA than G1 cells, and mothers contain more DNA than G1 cells, both of which are excluded from the analysis. When the DNA content of the mother and daughter is similar, both mother and daughter are counted separately as G1 cells. We note that this late G2 subpopulation is very small.\n\nWe did four independent experiments with a total number of cells equal to 2510, 6411, 4592, 3181, respectively. After classification, the numbers of G1 cells are 766, 2111, 1495, 904 and the number of G2 cells are 683, 1657, 1209, 1143, whereas the rest were classified as undetermined.\n\n### Data availability\n\nThe four smFISH datasets are available from https://osf.io/d5nvj/. These datasets include the maximum intensity projected images, the spot localization results, the nuclear and cellular masks used for merged, G1 and G2 cells and the analyzed results of the mature and nascent data. The analysis code of the smFISH microscopy data is available at https://github.com/Lenstralab/smFISH; Pomp, 2022. The code for the the synthetic simulations and the parameter inference is available at https://github.com/palmtree2013/RNAInferenceTool.jl; Fu, 2022.\n",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "06484aae-9fcb-490e-87f0-e301da1f7971",
+      "submission_id": "1404fcdf-b7c6-49fb-a8ed-62a420539dbc",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Anna Akhmanova, https://ror.org/04pp8hn57 Utrecht University Netherlands\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82493.sa0](https://doi.org/10.7554/eLife.82493.sa0)\n\nThis important paper tackles a core problem in systems biology \u2013 how to quantify kinetic parameters from incomplete and noisy experimental data. The study makes a convincing methodological contribution to the field, and its potential usefulness is demonstrated using experimental data in yeast.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Anna Akhmanova, https://ror.org/04pp8hn57 Utrecht University Netherlands\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82493.sa1](https://doi.org/10.7554/eLife.82493.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\n[Editors' note: this paper was reviewed by Review Commons.]\n\nThank you for submitting your article \"Quantifying how post-transcriptional noise and gene copy number variation bias transcriptional parameter inference from mRNA distributions\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers at Review Commons, and the evaluation at eLife has been overseen by Anna Akhmanova as the Senior Editor in consultation with two of the three original reviewers. We apologize for the delay in coming back to you, which was due to the fact that the reviewers have taken some time to respond.\n\nThe authors made substantial modifications to the text to accommodate reviewer comments and changed the title to better describe their results. The claims are now easier to assess in the context of the existent literature. Additionally, they also modified figures to more explicitly back their claims. Overall, these changes make the manuscript easier to understand.\n\nHowever, there are some remaining issues that need to be addressed, as outlined below:\n\n1. A main concern that remains is the discrepancy between nascent and mature mRNAs. The authors argue that this is presumably due to large mRNA turnover rates, which may be expected when the coat protein is not expressed. First, it would be great if the authors could back up this statement with appropriate references. Second, if I take the inferred transcription rates of ~36mRNA/min and the fraction the gene is on ~0.8, this leads to an effective transcription rate of roughly 30mRNA/min (the elongation delay should only lead to a static delay, but not affect the average amount of mature mRNAs that we observe at steady state). Now, in order to obtain an average steady state of mature mRNA around 10 transcripts (e.g., Fig. 3f), I require the mRNA degradation rate to be around 3min^-1. This would give a half-life of roughly log(2)/3=0.2min, which seems to be exceedingly low. According to literature, mRNA half-lives in yeast are typically in the order of 30min and only for very few mRNAs falls below 10mins (see e.g., Geisberg et al., Cell 2014). If we trust this simple calculation above, that would mean that the mRNA half-live is substantially smaller than the lowest reported values that I could find in the literature. I therefore still worry that there might be an issue with the data/spot extraction. At the very least, I would expect such mismatch and its potential origins to be discussed critically in the paper.\n\n2. The second remaining concern relates to the validation against time-series data. I appreciate that the discussion around the calculation of the ACF has been extended. The authors argue that a comparison between statistics obtained from smFISH and live-cell data is not possible due to a potential detection threshold in the former. But why am I then allowed to compare the autocorrelation function (that is derived from calibration against smFISH data) with the autocorrelation of the live-cell data, which also is a statistic of the same transcriptional process? Or conversely, if it was the case that the mRNA mean and variance don't match between experiments, why should we expect the autocorrelation to match? I would be grateful if the authors could clarify these questions. Moreover, I still believe that the term \"non-stationary effects\" is misleading, since the slowly varying components to the ACF still need to be assumed to be in stationarity in order to capture them by an ACF with just a single time parameter (e.g., the linear fit). Perhaps \"slowly-varying\" would be a better term.\n",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d1592980-f068-4d7b-b70f-fa46dbc9e1e1",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C1",
+      "claim": "Transcriptional rates are often estimated by fitting the distribution of mature mRNA numbers measured using smFISH with the distribution predicted by the telegraph model of gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcriptional rates are often estimated by fitting the distribution of mature mRNA numbers measured using smFISH (single molecule fluorescence in situ hybridization) with the distribution predicted by the telegraph model of gene expression, which defines two promoter states of activity and inactivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about common practice in the field, supported by established knowledge and citations in the broader context.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "29233aac-be46-4740-a897-837991976e94",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C2",
+      "claim": "The telegraph model defines two promoter states of activity and inactivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcriptional rates are often estimated by fitting the distribution of mature mRNA numbers measured using smFISH (single molecule fluorescence in situ hybridization) with the distribution predicted by the telegraph model of gene expression, which defines two promoter states of activity and inactivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the telegraph model's characteristics, representing established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "6d36ad42-3904-49e7-be41-b91db9e4efd9",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C3",
+      "claim": "Fluctuations in mature mRNA numbers are strongly affected by processes downstream of transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "However, fluctuations in mature mRNA numbers are strongly affected by processes downstream of transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known fact about mRNA fluctuations, representing established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "471382be-121e-4a4c-b801-c7c38a132b6f",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C4",
+      "claim": "The telegraph model assumes one gene copy but in experiments, cells may have two gene copies as cells replicate their genome during the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the telegraph model assumes one gene copy but in experiments, cells may have two gene copies as cells replicate their genome during the cell cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a known limitation of the telegraph model and a biological fact about cell cycle.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "5432d060-1b9c-4e41-ae2f-da0c45c76613",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C5",
+      "claim": "Correcting for cell cycle dynamics decreases the promoter switching rates and the initiation rate.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that: (i) correcting for cell cycle dynamics decreases the promoter switching rates and the initiation rate, and increases the fraction of time spent in the active state, as well as the burst size",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "a351e90e-52f3-4dfa-b4ee-5a9fe013226e",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C6",
+      "claim": "Correcting for cell cycle dynamics increases the fraction of time spent in the active state.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that: (i) correcting for cell cycle dynamics decreases the promoter switching rates and the initiation rate, and increases the fraction of time spent in the active state, as well as the burst size",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "7f46be1f-d0ae-4354-a7cd-a587783b3348",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C7",
+      "claim": "Correcting for cell cycle dynamics increases the burst size.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that: (i) correcting for cell cycle dynamics decreases the promoter switching rates and the initiation rate, and increases the fraction of time spent in the active state, as well as the burst size",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "f9682d8b-1993-4932-8e3a-bd7fb2dcafb5",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C8",
+      "claim": "Additional correction for post-transcriptional noise leads to further increases in the burst size.",
+      "claim_type": "EXPLICIT",
+      "source": "(ii) additional correction for post-transcriptional noise leads to further increases in the burst size and to a large reduction in the errors in parameter estimation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "4c82398b-553d-4787-b9fc-642650b7629a",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C9",
+      "claim": "Additional correction for post-transcriptional noise leads to a large reduction in the errors in parameter estimation.",
+      "claim_type": "EXPLICIT",
+      "source": "(ii) additional correction for post-transcriptional noise leads to further increases in the burst size and to a large reduction in the errors in parameter estimation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "70077377-1f3a-49d0-91c7-bb9cb3a1ff87",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C10",
+      "claim": "Simulations with parameters estimated from nascent smFISH data corrected for cell cycle phases and measurement noise leads to autocorrelation functions that agree with those obtained from live-cell imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulations with parameters estimated from nascent smFISH data, which is corrected for cell cycle phases and measurement noise, leads to autocorrelation functions that agree with those obtained from live-cell imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from comparing simulations to experimental live-cell data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "d14a9d74-cd27-41e5-8f36-28b5e99a2757",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C11",
+      "claim": "Transcription in single cells occurs in stochastic bursts.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcription in single cells occurs in stochastic bursts (Suter et al., 2011; Larsson et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "fc5b19b1-6d9e-4305-9bce-c0d1ba9a89d6",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C12",
+      "claim": "The first observation of bursting occurred more than 40 years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the first observation of bursting occurred more than 40 years ago (McKnight and Miller, 1977), the precise mechanisms behind this phenomenon are still under active investigation (Nicolas et al., 2017; Tunnacliffe and Chubb, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to McKnight and Miller, 1977.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "cd41edb7-387e-4736-a1f6-998c017df12a",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C13",
+      "claim": "The precise mechanisms behind transcriptional bursting are still under active investigation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the first observation of bursting occurred more than 40 years ago (McKnight and Miller, 1977), the precise mechanisms behind this phenomenon are still under active investigation (Nicolas et al., 2017; Tunnacliffe and Chubb, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent review articles.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "d1a21b34-3f82-4b99-a2bf-f673b6dc2cca",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C14",
+      "claim": "Live-cell imaging approaches allow visualization of bursts as they occur in living cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The direct measurement of the dynamic properties of bursting employs live-cell imaging approaches, which allow visualization of bursts as they occur in living cells (Donovan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Donovan et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "63691fd0-89c8-4f21-98a5-e0e8fa8d908b",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C15",
+      "claim": "Live-cell measurements are challenging because they are low-throughput and require genome-editing.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in practice, such live-cell measurements are challenging because they are low-throughput and require genome-editing (Brouwer et al., 2020; Lenstra and Larson, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "a40e4265-eed3-4af7-8e4c-18450c4668cc",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C16",
+      "claim": "The telegraph model is the simplest mathematical model describing bursting.",
+      "claim_type": "EXPLICIT",
+      "source": "The simplest mathematical model describing bursting is the telegraph (or two-state) model (Peccoud and Ycart, 1995; Raj et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to foundational papers on the telegraph model.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "574d347c-4f68-4484-9179-de4c673b0968",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C17",
+      "claim": "In the telegraph model, promoters switch between an active and inactive state, where initiation occurs during the active promoter state.",
+      "claim_type": "EXPLICIT",
+      "source": "In this model, promoters switch between an active and inactive state, where initiation occurs during the active promoter state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the basic mechanism of the telegraph model, representing established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "97d66cdb-d35c-419d-bc52-fe80e9ee0c88",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C18",
+      "claim": "The telegraph model makes the simplifying assumption that the gene copy number is one.",
+      "claim_type": "EXPLICIT",
+      "source": "The model makes the further simplifying assumption that the gene copy number is one and that all the reactions are effectively first-order.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a known assumption of the telegraph model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "b89e259e-f2f3-4a0d-a09b-7719ec5fa3b0",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C19",
+      "claim": "The telegraph model assumes that all the reactions are effectively first-order.",
+      "claim_type": "EXPLICIT",
+      "source": "The model makes the further simplifying assumption that the gene copy number is one and that all the reactions are effectively first-order.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a known assumption of the telegraph model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "b42c3d72-2614-47eb-98f3-f7de661112de",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C20",
+      "claim": "mRNA removal via various decay pathways in the cytoplasm follows single-exponential (first-order) decay kinetics in eukaryotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The mRNA in this model can be interpreted as cellular (mature) mRNA since its removal via various decay pathways in the cytoplasm is known to follow single-exponential (first-order) decay kinetics in eukaryotic cells (Wang et al., 2002; Herzog et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "1acd6e65-f998-48fe-8b7d-5dca22d8402b",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C21",
+      "claim": "The solution of the telegraph model for the steady-state distribution of mRNA numbers has been fitted to experimental mature mRNA number distributions to estimate transcriptional parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "The solution of the telegraph model for the steady-state distribution of mRNA numbers has been fitted to experimental mature mRNA number distributions to estimate the transcriptional parameters (Raj et al., 2006; Kim and Marioni, 2013; Suter et al., 2011; Larsson et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "c14b6f90-713c-453d-be97-e3e9c6093548",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C22",
+      "claim": "The reliability of the estimates of transcriptional parameters from mRNA distributions is questionable because the noise in mature mRNA is affected by a wide variety of factors.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the reliability of the estimates of transcriptional parameters from mRNA distributions is questionable because the noise in mature mRNA (and consequently the shape of the mRNA distribution) is affected by a wide variety of factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the complexity of gene expression processes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "7ac789b6-9319-4ece-8b6e-126ee0cdb31c",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C23",
+      "claim": "Recent extensions of the telegraph model have investigated how mRNA fluctuations are influenced by the number of promoter states.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent extensions of the telegraph model have carefully investigated how mRNA fluctuations are influenced by the number of promoter states (Zhou and Zhang, 2012; Ham et al., 2020b), polymerase dynamics (Cao et al., 2020), cell-to-cell variability in the rate parameter values (Dattani and Barahona, 2017; Ham et al., 2020a), replication and binomial partitioning due to cell division (Cao and Grima, 2020), nuclear export (Singh and Bokes, 2012) and cell cycle duration variability (Perez-Carrasco et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "a70883b6-600d-4175-ba38-1b380ff89ffe",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C24",
+      "claim": "Recent extensions of the telegraph model have investigated how mRNA fluctuations are influenced by polymerase dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent extensions of the telegraph model have carefully investigated how mRNA fluctuations are influenced by the number of promoter states (Zhou and Zhang, 2012; Ham et al., 2020b), polymerase dynamics (Cao et al., 2020), cell-to-cell variability in the rate parameter values (Dattani and Barahona, 2017; Ham et al., 2020a), replication and binomial partitioning due to cell division (Cao and Grima, 2020), nuclear export (Singh and Bokes, 2012) and cell cycle duration variability (Perez-Carrasco et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Cao et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "e152e228-3584-4389-96a9-d5d140e2cd8b",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C25",
+      "claim": "Recent extensions of the telegraph model have investigated how mRNA fluctuations are influenced by cell-to-cell variability in the rate parameter values.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent extensions of the telegraph model have carefully investigated how mRNA fluctuations are influenced by the number of promoter states (Zhou and Zhang, 2012; Ham et al., 2020b), polymerase dynamics (Cao et al., 2020), cell-to-cell variability in the rate parameter values (Dattani and Barahona, 2017; Ham et al., 2020a), replication and binomial partitioning due to cell division (Cao and Grima, 2020), nuclear export (Singh and Bokes, 2012) and cell cycle duration variability (Perez-Carrasco et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Dattani and Barahona, 2017 and Ham et al., 2020a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "0afeb4e8-6622-4d43-8017-204236fc8404",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C26",
+      "claim": "Recent extensions of the telegraph model have investigated how mRNA fluctuations are influenced by replication and binomial partitioning due to cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent extensions of the telegraph model have carefully investigated how mRNA fluctuations are influenced by the number of promoter states (Zhou and Zhang, 2012; Ham et al., 2020b), polymerase dynamics (Cao et al., 2020), cell-to-cell variability in the rate parameter values (Dattani and Barahona, 2017; Ham et al., 2020a), replication and binomial partitioning due to cell division (Cao and Grima, 2020), nuclear export (Singh and Bokes, 2012) and cell cycle duration variability (Perez-Carrasco et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Cao and Grima, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "1b8ee47f-63dc-41f8-b3d7-b3b6373af084",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C27",
+      "claim": "Recent extensions of the telegraph model have investigated how mRNA fluctuations are influenced by nuclear export.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent extensions of the telegraph model have carefully investigated how mRNA fluctuations are influenced by the number of promoter states (Zhou and Zhang, 2012; Ham et al., 2020b), polymerase dynamics (Cao et al., 2020), cell-to-cell variability in the rate parameter values (Dattani and Barahona, 2017; Ham et al., 2020a), replication and binomial partitioning due to cell division (Cao and Grima, 2020), nuclear export (Singh and Bokes, 2012) and cell cycle duration variability (Perez-Carrasco et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Singh and Bokes, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "adea39e6-3b9e-4ab3-ab2c-9a399e4b9bc5",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C28",
+      "claim": "Recent extensions of the telegraph model have investigated how mRNA fluctuations are influenced by cell cycle duration variability.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent extensions of the telegraph model have carefully investigated how mRNA fluctuations are influenced by the number of promoter states (Zhou and Zhang, 2012; Ham et al., 2020b), polymerase dynamics (Cao et al., 2020), cell-to-cell variability in the rate parameter values (Dattani and Barahona, 2017; Ham et al., 2020a), replication and binomial partitioning due to cell division (Cao and Grima, 2020), nuclear export (Singh and Bokes, 2012) and cell cycle duration variability (Perez-Carrasco et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Perez-Carrasco et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "6444558d-d6b6-4119-a61f-1f8c199c91ae",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C29",
+      "claim": "A nascent mRNA is an mRNA that is being actively transcribed, still tethered to an RNA polymerase II moving along a gene during transcriptional elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "A nascent mRNA (Zenklusen et al., 2008; Larson et al., 2009) is an mRNA that is being actively transcribed, that is it is still tethered to an RNA polymerase II (Pol II) moving along a gene during transcriptional elongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "71897d02-5c3e-4226-ace1-2e1b1e072c94",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C30",
+      "claim": "Fluctuations in nascent mRNA numbers directly reflect the process of transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluctuations in nascent mRNA numbers thus directly reflect the process of transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the definition of nascent mRNA.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "0c144159-aec9-4dab-8fd5-48e4f6e7c879",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C31",
+      "claim": "Nascent mRNA removal is not first-order.",
+      "claim_type": "EXPLICIT",
+      "source": "Because nascent mRNA removal is not first-order, an extension of the telegraph model has been developed (the delay telegraph model) (Xu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known fact about nascent mRNA kinetics.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "4be71ca3-1583-49d9-ac7e-816411e1817b",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C32",
+      "claim": "An extension of the telegraph model called the delay telegraph model has been developed to account for nascent mRNA removal.",
+      "claim_type": "EXPLICIT",
+      "source": "Because nascent mRNA removal is not first-order, an extension of the telegraph model has been developed (the delay telegraph model) (Xu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Xu et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "e33def9f-c28e-42a4-a389-844b3daca055",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C33",
+      "claim": "Noisy transcription from the synthetic TetO promoter in S. cerevisiae is dominated by its dependence on the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "The importance of the cell cycle is illustrated by the finding (Zopf et al., 2013) that noisy transcription from the synthetic TetO promoter in S. cerevisiae is dominated by its dependence on the cell cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Zopf et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "cf90bb1e-0c23-4ddc-a6aa-039290bdcc0f",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C34",
+      "claim": "The estimation of transcriptional parameters from nascent mRNA data for pre- and post-replication phases of the cell cycle has only been reported in Skinner et al., 2016.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimation of transcriptional parameters from nascent mRNA data for pre- and post-replication phases of the cell cycle has, to the best of our knowledge, only been reported in Skinner et al., 2016.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the literature, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "b71053a4-757a-4b90-bf77-b8ac570fba13",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C35",
+      "claim": "All studies that estimate transcriptional parameters from nascent mRNA data do not compare them with transcriptional parameters estimated from cellular (mature) mRNA data measured in the same experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, all the studies that estimate transcriptional parameters from nascent mRNA data (Skinner et al., 2016; Xu et al., 2015; Zoller et al., 2018; Senecal et al., 2014; Fritzsch et al., 2018) do not compare them with transcriptional parameters estimated from cellular (mature) mRNA data measured in the same experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the literature, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "3b3c778f-8033-4376-9b76-9baa79fe61a6",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C36",
+      "claim": "A quantitative comparison between inference from cell-cycle-specific data and data which contains information from all cell cycle phases is lacking.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, a quantitative comparison between inference from cell-cycle-specific data and data which contains information from all cell cycle phases is lacking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about gaps in the literature.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "58c35dad-9614-4243-ad40-9356cbd814c2",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C37",
+      "claim": "Nascent mRNA distributions are technically more challenging to acquire than mature mRNA distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, nascent mRNA distributions are technically more challenging to acquire than mature mRNA distributions; and inference from nascent mRNA distributions is substantially more complex (Xu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known fact about experimental techniques.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "fe3d0957-1e79-4d1a-bcc7-d43aac970a3a",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C38",
+      "claim": "Inference from nascent mRNA distributions is substantially more complex than from mature mRNA distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, nascent mRNA distributions are technically more challenging to acquire than mature mRNA distributions; and inference from nascent mRNA distributions is substantially more complex (Xu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Xu et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "623bef33-88ac-483e-a13c-0faf6f92a597",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C40",
+      "claim": "The addition of 5% external noise to the initiation rate increases the percentage of parameters where nascent mRNA is more accurate to 64%.",
+      "claim_type": "EXPLICIT",
+      "source": "The percentage of parameters where nascent mRNA is more accurate is slightly increased compared to the data without noise (64% versus 61% of the parameters; compare Figure 2c and Figure 2b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from synthetic data analysis with added noise.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "b7f9e934-64cb-40d2-b047-9d76458734a1",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C41",
+      "claim": "The addition of 10% external noise to the initiation rate increases the inference accuracy for 91% of the parameter sets when nascent mRNA data is used.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the addition of even more noise (10% external noise added to the initiation rate) increases the inference accuracy for 91% of the parameter sets when the nascent mRNA data is used (Appendix 1 and Appendix 1\u2014figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from synthetic data analysis with higher noise levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "8f385bfd-f0ae-4fb8-98eb-eba9163538b1",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C49",
+      "claim": "Four independent datasets were obtained from which mRNA count and nascent RNA distributions were determined.",
+      "claim_type": "EXPLICIT",
+      "source": "We have four independent datasets from which we determined mRNA count and nascent RNA distributions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental data collected in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "6c6090d6-1707-4a5b-a903-a28b87bc56bc",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C50",
+      "claim": "Approximately 90% of the detected cytoplasmic spots fell in the range 0.5\u00d7 median \u2013 1.5\u00d7 median intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine if this occurred in our datasets, we analyzed the distributions of intensities of the cytoplasmic spots, which revealed unimodal distributions where \u223c90% of the detected spots fell in the range 0.5\u00d7 median \u2013 1.5\u00d7 median (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from analysis of the experimental data shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "5eb3b6f0-a141-4e05-ae46-636f4a254c6f",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C51",
+      "claim": "The number of detected mature mRNA transcripts per cell was lower than expected based on the number of nascent transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, in our experiments, the number of detected mature mRNA transcripts per cell was lower than expected, based on the number of nascent transcripts (compare Figure 3 with Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from comparing experimental data in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "c31a3c75-87a6-42b5-b600-1294f6fd36e1",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C52",
+      "claim": "The discrepancy between nascent and mature transcripts likely arises because the addition of the PP7 loops to the GAL10 RNA destabilizes the RNA, resulting in faster mRNA turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "This discrepancy between nascent and mature transcripts likely arises because the addition of the PP7 loops to the GAL10 RNA destabilizes the RNA, resulting in faster mRNA turnover compared to most endogenous RNAs (Miller et al., 2011; Wang et al., 2002; Holstege et al., 1998; Geisberg et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by citations to previous studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "d817eaa8-bdbe-4eaa-bde1-edf80f413116",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C53",
+      "claim": "Changes in the 5' UTR length or sequence affect its recognition by the mRNA degradation machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, both shorter and longer mRNA half-lives from the addition of stem loops have been observed, which may be caused because changes in the 5' UTR length or sequence affect its recognition by the mRNA degradation machinery (Heinrich et al., 2017; Tutucci et al., 2018; Garcia and Parker, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "839d7e4a-753b-4942-86ac-de31b54da673",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C54",
+      "claim": "Segmentation 1 often resulted in missed spots, leading to an underestimation of the mean mRNA count and variance.",
+      "claim_type": "EXPLICIT",
+      "source": "To test how cell segmentation errors contribute to the mature mRNA distribution and the transcriptional bursting estimates, we compared two independent segmentation tools, where segmentation 1 often resulted in missed spots (Figure 3b), resulting in an underestimation of the mean mRNA count and of the variance (compare Figure 3b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from comparing two segmentation methods shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "e3dcf9b9-e9cb-4692-9a11-5297607079e1",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C55",
+      "claim": "The segmentation algorithms led to similar estimates for the burst frequency but considerably different estimates for the rest of the parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably the segmentation algorithms led to similar estimates for the burst frequency but considerably different estimates for the rest of the parameters.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from comparing parameter estimates using different segmentation methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "6f65bfa2-0591-49b2-a90a-25546a941e96",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C56",
+      "claim": "Segmentation 1 suggested that burst expression is infrequent (\u224820% of the time) whereas segmentation 2 was consistent with burst expression occurring half of the time.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular segmentation 1 suggested that burst expression is infrequent (\u224820% of the time) whereas segmentation 2 was consistent with burst expression occurring half of the time.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from comparing parameter estimates using different segmentation methods shown in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "b3a012db-5b7f-43ec-9414-5205aaddf3a5",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C58",
+      "claim": "The mean number of mRNAs in G2 cells was larger than that in G1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the mean number of mRNAs in G2 cells was larger than that in G1 cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experimental data shown in Figure 3f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "8d1b65b3-f323-4356-a09e-038fa6652cf5",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C60",
+      "claim": "Merged data indicated behaviour consistent with the gene being ON half of the time and small burst sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of the two types of data predicted different behaviour (Figure 3g bottom): merged data indicated behaviour consistent with the gene being ON half of the time and small burst sizes, while cell-cycle-specific data implied the gene is ON \u224880% of the time with large burst sizes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from parameter inference shown in Figure 3g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "12b2234b-900c-49c6-8244-2c7c459ae8db",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C61",
+      "claim": "Cell-cycle-specific data implied the gene is ON \u224880% of the time with large burst sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of the two types of data predicted different behaviour (Figure 3g bottom): merged data indicated behaviour consistent with the gene being ON half of the time and small burst sizes, while cell-cycle-specific data implied the gene is ON \u224880% of the time with large burst sizes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from parameter inference shown in Figure 3g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "d598ec08-de19-4b6c-8050-15e1a67f2eda",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C65",
+      "claim": "\u03c3_on and \u03c1 decreased by 65% and 21%, respectively, upon replication.",
+      "claim_type": "EXPLICIT",
+      "source": "These two parameters decreased by 65% and 21%, respectively, which suggests that upon replication, there are mechanisms at play which reduce the expression of each copy to partially compensate for the doubling of the gene copy number (gene dosage compensation) (Skinner et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from comparing G1 and G2 parameter estimates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "43bdb9aa-d79d-40ff-ad8c-a1219616cf45",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C66",
+      "claim": "Upon replication, there are mechanisms at play which reduce the expression of each copy to partially compensate for the doubling of the gene copy number.",
+      "claim_type": "EXPLICIT",
+      "source": "These two parameters decreased by 65% and 21%, respectively, which suggests that upon replication, there are mechanisms at play which reduce the expression of each copy to partially compensate for the doubling of the gene copy number (gene dosage compensation) (Skinner et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the data, supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "0b89bdb6-1cfb-490d-b6f2-11c2e7f54d36",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C69",
+      "claim": "The Fano factors of merged data were larger than those of cell-cycle-specific data.",
+      "claim_type": "EXPLICIT",
+      "source": "Also in both cases, the Fano factors of merged data were larger than those of cell-cycle-specific data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from comparing Fano factors between merged and cell-cycle-specific data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "e7dc03eb-abcb-4813-b644-3c8c79c6b646",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C70",
+      "claim": "Not accounting for the cell cycle phase leads to an over-estimation of the time spent in the OFF state and of the Fano factor.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, we are confident that not accounting for the cell cycle phase leads to an over-estimation of the time spent in the OFF state and of the Fano factor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing merged and cell-cycle-specific data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "2283d17b-54b7-49f5-aa02-3f8ba2854165",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C71",
+      "claim": "Not taking into account post-transcriptional noise (by using mature mRNA data) led to a lower estimation of the burst size (2.6-fold, 2.6-fold, and 1.1-fold lower for inference from merged, G1 and G2 data, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, comparing the burst sizes in Figure 3g and Appendix 4\u2014table 1, we found that not taking into account post-transcriptional noise (by using mature mRNA data) led to an lower estimation of the burst size (2.6-fold, 2.6-fold, and 1.1-fold lower for inference from merged, G1 and G2 data, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from comparing burst size estimates from mature and nascent mRNA data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "807e4ce8-4f2a-4c76-8740-b459ff6c86e3",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C72",
+      "claim": "The inferred parameter variability across samples was on average about 2.5-fold lower for nascent data compared to mature mRNA data.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the inferred parameter variability across samples was on average about 2.5-fold lower for nascent data compared to mature mRNA data (this was obtained by computing the standard deviation divided by the mean for each parameter and then averaging over all parameters and over merged, G1 and G2 data).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from comparing parameter variability between nascent and mature mRNA data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "112819c7-c7e9-4d61-81ec-28048dca4d1d",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C73",
+      "claim": "Nascent data does not suffer from post-transcriptional noise.",
+      "claim_type": "EXPLICIT",
+      "source": "Likely this is because nascent data does not suffer from post-transcriptional noise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the nature of nascent mRNA.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "df31ad1f-cdc3-4f5c-868c-d21a8d8ac5a4",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C74",
+      "claim": "The estimates from cell-cycle-specific data produced ACFs that match the live-cell data closer than that from the merged data.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the estimates from cell-cycle-specific data produced ACFs that match the live-cell data closer than that from the merged data (Figure 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from comparing simulated ACFs to live-cell measurements shown in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "6f5f1377-cf61-4f65-9514-a5bf4cf479ce",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C75",
+      "claim": "For each dataset, the sum of squared residuals was smaller for the ACF computed using the cell-cycle-specific estimates rather than those from merged data.",
+      "claim_type": "EXPLICIT",
+      "source": "This was also clear from the sum of squared residuals which for each dataset was smaller for the ACF computed using the cell-cycle-specific estimates rather than those from merged data (Figure 4e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding shown in Figure 4e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "5aaa03af-d29b-42e0-9084-d4142a945dfe",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C77",
+      "claim": "Using nascent data, \u03c3_on and f_ON decreased by 41% and 5%, respectively, upon replication.",
+      "claim_type": "EXPLICIT",
+      "source": "These two decreased by 41% and 5%, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from comparing G1 and G2 parameter estimates from nascent data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "3a5f70f2-5bdf-4c4b-bae8-baff43f9dee9",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C80",
+      "claim": "A population-based ChIP-seq study showed DNA dosage compensation after replication in budding yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are consistent with a population-based ChIP-seq study (Voichek et al., 2016) that showed DNA dosage compensation after replication in budding yeast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Voichek et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "955b2cdf-62ec-4449-b395-27c2821527d5",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C81",
+      "claim": "The single-cell analysis revealed only partial dosage compensation, where the mean signal intensity of nascent mRNAs in G2 is 1.7-fold higher than in G1.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that our single-cell analysis only revealed partial dosage compensation, where the mean signal intensity of nascent mRNAs in G2 is not the same as in G1, but 1.7-fold higher in G2 than in G1 (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the experimental data shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "bc6b6b2b-6df6-4bad-aa2a-21271d4aa14d",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C82",
+      "claim": "The experimental distributions showed high intensities in bins 1, 2, and 3, which was likely an artifact of the experimental data acquisition system.",
+      "claim_type": "EXPLICIT",
+      "source": "Although inference on cell cycle separated data outperformed inference on merged data, we noticed that the corresponding best fit distributions did not match well to the experimental signal distributions in the lower bins (Figure 4b and Appendix 4\u2014figure 1). In all cases, the experimental distributions showed high intensities in bins 1, 2, and 3, which was likely an artifact of the experimental data acquisition system.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experimental data with an inference about its cause.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "cf7632fc-bca1-49db-bdad-33f09a28ac8c",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C83",
+      "claim": "In the absence of a transcription site, a mature transcript can be misclassified as a nascent transcript.",
+      "claim_type": "EXPLICIT",
+      "source": "Since we defined the transcription site as the brightest spot, this implies that in the absence of a transcription site, a mature transcript can be misclassified as a nascent transcript.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental methodology.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "8d7ee906-78ec-4e45-9608-bfe57980b755",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C85",
+      "claim": "The rejection method does not produce reliable estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the distributions fit well to the experimental histograms (Appendix 4\u2014figure 1), comparison with the live-cell normalized ACF indicated that the estimates actually became worse than non-curated estimates, with a higher sum of squared residuals (Figure 5c and d). The rejection method therefore does not produce reliable estimates.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion based on comparing ACFs shown in Figure 5c and d.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "c3b35d01-a08d-495f-a568-a73d83bbd590",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C87",
+      "claim": "The peak at the zero bin for both G1 and G2 was better captured using the fusion method than using non-curated data.",
+      "claim_type": "EXPLICIT",
+      "source": "The peak at the zero bin for both G1 and G2 was better captured using the fusion method than using non-curated data (compare Figure 4b and Appendix 4\u2014figure 1, with Figure 6b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from comparing distributions in different figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "308b88c1-75e8-42b8-ab5d-80af6578bd18",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C88",
+      "claim": "Correction with the fusion method led to improved transcriptional estimates, as indicated by a reduction in the sum of the squared residuals for all four data sets.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison to the autocorrelation function of the live-cell data shows that correction with the fusion method also led to improved transcriptional estimates, as indicated by a reduction in the sum of the squared residuals for all four data sets (Figure 6c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from comparing ACFs shown in Figure 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "ef536873-a016-4773-b9ff-5d4f547ce332",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C89",
+      "claim": "The optimal method for inferring parameters from smFISH data is to use nascent cell-cycle-specific data, corrected by the fusion method.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we conclude that for inferring parameters from the smFISH data, the optimal method is to use nascent cell-cycle-specific data, corrected by the fusion method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on comparing multiple inference methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "f3e6a9c4-0293-453b-9a32-61dcc1c4aba3",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C91",
+      "claim": "Gene dosage compensation involves regulation of the burst frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Note also that the previous prediction that gene dosage compensation involves regulation of the burst frequency did not change upon correction of the nascent data using the fusion method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion that remains consistent across different data correction methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "101b71cd-0f18-4ac6-b107-fe1fa28e6a2b",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C92",
+      "claim": "The optimal parameter set indicates long ON promoter times of 75 seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "The optimal parameter set (Figure 6d) indicates long ON promoter times of 75 s, during which almost 50 RNAs are produced in a burst.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is derived from the optimal parameter estimates shown in Figure 6d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "0559d839-5139-4407-8640-7e90e97f4ce7",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C93",
+      "claim": "During the ON state, almost 50 RNAs are produced in a burst.",
+      "claim_type": "EXPLICIT",
+      "source": "The optimal parameter set (Figure 6d) indicates long ON promoter times of 75 s, during which almost 50 RNAs are produced in a burst.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is derived from the optimal parameter estimates shown in Figure 6d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "dfd46a22-7dda-4ede-bb2e-19a638bb060c",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C94",
+      "claim": "Large burst sizes (>70) have been previously reported for mouse embryonic stem cells, mouse hepatocytes, and human fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Large burst sizes (>70) have been previously reported for mouse embryonic stem cells (Skinner et al., 2016, mouse hepatocytes Bahar Halpern et al., 2015 and human fibroblasts Larsson et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "3bbb4d2a-2ac1-4283-ace3-788dd8593bd8",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C95",
+      "claim": "The large burst size and high active fraction of 0.78 suggests that GAL10 expression is reaching its limit of maximal expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The large burst size and high active fraction of 0.78 suggests that GAL10 expression is reaching its limit of maximal expression, which may not be surprising as it is already one of the most highly expressed genes in yeast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the parameter estimates.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "71b114b1-caa0-4b8d-b864-fe9312dea37c",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C96",
+      "claim": "GAL10 is one of the most highly expressed genes in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "The large burst size and high active fraction of 0.78 suggests that GAL10 expression is reaching its limit of maximal expression, which may not be surprising as it is already one of the most highly expressed genes in yeast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known fact about GAL10.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "34dd95d6-d89c-4961-8443-e52dac51f0dd",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C97",
+      "claim": "The ON time of 75 seconds is longer than the residence time of a single transcript (47 seconds).",
+      "claim_type": "EXPLICIT",
+      "source": "It is also interesting to note that the ON time of 75 s is longer than the residence time of a single transcript (47 s), which means that RNA polymerases in the beginning of a burst have already left the locus before the burst has finished.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of two measured/calculated time values.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "9fb70e36-6b7d-4292-b55d-e8931b7ba9c0",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C98",
+      "claim": "RNA polymerases in the beginning of a burst have already left the locus before the burst has finished.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also interesting to note that the ON time of 75 s is longer than the residence time of a single transcript (47 s), which means that RNA polymerases in the beginning of a burst have already left the locus before the burst has finished.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparing the ON time and transcript residence time.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "882c1c47-5e2b-46cf-aa76-e7cd23737b94",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C102",
+      "claim": "It is possible to obtain reasonable estimates that agree with live-cell measurements if one infers parameters from nascent mRNA distributions that are accounted for cell cycle phase.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, obtaining kinetic information from static distributions can introduce biases. However, we show that it is possible to obtain reasonable estimates that agree with live-cell measurements, if one infers parameters from nascent mRNA distributions that are accounted for cell cycle phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "4fe92cab-057c-40cf-996d-1a16484621b8",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C103",
+      "claim": "The steady-state solution of the telegraph model gives mature mRNA distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "The steady-state solution of the telegraph model of gene expression (Peccoud and Ycart, 1995) gives mature mRNA distributions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the mathematical model, supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "7a9953d4-4910-4104-b4f6-1fce6a08069d",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C104",
+      "claim": "The steady-state solution of the delay telegraph model gives the distribution of the number of bound Pol II.",
+      "claim_type": "EXPLICIT",
+      "source": "The steady-state solution of the delay telegraph model (Xu et al., 2016) gives the distribution of the number of bound Pol II.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the mathematical model, supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "0a44a47b-dc10-487e-a0bc-c085edff2494",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C105",
+      "claim": "The fluorescence intensity of a single mRNA on the DNA locus for PP7-GAL10 looks like a trapezoidal pulse.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular for fluorescence data acquired from smFISH PP7-GAL10, the fluorescence intensity of a single mRNA on the DNA locus looks like a trapezoidal pulse (see Figure 1b for an illustration).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the experimental observation illustrated in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "c17188bb-e9cb-4b12-9ee2-c1ae821a368d",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C106",
+      "claim": "The delay telegraph model implicitly assumes that a Pol II molecule has fixed velocity and that Pol II molecules do not interact with each other.",
+      "claim_type": "EXPLICIT",
+      "source": "However, since the delay telegraph model implicitly assumes that a Pol II molecule has fixed velocity and that Pol II molecules do not interact with each other (via volume exclusion), it is reasonable to assume that in steady-state, the bound Pol II molecules are uniformly distributed along the gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes assumptions of the delay telegraph model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "ff8026a5-78a8-4940-915a-a8e7e2c88c5f",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C107",
+      "claim": "In steady-state, the bound Pol II molecules are uniformly distributed along the gene.",
+      "claim_type": "EXPLICIT",
+      "source": "However, since the delay telegraph model implicitly assumes that a Pol II molecule has fixed velocity and that Pol II molecules do not interact with each other (via volume exclusion), it is reasonable to assume that in steady-state, the bound Pol II molecules are uniformly distributed along the gene. This hypothesis is confirmed by stochastic simulations of the delay telegraph model where the position of a Pol II molecule is calculated as the product of the constant Pol II velocity and the time since its production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assumption that is confirmed by simulations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "600cd839-313a-4c6e-a770-d95d9b4e6bb6",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C108",
+      "claim": "A diploid yeast strain of BY4743 background with a single integration of 14xPP7 loops at the 5'UTR of GAL10 was used in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "A diploid yeast strain of BY4743 background with a single integration of 14xPP7 loops at the 5'UTR of GAL10 (strain YTL047 Donovan et al., 2019) was used in this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental strain used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "e3b756b3-0227-4cc3-84a0-0246601ab4a1",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C109",
+      "claim": "Four replicate yeast cultures were grown in synthetic complete media with 2% galactose to early mid-log (OD 0.5).",
+      "claim_type": "EXPLICIT",
+      "source": "Four replicate yeast cultures were grown in synthetic complete media with 2% galactose to early mid-log (OD 0.5), fixed with 5% paraformaldehyde (PFA) for 20 min, permeabilized with 300 units of lyticase and hybridized with 7.5 pmol each of four PP7 probes labeled with Cy3 (Integrated DNA Technologies) as described in Trcek et al., 2012 and Lenstra et al., 2015; Patel et al., 2021, resulting in four technical replicates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "9b9377d0-9067-48b3-bf24-9b9afacb5f02",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C110",
+      "claim": "The total number of cells in the four independent experiments was 2510, 6411, 4592, 3181, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "We did four independent experiments with a total number of cells equal to 2510, 6411, 4592, 3181, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides quantitative information about the experimental datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "4515d580-6409-4233-b84a-82d1e67f82bd",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "claim_id": "C111",
+      "claim": "After classification, the numbers of G1 cells are 766, 2111, 1495, 904 and the number of G2 cells are 683, 1657, 1209, 1143.",
+      "claim_type": "EXPLICIT",
+      "source": "After classification, the numbers of G1 cells are 766, 2111, 1495, 904 and the number of G2 cells are 683, 1657, 1209, 1143, whereas the rest were classified as undetermined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides quantitative information about cell cycle classification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "be74ee74-65d6-4f84-aa04-97b54c41130d",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Correcting for cell cycle dynamics and post-transcriptional noise significantly alters transcriptional parameter estimates. Cell cycle correction decreases promoter switching rates and initiation rate while increasing the fraction of active time and burst size (C5-C7). Additional correction for post-transcriptional noise further increases burst size and substantially reduces parameter estimation errors (C8-C9).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C9 are supported by experimental data comparing parameter estimates from merged vs. cell-cycle-specific data and mature vs. nascent mRNA distributions. The findings are quantified and validated through comparison with live-cell imaging autocorrelation functions (C10, C74-C75), providing strong convergent evidence for the impact of these corrections.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "94ee5294-0347-42a6-8914-675b9c7567bb",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Synthetic data analysis demonstrates that nascent mRNA inference is more accurate than mature mRNA inference, especially in the presence of external noise. With 5% external noise, nascent mRNA provides more accurate estimates for 64% of parameter sets, increasing to 91% with 10% external noise.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 are supported by systematic synthetic data analysis across 789 parameter sets. The findings are quantified and show a clear trend of improved accuracy with nascent data as noise increases, validating the theoretical advantage of using nascent mRNA for parameter inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "e91f2c41-8346-458c-a87f-62d2c0fd38fc",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Cell segmentation methods significantly impact transcriptional parameter estimates from mature mRNA data. Segmentation 1 resulted in missed spots and underestimation of mean and variance (C54), while the two methods yielded similar burst frequency estimates but considerably different estimates for other parameters (C55), with segmentation 1 suggesting ~20% ON time versus segmentation 2 suggesting ~50% ON time (C56).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 are directly supported by experimental comparison of two independent segmentation tools shown in Figure 3. The quantitative differences in parameter estimates demonstrate the sensitivity of inference to technical processing choices, highlighting an important source of potential bias.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "24847871-e059-425e-a530-3fb8f4f2cfc5",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Merged data versus cell-cycle-specific data yield dramatically different transcriptional parameter estimates. Merged data suggests the gene is ON 50% of the time with small burst sizes (C60), while cell-cycle-specific data indicates ~80% ON time with large burst sizes (C61). Fano factors are consistently larger for merged data (C69), leading to the conclusion that ignoring cell cycle phase causes overestimation of OFF time and Fano factor (C70).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61, C69-C70 are supported by experimental data from four independent datasets analyzing both mature and nascent mRNA. The consistency of findings across data types and the validation through autocorrelation function comparison with live-cell data (C74-C75) provide strong support for these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "d2e39b01-80fe-4b0c-8aa9-f0b6f99c0c41",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Using mature mRNA data instead of nascent mRNA data leads to underestimation of burst size and higher parameter variability. Burst size estimates were 2.6-fold, 2.6-fold, and 1.1-fold lower for merged, G1, and G2 data respectively when using mature mRNA (C71). Parameter variability was ~2.5-fold lower for nascent data (C72), likely because nascent data lacks post-transcriptional noise (C73).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C73 are supported by direct quantitative comparison of parameter estimates from mature and nascent mRNA data across four independent datasets. The explanation that nascent data avoids post-transcriptional noise (C73) is a reasonable inference consistent with the biological nature of nascent versus mature mRNA.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "42b81829-a9fe-40b5-a905-1e8d0090db2b",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Cell-cycle-specific parameter estimates produce autocorrelation functions (ACFs) that better match live-cell data compared to merged data estimates. The sum of squared residuals was consistently smaller for cell-cycle-specific estimates across all four datasets (C75).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C75 are supported by quantitative comparison shown in Figures 4d-e. This validation against independent live-cell measurements provides strong evidence that cell-cycle-specific inference yields more accurate parameter estimates, as ACF comparison tests the dynamic predictions of the inferred parameters.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "305d1289-524a-46b1-8d74-71b90d2d5919",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Gene dosage compensation occurs upon DNA replication through regulation of burst frequency. From mature mRNA data, \u03c3_on and \u03c1 decreased by 65% and 21% respectively upon replication (C65). From nascent data, \u03c3_on and f_ON decreased by 41% and 5% respectively (C77). The conclusion that dosage compensation involves burst frequency regulation remained consistent across correction methods (C91).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66, C77, C91 are supported by quantitative comparison of G1 and G2 parameter estimates from both mature and nascent mRNA data. The consistency of burst frequency reduction across data types and the citation of similar findings in mammalian cells (C66) strengthen this conclusion. However, the exact mechanism and magnitude differ between mature and nascent data analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "a7eb7200-e2fe-46e6-9b83-b39a8cee21d5",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The fusion method for correcting experimental artifacts in nascent mRNA data produces more reliable parameter estimates than the rejection method or uncorrected data. The rejection method yielded worse ACF fits despite good histogram fits (C85), while the fusion method better captured the zero bin peak (C87) and reduced ACF residuals for all datasets (C88), leading to the conclusion that nascent cell-cycle-specific data corrected by fusion is optimal (C89).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C83, C85, C87-C89 are supported by systematic comparison of correction methods validated against live-cell ACF data. The fusion method's superiority is demonstrated through both distribution fitting quality and ACF agreement. The identification of the artifact source (C82-C83) and the validation approach are methodologically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "c5fc3d1f-cad1-4df3-bff5-38c41270cfa0",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The optimal parameter estimates indicate GAL10 exhibits long ON times of 75 seconds with large bursts of ~50 RNAs (C92-C93), suggesting the gene is approaching maximal expression (C95). The ON time exceeds the single transcript residence time of 47 seconds, meaning polymerases from early in a burst leave before the burst completes (C97-C98).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C93, C95, C97-C98 are supported by the optimal parameter estimates from fusion-corrected, cell-cycle-specific nascent data (Figure 6d). The inference about maximal expression (C95) is reasonable given the high active fraction (0.78) and the known high expression of GAL10 (C96). The temporal comparison (C97-C98) is a straightforward calculation from the estimated parameters.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "2a2cb685-1363-4e0e-80e7-b195c32b8193",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Approximately 90% of detected cytoplasmic spots had intensities within 0.5-1.5\u00d7 median (C50), indicating minimal spot overlap. However, mature mRNA counts were lower than expected from nascent counts (C51), likely because PP7 loops destabilize GAL10 RNA causing faster turnover (C52), as changes in 5' UTR affect degradation machinery recognition (C53).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C53 are supported by experimental data analysis (Figure 4a) and citations to previous studies. The spot intensity distribution analysis (C50) provides evidence against overlapping spots as a confound. The explanation for lower mature counts (C52-C53) is a reasonable inference supported by multiple citations documenting similar effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "3769bf9b-6771-4e43-ad62-19f6ebc92dbf",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Mean mRNA numbers in G2 cells were larger than in G1 cells (C58), with nascent mRNA signal intensity 1.7-fold higher in G2 than G1 (C81), indicating only partial dosage compensation rather than complete compensation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58 and C81 are directly supported by experimental measurements shown in Figures 3f and 4c. The 1.7-fold increase is less than the expected 2-fold from gene copy doubling, supporting the partial compensation conclusion. This is consistent with the mechanistic findings about burst frequency reduction (C65, C77).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "eb201f22-8083-40ce-bebe-6f15d22ac4ac",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Simulations using parameters from corrected nascent smFISH data produce autocorrelation functions agreeing with live-cell imaging (C10), demonstrating that reasonable estimates matching live-cell measurements can be obtained from nascent mRNA distributions accounting for cell cycle phase (C102).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10 and C102 are supported by the ACF comparison results shown throughout the paper, particularly Figures 4d-e and 6c. This validation against independent live-cell measurements provides strong evidence for the overall methodology and conclusions of the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "7eb8a506-d573-4d18-b1be-8fe5ec0d332b",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The telegraph model is commonly used to estimate transcriptional rates from mature mRNA distributions (C1, C21), but has limitations including the assumption of one gene copy (C4, C18) and first-order reactions (C19), while mature mRNA fluctuations are affected by post-transcriptional processes (C3), making parameter estimates questionable (C22).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4, C16-C22 describe established knowledge about the telegraph model and its application, supported by multiple citations. These claims provide the scientific context and motivation for the study. The statement about questionable reliability (C22) is an inference that the entire study validates.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "9fe38c9d-6238-4f98-bc10-78612bce3163",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Nascent mRNA directly reflects transcription (C29-C30) and requires the delay telegraph model due to non-first-order removal kinetics (C31-C32, C104). The model assumes uniform Pol II distribution along genes (C106-C107), and for PP7-GAL10, fluorescence intensity follows a trapezoidal pulse pattern (C105).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C32, C103-C107 describe the nascent mRNA measurement approach and mathematical modeling framework, supported by citations and confirmed by simulations (C107). These claims establish the methodological foundation for nascent mRNA analysis and are well-supported by prior work and the authors' simulations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "a330fbd9-3203-4e53-b475-64fb35c90d04",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Transcriptional bursting has been observed for over 40 years (C11-C12) with mechanisms still under investigation (C13). Live-cell imaging enables burst visualization but is challenging (C14-C15). Recent telegraph model extensions have investigated various factors affecting mRNA fluctuations including promoter states, polymerase dynamics, cell-to-cell variability, replication, nuclear export, and cell cycle duration (C23-C28).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C15, C23-C28 provide literature context supported by multiple citations. These claims establish the state of the field and identify gaps that motivate the current study. All statements are properly attributed to cited sources.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "98bd1843-17d7-4b51-a90c-e19bdc5003f1",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Cell cycle effects on transcription are important (C33), but cell-cycle-specific parameter estimation from nascent mRNA has rarely been reported (C34), and studies don't compare nascent and mature mRNA estimates from the same experiment (C35-C36). Nascent mRNA distributions are more technically challenging to acquire and analyze than mature mRNA (C37-C38).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C38 identify gaps in the literature and technical challenges, supported by citations. These claims establish the novelty and importance of the current study's comparative approach. The statements about what is lacking in the literature are verifiable from the cited sources.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "c1097039-054c-471f-ab3e-cd497c3c2e95",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Four independent smFISH datasets were obtained from diploid yeast with PP7-GAL10 (C49, C108), grown in galactose media and processed with standard smFISH protocols (C109). Total cell numbers were 2510, 6411, 4592, and 3181 (C110), with G1 cells numbering 766, 2111, 1495, 904 and G2 cells numbering 683, 1657, 1209, 1143 after classification (C111).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49, C108-C111 describe the experimental design and sample sizes. These are straightforward factual statements about the data collection that are verifiable from the methods section and data availability statement. The sample sizes are adequate for the statistical analyses performed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    },
+    {
+      "id": "4a4adef3-1b24-4a08-82ac-de920864b13a",
+      "content_id": "82840d2e-9005-477a-b99a-afddb363d8d2",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The findings are consistent with prior studies showing dosage compensation in budding yeast (C80) and large burst sizes in mammalian cells (C94). GAL10 is one of the most highly expressed yeast genes (C96).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80, C94, C96 place the findings in context of prior literature. C80 and C94 are supported by citations, while C96 is stated as established knowledge about GAL10. These contextual claims help interpret the significance of the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:30:58.156269Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5432d060-1b9c-4e41-ae2f-da0c45c76613",
+      "result_id": "be74ee74-65d6-4f84-aa04-97b54c41130d"
+    },
+    {
+      "claim_id": "a351e90e-52f3-4dfa-b4ee-5a9fe013226e",
+      "result_id": "be74ee74-65d6-4f84-aa04-97b54c41130d"
+    },
+    {
+      "claim_id": "7f46be1f-d0ae-4354-a7cd-a587783b3348",
+      "result_id": "be74ee74-65d6-4f84-aa04-97b54c41130d"
+    },
+    {
+      "claim_id": "f9682d8b-1993-4932-8e3a-bd7fb2dcafb5",
+      "result_id": "be74ee74-65d6-4f84-aa04-97b54c41130d"
+    },
+    {
+      "claim_id": "4c82398b-553d-4787-b9fc-642650b7629a",
+      "result_id": "be74ee74-65d6-4f84-aa04-97b54c41130d"
+    },
+    {
+      "claim_id": "623bef33-88ac-483e-a13c-0faf6f92a597",
+      "result_id": "94ee5294-0347-42a6-8914-675b9c7567bb"
+    },
+    {
+      "claim_id": "b7f9e934-64cb-40d2-b047-9d76458734a1",
+      "result_id": "94ee5294-0347-42a6-8914-675b9c7567bb"
+    },
+    {
+      "claim_id": "839d7e4a-753b-4942-86ac-de31b54da673",
+      "result_id": "e91f2c41-8346-458c-a87f-62d2c0fd38fc"
+    },
+    {
+      "claim_id": "e3dcf9b9-e9cb-4692-9a11-5297607079e1",
+      "result_id": "e91f2c41-8346-458c-a87f-62d2c0fd38fc"
+    },
+    {
+      "claim_id": "6f65bfa2-0591-49b2-a90a-25546a941e96",
+      "result_id": "e91f2c41-8346-458c-a87f-62d2c0fd38fc"
+    },
+    {
+      "claim_id": "8d1b65b3-f323-4356-a09e-038fa6652cf5",
+      "result_id": "24847871-e059-425e-a530-3fb8f4f2cfc5"
+    },
+    {
+      "claim_id": "12b2234b-900c-49c6-8244-2c7c459ae8db",
+      "result_id": "24847871-e059-425e-a530-3fb8f4f2cfc5"
+    },
+    {
+      "claim_id": "0b89bdb6-1cfb-490d-b6f2-11c2e7f54d36",
+      "result_id": "24847871-e059-425e-a530-3fb8f4f2cfc5"
+    },
+    {
+      "claim_id": "e7dc03eb-abcb-4813-b644-3c8c79c6b646",
+      "result_id": "24847871-e059-425e-a530-3fb8f4f2cfc5"
+    },
+    {
+      "claim_id": "2283d17b-54b7-49f5-aa02-3f8ba2854165",
+      "result_id": "d2e39b01-80fe-4b0c-8aa9-f0b6f99c0c41"
+    },
+    {
+      "claim_id": "807e4ce8-4f2a-4c76-8740-b459ff6c86e3",
+      "result_id": "d2e39b01-80fe-4b0c-8aa9-f0b6f99c0c41"
+    },
+    {
+      "claim_id": "112819c7-c7e9-4d61-81ec-28048dca4d1d",
+      "result_id": "d2e39b01-80fe-4b0c-8aa9-f0b6f99c0c41"
+    },
+    {
+      "claim_id": "df31ad1f-cdc3-4f5c-868c-d21a8d8ac5a4",
+      "result_id": "42b81829-a9fe-40b5-a905-1e8d0090db2b"
+    },
+    {
+      "claim_id": "6f5f1377-cf61-4f65-9514-a5bf4cf479ce",
+      "result_id": "42b81829-a9fe-40b5-a905-1e8d0090db2b"
+    },
+    {
+      "claim_id": "d598ec08-de19-4b6c-8050-15e1a67f2eda",
+      "result_id": "305d1289-524a-46b1-8d74-71b90d2d5919"
+    },
+    {
+      "claim_id": "43bdb9aa-d79d-40ff-ad8c-a1219616cf45",
+      "result_id": "305d1289-524a-46b1-8d74-71b90d2d5919"
+    },
+    {
+      "claim_id": "5aaa03af-d29b-42e0-9084-d4142a945dfe",
+      "result_id": "305d1289-524a-46b1-8d74-71b90d2d5919"
+    },
+    {
+      "claim_id": "f3e6a9c4-0293-453b-9a32-61dcc1c4aba3",
+      "result_id": "305d1289-524a-46b1-8d74-71b90d2d5919"
+    },
+    {
+      "claim_id": "bc6b6b2b-6df6-4bad-aa2a-21271d4aa14d",
+      "result_id": "a7eb7200-e2fe-46e6-9b83-b39a8cee21d5"
+    },
+    {
+      "claim_id": "cf7632fc-bca1-49db-bdad-33f09a28ac8c",
+      "result_id": "a7eb7200-e2fe-46e6-9b83-b39a8cee21d5"
+    },
+    {
+      "claim_id": "8d7ee906-78ec-4e45-9608-bfe57980b755",
+      "result_id": "a7eb7200-e2fe-46e6-9b83-b39a8cee21d5"
+    },
+    {
+      "claim_id": "c3b35d01-a08d-495f-a568-a73d83bbd590",
+      "result_id": "a7eb7200-e2fe-46e6-9b83-b39a8cee21d5"
+    },
+    {
+      "claim_id": "308b88c1-75e8-42b8-ab5d-80af6578bd18",
+      "result_id": "a7eb7200-e2fe-46e6-9b83-b39a8cee21d5"
+    },
+    {
+      "claim_id": "ef536873-a016-4773-b9ff-5d4f547ce332",
+      "result_id": "a7eb7200-e2fe-46e6-9b83-b39a8cee21d5"
+    },
+    {
+      "claim_id": "101b71cd-0f18-4ac6-b107-fe1fa28e6a2b",
+      "result_id": "c5fc3d1f-cad1-4df3-bff5-38c41270cfa0"
+    },
+    {
+      "claim_id": "0559d839-5139-4407-8640-7e90e97f4ce7",
+      "result_id": "c5fc3d1f-cad1-4df3-bff5-38c41270cfa0"
+    },
+    {
+      "claim_id": "3bbb4d2a-2ac1-4283-ace3-788dd8593bd8",
+      "result_id": "c5fc3d1f-cad1-4df3-bff5-38c41270cfa0"
+    },
+    {
+      "claim_id": "34dd95d6-d89c-4961-8443-e52dac51f0dd",
+      "result_id": "c5fc3d1f-cad1-4df3-bff5-38c41270cfa0"
+    },
+    {
+      "claim_id": "9fb70e36-6b7d-4292-b55d-e8931b7ba9c0",
+      "result_id": "c5fc3d1f-cad1-4df3-bff5-38c41270cfa0"
+    },
+    {
+      "claim_id": "6c6090d6-1707-4a5b-a903-a28b87bc56bc",
+      "result_id": "2a2cb685-1363-4e0e-80e7-b195c32b8193"
+    },
+    {
+      "claim_id": "5eb3b6f0-a141-4e05-ae46-636f4a254c6f",
+      "result_id": "2a2cb685-1363-4e0e-80e7-b195c32b8193"
+    },
+    {
+      "claim_id": "c31a3c75-87a6-42b5-b600-1294f6fd36e1",
+      "result_id": "2a2cb685-1363-4e0e-80e7-b195c32b8193"
+    },
+    {
+      "claim_id": "d817eaa8-bdbe-4eaa-bde1-edf80f413116",
+      "result_id": "2a2cb685-1363-4e0e-80e7-b195c32b8193"
+    },
+    {
+      "claim_id": "b3a012db-5b7f-43ec-9414-5205aaddf3a5",
+      "result_id": "3769bf9b-6771-4e43-ad62-19f6ebc92dbf"
+    },
+    {
+      "claim_id": "955b2cdf-62ec-4449-b395-27c2821527d5",
+      "result_id": "3769bf9b-6771-4e43-ad62-19f6ebc92dbf"
+    },
+    {
+      "claim_id": "70077377-1f3a-49d0-91c7-bb9cb3a1ff87",
+      "result_id": "eb201f22-8083-40ce-bebe-6f15d22ac4ac"
+    },
+    {
+      "claim_id": "882c1c47-5e2b-46cf-aa76-e7cd23737b94",
+      "result_id": "eb201f22-8083-40ce-bebe-6f15d22ac4ac"
+    },
+    {
+      "claim_id": "d1592980-f068-4d7b-b70f-fa46dbc9e1e1",
+      "result_id": "7eb8a506-d573-4d18-b1be-8fe5ec0d332b"
+    },
+    {
+      "claim_id": "29233aac-be46-4740-a897-837991976e94",
+      "result_id": "7eb8a506-d573-4d18-b1be-8fe5ec0d332b"
+    },
+    {
+      "claim_id": "6d36ad42-3904-49e7-be41-b91db9e4efd9",
+      "result_id": "7eb8a506-d573-4d18-b1be-8fe5ec0d332b"
+    },
+    {
+      "claim_id": "471382be-121e-4a4c-b801-c7c38a132b6f",
+      "result_id": "7eb8a506-d573-4d18-b1be-8fe5ec0d332b"
+    },
+    {
+      "claim_id": "a40e4265-eed3-4af7-8e4c-18450c4668cc",
+      "result_id": "7eb8a506-d573-4d18-b1be-8fe5ec0d332b"
+    },
+    {
+      "claim_id": "574d347c-4f68-4484-9179-de4c673b0968",
+      "result_id": "7eb8a506-d573-4d18-b1be-8fe5ec0d332b"
+    },
+    {
+      "claim_id": "97d66cdb-d35c-419d-bc52-fe80e9ee0c88",
+      "result_id": "7eb8a506-d573-4d18-b1be-8fe5ec0d332b"
+    },
+    {
+      "claim_id": "b89e259e-f2f3-4a0d-a09b-7719ec5fa3b0",
+      "result_id": "7eb8a506-d573-4d18-b1be-8fe5ec0d332b"
+    },
+    {
+      "claim_id": "b42c3d72-2614-47eb-98f3-f7de661112de",
+      "result_id": "7eb8a506-d573-4d18-b1be-8fe5ec0d332b"
+    },
+    {
+      "claim_id": "1acd6e65-f998-48fe-8b7d-5dca22d8402b",
+      "result_id": "7eb8a506-d573-4d18-b1be-8fe5ec0d332b"
+    },
+    {
+      "claim_id": "c14b6f90-713c-453d-be97-e3e9c6093548",
+      "result_id": "7eb8a506-d573-4d18-b1be-8fe5ec0d332b"
+    },
+    {
+      "claim_id": "6444558d-d6b6-4119-a61f-1f8c199c91ae",
+      "result_id": "9fe38c9d-6238-4f98-bc10-78612bce3163"
+    },
+    {
+      "claim_id": "71897d02-5c3e-4226-ace1-2e1b1e072c94",
+      "result_id": "9fe38c9d-6238-4f98-bc10-78612bce3163"
+    },
+    {
+      "claim_id": "0c144159-aec9-4dab-8fd5-48e4f6e7c879",
+      "result_id": "9fe38c9d-6238-4f98-bc10-78612bce3163"
+    },
+    {
+      "claim_id": "4be71ca3-1583-49d9-ac7e-816411e1817b",
+      "result_id": "9fe38c9d-6238-4f98-bc10-78612bce3163"
+    },
+    {
+      "claim_id": "4fe92cab-057c-40cf-996d-1a16484621b8",
+      "result_id": "9fe38c9d-6238-4f98-bc10-78612bce3163"
+    },
+    {
+      "claim_id": "7a9953d4-4910-4104-b4f6-1fce6a08069d",
+      "result_id": "9fe38c9d-6238-4f98-bc10-78612bce3163"
+    },
+    {
+      "claim_id": "0a44a47b-dc10-487e-a0bc-c085edff2494",
+      "result_id": "9fe38c9d-6238-4f98-bc10-78612bce3163"
+    },
+    {
+      "claim_id": "c17188bb-e9cb-4b12-9ee2-c1ae821a368d",
+      "result_id": "9fe38c9d-6238-4f98-bc10-78612bce3163"
+    },
+    {
+      "claim_id": "ff8026a5-78a8-4940-915a-a8e7e2c88c5f",
+      "result_id": "9fe38c9d-6238-4f98-bc10-78612bce3163"
+    },
+    {
+      "claim_id": "d14a9d74-cd27-41e5-8f36-28b5e99a2757",
+      "result_id": "a330fbd9-3203-4e53-b475-64fb35c90d04"
+    },
+    {
+      "claim_id": "fc5b19b1-6d9e-4305-9bce-c0d1ba9a89d6",
+      "result_id": "a330fbd9-3203-4e53-b475-64fb35c90d04"
+    },
+    {
+      "claim_id": "cd41edb7-387e-4736-a1f6-998c017df12a",
+      "result_id": "a330fbd9-3203-4e53-b475-64fb35c90d04"
+    },
+    {
+      "claim_id": "d1a21b34-3f82-4b99-a2bf-f673b6dc2cca",
+      "result_id": "a330fbd9-3203-4e53-b475-64fb35c90d04"
+    },
+    {
+      "claim_id": "63691fd0-89c8-4f21-98a5-e0e8fa8d908b",
+      "result_id": "a330fbd9-3203-4e53-b475-64fb35c90d04"
+    },
+    {
+      "claim_id": "7ac789b6-9319-4ece-8b6e-126ee0cdb31c",
+      "result_id": "a330fbd9-3203-4e53-b475-64fb35c90d04"
+    },
+    {
+      "claim_id": "a70883b6-600d-4175-ba38-1b380ff89ffe",
+      "result_id": "a330fbd9-3203-4e53-b475-64fb35c90d04"
+    },
+    {
+      "claim_id": "e152e228-3584-4389-96a9-d5d140e2cd8b",
+      "result_id": "a330fbd9-3203-4e53-b475-64fb35c90d04"
+    },
+    {
+      "claim_id": "0afeb4e8-6622-4d43-8017-204236fc8404",
+      "result_id": "a330fbd9-3203-4e53-b475-64fb35c90d04"
+    },
+    {
+      "claim_id": "1b8ee47f-63dc-41f8-b3d7-b3b6373af084",
+      "result_id": "a330fbd9-3203-4e53-b475-64fb35c90d04"
+    },
+    {
+      "claim_id": "adea39e6-3b9e-4ab3-ab2c-9a399e4b9bc5",
+      "result_id": "a330fbd9-3203-4e53-b475-64fb35c90d04"
+    },
+    {
+      "claim_id": "e33def9f-c28e-42a4-a389-844b3daca055",
+      "result_id": "98bd1843-17d7-4b51-a90c-e19bdc5003f1"
+    },
+    {
+      "claim_id": "cf90bb1e-0c23-4ddc-a6aa-039290bdcc0f",
+      "result_id": "98bd1843-17d7-4b51-a90c-e19bdc5003f1"
+    },
+    {
+      "claim_id": "b71053a4-757a-4b90-bf77-b8ac570fba13",
+      "result_id": "98bd1843-17d7-4b51-a90c-e19bdc5003f1"
+    },
+    {
+      "claim_id": "3b3c778f-8033-4376-9b76-9baa79fe61a6",
+      "result_id": "98bd1843-17d7-4b51-a90c-e19bdc5003f1"
+    },
+    {
+      "claim_id": "58c35dad-9614-4243-ad40-9356cbd814c2",
+      "result_id": "98bd1843-17d7-4b51-a90c-e19bdc5003f1"
+    },
+    {
+      "claim_id": "fe3d0957-1e79-4d1a-bcc7-d43aac970a3a",
+      "result_id": "98bd1843-17d7-4b51-a90c-e19bdc5003f1"
+    },
+    {
+      "claim_id": "8f385bfd-f0ae-4fb8-98eb-eba9163538b1",
+      "result_id": "c1097039-054c-471f-ab3e-cd497c3c2e95"
+    },
+    {
+      "claim_id": "600cd839-313a-4c6e-a770-d95d9b4e6bb6",
+      "result_id": "c1097039-054c-471f-ab3e-cd497c3c2e95"
+    },
+    {
+      "claim_id": "e3b756b3-0227-4cc3-84a0-0246601ab4a1",
+      "result_id": "c1097039-054c-471f-ab3e-cd497c3c2e95"
+    },
+    {
+      "claim_id": "9b9377d0-9067-48b3-bf24-9b9afacb5f02",
+      "result_id": "c1097039-054c-471f-ab3e-cd497c3c2e95"
+    },
+    {
+      "claim_id": "4515d580-6409-4233-b84a-82d1e67f82bd",
+      "result_id": "c1097039-054c-471f-ab3e-cd497c3c2e95"
+    },
+    {
+      "claim_id": "3a5f70f2-5bdf-4c4b-bae8-baff43f9dee9",
+      "result_id": "4a4adef3-1b24-4a08-82ac-de920864b13a"
+    },
+    {
+      "claim_id": "dfd46a22-7dda-4ede-bb2e-19a638bb060c",
+      "result_id": "4a4adef3-1b24-4a08-82ac-de920864b13a"
+    },
+    {
+      "claim_id": "71b114b1-caa0-4b8d-b864-fe9312dea37c",
+      "result_id": "4a4adef3-1b24-4a08-82ac-de920864b13a"
+    }
+  ],
+  "comparisons": []
+}

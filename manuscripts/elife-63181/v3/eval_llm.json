@@ -1,0 +1,217 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C38",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The p107 spacer region (residues 585-780) is intrinsically disordered and contains three conserved regions (R1, R2, R3). Region 1 (R1, residues 615-626) is the primary B55\u03b1 binding site, with R2 enhancing but not sufficient for binding alone. Positively charged residues in R1 and R2 contribute to B55\u03b1 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary approaches (bioinformatics, sequence alignment, GST pull-downs, NMR spectroscopy, mutagenesis) converge on R1 as the key B55\u03b1 binding region. The NMR data (C41-C46) independently validates the binding interface identified by pull-down assays (C33-C36), and mutagenesis of positive residues (C38, C40) confirms their functional importance. The intrinsic disorder prediction (C29) is experimentally validated by NMR (C41-C42).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "B55\u03b1 residues D197 and L225, located in a conserved groove on blade 4 of the \u03b2-propeller, are critical for substrate recruitment. These residues are required for binding p107, pRB, and KSR1, though different substrates show varying requirements for other conserved B55\u03b1 residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Systematic mutagenesis of 19 conserved B55\u03b1 residues combined with co-immunoprecipitation assays for three different substrates (C50-C52) provides strong evidence for D197 and L225 as core substrate recruitment residues. The observation that different substrates require different additional residues (C51, C113) is well-documented. The structural context (C47-C49, C54) supports the functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C109"
+    ],
+    "result": "PP2A/B55\u03b1 dephosphorylates p107 at S615 and S640, which are CDK phosphorylation sites. The dephosphorylation is time-dependent and inhibited by okadaic acid.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of evidence support this result: in vitro kinase assays show CDK2 phosphorylates p107 (C57-C58), mass spectrometry identifies pS615 and pS640 as phosphorylation sites and shows their reduction upon PP2A/B55\u03b1 treatment (C59-C60), and time-course dephosphorylation assays with okadaic acid inhibition (C62-C63) confirm PP2A/B55\u03b1 activity. The use of single-site mutants provides additional specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "p107 residues H619, R621, V622, and V625 within R1 define a 'HxRVxxV' short linear motif (SLiM) that is necessary for B55\u03b1 binding and dephosphorylation. Mutation of these residues reduces both binding and dephosphorylation kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of the SLiM is supported by multiple experimental approaches: binding-deficient mutants show reduced dephosphorylation (C64-C65), competitive peptide assays identify critical residues (C66-C73), and phosphopeptide dephosphorylation assays directly link SLiM integrity to catalytic efficiency (C75). The systematic mutagenesis approach (scanning triple mutants followed by single-residue substitutions) provides strong evidence for the specific residues required.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "In cells, the p107 R1 region is sufficient to form a complex with PP2A/B55\u03b1 holoenzyme in a manner dependent on B55\u03b1 D197. The SLiM is essential for maintaining steady-state phosphorylation of p107 S615, and B55\u03b1 is critical for temporal regulation of this site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Co-immunoprecipitation experiments (C77-C78) demonstrate R1 sufficiency and D197 dependence, validated by mass spectrometry (C80). The functional importance is shown by increased S615 phosphorylation in SLiM mutants (C83-C84) and the inability of B55\u03b1 D197K to reduce p107 phosphorylation (C82, C85). These cellular data complement the in vitro findings and establish physiological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The p107 SLiM is critically important for B55\u03b1-mediated modulation of p107's cell cycle suppressing function. B55\u03b1 promotes p107 activation and G1 cell cycle arrest by opposing cyclin E/CDK2 function, likely through mechanisms independent of E2F4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Cell cycle analysis shows that p107 induces G1 arrest (C88), which is enhanced by B55\u03b1 co-expression (C89) and diminished by SLiM mutation (C90). The observation that cyclin E reduces p107-induced G1 arrest and this is counteracted by B55\u03b1 (C93), while E2F4 complex abundance is unaffected (C94), supports a mechanism independent of E2F4. The data logically connect the SLiM to functional outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C123"
+    ],
+    "result": "Computational modeling shows that p107 pSPLMHPRV can bind in a highly extended conformation to PP2A/B55\u03b1, with R621 positioned 3.2 \u00c5 from B55\u03b1 D197 and the phosphomimetic E615 positioned 4.4-5.1 \u00c5 from the Mn2+ ions in the PP2A active site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The computational model is well-constrained by experimental data: the requirement for R621-D197 interaction and pS615 positioning in the active site. The structural database search (C97) establishes that the peptide must adopt an extended conformation. The distances in the final model (C99-C100) are reasonable for the proposed interactions, and replacement of E615 with pS615 shows consistency with known PPP active site binding (C101). The model is consistent with all experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C114"
+    ],
+    "result": "A consensus B55\u03b1 substrate SLiM 'p[ST]-P-x(4,10)-[RK]-V-x-x-[VI]-R' is conserved in multiple B55\u03b1 substrates including TAU, MAP2, and p130. Mutation of conserved SLiM residues in TAU completely blocks dephosphorylation by PP2A/B55\u03b1. The SLiM is enriched in datasets of B55\u03b1 interactors and mitotic substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The generality of the SLiM is supported by sequence alignment showing conservation across multiple substrates (C103-C104), functional validation in TAU showing complete loss of dephosphorylation with SLiM mutation (C105), and computational analysis showing enrichment in B55\u03b1-related datasets (C106-C107). The alignment with previously identified TAU/MAP2 peptides that abrogate B55\u03b1 binding (C114) provides independent validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "A second region of p107 (R2) contributes to B55\u03b1 binding through positively charged residues (R647, K657, R659), likely via dynamic charged:charged interactions. R2 is also required for CDK2 binding through an RxL motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "GST pull-down data show that R2 enhances B55\u03b1 binding (C36, C119) and is required for CDK2 binding (C37). Mutagenesis of positive residues in R2 reduces B55\u03b1 binding (C38, C120). The interpretation of charged:charged interactions is supported by analogy to other phosphatases (C121) and is consistent with IDP binding mechanisms (C122), though the specific mechanism is somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The computational model suggests that the extended peptide conformation would require additional bending of the PP2A/A scaffold subunit for optimal catalysis. Analysis of PP2A/A flexibility shows that subunit binding affects scaffold bending, suggesting substrate binding may induce conformational changes to promote catalysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the structural analysis of PP2A/A flexibility (C125) is data-driven, the inference that substrate binding induces additional scaffold movement to promote catalysis (C126) is speculative. The extended peptide conformation in the model (C124) is well-supported, but whether this represents a catalytically competent state or requires further conformational changes is not experimentally tested. This represents a hypothesis for future investigation rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "E2F4 may be dephosphorylated by B55\u03b1, possibly as a result of complex formation with p107, as indicated by shifts in E2F4 protein isoform migration upon B55\u03b1 co-transfection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This claim is based solely on observation of E2F4 migration shifts (C96) without direct evidence of dephosphorylation (e.g., phospho-specific antibodies, mass spectrometry). The interpretation is explicitly speculative ('may indicate'). While the observation is interesting, it requires additional validation to be considered a supported result.",
+    "result_type": "MINOR"
+  }
+]

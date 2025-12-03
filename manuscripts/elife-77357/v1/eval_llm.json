@@ -1,0 +1,411 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The manuscript establishes the background context for lncRNA research in cancer, noting that >100,000 lncRNAs exist in the human genome, they function as critical modulators of gene expression, their expression is altered in cancer, but only a small fraction have been functionally characterized, particularly regarding their roles in cell proliferation/growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 are well-supported by appropriate citations to the literature (Zhao et al., 2021; Statello et al., 2021; Bao et al., 2019; Liu et al., 2017b; Ning et al., 2016; Schmitt and Chang, 2016) and represent established knowledge in the field. These background claims provide appropriate context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The manuscript establishes that while genome-scale CRISPR-Cas9 screens have identified >1800 essential genes across >700 cancer cell lines, lncRNA loss-of-function screens have lagged significantly behind, with only seven cell lines screened for growth/survival modulating lncRNA loci and nine lncRNAs identified in keratinocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 are supported by appropriate citations (Blomen et al., 2015; Hart et al., 2015; Tsherniak et al., 2017; Liu et al., 2017a; Cai et al., 2020) and establish the gap in knowledge that motivates the current study. The contrast between protein-coding gene screens and lncRNA screens is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The manuscript establishes that over 5000 co-essential gene complexes/modules have been identified from CRISPR screens, these modules recapitulate known pathways with oncogenic functions, and functionally related genes are highly enriched in co-essential modules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 are supported by citation to Wainberg et al., 2021 and provide the conceptual foundation for the hypothesis that mapping lncRNAs to co-essential modules can predict lncRNA functions. This represents appropriate use of prior work to motivate the current approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The study developed a multivariate regression model to estimate lncRNA-gene co-expression networks while accounting for noise from DNA methylation and copy number alterations, and applied this model to 807 CCLE cancer cell lines and 3017 patient samples across 10 TCGA cancer types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 are supported by appropriate citations (Jacobsen et al., 2013; Mitra et al., 2020; Mitra et al., 2017; Ghandi et al., 2019; Hoadley et al., 2018) and references to Figure 1A and supplements. The methodological approach is clearly described and builds on established methods for controlling confounding factors in gene regulatory networks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "From CCLE-based lncRNA-gene networks, the study identified 1049 (6.6%) lncRNAs with significantly enriched associations with pan-cancer essential genes, including 549 with positive associations and 500 with negative associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 are supported by rigorous statistical analysis (hypergeometric test with BH adjusted p<10^-10) and reference to Figure 1A. The stringent significance cutoff and clear reporting of numbers provide confidence in these findings. The statistical approach is appropriate for identifying enriched associations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The co-essential modules were preferentially enriched with proliferation/growth-regulating genesets compared to other pathways, and 1027 lncRNAs potentially regulate 78 proliferation/growth-linked co-essential modules, with modules being positively or negatively impacted by inducing or suppressing lncRNAs, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 are supported by statistical testing (Wilcoxon rank-sum test, p=2.06\u00d710^-4) and references to Figure 1B, 1C, and supplements. The preferential enrichment of proliferation pathways validates the approach and the directional associations provide mechanistic insight. The data presentation in figures supports these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Meta-analysis using RobustRankAggreg identified 123 proliferation/growth-inducing lncRNAs and 252 suppressing lncRNAs, with over 66% of identified lncRNAs not previously studied in cancer and another 10% poorly characterized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 are supported by the RobustRankAggreg meta-analysis (BH adjusted p<0.05) and systematic PubMed literature search. The novelty assessment is methodologically sound and demonstrates the discovery potential of the approach. The high percentage of uncharacterized lncRNAs validates the need for this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The computational framework successfully identified known proliferation-inducing lncRNAs as top hits, including multiple SNHG family members, DLEU2, TMPO-AS1, and MIR17HG, validating the predictive accuracy of the approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 are well-supported by citations to literature (Jin et al., 2019; Zimta et al., 2020; Ghafouri-Fard et al., 2021; Zheng et al., 2021; Mogilyansky and Rigoutsos, 2013) and reference to Figure 1E. The validation against known proliferation-inducing lncRNAs provides strong evidence for the accuracy of the computational predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The tumor-suppressor p53 negatively impacts essential genes and co-essential modules, and known p53-regulated tumor-suppressor lncRNAs (PICART1, LINC00475, NEAT1, GUARDIN, ST7-AS1) were consistently negatively associated with proliferation/growth-regulating modules, with literature evidence showing their elevated levels suppress tumorigenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 are supported by citation to Wainberg et al., 2021, multiple citations for individual lncRNAs (Cao et al., 2017; Melo et al., 2016; Mello et al., 2017; Hu et al., 2018; Sheng et al., 2021), and reference to Figures 1D and 1E. The validation against known p53-regulated tumor suppressors provides additional evidence for the accuracy of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "The integrative computational framework consistently prioritizes known proliferation/growth regulators as top hits in evaluation and validation datasets and predicts proliferation/growth dependencies of 289 previously uncharacterized lncRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 are supported by the validation results showing known lncRNAs as top hits (C30-C37) and the computational analysis identifying 289 uncharacterized lncRNAs. The consistency across evaluation and validation datasets strengthens confidence in the predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "In TCGA validation datasets, proliferation/growth-linked lncRNAs preferentially regulate proliferation across cancer types (median=142) compared to other Hallmark processes (median range=15-99), with significant variation in regulating lncRNAs across Hallmark processes confirmed by both top-200 gene and GSEA approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 are supported by ANOVA statistical tests (p=1.96\u00d710^-11 and p=8.68\u00d710^-14) and references to Figure 2A and Figure 2\u2014figure supplement 1. The use of two independent analytical approaches (top 200 genes and GSEA) that yield consistent results strengthens confidence in the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "Predicted proliferation/growth inducers and suppressors showed significantly higher positive and negative associations, respectively, with proliferation genesets across TCGA cancer types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 are supported by Wilcoxon rank-sum tests (p=5.17\u00d710^-4 and p=3.19\u00d710^-3) and reference to Figure 2B. The directional consistency between predictions and validation data provides strong evidence for the accuracy of the classification of lncRNAs as inducers or suppressors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Predicted proliferation/growth inducers and suppressors had significantly distinct expression distributions in 9 out of 10 cancer types, with inducers showing coordinated overexpression in all 10 TCGA cancer types and suppressors showing coordinated downregulation in 7 cancer types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are supported by BH adjusted Wilcoxon rank-sum tests (p<0.05) and reference to Figure 2C and Supplementary file 2a. The coordinated expression changes consistent with predicted functions provide strong validation of the computational predictions and suggest selection during tumorigenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Validation in TCGA data showed that 91% of known proliferation-inducing lncRNAs and 4 of 5 known p53-regulated tumor-suppressor lncRNAs regulate proliferation genesets across multiple cancer types, and identified 30 uncharacterized/poorly characterized lncRNAs that potentially regulate at least five proliferation genesets across five or more cancer types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 are supported by analysis results shown in Figures 1E, 2D, and 2E. The high percentage of known lncRNAs validated in TCGA data provides strong evidence for the predictive accuracy of the approach, and the identification of 30 high-confidence uncharacterized lncRNAs represents a valuable resource for future studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Analysis of RNA-seq datasets from cells treated with DNA-damaging proliferation inhibitors or Nutlin-3 showed that proliferation/growth-suppressing lncRNAs were preferentially elevated and inducing lncRNAs were preferentially reduced, with reproducible patterns in p53 wild-type but not mutant cells, indicating crosstalk with p53-mediated tumor-suppressive pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 are supported by analysis of 14 RNA-seq datasets (7 DNA-damaging agents, 7 Nutlin-3) and 24 single-cell RNA-seq datasets, with results shown in Figures 3A and 3B. The consistency across multiple datasets and cell types, and the p53-dependence observed in single-cell data, provide strong evidence for the functional relevance of the identified lncRNAs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "The majority (59%) of lncRNAs showed differential expression in only one or two datasets supporting cell type-specific functions, while less than 5% were altered in more than five datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by data shown in Figure 3\u2014figure supplement 2 and citation to Liu et al., 2017b. The distribution of lncRNA alterations across datasets is consistent with known cell type-specificity of lncRNA function and provides context for interpreting the meta-analysis results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "RobustRankAggreg meta-analysis identified 13 consistently upregulated lncRNAs (8 top proliferation/growth suppressors) and 4 consistently downregulated lncRNAs (3 top proliferation/growth inducers), including known examples like TMPO-AS1 (downregulated) and known p53-regulated tumor suppressors GUARDIN, PICART1, and LINC00475 (upregulated).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 are supported by RobustRankAggreg meta-analysis results (BH adjusted p<0.05) shown in Figure 3C and Supplementary files. The identification of known examples among the top hits validates the meta-analysis approach, and the directional consistency (downregulation of inducers, upregulation of suppressors) supports the functional predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The 13 consistently upregulated lncRNAs had significantly more p53-binding sites near their transcription start sites compared to background lncRNAs, including two poorly characterized lncRNAs PSLR-1 (FAM198B-AS1) and PSLR-2 (SEPTIN9-DT) that had consistently elevated expression upon p53 activation and p53-binding sites in at least nine ChIP-seq datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 are supported by analysis of 17 p53 ChIP-seq datasets with Wilcoxon rank-sum test (p=1.65\u00d710^-9) and RobustRankAggreg meta-analysis (BH adjusted p<5.48\u00d710^-3), with results shown in Figures 2E, 3C, 3D, 3E, and Figure 3\u2014figure supplement 3. The convergence of expression and ChIP-seq evidence provides strong support for direct p53 regulation of these lncRNAs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "Experimental validation in A549 and H460 LUAD cell lines showed that PSLR-1 and PSLR-2 levels were significantly increased following exposure to four different p53-activating stimuli (Nutlin, etoposide, cisplatin, gamma radiation) compared to vehicle control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 is supported by qRT-PCR data shown in Figure 3F with appropriate positive (BAX) and negative (AchR) controls. The validation in an independent cell type (LUAD) not included in the meta-analysis datasets strengthens confidence in the generalizability of the findings. Statistical significance is reported for all conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "Both PSLR-1 and PSLR-2 were significantly reduced in LUAD patient samples compared to normal lung tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 is supported by qRT-PCR data from patient samples (n=10 LUAD, n=5 normal) with t-test (p<1.23\u00d710^-7) shown in Figure 4A. The downregulation in patient samples is consistent with loss of tumor-suppressive function during tumorigenesis and provides clinical relevance for the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "RNA-seq of A549 cells with elevated PSLR-1 or PSLR-2 expression showed significantly higher expression of genes with positive associations in TCGA LUAD, preferential elevation of tumor-suppressor genes and suppression of oncogenes, with significantly distinct distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 are supported by RNA-seq data from lncRNA overexpression experiments with Wilcoxon rank-sum tests (p<7.9\u00d710^-12 and p<5.6\u00d710^-6) shown in Figures 4B and 4C. The consistency between TCGA associations and experimental perturbations provides strong validation of the computational predictions and demonstrates functional relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "GSEA of A549 cells with elevated PSLR expression showed the p53 pathway was consistently the top upregulated Hallmark geneset, while proliferation-linked genesets (E2F targets, G2M checkpoint, mitotic spindle, MYC targets) were consistently among the top downregulated pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 are supported by GSEA results (FDR<0.05) shown in Figure 4D. The consistent ranking of p53 pathway upregulation and proliferation pathway downregulation across both PSLRs provides strong evidence for their tumor-suppressive functions and mechanistic insight into their mode of action.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Enrichr analysis showed E2F4 and FOXM1 were the most enriched transcriptional regulators for downregulated genes and p53 for upregulated genes with elevated PSLR expression, and HOMER analysis identified CHR (cell cycle genes homology region) motif as consistently enriched in promoters of downregulated genes, with literature evidence showing CHR-containing G2/M genes are activated by FOXM1-containing complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 are supported by Enrichr and HOMER analyses shown in Figures 4E and 4F, with citation to Chen et al., 2013 and Sadasivam et al., 2012 for CHR function. The convergence of transcription factor enrichment, motif enrichment, and literature evidence provides strong mechanistic insight into how PSLRs regulate cell cycle genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Expression of PSLR-1 or PSLR-2 in A549 and H460 LUAD cells resulted in significantly decreased cell growth, decreased colony formation, and decreased live cell numbers without changes in viability, while MALAT1 overexpression increased cell growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 are supported by MTT assays, colony formation assays, and Trypan Blue exclusion data shown in Figures 5A, 5B, 5C, and Figure 5\u2014figure supplement 1A, with appropriate statistical tests and replicates. The inclusion of MALAT1 as a positive control for proliferation-inducing lncRNA strengthens the interpretation. The consistency across multiple assays and two cell lines provides strong evidence for growth-suppressive functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Expression of PSLR-1 or PSLR-2 resulted in increased numbers of cells in G2/M phase, with phospho-histone H3 staining showing analogous percentages across conditions, indicating cells were arresting in G2 and not M phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 are supported by flow cytometry cell cycle analysis and phospho-histone H3 staining shown in Figure 5D and Figure 5\u2014figure supplement 1B, with appropriate positive control (colcemid). The discrimination between G2 and M arrest using phospho-histone H3 is methodologically sound and provides mechanistic insight into the growth-suppressive effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "RNA-seq and validation experiments showed that elevated PSLR levels resulted in reduced expression of nine G2 regulatory genes and increased expression of three G2 regulatory genes, with changes observed at both RNA (qRT-PCR) and protein (Western blot) levels in A549 and H460 cells, consistent with G2 cell cycle arrest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 are supported by RNA-seq data (Figure 6A), qRT-PCR data (Figure 6B), and Western blot data (Figure 6C) showing coordinated changes in G2 cell cycle regulators. The consistency across RNA and protein levels and across two cell lines provides strong evidence for the mechanism of G2 arrest. The median fold changes and FDR values reported for RNA-seq data are highly significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "In TCGA patient samples across 10 cancer types, there was a significantly distinct expression distribution of genes that inhibit versus induce G2 cell cycle arrest when comparing samples with high versus low PSLR expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 is supported by Wilcoxon rank-sum tests (p=5.09\u00d710^-4 for PSLR-1 and p=2.72\u00d710^-4 for PSLR-2) shown in Figure 6D. The validation of G2 cell cycle gene expression patterns in patient samples provides clinical relevance and demonstrates that the experimental findings in cell lines are reflected in human tumors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "RNA-seq analysis showed that genes whose overexpression correlated with favorable patient outcome had preferentially higher expression with elevated PSLR levels, while genes linked to unfavorable prognosis were preferentially reduced, with significantly distinct distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 are supported by RNA-seq data analysis with Wilcoxon rank-sum tests (p=1.54\u00d710^-55 for PSLR-1 and p=2.49\u00d710^-86 for PSLR-2) shown in Figure 7A. The extremely significant p-values and the directional consistency with prognostic associations provide strong evidence that PSLR levels impact patient-relevant gene expression programs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "Kaplan-Meier survival analysis showed that LUAD patients with high PSLR-1 or PSLR-2 expression had significantly increased overall survival compared to patients with low expression, with significant favorable prognostic associations also observed in multiple other cancer types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 are supported by Kaplan-Meier survival analysis with log-rank tests (p<7.0\u00d710^-3 for LUAD) shown in Figure 7B. The survival associations across multiple cancer types provide strong clinical relevance for the findings and demonstrate that the growth-suppressive functions of PSLRs translate to patient outcomes.",
+    "result_type": "MAJOR"
+  }
+]

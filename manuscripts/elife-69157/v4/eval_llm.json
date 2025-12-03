@@ -1,0 +1,308 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Out-of-frame TCR/BCR rearrangements serve as natural calibrators for PCR bias because they do not form functional receptors, are not subject to clonal selection, and their V- and J-gene frequencies remain stable at recombinational frequencies despite immune repertoire changes. Deviations from these stable frequencies in sequenced data indicate PCR amplification bias rather than biological variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C31 establish a logical biological foundation for using out-of-frame rearrangements as calibrators. The reasoning is sound: non-functional rearrangements lack selective pressure (C25-C26), change frequencies only passively (C27), form independently of in-frame rearrangements (C28), and therefore maintain stable recombinational frequencies (C29). Figure 1 data supports this stability claim. The conclusion that deviations indicate PCR bias (C30) and that out-of-frame clonotypes can serve as calibrators (C31) follows logically from these premises.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The Over Amplification Rate (OAR) is defined as the ratio of observed (read count-based) to expected (unique clone count-based) frequencies of V- and J-genes among out-of-frame rearrangements, normalized by the average OAR. OAR equals 1 under ideal conditions and deviates increasingly for 5'-RACE, one-side multiplex (VMPlex), and two-side multiplex (VJMPlex) methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C32-C37 define the OAR measure with clear mathematical formulation. The definition is internally consistent and the mathematical formulas are provided. Figure 2 demonstrates that OAR values deviate from 1 in the expected order (RACE < VMPlex < VJMPlex), with statistical significance shown (C117-C118, p<0.001 and p<0.0001). The measure is well-defined and empirically validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "OAR is a universal measure applicable to different adaptive immune receptor types (TCR alpha, beta, BCR heavy chains) and T cell subpopulations, with OARs for 5'-RACE repertoires remaining close to 1 (range 0.5-2) across all tested conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 demonstrate OAR universality through empirical testing across multiple receptor types and cell populations shown in Figure 3. The data show consistent OAR values near 1 for low-biased methods across different conditions. While C42 offers speculation about variance differences, the overall conclusion of universality (C43) is well-supported by the breadth of data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "OAR accuracy is affected by sequencing coverage, abnormally large clonotypes, and mathematical properties of the formula. Minimum sufficient coverage is 1.8 reads/clone (multiplex) or 2.5 reads/clone (RACE) for ~10% error. Excluding the top clone per V/J-gene subgroup and using population frequencies when sample frequencies deviate significantly improves accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C53 systematically address factors affecting OAR accuracy with supporting data. Figure 4a demonstrates that excluding one top clone restores accuracy for specific genes (C50), Figure 4b provides down-sampling analysis supporting the minimum coverage thresholds (C53), and Figure 2\u2014figure supplement 1 supports using population frequencies under low coverage (C45). The recommendations are data-driven and address practical implementation concerns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C100",
+      "C101"
+    ],
+    "result": "Sequencing errors (single nucleotide substitutions and indels) generate artificial clones that compromise repertoire and OAR accuracy. These errors are addressed by filtering substitution-generated clones using VDJTOOLS and indel-generated clones using iROAR's Filter function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 correctly identify sequencing errors as a source of artificial diversity, with accurate descriptions of how substitutions and indels affect clone counts differently (C55-C56). The methodological claims C100-C101 describe the filtering approach. While the specific filtering criteria (Levenshtein distance = 1, 1:500 ratio) are stated, no validation data is provided showing the effectiveness of this filtering. However, the approach is reasonable and the problem is correctly identified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The OAR-index, defined as the root mean square deviation of OARs from 1, quantifies overall repertoire bias and is directly proportional to amplification bias, with an ideally unbiased repertoire having OAR-index=0.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 define the OAR-index with clear mathematical formulation. The measure is a straightforward summary statistic derived from individual OAR values. The mathematical definition is sound and the interpretation (lower values = less bias) is logical. The measure is used throughout the validation experiments (e.g., C66, C68) demonstrating its practical utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The iROAR software corrects amplification bias by dividing observed read counts by normalization coefficients calculated from V- and J-gene OARs. An iterative procedure with adjustable parameter 'mt' (0-1) addresses potential V-J co-dependency, though all analyzed repertoires required only one iteration with mt=1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C61-C65 describe the iROAR correction algorithm with clear methodology. The approach is mathematically straightforward (dividing by normalization coefficients). The iterative procedure (C64) addresses a potential issue (V-J co-dependency, C63), though the observation that mt=1 sufficed for all datasets (C65) suggests this may not be a major concern in practice. Figure 5a provides a clear flowchart of the algorithm.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "In silico validation using artificially biased RACE repertoires shows iROAR correction reduces OAR-index from 1.81 to 0.76 and increases R\u00b2 correlation with the original repertoire from 0.5350 to 0.8915.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 present validation results from in silico experiments shown in Figure 5b. The improvements in both OAR-index (bias-dependent measure) and R\u00b2 (independent measure) provide convergent evidence of correction effectiveness. The use of artificially biased data from real RACE repertoires is a sound validation approach, though it assumes the artificial bias model accurately reflects real multiplex PCR bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Testing on paired RACE and multiplex PCR experimental datasets shows iROAR correction decreases OAR-index 1.5-fold, increases Pearson correlation and R\u00b2 by 1.5-fold each, and increases Morisita-Horn similarity index 1.7-fold. Importantly, bias correction improves both out-of-frame and in-frame clone sets despite using only out-of-frame clones for coefficient calculation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C71 present validation on real paired experimental data with multiple independent metrics (Pearson r, R\u00b2, Morisita-Horn) all showing significant improvement (Figure 6, p<0.0001). The observation that in-frame clones also improve (C71, Figures 5c-d) is particularly important as it demonstrates the method corrects actual biological signal, not just the calibrator clones. Statistical testing is appropriate (Wilcoxon matched-pairs test).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C119",
+      "C120"
+    ],
+    "result": "Comparison with biological spike-in methods using four TRA libraries shows iROAR and spike-in detected biases correlate strongly for matched pairs (Pearson's r=0.78 average for V/J genes, r=0.7182 for VJ combinations) versus mismatched pairs (r=0.46), with iROAR showing higher reproducibility between replicates than spike-in controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C78 and C119-C120 describe a well-designed spike-in comparison experiment with appropriate replication (2 primer mixes \u00d7 2 replicates). The correlation values (Figure 7) demonstrate good agreement between methods, validating iROAR against an established approach. The higher reproducibility of iROAR (C78, Figure 7d-e) is notable. The experimental design with different primer mixes tests robustness. Sample sizes and coverage (Table 1, C76) are adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "iROAR correction of repertoires prepared with different multiplex PCR protocols (without common normalization or spike-ins) increases their consistency: OARs approach 1, R\u00b2 for V/J frequencies increases 1.31-1.5-fold, and clone frequency similarity metrics (Morisita-Horn, Pearson r, R\u00b2) increase 1.5-2-fold, demonstrating each repertoire contains sufficient information for independent correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C85 demonstrate iROAR's ability to harmonize repertoires from different protocols (Figure 8). The independent correction of each repertoire (C84) without shared normalization is a key strength. Multiple metrics show convergent improvement (C82-C83). The preservation of diversity (C80) while improving quantitative accuracy is important. This addresses a major practical need for cross-study comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Most immune repertoire library preparation methods suffer from amplification bias due to PCR's exponential nature. While existing methods (UMIs, spike-ins) can reduce bias, criteria for estimating residual bias are lacking. iROAR is claimed to be the only currently available technique for directly measuring and correcting PCR bias in DNA-based multiplex repertoires without additional experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C89 accurately describe the problem and existing approaches. However, C90's claim of being \"the only currently available technique\" is strong and difficult to verify without comprehensive knowledge of all existing methods. The claim is qualified (\"for DNA-based multiplex repertoires without additional experiments\"), but the uniqueness assertion should be viewed cautiously. The method's novelty and utility are well-demonstrated, but the exclusivity claim may be overstated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "iROAR offers advantages over spike-in methods by using hundreds-thousands of natural out-of-frame calibrators per V-J pair, potentially providing more reliable bias estimates due to higher CDR3 diversity. The method can also be used for primer optimization, is fully computational and easily implemented, and enables comparison of datasets from different library preparation methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C96 describe advantages and applications of iROAR. The comparison to spike-ins (C91-C92) is logical\u2014more calibrators with greater diversity should provide more robust estimates. The primer optimization application (C93) is reasonable though not demonstrated. Claims about ease of implementation (C94) and enabling cross-method comparisons (C95-C96) are supported by the validation data showing improved consistency between methods. These are appropriate conclusions from the presented work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C11",
+      "C12"
+    ],
+    "result": "High-throughput sequencing of adaptive immune receptor repertoires is valuable for immunology studies, but detecting and correcting discrepancies between real and observed clone frequencies remains challenging. The developed iROAR approach can increase accuracy and consistency of repertoires reconstructed by different methods, making them more applicable for comparative analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C8-C12 provide context and motivation for the work. These are well-supported by extensive citations (C12) and the demonstrated improvements in repertoire consistency (C8, supported by validation data in C68-C70, C82-C83). The importance of accurate frequencies (C11) is self-evident for quantitative analyses. The conclusion about increased applicability for comparative analysis (C8) is directly supported by the cross-method validation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Different immune repertoire sequencing methods (DNA-based multiplex, RNA-based multiplex, 5'-RACE) have distinct trade-offs between bias, sensitivity, and comprehensiveness. DNA-based methods provide comprehensive results but high bias; 5'-RACE has lowest bias but lower sensitivity; one-side RNA multiplex is a compromise. UMI-based correction works for RNA but is challenging for DNA methods, and existing DNA multiplex bias correction using synthetic spike-ins is cost-ineffective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C24 provide accurate background on existing methods with appropriate citations. The characterization of trade-offs between methods is well-established in the field. The statement about UMI challenges for DNA methods (C23) and limitations of spike-in approaches (C24) correctly identify the gap that iROAR addresses. This background appropriately motivates the development of a computational correction method for DNA-based multiplex approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The study used human TCR and BCR repertoires processed with standard bioinformatics tools (MiXCR, VDJTOOLS, FASTP) with error correction and pseudogene filtering. New experimental data for validation included TRA libraries from CD8+ T cells with biological spike-ins, prepared with two different primer mixes in duplicate and sequenced with ~480,000 reads per library. Software and data are publicly available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C115 describe methods and data with appropriate detail. Standard tools are properly cited (C98-C102). The experimental design for spike-in comparison (C103-C111) is clearly described with adequate replication and coverage. Sample preparation methods are standard and appropriate. Data and software availability statements (C114-C115) support reproducibility. The methods are sufficiently detailed for replication, though some parameters (e.g., MiXCR settings) could be more explicit.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "Statistical testing using Levene's test shows OAR variance is significantly higher for VJMPlex (p<0.0001) and VMPlex (p<0.001) compared to RACE, confirming increased bias in multiplex methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C118 report statistical test results from Figure 2a. Levene's test is appropriate for comparing variances. The p-values indicate highly significant differences. The test directly supports the claim that multiplex methods have higher bias (greater variance in OAR values) than RACE. Sample sizes appear adequate (15 individuals per method, C112). The statistical approach is sound.",
+    "result_type": "MINOR"
+  }
+]

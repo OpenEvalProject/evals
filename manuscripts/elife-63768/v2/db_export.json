@@ -1,0 +1,1357 @@
+{
+  "submission": {
+    "id": "ad8fcd0b-092f-4447-acde-7ebc3c822966",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T03:29:56.904199Z",
+    "updated_at": "2025-12-03T03:29:56.904199Z"
+  },
+  "content": [
+    {
+      "id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "submission_id": "ad8fcd0b-092f-4447-acde-7ebc3c822966",
+      "content_type": "manuscript",
+      "content_text": "# MicroRNAs mediate precise control of spinal interneuron populations to exert delicate sensory-to-motor outputs\n\n## Authors\n\n- Shih-Hsin Chang<sup>1</sup> ([ORCID: 0000-0003-2821-7095](https://orcid.org/0000-0003-2821-7095))\n- Yi-Ching Su<sup>2</sup> ([ORCID: 0000-0002-2760-9540](https://orcid.org/0000-0002-2760-9540))\n- Mien Chang<sup>2</sup>\n- Jun-An Chen<sup>2</sup> ([ORCID: 0000-0001-9870-3203](https://orcid.org/0000-0001-9870-3203)) \u2020\n\n### Affiliations\n\n1. Taiwan International Graduate Program in Interdisciplinary Neuroscience, National Yang-Ming University and Academia Sinica Taipei Taiwan\n2. Institute of Molecular Biology, Academia Sinica Taipei Taiwan\n3. Neuroscience Program of Academia Sinica, Academia Sinica Taipei Taiwan\n\n\u2020 Corresponding author\n\n## Abstract\n\nAlthough the function of microRNAs (miRNAs) during embryonic development has been intensively studied in recent years, their postnatal physiological functions remain largely unexplored due to inherent difficulties with the presence of redundant paralogs of the same seed. Thus, it is particularly challenging to uncover miRNA functions at neural circuit level since animal behaviors would need to be assessed upon complete loss of miRNA family functions. Here, we focused on the neural functions of MiR34/449 that manifests a dynamic expression pattern in the spinal cord from embryonic to postnatal stages. Our behavioral assays reveal that the loss of MiR34/449 miRNAs perturb thermally induced pain response thresholds and compromised delicate motor output in mice. Mechanistically, MiR34/449 directly target Satb1 and Satb2 to fine-tune the precise number of a sub-population of motor synergy encoder (MSE) neurons. Thus, MiR34/449 fine-tunes optimal development of Satb1/2on interneurons in the spinal cord, thereby refining explicit sensory-to-motor circuit outputs.\n\n## Introduction\n\nMicroRNAs (miRNAs) are a class of small regulatory non-coding RNAs that participate in various biological functions by repressing gene expression post-transcriptionally (Ambros, 2004; Bartel, 2004; He and Hannon, 2004; Kim, 2005). Several mouse knockout (KO) studies of Dicer, the pivotal RNase for generating mature miRNAs, have revealed that global depletion of these small regulatory RNAs leads to obvious defects in embryonic development, from cell differentiation to animal survival, underlining the functional importance of miRNAs during embryonic development (Bernstein et al., 2003; Chen et al., 2011; Harfe et al., 2005; Kanellopoulou et al., 2005; Tung et al., 2015). However, loss-of-function studies on most individual miRNAs have revealed minor or no overt developmental or behavioral phenotypes in multiple organisms, partly reflecting the functional redundancy of miRNAs due to their polycistronic and paralogous features (Alvarez-Saavedra and Horvitz, 2010; Miska et al., 2007; Olive et al., 2015; Park et al., 2012). Moreover, a single miRNA can target multiple mRNAs, and a targeted mRNA can also be bound by different miRNAs at its 3\u02b9 untranslated region (3\u02b9 UTR) with differential stoichiometric affinities, representing a reciprocal one-to-multiple regulatory mechanism (Bartel, 2009; Krek et al., 2005; Loh et al., 2011). These multiple interactions with differential affinities and stoichiometries add complexity to functional redundancy, rendering it exceedingly difficult to study the function of individual miRNAs. Hence, considering the extensiveness of miRNA regulatory networks as well as their buffering effects, unequivocal functional assessments of a miRNA can only be established upon complete removal of all associated redundant miRNAs and pathways. Fortunately, the advent of CRISPR-Cas9-mediated technology has made it more feasible to study miRNA function in mouse models (Li et al., 2017).\n\nMany miRNAs are clustered with redundant paralogs in the genome. One well-characterized example of a polycistronic miRNA family is MiR34/449, which comprises six homologous miRNAs (MiR34a, 34b, 34c, 449a, 449b, and 449c) located at three different genomic loci\u2014Mir34a, Mir34b/c, and Mir449a/b/c (Mir449)\u2014that encode evolutionary-conserved sequences among vertebrates (Olive et al., 2015; Song et al., 2014). In this study, we use \u2018Mir34\u2019 and \u2018MiR34\u2019 to indicate the mouse gene and the mature form of miRNA, respectively (Desvignes et al., 2015). The MiR34a, MiR34b, and MiR34c (MiR34) miRNAs appear to be direct targets of p53, and they have been shown to be involved in p53-mediated apoptosis in cancer contexts (Bommer et al., 2007; Corney et al., 2007; He et al., 2007; Raver-Shapira et al., 2007). Whereas Mir34a and Mir34bc are not located within other genes, the Mir449 cluster is embedded in the second intron of a host gene, Cdc20b (cell division cycle 20 homologue B), and similar expression patterns of MiR449 and Cdc20b in mouse testis support that they may be subjected to the same mechanism of transcriptional regulation (Bao et al., 2012). Previous studies have demonstrated that the p53-mediated MiR34 and E2F1-mediated MiR449 pathways both target pro-survival genes to regulate cell fate determination (Liz\u00e9 et al., 2011; Liz\u00e9 et al., 2010). Apart from this functional redundancy in the context of DNA damage, an additional role for MiR449 in regulating multiciliogenesis by suppressing the Notch pathway has been demonstrated (Liz\u00e9 et al., 2011; Marcet et al., 2011). Mature MiR34a has been shown to be ubiquitously expressed in a variety of organs, whereas MiR34bc and MiR449 exhibit a cell-type-specific expression pattern, predominantly in ciliated cells, such as in respiratory and reproductive tissues, as well as in the ependymal cells enriched with cilia responsible for cerebrospinal fluid flow within the CNS (Bao et al., 2012; Kasai et al., 2016; Olive et al., 2015). These reports highlight that MiR34/449 might have a functional significance in ciliogenesis (Chevalier et al., 2015; Concepcion et al., 2012; Otto et al., 2017; Song et al., 2014; Wu et al., 2014). Due to their shared and redundant seed sequences, MiR34/449 displays compensatory expression upon single KO in a context-dependent manner, emphasizing the necessity to enact combinatorial KO of all Mir34/449 alleles (Bao et al., 2012; Choi et al., 2017; Concepcion et al., 2012; Wu et al., 2014).\n\nBased on three studies of Mir34bc and Mir449 double KO (DKO) mice, as well as Mir34/449 triple KO (TKO) mice, the most prominent phenotype arising from MiR34/449 ablation is the impairment of motile ciliogenesis, which results in respiratory dysfunction, male/female infertility, and postnatal lethality (Otto et al., 2017; Song et al., 2014; Wu et al., 2014; Yuan et al., 2019). Given that the MiR34/449 family is strongly expressed in the CNS, it is rather surprising that their function there has been largely unexplored, with only a potential role for MiR34/449 in regulating cortex development having been revealed in embryos (Fededa et al., 2016). In fact, information on the postnatal and adult functions of MiR34/449 has been lacking, perhaps because Mir34/449 TKO mice exhibit a low survival rate, so acquiring sufficient numbers of adult Mir34/449 TKO mice for behavioral assay is arduous. We previously uncovered that MiR34/449 exhibits a dynamic expression pattern during spinal cord development (Li et al., 2017), so we hypothesized that MiR34/449 might exert an as yet uncharacterized function in the spinal cord. In this study, we tested that hypothesis for embryonic, postnatal and adult mice.\n\nThe spinal cord is one of the most important executive centers for body movement, conveying somatosensory information and integrating motor commands emanating from spinal cord per se or the brain (Arber, 2017; Arber and Costa, 2018). The sophisticated processing and integration of sensory and motor circuits relies on proper organization of multiple neuron types in the spinal cord that possess related anatomical functions (Osseward and Pfaff, 2019). Interneurons (INs) that reside in the dorsal horn of the spinal cord terminate in exteroceptive sensory fibers and mediate sensory processing. The ventral horn contains both motor neurons (MNs) and various INs, which are critical for motor function and for generating the rhythmicity of motor behaviors (Dasen, 2018; Garcia-Campmany et al., 2010). The hallmarks of neuron populations in the intermediate region of the dorso-ventral spinal cord have just emerged following identification of specific markers (Dobrott et al., 2019). This region serves as a relay station that receives multiple convergent inputs from proprioceptive, exteroceptive, and corticospinal neurons, which connect monosynaptically to MNs (Levine et al., 2014; Tripodi et al., 2011). Activation of these premotor neurons, denoted motor synergy encoders (MSE), induces multiple motor pools that contribute to complex movements (Levine et al., 2014; Osseward and Pfaff, 2019). These sensory feedback pathways are indispensable for proper formation of spinal circuits and for motor execution, and their perturbation can result in defects of limb position, or imprecise or stiff movement (Gatto et al., 2019; Koch et al., 2018; Osseward and Pfaff, 2019). Among MSE, Satb1/2on neurons, a sub-population of lamina V/VI and III sensory relay neurons, represent a family of typical intermediate INs that control proper circuit development in a core sensory-to-motor spinal network. Conditional ablation of Satb2 from the intermediate spinal cord results in a hyperflexion phenotype upon triggering the limb withdrawal reflex (Hilde et al., 2016). Although expression of Satb2 is quite dynamic during spinal development, how generation of Satb2on INs controls precise sensory-to-motor output during development remains unknown.\n\nIt is well documented that miRNAs are critical regulators during embryonic spinal cord development, playing roles in progenitor patterning, subtype specification, functional maintenance, and neural regeneration (Chen et al., 2011; Chen and Wichterle, 2012; Chen and Chen, 2019; Kye and Gon\u00e7alves, 2014; Tung et al., 2015; Wu et al., 2012; Zhu et al., 2013). Furthermore, emerging evidence also demonstrates that miRNAs are not only required for early development but that they also display critical postnatal or adult-specific functions (Sun and Lai, 2013). Notably, loss of Dicer from late-stage post-mitotic spinal MNs using ChAT-Cre results in development of a spinal muscular atrophy (SMA)-like phenotype in a mouse model (Haramati et al., 2010). SMA is an autosomal recessive MN disease causing early childhood death. Furthermore, mice in which Dicer has been knocked out from proprioceptive sensory neurons display impaired maintenance of monosynaptic sensory-motor circuits in the spinal cord (Imai et al., 2016). However, it remains unclear if any miRNA participates in IN development and maintenance, or if miRNAs participate at neural circuit and physiological levels. Given that MiR34/449 expression varies dynamically during spinal cord development, we were prompted to test if this miRNA family is important for MN and IN development, as well as in the operation of sensory-motor circuits in the spinal cord.\n\nTo address these possibilities, we generated Mir34bc/449 DKO and Mir34/449 TKO mouse models, and then systematically investigated their phenotypes relating to CNS development. First, we uncovered low survival of postnatal and adult Mir34bc/449 DKO and Mir34/449 TKO mice. However, we applied several behavioral tests to assay spinal functions in survivors and observed several unusual phenotypes, including blepharoptosis, abnormal posture with back-arching, hind tiptoe walking, jumpy movement, and stimulant-induced hypersensitivity. Although motor systems of Mir34bc/449 DKO or Mir34/449 TKO mice only mildly compromised, we found that the MiR34/449 mutant mice displayed a more hypersensitive threshold in response to thermally\u00a0induced pain stimulation. Mechanistically, we observed that the number of Satb1/2-expressing INs increased in the spinal cords of Mir34/449 KO mice. This Satb1/2 increment is potentially targeted by MiR34/449 via direct binding in the spinal cord. Our findings demonstrate that MiR34/449 depletion results in a change to a spinal IN population that might contribute to altered sensory-motor responses, thereby revealing an important role for MiR34/449 in regulating the sensory-motor circuitry.\n\n## Results\n\n### MiR34/449 members are highly expressed in the developing and adult spinal cord\n\nIn previous studies, we identified a series of specific developmental stage enriched miRNAs during spinal cord development by taking advantage of an embryonic stem cell (ESC) differentiation approach (Chen et al., 2011; Wichterle et al., 2002). The MiR34/449 family particularly drew our attention as NanoString miRNA profiling revealed a very dynamic and distinct expression pattern, even they have the same seed sequence (Li et al., 2017;\u00a0Figure 1A). Despite other studies having illustrated the expression patterns and functions of MiR34/449 in lung tissues and germ cells (Concepcion et al., 2012; Otto et al., 2017; Song et al., 2014; Wu et al., 2014), it remained enigmatic if these miRNAs are expressed in embryonic and adult neural tissues and what were their potential functions in the CNS. To address this knowledge gap, we systematically compared expression of MiR34/449 among the CNS (neocortex, cerebellum, and spinal cord), peripheral neural tissues (trigeminal ganglion and dorsal root ganglion), and non-neural tissues (heart, liver, and muscle) at an adult stage (postnatal day P50; Figure 1B~1F) by quantitative RT-PCR (RT-qPCR). We found MiR449b-5p to be undetectable in most tissues. Generally, the guide strands of the remaining five MiR34/449 members were enriched in neural tissues relative to non-neural tissues (Figure 1B~1F). Although MiR34a-5p is expressed in a variety of organs, it was much more abundant in neural than non-neural tissues. Notably, MiR34a-5p exhibited the highest expression level in the spinal cord (Figure 1B). This greater neural tissue enrichment was also apparent for MiR34b-5p, MiR34c-5p, MiR449a-5p, and MiR449c-5p (Figure 1C~1F).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/63768/elife-63768-fig1-v2.jpg)\n\n**Figure 1.:** (A) Sequence alignment of mouse MiR34/449 miRNAs with asterisks indicating identical or conserved nucleotides. The seed sequences are highlighted in red. (B\u2013F) Expression levels of MiR34/449 (MiR34a-5p, MiR34b-5p, MiR34c-5p, MiR449a-5p, and MiR449c-5p), as measured by RT-qPCR in multiple tissues of adult wild-type (WT) mice at postnatal day P50. The MiR34/449 miRNAs were first normalized against ubiquitously expressed MiR16 in the corresponding samples (delta Ct). The relative level of each miRNA was then normalized with that of cortex (delta-delta Ct) and is represented as fold-change (data represent mean \u00b1 SD from N\u00a0\u2265\u00a03 independent biological samples). (G\u2013K) Expression levels of MiR34/449 miRNAs, as determined by RT-qPCR at various developmental time-points in the spinal cord. The relative level of each miRNA was first normalized against the ubiquitously expressed MiR16 (delta Ct), and then further normalized against that at the P1 time-point (delta-delta Ct) and is represented as fold-change (data represent mean \u00b1 SD from N\u00a0=\u00a03 independent biological samples). Note that MiR34/449 miRNAs show dynamic expression profiles during spinal cord development, with both MiR34a-5p and MiR34b/c-5p showing increasing levels, whereas MiR449a-5p and MiR449c-5p show decreasing levels. (L) Schematic illustration of a transverse spinal section across the dorso-ventral axis. (M) In situ hybridization (ISH) of MiR34a-5p with immunostaining for NeuN/ChAT in adjacent sections of the lumbar spinal cord at P20. (N and O) High-magnification images of the ventral (N) and dorsal (O) spinal cord, showing expression of MiR34a-5p in ventral MNs and dorsal INs. Scale bars represent 100 \u03bcm in (M) and 50 \u03bcm in (N) and (O).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63768/elife-63768-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Illustration of the sgRNA target sites for deleting the Mir449 cluster (Mir449a/b/c) embedded in the host gene Cdc20b. Around 1.76 Kb of the DNA sequence was removed by the CRISPR-Cas9-mediated method, and genotyping primers designed to distinguish WT and KO alleles are shown in the diagram. (B) After CRISPR-Cas9-mediated Mir449 deletion, the DNA sequence was verified as shown. The two sgRNA sequences are highlighted by red boxes, and the PAM sites are indicated by red bars. (C) Genotyping analyses of DNA isolated from mouse tails. (D) Expression of MiR449a and MiR449c was undetectable in Mir449-/- mice, as determined by RT-qPCR of spinal cord tissues from littermate-controlled WT, Mir449+/-, and Mir449-/- mice at E10.5 (WT and Mir449-/-, n\u00a0=\u00a02; Mir449+/-, n\u00a0=\u00a03). Relative levels of each miRNA are normalized against the value for WT and are represented as fold-change. (E) The expression of Mir449 cluster and its host gene Cdc20b in various tissues. Relative levels are normalized to values for lung tissue and are represented as fold-change (WT tissues, n\u00a0=\u00a01; Mir449+/- tissues, n\u00a0=\u00a02, Mir449-/- tissues, n\u00a0=\u00a03). Data are presented as mean \u00b1 SD. (F\u2013H) Expression levels of MiR34/449 miRNAs (MiR34a-5p, MiR34b-5p, MiR34c-5p, MiR449a-5p, and MiR449c-5p) in spinal cord of postnatal day P14 WT and indicated KO mice, as measured by RT-qPCR. Relative levels of each miRNA are normalized with the respective value for WT and are represented as fold-change (n\u00a0=\u00a05). Data are presented as mean \u00b1 SD. Student\u2019s t test. * denotes p<0.05; \u2018NS\u2019 denotes \u2018not significant\u2019.\n\nThis pattern of neural tissue enrichment prompted us to scrutinize expression profiles of MiR34/449 for embryonic (embryonic day E11.5~E17.5) to postnatal (P1~P28) stages by RT-qPCR (Figure 1G~1K). Generally, MiR34a-5p expression increased gradually across postnatal stages, with MiR34b-5p and MiR34c-5p also displaying a propensity for postnatal enrichment (Figure 1G~1I). Conversely, MiR449a-5p and MiR449c-5p were enriched at embryonic stages, manifesting much lower expression levels at postnatal stages when compared to MiR34a/b/c (Figure 1J and K).\n\nTo further determine the spatial distribution of MiR34/449 expression in mouse spinal cord, we assessed in situ hybridization of MiR34a-5p, representing the most abundantly expressed member of the MiR34/449 family in postnatal spinal cords (Figure 1L and M). To label neurons in the spinal cord or adjacent regions, we performed immunostainings using pan-neuronal (NeuN) and mature MN (ChAT) markers after in situ hybridization. For both embryonic and postnatal stages, we found that MiR34a-5p is expressed in most spinal cord neurons (Figure 1M), including ventral MNs (Figure 1N) and most dorsal INs (Figure 1O). These RT-qPCR and in situ hybridization results demonstrate that MiR34/449 members are strongly expressed in the CNS, most prominently in the spinal cord, albeit with a very dynamic expression pattern during spinal cord development. Among the MiR34/449 members, MiR34a-5p exhibits the strongest expression in the spinal cord, with low embryonic-stage expression and increasing levels as postnatal stages progress.\n\n### Mir34bc/449 DKO and Mir34/449 TKO mice exhibit profound neurological disorders\n\nMotivated by our above-described findings, we hypothesized that the MiR34/449 miRNAs may play critical roles in the developing spinal cord. As MiR34/449 members display extensive homology and a given miRNA family typically manifests dominant cell-type-specific expression (Olive et al., 2015), we generated a Mir34/449 TKO mouse line in which all six family members were completely deleted from the Mir34a, Mir34bc, and Mir449abc loci (Figure 2A). To do that, previously generated Mir34afloxed and Mir34bc-/- mice (Concepcion et al., 2012) were first interbred with germ line Cre mice (E2a-Cre) to acquire Mir34a-/-;Mir34bc-/- DKO mice. Consistent with previous studies (Bao et al., 2012; Concepcion et al., 2012), we did not observe an overt phenotype in this DKO mouse line (data not shown).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/63768/elife-63768-fig2-v2.jpg)\n\n**Figure 2.:** (A) Experimental strategy to generate the Mir34/449 TKO or Mir34bc/449 DKO mice. (B) Survival rates of Mir34bc/449 DKO and Mir34/449 TKO mice compared to littermates (Ctrl; all littermates of various genotypes have been pooled), and compared by log-rank test. Both Mir34bc/449 DKO and Mir34/449 TKO mice show similar mortality levels in the first 4 weeks. (C) Mir34bc/449 DKO and Mir34/449 TKO mice display reduced body weight compared to all Ctrl mice. Data are presented as mean \u00b1 SD. Two-way ANOVA with Tukey\u2019s multiple comparisons test (for each day); * denotes p<0.05. (D) Side and top views of Mir34bc/449 DKO or Mir34/449 TKO mice exhibiting abnormal body posture compared with the Ctrl, such as back-arching, curled body, hind tiptoe walking, and stimulus-induced hypersensitivity (see videos for details).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63768/elife-63768-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Representative photos illustrating the blepharoptosis (ptosis; drooping of the upper eyelids) phenotype of the Mir34bc/449 DKO mice at 3 weeks old (A) and 8 weeks old (B). The Mir34bc/449 DKO and Mir34/449 TKO mice typically developed this phenotype for one eye only (occurrence\u00a0~8.8% for observed mutant mice), and only a very small proportion of the mutant mice exhibited this defect in both eyes. Arrows point to the affected side.\n\nSubsequently, we generated Mir449-/- mice via a CRISPR-Cas9 approach with the intention of interbreeding it with our Mir34a-/-;Mir34bc-/- DKO mice to acquire the TKO (Mir34a-/-;Mir34bc-/-;Mir449-/-) line (Figure 1\u2014figure supplement 1A) (see Materials and methods for details). Given that the gene encoding the Mir449 cluster is embedded in the second intron of a host gene, Cdc20b, we designed two single-guide RNAs (sgRNAs) flanking the Mir449 cluster in exon 2 and exon 3 of Cdc20b (Figure 1\u2014figure supplement 1A), and then confirmed complete deletion of Mir449 by sequencing and genotyping (Figure 1\u2014figure supplement 1B and C). RT-qPCR further confirmed that expression of MiR449 had been abolished (Figure 1\u2014figure supplement 1D). Although we recorded elevated Cdc20b mRNA levels specifically in testis and lung of our MiR449-deficient mouse model (Figure 1\u2014figure supplement 1E), we did not observe overt defects in survival or fertility for either male or female mice. Moreover, we noticed compensatory expression of MiR34bc and MiR449 expression in the spinal cords of Mir34a-/-;Mir34bc-/- and Mir34a-/-;Mir449-/- compound KO mice (Figure 1\u2014figure supplement 1F~H), supporting the desideratum to generate complete MiR34/449 KO mice to assess the functions of that miRNA family in the spinal cord.\n\nTo achieve this, mice harboring one wild-type (WT) allele of the Mir34/449 family were then intercrossed to generate Mir34/449 TKO or Mir34bc/449 DKO mice (Figure 2A). Consistent with previously reported phenotypes for these lines, both Mir34/449 TKO and Mir34bc/449 DKO mice exhibited partial postnatal lethality and growth retardation with reduced body weight (Figure 2B and C;\u00a0Fededa et al., 2016; Song et al., 2014; Wu et al., 2014). Therefore, we used either Mir34/449 TKO or Mir34bc/449 DKO mice for further analyses and other genetic combinations were employed as littermate controls (Ctrl) (Figure 2A and Supplementary file 1f).\n\nUnexpectedly, both the Mir34bc/449 DKO and Mir34/449 TKO mice presented two waves of postnatal mortality: a first wave occurred after the first week (P7~P14) (Song et al., 2014), with a second wave between P21 and P28 (Figure 2B). Approximately 50% of Mir34bc/449 DKO and Mir34/449 TKO mice died within the first 2 weeks of birth, with an additional\u00a0~40% died within 4 weeks (Figure 2B). Consequently, only\u00a0~10% of mice survived to adulthood with less obvious growth retardation or abnormalities. This pattern of mortality prompted us to further investigate several of the late postnatal (P14~P28) phenotypes. For instance, we found that Mir34bc/449 DKO and Mir34/449 TKO mice presented significantly reduced body weights relative to respective controls (Figure 2C), and they manifested several unusual abnormalities, including blepharoptosis (ptosis, drooping eyelids) or microphthalmia (Figure 2\u2014figure supplement 1A and B), abnormal posture (back-arching; Figure 2D), and uncoordinated hind tiptoe walking and jumpy behavior, which resemble neurological deficits related to sensory-motor function defects (Imai et al., 2016;\u00a0Figure 2\u2014videos 1 and 2). Given that MiR34/449 miRNAs are highly expressed in the spinal cord (Figure 1) and our MiR34/449 mutant lines displayed apparent neurological disorders and peculiar moving patterns (Figure 2\u2014videos 1 and 2), we subsequently focused on identifying the functions of MiR34/449 miRNAs in mouse spinal cord.\n\n### MiR34/449-deficient mice display normal spinal MN development with jumpy pattern\n\nAs both spinal INs and MNs exhibited strong MiR34/449 expression (Figure 1N and O), we first explored if MN differentiation is affected upon MiR34/449 depletion. Detailed examination of the ventral spinal progenitor domain by immunostaining with a battery of cross-repressive transcription factor hallmarks (Chen and Chen, 2019) did not uncover obvious progenitor domain changes in MiR34/449 mutant embryos at embryonic day E10.5 (Figure 3\u2014figure supplement 1A).\n\nNext, we investigated if MN differentiation was abrogated by Mir34/449 locus deletion. We crossed our Mir34/449 TKO mice with the MN reporter Hb9::GFP mouse line to facilitate MN identification. The number and distribution of post-mitotic MNs were comparable between MiR34/449-deficient and Ctrl embryos (Figure 3\u2014figure supplement 1B). As our previous study showed that specific motor columns are preferentially affected and motor pools are eroded in conditional MN-Dicer KO mice (Chen and Wichterle, 2012), we assessed if MN subtype is affected in the Mir34bc/449 DKO and Mir34/449 TKO mice. To do that, we conducted immunostaining with the following known markers to identify each MN column type in specific spinal segments: MMC (medial motor column; Lhx3on), LMC(m) (medial division of lateral motor column; FoxP1on, Isl1on), LMC(l) (lateral division of lateral motor column; FoxP1on, Isl1off), HMC (hypaxial motor column; Lhx3off, Isl1on), and PGC (preganglionic motor column; FoxP1on, pSmadon). However, MN subtype identity did not appear to be altered in MiR34/449-deficient embryos at E12.5 (Figure 3\u2014figure supplement 1C and D). Thus, MiR34/449 miRNAs do not play an overt role in MN development.\n\nDespite MN molecular identity not being affected by MiR34/449 deficiency, this does not necessarily mean that motor function at physiological or behavior levels is not disrupted. Therefore, we tested basal motor activity and locomotor coordination of mutant mouse lines by means of open field, rotarod, and treadmill tests (Figure 3 and Figure 3\u2014figure supplement 2). We also conducted these assays on age-matched WT mice to assist evaluations of the phenotypic variance caused by interbreeding complex genetic KO mice. Our results show that both Mir34bc/449 DKO and Mir34/449 TKO mice exhibited slightly yet significantly reduced locomotor activity relative to WT and Ctrl mice (Figure 3B), while their locomotor coordination appeared normal assayed by the rotarod (Figure 3C and D). Notably, we recorded obvious and spontaneous jumpy movements in the home cages of Mir34bc/449 DKO and Mir34/449 TKO mice, as well as in the open arena (occurrence\u00a0~35%; Figure 2\u2014video 2). Ctrl mice with single or double combination KO with other MiR34/449 members also manifested this behavior with a milder extent, whereas the aged-matched WT hardly showed this phenomenon.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/63768/elife-63768-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic illustration of the behavioral tests conducted to assess motor function. (B) Quantification of locomotor activity in an open-field arena (assessed according to total distance traveled) for WT, Ctrl and indicated Mir34/449 KO mice (WT: n\u00a0=\u00a06, Ctrl: n\u00a0=\u00a024, Mir34bc/449 DKO: n\u00a0=\u00a011, Mir34/449 TKO: n\u00a0=\u00a011). (C and D) Locomotor coordination on an accelerating rotarod, displayed as latency to fall (C) and the rotation speed at which mice fell off (D). There were no differences between MiR34/449 mutants and WT/Ctrl mice (WT: n\u00a0=\u00a06, Ctrl: n\u00a0=\u00a013, Mir34bc/449 DKO: n\u00a0=\u00a05, Mir34/449 TKO: n\u00a0=\u00a07). (E\u2013H) Limb coordination and gait analyses were assayed by treadmill walking. The MiR34/449 mutants and WT/Ctrl mice have comparable running speeds (E), temporal parameters of the hindlimb (stride, stance, swing, brake, propulsion time; F), and ratios of swing and stance phases during the gait cycle (G). Limb coordination (homolateral, homologous, and diagonal phase coupling) is displayed as circular plots (H). Each symbol represents one trial from an individual mouse, and the arrow vectors represent the mean phases from all experiments for each group of genotyped mice. The length of the vector indicates the concentration of phase values around the mean (WT: n\u00a0=\u00a018, Ctrl: n\u00a0=\u00a018, Mir34bc/449 DKO: n\u00a0=\u00a08, Mir34/449 TKO: n\u00a0=\u00a08). No significant differences were observed among MiR34/449 mutant mice and Ctrl/WT mice. Data are presented as mean \u00b1 SD; one-way ANOVA with Tukey\u2019s multiple comparisons test; * denotes p<0.05; \u2018NS\u2019 denotes \u2018not significant\u2019.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63768/elife-63768-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Immunostaining for Irx3, Olig2, and Nkx2.2 reveals no obvious progenitor domain change in the cervical/brachial spinal cord section at E10.5 for the Mir34/449 TKO line compared to Ctrl embryos (pMN, motor neuron progenitor; p0\u00a0~3, ventral progenitor domains; pd1\u00a0~6, dorsal progenitor domains). (B) MiR34/449 mutant mice were crossed with the MN reporter Hb9::GFP and then immunostained for Hb9 and Isl1/2. The distribution of MN domain is normal in cervical/brachial spinal cord sections at E12.5 for the Mir34/449 TKO line compared to Ctrl. Dashed lines demarcate the MN region in the ventral spinal cord. (C and D) Immunostaining reveals comparable distributions and cell numbers of MMC (medial motor column; Lhx3+), LMC(m) (medial division of lateral motor column; FoxP1on, Isl1on), LMC(l) (lateral division of lateral motor column; FoxP1on, Isl1off), HMC (hypaxial motor column; Lhx3off, Isl1on), and PGC (preganglionic motor column; FoxP1on, pSmadon) MNs in the indicated segments of spinal cord sections from E12.5 embryos. (E) Immunostaining for pan-neuronal marker NeuN and mature MN marker ChAT in lumbar hemi-ventral horn sections of Ctrl and Mir34bc/449 DKO mice at P20. (F) Quantification of ChATon cell numbers from (E). Data are presented as mean \u00b1 SD. Student t test. \u2018NS\u2019 denotes \u2018not significant\u2019. Scale bars are 50 \u03bcm in (A, C, D, E) and 100 \u03bcm in (B).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/63768/elife-63768-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Body weight of mice before being subjected to behavioral assays. MiR34/449 mutant mice have moderately lower body weights compared to WT/Ctrl. (B) Locomotor activity in an open-field arena (assessed by average velocity) for WT, Ctrl, and the indicated Mir34/449 KO mice. Ctrl and MiR34/449 mutant mice exhibit reduced velocity in the arena relative to WT, which may represent lower locomotor activity or reflect reduced body weight. (C\u2013H) Parameters measured during treadmill walking. The MiR34/449 mutant and WT/Ctrl mice exhibited comparable body length (C), body width (D), stride width (F), and gait angles for both forelimb and hindlimb (G). The Mir34/449 TKO mutant mice showed subtle differences in stride length (E) relative to WT/Ctrl. The regularity index (H) is represented as percentage values and was used for gait evaluation, with all four groups exhibiting normal patterns. Data are presented as mean \u00b1 SD. One-way ANOVA with Tukey\u2019s multiple comparisons test. * denotes p<0.05; \u2018NS\u2019 denotes \u2018not significant\u2019.\n\nSubsequently, we performed treadmill to assay fine-scale kinematic study of limb coordination and gait patterns (Herbin et al., 2007; Leblond et al., 2003). Both Mir34bc/449 DKO and Mir34/449 TKO mice showed comparable locomotion patterns relative to WT and Ctrl mice in terms of running speed (limb moving speed) (Figure 3E) and temporal compositions during the step cycle (Figure 3F and G). Moreover, phase analyses of inter-limb coordination, including alternating homologous and homolateral limbs as well as synchronous diagonal limbs, were all normal (relative to WT and Ctrl) among MiR34/449 mutant mice during treadmill walking (Figure 3H), indicating that the ventral motor circuitry remained intact in the absence of MiR34/449. Finally, at the molecular level, immunostaining of ChATon MNs in postnatal spinal cords further revealed that MiR34/449-deficient mice had similar numbers of MNs compared to Ctrl (Figure 3\u2014figure supplement 1E and F). Based on these findings, we suggest that the overall motor function appeared hyper-jumpy while most motor outputs were largely preserved upon loss of MiR34/449 miRNAs.\n\n### MiR34/449-deficient mice exhibit hypersensitivity in response to thermal stimulation\n\nSince MiR34/449 also displayed strong expression in dorsal INs (Figure 1O), we examined if it is required to transduce pain modalities using several behavioral paradigms (Figure 4A;\u00a0Deuis et al., 2017; Gregory et al., 2013). We first performed a von Frey test on MiR34/449 mutants, Ctrl and WT mice to measure their responses to mechanical stimulation, and observed that the response threshold in nociceptive withdrawal behavior was comparable among WT, Ctrl, and MiR34/449 mutant lines (Figure 4B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/63768/elife-63768-fig4-v2.jpg)\n\n**Figure 4.:** (A) Schematic illustration of the sensory assays. (B) A von Frey test revealed comparable thresholds for inducing a mechanical pain response among 4-month-old WT, Ctrl, and MiR34/449 mutant mice (WT: n\u00a0=\u00a021, Ctrl: n\u00a0=\u00a028, Mir34bc/449 DKO: n\u00a0=\u00a010, Mir34/449 TKO: n\u00a0=\u00a014). Data are represented as mean threshold (grams of force) \u00b1 SD. (C) MiR34/449 mutant mice exhibit greater heat pain sensitivity compared to WT in a tail-flick test. Ctrl mice also showed a reduced latency in response to the heat stimulus relative to WT, but it is not statistically significant (WT: n\u00a0=\u00a022, Ctrl: n\u00a0=\u00a029, Mir34bc/449 DKO: n\u00a0=\u00a013, Mir34/449 TKO: n\u00a0=\u00a015). (D) Heat thresholds to induce a thermal pain response (hot-plate set at 55\u00b0C) are presented as the latency to licking/flicking the hind paw or jumping behavior. The MiR34/449 mutant mice display a subtle but not statistically significant difference in heat sensitivity compared to WT/Ctrl (WT: n\u00a0=\u00a022, Ctrl: n\u00a0=\u00a026, Mir34bc/449 DKO: n\u00a0=\u00a09, Mir34/449 TKO: n\u00a0=\u00a014). Data are presented as mean \u00b1 SD; one-way ANOVA with Tukey\u2019s multiple comparisons test; * denotes p<0.05; \u2018NS\u2019 denotes \u2018not significant\u2019.\n\nNext, we measured responses to heat stimulation by means of a tail flick assay (representing a spinal reflex), whereby the tail withdrawal response is evaluated upon applying a heat stimulus to a mouse\u2019s tail (Figure 4C;\u00a0Chapman et al., 1985; Irwin et al., 1951). We found that MiR34/449 mutant mice displayed a significantly reduced latency in the tail flick test relative to both Ctrl and WT mice (Figure 4C), indicative of increased sensitivity to heat stimulation. We then performed a hot-plate experiment whereby a heat stimulus is applied to the hind paws of mice, as this assay is considered to involve more complex supraspinal pathways (Giglio et al., 2006). We observed a minor (but not statistically significant) decrease in hindlimb response latency among MiR34/449 mutant mice when compared to WT and Ctrl mice (Figure 4D). Thus, we suggest that the major function of MiR34/449 in the spinal cord relates to spinal reflex circuits.\n\n### Satb1 and Satb2 are direct targets of MiR34/449 miRNAs in the spinal cord\n\nThereafter, we sought to identify the primary targets of MiR34/449 that might be involved in the prominent defects of spinal reflex circuits upon MiR34/449 deletions, first we catalogued in silico-predicted targets of MiR34/449 and performed gene ontology analysis using the DAVID online database (Huang et al., 2009; Tung et al., 2015). Interestingly, \u2018synapse organization\u2019, \u2018neurogenesis\u2019, \u2018transcription factor regulation\u2019, and \u2018regulation of ion transport\u2019 were the most prominent MiR34/449-mediated pathways arising from that analysis (Figure 5A). To establish which genes could explain the spinal reflex phenotype, we further filtered our predicted targets according to (1) whether they manifested both miRNA(MiR34/449-5p)/miRNA*(MiR34a-3p and MiR34b/c-3p) targeting sites and (2) exhibited strong IN expression in postnatal spinal cords (Figure 5B;\u00a0Lai et al., 2016; Osseward and Pfaff, 2019). Based on those criteria, we identified potential candidate targets of MiR34/449 that were predicted to participate in IN specification or maturation, including multiple genes previously characterized as being important in INs, that\u00a0is, Satb1, Satb2 (Figure 5B and Supplementary file 1g). To determine if Satb1/2 are direct targets of MiR34/449, we constructed luciferase reporters containing the full-length 3\u02b9 UTR of those genes that harbor predicted MiR34/449 target sites (Figure 5\u2014figure supplement 1). The miRNA target-predicting algorithms identified potential binding sites for MiR34/449-5p and MiR34/449-3p in the 3\u02b9 UTR of these genes (Figure 5\u2014figure supplement 1). Co-transfection of the luciferase construct with three MiR34/449 expression vectors resulted in a reduction in luciferase activity for the WT 3\u02b9 UTRs of Satb1/2 constructs (Figure 5C and D), whereas a construct harboring the mutated targeting sequences was completely insensitive to miRNA-mediated silencing (Figure 5C and D). These findings indicate that MiR34/449 targets the 3\u02b9 UTRs of Satb1 and Satb2.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/63768/elife-63768-fig5-v2.jpg)\n\n**Figure 5.:** (A) Strategy to identify potential MiR34/449 targets in the spinal cord. Predicted targets of MiR34/449 miRNAs by TargetScan were subjected to gene ontology analysis. Potential pathways related to the neural behavior phenotype are highlight with red color (B) Predicted targets of MiR34/449 miRNAs were filtered based on having both miRNA (MiR34/449-5p) and miRNA* (MiR34b/c-3p and MiR34a-3p) targeting sites, and spinal INs were selected for further study. (C\u2013D) Co-expression of the luciferase construct with MiR34/449 plasmids in HEK293T cells silences the reporter carrying the intact MiR34/449 target sites, whereas Mir34/449 plasmids fail to silence Satb2-Mut (C) and Satb1-Mut (D) luciferase constructs. Transfection of the backbone plasmid served as the control (Ctrl). OE, overexpression. N\u00a0=\u00a03 in (C) and five in (D). (E) Immunostainings for Satb2 (red) and Satb1 (green) in the dorsal and intermediate spinal cord of cervical/brachial sections at P14 revealed significantly increased numbers of Satb2on and Satb1on cells. Lower panels are higher magnifications of the boxed areas in the respective middle panels. Double-positive cells are indicated with arrows. (F\u2013H) Quantification of Satb2on (F), Satb1on (G), and Satb2on;Satb1on double-positive INs (H) from (E). Each dot represents the quantification from one hemi-section. Data are presented as mean \u00b1 SD. One-way ANOVA with Tukey\u2019s multiple comparisons test. * denotes p<0.05; \u2018NS\u2019 denotes \u2018not significant\u2019. Scale bars represent 100 \u03bcm.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63768/elife-63768-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A\u2013B) Schematic illustration of the luciferase reporters harboring the putative MiR34/449 targeting sequence of the Satb2 (A) and Satb1 (B) 3\u02b9 UTRs. The reporters were constructed with either a control 3\u02b9 UTR (WT) or a 3\u02b9 UTR sequence in which all potential target sites of MiR34/449 miRNAs were mutated (Mut; target sites for MiR34/449-5p and MiR34/449-3p are shown in green and red, respectively).\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/63768/elife-63768-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) In situ hybridization of MiR34a-5p together with Satb2 and NeuN immunostaining of cervical/brachial spinal cord sections at P14. Boxed areas depicted in the upper panels are shown with higher magnification in the respective lower panels. Arrows indicate expression of MiR34a-5p in Satb2on INs. Scale bars are 100 \u03bcm and 20 \u03bcm in the upper and lower panels, respectively. (B) Detection of MiR34c-5p (probe sequence could not differentiate MiR34b/c) with miRNAscope technology revealed its expression in the spinal cord at P14 (central panel). Immunostaining for Satb1 and Satb2 on the adjacent slide is shown in the left panel. Note that the Mir34/449 TKO section showed undetectable MiR34b/c signal (right panel), supporting the specificity of the probe used in this study. Boxed areas depicted in the upper panels are shown with higher magnification in the respective lower panels. Scale bars are 100 \u03bcm.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/63768/elife-63768-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (A) Immunostainings for Lhx1/5, Isl1, and Lbx1 revealed no obvious dorsal interneuron (dI) domain change in Mir34bc/449 DKO embryos compared to WT for lumbar spinal cord sections at E11.5. Lhx1/5 (red) labels dI2, dI4, and dI6~V1; Isl1 (green) labels dI3 and MNs; Lbx1 (blue) labels dI4\u00a0~6. (B\u2013D) Quantification of cell numbers from the indicated dI domains in the developing spinal cord, normalized against total cell number (DAPI+) and represented as percentages. (E) Immunostaining for Pax2, Isl1, and Tlx3 to reveal dorsal interneuron (dI) domains in lumbar spinal cord sections at E11.5. Pax2 (red) labels dI4 and dI6~V1; Isl1 (green) labels dI3 and MNs; Tlx3 (blue) labels dI3 and dI5. (F) Immunostaining for Foxd3, Chx10, and Lhx3 to reveal ventral (V) interneuron domains in lumbar spinal cord sections at E11.5. Foxd3 (red) labels dI2 and V1; Chx10 (green) labels V2a; Lhx3 (blue) labels V2 and MN. (G\u2013I) Quantification of cell numbers from the indicated dI domains in the developing spinal cord in (E), normalized against the total cell number (DAPI+) and represented as a percentage. Each dot represents quantification from one hemi-section. The MiR34/449 mutant mice showed comparable dI3+5 (H) and dI6~V1 (I) domain cell counts to that of WT/Ctrl, whereas cell counts of the dI4 (G) domain in mutant mice are reduced relative to WT/Ctrl. (J\u2013K) Quantification of cell numbers from the indicated ventral domains in the developing spinal cord in (F), normalized against the total cell number (DAPI+) and represented as a percentage. The MiR34/449 mutant mice showed comparable V1 (J) and V2a (K) domain cell counts relative to WT/Ctrl. (L) Immunostaining of Satb2 reveals no obvious difference in number of Satb2on INs in the cervical/brachial spinal cord section at E13.5. (M) Quantification of Satb2on INs from (L). Data are presented as mean \u00b1 SD. Student t test. * denotes p<0.05; \u2018NS\u2019 denotes \u2018not significant\u2019. Each dot represents the quantification from one hemi-section (B\u2013D, G\u2013K). Scale bars are 100 \u03bcm.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/63768/elife-63768-fig5-figsupp4-v2.jpg)\n\n**Figure 5\u2014figure supplement 4.:** (A\u2013B) Immunostaining of Satb2 reveals increased numbers of Satb2on INs in MiR34/449 mutant mice compared to Ctrl mice in thoracic (A) and lumbar (B) spinal cord sections at P14. (C\u2013D) Quantification of Satb2on interneurons from (A) and (B). Data are presented as mean \u00b1 SD. Each dot represents the quantification from one hemi-section. One-way ANOVA with Tukey\u2019s multiple comparisons test. * denotes p<0.05; \u2018NS\u2019 denotes \u2018not significant\u2019.\n\n![Figure 5\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/63768/elife-63768-fig5-figsupp5-v2.jpg)\n\n**Figure 5\u2014figure supplement 5.:** (A and C) Comparison of the spatial distribution of individual Satb2on (A) and Satb1on (C) INs in the cervical/brachial spinal cord of indicated mice (Ctrl, gray; Mir34bc/449 DKO and Mir34/449 TKO, magenta). Frequency distributions along the medio-lateral (top) and dorso-ventral (right) axes represent non-linear regressions. (B and D) Contour density plots of Satb2on (B) and Satb1on (D) INs reveal that Satb2on INs (B) are mainly located in the medial spinal cord of both MiR34/449 mutant and Ctrl spinal cord. Satb1on INs (D) presented two major localizations, that\u00a0is, in the intermediate and dorsal spinal cord, in both MiR34/449 mutant and Ctrl mice. Contour lines represent density at the 30th\u201390th percentiles. Data from more that 25 sections of at least nine independent spinal cords.\n\nNotably, a previous study characterized the cellular identity of MSE neurons and found that Satb1/2 are expressed in medial lamina V/VI and lamina III (Levine et al., 2014). Unlike for WT and control littermates at P14, we observed a significantly increased number of Satb1on and Satb2on INs in the MiR34/449 mutant spinal cords (Figure 5E~5G). Moreover, we also observed a drastic increase in the number of hybrid cells expressing both Satb1 and Satb2 in the MiR34/449 mutant spinal cords at P14 compared to WT and Ctrl groups (Figure 5E and H). Thus, we have shown that Satb1 and Satb2 are directly regulated by MiR34/449 miRNAs in the spinal cord.\n\nTo further explore MiR34/449 and Satb1/2 expression in vivo, we conducted in situ hybridization of MiR34a-5p/MiR34c-5p and compared their expression patterns to that of Satb1/2. Notably, we identified many Satb1/2on INs that co-expressed MiR34a-5p or MiR34c-5p in the dorsal/intermediate regions of the spinal cord at P14, suggesting potentially direct regulation of Satb1/2 by MiR34/449 in spinal INs (Figure 5\u2014figure supplement 2). Together, these findings indicate that MiR34/449 may control optimal development of Satb1/2on INs in the spinal cord to fine-tune sensory-motor circuit outputs.\n\n### MiR34/449 tunes optimal postnatal Satb2 expression in Ctip2 subpopulation\n\nWhile the function of Satb1 in the spinal interneurons is not elucidated yet, a previous study revealed that Satb2 expression is important for establishing appropriate local connectivity in spinal circuits (Hilde et al., 2016), highlighting the possibility that MiR34/449-regulated Satb2 expression might be involved in IN development and consequently contribute to sensory-motor circuit outputs. To test this possibility, we first examined if IN development is affected upon MiR34/449 abrogation. At E11.5, there were no apparent differences in IN progenitors in the dorsal or ventral horns\u2014as revealed by molecular markers Lbx1 (dI4\u00a0~6), Lhx1/5 (dI2, 4, 6~V1), Isl1 (dI3), and Tlx3 (dI3, 5) for the dorsal horn, or Foxd3 (dI2, V1), Chx10 (V2a), and Lhx3 (V2) for the ventral horn, respectively\u2014indicating that MiR34/449 is not required for most IN development (Figure 5\u2014figure supplement 3A~K). At E13.5 (the earliest time-point at which we could detect dorsal Satb2 INs), there was no significant difference in numbers of Satb2on INs in MiR34/449 mutant spinal cords relative to WT and Ctrl (Figure 5\u2014figure supplement 3L and M). Although comparable numbers of Satb2on INs persisted until E16.5 (data not shown), there was a dramatic increase of Satb2on INs relative to WT and Ctrl at P14 in the MiR34/449 mutant spinal cords throughout the spinal cord segments (Figure 5E and F and Figure 5\u2014figure supplement 4). This outcome indicates that optimal Satb2on IN number and maintenance is particularly sensitive to MiR34/449 expression in the postnatal spinal cord. Collectively, we suggest that MiR34/449 miRNAs control optimal development of Satb2-expressing INs in the spinal cord, particularly at the postnatal stage, enabling this miRNA family to fine-tune and maintain sensory-motor circuit outputs.\n\nGiven that the position of the Satb2on INs is highly associated with the connectivity of the sensory afferents (Hilde et al., 2016; Levine et al., 2014), we next tested if the position of the Satb1on or Satb2on INs is affected in the absence of the MiR34/449 at P14. However, neither Satb1 or Satb2 expressing IN positions were obviously affected (Figure 5\u2014figure supplement 5), reflecting the different phenotype manifestation between MiR34/449 mutants and Satb2 KO mice (Hilde et al., 2016; Levine et al., 2014).\n\n### Altered Satb2on IN subpopulations in the MiR34/449 mutant spinal cord\n\nBased on previous study (Hilde et al., 2016), the molecular identity of the spinal cord is altered upon loss of Satb2, particularly with regard to Ctip2- and Pax2-expressing IN subpopulations at the embryonic stage. Thus, we further examined if the increased Satb2on INs in the MiR34/449 mutant spinal cords display an altered complement of subpopulations. Notably, we observed an increase in the number of Satb2on;Ctip2on INs in the MiR34/449 mutant spinal cords (Figure 6A and B), yet only a subtle (but not statistically significant) change in the Satb2on;Pax2on IN subpopulation was found (Figure 6A and C). As the individual Ctip2on and Pax2on cell populations were of comparable size, this outcome further indicates that the Satb2on;Ctip2on IN subpopulation had preferentially increased, with a concomitant decrease in the Satb2on;Pax2on subpopulation, in the Mir34/449 TKO spinal cords relative to those of WT and control littermates (Figure 6D and G). Further spatial distribution analyses revealed no significant change in the distribution of the increased number of Satb2on;Ctip2on, yet these cells tended to exhibit a more condensed pattern in the intermediate region of the MiR34/449 mutant spinal cord (Figure 6E and F). Given all of these findings, we suggest that MiR34/449 controls optimal development of Satb2-expressing INs in the spinal cord, and that loss of MiR34/449 leads to a change in the molecular identity of Satb2on IN subtypes. Our results reflect a potential role for these miRNAs in maintaining precise cell identity in the postnatal spinal cord, which is critical for refining sensory-motor circuit outputs (Figure 7).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/63768/elife-63768-fig6-v2.jpg)\n\n**Figure 6.:** (A) Immunostaining for Satb2, Ctip2, and Pax2 in dorsal and intermediate spinal cord at P14. Note that Satb2on INs display two molecular identities, i.e., the Ctip2on or Pax2on subpopulations. Comparison with WT/Ctrl reveals an increase in the cell number of Satb2on;Ctip2on INs in the intermediate spinal cord of cervical/brachial sections upon MiR34/449 deletion. Boxed areas indicate higher magnification regions from the intermediate and dorsal regions of each image. Arrows highlight the presence of dual-labeled Satb2on;Ctip2on cells (yellow) or dual-labeled Satb2on;Pax2on cells (magenta) among the Satb2on population. (B\u2013C) Quantifications of cell number from (A). (D) Quantifications of the Satb2on;Ctip2on and Satb2on;Pax2on subpopulations were normalized against total Satb2on cell numbers and are shown as a percentage. (E) Comparison of the spatial distribution of individual Satb2on;Ctip2on INs in the cervical/brachial spinal cord of indicated mice (Ctrl, grey; Mir34bc/449 DKO and Mir34/449 TKO, magenta). Frequency distributions along the medio-lateral (top) and dorso-ventral (right) axes represent non-linear regressions. (F) A contour density plot of Satb2on;Ctip2on INs indicates that Satb2on;Ctip2on INs are mainly located in the medial spinal cord of both MiR34/449 mutant and Ctrl mice. Contour lines represent density at the 30th\u201390th percentiles. Data were analyzed from more than 25 sections of at least five independent spinal cords in (E) and (F). (G) Schematic illustrating the increased number of Satb2on;Ctip2on INs in the MiR34/449 mutant spinal cord. Data are presented as mean \u00b1 SD. One-way ANOVA with Tukey\u2019s multiple comparisons test. * denotes p<0.05; \u2018NS\u2019 denotes \u2018not significant\u2019. Scale bars represent 100 \u03bcm.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/63768/elife-63768-fig7-v2.jpg)\n\n**Figure 7.:** Summary diagram of the increased numbers of Satb1/2on INs, and specifically the Satb2 on;Ctip2on subpopulation, in MiR34/449 mutant mice and the possible changes in circuitry that result from MiR34/449 depletion in the spinal cord.\n\n## Discussion\n\nA hallmark of miRNAs is that they are often expressed in a cell type-specific manner at various developmental stages, allowing them to modulate a variety of biological processes such as cell survival, differentiation, and cell fate transitions (Conaco et al., 2006; Shenoy and Blelloch, 2014; Tuncdemir et al., 2015). The MiR34 family is believed to be regulated by p53 in tumor cell contexts, endowing them with roles in cell proliferation and p53-mediated apoptosis (Bommer et al., 2007; Choi et al., 2011; Corney et al., 2007; He et al., 2007; Okada et al., 2014; Raver-Shapira et al., 2007). Recent studies in which all three mouse Mir34/449 alleles were completely deleted pointed to unexpected functions of miRNAs of MiR34/449 family in motile ciliogenesis of multiciliated epithelial cells of the respiratory and reproductive systems, perhaps reflecting a p53-independent mechanism (Otto et al., 2017; Song et al., 2014; Wu et al., 2014). Although the MiR34/449 family is strongly expressed in the CNS, their functions there had remained surprisingly unexplored. Here, we reveal several unusual phenotypes of MiR34/449 mutant mice at postnatal stages (P14~P28), including blepharoptosis (drooping eyelids) or microphthalmia, abnormal posture with back-arching, hind tiptoe walking, jumpy behavior, and stimulant-induced hypersensitivity. We have demonstrated that MiR34/449 miRNAs target Satb1/2 to fine-tune Satb1/2on IN numbers in the spinal cord. Depletion of MiR34/449 resulted in an increased subpopulation of Satb2on;Ctip2on INs, which might contribute to some of the above-mentioned phenotypes (Figure 7). Our study highlights an unappreciated role of MiR34/449 in the postnatal CNS, and we discuss the implications of these results further below.\n\n### Role of miRNAs in spinal interneurons\n\nThe roles of miRNAs during spinal MN development have been relatively well illustrated. Specifically, we have previously shown that MiR17-3p participates in the Olig2/Irx3 bistable loop to carve out the pMN/p2 boundary, and MiR27 operates in the Hoxa5/Hoxc8 regulatory circuit to control the timing of Hoxa5 protein expression to exert brachial MN pool identity (Chen et al., 2011; Li et al., 2017). However, despite a series of elegant experiments demonstrating spinal IN identity at molecular and physiological levels (Levine et al., 2014), the functions of miRNAs in spinal INs and their relationships to the transcription factor-mediated loop have remained puzzling. Here, we have demonstrated that the MiR34/449 family directly regulates Satb1/2 expression at the late differentiation stage, thereby potentially altering sensory-motor circuits given that Satb1/2on INs act as a hub located in the intermediate part of the spinal cord. As Satb1/2on INs receive inputs from multiple streams of sensory information and relay their outputs to motor command layers of the spinal cord (Hilde et al., 2016), it is conceivable that our Mir34/449 KO mice exhibited hypersensitivity to these sensory inputs, accounting for the peculiar walking patterns we observed. Of the IN types in the dorsal spinal cord, why does Satb1/2 expression and the number of Satb1/2on INs need to be precisely controlled by MiR34/449? Perhaps motor behaviors such as walking or pain-induced limb withdrawal depend on integration of multimodal sensory circuits to elicit appropriate responsive muscle contractions. Moreover, Satb1/2on INs are particularly critical in interpreting multiple sensory streams and coordinating them into singular behavioral outputs, with loss of Satb2 leading to impairments of IN cellular position, molecular profile, and pre- and post-synaptic connectivity (Hilde et al., 2016). The complex behavioral repertoire of animals is regulated by a set of motor synergy encoder (MSE) neurons, in which both Satb1 and Satb2 are prominent molecular regulators (Levine et al., 2014). In contrast to Satb2, the function of Satb1on INs is not yet completely understood (Hilde et al., 2016). Although Satb1 and Satb2 are close homologs, they may regulate genes via convergent and divergent pathways. In this study, we have also uncovered that Satb1 and Satb2 are expressed largely exclusively in spinal INs. Upon MiR34/449 loss-of-function, both Satb1 and Satb2 are aberrantly upregulated, with a consequent increase in Satb1/2 co-expressing cells. This scenario highlights the potential involvement of miRNAs in the control of mediating intricate balance of the MSE neurons formation, as well as the critical involvement of miRNAs in maintaining spinal neural circuits at the postnatal stage (Imai et al., 2016).\n\nWe found that expression of Satb2 is aberrantly upregulated in our MiR34/449 mutant mice. Moreover, we revealed the Satb2on;Ctip2on subpopulation change upon MiR34/449 deletion which enhancement may result in the aberrant connection in the spinal circuitry. Therefore, similar to miRNA-mediated establishment of MN subtype identity (Tung et al., 2015), we suggest that a Satb1/2-MiR34/449 regulatory axis might be critical to exert and fine-tune the precise level of Satb1/2 expression and to refine Satb1/2on IN number for receipt of multimodal sensory inputs. This latter is pivotal for animals to react appropriately to diverse sensory stimuli (Figure 7). In cortical neurons, Satb2 inhibits Ctip2 activity to define two major classes of projection neurons (Alcamo et al., 2008; Britanova et al., 2008). However, some neurons in perinatal mice manifest a subpopulation of Satb2/Ctip2 co-expressing cortical neurons (Harb et al., 2016). Interestingly, postnatal Satb2on spinal INs also co-express Ctip2 at the medial region. While the genetic network regulating this Satb2/Ctip2 subpopulation in the cortex and spinal cord remains enigmatic, it is clear that the considerable diversity of projection neurons and spinal INs in mammals cannot simply be attributable to Satb2 inhibitory activity. Consequently, the regulatory mechanism underlying Satb2on;Ctip2on neuron subtypes has yet to be identified. In this study, we have unveiled that numbers of Satb2on;Ctip2on spinal INs increase upon Mir34/449 KO in mice, raising the possibility that one major function of MiR34/449 is to refine the optimal MSE neurons for precise sensory-motor outputs. Given the prominent activity-dependent and tuning role of miRNAs (Chen and Chen, 2019; Sim et al., 2014), it is tantalizing to test in the future if MiR34/449 also establishes the balance of Satb2on;Ctip2on INs among cortical projection neurons.\n\nGiven that MiR34/449 also targets a series of synaptic genes (Figure 5A), it warrants further investigation if MiR34/449 also engages in the pre- and post-synaptic connectivity by Satb1/2on INs to support input convergence. Importantly, other IN genes such as Ror\u03b1 and Ror\u03b2 are potential targets of MiR34/449 (Figure 5B), so whether MiR34/449 miRNAs regulate a battery of spinal INs and if disruption of those pathways account for diverse neurological disorders are interesting topics for further study. Given that Dicer is required to maintain monosynaptic sensory-motor circuits in the spinal cord (Imai et al., 2016), it is conceivable to hypothesize that other miRNA candidates might be involved in establishing spinal IN subtype identity and regulating sensory-motor connectivity in the spinal cord. Experiments to elucidate the full spectrum of miRNAs involved in these mechanisms will provide deep insights into spinal circuit formation and control.\n\n### Redundant and non-redundant functions of MiR34/449 in the spinal cord\n\nA series of studies have revealed that removal of individual miRNA paralogs alone results in partial penetrance of phenotypic deficits. For instance, Mir196 TKO gives rise to homeotic patterning defects, whereas single/compound Mir196 KO mice exhibited similar defects to varying degrees (Wong et al., 2015). In agreement with previous studies (Bao et al., 2012; Concepcion et al., 2012; Song et al., 2014), we did not observe an overt phenotype in our Mir34 or Mir449 single KO lines relative to Ctrl mice. However, a hypersensitivity stress test revealed that our Ctrl mice harboring at least one Mir34/449 allele exhibited trivial but statistically non-significant hypersensitivity in response to a heat stimulus (Figure 4C). Hence, it was important that we also subjected age-matched WT mice from an identical genetic background to our assays for comparative analyses (Andolina et al., 2018; Andolina et al., 2016; Otto et al., 2017; Wu et al., 2014). To obtain reasonable numbers of Mir34bc/449 DKO and Mir34/449 TKO mice for our experiments, we intercrossed the mice possessing one WT Mir34/449 allele (Figure 2A; see Materials and methods). Therefore, our molecular and behavioral characterizations reflect comparisons between Mir34bc/449 DKO or Mir34/449 TKO mice and both WT and Ctrl lines, with the genetically-matched Ctrl mice displaying complex heterogeneity and possessing at least one and up to at most five alleles targeted for deletion in KO lines (Simpson et al., 1997). Our observations provide evidence for two roles of miRNAs during development: (1) miRNAs can function redundantly to control or fine-tune critical developmental steps, and (2) overt phenotypes upon disrupting only some miRNA family members might only be evident at physiological levels when stress conditions are encountered (Bartel, 2018; Chen and Chen, 2019).\n\nWhy is it that Mir34bc/449 DKO mice displayed a seemingly similar defective phenotype to Mir34/449 TKO mice, whereas the Mir34a/449 DKO mice are largely normal? Given that MiR34a seems to be expressed at high levels ubiquitously in almost all cell types, including spinal neurons (Concepcion et al., 2012; Otto et al., 2017; Song et al., 2014; Wu et al., 2014), this is a puzzling scenario. It is generally accepted that pre-microRNA is processed through Dicer to generate a miRNA duplex, consisting of miRNA and miRNA* strands (also termed guide and passenger strands, respectively). Although most studies assume that miRNA* has no regulatory activity, some evidence exists to suggest that the abundance, functionality, and physiological relevance of miRNA* are underestimated (Okamura et al., 2008). Our previous study showed that both MiR17-5p (guide strand) and MiR17-3p (passenger strand, i.e. MiR17*) are equally functionally important in precursor MN patterning and MN differentiation, having the same or different targets (Chen et al., 2011). Interestingly, in the current study, we found that MiR34b-3p (MiR34b*) is significantly expressed in the developing spinal cord (data not shown), raising the possibility that MiR34b-3p might also be functionally relevant, even though its seed sequence is not conserved when compared to that of MiR34a-3p (MiR34a*).\n\nWe focused on Satb1 and Satb2 in this study as it is a shared target of both MiR34a-5p (seed, GGCAGUG) and MiR34b/c-3p (seed, AUCACUA) (Figure 5\u2014figure supplement 1A). Accordingly, we argue that one plausible reason why Mir34bc/449 DKO mice exhibit a similar lethality phenotype to Mir34/449 TKO mice, whereas Mir34a/449 DKO mice are relatively normal, might reflect an unappreciated function of MiR34b/c-3p. We are now in the process of dissecting the possible convergent and divergent targets of the MiR34/449 miRNA family and their implications for embryonic development by examining individual Mir34/449 KO embryonic stem cell lines in our possession.\n\n### MiR34/449 miRNAs as therapeutic targets for tumors and CNS disease\n\nThe two most prominent and documented roles of MiR34/449 miRNAs are their tumor suppressor function in cancer cells (He et al., 2007) and their regulation of motile cilia in multiciliated cells (MCCs) during development (Song et al., 2014). From a tumor cell perspective, numerous cell- and animal-based studies have explored the tumor-suppressive function of MiR34a and proposed that restoring MiR34a expression could serve as a potential therapeutic anti-cancer strategy. An advantage of such MiR34a-based therapy is the possibility of simultaneously repressing multiple oncogenic and immune evasion pathways (Di Martino et al., 2012). Moreover, MiR34a overexpression does not seem to be excessively toxic to normal cells in vitro or in vivo (Raver-Shapira et al., 2007; Tazawa et al., 2007).\n\nIn terms of development, MiR34/449 is known to regulate ciliogenesis in MCCs that have hundreds of motile cilia projecting from their apical surfaces. The critical role of MiR34/449 in regulating MCCs is evolutionary conserved. Ciliation defects caused by MiR34/449 deficiency have been reported for MCCs of the murine airway and fallopian tube, the embryonic epidermis of Xenopus, and the multiciliated pronephros and nasal pits of zebrafish embryos (Chevalier et al., 2015). In addition to Satb2-mediated hypersensitivity to sensory stimuli in our MiR34/449 mutant mice, we uncovered a series of neurological disorders\u2014particularly staggering, ataxia, and seizure-like behaviors\u2014that could not be fully accounted for by aberrant upregulation of Satb2 in the spinal cord. Ependymal cells in the nervous system extend their motile cilia into the brain ventricles and contribute to cerebrospinal fluid (CSF) flow, a process important for normal brain function and adult neurogenesis (Silva-Vargas et al., 2016). A previous study has shown that MiR449 miRNAs express in the early development of choroid plexus, supporting the putative roles of MiR34/449 in the CSF production (Redshaw et al., 2009). It is not yet clear if some of the neurological disorders we uncovered in this study reflect a defect in cilial motility or CSF secretion in the spinal cord. Given the prominent and conserved roles of MiR34/449 miRNAs in motile cilia, it will be tempting to analyze the relevance of ependymal cilia motility for CSF circulation and brain ventricle morphogenesis in conditional neural Mir34/449 KO mice in the future.\n\nIn addition, the observed neurological defects in Mir34/449 mutant mice may also have arisen from proprioceptive impairment since previous study has revealed that Satb2on INs reside in the terminal region of proprioceptive afferents (Hilde et al., 2016). As one set of measures of proprioceptive function, the spatial parameters of stride length we measured for the treadmill assay presented a trivial but statistically significant difference in MiR34/449-deficient mice relative to WT (Figure 3\u2014figure supplement 2E), implying a potential involvement of the sensory connectivity function of MiR34/449 in the spinal cord. Although we have reported an increase in the number and dense positioning of the Satb2on;Ctip2on IN subpopulation upon MiR34/449 abrogation, further assessments are required to validate a link between the proprioceptive afferents displaying this molecular change in IN identity and the peculiar mouse behaviors we observed.\n\nTaken together, our findings reveal that MiR34/449 miRNAs have important yet underappreciated roles in regulating sensory-motor circuit outputs by refining IN numbers. As MiR34 has already undergone clinical trials as a potential gene therapy for cancer and we have uncovered several neurological functions for the MiR34/449 family, we envision that MiR34/449 miRNAs might serve as targets for treatments of neurodegenerative disease in the future.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit monoclonal anti-Satb2</td>\n      <td>Abcam</td>\n      <td>Cat# ab92446, RRID:AB_10563678</td>\n      <td>IHC (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Guinea pig polyclonal anti-Satb2</td>\n      <td>Synaptic Systems</td>\n      <td>Cat# 327004, RRID:AB_2620070</td>\n      <td>IHC (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat polyclonal anti-ChAT</td>\n      <td>Millipore/Sigma</td>\n      <td>Cat# AB144P, RRID:AB_2079751</td>\n      <td>IHC (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Sheep anti-GFP</td>\n      <td>Bio-Rad</td>\n      <td>Cat# 4745\u20131051, RRID:AB_619712</td>\n      <td>IHC (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti-NeuN</td>\n      <td>Millipore</td>\n      <td>Cat# MAB377, RRID:AB_2298772</td>\n      <td>IHC (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal anti-Irx3</td>\n      <td>T. Jessell (Columbia, New York)</td>\n      <td>N/A</td>\n      <td>IHC (1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal anti-pSmad1/5/8</td>\n      <td>Merck</td>\n      <td>Cat# AB3848, RRID:AB_177439</td>\n      <td>IHC (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Guinea pig anti-Olig2</td>\n      <td>T. Jessell (Columbia, New York)</td>\n      <td>N/A</td>\n      <td>IHC (1:10000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal anti-Olig2</td>\n      <td>Millipore</td>\n      <td>Cat# AB9610; RRID:AB_570666</td>\n      <td>IHC (1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti-Nkx2.2</td>\n      <td>T. Jessell (Columbia, New York)</td>\n      <td>N/A</td>\n      <td>IHC (1:10000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Guinea pig anti-Hb9</td>\n      <td>H. Wichterle (Columbia, New York)</td>\n      <td>N/A</td>\n      <td>IHC (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal anti-Lhx3</td>\n      <td>Abcam</td>\n      <td>Cat# ab14555, RRID:AB_301332</td>\n      <td>IHC (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal anti-Foxp1</td>\n      <td>Abcam</td>\n      <td>Cat# ab16645, RRID:AB_732428</td>\n      <td>IHC (1:10000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Guinea pig anti-Foxp1</td>\n      <td>T. Jessell (Columbia, New York)</td>\n      <td>N/A</td>\n      <td>IHC (1:20000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti-Isl1/2</td>\n      <td>DSHB</td>\n      <td>Cat# 39.4D5, RRID:AB_2314683</td>\n      <td>IHC (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat polyclonal anti-Isl1</td>\n      <td>Neuromics</td>\n      <td>Cat# GT15051, RRID:AB_2126323</td>\n      <td>IHC (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti-Isl1</td>\n      <td>DSHB</td>\n      <td>Cat# 39.3F7, RRID:AB_1157901</td>\n      <td>IHC (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti-Lhx1/5</td>\n      <td>DSHB</td>\n      <td>Cat# 4F2, RRID:AB_531784</td>\n      <td>IHC (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Guinea pig anti-Lbx1</td>\n      <td>T. M\u00fcller (MDC, Berlin)</td>\n      <td>N/A</td>\n      <td>IHC (1:10000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Guinea pig anti-Tlx3</td>\n      <td>T. M\u00fcller (MDC, Berlin)</td>\n      <td>N/A</td>\n      <td>IHC (1:10000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Guinea pig anti-Foxd3</td>\n      <td>T. M\u00fcller (MDC, Berlin)</td>\n      <td>N/A</td>\n      <td>IHC (1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal anti-Pax2</td>\n      <td>BioLegend/Covance</td>\n      <td>Cat# 901002, RRID:AB_2734656</td>\n      <td>IHC (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal anti-Pax2</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# 71\u20136000, RRID:AB_2533990</td>\n      <td>IHC (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Sheep polyclonal anti-Chx10</td>\n      <td>Exalpha Biologicals</td>\n      <td>Cat# X1179P RRID:AB_2567565</td>\n      <td>IHC (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rat monoclonal anti-Ctip2</td>\n      <td>Abcam</td>\n      <td>Cat# ab18465, RRID:AB_2064130</td>\n      <td>IHC (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat anti-Pax2</td>\n      <td>R and D Systems</td>\n      <td>Cat# AF3364, RRID:AB_10889828</td>\n      <td>IHC (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal anti-Satb1</td>\n      <td>Novus</td>\n      <td>Cat# NBP2-15108</td>\n      <td>IHC (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>HEK293T</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# 12022001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>Hb9::GFP</td>\n      <td>The Jackson Laboratory</td>\n      <td>Cat# JAX: 005029, RRID:IMSR_JAX: 005029</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>Mir34afl/fl</td>\n      <td>The Jackson Laboratory</td>\n      <td>Cat# JAX:018545, RRID:IMSR_JAX:018545</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>Mir34bc-/-</td>\n      <td>The Jackson Laboratory</td>\n      <td>Cat# JAX:018546, RRID:IMSR_JAX:018546</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>Mir34a-/-</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>Mir449-/-</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>Mir34a-/-; Mir34bc-/-</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>Mir34a-/-; Mir449-/-</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>Mir34bc-/-; Mir449-/-</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>Mir34a-/-; Mir34bc-/-; Mir449-/-</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>E2a::Cre</td>\n      <td>The Jackson Laboratory</td>\n      <td>Cat# JAX:003724, RRID:IMSR_JAX:003724</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA</td>\n      <td>psiCHECK-2 vector</td>\n      <td>Promega</td>\n      <td>Cat# C8021, RRID:Addgene_106979</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA</td>\n      <td>psiCHECK-2-Satb2-3\u2019UTR_WT</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA</td>\n      <td>psiCHECK-2-Satb2-3\u2019UTR_Mut</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA</td>\n      <td>pENTR/D-TOPO-Mir34a</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA</td>\n      <td>pENTR/D-TOPO-Mir34bc</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA</td>\n      <td>pENTR/D-TOPO-Mir449abc</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA</td>\n      <td>p2Lox-Mir34a</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA</td>\n      <td>p2Lox-Mir34bc</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA</td>\n      <td>p2Lox-Mir449abc</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Adobe Illustrator 2020</td>\n      <td>Adobe</td>\n      <td>https://www.adobe.com</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Adobe Photoshop 2020</td>\n      <td>Adobe</td>\n      <td>https://www.adobe.com</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Image J</td>\n      <td>NIH</td>\n      <td>https://imagej.net/ RRID:SCR_003070</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Imaris 9.5.1</td>\n      <td>Bitplane</td>\n      <td>http://www.bitplane.com/imaris/imaris RRID:SCR_007370</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ZEN</td>\n      <td>Carl Zeiss</td>\n      <td>RRID:SCR_013672</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Prism 6</td>\n      <td>GraphPad</td>\n      <td>https://www.graphpad.com RRID:SCR_005375</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>TreadScan4.0</td>\n      <td>CleverSystems</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>R and RStudio</td>\n      <td>The R foundation</td>\n      <td>https://www.r-project.org/ https://www.rstudio.com RRID:SCR_000432</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Generation of Mir449 KO mice\n\nTo generate the Mir449-/- mice, we applied the CRISPR-Cas9 system using a published protocol (Li et al., 2017). We designed two single-guide RNAs (sgRNAs) targeting to the Mir449 locus, as depicted in Figure 1\u2014figure supplement 1. The sequences of two designed sgRNAs (Supplementary file 1a), together with the T7 promoter and trans-activating CRISPR RNA (tracrRNA), were concatenated during plasmid synthesis. The two Mir449 sgRNAs and the Cas9 mRNA were microinjected simultaneously into fertilized embryos of C57BL/6J mice. Mir449+/- mice were obtained and genotyped, with the deleted sites verified by Sanger sequencing, followed by intercross mating to acquire Mir449-/- mice (Figure 1\u2014figure supplement 1D-F).\n\n### Mouse breeding and maintenance\n\nMir34afl/fl (Mir34atm1.2Aven/J, Stock #018545), E2a::Cre (B6.FVB-Tg(EIIa-cre)C5379Lmgd/J, Stock #003724), and Mir34bc-/- (B6.Cg-Mirc21tm1.1Aven/J, Stock #018546) mice were imported from Jackson Laboratory. Mir34a-/- mice were generated by crossing Mir34afl/fl mice with E2a::Cre, resulting in germ-line deletion of loxP-flanked Mir34a followed by depletion of E2a::Cre. All individual KO mice were further crossed with each other to obtain Mir34bc/449 DKO and Mir34/449 TKO mice. The mutant mouse lines were maintained and bred by the following intercross matings: Mir34a-/-;Mir34bc-/-;Mir449+/-, Mir34a-/-;Mir34bc+/-;Mir449-/-, Mir34bc-/-;Mir449+/-, and Mir34bc+/-;Mir449-/-, as shown in Figure 2A. All age-matched littermates from the above matings served as a control (Ctrl) group for all experiments, unless otherwise specified. To analyze survival and body weight of newborn Mir34bc/449 DKO, Mir34/449 TKO, and Ctrl mice, we monitored the health of these mice every day and determined their body weight every two days for the first 21 days. The primers used for all genotyping are listed in Supplementary file 1b. All mice generated and used for this study had a C57BL/6J background. The smallest sample size that would still give a significant difference was employed, in accordance with 3Rs principles. No animals were involved in previous unrelated experimental procedures. The influence of mouse sex was not evaluated in this study. All the live animals were maintained in a specific-pathogen-free (SPF) animal facility, approved and overseen by IACUC Academia Sinica.\n\n### Tissue collection\n\nMice were sacrificed under deep anesthesia by 20 mg/mL Avertin (2,2,2-Tribromoethanol, Sigma) with a dosage based on mouse body weight. Then, cardiac perfusion of cold PBS was performed before collecting tissues and placing in Trizol (Thermo Scientific) for RNA extraction. A subsequent perfusion was performed with freshly prepared 4% paraformaldehyde (PFA) in PBS, followed by whole spinal cord dissection, for immunostaining or in situ hybridization. Spinal cords were sucrose-cryoprotected and embedded in FSC 22 frozen section media (Leica), before being cut into 25 \u03bcm cryostat sections as previously described (Tung et al., 2019).\n\nFor embryo analyses, pregnant mice underwent cervical dislocation, and the embryos were dissected from the sacs. After removing the head and internal organs, the embryos were immersed in 4% PFA for 1\u00a0~\u00a02 hr at 4\u00b0C, followed by a PBS wash. The same procedures described above for cryosectioning were used for the embryo samples, except that 20 \u03bcm cryostat sections were collected.\n\n### microRNA in situ hybridization\u00a0(ISH) and miRNAscope assay\n\nFor all experimental procedures, we used diethylpyrocarbonate (DEPC)-treated water or PBS for washing steps or reagent preparation. Spinal cord cryosections were initially treated with 10 \u03bcg/mL proteinase K (Invitrogen), followed by acetylation in acetic anhydride/triethanolamine, and then fixed again with 4% PFA. Next, sections were pre-hybridized in hybridization solution [50% formamide, 5 X SSC, 0.5 mg/mL yeast tRNA (Ambion), 5 X Denhardt\u2019s solution (Fisher), 0.5 mg/ml salmon sperm DNA (Thermo Fisher Scientific), 0.02% Roche blocking reagent] at room temperature for 2\u00a0~\u00a04 hr, followed by hybridization with each miRNA probe overnight at 55\u00b0C. After post-hybridization washes in 2 X SSC and then 0.2 X SSC at 55\u00b0C, the in situ hybridization signals were detected using the NBT/BCIP (Roche) system according to the manufacturer\u2019s instructions. After termination of color development, slides were subjected to immunostaining as described below. Slides were mounted in Aqua-Poly/Mount and analyzed with a Zeiss LSM 780 confocal microscope. The 5\u2019 FITC-labeled LNA MiR34a-5p probe (ACAACCAGCTAAGACACTGCCA) was purchased from Exiqon.\n\nTo detect MiR34c-5p, spinal cord samples were dissected and fixed with 4% PFA, as described previously (Tung et al., 2019; Yen et al., 2018). The cryostat sections were processed using miRNAscope technology (Advanced Cell Diagnostics, ACD) according to the manufacturer\u2019s instructions. The probe to detect mmu-MiR34c-5p was customized from 896831-S1 (ACD).\n\n### RNA isolation and quantitative real-time PCR (RT-qPCR)\n\nTotal RNA was isolated using the Quick-RNA MiniPrep kit (Zymo Research). For mRNA analysis, 50\u2013300 ng of total RNA from each sample was reverse-transcribed with Superscript III (Thermo Scientific). One-tenth of the reverse transcription reaction was used for subsequent quantitative real-time PCRs on a LightCycler480 Real-Time PCR instrument (Roche) using SYBR Green PCR mix (Roche) for each gene of interest. GAPDH served as an internal reference for normalization of amplification efficiency. PCR primers were designed using the online database Primer3 and subjected to Basic Local Alignment Search Tool (BLAST; NCBI) analysis to avoid annealing to non-specific sequences during amplification. The sequences of the primers used are listed in Supplementary file 1c.\n\nFor miRNA expression analyses, 100\u2013200 ng of total RNA from each sample was reverse transcribed with a miRNA-specific primer from TaqMan MicroRNA Assays (Life Technology). The following assays were used: MiR34a-5p (Assay ID: 000426), MiR34b-5p (Assay ID: 002617), MiR34c-5p (Assay ID: 000428), MiR449a-5p (Assay ID: 001030), MiR449c-5p (Assay ID: 001667). A ubiquitous MiR16 (Assay ID: 000391) was used as the endogenous control for normalization. Each quantitative real-time PCR was performed in duplicate per sample, with at least three different experimental samples.\n\n### Immunostaining\n\nImmunostaining was performed on cryostat sections as previously described (Tung et al., 2019; Yen et al., 2018). Commercially available primary antibodies used in this study are listed in Key Resources Table. Alexa488-, Cy3- and Cy5-conjugated secondary antibodies were obtained from either Invitrogen or Jackson Immunoresearch and used at 1:1000 dilutions. Images were acquired by using a Zeiss LSM710 or LSM780 confocal microscope.\n\n### Behavioral assays\n\nLocomotor activity was measured by the open field, rotarod, and treadmill tests, whereas nociceptive sensory responses were evaluated by the mechanically\u00a0stimulated von Frey test and heat-stimulated tail flick and hot-plate tests. For the Mir34bc/449 DKO and Mir34/449 TKO mice, we selected surviving mutant mice as well as littermate Ctrl for the behavioral analyses. Age-matched WT mice from the same C57BL/6J background were also used for experimental comparisons. Both sexes of adult mice (~4 months-old) were used in this study. The experimenters conducting all behavioral assays were blind to mouse genotypes.\n\n#### Open-field test\n\nA square arena with opaque walls (area 48 \u00d7 48 cm and height 35 cm) was used. Mice were transferred to the testing room and habituated in the home cage 1 hr before testing, and then allowed to explore the test chamber for a further 1 hr during which all behaviors were videotaped and tracked using a video-tracking system mounted on top of the arena (Clever System, Reston, VA). Total distance and average velocity were analyzed for each mouse (Wang et al., 2017).\n\n#### Rotarod\n\nA commercially available rotarod apparatus (47600 Rota-Rod, Ugo Basile, Italy) with a rotating rod of 5 cm diameter was used. Mice were transferred to the testing room and habituated in the home cage at least 15 min before testing. In the training phase, three trials with a constant speed of 4 rpm and a 60 s cut-off time were used to ensure that all test mice could stay on the rod for a training trial before moving to the test phase. After a 30 min rest interval, the mice were evaluated during the test phase, with the rod accelerating from 4 to 40 rpm with a 300 s cut-off time, in a series of three trials. The longest falling latency as well as the rotating speed when the mouse fell off the apparatus were used to represent the motor coordination of each mouse (Wang et al., 2017).\n\n#### Treadmill locomotion analysis\n\nA TreadScan apparatus (CleverSys, Reston, VA) was used to analyze gait. Mice were placed on a stationary treadmill for acclimation and trained at a speed of 10 cm/s for 5 min before testing. Three test speeds were analyzed (15, 20, and 25 cm/s) for each trial, which were recorded at 79 frames/s for 10 s using TreadScan software. For data analyses, the successful trials in which a mouse was able to maintain treadmill speed with continuous locomotion for each 10 s recording was selected and further analyzed using TreadScan software. Only gait analyses from the trials conducted at 20 cm/s are shown in the present study. The gait parameters for each limb\u2014including stride, stance, swing, break, and propulsion time\u2014were automatically and unbiasedly calculated, and average values were used for statistical analysis. Representative analyses from the hindlimb were shown in this paper.\n\nThe parameters for limb coordination (phase coupling) were also calculated using TreadScan software, and the average values for homologous, homolateral, and diagonal coupling for each hindlimb from all trials were statistically analyzed. The phase coupling parameter is graphically displayed as a circular plot with phase values of 0 or 1 corresponding to perfect synchronization, whereas a phase value of 0.5 represents strict alternation. The mean phase value is indicated by the direction of the vector, and vector length represents the concentration of phase values around the mean (Crone et al., 2009; Drew and Doucet, 1991; Kjaerulff and Kiehn, 1996). Data visualization was performed in R.\n\n#### Von frey\n\nMechanosensitivity was assessed according to a previously published protocol, whereby the withdrawal threshold of the hind paws was measured by a simplified up-down method (SUDO) (Bonin et al., 2014; Chuang et al., 2018). In brief, 10 von Frey filaments with different bending forces ranging from 0.008 to 2 g were used for testing. Mice were habituated on the wire mesh 1 hr before the experiment, and then the 0.16 g filament was applied as the first stimulation. When a mouse exhibited hind paw withdrawal, lifting, flinching, or licking behaviors, this was defined as a positive response. If a positive response was shown, a lighter filament was used for the next stimulation. Conversely, a heavier filament was used for subsequent stimulation if there was a negative response to the 0.16 g filament. For each test, a constant number of five stimuli on each mouse was recorded, and the paw withdrawal threshold was determined by the fifth response and the estimated sixth response. For instance, if the fifth response was positive, then the threshold was the average of the value of the fifth response and the weight of the next lightest filament.\n\n#### Tail-flick\n\nA commercially available tail flick apparatus (37360 Tail Flick Unit, Ugo Basile, Italy) was used to measure the nociceptive threshold of mice. The heat intensity was set at 15 units with a 22 s cut-off time. Mice were transferred to the testing room and habituated in the home cage at least 15 min before the test. Then, the test mouse was placed on the apparatus and gently restrained for the experiment. The latency to observing the test mouse flicking its tail was recorded.\n\n#### Hot-plate\n\nA commercially available hot-plate apparatus (35100 Hot/Cold Plate, Ugo Basile, Italy) was used to determine the thermal nociception of mice. Before the experiment, mice were transferred to the testing room and habituated in the home cage for at least 15 min, and then placed on the hot-plate set at a constant temperature of 55 \u00b1 0.2\u00b0C. The latency to observing the mouse display hind paw licking/flicking or jumping behaviors was recorded. A 30 s cut-off time was used to avoid the test mice suffering tissue damage.\n\n### Mir34/449 plasmid construction\n\nThree mouse DNA fragments encompassing the Mir34a, Mir34bc, and Mir449abc clusters (700 bp,~1.2 Kb, and\u00a0~2 Kb in size, respectively) were amplified from mouse genomic DNA by using 2X PCR Dye Master Mix II (ADPMX02D-100) or Phusion High-Fidelity DNA Polymerase (F-530L; Thermo Fisher Scientific), and cloned into the pENTR/D-TOPO vector (K2400-20; Life Technology) according to the manufacturer\u2019s instructions. The primers used for TOPO cloning are listed in Supplementary file 1d. We then performed GATEWAY recombination (11791019; Thermo Fisher Scientific) to transfer mmu-Mir34a, mmu-Mir34bc, or mmu-Mir449abc into a Dest plasmid, p2Loxa (Iacovino et al., 2011), under a PGK promoter.\n\n### Predicted MiR34/449 target genes, putative binding sites, and gene ontology analysis\n\nTo identify putative MiR34/449-regulated genes, we used the online database TargetScan (Release 7.1 or 7.2, http://www.targetscan.org/mmu_72/). To narrow down selected candidates, we conducted gene ontology analysis via Database for Annotation, Visualization, and Integrated Discovery (DAVID) (Huang et al., 2009). Functional clustering annotated from DAVID, expressed as gene enrichment, is presented in this study (Tung et al., 2015).\n\n### Dual luciferase reporter assay\n\nThe WT 3\u2019UTR sequence containing four putative MiR34/449-binding sites of the Satb2 gene was amplified from mouse genomic DNA by PCR using 2X PCR Dye Master Mix II (ADPMX02D-100) or Phusion High-Fidelity DNA Polymerase (F-530L; Thermo Fisher Scientific). The purified PCR products were then inserted into the psiCHECK-2 vector (C8021; Promega) at XhoI and NotI restriction sites by using T4 DNA ligase (M0202S; NEB). The mutated versions (Mut) of the Satb2 3\u2019UTR were cloned by designing primers that resulted in the complementary sequence of the predicted binding site mismatching with the MiR34/449 seed sequence. Each fragment possessing a mutated binding site was initially amplified by PCR, followed by overlapping extension PCR, and the four mutated binding sites within the Satb2 3\u2019UTR were then cloned into the psiCHECK-2 vector described above. The primers used for the WT and Mut Satb2 3\u2019UTR reporter are listed in Supplementary file 1e.\n\nHEK293T cells were plated at a density of 5 \u00d7 104 per well (24-well plate), expanded for 16\u00a0~\u00a020 hr, and co-transfected with a mixture of 60 ng of WT or Mut reporter and 2 \u03bcg of either Mir34a, Mir34bc, Mir449abc, or control plasmids using 2 \u03bcL of PLUS Reagent and 2 \u03bcL of Lipofectamine LTX Reagent (A12621; Invitrogen). After 24 hr, cells were lysed and processed for luciferase assay using the Dual-Luciferase Reporter Assay System (E1910; Promega) according to the manufacturer\u2019s instructions. We measured luciferase activity using a 20/20 n luminometer (Turner Biosystems). To normalize transfection efficiency, luciferase activity was calculated as the ratio of firefly to Renilla luciferase activity, and the relative luciferase activity was further expressed as the ratio of measured luciferase activity to the control (Chen et al., 2011; Tung et al., 2015).\n\n### HEK293T cell culture\n\nHEK293T cells were cultured in DMEM (Gibco) supplemented with 2 mM L-Glutamine (Invitrogen), 1% Penicillin/Streptomycin (Invitrogen), and 10% FBS (Gibco) at 37\u00b0C in a humidified incubator with 5% CO2. All cell lines used in this study are subjected to regular mycoplasma tests.\n\n### Spatial analysis of spinal interneurons\n\nThe positioning of Satb2on INs in cervical/brachial spinal segments of P14 mice was analyzed in Imaris 9.5.1 (Bitplane) using the \u2018Spots\u2019 function. Cartesian coordinates were constructed for each image, with the midpoint of the central canal defined as position (0,0). The position of each individual neuron was exported from Imaris as a. csv file and visualized using a custom R script (http://www.r-project.org), with the dorso-ventral and medio-lateral density distributions shown alongside the respective figures. To estimate the probability density of Satb2on INs in the transverse spinal cord, we computed two-dimensional kernel density estimations using the \u2018kde2d\u2019 function from the \u2018MASS\u2019 library in R. Estimates were displayed as contour plots of density values in the 30th\u201390th percentiles (at intervals of 10%), as described previously (Bikoff et al., 2016; Paix\u00e3o et al., 2019; Sweeney et al., 2018; Tripodi et al., 2011).\n\n### Statistical analysis\n\nResults are expressed as mean \u00b1 SD (standard deviation). Each experiment was repeated at least three times to confirm the findings unless otherwise specified. Statistical analysis was performed in Graph Pad Prism 6.0 (GraphPad Software). Multiple groups were analyzed by one-way or two-way analysis of variance (ANOVA) with Tukey\u2019s multiple comparisons test as indicated in the figure legends. Two groups were analyzed by Student's t-test. p-Values of less than 0.05 were considered significant. Kaplan-Meier curves were used to analyze mouse survival, with statistically significant differences assessed by the log-rank test.\n",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "2d523aaf-0040-4e85-9fdf-0ee5c7236ec4",
+      "submission_id": "ad8fcd0b-092f-4447-acde-7ebc3c822966",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Oliver Hobert, Howard Hughes Medical Institute, Columbia University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.63768.sa1](https://doi.org/10.7554/eLife.63768.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nYour paper provides a very nice addition to the literature on how miRNA affects neuronal patterning and, eventually, behavior.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"MicroRNAs Mediate Precise Spinal Interneuron Population to Exert Delicate Sensory-to-Motor Outputs\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Marianne Bronner as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor. We agree that your manuscript is of potential interest for eLife, but as described below, additional experiments are required before it is published.\n\nIn brief, while we agree that additional genetic mouse manipulations and behavioral assays (such as satb2 overexpression to test for behavioral phenotypes or a genetic epistasis experiments) are not required, we believe that it is absolutely essential to perform a more thorough analysis of the ectopic satb2 positive population. You will see additional comments that you may find helpful in further improving the manuscript.\n\nReviewer #1:\n\nThe current manuscript by Chang et al. investigated the effect of knocking out miR-34/449 on the behavioral output from the spinal cord. After validating miR-34/449 expression in the spinal cord, the authors did a thorough job analyzing motor neuron (MN) development and function in miR-34/449 KO mice. While the results indicated that miR-34/449 KO did not lead to any significant defects in MN, the authors did notice certain behavioral changes (hyper-jumpy and hypersensitivity to thermal stimulation) that may be due to changes in interneuron (IN) function. The authors then identified an increased population of Satb2b (a target of miR-34/449)-positive interneurons in mice. The aspect of miRNA depletion and the associated behavioral phenotype is interesting. The manuscript in its current form, however, will significantly benefit from clarifications on the link between the molecular phenotype (Satb2) and behavioral phenotype.\n\n1. Among the battery of all the behavioral tests, the hyper-jumpy and hypersensitivity to thermal stimulation appear to be the only phenotypes detected. However, since this phenotype's etiology can come from many sources, it is difficult to discern the observed behavioral output's specificity. As this is the manuscript's primary gist, the authors should further address the specificity of miRNA-target interruption and behavioral output. For example, regarding the increased Satb2-positive cells, is this finding a reflection of increased IN number versus ectopic expression of Satb2 in other cell types due to miR-34/449 being absent? It would be informative to define the nature of these increased Sabt2-positive population. Since there is insufficient evidence supporting the mechanistic link between Satb2 upregulation and the behavioral phenotype, the authors should test if the behavioral change can be mimicked by directly upregulating Satb2 in INs. Or another way of addressing this question would be to see whether reducing Satb2 in miR-34/449 KO would rescue the behavioral phenotype. Without additional experiments similarly designed to lay out the molecular connection between Satb2 dysregulation and behavioral changes, the observations stated in the manuscript may stay inconclusive.\n\n2. The rationale for generating compete miR-34/449 KO mice (page 10) appears to be weak as the data showing the compensatory expression of miR-449 and miR-34bc shown in Supplementary Figure 1 fall short of convincing because of the large error bars, data variabilities, and the lack of statistical significance.\n\n3. It seems that deleting miR-449 in the intronic regions affected Cdc20b expression levels, as shown in the Supplementary data. It is surprising that while miR-449 appears to be enriched in the nervous system, the deletion does not influence Cdc20b in the nervous system. Accordingly, there are some questions associated with this phenomenon. Is there any evidence that the nervous system does not use Cdc20b as a host gene for miR-449, unlike other tissues? Also, what is the expression pattern level of Cdc20b in other tissues as tested in Figure 1E and F? It is important to clarify this point to rule out the possibility of ectopic Cdc20b having a role in the spinal cord.\n\nReviewer #2:\n\nThe manuscript examines the role of miR-34/449 family in spinal cord development and motor circuit formation. The authors demonstrate that miR-34 family of microRNAs increased their expression in postnatal spinal cord, while miR-449 family is highly expressed only in early embryonic stages. The authors generated TKO mice in which all members of the miR-34/449 family are knocked out. Analysis of sensorimotor behaviors revealed that despite strong expression of miR-34 family in postmitotic motor neurons, mutant mice do not exhibit significant defects in gait or in the number of spinal motor neuron subtypes. Analysis of sensorimotor pathway revealed a sensitization of a spinal reflex and reduced latency in a tail flick assay. Finally, the authors describe a significant increase in the number of Satb2 premotor dorsal spinal interneurons in DKO and TKO mice and demonstrated that Satb2 is a direct target of the miR-34/449 family.\n\nWhile Satb2 premotor interneurons that receive primary or secondary sensory inputs are well positioned to play a role in sensitization of the reflex circuit, in the absence of conditional deletion of miRNAs in different neuronal populations, or cell type specific rescue experiments, this conclusion remains only correlative. Nevertheless, genetic dissection of the pathway seems beyond the scope of the current manuscript.\n\n1. Quantification of individual miRNAs by qPCR needs to be normalized to a ubiquitous miRNA that can serve as a loading control. The relative quantification does not provide satisfactory insight in the absolute expression levels of individual miRNAs. The authors provide convincing images of miR-34a expression in postmitotic neurons, but no other members of the family are examined with cellular resolution. In order to interpret contribution of this family to Satb2 regulation, it would be informative to examine expression of individual miRNA members in Satb2 interneurons and their progenitors.\n\n2. Satb2 interneurons were previously shown to be subdivided into a medial population that receives preferentially Pvalb+ proprioceptive sensory inputs and a lateral population receiving nociceptive inputs (Hilde et al., 2016). The medial population also co-expresses CTIP2. Do the authors observe increase in both Satb2 IN subtypes?\n\n3. Loss of Satb2 results in a lateral shift of the interneuron cell bodies. Does the position of Satb2 neurons change in the TKO animals? Is it possible that TKO interneurons expressing presumably higher levels of Satb2 become localized more medially, resulting in a local increase in the number of Satb2 positive cells?\n\n4. Do the supernumerary Satb2 positive cells express markers of other interneurons present in the intermediate or dorsal spinal cord (consistent with the possibility that the loss of miRNAs results in ectopic upregulation of Satb2 expression)?\n\n5. Numbers of interneurons vary along the rostro caudal aspect of the spinal cord. Besides the included quantifications performed in cervical spinal cord, the authors should examine the number of Satb2 interneurons specifically in the spinal cord segment that is engaged in the tail flick reflex response.\n\n6. Normal numbers of Satb2 expressing cells in embryonic spinal cord, indicate that the postnatal phenotype is likely due to the miR-34 family loss of function. Do DKO mice in which miR-34a,b,c are deleted exhibit increased Satb2 numbers and sensitized spinal reflexes?\n",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5759de88-f896-4982-b861-c1054c936fa9",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C1",
+      "claim": "MicroRNAs (miRNAs) are a class of small regulatory non-coding RNAs that participate in various biological functions by repressing gene expression post-transcriptionally.",
+      "claim_type": "EXPLICIT",
+      "source": "MicroRNAs (miRNAs) are a class of small regulatory non-coding RNAs that participate in various biological functions by repressing gene expression post-transcriptionally (Ambros, 2004; Bartel, 2004; He and Hannon, 2004; Kim, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to established literature (Ambros, 2004; Bartel, 2004; He and Hannon, 2004; Kim, 2005).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "1f787bef-e43a-4a81-b2ac-b8ffcd2f3ba4",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C2",
+      "claim": "Global depletion of miRNAs through Dicer knockout leads to obvious defects in embryonic development, from cell differentiation to animal survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Several mouse knockout (KO) studies of Dicer, the pivotal RNase for generating mature miRNAs, have revealed that global depletion of these small regulatory RNAs leads to obvious defects in embryonic development, from cell differentiation to animal survival, underlining the functional importance of miRNAs during embryonic development (Bernstein et al., 2003; Chen et al., 2011; Harfe et al., 2005; Kanellopoulou et al., 2005; Tung et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to mouse knockout studies (Bernstein et al., 2003; Chen et al., 2011; Harfe et al., 2005; Kanellopoulou et al., 2005; Tung et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "0cce6f2d-b22c-4611-922c-5ec17d5177fd",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C3",
+      "claim": "Loss-of-function studies on most individual miRNAs have revealed minor or no overt developmental or behavioral phenotypes in multiple organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "However, loss-of-function studies on most individual miRNAs have revealed minor or no overt developmental or behavioral phenotypes in multiple organisms, partly reflecting the functional redundancy of miRNAs due to their polycistronic and paralogous features (Alvarez-Saavedra and Horvitz, 2010; Miska et al., 2007; Olive et al., 2015; Park et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies across organisms (Alvarez-Saavedra and Horvitz, 2010; Miska et al., 2007; Olive et al., 2015; Park et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "e4980817-959c-4952-87e2-7f4a116158c1",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C4",
+      "claim": "A single miRNA can target multiple mRNAs, and a targeted mRNA can also be bound by different miRNAs at its 3\u02b9 untranslated region (3\u02b9 UTR) with differential stoichiometric affinities.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a single miRNA can target multiple mRNAs, and a targeted mRNA can also be bound by different miRNAs at its 3\u02b9 untranslated region (3\u02b9 UTR) with differential stoichiometric affinities, representing a reciprocal one-to-multiple regulatory mechanism (Bartel, 2009; Krek et al., 2005; Loh et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies on miRNA-mRNA interactions (Bartel, 2009; Krek et al., 2005; Loh et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "62b59677-ccaa-4aaf-8f34-0815e6a712cf",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C5",
+      "claim": "The MiR34/449 family comprises six homologous miRNAs (MiR34a, 34b, 34c, 449a, 449b, and 449c) located at three different genomic loci.",
+      "claim_type": "EXPLICIT",
+      "source": "One well-characterized example of a polycistronic miRNA family is MiR34/449, which comprises six homologous miRNAs (MiR34a, 34b, 34c, 449a, 449b, and 449c) located at three different genomic loci\u2014Mir34a, Mir34b/c, and Mir449a/b/c (Mir449)\u2014that encode evolutionary-conserved sequences among vertebrates (Olive et al., 2015; Song et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies characterizing the MiR34/449 family (Olive et al., 2015; Song et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "3b8cb20c-7e5a-4387-9101-e5cbc113c93f",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C6",
+      "claim": "MiR34a, MiR34b, and MiR34c appear to be direct targets of p53 and have been shown to be involved in p53-mediated apoptosis in cancer contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "The MiR34a, MiR34b, and MiR34c (MiR34) miRNAs appear to be direct targets of p53, and they have been shown to be involved in p53-mediated apoptosis in cancer contexts (Bommer et al., 2007; Corney et al., 2007; He et al., 2007; Raver-Shapira et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to studies on p53-mediated regulation of MiR34 (Bommer et al., 2007; Corney et al., 2007; He et al., 2007; Raver-Shapira et al., 2007).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "6fe32f5f-7ef5-420d-ac02-df0c78382b71",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C7",
+      "claim": "The Mir449 cluster is embedded in the second intron of a host gene, Cdc20b.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas Mir34a and Mir34bc are not located within other genes, the Mir449 cluster is embedded in the second intron of a host gene, Cdc20b (cell division cycle 20 homologue B), and similar expression patterns of MiR449 and Cdc20b in mouse testis support that they may be subjected to the same mechanism of transcriptional regulation (Bao et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a study on the genomic location of Mir449 (Bao et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "c5b7851e-e77b-4bbb-94c6-7f435e1839d4",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C8",
+      "claim": "MiR449 has a role in regulating multiciliogenesis by suppressing the Notch pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Apart from this functional redundancy in the context of DNA damage, an additional role for MiR449 in regulating multiciliogenesis by suppressing the Notch pathway has been demonstrated (Liz\u00e9 et al., 2011; Marcet et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies demonstrating MiR449's role in multiciliogenesis (Liz\u00e9 et al., 2011; Marcet et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "7ad9f244-eb11-4798-a9eb-60d5fe2ffb6d",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C9",
+      "claim": "Mature MiR34a is ubiquitously expressed in a variety of organs, whereas MiR34bc and MiR449 exhibit a cell-type-specific expression pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "Mature MiR34a has been shown to be ubiquitously expressed in a variety of organs, whereas MiR34bc and MiR449 exhibit a cell-type-specific expression pattern, predominantly in ciliated cells, such as in respiratory and reproductive tissues, as well as in the ependymal cells enriched with cilia responsible for cerebrospinal fluid flow within the CNS (Bao et al., 2012; Kasai et al., 2016; Olive et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies on MiR34/449 expression patterns (Bao et al., 2012; Kasai et al., 2016; Olive et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "a951d4c1-129a-4825-9c40-152b32511fde",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C10",
+      "claim": "MiR34/449 displays compensatory expression upon single KO in a context-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to their shared and redundant seed sequences, MiR34/449 displays compensatory expression upon single KO in a context-dependent manner, emphasizing the necessity to enact combinatorial KO of all Mir34/449 alleles (Bao et al., 2012; Choi et al., 2017; Concepcion et al., 2012; Wu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies demonstrating compensatory expression (Bao et al., 2012; Choi et al., 2017; Concepcion et al., 2012; Wu et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "9aa84aec-d6af-4d17-bfa7-245cc4822008",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C11",
+      "claim": "The most prominent phenotype arising from MiR34/449 ablation is the impairment of motile ciliogenesis, which results in respiratory dysfunction, male/female infertility, and postnatal lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on three studies of Mir34bc and Mir449 double KO (DKO) mice, as well as Mir34/449 triple KO (TKO) mice, the most prominent phenotype arising from MiR34/449 ablation is the impairment of motile ciliogenesis, which results in respiratory dysfunction, male/female infertility, and postnatal lethality (Otto et al., 2017; Song et al., 2014; Wu et al., 2014; Yuan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies on MiR34/449 knockout phenotypes (Otto et al., 2017; Song et al., 2014; Wu et al., 2014; Yuan et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "3a13fefb-4735-4aed-9115-dda38d67aee2",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C12",
+      "claim": "MiR34/449 exhibits a dynamic expression pattern during spinal cord development.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously uncovered that MiR34/449 exhibits a dynamic expression pattern during spinal cord development (Li et al., 2017), so we hypothesized that MiR34/449 might exert an as yet uncharacterized function in the spinal cord.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous study by the authors (Li et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "adb332a9-3d64-49cf-8b99-83ca2df6bbc9",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C13",
+      "claim": "The spinal cord is one of the most important executive centers for body movement, conveying somatosensory information and integrating motor commands.",
+      "claim_type": "EXPLICIT",
+      "source": "The spinal cord is one of the most important executive centers for body movement, conveying somatosensory information and integrating motor commands emanating from spinal cord per se or the brain (Arber, 2017; Arber and Costa, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies on spinal cord function (Arber, 2017; Arber and Costa, 2018).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "ba27c054-622e-460f-bdee-6e10c380fc6c",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C14",
+      "claim": "Interneurons in the dorsal horn of the spinal cord terminate in exteroceptive sensory fibers and mediate sensory processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Interneurons (INs) that reside in the dorsal horn of the spinal cord terminate in exteroceptive sensory fibers and mediate sensory processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge of spinal cord anatomy and function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "4726579c-009f-4fcb-9021-c3b774389980",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C15",
+      "claim": "The ventral horn contains both motor neurons (MNs) and various INs, which are critical for motor function and for generating the rhythmicity of motor behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "The ventral horn contains both motor neurons (MNs) and various INs, which are critical for motor function and for generating the rhythmicity of motor behaviors (Dasen, 2018; Garcia-Campmany et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies on ventral horn function (Dasen, 2018; Garcia-Campmany et al., 2010).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "e639951e-51f3-4aff-8a76-e21504044994",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C16",
+      "claim": "The intermediate region of the dorso-ventral spinal cord serves as a relay station that receives multiple convergent inputs from proprioceptive, exteroceptive, and corticospinal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This region serves as a relay station that receives multiple convergent inputs from proprioceptive, exteroceptive, and corticospinal neurons, which connect monosynaptically to MNs (Levine et al., 2014; Tripodi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies on intermediate spinal cord function (Levine et al., 2014; Tripodi et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "bb7c3551-2359-4bd1-abb2-bf306b964cdb",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C17",
+      "claim": "Activation of premotor neurons (motor synergy encoders, MSE) induces multiple motor pools that contribute to complex movements.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of these premotor neurons, denoted motor synergy encoders (MSE), induces multiple motor pools that contribute to complex movements (Levine et al., 2014; Osseward and Pfaff, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies on MSE neurons (Levine et al., 2014; Osseward and Pfaff, 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "43f58466-e9ca-467b-82ae-a3d6f2c3f2fa",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C18",
+      "claim": "Conditional ablation of Satb2 from the intermediate spinal cord results in a hyperflexion phenotype upon triggering the limb withdrawal reflex.",
+      "claim_type": "EXPLICIT",
+      "source": "Conditional ablation of Satb2 from the intermediate spinal cord results in a hyperflexion phenotype upon triggering the limb withdrawal reflex (Hilde et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a study on Satb2 function (Hilde et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "ebd5ddf3-b24f-4151-bf06-dfac96b98e7f",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C19",
+      "claim": "miRNAs are critical regulators during embryonic spinal cord development, playing roles in progenitor patterning, subtype specification, functional maintenance, and neural regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well documented that miRNAs are critical regulators during embryonic spinal cord development, playing roles in progenitor patterning, subtype specification, functional maintenance, and neural regeneration (Chen et al., 2011; Chen and Wichterle, 2012; Chen and Chen, 2019; Kye and Gon\u00e7alves, 2014; Tung et al., 2015; Wu et al., 2012; Zhu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to studies on miRNA function in spinal cord development (Chen et al., 2011; Chen and Wichterle, 2012; Chen and Chen, 2019; Kye and Gon\u00e7alves, 2014; Tung et al., 2015; Wu et al., 2012; Zhu et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "b170489c-d079-42e3-ab6a-7e64969216f7",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C20",
+      "claim": "Loss of Dicer from late-stage post-mitotic spinal MNs using ChAT-Cre results in development of a spinal muscular atrophy (SMA)-like phenotype in a mouse model.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, loss of Dicer from late-stage post-mitotic spinal MNs using ChAT-Cre results in development of a spinal muscular atrophy (SMA)-like phenotype in a mouse model (Haramati et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a study on Dicer knockout in motor neurons (Haramati et al., 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "560c53ab-5a9c-4b2e-b647-3e70248be9c0",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C21",
+      "claim": "Mice in which Dicer has been knocked out from proprioceptive sensory neurons display impaired maintenance of monosynaptic sensory-motor circuits in the spinal cord.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, mice in which Dicer has been knocked out from proprioceptive sensory neurons display impaired maintenance of monosynaptic sensory-motor circuits in the spinal cord (Imai et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a study on Dicer knockout in sensory neurons (Imai et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "586f8e59-d2af-4ff7-8bf1-0f3d6a13cbdb",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C22",
+      "claim": "MiR34a-5p is expressed in most spinal cord neurons, including ventral MNs and most dorsal INs.",
+      "claim_type": "EXPLICIT",
+      "source": "For both embryonic and postnatal stages, we found that MiR34a-5p is expressed in most spinal cord neurons (Figure 1M), including ventral MNs (Figure 1N) and most dorsal INs (Figure 1O).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in situ hybridization data shown in Figures 1M, 1N, and 1O.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "a8cb64e7-ce40-4f0c-ae06-a87f826b0712",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C23",
+      "claim": "MiR34a-5p exhibits the strongest expression in the spinal cord among MiR34/449 members, with low embryonic-stage expression and increasing levels as postnatal stages progress.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the MiR34/449 members, MiR34a-5p exhibits the strongest expression in the spinal cord, with low embryonic-stage expression and increasing levels as postnatal stages progress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RT-qPCR data presented in the manuscript showing temporal expression patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "7e534ef3-2ea3-4886-b97a-fe9d6b42919c",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C24",
+      "claim": "Both Mir34bc/449 DKO and Mir34/449 TKO mice exhibit partial postnatal lethality and growth retardation with reduced body weight.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previously reported phenotypes for these lines, both Mir34/449 TKO and Mir34bc/449 DKO mice exhibited partial postnatal lethality and growth retardation with reduced body weight (Figure 2B and C; Fededa et al., 2016; Song et al., 2014; Wu et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figures 2B and 2C, as well as citations to previous studies (Fededa et al., 2016; Song et al., 2014; Wu et al., 2014).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "ce8d5593-c57e-42ad-a1eb-65ca04da8b4b",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C25",
+      "claim": "Both Mir34bc/449 DKO and Mir34/449 TKO mice presented two waves of postnatal mortality: a first wave occurred after the first week (P7~P14), with a second wave between P21 and P28.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, both the Mir34bc/449 DKO and Mir34/449 TKO mice presented two waves of postnatal mortality: a first wave occurred after the first week (P7~P14) (Song et al., 2014), with a second wave between P21 and P28 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by survival data shown in Figure 2B and a citation to a previous study (Song et al., 2014).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "87bdde8d-4f45-4a65-96be-0162a00ff3a3",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C26",
+      "claim": "Approximately 50% of Mir34bc/449 DKO and Mir34/449 TKO mice died within the first 2 weeks of birth, with an additional ~40% died within 4 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 50% of Mir34bc/449 DKO and Mir34/449 TKO mice died within the first 2 weeks of birth, with an additional ~40% died within 4 weeks (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by survival data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "00fd2efe-62d5-46f1-b551-c266af26fac0",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C27",
+      "claim": "Only ~10% of Mir34bc/449 DKO and Mir34/449 TKO mice survived to adulthood with less obvious growth retardation or abnormalities.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, only ~10% of mice survived to adulthood with less obvious growth retardation or abnormalities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the survival data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "a2319402-bfdb-4307-9b3f-a8668a133421",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C28",
+      "claim": "Mir34bc/449 DKO and Mir34/449 TKO mice manifested several unusual abnormalities, including blepharoptosis, abnormal posture (back-arching), and uncoordinated hind tiptoe walking and jumpy behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, we found that Mir34bc/449 DKO and Mir34/449 TKO mice presented significantly reduced body weights relative to respective controls (Figure 2C), and they manifested several unusual abnormalities, including blepharoptosis (ptosis, drooping eyelids) or microphthalmia (Figure 2\u2014figure supplement 1A and B), abnormal posture (back-arching; Figure 2D), and uncoordinated hind tiptoe walking and jumpy behavior, which resemble neurological deficits related to sensory-motor function defects (Imai et al., 2016; Figure 2\u2014videos 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by observations shown in Figures 2C, 2D, and supplementary figures, as well as videos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "085d1e8b-52f3-48ff-9041-843333b02a09",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C29",
+      "claim": "MN differentiation is not affected by Mir34/449 locus deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we investigated if MN differentiation was abrogated by Mir34/449 locus deletion. We crossed our Mir34/449 TKO mice with the MN reporter Hb9::GFP mouse line to facilitate MN identification. The number and distribution of post-mitotic MNs were comparable between MiR34/449-deficient and Ctrl embryos (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunostaining data shown in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "387f495c-91bb-4084-8206-a8cf55135322",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C30",
+      "claim": "MN subtype identity is not altered in MiR34/449-deficient embryos at E12.5.",
+      "claim_type": "EXPLICIT",
+      "source": "However, MN subtype identity did not appear to be altered in MiR34/449-deficient embryos at E12.5 (Figure 3\u2014figure supplement 1C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunostaining data shown in Figure 3\u2014figure supplement 1C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "aeab956e-9c7d-4826-96b0-38c647c6e8e7",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C31",
+      "claim": "MiR34/449 miRNAs do not play an overt role in MN development.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, MiR34/449 miRNAs do not play an overt role in MN development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the lack of observed differences in MN development in MiR34/449-deficient mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "40b0141b-8583-494f-b2ef-27c44e4261d1",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C32",
+      "claim": "Both Mir34bc/449 DKO and Mir34/449 TKO mice exhibited slightly yet significantly reduced locomotor activity relative to WT and Ctrl mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that both Mir34bc/449 DKO and Mir34/449 TKO mice exhibited slightly yet significantly reduced locomotor activity relative to WT and Ctrl mice (Figure 3B), while their locomotor coordination appeared normal assayed by the rotarod (Figure 3C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by open field test data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "7ed61456-8223-44bd-a492-a9ee6558eed8",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C33",
+      "claim": "Locomotor coordination of Mir34bc/449 DKO and Mir34/449 TKO mice appeared normal as assayed by the rotarod.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that both Mir34bc/449 DKO and Mir34/449 TKO mice exhibited slightly yet significantly reduced locomotor activity relative to WT and Ctrl mice (Figure 3B), while their locomotor coordination appeared normal assayed by the rotarod (Figure 3C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by rotarod test data shown in Figures 3C and 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "2664c089-c151-47bd-b3a7-17881f608236",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C34",
+      "claim": "Obvious and spontaneous jumpy movements were recorded in the home cages of Mir34bc/449 DKO and Mir34/449 TKO mice, as well as in the open arena (occurrence ~35%).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we recorded obvious and spontaneous jumpy movements in the home cages of Mir34bc/449 DKO and Mir34/449 TKO mice, as well as in the open arena (occurrence ~35%; Figure 2\u2014video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral observations documented in videos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "4be4e96b-a57a-48ba-9d83-a997b8c175dd",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C35",
+      "claim": "The overall motor function appeared hyper-jumpy while most motor outputs were largely preserved upon loss of MiR34/449 miRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these findings, we suggest that the overall motor function appeared hyper-jumpy while most motor outputs were largely preserved upon loss of MiR34/449 miRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the behavioral assay results presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "e1219cdb-265f-4d13-9478-6318704d3fe2",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C36",
+      "claim": "The response threshold in nociceptive withdrawal behavior to mechanical stimulation was comparable among WT, Ctrl, and MiR34/449 mutant lines.",
+      "claim_type": "EXPLICIT",
+      "source": "We first performed a von Frey test on MiR34/449 mutants, Ctrl and WT mice to measure their responses to mechanical stimulation, and observed that the response threshold in nociceptive withdrawal behavior was comparable among WT, Ctrl, and MiR34/449 mutant lines (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by von Frey test data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "f12fac02-644b-4e3b-909d-55721e340c75",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C37",
+      "claim": "MiR34/449 mutant mice displayed a significantly reduced latency in the tail flick test relative to both Ctrl and WT mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that MiR34/449 mutant mice displayed a significantly reduced latency in the tail flick test relative to both Ctrl and WT mice (Figure 4C), indicative of increased sensitivity to heat stimulation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by tail flick test data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "05aa65c5-a039-4d13-9711-a6afaad1b20e",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C38",
+      "claim": "MiR34/449 mutant mice exhibited increased sensitivity to heat stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that MiR34/449 mutant mice displayed a significantly reduced latency in the tail flick test relative to both Ctrl and WT mice (Figure 4C), indicative of increased sensitivity to heat stimulation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the reduced latency in the tail flick test.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "11def44d-7d47-4931-a424-d8cfca8348c9",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C39",
+      "claim": "A minor (but not statistically significant) decrease in hindlimb response latency was observed among MiR34/449 mutant mice in the hot-plate experiment when compared to WT and Ctrl mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We then performed a hot-plate experiment whereby a heat stimulus is applied to the hind paws of mice, as this assay is considered to involve more complex supraspinal pathways (Giglio et al., 2006). We observed a minor (but not statistically significant) decrease in hindlimb response latency among MiR34/449 mutant mice when compared to WT and Ctrl mice (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by hot-plate test data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "32f126bb-08de-49bf-adda-7b51625b907e",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C40",
+      "claim": "The major function of MiR34/449 in the spinal cord relates to spinal reflex circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we suggest that the major function of MiR34/449 in the spinal cord relates to spinal reflex circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the differential effects observed in tail flick (spinal reflex) versus hot-plate (supraspinal) tests.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "4d06e43a-0e9d-4a7d-8a23-bbfc0dc89df3",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C41",
+      "claim": "Satb1 and Satb2 are potential candidate targets of MiR34/449 that are predicted to participate in IN specification or maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on those criteria, we identified potential candidate targets of MiR34/449 that were predicted to participate in IN specification or maturation, including multiple genes previously characterized as being important in INs, that is, Satb1, Satb2 (Figure 5B and Supplementary file 1g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by bioinformatic predictions and filtering criteria described in the text and shown in Figure 5B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "0a5c4de3-ef1a-43ed-81b7-78c8b3ad55bc",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C42",
+      "claim": "Co-transfection of the luciferase construct with three MiR34/449 expression vectors resulted in a reduction in luciferase activity for the WT 3\u02b9 UTRs of Satb1/2 constructs.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-transfection of the luciferase construct with three MiR34/449 expression vectors resulted in a reduction in luciferase activity for the WT 3\u02b9 UTRs of Satb1/2 constructs (Figure 5C and D), whereas a construct harboring the mutated targeting sequences was completely insensitive to miRNA-mediated silencing (Figure 5C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by luciferase assay data shown in Figures 5C and 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "4e1e0a26-5e3d-4d50-8e29-27094492c8e7",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C43",
+      "claim": "A construct harboring the mutated targeting sequences was completely insensitive to miRNA-mediated silencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-transfection of the luciferase construct with three MiR34/449 expression vectors resulted in a reduction in luciferase activity for the WT 3\u02b9 UTRs of Satb1/2 constructs (Figure 5C and D), whereas a construct harboring the mutated targeting sequences was completely insensitive to miRNA-mediated silencing (Figure 5C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by luciferase assay data shown in Figures 5C and 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "7bcd26ce-abee-4838-affe-d7a3980c7575",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C44",
+      "claim": "MiR34/449 targets the 3\u02b9 UTRs of Satb1 and Satb2.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings indicate that MiR34/449 targets the 3\u02b9 UTRs of Satb1 and Satb2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the luciferase assay results demonstrating direct targeting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "d0f3bbbb-0214-4ff0-bd4f-47ad524072ed",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C45",
+      "claim": "A significantly increased number of Satb1on and Satb2on INs was observed in the MiR34/449 mutant spinal cords at P14 compared to WT and control littermates.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, a previous study characterized the cellular identity of MSE neurons and found that Satb1/2 are expressed in medial lamina V/VI and lamina III (Levine et al., 2014). Unlike for WT and control littermates at P14, we observed a significantly increased number of Satb1on and Satb2on INs in the MiR34/449 mutant spinal cords (Figure 5E~5G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunostaining data shown in Figures 5E-5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "6925b7cd-f878-4aa6-bbc7-838167a23f71",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C46",
+      "claim": "A drastic increase in the number of hybrid cells expressing both Satb1 and Satb2 was observed in the MiR34/449 mutant spinal cords at P14 compared to WT and Ctrl groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we also observed a drastic increase in the number of hybrid cells expressing both Satb1 and Satb2 in the MiR34/449 mutant spinal cords at P14 compared to WT and Ctrl groups (Figure 5E and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunostaining data shown in Figures 5E and 5H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "c2f5b0f4-c401-4724-9e40-4e149888f87e",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C47",
+      "claim": "Satb1 and Satb2 are directly regulated by MiR34/449 miRNAs in the spinal cord.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we have shown that Satb1 and Satb2 are directly regulated by MiR34/449 miRNAs in the spinal cord.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the combination of luciferase assays and in vivo expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "8d37c763-b1f2-448a-8948-bd95137e4eb2",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C48",
+      "claim": "Many Satb1/2on INs co-expressed MiR34a-5p or MiR34c-5p in the dorsal/intermediate regions of the spinal cord at P14.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we identified many Satb1/2on INs that co-expressed MiR34a-5p or MiR34c-5p in the dorsal/intermediate regions of the spinal cord at P14, suggesting potentially direct regulation of Satb1/2 by MiR34/449 in spinal INs (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in situ hybridization data shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "62036913-d47f-4db8-8bef-f7857cc6f535",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C49",
+      "claim": "MiR34/449 may control optimal development of Satb1/2on INs in the spinal cord to fine-tune sensory-motor circuit outputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these findings indicate that MiR34/449 may control optimal development of Satb1/2on INs in the spinal cord to fine-tune sensory-motor circuit outputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined results of targeting experiments and behavioral phenotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "534e6266-51fc-4345-b45b-77674adc5801",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C50",
+      "claim": "There were no apparent differences in IN progenitors in the dorsal or ventral horns at E11.5 in MiR34/449 mutant embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "At E11.5, there were no apparent differences in IN progenitors in the dorsal or ventral horns\u2014as revealed by molecular markers Lbx1 (dI4 ~6), Lhx1/5 (dI2, 4, 6~V1), Isl1 (dI3), and Tlx3 (dI3, 5) for the dorsal horn, or Foxd3 (dI2, V1), Chx10 (V2a), and Lhx3 (V2) for the ventral horn, respectively\u2014indicating that MiR34/449 is not required for most IN development (Figure 5\u2014figure supplement 3A~K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunostaining data shown in Figure 5\u2014figure supplement 3A-K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "642c2247-58c6-4d94-9df5-82c18c3e8091",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C51",
+      "claim": "MiR34/449 is not required for most IN development.",
+      "claim_type": "EXPLICIT",
+      "source": "At E11.5, there were no apparent differences in IN progenitors in the dorsal or ventral horns\u2014as revealed by molecular markers Lbx1 (dI4 ~6), Lhx1/5 (dI2, 4, 6~V1), Isl1 (dI3), and Tlx3 (dI3, 5) for the dorsal horn, or Foxd3 (dI2, V1), Chx10 (V2a), and Lhx3 (V2) for the ventral horn, respectively\u2014indicating that MiR34/449 is not required for most IN development (Figure 5\u2014figure supplement 3A~K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the lack of observed differences in IN progenitors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "866986d6-4a7a-4afa-82d7-ca47728444de",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C52",
+      "claim": "At E13.5, there was no significant difference in numbers of Satb2on INs in MiR34/449 mutant spinal cords relative to WT and Ctrl.",
+      "claim_type": "EXPLICIT",
+      "source": "At E13.5 (the earliest time-point at which we could detect dorsal Satb2 INs), there was no significant difference in numbers of Satb2on INs in MiR34/449 mutant spinal cords relative to WT and Ctrl (Figure 5\u2014figure supplement 3L and M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunostaining data shown in Figure 5\u2014figure supplement 3L and M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "2f134c4f-493b-4071-ab98-b1626c46f045",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C53",
+      "claim": "There was a dramatic increase of Satb2on INs relative to WT and Ctrl at P14 in the MiR34/449 mutant spinal cords throughout the spinal cord segments.",
+      "claim_type": "EXPLICIT",
+      "source": "Although comparable numbers of Satb2on INs persisted until E16.5 (data not shown), there was a dramatic increase of Satb2on INs relative to WT and Ctrl at P14 in the MiR34/449 mutant spinal cords throughout the spinal cord segments (Figure 5E and F and Figure 5\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunostaining data shown in Figures 5E, 5F, and Figure 5\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "ae340a51-2267-4aab-9e0e-80ec017de6f4",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C54",
+      "claim": "Optimal Satb2on IN number and maintenance is particularly sensitive to MiR34/449 expression in the postnatal spinal cord.",
+      "claim_type": "EXPLICIT",
+      "source": "This outcome indicates that optimal Satb2on IN number and maintenance is particularly sensitive to MiR34/449 expression in the postnatal spinal cord.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the temporal pattern of Satb2 expression changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "4e62ad90-54fb-400b-91d6-9dc28e33728c",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C55",
+      "claim": "MiR34/449 miRNAs control optimal development of Satb2-expressing INs in the spinal cord, particularly at the postnatal stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, we suggest that MiR34/449 miRNAs control optimal development of Satb2-expressing INs in the spinal cord, particularly at the postnatal stage, enabling this miRNA family to fine-tune and maintain sensory-motor circuit outputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined temporal and functional data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "7f4a04f1-ac49-41fd-8423-a25cd30f2095",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C56",
+      "claim": "Neither Satb1 or Satb2 expressing IN positions were obviously affected in the absence of MiR34/449 at P14.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the position of the Satb2on INs is highly associated with the connectivity of the sensory afferents (Hilde et al., 2016; Levine et al., 2014), we next tested if the position of the Satb1on or Satb2on INs is affected in the absence of the MiR34/449 at P14. However, neither Satb1 or Satb2 expressing IN positions were obviously affected (Figure 5\u2014figure supplement 5), reflecting the different phenotype manifestation between MiR34/449 mutants and Satb2 KO mice (Hilde et al., 2016; Levine et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by spatial distribution analysis shown in Figure 5\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "41d10898-35f5-425b-8c33-62f48e37afd8",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C57",
+      "claim": "An increase in the number of Satb2on;Ctip2on INs was observed in the MiR34/449 mutant spinal cords.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we observed an increase in the number of Satb2on;Ctip2on INs in the MiR34/449 mutant spinal cords (Figure 6A and B), yet only a subtle (but not statistically significant) change in the Satb2on;Pax2on IN subpopulation was found (Figure 6A and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunostaining data shown in Figures 6A and 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "02f65b06-35de-41fb-85e8-e2d2b6f5dfe8",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C58",
+      "claim": "Only a subtle (but not statistically significant) change in the Satb2on;Pax2on IN subpopulation was found in MiR34/449 mutant spinal cords.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we observed an increase in the number of Satb2on;Ctip2on INs in the MiR34/449 mutant spinal cords (Figure 6A and B), yet only a subtle (but not statistically significant) change in the Satb2on;Pax2on IN subpopulation was found (Figure 6A and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunostaining data shown in Figures 6A and 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "91465ae4-680e-4dd8-bd28-26f853f4a25a",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C59",
+      "claim": "The Satb2on;Ctip2on IN subpopulation had preferentially increased, with a concomitant decrease in the Satb2on;Pax2on subpopulation, in the Mir34/449 TKO spinal cords relative to those of WT and control littermates.",
+      "claim_type": "EXPLICIT",
+      "source": "As the individual Ctip2on and Pax2on cell populations were of comparable size, this outcome further indicates that the Satb2on;Ctip2on IN subpopulation had preferentially increased, with a concomitant decrease in the Satb2on;Pax2on subpopulation, in the Mir34/449 TKO spinal cords relative to those of WT and control littermates (Figure 6D and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the quantification data shown in Figures 6D and 6G.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "176eacf3-2e9c-4764-8c66-ca52d114b167",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C60",
+      "claim": "The increased number of Satb2on;Ctip2on cells tended to exhibit a more condensed pattern in the intermediate region of the MiR34/449 mutant spinal cord.",
+      "claim_type": "EXPLICIT",
+      "source": "Further spatial distribution analyses revealed no significant change in the distribution of the increased number of Satb2on;Ctip2on, yet these cells tended to exhibit a more condensed pattern in the intermediate region of the MiR34/449 mutant spinal cord (Figure 6E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by spatial distribution analysis shown in Figures 6E and 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "7fa2a640-70a0-43e4-be4b-57934be48314",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C61",
+      "claim": "MiR34/449 controls optimal development of Satb2-expressing INs in the spinal cord, and loss of MiR34/449 leads to a change in the molecular identity of Satb2on IN subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Given all of these findings, we suggest that MiR34/449 controls optimal development of Satb2-expressing INs in the spinal cord, and that loss of MiR34/449 leads to a change in the molecular identity of Satb2on IN subtypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined data on Satb2 subpopulation changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "de737839-1cf9-4ad0-9941-2b43869d4322",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C62",
+      "claim": "MiR34/449 has a potential role in maintaining precise cell identity in the postnatal spinal cord, which is critical for refining sensory-motor circuit outputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results reflect a potential role for these miRNAs in maintaining precise cell identity in the postnatal spinal cord, which is critical for refining sensory-motor circuit outputs (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the combined results and summarized in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "9951a218-0603-47ea-b0ef-8b8bd787c3c6",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C63",
+      "claim": "MiR34/449 depletion results in a change to a spinal IN population that might contribute to altered sensory-motor responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings demonstrate that MiR34/449 depletion results in a change to a spinal IN population that might contribute to altered sensory-motor responses, thereby revealing an important role for MiR34/449 in regulating the sensory-motor circuitry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined behavioral and molecular data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "274ba429-b4d2-4f74-9114-2e44946bdb99",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C64",
+      "claim": "The loss of MiR34/449 miRNAs perturbs thermally induced pain response thresholds in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Our behavioral assays reveal that the loss of MiR34/449 miRNAs perturb thermally induced pain response thresholds and compromised delicate motor output in mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the tail flick test data showing altered thermal sensitivity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "258c1e41-33be-404d-bea4-6b937e67b68d",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C65",
+      "claim": "The loss of MiR34/449 miRNAs compromised delicate motor output in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Our behavioral assays reveal that the loss of MiR34/449 miRNAs perturb thermally induced pain response thresholds and compromised delicate motor output in mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the behavioral assay data showing jumpy movements and altered locomotor activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "38e8e429-bdc4-40f8-8245-29f4e71e750b",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C66",
+      "claim": "MiR34/449 directly target Satb1 and Satb2 to fine-tune the precise number of a sub-population of motor synergy encoder (MSE) neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, MiR34/449 directly target Satb1 and Satb2 to fine-tune the precise number of a sub-population of motor synergy encoder (MSE) neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the luciferase assays and the observed changes in Satb1/2 expressing neuron numbers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "09e6d5de-4e24-4bd6-b2a7-53171a3ffb07",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "claim_id": "C67",
+      "claim": "MiR34/449 fine-tunes optimal development of Satb1/2on interneurons in the spinal cord, thereby refining explicit sensory-to-motor circuit outputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, MiR34/449 fine-tunes optimal development of Satb1/2on interneurons in the spinal cord, thereby refining explicit sensory-to-motor circuit outputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined molecular and behavioral data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "159df1cb-a85d-4f45-8ce9-82e021867c73",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "MiR34a-5p is expressed in most spinal cord neurons including motor neurons and interneurons, with expression increasing from embryonic to postnatal stages, and exhibits the strongest expression among MiR34/449 family members in the spinal cord.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22 and C23 are supported by in situ hybridization data (Figure 1M-O) and RT-qPCR temporal expression analysis showing MiR34a-5p expression patterns. The data directly demonstrate cellular localization and developmental dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "89cd10fe-cb24-4ec8-b977-8f9c3eb2251f",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Mir34bc/449 DKO and Mir34/449 TKO mice exhibit partial postnatal lethality with two mortality waves (P7-P14 and P21-P28), growth retardation, and neurological abnormalities including blepharoptosis, abnormal posture, and uncoordinated movement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C28 are well-supported by survival curves (Figure 2B), body weight measurements (Figure 2C), and photographic/video documentation of phenotypes (Figure 2D, supplementary figures and videos). The quantitative survival data and observational evidence converge to support these phenotypic descriptions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "08473ba3-d8ef-4fe9-b102-cb0cbbd00ca3",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "MiR34/449 miRNAs do not play an overt role in motor neuron development, as MN differentiation, distribution, and subtype identity are not affected by Mir34/449 deletion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31 are supported by immunostaining data showing comparable MN numbers, distribution, and molecular markers in mutant versus control embryos (Figure 3\u2014figure supplement 1B-D). The negative result is appropriately documented with multiple markers across developmental stages.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "4a3bb61e-9cc9-46f2-ae69-ef2d2b17c806",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Mir34bc/449 DKO and Mir34/449 TKO mice show slightly reduced locomotor activity but normal locomotor coordination, with spontaneous jumpy movements observed in ~35% of cases, suggesting hyper-jumpy motor function with largely preserved motor outputs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 are supported by open field test data (Figure 3B), rotarod performance (Figures 3C-D), and treadmill analyses (Figure 3E-H). The behavioral assays provide quantitative evidence for the subtle motor phenotype, though the interpretation of 'hyper-jumpy' is somewhat subjective.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "1bfc6288-0ecf-4878-9616-c96aaa99e2c2",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "MiR34/449 mutant mice exhibit hypersensitivity to thermal stimulation in spinal reflex circuits (tail flick test) but not in supraspinal pathways (hot-plate test), with normal mechanical pain sensitivity (von Frey test).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C40 are supported by behavioral pain assay data (Figures 4B-D). The tail flick test shows statistically significant reduced latency (C37), while von Frey (C36) and hot-plate (C39) tests show no significant differences. The interpretation that MiR34/449 function relates primarily to spinal reflex circuits (C40) is a reasonable inference from the differential results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "5d906321-2d41-4806-bb93-6c3f8b8a9862",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "MiR34/449 directly targets the 3' UTRs of Satb1 and Satb2, as demonstrated by bioinformatic prediction, luciferase reporter assays showing reduced activity with wild-type but not mutated 3' UTR sequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C44 are supported by bioinformatic analysis (Figure 5A-B), luciferase assays (Figures 5C-D), and mutant construct controls. The luciferase data demonstrate direct targeting, and the mutant constructs provide appropriate negative controls. This is a well-executed molecular validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "d3251b93-bdcd-4115-8a58-e0b988bc959f",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Loss of MiR34/449 results in significantly increased numbers of Satb1-positive, Satb2-positive, and Satb1/Satb2 double-positive interneurons in the spinal cord at P14, with co-expression of MiR34a-5p/MiR34c-5p in Satb1/2-positive interneurons supporting direct regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C49 are supported by immunostaining quantification (Figures 5E-H) and in situ hybridization co-localization data (Figure 5\u2014figure supplement 2). The increased cell numbers are statistically significant, and the co-expression data support the proposed regulatory relationship. The inference about fine-tuning sensory-motor circuits (C49) is reasonable but somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "8e460541-eff4-41d4-8274-70fd0090bfa1",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "MiR34/449 is not required for early interneuron development (E11.5-E13.5), but controls optimal postnatal development of Satb2-expressing interneurons, with dramatic increases in Satb2-positive cells observed at P14 but not at embryonic stages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C55 are supported by temporal analysis using multiple IN markers at E11.5 (Figure 5\u2014figure supplement 3A-K), Satb2 quantification at E13.5 (Figure 5\u2014figure supplement 3L-M), and P14 (Figures 5E-F, Figure 5\u2014figure supplement 4). The temporal specificity of the phenotype is well-documented, supporting the conclusion about postnatal-specific function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "91f5ce25-c918-4354-8d62-ea00e62c4c27",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The spatial positioning of Satb1-positive and Satb2-positive interneurons is not obviously affected by loss of MiR34/449 at P14.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C56 is supported by spatial distribution analysis (Figure 5\u2014figure supplement 5) showing no significant changes in dorso-ventral or medio-lateral positioning. This distinguishes the MiR34/449 phenotype from Satb2 KO phenotypes reported in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "d9204c5c-51e3-4718-861c-1e197c993d83",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Loss of MiR34/449 leads to a preferential increase in the Satb2-positive/Ctip2-positive interneuron subpopulation with a concomitant decrease in the Satb2-positive/Pax2-positive subpopulation, with increased cells showing a more condensed spatial pattern in the intermediate spinal cord.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C61 are supported by immunostaining and quantification data (Figures 6A-F). The increase in Satb2+/Ctip2+ cells is statistically significant (C57), while the Satb2+/Pax2+ change is not significant (C58). The proportional analysis (C59) and spatial distribution data (C60) provide additional support. The conclusion about altered molecular identity (C61) is a reasonable inference from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "74f6d90b-639a-4597-9cc1-720e891f536b",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "MiR34/449 fine-tunes optimal development of Satb1/2-positive interneurons by directly targeting Satb1 and Satb2, thereby refining sensory-motor circuit outputs, with loss of MiR34/449 resulting in altered sensory-motor responses including perturbed thermal pain thresholds and compromised motor output.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C67 represent the integrated conclusions of the study, synthesizing molecular (luciferase assays, immunostaining), cellular (IN quantification and characterization), and behavioral (pain sensitivity, motor function) data. While the mechanistic link between increased Satb1/2+ INs and behavioral phenotypes is correlative rather than causally proven, the overall conclusion is well-supported by the convergent evidence from multiple experimental approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    },
+    {
+      "id": "33e1f0bc-33ad-4523-bab6-e8aef25ec393",
+      "content_id": "20ad6255-8633-43c4-8c2e-5c7b59eb9635",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background claims establishing the general properties of miRNAs, the MiR34/449 family characteristics, spinal cord anatomy and function, and prior work on miRNAs in neural development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C21 are background/literature review claims supported by appropriate citations to established literature. These provide context for the current study but do not represent novel findings. All citations appear appropriate for the claims made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:29:56.904199Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "586f8e59-d2af-4ff7-8bf1-0f3d6a13cbdb",
+      "result_id": "159df1cb-a85d-4f45-8ce9-82e021867c73"
+    },
+    {
+      "claim_id": "a8cb64e7-ce40-4f0c-ae06-a87f826b0712",
+      "result_id": "159df1cb-a85d-4f45-8ce9-82e021867c73"
+    },
+    {
+      "claim_id": "7e534ef3-2ea3-4886-b97a-fe9d6b42919c",
+      "result_id": "89cd10fe-cb24-4ec8-b977-8f9c3eb2251f"
+    },
+    {
+      "claim_id": "ce8d5593-c57e-42ad-a1eb-65ca04da8b4b",
+      "result_id": "89cd10fe-cb24-4ec8-b977-8f9c3eb2251f"
+    },
+    {
+      "claim_id": "87bdde8d-4f45-4a65-96be-0162a00ff3a3",
+      "result_id": "89cd10fe-cb24-4ec8-b977-8f9c3eb2251f"
+    },
+    {
+      "claim_id": "00fd2efe-62d5-46f1-b551-c266af26fac0",
+      "result_id": "89cd10fe-cb24-4ec8-b977-8f9c3eb2251f"
+    },
+    {
+      "claim_id": "a2319402-bfdb-4307-9b3f-a8668a133421",
+      "result_id": "89cd10fe-cb24-4ec8-b977-8f9c3eb2251f"
+    },
+    {
+      "claim_id": "085d1e8b-52f3-48ff-9041-843333b02a09",
+      "result_id": "08473ba3-d8ef-4fe9-b102-cb0cbbd00ca3"
+    },
+    {
+      "claim_id": "387f495c-91bb-4084-8206-a8cf55135322",
+      "result_id": "08473ba3-d8ef-4fe9-b102-cb0cbbd00ca3"
+    },
+    {
+      "claim_id": "aeab956e-9c7d-4826-96b0-38c647c6e8e7",
+      "result_id": "08473ba3-d8ef-4fe9-b102-cb0cbbd00ca3"
+    },
+    {
+      "claim_id": "40b0141b-8583-494f-b2ef-27c44e4261d1",
+      "result_id": "4a3bb61e-9cc9-46f2-ae69-ef2d2b17c806"
+    },
+    {
+      "claim_id": "7ed61456-8223-44bd-a492-a9ee6558eed8",
+      "result_id": "4a3bb61e-9cc9-46f2-ae69-ef2d2b17c806"
+    },
+    {
+      "claim_id": "2664c089-c151-47bd-b3a7-17881f608236",
+      "result_id": "4a3bb61e-9cc9-46f2-ae69-ef2d2b17c806"
+    },
+    {
+      "claim_id": "4be4e96b-a57a-48ba-9d83-a997b8c175dd",
+      "result_id": "4a3bb61e-9cc9-46f2-ae69-ef2d2b17c806"
+    },
+    {
+      "claim_id": "e1219cdb-265f-4d13-9478-6318704d3fe2",
+      "result_id": "1bfc6288-0ecf-4878-9616-c96aaa99e2c2"
+    },
+    {
+      "claim_id": "f12fac02-644b-4e3b-909d-55721e340c75",
+      "result_id": "1bfc6288-0ecf-4878-9616-c96aaa99e2c2"
+    },
+    {
+      "claim_id": "05aa65c5-a039-4d13-9711-a6afaad1b20e",
+      "result_id": "1bfc6288-0ecf-4878-9616-c96aaa99e2c2"
+    },
+    {
+      "claim_id": "11def44d-7d47-4931-a424-d8cfca8348c9",
+      "result_id": "1bfc6288-0ecf-4878-9616-c96aaa99e2c2"
+    },
+    {
+      "claim_id": "32f126bb-08de-49bf-adda-7b51625b907e",
+      "result_id": "1bfc6288-0ecf-4878-9616-c96aaa99e2c2"
+    },
+    {
+      "claim_id": "4d06e43a-0e9d-4a7d-8a23-bbfc0dc89df3",
+      "result_id": "5d906321-2d41-4806-bb93-6c3f8b8a9862"
+    },
+    {
+      "claim_id": "0a5c4de3-ef1a-43ed-81b7-78c8b3ad55bc",
+      "result_id": "5d906321-2d41-4806-bb93-6c3f8b8a9862"
+    },
+    {
+      "claim_id": "4e1e0a26-5e3d-4d50-8e29-27094492c8e7",
+      "result_id": "5d906321-2d41-4806-bb93-6c3f8b8a9862"
+    },
+    {
+      "claim_id": "7bcd26ce-abee-4838-affe-d7a3980c7575",
+      "result_id": "5d906321-2d41-4806-bb93-6c3f8b8a9862"
+    },
+    {
+      "claim_id": "d0f3bbbb-0214-4ff0-bd4f-47ad524072ed",
+      "result_id": "d3251b93-bdcd-4115-8a58-e0b988bc959f"
+    },
+    {
+      "claim_id": "6925b7cd-f878-4aa6-bbc7-838167a23f71",
+      "result_id": "d3251b93-bdcd-4115-8a58-e0b988bc959f"
+    },
+    {
+      "claim_id": "c2f5b0f4-c401-4724-9e40-4e149888f87e",
+      "result_id": "d3251b93-bdcd-4115-8a58-e0b988bc959f"
+    },
+    {
+      "claim_id": "8d37c763-b1f2-448a-8948-bd95137e4eb2",
+      "result_id": "d3251b93-bdcd-4115-8a58-e0b988bc959f"
+    },
+    {
+      "claim_id": "62036913-d47f-4db8-8bef-f7857cc6f535",
+      "result_id": "d3251b93-bdcd-4115-8a58-e0b988bc959f"
+    },
+    {
+      "claim_id": "534e6266-51fc-4345-b45b-77674adc5801",
+      "result_id": "8e460541-eff4-41d4-8274-70fd0090bfa1"
+    },
+    {
+      "claim_id": "642c2247-58c6-4d94-9df5-82c18c3e8091",
+      "result_id": "8e460541-eff4-41d4-8274-70fd0090bfa1"
+    },
+    {
+      "claim_id": "866986d6-4a7a-4afa-82d7-ca47728444de",
+      "result_id": "8e460541-eff4-41d4-8274-70fd0090bfa1"
+    },
+    {
+      "claim_id": "2f134c4f-493b-4071-ab98-b1626c46f045",
+      "result_id": "8e460541-eff4-41d4-8274-70fd0090bfa1"
+    },
+    {
+      "claim_id": "ae340a51-2267-4aab-9e0e-80ec017de6f4",
+      "result_id": "8e460541-eff4-41d4-8274-70fd0090bfa1"
+    },
+    {
+      "claim_id": "4e62ad90-54fb-400b-91d6-9dc28e33728c",
+      "result_id": "8e460541-eff4-41d4-8274-70fd0090bfa1"
+    },
+    {
+      "claim_id": "7f4a04f1-ac49-41fd-8423-a25cd30f2095",
+      "result_id": "91f5ce25-c918-4354-8d62-ea00e62c4c27"
+    },
+    {
+      "claim_id": "41d10898-35f5-425b-8c33-62f48e37afd8",
+      "result_id": "d9204c5c-51e3-4718-861c-1e197c993d83"
+    },
+    {
+      "claim_id": "02f65b06-35de-41fb-85e8-e2d2b6f5dfe8",
+      "result_id": "d9204c5c-51e3-4718-861c-1e197c993d83"
+    },
+    {
+      "claim_id": "91465ae4-680e-4dd8-bd28-26f853f4a25a",
+      "result_id": "d9204c5c-51e3-4718-861c-1e197c993d83"
+    },
+    {
+      "claim_id": "176eacf3-2e9c-4764-8c66-ca52d114b167",
+      "result_id": "d9204c5c-51e3-4718-861c-1e197c993d83"
+    },
+    {
+      "claim_id": "7fa2a640-70a0-43e4-be4b-57934be48314",
+      "result_id": "d9204c5c-51e3-4718-861c-1e197c993d83"
+    },
+    {
+      "claim_id": "de737839-1cf9-4ad0-9941-2b43869d4322",
+      "result_id": "74f6d90b-639a-4597-9cc1-720e891f536b"
+    },
+    {
+      "claim_id": "9951a218-0603-47ea-b0ef-8b8bd787c3c6",
+      "result_id": "74f6d90b-639a-4597-9cc1-720e891f536b"
+    },
+    {
+      "claim_id": "274ba429-b4d2-4f74-9114-2e44946bdb99",
+      "result_id": "74f6d90b-639a-4597-9cc1-720e891f536b"
+    },
+    {
+      "claim_id": "258c1e41-33be-404d-bea4-6b937e67b68d",
+      "result_id": "74f6d90b-639a-4597-9cc1-720e891f536b"
+    },
+    {
+      "claim_id": "38e8e429-bdc4-40f8-8245-29f4e71e750b",
+      "result_id": "74f6d90b-639a-4597-9cc1-720e891f536b"
+    },
+    {
+      "claim_id": "09e6d5de-4e24-4bd6-b2a7-53171a3ffb07",
+      "result_id": "74f6d90b-639a-4597-9cc1-720e891f536b"
+    },
+    {
+      "claim_id": "5759de88-f896-4982-b861-c1054c936fa9",
+      "result_id": "33e1f0bc-33ad-4523-bab6-e8aef25ec393"
+    },
+    {
+      "claim_id": "1f787bef-e43a-4a81-b2ac-b8ffcd2f3ba4",
+      "result_id": "33e1f0bc-33ad-4523-bab6-e8aef25ec393"
+    },
+    {
+      "claim_id": "0cce6f2d-b22c-4611-922c-5ec17d5177fd",
+      "result_id": "33e1f0bc-33ad-4523-bab6-e8aef25ec393"
+    },
+    {
+      "claim_id": "e4980817-959c-4952-87e2-7f4a116158c1",
+      "result_id": "33e1f0bc-33ad-4523-bab6-e8aef25ec393"
+    },
+    {
+      "claim_id": "62b59677-ccaa-4aaf-8f34-0815e6a712cf",
+      "result_id": "33e1f0bc-33ad-4523-bab6-e8aef25ec393"
+    },
+    {
+      "claim_id": "3b8cb20c-7e5a-4387-9101-e5cbc113c93f",
+      "result_id": "33e1f0bc-33ad-4523-bab6-e8aef25ec393"
+    },
+    {
+      "claim_id": "6fe32f5f-7ef5-420d-ac02-df0c78382b71",
+      "result_id": "33e1f0bc-33ad-4523-bab6-e8aef25ec393"
+    },
+    {
+      "claim_id": "c5b7851e-e77b-4bbb-94c6-7f435e1839d4",
+      "result_id": "33e1f0bc-33ad-4523-bab6-e8aef25ec393"
+    },
+    {
+      "claim_id": "7ad9f244-eb11-4798-a9eb-60d5fe2ffb6d",
+      "result_id": "33e1f0bc-33ad-4523-bab6-e8aef25ec393"
+    },
+    {
+      "claim_id": "a951d4c1-129a-4825-9c40-152b32511fde",
+      "result_id": "33e1f0bc-33ad-4523-bab6-e8aef25ec393"
+    },
+    {
+      "claim_id": "9aa84aec-d6af-4d17-bfa7-245cc4822008",
+      "result_id": "33e1f0bc-33ad-4523-bab6-e8aef25ec393"
+    },
+    {
+      "claim_id": "3a13fefb-4735-4aed-9115-dda38d67aee2",
+      "result_id": "33e1f0bc-33ad-4523-bab6-e8aef25ec393"
+    },
+    {
+      "claim_id": "adb332a9-3d64-49cf-8b99-83ca2df6bbc9",
+      "result_id": "33e1f0bc-33ad-4523-bab6-e8aef25ec393"
+    },
+    {
+      "claim_id": "ba27c054-622e-460f-bdee-6e10c380fc6c",
+      "result_id": "33e1f0bc-33ad-4523-bab6-e8aef25ec393"
+    },
+    {
+      "claim_id": "4726579c-009f-4fcb-9021-c3b774389980",
+      "result_id": "33e1f0bc-33ad-4523-bab6-e8aef25ec393"
+    },
+    {
+      "claim_id": "e639951e-51f3-4aff-8a76-e21504044994",
+      "result_id": "33e1f0bc-33ad-4523-bab6-e8aef25ec393"
+    },
+    {
+      "claim_id": "bb7c3551-2359-4bd1-abb2-bf306b964cdb",
+      "result_id": "33e1f0bc-33ad-4523-bab6-e8aef25ec393"
+    },
+    {
+      "claim_id": "43f58466-e9ca-467b-82ae-a3d6f2c3f2fa",
+      "result_id": "33e1f0bc-33ad-4523-bab6-e8aef25ec393"
+    },
+    {
+      "claim_id": "ebd5ddf3-b24f-4151-bf06-dfac96b98e7f",
+      "result_id": "33e1f0bc-33ad-4523-bab6-e8aef25ec393"
+    },
+    {
+      "claim_id": "b170489c-d079-42e3-ab6a-7e64969216f7",
+      "result_id": "33e1f0bc-33ad-4523-bab6-e8aef25ec393"
+    },
+    {
+      "claim_id": "560c53ab-5a9c-4b2e-b647-3e70248be9c0",
+      "result_id": "33e1f0bc-33ad-4523-bab6-e8aef25ec393"
+    }
+  ],
+  "comparisons": []
+}

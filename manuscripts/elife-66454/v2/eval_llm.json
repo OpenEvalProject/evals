@@ -1,0 +1,363 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The manuscript establishes the foundational role of H3K27me3 in Polycomb-mediated epigenetic silencing through a read/write mechanism where PRC2 recognizes existing H3K27me3 and adds more methyl groups to nearby histones, with H3K27me3 levels dropping by ~2-fold at DNA replication due to random nucleosome partitioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C7-C10 collectively describe well-established mechanisms in the Polycomb system, supported by multiple citations to prior research. These claims provide the necessary background knowledge for understanding the paper's contributions and are consistently supported in the epigenetics literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "FLC undergoes digital epigenetic silencing in response to cold, with VIN3 and H3K27me3 deposited in a nucleation region during cold, followed by spreading across the locus upon return to warm conditions. The perpetuated state is stable in ColFRI but not in Lov-1, and in clf/lhp1 mutants, FLC stochastically reactivates after tens of cell cycles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C17 describe the FLC silencing system based on multiple citations to prior experimental work (Berry et al., 2015; Yang et al., 2017; Q\u00fcesta et al., 2020). These observations form the experimental foundation that motivates the modeling work in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C32"
+    ],
+    "result": "The FLC nucleation region consists of approximately three nucleosomes (~500 bp downstream of TSS), comprising two well-positioned nucleosomes with high MNase-ChIP peaks and one less-well positioned nucleosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C32 are directly supported by new MNase-ChIP experimental data presented in Figure 1B and Figure 1\u2014figure supplement 1, showing clear nucleosome positioning within the nucleation region. The experimental approach is appropriate and the data quality appears sufficient.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C33",
+      "C34"
+    ],
+    "result": "The existing histone-feedback only model cannot explain the metastable memory persistence at the three-nucleosome FLC nucleation region, which lasts tens of cell cycles despite an expected 1/8 probability of complete parental nucleosome loss per cell cycle. The model would require 8-10 nucleosomes to match experimental memory duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 and C33-C34 are supported by simulation results (Figure 1C) compared to experimental data from Yang et al., 2017 and new data. The mathematical reasoning about nucleosome loss probability (1/2)\u00b3 = 1/8 is sound, and the simulations clearly demonstrate the inadequacy of the histone-only model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C6",
+      "C97"
+    ],
+    "result": "The authors propose that a purely histone-based system is insufficient for epigenetic inheritance at some PRC2 targets, and introduce a hybrid model incorporating extra protein memory storage elements with positive feedback that persist through DNA replication in addition to histone modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C6, and C97 represent the central hypothesis and main theoretical contribution. The need for additional memory elements is well-motivated by the failure of the histone-only model (C33-C34) and supported by modeling results showing good agreement with experimental data (C46, C68, C96).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C73",
+      "C98"
+    ],
+    "result": "VIN3, VRN5, and VEL1 are proposed as candidate proteins for the assembly, as they immunoprecipitate with PRC2, contain PHD fingers for recruitment, have dimerization domains, and VIN3/VRN5 associate with the FLC nucleation region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38, C73, and C98 are supported by multiple citations to prior experimental work demonstrating protein-protein interactions and localization. However, the authors appropriately acknowledge these as candidates rather than definitively proven assembly components, noting other proteins may also be involved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C67"
+    ],
+    "result": "VIN3 levels rise linearly with time in cold (Figure 2B), and the model predicts that other components besides VIN3 become limiting after sufficient cold duration, as VIN3 alone cannot explain the saturation of nucleation probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 is directly supported by data in Figure 2B from Hepworth et al., 2018. Claims C45 and C67 represent model predictions based on fitting the sigmoidal form of H3K27me3 rise, which requires saturation of nucleation probability. The reasoning is sound given the model structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C61",
+      "C68"
+    ],
+    "result": "The hybrid assembly/H3K27me3 model with 17 extra memory elements in the assembly successfully matches experimental data on metastable memory persistence and explains the population-level rise in H3K27me3 during cold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C61, and C68 are supported by simulation results in Figures 2C and 2D showing good agreement with experimental data. The fitted assembly size of 17 is more than twice the minimum threshold of 4, satisfying the constraint in C60. The model provides a better fit than the histone-only model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C62",
+      "C63",
+      "C70",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The model incorporates specific mechanistic features: assembly size must exceed twice the minimum for stable reseeding through replication; assembly proteins feedback on themselves and H3K27me3 but not vice versa; a threshold of 4 proteins triggers positive feedback; and the assembly is digital (present or absent).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63, C70, C74-C77 describe key model assumptions and features. These are internally consistent and justified by the need to explain experimental observations. The constraint in C60 is satisfied by the fitted parameters (C61). The digital nature (C76) is consistent with single-cell observations cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C69"
+    ],
+    "result": "VIN3 protein disappears rapidly after cold treatment ends, yet the assembly persists in the warm, with VIN3, VRN5, CLF, and SWN predominantly localized to the nucleation region at all times when present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are supported by citations to experimental data (Hepworth et al., 2018; Yang et al., 2017). Claim C69 is consistent with C47. The model addresses this apparent paradox by proposing that VRN5 and other proteins maintain the assembly after VIN3 depletion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C78",
+      "C79",
+      "C80",
+      "C100"
+    ],
+    "result": "The model proposes that H3K27me3 spreading occurs through long-range looping interactions mediated by LHP1-RNA foci, with methyltransferases remaining at the nucleation region. Looping probability is higher in warm than cold, and the assembly does not directly enhance body region methylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 and C78-C80 describe the spreading mechanism. The looping hypothesis is supported by prior work on LHP1 foci (C50) and low PRC2 levels (C49). The model assumptions (C78-C80) are reasonable simplifications. Claim C100 represents a hypothesis that is consistent with but not definitively proven by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "In the perpetuated state, nucleation region H3K27me3 levels drop to body levels after assembly loss, but CLF/SWN remain constitutively bound at the nucleation region and can maintain silencing through long-distance looping, making the nucleation region essential for maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51 and C83 are supported by ChIP data citations (Yang et al., 2017; Q\u00fcesta et al., 2020). Claims C82, C84, and C85 represent model predictions that are consistent with experimental observations and explain the transition to the perpetuated state. The reasoning is internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C30",
+      "C52",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The model successfully explains PRE excision experiments where epigenetic memory is lost 1-6 cell divisions after excision, with decay somewhat slower than predicted by nucleosome dilution alone due to limited PRC2 activity in the gene body.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C52, C86-C88 are supported by simulation results (Figure 4A) that match experimental observations from Drosophila PRE excision studies (Coleman and Struhl, 2017; Laprell et al., 2017). The model's ability to recapitulate these independent observations strengthens its validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C53",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The model explains Lov-1 reactivation through higher transcriptional activation in warm conditions combined with SNPs in the nucleation region. Reactivation occurs only after assembly loss and is prevented in non-replicating cells, with a delay before activation as predicted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53 and C89-C94 are supported by simulation results (Figures 4B-C, Figure 4\u2014figure supplement 1) that match experimental observations from Q\u00fcesta et al., 2020. The model successfully explains the Lov-1 phenotype through altered parameters consistent with genetic differences (C53). The prediction that non-replicating cells remain silenced (C92) is testable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "A combined model with ordered nucleosome distribution and extra memory elements can explain the data with 8 memory elements instead of 17, but extra memory elements are still required even with ordered distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 are supported by simulation results in Figure 1\u2014figure supplement 2C. This analysis appropriately explores an alternative model but demonstrates that protein memory elements remain necessary even under the most favorable assumptions about nucleosome inheritance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "The model provides a comprehensive description of silencing from nucleation through spreading to perpetuation and reactivation, with model output in good agreement with experimental data in all cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 represent summary statements about the model's performance. These are supported by the multiple comparisons to experimental data throughout the manuscript (Figures 1-4), showing good qualitative and quantitative agreement across different conditions and genetic backgrounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C29",
+      "C31",
+      "C54"
+    ],
+    "result": "Nucleation and spreading dynamics are conserved features of Polycomb systems across species (Drosophila, mammals, plants), though with some differences in methyltransferase organization and H3K27me3 reacquisition kinetics. The model elements are likely conserved across these systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C26, C29, C31, and C54 describe conservation and variation in Polycomb systems across species, all supported by appropriate citations. Claim C54 is speculative but reasonable given the conservation of core Polycomb mechanisms. These claims provide important context for the generalizability of the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Protein assemblies and oligomerization have been implicated in Polycomb systems, including PRC2 dimerization, VIN3 dimerization, and PRC1 components (Ph, Sfmbt, Scm, Psc) involved in nucleation, polymerization, and clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 are all supported by citations to prior research and provide important precedent for the protein assembly hypothesis proposed in this manuscript. These observations from related systems strengthen the plausibility of the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "The model may explain observations in mouse embryonic stem cells where H3K27me3 patterns can be re-established de novo after complete loss, potentially through assembly proteins marking regions and facilitating renucleation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55-C56 represent speculation about how the model might explain observations in a different system (H\u00f8jfeldt et al., 2018). While the hypothesis is reasonable, no direct evidence is provided to test this prediction. This remains an interesting but unvalidated extension of the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Cell cycle duration in Arabidopsis is approximately one day in warm conditions and seven times longer in cold conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are stated as based on experimental measurements and are used as model parameters. These values are consistent with known plant biology and are appropriately cited in the methods (Rahni and Birnbaum, 2019; Zhao et al., 2020).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The model assumes CLF is constitutively present at the nucleation region before cold and that VIN3 has a short lifetime (minutes) in the nucleation region, making the assembly a highly dynamic object.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 is supported by ChIP data (Yang et al., 2017). Claim C65 is an assumption qualitatively motivated by FRAP data (Youmans et al., 2018). Claim C66 follows logically from C65. These assumptions are reasonable and consistent with available data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "Only cells with an active cell cycle can spread H3K27me3 at FLC, which complicates fitting to whole-plant ChIP data in the warm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 is supported by citation to Yang et al., 2017 and explains why the authors focus on cold ChIP data for model fitting rather than warm spreading dynamics. This is a reasonable methodological choice given the experimental complexity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C99",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The model proposes that positive feedback is key for assembly nucleation, the looping mechanism is compatible with PRE function, and summarizes the silencing process: stochastic assembly nucleation enables H3K27me3 addition, spreading occurs via looping, assembly eventually disperses, and the perpetuated state may decay in some accessions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99 and C101-C107 represent summary statements and key conclusions of the model. These are supported by the collective evidence from simulations matching experimental data across multiple conditions. The mechanistic proposals are internally consistent and explain diverse observations.",
+    "result_type": "MAJOR"
+  }
+]

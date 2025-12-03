@@ -1,0 +1,249 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C20",
+      "C21",
+      "C24",
+      "C101",
+      "C102"
+    ],
+    "result": "The study cohort comprised ~300 plasma samples from five cancer types (colorectal, stomach, liver, lung, esophageal) and healthy donors, with most cancer patients in early stages (65-86% stages I-II). After quality control, 263 high-quality samples were retained for analysis. Contamination controls (E. coli and human brain RNA) were processed identically to plasma samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C20, C21, C24, C101, and C102 collectively describe the cohort composition and quality control procedures. The manuscript provides specific sample numbers, cancer stage distributions, and describes appropriate contamination controls. The quality control criteria are clearly defined with specific thresholds (Figure 1\u2014figure supplement 1), supporting the reliability of the dataset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The SMART-total RNA-seq method successfully captured diverse cfRNA species in plasma. The majority of reads mapped to human genome (79.36%) and circRNA junctions (1.24%), with 10.18% annotated as nonhuman rRNA and 2.06% assigned to microbial genomes. Human mRNAs and lncRNAs were most abundant, with uniform coverage along transcripts indicating no strong sequence preference in fragmentation. Microbial composition resembled previous reports, with Proteobacteria, Firmicutes, and Actinobacteria as dominant phyla.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C25-C38 describe the technical validation and composition of cfRNA-seq data. The manuscript provides specific percentages for read mapping, demonstrates uniform transcript coverage (Figure 2B), shows sharp exon-intron boundaries indicating minimal DNA contamination (Figure 2C), and reports microbial composition consistent with prior studies. The use of two independent computational pipelines (k-mer and alignment-based) with contamination filtering strengthens confidence in microbial detection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "KEGG pathway analysis of differentially expressed human cfRNAs revealed cancer-relevant biological signals. Upregulated genes were enriched in ECM-receptor interactions and neutrophil extracellular traps (promoting metastasis), while downregulated genes were enriched in ribosome biogenesis and multiple immune-related pathways (PD-1 checkpoint, T-cell differentiation, NOD-like receptor signaling, cytosolic DNA-sensing, NF-\u03baB signaling), suggesting immunosuppression in cancer patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C40-C45 describe pathway enrichment analysis results with specific pathways identified (Table 1). The downregulation of translation-related pathways is consistent with prior TEP studies (C42), and the identification of immune pathway downregulation is supported by the data. However, the inference of immunosuppression (C3, C44) is based on pathway analysis alone without direct immune function measurements, which is a limitation but reasonable given the convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Multiple viral genera showed significantly higher plasma abundance in cancer patients, including TTVs and Orthohepadnavirus. Alphatorquevirus and Orthohepadnavirus were specifically associated with liver cancer. The enrichment of TTVs, known markers of immunosuppression, was concordant with downregulated immune pathways in human cfRNAs. The Orthohepadnavirus association with liver cancer was expected given that 60% of liver cancer patients had HBV-induced chronic hepatitis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C46-C52 describe viral abundance alterations supported by both computational pipelines (Figure 3A-C, Supplementary file 5). The association between TTVs and immunosuppression is well-established in the literature (C48-C50), and the concordance with immune pathway downregulation (C51) provides convergent evidence. The HBV association is expected given the cohort composition (C52). The inference of immunosuppression from TTV abundance is reasonable but indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Human and microbial cfRNAs demonstrated diagnostic value for cancer detection. Using 100 bootstrap replicates, human cfRNAs achieved AUROC ~0.9, and microbial cfRNAs achieved AUROC 0.8-0.9 for distinguishing cancer patients from healthy donors. Comparable performance was maintained when using only early-stage cases. Recurrent features included cancer-promoting genes (ADAM10, TMEM165) and ribosomal protein genes (RPL8, RPS8, RPL10A).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C53-C58 describe classification performance with specific AUROC values (Figure 4A). The bootstrapping approach with 100 replicates provides robust performance estimates. The identification of biologically relevant features (C56-C57) supported by literature adds credibility. However, the study acknowledges confounding effects from multiple clinical centers and sex imbalance (C98), which were addressed computationally using RUVg (C99) but may not fully eliminate bias. The need for larger validation cohorts is acknowledged (C100).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Human and microbial cfRNAs both exhibited cancer type specificity. Using human features alone achieved 52.5% average recall for multiclass classification of five cancer types. Microbial features achieved 58.4% recall. Combining both feature types improved performance to 60.4% average recall (7.9% improvement) and 82.1% top-2 recall (6.2% improvement).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C59-C62 describe multiclass classification performance with specific metrics (Figure 5A-C). The improvement from combining features is statistically significant (Figure 5C, p=0.0019 for top-2 recall). Both k-mer and alignment-based pipelines showed similar trends, strengthening the findings. However, the modest recall values (52-60%) indicate substantial room for improvement, and the study acknowledges the need for larger cohorts (C100).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Cancer type-specific features were identified in both human and microbial cfRNAs. For human features, colorectal and stomach cancers were characterized by circRNAs, liver cancer by liver-specific genes (TF, HRG, CP, FGA), and lung cancer by immune-related genes (IL1R2, CLEC4E). GSEA showed enrichment of tissue-upregulated circRNAs in plasma, suggesting tumor-derived circRNAs enter circulation. For microbial features, Mycoplasma/Acholeplasma were colorectal-specific, Noviherbaspirillum stomach-specific, Orthohepadnavirus/TTVs liver-specific, and Erysipelatoclostridium esophageal-specific, with literature support for these associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23, C63-C73 describe cancer type-specific features with biological validation (Figure 5D-E). The identification of liver-specific genes for liver cancer (C64) and the GSEA enrichment of tissue-upregulated circRNAs (C66-C67) provide mechanistic support. Microbial associations are supported by prior literature (C69-C73). However, the novelty claim (C22) regarding first demonstration of cancer type specificity in plasma cfRNAs should be tempered by prior cfDNA methylation and TEP studies showing similar properties (C103).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The study demonstrates that unmapped reads from cfRNA-seq, typically discarded in standard analyses, can be exploited for microbial profiling in plasma. This approach enables discovery of clinically relevant but understudied viruses from high-throughput sequencing data, given the unexpected diversity of the human virome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C79 describe the utility of analyzing unmapped reads for microbial profiling. The existence of microbe-derived plasma nucleic acids is well-established (C74), and the study demonstrates practical application of this principle. The virome diversity claim (C77) is supported by citations. However, the feasibility of discovering \"clinically relevant\" viruses (C79) is somewhat overstated, as the study primarily confirms known associations rather than discovering novel ones.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C84"
+    ],
+    "result": "The study proposes that tumor cells, microbes, and tumor-educated cells all contribute to the cfRNA pool, producing detectable cancer type-specific signals. The relative contributions vary by cancer type. For colorectal and stomach cancers, enrichment of tissue-upregulated circRNAs suggests plasma circRNA changes mirror tumor tissue alterations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80-C82, C84 describe proposed mechanisms for cfRNA origins. While the TEP literature (C80) and circRNA enrichment data (C84) provide some support, these are largely inferential claims (C81-C82) without direct experimental validation of cfRNA sources. The study does not perform experiments to definitively trace cfRNA origins (e.g., tumor vs. blood cells vs. microbes), making these mechanistic interpretations speculative despite being biologically plausible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The study argues that cfRNA-seq provides advantages over cfDNA-seq: RNAs are more actively transported via exosomes, some cfRNAs play regulatory roles in the tumor microenvironment, RNA expression is tissue-specific, and long cfRNA-seq detects viral mRNA from both DNA and RNA viruses. Additionally, microbial reads constitute a larger fraction in RNA-seq (~10%) compared to DNA-seq (<0.5%), enabling more cost-effective microbial signal capture. Therefore, cfRNA-seq is proposed as a cost-effective alternative providing complementary information to cfDNA-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C96 present arguments for cfRNA advantages, mixing established facts (C85-C87, C89, C92-C93) with inferences (C88, C90-C91, C94-C96). The higher microbial fraction in RNA-seq (C94) is supported by their data (~10% vs. <0.5% in cfDNA), but the cost-effectiveness claim (C95-C96) lacks direct cost-benefit analysis. The functional insights claim (C88) is speculative. The viral mRNA detection advantage (C91) is valid but limited to actively transcribed viruses. Overall, while individual points have merit, the conclusion that cfRNA-seq is a \"cost-effective alternative\" (C96) requires more rigorous comparative analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The study acknowledges significant limitations: samples were collected from different clinical centers with sex imbalance for certain cancers (e.g., liver cancer). Confounding effects were mitigated computationally using RUVg, but the authors acknowledge that a larger, carefully designed cohort is necessary for clinical application.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C100 describe study limitations and the computational approach to address them. The acknowledgment of confounding effects (C97-C98) and the use of RUVg for batch correction (C99) are appropriate. However, computational correction cannot fully eliminate systematic biases from unbalanced cohort design. The statement that larger validation studies are needed (C100) is a reasonable and honest assessment. The PCA plots (Figure 4\u2014figure supplement 1) show some residual batch effects even after correction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C32",
+      "C39",
+      "C42",
+      "C48",
+      "C49",
+      "C50",
+      "C56",
+      "C69",
+      "C70",
+      "C71",
+      "C73",
+      "C83",
+      "C103",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The manuscript cites extensive prior literature establishing: microbe-cancer associations (HBV/HPV with liver/cervical cancer, H. pylori with gastric cancer, F. nucleatum with colon cancer), the existence of bacteria-derived nucleic acids in plasma, characteristics of plasma cfRNAs, associations between specific microbes and cancers, and the successful application of SMART-total for cfRNA detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C19, C32, C39, C42, C48-C50, C56, C69-C71, C73, C83, C103, C105-C107 are literature-based background claims with appropriate citations. These establish the scientific context for the study. The citations appear accurate and relevant, though detailed verification of each cited claim is beyond the scope of this review. These background claims appropriately frame the novelty and significance of the current work.",
+    "result_type": "MINOR"
+  }
+]

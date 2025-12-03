@@ -1,0 +1,1764 @@
+{
+  "submission": {
+    "id": "527662ef-0d55-49cc-a025-f1c8636733d1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T10:06:05.259740Z",
+    "updated_at": "2025-12-03T10:06:05.259740Z"
+  },
+  "content": [
+    {
+      "id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "submission_id": "527662ef-0d55-49cc-a025-f1c8636733d1",
+      "content_type": "manuscript",
+      "content_text": "# Humans optimally anticipate and compensate for an uneven step during walking\n\n## Authors\n\n- Osman Darici<sup>1</sup> ([ORCID: 0000-0001-6217-5656](https://orcid.org/0000-0001-6217-5656)) \u2020\n- Arthur D Kuo<sup>1</sup>\n\n### Affiliations\n\n1. Faculty of Kinesiology, University of Calgary Calgary Canada ([ROR:03yjb2x39](https://ror.org/03yjb2x39))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe simple task of walking up a sidewalk curb is actually a dynamic prediction task. The curb is a disturbance that could cause a loss of momentum if not anticipated and compensated for. It might be possible to adjust momentum sufficiently to ensure undisturbed time of arrival, but there are infinite possible ways to do so. Much of steady, level gait is determined by energy economy, which should be at least as important with terrain disturbances. It is, however, unknown whether economy also governs walking up a curb, and whether anticipation helps. Here, we show that humans compensate with an anticipatory pattern of forward speed adjustments, predicted by a criterion of minimizing mechanical energy input. The strategy is mechanistically predicted by optimal control for a simple model of bipedal walking dynamics, with each leg\u2019s push-off work as input. Optimization predicts a triphasic trajectory of speed (and thus momentum) adjustments, including an anticipatory phase. In experiment, human subjects ascend an artificial curb with the predicted triphasic trajectory, which approximately conserves overall walking speed relative to undisturbed flat ground. The trajectory involves speeding up in a few steps before the curb, losing considerable momentum from ascending it, and then regaining speed in a few steps thereafter. Descending the curb entails a nearly opposite, but still anticipatory, speed fluctuation trajectory, in agreement with model predictions that speed fluctuation amplitudes should scale linearly with curb height. The fluctuation amplitudes also decrease slightly with faster average speeds, also as predicted by model. Humans can reason about the dynamics of walking to plan anticipatory and economical control, even with a sidewalk curb in the way.\n\n## Introduction\n\nThere are indeterminate control choices to be made during walking, not least when steady gait is interrupted by a surface perturbation such as a sidewalk curb (Figure 1a). If no compensation is performed, an upward perturbation might cause a sudden reduction of speed, and an overall loss of time compared to steady gait (Figure 1b). Other possibilities include nonanticipatory reaction occurring only after the perturbation (Figure 1c), or tight regulation of step timing to immediately restore momentum (Figure 1d). But it may be helpful to plan and act ahead with anticipatory adjustments. For example, a ball, once sighted, may be caught by predicting its dynamics and planning and executing an interception course. A sidewalk curb may similarly be anticipated ahead of time, albeit with most of the dynamics within the person rather than the curb, and with a less clearly defined objective. This raises the question of whether humans anticipate the curb, and what objective criteria govern its interception, perhaps with a single, optimal response. The seemingly simple task of dealing with an uneven step may yield insight on whether humans perform predictive, dynamical planning while they walk.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/65402/elife-65402-fig1-v2.jpg)\n\n**Figure 1.:** (a) Humans walk with the body center of mass (COM) moving up and down atop the stance leg behaving like an inverted pendulum. Momentum is disrupted by the Up-step if not for compensatory response, plotted as a time-varying trajectory of the COM\u2019s forward speed $v_{i}$, discretely sampled once per step $i$. Hypothetical responses could include (b) no compensation, (c) a nonanticipatory reactive compensation, and (d) tight time regulation. (b) No compensation means the same push-off actuation is performed regardless of Up-step, resulting in a transient loss of speed (speed vs. time, top) and time (cumulative time gain vs. time, bottom) relative to nominal level gait. (c) Nonanticipatory compensation occurs reactively after the perturbation (vertical dotted line aligned to Up-step) to quickly regain speed, perhaps to avoid loss of time. (d) Tight time regulation means applying control to keep each step\u2019s timing as constant as possible to reject the disturbance. These responses could be less economical than an optimal control including anticipatory speed adjustments before and after the perturbation. In plots, speed $v_{i}$ is sampled discretely at midstance instant (dot symbols) and plotted vs. time. Cumulative time gain is illustrated as time gained or lost compared to steady-level gait at nominal speed, as a function of elapsed time during a walking bout. The final value indicates the eventual time gain (or loss, if negative) over the entire distance. In the corresponding experiment, human subjects walked in a walkway (30 m long) with level ground ora single Up- or Down-step (height $b$ = 7.5 cm) at midpoint.\n\nBoth feedback and anticipatory control could contribute to walking. Feedback refers to reactive control driven by sensory feedback of the body\u2019s dynamical state, for example from vestibular and somatosensors to control standing balance (Horak et al., 1990; Kuo, 1995; Park et al., 2004). Such feedback also appears important for balance during walking, for example to adjust foot placement each step (Bauby and Kuo, 2000; O\u2019Connor and Kuo, 2009; Wang and Srinivasan, 2014). In contrast, anticipatory control actions take place before the body state has been affected, perhaps using vision to predict an upcoming perturbation or obstacle. For example, humans clearly anticipate and plan for the body\u2019s future location, for example to negotiate around obstacles or through doorways (Arechavaleta et al., 2008; Brown et al., 2021; Patla, 1998). In particular, foot placement and motion are planned, with the help of vision, to avoid or step over upcoming obstacles (Patla, 1998; Patla and Rietdyk, 1993), and to land on foot targets (Drew et al., 2008; Matthis and Fajen, 2013). Although much of this planning has been described in terms of kinematics, it may also include intersegmental dynamics, which might be regulated to clear obstacles with reduced mechanical work (Patla and Prentice, 1995). There may, however, also be advantages to planning other dynamical states such as speed or momentum during locomotion, for example when one speeds up before jumping over a puddle. Indeed, runners do load the leg differently just before a drop (M\u00fcller et al., 2012), perhaps as a way to regulate momentum. The negotiation of uneven terrain might similarly benefit from anticipatory planning of speed or momentum.\n\nAny systematic control strategy, regardless whether anticipatory or feedback, should also be driven by objective criteria to select among infinite options. For locomotion, the criterion of metabolic energy economy determines features such as the preferred step length and step width during steady walking (Donelan et al., 2001; Zarrugh et al., 1974), as governed by the pendulum-like dynamics of the legs (Kuo et al., 2005). Energetic costs are also greater on uneven terrain (Kowalsky et al., 2021; Pandolf et al., 1977; Voloshina et al., 2013) and under transient conditions (Brown et al., 2021). However, it is unknown whether the economy preferences of steady walking apply to uneven terrain as well. We previously explored this question theoretically with a simple model of human walking (Kuo, 2002), for the task of negotiating a single uneven step (termed Up- or Down-step) during otherwise steady walking (Darici et al., 2020). We used optimal control to determine the most economical strategy to regain time and momentum lost from the disturbance. The objective was to minimize a crude indicator of energy expenditure, the mechanical work performed in the step-to-step transition from one pendulum-like stance leg to the next (Donelan et al., 2002; Kuo et al., 2005). This yielded a strategy for negotiating an Up-step by modulating forward momentum and speed over multiple steps, starting with a speed-up before the perturbation, and continuing the modulation for several steps after the perturbation. The model predicted a substantial economic advantage to the anticipatory speed-up, compared to post hoc compensation alone. The optimal control was systematically scalable, with greater amplitude of speed fluctuations for larger step heights, and an almost opposite amplitude for negotiating a Down-step (with negative height change). This suggests that humans might also benefit from such an anticipatory strategy, made determinate by optimization.\n\nThe purpose of the present study was to test whether humans negotiate a step height disturbance with an anticipatory compensation strategy as predicted by dynamic optimization. The compensation is manifested as a trajectory of speed fluctuations both before and after the disturbance, to reduce energy expenditure and avoid loss of time from the disturbance. We tested whether humans use a compensatory pattern similar to the predicted optimum, including anticipatory fluctuations before the step is physically encountered. This is contrasted against alternative strategies such as reacting only after the disturbance, or not reacting at all. We also tested whether the human pattern varies systematically, as predicted by model (Figure 2), by scaling in amplitude and time for Up- vs. Down-steps and different walking speeds. This may reveal whether such a compensation strategy may be generalized for different nominal walking conditions. The results may reveal whether humans reason about their walking dynamics to perform predictive planning on uneven terrain.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/65402/elife-65402-fig2-v2.jpg)\n\n**Figure 2.:** (a) Model behaves like an inverted pendulum. Momentum and speed fluctuate in each step (numbered $i$), and are particularly disrupted by an uneven step (at $i=0$). (b) Dynamic walking model has a point mass $M$ at pelvis, supported by an inverted pendulum stance leg (massless, length $L$, gravitational acceleration $g$, fixed or constrained step length $S$ and inter-leg angle $2\\alpha$). (c) Level nominal walking has discrete step-to-step transition where COM velocity (dark arrow) is redirected from forward-and-downward to forward-and-upward by active, impulsive trailing leg push-off (PO), immediately followed by an inelastic, impulsive, leading leg collision (CO). Both PO and CO are directed along the corresponding leg. (d, e) The model walks Up or Down a step by modulating the sequence of discrete push-offs surrounding and including the uneven step. The model\u2019s compensatory response is therefore summarized as a time-varying trajectory of speeds $v_{i}$, discretely sampled once per step $i$.\n\n### Model predictions\n\nThe model yielded two main predictions to be tested experimentally. First, it predicted an anticipatory compensation strategy, in the form of speed fluctuations before and after the disturbance (Figure 3). Considerable momentum and time would be lost to an Up-step if not for compensation. The predicted optimal compensation to avoid a loss of overall time is to speed-up in advance of the Up-step (thereby reducing the loss of momentum and time atop it), and then regain momentum afterwards (Figure 3a; Darici et al., 2020). The strategy depends systematically on the disturbance amplitude, where a Down-step is represented by negative amplitude. For stepping down (Figure 3b), the optimal strategy is therefore almost exactly opposite the Up-step strategy: slow-down in advance, gain speed and time atop the Down-step, and then slow-down again toward nominal speed. This is manifested as twofold symmetry, meaning the optimal speed fluctuations are opposite in time (reflecting about the vertical axis at time 0) and in speed (reflecting about the mean speed). These strategies are executed through modulation in push-off work. As a result, time (Figure 3c) is first gained prior to the Up-step (and lost prior to Down-step, Figure 3d), such that the cumulative time gain eventually reaches zero, meaning that the model has not lost time compared to level walking.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/65402/elife-65402-fig3-v2.jpg)\n\n**Figure 3.:** (a) Optimal walking speed fluctuations vs. time, for Up-step compensation that minimizes push-off work while avoiding loss of time. Model anticipates the perturbation with a tri-phasic adjustment: Speed up ahead of time, then lose momentum atop the perturbation, and then regain speed thereafter. (b) Optimal speed fluctuations for Down-step compensation (blue symbols) is also tri-phasic, and nearly opposite in sign to Up-step: Slow down in advance, gain momentum, then slow down again (c) Cumulative time gained for Up- and Down-step compensations, ending with zero cumulative time loss. (d) Self-similarity of Up-step compensations shows that a similarly-shaped discrete compensation pattern can apply to different walking conditions with appropriate scaling. Example trajectories are shown for three different nominal speeds (slower, medium, faster), a longer fixed step length at each nominal speed (longer steps), and step length increasing with instantaneous speed according to human preferred step length (preferred steps). The trajectories are also scaled and superimposed (see inset) to illustrate a single self-similar pattern for all parameter choices. For model predictions (a-c), nominal conditions are equivalent to a human walking at 1.5 m/s with a fixed step length, and a 7.5 cm Up-step. Plots show normalized units (nominal mid-stance velocity $V=0.44g^{0.5}\u00a0L^{0.5},\u00a0S=0.79\u00a0L,\u00a0b=0.075L$) and human scale. Predictions are described in detail by (Darici et al., 2020).\n\nThe second main prediction was that a single optimal strategy, in terms of speed fluctuations, is scalable for practically any combination of overall walking speed and step length (termed self-similarity, Figure 3d). A basic pattern for optimal speed fluctuations retains approximately the same shape across different overall walking speeds, fixed step lengths, or even step length changing according to the human preferred step length relationship (Figure 3d). In addition, the amplitude of that basic pattern scales inversely with speed, meaning slightly smaller fluctuations for faster speeds (compare slower to faster speeds in Figure 3d). This is because a step of fixed height (and thus gravitational potential energy) has a relatively smaller effect on the greater kinetic energy (increasing with square of speed) of faster walking. In addition, the timing scales such that the optimal strategy would have similar shape with shorter step lengths, except stretched slightly longer in time. Thus, we expect a single basic pattern, treated as a sequence of discrete speed fluctuations (Figure 3a) to predict optimal responses that are scalable to an individual\u2019s average speed, step length, or the preferred speed and step length relationship. The pattern should be scaled to slightly smaller amplitude for faster average speeds, and to negative amplitude for Down-steps as opposed to Up-steps.\n\nThese predictions may be contrasted with several alternative hypothetical strategies (detailed by Darici et al., 2020). One is that humans might not compensate for an Up-step, and simply apply the same nominal effort as for level ground, albeit with a loss of time relative to nominal (Figure 1b). Another is that humans may not anticipate but react only after the disturbance, which could regain lost time but with a greater speed-up (Figure 1c). Yet another would be to tightly regulate step timing to nominal with each step (Figure 1d), even atop the disturbance, and thus keep speed fairly steady. According to the model, these strategies all differ in the amount of work performed, 0.489 MgL (about 10% more than nominal walking) for the optimal strategy, 0.519 MgL (17% more) for nonanticipatory reactive control, and 0.513 MgL (15% more) for tight time regulation. It would of course be most economical not to compensate at all. But if time is to be regained, there are infinite ways to do so, and only one that is most economical.\n\nThe model therefore makes testable predictions regarding human compensation for an uneven step. We hypothesize that step-to-step transitions are costly enough to merit anticipation and compensation for uneven steps. There are surely other energetic costs for walking, such as for adjusting step duration and length, or for controlling other degrees of freedom. It is, however, not necessary to model such features, if step-to-step transitions are costly enough to predict substantial and nontrivial compensations. We test what strategy humans perform by examining the distinct speed (and thus momentum) fluctuation patterns (Figure 3, top).\n\n## Results\n\nPrior to the main hypothesis tests, we first report some basic measures of overall walking speeds and variability, as a basis for comparing speed fluctuations (Speed, Figure 4). For the central (8.5 m) segment of the walkway, the overall average self-selected speed for control trials (level walking) was 1.38 \u00b1 0.10 m/s on level ground (mean \u00b1 standard deviation [SD across subjects]). Each individual typically had a small amount of variation in self-selected speed between trials, with about 5% c.v. (coefficient of variation) across control trials. Subjects were thus fairly consistent in their own walking speed, despite receiving no feedback regarding walking durations or speeds. During level Control walking (Figure 4, top row), the speed fluctuations were small in magnitude and largely noise-like, with variability 0.031 \u00b1 0.007 m/s (root-mean-square variation within trial, reported as mean \u00b1 SD across subjects), or about 2.2% c.v. These fluctuations exhibited a small amount of correlation between subjects, with correlation coefficient \u03c1 = 0.47 \u00b1 0.31 (p = 2.5e\u221204), as demonstrated by correlating each individual\u2019s average Control trial against the average Control across all subjects. This suggests a degree of unexpected, nonrandom behavior shared between subjects, of relatively small amplitude of about 0.014 m/s, about 17% of the non-Control amplitudes.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/65402/elife-65402-fig4-v2.jpg)\n\n**Figure 4.:** Plots are arranged in columns: (left) all individual trials of three representative test subjects (thin lines connecting small dots), along with per-subject average trajectories (across trials, thick lines) and standard deviations (SDs, shaded regions \u00b1 1 s.d.; dashed line indicates average speed). Averages were computed for speed fluctuations treated as sequences of discrete steps, and plotted in both discrete (dot symbols) and continuous time. (Middle:) Speed fluctuations of each test subject (n = 2, individual colors) walking over the step, averaging all trials within each subject. (Right:) Average speed trajectories across all test subjects (solid line), with standard deviation (SD) across all subjects (light shaded region), and SD ignoring subject-dependent speed (darker shaded region). Individual patterns (Middle) were significantly correlated with the average pattern across subjects (Right). Speed is defined as each step\u2019s length divided by corresponding step time, assigned to the middle- stance instant of each step (indicated by discrete dot symbols). All trials are aligned to zero time, defined as middle -stance instant after landing on the Up- or Down-step (both 7.5 cm high).\n\nWe next examine the human walking speed fluctuations in response to Up- and Down-steps. There were four main findings, comparing the responses across subjects in comparison to model, and in comparison to experimental instructions. The first question was whether the Up- and Down-step responses exhibited consistent, nonrandom behavior across subjects, to determine whether speed fluctuations were noisy or deterministic. The second was to test the primary hypothesis, that human speed fluctuations have a deterministic pattern as predicted by a model minimizing mechanical work. The third was to test the related expectation that speed fluctuation amplitudes should scaled with step height and overall walking speed, as also predicted by model. The final test was to quantify the consistency of overall walking durations for each subject, as an indicator of compliance to experimental instructions. Along with their speed fluctuations, subjects also exhibited fluctuations in step length and duration. These factors were not included in model and therefore not tested, but the trends are summarized in Appendix 2.\n\n### Humans produced triphasic Up- and Down-step compensatory speed fluctuations\n\nThere was also a clear pattern in compensations for an uneven step, with consistent fluctuations in walking speed across trials and across subjects (Speed, Figure 4). The fluctuations within these trials were greater than those of Control, about 3.0% and 3.4% c.v. for Up- and Down-steps (Figure 4, middle and bottom), respectively. The compensation strategies, in terms of walking speed trajectory over time, appeared qualitatively similar between multiple trials for an individual (Figure 4, left column), and between different individuals (Figure 4, middle column), to yield a single representative trajectory for all Up-step compensations (Figure 4 right column).\n\nThe basic speed response could be summarized in terms of a triphasic pattern centered about the Up-step: (1) speed up in the two steps prior, (2) then lose speed during the two steps onto the Up-step and immediately thereafter, and (3) then regain speed over the following one or two steps. The peak speed just prior to the Up-step ($i=-1$) was about 5.7% greater than average speed, and the minimum after the Up-step ($i=1$) was about 3.4% slower. Similar observations were the case for Down-step compensations (Figure 4, bottom row), except with fluctuations in nearly the opposite direction, in a basic pattern of about 2.0% slow-down prior to the Down-step ($i=-1$), and 3.6% and 3.8% faster after ($i=1$, $i=2$ respectively), followed by a brief slow-down to nominal. The timing of this pattern was slightly different from Up-step, with the initial slow-down being clearest for only one step immediately before the Down-step ($i=-1$), then speed-up occurring for about two to three steps, and the return to normal walking in only about one step. The anticipatory compensation thus begins only a few steps before the perturbation, and is accompanied by several steps of response after the perturbation.\n\nThe consistency of responses across subjects was quantified as follows. The Up-step speed fluctuations were similar across subjects (compare Figure 4, middle and right columns), with a positive correlation coefficient between each individual\u2019s Up-step trials and the average across subjects (\u03c1 = 0.82 \u00b1 0.1252; p = 1.26e\u221210 paired t-test of correlations, performed across discrete speed sequences). The same was true for Down-step patterns, with positive correlation (\u03c1 = 0.68 \u00b1 0.27, p = 3.0e\u221206). Neither Up- nor Down-step speed fluctuations were well correlated with Control (\u03c1 = \u22120.016 \u00b1 0.21 and 0.184 \u00b1 0.193, respectively, correlating each subject\u2019s Up- and Down-step responses against average Control across subjects, p = 0.78, p = 0.007). Moreover, the speed fluctuations for the Up-step and Down-step were somewhat opposite to each other, with a negative correlation between individual Up-steps and average Down-step pattern and vice versa (respectively, \u03c1 = \u22120.34 \u00b1 0.16, p = 1.6e\u221205; \u03c1 = \u22120.27 \u00b1 0.22, p = 0.0016).\n\n### Human compensations were consistent with minimum-work predictions\n\nIn support of the main hypothesis, the compensation strategies agreed reasonably well with optimal control model predictions (Figure 5, top for model; bottom for human). The model had predicted a similar triphasic pattern for speed fluctuations (Figure 3), as a means of traversing the walkway with minimum push-off work, while maint aining nominal overall speed. This agreement was quantified by a positive correlation coefficient between human and model fluctuations for both Up- and Down-steps (\u03c1 = 0.50 \u00b1 0.21, p = 4.4e\u22126 and \u03c1 = 0.59 \u00b1 0.17, p = 1.08e\u22127; paired t-tests for correlations performed across discrete speed sequences). And in keeping with the model\u2019s prediction of opposing fluctuations for Up- vs. Down-steps, there was also a negative correlation between human Up-steps and model Down-steps, and vice versa (\u03c1 = \u22120.42 \u00b1 0.21, p = 2.75e\u22125 and \u03c1 = \u22120.54 \u00b1 0.15, p = 8.05e\u22128; paired t-tests). We also verified that human control responses were not correlated with model predictions for either Up- or Down-step, with correlation coefficients not significantly different from zero (p = 0.32, p = 0.31).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/65402/elife-65402-fig5-v2.jpg)\n\n**Figure 5.:** (Top row:) Model speed fluctuations predicted to minimize push-off mechanical work. (Bottom row:) Experimentally measured compensation strategies for humans (n = 12), showing average speed pattern across subjects (shaded regions denote \u00b11 s.d. after eliminating variations in average speed). Human speed fluctuations were significantly correlated with model for both Up-step $(p=0.50\u2217\\pm\u00a00.21;P=4.4e\u22126)$ and Down-step $(p=0.59\u2217\\pm\u00a00.17;P=1.1e\u22127)$, asterisk indicates statistical significance; correlations performed between discrete speed sequences. Each data point corresponds to the body\u2019s forward walking speed, defined as each step\u2019s length divided by step time, and assigned to the instance when the stance leg is upright. The first step onto the Up- or Down-step is indicated by vertical dashed line, also at middle stance instant. The average overall walking speed is denoted by horizontal solid line. Model trajectories (Figure 3) are converted from mid-stance speed in simulation (dashed lines) into the equivalent of experimental body speed (solid lines; see Figure 6). Model predicts shape of fluctuation pattern but not exact amplitude. Plots show dimensional equivalents to model with speed in units of $\\sqrt{gL}=3.13m/s$ and time in units $\\sqrt{L/g}=0.32s$ (using gravitational acceleration and human leg length $L=1m$).\n\nThe human triphasic responses were not consistent with the alternative control strategies. The anticipatory speed-up before perturbation did not agree with the no-compensation and reactive-compensation (Figure 1b, c) strategies, where no change in speed would be expected. The speed fluctuations before and after perturbation were also nearly opposite to, and therefore not consistent with the tight time regulation strategy (Figure 1d).\n\n### Human compensation patterns were self-similar and scalable for step height and overall walking speed\n\nThere were three indicators of self-similarity and scaling, all consistent with model predictions. First, the significant intersubject correlations are indicative of self-similarity among different individuals within each condition. The model had predicted a similar triphasic response pattern that could be scaled in amplitude and time for different average walking speeds and step lengths (Figure 3d). The significant correlations (reported above, compare Figure 4, middle and right columns, p = 1.26e\u221210 for Up-steps, p = 3.0e\u221206 for Down-steps) show that each individual and each trial\u2019s speed fluctuations were proportional to the average pattern across subjects. Fluctuations were thus similar across a range of self-selected speeds and step lengths, with timing compared at discrete step numbers account for continuous time scaling. Thus, a single, self-similar pattern for Up- and Down-steps (Figure 4 average across subjects, right column) was sufficient to summarize responses across individuals walking at their own pace.\n\nSecond, the speed fluctuations exhibited scaling with step height. There was a significant linear relationship between step height b (+0.075, \u22120.075, and 0 cm) and each trial\u2019s fluctuation amplitude, with a positive linear coefficient cb (0.849 \u00b1 0.047, mean \u00b1 c.i. 95% confidence interval, p = 9.7e\u2212175), and a small offset (db 0.104 \u00b1 0.041). The coefficient indicates that Up- and Down-step responses (Figure 4, Human) were approximately opposite to each other, consistent with the model\u2019s predicted twofold symmetry. Not surprisingly, level control responses were approximately intermediate between the two. The compensatory fluctuation pattern for Up-steps can therefore predict a significant portion of the patterns for the other two step height conditions.\n\nThird, the speed fluctuation amplitudes decreased with faster walking speeds. There was a significant linear relationship between each Up-step trial\u2019s average walking speed and its fluctuation amplitude. This yielded a weak but significant negative linear coefficient c\u03bd (\u22120.785 \u00b1 0.618 c.i., p = 0.013), with offset near unity (dv\u03bd 1.008 \u00b1 0.073 c.i.). This is equivalent to a 10% increment in overall speed being accompanied by a 11.1% reduction in speed fluctuation amplitude for an Up-step (1.4 m/s). The average Up-step fluctuation pattern (across all subjects) was a significant predictor of patterns for different overall speeds and two other step height conditions.\n\n### Humans walking durations were approximately conserved despite Up- and Down-step disturbances\n\nSubjects were approximately compliant with the instruction to maintain a similar overall speed and walking duration across trials, whether or not there was an uneven step. There were no significant differences in overall speed, overall step length, or overall duration across trials, due to experimental condition (p = 0.65, p = 0.78, and p = 0.96, respectively, repeated measures ANOVA). Overall speeds were also fairly consistent across trials within Up- or Down-step conditions (2%\u20133% c.v.).\n\nThe apparent conservation of walking duration contrasts with what would be expected for a no-compensation strategy (Figure 1b). The model, if performing constant push-offs instead of compensating, would slow-down atop the Up-step (Figure 1b, speed), mainly due to the exchange of kinetic energy for potential energy. It would gradually accumulate a loss of about 0.7 s in time (Figure 1b, time) compared to level walking. Alternatively, a particle sliding on frictionless ground at human-like speed, would be expected to lose about 0.7 m/s and 8 s to an upward ramp of equivalent height. Thus, both a walking model and a sliding particle lose substantial speed and time due to a change in height, if there were no active time conservation. Human subjects did not lose significant time from the Up-step\u2019s potential energy, nor did they gain significant time from the Down-step.\n\n## Discussion\n\nWe examined how humans anticipate and compensate for a step change in the height of an otherwise flat walking surface. The compensatory response was characterized by a systematic, triphasic pattern in walking speed fluctuations, from which we draw several notable observations. First, the response was a scalable pattern that exhibited self-similarity, in that the same basic pattern could describe behavior at a variety of average walking speeds and step lengths. In addition, the response also exhibited an anticipatory component, meaning that it partially occurred prior to physically encountering the step. Finally, the response was consistent with predictions from a simple walking model, optimizing for least mechanical work. We next discuss these findings and their implications for anticipatory human control.\n\nHuman speed fluctuations exhibited a systematic, scalable pattern. A single basic pattern could describe the Up- and Down-step responses of different individuals, and even the different trials of a single individuals. That pattern could simply be scaled in amplitude and time scale to match any single response (similar to model, Figure 3d), according to the trial\u2019s average walking speed and step length (Figure 4). Systematicity is expected in part because of the deterministic and scalable dynamics of walking, with a pendulum-like exchange of kinetic and gravitational potential energy within each step (Kuo, 2002), and particularly an exchange of forward speed for vertical height atop the Up-step ($i=0$, Figure 2). A pendulum\u2019s motion, and the action of the step-to-step transition, are consistent and scalable in speed and step length, and in amplitude and time (Kuo, 2002). The scalability could potentially make it unnecessary for the central nervous system (CNS) to synthesize or reoptimize a new compensation for each new perturbation encountered. The dynamics of walking appear consistent enough to facilitate prediction of the compensation patterns .\n\nThe observed active control pattern was anticipatory, reactive, and time conserving. The evidence for anticipation is that the speed fluctuations commenced a few steps before the perturbation, as the first phase of the triphasic pattern (e.g., steps $i=-2,-1$ in Figure 4), consisting of a speed-up prior to Up-steps, and a slow-down prior to Down-steps. This anticipation was not consistent with the alternative hypothetical strategies of no compensation (Figure 1b), reactive and nonanticipatory compensation (Figure 1c), and tight regulation to avoid step time fluctuations (Figure 1d). Rather it was consistent with the minimum-work optimal control model, and counteracted the subsequent effects of the perturbation, which were a substantial loss (gain) of speed and time atop the Up- (Down-) step, during the second phase of the triphasic pattern ($i=0,1$). Following that perturbation and despite the anticipation, walking speed was still slower (faster) than nominal, and thus counteracted by another gradual speed-up (slow-down) during the third, reactive phase ($i=2,3,\u2026$). It is unclear whether the reactive phase was produced by feedback or by planning, but its effects were apparently part of an overall compensatory plan, because all three phases together conserved overall walking duration. Nominal walking speed and nominal time were regained several steps after the perturbation. In principle, it should also be possible to compensate with a purely reactive control after the perturbation (e.g., Figure 1c), an entirely anticipatory control, or an infinite number of other variations. However, model simulations suggest that such actions would require more mechanical work (and in many cases, much more) than the more integrative, triphasic pattern extending both before and after the perturbation (Darici et al., 2020).\n\nThis compensatory strategy suggests that humans can consider energy and time in their control decisions. Optimal control is helpful for resolving redundancies and indeterminacies, but it is not straightforward to determine an objective function that adequately represents human behaviors. Metabolic energy expenditure is an important determinant of level locomotion (Alexander, 1996; Kuo et al., 2005), and transient perturbations only add to that expenditure. We used a simple proxy measure for energy expenditure, the push-off work for step-to-step transitions. That work is proportionate to and appears to account for a majority of energetic cost of steady walking (Adamczyk et al., 2006; Donelan et al., 2001; Donelan et al., 2002; Kuo et al., 2005), and explains much of the cost of transient accelerations (Seethapathi and Srinivasan, 2015). The work proxy is thus predictive of physiological energy expenditure, while having minimal need for fitted parameters. Our study also explicitly considers timing, which is not a concern in steady locomotion at fixed speed. Here, considerable time (Figure 1b) and/or economy (Figure 1c) would be lost to an uncompensated perturbation (Darici et al., 2018; Darici et al., 2020), making their interaction important. We therefore incorporated overall time as a constraint in the model, and as a task instruction in the experiment. Timing is certainly important for tasks such as catching a ball, and perhaps for locomotion tasks such as intercepting a sidewalk curb or catching up to a friend on the sidewalk. It is of course a matter of context whether a person wishes to conserve time, hurry, or dawdle. But saving time often costs more energy, and our results suggest that humans can plan economical locomotion strategies that avoid loss of time when appropriate.\n\nThere remains the question of how the control is implemented by the central nervous system. The human\u2019s ability to reason about surface perturbations could be regarded as a mapping from visual terrain image and body state into a control action, equivalent to an inverse internal model of dynamics (Kawato, 1999). Examples from reinforcement learning suggest that such a mapping could be optimized iteratively (Heess et al., 2017), which might be representable with biological neurons. Our results suggest that the control policy could conceivably stored in quite compact form, because a single compensation pattern (e.g., $\u0394v^{up}$) might simply be scaled for different walking speeds, step heights, or step lengths. It is also conceivable that such a pattern could be repeatedly applied or superimposed to predict long sequences of uneven terrain, which are also energetically costly (Kowalsky et al., 2021; Voloshina et al., 2013). Also needed for learning is a means to evaluate the objective cost function, perhaps with physiological sensors of metabolic cost (Selinger et al., 2015), but it might be sufficient to use sensors indirectly related to motion, and learn their association with energy. There is presently little known about how the CNS actually implements locomotor compensations, but the patterns observed here are relatively simple and scalable.\n\nThis study highlights a less-appreciated aspect of vision-based path planning. It is clear that humans use vision to plan paths for the body (Arechavaleta et al., 2008; Brown et al., 2021), including adjustment of COM height (M\u00fcller et al., 2012) and foot placement (Matthis and Fajen, 2013; Patla, 1998). After all, it is sensible to predict which paths are feasible and which are less arduous. But we found that humans plan not just positions, but also dynamical trajectories such as forward momentum. They make quick, dynamically sensible decisions to overcome quite minor obstacles, apparently for energetic benefit. Such planning might also explain the leg loading preceding a Down-step in human running (M\u00fcller et al., 2012). It is also consistent with how birds run over an obstacle, with an anticipatory vault in the step beforehand ($i=-1$), perhaps for economy (Birn-Jeffery et al., 2014). Path planning may therefore be for more than just body location, but also dynamical state.\n\nThere are of course, other possible optimality criteria not considered here. We have tested and rejected a few here: no compensation, reactive compensation, and tight speed regulation (Figure 1). Other alternatives could potentially be tested, if stated unambiguously and objectively enough to model. A challenge is that most quantitative models to date apply to steady-state conditions, and it is unknown whether they can predict transients. To our knowledge, the present study is the first to use a mechanistic model to predict behavioral, multistep trajectories performed by humans. Perhaps the closest analog is a model based on empirical energetic cost curves that explain the curvilinear paths that humans take to go through doorways (Brown et al., 2021). We suspect that the empirical costs could be predicted mechanistically by a three-dimensional version of our dynamic walking model (e.g., Rebula et al., 2017), although that remains to be tested. We also expect that our model is compatible with other, more complex models, if the center of mass (COM) moves in an inverted pendulum motion, and the mechanical work of step-to-step transitions accounts for much or most of the energy expenditure. It would be challenging to predict the observed human responses with a model that does not subscribe to these basic principles.\n\nSuch a mechanistic approach has similarities to the separate field of neuromotor control for upper extremity reaching movements. That field has demonstrated how humans learn and adapt their arm dynamics, consistent with CNS internal models (Franklin et al., 2008; Sharp et al., 2011). In reaching studies, adaptation is usually guided by repeated practice and explicit feedback, say of position error with respect to an explicit target. Trajectory planning may similarly apply to locomotion, in anticipation of perturbations to dynamics. But one difference here is that subjects received no explicit feedback of any kind of error, including timing, and no repeated practice. Their planning appears to be based on prior experience with similar dynamics and similar timing context. There may be rich opportunity for locomotion to borrow from the optimization approaches of reaching, while also providing a complementary perspective on CNS control.\n\nThe present study is a drastic simplification of the costs relevant to human locomotion. There are certainly many contributions to the metabolic cost, such as for muscles to produce force (Rebula and Kuo, 2015; van der Zee and Kuo, 2021) irrespective of work. There are also many actions known to cost energy during locomotion, for example transient adjustment of step length and frequency (Ojeda et al., 2015; Snaterse et al., 2011), active lifting of the swing foot for ground clearance (Wu and Kuo, 2016), and lateral step width and foot placement (Donelan et al., 2001; O\u2019Connor et al., 2012). There are also nonenergetic factors that govern human behavior such as vigor (Shadmehr et al., 2019), which also affects timing, but in the form of a reward rather than the constraint used here. Stability may also be important for human locomotion, although we found no need to include it as an explicit objective, first because our walking model has passive dynamic stability against small disturbances (Kuo, 2002), and second because optimization for economy alone was sufficient to traverse the perturbation without falling. Stability might affect walking more when there is a more significant risk of falling than observed here. The present study shows that energy and time are two factors that may influence locomotion planning, but is also not intended to exclude other objectives and influences.\n\nThere are also limitations to the present model of walking. Notably, our model was intended to illustrate the effects of relatively small speed variations and surface height perturbations on pendulum-like walking. We did not explicitly control for walking speed, resulting in quite small differences between trials that make the speed scaling a rather weak test. We examined relatively low, 7.5 cm steps that can be traversed quite easily and still be treated as walking, as opposed to climbing stairs. The model did have predictive value (correlating with human with \u03c1 = 0.50, Figure 4), but the human patterns seemed to have some qualitatively consistent differences, for example in the amount of slow-down preceding the Down-step, and the number of steps spent speeding up or slowing down (Figure 4). The differences might be related to how humans flex their knees when stepping down, and actively lift the foot to clear the trailing step, especially if the foot lands far behind it and must therefore travel a longer distance before moving to the lower height. This complex action could potentially influence the strategy for COM motion. It could potentially be included in dynamic walking models with explicit knee (e.g., Dean and Kuo, 2009) and ankle (Zelik et al., 2014) joints, which have step-to-step transition energetics similar to here (e.g., Donelan et al., 2002; Adamczyk et al., 2006). Such models could potentially be useful for stepping higher, but we also believe that steps as high as stairsteps would ultimately require quite different control, less like an inverted pendulum. We also expect that transiently varying step lengths and foot placements could be added to the model (Bhounsule, 2014; Kuo, 2001; Ojeda et al., 2015). We have previously proposed that substantial energy is also expended for active leg motions during steady walking (Doke and Kuo, 2007; Doke et al., 2005), perhaps half that expended for step-to-step transitions (Kuo, 2001). We presently lack a model for the cost of transient step adjustments, which could potentially provide more detail about how active speed and step length fluctuations are achieved (e.g. Appendix 2\u2014figure 1). It is also likely that humans couple their sagittal and frontal plane motions for a change in step height, which might be accommodated in a three-dimensional model (Kim and Collins, 2017; Kuo, 1999). Considerable improvements might be achievable with additional dynamical degrees of freedom, but these would also entail additional free parameters, which must often be fit to data and could diminish the generality of the model predictions. An advantage of the present simple model is that it has negligible parametric sensitivity (Figure 3d), and predicts fundamental aspects of walking dynamics based on first principles.\n\nDespite these limitations, we showed here that humans perform compensatory, multistep speed adjustments on uneven terrain. A simple model minimizing the mechanical work of step-to-step transitions can predict these adjustments. The adjustments start several steps before, extend after the perturbation, in a triphasic pattern of speed fluctuations. Such a pattern is consistent with metabolic energy expenditure as a criterion for optimal control, and shows that humans perform anticipatory control before a perturbation is directly encountered. The CNS appears to anticipate the effects of disturbances on the dynamics of the body and exploit these dynamics for active and economical control.\n\n## Materials and methods\n\nThis study consisted of an experiment to test how humans traverse a single Up- or Down-step interrupting steady walking. We hypothesized that humans would anticipate the surface height perturbation, and produce a compensatory pattern of walking speed fluctuations, similar to predictions from our previous modeling study (Darici et al., 2020). Specifically, the model predicted a triphasic pattern for speed fluctuations, intended to compensate for the perturbation with minimal mechanical work, and conserve overall walking speed and walking time over a walkway of fixed distance. Although the model is far simpler than human, its mechanical work appears to explain a substantial fraction of human metabolic cost, perhaps enough to predict anticipatory walking strategies. We first summarize the model predictions, prior to describing the experimental procedure.\n\n### Model of walking\n\nWe summarize predictions from an optimal control model of walking (Figure 2; Darici et al., 2020), with details in Appendix 1. The task is to walk down a walkway interrupted by a single Up- or Down-step (numbered step $i=0$; Figure 1a), with adjustments to the forward speed $v_{i}$ of the COM for each step $i$ (Figure 2a; defined as the COM velocity at midstance when stance leg is vertical). The model has rigid, pendulum-like legs supporting a point-mass pelvis of mass $M$, along with infinitesimal-mass feet (Figure 2b; Kuo, 2002). The dynamics of the single stance phase are those of a simple inverted pendulum, which conserves mechanical energy and therefore loses speed stepping on an Up-step. As a simplification, the model\u2019s legs nominally take steps either of fixed length similar to the \u2018rimless wheel\u2019 model (McGeer, 1990), or variable length increasing with speed according to the human preferred step length relationship (see Appendix 1). With inverted pendulum dynamics, a level, nominal step (Figure 2c) is energetically conservative, except when punctuated by a step-to-step transition, where the trailing leg pushes off (PO) impulsively just before the leading leg\u2019s dissipative collision (CO) impulse. This redirects the center-of-mass (COM) velocity to a new pendular arc described by the leading leg. The push-off and collision impulses are performed along the axis of the corresponding legs, with push-off as the only powered actuation, and (perfectly inelastic) collision the only dissipation. The push-off work constitutes the only energy cost in this model. Experiments show that it explains how mechanical work and human metabolic energy expenditure increase as a function of step length (Donelan et al., 2002) or step width (in 3D model; Donelan et al., 2001) on level ground. Of course, there are certainly other costs such as to move the legs (Doke et al., 2005) or maintain balance (Donelan et al., 2004; O\u2019Connor et al., 2012), but evidence suggests that they are dominated by the higher cost of step-to-step transitions (Kuo et al., 2005). Here, we modeled uneven terrain as a small, vertical height discrepancy $b$ in step height, where additional push-off can help compensate for momentum lost to an Up-step (Figure 2d), and collision for momentum gained to a Down-step (Figure 2e).\n\nOptimal control was used to determine the compensation for a single step height change (Darici et al., 2020). The objective was to minimize total push-off work for multiple (variable $N$) steps while compensating for the terrain unevenness. The model was governed by the walking dynamics and constrained to start and end its compensation at steady, nominal speed, with the $N$ steps distributed equally before and after the Up-step. It was also constrained to match the total time for nominal level, steady walking, thus making up for time lost to the Up-step. The continuous time pendulum dynamics were controlled by discrete push-off work $u_{i}$ for each step (where $i=0$ for the push-off onto the Up-step), which served as the decision variables for optimization. Each push-off caused a change in the forward speed $v_{i}$ of the COM each step $i$ (Figure 2a), discretely sampled at the midstance instance when the stance leg passed through vertical, prior to the step-to-step transition. The control strategy refers to the discrete sequence of speeds $v_{i}$ (including $i$ over a range of steps), or equivalently the push-off sequence i$u_{i}$ . We expected that the compensation would occur within several steps before and after the perturbation, and selected $N=15$ as more than sufficient to encompass the relevant speed fluctuations. In model, velocity perturbations decay within several steps, based on the exponential persistence time of model (about 90% decay within 5.7 steps; Darici et al., 2020). We simulated a nominal step height $b$ equivalent to 7.5 cm.\n\n### Human subject experiment\n\nTo test model predictions, we measured speed fluctuations as humans walked down a level walkway (about 30 m) with a single, raised step onto a second level of 7.5 cm (Figure 1a). We tested healthy adult subjects ($n$ = 12; 7 male, 5 female, all under 30 years age), whose steps and walking speed were measured with inertial measurement units (IMUs) on both feet. There were three conditions: Up-step, Down-step, and Control on level ground. Both Up- and Down-steps used the same walkway except in opposite directions, and Control took place on level floor directly alongside the walkway. The raised section, commencing about halfway down, was assembled from fairly rigid, polystyrene insulation foam. In all conditions, subjects walked at comfortable speed from a start line through and past a finish line. Trials took place in alternating direction, with a brief delay for the subject to turn around and stand briefly before starting the next trial. There were at least 4 (and up to 10) trials of each condition, usually with Up- and Down-steps alternating with each other, except with occasional Control conditions inserted at random and interrupting that pattern. Before data collection, subjects were given opportunity to try the conditions and gain familiarity with the walkway and the location of the Up-step. For brevity, all mentions of the Up-step apply equally to the Down-step, unless explicitly stated. We tested one-sample group, with sample size ($n$ = 12) selected for a statistical power of at least 0.8, based on previous data for anticipated means and SDs (Darici, 2015). The experiment was performed once, and each test subject was tested once with each condition as a repeated measure. All subjects provided written informed consent prior to the experiment, according to Institutional Review Board procedures (University of Michigan, Energetics, Balance, and Control of Human Locomotion, HUM00020554).\n\nThe experiment was minimally governed, aside from instructing subjects which conditions to perform. To establish a subjective \u2018normal\u2019 walking speed, and walking time, subjects first performed two to four Control trials at the beginning of the experiment. We provided context by instructing subjects to walk \u2018in about the same time\u2019 throughout the experiment, although they never received feedback about their timing, reported in Results. The instructions were to avoid behaviors that might otherwise be considered normal in daily life, for example stopping to inspect the Up-step or to tie a shoelace or deciding to hurry through the experiment. We consider a loose time goal to be more explicit about expectations than a simpler but potentially ambiguous instruction to \u2018walk normally\u2019. At the same time, we allowed for arbitrary self-selected speeds, because the model\u2019s predictions do not depend on a particular speed. We thus expected a range of speeds across trials and across subjects. To help subjects to step onto the Up-step without stutter steps, there was a visual cue (a paper sticker) on the otherwise featureless walking surface, several steps (approximately 5 m) before the Up-step. Subjects were informed that they could use this cue to line up their steps prior to the Up-step, although they were not required to use it, and no trials were excluded even if there was a stutter step. Anecdotally, most subjects appeared to pay little attention to the sticker, especially after the first few trials.\n\nWe measured walking speed fluctuation trajectories (Figure 6) with IMUs. A discrete body speed was recorded for each walking step, based on an integrated trajectory for each foot (Rebula et al., 2013). The trajectories were computed from an IMU mounted atop each foot (Figure 6a), with gravity-compensated accelerations integrated to yield a spatiotemporal trajectory, subject to an assumption that each foot comes briefly to rest during each footfall, approximately in the middle of stance when the foot is flat on ground. These instances were used to correct the integrated foot velocity to zero, and thus reduce integration drift (Rebula et al., 2013). We then estimated stride length and time from the forward distance and time between an IMU\u2019s footfalls, respectively. Individual distances traveled by the 2 feet (Figure 6b) were corrected for integration drift so that they both agreed on overall distance, using linear detrending. Each foot\u2019s average speed over a stride (Figure 6c) was defined as the stride length between two discrete footfall (midstance) instants of the same foot, divided by the stride time between those instants. The body\u2019s forward walking speed (Speed, Figure 6c and subsequent figures) was estimated as a discrete sequence of these average speeds, once per step by alternating left and right feet (assuming the body travels at the same distance per stride as the feet), with each sample i corresponding to the midstance instance at beginning of stride. These speed trajectories were analyzed for a central, 8.5 m segment of the walkway, or about 15 steps surrounding the Up-step (Figure 1a). This was more than sufficient to encompass the compensation patterns, which largely took place within only a few steps before and after the perturbation. To compare between trials, the time $t=0$ was defined as the instant of the footfall onto the Up-step (or Down-step, or step next to it for Control), as detected by IMU. The speed trajectory for each subject\u2019s trials within a condition was averaged at discrete step numbers, as were the times for those steps, to yield an individual\u2019s average speed trajectory per condition.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/65402/elife-65402-fig6-v2.jpg)\n\n**Figure 6.:** (a) Foot trajectories in space are computed from inertial measurement unit (IMU) data. Shown are representative sagittal plane trajectory for one foot\u2019s motion during a stride, and the individual strides for both feet during an Up-step trial (with 2\u00d7 vertical scale for trial). Trajectories were integrated from an IMU atop each foot, where drift was reduced by detecting footfall instances (black dots) where the foot was stationary, and correcting the integrated velocity to zero at those instances (Rebula et al., 2013). (b) Forward speed vs. time for each foot and for the body. Each foot\u2019s instantaneous forward speed was computed from the spatial trajectories. The average speed during each stride (\u2018stride average\u2019, filled symbols) was determined, equal to the distance traveled divided by the stride duration. This was then treated as the body speed for each step (inset figure, filled symbols are same as stride averages), sampled discretely from each foot\u2019s strides at the respective footfall instances. The fluctuations in body speed were compared with model predictions.\n\nModel predictions were tested with speed trajectories for Up-step, Down-step, and Control conditions. First, we tested the consistency of human responses across different speeds and different subjects. Each individual\u2019s trajectories (as discrete sequences) were compared against the average trajectory for all individuals with Pearson\u2019s correlation coefficient \u03c1, with significant correlation determined by one-sample t-test. The patterns were thus compared for their shape for each discrete step, and not their amplitude or time scale. Significant correlation was therefore also used as an indicator of self-similarity across speeds, step lengths, and subjects.\n\nNext, as a test of the model (Figure 3), individual subject trajectories were correlated against the model\u2019s predicted trajectories. The model was intended to predict proportionalities in speed and work, and therefore the shapes of the fluctuation patterns, rather than absolute quantities. Therefore, each individual\u2019s speed fluctuation pattern of $N$ steps was correlated against the predicted pattern, with the Pearson\u2019s correlation coefficient \u03c1 expected to be positive (as opposed to a null hypothesis value of zero). Positive correlation across all subjects was tested for significance with one-sample paired t-test. The model predicted similar fluctuation patterns regardless of parameter choices (Figure 3d), and so we compared human against the model with fixed step lengths for simplicity. Only the optimal control model was tested in this way, whereas the alternative strategies (Figure 1) were tested by inspection.\n\nFinally, we tested the model\u2019s predicted scaling of speed fluctuations with step height and speed. We expected that the average Up-step response could predict the amplitude each individual\u2019s response to Down-step and level control and across different speeds. These were tested with two types of linear regression, with the hypothesized predictor $\u0394v_{i}^{up}$ denoting the average Up-step speed fluctuation pattern (across all subjects and Up-step trials, for steps $i=\u2212(N\u22121)/2$ to $(N\u22121)/2$, with $\u0394$ denoting fluctuation from average). The fluctuation waveform $\u0394v^{jk}$ for a subject $j$ and trial k was expected to scale in proportion to the trial\u2019s step height $b^{jk}$ (+7.5, 0, and \u22127.5 cm),\n\n$$\nstepheightscaling:\u0394v_{i}^{jk}\u2248(c_{b}\\frac{b^{jk}}{b^{up}}+d_{b})\u0394v_{i}^{up}forallstepsi\n$$\n\nwhere $b^{up}$ is the Up-step height, and $c_{b}$ and $d_{b}$ the coefficient and offset from regression. Similarly, the fluctuation waveform was expected to scale in negative proportion to a trial\u2019s overall speed $v\u00b4^{jk}$,\n\n$$\nSpeedscaling:\u0394v_{i}^{jk}\u2248(c_{v}\\frac{v\u00af^{jk}}{v\u00af^{up}}+d_{v})\u0394v_{i}^{up}forallstepsi\n$$\n\nwhere $c_{v}$ and $d_{v}$ are speed-related coefficient and offset, and $v\u00b4^{up}$ the average walking speed for all Up-step trials. Scaling with step height was tested by statistical significance of $c_{b}$, expected to be near unity. Scaling with speed was tested by significance of $c_{v}$, expected to be slightly negative. The offsets $d_{b}$ and $d_{v}$ were expected to be near zero and unity, respectively, but were not tested because only $c_{b}$ and $c_{v}$ were central to the hypothesis. We did not explicitly control for walking speed, and so the speed test relies on a sufficient range of differences in self-selected speeds between trials. Statistical significance was tested with a p threshold of 0.05.\n",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "67e06825-a71c-45ad-8774-1d430792df9e",
+      "submission_id": "527662ef-0d55-49cc-a025-f1c8636733d1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Lena H Ting, https://ror.org/03czfpz43 Emory University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.65402.sa0](https://doi.org/10.7554/eLife.65402.sa0)\n\nThe study combines theoretical and experimental approaches to probe the laws governing strategy for coping with the control of stepping on uneven terrain. Congruent results in anticipatory and reactive adjustments indicate that a simple strategy based on the conservation of energy may be expressed within neural control pathways for locomotion.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Lena H Ting, https://ror.org/03czfpz43 Emory University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.65402.sa1](https://doi.org/10.7554/eLife.65402.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Humans optimally anticipate and compensate for an uneven step during walking\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Aleksandra Walczak as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Manoj Srinivasan (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Stride length: The authors need to address whether the model limitations of using a fixed stride length affect the generalization of the results to variable stride lengths. The generalization of the claims, even in a qualitative way, need to be demonstrated, particularly as the authors have previously published simulation predictions with variable stride length. The reviewers agree that even a qualitative match between simulations and experiments would be sufficient given the inherent limitations of a simple model.\n\n2) Timing: Several questions regarding the claims with respect to timing require clarification and potentially further simulations. The time constraint imposed on the simulation is a particular concern; the total time should be released or at a minimum, the cost of different total times should be compared. Without doing so, the claim that there is no time lost due to the perturbation are not supported. Another issue with the claims around timing are the potential bias based on instruction to the participants. These multiple issues need to be addressed to substantiate the claims around timing.\n\n3) Given that the simulations appear to have been published previously, the contributions of this manuscript above and beyond those of previous ones by the authors need to be more fully described. What is the major advance that this paper provides?\n\n4) Aspects of the study methodology require clarification. These include the tested hypotheses, subject instructions and the scientific rationale for the study design and outcomes. Considerations for alternative study design and study limitations should be addressed in the discussion.\n\n5) A more complete discussion of the modeling assumptions and limitations needs to be included. These should include both the limitation of a simple model, the effects of including a swing limb, and alternative optimality criteria that may provide either similar or disparate results.\n\nReviewer #1 (Recommendations for the authors):\n\n1) The suggestion that the automatic optimization strategy is engaged here does not indicate whether this solution is dictated by subject instructions. In other words, could the solution here be simply the fact that subjects would be instructed not to stop when transversing the obstacles? The implied automatic action for this adaptation is not fully supported by experiments.\n\n2) The description of background information could benefit from a more thorough review of the related studies and clarifications.\n\n3) The study refers to the feedforward limb speed control in the study design and outcomes; yet, no background for the CNS using this parameter as a variable is provided. If this is an assumption then it should be identified as such.\n\n4) One of the main findings is the self-similarity of the anticipatory response at multiple average speeds and step lengths. This brings a few concerns related to the normalization (see specific question 6) and the overall significance of this outcome. The discussion should identify the impact of this finding on the conclusions.\n\n5) The overall study design appears to be unclear. The interplay between the tested hypotheses and the background or theoretical facts is not fully clear. The understanding of study validity could be improved by the additional description of study design and the consideration of alternatives and study limitations. For example, stepping over obstacles could be executed with multiple strategies and probably in a context-dependent way. These alternatives and the experimental observations should be discussed in the context of the findings in this study.\n\n6) P2, ln8 \"This raises the question.\u2026\" The general point expressed here may benefit from the focus on the specific question. As is, the outcome may be task-dependent, e.g., the interception of prey would require a different strategy from that used to catch a ball.\n\n7) P2, ln22 \"The negotiation of uneven terrain.\u2026\" The background literature highlighting these points could be added. The predictive planning in the same context was previously demonstrated in studies by Patla in humans and in animals by Drew.\n\n8) p2, ln43 \"\u2026 humans compensate for ground perturbations is unknown\u2026\" This may be an overgeneralization. There are multiple types of ground perturbations. Some mechanisms are known and documented, e.g., the mechanisms of the stretch reflex and finite step phase transition rules in humans and animals (including insects), e.g., Prochazka's models.\n\n9) p3, ln23 \"\u2026 swing phase dynamics are ignored, and the legs are constrained to fixed step lengths.\u2026\" This oversimplification does not agree with the observed experimental results. The dependency of limb speed on the control of the swing phase has a direct bearing on the assumption of limb speed control. The implications of this limitation should be clarified. Ultimately, the addition of swing dynamics with the appropriate stride length dependency could substantially support the claims in this study.\n\n10) p4, ln10 \"\u2026 discretely sampled a the mid-stance instance.\u2026\" The measurement of step speed should be clarified. Have you estimated the speed of the center of mass or some other related kinematic landmark?\n\n11) Figure 2 The analysis is done in time even though the speed of each subject was self-paced. The previous studies indicate that humans may use discrete in time step-based control, which would imply that the analysis in Figure 2 should be similarly normalized to each step.\n\n12) p6, ln25 \"\u2026 systematic behavior.\u2026\" This statement may be unclear. What is the nature of these systematic variations amongst volunteers?\n\n13) p6, ln28 \" Humans compensated for.\u2026\" This statement makes a specific claim based on the presented testing; however, the hypothesis for the tests has not been expressed. Please, consider clarifying the nature of the study design here. Was this work driven by the rationale or the specific a priori hypotheses?\n\n14) p6, ln33 \"\u2026 would lose 1 s.\u2026\" This statement likely implies a full stop for a second prior to the step over the obstacle. Please confirm or clarify the origin of this conclusion. Also, it is unclear if this simulated behavior depended on the initial conditions. For example, the step adjustments may only be necessary if the timing with the obstacle interaction is not good enough for the smooth step over it.\n\n15) p7, ln9 \"The Up-step and.\u2026\" Please, clarify what variables are correlated here. It is unclear how the \"conditions\" could be correlated.\n\n16) Methodological unclarity. What was the placement of IMU units? Was there any signal processing of IMU signals? The instrumentation of subjects should be described in methods.\n\nReviewer #2 (Recommendations for the authors):\n\nThe conclusions of the paper could be strengthened by:\n\n1) demonstrating that the predictions also hold for a model with variable step length. It is not clear why step length was fixed as a fixed step length does not seem a valid assumption here and previous models of the authors had variable step length. Does a model with variable step length predict variations in step length in agreement with experimental observations?\n\n2) demonstrating that optimal control also predicts no time lost due to stepping up as compared to walking on even terrain. If I got it right, the total time is imposed when solving the optimal control problem. The authors stress that time is lost in uncompensated up-steps when describing their model predictions, which they contrast with the optimal policy. However, the loss of time was not predicted but imposed (page 14 \u2013 line 27).\n\n3) demonstrating that the number of compensation steps N that minimizes work corresponds to the observed number of compensation steps. Now, N is informed by observations (page 14 \u2013 line 29). N is not specified, I infer from the figures that it was nine but according to the author's previous modeling paper, there is little additional reduction in work when increasing the number of compensation steps above three. Therefore, minimal work does not explain why people take more than three compensation steps.\n\n4) demonstrating that minimal work leads to better agreement between simulations and observations than other plausible optimality criteria. I understand that some plausible criteria, e.g., stability against noise, are not easy to test but they could be discussed.\n\n5) demonstrating that the predicted dependence of speed fluctuations on step height is in agreement with experimental observations. (I realize that this might require additional experiments and might therefore not be feasible within a reasonable time but I feel it is a missed opportunity that this was not part of the original experimental protocol.)\n\nReviewer #3 (Recommendations for the authors):\n\nThe manuscript is well written. I found it easy to read.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Humans optimally anticipate and compensate for an uneven step during walking\" for further consideration by eLife. Your revised article has been reviewed by 3 peer reviewers and the evaluation has been overseen by a Reviewing Editor and by Aleksandra Walczak as the Senior Editor.\n\nReviewer #1 (Recommendations for the authors):\n\nThe thorough revision is appropriate for publication.\n\nReviewer #2 (Recommendations for the authors):\n\nThe authors have addressed some but not all the questions/concerns raised in the previous review.\n\nPrevious essential revision 1. Instead of demonstrating that minimization of mechanical work captured observed stride length variability, the authors moved the results on stride length variability to the appendix. I am under the impression that the authors have previously published simulations in which stride times were not imposed (was not contradicted in response) and it is unclear why simulations with variable (i.e. not pre-imposed) stride times could not be performed. The added value of performing simulations with different imposed stride lengths is limited as compared to the added value of performing simulations in which stride length is a free variable (and thus follows from optimization). Simulations with variable stride lengths could have given information on whether the key assumption (minimization of mechanical work) predicts other features than speed fluctuations alone.\n\nPrevious essential revision 5. The authors have introduced alternative hypotheses but this feels 'after the facts'. It was already clear that these hypotheses would not hold (with prior knowledge of the experimental data) and they have therefore limited value. We specifically asked about alternative optimality criteria and such criteria will only strengthen the reported findings when they truly challenge them.\n\nWith respect to stability as an alternative optimization criterion, I find the addition to the discussion not convincing. The model being able to traverse the perturbation without falling tells little about stability against noise, which can be expected in real life (but was not modeled). I am also unsure about what the authors mean by 'the model could easily traverse the perturbation'. How was 'easily' defined?\n\nReviewer #3 (Recommendations for the authors):\n\nThe authors have addressed all my specific comments satisfactorily.\n\nI am also reasonably satisfied with how the authors have addressed the issue of constant vs varying step length that other reviewers raised and the consensus review included. However, the authors may want to clearly note that allowing the step length to vary with speed via a static preferred speed-step-length relationship is not the same (ie not mathematically equivalent) as allowing the step length to vary as an independent optimization variable because, well, one problem has more optimization degrees of freedom than the other. But this additional calculation is certainly suggestive (and I believe its suggestion) that allowing step lengths to vary will not change the speed fluctuation results substantially.\n",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a40e5912-5a4b-43b5-bed7-6c158b7084ed",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C1",
+      "claim": "Much of steady, level gait is determined by energy economy.",
+      "claim_type": "EXPLICIT",
+      "source": "Much of steady, level gait is determined by energy economy, which should be at least as important with terrain disturbances.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about human locomotion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "67a2a869-6a06-4b7d-8884-cecb056570b8",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C2",
+      "claim": "Humans compensate for an Up-step with an anticipatory pattern of forward speed adjustments predicted by a criterion of minimizing mechanical energy input.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that humans compensate with an anticipatory pattern of forward speed adjustments, predicted by a criterion of minimizing mechanical energy input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by experimental data comparing human behavior to model predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "a97ae27e-bde4-43b6-b8af-d72b5e3591d1",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C3",
+      "claim": "The compensatory strategy is mechanistically predicted by optimal control for a simple model of bipedal walking dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "The strategy is mechanistically predicted by optimal control for a simple model of bipedal walking dynamics, with each leg's push-off work as input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the modeling approach used to generate predictions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "415caf22-d389-49f2-86cc-fc406c664a4a",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C4",
+      "claim": "Optimization predicts a triphasic trajectory of speed adjustments, including an anticipatory phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Optimization predicts a triphasic trajectory of speed (and thus momentum) adjustments, including an anticipatory phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the optimal control model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "0f6d1fae-3f36-4f86-81c2-f5514bf7880d",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C5",
+      "claim": "Human subjects ascend an artificial curb with the predicted triphasic trajectory.",
+      "claim_type": "EXPLICIT",
+      "source": "In experiment, human subjects ascend an artificial curb with the predicted triphasic trajectory, which approximately conserves overall walking speed relative to undisturbed flat ground.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "4e90e3dd-e37a-4d0f-807e-ae4b33a09864",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C6",
+      "claim": "The triphasic trajectory approximately conserves overall walking speed relative to undisturbed flat ground.",
+      "claim_type": "EXPLICIT",
+      "source": "In experiment, human subjects ascend an artificial curb with the predicted triphasic trajectory, which approximately conserves overall walking speed relative to undisturbed flat ground.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "31e74d8b-26d0-4e04-9e30-daf106a664e7",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C7",
+      "claim": "The trajectory involves speeding up in a few steps before the curb, losing considerable momentum from ascending it, and then regaining speed in a few steps thereafter.",
+      "claim_type": "EXPLICIT",
+      "source": "The trajectory involves speeding up in a few steps before the curb, losing considerable momentum from ascending it, and then regaining speed in a few steps thereafter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the observed triphasic pattern in experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "93c82336-e573-4d44-8c34-4acb91292873",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C8",
+      "claim": "Descending the curb entails a nearly opposite, but still anticipatory, speed fluctuation trajectory.",
+      "claim_type": "EXPLICIT",
+      "source": "Descending the curb entails a nearly opposite, but still anticipatory, speed fluctuation trajectory, in agreement with model predictions that speed fluctuation amplitudes should scale linearly with curb height.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding for Down-step conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "5b1e28da-1e4e-4487-8abb-0c1443571d21",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C9",
+      "claim": "Speed fluctuation amplitudes scale linearly with curb height.",
+      "claim_type": "EXPLICIT",
+      "source": "Descending the curb entails a nearly opposite, but still anticipatory, speed fluctuation trajectory, in agreement with model predictions that speed fluctuation amplitudes should scale linearly with curb height.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is both a model prediction and an experimental finding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "8abae7d7-9699-4f3c-8125-e714735a998e",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C10",
+      "claim": "The fluctuation amplitudes decrease slightly with faster average speeds, as predicted by model.",
+      "claim_type": "EXPLICIT",
+      "source": "The fluctuation amplitudes also decrease slightly with faster average speeds, also as predicted by model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding that matches model predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "fe354c23-ed9a-4310-8655-b3b8af5bcb65",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C11",
+      "claim": "Humans can reason about the dynamics of walking to plan anticipatory and economical control, even with a sidewalk curb in the way.",
+      "claim_type": "EXPLICIT",
+      "source": "Humans can reason about the dynamics of walking to plan anticipatory and economical control, even with a sidewalk curb in the way.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "1d0b877a-65a4-43cc-892e-cf60651bc5b5",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C12",
+      "claim": "An upward perturbation might cause a sudden reduction of speed and an overall loss of time compared to steady gait if no compensation is performed.",
+      "claim_type": "EXPLICIT",
+      "source": "If no compensation is performed, an upward perturbation might cause a sudden reduction of speed, and an overall loss of time compared to steady gait (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a theoretical prediction based on the physics of walking dynamics.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "c8a39b25-97b0-4783-b8b6-de1811069f5c",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C13",
+      "claim": "Feedback refers to reactive control driven by sensory feedback of the body's dynamical state.",
+      "claim_type": "EXPLICIT",
+      "source": "Feedback refers to reactive control driven by sensory feedback of the body's dynamical state, for example from vestibular and somatosensors to control standing balance (Horak et al., 1990; Kuo, 1995; Park et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "1e658409-a397-4bc4-8126-60e0d707c739",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C14",
+      "claim": "Feedback is important for balance during walking, for example to adjust foot placement each step.",
+      "claim_type": "EXPLICIT",
+      "source": "Such feedback also appears important for balance during walking, for example to adjust foot placement each step (Bauby and Kuo, 2000; O'Connor and Kuo, 2009; Wang and Srinivasan, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "36a25c6d-b38d-47b0-9e15-b8afb93dfcde",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C15",
+      "claim": "Humans clearly anticipate and plan for the body's future location, for example to negotiate around obstacles or through doorways.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, humans clearly anticipate and plan for the body's future location, for example to negotiate around obstacles or through doorways (Arechavaleta et al., 2008; Brown et al., 2021; Patla, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "9d718c02-5b83-4ec6-bf2b-8a2bba9ddbaf",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C16",
+      "claim": "Foot placement and motion are planned, with the help of vision, to avoid or step over upcoming obstacles.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, foot placement and motion are planned, with the help of vision, to avoid or step over upcoming obstacles (Patla, 1998; Patla and Rietdyk, 1993), and to land on foot targets (Drew et al., 2008; Matthis and Fajen, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "2e584988-9c07-4d7d-9737-cec211d3e395",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C17",
+      "claim": "Runners load the leg differently just before a drop, perhaps as a way to regulate momentum.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, runners do load the leg differently just before a drop (M\u00fcller et al., 2012), perhaps as a way to regulate momentum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and includes speculative interpretation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "f6181365-f5bb-4bcf-abf3-3f2edde69948",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C18",
+      "claim": "The criterion of metabolic energy economy determines features such as the preferred step length and step width during steady walking.",
+      "claim_type": "EXPLICIT",
+      "source": "For locomotion, the criterion of metabolic energy economy determines features such as the preferred step length and step width during steady walking (Donelan et al., 2001; Zarrugh et al., 1974), as governed by the pendulum-like dynamics of the legs (Kuo et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "e5dd4687-bdb8-4983-a8bd-85406c6f0557",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C19",
+      "claim": "Energetic costs are greater on uneven terrain.",
+      "claim_type": "EXPLICIT",
+      "source": "Energetic costs are also greater on uneven terrain (Kowalsky et al., 2021; Pandolf et al., 1977; Voloshina et al., 2013) and under transient conditions (Brown et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "be1524c7-f2f2-456c-ab1b-aabec2551e24",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C20",
+      "claim": "The mechanical work performed in the step-to-step transition is a crude indicator of energy expenditure.",
+      "claim_type": "EXPLICIT",
+      "source": "The objective was to minimize a crude indicator of energy expenditure, the mechanical work performed in the step-to-step transition from one pendulum-like stance leg to the next (Donelan et al., 2002; Kuo et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "add941ae-d325-466c-9348-c2f45c226e91",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C21",
+      "claim": "Optimization predicts a substantial economic advantage to the anticipatory speed-up, compared to post hoc compensation alone.",
+      "claim_type": "EXPLICIT",
+      "source": "The model predicted a substantial economic advantage to the anticipatory speed-up, compared to post hoc compensation alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the optimal control model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "2120692b-0b30-4d57-953e-3d6c425a037a",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C22",
+      "claim": "The optimal control is systematically scalable, with greater amplitude of speed fluctuations for larger step heights.",
+      "claim_type": "EXPLICIT",
+      "source": "The optimal control was systematically scalable, with greater amplitude of speed fluctuations for larger step heights, and an almost opposite amplitude for negotiating a Down-step (with negative height change).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the optimal control model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "4bc2a2e8-4c68-4e82-afa0-76915c9a1ec4",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C23",
+      "claim": "The model predicts an almost opposite amplitude for negotiating a Down-step compared to an Up-step.",
+      "claim_type": "EXPLICIT",
+      "source": "The optimal control was systematically scalable, with greater amplitude of speed fluctuations for larger step heights, and an almost opposite amplitude for negotiating a Down-step (with negative height change).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the optimal control model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "bd353dc0-1a4a-44ce-8346-5df743ac2cb6",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C24",
+      "claim": "The overall average self-selected speed for control trials was 1.38 \u00b1 0.10 m/s on level ground.",
+      "claim_type": "EXPLICIT",
+      "source": "For the central (8.5 m) segment of the walkway, the overall average self-selected speed for control trials (level walking) was 1.38 \u00b1 0.10 m/s on level ground (mean \u00b1 standard deviation [SD across subjects]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct measurement from the experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "0e646508-a07b-4268-b696-ea6c6977ceb0",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C25",
+      "claim": "Each individual typically had about 5% coefficient of variation in self-selected speed across control trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Each individual typically had a small amount of variation in self-selected speed between trials, with about 5% c.v. (coefficient of variation) across control trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical measure from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "553fa90f-b834-4015-adf6-d35095023c57",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C26",
+      "claim": "During level Control walking, the speed fluctuations were small in magnitude and largely noise-like, with variability 0.031 \u00b1 0.007 m/s.",
+      "claim_type": "EXPLICIT",
+      "source": "During level Control walking (Figure 4, top row), the speed fluctuations were small in magnitude and largely noise-like, with variability 0.031 \u00b1 0.007 m/s (root-mean-square variation within trial, reported as mean \u00b1 SD across subjects), or about 2.2% c.v.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "55d60d86-b194-4756-912a-3c6082bce713",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C27",
+      "claim": "Control speed fluctuations exhibited a small amount of correlation between subjects, with correlation coefficient \u03c1 = 0.47 \u00b1 0.31 (p = 2.5e\u221204).",
+      "claim_type": "EXPLICIT",
+      "source": "These fluctuations exhibited a small amount of correlation between subjects, with correlation coefficient \u03c1 = 0.47 \u00b1 0.31 (p = 2.5e\u221204), as demonstrated by correlating each individual's average Control trial against the average Control across all subjects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "4d8369e7-cff0-4d8a-85d6-9bb37ed98b62",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C30",
+      "claim": "The Up-step speed fluctuations were similar across subjects with a positive correlation coefficient between each individual's Up-step trials and the average across subjects (\u03c1 = 0.82 \u00b1 0.1252; p = 1.26e\u221210).",
+      "claim_type": "EXPLICIT",
+      "source": "The Up-step speed fluctuations were similar across subjects (compare Figure 4, middle and right columns), with a positive correlation coefficient between each individual's Up-step trials and the average across subjects (\u03c1 = 0.82 \u00b1 0.1252; p = 1.26e\u221210 paired t-test of correlations, performed across discrete speed sequences).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "eab4e75b-fca3-4b02-81f3-4db8e96f41c1",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C31",
+      "claim": "Down-step patterns showed positive correlation across subjects (\u03c1 = 0.68 \u00b1 0.27, p = 3.0e\u221206).",
+      "claim_type": "EXPLICIT",
+      "source": "The same was true for Down-step patterns, with positive correlation (\u03c1 = 0.68 \u00b1 0.27, p = 3.0e\u221206).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "ce89f969-19b5-4eb9-8807-4ec074125eac",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C32",
+      "claim": "Neither Up- nor Down-step speed fluctuations were well correlated with Control.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither Up- nor Down-step speed fluctuations were well correlated with Control (\u03c1 = \u22120.016 \u00b1 0.21 and 0.184 \u00b1 0.193, respectively, correlating each subject's Up- and Down-step responses against average Control across subjects, p = 0.78, p = 0.007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "e1eeef7b-efd3-48ec-8e08-bb51cf92967a",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C33",
+      "claim": "The speed fluctuations for the Up-step and Down-step were somewhat opposite to each other, with a negative correlation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the speed fluctuations for the Up-step and Down-step were somewhat opposite to each other, with a negative correlation between individual Up-steps and average Down-step pattern and vice versa (respectively, \u03c1 = \u22120.34 \u00b1 0.16, p = 1.6e\u221205; \u03c1 = \u22120.27 \u00b1 0.22, p = 0.0016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "b50d8268-b0c9-4b6c-848f-9bb45588b928",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C34",
+      "claim": "Human compensation strategies agreed reasonably well with optimal control model predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of the main hypothesis, the compensation strategies agreed reasonably well with optimal control model predictions (Figure 5, top for model; bottom for human).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison between experimental data and model predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "67af105d-92d4-4cb6-8255-b8ad008e8ac8",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C35",
+      "claim": "There was a positive correlation coefficient between human and model fluctuations for both Up- and Down-steps (\u03c1 = 0.50 \u00b1 0.21, p = 4.4e\u22126 and \u03c1 = 0.59 \u00b1 0.17, p = 1.08e\u22127).",
+      "claim_type": "EXPLICIT",
+      "source": "This agreement was quantified by a positive correlation coefficient between human and model fluctuations for both Up- and Down-steps (\u03c1 = 0.50 \u00b1 0.21, p = 4.4e\u22126 and \u03c1 = 0.59 \u00b1 0.17, p = 1.08e\u22127; paired t-tests for correlations performed across discrete speed sequences).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical analysis comparing experimental data to model predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "92fc3a31-238b-4236-baf7-5ead3dfab568",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C36",
+      "claim": "There was a negative correlation between human Up-steps and model Down-steps, and vice versa.",
+      "claim_type": "EXPLICIT",
+      "source": "And in keeping with the model's prediction of opposing fluctuations for Up- vs. Down-steps, there was also a negative correlation between human Up-steps and model Down-steps, and vice versa (\u03c1 = \u22120.42 \u00b1 0.21, p = 2.75e\u22125 and \u03c1 = \u22120.54 \u00b1 0.15, p = 8.05e\u22128; paired t-tests).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical analysis comparing experimental data to model predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "910900c4-e79f-4946-b69d-7175fb206832",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C37",
+      "claim": "Human control responses were not correlated with model predictions for either Up- or Down-step.",
+      "claim_type": "EXPLICIT",
+      "source": "We also verified that human control responses were not correlated with model predictions for either Up- or Down-step, with correlation coefficients not significantly different from zero (p = 0.32, p = 0.31).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "2faf86ac-1548-4d8f-9e2a-2e6d0f9c3b9e",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C38",
+      "claim": "There was a significant linear relationship between step height b and each trial's fluctuation amplitude, with a positive linear coefficient cb (0.849 \u00b1 0.047, p = 9.7e\u2212175).",
+      "claim_type": "EXPLICIT",
+      "source": "There was a significant linear relationship between step height b (+0.075, \u22120.075, and 0 cm) and each trial's fluctuation amplitude, with a positive linear coefficient cb (0.849 \u00b1 0.047, mean \u00b1 c.i. 95% confidence interval, p = 9.7e\u2212175), and a small offset (db 0.104 \u00b1 0.041).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "6ef6f32e-c991-4d24-9c0f-0f9890f6fc40",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C39",
+      "claim": "There was a significant linear relationship between each Up-step trial's average walking speed and its fluctuation amplitude, with a negative linear coefficient c\u03bd (\u22120.785 \u00b1 0.618 c.i., p = 0.013).",
+      "claim_type": "EXPLICIT",
+      "source": "There was a significant linear relationship between each Up-step trial's average walking speed and its fluctuation amplitude. This yielded a weak but significant negative linear coefficient c\u03bd (\u22120.785 \u00b1 0.618 c.i., p = 0.013), with offset near unity (dv\u03bd 1.008 \u00b1 0.073 c.i.).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "fe0b1d58-bb36-4d4e-9290-eb8471d8d9e8",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C40",
+      "claim": "A 10% increment in overall speed is accompanied by an 11.1% reduction in speed fluctuation amplitude for an Up-step (1.4 m/s).",
+      "claim_type": "EXPLICIT",
+      "source": "This is equivalent to a 10% increment in overall speed being accompanied by a 11.1% reduction in speed fluctuation amplitude for an Up-step (1.4 m/s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on experimental data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "e58dc1c4-1895-4f72-b8dd-8d50d40d05ed",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C41",
+      "claim": "There were no significant differences in overall speed, overall step length, or overall duration across trials, due to experimental condition.",
+      "claim_type": "EXPLICIT",
+      "source": "There were no significant differences in overall speed, overall step length, or overall duration across trials, due to experimental condition (p = 0.65, p = 0.78, and p = 0.96, respectively, repeated measures ANOVA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "492ccd89-cd43-42fd-bd7a-700308f9477c",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C42",
+      "claim": "Overall speeds were fairly consistent across trials within Up- or Down-step conditions (2%\u20133% c.v.).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall speeds were also fairly consistent across trials within Up- or Down-step conditions (2%\u20133% c.v.).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical measure from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "3f1fbf70-6158-4f17-852d-7cd20570d9e5",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C43",
+      "claim": "The model, if performing constant push-offs instead of compensating, would slow-down atop the Up-step and gradually accumulate a loss of about 0.7 s in time compared to level walking.",
+      "claim_type": "EXPLICIT",
+      "source": "The model, if performing constant push-offs instead of compensating, would slow-down atop the Up-step (Figure 1b, speed), mainly due to the exchange of kinetic energy for potential energy. It would gradually accumulate a loss of about 0.7 s in time (Figure 1b, time) compared to level walking.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prediction from the model under a no-compensation scenario.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "13e45018-6d7e-4ab4-bd5c-05cf65945c66",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C44",
+      "claim": "A particle sliding on frictionless ground at human-like speed would be expected to lose about 0.7 m/s and 8 s to an upward ramp of equivalent height.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, a particle sliding on frictionless ground at human-like speed, would be expected to lose about 0.7 m/s and 8 s to an upward ramp of equivalent height.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical calculation based on physics principles.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "ada533f6-2ac4-4814-9eac-c633e974fd16",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C45",
+      "claim": "Human subjects did not lose significant time from the Up-step's potential energy, nor did they gain significant time from the Down-step.",
+      "claim_type": "EXPLICIT",
+      "source": "Human subjects did not lose significant time from the Up-step's potential energy, nor did they gain significant time from the Down-step.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "2aa577cf-1a2b-4697-bd2c-75715e9f0655",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C46",
+      "claim": "The compensatory response was characterized by a systematic, triphasic pattern in walking speed fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "The compensatory response was characterized by a systematic, triphasic pattern in walking speed fluctuations, from which we draw several notable observations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "43ed2b29-a1e5-4076-bc30-54830dbe6f9e",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C47",
+      "claim": "The response was a scalable pattern that exhibited self-similarity, in that the same basic pattern could describe behavior at a variety of average walking speeds and step lengths.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the response was a scalable pattern that exhibited self-similarity, in that the same basic pattern could describe behavior at a variety of average walking speeds and step lengths.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "0090dba6-fc65-4adb-b777-7a028ab53ed1",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C48",
+      "claim": "The response exhibited an anticipatory component, meaning that it partially occurred prior to physically encountering the step.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the response also exhibited an anticipatory component, meaning that it partially occurred prior to physically encountering the step.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "85eb9642-c194-4854-b359-38bbd3f59e3f",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C49",
+      "claim": "The response was consistent with predictions from a simple walking model, optimizing for least mechanical work.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the response was consistent with predictions from a simple walking model, optimizing for least mechanical work.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing experimental data to model predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "29a9f18c-048a-4d54-95c7-0f8300e80341",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C50",
+      "claim": "A single basic pattern could describe the Up- and Down-step responses of different individuals, and even the different trials of a single individual.",
+      "claim_type": "EXPLICIT",
+      "source": "A single basic pattern could describe the Up- and Down-step responses of different individuals, and even the different trials of a single individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "ac49d3b8-6b95-4b2b-89b1-be4bb6f684e8",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C51",
+      "claim": "A pendulum's motion, and the action of the step-to-step transition, are consistent and scalable in speed and step length, and in amplitude and time.",
+      "claim_type": "EXPLICIT",
+      "source": "A pendulum's motion, and the action of the step-to-step transition, are consistent and scalable in speed and step length, and in amplitude and time (Kuo, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "7b2a81fe-05a6-4caa-bee6-854c705fa16d",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C52",
+      "claim": "The scalability could potentially make it unnecessary for the central nervous system (CNS) to synthesize or reoptimize a new compensation for each new perturbation encountered.",
+      "claim_type": "EXPLICIT",
+      "source": "The scalability could potentially make it unnecessary for the central nervous system (CNS) to synthesize or reoptimize a new compensation for each new perturbation encountered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "1ac649e1-eaa9-4fea-8934-4e9c63edef1c",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C53",
+      "claim": "The observed active control pattern was anticipatory, reactive, and time conserving.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed active control pattern was anticipatory, reactive, and time conserving.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "5802b4ed-ea1d-44c0-a66a-459c3c1b58ba",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C55",
+      "claim": "It is unclear whether the reactive phase was produced by feedback or by planning.",
+      "claim_type": "EXPLICIT",
+      "source": "It is unclear whether the reactive phase was produced by feedback or by planning, but its effects were apparently part of an overall compensatory plan, because all three phases together conserved overall walking duration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges uncertainty about the mechanism while noting the functional outcome.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "b3b87a0f-edab-48d7-9026-9d9b682b5167",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C56",
+      "claim": "Model simulations suggest that purely reactive or entirely anticipatory control would require more mechanical work than the triphasic pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "However, model simulations suggest that such actions would require more mechanical work (and in many cases, much more) than the more integrative, triphasic pattern extending both before and after the perturbation (Darici et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior modeling work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "ef0ddb3c-24ac-48f8-85a9-584613f7d337",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C57",
+      "claim": "Metabolic energy expenditure is an important determinant of level locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Metabolic energy expenditure is an important determinant of level locomotion (Alexander, 1996; Kuo et al., 2005), and transient perturbations only add to that expenditure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "460ab04c-87b5-46ce-95de-e13596b4b0d0",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C58",
+      "claim": "The push-off work is proportionate to and appears to account for a majority of energetic cost of steady walking.",
+      "claim_type": "EXPLICIT",
+      "source": "That work is proportionate to and appears to account for a majority of energetic cost of steady walking (Adamczyk et al., 2006; Donelan et al., 2001; Donelan et al., 2002; Kuo et al., 2005), and explains much of the cost of transient accelerations (Seethapathi and Srinivasan, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "622b66b9-c872-4772-9110-22a75285acb9",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C59",
+      "claim": "Considerable time and/or economy would be lost to an uncompensated perturbation.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, considerable time (Figure 1b) and/or economy (Figure 1c) would be lost to an uncompensated perturbation (Darici et al., 2018; Darici et al., 2020), making their interaction important.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to prior modeling work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "3588ce57-2342-43e2-9e4c-d8f9fc39b7f8",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C60",
+      "claim": "The human's ability to reason about surface perturbations could be regarded as a mapping from visual terrain image and body state into a control action, equivalent to an inverse internal model of dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "The human's ability to reason about surface perturbations could be regarded as a mapping from visual terrain image and body state into a control action, equivalent to an inverse internal model of dynamics (Kawato, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical interpretation supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "47315fe0-19ae-4c03-9c4b-372ed0b7b25b",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C62",
+      "claim": "Humans use vision to plan paths for the body, including adjustment of COM height and foot placement.",
+      "claim_type": "EXPLICIT",
+      "source": "It is clear that humans use vision to plan paths for the body (Arechavaleta et al., 2008; Brown et al., 2021), including adjustment of COM height (M\u00fcller et al., 2012) and foot placement (Matthis and Fajen, 2013; Patla, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "ec756f3e-3ba3-4b55-a03c-b8c5806f4194",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C63",
+      "claim": "Humans plan not just positions, but also dynamical trajectories such as forward momentum.",
+      "claim_type": "EXPLICIT",
+      "source": "But we found that humans plan not just positions, but also dynamical trajectories such as forward momentum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "d9953687-5abd-41c9-a56a-e5608ea1ad4e",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C65",
+      "claim": "The present study is the first to use a mechanistic model to predict behavioral, multistep trajectories performed by humans.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, the present study is the first to use a mechanistic model to predict behavioral, multistep trajectories performed by humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "c9278a95-e468-4e11-b14a-4328ba8321d0",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C66",
+      "claim": "The present study is a drastic simplification of the costs relevant to human locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "The present study is a drastic simplification of the costs relevant to human locomotion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of the study's limitations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "9a0a2cdd-e06c-4c91-9e58-267216a7b950",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C67",
+      "claim": "There are many contributions to the metabolic cost, such as for muscles to produce force irrespective of work.",
+      "claim_type": "EXPLICIT",
+      "source": "There are certainly many contributions to the metabolic cost, such as for muscles to produce force (Rebula and Kuo, 2015; van der Zee and Kuo, 2021) irrespective of work.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "1ae22b3e-c6fb-4b5a-a31b-a863c352b059",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C68",
+      "claim": "The model was intended to illustrate the effects of relatively small speed variations and surface height perturbations on pendulum-like walking.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, our model was intended to illustrate the effects of relatively small speed variations and surface height perturbations on pendulum-like walking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the scope and intent of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "c0e362e4-a431-4298-96ca-48934511bbc9",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C69",
+      "claim": "The model had predictive value, correlating with human with \u03c1 = 0.50.",
+      "claim_type": "EXPLICIT",
+      "source": "The model did have predictive value (correlating with human with \u03c1 = 0.50, Figure 4), but the human patterns seemed to have some qualitatively consistent differences, for example in the amount of slow-down preceding the Down-step, and the number of steps spent speeding up or slowing down (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of the model-data comparison.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "167fa7af-056e-4433-9317-2ac308a7f464",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C70",
+      "claim": "An advantage of the present simple model is that it has negligible parametric sensitivity and predicts fundamental aspects of walking dynamics based on first principles.",
+      "claim_type": "EXPLICIT",
+      "source": "An advantage of the present simple model is that it has negligible parametric sensitivity (Figure 3d), and predicts fundamental aspects of walking dynamics based on first principles.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a claim about the model's strengths.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "ba1ae483-bf6c-4c94-8617-169547a67891",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C71",
+      "claim": "Humans perform compensatory, multistep speed adjustments on uneven terrain.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these limitations, we showed here that humans perform compensatory, multistep speed adjustments on uneven terrain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main experimental finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "20f33c74-4b9a-4f71-ab13-bb6332ba64e0",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C72",
+      "claim": "A simple model minimizing the mechanical work of step-to-step transitions can predict these adjustments.",
+      "claim_type": "EXPLICIT",
+      "source": "A simple model minimizing the mechanical work of step-to-step transitions can predict these adjustments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main finding regarding model predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "543d4a1d-7ee4-4bca-979d-6e90aa479a17",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C73",
+      "claim": "The adjustments start several steps before, extend after the perturbation, in a triphasic pattern of speed fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "The adjustments start several steps before, extend after the perturbation, in a triphasic pattern of speed fluctuations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "05343a90-9924-44c0-9c13-f42066bea655",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C74",
+      "claim": "Such a pattern is consistent with metabolic energy expenditure as a criterion for optimal control.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a pattern is consistent with metabolic energy expenditure as a criterion for optimal control, and shows that humans perform anticipatory control before a perturbation is directly encountered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "52dda906-60a3-4756-8b7e-5dca9937aeaa",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C75",
+      "claim": "The CNS appears to anticipate the effects of disturbances on the dynamics of the body and exploit these dynamics for active and economical control.",
+      "claim_type": "EXPLICIT",
+      "source": "The CNS appears to anticipate the effects of disturbances on the dynamics of the body and exploit these dynamics for active and economical control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "95c15685-d8d4-4e3a-9fd9-bf03f54df3ce",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C77",
+      "claim": "The dynamics of the single stance phase are those of a simple inverted pendulum, which conserves mechanical energy and therefore loses speed stepping on an Up-step.",
+      "claim_type": "EXPLICIT",
+      "source": "The dynamics of the single stance phase are those of a simple inverted pendulum, which conserves mechanical energy and therefore loses speed stepping on an Up-step.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the model dynamics.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "6aca49ba-85a1-46ac-a944-204e80888471",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C78",
+      "claim": "The push-off work constitutes the only energy cost in this model.",
+      "claim_type": "EXPLICIT",
+      "source": "The push-off work constitutes the only energy cost in this model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the model's cost function.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "19a14392-9b78-4a34-b46c-11a8775fdc18",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C79",
+      "claim": "Experiments show that push-off work explains how mechanical work and human metabolic energy expenditure increase as a function of step length or step width on level ground.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments show that it explains how mechanical work and human metabolic energy expenditure increase as a function of step length (Donelan et al., 2002) or step width (in 3D model; Donelan et al., 2001) on level ground.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "dfc0e9ab-ff60-4103-82dd-ae8ad677f9e9",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C80",
+      "claim": "Evidence suggests that costs for moving the legs or maintaining balance are dominated by the higher cost of step-to-step transitions.",
+      "claim_type": "EXPLICIT",
+      "source": "Of course, there are certainly other costs such as to move the legs (Doke et al., 2005) or maintain balance (Donelan et al., 2004; O'Connor et al., 2012), but evidence suggests that they are dominated by the higher cost of step-to-step transitions (Kuo et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "16334a9b-80e8-488d-b7af-3fe485314b89",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C83",
+      "claim": "The model was constrained to match the total time for nominal level, steady walking, thus making up for time lost to the Up-step.",
+      "claim_type": "EXPLICIT",
+      "source": "It was also constrained to match the total time for nominal level, steady walking, thus making up for time lost to the Up-step.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the model constraints.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "72ca3ace-407e-4bb3-8298-875028299714",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C85",
+      "claim": "There were three experimental conditions: Up-step, Down-step, and Control on level ground.",
+      "claim_type": "EXPLICIT",
+      "source": "There were three conditions: Up-step, Down-step, and Control on level ground.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "b19d55a2-9835-4dfe-873c-f6852044879a",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C86",
+      "claim": "The raised section was 7.5 cm high and assembled from fairly rigid, polystyrene insulation foam.",
+      "claim_type": "EXPLICIT",
+      "source": "The raised section, commencing about halfway down, was assembled from fairly rigid, polystyrene insulation foam.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "53441063-a192-4240-b918-157f8b2e5d18",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C87",
+      "claim": "Subjects walked at comfortable speed from a start line through and past a finish line.",
+      "claim_type": "EXPLICIT",
+      "source": "In all conditions, subjects walked at comfortable speed from a start line through and past a finish line.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "59060183-bf74-4563-aeee-f81ead4a04e9",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C88",
+      "claim": "There were at least 4 (and up to 10) trials of each condition.",
+      "claim_type": "EXPLICIT",
+      "source": "There were at least 4 (and up to 10) trials of each condition, usually with Up- and Down-steps alternating with each other, except with occasional Control conditions inserted at random and interrupting that pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "673d1ee6-c4f8-4d79-ba41-4d07a3922ab0",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C90",
+      "claim": "All subjects provided written informed consent prior to the experiment, according to Institutional Review Board procedures.",
+      "claim_type": "EXPLICIT",
+      "source": "All subjects provided written informed consent prior to the experiment, according to Institutional Review Board procedures (University of Michigan, Energetics, Balance, and Control of Human Locomotion, HUM00020554).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the ethical approval for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "7958004f-a4ea-424f-9fc9-ace52a8e351d",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C91",
+      "claim": "Subjects were instructed to walk 'in about the same time' throughout the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "We provided context by instructing subjects to walk 'in about the same time' throughout the experiment, although they never received feedback about their timing, reported in Results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental instructions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "a0b7b3d1-983c-430c-afcd-e2b077704a7c",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C92",
+      "claim": "Walking speed fluctuation trajectories were measured with IMUs mounted atop each foot.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured walking speed fluctuation trajectories (Figure 6) with IMUs. A discrete body speed was recorded for each walking step, based on an integrated trajectory for each foot (Rebula et al., 2013). The trajectories were computed from an IMU mounted atop each foot (Figure 6a), with gravity-compensated accelerations integrated to yield a spatiotemporal trajectory, subject to an assumption that each foot comes briefly to rest during each footfall, approximately in the middle of stance when the foot is flat on ground.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the measurement method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "6f17f3a3-2bb6-4c82-9487-55c9783233b3",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C93",
+      "claim": "The body's forward walking speed was estimated as a discrete sequence of average speeds, once per step by alternating left and right feet.",
+      "claim_type": "EXPLICIT",
+      "source": "The body's forward walking speed (Speed, Figure 6c and subsequent figures) was estimated as a discrete sequence of these average speeds, once per step by alternating left and right feet (assuming the body travels at the same distance per stride as the feet), with each sample i corresponding to the midstance instance at beginning of stride.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the data processing method.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "f624ec55-b056-408b-976a-a8d2e2df8385",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C94",
+      "claim": "Speed trajectories were analyzed for a central, 8.5 m segment of the walkway, or about 15 steps surrounding the Up-step.",
+      "claim_type": "EXPLICIT",
+      "source": "These speed trajectories were analyzed for a central, 8.5 m segment of the walkway, or about 15 steps surrounding the Up-step (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the data analysis approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "41883196-4dd6-4082-9b3f-635a4f1ced96",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C96",
+      "claim": "Each individual's trajectories were compared against the average trajectory for all individuals with Pearson's correlation coefficient \u03c1.",
+      "claim_type": "EXPLICIT",
+      "source": "Each individual's trajectories (as discrete sequences) were compared against the average trajectory for all individuals with Pearson's correlation coefficient \u03c1, with significant correlation determined by one-sample t-test.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical analysis method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "d3b0c882-298b-4824-a6d8-08816fafd365",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "claim_id": "C97",
+      "claim": "The model was intended to predict proportionalities in speed and work, and therefore the shapes of the fluctuation patterns, rather than absolute quantities.",
+      "claim_type": "EXPLICIT",
+      "source": "The model was intended to predict proportionalities in speed and work, and therefore the shapes of the fluctuation patterns, rather than absolute quantities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the scope of model predictions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "000a78f1-4022-49ff-a074-461e97586946",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "An optimal control model of bipedal walking predicts a triphasic speed adjustment pattern for negotiating step height changes. The model uses inverted pendulum dynamics with push-off work as the sole energy cost and predicts anticipatory speed adjustments that minimize mechanical work while conserving overall walking time. The model predicts scalable responses with amplitude proportional to step height and opposite patterns for Up- vs Down-steps.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4, C20-C23, and C77-C83 collectively describe a mechanistically grounded model with clear assumptions (inverted pendulum dynamics, push-off work as cost) that generates testable predictions. The model is based on established principles (C79-C80 cite prior work) and produces specific, falsifiable predictions about triphasic patterns, anticipation, and scaling relationships that can be compared to experimental data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "3664693f-c403-4379-9a6c-b564e2755cf5",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Human subjects exhibit a triphasic speed adjustment pattern when walking over a 7.5 cm step, characterized by anticipatory speed-up before the step, momentum loss during the step, and speed recovery afterward. This pattern approximately conserves overall walking speed and time relative to level ground walking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C5-C7, C46, C48, C71, and C73 describe consistent experimental observations of triphasic speed patterns with anticipatory components. The claims are supported by direct measurements from IMU data (C92-C94) showing systematic speed fluctuations across multiple subjects and trials. The anticipatory nature is evidenced by speed changes occurring before physical encounter with the step.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "9218d8d3-0fe6-433f-a4d9-45d818a1b556",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Human speed adjustment patterns show high inter-subject consistency and self-similarity. Up-step responses correlate strongly across subjects (\u03c1=0.82, p=1.26e-10), as do Down-step responses (\u03c1=0.68, p=3.0e-06). Up- and Down-step patterns are negatively correlated with each other, and neither correlates well with Control walking, indicating systematic, condition-specific responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C33, C47, and C50 present statistical evidence for consistency and self-similarity with appropriate correlation analyses and significant p-values. The high positive correlations for within-condition comparisons and negative correlations between Up- and Down-steps support the claim of systematic, scalable patterns. Sample size (n=12) and statistical tests (paired t-tests) are appropriate for the analyses performed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "cf04b1aa-420a-495d-941b-f9b1f0556a01",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Human compensation strategies agree moderately well with optimal control model predictions. Human-model correlations are positive and significant for both Up-steps (\u03c1=0.50\u00b10.21, p=4.4e-6) and Down-steps (\u03c1=0.59\u00b10.17, p=1.08e-7), with negative correlations between human Up-steps and model Down-steps as predicted.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36, C49, C69, and C72 demonstrate statistically significant agreement between model predictions and human behavior with appropriate correlation analyses. While the correlations are moderate (\u03c1\u22480.5-0.6), they are highly significant and show the predicted pattern of positive within-condition and negative cross-condition correlations. The authors acknowledge model limitations (C69) and qualitative differences, providing balanced interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "b5dd907d-12b3-4980-96aa-2fe3d0737a4f",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Speed fluctuation amplitudes scale linearly with step height. The linear coefficient between step height and fluctuation amplitude is 0.849\u00b10.047 (p=9.7e-175), indicating that Down-step responses are approximately opposite to Up-step responses in amplitude.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C9 and C38 present strong statistical evidence for linear scaling with step height. The extremely small p-value (9.7e-175) and coefficient near unity (0.849) with tight confidence intervals support the linear relationship. This validates the model's prediction of scalable, opposite responses for Up- vs Down-steps.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "c2c90663-4269-421b-adbe-23fbd2e3aeed",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Speed fluctuation amplitudes decrease slightly with faster average walking speeds. The relationship shows a weak but significant negative linear coefficient (-0.785\u00b10.618, p=0.013), equivalent to an 11.1% reduction in fluctuation amplitude for a 10% increase in walking speed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C39-C40 report a statistically significant relationship (p=0.013), but the effect is weak and the confidence interval is large relative to the coefficient (-0.785\u00b10.618). The authors acknowledge not explicitly controlling for walking speed, resulting in limited range of speed variations. While the direction matches model predictions, the weak effect and large uncertainty limit confidence in this result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "ec2066d4-2a1f-437b-9517-2b2605eadfe0",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Subjects maintained consistent overall walking duration across conditions despite step perturbations. No significant differences in overall speed, step length, or duration were found across experimental conditions (p=0.65, 0.78, 0.96), and subjects did not lose or gain significant time from Up- or Down-steps.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42 and C45 present appropriate statistical tests (repeated measures ANOVA) showing no significant differences in overall walking parameters across conditions. This supports the interpretation that the triphasic pattern effectively conserves walking time as instructed. The consistency (2-3% c.v.) indicates subjects complied with instructions despite receiving no feedback.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "b8e63e12-4cb0-4b14-bde0-53c00e9d859d",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Baseline walking characteristics show that subjects walked at self-selected speeds averaging 1.38\u00b10.10 m/s with low variability (5% c.v. across trials). Control walking exhibited small, largely noise-like speed fluctuations (0.031\u00b10.007 m/s, 2.2% c.v.) with weak inter-subject correlation (\u03c1=0.47\u00b10.31, p=2.5e-4).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C27 provide baseline characterization with appropriate descriptive statistics. The measurements establish that control walking has much smaller fluctuations than perturbed conditions, and the weak but significant correlation in control suggests some shared structure even in unperturbed walking. These baseline measures are essential for interpreting the experimental perturbation responses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "1707faae-2a79-4196-829c-1d797170929a",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Human control responses (level walking) were not correlated with model predictions for either Up- or Down-step conditions (p=0.32, p=0.31).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C37 appropriately tests that control walking does not spuriously correlate with perturbation predictions, serving as a negative control. The non-significant correlations support the specificity of the model-human agreement for perturbation conditions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "dac9c920-2dc9-4b50-895d-6e7e701a7536",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Model simulations predict that without compensation, substantial speed and time would be lost to step perturbations. The model would lose ~0.7s for an Up-step with constant push-offs, and purely reactive or entirely anticipatory strategies would require more mechanical work than the triphasic pattern.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44, C56, and C59 describe model predictions for alternative strategies, supported by citations to prior modeling work (Darici et al., 2020). These predictions establish the functional significance of the observed triphasic pattern by quantifying costs of alternative strategies. The comparisons are based on the same model framework used for the main predictions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "7179c8ca-1de4-4494-8b3e-4aeaa9df78ce",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study concludes that humans can reason about walking dynamics to plan anticipatory and economical control, planning not just positions but also dynamical trajectories such as forward momentum. The CNS appears to anticipate disturbance effects and exploit body dynamics for active and economical control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C63, C74-C75 represent high-level interpretations supported by the convergence of multiple findings: anticipatory speed adjustments (C48), agreement with energy-minimizing model (C34-C36), time conservation (C41), and systematic scalability (C47). While these are interpretive claims about neural control mechanisms, they are reasonable inferences from the experimental evidence demonstrating anticipatory, economical compensation patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "3017f6d8-7ced-495b-8ce0-9bb6c97f2570",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Energy economy is an established determinant of steady-state locomotion, with greater energetic costs on uneven terrain. Push-off work accounts for a majority of the energetic cost of steady walking and explains much of the cost of transient accelerations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C18-C19, C57-C58 summarize established prior knowledge supported by multiple citations to peer-reviewed research. These claims provide the scientific foundation for using energy minimization as an optimization criterion and push-off work as a cost proxy in the model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "732f28af-005d-4eb8-b80a-4899c5ec537d",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prior research establishes that both feedback and anticipatory control contribute to locomotion. Feedback is important for balance and foot placement during walking, while anticipatory control is used to plan body location, foot placement, and motion to negotiate obstacles, with vision playing a key role.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C17 and C62 accurately summarize prior research with appropriate citations. These claims establish the context for distinguishing anticipatory from reactive control and for interpreting the observed anticipatory speed adjustments as part of broader locomotor planning capabilities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "c2102e25-2947-4e9d-ad21-d8cfcf2b703d",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors claim this is the first study to use a mechanistic model to predict behavioral, multistep trajectories performed by humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C65 asserts novelty but provides no systematic review or comparison with prior work to support this claim. While the approach may be novel, the qualification 'to our knowledge' indicates uncertainty, and without comprehensive literature review, this claim cannot be definitively evaluated. The claim is not central to the scientific findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "34a4bd05-02c1-499e-b76c-eaf916d085e9",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors acknowledge model limitations, including drastic simplification of locomotion costs, focus on small perturbations, and qualitative differences between model and human patterns. However, they argue the model has advantages including negligible parametric sensitivity and prediction of fundamental dynamics from first principles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C70 provide balanced discussion of model limitations and strengths. The acknowledgment of simplifications (C66-C68) is appropriate and honest. The claim of negligible parametric sensitivity (C70) is supported by Figure 3d showing similar patterns across parameter variations. The moderate model-human correlation (\u03c1=0.50, C69) is acknowledged with discussion of qualitative differences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "78d749b8-d3d1-4a16-9968-1816bc76c718",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors speculate that the scalability of compensation patterns could make it unnecessary for the CNS to synthesize new compensations for each perturbation, and that the ability to reason about perturbations could be regarded as an inverse internal model of dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C52 and C60 are explicitly speculative interpretations about neural mechanisms. While consistent with the observed scalability and the internal model framework (C60 cites Kawato 1999), these claims go beyond what the data directly demonstrate. The speculation is reasonable but would require additional neurophysiological or computational neuroscience evidence to support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "64170672-48e6-4e80-bb79-39fcdb076df8",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The experimental methods involved 12 subjects walking over a 7.5 cm step in three conditions (Up-step, Down-step, Control) with 4-10 trials each. Walking speed was measured using IMUs on both feet, with speed trajectories analyzed for an 8.5 m central segment. Subjects were instructed to walk 'in about the same time' but received no feedback.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C97 describe the experimental design and methods with appropriate detail. The sample size (n=12) is justified by power analysis, the measurement approach using IMUs is validated by citation (Rebula et al., 2013), and the instructions balance ecological validity with experimental control. The methods are sufficiently detailed for replication.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    },
+    {
+      "id": "d2b2c399-851e-47e1-9742-e8c2077a2d54",
+      "content_id": "40f30882-7402-49e9-943b-aa75ec8f4c34",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Without compensation, an upward perturbation would cause sudden speed reduction and overall time loss compared to steady gait.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C12 is a straightforward prediction from physics and pendulum dynamics (conservation of energy during inverted pendulum motion). This is supported by both theoretical understanding (C77) and model simulations (C43-C44) showing quantitative predictions of speed and time loss.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:06:05.259740Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a97ae27e-bde4-43b6-b8af-d72b5e3591d1",
+      "result_id": "000a78f1-4022-49ff-a074-461e97586946"
+    },
+    {
+      "claim_id": "415caf22-d389-49f2-86cc-fc406c664a4a",
+      "result_id": "000a78f1-4022-49ff-a074-461e97586946"
+    },
+    {
+      "claim_id": "be1524c7-f2f2-456c-ab1b-aabec2551e24",
+      "result_id": "000a78f1-4022-49ff-a074-461e97586946"
+    },
+    {
+      "claim_id": "add941ae-d325-466c-9348-c2f45c226e91",
+      "result_id": "000a78f1-4022-49ff-a074-461e97586946"
+    },
+    {
+      "claim_id": "2120692b-0b30-4d57-953e-3d6c425a037a",
+      "result_id": "000a78f1-4022-49ff-a074-461e97586946"
+    },
+    {
+      "claim_id": "4bc2a2e8-4c68-4e82-afa0-76915c9a1ec4",
+      "result_id": "000a78f1-4022-49ff-a074-461e97586946"
+    },
+    {
+      "claim_id": "95c15685-d8d4-4e3a-9fd9-bf03f54df3ce",
+      "result_id": "000a78f1-4022-49ff-a074-461e97586946"
+    },
+    {
+      "claim_id": "6aca49ba-85a1-46ac-a944-204e80888471",
+      "result_id": "000a78f1-4022-49ff-a074-461e97586946"
+    },
+    {
+      "claim_id": "19a14392-9b78-4a34-b46c-11a8775fdc18",
+      "result_id": "000a78f1-4022-49ff-a074-461e97586946"
+    },
+    {
+      "claim_id": "dfc0e9ab-ff60-4103-82dd-ae8ad677f9e9",
+      "result_id": "000a78f1-4022-49ff-a074-461e97586946"
+    },
+    {
+      "claim_id": "16334a9b-80e8-488d-b7af-3fe485314b89",
+      "result_id": "000a78f1-4022-49ff-a074-461e97586946"
+    },
+    {
+      "claim_id": "67a2a869-6a06-4b7d-8884-cecb056570b8",
+      "result_id": "3664693f-c403-4379-9a6c-b564e2755cf5"
+    },
+    {
+      "claim_id": "0f6d1fae-3f36-4f86-81c2-f5514bf7880d",
+      "result_id": "3664693f-c403-4379-9a6c-b564e2755cf5"
+    },
+    {
+      "claim_id": "4e90e3dd-e37a-4d0f-807e-ae4b33a09864",
+      "result_id": "3664693f-c403-4379-9a6c-b564e2755cf5"
+    },
+    {
+      "claim_id": "31e74d8b-26d0-4e04-9e30-daf106a664e7",
+      "result_id": "3664693f-c403-4379-9a6c-b564e2755cf5"
+    },
+    {
+      "claim_id": "2aa577cf-1a2b-4697-bd2c-75715e9f0655",
+      "result_id": "3664693f-c403-4379-9a6c-b564e2755cf5"
+    },
+    {
+      "claim_id": "0090dba6-fc65-4adb-b777-7a028ab53ed1",
+      "result_id": "3664693f-c403-4379-9a6c-b564e2755cf5"
+    },
+    {
+      "claim_id": "ba1ae483-bf6c-4c94-8617-169547a67891",
+      "result_id": "3664693f-c403-4379-9a6c-b564e2755cf5"
+    },
+    {
+      "claim_id": "543d4a1d-7ee4-4bca-979d-6e90aa479a17",
+      "result_id": "3664693f-c403-4379-9a6c-b564e2755cf5"
+    },
+    {
+      "claim_id": "4d8369e7-cff0-4d8a-85d6-9bb37ed98b62",
+      "result_id": "9218d8d3-0fe6-433f-a4d9-45d818a1b556"
+    },
+    {
+      "claim_id": "eab4e75b-fca3-4b02-81f3-4db8e96f41c1",
+      "result_id": "9218d8d3-0fe6-433f-a4d9-45d818a1b556"
+    },
+    {
+      "claim_id": "ce89f969-19b5-4eb9-8807-4ec074125eac",
+      "result_id": "9218d8d3-0fe6-433f-a4d9-45d818a1b556"
+    },
+    {
+      "claim_id": "e1eeef7b-efd3-48ec-8e08-bb51cf92967a",
+      "result_id": "9218d8d3-0fe6-433f-a4d9-45d818a1b556"
+    },
+    {
+      "claim_id": "43ed2b29-a1e5-4076-bc30-54830dbe6f9e",
+      "result_id": "9218d8d3-0fe6-433f-a4d9-45d818a1b556"
+    },
+    {
+      "claim_id": "29a9f18c-048a-4d54-95c7-0f8300e80341",
+      "result_id": "9218d8d3-0fe6-433f-a4d9-45d818a1b556"
+    },
+    {
+      "claim_id": "b50d8268-b0c9-4b6c-848f-9bb45588b928",
+      "result_id": "cf04b1aa-420a-495d-941b-f9b1f0556a01"
+    },
+    {
+      "claim_id": "67af105d-92d4-4cb6-8255-b8ad008e8ac8",
+      "result_id": "cf04b1aa-420a-495d-941b-f9b1f0556a01"
+    },
+    {
+      "claim_id": "92fc3a31-238b-4236-baf7-5ead3dfab568",
+      "result_id": "cf04b1aa-420a-495d-941b-f9b1f0556a01"
+    },
+    {
+      "claim_id": "85eb9642-c194-4854-b359-38bbd3f59e3f",
+      "result_id": "cf04b1aa-420a-495d-941b-f9b1f0556a01"
+    },
+    {
+      "claim_id": "c0e362e4-a431-4298-96ca-48934511bbc9",
+      "result_id": "cf04b1aa-420a-495d-941b-f9b1f0556a01"
+    },
+    {
+      "claim_id": "20f33c74-4b9a-4f71-ab13-bb6332ba64e0",
+      "result_id": "cf04b1aa-420a-495d-941b-f9b1f0556a01"
+    },
+    {
+      "claim_id": "93c82336-e573-4d44-8c34-4acb91292873",
+      "result_id": "b5dd907d-12b3-4980-96aa-2fe3d0737a4f"
+    },
+    {
+      "claim_id": "5b1e28da-1e4e-4487-8abb-0c1443571d21",
+      "result_id": "b5dd907d-12b3-4980-96aa-2fe3d0737a4f"
+    },
+    {
+      "claim_id": "2faf86ac-1548-4d8f-9e2a-2e6d0f9c3b9e",
+      "result_id": "b5dd907d-12b3-4980-96aa-2fe3d0737a4f"
+    },
+    {
+      "claim_id": "8abae7d7-9699-4f3c-8125-e714735a998e",
+      "result_id": "c2c90663-4269-421b-adbe-23fbd2e3aeed"
+    },
+    {
+      "claim_id": "6ef6f32e-c991-4d24-9c0f-0f9890f6fc40",
+      "result_id": "c2c90663-4269-421b-adbe-23fbd2e3aeed"
+    },
+    {
+      "claim_id": "fe0b1d58-bb36-4d4e-9290-eb8471d8d9e8",
+      "result_id": "c2c90663-4269-421b-adbe-23fbd2e3aeed"
+    },
+    {
+      "claim_id": "e58dc1c4-1895-4f72-b8dd-8d50d40d05ed",
+      "result_id": "ec2066d4-2a1f-437b-9517-2b2605eadfe0"
+    },
+    {
+      "claim_id": "492ccd89-cd43-42fd-bd7a-700308f9477c",
+      "result_id": "ec2066d4-2a1f-437b-9517-2b2605eadfe0"
+    },
+    {
+      "claim_id": "ada533f6-2ac4-4814-9eac-c633e974fd16",
+      "result_id": "ec2066d4-2a1f-437b-9517-2b2605eadfe0"
+    },
+    {
+      "claim_id": "1ac649e1-eaa9-4fea-8934-4e9c63edef1c",
+      "result_id": "ec2066d4-2a1f-437b-9517-2b2605eadfe0"
+    },
+    {
+      "claim_id": "5802b4ed-ea1d-44c0-a66a-459c3c1b58ba",
+      "result_id": "ec2066d4-2a1f-437b-9517-2b2605eadfe0"
+    },
+    {
+      "claim_id": "bd353dc0-1a4a-44ce-8346-5df743ac2cb6",
+      "result_id": "b8e63e12-4cb0-4b14-bde0-53c00e9d859d"
+    },
+    {
+      "claim_id": "0e646508-a07b-4268-b696-ea6c6977ceb0",
+      "result_id": "b8e63e12-4cb0-4b14-bde0-53c00e9d859d"
+    },
+    {
+      "claim_id": "553fa90f-b834-4015-adf6-d35095023c57",
+      "result_id": "b8e63e12-4cb0-4b14-bde0-53c00e9d859d"
+    },
+    {
+      "claim_id": "55d60d86-b194-4756-912a-3c6082bce713",
+      "result_id": "b8e63e12-4cb0-4b14-bde0-53c00e9d859d"
+    },
+    {
+      "claim_id": "910900c4-e79f-4946-b69d-7175fb206832",
+      "result_id": "1707faae-2a79-4196-829c-1d797170929a"
+    },
+    {
+      "claim_id": "3f1fbf70-6158-4f17-852d-7cd20570d9e5",
+      "result_id": "dac9c920-2dc9-4b50-895d-6e7e701a7536"
+    },
+    {
+      "claim_id": "13e45018-6d7e-4ab4-bd5c-05cf65945c66",
+      "result_id": "dac9c920-2dc9-4b50-895d-6e7e701a7536"
+    },
+    {
+      "claim_id": "b3b87a0f-edab-48d7-9026-9d9b682b5167",
+      "result_id": "dac9c920-2dc9-4b50-895d-6e7e701a7536"
+    },
+    {
+      "claim_id": "622b66b9-c872-4772-9110-22a75285acb9",
+      "result_id": "dac9c920-2dc9-4b50-895d-6e7e701a7536"
+    },
+    {
+      "claim_id": "fe354c23-ed9a-4310-8655-b3b8af5bcb65",
+      "result_id": "7179c8ca-1de4-4494-8b3e-4aeaa9df78ce"
+    },
+    {
+      "claim_id": "ec756f3e-3ba3-4b55-a03c-b8c5806f4194",
+      "result_id": "7179c8ca-1de4-4494-8b3e-4aeaa9df78ce"
+    },
+    {
+      "claim_id": "05343a90-9924-44c0-9c13-f42066bea655",
+      "result_id": "7179c8ca-1de4-4494-8b3e-4aeaa9df78ce"
+    },
+    {
+      "claim_id": "52dda906-60a3-4756-8b7e-5dca9937aeaa",
+      "result_id": "7179c8ca-1de4-4494-8b3e-4aeaa9df78ce"
+    },
+    {
+      "claim_id": "a40e5912-5a4b-43b5-bed7-6c158b7084ed",
+      "result_id": "3017f6d8-7ced-495b-8ce0-9bb6c97f2570"
+    },
+    {
+      "claim_id": "f6181365-f5bb-4bcf-abf3-3f2edde69948",
+      "result_id": "3017f6d8-7ced-495b-8ce0-9bb6c97f2570"
+    },
+    {
+      "claim_id": "e5dd4687-bdb8-4983-a8bd-85406c6f0557",
+      "result_id": "3017f6d8-7ced-495b-8ce0-9bb6c97f2570"
+    },
+    {
+      "claim_id": "ef0ddb3c-24ac-48f8-85a9-584613f7d337",
+      "result_id": "3017f6d8-7ced-495b-8ce0-9bb6c97f2570"
+    },
+    {
+      "claim_id": "460ab04c-87b5-46ce-95de-e13596b4b0d0",
+      "result_id": "3017f6d8-7ced-495b-8ce0-9bb6c97f2570"
+    },
+    {
+      "claim_id": "c8a39b25-97b0-4783-b8b6-de1811069f5c",
+      "result_id": "732f28af-005d-4eb8-b80a-4899c5ec537d"
+    },
+    {
+      "claim_id": "1e658409-a397-4bc4-8126-60e0d707c739",
+      "result_id": "732f28af-005d-4eb8-b80a-4899c5ec537d"
+    },
+    {
+      "claim_id": "36a25c6d-b38d-47b0-9e15-b8afb93dfcde",
+      "result_id": "732f28af-005d-4eb8-b80a-4899c5ec537d"
+    },
+    {
+      "claim_id": "9d718c02-5b83-4ec6-bf2b-8a2bba9ddbaf",
+      "result_id": "732f28af-005d-4eb8-b80a-4899c5ec537d"
+    },
+    {
+      "claim_id": "2e584988-9c07-4d7d-9737-cec211d3e395",
+      "result_id": "732f28af-005d-4eb8-b80a-4899c5ec537d"
+    },
+    {
+      "claim_id": "47315fe0-19ae-4c03-9c4b-372ed0b7b25b",
+      "result_id": "732f28af-005d-4eb8-b80a-4899c5ec537d"
+    },
+    {
+      "claim_id": "d9953687-5abd-41c9-a56a-e5608ea1ad4e",
+      "result_id": "c2102e25-2947-4e9d-ad21-d8cfcf2b703d"
+    },
+    {
+      "claim_id": "c9278a95-e468-4e11-b14a-4328ba8321d0",
+      "result_id": "34a4bd05-02c1-499e-b76c-eaf916d085e9"
+    },
+    {
+      "claim_id": "9a0a2cdd-e06c-4c91-9e58-267216a7b950",
+      "result_id": "34a4bd05-02c1-499e-b76c-eaf916d085e9"
+    },
+    {
+      "claim_id": "1ae22b3e-c6fb-4b5a-a31b-a863c352b059",
+      "result_id": "34a4bd05-02c1-499e-b76c-eaf916d085e9"
+    },
+    {
+      "claim_id": "c0e362e4-a431-4298-96ca-48934511bbc9",
+      "result_id": "34a4bd05-02c1-499e-b76c-eaf916d085e9"
+    },
+    {
+      "claim_id": "167fa7af-056e-4433-9317-2ac308a7f464",
+      "result_id": "34a4bd05-02c1-499e-b76c-eaf916d085e9"
+    },
+    {
+      "claim_id": "7b2a81fe-05a6-4caa-bee6-854c705fa16d",
+      "result_id": "78d749b8-d3d1-4a16-9968-1816bc76c718"
+    },
+    {
+      "claim_id": "3588ce57-2342-43e2-9e4c-d8f9fc39b7f8",
+      "result_id": "78d749b8-d3d1-4a16-9968-1816bc76c718"
+    },
+    {
+      "claim_id": "72ca3ace-407e-4bb3-8298-875028299714",
+      "result_id": "64170672-48e6-4e80-bb79-39fcdb076df8"
+    },
+    {
+      "claim_id": "b19d55a2-9835-4dfe-873c-f6852044879a",
+      "result_id": "64170672-48e6-4e80-bb79-39fcdb076df8"
+    },
+    {
+      "claim_id": "53441063-a192-4240-b918-157f8b2e5d18",
+      "result_id": "64170672-48e6-4e80-bb79-39fcdb076df8"
+    },
+    {
+      "claim_id": "59060183-bf74-4563-aeee-f81ead4a04e9",
+      "result_id": "64170672-48e6-4e80-bb79-39fcdb076df8"
+    },
+    {
+      "claim_id": "673d1ee6-c4f8-4d79-ba41-4d07a3922ab0",
+      "result_id": "64170672-48e6-4e80-bb79-39fcdb076df8"
+    },
+    {
+      "claim_id": "7958004f-a4ea-424f-9fc9-ace52a8e351d",
+      "result_id": "64170672-48e6-4e80-bb79-39fcdb076df8"
+    },
+    {
+      "claim_id": "a0b7b3d1-983c-430c-afcd-e2b077704a7c",
+      "result_id": "64170672-48e6-4e80-bb79-39fcdb076df8"
+    },
+    {
+      "claim_id": "6f17f3a3-2bb6-4c82-9487-55c9783233b3",
+      "result_id": "64170672-48e6-4e80-bb79-39fcdb076df8"
+    },
+    {
+      "claim_id": "f624ec55-b056-408b-976a-a8d2e2df8385",
+      "result_id": "64170672-48e6-4e80-bb79-39fcdb076df8"
+    },
+    {
+      "claim_id": "41883196-4dd6-4082-9b3f-635a4f1ced96",
+      "result_id": "64170672-48e6-4e80-bb79-39fcdb076df8"
+    },
+    {
+      "claim_id": "d3b0c882-298b-4824-a6d8-08816fafd365",
+      "result_id": "64170672-48e6-4e80-bb79-39fcdb076df8"
+    },
+    {
+      "claim_id": "1d0b877a-65a4-43cc-892e-cf60651bc5b5",
+      "result_id": "d2b2c399-851e-47e1-9742-e8c2077a2d54"
+    }
+  ],
+  "comparisons": []
+}

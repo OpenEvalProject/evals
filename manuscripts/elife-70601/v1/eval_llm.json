@@ -1,0 +1,252 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C22",
+      "C23"
+    ],
+    "result": "The Ena/VASP family consists of three mammalian paralogs (ENAH, VASP, EVL) with highly conserved EVH1 domains that share 62-72% sequence identity overall and 100% conservation in the FP4-binding pocket. These proteins contain N-terminal EVH1 domains for localization, C-terminal EVH2 domains for actin polymerization, and disordered linkers connecting them.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C14, C22-C23 establish well-documented background knowledge about the Ena/VASP family structure and conservation. The 100% conservation of the FP4-binding site is directly supported by sequence alignment and structural data in Figure 1A-B (C2, C22). The overall sequence identity percentages (C23) are also supported by Figure 1A data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C28",
+      "C29",
+      "C30",
+      "C4"
+    ],
+    "result": "PCARE was identified as a high-affinity ENAH EVH1 ligand through proteome-wide screening, with a 36-residue peptide (PCARE813-848) binding at KD = 0.19 \u03bcM. A truncated 23-residue peptide (PCARE B, residues 826-848) maintains high affinity (KD = 0.32 \u03bcM) and exhibits 70- to 140-fold selectivity for ENAH over EVL and VASP paralogs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C28-C30 are directly supported by experimental BLI data shown in Figure 1C and cited proteomic screening results. The affinity measurements are quantitative with error bars, and the selectivity is demonstrated through direct comparison of binding to all three paralogs. The truncation studies validating PCARE B are also experimentally supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "PCARE B selectively colocalizes with ENAH but not EVL or VASP in cells. mRuby2-PCARE B shows significant enrichment at focal adhesions only when coexpressed with ENAH (p < 0.0001), not with EVL or VASP. Similarly, mitochondrially-targeted Mito-mRuby2-PCARE B recruits ENAH but not EVL or VASP to mitochondria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 are supported by quantitative microscopy data in Figure 2A-F with statistical analysis. The enrichment ratios are quantified with appropriate statistical tests (p < 0.0001 for ENAH, not significant for EVL/VASP). The selective colocalization is demonstrated through both focal adhesion and mitochondrial targeting experiments with proper controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C88",
+      "C89"
+    ],
+    "result": "PCARE B expression functionally inhibits ENAH-dependent cell adhesion in MCF7 cells, producing effects similar to ENAH knockdown. Cytoplasmic PCARE B displaces ENAH from focal adhesions to membrane protrusions, while mitochondrially-targeted PCARE B sequesters ENAH at mitochondria and markedly decreases adhesion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47, C88-C89 are supported by immunofluorescence data in Figure 2G-I showing quantified effects on focal adhesion area and size. The comparison between ENAH knockdown and PCARE B expression provides functional validation. The differential effects of cytoplasmic vs. mito-targeted PCARE B on ENAH localization are clearly demonstrated with appropriate imaging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Crystal structure of ENAH EVH1 bound to PCARE (1.65 \u00c5 resolution) reveals that PCARE828-848 binds in a reversed orientation compared to canonical FP4 peptides, with the LPPPP motif engaging the canonical site but oriented N-to-C instead of the typical direction. A 14-residue alpha-helical extension C-terminal to the LPPPP motif makes extensive contacts with an extended binding surface on ENAH EVH1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C55 are directly supported by high-resolution crystallographic data shown in Figure 3A-C (PDB 7LXF). The reversed binding orientation is clearly demonstrated through structural comparison with prior FP4-bound structures. The specific molecular interactions (hydrophobic contacts, hydrogen bonds, polar pocket interactions) are all resolved in the 1.65 \u00c5 structure and detailed in Figure 3C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "Mutagenesis of ENAH Pro65 to Asp (P65D) causes a 100-fold loss in PCARE B binding affinity but has minimal effect on ActA binding, validating that the extended binding interface observed in the crystal structure is critical for PCARE recognition but not for canonical FP4 ligands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by BLI binding data in Table 1 showing ENAH P65D binds PCARE B with KD = 32 \u03bcM vs. 0.32 \u03bcM for wild-type (100-fold difference), while ActA binding is minimally affected (7.2 vs. 5.2 \u03bcM). This validates the structural model and demonstrates Pro65 is specifically important for PCARE but not canonical FP4 binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Despite 16 of 18 residues within 4 \u00c5 of PCARE being identical across paralogs, EVL binds PCARE weakly. The EVL V65P mutation unexpectedly weakens PCARE binding 5-fold without affecting ActA binding. However, the double mutant EVL Y62C/V65P binds PCARE 10-fold tighter than wild-type EVL and 56-fold tighter than EVL V65P, indicating strong epistatic coupling between positions 62 and 65 consistent with a conformational rearrangement of the 80-86 loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 are supported by structural analysis and comprehensive mutagenesis data in Table 1 and Figure 4A. The epistatic effects are clearly demonstrated: EVL Y62C alone has minimal effect (19 vs. 22 \u03bcM), EVL V65P weakens binding (112 vs. 22 \u03bcM), but the double mutant dramatically improves binding (2.2 \u03bcM). The 3 \u00c5 loop shift is documented in Figure 4A structural comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C64",
+      "C65"
+    ],
+    "result": "Structure-based dTERMen modeling identified seven distributed residues in EVL that, when swapped to corresponding ENAH residues, are sufficient to confer high-affinity PCARE binding. The resulting EVLswapped protein binds PCARE B with KD = 0.35 \u03bcM, matching ENAH's affinity (0.32 \u03bcM), demonstrating that specificity arises from a distributed epistatic network enabling an ENAH-specific conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C64-C65 are supported by dTERMen computational modeling (Figure 4B) and experimental validation (Figure 4C). The modeling rapidly identified 7 residues from 29 differences and 1.56 million possible combinations. The experimental validation showing EVLswapped binds as tightly as ENAH (0.35 vs. 0.32 \u03bcM) provides strong support for the conformational specificity mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Rational design of dual-motif peptides exploiting both canonical and noncanonical binding sites yielded PCARE-Dual with KD = 50 nM (7-fold tighter than PCARE B) and 400-600-fold selectivity for ENAH over EVL/VASP. PCARE-Dual dissociates ~100-fold slower than single-motif peptides and represents the tightest and most selective ENAH EVH1 binder reported to date.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C66-C71 are supported by comprehensive BLI binding data in Figure 5B-D. The dual-site binding mechanism is validated by 8-fold weaker binding to ENAH Y38E mutant (Figure 5-supplement 1). The enhanced affinity comes from decreased off-rate (Figure 5C). The comparison to other known binders (pGolemi, ABI1-LPP) supports the claim of being the tightest/most selective binder.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Ena/VASP paralogs exhibit both overlapping and distinct functions. All three can bind lamellipodin FP4 motifs and promote actin assembly, and single knockouts show mild phenotypes with functional compensation, while triple knockouts are embryonic lethal. However, ENAH specifically promotes breast cancer haptotaxis and regulates neuronal mRNA translation, while EVL suppresses breast cancer invasion. Testin LIM3 domain is the only previously characterized endogenous ligand with defined specificity mechanism, binding ENAH through contacts with divergent surface residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C21, C24-C27 are all supported by citations to prior literature establishing the functional relationships between paralogs. These represent well-established background knowledge from multiple independent studies. The claims about overlapping vs. distinct functions are consistently supported across the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "PCARE is almost exclusively expressed in the retina where it functions as a scaffold protein recruiting actin regulatory complexes for photoreceptor outer segment disk formation. Mutations in PCARE cause retinitis pigmentosa and retinal dystrophy. Prior studies identified ENAH and VASP in PCARE complexes through affinity purification-MS, though VASP may be recruited indirectly via ENAH heterotetramers rather than direct PCARE binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C37, C74-C76 are supported by multiple citations to prior literature characterizing PCARE biology and interactions. The inference that VASP may be recruited indirectly (C76) is reasonable given the demonstrated PCARE specificity for ENAH and the known ability of ENAH/VASP to heterotetramerize (C75), though this remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The reversed binding orientation of PCARE's LPPPP motif exploits the twofold rotational pseudosymmetry of PPII helices, a property previously utilized by SH3 domains and WASP EVH1 but never before demonstrated for Ena/VASP EVH1 domains despite long-standing speculation. The large effect of EVL V65P mutation suggests EVL also binds PCARE in reversed orientation, albeit weakly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C77-C82 are supported by structural data (Figure 3A-B), established knowledge about PPII helix geometry (C77), and citations to prior literature on SH3 domains and WASP EVH1 (C78, C80). The inference about EVL binding orientation (C82) is reasonable based on the mutagenesis data in Table 1, though it remains indirect evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The conformational specificity mechanism observed for PCARE-ENAH parallels other examples of specificity through conformational selection, including Gleevec's 3000-fold selectivity for Abl over Src despite 86% binding site identity. Like the PCARE case, simple residue swaps failed to transfer Gleevec specificity to Src, but ancestral reconstruction identified distant epistatic networks. Similar mechanisms involving hydrophobic core residues have been demonstrated for SH3 domains and ubiquitin variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 are all supported by citations to prior literature establishing analogous mechanisms of conformational specificity in other protein systems. These comparisons provide important context for interpreting the PCARE-ENAH mechanism and suggest conformational specificity may be a widespread strategy for achieving paralog selectivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The therapeutic potential of ENAH-specific inhibitors is supported by distinct paralog functions in cancer: ENAH promotes metastasis while EVL suppresses invasion. Recent structure-based inhibitors achieve 120 nM affinity but lack paralog selectivity. ENAH is not phosphorylated at Tyr38 (unlike VASP Tyr39), which may enhance specificity of dual-motif inhibitors like PCARE-Dual that engage this site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C98 are supported by citations to prior literature on paralog-specific cancer functions, existing inhibitors, and phosphorylation sites. The inference about avidity effects (C90) is reasonable but speculative. The discussion of therapeutic implications is well-grounded in the cited literature, though the actual therapeutic utility of PCARE-based inhibitors remains to be demonstrated.",
+    "result_type": "MINOR"
+  }
+]

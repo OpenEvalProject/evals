@@ -1,0 +1,1584 @@
+{
+  "submission": {
+    "id": "2314f6b4-e09e-4821-8195-50a86ec69815",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T10:24:25.332897Z",
+    "updated_at": "2025-12-03T10:24:25.332897Z"
+  },
+  "content": [
+    {
+      "id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "submission_id": "2314f6b4-e09e-4821-8195-50a86ec69815",
+      "content_type": "manuscript",
+      "content_text": "# Distinguishing between recruitment and spread of silent chromatin structures in Saccharomyces cerevisiae\n\n## Authors\n\n- Molly Brothers<sup>1</sup> ([ORCID: 0000-0002-6114-3393](https://orcid.org/0000-0002-6114-3393))\n- Jasper Rine<sup>1</sup> ([ORCID: 0000-0003-2297-9814](https://orcid.org/0000-0003-2297-9814)) \u2020\n\n### Affiliations\n\n1. Department of Molecular and Cell Biology, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe formation of heterochromatin at HML, HMR, and telomeres in Saccharomyces cerevisiae involves two main steps: the recruitment of Sir proteins to silencers and their spread throughout the silenced domain. We developed a method to study these two processes at single basepair resolution. Using a fusion protein between the heterochromatin protein Sir3 and the nonsite-specific bacterial adenine methyltransferase M.EcoGII, we mapped sites of Sir3\u2013chromatin interactions genome-wide using long-read Nanopore sequencing to detect adenines methylated by the fusion protein and by ChIP-seq to map the distribution of Sir3\u2013M.EcoGII. A silencing-deficient mutant of Sir3 lacking its Bromo-Adjacent Homology (BAH) domain, sir3-bah\u2206, was still recruited to HML, HMR, and telomeres. However, in the absence of the BAH domain, it was unable to spread away from those recruitment sites. Overexpression of Sir3 did not lead to further spreading at HML, HMR, and most telomeres. A few exceptional telomeres, like 6R, exhibited a small amount of Sir3 spreading, suggesting that boundaries at telomeres responded variably to Sir3-M.EcoGII overexpression. Finally, by using a temperature-sensitive allele of SIR3 fused to M.ECOGII, we tracked the positions first methylated after induction and found that repression of genes at HML and HMR began before Sir3 occupied the entire locus.\n\n## Introduction\n\nCells have an interest in coordinating the expression of genes: It allows them to turn sets of genes on and off in response to various stimuli or ensure certain genes are always expressed or always repressed to create and maintain cell identity. There are multiple ways to coordinate transcription, including shared binding sites for activators or repressors in promoters, nuclear compartmentalization, and creation of large domains like heterochromatin. The establishment of coordinated, stable blocs of gene expression, such as heterochromatin, can be broken down into two main steps: nucleation, which involves the recruitment of chromatin-modifying factors, followed by the expansion of these chromatin-modifying factors beyond recruitment sites in an ill-defined process known as spreading.\n\nAn impressive example of the concepts of nucleation and spread is inactivation of the X chromosome in female mammals (reviewed in Galupa and Heard, 2018). Nucleation begins with the transcription of the noncoding RNA Xist from one of the two X chromosomes, which recruits heterochromatin factors in cis that eventually coat and transcriptionally silence nearly the entire 167-megabase X chromosome. Two studies have characterized early steps in nucleation at the Xist locus and at recruitment sites throughout the X chromosome (Engreitz et al., 2013; Simon et al., 2013), but the mechanics of how the XIST transcript and associated heterochromatin proteins spread remains unclear even for this well-studied phenomenon. Furthermore, \u2018spreading\u2019 itself is an inferred process that connects known recruitment sites to the final binding profile of heterochromatin proteins. A clear mechanistic distinction between nucleation and spread, with a characterization of intermediate steps, has not been achieved for any organism.\n\nTranscriptional silencing in the budding yeast Saccharomyces cerevisiae is one of the best-studied heterochromatic phenomena (reviewed in Gartenberg and Smith, 2016). Heterochromatin is created by the Silent Information Regulator (SIR) complex that silences the transcription of genes at HML and HMR and the 32 telomeres. The recruitment of the SIR complex to HML, HMR, and telomeres is sequence specific, whereas its spreading is sequence nonspecific. More specifically, different combinations of Rap1, Abf1, and Origin Recognition Complex (ORC) binding sites are present at the E and I silencers that flank HML and HMR (Buchman et al., 1988; Kimmerly et al., 1988; Shore et al., 1987; Shore and Nasmyth, 1987) and at the TG repeats and X elements of telomeres (Buchman et al., 1988; Longtine et al., 1989; Stavenhagen and Zakian, 1994). These proteins in turn interact with and recruit the SIR complex (Cockell et al., 1995; Moretti and Shore, 2001; Triolo and Sternglanz, 1996). The SIR complex then deacetylates chromatin (Braunstein et al., 1993; Ellahi et al., 2015; Suka et al., 2001; Thurtle and Rine, 2014), resulting in chromatin compaction (Georgel et al., 2001; Gottschling, 1992; Johnson et al., 2009; Loo and Rine, 1994; Singh and Klar, 1992; Swygert et al., 2018). As a result, transcription is blocked at least in part by steric occlusion, though details remain unknown (Chen and Widom, 2005; Gao and Gross, 2008; Johnson et al., 2013; Lynch and Rusche, 2009; Sekinger and Gross, 2001; Steakley and Rine, 2015). Almost any gene placed within the defined domain can be transcriptionally silenced, establishing the locus-specific, gene nonspecific nature of heterochromatic silencing (Dodson and Rine, 2015; Gottschling et al., 1990; Saxton and Rine, 2019; Schnell and Rine, 1986; Sussel et al., 1993). This difference in sequence dependence between recruitment and spread implies they are separable processes that rely on different factors and interactions.\n\nOf the three SIR complex members (Sir2, Sir3, and Sir4), Sir3 is thought to be the major structural driver of heterochromatin spread and compaction. Sir3 interacts with the silencer-binding proteins Abf1 and Rap1 (Moretti et al., 1994; Moretti and Shore, 2001), with the other members of the SIR complex, Sir2 and Sir4 (Chang et al., 2003; Ehrentraut et al., 2011; Rudner et al., 2005; Samel et al., 2017; Strahl-Bolsinger et al., 1997), with nucleosomes (Armache et al., 2011; Hecht et al., 1995; Johnson et al., 1990; Norris et al., 2008; Onishi et al., 2007; Wang et al., 2013), and with itself (King et al., 2006; Liaw and Lustig, 2006; Oppikofer et al., 2013). All of these Sir3 interactions are required for transcriptional silencing. In vitro, Sir3 dimers can bridge neighboring nucleosomes and compact chromatin (Behrouzi et al., 2016). Among the SIR complex members, Sir3 has the largest difference in affinity for acetylated and deacetylated histone tails (Armache et al., 2011; Carmen et al., 2002; Onishi et al., 2007; Oppikofer et al., 2011; Swygert et al., 2018). By binding deacetylated histone tails more strongly than acetylated ones, Sir3 helps create a positive feedback loop wherein Sir2 deacetylates histone tails (Ghidelli et al., 2001; Imai et al., 2000; Landry et al., 2000; Smith et al., 2000) and Sir3 reinforces and further recruits Sir2/4 to silent regions.\n\nCharacterization of SIR complex nucleation and spread is limited by techniques like ChIP-seq that measure processes on populations of molecules and at a resolution limited by sequencing-read length. We developed a new method that allowed us to characterize the binding of heterochromatin proteins at basepair resolution. Using long-read sequencing, we used this new method to resolve the distinction between the recruitment and spread of Sir3 and to track the establishment of gene silencing in heterochromatin over time. These data pinpointed when the process of transcriptional silencing begins.\n\n## Results\n\n### The Sir3\u2013M.EcoGII fusion protein strongly and specifically methylated HML and HMR\n\nTo achieve a higher-resolution method for assessing SIR complex binding, we made a fusion protein between Sir3 and M.EcoGII (Figure 1A), a nonsite-specific bacterial N6-methyladenosine methyltransferase (Murray et al., 2018; Woodcock et al., 2020). In principle, wherever Sir3 binds chromatin, even transiently, M.EcoGII has the opportunity to methylate nearby accessible adenines to make m6A. S. cerevisiae has no endogenous DNA methylation and no demethylases, allowing us to attribute m6A only to the activity of the fusion protein, reflecting where it resides as well as where it has been. M.EcoGII has no specific recognition sequence, which should provide more resolution than methyltransferases like E. coli Dam, which has a four basepair recognition site. The positions of Sir3\u2013M.EcoGII can be determined conventionally by immunoprecipitation with an antibody against m6A followed by sequencing the precipitated DNA using Illumina sequencing. The more powerful implementation would come from distinguishing between individual m6A bases and unmodified A bases using long-read Nanopore sequencing (Xu and Seki, 2020).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/75653/elife-75653-fig1-v2.jpg)\n\n**Figure 1.:** (A) Sir3\u2013M.EcoGII is a fusion protein that nonspecifically methylates adenines in regions that Sir3 binds. (B) RT-qPCR of HML\u03b12 and HMRa1 mRNA, normalized to ACT1 mRNA, in strains expressing no fusion proteins (wild type, JRY11699, JRY9316), sir3\u2206::M.ECOGII (JRY13029, JRY13030), SIR2-M.ECOGII (JRY13625, JRY13626), SIR3-M.ECOGII (JRY12840, JRY13027), and SIR4-M.ECOGII (JRY13021, JRY13022). Data are the average of three biological replicates, and bars mark one standard deviation. (C) ChIP-seq of Sir3-M.EcoGII-3xV5 (top row, JRY12839) and DNA m6A immunoprecipitation and sequencing (DIP-seq) of no EcoGII (row two, JRY11699), sir3\u2206::M.ECOGII (row three, JRY12838), and SIR3-M.ECOGII (row four, JRY12840). Shown are 10 kb regions centered at HML (left) and HMR (right). Input results are plotted but not visible due to the strong ChIP-seq and DIP-seq signals. (D) Aggregate results from long-read Nanopore sequencing of sir3\u2206::M.ECOGII (black line, JRY12838), SIR2-M.ECOGII (green line, JRY13625), SIR3-M.ECOGII (purple line, JRY13027), and SIR4-M.ECOGII (pink line, JRY13021). The y-axis represents the percentage of reads in each position called as methylated by the modified base-calling software Megalodon (see Materials and methods). Shown are 25 kb windows at a control region on chromosome III to show background methylation (top row), at HML (middle row), and at HMR (bottom row). (E) Single-read plots from long-read Nanopore sequencing of SIR3-M.ECOGII (JRY13027). Each row of the plots is a single read the spans the entire query region, ordered by lowest average methylation on the top to highest average methylation on the bottom. Methylated adenines are colored purple, and unmethylated adenines are colored gray. Shown are 5 kb windows at a control region on chromosome III to show background methylation (top row), at HML (middle row), and at HMR (bottom row). M.EcoGII nor a strain expressing unfused M.EcoGII from the SIR3 promoter showed appreciable DIP-seq signal (C, Figure 1\u2014figure supplement 1).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75653/elife-75653-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Biological replicates of DIP-seq of no EcoGII (top row, JRY09316), sir3\u2206::M.ECOGII (middle row, JRY12838), and SIR3-M.ECOGII (bottom row, JRY13027).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/75653/elife-75653-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Aggregate results from long-read Nanopore sequencing of sir3\u2206::M.ECOGII (black line, JRY12838, same as Figure 1D), SIR3-M.ECOGII (blue line, JRY13027, same as Figure 1D), and a biological replicate of SIR3-M.ECOGII (purple line, JRY12840). Plots are as described in Figure 1D. (B) Single-read plots from a biological replicate of long-read Nanopore sequencing of SIR3-M.ECOGII (JRY13027). Plots are as described in Figure 1E.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/75653/elife-75653-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Aggregate methylation signal by Nanopore sequencing (purple line) of SIR3-M.ECOGII (JRY13027) plotted against nucleosome occupancy (gray line, Chereji et al., 2018) over a 3 kb window at HML (top) and HMR (bottom). The y-axis represents the signal of both % of reads methylated and nucleosome occupancy scaled to fit in the same plot. Data were smoothed using a loess function. (B) The average % of methylated reads from SIR3-M.ECOGII (JRY13027) in linker regions at HML and HMR (nucleosome occupancy below a threshold of 0.4 from Chereji et al., 2018) compared to nucleosomal regions at HML and HMR (nucleosome occupancy above a threshold of 0.4 from Chereji et al., 2018). The center line of each box plot represents the median. The boxes represent the 25th and 75th percentiles. Whiskers represent the range of values within 1.5\u00d7 the interquartile range. p value was calculated using a quasibinomial general linear model (glm, see Source code 5).\n\nTo test this concept, we first assessed the silencing ability of Sir3\u2013M.EcoGII by measuring mRNA expression of HML\u03b12 and HMRa1. Strains expressing Sir3\u2013M.EcoGII could silence HML and HMR as well as wild-type strains compared to sir3\u2206 strains that displayed a full loss of silencing (Figure 1B). Thus, the fusion protein retained full function of Sir3.\n\nTo compare the binding profile of Sir3\u2013M.EcoGII to the distribution of methylation it produced, we performed DNA immunoprecipitation and Illumina sequencing (DIP-seq) using an antibody that specifically recognizes m6A alongside ChIP-seq for a V5 epitope-tagged Sir3\u2013M.EcoGII. ChIP-seq revealed strong Sir3\u2013M.EcoGII occupancy over the E and I silencers at HML and over the E silencer at HMR with weaker but consistent signal above background between the two silencers (Figure 1C, top row). Compared to ChIP-seq, methylation measured by DIP-seq had a stronger signal over the entirety of HML and HMR and a broader signal that extended beyond the silencers (Figure 1C, Figure 1\u2014figure supplement 1). The methylation over HML and HMR was from the fusion protein Sir3\u2013M.EcoGII, as neither a strain without M.EcoGII nor a strain expressing unfused M.EcoGII from the SIR3 promoter showed appreciable DIP-seq signal (Figure 1C, Figure 1\u2014figure supplement 1).\n\nMethylation by Sir3\u2013M.EcoGII measured by Nanopore sequencing agreed well with DIP-seq, showing strong methylation over HML and HMR with little background methylation outside of these regions (Figure 1D, Figure 1\u2014figure supplement 2A). Fusions of Sir2 and Sir4 with M.EcoGII were also fully silencing competent (Figure 1B) and produced methylation signals that matched Sir3\u2013M.EcoGII at HML and HMR (Figure 1D), suggesting that all three members of the SIR complex were equally distributed, as expected. In addition to the aggregate methylation signal (% of reads methylated at each position), we analyzed methylation of single adenines on single reads across HML and HMR (Figure 1E, Figure 1\u2014figure supplement 2B). Sir3\u2013M.EcoGII methylated most strongly near the E and I silencers and at the HML\u03b11/\u03b12 promoter, with lower, but significant, methylation between these sites (Figure 1E, Figure 1\u2014figure supplement 2B). Analysis of single reads revealed a periodicity of methylation across HML and HMR (Figure 1E, Figure 1\u2014figure supplement 2B). These small regions of higher methylation corresponded to linker regions between nucleosomes (Figure 1\u2014figure supplement 3). Sir3\u2013M.EcoGII did methylate within nucleosome-occupied regions at HML and HMR but at a lower frequency (Figure 1\u2014figure supplement 3), consistent with in vitro studies that use methylation by M.EcoGII or another nonspecific adenine methyltransferase, Hia5, as a measurement of chromatin accessibility (Abdulhay et al., 2020; Brady et al., 2021; Shipony et al., 2020; Stergachis et al., 2020).\n\n### Nucleosome binding was required for spreading, but not recruitment, of Sir3\n\nThe recruitment of the SIR complex to silencers is sequence specific. Rap1, Abf1, and ORC bind at these recruitment sites and recruit the Sir proteins directly through protein\u2013protein interactions. In contrast, SIR complex binding away from recruitment sites is sequence independent and instead relies on interactions with nucleosomes and among the Sir proteins themselves.\n\nWe therefore hypothesized that the interaction between Sir3 and nucleosomes would not be required for nucleation at recruitment sites but would be required for binding outside of those recruitment sites. Sir3 has multiple recognized domains (Figure 2A): The Bromo-Adjacent Homology (BAH) domain, which interacts with nucleosomes (Armache et al., 2011; Buchberger et al., 2008; Norris et al., 2008; Onishi et al., 2007; Rudner et al., 2005; Sampath et al., 2009), the AAA+ domain, which interacts with Sir4 (Ehrentraut et al., 2011; King et al., 2006; Samel et al., 2017), and the winged helix (wH) domain, which allows for homodimerization (King et al., 2006; Liaw and Lustig, 2006; Oppikofer et al., 2013). We deleted the BAH domain of Sir3\u2013M.EcoGII (bah\u2206), which largely abrogates Sir3\u2013nucleosome interactions in vitro (Buchberger et al., 2008; Onishi et al., 2007; Sampath et al., 2009). Previous studies established that deletion of the BAH domain causes a phenotypic loss of silencing, likely due to a loss of interaction with nucleosomes (Buchberger et al., 2008; Gotta et al., 1998; Onishi et al., 2007), but did not characterize its binding at regions of heterochromatin. Importantly for what follows, deletion of the BAH domain did not destabilize Sir3 (Figure 2B). We also confirmed that sir3-bah\u2206-M.ECOGII strains displayed a loss of silencing, but found that the loss was more severe at HML than at HMR (Figure 2C).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/75653/elife-75653-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic of Sir3 protein domains. (B) Protein immunoblotting in strains expressing Sir3 (no tag, JRY11699), Sir3-3xV5 (JRY12601), and sir3-bah\u2206\u20133xV5 (JRY13621). Top row are 3xV5-tagged Sir3 proteins, and bottom row is the loading control Hxk2. The unedited blot is in Figure 2\u2014source data 1. (C) RT-qPCR of HML\u03b12 and HMRa1 mRNA, normalized to ACT1 mRNA, in strains expressing SIR3-M.ECOGII (JRY12840, JRY13027), sir3\u2206::M.ECOGII (JRY13029, JRY13030), and sir3-bah\u2206-M.ECOGII (JRY13438, JRY13439). Data are the average of three biological replicates, and bars mark one standard deviation. (D) Aggregate methylation results at HML (top) and HMR (bottom) from long-read Nanopore sequencing of sir3\u2206::M.ECOGII (JRY13029, JRY13030), SIR3-M.ECOGII (JRY12840, JRY13027), and sir3-bah\u2206-M.ECOGII (JRY13438). Plots are as described in Figure 1D. (E) Single-read plots from long-read Nanopore sequencing of sir3-bah\u2206-M.ECOGII (JRY13438) at HML (top) and HMR (bottom). Plots are as described in Figure 1E. (F) Aggregate methylation results at four representative telomeres (1 L, 2 L, 4 R, and 11 R) from long-read Nanopore sequencing of the same strains as D. Shown are 15 kb windows of each telomere. Plots are as described in Figure 1D. (G) Single-read plots from long-read Nanopore sequencing of SIR3-M.ECOGII (JRY13027) and sir3-bah\u2206-M.ECOGII (JRY13438) at two representative telomeres (1 L and 2 L). Shown are 10 kb windows of each telomere.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75653/elife-75653-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Input results are plotted but not visible due to the strong DIP-seq signals. (A) Shown are 10 kb regions centered at HML (left) and HMR (right). (B) Shown are 10 kb regions at two representative telomeres (1 L and 2 L).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/75653/elife-75653-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Aggregate methylation results from long-read Nanopore sequencing of the same strains as Figure 2D. Shown are 15 kb windows of each telomere. Plots are as described in Figure 1D. Highlighted in yellow are windows shorter than 15 kb due to discrepancies between the S288C and W303 genomes (see Ellahi et al., 2015).\n\nDespite the loss of silencing at HML and HMR in the sir3-bah\u2206-M.ECOGII strain, there was still detectable methylation across the two loci (Figure 2D, E, Figure 2\u2014figure supplement 1A). At the aggregate level, sir3-bah\u2206-M.EcoGII methylated silencers at HML and HMR at the same level as Sir3\u2013M.EcoGII but showed decreased methylation between them (Figure 2D). Analysis of single reads spanning HML and HMR in the bah\u2206 mutant showed similarly strong levels of methylation at silencers, and revealed strong methylation both at the promoters of HML and HMR and the recognition site for the HO endonuclease (Figure 2E). In contrast, little methylation was seen over gene bodies between these sites (Figure 2E).\n\nThe ability of Nanopore to sequence long reads also allowed mapping and analysis of Sir3 occupancy on the repetitive and highly homologous telomeres, an issue with short-read Illumina sequencing. In addition to methylating HML and HMR (Figure 1), Sir3\u2013M.EcoGII strongly methylated telomeres at TG repeats and X elements (Figure 2F, Figure 2\u2014figure supplement 1B, Figure 2\u2014figure supplement 2), and the periodicity of methylation was apparent on single reads as well (Figure 2G), likely corresponding to more-accessible linker regions. The loss of binding outside of recruitment sites of sir3-bah\u2206-M.EcoGII was more striking at telomeres than HML and HMR, where methylation by the bah\u2206 mutant matched wild-type levels at TG and X repeats but dropped off steeply centromere-proximal to the X elements (Figure 2F, G, Figure 2\u2014figure supplement 1B, Figure 2\u2014figure supplement 2). The results at telomeres, supported by the data at HML and HMR, suggested that the nucleosome-binding activity of Sir3 was required for Sir3 to spread away from recruitment sites, but not for its initial recruitment.\n\n### SIR3 expression level did not limit its spread from recruitment sites\n\nIn addition to understanding what enables Sir3 spreading, we were also interested in what limits its spread. One common feature of heterochromatin proteins is that their activity is dose dependent: lowered expression causes loss of heterochromatin whereas elevated expression can cause silencing of genes near heterochromatin (Henikoff, 1996; Locke et al., 1988). Indeed, it was previously reported that overexpression of Sir3 results in its spread beyond wild-type boundaries, accompanied by repression of genes in those extended regions (Hecht et al., 1996; Hocher et al., 2018; Ng et al., 2003; Renauld et al., 1993; Strahl-Bolsinger et al., 1997). To provide an independent test of those conclusions, we tested whether the expression level of Sir3 limited how far it could spread beyond recruitment sites at HML, HMR, and telomeres. mRNA levels of SIR3-M.ECOGII on a multicopy 2\u03bc plasmid was tenfold higher than from the chromosomal SIR3-M.ECOGII locus in a strain carrying an empty 2\u03bc plasmid (Figure 3A). We confirmed the overexpression of SIR3-M.ECOGII in these strains by protein immunoblotting (Figure 3B). Overexpression of SIR3-M.ECOGII had no effect on silencing at HML and HMR (Figure 3C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/75653/elife-75653-fig3-v2.jpg)\n\n**Figure 3.:** (A) RT-qPCR of SIR3 and M.ECOGII mRNA normalized to ACT1 mRNA in SIR3-M.ECOGII strains carrying an empty multicopy 2\u03bc vector (JRY13670, JRY13671) and strains carrying a multicopy 2\u03bc SIR3-M.ECOGII plasmid (JRY13672, JRY13673). Data are the average of four biological replicates, and bars mark one standard deviation. (B) Protein immunoblotting in the same strains as A (JRY13670-JRY13671) as well as SIR3-M.ECOGII (no plasmid, JRY13027) and sir3\u2206::M.ECOGII (JRY13029). Top row is Sir3, and bottom row is the loading control Pgk1. The unedited blot is in Figure 3\u2014source data 1. (C) RT-qPCR of HML\u03b12 and HMRa1 mRNA normalized to ACT1 mRNA in the same strains as A as well as sir3\u2206::M.ECOGII (JRY13029, JRY13030). Data are the average of four biological replicates, and bars mark one standard deviation. (D) Aggregate methylation results at a control region on chromosome III to show background levels of methylation (top row), at HML (middle row) and HMR (bottom row) from long-read Nanopore sequencing of the same strains in A. The two colors for each genotype correspond to two biological replicates. Plots are as described in D. (E) RT-qPCR of CHA1 and OCA4 mRNA normalized to ACT1 mRNA in the same strains as C. (F) Aggregate methylation results at three representative telomeres (6 R, 15 R, and 10 R) from long-read Nanopore sequencing of the same strains as A. The two colors for each genotype correspond to two biological replicates. Shown are 15 kb windows of each telomere. Plots are as described in Figure 1D.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75653/elife-75653-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** ChIP-seq of two biological replicates of Sir3\u2013M.EcoGII strains carrying an empty 2\u03bc plasmid (top two rows of each panel, JRY13670 and JRY13671) and two biological replicates of Sir3\u2013M.EcoGII strains carrying a SIR3-M.ECOGII 2\u03bc plasmid (bottom two rows of each panel, JRY13672 and JRY13673). Input signal is black, and immunoprecipitated signal is green. Note that each row is scaled to the maximum signal in the window shown to compare the relative levels of Sir3\u2013M.EcoGII at recruitment and spreading sites across samples. (A) ChIP-seq signal at HML (left) and HMR (right). (B) ChIP-seq signal at telomere 6 R (left), telomere 15 R (center), and telomere 10 R (right).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/75653/elife-75653-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Aggregate methylation results from long-read Nanopore sequencing of the same strains as Figure 3B. Shown are 15 kb windows of each telomere. Plots are as described in Figure 1D. Highlighted in yellow are windows shorter than 15 kb due to discrepancies between the S288C and W303 genomes (see Ellahi et al., 2015).\n\nOverexpression of SIR3-M.ECOGII had little effect on the boundaries of methylation at HML and HMR. Strains overexpressing SIR3-M.ECOGII displayed increased methylation over both loci and between HML and telomere 3 L, but no new sites of methylation appeared outside the bounds of strains expressing only one copy of SIR3-M.ECOGII (Figure 3D). The changes in methylation upon overexpression of Sir3\u2013M.EcoGII matched changes in occupancy of the fusion protein by ChIP-seq, suggesting that methylation reflects binding of the protein well (Figure 3\u2014figure supplement 1). There was some increase in methylation over the promoters of two genes closest to HML and HMR (CHA1 and OCA4, respectively), but it did not result in any change in the level of their expression (Figure 3E).\n\nSurprisingly, the results at telomeres were qualitatively similar but revealed three categories of effects. Some telomeres showed a large increase in the amount of methylation upon overexpression of SIR3-M.ECOGII with a small extension of binding farther into the chromosome (Figure 3F, top row, Figure 3\u2014figure supplement 2). Some telomeres showed a modest increase in the amount methylation upon overexpression of SIR3-M.ECOGII with little, if any, extension of range (Figure 3F, middle row, Figure 3\u2014figure supplement 2). Finally, some telomeres showed no appreciable change in methylation (Figure 3F, bottom row, Figure 3\u2014figure supplement 2). As at HML and HMR, the changes in methylation seen with Nanopore sequencing matched with changes in occupancy measured by ChIP-seq (Figure 3\u2014figure supplement 1). Only three of the 32 telomeres, including the paradigmatic telomere 6 R from earlier studies (Hecht et al., 1996; Renauld et al., 1993; Strahl-Bolsinger et al., 1997), showed convincing spread of methylation to new sites compared to telomeres in strains expressing one copy of SIR3-M.ECOGII (Figure 3F, Figure 3\u2014figure supplement 2). Therefore, the expression level of SIR3 was not a universal limiting factor in heterochromatin spread. These results imply the existence of other chromatin features that create boundaries for Sir3 spreading.\n\n### Repression of HML and HMR preceded heterochromatin maturation\n\nTo evaluate the dynamics of Sir3 recruitment and spreading during the establishment of heterochromatin over time, we used a temperature-sensitive allele of SIR3, sir3-8, fused to M.ECOGII and took samples at various time points for Nanopore sequencing after switching from the restrictive (37\u00b0C) to the permissive (25\u00b0C) temperature (Figure 4A). In agreement with previous studies (Stone et al., 2000), growth at 37\u00b0C caused lower protein levels of sir3-8 (Figure 4B). Over the course of 150 min, the protein levels of sir3-8 slowly increased to 63% of the level in constitutive 25\u00b0C growth conditions (Figure 4B). In cells grown at 37\u00b0C, sir3-8-M.ECOGII did not methylate HML and HMR, but when grown constitutively at 25\u00b0C, there was strong methylation over both loci (Figure 4C, Figure 4\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/75653/elife-75653-fig4-v2.jpg)\n\n**Figure 4.:** (A) Schematic of temperature-shift time course with sir3-8-M.ECOGII. (B) Protein immunoblotting in a strain expressing sir3-8-3xV5 (JRY13467) constitutively at 25\u00b0C (first lane), constitutively at 37\u00b0C (second lane), and at 30, 60, 90, 120, and 150 min after a shift to 25\u00b0C. Top row is 3xV5-tagged sir3-8 protein, the middle row is the same as the top row but at a higher exposure, and the bottom row is the loading control Hxk2. The unedited blot is in . (C) Aggregate methylation results at HML (top) and HMR (bottom) from long-read Nanopore sequencing of strains expressing sir3-8-M.ECOGII (JRY13114) grown constitutively at 25 or 37\u00b0C. Plots are as described in Figure 1D. (D) Aggregate methylation results at HML (top) and HMR (bottom) from long-read Nanopore sequencing of a strain expressing sir3-8-M.ECOGII (JRY13134) grown constitutively at 25\u00b0C (dotted gray line) and collected at 0, 15, 45, and 90 min after a temperature switch from 37 to 25\u00b0C. (E) RT-qPCR of HML\u03b12 (left) and HMRa1 (right) mRNA in strains expressing SIR3-M.ECOGII (black, JRY13027, JRY12840), sir3\u2206::M.ECOGII (green, JRY13029, JRY13030), or sir3-8-M.ECOGII (purple, JRY13114, JRY13134) collected at 0, 30, 60, 90, 120, and 150 min after a temperature switch from 37 to 25\u00b0C. Points are the average of three biological replicates and bars mark one standard deviation.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75653/elife-75653-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Shown are 10 kb regions centered at HML (left) and HMR (right). Cells were grown constitutively at either 25 or 37\u00b0C. Input results are plotted but not visible due to the strong DIP-seq signals.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/75653/elife-75653-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Aggregate methylation results at HML (top) and HMR (bottom) from long-read Nanopore sequencing of a strain expressing sir3-8-M.ECOGII (JRY13114) grown constitutively at 25\u00b0C (dotted gray line) and collected at 0, 15, 45, and 90 min after a temperature switch from 37 to 25\u00b0C.\n\nOver a 90-min time course, methylation increased only over the silencers and promoters of HML and HMR (Figure 4D, Figure 4\u2014figure supplement 2, solid lines). Methylation at the promoter of HML during the time course and in the sir3-bah\u2206 mutant was expected, as it contains a Rap1-binding site, and Rap1 interacts directly with Sir3 and Sir4. However, methylation at the promoter of HMR at these early time points and in the sir3-bah\u2206 mutant was a surprise, as there is not a known SIR complex-interacting protein that binds at the promoter. In the absence of Sir3, Sir4 is still bound at silencers (Goodnight and Rine, 2020; Hoppe et al., 2002; Rusch\u00e9 et al., 2002), so the faster recruitment at these sites, and perhaps the promoters as well, might be due to the interaction of Sir3 with Sir4 and Rap1.\n\nBy 90 min (~1 cell division), methylation at no position reached the level found in cells constitutively grown at 25\u00b0C \u2013 the level of methylation of mature, stable heterochromatin (Figure 4D, Figure 4\u2014figure supplement 2, dotted line). Strikingly, even by 30 min after the temperature shift, when methylation was just rising above background at silencers, partial repression of HML and HMR was apparent (Figure 4E). This result suggested that binding of Sir3 at silencers and promoters was sufficient for partial repression and preceded its spread over the entirety of both loci.\n\n## Discussion\n\nIn this study, we developed a new method to study the process of recruitment and spread of the S. cerevisiae heterochromatin protein Sir3 in living cells with a resolution approximating the frequency of single A\u2013T basepairs. We created a fusion protein between a key structural protein of heterochromatin, Sir3, and the bacterial adenine methyltransferase M.EcoGII that retained function and activity of each. We used DNA methylation as a read-out for Sir3 occupancy on chromatin. Long-read Nanopore sequencing allowed us to distinguish directly between methylated and unmethylated adenine and transcended the limitations of earlier studies imposed by repetitive regions common at telomeres.\n\nThe methylation by Sir3\u2013M.EcoGII at HML and HMR was stronger and had a larger footprint than its occupancy as judged by ChIP-seq, suggesting that our method captured transient contacts of Sir3 with chromatin that ChIP-seq could not. This result reinforced the idea that protein\u2013chromatin interactions are dynamic, even for a feature like heterochromatin, commonly thought of as \u2018stable\u2019. We also harnessed the power of single basepair resolution afforded by Nanopore sequencing to distinguish between recruitment and spread of Sir3 by studying a mutant of Sir3 whose distribution and binding profile had not yet been characterized, sir3-bah\u2206. This mutant cannot bind to nucleosomes and loses transcriptional silencing at HML and HMR (Buchberger et al., 2008; Gotta et al., 1998; Onishi et al., 2007). The mutant sir3-bah\u2206-M.EcoGII protein was still recruited to silencers at HML, HMR, and to telomeres where it methylated local adenines. However, the mutant did not spread beyond those recruitment sites, unlike wild-type Sir3\u2013M.EcoGII. Our findings supported that recruitment and spread were separate processes that involved different interactions between Sir3 and other proteins at silenced loci and telomeres. The separation of nucleation and spread mechanisms are also seen in studies of S. pombe heterochromatin. In S. pombe, transcriptional silencing of mating-type loci involves recruitment of histone deacetylases, histone methyltransferases, and the chromatin-binding factor Swi6/HP1 to sequence-specific nucleation sites followed by spreading of these factors over mating-type gene bodies to silence them. Most notably, spreading, but not nucleation, requires a \u2018read-write\u2019 mechanism in which the complexes that methylate histone H3 on lysine 9 (H3K9) also recognize that methylation mark (Akoury et al., 2019; Al-Sady et al., 2013; Ivanova et al., 1998; Zhang et al., 2008). Without this \u2018read-write\u2019 mechanism in place, heterochromatin factors are recruited, but they do not spread beyond their nucleation sites (Noma et al., 2004; Yamada et al., 2005; Zhang et al., 2008).\n\nThe ability to unambiguously map long reads to telomeres allowed us to challenge historic conclusions about Sir3 dosage-driven heterochromatin spreading. Overexpressing Sir3\u2013M.EcoGII increased the methylation signal where there already was methylation at endogenous levels of expression, including a large increase in methylation between HML and telomere 3 L. However, the boundaries where methylation dropped to sir3\u2206::M.ECOGII levels at HML, HMR, and telomeres mainly remained fixed in the two conditions. This result suggested that overexpression of Sir3 was not sufficient for spreading past most wild-type boundaries. The original idea that overexpression of Sir3 results in its further spread relied on low-resolution RT-PCR at two telomeres, 5 R and 6 R (Hecht et al., 1996; Renauld et al., 1993; Strahl-Bolsinger et al., 1997). In our genome-wide analysis, telomere 6 R was an exception, not the rule, as most telomeres did not show spreading of Sir3 upon its overexpression. We were not able to reproduce the result at telomere 5 R (Hecht et al., 1996).\n\nOur data suggested that binding of Sir3 outside of HML, HMR, X elements, and telomere TG repeats was probabilistic: When Sir3 was overexpressed, its interactions outside of recruitment sites became more frequent, thus increasing the methylation signal produced by Sir3\u2013M.EcoGII. However, most boundaries were left largely unchanged under overexpression conditions, in agreement with more recent Sir3 ChIP-seq results (Radman-Livaja et al., 2011). Perhaps other features, such as transcription, tRNA genes (Donze and Kamakaka, 2001; Simms et al., 2008; Valenzuela et al., 2009), the presence of histone variants like H2A.Z (Babiarz et al., 2006; Giaimo et al., 2019; Meneghini et al., 2003; Venkatasubrahmanyam et al., 2007), or the presence of Sir3-inhibiting chromatin marks like methylation of H3 on lysine 79 (Altaf et al., 2007; Ng et al., 2003; Ng et al., 2002; Oki et al., 2004; Park et al., 2002; Stulemeijer et al., 2011), enforce a boundary that overexpression of Sir3 itself cannot overcome.\n\nTwo results suggested that repression of HML and HMR did not require that Sir3 occupy the entire locus to the level seen in wild-type cells. During the temperature switch time course, methylation by sir3-8-M.EcoGII appeared first and most strongly at promoters and silencers of HML and HMR, with little or no detectable methylation between these sites. Yet, partial transcriptional repression was already evident at both loci within 30 min. The gradual repression that appeared during the time course was consistent with single-cell studies that show gradual tuning down of transcription during silencing establishment (Goodnight and Rine, 2020). The level of repression achieved during the time course was commensurate with that expected within the first cell cycle following restoration of Sir3 function (Goodnight and Rine, 2020). We also found that sir3-bah\u2206, a nucleosome-binding mutant that was recruited to silencers and promoters but could not bind outside of them, achieved some repression at both HML and HMR. Repression was stronger at HMR than at HML in the bah\u2206 mutant, perhaps because HMR is smaller and less dependent on spreading. The time course and bah\u2206 results together suggested a difference between repression of transcription per se and the stability of silencing ultimately achieved by the SIR complex binding over the entirety of HML and HMR.\n\nWe focused our efforts on the heterochromatin protein Sir3 in S. cerevisiae, but this method may have broad utility. By relaxing the requirement for stable binding to detect interaction of a protein with DNA or chromatin, the method could find binding sites of transcription factors and/or chromatin-binding proteins that elude detection by ChIP-seq. Further, with an inducible M.EcoGII fusion protein, one could track processes over time like the spread of heterochromatin proteins during X-chromosome inactivation, the movement of cohesin and condensin complexes along chromosomes during chromosome pairing and condensation, and the homology search during homologous recombination. Improvements in Nanopore technology and modified base-calling software will likely extend the method\u2019s utility to other processes that have directional movement along chromosomes.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>Various</td>\n      <td>This paper</td>\n      <td>NCBITaxon:4932</td>\n      <td>W303 Background; see Supplementary file 1</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-V5 (mouse monoclonal)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat # R960-25</td>\n      <td>(5 \u00b5l for ChIP, 1:5000 for Western)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Hexokinase (rabbit polyclonal)</td>\n      <td>Rockland</td>\n      <td>Cat # 100-4159</td>\n      <td>(1:20,000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-m6A (rabbit polyclonal)</td>\n      <td>Synaptic Systems</td>\n      <td>Cat # 202-003</td>\n      <td>300 ng per 1 \u03bcg IP DNA</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Pgk1 (mouse monoclonal)</td>\n      <td>Invitrogen</td>\n      <td>Cat # 459,250</td>\n      <td>(1:40,000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Sir3 (rabbit polyclonal)</td>\n      <td>N. Dhillon &amp; R. Kamakaka</td>\n      <td></td>\n      <td>(10 \u03bcl for ChIP, 1:1000 for Western)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>SIR2-M.ECOGII</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Fusion of SIR2 and bacterial adenine methyltransferase M.ECOGII</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>SIR3-M.ECOGII</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Fusion of SIR3 and bacterial adenine methyltransferase M.ECOGII</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>SIR4-M.ECOGII</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Fusion of SIR4 and bacterial adenine methyltransferase M.ECOGII</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>YEp24</td>\n      <td>doi:https://doi.org/10.1016/0378-1119(79)90004-0</td>\n      <td></td>\n      <td>Empty 2 \u03bcm overexpression plasmid; see Supplementary file 2</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pMB34</td>\n      <td>This paper</td>\n      <td></td>\n      <td>M.ECOGII inserted into pFA6a-natMX6; see Supplementary file 2</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pMB54</td>\n      <td>This paper</td>\n      <td></td>\n      <td>SIR3-M.ECOGII inserted into YEp24; see Supplementary file 2</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pFA6a-natMX6</td>\n      <td>doi:10.1002/yea.1291</td>\n      <td></td>\n      <td>natMX6 marker integration cassette; see Supplementary file 2</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Various oligonucleotides</td>\n      <td>This paper</td>\n      <td>qPCR and cloning primers</td>\n      <td>See Supplementary file 3</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>NEBNext Ultra II Library Prep Kit for Illumina</td>\n      <td>New England Biolabs</td>\n      <td>Cat # E7645</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>NEBNext Multiplex Oligos for Illumina</td>\n      <td>New England Biolabs</td>\n      <td>Cat # E7335/E7500</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Qubit dsDNA HS</td>\n      <td>Invitrogen</td>\n      <td>Cat # Q32854</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Qiaquick PCR Purification Kit</td>\n      <td>Qiagen</td>\n      <td>Cat # 28,104</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Accel-NGS 1S Plus DNA Library Kit</td>\n      <td>Swift Biosciences</td>\n      <td>Cat # 10,024</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Swift Single Indexing Primers Set A</td>\n      <td>Swift Biosciences</td>\n      <td>Cat # X6024</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>YeaStar Genomic DNA Kit</td>\n      <td>Genesee Scientific</td>\n      <td>Cat # 11-323</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Covaris g-TUBE</td>\n      <td>Covaris</td>\n      <td>Cat # 520,079</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>NEB Oxford Nanopore Companion</td>\n      <td>New England Biolabs</td>\n      <td>Cat # E7180S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>NEBNext Quick Ligation Reaction Master Mix</td>\n      <td>New England Biolabs</td>\n      <td>Cat # B6058</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>NEB Blunt/TA Ligase Master Mix</td>\n      <td>New England Biolabs</td>\n      <td>Cat # M0367</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Oxford Ligation Sequencing Kit</td>\n      <td>Oxford Nanopore Technologies</td>\n      <td>Cat # SQK-LSK109</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Oxford Native Barcoding Expansion 1\u201312</td>\n      <td>Oxford Nanopore Technologies</td>\n      <td>Cat # EXP-NBD104</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Qiagen RNeasy kit</td>\n      <td>Qiagen</td>\n      <td>Cat # 74,104</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>SuperScript III First-Strand Synthesis System</td>\n      <td>Invitrogen</td>\n      <td>Cat # 18080051</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>DyNAmo HS SYBR Green kit</td>\n      <td>Thermo Fisher</td>\n      <td>Cat # F410L</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>RNase-free DNase set</td>\n      <td>Qiagen</td>\n      <td>Cat # 79,254</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>SAMtools</td>\n      <td>doi:10.1093/bioinformatics/btp352</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Bowtie2</td>\n      <td>doi:10.1038/nmeth.1923</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>IGV</td>\n      <td>doi:10.1093/bib/bbs017</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Guppy Basecaller</td>\n      <td>Oxford Nanopore Technologies</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Megalodon</td>\n      <td>Oxford Nanopore Technologies</td>\n      <td></td>\n      <td>https://github.com/nanoporetech/megalodon</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>All-context rerio model</td>\n      <td>Oxford Nanopore Technologies</td>\n      <td>res_dna_r941_min_modbases-all-context_v001.cfg</td>\n      <td>For Megalodon modified base-calling; https://github.com/nanoporetech/rerio</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Protein A Dynabeads</td>\n      <td>Thermo Fisher</td>\n      <td>Cat # 10,002D</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Proteinase K</td>\n      <td>New England Biolabs</td>\n      <td>Cat # P8107S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>RNase A</td>\n      <td>Thermo Fisher</td>\n      <td>Cat # EN0531</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Strains\n\nAll strains in this study were derived from W303 (Supplementary file 1). For biological replicates, independent cultures were started from the same strain or isogenic strains as indicated by strain numbers in figure legends. M.ECOGII integrations were created by one-step integration of a PCR-amplified M.ECOGII-natMX cassette from pJR3525 using the primers listed in Supplementary file 3. Deletion of the BAH domain of SIR3 was done using CRISPR-Cas9 gene editing using the guide RNA and repair template listed in Supplementary file 3. The guide RNA target and nontarget strands were integrated into a single guide RNA dropout-Cas9 expression plasmid (pJR3428, Brothers and Rine, 2019) by Golden Gate cloning, using the restriction enzyme BsmBI as described in Lee et al., 2015. The repair template was made by annealing oligos described in Supplementary file 3 and extending the 3\u2032 ends using Phusion Polymerase (New England Biolabs, Beverly, MA). SIR3 overexpression strain and its control strain were created by transformation and maintenance of 2 \u00b5m plasmids pJR3526 and YEp24, respectively.\n\n### Plasmids\n\nPlasmids used in this study are listed in Supplementary file 2. The M.ECOGII-NatMX6 tagging plasmid (pJR3525) was made using standard Gibson cloning into pFA6a-natMX6 (Hentges et al., 2005). The codon-optimized M.ECOGII ORF with homology to the vector backbone was on a gene block (Supplementary file 3) from Integrated DNA Technologies (IDT, Coralville, IA) and was inserted into pFA6a-natMX6 linearized by PCR. The SIR3p-SIR3-M.ECOGII overexpression plasmid (pJR3526) was made using standard Gibson cloning into YEp24, a 2\u03bc yeast expression plasmid carrying a URA3 selectable marker (Botstein et al., 1979). The sequences for each plasmid are available in Supplementary Materials as fasta and.dna files.\n\n### ChIP-seq\n\n#### Sample collection\n\nStrains were grown to mid-log phase in YPD at 30\u00b0C. Approximately 109 cells were collected, washed, and fixed for 15 min at 30\u00b0C in a final concentration of 1% formaldehyde. Fixation was quenched with a final concentration of 300 mM glycine for 10 min at 30\u00b0C. Cells were washed 1\u00d7 with PBS and 2\u00d7 with FA lysis buffer (50 mM HEPES, pH7.5, 150 mM NaCl, 1 mM EDTA, 1% [vol/vol] Triton X-100, 0.1% [wt/vol] sodium deoxycholate, 0.1% sodium dodecyl sulfate [SDS]) before flash freezing pellets in a 2-ml screw-cap tube. Pellets were resuspended in 1 ml FA lysis buffer and 500 \u03bcl of 0.5 mm zirconium ceramic beads (BioSpec Products, Bartlesville, OK, Cat # 11079105z) were added. Resuspended cells were bead beat with in a FastPrep-24 (MP Biomedicals, Burlingame, CA) at 5.5 amplitude, four cycles of 40 s ON/2 min on ice. Each tube was punctured at the bottom with a hot 20-G needle and placed into a new 1.5 ml tube, and sample was spun out of the tube into the new tube by spinning at 150 \u00d7 g for 1 min. The sample was moved into a 15-ml Bioruptor sonication conical tube with 100 \u03bcl of Bioruptor sonication beads (Diagenode, Denville, NJ, Cat # C01020031) and sonicated using the Bioruptor Pico (Diagenode) for 10 cycles of 30 s ON/30 s OFF.\n\n#### Immunoprecipitation\n\nThe sonicated extract was moved into a new 1.5 ml tube and spun at 16,000 \u00d7 g for 15 min at 4\u00b0C. The supernatant was moved into a new 1.5 ml tube and adjusted to 1 ml volume with FA lysis buffer. 50 \u03bcl of sample was taken aside as input, and then 25 \u03bcl of 20 mg/ml BSA and 5 \u03bcl of mouse anti-V5 antibody (Invitrogen, Waltham, MA, Cat # R960-25) or 10 \u03bcl of polyclonal rabbit anti-Sir3 antibody (from N. Dhillon & R. Kamakaka) was added to the rest of the sample and rotated overnight at 4\u00b0C. 50 \u03bcl of Protein A magnetic Dynabeads (Thermo Fisher, Waltham, MA, Cat # 10,002D) were added to the sample and rotated at 4\u00b0C for 1 hr. Magnetic beads were immobilized using a magnetic rack and washed by resuspension in 1 ml of various buffers in the following order: FA lysis buffer + 0.05% Tween-20, FA lysis buffer + 0.05% Tween-20 + 0.25 mM NaCl, ChIP wash buffer (10 mM Tris, pH 8.0, 0.25 M LiCl, 1 mM EDTA, 0.5% Nonidet P-40, 0.5% sodium deoxycholate, 0.05% Tween-20), and TE (10 mM Tris, pH 8.0, 1 mM EDTA) + 0.05% Tween-20. The washed beads were resuspended in 130 \u03bcl of ChIP elution buffer (10 mM Tris, pH 7.5, 1 mM EDTA, 1% SDS) and incubated at 65\u00b0C shaking at 900 rpm overnight. The next day, 2.5 \u03bcl of 10 mg/ml Proteinase K (New England Biolabs, Ipswich, MA, Cat # P8107S) and 2.5 \u03bcl of 10 mg/ml RNase A (Thermo Fisher, Cat # EN0531) were added to the elution and incubated at 42\u00b0C for 2 hr. Beads were immobilized on a magnetic rack and the supernatant containing the desired DNA to be sequenced was taken and purified using 1\u00d7 (vol/vol) SPRI Select magnetic beads (Beckman Coulter, Brea, CA, Cat # B23317) according to the manufacturer\u2019s instructions.\n\n#### Library preparation and sequencing\n\nSamples were prepared for sequencing using NEBNext Ultra II DNA Library Prep Kit for Illumina (New England Biolabs, Cat # E7645) according to the manufacturer\u2019s instructions. Samples were multiplexed using NEBNext Multiplex Oligos for Illumina (New England Biolabs, Cat # E7335/E7500). Library-prepped samples were sequenced on a MiniSeq System (Illumina, San Diego, CA).\n\n#### Analysis\n\nSequencing reads were aligned to the S288C sacCer3 reference genome (release R64-2-1_20150113, http://yeastgenome.org/), modified to include mat\u2206 using Bowtie2 with the options \u2018--local --soft-clipped-unmapped-tlen --no-unal --no-mixed --no-discordant\u2019 (Langmead and Salzberg, 2012). Reads were normalized to the genome-wide median, excluding rDNA, chromosome III, and subtelomeric regions (the first and last 10 kb of each chromosome). Analysis was performed using custom Python scripts modified from Goodnight and Rine, 2020 (Source code 1, Source code 2) and displayed using IGV (Thorvaldsd\u00f3ttir et al., 2013).\n\n### DIP-seq\n\n#### DNA extraction\n\nCells were grown to mid-log phase in YPD, Complete Supplement Mixture (CSM), or CSM without Uracil (Sunrise Science Products, Knoxville, TN) at 30\u00b0C. Approximately 109 cells were pelleted by centrifugation at 3200 \u00d7 g for 2 min, washed with 1 ml of water, moved to a 2-ml screw-cap tube, and flash frozen. Cells were resuspended in 400 \u03bcl of Triton SDS Lysis Buffer (10 mM Tris, pH 8.0, 100 mM NaCl, 1 mM EDTA, 2% Triton X-100, 1% SDS), and 400 \u03bcl of phenol:chloroform:isoamyl alcohol 25:24:1 and 300 \u03bcl of 0.5 mm zirconium ceramic beads (BioSpec Products, Cat # 11079105z) were added to the resuspension. Cells were lysed by bead beating with in a FastPrep-24 (MP Biomedicals) at 5.5 amplitude, 4 cycles of 40 s ON/2 min on ice. The aqueous and organic phases were separated by centrifugation at 21,000 \u00d7 g for 5 min, and the aqueous phase was moved to a new 1.5 ml tube. 400 \u03bcl of chloroform was added, vortexed at top speed for ~10 s, and spun down at 21,000 \u00d7 g for 5 min to separate the aqueous and organic phases. The aqueous phase was moved to a new 1.5 ml tube, and 1 ml of 100% ethanol was added to precipitate nucleic acids. The sample was incubated at 4\u00b0C for 10\u201315 min and then spun down at 21,000 \u00d7 g for 2 min to pellet the precipitated nucleic acids. Supernatant was discarded, the pellet was air-dried, and then the pellet was resuspended in 400 \u03bcl of TE (10 mM Tris\u2013HCl, pH 8.0, 1 mM EDTA) + 4 \u03bcl of 10 mg/ml RNase A (Thermo Fisher, Cat # EN0531) and incubated at 37\u00b0C for 1 hr. 1 ml of 100% ethanol + 10 \u03bcl of 4 M ammonium acetate were added to the RNase solution and incubated at 4\u00b0C for 10\u201315 min to precipitate DNA. The precipitate was pelleted by centrifugation at 21,000 \u00d7 g for 2 min, washed 1\u00d7 with 70% ethanol, air-dried, and resuspended in 150\u2013300 \u03bcl of water.\n\n#### Sonication\n\nDNA concentration was measured using Qubit dsDNA HS reagents (Invitrogen, Cat #Q32854), and 6 \u03bcg of DNA was diluted to 20 ng/\u00b5l in 300 \u03bcl of water in 1.5 ml Bioruptor Pico Microtubes for sonication (Diagenode, Cat # C30010016). DNA was sonicated using a Bioruptor Pico (Diagenode) for 18 cycles of 15 s ON/90 s OFF. The sonicated DNA was moved to a new 1.5 ml tube.\n\n#### m6A IP\n\nDNA was denatured by incubating at 95\u00b0C for 10 min and then immediately placed on ice for 5 min. 200 \u03bcl of cold water and 500 \u03bcl of cold 5\u00d7 DIP buffer (50 mM NaPO4, pH 7.0, 700 mM NaCl, 0.25% Triton X-100) were added to bring the volume up to 1 ml. 50 \u03bcl was taken aside as input. 25 \u03bcl of 20 mg/ml BSA and 1.8 \u03bcg of antibody (Synaptic Systems rabbit anti-m6A, Cat 202\u2013003) were added to the rest of the sample and rotated overnight at 4\u00b0C. 50 \u03bcl of Protein A magnetic Dynabeads (Thermo Fisher, Cat # 10,002D) were added to the sample and rotated at 4\u00b0C for 1 hr. Magnetic beads were immobilized using a magnetic rack and washed by resuspension and rotation for 5 min at 4\u00b0C in 1 ml of various cold buffers in the following order: 2\u00d7 with 1\u00d7 DIP buffer + 0.05% Tween-20, 1\u00d7 with 1\u00d7 DIP buffer. For elution, beads were resuspended in 190 \u03bcl of DIP digestion buffer (50 mM Tris\u2013HCl, pH 8.0, 10 mM EDTA, 0.5% SDS) + 10 \u03bcl of 10 mg/ml Proteinase K (New England Biolabs, Cat # P8107S). DIP digestion buffer was added to input samples up to 200 \u03bcl. Both the input and IP samples were incubated at 50\u00b0C for 2 hr and then cleaned up using the Qiaquick PCR Purification Kit (Qiagen, Hilden, Germany, Cat # 28104) and eluted in 35 \u03bcl of water.\n\n#### Library preparation and sequencing\n\nSamples were prepared for sequencing using Accel-NGS 1S Plus DNA Library Kit (Swift Biosciences, Ann Arbor, MI, Cat # 10024) according to the manufacturer\u2019s instructions. Samples were multiplexed using Swift Single Indexing Primers Set A (Swift Biosciences, Cat # X6024). Library-prepped samples were sequenced on a MiniSeq System (Illumina).\n\n#### Analysis\n\nAnalysis was done as described in the section on ChIP-seq above.\n\n### Nanopore sequencing\n\n#### DNA extraction\n\nCells were grown to mid-log phase in YPD, CSM (Sunrise Science Products), or CSM without Uracil at 30\u00b0C. Approximately 108 cells were pelleted, washed with 1 ml of water, and pellets were flash frozen. gDNA was extracted using the YeaStar Genomic DNA Kit (Genesee Scientific, San Diego, CA, Cat #11-323) according to the manufacturer\u2019s \u2018Protocol 1\u2019. Specifically, thawed cell pellets were resuspended in 240 \u03bcl of YD digestion buffer + 10 \u03bcl R-Zymolyase and incubated at 30\u00b0C for 1 hr. 240 \u03bcl of YD Lysis buffer was added to the solution and vortexed at top speed for 15 s. 500 \u03bcl of chloroform was added to the solution and vortexed at top speed for 10 s and then inverted 10 times. The aqueous and organic phases were separated by centrifugation at 10,000 \u00d7 g for 2 min, and the aqueous phase was equally separated into two ZymoSpin columns. ZymoSpin columns were spun at 10,000 \u00d7 g, washed 2\u00d7 with 300 \u03bcl of DNA wash buffer, and DNA was eluted from each column with 75 \u03bcl of water. Eluates were combined. DNA was sheared to ~15\u201320 kb by spinning through a Covaris g-TUBE (Covaris Inc, Woburn, MA, Cat # 520079) at 4200 rpm for 1 min, and repeating 1\u00d7 with the tube flipped the other way in an Eppendorf Centrifuge 5424, according to the Covaris protocol. DNA was purified and concentrated using 1\u00d7 (vol/vol) SPRI Select beads (Beckman Coulter, Cat # B23317) and eluted in 50 \u03bcl of water according to the manufacturer\u2019s instructions. DNA concentration was measured using Qubit dsDNA HS reagents (Invitrogen, Cat # Q32854).\n\n#### Library preparation and sequencing\n\nApproximately 1\u20133 \u03bcg of purified, sheared genomic DNA was library prepped using the following reagents: NEB Oxford Nanopore Companion (New England Biolabs, Cat # E7180S), NEB Blunt/TA Ligase Master Mix (New England Biolabs, Cat # M0367), NEBNext Quick Ligation Reaction Master Mix (New England Biolabs, Cat # B6058), Oxford Ligation Sequencing Kit (Oxford Nanopore Technologies, Oxford, UK, Cat # SQK-LSK109), and the Oxford Native Barcoding Expansion 1\u201312 (Oxford Nanopore Technologies, Cat # EXP-NBD104). The library was prepared and sequenced according to Oxford Nanopore\u2019s protocol for Ligation Sequencing Kit + Native Barcoding Expansion 1\u201312. Sequencing was done on a MinION sequencer with v9.4 flow cells (Oxford Nanopore Technolgies, Cat # FLO-MIN106).\n\n#### Analysis\n\nBase-calling was first done using Guppy v5.0.11 using the high-accuracy model (dna_r9.4.1_450bps_hac.cfg), and reads were demultiplexed using guppy_barcoder. Read IDs corresponding to each barcode were extracted and written to a.txt file using a custom Python script (Source code 3). Reads corresponding to each barcode were aligned to the S288C reference genome (release R64-2-1_20150113, yeastgenome.org, modified to include mat\u2206) and modifications called with Megalodon (https://github.com/nanoporetech/megalodon, v2.3.3; Stoiber, 2021a) using the all-context rerio model (https://github.com/nanoporetech/rerio, res_dna_r941_min_modbases-all-context_v001.cfg; Stoiber, 2021b) and the flags --mod-motif \u2018Y A 0\u2019, --files_out \u2018basecalls mod_mappings per_read_mods\u2019, and --read-ids-filename \u2018barcodeXX_readIDs.txt\u2019 (the file that contained the extracted list of readIDs for a given barcode).\n\nResults were aggregated into.bed files using \u2018megalodon_extras aggregate run\u2019, and these files were used for aggregate Nanopore plots. Before plotting, aggregated data were filtered to include only adenines with at least 10\u00d7 coverage, and lines were smoothed using base R loess() function with enp.target = 100 and weighted by the coverage at each position.\n\nAssessment of linker-region preference of Sir3\u2013M.EcoGII used nucleosome-occupancy data from GEO Accession GSE97290 (Chereji et al., 2018).\n\nThe per-read database from Megalodon was converted into a.txt file using \u2018megalodon_extras per_read_text modified_bases\u2019. For ease of use in RStudio, the data for each chromosome were extracted into its own.txt file using custom bash and awk scripts (Source code 4) and these files were used for single-read Nanopore plots. The probabilities output by Megalodon were made binary by calling adenines with a > 0.8 probability of being methylated as \u2018m6A\u2019 and all others \u2018A\u2019.\n\nThe R scripts (as.html files) used to create each figure can be found in Source code 5.\n\n#### Limitations\n\nThis method showed possible limitations for some contexts: (1) The expression level of the fusion protein could increase the levels of background methylation. We found this to be true with the Sir2\u2013M.EcoGII fusion protein, which is likely expressed at a higher level than Sir3\u2013M.EcoGII due to the higher level of endogenous Sir2 expression. The level of methylation by Sir2\u2013M.EcoGII in heterochromatin regions was higher than by Sir3\u2013M.EcoGII, and background levels of methylation outside of heterochromatin regions were also higher than by Sir3\u2013M.EcoGII. Importantly, the signal at heterochromatin was evident above even this raised background methylation. (2) Methylation at the level of single reads was variable and spotty, possibly due to at least two contributors. There may be occupancies that are too transient to allow methylation. Secondly, computational limitations for calling modified adenines without a guiding sequence motif meant that lower-confidence (probably <0.8) m6A calls were not considered methylated. At present, qualitative conclusions based on single-read data can be made with confidence, but as Nanopore technology improves, single-read data will become more amenable to statistical and spatial analysis. (3) Because this method can capture transient interactions better than methods like ChIP-seq it may overestimate degrees of occupancy unless combined with DIP- or ChIP-seq.\n\n### Reverse Transcription and Quantitative PCR (RT-qPCR)\n\n#### RNA extraction\n\nCells were grown to mid-log phase in YPD, CSM (Sunrise Science Products), or CSM\u2013Uracil at 30\u00b0C, and RNA was extracted using the Qiagen RNeasy kit (Qiagen, Cat # 74104) according to the manufacturer\u2019s instructions for purification of total RNA from yeast. Briefly, ~6 \u00d7 107 cells were resuspended in 600 \u03bcl of buffer RLT, 500 \u03bcl of 0.5 mm zirconium ceramic beads (BioSpec Products, Cat # 11079105z) were added, and cells were lysed by bead beating with in a FastPrep-24 (MP Biomedicals) at 5.5 amplitude, 3 cycles of 40 s ON/2 min on ice. Cells were pelleted by spinning at 21,000 \u00d7 g for 2 min, and the supernatant was moved to a new tube. One volume of 70% ethanol was added to the supernatant and the sample was spun through an RNeasy spin column. The column was washed with 350 \u03bcl of buffer RW1, then 10 \u03bcl of DNase + 70 \u03bcl of buffer RDD (Qiagen, Cat # 79256) were added to the column and incubated for 15 min at room temperature. 500 \u03bcl of buffer RW1 was added and spun through the column. The column was then washed with 500 \u03bcl of buffer RPE 2\u00d7, and RNA was eluted with 80\u2013150 \u03bcl of RNase-free water.\n\n#### RT-qPCR\n\nComplementary DNA was synthesized using the SuperScript III First-Strand Synthesis System (Invitrogen, Cat # 18080051) and oligo(dT) primers according to the manufacturer\u2019s protocols. Quantitative PCR of complementary DNA was performed using the DyNAmo HS SYBR Green kit (Thermo Fisher, Cat # F410L) on an Mx3000P machine (Stratagene, La Jolla, CA) using the primers listed in Supplementary file 3. Standard curves were generated using a tenfold dilution series of one of the prepared samples.\n\n### Protein immunoblotting\n\nEach strain was grown to saturation overnight in 5 ml YPD. Overnight cultures were diluted to ~2 \u00d7 105 cells/ml in fresh YPD, grown to mid-log phase, and ~108 cells were harvested and pelleted. Pellets were resuspended in 1 ml of 5% trichloroacetic acid and incubated at 4\u00b0C for 10\u201330 min. The precipitates were pelleted, washed once with 1 ml of 100% acetone, and air-dried. Dried pellets were resuspended in 100 \u03bcl of protein breakage buffer (50 mM Tris\u2013HCl, pH 7.5, 1 mM EDTA, 3 mM DTT) and an equal volume of 0.5 mm zirconium ceramic beads (BioSpec Products, Cat # 11079105z) followed by four cycles of 40 s bead beating/2 min on ice in a FastPrep-24 (MP Biomedicals). 100 \u03bcl of 2\u00d7 Laemmli buffer (120 mM Tris\u2013HCl, pH 7.5, 20% glycerol, 4% SDS, 0.02% bromophenol blue, 10% beta-mercaptoethanol) was added to each sample and incubated at 95\u00b0C for 5 min. Insoluble material was pelleted by centrifugation and an equal volume of the soluble fraction from each sample was run on an SDS\u2013polyacrylamide gel (Mini-PROTEAN TGS Any kD precast gel; BioRad, Hercules, CA Cat # 4569033) and transferred to a nitrocellulose membrane using a TransBlot Turbo Mini 0.2 \u03bcm Nitrocellulose Transfer Pack (BioRad, Cat # 1704158) on the High MW setting of a TransBlot Turbo machine (BioRad). The membrane was blocked in Intercept Blocking Buffer (LI-COR Biosciences, Lincoln, NE, Cat # 927-70001), and the following primary antibodies and dilutions were used for detection: V5 (R960-25, 1:5000; Invitrogen), Hxk2 (#100-4159, 1:20,000; Rockland Immunochemicals Inc, Pottstown, PA), Sir3 (1:1000; rabbit polyclonal from N. Dhillon & R. Kamakaka), and Pgk1 (Cat # 459250, 1:40,000; Invitrogen). The secondary antibodies used were IRDye 800CW (926-32210) and 680RD (926-68071) (1:20,000; LI-COR Biosciences), and the membrane was imaged on a LI-COR Odyssey Imager. All washing steps were performed with PBS + 0.1% Tween-20.\n",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "079a5de2-eea0-43a4-a60c-09503b7fa7f2",
+      "submission_id": "2314f6b4-e09e-4821-8195-50a86ec69815",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Weiwei Dang, Baylor College of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75653.sa0](https://doi.org/10.7554/eLife.75653.sa0)\n\nThis manuscript studies the mechanism of transcriptional silencing in S. cerevisiae. Using two new tools for this field, fusion of a silencing protein to a DNA methyltransferase and long-read Nanopore sequencing, the results have provided both technical advances and new insights into the role of Sir3 in this process.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Weiwei Dang, Baylor College of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75653.sa1](https://doi.org/10.7554/eLife.75653.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Distinguishing between recruitment and spread of silent chromatin structures in Saccharomyces cerevisiae\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Jessica Tyler as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nAll reviewers have found this manuscript interesting and the data of high quality. However, several concerns are raised and discussed among reviewers. All reviewers agree that the following two control experiments are essential for the revision.\n\n1) The overexpression of Sir3 should be confirmed using western blot analysis.\n\n2) Figure 3 \u2013 In the overexpression experiments, the authors are making conclusions about heterochromatin formation based on the level of methylation. It seems important to look at the different classes of telomeres by more than one method in order to fortify and expand this conclusion. First, looking at the level of recruitment of the Sir3-M.EcoGII by ChIP would tell us if the difference in methylation is caused at the level of recruitment. This is a Class A experiment as either result is interesting \u2013 either there's differential recruitment of Sir3 between chromosome 6 and the others or there's differential ability of Sir3 to spread/methylate. Second, if Sir3-M.EcoGII is recruited at a higher level, it would be worthwhile to look at the possible silencing of genes near the telomeres to see if their expression is reduced. This is especially important given the results presented in Figure 4 where a small change in association appears to increase silencing.\n\nPlease also address or respond to all the other concerns and suggestions made by reviewers in your revised manuscript and in your response to reviews.\n\nReviewer #1:\n\nIn this manuscript titled \"Distinguishing between recruitment and spread of silent chromatin structures in Saccharomyces cerevisiae\", the authors developed a highly sensitive technique using a non-sequence specific bacterial DNA methyltransferase fused with yeast silencing protein Sir3 to investigate the details of Sir3 binding and spreading at yeast silencing loci. They found that a truncated and silencing deficient Sir3 lacking the nucleosome binding BAH domain was still recruited to silencers/silencing nucleation sites but was unable to spread. Overexpressing Sir3 did not lead to further spreading at HML and HMR but had variable effects at telomeres. Finally, they provided evidence that transcriptional repression was established before Sir3 spreading.\n\nA key strength in this study is the use of Sir3-M.EcoGII to map Sir3's interaction and spreading at silencing loci. This technique afforded high resolution and high sensitivity in detecting Sir3 binding and spreading than previously used approaches. When combined with BAH domain truncation, and inducible expression, the investigators were able to answer many questions on the mechanistic details. Hence, this study provides novel insights into Sir3-mediated transcription silencing and transcription silencing mechanism in general.\n\nThe data presented in this manuscript are generally convincing and support the main conclusions.\n\n1. As the authors mentioned, the Sir3 BAH domain deletion results in silencing defects and lack of Sir3 spreading. Importantly, the study reports that sir3-bah\u2206 can still bind to silencers/silencing nucleation sites. So it appears that transcription silencing is associated with Sir3 spreading. Interestingly, in the Sir3 temperature sensitive experiment, the authors showed that transcriptional repression is already established prior to Sir3 spreading. How would the authors interpret the relationship between Sir3 spreading and transcription silencing? What are the roles of the BAH domain in transcriptional repression beyond Sir3 spreading?\n\n2. The authors described several identified functional domains in Sir3. In addition to the BAH domain, there are AAA+ and wH domains on Sir3. However, only BAH domain deletion was investigated. Could the functions of the other domains be investigated using this Sir3- M.EcoGII approach? The AAA+ domain interacts with Sir4 and the wH domain mediates dimerization, hence both are relevant in the investigation of Sir3 mediated silencing and spreading.\n\nReviewer #2:\n\nHeterochromatin is a repressive chromatin structure that is first nucleated and then spreads across large domains to enforce gene silencing. Heterochromatin coats repetitive elements as well as gene-rich regions to establish the gene silencing pattern that maintains cell identity. In this manuscript, the authors investigate the coordinated relationship between initial nucleation and spreading activity and the first repressive effects elicited by the SIR complex in budding yeast, where it represses transcription of genes at HML, HMR and telomeres. The authors create a fusion protein consisting of Sir3, which is the major factor driving heterochromatin spread and silencing, and the bacterial methyladenosine methyltransferase. Expression of this protein combined with genome-wide sequencing techniques allowed the authors to map Sir3 chromatin interactions. By deleting the Sir3 nucleosome binding domain on the fusion protein, or by creating a temperature-sensitive mutant, the authors probe the functional mechanisms underlying spreading/silencing. They find that spreading requires Sir3 nucleosome binding, not simply recruitment, and that overexpression of Sir3 shows only a variable and limited effect on spreading at different sites \u2013 arguing against a simple dose-dependency. Finally, they find that gene repression can be detected prior to full occupancy/spread of Sir3 across domains.\n\nCritique: Overall, work described in this manuscript is interesting. Results presented are of high quality and support the main conclusions.\n\nI recommend publication of this exciting work in eLife.\n\nReviewer #3 (Recommendations for the authors):\n\nIn this manuscript, the authors study silencing in S. cerevisiae using a novel approach. They construct a functional fusion of Sir3 to the adenine methyltransferase M.EcoGII, resulting in DNA methylation as a mark of Sir3 association with chromatin. Then, they use Nanopore long-read sequencing to obtain high-resolution analysis of this recruitment. Using these tools they provide several new and interesting results. By comparing Sir3-M.EcoGII ChIP to methylation, they provide evidence that methylation is a more sensitive assay, as it is detectable across silenced regions. Then, using a Sir3 mutant, lacking its BAH domain, they show that this mutant is capable of being recruited, but not of spreading. Finally, they provide evidence that overexpression of Sir3 does not increase the extent of telomere-associated heterochromatin domains for most telomeres, a result that contrasts with much older studies, thus providing a new view of the consequences of increased Sir3 levels.\n\n1. lines 114-117 and Figure 1B \u2013 It's not clear why silencing was assayed by fluorescence here, when it was assayed by RT-qPCR everywhere else. If there is an advantage, please provide it. Otherwise, it would be better to include RT-qPCR here as well to provide a basis for comparison with the later experiments. Also, some readers will not be familiar with using fluorescent reporters to assay silencing so if this stays, the authors should cite Dodson and Rine and give an estimate of the sensitivity of this assay compared to the older methods of measuring RNA levels or mating.\n\n2. line 157, Figure 1D, E \u2013 The authors discuss a periodicity of reads as shown in Figure 1E. However, there is also a periodicity evident in Figure 1D. Do the peaks from the two methods match up? Please address this in this section.\n\n3. Figure 3 \u2013 In the overexpression experiments, the authors are making conclusions about heterochromatin formation based on the level of methylation. It seems important to look at the different classes of telomeres by more than one method in order to fortify and expand this conclusion. First, looking at the level of recruitment of the Sir3-M.EcoGII by ChIP would tell us if the difference in methylation is caused at the level of recruitment. This is a Class A experiment as either result is interesting \u2013 either there's differential recruitment of Sir3 between chromosome 6 and the others or there's differential ability of Sir3 to spread/methylate. Second, if Sir3-M.EcoGII is recruited at a higher level, it would be worthwhile to look at the possible silencing of genes near the telomeres to see if their expression is reduced. This is especially important given the results presented in Figure 4 where a small change in association appears to increase silencing.\n\n4. lines 282-283, Figure 4B \u2013 The authors wrote that, after the 37 to 25 shift, the Sir3-8 protein levels grew \"to match\" the constitutive 25C levels. However, their results show the level at 150 minutes to be 0.63 of the constitutive level. I suggest revising and simply giving the real value in the text, something like, \"Over the course of 150 minutes, the protein levels of sir3-8 slowly increased to approximately 63% that of the level in constitutive 25C growth conditions (Figure 4B).\"\n",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "231b4123-1789-4787-85b5-4802a39c913a",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C1",
+      "claim": "The formation of heterochromatin at HML, HMR, and telomeres in Saccharomyces cerevisiae involves two main steps: the recruitment of Sir proteins to silencers and their spread throughout the silenced domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The formation of heterochromatin at HML, HMR, and telomeres in Saccharomyces cerevisiae involves two main steps: the recruitment of Sir proteins to silencers and their spread throughout the silenced domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about heterochromatin formation in yeast, supported by the broader scientific literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "45bd9add-d0cd-4949-bb87-e2cabeadbf34",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C2",
+      "claim": "A fusion protein between Sir3 and the nonsite-specific bacterial adenine methyltransferase M.EcoGII was used to map sites of Sir3\u2013chromatin interactions genome-wide.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a fusion protein between the heterochromatin protein Sir3 and the nonsite-specific bacterial adenine methyltransferase M.EcoGII, we mapped sites of Sir3\u2013chromatin interactions genome-wide using long-read Nanopore sequencing to detect adenines methylated by the fusion protein and by ChIP-seq to map the distribution of Sir3\u2013M.EcoGII.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental approach used, which is the data generated in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "5bb94935-2224-417e-b0a9-8ba1d4515c91",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C3",
+      "claim": "A silencing-deficient mutant of Sir3 lacking its Bromo-Adjacent Homology (BAH) domain, sir3-bah\u2206, was still recruited to HML, HMR, and telomeres.",
+      "claim_type": "EXPLICIT",
+      "source": "A silencing-deficient mutant of Sir3 lacking its Bromo-Adjacent Homology (BAH) domain, sir3-bah\u2206, was still recruited to HML, HMR, and telomeres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "2810977c-2785-4b2b-a420-14a5c576229f",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C4",
+      "claim": "In the absence of the BAH domain, Sir3 was unable to spread away from recruitment sites.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the absence of the BAH domain, it was unable to spread away from those recruitment sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "a5a5e5c8-78f9-4ddb-a3c2-3b5a3807e640",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C5",
+      "claim": "Overexpression of Sir3 did not lead to further spreading at HML, HMR, and most telomeres.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of Sir3 did not lead to further spreading at HML, HMR, and most telomeres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "c529bc61-fffb-4d25-8039-ed3a644bdf37",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C6",
+      "claim": "A few exceptional telomeres, like 6R, exhibited a small amount of Sir3 spreading upon Sir3-M.EcoGII overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "A few exceptional telomeres, like 6R, exhibited a small amount of Sir3 spreading, suggesting that boundaries at telomeres responded variably to Sir3-M.EcoGII overexpression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "a0f9dcd0-4511-4f5d-8097-7c4fe9034979",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C7",
+      "claim": "Repression of genes at HML and HMR began before Sir3 occupied the entire locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, by using a temperature-sensitive allele of SIR3 fused to M.ECOGII, we tracked the positions first methylated after induction and found that repression of genes at HML and HMR began before Sir3 occupied the entire locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "380ef66c-8d37-4f42-8406-01f51e341168",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C8",
+      "claim": "Strains expressing Sir3\u2013M.EcoGII could silence HML and HMR as well as wild-type strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Strains expressing Sir3\u2013M.EcoGII could silence HML and HMR as well as wild-type strains compared to sir3\u2206 strains that displayed a full loss of silencing (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "d116ceb7-90a1-4746-92bc-0b0c19850041",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C9",
+      "claim": "The fusion protein Sir3\u2013M.EcoGII retained full function of Sir3.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the fusion protein retained full function of Sir3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the silencing data showing that Sir3-M.EcoGII functions as well as wild-type Sir3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "0790bcc4-5622-4399-af5d-61b19f6391a9",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C10",
+      "claim": "Methylation measured by DIP-seq had a stronger signal over the entirety of HML and HMR and a broader signal that extended beyond the silencers compared to ChIP-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to ChIP-seq, methylation measured by DIP-seq had a stronger signal over the entirety of HML and HMR and a broader signal that extended beyond the silencers (Figure 1C, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct comparison of experimental data from ChIP-seq and DIP-seq shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "ff709dcd-c060-4e68-afea-babe428f03db",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C11",
+      "claim": "The methylation over HML and HMR was from the fusion protein Sir3\u2013M.EcoGII.",
+      "claim_type": "EXPLICIT",
+      "source": "The methylation over HML and HMR was from the fusion protein Sir3\u2013M.EcoGII, as neither a strain without M.EcoGII nor a strain expressing unfused M.EcoGII from the SIR3 promoter showed appreciable DIP-seq signal (Figure 1C, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by control experiments showing no methylation signal in strains without the fusion protein.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "de8765a1-04eb-468e-967c-d7cb344d87d6",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C12",
+      "claim": "Methylation by Sir3\u2013M.EcoGII measured by Nanopore sequencing agreed well with DIP-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "Methylation by Sir3\u2013M.EcoGII measured by Nanopore sequencing agreed well with DIP-seq, showing strong methylation over HML and HMR with little background methylation outside of these regions (Figure 1D, Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of two different experimental methods showing consistent results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "f7b9bf8b-e945-4b8c-8628-bbf3e6311138",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C13",
+      "claim": "Fusions of Sir2 and Sir4 with M.EcoGII were fully silencing competent.",
+      "claim_type": "EXPLICIT",
+      "source": "Fusions of Sir2 and Sir4 with M.EcoGII were also fully silencing competent (Figure 1B) and produced methylation signals that matched Sir3\u2013M.EcoGII at HML and HMR (Figure 1D), suggesting that all three members of the SIR complex were equally distributed, as expected.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR and Nanopore sequencing data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "1e386db9-e5d9-400f-8198-c02f9e90b103",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C14",
+      "claim": "Sir3\u2013M.EcoGII methylated most strongly near the E and I silencers and at the HML\u03b11/\u03b12 promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Sir3\u2013M.EcoGII methylated most strongly near the E and I silencers and at the HML\u03b11/\u03b12 promoter, with lower, but significant, methylation between these sites (Figure 1E, Figure 1\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from single-read Nanopore sequencing data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "8fdbdb5d-b978-46d7-af1e-e665fb4c4da2",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C15",
+      "claim": "Analysis of single reads revealed a periodicity of methylation across HML and HMR.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of single reads revealed a periodicity of methylation across HML and HMR (Figure 1E, Figure 1\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from single-read Nanopore sequencing data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "0c8ca158-8779-4a8d-9de7-cba5c9ed8c06",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C16",
+      "claim": "Small regions of higher methylation corresponded to linker regions between nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "These small regions of higher methylation corresponded to linker regions between nucleosomes (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison with nucleosome occupancy data shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "aad33e6a-4326-4b45-886e-961ee0f3fcb4",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C17",
+      "claim": "Sir3\u2013M.EcoGII did methylate within nucleosome-occupied regions at HML and HMR but at a lower frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Sir3\u2013M.EcoGII did methylate within nucleosome-occupied regions at HML and HMR but at a lower frequency (Figure 1\u2014figure supplement 3), consistent with in vitro studies that use methylation by M.EcoGII or another nonspecific adenine methyltransferase, Hia5, as a measurement of chromatin accessibility (Abdulhay et al., 2020; Brady et al., 2021; Shipony et al., 2020; Stergachis et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data in the supplementary figure and cited literature on chromatin accessibility.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "d089c818-aaff-40c3-b5f1-3fe32036e226",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C18",
+      "claim": "The recruitment of the SIR complex to silencers is sequence specific.",
+      "claim_type": "EXPLICIT",
+      "source": "The recruitment of the SIR complex to silencers is sequence specific.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about SIR complex recruitment in yeast.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "315a6708-9f36-48ad-9d1d-5dc3fd911186",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C19",
+      "claim": "Rap1, Abf1, and ORC bind at recruitment sites and recruit the Sir proteins directly through protein\u2013protein interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Rap1, Abf1, and ORC bind at these recruitment sites and recruit the Sir proteins directly through protein\u2013protein interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about SIR complex recruitment in yeast.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "a4aa519a-05a2-467a-a72c-471261426f00",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C20",
+      "claim": "SIR complex binding away from recruitment sites is sequence independent and relies on interactions with nucleosomes and among the Sir proteins themselves.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, SIR complex binding away from recruitment sites is sequence independent and instead relies on interactions with nucleosomes and among the Sir proteins themselves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about SIR complex spreading in yeast.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "211c3fcf-0e87-4e62-bcf1-6bd1dabdb52c",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C21",
+      "claim": "The interaction between Sir3 and nucleosomes would not be required for nucleation at recruitment sites but would be required for binding outside of those recruitment sites.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore hypothesized that the interaction between Sir3 and nucleosomes would not be required for nucleation at recruitment sites but would be required for binding outside of those recruitment sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis stated by the authors based on prior knowledge.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "4388cbd1-e7d9-4764-ab89-d14dbc0f9aad",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C22",
+      "claim": "Deletion of the BAH domain causes a phenotypic loss of silencing, likely due to a loss of interaction with nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies established that deletion of the BAH domain causes a phenotypic loss of silencing, likely due to a loss of interaction with nucleosomes (Buchberger et al., 2008; Gotta et al., 1998; Onishi et al., 2007), but did not characterize its binding at regions of heterochromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature on the BAH domain.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "b12ce457-912b-4cef-afa7-e701f2cadb00",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C23",
+      "claim": "Deletion of the BAH domain did not destabilize Sir3.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly for what follows, deletion of the BAH domain did not destabilize Sir3 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by protein immunoblotting data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "42c154cd-1590-46a1-a41b-1c89414a92d0",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C24",
+      "claim": "sir3-bah\u2206-M.ECOGII strains displayed a loss of silencing, but the loss was more severe at HML than at HMR.",
+      "claim_type": "EXPLICIT",
+      "source": "We also confirmed that sir3-bah\u2206-M.ECOGII strains displayed a loss of silencing, but found that the loss was more severe at HML than at HMR (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "c851ba1b-0f16-4154-9b6b-d5fe91cae6b8",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C25",
+      "claim": "Despite the loss of silencing at HML and HMR in the sir3-bah\u2206-M.ECOGII strain, there was still detectable methylation across the two loci.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the loss of silencing at HML and HMR in the sir3-bah\u2206-M.ECOGII strain, there was still detectable methylation across the two loci (Figure 2D, E, Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from Nanopore sequencing data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "cf919970-4a47-4ba6-9ae8-2d196172f0db",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C26",
+      "claim": "sir3-bah\u2206-M.EcoGII methylated silencers at HML and HMR at the same level as Sir3\u2013M.EcoGII but showed decreased methylation between them.",
+      "claim_type": "EXPLICIT",
+      "source": "At the aggregate level, sir3-bah\u2206-M.EcoGII methylated silencers at HML and HMR at the same level as Sir3\u2013M.EcoGII but showed decreased methylation between them (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from aggregate Nanopore sequencing data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "5fa722f2-fb60-441b-b006-ae8ae27155bd",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C27",
+      "claim": "Analysis of single reads spanning HML and HMR in the bah\u2206 mutant showed strong methylation at silencers, promoters, and the HO endonuclease recognition site.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of single reads spanning HML and HMR in the bah\u2206 mutant showed similarly strong levels of methylation at silencers, and revealed strong methylation both at the promoters of HML and HMR and the recognition site for the HO endonuclease (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from single-read Nanopore sequencing data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "1b26a4ce-cc98-4dfd-a815-acdaba8156bf",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C28",
+      "claim": "Little methylation was seen over gene bodies between silencers in the bah\u2206 mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, little methylation was seen over gene bodies between these sites (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from single-read Nanopore sequencing data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "4d7dd785-2076-4dcf-b252-917c4748f12d",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C29",
+      "claim": "Sir3\u2013M.EcoGII strongly methylated telomeres at TG repeats and X elements.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to methylating HML and HMR (Figure 1), Sir3\u2013M.EcoGII strongly methylated telomeres at TG repeats and X elements (Figure 2F, Figure 2\u2014figure supplement 1B, Figure 2\u2014figure supplement 2), and the periodicity of methylation was apparent on single reads as well (Figure 2G), likely corresponding to more-accessible linker regions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from Nanopore sequencing data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "203b9da1-17c1-43ce-a8dc-5fbd545d8992",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C30",
+      "claim": "The loss of binding outside of recruitment sites of sir3-bah\u2206-M.EcoGII was more striking at telomeres than HML and HMR.",
+      "claim_type": "EXPLICIT",
+      "source": "The loss of binding outside of recruitment sites of sir3-bah\u2206-M.EcoGII was more striking at telomeres than HML and HMR, where methylation by the bah\u2206 mutant matched wild-type levels at TG and X repeats but dropped off steeply centromere-proximal to the X elements (Figure 2F, G, Figure 2\u2014figure supplement 1B, Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from Nanopore sequencing data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "10851270-c68a-44f6-8645-e5b00c5f0897",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C31",
+      "claim": "The nucleosome-binding activity of Sir3 was required for Sir3 to spread away from recruitment sites, but not for its initial recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "The results at telomeres, supported by the data at HML and HMR, suggested that the nucleosome-binding activity of Sir3 was required for Sir3 to spread away from recruitment sites, but not for its initial recruitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data on the bah\u2206 mutant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "7c1cb18c-4eda-4084-a5c2-85c24c4b57be",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C32",
+      "claim": "Overexpression of Sir3 results in its spread beyond wild-type boundaries, accompanied by repression of genes in those extended regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, it was previously reported that overexpression of Sir3 results in its spread beyond wild-type boundaries, accompanied by repression of genes in those extended regions (Hecht et al., 1996; Hocher et al., 2018; Ng et al., 2003; Renauld et al., 1993; Strahl-Bolsinger et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of prior findings from cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "dfc12dd5-15bf-4d80-81b6-21c5282aa009",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C33",
+      "claim": "mRNA levels of SIR3-M.ECOGII on a multicopy 2\u03bc plasmid was tenfold higher than from the chromosomal SIR3-M.ECOGII locus in a strain carrying an empty 2\u03bc plasmid.",
+      "claim_type": "EXPLICIT",
+      "source": "mRNA levels of SIR3-M.ECOGII on a multicopy 2\u03bc plasmid was tenfold higher than from the chromosomal SIR3-M.ECOGII locus in a strain carrying an empty 2\u03bc plasmid (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "dbec8122-e9a1-4b57-93e4-f378bb6ac9d8",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C34",
+      "claim": "Overexpression of SIR3-M.ECOGII had no effect on silencing at HML and HMR.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of SIR3-M.ECOGII had no effect on silencing at HML and HMR (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "267a1ff9-f163-42e3-acd1-ae72f3763d95",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C35",
+      "claim": "Overexpression of SIR3-M.ECOGII had little effect on the boundaries of methylation at HML and HMR.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of SIR3-M.ECOGII had little effect on the boundaries of methylation at HML and HMR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the Nanopore sequencing data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "8c2795c1-0c6c-432b-aa4d-687bfaefa429",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C36",
+      "claim": "Strains overexpressing SIR3-M.ECOGII displayed increased methylation over both HML and HMR and between HML and telomere 3 L, but no new sites of methylation appeared outside the bounds of strains expressing only one copy of SIR3-M.ECOGII.",
+      "claim_type": "EXPLICIT",
+      "source": "Strains overexpressing SIR3-M.ECOGII displayed increased methylation over both loci and between HML and telomere 3 L, but no new sites of methylation appeared outside the bounds of strains expressing only one copy of SIR3-M.ECOGII (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from Nanopore sequencing data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "4e6baaa8-98f2-4698-84f6-d622de4c4a25",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C37",
+      "claim": "The changes in methylation upon overexpression of Sir3\u2013M.EcoGII matched changes in occupancy of the fusion protein by ChIP-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "The changes in methylation upon overexpression of Sir3\u2013M.EcoGII matched changes in occupancy of the fusion protein by ChIP-seq, suggesting that methylation reflects binding of the protein well (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of Nanopore sequencing and ChIP-seq data shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "0505a145-f641-492d-b75d-9d6df495c2f7",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C38",
+      "claim": "There was some increase in methylation over the promoters of CHA1 and OCA4 upon overexpression, but it did not result in any change in the level of their expression.",
+      "claim_type": "EXPLICIT",
+      "source": "There was some increase in methylation over the promoters of two genes closest to HML and HMR (CHA1 and OCA4, respectively), but it did not result in any change in the level of their expression (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Nanopore sequencing and RT-qPCR data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "b74a15d6-283a-4c8c-be6f-b4f4b992496f",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C39",
+      "claim": "Only three of the 32 telomeres, including telomere 6 R, showed convincing spread of methylation to new sites compared to telomeres in strains expressing one copy of SIR3-M.ECOGII.",
+      "claim_type": "EXPLICIT",
+      "source": "Only three of the 32 telomeres, including the paradigmatic telomere 6 R from earlier studies (Hecht et al., 1996; Renauld et al., 1993; Strahl-Bolsinger et al., 1997), showed convincing spread of methylation to new sites compared to telomeres in strains expressing one copy of SIR3-M.ECOGII (Figure 3F, Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from Nanopore sequencing data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "779e2f9b-5be0-4a43-bb12-16e0a3b3d920",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C40",
+      "claim": "The expression level of SIR3 was not a universal limiting factor in heterochromatin spread.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the expression level of SIR3 was not a universal limiting factor in heterochromatin spread.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the overexpression experiments showing limited spreading at most telomeres.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "b4142b47-c5f1-423d-89a8-4211495601d2",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C41",
+      "claim": "There exist other chromatin features that create boundaries for Sir3 spreading.",
+      "claim_type": "EXPLICIT",
+      "source": "These results imply the existence of other chromatin features that create boundaries for Sir3 spreading.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation that overexpression does not lead to universal spreading.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "ad1616cb-8654-4399-8e3c-981ddcec4325",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C42",
+      "claim": "Growth at 37\u00b0C caused lower protein levels of sir3-8.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with previous studies (Stone et al., 2000), growth at 37\u00b0C caused lower protein levels of sir3-8 (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by protein immunoblotting data shown in Figure 4B and cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "d3af8f36-f3bb-467b-b544-4c0484f73d24",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C43",
+      "claim": "Over the course of 150 min, the protein levels of sir3-8 slowly increased to 63% of the level in constitutive 25\u00b0C growth conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the course of 150 min, the protein levels of sir3-8 slowly increased to 63% of the level in constitutive 25\u00b0C growth conditions (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by protein immunoblotting data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "10242212-bb00-43d3-9bfc-a87b16006897",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C44",
+      "claim": "In cells grown at 37\u00b0C, sir3-8-M.ECOGII did not methylate HML and HMR.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells grown at 37\u00b0C, sir3-8-M.ECOGII did not methylate HML and HMR, but when grown constitutively at 25\u00b0C, there was strong methylation over both loci (Figure 4C, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from Nanopore sequencing data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "f62727ee-2b2e-42dc-b45a-cff033cd0af0",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C45",
+      "claim": "Over a 90-min time course, methylation increased only over the silencers and promoters of HML and HMR.",
+      "claim_type": "EXPLICIT",
+      "source": "Over a 90-min time course, methylation increased only over the silencers and promoters of HML and HMR (Figure 4D, Figure 4\u2014figure supplement 2, solid lines).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from Nanopore sequencing data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "b7e9ad72-e617-4bc7-a1b3-fcb5b79d8921",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C46",
+      "claim": "Methylation at the promoter of HML during the time course and in the sir3-bah\u2206 mutant was expected, as it contains a Rap1-binding site, and Rap1 interacts directly with Sir3 and Sir4.",
+      "claim_type": "EXPLICIT",
+      "source": "Methylation at the promoter of HML during the time course and in the sir3-bah\u2206 mutant was expected, as it contains a Rap1-binding site, and Rap1 interacts directly with Sir3 and Sir4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the data based on known protein-protein interactions.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "9e8137f2-0d15-479e-978a-c5a50a91f78a",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C47",
+      "claim": "Methylation at the promoter of HMR at early time points and in the sir3-bah\u2206 mutant was a surprise, as there is not a known SIR complex-interacting protein that binds at the promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "However, methylation at the promoter of HMR at these early time points and in the sir3-bah\u2206 mutant was a surprise, as there is not a known SIR complex-interacting protein that binds at the promoter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation that contradicts prior expectations based on known protein-binding sites.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "4c0d1716-394a-450f-a365-3eba559e2acc",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C48",
+      "claim": "The faster recruitment at silencers and promoters might be due to the interaction of Sir3 with Sir4 and Rap1.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of Sir3, Sir4 is still bound at silencers (Goodnight and Rine, 2020; Hoppe et al., 2002; Rusch\u00e9 et al., 2002), so the faster recruitment at these sites, and perhaps the promoters as well, might be due to the interaction of Sir3 with Sir4 and Rap1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on cited literature about Sir4 binding and known protein interactions.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "8ca41aab-ede8-4f7c-a759-e2b1f50e65d7",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C49",
+      "claim": "By 90 min (~1 cell division), methylation at no position reached the level found in cells constitutively grown at 25\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "By 90 min (~1 cell division), methylation at no position reached the level found in cells constitutively grown at 25\u00b0C \u2013 the level of methylation of mature, stable heterochromatin (Figure 4D, Figure 4\u2014figure supplement 2, dotted line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from Nanopore sequencing data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "ed040d38-5307-40ea-bbcd-0165322bc11f",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C50",
+      "claim": "Even by 30 min after the temperature shift, when methylation was just rising above background at silencers, partial repression of HML and HMR was apparent.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, even by 30 min after the temperature shift, when methylation was just rising above background at silencers, partial repression of HML and HMR was apparent (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "50dc9ee1-36c9-474b-924c-873f197d988a",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C51",
+      "claim": "Binding of Sir3 at silencers and promoters was sufficient for partial repression and preceded its spread over the entirety of both loci.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggested that binding of Sir3 at silencers and promoters was sufficient for partial repression and preceded its spread over the entirety of both loci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the time course data showing repression before full spreading.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "5bbac904-1f35-43a7-a017-80e99044d2d2",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C52",
+      "claim": "The methylation by Sir3\u2013M.EcoGII at HML and HMR was stronger and had a larger footprint than its occupancy as judged by ChIP-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "The methylation by Sir3\u2013M.EcoGII at HML and HMR was stronger and had a larger footprint than its occupancy as judged by ChIP-seq, suggesting that our method captured transient contacts of Sir3 with chromatin that ChIP-seq could not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of methylation data and ChIP-seq data, leading to an inference about transient interactions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "d2ef8ea0-1255-46e5-8483-c827734461da",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C53",
+      "claim": "Protein\u2013chromatin interactions are dynamic, even for heterochromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "This result reinforced the idea that protein\u2013chromatin interactions are dynamic, even for a feature like heterochromatin, commonly thought of as 'stable'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the data showing that methylation captures more than stable binding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "55f8e941-f29f-4da6-8dcd-f5a9868dbc6f",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C54",
+      "claim": "Recruitment and spread are separate processes that involved different interactions between Sir3 and other proteins at silenced loci and telomeres.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings supported that recruitment and spread were separate processes that involved different interactions between Sir3 and other proteins at silenced loci and telomeres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the bah\u2206 mutant data showing recruitment without spreading.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "b11150c9-fcd5-478c-ba5f-da0f2647dea0",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C55",
+      "claim": "In S. pombe, spreading, but not nucleation, requires a 'read-write' mechanism in which the complexes that methylate histone H3 on lysine 9 (H3K9) also recognize that methylation mark.",
+      "claim_type": "EXPLICIT",
+      "source": "Most notably, spreading, but not nucleation, requires a 'read-write' mechanism in which the complexes that methylate histone H3 on lysine 9 (H3K9) also recognize that methylation mark (Akoury et al., 2019; Al-Sady et al., 2013; Ivanova et al., 1998; Zhang et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about S. pombe heterochromatin supported by cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "e0f29bca-7baa-40bd-92f1-bc4a9f34fc97",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C56",
+      "claim": "Without the 'read-write' mechanism in S. pombe, heterochromatin factors are recruited, but they do not spread beyond their nucleation sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Without this 'read-write' mechanism in place, heterochromatin factors are recruited, but they do not spread beyond their nucleation sites (Noma et al., 2004; Yamada et al., 2005; Zhang et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about S. pombe heterochromatin supported by cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "fc81f4a5-42e7-4991-989b-f8c5f3b36195",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C57",
+      "claim": "Overexpressing Sir3\u2013M.EcoGII increased the methylation signal where there already was methylation at endogenous levels of expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpressing Sir3\u2013M.EcoGII increased the methylation signal where there already was methylation at endogenous levels of expression, including a large increase in methylation between HML and telomere 3 L.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the overexpression experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "c6838b14-0488-4811-9902-69c4ce3f0bbe",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C58",
+      "claim": "The boundaries where methylation dropped to sir3\u2206::M.ECOGII levels at HML, HMR, and telomeres mainly remained fixed upon overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the boundaries where methylation dropped to sir3\u2206::M.ECOGII levels at HML, HMR, and telomeres mainly remained fixed in the two conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the overexpression experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "17fbe848-3396-4323-aea5-7dcd3c7ffe8d",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C59",
+      "claim": "Overexpression of Sir3 was not sufficient for spreading past most wild-type boundaries.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggested that overexpression of Sir3 was not sufficient for spreading past most wild-type boundaries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the overexpression experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "ee9d6126-9e9f-4582-9766-e7078ec56509",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C60",
+      "claim": "The original idea that overexpression of Sir3 results in its further spread relied on low-resolution RT-PCR at two telomeres, 5 R and 6 R.",
+      "claim_type": "EXPLICIT",
+      "source": "The original idea that overexpression of Sir3 results in its further spread relied on low-resolution RT-PCR at two telomeres, 5 R and 6 R (Hecht et al., 1996; Renauld et al., 1993; Strahl-Bolsinger et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about prior studies supported by cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "b5716646-ee95-40ff-92ca-88fab82dc335",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C61",
+      "claim": "In the genome-wide analysis, telomere 6 R was an exception, not the rule, as most telomeres did not show spreading of Sir3 upon its overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "In our genome-wide analysis, telomere 6 R was an exception, not the rule, as most telomeres did not show spreading of Sir3 upon its overexpression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the genome-wide Nanopore sequencing data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "a581c6b3-636f-40d1-aa80-2e137085ee08",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C62",
+      "claim": "Binding of Sir3 outside of HML, HMR, X elements, and telomere TG repeats was probabilistic.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggested that binding of Sir3 outside of HML, HMR, X elements, and telomere TG repeats was probabilistic: When Sir3 was overexpressed, its interactions outside of recruitment sites became more frequent, thus increasing the methylation signal produced by Sir3\u2013M.EcoGII.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the overexpression data showing increased methylation without boundary changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "732ab750-0e54-4538-9f89-a2568041def9",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C63",
+      "claim": "Most boundaries were left largely unchanged under overexpression conditions, in agreement with more recent Sir3 ChIP-seq results.",
+      "claim_type": "EXPLICIT",
+      "source": "However, most boundaries were left largely unchanged under overexpression conditions, in agreement with more recent Sir3 ChIP-seq results (Radman-Livaja et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the overexpression data supported by cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "d8281cb1-3058-43ba-8fbb-ab2db8b133a6",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C64",
+      "claim": "Other features, such as transcription, tRNA genes, histone variants like H2A.Z, or Sir3-inhibiting chromatin marks like methylation of H3 on lysine 79, may enforce boundaries that overexpression of Sir3 cannot overcome.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps other features, such as transcription, tRNA genes (Donze and Kamakaka, 2001; Simms et al., 2008; Valenzuela et al., 2009), the presence of histone variants like H2A.Z (Babiarz et al., 2006; Giaimo et al., 2019; Meneghini et al., 2003; Venkatasubrahmanyam et al., 2007), or the presence of Sir3-inhibiting chromatin marks like methylation of H3 on lysine 79 (Altaf et al., 2007; Ng et al., 2003; Ng et al., 2002; Oki et al., 2004; Park et al., 2002; Stulemeijer et al., 2011), enforce a boundary that overexpression of Sir3 itself cannot overcome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about possible boundary mechanisms supported by cited literature.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "61d0c044-6455-487e-9f32-7a90f1906af1",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C65",
+      "claim": "Repression of HML and HMR did not require that Sir3 occupy the entire locus to the level seen in wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Two results suggested that repression of HML and HMR did not require that Sir3 occupy the entire locus to the level seen in wild-type cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the time course and bah\u2206 mutant data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "390f66f1-fad3-45a4-b7e3-97b5ba658952",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C66",
+      "claim": "During the temperature switch time course, methylation by sir3-8-M.EcoGII appeared first and most strongly at promoters and silencers of HML and HMR, with little or no detectable methylation between these sites.",
+      "claim_type": "EXPLICIT",
+      "source": "During the temperature switch time course, methylation by sir3-8-M.EcoGII appeared first and most strongly at promoters and silencers of HML and HMR, with little or no detectable methylation between these sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the time course Nanopore sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "0a89218a-6df5-4ffe-916d-0a385159fab9",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C67",
+      "claim": "Partial transcriptional repression was already evident at both HML and HMR within 30 min of the temperature shift.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, partial transcriptional repression was already evident at both loci within 30 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the time course RT-qPCR data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "eddde61c-1ec7-4792-a8e1-b3f9c3f4354e",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C68",
+      "claim": "The gradual repression during the time course was consistent with single-cell studies that show gradual tuning down of transcription during silencing establishment.",
+      "claim_type": "EXPLICIT",
+      "source": "The gradual repression that appeared during the time course was consistent with single-cell studies that show gradual tuning down of transcription during silencing establishment (Goodnight and Rine, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with cited literature on single-cell silencing dynamics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "0318b0ad-4afe-43ec-8291-43f7f6e07fab",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C69",
+      "claim": "The level of repression achieved during the time course was commensurate with that expected within the first cell cycle following restoration of Sir3 function.",
+      "claim_type": "EXPLICIT",
+      "source": "The level of repression achieved during the time course was commensurate with that expected within the first cell cycle following restoration of Sir3 function (Goodnight and Rine, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with cited literature on silencing kinetics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "a6f9dc93-ece4-4714-af50-d580c903c984",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C70",
+      "claim": "sir3-bah\u2206 achieved some repression at both HML and HMR.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that sir3-bah\u2206, a nucleosome-binding mutant that was recruited to silencers and promoters but could not bind outside of them, achieved some repression at both HML and HMR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the RT-qPCR data on the bah\u2206 mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "b40e9369-d755-4e26-bd48-7fa9cd446cef",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C71",
+      "claim": "Repression was stronger at HMR than at HML in the bah\u2206 mutant, perhaps because HMR is smaller and less dependent on spreading.",
+      "claim_type": "EXPLICIT",
+      "source": "Repression was stronger at HMR than at HML in the bah\u2206 mutant, perhaps because HMR is smaller and less dependent on spreading.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the RT-qPCR data with a speculative explanation.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "c4b78a3e-3c0f-46af-8ac8-8ac7504fb801",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C72",
+      "claim": "The time course and bah\u2206 results together suggested a difference between repression of transcription per se and the stability of silencing ultimately achieved by the SIR complex binding over the entirety of HML and HMR.",
+      "claim_type": "EXPLICIT",
+      "source": "The time course and bah\u2206 results together suggested a difference between repression of transcription per se and the stability of silencing ultimately achieved by the SIR complex binding over the entirety of HML and HMR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined time course and bah\u2206 mutant data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "6cb3b1eb-9607-4705-90d4-7a5989e01579",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C73",
+      "claim": "By relaxing the requirement for stable binding to detect interaction of a protein with DNA or chromatin, the method could find binding sites of transcription factors and/or chromatin-binding proteins that elude detection by ChIP-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "By relaxing the requirement for stable binding to detect interaction of a protein with DNA or chromatin, the method could find binding sites of transcription factors and/or chromatin-binding proteins that elude detection by ChIP-seq.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential applications of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "4e585c93-b1c3-4922-81b7-3a7c4981dc96",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C74",
+      "claim": "With an inducible M.EcoGII fusion protein, one could track processes over time like the spread of heterochromatin proteins during X-chromosome inactivation, the movement of cohesin and condensin complexes along chromosomes, and the homology search during homologous recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, with an inducible M.EcoGII fusion protein, one could track processes over time like the spread of heterochromatin proteins during X-chromosome inactivation, the movement of cohesin and condensin complexes along chromosomes during chromosome pairing and condensation, and the homology search during homologous recombination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential applications of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "84eb5bb0-4b74-4b78-8633-fa47cda63392",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C75",
+      "claim": "Improvements in Nanopore technology and modified base-calling software will likely extend the method's utility to other processes that have directional movement along chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Improvements in Nanopore technology and modified base-calling software will likely extend the method's utility to other processes that have directional movement along chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future improvements and applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "455e485f-57ef-4988-aa7c-7a131ee4bb5b",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C76",
+      "claim": "S. cerevisiae has no endogenous DNA methylation and no demethylases.",
+      "claim_type": "EXPLICIT",
+      "source": "S. cerevisiae has no endogenous DNA methylation and no demethylases, allowing us to attribute m6A only to the activity of the fusion protein, reflecting where it resides as well as where it has been.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about S. cerevisiae used to justify the experimental approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "f46045a7-86c4-4ab7-bfc9-a7388c72fb05",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C77",
+      "claim": "M.EcoGII has no specific recognition sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "M.EcoGII has no specific recognition sequence, which should provide more resolution than methyltransferases like E. coli Dam, which has a four basepair recognition site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a property of M.EcoGII used to justify its use in the method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "47492021-3326-4039-87e0-244f784f5a9a",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C78",
+      "claim": "The positions of Sir3\u2013M.EcoGII can be determined by immunoprecipitation with an antibody against m6A followed by sequencing the precipitated DNA using Illumina sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "The positions of Sir3\u2013M.EcoGII can be determined conventionally by immunoprecipitation with an antibody against m6A followed by sequencing the precipitated DNA using Illumina sequencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes one implementation of the method used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "938bb56e-a923-4ae8-a14b-9c9569ea1a88",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C79",
+      "claim": "The more powerful implementation of the method comes from distinguishing between individual m6A bases and unmodified A bases using long-read Nanopore sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "The more powerful implementation would come from distinguishing between individual m6A bases and unmodified A bases using long-read Nanopore sequencing (Xu and Seki, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the preferred implementation of the method with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "c69d6e09-dadc-4490-8a87-447e3ffe0985",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C80",
+      "claim": "The expression level of the fusion protein could increase the levels of background methylation.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression level of the fusion protein could increase the levels of background methylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation of the method observed with Sir2-M.EcoGII.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "f2aae9a2-3454-4494-9c63-cfab2bad115a",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C81",
+      "claim": "Methylation at the level of single reads was variable and spotty, possibly due to transient occupancies or computational limitations.",
+      "claim_type": "EXPLICIT",
+      "source": "Methylation at the level of single reads was variable and spotty, possibly due to at least two contributors. There may be occupancies that are too transient to allow methylation. Secondly, computational limitations for calling modified adenines without a guiding sequence motif meant that lower-confidence (probably <0.8) m6A calls were not considered methylated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation of the method discussed by the authors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "433128a5-5516-4e0c-a167-748348acf325",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "claim_id": "C82",
+      "claim": "Because this method can capture transient interactions better than methods like ChIP-seq it may overestimate degrees of occupancy unless combined with DIP- or ChIP-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "Because this method can capture transient interactions better than methods like ChIP-seq it may overestimate degrees of occupancy unless combined with DIP- or ChIP-seq.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation of the method discussed by the authors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a237e618-82a0-49c3-8bd2-21d9c7db609c",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a novel method using a Sir3-M.EcoGII fusion protein to map Sir3-chromatin interactions genome-wide. The fusion protein retained full silencing function and produced methylation signals detectable by both DIP-seq and Nanopore sequencing, with Nanopore providing single-basepair resolution. The method captured a broader and stronger signal than ChIP-seq, suggesting detection of transient chromatin interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C8-C13 provide converging evidence that the Sir3-M.EcoGII fusion is functional (RT-qPCR), produces specific methylation signals (DIP-seq controls), and that multiple detection methods agree (DIP-seq vs Nanopore). The methodological foundation (C76-C79) is well-established. The comparison showing broader signal than ChIP-seq (C10) is directly supported by Figure 1C data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "9bc41865-12a6-420f-afca-cb73e26f237f",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The BAH domain of Sir3 is required for spreading but not recruitment. The sir3-bah\u0394 mutant was recruited to silencers at HML, HMR, and telomeres but could not spread beyond recruitment sites, demonstrating that nucleosome-binding activity is essential for spreading but dispensable for initial recruitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4, C23-C28, C30-C31 provide consistent evidence across multiple loci (HML, HMR, telomeres) using both aggregate and single-read Nanopore data (Figures 2D-G). The mutant shows methylation at silencers/promoters but not gene bodies (C27-C28), directly supporting the recruitment vs. spreading distinction. Protein stability controls (C23) rule out indirect effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "51f2ba59-bb60-4232-b1b7-6f481816c54d",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Sir3 overexpression does not lead to spreading beyond wild-type boundaries at most genomic loci. While 10-fold overexpression increased methylation intensity within existing heterochromatin domains, boundaries remained largely fixed at HML, HMR, and 29 of 32 telomeres, indicating that Sir3 levels are not the universal limiting factor for heterochromatin spread.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C39, C57-C59, C61-C63 provide genome-wide Nanopore and ChIP-seq evidence (Figures 3D-F, supplements) showing increased signal within domains but stable boundaries. The finding contradicts prior low-resolution studies (C32, C60) but is supported by recent ChIP-seq (C63). Only 3/32 telomeres showed spreading (C39), making this a robust genome-wide conclusion. The probabilistic binding model (C62) reasonably explains increased intensity without boundary changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "41298f31-81af-42d3-aa62-e76b56e07957",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Transcriptional repression at HML and HMR begins before Sir3 occupies the entire locus. Using a temperature-sensitive sir3-8 allele, the authors found that partial repression occurred within 30 minutes when Sir3 was only detected at silencers and promoters, before spreading to gene bodies. This was corroborated by the sir3-bah\u0394 mutant achieving partial repression despite inability to spread.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C51, C66-C67 provide time-course data (Figure 4D-E) showing methylation first at silencers/promoters with concurrent partial repression before full spreading. The bah\u0394 mutant data (C70-C71) independently supports that recruitment alone enables partial repression. The gradual repression kinetics (C68-C69) align with cited single-cell studies. Together, these orthogonal approaches (time-course and mutant) strongly support the conclusion about early repression (C51, C65, C72).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "ae250f03-863c-4f99-b73f-4b6cdac30c03",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Sir3-M.EcoGII methylation shows periodic patterns corresponding to nucleosome positioning. Single-read analysis revealed higher methylation in linker regions between nucleosomes at HML, HMR, and telomeres, with lower but detectable methylation within nucleosome-occupied regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C17 are directly supported by single-read Nanopore data (Figure 1E, supplements) and comparison with nucleosome occupancy data (Figure 1\u2014supplement 3). The periodicity is visible in the figures and quantitatively supported (C16). The observation of lower methylation in nucleosomal regions (C17) is consistent with chromatin accessibility principles and cited literature. Claim C29 extends this to telomeres.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "62fa0b87-7bdf-4825-8661-0d72f692c191",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The methylation-based method captures transient Sir3-chromatin interactions that ChIP-seq cannot detect. Methylation signals were stronger and broader than ChIP-seq occupancy, suggesting the method records both stable binding and transient contacts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C52 is directly supported by comparison of DIP-seq/Nanopore with ChIP-seq (Figure 1C, C10). The interpretation about transient interactions (C52-C53) is reasonable given that methylation is cumulative while ChIP captures snapshots. However, C82 appropriately notes this as a limitation requiring complementary ChIP/DIP-seq for accurate occupancy estimates. The conclusion is well-supported but the limitation is acknowledged.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "08940d73-a663-4e54-a533-25ac182cda5d",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Heterochromatin formation in S. cerevisiae involves sequence-specific recruitment of Sir proteins to silencers followed by sequence-independent spreading through nucleosome and Sir protein interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1, C18-C20) represent established knowledge about yeast heterochromatin formation, supported by extensive prior literature. They provide the conceptual framework for the study but are not novel findings from this work. The evidence type is listed as KNOWLEDGE, indicating these are well-accepted principles in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "dc7c3f95-bba7-4f71-92e0-47953ebdb0fb",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In S. pombe, heterochromatin spreading requires a 'read-write' mechanism involving H3K9 methylation recognition, while nucleation does not require this mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 are statements about S. pombe heterochromatin supported by multiple citations. These provide comparative context for the S. cerevisiae findings but are not novel results from this study. The evidence type is CITATION, indicating reliance on prior published work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "494e9e6f-d06f-4966-a993-f4c4ba2034b9",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The methylation-based method has potential applications for studying other chromatin processes including transcription factor binding, X-chromosome inactivation, cohesin/condensin movement, and homologous recombination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C73-C75 are speculative statements about potential future applications (evidence type: SPECULATION). While the speculation is reasonable given the method's capabilities, no experimental validation of these applications is provided. These represent promising directions but remain untested hypotheses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    },
+    {
+      "id": "8b9d04a5-aad0-4e7b-868f-6fb081f5b8bf",
+      "content_id": "262c3c40-6bd9-4ba9-bcb8-c078de89b988",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The method has limitations including potential background methylation from high fusion protein expression and variable single-read methylation patterns due to transient occupancy or computational constraints.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C81 describe observed limitations of the method. C80 is supported by data from Sir2-M.EcoGII showing elevated background. C81 discusses computational limitations in base-calling (probability threshold <0.8) and possible biological factors (transient occupancy). These are honest assessments of method limitations supported by the authors' observations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:25.332897Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "45bd9add-d0cd-4949-bb87-e2cabeadbf34",
+      "result_id": "a237e618-82a0-49c3-8bd2-21d9c7db609c"
+    },
+    {
+      "claim_id": "380ef66c-8d37-4f42-8406-01f51e341168",
+      "result_id": "a237e618-82a0-49c3-8bd2-21d9c7db609c"
+    },
+    {
+      "claim_id": "d116ceb7-90a1-4746-92bc-0b0c19850041",
+      "result_id": "a237e618-82a0-49c3-8bd2-21d9c7db609c"
+    },
+    {
+      "claim_id": "0790bcc4-5622-4399-af5d-61b19f6391a9",
+      "result_id": "a237e618-82a0-49c3-8bd2-21d9c7db609c"
+    },
+    {
+      "claim_id": "ff709dcd-c060-4e68-afea-babe428f03db",
+      "result_id": "a237e618-82a0-49c3-8bd2-21d9c7db609c"
+    },
+    {
+      "claim_id": "de8765a1-04eb-468e-967c-d7cb344d87d6",
+      "result_id": "a237e618-82a0-49c3-8bd2-21d9c7db609c"
+    },
+    {
+      "claim_id": "f7b9bf8b-e945-4b8c-8628-bbf3e6311138",
+      "result_id": "a237e618-82a0-49c3-8bd2-21d9c7db609c"
+    },
+    {
+      "claim_id": "455e485f-57ef-4988-aa7c-7a131ee4bb5b",
+      "result_id": "a237e618-82a0-49c3-8bd2-21d9c7db609c"
+    },
+    {
+      "claim_id": "f46045a7-86c4-4ab7-bfc9-a7388c72fb05",
+      "result_id": "a237e618-82a0-49c3-8bd2-21d9c7db609c"
+    },
+    {
+      "claim_id": "47492021-3326-4039-87e0-244f784f5a9a",
+      "result_id": "a237e618-82a0-49c3-8bd2-21d9c7db609c"
+    },
+    {
+      "claim_id": "938bb56e-a923-4ae8-a14b-9c9569ea1a88",
+      "result_id": "a237e618-82a0-49c3-8bd2-21d9c7db609c"
+    },
+    {
+      "claim_id": "5bb94935-2224-417e-b0a9-8ba1d4515c91",
+      "result_id": "9bc41865-12a6-420f-afca-cb73e26f237f"
+    },
+    {
+      "claim_id": "2810977c-2785-4b2b-a420-14a5c576229f",
+      "result_id": "9bc41865-12a6-420f-afca-cb73e26f237f"
+    },
+    {
+      "claim_id": "211c3fcf-0e87-4e62-bcf1-6bd1dabdb52c",
+      "result_id": "9bc41865-12a6-420f-afca-cb73e26f237f"
+    },
+    {
+      "claim_id": "4388cbd1-e7d9-4764-ab89-d14dbc0f9aad",
+      "result_id": "9bc41865-12a6-420f-afca-cb73e26f237f"
+    },
+    {
+      "claim_id": "b12ce457-912b-4cef-afa7-e701f2cadb00",
+      "result_id": "9bc41865-12a6-420f-afca-cb73e26f237f"
+    },
+    {
+      "claim_id": "42c154cd-1590-46a1-a41b-1c89414a92d0",
+      "result_id": "9bc41865-12a6-420f-afca-cb73e26f237f"
+    },
+    {
+      "claim_id": "c851ba1b-0f16-4154-9b6b-d5fe91cae6b8",
+      "result_id": "9bc41865-12a6-420f-afca-cb73e26f237f"
+    },
+    {
+      "claim_id": "cf919970-4a47-4ba6-9ae8-2d196172f0db",
+      "result_id": "9bc41865-12a6-420f-afca-cb73e26f237f"
+    },
+    {
+      "claim_id": "5fa722f2-fb60-441b-b006-ae8ae27155bd",
+      "result_id": "9bc41865-12a6-420f-afca-cb73e26f237f"
+    },
+    {
+      "claim_id": "1b26a4ce-cc98-4dfd-a815-acdaba8156bf",
+      "result_id": "9bc41865-12a6-420f-afca-cb73e26f237f"
+    },
+    {
+      "claim_id": "203b9da1-17c1-43ce-a8dc-5fbd545d8992",
+      "result_id": "9bc41865-12a6-420f-afca-cb73e26f237f"
+    },
+    {
+      "claim_id": "10851270-c68a-44f6-8645-e5b00c5f0897",
+      "result_id": "9bc41865-12a6-420f-afca-cb73e26f237f"
+    },
+    {
+      "claim_id": "55f8e941-f29f-4da6-8dcd-f5a9868dbc6f",
+      "result_id": "9bc41865-12a6-420f-afca-cb73e26f237f"
+    },
+    {
+      "claim_id": "a5a5e5c8-78f9-4ddb-a3c2-3b5a3807e640",
+      "result_id": "51f2ba59-bb60-4232-b1b7-6f481816c54d"
+    },
+    {
+      "claim_id": "c529bc61-fffb-4d25-8039-ed3a644bdf37",
+      "result_id": "51f2ba59-bb60-4232-b1b7-6f481816c54d"
+    },
+    {
+      "claim_id": "7c1cb18c-4eda-4084-a5c2-85c24c4b57be",
+      "result_id": "51f2ba59-bb60-4232-b1b7-6f481816c54d"
+    },
+    {
+      "claim_id": "dfc12dd5-15bf-4d80-81b6-21c5282aa009",
+      "result_id": "51f2ba59-bb60-4232-b1b7-6f481816c54d"
+    },
+    {
+      "claim_id": "dbec8122-e9a1-4b57-93e4-f378bb6ac9d8",
+      "result_id": "51f2ba59-bb60-4232-b1b7-6f481816c54d"
+    },
+    {
+      "claim_id": "267a1ff9-f163-42e3-acd1-ae72f3763d95",
+      "result_id": "51f2ba59-bb60-4232-b1b7-6f481816c54d"
+    },
+    {
+      "claim_id": "8c2795c1-0c6c-432b-aa4d-687bfaefa429",
+      "result_id": "51f2ba59-bb60-4232-b1b7-6f481816c54d"
+    },
+    {
+      "claim_id": "4e6baaa8-98f2-4698-84f6-d622de4c4a25",
+      "result_id": "51f2ba59-bb60-4232-b1b7-6f481816c54d"
+    },
+    {
+      "claim_id": "0505a145-f641-492d-b75d-9d6df495c2f7",
+      "result_id": "51f2ba59-bb60-4232-b1b7-6f481816c54d"
+    },
+    {
+      "claim_id": "b74a15d6-283a-4c8c-be6f-b4f4b992496f",
+      "result_id": "51f2ba59-bb60-4232-b1b7-6f481816c54d"
+    },
+    {
+      "claim_id": "779e2f9b-5be0-4a43-bb12-16e0a3b3d920",
+      "result_id": "51f2ba59-bb60-4232-b1b7-6f481816c54d"
+    },
+    {
+      "claim_id": "b4142b47-c5f1-423d-89a8-4211495601d2",
+      "result_id": "51f2ba59-bb60-4232-b1b7-6f481816c54d"
+    },
+    {
+      "claim_id": "fc81f4a5-42e7-4991-989b-f8c5f3b36195",
+      "result_id": "51f2ba59-bb60-4232-b1b7-6f481816c54d"
+    },
+    {
+      "claim_id": "c6838b14-0488-4811-9902-69c4ce3f0bbe",
+      "result_id": "51f2ba59-bb60-4232-b1b7-6f481816c54d"
+    },
+    {
+      "claim_id": "17fbe848-3396-4323-aea5-7dcd3c7ffe8d",
+      "result_id": "51f2ba59-bb60-4232-b1b7-6f481816c54d"
+    },
+    {
+      "claim_id": "ee9d6126-9e9f-4582-9766-e7078ec56509",
+      "result_id": "51f2ba59-bb60-4232-b1b7-6f481816c54d"
+    },
+    {
+      "claim_id": "b5716646-ee95-40ff-92ca-88fab82dc335",
+      "result_id": "51f2ba59-bb60-4232-b1b7-6f481816c54d"
+    },
+    {
+      "claim_id": "a581c6b3-636f-40d1-aa80-2e137085ee08",
+      "result_id": "51f2ba59-bb60-4232-b1b7-6f481816c54d"
+    },
+    {
+      "claim_id": "732ab750-0e54-4538-9f89-a2568041def9",
+      "result_id": "51f2ba59-bb60-4232-b1b7-6f481816c54d"
+    },
+    {
+      "claim_id": "d8281cb1-3058-43ba-8fbb-ab2db8b133a6",
+      "result_id": "51f2ba59-bb60-4232-b1b7-6f481816c54d"
+    },
+    {
+      "claim_id": "a0f9dcd0-4511-4f5d-8097-7c4fe9034979",
+      "result_id": "41298f31-81af-42d3-aa62-e76b56e07957"
+    },
+    {
+      "claim_id": "ad1616cb-8654-4399-8e3c-981ddcec4325",
+      "result_id": "41298f31-81af-42d3-aa62-e76b56e07957"
+    },
+    {
+      "claim_id": "d3af8f36-f3bb-467b-b544-4c0484f73d24",
+      "result_id": "41298f31-81af-42d3-aa62-e76b56e07957"
+    },
+    {
+      "claim_id": "10242212-bb00-43d3-9bfc-a87b16006897",
+      "result_id": "41298f31-81af-42d3-aa62-e76b56e07957"
+    },
+    {
+      "claim_id": "f62727ee-2b2e-42dc-b45a-cff033cd0af0",
+      "result_id": "41298f31-81af-42d3-aa62-e76b56e07957"
+    },
+    {
+      "claim_id": "b7e9ad72-e617-4bc7-a1b3-fcb5b79d8921",
+      "result_id": "41298f31-81af-42d3-aa62-e76b56e07957"
+    },
+    {
+      "claim_id": "9e8137f2-0d15-479e-978a-c5a50a91f78a",
+      "result_id": "41298f31-81af-42d3-aa62-e76b56e07957"
+    },
+    {
+      "claim_id": "4c0d1716-394a-450f-a365-3eba559e2acc",
+      "result_id": "41298f31-81af-42d3-aa62-e76b56e07957"
+    },
+    {
+      "claim_id": "8ca41aab-ede8-4f7c-a759-e2b1f50e65d7",
+      "result_id": "41298f31-81af-42d3-aa62-e76b56e07957"
+    },
+    {
+      "claim_id": "ed040d38-5307-40ea-bbcd-0165322bc11f",
+      "result_id": "41298f31-81af-42d3-aa62-e76b56e07957"
+    },
+    {
+      "claim_id": "50dc9ee1-36c9-474b-924c-873f197d988a",
+      "result_id": "41298f31-81af-42d3-aa62-e76b56e07957"
+    },
+    {
+      "claim_id": "61d0c044-6455-487e-9f32-7a90f1906af1",
+      "result_id": "41298f31-81af-42d3-aa62-e76b56e07957"
+    },
+    {
+      "claim_id": "390f66f1-fad3-45a4-b7e3-97b5ba658952",
+      "result_id": "41298f31-81af-42d3-aa62-e76b56e07957"
+    },
+    {
+      "claim_id": "0a89218a-6df5-4ffe-916d-0a385159fab9",
+      "result_id": "41298f31-81af-42d3-aa62-e76b56e07957"
+    },
+    {
+      "claim_id": "eddde61c-1ec7-4792-a8e1-b3f9c3f4354e",
+      "result_id": "41298f31-81af-42d3-aa62-e76b56e07957"
+    },
+    {
+      "claim_id": "0318b0ad-4afe-43ec-8291-43f7f6e07fab",
+      "result_id": "41298f31-81af-42d3-aa62-e76b56e07957"
+    },
+    {
+      "claim_id": "a6f9dc93-ece4-4714-af50-d580c903c984",
+      "result_id": "41298f31-81af-42d3-aa62-e76b56e07957"
+    },
+    {
+      "claim_id": "b40e9369-d755-4e26-bd48-7fa9cd446cef",
+      "result_id": "41298f31-81af-42d3-aa62-e76b56e07957"
+    },
+    {
+      "claim_id": "c4b78a3e-3c0f-46af-8ac8-8ac7504fb801",
+      "result_id": "41298f31-81af-42d3-aa62-e76b56e07957"
+    },
+    {
+      "claim_id": "1e386db9-e5d9-400f-8198-c02f9e90b103",
+      "result_id": "ae250f03-863c-4f99-b73f-4b6cdac30c03"
+    },
+    {
+      "claim_id": "8fdbdb5d-b978-46d7-af1e-e665fb4c4da2",
+      "result_id": "ae250f03-863c-4f99-b73f-4b6cdac30c03"
+    },
+    {
+      "claim_id": "0c8ca158-8779-4a8d-9de7-cba5c9ed8c06",
+      "result_id": "ae250f03-863c-4f99-b73f-4b6cdac30c03"
+    },
+    {
+      "claim_id": "aad33e6a-4326-4b45-886e-961ee0f3fcb4",
+      "result_id": "ae250f03-863c-4f99-b73f-4b6cdac30c03"
+    },
+    {
+      "claim_id": "4d7dd785-2076-4dcf-b252-917c4748f12d",
+      "result_id": "ae250f03-863c-4f99-b73f-4b6cdac30c03"
+    },
+    {
+      "claim_id": "5bbac904-1f35-43a7-a017-80e99044d2d2",
+      "result_id": "62fa0b87-7bdf-4825-8661-0d72f692c191"
+    },
+    {
+      "claim_id": "d2ef8ea0-1255-46e5-8483-c827734461da",
+      "result_id": "62fa0b87-7bdf-4825-8661-0d72f692c191"
+    },
+    {
+      "claim_id": "433128a5-5516-4e0c-a167-748348acf325",
+      "result_id": "62fa0b87-7bdf-4825-8661-0d72f692c191"
+    },
+    {
+      "claim_id": "231b4123-1789-4787-85b5-4802a39c913a",
+      "result_id": "08940d73-a663-4e54-a533-25ac182cda5d"
+    },
+    {
+      "claim_id": "d089c818-aaff-40c3-b5f1-3fe32036e226",
+      "result_id": "08940d73-a663-4e54-a533-25ac182cda5d"
+    },
+    {
+      "claim_id": "315a6708-9f36-48ad-9d1d-5dc3fd911186",
+      "result_id": "08940d73-a663-4e54-a533-25ac182cda5d"
+    },
+    {
+      "claim_id": "a4aa519a-05a2-467a-a72c-471261426f00",
+      "result_id": "08940d73-a663-4e54-a533-25ac182cda5d"
+    },
+    {
+      "claim_id": "b11150c9-fcd5-478c-ba5f-da0f2647dea0",
+      "result_id": "dc7c3f95-bba7-4f71-92e0-47953ebdb0fb"
+    },
+    {
+      "claim_id": "e0f29bca-7baa-40bd-92f1-bc4a9f34fc97",
+      "result_id": "dc7c3f95-bba7-4f71-92e0-47953ebdb0fb"
+    },
+    {
+      "claim_id": "6cb3b1eb-9607-4705-90d4-7a5989e01579",
+      "result_id": "494e9e6f-d06f-4966-a993-f4c4ba2034b9"
+    },
+    {
+      "claim_id": "4e585c93-b1c3-4922-81b7-3a7c4981dc96",
+      "result_id": "494e9e6f-d06f-4966-a993-f4c4ba2034b9"
+    },
+    {
+      "claim_id": "84eb5bb0-4b74-4b78-8633-fa47cda63392",
+      "result_id": "494e9e6f-d06f-4966-a993-f4c4ba2034b9"
+    },
+    {
+      "claim_id": "c69d6e09-dadc-4490-8a87-447e3ffe0985",
+      "result_id": "8b9d04a5-aad0-4e7b-868f-6fb081f5b8bf"
+    },
+    {
+      "claim_id": "f2aae9a2-3454-4494-9c63-cfab2bad115a",
+      "result_id": "8b9d04a5-aad0-4e7b-868f-6fb081f5b8bf"
+    }
+  ],
+  "comparisons": []
+}

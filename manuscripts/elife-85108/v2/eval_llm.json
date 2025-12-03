@@ -1,0 +1,353 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C28",
+      "C29",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Large-scale neural recordings were obtained from the inferior colliculus (IC) of gerbils using 512-channel electrode arrays, capturing multi-unit activity with millisecond temporal precision during presentation of speech and noise stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C28, C29, C119-C122 collectively describe the experimental methodology. The use of large-scale recordings (512 channels), the animal model (gerbils), temporal precision (1.3 ms bins), and ethical approval are all documented. The methodology is well-established and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Signal correlations dominated over noise correlations in IC recordings, with signal variance accounting for 40% of overall variance but signal correlations accounting for 95% of total correlation between units.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 present quantitative measurements from the neural recordings shown in Figure 1c. The distinction between signal and noise is methodologically sound and consistent with prior work (Garcia-Lazaro et al., 2013). The measurements support the conclusion that signal correlations dominate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C33",
+      "C34"
+    ],
+    "result": "The neural signal manifold for speech encoding in the IC is low-dimensional, requiring only 5-10 principal components to explain 95% of signal variance, and is highly consistent across normal hearing animals (96% variance explained).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C33, C34 describe PCA results shown in Figures 2b-e. The low dimensionality is demonstrated through systematic analysis with appropriate train/test splits. The high cross-animal consistency (96%) validates that the signal manifold is fundamental and robust, not an artifact of individual recordings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Hearing loss was induced via noise exposure, and the resulting signal manifold remained low-dimensional (4-7 PCs for 95% variance) with high consistency across hearing loss animals (95% variance explained).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 describe the hearing loss induction protocol and PCA results for hearing loss animals shown in Figures 2f-h. The methodology follows established protocols (cited), and the results demonstrate that low-dimensional structure persists after hearing loss, though with altered dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Hearing loss profoundly distorts neural signal dynamics in a nonlinear manner, with only 78% similarity between normal hearing and hearing loss signal dynamics, indicating the distortion cannot be explained by linear transformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C38-C40 present the key finding that hearing loss fundamentally alters signal dynamics (Figure 2h-i). The 78% similarity is significantly lower than within-group comparisons (96% and 95%), and the inference that this represents nonlinear distortion is logically sound given that linear predictability would yield higher similarity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C41",
+      "C42",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Deep neural networks with bottleneck architectures accurately replicate IC neural activity, approaching 100% of explainable variance for high-quality units, with optimal performance at 8 bottleneck channels, while providing interpretable low-dimensional dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C41-C42, C114-C116 describe DNN performance shown in Figure 3c. The high accuracy (>95% explainable variance in many cases) and consistency with PCA dimensionality (8 channels) validate the approach. The bottleneck architecture successfully combines prediction accuracy with interpretability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "DNN-derived signal dynamics show 97% similarity within hearing status groups but only 87% similarity between normal hearing and hearing loss animals, consistent with PCA-based findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 present DNN-based cross-animal comparisons (Figure 3d-e). The results parallel the PCA findings (C34, C37, C38), providing independent validation. The slightly higher similarity (87% vs 78%) may reflect the DNN's ability to remove residual noise, as noted in the text.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "DNNs trained on speech generalize to predict responses to pure tones (83% explainable variance) and, via transfer learning with frozen encoders, to new animals for SAM noise (85% explainable variance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 demonstrate DNN generalization (Figures 3f-g). The high performance on novel stimuli and new animals validates that the learned representations capture fundamental auditory processing. However, the authors appropriately note this is limited evidence and more extensive validation would strengthen the claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Hearing loss fundamentally disrupts spectral processing at the network level, causing trajectories for different tone frequencies to cluster into low and high frequency groups, with RDM similarity of only 0.59 at moderate intensity and 0.78 at best intensity, and CCA similarity of 0.37 and 0.88 respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C47-C52 describe spectral processing deficits shown in Figure 4. The clustering phenomenon is clearly visible in the dynamics (Figure 4d) and quantified through RSA and CCA. The persistence of distortion even at best intensity (0.78 RDM, 0.88 CCA vs. 0.91 and 0.98 for normal hearing) demonstrates suprathreshold effects beyond audibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Hearing loss has minimal impact on temporal processing beyond decreased audibility, with RDM similarity recovering from 0.76 at moderate intensity to 0.99 at best intensity, and CCA similarity recovering to 0.95.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 describe SAM noise results (Figure 5). The near-complete recovery of similarity at best intensity (0.99 RDM, 0.95 CCA) contrasts sharply with the persistent spectral deficits, supporting the conclusion that temporal processing is largely preserved. The inference (C57) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "For consonants in quiet, hearing loss reduces RDM similarity from 0.94 to 0.23 at conversational intensity, recovering to 0.87 at best intensity and 0.91 with hearing aid; decoding performance improves from 41% to 47% (best intensity) to 49% (hearing aid) compared to 55% for normal hearing, suggesting amplification largely corrects distortions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C68 describe speech-in-quiet results (Figure 6). The progressive improvement with intensity and hearing aid amplification is well-documented. The inference (C68) that residual distortions are minor is supported by the near-normal RDM similarity (0.91) and modest decoding deficit (49% vs 55%), though statistical significance of the decoding difference should be verified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "For consonants in noise, hearing loss causes hypersensitivity to background noise that persists after amplification, with RDM similarity of only 0.15 at high intensity, improving to 0.62 (best intensity) or 0.56 (hearing aid) but remaining far below normal (0.89); decoding performance remains severely impaired at 22-23% compared to 32% for normal hearing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C69-C77 describe speech-in-noise results (Figure 7). The persistent low similarity even with amplification (0.56-0.62 vs 0.89) and poor decoding (22-23% vs 32%) demonstrate that hearing aids fail to correct speech-in-noise deficits. Statistical comparisons (C73) confirm speech-in-noise is significantly worse than speech-in-quiet.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "MCCA analysis reveals that for speech in noise, the balance of variance between neural subspaces encoding speech versus background noise is tilted toward noise in hearing loss animals (first CC: 56% vs 38% variance; second CC: 28% vs 41%), and this imbalance persists with hearing aid amplification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C83 describe MCCA results (Figure 8a-d). The quantitative shift in variance allocation provides mechanistic insight into the hypersensitivity to background noise. The persistence with hearing aid (Figure 8d) explains why amplification fails to correct speech-in-noise deficits. The inference (C82-C83) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C7",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Hearing loss creates nonlinear distortions in cross-frequency interactions, with low-frequency maskers having increased disruptive effects on high-frequency targets (correlation typically lower than normal), and this distortion persists at best intensity and with hearing aid amplification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C84-C86 describe narrowband target/masker results (Figure 8e-i). The increased disruption of high-frequency targets by low-frequency maskers directly demonstrates aberrant cross-frequency interactions. The persistence with amplification (Figure 8h-i) supports the conclusion that these are nonlinear distortions that cannot be corrected by simple gain adjustments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "Changes in spectral processing, particularly cross-frequency interactions, are the primary problem caused by hearing loss, though impaired spectral processing for simple tones does not appear to be a major problem for speech in quiet given that amplification corrects many distortions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 synthesize findings across multiple experiments. The conclusion that spectral processing is the primary problem is supported by the contrast between preserved temporal processing (C57) and disrupted spectral processing (C52). The distinction between tones and speech-in-quiet (C88) is supported by comparing Figures 4 and 6.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Hearing loss is a widespread problem with significant societal impact, and while hearing aids are the only widely available treatment, they provide limited benefit in many settings, particularly for high-intensity sounds and speech in noise, due to poorly understood suprathreshold deficits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C17 establish the clinical and scientific context. These are well-established facts supported by appropriate citations (Wilson et al. 2017, WHO 2021, Lesica 2018, Moore 2007, Larson et al. 2000). The statement about clinical neglect (C17) is a reasonable inference from the lack of understanding (C16).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "While consequences of cochlear damage are well-described at the auditory nerve level (decreased activity, lost synchrony capture, distorted tonotopy), few studies have compared neural coding in central areas before and after hearing loss, making it difficult to identify which peripheral changes are most important.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C24 review prior work on hearing loss effects. The citations (Young 2008, Miller et al. 1997, Henry et al. 2016, Armstrong et al. 2022) support the statements about auditory nerve changes and limited central studies. The characterization of the knowledge gap (C22) appropriately motivates the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Neural coding in complex areas like the IC likely involves emergent network-level properties not apparent in individual neurons, and manifold learning techniques like PCA can identify compact representations that retain important features; gerbils are a common animal model for human hearing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 establish the rationale for the methodological approach. The inference about emergent properties (C25) is reasonable given IC complexity. The description of manifold learning (C26) is supported by appropriate citations (Mitchell-Heggs et al. 2023, Williamson et al. 2019). The statement about gerbils (C27) is established knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The results are consistent with prior studies showing hearing loss impacts phoneme selectivity in IC, listeners struggle to combine temporal envelope cues across frequency channels, auditory nerve fibers with high CFs respond excessively to low-frequency sounds, and cortical neurons show altered gain and tonotopy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C99 place results in context of prior work. All statements are supported by appropriate citations (Armstrong et al. 2022, Healy & Bacon 2002, Grant et al. 2007, Young 2012, Parida & Heinz 2022, McGill et al. 2022). The consistency with prior work strengthens confidence in the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The complex nonlinear effects of hearing loss present challenges for current hearing aid designs based on bandpass filters with automatic gain control; while DNN-based speech enhancement shows promise, and DNNs could potentially identify optimal processing algorithms empirically, significant technical challenges remain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C106 discuss implications for hearing aid design. The characterization of current hearing aids (C101) is established knowledge. The inference about limitations (C102) follows logically from the nonlinear cross-frequency interactions demonstrated. Citations support statements about DNN speech enhancement (Wang 2017, Luo & Mesgarani 2019) and challenges (Geirnaert et al. 2021). The speculation about empirical optimization (C106) is appropriately tentative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C117",
+      "C118"
+    ],
+    "result": "Most people with hearing loss have mild-to-moderate damage with sufficient remaining functionality for hearing aids to leverage; while peripheral models are highly accurate, brain models have been less accurate, but recent DNN approaches show promise for modeling sensory processing and could enable exploratory research and technology development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C113, C117-C118 discuss the broader context of computational modeling. All factual statements are supported by appropriate citations (Wilson et al. 2017, Saremi et al. 2016, Verhulst et al. 2018, Baby et al. 2021, Maheswaranathan et al. 2019, Cadena et al. 2019, etc.). The speculations about future applications (C117-C118) are appropriately tentative.",
+    "result_type": "MINOR"
+  }
+]

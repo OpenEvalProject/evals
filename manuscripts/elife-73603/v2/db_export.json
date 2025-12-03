@@ -1,0 +1,1702 @@
+{
+  "submission": {
+    "id": "5e0b0a68-eccf-4661-a37e-8d1bd0dfa43f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T11:15:22.338017Z",
+    "updated_at": "2025-12-03T11:15:22.338017Z"
+  },
+  "content": [
+    {
+      "id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "submission_id": "5e0b0a68-eccf-4661-a37e-8d1bd0dfa43f",
+      "content_type": "manuscript",
+      "content_text": "# Environmental enrichment enhances patterning and remodeling of synaptic nanoarchitecture as revealed by STED nanoscopy\n\n## Authors\n\n- Waja Wegner<sup>1</sup>\n- Heinz Steffens<sup>1</sup>\n- Carola Gregor<sup>3</sup>\n- Fred Wolf<sup>5</sup>\n- Katrin I Willig<sup>1</sup> ([ORCID: 0000-0002-1860-334X](https://orcid.org/0000-0002-1860-334X)) \u2020\n\n### Affiliations\n\n1. Optical Nanoscopy in Neuroscience, Center for Nanoscale Microscopy and Molecular Physiology of the Brain, University Medical Center G\u00f6ttingen G\u00f6ttingen Germany ([ROR:021ft0n22](https://ror.org/021ft0n22))\n2. Max Planck Institute for Multidisciplinary Sciences, City Campus G\u00f6ttingen Germany\n3. Department of NanoBiophotonics, Max Planck Institute for Multidisciplinary Sciences G\u00f6ttingen Germany\n4. Department of Optical Nanoscopy, Institut f\u00fcr Nanophotonik G\u00f6ttingen e.V. G\u00f6ttingen Germany\n5. Cluster of Excellence \"Multiscale Bioimaging: from Molecular Machines to Networks of Excitable Cells\" (MBExC), University of G\u00f6ttingen G\u00f6ttingen Germany ([ROR:01y9bpm73](https://ror.org/01y9bpm73))\n6. Max Planck Institute for Dynamics and Self-Organization G\u00f6ttingen Germany ([ROR:0087djs12](https://ror.org/0087djs12))\n7. G\u00f6ttingen Campus Institute for Dynamics of Biological Networks G\u00f6ttingen Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nSynaptic plasticity underlies long-lasting structural and functional changes to brain circuitry and its experience-dependent remodeling can be fundamentally enhanced by environmental enrichment. It is however unknown, whether and how the environmental enrichment alters the morphology and dynamics of individual synapses. Here, we present a virtually crosstalk-free two-color in vivo stimulated emission depletion (STED) microscope to simultaneously superresolve the dynamics of endogenous PSD95 of the post-synaptic density and spine geometry in the mouse cortex. In general, the spine head geometry and PSD95 assemblies were highly dynamic, their changes depended linearly on their original size but correlated only mildly. With environmental enrichment, the size distributions of PSD95 and spine head sizes were sharper than in controls, indicating that synaptic strength is set more uniformly. The topography of the PSD95 nanoorganization was more dynamic after environmental enrichment; changes in size were smaller but more correlated than in mice housed in standard cages. Thus, two-color in vivo time-lapse imaging of synaptic nanoorganization uncovers a unique synaptic nanoplasticity associated with the enhanced learning capabilities under environmental enrichment.\n\n## Introduction\n\n### Activity-driven changes of spine dynamics\n\nOver an entire lifespan, cognitive, sensory, and motor learning is associated with changes to a specific assembly of synapses which is often termed the memory engram (Poo et al., 2016). Thus, spines emerge, disappear, or change with cellular processes underlying learning, and even \u2018remember\u2019 previous sensory experience (Hofer et al., 2009). There is also evidence that learning induces structural and functional synaptic changes similar to long-term potentiation (LTP) protocols (Poo et al., 2016). In this concept of learning, the maintenance of memory critically depends on the stability of the underlying synaptic connections. Synaptic structures, however, are highly volatile intrinsically as such that synaptic connections undergo continuous spontaneous remodeling without any activity (Mongillo et al., 2017; Ziv and Brenner, 2018); for example, intact synapses are formed despite abolishing pre-synaptic release (Sigler et al., 2017) or network silencing (Hazan and Ziv, 2020). Due to spatial resolution constraints, previous in vivo studies mostly focused on the persistency of spines and synapses in terms of their appearance and elimination; the spine size was estimated from fluorescence intensity. Therefore, directly assessed activity-driven changes in synapse or spine head size in vivo are missing.\n\n### Spine to synapse structural correlation\n\nDecades of neuroscience research has shown a tight correlation between structural plasticity, the morphological transformation of spines and synapses, and modifications in synaptic transmission, termed functional plasticity (Yuste and Bonhoeffer, 2001), which was confirmed recently at ultrastructural resolution (Holler et al., 2021). Functional changes are linked to anchoring amino-3-hydroxy-5-methyl-4-isoxazolepropionic acid receptors (AMPAR) via transmembrane AMPAR-regulatory proteins (TARPs) to the post-synaptic density (PSD) scaffolding protein PSD95 (Compans et al., 2016; Herring and Nicoll, 2016). AMPAR-mediated currents were shown to increase simultaneously with the spine head directly after LTP induction. Recent evidence suggests that not all synaptic structures follow this fast dynamic; as such, accumulations of PSD95 increase in vitro with a delay of ~1 hr after inducing LTP, whereas the spine heads increase in less than a minute (Bosch et al., 2014; Meyer et al., 2014). Thus, the relation between spine size and PSD organization (Arellano et al., 2007; Cane et al., 2014; Harris et al., 1992; Meyer et al., 2014) may be temporally dynamic and complex during synaptic change and the remodeling of PSD and spine head plasticity might be more independent than previously thought. Here, we investigate the structural correlation at nanoscale of the spine and post-synapse in vivo using mice reared in enriched environment representing increased activity conditions and normal housing representing baseline conditions.\n\n### PSD95 nanoorganization\n\nBy applying superresolution microscopy we and others have shown that PSD95 is often arranged in clusters, rings, or a more complex nanopattern, and that this nanoorganization undergoes pronounced intrinsic structural changes on the time scale of minutes to hours (Hruska et al., 2018; MacGillavry et al., 2013; Wegner et al., 2018). Recently, it was shown that such a sub-synaptic nanoorganization exists at the pre- and post-synaptic site and that both are aligned in the so-called nanocolumns (Hruska et al., 2018; Tang et al., 2016). Computational studies show that changes of the shape of the PSD (Franks et al., 2003) or modest clustering of AMPAR (Savtchenko and Rusakov, 2014) is a highly efficient way to modify synaptic strength without altering the total amount of receptors. Moreover, AMPAR current amplitude drops significantly already at 50 nm offset between pre-synaptic glutamate release site and AMPAR cluster (Haas et al., 2018). Therefore, activity-driven structural rearrangement at the nanoscale to align post-synaptic receptors to pre-synaptic release sites may be faster than the incorporation of new molecules to induce changes in the synaptic strength.\n\n### This study\n\nHere, we apply nanoscale stimulated emission depletion (STED) microscopy to map temporal changes of the spine head and PSD95 accumulations simultaneously in vivo, and address (1) the plasticity of spine heads and synapses at baseline at time scales similar to LTP processes; (2) the correlation between PSD95 and spine head size changes; (3) the plasticity of the PSD95 nanoorganization; and (4) whether enhanced activity modifies the structure and/or plasticity of these measures. For this purpose, we employ environmental enrichment (EE) where a mouse is provided with multi-sensory stimulation, cognitive activity, social interactions, and physical exercise, which modifies the degree of plasticity and dynamics of cortical sensory circuits. EE has been shown to accelerate the maturation of new neurons, increase pre- and post-synaptic protein levels (Nithianantharajah et al., 2004), and facilitate synaptic plasticity (Greifzu et al., 2014; Nithianantharajah and Hannan, 2006). Structural changes include increased dendritic branching and spine density (Gelfo et al., 2009; Leggio et al., 2005) and induction of spine formation (Yang et al., 2009). However, it is unknown whether the effects of EE leave their mark only at the level of spine formation and elimination such as observed by Yang et al., 2009, or whether EE also affects the dynamics and nanostructure of all individual spines and PSDs.\n\nTo unambiguously assess these relationships between spine morphology and PSD95, we set up a virtually crosstalk-free two-color STED microscope for in vivo superresolution imaging of EGFP and Citrine. We utilized a transcriptionally regulated antibody-like protein to visualize endogenous PSD95 without introducing overexpression artifacts (Gross et al., 2013). Together with a membrane label, we simultaneously recorded temporal morphological changes of the spine head and PSD95 nanoorganization and compared its dynamics between mice raised in EE and in standard cages (control, Ctr). By investigating the synaptic dynamics in the mouse visual cortex, a brain region known to exhibit enhanced plasticity under EE conditions (Baroncelli et al., 2010; Kalogeraki et al., 2017) and accessible to light microscopy, we demonstrate that spine head and PSD95 size distributions decrease in variability while spine heads increase in average size under EE. In addition, PSD95 underwent much stronger directional changes in size and reorganization of their nanoorganization under EE, while the average change in amplitude was smaller compared to the controls. Dynamical changes of PSD95 and spine head size correlated only mildly.\n\n## Results\n\n### Virtually crosstalk-free two-color STED Microscope\n\nTo unambiguously dissect the dynamics of distinct synaptic components and examine their interactions, we established a virtually crosstalk-free two-color STED microscope for imaging of EGFP and EYFP or Citrine, respectively. The challenge for in vivo two-color STED microscopy is to find an in vivo compatible pair of fluorescent molecules with similar emission spectra so that it can be depleted with the same STED beam, but at the same time can be temporally or spectrally separated (Willig et al., 2021). Previous attempts with STED microscopy of EGFP and EYFP utilized a single excitation wavelength and two-color detection, which suffered from high crosstalk, and therefore required a linear unmixing of the channels (T\u00f8nnesen et al., 2011). Channel unmixing, however, requires large signal-to-noise levels. To reduce crosstalk and thus avoid the necessity of channel unmixing, we extended our previously described in vivo STED microscope (Willig et al., 2014) by an additional two-color excitation and detection to selectively excite the green or yellow fluorescent protein (Figure 1A). We utilized 483 nm pulses to excite EGFP and detected its spontaneous fluorescence at 498\u2013510 nm (Det1, Figure 1B). EYFP (or Citrine) was excited at 520 nm and detected mainly at 532\u2013555 nm (Det2, Figure 1B). The 483 and 520 nm excitations were switched on and off alternately while recording two consecutive line scans to temporally separate the EGFP and EYFP/Citrine emissions. To determine the crosstalk between both channels, we investigated one-color labeled cells expressing EGFP or EYFP. Live-cell imaging showed that we have designed a virtually crosstalk-free microscope with only ~8% crosstalk of EYFP in the EGFP channel (channel 1) and ~5% of the EGFP signal in the EYFP channel (channel 2) which does not require linear unmixing (Figure 1C). STED was performed by a 595 nm laser beam passing a vortex phase plate to create a donut-shaped intensity profile in the focal plane of the objective as previously described (Eggeling et al., 2015).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/73603/elife-73603-fig1-v2.jpg)\n\n**Figure 1.:** (A) Custom-designed in vivo STED microscope with pulsed 483 nm (Exc1) and 520 nm (Exc2) excitation and 595 nm STED laser. APD: avalanche photon detector, BP: bandpass filter, Det: detection, DM: dichroic mirror, OPO: optical parametric oscillator, QWP: quarter wave plate, VPP: vortex phase plate. See Material and methods section for details. (B) Excitation (dashed line) and emission (solid line) spectrum of EGFP and EYFP and wavelength regions for selective excitation and detection. (C) Cultured hippocampal neurons expressing the actin marker Lifeact (LA)-EGFP or LA-EYFP. Excitation of EGFP at 483 nm close to its excitation maximum (B) and detection at 498\u2013510 nm (Det1) reduced the crosstalk to 5% in channel 2 (C). EYFP or Citrine was excited at 520 nm close to its maximum (B) and detected at 532\u2013555 nm (Det2) which resulted in a low crosstalk of 8% in channel 1 (C). (D) In vivo STED microscopy image of apical dendrite in layer 1 of the visual cortex of an anesthetized mouse. Labeling of membrane (myr-EGFP-LDLR(Ct)) and PSD95 (PSD95.FingR-Citrine) visualized the spine morphology and PSD95 nanoorganization at superresolution (D, inset). Images are smoothed and represent maximum intensity projections (MIPs). No unmixing was performed due to the low crosstalk.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73603/elife-73603-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) In vivo measurement of PSD95.FingR-Citrine. Fields of view (FOV) represent a selection of magnified PSD95 assemblies (green) from different STED image stacks. The resolving power was determined by fitting a Lorentzian function (red line) to the line profile (black line) which was averaged over three pixels at the indicated position (white arrows). The average of all determined full-widths at half-maximum (FWHM) is 70 nm, which is the upper estimate of the resolution of the custom-built STED microscope for Citrine. It is measured in the actual experiment and includes all potential distortions due to the tissue penetration of the excitation and STED beams and potential movement. (B) Live-cell STED microscopy of Lifeact-EGFP in neuronal cultures to determine the resolving power of the STED microscope for EGFP. Four line profiles (LP) were taken at different positions as described in (A) which are on average 84 nm in FWHM.\n\n### Two-color in vivo STED microscopy of endogenous PSD95 and spine morphology\n\nHaving established the virtually crosstalk-free detection of two STED approved fluorescent proteins (N\u00e4gerl et al., 2008; Willig et al., 2006), we set out to simultaneously superresolve the nanoorganization of the PSD protein PSD95 and the associated spine morphology in vivo. To this end, we generated recombinant adeno-associated viral (AAV) particles encoding fusion proteins under control of the human Synapsin promoter (hSyn). To visualize PSD95, we expressed the antibody-like protein PSD95.FingR, which has been shown to label endogenous PSD95 (Gross et al., 2013; Willig et al., 2021) attached to the fluorescent protein Citrine. The expression of PSD95.FingR-Citrine is controlled by a transcriptional regulation system that prevents expression after saturation of the binding sites and therefore reduces background (Gross et al., 2013). For spine morphology, we expressed myr-EGFP-LDLR(Ct), a combination of a myristoylation site (myr), EGFP, and the C-terminal (Ct) cytoplasmic domain of low-density lipoprotein receptor (LDLR), a potent marker for the dendritic membrane (Kameda et al., 2008; Willig et al., 2021). In order to reduce the density of labeled neurons and thus overlapping fluorescence signals, the fluorescent labels were incorporated into AAVs in reverse orientation in the vector between double-floxed inverted open reading frames (DIO). Expression of the labels was enabled by Cre recombinase encoding AAVs co-injected at low concentration (Willig et al., 2021). Hence, the density of labeled neurons was tuned by the dilution of the Cre expressing AAV and the brightness of the PSD95 and membrane labeling by the concentration of the respective AAVs; thus the density of labeled cells and their brightness were independent variables. We co-injected the three AAVs into pyramidal cell layer 5 of the visual cortex. Three to six weeks after transduction, the mice were anesthetized and a cranial window was inserted over the visual cortex. To perform motion and aberration-free imaging at nanoscale resolution, the cranial window needs to be of highest quality. As described in detail in Steffens et al., 2020, critical steps involve a craniotomy that is as atraumatic as possible and does not damage the cortical surface when drilling or removing the bone plate and dura mater. Moreover, the gap between the brain surface and the cover glass needs to be negligibly small and the right choice of the dental cement is important to avoid bending of the cover glass. With such an optimized cranial window, STED microscopy visualized dendrites, spines, and attached PSD95 assemblies in layer 1 of the visual cortex at superresolution (Figure 1C) with a resolution of at least ~70 nm for Citrine and ~84 nm for EGFP (Figure 1\u2014figure supplement 1A, B). The inset in Figure 1D reveals a perforated nanoorganization of endogenous PSD95 that would not be detectable with conventional in vivo light microscopy due to the insufficient resolution. Due to the low crosstalk, a computational post-processing such as unmixing was not required. We observed mainly dendrites that expressed both, EGFP and Citrine, and only rarely found dendrites expressing either Citrine or EGFP alone.\n\n### EE housed mice exhibit less variability in the size of spine head and PSD95 assemblies while their heads are larger than in control\n\nHaving established the two-color in vivo STED microscopy, we addressed the question of whether spines or PSDs exhibit systematic differences in size between EE and Ctr mice. EE mice were housed in a large, two-floor cage equipped with three running wheels for physical exercise, a labyrinth for cognitive stimulation, a tube and a ladder to change between the two levels, and were kept in groups of up to 12 female mice to allow manyfold social interactions (Figure 2\u2014figure supplement 1A\u2013C). Ctr mice were raised in pairs in standard cages without any equipment (Figure 2\u2014figure supplement 1D, E). The mice were transduced with AAVs as described above and 3\u20136 weeks after transduction, they were anesthetized and a cranial window was implanted above the visual cortex. Imaging commenced about 2.5 hr after onset of the anesthesia. We acquired two-color z-stacks mainly of dendrites, which were in parallel to the focal plane. To analyze differences in morphology of the dendritic spines, we encircled the spine head and PSD95 at their largest extent and computed the respective area (Figure 2A, see Materials and methods section for details). We only considered spines containing a PSD95 label and therefore most likely form functional synapses. Occasionally we observed long, thin spines without a head, sometimes called filopodia in the literature, which were not analyzed. The spine head area correlated with the PSD95 area for EE and Ctr (Figure 2B), corroborating EM and two-photon microscopy studies (Arellano et al., 2007; Cane et al., 2014; Meyer et al., 2014). The histograms of spine head (Figure 2C) and PSD95 area (Figure 2D) were positively skewed and the distributions were significantly different between EE and Ctr mice. We determined a median spine head area for EE housed mice of 0.527 (interquartile range [IR]: 0.359\u20130.844) \u00b5m2 and 0.462 (IR: 0.290\u20130.787) \u00b5m2 for Ctr mice. The area of PSD95 on the same set of spine heads was 0.158 (IR: 0.107\u20130.269) \u00b5m2 in median for EE mice and 0.161 (IR: 0.092\u20130.286) \u00b5m2 for Ctr mice which is in accordance with previous EM studies reporting 0.15 \u00b5m2 for the PSD area in the mouse visual cortex (Harris and Weinberg, 2012). This size of the PSD95 area of layer 5 pyramidal neurons is slightly larger than our previously reported diameter of 354 nm which corresponds to ~0.10 \u00b5m2 for a circular distribution, obtained in a ubiquitously expressing PSD95-EGFP knock-in mouse (Wegner et al., 2018); therefore, the larger size of the PSD95 area could reflect the larger size of the spine heads of layer 5 pyramidal neurons (Konur et al., 2003). To further dissect these differences, we next plotted the histograms of the logarithm of spine head (Figure 2E) and PSD95 areas (Figure 2F). All four histograms (Figure 2E and F) are symmetric and well described by a Gaussian function. This is in line with prior work showing that the spine and PSD95 fluorescence is log-normally distributed in general, which is predicted by multiplicative processes of ongoing spine plasticity (Hazan and Ziv, 2020; Loewenstein et al., 2011). The Gaussian function fitting the spine head area is shifted to the right and is narrower for EE housed mice (Figure 2E). This is manifested by a significantly larger spine head area (Figure 2G) and smaller variance of the size distribution (Figure 2I) of EE housed mice, which might imply a preferential loss or adaptation of small spines (Figure 2E). The distributions of the logarithm of the PSD95 area (Figure 2F) are almost centered and thus the average area is not significantly different between EE and Ctr mice (Figure 2H). However, the variance (Figure 2J) is smaller for EE housed mice which is also visible in the Gaussian distribution that is narrower for EE housed mice (Figure 2F), that is, having less extreme values. Since previous studies often used the brightness of PSD95 assemblies or spines, respectively, as a measure of size, we also analyzed the PSD95 brightness and found a coefficient of determination R2 = 0.76 between the brightness and nanoscale size (Figure 2\u2014figure supplement 2A), indicating that the brightness is a deficient correlate of synaptic size. We also analyzed the spine density which was not significantly different between EE and Ctr housed mice (Figure 2\u2014figure supplement 2B). These results show that EE leaves a trace in spine head size and variability of the post-synaptic size, both of which have been shown to correlate with synaptic strength (Holler et al., 2021).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/73603/elife-73603-fig2-v2.jpg)\n\n**Figure 2.:** (A) Stimulated emission depletion (STED) images of dendritic spines (magenta) and associated PSD95 assemblies (green). Images are smoothed; maximum intensity projection (MIP) (left), contrast enhanced images for area analysis (middle, right). Spine heads (middle) and PSD95 assemblies (right) were encircled to compute the area. (B) Strong correlation of absolute spine head and PSD95 area in Ctr (orange) and EE (blue) housed mice. Linear regression lines are dashed and Pearson\u2019s correlation coefficient r is displayed (EE and Ctr, deviation from zero: p < 0.0001). (C, D) Frequency distributions of spine head area (C) and PSD95 area (D) are positively skewed and significantly different between EE and Ctr housed mice (Kolmogorov-Smirnov test, C: ****p < 0.0001, D: *p = 0.013). Graphs display center of BIN, single large values are cut off. (E, F) Same data as shown in (C, D), but logarithmic values. Solid lines represent Gaussian functions fitted to the respective histogram. (G\u2013J) Mean (G: EEspine: \u20130.259, Ctrspine: \u20130.317, H: EEPSD: \u20130.771, CtrPSD: \u20130.781) and variance (I, J) of logarithmic data shown in (E, F) + SEM (unpaired t-test with Welch\u2019s correction: G: ****p < 0.0001, H: p = 0.54, I: **p = 0.006, J: **p = 0.003). Number of analyzed mice and spines: EE: 4x \u2640-mice, nSpine/PSD95 = 795; Ctr: 4x \u2640-mice, nSpine/PSD95 = 634.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73603/elife-73603-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A\u2013C) Standardized environmental enrichment cage design in the commercially available Marlau cage; dimension: 570 \u00d7 370 \u00d7 320 mm3, 2 floors connected by a ladder and a tube. The cage contains three running wheels, a red house, nesting material (B) and on the second floor a maze (C), which is changed three times a week. (D, E) Ctr mice are raised in a standard cage of 365 \u00d7 207 \u00d7 140 mm3 (floor area 530 cm2) with nesting material only.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/73603/elife-73603-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Analysis of PSD95 brightness. Correlation of all environmental enrichment (EE) and control (Ctr) PSD95 areas in \u00b5m2 and corresponding PSD95 brightness in arbitrary units (a.u.). The red dashed line represents a linear regression fit. Data of eight mice and in total n = 1763 post-synaptic densities (PSDs). (B) Spine density. Spine density in layer 1 of the visual cortex is not significantly different between EE and Ctr. Bars show median +95% CI (Mann-Whitney U test, p = 0.68). 4x \u2640mice per group and nCtr = 59, nEE = 99 dendrites were analyzed.\n\n### Weak correlation of PSD95 and spine head area changes over minutes to hours\n\nWe showed above a strong correlation between the size of PSD95 assemblies and the spine head (Figure 2B) which corroborates previous findings of close structural correlation between PSD and spine size (Arellano et al., 2007). However, on which time scale the dynamic changes between these two features are linked in vivo has remained unknown. We thus asked whether and how temporal changes of these parameters were correlated. Therefore, we performed time-lapse STED microscopy of spine morphology and PSD95 for EE and Ctr housed mice for up to 4 hr as described above and analyzed temporal changes of these parameters (Figure 3A\u2013L). Imaging commenced ~2.5 hr after onset of the anesthesia and the time-lapse was recorded at baseline, without a stimulation. We recorded STED images at different fields of view (FOV); each FOV was recorded for three time points at a time interval \u0394t of either 30 min (Figure 3A and B), 60 or 120 min. Over these time periods the spines were mostly stable. Occasionally, a spine was lost or a new one appeared; none of these dynamic spines carried PSD95 and they were therefore most likely highly dynamic filopodia (Berry and Nedivi, 2017). For each time point, the size of the spine head and PSD95 assembly was analyzed as described above. The average spine head area and PSD95 area did not show large changes over the time period of 120 min (Figure 3C). Thus, we did not observe directed changes as a result of light-induced stimulation or phototoxicity and neither observed blebbing. We computed normalized size changes over time so that both, positive (growth) and negative (shrinkage), changes were symmetric with a boundary value of \u00b11. Figure 3D\u2013G shows scatter plots of the normalized changes of the spine head over changes of the PSD95 area for each time interval (Figure 3D\u2013F) and cumulated changes of all time intervals (Figure 3G); the data points are scattered over all four quadrants (for percentage changes refer to Figure 3\u2014figure supplement 1A\u2013C). A linear regression analysis revealed a weak but significant positive correlation (r between 0.15 and 0.39, Figure 3D\u2013G), such that an increase of PSD95 area is more frequently accompanied by an increase in spine head area and vice versa (Figure 3K). Some data points, however, also represented anti- or negatively correlated changes, that is, shrinking PSD95 areas on a growing spine or vice versa (Figure 3L). Interestingly, PSD95 assemblies displayed larger normalized changes in size than spine heads, which is evident from the elliptic distributions in Figure 3D\u2013G or the median percent changes (Figure 3\u2014figure supplement 1D, E); spine heads grew by ~20% and shrunk by ~15% while PSD95 assemblies grew by ~20\u201325% and shrunk by 25\u201330%. To further quantify the portion of correlated and anti-correlated changes, we performed a principal component analysis (PCA). Principal component 1 (PC1) is by definition the axis along which the data shows the maximum of variance and the eigenvalue of PC1 is the variance along this axis. The PC1 vector was for all three time intervals in the first (and third) quadrant (Figure 3D\u2013F) and therefore attributing for positively correlated changes. The second principal component (PC2) is by definition perpendicular to PC1 and therefore in the second (and fourth) quadrant (Figure 3D\u2013F), attributing for negatively correlated changes. The variance of PC1 and thus correlated changes is ~3 times larger at all time intervals than that of PC2, that is, anti-correlated changes (Figure 3H, I; Figure 3\u2014figure supplement 1F). Thus, we found besides the positively correlated changes also a large portion of anti-correlated changes reflecting a temporal uncoupling of spine head and PSD95 morphology. For all time intervals, the variance of PC1 and PC2 was higher for Ctr housed mice, although not always significant (Figure 3H, I). To compare Ctr versus EE housed mice, we averaged the variance over all time intervals (Figure 3J) as the changes did not vary significantly within one group. Thus, the variance of Ctr housed mice was statistically significantly higher for PC2 but not for PC1. This indicates that negatively correlated changes contribute much less in the EE housed mice indicating a stronger, positive coupling between changes in spine head size and PSD95 area.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/73603/elife-73603-fig3-v2.jpg)\n\n**Figure 3.:** (A, B) Representative sections of spine heads and corresponding PSD95 of time-lapse in vivo two-color stimulated emission depletion (STED) microscopy images for EE (A) and Ctr (B) housed mice at time points of 0, 30, and 60 min. Images are smoothed and shown as maximum intensity projection (MIP). (C) Median \u00b195% confidence interval (CI) of spine head and PSD95 areas of Ctr (triangle, orange) and EE (square, blue) housed mice over time. (D\u2013G) Normalized changes in spine head and PSD95 area after 30 min (D), 60 min (E), and 120 min (F) time intervals and compiled changes of all time intervals (G). Linear regression lines are dashed (deviation from zero: p < 0.0001) and Pearson\u2019s correlation coefficient r is displayed. Solid lines represent the principal components 1 and 2 (PC1, PC2) of the principal component analysis (PCA) for Ctr (red) and EE (blue), respectively. (H\u2013J) Variance along PC1 and PC2 of normalized changes plotted in (D\u2013G); variance of PC1 (H), PC2 (I), and compiled variance over all time intervals (J) + SEM (unpaired t-test EE vs. Ctr; H: 30 min: p = 0.36, 60 min: *p = 0.045, 120 min: p = 0.40; I: 30 min: *p = 0.027, 60 min: ***p < 0.001, 120 min: p = 0.17; J: PC1: p = 0.063, PC2: ****p < 0.0001). (K, L) Illustration of temporal changes between spine head size and PSD95 area; positive correlation (K): growth and shrinkage of spine head size and area of PSD95 assemblies goes hand-in-hand; negative correlation (L): a growing PSD95 assembly on a shrinking spine and vice versa (K). (C\u2013J) Number of analyzed mice and spines: 4x \u2640-mice for EE and 4x \u2640-mice for Ctr; number of spines with PSD95 assemblies: EE, t = 0: nSpine/PSD95 = 795, t = 30 min: 326, t = 60 min: 388, t = 120 min: 151; Ctr, t = 0: 634, t = 30 min: 233, t = 60 min: 285, t = 120 min: 189. Time intervals are pooled; for example, \u0394t = 30 min includes 0\u201330 and 30\u201360 min.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73603/elife-73603-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u2013C) Scatter plot of percentage changes over time intervals of 30, 60, and 120 min. Regression lines are dashed and Pearson\u2019s correlation coefficient r is displayed (deviation from zero: p < 0.0001). (D, E) Average percentage change of growing and shrinking spine head area (D) and PSD95 area (E). (D) Spine head growth: 30 min, environmental enrichment (EE): 21%, control (Ctr): 21%; 60 min, EE: 21%, Ctr: 24%; 120 min, EE: 21%, Ctr: 29% (Kruskal-Wallis with Dunn\u2019s multiple comparisons test; EE: 30 min vs. 60 min: p > 0.99 and vs. 120 min: p > 0.99, Ctr: 30 min vs. 60 min: p > 0.99 and vs. 120 min: p = 0.80); spine head shrinkage: 30 min, EE: \u201314%, Ctr: \u201317%; 60 min, EE: \u201315%, Ctr: \u201318%; 120 min, EE: \u201313%, Ctr: \u201313% (Kruskal-Wallis with Dunn\u2019s multiple comparisons test; EE: 30 min vs. 60 min: p > 0.99 and vs. 120 min: p > 0.99, Ctr: 30 min vs. 60 min: p > 0.99 and vs. 120 min: p > 0.99). Neither growth nor shrinkage show a significant change over time. The average percentage spine head growth is not different between EE and Ctr (Kruskal-Wallis with Dunn\u2019s multiple comparisons test; spine head, EE vs. Ctr for 30, 60, 120 min: p > 0.90), neither is the average shrinkage (Kruskal-Wallis with Dunn\u2019s multiple comparisons test; spine head, EE vs. Ctr for 30, 60, 120 min: p > 0.10). (E) PSD95 growth: 30 min, EE: 24%, Ctr: 22%; 60 min, EE: 26%, Ctr: 29%; 120 min, EE: 6%, Ctr: 23%; PSD95 shrinkage: 30 min, EE: \u201330%, Ctr: \u201333%; 60 min, EE: \u201324%, Ctr: \u201330%; 120 min, EE: \u201330%, Ctr: \u201327%. Plots show median +95% CI. (F) Relative percentage of principal component 1 (PC1) and PC2 of total variance. Data from Figure 3H, I. (G, H) Mean of total variance of normalized changes of PSD95 assemblies and spine head area as plotted in Figure 3D\u2013F for each time interval (G) and compiled variance (H) + SEM (unpaired t-test EE vs. Ctr; G: 30 min: p = 0.088, 60 min: **p = 0.0015, 120 min: p = 0.23; H: ***p < 0.001). (A\u2013H) The same data set as in Figure 3D\u2013G was analyzed.\n\nIn summary, the synaptic structure is highly dynamic and spine heads and PSD95 assemblies change in size by >20% already after 30 min. The variance of these changes is smaller and positively correlated changes are more pronounced for EE housed mice. These results suggest that EE housed mice undergo smaller but more directed morphological changes under anesthesia.\n\n### Multiplicative downscaling of PSD95 area is different between EE and Ctr housed mice\n\nSince our parameters were log-normally distributed, indicating a multiplicative dynamic, we asked whether the temporal changes were also regulated by multiplicative processes (Hazan and Ziv, 2020; Loewenstein et al., 2011). Thus, we plotted the synaptic size after different time intervals \u0394t as a function of the original size (Figure 4A\u2013F). A linear regression analysis revealed a slope <1 and positive y-intercept for spine head and PSD95 area, for both EE and Ctr housed mice. Plotting the size difference between the different time points as a function of the original size indicates that large spines tend to shrink and small spines tend to grow; this becomes evident as the changes are rather negative for larger sizes and positive for smaller sizes (Figure 4\u2014figure supplement 1). Such a tendency is often called regression to the mean and is a frequently observed statistical phenomenon. However, it is driven by biological processes, and the strength of those changes may vary under different conditions such as between EE and Ctr. To quantify these changes in synapse and spine head size, we use a Kesten process which was recently applied as a model for spine dynamics and their skewed size distribution. In this model a noisy multiplicative downscaling is combined with a noisy additive term (Hazan and Ziv, 2020; Statman et al., 2014). Thus, the negative slope as shown in Figure 4\u2014figure supplement 1 which is equal to 1-slope of Figure 4 would be regarded as a time-dependent multiplicative downscaling factor. We observed a significantly different slope, that is, multiplicative downscaling for the PSD95 area between EE and Ctr housed mice (Figure 4F). While the slope was constant or decreased slightly over time for EE housed mice, it rose up to nearly one for Ctr mice. Interestingly, this effect was specific for PSD95 and was not observed for the spine head size (Figure 4A\u2013C); the slope for spine head size changes was rather constant over time and similar between EE and Ctr mice. In summary, we found a significant increase in downscaling over time for PSD95 in EE housed mice as compared to Ctr after 60 and 120 min.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/73603/elife-73603-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013F) Spine head and PSD95 area after different time intervals \u0394t of 30, 60, and 120 min as function of their initial area at time t (A, B, D, E). Solid lines show linear regression fits of the displayed equation; the identity line is dashed (analysis of covariance; are slopes equal? A: p = 0.53, B: p = 0.29, D: ****p < 0.0001, E: p = 0.39). (C) Slope \u00b1 SE of fit to spine head changes (A, B) (left, are slopes different? EE vs. Ctr: 30 min: p = 0.37, 60 min: p = 0.11, 120 min: p = 0.26) and Pearson\u2019s correlation r (right) of linear regression. (F) Slope \u00b1 SE of fit to PSD95 area changes (D, E) (left, are slopes different? EE vs. Ctr: 30 min: **p < 0.01, 60 min: ****p < 0.0001, 120 min: ****p < 0.0001) and r value (right). (G) Cross-correlation between spine head and PSD95 area for EE and Ctr housed mice. Error bars are bootstrap \u00b1 SD. Same data set as in Figure 3; the same time intervals \u0394t are pooled.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73603/elife-73603-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A\u2013D) Changes in area after time intervals \u0394t of 30, 60, and 120 min plotted as a function of their area at time point t for spine head area of Ctr housed mice (A), spine head area of EE housed mice (B), PSD95 area of Ctr housed mice, (C) and PSD95 area of EE housed mice (D). Straight lines show linear regression fit of the displayed equation. Analysis of covariance, slopes equal? A: P = 0.48, B: p = 0.35, C: ****p < 0.0001, D: p = 0.18. Same data as Figure 4.\n\n### Despite fluctuations, spine heads and PSD95 assemblies are stable on average over 2 hr\n\nNext, we asked how these large temporal changes influence the stability of the synapse. Do growing spines continue to grow and do shrinking spines continue to shrink? Thus, we computed the Pearson\u2019s correlation coefficient r between the different time points (Figure 4C and F, right). The r value was relatively constant over all time intervals and not significantly different between spine heads and PSD95 assemblies or EE and Ctr house mice. As such we did not find changes in r or its corresponding coefficient of determination R2 value such as described in vitro (Hazan and Ziv, 2020) at our time window of up to 2 hr. This indicates that large spine heads tend to stay rather large and smaller ones stay small.\n\n### No temporal shift between spine head and PSD95 area changes at baseline\n\nWe found a strong correlation coefficient of ~0.8 between spine head and PSD95 area (Figure 2B). However, if the PSD expands with a temporal delay of ~1 hr to the spine head as suggested by the work of Bosch et al., 2014; Meyer et al., 2014, the correlation should be even higher when comparing spine heads and PSD95 area at different time points. Therefore, we computed the cross-correlation between these measures for all time intervals. Figure 4G shows that the cross-correlation between the PSD95 and spine head area was ~0.8 over all time intervals of 0\u2013120 min and thus we did not observe directional changes of these parameters at baseline. In particular, we did not observe that PSD95 increase would systematically succeed a spine head increase or vice versa as both would result in an asymmetric cross-correlation.\n\n### PSD95 nanoorganization changes faster in EE mice\n\nPrevious EM studies have shown that PSDs on large spines, often called mushroom spines, are frequently perforated (Stewart et al., 2005). In our previous publication (Wegner et al., 2018), we investigated PSD95 morphology in homozygous knock-in mice and showed that PSD95 assemblies on large spines were often perforated and appeared ring-like or clustered. This nanoorganization was highly dynamic and changed in shape within a few hours. Now, we asked whether these changes would be different for mice housed in EE. Figure 5A shows examples of two-color STED images of perforated PSD95 assemblies and their associated spine revealing temporal changes in the PSD95 nanopattern. The nanopattern was similar to that of the knock-in mice (Wegner et al., 2018) and is quite complex; we often observed clusters but also continuous structures of horseshoe or more complex shapes. Previous studies have counted number of nanodomains for these structures (Hruska et al., 2018). However, in our opinion, this does not satisfactorily reflect the complexity of the structure and thus we performed a visual inspection analogous to Wegner et al., 2018. Morphological changes were categorized for each time point as no change, subtle change, or strong change with respect to the first observation at t = 0 by three independent persons (Figure 5B and C). Ctr housed mice showed a clear trend: the longer the measurement interval, the greater the morphological change (Figure 5C); the percentage of PSD95 nanoorganization showing no change decreased from ~40% to ~10%, while the percentage for strong changes nearly tripled for Ctr. For EE housed mice, we observed similar, strong changes within all investigated time intervals; ~20% of the PSD95 assemblies did not change at all and ~80% underwent a change at all time points (Figure 5B). Although the percentage changes with respect to t = 0 were similar for different time intervals, it should be noted that this does not exclude dynamic changes between the time points. Thus, changes in Ctr housed mice increased over the observation period and reached a level similar to that of EE housed mice after 120 min. This suggests that the PSD95 nanoorganization is more dynamic in EE mice than in mice raised under control conditions within the investigated time course. Now, we asked whether the different dynamic in morphological changes would be reflected as well in a different nanoorganization. Therefore, we categorized the nanoorganizations into perforated (a continuous shape with a sub-structure such as ring- or horseshoe-like) or clustered. Fewer nanoorganizations of EE housed mice were perforated and a larger fraction showed three or more clusters compared to Ctr mice (Figure 5D). This suggests that the PSD95 nanoorganization might play a substantial role in synaptic remodeling and is specifically shaped by experience or activity.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/73603/elife-73603-fig5-v2.jpg)\n\n**Figure 5.:** (A) Sections of two-color stimulated emission depletion (STED) images (smoothed, maximum intensity projection [MIP]) of EE and Ctr housed mice at the indicated time points showing the spine membrane (magenta) and PSD95 (green). Morphological change is indicated with: 0 = no change; + = subtle change; ++ = strong change. (B, C) Stacked histogram of the relative frequency of morphological changes in PSD95 nanopattern in EE (B) and Ctr (C) housed mice; all changes refer to t = 0 min. (D) Morphometry of PSD95 nanopattern of EE and Ctr housed mice at t = 0. (B\u2013D) Number of analyzed PSD95 assemblies in EE: 30 min: n = 38, 60 min: n = 68, 120 min: n = 29; Ctr: 30 min: n = 27, 60 min: n = 48, 120 min: n = 38.\n\n## Discussion\n\nInteractions with the environment play a key role in restructuring and refining the neuronal circuitry in the brain. We here used time-lapse in vivo STED microscopy, a superresolution light microscopy technique with nanoscale resolution, to study experience-dependent changes of the synaptic nanoorganization as well as its nanoplasticity in the intact brain. We designed a two-color, virtually crosstalk-free in vivo STED microscope with a resolution of 70\u201380 nm for simultaneous imaging of spine morphology and PSD95 in the visual cortex of anesthetized mice. We found a significantly smaller variability in size of the spine head and PSD95 nanoorganization in EE mice while the average spine head size was increased compared to Ctr mice. Both parameters were highly volatile and we observed an average growth of >20% and shrinkage of >18% for spine heads and PSD95 assemblies within 30 min while percent changes in PSD95 assembly size were slightly larger than those of the spine head. About 3/4 of these changes were positively correlated and ~1/4 showed a negative correlation; EE housed mice exhibited a smaller variance of changes than Ctr mice, and less negatively correlated changes. All parameters exhibited multiplicative downscaling which was significantly different for PSD95 assembly size between EE and Ctr mice. Dynamical rearrangement of the nanostructure was faster in EE housed mice.\n\n### Two-color in vivo STED nanoscopy\n\nPrevious studies mainly used two-photon microscopy to study synapse and spine plasticity in vivo and in vitro (Bosch et al., 2014; Cane et al., 2014; Meyer et al., 2014; Villa et al., 2016). Due to its limited optical resolution of 300\u2013500 nm, spine brightness is often taken as a measure of size (Cane et al., 2014; Hofer et al., 2009; Matsuzaki et al., 2004). This is not very accurate since the brightness can be influenced by many factors such as expression level of the fluorescence label, the excitation laser intensity, group velocity dispersion, or scattering in the tissue. Therefore, spine brightness is typically normalized to the brightness of the dendrite, making comparative studies and determination of absolute sizes difficult. To circumvent the diffraction limit, two-photon microscopy was combined with STED to achieve nanoscale resolution (Moneron and Hell, 2009; Panatier et al., 2014). However, a drawback of this approach is the relatively high crosstalk when using two colors. Thus, the most commonly used EGFP and EYFP have a crosstalk of as much as 92% and 27% in the respective other channel, requiring linear unmixing (T\u00f8nnesen et al., 2011). Unmixing works well for structures which are relatively bright and spatially separated such as for volume labeled spines and astrocytes (Panatier et al., 2014) but can produce artifacts in dark and overlapping structures such as the post-synapse and spine we were studying in this project. Therefore we used an approach from two-color STED with organic dyes in the red emission spectrum (Bottanelli et al., 2016; G\u00f6ttfert et al., 2013) and designed a two-color STED microscope with two different excitation lasers (one-photon excitation) and two spectrally separated detection channels. This approach gave us an almost negligible crosstalk of 5% for EGFP and 8% for Citrine rendering unmixing obsolete.\n\n### High volatility of spine heads and PSD95 assemblies\n\nWe used the transcriptionally regulated antibody-like PSD95.FingR, which efficiently labels endogenous PSD95 (Cook et al., 2019; Gross et al., 2013) and excludes artifacts that occur after PSD95 overexpression (El-Husseini et al., 2000; Stein et al., 2003).\n\nSpine heads and PSD95 assemblies were highly volatile already at 30 min intervals. The spine head growth of ~20\u201330% on average and ~200% maximum (Figure 3\u2014figure supplement 1) is very similar to the spine head changes we have reported recently in the cortex of a transgenic mouse over 3\u20134 days (Steffens et al., 2021) and to spine head increase following chemical LTP induction (Kopec et al., 2006; Otmakhov et al., 2004) or glutamate uncaging (Meyer et al., 2014); thus these changes might reflect potentiation of single spines. The percentage increase in amount of PSD95 after glutamate uncaging reported before, however, was always smaller than the spine volume increase (Bosch et al., 2014; Meyer et al., 2014); it is therefore interesting that we observe a slightly larger percentage increase of PSD95 assembly area than spine head area at baseline in Ctr and EE housed mice. However, it was shown that MMF anesthesia reduces spiking activity and mildly increases spine turnover in the hippocampus (Yang et al., 2021). Thus, the plasticity of spine heads and PSD95 assemblies might be different in the awake state and under intense processing of visual information.\n\n### Temporal changes of PSD95 assemblies and spine heads are largely uncorrelated\n\nWhile we observed a substantial correlation between the absolute spine head and PSD95 assembly size (r ~0.8, Figure 2B), corroborating previous EM studies (Arellano et al., 2007; Harris et al., 1992), we found only weak correlations between their temporal changes (r ~0.2\u20130.4, Figure 3D\u2013G). This supports in vitro LTP experiments which have shown a temporal delay of ~60 min between spine and PSD95 increase (Bosch et al., 2014; Meyer et al., 2014). Although these experiments were performed in cell culture and with PSD95 overexpression, they indicate that spine and PSD enlargement might be regulated by different pathways (Compans et al., 2016; Herring and Nicoll, 2016). However, we found no directional changes that would demonstrate that the PSD95 size systematically follows an increase in spine head size since the cross-correlation is largely symmetric (Figure 4G). This could be due to the fact that we only studied baseline changes, without a dedicated stimulation protocol that synchronizes and amplifies the temporal changes.\n\nBut how can the time course of AMPA receptor incorporation and PSD95 increase be so different although AMPA receptors are linked to PSD95 by TARPs? A slot model proposes that the actin polymerization during LTP increases the number of slots which can harbor AMPA receptors (Herring and Nicoll, 2016). Thus, the increase of AMPA receptors would not depend on an increase of the amount of PSD95 proteins at the synapse but on an activation of binding sites of AMPA receptor to the PSD95 by a still unknown mechanism.\n\n### Synapse and spine sizes of EE housed mice are sharper defined and change concordantly\n\nTo study whether different activity conditions during rearing influence synapse and spine size and plasticity, we compared adult mice housed in standard cages with age matched EE housed mice and analyzed synaptic morphology and plasticity in the visual cortex after the critical period. We found a significantly smaller variance and thus narrower distribution of spine head and PSD95 area in EE housed mice. At the moment different models of how neuronal networks adapt to changes in activity to undergo homeostatic plasticity are considered (Lee and Kirkwood, 2019). In the model of synaptic scaling, an increase in activity leads to a downscaling of excitatory synapses and vice versa. The downscaling is multiplicative and therefore changes affect the average as well as broadening of the size distribution as shown, for example, in a silenced network (Hazan and Ziv, 2020). We did not observe such a stringent synaptic scaling although the variance shows the same tendency; a decrease in PSD95 and spine size variability after enhanced activity of EE housed mice are opposed, and therefore in line with the broadening of the size distribution in silenced networks (Hazan and Ziv, 2020) or after deprivation in vivo (Keck et al., 2013). This may be supported by recent in vivo observations that in the adult cortex homeostatic plasticity is rather input-specific and not multiplicative for the whole ensemble of synapses (Barnes et al., 2017). A sole decrease in variability was described before for the neuronal firing rates after stimulation. This was observed in different brain regions and even when the change in mean firing rate was little (Churchland et al., 2010). The authors of this study concluded that the variance decline of the firing rate implies that cortical circuits become more stable. The same might apply to the spines and synapses of EE housed mice for which we observe less extreme values. This may suggest that the synapses are better defined by training in the enriched environment and thus the neural network is more stable. Interestingly, we also observed a tighter correlation between spine head and PSD95 changes for EE housed mice since negatively correlated changes are significantly reduced. As discussed above, however, the dynamic might be influenced by the anesthesia and different in the awake state.\n\n### Stronger multiplicative downscaling in EE housed mice for PSD95\n\nWe found that changes of spine heads and PSD95 assemblies correlate with their absolute size for EE and Ctr housed mice; small spines tended to grow and large spines tended to shrink (Figure 4A\u2013F). The slope of the linear regression line for such size changes, as plotted in Figure 4A\u2013F, can be viewed as a time-dependent multiplicative downscaling factor of a Kesten process (Ziv and Brenner, 2018). Statistical models such as the Kesten process offer an explanation on how to link synaptic size fluctuations with the shape and scaling of the synaptic size distribution. For example, it was shown that silencing a neuronal network and thus reducing its activity not only resulted in an average size increase and broader distribution but also in a weaker multiplicative downscaling (Hazan and Ziv, 2020). Our observations on PSD95 area changes are in line with these results in such that the increase in activity by enrichment strengthened the multiplicative downscaling over time for PSD95 after 60 and 120 min (Figure 4F). Therefore, we find the same tendency in vivo as the in vitro silencing experiment. However, it should be noted that our in vivo measurements were performed under anesthesia and directly after implanting a cranial window; therefore differences are due to the different rearing conditions and not to changes in activity at the moment of the measurement. The in vitro silencing, in contrast, continued over the measurements. The increase in multiplicative downscaling we observe might explain the narrower size distribution of the PSD95 area according to the measurements and simulations by Hazan and Ziv, 2020. However, a downscaling factor of 0.7\u20130.8 which we found for PSD95 in EE housed mice (Figure 4F) was observed in vitro by Hazan and Ziv only after ~20 hr. And, this does not explain the decrease in multiplicative downscaling we observed for Ctr housed mice from 30 to 120 min intervals. Moreover, we did not find changes in the Pearsons\u2019s correlation coefficient r for the different time intervals such as described by Hazan and Ziv, 2020. A refinement of the model and additional measurement will certainly be needed in the future. We note in passing that it should not be surprising that our in vivo experiments do not completely match expectations from artificially silenced neuronal culture experiments. And, as discussed above, there is evidence that homeostatic plasticity is not global but input-specific (Barnes et al., 2017).\n\n### Enhanced plasticity of the nanopattern by experience\n\nWith our superresolution technique we often observed a perforated nanoorganization of PSD95 undetectable by two-photon or conventional imaging (Figure 5). The pattern of the PSD95 nanoorganization labeled with PSD95.FingR was very similar to the structures we have observed earlier in a PSD95-EGFP knock-in mouse with in vivo STED microscopy (Wegner et al., 2018). And, this nanopattern is also similar to perforated PSDs reported by electron microscopy (Arellano et al., 2007; Harris and Weinberg, 2012; Toni et al., 2001). It is very difficult to analyze this pattern quantitatively because of its great diversity. As long as the functional consequences are not clear, it is very difficult to design an appropriate analysis routine; for example, should we quantify the area covered with PSD95 only and which role does the distance between clusters or diameter of a ring play? Since we could not apply stringent and justifiable rules for a quantitative analysis, we decided to perform only a visual inspection of the shape, but include all analyzed images into the supplement for transparency. In this way, we found that the nanopattern was different between EE and Ctr and that its structural changes occurred more rapidly in EE housed mice, suggesting greater synaptic flexibility. The functional consequences of this nanopattern, however, are not fully understood. An emerging view is that clusters of pre- and post-synaptic proteins are trans-synaptically aligned in \u2018nanocolumns\u2019 which are organized by activity (Chen et al., 2018). Moreover, computational simulations predict that changes in the shape of the PSD are a way to align post-synaptic receptors to pre-synaptic release sites (Franks et al., 2003; Savtchenko and Rusakov, 2014). This implies that a reorganization of receptors might alter synaptic strength \u2013 independently of changes in the amount of receptors (Chen et al., 2018). Our finding of an increased structural plasticity of the PSD95 nanoorganization but not increased average size in EE mice might therefore reflect the reported increase of synaptic plasticity after enrichment (Artola et al., 2006; Buschler and Manahan-Vaughan, 2012).\n\n### Outlook\n\nOur results demonstrate that experience influences the synaptic nanopattern and facilitates structural remodeling of the synaptic nanoorganization. Two-color STED microscopy opens novel avenues for the in vivo investigation of the synaptic nanoorganization and its dynamics in the living brain. In the future this approach could, for example, be extended to study the plasticity of nanocolumns after experience, as well as over longer time intervals in chronic experiments (Steffens et al., 2021) and different brain regions.\n\n## Materials and methods\n\n### DNA constructs\n\nA detailed description of the different cloning steps to obtain pAAV-ZFN-hSyn-DIO-PSD95.FingR-Citrine-CCR5TC, with a DIO for the expression of the transcriptionally regulated antibody-like protein PSD95.FingR, can be found in Willig et al., 2021.\n\nThe plasmid pAAV-hSyn-DIO-myr-EGFP-LDLR(Ct) for dendritic membrane labeling was cloned as follows: First, we PCR amplified a myristoylation (myr) site-attached EGFP including the myristoylation sequence ATGGGCTGTGTGCAATGTAAGGATAAAGAAGCAACAAAACTGACG in the forward primer. Second, we split the C-terminal (Ct) cytoplasmic domains of LDLR (GenBank: AF425607, amino acid residues 813\u2013862) (Kameda et al., 2008), finally designated as LDLR(Ct), into two parts (part 1 and part 2), designed 5\u2032 phosphorylated forward and reverse primers for each part and hybridized each pair (Table 1). In the third and final step, the endonuclease-digested myr-EGFP PCR together with the LDLR(Ct) part 1 and LDLR(Ct) part 2 were ligated into plasmid pAAV-hSyn-DIO-EYFP digested with AscI and NheI to finally obtain pAAV-hSyn-DIO-myrEGFP-LDLR(Ct).\n\n**Table 1.**\n Overview of the primers and endonucleases.a: produced by PCR, b: generated by hybridization, P: phosphorylated; underlined nucleotides: restriction sites or part of them.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Target construct</th>\n      <th>Primer</th>\n      <th>Restriction sites</th>\n      <th>DNA-insert</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"6\">pAAV-hSyn-DIO-myrEGFP-LDLR(Ct)</td>\n      <td>5\u00b4- agttatgctagcatgggctgtgtgcaatgtaaggataaag aagcaacaaaactgacgatggtgagcaagggcgaggag \u20133\u00b4</td>\n      <td>NheI</td>\n      <td rowspan=\"2\">Myristol (myr)-EGFPa</td>\n    </tr>\n    <tr>\n      <td>5\u00b4- cgcaccggtcttgtacagctcgtccatg-3\u00b4</td>\n      <td>AgeI</td>\n    </tr>\n    <tr>\n      <td>P-5\u00b4-ccggtcggaactggcgcctgaagaatatcaacagc atcaatttcgataaccccgtgtaccagaagaccacagaggat \u20133\u00b4</td>\n      <td>AgeI</td>\n      <td>LDLR(Ct)-part1b</td>\n    </tr>\n    <tr>\n      <td>P-5\u00b4-cagctcatcctctgtggtcttctggtacacggggttatcgaaa ttgatgctgttgatattcttcaggcgccagttccga \u20133\u00b4</td>\n      <td>AgeI</td>\n      <td>LDLR(Ct)-part1b</td>\n    </tr>\n    <tr>\n      <td>P-5\u00b4-gagctgcacatttgcaggtcccaagacgggtacacctatcc aagtcggcagatggtcagcctcgaggacgatgtggcctgagg \u20133\u00b4</td>\n      <td>AscI</td>\n      <td>LDLR(Ct)-part2b</td>\n    </tr>\n    <tr>\n      <td>P-5\u00b4- cgcgcctcaggccacatcgtcctcgaggctgaccatctgcc gacttggataggtgtacccgtcttgggacctgcaaatgtg \u20133\u00b4</td>\n      <td>AscI</td>\n      <td>LDLR(Ct)-part2b</td>\n    </tr>\n  </tbody>\n</table>\n\nGeneration of the Cre recombinase expression plasmid pAAV-hSyn-Cre was performed as described in Wegner et al., 2017.\n\nThe crosstalk was determined by expression of a fusion protein consisting of the small peptide Lifeact (LA), which directly binds to F-actin, and a fluorescent protein: pAAV-hSyn-LA-EYFP and pAAV-hSyn-LA-EGFP (Willig et al., 2021; Willig et al., 2014).\n\n### Virus production\n\nRecombinant AAV particles with mixed serotypes 1 and 2 of the pAAV plasmids encoding the proteins of interest were produced in HEK293-FT cells. The entire procedure is described in detail in Wegner et al., 2017 and is applied here with the following modifications: After DNaseI treatment (30 min at 37\u00b0C), the suspension was centrifuged at 1200 g for 10 min. The supernatant was filtered through a 0.45 \u00b5m sterile filter (Merck/Millipore, Darmstadt, Germany) and first applied to an Amicon Ultra-15, MWCO 100 kDa, centrifugal filter unit (Merck/Millipore, Darmstadt, Germany), followed by a Vivaspin 500, MWCO 100 kDa, centrifugal concentrator (Sartorius, G\u00f6ttingen, Germany) to wash the virus in Opti-MEM Medium (ThermoFisher Scientific, Darmstadt, Germany) and concentrate to a final volume of 150 \u00b5l.\n\n### Animals\n\nAll animal experiments were performed with C57BL/6J female mice reared at the animal facility of the Max Planck Institute for Multidisciplinary Sciences, City Campus, in G\u00f6ttingen and housed with a 12 hr light/dark cycle, with food and water available ad libitum. Experiments were performed according to the guidelines of the national law regarding animal protection procedures and were approved by the responsible authorities, the Nieders\u00e4chsisches Landesamt f\u00fcr Verbraucherschutz (LAVES, identification number 33.9-42502-04-14/1463). All efforts were made to avoid animal suffering and to minimize the number of animals used.\n\n### Housing conditions\n\nEE animals were born and raised in the commercially available Marlau cage (Marlau, Viewpoint, Lyon, France) (Fares et al., 2012), 580 \u00d7 400 \u00d7 320 mm3 in size including two floors, providing an extensive exploration area (Figure 2\u2014figure supplement 1). Three pregnant female mice were placed in an EE cage about 1 week before delivery. Pups were weaned and split by sex at post-natal day 30. The ground floor of the EE cage consisted of two separate compartments: the smaller part contained food and the larger part contained water, running wheels, and a red house. To get food, the mice had to use a stairway to reach the second floor where a maze was placed. After passing the maze, the mice slide through a tunnel back to the ground floor, directly into the smaller compartment and had free access to food. By passing a one-way door, they could enter the larger part of the ground floor to get water. To increase novelty and maintaining cognitive stimulation, the maze was changed three times per week with a total of 12 different configurations. Ctr mice were born and raised in standard cages of 365 \u00d7 207 \u00d7 140 mm3 size. They were kept in two to three animals per cage, which were solely equipped with nesting material.\n\n### AAV transduction\n\nAdult (>12 weeks) female C57BL/6J mice were stereotaxically transduced with a mixture of AAV with mixed serotypes 1 and 2. AAV1/2-ZFN-hSyn-DIO-PSD95.FingR-Citrine-CCR5TC, AAV1/2-hSyn-Cre, and AAV1/2-hSyn-DIO-myrEGFP-LDLR(Ct) were stereotaxically injected at the same time into the visual cortex of the left hemisphere at a depth of ~500 \u00b5m below the pia transducing mainly layer 5 pyramidal neurons by using the following coordinates: 3.4 mm posterior to the bregma, 2.2 mm lateral to the midline, at an angle of 70\u00b0 to the vertical, and with a feed forward of ~750 \u00b5m. For that purpose mice were anesthetized by intraperitoneal injection of 0.05 mg/kg fentanyl, 5 mg/kg midazolam, and 0.5 mg/kg medetomidin (MMF). The mouse was head fixed with a stereotaxic frame and placed on a heating pad throughout the whole procedure to maintain constant body temperature. The depth of the anesthesia was controlled by monitoring the pulse rate and O2 saturation with a pulse oximeter at the thigh of the mouse and body temperature measured with a rectal temperature probe. A gas mixture with high O2 (47.5 vol%) and CO2 (2.5 vol%) content was applied to the mouse\u2019s nose, significantly increasing the oxygenation. The eyes of the mouse were covered with eye ointment and the head was disinfected with 70% ethanol. The skin was cut by an ~0.5 cm long incision and a drop of local anesthetic (0.2 mg mepivacaine) was applied. Then, a 0.5 mm hole was drilled into the skull. 150 nl of AAV containing solution was pressure injected through a glass micropipette attached to a microinjector (Picospritzer III, Parker Hannifin Corp, Cleveland, OH) with an injection rate of ~50 nl/min. After injection, the pipette was kept at the target location for additional 2 min to allow the virus to disperse away. After retracting the micropipette, the incision was closed with a suture. Anesthesia was then antagonized by intraperitoneal administration of 0.1 mg/kg buprenorphine and 2.5 mg/kg atipamezole. The mouse was kept in a separate cage until full recovery and then put back into its original cage, and group-housed in the animal facility until the final experiment. All mice, EE and Ctr housed, were transduced with the same batch of purified virus, that is, the same virus concentration.\n\n### Craniotomy for in vivo STED microscopy\n\nThree to six weeks after viral transduction, a craniotomy was performed as described previously (Steffens et al., 2020). In brief, the mouse was anesthetized with MMF, placed on a heating pad and vital functions and depth of anesthesia were controlled throughout the final experiment as described above. The head was mounted in a stereotaxic frame. The scalp was removed and a flat head bar was glued to the right hemisphere to leave enough space for the cranial window above the visual cortex, rostral to the former viral injection site. After drilling a circular groove (~2\u20133 mm) into the skull, the bony plate was carefully removed without causing a trauma. The remaining dura and arachnoid mater were carefully removed with a fine forceps. A small tube was positioned at the edge of the opening to drain excess cerebrospinal fluid if necessary. The craniotomy was sealed with a 6 mm diameter cover glass glued to the skull. The mouse was mounted on a tiltable plate which can be aligned perpendicular to the optical axis of the microscope in a quick and easy routine before being placed under the microscope (Steffens et al., 2020).\n\n### Culture of primary hippocampal neurons, transduction, and imaging\n\nPrimary cultures of rat hippocampal neurons were prepared from P0-P1 Wistar rats (RjHan:WI; The Jackson Laboratory, Bar Harbor, ME) of both sexes according to D\u2019Este et al., 2017. Neurons were cultured at 37\u00b0C in a humidified atmosphere with 5% CO2 and transduced between 8 and 10 days in vitro with the respective AAVs. After an incubation time of 7 days, live-cell STED imaging was performed at room temperature.\n\n### In vivo two-color STED microscope\n\nA previously described custom-designed STED microscope (Wegner et al., 2018; Willig et al., 2014) was modified to accommodate virtually crosstalk-free two-color imaging as follows (Figure 1). Excitation light (Exc1) provided by a pulsed laser diode emitting blue light at 483 nm (PiLas, Advanced Laser Diode Systems, Berlin, Germany) was complemented by a second excitation beam (Exc2). The beam of a Ti:Sapphire laser (MaiTai; Spectra-Physics, Santa Clara, CA) was split into two, pumping an optical parametric oscillator (OPO; APE, Berlin, Germany) emitting 80 MHz pulses at 595 nm for STED and a supercontinuum device (FemtoWHITE800, NKT photonics, Birker\u00f8d, Denmark) generating white light. The white light was spectrally filtered for green light with a bandpass filter (BP1, BrightLine HC 520/5, Semrock, IDEX Health & Science, Rochester, NY) for selective excitation of EYFP or Citrine at 520 nm (Exc2, Figure 1A and B). Exc1, Exc2 and the STED beam were co-aligned with dichroic mirrors. After passing a scanning device (Yanus, Till Photonics-FEI, Gr\u00e4felfing, Germany) consisting of two galvanometric mirrors for x-y-scanning and relay optics, the three beams were focused by a 1.3 numerical aperture objective lens (PL APO, 63\u00d7, glycerol; Leica, Wetzlar, Germany). Additionally, the STED beam was passing a vortex phase plate (VPP; RPC Photonics, Rochester, NY) to create a doughnut-shaped focal intensity pattern featuring zero intensity in the center. Temporal overlap of all three pulsed laser beams was achieved electronically by synchronizing the blue laser diode, Exc1, to the Ti:Sapphire laser and optically by an optical delay line for Exc2. Z-scanning was performed by moving the objective with a piezo (MIPOS 100PL; piezosystem jena GmbH, Jena, Germany). The back-projected fluorescence light was split at 515 nm with a dichroic mirror (DM2, ZT502rdc-UF3; Chroma Technology Corporation, Bellow Falls, VT) into two beams. The shorter wavelength was reflected, filtered by a bandpass filter (BP3, BrightLine HC 504/12; Semrock) and focused onto a multimode fiber for confocal detection connected to an avalanche photodiode (APD, Excelitas, Waltham, MA). The transmitted, longer wavelength fluorescence light was also filtered with a bandpass filter (BP2, H544/23, AHF analysentechnik, T\u00fcbingen, Germany) and detected with an APD, respectively.\n\n### In vivo two-color STED imaging of anesthetized mice\n\nThe in vivo STED microscopy was performed in layer 1 of the visual cortex at a depth of 5\u201320 \u03bcm below the pia. Spherical aberrations due to the tissue penetration were corrected on the first order by adapting the correction collar of the glycerol immersion objective for the best image quality at each FOV. Both excitation colors were alternated line-by-line; that is, a line was recorded by excitation with blue light (Exc1) and then the same line was recorded again with green excitation light (Exc2). Potential drift between images and movement of the spine or PSD95 was therefore negligible. For imaging we picked different FOV with dendrites parallel to the focal plane. After recording a two-color STED image stack, the position of the motorized micrometer stage (MS-2000, Applied Scientific Instruments, Eugene, OR) was noted and an overview image taken. This process was repeated several times for different positions. After 30 min the micrometer stage was moved back to the first position. The position was confirmed by recording coarse overview images of the dendrite and thereby adjusting the z-position to the right depth. STED images were recorded as z-stacks of ~20\u201340 \u00b5m in x and y with 500 nm axial steps at different positions of the cranial window. All positions were repeatedly imaged 3\u20134 times at intervals of 30 min to 2 hr. Therefore, some dendritic regions were investigated at the time points 0, 30, and 60 min, while other dendritic region within the cranial window was examined at the time points 0, 60, and 120 min or even at 0, 120, and 240 min. The benefit of a membrane label over the often used volume label is that the brightness of the spines and dendrites is similar whereas with a volume label, spine heads, and dendrites often outshine the small spine neck. Thus, either the much darker neck is not visible between the bright head and dendrite or the detector is saturated at the bright heads and dendrites.\n\nAll images were recorded with pixel dwell time of 5 \u00b5s, pixel size of 30 \u00d7 30 nm2 in x and y, and z-stacks of 500 nm step size. Blue and green excitation power was 4.5 \u00b5W, respectively, in the back aperture of the objective. The average STED power in the back aperture was 37\u201345 mW for static images and 15 mW for time-lapse imaging. EE and Ctr housed mice were imaged in random order but not blindly. Dendrites were randomly picked.\n\n### Data processing and analysis\n\nConfocal and STED images were acquired by the software Imspector (Abberior Instruments, G\u00f6ttingen, Germany). Size, shape, and brightness analysis was performed manually in Fiji and blind with respect to the housing conditions (Schindelin et al., 2012). For spine head and PSD95 analysis, the first and last planes were omitted to ensure that the spine (or PSD95, respectively) was located completely in the focal plane. We only analyzed spines that also bore a PSD and only spines that extended from the dendrite mainly parallel to the focal plane. PSDs directly on the dendrite, most likely representing shaft synapses, and spines pointing upward or downward that could not be clearly resolved were not analyzed. First, images of each channel were processed as follows (Fiji commands shown in capital letters): (1) Smoothing: PROCESS> SMOOTH twice. (2) Brightness adjustment: IMAGE> ADJUST > BRIGHTNESS/CONTRAST set minimum to 1 instead of zero. (3) Overlay both one-color images: IMAGE> COLOR > MERGE CHANNELS. (4) Open ROI manager: ANALYSE > TOOLS > ROI MANAGER. Spine heads and PSD95 assemblies were encircled at their largest extent as shown in Figure 2A to compute their area. Perforations or cluster of PSD95 were encircled to include only PSD95. For the analysis of brightness, PSD95 images were processed as described above. Using the ELLIPTICAL SELECTION tool, each PSD95 assembly was encircled and the brightness was displayed by the variable \u2018RawIntDen\u2019, which is the sum of the intensity values of all pixels in the selected area. Spine density was obtained by dividing the total number of spines minus one by the length of the parent dendrite between the first and last spine. The length was measured with the FREEHAND LINE tool, in Z PROJECTION (maximum intensity) images. Branched spines were counted once.\n\nAbsolute changes of spine head area or PSD95 assembly area between two time points, t and t + 1, were calculated by \u2206Aabs = A(t + 1)-A(t). \u2018A\u2019 denotes the spine head area or the PSD95 area, respectively. Normalized changes of spine head area or PSD95 area were computed by \u2206Anorm=(A(t + 1)-A(t))/(A(t + 1)+ A(t)) and percentage changes by \u2206A%=(A(t + 1)-A(t))/A(t)*100%.\n\nThe PCA was performed with the built-in MATLAB (MathWorks, Natick, MA) function \u2018princomp\u2019.\n\nPearson\u2019s correlation coefficient and linear regression were computed in GraphPad Prism (version 7.04, GraphPad Software, San Diego, CA). The cross-correlation function was computed for different time intervals \u2206t by\n\n$$\nCC(\u0394t)=\\frac{\\sumt,\u00a0n=1N(A1_{\u00a0n}(t+\u0394t)\u2212A1\u2212)(A2_{\u00a0n}(t)\u2212A2\u2212)}{\\sqrt{\\sumt,\u00a0n=1N(A1_{\u00a0n}(t)\u2212A1\u2212)^{2}\\sumt,\u00a0n=1N(A2_{\u00a0n}(t)\u2212A2\u2212)^{2}}}\n$$\n\nA1 and A2 denote spine head and PSD95 assembly size, respectively. N stands for the total number of spines, \u2206t the lag time, and $A\u00af$ the average size of all spine heads, respectively PSD95 assemblies.\n\n### Nanoorganization and morphological changes of PSD95\n\nAll non-macular PSD95 nanoorganizations were selected. Their shape was categorized by three blinded scientists into perforated or clustered shapes. Perforated PSDs were of continuous shape but complex such as a ring or horseshoe-like or more twisted. Clustered nanoorganizations were characterized by two or more separated assemblies of PSD95 per spine and the number of clusters was counted. Temporal changes in PSD95 morphology were analyzed as follows. Assemblies which did not alter their overall morphology or number of clusters were marked as \u2018no change\u2019. Assemblies showing minor modifications, such as a small movement of a sub-cluster, were classified as \u2018subtle change\u2019. Changes of the overall morphology such as a smooth continuous PSD falling apart into different clusters were characterized as \u2018strong change\u2019. All changes were referred to time point t = 0 min.\n\n### Statistical analysis\n\nStatistical analysis was performed in GraphPad Prism. Positively skewed data sets were compared by the Kolmogorov-Smirnov test. Log-transformed data and normalized relative changes were normally distributed and compared by an unpaired t-test with Welch\u2019s correction. The number of analyzed mice and spines, p-value, and the specific statistical test performed for each experiment are included in the appropriate figure legend. All tests were applied two-sided where applicable. Probabilities are symbolized by asterisks: *p < 0.05; **p < 0.01; ***p < 0.001, ****p < 0.0001.\n\n### Materials availability\n\nThis study did not generate new unique reagents.\n",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "b73cc12f-53f7-4b6c-8049-9fb4426102e8",
+      "submission_id": "5e0b0a68-eccf-4661-a37e-8d1bd0dfa43f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Yukiko Goda, https://ror.org/01sjwvz98 RIKEN Japan\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73603.sa0](https://doi.org/10.7554/eLife.73603.sa0)\n\nSynapses mediate information transmission in the brain, and part of the synaptic structure called spines are the receiving end of signal transfer between neurons. Using a custom-built superresolution microscope, the study reveals the nanoscale structural dynamics of individual spine shape and its resident scaffolding protein PSD95 simultaneously, in mouse cortex in vivo. Aspects of the structural dynamics are found to differ depending on whether mice have been reared in a simple housing or in an enriched environment, the latter condition being associated with enhanced activity.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Yukiko Goda, https://ror.org/01sjwvz98 RIKEN Japan\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73603.sa1](https://doi.org/10.7554/eLife.73603.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Environmental enrichment enhances patterning and remodeling of synaptic nanoarchitecture revealed by STED nanoscopy\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Lu Chen as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nThe two essential revisions concern (1) clarifying the biological question being addressed and (2) validating the use of intrabody to follow the nano-structure of PSD95. The full reviews are appended below, which will help clarify the concerns of the individual reviewers, including the two points. In addition, the authors should address all the points raised in the individual reviews. The requested revision does not involve new experiments, and require mostly re-analysis of data and re-writing with clarifications and additional explanations.\n\nReviewer #1 (Recommendations for the authors):\n\nThis study capitalizes on the crosstalk-free two-color STED developed by the authors (Willg et al., Cell Rep 2021) to examine the dynamic changes in synapse structure in mouse visual cortex. Specifically, imaging the superficial dendrites of layer V pyramidal neurons, the authors compared how rearing mice in enriched environment (EE) affects spine morphology and the dynamics of PSD95 scaffolding protein within spines, compared to mice reared in control housing. Curiously, EE mice show less variable spine head volumes and PSD95 areas compared to control mice, while the spine head volume is larger but not PSD95 area in EE group compared to the control group. Moreover, nano-organization of PSD95 displays more prominent changes in EE compared to controls. The authors provide data of excellent quality, and the properties of subtle differences in the dynamics of spine head size and PSD95 organization would be of interest to cellular neuroscientists. Nevertheless, there is a large gap between spine structure dynamics and EE rearing. The causal relationship between the changes in PSD95 and spine size and the presumed enhanced sensory stimulation in EE should be better defined, or at least framed in a way that the results could be better interpreted. Moreover, given that the intrabody method to label PSD95 has not been used to examine nano-organization in detail, one should first validate the utility of the approach by establishing that it provides an accurate readout of the endogenous protein, for example, by using fluorescence immunolabelling to compare PSD95 and FingR signals.\n\n1) That PSD95 intrabody has little effect on synapse organization has been examined at the level of conventional light microscopy. Given that the intrabody tagged with a fluorescent protein is of considerable size (~37 kD, according to Gross et al., 2013), could the authors exclude the possibility that there is no potential artefacts from steric hinderance, for instance?\n\n2) To what extent does the amount of nanobody expressed per cell affect the dynamic behavior of PSD95? Could one be certain that there is no apparent relationship between the level of PSD95 intrabody expression per cell and PSD95 dynamics? In Figure S3, it would be more informative to compare the relationship between the brightness of PSD95 signal and the size of spines, the latter being measured by an independent signal. If the level of expression of PSD95 intrabody has no effect on PSD95 dynamics, then one would not expect to see a relationship, and this should be tested.\n\n3) How does the PSD95 area measured using the intrabody compare to previous data obtained from PSD95-EGFP knock-in mice as reported in Wegner et al., 2018?\n\n4) Figure 2C-J. Reduced variance in the sizes of spine head and PSD95 in the EE group seems to be due to the loss of smaller spine heads and PSD95 areas in the group. If one excludes the smallest spine heads and PSD95 areas, then is there any difference in the distribution?\n\n5) Line 223. \"However, whether dynamic changes between these two features are also strongly linked has remained unknown.\" Contrary to the statement, temporal uncoupling of spine head size changes in PSD95 increase has been noted previously (cf. Lines 48-53).\n\n6) Figure 3G-H. The rationale for assessing the total variance of PSD95 area and spine size combined, for the comparisons between control and EE is not clear. Also, why does the variance for control show a peak at 60 min but decline at 120 min?\n\n7) Figure 4F. As with the comment above, it is not clear why the slope of PSD95 area change should plateau at 60 min and show little increase at 120 min relative to 60 min for continuous baseline imaging.\n\nReviewer #2 (Recommendations for the authors):\n\n1. The method is a nice advance that will be important for the field.\n\n2. The motivation for the biological part of the study is lacking. The overarching question is not clear to me. One smaller question the authors are asking is if the correlation between PSD95 and spine head size is maintained in a short time window of plasticity. I am not sure why that is an important question. They also find that EE reduces variation in spine head size, but it is not clear the biological importance or consequences of a smaller variation in spine head size. Why is this an important analysis to do? The same can be said (noted below) about changes in PSD morphology. Throughout the paper, the authors should have the motivation for each analysis and link it back to their main overarching question. It is hard to say whether this study is an important biological advance because I am not sure what question they are really trying to address.\n\n3. The introduction is really difficult to follow and reads a bit like a stream of consciousness. Please break it into paragraphs with themes. The introduction does not set up an overarching biological question and it should. Why have the authors done these particular experiments and analyses?\n\n4. In a number of places in the paper, the language is difficult to read and at times overly complicated in structure. The authors often make style choices to not use commas surrounding explanatory clauses, but including commas would help with parsing many of the sentences. There are many typos throughout the manuscript, particularly with prepositions. A strong edit to make the language clear and direct would be very helpful for readers.\n\n5. In line 84-85, the authors say that the dynamics of individual synapses in enriched environment are unknown. This is not entirely true. Yang et al., 2009 specifically looked at spine dynamics in vivo with enriched environment (PMID: 19946265), which should be cited here. Greifzu et al., 2014 also examines this general question in visual cortex by looking at E/I balance (and thus indirectly synapses) in enriched environments (PMID: 24395770). This study should also be cited.\n\n6. In line 106-107, the authors say that 'Previous attempts featuring STED microscopy of EGFP and EYFP by two-color detection were suffering of high crosstalk requiring channel unmixing.' Could the authors please say what the issues were previously and what they have done to solve that problem? It is not clear to me, but the explanation would help highlight their methodological development.\n\n7. As mentioned in the section above, I cannot find how long the authors waited after the cranial window surgery until they imaged, but if it is less than four weeks, they need to comment on the effects of inflammation on their synaptic results. This is critical for the interpretation.\n\n8. In lines 287-289, the authors state that bigger spines tend to get smaller and smaller spines tend to get bigger. Given that there is a limit on spine head size, I think that the default hypothesis would be that this reflects regression to the mean. I am not sure why the authors have included this analysis, but they should either show controls that indicate it is not regression to the mean or remove this analysis from the manuscript.\n\n9. As stated in the section above, it is not clear to me the biological relevance of changes in nanoorganization of PSD95. What are the biological consequences or significance of a shift in the nanoorganization for the function of the synapse? Also, could this analysis be quantiative, rather than just descriptive?\n\n10. Lines 346-347, what does subtle change or strong change mean for a PSD95 morphology? Can this be quantified as a percentage change of some type? Could the authors also please explain the biological significance or consequences of this change?\n\n11. In lines 457-458 and 472-473, the authors should cite the original paper that showed that in vivo scaling is input specific, Barnes et al. 2017 (PMID 24395770), not the review that they have cited here.\n\nReviewer #3 (Recommendations for the authors):\n\n1) The data quality is amazing, it is very impressive that this resolution is possible in a breathing animal with a beating heart, using relatively slow scanning microscopy. You should mention the complex procedure you developed to ensure stability, normal orientation and biocompatible surface of the cranial window, pointing to the Methods paper for detail. You have earned your bragging rights.\n\n2) What kind of anesthesia was used during imaging? How much time elapsed between the onset of anesthesia and the first imaging time point (t = 0 min)? Were the imaging experiments performed blind with respect to the housing conditions?\n\n3) lines 235-238: \"This means...\" This sentence is confusing, delete. The correlation is clearly described in the next sentence. Same for the figure title: \"positively and negatively correlated\" - I see only weak positive correlations on the population level.\n\nIn general, Fig. 3 is a bit confusing due to the separate analysis of 3 time points, but no discussion about what happened at t = 0 (onset of anesthesia?). Therefore, the reader is left wondering if the fact that correlation and variance are more or less tight at different time points carries any biological relevance, or if these are supposed to be repeated measures of a Kesten process at work, or perhaps a control for stable imaging conditions? If this is about detecting differences between EE and control, wouldn't it make more sense to pool all time points?\n\n4) Fig 4F, control animals: I have a hard time understanding how there can be shrinkage at 30 min sampling intervals, but not at longer intervals. Does the dt30min group only contain (30 min - 0 min), or also (60 min - 30 min)? Does this mean initially shrunken PSDs grow back again? Has this something to do with the onset of anesthesia? Please explain/interpret this result.\n\n5) Fig. 4G: This analysis is great, but its significance might be difficult to understand for some readers. It might be worth pointing out that if there were a temporal sequence, e.g. first spine size expansion, then PSD enlargement, this would result in little correlation when comparing just two time points. Thus, the cross-correlation analysis. One could even do a little simulation to illustrate how the cross correlation would look like if changes were linked with a delay (this is optional).\n\n6) Did some spines disappear completely during the period of observation?\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Environmental enrichment enhances patterning and remodeling of synaptic nanoarchitecture as revealed by STED nanoscopy\" for further consideration by eLife. Your revised article has been evaluated by Lu Chen (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been significantly improved but there are some remaining issues, mostly concerning aspects of the biological context of the study, that need to be addressed, as outlined below:\n\nLine 32-33: \"\u2026 synaptic strength is set more precisely.\"\n\nThe term \"precise\" implies that there is a specific value around which the synaptic strength is set, which is not clear in this case. It is suggested that the authors use a more neutral expression such as \".. synaptic strength is set more uniformly\" to describe the key observation.\n\nLine 62: \"\u2026 which was confirmed recently (Holler et al., 2021).\"\n\nIt would be informative to indicate that the study involved EM (CLEM) analysis, and should be rephrased, for example, \"\u2026 which was confirmed recently at ultrastructural resolution..\".\n\nLine 67: \"\u2026 directly after LTP.\"\n\n->.. directly after LTP induction.\n\nLine 70: \"\u2026 with a delay of ~1 hour after LTP\"\n\nAs with above, potentiation itself can last for hours, and thus the timeframe being referred to needs to be clear.\n\n-> e.g. \u2026 with a delay of ~1 hour after inducing LTP\n\nLine 76: \"\u2026 of the spine and postsynapse at increased activity and baseline in vivo.\"\n\nThe increased activity is an assumption, and this should be reflected in the statement. For example, one could rephrase along the lines of \"\u2026 of the spine and postsynapse in vivo using mice reared in enriched environment representing increased activity conditions and normal housing representing baseline conditions.\"\n\nLine 123\n\nIs it meant that in one possibility, EE could directly affect \"pre-existing\" synapses rather than \"all\" synapses?\n\nLine 190\n\nIn addition to the reference to Steffens et al., 2020, it would be helpful to the reader if the authors briefly mention what particular procedural features help ensure the craniotomy be atraumatic as possible.\n\nLine 580: \"To study activity-dependent changes, we compared adult mice housed in standard cages with age matched EE housed mice and analyzed synaptic morphology and plasticity \u2026.\"\n\nThe motivation for the study is somewhat misguided and unclear, since the present work assessed the influence of activity by subjecting mice to activity-enhanced conditions by means of EE, and did not directly examine activity-dependent changes per se. Moreover, as acknowledged by the authors, there may be an issue also of anesthesia. The starting sentence as well as the rest of the discussion in the paragraph need to reflect these points.\n\nParagraph starting from Line 606\n\nAs with the comment above, the caveats of the present experimental design, including the effects of anesthesia, should be acknowledged.\n",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7092141d-0345-4179-8e05-5d0ab622d6da",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C1",
+      "claim": "A two-color in vivo STED microscope was designed with ~8% crosstalk of EYFP in the EGFP channel and ~5% of the EGFP signal in the EYFP channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Live-cell imaging showed that we have designed a virtually crosstalk-free microscope with only ~8% crosstalk of EYFP in the EGFP channel (channel 1) and ~5% of the EGFP signal in the EYFP channel (channel 2) which does not require linear unmixing (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental measurements shown in Figure 1C demonstrating the crosstalk percentages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "dbcd992d-ba31-4d6a-820d-24c1ab7cecf4",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C2",
+      "claim": "The two-color STED microscope achieves a resolution of at least ~70 nm for Citrine and ~84 nm for EGFP in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "STED microscopy visualized dendrites, spines, and attached PSD95 assemblies in layer 1 of the visual cortex at superresolution (Figure 1C) with a resolution of at least ~70 nm for Citrine and ~84 nm for EGFP (Figure 1\u2014figure supplement 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The resolution values are determined from experimental measurements shown in Figure 1\u2014figure supplement 1A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "5bfbff15-0b77-45d9-8824-ad94330dffb7",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C3",
+      "claim": "Spine head area correlates with PSD95 area for both EE and control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The spine head area correlated with the PSD95 area for EE and Ctr (Figure 2B), corroborating EM and two-photon microscopy studies (Arellano et al., 2007; Cane et al., 2014; Meyer et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The correlation is demonstrated by data in Figure 2B and is consistent with previous studies cited.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "e049dd11-807c-4aea-a1db-0a011704afac",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C4",
+      "claim": "The median spine head area for EE housed mice is 0.527 \u00b5m\u00b2 with an interquartile range of 0.359\u20130.844 \u00b5m\u00b2.",
+      "claim_type": "EXPLICIT",
+      "source": "We determined a median spine head area for EE housed mice of 0.527 (interquartile range [IR]: 0.359\u20130.844) \u00b5m2 and 0.462 (IR: 0.290\u20130.787) \u00b5m2 for Ctr mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The median and interquartile range values are derived from direct measurements of spine head areas.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "540fa549-00bd-46c0-bc67-79409f1ed189",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C5",
+      "claim": "The median spine head area for control mice is 0.462 \u00b5m\u00b2 with an interquartile range of 0.290\u20130.787 \u00b5m\u00b2.",
+      "claim_type": "EXPLICIT",
+      "source": "We determined a median spine head area for EE housed mice of 0.527 (interquartile range [IR]: 0.359\u20130.844) \u00b5m2 and 0.462 (IR: 0.290\u20130.787) \u00b5m2 for Ctr mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The median and interquartile range values are derived from direct measurements of spine head areas.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "f49e89c6-a5bd-413d-b8c9-a04544e3d828",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C6",
+      "claim": "The median PSD95 area for EE housed mice is 0.158 \u00b5m\u00b2 with an interquartile range of 0.107\u20130.269 \u00b5m\u00b2.",
+      "claim_type": "EXPLICIT",
+      "source": "The area of PSD95 on the same set of spine heads was 0.158 (IR: 0.107\u20130.269) \u00b5m2 in median for EE mice and 0.161 (IR: 0.092\u20130.286) \u00b5m2 for Ctr mice which is in accordance with previous EM studies reporting 0.15 \u00b5m2 for the PSD area in the mouse visual cortex (Harris and Weinberg, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The median and interquartile range values are derived from direct measurements of PSD95 areas and are consistent with previous EM studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "1da23333-780d-476e-8f48-34081297f96d",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C7",
+      "claim": "The median PSD95 area for control mice is 0.161 \u00b5m\u00b2 with an interquartile range of 0.092\u20130.286 \u00b5m\u00b2.",
+      "claim_type": "EXPLICIT",
+      "source": "The area of PSD95 on the same set of spine heads was 0.158 (IR: 0.107\u20130.269) \u00b5m2 in median for EE mice and 0.161 (IR: 0.092\u20130.286) \u00b5m2 for Ctr mice which is in accordance with previous EM studies reporting 0.15 \u00b5m2 for the PSD area in the mouse visual cortex (Harris and Weinberg, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The median and interquartile range values are derived from direct measurements of PSD95 areas and are consistent with previous EM studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "86f5d2ec-3fe4-4ae2-b9c7-71098ef90046",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C8",
+      "claim": "The distributions of spine head and PSD95 areas are significantly different between EE and control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The histograms of spine head (Figure 2C) and PSD95 area (Figure 2D) were positively skewed and the distributions were significantly different between EE and Ctr mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis (Kolmogorov-Smirnov test) of the data shown in Figure 2C and 2D demonstrates significant differences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "45f156bc-d44d-4f86-a2e2-2ff1676043fb",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C9",
+      "claim": "Spine head and PSD95 area distributions are log-normally distributed.",
+      "claim_type": "EXPLICIT",
+      "source": "All four histograms (Figure 2E and F) are symmetric and well described by a Gaussian function. This is in line with prior work showing that the spine and PSD95 fluorescence is log-normally distributed in general, which is predicted by multiplicative processes of ongoing spine plasticity (Hazan and Ziv, 2020; Loewenstein et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The log-transformed data shown in Figure 2E and F fit Gaussian distributions, consistent with log-normal distributions, and this is supported by previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "ce1e6066-33b2-4394-beaf-687a495535bd",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C10",
+      "claim": "EE housed mice have significantly larger average spine head area compared to control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The Gaussian function fitting the spine head area is shifted to the right and is narrower for EE housed mice (Figure 2E). This is manifested by a significantly larger spine head area (Figure 2G) and smaller variance of the size distribution (Figure 2I) of EE housed mice, which might imply a preferential loss or adaptation of small spines (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis shown in Figure 2G demonstrates significantly larger spine head area in EE mice (unpaired t-test with Welch's correction: p < 0.0001).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "33b9b227-2a47-4030-9586-e3821fbf02d7",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C11",
+      "claim": "EE housed mice have significantly smaller variance in spine head size distribution compared to control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The Gaussian function fitting the spine head area is shifted to the right and is narrower for EE housed mice (Figure 2E). This is manifested by a significantly larger spine head area (Figure 2G) and smaller variance of the size distribution (Figure 2I) of EE housed mice, which might imply a preferential loss or adaptation of small spines (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis shown in Figure 2I demonstrates significantly smaller variance in EE mice (unpaired t-test with Welch's correction: p = 0.006).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "2c20af67-d1cc-43d1-b16a-c9233b943f2c",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C12",
+      "claim": "The average PSD95 area is not significantly different between EE and control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The distributions of the logarithm of the PSD95 area (Figure 2F) are almost centered and thus the average area is not significantly different between EE and Ctr mice (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis shown in Figure 2H shows no significant difference (unpaired t-test with Welch's correction: p = 0.54).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "8e8dec7f-6032-48e0-9b50-5e56a1c3b549",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C13",
+      "claim": "EE housed mice have significantly smaller variance in PSD95 area distribution compared to control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the variance (Figure 2J) is smaller for EE housed mice which is also visible in the Gaussian distribution that is narrower for EE housed mice (Figure 2F), that is, having less extreme values.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis shown in Figure 2J demonstrates significantly smaller variance in EE mice (unpaired t-test with Welch's correction: p = 0.003).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "1cebddbe-e589-4d9f-b42c-049da0877c53",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C14",
+      "claim": "Spine density is not significantly different between EE and control housed mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We also analyzed the spine density which was not significantly different between EE and Ctr housed mice (Figure 2\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis shown in Figure 2\u2014figure supplement 2B demonstrates no significant difference (Mann-Whitney U test, p = 0.68).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "fbecb1a5-ff71-40a4-ac63-7b46946ed6eb",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C15",
+      "claim": "Spine heads grow by approximately 20% and shrink by approximately 15% within 30 minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, PSD95 assemblies displayed larger normalized changes in size than spine heads, which is evident from the elliptic distributions in Figure 3D\u2013G or the median percent changes (Figure 3\u2014figure supplement 1D, E); spine heads grew by ~20% and shrunk by ~15% while PSD95 assemblies grew by ~20\u201325% and shrunk by 25\u201330%.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The percentage changes are derived from measurements shown in Figure 3\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "3ff38beb-00fc-46b6-80bb-46918218f448",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C16",
+      "claim": "PSD95 assemblies grow by approximately 20-25% and shrink by 25-30% within 30 minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, PSD95 assemblies displayed larger normalized changes in size than spine heads, which is evident from the elliptic distributions in Figure 3D\u2013G or the median percent changes (Figure 3\u2014figure supplement 1D, E); spine heads grew by ~20% and shrunk by ~15% while PSD95 assemblies grew by ~20\u201325% and shrunk by 25\u201330%.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The percentage changes are derived from measurements shown in Figure 3\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "2ee81f8f-1737-47d2-bb0b-04fd9c65dda4",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C17",
+      "claim": "Temporal changes between spine head and PSD95 area show weak but significant positive correlation (r between 0.15 and 0.39).",
+      "claim_type": "EXPLICIT",
+      "source": "A linear regression analysis revealed a weak but significant positive correlation (r between 0.15 and 0.39, Figure 3D\u2013G), such that an increase of PSD95 area is more frequently accompanied by an increase in spine head area and vice versa (Figure 3K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Linear regression analysis of data shown in Figure 3D-G demonstrates weak positive correlations with statistical significance (p < 0.0001).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "177d0d34-d409-4915-9d4a-9532b8024d66",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C18",
+      "claim": "The variance of positively correlated changes (PC1) is approximately 3 times larger than negatively correlated changes (PC2) at all time intervals.",
+      "claim_type": "EXPLICIT",
+      "source": "The variance of PC1 and thus correlated changes is ~3 times larger at all time intervals than that of PC2, that is, anti-correlated changes (Figure 3H, I; Figure 3\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Principal component analysis results shown in Figure 3H, I and Figure 3\u2014figure supplement 1F demonstrate the variance ratio.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "b89bbe4e-dbe6-47a6-b7ae-eb33318d4743",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C19",
+      "claim": "Control housed mice show statistically significantly higher variance for negatively correlated changes (PC2) compared to EE housed mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the variance of Ctr housed mice was statistically significantly higher for PC2 but not for PC1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis shown in Figure 3J demonstrates significantly higher variance for PC2 in control mice (unpaired t-test: p < 0.0001).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "82523d32-e2b7-4573-ba99-4c1681bbe0e0",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C20",
+      "claim": "Negatively correlated changes contribute much less in EE housed mice, indicating stronger positive coupling between spine head size and PSD95 area changes.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that negatively correlated changes contribute much less in the EE housed mice indicating a stronger, positive coupling between changes in spine head size and PSD95 area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the significantly lower variance of PC2 in EE mice shown in Figure 3J.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "b4851db0-de11-45e1-9a4f-a84d493bd803",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C21",
+      "claim": "Large spines tend to shrink and small spines tend to grow, exhibiting regression to the mean.",
+      "claim_type": "EXPLICIT",
+      "source": "Plotting the size difference between the different time points as a function of the original size indicates that large spines tend to shrink and small spines tend to grow; this becomes evident as the changes are rather negative for larger sizes and positive for smaller sizes (Figure 4\u2014figure supplement 1). Such a tendency is often called regression to the mean and is a frequently observed statistical phenomenon.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The tendency is demonstrated by data in Figure 4\u2014figure supplement 1 and is characterized as a known statistical phenomenon.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "40284545-c419-49ce-9920-29f9696c29c2",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C22",
+      "claim": "The multiplicative downscaling factor for PSD95 area is significantly different between EE and control housed mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a significantly different slope, that is, multiplicative downscaling for the PSD95 area between EE and Ctr housed mice (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis shown in Figure 4F demonstrates significantly different slopes between EE and control mice at 30, 60, and 120 min intervals (p < 0.01, p < 0.0001, p < 0.0001 respectively).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "c1f14f43-e122-4882-b6fe-91d22fb4731d",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C23",
+      "claim": "The slope for spine head size changes is constant over time and similar between EE and control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this effect was specific for PSD95 and was not observed for the spine head size (Figure 4A\u2013C); the slope for spine head size changes was rather constant over time and similar between EE and Ctr mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analysis shown in Figure 4A-C demonstrates no significant differences in slopes for spine head changes between EE and control mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "18de94e5-e0eb-4aab-b20f-c1d929262bc2",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C24",
+      "claim": "Large spine heads tend to stay rather large and smaller ones stay small over the 2-hour observation period.",
+      "claim_type": "EXPLICIT",
+      "source": "The r value was relatively constant over all time intervals and not significantly different between spine heads and PSD95 assemblies or EE and Ctr house mice. As such we did not find changes in r or its corresponding coefficient of determination R2 value such as described in vitro (Hazan and Ziv, 2020) at our time window of up to 2 hr. This indicates that large spine heads tend to stay rather large and smaller ones stay small.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The stability is inferred from the constant Pearson's correlation coefficient r shown in Figure 4C and F over different time intervals.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "ad21ce57-602e-4f1f-9a63-08cf8dfdab4e",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C25",
+      "claim": "No temporal shift between spine head and PSD95 area changes was observed at baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4G shows that the cross-correlation between the PSD95 and spine head area was ~0.8 over all time intervals of 0\u2013120 min and thus we did not observe directional changes of these parameters at baseline. In particular, we did not observe that PSD95 increase would systematically succeed a spine head increase or vice versa as both would result in an asymmetric cross-correlation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Cross-correlation analysis shown in Figure 4G demonstrates symmetric correlation without temporal lag.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "b1e19025-1be9-48f5-87dd-947f378d7e33",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C26",
+      "claim": "Control housed mice show a clear trend where the longer the measurement interval, the greater the morphological change in PSD95 nanoorganization.",
+      "claim_type": "EXPLICIT",
+      "source": "Ctr housed mice showed a clear trend: the longer the measurement interval, the greater the morphological change (Figure 5C); the percentage of PSD95 nanoorganization showing no change decreased from ~40% to ~10%, while the percentage for strong changes nearly tripled for Ctr.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The trend is demonstrated by visual inspection data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "f4caec66-e76c-499c-9314-fd726783a152",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C27",
+      "claim": "For EE housed mice, approximately 20% of PSD95 assemblies did not change and approximately 80% underwent a change at all time points.",
+      "claim_type": "EXPLICIT",
+      "source": "For EE housed mice, we observed similar, strong changes within all investigated time intervals; ~20% of the PSD95 assemblies did not change at all and ~80% underwent a change at all time points (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The percentages are derived from visual inspection data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "c1555cc2-2d61-4b33-a871-697c5459ab16",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C28",
+      "claim": "PSD95 nanoorganization is more dynamic in EE mice than in mice raised under control conditions within the investigated time course.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, changes in Ctr housed mice increased over the observation period and reached a level similar to that of EE housed mice after 120 min. This suggests that the PSD95 nanoorganization is more dynamic in EE mice than in mice raised under control conditions within the investigated time course.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the comparison of morphological change patterns shown in Figure 5B and C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "7976fc24-f4ff-4cd2-a708-e1d037a78ff5",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C29",
+      "claim": "Fewer nanoorganizations of EE housed mice were perforated and a larger fraction showed three or more clusters compared to control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Fewer nanoorganizations of EE housed mice were perforated and a larger fraction showed three or more clusters compared to Ctr mice (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The morphometry differences are shown in Figure 5D based on visual categorization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "f41bc54f-f4d9-4194-be18-ff9798604b5b",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C30",
+      "claim": "Environmental enrichment accelerates the maturation of new neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "EE has been shown to accelerate the maturation of new neurons, increase pre- and post-synaptic protein levels (Nithianantharajah et al., 2004), and facilitate synaptic plasticity (Greifzu et al., 2014; Nithianantharajah and Hannan, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "735851f0-b208-4060-872d-3ad651a91e19",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C31",
+      "claim": "Environmental enrichment increases pre- and post-synaptic protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "EE has been shown to accelerate the maturation of new neurons, increase pre- and post-synaptic protein levels (Nithianantharajah et al., 2004), and facilitate synaptic plasticity (Greifzu et al., 2014; Nithianantharajah and Hannan, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Nithianantharajah et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "c5a83f61-2fb0-4585-bed6-0d18da9276f8",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C32",
+      "claim": "Environmental enrichment facilitates synaptic plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "EE has been shown to accelerate the maturation of new neurons, increase pre- and post-synaptic protein levels (Nithianantharajah et al., 2004), and facilitate synaptic plasticity (Greifzu et al., 2014; Nithianantharajah and Hannan, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Greifzu et al., 2014 and Nithianantharajah and Hannan, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "2941971f-05d9-4b60-bde1-3f740160486a",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C33",
+      "claim": "Environmental enrichment increases dendritic branching and spine density.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural changes include increased dendritic branching and spine density (Gelfo et al., 2009; Leggio et al., 2005) and induction of spine formation (Yang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Gelfo et al., 2009 and Leggio et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "01f40d75-69b4-4548-afd5-64d58b15297c",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C34",
+      "claim": "Environmental enrichment induces spine formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural changes include increased dendritic branching and spine density (Gelfo et al., 2009; Leggio et al., 2005) and induction of spine formation (Yang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Yang et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "62d23ee9-72d6-4675-a9d6-b4430eefd91e",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C35",
+      "claim": "There is a tight correlation between structural plasticity and functional plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Decades of neuroscience research has shown a tight correlation between structural plasticity, the morphological transformation of spines and synapses, and modifications in synaptic transmission, termed functional plasticity (Yuste and Bonhoeffer, 2001), which was confirmed recently at ultrastructural resolution (Holler et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Yuste and Bonhoeffer, 2001 and Holler et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "00bdb0dc-f659-4cb0-b1b6-807c7f9b2102",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C36",
+      "claim": "Functional changes are linked to anchoring AMPAR via TARPs to PSD95.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional changes are linked to anchoring amino-3-hydroxy-5-methyl-4-isoxazolepropionic acid receptors (AMPAR) via transmembrane AMPAR-regulatory proteins (TARPs) to the post-synaptic density (PSD) scaffolding protein PSD95 (Compans et al., 2016; Herring and Nicoll, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Compans et al., 2016 and Herring and Nicoll, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "8cba876a-a691-497b-a687-046bad918f1c",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C37",
+      "claim": "AMPAR-mediated currents increase simultaneously with the spine head directly after LTP induction.",
+      "claim_type": "EXPLICIT",
+      "source": "AMPAR-mediated currents were shown to increase simultaneously with the spine head directly after LTP induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge without specific citation in this sentence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "b1b0c4b1-aa61-4b14-9cc0-bc2f9dc8a37f",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C38",
+      "claim": "Accumulations of PSD95 increase with a delay of approximately 1 hour after inducing LTP, whereas spine heads increase in less than a minute.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent evidence suggests that not all synaptic structures follow this fast dynamic; as such, accumulations of PSD95 increase in vitro with a delay of ~1 hr after inducing LTP, whereas the spine heads increase in less than a minute (Bosch et al., 2014; Meyer et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Bosch et al., 2014 and Meyer et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "0a09f7c7-9404-4320-ba94-7a500cfedc55",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C39",
+      "claim": "PSD95 is often arranged in clusters, rings, or a more complex nanopattern.",
+      "claim_type": "EXPLICIT",
+      "source": "By applying superresolution microscopy we and others have shown that PSD95 is often arranged in clusters, rings, or a more complex nanopattern, and that this nanoorganization undergoes pronounced intrinsic structural changes on the time scale of minutes to hours (Hruska et al., 2018; MacGillavry et al., 2013; Wegner et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Hruska et al., 2018, MacGillavry et al., 2013, and Wegner et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "54794f01-01c9-4463-ada8-a4703e3995af",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C40",
+      "claim": "PSD95 nanoorganization undergoes pronounced intrinsic structural changes on the time scale of minutes to hours.",
+      "claim_type": "EXPLICIT",
+      "source": "By applying superresolution microscopy we and others have shown that PSD95 is often arranged in clusters, rings, or a more complex nanopattern, and that this nanoorganization undergoes pronounced intrinsic structural changes on the time scale of minutes to hours (Hruska et al., 2018; MacGillavry et al., 2013; Wegner et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Hruska et al., 2018, MacGillavry et al., 2013, and Wegner et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "7fb80395-8414-4089-9d8f-730953b1a013",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C41",
+      "claim": "Sub-synaptic nanoorganization exists at the pre- and post-synaptic site and both are aligned in nanocolumns.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, it was shown that such a sub-synaptic nanoorganization exists at the pre- and post-synaptic site and that both are aligned in the so-called nanocolumns (Hruska et al., 2018; Tang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Hruska et al., 2018 and Tang et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "97aef1a2-a54a-4e33-bd8d-12198bac5611",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C42",
+      "claim": "Changes in the shape of the PSD or modest clustering of AMPAR is a highly efficient way to modify synaptic strength without altering the total amount of receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Computational studies show that changes of the shape of the PSD (Franks et al., 2003) or modest clustering of AMPAR (Savtchenko and Rusakov, 2014) is a highly efficient way to modify synaptic strength without altering the total amount of receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to computational studies by Franks et al., 2003 and Savtchenko and Rusakov, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "e96e36bb-7714-4351-af37-49e1753e7041",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C43",
+      "claim": "AMPAR current amplitude drops significantly already at 50 nm offset between pre-synaptic glutamate release site and AMPAR cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, AMPAR current amplitude drops significantly already at 50 nm offset between pre-synaptic glutamate release site and AMPAR cluster (Haas et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Haas et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "e4eb19aa-a25f-42cb-9ef8-e637cc3ded93",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C44",
+      "claim": "Synaptic connections undergo continuous spontaneous remodeling without any activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Synaptic structures, however, are highly volatile intrinsically as such that synaptic connections undergo continuous spontaneous remodeling without any activity (Mongillo et al., 2017; Ziv and Brenner, 2018); for example, intact synapses are formed despite abolishing pre-synaptic release (Sigler et al., 2017) or network silencing (Hazan and Ziv, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Mongillo et al., 2017 and Ziv and Brenner, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "27fd2664-64ee-4282-a802-5d29378a3a6a",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C45",
+      "claim": "Intact synapses are formed despite abolishing pre-synaptic release.",
+      "claim_type": "EXPLICIT",
+      "source": "Synaptic structures, however, are highly volatile intrinsically as such that synaptic connections undergo continuous spontaneous remodeling without any activity (Mongillo et al., 2017; Ziv and Brenner, 2018); for example, intact synapses are formed despite abolishing pre-synaptic release (Sigler et al., 2017) or network silencing (Hazan and Ziv, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Sigler et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "125f7f34-448f-44c9-af18-7aeac4533776",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C46",
+      "claim": "Intact synapses are formed despite network silencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Synaptic structures, however, are highly volatile intrinsically as such that synaptic connections undergo continuous spontaneous remodeling without any activity (Mongillo et al., 2017; Ziv and Brenner, 2018); for example, intact synapses are formed despite abolishing pre-synaptic release (Sigler et al., 2017) or network silencing (Hazan and Ziv, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Hazan and Ziv, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "a98eacba-b284-4344-8359-25927758ca99",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C47",
+      "claim": "The visual cortex exhibits enhanced plasticity under environmental enrichment conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "By investigating the synaptic dynamics in the mouse visual cortex, a brain region known to exhibit enhanced plasticity under EE conditions (Baroncelli et al., 2010; Kalogeraki et al., 2017) and accessible to light microscopy, we demonstrate that spine head and PSD95 size distributions decrease in variability while spine heads increase in average size under EE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Baroncelli et al., 2010 and Kalogeraki et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "92f00d2a-e1fc-4c4b-b5f9-a8c9b2b38e45",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C48",
+      "claim": "PSD95.FingR efficiently labels endogenous PSD95.",
+      "claim_type": "EXPLICIT",
+      "source": "We utilized a transcriptionally regulated antibody-like protein to visualize endogenous PSD95 without introducing overexpression artifacts (Gross et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Gross et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "7ea593a3-f5fa-4101-9241-39af54331431",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C49",
+      "claim": "PSD95.FingR labeling excludes artifacts that occur after PSD95 overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the transcriptionally regulated antibody-like PSD95.FingR, which efficiently labels endogenous PSD95 (Cook et al., 2019; Gross et al., 2013) and excludes artifacts that occur after PSD95 overexpression (El-Husseini et al., 2000; Stein et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Cook et al., 2019, Gross et al., 2013, El-Husseini et al., 2000, and Stein et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "9e2f195a-9a1a-4981-9953-7db319046a72",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C50",
+      "claim": "The coefficient of determination R\u00b2 between PSD95 brightness and nanoscale size is 0.76.",
+      "claim_type": "EXPLICIT",
+      "source": "We also analyzed the PSD95 brightness and found a coefficient of determination R2 = 0.76 between the brightness and nanoscale size (Figure 2\u2014figure supplement 2A), indicating that the brightness is a deficient correlate of synaptic size.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The R\u00b2 value is calculated from data shown in Figure 2\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "46f54c65-c6b7-4ed9-b7ad-4f75bbeb2f02",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C51",
+      "claim": "Brightness is a deficient correlate of synaptic size.",
+      "claim_type": "EXPLICIT",
+      "source": "We also analyzed the PSD95 brightness and found a coefficient of determination R2 = 0.76 between the brightness and nanoscale size (Figure 2\u2014figure supplement 2A), indicating that the brightness is a deficient correlate of synaptic size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the R\u00b2 value of 0.76, which indicates substantial but imperfect correlation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "b2757930-0929-4f36-98c9-d602809a9a3d",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C52",
+      "claim": "The spine head growth of approximately 20-30% on average is very similar to spine head changes reported over 3-4 days in transgenic mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The spine head growth of ~20\u201330% on average and ~200% maximum (Figure 3\u2014figure supplement 1) is very similar to the spine head changes we have reported recently in the cortex of a transgenic mouse over 3\u20134 days (Steffens et al., 2021) and to spine head increase following chemical LTP induction (Kopec et al., 2006; Otmakhov et al., 2004) or glutamate uncaging (Meyer et al., 2014); thus these changes might reflect potentiation of single spines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This comparison is supported by citations to Steffens et al., 2021, Kopec et al., 2006, Otmakhov et al., 2004, and Meyer et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "6bf263db-a59d-4536-bbe3-ba99f828f482",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C53",
+      "claim": "MMF anesthesia reduces spiking activity and mildly increases spine turnover in the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it was shown that MMF anesthesia reduces spiking activity and mildly increases spine turnover in the hippocampus (Yang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Yang et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "34967860-f594-409a-a3ee-f095139476fc",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C54",
+      "claim": "The plasticity of spine heads and PSD95 assemblies might be different in the awake state and under intense processing of visual information.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the plasticity of spine heads and PSD95 assemblies might be different in the awake state and under intense processing of visual information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the effects of anesthesia mentioned in the previous sentence.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "cd615f2f-ce18-446f-86cf-9a6360d2d007",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C55",
+      "claim": "In vitro LTP experiments show a temporal delay of approximately 60 minutes between spine and PSD95 increase.",
+      "claim_type": "EXPLICIT",
+      "source": "This supports in vitro LTP experiments which have shown a temporal delay of ~60 min between spine and PSD95 increase (Bosch et al., 2014; Meyer et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Bosch et al., 2014 and Meyer et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "577cb8c7-c780-478c-98a9-23afe7730a52",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C56",
+      "claim": "Spine and PSD enlargement might be regulated by different pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Although these experiments were performed in cell culture and with PSD95 overexpression, they indicate that spine and PSD enlargement might be regulated by different pathways (Compans et al., 2016; Herring and Nicoll, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This inference is supported by citations to Compans et al., 2016 and Herring and Nicoll, 2016.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "25cd472c-d098-4609-b884-c8331c3f62e3",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C57",
+      "claim": "A slot model proposes that actin polymerization during LTP increases the number of slots which can harbor AMPA receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "A slot model proposes that the actin polymerization during LTP increases the number of slots which can harbor AMPA receptors (Herring and Nicoll, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Herring and Nicoll, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "edecc209-d7ff-4e74-b46a-7ccad0aa05b3",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C58",
+      "claim": "In the slot model, the increase of AMPA receptors would not depend on an increase of the amount of PSD95 proteins at the synapse but on an activation of binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the increase of AMPA receptors would not depend on an increase of the amount of PSD95 proteins at the synapse but on an activation of binding sites of AMPA receptor to the PSD95 by a still unknown mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the slot model described in the previous sentence.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "e641aef3-d6d5-433e-ab4f-041fa278e3e7",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C59",
+      "claim": "In the model of synaptic scaling, an increase in activity leads to a downscaling of excitatory synapses and vice versa.",
+      "claim_type": "EXPLICIT",
+      "source": "In the model of synaptic scaling, an increase in activity leads to a downscaling of excitatory synapses and vice versa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about synaptic scaling models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "326afb0e-a9de-44e7-86e7-cf3514ecd984",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C60",
+      "claim": "The downscaling in synaptic scaling is multiplicative and affects both the average and broadening of the size distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "The downscaling is multiplicative and therefore changes affect the average as well as broadening of the size distribution as shown, for example, in a silenced network (Hazan and Ziv, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Hazan and Ziv, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "72f3dd4d-5ffa-46fa-b62a-8c305e5d46f1",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C61",
+      "claim": "In the adult cortex, homeostatic plasticity is input-specific and not multiplicative for the whole ensemble of synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "This may be supported by recent in vivo observations that in the adult cortex homeostatic plasticity is rather input-specific and not multiplicative for the whole ensemble of synapses (Barnes et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Barnes et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "13abe0c8-f578-4631-8048-80c0b6e883d0",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C62",
+      "claim": "A decrease in variability of neuronal firing rates after stimulation implies that cortical circuits become more stable.",
+      "claim_type": "EXPLICIT",
+      "source": "A sole decrease in variability was described before for the neuronal firing rates after stimulation. This was observed in different brain regions and even when the change in mean firing rate was little (Churchland et al., 2010). The authors of this study concluded that the variance decline of the firing rate implies that cortical circuits become more stable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Churchland et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "30e7cb02-f4d3-42de-891d-973a2253e0c9",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C63",
+      "claim": "The narrower size distributions in EE mice suggest that synapses are better defined by training in the enriched environment and the neural network is more stable.",
+      "claim_type": "EXPLICIT",
+      "source": "The same might apply to the spines and synapses of EE housed mice for which we observe less extreme values. This may suggest that the synapses are better defined by training in the enriched environment and thus the neural network is more stable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the observed narrower distributions and analogy to firing rate studies.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "00e4b5a5-27d2-4625-be75-19a5afbc0eb3",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C64",
+      "claim": "Silencing a neuronal network results in an average size increase, broader distribution, and weaker multiplicative downscaling.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, it was shown that silencing a neuronal network and thus reducing its activity not only resulted in an average size increase and broader distribution but also in a weaker multiplicative downscaling (Hazan and Ziv, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Hazan and Ziv, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "42478a52-f169-4335-9f1e-4a0ace8edba3",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C65",
+      "claim": "The increase in multiplicative downscaling observed in EE mice might explain the narrower size distribution of PSD95 area.",
+      "claim_type": "EXPLICIT",
+      "source": "The increase in multiplicative downscaling we observe might explain the narrower size distribution of the PSD95 area according to the measurements and simulations by Hazan and Ziv, 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on comparison with the work by Hazan and Ziv, 2020.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "b4356875-52f7-4f28-bfb9-efecc1865d9b",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C66",
+      "claim": "PSDs on large spines are frequently perforated.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous EM studies have shown that PSDs on large spines, often called mushroom spines, are frequently perforated (Stewart et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Stewart et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "5858a0ee-640f-4687-b45d-9e1060b6b861",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C67",
+      "claim": "Clusters of pre- and post-synaptic proteins are trans-synaptically aligned in nanocolumns which are organized by activity.",
+      "claim_type": "EXPLICIT",
+      "source": "An emerging view is that clusters of pre- and post-synaptic proteins are trans-synaptically aligned in 'nanocolumns' which are organized by activity (Chen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Chen et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "2c4db6bd-51a4-426b-a2d5-9414d5ac35c1",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C68",
+      "claim": "A reorganization of receptors might alter synaptic strength independently of changes in the amount of receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that a reorganization of receptors might alter synaptic strength \u2013 independently of changes in the amount of receptors (Chen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This inference is supported by citation to Chen et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "cd0b1e85-233d-4182-a2ba-7e15bcc7d22b",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C69",
+      "claim": "The increased structural plasticity of PSD95 nanoorganization but not increased average size in EE mice might reflect the reported increase of synaptic plasticity after enrichment.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding of an increased structural plasticity of the PSD95 nanoorganization but not increased average size in EE mice might therefore reflect the reported increase of synaptic plasticity after enrichment (Artola et al., 2006; Buschler and Manahan-Vaughan, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning supported by citations to Artola et al., 2006 and Buschler and Manahan-Vaughan, 2012.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "51ba1e01-99cd-42f8-8ace-4aba69a734c1",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C70",
+      "claim": "Previous two-color STED microscopy of EGFP and EYFP suffered from high crosstalk requiring linear unmixing.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous attempts with STED microscopy of EGFP and EYFP utilized a single excitation wavelength and two-color detection, which suffered from high crosstalk, and therefore required a linear unmixing of the channels (T\u00f8nnesen et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to T\u00f8nnesen et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "fa3da788-0446-4e4b-969f-9be99f883f3f",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C71",
+      "claim": "The most commonly used EGFP and EYFP have a crosstalk of as much as 92% and 27% in the respective other channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the most commonly used EGFP and EYFP have a crosstalk of as much as 92% and 27% in the respective other channel, requiring linear unmixing (T\u00f8nnesen et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to T\u00f8nnesen et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "a84c4e93-6f6c-4326-b6a5-dda7ba8d22b0",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C72",
+      "claim": "The PSD95 nanopattern labeled with PSD95.FingR is very similar to structures observed in a PSD95-EGFP knock-in mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "The pattern of the PSD95 nanoorganization labeled with PSD95.FingR was very similar to the structures we have observed earlier in a PSD95-EGFP knock-in mouse with in vivo STED microscopy (Wegner et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This comparison is supported by citation to Wegner et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "5ac3e998-c210-4a1a-a776-e41dd9c46f79",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C73",
+      "claim": "The PSD95 nanopattern is similar to perforated PSDs reported by electron microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "And, this nanopattern is also similar to perforated PSDs reported by electron microscopy (Arellano et al., 2007; Harris and Weinberg, 2012; Toni et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Arellano et al., 2007, Harris and Weinberg, 2012, and Toni et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "3050ccfd-659d-4382-9620-3d89481944ea",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C74",
+      "claim": "EE mice were housed in groups of up to 12 female mice.",
+      "claim_type": "EXPLICIT",
+      "source": "EE mice were housed in a large, two-floor cage equipped with three running wheels for physical exercise, a labyrinth for cognitive stimulation, a tube and a ladder to change between the two levels, and were kept in groups of up to 12 female mice to allow manyfold social interactions (Figure 2\u2014figure supplement 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the experimental housing conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "d55892bb-0b14-486f-96c0-dc7d52e75845",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C75",
+      "claim": "Control mice were raised in pairs in standard cages without any equipment.",
+      "claim_type": "EXPLICIT",
+      "source": "Ctr mice were raised in pairs in standard cages without any equipment (Figure 2\u2014figure supplement 1D, E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the experimental housing conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "5a2a9e32-81cb-4baa-bec3-a02592058065",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C76",
+      "claim": "Imaging commenced about 2.5 hours after onset of anesthesia.",
+      "claim_type": "EXPLICIT",
+      "source": "Imaging commenced about 2.5 hr after onset of the anesthesia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "c64d9643-9e74-41b2-a0d5-1c5575a1ba47",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C77",
+      "claim": "The PSD95 area of layer 5 pyramidal neurons is slightly larger than previously reported diameter of 354 nm in a ubiquitously expressing PSD95-EGFP knock-in mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "This size of the PSD95 area of layer 5 pyramidal neurons is slightly larger than our previously reported diameter of 354 nm which corresponds to ~0.10 \u00b5m2 for a circular distribution, obtained in a ubiquitously expressing PSD95-EGFP knock-in mouse (Wegner et al., 2018); therefore, the larger size of the PSD95 area could reflect the larger size of the spine heads of layer 5 pyramidal neurons (Konur et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This comparison is supported by citations to Wegner et al., 2018 and Konur et al., 2003.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "007a3fb5-bc54-4895-8abd-b2be6300e2b5",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C78",
+      "claim": "The larger PSD95 area could reflect the larger size of spine heads of layer 5 pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This size of the PSD95 area of layer 5 pyramidal neurons is slightly larger than our previously reported diameter of 354 nm which corresponds to ~0.10 \u00b5m2 for a circular distribution, obtained in a ubiquitously expressing PSD95-EGFP knock-in mouse (Wegner et al., 2018); therefore, the larger size of the PSD95 area could reflect the larger size of the spine heads of layer 5 pyramidal neurons (Konur et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning supported by citation to Konur et al., 2003.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "60003330-d38c-41f5-81b7-417b13ba61ce",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C79",
+      "claim": "The average PSD area in the mouse visual cortex is 0.15 \u00b5m\u00b2 according to EM studies.",
+      "claim_type": "EXPLICIT",
+      "source": "The area of PSD95 on the same set of spine heads was 0.158 (IR: 0.107\u20130.269) \u00b5m2 in median for EE mice and 0.161 (IR: 0.092\u20130.286) \u00b5m2 for Ctr mice which is in accordance with previous EM studies reporting 0.15 \u00b5m2 for the PSD area in the mouse visual cortex (Harris and Weinberg, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Harris and Weinberg, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "87c882e6-0b8a-4474-bac5-e38ff30f2c26",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C80",
+      "claim": "Spines were mostly stable over the time periods of 30, 60, and 120 minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Over these time periods the spines were mostly stable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the time-lapse imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "1d14ce70-6746-4d05-bcc5-883a43bc61f4",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C81",
+      "claim": "Occasionally, a spine was lost or a new one appeared; none of these dynamic spines carried PSD95 and they were therefore most likely highly dynamic filopodia.",
+      "claim_type": "EXPLICIT",
+      "source": "Occasionally, a spine was lost or a new one appeared; none of these dynamic spines carried PSD95 and they were therefore most likely highly dynamic filopodia (Berry and Nedivi, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is supported by citation to Berry and Nedivi, 2017 for the characterization as filopodia.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "bd80dd55-6799-4100-b346-e657fe9c4529",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C82",
+      "claim": "The average spine head area and PSD95 area did not show large changes over the time period of 120 minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "The average spine head area and PSD95 area did not show large changes over the time period of 120 min (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "bb97b673-10f8-44ae-a4a3-256a662de717",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C83",
+      "claim": "No directed changes were observed as a result of light-induced stimulation or phototoxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we did not observe directed changes as a result of light-induced stimulation or phototoxicity and neither observed blebbing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the time-lapse imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "3d361e64-af59-4764-86f1-8b14011a199b",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "claim_id": "C84",
+      "claim": "No blebbing was observed during the imaging period.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we did not observe directed changes as a result of light-induced stimulation or phototoxicity and neither observed blebbing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the time-lapse imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "172d8272-9195-41f1-992b-c2d8cdfe95f2",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A virtually crosstalk-free two-color in vivo STED microscope was developed with ~8% EYFP crosstalk in the EGFP channel, ~5% EGFP crosstalk in the EYFP channel, and achieving resolutions of ~70 nm for Citrine and ~84 nm for EGFP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C2 are directly supported by experimental measurements shown in Figure 1C and Figure 1\u2014figure supplement 1A, B. The crosstalk percentages and resolution values are quantitatively determined from the data, demonstrating the technical achievement of the microscope design.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "b1f2c54a-2905-4b9a-8831-59dfc4ab3c3d",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Spine head area strongly correlates with PSD95 area in both EE and control mice, with median spine head areas of 0.527 \u00b5m\u00b2 (EE) and 0.462 \u00b5m\u00b2 (Ctr), and median PSD95 areas of 0.158 \u00b5m\u00b2 (EE) and 0.161 \u00b5m\u00b2 (Ctr).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C7 are supported by quantitative measurements shown in Figure 2A-B with appropriate statistical analysis. The correlation is demonstrated with Pearson's r values (p < 0.0001), and the median values with interquartile ranges are directly measured. The PSD95 measurements are consistent with previous EM studies (Harris and Weinberg, 2012).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "05a988db-a65d-4a97-b51d-7cb5406f10aa",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "EE housed mice exhibit significantly larger average spine head area and significantly smaller variance in both spine head and PSD95 size distributions compared to control mice, while average PSD95 area is not significantly different. Both distributions are log-normally distributed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C13 are well-supported by statistical analyses shown in Figure 2C-J. The Kolmogorov-Smirnov test demonstrates significant differences in distributions (C8), log-normal distributions are confirmed by Gaussian fits to log-transformed data (C9), and unpaired t-tests with Welch's correction show significant differences in spine head area (p < 0.0001, C10), variances (p = 0.006 for spine, p = 0.003 for PSD95, C11, C13), while PSD95 average area shows no significant difference (p = 0.54, C12).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "a412da67-a399-43e9-81f7-7189214ca3c9",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Spine density is not significantly different between EE and control housed mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C14 is supported by statistical analysis shown in Figure 2\u2014figure supplement 2B using Mann-Whitney U test (p = 0.68), indicating that environmental enrichment does not affect spine density in this experimental paradigm.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "876bd11f-ef97-4613-a150-8e744da2ff16",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Spine heads and PSD95 assemblies show substantial size changes within 30 minutes (spine heads: ~20% growth, ~15% shrinkage; PSD95: ~20-25% growth, ~25-30% shrinkage), with weak but significant positive correlation (r = 0.15-0.39) between changes. Positively correlated changes (PC1) show ~3 times larger variance than negatively correlated changes (PC2), with EE mice showing significantly lower PC2 variance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C20 are supported by time-lapse imaging data and statistical analyses shown in Figure 3D-J and Figure 3\u2014figure supplement 1. Linear regression demonstrates weak positive correlations (p < 0.0001, C17), PCA shows the variance ratio (C18), and unpaired t-test confirms significantly higher PC2 variance in control mice (p < 0.0001, C19). The interpretation of stronger positive coupling in EE mice (C20) is a reasonable inference from the PC2 variance data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "bfccdc13-5bdc-438e-9df4-7d49c464836f",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Large spines tend to shrink and small spines tend to grow (regression to the mean). The multiplicative downscaling factor for PSD95 area is significantly different between EE and control mice, while spine head size changes show constant slopes over time that are similar between groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23 are supported by data in Figure 4 and Figure 4\u2014figure supplement 1. The regression to the mean phenomenon is demonstrated visually (C21), and analysis of covariance shows significantly different slopes for PSD95 between EE and control at all time intervals (p < 0.01, p < 0.0001, p < 0.0001 for 30, 60, 120 min, C22), while spine head slopes show no significant differences (C23).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "ca4f3504-ea0e-4554-ac0b-7f7a2a1f83c6",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Large spine heads tend to stay large and small ones stay small over the 2-hour observation period, with no temporal shift between spine head and PSD95 area changes observed at baseline.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24 and C25 are supported by correlation analyses shown in Figure 4C, F, and G. The constant Pearson's r values over time intervals support the stability inference (C24), and the symmetric cross-correlation (~0.8) without temporal lag supports the absence of directional changes (C25).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "8641d029-8ee1-4365-995c-edd5d314b05e",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "PSD95 nanoorganization is more dynamic in EE mice than in control mice. In control mice, morphological changes increase with longer measurement intervals, while EE mice show consistently high levels of change (~80%) at all time points. EE mice show fewer perforated nanoorganizations and more clusters compared to control mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C26-C29 are based on visual inspection by three blinded scientists (Figure 5B-D), which is subjective and lacks quantitative statistical validation. While the trends are described, the authors acknowledge the difficulty in quantitative analysis of the complex nanopattern morphology. The lack of rigorous statistical tests and the subjective nature of visual categorization make these findings uncertain despite the careful blinded approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "e78196db-b4a6-413f-8273-a5f7986ec4f9",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The coefficient of determination R\u00b2 between PSD95 brightness and nanoscale size is 0.76, indicating that brightness is a deficient correlate of synaptic size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50 and C51 are supported by data shown in Figure 2\u2014figure supplement 2A. The R\u00b2 value of 0.76 is calculated from experimental measurements, and the interpretation that this represents a deficient correlation is reasonable given that 24% of the variance is unexplained.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "41d97431-8208-4230-90e3-327abc13cf45",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Spines were mostly stable over 30-120 minute time periods, with occasional spine loss or appearance (likely filopodia without PSD95). Average spine head and PSD95 areas showed no large changes, and no directed changes from light-induced stimulation, phototoxicity, or blebbing were observed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C84 are supported by observations from time-lapse imaging experiments shown in Figure 3A-C. The stability is demonstrated by the relatively constant average areas over time (C82), and the characterization of dynamic spines as filopodia is supported by citation to Berry and Nedivi, 2017 (C81).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "c03fcc4a-7552-4332-a540-6fcdc3462fb1",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Environmental enrichment has multiple established effects on neuronal structure and function, including accelerating neuronal maturation, increasing synaptic protein levels, facilitating synaptic plasticity, increasing dendritic branching and spine density, and inducing spine formation. The visual cortex exhibits enhanced plasticity under EE conditions. PSD95.FingR efficiently labels endogenous PSD95 without overexpression artifacts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C49 are background claims supported by appropriate citations to prior literature. These establish the context for the current study and are properly attributed to previous work. The claims about PSD95.FingR (C48-C49) are supported by citations to the original development and validation studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "cc397fc9-d29a-45b0-8ae0-301c226bc4c8",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The observed spine head growth of ~20-30% is similar to changes reported in other studies over different time scales and conditions. MMF anesthesia may affect plasticity, and in vitro LTP experiments show temporal delays between spine and PSD95 increases, suggesting different regulatory pathways. The slot model proposes that AMPA receptor increases depend on activation of binding sites rather than increased PSD95 amounts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C58 are interpretive claims that contextualize the current findings with prior literature. They are appropriately supported by citations (Steffens et al., 2021; Kopec et al., 2006; Otmakhov et al., 2004; Meyer et al., 2014; Yang et al., 2021; Bosch et al., 2014; Compans et al., 2016; Herring and Nicoll, 2016). The speculation about awake state differences (C54) is appropriately qualified as speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "e3e63e86-0afd-4160-9543-c0506b140ec8",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Synaptic scaling models predict multiplicative downscaling with increased activity. The narrower size distributions in EE mice may suggest better-defined synapses and more stable neural networks, analogous to decreased variability in firing rates after stimulation. The increased multiplicative downscaling in EE mice might explain the narrower PSD95 size distribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C59-C65 mix established knowledge (C59-C62, supported by citations) with speculative interpretations (C63, C65). While the analogies to firing rate studies and synaptic scaling models are reasonable, the authors acknowledge that their in vivo measurements under anesthesia may not fully match expectations from in vitro silencing experiments. The speculation is appropriately qualified but lacks direct experimental validation in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "0f36855a-3763-4c1c-bbb4-ef3162f5cb51",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "PSDs on large spines are frequently perforated. Nanocolumns of pre- and post-synaptic proteins are organized by activity, and receptor reorganization might alter synaptic strength independently of receptor amounts. The increased structural plasticity of PSD95 nanoorganization in EE mice might reflect increased synaptic plasticity after enrichment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C69 are supported by appropriate citations to prior literature (Stewart et al., 2005; Chen et al., 2018; Artola et al., 2006; Buschler and Manahan-Vaughan, 2012). The interpretation linking increased PSD95 nanoorganization plasticity to synaptic plasticity (C69) is speculative but reasonably grounded in the cited literature and the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "08ffd99c-3247-4905-a9f4-a16094b7111a",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Previous two-color STED microscopy of EGFP and EYFP suffered from high crosstalk (92% and 27%) requiring linear unmixing. The PSD95 nanopattern observed with PSD95.FingR is similar to structures in PSD95-EGFP knock-in mice and perforated PSDs reported by electron microscopy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C73 are supported by appropriate citations to prior work (T\u00f8nnesen et al., 2011; Wegner et al., 2018; Arellano et al., 2007; Harris and Weinberg, 2012; Toni et al., 2001). These claims establish the technical context and validate the current approach by comparison to established methods.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    },
+    {
+      "id": "6f813e11-5e00-45cd-8237-29d19b17e789",
+      "content_id": "0b593544-f95f-4dd8-b7da-c42aa057deba",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Experimental housing conditions and imaging protocols are described. EE mice were housed in groups of up to 12 in enriched cages, control mice in pairs in standard cages. Imaging commenced 2.5 hours after anesthesia onset. The PSD95 area measurements are slightly larger than previous reports, possibly reflecting larger spine heads of layer 5 pyramidal neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C79 describe experimental methods and conditions, supported by Figure 2\u2014figure supplement 1 and appropriate citations. The comparison to previous measurements (C77) and the speculation about layer 5 differences (C78) are appropriately qualified and supported by citations (Wegner et al., 2018; Konur et al., 2003; Harris and Weinberg, 2012).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:15:22.338017Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7092141d-0345-4179-8e05-5d0ab622d6da",
+      "result_id": "172d8272-9195-41f1-992b-c2d8cdfe95f2"
+    },
+    {
+      "claim_id": "dbcd992d-ba31-4d6a-820d-24c1ab7cecf4",
+      "result_id": "172d8272-9195-41f1-992b-c2d8cdfe95f2"
+    },
+    {
+      "claim_id": "5bfbff15-0b77-45d9-8824-ad94330dffb7",
+      "result_id": "b1f2c54a-2905-4b9a-8831-59dfc4ab3c3d"
+    },
+    {
+      "claim_id": "e049dd11-807c-4aea-a1db-0a011704afac",
+      "result_id": "b1f2c54a-2905-4b9a-8831-59dfc4ab3c3d"
+    },
+    {
+      "claim_id": "540fa549-00bd-46c0-bc67-79409f1ed189",
+      "result_id": "b1f2c54a-2905-4b9a-8831-59dfc4ab3c3d"
+    },
+    {
+      "claim_id": "f49e89c6-a5bd-413d-b8c9-a04544e3d828",
+      "result_id": "b1f2c54a-2905-4b9a-8831-59dfc4ab3c3d"
+    },
+    {
+      "claim_id": "1da23333-780d-476e-8f48-34081297f96d",
+      "result_id": "b1f2c54a-2905-4b9a-8831-59dfc4ab3c3d"
+    },
+    {
+      "claim_id": "86f5d2ec-3fe4-4ae2-b9c7-71098ef90046",
+      "result_id": "05a988db-a65d-4a97-b51d-7cb5406f10aa"
+    },
+    {
+      "claim_id": "45f156bc-d44d-4f86-a2e2-2ff1676043fb",
+      "result_id": "05a988db-a65d-4a97-b51d-7cb5406f10aa"
+    },
+    {
+      "claim_id": "ce1e6066-33b2-4394-beaf-687a495535bd",
+      "result_id": "05a988db-a65d-4a97-b51d-7cb5406f10aa"
+    },
+    {
+      "claim_id": "33b9b227-2a47-4030-9586-e3821fbf02d7",
+      "result_id": "05a988db-a65d-4a97-b51d-7cb5406f10aa"
+    },
+    {
+      "claim_id": "2c20af67-d1cc-43d1-b16a-c9233b943f2c",
+      "result_id": "05a988db-a65d-4a97-b51d-7cb5406f10aa"
+    },
+    {
+      "claim_id": "8e8dec7f-6032-48e0-9b50-5e56a1c3b549",
+      "result_id": "05a988db-a65d-4a97-b51d-7cb5406f10aa"
+    },
+    {
+      "claim_id": "1cebddbe-e589-4d9f-b42c-049da0877c53",
+      "result_id": "a412da67-a399-43e9-81f7-7189214ca3c9"
+    },
+    {
+      "claim_id": "fbecb1a5-ff71-40a4-ac63-7b46946ed6eb",
+      "result_id": "876bd11f-ef97-4613-a150-8e744da2ff16"
+    },
+    {
+      "claim_id": "3ff38beb-00fc-46b6-80bb-46918218f448",
+      "result_id": "876bd11f-ef97-4613-a150-8e744da2ff16"
+    },
+    {
+      "claim_id": "2ee81f8f-1737-47d2-bb0b-04fd9c65dda4",
+      "result_id": "876bd11f-ef97-4613-a150-8e744da2ff16"
+    },
+    {
+      "claim_id": "177d0d34-d409-4915-9d4a-9532b8024d66",
+      "result_id": "876bd11f-ef97-4613-a150-8e744da2ff16"
+    },
+    {
+      "claim_id": "b89bbe4e-dbe6-47a6-b7ae-eb33318d4743",
+      "result_id": "876bd11f-ef97-4613-a150-8e744da2ff16"
+    },
+    {
+      "claim_id": "82523d32-e2b7-4573-ba99-4c1681bbe0e0",
+      "result_id": "876bd11f-ef97-4613-a150-8e744da2ff16"
+    },
+    {
+      "claim_id": "b4851db0-de11-45e1-9a4f-a84d493bd803",
+      "result_id": "bfccdc13-5bdc-438e-9df4-7d49c464836f"
+    },
+    {
+      "claim_id": "40284545-c419-49ce-9920-29f9696c29c2",
+      "result_id": "bfccdc13-5bdc-438e-9df4-7d49c464836f"
+    },
+    {
+      "claim_id": "c1f14f43-e122-4882-b6fe-91d22fb4731d",
+      "result_id": "bfccdc13-5bdc-438e-9df4-7d49c464836f"
+    },
+    {
+      "claim_id": "18de94e5-e0eb-4aab-b20f-c1d929262bc2",
+      "result_id": "ca4f3504-ea0e-4554-ac0b-7f7a2a1f83c6"
+    },
+    {
+      "claim_id": "ad21ce57-602e-4f1f-9a63-08cf8dfdab4e",
+      "result_id": "ca4f3504-ea0e-4554-ac0b-7f7a2a1f83c6"
+    },
+    {
+      "claim_id": "b1e19025-1be9-48f5-87dd-947f378d7e33",
+      "result_id": "8641d029-8ee1-4365-995c-edd5d314b05e"
+    },
+    {
+      "claim_id": "f4caec66-e76c-499c-9314-fd726783a152",
+      "result_id": "8641d029-8ee1-4365-995c-edd5d314b05e"
+    },
+    {
+      "claim_id": "c1555cc2-2d61-4b33-a871-697c5459ab16",
+      "result_id": "8641d029-8ee1-4365-995c-edd5d314b05e"
+    },
+    {
+      "claim_id": "7976fc24-f4ff-4cd2-a708-e1d037a78ff5",
+      "result_id": "8641d029-8ee1-4365-995c-edd5d314b05e"
+    },
+    {
+      "claim_id": "9e2f195a-9a1a-4981-9953-7db319046a72",
+      "result_id": "e78196db-b4a6-413f-8273-a5f7986ec4f9"
+    },
+    {
+      "claim_id": "46f54c65-c6b7-4ed9-b7ad-4f75bbeb2f02",
+      "result_id": "e78196db-b4a6-413f-8273-a5f7986ec4f9"
+    },
+    {
+      "claim_id": "87c882e6-0b8a-4474-bac5-e38ff30f2c26",
+      "result_id": "41d97431-8208-4230-90e3-327abc13cf45"
+    },
+    {
+      "claim_id": "1d14ce70-6746-4d05-bcc5-883a43bc61f4",
+      "result_id": "41d97431-8208-4230-90e3-327abc13cf45"
+    },
+    {
+      "claim_id": "bd80dd55-6799-4100-b346-e657fe9c4529",
+      "result_id": "41d97431-8208-4230-90e3-327abc13cf45"
+    },
+    {
+      "claim_id": "bb97b673-10f8-44ae-a4a3-256a662de717",
+      "result_id": "41d97431-8208-4230-90e3-327abc13cf45"
+    },
+    {
+      "claim_id": "3d361e64-af59-4764-86f1-8b14011a199b",
+      "result_id": "41d97431-8208-4230-90e3-327abc13cf45"
+    },
+    {
+      "claim_id": "f41bc54f-f4d9-4194-be18-ff9798604b5b",
+      "result_id": "c03fcc4a-7552-4332-a540-6fcdc3462fb1"
+    },
+    {
+      "claim_id": "735851f0-b208-4060-872d-3ad651a91e19",
+      "result_id": "c03fcc4a-7552-4332-a540-6fcdc3462fb1"
+    },
+    {
+      "claim_id": "c5a83f61-2fb0-4585-bed6-0d18da9276f8",
+      "result_id": "c03fcc4a-7552-4332-a540-6fcdc3462fb1"
+    },
+    {
+      "claim_id": "2941971f-05d9-4b60-bde1-3f740160486a",
+      "result_id": "c03fcc4a-7552-4332-a540-6fcdc3462fb1"
+    },
+    {
+      "claim_id": "01f40d75-69b4-4548-afd5-64d58b15297c",
+      "result_id": "c03fcc4a-7552-4332-a540-6fcdc3462fb1"
+    },
+    {
+      "claim_id": "62d23ee9-72d6-4675-a9d6-b4430eefd91e",
+      "result_id": "c03fcc4a-7552-4332-a540-6fcdc3462fb1"
+    },
+    {
+      "claim_id": "00bdb0dc-f659-4cb0-b1b6-807c7f9b2102",
+      "result_id": "c03fcc4a-7552-4332-a540-6fcdc3462fb1"
+    },
+    {
+      "claim_id": "8cba876a-a691-497b-a687-046bad918f1c",
+      "result_id": "c03fcc4a-7552-4332-a540-6fcdc3462fb1"
+    },
+    {
+      "claim_id": "b1b0c4b1-aa61-4b14-9cc0-bc2f9dc8a37f",
+      "result_id": "c03fcc4a-7552-4332-a540-6fcdc3462fb1"
+    },
+    {
+      "claim_id": "0a09f7c7-9404-4320-ba94-7a500cfedc55",
+      "result_id": "c03fcc4a-7552-4332-a540-6fcdc3462fb1"
+    },
+    {
+      "claim_id": "54794f01-01c9-4463-ada8-a4703e3995af",
+      "result_id": "c03fcc4a-7552-4332-a540-6fcdc3462fb1"
+    },
+    {
+      "claim_id": "7fb80395-8414-4089-9d8f-730953b1a013",
+      "result_id": "c03fcc4a-7552-4332-a540-6fcdc3462fb1"
+    },
+    {
+      "claim_id": "97aef1a2-a54a-4e33-bd8d-12198bac5611",
+      "result_id": "c03fcc4a-7552-4332-a540-6fcdc3462fb1"
+    },
+    {
+      "claim_id": "e96e36bb-7714-4351-af37-49e1753e7041",
+      "result_id": "c03fcc4a-7552-4332-a540-6fcdc3462fb1"
+    },
+    {
+      "claim_id": "e4eb19aa-a25f-42cb-9ef8-e637cc3ded93",
+      "result_id": "c03fcc4a-7552-4332-a540-6fcdc3462fb1"
+    },
+    {
+      "claim_id": "27fd2664-64ee-4282-a802-5d29378a3a6a",
+      "result_id": "c03fcc4a-7552-4332-a540-6fcdc3462fb1"
+    },
+    {
+      "claim_id": "125f7f34-448f-44c9-af18-7aeac4533776",
+      "result_id": "c03fcc4a-7552-4332-a540-6fcdc3462fb1"
+    },
+    {
+      "claim_id": "a98eacba-b284-4344-8359-25927758ca99",
+      "result_id": "c03fcc4a-7552-4332-a540-6fcdc3462fb1"
+    },
+    {
+      "claim_id": "92f00d2a-e1fc-4c4b-b5f9-a8c9b2b38e45",
+      "result_id": "c03fcc4a-7552-4332-a540-6fcdc3462fb1"
+    },
+    {
+      "claim_id": "7ea593a3-f5fa-4101-9241-39af54331431",
+      "result_id": "c03fcc4a-7552-4332-a540-6fcdc3462fb1"
+    },
+    {
+      "claim_id": "b2757930-0929-4f36-98c9-d602809a9a3d",
+      "result_id": "cc397fc9-d29a-45b0-8ae0-301c226bc4c8"
+    },
+    {
+      "claim_id": "6bf263db-a59d-4536-bbe3-ba99f828f482",
+      "result_id": "cc397fc9-d29a-45b0-8ae0-301c226bc4c8"
+    },
+    {
+      "claim_id": "34967860-f594-409a-a3ee-f095139476fc",
+      "result_id": "cc397fc9-d29a-45b0-8ae0-301c226bc4c8"
+    },
+    {
+      "claim_id": "cd615f2f-ce18-446f-86cf-9a6360d2d007",
+      "result_id": "cc397fc9-d29a-45b0-8ae0-301c226bc4c8"
+    },
+    {
+      "claim_id": "577cb8c7-c780-478c-98a9-23afe7730a52",
+      "result_id": "cc397fc9-d29a-45b0-8ae0-301c226bc4c8"
+    },
+    {
+      "claim_id": "25cd472c-d098-4609-b884-c8331c3f62e3",
+      "result_id": "cc397fc9-d29a-45b0-8ae0-301c226bc4c8"
+    },
+    {
+      "claim_id": "edecc209-d7ff-4e74-b46a-7ccad0aa05b3",
+      "result_id": "cc397fc9-d29a-45b0-8ae0-301c226bc4c8"
+    },
+    {
+      "claim_id": "e641aef3-d6d5-433e-ab4f-041fa278e3e7",
+      "result_id": "e3e63e86-0afd-4160-9543-c0506b140ec8"
+    },
+    {
+      "claim_id": "326afb0e-a9de-44e7-86e7-cf3514ecd984",
+      "result_id": "e3e63e86-0afd-4160-9543-c0506b140ec8"
+    },
+    {
+      "claim_id": "72f3dd4d-5ffa-46fa-b62a-8c305e5d46f1",
+      "result_id": "e3e63e86-0afd-4160-9543-c0506b140ec8"
+    },
+    {
+      "claim_id": "13abe0c8-f578-4631-8048-80c0b6e883d0",
+      "result_id": "e3e63e86-0afd-4160-9543-c0506b140ec8"
+    },
+    {
+      "claim_id": "30e7cb02-f4d3-42de-891d-973a2253e0c9",
+      "result_id": "e3e63e86-0afd-4160-9543-c0506b140ec8"
+    },
+    {
+      "claim_id": "00e4b5a5-27d2-4625-be75-19a5afbc0eb3",
+      "result_id": "e3e63e86-0afd-4160-9543-c0506b140ec8"
+    },
+    {
+      "claim_id": "42478a52-f169-4335-9f1e-4a0ace8edba3",
+      "result_id": "e3e63e86-0afd-4160-9543-c0506b140ec8"
+    },
+    {
+      "claim_id": "b4356875-52f7-4f28-bfb9-efecc1865d9b",
+      "result_id": "0f36855a-3763-4c1c-bbb4-ef3162f5cb51"
+    },
+    {
+      "claim_id": "5858a0ee-640f-4687-b45d-9e1060b6b861",
+      "result_id": "0f36855a-3763-4c1c-bbb4-ef3162f5cb51"
+    },
+    {
+      "claim_id": "2c4db6bd-51a4-426b-a2d5-9414d5ac35c1",
+      "result_id": "0f36855a-3763-4c1c-bbb4-ef3162f5cb51"
+    },
+    {
+      "claim_id": "cd0b1e85-233d-4182-a2ba-7e15bcc7d22b",
+      "result_id": "0f36855a-3763-4c1c-bbb4-ef3162f5cb51"
+    },
+    {
+      "claim_id": "51ba1e01-99cd-42f8-8ace-4aba69a734c1",
+      "result_id": "08ffd99c-3247-4905-a9f4-a16094b7111a"
+    },
+    {
+      "claim_id": "fa3da788-0446-4e4b-969f-9be99f883f3f",
+      "result_id": "08ffd99c-3247-4905-a9f4-a16094b7111a"
+    },
+    {
+      "claim_id": "a84c4e93-6f6c-4326-b6a5-dda7ba8d22b0",
+      "result_id": "08ffd99c-3247-4905-a9f4-a16094b7111a"
+    },
+    {
+      "claim_id": "5ac3e998-c210-4a1a-a776-e41dd9c46f79",
+      "result_id": "08ffd99c-3247-4905-a9f4-a16094b7111a"
+    },
+    {
+      "claim_id": "3050ccfd-659d-4382-9620-3d89481944ea",
+      "result_id": "6f813e11-5e00-45cd-8237-29d19b17e789"
+    },
+    {
+      "claim_id": "d55892bb-0b14-486f-96c0-dc7d52e75845",
+      "result_id": "6f813e11-5e00-45cd-8237-29d19b17e789"
+    },
+    {
+      "claim_id": "5a2a9e32-81cb-4baa-bec3-a02592058065",
+      "result_id": "6f813e11-5e00-45cd-8237-29d19b17e789"
+    },
+    {
+      "claim_id": "c64d9643-9e74-41b2-a0d5-1c5575a1ba47",
+      "result_id": "6f813e11-5e00-45cd-8237-29d19b17e789"
+    },
+    {
+      "claim_id": "007a3fb5-bc54-4895-8abd-b2be6300e2b5",
+      "result_id": "6f813e11-5e00-45cd-8237-29d19b17e789"
+    },
+    {
+      "claim_id": "60003330-d38c-41f5-81b7-417b13ba61ce",
+      "result_id": "6f813e11-5e00-45cd-8237-29d19b17e789"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,405 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C44",
+      "C45",
+      "C46",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The study employed a cohort-based experimental design across 50 Drosophila and related species (46 Drosophila, 3 Scaptodrosophila, 1 Chymomyza) representing major groups in the Drosophila genus. Five to six cohorts per species were established under standardized conditions (25\u00b0C, 12L:12D photoperiod, standard cornmeal medium), with measurements of desiccation resistance, CHC profiles, and body weight performed at the cohort level on 4-5 day old F1 progeny.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C44-C46, and C91-C95 collectively describe a well-designed experimental framework with appropriate standardization, replication (5-6 cohorts per species), and controls for environmental variables. The cohort-based design appropriately addresses the constraint that CHC and desiccation assays cannot be performed on the same individuals, and the phylogenetic sampling is comprehensive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3"
+    ],
+    "result": "Desiccation resistance varied dramatically across the 50 species studied, with desert-dwelling repleta group species showing the highest resistance (D. mojavensis males: 58.2 \u00b1 4.7 hr) and melanogaster group species showing the lowest resistance (D. mauritiana males: 2.7 \u00b1 0.2 hr), consistent with previous research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 report experimental measurements with appropriate error estimates and cite concordant prior work (Kellermann et al., 2012; Matzkin et al., 2009). The >20-fold variation in desiccation resistance provides sufficient dynamic range for subsequent correlation analyses. The data are shown in Figure 2 and Figure 2\u2014figure supplement 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C47",
+      "C48",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "GC-MS analysis identified five CHC types across species: n-alkanes (highest melting temperature, only in melanogaster group), mbCHCs, monoenes, dienes, and trienes (lowest melting temperature, only in 8 species). mbCHCs, monoenes, and dienes were present in most species. Peak areas were corrected for carbon-chain length bias in GC-MS integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C8 and C47-C48 describe comprehensive CHC profiling with appropriate analytical methods (GC-MS with DB-17ht column, internal standard C26, retention time and mass spectral identification per Carlson et al., 1998). The correction for integration bias (C47, C105) demonstrates methodological rigor. The restriction of n-alkanes to melanogaster group is an important observation for subsequent analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Body weight positively correlates with both desiccation resistance (females: r=0.4, p<0.001; males: r=0.5, p<0.001) and total CHC quantity (both sexes: r=0.7, p<0.001). However, after normalizing CHC quantity by body weight (CHCs represent 0.02-0.5% of body weight), there is no correlation with desiccation resistance in males (p=0.1) and only a weak correlation in females (r=0.1, p=0.03), indicating that higher absolute CHC amounts have limited contribution to desiccation resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C14 present a logical analysis addressing the confound of body size. The normalization approach is appropriate, and the weak correlation (r=0.1) in females, while statistically significant, correctly leads to the conclusion of limited biological importance. This analysis effectively rules out total CHC quantity as the primary determinant of desiccation resistance, motivating the compositional analyses that follow.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15",
+      "C112"
+    ],
+    "result": "PERMANOVA analysis revealed that CHC compositional beta diversity differs significantly across increasing desiccation resistance (r\u00b2=0.1, p<0.001), suggesting that CHC composition, rather than quantity, is important for desiccation resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C15 reports appropriate use of PERMANOVA (implemented in the 'vegan' package, C112) to test compositional differences. The significant p-value supports the conclusion, though the modest r\u00b2 (0.1) indicates CHC composition explains 10% of variance in the ordination space, which is reasonable given the multivariate nature of the data and other contributing factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C34",
+      "C113",
+      "C114"
+    ],
+    "result": "Random forest regression modeling of CHC composition explained 85.5% of variation in desiccation resistance (RMSE=4.5), with four mbCHCs (2MeC30, 2MeC28, 2MeC32, 2MeC26) identified as the most important predictors using permutation importance, while most other CHCs contributed minimally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 and C34 report strong predictive performance (85.5% variance explained) using appropriate machine learning methods (random forest via 'ranger' and 'randomForest' packages, C113). The permutation importance approach (C114, Altmann et al., 2010) is the correct method for variable importance in random forests. The test/train split validation (Figure 4\u2014figure supplement 2, RMSE=5.4) confirms model robustness. The identification of mbCHCs as key predictors is a major finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C111"
+    ],
+    "result": "Individual mbCHC correlations with desiccation resistance show that 2MeC26 negatively correlates in males (r=-0.4, p<0.001) but not females (p=0.1), while longer mbCHCs (2MeC28, 2MeC30, 2MeC32) show positive correlations with desiccation resistance in both sexes, with some sex-specific differences (2MeC30 correlates in females but not males).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C23 report Pearson correlations (C111) for individual mbCHCs. The analyses appropriately avoid multicollinearity issues by analyzing each mbCHC separately rather than in a single regression model. The pattern of negative correlation for shorter mbCHCs and positive for longer mbCHCs supports the chain-length hypothesis. Sex-specific differences are noted but do not undermine the overall pattern. The correlations are moderate (r=0.2-0.4), which is reasonable for biological data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C115"
+    ],
+    "result": "Experimental coating of D. melanogaster (attP40 strain) with synthetic mbCHCs showed that 2MeC26 did not increase desiccation resistance (both sexes: p>0.05), while 2MeC30 significantly increased resistance in females (t=11.2, p<0.001) and both 2MeC28 (t=4.6, p<0.001) and 2MeC30 (t=6.9, p<0.001) increased resistance in males. There is a positive correlation between mbCHC chain length and desiccation resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 report experimental validation using synthetic CHCs with appropriate statistical testing (one-way ANOVA with Tukey post-hoc, C115). The coating experiments provide causal evidence supporting the correlational findings. The positive correlation with chain length (C27, Figure 5\u2014figure supplement 2) strengthens the mechanistic interpretation. The sex-specific differences are minor and do not contradict the main finding that longer mbCHCs confer higher resistance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C28"
+    ],
+    "result": "Coating D. melanogaster attP40 strain with synthetic n-alkanes also increased desiccation resistance in a manner positively correlated with carbon-chain length, similar to mbCHC experiments, suggesting that longer chain CHCs with higher melting temperatures can confer higher desiccation resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C28 reports n-alkane coating experiments that parallel the mbCHC results, providing additional support for the chain-length/melting temperature hypothesis. The data are shown in Figure 5\u2014figure supplements 3-4. This control experiment strengthens the mechanistic interpretation, though the authors correctly note that n-alkanes are mostly absent in the Drosophila genus, making mbCHCs the more relevant evolutionary mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C116"
+    ],
+    "result": "Phylogenetic analysis revealed moderate to strong phylogenetic signal in mbCHCs (Pagel's \u03bb = 0.75 females, 0.83 males). Ancestral trait reconstruction suggests 2MeC28 and 2MeC30 were the major mbCHCs in the ancestral Drosophila genus. Independent evolution of longer mbCHCs occurred in four clades (willistoni, nasuta, repleta groups, and ananassae subgroup), while shorter mbCHCs evolved in the melanogaster subgroup.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 report appropriate phylogenetic analyses using established methods ('Phytools', 'Picante', 'Rphylopars' packages, C116). Pagel's \u03bb values of 0.75-0.83 indicate strong phylogenetic signal, validating the need for phylogenetic correction in subsequent analyses. The ancestral reconstruction and identification of independent evolutionary events provide important evolutionary context. The phylogeny was adapted from Finet et al., 2021 (C92), providing a reliable framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C33",
+      "C55",
+      "C88",
+      "C117"
+    ],
+    "result": "Phylogenetic Generalized Least Squares (PGLS) modeling showed that, after correcting for phylogenetic effects, both higher quantity and longer length of the longest mbCHC significantly affect desiccation resistance (interaction term: females t=3.5, p<0.001; males t=2.2, p=0.03), indicating that evolution of longer mbCHCs is correlated with evolution of higher desiccation resistance in Drosophila.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C55, and C88 report PGLS analysis using appropriate methods (generalized least squares with Brownian motion covariance structure via 'ape' package, C117). The significant interaction term between quantity and length is the correct statistical approach to test the combined effect. The phylogenetic correction is essential given the strong phylogenetic signal (C29). The conclusion that mbCHC evolution underlies desiccation resistance evolution is well-supported, though the authors appropriately limit this conclusion to Drosophila (C88).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C56",
+      "C90"
+    ],
+    "result": "The study concludes that desiccation resistance differences across Drosophila species can be largely explained by variations in CHCs, particularly length variation in mbCHCs, and suggests that evolutionary changes in CHC components may be a general mechanism for evolution of desiccation resistance and adaptation to diverse environments in insects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 and C90 represent the main conclusions, which are well-supported by the comprehensive evidence from correlational analyses (85.5% variance explained), experimental validation (synthetic CHC coating), and phylogenetic analyses (PGLS). However, C56 extends to a broader claim about insects generally, which is speculative given the study focused on Drosophila. The authors appropriately acknowledge this limitation in the Discussion and note that constraints may differ in other insect orders.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The study cites established knowledge that cuticular water loss is the leading cause of desiccation in insects (accounting for up to 97% in some species), that CHCs provide a hydrophobic barrier (with >100 compounds possible), that CHC removal increases water loss, that genetic manipulation of CHC synthesis genes decreases desiccation resistance, and that CHC melting temperature and chain length are positively correlated with water-proofing properties and desiccation resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C43 appropriately cite prior literature to establish the biological context and mechanistic basis for the study. The citations appear accurate and relevant (Wigglesworth 1945, Qiu et al. 2012, Gibbs and Pomonis 1995, etc.). These claims provide essential background but do not represent novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The Introduction establishes that insects are vulnerable to desiccation due to high surface area to volume ratio, that phylogenetically related species can have different desiccation resistance while distantly related species in similar habitats can have similar resistance, and that climate change is accelerating dryland expansion and changing aridity globally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 cite appropriate prior literature to motivate the study. The citations appear accurate (Kellermann et al. 2012, Huang et al. 2016, Sherwood and Fu 2014, etc.). These claims establish the ecological and evolutionary context but do not represent findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Prior research has shown that CHC composition variations contribute to intraspecific desiccation resistance differences in D. melanogaster, beetles, and ants, that chemical/genetic CHC manipulation affects desiccation resistance in Drosophila, and that CHCs in insects range from 21-50 carbons with n-alkanes having the highest melting temperature, followed by mbCHCs, monoenes, and dienes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67 appropriately cite prior literature (Rouault et al. 2004, Chung et al. 2014, Blomquist and Ginzel 2021, etc.) to establish what was known before this study. The citations appear accurate and provide important context for interpreting the current findings. These are background claims, not novel results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The Discussion cites prior work showing that RNAi knockdown of mFAS in D. serrata eliminates mbCHCs and decreases desiccation resistance, that D. birchii has only trace mbCHCs and cannot evolve desiccation resistance under selection, and that many desert-dwelling insect species from different taxa have high proportions of very-long-chain mbCHCs, suggesting mbCHC use may be a common mechanism in extremely dry environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 cite appropriate prior literature (Chung et al. 2014, Howard et al. 2003, Hoffmann et al. 2003, Hadley 1977, Johnson and Gibbs 2004, etc.) to contextualize the current findings within broader patterns across insects. The inference in C72 is reasonable given the cited evidence, though appropriately presented as a suggestion rather than a definitive conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "The study infers from ancestral trait reconstruction that the ability to synthesize longer mbCHCs may have been lost during evolution in species not inhabiting arid environments (e.g., D. melanogaster), while species in extremely arid environments (D. mojavensis, D. arizonae) have higher quantities of 2MeC30 and the even longer 2MeC32.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 represent reasonable inferences from the ancestral reconstruction (C30) showing 2MeC30 as ancestral but absent in some extant species, combined with the CHC profiling data (Figure 2, Figure 6). The evolutionary interpretation is logical and consistent with the ecological distributions of the species, though it remains an inference rather than direct evidence of evolutionary loss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C49",
+      "C50"
+    ],
+    "result": "The study proposes that in the CHC biosynthesis pathway, n-alkanes, monoenes, and dienes (all synthesized by cytosolic FAS) are in competition, and since monoenes and dienes function as contact pheromones in Drosophila, this may constrain n-alkane evolution for desiccation resistance. In contrast, mbCHCs are synthesized by a separate microsomal FAS pathway and are relatively unaffected by other pathway products.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 and C49-C50 present a mechanistic hypothesis based on established CHC biosynthesis pathways (Chung and Carroll 2015, Holze et al. 2021) and the known pheromonal functions of monoenes and dienes (multiple citations). The inference about pathway competition is logical and consistent with the observation that n-alkanes are rare in Drosophila despite having favorable properties for desiccation resistance. This provides a plausible explanation for why mbCHCs, rather than n-alkanes, are the key determinants in Drosophila.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The Discussion cites prior work in D. serrata showing that higher 2MeC26 increases male mating success, and that a polymorphism in a fatty acyl-CoA reductase gene in northern populations shifts production to longer CHCs (lower 2MeC26, higher 2MeC30), resulting in lower male mating success but higher female desiccation resistance, illustrating sexually antagonistic effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 appropriately cite prior work (Chung et al. 2014, Rusuwa et al. 2022) to illustrate how mbCHC functions in chemical communication can create evolutionary constraints on their role in desiccation resistance. This provides important context for understanding the evolutionary dynamics of CHC evolution and supports the broader discussion of constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The Discussion acknowledges that diet, temperature, and mating status can affect CHC profiles in D. melanogaster, so the CHC profiles obtained may not fully represent natural variation. However, CHC variations between natural populations are largely quantitative rather than qualitative, suggesting stock center strains are representative of qualitative CHC variation between species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 appropriately cite prior work (Fedina et al. 2012, Rajpurohit et al. 2021, Everaerts et al. 2010, Dembeck et al. 2015, Rusuwa et al. 2022) and provide a balanced discussion of study limitations. The argument that standardized conditions allow focus on qualitative differences while reducing confounds is reasonable, though the limitation that quantitative variation in natural populations may differ is appropriately acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C89"
+    ],
+    "result": "The Discussion notes that constraints on CHC evolution may differ across insect orders: in Lepidoptera (which use volatile non-CHC pheromones), in eusocial Hymenoptera (where saturated CHCs function as queen pheromones), and in dragonflies (where methyl ketones and aldehydes are major cuticular components). The authors suggest that evolution of cuticular components modulating melting temperature can generally reduce water loss and increase desiccation resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 and C89 appropriately cite prior work (Ando et al. 2004, Van Oystaeyen et al. 2014, Futahashi et al. 2019) to discuss the generalizability of findings across insects. The authors appropriately limit their specific conclusions to Drosophila while suggesting a broader principle about cuticular lipid melting temperature. This represents appropriate scientific caution in extrapolating findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Desiccation resistance assays were performed in a randomized and blinded manner using 10 adults per cohort in vials containing 10g silica gel, with mortality recorded hourly after 2 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 describe appropriate experimental methods with randomization and blinding to reduce bias. The protocol is consistent with prior published methods (Chung et al. 2014). The sample size (10 flies per cohort, 5-6 cohorts per species) provides adequate replication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C106"
+    ],
+    "result": "Body weight was measured as the difference between an Eppendorf tube containing 5-10 flies and the empty tube.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C106 describes a straightforward and appropriate method for measuring body weight. The use of 5-10 flies per measurement provides adequate precision while accounting for individual variation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Synthetic CHC coating experiments involved evaporating 200 \u00b5l hexane containing 300 ng/\u00b5l of each CHC in glass vials, then transferring 10 flies and vortexing (20s on, 20s off, 20s on). Synthetic mbCHCs were provided by Dr. Jocelyn Millar and n-alkanes were from Sigma-Aldrich.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 describe appropriate methods for CHC coating experiments following prior protocols (Billeter et al. 2009, Chung et al. 2014). The use of synthetic standards from reliable sources ensures reproducibility. The coating procedure is well-established in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C110"
+    ],
+    "result": "All statistical analyses were conducted in R version 4.1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C110 specifies the software version used, which is important for reproducibility. R 4.1 is a stable, widely-used version appropriate for the analyses performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "CHC-deficient D. melanogaster flies were generated by crossing 5'mFAS-GAL4 (oenocyte-specific driver) with UAS-Cyp4g1-RNAi, resulting in adult oenocyte-specific knockdown of Cyp4g1 and loss of CHC production. cVA (cis-vaccenyl acetate), produced in the male ejaculatory bulb, is not affected by this oenocyte-specific knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 describe an appropriate genetic approach to generate CHC-deficient flies using the GAL4/UAS system with tissue-specific expression. The note about cVA not being affected is an important control observation showing the specificity of the knockdown. This approach has been validated in prior work (Qiu et al. 2012).",
+    "result_type": "MINOR"
+  }
+]

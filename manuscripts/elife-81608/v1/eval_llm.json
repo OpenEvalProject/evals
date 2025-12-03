@@ -1,0 +1,313 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "In the absence of inhibitor, aa-tRNA selection on human ribosomes proceeds through distinct FRET states (CR ~0.2, GA ~0.45, AC ~0.7) representing codon recognition, GTPase activation, and accommodation, consistent with prior bacterial and mammalian studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 are well-supported by smFRET data in Figure 1B showing stepwise FRET transitions, and interpretations are consistent with established models from prior work (citations provided). The experimental approach is appropriate and data quality appears sufficient.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C55",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Didemnin and ternatin-4 inhibit aa-tRNA accommodation with IC50 values of 4.5\u00b10.6 nM and 2.3\u00b10.4 nM respectively, stabilizing a GA-like mid-FRET state. Ternatin variants show activity profiles consistent with prior binding and proliferation assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55, C57-C61 are supported by dose-response curves (Figure 1E-F) and smFRET traces (Figure 1C-D) showing drug-stabilized mid-FRET states. IC50 values are reported with error estimates from bootstrap analysis. Structure-activity relationships for ternatin variants are consistent with prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C66",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The A399V mutation in eEF1A confers resistance to both didemnin and ternatin-4, validating eEF1A as the target and suggesting the drugs bind near residue 399 in domain III.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66, C68-C70 are supported by smFRET experiments (Figure 1G-H) showing that wild-type eEF1A is inhibited by both drugs while A399V mutant is resistant. This validates the target and binding site, consistent with prior resistance studies (C63-C65).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Both drugs reduce GA-to-AC transition frequencies 5-10-fold, but ternatin-4 allows more frequent high-FRET excursions and ~8.5-fold faster accommodation than didemnin, indicating differential inhibition of the proofreading step.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 are supported by hidden Markov modeling of smFRET traces (Figure 2, Table 1) showing quantitative differences in transition rates and state lifetimes. The kinetic analysis is rigorous with bootstrap error estimates. The interpretation connecting excursions to proofreading is reasonable based on bacterial models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Didemnin dissociates ~25-fold slower than ternatin-4 from stalled complexes, but both drugs' dissociation rates are >30-fold slower than conformational dynamics, indicating that high-FRET excursions occur while drugs remain bound.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 are supported by washout experiments (Figure 2H, Figure 2\u2014supplement 1) measuring dissociation kinetics. The comparison of dissociation rates to conformational transition rates provides strong evidence that excursions occur with drug bound. The logic connecting these observations is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Cryo-EM structure of ternatin-4-stalled rabbit ribosome complex at 4.1 \u00c5 resolution reveals ternatin-4 binds at the eEF1A DI-DIII interface near Ala399, overlapping with the didemnin binding site, though with less well-resolved density suggesting increased mobility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 are supported by cryo-EM data (Figure 3, Figure 3\u2014supplement 1, Table 2) showing structure determination and drug density localization. The resolution is adequate for identifying the binding site. The observation of weaker density for ternatin-4 compared to didemnin is consistent with the dynamic differences observed by smFRET.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Comparison of didemnin and ternatin-4 binding reveals didemnin has a larger contact surface and bridges the DI-DIII gap more effectively, particularly through its dimethyltyrosine moiety which is absent in ternatin-4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 are supported by structural comparisons (Figure 3B-D) and chemical structures (Figure 1\u2014supplement 1). While C91 acknowledges limitations in unambiguous positioning due to local resolution, the overall comparison of binding modes is reasonable. The structural differences provide a plausible explanation for dynamic differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Human ribosome structures with didemnin and ternatin-4 resolved to 3.2-3.6 \u00c5, higher than rabbit structures, with better tRNA density due to defined tRNA reconstitution. Ternatin-4-stalled complexes required 3\u00d7 more particles than didemnin, consistent with increased dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C99 are supported by cryo-EM data processing (Figure 3\u2014supplement 3, Table 2). The higher resolution and improved density quality are documented. The requirement for more particles with ternatin-4 provides independent structural evidence for increased dynamics observed by smFRET. The inference about reconstitution improving density (C96) is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Both drugs stall eEF1A after GTP hydrolysis (no \u03b3-phosphate density), but ternatin-4-stalled structures show disordered switch loops and weakened density for catalytic residues, while didemnin-stalled structures maintain ordered switch loops despite Pi release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C113 are supported by cryo-EM density analysis (Figure 4, Figure 4\u2014supplement 1) showing differential switch loop ordering. The absence of \u03b3-phosphate in both structures is clear. The interpretation that ternatin-4 allows increased post-hydrolysis dynamics while didemnin maintains a GTP-like conformation is well-supported by the structural data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C143",
+      "C144"
+    ],
+    "result": "Both drugs inhibit protein synthesis in HCT116 cells with similar IC50 values (didemnin ~7 nM, ternatin-4 ~36 nM), but ternatin-4 effects are reversible upon washout (25% recovery at 22h) while didemnin effects are quasi-irreversible, correlating with their ~25-fold difference in dissociation rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C124, C143-C144 are supported by metabolic labeling experiments (Figure 5A-C) showing dose-response and washout kinetics. The correlation between cellular reversibility and biophysical dissociation rates provides strong mechanistic insight. Sample sizes (n=3 biological replicates) and error estimates are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Both drugs induce apoptosis in Jurkat cells with didemnin ~7-fold more potent (IC50 ~4 nM vs ~30 nM). After 2h pulse, ternatin-4-induced apoptosis plateaus (~40%) while didemnin-induced apoptosis increases post-washout (20% to 75%), consistent with differential dissociation kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C131 are supported by apoptosis assays (Figure 5D-E, Figure 5\u2014supplement 1) using annexin V/PI staining. The differential washout behavior provides independent cellular validation of the biophysical measurements. The inference connecting cell death kinetics to protein synthesis inhibition and drug dissociation (C130-C131) is well-reasoned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Didemnin and ternatin-4 share a common binding site at the eEF1A DI-DIII interface and trap eEF1A(GDP)-aa-tRNA ternary complex in an intermediate state, inhibiting rate-limiting conformational changes during the proofreading stage that allow aa-tRNA accommodation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101, C132-C135 integrate structural (overlapping binding sites) and functional (GA-state stabilization) data to propose a unified mechanism. The conclusion is well-supported by convergent evidence from cryo-EM and smFRET. The inference that both drugs target proofreading is consistent with the kinetic data showing preferential inhibition of GA-to-AC transitions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The authors propose that didemnin and ternatin-4 target the proofreading stage by inhibiting eEF1A dynamics that facilitate aa-tRNA accommodation after GTP hydrolysis, with ternatin-4 trapping a more dynamic state due to its smaller footprint and differential residue engagement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C137-C142 represent mechanistic proposals that integrate the structural and dynamic data. While the model is plausible and consistent with observations, these are largely speculative inferences (C137, C138, C140, C142 explicitly marked as speculation). The proposal requires additional validation, such as mutational analysis of specific contacts or molecular dynamics simulations to test the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The authors speculate that in vivo residence times influence efficacy and toxicity profiles, suggesting that translation elongation inhibitors could be tailored for reduced toxicity while maintaining efficacy, with potential for ternatin-like inhibitors to target rapidly proliferating cells while sparing broad toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C145-C147 are speculative statements about therapeutic potential. While the differential pharmacology observed provides a foundation for this speculation, these claims represent future possibilities rather than demonstrated results. The speculation is reasonable given the data but requires in vivo validation and additional medicinal chemistry optimization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Background claims establishing the translation mechanism, eEF1A function, kinetic proofreading model, and disease relevance of translation dysregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C14-C33 represent established knowledge about translation mechanisms, supported by appropriate citations to prior literature. These provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Background on didemnin and ternatin natural products, their known properties, clinical testing, and prior structural characterization of didemnin binding to eEF1A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7, C34-C51 summarize prior knowledge about these compounds from literature, supported by appropriate citations. These establish the knowledge gap (C50-C51) that motivates the current study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Recent studies show ternatin-4 and plitidepsin have antiviral activity against SARS-CoV-2, and a hydroxylated ternatin-4 variant is efficacious in a mouse lymphoma model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C150 cite recent published work on therapeutic applications. These support the translational relevance of the findings but are not results of the current study.",
+    "result_type": "MINOR"
+  }
+]

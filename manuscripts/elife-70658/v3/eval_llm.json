@@ -1,0 +1,287 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The study measured the binding kinetics of wild-type SARS-CoV-2 RBD to wild-type ACE2 at 37\u00b0C using surface plasmon resonance (SPR), obtaining kon = 0.9 \u00b1 0.05 \u03bcM\u207b\u00b9s\u207b\u00b9, koff = 0.067 \u00b1 0.0011 s\u207b\u00b9, and KD = 74 \u00b1 4 nM (calculated) or 63 \u00b1 7.7 nM (equilibrium). These rate constants are up to 25-fold faster than previously reported, which the authors attribute to methodological improvements including physiological temperature, low ligand immobilization to avoid mass-transport limitations and rebinding, and exclusion of protein aggregates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The kinetic measurements are well-supported by rigorous SPR methodology with appropriate controls (C103, C105). The authors demonstrate that measured rate constants are independent of immobilization level and that 1:1 Langmuir binding fits the data well, excluding artifacts from aggregation (C104). The comparison with previous studies and explanation of methodological differences (C42, C43, C67-C72) is reasonable and well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C26",
+      "C27",
+      "C47",
+      "C48"
+    ],
+    "result": "Single RBD mutations N501Y, E484K, and S477N all increased binding affinity to ACE2, with N501Y showing the largest effect (~10-fold increase). N501Y increased affinity by both increasing kon (~1.8-fold) and decreasing koff (~7-fold), while S477N decreased koff and E484K increased kon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These findings are directly supported by SPR measurements presented in Table 1 and Figure 3 (C4, C26, C27, C47, C48). The kinetic data show consistent trends across replicates (n=3 for most measurements), and the effects on both association and dissociation rate constants are clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C49",
+      "C50"
+    ],
+    "result": "The K417N and K417T mutations decreased RBD binding affinity to ACE2 by approximately 4-fold and 2-fold, respectively, primarily by decreasing kon but also by increasing koff.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The decreased affinity of K417N/T mutations is clearly demonstrated by SPR data in Table 1 and Figure 3 (C5, C49, C50). The kinetic analysis shows that both mutations affect primarily the association rate constant, consistent with disruption of electrostatic interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C28"
+    ],
+    "result": "RBD variants containing multiple mutations showed combined effects: the VOC-202102-02 variant (E484K/N501Y) increased affinity ~15-fold (KD ~5 nM), while Beta (K417N/E484K/N501Y) and Gamma (K417T/E484K/N501Y) variants increased affinity 3.7-fold and 5.3-fold, respectively, despite containing the affinity-reducing K417 mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The affinity measurements for multi-mutant RBD variants are directly supported by SPR data in Table 1 and Figure 3 (C54, C55, C56, C28). The net effects represent the balance between affinity-enhancing (N501Y, E484K) and affinity-reducing (K417N/T) mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The effects of multiple RBD mutations on binding affinity are additive and independent, as demonstrated by the finding that measured \u0394\u0394G values for multi-mutant variants equal the sum of \u0394\u0394G values for individual mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The additivity of mutation effects is clearly demonstrated in Figure 3D (C57, C58, C59). This finding is consistent with the structural observation that the mutated residues are well-separated in the interface (Figure 1C) and validates the accuracy of the affinity measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "ACE2 mutations S19P and K26R increased binding affinity for wild-type RBD by approximately 3.7-fold and 2.4-fold, respectively, through both increases in kon and decreases in koff.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The enhanced binding of ACE2 variants is directly supported by SPR measurements in Table 1 and Figure 4 (C25, C60, C61, C62). The kinetic analysis shows that both mutations affect both association and dissociation rate constants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The effects of ACE2 and RBD mutations are largely independent, with one notable exception: the combination of ACE2 S19P and RBD S477N showed non-additive effects, with S477N increasing affinity for ACE2 WT but decreasing affinity for ACE2 S19P. This is consistent with the structural proximity of residues S19 and S477 at the binding interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The independence of most mutation effects and the specific interaction between S19P and S477N are well-supported by the \u0394\u0394\u0394G analysis in Figure 4B,C (C63, C64) and structural data in Figure 1C (C65). The opposite effects of S477N on binding to ACE2 WT versus S19P (C66) are clearly demonstrated in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C77",
+      "C78"
+    ],
+    "result": "The authors conclude that N501Y and S477N mutations enhance SARS-CoV-2 transmission primarily by enhancing RBD binding to ACE2, based on their affinity data combined with evidence that the wild-type Spike/ACE2 interaction is limiting for transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the affinity measurements are solid (C6), the inference that these mutations enhance transmission primarily through binding enhancement (C77, C78) relies heavily on cited epidemiological studies and indirect reasoning. The authors acknowledge they have not examined effects on viral attachment to cells (C109), which is a significant limitation. The conclusion is plausible but requires additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The authors conclude that K417N/T mutations facilitate immune escape rather than enhancing binding, and that these affinity-reducing mutations have only emerged together with affinity-enhancing mutations (N501Y, E484K), suggesting cooperative effects between immune escape and affinity enhancement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The conclusion that K417N/T mutations facilitate immune escape is well-supported by the combination of affinity data showing decreased binding (C5, C89) and cited immunological studies showing antibody neutralization disruption (C90). The observation that K417N/T mutations only appear with affinity-enhancing mutations (C91, C92) is supported by phylogenetic analysis (Figure 1) and provides strong evidence for cooperative selection pressures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C81",
+      "C88"
+    ],
+    "result": "The E484K mutation is proposed to enhance both binding affinity and immune escape, though the authors acknowledge that its selection in multiple lineages could be primarily due to immune escape rather than affinity enhancement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dual role of E484K is supported by affinity data showing modest enhancement (C48) and cited immunological studies showing potent disruption of antibody neutralization (C88). The authors appropriately acknowledge uncertainty about the relative importance of these two mechanisms (C81).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The authors speculate that carriers of ACE2 variants K26R and S19P may be at greater risk of infection and/or severe disease, though preliminary analysis of K26R did not reach statistical significance. They also suggest that RBD S477N may have a selective disadvantage in carriers of ACE2 S19P, but note this is unlikely to be important at the population level due to low variant frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These conclusions are highly speculative (C93, C95) and based on indirect reasoning from binding affinity data. The preliminary analysis cited for K26R did not reach statistical significance (C94), and the population-level impact is acknowledged to be minimal (C96). These hypotheses require substantial additional epidemiological and clinical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C73",
+      "C74"
+    ],
+    "result": "The RBD mutations analyzed (N501Y, E484K, S477N, K417N/T) have all emerged independently in multiple SARS-CoV-2 lineages and became dominant in at least one region, suggesting they provide selective advantages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The independent emergence and regional dominance of these mutations is well-documented through phylogenetic analysis (Figure 1, Figure 1\u2014figure supplement 1) and cited epidemiological data (C29-C33, C73). This provides strong evidence for positive selection, though the specific mechanisms of advantage are inferred rather than directly demonstrated (C74).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The authors acknowledge important caveats: their analysis used monomeric forms of RBD and ACE2 rather than native trimeric Spike and potentially dimeric ACE2, which may not capture the full effects of mutations, and they did not examine effects on viral attachment to cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are appropriate and important caveats clearly stated by the authors (C106-C109). The use of monomeric proteins is a standard approach for detailed kinetic analysis but may not fully recapitulate the native interaction context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "The authors note that their affinity and kinetic data on RBD variants are broadly consistent with some but not all recent reports on K417T/N, N501Y, and E484K variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is an accurate assessment of the literature comparison (C110, C111). The variability in published results likely reflects differences in experimental conditions and methodologies, which the authors discuss in detail.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Population genetics analysis shows that K26R is present in 0.4% of samples in gnomAD (most common in Ashkenazi Jews at 1% and northwestern Europeans at 0.6%), while S19P is present in 0.03% (almost exclusively in Africans/African-Americans at 0.3%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These population frequency data are directly cited from the gnomAD database (C35-C39) and provide important context for interpreting the potential impact of ACE2 variants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The authors cite epidemiological evidence that the Alpha variant has enhanced transmissibility and that the D614G mutation rapidly became dominant globally, along with studies of other viruses suggesting that increased receptor affinity can increase infection and disease severity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are appropriately supported by citations to epidemiological studies (C75, C76) and comparative virology (C82, C83). The inference that increased affinity could increase tissue tropism and viral load (C84) is reasonable but indirect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The authors cite evidence that neutralizing antibodies primarily target the RBD, that Beta and Gamma variants with RBD mutations became dominant in regions with high prior infection, and that E484K potently disrupts antibody neutralization while N501Y has modest effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims about immune responses are well-supported by citations to immunological studies (C85-C88) and provide important context for interpreting the selection pressures on RBD mutations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The authors speculate that the common ACE2 variants at positions with no known functional activity may be remnants of historic adaptation to pathogens, and that the S19P mutation's confinement to African populations suggests it is more recent than K26R or was selected by African-specific pathogens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are highly speculative evolutionary hypotheses (C97, C98, C100) based on population genetics patterns (C99). While the observations are accurate, the evolutionary interpretations are not directly testable with the available data.",
+    "result_type": "MINOR"
+  }
+]

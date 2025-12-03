@@ -1,0 +1,257 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Long non-coding RNAs and small non-coding RNAs are significantly altered in sepsis patients compared to healthy subjects, with long non-coding RNAs showing the broadest expression perturbations. Principal component analysis revealed clear separation between sepsis patients and healthy subjects for protein-coding and long non-coding RNAs, but minimal separation for small non-coding RNAs. Differential expression analysis identified 13,158 long non-coding RNAs and 635 small non-coding RNAs significantly altered in sepsis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C14-C21 provide converging evidence from multiple analytical approaches (PCA, MDTH indices, differential expression analysis) demonstrating significant alterations in non-coding RNA expression in sepsis. The statistical thresholds (adjusted p<0.01) and sample sizes (156 sepsis patients, 82 healthy subjects) are appropriate, and the findings are internally consistent across different analytical methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C29",
+      "C30",
+      "C61",
+      "C62"
+    ],
+    "result": "Long non-coding RNA expression patterns in sepsis patients are largely recapitulated in the human endotoxemia model, with the highest correlation (r\u00b2=0.51) observed at 4 hours post-LPS administration. This time point corresponds to endotoxin tolerance, when cytokine production capacity is typically reduced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C29-C30, C61-C62 demonstrate that long non-coding RNA profiles in sepsis correlate with human endotoxemia in a time-dependent manner. The correlation analysis is appropriately conducted across multiple time points (2, 4, 6, 24 hours), with the 4-hour time point showing the strongest correlation. The interpretation linking this to endotoxin tolerance is supported by cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C31",
+      "C63",
+      "C64"
+    ],
+    "result": "Small non-coding RNA expression patterns in sepsis patients were not reliably recapitulated in human endotoxemia, showing primarily indirect correlations. This may be due to low expression levels and high cell-type specificity of miRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C31, C63-C64 consistently demonstrate that small non-coding RNAs behave differently from long non-coding RNAs in the endotoxemia model. The correlation analysis (Figure 3E) supports the finding of indirect correlations. The proposed explanation (C64) is appropriately presented as speculation with supporting citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Demographics and clinical characteristics explain relatively low proportions of variance in RNA expression profiles. In healthy subjects, gender and age explained 4-5% of variance, while in sepsis patients, clinical variables cumulatively explained 8-18% of variance, with primary site of infection and place of acquisition explaining the highest proportions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 are supported by variance partition analysis using appropriate multivariable methods. The findings are clearly quantified with specific percentages and are consistent with the interpretation that clinical variables explain only modest proportions of RNA expression variance. The methodology (variancePartition) is appropriate for this analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C39"
+    ],
+    "result": "Septic shock is associated with modest transcriptional changes, with 837 protein-coding RNAs and 80 long non-coding RNAs significantly altered. Patients with septic shock showed significantly higher neutrophil degranulation (secretory) expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25 and C39 are supported by differential expression analysis (Figure 2C) and module eigengene analysis (Figure 5B) with appropriate statistical testing. The finding that shock explains low proportions of overall variance but shows specific module-level differences is internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "RNA expression profiles show limited association with 28-day mortality, with 146 protein-coding RNAs significantly altered between survivors and non-survivors, but no significant differences in non-coding RNA profiles. This suggests non-coding RNA profiles at ICU admission may not be suitable mortality predictors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 are supported by differential expression analysis. However, the conclusion (C28) that non-coding RNA profiles are unsuitable as mortality predictors is appropriately cautious, acknowledging this is based on single time-point data at ICU admission. The negative finding for non-coding RNAs is clearly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Weighted co-expression network analysis identified 23 network modules, with 8 modules significantly enriched for long non-coding RNA relative to protein-coding RNA. This indicates that 34% of non-coding RNA modules are organized into distinct functional units, while the majority co-express with protein-coding RNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 are supported by WGCNA analysis with appropriate statistical testing (Fisher's adjusted p<0.01). The methodology is well-established for co-expression analysis, and the interpretation that most long non-coding RNAs co-express with protein-coding RNAs while some form distinct modules is reasonable based on the enrichment analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Integration of miRNA profiles with co-expression networks identified 49 small RNAs in five network modules with >20% explained variance, including hsa-miR-200c-3p in the translation initiation module. This miRNA has been previously shown to modify TLR4 signaling efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are supported by miRNA-to-gene interaction analysis using the miRWalk method. The identification of specific miRNAs with high explained variance is methodologically sound, and the connection to prior functional studies (C36) appropriately contextualizes the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Network modules show distinct correlation patterns with clinical and biochemical parameters. Neutrophil degranulation, protein ubiquitination, and mitotic cell cycle modules correlate directly with inflammatory mediators and disease severity, while antigen presentation, TLR signaling, and type-I interferon signaling modules show indirect correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 are supported by correlation analysis between module eigengenes and clinical/biochemical parameters (Figure 5A). The analysis appropriately uses Pearson correlation with adjustment for multiple testing (adjusted p<0.05), and the findings are biologically plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "Hub long non-coding RNAs MYOSLID and LUCAT1 show opposing correlation patterns with inflammatory markers. MYOSLID expression directly correlates with IL-6, IL-8, IL-10, and CRP, while LUCAT1 shows indirect correlations with inflammatory mediators except CRP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 are supported by correlation analysis (Figures 5D-E) between individual lncRNA expression and inflammatory markers. The identification of these lncRNAs as module hubs is based on intramodular connectivity analysis, and the correlation patterns are clearly demonstrated in the figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4"
+    ],
+    "result": "Integration of RNA profiles and plasma protein levels revealed previously unobserved pathways including non-sensory olfactory receptor activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C4 states that olfactory receptor activity pathways were revealed through integration of RNA and protein data, but the manuscript does not provide clear methodological details on how this integration was performed. While olfactory receptors are mentioned in network modules (C32, Figure 4), the specific integration method with plasma protein levels is not adequately described to evaluate this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "Coding and long non-coding RNA profiles in blood leukocytes of sepsis patients particularly reflect a tolerant state, based on correlation with the 4-hour endotoxemia time point associated with endotoxin tolerance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C67 makes an inference about the immune state of sepsis patients based on correlation with a specific endotoxemia time point. While the correlation data (C30, C62) support that the 4-hour time point shows the highest correlation, the leap to concluding that sepsis patients are in a 'tolerant state' requires additional validation. The authors appropriately note that 'time course studies in patients are needed,' acknowledging the limitation of this inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C76"
+    ],
+    "result": "The study included 156 sepsis patients and 82 healthy subjects (including 8 challenged with LPS) from the MARS project. Patient demographics show median age 62 years, 62.8% male, with high disease severity (median APACHE IV 72, SOFA 7) and substantial mortality (30.8% at 28 days, 49.4% at 1 year).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C57, C76 provide descriptive statistics of the study population. These are straightforward demographic and clinical data presented in Table 1 and the methods section. The data are internally consistent and appropriate for the study design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "RNA was isolated using PAXgene blood miRNA isolation kit and hybridized to GeneChip Human Transcriptome Array 2.0 or miRNA 4.1 96-array plate, with scanning performed at the Cologne Center for Genomics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 describe standard methodological procedures that are clearly stated in the methods section. These are appropriate methods for comprehensive RNA profiling including non-coding RNAs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C58",
+      "C59",
+      "C60",
+      "C65",
+      "C66",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Background claims about sepsis epidemiology, prior transcriptomic studies, non-coding RNA biology, and relevant mechanistic pathways are supported by appropriate citations to the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C13, C58-C60, C65-C66, C68-C74 are background/contextual claims supported by citations. These appropriately frame the study rationale and interpret findings in the context of existing literature. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "The study provides a benchmark dissection of the blood leukocyte 'regulome' that can facilitate prioritization of future functional studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 is a summary statement about the study's contribution. Given the comprehensive profiling of coding and non-coding RNAs, network analysis, and integration with clinical parameters, this characterization is reasonable. However, the actual utility for prioritizing functional studies will depend on future validation work.",
+    "result_type": "MAJOR"
+  }
+]

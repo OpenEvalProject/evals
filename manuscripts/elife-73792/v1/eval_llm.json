@@ -1,0 +1,344 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "ZIKV infection induces GSDME-mediated pyroptosis in JEG-3 placental cells in vitro. ZIKV-infected JEG-3 cells display characteristic pyroptotic morphology (cell swelling, balloon-like structures), release LDH in a time-dependent manner, and show cleavage of GSDME but not GSDMD. Deletion of GSDME suppresses these pyroptotic features without affecting viral replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C31 provide converging evidence from microscopy (pyroptotic morphology), biochemical assays (LDH release, cell viability), and Western blots (GSDME-N cleavage, no GSDMD cleavage). The GSDME-KO rescue experiment (C30-C31) and viral replication data (C32) strengthen the conclusion that GSDME specifically mediates pyroptosis without affecting viral replication. The data are internally consistent and use appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "ZIKV-induced pyroptosis depends on both cellular GSDME abundance and susceptibility to ZIKV infection. Among tested cell lines, Huh-7 and A549 showed pyroptosis with moderate GSDME levels and high ZIKV susceptibility, while SH-SY5Y showed no pyroptosis despite high GSDME expression. JEG-3, Huh-7, and A549 were most susceptible to ZIKV, and pyroptosis was dose-dependent in JEG-3 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 demonstrate that pyroptosis requires both GSDME expression and productive viral infection. The observation that SH-SY5Y cells express high GSDME but don't undergo pyroptosis (C35), combined with susceptibility data (C36) and dose-response experiments (C37), supports a two-factor model. However, the mechanistic basis for why high GSDME alone is insufficient remains unexplored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "ZIKV activates GSDME through the extrinsic apoptotic pathway via caspase-8 and caspase-3, not through caspase-1 or the intrinsic pathway. Caspase-3 and caspase-8 inhibitors or knockout significantly reduce GSDME cleavage and pyroptosis, while caspase-1 inhibitor/knockout and caspase-9 inhibitor have minimal effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C47 provide strong evidence through pharmacological inhibition (C39-C44) and genetic knockout (C45-C47) approaches. The data consistently show caspase-8 and caspase-3 are required, while caspase-1 and caspase-9 are not essential. The use of both chemical inhibitors and genetic knockouts strengthens the conclusions. However, the partial inhibition by caspase-3 inhibitor (C39) suggests additional complexity not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C3"
+    ],
+    "result": "TNF-\u03b1 production is induced during ZIKV infection and contributes to pyroptosis through activation of the caspase-8/GSDME pathway. ZIKV infection increases TNF-\u03b1 mRNA and protein levels, and blocking TNF-\u03b1 signaling with R-7050 inhibits caspase-8 and GSDME activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 demonstrate TNF-\u03b1 involvement through expression analysis (RT-qPCR and ELISA) and functional blockade with R-7050. The data show that TNF-\u03b1 receptor antagonism reduces pyroptosis markers. This connects upstream viral recognition to downstream caspase activation. The mechanistic link is well-supported by the inhibitor data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "ZIKV genomic RNA, specifically the 5' and 3' UTRs, but not viral structural or NS proteins, induces pyroptosis. Both UTRs induce pyroptotic cell death and GSDME cleavage via the same pathway as live virus, with the 5' UTR showing stronger effects than the 3' UTR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 systematically exclude viral proteins (UV-inactivated virus, individual NS proteins) and identify viral RNA as the pyroptosis trigger. The UTR transfection experiments (C52-C54) recapitulate the pathway seen with live virus. The differential potency of 5' vs 3' UTR (C53) is interesting but not mechanistically explained. The approach is sound and controls are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C4"
+    ],
+    "result": "RIG-I recognition of ZIKV genomic RNA is the primary sensor triggering pyroptosis, acting independently of IFN-I signaling. RIG-I knockdown or knockout significantly reduces ZIKV-induced pyroptosis, GSDME cleavage, and TNF-\u03b1 production, while TLR7/8 knockdown and MDA5/MAVS knockout have minimal effects. RIG-I activation alone is sufficient to induce pyroptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C61 provide strong evidence through knockdown (C55), knockout (C56-C58), gain-of-function (C59), and IFN-I blockade (C60) experiments. The data consistently show RIG-I is necessary and sufficient for pyroptosis. The finding that MAVS knockout has minimal effect (C57) suggests a non-canonical RIG-I pathway, which is acknowledged but not fully explained. The connection to TNF-\u03b1 production (C61) links RIG-I to the downstream caspase pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "ZIKV induces pyroptosis in mouse primary trophoblast cells through the same RIG-I/caspase-8/caspase-3/GSDME pathway observed in JEG-3 cells. ZIKV infection of mouse trophoblast cells increases LDH release and GSDME cleavage, with upregulation of RIG-I and requirement for caspase-3 and caspase-8.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 demonstrate that the mechanism identified in human JEG-3 cells translates to primary mouse trophoblast cells. This is important for validating the in vivo mouse model. The data show similar pathway activation (RIG-I upregulation, caspase dependence, GSDME cleavage). However, the reliance on inhibitors rather than genetic approaches in primary cells is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "GSDME ablation in pregnant mice protects against ZIKV-induced adverse fetal outcomes. While ZIKV-infected WT dams showed 61% affected fetuses (52 resorptions, 15 malformations out of 109 sites), Gsdme-/- dams showed only 20% affected fetuses (14 resorptions, 4 malformations out of 90 sites), with no maternal weight loss or clinical signs in either genotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C71 provide quantitative data from a well-controlled in vivo experiment comparing WT and Gsdme-/- pregnant mice. The reduction in adverse outcomes is statistically significant and biologically meaningful. The lack of maternal symptoms (C65) suggests placental-specific effects. However, the study cannot distinguish maternal vs. fetal GSDME contributions, as acknowledged by the authors. The sample sizes are adequate for the observed effect sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "GSDME is essential for ZIKV-induced placental pathology and pyroptosis in vivo. Placentas from ZIKV-infected WT dams show hyperplasia, necrosis, thrombi, and PI-positive cells in decidua and labyrinth zones, while placentas from Gsdme-/- dams show normal morphology and fewer PI-positive cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 provide histological (H&E staining) and functional (PI staining for membrane permeability) evidence of placental pyroptosis in vivo. The PI staining is an appropriate surrogate for pyroptosis given the lack of effective antibodies for GSDME-N in mouse tissue. The qualitative histological observations are clear, though quantification of pathological features would strengthen the conclusions. The correlation between reduced PI staining and improved fetal outcomes supports causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "GSDME ablation does not affect ZIKV replication or tissue distribution in pregnant mice. Comparable viral RNA levels were detected in spleens of WT and Gsdme-/- dams, with no detection in brains or serum, and no significant differences in viral loads in placentas or fetal brains between genotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 demonstrate that the protective effect of GSDME ablation is not due to reduced viral replication. This is important for establishing that pyroptosis is a pathogenic rather than antiviral mechanism. The qRT-PCR data are appropriate, though viral titers by plaque assay would provide additional confirmation. The lack of brain/serum detection (C77) is consistent with the immunocompetent mouse model used.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "TNF-\u03b1 receptor antagonist R-7050 treatment protects against ZIKV-induced placental damage and adverse fetal outcomes in pregnant mice. ZIKV infection increases placental TNF-\u03b1 production, and R-7050 treatment significantly reduces affected fetuses, placental pathology, and pyroptosis compared to vehicle-treated controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 demonstrate therapeutic potential by showing that pharmacological TNF-\u03b1 blockade recapitulates the protective effect of GSDME knockout. The data include expression analysis (C79), fetal outcome quantification (C80), and histological/PI staining evidence (C81). This validates TNF-\u03b1 as a therapeutic target. However, the study doesn't address potential effects of R-7050 on maternal immune responses or other TNF-\u03b1-dependent processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "ZIKV can be transmitted vertically from mother to fetus, causing congenital Zika syndrome (CZS) characterized by microcephaly, growth restriction, and developmental abnormalities through both direct fetal infection and placental damage involving apoptosis and trophoblast dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C11-C16 summarize established knowledge from prior literature (supported by multiple citations) that provides context for the current study. These claims accurately represent the scientific consensus on ZIKV pathogenesis and are appropriately cited. They establish the rationale for investigating placental pyroptosis as an additional mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Pyroptosis is an inflammatory form of programmed cell death mediated by gasdermin family proteins. GSDMD is cleaved by inflammatory caspases, while GSDME (DFNA5) is cleaved by caspase-3 and granzyme B, and can switch apoptosis to pyroptosis. GSDME was originally identified as a hearing loss gene and tumor suppressor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C22 accurately summarize established knowledge about pyroptosis mechanisms and gasdermin proteins, supported by appropriate citations. This background information is correctly presented and provides necessary context for understanding the novel findings. These are well-established facts in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Pyroptosis plays important roles in flavivirus pathogenesis. Dengue virus induces NLRP3/GSDMD-mediated pyroptosis in macrophages contributing to hemorrhagic fever, Japanese encephalitis virus induces pyroptosis promoting neuroinvasion, and ZIKV induces caspase-1/GSDMD-mediated pyroptosis in neural progenitor cells contributing to CZS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 accurately cite prior work on pyroptosis in viral infections, particularly flaviviruses. These citations are appropriate and correctly represent the referenced studies. Claim C25 specifically cites work showing GSDMD-mediated pyroptosis in neural cells, which contrasts with the current study's finding of GSDME-mediated pyroptosis in placental cells, highlighting the novelty of the present work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "JEG-3 is an appropriate model for studying first-trimester placental ZIKV infection. JEG-3 is a ZIKV-permissive human choriocarcinoma cell line representing trophoblast features, and first-trimester ZIKV infection leads to higher risk of CZS, though mechanisms remain incompletely understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 justify the experimental model choice. C82 is supported by citation to Zachariades et al., 2011, and C83 by citations to Musso and Gubler, 2016; Jagger et al., 2017. The rationale for using JEG-3 cells is appropriate, though the authors acknowledge it's a cancer cell line, which may not fully recapitulate primary trophoblast biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Caspase-3 can be activated through intrinsic (mitochondrial/caspase-9) or extrinsic (death receptor/caspase-8) apoptotic pathways, and GSDME-mediated pyroptosis can occur downstream of both pathways. TNF-\u03b1 activates death receptor signaling and caspase-8, while RIG-I and TLR7/8 sense viral ssRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C90 accurately summarize established cell death and innate immunity mechanisms, supported by appropriate citations. This background knowledge is correctly presented and provides necessary context for interpreting the experimental findings. These are well-established principles in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The choice of immunocompetent pregnant mouse model is justified because IFN-I signaling plays important roles in ZIKV pathogenesis and placental development, and ZIKV infection in immunocompetent pregnant mice causes placental damage and adverse fetal outcomes without maternal symptoms. Prior work suggests placental pathology may be more important than direct fetal infection for adverse outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C96 justify the experimental model choice with appropriate citations. The rationale for using immunocompetent rather than immunocompromised mice is sound, as it preserves physiological immune responses. The citations support the claims about IFN-I roles (C93), lack of maternal symptoms (C94), and importance of placental pathology (C95). C96 provides supporting evidence that caspase-3 inhibition doesn't affect brain pathology in a different model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "ZIKV and other viruses can induce GSDME-mediated pyroptosis with varying pathogenic consequences. ZIKV NS proteins activate NLRP3 inflammasome, H7N9 influenza and enterovirus 71 induce pathogenic GSDME pyroptosis, SARS-CoV-2 induces GSDME pyroptosis in syncytia, while some viruses trigger GSDME pyroptosis as an antiviral mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C103 accurately cite recent literature on GSDME in viral pathogenesis, providing context for the current findings. The citations are appropriate and correctly represent the referenced work. These claims establish that GSDME-mediated pyroptosis is an emerging theme in virology, with both pathogenic and antiviral roles depending on context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Caspase-3 and caspase-8 have complex roles in cell death. Caspase-3 can both activate GSDME to induce pyroptosis and cleave GSDMD to inhibit pyroptosis. Caspase-8 can induce GSDMD/GSDME pyroptosis in macrophages and inhibit necroptosis. GSDME-N can permeabilize mitochondria and activate intrinsic apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 accurately cite literature on the multifunctional roles of caspases and GSDME in cell death pathways. These citations are appropriate and provide important context for understanding the complexity of the pathways studied. The bidirectional relationship between apoptosis and pyroptosis is well-established in the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "R-7050 is a TNF-\u03b1 receptor antagonist that has shown therapeutic efficacy in multiple disease models and inhibits caspase-8 and caspase-3 activation by blocking TNF-\u03b1 signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 accurately describe R-7050 based on cited literature (Wen et al., 2019; King et al., 2013; Lin et al., 2021; Pal et al., 2021). The characterization of the compound and its mechanism is appropriate and provides justification for its use in the therapeutic experiments. The citations support both the compound's properties and prior therapeutic applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Background information on ZIKV biology, pyroptosis detection methods, and placental function. ZIKV activates inflammatory pathways and IL-1\u03b2 secretion, pyroptotic cells are permeable to membrane-impermeable dyes like PI, caspase-8 is a multifunctional cell death regulator, the placenta is essential for maternal-fetal nutrient exchange and is infected before the fetus, and ZIKV is a mosquito-borne flavivirus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C116 provide accurate background information supported by appropriate citations or established knowledge. These claims establish context and justify methodological choices (e.g., PI staining for pyroptosis detection). The information is correctly presented and relevant to the study.",
+    "result_type": "MINOR"
+  }
+]

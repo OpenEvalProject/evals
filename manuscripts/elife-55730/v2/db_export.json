@@ -1,0 +1,1767 @@
+{
+  "submission": {
+    "id": "1d98c37e-7b74-4e06-afb1-419201b10043",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T00:56:50.206913Z",
+    "updated_at": "2025-12-03T00:56:50.206913Z"
+  },
+  "content": [
+    {
+      "id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "submission_id": "1d98c37e-7b74-4e06-afb1-419201b10043",
+      "content_type": "manuscript",
+      "content_text": "# Cardiac endothelial cells maintain open chromatin and expression of cardiomyocyte myofibrillar genes\n\n## Authors\n\n- Nora Yucel<sup>1</sup> ([ORCID: 0000-0002-1848-6462](https://orcid.org/0000-0002-1848-6462)) \u2020\n- Jessie Axsom<sup>1</sup>\n- Yifan Yang<sup>1</sup>\n- Li Li<sup>1</sup>\n- Joshua H Rhoades<sup>1</sup>\n- Zoltan Arany<sup>1</sup> ([ORCID: 0000-0003-1368-2453](https://orcid.org/0000-0003-1368-2453)) \u2020\n\n### Affiliations\n\n1. Perelman School of Medicine, University of Pennsylvania Philadelphia United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nEndothelial cells (ECs) are widely heterogenous depending on tissue and vascular localization. Jambusaria et al. recently demonstrated that ECs in various tissues surprisingly possess mRNA signatures of their underlying parenchyma. The mechanism underlying this observation remains unexplained, and could include mRNA contamination during cell isolation, in vivo mRNA paracrine transfer from parenchymal cells to ECs, or cell-autonomous expression of these mRNAs in ECs. Here, we use a combination of bulk RNASeq, single-cell RNASeq datasets, in situ mRNA hybridization, and most importantly ATAC-Seq of FACS-isolated nuclei, to show that cardiac ECs actively express cardiomyocyte myofibril (CMF) genes and have open chromatin at CMF gene promoters. These open chromatin sites are enriched for sites targeted by cardiac transcription factors, and closed upon expansion of ECs in culture. Together, these data demonstrate unambiguously that the expression of CMF genes in ECs is cell-autonomous, and not simply a result of technical contamination or paracrine transfers of mRNAs, and indicate that local cues in the heart in vivo unexpectedly maintain fully open chromatin in ECs at genes previously thought limited to cardiomyocytes.\n\n## Introduction\n\nEndothelial cells (ECs) are the most abundant non-blood cells in the body, and form the inner layer of all vessels in all organs. ECs carry out a wide range of critical functions, including providing a barrier between blood and the underlying parenchyma, regulating transport of nutrients and waste across that barrier, regulation of immune cell extravasation, maintaining intravascular hemostatic homeostasis, and controlling blood flow and systemic vascular resistance. These numerous roles differ widely depending on anatomical site, developmental stage, and physiological state. Consistent with this remarkable variability of function, extensive transcriptional and functional heterogeneity of ECs across tissue types, vascular localization (e.g. arterial, venous, or lymphatic), and developmental stage has been characterized in a number of studies. However, the chromatin landscape underlying these differences remains poorly understood.\n\nInterestingly, numerous investigators have noted anecdotally, in discussions at various meetings, that cardiac ECs contain mRNAs that encode various myofibrillar proteins normally expressed in cardiomyocytes, including myosins, troponins, and titin. Most recently, Jambusaria et al. collated EC-specific RNAseq datasets from heart, brain, and lung, to formally show that ECs in these three tissues contain mRNAs normally ascribed to their respective underlying parenchyma (Jambusaria et al., 2020). This observation has been variably ascribed to technical artifacts during RNA preparations (i.e. contamination by RNAs from cardiomyocytes) or to presumed transfer in vivo of RNAs from cardiomyocytes to ECs via, for example, exosome transfer (although this has never been demonstrated), but these conclusions have been controversial. An alternative hypothesis is that cardiac ECs may in fact express these RNAs intrinsically. In this context, it is relevant to note that cardiac ECs originate from tri-potential precursor cells that differentiate to cardiomyocytes, smooth muscle cells, and ECs. It may therefore be that cardiac ECs maintain epigenetic memory of a cardiomyocyte-like precursor.\n\nTo distinguish these possibilities, we use here single-cell RNAseq as well as bulk ATACSeq to characterize the chromatin accessibility signature of cardiac ECs in vivo. We show that cardiac ECs in fact maintain chromatin accessibility and transcriptional activation of myofibrillar genes typical of underlying cardiomyocyte parenchyma, but not of the immediately surrounding stromal cells. The presence of these mRNAs in cardiac ECs is thus a direct consequence of their expression in ECs.\n\n## Results\n\n### Cardiac ECs express myofibrillar genes normally associated with cardiomyocytes\n\nWe first sought to define the complete signature of actively translated mRNAs in cardiac ECs. To do so, we leveraged the NuTRAP mouse model, in which ribosomes are genetically tagged with GFP, conditional on Cre expression (Roh et al., 2017). EC-specific Cdh5-Cre NuTRAP mice thus allow for immuno-precipitation of ribosome-bound, and thus actively translated, RNA strictly from ECs, without the need for cell-isolation. RNASeq from NuTRAP-tagged cardiac ECs showed, as expected, enrichment of known EC-specific genes. Surprisingly, however, we also found significant contribution of mRNAs from cardiomyocyte myofibril (CMF) genes which, although depleted compared to the non-endothelial fraction, were still amongst the highest expressed genes in cardiac ECs (Figure 1A). To begin to ascertain whether this contribution was due to technical contamination, that\u00a0is pulldown of mRNAs originating from cardiomyocytes instead of ECs, we performed Kendall-Tau rank-order analysis. As did Jambusaria et al, we reasoned that contamination would reflect the relative expression levels of CMF genes from the whole heart (Figure 1A\u2013B). Endothelial and non-endothelial heart expression of highly expressed genes were only poorly correlated (0.216), suggesting that the presence of CMF mRNAs is not solely due to contamination.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/55730/elife-55730-fig1-v2.jpg)\n\n**Figure 1.:** (A) RNASeq of Translating Ribosome Affinity Purification (TRAP) endothelial RNA freshly isolated from hearts of Cdh5-NuTRAP animals. Expression (Log2CPM) of immunoprecipitated endothelial RNA (IP) versus non-endothelial RNA from the remaining fraction after IP (supernatant). Shown in the blue box are the top 300 expressed genes, with CMF genes highlighted in red. Kendall-Tau rank analyses performed on these top 300 expressed genes. (B) Relative expression of selected genes from freshly isolated tissue-specific adult endothelial cell TRAP, collected from (Rpl22fl/fl, Tek2-Cre+)/animals (Cleuren, et al, GSE138630) vs total tissue TRAP RNA (Rpl22fl/fl, EIIa-Cre+/0). (C) Kendall-Tau analysis of TRAP vs total tissue of heart tissue from Cleuren, et al. Analyses performed on the highest 300 expressed genes in the total heart tissue (D) Multidimensional scaling (MDS) clustering of the top 1000 variably expressed genes in the tissues analyzed in (B). (E) Relative expression of the indicated genes in tissue-specific adult murine endothelial cells in data sets from Coppiello et al., 2015 (GSE48209) and Nolan et al., 2013 (GSE47067) (F) Relative expression of tissue-specific fetal human endothelial RNASeq from Marcu et al., 2018 (GSE114607).\n\nTo determine if the expression of CMF genes is enriched in ECs from the heart compared to other tissues, and to determine if other investigators had also detected CMF gene expression in heart ECs, we gathered expression data from published gene expression omnibus. We focused on datasets that used prospective isolation of ECs by flow cytometry using either genetic or surface markers in order to minimize contamination by the underlying parenchyma. All data analyzed was from uncultured, freshly isolated ECs or endothelial material. Three mouse studies (Cleuren et al., 2019; Coppiello et al., 2015; Nolan et al., 2013) and one study using human fetal tissue (Marcu et al., 2018) were identified. We first focused on the Cleuren, et al dataset, which, akin to the NuTRAP system we used above, used the Rpl22fl/fl Tek-Cre+/0 mice to characterize the endothelial translatome in various tissues. Similar to our own analyses, as well those published by Jambusaria et al, we found significant expression of CMF genes in the EC translatome in this dataset (Figure 1B). Moreover, the expression of these genes was limited to heart ECs, and not seen in translatomes from ECs in other organs. Kendall Tau rank analysis of the expression of the top 300 highest expressed genes (which included CMF genes) in ECs vs the total heart translatome again showed low correlation (0.05\u20130.28, Figure 1C), casting doubts on the notion that CMF mRNAs in ECs originate from contaminating cardiomyocyte-derived mRNAs. To take an unbiased approach to this question, we clustered by principle component analysis the translatome RNAseq datasets, comparing various whole tissues to their respective ECs (Figure 1D). Multidimensional scaling of these data showed that ECs surprisingly cluster closer to their tissue of origin than to other ECs, and this was particularly true in the heart.\n\nThe next three datasets used FACS-isolated ECs to separate EC mRNAs, rather than immunoprecipitated EC-specific translatomes. Despite the different approach, analyses of these datasets again showed an enrichment of CMF gene expression in cardiac ECs, but not in ECs from other organs (Figure 1E\u2013F). In contrast, expression of known cardiomyocyte-specific transcription factors, as well as metabolic genes highly enriched in cardiomyocytes, were not significantly different in cardiac ECs compared to other ECs. Together, analyses of these datasets demonstrate that CMF gene expression in ECs: (1) is unique to cardiac ECs; (2) is generally limited to CMF genes and not to other genes highly expressed in cardiomyocytes such as mitochondrial genes; and (3) has been detected by numerous previous studies, including most recently Jambusaria et al.; and (4) is unlikely to be caused solely by contamination.\n\n### Expression of at least one CMF gene is seen in\u00a0~60% of cardiac ECs\n\nWe next wanted to determine if CMF gene expression in ECs is ubiquitous to all cardiac ECs, or is limited to a subset of ECs. In addition, we wanted to determine whether CMF gene expression is also present in other resident cell types in the heart. To do so, we leveraged Tabula Muris single-cell RNAseq data (Tabula Muris Consortium et al., 2018), and compared CMF gene expression in cardiac ECs and fibroblasts. We first used the single-cell analysis package Seurat v3 (Stuart et al., 2019) to identify marker genes characteristic of cardiomyocytes, ECs or fibroblasts, that\u00a0is signatures for each cell type (Supplementary file 1). In the cardiomyocyte signature, we selected 15 genes that were expressed in\u00a0>60% of cardiomyocytes, and whose expression was at least 10-fold higher than that in non-cardiomyocytes cells. Expression of each of these 15 genes was then evaluated in single cardiac and lung ECs and fibroblasts. The number of cardiac ECs identified as expressing each of these cardiomyocyte signature genes was dramatically higher than lung ECs or fibroblasts, and 2\u20134 fold higher than heart fibroblasts (Figure 2A). A total of 59.3% of all cardiac ECs expressed at least one of the 15 CMF genes, 1.75-fold more often than cardiac fibroblasts, and about five times more often than lung ECs (which were driven primarily by one gene, Myl4; Figure 2A\u2013B). The majority of CMF-expressing ECs only showed expression of one or two genes (Figure 2B). This distribution, as opposed to one subpopulation of cells expressing all CMF genes, suggests that expression is not being driven by cardiomyocytes misclassified as ECs, or by EC/cardiomyocyte doublets, again arguing against contamination.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/55730/elife-55730-fig2-v2.jpg)\n\n**Figure 2.:** (A): Analysis of mouse heart and lung single cell data from Tabula Muris in Schaum, et al (Nature, 2018). Fifteen cardiac myofibrillar (CMF) genes were chosen based on high, unique expression in the cardiomyocyte cell subsets. Positive expression was determined as a normalized count (ln(1+Counts-per-million)) greater than or equal to one. (B): Percentage of cardiomyocytes vs endothelial cells or fibroblasts within the heart and lung that express 1\u201315 of the selected CMF genes. (C\u2013E). Analysis of unspliced vs spliced transcripts in Tabula Muris data. Data shown are merged counts for all cells within the cardiomyocyte (CM), endothelial cell (EC), or fibroblast (FB) cell subsets, as annotated in Tabula Muris. Shown are CMF genes with a unspliced percentage\u00a0>=\u00a01% in cardiomyocytes. Marker genes for cell-subsets are shown in Supplementary file 1,\u00a0and unspliced/total ratios can be found in Supplementary file 2 (C) Overall expression shown as log2(1+CPM) for selected CMF genes (D) Unspliced/total fraction for selected CMF genes in cardiomyocyte, endothelial cells or fibroblast cell subsets within the heart. (E) Genome track for aligned Tabula Muris RNA-Seq data for cardiomyocyte, cardiac EC, lung EC or cardiac fibroblast populations. In upper panel is the full track for CMF gene Myom2, with inset showing a regions with intronic reads specific to cardiac ECs.\n\nFinally, to test in yet another way for evidence of contamination, we looked for the presence of immature, pre-spliced mRNAs of cardiac genes in ECs. We reasoned that contaminating RNAs from cardiomyocytes would originate largely from the cytosol, and therefore be primarily mature, spliced RNA. Velocyto (La Manno et al., 2018) was used to quantify spliced and unspliced gene counts for cardiomyocyte, EC, and fibroblast cell subsets as annotated in Tabula Muris. Within each subset, cells were merged, and the ratio of unspliced mRNAs/total mRNAs was calculated for each population (Supplementary file 2). We focused on cardiomyocyte genes with detectable unspliced mRNAs (>1%; a total of 53 genes). In this gene set, the median spliced percentages for cardiac ECs and fibroblasts cells were 5.4% and 4.2%, respectively, markedly higher than in cardiomyocytes (2.4%; Figure 2C). An example of this is shown in the RNA-seq track for Myom2 in Figure 2D, illustrating: (1) significant expression of these genes in cardiac ECs, but not in lung ECs and (2) importantly, significant presence of unspliced introns in ECs, but not in cardiomyocytes.\n\nOverall, these data demonstrate: (1) that EC expression of CMF genes is limited to cardiac ECs; (2) that cardiac fibroblast cells also express these genes but much less frequently than cardiac ECs; (3) that at any given time only a subset of cardiac ECs express only a subset of CMF genes, suggesting stochastic expression; and (4) that cardiac ECs express both spliced and unspliced RNAs from CMF genes, the latter at a higher frequency than cardiomyocytes, indicating cell-intrinsic expression.\n\n### CMF mRNAs are detectable in EC nuclei ex vivo and in situ in vivo\n\nThe results above strongly suggest, but fall shy of formally proving, that the presence of CMF mRNAs in cardiac ECs is not caused by contamination from cell-free RNA derived from cardiomyocytes, whose cytoplasmic volume is much larger than fibroblasts or ECs. To address this possibility in yet another way, we isolated EC nuclei, rather than whole cells, from mouse hearts, by fluorescent sorting from Cdh5-Cre/NuTRAP animals. To confirm specificity of the sorting strategy, nuclei were co-stained with PCM-1, known to specifically mark cardiomyocyte nuclei (Bergmann et al., 2011), which revealed no overlap between GFP+ (EC) and PCM-1+ (cardiomyocyte) nuclei populations (Figure 3A). Doublets were eliminated by FSC-A/FSC-H and as well as DAPI gating (2 n) (Figure 3\u2014figure supplement 1). Furthermore, the observed\u00a0~20% GFP+ (EC) nuclei and\u00a0~30% PCM-1+ (cardiomyocyte) nuclei matched previously estimated reports of cardiac cell content (Hu et al., 2018; Pinto et al., 2016). Quantitative PCR with RNA from GFP+ (EC) nuclei showed strong enrichment (~5-fold) of EC-specific transcripts (Pecam1, Gpihbp1), and depletion (10\u201315 fold) of fibroblast/pericyte-specific transcripts (Dpt, Cspg4, Pdgfrb). In contrast, CMF genes were depleted to a much lesser extent (2\u20133 fold; Tnnt2, Myh6, Myh7, Actc1) (Figure 3B,C). Hence, CMF gene expression persists in nuclei isolated from cardiac ECs.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/55730/elife-55730-fig3-v2.jpg)\n\n**Figure 3.:** (A) Representative flow cytometry plot of GFP expression from isolated nuclei from Cdh5/NuTRAP mice. About 20% of nuclei are GFP+ (endothelial), with no co-staining with the cardiomyocyte-specific nuclear marker PCM1. Gating scheme for identification of single nuclei shown in Figure 3\u2014figure supplement 1 (B) Relative expression (by qPCR) of nuclear RNA from isolated GFP+ (endothelial) or GFP- (non-endothelial) nuclei. Blue box: stromal genes; red box: CMF genes. (C) Average fold change of expression (GFP+/GFP-) in (B) for fibroblast or CMF genes. (D) Confocal images of heart sections. RNAScope probes for Cdh5 (endothelial) and CMF (Tnnt2) mRNA were co-stained with Pecam1 antibody. Shown are confocal slices of 0.96 \u03bcm thickness. Additional images are available Figure 3\u2014figure supplement 2.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55730/elife-55730-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Nuclei from NuTRAP animals were isolated from whole adult hearts as described in Methods, and isolated by florescence-activated cell sorted (FACS). Gating for single, GFP+ nuclei is shown as left to right. Nuclei were first identified on the basis of DAPI staining to remove debris and 4 n nuclei, and doublets removed by FSC-A/FSC-H gating. FSC-A/SSC-A used to remove any remaining debris, and GFP+ gate used to identify endothelial nuclei.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/55730/elife-55730-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A\u2013B) Adult mouse cardiac sections were co-stained for Pecam1 (CD31) protein, as well as Tnnt2 and Cdh5 RNAScope probes. DAPI used as a nuclear counterstain. Shown are 0.96\u00b5m-thick slices of a confocal z-stack (A). Co-localization of Cdh5 (green) and Tnnt2 (white mRNA). (B) Cytoplasmic Tnnt2 within a vessel marked by CD31 (red). (C) Nuclear localization of Tnnt2 (red) in endothelial nuclei identified by Cdh5 (green). Right panel shows Tnnt2- endothelial cells and cardiomyocytes (CM) for comparison, as well as Tnnt2-Cdh5- cells. (D) Quantification of percent of Cdh5+ nuclei with Tnnt2. Comparison to Tabula Muris single-cell RNASeq.\n\nTissue dissociation and nuclear fluorescent sorting could, in principle, aberrantly activate expression of CMF genes in EC nuclei. To rule out this potential artifact of nuclear isolation, we used RNAscope to directly visualize CMF RNA within cardiac EC nuclei in situ in intact hearts. Using confocal imaging, we found co-localization of Tnnt2 RNA within ECs in the heart, as identified by Pecam1 (CD31) antibody staining (Figure 3D;\u00a0Figure 3\u2014figure supplement 2A\u2013B). Quantification of nuclei with co-localization of both Cdh5 and Tnnt2 RNA showed presence of Tnnt2 in\u00a0~12% of endothelial (Cdh5+) cell nuclei (Figure 3\u2014figure supplement 2C\u2013D), a proportion that is similar to the number of ECs in Tabula Muris that are Tnnt2 positive (Figure 2A). Altogether these results unambiguously show that expression of CMF genes in ECs is not due to contamination from parenchymal cells, and strongly suggest that expression of CMF genes stems from direct expression from EC chromatin.\n\n### Cardiac ECs maintain open chromatin at CMF genes\n\nThe presence of CMF transcripts in ECs, if not technical contamination, could potentially reflect a biologic paracrine contribution of cardiomyocyte-derived RNAs transmitted to ECs via, for\u00a0example, exosomes or microvesicles, as previously described in non-cardiac contexts (Skog et al., 2008; Valadi et al., 2007). On the other hand, our single-cell analysis, RNAScope and nuclear sorting data strongly suggested EC-intrinsic transcription of CMF genes. To distinguish these possibilities, we used ATAC-Seq to determine directly whether cardiac ECs have open chromatin at CMF genes, reasoning that if there is EC-intrinsic expression, there should also be some detectable open chromatin at cardiomyocyte-specific genes. We performed genome-wide ATAC-Seq (Buenrostro et al., 2015) on nuclei sorted from Cdh5-Cre/NuTRAP animals, and compared GFP positive (endothelial) and GFP negative (non-endothelial) populations (Figure 4A\u2013C). We then quantified average enrichment at the transcriptional start sites (TSSs) of endothelial, fibroblast, and cardiomyocyte marker gene sets (Figure 4B), as well as per-gene comparison of read density at the TSSs of GFP+ (EC) vs GFP- (non-EC) samples (Figure 4C). As expected, EC nuclei had an open chromatin signature at EC-specific genes (Figure 4A: Erg, Cdh5, Gphibp1, Egfl7; Figure 4B green line; and Figure 4C, green circles), and markedly reduced open chromatin signature at fibroblast genes (Figure 4A: Dpt, Cspg4, Pdgfrb, Col6a2; Figure 4B blue line; and Figure 4C blue triangles). Strikingly, however, the chromatin of CMF genes was quantitatively as open in ECs as in cardiomyocyte nuclei (Figure 4A: Tnni3, Tnnt2, Tnnc1, Myh6; Figure 4B red line; and Figure 4C, red diamonds). In addition to accessibility at promoter-TSS regions, most peaks associated with enhancer regions of cardiomyocyte marker genes (intergenic and intronic) were also seen in cardiac ECs (Figure 4\u2014figure supplement 1A\u2013B) We did identify a small number of enhancer regions that were unique to the non-EC nuclei, including an enhancer region upstream of the gene encoding the cardiac transcription factor Nkx2-5, and an intronic enhancer within the Dmd gene (Figure 4\u2014figure supplement 1C). These data demonstrate that cardiac ECs have open chromatin at CMF genes, and exhibit quantitatively similar accessibility at these genes at both TSS and enhancer regions as the underlying parenchyma.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/55730/elife-55730-fig4-v2.jpg)\n\n**Figure 4.:** (A) Representative ATACSeq gene tracks for cardiomyocyte, fibroblast, or endothelial cell genes in isolated GFP+ (endothelial, in red) or GFP- (non-endothelial, in black) nuclei. (B) Genome-wide open chromatin at the transcriptional start sites (TSSs) of cardiomyocyte, stromal, or endothelial cell genes in GFP- (non-endothelial) and GFP+ (endothelial) nuclei. Note chromatin of cardiomyocyte genes (red) is as open in ECs (GFP+) as non-ECs (GFP-). (C) Comparison of accessibility in GFP- vs GFP+ nuclei at TSS peaks (+/- 250 bp) for EC genes (green), cardiomyocyte genes (red), and stromal genes (blue). Note again that chromatin of cardiomyocyte genes is as open in EC as non-EC nuclei. (D) Motif enrichment analysis of ATACSeq peaks unique to non-endothelial (GFP-) nuclei (top), unique to endothelial (GFP+) nuclei (bottom), and shared peaks (middle). Right panels: gene ontology (GO) analysis of genes within 2 kb of each peak set. Full statistics and GO annotations for peak regions shown in Supplementary file 3. Additional analyses shown in Figure 4\u2014figure supplement 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55730/elife-55730-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Comparative accessibility (Log2RPKM) of all peaks associated with CMF genes in the non-EC (GFP-) nuclei of NuTRAP hearts vs cardiac and lung endothelial cells (GFP+). All peaks highlighted in red are differentially accessible between GFP- and GFP+ nuclei from heart, as calculated by DiffBind (DESeq2). (B) Annotation of all cardiac endothelial cell peaks vs those that are differentially accessible between GFP- and GFP+. Differentially accessible regions are primarily in enhancer (intergenic and intronic) regions rather than transcriptional start sites. (C) Representative tracks of peaks with differential accessibility between GFP- and GFP+ nuclei from heart. As shown in (B), differential peaks are found in enhancer regions of CMF genes.\n\nHOMER analysis (Heinz et al., 2010) revealed that ATAC-seq peaks unique to GFP+ (EC) nuclei (Supplementary file 3) were enriched for known endothelial transcription factor binding sites (ERG, ETS), consistent with their endothelial identity. Genes within 2 kb of GFP+ unique peaks showed GO enrichment for vascular development-associated terms (Figure 4D, lower panel). In parallel, peaks unique to GFP- (non-EC) nuclei were enriched for the smooth muscle and cardiac fibroblast transcription factor TCF21, as well as genes associated with neurogenesis and extracellular matrix organization (upper panel). Most interestingly, however, peaks that overlapped between GFP- and GFP+ nuclei (middle panel) were significantly associated with genes of cardiomyocyte development and contraction, and HOMER analysis showed enrichment for the cardiac transcription factors GATA4 and MEF2. These unbiased analyses thus strongly support genome-wide open chromatin at CMF genes in both ECs and cardiomyocytes.\n\nFinally, we compared these epigenetic data with heart EC-specific genes (as opposed to ECs from other organs) identified in previous studies. We focused on genes with\u00a0>2 fold increased expression compared to brain or lung ECs in the data from Cleuren et al., and a baseline expression of at least 10 transcripts per million (TPM) in both that data set and ours (Figure 5A). Interestingly, not all of these cardiac EC-enriched genes revealed open chromatin (RPKM\u00a0<1.5 at the TSS), suggesting that these transcripts may in fact have origins outside the ECs. GO analysis of the genes with closed chromatin revealed largely fibroblast-like annotations (Figure 5B, left). In contrast, GO analysis of the genes with open chromatin (RPKM\u00a0>3 at the TSS) once again revealed strong enrichment for CMF genes, as well as metabolic genes related to handling of fatty acids, the primary fuel of cardiomyocytes (Figure 5B, right).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/55730/elife-55730-fig5-v2.jpg)\n\n**Figure 5.:** (A) Gene expression (data from Cleuren et al.; GSE138630) and gene accessibility of cardiac EC-enriched genes (with expression of at least 10 CPM, and twofold or higher expression compared with brain or lung endothelial cells) in cardiac endothelial (GFP+) nuclei. Blue: relatively close chromatin (Log2RPKM +/- 250 bp at TSS peaks\u00a0<3); red: relatively open chromatin (>3). (B) Representative tracks and gene ontology (GO) analysis of cardiac EC-enriched genes with closed (blue) or open (red) chromatin.\n\nIn summary, these data demonstrate that, while as expected cardiac ECs have open chromatin at EC-specific genes and closed chromatin at fibroblast cell-specific genes, they broadly share open chromatin regions with the cardiomyocytes that make up the underlying parenchyma.\n\n### Open chromatin and expression of CMF genes in ECs requires in vivo cues\n\nFinally, to determine whether open chromatin at CMF is an indelible property of cardiac ECs, or whether it requires active maintenance, we isolated primary cardiac or lung ECs and assayed open chromatin by ATAC-qPCR and ATAC-Seq after expansion in culture, that\u00a0is in the absence of local cues provided in vivo (Figure 6A). Chromatin at the EC-specific genes Erg and Cdh5 remained open during this time, consistent with maintenance of endothelial identity (Figure 6B). In sharp contrast, chromatin at CMF genes (Tnnt2, Myh6) completely closed within this time span, and had similar accessibility to freshly isolated lung endothelial nuclei (Figure 6C). Interestingly, accessibility at Pdgfrb, a pericyte/fibroblast marker, was increased in culture, although Cspg4 and Tcf21 remained closed (Figure 6D), likely reflecting some endothelial-to-mesenchymal transition occurring under culture conditions. Similarly, ATAC-Seq of cultured cardiac ECs showed that accessibility at CMF genes was overall reduced compared to endothelial or fibroblast genes (Figure 6E). Annotation of ATACSeq peaks (Figure 6F; Supplementary file 4) showed an enrichment for in genes involved with metabolic processes, signal transduction, and cell differentiation in newly opened peaks. In contrast, peaks that closed in culture were primarily associated with CMF terms, including heart development and muscle contraction. We conclude that open chromatin at CMF genes in cardiac ECs in vivo requires active maintenance by the surrounding parenchyma.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/55730/elife-55730-fig6-v2.jpg)\n\n**Figure 6.:** (A) Experimental scheme. N\u00a0=\u00a02\u20134 biological replicates. ATAC-qPCR and ATAC-Seq was performed on freshly isolated endothelial nuclei, or cultured endothelial cells from heart or lung. qPCR regions were identified based on peaks identified in sequencing data. (B) Relative accessibility (compared to housekeeping genes, Rpsa and Tbp of endothelial cell genes, Cdh5 and Erg). (C) Relative accessibility of cardiomyocyte genes (Tnnt2, Myh6). (D) Relative accessibility of fibroblast-signature genes (Pdgfrb, Cspg4, Tcf21) (E) Representative TSS enrichment plot of cultured cardiac endothelial cells. Enrichment shown for cardiomyocyte-specific, endothelial or fibroblast specific gene sets (gene sets previously identified in Supplementary file 1). (F) GO enrichment for peaks that open (left) or close (right) in cultured cardiac endothelial cells vs freshly isolated. Complete statistical analyses by DESEQ2 and GO annotations shown in Supplementary file 4.\n\n## Discussion\n\nOverall, we show here that cardiac ECs possess transcriptional and epigenetic signatures of cardiomyocytes, but not other cell types within the heart. Moreover, the presence of open chromatin at cardiomyocyte-specific genes, as well as the nuclear expression of these genes in ECs, demonstrates significant EC-intrinsic transcriptional contribution of these mRNAs. A gene expression signature in ECs that mirrors the underlying parenchyma is also apparent in public datasets from other studies, and was recently reported in the literature for the first time by Jambusaria et al. These studies, however, left open the question of the mechanism by which these mRNAs were to be found in cardiac ECs. In numerous unofficial discussions at scientific meetings, the observation has in general been ascribed to either technical contamination, or to cardiomyocyte-derived mRNA transferring to ECs via extracellular vesicles or other paracrine mechanism. Our results, in contrast, demonstrate that these CMF mRNAs originate in ECs themselves, via active maintenance of open chromatin and transcription. It must be noted that the functional consequence of this shared signature, and whether it results in translation of CMF transcripts, remains to be determined.\n\nThe notion that ECs actively express CMF genes has been contentious. However, at this point, the arguments against contamination as an explanation for the presence of CMF mRNAs in cardiac ECs are numerous and compelling:\n\nInterestingly, we find that the expression of CMF genes, including immature, unspliced transcripts, in ECs is detectable in only a subset of cells (~60%), and that in general only 1\u20132 genes are detectable, and not always the same ones. In contrast, the chromatin at these genes, although evaluated only in bulk, appears to be as open as that of cardiomyocytes. These observations suggest that chromatin is maintained open at these genes in all cardiac ECs, but that rates of transcription are relatively low and stochastic, and that there may not be a defined subset of ECs that express CMF genes. We hypothesize that this fully open chromatin at CMF genes in cardiac ECs may reflect shared developmental origin between cardiomyocytes and ECs. During development, cardiac progenitors that express Nkx2-5 (primary heart field) or Isl1 (secondary heart field) give rise to both ECs and cardiomyocytes (Jia et al., 2018; Moretti et al., 2006; Wu et al., 2006). Thus, accessibility of chromatin at cardiomyocyte-specific genes may be due to epigenetic memory of this shared developmental origin.\n\nAn outstanding question remains as to the role of the cardiomyocyte epigenetic and transcriptional signature on endothelial function. Recent studies point towards a potential role in EC maturation. Both developmental and adult cardiomyocyte and ECs share expression of the transcription factor MEF2C, the number one predicted binding site in our analysis of open chromatin peaks shared between cardiac ECs and cardiomyocytes. Endothelial-specific MEF2C has been shown to regulate angiogenesis (Sacilotto et al., 2016), cell integrity and survival\u00a0(Potthoff and Olson, 2007), as well as response to inflammation (Xu et al., 2015). GATA4, whose motif is highly enriched between cardiac ECs and cardiomyocytes, is expressed by cardiac progenitors and in adult cardiomyocytes, but almost undetectable in ECs. Nonetheless, a recent study Maliken et al., 2018 demonstrated that inducible knockdown of GATA4 in adult ECs resulted in a less mature, PECAM1-\u2018low\u2019 EC phenotype, including hyperproliferation, reduced differentiation, and impaired tube formation capacity. Although not highlighted in the main figures, the supplementary data from this study reveals that expression of CMF genes, including Myh6, Myl7, Tnnt2 and Sln, are significantly downregulated (25\u20131.5 fold) upon Gata4 knockdown. These studies, which show that loss of cardiomyocyte transcription factors results in EC \u2018immaturity\u2019, are consistent with our observation that cardiomyocyte-specific gene accessibility is lost in cardiac ECs upon culture. We hypothesize that perhaps cardiomyocyte transcription factors, such as GATA4 and MEF2, are responsible for maintaining the open chromatin signature of CMF genes within ECs in the heart, and that CMF gene expression plays a role in cardiac EC maturity.\n\nIn summary, we demonstrate here that cardiac ECs maintain open chromatin and active transcription at a number of myofibrillar genes thought to be uniquely expressed in cardiomyocytes. This shared chromatin accessibility landscape is likely maintained by paracrine cues in vivo, and likely serves to maintain the unique phenotype of cardiac ECs.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>B6;129S6-Gt(ROSA)26Sortm2(CAG-NuTRAP)Evdr/J</td>\n      <td>Cell Rep. 2017 Jan 24; 18(4): 1048\u20131061.</td>\n      <td>NuTRAP</td>\n      <td>https://www.jax.org/strain/029899</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>B6;129-Tg(Cdh5-cre)1Spe/J</td>\n      <td>JAX strain 017968</td>\n      <td>Cdh5-Cre, VE-Cadherin-CRE</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Pecam1 antibody; Rat monclonal</td>\n      <td>BD Pharmigen</td>\n      <td>Cat# 558736</td>\n      <td>(1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Pcm1; Rabbit polyclonal</td>\n      <td>Sigma</td>\n      <td>Cat# HPA023370</td>\n      <td>(1:250)</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>fastp</td>\n      <td>Chen et al., 2018</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Bowtie2</td>\n      <td>Langmead and Salzberg, 2012</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Genrich</td>\n      <td>https://github.com/jsh58/Genrich</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Picard Tools</td>\n      <td>http://broadinstitute.github.io/picard/</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>samtools</td>\n      <td>Li et al., 2009</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>STAR</td>\n      <td>Dobin, 2013</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Seurat</td>\n      <td>Stuart et al., 2019</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>R</td>\n      <td>https://www.r-project.org/</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>DiffBind</td>\n      <td>Ross-Innes et al., 2012</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Deeptools</td>\n      <td>Ram\u00edrez et al., 2016</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Homer</td>\n      <td>Heinz et al., 2010</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Velocyto</td>\n      <td>La Manno et al., 2018</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>DAPI stain</td>\n      <td>Molecular Probes</td>\n      <td></td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>RNAscope Probe- Mm-Tnnt2-C3</td>\n      <td>ACD Bio</td>\n      <td>Cat# 418681-C3</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>RNAscope Probe- Mm-Cdh5-C2</td>\n      <td>ACDBio</td>\n      <td>Cat# 312531-C2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>RNAscope Multiplex Fluorescent v2 Assay</td>\n      <td>ACD Bio</td>\n      <td>Cat# 323136</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Illumina Tagment DNA Enzyme and Buffer</td>\n      <td>Illumina</td>\n      <td>Cat#:20034197</td>\n      <td>1.25 uL of enzyme used per 50,000 nuclei for transposition</td>\n    </tr>\n  </tbody>\n</table>\n\n### Nuclei isolation\n\nNuclei were isolated from whole heart tissue following the method outlined in Roh et al., 2017. In brief, whole hearts were dounced in 10 mL nuclear preparation buffer (NPB; 10 mM HEPES (pH7.5, 1.5 mM MgCl, 10 mM KCl, 250 mM Sucrose, 0.1% IGEPAL-630/NP-40, 0.2 mM DTT, cOmplete mini EDTA-free protease inhibitor Roche #11836170001)). Homogenates were filtered through 40 \u00b5M cell strainers, and spun at 500G for 5 min. Nuclear pellets were washed 1X in NPB buffer, and then resuspended in 2 mL nuclear sort buffer (NSB; 10 mM Tris pH 7.5, 40 mM NaCl, 90 mM KCl, 2 mM EDTA, 0.5 mM EGTA, 0.1% IGEPAL-630/NP-40, 0.2 mM DTT, cOmplete mini EDTA-free protease inhibitor) and passed through a filter-top FACS tube.\n\n### TRAP RNA isolation\n\nTranslating Ribosome Affinity Purification (TRAP) was performed as described in Roh, et al. In brief,\u00a0~50 mg of fresh heart tissue was dounce homogenized in 6 mL of homogenization buffer (50 mM Tris pH7.5, 12 mM MGCl,, 100 mM KCl, 1% IGEPAL-630/NP-40, 100 \u00b5g/mL cycloheximide, 1 mg/mL sodium heparin, 2 mM DTT, 0.2units/\u00b5L RNAse inhibitor, 1X cOmplate EDTA-free protease Inhibitor). Samples were centrifuged at 13,000 RPM for 10 min to remove cell debris. The supernatant was then collected and incubated with anti-GFP antibody (5 \u00b5g/mL, Abcam ab290) for 1 hr at 4\u00b0C. Protein G dynabeads were washed twice in low-salt wash buffer (50 mM Tris, pH 7.5; 12 mM MgCl2; 100 mM KCl; 1% NP-40; 100 \u03bcg/ml cycloheximide; 2 mM DTT), added to the homogenates with antibody, and subsequently incubated for 30 min. Dynabeads with immunoprecipitates were washed three times in high-salt wash buffer (50 mM Tris, pH 7.5; 12 mM MgCl2; 300 mM KCl; 1% NP-40; 100 \u03bcg/ml cycloheximide; 2 mM DTT). Following the last wash, RLT buffer with \u03b2-mercaptoethanol was added to dynabeads, and RNA was extracted using Qiagen Micro RNeasy kit according to the manufacturer\u2019s instructions. For input or supernatant RNA, 5% of total homogenates or IP supernatants unbound to beads (respectively) were mixed with TRIzol and processed according to the manufacturer\u2019s instructions to extract total RNA. All RNA was further cleaned using AMPure bead purification to remove residual salts, and RNA integrity was analyzed by Agilent Bioanalyzer.\n\n### Flow cytometry and sorting\n\nEC nuclei were isolated by florescence activated cell sorting (FACs) on a BD FACS Aria II. Single, non-dividing nuclei were identified by selecting on DAPI for 2 n, followed by FSC-A/FSC-H for doublet removal, and FSC/SSC. From this subset, GFP+ nuclei were selected. GFP positive and negative nuclei were sorted directly into ATAC-Seq lysis buffer (Buenrostro, et al; 10 mM TrisCl, 10 mM NaCl, 3 mM MgCl, 0.1% IGEPAl-630/NP-40) in eppendorf tubes for further processing.\n\n### ATAC-Seq\n\nSorted nuclei were spun at 500G at 4C for 10 min. ATACSeq reactions were prepared from nuclei according to Buenrostro, et al, using Illumina TDE1 tagment DNA Enzyme and TD buffer (#15027865, 15027866). Libraries were amplified for a total of 13\u201317 cycles following transposition. Libraries were cleaned to remove very large (>1000) or very small (<50 bp) DNA sequences using AMPure bead cleanup. Library quality was assessed by Bioanalyzer.\n\n### RNA-Seq\n\nFor RNASeq,\u00a0~25 ng of total RNA was using the NuGEN Ovation V2 kit for cDNA amplification, followed by NEBNext Ultra DNA Library Prep Kit for Illumina for library construction, according to manufacturer\u2019s instructions. A Covaris E220 was used to sonicate cDNA to\u00a0~200 bp fragments prior to library construction. Library quality was assessed by Agilent Bioanalyzer. Using a NextSeq 550 sequencer,\u00a075 bp single-end sequencing was performed. Libraries were aligned and quantified using STAR v2.7.0 (Dobin et al., 2013). The mouse reference genome was generated using GRCm38, and gene counts quantified using annotations from GRCm38.99. Parameters used were\u00a0--runThreadN 8; --genomeDir GRCm38; --sjdbGTFFile GRCm38.99; --sjdbOverHang 100; --outSAMtype BAM SortedByCoordinate; --quantMode GeneCounts.\n\n### ATACSeq\n\nATACSeq libraries were sequenced on a NextSeq 550 using 35 \u00d7 2 reads. Raw data was cleaned and trimmed using fastp\u00a0(Chen et al., 2018), and mapped to the mm10 mouse genome using bowtie2, v 2.3.4 (Langmead and Salzberg, 2012). Maximum insert size was set to 2000 (-X 2000). Mapped reads were converted to bam and filtered for quality using samtools (Li et al., 2009), with the following parameters: samtools view -h -F 4 -q 10 -bS. Duplicates were removed with Picard (http://broadinstitute.github.io/picard/), using MarkDuplicates (-REMOVE_DUPLICATES True). Libraries were then downsampled to 50 million reads, and Genrich (https://github.com/jsh58/Genrich) was used to call peaks on non-mitochondrial reads using ATAC-seq mode. For peak calling, files were sorted by name using samtools, and blacklist regions were derived from ENCODE. Both replicates were used for consenses peak claling. Parameters for Genrich used were -j -v -y -r -e chrM,chrY -E $BLACKLIST -k OUTFILE.bedgraphish -t REPLICATE1.BAM,REPLICATE2.BAM -o OUTFILE.narrowPeak. For genome browser visualization, bigwig files (.bw) were generated by text parsing to convert. bedgraphish outputs to. bedgraph, and converted to bigwig format bedGraphtoBigWig (http://genome.ucsc.edu/).\n\nFinally, differential peak analysis was performed using Diffbind (Ross-Innes et al., 2012) with peaks generated from Genrich. Deeptools (Ram\u00edrez et al., 2016) was used to generate heatmap and profile plots, and Homer\u00a0(Heinz et al., 2010) for transcription factor motif analysis and peak annotation.\n\n### Single-cell data analysis\n\nIn the mouse, in order to identify gene sets representative of endothelial, cardiomyocyte, or fibroblast cells within the heart, gene counts from SMART-Seq2 RNA-Seq were downloaded from Tabula Muris (https://figshare.com/articles/dataset/Single-cell_RNA-seq_data_from_Smart-seq2_sequencing_of_FACS_sorted_cells_v2_/5829687). Data was processed using Seurat v3. Cells were first filtered for number of unique genes (nFeature_RNA\u00a0>\u00a0200,<3000), and log normalized (normalization.method=\u201dLogNormalize\u2019, scale.factor\u00a0=\u00a010000). Data were then clustered by non-linear dimensional reduction (UMAP/tSNE) to identify cell type, using published RDS file to preserve clusters. Differentially expressed features (genes) were identified using with FindMarkers. The top 300 genes that were positively associated as markers of each cluster (that is, had increased rather than decreased expression) were used to generate cell-type specific gene lists. Marker gene lists and according statistics for each cell subset are shown in Supplementary file 1. To create bed files to generate enrichment tracks for ATACSeq, mitochondrial genes were removed from cell-type specific gene sets, since these genes are accessible in all cell types. The characteristic genes for each major cardiac cell type (cardiomyocyte, endothelial, fibroblast) were used for to analyze and compare accessibility of cell-type specific gene sets.\n\n### Velocyto\n\nTo quantify spliced and unspliced reads across cardiac cell populations, we analyzed BAM alignment files from Tabula Muris using Velocyto (La Manno et al., 2018). Cells within cardiomyocyte, endothelial, or fibroblast cell populations were selected using the published annotations in Tabula Muris. For higher coverage, we used the SMART-Seq2 data from the microwell experiments. Alignment was performed using STAR. Resulting BAM files were first processed using Velocyto.py with run_smart-seq2 settings to generate loom files for each population. Spliced and unspliced counts were extracted using the Veloctyo.R analysis pipeline, and summed on a per-gene basis across all cells within each population.\n\n### Primary mouse EC isolation\n\nECs were isolated from CDH5-Cre/NuTRAP animals from heart or lung as previously described (Sawada et al., 2008). In brief, tissues were minced, and digested in 2 mg/mL of collagenase I in DMEM for 20 min at 37\u00b0C. Cell suspensions were filtered through 40 \u00b5M filtered, and incubated with CD31-conjugated magnetic dynabeads for 1 hr at 4\u00b0C. Beads were washed on a magnetic column 8\u201310 times, and bead-bound cells were grown on gelatin coated tissue culture plates. For ATACSeq of isolated ECs, cells isolated from one animal (heart or lung) were passaged two\u00a0to\u00a0four times and grown to confluency for at least 2 days before transposition.\n\n### Immunohistochemistry and confocal imaging\n\nFor histology, hearts were prepared for paraffin embedding and sectioned. Samples were hybridized for Tnnt2 and Cdh5 RNAs using probes and target amplification by ACD (RNAScope Multiplex Florescent Assay v2 kit), and co-stained by for Pecam1 (Cd31) protein. Imaging was conducted by laser scanning confocal microscopy using a Zeiss LSM 710 Confocal microscope. Images were taken at 63X. Z-stacks were taken at 0.48 um apart. For representative images, three slices are merged and shown (final thickness 0.96 \u00b5m).\n\n### Statistics\n\nPair-wise comparisons were analyzed in Prism by two-tailed unpaired Student\u2019s t-test, and p<0.05 was considered statistically significant. For sequencing analysis, statistics were performed using the programs outlined above.\n",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "0c0b4fc1-f37a-41e5-8e59-d8e97e37ae4a",
+      "submission_id": "1d98c37e-7b74-4e06-afb1-419201b10043",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Victoria L Bautch, University of North Carolina, Chapel Hill United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.55730.sa1](https://doi.org/10.7554/eLife.55730.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nYour demonstration that myofibrillar genes are transcribed in cardiac endothelial cells using epigenetic, RNAseq and RNAscope/imaging criteria are appropriate for a Research Advance.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Cardiac endothelial cells maintain open chromatin and expression of cardiomyocyte myofibrillar genes\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Anna Akhmanova as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe editors have judged that your manuscript is of interest and potentially valuable to the field, but as described below, additional experiments are required before it is considered for publication. We would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is 'in revision at eLife'. Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nYucel and colleagues propose that cardiac endothelial cells (EC) have an epigenetic and transcriptional profile that partly mirrors that of cardiomyocytes. Specifically, the authors report the expression of cardiomyocyte myofibril genes (e.g., troponin, titin), which are present in cardiac endothelial cells but not in endothelial cells from other organs. The chromatin of these genes is in an \"open state\" , which appears to be dependent on the cardiac micro-environment. The authors speculate that this tissue-specific gene expression signature may reflect the developmental origin of cardiac endothelial cells. This work is provocative, and as such reviewers felt that more rigorous work is needed to support the conclusions.\n\nEssential revisions:\n\nEssential revisions focus primarily on rigorous experimentation to more unambiguously show that the \"cardiac gene expression signature\" is indeed cell-intrinsic to EC. It was pointed out that the presence of cardiomyocyte RNAs in the EC single-cell and ATAC seq data might be due to contamination, and that more rigorous data is needed to show in situ endothelial cell expression of cardiomyocyte genes unambiguously. There are also numerous instances of vague descriptions of approaches, methods and analysis that need to be improved. Essential points:\n\n1) Several reviewers were concerned with the possibility that cardiomyocyte RNAs could be represented in the single-cell datasets but not originate from endothelial cells. They suggested the possibility of cardiomyocyte-EC doublets, or cell-free RNA sticking to antibodies or beads, or to glycocalyx of the EC cells. They point out that the ATAC-seq data is on bulk RNA and so could be contaminated by some cardiomyocytes, and that only the most abundant cardiomyocyte RNAs seem to be expressed by EC and represented in the ATAC-seq data. It was difficult to evaluate the interpretation of the data because the negative population in the TRAP experiment is not clearly defined, and if whole heart tissue is open to contamination from cardiomyocytes. Therefore more rigorous experimentation is required, such as dual single-cell RNA and ATAC-seq to show that bona fide EC have epigenetic patterns suggestive of cardiomyocyte gene expression. It would also strengthen the data to do single-cell RNA seq analysis before and after RNAse treatment to evaluate potential capture of negatively charged RNA by positively charged EC glycocalyx. It was suggested that a better analysis of the epigenetic landscape of cardiac genes in EC would be informative \u2013 for example, the chromatin status of other cardiac genes not found in heart EC is of interest. What about epigenetic marks that indicate active transcription of genes? Are these marks found in genes like Tnni, Tnnt2, Tnnc1 an Myh6 when analyzed in cardiac endothelial cells? And why closed chromatin is found in active genes (Figure 5) is not well-explained.\n\n2) The RNA scope data was insufficient to determine whether the signals only originate from EC. This needs to be higher resolution and accompanied by antibody staining of EC-specific junction markers to clearly show EC cell borders. It was also suggested that antibodies to the cardiac proteins expressed by EC should be used with EC markers and high-resolution imaging, since the RNAs appear to be abundant (Figure 1).\n\n3) There are numerous places where the methodology is vague, and where approaches and analysis are poorly described or documented.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Cardiac endothelial cells maintain open chromatin and expression of cardiomyocyte myofibrillar genes\" for further consideration by eLife as a Research Advance. Your revised article has been reviewed by two peer reviewers and the evaluation has been overseen by Anna Akhmanova as the Senior Editor and a Reviewing Editor.\n\nThe manuscript has been significantly improved, but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\n1) The RNA scope data is much improved, but some concerns regarding specificity remain. Thus we request a Z-plane view of the CDH5/TNNT2 overlap from the RNA scope data \u2013 to document that the overlap extends to the Z plane. This should be doable from the images at hand.\n\n2) We ask that authors amend the Discussion to better reflect the idea that the work focuses on transcriptional and epigenetic regulation of myocardial genes in cardiac endothelial cells, and that protein translation/function remains an open question.\n",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "263b62ff-50f6-4c0f-b6c1-deabedab3269",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C1",
+      "claim": "Endothelial cells (ECs) are widely heterogenous depending on tissue and vascular localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Endothelial cells (ECs) are widely heterogenous depending on tissue and vascular localization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about endothelial cell heterogeneity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "40f5e85d-2a6a-49bc-9201-fe4727f10d79",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C2",
+      "claim": "Jambusaria et al. demonstrated that ECs in various tissues possess mRNA signatures of their underlying parenchyma.",
+      "claim_type": "EXPLICIT",
+      "source": "Jambusaria et al. recently demonstrated that ECs in various tissues surprisingly possess mRNA signatures of their underlying parenchyma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Jambusaria et al.'s work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "d1b15614-7cea-4c81-9302-5ad50d1c21b4",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C3",
+      "claim": "Cardiac ECs actively express cardiomyocyte myofibril (CMF) genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we use a combination of bulk RNASeq, single-cell RNASeq datasets, in situ mRNA hybridization, and most importantly ATAC-Seq of FACS-isolated nuclei, to show that cardiac ECs actively express cardiomyocyte myofibril (CMF) genes and have open chromatin at CMF gene promoters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple experimental approaches including RNASeq, single-cell RNASeq, in situ hybridization, and ATAC-Seq data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "456d5381-2c2f-48f9-8ede-f190ab29c06a",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C4",
+      "claim": "Cardiac ECs have open chromatin at CMF gene promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we use a combination of bulk RNASeq, single-cell RNASeq datasets, in situ mRNA hybridization, and most importantly ATAC-Seq of FACS-isolated nuclei, to show that cardiac ECs actively express cardiomyocyte myofibril (CMF) genes and have open chromatin at CMF gene promoters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ATAC-Seq data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "a2abedb6-7db3-45da-889e-0c641bc499e1",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C5",
+      "claim": "Open chromatin sites in cardiac ECs are enriched for sites targeted by cardiac transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "These open chromatin sites are enriched for sites targeted by cardiac transcription factors, and closed upon expansion of ECs in culture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by motif enrichment analysis of ATAC-Seq data showing enrichment for cardiac transcription factor binding sites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "3401f78d-a78d-4ea2-81aa-42667a4950b3",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C6",
+      "claim": "Open chromatin at CMF genes in cardiac ECs closes upon expansion of ECs in culture.",
+      "claim_type": "EXPLICIT",
+      "source": "These open chromatin sites are enriched for sites targeted by cardiac transcription factors, and closed upon expansion of ECs in culture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ATAC-Seq and ATAC-qPCR data comparing freshly isolated and cultured cardiac ECs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "077e54a0-f809-4583-a441-beb4e1b86b13",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C7",
+      "claim": "The expression of CMF genes in ECs is cell-autonomous and not a result of technical contamination or paracrine transfers of mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data demonstrate unambiguously that the expression of CMF genes in ECs is cell-autonomous, and not simply a result of technical contamination or paracrine transfers of mRNAs, and indicate that local cues in the heart in vivo unexpectedly maintain fully open chromatin in ECs at genes previously thought limited to cardiomyocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple lines of evidence including nuclear RNA isolation, in situ hybridization, unspliced RNA detection, and ATAC-Seq data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "9e600c79-b30c-4c27-ab7d-a46f3d5d419d",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C8",
+      "claim": "Local cues in the heart in vivo maintain fully open chromatin in ECs at genes previously thought limited to cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data demonstrate unambiguously that the expression of CMF genes in ECs is cell-autonomous, and not simply a result of technical contamination or paracrine transfers of mRNAs, and indicate that local cues in the heart in vivo unexpectedly maintain fully open chromatin in ECs at genes previously thought limited to cardiomyocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that chromatin closes upon culture, suggesting in vivo cues are required for maintenance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "eebe6e1b-74eb-4203-8ad4-ab4d45520c08",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C9",
+      "claim": "Endothelial cells are the most abundant non-blood cells in the body.",
+      "claim_type": "EXPLICIT",
+      "source": "Endothelial cells (ECs) are the most abundant non-blood cells in the body, and form the inner layer of all vessels in all organs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about endothelial cells.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "4e596c20-6839-4582-bbc2-eb1911d5ebb9",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C10",
+      "claim": "Endothelial cells form the inner layer of all vessels in all organs.",
+      "claim_type": "EXPLICIT",
+      "source": "Endothelial cells (ECs) are the most abundant non-blood cells in the body, and form the inner layer of all vessels in all organs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about endothelial cell anatomy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "9772959b-cdb7-4f5c-89ab-b0a85210d231",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C11",
+      "claim": "Extensive transcriptional and functional heterogeneity of ECs across tissue types, vascular localization, and developmental stage has been characterized in a number of studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this remarkable variability of function, extensive transcriptional and functional heterogeneity of ECs across tissue types, vascular localization (e.g. arterial, venous, or lymphatic), and developmental stage has been characterized in a number of studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references existing literature on EC heterogeneity.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "4d21eb8b-760a-4069-b370-1beb9592b86c",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C12",
+      "claim": "The chromatin landscape underlying EC heterogeneity remains poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the chromatin landscape underlying these differences remains poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "9a5e8d58-aabd-4ded-bb6f-ceebdceab92f",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C13",
+      "claim": "Numerous investigators have noted that cardiac ECs contain mRNAs that encode various myofibrillar proteins normally expressed in cardiomyocytes, including myosins, troponins, and titin.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, numerous investigators have noted anecdotally, in discussions at various meetings, that cardiac ECs contain mRNAs that encode various myofibrillar proteins normally expressed in cardiomyocytes, including myosins, troponins, and titin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references informal observations from the scientific community.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "6d6b336c-716c-4bbf-b7dd-75e9fc29489a",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C14",
+      "claim": "Jambusaria et al. collated EC-specific RNAseq datasets from heart, brain, and lung to show that ECs in these three tissues contain mRNAs normally ascribed to their respective underlying parenchyma.",
+      "claim_type": "EXPLICIT",
+      "source": "Most recently, Jambusaria et al. collated EC-specific RNAseq datasets from heart, brain, and lung, to formally show that ECs in these three tissues contain mRNAs normally ascribed to their respective underlying parenchyma (Jambusaria et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Jambusaria et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "989e5a16-07db-4867-bafe-6a589624aa26",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C15",
+      "claim": "Cardiac ECs originate from tri-potential precursor cells that differentiate to cardiomyocytes, smooth muscle cells, and ECs.",
+      "claim_type": "EXPLICIT",
+      "source": "In this context, it is relevant to note that cardiac ECs originate from tri-potential precursor cells that differentiate to cardiomyocytes, smooth muscle cells, and ECs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cardiac development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "381d047f-a1ad-4ec2-8c95-b5296349d777",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C16",
+      "claim": "RNASeq from NuTRAP-tagged cardiac ECs showed enrichment of known EC-specific genes.",
+      "claim_type": "EXPLICIT",
+      "source": "RNASeq from NuTRAP-tagged cardiac ECs showed, as expected, enrichment of known EC-specific genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNASeq data from the NuTRAP system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "85cfcc7c-14d6-4712-802e-f3932685988f",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C17",
+      "claim": "CMF mRNAs were amongst the highest expressed genes in cardiac ECs, although depleted compared to the non-endothelial fraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, however, we also found significant contribution of mRNAs from cardiomyocyte myofibril (CMF) genes which, although depleted compared to the non-endothelial fraction, were still amongst the highest expressed genes in cardiac ECs (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNASeq data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "d9371177-5086-45e3-bcf0-7c84c8b7e817",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C18",
+      "claim": "Endothelial and non-endothelial heart expression of highly expressed genes were only poorly correlated (0.216).",
+      "claim_type": "EXPLICIT",
+      "source": "Endothelial and non-endothelial heart expression of highly expressed genes were only poorly correlated (0.216), suggesting that the presence of CMF mRNAs is not solely due to contamination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Kendall-Tau rank-order analysis of RNASeq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "b6bb44ba-0e1a-4589-81bd-381d43862fa2",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C19",
+      "claim": "The poor correlation between endothelial and non-endothelial heart expression suggests that the presence of CMF mRNAs is not solely due to contamination.",
+      "claim_type": "EXPLICIT",
+      "source": "Endothelial and non-endothelial heart expression of highly expressed genes were only poorly correlated (0.216), suggesting that the presence of CMF mRNAs is not solely due to contamination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the correlation analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "fb741a27-06e9-4432-aae0-0bd0d2bd7426",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C20",
+      "claim": "Expression of CMF genes is enriched in ECs from the heart compared to other tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the expression of these genes was limited to heart ECs, and not seen in translatomes from ECs in other organs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analysis of multiple published datasets showing tissue-specific expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "0d99f608-3299-4d0f-88e0-e2ccc2f32573",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C21",
+      "claim": "Kendall Tau rank analysis of the expression of the top 300 highest expressed genes in ECs vs the total heart translatome showed low correlation (0.05\u20130.28).",
+      "claim_type": "EXPLICIT",
+      "source": "Kendall Tau rank analysis of the expression of the top 300 highest expressed genes (which included CMF genes) in ECs vs the total heart translatome again showed low correlation (0.05\u20130.28, Figure 1C), casting doubts on the notion that CMF mRNAs in ECs originate from contaminating cardiomyocyte-derived mRNAs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Kendall Tau analysis shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "48359eaf-9a8d-4f65-aa21-987575be3497",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C22",
+      "claim": "Low correlation between EC and total heart translatome casts doubts on the notion that CMF mRNAs in ECs originate from contaminating cardiomyocyte-derived mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Kendall Tau rank analysis of the expression of the top 300 highest expressed genes (which included CMF genes) in ECs vs the total heart translatome again showed low correlation (0.05\u20130.28, Figure 1C), casting doubts on the notion that CMF mRNAs in ECs originate from contaminating cardiomyocyte-derived mRNAs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the correlation analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "6de3363e-a594-4c69-89f9-2256b4be4344",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C23",
+      "claim": "Multidimensional scaling showed that ECs cluster closer to their tissue of origin than to other ECs, particularly in the heart.",
+      "claim_type": "EXPLICIT",
+      "source": "Multidimensional scaling of these data showed that ECs surprisingly cluster closer to their tissue of origin than to other ECs, and this was particularly true in the heart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multidimensional scaling analysis shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "341ce024-b62a-450d-bf2a-b65610ba2455",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C24",
+      "claim": "CMF gene expression in ECs is unique to cardiac ECs.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, analyses of these datasets demonstrate that CMF gene expression in ECs: (1) is unique to cardiac ECs; (2) is generally limited to CMF genes and not to other genes highly expressed in cardiomyocytes such as mitochondrial genes; and (3) has been detected by numerous previous studies, including most recently Jambusaria et al.; and (4) is unlikely to be caused solely by contamination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analysis of multiple published datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "be071a7b-2121-4ea7-8a8d-64468b6a4a41",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C25",
+      "claim": "CMF gene expression in ECs is generally limited to CMF genes and not to other genes highly expressed in cardiomyocytes such as mitochondrial genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, analyses of these datasets demonstrate that CMF gene expression in ECs: (1) is unique to cardiac ECs; (2) is generally limited to CMF genes and not to other genes highly expressed in cardiomyocytes such as mitochondrial genes; and (3) has been detected by numerous previous studies, including most recently Jambusaria et al.; and (4) is unlikely to be caused solely by contamination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analysis of gene expression patterns in multiple datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "9cdfc3ee-96e0-4aef-bc0c-6c3ddd946cdb",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C26",
+      "claim": "CMF gene expression in ECs has been detected by numerous previous studies, including most recently Jambusaria et al.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, analyses of these datasets demonstrate that CMF gene expression in ECs: (1) is unique to cardiac ECs; (2) is generally limited to CMF genes and not to other genes highly expressed in cardiomyocytes such as mitochondrial genes; and (3) has been detected by numerous previous studies, including most recently Jambusaria et al.; and (4) is unlikely to be caused solely by contamination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references multiple published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "850aaffb-be27-4891-aaad-38050f93669a",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C27",
+      "claim": "CMF gene expression in ECs is unlikely to be caused solely by contamination.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, analyses of these datasets demonstrate that CMF gene expression in ECs: (1) is unique to cardiac ECs; (2) is generally limited to CMF genes and not to other genes highly expressed in cardiomyocytes such as mitochondrial genes; and (3) has been detected by numerous previous studies, including most recently Jambusaria et al.; and (4) is unlikely to be caused solely by contamination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from multiple lines of evidence including correlation analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "a6ded889-e8c8-4402-88c4-8f8765a261fc",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C28",
+      "claim": "59.3% of all cardiac ECs expressed at least one of the 15 CMF genes.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 59.3% of all cardiac ECs expressed at least one of the 15 CMF genes, 1.75-fold more often than cardiac fibroblasts, and about five times more often than lung ECs (which were driven primarily by one gene, Myl4; Figure 2A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by single-cell RNASeq analysis shown in Figure 2A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "d1ed202d-ec27-4785-992e-3fff5f6103bc",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C29",
+      "claim": "Cardiac ECs express CMF genes 1.75-fold more often than cardiac fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 59.3% of all cardiac ECs expressed at least one of the 15 CMF genes, 1.75-fold more often than cardiac fibroblasts, and about five times more often than lung ECs (which were driven primarily by one gene, Myl4; Figure 2A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by single-cell RNASeq analysis shown in Figure 2A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "6fab1df2-5f73-4acc-a01d-b68519c4ca8c",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C30",
+      "claim": "Cardiac ECs express CMF genes about five times more often than lung ECs.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 59.3% of all cardiac ECs expressed at least one of the 15 CMF genes, 1.75-fold more often than cardiac fibroblasts, and about five times more often than lung ECs (which were driven primarily by one gene, Myl4; Figure 2A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by single-cell RNASeq analysis shown in Figure 2A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "c679c6d8-a32c-406d-85a6-227c9476ffe5",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C31",
+      "claim": "The majority of CMF-expressing ECs only showed expression of one or two genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of CMF-expressing ECs only showed expression of one or two genes (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by single-cell RNASeq analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "c1e8eed5-dc8b-4ac6-9731-dd74848a9235",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C32",
+      "claim": "The distribution of CMF gene expression suggests that expression is not being driven by cardiomyocytes misclassified as ECs, or by EC/cardiomyocyte doublets.",
+      "claim_type": "EXPLICIT",
+      "source": "This distribution, as opposed to one subpopulation of cells expressing all CMF genes, suggests that expression is not being driven by cardiomyocytes misclassified as ECs, or by EC/cardiomyocyte doublets, again arguing against contamination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the pattern of gene expression observed in single-cell data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "a52133b1-e460-4e23-8fe7-5c7af0774983",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C33",
+      "claim": "The median unspliced percentages for cardiac ECs and fibroblasts cells were 5.4% and 4.2%, respectively, markedly higher than in cardiomyocytes (2.4%).",
+      "claim_type": "EXPLICIT",
+      "source": "In this gene set, the median spliced percentages for cardiac ECs and fibroblasts cells were 5.4% and 4.2%, respectively, markedly higher than in cardiomyocytes (2.4%; Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by analysis of spliced and unspliced transcripts shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "6bb5c162-838c-4e5d-aaa7-acd783270052",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C34",
+      "claim": "Cardiac ECs express both spliced and unspliced RNAs from CMF genes, the latter at a higher frequency than cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these data demonstrate: (1) that EC expression of CMF genes is limited to cardiac ECs; (2) that cardiac fibroblast cells also express these genes but much less frequently than cardiac ECs; (3) that at any given time only a subset of cardiac ECs express only a subset of CMF genes, suggesting stochastic expression; and (4) that cardiac ECs express both spliced and unspliced RNAs from CMF genes, the latter at a higher frequency than cardiomyocytes, indicating cell-intrinsic expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Velocyto analysis of spliced and unspliced transcripts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "7dfee390-bd87-4bc6-9443-8dcca27f502d",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C35",
+      "claim": "The presence of unspliced RNAs at higher frequency in cardiac ECs than cardiomyocytes indicates cell-intrinsic expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these data demonstrate: (1) that EC expression of CMF genes is limited to cardiac ECs; (2) that cardiac fibroblast cells also express these genes but much less frequently than cardiac ECs; (3) that at any given time only a subset of cardiac ECs express only a subset of CMF genes, suggesting stochastic expression; and (4) that cardiac ECs express both spliced and unspliced RNAs from CMF genes, the latter at a higher frequency than cardiomyocytes, indicating cell-intrinsic expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation of unspliced transcripts in ECs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "e8c187ee-faa9-48ef-823d-2c79d072a8d0",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C36",
+      "claim": "At any given time only a subset of cardiac ECs express only a subset of CMF genes, suggesting stochastic expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these data demonstrate: (1) that EC expression of CMF genes is limited to cardiac ECs; (2) that cardiac fibroblast cells also express these genes but much less frequently than cardiac ECs; (3) that at any given time only a subset of cardiac ECs express only a subset of CMF genes, suggesting stochastic expression; and (4) that cardiac ECs express both spliced and unspliced RNAs from CMF genes, the latter at a higher frequency than cardiomyocytes, indicating cell-intrinsic expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from single-cell RNASeq data showing variable expression patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "373e92eb-4bbb-4700-bd90-c23acded4501",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C37",
+      "claim": "Cardiac fibroblast cells also express CMF genes but much less frequently than cardiac ECs.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these data demonstrate: (1) that EC expression of CMF genes is limited to cardiac ECs; (2) that cardiac fibroblast cells also express these genes but much less frequently than cardiac ECs; (3) that at any given time only a subset of cardiac ECs express only a subset of CMF genes, suggesting stochastic expression; and (4) that cardiac ECs express both spliced and unspliced RNAs from CMF genes, the latter at a higher frequency than cardiomyocytes, indicating cell-intrinsic expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by single-cell RNASeq analysis comparing different cardiac cell types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "29670b18-7dc7-4e8e-a4fa-6e563595c3a2",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C38",
+      "claim": "About 20% of nuclei from Cdh5-Cre/NuTRAP animals are GFP+ (endothelial).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the observed ~20% GFP+ (EC) nuclei and ~30% PCM-1+ (cardiomyocyte) nuclei matched previously estimated reports of cardiac cell content (Hu et al., 2018; Pinto et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by flow cytometry data and matches previously published estimates.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "74d1f23c-491a-4866-9c3e-bb711261f2f3",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C39",
+      "claim": "About 30% of nuclei from Cdh5-Cre/NuTRAP animals are PCM-1+ (cardiomyocyte).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the observed ~20% GFP+ (EC) nuclei and ~30% PCM-1+ (cardiomyocyte) nuclei matched previously estimated reports of cardiac cell content (Hu et al., 2018; Pinto et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by flow cytometry data and matches previously published estimates.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "057467da-2288-4a27-9da2-c66c31b7d909",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C40",
+      "claim": "There is no overlap between GFP+ (EC) and PCM-1+ (cardiomyocyte) nuclei populations.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm specificity of the sorting strategy, nuclei were co-stained with PCM-1, known to specifically mark cardiomyocyte nuclei (Bergmann et al., 2011), which revealed no overlap between GFP+ (EC) and PCM-1+ (cardiomyocyte) nuclei populations (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by flow cytometry data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "2ce14f9f-8380-41e9-a022-9d29ce887e7c",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C41",
+      "claim": "Quantitative PCR with RNA from GFP+ (EC) nuclei showed strong enrichment (~5-fold) of EC-specific transcripts (Pecam1, Gpihbp1).",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative PCR with RNA from GFP+ (EC) nuclei showed strong enrichment (~5-fold) of EC-specific transcripts (Pecam1, Gpihbp1), and depletion (10\u201315 fold) of fibroblast/pericyte-specific transcripts (Dpt, Cspg4, Pdgfrb).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by qPCR data from isolated nuclei.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "da5cc410-b08f-46d3-a9c1-fffcd056e915",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C42",
+      "claim": "Quantitative PCR with RNA from GFP+ (EC) nuclei showed depletion (10\u201315 fold) of fibroblast/pericyte-specific transcripts (Dpt, Cspg4, Pdgfrb).",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative PCR with RNA from GFP+ (EC) nuclei showed strong enrichment (~5-fold) of EC-specific transcripts (Pecam1, Gpihbp1), and depletion (10\u201315 fold) of fibroblast/pericyte-specific transcripts (Dpt, Cspg4, Pdgfrb).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by qPCR data from isolated nuclei.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "af4fa35f-f93b-410b-bf5a-d2aa5d8995a5",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C43",
+      "claim": "CMF genes were depleted to a much lesser extent (2\u20133 fold; Tnnt2, Myh6, Myh7, Actc1) in GFP+ nuclei compared to fibroblast genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, CMF genes were depleted to a much lesser extent (2\u20133 fold; Tnnt2, Myh6, Myh7, Actc1) (Figure 3B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR data shown in Figure 3B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "3d0295e4-88b5-4fdf-b685-f64faa06c3fa",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C44",
+      "claim": "CMF gene expression persists in nuclei isolated from cardiac ECs.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, CMF gene expression persists in nuclei isolated from cardiac ECs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the qPCR data on isolated nuclei.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "49e06d7d-b0a9-4072-8c54-52659f0fb2b3",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C45",
+      "claim": "Co-localization of Tnnt2 RNA was found within ECs in the heart, as identified by Pecam1 (CD31) antibody staining.",
+      "claim_type": "EXPLICIT",
+      "source": "Using confocal imaging, we found co-localization of Tnnt2 RNA within ECs in the heart, as identified by Pecam1 (CD31) antibody staining (Figure 3D; Figure 3\u2014figure supplement 2A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNAscope and confocal imaging data shown in Figure 3D and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "1a20ea2c-28af-4d13-8410-2519036f66ea",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C46",
+      "claim": "Approximately 12% of endothelial (Cdh5+) cell nuclei contain Tnnt2.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of nuclei with co-localization of both Cdh5 and Tnnt2 RNA showed presence of Tnnt2 in ~12% of endothelial (Cdh5+) cell nuclei (Figure 3\u2014figure supplement 2C\u2013D), a proportion that is similar to the number of ECs in Tabula Muris that are Tnnt2 positive (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification of RNAscope data shown in Figure 3\u2014figure supplement 2C\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "5f3973d0-0826-432b-a47e-c6b93bec2d16",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C47",
+      "claim": "The proportion of Tnnt2-positive endothelial nuclei (~12%) is similar to the number of ECs in Tabula Muris that are Tnnt2 positive.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of nuclei with co-localization of both Cdh5 and Tnnt2 RNA showed presence of Tnnt2 in ~12% of endothelial (Cdh5+) cell nuclei (Figure 3\u2014figure supplement 2C\u2013D), a proportion that is similar to the number of ECs in Tabula Muris that are Tnnt2 positive (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison between in situ data and single-cell RNASeq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "5fb2252f-acaf-42c8-a19f-07fe4ca3885d",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C48",
+      "claim": "Expression of CMF genes stems from direct expression from EC chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether these results unambiguously show that expression of CMF genes in ECs is not due to contamination from parenchymal cells, and strongly suggest that expression of CMF genes stems from direct expression from EC chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from multiple lines of evidence including nuclear RNA, in situ hybridization, and chromatin accessibility data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "be59b5ad-3c4e-403e-90a7-ce932679a858",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C49",
+      "claim": "EC nuclei had an open chromatin signature at EC-specific genes.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, EC nuclei had an open chromatin signature at EC-specific genes (Figure 4A: Erg, Cdh5, Gphibp1, Egfl7; Figure 4B green line; and Figure 4C, green circles), and markedly reduced open chromatin signature at fibroblast genes (Figure 4A: Dpt, Cspg4, Pdgfrb, Col6a2; Figure 4B blue line; and Figure 4C blue triangles).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ATAC-Seq data shown in Figure 4A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "a9e25cd2-99a5-4a1a-b6cc-646bc9c52de3",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C50",
+      "claim": "EC nuclei had markedly reduced open chromatin signature at fibroblast genes.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, EC nuclei had an open chromatin signature at EC-specific genes (Figure 4A: Erg, Cdh5, Gphibp1, Egfl7; Figure 4B green line; and Figure 4C, green circles), and markedly reduced open chromatin signature at fibroblast genes (Figure 4A: Dpt, Cspg4, Pdgfrb, Col6a2; Figure 4B blue line; and Figure 4C blue triangles).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ATAC-Seq data shown in Figure 4A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "3fcbfe42-17cf-466f-a8cb-a1e6f5b43eab",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C51",
+      "claim": "The chromatin of CMF genes was quantitatively as open in ECs as in cardiomyocyte nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, however, the chromatin of CMF genes was quantitatively as open in ECs as in cardiomyocyte nuclei (Figure 4A: Tnni3, Tnnt2, Tnnc1, Myh6; Figure 4B red line; and Figure 4C, red diamonds).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ATAC-Seq data shown in Figure 4A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "b522b22c-e9cd-4243-87bf-a4b6a6aadebe",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C52",
+      "claim": "Most peaks associated with enhancer regions of cardiomyocyte marker genes (intergenic and intronic) were also seen in cardiac ECs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to accessibility at promoter-TSS regions, most peaks associated with enhancer regions of cardiomyocyte marker genes (intergenic and intronic) were also seen in cardiac ECs (Figure 4\u2014figure supplement 1A\u2013B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ATAC-Seq data shown in Figure 4\u2014figure supplement 1A\u2013B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "7b9da34c-d09e-49d5-9236-b8d01c9a466c",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C53",
+      "claim": "A small number of enhancer regions were unique to the non-EC nuclei, including an enhancer region upstream of Nkx2-5 and an intronic enhancer within the Dmd gene.",
+      "claim_type": "EXPLICIT",
+      "source": "We did identify a small number of enhancer regions that were unique to the non-EC nuclei, including an enhancer region upstream of the gene encoding the cardiac transcription factor Nkx2-5, and an intronic enhancer within the Dmd gene (Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ATAC-Seq data shown in Figure 4\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "bdbd0862-9f82-4c92-9302-de0f21aeae76",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C54",
+      "claim": "Cardiac ECs have open chromatin at CMF genes and exhibit quantitatively similar accessibility at these genes at both TSS and enhancer regions as the underlying parenchyma.",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrate that cardiac ECs have open chromatin at CMF genes, and exhibit quantitatively similar accessibility at these genes at both TSS and enhancer regions as the underlying parenchyma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from the ATAC-Seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "9c996bb8-43cf-46f5-992b-a0c15e6f6295",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C55",
+      "claim": "ATAC-seq peaks unique to GFP+ (EC) nuclei were enriched for known endothelial transcription factor binding sites (ERG, ETS).",
+      "claim_type": "EXPLICIT",
+      "source": "HOMER analysis (Heinz et al., 2010) revealed that ATAC-seq peaks unique to GFP+ (EC) nuclei (Supplementary file 3) were enriched for known endothelial transcription factor binding sites (ERG, ETS), consistent with their endothelial identity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by HOMER motif enrichment analysis of ATAC-Seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "051dd2f7-2a7b-4092-bd7c-f2316f09bafa",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C56",
+      "claim": "Genes within 2 kb of GFP+ unique peaks showed GO enrichment for vascular development-associated terms.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes within 2 kb of GFP+ unique peaks showed GO enrichment for vascular development-associated terms (Figure 4D, lower panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gene ontology analysis shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "73c37036-f388-445a-892e-f051c413aca0",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C57",
+      "claim": "Peaks unique to GFP- (non-EC) nuclei were enriched for the smooth muscle and cardiac fibroblast transcription factor TCF21.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, peaks unique to GFP- (non-EC) nuclei were enriched for the smooth muscle and cardiac fibroblast transcription factor TCF21, as well as genes associated with neurogenesis and extracellular matrix organization (upper panel).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by HOMER motif enrichment analysis of ATAC-Seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "3beba158-f54b-4fd8-9910-fd2267248fa2",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C58",
+      "claim": "Peaks that overlapped between GFP- and GFP+ nuclei were significantly associated with genes of cardiomyocyte development and contraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Most interestingly, however, peaks that overlapped between GFP- and GFP+ nuclei (middle panel) were significantly associated with genes of cardiomyocyte development and contraction, and HOMER analysis showed enrichment for the cardiac transcription factors GATA4 and MEF2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by gene ontology and HOMER analysis of ATAC-Seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "4e8519e3-547d-4287-a96f-4d0d105f0d3e",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C59",
+      "claim": "Peaks that overlapped between GFP- and GFP+ nuclei showed enrichment for the cardiac transcription factors GATA4 and MEF2.",
+      "claim_type": "EXPLICIT",
+      "source": "Most interestingly, however, peaks that overlapped between GFP- and GFP+ nuclei (middle panel) were significantly associated with genes of cardiomyocyte development and contraction, and HOMER analysis showed enrichment for the cardiac transcription factors GATA4 and MEF2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by HOMER motif enrichment analysis of ATAC-Seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "50c8e893-ae74-4f59-92a6-8c3ef1957b48",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C60",
+      "claim": "Not all cardiac EC-enriched genes revealed open chromatin (RPKM <1.5 at the TSS), suggesting that these transcripts may in fact have origins outside the ECs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, not all of these cardiac EC-enriched genes revealed open chromatin (RPKM <1.5 at the TSS), suggesting that these transcripts may in fact have origins outside the ECs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from comparing gene expression and chromatin accessibility data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "4b9e0e56-0c37-42d1-8ce2-1d5adc59fcbb",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C61",
+      "claim": "GO analysis of cardiac EC-enriched genes with closed chromatin revealed largely fibroblast-like annotations.",
+      "claim_type": "EXPLICIT",
+      "source": "GO analysis of the genes with closed chromatin revealed largely fibroblast-like annotations (Figure 5B, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gene ontology analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "4ff02a56-7faa-48ab-9bd5-fe39beb3b39f",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C62",
+      "claim": "GO analysis of cardiac EC-enriched genes with open chromatin revealed strong enrichment for CMF genes, as well as metabolic genes related to handling of fatty acids.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, GO analysis of the genes with open chromatin (RPKM >3 at the TSS) once again revealed strong enrichment for CMF genes, as well as metabolic genes related to handling of fatty acids, the primary fuel of cardiomyocytes (Figure 5B, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gene ontology analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "66f1238c-e57d-40eb-9731-78e0ad39ecd1",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C63",
+      "claim": "Cardiac ECs broadly share open chromatin regions with the cardiomyocytes that make up the underlying parenchyma.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, these data demonstrate that, while as expected cardiac ECs have open chromatin at EC-specific genes and closed chromatin at fibroblast cell-specific genes, they broadly share open chromatin regions with the cardiomyocytes that make up the underlying parenchyma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from the ATAC-Seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "b4cea34e-d2f2-44f4-b671-fc975a3324e6",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C64",
+      "claim": "Chromatin at the EC-specific genes Erg and Cdh5 remained open during culture.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromatin at the EC-specific genes Erg and Cdh5 remained open during this time, consistent with maintenance of endothelial identity (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ATAC-qPCR data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "87a7d79d-c04a-4195-9188-75a2c65ab137",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C65",
+      "claim": "Chromatin at CMF genes (Tnnt2, Myh6) completely closed within the culture time span.",
+      "claim_type": "EXPLICIT",
+      "source": "In sharp contrast, chromatin at CMF genes (Tnnt2, Myh6) completely closed within this time span, and had similar accessibility to freshly isolated lung endothelial nuclei (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ATAC-qPCR data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "55966e52-5963-4f66-8949-9499475206f3",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C66",
+      "claim": "Accessibility at Pdgfrb, a pericyte/fibroblast marker, was increased in culture.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, accessibility at Pdgfrb, a pericyte/fibroblast marker, was increased in culture, although Cspg4 and Tcf21 remained closed (Figure 6D), likely reflecting some endothelial-to-mesenchymal transition occurring under culture conditions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ATAC-qPCR data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "3a2cc5f7-e5cc-427b-9132-2945159befbc",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C67",
+      "claim": "Increased accessibility at Pdgfrb in culture likely reflects some endothelial-to-mesenchymal transition occurring under culture conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, accessibility at Pdgfrb, a pericyte/fibroblast marker, was increased in culture, although Cspg4 and Tcf21 remained closed (Figure 6D), likely reflecting some endothelial-to-mesenchymal transition occurring under culture conditions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the observed changes in chromatin accessibility.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "2bf709b4-5033-455c-9feb-e0672193acf5",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C68",
+      "claim": "ATAC-Seq of cultured cardiac ECs showed that accessibility at CMF genes was overall reduced compared to endothelial or fibroblast genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, ATAC-Seq of cultured cardiac ECs showed that accessibility at CMF genes was overall reduced compared to endothelial or fibroblast genes (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ATAC-Seq data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "a746a5d0-94b8-43aa-b95f-d94b607ed7b4",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C69",
+      "claim": "Peaks that closed in culture were primarily associated with CMF terms, including heart development and muscle contraction.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, peaks that closed in culture were primarily associated with CMF terms, including heart development and muscle contraction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by gene ontology analysis of ATAC-Seq data from cultured cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "0d75423c-e60d-42db-bbbf-4b4aa4904ba6",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C70",
+      "claim": "Open chromatin at CMF genes in cardiac ECs in vivo requires active maintenance by the surrounding parenchyma.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that open chromatin at CMF genes in cardiac ECs in vivo requires active maintenance by the surrounding parenchyma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observation that chromatin closes upon culture.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "b61cdbd4-9631-488d-98dc-68ccda2cefd5",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C71",
+      "claim": "Cardiac ECs possess transcriptional and epigenetic signatures of cardiomyocytes, but not other cell types within the heart.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we show here that cardiac ECs possess transcriptional and epigenetic signatures of cardiomyocytes, but not other cell types within the heart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from all the data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "b0f71402-c1ae-454f-b8cc-2ac67c07e4d2",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C72",
+      "claim": "The presence of open chromatin at cardiomyocyte-specific genes demonstrates significant EC-intrinsic transcriptional contribution of these mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the presence of open chromatin at cardiomyocyte-specific genes, as well as the nuclear expression of these genes in ECs, demonstrates significant EC-intrinsic transcriptional contribution of these mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the ATAC-Seq and nuclear RNA data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "e35f4df3-f482-41d2-bdf8-22d8e21f14b7",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C73",
+      "claim": "The nuclear expression of cardiomyocyte-specific genes in ECs demonstrates significant EC-intrinsic transcriptional contribution of these mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the presence of open chromatin at cardiomyocyte-specific genes, as well as the nuclear expression of these genes in ECs, demonstrates significant EC-intrinsic transcriptional contribution of these mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the nuclear RNA and in situ hybridization data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "dac7f543-1978-47ba-a497-6231c4f6539f",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C74",
+      "claim": "CMF mRNAs originate in ECs themselves, via active maintenance of open chromatin and transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results, in contrast, demonstrate that these CMF mRNAs originate in ECs themselves, via active maintenance of open chromatin and transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from all the data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "e53800ca-fc8c-4b82-88ff-5d9cc3f5ba0a",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C75",
+      "claim": "The functional consequence of the shared signature between ECs and cardiomyocytes, and whether it results in translation of CMF transcripts, remains to be determined.",
+      "claim_type": "EXPLICIT",
+      "source": "It must be noted that the functional consequence of this shared signature, and whether it results in translation of CMF transcripts, remains to be determined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of the current study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "3245fecd-8a07-42d3-9b5c-45da74a6f3c0",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C76",
+      "claim": "Chromatin is maintained open at CMF genes in all cardiac ECs, but rates of transcription are relatively low and stochastic.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that chromatin is maintained open at these genes in all cardiac ECs, but that rates of transcription are relatively low and stochastic, and that there may not be a defined subset of ECs that express CMF genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from comparing bulk chromatin accessibility data with single-cell expression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "70f6d35e-322c-4f95-9aff-e1675d247c39",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C77",
+      "claim": "There may not be a defined subset of ECs that express CMF genes.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that chromatin is maintained open at these genes in all cardiac ECs, but that rates of transcription are relatively low and stochastic, and that there may not be a defined subset of ECs that express CMF genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the stochastic expression pattern observed in single-cell data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "1d74451f-1e82-411d-8544-a03de704201c",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C78",
+      "claim": "Fully open chromatin at CMF genes in cardiac ECs may reflect shared developmental origin between cardiomyocytes and ECs.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that this fully open chromatin at CMF genes in cardiac ECs may reflect shared developmental origin between cardiomyocytes and ECs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors to explain their observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "22604753-7d09-4f71-b63d-5bff79c100d8",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C79",
+      "claim": "During development, cardiac progenitors that express Nkx2-5 (primary heart field) or Isl1 (secondary heart field) give rise to both ECs and cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "During development, cardiac progenitors that express Nkx2-5 (primary heart field) or Isl1 (secondary heart field) give rise to both ECs and cardiomyocytes (Jia et al., 2018; Moretti et al., 2006; Wu et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cardiac development supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "e49be9e7-02d0-40a8-b4b4-90bb5c29798c",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C80",
+      "claim": "Accessibility of chromatin at cardiomyocyte-specific genes may be due to epigenetic memory of shared developmental origin.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, accessibility of chromatin at cardiomyocyte-specific genes may be due to epigenetic memory of this shared developmental origin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors to explain their observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "da7f60f4-9954-43f1-af8e-fe26966d9682",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C81",
+      "claim": "Both developmental and adult cardiomyocyte and ECs share expression of the transcription factor MEF2C.",
+      "claim_type": "EXPLICIT",
+      "source": "Both developmental and adult cardiomyocyte and ECs share expression of the transcription factor MEF2C, the number one predicted binding site in our analysis of open chromatin peaks shared between cardiac ECs and cardiomyocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement combining established knowledge with the authors' ATAC-Seq analysis.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "c7a73f02-79cc-4446-bafa-059efaff661b",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C82",
+      "claim": "MEF2C is the number one predicted binding site in the analysis of open chromatin peaks shared between cardiac ECs and cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Both developmental and adult cardiomyocyte and ECs share expression of the transcription factor MEF2C, the number one predicted binding site in our analysis of open chromatin peaks shared between cardiac ECs and cardiomyocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by HOMER motif enrichment analysis of ATAC-Seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "767c3ee1-d88d-4ded-ab23-8ca8032244d4",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C83",
+      "claim": "Endothelial-specific MEF2C has been shown to regulate angiogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Endothelial-specific MEF2C has been shown to regulate angiogenesis (Sacilotto et al., 2016), cell integrity and survival (Potthoff and Olson, 2007), as well as response to inflammation (Xu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "942a61bf-f7ed-4daf-96b3-462b48428dba",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C84",
+      "claim": "Endothelial-specific MEF2C has been shown to regulate cell integrity and survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Endothelial-specific MEF2C has been shown to regulate angiogenesis (Sacilotto et al., 2016), cell integrity and survival (Potthoff and Olson, 2007), as well as response to inflammation (Xu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "889fce81-e043-4bdd-89d0-53f694705780",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C85",
+      "claim": "Endothelial-specific MEF2C has been shown to regulate response to inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "Endothelial-specific MEF2C has been shown to regulate angiogenesis (Sacilotto et al., 2016), cell integrity and survival (Potthoff and Olson, 2007), as well as response to inflammation (Xu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "776b2728-63b6-48c3-97f0-93071830f29c",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C86",
+      "claim": "GATA4 is expressed by cardiac progenitors and in adult cardiomyocytes, but almost undetectable in ECs.",
+      "claim_type": "EXPLICIT",
+      "source": "GATA4, whose motif is highly enriched between cardiac ECs and cardiomyocytes, is expressed by cardiac progenitors and in adult cardiomyocytes, but almost undetectable in ECs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about GATA4 expression.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "5cc95503-176a-4ff8-ac41-b51be835345b",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C87",
+      "claim": "Inducible knockdown of GATA4 in adult ECs resulted in a less mature, PECAM1-'low' EC phenotype, including hyperproliferation, reduced differentiation, and impaired tube formation capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, a recent study Maliken et al., 2018 demonstrated that inducible knockdown of GATA4 in adult ECs resulted in a less mature, PECAM1-'low' EC phenotype, including hyperproliferation, reduced differentiation, and impaired tube formation capacity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Maliken et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "90237b2d-baa9-4d10-9ba6-1923d3d8cb04",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C88",
+      "claim": "Expression of CMF genes, including Myh6, Myl7, Tnnt2 and Sln, are significantly downregulated (25\u20131.5 fold) upon Gata4 knockdown in ECs.",
+      "claim_type": "EXPLICIT",
+      "source": "Although not highlighted in the main figures, the supplementary data from this study reveals that expression of CMF genes, including Myh6, Myl7, Tnnt2 and Sln, are significantly downregulated (25\u20131.5 fold) upon Gata4 knockdown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references supplementary data from Maliken et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "165a4897-2f35-478b-9a29-92c82a4aff30",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C89",
+      "claim": "Loss of cardiomyocyte transcription factors results in EC 'immaturity'.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies, which show that loss of cardiomyocyte transcription factors results in EC 'immaturity', are consistent with our observation that cardiomyocyte-specific gene accessibility is lost in cardiac ECs upon culture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the cited studies and the authors' own observations.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "ed15d11e-fc41-4a88-86dd-a5a3cc0bf03a",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C90",
+      "claim": "Cardiomyocyte transcription factors, such as GATA4 and MEF2, may be responsible for maintaining the open chromatin signature of CMF genes within ECs in the heart.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that perhaps cardiomyocyte transcription factors, such as GATA4 and MEF2, are responsible for maintaining the open chromatin signature of CMF genes within ECs in the heart, and that CMF gene expression plays a role in cardiac EC maturity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors based on their data and cited literature.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "abbee573-8f31-4acf-bb69-53c3c3adf218",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C91",
+      "claim": "CMF gene expression plays a role in cardiac EC maturity.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that perhaps cardiomyocyte transcription factors, such as GATA4 and MEF2, are responsible for maintaining the open chromatin signature of CMF genes within ECs in the heart, and that CMF gene expression plays a role in cardiac EC maturity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors based on their data and cited literature.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "bcaa15b6-6efb-465e-aaf0-62199f6872bd",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C92",
+      "claim": "This shared chromatin accessibility landscape is likely maintained by paracrine cues in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we demonstrate here that cardiac ECs maintain open chromatin and active transcription at a number of myofibrillar genes thought to be uniquely expressed in cardiomyocytes. This shared chromatin accessibility landscape is likely maintained by paracrine cues in vivo, and likely serves to maintain the unique phenotype of cardiac ECs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that chromatin closes upon culture.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "fad6e11c-d576-4a83-8fb5-56292044243f",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "claim_id": "C93",
+      "claim": "The shared chromatin accessibility landscape likely serves to maintain the unique phenotype of cardiac ECs.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we demonstrate here that cardiac ECs maintain open chromatin and active transcription at a number of myofibrillar genes thought to be uniquely expressed in cardiomyocytes. This shared chromatin accessibility landscape is likely maintained by paracrine cues in vivo, and likely serves to maintain the unique phenotype of cardiac ECs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors based on their observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6ef604c6-20ca-4c58-86ef-f4dc8c6d7a37",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Cardiac endothelial cells (ECs) express cardiomyocyte myofibril (CMF) genes at the mRNA level, as demonstrated by bulk RNASeq from NuTRAP-tagged cardiac ECs and analysis of multiple published datasets. CMF mRNAs are among the highest expressed genes in cardiac ECs, though depleted compared to non-endothelial fractions. This expression is unique to cardiac ECs and not seen in ECs from other organs, and correlation analyses suggest it is unlikely to be solely due to contamination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C16-C27 provide converging evidence from multiple independent datasets (NuTRAP, published RNASeq studies) showing CMF gene expression in cardiac ECs. The low correlation coefficients (0.05-0.28) between EC and whole heart expression patterns argue against simple contamination. The tissue-specificity (heart vs. other organs) and selectivity (CMF genes but not other cardiomyocyte genes like mitochondrial genes) strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "99ec9818-df1e-4202-b063-b3e4677f5a27",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Single-cell RNASeq analysis reveals that approximately 59.3% of cardiac ECs express at least one CMF gene, with most cells expressing only 1-2 genes in a stochastic pattern. Cardiac ECs express both spliced and unspliced CMF transcripts, with unspliced transcripts present at higher frequency (5.4%) than in cardiomyocytes (2.4%), indicating cell-intrinsic transcription rather than contamination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C37 use single-cell RNASeq data to demonstrate that CMF expression is widespread but stochastic across cardiac ECs. The presence of unspliced transcripts at higher frequency in ECs than cardiomyocytes (C33-C35) is particularly compelling evidence for cell-intrinsic transcription, as contaminating cytoplasmic RNA would be predominantly spliced. The distribution pattern (1-2 genes per cell) argues against doublets or misclassification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "c12bce9f-3b1d-497e-be22-3d999200b37a",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "CMF gene expression persists in isolated cardiac EC nuclei, as demonstrated by FACS-sorted GFP+ nuclei from Cdh5-Cre/NuTRAP mice showing only 2-3 fold depletion of CMF transcripts compared to 10-15 fold depletion of fibroblast markers. In situ hybridization confirms Tnnt2 RNA localization within EC nuclei in intact heart tissue (~12% of Cdh5+ nuclei), consistent with single-cell RNASeq data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C48 provide critical evidence ruling out contamination by isolating nuclei rather than whole cells. The flow cytometry shows no overlap between EC (GFP+) and cardiomyocyte (PCM-1+) populations (C40), and the differential depletion of CMF vs. fibroblast genes in sorted nuclei (C41-C43) demonstrates EC-intrinsic expression. The in situ hybridization (C45-C47) provides spatial validation in intact tissue, with quantification matching single-cell data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "a66efc89-9592-4e4e-87e7-8c6c1066a52b",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "ATAC-Seq of FACS-isolated cardiac EC nuclei reveals that chromatin at CMF genes is quantitatively as open in ECs as in cardiomyocyte nuclei, at both transcriptional start sites (TSS) and enhancer regions. EC nuclei show expected open chromatin at EC-specific genes and closed chromatin at fibroblast genes, confirming cell identity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C54 provide the key mechanistic evidence that CMF gene expression in ECs is driven by open chromatin rather than contamination or RNA transfer. The ATAC-Seq data directly demonstrates chromatin accessibility at CMF gene promoters and enhancers in purified EC nuclei. The control genes (EC-specific open, fibroblast-specific closed) validate the specificity of the sorting and assay. This is the most definitive evidence for cell-autonomous expression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "f0e6f362-7c5d-4013-9440-a0ea3847a6e0",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Motif enrichment analysis of ATAC-Seq peaks reveals that EC-unique peaks are enriched for endothelial transcription factors (ERG, ETS), while peaks shared between ECs and cardiomyocytes are enriched for cardiac transcription factors (GATA4, MEF2) and associated with genes of cardiomyocyte development and contraction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C59 use unbiased computational analysis (HOMER) to identify transcription factor binding sites in open chromatin regions. The enrichment of cardiac TF motifs (GATA4, MEF2) specifically in shared peaks (C58-C59) provides mechanistic insight into how CMF gene chromatin accessibility might be maintained in ECs. The control enrichments (EC TFs in EC-unique peaks, fibroblast TFs in non-EC peaks) validate the analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "c51419ea-ee04-4634-9670-39e22f6ee57a",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Integration of gene expression and chromatin accessibility data reveals that cardiac EC-enriched genes with open chromatin show GO enrichment for CMF genes and fatty acid metabolism, while those with closed chromatin show fibroblast-like annotations, suggesting some cardiac EC-enriched transcripts may originate from contaminating cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C63 provide an important quality control by comparing expression and accessibility data. The observation that not all cardiac EC-enriched genes have open chromatin (C60) is appropriately interpreted as potential contamination, and the GO analysis (C61-C62) supports this interpretation. This demonstrates critical evaluation of their own data and strengthens confidence in the CMF gene findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "ea153cec-aa9c-4148-8ac2-7f391518680f",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Chromatin at CMF genes completely closes when cardiac ECs are cultured ex vivo, while chromatin at EC-specific genes remains open. ATAC-qPCR and ATAC-Seq show that peaks closing in culture are associated with CMF terms, indicating that open chromatin at CMF genes requires active maintenance by in vivo cues from the surrounding parenchyma.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C70 demonstrate that CMF gene chromatin accessibility is not a fixed property of cardiac ECs but requires environmental maintenance. The culture experiment provides strong evidence that in vivo signals are necessary (C70). The controls (EC genes remain open, C64; some fibroblast markers increase, C66-C67) validate the specificity of the effect. This is critical for establishing that the phenomenon is biologically regulated rather than a developmental artifact.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "66c381db-3cc1-4029-8d6d-7e5baf509b6e",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The expression of CMF genes in cardiac ECs is cell-autonomous and not due to technical contamination or paracrine RNA transfer. Multiple lines of evidence (nuclear RNA, in situ hybridization, unspliced transcripts, open chromatin) demonstrate that CMF mRNAs originate from direct transcription in ECs, with chromatin accessibility maintained by local in vivo cues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C8, C48, C71-C74, C92 represent the main conclusions of the paper, synthesizing evidence from all experimental approaches. The convergence of multiple independent lines of evidence (correlation analyses, single-cell data, nuclear isolation, in situ hybridization, unspliced RNA, ATAC-Seq, culture experiments) provides strong support for cell-autonomous expression. The inference about in vivo maintenance (C8, C92) is well-supported by the culture experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "3954e9b0-5673-4228-959d-22210f327bf7",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors propose that open chromatin at CMF genes may reflect epigenetic memory of shared developmental origin between cardiomyocytes and ECs, potentially maintained by cardiac transcription factors (GATA4, MEF2) and playing a role in cardiac EC maturity. However, the functional consequences and whether CMF transcripts are translated remain undetermined.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C75-C93 are largely speculative (C75, C76, C77, C78, C80, C90, C91, C93) or cite prior work (C79, C83-C89) to build hypotheses. While the hypotheses are reasonable and supported by circumstantial evidence (MEF2C enrichment in shared peaks, GATA4 knockdown effects from other studies), the authors appropriately acknowledge that functional consequences are not demonstrated (C75). The developmental origin hypothesis (C78-C80) is plausible but not tested. These represent important future directions rather than established results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    },
+    {
+      "id": "96cf38c2-0832-4804-847a-47a47bb5a260",
+      "content_id": "8fd62d7a-8d12-47f2-b23a-f8be5477d51f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background claims establishing that ECs are heterogeneous across tissues, that Jambusaria et al. previously reported parenchymal gene expression in ECs, and that cardiac ECs originate from multipotent progenitors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C15 provide established background knowledge and appropriate citations to prior work. These contextual claims are well-supported by the literature and accurately represent the state of the field. C2 and C14 correctly cite Jambusaria et al.'s findings, which motivated the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:56:50.206913Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d1b15614-7cea-4c81-9302-5ad50d1c21b4",
+      "result_id": "6ef604c6-20ca-4c58-86ef-f4dc8c6d7a37"
+    },
+    {
+      "claim_id": "456d5381-2c2f-48f9-8ede-f190ab29c06a",
+      "result_id": "6ef604c6-20ca-4c58-86ef-f4dc8c6d7a37"
+    },
+    {
+      "claim_id": "381d047f-a1ad-4ec2-8c95-b5296349d777",
+      "result_id": "6ef604c6-20ca-4c58-86ef-f4dc8c6d7a37"
+    },
+    {
+      "claim_id": "85cfcc7c-14d6-4712-802e-f3932685988f",
+      "result_id": "6ef604c6-20ca-4c58-86ef-f4dc8c6d7a37"
+    },
+    {
+      "claim_id": "d9371177-5086-45e3-bcf0-7c84c8b7e817",
+      "result_id": "6ef604c6-20ca-4c58-86ef-f4dc8c6d7a37"
+    },
+    {
+      "claim_id": "b6bb44ba-0e1a-4589-81bd-381d43862fa2",
+      "result_id": "6ef604c6-20ca-4c58-86ef-f4dc8c6d7a37"
+    },
+    {
+      "claim_id": "fb741a27-06e9-4432-aae0-0bd0d2bd7426",
+      "result_id": "6ef604c6-20ca-4c58-86ef-f4dc8c6d7a37"
+    },
+    {
+      "claim_id": "0d99f608-3299-4d0f-88e0-e2ccc2f32573",
+      "result_id": "6ef604c6-20ca-4c58-86ef-f4dc8c6d7a37"
+    },
+    {
+      "claim_id": "48359eaf-9a8d-4f65-aa21-987575be3497",
+      "result_id": "6ef604c6-20ca-4c58-86ef-f4dc8c6d7a37"
+    },
+    {
+      "claim_id": "6de3363e-a594-4c69-89f9-2256b4be4344",
+      "result_id": "6ef604c6-20ca-4c58-86ef-f4dc8c6d7a37"
+    },
+    {
+      "claim_id": "341ce024-b62a-450d-bf2a-b65610ba2455",
+      "result_id": "6ef604c6-20ca-4c58-86ef-f4dc8c6d7a37"
+    },
+    {
+      "claim_id": "be071a7b-2121-4ea7-8a8d-64468b6a4a41",
+      "result_id": "6ef604c6-20ca-4c58-86ef-f4dc8c6d7a37"
+    },
+    {
+      "claim_id": "9cdfc3ee-96e0-4aef-bc0c-6c3ddd946cdb",
+      "result_id": "6ef604c6-20ca-4c58-86ef-f4dc8c6d7a37"
+    },
+    {
+      "claim_id": "850aaffb-be27-4891-aaad-38050f93669a",
+      "result_id": "6ef604c6-20ca-4c58-86ef-f4dc8c6d7a37"
+    },
+    {
+      "claim_id": "a6ded889-e8c8-4402-88c4-8f8765a261fc",
+      "result_id": "99ec9818-df1e-4202-b063-b3e4677f5a27"
+    },
+    {
+      "claim_id": "d1ed202d-ec27-4785-992e-3fff5f6103bc",
+      "result_id": "99ec9818-df1e-4202-b063-b3e4677f5a27"
+    },
+    {
+      "claim_id": "6fab1df2-5f73-4acc-a01d-b68519c4ca8c",
+      "result_id": "99ec9818-df1e-4202-b063-b3e4677f5a27"
+    },
+    {
+      "claim_id": "c679c6d8-a32c-406d-85a6-227c9476ffe5",
+      "result_id": "99ec9818-df1e-4202-b063-b3e4677f5a27"
+    },
+    {
+      "claim_id": "c1e8eed5-dc8b-4ac6-9731-dd74848a9235",
+      "result_id": "99ec9818-df1e-4202-b063-b3e4677f5a27"
+    },
+    {
+      "claim_id": "a52133b1-e460-4e23-8fe7-5c7af0774983",
+      "result_id": "99ec9818-df1e-4202-b063-b3e4677f5a27"
+    },
+    {
+      "claim_id": "6bb5c162-838c-4e5d-aaa7-acd783270052",
+      "result_id": "99ec9818-df1e-4202-b063-b3e4677f5a27"
+    },
+    {
+      "claim_id": "7dfee390-bd87-4bc6-9443-8dcca27f502d",
+      "result_id": "99ec9818-df1e-4202-b063-b3e4677f5a27"
+    },
+    {
+      "claim_id": "e8c187ee-faa9-48ef-823d-2c79d072a8d0",
+      "result_id": "99ec9818-df1e-4202-b063-b3e4677f5a27"
+    },
+    {
+      "claim_id": "373e92eb-4bbb-4700-bd90-c23acded4501",
+      "result_id": "99ec9818-df1e-4202-b063-b3e4677f5a27"
+    },
+    {
+      "claim_id": "29670b18-7dc7-4e8e-a4fa-6e563595c3a2",
+      "result_id": "c12bce9f-3b1d-497e-be22-3d999200b37a"
+    },
+    {
+      "claim_id": "74d1f23c-491a-4866-9c3e-bb711261f2f3",
+      "result_id": "c12bce9f-3b1d-497e-be22-3d999200b37a"
+    },
+    {
+      "claim_id": "057467da-2288-4a27-9da2-c66c31b7d909",
+      "result_id": "c12bce9f-3b1d-497e-be22-3d999200b37a"
+    },
+    {
+      "claim_id": "2ce14f9f-8380-41e9-a022-9d29ce887e7c",
+      "result_id": "c12bce9f-3b1d-497e-be22-3d999200b37a"
+    },
+    {
+      "claim_id": "da5cc410-b08f-46d3-a9c1-fffcd056e915",
+      "result_id": "c12bce9f-3b1d-497e-be22-3d999200b37a"
+    },
+    {
+      "claim_id": "af4fa35f-f93b-410b-bf5a-d2aa5d8995a5",
+      "result_id": "c12bce9f-3b1d-497e-be22-3d999200b37a"
+    },
+    {
+      "claim_id": "3d0295e4-88b5-4fdf-b685-f64faa06c3fa",
+      "result_id": "c12bce9f-3b1d-497e-be22-3d999200b37a"
+    },
+    {
+      "claim_id": "49e06d7d-b0a9-4072-8c54-52659f0fb2b3",
+      "result_id": "c12bce9f-3b1d-497e-be22-3d999200b37a"
+    },
+    {
+      "claim_id": "1a20ea2c-28af-4d13-8410-2519036f66ea",
+      "result_id": "c12bce9f-3b1d-497e-be22-3d999200b37a"
+    },
+    {
+      "claim_id": "5f3973d0-0826-432b-a47e-c6b93bec2d16",
+      "result_id": "c12bce9f-3b1d-497e-be22-3d999200b37a"
+    },
+    {
+      "claim_id": "5fb2252f-acaf-42c8-a19f-07fe4ca3885d",
+      "result_id": "c12bce9f-3b1d-497e-be22-3d999200b37a"
+    },
+    {
+      "claim_id": "be59b5ad-3c4e-403e-90a7-ce932679a858",
+      "result_id": "a66efc89-9592-4e4e-87e7-8c6c1066a52b"
+    },
+    {
+      "claim_id": "a9e25cd2-99a5-4a1a-b6cc-646bc9c52de3",
+      "result_id": "a66efc89-9592-4e4e-87e7-8c6c1066a52b"
+    },
+    {
+      "claim_id": "3fcbfe42-17cf-466f-a8cb-a1e6f5b43eab",
+      "result_id": "a66efc89-9592-4e4e-87e7-8c6c1066a52b"
+    },
+    {
+      "claim_id": "b522b22c-e9cd-4243-87bf-a4b6a6aadebe",
+      "result_id": "a66efc89-9592-4e4e-87e7-8c6c1066a52b"
+    },
+    {
+      "claim_id": "7b9da34c-d09e-49d5-9236-b8d01c9a466c",
+      "result_id": "a66efc89-9592-4e4e-87e7-8c6c1066a52b"
+    },
+    {
+      "claim_id": "bdbd0862-9f82-4c92-9302-de0f21aeae76",
+      "result_id": "a66efc89-9592-4e4e-87e7-8c6c1066a52b"
+    },
+    {
+      "claim_id": "9c996bb8-43cf-46f5-992b-a0c15e6f6295",
+      "result_id": "f0e6f362-7c5d-4013-9440-a0ea3847a6e0"
+    },
+    {
+      "claim_id": "051dd2f7-2a7b-4092-bd7c-f2316f09bafa",
+      "result_id": "f0e6f362-7c5d-4013-9440-a0ea3847a6e0"
+    },
+    {
+      "claim_id": "73c37036-f388-445a-892e-f051c413aca0",
+      "result_id": "f0e6f362-7c5d-4013-9440-a0ea3847a6e0"
+    },
+    {
+      "claim_id": "3beba158-f54b-4fd8-9910-fd2267248fa2",
+      "result_id": "f0e6f362-7c5d-4013-9440-a0ea3847a6e0"
+    },
+    {
+      "claim_id": "4e8519e3-547d-4287-a96f-4d0d105f0d3e",
+      "result_id": "f0e6f362-7c5d-4013-9440-a0ea3847a6e0"
+    },
+    {
+      "claim_id": "50c8e893-ae74-4f59-92a6-8c3ef1957b48",
+      "result_id": "c51419ea-ee04-4634-9670-39e22f6ee57a"
+    },
+    {
+      "claim_id": "4b9e0e56-0c37-42d1-8ce2-1d5adc59fcbb",
+      "result_id": "c51419ea-ee04-4634-9670-39e22f6ee57a"
+    },
+    {
+      "claim_id": "4ff02a56-7faa-48ab-9bd5-fe39beb3b39f",
+      "result_id": "c51419ea-ee04-4634-9670-39e22f6ee57a"
+    },
+    {
+      "claim_id": "66f1238c-e57d-40eb-9731-78e0ad39ecd1",
+      "result_id": "c51419ea-ee04-4634-9670-39e22f6ee57a"
+    },
+    {
+      "claim_id": "b4cea34e-d2f2-44f4-b671-fc975a3324e6",
+      "result_id": "ea153cec-aa9c-4148-8ac2-7f391518680f"
+    },
+    {
+      "claim_id": "87a7d79d-c04a-4195-9188-75a2c65ab137",
+      "result_id": "ea153cec-aa9c-4148-8ac2-7f391518680f"
+    },
+    {
+      "claim_id": "55966e52-5963-4f66-8949-9499475206f3",
+      "result_id": "ea153cec-aa9c-4148-8ac2-7f391518680f"
+    },
+    {
+      "claim_id": "3a2cc5f7-e5cc-427b-9132-2945159befbc",
+      "result_id": "ea153cec-aa9c-4148-8ac2-7f391518680f"
+    },
+    {
+      "claim_id": "2bf709b4-5033-455c-9feb-e0672193acf5",
+      "result_id": "ea153cec-aa9c-4148-8ac2-7f391518680f"
+    },
+    {
+      "claim_id": "a746a5d0-94b8-43aa-b95f-d94b607ed7b4",
+      "result_id": "ea153cec-aa9c-4148-8ac2-7f391518680f"
+    },
+    {
+      "claim_id": "0d75423c-e60d-42db-bbbf-4b4aa4904ba6",
+      "result_id": "ea153cec-aa9c-4148-8ac2-7f391518680f"
+    },
+    {
+      "claim_id": "077e54a0-f809-4583-a441-beb4e1b86b13",
+      "result_id": "66c381db-3cc1-4029-8d6d-7e5baf509b6e"
+    },
+    {
+      "claim_id": "9e600c79-b30c-4c27-ab7d-a46f3d5d419d",
+      "result_id": "66c381db-3cc1-4029-8d6d-7e5baf509b6e"
+    },
+    {
+      "claim_id": "5fb2252f-acaf-42c8-a19f-07fe4ca3885d",
+      "result_id": "66c381db-3cc1-4029-8d6d-7e5baf509b6e"
+    },
+    {
+      "claim_id": "b61cdbd4-9631-488d-98dc-68ccda2cefd5",
+      "result_id": "66c381db-3cc1-4029-8d6d-7e5baf509b6e"
+    },
+    {
+      "claim_id": "b0f71402-c1ae-454f-b8cc-2ac67c07e4d2",
+      "result_id": "66c381db-3cc1-4029-8d6d-7e5baf509b6e"
+    },
+    {
+      "claim_id": "e35f4df3-f482-41d2-bdf8-22d8e21f14b7",
+      "result_id": "66c381db-3cc1-4029-8d6d-7e5baf509b6e"
+    },
+    {
+      "claim_id": "dac7f543-1978-47ba-a497-6231c4f6539f",
+      "result_id": "66c381db-3cc1-4029-8d6d-7e5baf509b6e"
+    },
+    {
+      "claim_id": "bcaa15b6-6efb-465e-aaf0-62199f6872bd",
+      "result_id": "66c381db-3cc1-4029-8d6d-7e5baf509b6e"
+    },
+    {
+      "claim_id": "e53800ca-fc8c-4b82-88ff-5d9cc3f5ba0a",
+      "result_id": "3954e9b0-5673-4228-959d-22210f327bf7"
+    },
+    {
+      "claim_id": "3245fecd-8a07-42d3-9b5c-45da74a6f3c0",
+      "result_id": "3954e9b0-5673-4228-959d-22210f327bf7"
+    },
+    {
+      "claim_id": "70f6d35e-322c-4f95-9aff-e1675d247c39",
+      "result_id": "3954e9b0-5673-4228-959d-22210f327bf7"
+    },
+    {
+      "claim_id": "1d74451f-1e82-411d-8544-a03de704201c",
+      "result_id": "3954e9b0-5673-4228-959d-22210f327bf7"
+    },
+    {
+      "claim_id": "22604753-7d09-4f71-b63d-5bff79c100d8",
+      "result_id": "3954e9b0-5673-4228-959d-22210f327bf7"
+    },
+    {
+      "claim_id": "e49be9e7-02d0-40a8-b4b4-90bb5c29798c",
+      "result_id": "3954e9b0-5673-4228-959d-22210f327bf7"
+    },
+    {
+      "claim_id": "da7f60f4-9954-43f1-af8e-fe26966d9682",
+      "result_id": "3954e9b0-5673-4228-959d-22210f327bf7"
+    },
+    {
+      "claim_id": "c7a73f02-79cc-4446-bafa-059efaff661b",
+      "result_id": "3954e9b0-5673-4228-959d-22210f327bf7"
+    },
+    {
+      "claim_id": "767c3ee1-d88d-4ded-ab23-8ca8032244d4",
+      "result_id": "3954e9b0-5673-4228-959d-22210f327bf7"
+    },
+    {
+      "claim_id": "942a61bf-f7ed-4daf-96b3-462b48428dba",
+      "result_id": "3954e9b0-5673-4228-959d-22210f327bf7"
+    },
+    {
+      "claim_id": "889fce81-e043-4bdd-89d0-53f694705780",
+      "result_id": "3954e9b0-5673-4228-959d-22210f327bf7"
+    },
+    {
+      "claim_id": "776b2728-63b6-48c3-97f0-93071830f29c",
+      "result_id": "3954e9b0-5673-4228-959d-22210f327bf7"
+    },
+    {
+      "claim_id": "5cc95503-176a-4ff8-ac41-b51be835345b",
+      "result_id": "3954e9b0-5673-4228-959d-22210f327bf7"
+    },
+    {
+      "claim_id": "90237b2d-baa9-4d10-9ba6-1923d3d8cb04",
+      "result_id": "3954e9b0-5673-4228-959d-22210f327bf7"
+    },
+    {
+      "claim_id": "165a4897-2f35-478b-9a29-92c82a4aff30",
+      "result_id": "3954e9b0-5673-4228-959d-22210f327bf7"
+    },
+    {
+      "claim_id": "ed15d11e-fc41-4a88-86dd-a5a3cc0bf03a",
+      "result_id": "3954e9b0-5673-4228-959d-22210f327bf7"
+    },
+    {
+      "claim_id": "abbee573-8f31-4acf-bb69-53c3c3adf218",
+      "result_id": "3954e9b0-5673-4228-959d-22210f327bf7"
+    },
+    {
+      "claim_id": "fad6e11c-d576-4a83-8fb5-56292044243f",
+      "result_id": "3954e9b0-5673-4228-959d-22210f327bf7"
+    },
+    {
+      "claim_id": "263b62ff-50f6-4c0f-b6c1-deabedab3269",
+      "result_id": "96cf38c2-0832-4804-847a-47a47bb5a260"
+    },
+    {
+      "claim_id": "40f5e85d-2a6a-49bc-9201-fe4727f10d79",
+      "result_id": "96cf38c2-0832-4804-847a-47a47bb5a260"
+    },
+    {
+      "claim_id": "eebe6e1b-74eb-4203-8ad4-ab4d45520c08",
+      "result_id": "96cf38c2-0832-4804-847a-47a47bb5a260"
+    },
+    {
+      "claim_id": "4e596c20-6839-4582-bbc2-eb1911d5ebb9",
+      "result_id": "96cf38c2-0832-4804-847a-47a47bb5a260"
+    },
+    {
+      "claim_id": "9772959b-cdb7-4f5c-89ab-b0a85210d231",
+      "result_id": "96cf38c2-0832-4804-847a-47a47bb5a260"
+    },
+    {
+      "claim_id": "4d21eb8b-760a-4069-b370-1beb9592b86c",
+      "result_id": "96cf38c2-0832-4804-847a-47a47bb5a260"
+    },
+    {
+      "claim_id": "9a5e8d58-aabd-4ded-bb6f-ceebdceab92f",
+      "result_id": "96cf38c2-0832-4804-847a-47a47bb5a260"
+    },
+    {
+      "claim_id": "6d6b336c-716c-4bbf-b7dd-75e9fc29489a",
+      "result_id": "96cf38c2-0832-4804-847a-47a47bb5a260"
+    },
+    {
+      "claim_id": "989e5a16-07db-4867-bafe-6a589624aa26",
+      "result_id": "96cf38c2-0832-4804-847a-47a47bb5a260"
+    }
+  ],
+  "comparisons": []
+}

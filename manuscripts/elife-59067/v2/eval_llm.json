@@ -1,0 +1,368 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "T2D-associated variants are enriched in pancreatic progenitor stretch enhancers, particularly in late pancreatic progenitor (PP2) and islet stretch enhancers, with enrichment independent of islet activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C28-C35 provide converging statistical evidence from functional GWAS enrichment analysis showing T2D variant enrichment in pancreatic progenitor stretch enhancers (log enrichment = 2.17 for PP2, 95% CI = 1.40, 2.74), with enrichment persisting in joint models and after conditioning on islet stretch enhancers. The enrichment is more pronounced when considering only accessible chromatin sites (PP2 log enrichment = 3.18, 95% CI = 2.35, 3.79). Multiple statistical approaches converge on the same conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "492 pancreatic progenitor-specific stretch enhancers (PSSE) were identified that acquire H3K27ac at PP1/PP2 stages, contain accessible chromatin sites, and often emerge from poised or typical enhancer states at earlier developmental stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C44 describe the identification and chromatin dynamics of PSSE with quantitative data from ChIP-seq and ATAC-seq analyses. The findings are internally consistent: 492 PSSE were identified (C36), 93.5% contain accessible chromatin at PP2 (C38), and specific percentages were poised at earlier stages (C39). The developmental progression from poised/typical enhancers to stretch enhancers is supported by chromatin state analysis across multiple stages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Pancreatic lineage-determining transcription factors (FOXA, PDX1, GATA, ONECUT, RBPJ) are enriched in PSSE and bind to these regions at the PP2 stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 provide motif enrichment analysis with highly significant p-values (p=1\u00d710^-34 for FOXA, p=1\u00d710^-30 for PDX1) and ChIP-seq overlap analysis showing significant binding (p<1\u00d710^-4 for all tested transcription factors). The convergence of motif enrichment and direct ChIP-seq binding data provides strong support for transcription factor regulation of PSSE.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "PSSE-associated genes are enriched for developmental processes including tissue morphogenesis and developmental signaling pathways (BMP, NOTCH, Wnt), with expression peaking at PP2 and decreasing in islets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 present gene ontology analysis with significant enrichment for tissue morphogenesis (p=1\u00d710^-7) and developmental pathways (p=1\u00d710^-5 for BMP, p=1\u00d710^-4 for NOTCH and Wnt), supported by RNA-seq data showing expression patterns consistent with developmental rather than mature islet function (p=1.8\u00d710^-8 for PP2 peak, p<2.2\u00d710^-16 for islet decrease). The functional annotation is consistent with the temporal expression pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "PSSE variants show enrichment for T2D but not for beta cell function traits, with differential enrichment patterns between lean and obese T2D cases compared to islet stretch enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C63 present LD score regression and chi-square test results showing T2D enrichment in PSSE (log enrichment = 2.85) but lack of enrichment for beta cell function traits, contrasting with islet stretch enhancers that show enrichment for both T2D and beta cell function traits. The BMI-stratified analysis shows nominally significant enrichment in lean cases (Z=2.1 for PP2 SE), though the authors appropriately note limitations in statistical power (C146).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "PSSE are highly specific to pancreatic progenitors across T2D-relevant tissues and cell types, with minimal activity during adipogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 provide quantitative evidence from H3K27ac signal analysis across 95 tissues/cell lines and adipocyte differentiation stages, showing that only 6-9 out of 492 PSSE were active enhancers during adipogenesis. This tissue specificity analysis is comprehensive and supports the conclusion of pancreatic progenitor specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "49 T2D-associated variants in PSSE map to 11 loci (9 known, 2 novel), with target genes similarly expressed in hESC-derived and primary human embryonic pancreas, and no overlap with T2D islet accessible chromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 describe variant mapping with appropriate statistical thresholds (p=4.7\u00d710^-6 after Bonferroni correction) and validation through comparison with primary tissue expression. The lack of overlap with T2D islet accessible chromatin (C71) supports the developmental-specific mechanism. The identification of 2 novel loci (CRB2, PGM1) with sub-genome-wide significance is appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The LAMA1 locus contains a highly progenitor-specific PSSE with genome-wide significant T2D variants in the 99% credible set, including rs10502347 which overlaps a SOX9 footprint and is predicted to disrupt SOX9 binding but shows no association with beta cell function traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C87 provide comprehensive characterization of the LAMA1 PSSE through multiple orthogonal approaches: GWAS association, fine-mapping (99% credible set), tissue specificity analysis, ChIP-seq for multiple transcription factors, ATAC-seq footprinting, and endophenotype association testing. The convergence of evidence from chromatin state, transcription factor binding, and lack of beta cell function association supports the developmental-specific mechanism. The footprinting prediction (C85) is appropriately qualified as a prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "CRISPR-mediated deletion of the LAMA1 PSSE in hESCs results in stage-specific reduction of LAMA1 expression at PP2 (p<1\u00d710^-6) but not at earlier stages, with possible effects on ARHGAP28.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C94 describe enhancer deletion experiments with two independent clonal lines showing stage-specific effects on LAMA1 expression. The statistical significance at PP2 (p<1\u00d710^-6) and lack of effect at earlier stages (p>0.29) support the conclusion of stage-specific regulation. The effect on ARHGAP28 is appropriately qualified as speculative (C93) given the lack of statistical significance (p.adj >0.05).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Deletion of the LAMA1 PSSE or LAMA1 gene does not overtly impair pancreatic lineage induction in vitro, with similar percentages of PDX1/NKX6.1-positive cells and similar expression of pancreatic transcription factors in deletion lines compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C100 present flow cytometry, immunofluorescence, and RNA-seq data from both enhancer deletion (\u0394LAMA1Enh) and gene deletion (\u0394LAMA1) lines showing no major effects on pancreatic differentiation markers. The statistical comparisons show either no significant differences or only minimal reductions (p adj. = 3.56\u00d710^-2 for PDX1). The conclusion that in vitro differentiation is unperturbed is supported, though the authors appropriately note this may reflect limitations of the in vitro system (C120, C159-C160).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The CRB2 PSSE regulates CRB2 expression in a stage-specific manner, with upregulation at early stages (DE/GT, p<1\u00d710^-6) and significant reduction at PP2 (p adj. = 3.51\u00d710^-3) upon enhancer deletion, without affecting other genes in the same TAD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C112 describe the CRB2 PSSE characterization and functional validation through enhancer deletion in two independent clonal lines. The chromatin features are similar to LAMA1 PSSE (C101), and the deletion experiments show stage-specific effects with statistical significance. The unexpected upregulation at early stages (C108) leads to a speculative interpretation about repressive complexes (C109), which is appropriately qualified. The specificity to CRB2 within the TAD is supported by RNA-seq data (C111).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Deletion of the CRB2 PSSE or CRB2 gene does not overtly impair pancreatic lineage induction in vitro, with similar percentages of PDX1/NKX6.1-positive cells and similar expression profiles in deletion lines compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C116 present flow cytometry, immunofluorescence, and RNA-seq data from both enhancer deletion (\u0394CRB2Enh) and gene deletion (\u0394CRB2) lines showing no major effects on pancreatic differentiation markers. This parallels the findings for LAMA1 deletions and similarly suggests limitations of the in vitro system for studying these genes' developmental functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "LAMA1 and CRB2 are predicted to regulate tissue morphogenesis based on their protein functions, PSSE are enriched for morphogenesis genes, and the in vitro hESC system has limitations for studying these processes, motivating the use of zebrafish as an in vivo model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C121 provide the rationale for using zebrafish to study LAMA1 and CRB2 function. The prediction about protein function (C117) is based on established knowledge about extracellular matrix and cell polarity proteins. The enrichment of PSSE for morphogenesis genes (C118) is supported by gene ontology analysis (C48). The statement about limitations of the hESC system (C120) is a reasonable inference based on the lack of phenotypes in deletion lines (C100, C116) and knowledge about developmental processes (C158-C160).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Morpholino knockdown of lama1 or crb2a/b in zebrafish results in annular pancreas (15/34 lama1, 27/69 crb2a/b morphants), indicative of impaired pancreatic progenitor migration and pancreas morphogenesis defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C130 describe zebrafish morpholino experiments with validation of knockdown efficiency by immunohistochemistry (C123-C124) and quantification of the annular pancreas phenotype (C127). The phenotype is observed in both lama1 and crb2a/b morphants with substantial penetrance (44% for lama1, 39% for crb2a/b). The interpretation of annular pancreas as indicative of impaired migration (C128) is based on established developmental biology knowledge. The lama1 morphant phenotype is consistent with prior studies (C125).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Beta cell numbers are significantly reduced in lama1 (p=8.0\u00d710^-3), crb2a/b (p=4.0\u00d710^-3), and combined lama1+crb2a/b (p=2.0\u00d710^-4) morphants, with defects occurring independently of annular pancreas, and crb2b being the predominant crb2 gene required for beta cell development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C137 present quantitative beta cell counts with statistical significance for individual and combined knockdowns. The observation that beta cell defects occur in morphants without annular pancreas (C134) supports independent mechanisms for morphogenesis and beta cell differentiation (C135). The differential effects of crb2a vs crb2b knockdown (C136-C137) are supported by statistical comparison, though only crb2b shows significant reduction (p=4.4\u00d710^-2). The experimental design appropriately accounts for developmental timing differences between lama1 and control embryos.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "The study identifies T2D-associated variants in pancreatic progenitor-specific chromatin, links them to LAMA1 and CRB2 regulation, demonstrates functional requirements for lama1 and crb2 in zebrafish pancreas development, and provides a resource of 11 T2D-associated loci with candidate effector genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C148 summarize the main findings and their interpretation. The identification of progenitor-specific variants (C139), the novel mechanism (C140), the functional links to LAMA1 and CRB2 (C141), and the zebrafish validation (C142) are all supported by the data presented. The resource of 11 loci (C144) is documented. The observations about BMI-stratified enrichment (C146) and lack of beta cell function trait enrichment (C147) are appropriately qualified. The speculation about variants affecting developmental processes having no overt phenotype under physiological conditions (C148) is reasonable but remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Human cell models are necessary for identifying enhancer target genes due to lack of enhancer conservation, and the hESC system is validated by similar expression of PSSE target genes in hESC-derived and primary human embryonic pancreas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C157 discuss the rationale for using human cell models and the validation of the hESC system. The lack of enhancer conservation (C149) is established knowledge from cited studies. The demonstration that PSSE regulate LAMA1 and CRB2 within TAD boundaries (C151) and in a temporally appropriate manner (C152) is supported by the deletion experiments. The validation through comparison with primary tissue (C157) provides important support for the relevance of the hESC system. The identification of other candidate genes (C153-C155) provides a resource for future studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "The hESC system has limitations for studying cell-cell and cell-matrix signaling processes important for LAMA1 and CRB2 function, but zebrafish morphant phenotypes demonstrate in vivo roles in pancreas morphogenesis and beta cell development, with T2D risk at LAMA1 linked to progenitor-specific regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C167 discuss the limitations of the in vitro system and the interpretation of the zebrafish results. The statement about limitations (C159-C160) is a reasonable inference based on the lack of phenotypes in hESC deletion lines despite clear zebrafish phenotypes. The zebrafish results (C161-C162) demonstrate functional roles in vivo. The tissue specificity analysis of the LAMA1 PSSE (C165) and variant mapping (C166) support the conclusion that T2D risk is linked to progenitor-specific regulation (C167).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "CRB2 regulates mechanosignaling, is expressed in pancreatic progenitor cells, and may converge with Laminin signals on the same intracellular pathways based on similar morphant phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C168-C171 discuss CRB2 function and potential mechanistic connections with Laminin. The regulation of mechanosignaling by CRB2 (C168) is established knowledge from cited studies. The expression in pancreatic progenitors (C169) is demonstrated by immunohistochemistry. The inference about progenitor-autonomous function (C170) is reasonable based on the expression pattern and morphant phenotype. The speculation about convergent pathways (C171) is appropriately qualified as a possibility based on similar phenotypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "The findings suggest that variation in gene regulation during pancreatic development can predispose to T2D, supported by evidence linking birth weight to cardiometabolic disease, maternal malnutrition to T2D in offspring, and developmental beta cell defects to diabetes susceptibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C176 present the main conclusion and supporting context from the literature. The conclusion that developmental gene regulation variation can predispose to T2D (C172) is an inference based on the study's findings. The supporting evidence from human genetics (C173), epidemiology (C174), and animal models (C175) is established knowledge from cited studies. The rationale for further exploration (C176) is appropriate given the convergence of evidence.",
+    "result_type": "MAJOR"
+  }
+]

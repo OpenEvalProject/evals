@@ -1,0 +1,185 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C60",
+      "C61"
+    ],
+    "result": "Methylated CpG sites experience C>T mutations at an elevated rate of ~1.17\u00d710\u207b\u2077 per generation, approximately 10-fold higher than the genome average. In a sample of 390,000 individuals, ~99% of synonymous sites at methylated CpGs harbor a C/T polymorphism, indicating near-saturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C10 provide the core mutation rate and saturation data, supported by de novo mutation analysis from ~2900 trios (C10, C58) and polymorphism data from multiple large datasets (C15, C16). The mechanistic basis (spontaneous deamination of methyl-cytosine, C8) and predictive value of methylation (C9) are well-established. Mutation rate consistency across exonic and non-exonic regions (C13, C14) and trinucleotide contexts (C11, C17) supports the robustness of these estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "At current sample sizes (~390K individuals), the absence of a non-synonymous polymorphism at a methylated CpG site provides strong statistical evidence of purifying selection, with substantial information to distinguish selected from neutral sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The saturation of synonymous sites (C3, C15-C17) provides the neutral baseline. Claims C18-C20 logically follow: if neutral sites are nearly all segregating, invariant sites are likely under selection. The contrast with smaller samples (C21) demonstrates the sample-size dependence of this inference. The statistical framework (p-values, FDR calculations in C26, C29) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Approximately 27% of possible loss-of-function mutations at methylated CpG sites are not observed in current samples and are likely highly deleterious, with neutrality rejected at an FDR of 4.4% for invariant LOF sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 report the observed depletion of LOF variants relative to synonymous sites, supported by Figure 2b. The FDR calculation (C26) appropriately accounts for the 1.2% of neutral sites expected to be invariant. Robustness checks controlling for linked selection (C27) and position within transcripts (C28) strengthen the conclusion. The statistical tests are appropriate (Fisher exact tests with p<<10\u207b\u2075).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Between 5-20% of possible missense mutations at methylated CpG sites are likely highly deleterious, with the fraction varying by functional site type. DNA-binding sites show ~12-20% depletion, while overall missense sites show ~5.3% depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 report observed depletions for different missense categories, supported by Figure 2b-d. The stratification by functional site type (C30, C31) demonstrates biologically meaningful variation. The inverse relationship with CADD scores (C31) provides external validation. However, the higher FDR for missense sites (22.6%, C29) compared to LOF sites (4.4%, C26) indicates greater uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C32",
+      "C33",
+      "C34",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Mutation types with rates of 10\u207b\u2078 or 10\u207b\u2079 per site per generation remain far from saturation at current sample sizes. The genealogy of 390K individuals spans ~34-39 million generations, and saturation for these mutation types may not be achievable in the foreseeable future.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 document low saturation levels for less mutable types (5% for T>A, 27% for non-mCpG C>T), supported by Figure 3a. The genealogy length estimates (C36-C37) are derived from both empirical saturation data and coalescent simulations. The slow growth of genealogy length with sample size (C38) is theoretically sound and simulation-supported. Claims C39-C40 logically follow from the genealogy length and mutation rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "Mean de novo mutation rates at methylated CpG sites do not differ significantly between synonymous and non-synonymous annotations, though methylation levels show a small but significant shift toward higher values for non-synonymous sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C22 is supported by Figure 2a showing no significant differences in mean DNM rates across annotations. Claim C23 acknowledges a small but significant difference in methylation distributions (Figure 2\u2014figure supplement 1), which the authors note should be conservative for identifying selection. This validates a key assumption of the saturation approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Using Bayesian inference with simulations, the authors estimate that ~52% of de novo LOF mutations and ~40% of missense mutations at methylated CpGs have hs\u22650.5\u00d710\u207b\u00b3. This translates to approximately 1 in 236 de novo mutations being highly deleterious, or 1 in 3.4 individuals born with such a mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The Bayesian framework (C42-C44) relies on strong assumptions: a specific demographic model, a log-uniform prior on selection coefficients, fixed dominance (h=0.5), and constant selection over time. While the posterior odds are calculated correctly given these assumptions, the results are sensitive to prior choice (Figure 4\u2014figure supplement 1). The translation to per-individual mutation burden (C46-C47) compounds these uncertainties. The approach is methodologically sound but the quantitative estimates should be interpreted cautiously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "In sufficiently large samples, even strongly selected mutations (hs=0.5\u00d710\u207b\u00b3) can be observed segregating. Under mutation-selection-drift balance, such mutations are expected at ~187 copies in a sample of 780K chromosomes. This implies that clinically relevant variants cannot be excluded simply by their presence in reference databases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by simulations (Figure 4c) and mutation-selection-drift balance theory. The expected frequency calculation (C50) is standard population genetics. Claim C52 logically follows: large samples contain a mixture of neutral, weakly, and strongly selected variants. The clinical implication (C53) is a reasonable inference, though the relationship between selection strength and clinical relevance is complex. Claim C54 about embryonic lethality is theoretically sound but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "At current sample sizes, invariant methylated CpGs are likely highly deleterious, while less mutable types provide limited information. Pathogenic mutations from ClinVar and DDD show 6-51 fold enrichment at invariant sites compared to benign variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 follows from the saturation analysis and Bayesian inference (C42). Claim C56 is supported by Figure 4\u2014figure supplement 3. The enrichment analysis (C57) provides external validation, though the authors appropriately note that ClinVar classifications themselves rely partly on presence/absence in reference databases, creating potential circularity. The wide range of enrichment (6-51 fold) reflects different comparison groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C58",
+      "C59",
+      "C62",
+      "C63"
+    ],
+    "result": "The study uses de novo mutation data from ~2900 parent-offspring trios and polymorphism data from ~390,000 individuals across multiple datasets (gnomAD, UK Biobank, DiscovEHR). Quality control shows high concordance across datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 describe the DNM dataset, appropriately characterized as the largest unascertained trio dataset. Claims C62-C63 document quality control measures showing high concordance (88% shared across datasets, >95% coverage for most variants). These data quality checks support the reliability of the saturation estimates. Claim C1 provides context about the scale of available exome data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "In the gnomAD dataset alone, 94.7% of possible synonymous CpG transitions at methylated sites are observed; this increases to 98.8% in the combined sample of 390K individuals. Even the least mutable CpG trinucleotide context shows 98% saturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims directly report the observed saturation levels from the polymorphism data, supported by Figure 1. The progression from 94.7% (gnomAD alone) to 98.8% (combined) demonstrates the effect of increasing sample size. The consistency across trinucleotide contexts (C17, Figure 1\u2014figure supplement 3b) strengthens the conclusion that saturation is robust.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,323 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C30",
+      "C34",
+      "C42",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C67",
+      "C68"
+    ],
+    "result": "Mouse and chinchilla spiral ganglion neurons (SGNs) exhibit intrinsic mechanical sensitivity. In vitro experiments demonstrate that mechanical displacement of SGN soma or dendrites elicits inward currents (100-700 pA) with reversal potential ~0 mV, consistent with non-selective cationic conductance. The half-maximal activation displacement (X0.5) differs between apical (0.42 \u03bcm) and basal (0.35 \u03bcm) neurons, with apical neurons showing higher sensitivity. Mechanical stimulation evokes diverse firing responses including adapting, bursting, or non-adapting patterns, with response latency dependent on slew rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C30, C34, C42-56, C67-68 are well-supported by extensive in vitro electrophysiological data from both mouse and chinchilla SGNs. The experiments include voltage-clamp recordings showing mechanically-activated currents with characterized biophysical properties (amplitude, kinetics, reversal potential, displacement-response relationships), and current-clamp recordings demonstrating mechanical stimulation-evoked action potentials. The data are quantitative with appropriate sample sizes and statistical measures. The findings are consistent across multiple experimental configurations (soma vs. dendrite stimulation, different displacement protocols).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The mechanically-activated currents in SGNs are mediated by mechanosensitive channels sensitive to GsMTx4. Application of 1 \u03bcM GsMTx4 reduced mechanically-activated current amplitude by ~52% with an IC50 of 0.9 \u03bcM, and completely abolished dendrite displacement-evoked action potentials in a partially reversible manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-36, C57-59 are supported by pharmacological experiments using GsMTx4, a known mechanosensitive channel blocker. The dose-response relationship is well-characterized (IC50 = 0.9 \u00b1 0.2 \u03bcM, n=4), and the effects on both currents and action potentials are demonstrated. The partial reversibility after washout (C59) provides additional evidence for specific pharmacological action. However, GsMTx4 is not entirely specific and can affect multiple mechanosensitive channel types, which introduces some uncertainty about the exact molecular identity of the channels involved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C88"
+    ],
+    "result": "Chinchilla SGNs exhibit mechanical sensitivity similar to but not identical to mouse SGNs. The half-maximal activation displacement for chinchilla SGNs was 0.49 \u00b1 0.05 \u03bcm (n=9), with reversal potential of -8.1 \u00b1 5.5 mV (n=5). Peak-splitting with paired mechanical-current stimulation was also observed in chinchilla SGNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-62, C88 are supported by experimental data from chinchilla SGNs showing mechanical sensitivity with quantified parameters. The cross-species validation strengthens the physiological relevance of the findings. The X0.5 value (0.49 \u03bcm) is slightly higher than mouse apical neurons (0.42 \u03bcm), and the reversal potential (-8.1 mV) differs somewhat from mouse (~0 mV), indicating species-specific differences while confirming the general phenomenon of mechanical sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Mouse vestibular neurons (VNs) also respond to mechanical displacement but are less responsive than auditory neurons (approximately threefold lower magnitude) and show attenuated responses to mechanical stimulation frequencies >10 Hz. The magnitude of displacement required for VN responses was comparable to dorsal root ganglion neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-66 are supported by comparative experimental data between vestibular and auditory neurons. The quantitative comparison (threefold difference in magnitude, C64) and frequency-dependent attenuation (C65) are data-driven observations. The comparison to DRG neurons (C66) is supported by citations to prior research. This demonstrates that mechanical sensitivity is not unique to auditory neurons but may be tuned differently across sensory neuron types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "SGNs respond to sinusoidal mechanical stimulation with phase-locked action potential firing that increases with stimulus amplitude, up to frequencies of 100 Hz, but responses are absent at 1000 Hz. In contrast, responses to current injection reach 1000 Hz and are broader than responses to mechanical stimulation. Some SGNs (4 out of 11) showed attenuated responses with larger mechanical displacement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-73 are supported by experimental data showing frequency-dependent responses to mechanical vs. electrical stimulation. The frequency limitation of mechanical responses (100 Hz) compared to current injection (1000 Hz) is clearly demonstrated. The observation that some neurons show response attenuation with larger displacement (C70) adds complexity but is appropriately reported as a subset observation (4/11 neurons). These findings are important for understanding the physiological range and limitations of mechanical sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Subthreshold mechanical displacement and subthreshold current injection interact synergistically: when combined, they can evoke suprathreshold action potentials. The mechanical responsiveness increases with increased current injection (shifting rate curves to lower displacement values), and vice versa. The relationships are linear with slopes of -1.4 \u03bcm/nA for X0.5 as a function of current and -0.5 nA/\u03bcm for I0.5 as a function of displacement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-80 are well-supported by systematic experiments varying both mechanical and electrical stimulation parameters. The linear relationships (C79-80) are quantified with specific slopes, indicating orderly interactions between the two modalities. The data demonstrate that mechanical and synaptic inputs can summate to control spike generation, which is a key finding for understanding how these two pathways might interact in vivo. The experimental design appropriately tests the interaction by using subthreshold stimuli that become suprathreshold when combined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Combined mechanical and current stimulation significantly affects phase-locking (vector strength, VS) in SGNs. In slowly adapting neurons, VS increased from 0.82 \u00b1 0.05 to 0.98 \u00b1 0.01 (n=9, p=0.01), and in moderately adapting neurons from 0.72 \u00b1 0.06 to 0.82 \u00b1 0.07 (n=8, p=0.04). Overall, 75% of neurons (21/28) showed significant increases in VS, while 25% (7/28) showed reduced VS. Application of GsMTx4 reduced the VS enhancement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-85 are supported by quantitative measurements of vector strength with appropriate statistical testing. The data show that combined stimulation generally enhances phase-locking, though with some heterogeneity (25% show reduction). The GsMTx4 experiment (C85) provides pharmacological evidence linking the VS changes to mechanical sensitivity. The statistical significance is properly reported with p-values and sample sizes. This demonstrates that mechanical sensitivity can modulate temporal coding precision in auditory neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Varying the amplitude of mechanical stimulation during combined mechanical-current stimulation produces peak-splitting in cycle histograms, reminiscent of in vivo observations. At 0.2 \u03bcm displacement, a second peak appears in the cycle histogram, which becomes unimodal again at 0.3 \u03bcm. Phase angles that produce peak-splitting are associated with lower spike rates, and paired stimuli can cause response suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-87, C89-91 are supported by experimental data showing amplitude-dependent changes in cycle histograms. The recapitulation of peak-splitting (C86), a well-known in vivo phenomenon, is a significant finding. The association between peak-splitting and reduced spike rates (C89-90) matches in vivo observations ('Nelson's notch'). The demonstration of response suppression (C91) is supported by data in Figures 2c-f and 3. This provides a potential mechanistic explanation for previously unexplained in vivo phenomena.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C38"
+    ],
+    "result": "Sound-mimicking sinusoidal mechanical and electrical current stimuli affect phase-locked responses in a phase-dependent manner, and can evoke suppressive responses. Simultaneous sinusoidal stimulation with current injection and mechanical displacement alters firing rate and temporal coding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-8, C38 are high-level summary statements supported by the detailed experimental findings in claims C75-91. The phase-dependent effects are demonstrated through systematic variation of relative phase between mechanical and electrical stimuli (Figure 3). The suppressive responses are shown in multiple experimental configurations. These claims accurately summarize the major in vitro findings regarding stimulus interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "In vivo application of NBQX (synaptic blocker) suppresses spontaneous action potentials and eliminates sharp frequency tuning at the characteristic frequency, but sound-evoked action potentials persist at high intensities with broad, shallow tuning curves having lowest thresholds at low frequencies (<1 kHz). The effects are depth-dependent, with superficial fibers (high-frequency regions) more affected than deeper fibers, likely due to limited drug diffusion to apical cochlear regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-40, C92-97 are supported by in vivo single-unit recordings before and after NBQX application (Figure 4). The differential effects on spontaneous activity vs. high-intensity responses, and on frequency tuning tips vs. tails, are clearly demonstrated. The depth-dependent effects and interpretation regarding drug diffusion (C93) are reasonable given the anatomy and prior knowledge of drug delivery limitations. However, the interpretation that persistent responses are due to mechanical sensitivity (rather than incomplete synaptic blockade) requires additional support and is addressed in other claim groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Cochlear function remained intact during NBQX experiments: acoustic distortion products (DPOAEs) and cochlear microphonic potentials remained high after NBQX injection and only disappeared upon anesthetic overdose at experiment termination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-100 are supported by monitoring data (Figure 4g) showing stable DPOAEs and cochlear microphonic throughout the experiment. This is critical control data demonstrating that the loss of neural responses was not due to cochlear damage or dysfunction. The disappearance of these signals only after anesthetic overdose confirms they were measuring viable cochlear function. This strengthens the interpretation that NBQX effects were on neural transmission rather than cochlear mechanics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Application of nimodipine (L-type Ca2+ channel blocker) produced effects similar to NBQX, with profound suppression of spontaneous activity for recording depths up to ~500 \u03bcm and very shallow tuning curves. Deeper fibers were less affected, likely due to limited drug diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-103 are supported by in vivo data (Figure 4\u2014figure supplement 1) showing similar effects with a different class of synaptic blocker. The use of Ca2+ channel blockers provides independent pharmacological evidence that synaptic transmission blockade does not eliminate all sound-evoked responses at high intensities. The depth-dependent effects parallel those seen with NBQX. This strengthens the argument against incomplete synaptic blockade as an explanation for persistent responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C10"
+    ],
+    "result": "The authors propose that mechanical sensitivity interacts with synaptic responses to shape auditory nerve responses including frequency tuning and temporal phase locking, giving the mammalian auditory nerve a secondary receptor role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9-10 represent interpretive conclusions that extend beyond the direct experimental evidence. While the in vitro data clearly demonstrate mechanical sensitivity and its interactions with electrical stimulation, and the in vivo data show persistent responses after synaptic blockade, the causal link between these observations and the proposed role in shaping frequency tuning and phase locking in intact systems requires additional validation. The in vitro experiments use soma/dendrite displacement as a proxy for in vivo mechanical stimulation, but the actual displacement amplitudes and patterns experienced by SGN terminals during sound stimulation in vivo remain unclear (as acknowledged in C109). The proposal is plausible and supported by circumstantial evidence, but definitive proof would require additional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "Minute mechanical displacement profoundly affects auditory nerve response properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 is a summary statement supported by the collective experimental evidence showing that sub-micrometer displacements (X0.5 ~0.35-0.49 \u03bcm) can elicit significant currents and action potentials, and that mechanical stimulation interacts with electrical stimulation to modulate firing rate, phase-locking, and temporal patterns. The term 'profoundly affects' is justified by the magnitude of effects observed (e.g., VS changes from 0.82 to 0.98, generation of peak-splitting, response suppression).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C74"
+    ],
+    "result": "The anatomical arrangement of SGN dendrites suggests they undergo mechanical deformation during sound stimulation. SGN dendrites emanate from the habenula perforata and angle toward inner hair cells between the osseous spiral lamina, basilar membrane, and inner pillar cells, losing their myelin sheath at the habenula perforata. The organ of Corti rotates about a pivot point near the tip of the osseous spiral lamina.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-33, C74 are supported by anatomical knowledge (citations to prior research, C32, C74) and logical inference based on geometry (C31, C33). The anatomical description is well-established in the literature. The inference that unmyelinated terminals undergo mechanical deformation (C31) is reasonable given the geometry and known organ of Corti movements, though direct measurement of terminal deformation during sound stimulation has not been achieved. This provides anatomical plausibility for the functional findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C41",
+      "C113"
+    ],
+    "result": "The findings suggest that primary neurons may support sensory receptor functions, and that a mechanical interface could provide an additional activation mode to supplement current cochlear implant strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C41 and C113 represent speculative interpretations and potential applications of the findings. C41 is supported by citations to similar phenomena in other systems (retinal ganglion cells, DRG neurons), making it a reasonable hypothesis, but the evidence for this 'emerging notion' in auditory neurons specifically is the subject of this paper and thus somewhat circular. C113 is a speculative suggestion for clinical application that would require extensive additional research to validate. Both claims are appropriately framed as suggestions/interpretations rather than established facts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Background claims establishing the context of mechanosensation in sensory systems, properties of auditory, vestibular, and tactile systems, and established mechanisms of auditory nerve activation through hair cell synaptic transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-3, C11-29 are background statements supported by citations to prior research or represent established knowledge in the field. These provide context for the study but are not novel findings. They are appropriately cited and accurately represent the current understanding of mechanosensory systems and auditory nerve function. These claims establish the paradox that motivates the study: how the auditory system achieves ultrafast temporal processing despite conventional synaptic mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Discussion of prior work on mechanical sensitivity in neural development, previous studies using spider venom or acoustic trauma, measurements of cochlear displacements, and cochlear implant strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-112 are discussion points supported by citations to prior research. They provide context for interpreting the current findings, address potential contradictions with prior work (C106-108), and discuss the physiological relevance of the displacement magnitudes used in vitro (C109-110). The discussion of cochlear implants (C111-112) provides clinical context. These claims accurately represent prior work and are appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "In a small number of neurons (6 out of 110), increasing flow rate produced a suppressive response. SGN terminals are unmyelinated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 reports a minority observation (6/110 neurons showing suppressive response to increased flow rate) that is appropriately noted as occurring in a small subset. C44 is an established anatomical fact supported by citations. Both claims are well-supported, with C43 representing an interesting heterogeneity in responses that may relate to the suppressive effects observed with combined stimulation.",
+    "result_type": "MINOR"
+  }
+]

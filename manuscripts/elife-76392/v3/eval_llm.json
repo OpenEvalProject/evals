@@ -1,0 +1,237 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "WhyD is essential in wild-type Streptococcus pneumoniae but dispensable in cells lacking LytA. Tn-Seq screening identified whyD as essential in WT but not in \u0394lytA cells. Validation experiments using a zinc-inducible lytA system showed that whyD deletion is lethal only when LytA is expressed, causing premature lysis in exponential phase. Addition of recombinant LytA to \u0394lytA \u0394whyD cells induced immediate lysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C26 and C103-C106 provide converging genetic and phenotypic evidence from Tn-Seq (Figure 1A), spot dilution assays (Figure 1B), growth curves (Figure 1C-D), and complementation experiments. The data consistently demonstrate that whyD essentiality is suppressed by lytA deletion, establishing WhyD as a negative regulator of LytA-induced autolysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C64"
+    ],
+    "result": "WhyD limits WTA accumulation during exponential growth without affecting LTA levels. Deletion of whyD causes dramatic WTA accumulation (similar to \u0394tacL mutants) while LTA levels remain unchanged. Ectopic expression of whyD restores WT WTA levels. WhyD protein levels remain stable during exponential growth and autolytic conditions, and the WTA/LTA shift during autolysis is unaffected by WhyD inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33 and C64 are supported by biochemical data in Figure 2 showing WTA and LTA levels across multiple genetic backgrounds and growth conditions. The complementation experiment (C30) and protein stability data (C31, Figure 2\u2014figure supplement 1) provide strong evidence that WhyD continuously degrades WTAs during exponential growth to maintain low steady-state levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C69",
+      "C70",
+      "C71",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C88"
+    ],
+    "result": "WhyD is a WTA-specific hydrolase with a GlpQ phosphodiesterase domain. The C-terminal domain (WhyDCT) releases WTAs from purified sacculi in a Ca2+-dependent manner but cannot release LTAs from membranes. Unlike the exolytic B. subtilis GlpQ, WhyD releases WTA polymers with length distributions similar to LTAs, suggesting endolytic cleavage at the WTA-PG linkage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 and C69-C71 are supported by bioinformatic analysis (Figure 3A, Figure 3\u2014figure supplement 1) and in vitro biochemical assays (Figure 3B-C, Figure 8\u2014figure supplement 1). The substrate specificity (WTAs but not LTAs), Ca2+ requirement, and polymer length distribution data collectively support the proposed mechanism. Comparison to B. subtilis GlpQ (C83-C86) strengthens the mechanistic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C80",
+      "C81"
+    ],
+    "result": "WhyD and WTA levels regulate cell elongation. Cells lacking WhyD (high WTAs) are longer, wider, and larger than WT. Conversely, WhyD overexpression (low WTAs) produces shorter, smaller cells. These morphological changes are independent of LytA, as experiments were performed in \u0394lytA backgrounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42, C80-C81 are supported by quantitative microscopy data in Figure 4 showing statistically significant differences in cell length, width, and area. The bidirectional effects (loss vs. overexpression) and complementation data provide strong evidence. However, the mechanistic link between WTA levels and cell elongation remains inferential (C42).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C68",
+      "C82"
+    ],
+    "result": "WTA-binding PG hydrolases contribute to cell elongation. The \u0394lytABC mutant (lacking three major WTA-binding hydrolases) displays cell separation defects and produces shorter, smaller cells similar to WhyD overexpression phenotypes. Despite this, the \u0394lytABC mutant remains viable, suggesting additional space-making hydrolases exist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45, C68, C82 are supported by microscopy and quantitative analysis in Figure 5. The morphological similarity between \u0394lytABC and whyD++ cells supports the model that WTAs recruit hydrolases for cell elongation. However, the viability of \u0394lytABC indicates the model is incomplete, as acknowledged by the authors (C68).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "WhyD localizes to sites of nascent PG synthesis at midcell. A functional GFP-WhyD fusion shows enrichment at midcell that co-localizes with HADA-labeled nascent PG, despite significant cytoplasmic background signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 are supported by microscopy data in Figure 6 and complementation data in Figure 6\u2014figure supplement 1A. The co-localization with HADA (nascent PG marker) supports the inference that WhyD is recruited to sites of active PG synthesis (C48). However, the significant cytoplasmic signal and potential fusion protein instability (acknowledged in text) introduce some uncertainty about the precise localization pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "WTAs localize to peripheral zones flanking nascent PG synthesis and to deep constrictions during late division. Using catalytically inactive LytA*-Alexa as a WTA-specific probe, WTAs were found in bands adjacent to midcell (co-localizing with HADA-labeled peripheral PG) in elongating cells and at deep constrictions in dividing cells. In \u0394whyD cells, WTAs are distributed throughout the cell wall. WhyD enrichment at midcell anti-correlates with WTA localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C56, C89-C92 are supported by extensive microscopy data using multiple labeling approaches (Figure 7, Figure 7\u2014figure supplements 1-6). The specificity of rLytA*-Alexa for WTAs is well-validated (C49-C51, C90-C91). The localization patterns are consistent across wide-field, deconvolution, and SIM imaging (C92). The anti-correlation between GFP-WhyD and WTA localization (C89) supports the model that WhyD removes WTAs at midcell.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C61",
+      "C62",
+      "C63",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "WhyD-mediated WTA localization directs PG hydrolase activity for cell elongation and division while preventing autolysis. The model proposes that WhyD removes most WTAs from nascent PG at midcell, creating a gradient where peripheral WTAs recruit hydrolases for cell wall expansion. During late division, WTAs accumulate at constrictions to recruit separation hydrolases. This spatial control prevents excessive LytA recruitment and autolysis during exponential growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59, C61-C63, C65-C67 represent the integrated model supported by the collective data. The model is well-supported by the localization data (Result 7), morphological phenotypes (Results 4-5), and biochemical characterization (Results 2-3). However, some aspects remain speculative (C57, C65-C66 contain speculation), and the precise mechanism of WTA accumulation at late septa is not fully explained. The model is internally consistent and parsimonious given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C12",
+      "C13",
+      "C14",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background on penicillin-induced autolysis and LytA regulation in S. pneumoniae. Penicillin disrupts cell wall synthesis and misactivates autolysins. In S. pneumoniae, LytA is the major autolysin responsible for penicillin-induced lysis. Previous work showed that penicillin treatment causes a shift from LTAs to WTAs, recruiting LytA to the cell wall. During exponential growth, LTAs sequester LytA at the membrane, but FtsH-mediated degradation of TacL during stress increases WTAs and triggers lysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5, C12-C14, C17-C19 summarize established knowledge and the authors' previous findings (Flores-Kim et al., 2019). These are well-supported by citations and provide essential context for the current work. This is background information rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Background on bacterial cell wall structure and PG hydrolases. The bacterial cell wall consists of peptidoglycan (PG), a crosslinked glycan polymer essential for cell integrity. PG synthesis requires both synthetic enzymes (PBPs, SEDS proteins) and hydrolases (autolysins) that create space for expansion and facilitate cell division. PG hydrolases are genetically redundant, making their regulation difficult to study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11, C93-C101 represent established knowledge in bacterial cell biology, supported by numerous citations. This provides necessary background but does not constitute new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C60",
+      "C77",
+      "C78",
+      "C79",
+      "C87",
+      "C102"
+    ],
+    "result": "Background on teichoic acids in S. pneumoniae and experimental approach. LTAs and WTAs in S. pneumoniae are made from a common precursor and decorated with choline moieties that bind LytA. WTAs are essential in S. pneumoniae but kept at low levels during exponential growth. The authors designed a Tn-Seq screen exploiting the fact that S. pneumoniae relies on a single autolysin (LytA) for lysis induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16, C60, C77-C79, C87, C102 provide background on teichoic acid biology and describe the experimental strategy. These are well-supported by citations and describe the rationale for the study design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Speculation on WTA recycling and therapeutic potential. The authors speculate that WTAs may be recycled similar to PG turnover, potentially via WhyD's N-terminal domain which shares homology with choline transporters. Inactivation of non-LytA hydrolases does not suppress whyD essentiality. B. subtilis GlpQ mutants are hypersensitive to \u03b2-lactams, suggesting WhyD and related proteins could be antibiotic targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72-C73 are explicitly speculative (C72, C73 marked as speculation). C74 is supported by data in Supplementary file 1. C75 is supported by citation. C76 is speculation about future applications. These represent interesting hypotheses but lack direct experimental support in this study.",
+    "result_type": "MINOR"
+  }
+]

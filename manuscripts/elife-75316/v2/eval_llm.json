@@ -1,0 +1,269 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "PV interneurons from young 5xFAD mice (7-8 weeks old, pre-plaque) exhibit severely dampened near-threshold firing while maximal firing rates remain unaltered. Passive membrane properties are unchanged, suggesting an active mechanism underlies the firing deficit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C40-C43 are directly supported by patch-clamp recordings shown in Figure 1C-D with appropriate statistical analysis (repeated-measures two-way ANOVA). The observation that passive parameters (input resistance, holding current) are unchanged (C42) with statistical support (p>0.05) strengthens the inference that an active mechanism is responsible (C43). The experimental design appropriately controls for cell capacitance normalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C30"
+    ],
+    "result": "Nav channel properties and expression are not responsible for the altered firing phenotype in 5xFAD PV interneurons. Experimental measurements, computational modeling, and qPCR all indicate that Nav channels cannot account for the observed changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C59 and C30 are well-supported by converging evidence from multiple approaches: (1) patch-clamp measurements showing no differences in Nav-associated parameters (Figure 2A-B), (2) computational modeling demonstrating that Nav modulation produces phenotypes inconsistent with observations (Figure 3B-D, Figure 3-supplement 1), and (3) qPCR showing no changes in Nav1.1 or Nav1.6 mRNA (Figure 3F-G). The multi-modal approach strengthens the negative conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C74",
+      "C75",
+      "C77",
+      "C31"
+    ],
+    "result": "Kv3 channels in 5xFAD PV interneurons show altered biophysical properties (hyperpolarized activation voltage, decreased activation kinetics) without changes in overall conductance or mRNA expression. This represents a novel mechanism of channel dysfunction independent of expression changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C69, C74-C75, C77, and C31 are strongly supported by outside-out patch recordings (Figure 4B-E) showing characteristic Kv3 properties with specific biophysical alterations in 5xFAD (half-activation voltage shift from -6.6 mV to -15.5 mV), qPCR showing no mRNA changes (Figure 4F), and mass spectrometry showing no protein changes at 7.2 weeks (Figure 4-supplement 2B). The convergence of biophysical, molecular, and proteomic data is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C92",
+      "C93",
+      "C32"
+    ],
+    "result": "Computational modeling demonstrates that hyperpolarizing Kv3 activation voltage recapitulates the 5xFAD firing phenotype, specifically dampening near-threshold firing while preserving high-frequency firing. Kv3 activation kinetics modulate AP width, while inactivation kinetics have minimal effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C93 and C32 are supported by systematic NEURON simulations (Figure 5A-E) exploring parameter space. The modeling appropriately tests specific hypotheses about which Kv3 parameters matter. The key finding that a -10 mV shift in activation voltage reproduces the phenotype (C84-C85) is well-demonstrated. However, the model is simplified (single compartment) and lacks validation of some assumptions about channel densities and distributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Dynamic clamp experiments in WT PV interneurons confirm that introducing biophysically modified Kv3 conductance (with hyperpolarized activation voltage) reproduces the 5xFAD hypoexcitable phenotype, while adding WT Kv3 has no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C105 are supported by dynamic clamp recordings (Figure 6B-D, Figure 6-supplement 1) providing critical experimental validation of the modeling predictions. The within-cell design (testing multiple conditions in the same neuron) is rigorous. Statistical analysis (repeated-measures two-way ANOVA) is appropriate. This represents strong causal evidence linking Kv3 biophysical changes to the firing phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Kv3 modulation affects synaptically-evoked firing in PV interneurons. Hyperpolarized Kv3 activation reduces EPSP amplitude and strongly reduces synaptically-evoked AP firing, demonstrating functional consequences under physiologically relevant conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C116 are supported by both modeling (Figure 7A-B, Figure 7-supplement 1A-B) and dynamic clamp experiments with synaptic conductance injection (Figure 7C-D, Figure 7-supplement 1C). The experiments appropriately test near-threshold conditions relevant to in vivo firing. Statistical analysis (one-way ANOVA) is appropriate. This extends the findings beyond simple current injection protocols.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C33",
+      "C34",
+      "C125",
+      "C126"
+    ],
+    "result": "Network modeling demonstrates that Kv3 biophysical changes in PV interneurons cause circuit hyperexcitability and increased gamma power. The relationship between Kv3 voltage shift and gamma power is exponential (R\u00b2=0.93), suggesting network robustness to small perturbations but sensitivity to larger changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C123, C33-C34, C125-C126 are supported by network simulations (Figure 8) with biologically constrained connectivity. The finding of increased PC firing (7.07 to 30.3 Hz, p<0.0001) and gamma power (0.13 to 38.7 mV\u00b2/Hz, p<0.05) is statistically significant. The exponential relationship (C121) is well-characterized. However, the model is simplified (220 cells, reduced layer 5 circuit) and lacks validation against in vivo recordings from 5xFAD mice. The mechanistic link (altered E/I ratio, C119) is inferred rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "AAV.E2.GFP viral vector specifically labels PV interneurons in somatosensory cortex. The labeled neurons exhibit characteristic PV cell properties and express PV-specific genes at levels indistinguishable from PV-Cre mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 are supported by experimental validation (Figure 1A-B, Figure 1-supplement 1). The qPCR comparison with PV-Cre mice (C38-C39) provides important validation of cell-type specificity. The timing (injection at P42-49, recording at ~7 weeks) is appropriate for pre-plaque studies. This methodological validation is essential for interpreting all subsequent findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C144"
+    ],
+    "result": "Mass spectrometry reveals age-dependent proteomic changes in 5xFAD cortex. At 7.2 weeks (matching physiological studies), Kv3 proteins are unchanged while Nav1.1 shows a slight increase (5.9%, p<0.05 unadjusted). Proteomic alterations expand with age, with progressive reduction in Kv3.3 and eventual reduction in Nav1.1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C83, C144 are supported by mass spectrometry data (Figure 4-supplement 2) from bulk cortical homogenates. However, several concerns limit confidence: (1) The Nav1.1 increase at 7.2 weeks (C78) uses unadjusted p-values without multiple testing correction, (2) bulk homogenates cannot resolve cell-type-specific changes in PV interneurons, (3) the progressive Kv3.3 reduction (C81) is interesting but occurs after the physiological phenotype emerges, and (4) no statistical analysis is provided for the age-related trends. Cell-type-specific proteomics would strengthen these conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "BK channels do not contribute to the TEA-sensitive currents recorded from PV interneuron outside-out patches, as confirmed by lack of response to iberiotoxin (IBTX).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 are supported by IBTX application experiments showing no change in conductance (5.2\u00b11.6 vs 5.1\u00b11.5 nS, p>0.05, n=5). This control experiment appropriately addresses the potential confound that BK channels are also TEA-sensitive. The sample size is modest but adequate for this negative control result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Kv7 channel modulation cannot explain the 5xFAD phenotype. Modeling shows that hyperpolarizing Kv7 activation voltage does not affect AP firing frequency or waveform properties, unlike Kv3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 are supported by computational modeling (Figure 5-supplement 1B-D) that systematically tests Kv7 as an alternative hypothesis. The negative results appropriately rule out Kv7 as the primary mechanism. However, this remains a modeling-only result without experimental validation (e.g., Kv7 blockers in recordings).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Background and context: AD involves known genetic risk factors and biomarkers, but causal factors for cognitive decline remain controversial. Circuit hyperexcitability emerges before plaque deposition in AD models and patients. PV interneurons show altered firing before other cell types and may dysregulate cortical excitability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C26 provide literature context supported by appropriate citations. These establish the rationale for studying PV interneurons in early AD. The claims accurately represent the state of the field, though they are primarily knowledge claims rather than novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C124"
+    ],
+    "result": "Summary conclusion: Biophysical modulation of Kv3 channels (not expression changes) causes dampened PV excitability and gamma-frequency-specific network hyperexcitability in early AD, demonstrating that ion channel biophysical alterations alone can reshape cortical network activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10, C124 represent the main conclusions, which are well-supported by the convergent evidence from patch-clamp recordings, qPCR, mass spectrometry, computational modeling, dynamic clamp, and network simulations. The multi-level approach from molecules to circuits is a strength. However, the network hyperexcitability conclusion relies entirely on modeling without in vivo validation in 5xFAD mice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180"
+    ],
+    "result": "Therapeutic implications: Strategies to increase WT Kv3 expression are unlikely to rescue the phenotype, but drugs or genetic therapies that depolarize Kv3 activation voltage may be promising. Some off-target Kv3 effects may be acceptable given selective sensitivity to activation voltage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C176-C180 are speculative therapeutic proposals based on the findings. While C176 is supported by the dynamic clamp data showing no effect of WT Kv3 supplementation, claims C177-C178 are hypothetical future directions without experimental validation. These represent reasonable inferences but require substantial additional work including drug screening, in vivo testing, and assessment of behavioral/cognitive outcomes.",
+    "result_type": "MINOR"
+  }
+]

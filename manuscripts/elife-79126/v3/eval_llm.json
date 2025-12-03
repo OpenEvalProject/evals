@@ -1,0 +1,317 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The authors generated a doxycycline-inducible HOTAIR transgenic mouse model (HOTAIR-rtTA) where human HOTAIR expression can be controlled by Dox administration. HOTAIR was effectively induced in mESCs and mice with Dox treatment and returned to baseline within 48 hours after withdrawal. HOTAIR overexpression in normal mice showed minimal phenotypic effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 provide consistent experimental evidence from ES cells and mice showing successful generation and validation of the inducible system with appropriate controls (qRT-PCR, Figure 1). Claim C40 is supported by comprehensive phenotypic analysis (Figure 1\u2014figure supplement 1B) showing minimal effects in wild-type background, establishing baseline for subsequent cancer studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "In the iHOT-PyMT breast cancer mouse model, HOTAIR overexpression did not affect primary tumor growth but significantly increased lung metastasis. Dox treatment itself had no effect on tumor progression, and endogenous mouse Hotair expression was very low with no impact on metastasis when knocked out.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 are well-supported by qRT-PCR (Figure 2B), tumor measurements (Figure 2C), and histological analysis (Figures 2D-E). Critical controls are addressed: C45 rules out Dox effects, C46-C47 eliminate confounding from endogenous mouse Hotair. Statistical analysis (one-way ANOVA) with appropriate sample sizes (n=7-9 for tumors, n=3-10 for metastases) supports the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "In isolated iHOT+ breast cancer cells, HOTAIR was highly inducible with Dox and rapidly decreased after withdrawal. HOTAIR localized to both nucleus and cytoplasm. HOTAIR overexpression increased invasive capacity without affecting proliferation, and this invasiveness was reversible upon HOTAIR withdrawal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 establish the in vitro system with qRT-PCR (Figure 3B) and smFISH data (Figure 3\u2014figure supplement 1E). Claims C53-C55 demonstrate functional effects with Matrigel invasion assays (Figure 3C) and proliferation assays (Figure 3\u2014figure supplement 1C). The reversibility upon withdrawal is a key finding supported by appropriate experimental design with three conditions (Dox-, Dox+, DoxWD). Statistical tests (Student's t-test) show significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Tail vein injection experiments in SCID mice demonstrated that HOTAIR-overexpressing iHOT+ cells showed significantly higher lung colonization compared to controls. Cells withdrawn from Dox showed reduced colonization similar to untreated controls, indicating that ongoing HOTAIR expression is required to maintain metastatic potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 are supported by bioluminescence imaging (Figures 3D-E), histological analysis (Figure 3F), and replicate experiments (Figure 3\u2014figure supplement 1D). The reversibility demonstrated in C57 is critical for the 'addiction' conclusion in C58-C61. Sample sizes (n=4-7) and statistical analysis (Student's t-test, one-way ANOVA) are appropriate. The conclusion of ongoing requirement (C61) is a reasonable inference from the withdrawal data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "RNA-seq analysis revealed 219 upregulated and 280 downregulated genes with HOTAIR overexpression (FDR <0.05, fold change >2), enriched for metastasis-related GO terms. Most differentially expressed genes reverted to baseline levels after Dox withdrawal, with minimal overlap between DoxWD vs. Dox- comparisons and Dox+ vs. Dox- comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 present RNA-seq results with appropriate statistical thresholds and GO analysis (Figure 4A, Figure 4\u2014figure supplement 1A). Claims C65-C69 demonstrate reversibility through hierarchical clustering and Venn diagram analysis (Figure 4\u2014figure supplement 1C-D). The finding of only 2 upregulated and 15 downregulated genes in DoxWD vs. Dox- (C68) with little overlap (C69) strongly supports the reversibility conclusion. Methods describe appropriate normalization (DESeq2) and multiple testing correction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "ATAC-seq revealed 1933 differentially accessible peaks with HOTAIR overexpression (1048 up, 885 down), with downregulated peaks enriched in promoter regions suggesting suppressive function. Like transcriptome changes, chromatin accessibility changes were largely reversed after HOTAIR withdrawal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 present ATAC-seq data with peak counts and genomic distribution analysis (Figures 4B-C). The inference in C74 about suppressive function near promoters is reasonable given the enrichment data. Claims C78-C81 demonstrate reversibility through clustering analysis and minimal differential peaks (0 up, 40 down) in DoxWD vs. Dox- comparison (Figure 4B, Figure 4\u2014figure supplement 1E-F). Methods describe appropriate peak calling (MACS2) and statistical analysis (DESeq2 with negative binomial models).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Motif enrichment analysis of ATAC-seq peaks identified transcription factors associated with tumor metastasis (AP-1 family members in upregulated peaks) and tumor suppression (Sox7, Sox15 in downregulated peaks).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 is supported by HOMER motif analysis with citations to prior work linking these factors to metastasis (Figure 4D). Claims C76-C77 cite prior research on Sox7 and Sox15 functions. The analysis appropriately connects chromatin accessibility changes to known metastasis-related transcription factors, though the functional significance would require additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C93"
+    ],
+    "result": "Integration of RNA-seq and ATAC-seq identified 92 genes with both differential expression and chromatin accessibility changes. These genes are enriched for metastasis-related pathways and include known metastasis-associated genes (Il33, Wnt7b upregulated; Kit downregulated), suggesting HOTAIR regulates metastasis genes through chromatin accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 present integrated analysis with GO terms related to metastasis (Figure 4E-G). Claims C86-C88 provide specific examples with genome browser tracks (Figure 4H) showing coordinated changes in chromatin and expression. The conclusion in C93 is a reasonable inference from the integrated data, though causality would require additional experiments. The analysis appropriately combines multiple data types to identify candidate direct targets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Several HOTAIR-regulated genes identified in the study (Il33, Wnt7b, Kit) have been previously linked to tumor progression and metastasis in the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 cite prior research establishing roles for these genes in cancer. This contextualizes the findings within existing knowledge and supports the biological relevance of the identified targets. However, these are literature-based claims rather than new experimental findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "HOTAIR overexpression induced EMT in iHOT+ cells, with increased Vimentin and decreased E-cadherin expression, along with morphological changes. After extended Dox withdrawal (10 passages), cells reverted to epithelial morphology and marker expression, though Vimentin persisted for several passages (3 passages) after HOTAIR returned to baseline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C98 are supported by immunofluorescence data and microscopy (Figures 5A-B) showing EMT marker changes and morphology. Claims C99-C100 appropriately summarize the reversibility. Claims C101-C103 identify an important temporal lag between HOTAIR downregulation (24 hr) and complete phenotypic reversion (10 passages), suggesting some persistence of HOTAIR effects. This is well-documented with time-course data. The observation of partial reversibility at passage 3 vs. complete at passage 10 is an important nuance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The study demonstrates that sustained HOTAIR overexpression increases breast cancer metastatic capacity, invasiveness, and EMT, but these changes are reversible upon HOTAIR withdrawal, indicating 'oncogenic lncRNA addiction' without persistent epigenetic memory. HOTAIR is required in an ongoing manner to maintain the metastatic program.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims synthesize the major findings across multiple experimental systems (mouse model, in vitro assays, tail vein injections, RNA-seq, ATAC-seq, EMT markers). Claims C5-C8 are supported by the collective evidence from C41-C61. Claims C104-C105 appropriately conclude functional conservation between human and mouse. Claims C106-C109 draw the key mechanistic conclusion about reversibility and ongoing requirement, well-supported by the withdrawal experiments showing reversion of transcriptome (C65-C69), chromatin (C78-C81), invasion (C54), metastasis (C57), and EMT (C97-C100). The 'addiction' model (C8, C109) is a reasonable interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Integration with published HOTAIR ChIRP-seq data identified potential direct HOTAIR targets: 207 genes overlapping with ATAC-seq changes, 34 with RNA-seq changes, and 12 genes with both chromatin and expression changes. These 12 genes are predominantly migration-associated, with pro-migratory genes (Ecm1, Gpr39, Padi1) upregulated and anti-migratory genes (Limch1) downregulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C138 present integration with published ChIRP-seq data (Chu et al., 2011) using hypergeometric tests for significance (Figure 4\u2014figure supplement 2A-C). The identification of 12 potential direct targets (~13% of genes with both chromatin and expression changes) is appropriately conservative. Claims C139-C141 characterize these genes with literature support. Claim C142 is a reasonable inference. However, the analysis relies on ChIRP-seq from a different cell type/system, which is a limitation. Direct validation of HOTAIR binding in iHOT+ cells would strengthen these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C15",
+      "C110",
+      "C113",
+      "C129"
+    ],
+    "result": "The authors propose that targeting HOTAIR could serve as a therapeutic strategy for breast cancer based on the reversibility of HOTAIR-induced metastatic phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims are speculative and based on inference from the reversibility data. While the reversibility findings (C106-C108) support the concept, no therapeutic interventions were tested. The claims appropriately use cautious language ('may potentially,' 'can potentially,' 'suggest'), but represent future directions rather than demonstrated results. Clinical translation would require additional validation including therapeutic targeting experiments, pharmacokinetics, and efficacy studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C111",
+      "C112",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C122",
+      "C126",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C143"
+    ],
+    "result": "The introduction and discussion provide extensive background on lncRNAs, HOTAIR biology, and prior research linking HOTAIR to cancer, including its molecular mechanisms, conservation between species, clinical associations, and potential therapeutic approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims summarize established knowledge from prior literature with appropriate citations. They provide context for the current study but are not new findings. The citations appear appropriate for the claims made, though verification of each cited paper's content is beyond this evaluation. These background claims are important for framing the study but are not primary results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C114",
+      "C119",
+      "C120",
+      "C121",
+      "C123",
+      "C124",
+      "C125",
+      "C127",
+      "C128"
+    ],
+    "result": "The authors discuss the utility of their mouse model, the functional conservation of human HOTAIR in mouse cells, the mechanism involving chromatin remodeling, and the distinction between HOTAIR's reversible effects versus persistent epigenetic memory established by other factors like Xist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C114 appropriately describes the model's utility. Claims C119-C121 draw mechanistic conclusions from the ATAC-seq data (C70-C81), though C121 is somewhat speculative. Claims C123-C125 synthesize the reversibility findings into the 'lncRNA addiction' model, well-supported by the withdrawal experiments. Claim C127 makes an interesting comparison to transcription factors based on reversibility, which is a reasonable interpretation. Claim C128 summarizes the rescue experiments. These discussion points appropriately interpret the data, though some involve inference beyond direct observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C13",
+      "C14"
+    ],
+    "result": "The authors conclude that HOTAIR exhibits 'erasable lncRNA-associated epigenetic memory' and has a continual role in programming metastatic gene regulatory programs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims synthesize the key conceptual findings. Claim C13 is supported by the reversibility of transcriptome (C65-C69), chromatin (C78-C81), and phenotypic (C54, C57, C97-C100) changes. Claim C14 is supported by the requirement for ongoing HOTAIR expression (C58-C61). The term 'erasable epigenetic memory' is somewhat paradoxical but captures the reversible nature of the changes. The conclusions are well-supported by the experimental data, though the timeframe for complete reversion (10 passages for EMT markers) suggests some persistence.",
+    "result_type": "MAJOR"
+  }
+]

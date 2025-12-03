@@ -1,0 +1,381 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "IL-1\u03b2 stimulation dynamically induces formation of Regnase-1 complexes with both \u03b2TRCP and 14-3-3 proteins. Mass spectrometry and immunoprecipitation analyses revealed that IL-1\u03b2 stimulation reduced Regnase-1 association with translation-related proteins while strongly inducing association with SCF complex proteins (\u03b2TRCP1/2, CUL1, SKP1) and novel interaction with 14-3-3 family proteins in both mouse and human cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C20-C23 are well-supported by mass spectrometry data (Figure 1B) and immunoprecipitation experiments (Figure 1C) showing stimulus-dependent changes in Regnase-1 interactome. The identification of 14-3-3 as a novel Regnase-1-binding partner is validated across multiple experimental approaches and cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The Regnase-1-14-3-3 interaction shows isoform specificity and is induced by MyD88-dependent but not TRIF-dependent signaling. Among seven 14-3-3 isoforms, \u03b2, \u03b3, and \u03b5 strongly interacted with Regnase-1, while \u03b6, \u03b7, and \u03b8 showed weak interaction, and \u03c3 failed to bind. All TLR ligands except poly I:C (TLR3/TRIF-dependent) induced the interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 are supported by systematic testing of 14-3-3 isoforms (Figure 1\u2014figure supplement 2) and TLR ligands (Figure 1D). The correlation between MyD88-dependent signaling and 14-3-3 binding is logically inferred from the pattern that all MyD88-dependent TLR ligands induced binding while the TRIF-dependent ligand did not.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "14-3-3 specifically binds to phosphorylated Regnase-1, with IL-1\u03b2 stimulation inducing phosphorylation at multiple sites including S21, S61, S62, S362, S439, S470, S494, and S513. Lambda phosphatase treatment abolished both the slower migration of Regnase-1 and its presence in 14-3-3 precipitates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 are well-supported by SDS-PAGE mobility shift assays (Figures 1C-D, 2A-B) and LC-MS/MS phosphoproteomics (Figure 2C, Figure 2\u2014figure supplement 2). The \u03bbPP experiments provide direct evidence that 14-3-3 binding requires phosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Phosphorylation at both S494 and S513 is necessary for Regnase-1-14-3-3 interaction. These sites harbor pSxP sequences similar to the known 14-3-3-binding motif RxxpSxP (mode 1), and the amino acid sequences surrounding these sites are highly conserved across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are supported by mutational analysis (Figure 2D) showing that S494A and S513A mutants failed to bind 14-3-3, sequence analysis identifying the pSxP motif, and conservation analysis (Figure 2E-F). The requirement for both sites is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "IRAK1 mediates Regnase-1-14-3-3 interaction through its kinase activity and a previously uncharacterized C-terminal structural domain (CSD). CRISPR-mediated IRAK1/2 depletion impaired the interaction, while overexpression induced it. The CSD (aa 619-710), particularly conserved residues R663 and K665, is critical for Regnase-1-14-3-3 binding independent of TRAF6 recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C47 are supported by CRISPR knockout (Figure 2\u2014figure supplement 3), overexpression (Figure 2G), and systematic mutational analysis of IRAK1 domains (Figure 2H-I). The identification of the CSD as a novel functional domain is supported by in silico prediction (Figure 2\u2014figure supplement 4) and mutagenesis showing that R663/K665A mutations abolish Regnase-1-14-3-3 binding while TRAF6 binding site mutations do not.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "The IRAK1 C-terminal region has two distinct functions: NF-\u03baB activation through TRAF6-binding sites and induction of Regnase-1-14-3-3 interaction through the CSD. The R663/K665A mutant retained NF-\u03baB activation capacity despite losing Regnase-1-14-3-3 binding ability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by NF-\u03baB luciferase reporter assays (Figure 2\u2014figure supplement 5) showing that the R663/K665A mutant activates NF-\u03baB while failing to induce Regnase-1-14-3-3 binding. This demonstrates functional separation of the two activities within the C-terminal region.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "IL-17A stimulation also induces phosphorylation at S494 and S513 and Regnase-1-14-3-3 binding. LC-MS/MS detected phosphorylation at these sites in IL-17A-stimulated cells, consistent with previous reports of Act1/TBK1/IKK-i/\u03b5-mediated phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by LC-MS/MS data (Figure 2\u2014figure supplements 6-7) and immunoprecipitation (Figure 2\u2014figure supplement 8). This extends the regulatory mechanism beyond IL-1\u03b2/TLR signaling to IL-17 signaling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Regnase-1-14-3-3 and Regnase-1-\u03b2TRCP interactions occur independently through distinct phosphorylation sites, with 14-3-3 inhibiting \u03b2TRCP binding. S435A/S439A mutations prevented \u03b2TRCP but not 14-3-3 binding, while S494A/S513A mutations prevented 14-3-3 but not \u03b2TRCP binding. \u03b2TRCP-bound Regnase-1 migrated faster than 14-3-3-bound Regnase-1, indicating \u03b2TRCP binds to 14-3-3-free Regnase-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C59 are well-supported by systematic mutational analysis (Figure 3A-B) and SDS-PAGE mobility comparisons (Figure 3C-D). The independent binding is clearly demonstrated, and the inference that \u03b2TRCP binds 14-3-3-free Regnase-1 is supported by the differential migration patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The S513A mutation destabilizes Regnase-1 protein without affecting mRNA levels. Zc3h12aS513A/S513A mice showed normal development but exhibited reduced total Regnase-1 protein after IL-1\u03b2/LPS stimulation due to loss of the slowly-migrating (14-3-3-bound) form. The S513A mutant was more rapidly degraded and showed increased polyubiquitination when proteasome was inhibited, indicating that S513 phosphorylation and 14-3-3 binding stabilize Regnase-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C71 are supported by comprehensive analysis of knock-in mice including immunoblotting (Figure 4A-C), mRNA quantification (Figure 4D-F), cycloheximide chase (Figure 4\u2014figure supplement 2), and proteasome inhibitor treatment (Figure 4C). The data consistently show that loss of 14-3-3 binding leads to increased degradation without affecting transcription.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Despite reduced total Regnase-1 protein, Il6 expression and target mRNA stability were comparable between WT and S513A mutant cells. Mathematical modeling showed this observation is inconsistent with Model 2 (14-3-3-bound Regnase-1 retains activity) but consistent with Model 1 (14-3-3-bound Regnase-1 is inactive), suggesting that 14-3-3 binding inactivates Regnase-1 while stabilizing the protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C78 are supported by mRNA expression data (Figure 4D-I), mRNA stability assays (Figure 4\u2014figure supplement 4), RNA-seq (Figure 4\u2014figure supplement 5), and mathematical modeling (Figure 4J-K). The logic is sound: if 14-3-3-bound Regnase-1 were active, reduced total Regnase-1 should increase target mRNA levels, but this was not observed, indicating 14-3-3 binding inactivates Regnase-1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "IL-1\u03b2 regulates Regnase-1 activity through two independent mechanisms: 14-3-3-mediated inactivation and \u03b2TRCP-mediated degradation. The S435/439/513A triple mutant, which cannot bind either 14-3-3 or \u03b2TRCP, was more abundant and more potent at suppressing Il6 expression than single or double mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 are supported by immunoblotting (Figure 5A) and Il6 expression analysis (Figure 5B) of various mutants. The triple mutant data clearly demonstrate that both mechanisms independently contribute to reducing Regnase-1 activity, with the triple mutant showing the strongest activity due to escape from both regulatory mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "14-3-3 binding requires the phosphate moiety rather than negative charge, as demonstrated by phospho-mimic mutants (S494D/S513D) failing to bind 14-3-3. Constitutive 14-3-3 binding was achieved using ExoS sequences, and Regnase-1-ExoSx2 lost activity to inhibit Il6 expression and IL-6 protein production. IRAK1 mutants that induce Regnase-1-14-3-3 binding impaired Regnase-1 activity, while mutants that fail to induce binding did not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C90 are supported by immunoprecipitation (Figure 5C), Il6 mRNA (Figure 5E) and IL-6 protein (Figure 5F) measurements, and IRAK1 mutant analysis (Figure 5G). The ExoS system provides a clever approach to constitutively activate 14-3-3 binding and demonstrates that this binding is sufficient to inactivate Regnase-1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "14-3-3 binding inhibits Regnase-1-mRNA association. Forced 14-3-3 binding via ExoSx2 mutation abrogated binding to IL6 mRNA and other target mRNAs (NFKBIZ, PTGS2, CXC chemokines) in a nuclease-dead Regnase-1 background, demonstrating that 14-3-3 prevents Regnase-1 from recognizing target mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 are supported by RNA immunoprecipitation experiments (Figure 5H, Figure 5\u2014figure supplement 2) using nuclease-dead Regnase-1 (D141N) to stabilize RNA binding. The data clearly show that 14-3-3 binding prevents mRNA association across multiple target transcripts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Regnase-1 shuttles between nucleus and cytoplasm via a nuclear export signal (NES). Although predominantly cytoplasmic at steady state, Regnase-1 rapidly accumulated in the nucleus upon LMB treatment. In silico prediction identified aa 433-447 as a potential NES, and deletion or mutation of hydrophobic residues (L440, M444, L447, W448) caused nuclear accumulation. These residues are highly conserved across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C103 are supported by immunofluorescence with LMB treatment (Figure 6A), in silico NES prediction (Figure 6B-D), and mutational analysis (Figure 6E). The identification of the NES is validated by both computational prediction and functional demonstration that mutations in predicted critical residues cause nuclear accumulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "14-3-3 binding inhibits nuclear import of Regnase-1. Regnase-1-ExoSx2, which constitutively binds 14-3-3, failed to accumulate in the nucleus after LMB treatment, while WT and ExoSAAAx2 (which cannot bind 14-3-3) did accumulate, indicating that 14-3-3 prevents Regnase-1 from entering the nucleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 are supported by immunofluorescence experiments (Figure 6F) showing differential nuclear accumulation of Regnase-1 mutants after LMB treatment. The data clearly demonstrate that 14-3-3 binding prevents nuclear translocation, providing a mechanism for how 14-3-3 inhibits Regnase-1 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "IL-1\u03b2 and TLR stimulation trigger independent interactions of Regnase-1 with 14-3-3 and \u03b2TRCP via phosphorylation at distinct sites (S494/S513 for 14-3-3; S435/S439 for \u03b2TRCP). 14-3-3 prevents \u03b2TRCP binding, resulting in stabilization of 14-3-3-bound Regnase-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C112 summarize the main findings supported by the comprehensive experimental data throughout the manuscript. The independence of the two interactions and the protective effect of 14-3-3 against \u03b2TRCP-mediated degradation are well-established by the mutational and biochemical analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The 14-3-3 binding sites on Regnase-1 (S494 and S513) are evolutionarily conserved and contain pSxP motifs overlapping with the known 14-3-3 binding motif RxxpSxP (mode 1). It is plausible that 14-3-3 dimers directly bind these phosphorylated sites. Only 14-3-3\u03c3, which forms exclusively homodimers, failed to bind Regnase-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C116 are supported by sequence conservation analysis and motif identification. C115 is appropriately labeled as plausible speculation based on known 14-3-3 binding mechanisms. The 14-3-3\u03c3 observation (C116) provides insight into 14-3-3 isoform specificity and is supported by experimental data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "14-3-3 and \u03b2TRCP inhibit Regnase-1-mediated mRNA decay via distinct mechanisms (14-3-3 prevents mRNA binding; \u03b2TRCP induces degradation). Analysis of S513A mutant mice revealed that 14-3-3-mediated inactivation can be compensated by degradation. This dual regulatory system underscores the importance of restricting Regnase-1 activity during inflammatory responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C118 are well-supported by the comprehensive characterization of both mechanisms. C119 is a reasonable interpretation of the biological significance, though somewhat speculative. The compensation between the two mechanisms is clearly demonstrated by the S513A mutant phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The mechanism of 14-3-3-mediated inhibition involves spatial regulation rather than direct competition for RNA binding. The 14-3-3 binding site is distant from the RNase and zinc finger domains. Regnase-1 shuttles between nucleus and cytoplasm, and it is speculated that Regnase-1 recognizes mRNA in the nucleus and induces decay during pioneer rounds of translation after nuclear export.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C128 are supported by structural information and experimental data on nuclear-cytoplasmic shuttling. C129 is appropriately labeled as speculation. The inference that 14-3-3 does not act by direct competition (C127) is reasonable given the spatial separation of binding sites.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Possible mechanisms for 14-3-3 inhibition of \u03b2TRCP binding include: (1) 14-3-3 concealing the \u03b2TRCP-binding site, or (2) 14-3-3 preventing nuclear-cytoplasmic shuttling, thereby limiting access to \u03b2TRCP which localizes in both compartments. The NES is located adjacent to the \u03b2TRCP-binding site, suggesting possible competitive binding between \u03b2TRCP and CRM1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C130-C137 present mechanistic hypotheses that are appropriately labeled as speculative (C132, C133, C135, C137). While the proximity of NES and \u03b2TRCP-binding sites is documented (C136), and \u03b2TRCP localization is cited (C134), the proposed mechanisms remain untested. Additional experiments would be needed to distinguish between these possibilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "IRAK1/2 are potent inducers of Regnase-1-14-3-3 interaction, with IRAK1 kinase activity required for the interaction. However, the substrate sequence motifs of IRAK1 do not match S494/S513 sequences, suggesting that kinases activated by IRAK1/2 may phosphorylate Regnase-1 at these sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C141 are supported by experimental data. C142 is appropriately labeled as speculation. The mismatch between known IRAK1 substrate motifs and the Regnase-1 phosphorylation sites raises valid questions about whether IRAK1 directly phosphorylates Regnase-1 or acts through downstream kinases. This uncertainty is appropriately acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The IRAK1 CSD may be key for inflammatory mRNA stabilization. IRAK1 is involved in mRNA stabilization independent of TRAF6 association, and the CSD (particularly R663/K665) is critical for Regnase-1-14-3-3 binding independent of TRAF6. This suggests the CSD mediates mRNA stabilization through Regnase-1 inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C146 are supported by citations and experimental data. C147 is appropriately labeled as speculation but represents a logical inference connecting the CSD's role in Regnase-1-14-3-3 binding with IRAK1's known role in mRNA stabilization. The speculation is well-grounded in the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "The study reveals dynamic 14-3-3-mediated regulation of Regnase-1 in response to IL-1\u03b2 and TLR stimuli. Given that Regnase-1 is a high-potential therapeutic target in various diseases, these findings may help maximize the effect of Regnase-1 modulation or provide alternative approaches to control its activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C148 accurately summarizes the main findings. C149 is supported by citations to recent studies. C150 is appropriately speculative regarding therapeutic applications but represents a reasonable extrapolation from the findings. The therapeutic relevance is appropriately framed as potential rather than demonstrated.",
+    "result_type": "MAJOR"
+  }
+]

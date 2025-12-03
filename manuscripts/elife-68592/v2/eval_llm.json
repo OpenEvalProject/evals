@@ -1,0 +1,374 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "AFM imaging of the L69 yeast strain revealed abundant nanoscale patches (~100-140 nm diameter, 15-20 nm height) on the cell surface with bimodal nanomechanical properties: a high adhesion force component (750 \u00b1 150 pN) with low stiffness attributed to hydrophobic interactions, and a low adhesion force component with higher stiffness attributed to protein unfolding. These nanodomains exhibit nanomechanical characteristics similar to adhesin nanodomains in C. albicans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C20-C24 provide converging AFM evidence for nanodomain structures with specific dimensions and bimodal mechanical properties. The measurements are quantitative (diameter, height, adhesion forces, stiffness) with appropriate replication (n=24 cells, >400,000 force-distance curves). The comparison to C. albicans is supported by citations and similar measurement approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Treatment with anti-amyloid agents (disrupting peptide 'VASTTVT' or thioflavine S) disrupts the nanodomains on L69 cells, with the peptide eliminating the high adhesion component and reducing the low adhesion component by 75%, while thioflavine S abolishes both components. This demonstrates that the nanodomains consist of two components: one amyloid-dependent (high adhesion) and one amyloid-independent (low adhesion).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 provide experimental evidence using two independent anti-amyloid agents with consistent results. The differential effects of the peptide versus thioflavine S support the two-component model. The results are consistent with published work on C. albicans (C29), strengthening the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Deletion of FLO11 in L69 completely abolishes nanodomain formation, establishing that FLO11 is necessary for this phenotype. However, expression of FLO11BY in BY4741 does not restore nanodomains despite high expression, while expression of FLO11L69 does restore them. The FLO11L69 gene is 1.06 kbp longer than FLO11BY, indicating that specific sequence features in Flo11pL69 are required for nanodomain formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C36 establish genetic causality through deletion and complementation experiments. AFM imaging confirms loss of nanodomains in deletion mutants (C30), and qRT-PCR validates expression levels (C33). The differential complementation by FLO11L69 versus FLO11BY (C33, C35) combined with sequence length differences (C34) logically supports the conclusion that specific Flo11p features are required.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Sequence analysis reveals that Flo11pL69 contains an additional ~200 amino acid sequence (RR2) near the C-terminus that is absent in other sequenced S. cerevisiae strains. This region likely originated from a twofold repetition of a 90-100 amino acid sequence and is highly enriched in \u03b2-aggregation-prone sequences, providing two additional 'VVSTTV' amyloid-forming motifs compared to other Flo11 variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C45 are supported by multiple sequence analysis approaches (Clustal Omega alignment, HCA, EMBOSS TANDEM, TANGO predictor, BLAST). The sequence data is quantitative (amino acid lengths, number of tandem repeats) and the additional RR2 region is clearly documented in figures. The inference about duplication origin (C44) is reasonable based on sequence homology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "All FLO11 gene variants are expressed at comparable levels (except Flo11-\u0394Nter which is ~2-fold lower), and immunofluorescence demonstrates that all Flo11p variants, including those lacking the N-terminus, C-terminus, RR1, or RR2 regions, localize to the cell wall. Notably, removal of the C-terminal GPI anchor does not abolish cell wall localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 are supported by qRT-PCR data (C46) and immunofluorescence imaging (C47-C49). The finding that Flo11p lacking the GPI anchor still localizes to the cell wall (C49) challenges conventional understanding but is directly demonstrated by imaging. However, the authors acknowledge inability to detect Flo11p by proteomics or Western blot (C50-C51), suggesting low abundance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Proteomic analysis of cell wall/membrane preparations detected various cell wall proteins but not Flo11p or other flocculins, and Western blotting using anti-His antibody also failed to detect His-tagged Flo11p in these preparations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 report negative results from proteomics and Western blotting. While negative results are inherently less conclusive, the authors detected other expected cell wall proteins (Fks1p, Fks2p, etc.), validating the preparation method. The failure to detect Flo11p is consistent with it being a low-abundance protein, which doesn't contradict the immunofluorescence results showing cell wall localization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "AFM analysis of Flo11p domain deletion variants shows that the RR2 region is essential for nanodomain formation\u2014its deletion completely abolishes nanodomains. Deletion of the N-terminus or C-terminus still allows nanodomain formation but alters their properties: \u0394Nter loses the high adhesion component, while \u0394Cter produces needle-shaped structures with 3-fold greater height. Deletion of RR1 produces only sparse, tiny patches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C59 are supported by systematic AFM imaging and force measurements of multiple Flo11p variants. The results show clear structure-function relationships: RR2 is necessary (C53, C58), while other domains modulate properties (C54-C57, C59). The quantitative measurements (height, adhesion forces, stiffness distributions) provide strong evidence for each variant's phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "Insertion of the RR2 sequence from FLO11L69 into FLO11BY creates a chimeric protein that enables BY4741 cells to form prominent adhesive nanodomains with bimodal adhesion force distribution. This demonstrates that a threshold number (at least 3) of amyloid-forming sequences is required for abundant nanodomain formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 are supported by AFM data showing that the chimeric construct rescues nanodomain formation in BY4741 (C60). The threshold hypothesis (C61) is reasonable given that FLO11BY has 2 amyloid sequences and doesn't form nanodomains, while the chimera with RR2 (adding 2 more sequences) does. However, the exact threshold of 3 is inferred rather than directly tested with variants containing exactly 3 sequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Cell-cell aggregation assays show that L69 and YSWT3\u03b1 strains form aggregates, with FLO11 deletion completely abolishing aggregation in L69 but leaving small clumps in YSWT3\u03b1. BY4741 expressing FLO11BY forms small aggregates (<10 cells), while expression of FLO11L69 dramatically increases aggregation to L69 levels. Insertion of RR2 into FLO11BY enhances aggregation compared to FLO11BY alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C68 are supported by quantitative microscopy data with statistical analysis (Figure 6B shows percentages with error bars and significance testing). The genetic manipulations (deletions, complementations, chimeric constructs) provide clear structure-function relationships. The residual aggregation in YSWT3\u03b1 after FLO11 deletion (C64) suggests additional factors, which the authors acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Treatment with thioflavine S disrupts aggregates in L69 and BY4741 overexpressing FLO11L69, but has no effect on L69flo11-\u0394RR2 (lacking amyloid sequences) or YSWT3\u03b1 strain. This indicates that amyloid-core sequences contribute to but are not essential for cell-cell adhesion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 are supported by microscopy data showing differential effects of thioflavine S on different strains. The pattern of results (disruption in strains with amyloid sequences, no effect in strains without them or in YSWT3\u03b1) logically supports the conclusion that amyloid sequences contribute to but aren't absolutely required for aggregation (C72).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Domain deletion analysis shows that removal of RR2 reduces cell-cell interaction by 75% (statistically greater than \u0394Nter), deletion of the C-terminus reduces aggregates by ~50% (consistent with loss of 2 of 4 amyloid sequences), and deletion of RR1 also reduces aggregates by 50%. These results indicate that efficient cell-cell interaction requires the full Flo11 protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 are supported by quantitative aggregation data with statistical comparisons (Figure 6A-B). The correlation between number of amyloid sequences lost and degree of aggregation reduction (C74) provides internal consistency. The conclusion that the full protein is needed (C76) is well-supported by the cumulative deletion data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Adherence to polystyrene is strongly pH-dependent but varies by strain: L69 and BY4741 show reduced adherence at pH 8.0 versus 5.0, while YSTW3\u03b1 shows the opposite pattern. Adherence doesn't rely exclusively on Flo11p (BY4741 adheres without expressing it), but overexpression of FLO11 dramatically enhances adherence. FLO11L69 confers higher adherence than FLO11BY at both pH values. Domain analysis shows the C-terminus is most important at pH 5.0, while the N-terminus is critical at pH 8.0.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C90 are supported by quantitative adherence assays (crystal violet staining, absorbance measurements) with statistical analysis and multiple replicates. The pH-dependent effects are clearly demonstrated (C77-C80), and the genetic manipulations (deletions, overexpression, domain swaps) establish structure-function relationships (C81-C90). The interpretation that adherence rate depends on Flo11p amount while ability depends on sequence (C89-C90) is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Surface hydrophobicity is primarily determined by the amount of Flo11p at the cell surface, as shown by increased hydrophobicity in cells overexpressing FLO11 regardless of origin. However, hydrophobicity is not entirely Flo11p-dependent (residual hydrophobicity in deletion strains). Domain analysis shows the N-terminus contributes most to hydrophobicity, followed by the B-domain, with the C-terminus contributing least.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 are supported by octane partitioning assays (Figure 8) with statistical analysis. The correlation between Flo11p expression level and hydrophobicity (C91) is clearly demonstrated. The residual hydrophobicity in deletion strains (C92) indicates other factors contribute. The domain contribution hierarchy (C93) is supported by systematic deletion analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "Neither L69 strain nor any Flo11p variant strain formed air-liquid biofilm (velum), while the flor strain A9 exhibited this phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 report negative results for L69 and positive control results for strain A9. The negative result is surprising given that L69 has similar numbers of tandem repeats to flor strain 133d, which the authors acknowledge. The observation is clearly documented but the mechanistic explanation remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "L69 strain exhibits massive agar invasion on both rich (YPD) and synthetic (YNGal) media, which is lost upon FLO11 deletion. YSWT3\u03b1 also shows invasion while BY4741 does not (consistent with lack of FLO11 expression). Invasion is less pronounced on galactose medium, with cells at the periphery being stickier in rich medium while cells at the center are more invasive in synthetic medium. Surprisingly, \u03a31278b and YSWT3\u03b1 cannot invade synthetic glucose medium, while L69 remains highly invasive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C104 are supported by agar invasion assays with clear before/after washing images. The FLO11-dependence is established by deletion experiments (C99). The medium-dependent and spatial patterns of invasion (C100-C102) are novel observations. The strain-specific differences (C103-C104) suggest additional genetic factors beyond FLO11, which the authors acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Domain deletion analysis shows that invasive growth requires both N- and C-termini of Flo11p (complete loss when either is deleted), is reduced by RR1 deletion, but only weakly affected by RR2 deletion. BY4741 transformed with FLO11L69 or FLO11BY fails to invade agar despite high expression, while \u03a3flo11\u0394 transformed with either gene shows clear invasion (FLO11L69 slightly more effective), though weaker than the endogenous gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C111 are supported by systematic agar invasion assays with multiple Flo11p variants. The requirement for N- and C-termini (C105) is clearly demonstrated. The failure of BY4741 to invade despite high FLO11 expression (C108) combined with successful invasion by \u03a3flo11\u0394 transformants (C109-C111) indicates strain-specific factors are required, supporting claim C134.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Loss of FLO11 function increases sensitivity to cell wall stress agents (calcofluor white, caffeine, Congo red). This sensitivity is mainly associated with lack of the C-terminus of Flo11p, though removal of RR1 or RR2 also causes slight increases in sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 are supported by spot dilution assays on plates containing cell wall drugs. The systematic testing of deletion variants establishes that the C-terminus is most important for cell wall integrity (C113), while other domains contribute modestly (C114). The results are consistent with Flo11p playing a structural role in the cell wall.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The abundant patches on L69 cell surface correspond to adhesion nanodomains with properties similar to C. albicans, FLO11 is the sole protein involved in their formation, and formation can be prevented by anti-amyloid peptides or dyes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117 summarize major findings from earlier claim groups. C115 integrates AFM characterization (claims C1-C24), C116 is supported by deletion experiments (C30-C36), and C117 is supported by anti-amyloid agent experiments (C25-C29). These are well-supported summary statements of the main results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Flo11pL69 differs from other S. cerevisiae strains by having an additional ~200 amino acid RR2 sequence near the C-terminus, likely from duplication of a 90-100 amino acid sequence containing 'VVSTTV' followed by 'ITTTFV'. This provides two additional amyloid-core sequences that are determinant for nanodomain formation, as demonstrated by insertion of RR2 into BY4741 Flo11p enabling nanodomain formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C121 integrate sequence analysis (C37-C45) with functional validation (C60). The sequence differences are well-documented (C118), the duplication origin is reasonably inferred (C119), and the functional importance is directly demonstrated by the chimeric construct experiment (C121). This represents a complete structure-function analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Nanodomains consist of two components: high adhesion force (amyloid nanodomains disrupted by anti-amyloid agents) and low adhesion force (likely isolated Flo11p and other proteins). While amyloid-core sequences are essential for nanodomain formation, other Flo11p regions also contribute\u2014removal of ~half the tandem repeats abolishes formation, and removal of N- or C-terminus eliminates the high adhesion component. The whole Flo11 protein is needed for proper nanodomain production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C126 synthesize findings from AFM analysis of variants (C52-C59) and anti-amyloid treatments (C25-C29). The two-component model (C122) is supported by bimodal force distributions and differential drug effects. The requirement for multiple domains (C123-C125) is demonstrated by systematic deletions. The conclusion about needing the whole protein (C126) is well-supported and consistent with the Lipke model cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Removal of amyloid-forming sequences (RR2) reduces cellular aggregation by 70%, while removal of the A-domain reduces it by 50%, suggesting amyloid sequences can partially compensate for A-domain loss. Cell-cell aggregation is higher with chimeric Flo11BY-RR2L69 than with endogenous Flo11pBY, and aggregates from FLO11L69 overexpression are disrupted by anti-amyloid agents. However, \u03a31278b forms aggregates resistant to anti-amyloid agents, indicating amyloid sequences aren't absolutely required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C131 integrate aggregation data (C62-C76) with anti-amyloid treatments (C69-C72). The quantitative reduction values (C127-C128) are supported by Figure 6B data. The chimeric construct result (C129) and drug sensitivity (C130) support amyloid involvement. The \u03a31278b exception (C131) is important for showing amyloid sequences contribute but aren't essential, consistent with C72.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The N- and C-termini of Flo11p are indispensable for agar invasion, while amyloid-forming sequences have no role in this process. The Flo11p-dependent invasive phenotype involves additional genetic factors absent in BY4741 and more highly expressed in L69, accounting for L69's superior invasion capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C133 are directly supported by domain deletion experiments showing complete loss of invasion without N- or C-termini (C105) but minimal effect of RR2 deletion (C107). Claim C134 is a reasonable inference from the observation that BY4741 cannot invade despite high FLO11 expression (C108) while other strains can (C109-C111), though the specific factors aren't identified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C135"
+    ],
+    "result": "The acquisition of additional amyloid-forming sequences in Flo11p of L69 strain could be due to its original ecological niche or to industrial propagation conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C135 is speculative about evolutionary origins without supporting data. While the sequence differences are well-documented (C37-C45) and functionally characterized (C53-C61), the claim about why these differences arose is not tested. This is acknowledged as speculation in the discussion ('could be due either to...').",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1731 @@
+{
+  "submission": {
+    "id": "0867ef1e-50ed-4dc0-a3ea-94fe4cae7efe",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T08:32:49.165088Z",
+    "updated_at": "2025-12-03T08:32:49.165088Z"
+  },
+  "content": [
+    {
+      "id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "submission_id": "0867ef1e-50ed-4dc0-a3ea-94fe4cae7efe",
+      "content_type": "manuscript",
+      "content_text": "# Piezo1 ion channels inherently function as independent mechanotransducers\n\n## Authors\n\n- Amanda H Lewis<sup>1</sup> ([ORCID: 0000-0001-7316-9729](https://orcid.org/0000-0001-7316-9729))\n- J\u00f6rg Grandl<sup>1</sup> ([ORCID: 0000-0001-7179-7609](https://orcid.org/0000-0001-7179-7609)) \u2020\n\n### Affiliations\n\n1. Department of Neurobiology, Duke University Medical Center Durham United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nPiezo1 is a mechanically activated ion channel involved in sensing forces in various cell types and tissues. Cryo-electron microscopy has revealed that the Piezo1 structure is bowl-shaped and capable of inducing membrane curvature via its extended footprint, which indirectly suggests that Piezo1 ion channels may bias each other\u2019s spatial distribution and interact functionally. Here, we use cell-attached patch-clamp electrophysiology and pressure-clamp stimulation to functionally examine large numbers of membrane patches from cells expressing Piezo1 endogenously at low levels and cells overexpressing Piezo1 at high levels. Our data, together with stochastic simulations of Piezo1 spatial distributions, show that both at endogenous densities (1\u20132 channels/\u03bcm2), and at non-physiological densities (10\u2013100 channels/\u03bcm2) predicted to cause substantial footprint overlap, Piezo1 density has no effect on its pressure sensitivity or open probability in the nominal absence of membrane tension. The results suggest that Piezo channels, at densities likely to be physiologically relevant, inherently behave as independent mechanotransducers. We propose that this property is essential for cells to transduce forces homogeneously across the entire cell membrane.\n\n## Introduction\n\nCells are constantly exposed to mechanical forces and have evolved diverse molecular mechanisms that enable force detection. The rapid sensing of mechanical forces that occurs in milliseconds is achieved by force-gated ion channels that convert mechanical energy into electrochemical signals (Kefauver et al., 2020). For example, Piezo1 is a mechanically gated cation channel that directly senses membrane tension (T) with high sensitivity (Coste et al., 2010; Cox et al., 2016; Lewis and Grandl, 2015; Syeda et al., 2016). Therefore, theoretically, any mechanical disturbance of the cell membrane may lead to changes in Piezo1 channel open probability (Po). However, the propagation of membrane tension away from its source has been shown to be relatively slow (D ~ 0.024 \u00b5m2/s), poising Piezo channels with the ability to efficiently and rapidly transduce only mechanical forces that are nearby (Shi et al., 2018).\n\nThe degree to which forces are transduced homogeneously across the cell membrane likely depends not only on the dynamics of membrane tension propagation, but also on (i) the spatial distribution of force-gated ion channels, and (ii) on their functional independence.\n\nAny substantial deviation from a uniform distribution of force-gated ion channels will result in domains that fail to detect forces (where there are no ion channels) as well as domains that transduce forces disproportionately (where many ion channels are nearby). Functional interactions and/or cooperativity between force-gated ion channels may further skew transduction efficiency or kinetics in a manner that depends on local channel density, effectively creating a patchwork of blind spots and sensitized areas. Indeed, there is recent experimental evidence suggesting that Piezo1 channels may be non-uniformly distributed. TIRF imaging of Piezo1 channels revealed their free diffusion over the surface of live neural stem/progenitor cells, indirectly suggesting channels are not tethered to other static structures and that random membrane distribution may be possible. However, in the same cells, Piezo1-related activity was spatially enriched, which could arise from non-uniform distribution of Piezo1 channels, variable membrane tension, or both (Ellefsen et al., 2019). STORM imaging of HEK293 cells stably expressing GFP-tagged Piezo1 also suggested a non-homogenous spatial distribution, but at channel densities that are likely not physiological (Ridone et al., 2020). Additional studies have proposed the existence of clusters with varying numbers of channels (Jiang et al., 2021), and that Piezo1 may be concentrated at focal adhesions (Mingxi Yao et al., 2020) and at wound edges in keratinocytes (Holt et al., 2021).\n\nA compelling theoretical framework predicting spatial and functional interactions between nearby Piezo channels has been constructed based on cryo-electron microscopy structures of Piezo1, which revealed its large and extremely curved dome-shaped structure (Guo and MacKinnon, 2017; Haselwandter and MacKinnon, 2018; Saotome et al., 2018). Theoretical calculations based on these structures suggest that Piezo1 can both sense and curve the proximal membrane with a characteristic decay length extending ~14 nm beyond the channel. The energetic cost of this membrane curvature implies that Piezo1 channels that are within ~3 decay lengths (a \u2018footprint\u2019 of ~50 nm; see Materials and methods) may influence each other via multiple mechanisms: opposing curvature may cause nearby Piezo1 channels to repel each other, as well as influence each other\u2019s gating properties (Haselwandter and MacKinnon, 2018). Indeed, imaging of vesicles containing reconstituted Piezo1 has demonstrated the ability of Piezo1 to curve the membrane locally and suggested that flattening of the channel dome may directly couple to channel opening, but the precise effects of membrane energetics on gating have yet to be explored experimentally (Jiang et al., 2021; Lin et al., 2019).\n\nHere, we set out to quantify the spatial distribution and potential functional interactions of Piezo1 ion channels across multiple orders of channel densities. Specifically, we use electrophysiology and large numbers of independent measurements to simultaneously quantify channel number and function, including single-channel current, open probability, and pressure sensitivity. Collectively, our electrophysiological data, together with stochastic simulations show that Piezo1 ion channels, at densities likely to be physiologically relevant, inherently function as independent mechanotransducers. We propose that this property enables cells to transduce forces with high spatial homogeneity across the entire cell membrane.\n\n## Results\n\n### Piezo1 function at low channel densities\n\nTo simultaneously measure and thus directly correlate Piezo1 channel density with its gating properties, we performed cell-attached patch-clamp electrophysiology on Neuro2A cells, which natively express Piezo1 (Coste et al., 2010). We chose Neuro2A cells over human umbilical vein endothelial cells (HUVECs; Figure 1\u2014figure supplement 1) and other cell lines because they have among the highest endogenous levels of Piezo1 expression, thus offering the highest likelihood for observing any potential functional effects of local channel density on function. We then designed a novel stimulation protocol that we optimized to assess Piezo1 single-channel conductance (i), pressure sensitivity (P50), and number of channels (n) in each patch with high accuracy. Since Piezo1 inactivation precludes a precise measurement of maximal current (Imax) at negative potentials, we recorded currents at +60 mV, where inactivation during short pressure steps is minimal (Coste et al., 2010; Wu et al., 2017). However, traditional step protocols are well known to induce irreversible changes in patch geometry owing to membrane creep, particularly at positive voltages (Lewis and Grandl, 2015; Suchyna et al., 2009). Indeed, a direct step to a saturating pressure (\u201360 mmHg) caused small, but measurable changes in current due to leak and/or capacitance even in patches that were later classified to have zero channels (see below; mean \u00b1 SD: 2.6 \u00b1 1.3 pA; n=33 patches; Figure 1\u2014figure supplement 2A-B). Consistent with this idea, the same pressure step caused a similarly small current in patches from Neuro2A-Piezo1ko cells, which have been CRISPR-engineered to lack Piezo1 channels (mean \u00b1 SD: 3.8 \u00b1 1.5 pA, n=15 patches; Figure 1\u2014figure supplement 2C). Consequently, a step protocol consistently overestimates current by 2\u20133 pA, and thus channel numbers accordingly (Figure 1\u2014figure supplement 2B).\n\nTo overcome this limitation, we instead designed a protocol in which the pressure was decreased incrementally in 1 mmHg steps from 0 mmHg to \u201360 mmHg in 50 ms intervals, thus approximating a ramp (Figure 1A\u2013D, top). The total duration of this ramp is short enough to minimize membrane creep (3 s), but each step is long enough (50 ms) to allow pressure equilibration, which occurs within ~7 ms (Lewis et al., 2017). Similar to the step protocol, the ramp protocol elicited small background changes in current amplitude in all patches. However, instead of the square-like current increases evoked by the step protocol, here the current changed more steadily, allowing us to perform linear background subtractions for each individual patch (Figure 1A\u2013D, middle) and ultimately achieve a more reliable detection of channel gating events, which were easily discerned as nearly instantaneous changes in current amplitude (Figure 1A\u2013D, top, arrows). We are confident that these slow changes in current are unrelated to Piezo gating, as currents clearly saturated after leak subtraction (Figure 1A\u2013D, bottom). Additionally, we never observed channel openings during the ramp phase of the protocol in 15 patches from Neuro2A-Piezo1ko cells (data not shown). Ultimately, we decided to combine the ramp stimulus protocol with a subsequent brief (200 ms) saturating pressure step to \u201360 mmHg. Importantly, the step pulse allowed us to confirm post hoc that inactivation of Piezo1 at this voltage is minimal (step pulse: mean current at 200 ms = 96.5\u00b17.4% of peak; n=281 patches; Figure 1\u2014figure supplement 2A,D).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/70988/elife-70988-fig1-v1.jpg)\n\n**Figure 1.:** (A) Top, Pressure protocol (gray) and current (black) from a cell-attached patch from Neuro2A cells with zero channels. Holding potential was +60 mV. Middle, Current-pressure relationship for the same patch. Mean current was calculated for each step, in 1 mmHg increments, and plotted as a function of pressure. Note the linear relationship between current and pressure during the step, despite no channel activity in this patch (inferred from the lack of discrete channel opening events). This is likely due to small changes in seal quality and/or capacitance. The linear portion of the current-pressure relationship was fitted with a line (red dashes). Bottom, Current as a function of pressure after subtraction of the current corresponding to the fitted line. (B) As in (A), for a patch with one channel. Arrow indicates discrete channel opening event. Bottom, current was fitted with a Boltzmann equation (see Materials and methods). From the fit (red line), Imax, which corresponds to single-channel current, was 1.2 pA and P50 was \u201332.8 mmHg. (C) As in (A, B), for a patch with two channels. From the fit (red line), Imax was 2.5 pA and P50 was \u201323.6 mmHg. (D) As in (A\u2013C), for a patch with many channels. From the fit (red line), Imax was 9.8 pA and P50 was \u201331.2 mmHg. (E) Histogram of channel number in each patch. n=281 patches. (F) P50 values, measured from sigmoidal fits to currents in (A\u2013D), as a function of channel number. Bin width is two channels. n=281 patches.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70988/elife-70988-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Pressure protocol (gray) and current (black) from a cell-attached patch from a wild-type HUVEC cell. Pressure was increased stepwise from +5 mmHg to \u221260 mmHg in 1 mmHg steps, 50 ms per step. Pressure was clamped at +5 mmHg for 2 s prior to the step protocol to remove resting tension from the patch. Holding potential was +60 mV to minimize inactivation. (B) Current-pressure relationship for the same patch. Mean current was calculated for each step, in 1 mmHg increments, and plotted as a function of pressure. (C) Histogram of number of channels per patch. n=20 patches. HUVEC, human umbilical vein endothelial cell.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70988/elife-70988-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Pressure protocol (gray) and current (black) from two cell-attached patches from wild-type Neuro2A cells, one with zero channels (top) and one with many channels (bottom). Note the step protocol (inset on the right) elicits a small current in the patch with zero channels, despite no evidence of discrete channel openings during the ramp protocol on the left. (B) Histogram of peak currents elicited by the ramp (black) and step (dark blue) portions of the protocol. Ramp peak currents are leak subtracted according to the protocol in Figure 1; step peak currents are therefore right shifted due to the inability to subtract the leak current. n=281 patches. Light blue, step peak currents for patches with zero channel openings identified during the ramp portion of the protocol (n=33 patches). (C) Normalized histograms for peak current elicited by the step protocol for patches from wild-type Neuro2A cells with zero channels (n=33 patches) and patches from Neuro2A-p1ko cells (n=15 patches). (D) Steady-state current during the step portion of the protocol (Figure 1\u2014figure supplement 2A, inset), calculated as the mean current during the last 10 ms divided by the peak current, smoothed over 0.5 ms. (E) Peak current during the ramp protocol as a function of pipette resistance. Only patches made with pipettes with a resistance of >3 MW (red dashed line) were used in the final analysis. (F) Histogram of peak current amplitudes for acutely plated or day-matched overnight plated wild-type Neuro2A cells (see Materials and methods). Acute, n=26 patches; overnight, n=28 patches. (G) Histogram of single-channel current amplitudes, measured from the Imax values of patches that had precisely one channel. n=35 patches. (H) Pressure protocol (gray) and current for two protocols run successively on the same patch. (I) Imax for the second protocol as a function of Imax for the first protocol from the same patch. Gray dashed line represents unity. (J) P50 values for the second protocol as a function of P50 for the first protocol from the same patch. Gray dashed line represents unity.\n\nNext, we focused on titrating the sizes of our patch pipettes such that a substantial fraction of patches had zero channels (Figure 1\u2014figure supplement 2E; see Materials and methods for details). We limited our pipettes to 3\u20136.5 M\u03a9, reasoning that this choice maximizes our ability to detect potential channel clusters and thus resolve the overall spatial distribution of channels. Also, to address the possibility that Piezo1 cellular distribution could be altered by the cell-substrate interface, which we reasoned may trap Piezo1 channels and deplete them from cell-attached patch-recordings on the cell roof, we performed day-matched experiments of Neuro2A cells that had either been seeded to adhere overnight or were acutely replated <1 hr before recording, therefore allowing limited time for channel redistribution (see Materials and methods). Importantly, we found that the mean channel number and distributions in these two data sets were identical (mean \u00b1 SEM: overnight=2.4\u00b10.4 channels, n=28 patches; acute=2.7\u00b10.4 channels, n=26 patches, p=0.6, Student\u2019s t-test; Figure 1\u2014figure supplement 2F), which argues against an effect of channel redistribution to the cell-substrate interface. Finally, in order to obtain good representations of the spatial distribution and function of Piezo1 channels, we executed this protocol on patches from a very large number of individual Neuro2A cells (n=281).\n\nAfter linear leak subtraction, we could easily recognize in most patches (248/281) discrete, nearly instantaneous increases in current amplitude that are reflective of individual channel openings, as well as clearly identify a plateau phase of the current (Figure 1B, middle). The remaining patches (33/281) were classified as having zero channels (e.g., Figure 1A). We next used the mean single-channel current from all patches with one channel (i=0.98\u00b10.04 pA, n=35 patches; Figure 1\u2014figure supplement 2G) to calculate the precise number of channels (n=Imax/i) in all other patches. Ultimately, we obtained a continuous, bell-shaped distribution of Piezo1 channel numbers per patch (Figure 1E). The distribution average was 3.5\u00b13.1 channels per patch, which given our small pipette sizes is consistent with previously reported levels of expression in Neuro2A cells (Coste et al., 2010). We also applied each protocol twice per patch and then performed pairwise comparison of current amplitudes (Figure 1\u2014figure supplement 2H-I). This analysis revealed an extremely low variability (ratio of 2nd/1st recording=1.1\u00b10.4; n=261), supporting that the assessment of channel numbers is highly accurate. We estimated the dome size of membrane patches inside patch pipettes from imaging experiments to be 2 \u00b5m (see Materials and methods) and used this value to calculate the average density of Piezo1 channels to be 1\u20132 channels/\u00b5m2.\n\nNext, we used two different approaches to assess if the density of Piezo1 channels affects their sensitivity to membrane tension: First, we calculated P50 values, measured from sigmoidal fits to the ramp phase of the current, and plotted them as a function of channel number (Figure 1F). Although P50 measurements varied widely in individual patches, especially for those with <5 channels, because of the stochastic nature of channel gating (e.g., Figure 1C), this variance is partially overcome by the large number of measurements we obtained (n=248). Importantly, while there was some variability between two protocols executed on the same patch, there was only a slight systematic shift in P50 values toward smaller pressures in the second protocol, likely due to creep and corresponding increase in patch radius (mean \u00b1 SD first=\u201333.1\u00b17.2 mmHg, second=\u201331.1\u00b17.7 mmHg; \u0394P50=+2.0\u00b18.2 mmHg; p<0.05, paired t-test; Figure 1\u2014figure supplement 2J), providing further evidence that our protocol allowed for highly reproducible measurements. Altogether, the results show that, for patches containing 1\u201314 channels, average P50 values do not vary substantially with channel number (Figure 1F).\n\nStill, to measure P50 values in patches with few channels more precisely, we also performed a different analysis: Specifically, we idealized recordings with \u22665 channels by identifying discrete openings (Figure 2A\u2013E; see Materials and methods) and then averaged all idealized traces with equal channel numbers in order to obtain mean pressure-response curves (Figure 2B). Visual inspection as well as fits with sigmoidal functions show that P50 and slope (k) values are virtually identical for patches containing 1, 2, 3, 4, or 5 channels (1 channel: P50=\u201323.2 mmHg, k=\u20133.3 mmHg; 5 channels: P50=\u201323.7 mmHg, k=\u20134.2 mmHg). We therefore conclude from both analyses that at densities of up to 2 channels/\u00b5m2, Piezo1 channels do not influence each other\u2019s mechanosensitivity.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/70988/elife-70988-fig2-v1.jpg)\n\n**Figure 2.:** (A) Idealized current-pressure relationship for all patches with precisely 1\u20135 channels. Each patch is a different color/weight; thick black line is the mean open probability for all patches (see Materials and methods). Mean open probability was fit with a sigmoidal relationship (dashed red lines): 1 channel: P50=\u201323.2 mmHg, k=\u20133.3 mmHg, n=35 patches. 2 channels: P50=\u201323.6 mmHg, k=\u20135.1 mmHg, n=40 patches. 3 channels: P50=\u201325.9 mmHg, k=\u20134.5 print mmHg, n=33 patches. 4 channels: P50=\u201324.9 mmHg, k=\u20134.0 mmHg, n=27 patches. 5 channels: P50=\u201323.7 mmHg, k=\u20134.2 mmHg, n=9 patches. (B) Overlaid mean open probability as a function of pressure for patches with precisely 1, 2, 3, 4, or 5 channels.\n\n### Spatial distribution of Piezo1\n\nMultiple mechanisms may explain our above result that Piezo1 pressure sensitivity does not vary with channel density. First, Piezo1 channels may be randomly distributed and therefore spatially too distant to functionally interact via their membrane footprints. Alternatively, Piezo1 channels may indeed tend to localize in close spatial proximity (i.e., groups of 2\u20133 channels), but this localization may have no effect on their pressure sensitivity. To begin distinguishing among these possibilities, we built a statistical model for spatial localization, based on a Thomas point process (see Materials and methods for details). First, we simulated a distribution of randomly dispersed Piezo1 channels. Then we randomly sampled from this population, accounting for variability of pipette sizes and single-channel currents by using our experimental mean values and standard deviations of pipette size and single-channel conductance (Figure 1\u2014figure supplement 2E,G). The resulting distribution fits the experimental data reasonably well, indicating that in Neuro2A cells, Piezo1 channels may be homogenously distributed across the cell surface, rather than being spatially localized in close proximity (Figure 3A\u2013F).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/70988/elife-70988-fig3-v1.jpg)\n\n**Figure 3.:** (A) Representative channel distributions generated using a Thomas point process with overall densities equivalent to that of wild-type Neuro2A cells (~1.75 channels/\u00b5m2); in each condition, daughter \u2018channels\u2019 are assigned to a center \u2018parent\u2019disc, with a mean distance of 50 nm (~1 Piezo footprint) from the center of the disc. Three separate degrees of clustering (cluster size) were introduced; one in which every cluster has precisely one channel, one with a mean of 1.6 channels per cluster, and one with a mean of 5 channels per cluster. Gray circles represent model patch domes used to sample the distributions, with a mean radius of 0.8 \u00b5m. Below, insets (dashed boxes) of each distribution; dark circles are the projected area of the Piezo footprint to scale; light circles are ~3\u00d7 the membrane footprint for each channel (radius=50 nm). (C, D) Distributions of channels per cluster for mean cluster sizes of 1 and 1.6 (C) and 5 (D). (E, F) Normalized histogram of channels per patch for wild-type Neuro2A cells for mean cluster sizes of 1 and 1.6 (E) and 5 (F). (G, H) Histogram of nearest-neighbor distances for mean cluster sizes of 1 and 1.6 (G) and 5 (H).\n\nIn order to challenge this interpretation, we next simulated a random distribution of Piezo1 clusters in which individual Piezo channels are distributed across a 2D-Gaussian distribution with a standard deviation of 50 nm, which is the estimated size of the Piezo channel footprint (Haselwandter and MacKinnon, 2018; see Materials and methods), all while holding the overall channel density constant. Strikingly, a distribution in which on average 1.6 Piezo1 channels (drawn from a Poisson distribution centered at 1; see Materials and methods) interact over 50 nm also describes the experimental data well. However, simulating larger channel clusters (n ~ 5) fails to reproduce the experimental distribution, specifically the probability of capturing patches without any channels (Figure 3A\u2013F). Thus, our experimental data are most parsimoniously explained by either a random spatial distribution or a weak propensity for Piezo channels to spatially localize in groups of 2\u20133. Interestingly, the two distributions differ significantly in the predicted fraction of channels that are within one footprint of at least one other channel: in a truly random distribution, the mean nearest-neighbor distance is ~390 nm, and only ~5% of channels are within 100 nm of another channel, whereas if channels tend to cluster in groups of 2\u20133, the mean nearest-neighbor distance is reduced to 225 nm and almost 50% of channels are within 100 nm of another channel (Figure 3G\u2013H). However, our functional data support the idea that if the latter spatial localization indeed occurs, it does not have a substantial effect on Piezo1 pressure sensitivity (Figures 1 and 2).\n\n### Piezo1 function at high channel densities\n\nOur above results do not answer if, in principle, Piezo1 channels have the ability to functionally interact. We therefore decided next to examine Piezo1 function using a heterologous overexpression system, in which channel densities are much higher. For these experiments, we chose Neuro2A-Piezo1ko cells, in order to retain the same cellular background, but avoid heterogeneity from endogenous and overexpressed Piezo1, especially given that there are known splice variants of Piezo1 (Geng et al., 2020). In pilot experiments, we found that transfection with Lipofectamine 2000 maximizes channel density 42\u201348 hr post-transfection (data not shown). We first repeated our previous ramp protocol, but found that while overexpression yields peak currents that are much larger, these currents inactivate to a larger extent even at +60 mV, such that a ramp protocol substantially underestimates the total number of channels in the patch (Figure 4\u2014figure supplement 1; current at 200 ms=53.3\u00b118.1% of peak, n=138 patches). Therefore, we instead chose to use a classic pressure-step protocol to best measure both peak current (Imax) and pressure sensitivity (P50 and k) (Figure 4A\u2013B). While the step protocol still produces a 2\u20133 pA background current at high pressures, owing to changes in leak and/or capacitance, here, this error is very minor compared to the large Piezo-mediated currents (generally 20\u2013200 pA), especially for patches with many channels. To reduce bias from resting membrane tension, each pressure step was preceded by a 5 s +5 mmHg prepulse, the first 4 s of which was applied at \u201380 mV to minimize the cumulative effects of positive voltage on membrane creep (Suchyna et al., 2009). We used a pressure increment (\u0394P) of \u20135 mmHg, so that we could better resolve small changes in pressure sensitivity, but limited the duration of each step to 250 ms to again minimize membrane creep (Figure 4A and B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/70988/elife-70988-fig4-v1.jpg)\n\n**Figure 4.:** (A) Pressure protocol (gray) and current from a cell-attached patch from a Neuro2A-p1ko cell overexpressing mouse Piezo1. Pressure steps to 0 mmHg (top) and \u201380 mmHg (bottom) were preceded by a 5 s prepulse to +5 mmHg to relieve resting membrane tension. Top inset shows spontaneous single-channel activity at \u201380 mV during the prepulse, used to calculate open probability in the nominal absence of tension. (B) Full pressure-response protocol and currents for the cell in (A). Pressure steps were from 0 to \u201380 mmHg in \u20135 mmHg increments. (C) Histogram of channel counts, obtained by dividing the peak current elicited during the protocol in (A) by the single-channel current measured from unitary events (see also Figure S5). n=144 patches. (D) Open probability during the +5 mmHg prepulse as a function of number of channels. n=2\u201318 patches. (E) P50 values measured from sigmoidal fits to current-pressure relationships from the protocol in (B) as a function of number of channels. (F) Slope (k) values measured from sigmoidal fits to current-pressure relationships from the protocol in (B) as a function of the number of channels. (G) Mean pressure-response curves, generated by first normalizing each patch to its maximal current, binning by number of channels, then averaging normalized currents at each pressure. n=2\u201318 patches.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70988/elife-70988-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Pressure protocol (gray) and current (black) from cell-attached patches from two Neuro2A-p1ko cells overexpressing mouse Piezo1. Top patch has minimal inactivation during the step portion of the protocol, bottom patch has substantial inactivation during the step portion of the protocol. (B) Histogram of peak currents elicited by the ramp (gray) and step (black) portions of the protocol. Note that the ramp protocol substantially underestimates the total peak current owing to inactivation. n=138 patches. (C) Normalized steady-state current, measured during the last 10 ms of the step pulse, as a function of peak step current.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70988/elife-70988-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Single-channel current from a cell-attached patch from a Neuro2A-p1ko cell overexpressing mouse Piezo1. Pressure was +5 mmHg and voltage was +80 mV. (B) All-points histogram generated from current sweep in (A). Red line is a double-Gaussian fit to binned data. (C) Single-channel current from the same patch in (A), at \u201380 mV. Pressure was +5 mmHg. (D) All-points histogram generated from current sweep in (B). Red line is a double-Gaussian fit to binned data. (E) Single-channel current at +60 mV as a function of number of channels in the patch. n=144 patches. (F) Single-channel current at \u201380 mV as a function of number of channels in the patch. n=144 patches.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/70988/elife-70988-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Number of channels as a function of pipette resistance for patches from Neuro2A-p1ko cells overexpressing mouse Piezo1. (B) Open probability, measured during the \u201380 mV portion of the +5 mmHg prepulse from the protocol in Figure 5A, as a function of pipette resistance. (C) P50 values measured from sigmoidal fits to current-pressure relationships from the protocol in Figure 5A as a function of pipette resistance. (D) Slope values, measured from sigmoidal fits to current-pressure relationships from the protocol in Figure 5A as a function of pipette resistance. n=144 patches for all panels.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/70988/elife-70988-fig4-figsupp4-v1.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (A) Representative channel distribution generated using a Thomas point process with overall densities equivalent to that of the highest density we see with overexpression of mouse Piezo1 in Neuro2A-p1ko cells (~100 channels/\u00b5m2). Dark blue circles are the projected area of the Piezo footprint to scale; light blue circles are ~3\u00d7 the membrane footprint for each channel (radius=50 nm). (B) Histogram of nearest-neighbor distances for densities representing the mean density in our overexpression dataset (~50 channels/\u00b5m2) and the maximum density (~100 channels/\u00b5m2).\n\nThe low channel activity during the prepulse allowed us to measure the single-channel current of each individual patch at both \u201380and +60 mV (Figure 4\u2014figure supplement 2B,C) and therefore to precisely calculate the minimal number of channels (n=Imax/i). This is particularly important in a cell-attached configuration, where even in a high K+ solution, there can be slight variance in the resting membrane potential and correspondingly variance in the single-channel current in each cell that introduces an additional source of error. Importantly, there was no correlation between number of channels and single-channel current, suggesting that unitary conductance of Piezo1 is not modulated by channel density (Figure 4\u2014figure supplement 2E,F). As before, we restricted our pipettes to 3\u20136.5 M\u03a9, a range in which peak current amplitudes do not vary substantially (Figure 4\u2014figure supplement 3A). We again repeated this measurement for many individual patches (n=144 patches) in order to capture an accurate representation of channel densities and functional interactions.\n\nThe number of channels per patch was well described by a Gaussian distribution with 89.2\u00b149.8 channels per patch (Figure 4C), which we estimate corresponds to a Piezo1 density of ~45 channels/\u00b5m2 (see Materials and methods). The most extreme current amplitude we observed (\u2013190 pA, or ~200 channels) corresponds to a maximal density of ~100 channels/\u00b5m2. At this maximal density, if Piezo channels were randomly distributed in the membrane, their mean next-neighbor distance would be ~50 nm (Figure 4\u2014figure supplement 4). This calculation suggests that we have reached densities in which Piezos are likely in close enough proximity to influence each other\u2019s function. Moreover, this calculation likely represents a slight underestimate of the true channel density, as residual inactivation at positive potentials may lead to a population of \u2018silent\u2019 channels that do not manifest themselves functionally.\n\nTwo groups had previously predicted that nearby Piezo1 channels may influence each other\u2019s gating, even in the absence of membrane tension (Haselwandter and MacKinnon, 2018; Jiang et al., 2021). We therefore chose first to analyze the activity during the prepulse, which is designed to minimize resting membrane tension. We found that open probability was generally small (<1%), which was consistent with previous work in our lab (Wu et al., 2016). Most notably however, we found that Piezo1 open probability did not increase with channel density; rather, open probability slightly decreased, from 0.6\u00b10.4% for patches with 1\u201310 channels (mean \u00b1 SD; n=3 patches) to 0.2\u00b10.1% for patches with >200 channels (n=3 patches) (Figure 4D). There was no change in open probability with pipette resistance, indicating that variability in the ability of the prepulse to minimize resting tension with pipette size does not account for this trend in open probability with channel number (Figure 4\u2014figure supplement 3B).\n\nAs an alternative test, we measured the effect of channel number on pressure sensitivity. Both slope and P50 values were unaffected by channel number (Figure 4E\u2013F), and these values were also unaffected by pipette size (Figure 4\u2014figure supplement 3C-D). However, patches with small ensembles of channels (<20) yielded imprecise estimates of P50 and slope values for two reasons: First, for patches with few channels, the stochastic nature of channel gating generates highly variable individual pressure-response curves. Second, the relatively few patches we obtained with low channel numbers resulted in large errors in mean value estimates. Therefore, we also analyzed the data in a separate way: we normalized each patch to its maximal current, binned patches according to their number of channels, and then averaged pressure-response curves (Figure 4G). The results again show that pressure-response curves and sensitivity (slope) are independent of channel numbers (for 0\u201320 channels, P50=\u201321.5 mmHg, k=\u20138.0 mmHg, n=5; for >200 channels, P50=\u201321.0 mmHg, k=\u20136.8 mmHg, n=3).\n\nFinally, we combined our electrophysiological pressure-step protocol with differential interference contrast (DIC) imaging to directly measure the relationship between channel density and membrane tension (Lewis and Grandl, 2015; Figure 5A\u2013C). In these experiments, we were able to independently calculate channel density for each individual patch by dividing the number of channels in each patch by its visualized surface area at 0 mmHg (see Materials and methods; Figure 5\u2014figure supplement 1). This more detailed approach also allowed us to rule out that deviations in pipette size create a systematic bias on P50 values, as radius, and therefore tension, is measured for each individual patch and applied pressure. Importantly, we found no correlation between either the tension of half-maximal activation (T50) or the slope (k) and channel density in the range of 10\u201370 channels/\u00b5m2 (Figure 5D\u2013F), again supporting that Piezo1 channels do not influence each other\u2019s tension sensitivity. Altogether, we conclude that at low and high densities, Piezo1 channels show no positive cooperativity in the presence or in the nominal absence of membrane tension.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/70988/elife-70988-fig5-v1.jpg)\n\n**Figure 5.:** (A) DIC image of a cell-attached patch from a Neuro2A-p1ko cell expressing mouse Piezo1 at 0 mmHg (left) and \u201370 mmHg (right). Red dashed line represents a circle fit to the membrane outline in blue and was used to calculate patch radius (see Materials and methods). (B) Full pressure-response protocol and currents from the patch in (A). Pressure steps were from 0 to \u201370 mmHg in \u20135 mmHg increments. (C) Peak current during the pressure step as a function of tension for the patch in (A), calculated from patch radius using Laplace\u2019s law (see Materials and methods). Red line is a sigmoidal fit used to calculate half-maximal tension for activation (T50)and slope (k) using the equation.$I=\\frac{I_{max}}{1+e^{\\frac{T_{50}-T}{k}}}$(D, E) T50 and slope values (k) as a function of channel density. n=25 patches. (F) Mean tension-response curves, generated by first normalizing each patch to its maximal current, binning by channel density, then fitting all data as a function of tension. 0\u201310 channels: T50=2.3\u00b10.2 mN/m, k=0.8\u00b10.1 mN/m; 10\u201320 channels: T50=2.6\u00b1 0.2 mN/m, k=0.7\u00b10.2 mN/m; 20\u201330 channels: T50=2.6 \u00b1 0.1 mN/m, k=0.8 \u00b1 0.1 mN/m; 30\u201340 channels: T50=2.2\u00b10.2 mN/m, k=0.9 \u00b1 0.2 mN/m; 40\u201350 channels: T50=2.4 \u00b1 0.1 mN/m, k=0.7 \u00b1 0.1 mN/m; >50 channels: T50=2.3\u00b10.4 mN/m, k=1.1\u00b10.4 mN/m. n=2\u20139 patches. DIC, differential interference contrast.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70988/elife-70988-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Surface area as a function of pipette resistance for cell-attached patches from Neuro2A-p1ko cells expressing mouse Piezo1.\n\n## Discussion\n\nWe sought to characterize the inherent ability of Piezo channels to spatially localize and modulate each other\u2019s function. We chose cell-attached patch-clamp electrophysiology as a method for investigation, which has several inherent limitations that need to be considered.\n\nFirst, our spatial resolution is naturally limited by the size of the patch pipette. Consequently, our statistical approach of counting channels within membrane patches works best when the spatial distance between Piezo1 channels is comparable to the size of the membrane dome inside the patch pipette. The fact that ~15% of patches in wild-type Neuro2A cells contained no Piezo1 channels (Figure 1E) is therefore an extremely important quality benchmark for adequate spatial resolution. Our modeling does not allow us to rule out the possibility of moderate clustering (2\u20133 Piezo1 channels), but we find no evidence for clusters of larger sizes (~5 channels), which we would have been able to detect (Figure 3).\n\nNext, our measurement of endogenous Piezo1 density in Neuro2A cells (1.75 channels/\u00b5m2) has several sources of error: first, while we have modest control over the pipette shape during its fabrication and a precise measure of its resistance, without simultaneous DIC imaging, the exact surface of each individual membrane dome is not known. In order to minimize this size variability, we therefore limited the majority of our analyses to measurements from a narrow range of pipette resistances and incorporated this size variability of patch pipettes into our statistical model of Piezo1 spatial distribution (Figure 1\u2014figure supplement 2D). Additionally, we performed a smaller subset of experiments combining simultaneous DIC imaging with electrophysiology (Figure 5).\n\nCertainly, when overexpressing Piezo1 the variability in Piezo1 membrane levels is high, in part due to variable expression levels among cells. Assessing Piezo1 expression levels is also subject to error due to the presence of inactivation, which prevents reaching a Po=1. Specifically, channels inactivating during the rising phase of the current, as well as the presence of \u2018silent\u2019 channels that fail to respond to the stimulus entirely, contribute to this error. However, none of the above statistical errors, or others we did not consider and that skew channel number distributions, affect our ability to correlate Piezo1 channel number with its function.\n\nThe weaknesses of cell-attached patch-clamp electrophysiology are balanced by two clear strengths: the method has relatively high throughput so that large numbers of independent measurements yield good population averages, and it has unmatched precision: channel density and function, including single-channel current, open probability, and pressure sensitivity can be extracted over 2 orders of magnitude (1\u2013100 channels/\u00b5m2) with high accuracy. For example, repeated execution of pressure ramps on each patch revealed that channel number (n) is measured with only 24% variability, demonstrating that this assessment is extremely accurate.\n\nNeither endogenous Piezo1 in Neuro2A cells or overexpression of Piezo1 in Neuro2A-P1ko cells are perfect model systems for investigating how Piezo1 channels function when they are directly contacting each other: experimental channel densities do not reach the theoretical limit of a tightly packed 2D hexagonal lattice. However, the maximal densities we obtained are certainly sufficient for Piezo1 membrane footprints to geometrically overlap: for example, at the highest density we measured (~100 channels/\u00b5m2), the centers of randomly spaced Piezo1 domes are on average 50 nm from their nearest-neighbor, which results in a substantial number of channels having overlapping membrane footprints (Figure 4\u2014figure supplement 4; Haselwandter and MacKinnon, 2018). In any case, two distinct analyses show that at densities of 1\u20132 channels/\u00b5m2 (Figures 1\u20132) and 10\u2013100 channels/\u00b5m2 (Figures 4\u20135), Piezo1 pressure and tension sensitivity are not modulated by channel numbers. A mechanistic explanation for this result at low densities is directly provided by our data and statistical model of spatial distributions, which suggest that in Neuro2A cells, Piezo1 channels are either randomly distributed or have at best a very low probability of aggregating. This is consistent with Haselwandter and MacKinnon\u2019s prediction that the Piezo structure favors channels to repel each other. However, the result does not mean that Piezo1 channels in close proximity can never be found. At native expression levels, a mild tendency for clustering predicts 20% of all Piezo1 channels will be within 50 nm of each other (cluster size=1.6; Figure 3G), which is fully consistent with studies that have captured images of neighboring Piezo1 channels (Ridone et al., 2020), but 80% of all Piezo1 channels are outside this range. In other words, in wild-type Neuro2A cells, most Piezo1 channels are too far apart to \u2018feel\u2019 each other. As a consequence, they behave as functionally independent mechanotransducers. This result is important, because it shows that Piezo1 channels have no strong intrinsic tendency to spatially concentrate and functionally modulate each other\u2019s mechanical sensitivity. Both of these properties are ideal for a cell in order to transduce mechanical forces homogeneously.\n\nStill, does the Piezo1 membrane footprint allow for the possibility of cooperativity among nearby channels? Our experiments at high channel densities (up to 100 channels/\u00b5m2) reveal no change in Piezo1 pressure sensitivity with increasing channel numbers. Surprisingly, our data do suggest that in the nominal absence of membrane tension Piezo1 open probability is slightly (~0.5%) reduced with channel number but overall, very low (<1%) at all channel densities we probed. This is notable, because the opposite result was recently obtained by simulations of Piezo1 that are in extreme proximity to each other (1\u20133 nm dome-dome distance; Jiang et al., 2021). The reasons for this discrepancy may be technical limitations in the modeling, which was performed with a partial Piezo1 structure, or our own experiments, which cannot generate the extreme channel densities probed in the simulation. Moreover, any cooperativity need not arise via membrane footprint interactions: for example, calcium permeating through Piezo1 may influence the resting open probability of nearby channels. Indeed, calcium-induced cooperativity is a well-known phenomenon in other ion channels, such as TRPA1 (Wang et al., 2008). Our experiments cannot directly rule out this explanation.\n\nAltogether, our conclusions may be applicable to other cell types that express Piezos at levels similar or lower to that of Neuro2A cells. However, we fully expect that specific cell types may concentrate Piezo channels into locations that are dedicated to detecting forces. For example, it is plausible that in sensory neurons Piezo2 channels may be highly concentrated in free nerve endings as compared to the cell soma. However, our work directly predicts that if such a clustering was indeed observed, it would require a dedicated mechanism that is not Piezo-intrinsic, such as a still elusive tethering molecule.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Mus musculus)</td>\n      <td>Neuro2A</td>\n      <td>ATCC#CCL-131</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (M. musculus)</td>\n      <td>Neuro2A-p1ko</td>\n      <td>Gift of Gary Lewin; Moroni et al., 2018</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HUVECS, pooled</td>\n      <td>Clonetics CC-2519</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (M. musculus)</td>\n      <td>Piezo1-IRES-GFP</td>\n      <td>Gift of Ardem Patapoutian; Coste et al., 2010</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell culture\n\nWild-type Neuro2A cells (ATCC #CCL-131) and Neuro2A-p1ko cells (a gift of Gary Lewin) were cultured at 37\u00b0C and 5% CO2 in Minimum Essential Medium (Thermo Fisher Scientific) supplemented with 0.1 mM non-essential amino acids, 1 mM pyruvate, 10% fetal bovine serum (Clontech), 50 U/ml penicillin, and 50 mg/ml streptomycin (Life Technologies). Both cell lines were STR authenticated by ATCC and tested in-house for mycoplasma via PCR (ATCC #30-1012K). HUVECs (Clonetics CC-2519, pooled) were cultured in EGM-1. For experiments without transfection, cells were directly plated on poly-L-lysine and laminin-coated coverslips 16\u201324 hr before recording. For overexpression experiments, cells were transiently transfected with 4 \u00b5g mouse Piezo1-pIRES-EGFP in pcDNA3.1(+) or 4 \u00b5g YFP 40\u201348 hr before recording in six-well plates using Lipofectamine 2000 (Thermo Fisher Scientific) according to the manufacturer\u2019s protocol. Transfected cells were reseeded onto poly-L-lysine and laminin-coated coverslips or glass-bottomed dishes (for imaging; MatTek Corporation P50G-0-30F) 16\u201324 hr before recording. Only one patch was made from each cell; in some cases, two protocols were run on each patch (as noted). For acute plating experiments, cells were reseeded onto poly-L-lysine and laminin-coated coverslips, allowed to settle for 45 min, and then recorded for up to one additional hour.\n\n### Electrophysiology\n\nElectrophysiological recordings were performed at room temperature using an EPC10 amplifier and Patchmaster software (HEKA Elektronik, Lambrecht, Germany). Data were sampled at 5 kHz (wild-type Neuro2A) or 10 kHz (Neuro2a-p1ko + mPiezo1) and filtered at 2.9 kHz. The cell-attached bath solution used to zero the membrane potential was (in mM): 140 KCl, 10 HEPES, 1 MgCl2, 10 glucose, and pH 7.3 with KOH. Borosilicate glass pipettes (1.5 OD, 0.85 ID, Sutter Instrument Company, Novato, CA) were filled with pipette buffer solution (in mM): 130 NaCl, 5 KCl, 10 HEPES, 10 TEACl, 1 CaCl2, 1 MgCl2, and pH 7.3 with NaOH. In a small dataset obtained with pipettes with a resistance of less than 3 M\u03a9, peak current was strongly correlated with pipette size and few patches had zero channels (Figure 1\u2014figure supplement 2E); we therefore restricted our final data set to pipettes between 3 and 6.5 M\u03a9. Negative pressure was applied through the patch pipette with an amplifier-controlled high-speed pressure clamp system (HSPC-1; ALA Scientific Instruments, Farmingdale, NY). All pressure protocols were preceded by a +5 mmHg prepulse (ramp protocol, 2 s at +60 mV; step protocol, 4 s at \u201380 mV, and 1 s at +60 mV) to remove resting tension due to the gigaseal (Lewis and Grandl, 2015).\n\n### Imaging\n\nImaging was performed as described (Lewis and Grandl, 2015). Briefly, images were captured at a rate of ~13 frames/s at a resolution of 61.5 pixels/\u00b5m using a Plan Apo (100\u00d7) DIC oil objective coupled with a Coolsnap ES camera and 4\u00d7 relay lens (Nikon Instruments). Images were analyzed in Igor Pro 8.02 (WaveMetrics) using custom scripts available in our Github repository (github.com/GrandlLab). The membrane was identified by performing a line scan parallel to the pipette walls and localizing the minimum pixel intensity over a rolling average of 5\u20139 pixels and fitting the output with a circle to obtain radius (R). Tension (T) was then calculated for each pressure step (p) using Laplace\u2019s law: T=R*p/2. The surface area of each patch (Figure 5\u2014figure supplement 1) was calculated from the radius at 0 mmHg by fitting the patch dome as a spherical cap and manually estimating the contact points between the membrane and the pipette walls.\n\n### Quantification and statistical analysis\n\nAll data were analyzed and final plots were generated using Igor Pro 8.02 (WaveMetrics).\n\nFor currents measured during ramp protocols, current was binned for each pressure (1 mmHg increments) and any linear changes in current prior to the first channel opening were manually identified, attributed to capacitive and/or leak changes, and subtracted off prior to further analysis. Current-pressure curves were fit with a Boltzmann function\n\n$$\nI=I_{min}+\\frac{I_{max}}{1+e^{(\\frac{P50\u2212P}{k})}}\n$$\n\nwhere Imax is the maximal current, P is pressure, P50 is the pressure of half-maximal activation, and k is the slope factor. The number of channels in each patch was calculated by dividing Imax by the mean single-channel current from all patches with precisely one channel (i.e., Imax during the ramp phase for patches with only one visually identified discrete opening, Figure 1) or from single-channel openings during the +60 mV prepulse (step recordings with overexpressed channels, Figures 4 and 5). In some recordings, no unitary events were observed at +60 mV during the +5 mmHg prepulse, and pressure was manually adjusted in 1 mmHg increments until single-channel openings were elicited.\n\nSingle-channel currents during the +5 mmHg prepulse were filtered offline (1 kHz) using Fitmaster v2 \u00d7 90.2 and baseline-subtracted using QuB online software (Nicolai and Sachs, 2014). Single-channel amplitudes during the prepulse were measured by generating all-points histograms with binning calculated using the Freedman-Diaconis method and an optimal bin width of 2*IQR(x)/N1/3, where IQR is the interquartile distance, N is the number of observations, and the bins are evenly distributed between the minimum and maximum values. Binned data were then fit with a double-Gaussian equation of the form\n\n$$\ny=y_{0}+A_{1}*e^{-\\frac{x-x_{1}}{w_{1}}^{2}}+A_{2}*e^{-\\frac{x-x_{2}}{w_{2}}^{2}}\n$$\n\nwhere y0 is the baseline current, A1 and A2 are the peak amplitudes, x1 and x2 are the centers of the fits, and w1 and w2 are their respective widths. The difference between x1 and x2 reflects the difference between the mean current in the open and closed state and was used to calculate single-channel current i.\n\nOpen probability during the prepulse was calculated as the mean current (i*n*Po) divided by the maximum current elicited for that patch at saturating pressures, assumed to be Po=1 (i*n). For currents measured during step protocols, to reduce artifacts from noise, the peak was measured from a 0.5 ms rolling average around the true peak and the steady-state current was calculated as the mean current during the last 10 ms of the step. To generate idealized currents (Figure 2), the number of channels (n) in each patch, as well as the time of openings, were manually identified. The open probability at a given time was taken as the fraction of total channels in the patch that were open. Owing to the lack of inactivation of endogenous currents at +60 mV, as well as the continually increasing pressure, channel closings were rare. Patches with larger numbers of channels (3\u20135) are underrepresented due to the increased difficulty in identifying discrete openings. Data are reported as mean \u00b1 SD unless otherwise indicated. For box and whisker plots, boxes represent median and first and third quartiles.\n\n### Thomas clustering model\n\nA model for spatial distribution of Piezo1 ion channels was built using a Thomas point process in IGOR Pro 8.02 (WaveMetrics) using custom scripts available in our Github repository (https://github.com/GrandlLab/PiezoClusteringModel copy archived at swh:1:rev:c4463867f753c41d4a92ff25a03ceb6131bfbc22, Baddeley, 2015, Grandl, 2021). Parent discs were randomly distributed in a 50 \u00b5m \u00d7 50 \u00b5m arena. Each parent disc was then randomly assigned a varying number of daughter points. For a truly random distribution (mean cluster=1) every parent disc was assigned precisely one daughter point. To introduce a slight propensity for channels to cluster, the number of daughter points were drawn from a Poisson distribution centered at 1, such that the mean cluster size (for populated clusters) was 1.6. To introduce a stronger propensity to cluster, the number of daughter points was drawn from a Poisson distribution centered around 5 (mean cluster=5); Figure 3A. The densities of parent discs and daughter points were adjusted such that their product, and thus the final number of daughter points in the arena, was equivalent to that of the wild-type Neuro2A data set (1.75 channels/\u00b5m2). Daughter points were then distributed in each parental disc according to a Gaussian distribution with an average distance of sigma=50 nm from the center of the disc, or roughly the distance of three Piezo footprint decay lengths. The arena was then sampled with 1000 circles whose centers were uniformly distributed within the arena. To replicate variability in pipette size/patch dome size as source of noise, the mean radius of all circles was 0.8 \u00b5m (see below) with a standard deviation of 0.15 \u03bcm, which corresponds to our mean pipette size of 4.35 M\u03a9 and standard deviation of 0.8 M\u03a9 (Figure 5\u2014figure supplement 1). Finally, the number of daughter points (channel counts) within each circle was then counted. To further account for variability in transmembrane potentials as a source of noise, we translated channel counts into current amplitudes using our experimentally obtained normal distribution of single-channel currents, which yielded a mean single-channel current of 0.98 pA and standard deviation of 0.22 pA (Figure 1\u2014figure supplement 2G). Current amplitudes were then reverted into channel counts and used to generate a channel count histogram. Nearest-neighbor distributions were obtained from the same simulated distributions as above, by calculating a distance matrix between all channel centers and taking the minimal distance for each row.\n\n### Calculation of channel footprint and density\n\nThe characteristic decay length (\u03bb) of membrane deformation induced by the large curved dome of Piezo1 is estimated to be 14 nm (Haselwandter and MacKinnon, 2018). We put upper bounds of possible Piezo energetic interactions due to membrane curvature beyond the dome itself as 3\u00d7 this decay length; when adding this to the radius of the channel dome, this yields an approximate total membrane footprint of (10 nm +3*14 nm ~ 50 nm).\n\nFrom our imaging data (Figure 5 and Figure 5\u2014figure supplement 1), we estimated that patch domes from pipettes 3 to 6 M\u03a9 have an approximate surface area of 2 \u00b5m2. If the patch dome is approximated as a flat circle, this corresponds to a pipette radius of 0.8 \u00b5m, which was used for simulation of Piezo1 spatial distribution in the Thomas point process model. For native expression in Neuro2A cells, our average channel count was 3.5 channels, which corresponds to an average density of 1.75 channels/\u00b5m2. For overexpression of Piezo1 in Neuro2A-p1ko cells, our average channel count was ~100 channels, which corresponds to an average density of 50 channels/\u00b5m2. For the maximal channel number we observed (~200 channels), with an estimated in-plane area of 400 nm2 (Wang et al., 2019), an estimated footprint of 7800 nm2 (calculated from a footprint of 50 nm; Haselwandter and MacKinnon, 2018) and a patch dome surface area of 2 \u00b5m2, approximately 4% of the membrane surface would be covered by Piezo channels and 78% of the surface covered by Piezos + corresponding footprints if channels were evenly distributed (with no overlap of footprints).\n",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "0ae80a8b-d181-4d3c-85a6-56e0b44fa6d9",
+      "submission_id": "0867ef1e-50ed-4dc0-a3ea-94fe4cae7efe",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Merritt Maduke, Stanford University School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70988.sa1](https://doi.org/10.7554/eLife.70988.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nThe work provides important mechanistic detail on how Piezo channels, which are widespread and versatile mechanoreceptor molecules, functionally interact in the plane of the plasma membrane. It will be of interest to the field of mechanobiology and sensory mechanotransduction.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Piezo1 ion channels inherently function as independent mechanotransducers\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Richard Aldrich as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nLewis and Grandl propose that Piezo1 channels density does not have an effect on pressure sensitivity and that these channels do not cooperate in the nominal absence of membrane tension. To arrive at this conclusion the authors combined single channel measurements along with stochastic simulations of Piezo1 spatial distributions. An important element of this study is the use of two types of cells, one with intrinsically low level of Piezo1, and another with overexpressed channel. An interesting technical aspect is the use of a ramp pressure protocol, which overcomes the drawbacks of the standard step pressure method and help better estimate mechanosensitivity.\n\nThe topic of this manuscript is timely and relevant as the study of this family of ion channels is still very new and the details of their gating mechanism are unknown, and the central conclusion is important for understanding the physiological role of Piezo1 is various types of mechanically sensitive cells.\n\nAlthough the manuscript is a tour de force, there are some concerns that should be addressed to validate the conclusions.\n\n1) Patch imaging to validate conclusions. We note that the authors departed from their previous strategy of patch visualization and direct tension determination (Lewis and Grandl, eLife 2015). We do understand how tedious these experiments are, but the use of this approach in some of the trials would make this particularly study cleaner and more conclusive. The authors never mention tension as the parameter driving gating, and they work exclusively in the units of pressure. They postulated that their pipettes ranging between 3 and 6 MOhm in resistance provide 'standard' patches of given size and curvature. In fact, this range of resistances is large and roughly translates into a 1.4-fold difference in pipette diameters. If we look at Supplemental Figure 2D, we see that the largest pipettes (2-2.5 MOhm) produce 5 times the current recorded by 4-5 MOhm pipettes. These patches are unquestionably larger and no one can expect that the midpoint of channel activation by pressure is the same. The authors stated that only pipettes > 3MOhms were included into analysis, but this does not exclude actual size variation among patches. Figure 4F,G clearly shows that patches containing 0-20 channels have higher P50. It is very likely that these patches are smaller and therefore will require higher pressure for activation. We expect that imaging can help here. The authors do not need to cover the entire range of densities; only two sets of measurements with low (native) and high (overexpression) densities would be sufficient. We suggest that you choose reasonably large pipettes (2.5-3 MOhm) so you can reliably image cell-attached patches. Two sets of tension-Po curves, their tension midpoints and slope factors, recorded from HEK cells transfected at low and high expression levels will provide a clinching result.\n\n2) Inactivated and silent channels. Because Piezo1 channels inactivate and require the removal of the stimulus to be reactivated, the presence of basal tension in the patch will render some Piezo1 inactivated. Given that the basal pressure differs between electrodes, different patches will always contain some number of 'silent' channels, which are physically present in the membrane, but do not manifest themselves functionally. This makes the estimation of a true number of channels in the patch virtually impossible using electrophysiology alone. The reviewers discussed this point at length. It was agreed that a few additional experiments (outlined below) would be ideal for mitigating all concerns on this issue. However, it was also agreed that the patch-imaging experiments requested above should be sufficient for supporting the paper's main conclusions, and therefore the experiments suggested below are suggested but not required. If the suggested experiments are not performed, we request that the authors mention / discuss the 'silent channel' point and indicate that their experiment provide a good estimation of the total number of channels, rather than the exact number.\n\nSuggested experiments:\n\na) The authors claim that their novel stimulation protocol for single channel analysis allows them to measure the number of channels in each patch with high accuracy. The pressure ramps, used in this manuscript,\u00ac last about 3,000 ms at + 60mV. However, according to the same group (Wu et al., 2017, Cell Reports) Piezo1 inactivates within 90-100 ms at +60 mV. Hence, it is quite possible that in those patches the authors are underestimating the number of channels. It is not clear why the authors did not measure macroscopic currents using similar conditions as the ones used for single channel measurements. Particularly, macroscopic currents should be measured at positive potentials (to slow down inactivation), instead of at -80 mV, where Piezo1 tends to inactivate more rapidly than at positive potentials.\n\nb) The authors should consider perfusing Yoda1 (Piezo1 specific agonist) at the end of the pressure ramp experiments to reveal that there are indeed no more channels in the patch membrane than those visible ones with pressure.\n\nc) The representative traces on Figure 1B and 1D suggest that -60 mmHg does not saturate the response of Piezo1. The authors should add a control square pulse at the end of the experiment (equal to or larger than -60 mmHg) to ensure the currents are saturated.\n\n3) Figure 2. The analysis performed on Figure 2 is confusing as is it is not clear how the mean open probabilities (black traces) as a function of pressure were calculated. Mean open and closed times need to be determined. Authors should elaborate when explaining these types of analyses and provide details on how good and/or significant these fits are.\n\n4) Figure 4. It appears you have plotted the wrong data when reporting the slopes obtained by adjusting sigmoidal fits to their macroscopic data. The slopes don't have units, and instead they presented mmHg ranging from 0 to -25. Showing the sigmoidal fits and the slopes obtained from them might help driving the point.\n\n5) Introduction. In the introduction, the authors propose that due to short-scale tension propagation in the membrane, the mechanosensors should be evenly distributed and be functionally independent. \"Any substantial deviation from a uniform distribution of force-gated ion channels will result in domains that fall short to detect forces (where there are no ion channels) as well as domains that transduce forces disproportionately (where many ion channels are nearby).\" In fact, the non-uniform distribution of Piezo channels has been shown by the Martinac group (Ridone et al., 2020). Additionally, Piezo1 recruitment to focal adhesions has been strongly suggested (Yao et al., https://www.biorxiv.org/content/10.1101/2020.03.09.972307). We suggest that you present a more balanced view on the potential sensitivity tuning of the 'receptive field' by channel clustering, and then ask whether it is the case.\n\n6) We advise against insisting that the midpoint tension for Piezo1 is 1.4 mN/m. The fact that the patches bulge into the pipette at zero clamped pressure indicates that the actual pressure gradient is non-zero. It can be easily accounted for by the osmotic (oncotic) pressure difference between the cell interior and patch pipette buffer. The authors found that a positive pressure of 5 mm Hg flattens the patch and thus compensates for the existing pressure bias. The flat patch, like a drumskin, experiences the minimal (resting, seal-generated) tension. When the authors pre-condition the patch with +5 mm Hg and then stimulate with -20 mm Hg, the actual stimulus amplitude is -25 mm Hg. For this reason, the previously reported midpoint of ~5 mN/m for inside-out patches (less osmotic/hydrostatic gradients) might be more realistic. It is also more consistent with the work of other groups (Cox et al., 2016, 7:10366 | DOI: 10.1038/ncomms10366)\n\n7) Why does the pressure go back to +5 mmHg the current goes beyond the baseline? This could indicate that channels were open before the ramp, suggesting the estimation might not be accurate.\n",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1669c149-e505-4ba8-8932-893dafd36456",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C1",
+      "claim": "Piezo1 is a mechanically activated ion channel involved in sensing forces in various cell types and tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Piezo1 is a mechanically activated ion channel involved in sensing forces in various cell types and tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about Piezo1 function that draws from established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "769f0e4e-5e35-4f48-802d-f6df1a7d8686",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C2",
+      "claim": "The Piezo1 structure is bowl-shaped.",
+      "claim_type": "EXPLICIT",
+      "source": "Cryo-electron microscopy has revealed that the Piezo1 structure is bowl-shaped and capable of inducing membrane curvature via its extended footprint",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to cryo-electron microscopy studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "c995160e-2742-427a-b20b-5dd99addd1fc",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C3",
+      "claim": "Piezo1 is capable of inducing membrane curvature via its extended footprint.",
+      "claim_type": "EXPLICIT",
+      "source": "Cryo-electron microscopy has revealed that the Piezo1 structure is bowl-shaped and capable of inducing membrane curvature via its extended footprint",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to cryo-electron microscopy studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "73260d3f-c020-457c-963d-2f30859d02aa",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C4",
+      "claim": "At endogenous densities (1\u20132 channels/\u03bcm2), Piezo1 density has no effect on its pressure sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data, together with stochastic simulations of Piezo1 spatial distributions, show that both at endogenous densities (1\u20132 channels/\u03bcm2), and at non-physiological densities (10\u2013100 channels/\u03bcm2) predicted to cause substantial footprint overlap, Piezo1 density has no effect on its pressure sensitivity or open probability in the nominal absence of membrane tension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from patch-clamp electrophysiology and stochastic simulations presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "7ab107df-c11c-4d5d-aa25-3cd5a36286e0",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C5",
+      "claim": "At non-physiological densities (10\u2013100 channels/\u03bcm2), Piezo1 density has no effect on its pressure sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data, together with stochastic simulations of Piezo1 spatial distributions, show that both at endogenous densities (1\u20132 channels/\u03bcm2), and at non-physiological densities (10\u2013100 channels/\u03bcm2) predicted to cause substantial footprint overlap, Piezo1 density has no effect on its pressure sensitivity or open probability in the nominal absence of membrane tension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from patch-clamp electrophysiology at high channel densities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "ad6c5a36-44c6-45da-ab61-ebfdbf5958ce",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C6",
+      "claim": "At densities of 10\u2013100 channels/\u03bcm2, substantial footprint overlap is predicted to occur.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data, together with stochastic simulations of Piezo1 spatial distributions, show that both at endogenous densities (1\u20132 channels/\u03bcm2), and at non-physiological densities (10\u2013100 channels/\u03bcm2) predicted to cause substantial footprint overlap, Piezo1 density has no effect on its pressure sensitivity or open probability in the nominal absence of membrane tension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This prediction is based on theoretical calculations and stochastic simulations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "a68c6504-a7ef-47e0-99e6-fbd1fd36ec5a",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C7",
+      "claim": "Piezo1 density has no effect on open probability in the nominal absence of membrane tension.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data, together with stochastic simulations of Piezo1 spatial distributions, show that both at endogenous densities (1\u20132 channels/\u03bcm2), and at non-physiological densities (10\u2013100 channels/\u03bcm2) predicted to cause substantial footprint overlap, Piezo1 density has no effect on its pressure sensitivity or open probability in the nominal absence of membrane tension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental measurements of open probability during prepulse protocols.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "0d27b452-c241-4425-8b6d-c0cc4a57f5d6",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C8",
+      "claim": "Piezo channels, at densities likely to be physiologically relevant, inherently behave as independent mechanotransducers.",
+      "claim_type": "EXPLICIT",
+      "source": "The results suggest that Piezo channels, at densities likely to be physiologically relevant, inherently behave as independent mechanotransducers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the experimental data showing no functional interactions at various densities.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "8ddac304-8340-4a18-a3b3-486fdd0f5b25",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C9",
+      "claim": "The independent behavior of Piezo channels is essential for cells to transduce forces homogeneously across the entire cell membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that this property is essential for cells to transduce forces homogeneously across the entire cell membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal based on the functional independence observed in the experiments.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "e84f72aa-cee5-4b66-8ffe-c798266267ce",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C10",
+      "claim": "Piezo1 is a mechanically gated cation channel that directly senses membrane tension with high sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Piezo1 is a mechanically gated cation channel that directly senses membrane tension (T) with high sensitivity (Coste et al., 2010; Cox et al., 2016; Lewis and Grandl, 2015; Syeda et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "d1c9e44f-b7f2-4959-bb9c-e0b3ab52d9ca",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C11",
+      "claim": "Any mechanical disturbance of the cell membrane may lead to changes in Piezo1 channel open probability.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, theoretically, any mechanical disturbance of the cell membrane may lead to changes in Piezo1 channel open probability (Po).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical inference based on Piezo1's mechanosensitivity.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "4162dbab-20c8-4155-b311-a01a20c26d22",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C12",
+      "claim": "The propagation of membrane tension away from its source is relatively slow (D ~ 0.024 \u00b5m2/s).",
+      "claim_type": "EXPLICIT",
+      "source": "However, the propagation of membrane tension away from its source has been shown to be relatively slow (D ~ 0.024 \u00b5m2/s), poising Piezo channels with the ability to efficiently and rapidly transduce only mechanical forces that are nearby (Shi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "eae5ce0c-8aeb-43a8-b48a-5e83e1b02e5f",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C13",
+      "claim": "Piezo channels can efficiently and rapidly transduce only mechanical forces that are nearby.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the propagation of membrane tension away from its source has been shown to be relatively slow (D ~ 0.024 \u00b5m2/s), poising Piezo channels with the ability to efficiently and rapidly transduce only mechanical forces that are nearby (Shi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the slow propagation of membrane tension.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "401fbfc5-5c98-4077-b6dd-be60a8edfc6c",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C14",
+      "claim": "The degree to which forces are transduced homogeneously across the cell membrane depends on the spatial distribution of force-gated ion channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The degree to which forces are transduced homogeneously across the cell membrane likely depends not only on the dynamics of membrane tension propagation, but also on (i) the spatial distribution of force-gated ion channels, and (ii) on their functional independence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about factors affecting force transduction.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "c4f66410-2a59-4e49-9e29-7c87a23701de",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C15",
+      "claim": "The degree to which forces are transduced homogeneously across the cell membrane depends on the functional independence of force-gated ion channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The degree to which forces are transduced homogeneously across the cell membrane likely depends not only on the dynamics of membrane tension propagation, but also on (i) the spatial distribution of force-gated ion channels, and (ii) on their functional independence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about factors affecting force transduction.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "aebc4069-e538-487d-80d7-6421a19b6f8f",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C16",
+      "claim": "TIRF imaging revealed free diffusion of Piezo1 channels over the surface of live neural stem/progenitor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "TIRF imaging of Piezo1 channels revealed their free diffusion over the surface of live neural stem/progenitor cells, indirectly suggesting channels are not tethered to other static structures and that random membrane distribution may be possible. However, in the same cells, Piezo1-related activity was spatially enriched, which could arise from non-uniform distribution of Piezo1 channels, variable membrane tension, or both (Ellefsen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous imaging study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "7ce9a6a6-1a30-479a-a1fc-a9a14dc16632",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C17",
+      "claim": "Piezo1 channels are not tethered to other static structures.",
+      "claim_type": "IMPLICIT",
+      "source": "TIRF imaging of Piezo1 channels revealed their free diffusion over the surface of live neural stem/progenitor cells, indirectly suggesting channels are not tethered to other static structures and that random membrane distribution may be possible. However, in the same cells, Piezo1-related activity was spatially enriched, which could arise from non-uniform distribution of Piezo1 channels, variable membrane tension, or both (Ellefsen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation of free diffusion.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "5135e219-a6ae-4747-a770-6512a371ec8b",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C18",
+      "claim": "Piezo1-related activity was spatially enriched in neural stem/progenitor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "TIRF imaging of Piezo1 channels revealed their free diffusion over the surface of live neural stem/progenitor cells, indirectly suggesting channels are not tethered to other static structures and that random membrane distribution may be possible. However, in the same cells, Piezo1-related activity was spatially enriched, which could arise from non-uniform distribution of Piezo1 channels, variable membrane tension, or both (Ellefsen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "f49be06c-df6e-4294-a4ae-2f0b29c37acf",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C19",
+      "claim": "STORM imaging of HEK293 cells stably expressing GFP-tagged Piezo1 suggested a non-homogenous spatial distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "STORM imaging of HEK293 cells stably expressing GFP-tagged Piezo1 also suggested a non-homogenous spatial distribution, but at channel densities that are likely not physiological (Ridone et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous imaging study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "1d724fbe-464a-4526-b538-9f0b3464f442",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C20",
+      "claim": "The non-homogenous distribution observed in STORM imaging was at channel densities that are likely not physiological.",
+      "claim_type": "EXPLICIT",
+      "source": "STORM imaging of HEK293 cells stably expressing GFP-tagged Piezo1 also suggested a non-homogenous spatial distribution, but at channel densities that are likely not physiological (Ridone et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the cited study's findings.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "ef713b78-4dfd-4564-8d0e-26ff92855f04",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C21",
+      "claim": "Piezo1 may be concentrated at focal adhesions.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional studies have proposed the existence of clusters with varying numbers of channels (Jiang et al., 2021), and that Piezo1 may be concentrated at focal adhesions (Mingxi Yao et al., 2020) and at wound edges in keratinocytes (Holt et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "fb74c2cf-b096-4f8f-ba48-147f1b3190aa",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C22",
+      "claim": "Piezo1 may be concentrated at wound edges in keratinocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional studies have proposed the existence of clusters with varying numbers of channels (Jiang et al., 2021), and that Piezo1 may be concentrated at focal adhesions (Mingxi Yao et al., 2020) and at wound edges in keratinocytes (Holt et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "f2ec18f8-9ea1-49c1-aea8-7b19f4e506cf",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C23",
+      "claim": "Cryo-electron microscopy structures revealed Piezo1's large and extremely curved dome-shaped structure.",
+      "claim_type": "EXPLICIT",
+      "source": "A compelling theoretical framework predicting spatial and functional interactions between nearby Piezo channels has been constructed based on cryo-electron microscopy structures of Piezo1, which revealed its large and extremely curved dome-shaped structure (Guo and MacKinnon, 2017; Haselwandter and MacKinnon, 2018; Saotome et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to cryo-EM studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "5d2dea17-34d1-4446-816a-82248e84d57d",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C24",
+      "claim": "Piezo1 can both sense and curve the proximal membrane with a characteristic decay length extending ~14 nm beyond the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Theoretical calculations based on these structures suggest that Piezo1 can both sense and curve the proximal membrane with a characteristic decay length extending ~14 nm beyond the channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on theoretical calculations from cited studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "48defb63-1e2a-400d-95b2-c43b71e5de4c",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C25",
+      "claim": "Piezo1 channels that are within ~3 decay lengths (a 'footprint' of ~50 nm) may influence each other via multiple mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "The energetic cost of this membrane curvature implies that Piezo1 channels that are within ~3 decay lengths (a 'footprint' of ~50 nm; see Materials and methods) may influence each other via multiple mechanisms: opposing curvature may cause nearby Piezo1 channels to repel each other, as well as influence each other's gating properties (Haselwandter and MacKinnon, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction based on membrane energetics calculations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "99269db9-7fed-42b8-8cd7-5f3f7f33a718",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C26",
+      "claim": "Opposing curvature may cause nearby Piezo1 channels to repel each other.",
+      "claim_type": "EXPLICIT",
+      "source": "The energetic cost of this membrane curvature implies that Piezo1 channels that are within ~3 decay lengths (a 'footprint' of ~50 nm; see Materials and methods) may influence each other via multiple mechanisms: opposing curvature may cause nearby Piezo1 channels to repel each other, as well as influence each other's gating properties (Haselwandter and MacKinnon, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction from cited work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "62405883-7c5b-40a8-965a-1a87628a1285",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C27",
+      "claim": "Nearby Piezo1 channels may influence each other's gating properties.",
+      "claim_type": "EXPLICIT",
+      "source": "The energetic cost of this membrane curvature implies that Piezo1 channels that are within ~3 decay lengths (a 'footprint' of ~50 nm; see Materials and methods) may influence each other via multiple mechanisms: opposing curvature may cause nearby Piezo1 channels to repel each other, as well as influence each other's gating properties (Haselwandter and MacKinnon, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction from cited work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "99e6919f-8eee-486c-8a88-031d9c97df48",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C28",
+      "claim": "Imaging of vesicles containing reconstituted Piezo1 demonstrated the ability of Piezo1 to curve the membrane locally.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, imaging of vesicles containing reconstituted Piezo1 has demonstrated the ability of Piezo1 to curve the membrane locally and suggested that flattening of the channel dome may directly couple to channel opening, but the precise effects of membrane energetics on gating have yet to be explored experimentally (Jiang et al., 2021; Lin et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to reconstitution studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "fbb61db0-6eaa-4300-8ee7-c35b30fde398",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C29",
+      "claim": "Flattening of the channel dome may directly couple to channel opening.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, imaging of vesicles containing reconstituted Piezo1 has demonstrated the ability of Piezo1 to curve the membrane locally and suggested that flattening of the channel dome may directly couple to channel opening, but the precise effects of membrane energetics on gating have yet to be explored experimentally (Jiang et al., 2021; Lin et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion from cited reconstitution studies.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "735eb278-8600-41b5-b77c-44345d76248f",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C30",
+      "claim": "The precise effects of membrane energetics on gating have yet to be explored experimentally.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, imaging of vesicles containing reconstituted Piezo1 has demonstrated the ability of Piezo1 to curve the membrane locally and suggested that flattening of the channel dome may directly couple to channel opening, but the precise effects of membrane energetics on gating have yet to be explored experimentally (Jiang et al., 2021; Lin et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "f4040ebf-36da-4358-9fb8-44154aa4cb95",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C31",
+      "claim": "Neuro2A cells natively express Piezo1.",
+      "claim_type": "EXPLICIT",
+      "source": "To simultaneously measure and thus directly correlate Piezo1 channel density with its gating properties, we performed cell-attached patch-clamp electrophysiology on Neuro2A cells, which natively express Piezo1 (Coste et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "40c13e01-e8d0-497b-8441-182eb521d241",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C32",
+      "claim": "Neuro2A cells have among the highest endogenous levels of Piezo1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose Neuro2A cells over human umbilical vein endothelial cells (HUVECs; Figure 1\u2014figure supplement 1) and other cell lines because they have among the highest endogenous levels of Piezo1 expression, thus offering the highest likelihood for observing any potential functional effects of local channel density on function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative statement based on knowledge of Piezo1 expression levels.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "2b6a1555-386e-4bb7-be65-075d9bc94a0a",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C33",
+      "claim": "Piezo1 inactivation at +60 mV is minimal during short pressure steps.",
+      "claim_type": "EXPLICIT",
+      "source": "Since Piezo1 inactivation precludes a precise measurement of maximal current (Imax) at negative potentials, we recorded currents at +60 mV, where inactivation during short pressure steps is minimal (Coste et al., 2010; Wu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "3c1a5093-29fe-4c58-8d8a-c4533f2dbff9",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C34",
+      "claim": "Traditional step protocols induce irreversible changes in patch geometry owing to membrane creep, particularly at positive voltages.",
+      "claim_type": "EXPLICIT",
+      "source": "However, traditional step protocols are well known to induce irreversible changes in patch geometry owing to membrane creep, particularly at positive voltages (Lewis and Grandl, 2015; Suchyna et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "4941a424-3489-4820-8dc8-bc4e80323674",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C35",
+      "claim": "A direct step to a saturating pressure (\u201360 mmHg) caused small changes in current due to leak and/or capacitance even in patches with zero channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a direct step to a saturating pressure (\u201360 mmHg) caused small, but measurable changes in current due to leak and/or capacitance even in patches that were later classified to have zero channels (see below; mean \u00b1 SD: 2.6 \u00b1 1.3 pA; n=33 patches; Figure 1\u2014figure supplement 2A-B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in the figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "575f44ee-c6e2-4fa9-a85d-824f8e33d28b",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C36",
+      "claim": "The same pressure step caused a similarly small current in patches from Neuro2A-Piezo1ko cells (mean \u00b1 SD: 3.8 \u00b1 1.5 pA, n=15 patches).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, the same pressure step caused a similarly small current in patches from Neuro2A-Piezo1ko cells, which have been CRISPR-engineered to lack Piezo1 channels (mean \u00b1 SD: 3.8 \u00b1 1.5 pA, n=15 patches; Figure 1\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from knockout cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "b9c3012f-e37a-4a32-878b-d8839f704bb3",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C37",
+      "claim": "A step protocol consistently overestimates current by 2\u20133 pA.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, a step protocol consistently overestimates current by 2\u20133 pA, and thus channel numbers accordingly (Figure 1\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the experimental observations of background current.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "c935fb6b-f008-4bea-aa80-da2348e850cf",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C38",
+      "claim": "Pressure equilibration occurs within ~7 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "The total duration of this ramp is short enough to minimize membrane creep (3 s), but each step is long enough (50 ms) to allow pressure equilibration, which occurs within ~7 ms (Lewis et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "aa963bba-1040-4756-9a75-1a85ab147cf6",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C39",
+      "claim": "Inactivation of Piezo1 at +60 mV is minimal (step pulse: mean current at 200 ms = 96.5\u00b17.4% of peak; n=281 patches).",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the step pulse allowed us to confirm post hoc that inactivation of Piezo1 at this voltage is minimal (step pulse: mean current at 200 ms = 96.5\u00b17.4% of peak; n=281 patches; Figure 1\u2014figure supplement 2A,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "0e707db0-c6ad-45c4-93c4-677b6125642a",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C40",
+      "claim": "The mean single-channel current from all patches with one channel is i=0.98\u00b10.04 pA (n=35 patches).",
+      "claim_type": "EXPLICIT",
+      "source": "We next used the mean single-channel current from all patches with one channel (i=0.98\u00b10.04 pA, n=35 patches; Figure 1\u2014figure supplement 2G) to calculate the precise number of channels (n=Imax/i) in all other patches.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct measurement from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "08e41d6b-d7da-43eb-b6b7-579285490e12",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C41",
+      "claim": "The distribution average of Piezo1 channel numbers per patch was 3.5\u00b13.1 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultimately, we obtained a continuous, bell-shaped distribution of Piezo1 channel numbers per patch (Figure 1E). The distribution average was 3.5\u00b13.1 channels per patch, which given our small pipette sizes is consistent with previously reported levels of expression in Neuro2A cells (Coste et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical summary of experimental measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "f2d845a7-f436-447a-876d-ffd0dcd30729",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C42",
+      "claim": "The dome size of membrane patches inside patch pipettes is estimated to be 2 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimated the dome size of membrane patches inside patch pipettes from imaging experiments to be 2 \u00b5m (see Materials and methods) and used this value to calculate the average density of Piezo1 channels to be 1\u20132 channels/\u00b5m2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an estimate based on imaging experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "9891cd45-f1b9-4e5e-80ba-4572574dd956",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C43",
+      "claim": "The average density of Piezo1 channels in Neuro2A cells is 1\u20132 channels/\u00b5m2.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimated the dome size of membrane patches inside patch pipettes from imaging experiments to be 2 \u00b5m (see Materials and methods) and used this value to calculate the average density of Piezo1 channels to be 1\u20132 channels/\u00b5m2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from experimental measurements of channel number and patch size.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "de51be90-8f6a-4fb2-ae58-c2ca44f6d642",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C44",
+      "claim": "For patches containing 1\u201314 channels, average P50 values do not vary substantially with channel number.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, the results show that, for patches containing 1\u201314 channels, average P50 values do not vary substantially with channel number (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This conclusion is drawn from analysis of experimental data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "2a54b55b-e4a5-4e22-a3e1-44b9006c5e05",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C45",
+      "claim": "P50 and slope (k) values are virtually identical for patches containing 1, 2, 3, 4, or 5 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Visual inspection as well as fits with sigmoidal functions show that P50 and slope (k) values are virtually identical for patches containing 1, 2, 3, 4, or 5 channels (1 channel: P50=\u201323.2 mmHg, k=\u20133.3 mmHg; 5 channels: P50=\u201323.7 mmHg, k=\u20134.2 mmHg).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of idealized traces and sigmoidal fits to the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "939bf821-4120-4d61-9452-cfeedf4e77fa",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C46",
+      "claim": "At densities of up to 2 channels/\u00b5m2, Piezo1 channels do not influence each other's mechanosensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore conclude from both analyses that at densities of up to 2 channels/\u00b5m2, Piezo1 channels do not influence each other's mechanosensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from multiple analyses of experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "bfd4f755-e17e-475b-9777-bf767cfceb67",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C47",
+      "claim": "In Neuro2A cells, Piezo1 channels may be homogeneously distributed across the cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting distribution fits the experimental data reasonably well, indicating that in Neuro2A cells, Piezo1 channels may be homogenously distributed across the cell surface, rather than being spatially localized in close proximity (Figure 3A\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This conclusion is based on comparison of experimental data with stochastic simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "05d3dca5-5caa-45d4-b998-a0d62e921b8e",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C48",
+      "claim": "A distribution in which on average 1.6 Piezo1 channels interact over 50 nm also describes the experimental data well.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, a distribution in which on average 1.6 Piezo1 channels (drawn from a Poisson distribution centered at 1; see Materials and methods) interact over 50 nm also describes the experimental data well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on stochastic modeling that fits the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "d4eb7e85-c3aa-4fb4-bdec-30b2022651a3",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C49",
+      "claim": "Simulating larger channel clusters (n ~ 5) fails to reproduce the experimental distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "However, simulating larger channel clusters (n ~ 5) fails to reproduce the experimental distribution, specifically the probability of capturing patches without any channels (Figure 3A\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of simulation results with experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "e5afbbb1-13a4-4e85-829e-2d98d62b1262",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C50",
+      "claim": "In a truly random distribution, the mean nearest-neighbor distance is ~390 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the two distributions differ significantly in the predicted fraction of channels that are within one footprint of at least one other channel: in a truly random distribution, the mean nearest-neighbor distance is ~390 nm, and only ~5% of channels are within 100 nm of another channel",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from stochastic modeling.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "77c2f2e9-f1fc-4719-8b49-8390742b9f93",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C51",
+      "claim": "In a truly random distribution, only ~5% of channels are within 100 nm of another channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the two distributions differ significantly in the predicted fraction of channels that are within one footprint of at least one other channel: in a truly random distribution, the mean nearest-neighbor distance is ~390 nm, and only ~5% of channels are within 100 nm of another channel",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from stochastic modeling.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "8eb5e581-2d8f-4df8-a428-47f3f675b2f6",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C52",
+      "claim": "If channels tend to cluster in groups of 2\u20133, the mean nearest-neighbor distance is reduced to 225 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas if channels tend to cluster in groups of 2\u20133, the mean nearest-neighbor distance is reduced to 225 nm and almost 50% of channels are within 100 nm of another channel (Figure 3G\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prediction from stochastic modeling with clustering.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "53f97d5b-1586-4526-b45f-29ccb407ed9e",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C53",
+      "claim": "If channels tend to cluster in groups of 2\u20133, almost 50% of channels are within 100 nm of another channel.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas if channels tend to cluster in groups of 2\u20133, the mean nearest-neighbor distance is reduced to 225 nm and almost 50% of channels are within 100 nm of another channel (Figure 3G\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prediction from stochastic modeling with clustering.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "27f3dfef-71da-4070-91dc-91d656adde4d",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C54",
+      "claim": "If spatial localization of Piezo1 in groups of 2-3 occurs, it does not have a substantial effect on Piezo1 pressure sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our functional data support the idea that if the latter spatial localization indeed occurs, it does not have a substantial effect on Piezo1 pressure sensitivity (Figures 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This conclusion is drawn from the functional data showing no effect of channel number on pressure sensitivity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "b33daa1b-bd4d-4b5c-8277-681580439335",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C55",
+      "claim": "Transfection with Lipofectamine 2000 maximizes channel density 42\u201348 hr post-transfection.",
+      "claim_type": "EXPLICIT",
+      "source": "In pilot experiments, we found that transfection with Lipofectamine 2000 maximizes channel density 42\u201348 hr post-transfection (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on pilot experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "c493cc23-7f83-4950-8746-997577def8a0",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C56",
+      "claim": "Overexpression yields peak currents that inactivate to a larger extent even at +60 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "We first repeated our previous ramp protocol, but found that while overexpression yields peak currents that are much larger, these currents inactivate to a larger extent even at +60 mV, such that a ramp protocol substantially underestimates the total number of channels in the patch (Figure 4\u2014figure supplement 1; current at 200 ms=53.3\u00b118.1% of peak, n=138 patches).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from overexpression experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "316931d9-691a-49e2-a1ba-970cff9d7038",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C57",
+      "claim": "The number of channels per patch in overexpression experiments was well described by a Gaussian distribution with 89.2\u00b149.8 channels per patch.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of channels per patch was well described by a Gaussian distribution with 89.2\u00b149.8 channels per patch (Figure 4C), which we estimate corresponds to a Piezo1 density of ~45 channels/\u00b5m2 (see Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical summary of experimental measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "06f39bf3-7170-44ed-aebe-8d8c4ac41fda",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C58",
+      "claim": "The average Piezo1 density in overexpression experiments is ~45 channels/\u00b5m2.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of channels per patch was well described by a Gaussian distribution with 89.2\u00b149.8 channels per patch (Figure 4C), which we estimate corresponds to a Piezo1 density of ~45 channels/\u00b5m2 (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from experimental measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "f712c1f5-c83d-45f8-8ada-00a937121ed3",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C59",
+      "claim": "The most extreme current amplitude observed (\u2013190 pA, or ~200 channels) corresponds to a maximal density of ~100 channels/\u00b5m2.",
+      "claim_type": "EXPLICIT",
+      "source": "The most extreme current amplitude we observed (\u2013190 pA, or ~200 channels) corresponds to a maximal density of ~100 channels/\u00b5m2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the maximum observed current.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "38724aa0-4aec-4633-9214-faf4008dc507",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C60",
+      "claim": "At a density of ~100 channels/\u00b5m2, if Piezo channels were randomly distributed, their mean next-neighbor distance would be ~50 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "At this maximal density, if Piezo channels were randomly distributed in the membrane, their mean next-neighbor distance would be ~50 nm (Figure 4\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a calculation based on the observed density.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "7fd51d1d-fb05-44f9-b551-a4930b16b7f9",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C61",
+      "claim": "At high densities, Piezos are likely in close enough proximity to influence each other's function.",
+      "claim_type": "EXPLICIT",
+      "source": "This calculation suggests that we have reached densities in which Piezos are likely in close enough proximity to influence each other's function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the calculated nearest-neighbor distances.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "df78ce41-7002-4cd6-8123-cdec7ad245cf",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C62",
+      "claim": "Piezo1 open probability was generally small (<1%) during the prepulse.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that open probability was generally small (<1%), which was consistent with previous work in our lab (Wu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation consistent with previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "cee4568d-143a-4814-8b9a-4d29f328fff7",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C63",
+      "claim": "Piezo1 open probability slightly decreased with channel density, from 0.6\u00b10.4% for patches with 1\u201310 channels to 0.2\u00b10.1% for patches with >200 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Most notably however, we found that Piezo1 open probability did not increase with channel density; rather, open probability slightly decreased, from 0.6\u00b10.4% for patches with 1\u201310 channels (mean \u00b1 SD; n=3 patches) to 0.2\u00b10.1% for patches with >200 channels (n=3 patches) (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "04524061-df34-47c6-a5f6-05d1dc7a7285",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C64",
+      "claim": "Both slope and P50 values were unaffected by channel number in overexpression experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Both slope and P50 values were unaffected by channel number (Figure 4E\u2013F), and these values were also unaffected by pipette size (Figure 4\u2014figure supplement 3C-D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This conclusion is drawn from analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "2a2ecd9b-8670-4919-87bd-74024d294e8f",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C65",
+      "claim": "Pressure-response curves and sensitivity (slope) are independent of channel numbers.",
+      "claim_type": "EXPLICIT",
+      "source": "The results again show that pressure-response curves and sensitivity (slope) are independent of channel numbers (for 0\u201320 channels, P50=\u201321.5 mmHg, k=\u20138.0 mmHg, n=5; for >200 channels, P50=\u201321.0 mmHg, k=\u20136.8 mmHg, n=3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on analysis of normalized pressure-response curves.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "4a92b913-b8fa-43d9-8277-8ddd5e52ef7a",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C66",
+      "claim": "There is no correlation between either T50 or the slope (k) and channel density in the range of 10\u201370 channels/\u00b5m2.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we found no correlation between either the tension of half-maximal activation (T50) or the slope (k) and channel density in the range of 10\u201370 channels/\u00b5m2 (Figure 5D\u2013F), again supporting that Piezo1 channels do not influence each other's tension sensitivity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This conclusion is drawn from imaging experiments combined with electrophysiology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "729cc278-1f4e-4d93-943b-aa67bd708d43",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C68",
+      "claim": "In wild-type Neuro2A cells, most Piezo1 channels are too far apart to 'feel' each other.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, in wild-type Neuro2A cells, most Piezo1 channels are too far apart to 'feel' each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the spatial distribution modeling and experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "a388b8dc-ae05-4d96-9aa4-10bee7f3b541",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C69",
+      "claim": "Piezo1 channels have no strong intrinsic tendency to spatially concentrate.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is important, because it shows that Piezo1 channels have no strong intrinsic tendency to spatially concentrate and functionally modulate each other's mechanical sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the experimental observations and modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "5d6ae75a-9027-4fb2-aa4a-43202cf32aa5",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C70",
+      "claim": "Piezo1 channels have no strong intrinsic tendency to functionally modulate each other's mechanical sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is important, because it shows that Piezo1 channels have no strong intrinsic tendency to spatially concentrate and functionally modulate each other's mechanical sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the experimental observations showing no functional interactions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "b3668bf6-03b4-4b22-90d5-8d73c5fee5f7",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C71",
+      "claim": "The independent behavior of Piezo1 channels is ideal for a cell to transduce mechanical forces homogeneously.",
+      "claim_type": "EXPLICIT",
+      "source": "Both of these properties are ideal for a cell in order to transduce mechanical forces homogeneously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the functional significance of the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "16ffa473-41f7-4c86-aed6-a608a5bede9b",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C72",
+      "claim": "In the nominal absence of membrane tension, Piezo1 open probability is slightly (~0.5%) reduced with channel number but overall very low (<1%) at all channel densities probed.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, our data do suggest that in the nominal absence of membrane tension Piezo1 open probability is slightly (~0.5%) reduced with channel number but overall, very low (<1%) at all channel densities we probed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "3b71e9b9-2d5c-4ec3-84af-1884c0464239",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C73",
+      "claim": "Simulations of Piezo1 in extreme proximity (1\u20133 nm dome-dome distance) showed the opposite result regarding open probability.",
+      "claim_type": "EXPLICIT",
+      "source": "This is notable, because the opposite result was recently obtained by simulations of Piezo1 that are in extreme proximity to each other (1\u20133 nm dome-dome distance; Jiang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with results from a cited simulation study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "de840600-25c9-46bd-9a9c-30f4b0b1262c",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C74",
+      "claim": "Calcium permeating through Piezo1 may influence the resting open probability of nearby channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, any cooperativity need not arise via membrane footprint interactions: for example, calcium permeating through Piezo1 may influence the resting open probability of nearby channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative alternative explanation for potential cooperativity.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "fa8bdd4c-c398-428f-aa06-4df7d47189eb",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C75",
+      "claim": "Calcium-induced cooperativity is a well-known phenomenon in other ion channels, such as TRPA1.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, calcium-induced cooperativity is a well-known phenomenon in other ion channels, such as TRPA1 (Wang et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a study on TRPA1.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "913423cc-50d6-46fd-8685-ca999cefa463",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C76",
+      "claim": "The conclusions may be applicable to other cell types that express Piezos at levels similar or lower to that of Neuro2A cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our conclusions may be applicable to other cell types that express Piezos at levels similar or lower to that of Neuro2A cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative extrapolation of the findings to other cell types.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "39abe037-39ea-4c1d-bae0-9a2f8af8a909",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C77",
+      "claim": "Specific cell types may concentrate Piezo channels into locations dedicated to detecting forces.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we fully expect that specific cell types may concentrate Piezo channels into locations that are dedicated to detecting forces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential cell-type-specific mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "7a4cc6fe-3017-46c4-99ce-c963b92b37c4",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C78",
+      "claim": "If Piezo clustering is observed, it would require a dedicated mechanism that is not Piezo-intrinsic, such as a tethering molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our work directly predicts that if such a clustering was indeed observed, it would require a dedicated mechanism that is not Piezo-intrinsic, such as a still elusive tethering molecule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the findings that Piezo1 has no intrinsic clustering tendency.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "e1fc98a5-9d6b-48a9-a720-98ac6e4753c5",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C79",
+      "claim": "The characteristic decay length (\u03bb) of membrane deformation induced by Piezo1 is estimated to be 14 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The characteristic decay length (\u03bb) of membrane deformation induced by the large curved dome of Piezo1 is estimated to be 14 nm (Haselwandter and MacKinnon, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on theoretical calculations from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "1cdff980-8123-4099-9840-ecaa9403dd51",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C80",
+      "claim": "The approximate total membrane footprint of Piezo1 is ~50 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "We put upper bounds of possible Piezo energetic interactions due to membrane curvature beyond the dome itself as 3\u00d7 this decay length; when adding this to the radius of the channel dome, this yields an approximate total membrane footprint of (10 nm +3*14 nm ~ 50 nm).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the decay length and channel dome size.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "5c6708c7-06eb-465a-b788-f7ba71c0f9a7",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C81",
+      "claim": "Patch domes from pipettes 3 to 6 M\u03a9 have an approximate surface area of 2 \u00b5m2.",
+      "claim_type": "EXPLICIT",
+      "source": "From our imaging data (Figure 5 and Figure 5\u2014figure supplement 1), we estimated that patch domes from pipettes 3 to 6 M\u03a9 have an approximate surface area of 2 \u00b5m2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an estimate from imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "48e874cb-9311-41b0-b0a8-db5b0bb9fedf",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C82",
+      "claim": "If the patch dome is approximated as a flat circle with surface area 2 \u00b5m2, this corresponds to a pipette radius of 0.8 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "If the patch dome is approximated as a flat circle, this corresponds to a pipette radius of 0.8 \u00b5m, which was used for simulation of Piezo1 spatial distribution in the Thomas point process model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a geometric calculation from the surface area estimate.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "4f97cf22-3a05-4b40-b3cc-c58a76ac344f",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C83",
+      "claim": "At maximal overexpression density, approximately 4% of the membrane surface would be covered by Piezo channels.",
+      "claim_type": "EXPLICIT",
+      "source": "For the maximal channel number we observed (~200 channels), with an estimated in-plane area of 400 nm2 (Wang et al., 2019), an estimated footprint of 7800 nm2 (calculated from a footprint of 50 nm; Haselwandter and MacKinnon, 2018) and a patch dome surface area of 2 \u00b5m2, approximately 4% of the membrane surface would be covered by Piezo channels and 78% of the surface covered by Piezos + corresponding footprints if channels were evenly distributed (with no overlap of footprints).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on channel dimensions and density.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "4c6bc983-cc8b-45f4-a25d-0f9a800843ae",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C84",
+      "claim": "At maximal overexpression density, 78% of the membrane surface would be covered by Piezos plus corresponding footprints if channels were evenly distributed.",
+      "claim_type": "EXPLICIT",
+      "source": "For the maximal channel number we observed (~200 channels), with an estimated in-plane area of 400 nm2 (Wang et al., 2019), an estimated footprint of 7800 nm2 (calculated from a footprint of 50 nm; Haselwandter and MacKinnon, 2018) and a patch dome surface area of 2 \u00b5m2, approximately 4% of the membrane surface would be covered by Piezo channels and 78% of the surface covered by Piezos + corresponding footprints if channels were evenly distributed (with no overlap of footprints).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on channel dimensions, footprint size, and density.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "6eed1653-86dd-46b0-9174-9ffcd87c25b0",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C85",
+      "claim": "~15% of patches in wild-type Neuro2A cells contained no Piezo1 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that ~15% of patches in wild-type Neuro2A cells contained no Piezo1 channels (Figure 1E) is therefore an extremely important quality benchmark for adequate spatial resolution.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "fd41253c-34ef-4403-a07f-c3b345989caa",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C86",
+      "claim": "The mean channel number in overnight plated Neuro2A cells was 2.4\u00b10.4 channels (n=28 patches).",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we found that the mean channel number and distributions in these two data sets were identical (mean \u00b1 SEM: overnight=2.4\u00b10.4 channels, n=28 patches; acute=2.7\u00b10.4 channels, n=26 patches, p=0.6, Student's t-test; Figure 1\u2014figure supplement 2F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct measurement from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "ce3fd4a0-360a-4082-a047-1f6c688f17bd",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C87",
+      "claim": "The mean channel number in acutely plated Neuro2A cells was 2.7\u00b10.4 channels (n=26 patches).",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we found that the mean channel number and distributions in these two data sets were identical (mean \u00b1 SEM: overnight=2.4\u00b10.4 channels, n=28 patches; acute=2.7\u00b10.4 channels, n=26 patches, p=0.6, Student's t-test; Figure 1\u2014figure supplement 2F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct measurement from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "9e3db740-e6bf-4a80-9453-e38157d88b5a",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C88",
+      "claim": "Channel number distributions were identical between overnight and acutely plated Neuro2A cells (p=0.6, Student's t-test).",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we found that the mean channel number and distributions in these two data sets were identical (mean \u00b1 SEM: overnight=2.4\u00b10.4 channels, n=28 patches; acute=2.7\u00b10.4 channels, n=26 patches, p=0.6, Student's t-test; Figure 1\u2014figure supplement 2F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical comparison of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "f2824279-fe5e-4f4b-b29d-c715a9153e0a",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C89",
+      "claim": "The identical distributions in overnight and acutely plated cells argue against an effect of channel redistribution to the cell-substrate interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we found that the mean channel number and distributions in these two data sets were identical (mean \u00b1 SEM: overnight=2.4\u00b10.4 channels, n=28 patches; acute=2.7\u00b10.4 channels, n=26 patches, p=0.6, Student's t-test; Figure 1\u2014figure supplement 2F), which argues against an effect of channel redistribution to the cell-substrate interface.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the experimental comparison.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "cb830e1a-8f66-4e34-bcc3-518249fa5435",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C90",
+      "claim": "Repeated execution of pressure ramps on each patch revealed that channel number is measured with only 24% variability.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, repeated execution of pressure ramps on each patch revealed that channel number (n) is measured with only 24% variability, demonstrating that this assessment is extremely accurate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measure of experimental reproducibility.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "f009eae4-72d4-4b46-84a2-e355986e6e6c",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C91",
+      "claim": "At the highest density measured (~100 channels/\u00b5m2), the centers of randomly spaced Piezo1 domes are on average 50 nm from their nearest-neighbor.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the maximal densities we obtained are certainly sufficient for Piezo1 membrane footprints to geometrically overlap: for example, at the highest density we measured (~100 channels/\u00b5m2), the centers of randomly spaced Piezo1 domes are on average 50 nm from their nearest-neighbor, which results in a substantial number of channels having overlapping membrane footprints (Figure 4\u2014figure supplement 4; Haselwandter and MacKinnon, 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a calculation based on the observed density.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "a276daa4-c230-443e-ac76-f536ee9c841c",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C92",
+      "claim": "At the highest density measured, a substantial number of channels have overlapping membrane footprints.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the maximal densities we obtained are certainly sufficient for Piezo1 membrane footprints to geometrically overlap: for example, at the highest density we measured (~100 channels/\u00b5m2), the centers of randomly spaced Piezo1 domes are on average 50 nm from their nearest-neighbor, which results in a substantial number of channels having overlapping membrane footprints (Figure 4\u2014figure supplement 4; Haselwandter and MacKinnon, 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the calculated nearest-neighbor distance.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "b983d796-a133-41b7-bca9-86c91cc25236",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C93",
+      "claim": "At native expression levels, a mild tendency for clustering predicts 20% of all Piezo1 channels will be within 50 nm of each other.",
+      "claim_type": "EXPLICIT",
+      "source": "At native expression levels, a mild tendency for clustering predicts 20% of all Piezo1 channels will be within 50 nm of each other (cluster size=1.6; Figure 3G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prediction from the stochastic modeling.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "b3462757-ff12-422b-943a-34e53aabe1e7",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C94",
+      "claim": "At native expression levels with mild clustering, 80% of all Piezo1 channels are outside the 50 nm range.",
+      "claim_type": "EXPLICIT",
+      "source": "At native expression levels, a mild tendency for clustering predicts 20% of all Piezo1 channels will be within 50 nm of each other (cluster size=1.6; Figure 3G), which is fully consistent with studies that have captured images of neighboring Piezo1 channels (Ridone et al., 2020), but 80% of all Piezo1 channels are outside this range.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prediction from the stochastic modeling.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "37ba058e-3abc-4552-9bbe-fdec1289901a",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C95",
+      "claim": "There was a slight systematic shift in P50 values toward smaller pressures in the second protocol (\u0394P50=+2.0\u00b18.2 mmHg; p<0.05, paired t-test).",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, while there was some variability between two protocols executed on the same patch, there was only a slight systematic shift in P50 values toward smaller pressures in the second protocol, likely due to creep and corresponding increase in patch radius (mean \u00b1 SD first=\u201333.1\u00b17.2 mmHg, second=\u201331.1\u00b17.7 mmHg; \u0394P50=+2.0\u00b18.2 mmHg; p<0.05, paired t-test; Figure 1\u2014figure supplement 2J)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical analysis of repeated measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "e7d48f36-051c-47c2-b592-76ce7908c31a",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "claim_id": "C96",
+      "claim": "The shift in P50 values in repeated protocols is likely due to creep and corresponding increase in patch radius.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, while there was some variability between two protocols executed on the same patch, there was only a slight systematic shift in P50 values toward smaller pressures in the second protocol, likely due to creep and corresponding increase in patch radius (mean \u00b1 SD first=\u201333.1\u00b17.2 mmHg, second=\u201331.1\u00b17.7 mmHg; \u0394P50=+2.0\u00b18.2 mmHg; p<0.05, paired t-test; Figure 1\u2014figure supplement 2J)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the observed shift in P50 values.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7e1e5270-bea9-4b99-814f-1f24d7050821",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "At endogenous densities (1\u20132 channels/\u03bcm\u00b2) in Neuro2A cells, Piezo1 pressure sensitivity (P50) and open probability are independent of channel number. Analysis of patches containing 1\u201314 channels showed no substantial variation in P50 values, and idealized traces from patches with 1\u20135 channels yielded virtually identical P50 and slope values.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C44, C45, and C46 are directly supported by experimental data from patch-clamp recordings (n=281 patches) showing consistent P50 values across different channel numbers. The large sample size, multiple analytical approaches (direct P50 measurement and idealized trace analysis), and low measurement variability (24%) provide strong support for functional independence at physiological densities.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "21a35a60-eaec-42ca-be3b-ed04a4f3e34e",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "At high non-physiological densities (10\u2013100 channels/\u03bcm\u00b2) achieved through overexpression, Piezo1 channels maintain independent mechanosensitivity. P50 and slope values remain unaffected by channel number, though open probability in the nominal absence of tension slightly decreases from 0.6\u00b10.4% (1\u201310 channels) to 0.2\u00b10.1% (>200 channels).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57\u2013C66 are supported by experimental data from 144 patches with overexpressed Piezo1. The lack of correlation between P50/slope and channel density (C64, C65, C66) is well-documented. The slight decrease in open probability (C63) is statistically observed but represents a minor effect (<0.5% change) that does not indicate strong functional cooperativity. The combination of electrophysiology and imaging (C66) strengthens these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "6489a018-dfb8-406b-8943-f9a70776bdcb",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Stochastic modeling using a Thomas point process suggests Piezo1 channels in Neuro2A cells are either randomly distributed or exhibit mild clustering (mean cluster size ~1.6 channels). Random distribution predicts ~5% of channels within 100 nm of each other (mean nearest-neighbor distance ~390 nm), while mild clustering predicts ~50% within 100 nm (mean distance ~225 nm). Larger clusters (n~5) fail to reproduce experimental distributions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47\u2013C53 and C93\u2013C94 are supported by computational modeling that fits experimental channel count distributions. The modeling appropriately accounts for experimental variability (pipette size, single-channel current) and tests multiple clustering scenarios. The key observation that ~15% of patches contain zero channels (C85) provides critical validation of spatial resolution. However, the modeling cannot definitively distinguish between random distribution and mild clustering, as both fit the data reasonably well.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "e8fa2066-26e4-45d5-b12e-ebde572089a3",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Piezo1 channels inherently behave as independent mechanotransducers at physiologically relevant densities, with no strong intrinsic tendency to spatially concentrate or functionally modulate each other's mechanical sensitivity. Even if mild spatial clustering occurs (2\u20133 channels), it does not substantially affect pressure sensitivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This central conclusion (C8, C69, C70) is well-supported by the convergence of functional data (C46, C54) showing no density-dependent changes in mechanosensitivity and spatial modeling (C68) indicating most channels are too far apart to interact. The integration of electrophysiological measurements across two orders of magnitude in density with stochastic spatial modeling provides strong evidence for this major finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "9be97dcf-6405-4a97-9c14-6d507ce87333",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The independent behavior of Piezo1 channels is proposed to be essential for cells to transduce forces homogeneously across the entire cell membrane, with potential applicability to other cell types expressing Piezo1 at similar or lower levels than Neuro2A cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C9 and C71 are speculative proposals about functional significance that extend beyond the experimental data. While the observation of functional independence is well-supported, the claim that this property is 'essential' for homogeneous force transduction (C9) lacks direct experimental validation. The extrapolation to other cell types (C76) is reasonable but speculative without additional experimental evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "275114eb-d549-417c-86cc-46025b89d6b6",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A novel ramp pressure protocol was developed and validated for accurate measurement of Piezo1 channel number and function. The protocol minimizes membrane creep artifacts, shows minimal inactivation at +60 mV (96.5\u00b17.4% current at 200 ms), and achieves high measurement accuracy (24% variability in repeated measurements, mean single-channel current 0.98\u00b10.04 pA).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35\u2013C37, C39, C40, and C90 describe methodological developments that are well-validated through control experiments (knockout cells, repeated measurements). The comparison with traditional step protocols and quantification of background currents (2\u20133 pA) demonstrates rigor. The high reproducibility (24% variability) and large sample size (n=281 patches) support the reliability of this approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "ffaff9f0-2923-4362-aeea-316a63bb8741",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Endogenous Piezo1 density in Neuro2A cells was determined to be 1\u20132 channels/\u03bcm\u00b2 (mean 3.5\u00b13.1 channels per patch), with ~15% of patches containing zero channels. Channel distributions were identical between overnight and acutely plated cells (p=0.6), arguing against redistribution to the cell-substrate interface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41\u2013C43 and C85\u2013C89 are supported by direct experimental measurements with appropriate statistical analysis. The patch dome size estimate (C42, C81) is based on imaging data, though this introduces some uncertainty. The comparison between plating conditions (C88, C89) provides important validation that the measurements reflect true cellular distribution rather than experimental artifacts. The observation of zero-channel patches (C85) is a critical quality control.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "842a6b57-ce34-42ef-8598-f2f207dbd92d",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In the nominal absence of membrane tension, Piezo1 open probability is very low (<1%) at all densities but slightly decreases (~0.5%) with increasing channel number. This contrasts with simulations predicting increased open probability at extreme channel proximity (1\u20133 nm). Alternative mechanisms such as calcium-induced cooperativity may explain minor effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C72 is supported by experimental data, but the magnitude of the effect is small and the mechanism unclear. The comparison with simulations (C73) highlights a discrepancy that could arise from technical limitations in either approach. The speculation about calcium-mediated effects (C74, C75) is reasonable but untested. The prepulse protocol may not completely eliminate resting tension, introducing uncertainty about the true baseline condition.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "a06954c4-6710-45b8-b733-a04ca3acc12c",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Theoretical calculations predict Piezo1 can sense and curve the proximal membrane with a characteristic decay length of ~14 nm, yielding a total membrane footprint of ~50 nm. Channels within this footprint may influence each other via membrane curvature effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24, C25, C79, and C80 accurately represent theoretical predictions from cited work (Haselwandter and MacKinnon, 2018). The calculation of the ~50 nm footprint (C80) is straightforward and appropriately used throughout the manuscript. However, these are theoretical predictions rather than experimental findings from this study, and the current work actually challenges the functional significance of these predicted interactions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "43e66ea3-d465-4fa4-a164-a25ef31a8595",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors predict that if Piezo1 clustering is observed in specific cell types, it would require a dedicated non-Piezo-intrinsic mechanism such as a tethering molecule, since Piezo1 shows no intrinsic clustering tendency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77 and C78 represent logical predictions based on the experimental findings that Piezo1 lacks intrinsic clustering tendency (C69). This is a reasonable inference from the data, though it remains a prediction about future observations rather than a directly tested hypothesis. The prediction is consistent with the experimental evidence but would require validation in other cell types.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "4809f834-a938-40e7-8469-133c364f7fb1",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior structural and reconstitution studies have shown that Piezo1 has a bowl-shaped/dome-shaped structure capable of inducing membrane curvature, and imaging of reconstituted Piezo1 in vesicles demonstrated local membrane curvature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C23, and C28 accurately represent findings from cited prior work (cryo-EM structures and reconstitution studies). These are well-established results in the field that provide important context for the current study. The authors appropriately cite the relevant literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "70c5e93d-5694-4e24-a197-0af9e8f70ae0",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "At the highest density measured (~100 channels/\u03bcm\u00b2), randomly distributed Piezo1 channels would have a mean nearest-neighbor distance of ~50 nm, resulting in substantial footprint overlap. This density is sufficient for channels to be in close enough proximity to potentially influence each other's function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60, C61, C91, and C92 are supported by straightforward geometric calculations based on observed channel densities. The calculation that mean nearest-neighbor distance equals ~50 nm at 100 channels/\u03bcm\u00b2 is mathematically sound. The inference that this is sufficient for potential interactions (C61) is reasonable given the predicted 50 nm footprint, though the functional data show no such interactions actually occur.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    },
+    {
+      "id": "ceb5fd4a-27cf-40ef-83d7-ff01cb5dde0f",
+      "content_id": "1577ef62-b5ad-45b3-841c-698f564b0146",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Repeated pressure protocols on the same patch showed a slight systematic shift in P50 toward smaller pressures in the second protocol (\u0394P50=+2.0\u00b18.2 mmHg; p<0.05), likely due to membrane creep and corresponding increase in patch radius.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95 and C96 are supported by paired statistical analysis (n=261 patches). The small magnitude of the shift (2 mmHg) and the mechanistic explanation (membrane creep) are reasonable. This finding validates the protocol design choice to minimize the number of pressure applications and demonstrates awareness of potential artifacts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:32:49.165088Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "73260d3f-c020-457c-963d-2f30859d02aa",
+      "result_id": "7e1e5270-bea9-4b99-814f-1f24d7050821"
+    },
+    {
+      "claim_id": "7ab107df-c11c-4d5d-aa25-3cd5a36286e0",
+      "result_id": "7e1e5270-bea9-4b99-814f-1f24d7050821"
+    },
+    {
+      "claim_id": "a68c6504-a7ef-47e0-99e6-fbd1fd36ec5a",
+      "result_id": "7e1e5270-bea9-4b99-814f-1f24d7050821"
+    },
+    {
+      "claim_id": "de51be90-8f6a-4fb2-ae58-c2ca44f6d642",
+      "result_id": "7e1e5270-bea9-4b99-814f-1f24d7050821"
+    },
+    {
+      "claim_id": "2a54b55b-e4a5-4e22-a3e1-44b9006c5e05",
+      "result_id": "7e1e5270-bea9-4b99-814f-1f24d7050821"
+    },
+    {
+      "claim_id": "939bf821-4120-4d61-9452-cfeedf4e77fa",
+      "result_id": "7e1e5270-bea9-4b99-814f-1f24d7050821"
+    },
+    {
+      "claim_id": "316931d9-691a-49e2-a1ba-970cff9d7038",
+      "result_id": "21a35a60-eaec-42ca-be3b-ed04a4f3e34e"
+    },
+    {
+      "claim_id": "06f39bf3-7170-44ed-aebe-8d8c4ac41fda",
+      "result_id": "21a35a60-eaec-42ca-be3b-ed04a4f3e34e"
+    },
+    {
+      "claim_id": "f712c1f5-c83d-45f8-8ada-00a937121ed3",
+      "result_id": "21a35a60-eaec-42ca-be3b-ed04a4f3e34e"
+    },
+    {
+      "claim_id": "cee4568d-143a-4814-8b9a-4d29f328fff7",
+      "result_id": "21a35a60-eaec-42ca-be3b-ed04a4f3e34e"
+    },
+    {
+      "claim_id": "04524061-df34-47c6-a5f6-05d1dc7a7285",
+      "result_id": "21a35a60-eaec-42ca-be3b-ed04a4f3e34e"
+    },
+    {
+      "claim_id": "2a2ecd9b-8670-4919-87bd-74024d294e8f",
+      "result_id": "21a35a60-eaec-42ca-be3b-ed04a4f3e34e"
+    },
+    {
+      "claim_id": "4a92b913-b8fa-43d9-8277-8ddd5e52ef7a",
+      "result_id": "21a35a60-eaec-42ca-be3b-ed04a4f3e34e"
+    },
+    {
+      "claim_id": "bfd4f755-e17e-475b-9777-bf767cfceb67",
+      "result_id": "6489a018-dfb8-406b-8943-f9a70776bdcb"
+    },
+    {
+      "claim_id": "05d3dca5-5caa-45d4-b998-a0d62e921b8e",
+      "result_id": "6489a018-dfb8-406b-8943-f9a70776bdcb"
+    },
+    {
+      "claim_id": "d4eb7e85-c3aa-4fb4-bdec-30b2022651a3",
+      "result_id": "6489a018-dfb8-406b-8943-f9a70776bdcb"
+    },
+    {
+      "claim_id": "e5afbbb1-13a4-4e85-829e-2d98d62b1262",
+      "result_id": "6489a018-dfb8-406b-8943-f9a70776bdcb"
+    },
+    {
+      "claim_id": "77c2f2e9-f1fc-4719-8b49-8390742b9f93",
+      "result_id": "6489a018-dfb8-406b-8943-f9a70776bdcb"
+    },
+    {
+      "claim_id": "8eb5e581-2d8f-4df8-a428-47f3f675b2f6",
+      "result_id": "6489a018-dfb8-406b-8943-f9a70776bdcb"
+    },
+    {
+      "claim_id": "53f97d5b-1586-4526-b45f-29ccb407ed9e",
+      "result_id": "6489a018-dfb8-406b-8943-f9a70776bdcb"
+    },
+    {
+      "claim_id": "b983d796-a133-41b7-bca9-86c91cc25236",
+      "result_id": "6489a018-dfb8-406b-8943-f9a70776bdcb"
+    },
+    {
+      "claim_id": "b3462757-ff12-422b-943a-34e53aabe1e7",
+      "result_id": "6489a018-dfb8-406b-8943-f9a70776bdcb"
+    },
+    {
+      "claim_id": "0d27b452-c241-4425-8b6d-c0cc4a57f5d6",
+      "result_id": "e8fa2066-26e4-45d5-b12e-ebde572089a3"
+    },
+    {
+      "claim_id": "939bf821-4120-4d61-9452-cfeedf4e77fa",
+      "result_id": "e8fa2066-26e4-45d5-b12e-ebde572089a3"
+    },
+    {
+      "claim_id": "27f3dfef-71da-4070-91dc-91d656adde4d",
+      "result_id": "e8fa2066-26e4-45d5-b12e-ebde572089a3"
+    },
+    {
+      "claim_id": "729cc278-1f4e-4d93-943b-aa67bd708d43",
+      "result_id": "e8fa2066-26e4-45d5-b12e-ebde572089a3"
+    },
+    {
+      "claim_id": "a388b8dc-ae05-4d96-9aa4-10bee7f3b541",
+      "result_id": "e8fa2066-26e4-45d5-b12e-ebde572089a3"
+    },
+    {
+      "claim_id": "5d6ae75a-9027-4fb2-aa4a-43202cf32aa5",
+      "result_id": "e8fa2066-26e4-45d5-b12e-ebde572089a3"
+    },
+    {
+      "claim_id": "8ddac304-8340-4a18-a3b3-486fdd0f5b25",
+      "result_id": "9be97dcf-6405-4a97-9c14-6d507ce87333"
+    },
+    {
+      "claim_id": "b3668bf6-03b4-4b22-90d5-8d73c5fee5f7",
+      "result_id": "9be97dcf-6405-4a97-9c14-6d507ce87333"
+    },
+    {
+      "claim_id": "913423cc-50d6-46fd-8685-ca999cefa463",
+      "result_id": "9be97dcf-6405-4a97-9c14-6d507ce87333"
+    },
+    {
+      "claim_id": "4941a424-3489-4820-8dc8-bc4e80323674",
+      "result_id": "275114eb-d549-417c-86cc-46025b89d6b6"
+    },
+    {
+      "claim_id": "575f44ee-c6e2-4fa9-a85d-824f8e33d28b",
+      "result_id": "275114eb-d549-417c-86cc-46025b89d6b6"
+    },
+    {
+      "claim_id": "b9c3012f-e37a-4a32-878b-d8839f704bb3",
+      "result_id": "275114eb-d549-417c-86cc-46025b89d6b6"
+    },
+    {
+      "claim_id": "aa963bba-1040-4756-9a75-1a85ab147cf6",
+      "result_id": "275114eb-d549-417c-86cc-46025b89d6b6"
+    },
+    {
+      "claim_id": "0e707db0-c6ad-45c4-93c4-677b6125642a",
+      "result_id": "275114eb-d549-417c-86cc-46025b89d6b6"
+    },
+    {
+      "claim_id": "cb830e1a-8f66-4e34-bcc3-518249fa5435",
+      "result_id": "275114eb-d549-417c-86cc-46025b89d6b6"
+    },
+    {
+      "claim_id": "08e41d6b-d7da-43eb-b6b7-579285490e12",
+      "result_id": "ffaff9f0-2923-4362-aeea-316a63bb8741"
+    },
+    {
+      "claim_id": "f2d845a7-f436-447a-876d-ffd0dcd30729",
+      "result_id": "ffaff9f0-2923-4362-aeea-316a63bb8741"
+    },
+    {
+      "claim_id": "9891cd45-f1b9-4e5e-80ba-4572574dd956",
+      "result_id": "ffaff9f0-2923-4362-aeea-316a63bb8741"
+    },
+    {
+      "claim_id": "5c6708c7-06eb-465a-b788-f7ba71c0f9a7",
+      "result_id": "ffaff9f0-2923-4362-aeea-316a63bb8741"
+    },
+    {
+      "claim_id": "6eed1653-86dd-46b0-9174-9ffcd87c25b0",
+      "result_id": "ffaff9f0-2923-4362-aeea-316a63bb8741"
+    },
+    {
+      "claim_id": "fd41253c-34ef-4403-a07f-c3b345989caa",
+      "result_id": "ffaff9f0-2923-4362-aeea-316a63bb8741"
+    },
+    {
+      "claim_id": "ce3fd4a0-360a-4082-a047-1f6c688f17bd",
+      "result_id": "ffaff9f0-2923-4362-aeea-316a63bb8741"
+    },
+    {
+      "claim_id": "9e3db740-e6bf-4a80-9453-e38157d88b5a",
+      "result_id": "ffaff9f0-2923-4362-aeea-316a63bb8741"
+    },
+    {
+      "claim_id": "f2824279-fe5e-4f4b-b29d-c715a9153e0a",
+      "result_id": "ffaff9f0-2923-4362-aeea-316a63bb8741"
+    },
+    {
+      "claim_id": "16ffa473-41f7-4c86-aed6-a608a5bede9b",
+      "result_id": "842a6b57-ce34-42ef-8598-f2f207dbd92d"
+    },
+    {
+      "claim_id": "3b71e9b9-2d5c-4ec3-84af-1884c0464239",
+      "result_id": "842a6b57-ce34-42ef-8598-f2f207dbd92d"
+    },
+    {
+      "claim_id": "de840600-25c9-46bd-9a9c-30f4b0b1262c",
+      "result_id": "842a6b57-ce34-42ef-8598-f2f207dbd92d"
+    },
+    {
+      "claim_id": "fa8bdd4c-c398-428f-aa06-4df7d47189eb",
+      "result_id": "842a6b57-ce34-42ef-8598-f2f207dbd92d"
+    },
+    {
+      "claim_id": "5d2dea17-34d1-4446-816a-82248e84d57d",
+      "result_id": "a06954c4-6710-45b8-b733-a04ca3acc12c"
+    },
+    {
+      "claim_id": "48defb63-1e2a-400d-95b2-c43b71e5de4c",
+      "result_id": "a06954c4-6710-45b8-b733-a04ca3acc12c"
+    },
+    {
+      "claim_id": "e1fc98a5-9d6b-48a9-a720-98ac6e4753c5",
+      "result_id": "a06954c4-6710-45b8-b733-a04ca3acc12c"
+    },
+    {
+      "claim_id": "1cdff980-8123-4099-9840-ecaa9403dd51",
+      "result_id": "a06954c4-6710-45b8-b733-a04ca3acc12c"
+    },
+    {
+      "claim_id": "39abe037-39ea-4c1d-bae0-9a2f8af8a909",
+      "result_id": "43e66ea3-d465-4fa4-a164-a25ef31a8595"
+    },
+    {
+      "claim_id": "7a4cc6fe-3017-46c4-99ce-c963b92b37c4",
+      "result_id": "43e66ea3-d465-4fa4-a164-a25ef31a8595"
+    },
+    {
+      "claim_id": "769f0e4e-5e35-4f48-802d-f6df1a7d8686",
+      "result_id": "4809f834-a938-40e7-8469-133c364f7fb1"
+    },
+    {
+      "claim_id": "c995160e-2742-427a-b20b-5dd99addd1fc",
+      "result_id": "4809f834-a938-40e7-8469-133c364f7fb1"
+    },
+    {
+      "claim_id": "f2ec18f8-9ea1-49c1-aea8-7b19f4e506cf",
+      "result_id": "4809f834-a938-40e7-8469-133c364f7fb1"
+    },
+    {
+      "claim_id": "99e6919f-8eee-486c-8a88-031d9c97df48",
+      "result_id": "4809f834-a938-40e7-8469-133c364f7fb1"
+    },
+    {
+      "claim_id": "38724aa0-4aec-4633-9214-faf4008dc507",
+      "result_id": "70c5e93d-5694-4e24-a197-0af9e8f70ae0"
+    },
+    {
+      "claim_id": "7fd51d1d-fb05-44f9-b551-a4930b16b7f9",
+      "result_id": "70c5e93d-5694-4e24-a197-0af9e8f70ae0"
+    },
+    {
+      "claim_id": "f009eae4-72d4-4b46-84a2-e355986e6e6c",
+      "result_id": "70c5e93d-5694-4e24-a197-0af9e8f70ae0"
+    },
+    {
+      "claim_id": "a276daa4-c230-443e-ac76-f536ee9c841c",
+      "result_id": "70c5e93d-5694-4e24-a197-0af9e8f70ae0"
+    },
+    {
+      "claim_id": "37ba058e-3abc-4552-9bbe-fdec1289901a",
+      "result_id": "ceb5fd4a-27cf-40ef-83d7-ff01cb5dde0f"
+    },
+    {
+      "claim_id": "e7d48f36-051c-47c2-b592-76ce7908c31a",
+      "result_id": "ceb5fd4a-27cf-40ef-83d7-ff01cb5dde0f"
+    }
+  ],
+  "comparisons": []
+}

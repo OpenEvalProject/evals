@@ -1,0 +1,385 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C3",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "RELION-4.0 introduces a new subtomogram averaging approach based on pseudo-subtomograms that approximate a 2D likelihood function. Pseudo-subtomograms are 3D arrays containing CTF pre-multiplied 2D tilt-series images that approximate the likelihood of observing particles in the entire tilt series, rather than representing the actual scattering potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C3, C34, C35, and C36 collectively describe the core methodological innovation. The pseudo-subtomogram approach is clearly defined (C34), its distinction from conventional subtomograms is explained (C35), and its statistical interpretation is provided (C36). This represents the fundamental technical contribution of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The 2D data model approach addresses fundamental limitations of existing 3D subtomogram averaging methods, particularly the missing wedge problem and errors from using reconstructed subtomograms as experimental data. By approximating a 2D likelihood function, missing wedge correction becomes unnecessary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C25-C28, and C109-C112 establish the motivation and advantages of the 2D approach over traditional 3D methods. The limitations of existing approaches are clearly stated (C2, C25, C27), the missing wedge problem is explained (C110), and the solution through 2D modeling is articulated (C112). This provides strong conceptual justification for the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C61",
+      "C122",
+      "C123"
+    ],
+    "result": "RELION-4.0 implements tilt-series refinement procedures analogous to single-particle analysis methods (CTF refinement and Bayesian polishing) to optimize optical parameters (defocus, astigmatism, aberrations) and geometric parameters (tilt-series alignment, beam-induced particle motion).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C48-C53, C61, C122-C123 describe the refinement capabilities implemented in RELION-4.0. The methods are clearly categorized into optical and geometrical refinement (C49-C51), their relationship to single-particle methods is established (C52, C122), and specific parameters that can be optimized are enumerated (C53, C61). The implementation is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Application of RELION-4.0 to the HIV-1 immature capsid dataset achieved 3.2 \u00c5 resolution from five tomograms through iterative refinement, and 3.0 \u00c5 resolution from the complete dataset, matching the resolution obtained with M and RELION-3 workflow.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C69-C77 document the progressive improvement in resolution through iterative cycles of refinement on the HIV-1 dataset. The resolution improvements are clearly stated at each step (C70-C75), with the final resolution of 3.0 \u00c5 matching prior methods (C77). Figure 1 provides visual confirmation of the FSC curves and map quality, supporting these resolution claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C79",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Application of RELION-4.0 to the C. crescentus S-layer achieved 3.5 \u00c5 resolution for the inner domain, resolving divalent metal ions and revealing a previously unobserved second LPS binding site consistent with the LPS O-antigen structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79, C87-C94 document the S-layer analysis with progressive resolution improvements (C87-C90) and identification of structural features including metal ions (C92) and a novel LPS binding site (C93-C94). Figure 2 provides visual evidence of the density maps and structural features. The agreement with prior single-particle structures (C91) validates the method, while the discovery of the second LPS site demonstrates new biological insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C95",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Application of RELION-4.0 to the COPII inner layer achieved 3.8 \u00c5 resolution through iterative refinement cycles, with sufficient map quality to enable building and refinement of an atomic model with visible side chains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95, C102-C106 document the COPII analysis with clear resolution improvements at each refinement step (C102-C105). The final resolution of 3.8 \u00c5 is stated (C105), and the biological significance is established by the ability to build atomic models (C106). Figure 3 provides visual confirmation of the map quality and fitted model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C142"
+    ],
+    "result": "The RELION-4.0 approaches enable structure determination from cryo-ET data to resolutions sufficient for de novo atomic modeling, as demonstrated by three test cases achieving resolutions between 3.0-3.8 \u00c5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C142 state the main conclusion, which is directly supported by the three test cases: HIV-1 at 3.0 \u00c5 (C76), S-layer at 3.5 \u00c5 (C90), and COPII at 3.8 \u00c5 (C105). All three cases demonstrate atomic-level detail sufficient for model building, validating the central claim of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C114"
+    ],
+    "result": "The method is formulated in an empirical Bayesian framework that has proven effective in single-particle analysis for reducing tunable parameters and obtaining high-quality reconstructions through likelihood optimization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107, C108, and C114 establish the statistical foundation of the method. The Bayesian framework is clearly stated (C107), its effectiveness in single-particle analysis is cited (C108), and the success of likelihood optimization techniques is documented with references (C114). This provides solid theoretical grounding for the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The current implementation uses 3D pseudo-subtomograms rather than 2D image stacks to enable code reuse, though a true 2D implementation would be more efficient in processing time and storage for typical tomographic data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C121 explain the implementation choice and its trade-offs. The rationale for using pseudo-subtomograms (C116) and the potential advantages of a true 2D implementation (C117-C120) are clearly articulated. This represents an honest assessment of the current implementation's limitations and future directions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "RELION-4.0 implements pre-oriented priors for proteins in 2D arrays by allowing arbitrary coordinate system choice for pseudo-subtomograms and using Gaussian priors on translations and Euler angles to constrain orientational searches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 describe the implementation of pre-oriented priors for handling proteins in 2D arrays. The biological motivation (C39-C40), the approach used in prior work (C41), the benefits (C42), and the specific implementation in RELION (C43-C45) are all clearly stated. This is a useful methodological feature but not a core innovation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Defocus estimation can be performed efficiently by considering all particles simultaneously due to known relative defoci from tilt geometry. Higher-order aberrations should be estimated globally for high-resolution datasets and are most useful beyond 3 \u00c5 resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C60 describe the CTF refinement strategy. The efficiency gain from simultaneous defocus estimation (C54-C55) and the recommendations for higher-order aberration correction (C56-C60) are clearly stated. These represent practical implementation details and usage guidelines rather than fundamental innovations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "RELION-4.0 models only beam-induced translations, not rotations, based on the assumption that rotational effects are negligible at typical tomography resolutions since single-particle analysis reaches 2 \u00c5 without modeling rotations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62, C129-C131 explain the simplification of modeling only translations. The rationale is based on single-particle analysis experience (C130) and the assumption that rotational effects are small at tomography resolutions (C131). This is a reasonable simplification but represents a limitation compared to methods like M that model rotations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "RELION-4.0 uses more computationally efficient algorithms than M (which uses GPUs), and the two programs could be used complementarily, with conversion tools already available and potential for increased synergy through adaptation of M to work with pseudo-subtomograms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C134 compare RELION-4.0 with the M program and discuss potential integration. The computational efficiency claim (C127) and availability of conversion tools (C134) are stated as facts. The potential for complementary use (C132) and future synergy (C133) are appropriately framed as possibilities rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "RELION-4.0 provides a graphical user interface extended from single-particle analysis to facilitate uptake by new users, though tilt-series alignment, tomogram reconstruction, and particle picking are not yet implemented and currently rely on external tools like IMOD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C141 describe the user interface and current workflow limitations. The GUI extension (C136), current limitations (C137), ongoing development efforts (C138), and availability of conversion tools (C139-C140) are clearly stated. The tutorial provision (C141) demonstrates commitment to accessibility. These are important practical considerations but not scientific results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Prior methods achieved resolutions of 3.9 \u00c5 (NovaCTF), 3.8 \u00c5 (Warp + RELION-3), and 3.3 \u00c5 (emClarity) on the same HIV-1 five-tomogram subset used for benchmarking RELION-4.0.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 provide context by citing prior results on the same dataset. These are properly attributed to published work and provide appropriate benchmarks for comparison. This is background information rather than a result of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "The 3.0 \u00c5 resolution limit for the HIV-1 immature capsid is likely due to flexibility and asymmetry in the CA hexamer rather than methodological limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C78 provides an interpretation of the resolution limit but without direct experimental evidence. While this is a reasonable hypothesis based on the structure's known properties, it remains speculative. Additional experiments (e.g., focused classification, local refinement) would be needed to definitively establish the source of the resolution limit.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Background context on cryo-EM and cryo-ET: cryo-EM has enabled high-resolution imaging through detector advances and algorithms; single-particle analysis can be performed with minimal supervision but is limited to purified complexes; cryo-ET enables imaging in physiological environments but faces unique challenges including missing wedge and error accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C24 provide field background and are supported by appropriate citations. These establish the context and motivation for the work but are not results of the current study. They represent accurate summaries of the state of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Prior 2D-based approaches include constrained single-particle cryo-ET (Bartesaghi et al., 2012), emClarity (Himes and Zhang, 2018), and M (Tegunov et al., 2021), with M achieving near-single-particle resolutions through iterative optimization with RELION.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 describe prior work on 2D-based tomography methods with appropriate citations. This provides important context for positioning the current work but represents background rather than new results. The citations support the claims about prior methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Background on C. crescentus S-layer: previous work achieved 7.4 \u00c5 resolution using AV3, improved to 4.8 \u00c5 with NovaCTF, revealing LPS binding and resolving side chains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C86 provide background on prior S-layer work with appropriate citations. This establishes the baseline for comparison but represents prior results rather than findings of the current study. The citations support the stated resolutions and findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Background on COPII: it mediates ER-to-Golgi transport, can be reconstituted in vitro, and the inner layer was previously solved to 4.6 \u00c5 using Dynamo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C101 provide biological and methodological background on COPII with appropriate citations. This establishes context for the third test case but represents prior knowledge rather than new findings. The citations support the biological function and prior structural work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C113",
+      "C124",
+      "C125"
+    ],
+    "result": "The 2D approach makes the problem similar to single-particle analysis where projections from different orientations and structural states are sorted simultaneously, enabling iterative optimization of particle alignments and tilt-series parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113, C124, and C125 describe the conceptual similarity to single-particle analysis and the iterative workflow. These are logical consequences of the 2D approach and are demonstrated by the successful application to three test cases. The iterative refinement is clearly shown in the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The new methods increase accessibility of subtomogram averaging and will enable more researchers to calculate better structures, aiding structural biology's shift toward imaging complexes in their biological environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C143-C145 make predictions about future impact and accessibility. While the GUI implementation (C136) and tutorial (C141) support increased accessibility, the broader claims about enabling more researchers (C144) and revolutionizing structural biology (C145) are aspirational rather than demonstrated. These represent expected outcomes rather than established results.",
+    "result_type": "MINOR"
+  }
+]

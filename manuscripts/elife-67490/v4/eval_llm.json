@@ -1,0 +1,502 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Two macaque monkeys were trained on a red-green decision-making task and 625 neurons were recorded from dorsal premotor cortex (PMd) using single tungsten and U-probe electrodes. Waveforms were filtered, aligned, normalized, and single neurons were isolated using strict criteria including minimal ISI violations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13 describe the experimental setup, behavioral task, recording methods, and preprocessing steps. These are standard methodological claims directly stated in the text and supported by figures showing the task design and recording locations. The methods are clearly described and appropriate for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C49"
+    ],
+    "result": "WaveMAP is a novel method that combines UMAP (non-linear dimensionality reduction) with Louvain community detection (graph clustering) to identify putative cell types from extracellular waveforms recorded during a decision-making task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C15, and C49 describe the core methodological contribution. The method is clearly defined as combining UMAP with Louvain clustering, and the application to PMd recordings is explicitly stated. This is a straightforward methodological description.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C53",
+      "C54",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C67"
+    ],
+    "result": "WaveMAP identified eight waveform clusters: five narrow-spiking (68% of neurons) and three broad-spiking (32% of neurons). These clusters recapitulate previously identified narrow- and broad-spiking types while revealing previously unknown diversity within these subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 and C53-C54 state the main finding of eight clusters with distinct properties. Claims C60-C63 and C67 provide quantitative support showing trough-to-peak durations and cluster proportions. Figure 3A shows clear visual separation of clusters, and the classifier achieved 91% accuracy (C71), indicating robust clustering.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The number of clusters depends on the Louvain resolution parameter. A resolution of 1.5 was chosen to maximize modularity while maintaining analyzable cluster sizes (n>20). Alternative parameters and methods (resolution 2.0, ECG) produced similar results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C70 describe parameter selection and validation. Figure 3B shows modularity optimization, and supplementary figures demonstrate robustness to parameter choices. The approach is principled (maximizing modularity) and validated through alternative methods, supporting the claim that eight clusters is a robust solution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "WaveMAP clusters are robust and generalizable: a classifier achieved 91% accuracy, clusters are stable across random seeds and data subsets, and results are robust to different normalization methods. Without normalization, structure is lost.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C81 demonstrate robustness through multiple validation approaches. Figure 3C shows high classification accuracy (91%), and supplementary figures show stability across subsampling and normalization methods. The claim that structure is lost without normalization (C79) is supported by Figure 3\u2014figure supplement 2E-F. These are appropriate validation analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Traditional GMM clustering on three specified features (AP width, peak ratio, trough-to-peak duration) identified only four clusters with lower classification accuracy (78%) compared to WaveMAP (91%). GMM fails to capture the full diversity of waveforms because features lack clear separability and violate Gaussian assumptions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C99 compare WaveMAP to traditional methods. Figure 4 shows GMM results with four clusters and lower classifier accuracy. The claims about poor separability (C93-C94) and linear inseparability (C95) are supported by Figure 4B and supplementary figures. The comparison demonstrates WaveMAP's superiority across multiple cluster numbers (C97, Figure 4\u2014figure supplement 2E).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "WaveMAP implicitly captures specified features (AP width, trough-to-peak, peak ratio) as smooth gradients in UMAP space. The correlation between features exposes their redundancy. WaveMAP also identifies intermediate clusters that would be split by GMM despite having distinct waveform shapes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C107 describe how WaveMAP relates to traditional features. Figure 5\u2014figure supplement 1 shows features as gradients in UMAP space, supporting C100-C101. The claim about cluster \u2461 being split by GMM (C106-C107) is supported by Figure 4E. This demonstrates that WaveMAP captures and extends beyond traditional features.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Inverse UMAP transform and SHAP analysis reveal that WaveMAP uses biologically meaningful features. UMAP-1 captures repolarization rate (post-hyperpolarization sharpness) and UMAP-2 captures post-hyperpolarization width, suggesting these are independent factors related to potassium channel dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C118 describe interpretable machine learning results. Figure 5A shows inverse transform results with smooth transitions in waveform shape along UMAP dimensions. The biological interpretation linking to K+ channels (C117) is supported by citation. This demonstrates that WaveMAP captures biologically meaningful variation, though the K+ channel interpretation is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "SHAP analysis identifies which waveform time points are most informative for cluster classification. Key regions include 0.5-0.65 ms (post-hyperpolarization peak), 0.3-0.4 ms (pre-hyperpolarization peak), and 0.6 ms (inflection point), recapitulating known features. Novel regions at 1.1 and 1.27 ms suggest using >1.0 ms of waveform is important.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C132 describe SHAP analysis results. Figure 5B-C shows SHAP values identifying important time points. The claim that known features are recapitulated (C126-C128) is supported by citations. The novel finding about later time points (C129-C130) is data-driven. This provides interpretability and suggests methodological improvements for future studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "WaveMAP clusters exhibit distinct baseline firing rates. Broad-spiking clusters have significantly lower baseline FR than narrow-spiking clusters (p=0.0028). However, there is heterogeneity within both groups, with some narrow-spiking clusters (\u2461, \u2462, \u2463) having low baseline FR similar to broad-spiking neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19 and C133-C142 describe baseline FR differences. Figure 6C shows significant differences between broad and narrow groups, and within narrow-spiking clusters. Statistical tests are appropriate (Mann-Whitney U, FDR adjusted). The finding of heterogeneity within narrow-spiking neurons (C140-C142) is well-supported and challenges simple excitatory/inhibitory classification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Maximum firing rates differ significantly between broad- and narrow-spiking clusters (p=1.60e-5). Broad-spiking clusters are homogeneous with low max FR (~24 spikes/s). Narrow-spiking clusters show heterogeneity: three clusters (\u2460, \u2462, \u2464) have high max FR (~33 spikes/s) while two (\u2461, \u2463) have low max FR (~23 spikes/s) comparable to broad-spiking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C147 describe max FR differences. Figure 6D shows clear differences with appropriate statistics. The heterogeneity within narrow-spiking neurons is striking and well-documented. This finding challenges the assumption that all narrow-spiking neurons are inhibitory with high firing rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Firing rate range (max FR - baseline FR) differs significantly between broad- and narrow-spiking clusters (p=0.0002). Broad-spiking clusters show uniform FR range (~10.8 spikes/s). Narrow-spiking clusters show heterogeneity: \u2460, \u2462, \u2464 have large FR range (~20 spikes/s) while \u2461, \u2463 have smaller range (~13 spikes/s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C153 describe FR range differences. Figure 6E shows the pattern parallels max FR results. The consistency across multiple FR measures (baseline, max, range) strengthens the conclusion that narrow-spiking neurons are physiologically heterogeneous. Statistics are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "WaveMAP produces better clustering of physiological properties than GMM. Effect sizes for WaveMAP vs GMM are larger for baseline FR (0.070 vs 0.013), max FR (0.035 vs 0.011), and FR range (0.055 vs 0.034). GMM loses significant differences despite comparing fewer groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C158 compare WaveMAP and GMM for physiological clustering. Effect sizes (Cohen's f\u00b2) quantitatively demonstrate WaveMAP's superiority. Figure 6\u2014figure supplement 1 shows GMM results with fewer significant differences. This validates that WaveMAP identifies biologically meaningful clusters beyond just waveform shape.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C20",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "WaveMAP clusters show distinct choice-related dynamics. The rate of rise of choice-selective signals as a function of coherence (coherence slope) varies across clusters. Broad-spiking clusters show modest coherence dependence. Narrow-spiking clusters \u2460 and \u2464 show strong coherence dependence, while \u2461, \u2462, \u2463 are similar to broad-spiking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C171 describe functional differences during decision-making. Figure 7A-E shows choice-selective signals and coherence slopes. The heterogeneity within narrow-spiking neurons parallels physiological findings. Methods for calculating rate of rise (C166) and coherence slope (C169) are clearly described. This demonstrates functional relevance of WaveMAP clusters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179"
+    ],
+    "result": "Discrimination time (when choice selectivity emerges) differs across clusters. Broad-spiking clusters have significantly later discrimination times (255\u00b194 ms) than narrow-spiking (224\u00b189 ms, p<0.005). Clusters \u2460 and \u2464 with highest max FR and strongest coherence modulation have fastest discrimination times (~200 ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C179 describe discrimination time differences. Figure 7F shows clear differences with appropriate statistics. The method (bootstrap test, C173) is appropriate. The finding that not all narrow-spiking neurons are faster (C177) and that \u2460 and \u2464 are fastest (C178) is consistent with physiological and choice dynamics results, providing converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190"
+    ],
+    "result": "Broad-spiking clusters (\u2465, \u2466, \u2467) are centered in middle-to-deep layers with broad distributions and no significant laminar differences between them. Overall narrow- and broad-spiking populations do not differ significantly in distribution (p=0.24).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C180-C190 describe laminar distributions of broad-spiking clusters. Figure 8A shows distributions. The caveat about alignment errors (C184-C185) is appropriate and the focus on relative comparisons (C186-C187) is justified. The lack of difference between overall narrow/broad populations (C188) is interesting given other differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198"
+    ],
+    "result": "Narrow-spiking clusters show distinct laminar distributions. Cluster \u2460 has broad distribution, \u2461 is localized at 1.1\u00b10.33 mm, \u2462 is superficial at 1.0\u00b10.6 mm, \u2463 is deep (1.70\u00b10.44 mm) with triphasic waveforms suggesting myelinated pyramidal cells, and \u2464 has broad distribution at 1.3\u00b10.65 mm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C191-C198 describe narrow-spiking laminar distributions. Figure 8B shows distinct distributions with significant statistical differences. The interpretation of \u2463 as myelinated pyramidal cells (C197) is supported by citations and waveform shape. The diversity of laminar distributions suggests different cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C199",
+      "C200",
+      "C201"
+    ],
+    "result": "GMM clusters show no significant laminar differences (all p>0.2 except BS vs BST p=0.067) and exhibit broad distributions across cortex, inconsistent with known cell type distributions from histology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C199-C201 show GMM fails to capture laminar organization. Figure 8C shows broad, overlapping distributions. The comparison to WaveMAP demonstrates another dimension where WaveMAP outperforms traditional methods. The claim about inconsistency with histology (C201) sets up the next analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208"
+    ],
+    "result": "Immunohistochemistry shows CB+ and CR+ interneurons have similar restricted superficial distributions most closely resembling WaveMAP cluster \u2462. CB+ and CR+ cells have similar physiological properties and spike shapes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C202-C208 compare WaveMAP to anatomical data. Figure 9C-D shows CB+ and CR+ distributions matching cluster \u2462. The stereological counting method (C205) is appropriate. The claim about similar physiology (C207) is supported by citation. This provides anatomical validation for at least one WaveMAP cluster.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C209",
+      "C210",
+      "C211",
+      "C212"
+    ],
+    "result": "WaveMAP cluster \u2460 has laminar properties consistent with PV+ neurons (concentrated superficially, proliferating to middle layers). Both have low baseline FR, early stimulus responses, and robust FR modulation. Cluster \u2464 may also correspond to PV+ cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C209-C212 link cluster \u2460 to PV+ neurons. Figure 9B and E show matching laminar distributions. The physiological similarities (C211) are supported by data and citations. The speculation about \u2464 (C212) is appropriately tentative. This provides strong evidence that \u2460 corresponds to PV+ interneurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C213"
+    ],
+    "result": "IHC results suggest narrow-spiking WaveMAP clusters potentially map onto different inhibitory types (PV+, CR+, CB+).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C213 summarizes the IHC findings. The evidence from C206-C212 supports this conclusion, though the mapping is not complete (only 3 of 5 narrow-spiking clusters are discussed). The use of 'potentially' is appropriate given the indirect nature of the comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C214",
+      "C216",
+      "C217",
+      "C218",
+      "C219",
+      "C220",
+      "C221",
+      "C222",
+      "C223",
+      "C224",
+      "C225",
+      "C226"
+    ],
+    "result": "WaveMAP clusters explain more variance in discrimination time (6.6%) than cortical depth alone (1.7%) or GMM clusters (3.3%). Combined with depth, WaveMAP explains 7.3% vs GMM's 4.6%. This demonstrates WaveMAP clusters are not artifacts of layer-dependent inputs and both cell type and layer contribute to decision-related responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C214-C226 show WaveMAP explains functional heterogeneity better than alternatives. The regression analysis is appropriate and variance explained (R\u00b2) values are clearly reported. The comparison to prior work (C216-C217) provides context. This demonstrates that WaveMAP clusters have functional relevance beyond anatomical organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "WaveMAP significantly outperforms current approaches without requiring user-specified features, exposes more diversity than specified features, and provides a more nuanced understanding of cell type dynamics in cortical circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 and C50-C52 are high-level conclusions. These are supported by the cumulative evidence: WaveMAP finds 8 clusters vs GMM's 4 (C16, C84), achieves higher classification accuracy (91% vs 78%, C71, C88), better captures physiological properties (C158), functional properties (C218-C221), and laminar organization (C199-C200). The conclusion is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Most narrow-spiking cells have high max FR typical of inhibitory neurons, but some have FR similar to broad-spiking (excitatory) neurons. Discrimination time for many narrow-spiking classes is earlier than broad-spiking\u2014except for narrow-spiking cells with broad-spiking-like max FR. Clustering explains discrimination time variability beyond laminar differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 are summary statements supported by detailed results in C146-C147 (max FR heterogeneity), C174-C175 (discrimination time), and C217-C219 (variance explained). These integrate multiple findings into coherent conclusions about narrow-spiking heterogeneity. Well-supported by converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Background and motivation: Cortical circuits contain many cell types that coordinate to produce behavior. Current methods using specified waveform features capture limited variation and are insufficient to distinguish cell types. Different studies use different features, making cross-study comparisons difficult. Non-linear dimensionality reduction offers an alternative approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C48 provide background and motivation. These are knowledge claims supported by extensive citations to prior literature. The characterization of current methods' limitations (C24-C25, C42-C46) is well-documented in cited work. This establishes the need for WaveMAP.",
+    "result_type": "MINOR"
+  }
+]

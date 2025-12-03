@@ -1,0 +1,282 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C14",
+      "C37",
+      "C38",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "A graph neural network (GNN) was trained on human olfactory perception data (~5000 molecules with 138 odor labels) to produce a 256-dimensional embedding called the Principal Odor Map (POM). The model architecture uses message passing neural networks with specific hyperparameters optimized via Bayesian optimization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C14, C37-C38, C55-C59 provide comprehensive technical details about the GNN architecture, training procedure, and resulting POM embedding. The methodology is clearly described with specific architectural choices, training parameters, and optimization procedures that are standard in machine learning practice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C15",
+      "C22",
+      "C39",
+      "C40",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "POM predicts receptor, neural, and behavioral olfaction data better than generic chemical representations across 16 datasets spanning 9 species separated by up to 500 million years of evolution. Performance advantage decreases as datasets become less relevant to olfaction (r=0.49, p<0.03).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C15, C22 demonstrate superior predictive performance with appropriate cross-validation procedures (C39-C40) and performance metrics (C60-C62). The correlation between performance advantage and dataset relevance (C22) provides additional validation. Hyperparameter optimization (C63-C64) strengthens the comparison by ensuring fair evaluation across representations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "POM shows no significant advantage over generic chemical representations for non-olfactory tasks (electronic properties, adverse drug reactions) and performs significantly worse for enteric GPCRs compared to olfactory GPCRs, demonstrating task specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 demonstrate task specificity through negative controls using non-olfactory datasets (C86) and enteric GPCRs (C87-C88). This specificity is critical for validating that POM captures olfaction-relevant features rather than general chemical properties, following the no-free-lunch principle mentioned in the text.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C8",
+      "C13"
+    ],
+    "result": "There is a strong correlation (r=0.93) between metabolic distance and POM distance across 17 species spanning four kingdoms of life. POM outperforms structural metrics with >2\u00d7 reduction in unexplained variance when predicting metabolic distance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C8, C13 demonstrate a robust relationship between POM and metabolic organization. The high correlation coefficient (r=0.93) and substantial improvement over structural metrics (>2\u00d7 reduction in unexplained variance) across diverse species (C13) provide strong quantitative support for this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C9",
+      "C10",
+      "C42",
+      "C43",
+      "C44",
+      "C92"
+    ],
+    "result": "Metabolic reaction sequences follow smooth paths in POM despite large jumps in molecular structure. Metabolic trajectories are significantly smoother in POM than when using alternative structural distance metrics (paired t-test, p<0.0001), as quantified across 63 metabolite triplets from 34 unique pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C9-C10 demonstrate pathway smoothness with appropriate statistical testing (paired t-test, p<0.0001). The methodology (C42-C44, C92) clearly defines the smoothness metric and sample size. The finding that structurally dissimilar metabolites connected by single reactions share odor profiles (C7) provides mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C24",
+      "C46",
+      "C47"
+    ],
+    "result": "Co-occurring molecules in 303 essential oils (214 molecules analyzed) show smaller distances in POM compared to non-co-occurring pairs. The rank shift for co-occurring molecules is ~2\u00d7 larger in POM than for structure distance (paired t-test, p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12, C24, C46-C47 demonstrate that POM captures natural co-occurrence patterns better than structural similarity. The statistical comparison (paired t-test, p<0.0001) and the reversal of the effect for non-co-occurring pairs (C12) strengthen the finding. The dataset size (214 molecules in 303 essential oils) is substantial.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "Co-occurring pairs of molecules activate animal olfactory systems more similarly than non-co-occurring pairs, as measured by neural response data from mice and insects (Student's t-test; p<0.0005 for Carey et al.; p<0.0005 for Hallem and Carlson).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C48 provides independent validation of the co-occurrence finding using actual neural response data rather than computational predictions. The statistical significance (p<0.0005) across multiple datasets strengthens the result, though the non-significant result for Chae et al. (only 15 overlapping pairs) is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The natural statistics of metabolism appear to shape the brain's representation of the olfactory world, suggesting convergent evolution of olfactory systems across terrestrial species to decode metabolic processes. The olfactory umwelt may be more similar across species than previously appreciated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 represent the main synthesis and interpretation of the empirical findings. These conclusions are well-supported by the convergence of evidence from cross-species predictive performance (C2), metabolic distance correlations (C5), pathway smoothness (C10), and co-occurrence patterns (C11-C12). However, C27 is appropriately framed as a hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C23"
+    ],
+    "result": "Color mixing principles and Gabor filters help explain visual system organization, and hearing/vision sensory systems are tuned to natural statistics of acoustic and electromagnetic energy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17, C23 establish the conceptual framework by citing well-established principles in vision and audition neuroscience. These are appropriately used as analogies to motivate the investigation of olfactory organization principles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Activity cliffs have limited structure-based representations in olfaction, while neural networks trained on natural statistics can learn biologically relevant representations, as demonstrated in vision and olfaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 provide appropriate background on the limitations of structure-based approaches (C18) and the success of neural network representations in capturing biological organization (C19-C21). These are well-supported by citations to established literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Animals uniquely adapted to exploit particular food sources might be uniquely adapted to smell metabolic signatures of such sources. TAARs show signatures of a 'metabolism detector,' and metabolome structure could enable smooth manifolds in neural activity space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C28-C30 are primarily speculative (C28, C30) or inferential (C29). While C29 about TAARs is supported by citations, the broader claims about species-specific adaptations (C28) and manifold development (C30) are presented as hypotheses for future work rather than demonstrated findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "Chee-Ruiter's work hypothesized a link between metabolic organization and odor qualities over 20 years ago, showing that humans exhibit perceptual cross-adaptation to compounds metabolically similar but not structurally similar to cis-jasmone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 appropriately acknowledge prior work that anticipated the metabolism-odor relationship. This provides important historical context and demonstrates that the current findings build on earlier hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Individual experiences can modify odor perception, but environmental correlations are broadly shared across individuals and species. No clear pattern was found in POM performance as a function of processing stage, and POM performance improves non-asymptotically with training data size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 address important caveats and limitations. C33-C34 acknowledge the role of learning while noting shared environmental statistics. C35 reports a null finding regarding processing stage, and C36 notes continued improvement with data size, suggesting the approach has not reached its ceiling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C41",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "POM distance is defined as correlation distance between centered embeddings. Tanimoto distance uses bit-based fingerprints, cFP edit distance uses L1 distance, and PCA projections explain >80% variance in both cFP and POM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C89-C91 provide clear methodological definitions for distance metrics and dimensionality reduction. These are standard computational approaches appropriately applied to enable fair comparisons between representations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C45",
+      "C93",
+      "C94"
+    ],
+    "result": "Odor labels are assigned to molecules if the model predicts label probability >0.5, with multiple labels possible per molecule. Common odor labels for molecule pairs are predicted by a state-of-the-art model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C93-C94 describe the odor label assignment methodology. The 0.5 probability threshold is a standard choice for binary classification, and allowing multiple labels per molecule is appropriate for odor perception.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The meta-analysis includes detailed descriptions of 16 olfactory datasets from multiple species and biological levels, with standardized preprocessing removing molecules with single atoms, non-HCNOS atoms, or molecular weight >500 daltons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54, C73-C85 provide comprehensive dataset descriptions with appropriate preprocessing criteria. The standardization filter (C53-C54) is empirically motivated and nearly all molecules passed, indicating minimal data loss. The detailed dataset descriptions enable reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "For neural activity datasets, correlation distance was used to measure both neural and molecular representation distances. Activity was computed from raw time-series data using specific thresholds (\u03bc+3\u03c3 for Pashkovski et al.) and normalization procedures (median-subtraction for Chae et al.).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C72 describe detailed data processing procedures for neural activity datasets. The methods follow the original analyses (C65) and use appropriate statistical thresholds (C69) and normalization procedures (C71-C72) for neural data analysis.",
+    "result_type": "MINOR"
+  }
+]

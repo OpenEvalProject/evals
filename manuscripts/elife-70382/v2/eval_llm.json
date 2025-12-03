@@ -1,0 +1,315 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "AutoMitoC is a novel method for array-based mtDNA-CN estimation that incorporates three key methodological innovations: (1) using globally rare variants instead of common variants for autosomal signal normalization, eliminating the need for LD pruning; (2) empirically detecting cross-hybridizing probes through association testing rather than sequence homology; and (3) using PCA instead of median signal intensity to derive the primary MT signal estimate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C24-C27 describe the AutoMitoC method and its innovations. The methodological improvements are clearly described in the manuscript with supporting figures (Figure 1 and supplements). The rationale for each innovation is provided, and the method is positioned as an improvement over the existing MitoPipeline approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C85",
+      "C97"
+    ],
+    "result": "AutoMitoC was validated against complementary mtDNA-CN measurement methods, showing significant correlation with WES-based estimates (r=0.45) and stronger correlation with qPCR-based estimates (r=0.64), with robust performance across multiple ethnic groups (r>0.53). AutoMitoC demonstrated superior concordance with WES compared to the method by H\u00e4gg et al., 2021 (r=0.45 vs r=0.33).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30, C85, and C97 describe validation results with specific correlation coefficients and p-values. The validation was performed in independent cohorts (UKBiobank subset with WES and INTERSTROKE study with qPCR) and across multiple ethnicities. The statistical evidence is strong (p<2.23\u00d710^-308), and the validation approach is comprehensive. Figure 1 supplements 5-6 provide visual support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "AutoMitoC was applied to 395,781 UKBiobank participants, revealing expected associations with demographic factors: age (beta=-0.08 SDs per decade; p<2.23\u00d710^-308), sex (females higher by beta=0.12 SDs; p=1.67\u00d710^-299), and ethnicity (South Asians and Africans lower than Europeans by beta=-0.18; p<10^-47). These factors collectively explained 0.83% of mtDNA-CN variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C31-C35 report demographic associations that are consistent with prior literature (as stated by authors). The large sample size (N=395,781), highly significant p-values, and consistency with previous reports support these findings. The variance explained is modest but expected for demographic factors. Figure 2A shows the distribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Blood cell composition is strongly associated with mtDNA-CN levels, with neutrophil count being the strongest predictor (beta=-0.31; 9.9% variance explained), followed by white blood cell count (beta=-0.25; 6.3% variance) and platelet count (beta=0.07; 0.5% variance). Collectively, these three cell types explained 12.3% of mtDNA-CN variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C42 describe associations between blood cell counts and mtDNA-CN with specific effect sizes, confidence intervals, and variance explained. The findings are well-supported by statistical evidence (p<2.23\u00d710^-308) and are consistent with known confounding by blood cell composition. Figure 2B provides visual support. The identification of neutrophil count as a stronger predictor than the commonly adjusted white blood cell count is a notable finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "GWAS of 11,453,766 common variants in 383,476 European participants identified 9,602 genome-wide significant variants, encompassing 82 independent signals in 72 loci. After NUMT sensitivity analysis removing 2 loci, 80 independent signals in 70 loci remained, explaining 1.48% of mtDNA-CN variance. The genomic inflation factor (1.16) and LD score intercept (1.036) indicated polygenicity rather than population stratification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C43-C51 describe the primary GWAS results with specific numbers of variants, loci, and quality control metrics. The large sample size, appropriate quality control (including NUMT sensitivity analysis), and use of LD score regression to assess inflation support these findings. Figure 3A shows the Manhattan plot. The claim of 71 loci in C3 appears to be a summary combining GWAS (70) and ExWAS (1) results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Fine-mapping of the 80 independent GWAS signals revealed that 17 (22%) mapped to a single candidate causal variant, 32 (39%) to \u22645 variants, and 42 (51%) to \u226410 variants. Credible sets for 11 signals overlapped with genes responsible for rare mtDNA depletion disorders (DGUOK, MGME1, TFAM, TWNK, POLG2, TYMP), and 10 of 19 (53%) known mtDNA depletion genes harbored at least suggestive associations (p<5\u00d710^-6).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 describe fine-mapping results using FINEMAP algorithm with specific proportions and gene overlaps. The enrichment of mtDNA depletion genes provides biological validation of the GWAS findings. Figure 3B shows the credible set size distribution. The methodology is appropriate and the results are clearly presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Comparison with previous GWAS studies showed that 41 of 66 (62%) signals from H\u00e4gg et al., 2021 were replicated at Bonferroni significance, with 48 (60%) of the present study's 80 signals being novel relative to H\u00e4gg et al. For Longchamps et al., 2022, 70 of 116 (60%) detectable variants were replicated at Bonferroni significance, with 11 (14%) of the present study's signals being novel relative to both prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 describe systematic comparison with two major prior GWAS studies. The authors appropriately note limitations (lack of full summary statistics for reverse lookup) and provide detailed replication statistics. The identification of novel loci is supported by the larger sample size and improved methodology. Supplementary files provide detailed variant-level comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Transethnic comparison showed that European GWAS effect estimates were highly correlated with those from South Asian (r=0.97; p=2.2\u00d710^-15) and African (r=0.88; p=9.1\u00d710^-5) ancestry groups, indicating consistency of genetic effects across populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 report transethnic correlations with strong statistical significance. Figure 3 supplement 3 provides visual support. The high correlations suggest that genetic effects on mtDNA-CN are largely consistent across ancestries, though the smaller sample sizes in non-European groups limit power for independent discovery.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "Integration with mt-eQTL and heteroplasmy GWAS data revealed that nonsynonymous variants in LONP1 and TBRG4, and an intronic variant in MRPS35, were associated with MT gene expression changes. Four heteroplasmy loci (TINCR/LONP1, TWNK/MPRL43, TFAM, PRKAB1) were also associated with mtDNA-CN at genome-wide significance with concordant directionality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 describe integration with external datasets (Ali et al., 2019 for mt-eQTL; Nandakumar et al., 2021 for heteroplasmy). The overlap provides biological insight into mechanisms, though the authors appropriately note that directionality of causation cannot be definitively established. The concordant directionality for heteroplasmy loci strengthens the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Gene prioritization using DEPICT identified 91 genes (FDR p<0.05), with GeneMANIA discovering an additional 20 related genes. Among 107 total prioritized genes, MT functions were significantly enriched (mitochondrion organization, MT nucleoid, MT genome maintenance, MT matrix; all FDR p<0.001). Twenty-seven genes (25%) encoded MT-localized proteins (4.2-fold enrichment; p=1.0\u00d710^-10), with 16 (57%) belonging to the 'Mitochondrial central dogma' pathway (threefold enrichment; p=1.3\u00d710^-5). Prioritized genes showed higher PGC-1A-induced fold change than all MT genes (p=0.04).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 describe comprehensive pathway and gene ontology analyses using established methods (DEPICT, GeneMANIA, MitoCarta3). The enrichment statistics are significant and biologically coherent, pointing to specific MT processes. Figure 3C-D provides visual support. The PGC-1A enrichment (C69) has a marginal p-value (0.04) but is consistent with the overall pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C4",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "ExWAS of 18,890 genes in 147,740 participants identified SAMHD1 as the only gene reaching exome-wide significance, with carriers of rare mutations (prevalence 0.75%) having higher mtDNA-CN (beta=0.23 SDs; p=2.6\u00d710^-19). TFAM showed suggestive association (beta=-0.33; p=4.2\u00d710^-6). Rare variants in SAMHD1 and TFAM accounted for 0.06% of mtDNA-CN variance; combined with common loci, total genetic variance explained was 1.55%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75, C4, and C73 describe ExWAS results with appropriate statistical thresholds (exome-wide significance p<2.65\u00d710^-6). The SAMHD1 finding is highly significant and biologically plausible given its role in dNTP metabolism. Figure 4A shows the QQ plot. The modest variance explained by rare variants (0.06%) is expected given their low frequency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C76",
+      "C77",
+      "C78",
+      "C89"
+    ],
+    "result": "Phenome-wide association testing of SAMHD1 mutation carrier status (99.4% heterozygotes) revealed approximately twofold increased risk of breast cancer (OR=1.91; p=2.7\u00d710^-8) and increased risk of 'cancer (suspected or other)' (OR=1.52; p=1.1\u00d710^-6). The association with mtDNA-CN remained significant after excluding cancer patients (beta=0.26; p=7.8\u00d710^-15), indicating the effect is not driven by cancer status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C76-C78, and C89 describe PheWAS results with phenome-wide significant associations. The sensitivity analysis excluding cancer patients (C78) strengthens the interpretation that SAMHD1 mutations affect mtDNA-CN independently of cancer status. Figure 4B shows the Manhattan plot. The finding is biologically plausible given SAMHD1's role in DNA repair and tumor suppression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C6",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C92"
+    ],
+    "result": "Mendelian randomization analysis using 27 genetic variants near MT protein-encoding genes showed that low mtDNA-CN has a causal effect on dementia risk (OR=1.94 per 1 SD decrease; p=7.5\u00d710^-4). Sensitivity analyses showed no evidence of pleiotropy (MR-PRESSO p=0.51; Egger intercept p=0.47), and Steiger directionality test supported causation from mtDNA-CN to dementia (p=1.9\u00d710^-62). The association was replicated in an independent dataset (OR=1.41; p=0.04993).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C79-C83, and C92 describe Mendelian randomization results with appropriate sensitivity analyses. The use of multiple MR methods, pleiotropy tests, directionality assessment, and independent replication strengthen causal inference. However, the replication p-value (0.04993) is barely significant, and the wide confidence intervals reflect limited power. Figure 6 shows the results. The authors appropriately acknowledge this as the first MR evidence for this relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C86",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The genetic findings indicate that mtDNA-CN is a complex biomarker under substantial nuclear genetic regulation, reflecting specific MT processes related to dNTP metabolism and mtDNA replication, maintenance, and organization. These processes are causally related to human diseases, particularly dementia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C86, and C100-C102 represent the authors' overall conclusions drawn from the genetic analyses. These conclusions are well-supported by the convergent evidence from GWAS, ExWAS, pathway analyses, and Mendelian randomization. The enrichment of mtDNA depletion genes, MT central dogma pathway, and the causal association with dementia provide strong support for these interpretations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C90",
+      "C91"
+    ],
+    "result": "SAMHD1 is a multifaceted enzyme involved in tumor suppression and dNTP metabolism. Rare homozygous/compound heterozygous loss-of-function mutations cause Aicardi Goutieres' syndrome, while approximately 1 in 130 UKBiobank participants carry heterozygous mutations conferring twofold breast cancer risk. Previous work (Franzolin et al., 2015) showed that siRNA knockdown of SAMHD1 partially recovered mtDNA-CN in DGUOK-mutant fibroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88, C90-C91 describe prior knowledge about SAMHD1 supported by citations. The calculation in C90 (1 in 130 = 0.75% carrier prevalence) is correct. These claims provide important biological context for interpreting the novel findings about SAMHD1 and mtDNA-CN.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Prior studies support the relationship between mtDNA-CN and dementia: Silzer et al., 2019 (N=46) found lower blood mtDNA-CN in cognitive impairment; Andrews and Goate, 2020 (N=1,025) found brain mtDNA-CN associated with cognitive measures (beta=-4.02 for MMSE; p=1.07\u00d710^-7); Yang et al., 2021 found associations with incident neurodegenerative disease. Combined with the present MR findings, mtDNA-CN represents both a marker and mediator of dementia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 summarize prior literature with appropriate citations and integrate it with the present findings. The conclusion in C96 is reasonable given the convergent evidence from observational studies and the present MR analysis, though the authors appropriately note that further work is needed to determine which specific MT processes mediate dementia pathogenesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C84",
+      "C58",
+      "C60"
+    ],
+    "result": "The present study represents the most comprehensive genetic assessment of mtDNA-CN published to date, identifying 48 (60%) novel loci relative to H\u00e4gg et al., 2021 and 11 (14%) novel loci not reported in either H\u00e4gg et al., 2021 or Longchamps et al., 2022.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84, C58, and C60 assert the comprehensiveness and novelty of the study. This is supported by the larger sample size (~100,000 more participants than H\u00e4gg et al.), improved methodology (AutoMitoC), inclusion of ExWAS, and systematic comparison showing substantial novel discovery. The claim is justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "The study has limitations including: (1) Mendelian randomization analyses were underpowered for broad disease survey, with large confidence intervals even for dementia; (2) whole blood mtDNA-CN reflects heterogeneous cell populations, and unmeasured cell subpopulations may confound results despite adjustment for major cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 describe limitations acknowledged by the authors. These are valid concerns: the wide CI for dementia MR (1.55-2.32) reflects limited power, and blood cell heterogeneity is a known confounder of mtDNA-CN measurements. The authors appropriately acknowledge these limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Background claims establish that: mitochondria are semiautonomous organelles executing fundamental cellular processes; MT dysfunction has been implicated in human disorders; mtDNA-CN is a blood-based marker of MT DNA abundance; observational studies link lower mtDNA-CN to age-related diseases and higher mtDNA-CN to cancer; mtDNA depletion syndromes involve 60-80% drops in mtDNA-CN due to defects in 19 known genes; ~50 common loci have been identified; blood mtDNA-CN is confounded by cell composition and correlates poorly with other tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C23 provide background information supported by citations to prior literature. These establish the scientific context and rationale for the study. The claims are appropriately cited and represent established knowledge in the field.",
+    "result_type": "MINOR"
+  }
+]

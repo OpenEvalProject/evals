@@ -1,0 +1,177 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The manuscript establishes the biological context for microtubule orientation in neuronal axons. In mature axons, ~95% of microtubules are uniformly oriented with plus-ends pointing toward the axon tip, enabling polarized transport. However, in immature axons, microtubule orientation is initially mixed (50-80% plus-end-out), and the fraction of plus-end-out microtubules increases during development. Deficits in this polarized transport are associated with neurodegenerative diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C14 establish well-documented background knowledge about microtubule organization in neurons, supported by multiple citations to prior literature. These claims provide essential context but represent established knowledge rather than novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Using live imaging of EB1-GFP in Drosophila neurons, the authors quantified microtubule growth dynamics along axons. They found that most microtubule growth events (~66%) occur within 20 \u00b5m of the axon tip, and plus-end-out microtubules add significantly more length per growth cycle than minus-end-out microtubules (2.11 vs 1.39 \u00b5m/cycle) within the first 10 \u00b5m from the tip. This difference arises from significantly lower catastrophe rates in plus-end-out microtubules near the tip, not from differences in growth velocity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C26 and C62-C64 present the core experimental observations using EB1-GFP imaging and are well-supported by quantitative data in Figure 1 and supplements. The measurements are appropriately analyzed with statistical tests, confidence intervals are reported, and the methodology for distinguishing plus-end vs minus-end growth is validated (C66). This represents a major novel finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The authors developed a two-state master equation model of microtubule dynamics to predict whether microtubules exhibit bounded or unbounded growth. The model predicts that when growth length per cycle (dg) exceeds shrinkage length per cycle (ds = 2.03 \u00b5m), microtubules exhibit unbounded growth. Measured values indicate that plus-end-out microtubules within 10 \u00b5m of the axon tip (dg = 2.11 \u00b5m) exhibit mostly unbounded growth, while minus-end-out microtubules (dg = 1.39 \u00b5m) and microtubules further from the tip exhibit bounded growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C27-C29 present a mathematical model linking experimental measurements to predictions about microtubule behavior. The model is clearly derived (shown in supplemental methods), and the experimental measurements of dg and ds support the model's predictions. The confidence intervals for plus-end-out microtubules at the tip bracket the critical threshold, providing strong support for the unbounded growth hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C52",
+      "C53"
+    ],
+    "result": "Chemical and physical perturbations that decrease microtubule growth confirm the importance of enhanced plus-end-out growth for establishing uniform orientation. Nocodazole treatment decreased growth velocities, while hyperosmotic treatment increased catastrophe rates. Both treatments reduced plus-end-out microtubule growth at the axon tip below the critical threshold for unbounded growth (dg < 1.71 \u00b5m < ds), and both led to significantly decreased overall microtubule orientation in axons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 and C52-C53 describe perturbation experiments that test the model's predictions. The data in Figure 3 and supplements show that reducing microtubule growth through different mechanisms (affecting either velocity or catastrophe rate) both lead to decreased orientation, supporting the hypothesis. The experiments are well-controlled with appropriate statistics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The anti-catastrophe factor p150 is enriched at axonal but not dendritic tips, and this gradient correlates with differential microtubule dynamics. Genetic perturbations of p150 (RNAi and dominant negative p150\u00b9/\u207a) led to increased catastrophe rates, decreased plus-end-out microtubule growth at the axon tip (14-20% decrease), and significantly decreased overall axonal microtubule orientation. Modeling suggests microtubule growth scales with the fourth power of p150 concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C34-C39, and C54-C57 identify p150 as a key molecular player and demonstrate its functional importance through immunostaining (Figure 4A-C) and genetic perturbations (Figure 4D-H). The comparison between axonal and dendritic tips (Figure 4\u2014supplement 2) provides additional support. The power-law relationship (C57) is based on modeling (Figure 4\u2014supplement 4) and represents an interesting quantitative prediction, though it would benefit from additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C48",
+      "C58"
+    ],
+    "result": "The p150 gradient at axon tips depends on kinesin 1-mediated transport. Disruption of kinesin 1 function led to a 25% decrease in p150 fluorescence at the axon tip, increased microtubule catastrophe rates, decreased plus-end-out microtubule growth, and decreased overall axonal microtubule orientation. p150 acts as both a dynein-interacting protein and a dynein-independent anti-catastrophe factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44, C48, and C58 establish the mechanism for p150 localization and its dual functions. The kinesin 1 RNAi experiments (Figure 4\u2014supplement 6) demonstrate the transport-dependent accumulation of p150. The dynein RNAi experiments (Figure 4\u2014supplement 5) show similar phenotypes to p150 perturbation, though the interpretation is complicated by dynein's multiple roles. The claims are well-supported but the mechanistic details could be more fully resolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C19",
+      "C45",
+      "C46",
+      "C47",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Computer simulations integrating three mechanisms\u2014dynein-based sliding, augmin-mediated templating, and enhanced plus-end-out microtubule growth at the tip\u2014correctly predicted the long-term evolution of axonal microtubule orientation. Simulations with only one or two mechanisms were insufficient to establish uniform plus-end-out orientation throughout the axon, but combining all three mechanisms recapitulated experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C19, and C45-C47, C59-C61 present comprehensive computational modeling that integrates the newly discovered mechanism with previously proposed mechanisms. Figure 5 and supplement 1 systematically test different combinations of mechanisms, demonstrating that all three are necessary. The simulations match experimental time courses (Figure 5D vs 5F), providing strong support for the integrated model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The authors propose an integrated model where kinesin 1 transports growth-promoting proteins to the axon tip, creating a gradient that renders plus-end-out microtubule growth unbounded while minus-end-out microtubules remain bounded and are cleared by dynein-mediated sliding. This orientation bias is further enhanced by augmin-mediated templating and TRIM46-mediated bundling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 synthesize the experimental and computational findings into a comprehensive mechanistic model. The model is well-supported by the combination of experimental data (Figures 1-4) and simulations (Figure 5), and is illustrated clearly in Figure 5G. This represents the main conceptual contribution of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The manuscript reviews previously proposed mechanisms for establishing microtubule orientation, including nucleation from organizing centers, templating of new microtubules along existing ones, TRIM46-mediated stabilization, and dynein-mediated transport of minus-end-out microtubules toward the cell body.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 summarize established mechanisms from prior literature with appropriate citations. These provide important context for understanding why additional mechanisms are needed, but represent background knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "The authors validate their measurement approach by noting that microtubule minus-end polymerization is much slower than plus-end polymerization, and since they observed similar growth velocities in both directions, they are confident they measured plus-end growth events rather than minus-end growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 address a potential methodological concern about distinguishing plus-end from minus-end growth. The reasoning is sound and supported by citation (C65) and internal consistency of the velocity measurements (C24). This is an important methodological validation.",
+    "result_type": "MINOR"
+  }
+]

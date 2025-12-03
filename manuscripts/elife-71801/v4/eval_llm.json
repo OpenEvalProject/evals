@@ -1,0 +1,355 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Gated recurrent networks with 11 units achieve quasi-optimal performance (99% of optimal) in the changing unigram environment, significantly outperforming heuristic agents and networks lacking any of the three key mechanisms (gating, lateral connections, or recurrent weight training).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 provide quantitative performance data from Figure 2b showing the gated recurrent network achieves 99% optimal performance and systematically outperforms all alternatives. The statistical comparisons (p < 0.001) and confidence intervals support the conclusion that all three mechanisms are necessary. The sample size (n=20 per architecture) and methodological rigor are adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C70",
+      "C72",
+      "C73",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Gated recurrent networks dynamically adjust their effective learning rate in response to change points, matching the optimal agent's behavior with characteristic peaks at the same time and amplitude, while heuristic agents and networks lacking key mechanisms fail to show this adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73 and C76-C77 are supported by quantitative data in Figure 3b showing the gated recurrent network's effective learning rate closely matches the optimal agent, while alternative architectures show degraded performance. The analysis is based on 20 networks per architecture tested on 10,000 sequences with locked change points, providing adequate statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C85",
+      "C86",
+      "C88",
+      "C90",
+      "C91",
+      "C93"
+    ],
+    "result": "Gated recurrent networks spontaneously develop internal representations of precision that are linearly decodable from recurrent activity (median correlation 0.82 with optimal precision) and that interact dynamically with predictions according to the precision-weighting principle, with precision and prediction being separable representations (MI = 0.7) unlike in networks without gating (MI = 5.2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 and C88-C91 are supported by readout analyses on left-out data (Figure 4a-b) showing high correlation with optimal precision and proper separation from prediction. The mutual information analysis (C90) quantitatively demonstrates that gating enables independent representation of precision and prediction. The linear readout methodology is standard and appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Causal perturbation experiments demonstrate that the internal representation of precision causally regulates the effective learning rate in gated recurrent networks, with this causal relationship abolished in networks lacking any of the three key mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 are supported by the perturbation experiment (Figure 5) showing significant effects in gated recurrent networks (p < 0.001, Cohen's d > 1.3) that are abolished in alternative architectures. The experimental design properly controls for prediction error by keeping predictions constant while manipulating precision. The sample size (n=20 per architecture, 1000 sample time points) is adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Gated recurrent networks achieve 98% optimal performance in the changing bigram environment and internalize the latent bigram structure, with both bigram probabilities simultaneously represented and linearly decodable (correlation 0.97 for estimates, 0.77 for precisions), while networks lacking any mechanism show larger performance drops than in the unigram environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C111 are supported by performance data (Figure 6c) and readout analyses (Figure 6d) on left-out data. The interaction effects between mechanism removal and environment (all F(1,76) > 47.9, p < 0.001) demonstrate that all three mechanisms are more critical for bigram than unigram environments. The simultaneous representation of both bigram probabilities despite only one being needed at any time is a notable finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Gated recurrent networks trained in environments with coupled change points demonstrate higher-level inference by transferring suspicion of change from one bigram to another, an effect that requires all three mechanisms and occurs despite minimal impact on raw performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117 are supported by data in Figure 7c showing significant differences between networks trained on coupled vs. independent change points across streak lengths, with significant interaction effects (all F(1,6076) > 43.2, p < 0.001). The finding that this occurs despite minimal performance differences (C116, Figure 6\u2014figure supplement 1) strengthens the conclusion that networks genuinely learn the hierarchical structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C128"
+    ],
+    "result": "Gated recurrent networks achieve near-optimal performance with very few units (3 units for 99% performance in unigram environment), while alternative architectures require orders of magnitude more units, with vanilla RNNs following a power law requiring >10^4 units to match 11-unit gated recurrent network performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C126 are supported by complexity analyses in Figure 8 showing performance as a function of network size. The power law fit (R\u00b2 = 92.4%) and validation at 1000 units (predicted 97.8%, observed 97.6%) support the extrapolation to >10^4 units. However, the extrapolation to such large networks involves assumptions about continued power law behavior that cannot be directly verified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The gated recurrent architecture with all three mechanisms (gating, lateral connections, recurrent weight training) enables simple and effective solutions that perform quasi-optimally and reproduce multiple aspects of optimal behavior observed in organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C131 are summary statements supported by the collective evidence from all prior results. The consistent finding across multiple environments and analyses that all three mechanisms are necessary provides strong support for this overarching conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C134",
+      "C135"
+    ],
+    "result": "The study provides an existence proof that plausible neural network solutions can be nearly indistinguishable from Bayesian inference in changing unigram and bigram environments, exhibiting qualitative properties demonstrated in humans but lacking in heuristic solutions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C135 are supported by the performance data showing 99% and 98% optimal performance in the two environments, along with demonstrations of precision representation, precision-weighting, and higher-level inference. The comparison to human behavior is supported by citations to prior studies (C82-C83, C114). This represents a valid existence proof within the tested environments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C142",
+      "C143"
+    ],
+    "result": "The three mechanisms of gated recurrence are generic (not specifically designed for probabilistic operations), enable adaptation through recurrent dynamics without synaptic plasticity during task performance, and are key computational building blocks for low-complexity solutions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C143 are supported by the mechanistic analyses showing that the generic mechanisms enable quasi-optimal performance across different environments and that removing any mechanism dramatically increases the complexity required (Figure 8). The distinction between recurrent dynamics for rapid adaptation (C140, Figure 3) and synaptic plasticity for tuning to environment statistics (C141, Figure 3\u2014figure supplement 1) is empirically supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The mechanisms of gated recurrence (gating, lateral connections, recurrent weight training) have multiple plausible biological implementations in the brain, including inhibition/disinhibition circuits, neural oscillations, and neuromodulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C153 are supported by extensive citations to prior neuroscience work demonstrating various forms of gating and recurrent connections in the brain. However, this is primarily a review of existing literature rather than new empirical findings. The claim that these mechanisms provide plausible solutions (C153) is an inference combining the computational results with biological knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C155",
+      "C157",
+      "C159"
+    ],
+    "result": "Training recurrent weights to the environment is important for performance, the training procedure uses only observation sequences with prediction error signals found in the brain, and relatively few training iterations (10-100) suffice for high performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155 and C159 are supported by data showing that networks without recurrent weight training perform poorly (Figure 2b) and that training converges quickly (Figure 8\u2014figure supplement 1). Claim C157 is supported by citations to prior work on prediction error signals in the brain. These are methodological findings that support the biological plausibility of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "Gated recurrent networks can generalize across different change point probabilities and latent structures, and the spontaneous emergence of linearly decodable representations of latent probabilities and precision yields the empirical prediction that these should be decodable in brain signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C166 is supported by data in Figure 3\u2014figure supplement 1 and Figure 6\u2014figure supplement 1 showing cross-environment performance. Claims C167-C168 are supported by the readout analyses. Claim C169 is a valid prediction based on the findings, with supporting citations to some existing studies showing such decodability. This represents a testable prediction for future neuroscience experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "Human behavior in laboratory tasks is often qualitatively Bayesian but quantitatively suboptimal, with deviations including suboptimal learning rate adjustments, intermittent updating, and substantial interindividual variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C163 are supported by citations to multiple prior human studies. This is a review of existing literature on human suboptimalities rather than new findings. The authors acknowledge these limitations and suggest future directions for modeling suboptimalities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C38",
+      "C54",
+      "C55",
+      "C56",
+      "C63",
+      "C146"
+    ],
+    "result": "The methodological choices of using small networks (11 units), training 20 agents per architecture, and conducting extensive hyperparameter optimization ensure that the solutions are simple, statistically reliable, and near-optimal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C54-C56, C63, and C146 describe methodological choices that are well-justified and properly implemented. The choice of 11 units is empirically justified (C55), the sample size of 20 provides adequate statistical power, and the Bayesian hyperparameter optimization is thorough. These are sound methodological decisions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The introduction establishes that prediction is crucial across cognitive domains, poses computational challenges in real-world environments (stochastic, changing, structured), and that while Bayesian inference is optimal it is computationally intractable, while heuristics lack generality and biological implementation remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C36 are background statements supported by citations to prior work and established knowledge in the field. These provide appropriate context and motivation for the study but do not represent new empirical findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C132",
+      "C133"
+    ],
+    "result": "Bayesian inference in arbitrary environments is NP-hard and the brain as a bounded agent cannot solve it in its most general form.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C133 are supported by citations to computational complexity theory (Cooper, 1990; Dagum and Luby, 1993) and bounded rationality (Simon, 1955; 1972). This is established knowledge that provides important context for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C57",
+      "C58",
+      "C59",
+      "C98",
+      "C99",
+      "C112"
+    ],
+    "result": "The study uses a sequence prediction framework with three environments (changing unigram, changing bigram with independent change points, changing bigram with coupled change points) that are stochastic, changing, and feature increasing levels of latent structure, tested with network architectures following a common three-layer template with varying mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C59, C98-C99, and C112 describe the experimental framework, environments, and architectures. These are clearly defined and well-motivated by connections to prior experimental paradigms (C58, C100). The framework is appropriate for testing the research questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C136",
+      "C144",
+      "C145",
+      "C154",
+      "C156",
+      "C158",
+      "C164",
+      "C165"
+    ],
+    "result": "The discussion addresses the biological plausibility of the mechanisms, their ubiquity in the brain, implications for understanding brain function, and connections to human behavior, while acknowledging limitations and speculating about future directions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10-C11, C136, C144-C145, C154, C156, C158, C164-C165 mix established knowledge (C10, C144, C147), citations to prior work (C136, C165), inferences from the current findings (C154), and speculation about biological implementation and future work (C11, C156, C158, C164). While the discussion is thoughtful and well-grounded, many claims are speculative or represent interpretations rather than direct empirical findings.",
+    "result_type": "MINOR"
+  }
+]

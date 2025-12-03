@@ -1,0 +1,343 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C2"
+    ],
+    "result": "SWR1 exhibits a kinetic binding preference for longer DNA, with the on-rate (kbind) increasing linearly from 1\u00d710^6 M^-1 s^-1 for 20 bp DNA to 3.6\u00d710^7 M^-1 s^-1 for 150 bp DNA (36-fold increase). This linear relationship (R\u00b2=0.99) indicates that longer DNA substrates harbor more potential SWR1-binding sites, demonstrating a kinetic preference for NDR-length DNA over gene-body linker-length DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 provide direct experimental measurements from TIRF colocalization assays showing the linear DNA length-dependent increase in binding rate. The statistical significance is demonstrated (Figure 1F), and C2 correctly summarizes this as a kinetic binding preference for NDR-length DNA. The experimental design and data analysis appear sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The binding lifetime (tbound) of SWR1 to DNA increases dramatically with DNA length, showing an approximately 120-fold increase from 1.5\u00b10.3 s for 20 bp DNA to ~3 minutes for 150 bp DNA. The lifetime is unchanged by ATP but decreases with increased ionic strength and in the presence of competitor DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C28 present consistent experimental measurements of binding lifetimes across different DNA lengths and conditions. The data show clear trends with appropriate controls (different laser powers, salt concentrations, competitor DNA). The measurements are internally consistent and supported by Figure 1G and supplementary data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "The affinity of SWR1 for DNA greater than 60 bp is primarily limited by the on-rate rather than the off-rate, suggesting that increased SWR1 occupancy at longer NDRs in vivo results from increased probability of finding the NDR rather than increased residence time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 is a reasonable inference from the kinetic data showing that kbind increases 36-fold while tbound increases 120-fold with DNA length. However, the conclusion about in vivo occupancy is somewhat speculative as it extrapolates from in vitro measurements. The logic is sound but would benefit from direct in vivo validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "SWR1 undergoes Brownian diffusion on nucleosome-free DNA with a diffusion coefficient of 0.013\u00b10.002 \u03bcm\u00b2/s in buffer alone, which is 40-fold larger than the immobile reference dCas9 (0.0003\u00b10.0004 \u03bcm\u00b2/s). The linear MSD versus time relationship confirms Brownian diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 present the first demonstration of chromatin remodeler diffusion on DNA using optical tweezers with confocal microscopy. The experimental design includes appropriate controls (dCas9 as immobile reference), and the MSD analysis correctly identifies Brownian diffusion. The measurements are well-documented with clear methodology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C3",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "ATP binding (not hydrolysis) increases SWR1 diffusion on DNA from 0.013\u00b10.002 \u03bcm\u00b2/s to 0.024\u00b10.001 \u03bcm\u00b2/s. The non-hydrolyzable analog ATP\u03b3S produces similar enhancement (0.026\u00b10.002 \u03bcm\u00b2/s), while ADP does not increase diffusion. ATP also reduces the fraction of immobile molecules from 32% to 9%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C42 demonstrate that ATP binding, not hydrolysis, enhances diffusion through careful use of ATP analogs. The statistical comparisons are appropriate (Mann-Whitney U-test), and the results are internally consistent. The conclusion that nucleotide binding rather than hydrolysis drives enhanced diffusion is well-supported by the ATP\u03b3S control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C6"
+    ],
+    "result": "The Swc2 DNA-binding domain (DBD) also diffuses on DNA with a median diffusion coefficient of 1.04\u00b10.09 \u03bcm\u00b2/s, approximately 40-fold faster than full SWR1. The scaling relationship between size and diffusion coefficient is consistent with both SWR1 and Swc2 DBD utilizing rotationally coupled sliding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 demonstrate that the Swc2 subunit contributes to SWR1's diffusive behavior. The comparison to theoretical models (Figure 4\u2014figure supplement 2) supports rotationally coupled sliding. However, the interpretation would be strengthened by testing whether Swc2 deletion affects full SWR1 diffusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Both SWR1 and Swc2 DBD show increased diffusion and decreased binding lifetimes with increasing salt concentration, consistent with 1D hopping. However, median diffusion coefficients remain below the theoretical maximum for rotation-coupled sliding, indicating that SWR1 utilizes predominantly helically coupled sliding with occasional hopping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C55 present a comprehensive analysis of diffusion mechanisms using salt dependence, competitor DNA effects, and comparison to theoretical limits. The conclusion that SWR1 uses predominantly sliding with occasional hopping is well-supported by multiple lines of evidence. The theoretical calculations appear sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C5"
+    ],
+    "result": "SWR1 cannot efficiently bypass dCas9 protein roadblocks: 67% of encounters result in reflection, 30% in immobilization, and only 3% in bypass events. This inability to bypass barriers supports a model where SWR1 mainly engages in helically coupled sliding rather than hopping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 provide quantitative evidence from dual-color tracking experiments that SWR1 is blocked by protein barriers. The low bypass frequency (3%) is consistent with predominantly sliding diffusion. The experimental design is appropriate, though the assumption that dCas9 binding outlasts Cy5 photobleaching should be validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "SWR1 diffusion is confined by nucleosomes on sparse nucleosome arrays (40\u00b15 nucleosomes per lambda DNA). The MSD plateaus at short time scales (\u03b1=0.24) compared to naked DNA (\u03b1=0.88), with diffusion confined to approximately 0.23 \u03bcm, suggesting confinement between nucleosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C69 demonstrate confined diffusion on nucleosome arrays using MSD analysis and force-distance measurements to characterize the arrays. The interpretation that SWR1 is confined between nucleosomes is reasonable given the calculated confinement length (~0.23 \u03bcm) relative to mean nucleosome spacing (~0.35 \u03bcm). The nucleosome array characterization is thorough.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C14",
+      "C16"
+    ],
+    "result": "SWR1 slides on DNA with a diffusion coefficient (0.024 \u03bcm\u00b2/s with ATP) comparable to other proteins utilizing facilitated diffusion. This is the first demonstration that a chromatin remodeler can linearly diffuse on DNA, addressing a previously unknown aspect of chromatin remodeler function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 correctly identify this as a novel finding and appropriately compare to other DNA-binding proteins. C14 and C16 establish the context and knowledge gap. The comparison to other proteins is supported by citations, and the novelty claim is justified as this is the first direct demonstration of chromatin remodeler 1D diffusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Since only 7% of yeast nucleosomes (4,576 out of 61,568) are SWR1 targets enriched in H2A.Z, the authors propose that +1 nucleosomes use adjacent NDRs as 'antennas' to promote SWR1 binding and 1D search. This mechanism may be common to chromatin remodelers acting on NDR-adjacent nucleosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72-C74 cite prior genomic studies for nucleosome numbers, but C75 is speculative. While the 1D diffusion data support the possibility of NDRs functioning as antennas, direct evidence that this mechanism is important in vivo or common to other remodelers is lacking. The hypothesis is reasonable but requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C4"
+    ],
+    "result": "Based on the measured diffusion coefficient of 0.024 \u03bcm\u00b2/s with ATP, SWR1 would require 46 ms to scan from the center of an average 150 bp NDR to encounter a flanking nucleosome by 1D diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91 and C4 present a calculation based on measured diffusion coefficients and known NDR dimensions. The calculation methodology is described in Materials and Methods and appears mathematically sound. However, this is a theoretical estimate that assumes continuous diffusion and may not reflect in vivo conditions with molecular crowding and other factors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The fluorescently labeled Cy3-SWR1 complex maintains full histone exchange activity, with Cy3-Swc7 properly incorporated into the complex. Cy3-Swc7 alone shows no affinity for 150 bp DNA, confirming that observed signals represent full complex binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 are supported by appropriate controls (EMSA for activity, glycerol gradient for incorporation). However, C97 states data are not shown, which is a weakness. The functional validation is important for interpreting all subsequent experiments, and the controls appear adequate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "SWR1 requires ATP for histone exchange with low basal hydrolysis in the absence of substrates. ATP binding produces conformational changes in the SF2 ATPase domain that can affect DNA diffusion, with the core switching between open and closed conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 are supported by citations to prior biochemical and structural studies. These claims provide important context for interpreting the ATP-dependent diffusion enhancement observed in this study. The mechanistic link between ATP binding and enhanced diffusion is reasonable but remains somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C90",
+      "C15",
+      "C29"
+    ],
+    "result": "In vivo single-particle tracking shows that SWR1 and other chromatin remodelers (RSC, SWI/SNF, ISW2, INO80) have bound-state diffusion coefficients ~2-fold larger than histone H2B, with approximately 47% of SWR1 molecules bound to chromatin. These studies hint at chromatin scanning but cannot distinguish between remodeler scanning and enhanced chromatin mobility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93, C90, C15, and C29 accurately cite prior in vivo studies and correctly identify their limitations. These claims provide important context showing that the current in vitro findings are consistent with prior in vivo observations, though the in vivo studies could not definitively demonstrate 1D diffusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The localization precision is \u03c3=82 nm. Lambda DNA at 5 pN tension extends to 92% of contour length (15.2 \u03bcm) with 0.31 nm per basepair, making a 150 bp NDR approximately 0.047 \u03bcm long under experimental conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C101 present technical details about the experimental setup and calculations. The localization precision calculation uses an appropriate formula with measured parameters. The DNA extension calculations are supported by citation and are consistent with known DNA mechanics at 5 pN tension.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C1"
+    ],
+    "result": "At eukaryotic gene promoters, a ~140 bp nucleosome-depleted region (NDR) is flanked by well-positioned +1 and -1 nucleosomes. The +1 nucleosome is enriched for H2A.Z, which in yeast is deposited by the SWR1 chromatin remodeler. This architecture and H2A.Z insertion are highly conserved and important for transcriptional regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 and C1 accurately summarize well-established knowledge about promoter chromatin architecture and SWR1 function, supported by multiple citations to foundational studies. This provides essential background context for the study but does not represent new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "SWR1 affinity for nucleosomes is enhanced by long-linker DNA and histone acetylation, both playing roles in promoter recruitment. H2A.Z is predominantly deposited on the long-linker distal face of nucleosomes, consistent with SWR1 exploiting preferential interactions with long-linker DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 accurately cite prior studies establishing these properties of SWR1. This background information motivates the hypothesis that SWR1 may use facilitated diffusion on NDR DNA to find target nucleosomes, but does not represent new experimental findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "While acetylation of the +1 nucleosome may help establish directionality between NDR-flanking nucleosomes, even unacetylated nucleosomes can reduce SWR1 diffusion through nucleosome engagement. H2A.Z is preferentially enriched at inactive promoters, and NDR DNA rigidity helps position nucleosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C76 cites prior work on acetylation, C78-C79 cite other studies, but C77 is an inference from the current nucleosome array data. The interpretation that unacetylated nucleosomes reduce diffusion through engagement is reasonable but the mechanism is not directly demonstrated. The connection between these observations and their functional significance remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Proteins that hop on DNA show increased diffusion with higher salt concentration. For sliding or hopping, the energy barrier must be <~2 kBT. Proteins using predominantly sliding cannot bypass obstacles, while those using hopping may bypass them. Hopping represents a trade-off between scanning speed and accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 accurately summarize established biophysical principles of protein-DNA interactions, supported by appropriate citations. This theoretical framework is essential for interpreting the experimental observations on SWR1 diffusion mechanisms but does not represent new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "When complexed with a canonical nucleosome and H2A.Z-H2B dimer, SWR1 can rapidly perform ATP hydrolysis-dependent histone exchange in an average of 2.4 seconds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 cites a recent single-molecule study on the histone exchange mechanism. This provides important context for understanding the timescales of SWR1 function relative to the diffusion measurements in the current study, but is not a finding from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "Longer DNA molecules can accommodate multiple bound SWR1 molecules, with the likelihood of multiple binding events increasing with DNA length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C21 is supported by experimental observations in Figure 1E showing multiple binding events. This observation is consistent with the interpretation that longer DNA provides more binding sites, though the molecular basis for multiple binding sites is not explored in detail.",
+    "result_type": "MINOR"
+  }
+]

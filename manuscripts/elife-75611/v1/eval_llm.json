@@ -1,0 +1,420 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C22",
+      "C23",
+      "C25",
+      "C27",
+      "C28",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The authors propose a novel dopaminergic plasticity rule (DPR) that depends on KC activity, dopamine level, and deviation from resting weight, producing four effects (depression, potentiation, recovery, saturation) that maximize separation between synaptic weights of reinforced inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C22-C23, C25, C27-C28, C97-C100 collectively describe the DPR and its properties. The rule is mathematically defined (Equation 1), illustrated in Figure 2, and shown to be necessary for model function (C99). The four effects are derived from the mathematical formulation and demonstrated in simulations. The rule's locality and biological plausibility are discussed with appropriate caveats about unknown mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C160"
+    ],
+    "result": "The incentive circuit consists of six MBONs (susceptible, restrained, LTM for each of attraction/avoidance) and six DANs (discharging, charging, forgetting for each valence) with specific connectivity patterns that enable memory dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C40, C160 describe the structure and basic function of the proposed incentive circuit. The circuit is illustrated in Figure 3, connectivity is mapped to identified neurons in Table 1, and the functional roles of each neuron type are clearly defined. The circuit structure is derived from published connectome data with appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The susceptible memory microcircuit, consisting of PPL1-\u03b31pedc (punishment DAN), MBON-\u03b31pedc>\u03b1/\u03b2 (attraction MBON), and MBON-\u03b35\u03b2'2a (avoidance MBON), produces rapid memory acquisition with high learning rate and low retention time, matching experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C54 describe the susceptible memory circuit and compare model predictions with experimental data. Figure 5 shows good qualitative agreement between model and experimental neural responses during conditioning. The rapid learning (C46) and recovery effects (C48-C49) are demonstrated. The positive feedback mechanism (C53) is clearly explained and contrasted with RPE (C54).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "A mirror susceptible/restrained memory circuit with opposite valence exists, with proposed identities PAM-\u03b34<\u03b31\u03b32 (reward DAN), MBON-\u03b34>\u03b31\u03b32 (avoidance MBON), and MBON-\u03b32\u03b1'1 (attraction MBON).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55-C61 propose a symmetric circuit based on connectome analysis (C55). However, the specific neuron identifications (C57-C59) are inferences from the model rather than direct experimental validation. The mechanism for inhibitory glutamate signaling (C61) is speculative. While anatomically plausible, this circuit lacks the direct experimental validation shown for the aversive circuit.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The reciprocal short-term memories microcircuit, where restrained MBONs activate charging DANs that depress opposite-valence restrained MBONs, maintains balance between memories and produces fragile short-term memories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C68 describe the reciprocal STM circuit with support from multiple citations (C62-C64). The circuit structure is shown in Figure 6, and the functional consequences (C66-C67) are demonstrated in simulations. The prediction that these store STMs (C68) follows logically from the demonstrated fragility. The circuit is grounded in published connectivity data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The long-term memory microcircuit features positive feedback between LTM MBONs and charging DANs, enabling memory consolidation through the saturation effect even after reinforcement ceases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C77 describe the LTM circuit and its self-reinforcing properties. The circuit is based on published connectivity (C69-C70) and illustrated in Figure 7. The positive feedback mechanism (C73) and saturation effect (C74) are clearly explained. The model demonstrates continued memory strengthening (C75), though experimental data don't show this clearly (C76), which is reasonably explained by individual experience variability (C77).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The reciprocal long-term memories microcircuit uses forgetting DANs activated by LTM MBONs to depress opposite-valence LTM, enabling long-term competition and flexibility. Different axon terminals of PPL1-\u03b32\u03b1'1 may function as separate processing units.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C89 describe the reciprocal LTM mechanism. The circuit structure (C79-C81) and functional consequences (C82-C83) are clearly explained. The mapping to identified neurons (C84) is based on published connectome data. The observation about multiple axon terminals (C86-C88) is supported by experimental data (Figure 4\u2014supplement 1), and model predictions match observed responses surprisingly well (C89, Figure 8C-D).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The memory assimilation mechanism, where forgetting DANs also suppress restrained MBON synapses of the same valence, enables memory transfer from short-term to long-term storage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 describe the MAM circuit. The prediction (C90) is illustrated in Figure 9C, and the functional consequence (C91) is demonstrated in simulations. The anatomical support (C92-C94) is based on published connectome data from Aso et al., 2014a. The mechanism provides a plausible explanation for STM-to-LTM transfer observed behaviorally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C96"
+    ],
+    "result": "The complete incentive circuit model enables rapid memory acquisition, STM-to-LTM transfer, exploration/exploitation trade-off, reproduces observed neural responses during conditioning, and enables flexible behavioral control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C8, C96 describe the integrated capabilities of the full model. Rapid acquisition is demonstrated in Figure 5, STM-to-LTM transfer through the MAM (Figure 9), neural response reproduction throughout Figures 5-8, and behavioral control in Figures 10-11. The model correlates well with 92 intervention experiments (r=0.76, Figure 3\u2014supplement 1) and produces realistic behavior in virtual arena simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The saturation effect enables LTM consolidation resistant to forgetting, with flexibility only through persistent opposite-valence reinforcement. The memory assimilation mechanism increases circuit capacity by transferring restrained MBON learning to LTM MBONs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C104 describe functional advantages of the DPR and circuit architecture. The saturation effect's role in LTM consolidation (C101) is demonstrated in simulations. The requirement for persistent opposite reinforcement (C102) follows from the reciprocal LTM circuit dynamics. The capacity increase through MAM (C103) and ability to store multiple odor memories (C104) are demonstrated in behavioral simulations (Figure 11).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The reward prediction error plasticity rule lacks the flexibility of DPR, fails to maintain useful LTMs in the same circuit, and requires implausible mechanisms inconsistent with experimental observations of learning during MBON silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C111 compare DPR with RPE. The failure of RPE in the same circuit (C105) is demonstrated in Figure 9\u2014supplements 2-3 and Figure 11\u2014supplements 5-7. The implausibility of literal RPE implementation (C106-C107) is supported by citations to experiments showing learning without MBON activity. The assessment of MBON-DAN feedback evidence (C108-C109) is reasonable, and DPR's flexibility (C110) is demonstrated throughout the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The model supports backward conditioning through differential time courses of DopR1 and DopR2 responses, requiring MBON inhibition of the DAN, suggesting backward conditioning may not occur in all MB compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C117 describe backward conditioning in the model. The support for Handler et al. 2019 results (C112) is demonstrated in Figure 16 with good quantitative agreement (r=0.98). The mechanism (C113-C114) is clearly explained with mathematical detail in the methods. The requirement for MBON-DAN inhibition (C115) and prediction about compartment specificity (C116) are logical inferences. The comparison with alternative mechanisms (C117) is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The model produces unpaired conditioning through a different mechanism than backward conditioning: reinforcement without KC activation alters all KC weights, then odor presentation with MBON-driven DAN activation specifically alters weights for that odor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C124 describe unpaired conditioning. The distinction from backward conditioning (C118) is clear. The mechanism (C120-C122) is explained and differs from backward conditioning. The demonstration in Figure 12 (C123) shows the predicted effect. The prediction about generalization (C124) is a reasonable inference from the mechanism. This emergent property of the model is consistent with experimental observations (C119).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The positive feedback in the LTM microcircuit can account for second-order conditioning, potentially occurring directly in LTM without filtering through susceptible and restrained memories, consistent with observations that second-order conditioning requires strong first-order memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C129 describe second-order conditioning. The mechanism (C125-C127) follows logically from the LTM circuit structure. The prediction about direct LTM involvement (C128) is a novel inference from the model. The consistency with experimental observations (C129) provides support, though direct experimental validation of the proposed mechanism is not provided. This is a reasonable prediction requiring future testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The DPR would not produce blocking because updates are local to the synapse and do not depend on error calculations across odor identities, consistent with observed fruit fly behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C133 address blocking. The prediction that DPR doesn't produce blocking (C130) follows logically from the rule's local nature. The explanation of blocking under RPE (C131-C132) is accurate. The consistency with fly behavior (C133) is supported by appropriate citations. This is a clear prediction distinguishing DPR from RPE, though not directly tested in the presented experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The model suggests only KC\u2192MBON, MBON\u22a3DAN, MBON\u2192DAN, and DAN\u22b8MBON connections are essential, while additional known connections (KC\u2192APL, APL\u22a3KC, etc.) are acknowledged but not included, with discussion of their potential roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C142 discuss model limitations and additional connections. The claim about essential connections (C134) is supported by the model's success. The acknowledgment of omitted connections (C135-C139) is appropriate. The discussion of APL function (C140-C141) cites relevant literature. The speculation about learning in KC-APL connections (C142) is appropriately tentative. This represents honest assessment of model scope and limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "KC-KC connections might create local winner-takes-all networks forcing limited KC activity per compartment, predicting compartment-specific KC activity and enabling continuous acquisition/forgetting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C143-C146 propose a role for KC-KC connections. The anatomical observation (C143) is cited. The WTA hypothesis (C144) is speculation. The predictions (C145-C146) are supported by some cited data (Bilz et al. 2020, Ito et al. 2008) but the proposed mechanism is not tested. This is reasonable speculation requiring experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Direct KC\u2192DAN connections exist anatomically but their functional role remains unclear; the model can explain observed DAN responses to odors without requiring direct KC\u2192DAN connections, though they may enhance specificity or provide alternative RPE implementation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C156 discuss KC\u2192DAN connections. The anatomical observations (C147-C148) are well-cited. The unclear functional role (C149) is honestly stated. The experimental observations (C150) and alternative model explanation (C151-C153) are clearly presented. The claim that the model explains DAN responses without direct connections (C154) is supported by results. The speculation about potential roles (C155-C156) is appropriately tentative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "Direct DAN\u2192MBON synapses are functional and could coordinate learned responses with current reinforcement presence, or involve postsynaptic changes in learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C157-C159 discuss DAN\u2192MBON connections. The functional demonstration (C157) is cited. However, the proposed functions (C158-C159) are speculative, based on cited work but not tested in the current model. These represent reasonable hypotheses about mechanisms not included in the current model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "The incentive circuit motif could be repeated for additional opposing motivations beyond attraction/avoidance, with neurons having multiple context-dependent roles, potentially connecting to ~8 available motivations through \u03b3-KCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C160-C166 propose extensions of the model. The observation about total neuron numbers (C161) is factual. The proposals about repeated motifs (C162), multiple roles (C163), and connections to multiple motivations (C166) are speculative extensions supported by some cited work (Cohn et al. 2015) but not tested. These represent interesting hypotheses for future work rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179"
+    ],
+    "result": "Functional analogies are proposed between MB incentive circuit components and mammalian limbic system structures, with susceptible MBONs analogous to amygdala, restrained/LTM MBONs to hypothalamus, and \u03b1/\u03b2 MBONs to cingulate cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C167-C179 propose functional analogies between insect and mammalian systems. The descriptions of limbic system structure (C168-C172) are based on established literature. However, the proposed mappings (C173-C179) are entirely speculative, based on functional similarities rather than homology or direct evidence. While intellectually interesting, these analogies are not tested and represent speculation about convergent evolution of memory systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Background on insect learning and Drosophila mushroom body anatomy, including established knowledge about KC-MBON-DAN connectivity and their roles in associative learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C21 provide background information. These are well-established facts about insect behavior and Drosophila neuroanatomy, appropriately cited to previous literature. This background is necessary context for the novel work but does not constitute a result of the current study.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,223 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The authors measured XCI-skew in 1575 females from the TwinsUK cohort (age 19-99, median 61) using the HUMARA assay on whole blood DNA. XCI-skew was defined as \u226575% XCI and extreme XCI-skew as \u226591% XCI, thresholds derived from the normalized distribution and consistent with prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C42 describe the cohort characteristics and methodology. The HUMARA assay is well-established (C38-C39), sample sizes are clearly reported (C36-C37, C40), and the threshold definitions (C41-C42) are justified by comparison to previous studies. The methodology is appropriately described and validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "XCI-skew prevalence increases with age in a stepwise manner: 12% in individuals <40 years, 28% in 40-59 years, 37% in 60-69 years, and 44% in those >70 years. Extreme XCI-skew remains at 3-4% below age 60 but increases to 7% (60-69 years) and 9% (>70 years). A significant positive association between age and XCI-skew was confirmed (p=2.8\u00d710\u207b\u2079, N=1575).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49 present cross-sectional age-related findings with clear sample sizes and statistical significance. The stepwise increase pattern (C48) is supported by the data in C43-C47, and the statistical test (C49) appropriately controls for relatedness and zygosity. The results replicate known age associations with XCI-skew.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C104"
+    ],
+    "result": "Longitudinal analysis of 31 individuals over 15-17 years (median 16 years) showed that XCI-skew status persists and increases over time. All individuals with extreme XCI-skew remained extreme, 87.5% with XCI-skew remained skewed or progressed, and 28.6% with random XCI progressed to skewed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50-C53 and C104 describe longitudinal findings, but the sample size is very limited (n=31). While the data suggest persistence and progression of XCI-skew, the small sample size limits statistical power and generalizability. The authors acknowledge this limitation, and the finding warrants replication in larger cohorts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C102",
+      "C103"
+    ],
+    "result": "XCI-skew is independent of traditional markers of biological aging. No associations were found with smoking (p=0.33), obesity (p=0.88), frailty index (p=0.59), leukocyte telomere length (p=0.9), or DNAm GrimAge acceleration (p=0.22), suggesting XCI-skew is a unique biomarker.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C59-C63 report null findings with appropriate statistical tests and covariates. However, the DNAm GrimAge analysis (C63) has limited sample size (N=137 total), which the authors acknowledge may be underpowered. The conclusion that XCI-skew is independent (C64, C102) is reasonable for most markers but requires follow-up for epigenetic aging. The lack of association with smoking/obesity (C103) contradicts known risk factors for CHIP, supporting distinctness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C122",
+      "C123",
+      "C126"
+    ],
+    "result": "XCI-skew is associated with increased monocyte abundance (p=0.0038 after multiple testing correction) and myeloid lineage bias, as evidenced by associations with monocyte-to-lymphocyte ratio (MLR, p=0.019) and nominal association with neutrophil-to-lymphocyte ratio (NLR, p=0.042). The association is not believed to be causal, as monocytes represent only ~10% of white blood cells while XCI-skew represents \u226525% shift in mosaicism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 present blood cell composition findings with appropriate statistical corrections and covariates. The significant monocyte association (C67) passes multiple testing correction, while MLR (C69) is significant and NLR (C70) is nominal. The interpretation that the association is not causal (C71, C123) is logically sound based on the quantitative mismatch. The link to myeloid lineage bias (C126) is supported by prior literature (C66) and the pattern of associations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C127"
+    ],
+    "result": "XCI-skew shows no association with primary inflammaging markers CRP (p=0.41), IL-6 (p=0.41), or TNF (p=0.61), but demonstrates a strong negative association with anti-inflammatory cytokine IL-10 (p=0.0008). A nominal association with IL-1\u03b2 (p=0.02) did not survive multiple testing correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74-C78 report cytokine associations, with IL-10 showing a significant negative association (C78). However, the sample size for cytokines is very small (N=27 for cytokines, N=165 for CRP), and the authors note they could not control for cell type composition, which is a critical confounder. The IL-10 finding (C78, C127) is intriguing but requires replication with larger samples and appropriate cell type adjustment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C114",
+      "C115",
+      "C131",
+      "C132"
+    ],
+    "result": "XCI-skew is associated with increased atherosclerotic cardiovascular disease (ASCVD) risk score in cross-sectional analysis (p=0.01, N=228) after controlling for BMI, monocyte abundance, relatedness, and zygosity. This was validated in age-matched discordant twin pairs (p=0.025, n=34 pairs). Individuals with extreme XCI-skew show markedly higher proportions of high (23.5%) and intermediate (35.3%) ASCVD risk compared to random XCI (4.5% and 21.9%, respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C90 present cardiovascular risk findings with appropriate statistical methods and covariates. The cross-sectional association (C85) is strengthened by the discordant twin design (C90, C115), which controls for genetic and shared environmental factors and addresses concerns about age confounding. The effect sizes are substantial (C86-C89), and the twin validation provides strong evidence. Sample size is modest but adequate for the observed effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C105",
+      "C108",
+      "C110",
+      "C131",
+      "C133",
+      "C137",
+      "C138"
+    ],
+    "result": "In a prospective 10-year follow-up study of 1417 cancer-free individuals (median follow-up 5.65 years), XCI-skew was associated with increased probability of future cancer diagnosis (HR=1.95, 95% CI=1.16-3.28, p=0.012). Excluding hematological cancers strengthened the association (HR=2.04, p=0.009). Cancer incidence was 6.4% in XCI-skewed individuals versus 2.9% in random XCI individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 describe a prospective cancer study with appropriate Cox regression controlling for age, relatedness, and zygosity. The hazard ratios are substantial and statistically significant. The finding that excluding hematological cancers strengthens the association (C94, C110) distinguishes XCI-skew from CHIP and is a key result. The sample size is adequate (58 cancer events), though the authors note limited power for cancer-specific analyses (C108). The prospective design is a major strength.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C96",
+      "C118"
+    ],
+    "result": "In a 10-year follow-up study (41 deaths), a non-statistically significant trend toward positive association with all-cause mortality was observed (HR=1.39, 95% CI=0.75-2.58, p=0.29). The study lacked statistical power to demonstrate an association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96 and C118 appropriately report a null finding with insufficient power. The hazard ratio point estimate suggests increased risk, but the wide confidence interval and non-significant p-value indicate the study is underpowered (41 deaths). The authors correctly acknowledge this limitation and do not overinterpret the trend.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Increased concordance of XCI-skew was observed within monozygotic (MZ) twin pairs compared to dizygotic (DZ) twin pairs: 27% of MZ pairs versus 45.5% of DZ pairs were discordant for categorical XCI-skew status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C136 report twin concordance data consistent with prior studies (cited). The higher concordance in MZ twins suggests genetic influences on XCI-skew, which is biologically plausible. The sample sizes are adequate (423 MZ pairs, 257 DZ pairs), and the finding replicates previous work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C99",
+      "C101",
+      "C129",
+      "C130"
+    ],
+    "result": "Age-acquired XCI-skew captures changes to the haematopoietic stem cell population and has clinical potential as a unique biomarker of chronic disease risk. The threshold definitions (\u226575% for skewed, \u226591% for extreme) allow testing of linear associations and demonstrate that even modest levels of XCI-skew affecting >37% of females over 60 are associated with elevated ASCVD and cancer risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 and C99-C101 represent the main conclusions of the study, which are well-supported by the collective evidence from cardiovascular and cancer analyses. The threshold justification (C129-C130) is appropriate, and the clinical implications are reasonable given the high prevalence and observed associations. However, the claim of \"clinical potential\" (C34) is somewhat speculative and would require validation studies and demonstration of clinical utility beyond risk association.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "The authors hypothesize that the relationship between blood-derived XCI-skew and cancer is not causal, but rather that XCI-skew is a marker of chronic inflammation that predisposes to cancer development through increased mutagenesis and tumor microenvironment effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112 present a hypothesis rather than a demonstrated result. The hypothesis is reasonable given the blood-based measurement and the broad cancer types observed (unlike CHIP's specificity for hematological cancers). However, this remains speculative and requires mechanistic studies. The authors appropriately frame this as a hypothesis requiring follow-up work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "While some individuals with XCI-skew likely harbor CHIP mutations, XCI-skew and CHIP have distinct etiologies. Unlike CHIP, XCI-skew shows no association with smoking or telomere length, which are causal risk factors for CHIP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121 compare XCI-skew to CHIP. The inference that some XCI-skew individuals have CHIP (C119) is reasonable given prior literature (C27). The lack of association with smoking and telomere length (C121), contrasted with CHIP's causal associations (C120), provides evidence for distinct etiologies. This is an important finding that helps characterize XCI-skew as a potentially independent biomarker.",
+    "result_type": "MAJOR"
+  }
+]

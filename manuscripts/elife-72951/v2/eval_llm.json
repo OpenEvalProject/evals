@@ -1,0 +1,298 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C27",
+      "C28",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C35",
+      "C78",
+      "C79"
+    ],
+    "result": "Electrophysiological characterization revealed that 5-HT neurons exhibit strongly adapting firing with large AHPs and a characteristic voltage kink, along with a prominent A-type potassium current (IA). In contrast, SOM neurons displayed more heterogeneous excitability profiles with variable IA expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C35 and C78-C79 provide converging experimental evidence from whole-cell recordings, voltage-clamp experiments, and pharmacological manipulations. The characterization includes appropriate controls (4-AP blockade), statistical tests (Brown-Forsythe), and comparison to prior literature. The data consistently support the distinct electrophysiological profiles of these two cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C88"
+    ],
+    "result": "IA regulates spike timing in 5-HT neurons by introducing a voltage kink, increasing spike latency from hyperpolarized potentials, and increasing spike jitter in populations. These effects were validated experimentally and predict that IA regulates the gain of DRN network responses to time-varying inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C44 combine toy model predictions with experimental validation (C38-C41) including pharmacological manipulation (C40, p=3.2e-6). The model predictions were confirmed experimentally, and the population-level consequences (C42-C43) follow logically from single-cell effects. The mechanistic link between IA and network gain (C44) is well-supported by the combined modeling and experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C80",
+      "C87"
+    ],
+    "result": "A novel 'augmented GIF' (aGIF) modeling framework was developed that combines Hodgkin-Huxley realism with GIF simplicity by explicitly incorporating experimentally constrained biophysical features (IA) while maintaining parameter identifiability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C80, and C87 describe a methodological contribution validated by demonstrating that extensions to capture IA were required for accurate spike prediction in 5-HT neurons (C80, Figure 3). The framework successfully balances biophysical detail with computational tractability, as evidenced by improved model performance metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C81"
+    ],
+    "result": "GIF model analysis revealed that 5-HT neurons are distinguished by long membrane time constants and conspicuously potent adaptation mechanisms, including a previously undescribed dynamic spike threshold that contributes to spike-frequency adaptation beyond the large AHP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 and C81 are supported by systematic comparison of fitted GIF model parameters across cell types (Figure 4). The discovery of dynamic threshold contribution to adaptation (C81) is a novel finding derived from model parameter inspection. The characterization is quantitative and includes appropriate statistical comparisons across cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C82"
+    ],
+    "result": "5-HT neuron populations exhibit preferential sensitivity to sudden input changes, with transient gain substantially higher than stationary gain (ratio 3.42\u00b10.07 vs 1.89\u00b10.04 in SOM, p<0.001). This response occurs rapidly (within 100 ms) and emerges from strong spike-triggered adaptation at the single-neuron level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C63 and C82 provide population-level modeling results with appropriate statistical tests and mechanistic validation through parameter swapping experiments (C62). The causal link between single-cell adaptation and population dynamics is demonstrated by grafting adaptation parameters between cell types (Figure 5F). The quantitative characterization includes proper controls and replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C83"
+    ],
+    "result": "IA substantially regulates the gain of the transient component of DRN 5-HT output to sustained inputs, with removal of IA markedly increasing transient gain while having negligible effects on stationary gain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 and C83 demonstrate the specific role of IA through systematic manipulation of its conductance in network simulations (Figure 6A). The selective effect on transient vs. stationary components is clearly shown and mechanistically linked to IA's inactivation properties during sustained input (C89-C90). The conclusion is well-supported by the modeling data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C84",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Heterogeneous feedforward inhibition by SOM neurons implements divisive inhibition of 5-HT output, while endocannabinoid-mediated modulation (30% reduction of SOM input) increases overall DRN gain without altering the preferential encoding of input changes. Heterogeneity among GABAergic neurons is critical for divisive rather than subtractive inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C67-C71, and C84 are supported by network simulations with experimentally constrained synaptic parameters (Figure 5\u2014figure supplement 4) and systematic comparison of heterogeneous vs. homogeneous SOM populations (Figure 6E). The divisive vs. subtractive distinction is clearly demonstrated (C70), and the role of heterogeneity is validated by direct comparison. Citations to prior theoretical work (C94-C96) appropriately contextualize the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C85",
+      "C86",
+      "C106"
+    ],
+    "result": "The DRN encodes a mixture of input intensity and temporal derivative, with the derivative component dominating when input is increasing rapidly. This computation emerges from strong adaptation in 5-HT neurons and is conditional on depolarizing background input (\u226520 pA), with IA progressively suppressing derivative encoding during hyperpolarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C72-C77, C85-C86, and C106 present the central computational finding supported by ramp stimulus simulations (Figure 7). The linear relationship between peak firing rate and input slope is clearly demonstrated (C72), and the mechanistic contributions of adaptation (C74) and IA (C76) are validated through systematic parameter manipulations. The state-dependence on background input (C73) and IA engagement (C77) is well-characterized. This represents a novel computational insight into DRN function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C10"
+    ],
+    "result": "The network computation of temporal derivative encoding primarily emerged from prominent adaptation mechanisms in 5-HT neurons, including the dynamic threshold, positioning the DRN to encode input changes over short timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 synthesize the mechanistic findings (adaptation, dynamic threshold) with the computational outcome (derivative encoding). The conclusion is well-supported by the combined evidence from single-cell characterization, model parameter analysis, and population simulations. This represents the main integrative conclusion of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "The AHPs of 5-HT neurons do not reach hyperpolarized potentials sufficient to free IA from inactivation, explaining why IA remains mostly inactivated during sustained inputs and has minimal effect on stationary responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 provide a mechanistic explanation for the selective effect of IA on transient vs. stationary responses, reconciling the current findings with prior literature (Connor et al., 1977). The explanation is supported by experimental measurements of AHP amplitude (Figure 1) and IA inactivation properties (Figure 1\u2014figure supplements 6-7).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "Simulations predict that reducing IA magnitude (e.g., by noradrenergic input) enhances sensitivity to input onset while leaving stationary firing unchanged, whereas cannabinoid-mediated reduction of FFI causes a general reduction in DRN output gain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 present predictions from network simulations with appropriate citations to prior experimental work on neuromodulation (Aghajanian, 1985; Geddes et al., 2016). The predictions follow logically from the established roles of IA and FFI in the model. However, these remain computational predictions requiring experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "The model was fitted primarily to ventromedial DRN neurons, and predictions may agree qualitatively but not quantitatively with 5-HT neuron ensembles in other raphe regions given previously reported quantitative differences in excitability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 appropriately acknowledge limitations in generalizability based on prior literature (Calizo et al., 2011). This represents a reasonable caveat about the scope of the model's applicability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "Dopamine neurons share electrophysiological features with DRN 5-HT neurons (strong adaptation, prominent IA) and have been proposed to encode reward prediction errors partly through a mixture of value and its temporal derivative, suggesting adaptation may implement central RL computations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C104 draw parallels to dopamine neurons based on prior literature. While the citations support the shared electrophysiological features (C103), the connection to RL computations (C104) is speculative and marked as such in the text. This represents an interesting hypothesis but lacks direct experimental support in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105"
+    ],
+    "result": "Strong spike-triggered adaptation may optimize neural coding efficiency by filtering temporally redundant information (predictive coding), a phenomenon ubiquitous in sensory systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C105 proposes a functional interpretation supported by citations to prior work on predictive coding in sensory systems. However, this remains speculative for the DRN, as the current study does not directly test coding efficiency or information-theoretic predictions. The hypothesis is plausible but requires additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C101",
+      "C102"
+    ],
+    "result": "Background and motivation: DRN 5-HT neurons are positioned to modulate brain-wide circuits but their network computations are poorly understood. Prior work has proposed diverse roles for 5-HT in reinforcement learning and shown that 5-HT neurons can signal over multiple timescales despite slow firing rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C11-C20, C101-C102 provide appropriate background context supported by extensive citations to prior literature. These claims establish the motivation for the study and accurately represent the current state of knowledge in the field. The assessment that network computations are poorly understood (C2) is reasonable given the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C3",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Experimental methods: Whole-cell recordings were performed on genetically identified 5-HT and SOM neurons from transgenic mice (4-8 weeks old) following approved animal protocols.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C107-C109 describe the experimental approach with appropriate detail. The use of genetic identification (SERT-Cre and SOM-Cre lines) is standard and appropriate. Ethical approval is documented. These methodological claims are straightforward and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "IA is highly expressed in dendrites of cortical neurons where it may have an analogous function to its role in DRN neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C91 notes the expression of IA in cortical dendrites with appropriate citations but the proposed analogous function is speculative. While plausible, this cross-system comparison lacks direct experimental support in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Neuromodulators can dynamically reconfigure neural circuit processing, and the DRN network itself is under neuromodulatory influence from both distal and local sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 provide appropriate context about neuromodulation supported by citations to prior literature. These statements accurately represent established knowledge about neuromodulatory systems and the DRN's position within them.",
+    "result_type": "MINOR"
+  }
+]

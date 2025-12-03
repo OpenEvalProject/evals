@@ -1,0 +1,375 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "CI induces two distinct lethal phases in D. simulans embryos: an early phase (~70% lethality) immediately following fertilization and a late phase (~30% lethality) occurring after nuclear cycle 10. The late lethal phase is evidenced by a significant discrepancy between the percentage of embryos reaching blastoderm stage (28-38%) and those that hatch (2-16%). Both lethal phases are rescued by maternally supplied Wolbachia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C53 provide convergent evidence from multiple experimental approaches (fixed embryo staging, live observation, paired experiments) demonstrating two temporally distinct lethal phases. The statistical analyses (\u03c7-squared and paired t-tests with significant p-values) support the conclusion that late-stage lethality occurs independently of early lethality. Rescue crosses consistently show reduced lethality at both stages, supporting the robustness of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "CI-derived embryos that bypass early lethality develop normally through pre-blastoderm divisions (cycles 2-9) but exhibit significantly increased mitotic abnormalities during cortical divisions (cycles 10-14), including nuclear fallout (55%), anaphase bridging (33%), and disorganized nuclei (11%). These late defects are rescued by maternally supplied Wolbachia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C61 demonstrate a clear temporal pattern of defects with appropriate controls and statistical validation (Fisher's exact test, p=1.9\u00d710\u207b\u2078). The normal development through cycles 2-9 (C55: 3% abnormal) followed by increased abnormalities in cycles 10-14 (C56: 24-38% abnormal) supports the inference that late defects are not simply consequences of early division errors. The rescue data (C58, C61) further validates the CI-specific nature of these defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "CI embryos exhibit significantly increased nuclear fallout during cortical divisions (cycles 10-14), with CI embryos showing 6.6\u00b16.4 fallen nuclei per embryo compared to 1.3\u00b12.4 in wild-type (p=4.5\u00d710\u207b\u2078). Nuclear fallout occurs via detachment of nuclei from their centrosomes and is observed in both somatic nuclei and pole cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C72 provide quantitative measurements with appropriate statistical tests (Mann-Whitney) showing significant increases in nuclear fallout in CI embryos. The mechanistic insight about centrosome detachment (C71-C72) is supported by immunofluorescence data. Sample sizes are adequate (N=34-85 embryos) and the rescue cross data (C64, C67) validates the CI-specific nature of the phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Live imaging reveals that nuclear fallout in CI embryos occurs predominantly during the telophase-to-interphase transition (91% of cases) and is preceded by chromosome segregation errors (70% of fallout nuclei). Most nuclei destined to fall out enter anaphase on time (74%) or early (4%), with only 22% showing delayed anaphase entry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C79 provide detailed temporal analysis from live imaging experiments. The data clearly establish the cell cycle timing of fallout and its relationship to segregation errors. The observation that most nuclei enter anaphase on time (C77) despite subsequent fallout suggests checkpoint mechanisms may not be fully activated, though the authors appropriately note limitations in temporal resolution (C79).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Chromosome segregation defects persist in CI-derived embryos after cellularization during gastrulation, with CI embryos showing 34% segregation errors compared to 11% in wild-type (p=7.7\u00d710\u207b\u2077). Rescue crosses show partial reduction to 19% (p=8.6\u00d710\u207b\u2074 vs CI), though still elevated compared to wild-type (p=0.009).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 demonstrate that CI-induced defects continue post-cellularization with appropriate statistical validation. The incomplete rescue (C82-C83) is an interesting observation that warrants further investigation but does not undermine the main conclusion. Sample sizes are adequate (25-40 embryos, 321-687 divisions scored).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Single embryo PCR analysis reveals that 42% of CI-derived cellular blastoderms are diploid (egfp-positive) while 58% are haploid (egfp-negative). The percentage of diploid embryos correlates with egg hatch rates, indicating that haploidy due to complete paternal chromosome loss is associated with late embryonic lethality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 provide clear molecular evidence distinguishing diploid from haploid CI embryos using a paternally-derived transgene. The correlation between diploid percentage and hatch rate (C87) supports the link between haploidy and lethality. The experimental design is sound, though the authors appropriately acknowledge this confirms previous findings (C88 cites prior work).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Whole genome sequencing of individual cellular blastoderms reveals that both haploid and diploid CI-derived embryos have full euploid chromosome sets (1n or 2n respectively) with no evidence of large-scale chromosome loss or fragmentation. This indicates that late-stage CI embryos either lost all paternal chromosomes during the first division or experienced no significant chromosome loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 provide genomic evidence ruling out partial chromosome loss as an explanation for late defects. The sequencing approach examining multiple loci per chromosome arm is appropriate for detecting large-scale changes. The authors appropriately acknowledge they cannot rule out small deletions (C89), which is a reasonable limitation of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "CI-derived embryos show reduced depth of sequencing reads mapping to their genome compared to wild-type or rescue embryos, raising the possibility of intrinsic chromatin differences between CI and wild-type embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93-C94 present an interesting observation but the authors appropriately express caution (C94: \"cannot exclude how any variation in sequencing multiple samples may affect these results\"). Without additional validation or mechanistic investigation, this remains a speculative finding that requires follow-up work to determine if it reflects true biological differences or technical variation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "FISH analysis using Y chromosome probes to identify diploid embryos that escaped first division defects reveals that these diploid CI-derived gastrulating embryos still exhibit significantly increased chromosome segregation errors (15%) compared to diploid wild-type embryos (7%, p=6.7\u00d710\u207b\u2076). This demonstrates a second CI-induced defect independent of first division defects, which is also rescued by maternally supplied Wolbachia (9% in rescue, p=1.1\u00d710\u207b\u00b3 vs CI).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C100 provide the critical evidence for the main conclusion using an elegant experimental design. By using Y chromosome FISH to specifically select diploid embryos that underwent normal first division, the authors definitively show that late defects occur independently of first division errors. The statistical analyses are appropriate and sample sizes adequate (23-45 embryos, 985-1758 divisions). This is the key result supporting the paper's central claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "CI induces post-embryonic lethality, with only 69% of hatched CI eggs developing into adults compared to 95% for wild-type (p=0.008). This larval lethality is significantly reduced in rescue crosses (87%, p=0.03) and correlates with embryonic lethality strength, suggesting Wolbachia action in sperm may induce remarkably deferred defects extending into post-hatching development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C108 extend the findings to post-embryonic development with appropriate statistical validation. The correlation between embryonic and larval lethality (C107) is interesting, though the mechanistic speculation (C108) is appropriately presented as tentative. Sample sizes are adequate (137-588 hatched eggs tracked). This represents an important extension of the CI phenotype beyond embryogenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C113"
+    ],
+    "result": "The study demonstrates that Wolbachia-induced CI produces temporally distinct early and late chromosome segregation defects. Approximately one-third of CI embryos develop normally through first and pre-blastoderm divisions before exhibiting mitotic errors during mid-blastula transition and gastrulation. About 40% of late-stage CI embryos are diploid, having bypassed first division defects, yet still show increased segregation errors. Both defects are independently rescued by maternally supplied Wolbachia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This represents the synthesis of the major findings (C4-C8, C33-C37, C113). The conclusion is well-supported by multiple lines of evidence including developmental staging, molecular genotyping (PCR and sequencing), and FISH analysis. The temporal separation of defects and the demonstration that late defects occur in diploid embryos that escaped first division errors (C34-C35) provide strong support for the central claim of temporally distinct mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The authors reconcile their observation of normal pre-blastoderm development in CI embryos with previous reports of pre-blastoderm defects by proposing that embryos with severe first division defects develop slowly and were not captured in their unaged collections. The normal progression through cycles 2-9 and absence of breakage-fusion-bridge cycles indicate that late defects are not consequences of partial chromosome loss from the first division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C119 provide reasonable explanations for apparent discrepancies with prior literature. The inference about timing of fixation (C116) is logical and consistent with the experimental design. The reasoning about breakage-fusion-bridge cycles (C118) is sound and supported by established chromosome biology. This represents appropriate reconciliation of new findings with existing literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The authors argue that haploidy itself cannot explain the observed late-stage mitotic defects because (1) haploidy is not intrinsically harmful to mitotic divisions in Drosophila, (2) meiosis II proceeds accurately in haploid nuclei, and (3) downstream effects of haploidy cannot explain defects in syncytial cortical divisions that do not require zygotic transcription. Therefore, late defects are more likely due to a second temporally deferred CI-induced defect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C123 present a logical argument supported by established biological principles and appropriate citations. The reasoning effectively rules out haploidy as the primary cause of late defects, strengthening the case for a second independent CI mechanism. The argument is well-constructed and considers multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The authors propose that late CI defects arise specifically during blastoderm stage due to dramatic structural and regulatory changes at the mid-blastula transition, including heterochromatin formation, DNA replication slowing, and zygotic transcription activation. They suggest CI-induced defects may result from improper chromosome replication, drawing parallels to maternal-effect checkpoint mutants and hybrid incompatibility phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C124-C131 present mechanistic speculation that is appropriately grounded in established developmental biology (C125 supported by citations) and phenotypic similarities to known mutants (C126-C127, C130). However, these remain hypotheses without direct experimental validation in the current study. The speculation is reasonable and provides testable hypotheses for future work, but does not constitute demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The authors speculate that CI may involve epigenetic marking of chromosomes by Wolbachia in the paternal germline, potentially through DNA methylation or small RNA pathways similar to transposable element silencing. Such marks could persist through pre-cortical divisions and become disruptive during the mid-blastula transition, though not through transcriptional effects since blastoderm divisions do not require zygotic transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C132-C142 present mechanistic speculation supported by relevant citations (C133, C136-C139) but without direct experimental evidence in the current study. The authors appropriately note that DNA methylation does not appear to contribute to CI levels (C135), which somewhat undermines the methylation hypothesis. These represent reasonable hypotheses for future investigation but are not demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "The authors discuss how current toxin/antitoxin models for CI (involving CidB/CidA and CinA/CinB) do not easily explain late defects occurring after many normal divisions, since toxins would be expected to dilute over time. They propose either (1) common acute mechanisms producing defects at different times due to developmental variation, or (2) separate early and late mechanisms, possibly involving additional Wolbachia genes or epigenetic modifications by Cifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C143-C149 present important discussion of how current molecular models relate to the findings. The critique of toxin/antitoxin models (C144-C145) is logical, and the alternative hypotheses (C148-C149) are reasonable. However, these remain speculative without experimental validation. The discussion appropriately identifies limitations of current models and proposes testable alternatives.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Unlike first division errors, late CI-induced mitotic defects do not result from abnormal chromosome condensation, alignment, or metaphase exit timing. Instead, the chromosome bridging phenotype resembles embryos treated with DNA replication inhibitor aphidicolin, suggesting CI-derived blastoderm embryos may enter anaphase with incompletely replicated chromosomes. The authors conclude that any CI model must account for effects not realized until hours and many cell cycles after fertilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C153 synthesize observations from live imaging (C150 supported by Figure 4 data) with phenotypic comparisons to known perturbations (C151). The inference about incomplete replication (C152) is reasonable speculation based on phenotypic similarity, though not directly demonstrated. The final conclusion (C153) appropriately summarizes the implications of the findings for CI models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The introduction establishes the biological context of Wolbachia-induced CI, including its prevalence, transmission patterns, reproductive manipulation strategies, and known molecular and cellular mechanisms. This includes the role of CI factors (Cifs), first division defects, and previously reported late developmental abnormalities across multiple species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C31 represent established knowledge from prior literature, appropriately cited throughout. These provide essential background context for the study but do not constitute new results. The authors accurately represent prior work and identify the key unresolved question: whether late defects are consequences of first division errors or represent independent CI-induced defects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C32",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The discussion contextualizes findings within established understanding that late embryonic lethality in diplo-diploid species is widely attributed to haploid development resulting from complete paternal chromosome loss during the first division, while partial loss creates aneuploid embryos that arrest early.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C109-C112 accurately represent established knowledge from prior literature (appropriately cited). These provide important context for interpreting the current findings but represent background rather than new results. The authors use this framework to highlight the novelty of their finding that late defects also occur in diploid embryos.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C114"
+    ],
+    "result": "The authors propose two alternative mechanistic frameworks: (1) a common acute mechanism acting at both early and late developmental timepoints, or (2) separate and distinct early and late mechanisms that do not depend upon one another.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C114 presents alternative hypotheses for future investigation rather than demonstrated results. While the data support the existence of temporally distinct defects, they do not definitively distinguish between these mechanistic alternatives. This represents appropriate scientific reasoning about implications of the findings but requires additional experimental work to resolve.",
+    "result_type": "MINOR"
+  }
+]

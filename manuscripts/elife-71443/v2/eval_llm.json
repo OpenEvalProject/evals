@@ -1,0 +1,324 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "NES288-294 is a functional nuclear export sequence that maintains CMK-1 cytoplasmic localization in FLP neurons at 20\u00b0C through exportin-dependent active transport. Mutations disrupting NES288-294 (V292A/V294A or \u0394288-294) cause nuclear accumulation, while mutations in the alternative NES315-323 candidate have no effect. Leptomycin B treatment also causes nuclear translocation, confirming exportin dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C55 provide converging evidence from mutational analysis (C51-C52), pharmacological inhibition (C54), and localization data (C49-C50) that collectively demonstrate NES288-294 is the functional nuclear export sequence. The negative results with NES315-323 mutants strengthen the conclusion by ruling out alternative sequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "NLS71-78 is the major nuclear localization signal required for CMK-1 nuclear translocation upon prolonged heat exposure (28\u00b0C, 90 min), with NLS297-308 playing a minor role. These NLS elements are only engaged during prolonged thermal stimulation and do not affect baseline cytoplasmic localization at 20\u00b0C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 demonstrate through systematic mutational analysis that NLS71-78 mutations completely block (R77S) or partially impair (K71A, R74Q) nuclear translocation at 28\u00b0C, while having no effect at 20\u00b0C. The temperature-dependent engagement and differential roles of the two NLS elements are well-supported by the data in Figure 1F.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Temperature-dependent CMK-1 nuclear relocalization in FLP neurons is cell-autonomous and does not require synaptic transmission or neuropeptide signaling. CMK-1 nuclear translocation occurs normally in unc-13 and unc-31 mutants with impaired neurotransmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 are supported by data in Figure 2A showing that mutations affecting synaptic transmission (unc-13) and neuropeptide signaling (unc-31) do not prevent heat-induced CMK-1 nuclear translocation. However, the authors acknowledge they cannot rule out redundant functions or electrical synapses, which introduces minor uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Elevated intracellular Ca2+ is both necessary and sufficient for CMK-1 nuclear translocation in FLP neurons. The unc-68(dom13) gain-of-function mutation with chronically elevated Ca2+ causes nuclear accumulation at 20\u00b0C, while Ca2+ buffering with Calbindin or Parvalbumin prevents nuclear translocation at 28\u00b0C in a Ca2+-binding-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 provide bidirectional evidence: gain-of-function (C65-C66) and loss-of-function (C67-C69) manipulations of Ca2+ levels produce the predicted effects on CMK-1 localization. The control with mutant Parvalbumin (C69) strengthens the conclusion that Ca2+ binding activity is required. The data in Figures 2B-C and supplements support these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Individual mutations in L-type and N-type voltage-gated calcium channels, TRP channels, or ryanodine receptor do not significantly affect CMK-1 localization or the Ca2+ elevation caused by 60 min incubation at 28\u00b0C, suggesting redundancy or involvement of other channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 report negative results that are well-documented in Figure 2D and supplement 2B. The authors appropriately interpret these findings as suggesting either redundancy among channels or involvement of unidentified channels. The negative results are important for understanding the mechanism but do not identify the specific Ca2+ sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Ca2+/CaM binding to CMK-1 is required for nuclear translocation. The W305S mutation, which disrupts CaM binding, prevents CMK-1 nuclear translocation at 28\u00b0C and counteracts the nuclear accumulation in unc-68(dom13) mutants with elevated Ca2+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 demonstrate through the W305S mutation that CaM binding is essential for Ca2+-dependent nuclear translocation. The mutation blocks translocation both in wild-type at 28\u00b0C and in the high-calcium unc-68(dom13) background (Figure 2B), providing strong evidence for the requirement of Ca2+/CaM binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The NES masking model is rejected: Ca2+/CaM binding does not promote nuclear accumulation by masking NES288-294. The triple mutant CMK-1(V292A/V294A/W305S) remains cytoplasmic at 28\u00b0C like the W305S single mutant, demonstrating that a functional NES is dispensable when CaM binding is disrupted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 use a critical genetic test (Figure 3B) to rule out the NES masking mechanism. The logic is sound: if CaM binding masked the NES, then disrupting both should allow nuclear entry, but the triple mutant remains cytoplasmic. This negative result effectively eliminates one mechanistic hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The NLS unmasking model is supported: NLS71-78 is only engaged when Ca2+ levels are elevated and CaM is bound to CMK-1. At 20\u00b0C with low Ca2+, NLS71-78 mutations have no effect even when NES288-294 is disrupted, but in the high-Ca2+ unc-68(dom13) background, NLS71-78 mutations significantly reduce nuclear accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 provide strong support for the NLS unmasking model through epistasis analysis (Figures 3D-E). The temperature- and calcium-dependent engagement of NLS71-78 is demonstrated by its differential effects in different genetic backgrounds, supporting the model that Ca2+/CaM binding exposes this NLS.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Ca2+/CaM binding to CMK-1 increases its affinity for IMA-3 importin approximately threefold (from Kd \u2248 1.54 \u03bcM to Kd \u2248 0.45 \u03bcM) in vitro. This increased affinity requires both Ca2+ and CaM, and is mediated primarily through NLS71-78, as the affinity increase is significantly reduced in the K71A/R74Q/R77S triple mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 are supported by quantitative MST binding data (Figure 4B-C, Table 1) showing the threefold affinity increase is statistically significant and depends on both Ca2+ and CaM. The NLS71-78 mutant analysis (C88) demonstrates this sequence mediates the affinity increase. The in vitro biochemical data directly support the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "NES288-294 and NLS71-78 mutations have opposite effects on acute heat-evoked behavior: NES288-294 disruption (constitutive nuclear localization) reduces responsiveness, while NLS71-78 disruption has no effect. Loss of cmk-1 increases responsiveness, consistent with cytoplasmic CMK-1 promoting avoidance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 are supported by behavioral data in Figure 5B showing differential effects of the mutations. The results are internally consistent with the localization data and the proposed dual roles of CMK-1 in different compartments. The cell-autonomous rescue experiments (C99) further support the FLP-specific function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "NLS71-78-dependent CMK-1 nuclear localization is essential for heat adaptation and desensitization. Wild-type animals show desensitization after 1 hr at 28\u00b0C (shifting toward higher temperatures in thermogradients), but this adaptation is impaired in cmk-1(ok287) null mutants and cmk-1(syb1435) R77S NLS mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 demonstrate the physiological importance of CMK-1 nuclear translocation using thermogradient assays (Figure 5C). The NLS mutant specifically impairs adaptation without affecting naive behavior, directly linking nuclear localization to the desensitization process. The data support the functional significance of the translocation mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "NES288-294-controlled cytoplasmic retention of CMK-1 in FLP promotes reversal behavior by upregulating FLP outputs. Optogenetic activation of FLP produces fewer reversals in NES mutants with constitutive nuclear localization, while NLS mutants respond normally. Cell-specific rescue with the mec-3 promoter confirms FLP-autonomous function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C100 use optogenetic analysis to isolate FLP-specific effects (Figure 5D-E). The cell-specific rescue (C99) is critical for demonstrating that the NES mutation acts within FLP rather than in downstream neurons. The data support the conclusion that cytoplasmic CMK-1 promotes FLP output.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Heat adaptation dampens FLP pathway responses downstream of thermal sensitivity, and this adaptation requires NLS71-78-dependent nuclear accumulation. Prolonged heat treatment (90 min at 28\u00b0C) reduces optogenetically-evoked reversals in wild-type but not in NLS71-78 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C103 demonstrate that adaptation occurs downstream of FLP thermosensation by using optogenetic stimulation (Figure 5F). The NLS mutant blocks this adaptation, directly linking nuclear CMK-1 to the dampening of pathway responses. This is a key result connecting molecular mechanism to behavioral plasticity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "CMK-1 localization in AFD neurons shows an opposite temperature dependence compared to FLP: CMK-1 is nuclear at 15\u00b0C and cytoplasmic at 25\u00b0C, the inverse of the pattern in FLP where high temperature promotes nuclear localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 are supported by clear localization data in Figures 6A-B showing opposite temperature effects in AFD versus FLP. This is a striking and important finding that demonstrates the mechanism can encode opposite signals in different neuron types, as stated in the abstract (C5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C128"
+    ],
+    "result": "Baseline intracellular calcium levels in AFD inversely correlate with growth temperature: animals grown at 15\u00b0C have significantly higher resting Ca2+ (YFP/CFP ratio = 1.09) than those at 25\u00b0C (ratio = 0.93), opposite to the pattern in FLP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 and C128 report a novel finding about long-term calcium regulation in AFD using cameleon imaging (Figure 6D-E). The authors acknowledge this was previously unknown (C127) and provide quantitative data showing the inverse correlation. The magnitude of the difference (\u0394R \u2248 0.16) is comparable to acute thermal responses, supporting its physiological significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The same Ca2+/CaM-dependent mechanism involving NLS71-78, NES288-294, and IMA-3 importin controls CMK-1 localization in both FLP and AFD neurons. Mutations in W305S (CaM binding), NLS71-78, and NES288-294 have similar effects on CMK-1 localization in AFD as in FLP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C114 demonstrate the generality of the mechanism by showing that the same mutations affect CMK-1 localization in AFD (Figure 6B-C). The unc-68(dom13) experiments and ima-3 expression data (C113) further support that the same molecular machinery operates in both neuron types, despite opposite calcium responses to temperature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Normal NES288-294- and NLS71-78-dependent CMK-1 localization control is essential for AFD function, including thermotaxis behavior and temperature-dependent gcy-8 gene expression. Both NLS and NES mutations abolish the growth-temperature effect on gcy-8 transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C120 demonstrate functional consequences of disrupted CMK-1 localization in AFD through thermotaxis assays (Figure 6G) and gcy-8 reporter analysis (Figure 6H-I). However, the interpretation is complicated: both NLS and NES mutations produce similar effects on gene expression despite having opposite effects on localization, suggesting dynamic shuttling rather than static localization may be important.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The proposed mechanism for CMK-1 localization control involves three key features: (1) functional NLS71-78 and NES288-294 sequences recognized by importins and exportins, (2) Ca2+/CaM binding that increases IMA-3 affinity threefold and unmasks NLS71-78, and (3) long-term modulation of steady-state Ca2+ levels producing slow redistribution kinetics (90 min) matching sensory adaptation timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4 and C121-C125 synthesize the mechanistic model supported by the collective data. The three-part mechanism is well-supported by mutational analysis (NLS/NES), biochemical data (MST binding), calcium manipulation experiments, and kinetics measurements. The slow kinetics (C4) matching adaptation timescales is an important feature supported by Figure 1C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The CMK-1 nuclear translocation mechanism enables encoding of opposite nuclear signals in neuron types with opposite calcium responses (FLP vs AFD) and is essential for experience-dependent behavioral plasticity and gene transcription control in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 represent the major conclusions of the paper, integrating findings from FLP and AFD. The opposite calcium responses (C106, C108) coupled with the same molecular mechanism produce opposite CMK-1 localization patterns. Behavioral (C93-C96, C101-C103) and transcriptional (C117-C119) data demonstrate in vivo functional importance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C126",
+      "C129",
+      "C130"
+    ],
+    "result": "The CMK-1 localization system filters out short-lasting calcium peaks to reflect global changes over longer timescales, controlling the intracellular locus of CaM kinase signaling on time frames longer than kinase autoinhibitory control. AFD calcium responses include both short-term responses to acute thermal change and a newly described resting calcium drift component with opposite temperature effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126, C129-C130 present interpretive conclusions about the functional logic of the system. The slow kinetics (90 min) support the filtering hypothesis (C126), though this remains somewhat speculative. The dual timescale calcium responses in AFD (C129) are well-supported by the imaging data showing both acute responses and long-term baseline differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C131",
+      "C132"
+    ],
+    "result": "CMK-1 is the C. elegans ortholog of mammalian CaMKI/IV, which are conserved regulators of adaptable behaviors. Similar mechanisms may exist in other organisms and sensory modalities, particularly in tonically signaling sensory neurons subject to long-term calcium changes, due to the high conservation of Ca2+ signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C1 and C8 state established facts about CMK-1/CaMKI/IV conservation. Claims C9, C131-C132 are speculative extrapolations about potential conservation of the mechanism in other systems. While the speculation is reasonable given the conservation of the proteins and Ca2+ signaling, no direct evidence is provided for these mechanisms in other organisms or sensory modalities.",
+    "result_type": "MINOR"
+  }
+]

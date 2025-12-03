@@ -1,0 +1,309 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C5"
+    ],
+    "result": "The study utilized validated cell models expressing fluorescently-tagged keratin proteins. MDCK cells stably transfected with YFP-tagged keratin 8 showed comparable amounts of tagged and endogenous keratin 8 (C1), and a keratin 8-YFP knock-in mouse line expressing only tagged keratin 8 was used for in vivo analysis (C5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C1 is supported by immunoblot data (Figure 1\u2014figure supplement 1) showing comparable expression levels. C5 describes a previously characterized mouse model. Both claims establish the validity of the experimental systems used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "TSOAX software was successfully adapted for segmentation of keratin networks in entire cells, with visual validation showing high overlap between fluorescence and derived vertex positions (C6, C7). However, TSOAX snakes were not consistently separated at filament nodes (C87), necessitating development of KerNet software (C88) to create accurate node-segment network representations (C89).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological development is well-documented with visual validation (C6, Figure 1) and acknowledgment of TSOAX limitations (C87) leading to KerNet development (C88, C89). The combined approach is demonstrated to produce accurate numerical representations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "3D rendering revealed distinct keratin network architectures in different cell types. MDCK cells showed distinguishable apical and basal domains with thicker basal bundles (C8, C9). HaCaT cells were extremely flat without clearly separated apical/basal networks but with prominent parallel filament bundles (C10, C11). RPE cells had less dense networks with thicker apical perinuclear filaments (C12, C13).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These qualitative observations are supported by 3D renderings (Videos 2-4, Figure 2) and are consistent with subsequent quantitative analyses of filament properties. The descriptions represent direct observations from validated segmentation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Filament brightness analysis revealed cell-type-specific bundling patterns. MDCK cells showed a near-Gaussian distribution of medium brightness (C14), while thin filaments predominated in HaCaT and RPE cells (C15), most abundantly in HaCaT (C16). Thin filaments were numerous in the cell periphery across all cell types (C17), potentially due to increased de novo filament formation in these regions (C18).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 are directly supported by quantitative histograms (Figure 3A-C) and brightness maps (Figure 3D-F). C18 provides a mechanistic interpretation supported by citations to prior work on filament formation dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Quantitative analysis of segment properties revealed significant differences between cell types. HaCaT cells had significantly more segments than MDCK or RPE cells (C19). Average segment lengths varied modestly: shortest in MDCK (0.80\u00b10.04 \u00b5m, C20), longest in RPE (0.88\u00b10.05 \u00b5m, C21), intermediate in HaCaT (0.83\u00b10.13 \u00b5m, C22). Total filament length per cell was similar in MDCK (1.63\u00b10.41 mm, C23) and RPE (1.57\u00b10.48 mm), but more than twice longer in HaCaT cells (4.40\u00b11.53 mm, C24).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All claims are supported by quantitative measurements from segmented networks shown in Figure 4A-C with statistical analysis. The measurements are internally consistent and show clear cell-type-specific differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Cell volume measurements and filament density calculations revealed that while cell volumes differed significantly (MDCK: 4.65\u00b11.13 \u00b5m\u00b3, HaCaT: 9.16\u00b16.10 \u00b5m\u00b3, RPE: 2.73\u00b10.95 \u00b5m\u00b3, C25), filament density was comparable in HaCaT (604.82\u00b1304.20 \u00b5m/\u00b5m\u00b3) and RPE cells (585.60\u00b163.97 \u00b5m/\u00b5m\u00b3, C26), but considerably lower in MDCK cells (355.24\u00b156.49 \u00b5m/\u00b5m\u00b3, C27).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by measurements shown in Figure 4\u2014figure supplement 1A and Figure 4D. The density calculations appropriately normalize for cell volume differences, revealing meaningful biological differences in network organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Extrapolation from measured filament lengths to the human body scale suggests ~600,000 km of epidermal keratin filament bundles (C28) and ~1.14\u00d710^7 km of single keratin filaments (C29) in an individual human, based on ~0.14\u00d710^12 epidermal cells (C79), mass per length of 25 kDa/nm (C80), and bundling factor of 19 (C81).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the calculation is mathematically correct given the cited parameters (C79-C81 from literature), the extrapolation assumes HaCaT cells are representative of all epidermal cells and that in vitro measurements apply to in vivo conditions. These assumptions are not validated and introduce substantial uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Keratin content per cell was estimated using two methods. For HaCaT cells, calculations yielded 3.47 pg (C30) or ~4.3 pg (C31). For MDCK cells: 1.3 or 1.4 pg (C32), and for RPE cells: 1.2 or 1.4 pg (C33). Calculations used structural parameters including tetramer length (44 nm, C82), composition (C83), and protofilament number (~6, C84). These estimates are lower than the previously reported 8.07\u00b11.88 pg for murine basal keratinocytes (C85).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The calculations are based on measured filament lengths combined with well-established structural parameters from literature (C82-C84). Two independent calculation methods yield similar results, providing internal validation. The comparison to prior estimates (C85) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Analysis of keratin filament branching revealed that Y-shaped organization (three segments per node) was the most frequent configuration (~60%, C34), followed by X-shaped arrangement (four segments per node, ~30%, C35), with higher degrees of branching occurring rarely (~10%, C36).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are directly supported by quantitative analysis shown in Figure 5. The consistent pattern across cell types suggests fundamental constraints on keratin network organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Filament curvature analysis showed that distance/length ratios were highest in MDCK (0.92\u00b10.09) and HaCaT (0.92\u00b10.08), significantly higher than RPE cells (0.90\u00b10.10), indicating less straight filaments in RPE (C37, C38). No correlation was found between filament bundle thickness and curvature (C40). Calculated persistence length (~2.6 \u00b5m) did not differ significantly between cell types (C41) and was higher than experimentally determined values for single filaments (C42).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 are supported by measurements in Figure 6A-B. C40 is supported by Pearson correlation analysis. C41 is shown in Figure 4\u2014figure supplement 1B. C42 appropriately compares to literature values, with the difference expected for network-embedded versus free filaments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Segment orientation analysis revealed that azimuth distribution was relatively even in MDCK and RPE cells but not in HaCaT cells (C43). All cell types showed uneven vertical orientation distribution, indicating preferential horizontal orientation (C44). Quantitative analysis confirmed that azimuth distribution in HaCaT was more oriented than in MDCK or RPE cells (C45), and elevation orientation was more directed in MDCK and HaCaT cells than in RPE cells (C46).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by histograms in Figure 7A-F and quantitative analysis in Figure 7G-H. The measurements are consistent across multiple cells per type and reveal meaningful differences in network organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Radial histogram analysis showed that MDCK and RPE cells had homogenous horizontal segment orientation while HaCaT cells were more polarized (C47). In the vertical direction, horizontally oriented segments predominated in MDCK and HaCaT cells while RPE segments were more uniformly oriented (C48). Sum vector analysis indicated isotropic networks in MDCK and RPE cells (small vectors, C49) but higher anisotropy in HaCaT cells (longer vectors, C50).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by radial histograms (Figure 8A-F) and sum vector analysis (Figure 8G-K). The consistent patterns across multiple analytical approaches strengthen the conclusions about network organization differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C69",
+      "C70"
+    ],
+    "result": "Integration of curvature and orientation data led to mechanical interpretations: straight segments were almost completely absent, suggesting overall negative tension in keratin networks (C65). Lack of correlation between thickness and curvature suggests loose connections between 10 nm filaments in bundles (C66). HaCaT cells were inferred to be subjected to mechanical strain based on uneven azimuth distribution and large sum vectors (C69), while MDCK and RPE cells experienced little mechanical strain (C70).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While C65 is supported by curvature measurements (Figure 6), the mechanical interpretations (C66, C69, C70) are inferences based on the data rather than direct measurements. The interpretations are plausible and consistent with cited literature on keratin mechanics, but lack direct experimental validation of the proposed mechanical states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The authors propose several mechanistic interpretations: uniform radial orientation indicates homogenous mechanical forces (C67), while preferential orientation suggests alignment in response to mechanical cues (C68). Variation in filament bundling may reflect local force balance differences (C71) or network reorganization propensity (C72). Mesh size may be determined by intrinsic filament properties (C73), with self-regulatory mechanisms controlling mesh dynamics (C74). Y-shaped branching may relate to electrostatic/hydrophobic bundling mechanisms (C75), while X-shaped intersections may involve disulfide bonds (C76).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C67-C68, C71-C76) are explicitly speculative interpretations of the quantitative data. While they are plausible and supported by citations to relevant literature, they represent hypotheses rather than demonstrated results. The speculative nature is appropriately indicated by language like 'may be' and 'suggests.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "This work provides the first experimentally derived numerical 3D representations of entire keratin networks in eukaryotic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim is supported by the comprehensive methodology (TSOAX + KerNet) and extensive validation showing accurate 3D segmentation of complete keratin networks in multiple cell types. The novelty claim is supported by the literature review indicating lack of comparable tools for intermediate filaments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C60",
+      "C61",
+      "C62",
+      "C64",
+      "C77",
+      "C78",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The manuscript provides extensive background on keratin biology, including cell-type-specific characteristics (C2-C4), keratin filament properties (C51-C53), factors affecting network organization (C54-C56), keratin gene expression (C60-C61), mechanical functions (C62, C64), and evidence for filament branching (C77-C78). General cytoskeletal context is also provided (C98-C100).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge from the literature, appropriately cited throughout. They provide necessary context for interpreting the novel findings but are not original results of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C86",
+      "C96",
+      "C97"
+    ],
+    "result": "The manuscript describes the computational tools used and gaps in the field. TSOAX is an implementation of SOAX (C57), developed from SOAC (C58), previously applied to actin networks (C59). TSOAX provides density information (C86). While tools exist for actin and microtubules (C96), comprehensive tools for intermediate filament mapping were lacking (C97).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately describe the software tools and state of the field, supported by appropriate citations. They establish the methodological foundation and justify the need for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Immersive visualization environments improve spatial judgment and task performance during visual analysis (C90) through enlarged field of regard reducing clutter (C91), stereoscopy providing depth cues (C92), and head tracking providing motion parallax (C93).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims about immersive visualization benefits are supported by citations (Cruz-Neira et al., 1993; Laha et al., 2013) and represent established knowledge about VR technology applied to this study's data visualization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "The calculated persistence length (~2.6 \u00b5m) is low compared to actin filaments (~10 \u00b5m) and microtubules (~5000 \u00b5m).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This comparison is supported by literature values for other cytoskeletal filaments and highlights the relative flexibility of keratin networks. The comparison provides important biological context for the measured values.",
+    "result_type": "MINOR"
+  }
+]

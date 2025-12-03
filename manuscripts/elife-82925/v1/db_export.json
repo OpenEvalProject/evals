@@ -1,0 +1,1787 @@
+{
+  "submission": {
+    "id": "b2f1c3a0-dc35-453c-a07e-9e015cc34154",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T20:16:54.088156Z",
+    "updated_at": "2025-12-03T20:16:54.088156Z"
+  },
+  "content": [
+    {
+      "id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "submission_id": "b2f1c3a0-dc35-453c-a07e-9e015cc34154",
+      "content_type": "manuscript",
+      "content_text": "# Exploring the role of the outer subventricular zone during cortical folding through a physics-based model\n\n## Authors\n\n- Mohammad Saeed Zarzor<sup>1</sup> ([ORCID: 0000-0002-3005-6115](https://orcid.org/0000-0002-3005-6115))\n- Ingmar Blumcke<sup>2</sup>\n- Silvia Budday<sup>1</sup> ([ORCID: 0000-0002-7072-8174](https://orcid.org/0000-0002-7072-8174)) \u2020\n\n### Affiliations\n\n1. Friedrich-Alexander-Universit\u00e4t Erlangen-N\u00fcrnberg, Institute of Applied Mechanics Erlangen Germany ([ROR:00f7hpc57](https://ror.org/00f7hpc57))\n2. University Hospitals Erlangen, Institute of Neuropathology Erlangen Germany ([ROR:0030f2a11](https://ror.org/0030f2a11))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe human brain has a highly complex structure both on the microscopic and on the macroscopic scales. Increasing evidence has suggested the role of mechanical forces for cortical folding \u2013 a classical hallmark of the human brain. However, the link between cellular processes at the microscale and mechanical forces at the macroscale remains insufficiently understood. Recent findings suggest that an additional proliferating zone, the outer subventricular zone (OSVZ), is decisive for the particular size and complexity of the human cortex. To better understand how the OSVZ affects cortical folding, we establish a multifield computational model that couples cell proliferation in different zones and migration at the cell scale with growth and cortical folding at the organ scale by combining an advection-diffusion model with the theory of finite growth. We validate our model based on data from histologically stained sections of the human fetal brain and predict 3D pattern formation. Finally, we address open questions regarding the role of the OSVZ for the formation of cortical folds. The presented framework not only improves our understanding of human brain development, but could eventually help diagnose and treat neuronal disorders arising from disruptions in cellular development and associated malformations of cortical development.\n\n## Introduction\n\nThe brain is one of the most fascinating organs in the human body. Its complex structure on both micro- and macroscopic scales closely correlates with the unique cognitive abilities of humans. Cortical folding is one of the most important features of the human brain. Still, compared to other mammals, the human brain is neither the largest nor the most folded brain. However, relative to its size, it has the largest number of cortical neurons that connect with billions of neuronal synapses (Herculano-Houzel, 2009). This fact attracted the attention of neuroscientists over the past few years to explore the source of these cells and how they develop in the early stages of brain development.\n\nThe number of brain cells is determined in utero through the proliferation process. Previous studies on different lissencephalic species, such as mice, have shown that cell division in the brain is confined to a small region near the cerebral ventricles (Hansen et al., 2010). However, in gyrencephalic species, this seems to be different. Recent findings show that the human brain, for example, is characterized by two proliferation zones with two different types of progenitor cells. Both zones produce neurons that later migrate towards the outer brain surface and form the cortex Lui et al., 2011; Pebworth et al., 2021.\n\nIn rodents, progenitor cells around the ventricular zone (VZ) generate intermediate progenitor cells as their daughters, which accumulate above the VZ and form a new layer called the subventricular zone (Noctor et al., 2002). In humans, there is an additional outer layer of the subventricular zone, often referred to as outer subventricular zone (OSVZ) (Hansen et al., 2010; Lui et al., 2011; Noctor et al., 2007). This zone was first discovered in the monkey brain by Colette Dehay and her colleagues (Smart et al., 2002), and confirmed in the human brain by several following studies (Huttner and Kosodo, 2005). The OSVZ seems to play a significant role in the proliferation process and affects the size and complexity of the human cortex. The evidence for this allegation is the wave of cortical neurogenesis that coincides with the cell division in the OSVZ (Lukaszewicz et al., 2005). At the macroscopic scale, the high proliferation in the OSVZ coincides with a significant tangential expansion of the cortical layers. The latter is an essential factor for the formation of cortical folds (Reillo et al., 2011). Still, it remains unknown, how exactly this proliferation process in the OSVZ affects gyrification of the forming cortex. Different approaches have been used to understand the relation between cellular mechanisms at the microscopic scale and cortical development at the macroscopic scale. Genetic analyses and experimental studies using cell culture models and brain organoids have given first valuable insights concerning the source of cells and their behavior (Hansen et al., 2010). Here, we intend to complement these studies by using a numerical approach to bridge the scales from the behavior of different progenitor cell types at the cell scale to the emergence of cortical folds at the tissue or organ scale.\n\nFrom a mechanics point of view, forces that are generated due to cellular processes may act as a link to understand the underlying mechanisms behind cortical folding (Budday et al., 2015b). Many previous studies tried to explain normal and abnormal cortical folding either from a purely biological or mechanical perspective (Tallinen et al., 2014; Razavi et al., 2015). However, it will not be possible to capture the folding mechanism without considering both perspectives at the same time (de Rooij and Kuhl, 2018; Zarzor et al., 2021; Wang et al., 2022). In other words, to fully understand the physiological and pathological mechanisms underlying cortical folding in the developing human brain, we need to study the coupling between cellular processes and mechanical forces \u2013 to eventually assess how disruption of cellular processes affect the folding pattern and lead to malformations of cortical development (Guerrini et al., 2008; Blumcke et al., 2021; Llinares-Benadero and Borrell, 2019).\n\nTo fill this knowledge gap, we establish a two-field computational model that accounts for both proliferating zones in the human brain, the VZ and OSVZ. The first field in the model describes the growth and deformation of brain tissue based on the theory of finite growth (Rodriguez et al., 1994; G\u00f6ktepe et al., 2010). The second field describes the cellular processes occurring during human brain development, where we use an advection-diffusion equation to mimic the proliferation and migration in the subcortex and neuronal connectivity in the cortex (de Rooij and Kuhl, 2018; Zarzor et al., 2021). We add two source terms to consider the division in different zones. We validate our model through a comparison of the simulation results with histologically stained sections of the human fetal brain and address unresolved questions regarding the role of the OSVZ for cortical folding.\n\n## Cellular processes during brain development\n\nThe central cellular unit that plays a critical role in essential processes of brain development is a type of progenitor cells called radial glial cells. In the early stage of brain development, when neurogenesis begins, neuroepithelial cells transform into radial glial cells (Noctor et al., 2007). Around gestational week 5, these cells locate near cerebral ventricles, in the VZ, where they undergo interkinetic nuclear migration. The associated symmetric division behavior leads to a significant increase in the number of radial glial cells and results in both increased thickness and surface area of the VZ (Blows, 2003; Fish et al., 2008; Bystron et al., 2008). Subsequently, the cells switch to an asymmetric division behavior and generate intermediate progenitor cells (Noctor et al., 2004). The latter migrate to the subventricular zone, where they proliferate and produce neurons, as illustrated in Figure 1 (Noctor et al., 2007; Pebworth et al., 2021). Ultimately, the majority of cortical neurons are produced by intermediate progenitor cells (Lui et al., 2011; Lib\u00e9-Philippot and Vanderhaeghen, 2021).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/82925/elife-82925-fig1-v1.jpg)\n\n**Figure 1.:** In the early stage of development, the repetitive division of radial glial cells in the ventricular zone (VZ) significantly increases the total number of brain cells. The newly born intermediate progenitor cells accumulate above the VZ and form a new layer called the inner subventricular zone. The outer radial glial cells (ORGCs) that are produced around gestational week 11 form a new layer called the outer subventricular zone (OSVZ). The neurons generated from progenitor cells migrate along radial glial cell fibers towards the cortex. Around gestational week 28, the migration process is almost finished, and the radial glial cells switch to produce different types of glial cells like astrocytes and oligodendrocytes.\n\nAccording to the radial unit hypothesis proposed by Pasko Rakic over 30 years ago, the radial glial cell fibers organize the migration process, which starts around gestational week 6 (Nonaka-Kinoshita et al., 2013). He postulated that these fibers form a scaffold to guide neurons during their migration from the proliferating zones to their final destination in the cortex, which forms the outer brain surface (Rakic, 1988; Lui et al., 2011). In gyrencephalic species, those fibers have a characteristic fan-like distribution (Borrell and G\u00f6tz, 2014; Nonaka-Kinoshita et al., 2013). However, it is still under debate whether this unique distribution is the cause or rather the result of cortical folding. Our recent computational analyses support the latter, i.e., that it is the result of cortical folding (Zarzor et al., 2021). The migration process synchronizes with a radial expansion of all brain layers. Still, the VZ does not expand remarkably as the intermediate progenitor cells move outwards to the subventricular zone. The migrated neurons finally organize themselves in the six-layered cortex in an inside-out sequence, where the early-born neurons occupy the inner layers (Gilmore and Herrup, 1997). Until gestational week 23, the outer brain surface is still smooth, although the bottom four layers of the cortex are already filled with neurons (Shinmyo et al., 2017). The first folds appear between gestational weeks 20 and 28, as the cortical layer significantly expands tangentially (Budday et al., 2015b; Habas et al., 2012). Importantly, at around gestational week 25, the cortical neuronal connectivity emerges and comes along with the horizontal elongation of neuronal dendrites (Takahashi et al., 2012).\n\nWhile the processes summarized above are common among mammals, the human brain has some specific features that play a significant role in increasing the number of cortical neurons, and enhancing the complexity of cortical folds (Lib\u00e9-Philippot and Vanderhaeghen, 2021). At the beginning of the second trimester, around gestational week 11, the original radial glial cells switch from producing intermediate progenitor cells to producing a special kind of cells that is found in all gyrencephalic species but is enriched in the human brain. The newly generated cells are similar to the radial glial cells in terms of shape and function, but unlike the original radial glial cells, they migrate to the outer layer of the subventricular zone, referred to as OSVZ, after they are born. Therefore, they are called outer radial glial cells (ORGCs) (Lui et al., 2011; Fietz et al., 2010; Hansen et al., 2010; Reillo et al., 2011; Nonaka-Kinoshita et al., 2013). We would like to note that some literature refers to this type of cells as basal radial glial cells. While the original radial glial cells have a bipolar morphology with two processes \u2013 one extending to the cerebral ventricle and one to the outer cortical surface \u2013 the ORGCs have a distinct unipolar structure with only a single process extending to the outer cortical surface (Hansen et al., 2010; Betizeau et al., 2013; Reillo et al., 2011; Nonaka-Kinoshita et al., 2013).\n\nThe OSVZ shows a significantly more pronounced radial expansion compared to the inner subventricular zone and VZ between gestational weeks 11.5 and 32. The immediate reason causing this difference is the characteristic division behavior of ORGCs: they translocate rapidly in radial direction before they divide, which scientists have referred to as \u2018mitotic small translocation (MST)\u2019 (Fietz et al., 2010). Importantly, the MST behavior pushes the boundary of the OSVZ outward, which increases its capacity to produce new neurons. The intermediate progenitor cells have enough space to undergo multiple rounds of division before producing neurons, which increases the overall number of generated neurons (Kriegstein et al., 2006; Lui et al., 2011).\n\nThe ORGCs, like radial glial cells, play an important role in the proliferation process: they divide symmetrically and asymmetrically to produce further ORGCs and intermediate progenitor cells (Lib\u00e9-Philippot and Vanderhaeghen, 2021). Intermediate progenitor cells divide to generate a pair of neurons (Lui et al., 2011). According to previous studies, 40% of produced neurons are generated by ORGCs at gestational week 13, but this ratio increases to 60% by gestational week 14, and exceeds 75% by gestational week 15.5. Then, after gestational week 17, the ORGCs become the only source of cortical neurons in the upper cortical layers (Hansen et al., 2010). Besides their role in increasing the number of neurons, the ORGCs generate additional scaffolds that elongate to the outer brain surface and serve as paths for neuronal migration (Llinares-Benadero and Borrell, 2019; Nonaka-Kinoshita et al., 2013). Compared to other mammals, the neurogenesis of the human cortex can thus be divided into two main stages. The first stage is characterized by migration along a continuous scaffold consisting of radial glial cell fibers, which run from the ventricular surface to the outer cortical layer around gestational week 15. During the second stage, the migration path switches to a discontinuous form. After gestational week 17, the radial glial cell fibers run from the ventricular surface to the inner subventricular zone, while ORGC fibers run from the OSVZ to the outer brain surface, as indicated in Figure 1 (Nowakowski et al., 2016). Consequently, migrating neurons follow a sinuous path through numerous radial fibers before they reach its final location in the cortex (Lui et al., 2011). The additional scaffolds formed by ORGC fibers are not only important for neuronal migration, but also for the tangential expansion of the cortex. Previous studies show that a reduced number of ORGCs lead to reduced tangential expansion. In these cases, the cortex is less folded or even lissencephalic (Poluch and Juliano, 2015). In contrast, increasing the number of ORGCs leads to more excessive folding (Florio et al., 2017; Borrell, 2018). Still, it remains unknown whether these effects are a result of the specific proliferation behavior of ORGCs or the associated scaffold of ORGC fibers. What is known, though, is that the existence of ORGCs is a necessary but not sufficient condition for cortical folding (Llinares-Benadero and Borrell, 2019).\n\nAround gestational week 28, the migrating neurons occupy the first (top) cortical layer, while the migration and proliferation processes come to an end. After finishing their role during the neurogenesis stage, radial glial cells and ORGCs switch to produce different types of glial cells, e.g., astrocytes and oligodendrocytes (Schmechel and Rakic, 1979). Also, radial glial cells may later convert into ependymal cells that locate around the cerebral ventricles. The oligodendrocytes form myelin sheaths around neuronal axons, wherefore the subcortical layer gains its characteristic white color.\n\n## Model\n\nTo numerically study the effect of the VZ and the OSVZ on the resulting folding pattern, we simulate human brain development by using the finite element method. The influence of various factors on the emergence of cortical folds can be best shown on a simple two-dimensional (2D) quarter-circular geometry (Darayi et al., 2022), as illustrated in Figure 2A. In addition, we also investigate the folding evolution on a simplified half-sphere three-dimensional (3D) geometry. In the following, we introduce the main equations describing the coupling between cellular mechanisms in different proliferating zones and cortical folding, which we solve numerically.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/82925/elife-82925-fig2-v1.jpg)\n\n**Figure 2.:** The reference configuration $\u212c_{0}$ represents the initial state of the brain at gestational week (GW) 11. The spatial configuration $\u212c_{t}$ represents the state of the brain at any time $t$ during development. The stress-free (intermediate) growth configuration $\u212c_{g}$ is inserted between reference and spatial configurations. (A) Simulation domain representing a part of the human brain\u2019s frontal lobe. (B) Distribution of model parameters ($r_{1}^{c},r_{2}^{c},v,andd^{cc}$) along the brain\u2019s radial direction ri from the ventricular surface to the outer cortical surface.\n\n### Kinematics\n\nTo mathematically describe brain growth, we use the theory of nonlinear continuum mechanics supplemented by the theory of finite growth (Rodriguez et al., 1994; G\u00f6ktepe et al., 2010). The initial state of the brain at an early stage of development, around gestational week 11, is represented by the reference configuration $\u212c_{0}$. The state of the brain at time $t$ later during development is represented by the spatial configuration $B_{t}$. The deformation map $x=\\phi(X,t)$ maps a reference point $X\\inB_{0}\u2282R^{3}$ to its new position $x\\inB_{t}\u2282R^{3}$ at a specific time $t$, as illustrated in Figure 2. The derivative of the deformation map with respect to reference point position vector is called deformation gradient $F=\u2207_{X}\\phi$. The local volume change of a volume element is described by the Jacobian $J=detF$.\n\nFollowing the theory of finite growth (Rodriguez et al., 1994; G\u00f6ktepe et al., 2010), we introduce a stress-free configuration between the reference and spatial configuration, the growth configuration $B_{g}$. Accordingly, the deformation gradient is multiplicatively decomposed into an elastic deformation tensor $F^{e}$ and a growth tensor $F^{g}$, such that,\n\n$$\nF=F^{e}\u22c5F^{g}.\n$$\n\nThe elastic deformation tensor describes the purely elastic deformation of the brain under the effect of external forces or forces generated internally to preserve tissue continuity. On the other hand, the growth tensor controls the amount and directions of unconstrained expansion. We note that the elastic deformation tensor is reversible, while the growth tensor is not.\n\nTo not only predict brain growth but also its relation to cellular processes during brain development, we introduce the spatial cell density $c(x,t)$ as an additional scalar independent field that depends on the spatial point position and time. It represents the number of neurons per unit area (de Rooij and Kuhl, 2018) in 2D and per unit volume in 3D. The corresponding balance equation describes cell division \u2013 resulting in newborn cells \u2013 through appropriate source terms and cell migration \u2013 the directed movement of neurons \u2013 through appropriate flux terms.\n\nFor the two unknown fields, the deformation and the cell density, we introduce not only balance but also constitutive equations in the following that then allow us to compute their evolution in space and time through numerical simulations. We explain how we mathematically describe the mechanical (growth) problem and cellular processes as well as how those are linked to capture feedback mechanisms between cellular processes, mechanics, and growth.\n\n### Mechanical problem\n\nTo govern the mechanical problem, we use the balance of linear momentum given in the spatial configuration $B_{t}$,\n\n$$\n\u2207_{x}\u22c5\\sigma=0with\\sigma=\\sigma(F^{e}),\n$$\n\nwhere $\u2207_{x}$ is the spatial gradient operator and $\\sigma$ is the Cauchy stress tensor formulated in terms of the elastic deformation tensor, as only the elastic deformation induces stresses. The Cauchy stress describes the 3D stress state in the spatial (grown and deformed) configuration and is computed by deriving the strain energy function $\u03c8_{g}$ with respect to elastic deformation tensor,\n\n$$\n\\sigma(F^{e})=\\frac{1}{J^{e}}\\frac{\u2202\u03c8_{g}(F^{e})}{\u2202F^{e}}\u22c5F^{e}^{T},\n$$\n\nwhere $J^{e}=detF^{e}$. The strain energy function describes the material behavior of brain tissue mathematically. In our case, we consider a nonlinear hyperelastic material model as viscous effects, which have been observed for higher strain rates, become less relevant in the case of a slow process like brain development occurring over the course of weeks and months, as discussed in Budday et al., 2020. Our previous studies have shown that the isotropic neo-Hookean constitutive model best represents the material behavior of brain tissue during cortical folding (Budday et al., 2020). The corresponding strain energy function $\u03c8_{g}$ is given as\n\n$$\n\u03c8_{g}(F^{e})=\\frac{1}{2}\\lambdaIn^{2}(J^{e})+\\frac{1}{2}\\mu(r_{i})[F^{e}:F^{e}\u22123\u22122In(J^{e})],\n$$\n\nwhere \u03bc and $\\lambda$ are the Lam\u00e9 parameters. We use the nonlinear Heaviside function that is given in the general form as $H(x;\\gamma)=e^{\\gammax}/(1+e^{\\gammax})$ to guarantee a smooth transition from the cortex to the subcortical plate with distinct mechanical parameters,\n\n$$\n\\mu(r_{i})=\\mu_{s}+[[\\mu_{c}\u2212\\mu_{s}]\\timesH(r_{i}\u2212r_{cp};20)],\n$$\n\nwhere the Heaviside function exponent $\\gamma$ equals 20. Please note that we will later use a different value of $\\gamma$ to serve numerical and geometrical requirements regarding the nature of the transition: higher values will lead to sharper transitions, lower values to smaller transitions. A more detailed discussion on the role of the value of $\\gamma$ can be found in Zarzor et al., 2021. Our recent numerical simulation study suggested that the cortical stiffness continuously changes during human brain development due to the changes in the local microstructure (Zarzor et al., 2021). Accordingly, we formulate the cortical shear modulus $\\mu_{c}$ as a function of the cell density,\n\n$$\n\\mu_{c}(c)={\\mu_{\u221e}ifc\\geqc_{max},\\mu_{s}+m_{c}(c\u2212c_{min})ifc_{max}>c>c_{min},\\mu_{s}ifc\\leqc_{min}.\n$$\n\nIt increases with increasing cell density in the range $\\mu_{c}\u2062(c)\\in[\\mu_{s},\\mu_{\u221e}]$, while the subcortical shear modulus $\\mu_{s}$ remains constant. The slope is defined as $m_{c}=\\mu_{\u221e}-\\mu_{s}/c_{max}-c_{min}$ and the stiffness ratio as $\\beta_{\\mu}=\\mu_{\u221e}/\\mu_{s}$. Through Equation 6, the cell density problem controls the effective stiffness ratio between cortex and subcortex (as the cortical stiffness changes while the subcortical stiffness remains constant) and thus also the emerging cortical folding pattern (Budday et al., 2014; Zarzor et al., 2021).\n\n### Mechanical growth problem\n\nThe growth tensor introduced in the Kinematics section is a key feature in our model that links the cell density problem with the mechanical problem. As it controls the amount and direction of growth, we need to consider how cellular processes affect the physiological growth behavior in order to find an appropriate formulation. During cellular migration, the subcortical layers expand isotropically. Then, under the effect of neuronal connectivity, the cortex grows \u2013 more pronounced in circumferential than in radial direction \u2013 as illustrated in Figure 2. Thus, we introduce the growth tensor as\n\n$$\nF^{g}=\u03d1^{\u22a5}[I\u2212N\u2297N]+\u03d1^{\u2225}N\u2297N,\n$$\n\nwhere $N$ is the normal vector in the reference configuration $B_{0}$ (it is linked to the spatial normal vector through $N=F^{\u22121}\u22c5n$), while $\u03d1^{\u22a5}$ and $\u03d1^{\u2225}$ denote the growth multipliers in circumferential and radial direction, respectively. Those multipliers control the amount of growth as a function of the cell density,\n\n$$\n\u03d1^{\u22a5}=[1+\u03ba^{\u22a5}(r_{i})c]^{\\alpha}and\u03d1^{\u2225}=[1+\u03ba^{\u2225}(r_{i})c]^{\\alpha},\n$$\n\nwhere $\u03ba^{\u22a5}$ and $\u03ba^{\u2225}$ are the growth factors in the circumferential and radial direction, respectively, and $\\alpha$ is the growth exponent. To ensure isotropic growth in the subcortical layers, we formulate those factors as a function of the radius ri, such that\n\n$$\n\u03ba^{\u22a5}(r_{i})=\u03ba_{s}+[\u03ba_{s}[\\beta_{\u03ba}\u22121]\\timesH(r_{i}\u2212r_{cp};20)]and\n$$\n\n\n\n$$\n\u03ba^{\u2225}(r_{i})=\u03ba_{s}+[\u03ba_{s}[\\frac{1}{\\beta_{\u03ba}}\u22121]\\timesH(r_{i}\u2212r_{cp};20)],\n$$\n\nwhere $\u03ba_{s}$ is the growth factor in the subcortical layers, and $\\beta_{\u03ba}$ is the growth ratio between $\u03ba^{\u22a5}$ and $\u03ba_{s}$ (Zarzor et al., 2021). Through Equation 8, the amount of growth is directly related to the cell density \u2013 the higher the cell density, the more growth.\n\n### Cell density problem\n\nWe formulate the balance equation of the cell density problem in such a way that we can mathematically describe the different cellular processes occurring at the microscopic scale. Temporal changes in the cell density field are kept in balance by source and flux terms. The balance equation given in the spatial configuration $\u212c_{t}$ follows as\n\n$$\n\\frac{J\u02d9}{J}c+c\u02d9=\u2212\u2207_{x}\u22c5[v^(c,x)c\u2212d^{cc}(x)\u22c5\u2207_{x}c]+r_{1}^{c}(x,s)+r_{2}^{c}(x,s),\n$$\n\nwhere the first flux term $v^(x)c$ represents the migration in the subcortical plate, the second flux term $d^{cc}(x)\u22c5\u2207_{x}c$ represents the neuronal connectivity in the cortex, the first source term $r_{1}^{c}(x,s)$ represents cell proliferation in the VZ, and the second source term $r_{2}^{c}(x,s)$ cell proliferation in the OSVZ. The migration velocity vector $v^(x)$ guides the cells along radial glial cell fibers and controls their speed,\n\n$$\nv^(x)=H(c\u2212c_{0};\\gamma_{c})v(r_{i})n/\u2225n\u2225.\n$$\n\nThe vector $n$ represents the normalized orientation of radial glial cell fibers in the spatial configuration and controls the migration direction of neurons. As the brain grows and folds, the fiber direction changes. Through this feedback mechanism, the mechanical growth problem affects how neurons migrate and the cell density evolves locally. The nonlinear regularized Heaviside function $\u210b\u2062(c-c_{0};\\gamma_{c})$ with the Heaviside exponent $\\gamma_{c}$ links the migration speed with the cell density field. Accordingly, the cells start to migrate only when their density exceeds the critical threshold c0. The value v specifies the maximum migration speed of each individual cell in the domain. To ensure that this value vanishes smoothly at the cortex boundary $r_{cp}$, we formulate it as a function of the radial position ri, as shown in Figure 2B, such that\n\n$$\nv(r_{i})=v[1\u2212H(r_{i}\u2212r_{cp};10)].\n$$\n\nAfter the cells reach the cortex, they diffuse isotropically, as described by the diffusion tensor $d^{cc}(x)=(d^{cc}(r_{i})+v_{c}(c))$ I with the diffusivity dcc, the artificial viscosity $v_{c}(c)$, and the second order unit tensor I. The artificial viscosity term $v_{c}(c)$ serves as a numerical stabilization to avoid numerical oscillations associated with the advection-diffusion equation. It only acts when the actual cell density does not satisfy the balance equation and ensures more reliable results without having a particular physical meaning. The diffusivity is defined as a function of the radial position ri to act only in the cortex,\n\n$$\nd^{cc}(r_{i})=d^{cc}H(r_{i}\u2212r_{cp};10).\n$$\n\nThe first source term $r_{1}^{c}$ represents the radial glial cell proliferation in the VZ, as demonstrated in Figure 2B, and is given as\n\n$$\nr_{1}^{c}(x,s)=G_{vz}^{s}(s)[1\u2212H(r_{i}\u2212r_{vz};50)]with\n$$\n\n\n\n$$\nG_{{\u2219}}^{s}(s)=G_{{\u2219}}\u2212{(s\u22121)G_{{\u2219}}ifs<1.80.8G_{{\u2219}}else\n$$\n\nwhere $r_{vz}$ is the outer radial boundary of the VZ and $G_{vz}^{s}$ is the division rate in the VZ as a function of the maximum stretch $s$ in the domain. By applying Equation 16 for the VZ, we ensure that the division rate decreases from its initial value $G_{vz}$ to a smaller value as the maximum stretch value $s$ in the domain increases, i.e., with increasing gestational age. This constitutes an additional feedback mechanism between the mechanical growth problem and the cell density problem: As the maximum stretch and thus the deformation increases due to constrained cortical growth, the division rate in the VZ decreases, resulting in less newborn cells.\n\nBesides the proliferation of radial glial cells around the cerebral ventricles in the VZ, the ORGCs proliferate in the OSVZ. To capture this effect, we add a second source term $r_{2}^{c}$, as demonstrated in Figure 2B. The second source term is given as\n\n$$\nr_{2}^{c}(x,s)=G_{osvz}^{s}(s)[H(r_{i}\u2212r_{isvz};50)\u2212H(r_{i}\u2212r_{osvz}(t);50)],\n$$\n\nwhere $r_{isvz}$ is the outer radial boundary of the inner subventricular zone and $G_{osvz}^{s}$ is the division rate in the OSVZ that again decreases with increasing maximum stretch $s$ in the domain. To numerically capture the expansion of the OSVZ under the effect of MST of ORGCs, we formulate the outer radial boundary of the OSVZ as a function of time, such that,$r_{osvz}=r_{isvz}+m_{mst}t$, where $m_{mst}$ is introduced as the MST factor. Again, we apply Equation 16 for the OSVZ, but in this case with the initial division rate $G_{{osvz}}$.\n\n### Model parameters and boundary conditions\n\nIn this work, we will consider two different cases regarding the mechanical model: The first case considers a varying cortical stiffness as introduced in the Mechanical problem section, while the second case assumes a constant cortical stiffness, i.e., $\\mu_{c}=\\mu_{\u221e}=constant$. While our previous study had suggested that the simulations with varying cortical stiffness lead to morphologies that better agree with those in the actual human brain (Zarzor et al., 2021), we still consider both cases in the following, varying stiffness and constant stiffness, as the situation might change when including the OSVZ and we aim to investigate corresponding interdependency effects. Table 1 summarizes the model parameters that are used in the simulation for the 2D case. We will refer to the parameters changes in the 3D case later when we present the corresponding results to avoid confusion. The mechanical and diffusion parameters are adapted from the literature (Budday et al., 2020; de Rooij and Kuhl, 2018), while the geometry parameters are estimated based on histologically stained human brain sections and magnetic resonance images. For instance, to determine the MST factor, we measured the relative distance between the inner subventricular zone and OSVZ in histologically stained images. The final value adopted is the result of dividing the measured distance by the expected time. When determining the growth problem parameters, numerical stability and algorithm convergence were major criteria.\n\n**Table 1.**\n Model parameters in the two-dimensional case.\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"4\">Geometry parameters</th>\n      <th colspan=\"4\">Cell density problem parameters</th>\n    </tr>\n    <tr>\n      <th colspan=\"2\">Parameter</th>\n      <th>Value</th>\n      <th>Unit</th>\n      <th colspan=\"2\">Parameter</th>\n      <th>Value</th>\n      <th>Unit</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Outer brain radius</td>\n      <td>R</td>\n      <td>2</td>\n      <td>mm</td>\n      <td>Division rate in VZ</td>\n      <td>Gvz</td>\n      <td>[30-120]</td>\n      <td>mm\u20132d\u20131</td>\n    </tr>\n    <tr>\n      <td>Inner brain radius</td>\n      <td>r</td>\n      <td>0.4</td>\n      <td>mm</td>\n      <td>Division rate in OSVZ</td>\n      <td>Gosvz</td>\n      <td>[10-30]</td>\n      <td>mm\u20132d\u20131</td>\n    </tr>\n    <tr>\n      <td>VZ radius</td>\n      <td>rvz</td>\n      <td>0.5</td>\n      <td>mm</td>\n      <td>Migration speed</td>\n      <td>v</td>\n      <td>5</td>\n      <td>mm d\u20131</td>\n    </tr>\n    <tr>\n      <td>ISVZ radius</td>\n      <td>risvz</td>\n      <td>0.8</td>\n      <td>mm</td>\n      <td>Migration threshold</td>\n      <td>c0</td>\n      <td>500</td>\n      <td>mm\u20132</td>\n    </tr>\n    <tr>\n      <td>Cortex radius</td>\n      <td>rcp</td>\n      <td>1.8</td>\n      <td>mm</td>\n      <td>Heaviside exponent</td>\n      <td>\u03b3c</td>\n      <td>0.008</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>MST factor</td>\n      <td>mmst</td>\n      <td>0.02</td>\n      <td>mm d\u20131</td>\n      <td>Diffusivity</td>\n      <td>dc\u2062c</td>\n      <td>0.11</td>\n      <td>mm\u20132d\u20131</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">Mechanical problem parameters</td>\n      <td colspan=\"4\">Mechanical growth problem parameters</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Parameter</td>\n      <td>Value</td>\n      <td>Unit</td>\n      <td colspan=\"2\">Parameter</td>\n      <td>Value</td>\n      <td>Unit</td>\n    </tr>\n    <tr>\n      <td>Cortex shear modulus</td>\n      <td>\u03bc\u221e</td>\n      <td>2.07</td>\n      <td>kPa</td>\n      <td>Growth parameter</td>\n      <td>\u03bas</td>\n      <td>4.07\u2062e-4</td>\n      <td>mm2</td>\n    </tr>\n    <tr>\n      <td>Poisson ratio</td>\n      <td>\u03bd</td>\n      <td>0.38</td>\n      <td>\u2013</td>\n      <td>Growth exponent</td>\n      <td>\u03b1</td>\n      <td>1.65</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>Stiffness ratio</td>\n      <td>\u03b2\u03bc</td>\n      <td>3,8</td>\n      <td>\u2013</td>\n      <td>Growth ratio</td>\n      <td>\u03b2\u03ba</td>\n      <td>1.5,3</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>Maximum threshold</td>\n      <td>cmax</td>\n      <td>700</td>\n      <td>mm\u20132</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Minimum threshold</td>\n      <td>cmin</td>\n      <td>200</td>\n      <td>mm\u20132</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\nWe have previously thoroughly studied the effect of the stiffness ratio on the resulting folding pattern (Zarzor et al., 2021). Here, we choose a stiffness ratio of 8 for the constant stiffness case and a ratio of 3 for the varying stiffness case. Those values led to the best agreement of simulation results with data from stained histological sections regarding the local gyrification index value and the thickness ratio between gyri and sulci. For more details, we refer to Zarzor et al., 2021. We note that the tissue shows a stiffer behavior in the case of constant stiffness than in the case of varying stiffness for the same value of the stiffness ratio. For that reason, a higher stiffness ratio (lower stiffness in the subcortical layers since the final cortical stiffness $\\mu_{\u221e}$ is constant in both cases) is required in the case of constant stiffness to achieve a similar level of folding.\n\nFinally, we use homogenized Dirichlet boundary conditions on the inner brain surface and homogenized Neumann boundary conditions on the outer surface. Furthermore, in the 2D case, we constrain the right edge in the x direction and the bottom edge in the y direction. In the 3D case, we constrain the bottom surface in the y direction and keep it free to extend in the x and z directions. For more details about boundary conditions and numerical details, we refer to Zarzor et al., 2021.\n\n## Model validation\n\nWe validate our computational model by comparing the simulation results with histologically stained sections of the human fetal brain. For details on the corresponding preparation and staining, we refer to Zarzor et al., 2021. The sections belong to human fetuses aborted at gestational weeks 17, 24, 30, and 34. After defining the areas representative of the simulation domain introduced in the previous section (see Figure 2A) for each gestational week, we detect and assess the cell density using the software Qupath. This study was approved by the ethics review board of the Friedrich-Alexander-Universit\u00e4t Erlangen-N\u00fcrnberg with the reference number 22-209-Bp, and all procedures were conducted in accordance with the Declaration of Helsinki. In the following, we summarize the steps we followed to determine the cell density in human fetal brain sections. Since this analysis is intended to mainly serve as a means of comparison between different gestational weeks, a more detailed analysis using individual markers was not necessary at this stage.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/82925/elife-82925-fig3-v1.jpg)\n\n**Figure 3.:** (A) Annotated area with final cell density distribution. (B) Example of cell detection by using Qupath. Red cells depict neurons and blue cells glial cells. (C) Procedure to determine the cell density.\n\nFigure 3 shows the cell density distribution around gestational week 17 and demonstrates the densely packed VZ due to the high proliferation rate of radial glial cells, with about $13,600cells/mm^{2}$. In addition, we can locate the other zones introduced in Figure 1. The OSVZ shows a higher cell density (approximately $9550cell/mm^{2}$) than both the inner subventricular and the intermediate zone. This zone is composed of several types of cells, the original intermediate progenitor cells that migrated from the VZ, migrated neurons, ORGCs that produce more intermediate progenitor cells, and newborn neurons that are produced through the intermediate progenitor cells\u2019 asymmetric division. Our analysis of the histologically stained sections of the human fetal brain (see Figure 3) also shows that the OSVZ is 1.5 times thicker than the inner subventricular zone, even though it did not emerge at an earlier stage of development (the inner subventricular zone emerges around gestational week 7 and the OSVZ around gestational week 11). This implies that the thickness of the OSVZ increases with time. The intermediate zone is characterized by a low cell density with about $1600cells/mm^{2}$. Still, it is a transit area for the migrating neurons. The higher cell density in the inner subventricular zone $4800cells/mm^{2}$ corroborates the presence of another type of cell besides migrating neurons, i.e., intermediate progenitor cells. The migration process in gestational week 17 is still ongoing \u2013 the cortex is not yet fully developed and filled with neurons with only about $12,000cells/mm^{2}$. Therefore, at this stage of development, the VZ still has the highest cell density in the brain. Figure 4 compares the cell density distribution along a line from the ventricular surface to the outer cortical surface in the human fetal brain at gestational week 17 (indicated by line L in Figure 3) with different simulation results. For better comparability and to avoid differences in the dimensions between the histologically stained sections of the human fetal brain and the simulation domain, we normalize the domain\u2019s radius according to the extension from the ventricular to the outer cortical surface in the stained sections. In addition, we normalize the cell density with respect to its maximum value in the cortex. According to our previous work (Zarzor et al., 2021), we include a varying stiffness in the cortex during human brain development in our simulations, adopt a stiffness ratio of 3, and a division rate in the VZ of 120.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/82925/elife-82925-fig4-v1.jpg)\n\n**Figure 4.:** The simulation results correspond to the varying cortical stiffness case with a stiffness ratio of 3, and a ventricular zone (VZ) division rate $G_{vz}=120$. The stained human brain sections results correspond to line L in Figure 3.\n\nThe simulation results for an initial division rate in the OSVZ of $G_{osvz}=10$ well capture the trends observed in the histologically stained sections of the human fetal brain. The cell density shows a first local peak representing the VZ for a normalized radius of approximately 0.05. It then gradually decreases to reach its first local minimum in the inner subventricular zone for a normalized radius of 0.3. This effect is less pronounced in the simulations than in the actual human fetal brain. The curves start to rise again in the OSVZ to reach the second peak for a normalized radius of 0.4. Again, the simulation results capture this peak quite accurately, with a difference of only 3%. The second local minimum represents the intermediate zone for a normalized radius of 0.7, while the third peak represents the cortex. The simulation results for $G_{osvz}=20$ and 30 result in a higher cell density in the OSVZ than in the actual human fetal brain. In contrast, the curve for $G_{osvz}=0$ (i.e., without including the effect of the OSVZ) shows a significantly decreased cell density in the OSVZ and intermediate zone.\n\n## Results and discussion\n\nIn this section, we apply our computational model to answer some of the major questions regarding the role of the OSVZ for cortical folding during human brain development. As mentioned above, we consider both cases, constant and varying cortical stiffness. Before addressing the individual questions, we would like to first highlight some general features of the mechanical instability problem as the underlying mechanism of cortical folding. Figure 5 shows an exemplary temporal course of both sulcus depth and folding evolution \u2013 defined as the ratio between the outer perimeter at time step $t$ and the initial perimeter (see Figure 6) \u2013 for the varying stiffness case with $G_{vz}=120$ and $G_{osvz}=20$. The outer brain maintains its smooth surface until the first instability point, where compressive stresses in the cortex induced by cell-density-driven cortical growth reach a critical value, the cortex starts to fold and sulci deepen rapidly and uniformly. At the instability point, the curve of the folding evolution shows a kink, as the outer brain surface now expands more rapidly. After a second instability point, where a secondary instability occurs and we see a pitchfork-like bifurcation in Figure 5, only every second sulcus continues to deepen, while those in between become shallower again. We refer to the resulting folding pattern as period doubling pattern. For a detailed discussion of secondary instabilities, period doubling, and even period tripling patterns and their role in cortical folding, we refer to our previous works in Budday et al., 2015a and Budday et al., 2015c.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/82925/elife-82925-fig5-v1.jpg)\n\n**Figure 5.:** The temporal courses of the depth of two sulci (red and blue curve) and the folding evolution (green curve), as denoted in Figure 6, indicate the mechanical instability points. Initially, the brain surface is smooth, the sulcus depth is zero, and the folding evolution increases only gradually. At the first instability point, the cortex starts to fold into wrinkles (w), where the sulci deepen uniformly. Due to the transition from a smooth to a wrinkled surface, the folding evolution now shows a more rapid increase. At the second instability point, a pitchfork-like bifurcation occurs, where every second sulcus continues to deepen while those in between become shallower. This results in a period doubling (pd) pattern, which is well visible and fully established at state c. The results correspond to the varying stiffness case with $G_{vz}=120$, $G_{osvz}=20$, and a stiffness ratio $\\beta_{\\mu}=3$.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/82925/elife-82925-fig6-v1.jpg)\n\n**Figure 6.:** Quantification of the depth of two sulci (sulcus 1 and sulcus 2) and the folding evolution, defined as the ratio between the outer perimeter at time step $t$ and the initial perimeter.\n\n### How does cell proliferation in the OSVZ affect cortical folding patterns?\n\nMany previous studies have tried to address this point (Hansen et al., 2010). However, through purely experimental approaches, it is difficult to answer this question. In our model, we can apply different values of the division rate in the OSVZ ($G_{osvz}$) to show how ORGC proliferation affects cortical folding. Figure 7 shows the folding patterns emerging at gestational week 36 for both varying and constant stiffness cases and different values of the initial division rate in the OSVZ $G_{osvz}$. In the case of constant stiffness, the effect is marginal. In the case of varying stiffness, there is a more noticeable change in the folding patterns. In general, the distance between neighboring sulci decreases with increasing $G_{osvz}$, as marked in Figure 7. For the displayed cases, the distance decreases from d = $8.796mm$ for $G_{osvz}=0$ to d = $8.67mm$ for $G_{osvz}=10$ and d = $8.2mm$ for $G_{osvz}=20$. Interestingly, the cortical thickness and effective stiffness ratio at the first instability point (denoted by w in Figure 5) are the same for all these cases. Therefore, we attribute the observed differences to the faster increase in the cell density and thus cortical growth, cortical stiffness, and the effective stiffness after the instability has been initiated. In addition, we observe period doubling patterns emerge (Budday et al., 2015a; Budday et al., 2015c), which are most pronounced at a value of $G_{osvz}=20$. This indicates that the proliferation in the OSVZ enhances secondary mechanical instabilities and leads to more complex folding patterns earlier.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/82925/elife-82925-fig7-v1.jpg)\n\n**Figure 7.:** Final folding patterns at gestational week 36 for different values of the division rate in the outer subventricular zone (OSVZ) $G_{osvz}$ for the constant (top) and varying (bottom) cortical stiffness cases.The remaining parameters are fixed as follows: division rate in the ventricular zone (VZ) $G_{vz}=120$, stiffness ratio $\\beta_{\\mu}=8$ for constant stiffness, and $\\beta_{\\mu}=3$ for varying stiffness. The marked distance between sulci d decreases with increasing $G_{osvz}$.\n\nFigure 8 demonstrates that the observed trends also hold true when extending the model to 3D. For the case of varying stiffness with a stiffness ratio of 3, a growth ratio of 3, and an initial division rate in the VZ $G_{vz}=600$, the folding complexity increases with increasing initial division rate in the OSVZ $G_{osvz}$.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/82925/elife-82925-fig8-v1.jpg)\n\n**Figure 8.:** Final folding patterns at gestational week 36 for the hree-dimensional (3D) model with varying cortical stiffness, a stiffness ratio of 3, a growth ratio of 3, and an initial division rate in the ventricular zone (VZ) $G_{vz}=600$.The folding complexity increases with increasing initial division rate in the outer subventricular zone (OSVZ) $G_{osvz}$.\n\nBesides the direct relation between the proliferation in the OSVZ and the folding morphology, there are indirect effects and other aspects concerning ORGC proliferation, which will be discussed in more detail in the following sections.\n\n### How does cell proliferation in the OSVZ affect the cell density and folding evolution?\n\nAfter we have assessed the effect of cell proliferation in the OSVZ on the final folding pattern, we investigate its effect on the evolution of both cell density and folding morphology. Figure 9 shows the temporal evolution of the maximum cell density in the domain and the folding evolution between time steps 260 and 380 for different initial division rates in the OSVZ $G_{osvz}$ and a constant division rate in the VZ $G_{vz}=120$. Again, we consider both cases, constant and varying cortical stiffness. Increasing the initial division rate in the OSVZ leads to a significant increase in both the cell density and folding evolution. Consequently, for the case of $G_{osvz}=30$, the cell density reaches the highest value of $1100mm^{\u22122}$, corresponding to a folding evolution of 1.25. For the case of $G_{osvz}=0$, in contrast, the cell density does not even exceed the migration threshold. Comparing the cases $G_{osvz}=20$ and $G_{osvz}=30$ shows that the instability occurs earlier with increasing initial division rate in the OSVZ $G_{osvz}$. Thus, the ORGC proliferation decreases the time required to reach the final folding pattern. In general, the differences between the results for the constant and varying cortical stiffness case are minor. However, the curves for the varying cortical stiffness case rise faster than for the constant case. We note that we could not generate results for the initial division rate in the OSVZ $G_{osvz}=30$ and the constant cortical stiffness case due to numerical issues.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/82925/elife-82925-fig9-v1.jpg)\n\n**Figure 9.:** Temporal evolution of the maximum cell density and the folding evolution (the current outer perimeter divided by the initial perimeter, as indicated in Figure 6) at a constant division rate in the ventricular zone (VZ) $G_{vz}=120$ and different initial division rates in the outer subventricular zone (OSVZ) $G_{osvz}$.The results in the top row correspond to the varying cortical stiffness case with a stiffness ratio of 3. The results in the bottom row correspond to the constant cortical stiffness case with a stiffness ratio of 8.\n\n### Which proliferation zone is more influential for fetal human brain development?\n\nTo answer the question which one of the proliferation zones (VZ or OSVZ) is more important for cellular brain development and cortical folding, we have implemented four sets of division rates. The first set assumes a high initial division rate in the VZ $G_{vz}$ and a low initial division rate in the OSVZ $G_{osvz}$. For the following parameter sets, we gradually decrease $G_{vz}$, while we increase $G_{osvz}$. Figure 10 shows the corresponding results for the maximum cell density in the domain and the folding evolution between time steps 250 and 450 for both cases, constant and varying cortical stiffness. Unexpectedly, the cell density for the set ($G_{vz}=30,G_{osvz}=30$) rises faster than the one for the set ($G_{vz}=120,G_{osvz}=0$). Indeed, not only the cell density is affected by increasing the division rate in the OSVZ (at the expense of decreasing it in the VZ), but also convolutions (cortical folds) appear earlier, as illustrated by the curve for the folding evolution (Figure 10, right). Our results thus indicate an unproportionally strong effect of ORGC proliferation in the OSVZ on cellular brain development and cortical folding. We attribute this observation to the larger volume occupied by the OSVZ compared to the VZ. Concerning the difference between the results for the constant and varying cortical stiffness case, the curves for a varying stiffness rise faster than for a constant stiffness.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/82925/elife-82925-fig10-v1.jpg)\n\n**Figure 10.:** Temporal evolution of the maximum cell density and the folding evolution for different division rates in the ventricular zone (VZ) $G_{vz}$ and outer subventricular zone (OSVZ) $G_{osvz}$.The results in the top row correspond to the varying cortical stiffness case with a stiffness ratio of 3. The results in the bottom row correspond to the constant cortical stiffness case with a stiffness ratio of 8.\n\n### How does the MST behavior of ORGCs affect brain development?\n\nWe have introduced a specific simulation parameter to capture the MST behavior of ORGCs, which now allows us to study the effect of the MST factor on cortical folding. For this parameter study, we limit ourselves to the varying cortical stiffness case with an initial division rate in the VZ $G_{vz}=30$ and an initial division rate in the OSVZ $G_{osvz}=30$. Figure 11 shows the temporal evolution of the maximum cell density and the folding evolution between time steps 250 and 430 for different values of the MST factor. Our simulations indicate that with increasing MST factor, the value of the maximum cell density in the domain increases exponentially. Since the MST factor incorporates the expansion of the OSVZ with time, these results are consistent with the observation in the previous section, showing an increasing spatial expansion of the OSVZ.\n\n![Figure 11.](https://cdn.elifesciences.org/articles/82925/elife-82925-fig11-v1.jpg)\n\n**Figure 11.:** The results correspond to the varying cortical stiffness case with a stiffness ratio of 3, a division rate in the ventricular zone (VZ) $G_{vz}=30$, and an initial division rate in the outer subventricular zone (OSVZ) $G_{osvz}=30$.\n\n### Is the OSVZ affected by cortical folding?\n\nAfter we have discussed the effect of the OSVZ on the formation of cortical folds, we will now discuss the opposite \u2013 the effect of cortical folding on the OSVZ. Although the OSVZ has a constant thickness in our model throughout the entire domain in the intermediate stage of human brain development (before cortical folds emerge), as demonstrated in red in Figure 12, left, the simulations show that this quickly changes after the first folds start to emerge. The thickness of the OSVZ starts to show spatial variations and becomes thicker beneath gyri and thinner beneath sulci, as shown in Figure 12, right. This result is consistent with what was previously observed experimentally in the human brain (Kostovi\u0107 et al., 2002). While it is to date not clear whether this phenomenon is rather the cause or the result of cortical folding, our study clearly indicates that the (mechanics-driven) process of cortical folding is sufficient to induce OSVZ variations. The forces generated by the mechanical growth problem not only fold the cortical layer but also lead to undulations in the deeper zones. Still, the deeper proliferating zones (i.e., inner subventricular zone and VZ) remain equally smooth as the ventricular surface.\n\n![Figure 12.](https://cdn.elifesciences.org/articles/82925/elife-82925-fig12-v1.jpg)\n\n**Figure 12.:** While the OSVZ has a constant thickness before cortical folds emerge (left), it later becomes thicker beneath gyri than beneath sulci (right).\n\n### Are cortical folds affected by regional proliferation variations in the OSVZ?\n\nPrevious studies have emphasized the existence of variations in the ORGC proliferation rate in different brain regions (Hansen et al., 2010). Some of those have suggested that the proliferation rate is higher beneath gyri than beneath sulci (Borrell, 2018). Similarly, in the ferret brain, where a region close in structure to the primate\u2019s OSVZ was found, this region shows a unique mosaic-like structure (Fietz et al., 2010; Reillo and Borrell, 2012). In this section, we aim to assess the effect of regional proliferation variations in the OSVZ on the emerging cortical folding pattern. We discuss two different heterogeneous patterns here, but have included more variations online through our user interface on GitHub, as described in the Data availability section. In the first case, the OSVZ division rate gradually decreases along the circumferential direction. In the second case, the division rate varies in a more random pattern. Figures 13 and 14 show how cortical folds develop in both cases for the varying cortical stiffness case, an initial division rate in the VZ $G_{vz}=120$, and an initial division rate in the OSVZ $G_{osvz}=20$. As expected, the evolving folding patterns slightly differ. In both cases, the first folds appear where the cell proliferation rate is highest. As expected, those regions also show a higher cell density in the cortex than regions nearby. However, both cases lead to final patterns with similar distances between sulci and folding complexity (one period doubling pattern). In addition, gyri and sulci are distributed equally \u2013 regardless of the division rate. Therefore, we may conclude that inhomogeneous cell proliferation in the OSVZ controls the location of first gyri and sulci but does not necessarily affect the distance between sulci (also referred to as folding wavelength) and the overall complexity of the emerging folding pattern. This agrees well with our previous finding that the characteristic wavelength of folding remains relatively stable for inhomogeneous cortical growth patterns (Budday and Steinmann, 2018). The simulation results are also consistent with the previously found remarkable surface expansion above the regions with higher proliferation in the OSVZ (Llinares-Benadero and Borrell, 2019).\n\n![Figure 13.](https://cdn.elifesciences.org/articles/82925/elife-82925-fig13-v1.jpg)\n\n**Figure 13.:** Temporal evolution of cortical folds for a gradually decreasing outer subventricular zone (OSVZ) division rate $G_{osvz}$ along the circumferential direction between time steps 325 and 450 for the varying cortical stiffness case, an initial division rate in the ventricular zone (VZ) $G_{vz}=120$, and varying division rates in the OSVZ with an initial value of 20.The top row shows the cell density distribution and the bottom row the actual division rate in the OSVZ.\n\n![Figure 14.](https://cdn.elifesciences.org/articles/82925/elife-82925-fig14-v1.jpg)\n\n**Figure 14.:** Temporal evolution of cortical folds for a random distribution of the outer subventricular zone (OSVZ) division rate $G_{osvz}$ between time steps 450 and 670 for the varying cortical stiffness case, an initial division rate in the ventricular zone (VZ) $G_{vz}=120$, and varying division rates in the OSVZ with an initial value of 20.The top row shows the cell density distribution and the bottom row the actual division rate in the OSVZ.\n\n## Conclusion\n\nIn this work, we have made use of a computational model for brain growth to provide insights into the role of the OSVZ \u2013 a unique additional proliferating zone in humans \u2013 during cortical folding in the developing brain. By using computational tools, we have addressed different open questions with the aim of valuably supplementing classical experimental approaches. The advantage of the computational model is that we can, on the one hand, clearly isolate purely physical mechanisms. On the other hand, it is possible to systematically study and understand the effect of individual parameters, which is much more difficult through in vitro and in vivo experiments. Our simulations have demonstrated how the proliferation in the OSVZ enhances the complexity of cortical folding patterns in 2D and 3D. Our results show that the existence of the OSVZ particularly triggers the emergence of secondary mechanical instabilities leading to more complex folding patterns. Furthermore, the proliferation of ORGCs reduces the time required to induce the mechanical instability and thus cortical folding. Interestingly, our simulation results suggest that the generated mechanical forces not only \u2018fold\u2019 the cortex but also deeper subcortical zones including the OSVZ, which becomes thicker beneath gyri and thinner beneath sulci as a result of cortical folding. Consequently, our analyses suggest that the purely mechanics-driven process of cortical folding is sufficient to induce regional differences in the thickness of the OSVZ. Finally, our simulations reveal that inhomogeneous cell proliferation patterns in the OSVZ can control the location of first gyri and sulci but do not necessarily affect the distance between sulci and the overall complexity of the emerging folding pattern.\n\nIn conclusion, our physics-based computational modeling approach has allowed us to systematically assess the role of the OSVZ during human brain development and its effect on cortical folding \u2013 the classical hallmark of the human cortex at the organ scale. In the future, the computational framework can be used to not only better understand physiological brain development but also pathological processes \u2013 especially those involving abnormal cortical folding patterns. The computational model is able to shed new light on the interplay between the multiple processes at different scales and can help identify the main controlling parameters. However, it can only complement, not substitute, sophisticated experimental approaches that are still needed to answer questions, e.g., regarding the functional difference between progenitor cell types and corresponding lineage decisions.\n",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "6c620a66-2e15-43c7-a92e-aeda4b027dca",
+      "submission_id": "b2f1c3a0-dc35-453c-a07e-9e015cc34154",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Karsten Kruse, https://ror.org/01swzsf04 University of Geneva Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82925.sa0](https://doi.org/10.7554/eLife.82925.sa0)\n\nThrough theoretical analysis, the authors argue that the proliferation of neurons in the outer subventricular zone, which is specific to humans, decreases the distance between neighboring sulci in the cerebral cortex and increases cell density in the ventricular zone. Though the exact mechanisms remain to be further elucidated, the compelling data and approach represent a valuable foundation for the study of cortical folding from the underpinning cellular level as well as the coupling role of mechanics and cellular biology. This study will be of particular interest to the large community of scientists studying the mechanisms of brain development and disorder and even possibly beyond.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Karsten Kruse, https://ror.org/01swzsf04 University of Geneva Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82925.sa1](https://doi.org/10.7554/eLife.82925.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Exploring the role of the outer subventricular zone during cortical folding through a physics-based model\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Aleksandra Walczak as the Senior Editor. The following individuals involved in the review of your submission have agreed to reveal their identity: Jean-Francois Mangin (Reviewer #2); Xianqiao Wang (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nSeveral assumptions underlying the model need to be discussed in more detail.\n\n1) Clarify what is new in the model from Zarzor et al., 2021.\n\n2) Comment on why there is no feedback from mechanics on cell division, migration, and diffusion.\n\n3) Section on \"How does cell proliferation in the OSVZ affect cortical folding patterns?\" Clearly point out the differences between the panels in Figure 5. Add a quantification of the distance between sulci (maybe for different parameter values, you get a clearer readout). Also, comment on the mechanism underlying the decrease in distance.\n\n4) Please, elaborate a little on the possibility of extending the model in 3D.\n\n5) Ll. 456: \"While it is to this date not clear whether this phenomenon (thickness variation of the OSVZ) is rather the cause or the result of cortical folding, our study clearly supports the latter.\" Since, in your model, there is no mechanism that would lead to thickness variation of the OSVZ, you can probably not make this statement. Please, clarify. However, you could state that cortical folding is sufficient to induce OSVZ thickness variations, right?\n\nReviewer #1 (Recommendations for the authors):\n\nWhy is there no feedback from mechanics on cell division?\n\nWe apologize for the lack of clarity. The division rate in both the VZ and the OSVZ is indeed controlled by the mechanical deformation and decreases with increasing maximum stretch s, Equation 16.\n\nP. 11: \"How does cell proliferation in the OSVZ affect cortical folding patterns?\" I find this section rather disappointing. Figure 5 shows hardly any difference between the folds in the presence or absence of proliferation in the OSVZ. The distance between sulci is not quantified. Maybe for different parameter values, you get a clearer readout. Also, the mechanism underlying the decrease in distance is not explained. This makes this analysis look very superficial.\n\nHow does the presence of the OSVZ affect 3d folding patterns? Clearly, this goes beyond the work presented in this study but is the question we are really interested in. At least you should argue, why the 2d analysis is informative about the 3d case.\n\nLl. 456: \"While it is to this date not clear whether this phenomenon (thickness variation of the OSVZ) is rather the cause or the result of cortical folding, our study clearly supports the latter.\" Since, in your model, there is no mechanism that would lead to thickness variation of the OSVZ, you cannot make this statement, I would say. You can state that cortical folding is sufficient to induce OSVZ thickness variations.\n\nReviewer #2 (Recommendations for the authors):Suggestions to authors, in addition to trying to overcome what I mentioned as weaknesses:\n\n\u2022 It would probably add some value to the paper to try to simulate the mosaic of heterogeneous proliferation observed in the ferret.\n\n\u2022 The terms complexity is used in the paper to account for the depth of the fold, I feel it is misleading in the context of the complexity of the folding pattern of the human brain.\n\n\u2022 Clarify what is new in the model from Zarzor et al., 2021.\n\n\u2022 The paper is using some acronyms that are annoying while reading. I suggest to stick to the actual wording: (CS = constant stiffness, HBS, etc.).\n\n\u2022 Page 12, one paragraph has been duplicated.\n\n\u2022 Page 14, check \"to the the\".\n\n\u2022 Page 5, check \"as illustrate in\".\n\n\u2022 Page 4, check \"as demonstrate in\".\n\n\u2022 Page 3, the first fold appear much earlier than GW 25. See for instance Dubois, J., Benders, M., Cachia, A., Lazeyras, F., Ha-Vinh Leuchter, R., Sizonenko, S. V., \u2026 & H\u00fcppi, P. S. (2008). Mapping the early cortical folding process in the preterm newborn brain. Cerebral cortex, 18(6), 1444-1454.\n\n\u2022 I wonder whether your advection-diffusion model would be compatible with a T\u00fcring kind of reaction-diffusion trying to simulate the spatial heterogeneity of the proliferation with few parameters (see Lef\u00e8vre, J., & Mangin, J. F. (2010). A reaction-diffusion model of human brain development. PLoS computational biology, 6(4), e1000749.)\n\nReviewer #3 (Recommendations for the authors):\n\nThis manuscript describes a computational study of cortical folding with a particular focus on the outer subventricular zone. A novel multifield model considering cell proliferation and migration is built to simulate the cortical folding emerging process. From the model parameters analysis, the authors show that the regional difference in the thickness of the outer subventricular zone is a result of cortical folding, and the existence of the outer subventricular zone contributes to the formation of secondary mechanical instabilities. This study provides a physically significant insight into the simulation of cortical folding initiation and development, and the paper is well written. There are no major comments.\n",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ca9cc69c-204d-4b6a-a978-bb3d21d56fc5",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C1",
+      "claim": "The human brain has a highly complex structure both on the microscopic and on the macroscopic scales.",
+      "claim_type": "EXPLICIT",
+      "source": "The human brain has a highly complex structure both on the microscopic and on the macroscopic scales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about brain structure that is established knowledge in neuroscience.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "754d3f7f-2804-4ba8-b21b-53a20ce25ef2",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C2",
+      "claim": "Increasing evidence has suggested the role of mechanical forces for cortical folding.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing evidence has suggested the role of mechanical forces for cortical folding \u2013 a classical hallmark of the human brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references existing evidence in the literature about mechanical forces in cortical folding.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "fd2a4892-6313-43e2-978c-589a9e7654ea",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C3",
+      "claim": "The link between cellular processes at the microscale and mechanical forces at the macroscale remains insufficiently understood.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the link between cellular processes at the microscale and mechanical forces at the macroscale remains insufficiently understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a knowledge gap in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "c7f269ba-86c5-4d00-bc4e-2ecd3f2da827",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C4",
+      "claim": "An additional proliferating zone, the outer subventricular zone (OSVZ), is decisive for the particular size and complexity of the human cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent findings suggest that an additional proliferating zone, the outer subventricular zone (OSVZ), is decisive for the particular size and complexity of the human cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references recent findings from the literature about the OSVZ's role.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "d429fc17-7e7e-4240-994b-3e31a57dc717",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C5",
+      "claim": "The computational model couples cell proliferation in different zones and migration at the cell scale with growth and cortical folding at the organ scale.",
+      "claim_type": "EXPLICIT",
+      "source": "To better understand how the OSVZ affects cortical folding, we establish a multifield computational model that couples cell proliferation in different zones and migration at the cell scale with growth and cortical folding at the organ scale by combining an advection-diffusion model with the theory of finite growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "4e133351-7d23-4f70-8232-e143936035c2",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C6",
+      "claim": "The model was validated based on data from histologically stained sections of the human fetal brain.",
+      "claim_type": "EXPLICIT",
+      "source": "We validate our model based on data from histologically stained sections of the human fetal brain and predict 3D pattern formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the validation approach using experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "dd91427c-88c3-4450-b45f-aa0adb68eb4f",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C7",
+      "claim": "Relative to its size, the human brain has the largest number of cortical neurons that connect with billions of neuronal synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "However, relative to its size, it has the largest number of cortical neurons that connect with billions of neuronal synapses (Herculano-Houzel, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Herculano-Houzel, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "bb83c7df-ae09-4016-ad04-97d50815c74c",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C8",
+      "claim": "The number of brain cells is determined in utero through the proliferation process.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of brain cells is determined in utero through the proliferation process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about brain development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "07f12bf2-4e7a-441a-9774-cd37682e010d",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C9",
+      "claim": "In lissencephalic species such as mice, cell division in the brain is confined to a small region near the cerebral ventricles.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies on different lissencephalic species, such as mice, have shown that cell division in the brain is confined to a small region near the cerebral ventricles (Hansen et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Hansen et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "a2ee1a18-d2e4-402a-ae70-83c64e4fdef6",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C10",
+      "claim": "The human brain is characterized by two proliferation zones with two different types of progenitor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent findings show that the human brain, for example, is characterized by two proliferation zones with two different types of progenitor cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This references recent findings about human brain development.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "75d193fe-83f9-44ae-9dac-71c89eb51a3b",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C11",
+      "claim": "Both proliferation zones produce neurons that later migrate towards the outer brain surface and form the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Both zones produce neurons that later migrate towards the outer brain surface and form the cortex Lui et al., 2011; Pebworth et al., 2021.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Lui et al., 2011 and Pebworth et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "e659afe7-9746-4c72-aa36-24782b4054d7",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C12",
+      "claim": "In rodents, progenitor cells around the ventricular zone generate intermediate progenitor cells that accumulate above the VZ and form the subventricular zone.",
+      "claim_type": "EXPLICIT",
+      "source": "In rodents, progenitor cells around the ventricular zone (VZ) generate intermediate progenitor cells as their daughters, which accumulate above the VZ and form a new layer called the subventricular zone (Noctor et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Noctor et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "ed3face6-f771-4f5e-b1b9-bb32f5e66fcc",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C13",
+      "claim": "In humans, there is an additional outer layer of the subventricular zone, referred to as outer subventricular zone (OSVZ).",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, there is an additional outer layer of the subventricular zone, often referred to as outer subventricular zone (OSVZ) (Hansen et al., 2010; Lui et al., 2011; Noctor et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Hansen et al., 2010; Lui et al., 2011; and Noctor et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "c44d1001-1908-4752-877a-7c52ba49775c",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C14",
+      "claim": "The OSVZ was first discovered in the monkey brain by Colette Dehay and her colleagues.",
+      "claim_type": "EXPLICIT",
+      "source": "This zone was first discovered in the monkey brain by Colette Dehay and her colleagues (Smart et al., 2002), and confirmed in the human brain by several following studies (Huttner and Kosodo, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Smart et al., 2002 and Huttner and Kosodo, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "72c3005b-2497-41d7-b315-4f45cea6fc4f",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C15",
+      "claim": "The OSVZ plays a significant role in the proliferation process and affects the size and complexity of the human cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "The OSVZ seems to play a significant role in the proliferation process and affects the size and complexity of the human cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the evidence presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "7c2dbe8a-a1aa-40eb-aed8-da2499f41101",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C16",
+      "claim": "The wave of cortical neurogenesis coincides with cell division in the OSVZ.",
+      "claim_type": "EXPLICIT",
+      "source": "The evidence for this allegation is the wave of cortical neurogenesis that coincides with the cell division in the OSVZ (Lukaszewicz et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Lukaszewicz et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "059999e0-6b14-4453-be13-b8d951b31d7b",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C17",
+      "claim": "High proliferation in the OSVZ coincides with significant tangential expansion of the cortical layers.",
+      "claim_type": "EXPLICIT",
+      "source": "At the macroscopic scale, the high proliferation in the OSVZ coincides with a significant tangential expansion of the cortical layers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an observed correlation between OSVZ proliferation and cortical expansion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "817fc967-e9ef-40e6-a303-f86ab5c7f139",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C18",
+      "claim": "Tangential expansion of cortical layers is an essential factor for the formation of cortical folds.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter is an essential factor for the formation of cortical folds (Reillo et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Reillo et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "afa88039-97b5-4296-9bf4-f1fbc799ea22",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C19",
+      "claim": "It remains unknown how exactly the proliferation process in the OSVZ affects gyrification of the forming cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, it remains unknown, how exactly this proliferation process in the OSVZ affects gyrification of the forming cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a knowledge gap that the study aims to address.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "36528388-37c9-44cb-987f-9567f2c82bc2",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C20",
+      "claim": "Forces generated due to cellular processes may act as a link to understand the underlying mechanisms behind cortical folding.",
+      "claim_type": "EXPLICIT",
+      "source": "From a mechanics point of view, forces that are generated due to cellular processes may act as a link to understand the underlying mechanisms behind cortical folding (Budday et al., 2015b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Budday et al., 2015b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "392eeeed-eede-4830-8312-c23f1d3644c8",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C21",
+      "claim": "It is not possible to capture the folding mechanism without considering both biological and mechanical perspectives at the same time.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it will not be possible to capture the folding mechanism without considering both perspectives at the same time (de Rooij and Kuhl, 2018; Zarzor et al., 2021; Wang et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to de Rooij and Kuhl, 2018; Zarzor et al., 2021; and Wang et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "c94ae0dd-5503-444a-9427-18af595c8218",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C22",
+      "claim": "Around gestational week 5, neuroepithelial cells transform into radial glial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Around gestational week 5, these cells locate near cerebral ventricles, in the VZ, where they undergo interkinetic nuclear migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a developmental process at a specific gestational time point.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "498bfd76-6252-4ae7-a3b4-f06bea8c4461",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C23",
+      "claim": "Symmetric division behavior of radial glial cells leads to increased thickness and surface area of the VZ.",
+      "claim_type": "EXPLICIT",
+      "source": "The associated symmetric division behavior leads to a significant increase in the number of radial glial cells and results in both increased thickness and surface area of the VZ (Blows, 2003; Fish et al., 2008; Bystron et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Blows, 2003; Fish et al., 2008; and Bystron et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "5e942f0f-d81f-4553-8d24-3166f3858dd7",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C24",
+      "claim": "Radial glial cells switch to asymmetric division behavior and generate intermediate progenitor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, the cells switch to an asymmetric division behavior and generate intermediate progenitor cells (Noctor et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Noctor et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "994375fa-3494-4bb8-82dd-a7941a714302",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C25",
+      "claim": "Intermediate progenitor cells migrate to the subventricular zone where they proliferate and produce neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter migrate to the subventricular zone, where they proliferate and produce neurons, as illustrated in Figure 1 (Noctor et al., 2007; Pebworth et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations to Noctor et al., 2007 and Pebworth et al., 2021, and illustrated in Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "31b87236-955c-4323-81ba-f9be98a4acd3",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C26",
+      "claim": "The majority of cortical neurons are produced by intermediate progenitor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultimately, the majority of cortical neurons are produced by intermediate progenitor cells (Lui et al., 2011; Lib\u00e9-Philippot and Vanderhaeghen, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Lui et al., 2011 and Lib\u00e9-Philippot and Vanderhaeghen, 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "f1207240-2e5e-472c-883a-9c2228028081",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C27",
+      "claim": "The migration process starts around gestational week 6.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the radial unit hypothesis proposed by Pasko Rakic over 30 years ago, the radial glial cell fibers organize the migration process, which starts around gestational week 6 (Nonaka-Kinoshita et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Nonaka-Kinoshita et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "a1c4bc9f-0e61-4aaf-a815-60422b25984b",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C28",
+      "claim": "Radial glial cell fibers form a scaffold to guide neurons during their migration from the proliferating zones to the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "He postulated that these fibers form a scaffold to guide neurons during their migration from the proliferating zones to their final destination in the cortex, which forms the outer brain surface (Rakic, 1988; Lui et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Rakic, 1988 and Lui et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "ad3105ed-c2f9-4c59-a5fe-110229476f73",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C29",
+      "claim": "In gyrencephalic species, radial glial cell fibers have a characteristic fan-like distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "In gyrencephalic species, those fibers have a characteristic fan-like distribution (Borrell and G\u00f6tz, 2014; Nonaka-Kinoshita et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Borrell and G\u00f6tz, 2014 and Nonaka-Kinoshita et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "058433fe-8942-46c4-b943-a93992b32455",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C30",
+      "claim": "Computational analyses support that the fan-like distribution of radial glial cell fibers is the result rather than the cause of cortical folding.",
+      "claim_type": "EXPLICIT",
+      "source": "Our recent computational analyses support the latter, i.e., that it is the result of cortical folding (Zarzor et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Zarzor et al., 2021, which is work by the authors.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "f2edf0f2-d418-47e7-92ba-29bd37edd429",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C31",
+      "claim": "Migrated neurons organize themselves in the six-layered cortex in an inside-out sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "The migrated neurons finally organize themselves in the six-layered cortex in an inside-out sequence, where the early-born neurons occupy the inner layers (Gilmore and Herrup, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Gilmore and Herrup, 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "778ad6a4-3fcf-41ed-bbc2-718212d09292",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C32",
+      "claim": "Until gestational week 23, the outer brain surface is still smooth, although the bottom four layers of the cortex are already filled with neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Until gestational week 23, the outer brain surface is still smooth, although the bottom four layers of the cortex are already filled with neurons (Shinmyo et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Shinmyo et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "391be8f1-4265-4e6a-91a8-61e4e05aa1c2",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C33",
+      "claim": "The first folds appear between gestational weeks 20 and 28, as the cortical layer significantly expands tangentially.",
+      "claim_type": "EXPLICIT",
+      "source": "The first folds appear between gestational weeks 20 and 28, as the cortical layer significantly expands tangentially (Budday et al., 2015b; Habas et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Budday et al., 2015b and Habas et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "02529df5-7f72-4894-8aba-d22c28558c7d",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C34",
+      "claim": "At around gestational week 25, cortical neuronal connectivity emerges and comes along with the horizontal elongation of neuronal dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, at around gestational week 25, the cortical neuronal connectivity emerges and comes along with the horizontal elongation of neuronal dendrites (Takahashi et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Takahashi et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "4a88a0f8-0a4b-43e9-be23-1da7483682b1",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C35",
+      "claim": "Around gestational week 11, the original radial glial cells switch from producing intermediate progenitor cells to producing outer radial glial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "At the beginning of the second trimester, around gestational week 11, the original radial glial cells switch from producing intermediate progenitor cells to producing a special kind of cells that is found in all gyrencephalic species but is enriched in the human brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a developmental transition at a specific gestational time point.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "f607b941-ab8c-4c23-bcb4-02d990fb4eac",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C36",
+      "claim": "Outer radial glial cells (ORGCs) are similar to radial glial cells in terms of shape and function but migrate to the OSVZ after they are born.",
+      "claim_type": "EXPLICIT",
+      "source": "The newly generated cells are similar to the radial glial cells in terms of shape and function, but unlike the original radial glial cells, they migrate to the outer layer of the subventricular zone, referred to as OSVZ, after they are born. Therefore, they are called outer radial glial cells (ORGCs) (Lui et al., 2011; Fietz et al., 2010; Hansen et al., 2010; Reillo et al., 2011; Nonaka-Kinoshita et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Lui et al., 2011; Fietz et al., 2010; Hansen et al., 2010; Reillo et al., 2011; and Nonaka-Kinoshita et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "6964f81f-392d-4c01-b0b9-325fc2b629c0",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C37",
+      "claim": "Original radial glial cells have a bipolar morphology with two processes, while ORGCs have a unipolar structure with only a single process extending to the outer cortical surface.",
+      "claim_type": "EXPLICIT",
+      "source": "While the original radial glial cells have a bipolar morphology with two processes \u2013 one extending to the cerebral ventricle and one to the outer cortical surface \u2013 the ORGCs have a distinct unipolar structure with only a single process extending to the outer cortical surface (Hansen et al., 2010; Betizeau et al., 2013; Reillo et al., 2011; Nonaka-Kinoshita et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Hansen et al., 2010; Betizeau et al., 2013; Reillo et al., 2011; and Nonaka-Kinoshita et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "a62fecb9-88e6-4786-bac6-97d70632338a",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C38",
+      "claim": "The OSVZ shows a significantly more pronounced radial expansion compared to the inner subventricular zone and VZ between gestational weeks 11.5 and 32.",
+      "claim_type": "EXPLICIT",
+      "source": "The OSVZ shows a significantly more pronounced radial expansion compared to the inner subventricular zone and VZ between gestational weeks 11.5 and 32.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an observed developmental phenomenon.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "ea6dbb37-4ff7-47ca-8ec7-3f6c7251afbe",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C39",
+      "claim": "ORGCs translocate rapidly in radial direction before they divide, a behavior referred to as 'mitotic small translocation (MST)'.",
+      "claim_type": "EXPLICIT",
+      "source": "The immediate reason causing this difference is the characteristic division behavior of ORGCs: they translocate rapidly in radial direction before they divide, which scientists have referred to as 'mitotic small translocation (MST)' (Fietz et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Fietz et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "aa866c2e-8310-431c-94a4-ad9c28c34d6d",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C40",
+      "claim": "The MST behavior pushes the boundary of the OSVZ outward, which increases its capacity to produce new neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the MST behavior pushes the boundary of the OSVZ outward, which increases its capacity to produce new neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the functional consequence of MST behavior.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "56af4b64-8d53-40d2-98ca-d19b81074901",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C41",
+      "claim": "Intermediate progenitor cells have enough space to undergo multiple rounds of division before producing neurons, which increases the overall number of generated neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The intermediate progenitor cells have enough space to undergo multiple rounds of division before producing neurons, which increases the overall number of generated neurons (Kriegstein et al., 2006; Lui et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Kriegstein et al., 2006 and Lui et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "b322a9dd-f7c1-40c8-b541-41316e04c524",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C42",
+      "claim": "ORGCs divide symmetrically and asymmetrically to produce further ORGCs and intermediate progenitor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The ORGCs, like radial glial cells, play an important role in the proliferation process: they divide symmetrically and asymmetrically to produce further ORGCs and intermediate progenitor cells (Lib\u00e9-Philippot and Vanderhaeghen, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Lib\u00e9-Philippot and Vanderhaeghen, 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "35a6c5e2-f94f-4abb-86b2-1b00bd808148",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C43",
+      "claim": "Intermediate progenitor cells divide to generate a pair of neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Intermediate progenitor cells divide to generate a pair of neurons (Lui et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Lui et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "d4cbc9ba-cdd5-43ff-9640-bda4966ed18a",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C44",
+      "claim": "40% of produced neurons are generated by ORGCs at gestational week 13, increasing to 60% by week 14, and exceeding 75% by week 15.5.",
+      "claim_type": "EXPLICIT",
+      "source": "According to previous studies, 40% of produced neurons are generated by ORGCs at gestational week 13, but this ratio increases to 60% by gestational week 14, and exceeds 75% by gestational week 15.5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references previous studies with specific quantitative data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "628e0a93-70da-4cd5-99ed-85b38c778784",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C45",
+      "claim": "After gestational week 17, ORGCs become the only source of cortical neurons in the upper cortical layers.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, after gestational week 17, the ORGCs become the only source of cortical neurons in the upper cortical layers (Hansen et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Hansen et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "81bac39a-cc55-4455-8dd2-206670b8f6e3",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C46",
+      "claim": "ORGCs generate additional scaffolds that elongate to the outer brain surface and serve as paths for neuronal migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides their role in increasing the number of neurons, the ORGCs generate additional scaffolds that elongate to the outer brain surface and serve as paths for neuronal migration (Llinares-Benadero and Borrell, 2019; Nonaka-Kinoshita et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Llinares-Benadero and Borrell, 2019 and Nonaka-Kinoshita et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "be1b3ca5-c056-4271-aada-480a1d9dd028",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C47",
+      "claim": "The neurogenesis of the human cortex can be divided into two main stages: continuous scaffold migration (until week 15) and discontinuous migration (after week 17).",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to other mammals, the neurogenesis of the human cortex can thus be divided into two main stages. The first stage is characterized by migration along a continuous scaffold consisting of radial glial cell fibers, which run from the ventricular surface to the outer cortical layer around gestational week 15. During the second stage, the migration path switches to a discontinuous form. After gestational week 17, the radial glial cell fibers run from the ventricular surface to the inner subventricular zone, while ORGC fibers run from the OSVZ to the outer brain surface, as indicated in Figure 1 (Nowakowski et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by a citation to Nowakowski et al., 2016 and illustrated in Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "c1a4bb4a-64d8-457b-a7e8-bc4eef8767ae",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C48",
+      "claim": "Migrating neurons follow a sinuous path through numerous radial fibers before they reach their final location in the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, migrating neurons follow a sinuous path through numerous radial fibers before they reach its final location in the cortex (Lui et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Lui et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "4005175e-213e-4f77-b10d-3c10dc492892",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C49",
+      "claim": "A reduced number of ORGCs leads to reduced tangential expansion and less folded or lissencephalic cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies show that a reduced number of ORGCs lead to reduced tangential expansion. In these cases, the cortex is less folded or even lissencephalic (Poluch and Juliano, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Poluch and Juliano, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "2a729d00-7204-44a4-9bec-b7db033294b6",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C50",
+      "claim": "Increasing the number of ORGCs leads to more excessive folding.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, increasing the number of ORGCs leads to more excessive folding (Florio et al., 2017; Borrell, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Florio et al., 2017 and Borrell, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "46fc4782-f9ec-4dae-a33e-63c7820633b6",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C51",
+      "claim": "It remains unknown whether the effects of ORGCs on folding are a result of their specific proliferation behavior or the associated scaffold of ORGC fibers.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, it remains unknown whether these effects are a result of the specific proliferation behavior of ORGCs or the associated scaffold of ORGC fibers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a knowledge gap in understanding ORGC function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "b29208fd-ba90-4368-a6b5-4605c9eb5804",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C52",
+      "claim": "The existence of ORGCs is a necessary but not sufficient condition for cortical folding.",
+      "claim_type": "EXPLICIT",
+      "source": "What is known, though, is that the existence of ORGCs is a necessary but not sufficient condition for cortical folding (Llinares-Benadero and Borrell, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Llinares-Benadero and Borrell, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "9bee8998-dce7-40ec-9f65-e9c80c459fb5",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C53",
+      "claim": "Around gestational week 28, the migration and proliferation processes come to an end.",
+      "claim_type": "EXPLICIT",
+      "source": "Around gestational week 28, the migrating neurons occupy the first (top) cortical layer, while the migration and proliferation processes come to an end.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a developmental milestone.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "0f69cb87-1f7b-4442-8a77-0c1f2197a0a7",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C54",
+      "claim": "After finishing their role during neurogenesis, radial glial cells and ORGCs switch to produce different types of glial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "After finishing their role during the neurogenesis stage, radial glial cells and ORGCs switch to produce different types of glial cells, e.g., astrocytes and oligodendrocytes (Schmechel and Rakic, 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Schmechel and Rakic, 1979.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "20e3fe46-f366-42c7-b5fc-5e77e73f9a73",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C55",
+      "claim": "Radial glial cells may later convert into ependymal cells that locate around the cerebral ventricles.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, radial glial cells may later convert into ependymal cells that locate around the cerebral ventricles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a potential fate of radial glial cells.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "dc5068c4-2a33-4224-8784-9355b3428223",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C56",
+      "claim": "Oligodendrocytes form myelin sheaths around neuronal axons, giving the subcortical layer its characteristic white color.",
+      "claim_type": "EXPLICIT",
+      "source": "The oligodendrocytes form myelin sheaths around neuronal axons, wherefore the subcortical layer gains its characteristic white color.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about oligodendrocyte function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "2403f818-93b0-4b1f-95ed-9805d4c0dfd4",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C57",
+      "claim": "The model uses the theory of finite growth to describe brain growth.",
+      "claim_type": "EXPLICIT",
+      "source": "To mathematically describe brain growth, we use the theory of nonlinear continuum mechanics supplemented by the theory of finite growth (Rodriguez et al., 1994; G\u00f6ktepe et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the theoretical framework used in the model, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "57a568d6-9110-497c-b167-9fb81c8e4421",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C60",
+      "claim": "The isotropic neo-Hookean constitutive model best represents the material behavior of brain tissue during cortical folding.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous studies have shown that the isotropic neo-Hookean constitutive model best represents the material behavior of brain tissue during cortical folding (Budday et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "055467c6-0b5c-4f21-8605-8982cdec08df",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C61",
+      "claim": "Viscous effects become less relevant in the case of a slow process like brain development occurring over weeks and months.",
+      "claim_type": "EXPLICIT",
+      "source": "In our case, we consider a nonlinear hyperelastic material model as viscous effects, which have been observed for higher strain rates, become less relevant in the case of a slow process like brain development occurring over the course of weeks and months, as discussed in Budday et al., 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reasoning about material behavior supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "44ea6442-160a-4e92-b985-db0c9c035492",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C62",
+      "claim": "The cortical stiffness continuously changes during human brain development due to changes in the local microstructure.",
+      "claim_type": "EXPLICIT",
+      "source": "Our recent numerical simulation study suggested that the cortical stiffness continuously changes during human brain development due to the changes in the local microstructure (Zarzor et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "a95d5f83-caf4-421c-8f7d-00a10149ce82",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C63",
+      "claim": "During cellular migration, the subcortical layers expand isotropically.",
+      "claim_type": "EXPLICIT",
+      "source": "As it controls the amount and direction of growth, we need to consider how cellular processes affect the physiological growth behavior in order to find an appropriate formulation. During cellular migration, the subcortical layers expand isotropically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an observed growth behavior.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "4aa639e4-0c38-446b-af57-f2869c92aafb",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C64",
+      "claim": "Under the effect of neuronal connectivity, the cortex grows more pronounced in circumferential than in radial direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, under the effect of neuronal connectivity, the cortex grows \u2013 more pronounced in circumferential than in radial direction \u2013 as illustrated in Figure 2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes an observed growth behavior, illustrated in Figure 2.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "465663ef-9536-4cd8-9371-68db3d7f56ab",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C65",
+      "claim": "The amount of growth is directly related to the cell density \u2013 the higher the cell density, the more growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Through Equation 8, the amount of growth is directly related to the cell density \u2013 the higher the cell density, the more growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a relationship in the model formulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "f1cc5b1f-0a6c-47ac-99e7-ed21b94d9837",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C68",
+      "claim": "The OSVZ is 1.5 times thicker than the inner subventricular zone at gestational week 17.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis of the histologically stained sections of the human fetal brain (see Figure 3) also shows that the OSVZ is 1.5 times thicker than the inner subventricular zone, even though it did not emerge at an earlier stage of development (the inner subventricular zone emerges around gestational week 7 and the OSVZ around gestational week 11).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement from histologically stained sections shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "320ad0c8-86f5-49b9-86b0-7db7dc4b8446",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C73",
+      "claim": "The outer brain maintains its smooth surface until the first instability point, where compressive stresses in the cortex reach a critical value and the cortex starts to fold.",
+      "claim_type": "EXPLICIT",
+      "source": "The outer brain maintains its smooth surface until the first instability point, where compressive stresses in the cortex induced by cell-density-driven cortical growth reach a critical value, the cortex starts to fold and sulci deepen rapidly and uniformly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mechanical instability mechanism observed in simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "98302bbe-c38c-4844-b702-0db8ab5be55b",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C74",
+      "claim": "After a second instability point, only every second sulcus continues to deepen, while those in between become shallower, resulting in a period doubling pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "After a second instability point, where a secondary instability occurs and we see a pitchfork-like bifurcation in Figure 5, only every second sulcus continues to deepen, while those in between become shallower again. We refer to the resulting folding pattern as period doubling pattern.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a phenomenon observed in simulations, illustrated in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "35ea424b-b717-44bf-aad0-b64de36d7b9d",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C76",
+      "claim": "In the case of varying stiffness, there is a more noticeable change in the folding patterns with different OSVZ division rates.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of varying stiffness, there is a more noticeable change in the folding patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "d47c4890-19a5-4f0f-947e-50f2346a4c8b",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C78",
+      "claim": "The proliferation in the OSVZ enhances secondary mechanical instabilities and leads to more complex folding patterns earlier.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the proliferation in the OSVZ enhances secondary mechanical instabilities and leads to more complex folding patterns earlier.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "f1ae3879-cab9-4dab-802d-a655e4aa567c",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C82",
+      "claim": "ORGC proliferation decreases the time required to reach the final folding pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the ORGC proliferation decreases the time required to reach the final folding pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "267047b7-cc50-4d1f-99ba-24def4ecd2f3",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C84",
+      "claim": "Convolutions appear earlier when the division rate in the OSVZ is increased at the expense of decreasing it in the VZ.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, not only the cell density is affected by increasing the division rate in the OSVZ (at the expense of decreasing it in the VZ), but also convolutions (cortical folds) appear earlier, as illustrated by the curve for the folding evolution (Figure 10, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from simulation results shown in Figure 10.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "1c412376-4c14-4484-87aa-a177f3b5bd3c",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C85",
+      "claim": "The results indicate an unproportionally strong effect of ORGC proliferation in the OSVZ on cellular brain development and cortical folding.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results thus indicate an unproportionally strong effect of ORGC proliferation in the OSVZ on cellular brain development and cortical folding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "1a217846-8710-4ee3-8e50-4e4c95c55708",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C86",
+      "claim": "The unproportionally strong effect of ORGC proliferation is attributed to the larger volume occupied by the OSVZ compared to the VZ.",
+      "claim_type": "EXPLICIT",
+      "source": "We attribute this observation to the larger volume occupied by the OSVZ compared to the VZ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation proposed by the authors for their simulation results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "b01b6c19-bd93-466c-abd7-a0d0a9e1819f",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C87",
+      "claim": "With increasing MST factor, the value of the maximum cell density in the domain increases exponentially.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 11 shows the temporal evolution of the maximum cell density and the folding evolution between time steps 250 and 430 for different values of the MST factor. Our simulations indicate that with increasing MST factor, the value of the maximum cell density in the domain increases exponentially.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from simulation results shown in Figure 11.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "8dd02fed-77d2-47dd-a874-455c12ac4f89",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C88",
+      "claim": "The OSVZ becomes thicker beneath gyri and thinner beneath sulci after cortical folds emerge.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the OSVZ has a constant thickness in our model throughout the entire domain in the intermediate stage of human brain development (before cortical folds emerge), as demonstrated in red in Figure 12, left, the simulations show that this quickly changes after the first folds start to emerge. The thickness of the OSVZ starts to show spatial variations and becomes thicker beneath gyri and thinner beneath sulci, as shown in Figure 12, right.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from simulation results shown in Figure 12.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "8423ea1a-56bd-47c2-a7bc-8be7d0bac0fa",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C89",
+      "claim": "This result is consistent with what was previously observed experimentally in the human brain.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is consistent with what was previously observed experimentally in the human brain (Kostovi\u0107 et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares simulation results with experimental observations, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "af561869-2ac4-4760-b854-231433fb56fa",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C90",
+      "claim": "The study indicates that the mechanics-driven process of cortical folding is sufficient to induce OSVZ variations.",
+      "claim_type": "EXPLICIT",
+      "source": "While it is to date not clear whether this phenomenon is rather the cause or the result of cortical folding, our study clearly indicates that the (mechanics-driven) process of cortical folding is sufficient to induce OSVZ variations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "5806e6f2-2d43-41b9-bb2a-d22eaa0159f4",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C91",
+      "claim": "The forces generated by the mechanical growth problem not only fold the cortical layer but also lead to undulations in the deeper zones.",
+      "claim_type": "EXPLICIT",
+      "source": "The forces generated by the mechanical growth problem not only fold the cortical layer but also lead to undulations in the deeper zones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "ebb17aa7-93c4-4bf2-83df-60b01be32db3",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C92",
+      "claim": "The deeper proliferating zones (inner subventricular zone and VZ) remain equally smooth as the ventricular surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, the deeper proliferating zones (i.e., inner subventricular zone and VZ) remain equally smooth as the ventricular surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "87362443-80d6-410d-83a7-79d8ca35fb74",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C93",
+      "claim": "Previous studies have emphasized the existence of variations in the ORGC proliferation rate in different brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have emphasized the existence of variations in the ORGC proliferation rate in different brain regions (Hansen et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This references previous studies, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "e24c38ba-8104-4314-8b9f-c1bf0389d1ed",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C94",
+      "claim": "Some studies have suggested that the proliferation rate is higher beneath gyri than beneath sulci.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of those have suggested that the proliferation rate is higher beneath gyri than beneath sulci (Borrell, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This references previous studies, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "bf9383fb-3284-43cc-aee7-624f91962f0f",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C95",
+      "claim": "In the ferret brain, a region close in structure to the primate's OSVZ shows a unique mosaic-like structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, in the ferret brain, where a region close in structure to the primate's OSVZ was found, this region shows a unique mosaic-like structure (Fietz et al., 2010; Reillo and Borrell, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This references previous studies, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "d9bc8bc4-9b52-4381-adf9-465c87835532",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C97",
+      "claim": "Regions with higher proliferation rates show a higher cell density in the cortex than regions nearby.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, those regions also show a higher cell density in the cortex than regions nearby.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "b8437a6e-a1a4-454a-b583-78a88c3db51d",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C98",
+      "claim": "Both heterogeneous proliferation cases lead to final patterns with similar distances between sulci and folding complexity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, both cases lead to final patterns with similar distances between sulci and folding complexity (one period doubling pattern).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "a74c50a5-05d1-4736-8f24-ddb10a98f3fe",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C99",
+      "claim": "Gyri and sulci are distributed equally regardless of the division rate.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, gyri and sulci are distributed equally \u2013 regardless of the division rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "cff76f0b-db2a-4c8b-b6ff-2707b7988e93",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C100",
+      "claim": "Inhomogeneous cell proliferation in the OSVZ controls the location of first gyri and sulci but does not necessarily affect the distance between sulci and the overall complexity of the emerging folding pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we may conclude that inhomogeneous cell proliferation in the OSVZ controls the location of first gyri and sulci but does not necessarily affect the distance between sulci (also referred to as folding wavelength) and the overall complexity of the emerging folding pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "6b59c570-f349-4361-9fc7-82815b63a104",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C101",
+      "claim": "This agrees well with the previous finding that the characteristic wavelength of folding remains relatively stable for inhomogeneous cortical growth patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "This agrees well with our previous finding that the characteristic wavelength of folding remains relatively stable for inhomogeneous cortical growth patterns (Budday and Steinmann, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares current results with previous findings, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "6e93febd-9437-425f-bac2-79274cee8f62",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C102",
+      "claim": "The simulation results are consistent with the previously found remarkable surface expansion above the regions with higher proliferation in the OSVZ.",
+      "claim_type": "EXPLICIT",
+      "source": "The simulation results are also consistent with the previously found remarkable surface expansion above the regions with higher proliferation in the OSVZ (Llinares-Benadero and Borrell, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares simulation results with previous findings, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "ea7e2640-8583-4dcf-82a1-f0d185f2c22b",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C103",
+      "claim": "The simulations demonstrate how the proliferation in the OSVZ enhances the complexity of cortical folding patterns in 2D and 3D.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simulations have demonstrated how the proliferation in the OSVZ enhances the complexity of cortical folding patterns in 2D and 3D.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes findings from the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "038254f1-7fa2-42df-be0b-230f0505a4cc",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C104",
+      "claim": "The existence of the OSVZ particularly triggers the emergence of secondary mechanical instabilities leading to more complex folding patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that the existence of the OSVZ particularly triggers the emergence of secondary mechanical instabilities leading to more complex folding patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "b9d1ccd8-67cb-4c7a-9487-0dad87c5aefd",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C105",
+      "claim": "The proliferation of ORGCs reduces the time required to induce the mechanical instability and thus cortical folding.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the proliferation of ORGCs reduces the time required to induce the mechanical instability and thus cortical folding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "94d0e15c-9210-43b1-8511-ae28ec8580be",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C106",
+      "claim": "The generated mechanical forces not only 'fold' the cortex but also deeper subcortical zones including the OSVZ.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, our simulation results suggest that the generated mechanical forces not only 'fold' the cortex but also deeper subcortical zones including the OSVZ, which becomes thicker beneath gyri and thinner beneath sulci as a result of cortical folding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "95b085c8-9fd0-48fa-80ff-1fa2ad579421",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C107",
+      "claim": "The analyses suggest that the purely mechanics-driven process of cortical folding is sufficient to induce regional differences in the thickness of the OSVZ.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, our analyses suggest that the purely mechanics-driven process of cortical folding is sufficient to induce regional differences in the thickness of the OSVZ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "06dfeda8-0a75-4b8f-823f-596b7c112f98",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C108",
+      "claim": "The computational framework can be used to better understand physiological brain development and pathological processes involving abnormal cortical folding patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "In the future, the computational framework can be used to not only better understand physiological brain development but also pathological processes \u2013 especially those involving abnormal cortical folding patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future applications of the model.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "279c78d6-4c3f-4efa-946b-9f5d0db09a0d",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C109",
+      "claim": "The computational model can help identify the main controlling parameters in brain development.",
+      "claim_type": "EXPLICIT",
+      "source": "The computational model is able to shed new light on the interplay between the multiple processes at different scales and can help identify the main controlling parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the capabilities of the model.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "ce455074-b225-4d8f-9661-e106e732c8a0",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "claim_id": "C110",
+      "claim": "The computational model can only complement, not substitute, sophisticated experimental approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it can only complement, not substitute, sophisticated experimental approaches that are still needed to answer questions, e.g., regarding the functional difference between progenitor cell types and corresponding lineage decisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges the limitations of the computational approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f23aee79-1193-429d-b6a0-c302b53ef0f8",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a multifield computational model coupling cell proliferation, migration at the cell scale with growth and cortical folding at the organ scale. The model combines advection-diffusion equations with finite growth theory, uses neo-Hookean material properties, and was validated against histologically stained human fetal brain sections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6 and C57-C65 collectively describe the model development and validation. The theoretical framework (finite growth theory, neo-Hookean model) is well-established and appropriately cited. The validation against histological data (C6, Figure 3-4) provides empirical support. The model formulation is mathematically coherent with appropriate coupling between cellular and mechanical processes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "10c5df73-2093-4ad3-b2f3-0cfd39d06ee2",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Simulations demonstrate that OSVZ proliferation enhances cortical folding complexity by triggering secondary mechanical instabilities leading to period doubling patterns. The effect is more pronounced with varying cortical stiffness than constant stiffness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C74 describe the mechanical instability mechanism with clear observational data from simulations (Figure 5). Claims C76, C78, C103-C104 show that OSVZ proliferation increases folding complexity through secondary instabilities. The results are internally consistent across multiple simulation conditions (Figures 7-8) and the period doubling phenomenon is well-documented in the authors' prior work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "be987dbe-2a03-49c0-be0d-743a8f1c630e",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "OSVZ proliferation accelerates cortical folding by reducing the time required to reach mechanical instability. The OSVZ has a disproportionately strong effect on brain development compared to the VZ, attributed to its larger volume.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82, C84-C86, and C105 are supported by simulation data in Figures 9-10 showing temporal evolution of cell density and folding. The comparison between different VZ/OSVZ division rate combinations (C84-C86) provides clear evidence for the disproportionate effect. However, the mechanistic explanation (C86) is speculative and would benefit from additional analysis to rule out alternative explanations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "c8bf4b21-2382-4b16-b358-e517c74b5740",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Increasing the MST (mitotic small translocation) factor leads to exponential increases in maximum cell density in the domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C87 is directly supported by simulation results shown in Figure 11. The exponential relationship is clearly demonstrated across multiple MST factor values. This result is consistent with the biological mechanism of OSVZ expansion through ORGC translocation behavior.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "72782247-8ec8-46a7-8701-db7ca61dbdc2",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Cortical folding mechanically induces spatial variations in OSVZ thickness, with the OSVZ becoming thicker beneath gyri and thinner beneath sulci. This mechanics-driven process is sufficient to explain experimentally observed OSVZ variations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C92 and C106-C107 describe a key bidirectional finding: folding affects OSVZ structure. The simulation results (Figure 12) clearly show this pattern, and C89 confirms consistency with experimental observations (Kostovi\u0107 et al., 2002). The conclusion (C90, C107) that mechanics alone is sufficient is well-supported by the model results, though the authors appropriately note (C90) that causality in actual development remains unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "9a98ea81-a480-4770-929c-3ade6cf56481",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Inhomogeneous OSVZ proliferation controls the initial location of gyri and sulci but does not affect the characteristic wavelength or overall complexity of the folding pattern. This finding is consistent with prior work on cortical growth patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C102 describe simulation results with heterogeneous proliferation patterns (Figures 13-14). The key finding (C100) that spatial heterogeneity affects location but not wavelength is clearly demonstrated and consistent with the authors' previous work (C101). The comparison with experimental observations (C93-C95, C102) provides additional validation. The result is logically sound given the mechanical instability mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "f9111264-098f-4a56-b8ae-a7ee903d83d4",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The OSVZ plays a significant role in determining human cortex size and complexity, and mechanical forces link cellular processes to cortical folding, but the exact mechanisms remain insufficiently understood. A combined biological-mechanical approach is necessary.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 and C15-C21 establish the scientific context and knowledge gaps. These are well-supported by appropriate citations and represent accurate characterizations of the field. The identification of the knowledge gap (C3, C19) appropriately motivates the study. The necessity of combined approaches (C21) is well-justified by cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "e6d4229b-61cc-44d2-b940-30576436be77",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The manuscript provides a comprehensive review of cellular processes during human brain development, including the roles of radial glial cells, intermediate progenitor cells, ORGCs, neuronal migration, and the unique features of the human OSVZ.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C56 constitute a detailed literature review of brain development. Each claim is supported by appropriate citations to established work. The review accurately represents current understanding of cellular mechanisms, developmental timelines, and species differences. This provides essential biological context for the computational model but does not constitute a novel finding of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    },
+    {
+      "id": "1d1b8c1d-0794-42bc-9a92-9eb65e43e140",
+      "content_id": "c6050892-2d70-48e2-805b-51e7884aec32",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The computational framework can be used for understanding both physiological and pathological brain development, can identify controlling parameters, but can only complement, not substitute, experimental approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C108-C110 are speculative statements about future applications and limitations. While C110 appropriately acknowledges model limitations, C108-C109 make claims about future utility that are not demonstrated in the current work. These represent reasonable expectations but lack empirical validation for pathological processes or parameter identification beyond what was shown.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:16:54.088156Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d429fc17-7e7e-4240-994b-3e31a57dc717",
+      "result_id": "f23aee79-1193-429d-b6a0-c302b53ef0f8"
+    },
+    {
+      "claim_id": "4e133351-7d23-4f70-8232-e143936035c2",
+      "result_id": "f23aee79-1193-429d-b6a0-c302b53ef0f8"
+    },
+    {
+      "claim_id": "2403f818-93b0-4b1f-95ed-9805d4c0dfd4",
+      "result_id": "f23aee79-1193-429d-b6a0-c302b53ef0f8"
+    },
+    {
+      "claim_id": "57a568d6-9110-497c-b167-9fb81c8e4421",
+      "result_id": "f23aee79-1193-429d-b6a0-c302b53ef0f8"
+    },
+    {
+      "claim_id": "055467c6-0b5c-4f21-8605-8982cdec08df",
+      "result_id": "f23aee79-1193-429d-b6a0-c302b53ef0f8"
+    },
+    {
+      "claim_id": "44ea6442-160a-4e92-b985-db0c9c035492",
+      "result_id": "f23aee79-1193-429d-b6a0-c302b53ef0f8"
+    },
+    {
+      "claim_id": "a95d5f83-caf4-421c-8f7d-00a10149ce82",
+      "result_id": "f23aee79-1193-429d-b6a0-c302b53ef0f8"
+    },
+    {
+      "claim_id": "4aa639e4-0c38-446b-af57-f2869c92aafb",
+      "result_id": "f23aee79-1193-429d-b6a0-c302b53ef0f8"
+    },
+    {
+      "claim_id": "465663ef-9536-4cd8-9371-68db3d7f56ab",
+      "result_id": "f23aee79-1193-429d-b6a0-c302b53ef0f8"
+    },
+    {
+      "claim_id": "f1cc5b1f-0a6c-47ac-99e7-ed21b94d9837",
+      "result_id": "10c5df73-2093-4ad3-b2f3-0cfd39d06ee2"
+    },
+    {
+      "claim_id": "320ad0c8-86f5-49b9-86b0-7db7dc4b8446",
+      "result_id": "10c5df73-2093-4ad3-b2f3-0cfd39d06ee2"
+    },
+    {
+      "claim_id": "98302bbe-c38c-4844-b702-0db8ab5be55b",
+      "result_id": "10c5df73-2093-4ad3-b2f3-0cfd39d06ee2"
+    },
+    {
+      "claim_id": "35ea424b-b717-44bf-aad0-b64de36d7b9d",
+      "result_id": "10c5df73-2093-4ad3-b2f3-0cfd39d06ee2"
+    },
+    {
+      "claim_id": "d47c4890-19a5-4f0f-947e-50f2346a4c8b",
+      "result_id": "10c5df73-2093-4ad3-b2f3-0cfd39d06ee2"
+    },
+    {
+      "claim_id": "ea7e2640-8583-4dcf-82a1-f0d185f2c22b",
+      "result_id": "10c5df73-2093-4ad3-b2f3-0cfd39d06ee2"
+    },
+    {
+      "claim_id": "038254f1-7fa2-42df-be0b-230f0505a4cc",
+      "result_id": "10c5df73-2093-4ad3-b2f3-0cfd39d06ee2"
+    },
+    {
+      "claim_id": "f1ae3879-cab9-4dab-802d-a655e4aa567c",
+      "result_id": "be987dbe-2a03-49c0-be0d-743a8f1c630e"
+    },
+    {
+      "claim_id": "267047b7-cc50-4d1f-99ba-24def4ecd2f3",
+      "result_id": "be987dbe-2a03-49c0-be0d-743a8f1c630e"
+    },
+    {
+      "claim_id": "1c412376-4c14-4484-87aa-a177f3b5bd3c",
+      "result_id": "be987dbe-2a03-49c0-be0d-743a8f1c630e"
+    },
+    {
+      "claim_id": "1a217846-8710-4ee3-8e50-4e4c95c55708",
+      "result_id": "be987dbe-2a03-49c0-be0d-743a8f1c630e"
+    },
+    {
+      "claim_id": "b9d1ccd8-67cb-4c7a-9487-0dad87c5aefd",
+      "result_id": "be987dbe-2a03-49c0-be0d-743a8f1c630e"
+    },
+    {
+      "claim_id": "b01b6c19-bd93-466c-abd7-a0d0a9e1819f",
+      "result_id": "c8bf4b21-2382-4b16-b358-e517c74b5740"
+    },
+    {
+      "claim_id": "8dd02fed-77d2-47dd-a874-455c12ac4f89",
+      "result_id": "72782247-8ec8-46a7-8701-db7ca61dbdc2"
+    },
+    {
+      "claim_id": "8423ea1a-56bd-47c2-a7bc-8be7d0bac0fa",
+      "result_id": "72782247-8ec8-46a7-8701-db7ca61dbdc2"
+    },
+    {
+      "claim_id": "af561869-2ac4-4760-b854-231433fb56fa",
+      "result_id": "72782247-8ec8-46a7-8701-db7ca61dbdc2"
+    },
+    {
+      "claim_id": "5806e6f2-2d43-41b9-bb2a-d22eaa0159f4",
+      "result_id": "72782247-8ec8-46a7-8701-db7ca61dbdc2"
+    },
+    {
+      "claim_id": "ebb17aa7-93c4-4bf2-83df-60b01be32db3",
+      "result_id": "72782247-8ec8-46a7-8701-db7ca61dbdc2"
+    },
+    {
+      "claim_id": "94d0e15c-9210-43b1-8511-ae28ec8580be",
+      "result_id": "72782247-8ec8-46a7-8701-db7ca61dbdc2"
+    },
+    {
+      "claim_id": "95b085c8-9fd0-48fa-80ff-1fa2ad579421",
+      "result_id": "72782247-8ec8-46a7-8701-db7ca61dbdc2"
+    },
+    {
+      "claim_id": "87362443-80d6-410d-83a7-79d8ca35fb74",
+      "result_id": "9a98ea81-a480-4770-929c-3ade6cf56481"
+    },
+    {
+      "claim_id": "e24c38ba-8104-4314-8b9f-c1bf0389d1ed",
+      "result_id": "9a98ea81-a480-4770-929c-3ade6cf56481"
+    },
+    {
+      "claim_id": "bf9383fb-3284-43cc-aee7-624f91962f0f",
+      "result_id": "9a98ea81-a480-4770-929c-3ade6cf56481"
+    },
+    {
+      "claim_id": "d9bc8bc4-9b52-4381-adf9-465c87835532",
+      "result_id": "9a98ea81-a480-4770-929c-3ade6cf56481"
+    },
+    {
+      "claim_id": "b8437a6e-a1a4-454a-b583-78a88c3db51d",
+      "result_id": "9a98ea81-a480-4770-929c-3ade6cf56481"
+    },
+    {
+      "claim_id": "a74c50a5-05d1-4736-8f24-ddb10a98f3fe",
+      "result_id": "9a98ea81-a480-4770-929c-3ade6cf56481"
+    },
+    {
+      "claim_id": "cff76f0b-db2a-4c8b-b6ff-2707b7988e93",
+      "result_id": "9a98ea81-a480-4770-929c-3ade6cf56481"
+    },
+    {
+      "claim_id": "6b59c570-f349-4361-9fc7-82815b63a104",
+      "result_id": "9a98ea81-a480-4770-929c-3ade6cf56481"
+    },
+    {
+      "claim_id": "6e93febd-9437-425f-bac2-79274cee8f62",
+      "result_id": "9a98ea81-a480-4770-929c-3ade6cf56481"
+    },
+    {
+      "claim_id": "ca9cc69c-204d-4b6a-a978-bb3d21d56fc5",
+      "result_id": "f9111264-098f-4a56-b8ae-a7ee903d83d4"
+    },
+    {
+      "claim_id": "754d3f7f-2804-4ba8-b21b-53a20ce25ef2",
+      "result_id": "f9111264-098f-4a56-b8ae-a7ee903d83d4"
+    },
+    {
+      "claim_id": "fd2a4892-6313-43e2-978c-589a9e7654ea",
+      "result_id": "f9111264-098f-4a56-b8ae-a7ee903d83d4"
+    },
+    {
+      "claim_id": "c7f269ba-86c5-4d00-bc4e-2ecd3f2da827",
+      "result_id": "f9111264-098f-4a56-b8ae-a7ee903d83d4"
+    },
+    {
+      "claim_id": "72c3005b-2497-41d7-b315-4f45cea6fc4f",
+      "result_id": "f9111264-098f-4a56-b8ae-a7ee903d83d4"
+    },
+    {
+      "claim_id": "059999e0-6b14-4453-be13-b8d951b31d7b",
+      "result_id": "f9111264-098f-4a56-b8ae-a7ee903d83d4"
+    },
+    {
+      "claim_id": "817fc967-e9ef-40e6-a303-f86ab5c7f139",
+      "result_id": "f9111264-098f-4a56-b8ae-a7ee903d83d4"
+    },
+    {
+      "claim_id": "afa88039-97b5-4296-9bf4-f1fbc799ea22",
+      "result_id": "f9111264-098f-4a56-b8ae-a7ee903d83d4"
+    },
+    {
+      "claim_id": "36528388-37c9-44cb-987f-9567f2c82bc2",
+      "result_id": "f9111264-098f-4a56-b8ae-a7ee903d83d4"
+    },
+    {
+      "claim_id": "392eeeed-eede-4830-8312-c23f1d3644c8",
+      "result_id": "f9111264-098f-4a56-b8ae-a7ee903d83d4"
+    },
+    {
+      "claim_id": "dd91427c-88c3-4450-b45f-aa0adb68eb4f",
+      "result_id": "e6d4229b-61cc-44d2-b940-30576436be77"
+    },
+    {
+      "claim_id": "bb83c7df-ae09-4016-ad04-97d50815c74c",
+      "result_id": "e6d4229b-61cc-44d2-b940-30576436be77"
+    },
+    {
+      "claim_id": "07f12bf2-4e7a-441a-9774-cd37682e010d",
+      "result_id": "e6d4229b-61cc-44d2-b940-30576436be77"
+    },
+    {
+      "claim_id": "a2ee1a18-d2e4-402a-ae70-83c64e4fdef6",
+      "result_id": "e6d4229b-61cc-44d2-b940-30576436be77"
+    },
+    {
+      "claim_id": "75d193fe-83f9-44ae-9dac-71c89eb51a3b",
+      "result_id": "e6d4229b-61cc-44d2-b940-30576436be77"
+    },
+    {
+      "claim_id": "e659afe7-9746-4c72-aa36-24782b4054d7",
+      "result_id": "e6d4229b-61cc-44d2-b940-30576436be77"
+    },
+    {
+      "claim_id": "ed3face6-f771-4f5e-b1b9-bb32f5e66fcc",
+      "result_id": "e6d4229b-61cc-44d2-b940-30576436be77"
+    },
+    {
+      "claim_id": "c44d1001-1908-4752-877a-7c52ba49775c",
+      "result_id": "e6d4229b-61cc-44d2-b940-30576436be77"
+    },
+    {
+      "claim_id": "c94ae0dd-5503-444a-9427-18af595c8218",
+      "result_id": "e6d4229b-61cc-44d2-b940-30576436be77"
+    },
+    {
+      "claim_id": "498bfd76-6252-4ae7-a3b4-f06bea8c4461",
+      "result_id": "e6d4229b-61cc-44d2-b940-30576436be77"
+    },
+    {
+      "claim_id": "5e942f0f-d81f-4553-8d24-3166f3858dd7",
+      "result_id": "e6d4229b-61cc-44d2-b940-30576436be77"
+    },
+    {
+      "claim_id": "994375fa-3494-4bb8-82dd-a7941a714302",
+      "result_id": "e6d4229b-61cc-44d2-b940-30576436be77"
+    },
+    {
+      "claim_id": "31b87236-955c-4323-81ba-f9be98a4acd3",
+      "result_id": "e6d4229b-61cc-44d2-b940-30576436be77"
+    },
+    {
+      "claim_id": "f1207240-2e5e-472c-883a-9c2228028081",
+      "result_id": "e6d4229b-61cc-44d2-b940-30576436be77"
+    },
+    {
+      "claim_id": "a1c4bc9f-0e61-4aaf-a815-60422b25984b",
+      "result_id": "e6d4229b-61cc-44d2-b940-30576436be77"
+    },
+    {
+      "claim_id": "ad3105ed-c2f9-4c59-a5fe-110229476f73",
+      "result_id": "e6d4229b-61cc-44d2-b940-30576436be77"
+    },
+    {
+      "claim_id": "058433fe-8942-46c4-b943-a93992b32455",
+      "result_id": "e6d4229b-61cc-44d2-b940-30576436be77"
+    },
+    {
+      "claim_id": "f2edf0f2-d418-47e7-92ba-29bd37edd429",
+      "result_id": "e6d4229b-61cc-44d2-b940-30576436be77"
+    },
+    {
+      "claim_id": "778ad6a4-3fcf-41ed-bbc2-718212d09292",
+      "result_id": "e6d4229b-61cc-44d2-b940-30576436be77"
+    },
+    {
+      "claim_id": "391be8f1-4265-4e6a-91a8-61e4e05aa1c2",
+      "result_id": "e6d4229b-61cc-44d2-b940-30576436be77"
+    },
+    {
+      "claim_id": "02529df5-7f72-4894-8aba-d22c28558c7d",
+      "result_id": "e6d4229b-61cc-44d2-b940-30576436be77"
+    },
+    {
+      "claim_id": "4a88a0f8-0a4b-43e9-be23-1da7483682b1",
+      "result_id": "e6d4229b-61cc-44d2-b940-30576436be77"
+    },
+    {
+      "claim_id": "f607b941-ab8c-4c23-bcb4-02d990fb4eac",
+      "result_id": "e6d4229b-61cc-44d2-b940-30576436be77"
+    },
+    {
+      "claim_id": "6964f81f-392d-4c01-b0b9-325fc2b629c0",
+      "result_id": "e6d4229b-61cc-44d2-b940-30576436be77"
+    },
+    {
+      "claim_id": "a62fecb9-88e6-4786-bac6-97d70632338a",
+      "result_id": "e6d4229b-61cc-44d2-b940-30576436be77"
+    },
+    {
+      "claim_id": "ea6dbb37-4ff7-47ca-8ec7-3f6c7251afbe",
+      "result_id": "e6d4229b-61cc-44d2-b940-30576436be77"
+    },
+    {
+      "claim_id": "aa866c2e-8310-431c-94a4-ad9c28c34d6d",
+      "result_id": "e6d4229b-61cc-44d2-b940-30576436be77"
+    },
+    {
+      "claim_id": "56af4b64-8d53-40d2-98ca-d19b81074901",
+      "result_id": "e6d4229b-61cc-44d2-b940-30576436be77"
+    },
+    {
+      "claim_id": "b322a9dd-f7c1-40c8-b541-41316e04c524",
+      "result_id": "e6d4229b-61cc-44d2-b940-30576436be77"
+    },
+    {
+      "claim_id": "35a6c5e2-f94f-4abb-86b2-1b00bd808148",
+      "result_id": "e6d4229b-61cc-44d2-b940-30576436be77"
+    },
+    {
+      "claim_id": "d4cbc9ba-cdd5-43ff-9640-bda4966ed18a",
+      "result_id": "e6d4229b-61cc-44d2-b940-30576436be77"
+    },
+    {
+      "claim_id": "628e0a93-70da-4cd5-99ed-85b38c778784",
+      "result_id": "e6d4229b-61cc-44d2-b940-30576436be77"
+    },
+    {
+      "claim_id": "81bac39a-cc55-4455-8dd2-206670b8f6e3",
+      "result_id": "e6d4229b-61cc-44d2-b940-30576436be77"
+    },
+    {
+      "claim_id": "be1b3ca5-c056-4271-aada-480a1d9dd028",
+      "result_id": "e6d4229b-61cc-44d2-b940-30576436be77"
+    },
+    {
+      "claim_id": "c1a4bb4a-64d8-457b-a7e8-bc4eef8767ae",
+      "result_id": "e6d4229b-61cc-44d2-b940-30576436be77"
+    },
+    {
+      "claim_id": "4005175e-213e-4f77-b10d-3c10dc492892",
+      "result_id": "e6d4229b-61cc-44d2-b940-30576436be77"
+    },
+    {
+      "claim_id": "2a729d00-7204-44a4-9bec-b7db033294b6",
+      "result_id": "e6d4229b-61cc-44d2-b940-30576436be77"
+    },
+    {
+      "claim_id": "46fc4782-f9ec-4dae-a33e-63c7820633b6",
+      "result_id": "e6d4229b-61cc-44d2-b940-30576436be77"
+    },
+    {
+      "claim_id": "b29208fd-ba90-4368-a6b5-4605c9eb5804",
+      "result_id": "e6d4229b-61cc-44d2-b940-30576436be77"
+    },
+    {
+      "claim_id": "9bee8998-dce7-40ec-9f65-e9c80c459fb5",
+      "result_id": "e6d4229b-61cc-44d2-b940-30576436be77"
+    },
+    {
+      "claim_id": "0f69cb87-1f7b-4442-8a77-0c1f2197a0a7",
+      "result_id": "e6d4229b-61cc-44d2-b940-30576436be77"
+    },
+    {
+      "claim_id": "20e3fe46-f366-42c7-b5fc-5e77e73f9a73",
+      "result_id": "e6d4229b-61cc-44d2-b940-30576436be77"
+    },
+    {
+      "claim_id": "dc5068c4-2a33-4224-8784-9355b3428223",
+      "result_id": "e6d4229b-61cc-44d2-b940-30576436be77"
+    },
+    {
+      "claim_id": "06dfeda8-0a75-4b8f-823f-596b7c112f98",
+      "result_id": "1d1b8c1d-0794-42bc-9a92-9eb65e43e140"
+    },
+    {
+      "claim_id": "279c78d6-4c3f-4efa-946b-9f5d0db09a0d",
+      "result_id": "1d1b8c1d-0794-42bc-9a92-9eb65e43e140"
+    },
+    {
+      "claim_id": "ce455074-b225-4d8f-9661-e106e732c8a0",
+      "result_id": "1d1b8c1d-0794-42bc-9a92-9eb65e43e140"
+    }
+  ],
+  "comparisons": []
+}

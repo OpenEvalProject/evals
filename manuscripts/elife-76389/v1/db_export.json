@@ -1,0 +1,1631 @@
+{
+  "submission": {
+    "id": "89979f9b-937b-4e47-bc71-91d7e758fcad",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T11:55:41.451448Z",
+    "updated_at": "2025-12-03T11:55:41.451448Z"
+  },
+  "content": [
+    {
+      "id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "submission_id": "89979f9b-937b-4e47-bc71-91d7e758fcad",
+      "content_type": "manuscript",
+      "content_text": "# Retinoic acid signaling mediates peripheral cone photoreceptor survival in a mouse model of retina degeneration\n\n## Authors\n\n- Ryoji Amamoto<sup>1</sup> ([ORCID: 0000-0002-9335-112X](https://orcid.org/0000-0002-9335-112X))\n- Grace K Wallick<sup>1</sup>\n- Constance L Cepko<sup>1</sup> ([ORCID: 0000-0002-9945-6387](https://orcid.org/0000-0002-9945-6387)) \u2020\n\n### Affiliations\n\n1. Department of Genetics and Ophthalmology, Howard Hughes Medical Institute, Blavatnik Institute, Harvard Medical School Boston United States ([ROR:006w34k90](https://ror.org/006w34k90))\n\n\u2020 Corresponding author\n\n## Abstract\n\nRetinitis Pigmentosa (RP) is a progressive, debilitating visual disorder caused by mutations in a diverse set of genes. In both humans with RP and mouse models of RP, rod photoreceptor dysfunction leads to loss of night vision, and is followed by secondary cone photoreceptor dysfunction and degeneration, leading to loss of daylight color vision. A strategy to prevent secondary cone death could provide a general RP therapy to preserve daylight color vision regardless of the underlying mutation. In mouse models of RP, cones in the peripheral retina survive long-term, despite complete rod loss. The mechanism for such peripheral cone survival had not been explored. Here, we found that active retinoic acid (RA) signaling in peripheral Muller glia is necessary for the abnormally long survival of these peripheral cones. RA depletion by conditional knockout of RA synthesis enzymes, or overexpression of an RA degradation enzyme, abrogated the extended survival of peripheral cones. Conversely, constitutive activation of RA signaling in the central retina promoted long-term cone survival. These results indicate that RA signaling mediates the prolonged peripheral cone survival in the rd1 mouse model of retinal degeneration, and provide a basis for a generic strategy for cone survival in the many diseases that lead to loss of cone-mediated vision.\n\n## Introduction\n\nRetinitis Pigmentosa (RP) is a disease of the retina that affects 1 in 4000 people worldwide (Hartong et al., 2006). It is characterized by an initial loss of night vision, followed by loss of color and daylight vision. These symptoms are caused by the progressive degeneration of photoreceptors, rods and cones, which are necessary for achromatic night vision and daylight color vision, respectively. Although the disease progression is variable, a typical patient with RP loses night vision as an adolescent and subsequently loses central daylight vision by the age of 60 (Hartong et al., 2006). Although early diagnosis is possible by procedures such as full-field retinal electroretinogram and dark adaptometry, there is no effective therapy for the vast majority of patients. Although gene therapy via gene augmentation has proven to be effective in humans (Bainbridge et al., 2008; Cideciyan et al., 2008; Hauswirth et al., 2008; Maguire et al., 2008), a one-by-one genetic augmentation approach is currently not feasible given that over 65 causative genes for RP have been identified (RetNet). However, a generic therapy aimed at preserving cone-mediated vision may be possible. Many RP patients have a disease gene that is expressed solely in rods, causing rod dysfunction and death (Cideciyan et al., 1998). Cones then suffer from bystander effects, leading to poor daylight and color vision, and in many cases, complete blindness.\n\nThe mechanisms underlying the non-cell autonomous, rod-dependent cone degeneration in RP are not completely understood. Previous studies have suggested several mechanisms to explain this secondary cone death, including toxicity from the degenerating rods, loss of rod-derived survival factors, oxidative damage, immune cell activation, necroptosis, and altered metabolism (Ait-Ali et al., 2015; Guadagni et al., 2019; Gupta et al., 2003; Karlstetter et al., 2015; L\u00e9veillard et al., 2004; Murakami et al., 2012; Punzo et al., 2009; Ripps, 2002; Venkatesh et al., 2015; Viringipurampeer et al., 2019; Viringipurampeer et al., 2016; Wang et al., 2020; Xiong et al., 2015; Xue et al., 2021). Ameliorating one or several of these mechanisms might then provide a generalized RP therapy to preserve daylight color vision. Intriguingly, we and others have noted that, in animal models of RP, the cones in the far periphery survive, even in the absence of surviving rods (Cideciyan et al., 1998; Carter-Dawson et al., 1978; Charng et al., 2016; Garc\u00eda-Ayuso et al., 2013; Garc\u00eda-Fern\u00e1ndez et al., 1995; Jim\u00e9nez et al., 1996; LaVail et al., 1997; Lin et al., 2009; Ma et al., 1998; Milam et al., 1998). The basis of this extended cone survival had not been addressed, though one hypothesis is that light exposure, which can induce photoreceptor degeneration (Wenzel et al., 2005), is reduced in the far periphery. However, while dark rearing can slow photoreceptor degeneration, particularly in albino RP animal models, it does not rescue the degeneration phenotype (Chang et al., 2007; Fan et al., 2005; Naash, 1996; Pang et al., 2008; Paskowitz et al., 2006). Additionally, cone survival in the far periphery is confined to an area demarcated by a sharp boundary, as opposed to a gradient, which would be expected if light exposure was the sole explanation. These results indicate that cone survival in the far periphery of the retina is not solely mediated by different levels of light exposure. Therefore, we asked whether there are molecular determinants that regulate cone survival in the far periphery, and if so, whether such determinants are sufficient to promote cone survival in the central retina.\n\nWe found that the regions of cone survival in the peripheral retina overlap with areas of active retinoic acid (RA) signaling. RA signaling regulates a wide range of activities such as cellular differentiation and survival in various organs including the central nervous system (Cunningham and Duester, 2015; Maden, 2007), but has not been reported to play a role in photoreceptor survival. In canonical RA signaling, RA is synthesized by Aldh1a1, Aldh1a2, or Aldh1a3, and it binds to RA receptors (RAR), which activate transcription of RA target genes via binding to genomic RA Response Elements (RARE) (Cunningham and Duester, 2015). During development of the mouse eye, Aldh1a1 and Aldh1a3 are expressed in the dorsal and ventral retinal periphery, respectively, with the expression of dorsal Aldh1a1 remaining into adulthood (McCaffery et al., 1992; McCaffery et al., 1991; Sakai et al., 2004). Deletion of the RA synthesis enzymes or the RA receptor in mice has revealed a role for paracrine RA signaling in the perioptic mesenchyme and choroidal vasculature, but not in retina patterning (Cammas et al., 2010; Dup\u00e9 et al., 2003; Fan, 2003; Goto et al., 2018; Molotkov et al., 2006). Conditional knockout of all three synthesis enzymes in adult mice resulted in corneal thinning (Kumar et al., 2017). Through loss-of-function experiments, we found that RA produced from Muller glia (MG), the major non-neuronal cell type of the retina, is necessary for survival of the excess number of cones in the periphery. In addition, we found that constitutive RA signaling in MG is sufficient to promote cone survival in the more central retina. We also found that ALDH1A1 expression is enriched in the human peripheral retina, suggesting that this mechanism of cone survival may play a role in human patients with RP.\n\n## Results\n\n### Cone photoreceptors survive in the peripheral retina where RA signaling is active\n\nThe rd1 mouse is a rapid photoreceptor degeneration model. It harbors a viral insertion and a point mutation in the Pde6b gene (Han et al., 2013), which is expressed only in rods. The rod death is considered a direct result of Pde6b loss-of-function (Figure 1A). Degeneration of rod photoreceptors starts at approximately postnatal day 11 (P11), and rapidly progresses, such that most rods degenerate by P20. As is the case with most RP cases in animal models and humans, cone photoreceptors then begin to lose function and degenerate (Punzo et al., 2009; Milam et al., 1998; Figure 1A). From the perspective of a retinal flatmount, both rods and cones degenerate in a center-to-periphery pattern. However, we and others (Cideciyan et al., 1998; Carter-Dawson et al., 1978; Charng et al., 2016; Garc\u00eda-Ayuso et al., 2013; Garc\u00eda-Fern\u00e1ndez et al., 1995; Jim\u00e9nez et al., 1996; LaVail et al., 1997; Lin et al., 2009; Ma et al., 1998; Milam et al., 1998) have noted that cones in the peripheral retina survive longer, although neither the extent nor the mechanism(s) of the extended peripheral cone survival had been explored.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/76389/elife-76389-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic of the timeline of rod and cone photoreceptor death in the rd1 mouse model. (B) rd1 retinal flatmount IHC against Cone Arrestin (CAR) at P40. (C) Retinal flatmount IHC against CAR for rd1, rd10, and Rho-/- mouse models at P366, P361, and P531, respectively (top images). Center and peripheral insets used for cone quantification (middle images). Number of CAR+ cones/10,000 um2 (n = 4 each) in the center and periphery for rd1 (Student\u2019s two-tailed T test, p = 0.0206), rd10 (Student\u2019s two-tailed T test, p = 0.0036), and Rho-/- (Student\u2019s two-tailed T test, p = 0.0041). (D) Schematic of the strategy for cone-specific bulk RNA sequencing. Central and peripheral CD1 (non-degenerating strain) retinal tissues were collected, and CAR+ cones (and contaminating MG) were FACS purified for downstream RNA sequencing. (E) A heatmap representing relative expression levels of differentially expressed genes (adjusted P-value < 0.05) between central and peripheral retina. (F) Simplified schematic of the RA signaling pathway. (G) SABER smFISH against Aqp4, a pan MG marker, and Aldh1a1 in P25 rd1; RARE-LacZ dorsal and central retinal sections. (H) IHC against B-gal and GS, a MG marker, in adult RARE-LacZ retinal sections. (I) LacZ staining on adult RARE-LacZ flatmount. (J) IHC against B-gal and CAR in P40 (top row) and P100 (bottom row) rd1; RARE-LacZ flatmounts. D, Dorsal; V, Ventral; ONL, Outer Nuclear Layer; INL, Inner Nuclear Layer; GCL, Ganglion Cell Layer. Scale bars; 500 \u00b5m (B, C, J), 50 \u00b5m (G, H). All results are expressed as the Mean \u00b1 SD. *p < 0.05, **p < 0.01.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76389/elife-76389-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Representative images of smFISH against Arr3 (middle panels) and Nrl (right panels), cone and rod markers, respectively, in WT (top panels) and P366 rd10 (bottom panels) retinas, counterstained with DAPI. Scale bar; 50 \u00b5m.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76389/elife-76389-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Relative expression of rod (Rho, Nrl), cone (Arr3, Rxrg), and MG (Glul) markers in CAR+ and CAR- FACS-isolated populations from CD1 mice as detected by ddPCR.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/76389/elife-76389-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** IHC against B-gal, Aldh1a1, and GS in adult RARE-LacZ (non-degenerating) retinas showing the central (top panels) and peripheral (bottom panels) regions. Scale bar; 100 \u00b5m.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/76389/elife-76389-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** IHC against B-gal and retina cell type specific markers, including CAR (cones), Chx10 (bipolar cells and MG), Brn3a (RGCs), Iba1 (microglia), GS (MG), and ChAT (amacrine cells) in P100 rd1; RARE-LacZ retinas. Scale bar; 50 \u00b5m.\n\nTo determine whether such peripheral cone survival persists long-term, we performed immunohistochemical (IHC) analysis of retinal flatmounts, which allows imaging of all cones in the retina. In agreement with previous studies, we found that Cone Arrestin+ (CAR; also known as Arr3) cones were enriched in the peripheral retina at P40, with a preference towards the dorsal region (Figure 1B). CAR+ cones in the dorsal periphery persisted at least up to P366, and interestingly, a nearly straight boundary demarcated the zone of survival (Figure 1C, left panel). Quantification of the number of cones in sampled peripheral and central regions showed that the peripheral retina contained significantly more cones compared to the central retina (Figure 1C). Such long-term peripheral cone survival was not restricted to the rd1 mouse model. The rd10 mouse model harbors a different mutation in the Pde6b gene, and the rate of photoreceptor degeneration is slower. Similarly, photoreceptor degeneration proceeds more slowly in the Rho-/- mouse model (Rivas and Vecino, 2009). In both rd10 and Rho-/- mouse models, cones survived long-term in the peripheral retina, with the same pattern as seen in rd1, persisting at least up to P366 and P531, respectively (Figure 1C). These results indicate that cones in the peripheral retina, especially dorsally, survive long-term in multiple models of rod-cone degeneration.\n\nTo understand the molecular mechanism that regulates cone survival in the periphery, we asked whether the peripheral cones were surviving because peripheral rods survived long-term. Previous ultrastructural examination of the rd1 retina revealed complete rod loss by P36 (Carter-Dawson et al., 1978). To corroborate, we performed single molecule fluorescent in situ hybridization (smFISH) for Nrl, a marker of rods, and Arr3, a marker of cones, in dorsal rd10 retinal sections at P366. While Arr3+ cones were sparsely detected in the ONL, no Nrl signal was found (Figure 1\u2014figure supplement 1). These results suggest that cones survive in the peripheral retina despite complete rod loss.\n\nWe reasoned that the peripheral cones might maintain an intrinsic transcriptional program that promotes cell survival and/or inhibits cell death. Central and peripheral cones from WT mouse retinas were thus profiled to determine if there were transcriptional differences that might underlie such intrinsic differences. To this end, an antibody-based FACS isolation strategy that we had previously developed for both fresh and frozen brain/retina tissue samples was used (Amamoto et al., 2020; Molyneaux et al., 2015; Figure 1D). Using the CAR antibody and FACS, a population of CAR+ cells was easily identified and isolated, although the percentage of CAR+ cells was higher than expected (Expected: ~ 3%, Observed: ~ 15%). Upon performing ddPCR on the extracted RNA, the FACS-isolated population was found to contain Arr3+/Rxrg+ cones and Glul+ MG, but not rods (Figure 1\u2014figure supplement 2). Despite the contamination, SMART-Seq v4 cDNA libraries were generated and sequenced on NextSeq 500. The central and peripheral samples were analyzed for differential expression (DE). Among the DE genes, we found that Aldh1a1 was highly enriched in the peripheral samples (Figure 1E), matching the previous data that it is expressed in dorsal MG (McCaffery et al., 1992). Functionally, Aldh1a1, Aldh1a2, and Aldh1a3 catalyze the synthesis of RA (RA), a metabolite that, when bound to RA receptor (RAR), drives transcription of RA target genes from genomic RA response elements (RAREs) (Cunningham and Duester, 2015; Figure 1F). To validate the expression pattern of Aldh1a1, we performed smFISH for Aqp4, a pan MG marker, and Aldh1a1, in P25 rd1 retinal sections. In the central retina, Aldh1a1 signal was detected only at low levels. However, in the dorsal retina, Aldh1a1 puncta were distributed throughout the radial dimension of the retina, suggestive of an expression pattern in MG, as MG processes exhibit this widespread pattern (Figure 1G). The expression pattern of Aldh1a1 was also validated at the protein level (Figure 1\u2014figure supplement 3).\n\nA mouse strain, RARE-LacZ, can be used to identify transcriptional activation of the RA signaling pathway at a cellular level (Rossant et al., 1991). The read-out can be via IHC of the beta-galactosidase (B-gal) protein or chromogenic detection of its activity using X-gal. In sections, B-gal was mostly localized to cell bodies in the INL and processes spanning the retinal section, reminiscent of MG morphology (Figure 1H). Accordingly, B-gal staining overlapped with that of Glutamine Synthetase, an MG marker, indicating that most cells with activated RA signaling were MG, although not all peripheral MG were B-gal+. B-gal was not expressed in any other cell type except ChAT+ amacrine cells in the ganglion cell layer (Figure 1\u2014figure supplement 4). Of note, regions of Aldh1a1 expression, and transcription from RA signaling, as indicated by B-gal expression, closely overlapped. This suggests that the RA synthesized by peripheral MG binds to receptors locally, and that the RA does not diffuse far enough to stimulate transcription activation in most nearby cells (Figure 1\u2014figure supplement 3). In retinal flatmounts, the strongest B-gal activity was observed in the dorsal periphery, demarcated with a clear border, and weaker activity was found in the ventral periphery, as previously described (Luo et al., 2004; Figure 1I). To determine if this pattern of expression occurred in a retinal degeneration strain, the RARE-LacZ mice were crossed with rd1 mice. In rd1; RARE-lacZ mice, the spatial pattern of B-gal expression closely matched that of CAR+ cone survival in rd1 mice, at both P40 and P100 (Figure 1J).\n\nTaken together, these results indicate that cones in the rd1 mouse model survive long-term in regions which exhibit signaling via the RA receptor. These regions express the RA synthesizing enzyme, Aldh1a1, in MG, the cell type that exhibits active RA signaling.\n\n### RA is necessary for survival of the excess peripheral cones\n\nTo determine whether RA is necessary for the longer cone survival seen in the periphery in a retinal degeneration strain, mice deficient in synthesis of RA in a retinal degeneration background were constructed. The rd1; RARE-LacZ mice were crossed to CAG-CreER and the Aldh1a1fl/fl; Aldh1a2fl/fl, Aldh1a3fl/fl mouse lines to generate a rd1; CAG-CreER; Aldh1a1fl/fl; Aldh1a2fl/fl, Aldh1a3fl/fl mouse line (henceforth referred to as Aldh Flox) (Kumar et al., 2017; Figure 2A). CAG-CreER was chosen as the Cre driver line to control the developmental stage at which the RA synthesis enzymes were knocked out, as RA is known to be a critical regulator of the development of many organ systems (Cunningham and Duester, 2015). The Aldh1a2fl/fl and Aldh1a3fl/fl alleles were included, despite the low expression levels of these genes in the adult retina, to minimize the potential effect of gene compensation. A single dose of tamoxifen was injected intraperitoneally at P10, a time point at which genesis of all retinal cell types is finished, and the retinas were harvested at P60 (Figure 2A). As assessed by ddPCR of the retina, the relative expression level of Aldh1a1 was significantly reduced in retinas with CAG-CreER, compared to control littermates without CAG-CreER (Mean \u00b1 SD: -CreER: 0.01203 \u00b1 0.005;+ CreER: 0.0003 \u00b1 0.0002) (Figure 2B). In P60 Aldh flox retinal flatmounts without CAG-CreER, IHC for CAR showed abundant cone survival in the periphery. In contrast, those with CAG-CreER appeared to have fewer cones in the periphery (Figure 2C). Accordingly, quantification of CAR+ cones in sampled dorsal regions showed a significant reduction in the number of cones (Mean \u00b1 SD: -CreER: 40.94 \u00b1 13.51;+ CreER: 23.9 \u00b1 12.74), suggesting that RA is necessary for the locally enriched peripheral cone survival (Figure 2E). However, despite the near complete depletion of Aldh1a1 from the retina, some cones persisted in the dorsal periphery. Therefore, it is possible that other intrinsic or extrinsic pathways contribute to promote peripheral cone survival.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/76389/elife-76389-fig2-v1.jpg)\n\n**Figure 2.:** (A) Schematic of the experimental design. Aldh Flox mice were injected with tamoxifen to create a conditional knockout (cKO) of the RA synthetic enzymes at P10, and the retinas were harvested at P60. (B) Relative expression level of Aldh1a1 in retinas with or without CAG-CreER (-Cre: n = 9,+ Cre: n = 8, Student\u2019s two-tailed T test, p < 0.0001). (C) IHC against CAR in P60 Aldh Flox flatmounts showing the entire retina (top row) and the dorsal periphery (bottom row) with or without CAG-CreER. (D) Schematic of the area of cone quantification in the dorsal retina. Red dots represent surviving cones, and the blue box is the area of quantification. (E) Quantification of CAR+ cones in the sampled area of Aldh Flox retinas with or without CAG-CreER (-Cre: n = 12,+ Cre: n = 9, Student\u2019s two-tailed T test, p = 0.0086). (F) Validation of MG-specific Aldh1a1 cKO mouse line. IHC against GFP and Sox2 in P10 rd1; Pdgfra-Cre retinas electroporated with a Cre-dependent plasmid, CALNL-GFP. (G) Relative expression level of Aldh1a1 in retinas and liver with or without Pdgfra-Cre (Retina: -Cre: n = 3,+ Cre: n = 6, Student\u2019s two-tailed T test, p < 0.0001; Liver: -Cre: n = 3,+ Cre: n = 6, Student\u2019s two-tailed T test, p = 0.3893). (H) Quantification of CAR+ cones in the sampled area of Aldh Flox retinas with or without Pdgfra-Cre (-Cre: n = 3,+ Cre: n = 6, Student\u2019s two-tailed T test, p = 0.0016). (I) IHC against GFP (top row) and CAR (bottom row) in P40 rd1; RARE-LacZ flatmounts resulting from infection with AAV-ShH10Y-CMV-GFP (left column) or AAV-ShH10Y-CMV-Cyp26a1+ AAV-ShH10Y-CMV-GFP (right column). (J) Insets of the dorsal peripheral regions in both groups. (K) Quantification of CAR+ cones in the sampled area of infected retinas (GFP: n = 13, Cyp26a1: n = 13, Mann-Whitney test, p = 0.0441). ONL, Outer Nuclear Layer; INL, Inner Nuclear Layer; GCL, Ganglion Cell Layer. Scale bars; 500 \u00b5m (C top panels, I), 50 \u00b5m (F), 100 \u00b5m (C bottom panels, J). All results are expressed as the Mean \u00b1 SD. *p < 0.05, **p < 0.01, ****p < 0.0001.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76389/elife-76389-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** IHC against GFP in sections and flatmounts of P40 rd1; RARE-LacZ retinas infected with AAV-ShH10Y-CMV-GFP after P4 subretinal injection. Scale bars; 500 \u00b5m (left panel), 100 \u00b5m (right panel).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76389/elife-76389-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** smFISH against Cyp26a1 using SABER FISH in P40 rd1; RARE-LacZ retina sections infected with AAV-ShH10Y-CMV-Cyp26a1 and AAV-ShH10Y-CMV-GFP. Scale bar; 100 \u00b5m.\n\nDue to the deletion of Aldh1a1, Aldh1a2, and Aldh1a3 in all cells resulting from the use of the broadly active CAG-CreER, it was possible that the effect of peripheral cone death was due to systemic toxicity. For example, hepatocytes in the liver express high levels of Aldh1a1 and regulate lipid metabolism (Kiefer et al., 2012). To overcome this issue, we generated another Aldh Flox mouse line with Pdgfra-Cre, which drives expression of Cre in MG (Roesch et al., 2008; Figure 2F). To validate the specificity of the Pdgfra-Cre, the DNA construct, CAG-LoxP-Neo-STOP-LoxP-GFP, which drives GFP expression in Cre+ cells was electroporated into the retinas of rd1; Pdgfra-Cre mice at P0. At P10, GFP expression was mostly confined to MG, as evidenced by colocalization with Sox2, a marker of MG and a subset of amacrine cells (Figure 2F). Pdgfra-Cre mice were crossed with Aldh1a1fl/fl mice to generate an MG-specific Aldh1a1 cKO mouse line. At P60, the retinas and the liver were harvested from littermates with and without Pdgfra-Cre. Using ddPCR, the number of transcripts for Aldh1a1 was quantified from the retina and the liver. While Aldh1a1 remained in the liver at high levels, it was essentially depleted in the retinas of mice with Pdgfra-Cre, indicating the specificity of the Cre line (Retina: Mean \u00b1 SD: -CreER: 0.0128 \u00b1 0.001;+ CreER: 0.0005 \u00b1 0.0001; Liver: Mean \u00b1 SD: -CreER: 0.5579 \u00b1 0.6069;+ CreER: 0.3255 \u00b1 0.1793) (Figure 2G). We then quantified the number of CAR+ cones in the dorsal retina and found a significant reduction in the number of cones in the retinas with Pdgfra-Cre compared to controls (Mean \u00b1 SD: -CreER: 48.62 \u00b1 10.77;+ CreER: 18.73 \u00b1 7.44) (Figure 2H). These results indicate that MG-specific RA signaling is necessary for the excess cone survival in the periphery.\n\nTo further investigate whether RA is necessary for peripheral cone survival, another method was used to remove RA from the retina. Overexpression of Cyp26a1, an RA degrading enzyme, in the retina was carried out by AAV transduction. To maximally target MG, we used the ShH10Y capsid, which has a high tropism for retinal MG when injected subretinally or intravitreally (Pellissier et al., 2014). To obtain widespread AAV transduction in MG by subretinal injection, an injection time point was chosen such that most MG would have already been born (> P3), and the subretinal space would allow for a wide distribution of the vector. Subretinal injection with AAV-ShH10Y-CMV-GFP into P4 mice achieved high expression of GFP in central and peripheral MG, although some far peripheral MG were not transduced (Figure 2\u2014figure supplement 1). Subretinal injection into the dorsal retina led to GFP expression throughout the dorsal retina, with partial infection of the ventral retina (Figure 2I). When combined with AAV-ShH10Y-CMV-Cyp26a1, smFISH showed expression of Cyp26a1 in the dorsal retina (Figure 2\u2014figure supplement 2). In accord with the cKO data, overexpression of Cyp26a1 significantly reduced the number of dorsal cones compared to GFP only controls (Mean \u00b1 SD: GFP: 15.81 \u00b1 8.369;+ CreER: 9.416 \u00b1 6.564) (Figure 2J\u2013K).\n\nTaken together, these results indicate that RA is necessary for the excess cone survival seen in the periphery of the rd1 mouse model.\n\n### Activation of the RA signaling pathway promotes local cone survival in the central retina\n\nTo determine whether activation of the RA signaling pathway is sufficient for cone survival, the signaling pathway was activated in the central retina, independently of RA (Figure 3A). Canonically, the RARa-RXR dimer, bound to genomic RAREs, represses downstream transcription in the absence of the RA ligand (Cunningham and Duester, 2015; Figure 3B). In the presence of RA, the dimer recruits co-transcriptional activators and the transcriptional machinery, leading to transcription of downstream genes. The RA signaling pathway is tightly regulated via a type of feedback inhibition, as the major downstream transcriptional target of RAR is Cyp26a1, which breaks down RA. To overcome this issue, a RARa-VP16 transactivator fusion protein was developed previously, to constitutively activate downstream transcriptional targets, even in the absence of RA (Lipkin et al., 1996; Figure 3B). A plasmid construct encoding this fusion, CAG-RARa-VP16, was electroporated into the ventral-central retina of rd1;RARE-LacZ mice with the electroporation control construct bpCAG-BFP. Retinas were harvested at P40 and cones were quantified in the electroporated patches (Figure 3A). In the bpCAG-BFP only control, the BFP+ electroporated patches were localized to the ventral-central retina, but B-gal expression was not induced, and CAR+ cones were sparsely distributed (Figure 3C). In contrast, when bpCAG-BFP was combined with CAG-RARa-VP16, a strong induction of B-gal and Cyp26a1 expression was observed, indicative of transcription from RA signaling (Figure 3C and Figure 3\u2014figure supplement 1). Within the electroporated patches that included CAG-RARa-VP16, a high density of cones was observed (Figure 3C). Quantification of cones in the electroporated region showed a significant increase in the RARa-VP16 group compared to controls (Mean \u00b1 SD: BFP: 19.14 \u00b1 4.589; RARa: 38.8 \u00b1 6.261) (Figure 3D, Figure 3\u2014figure supplement 2). Of note, electroporation of the postnatal mouse retina results in expression of constructs only in late-born cell types of the retina, including rods, MG, bipolar cells, and amacrine cells, but not cones (Matsuda and Cepko, 2004). Therefore, this effect on cone survival is not due to expression of the constructs within cones, that is, it is a non-cell autonomous effect on cones. Furthermore, the region of increased cone survival was confined to the electroporated patch, with a sharp boundary, suggesting that the effect of RA signaling on cone survival is restricted locally.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/76389/elife-76389-fig3-v1.jpg)\n\n**Figure 3.:** (A) Schematic of the experimental design. Retinas of rd1; RARE-LacZ mice were electroporated with bpCAG-BFP with or without the CAG-RARa-VP16 construct at P0 or P1 and harvested at P40. (B) Schematic of RA-mediated transcriptional activation and RARa-VP16-mediated constitutive activation. Without RA, the RARa-RXR dimer, bound to genomic RAREs, repress downstream transcription. With RA, the dimer activates transcription of downstream genes, which includes the RA degradation enzyme, Cyp26a1, creating a strong negative feedback. With the introduction of RARa-VP16, transcription of genes downstream of RAREs is activated despite the lack of RA. (C) IHC against BFP (left column), B-gal (middle column), and CAR (right column) in P40 rd1; RARE-LacZ whole retinal flatmounts (top rows) and BFP+ insets (bottom rows) with overexpression of bpCAG-BFP with or without CAG-RARa-VP16. (D) Cone quantification in BFP+ central retina of P40 rd1; RARE-LacZ mice electroporated with bpCAG-BFP with or without CAG-RARa-VP16 (BFP: n = 13, RARa: n = 9, Student\u2019s two-tailed T test, p < 0.0001). (E) Cone quantification in BFP+ central retina of P100 rd1; RARE-LacZ mice electroporated with bpCAG-BFP with or without CAG-RARa-VP16 (BFP: n = 12, RARa: n = 18, Mann-Whitney test, p = 0.0010). (F) Representative images of IHC against M-Opsin (Opn1mw) in BFP+ central retina of P40 rd1; RARE-LacZ mice electroporated with bpCAG-BFP with or without CAG-RARa-VP16. (G) Representative images of IHC against GFP in BFP+ central retina of P40 rd1; RARE-LacZ mice electroporated with bpCAG-BFP with or without CAG-RARa-VP16 and injected with AAV8-SynPVI-H2BGFP. (H) Schematic of the experimental design (top). Retinas of rd1; RARE-LacZ mice were electroporated with TRE-RARa-VP16 with or without CAG-rtTA. Doxycycline was administered from P20 \u2013 P40, at which time point the retinas were harvested. Cone quantification in BFP+ central retina of P40 rd1; RARE-LacZ mice electroporated with with TRE-RARa-VP16 with or without CAG-rtTA (-rtTA: n = 6, RARa: n = 8, Student\u2019s two-tailed T test, p = 0.0311). (I) Cone quantification in BFP+ central retina of P40 rd1; RARE-LacZ mice electroporated with CALNL-RARa-VP16 with or without Rho-Cre or Cralbp-Cre (No Cre: n = 16, Rho: n = 8, Cralbp: n = 8, One-way ANOVA, F = 9.372, p = 0.0007; Tukey\u2019s multiple comparison test, No Cre vs. Rho: p = 0.3111, No Cre vs. Cralbp: p = 0.0005, Cralbp vs. Rho: p = 0.0511). (J) Schematic of the experimental design (top). Retinas of rd1; Pdgfra-Cre mice were electroporated with CALNL-RARa-VP16 and harvested at P40. Cone quantification in BFP+ central retina of P40 rd1; Pdgfra-Cre electroporated with CALNL-RARa-VP16 (-Cre: n = 4,+ Cre: n = 7, Student\u2019s two-tailed T test, p = 0.0488). Scale bars; 500 \u00b5m (C), 25 \u00b5m (F). All results are expressed as the Mean \u00b1 SD. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76389/elife-76389-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** smFISH against BFP and Cyp26a1 using SABER in P40 rd1; RARE-LacZ retina sections electroporated with CAG-RARa-VP16. Scale bar; 100 \u00b5m.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76389/elife-76389-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Schematic of the area of cone quantification in the dorsal retina. Red dots represent surviving cones, and the green region is the area of electroporation. A circle with a radius of 1.5 mm was used to crop the central retina to ensure that the naturally surviving peripheral cones were excluded. Only the cones in the central BFP+ region were counted.\n\nTo determine whether the cone survival effect of RA signaling is long lasting, cones were quantified at P100. Based on BFP, the expression level resulting from electroporation diminished over time between P40 and P100. Nevertheless, cone survival was significantly increased in the RARa-VP16 group compared to controls even at P100 (Mean \u00b1 SD: BFP: 11.67 \u00b1 9.388; RARa: 25.41 \u00b1 11.58), indicating that this effect lasts over an extended period of time. As RA signaling has been shown to increase the expression level of CAR itself, we sought to verify that RA signaling promoted bona fide cone survival, not just increased CAR expression, as described previously (Wagner et al., 1997). To this end, IHC for M-opsin (Opn1mw) was carried out, which showed that the surviving cones also expressed M-opsin (Figure 3F). To further verify the identity of these cones, during electroporation, AAV8-SynPVI-H2BGFP was co-delivered. This AAV encodes a construct which drives the expression of nuclear H2B-GFP from a synthetic Gnat2-based cone promoter (J\u00fcttner et al., 2019). The surviving cones in the electroporated patch also expressed H2B-GFP, suggesting that these cones were positive for Gnat2, a cone marker (Figure 3G). These results show that RA signaling leads to survival of cones, instead of simply upregulating the expression of CAR.\n\nDue to the experimental approach of constitutively activating RA signaling by overexpressing CAG-RARa-VP16 via electroporation at P0-P1, it remained unclear which cell type was responsible for the cone survival effect and when the effect was taking place. Electroporation of the retinas of newborn pups leads to expression within a few days in cell types born postnatally, including rods, MG, bipolar cells, and amacrine cells. Therefore, we sought to narrow the time period and cell type(s) that were sufficient for promoting cone survival by RA signaling. To determine the sufficient time point, a Dox-inducible TetON system was used to control the timing of expression. The constructs, CAG-rtTA and TRE-RARa-VP16, were electroporated at P0-P1, and expression was induced from P20 \u2013 P40 by Dox administration. With such a paradigm, a significant increase in the number of cones in the rtTA+ group compared to controls was observed (Mean \u00b1 SD: -rtTA: 14.25 \u00b1 2.723;+ rtTA: 24 \u00b1 9.412), indicating that RA signaling during cone degeneration, and after rod degeneration (after P20), is sufficient for cone survival (Figure 3H). To determine which cell type was involved in promoting cone survival by RA signaling, specific promoters were used to drive expression of RARa-VP16. Rods are the most abundant of the electroporated cell types, while MG are the cell types that expresses Aldh1a1, and thus promoters for these two cell types were used (Figure 1G). Rho-Cre was used to activate expression in rods and Cralbp-Cre was used for expression in MG. Constructs with these promoters were co-electroporated with a Cre-dependent RARa-VP16 construct (CALNL-RARa-VP16). This strategy combined the specificity of the cell-type-specific promoters and the high expression level of the CAG promoter. Co-electroporation with Cralbp-Cre, but not Rho-Cre, showed significant increases in the number of cones compared to controls (No Cre) (Mean \u00b1 SD: No Cre: 9.125 \u00b1 3.22; Rho: 13.07 \u00b1 7.175; Cralbp: 20.61 \u00b1 9.048) (Figure 3I). To further investigate the cell type question, the CALNL-RARa-VP16 construct was electroporated into rd1; Pdgfra-Cre retinas, which express Cre in MG (Figure 2F). Overexpression of RARa-VP16 in the Cre+ retinas increased the number of cones compared to controls without Cre (Mean \u00b1 SD: -Cre: 16.32 \u00b1 3.681;+ Cre: 29.25 \u00b1 10.79) (Figure 3J), in keeping with the results from Cralbp-Cre electroporation.\n\nTaken together, these results indicate that RA signaling activation in MG during cone degeneration (> P20) is sufficient to promote cone survival in regions without endogenous RA synthesis.\n\n### ALDH1A1 is enriched in the peripheral adult human retina\n\nWhether RA signaling plays a role in preserving cones in human RP patients is not known. For a typical patient with RP, photoreceptor degeneration starts in the mid-peripheral retina, leading to loss of visual function in that region (Milam et al., 1998). Degeneration progresses over time towards the central retina, including the macula, with subsequent loss of central vision. However, peripheral vision is typically not assayed in humans, although islands of vision in the far periphery have been observed in some RP patients by functional visual testing (Charng et al., 2016; Li et al., 1994; Patel et al., 2022). A systematic study of the geography of vision loss, which includes the far periphery, and the physical correlates, has not been done, but might yield insights into whether and how such islands may be preserved in humans. We obtained five postmortem adult human non-RP retinas to investigate the expression level of ALDH1A1 in the central and peripheral retina. As assessed by ddPCR, ALDH1A1 was significantly enriched in the peripheral retina (Figure 4). Furthermore, we compared our RNA-seq dataset with previously-published human transcriptional profiling of central and peripheral retina. In addition to the peripherally enriched ALDH1A1, PRSS56 was enriched in the peripheral human retina while SNCG was enriched in the central human retina (Orozco et al., 2020; Voigt et al., 2019). This result opens the possibility that RA signaling is active in the human peripheral retina and may play a role in preserving peripheral vision, if any. In addition, other pathways which differ between peripheral and central retina may be conserved and might deserve investigation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/76389/elife-76389-fig4-v1.jpg)\n\n**Figure 4.:** (A) Relative expression level of ALDH1A1 compared to loading control, TBP, in the center and periphery of the human non-RP retinas (Center: n = 5, Periphery: n = 5, Two-way ANOVA, P = 0.0146). Figure Supplements.\n\n## Discussion\n\nIn this study, we set out to elucidate the molecular and cellular mechanism underlying long-term peripheral cone survival in the rd1 mouse model of retinal degeneration. In many mouse models of RP, cones in the far periphery survive long-term despite complete rod degeneration, as we also found here for rd1, rd10, and Rho-/-. We found that peripheral MG express Aldh1a1, leading to active transcription of RA target genes, and that the regions with active RA signaling closely matched those with surviving cones. Removal of RA, either by conditional knockout of the synthesis enzymes or by overexpression of the degradation enzyme, decreased the number of peripheral cones. Conversely, constitutive activation of the RA signaling pathway in MG promoted cone survival in the central retina. Taken together, RA signaling is both necessary and sufficient for the long-term survival of cones in the rd1 mouse model of retinal degeneration.\n\nWe found that peripheral MG express the RA-synthesizing enzyme, Aldh1a1, and activate transcription of RA target genes, autonomously or only within nearby MG. Importantly, RA signaling is not activated directly in cones; and therefore, the mechanism that promotes cone survival is non-cell autonomous with regards to cones. To gain a deeper mechanistic insight into this RA signaling-mediated cone survival, identification of the downstream effector is of great interest. To start, transcriptional profiling of MG and cones from Aldh Flox cKO mice and RARa-VP16 overexpression mice will be helpful to identify candidate ligand-receptor pairs that may play a role in promoting cone survival. However, given the diverse functions of MG, RA signaling may mediate a more complex effect on the tissue environment that secondarily promotes cone survival. For example, RA signaling plays a role in maintaining the integrity of the blood-retina-barrier (BRB) in the zebrafish eye, and BRB leakage is associated with cone degeneration (Ivanova et al., 2019; Pollock et al., 2018). Therefore, it is possible that RA signaling helps keep the BRB in the peripheral retina intact, which in turn helps cones survive, without directly influencing cones. Although the cause of secondary cone degeneration is currently unknown, use of RA signaling as a molecular handle may lead to a deeper mechanistic understanding. For practical applications as a mutation-agnostic gene therapy for patients with RP, identification of the downstream effector will be critical.\n\nTo go forward in the clinic, safety and efficacy are key components. For safety, discovery of an effector molecule, which may be less pleiotropic than RARa-VP16, may be important, as overexpression of a constitutively active transcription factor will lead to upregulation of myriad genes, potentially with deleterious effects. Gene therapy with an effector molecule also may be more effective than overexpression of RARa-VP16. Currently, AAV-based overexpression of RARa-VP16, even with a strong CMV promoter, was not sufficient to promote cone survival as the expression level was too low. Direct overexpression of an effector molecule(s), with cell type specificity, likely will be a more effective approach for gene therapy. Another reason to identify the downstream effector(s) is to avoid potential retinal ganglion cell (RGC) hyperactivity induced by RA signaling, as was recently reported (Denlinger et al., 2020; Telias et al., 2019; Telias et al., 2021). Although our current gain-of-function and loss-of-function approaches ensure that RGCs are not affected due to the specificity of the promoters and the injection method, it would still be a concern to promote cone survival at the cost of inducing detrimental RGC hyperactivity.\n\nThe human central retina is more susceptible to photoreceptor death compared to the peripheral retina in both RP and age-related macular degeneration (AMD) (Charng et al., 2016; Fleckenstein et al., 2021), and it remains unclear what molecular mechanisms underlie this difference. One of the markers of the human central retina is the sustained expression of CYP26A1 from embryo into adulthood (Peng et al., 2019; da Silva and Cepko, 2017). Furthermore, we have shown that ALDH1A1 remains enriched in the adult human peripheral retina. While the function of these genes with opposing functions is unknown in the human retina, development of the high acuity area in the chick, which lacks rods as does the human fovea, requires inhibition of RA signaling (da Silva and Cepko, 2017). Although it remains unclear whether CYP26A1 in the human retina is required for foveal development, the lack of RA signaling in the central retina, perhaps as a remnant of development, may play a role in the vulnerability of the central retina to diseases such as AMD and RP. Conversely, activated RA signaling by ALDH1A1 may play a role in promoting cone survival in the far peripheral islands of vision seen in patients with RP (Charng et al., 2016; Li et al., 1994; Patel et al., 2022). To further support this hypothesis, it will be beneficial to correlate the expression pattern of ALDH1A1 with regions of extended cone survival in people with RP.\n\n### Ideas and speculation\n\nIt remains unclear why RA signaling is active in the peripheral adult retina. We speculate that Aldh1a1 expression in the dorsal periphery is a remnant of development, that is, its effect on cone survival is not due to a selective pressure for cone survival, but lack of a selective pressure to turn this gene off when its role in development is complete. During mouse and chick retinal development, Aldh1a1 and Aldh1a3 are expressed in retinal progenitor cells (RPC) of the dorsal and ventral peripheral regions, respectively (McCaffery et al., 1992; Goto et al., 2018; Sen et al., 2005). RA signaling in the chick retina plays a role in retinal patterning, as it is required for the correct cellular composition of the chick high acuity area, while in the mouse retina, it influences the perioptic mesenchyme and choroidal vasculature, but not retinal patterning (Cammas et al., 2010; Dup\u00e9 et al., 2003; Fan, 2003; Goto et al., 2018; Molotkov et al., 2006). Postnatally, ventral Aldh1a3 expression gradually disappears while dorsal Aldh1a1 expression persists in adult MG. However, no overt retinal phenotype has been reported when Aldh1a1, 2, and 3 were conditionally deleted in the adult mouse, bringing into question whether RA signaling has any function in the adult retina. As adult MG have many of the molecular and morphological features of developing RPCs (Jadhav et al., 2009), we speculate that dorsal RPC-specific Aldh1a1 expression persists into adult MG-specific expression as part of the dorsal peripheral RPC gene expression program. Interestingly, as the Aldh1a3 expression is turned off in the ventral MG in the adult, it might be the case that there is a selective pressure in the ventral region to eliminate expression of this enzyme after development is complete. As RA is an important regulator of vasculogenesis and the development of the BRB (Pawlikowski et al., 2019), and the main intra-retinal vasculature enters the retina via the ventral structure, the optic stalk (later the optic disc) (Hyatt et al., 1996), it might be the case that RA synthesis by ventral MG after development is somehow incompatible with the proper regulation of these activities.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>RARE-LacZ</td>\n      <td>Jackson Laboratories</td>\n      <td>008477</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>CAG-CreER</td>\n      <td>Jackson Laboratories</td>\n      <td>004682</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>Pdgfra-Cre</td>\n      <td>Jackson Laboratories</td>\n      <td>013148</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>Aldh1a1, 2, 3 Flox/Flox</td>\n      <td>PMCID: PMC5363406</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Rho-Cre</td>\n      <td>PMCID: PMC1764220</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Cralbp-Cre</td>\n      <td>PMCID: PMC1764220</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>CAG-RARa-VP16</td>\n      <td>This Study</td>\n      <td></td>\n      <td>Expression of RARa-VP16 from CAG promoter</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>CALNL-RARa-VP16</td>\n      <td>This Study</td>\n      <td></td>\n      <td>Cre-dependent expression of RARa-VP16 from CAG promoter</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>TRE-RARa-VP16</td>\n      <td>This Study</td>\n      <td></td>\n      <td>Doxycycline-dependent expression of RARa-VP16</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>CAG-rtTA</td>\n      <td>This Study</td>\n      <td></td>\n      <td>Expression of rtTA from CAG promoter</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>AAV-CMV-Cyp26a1</td>\n      <td>This Study</td>\n      <td></td>\n      <td>AAV expression plasmid encoding Cyp26a1 from CMV promoter</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>(Rabbit polyclonal) anti-Cone Arrestin</td>\n      <td>Millipore Sigma</td>\n      <td>AB15282</td>\n      <td>(1:3000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>(Chicken polyclonal) anti-B-galactosidase</td>\n      <td>Aves Labs</td>\n      <td>BGL1010</td>\n      <td>(1:3000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>(Goat polyclonal) anti-B-galactosidase</td>\n      <td>AbD Serotec</td>\n      <td>4600\u20131409</td>\n      <td>(1:3000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>(Mouse monoclonal) anti-Brn3a</td>\n      <td>Millipore Sigma</td>\n      <td>MAB1585</td>\n      <td>(1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>(Rabbit polyclonal) anti-Iba1</td>\n      <td>GeneTex</td>\n      <td>GTX100042</td>\n      <td>(1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>(Mouse monoclonal) anti-Glutamine Synthetase</td>\n      <td>Millipore Sigma</td>\n      <td>MAB302</td>\n      <td>(1:3000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>(Goat polyclonal) anti-ChAT</td>\n      <td>Millipore Sigma</td>\n      <td>AB144P</td>\n      <td>(1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>(Chicken polyclonal) anti-GFP</td>\n      <td>Aves Labs</td>\n      <td>GFP-1020</td>\n      <td>(1:3000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>(Mouse monoclonal) anti-Sox2</td>\n      <td>R&amp;D Systems</td>\n      <td>AF2018</td>\n      <td>(1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>(Rabbit polyclonal) anti-Opn1mw</td>\n      <td>Millipore Sigma</td>\n      <td>AB5405</td>\n      <td>(1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>(Goat polyclonal) anti-Aldh1a1</td>\n      <td>Abcam</td>\n      <td>9,883</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mm Arr3 RNAscope Probe</td>\n      <td>Advanced Cell Diagnostics</td>\n      <td>486,551</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mm Nrl RNAscope Probe</td>\n      <td>Advanced Cell Diagnostics</td>\n      <td>475,011</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Mouse\n\nAll animals were handled according to protocols approved by the Institutional Animal Care and Use Committee (IACUC) of Harvard University (IACUC protocol: 1695). RARE-LacZ mice (stock #008477), FVB/rd1 mice (stock #207), rd10 mice (stock #004297), CAG-CreER mice (stock #004682), and Pdgfra-Cre mice (stock #013148) were obtained from Jackson Laboratory. Rho-/- mice were a gift from Janis Lem, Tufts University, Boston, MA (Lem et al., 1999). Aldh1a1, 2, 3 flox/flox mice were a gift from Norbert Ghyselinck, IGBMC, France. All retina degeneration mouse lines were housed within \u00b12 rows in their respective racks to control for light exposure. For tissue harvest, mice were euthanized with CO2 and then secondarily with cervical dislocation. All genotyping primer sequences are in Supplementary Files.\n\n### Human retina samples\n\nFrozen eyes were obtained from Restore Life USA (Elizabethton, TN) through TissueForResearch. Patient DRLU031318A was a 47-year-old female with no clinical eye diagnosis and the postmortem interval was 6 hr. Patient DRLU032618A was a 52-year-old female with no clinical eye diagnosis and the postmortem interval was 8 hr. Patient DRLU041518A was a 57-year-old male with no clinical eye diagnosis and the postmortem interval was 5 hr. Patient DRLU041818C was a 53-year-old female with no clinical eye diagnosis and the postmortem interval was 9 hr. Patient DRLU051918A was a 43-year-old female with no clinical eye diagnosis and the postmortem interval was 5 hr. This IRB protocol (IRB17-1781) was determined to be not human subjects research by the Harvard University-Area Committee on the Use of Human Subjects.\n\n### Plasmids\n\nRho-Cre and Cralbp-Cre were from Matsuda and Cepko, 2007. Newly generated plasmids (CAG-RARa-VP16, CALNL-RARa-VP16, TRE-RARa-VP16, CAG-rtTA, AAV-CMV-Cyp26a1) have been deposited to Addgene.\n\n### Retina flatmount IHC\n\nEyes were enucleated, and the retinas (with the lens) were dissected in PBS. These retinas were fixed in 4% PFA (Electron Microscopy Sciences, cat. #15714S, diluted in PBS) for 20 min at RT. After 2 x washes with PBS, they were incubated in Blocking Buffer (0.3% Bovine Serum Albumin (Jackson ImmunoResearch, cat. #001-000-162), 4% donkey serum (Jackson ImmunoResearch, cat. #017-000-121), 0.3% Triton X-100 (Sigma Millipore, cat. #T8787), diluted in PBS) for 15 min at RT. Retinas were incubated in primary antibody, diluted in Blocking Buffer, for 2\u20134 hr at RT with the following antibodies at the following concentrations: rabbit Cone Arrestin (1:3000, Millipore Sigma, cat. #AB15282), chicken B-galactosidase (1:3000, Aves Labs, cat. #BGL1010), goat B-galactosidase (1:3000, AbD Serotec, cat. #4600\u20131409), mouse Brn3a (1:500, Millipore Sigma, cat. #MAB1585), rabbit Iba1 (1:500, GeneTex, cat. #GTX100042), mouse Glutamine Synthetase (1:3000, Millipore Sigma, cat. #MAB302), goat Choline Acetyltransferase (1:500, Millipore Sigma, cat. #AB144P), chicken GFP (1:3000, Aves Labs, cat. #GFP-1020), mouse Sox2 (1:500, R&D Systems, cat. #AF2018), rabbit Opn1mw (1:500, Millipore Sigma, cat. #AB5405), goat Aldh1a1 (1:1000, Abcam, cat. #9883, 0.5% Triton X-100 was used in the Blocking Buffer for this antibody). After 3 x wash with PBS, the retinas were incubated in corresponding secondary antibodies conjugated to AlexaFluor 488, 594, or 647, diluted in Blocking Buffer (1:750, Jackson ImmunoResearch) for 1 hr at RT. After 3 x washes with PBS, the lens were removed, and the retinas were flatmounted on a No. 1.5 coverslip (VWR, cat. #48393\u2013241) and dried. The coverslips were mounted on a Superfrost Plus slides (Fisher Scientific, cat. #12-550-15) with Fluoromount-G (SouthernBiotech cat. #0100\u201301) and dried overnight at RT.\n\n### Retinal flatmount LacZ staining\n\nLacZ staining on RARE-LacZ flatmount was performed as described previously (da Silva and Cepko, 2017).\n\n### Retina Cryosectioning\n\nEyes were enucleated, and the retinas (with the lens) were dissected in PBS. The retinas were fixed in 4% PFA for 20 min at RT. For smFISH experiments, it was critical to use freshly opened PFA ampule for fixation. After 2 x washes with PBS, the lens were removed. For experiments that required only the electroporated region, the BFP+ area was dissected out under a fluorescent dissection scope. The retina was incubated in 30% sucrose/PBS (Millipore Sigma, cat. #S0389) until the tissue sank to the bottom. The tissue was embedded in 50%/15% OCT/Sucrose solution (100% OCT mixed with 30% sucrose, equal parts, Tissue-Tek, cat. #25608\u2013930) in a cryomold. The retinas were snap-frozen in dry ice/ethanol slurry and kept at \u201380 \u00b0C. The retinas were cryosectioned at 30 \u00b5m thickness and mounted onto Superfrost plus slides. The slides were stored at \u201380 \u00b0C.\n\n### Retina section IHC\n\nSlides with retina sections were 2 x washed with ~3 mL of PBS and then dried completely. The slides were washed 1 x with PBS. They were incubated with 500 \u00b5L of Blocking Buffer for 15 min at RT and then with 500 \u00b5L of primary antibody diluted in Blocking Buffer for 2 hr at RT. After 3 x washes with PBS, the slides were incubated with 500 \u00b5L of secondary antibody diluted in Blocking Buffer for 1 hr at RT. After 3 x washes with PBS, the slides were dried completely and coverslipped with Fluoromount-G.\n\n### Single molecule FISH\n\nSABER FISH and RNAscope were used for smFISH of retinal sections (Kishi et al., 2019). For SABER, the slides were washed with PBS for 5\u201310 min to remove the OCT on the slides. Subsequently, sections were completely dried, and an adhesive chamber (Grace Bio-Labs, cat. #621502) was placed to encase the sections. The samples were incubated in 0.1% PBS/Tween-20 (MilliporeSigma, cat. #P9416) for 10 min. The PBST was removed, and the samples were incubated with pre-warmed (43 \u00b0C) 40% wHyb (2 x SSC (Thermo Fisher Scientific, cat. #15557044), 40% deionized formamide (MilliporeSigma, cat. #S4117), 1% Tween-20, diluted in UltraPure Water) for at least 15 min at 43 \u00b0C. The 40% wHyb was removed, and the samples were incubated with 100 \u00b5L of pre-warmed (43 \u00b0C) Probe Mix (1 \u00b5g of probe per gene, 96 \u00b5L of Hyb1 solution (2.5 x SSC, 50% deionized formamide, 12.5% Dextran Sulfate (MilliporeSigma cat. #D8906), 1.25% Tween-20), diluted up to 120 \u00b5L with UltraPure Water) and incubated 16\u201348 hr at 43 \u00b0C. The samples were washed twice with 40% wHyb (30 min/wash, 43 \u00b0C), twice with 2 x SSC (15 min/wash, 43 \u00b0C), and twice with 0.1% PBST (5 min/wash, 37 \u00b0C). The samples were then incubated with 100 \u00b5L of Fluorescent Oligonucleotide Mix (100 \u00b5L of PBST, 2 \u00b5L of each 10 \u00b5M Fluorescent Oligonucleotide) for 15 min at 37 \u00b0C. The samples were washed three times with PBST at 37 \u00b0C for 5 min each and counterstained with DAPI (Thermo Fisher Scientific, cat. #D1306; 1:50,000 of 5 mg/mL stock solution in PBS). The oligo sequences for the probes (Aqp4, Aldh1a1, Cyp26a1) are in Supplementary Files.\n\nFor RNAscope, the RNAscope Fluorescent Multiplex Assay was used with 30 \u00b5m cryosections according to protocol (Advanced Cell Diagnostics). The following probes were used: Mm-Arr3 (cat. #486551), Mm-Nrl (cat. #475011).\n\n### In vivo electroporation\n\nElectroporation of DNA plasmids into neonatal mouse retina was performed as described previously (Matsuda and Cepko, 2004; Wang et al., 2014). Briefly, glass needles were created by pulling Wiretrol II capillaries (Drummond Scientific Company, cat. #5-000-2005) using a needle puller (Sutter Instrument, Model P-97). The glass needles were beveled on two edges with a microgrinder (Narishige, cat. #EG-401). 10 \u00b5L of DNA plasmids (1 \u00b5g/\u00b5L per construct) was prepared with 0.5 \u00b5L of 2.5% FastGreen (Millipore Sigma cat. #F7252). P0 \u2013 P1 mouse pups were anesthetized by cryoanesthesia on ice. A small skin incision was made by a 30-gauge needle and the eye was exposed. The beveled glass needle containing the DNA plasmid was inserted through the sclera into the subretinal space, and the DNA solution was injected into the ventral hemisphere using a Femtojet Express pressure injector (Eppendorf, cat. #920010521) with the following setting: 330 Pa, 3 s. The eyelids were then closed with a cotton applicator. Tweezer-type electrodes (Harvard Apparatus, BTX, model 520, 7 mm diameter, cat. #450165) were placed with the positive end slightly above the injected eyelid. An electric field was applied using an electroporator (BEX, cat. #CUY21EDIT) with the following parameters: Volts: 80 V, Pulse-On: 50ms, Pulse-Off: 950ms, Number of pulses: 5. Then, the eyelids were dried with a cotton applicator to ensure eyelid closure.\n\n### AAV production\n\nHEK293T cells were seeded onto five 15 cm plates (Celltreat cat. #229651) and grown in 10% FBS/DMEM/PS media (Thermo Fisher Scientific, cat. #10437028, cat. #11995065, cat. #15140163). At 100% confluency, the cells were transfected using 340 \u00b5L of polyethylenimine (PolyScience, cat. #24765\u20132, diluted to 1 mg/mL) with the following DNA plasmids: 35 \u00b5g of ShH10Y capsid (a gift from John Flannery, Berkeley, CA), 35 \u00b5g of AAV-CMV-Cyp26a1 or AAV-CMV-GFP vector, 100 \u00b5g of pHGTI-adeno1. The cells were incubated in 10% NuSerum/DMEM/PS (BD Biosciences, cat. #355500) for 24 hr. Then, the media was changed to DMEM without serum for 48 hr. Next, the cells and media were collected and centrifuged at 1000 xg for 5 min at RT. The cell pellet (1) and the media (2) were separated for downstream processing. (1) The cell pellet was resuspended in 10 mL of lysis buffer (150 mM NaCl, 20 mM Tris-HCl pH 8.0) and underwent 3 x freeze-thaw between dry ice/ethanol bath and 37\u00b0C water bath. 10 \u00b5L of 1 M MgCl2 and 10 \u00b5L of Benzonase (Millipore Sigma, cat. #E1014) were added and incubated at 37 \u00b0C for 15 min. It was then centrifuged at 3,800 xg for 20 min at 4 \u00b0C, and the supernatant was collected. (2) The media was filtered through a 0.45 \u00b5m CA filter (Corning, cat. #430768). NaCl (to 0.4 M) and PEG8000 (to 8.5% w/v, Sigma, cat. #81268) were added over a period of 1.5 hr with stirring at 4 \u00b0C. It was then centrifuged at 7,000 xg for 10 min at 4 \u00b0C and the supernatant was discarded. The supernatant from (1) was added and the viral pellet was resuspended. This solution was overlaid on top of a gradient (17%, 25%, 40%, 60%) of Iodixanol (Millipore Sigma, cat. #D1556) and ultracentrifuged at 46,500 rpm (Beckman Coulter VTi50) for 1.5 hr at 16 \u00b0C. The viral fraction in the 40% gradient was harvested with a 21-gauge needle, and PBS was added up to 15 mL. The solution was transferred to an Amicon tube with a centrifugal filter (Millpore Sigma, cat. #UFC910024) and centrifuged at 1,500 xg for 15 min at 4 \u00b0C. This process was repeated three times with fresh PBS. At the end of the PBS washes, the remaining viral volume (~100 \u00b5L) was collected and titered based on the intensity of VP1, VP2, and VP3 proteins on an SDS-PAGE gel.\n\n### AAV injection\n\nAll AAV injections were performed at P4. Subretinal injections were performed as described above (under in vivo Electroporation). Per eye, approximately 5E8 vector genomes (vg) per AAV were delivered into the dorsal subretinal space.\n\n### Doxycycline administration\n\nAt P20, mice electroporated with or without CAG-rtTA and TRE-RARa-VP16 constructs were fed Doxycycline-added diet (2,000 mg/kg, Envigo, cat. #TD.05512) ad libitum. The diet was stored at 4 \u00b0C and replaced once per week.\n\n### Tamoxifen injection\n\nAldh Flox mice were intraperitoneally injected with tamoxifen, diluted in corn oil (20 mg/mL, 100 \u00b5L per pup, Millipore Sigma, cat. #T5648) at P10. To dissolve the tamoxifen in corn oil (Millipore Sigma, cat. #C8267), it was heated to 65 \u00b0C in a water bath for 1\u20132 hr with occasional vortexing. The dissolved tamoxifen was aliquoted and stored at 4 \u00b0C for less than 1 week.\n\n### Statistical analysis\n\nNormality was tested using the Shapiro-Wilk test. For parametric datasets, Student\u2019s two-tailed T test, one-way ANOVA with Tukey\u2019s multiple comparison test, and two-way ANOVA were performed to compare between control and experimental groups. For nonparametric datasets, Mann-Whitney test was performed. Multiple litters were used for each experiment, but each litter contained both control and experimental groups for all experiments to account for litter-to-litter variability. Both sexes were used randomly.\n\n### ddPCR\n\nRetina or liver tissue was harvested into 500 \u00b5L of Trizol (Thermo Fisher Scientific, cat. #15596026). The tissue was homogenized with disposable pestles (Fisher Scientific, cat. #12141368), and RNA was extracted according to the Trizol protocol. cDNA was generated using either the Superscript 3 or 4 First Strand Synthesis System (Thermo Fisher Scientific, cat. #18080051 or #18091050). For ddPCR, QX200 EvaGreen 2 x Supermix was used (BioRad, cat. #1864034) with 0.5 \u00b5m of primers and appropriate amounts of cDNA. The primer sequences can be found in Supplementary Files.\n\n### Cell-type-specific bulk RNA sequencing\n\nNeural retinas (without RPE) from P28 \u2013 P36 CD1 WT mice were dissected in PBS and flatmounted. The peripheral 1/3 of each flatmount petal, each comprising roughly one quarter of each retina, was collected as peripheral retina tissue. The central 1/3 was collected as central retina tissue. The mid-peripheral 1/3 was discarded. The retina was then transferred to a microcentrifuge tube and incubated for 7 min at 37 \u00b0C with an activated papain dissociation solution (87.5 mM HEPES pH 7.0 (Thermo Fisher Scientific, cat. #15630080), 2.5 mM L-Cysteine (MilliporeSigma, cat. # 168149), 0.5 mM EDTA pH 8.0 (Thermo Fisher Scientific, cat. #AM9260G), 10 \u00b5L Papain Suspension (Worthington, cat. #LS0003126), 19.6 \u00b5L UltraPure Nuclease-Free Water (Thermo Fisher Scientific, cat. #10977023), HBSS up to 400 \u00b5L, activated by a 15 min incubation at 37 \u00b0C). The retina was then centrifuged at 600 xg for 3 min. The supernatant was removed, and 1 mL of HBSS/10% FBS (Thermo Fisher Scientific, cat. #10437028) was added. The pellet was then centrifuged at 600 xg for 3 min. The supernatant was removed, and 600 \u00b5L of trituration buffer (DMEM (Thermo Fisher Scientific, cat. #11995065), 0.4% (wt/vol) Bovine Serum Albumin (MilliporeSigma cat. #A9418)) was added. The pellet was dissociated by trituration at room temperature (RT) using a P1000 pipette up to 20 times or until the solution was homogenous. For all remaining solutions, 5 \u00b5L mL\u20131 RNasin Plus (Promega, cat. #N2611) was added 10 min before use. The cells were centrifuged at 600 xg for 3 min, and the pellet was resuspended in 1 mL of 4% PFA and 0.1% saponin (Millipore Sigma, cat. #47036) for 30 min at 4 \u00b0C. After 2 x wash in Wash Buffer (0.1% saponin, 0.2% BSA), the cells were incubated in primary antibody (Cone Arrestin, 1:1000, in 0.1% saponin/1% BSA) for 30 min at 4 \u00b0C. The cells were washed twice in Wash Buffer and incubated in secondary antibody (Donkey anti-rabbit 647 in 0.1% saponin/1% BSA) for 30 min at 4 \u00b0C. After 1 x wash, the sample was passed through a 35 \u00b5m filter (Thermo Fisher Scientific, cat. #352235) before proceeding to FACS. FACSAria (BD Biosciences) with 488, 561, 594, and 633 nm lasers was used for FACS. CAR+ population was sorted into microcentrifuge tubes with 500 \u00b5L of PBS and kept on ice after FACS. The sorted cells were transferred to a 5 mL polypropylene tube and centrifuged at 3000 xg for 7 min at RT. The supernatant was removed, and the cells were resuspended in 100 \u00b5L Digestion Mix (RecoverAll Total Nuclear Isolation Kit (Thermo Fisher Scientific, cat. #AM1975) 100 \u00b5L of Digestion Buffer, 4 \u00b5L of protease), and incubated for 3 hr at 50 \u00b0C, which differs from the manufacturer\u2019s protocol. The libraries for RNA sequencing were generated using SMART-Seq v.4 Ultra Low Input RNA (Takara Bio, cat. #634890) and Nextera XT DNA Library Prep Kit (Illumina, cat. #FC1311096) according to the manufacturer\u2019s protocol. 11 cycles were used for the SMART-Seq. The cDNA library fragment size was determined by the BioAnalyzer 2100 HS DNA Assay (Agilent, cat. #50674626). The libraries were sequenced as 75 bp paired-end reads on NextSeq 500 (Illumina). The RNA-seq data was analyzed as described previously (Amamoto et al., 2019).\n\n### Image acquisition\n\nFluorescent flatmount images were acquired with Nikon Ti inverted widefield microscope with a Prior ProScanIII motorized stage. The objective used was Plan Apo Lambda 10 x/0.45 Air DIC N1 objective, and the camera used was Hamamatsu ORCA-Flash 4.0 V3 Digital CMOS camera. Fluorescent retina section images were acquired with W1 Yokogawa Spinning disk confocal microscope with 50 \u00b5m pinhole disk and 488, 561, and 640 laser lines. The objectives used were either Plan Apo 20 x/0.75 air or Plan Apo 60 x/1.4 oil objectives, and the camera used was Andor Zyla 4.2 Plus sCMOS monochrome camera. Nikon Elements Acquisition Software (AR 5.02) was used for image acquisition and Fiji or Adobe Photoshop CS6 was used for image analysis.\n\n### Cone quantification\n\nCones were quantified on widefield images at the plane of the cone cell bodies. For electroporated retinas, the number of cones were quantified in central BFP+ regions as schematized in Figure 3\u2014figure supplement 2. Briefly, a circle of 1.5 mm in radius was drawn with the center overlaid on the optic nerve head. This method was used to ensure that the peripheral cones were not quantified. Within this circle, the BFP+ region was used for counting CAR+ cones. For unelectroporated retinas, a 640 \u00b5m x 640 \u00b5m square box was drawn in the middle of the dorsal region, 70% of the length from the optic nerve head, as schematized in Figure 2D. For all quantifications, cones were counted blinded using the Cell Counter function in Fiji, and in some instances, verified by a second blinded counter. For all comparisons between conditions, both conditions were included among littermates to account for litter-to-litter variability. The area of electroporated region was calculated using Fiji.\n",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "693e040d-1197-468c-8e41-10bbbe30a5c1",
+      "submission_id": "89979f9b-937b-4e47-bc71-91d7e758fcad",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Paola Bovolenta, https://ror.org/02gfc7t72 CSIC-UAM Spain\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76389.sa0](https://doi.org/10.7554/eLife.76389.sa0)\n\nRetinitis pigmentosa (RP) is a heterogeneous condition that leads to photoreceptor cell death and thus to different degree of blindness. The degeneration is often caused by mutations in genes expressed in rods but cones end up degenerating with a mutation-independent process. Thus, identifying how to save cones would increase the quality of life of RP patients, bypassing the tremendous genetic heterogeneity of the disease. This study shows that cones positioned in the periphery of the mouse retina is more resistant to cell death and investigates the reasons of this resilience. Using different genetic approaches, the authors elegantly show that retinoic acid signaling derived from Muller glial cells located in the periphery of the mouse retina is implicated in local survival of cone photoreceptors in mouse models of RP. This center-to-periphery asymmetry is also present in the human retina although the clinical significance of the observation remains to be tested. This well executed study will be of high interest to vision and ophthalmology science community\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Paola Bovolenta, https://ror.org/02gfc7t72 CSIC-UAM Spain\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76389.sa1](https://doi.org/10.7554/eLife.76389.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Retinoic acid signaling mediates peripheral cone photoreceptor survival in a mouse model of retina degeneration\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Tirin Moore as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Henri Leinonen (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Please revise statistical analysis and provide details on how normal distribution was tested.\n\n2) In Figure 4, A and B are redundant. Please eliminate panel B. Furthermore, the RNA-seq comparison obtained in mouse could be compared with available human retinal transcriptomic database, including comparisons of human peripheral vs. central retina.\n\n3) Sentences such as that RA signaling is necessary and sufficient should be toned down as a number of cones seems to survive even in absence of RA.\n\n4) The significance of the findings for humans should be discussed in view of the notion that in most cases of human RP degeneration starts in the periphery and progressed to the center.\n\nReviewer #1 (Recommendations for the authors):\n\nThis is well conducted and interesting study however the conclusions are overstated.\n\n1) Stating that RA signaling is necessary and sufficient for peripheral cone survival seems inaccurate. Figure 2 shows that after inactivation of the different RA synthetizing enzymes a considerable number of cones is still present in the retinal periphery. Thus, other factors are likely involved. Have the authors attempted to investigate other factors found in the RNA-seq analysis?\n\n2) Panel A and B of figure 4 are redundant. They are different representations of the same data. Panel B should be removed.\n\n3) The significance of ALDH1A1 expression in the human retinal periphery is unclear. In the large majority of human RP cases, rod degeneration starts in the retinal periphery and patients are left with tunnel vision. This should be discussed in a clear manner. At present the discussion suggests that what found in mouse is relevant in humans but a more realistic view should be provided.\n\n4) The pathogenesis of AMD is different from that of RP, even thus in both there is photoreceptor degeneration. Mixing RP and AMD in the discussion do not seem to be appropriate.\n\nReviewer #2 (Recommendations for the authors):\n\nThe study reported here stems from a long term interest in searching for mechanisms responsible for the bystander degeneration of cones in Retinitis Pigmentosa. Cones have fundamental relevance in human vision and therefore the study is timely and important, also being based on the fact that cone rescue is achieved using mutation independent approaches, capable of bypassing the tremendous genetic heterogeneity of the disease.\n\nThe primary observation of the study is that in mouse models of RP, cones in the far peripheral retina survive long despite complete rod loss. The Authors succeed in demonstrating that a fundamental mechanism responsible for this survival implicates active retinoic acid (RA) signaling in peripheral Muller glia, which turns out to be both sufficient and necessary for the extended cone survival. Mice deficient in synthesis of RA in a retinal degeneration background were constructed, demonstrating that in these conditional knockout of RA an abrogation of peripheral cone survival was observed. Conversely, constitutive activation of RA signaling in the central retina promoted long-term cone survival. Human retinal samples used to reveal RA signaling molecules by ddPCR confirmed an asymmetric expression of this molecular system, which predominates in the peripheral retina, similar to what found in mice.\n\nHence, the data indicate that RA is one molecule whose signaling can enhance cone survival, providing a mutation independent tool to protect these cells from bystander degeneration.\n\nThe study is supported by a logical and excellently performed sequence of experiments based on highly modern methods, and comprising genetics, molecular biology, and microscopy tools. The text is clearly written and adequately illustrated. The study is important and the data of highly potential value from a translational point of view.\n\nFew suggestions are provided below:\n\nline 109: please specify better the fact that peripheral cone survival occurs in the total absence of rods and it is not secondary to a higher rate of rod survival, contributing to cone viability.\n\nline 51: Among the causes of bystander effect, local inflammation should\n\nbe mentioned (i.e. Guadagni et al., Faseb J 2012; Karlstetter M, PRER 2015);\n\nline 185. In Figure 1.4, some overlapping of the staining with the Muller cell marker is evident but only partially. Can one really say that MOST of the two signals really overlap? In addition, no processes of Muller cells are labelled in in the inner part of the retina. Is there an explanation?\n\nline 739: were cones counted on z-stacks images or at the cell body focal plane? Please specify. Can you give an example of the average number of cones counted per field? This gives an idea of the sampling error for each retinal specimen.\n\nDo cones that survive in virtue of the activation of RA signaling retain outer segments or not? This would indicate higher potential of functional rescue achieved with this manipulation. The Authors might want to discuss this point.\n\nIs there an advantage or an adaptive effect in concentrating RA sensitivity to the peripheral retina? Any explanation or speculation the Authors can add to the Discussion?\n\nReviewer #3 (Recommendations for the authors):\n\nSuggestions:\n\n\u2013 In line 156, why do you think observed amount of CAR+ cells is 5-times higher than expected?\n\n\u2013 In one supplementary Figure legend you are talking about Cd1 mice. Is this correct, or should it be Rd1 mouse?\n\n\u2013 Student t-test (parametric, required normal equal variances between the groups if not corrected) was used as general statistical tests. Is it correct in Figure 2B, 2G, 3H, 3J? Rather, should you not use non-parametric Mann-Whitney test?\n\n\u2013 Similar critique for 3I. I am not sure if ANOVA is correct as variances between the groups do not seem equal. Did you run a test for this? Perhaps 3I should be analyzed with Kruskal-Wallis.\n\n\u2013 4A: How can you run 2-way ANOVA here? Again, Mann-Whitney would be fine and will give you P<0.01 with that sample size.\n\n\u2013 With respect to the human samples, how did you choose to test only one target gene? Why not to do a bit more comprehensive investigation since you have the samples? Rhd10, other Aldh subforms? RNA-sequencing?\n\n\u2013 Continuing the previous. Why not use already published retinal transcriptomics data from post mortem human samples, freely accessible through GEO?\n\n\u2013 In rows 469-471, do you mean that CONE degeneration is stronger in central retina in RP patients? Isn\u00b4t tunnel vision a hallmark of RP, caused by loss of PERIPHERAL rods initially?\n\n\u2013 Retinoic acid activity may be inhibited with pharmacology using disulfiram (Telias\u2026Kramer 2019, Neuron). I believe the genetic tools you used answer the questions you raised but just wondering, did you consider testing the context using pharmacology?\n",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a6f65d6e-92e0-450f-9bdb-fb3c4d677478",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C1",
+      "claim": "Retinitis Pigmentosa (RP) affects 1 in 4000 people worldwide.",
+      "claim_type": "EXPLICIT",
+      "source": "Retinitis Pigmentosa (RP) is a disease of the retina that affects 1 in 4000 people worldwide (Hartong et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hartong et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "2ce8c92a-14c7-409f-b3a7-8a3bec182adc",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C2",
+      "claim": "RP is characterized by an initial loss of night vision, followed by loss of color and daylight vision.",
+      "claim_type": "EXPLICIT",
+      "source": "It is characterized by an initial loss of night vision, followed by loss of color and daylight vision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established clinical knowledge about RP progression",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "851e210e-ead2-443a-a8c7-f0479f8645eb",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C3",
+      "claim": "A typical patient with RP loses night vision as an adolescent and subsequently loses central daylight vision by the age of 60.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the disease progression is variable, a typical patient with RP loses night vision as an adolescent and subsequently loses central daylight vision by the age of 60 (Hartong et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hartong et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "ded02af5-0a35-4b68-bacc-dc1e07b85356",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C4",
+      "claim": "Over 65 causative genes for RP have been identified.",
+      "claim_type": "EXPLICIT",
+      "source": "Although gene therapy via gene augmentation has proven to be effective in humans (Bainbridge et al., 2008; Cideciyan et al., 2008; Hauswirth et al., 2008; Maguire et al., 2008), a one-by-one genetic augmentation approach is currently not feasible given that over 65 causative genes for RP have been identified (RetNet).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to RetNet database",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "740bcae2-1b54-4741-b428-ba1a1b7a7097",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C5",
+      "claim": "Gene therapy via gene augmentation has proven to be effective in humans for RP.",
+      "claim_type": "EXPLICIT",
+      "source": "Although gene therapy via gene augmentation has proven to be effective in humans (Bainbridge et al., 2008; Cideciyan et al., 2008; Hauswirth et al., 2008; Maguire et al., 2008), a one-by-one genetic augmentation approach is currently not feasible given that over 65 causative genes for RP have been identified (RetNet).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to clinical studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "ef7ad65b-39bb-44df-9de6-05644ed85fc4",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C6",
+      "claim": "Many RP patients have a disease gene that is expressed solely in rods, causing rod dysfunction and death.",
+      "claim_type": "EXPLICIT",
+      "source": "Many RP patients have a disease gene that is expressed solely in rods, causing rod dysfunction and death (Cideciyan et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cideciyan et al., 1998",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "d8a31a74-9c83-4d54-a499-3c23a593f2cc",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C7",
+      "claim": "Cones suffer from bystander effects in RP, leading to poor daylight and color vision.",
+      "claim_type": "EXPLICIT",
+      "source": "Cones then suffer from bystander effects, leading to poor daylight and color vision, and in many cases, complete blindness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established knowledge of secondary cone degeneration in RP",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "2ecbe50c-2753-412d-baff-8fecac0025bc",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C8",
+      "claim": "In animal models of RP, cones in the far periphery survive even in the absence of surviving rods.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, we and others have noted that, in animal models of RP, the cones in the far periphery survive, even in the absence of surviving rods (Cideciyan et al., 1998; Carter-Dawson et al., 1978; Charng et al., 2016; Garc\u00eda-Ayuso et al., 2013; Garc\u00eda-Fern\u00e1ndez et al., 1995; Jim\u00e9nez et al., 1996; LaVail et al., 1997; Lin et al., 2009; Ma et al., 1998; Milam et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "b2fef8c9-9287-4552-a96e-362762ba5523",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C9",
+      "claim": "Dark rearing can slow photoreceptor degeneration but does not rescue the degeneration phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while dark rearing can slow photoreceptor degeneration, particularly in albino RP animal models, it does not rescue the degeneration phenotype (Chang et al., 2007; Fan et al., 2005; Naash, 1996; Pang et al., 2008; Paskowitz et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to experimental studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "d74bb970-e6d9-4d15-9560-fbf8605e6624",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C10",
+      "claim": "Cone survival in the far periphery is confined to an area demarcated by a sharp boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, cone survival in the far periphery is confined to an area demarcated by a sharp boundary, as opposed to a gradient, which would be expected if light exposure was the sole explanation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on observation and logical inference from the pattern of cone survival",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "e11d13e8-e4dc-4c53-8259-229dffa2c09c",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C11",
+      "claim": "The rd1 mouse harbors a viral insertion and a point mutation in the Pde6b gene.",
+      "claim_type": "EXPLICIT",
+      "source": "It harbors a viral insertion and a point mutation in the Pde6b gene (Han et al., 2013), which is expressed only in rods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Han et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "493b8446-de90-4873-9003-8f9f8a1fbd66",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C12",
+      "claim": "Pde6b is expressed only in rods.",
+      "claim_type": "EXPLICIT",
+      "source": "It harbors a viral insertion and a point mutation in the Pde6b gene (Han et al., 2013), which is expressed only in rods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established knowledge and citation",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "d8829584-8069-4535-998b-beb736e08c7f",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C13",
+      "claim": "Degeneration of rod photoreceptors in rd1 mice starts at approximately postnatal day 11 (P11).",
+      "claim_type": "EXPLICIT",
+      "source": "Degeneration of rod photoreceptors starts at approximately postnatal day 11 (P11), and rapidly progresses, such that most rods degenerate by P20.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established knowledge of rd1 mouse model",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "d5275c97-3a1e-46da-80d5-aa120d89ff39",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C14",
+      "claim": "Most rods in rd1 mice degenerate by P20.",
+      "claim_type": "EXPLICIT",
+      "source": "Degeneration of rod photoreceptors starts at approximately postnatal day 11 (P11), and rapidly progresses, such that most rods degenerate by P20.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established knowledge of rd1 mouse model",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "b6be4ca1-c652-4c10-9e58-6045be073b84",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C15",
+      "claim": "In rd1 mice, CAR+ cones were enriched in the peripheral retina at P40, with a preference towards the dorsal region.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with previous studies, we found that Cone Arrestin+ (CAR; also known as Arr3) cones were enriched in the peripheral retina at P40, with a preference towards the dorsal region (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "e2c29904-6989-41c4-aa82-8889c5a37adf",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C16",
+      "claim": "CAR+ cones in the dorsal periphery of rd1 mice persisted at least up to P366.",
+      "claim_type": "EXPLICIT",
+      "source": "CAR+ cones in the dorsal periphery persisted at least up to P366, and interestingly, a nearly straight boundary demarcated the zone of survival (Figure 1C, left panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "de5e46cf-fb8a-4078-ade0-3ee6556aea9b",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C17",
+      "claim": "The peripheral retina of rd1 mice contained significantly more cones compared to the central retina.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of the number of cones in sampled peripheral and central regions showed that the peripheral retina contained significantly more cones compared to the central retina (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "719c56be-2710-4cda-a59f-7f2bdcf7549f",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C18",
+      "claim": "Long-term peripheral cone survival occurs in rd10 and Rho-/- mouse models.",
+      "claim_type": "EXPLICIT",
+      "source": "In both rd10 and Rho-/- mouse models, cones survived long-term in the peripheral retina, with the same pattern as seen in rd1, persisting at least up to P366 and P531, respectively (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "4e615455-521f-4b30-a981-353ebf6ecb2b",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C19",
+      "claim": "No Nrl signal was found in dorsal rd10 retinal sections at P366.",
+      "claim_type": "EXPLICIT",
+      "source": "To corroborate, we performed single molecule fluorescent in situ hybridization (smFISH) for Nrl, a marker of rods, and Arr3, a marker of cones, in dorsal rd10 retinal sections at P366. While Arr3+ cones were sparsely detected in the ONL, no Nrl signal was found (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by smFISH data shown in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "17502526-d900-492d-8c38-aa797bfef94b",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C20",
+      "claim": "Aldh1a1 was highly enriched in the peripheral samples compared to central samples in cone RNA sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the DE genes, we found that Aldh1a1 was highly enriched in the peripheral samples (Figure 1E), matching the previous data that it is expressed in dorsal MG (McCaffery et al., 1992).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA sequencing data shown in Figure 1E and citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "8b79d467-caf5-4d5a-8d63-ff026a0934f2",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C21",
+      "claim": "Aldh1a1 is expressed in dorsal Muller glia.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the DE genes, we found that Aldh1a1 was highly enriched in the peripheral samples (Figure 1E), matching the previous data that it is expressed in dorsal MG (McCaffery et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to McCaffery et al., 1992",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "ed86867b-fd5d-4c8b-85a5-22f64d55b2d1",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C22",
+      "claim": "Aldh1a1, Aldh1a2, and Aldh1a3 catalyze the synthesis of retinoic acid (RA).",
+      "claim_type": "EXPLICIT",
+      "source": "Functionally, Aldh1a1, Aldh1a2, and Aldh1a3 catalyze the synthesis of RA (RA), a metabolite that, when bound to RA receptor (RAR), drives transcription of RA target genes from genomic RA response elements (RAREs) (Cunningham and Duester, 2015; Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Cunningham and Duester, 2015",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "92d5d5c3-fee1-490c-acf6-4c4ce49f75b4",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C23",
+      "claim": "RA, when bound to RA receptor (RAR), drives transcription of RA target genes from genomic RA response elements (RAREs).",
+      "claim_type": "EXPLICIT",
+      "source": "Functionally, Aldh1a1, Aldh1a2, and Aldh1a3 catalyze the synthesis of RA (RA), a metabolite that, when bound to RA receptor (RAR), drives transcription of RA target genes from genomic RA response elements (RAREs) (Cunningham and Duester, 2015; Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Cunningham and Duester, 2015",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "7f0f543d-ab25-4df7-a52b-cc326635f241",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C24",
+      "claim": "In P25 rd1 retinal sections, Aldh1a1 puncta were distributed throughout the radial dimension of the dorsal retina.",
+      "claim_type": "EXPLICIT",
+      "source": "To validate the expression pattern of Aldh1a1, we performed smFISH for Aqp4, a pan MG marker, and Aldh1a1, in P25 rd1 retinal sections. In the central retina, Aldh1a1 signal was detected only at low levels. However, in the dorsal retina, Aldh1a1 puncta were distributed throughout the radial dimension of the retina, suggestive of an expression pattern in MG, as MG processes exhibit this widespread pattern (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by smFISH data shown in Figure 1G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "89611266-c7bd-42a4-bc27-a21bc8f14e9b",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C25",
+      "claim": "In RARE-LacZ mice, B-gal was mostly localized to cell bodies in the INL and processes spanning the retinal section.",
+      "claim_type": "EXPLICIT",
+      "source": "In sections, B-gal was mostly localized to cell bodies in the INL and processes spanning the retinal section, reminiscent of MG morphology (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by IHC data shown in Figure 1H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "17f0711d-99cb-4399-82bf-2902b39b47f4",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C26",
+      "claim": "B-gal staining overlapped with Glutamine Synthetase, indicating that most cells with activated RA signaling were Muller glia.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, B-gal staining overlapped with that of Glutamine Synthetase, an MG marker, indicating that most cells with activated RA signaling were MG, although not all peripheral MG were B-gal+.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by IHC data showing colocalization",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "6effac98-965d-4059-aed7-f0d66e3f4191",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C27",
+      "claim": "In retinal flatmounts, the strongest B-gal activity was observed in the dorsal periphery, demarcated with a clear border.",
+      "claim_type": "EXPLICIT",
+      "source": "In retinal flatmounts, the strongest B-gal activity was observed in the dorsal periphery, demarcated with a clear border, and weaker activity was found in the ventral periphery, as previously described (Luo et al., 2004; Figure 1I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by LacZ staining data shown in Figure 1I and citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "572deddf-5968-45bc-bc89-660d7757a06e",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C28",
+      "claim": "In rd1; RARE-lacZ mice, the spatial pattern of B-gal expression closely matched that of CAR+ cone survival at both P40 and P100.",
+      "claim_type": "EXPLICIT",
+      "source": "In rd1; RARE-lacZ mice, the spatial pattern of B-gal expression closely matched that of CAR+ cone survival in rd1 mice, at both P40 and P100 (Figure 1J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by IHC data shown in Figure 1J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "31e19734-4385-4438-993c-a337d662a1c1",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C29",
+      "claim": "The relative expression level of Aldh1a1 was significantly reduced in retinas with CAG-CreER compared to control littermates without CAG-CreER.",
+      "claim_type": "EXPLICIT",
+      "source": "As assessed by ddPCR of the retina, the relative expression level of Aldh1a1 was significantly reduced in retinas with CAG-CreER, compared to control littermates without CAG-CreER (Mean \u00b1 SD: -CreER: 0.01203 \u00b1 0.005;+ CreER: 0.0003 \u00b1 0.0002) (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ddPCR data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "78a4fe7d-be2a-495b-b09b-10a6c238d521",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C30",
+      "claim": "In P60 Aldh flox retinal flatmounts with CAG-CreER, there were fewer cones in the periphery compared to those without CAG-CreER.",
+      "claim_type": "EXPLICIT",
+      "source": "In P60 Aldh flox retinal flatmounts without CAG-CreER, IHC for CAR showed abundant cone survival in the periphery. In contrast, those with CAG-CreER appeared to have fewer cones in the periphery (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by IHC data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "fc1e1519-b381-4ba2-a12f-b883b6c8f9d3",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C31",
+      "claim": "Quantification of CAR+ cones in sampled dorsal regions showed a significant reduction in the number of cones in Aldh Flox mice with CAG-CreER.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, quantification of CAR+ cones in sampled dorsal regions showed a significant reduction in the number of cones (Mean \u00b1 SD: -CreER: 40.94 \u00b1 13.51;+ CreER: 23.9 \u00b1 12.74), suggesting that RA is necessary for the locally enriched peripheral cone survival (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative data shown in Figure 2E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "02df5d90-a33f-4a85-9225-a5caa46b4a34",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C32",
+      "claim": "RA is necessary for the locally enriched peripheral cone survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, quantification of CAR+ cones in sampled dorsal regions showed a significant reduction in the number of cones (Mean \u00b1 SD: -CreER: 40.94 \u00b1 13.51;+ CreER: 23.9 \u00b1 12.74), suggesting that RA is necessary for the locally enriched peripheral cone survival (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from conditional knockout experiments",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "bf0847bf-f395-4d48-8745-1f53b3b7abda",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C33",
+      "claim": "Pdgfra-Cre drives expression of Cre in Muller glia.",
+      "claim_type": "EXPLICIT",
+      "source": "To overcome this issue, we generated another Aldh Flox mouse line with Pdgfra-Cre, which drives expression of Cre in MG (Roesch et al., 2008; Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Roesch et al., 2008 and validation data in Figure 2F",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "d6d75964-75b0-45cf-abdb-5bff09fd4a2f",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C34",
+      "claim": "Aldh1a1 was essentially depleted in the retinas of mice with Pdgfra-Cre, while it remained in the liver at high levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Using ddPCR, the number of transcripts for Aldh1a1 was quantified from the retina and the liver. While Aldh1a1 remained in the liver at high levels, it was essentially depleted in the retinas of mice with Pdgfra-Cre, indicating the specificity of the Cre line (Retina: Mean \u00b1 SD: -CreER: 0.0128 \u00b1 0.001;+ CreER: 0.0005 \u00b1 0.0001; Liver: Mean \u00b1 SD: -CreER: 0.5579 \u00b1 0.6069;+ CreER: 0.3255 \u00b1 0.1793) (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ddPCR data shown in Figure 2G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "34fa88eb-5a18-464f-9e4b-a34e11c2280b",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C35",
+      "claim": "There was a significant reduction in the number of cones in the dorsal retina of mice with Pdgfra-Cre compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "We then quantified the number of CAR+ cones in the dorsal retina and found a significant reduction in the number of cones in the retinas with Pdgfra-Cre compared to controls (Mean \u00b1 SD: -CreER: 48.62 \u00b1 10.77;+ CreER: 18.73 \u00b1 7.44) (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative data shown in Figure 2H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "dd5e777b-e6a3-4f7a-a5b3-82ac17eabc85",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C36",
+      "claim": "MG-specific RA signaling is necessary for the excess cone survival in the periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that MG-specific RA signaling is necessary for the excess cone survival in the periphery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from MG-specific conditional knockout",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "e51cfc12-f4be-4f94-a5c5-8c38cdd03b9a",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C37",
+      "claim": "Overexpression of Cyp26a1 significantly reduced the number of dorsal cones compared to GFP only controls.",
+      "claim_type": "EXPLICIT",
+      "source": "In accord with the cKO data, overexpression of Cyp26a1 significantly reduced the number of dorsal cones compared to GFP only controls (Mean \u00b1 SD: GFP: 15.81 \u00b1 8.369;+ CreER: 9.416 \u00b1 6.564) (Figure 2J\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative data shown in Figure 2J-K",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "82ad347a-f5c2-4ec3-9c4e-53b180bf2ee7",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C38",
+      "claim": "RA is necessary for the excess cone survival seen in the periphery of the rd1 mouse model.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results indicate that RA is necessary for the excess cone survival seen in the periphery of the rd1 mouse model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple loss-of-function experiments",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "72fa5f1e-6e89-49b0-b719-e891aaa7198f",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C39",
+      "claim": "In the absence of RA, the RARa-RXR dimer, bound to genomic RAREs, represses downstream transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Canonically, the RARa-RXR dimer, bound to genomic RAREs, represses downstream transcription in the absence of the RA ligand (Cunningham and Duester, 2015; Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Cunningham and Duester, 2015",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "0a6a9158-2c00-4f4b-94a4-b2f0c6715415",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C40",
+      "claim": "In the presence of RA, the RARa-RXR dimer recruits co-transcriptional activators and the transcriptional machinery, leading to transcription of downstream genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of RA, the dimer recruits co-transcriptional activators and the transcriptional machinery, leading to transcription of downstream genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established knowledge of RA signaling",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "9a9894af-46e4-477f-a78d-ed3e77c99a7a",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C41",
+      "claim": "The major downstream transcriptional target of RAR is Cyp26a1, which breaks down RA.",
+      "claim_type": "EXPLICIT",
+      "source": "The RA signaling pathway is tightly regulated via a type of feedback inhibition, as the major downstream transcriptional target of RAR is Cyp26a1, which breaks down RA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established knowledge of RA signaling feedback",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "26dc99b0-e503-493c-bd0c-4b89c2db6f9b",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C42",
+      "claim": "RARa-VP16 transactivator fusion protein constitutively activates downstream transcriptional targets, even in the absence of RA.",
+      "claim_type": "EXPLICIT",
+      "source": "To overcome this issue, a RARa-VP16 transactivator fusion protein was developed previously, to constitutively activate downstream transcriptional targets, even in the absence of RA (Lipkin et al., 1996; Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Lipkin et al., 1996",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "84a6c5eb-b45c-4332-ac7e-60fe97d95a77",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C43",
+      "claim": "When bpCAG-BFP was combined with CAG-RARa-VP16, a strong induction of B-gal and Cyp26a1 expression was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when bpCAG-BFP was combined with CAG-RARa-VP16, a strong induction of B-gal and Cyp26a1 expression was observed, indicative of transcription from RA signaling (Figure 3C and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by IHC and smFISH data shown in Figure 3C and Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "3ac20a30-2da3-4d87-b597-4c3ab6b68b5d",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C44",
+      "claim": "Within the electroporated patches that included CAG-RARa-VP16, a high density of cones was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the electroporated patches that included CAG-RARa-VP16, a high density of cones was observed (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by IHC data shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "4fb80082-0257-464c-b3ae-4a42644f5480",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C45",
+      "claim": "Quantification of cones in the electroporated region showed a significant increase in the RARa-VP16 group compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of cones in the electroporated region showed a significant increase in the RARa-VP16 group compared to controls (Mean \u00b1 SD: BFP: 19.14 \u00b1 4.589; RARa: 38.8 \u00b1 6.261) (Figure 3D, Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative data shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "7f5bcd8a-bb6d-499b-ab51-c3c9dbc1d6a4",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C46",
+      "claim": "Electroporation of the postnatal mouse retina results in expression of constructs only in late-born cell types, including rods, MG, bipolar cells, and amacrine cells, but not cones.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, electroporation of the postnatal mouse retina results in expression of constructs only in late-born cell types of the retina, including rods, MG, bipolar cells, and amacrine cells, but not cones (Matsuda and Cepko, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Matsuda and Cepko, 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "54922c56-bad4-42e7-bab6-bc1ed80353a7",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C47",
+      "claim": "The effect of RARa-VP16 on cone survival is non-cell autonomous with respect to cones.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, this effect on cone survival is not due to expression of the constructs within cones, that is, it is a non-cell autonomous effect on cones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from electroporation specificity",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "10ad284d-99d1-4d0d-84e1-f1042bce7657",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C48",
+      "claim": "The region of increased cone survival was confined to the electroporated patch, with a sharp boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the region of increased cone survival was confined to the electroporated patch, with a sharp boundary, suggesting that the effect of RA signaling on cone survival is restricted locally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on observation of spatial pattern",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "1a248319-4a61-4b74-bd2c-d0e218ad1204",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C49",
+      "claim": "Cone survival was significantly increased in the RARa-VP16 group compared to controls even at P100.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, cone survival was significantly increased in the RARa-VP16 group compared to controls even at P100 (Mean \u00b1 SD: BFP: 11.67 \u00b1 9.388; RARa: 25.41 \u00b1 11.58), indicating that this effect lasts over an extended period of time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by quantitative data at P100",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "d692bc4b-86a5-4975-854b-540f70131d2d",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C50",
+      "claim": "The surviving cones in RARa-VP16 electroporated retinas also expressed M-opsin.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, IHC for M-opsin (Opn1mw) was carried out, which showed that the surviving cones also expressed M-opsin (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by IHC data shown in Figure 3F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "bf9f4034-56b6-4255-937a-26156de41490",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C51",
+      "claim": "The surviving cones in the electroporated patch also expressed H2B-GFP from the Gnat2-based cone promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "The surviving cones in the electroporated patch also expressed H2B-GFP, suggesting that these cones were positive for Gnat2, a cone marker (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by IHC data shown in Figure 3G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "07ca0e50-4ecc-42f5-8fbc-ab99a94ff02b",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C52",
+      "claim": "RA signaling leads to survival of cones, instead of simply upregulating the expression of CAR.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that RA signaling leads to survival of cones, instead of simply upregulating the expression of CAR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple marker validation experiments",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "9af987b6-7bba-40de-879d-dc8ba55d9983",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C53",
+      "claim": "RA signaling during cone degeneration (after P20) is sufficient for cone survival.",
+      "claim_type": "EXPLICIT",
+      "source": "With such a paradigm, a significant increase in the number of cones in the rtTA+ group compared to controls was observed (Mean \u00b1 SD: -rtTA: 14.25 \u00b1 2.723;+ rtTA: 24 \u00b1 9.412), indicating that RA signaling during cone degeneration, and after rod degeneration (after P20), is sufficient for cone survival (Figure 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by temporal control experiment data shown in Figure 3H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "c34b6ee7-e611-4278-b629-a08315dc9330",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C54",
+      "claim": "Co-electroporation with Cralbp-Cre, but not Rho-Cre, showed significant increases in the number of cones compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-electroporation with Cralbp-Cre, but not Rho-Cre, showed significant increases in the number of cones compared to controls (No Cre) (Mean \u00b1 SD: No Cre: 9.125 \u00b1 3.22; Rho: 13.07 \u00b1 7.175; Cralbp: 20.61 \u00b1 9.048) (Figure 3I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by cell-type-specific expression data shown in Figure 3I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "29a3cf48-80bf-4d75-9a2d-2756389777f5",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C55",
+      "claim": "Overexpression of RARa-VP16 in Pdgfra-Cre+ retinas increased the number of cones compared to controls without Cre.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of RARa-VP16 in the Cre+ retinas increased the number of cones compared to controls without Cre (Mean \u00b1 SD: -Cre: 16.32 \u00b1 3.681;+ Cre: 29.25 \u00b1 10.79) (Figure 3J), in keeping with the results from Cralbp-Cre electroporation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative data shown in Figure 3J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "6fb61a19-1af0-43ed-8220-47c45a69b7c6",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C56",
+      "claim": "RA signaling activation in MG during cone degeneration (> P20) is sufficient to promote cone survival in regions without endogenous RA synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results indicate that RA signaling activation in MG during cone degeneration (> P20) is sufficient to promote cone survival in regions without endogenous RA synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple gain-of-function experiments",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "f0b989ed-b786-4563-945e-8fca94a1c02b",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C57",
+      "claim": "ALDH1A1 was significantly enriched in the peripheral human retina compared to the central retina.",
+      "claim_type": "EXPLICIT",
+      "source": "As assessed by ddPCR, ALDH1A1 was significantly enriched in the peripheral retina (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ddPCR data from human retinas shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "2501df03-9e85-487c-835e-2cd8c62a5eae",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C58",
+      "claim": "Active retinoic acid (RA) signaling in peripheral Muller glia is necessary for the abnormally long survival of peripheral cones in rd1 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we found that active retinoic acid (RA) signaling in peripheral Muller glia is necessary for the abnormally long survival of these peripheral cones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by loss-of-function experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "8f0c5de2-b3db-43fb-baa6-8c6eb5200487",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C59",
+      "claim": "RA depletion by conditional knockout of RA synthesis enzymes abrogated the extended survival of peripheral cones.",
+      "claim_type": "EXPLICIT",
+      "source": "RA depletion by conditional knockout of RA synthesis enzymes, or overexpression of an RA degradation enzyme, abrogated the extended survival of peripheral cones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by conditional knockout experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "e99a3ff5-cd62-4635-99b3-00e9d3199c2d",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C60",
+      "claim": "Overexpression of an RA degradation enzyme abrogated the extended survival of peripheral cones.",
+      "claim_type": "EXPLICIT",
+      "source": "RA depletion by conditional knockout of RA synthesis enzymes, or overexpression of an RA degradation enzyme, abrogated the extended survival of peripheral cones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by Cyp26a1 overexpression experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "6924f5b3-3c4f-4966-9e25-e63c598dcc47",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C61",
+      "claim": "Constitutive activation of RA signaling in the central retina promoted long-term cone survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, constitutive activation of RA signaling in the central retina promoted long-term cone survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RARa-VP16 overexpression experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "fee16945-0b06-45d7-b1b4-cea2bbfffbff",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C62",
+      "claim": "RA signaling mediates the prolonged peripheral cone survival in the rd1 mouse model of retinal degeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that RA signaling mediates the prolonged peripheral cone survival in the rd1 mouse model of retinal degeneration, and provide a basis for a generic strategy for cone survival in the many diseases that lead to loss of cone-mediated vision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by combined loss-of-function and gain-of-function experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "066b931b-8421-479d-bc6b-a76cec5a50e4",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C63",
+      "claim": "Peripheral MG express Aldh1a1, leading to active transcription of RA target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that peripheral MG express Aldh1a1, leading to active transcription of RA target genes, and that the regions with active RA signaling closely matched those with surviving cones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by smFISH and RARE-LacZ reporter data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "1959dc56-1b27-42f0-81a5-5c8179ab93c3",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C64",
+      "claim": "The regions with active RA signaling closely matched those with surviving cones.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that peripheral MG express Aldh1a1, leading to active transcription of RA target genes, and that the regions with active RA signaling closely matched those with surviving cones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by spatial correlation of RARE-LacZ and cone survival patterns",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "05f73373-eb4e-4526-9548-c87939516404",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C65",
+      "claim": "RA signaling is not activated directly in cones.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, RA signaling is not activated directly in cones; and therefore, the mechanism that promotes cone survival is non-cell autonomous with regards to cones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on RARE-LacZ reporter expression pattern",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "4de30368-c4b8-4619-9133-530a9d17ad68",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C66",
+      "claim": "The mechanism that promotes cone survival by RA signaling is non-cell autonomous with regards to cones.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, RA signaling is not activated directly in cones; and therefore, the mechanism that promotes cone survival is non-cell autonomous with regards to cones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on cell-type-specific expression and electroporation data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "cf36cfd0-2966-476d-a058-26e44cd87680",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C67",
+      "claim": "RA signaling plays a role in maintaining the integrity of the blood-retina-barrier (BRB) in the zebrafish eye.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, RA signaling plays a role in maintaining the integrity of the blood-retina-barrier (BRB) in the zebrafish eye, and BRB leakage is associated with cone degeneration (Ivanova et al., 2019; Pollock et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ivanova et al., 2019 and Pollock et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "f31d3582-5c19-4bd4-a3c9-137eb72f303e",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C68",
+      "claim": "BRB leakage is associated with cone degeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, RA signaling plays a role in maintaining the integrity of the blood-retina-barrier (BRB) in the zebrafish eye, and BRB leakage is associated with cone degeneration (Ivanova et al., 2019; Pollock et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ivanova et al., 2019 and Pollock et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "0988b915-76e3-4193-b8d3-9da7fb83d7d1",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C69",
+      "claim": "The human central retina is more susceptible to photoreceptor death compared to the peripheral retina in both RP and age-related macular degeneration (AMD).",
+      "claim_type": "EXPLICIT",
+      "source": "The human central retina is more susceptible to photoreceptor death compared to the peripheral retina in both RP and age-related macular degeneration (AMD) (Charng et al., 2016; Fleckenstein et al., 2021), and it remains unclear what molecular mechanisms underlie this difference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Charng et al., 2016 and Fleckenstein et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "27e6adba-f804-4606-8219-97bf888773f4",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C70",
+      "claim": "CYP26A1 is a marker of the human central retina with sustained expression from embryo into adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the markers of the human central retina is the sustained expression of CYP26A1 from embryo into adulthood (Peng et al., 2019; da Silva and Cepko, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Peng et al., 2019 and da Silva and Cepko, 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "9bad4b4b-9317-4785-82f8-6d2af9d736bf",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C71",
+      "claim": "Development of the high acuity area in the chick requires inhibition of RA signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "While the function of these genes with opposing functions is unknown in the human retina, development of the high acuity area in the chick, which lacks rods as does the human fovea, requires inhibition of RA signaling (da Silva and Cepko, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to da Silva and Cepko, 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "b0a10092-6e7f-42fc-85be-9417120d1043",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C72",
+      "claim": "During mouse and chick retinal development, Aldh1a1 and Aldh1a3 are expressed in retinal progenitor cells (RPC) of the dorsal and ventral peripheral regions, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "During mouse and chick retinal development, Aldh1a1 and Aldh1a3 are expressed in retinal progenitor cells (RPC) of the dorsal and ventral peripheral regions, respectively (McCaffery et al., 1992; Goto et al., 2018; Sen et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to McCaffery et al., 1992, Goto et al., 2018, and Sen et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "d19e5128-4008-4f44-a01d-b21dfdc66846",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C73",
+      "claim": "RA signaling in the chick retina plays a role in retinal patterning.",
+      "claim_type": "EXPLICIT",
+      "source": "RA signaling in the chick retina plays a role in retinal patterning, as it is required for the correct cellular composition of the chick high acuity area, while in the mouse retina, it influences the perioptic mesenchyme and choroidal vasculature, but not retinal patterning (Cammas et al., 2010; Dup\u00e9 et al., 2003; Fan, 2003; Goto et al., 2018; Molotkov et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "43ec21db-b291-446e-9610-7b79278eb76f",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C74",
+      "claim": "In the mouse retina, RA signaling influences the perioptic mesenchyme and choroidal vasculature, but not retinal patterning.",
+      "claim_type": "EXPLICIT",
+      "source": "RA signaling in the chick retina plays a role in retinal patterning, as it is required for the correct cellular composition of the chick high acuity area, while in the mouse retina, it influences the perioptic mesenchyme and choroidal vasculature, but not retinal patterning (Cammas et al., 2010; Dup\u00e9 et al., 2003; Fan, 2003; Goto et al., 2018; Molotkov et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "a717727e-1d5f-4081-b7f8-b018c33a4089",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C75",
+      "claim": "Postnatally, ventral Aldh1a3 expression gradually disappears while dorsal Aldh1a1 expression persists in adult MG.",
+      "claim_type": "EXPLICIT",
+      "source": "Postnatally, ventral Aldh1a3 expression gradually disappears while dorsal Aldh1a1 expression persists in adult MG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established expression patterns",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "70853a83-564a-4a4d-aa4a-c212988da7c7",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C76",
+      "claim": "No overt retinal phenotype has been reported when Aldh1a1, 2, and 3 were conditionally deleted in the adult mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "However, no overt retinal phenotype has been reported when Aldh1a1, 2, and 3 were conditionally deleted in the adult mouse, bringing into question whether RA signaling has any function in the adult retina.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on review of literature",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "d8899c70-0da0-41e6-a1ab-34e34504cfac",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C77",
+      "claim": "Adult MG have many of the molecular and morphological features of developing RPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "As adult MG have many of the molecular and morphological features of developing RPCs (Jadhav et al., 2009), we speculate that dorsal RPC-specific Aldh1a1 expression persists into adult MG-specific expression as part of the dorsal peripheral RPC gene expression program.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Jadhav et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "fecf84e5-6f0c-4788-914b-2a3b8a1a087d",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C78",
+      "claim": "RA is an important regulator of vasculogenesis and the development of the BRB.",
+      "claim_type": "EXPLICIT",
+      "source": "As RA is an important regulator of vasculogenesis and the development of the BRB (Pawlikowski et al., 2019), and the main intra-retinal vasculature enters the retina via the ventral structure, the optic stalk (later the optic disc) (Hyatt et al., 1996), it might be the case that RA synthesis by ventral MG after development is somehow incompatible with the proper regulation of these activities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pawlikowski et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "6c459002-71eb-45d0-ad88-f570b0f643d6",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "claim_id": "C79",
+      "claim": "The main intra-retinal vasculature enters the retina via the ventral structure, the optic stalk (later the optic disc).",
+      "claim_type": "EXPLICIT",
+      "source": "As RA is an important regulator of vasculogenesis and the development of the BRB (Pawlikowski et al., 2019), and the main intra-retinal vasculature enters the retina via the ventral structure, the optic stalk (later the optic disc) (Hyatt et al., 1996), it might be the case that RA synthesis by ventral MG after development is somehow incompatible with the proper regulation of these activities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hyatt et al., 1996",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2231a0b4-9cd9-44f5-b8e6-3d3879655330",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Retinitis Pigmentosa (RP) is a progressive retinal disease affecting 1 in 4000 people worldwide, characterized by rod dysfunction followed by secondary cone degeneration. Over 65 causative genes have been identified, making gene-by-gene therapy approaches challenging despite proven efficacy in some cases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 provide well-established background on RP epidemiology, clinical progression, genetic heterogeneity, and pathophysiology. All claims are supported by appropriate citations to peer-reviewed literature or established clinical knowledge, providing a solid foundation for the study's rationale.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "dcc8c189-aa68-41a1-8452-2e214b6a8962",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In animal models of RP, cones in the far periphery survive long-term despite complete rod loss, with survival confined to areas with sharp boundaries rather than gradients. Dark rearing can slow but not rescue photoreceptor degeneration, suggesting light exposure is not the sole mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C10 establish the phenomenon of peripheral cone survival through multiple citations and logical inference. The sharp boundary observation (C10) provides key evidence against light exposure as the sole mechanism, though this is based on inference rather than direct experimental manipulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "700eae95-c0f1-4572-95aa-b251d77f6641",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In rd1, rd10, and Rho-/- mouse models, peripheral cones survive long-term (up to P366-P531) in the dorsal retina despite complete rod degeneration by P20-P36. Quantification shows significantly more cones in peripheral versus central regions across all three models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C19 provide comprehensive characterization of peripheral cone survival across multiple RP mouse models. The data are supported by immunohistochemistry, smFISH, and quantification (Figure 1B-C, Figure 1\u2014figure supplement 1). Statistical significance is demonstrated with appropriate tests and sample sizes (n=4 per group).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "bd3cda8a-f41d-4c04-b45b-a6d89bdec416",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "RNA sequencing of peripheral versus central retinal samples revealed enrichment of Aldh1a1 in the periphery. Aldh1a1 is expressed in dorsal Muller glia and catalyzes synthesis of retinoic acid (RA), which binds to RA receptors to drive transcription of target genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C24 identify Aldh1a1 as a candidate mediator through RNA-seq (Figure 1E) and validate expression by smFISH (Figure 1G). However, the RNA-seq had significant Muller glia contamination in the CAR+ FACS population (Figure 1\u2014figure supplement 2), which could confound interpretation of cone-specific versus Muller glia-specific expression patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "823b1f35-ce38-4cea-8d15-2298e3719846",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Using RARE-LacZ reporter mice, RA signaling activity was detected primarily in Muller glia of the dorsal periphery, with a spatial pattern that closely matched the pattern of cone survival in rd1 mice at both P40 and P100.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C28 demonstrate spatial correlation between RA signaling activity and cone survival using the RARE-LacZ reporter (Figure 1H-J). The colocalization with glutamine synthetase confirms Muller glia identity. The spatial correlation is compelling but does not establish causality, which is addressed in subsequent loss-of-function experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "d29e5e66-068b-472b-b701-830c4c5c3d3f",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Conditional knockout of Aldh1a1, Aldh1a2, and Aldh1a3 using CAG-CreER significantly reduced Aldh1a1 expression and decreased the number of surviving peripheral cones in rd1 mice, demonstrating that RA is necessary for peripheral cone survival.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C32 provide loss-of-function evidence through conditional knockout (Figure 2A-E). ddPCR confirms near-complete Aldh1a1 depletion, and quantification shows significant reduction in cone numbers (p=0.0086, n=12 control, n=9 knockout). However, some peripheral cones persisted despite knockout, suggesting additional mechanisms may contribute.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "53caca24-a04e-463e-a09c-15922b06d92a",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Muller glia-specific conditional knockout of Aldh1a1 using Pdgfra-Cre resulted in retina-specific depletion of Aldh1a1 (sparing liver expression) and significant reduction in peripheral cone numbers, confirming that Muller glia-derived RA is necessary for peripheral cone survival.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C36 address potential systemic toxicity concerns from the CAG-CreER approach by using Muller glia-specific Pdgfra-Cre (Figure 2F-H). Validation shows specificity (Figure 2F), tissue-specific knockout (Figure 2G), and significant cone reduction (p=0.0016, n=3 control, n=6 knockout). This strengthens the conclusion that Muller glia-specific RA is necessary.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "3326f1d7-98ea-45d1-aa3e-31382933ea37",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Overexpression of Cyp26a1, an RA-degrading enzyme, via AAV-mediated gene transfer significantly reduced the number of dorsal cones compared to GFP controls, providing additional evidence that RA is necessary for peripheral cone survival.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 provide complementary loss-of-function evidence through RA degradation (Figure 2I-K). The approach is orthogonal to genetic knockout and shows significant cone reduction (p=0.0441, n=13 per group). However, AAV transduction efficiency and spatial distribution (Figure 2\u2014figure supplement 1) may limit interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "8244cd1f-7cad-4dad-83b3-78765a8f7fc0",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The canonical RA signaling pathway involves ligand-dependent transcriptional activation by RAR\u03b1-RXR dimers, with Cyp26a1 as a major feedback target. The RAR\u03b1-VP16 fusion protein was developed to constitutively activate RA signaling independent of ligand availability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42 describe established mechanisms of RA signaling and the RAR\u03b1-VP16 tool, supported by appropriate citations (Cunningham and Duester, 2015; Lipkin et al., 1996). This provides necessary background for the gain-of-function experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "e5d6b990-0a1e-4b19-a39c-6d7c6299a8ab",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Electroporation of CAG-RAR\u03b1-VP16 into the central retina of rd1 mice induced RA target gene expression and significantly increased cone survival at P40 in a spatially restricted, non-cell autonomous manner (cones are not electroporated).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C48 demonstrate sufficiency through gain-of-function (Figure 3A-D). Significant cone increase is shown (p<0.0001, n=13 control, n=9 RAR\u03b1-VP16). The non-cell autonomous nature is inferred from established electroporation specificity (Matsuda and Cepko, 2004), though direct confirmation in this experimental context would strengthen the claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "8757109c-c308-4b26-a845-f20a3f927ea7",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The cone survival effect of RAR\u03b1-VP16 persisted to P100 and was confirmed using multiple cone markers (M-opsin, Gnat2-driven H2B-GFP), demonstrating that RA signaling promotes bona fide cone survival rather than simply upregulating CAR expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C52 address important controls for the gain-of-function experiments (Figure 3E-G). Long-term survival (P100) and validation with alternative markers strengthen the conclusion. However, the P100 data show high variability (SD: 9.388 for control, 11.58 for RAR\u03b1), and functional assessment of these surviving cones is not provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "423aceb0-5256-4af5-9785-2f1093ae6c58",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Temporal control experiments using doxycycline-inducible expression and cell-type-specific Cre lines (Cralbp-Cre for Muller glia, Rho-Cre for rods) demonstrated that RA signaling activation specifically in Muller glia after P20 is sufficient to promote cone survival.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C56 provide critical temporal and cell-type specificity (Figure 3H-J). The doxycycline experiment (p=0.0311, n=6-8) shows sufficiency after rod degeneration. Cell-type specificity is demonstrated with Cralbp-Cre showing effect (p=0.0005 vs no Cre) while Rho-Cre does not (p=0.3111 vs no Cre), though the Rho-Cre group shows high variability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "12b50c9b-f179-426f-b393-ef83de03e4b7",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "ALDH1A1 expression is significantly enriched in the peripheral human retina compared to the central retina, suggesting potential conservation of this mechanism in humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C57 extends findings to human tissue using ddPCR on postmortem samples (Figure 4, n=5 per region, p=0.0146). However, the samples are from non-RP donors, so relevance to human RP patients remains speculative. Postmortem interval (5-9 hours) and lack of spatial resolution within peripheral regions are limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "fffdd603-09c1-464e-b378-d63802d05f46",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "RA signaling in peripheral Muller glia is both necessary (demonstrated by conditional knockout and Cyp26a1 overexpression) and sufficient (demonstrated by RAR\u03b1-VP16 overexpression) for prolonged cone survival in the rd1 mouse model of retinal degeneration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C62 synthesize the major findings. The necessity and sufficiency framework is well-supported by multiple complementary approaches with appropriate controls. However, the mechanism downstream of RA signaling remains unknown, and some cones survive even after RA depletion, suggesting additional pathways may contribute.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "dda66bef-f0dd-4665-9d84-dcf667abd42f",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Peripheral Muller glia express Aldh1a1 and exhibit active RA signaling that spatially correlates with cone survival. RA signaling is not activated directly in cones, indicating a non-cell autonomous mechanism of cone survival.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C66 establish the cellular basis of the mechanism through expression analysis and RARE-LacZ reporter data. The non-cell autonomous nature is inferred from RARE-LacZ expression pattern and electroporation specificity. However, direct measurement of RA levels or receptor activation in cones would provide stronger evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "1fe01153-73e7-4dc1-b773-982b06911b47",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Prior work in zebrafish and chick suggests RA signaling may regulate blood-retina barrier integrity and retinal patterning. In humans, differential expression of CYP26A1 (central) and ALDH1A1 (peripheral) may contribute to regional differences in susceptibility to photoreceptor death in RP and AMD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C71 provide relevant context from other species and human development, all supported by appropriate citations. These are speculative connections to the current findings but provide useful framework for interpretation and future directions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    },
+    {
+      "id": "94e4aff9-5ab6-457d-977b-c72cf61bc989",
+      "content_id": "8f32bdad-96f7-489c-8f63-b651a9aa953e",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "During development, Aldh1a1 and Aldh1a3 are expressed in dorsal and ventral retinal progenitor cells, respectively. Postnatally, dorsal Aldh1a1 expression persists in adult Muller glia, possibly as a remnant of the developmental gene expression program, though no overt retinal phenotype has been reported in adult conditional knockouts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C79 provide developmental and evolutionary context, supported by multiple citations. The speculation about persistence of developmental programs is reasonable but not directly tested. The observation that conditional knockout in healthy adult mice shows no phenotype (C76) contrasts with the effect in degenerating retinas, suggesting context-dependent function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:55:41.451448Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a6f65d6e-92e0-450f-9bdb-fb3c4d677478",
+      "result_id": "2231a0b4-9cd9-44f5-b8e6-3d3879655330"
+    },
+    {
+      "claim_id": "2ce8c92a-14c7-409f-b3a7-8a3bec182adc",
+      "result_id": "2231a0b4-9cd9-44f5-b8e6-3d3879655330"
+    },
+    {
+      "claim_id": "851e210e-ead2-443a-a8c7-f0479f8645eb",
+      "result_id": "2231a0b4-9cd9-44f5-b8e6-3d3879655330"
+    },
+    {
+      "claim_id": "ded02af5-0a35-4b68-bacc-dc1e07b85356",
+      "result_id": "2231a0b4-9cd9-44f5-b8e6-3d3879655330"
+    },
+    {
+      "claim_id": "740bcae2-1b54-4741-b428-ba1a1b7a7097",
+      "result_id": "2231a0b4-9cd9-44f5-b8e6-3d3879655330"
+    },
+    {
+      "claim_id": "ef7ad65b-39bb-44df-9de6-05644ed85fc4",
+      "result_id": "2231a0b4-9cd9-44f5-b8e6-3d3879655330"
+    },
+    {
+      "claim_id": "d8a31a74-9c83-4d54-a499-3c23a593f2cc",
+      "result_id": "2231a0b4-9cd9-44f5-b8e6-3d3879655330"
+    },
+    {
+      "claim_id": "2ecbe50c-2753-412d-baff-8fecac0025bc",
+      "result_id": "dcc8c189-aa68-41a1-8452-2e214b6a8962"
+    },
+    {
+      "claim_id": "b2fef8c9-9287-4552-a96e-362762ba5523",
+      "result_id": "dcc8c189-aa68-41a1-8452-2e214b6a8962"
+    },
+    {
+      "claim_id": "d74bb970-e6d9-4d15-9560-fbf8605e6624",
+      "result_id": "dcc8c189-aa68-41a1-8452-2e214b6a8962"
+    },
+    {
+      "claim_id": "e11d13e8-e4dc-4c53-8259-229dffa2c09c",
+      "result_id": "700eae95-c0f1-4572-95aa-b251d77f6641"
+    },
+    {
+      "claim_id": "493b8446-de90-4873-9003-8f9f8a1fbd66",
+      "result_id": "700eae95-c0f1-4572-95aa-b251d77f6641"
+    },
+    {
+      "claim_id": "d8829584-8069-4535-998b-beb736e08c7f",
+      "result_id": "700eae95-c0f1-4572-95aa-b251d77f6641"
+    },
+    {
+      "claim_id": "d5275c97-3a1e-46da-80d5-aa120d89ff39",
+      "result_id": "700eae95-c0f1-4572-95aa-b251d77f6641"
+    },
+    {
+      "claim_id": "b6be4ca1-c652-4c10-9e58-6045be073b84",
+      "result_id": "700eae95-c0f1-4572-95aa-b251d77f6641"
+    },
+    {
+      "claim_id": "e2c29904-6989-41c4-aa82-8889c5a37adf",
+      "result_id": "700eae95-c0f1-4572-95aa-b251d77f6641"
+    },
+    {
+      "claim_id": "de5e46cf-fb8a-4078-ade0-3ee6556aea9b",
+      "result_id": "700eae95-c0f1-4572-95aa-b251d77f6641"
+    },
+    {
+      "claim_id": "719c56be-2710-4cda-a59f-7f2bdcf7549f",
+      "result_id": "700eae95-c0f1-4572-95aa-b251d77f6641"
+    },
+    {
+      "claim_id": "4e615455-521f-4b30-a981-353ebf6ecb2b",
+      "result_id": "700eae95-c0f1-4572-95aa-b251d77f6641"
+    },
+    {
+      "claim_id": "17502526-d900-492d-8c38-aa797bfef94b",
+      "result_id": "bd3cda8a-f41d-4c04-b45b-a6d89bdec416"
+    },
+    {
+      "claim_id": "8b79d467-caf5-4d5a-8d63-ff026a0934f2",
+      "result_id": "bd3cda8a-f41d-4c04-b45b-a6d89bdec416"
+    },
+    {
+      "claim_id": "ed86867b-fd5d-4c8b-85a5-22f64d55b2d1",
+      "result_id": "bd3cda8a-f41d-4c04-b45b-a6d89bdec416"
+    },
+    {
+      "claim_id": "92d5d5c3-fee1-490c-acf6-4c4ce49f75b4",
+      "result_id": "bd3cda8a-f41d-4c04-b45b-a6d89bdec416"
+    },
+    {
+      "claim_id": "7f0f543d-ab25-4df7-a52b-cc326635f241",
+      "result_id": "bd3cda8a-f41d-4c04-b45b-a6d89bdec416"
+    },
+    {
+      "claim_id": "89611266-c7bd-42a4-bc27-a21bc8f14e9b",
+      "result_id": "823b1f35-ce38-4cea-8d15-2298e3719846"
+    },
+    {
+      "claim_id": "17f0711d-99cb-4399-82bf-2902b39b47f4",
+      "result_id": "823b1f35-ce38-4cea-8d15-2298e3719846"
+    },
+    {
+      "claim_id": "6effac98-965d-4059-aed7-f0d66e3f4191",
+      "result_id": "823b1f35-ce38-4cea-8d15-2298e3719846"
+    },
+    {
+      "claim_id": "572deddf-5968-45bc-bc89-660d7757a06e",
+      "result_id": "823b1f35-ce38-4cea-8d15-2298e3719846"
+    },
+    {
+      "claim_id": "31e19734-4385-4438-993c-a337d662a1c1",
+      "result_id": "d29e5e66-068b-472b-b701-830c4c5c3d3f"
+    },
+    {
+      "claim_id": "78a4fe7d-be2a-495b-b09b-10a6c238d521",
+      "result_id": "d29e5e66-068b-472b-b701-830c4c5c3d3f"
+    },
+    {
+      "claim_id": "fc1e1519-b381-4ba2-a12f-b883b6c8f9d3",
+      "result_id": "d29e5e66-068b-472b-b701-830c4c5c3d3f"
+    },
+    {
+      "claim_id": "02df5d90-a33f-4a85-9225-a5caa46b4a34",
+      "result_id": "d29e5e66-068b-472b-b701-830c4c5c3d3f"
+    },
+    {
+      "claim_id": "bf0847bf-f395-4d48-8745-1f53b3b7abda",
+      "result_id": "53caca24-a04e-463e-a09c-15922b06d92a"
+    },
+    {
+      "claim_id": "d6d75964-75b0-45cf-abdb-5bff09fd4a2f",
+      "result_id": "53caca24-a04e-463e-a09c-15922b06d92a"
+    },
+    {
+      "claim_id": "34fa88eb-5a18-464f-9e4b-a34e11c2280b",
+      "result_id": "53caca24-a04e-463e-a09c-15922b06d92a"
+    },
+    {
+      "claim_id": "dd5e777b-e6a3-4f7a-a5b3-82ac17eabc85",
+      "result_id": "53caca24-a04e-463e-a09c-15922b06d92a"
+    },
+    {
+      "claim_id": "e51cfc12-f4be-4f94-a5c5-8c38cdd03b9a",
+      "result_id": "3326f1d7-98ea-45d1-aa3e-31382933ea37"
+    },
+    {
+      "claim_id": "82ad347a-f5c2-4ec3-9c4e-53b180bf2ee7",
+      "result_id": "3326f1d7-98ea-45d1-aa3e-31382933ea37"
+    },
+    {
+      "claim_id": "72fa5f1e-6e89-49b0-b719-e891aaa7198f",
+      "result_id": "8244cd1f-7cad-4dad-83b3-78765a8f7fc0"
+    },
+    {
+      "claim_id": "0a6a9158-2c00-4f4b-94a4-b2f0c6715415",
+      "result_id": "8244cd1f-7cad-4dad-83b3-78765a8f7fc0"
+    },
+    {
+      "claim_id": "9a9894af-46e4-477f-a78d-ed3e77c99a7a",
+      "result_id": "8244cd1f-7cad-4dad-83b3-78765a8f7fc0"
+    },
+    {
+      "claim_id": "26dc99b0-e503-493c-bd0c-4b89c2db6f9b",
+      "result_id": "8244cd1f-7cad-4dad-83b3-78765a8f7fc0"
+    },
+    {
+      "claim_id": "84a6c5eb-b45c-4332-ac7e-60fe97d95a77",
+      "result_id": "e5d6b990-0a1e-4b19-a39c-6d7c6299a8ab"
+    },
+    {
+      "claim_id": "3ac20a30-2da3-4d87-b597-4c3ab6b68b5d",
+      "result_id": "e5d6b990-0a1e-4b19-a39c-6d7c6299a8ab"
+    },
+    {
+      "claim_id": "4fb80082-0257-464c-b3ae-4a42644f5480",
+      "result_id": "e5d6b990-0a1e-4b19-a39c-6d7c6299a8ab"
+    },
+    {
+      "claim_id": "7f5bcd8a-bb6d-499b-ab51-c3c9dbc1d6a4",
+      "result_id": "e5d6b990-0a1e-4b19-a39c-6d7c6299a8ab"
+    },
+    {
+      "claim_id": "54922c56-bad4-42e7-bab6-bc1ed80353a7",
+      "result_id": "e5d6b990-0a1e-4b19-a39c-6d7c6299a8ab"
+    },
+    {
+      "claim_id": "10ad284d-99d1-4d0d-84e1-f1042bce7657",
+      "result_id": "e5d6b990-0a1e-4b19-a39c-6d7c6299a8ab"
+    },
+    {
+      "claim_id": "1a248319-4a61-4b74-bd2c-d0e218ad1204",
+      "result_id": "8757109c-c308-4b26-a845-f20a3f927ea7"
+    },
+    {
+      "claim_id": "d692bc4b-86a5-4975-854b-540f70131d2d",
+      "result_id": "8757109c-c308-4b26-a845-f20a3f927ea7"
+    },
+    {
+      "claim_id": "bf9f4034-56b6-4255-937a-26156de41490",
+      "result_id": "8757109c-c308-4b26-a845-f20a3f927ea7"
+    },
+    {
+      "claim_id": "07ca0e50-4ecc-42f5-8fbc-ab99a94ff02b",
+      "result_id": "8757109c-c308-4b26-a845-f20a3f927ea7"
+    },
+    {
+      "claim_id": "9af987b6-7bba-40de-879d-dc8ba55d9983",
+      "result_id": "423aceb0-5256-4af5-9785-2f1093ae6c58"
+    },
+    {
+      "claim_id": "c34b6ee7-e611-4278-b629-a08315dc9330",
+      "result_id": "423aceb0-5256-4af5-9785-2f1093ae6c58"
+    },
+    {
+      "claim_id": "29a3cf48-80bf-4d75-9a2d-2756389777f5",
+      "result_id": "423aceb0-5256-4af5-9785-2f1093ae6c58"
+    },
+    {
+      "claim_id": "6fb61a19-1af0-43ed-8220-47c45a69b7c6",
+      "result_id": "423aceb0-5256-4af5-9785-2f1093ae6c58"
+    },
+    {
+      "claim_id": "f0b989ed-b786-4563-945e-8fca94a1c02b",
+      "result_id": "12b50c9b-f179-426f-b393-ef83de03e4b7"
+    },
+    {
+      "claim_id": "2501df03-9e85-487c-835e-2cd8c62a5eae",
+      "result_id": "fffdd603-09c1-464e-b378-d63802d05f46"
+    },
+    {
+      "claim_id": "8f0c5de2-b3db-43fb-baa6-8c6eb5200487",
+      "result_id": "fffdd603-09c1-464e-b378-d63802d05f46"
+    },
+    {
+      "claim_id": "e99a3ff5-cd62-4635-99b3-00e9d3199c2d",
+      "result_id": "fffdd603-09c1-464e-b378-d63802d05f46"
+    },
+    {
+      "claim_id": "6924f5b3-3c4f-4966-9e25-e63c598dcc47",
+      "result_id": "fffdd603-09c1-464e-b378-d63802d05f46"
+    },
+    {
+      "claim_id": "fee16945-0b06-45d7-b1b4-cea2bbfffbff",
+      "result_id": "fffdd603-09c1-464e-b378-d63802d05f46"
+    },
+    {
+      "claim_id": "066b931b-8421-479d-bc6b-a76cec5a50e4",
+      "result_id": "dda66bef-f0dd-4665-9d84-dcf667abd42f"
+    },
+    {
+      "claim_id": "1959dc56-1b27-42f0-81a5-5c8179ab93c3",
+      "result_id": "dda66bef-f0dd-4665-9d84-dcf667abd42f"
+    },
+    {
+      "claim_id": "05f73373-eb4e-4526-9548-c87939516404",
+      "result_id": "dda66bef-f0dd-4665-9d84-dcf667abd42f"
+    },
+    {
+      "claim_id": "4de30368-c4b8-4619-9133-530a9d17ad68",
+      "result_id": "dda66bef-f0dd-4665-9d84-dcf667abd42f"
+    },
+    {
+      "claim_id": "cf36cfd0-2966-476d-a058-26e44cd87680",
+      "result_id": "1fe01153-73e7-4dc1-b773-982b06911b47"
+    },
+    {
+      "claim_id": "f31d3582-5c19-4bd4-a3c9-137eb72f303e",
+      "result_id": "1fe01153-73e7-4dc1-b773-982b06911b47"
+    },
+    {
+      "claim_id": "0988b915-76e3-4193-b8d3-9da7fb83d7d1",
+      "result_id": "1fe01153-73e7-4dc1-b773-982b06911b47"
+    },
+    {
+      "claim_id": "27e6adba-f804-4606-8219-97bf888773f4",
+      "result_id": "1fe01153-73e7-4dc1-b773-982b06911b47"
+    },
+    {
+      "claim_id": "9bad4b4b-9317-4785-82f8-6d2af9d736bf",
+      "result_id": "1fe01153-73e7-4dc1-b773-982b06911b47"
+    },
+    {
+      "claim_id": "b0a10092-6e7f-42fc-85be-9417120d1043",
+      "result_id": "94e4aff9-5ab6-457d-977b-c72cf61bc989"
+    },
+    {
+      "claim_id": "d19e5128-4008-4f44-a01d-b21dfdc66846",
+      "result_id": "94e4aff9-5ab6-457d-977b-c72cf61bc989"
+    },
+    {
+      "claim_id": "43ec21db-b291-446e-9610-7b79278eb76f",
+      "result_id": "94e4aff9-5ab6-457d-977b-c72cf61bc989"
+    },
+    {
+      "claim_id": "a717727e-1d5f-4081-b7f8-b018c33a4089",
+      "result_id": "94e4aff9-5ab6-457d-977b-c72cf61bc989"
+    },
+    {
+      "claim_id": "70853a83-564a-4a4d-aa4a-c212988da7c7",
+      "result_id": "94e4aff9-5ab6-457d-977b-c72cf61bc989"
+    },
+    {
+      "claim_id": "d8899c70-0da0-41e6-a1ab-34e34504cfac",
+      "result_id": "94e4aff9-5ab6-457d-977b-c72cf61bc989"
+    },
+    {
+      "claim_id": "fecf84e5-6f0c-4788-914b-2a3b8a1a087d",
+      "result_id": "94e4aff9-5ab6-457d-977b-c72cf61bc989"
+    },
+    {
+      "claim_id": "6c459002-71eb-45d0-ad88-f570b0f643d6",
+      "result_id": "94e4aff9-5ab6-457d-977b-c72cf61bc989"
+    }
+  ],
+  "comparisons": []
+}

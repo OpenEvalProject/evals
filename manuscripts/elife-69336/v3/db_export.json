@@ -1,0 +1,1485 @@
+{
+  "submission": {
+    "id": "d296b15b-76a3-45ba-b634-2a4b87bc8232",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T05:32:30.003451Z",
+    "updated_at": "2025-12-03T05:32:30.003451Z"
+  },
+  "content": [
+    {
+      "id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "submission_id": "d296b15b-76a3-45ba-b634-2a4b87bc8232",
+      "content_type": "manuscript",
+      "content_text": "# Tracking excess mortality across countries during the COVID-19 pandemic with the World Mortality Dataset\n\n## Authors\n\n- Ariel Karlinsky<sup>1</sup> ([ORCID: 0000-0003-0966-5837](https://orcid.org/0000-0003-0966-5837)) \u2020\n- Dmitry Kobak<sup>2</sup> ([ORCID: 0000-0002-5639-7209](https://orcid.org/0000-0002-5639-7209)) \u2020\n\n### Affiliations\n\n1. Hebrew University Jerusalem Israel\n2. Institute for Ophthalmic Research, University of T\u00fcbingen T\u00fcbingen Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nComparing the impact of the COVID-19 pandemic between countries or across time is difficult because the reported numbers of cases and deaths can be strongly affected by testing capacity and reporting policy. Excess mortality, defined as the increase in all-cause mortality relative to the expected mortality, is widely considered as a more objective indicator of the COVID-19 death toll. However, there has been no global, frequently updated repository of the all-cause mortality data across countries. To fill this gap, we have collected weekly, monthly, or quarterly all-cause mortality data from 103 countries and territories, openly available as the regularly updated World Mortality Dataset. We used this dataset to compute the excess mortality in each country during the COVID-19 pandemic. We found that in several worst-affected countries (Peru, Ecuador, Bolivia, Mexico) the excess mortality was above 50% of the expected annual mortality (Peru, Ecuador, Bolivia, Mexico) or above 400 excess deaths per 100,000 population (Peru, Bulgaria, North Macedonia, Serbia). At the same time, in several other countries (e.g. Australia and New Zealand) mortality during the pandemic was below the usual level, presumably due to social distancing measures decreasing the non-COVID infectious mortality. Furthermore, we found that while many countries have been reporting the COVID-19 deaths very accurately, some countries have been substantially underreporting their COVID-19 deaths (e.g. Nicaragua, Russia, Uzbekistan), by up to two orders of magnitude (Tajikistan). Our results highlight the importance of open and rapid all-cause mortality reporting for pandemic monitoring.\n\n## Introduction\n\nThe impact of COVID-19 on a given country is usually assessed via the number of cases and the number of deaths, two statistics that have been reported daily by each country and put together into international dashboards such as the ones maintained by the World Health Organization (https://covid19.who.int) or by the Johns Hopkins University (https://coronavirus.jhu.edu) (Dong et al., 2020). However, both metrics can be heavily affected by limited testing availability and by different definitions of \u2018COVID-19 death\u2019 used by different countries (Riffe et al., 2021): for example, some countries count only PCR-confirmed COVID-19 deaths, while others include suspected COVID-19 deaths as well.\n\nExcess mortality, defined as the increase of the all-cause mortality over the mortality expected based on historic trends, has long been used to estimate the death toll of pandemics and other extreme events\u2014from the Great Plague of London in 1665 (as described in Boka and Wainer, 2020), to the influenza epidemic in London in 1875 (Farr, 1885; Langmuir, 1976), the XX\u2013XXI century influenza pandemics of 1918, 1957, 1968, 2009 (Murray et al., 2006; Viboud et al., 2005; Viboud et al., 2016; Simonsen et al., 2013) as well as seasonal influenza epidemics (Housworth and Langmuir, 1974), and more recently for\u00a0example Hurricane Maria in Puerto-Rico in 2016 (Milken Institute, 2018). Even though the excess mortality does not exactly equal the mortality from COVID-19 infections, the consensus is that for many countries it is the most objective possible indicator of the COVID-19 death toll (Beaney et al., 2020; Leon et al., 2020). Excess mortality has already been used to estimate the COVID-19 impact in different countries, both in academic literature (e.g. Kontis et al., 2020; Alicandro et al., 2020; Ghafari et al., 2021; Woolf et al., 2020a; Woolf et al., 2020b; Weinberger et al., 2020; Blangiardo et al., 2020; Kobak, 2021a; Modi et al., 2021; Bradshaw et al., 2021; Islam et al., 2021, among many others) and by major media outlets. It has also been used to compare COVID-19 impact to the impact of major influenza pandemics (Faust et al., 2020; Petersen et al., 2020).\n\nMeasuring and monitoring excess mortality across different countries requires, first and foremost, a comprehensive and regularly-updated dataset on all-cause mortality. However, there has been no single resource where such data would be collected from all over the world. The World Mortality Dataset presented here aims to fill this gap by combining publicly\u00a0available information on country-level mortality, culled and harmonized from various sources.\n\nSeveral teams have already started to collect such data. In April 2020, EuroStat (http://ec.europa.eu/eurostat) began collecting total weekly deaths across European countries, \u2018in order to support the policy and research efforts related to COVID-19\u2019. At the time of writing, this dataset covers 36 European countries and also contains sub-national (NUTS1\u20133 regions) data as well as data disaggregated by age groups and by sex for some countries. In May 2020, the Human Mortality Database (http://mortality.org), a joint effort by the University of California, Berkeley, and Max Planck Institute for Demographic Research (Barbieri et al., 2015), started compiling the Short Term Mortality Fluctuations (STMF) dataset (STMF, 2021; Islam et al., 2021; N\u00e9meth et al., 2021). This dataset consists of weekly data, disaggregated by five age groups and by sex, and currently contains 35 countries with 2020 data. STMF only includes countries with complete high-quality vital registration data in all age groups. Both datasets are regularly updated and have considerable overlap, covering together 44 countries.\n\nIn parallel, the EuroMOMO project (https://www.euromomo.eu), existing since 2008, has been displaying weekly excess mortality in 23 European countries, but without giving access to the underlying data. Another source of data is the UNDATA initiative (http://data.un.org; search for \u2018Deaths by month of death\u2019) by the United Nations, collecting monthly mortality data across a large number of countries. However, information there is updated very slowly, with January\u2013June 2020 data currently available for only four countries.\n\nMedia outlets such as the Financial Times, The Economist, the New York Times, and the Wall Street Journal have been compiling and openly sharing their own datasets in order to report on the all-cause mortality in 2020. However, these datasets are infrequently updated and their future is unclear. For example, the New York Times announced in early 2021 that they would stop tracking excess deaths due to staffing changes.\n\nHere, we present the World Mortality Dataset that aims to provide regularly-updated all-cause mortality numbers from all over the world. The dataset is openly available at https://github.com/akarlinsky/world_mortality and is updated almost daily. Our dataset builds upon the EuroStat and the STMF datasets, adding 59 additional countries \u2014 many more than any previous media or academic effort. At the time of writing, our dataset comprises 103 countries and territories. After the initial release of our manuscript, the dataset has been incorporated into the excess mortality trackers by Our World in Data (Giattino et al., 2020), The Economist, and the Financial Times. While not all countries provide equally detailed and reliable data, we believe that information from all 103 countries is reliable enough to allow computation of excess mortality (see Discussion).\n\nOur analysis (updated almost daily at https://github.com/dkobak/excess-mortality) showed statistically significant positive excess mortality in 69 out of 103 countries. Moreover, it suggests that the true COVID-19 death toll in several countries is over an order of magnitude larger than the official COVID-19 death count.\n\n## Results\n\n### Excess mortality\n\nWe collected the all-cause mortality data from 103 countries and territories from 2015 onward into the openly\u00a0available World Mortality Dataset. This includes 50 countries with weekly data, 51 countries with monthly data, and two countries with quarterly data (Figure 1). See Materials\u00a0and\u00a0methods for our data collection strategy. Briefly, we obtained the data from the websites of National Statistics Offices (NSOs). If we were unable to locate the data ourselves, we contacted the NSO for guidance. The data from EuroStat and STMF were included as is, with few exceptions (see Materials\u00a0and\u00a0methods). An important caveat is that recent (2020 and 2021) data are often preliminary and subject to backwards revisions, which we incorporate into our dataset. Other caveats and limitations are listed in the Materials and methods section.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/69336/elife-69336-fig1-v3.jpg)\n\n**Figure 1.:** Small countries\u00a0and territories are shown with circles.\n\nFor each country, we predicted the \u2018baseline\u2019 mortality in 2020 based on the 2015\u20132019 data (accounting for linear trend and seasonal variation; see Materials\u00a0and\u00a0methods). We then obtained excess mortality as the difference between the actual 2020\u20132021 all-cause mortality and our baseline (Figure 2, Figure 2\u2014figure supplement 1). For each country, we computed the total excess mortality from the beginning of the COVID-19 pandemic (from March 2020) (Table 1). The total excess mortality was positive and significantly different from zero in 69 countries; negative and significantly different from zero in seven countries; not significantly different from zero ($z<2$) in 25 countries. For South Africa\u00a0and Argentina, there was no historic data available in order to assess the significance, but the increase in mortality was very large and clearly associated with COVID-19 (Bradshaw et al., 2021;\u00a0Rearte et al., 2021).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/69336/elife-69336-fig2-v3.jpg)\n\n**Figure 2.:** Each subplot shows baseline mortality (black), mortality in 2015\u20132019 (gray), in 2020 (red) and in 2021 (blue). Excess mortality is shown in red/blue shading. The numbers in each subplot are: total excess mortality (red), excess mortality per 100,000 population (black), excess mortality as a percentage of annual baseline mortality (gray), and undercount ratio of COVID-19 deaths (blue). See text for the exact definitions. All numbers were rounded to two significant digits; numbers below 100 to one significant digit. The $y$-axis in each subplot starts at 0 and goes until 200% where 100% corresponds to the average baseline mortality. The $x$-axis covers the entire year. Asterisks mark excess mortality estimates that were downwards corrected (see Materials\u00a0and\u00a0methods). Countries are sorted by the excess mortality as a percentage of annual baseline mortality (gray number). Undercount estimates are not shown for countries with negative total excess deaths and for selected countries where excess deaths were likely not related to the COVID-19 pandemic (Hong Kong, Thailand, Cuba); see Materials\u00a0and\u00a0methods.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69336/elife-69336-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The figure is fully analogous to Figure 2, but countries are sorted by the excess mortality per 100,000 population, and all shown curves are normalized to yield mortality per 1000 people per year (each data point shows what mortality per 1000 people per year would be if the death rate stayed at the same level throughout the year).\n\n**Table 1.**\n Excess mortality metrics for all countries in the dataset.Abbreviations: \u2018w\u2019 \u2013 weekly data, \u2018m\u2019 \u2013 monthly data, \u2018q\u2019 \u2013 quarterly data. All numbers were rounded to two significant digits; numbers below 100 \u2014 to one significant digit. See text for the exact definitions of all reported metrics. \u2018Official\u2019 means the official daily reported number of COVID-19 deaths. Undercount estimates are not shown for countries with negative total excess deaths and for selected countries where excess deaths were likely not related to the COVID-19 pandemic (Hong Kong, Thailand, Cuba); see Materials\u00a0and\u00a0methods.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Country</th>\n      <th>Data until</th>\n      <th>Type</th>\n      <th>Official</th>\n      <th>Excess</th>\n      <th>std</th>\n      <th>z</th>\n      <th>Undercount</th>\n      <th>Per 100k</th>\n      <th>Increase</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Albania</td>\n      <td>Mar 31, 2021</td>\n      <td>m</td>\n      <td>2,200</td>\n      <td>9,300</td>\n      <td>\u00b1810</td>\n      <td>11.4</td>\n      <td>4.2</td>\n      <td>320</td>\n      <td>43</td>\n    </tr>\n    <tr>\n      <td>Andorra</td>\n      <td>Dec 31, 2020</td>\n      <td>m</td>\n      <td>80</td>\n      <td>80</td>\n      <td>\u00b130</td>\n      <td>3.1</td>\n      <td>1.0</td>\n      <td>110</td>\n      <td>25</td>\n    </tr>\n    <tr>\n      <td>Argentina</td>\n      <td>Dec 31, 2020</td>\n      <td>m</td>\n      <td>43,000</td>\n      <td>41,000</td>\n      <td>\u00b1nan</td>\n      <td>nan</td>\n      <td>1.0</td>\n      <td>90</td>\n      <td>12</td>\n    </tr>\n    <tr>\n      <td>Armenia</td>\n      <td>Apr 30, 2021</td>\n      <td>m</td>\n      <td>4,100</td>\n      <td>8,300</td>\n      <td>\u00b1840</td>\n      <td>10.0</td>\n      <td>2.0</td>\n      <td>280</td>\n      <td>33</td>\n    </tr>\n    <tr>\n      <td>Aruba</td>\n      <td>Dec 31, 2020</td>\n      <td>m</td>\n      <td>50</td>\n      <td>50</td>\n      <td>\u00b130</td>\n      <td>1.5</td>\n      <td>1.0</td>\n      <td>50</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td>Australia</td>\n      <td>Mar 28, 2021</td>\n      <td>w</td>\n      <td>910</td>\n      <td>\u22123,700</td>\n      <td>\u00b11,000</td>\n      <td>3.6</td>\n      <td>\u2013</td>\n      <td>\u221210</td>\n      <td>\u22122</td>\n    </tr>\n    <tr>\n      <td>Austria</td>\n      <td>Jun 13, 2021</td>\n      <td>w</td>\n      <td>10,000</td>\n      <td>9,800</td>\n      <td>\u00b11,400</td>\n      <td>7.0</td>\n      <td>0.9</td>\n      <td>110</td>\n      <td>12</td>\n    </tr>\n    <tr>\n      <td>Azerbaijan</td>\n      <td>Feb 28, 2021</td>\n      <td>m</td>\n      <td>3,200</td>\n      <td>18,000</td>\n      <td>\u00b11,400</td>\n      <td>13.0</td>\n      <td>5.6</td>\n      <td>180</td>\n      <td>32</td>\n    </tr>\n    <tr>\n      <td>Belarus</td>\n      <td>Jun 30, 2020</td>\n      <td>m</td>\n      <td>390</td>\n      <td>5,700</td>\n      <td>\u00b1930</td>\n      <td>6.1</td>\n      <td>14.5</td>\n      <td>60</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>Belgium</td>\n      <td>Jun 13, 2021</td>\n      <td>w</td>\n      <td>25,000</td>\n      <td>16,000</td>\n      <td>\u00b11,800</td>\n      <td>8.7</td>\n      <td>0.6</td>\n      <td>140</td>\n      <td>14</td>\n    </tr>\n    <tr>\n      <td>Bolivia</td>\n      <td>May 31, 2021</td>\n      <td>m</td>\n      <td>14,000</td>\n      <td>36,000</td>\n      <td>\u00b1770</td>\n      <td>46.4</td>\n      <td>2.5</td>\n      <td>310</td>\n      <td>68</td>\n    </tr>\n    <tr>\n      <td>Bosnia</td>\n      <td>Mar 31, 2021</td>\n      <td>m</td>\n      <td>6,600</td>\n      <td>8,900</td>\n      <td>\u00b1990</td>\n      <td>9.0</td>\n      <td>1.4</td>\n      <td>270</td>\n      <td>25</td>\n    </tr>\n    <tr>\n      <td>Brazil</td>\n      <td>May 31, 2021</td>\n      <td>m</td>\n      <td>460,000</td>\n      <td>500,000</td>\n      <td>\u00b114,000</td>\n      <td>35.0</td>\n      <td>1.1</td>\n      <td>240</td>\n      <td>37</td>\n    </tr>\n    <tr>\n      <td>Bulgaria</td>\n      <td>Jun 20, 2021</td>\n      <td>w</td>\n      <td>18,000</td>\n      <td>32,000</td>\n      <td>\u00b11,800</td>\n      <td>17.5</td>\n      <td>1.8</td>\n      <td>460</td>\n      <td>29</td>\n    </tr>\n    <tr>\n      <td>Canada</td>\n      <td>Mar 07, 2021</td>\n      <td>w</td>\n      <td>22,000</td>\n      <td>15,000</td>\n      <td>\u00b11,700</td>\n      <td>8.6</td>\n      <td>0.7</td>\n      <td>40</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>Chile</td>\n      <td>Jun 13, 2021</td>\n      <td>w</td>\n      <td>31,000</td>\n      <td>30,000</td>\n      <td>\u00b11,100</td>\n      <td>26.7</td>\n      <td>1.0</td>\n      <td>160</td>\n      <td>27</td>\n    </tr>\n    <tr>\n      <td>Colombia</td>\n      <td>May 09, 2021</td>\n      <td>w</td>\n      <td>77,000</td>\n      <td>92,000</td>\n      <td>\u00b11,500</td>\n      <td>61.2</td>\n      <td>1.2</td>\n      <td>180</td>\n      <td>36</td>\n    </tr>\n    <tr>\n      <td>Costa Rica</td>\n      <td>Dec 31, 2020</td>\n      <td>m</td>\n      <td>2,200</td>\n      <td>940</td>\n      <td>\u00b1370</td>\n      <td>2.5</td>\n      <td>0.4</td>\n      <td>20</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>Croatia</td>\n      <td>May 30, 2021</td>\n      <td>w</td>\n      <td>8,000</td>\n      <td>8,800</td>\n      <td>\u00b11,000</td>\n      <td>8.8</td>\n      <td>1.1</td>\n      <td>210</td>\n      <td>17</td>\n    </tr>\n    <tr>\n      <td>Cuba</td>\n      <td>Dec 31, 2020</td>\n      <td>m</td>\n      <td>150</td>\n      <td>580</td>\n      <td>\u00b12,100</td>\n      <td>0.3</td>\n      <td>\u2013</td>\n      <td>10</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Cyprus</td>\n      <td>May 09, 2021</td>\n      <td>w</td>\n      <td>330</td>\n      <td>340</td>\n      <td>\u00b1160</td>\n      <td>2.1</td>\n      <td>1.0</td>\n      <td>30</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>Czechia</td>\n      <td>May 23, 2021</td>\n      <td>w</td>\n      <td>30,000</td>\n      <td>35,000</td>\n      <td>\u00b11,800</td>\n      <td>18.8</td>\n      <td>1.2</td>\n      <td>320</td>\n      <td>30</td>\n    </tr>\n    <tr>\n      <td>Denmark</td>\n      <td>Jun 20, 2021</td>\n      <td>w</td>\n      <td>2,500</td>\n      <td>\u2212630</td>\n      <td>\u00b1610</td>\n      <td>1.0</td>\n      <td>\u2013</td>\n      <td>\u221210</td>\n      <td>\u22121</td>\n    </tr>\n    <tr>\n      <td>Ecuador</td>\n      <td>Jun 20, 2021</td>\n      <td>w</td>\n      <td>21,000</td>\n      <td>62,000</td>\n      <td>\u00b1960</td>\n      <td>64.4</td>\n      <td>2.9</td>\n      <td>350</td>\n      <td>80</td>\n    </tr>\n    <tr>\n      <td>Egypt</td>\n      <td>Nov 30, 2020</td>\n      <td>m</td>\n      <td>6,600</td>\n      <td>87,000</td>\n      <td>\u00b113,000</td>\n      <td>6.9</td>\n      <td>13.1</td>\n      <td>90</td>\n      <td>16</td>\n    </tr>\n    <tr>\n      <td>El Salvador</td>\n      <td>Aug 31, 2020</td>\n      <td>m</td>\n      <td>720</td>\n      <td>4,700</td>\n      <td>\u00b1890</td>\n      <td>5.3</td>\n      <td>6.6</td>\n      <td>70</td>\n      <td>11</td>\n    </tr>\n    <tr>\n      <td>Estonia</td>\n      <td>Jun 27, 2021</td>\n      <td>w</td>\n      <td>1,300</td>\n      <td>1,800</td>\n      <td>\u00b1300</td>\n      <td>6.0</td>\n      <td>1.4</td>\n      <td>140</td>\n      <td>12</td>\n    </tr>\n    <tr>\n      <td>Finland</td>\n      <td>Jun 13, 2021</td>\n      <td>w</td>\n      <td>960</td>\n      <td>410</td>\n      <td>\u00b1680</td>\n      <td>0.6</td>\n      <td>0.4</td>\n      <td>10</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>France</td>\n      <td>Jun 13, 2021</td>\n      <td>w</td>\n      <td>110,000</td>\n      <td>72,000</td>\n      <td>\u00b18,000</td>\n      <td>8.9</td>\n      <td>0.7</td>\n      <td>110</td>\n      <td>12</td>\n    </tr>\n    <tr>\n      <td>French Guiana</td>\n      <td>Jun 13, 2021</td>\n      <td>w</td>\n      <td>130</td>\n      <td>\u221220</td>\n      <td>\u00b160</td>\n      <td>0.3</td>\n      <td>\u2013</td>\n      <td>\u221210</td>\n      <td>\u22122</td>\n    </tr>\n    <tr>\n      <td>French Polynesia</td>\n      <td>Dec 31, 2020</td>\n      <td>m</td>\n      <td>110</td>\n      <td>120</td>\n      <td>\u00b190</td>\n      <td>1.4</td>\n      <td>1.1</td>\n      <td>40</td>\n      <td>8</td>\n    </tr>\n    <tr>\n      <td>Georgia</td>\n      <td>Dec 31, 2020</td>\n      <td>m</td>\n      <td>2,500</td>\n      <td>4,800</td>\n      <td>\u00b11,000</td>\n      <td>4.7</td>\n      <td>1.9</td>\n      <td>120</td>\n      <td>11</td>\n    </tr>\n    <tr>\n      <td>Germany</td>\n      <td>Jun 20, 2021</td>\n      <td>w</td>\n      <td>90,000</td>\n      <td>39,000</td>\n      <td>\u00b117,000</td>\n      <td>2.3</td>\n      <td>0.4</td>\n      <td>50</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>Gibraltar</td>\n      <td>Jan 31, 2021</td>\n      <td>m</td>\n      <td>80</td>\n      <td>20</td>\n      <td>\u00b120</td>\n      <td>1.1</td>\n      <td>0.3</td>\n      <td>70</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td>Greece</td>\n      <td>May 02, 2021</td>\n      <td>w</td>\n      <td>10,000</td>\n      <td>7,500</td>\n      <td>\u00b12,000</td>\n      <td>3.8</td>\n      <td>0.7</td>\n      <td>70</td>\n      <td>6</td>\n    </tr>\n    <tr>\n      <td>Greenland</td>\n      <td>Dec 31, 2020</td>\n      <td>m</td>\n      <td>0</td>\n      <td>\u221220</td>\n      <td>\u00b130</td>\n      <td>0.5</td>\n      <td>\u2013</td>\n      <td>\u221230</td>\n      <td>\u22123</td>\n    </tr>\n    <tr>\n      <td>Guadeloupe</td>\n      <td>Jun 13, 2021</td>\n      <td>w</td>\n      <td>260</td>\n      <td>220</td>\n      <td>\u00b1110</td>\n      <td>2.0</td>\n      <td>0.8</td>\n      <td>60</td>\n      <td>6</td>\n    </tr>\n    <tr>\n      <td>Guatemala</td>\n      <td>Dec 27, 2020</td>\n      <td>w</td>\n      <td>4,800</td>\n      <td>10,000</td>\n      <td>\u00b1700</td>\n      <td>14.5</td>\n      <td>2.1</td>\n      <td>60</td>\n      <td>12</td>\n    </tr>\n    <tr>\n      <td>Hong Kong</td>\n      <td>Mar 31, 2021</td>\n      <td>m</td>\n      <td>200</td>\n      <td>2,100</td>\n      <td>\u00b11,100</td>\n      <td>1.9</td>\n      <td>\u2013</td>\n      <td>30</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>Hungary</td>\n      <td>May 30, 2021</td>\n      <td>w</td>\n      <td>30,000</td>\n      <td>24,000</td>\n      <td>\u00b12,300</td>\n      <td>10.2</td>\n      <td>0.8</td>\n      <td>240</td>\n      <td>18</td>\n    </tr>\n    <tr>\n      <td>Iceland</td>\n      <td>Mar 21, 2021</td>\n      <td>w</td>\n      <td>30</td>\n      <td>\u221220</td>\n      <td>\u00b170</td>\n      <td>0.2</td>\n      <td>\u2013</td>\n      <td>\u22120</td>\n      <td>\u22121</td>\n    </tr>\n    <tr>\n      <td>Iran</td>\n      <td>Sep 21, 2020</td>\n      <td>q</td>\n      <td>24,000</td>\n      <td>58,000</td>\n      <td>\u00b17,900</td>\n      <td>7.3</td>\n      <td>2.4</td>\n      <td>70</td>\n      <td>15</td>\n    </tr>\n    <tr>\n      <td>Ireland</td>\n      <td>May 31, 2021</td>\n      <td>m</td>\n      <td>5,000</td>\n      <td>1,400</td>\n      <td>\u00b1730</td>\n      <td>1.9</td>\n      <td>0.3</td>\n      <td>30</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>Israel</td>\n      <td>May 30, 2021</td>\n      <td>w</td>\n      <td>6,400</td>\n      <td>4,800</td>\n      <td>\u00b1550</td>\n      <td>8.9</td>\n      <td>0.8</td>\n      <td>60</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>Italy</td>\n      <td>Apr 04, 2021</td>\n      <td>w</td>\n      <td>110,000</td>\n      <td>120,000</td>\n      <td>\u00b19,000</td>\n      <td>13.9</td>\n      <td>1.1</td>\n      <td>210</td>\n      <td>19</td>\n    </tr>\n    <tr>\n      <td>Jamaica</td>\n      <td>Nov 30, 2020</td>\n      <td>m</td>\n      <td>260</td>\n      <td>\u2212320</td>\n      <td>\u00b1310</td>\n      <td>1.0</td>\n      <td>\u2013</td>\n      <td>\u221210</td>\n      <td>\u22122</td>\n    </tr>\n    <tr>\n      <td>Japan</td>\n      <td>Apr 30, 2021</td>\n      <td>m</td>\n      <td>10,000</td>\n      <td>\u221215,000</td>\n      <td>\u00b112,000</td>\n      <td>1.3</td>\n      <td>\u2013</td>\n      <td>\u221210</td>\n      <td>\u22121</td>\n    </tr>\n    <tr>\n      <td>Kazakhstan</td>\n      <td>Apr 30, 2021</td>\n      <td>m</td>\n      <td>6,600</td>\n      <td>35,000</td>\n      <td>\u00b13,400</td>\n      <td>10.3</td>\n      <td>5.3</td>\n      <td>180</td>\n      <td>26</td>\n    </tr>\n    <tr>\n      <td>Kosovo</td>\n      <td>Mar 31, 2021</td>\n      <td>m</td>\n      <td>1,900</td>\n      <td>2,800</td>\n      <td>\u00b1310</td>\n      <td>8.9</td>\n      <td>1.5</td>\n      <td>150</td>\n      <td>30</td>\n    </tr>\n    <tr>\n      <td>Kyrgyzstan</td>\n      <td>Apr 30, 2021</td>\n      <td>m</td>\n      <td>1,600</td>\n      <td>7,900</td>\n      <td>\u00b1670</td>\n      <td>11.8</td>\n      <td>4.9</td>\n      <td>120</td>\n      <td>24</td>\n    </tr>\n    <tr>\n      <td>Latvia</td>\n      <td>Jun 13, 2021</td>\n      <td>w</td>\n      <td>2,500</td>\n      <td>3,000</td>\n      <td>\u00b1440</td>\n      <td>6.8</td>\n      <td>1.2</td>\n      <td>160</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>Lebanon</td>\n      <td>Apr 30, 2021</td>\n      <td>m</td>\n      <td>7,300</td>\n      <td>8,900</td>\n      <td>\u00b1970</td>\n      <td>9.2</td>\n      <td>1.2</td>\n      <td>130</td>\n      <td>36</td>\n    </tr>\n    <tr>\n      <td>Liechtenstein</td>\n      <td>Apr 30, 2021</td>\n      <td>m</td>\n      <td>60</td>\n      <td>50</td>\n      <td>\u00b130</td>\n      <td>1.7</td>\n      <td>0.8</td>\n      <td>120</td>\n      <td>17</td>\n    </tr>\n    <tr>\n      <td>Lithuania</td>\n      <td>Jun 20, 2021</td>\n      <td>w</td>\n      <td>4,400</td>\n      <td>9,500</td>\n      <td>\u00b1600</td>\n      <td>15.9</td>\n      <td>2.2</td>\n      <td>350</td>\n      <td>25</td>\n    </tr>\n    <tr>\n      <td>Luxembourg</td>\n      <td>Jun 06, 2021</td>\n      <td>w</td>\n      <td>820</td>\n      <td>190</td>\n      <td>\u00b1140</td>\n      <td>1.4</td>\n      <td>0.2</td>\n      <td>30</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>Macao</td>\n      <td>Apr 30, 2021</td>\n      <td>m</td>\n      <td>0</td>\n      <td>\u221240</td>\n      <td>\u00b1110</td>\n      <td>0.3</td>\n      <td>\u2013</td>\n      <td>\u221210</td>\n      <td>\u22122</td>\n    </tr>\n    <tr>\n      <td>Malaysia</td>\n      <td>Mar 31, 2021</td>\n      <td>m</td>\n      <td>1,300</td>\n      <td>\u22126,600</td>\n      <td>\u00b11,900</td>\n      <td>3.5</td>\n      <td>\u2013</td>\n      <td>\u221220</td>\n      <td>\u22124</td>\n    </tr>\n    <tr>\n      <td>Malta</td>\n      <td>May 16, 2021</td>\n      <td>w</td>\n      <td>420</td>\n      <td>360</td>\n      <td>\u00b1120</td>\n      <td>3.0</td>\n      <td>0.9</td>\n      <td>80</td>\n      <td>9</td>\n    </tr>\n    <tr>\n      <td>Martinique</td>\n      <td>Jun 13, 2021</td>\n      <td>w</td>\n      <td>100</td>\n      <td>30</td>\n      <td>\u00b1110</td>\n      <td>0.3</td>\n      <td>0.3</td>\n      <td>10</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Mauritius</td>\n      <td>Apr 30, 2021</td>\n      <td>m</td>\n      <td>20</td>\n      <td>\u2212440</td>\n      <td>\u00b1240</td>\n      <td>1.8</td>\n      <td>\u2013</td>\n      <td>\u221230</td>\n      <td>\u22124</td>\n    </tr>\n    <tr>\n      <td>Mayotte</td>\n      <td>Jun 13, 2021</td>\n      <td>w</td>\n      <td>170</td>\n      <td>320</td>\n      <td>\u00b150</td>\n      <td>6.5</td>\n      <td>1.8</td>\n      <td>120</td>\n      <td>40</td>\n    </tr>\n    <tr>\n      <td>Mexico</td>\n      <td>May 23, 2021</td>\n      <td>w</td>\n      <td>220,000</td>\n      <td>470,000</td>\n      <td>\u00b16,600</td>\n      <td>70.1</td>\n      <td>2.1</td>\n      <td>360</td>\n      <td>61</td>\n    </tr>\n    <tr>\n      <td>Moldova</td>\n      <td>Mar 31, 2021</td>\n      <td>m</td>\n      <td>5,000</td>\n      <td>8,000</td>\n      <td>\u00b1880</td>\n      <td>9.0</td>\n      <td>1.6</td>\n      <td>200</td>\n      <td>22</td>\n    </tr>\n    <tr>\n      <td>Monaco</td>\n      <td>May 31, 2021</td>\n      <td>m</td>\n      <td>30</td>\n      <td>120</td>\n      <td>\u00b150</td>\n      <td>2.5</td>\n      <td>3.7</td>\n      <td>300</td>\n      <td>24</td>\n    </tr>\n    <tr>\n      <td>Mongolia</td>\n      <td>May 31, 2021</td>\n      <td>m</td>\n      <td>280</td>\n      <td>\u22121,900</td>\n      <td>\u00b1490</td>\n      <td>3.9</td>\n      <td>\u2013</td>\n      <td>\u221260</td>\n      <td>\u221211</td>\n    </tr>\n    <tr>\n      <td>Montenegro</td>\n      <td>Mar 28, 2021</td>\n      <td>w</td>\n      <td>1,200</td>\n      <td>1,400</td>\n      <td>\u00b1170</td>\n      <td>8.4</td>\n      <td>1.2</td>\n      <td>230</td>\n      <td>21</td>\n    </tr>\n    <tr>\n      <td>Netherlands</td>\n      <td>Jun 20, 2021</td>\n      <td>w</td>\n      <td>18,000</td>\n      <td>19,000</td>\n      <td>\u00b11,900</td>\n      <td>9.8</td>\n      <td>1.1</td>\n      <td>110</td>\n      <td>12</td>\n    </tr>\n    <tr>\n      <td>New Zealand</td>\n      <td>Jun 06, 2021</td>\n      <td>w</td>\n      <td>30</td>\n      <td>\u22121,900</td>\n      <td>\u00b1410</td>\n      <td>4.7</td>\n      <td>\u2013</td>\n      <td>\u221240</td>\n      <td>\u22125</td>\n    </tr>\n    <tr>\n      <td>Nicaragua</td>\n      <td>Aug 31, 2020</td>\n      <td>m</td>\n      <td>140</td>\n      <td>7,000</td>\n      <td>\u00b1270</td>\n      <td>26.0</td>\n      <td>50.8</td>\n      <td>100</td>\n      <td>27</td>\n    </tr>\n    <tr>\n      <td>North Macedonia</td>\n      <td>Apr 30, 2021</td>\n      <td>m</td>\n      <td>4,900</td>\n      <td>8,600</td>\n      <td>\u00b1770</td>\n      <td>11.3</td>\n      <td>1.8</td>\n      <td>420</td>\n      <td>43</td>\n    </tr>\n    <tr>\n      <td>Norway</td>\n      <td>Jun 20, 2021</td>\n      <td>w</td>\n      <td>790</td>\n      <td>\u22121,500</td>\n      <td>\u00b1530</td>\n      <td>2.9</td>\n      <td>\u2013</td>\n      <td>\u221230</td>\n      <td>\u22124</td>\n    </tr>\n    <tr>\n      <td>Oman</td>\n      <td>May 31, 2021</td>\n      <td>m</td>\n      <td>2,300</td>\n      <td>2,200</td>\n      <td>\u00b1330</td>\n      <td>6.7</td>\n      <td>0.9</td>\n      <td>40</td>\n      <td>24</td>\n    </tr>\n    <tr>\n      <td>Panama</td>\n      <td>Apr 30, 2021</td>\n      <td>m</td>\n      <td>6,200</td>\n      <td>6,500</td>\n      <td>\u00b1420</td>\n      <td>15.7</td>\n      <td>1.0</td>\n      <td>150</td>\n      <td>31</td>\n    </tr>\n    <tr>\n      <td>Paraguay</td>\n      <td>May 31, 2021</td>\n      <td>m</td>\n      <td>9,100</td>\n      <td>9,600</td>\n      <td>\u00b1920</td>\n      <td>10.3</td>\n      <td>1.1</td>\n      <td>130</td>\n      <td>28</td>\n    </tr>\n    <tr>\n      <td>Peru</td>\n      <td>Jun 27, 2021</td>\n      <td>w</td>\n      <td>190,000</td>\n      <td>190,000</td>\n      <td>\u00b12,000</td>\n      <td>95.9</td>\n      <td>1.0</td>\n      <td>590</td>\n      <td>153</td>\n    </tr>\n    <tr>\n      <td>Philippines</td>\n      <td>Dec 31, 2020</td>\n      <td>m</td>\n      <td>9,200</td>\n      <td>\u22127,700</td>\n      <td>\u00b15,900</td>\n      <td>1.3</td>\n      <td>\u2013</td>\n      <td>\u221210</td>\n      <td>\u22121</td>\n    </tr>\n    <tr>\n      <td>Poland</td>\n      <td>Jun 13, 2021</td>\n      <td>w</td>\n      <td>75,000</td>\n      <td>120,000</td>\n      <td>\u00b15,500</td>\n      <td>21.1</td>\n      <td>1.6</td>\n      <td>310</td>\n      <td>28</td>\n    </tr>\n    <tr>\n      <td>Portugal</td>\n      <td>Jun 06, 2021</td>\n      <td>w</td>\n      <td>17,000</td>\n      <td>19,000</td>\n      <td>\u00b12,100</td>\n      <td>9.0</td>\n      <td>1.1</td>\n      <td>180</td>\n      <td>16</td>\n    </tr>\n    <tr>\n      <td>Qatar</td>\n      <td>Apr 30, 2021</td>\n      <td>m</td>\n      <td>460</td>\n      <td>650</td>\n      <td>\u00b170</td>\n      <td>9.2</td>\n      <td>1.4</td>\n      <td>20</td>\n      <td>29</td>\n    </tr>\n    <tr>\n      <td>Romania</td>\n      <td>Apr 25, 2021</td>\n      <td>w</td>\n      <td>31,000</td>\n      <td>54,000</td>\n      <td>\u00b13,500</td>\n      <td>15.3</td>\n      <td>1.7</td>\n      <td>280</td>\n      <td>20</td>\n    </tr>\n    <tr>\n      <td>Russia</td>\n      <td>Apr 30, 2021</td>\n      <td>m</td>\n      <td>110,000</td>\n      <td>500,000</td>\n      <td>\u00b133,000</td>\n      <td>15.2</td>\n      <td>4.5</td>\n      <td>340</td>\n      <td>28</td>\n    </tr>\n    <tr>\n      <td>R\u00e9union</td>\n      <td>Jun 13, 2021</td>\n      <td>w</td>\n      <td>210</td>\n      <td>190</td>\n      <td>\u00b1130</td>\n      <td>1.5</td>\n      <td>0.9</td>\n      <td>20</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>San Marino</td>\n      <td>May 31, 2021</td>\n      <td>m</td>\n      <td>90</td>\n      <td>110</td>\n      <td>\u00b130</td>\n      <td>3.4</td>\n      <td>1.2</td>\n      <td>320</td>\n      <td>42</td>\n    </tr>\n    <tr>\n      <td>Serbia</td>\n      <td>May 31, 2021</td>\n      <td>m</td>\n      <td>6,900</td>\n      <td>28,000</td>\n      <td>\u00b13,600</td>\n      <td>7.7</td>\n      <td>4.0</td>\n      <td>400</td>\n      <td>27</td>\n    </tr>\n    <tr>\n      <td>Seychelles</td>\n      <td>Dec 31, 2020</td>\n      <td>m</td>\n      <td>0</td>\n      <td>\u2212170</td>\n      <td>\u00b140</td>\n      <td>4.1</td>\n      <td>\u2013</td>\n      <td>\u2212170</td>\n      <td>\u221220</td>\n    </tr>\n    <tr>\n      <td>Singapore</td>\n      <td>Mar 31, 2021</td>\n      <td>m</td>\n      <td>30</td>\n      <td>\u2212160</td>\n      <td>\u00b1380</td>\n      <td>0.4</td>\n      <td>\u2013</td>\n      <td>\u22120</td>\n      <td>\u22121</td>\n    </tr>\n    <tr>\n      <td>Slovakia</td>\n      <td>May 16, 2021</td>\n      <td>w</td>\n      <td>12,000</td>\n      <td>17,000</td>\n      <td>\u00b1920</td>\n      <td>18.1</td>\n      <td>1.4</td>\n      <td>310</td>\n      <td>30</td>\n    </tr>\n    <tr>\n      <td>Slovenia</td>\n      <td>May 23, 2021</td>\n      <td>w</td>\n      <td>4,700</td>\n      <td>3,700</td>\n      <td>\u00b1370</td>\n      <td>10.0</td>\n      <td>0.8</td>\n      <td>180</td>\n      <td>17</td>\n    </tr>\n    <tr>\n      <td>South Africa</td>\n      <td>Jun 27, 2021</td>\n      <td>w</td>\n      <td>60,000</td>\n      <td>160,000</td>\n      <td>\u00b1nan</td>\n      <td>nan</td>\n      <td>2.7</td>\n      <td>270</td>\n      <td>32</td>\n    </tr>\n    <tr>\n      <td>South Korea</td>\n      <td>May 02, 2021</td>\n      <td>w</td>\n      <td>1,800</td>\n      <td>\u22123,300</td>\n      <td>\u00b12,900</td>\n      <td>1.1</td>\n      <td>\u2013</td>\n      <td>\u221210</td>\n      <td>\u22121</td>\n    </tr>\n    <tr>\n      <td>Spain</td>\n      <td>Jun 20, 2021</td>\n      <td>w</td>\n      <td>81,000</td>\n      <td>87,000</td>\n      <td>\u00b16,300</td>\n      <td>13.9</td>\n      <td>1.1</td>\n      <td>190</td>\n      <td>20</td>\n    </tr>\n    <tr>\n      <td>Sweden</td>\n      <td>Jun 06, 2021</td>\n      <td>w</td>\n      <td>15,000</td>\n      <td>8,900</td>\n      <td>\u00b11,100</td>\n      <td>8.5</td>\n      <td>0.6</td>\n      <td>90</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>Switzerland</td>\n      <td>Jun 06, 2021</td>\n      <td>w</td>\n      <td>10,000</td>\n      <td>8,600</td>\n      <td>\u00b11,100</td>\n      <td>8.0</td>\n      <td>0.8</td>\n      <td>100</td>\n      <td>13</td>\n    </tr>\n    <tr>\n      <td>Taiwan</td>\n      <td>May 31, 2021</td>\n      <td>m</td>\n      <td>140</td>\n      <td>\u22126,600</td>\n      <td>\u00b15,700</td>\n      <td>1.2</td>\n      <td>\u2013</td>\n      <td>\u221230</td>\n      <td>\u22124</td>\n    </tr>\n    <tr>\n      <td>Tajikistan</td>\n      <td>Dec 31, 2020</td>\n      <td>q</td>\n      <td>90</td>\n      <td>9,000</td>\n      <td>\u00b11,400</td>\n      <td>6.6</td>\n      <td>100.0</td>\n      <td>90</td>\n      <td>27</td>\n    </tr>\n    <tr>\n      <td>Thailand</td>\n      <td>Jun 30, 2021</td>\n      <td>m</td>\n      <td>2,100</td>\n      <td>14,000</td>\n      <td>\u00b113,000</td>\n      <td>1.1</td>\n      <td>\u2013</td>\n      <td>20</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>Transnistria</td>\n      <td>May 31, 2021</td>\n      <td>m</td>\n      <td>1,200</td>\n      <td>1,600</td>\n      <td>\u00b1240</td>\n      <td>6.4</td>\n      <td>1.3</td>\n      <td>340</td>\n      <td>23</td>\n    </tr>\n    <tr>\n      <td>Tunisia</td>\n      <td>Feb 14, 2021</td>\n      <td>w</td>\n      <td>7,500</td>\n      <td>4,600</td>\n      <td>\u00b11,100</td>\n      <td>4.3</td>\n      <td>0.6</td>\n      <td>40</td>\n      <td>6</td>\n    </tr>\n    <tr>\n      <td>Ukraine</td>\n      <td>Apr 30, 2021</td>\n      <td>m</td>\n      <td>44,000</td>\n      <td>81,000</td>\n      <td>\u00b113,000</td>\n      <td>6.4</td>\n      <td>1.8</td>\n      <td>200</td>\n      <td>14</td>\n    </tr>\n    <tr>\n      <td>United Kingdom</td>\n      <td>Jun 13, 2021</td>\n      <td>w</td>\n      <td>130,000</td>\n      <td>110,000</td>\n      <td>\u00b19,200</td>\n      <td>11.9</td>\n      <td>0.9</td>\n      <td>160</td>\n      <td>18</td>\n    </tr>\n    <tr>\n      <td>United States</td>\n      <td>Jun 06, 2021</td>\n      <td>w</td>\n      <td>590,000</td>\n      <td>640,000</td>\n      <td>\u00b116,000</td>\n      <td>38.9</td>\n      <td>1.1</td>\n      <td>190</td>\n      <td>22</td>\n    </tr>\n    <tr>\n      <td>Uruguay</td>\n      <td>Dec 31, 2020</td>\n      <td>m</td>\n      <td>170</td>\n      <td>\u22122,200</td>\n      <td>\u00b1710</td>\n      <td>3.2</td>\n      <td>\u2013</td>\n      <td>\u221260</td>\n      <td>\u22126</td>\n    </tr>\n    <tr>\n      <td>Uzbekistan</td>\n      <td>Mar 31, 2021</td>\n      <td>m</td>\n      <td>630</td>\n      <td>20,000</td>\n      <td>\u00b13,900</td>\n      <td>5.0</td>\n      <td>31.5</td>\n      <td>60</td>\n      <td>13</td>\n    </tr>\n  </tbody>\n</table>\n\nIn terms of the absolute numbers, the largest excess mortality in our dataset was observed in the United States (640,000 by June 6, 2021; all reported numbers here and below have been rounded to two significant digits), Brazil (500,000 by May\u00a031, 2021), Russia (500,000 by April 30, 2021), and Mexico (470,000 by May 23, 2021) (Figure 3). Note that these estimates correspond to different time points as the reporting lags differ between countries (Table 1). See Figure 3\u2014figure supplement 1 for the same analysis using the 2020 data alone.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/69336/elife-69336-fig3-v3.jpg)\n\n**Figure 3.:** Each subplot shows the top 10 countries for each of our four excess mortality measures: total number of excess deaths; excess deaths per 100,000 population; excess deaths as a percentage of baseline annual mortality; undercount ratio (ratio of excess deaths to reported COVID-19 deaths by the same date). Error bars denote 95% confidence intervals corresponding to the uncertainty of the excess deaths estimate. Countries with population below 500,000 are not shown. Different countries have different reporting lags, so the estimates shown here correspond to different time points, as indicated. Excess mortality estimates in Armenia and Azerbaijan were downwards corrected by 4000 to account for the war casualties (see Materials\u00a0and\u00a0methods).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69336/elife-69336-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Each subplot shows the top 10 countries for each of our four excess mortality measures: total number of excess deaths; excess deaths per 100,000 population; excess deaths as a percentage of baseline annual mortality; undercount ratio (ratio of excess deaths to reported COVID-19 deaths by the same date). Error bars denote 95% confidence intervals corresponding to the uncertainty of the excess deaths estimate. Countries with population below 500,000 are not shown. Excess mortality estimates in Armenia and Azerbaijan were downwards corrected by 4000 to account for the war casualties (see Materials\u00a0and\u00a0mthods).\n\nSome countries showed statistically significant negative excess mortality, likely due to lockdown measures and social distancing decreasing the prevalence of influenza (Kung et al., 2021), as we discuss further below. For example, Australia had \u22123,700 excess deaths, Uruguay had \u22122,200 deaths, and New Zealand had \u22121,900 deaths. In these three cases, the decrease in mortality happened during the southern hemisphere winter season (Figure 2). Similarly, Norway had \u22121,500 excess deaths,\u00a0with most of this decrease\u00a0happening during the 2020/21 winter season.\u00a0Note that Uruguay had a large COVID outbreak in 2021, but we only have 2020 data available at the time of writing. The statistically significant mortality decrease in Malaysia, Mongolia, and Seychelles may also be related to the lockdown and social distancing measures but does not show clear seasonality, so may possibly also be due to other factors.\n\nAs the raw number of excess deaths can be strongly affected by the country\u2019s population size, we normalized the excess mortality estimates by the population size (Table 1). The highest excess mortality per 100,000 inhabitants was observed in Peru (590), followed by some Eastern European and then Latin American\u00a0countries: Bulgaria (460), North Macedonia (420),\u00a0Serbia (400), Mexico (360), Ecuador (350), Lithuania (350), Russia (340),\u00a0etc. (Figure 3). Note that many countries with severe outbreaks that received wide international media attention, such as Italy, Spain, and United Kingdom, had lower values (Table 1).\n\nThe infection-fatality rate (IFR) of COVID-19 is strongly age-dependent (Levin et al., 2020; O\u2019Driscoll et al., 2021). As the countries differ in their age structure, the expected overall IFR differs between countries. To account for the age structure, we also normalized the excess mortality estimates by the annual sum of the baseline mortality, that\u00a0is the expected number of deaths per year without a pandemic event (Table 1). This relative increase, also known as a P-score (Aron and Muellbauer, 2020), was by far the highest in Latin America: Peru (153%), Ecuador (80%), Bolivia (68%), and Mexico (61%) (Figure 3). These Latin American countries have much younger populations compared to the European and North American countries, which is why the excess mortality per 100,000 inhabitants there was lower than in several Eastern European countries, but the relative increase in mortality was higher, suggesting higher COVID-19 prevalence. That the highest relative mortality increase was observed in Peru, is in agreement with some parts of Peru showing the highest measured seroprevalence level in the world (\u00c1lvarez-Antonio et al., 2021).\n\n### Undercount of COVID deaths\n\nFor each country, we computed the ratio of the excess mortality to the officially reported COVID-19 death count by the same date. This ratio differed very strongly between countries (Table 1). Some countries had ratio below 1, for\u00a0example 0.7 in France and 0.6 in Belgium, where reporting of COVID deaths is known to be very accurate (Sierra et al., 2020). The likely reason is that the non-COVID mortality has decreased, mostly due to the influenza suppression (see below), leading to the excess mortality underestimating the true number of COVID deaths.\n\nNevertheless, many countries had ratios above 1, suggesting an undercount of COVID-19 deaths (Beaney et al., 2020). At the same time, correlation between weekly reported COVID-19 deaths and weekly excess deaths was often very high (Figure 4): e.g. in Mexico (undercount ratio 2.1) correlation was $r=0.80$ and in South Africa (undercount ratio 2.7) it was $r=0.93$. High correlations suggest that excess mortality during a COVID outbreak can be fully explained by COVID-19 mortality, even when the latter is strongly underreported. Peru deserves a special mention: until early June, the undercount ratio in Peru was 2.7, with correlation $r=0.87$. Peru changed the definition of reported \u2018COVID deaths\u2019 to be more inclusive and submitted backwards revisions to WHO (Ministry of Health, 2021); as a result, the undercount ratio dropped to 1.0 and correlation increased to $r=0.99$ (Figure 4). This example clearly illustrates that undercount ratios above 1.0 primarily arise from undercounting deaths from COVID infections. See Discussion for additional considerations.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/69336/elife-69336-fig4-v3.jpg)\n\n**Figure 4.:** Sixteen selected countries are shown together with the Pearson correlation coefficient ($r$) between the two time series, starting from week 10 of 2020. Note the peak in excess mortality (but not in the reported COVID-19 deaths) associated with the August 2020 heat wave in Belgium, France, Germany, and Netherlands.\n\nInterestingly, in many countries, the undercount ratio was not constant across time. For example, the undercount ratio in Italy, Spain, Netherlands, and United Kingdom was \u223c1.5 during the first wave (Figure 4), but decreased to \u223c1.0 during the second wave. This decrease of the undercount ratio may be partially due to improved COVID death reporting, and partially due to the excess mortality underestimating the true COVID mortality in winter seasons due to influenza suppression.\n\nOn the other hand, several countries showed very accurate reporting of the COVID-19 deaths with the undercount ratio being close to 1.0 (Sierra et al., 2020) from the beginning of the pandemic and up until the middle of the second wave (e.g. Austria, Belgium, France, Germany, Slovenia, Sweden; Figure 4). However, starting from December 2020 and up until March\u2013April 2021 the excess deaths were underestimating the COVID-19 deaths in all these countries. The difference between the officially reported COVID-19 deaths and the excess deaths may correspond to the number of deaths typically caused by influenza and other infectious respiratory diseases in winter months. This difference (computed starting from week 40 of 2020 and until week 15 of 2021), as a fraction of baseline annual deaths, was in the 2.3\u20135.9% range (Austria: 2.3%, Belgium: 5.9%, France: 4.3%, Germany: 3.9%, Slovenia: 3.5%, Sweden: 5.5%). This is in good agreement with the total\u00a0negative excess deaths observed in Australia, New Zealand, Uruguay, and Norway\u00a0(\u22122.5%, \u22125.4%, \u22126.4%,\u00a0\u22123.7%) and coming mainly from\u00a0the Southern and Northern\u00a0hemisphere winter months respectively\u00a0(Kung et al., 2021).\u00a0Per 100,000 inhabitants, the same difference was in the 20\u201360 range.\n\nThe undercount ratio for most countries was below 3.0 (Table 1), but some countries showed much larger values. We found the highest undercount ratios in Tajikistan (100), Nicaragua (51), Uzbekistan (31), Belarus (14), and Egypt (13) (Figure 3). Such large undercount ratios strongly suggest purposeful misdiagnosing or underreporting of COVID-19 deaths, as argued by Kobak, 2021a for the case of Russia (undercount ratio 4.5).\n\n## Discussion\n\n### Summary\n\nWe presented the World Mortality Dataset \u2014 the largest international dataset of all-cause mortality, currently encompassing 103\u00a0countries. The dataset is openly available and regularly updated. We are committed to keep maintaining this dataset for the entire duration of the COVID-19 pandemic.\n\nThe coverage and reliability of the data varies across countries, and some of the countries in our dataset may possibly report incomplete mortality numbers (e.g. covering only part of the country), see caveats in the\u00a0Data limitations and caveats section of Materials and methods. This would make the excess mortality estimate during the COVID-19 outbreak incomplete (as an example, Lloyd-Sherlock et al., 2021 estimate that the true excess mortality in Peru may be 30% higher than excess mortality computed here due to incomplete death registration in Peru). Importantly, the early pre-outbreak 2020 data for all countries in our dataset matched the baseline obtained from the historic 2015\u20132019 data, indicating that the data are self-consistent and the excess mortality estimates are not inflated. Another important caveat is that the most recent data points in many countries tend to be incomplete and can experience upwards revisions. Both factors mean that some of the excess mortality estimates reported here may be underestimations.\n\nSome of the\u00a0countries in our dataset have excess death estimates available in the constantly evolving literature on excess deaths during the COVID-19 pandemic from academia, official institutions and professional associations. The largest efforts include the analysis of STMF data (Kontis et al., 2020; Islam et al., 2021) and excess mortality trackers by The Economist and Financial Times. While the analysis is similar everywhere and the estimates broadly agree, there are many possible modeling choices (the start date and the end date of the total excess computation; including or excluding\u00a0historic influenza waves\u00a0when\u00a0computing the baseline; modeling trend over years or not, etc.) making all the estimates slightly different.\n\n### Contributions to excess mortality\n\nConceptually, excess mortality during the COVID-19 pandemic can be represented as the sum of several distinct factors:\n\n$$\nExcessmortality=+(A)DeathsdirectlycausedbyCOVIDinfection+(B)DeathscausedbymedicalsystemcollapseduetoCOVIDpandemic+(C)Excessdeathsfromothernaturalcauses+(D)Excessdeathsfromunnaturalcauses+(E)Excessdeathsfromextremeevents:wars,naturaldisasters,etc.\n$$\n\nWe explicitly account for factor (E) and argue that for most countries, the contribution of factors (B)\u2013(D) is small in comparison to factor (A), in agreement with the view that excess mortality during an epidemic outbreak can be taken as a proxy for COVID-19 mortality (Beaney et al., 2020). Below we discuss each of the listed\u00a0factors.\n\nIt is possible that when a country experiences a particularly strong COVID outbreak, deaths from non-COVID causes also increase due to the medical system being overloaded \u2014 factor (B) above. Our data show that this did not happen in Belgium (undercount ratio during the first wave was close to 1.0, i.e. all excess deaths were due to COVID-19 infections), despite a \u223c100% weekly increase in all-cause mortality. Moreover, our data suggest that this did not happen in Peru, during one of the strongest registered COVID outbreaks in the world until now: despite \u223c200% weekly increase in all-cause mortality, undercount ratio stayed close to 1.0 (after Peru revised the number of reported COVID deaths, see above). Even if deaths due to other diseases did increase, then such collateral excess deaths can nevertheless be seen as indirect consequence of COVID-19 outbreaks. However, the available data suggest that this factor, if at all, plays only a minor role in the overall excess deaths.\n\nThe data suggest that the contribution of factor (C) to the excess mortality is negative. Indeed, countries that implemented stringent lockdown and social distancing measures in the absence of COVID-19 community spread, such as Australia, New Zealand, and Uruguay, showed a clear winter-season decrease in all-cause mortality, likely due to reduced influenza transmission (Kung et al., 2021). Here, using these three countries as well as some of the European data, we estimated that the influenza suppression alone can lead to a decrease of annual mortality by 3\u20136%. Other infectious diseases may also be suppressed by enforced social distancing. For example, in South Africa, lockdowns have noticeably decreased toddler mortality (0\u20134 years) (Bradshaw et al., 2021). This effect was not observed in the developed countries where toddler mortality is low (Islam et al., 2021), but could be present in other developing countries as well.\n\nThe effect of factor (D) appears to be country-specific. Traffic accident fatalities have decreased in the European Union and the Western Balkans (European Commission, 2021; Transport Community, 2021) but have increased in the United States (National Safety Council, 2021). Homicides have increased in the United States (Arthur and Asher, 2020; Faust et al., 2021) and Germany (Federal Criminal Police Office, 2021) but have decreased in Peru (Calderon-Anyosa and Kaufman, 2021), South Africa (Bradshaw et al., 2021), and France (Ministry of the Interior, 2021). Suicides have first decreased and then increased in Japan, particularly in females (Kurita et al., 2021; Tanaka and Okamoto, 2021; Black and Kutcher, 2021), have decreased in the United States (Ahmad and Anderson, 2021; Faust et al., 2021), and in a study of 21 countries were found to have decreased in half of them and remained unchanged in the rest (Pirkis et al., 2021). In the United States, deaths from drug overdoses and unintentional injuries have increased (Faust et al., 2021). However, importantly, in all cited studies the combined effect of all changes in the frequency of unnatural changes did not exceed \u223c1% of the baseline annual mortality, meaning that factor (D) plays only a minor role in excess mortality.\n\nFinally, factor (E) in 2020\u20132021 was mostly constrained to the Nagorno-Karabakh war between Armenia and Azerbaijan and the August 2020 heat wave in Europe, which we explicitly accounted for. We could have possibly missed some other similar events in other countries, but we believe they could only play a minor role compared to COVID-19, thanks to the absence of other major wars or natural disasters in 2020\u20132021\u00a0in the countries included in our dataset.\n\nTogether, the evidence suggests that the contribution of factor (C) is negative and contribution of factor (D) is small in comparison, so we believe that lockdown and social distancing measures on their own decrease \u2014 and not increase \u2014 the death rate, at least in short-term. The contribution of factor (B), at least in developed countries, appears to be small, and so, in the absence of wars and natural disasters, one can expect excess mortality to provide a lower bound on the true number of COVID-19 deaths. In other words, we speculate that whenever COVID deaths are counted perfectly, they should exceed the excess mortality, leading to undercount ratio below 1. This is indeed what we observed in several countries with strong COVID-19 outbreaks but accurate accounting of COVID deaths, for\u00a0example Belgium, France, and Germany (undercount ratios 0.6, 0.7, and 0.4, respectively).\n\n### Conclusions and outlook\n\nThe World Mortality Dataset is open for researchers and policy makers from all fields. Avenues for future research include the relation between various measures of excess mortality and economic development, population structure, lockdown and social distancing measures, border controls and travel restrictions (Hale et al., 2020), properties of the health-care systems, vaccinations, institutional quality (e.g. the Democracy Index), climate, geography, population density, and many more. Conversely, future research can use excess mortality estimates to study negative social or economic impact of high COVID-19 death toll.\n\nSo far we were able to collect data from 103\u00a0nations out of \u223c200, with particularly sparse coverage in Africa, Asia, and the Middle East (Figure 1). During the pandemic, many countries have sped up collection and dissemination of preliminary all-cause mortality data, yet many other countries did not, and will report 2020 information with a substantial lag, in the coming months or even years. Once released, this information will be included in the World Mortality Dataset. Unfortunately, many countries do not keep reliable vital statistics and excess mortality may remain unknown for a long time.\n\nSumming up the excess mortality estimates across all countries in our dataset gives 4.0 million excess deaths. In contrast, summing up the official COVID-19 death counts gives 2.9 million deaths, corresponding to the global undercount ratio of 1.4. However, there is ample evidence that among the countries for which the all-cause mortality data are not available the undercount ratio is much higher (Watson et al., 2020; Djaafara et al., 2021; Watson et al., 2021; Mwananyanda et al., 2021; Koum Besson et al., 2021; Leffler, 2021). Using a statistical model to predict the excess mortality in the rest of the world based on the existing data from our dataset, The Economist in May 2021\u00a0estimated 7\u201313 million excess deaths worldwide (The Economist, 2021), which was 2\u20134 times higher than the world\u2019s official COVID-19 death count at the time (3.5 million).\n\nIn conclusion, the COVID-19 pandemic highlighted the great importance of reliable and up-to-date all-cause mortality data. Just as countries around the world collect and regularly report estimates of economic output such as the gross domestic product (GDP), and just as they have been reporting COVID-19 mortality, they should be reporting all-cause mortality into a comprehensive multi-national repository (Leon et al., 2020).\n\n## Materials and methods\n\n### World Mortality Dataset\n\nFor all countries that are not covered by EuroStat or STMF, we aimed to collect weekly, monthly, or quarterly all-cause mortality data from their National Statistics Offices (NSOs), Population Registries, Ministries of Health, Ministries of Public Health, etc., collectively referred to here as \u2018NSOs\u2019.\n\nOur strategy was to search for mortality numbers for every country on their NSO\u2019s website. The data may be present in the form of a spreadsheet, a table generator, a periodical bulletin, a press release, a figure that required digitizing, etc. If we were unable to locate such data, we contacted the NSO via email, a contact form on their website, or on social media, asking them if they have weekly, monthly, or quarterly data on all-cause mortality for 2020.\n\nResponses from NSOs have varied substantially. Some have provided us with the requested information, some replied that no such data were available, some did not respond at all. For many countries, the email addresses did not work and returned an error message. Here are some representative examples of the declining responses: \u2018\u2018We are sorry to inform you that we do not have the data you requested\u2019\u2019 (China); \u2018\u2018These are not available\u2019\u2019 (India); \u2018\u2018Unfortunately we don\u2019t have this data. Currently, we only have the number of people dying from traffic accidents (by month)\u2019\u2019 (Vietnam); \u2018\u2018Unfortunately, we do not have a mechanism in place at the moment to capture routine mortality data in-country nation-wide [\u2026] As you may also be aware, death or mortality registration or reporting is yet a huge challenge in developing countries [\u2026]\u2019\u2019 (Liberia).\n\nWe included the data from 2015 onwards into our dataset if it satisfied the following inclusion criteria: (1) data were in weekly, monthly, or quarterly format (we preferred weekly data whenever available); (2) data existed at least until June 2020; (3) there were data for at least one entire year before 2020 (or a forecast for 2020, see below). At the time of writing, our dataset comprises 103\u00a0countries and territories (Figure 1).\n\nFor the weekly data, we preferred ISO weeks whenever possible (for Peru, Sweden, Ecuador, and Guatemala we converted daily data into ISO weeks). For Liechtenstein and Taiwan we preferred monthly format over weekly data from STMF/EuroStat, because weekly data were very noisy or less up-to-date. The data for Iran are available in quarterly format, where quarters start on December 21, March 21, June 21, and September 21 (Solar Hijri seasons). We treated the season starting on December 21 as the first data point for the following year.\n\nUnlike STMF (Islam et al., 2021), we only collected country-level data, without age or gender stratification, since for most countries this information was not available. In some cases, we had to combine several data sources, for example taking the 2015\u20132018 monthly data from UNDATA and 2019\u20132020 monthly data from a country\u2019s NSO. For two countries (Gibraltar and Nicaragua) some of the values were taken from media reports which in turn obtained them from the respective NSOs. Some data points for Cuba and Uruguay were taken from Castanheira et al., 2021 and the data for Argentina from Rearte et al., 2021.\u00a0A detailed description of all data sources for each country can be found at https://github.com/akarlinsky/world_mortality.\n\nIn this manuscript, we treat Taiwan, Hong Kong, and Macao as separate countries. They release monthly all-cause mortality data, whereas China does not. We also treat Gibraltar, Greenland, and Transnistria as separate territories as the United Kingdom, Denmark, and Moldova do not report these deaths in their figures.\u00a0Similarly, the\u00a0French overseas\u00a0departments of French Guiana, Guadeloupe, Martinique, Mayotte, and R\u00e9union, the French overseas collectivity of French Polynesia, and Aruba,\u00a0a constituent country of the Kingdom of the Netherlands, are included as separate territories as France and Netherlands do not report these deaths\u00a0in their figures.\n\n### Data limitations and caveats\n\nThe data in our dataset come with several important caveats.\n\nFirst, the 2020\u20132021 data are often preliminary and subject to backward revisions. The more recent the data point, the more incomplete it usually is. Some countries only publish complete data (with a substantial delay) while others release very early and incomplete data as well. We excluded the most recent data points whenever there was an indication that the data were substantially incomplete. For the United States, we used the \u2018weighted\u2019 mortality counts from the Centers for Disease Control and Prevention (CDC) that account for undercount in recent weeks, instead of the STMF data.\n\nSecond, the completeness and reliability of all-cause mortality data varies by country. According to the United Nations Demographic Yearbook (UNSD, 2019), 83\u00a0of the countries in our dataset have a death registration coverage rate of 90% and above. In the remaining 20 countries, coverage is either estimated to be below 90% (e.g. Peru, Ecuador, Bolivia) or no estimate exists at all (Kosovo, Taiwan, Transnistria). However, some of the available coverage estimates are outdated. For example, the estimate for Bolivia is from 2000. The estimate for Peru is from 2015, that\u00a0is before the SINADEF reform in 2016 (Vargas-Herrera et al., 2018) which has likely substantially improved the coverage. For Taiwan, Human Mortality Database estimates that the data are over 99% complete. At the same time, note that the coverage estimates refer to the finalized data so preliminary 2020\u201321 data may be less complete, as explained above. It is also possible that COVID-19 pandemic could have affected the quality of the vital registration.\n\nThird, whereas we preferred data by date of death, the data from many countries are only available by the date of registration. Most weekly data are by the date of death (one notable exception is United Kingdom), but monthly data are often by the date of registration. Whenever the data are organized by the date of registration, it will show spurious drops in weeks or months with public holidays (e.g. last week of August and last week of December in the United Kingdom) or during national lockdowns (e.g. April 2020 in Kyrgyzstan, Kazakhstan, and Panama).\n\nFourth, we aimed to collect information from all countries from 2015 onward, yet currently we only have later data for four countries: Chile (2016), Germany (2016), Transnistria (2016), Peru (2017). Two\u00a0other countries, South Africa\u00a0and Argentina, did not release any pre-2020 data at all, but instead published a forecast for 2020 based on the prior data (Bradshaw et al., 2021;\u00a0Rearte et al., 2021). We included this published forecast into the dataset as year 0.\n\nFifth, for most countries, the data are provided as-is, but for three\u00a0countries (Brazil,\u00a0Lebanon, and Sweden) we performed some processing to assure consistency across years, resulting in non-integer values. In Brazil, there are two mortality monitoring systems: \u2018Registro Civil\u2019 (RC) and \u2018Sistema de Informa\u00e7\u0101o sobre Mortalidade\u2019 (SIM). RC is more up-to-date, whereas SIM is more complete. We used the SIM data up until October 2020 and RC data afterwards, multiplied by the ratio between total January\u2013October 2020 deaths in SIM and in RC (1.08). Lebanon has reported total deaths from 2015 to 2019 and hospital deaths from 2017 to 2021. Total deaths in 2020\u20132021 were estimated by multiplying the hospital deaths by the ratio between total deaths in 2019 to hospital deaths in 2019 (1.34).\u00a0Sweden has a substantial number of deaths (2.9% of all deaths in 2019; 2.7% in 2020) reported with an \u2018unknown\u2019 week. However, \u223c95% of these have a known month of death. In order to account for this, we redistributed deaths with known month but unknown week uniformly across weeks of the respective month, and similarly redistributed the remaining deaths with known year but unknown month.\n\nDespite the caveats and limitations listed above, all our data are self-consistent: the baseline mortality that we predict for 2020 agrees very well with the pre-COVID early 2020 mortality in all cases. Note that our projection for 2020 uses a linear trend (see below) and so can implicitly account for improvements in death registration over the recent years. We therefore believe that for countries with incomplete death registration coverage, our excess mortality estimates provide a lower bound to the true excess mortality.\n\n### Excess mortality\n\nIn order to estimate the excess mortality, we first estimated the expected, or baseline, mortality for 2020 using the historical data from 2015 to 2019 (or as many years from this interval as were available; see above). We fitted the following regression model separately for each country:\n\n$$\nD_{t,Y}=\\alpha_{t}+\\beta\u22c5Y+\u03f5.\n$$\n\nHere, $D_{t,Y}$ is the number of deaths observed on week (or month, or quarter) $t$ in year $Y$, $\\beta$\u00a0is a linear slope across years, $\\alpha_{t}$ are separate intercepts (fixed effects) for each week (month/quarter), and $\u03f5\u223c\ud835\udca9\u2062(0,\\sigma^{2})$ is Gaussian noise. This model can capture both seasonal variation in mortality and a yearly trend over recent years due to changing population structure or socio-economic factors.\n\nAs an example, using monthly death data from Russia ($R^{2}=0.72$, $F=10.2$), we obtained $\\beta^=-2346\\pm528$ (\u00b1 standard error), meaning that each year the number of monthly deaths decreases on average by \u223c2300, and so the predicted monthly deaths for 2020 are \u223c7000 lower than the 2015\u20132019 average. In contrast, using weekly data from the United States ($R^{2}=0.89$, $F=31.7$), we obtained $\\beta^=773\\pm57$, meaning that each year the number of weekly deaths increases on average by \u223c800. In these two cases, as well as in\u00a0many others, the yearly trend was strong and statistically significant, and using the average 2015\u20132019 data as baseline, as is sometimes done, would therefore not be appropriate.\n\nWe took the model prediction for 2020 as the baseline for excess mortality calculations:\n\n$$\nB^_{t}=\\alpha^_{t}+\\beta^\u22c52020.\n$$\n\nFor the countries with weekly data, the model was fit using weeks 1\u201352, as the week 53 only happens in rare years (including 2020). The baseline for week 53 was then taken as equal to the value obtained for week 52. We took the same baseline for 2021 as for 2020, to avoid further extrapolation.\n\nThe excess mortality in each week (or month, or quarter) was defined as the difference between the actually observed death number and the baseline prediction. Note that the excess mortality can be negative, whenever the observed number of deaths is below the baseline. We summed the excess mortality estimates across all weeks starting from March 2020 (week 10; for monthly data, we started summation from March 2020; for quarterly data, from the beginning of 2020). This yields the final estimate of the excess mortality:\n\n$$\n\u0394=\\sumt\\geqt_{1}(D_{t,2020}-B^_{t})+\\sumt(D_{t,2021}-B^_{t}),\n$$\n\nwhere t1 denotes the beginning of summation in 2020.\n\nWe computed the variance $Var[\u0394]$ of our estimator \u0394 as follows. Let $\ud835\udc17$ be the predictor matrix in the regression, $\ud835\udc32$ be the response vector, $\ud835\udf37^=(\ud835\udc17^{\u22a4}\u2062\ud835\udc17)^{-1}\u2062\ud835\udc17^{\u22a4}\u2062\ud835\udc32$ be the vector of estimated regression coefficients, and $\\sigma^^{2}=\u2225\ud835\udc32-\ud835\udc17\u2062\ud835\udf37^\u2225^{2}/(n-p)$ be the unbiased estimate of the noise variance, where $n$ is the sample size and $p$ is the number of predictors. Then $Cov[\\beta^]=\\sigma^^{2}(X^{\u22a4}X)^{\u22121}$ is the covariance matrix of $\ud835\udf37^$ and $S=Cov[B^_{t}]=Cov[X_{2020}\\beta^]=\\sigma^^{2}X_{2020}(X^{\u22a4}X)^{\u22121}X_{2020}^{\u22a4}$ is the covariance matrix of the predicted baseline values $B^_{t}$ where $\ud835\udc17_{2020}$ is the predictor matrix for the entire 2020. We introduce vector $\ud835\udc30$ with elements wt of length equal to the number of rows in $\ud835\udc17_{2020}$, set all elements before t1 to zero, all elements starting from t1 to 1, and increase by one all elements corresponding to the existing 2021 data. Then the \u2018predictive\u2019 variance of \u0394 is given by\n\n$$\nVar[\u0394]=Var[\\sumtw_{t}B^_{t}]+\\sumtw_{t}\\sigma^^{2}=w^{\u22a4}Sw+\\sigma^^{2}\u2016w\u2016_{1},\n$$\n\nwhere the first term corresponds to the uncertainty of $B^_{t}$ and the second term corresponds to the additive Gaussian noise that 2020\u20132021 observations would have had on top of $B_{t}$ without the pandemic event (Abramovich and Ritov, 2013). We took the square root of $Var[\u0394]$ as the standard error of \u0394. Whenever the fraction $z=|\u0394|/\\sqrt{Var[\u0394]}$ was below 2, we considered the excess mortality for that country to be not significantly different from zero. Note that we could not estimate the uncertainty for Argentina and\u00a0South Africa because raw historical data were not available (see above).\n\nThere exist more elaborate statistical approaches for estimating the baseline (and thus the excess) mortality, for example modeling the seasonal variation using periodic splines or Fourier harmonics, or controlling for the time-varying population size and age structure, or using a Poisson model (Farrington et al., 1996; Noufaily et al., 2013), etc. We believe that our method achieves the compromise between flexibility and simplicity: it is the simplest approach that captures both the seasonal variation and the yearly trend, and is far more transparent than more elaborate methods. Note that our uncertainty estimation assumes iid noise in Equation 1. In reality, the noise may be temporally or spatially autocorrelated, which would affect the variance of $B^_{t}$.\n\nPast (2015\u20132019) influenza outbreaks contributed to the estimation of the baseline $B^_{t}$. As a consequence, our baseline captures the expected mortality without the COVID-19 pandemic, but in the presence of usual seasonal influenza. This differs from the approach taken by EuroMomo as well as by some studies of excess mortality due to influenza pandemics (Viboud et al., 2005; Simonsen et al., 2013), where the baseline is constructed in a way that weighs down previous influenza outbreaks so that each new outbreak would result in positive excess mortality. A parallel work on COVID-19 excess mortality based on the STMF dataset (Islam et al., 2021) also used that approach, which explains some of the differences between our estimates.\n\n### COVID-unrelated causes of excess mortality\n\nWe subtracted 4000 from the excess mortality estimates for Armenia and Azerbaijan to account for the 2020 Nagorno-Karabakh war. By official counts, it cost \u223c3400 lives in Armenia and \u223c2800 in Azerbaijan (Welt and Bowen, 2021), but we took 4000 deaths in each country to obtain a conservative estimate of COVID-related excess mortality. To the best of our knowledge, no other armed conflict in 2020\u20132021 resulted in more than 100 casualties in countries included in our dataset.\n\nAnother correction was done for Belgium, Netherlands, France, Luxembourg, and Germany, where our data show a peak of excess deaths in August 2020, not associated with COVID-19 (see below and Figure 4) and likely corresponding to a heat wave (Fouillet et al., 2006; Fouillet et al., 2008; Flynn et al., 2005). We excluded weeks 32\u201334 from the excess mortality calculation in these five countries. This decreased the excess mortality estimates for these countries by 1500, 660, 1600, 35, and 3700, respectively.\n\nThe EM-DAT database of natural disasters (https://www.emdat.be) lists only the following four natural disasters with over 200 fatalities in 2020\u20132021 in countries included in our dataset: the August heat wave in Belgium, France, and the Netherlands, and a sequence of heat waves in the United Kingdom in June\u2013August 2020 (2500 casualties). We do not see clear peaks in our data associated with these heat waves, possibly because our United Kingdom data are by the date of registration and not by the date of death. We have therefore chosen not\u00a0to adjust our excess mortality estimate for the United Kingdom.\n\nNote that other countries may also have experienced non-COVID-related events leading to excess mortality. However, as these events are not included in the EM-DAT database, we assume that their effect would be small in comparison to the effect of COVID-19. For example, Russian data suggest \u223c10,000 excess deaths from a heat wave in July 2020 in Ural and East Siberia (Kobak, 2021a). We do not correct for it in this work as it is difficult to separate July 2020 excess deaths into those due to COVID and those due to the heat wave, based on the Russian country-level data alone, and we are not aware of any reliable published estimates. Importantly, 10,000 is only a small fraction of the total number of excess deaths in Russia. Another case is the February 2021 power crisis in Texas, USA, that has been estimated by BuzzFeed News to have yielded \u223c700 excess deaths (Aldhous et al., 2021). Again, this number is small compared to the total number of excess deaths in the United States.\n\n### Official COVID mortality\n\nWe took the officially reported COVID-19 death counts from the World Health Organization (WHO) dataset (https://covid19.who.int). To find the number of officially reported COVID-19 deaths at the time corresponding to our excess mortality estimate, we assumed that all weekly data conform to the ISO 8601 standard, and took the officially reported number on the last day of the last week available in our dataset. Some countries use non-ISO weeks (e.g. starting from January 1st), but the difference is at most several days. ISO weeks are also assumed in the \u2018Data until\u2019 column in Table 1. Officially reported numbers for Hong Kong, Macao, and Taiwan, absent in the WHO dataset, were taken from the Johns Hopkins University (JHU) dataset (https://coronavirus.jhu.edu) (Dong et al., 2020) as distributed by Our World in Data. We manually added officially reported numbers for Transnistria (1,195\u00a0by the end of May 2021: taken from the Telegram channel https://t.me/novostipmrcom).\n\nNote that for some countries there exist different sources of official data, e.g. Russia officially reports monthly numbers of confirmed and suspected COVID deaths that are substantially larger than the daily reported numbers (Kobak, 2021a). However, it is the daily reported numbers that get into the WHO and JHU dashboards, so for consistency, here we always use the\u00a0daily values.\n\nWe defined undercount ratio as the number of excess deaths divided by the official number of COVID-19 deaths reported by the same date. If the number of excess deaths is negative, the undercount ratio is not defined. Additionally, we chose not to show undercount ratios for countries with positive number of excess deaths where there is no evidence that excess deaths were due to COVID (Cuba, Hong Kong, Thailand). For these three countries there was no correlation between the monthly excess deaths and reported monthly numbers of COVID-19 deaths or cases, and no media reports of COVID outbreaks.\n\n### Population size estimates\n\nTo estimate excess deaths per 100,000 population, we obtained population size estimates for 2020 from the United Nations World Population Prospect (WPP) dataset (https://population.un.org/wpp/). The value for Russia in that dataset does not include Crimea due to its disputed status, but all Russian data of all-cause and COVID-19 mortality does include Crimea. For that reason, we used the population value of 146,748,590, provided by the Russian Federal State Statistics Service, and similarly changed the value for Ukraine to 41,762,138, provided by the Ukranian State Statistics Service. The number for Transnistria was absent in the World Population Prospect dataset, so we used the value obtained from its NSO (465,200). Additionally, WPP reports population data for Serbia and Kosovo combined. We thus obtained population values for these countries from the World Bank Dataset (https://data.worldbank.org/indicator/SP.POP.TOTL).\n\nNote that some of the population size estimates in the World Population Prospect dataset may be outdated or unreliable. Therefore, for some of the countries our excess death rates may be only approximate (Spoorenberg, 2020).\n\n### Data and code availability\n\nThe World Mortality Dataset is available at https://github.com/akarlinsky/world_mortality,\u00a0(copy archived at swh:1:rev:03534f5db091e7dbada157e4eb92d663b1d1287f,\u00a0Karlinsky and Kobak, 2021). The analysis code is available at https://github.com/dkobak/excess-mortality (copy archived at swh:1:rev:f765cf8bb7d3246bed22f85c832a63b0cf58b904,\u00a0Kobak, 2021b).\u00a0Our baseline estimates for all countries and all values shown in Table 1 are available there as CSV files. Frozen data, data sources\u00a0and code for the paper are available at https://github.com/dkobak/excess-mortality/tree/main/elife2021\u00a0(data update from July 3, 2021).\n",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "98d657cd-1020-4d3e-ab17-36d52336dfc0",
+      "submission_id": "d296b15b-76a3-45ba-b634-2a4b87bc8232",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marc Lipsitch, Harvard TH Chan School of Public Health United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.69336.sa1](https://doi.org/10.7554/eLife.69336.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nThis is a comprehensive effort to compile excess mortality data during the ongoing COVID-19 pandemic, resulting in a regularly updated, publicly available data set from which other investigators can depart to answer their own questions, and in which these investigators show the range of \"excess\" mortality, ranging from negative excess in countries with little COVID-19 to as much as 50% excess over normal rates in hard-hit countries. This also permits estimation of underreporting of deaths and its variation in space and time. This will be a highly valuable resource for many.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"The World Mortality Dataset: Tracking excess mortality across countries during the COVID-19 pandemic\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Marc Lipsitch as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by a Senior Editor, Miles Davenport. The following individuals involved in review of your submission have agreed to reveal their identity: Simonsen (Reviewer #2); Ayesha Mahmud (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential Revisions:\n\n1. Work is not connected to the vast literature on the topic. The authors are out-of-field statisticians and seem unaware of the literature in this domain. They had generate a baseline of expected mortality based on past years time series data, as one would do when estimating excess mortality for influenza. In this way their approach is a bit similar to that used by Murray et al., (Murray, Lancet 2006) to estimate the 1918 pandemic excess mortality above an annual baseline of surrounding years for a number of countries. The authors should consider at least including a reference for excess mortality estimation for each of the past influenza virus pandemics, and ponder whether it is possible to do the same that was done in these analyses to create a baseline of expected deaths that did NOT include winter-seasonal epidemic diseases like influenza (see the collected works of Olson et al., Viboud et al., Chowell et al., Olson et al., Simonsen et al., for the pandemics of 1918, 1957, 1968 and 2009). See also the latest thinking on the problem of sorting out true excess deaths from the disappeared traffic accidents, increased mental health deaths, and other complications by IHME.\n\n2. No attempt to correct baselines for seasonal influenza. The authors use past years and generate a baseline that includes mid-winter seasonal influenza mortality. By doing so, the excess mortality estimates in the present manuscript represent excess above what is normal in a season. Thus, as the authors comment on, the excess mortality estimates are affected by the too high baseline which includes mortality due to influenza, RSV and other respiratory viruses that are now largely not circulating during the COVID-19 pandemic. Particularly, the \"disappeared\" influenza burden in 2020-2021 results in a meaningful underestimation of the true COVID-19 excess mortality. This problem of removing seasonal influenza from the baseline has actually been worked out by epidemiologists using various statistical approaches (sometimes harmonic terms, sometimes using influenza virus data from the WHO as predictors) in the field of epidemiology the literature mentioned above, but the entire literature of excess mortality estimation is missing from the reference list. One that I am very familiar with is Simonsen et al., Plos Med 2014 \u2013 but there are many many more similar published papers computing excess mortality for seasonal and recent pandemic influenza out there (look for Viboud, Chowell, Goldstein, Paget, Olson\u2026..). I suggest you simply discuss this situation, and make reference to this \u2013 plus suggest others to work out ways to remove influenza from the baseline, for example incorporate WHOs seasonal influenza timeseries database data (FluNet.org) in the excess mortality regression models (to identify and remove excess mortality during influenza periods).\n\n3. Varying COVID-19 study time for different countries. Another problem with the way they report the excess mortality is in the difference in follow-up time. Some countries have data up to March 2021, while others only until last summer. This should be dealt with in the estimates, for example by comparing countries with complete year 2000 data. It probably cannot be helped that some countries publish their data late, but the authors should highlight these issues of comparison between countries in the text.\n\n4. About the finding of a 1.6x higher excess mortality than reported deaths. It seems important to say that this is a finding for countries with national vital statistics in near-real time, so things may be very different in countries where such data to not exist.\n\n5. Figure 4. Can you explain the time shift between the reported and excess deaths in the United States? Must be a data issue. Also, would be better to choose line colors or width so that one can distinguish the two in black and white.\n\n6. Please expand on the interpretation of excess deaths. From a causal perspective, the notion of excess deaths is:\n\nObserved deaths in COVID period =\n\nExpected deaths in COVID period (a) \u2013\n\nDeaths averted due to COVID (eg less flu due to NPIs, less traffic death, ) (b)+\n\nDeaths directly caused by COVID (ie in people who were infected) (c)+\n\nDeaths indirectly caused by COVID (starvation from lockdown, untreated cancer) (d)+\n\nNet death from confounders (other events that were particular to that time period and caused or prevented deaths -- eg wars) (e)\n\n+ Random variation.\n\nThe main thing I would like to see is more contextualization of the \"undercount\" to note something like this conceptual structure, explain what should make us think that the very few examples of (e) that are in the analysis really are the main ones, and perhaps some seasonal comparisons of the undercounts so that plausible hypotheses can be proposed for which factors are at play.\n\n7) Is it possible to do the age-standardization for countries in the top 10 in Figure 3. For example, the countries in the bottom left panel to see if the ordering changes?\n\n8) The timing of outbreaks in different countries will affect the estimate of excess mortality. You note, \"We summed the excess mortality estimates across all weeks starting from the week t1 when the country reported its first COVID-19 death\". First, how do we account for changes in reporting as an outbreak progresses in a country? Second, for countries that have a later introduction of the outbreak, and/or see a later peak relative to other countries (for example, India), then they will automatically have a smaller estimate of excess death because of right censoring of the data. How is this accounted for?\n\n9) It would be good to add some discussion on how your excess mortality estimates compare to the many estimates available in the literature.\n\n10) Figure 2 needs x axis labels.\n\n11) A lot of the results are presented in a comparative framework but it's very difficult to compare excess mortality rates across different populations. Perhaps reframing some of this as a way to assess a country's own burden compared to its baseline rather than comparing across countries might be helpful.\n\n12) Some discussion on why Peru seems to be such an outlier would be helpful (i.e. Figure 3).\n\n13) Section 2.2 describes some adjustments (for e.g. for Ireland and Sweden). Some sensitivity analyses would be helpful. For example. the redistribution of deaths for Sweden ignores seasonality. What is the consequence of that assumption?\n\nReviewer #1 (Recommendations for the authors):\n\nI found the use of t statistics confusing as t has another meaning (time) and while this may be standard in some fields it is not in epidemiology (presenting the t statistic rather than the p value)\n\nReviewer #2 (Recommendations for the authors):\n\nWell done, nice paper. Alarming conclusion. Great resource for the field. A few things to fix.\n\nReviewer #3 (Recommendations for the authors):\n\nThanks to the authors for this nice paper, and for collecting and making all the data publicly available. Some comments and suggestions (in no particular order) are below:\n\n1) Is it possible to do the age-standardization for countries in the top 10 in Figure 3. For example, the countries in the bottom left panel to see if the ordering changes?\n\n2) The timing of outbreaks in different countries will affect the estimate of excess mortality. You note, \"We summed the excess mortality estimates across all weeks starting from the week t1 when the country reported its first COVID-19 death\". First, how do we account for changes in reporting as an outbreak progresses in a country? Second, for countries that have a later introduction of the outbreak, and/or see a later peak relative to other countries (for example, India), then they will automatically have a smaller estimate of excess death because of right censoring of the data. How is this accounted for?\n\n3) It would be good to add some discussion on how your excess mortality estimates compare to the many estimates available in the literature.\n\n4) Figure 2 needs x axis labels.\n\n5) I think a lot of the results are presented in a comparative framework but it's very difficult to compare excess mortality rates across different populations. Perhaps reframing some of this as a way to assess a country's own burden compared to its baseline rather than comparing across countries might be helpful.\n\n6) Some discussion on why Peru seems to be such an outlier would be helpful (i.e. Figure 3).\n\n7) Section 2.2 describes some adjustments (for e.g. for Ireland and Sweden). Some sensitivity analyses would be helpful. For eg. the redistribution of deaths for Sweden ignores seasonality. What is the consequence of that assumption?\n",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "28dcfded-d657-4f50-9c96-25aae46126a1",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C1",
+      "claim": "The World Mortality Dataset collected weekly, monthly, or quarterly all-cause mortality data from 103 countries and territories.",
+      "claim_type": "EXPLICIT",
+      "source": "To fill this gap, we have collected weekly, monthly, or quarterly all-cause mortality data from 103 countries and territories, openly available as the regularly updated World Mortality Dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number and types of countries included in the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "1565354b-8513-48e7-829b-151300db31be",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C2",
+      "claim": "In Peru, Ecuador, Bolivia, and Mexico, excess mortality was above 50% of the expected annual mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that in several worst-affected countries (Peru, Ecuador, Bolivia, Mexico) the excess mortality was above 50% of the expected annual mortality (Peru, Ecuador, Bolivia, Mexico) or above 400 excess deaths per 100,000 population (Peru, Bulgaria, North Macedonia, Serbia).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents computed excess mortality percentages for these countries based on the dataset analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "21787073-dd20-460d-a448-8d35e48af9a3",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C3",
+      "claim": "Peru, Bulgaria, North Macedonia, and Serbia had above 400 excess deaths per 100,000 population.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that in several worst-affected countries (Peru, Ecuador, Bolivia, Mexico) the excess mortality was above 50% of the expected annual mortality (Peru, Ecuador, Bolivia, Mexico) or above 400 excess deaths per 100,000 population (Peru, Bulgaria, North Macedonia, Serbia).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents computed excess mortality rates per 100,000 population for these countries.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "fe827db3-9db5-47b7-9172-3480f2aac4b8",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C4",
+      "claim": "In Australia and New Zealand, mortality during the pandemic was below the usual level, presumably due to social distancing measures decreasing the non-COVID infectious mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, in several other countries (e.g. Australia and New Zealand) mortality during the pandemic was below the usual level, presumably due to social distancing measures decreasing the non-COVID infectious mortality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents data showing negative excess mortality and provides a speculative explanation based on social distancing effects.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "4fe2af07-835e-4184-a7bd-ae32b54aad4e",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C5",
+      "claim": "Some countries have been substantially underreporting their COVID-19 deaths, including Nicaragua, Russia, and Uzbekistan.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found that while many countries have been reporting the COVID-19 deaths very accurately, some countries have been substantially underreporting their COVID-19 deaths (e.g. Nicaragua, Russia, Uzbekistan), by up to two orders of magnitude (Tajikistan).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript compares excess mortality to official COVID-19 death counts to identify underreporting.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "a2acf124-9f28-4f5f-8a26-3a52f0e7b3c2",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C6",
+      "claim": "Tajikistan underreported COVID-19 deaths by up to two orders of magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found that while many countries have been reporting the COVID-19 deaths very accurately, some countries have been substantially underreporting their COVID-19 deaths (e.g. Nicaragua, Russia, Uzbekistan), by up to two orders of magnitude (Tajikistan).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript calculates an undercount ratio of 100 for Tajikistan based on excess mortality versus official counts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "e360429e-cd9e-4107-9a76-2af570e8476c",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C7",
+      "claim": "Excess mortality is defined as the increase in all-cause mortality relative to the expected mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "Excess mortality, defined as the increase in all-cause mortality relative to the expected mortality, is widely considered as a more objective indicator of the COVID-19 death toll.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a standard definition used in epidemiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "5636c069-89bb-4b35-8c2f-8d75c248a519",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C8",
+      "claim": "Excess mortality is widely considered as a more objective indicator of the COVID-19 death toll than reported cases and deaths.",
+      "claim_type": "EXPLICIT",
+      "source": "Excess mortality, defined as the increase in all-cause mortality relative to the expected mortality, is widely considered as a more objective indicator of the COVID-19 death toll.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites established scientific consensus on the use of excess mortality.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "969c942f-067e-462f-bf90-2b55a1fdd7ae",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C9",
+      "claim": "Reported numbers of COVID-19 cases and deaths can be strongly affected by testing capacity and reporting policy.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the impact of the COVID-19 pandemic between countries or across time is difficult because the reported numbers of cases and deaths can be strongly affected by testing capacity and reporting policy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript draws on established knowledge about limitations of COVID-19 reporting.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "ec379623-812e-4388-b04f-e62e6a554962",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C10",
+      "claim": "Excess mortality has been used to estimate the death toll of pandemics from the Great Plague of London in 1665 to modern influenza pandemics.",
+      "claim_type": "EXPLICIT",
+      "source": "Excess mortality, defined as the increase of the all-cause mortality over the mortality expected based on historic trends, has long been used to estimate the death toll of pandemics and other extreme events\u2014from the Great Plague of London in 1665 (as described in Boka and Wainer, 2020), to the influenza epidemic in London in 1875 (Farr, 1885; Langmuir, 1976), the XX\u2013XXI century influenza pandemics of 1918, 1957, 1968, 2009 (Murray et al., 2006; Viboud et al., 2005; Viboud et al., 2016; Simonsen et al., 2013) as well as seasonal influenza epidemics (Housworth and Langmuir, 1974), and more recently for example Hurricane Maria in Puerto-Rico in 2016 (Milken Institute, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites historical uses of excess mortality methodology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "d0289e7c-f49e-43cf-8fdd-9affa825743a",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C11",
+      "claim": "EuroStat began collecting total weekly deaths across European countries in April 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "In April 2020, EuroStat (http://ec.europa.eu/eurostat) began collecting total weekly deaths across European countries, 'in order to support the policy and research efforts related to COVID-19'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes when EuroStat started their data collection effort.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "d6dea839-2473-406f-b06c-d48f349c88ca",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C12",
+      "claim": "The EuroStat dataset covers 36 European countries at the time of writing.",
+      "claim_type": "EXPLICIT",
+      "source": "At the time of writing, this dataset covers 36 European countries and also contains sub-national (NUTS1\u20133 regions) data as well as data disaggregated by age groups and by sex for some countries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the coverage of the EuroStat dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "cdb62f2b-0e3a-4ec5-bd78-c7aa91e460a6",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C13",
+      "claim": "The Human Mortality Database started compiling the Short Term Mortality Fluctuations (STMF) dataset in May 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "In May 2020, the Human Mortality Database (http://mortality.org), a joint effort by the University of California, Berkeley, and Max Planck Institute for Demographic Research (Barbieri et al., 2015), started compiling the Short Term Mortality Fluctuations (STMF) dataset (STMF, 2021; Islam et al., 2021; N\u00e9meth et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes when the STMF dataset was initiated.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "59214312-48a4-41b4-9b34-85c0355e717b",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C14",
+      "claim": "The STMF dataset consists of weekly data disaggregated by five age groups and by sex, and contains 35 countries with 2020 data.",
+      "claim_type": "EXPLICIT",
+      "source": "This dataset consists of weekly data, disaggregated by five age groups and by sex, and currently contains 35 countries with 2020 data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the structure and coverage of the STMF dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "c7561b1b-de69-408a-8747-81047c8ab4f7",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C15",
+      "claim": "The World Mortality Dataset includes 50 countries with weekly data, 51 countries with monthly data, and two countries with quarterly data.",
+      "claim_type": "EXPLICIT",
+      "source": "This includes 50 countries with weekly data, 51 countries with monthly data, and two countries with quarterly data (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the breakdown of data types in the dataset and references Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "5d7e270d-d438-4bf6-8090-519ff649466f",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C16",
+      "claim": "The World Mortality Dataset is openly available at https://github.com/akarlinsky/world_mortality and is updated almost daily.",
+      "claim_type": "EXPLICIT",
+      "source": "The dataset is openly available at https://github.com/akarlinsky/world_mortality and is updated almost daily.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides the location and update frequency of the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "c5f7f566-b8f0-47a7-b395-8580c9bf0d3a",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C17",
+      "claim": "Statistically significant positive excess mortality was found in 69 out of 103 countries.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis (updated almost daily at https://github.com/dkobak/excess-mortality) showed statistically significant positive excess mortality in 69 out of 103 countries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the results of statistical analysis of the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "66dd67ec-a744-4f03-8aec-7c75a16b9d94",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C18",
+      "claim": "The largest excess mortality in absolute numbers was observed in the United States (640,000 by June 6, 2021), Brazil (500,000 by May 31, 2021), Russia (500,000 by April 30, 2021), and Mexico (470,000 by May 23, 2021).",
+      "claim_type": "EXPLICIT",
+      "source": "In terms of the absolute numbers, the largest excess mortality in our dataset was observed in the United States (640,000 by June 6, 2021; all reported numbers here and below have been rounded to two significant digits), Brazil (500,000 by May 31, 2021), Russia (500,000 by April 30, 2021), and Mexico (470,000 by May 23, 2021) (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents computed excess mortality totals for these countries and references Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "d69e77e0-f2a1-4526-abd3-7bb1be88de31",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C22",
+      "claim": "Australia had \u22123,700 excess deaths.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Australia had \u22123,700 excess deaths, Uruguay had \u22122,200 deaths, and New Zealand had \u22121,900 deaths.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents computed negative excess mortality values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "9fa39353-9945-4c1e-a9d8-d7475c260e65",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C23",
+      "claim": "Uruguay had \u22122,200 excess deaths.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Australia had \u22123,700 excess deaths, Uruguay had \u22122,200 deaths, and New Zealand had \u22121,900 deaths.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents computed negative excess mortality values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "ee3e7b80-895d-48e9-9f39-198667989a54",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C24",
+      "claim": "New Zealand had \u22121,900 excess deaths.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Australia had \u22123,700 excess deaths, Uruguay had \u22122,200 deaths, and New Zealand had \u22121,900 deaths.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents computed negative excess mortality values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "f43111b4-a0cb-46c4-b2f8-e2d4418ff888",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C25",
+      "claim": "In Australia, Uruguay, and New Zealand, the decrease in mortality happened during the southern hemisphere winter season.",
+      "claim_type": "EXPLICIT",
+      "source": "In these three cases, the decrease in mortality happened during the southern hemisphere winter season (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript observes seasonal patterns in the data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "5060ab5f-0b85-413f-a55b-c51dfefcc263",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C26",
+      "claim": "Norway had \u22121,500 excess deaths, with most of this decrease happening during the 2020/21 winter season.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, Norway had \u22121,500 excess deaths, with most of this decrease happening during the 2020/21 winter season.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents computed negative excess mortality and observes seasonal patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "e0f965bc-ed6b-4fcf-b70d-9430dba05cd3",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C27",
+      "claim": "The highest excess mortality per 100,000 inhabitants was observed in Peru (590).",
+      "claim_type": "EXPLICIT",
+      "source": "The highest excess mortality per 100,000 inhabitants was observed in Peru (590), followed by some Eastern European and then Latin American countries: Bulgaria (460), North Macedonia (420), Serbia (400), Mexico (360), Ecuador (350), Lithuania (350), Russia (340), etc. (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents normalized excess mortality rates and references Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "da1e1f21-b1e2-4f68-ac3b-7e5e4de4d6c7",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C28",
+      "claim": "Bulgaria had 460 excess deaths per 100,000 inhabitants.",
+      "claim_type": "EXPLICIT",
+      "source": "The highest excess mortality per 100,000 inhabitants was observed in Peru (590), followed by some Eastern European and then Latin American countries: Bulgaria (460), North Macedonia (420), Serbia (400), Mexico (360), Ecuador (350), Lithuania (350), Russia (340), etc. (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents normalized excess mortality rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "c263878d-49da-40bc-b3a7-8f2bcd3d5d0c",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C29",
+      "claim": "The infection-fatality rate (IFR) of COVID-19 is strongly age-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "The infection-fatality rate (IFR) of COVID-19 is strongly age-dependent (Levin et al., 2020; O'Driscoll et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published research on COVID-19 IFR.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "e3c2e1ee-c450-4de6-af84-1782ebadd8bc",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C30",
+      "claim": "The relative increase in mortality (P-score) was highest in Peru (153%), Ecuador (80%), Bolivia (68%), and Mexico (61%).",
+      "claim_type": "EXPLICIT",
+      "source": "This relative increase, also known as a P-score (Aron and Muellbauer, 2020), was by far the highest in Latin America: Peru (153%), Ecuador (80%), Bolivia (68%), and Mexico (61%) (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents computed P-scores and references Figure 3.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "b1cc9a8f-a9e5-43f1-aa1d-60e56d8110e2",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C31",
+      "claim": "Parts of Peru showed the highest measured seroprevalence level in the world.",
+      "claim_type": "EXPLICIT",
+      "source": "That the highest relative mortality increase was observed in Peru, is in agreement with some parts of Peru showing the highest measured seroprevalence level in the world (\u00c1lvarez-Antonio et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published seroprevalence data to support the excess mortality findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "6454ec37-4189-470c-9690-ff9411d95ba3",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C32",
+      "claim": "France had an undercount ratio of 0.7.",
+      "claim_type": "EXPLICIT",
+      "source": "Some countries had ratio below 1, for example 0.7 in France and 0.6 in Belgium, where reporting of COVID deaths is known to be very accurate (Sierra et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript calculates undercount ratios from the data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "66f386bd-838c-4e28-acc2-39755ea94a85",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C33",
+      "claim": "Belgium had an undercount ratio of 0.6.",
+      "claim_type": "EXPLICIT",
+      "source": "Some countries had ratio below 1, for example 0.7 in France and 0.6 in Belgium, where reporting of COVID deaths is known to be very accurate (Sierra et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript calculates undercount ratios from the data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "1b7d3078-def3-43b9-a01e-a679bc301983",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C38",
+      "claim": "The undercount ratio in Italy, Spain, Netherlands, and United Kingdom was approximately 1.5 during the first wave but decreased to approximately 1.0 during the second wave.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the undercount ratio in Italy, Spain, Netherlands, and United Kingdom was \u223c1.5 during the first wave (Figure 4), but decreased to \u223c1.0 during the second wave.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript observes temporal changes in undercount ratios and references Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "934a94e9-51d6-47ba-871f-b7a7a7552e77",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C39",
+      "claim": "Several countries showed very accurate reporting of COVID-19 deaths with the undercount ratio being close to 1.0 from the beginning of the pandemic, including Austria, Belgium, France, Germany, Slovenia, and Sweden.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, several countries showed very accurate reporting of the COVID-19 deaths with the undercount ratio being close to 1.0 (Sierra et al., 2020) from the beginning of the pandemic and up until the middle of the second wave (e.g. Austria, Belgium, France, Germany, Slovenia, Sweden; Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript analyzes undercount ratios over time and references Figure 4.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "d34e01d5-7029-4b4f-bb4b-3ce987948dab",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C40",
+      "claim": "Starting from December 2020 and up until March\u2013April 2021, excess deaths were underestimating the COVID-19 deaths in Austria, Belgium, France, Germany, Slovenia, and Sweden.",
+      "claim_type": "EXPLICIT",
+      "source": "However, starting from December 2020 and up until March\u2013April 2021 the excess deaths were underestimating the COVID-19 deaths in all these countries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript observes temporal patterns in the relationship between excess deaths and reported COVID deaths.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "e63a9c38-b592-421b-807b-7eedad33f863",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C41",
+      "claim": "The difference between officially reported COVID-19 deaths and excess deaths from week 40 of 2020 until week 15 of 2021, as a fraction of baseline annual deaths, was in the 2.3\u20135.9% range for Austria, Belgium, France, Germany, Slovenia, and Sweden.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference (computed starting from week 40 of 2020 and until week 15 of 2021), as a fraction of baseline annual deaths, was in the 2.3\u20135.9% range (Austria: 2.3%, Belgium: 5.9%, France: 4.3%, Germany: 3.9%, Slovenia: 3.5%, Sweden: 5.5%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript calculates the difference between reported COVID deaths and excess deaths for specific countries and time periods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "94b3dea7-a056-40ec-873e-0638b4fda86b",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C42",
+      "claim": "The 2.3\u20135.9% difference between reported COVID deaths and excess deaths is in good agreement with the total negative excess deaths observed in Australia, New Zealand, Uruguay, and Norway.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in good agreement with the total negative excess deaths observed in Australia, New Zealand, Uruguay, and Norway (\u22122.5%, \u22125.4%, \u22126.4%, \u22123.7%) and coming mainly from the Southern and Northern hemisphere winter months respectively (Kung et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript compares calculated differences across different countries to support an inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "4f3beb35-0664-4f06-aae2-cce68270246c",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C43",
+      "claim": "The highest undercount ratios were found in Tajikistan (100), Nicaragua (51), Uzbekistan (31), Belarus (14), and Egypt (13).",
+      "claim_type": "EXPLICIT",
+      "source": "We found the highest undercount ratios in Tajikistan (100), Nicaragua (51), Uzbekistan (31), Belarus (14), and Egypt (13) (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript calculates undercount ratios and references Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "2e47b193-dd13-4bbd-bf71-5eb83480ce1c",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C44",
+      "claim": "Large undercount ratios strongly suggest purposeful misdiagnosing or underreporting of COVID-19 deaths.",
+      "claim_type": "EXPLICIT",
+      "source": "Such large undercount ratios strongly suggest purposeful misdiagnosing or underreporting of COVID-19 deaths, as argued by Kobak, 2021a for the case of Russia (undercount ratio 4.5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers intentional underreporting from large undercount ratios and cites supporting analysis.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "ff8dd686-53b4-45e8-982f-347193e8763c",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C45",
+      "claim": "83 of the countries in the World Mortality Dataset have a death registration coverage rate of 90% and above according to the United Nations Demographic Yearbook.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the United Nations Demographic Yearbook (UNSD, 2019), 83 of the countries in our dataset have a death registration coverage rate of 90% and above.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites UN data on death registration coverage.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "194590dc-ada6-4c59-b29d-542044b9bd0d",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C46",
+      "claim": "In the remaining 20 countries in the dataset, death registration coverage is either estimated to be below 90% or no estimate exists at all.",
+      "claim_type": "EXPLICIT",
+      "source": "In the remaining 20 countries, coverage is either estimated to be below 90% (e.g. Peru, Ecuador, Bolivia) or no estimate exists at all (Kosovo, Taiwan, Transnistria).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports limitations in death registration coverage for some countries.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "e59b2695-ff34-4958-afd5-6b83cba4bdbc",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C47",
+      "claim": "The early pre-outbreak 2020 data for all countries in the dataset matched the baseline obtained from the historic 2015\u20132019 data.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the early pre-outbreak 2020 data for all countries in our dataset matched the baseline obtained from the historic 2015\u20132019 data, indicating that the data are self-consistent and the excess mortality estimates are not inflated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript validates the consistency of the data by comparing early 2020 to historical baselines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "179447b3-b6e5-4c5c-8cc2-d052ad4a1b50",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C48",
+      "claim": "Countries that implemented stringent lockdown and social distancing measures in the absence of COVID-19 community spread, such as Australia, New Zealand, and Uruguay, showed a clear winter-season decrease in all-cause mortality, likely due to reduced influenza transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, countries that implemented stringent lockdown and social distancing measures in the absence of COVID-19 community spread, such as Australia, New Zealand, and Uruguay, showed a clear winter-season decrease in all-cause mortality, likely due to reduced influenza transmission (Kung et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript observes patterns in the data and provides a speculative explanation supported by citation.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "ca2c730b-3680-4e52-911d-5a0fd57df60a",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C49",
+      "claim": "Influenza suppression alone can lead to a decrease of annual mortality by 3\u20136%.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, using these three countries as well as some of the European data, we estimated that the influenza suppression alone can lead to a decrease of annual mortality by 3\u20136%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript estimates the effect of influenza suppression based on data from multiple countries.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "5ddc45d3-0d27-4f8d-9aa4-925002c0bd64",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C50",
+      "claim": "In South Africa, lockdowns have noticeably decreased toddler mortality (0\u20134 years).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in South Africa, lockdowns have noticeably decreased toddler mortality (0\u20134 years) (Bradshaw et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published research on the effect of lockdowns on toddler mortality.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "fe91b1fb-f01b-446c-a389-4911f8047139",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C51",
+      "claim": "Traffic accident fatalities have decreased in the European Union and the Western Balkans.",
+      "claim_type": "EXPLICIT",
+      "source": "Traffic accident fatalities have decreased in the European Union and the Western Balkans (European Commission, 2021; Transport Community, 2021) but have increased in the United States (National Safety Council, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites reports on traffic accident trends.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "63d31146-5458-4d4b-8aec-f41f45aeccb4",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C52",
+      "claim": "Traffic accident fatalities have increased in the United States.",
+      "claim_type": "EXPLICIT",
+      "source": "Traffic accident fatalities have decreased in the European Union and the Western Balkans (European Commission, 2021; Transport Community, 2021) but have increased in the United States (National Safety Council, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites reports on traffic accident trends.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "2e052446-c6c1-4896-9290-391fcbde22c8",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C53",
+      "claim": "Homicides have increased in the United States and Germany.",
+      "claim_type": "EXPLICIT",
+      "source": "Homicides have increased in the United States (Arthur and Asher, 2020; Faust et al., 2021) and Germany (Federal Criminal Police Office, 2021) but have decreased in Peru (Calderon-Anyosa and Kaufman, 2021), South Africa (Bradshaw et al., 2021), and France (Ministry of the Interior, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites reports on homicide trends.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "685f70b2-27ad-4062-8fea-5a105aca3fed",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C54",
+      "claim": "Homicides have decreased in Peru, South Africa, and France.",
+      "claim_type": "EXPLICIT",
+      "source": "Homicides have increased in the United States (Arthur and Asher, 2020; Faust et al., 2021) and Germany (Federal Criminal Police Office, 2021) but have decreased in Peru (Calderon-Anyosa and Kaufman, 2021), South Africa (Bradshaw et al., 2021), and France (Ministry of the Interior, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites reports on homicide trends.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "cc94b190-8b4b-40b9-9fdb-5869448a7734",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C55",
+      "claim": "Suicides have first decreased and then increased in Japan, particularly in females.",
+      "claim_type": "EXPLICIT",
+      "source": "Suicides have first decreased and then increased in Japan, particularly in females (Kurita et al., 2021; Tanaka and Okamoto, 2021; Black and Kutcher, 2021), have decreased in the United States (Ahmad and Anderson, 2021; Faust et al., 2021), and in a study of 21 countries were found to have decreased in half of them and remained unchanged in the rest (Pirkis et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites studies on suicide trends.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "91efa4f6-567f-4fd5-a8bd-a3cee84d6dfe",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C56",
+      "claim": "Suicides have decreased in the United States.",
+      "claim_type": "EXPLICIT",
+      "source": "Suicides have first decreased and then increased in Japan, particularly in females (Kurita et al., 2021; Tanaka and Okamoto, 2021; Black and Kutcher, 2021), have decreased in the United States (Ahmad and Anderson, 2021; Faust et al., 2021), and in a study of 21 countries were found to have decreased in half of them and remained unchanged in the rest (Pirkis et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites studies on suicide trends.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "7eaaa8f4-b0a1-4552-8e75-2cdde4f785f4",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C57",
+      "claim": "In a study of 21 countries, suicides were found to have decreased in half of them and remained unchanged in the rest.",
+      "claim_type": "EXPLICIT",
+      "source": "Suicides have first decreased and then increased in Japan, particularly in females (Kurita et al., 2021; Tanaka and Okamoto, 2021; Black and Kutcher, 2021), have decreased in the United States (Ahmad and Anderson, 2021; Faust et al., 2021), and in a study of 21 countries were found to have decreased in half of them and remained unchanged in the rest (Pirkis et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a multi-country study on suicide trends.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "027d4ea2-90e3-43c3-bfb8-bd2e41c62e67",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C58",
+      "claim": "In the United States, deaths from drug overdoses and unintentional injuries have increased.",
+      "claim_type": "EXPLICIT",
+      "source": "In the United States, deaths from drug overdoses and unintentional injuries have increased (Faust et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a study on drug overdose and unintentional injury trends.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "09d84212-2428-490f-abec-977fea4bb086",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C59",
+      "claim": "In all cited studies, the combined effect of all changes in the frequency of unnatural deaths did not exceed approximately 1% of the baseline annual mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "However, importantly, in all cited studies the combined effect of all changes in the frequency of unnatural changes did not exceed \u223c1% of the baseline annual mortality, meaning that factor (D) plays only a minor role in excess mortality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript synthesizes findings from multiple cited studies to draw a conclusion.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "20deb8dd-6bb1-4c1a-b9fb-baf49f469e43",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C60",
+      "claim": "Lockdown and social distancing measures on their own decrease the death rate, at least in short-term.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the evidence suggests that the contribution of factor (C) is negative and contribution of factor (D) is small in comparison, so we believe that lockdown and social distancing measures on their own decrease \u2014 and not increase \u2014 the death rate, at least in short-term.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript draws an inference from the presented evidence about the effect of lockdowns.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "b80c2ecf-bc01-4c5b-933f-344474ca1f08",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C61",
+      "claim": "Whenever COVID deaths are counted perfectly, they should exceed the excess mortality, leading to undercount ratio below 1.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, we speculate that whenever COVID deaths are counted perfectly, they should exceed the excess mortality, leading to undercount ratio below 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents a speculative hypothesis based on the analysis.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "55136558-3232-48c3-ac94-9716a426f64e",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C62",
+      "claim": "Belgium, France, and Germany had undercount ratios of 0.6, 0.7, and 0.4, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "This is indeed what we observed in several countries with strong COVID-19 outbreaks but accurate accounting of COVID deaths, for example Belgium, France, and Germany (undercount ratios 0.6, 0.7, and 0.4, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents calculated undercount ratios to support the speculation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "5c1a62f7-04b3-4179-ab7b-18beead522dd",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C63",
+      "claim": "Summing up the excess mortality estimates across all countries in the dataset gives 4.0 million excess deaths.",
+      "claim_type": "EXPLICIT",
+      "source": "Summing up the excess mortality estimates across all countries in our dataset gives 4.0 million excess deaths.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript aggregates excess mortality estimates across all countries.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "0497904c-faf0-4776-bcd2-cfc8ffb0e4e7",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C64",
+      "claim": "Summing up the official COVID-19 death counts across all countries in the dataset gives 2.9 million deaths, corresponding to a global undercount ratio of 1.4.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, summing up the official COVID-19 death counts gives 2.9 million deaths, corresponding to the global undercount ratio of 1.4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript aggregates official death counts and calculates a global undercount ratio.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "d910e257-5d69-4bd3-9feb-b659df6cc315",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C65",
+      "claim": "The Economist estimated 7\u201313 million excess deaths worldwide in May 2021, which was 2\u20134 times higher than the world's official COVID-19 death count at the time (3.5 million).",
+      "claim_type": "EXPLICIT",
+      "source": "Using a statistical model to predict the excess mortality in the rest of the world based on the existing data from our dataset, The Economist in May 2021 estimated 7\u201313 million excess deaths worldwide (The Economist, 2021), which was 2\u20134 times higher than the world's official COVID-19 death count at the time (3.5 million).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites The Economist's modeling estimates.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "e3d41907-e902-4540-81d4-32673d024d62",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C66",
+      "claim": "The dataset has been incorporated into the excess mortality trackers by Our World in Data, The Economist, and the Financial Times.",
+      "claim_type": "EXPLICIT",
+      "source": "After the initial release of our manuscript, the dataset has been incorporated into the excess mortality trackers by Our World in Data (Giattino et al., 2020), The Economist, and the Financial Times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the adoption of the dataset by major organizations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "25caeaf3-1d9a-4763-8a2d-224eac6dc72c",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C67",
+      "claim": "The World Mortality Dataset adds 59 additional countries beyond those covered by EuroStat and STMF.",
+      "claim_type": "EXPLICIT",
+      "source": "Our dataset builds upon the EuroStat and the STMF datasets, adding 59 additional countries \u2014 many more than any previous media or academic effort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the contribution of the dataset relative to existing datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "fbbab1c5-25bd-42c3-b4f4-6df9e00b375c",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C68",
+      "claim": "EuroStat and STMF together cover 44 countries.",
+      "claim_type": "EXPLICIT",
+      "source": "Both datasets are regularly updated and have considerable overlap, covering together 44 countries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the combined coverage of existing datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "1187d2df-abe6-4400-ac43-7c5b4bdc3281",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C69",
+      "claim": "The 2020\u20132021 data are often preliminary and subject to backward revisions.",
+      "claim_type": "EXPLICIT",
+      "source": "An important caveat is that recent (2020 and 2021) data are often preliminary and subject to backwards revisions, which we incorporate into our dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes a limitation of the data.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "01100edc-26ac-4e84-9a0f-0e8248966044",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C70",
+      "claim": "The baseline mortality for 2020 was predicted using historical data from 2015 to 2019, accounting for linear trend and seasonal variation.",
+      "claim_type": "EXPLICIT",
+      "source": "For each country, we predicted the 'baseline' mortality in 2020 based on the 2015\u20132019 data (accounting for linear trend and seasonal variation; see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the methodology used for baseline estimation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "ae6ee326-e9ad-4b9c-bead-cf7ce537d2dd",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C71",
+      "claim": "Excess mortality was obtained as the difference between the actual 2020\u20132021 all-cause mortality and the baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "We then obtained excess mortality as the difference between the actual 2020\u20132021 all-cause mortality and our baseline (Figure 2, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the calculation method for excess mortality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "7c9564e7-225e-4e9c-b528-ee67526b74de",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C72",
+      "claim": "The total excess mortality was computed from the beginning of the COVID-19 pandemic (from March 2020).",
+      "claim_type": "EXPLICIT",
+      "source": "For each country, we computed the total excess mortality from the beginning of the COVID-19 pandemic (from March 2020) (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the time period used for total excess mortality calculation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "fad572ee-9c40-48b1-bafd-e111143750f6",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C73",
+      "claim": "4000 deaths were subtracted from the excess mortality estimates for Armenia and Azerbaijan to account for the 2020 Nagorno-Karabakh war.",
+      "claim_type": "EXPLICIT",
+      "source": "We subtracted 4000 from the excess mortality estimates for Armenia and Azerbaijan to account for the 2020 Nagorno-Karabakh war.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes an adjustment made to the data to account for war casualties.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "fb0a73fe-d6c9-433f-b571-0fd6a684ce85",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C74",
+      "claim": "Weeks 32\u201334 were excluded from the excess mortality calculation in Belgium, Netherlands, France, Luxembourg, and Germany to account for an August 2020 heat wave.",
+      "claim_type": "EXPLICIT",
+      "source": "Another correction was done for Belgium, Netherlands, France, Luxembourg, and Germany, where our data show a peak of excess deaths in August 2020, not associated with COVID-19 (see below and Figure 4) and likely corresponding to a heat wave (Fouillet et al., 2006; Fouillet et al., 2008; Flynn et al., 2005). We excluded weeks 32\u201334 from the excess mortality calculation in these five countries.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes an adjustment made to account for a non-COVID event.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "fbd73220-b811-450a-9a7b-98801164fbaf",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C75",
+      "claim": "The data were obtained from the websites of National Statistics Offices.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, we obtained the data from the websites of National Statistics Offices (NSOs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the data collection methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "77752c22-36e9-465f-bdfc-59de837dd0dd",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C76",
+      "claim": "If data could not be located on NSO websites, the authors contacted the NSO for guidance.",
+      "claim_type": "EXPLICIT",
+      "source": "If we were unable to locate the data ourselves, we contacted the NSO for guidance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the data collection methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "841e939c-4133-4aab-9cf6-f9d6c4bcd4ca",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C77",
+      "claim": "The World Mortality Dataset includes data from 2015 onward.",
+      "claim_type": "EXPLICIT",
+      "source": "We collected the all-cause mortality data from 103 countries and territories from 2015 onward into the openly available World Mortality Dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the temporal scope of the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "916c7490-9648-4de9-9773-55118da5b495",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "claim_id": "C78",
+      "claim": "The authors are committed to keep maintaining the World Mortality Dataset for the entire duration of the COVID-19 pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "We are committed to keep maintaining this dataset for the entire duration of the COVID-19 pandemic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the authors' commitment to ongoing data maintenance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "894127d3-264e-4665-a227-0a6cf87cc5f6",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors created the World Mortality Dataset, collecting all-cause mortality data from 103 countries and territories (50 weekly, 51 monthly, 2 quarterly), adding 59 countries beyond existing EuroStat and STMF datasets. The dataset is openly available on GitHub and updated almost daily.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C15, C16, C67, C68, C75-C78 collectively establish the creation, scope, and maintenance of the dataset. The data collection methodology is described (C75-C76), the temporal scope is specified (C77), and the commitment to ongoing maintenance is stated (C78). The dataset's contribution relative to existing resources is quantified (C67-C68).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "05b02d7b-7643-4592-ab79-b728a52288cd",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Analysis of the dataset revealed statistically significant positive excess mortality in 69 of 103 countries, with the largest absolute numbers in the United States (640,000), Brazil (500,000), Russia (500,000), and Mexico (470,000). Several countries showed negative excess mortality, including Australia (-3,700), Uruguay (-2,200), and New Zealand (-1,900), with decreases occurring during winter seasons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C18 and C22-C26 present the primary findings from the excess mortality analysis. The statistical significance is established (C17), absolute numbers are provided with dates (C18), and negative excess mortality is documented with seasonal patterns (C22-C26). The methodology for calculating excess mortality and statistical significance is described in the methods section (C70-C72).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "db2c6a29-4d70-4d2f-9ace-2877b272a3ae",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "When normalized by population, Peru showed the highest excess mortality per 100,000 inhabitants (590), followed by Bulgaria (460), North Macedonia (420), and Serbia (400). When normalized by baseline annual mortality (P-score), Peru had the highest relative increase (153%), followed by Ecuador (80%), Bolivia (68%), and Mexico (61%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C27-C28, and C30 present normalized excess mortality metrics. The per-capita rates (C27-C28) and P-scores (C30) are calculated from the raw data using documented methodology. The P-score definition is cited (C30), and the values are presented with appropriate context regarding age structure differences between countries.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "c6380f73-5eec-42f6-b616-afafacedb3f6",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors identified substantial underreporting of COVID-19 deaths in multiple countries by comparing excess mortality to official COVID-19 death counts. The highest undercount ratios were found in Tajikistan (100), Nicaragua (51), Uzbekistan (31), Belarus (14), and Egypt (13). Some countries with accurate reporting showed undercount ratios below 1 (Belgium 0.6, France 0.7, Germany 0.4). The global undercount ratio across all countries in the dataset was 1.4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C5-C6, C32-C33, C43-C44, C62, and C64 establish the undercount analysis. The methodology is straightforward (ratio of excess deaths to official COVID deaths), and the results are presented with appropriate caveats. The interpretation that large undercount ratios suggest intentional underreporting (C44) is supported by citation and is presented as inference rather than definitive proof. The finding of undercount ratios below 1 in countries with accurate reporting is explained by influenza suppression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "b5b81d3c-86ca-4df1-b296-6f6e850ad778",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Temporal analysis revealed that undercount ratios changed over time in several countries. In Italy, Spain, Netherlands, and United Kingdom, the ratio decreased from ~1.5 during the first wave to ~1.0 during the second wave. In Austria, Belgium, France, Germany, Slovenia, and Sweden, excess deaths underestimated COVID-19 deaths by 2.3-5.9% of baseline annual mortality during winter 2020/21, consistent with influenza suppression observed in countries without COVID outbreaks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C42 document temporal patterns in undercount ratios with supporting data from Figure 4. The comparison between European winter data and Southern Hemisphere countries (C42) provides convergent evidence for the influenza suppression hypothesis. The specific percentages are calculated from the data and are internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "ccd5cd3e-12dc-494a-9cf4-9b17d476d55b",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors conclude that lockdown and social distancing measures decreased mortality in the short-term, primarily through influenza suppression. Countries implementing stringent measures without COVID community spread (Australia, New Zealand, Uruguay) showed winter-season mortality decreases. The authors estimate influenza suppression alone can decrease annual mortality by 3-6%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C48-C49, and C60 present the inference about lockdown effects. The evidence is based on observed negative excess mortality in specific countries with documented seasonal patterns (C25-C26), convergent evidence from multiple countries (C41-C42), and synthesis of cited literature on changes in other causes of death (C50-C59). The conclusion is appropriately qualified as speculative (C4) and limited to short-term effects (C60).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "cbbddc1e-b600-4a80-a93e-7683d5485e00",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors reviewed literature on changes in unnatural causes of death during the pandemic, finding country-specific patterns for traffic accidents, homicides, suicides, and drug overdoses. However, the combined effect of all changes in unnatural deaths did not exceed ~1% of baseline annual mortality, indicating these factors play only a minor role in excess mortality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C59 synthesize findings from multiple cited studies. The evidence is entirely based on citations to published reports and studies, which is appropriate for this type of literature review. The conclusion (C59) that these factors are minor contributors to excess mortality is a reasonable inference from the cited evidence and supports the main argument that excess mortality primarily reflects COVID-19 deaths.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "a82ba71b-fb92-42f4-8dc9-96d9f624e86c",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors establish the conceptual foundation that excess mortality is widely considered a more objective indicator of pandemic death toll than reported cases and deaths, which can be affected by testing capacity and reporting policy. Excess mortality has been used historically to estimate death tolls from pandemics dating back to the Great Plague of London in 1665.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C10 establish the rationale for using excess mortality. These are well-established concepts in epidemiology supported by appropriate citations (C8, C10). The definition (C7) is standard, and the limitations of reported COVID-19 data (C9) are widely recognized. This provides essential context for the study but represents established knowledge rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "ce5793cd-74d1-4dd6-bb57-91e418e777cc",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors describe existing mortality data collection efforts: EuroStat began collecting weekly deaths across European countries in April 2020 (covering 36 countries), and the Human Mortality Database started the STMF dataset in May 2020 (containing 35 countries with weekly data disaggregated by age and sex).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C14 accurately describe existing data collection efforts based on citations and publicly available information. These claims provide context for the contribution of the World Mortality Dataset but do not represent findings from the current study. The information is factual and verifiable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "09483ec8-59fd-461c-9366-629c9a9f320a",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors note that COVID-19 infection-fatality rate is strongly age-dependent, and that Peru's highest relative mortality increase is consistent with parts of Peru showing the highest measured seroprevalence levels in the world.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29 and C31 provide contextual information supported by citations. C29 cites published research on age-dependent IFR, and C31 cites seroprevalence data that corroborates the excess mortality findings for Peru. These claims support the interpretation of the main results but are not primary findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "89315b32-fbae-4161-b311-dd477e83fb0e",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "According to UN data, 83 of the 103 countries in the dataset have death registration coverage \u226590%, while 20 countries have coverage <90% or no estimate. The early pre-outbreak 2020 data for all countries matched the baseline from 2015-2019 data, indicating data self-consistency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47 address data quality concerns. The death registration coverage information (C45-C46) is cited from UN sources and transparently reported. The validation that early 2020 data match historical baselines (C47) is an important quality check that supports the reliability of the excess mortality estimates, even for countries with incomplete coverage.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "bca48ecf-e09f-4a0b-8f5e-9f36b33d9e6a",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "In South Africa, lockdowns noticeably decreased toddler mortality (0-4 years).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C50 is supported by citation to published research (Bradshaw et al., 2021). This is a specific example used to illustrate broader points about non-COVID mortality changes during lockdowns. The claim is appropriately attributed to the cited source.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "277f7fb4-4552-4d54-8405-69c6dea7a6f1",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors speculate that when COVID deaths are counted perfectly, they should exceed excess mortality, leading to undercount ratios below 1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C61 is explicitly presented as speculation and is supported by observed data from countries with accurate COVID death reporting (C62). The reasoning is logical: if lockdowns reduce non-COVID mortality (particularly influenza), then perfect COVID death counting should yield more COVID deaths than excess deaths. This is appropriately qualified as speculation rather than a definitive conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "5e93556e-214f-4ad2-b038-4f2f695ca2ac",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Summing excess mortality across all countries in the dataset yields 4.0 million excess deaths, compared to 2.9 million official COVID-19 deaths (global undercount ratio 1.4). The Economist estimated 7-13 million excess deaths worldwide using statistical modeling to predict excess mortality in countries without data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C64 present straightforward aggregations of the data with transparent calculations. Claim C65 appropriately cites The Economist's modeling work and clearly distinguishes it from the authors' own analysis. The global undercount ratio (C64) is a simple calculation from the aggregated data. These provide important context for the global scale of the pandemic.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "fcccae52-850e-4574-a000-bbfd698cb292",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "After initial release, the dataset was incorporated into excess mortality trackers by Our World in Data, The Economist, and the Financial Times.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C66 documents the impact and adoption of the dataset by major organizations. This is a factual statement about the dataset's use and demonstrates its value to the research and policy community. The claim is verifiable and appropriately documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    },
+    {
+      "id": "1dbe0397-5588-4156-ba11-e98a798def0c",
+      "content_id": "e8ff557e-1bf7-4013-81ae-192d929181e4",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors describe their methodology for calculating excess mortality: baseline mortality for 2020 was predicted using 2015-2019 data with linear trend and seasonal variation, excess mortality was calculated as the difference between actual and baseline mortality starting from March 2020, and adjustments were made for the Nagorno-Karabakh war and August 2020 European heat wave.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C74 describe the methodological approach. The baseline estimation method (C70) is clearly specified with mathematical formulation in the methods section. The adjustments for non-COVID events (C73-C74) are transparently documented with specific numbers and rationale. The caveat about preliminary data (C69) is an important limitation. The methodology is appropriate and well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:32:30.003451Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "28dcfded-d657-4f50-9c96-25aae46126a1",
+      "result_id": "894127d3-264e-4665-a227-0a6cf87cc5f6"
+    },
+    {
+      "claim_id": "c7561b1b-de69-408a-8747-81047c8ab4f7",
+      "result_id": "894127d3-264e-4665-a227-0a6cf87cc5f6"
+    },
+    {
+      "claim_id": "5d7e270d-d438-4bf6-8090-519ff649466f",
+      "result_id": "894127d3-264e-4665-a227-0a6cf87cc5f6"
+    },
+    {
+      "claim_id": "25caeaf3-1d9a-4763-8a2d-224eac6dc72c",
+      "result_id": "894127d3-264e-4665-a227-0a6cf87cc5f6"
+    },
+    {
+      "claim_id": "fbbab1c5-25bd-42c3-b4f4-6df9e00b375c",
+      "result_id": "894127d3-264e-4665-a227-0a6cf87cc5f6"
+    },
+    {
+      "claim_id": "fbd73220-b811-450a-9a7b-98801164fbaf",
+      "result_id": "894127d3-264e-4665-a227-0a6cf87cc5f6"
+    },
+    {
+      "claim_id": "77752c22-36e9-465f-bdfc-59de837dd0dd",
+      "result_id": "894127d3-264e-4665-a227-0a6cf87cc5f6"
+    },
+    {
+      "claim_id": "841e939c-4133-4aab-9cf6-f9d6c4bcd4ca",
+      "result_id": "894127d3-264e-4665-a227-0a6cf87cc5f6"
+    },
+    {
+      "claim_id": "916c7490-9648-4de9-9773-55118da5b495",
+      "result_id": "894127d3-264e-4665-a227-0a6cf87cc5f6"
+    },
+    {
+      "claim_id": "c5f7f566-b8f0-47a7-b395-8580c9bf0d3a",
+      "result_id": "05b02d7b-7643-4592-ab79-b728a52288cd"
+    },
+    {
+      "claim_id": "66dd67ec-a744-4f03-8aec-7c75a16b9d94",
+      "result_id": "05b02d7b-7643-4592-ab79-b728a52288cd"
+    },
+    {
+      "claim_id": "d69e77e0-f2a1-4526-abd3-7bb1be88de31",
+      "result_id": "05b02d7b-7643-4592-ab79-b728a52288cd"
+    },
+    {
+      "claim_id": "9fa39353-9945-4c1e-a9d8-d7475c260e65",
+      "result_id": "05b02d7b-7643-4592-ab79-b728a52288cd"
+    },
+    {
+      "claim_id": "ee3e7b80-895d-48e9-9f39-198667989a54",
+      "result_id": "05b02d7b-7643-4592-ab79-b728a52288cd"
+    },
+    {
+      "claim_id": "f43111b4-a0cb-46c4-b2f8-e2d4418ff888",
+      "result_id": "05b02d7b-7643-4592-ab79-b728a52288cd"
+    },
+    {
+      "claim_id": "5060ab5f-0b85-413f-a55b-c51dfefcc263",
+      "result_id": "05b02d7b-7643-4592-ab79-b728a52288cd"
+    },
+    {
+      "claim_id": "1565354b-8513-48e7-829b-151300db31be",
+      "result_id": "db2c6a29-4d70-4d2f-9ace-2877b272a3ae"
+    },
+    {
+      "claim_id": "e0f965bc-ed6b-4fcf-b70d-9430dba05cd3",
+      "result_id": "db2c6a29-4d70-4d2f-9ace-2877b272a3ae"
+    },
+    {
+      "claim_id": "da1e1f21-b1e2-4f68-ac3b-7e5e4de4d6c7",
+      "result_id": "db2c6a29-4d70-4d2f-9ace-2877b272a3ae"
+    },
+    {
+      "claim_id": "e3c2e1ee-c450-4de6-af84-1782ebadd8bc",
+      "result_id": "db2c6a29-4d70-4d2f-9ace-2877b272a3ae"
+    },
+    {
+      "claim_id": "21787073-dd20-460d-a448-8d35e48af9a3",
+      "result_id": "c6380f73-5eec-42f6-b616-afafacedb3f6"
+    },
+    {
+      "claim_id": "4fe2af07-835e-4184-a7bd-ae32b54aad4e",
+      "result_id": "c6380f73-5eec-42f6-b616-afafacedb3f6"
+    },
+    {
+      "claim_id": "a2acf124-9f28-4f5f-8a26-3a52f0e7b3c2",
+      "result_id": "c6380f73-5eec-42f6-b616-afafacedb3f6"
+    },
+    {
+      "claim_id": "6454ec37-4189-470c-9690-ff9411d95ba3",
+      "result_id": "c6380f73-5eec-42f6-b616-afafacedb3f6"
+    },
+    {
+      "claim_id": "66f386bd-838c-4e28-acc2-39755ea94a85",
+      "result_id": "c6380f73-5eec-42f6-b616-afafacedb3f6"
+    },
+    {
+      "claim_id": "4f3beb35-0664-4f06-aae2-cce68270246c",
+      "result_id": "c6380f73-5eec-42f6-b616-afafacedb3f6"
+    },
+    {
+      "claim_id": "2e47b193-dd13-4bbd-bf71-5eb83480ce1c",
+      "result_id": "c6380f73-5eec-42f6-b616-afafacedb3f6"
+    },
+    {
+      "claim_id": "55136558-3232-48c3-ac94-9716a426f64e",
+      "result_id": "c6380f73-5eec-42f6-b616-afafacedb3f6"
+    },
+    {
+      "claim_id": "0497904c-faf0-4776-bcd2-cfc8ffb0e4e7",
+      "result_id": "c6380f73-5eec-42f6-b616-afafacedb3f6"
+    },
+    {
+      "claim_id": "1b7d3078-def3-43b9-a01e-a679bc301983",
+      "result_id": "b5b81d3c-86ca-4df1-b296-6f6e850ad778"
+    },
+    {
+      "claim_id": "934a94e9-51d6-47ba-871f-b7a7a7552e77",
+      "result_id": "b5b81d3c-86ca-4df1-b296-6f6e850ad778"
+    },
+    {
+      "claim_id": "d34e01d5-7029-4b4f-bb4b-3ce987948dab",
+      "result_id": "b5b81d3c-86ca-4df1-b296-6f6e850ad778"
+    },
+    {
+      "claim_id": "e63a9c38-b592-421b-807b-7eedad33f863",
+      "result_id": "b5b81d3c-86ca-4df1-b296-6f6e850ad778"
+    },
+    {
+      "claim_id": "94b3dea7-a056-40ec-873e-0638b4fda86b",
+      "result_id": "b5b81d3c-86ca-4df1-b296-6f6e850ad778"
+    },
+    {
+      "claim_id": "fe827db3-9db5-47b7-9172-3480f2aac4b8",
+      "result_id": "ccd5cd3e-12dc-494a-9cf4-9b17d476d55b"
+    },
+    {
+      "claim_id": "179447b3-b6e5-4c5c-8cc2-d052ad4a1b50",
+      "result_id": "ccd5cd3e-12dc-494a-9cf4-9b17d476d55b"
+    },
+    {
+      "claim_id": "ca2c730b-3680-4e52-911d-5a0fd57df60a",
+      "result_id": "ccd5cd3e-12dc-494a-9cf4-9b17d476d55b"
+    },
+    {
+      "claim_id": "20deb8dd-6bb1-4c1a-b9fb-baf49f469e43",
+      "result_id": "ccd5cd3e-12dc-494a-9cf4-9b17d476d55b"
+    },
+    {
+      "claim_id": "fe91b1fb-f01b-446c-a389-4911f8047139",
+      "result_id": "cbbddc1e-b600-4a80-a93e-7683d5485e00"
+    },
+    {
+      "claim_id": "63d31146-5458-4d4b-8aec-f41f45aeccb4",
+      "result_id": "cbbddc1e-b600-4a80-a93e-7683d5485e00"
+    },
+    {
+      "claim_id": "2e052446-c6c1-4896-9290-391fcbde22c8",
+      "result_id": "cbbddc1e-b600-4a80-a93e-7683d5485e00"
+    },
+    {
+      "claim_id": "685f70b2-27ad-4062-8fea-5a105aca3fed",
+      "result_id": "cbbddc1e-b600-4a80-a93e-7683d5485e00"
+    },
+    {
+      "claim_id": "cc94b190-8b4b-40b9-9fdb-5869448a7734",
+      "result_id": "cbbddc1e-b600-4a80-a93e-7683d5485e00"
+    },
+    {
+      "claim_id": "91efa4f6-567f-4fd5-a8bd-a3cee84d6dfe",
+      "result_id": "cbbddc1e-b600-4a80-a93e-7683d5485e00"
+    },
+    {
+      "claim_id": "7eaaa8f4-b0a1-4552-8e75-2cdde4f785f4",
+      "result_id": "cbbddc1e-b600-4a80-a93e-7683d5485e00"
+    },
+    {
+      "claim_id": "027d4ea2-90e3-43c3-bfb8-bd2e41c62e67",
+      "result_id": "cbbddc1e-b600-4a80-a93e-7683d5485e00"
+    },
+    {
+      "claim_id": "09d84212-2428-490f-abec-977fea4bb086",
+      "result_id": "cbbddc1e-b600-4a80-a93e-7683d5485e00"
+    },
+    {
+      "claim_id": "e360429e-cd9e-4107-9a76-2af570e8476c",
+      "result_id": "a82ba71b-fb92-42f4-8dc9-96d9f624e86c"
+    },
+    {
+      "claim_id": "5636c069-89bb-4b35-8c2f-8d75c248a519",
+      "result_id": "a82ba71b-fb92-42f4-8dc9-96d9f624e86c"
+    },
+    {
+      "claim_id": "969c942f-067e-462f-bf90-2b55a1fdd7ae",
+      "result_id": "a82ba71b-fb92-42f4-8dc9-96d9f624e86c"
+    },
+    {
+      "claim_id": "ec379623-812e-4388-b04f-e62e6a554962",
+      "result_id": "a82ba71b-fb92-42f4-8dc9-96d9f624e86c"
+    },
+    {
+      "claim_id": "d0289e7c-f49e-43cf-8fdd-9affa825743a",
+      "result_id": "ce5793cd-74d1-4dd6-bb57-91e418e777cc"
+    },
+    {
+      "claim_id": "d6dea839-2473-406f-b06c-d48f349c88ca",
+      "result_id": "ce5793cd-74d1-4dd6-bb57-91e418e777cc"
+    },
+    {
+      "claim_id": "cdb62f2b-0e3a-4ec5-bd78-c7aa91e460a6",
+      "result_id": "ce5793cd-74d1-4dd6-bb57-91e418e777cc"
+    },
+    {
+      "claim_id": "59214312-48a4-41b4-9b34-85c0355e717b",
+      "result_id": "ce5793cd-74d1-4dd6-bb57-91e418e777cc"
+    },
+    {
+      "claim_id": "c263878d-49da-40bc-b3a7-8f2bcd3d5d0c",
+      "result_id": "09483ec8-59fd-461c-9366-629c9a9f320a"
+    },
+    {
+      "claim_id": "b1cc9a8f-a9e5-43f1-aa1d-60e56d8110e2",
+      "result_id": "09483ec8-59fd-461c-9366-629c9a9f320a"
+    },
+    {
+      "claim_id": "ff8dd686-53b4-45e8-982f-347193e8763c",
+      "result_id": "89315b32-fbae-4161-b311-dd477e83fb0e"
+    },
+    {
+      "claim_id": "194590dc-ada6-4c59-b29d-542044b9bd0d",
+      "result_id": "89315b32-fbae-4161-b311-dd477e83fb0e"
+    },
+    {
+      "claim_id": "e59b2695-ff34-4958-afd5-6b83cba4bdbc",
+      "result_id": "89315b32-fbae-4161-b311-dd477e83fb0e"
+    },
+    {
+      "claim_id": "5ddc45d3-0d27-4f8d-9aa4-925002c0bd64",
+      "result_id": "bca48ecf-e09f-4a0b-8f5e-9f36b33d9e6a"
+    },
+    {
+      "claim_id": "b80c2ecf-bc01-4c5b-933f-344474ca1f08",
+      "result_id": "277f7fb4-4552-4d54-8405-69c6dea7a6f1"
+    },
+    {
+      "claim_id": "5c1a62f7-04b3-4179-ab7b-18beead522dd",
+      "result_id": "5e93556e-214f-4ad2-b038-4f2f695ca2ac"
+    },
+    {
+      "claim_id": "0497904c-faf0-4776-bcd2-cfc8ffb0e4e7",
+      "result_id": "5e93556e-214f-4ad2-b038-4f2f695ca2ac"
+    },
+    {
+      "claim_id": "d910e257-5d69-4bd3-9feb-b659df6cc315",
+      "result_id": "5e93556e-214f-4ad2-b038-4f2f695ca2ac"
+    },
+    {
+      "claim_id": "e3d41907-e902-4540-81d4-32673d024d62",
+      "result_id": "fcccae52-850e-4574-a000-bbfd698cb292"
+    },
+    {
+      "claim_id": "1187d2df-abe6-4400-ac43-7c5b4bdc3281",
+      "result_id": "1dbe0397-5588-4156-ba11-e98a798def0c"
+    },
+    {
+      "claim_id": "01100edc-26ac-4e84-9a0f-0e8248966044",
+      "result_id": "1dbe0397-5588-4156-ba11-e98a798def0c"
+    },
+    {
+      "claim_id": "ae6ee326-e9ad-4b9c-bead-cf7ce537d2dd",
+      "result_id": "1dbe0397-5588-4156-ba11-e98a798def0c"
+    },
+    {
+      "claim_id": "7c9564e7-225e-4e9c-b528-ee67526b74de",
+      "result_id": "1dbe0397-5588-4156-ba11-e98a798def0c"
+    },
+    {
+      "claim_id": "fad572ee-9c40-48b1-bafd-e111143750f6",
+      "result_id": "1dbe0397-5588-4156-ba11-e98a798def0c"
+    },
+    {
+      "claim_id": "fb0a73fe-d6c9-433f-b571-0fd6a684ce85",
+      "result_id": "1dbe0397-5588-4156-ba11-e98a798def0c"
+    }
+  ],
+  "comparisons": []
+}

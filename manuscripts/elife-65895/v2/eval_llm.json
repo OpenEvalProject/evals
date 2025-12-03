@@ -1,0 +1,500 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "CG6024 (loaf) was identified as a gene with enriched expression in R7 and R8 photoreceptors and is a predicted target of the transcription factor Glass, which is required for photoreceptor differentiation and axon guidance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 are well-supported by citations to prior published work (Pappu et al., 2011; Naval-Sanchez et al., 2013; Moses et al., 1989; Selleck and Steller, 1991). These claims establish the background context for the gene under investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "RNAi knockdown of loaf in photoreceptors causes R7 axon mistargeting to the M3 layer (30-60% of axons) without affecting R8 targeting. This phenotype arises during the second stage of R7 targeting when filopodia are stabilized to form synapses, as R7 axons initially target correctly at 40 hr APF but fail to reach or stabilize in M6 by 60 hr APF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C9 are supported by experimental data shown in Figure 1A-K with quantification. The temporal analysis (C8-C9) provides mechanistic insight into when the defect occurs. Statistical significance is demonstrated (****p<0.0001 in Figure 1D,G).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10"
+    ],
+    "result": "The gene CG6024 was named 'lost and found' (loaf) based on the R7 mistargeting phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C10 is a straightforward naming rationale based on the observed phenotype and anticipated rescue experiments. This is standard practice in gene nomenclature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "The Loaf protein contains extracellular CUB and LDLa domains and a predicted transmembrane domain, making it a candidate to directly mediate target recognition by R7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 are supported by protein domain analysis shown in Figure 2A. The inference that Loaf could mediate target recognition (C12) is reasonable given its domain structure, though this is later shown to be incorrect (see claims C73-C88).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C18",
+      "C19"
+    ],
+    "result": "The R7 mistargeting phenotype is specifically due to loss of loaf function, as demonstrated by: (1) two independent RNAi lines targeting the same region produce similar phenotypes, (2) CRISPR deletion using sgRNAs targeting a different region reproduces the phenotype, and (3) loaf RNAi has no effect in a loaf mutant background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14, C18-C19 provide strong validation that the phenotype is specifically due to loaf loss. Multiple independent approaches (two RNAi lines, CRISPR with different target sites, and genetic epistasis) all support the same conclusion. Data shown in Figures 1D, 2A,B,E,H.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C20",
+      "C21"
+    ],
+    "result": "Germline loaf mutants are viable and show largely normal R7 targeting, indicating that global loss of loaf does not affect R7 targeting. This suggests that R7 targeting depends on the relative amount of Loaf in R7 compared to other cells rather than its absolute presence or absence, and that the RNAi phenotype depends on loaf presence in the optic lobes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17, C20-C21 describe a surprising and critical finding supported by Figure 2C,D,H. The inference that targeting depends on relative Loaf levels (C21) is speculative but reasonable given the data. This is a key result that distinguishes this mechanism from simple loss-of-function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Clones of photoreceptors homozygous for loaf deletion alleles in an otherwise heterozygous background show R7 mistargeting to M3, which is rescued by expressing Loaf within the mutant clones. This supports a model where correct targeting depends on relative Loaf levels between R7 and another cell type, with mistargeting occurring when Loaf is absent from R7 but present in partner cells, while redundant mechanisms may compensate when Loaf is absent from all cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 are strongly supported by experimental data in Figure 2F-H and supplements. Claims C25-C27 are speculative models to explain the observations but are reasonable hypotheses. The rescue experiment (C23) provides strong evidence that the phenotype is cell-autonomous to photoreceptors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Dm8, the reported major postsynaptic target of R7 that mediates UV light preference, does not require Loaf for R7 targeting. Expressing loaf RNAi in Dm8 cells causes no R7 phenotype, loaf mutant Dm8 cells appear morphologically normal with correctly targeted R7 axons, and expressing Loaf in Dm8 in a loaf mutant background does not cause R7 mistargeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 cite prior literature appropriately. Claims C30-C34 are supported by experimental data in Figure 3 and supplements. This is an important negative result that argues against the most obvious hypothesis and redirects the investigation to other cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Loaf expression analysis reveals widespread expression in the brain with varying levels. In photoreceptors, Loaf translation peaks at mid-pupal stages (P40-P50) when R7 axons target M6. At pupal stages, Loaf is enriched in specific medulla neuropil layers and in R7 axons and terminals, as shown by antibody staining and GFP protein trap. Single-cell RNA-Seq data confirm widespread loaf expression throughout pupal development, with generally lower levels in glia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C46 are supported by multiple lines of evidence: RNA-Seq data (cited), antibody staining (Figure 4A-C), protein trap expression (Figure 4\u2014supplement 1A), and single-cell RNA-Seq (cited). The convergence of multiple approaches strengthens these findings. However, the protein trap appears to disrupt normal localization (C41-C42).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Expressing Loaf in specific neuronal populations in a loaf mutant background reveals that cholinergic neurons (ChAT-GAL4) and their precursors (ap-GAL4), as well as glutamatergic neurons (VGlut-GAL4), cause R7 mistargeting when Loaf is restored to them. No phenotype is observed when Loaf is expressed in glia, other neuronal populations (hth, bsh, Vsx), or photoreceptors alone. This indicates that multiple neuron types interact with R7 through Loaf.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C55 are supported by experimental data in Figure 4D-F and supplements. The systematic testing of different GAL4 drivers provides strong evidence for which cell types are involved. The inference that multiple neuron types interact with R7 through Loaf (C55) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Tm5a/b neurons, which are cholinergic output neurons that form synapses with R7 and Dm8, influence R7 targeting through Loaf. Expressing Loaf in Tm5a/b using GMR9D03-GAL4 in a loaf mutant background produces significant R7 mistargeting, while restoring Loaf only in lamina neurons has no effect. Importantly, loaf mutant Tm5a/b cells appear morphologically normal and do not cause R7 mistargeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 are supported by citations (C56) and experimental data in Figure 5A,H and 5D,E. The specificity is demonstrated by the lamina neuron control (C59). This identifies Tm5a/b as a key cell type, though GMR9D03-GAL4 may also label other cells (see C155-C156).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Dm9, a multicolumnar neuron that tracks R7 axons and mediates inhibition between ommatidia, is a candidate to provide Loaf that affects R7 targeting. The transcription factors Vg and Dve are enriched in Dm9, and while neither dve-GAL4 nor vg-GAL4 alone significantly affects R7 targeting when expressing Loaf in a loaf mutant, their combination produces significant R7 mistargeting. loaf mutant Dm9 cells and their presynaptic R7 axons appear normal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C67 are supported by citations (C61-C62), experimental data showing GAL4 expression patterns (C63, Figure 5\u2014supplement 1C), and rescue experiments (C64-C65, Figure 5B,H). The requirement for both drivers together (C65) suggests incomplete coverage by either alone. The normal morphology of mutant cells (C67) is consistent with the level-matching model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Combining ap-GAL4 and tj-GAL4 to restore Loaf in loaf mutants produces significantly more R7 mistargeting than ap-GAL4 alone, suggesting that Dm8 or another tj-GAL4 expressing neuron (such as Dm11) may contribute to the pool of Loaf influencing R7 targeting. However, Tm5a/b and Dm9 appear to play a more significant role than Dm8.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 are supported by experimental data in Figure 5C,H,I. The additive effect of combining drivers (C68) suggests multiple cell types contribute. The conclusion that Tm5a/b and Dm9 play a more significant role (C70) is supported by comparing effect sizes across experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Overexpressing Loaf in wild-type background with various GAL4 drivers does not cause R7 mistargeting, possibly because Loaf is normally enriched in R7 terminals and the overexpression levels in synaptic partner processes may not exceed those in R7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 are supported by experimental data in Figure 5\u2014supplement 2. The interpretation (C72) is speculative but reasonable. This control experiment is important for ruling out non-specific effects of Loaf overexpression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Loaf does not function as a cell surface adhesion molecule. HA-tagged Loaf transfected into S2 cells does not induce aggregation (unlike the positive control Sidekick), does not show strong plasma membrane localization, and is present in punctate intracellular structures. Live cell staining with antibodies to extracellular epitopes shows no surface localization, while controls demonstrate the assay works for Sidekick.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78, C85-C88 are supported by experimental data in Figure 6A,B,C-E,H,I and supplements. Multiple independent approaches (aggregation assay, localization, live cell staining) converge on the conclusion that Loaf is not a cell surface adhesion molecule. This is a critical negative result that redirects the mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Loaf localizes to late endosomes but not lysosomes or recycling endosomes. In both S2 cells and in vivo, Loaf-containing structures show partial colocalization with the late endosome markers Hrs and Rab7, but not with recycling endosome marker Rab11 or lysosomal markers Arl8 and Vha55. In TSG101 mutant cells where endocytosed proteins accumulate, LoafHA colocalizes with Notch, confirming its presence in the endocytic pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 are supported by colocalization data in Figure 6D-G,J and supplements, with quantification by Pearson's correlation (Figure 6J). The TSG101 experiment (C81-C82) provides strong functional evidence for endocytic pathway localization. The endogenously tagged protein shows different localization (C83), but this tag disrupts function (C84).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "Loaf could regulate the trafficking or cell surface localization of proteins involved in cell adhesion or synapse formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C89 is a speculative hypothesis based on the endosomal localization and lack of cell surface function. While reasonable given the data, this mechanism has not been directly demonstrated. Further experiments would be needed to test this model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Loaf shows a strong genetic interaction with Lar, an RPTP required for R7 targeting. Simultaneous knockdown of loaf and Lar with lGMR-GAL4 has a synergistic effect, causing almost all R7 axons to terminate in M3, while either RNAi alone affects only a subset. loaf knockdown also enhances Liprin-\u03b1 mutant phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C95 are supported by citations (C90-C92) and experimental data in Figure 7A-D and supplement 1G-J. The synergistic genetic interaction (C93-C94) is strong evidence that Loaf and Lar function in the same pathway. The Liprin-\u03b1 interaction (C95) provides additional support, though the effect may be additive rather than synergistic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Lar overexpression can rescue R7 targeting in loaf mutant photoreceptors, indicating that Lar can compensate for lack of loaf and is unlikely to be its primary effector. Lar overexpression alone does not cause defects, and loaf is not required for Lar transport to axons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 are supported by experimental data in Figure 7\u2014supplement 1A-F. The rescue experiment (C97) is particularly important as it shows Lar can bypass the need for Loaf, arguing against Loaf acting primarily through Lar regulation. The transport data (C99) further supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C112"
+    ],
+    "result": "Loaf affects the function of Lrp4, a presynaptic organizer. Overexpressing Lrp4 in photoreceptors causes R7 axon hyperfasciculation and retinal defects. These defects are more severe when Lrp4 is coexpressed with Loaf but are almost absent when Lrp4 is expressed in loaf mutant photoreceptors. Lrp4 is still transported to axons in loaf mutants and expression levels appear unaffected, though it has a more granular appearance in cell bodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C108, C112 are supported by experimental data in Figure 7E-H and supplement 2A-H. The dose-dependent effects of Loaf on Lrp4 function provide strong evidence that Loaf regulates cell surface protein function. However, the mechanism remains unclear (trafficking vs. other regulation).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C113"
+    ],
+    "result": "Lrp4 is unlikely to fully explain loaf's effects on R7 targeting, as R7 axons project normally in Lrp4 mutant clones and loaf RNAi causes R7 mistargeting even in an Lrp4 null mutant background. This suggests Loaf acts by regulating Lrp4 and/or other cell surface molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 are supported by experimental data in Figure 7\u2014supplement 2I-K. These genetic epistasis experiments demonstrate that Lrp4 is not the sole effector of Loaf. Claim C113 is a reasonable speculation given the data, though the specific molecules remain to be identified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The genetic interaction between Lar and loaf, combined with Lar's ability to rescue loaf loss, suggests that like Lar, Loaf stabilizes synaptic contacts. Lar forms a hub for presynaptic structure assembly through Liprin-\u03b1 and acts in R7 to stabilize filopodia in M6 by promoting synapse formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 are supported by citations to prior work. Claims C116-C117 are reasonable inferences from the genetic interaction and rescue data, though the mechanism by which Loaf stabilizes contacts remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Background on R7 synaptic partners: R7 forms synapses with Dm8 interneurons (essential for UV preference, with two subclasses postsynaptic to yR7 or pR7), and each R7 subtype promotes survival of its corresponding Dm8 class. Many R7-Dm8 synapses also include Tm5a or Tm5b as a second postsynaptic element. Dm8 dendrites project to M6 even without R7, but whether R7 relies on Dm8 for targeting information is unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C124 are well-supported by citations to prior literature. These provide important context for interpreting the current findings about which cell types are important for R7 targeting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C126",
+      "C127"
+    ],
+    "result": "The level of Loaf in Tm5a/b and Dm9 is more important for R7 targeting than its level in Dm8, suggesting these cells may determine the stability of R7 contacts in the M6 layer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C127 are reasonable inferences from the comparative strength of phenotypes across different GAL4 rescue experiments (Figure 5H,I). However, this conclusion depends on the assumption that the different GAL4 drivers produce comparable Loaf expression levels, which is not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Loaf is not essential for R7 targeting, as its absence from R7 only causes a phenotype when Loaf is present in postsynaptic partners. In loaf mutants, redundant mechanisms must stabilize R7 terminals in M6, though synaptic connections may not form entirely normally (loaf mutants show reduced UV light sensitivity). A mismatch in Loaf expression between R7 and partners results in mistargeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C134 are supported by the combined experimental observations. The reduced UV sensitivity in loaf mutants (C132) is supported by personal communication, which is less rigorous than published data but provides functional validation. The mismatch model (C134) is a reasonable synthesis of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Level matching, where protein presence in only one partner is more deleterious than absence from both, is observed for other synaptic proteins (Klingon, Teneurins) and is well-suited for refining synaptic specificity. Loaf matching appears asymmetric: R7 mistargeting occurs if Loaf is absent in R7 but present in postsynaptic cells, but not vice versa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C137 are supported by citations to prior work and provide important context. Claim C138 is supported by experimental data in Figure 5I showing the asymmetry. This is an important mechanistic insight that distinguishes Loaf from symmetric matching proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Possible mechanisms for asymmetric Loaf matching: (1) matching levels may neutralize Loaf activity or that of a Loaf-regulated cell surface molecule, with excess on the postsynaptic cell preventing synapse initiation/stabilization or driving preferential connection with other neurons; (2) the asymmetry could reflect Loaf presence in multiple postsynaptic cells, where loss from only one type is insufficient to disrupt targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C139-C141 are speculative hypotheses to explain the asymmetry. While both are plausible, neither has been directly tested. These represent reasonable models for future investigation but remain uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "CUB domains bind protein ligands and are found in functionally diverse proteins. Some CUB domain proteins mediate endocytosis, while Neto family CUB-LDL proteins regulate glutamate receptor localization and activity. Loaf may control cell surface protein levels by mediating their trafficking or endocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C144 are supported by citations to prior literature. Claim C145 is a reasonable speculation based on Loaf's domain structure and localization, though the specific mechanism remains to be demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Examples of trafficking regulation in neural development: Commissureless traffics Roundabout from Golgi to endosomes, Rab6/Rich traffic Ncad to the cell surface for R7 targeting, Neurexin levels between axons and dendrites depend on endocytosis and sorting, and synaptic adhesion molecule trafficking is highly regulated. Loss or gain of Loaf affects coexpressed Lrp4 function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C149 are supported by citations providing relevant precedents. Claim C150 is supported by experimental data (Figure 7E-H) and provides evidence that Loaf can regulate cell surface protein function, consistent with the trafficking model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Possible mechanisms for Loaf action: (1) Loaf may act through a protein similar to Lrp4 or through multiple proteins; (2) under some conditions, perhaps with other interacting proteins, Loaf itself might reach the cell surface; (3) some synaptic organizing molecules are transported in lysosome-related vesicles and secreted in a regulated manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C151-C154 are speculative hypotheses about Loaf's mechanism of action. While C151 is supported by the Lrp4 data showing Loaf affects at least one cell surface protein, the specific molecules remain unknown. Claims C152-C154 are plausible alternatives but lack direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C155",
+      "C156"
+    ],
+    "result": "Note added in proof: GMR9D03-GAL4 is also expressed in transmedullary neurons Tm15 and Tm25, raising the possibility that Loaf in these neurons could contribute to R7 targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C156 acknowledge a limitation in the interpretation of the GMR9D03-GAL4 experiments. This is an important caveat that affects the specificity of conclusions about Tm5a/b involvement. The note is appropriately added to alert readers to this issue.",
+    "result_type": "MINOR"
+  }
+]

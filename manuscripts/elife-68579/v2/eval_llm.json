@@ -1,0 +1,214 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Smc5/6 is chromatin-associated in unchallenged cells with approximately 40% bound fraction, as measured by single-particle tracking (SPT) and Spot-On kinetic modeling. This chromatin association depends on the non-SMC protein Nse6, and the dynamics of the kleisin subunit Nse4 are indicative of the whole complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C55-C61 provide converging evidence from SPT experiments showing Smc5/6 chromatin association in unchallenged cells. The Nse4-mEos3 fusion had no impact on cell proliferation (C55), showed nuclear confinement (C56), and Spot-On modeling revealed ~40% bound fraction (C57). The three-state fit (C58-C59) and similar dynamics across core subunits (C60-C61) strengthen the conclusion. The dependence on Nse6 is demonstrated in later claims (C108-C115).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C62"
+    ],
+    "result": "Cohesin exhibits greater chromatin association than Smc5/6 in fission yeast, with higher bound fractions and more short displacements, suggesting distinct chromatin interaction dynamics between the two SMC complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 demonstrate that cohesin (Rad21/Smc1) has greater bound fractions than Smc5/6 through SPT analysis (Figure 1D,E). The observation is contextualized by C62, noting that fission yeast cells reside in G2 where cohesin is expected to be stably chromatin-associated. The data support distinct chromatin association dynamics between the complexes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The Nse3 double-stranded DNA (dsDNA) binding activity is critical for Smc5/6 chromatin association. The nse3-R254E hypomorphic mutation, which disrupts dsDNA binding, results in reduced chromatin association as measured by SPT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C67-C70 provide strong evidence that Nse3 dsDNA binding is critical for chromatin association. The nse3-R254E mutation disrupts but does not abolish dsDNA binding (C67), leads to broader displacement profiles (C68), reduces fraction-bound values (C69), and confirms in vivo that dsDNA binding underpins chromatin association (C70). Data from Figure 2 support these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C85",
+      "C86"
+    ],
+    "result": "The arginine fingers of the two Smc5/6 ATPase binding sites are critical for chromatin association, with DNA-dependent ATP hydrolysis being essential for stable chromatin binding. There is asymmetry between the two ATP binding sites, with the Smc6 arginine finger (R150A) being more critical than the Smc5 arginine finger (R77A).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C71-C76, C85-C86 demonstrate that arginine finger mutations reduce chromatin association. Both smc5-R77A and smc6-R150A mutations cause sensitivity to replication stress (C72) and decreased chromatin association (C73), but smc6-R150A has a more dramatic effect (C74). The correlation between reduced chromatin association and genotoxin sensitivity (C75) supports the functional importance. The asymmetry between the two ATP binding sites (C76, C86) is well-supported by the differential effects of the mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Structure-guided mutations at Smc6 Thr135 (adjacent to the arginine finger) show a graduated correlation between predicted steric clash severity and both genotoxin sensitivity and reduced chromatin association. The smc6-T135F mutation phenocopies the well-characterized smc6-74 (A151T) allele and prevents MMS-induced recruitment of Smc5/6 to chromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C84 provide strong evidence for structure-function relationships. The smc6-74 allele maps adjacent to the arginine finger (C77) and shows similar chromatin association defects to smc6-R150A (C78). The engineered T135 mutations (T135V/L/F) show graduated effects on genotoxin sensitivity (C79) and chromatin association (C81) that correlate with predicted steric clash severity. The smc6-T135F mutation phenocopies smc6-74 (C80, C82) and prevents MMS-induced recruitment (C84). Data from Figure 3 strongly support these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Disrupting single-stranded DNA (ssDNA) binding activity at the Smc5/6 hinge region does not prevent chromatin association in unchallenged cells but reduces or prevents recruitment to chromatin in response to MMS treatment, suggesting ssDNA binding plays a role in processes downstream of loading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C88-C91 demonstrate that ssDNA binding mutants (smc5-R609E R615E, smc5-Y612G, smc6-F528A, smc6-R706C) do not alter bound fraction in unchallenged cells (C88) but reduce/prevent MMS-induced recruitment (C89). This supports the conclusion that ssDNA binding is not required for stable chromatin association (C90) but plays a downstream role (C91). Data from Figure 4B and Figure 4\u2014figure supplement 1 support these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Disrupting ssDNA binding at the hinge (smc6-X/R706C) leads to highly elevated gross chromosomal rearrangements (87-fold increase in ura4 loss) during replication restart in the RuraR system, while ATPase mutants (smc6-74) and dsDNA binding mutants (nse3-R254E) show more modest effects. This highlights the importance of ssDNA binding for suppressing non-allelic homologous recombination (NAHR) and indicates that stable recruitment of a defective complex is more detrimental than reduced chromatin association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C97-C106 provide strong evidence from the RuraR replication fork stalling system. The smc6-X and smc6-74 mutants do not lose viability (C97), consistent with Smc5/6 regulating rather than being core to recombination (C98). However, smc6-X shows an 87-fold increase in ura4 loss (C103) compared to 5.6-fold for smc6-74 (C100) and 9-fold for nse3-R254E (C102). Most ura4- colonies were full deletions (C104), supporting the conclusion that ssDNA binding is critical for suppressing NAHR and GCRs (C105-C106). Data from Figure 4C strongly support these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C108",
+      "C109",
+      "C110",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "There are at least two Nse6-dependent sub-pathways for Smc5/6 chromatin association. One pathway requires the BRCT-domain protein Brc1 and accounts for approximately 35% of chromatin association, while a Brc1-independent pathway also exists. Brc1-dependent loading is largely confined to regions of \u03b3-H2A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C108-C115 demonstrate multiple pathways for Smc5/6 chromatin association. Deletion of brc1 reduces chromatin association by ~35% (C109-C110), while deletion of nse6 causes almost complete loss (C114-C115), indicating Brc1-independent Nse6-dependent pathways exist. The hta1-SA hta2-SA mutant shows similar reduction to brc1\u0394 (C112-C113), supporting that Brc1-dependent loading is confined to \u03b3-H2A regions. Data from Figure 5 strongly support these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C107",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Both Nse6 and Brc1 are required for Smc5/6 recruitment to sites of DNA damage. In the absence of Nse6, Smc5/6 can still associate with chromatin at severely reduced levels, likely through the dsDNA binding activity of Nse3, as the nse6\u0394 nse3-R254E double mutant appears synthetically lethal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107, C118-C125 demonstrate that both Nse6 and Brc1 are required for damage-induced recruitment. Both brc1\u0394 and nse6\u0394 cells fail to increase chromatin association after MMS treatment (C124-C125). The viability of nse6\u0394 cells and additive sensitivity of brc1\u0394 nse6\u0394 (C118) suggests residual chromatin association (C119), hypothesized to depend on Nse3 dsDNA binding (C120). The inability to generate nse6\u0394 nse3-R254E double mutants (C121) and lack of further reduction in nse6\u0394 brc1\u0394 (C122) support this model. Data from Figure 5 and prior ChIP experiments (C123) support these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The Nse5-Nse6 subcomplex displays different chromatin association dynamics than the core Smc5/6 complex, being more dynamic and less chromatin-associated. Nse6 chromatin association is not affected by smc6-74 or smc6-X mutations, suggesting Nse5-Nse6 acts transiently to stabilize or load Smc5/6 complexes on chromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C131 demonstrate distinct dynamics for Nse5-Nse6. Both Nse5 and Nse6 show broader displacements and lower chromatin association than Nse4 (C126), suggesting greater dynamics (C127-C128). Nse6 chromatin association is unaffected by smc6-74 or smc6-X mutations (C129-C130), indicating different dynamics from the core complex and supporting a transient stabilization/loading role (C131). Data from Figure 6 support these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C11",
+      "C92"
+    ],
+    "result": "ssDNA binding has a downstream function in regulating homologous recombination, potentially important for Smc5/6 retention on DNA during DNA repair-associated processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C11 and C92 are interpretations/speculations based on the observation that ssDNA binding is not required for chromatin association but is required for preventing GCRs. While the data support a downstream role, the specific mechanism (retention during repair) remains speculative (C92 is marked as SPECULATION). Additional experiments would be needed to definitively establish the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C132",
+      "C133"
+    ],
+    "result": "Single-particle tracking (SPT) is a powerful approach for studying the Smc5/6 complex, and when coupled with structure-led mutational analysis and yeast genetics, provides new insights into Smc5/6 behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C133 are summary conclusions supported by the entire body of work presented. The manuscript demonstrates successful application of SPT to characterize Smc5/6 chromatin association across multiple mutants and conditions, validating SPT as a powerful methodology for studying this complex.",
+    "result_type": "MINOR"
+  }
+]

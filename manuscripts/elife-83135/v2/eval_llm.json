@@ -1,0 +1,386 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C41",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C66",
+      "C69"
+    ],
+    "result": "SPARC is a six-membered protein complex (SET27, CRD1, CSD1, PHD6, PBP1, PWWP1) that is specifically enriched at transcription start regions (TSRs) in T. brucei. The complex components contain predicted histone reader and writer domains and show strong mutual association in affinity purification experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C41, C43, C56, C57, C66, and C69 provide converging evidence from proteomics (affinity purification/mass spectrometry) and ChIP-seq data demonstrating that these six proteins form a complex enriched at TSRs. The domain predictions (C44-C53) and localization data (C54-C55) provide additional supporting evidence for the complex composition and function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C81",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The six core SPARC components (SET27, CRD1, CSD1, PHD6, PBP1, PWWP1) form the main complex in both bloodstream form (BF) and procyclic form (PF) T. brucei cells, with differential localization patterns between life cycle stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C81 demonstrate through immunolocalization and proteomics data that the core six-membered SPARC complex is conserved between BF and PF cells. The data show consistent enrichment patterns in both life stages (C74, C79, C81), with appropriate controls and replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C67",
+      "C68",
+      "C82",
+      "C83",
+      "C124"
+    ],
+    "result": "JBP2 associates with SPARC components but is functionally distinct, showing no chromatin association by ChIP-seq and predominantly cytoplasmic localization in PF cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C67, C68, C82, C83, and C124 collectively demonstrate that while JBP2 co-immunoprecipitates with SPARC components in BF cells, it lacks chromatin association by ChIP-seq (C67) and shows weak or absent association in PF cells (C82-C83), supporting its functional distinction from core SPARC components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "SET27 and JBP2 can be deleted from T. brucei cells, while other SPARC components appear essential. SET27 deletion causes growth defects while JBP2 deletion slightly increases growth rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C91 are supported by successful generation of knockout cell lines verified by RNA-seq (C87-C89), growth curve analysis (C90-C91), and failed attempts to delete other SPARC components (C86). The data include appropriate controls and demonstrate specific loss of target genes without affecting neighboring genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "SET27 is essential for SPARC complex assembly or stability, as its deletion causes dissociation of other SPARC subunits from CRD1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 are supported by proteomics data showing greatly reduced association of FLAG-CRD1 with other SPARC components in set27\u0394/\u0394 cells (C92). The conclusion that SET27 is pivotal for complex assembly/stability (C94) is a reasonable inference from this data, though the mechanism (assembly vs. stability) cannot be definitively distinguished.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "SET27 is required for accurate positioning of transcription start sites and maintaining unidirectional transcription at promoters. In set27\u0394/\u0394 cells, transcription initiates upstream of normal start sites and some unidirectional promoters become bidirectional.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C101 are strongly supported by RNA-seq data showing upstream shifts in transcription initiation (C96), conversion of unidirectional to bidirectional promoters (C97), and rescue experiments confirming specificity (C99). The lack of effect in JBP2 deletion (C100) provides an important negative control supporting the specificity of SET27's role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "SET27 is required for accurate RNAPII recruitment to promoters. In set27\u0394/\u0394 cells, RPB1/RNAPII peaks become less defined and broader, coinciding with aberrant transcript accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C106 are supported by ChIP-seq data for RPB1 showing altered RNAPII distribution in set27\u0394/\u0394 cells (C103, C105) that correlates with RNA-seq data showing upstream transcript accumulation (C104). The metagene analysis (C105) provides quantitative support across multiple promoters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "SET27 deletion causes widespread transcriptional changes, with upregulation of ~100 genes including VSG genes, retrotransposons, and ESAGs. Upregulated genes are typically located within 2.5 kb of SPARC peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C116 are supported by comprehensive RNA-seq analysis including PCA (C107), differential expression analysis (C108-C110), gene ontology enrichment (C111), and genomic distance analysis (C116). The data include appropriate statistical thresholds (log2 fold change >1, FDR <0.01) and multiple replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "SPARC restricts gene expression in subtelomeric regions, particularly VSG genes. In set27\u0394/\u0394 cells, large subtelomeric regions show increased RNAPII association and VSG derepression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C120 are supported by RNA-seq and ChIP-seq data showing clustered VSG upregulation on chromosome 9 (C117) with corresponding increased RPB1 association over large regions (C118). The conclusion extends beyond promoter-proximal effects to demonstrate long-range transcriptional repression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C139"
+    ],
+    "result": "SPARC functions at T. brucei promoters by interacting with RNAPII to accurately demarcate transcription start sites and ensure unidirectional transcription, likely through histone modification-mediated chromatin association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C123 and C139 represent the main conclusions of the study, synthesizing evidence from proteomics (RNAPII interactions), ChIP-seq (co-localization), domain analysis (histone readers/writers), and functional studies (SET27 deletion phenotypes). The conclusion is well-supported by the convergence of multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Multiple lines of evidence suggest SPARC directly regulates transcription rather than RNA degradation, including co-localization with RNAPII, interactions with RNAPII subunits, and lack of interactions with RNA decay factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C138 present a logical argument supported by ChIP-seq data showing SPARC-RNAPII co-localization (C134), proteomics showing RNAPII interactions (C136) but not RNA decay factor interactions (C137), and functional data showing altered RNAPII recruitment (C138). The inference that SPARC regulates transcription is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Despite widespread transcription initiation defects, most mRNA levels remain unchanged in set27\u0394/\u0394 cells, likely due to post-transcriptional buffering that dominates gene expression regulation in T. brucei.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C146 are supported by RNA-seq data showing limited changes in steady-state mRNA levels despite widespread transcription initiation defects. The interpretation invoking post-transcriptional buffering (C143-C145) is reasonable given established knowledge about T. brucei gene regulation, though the energetic cost hypothesis (C146) is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "SET27 deletion causes derepression of VSG genes from non-BES locations, with most upregulated VSGs originating from subtelomeric regions. The mechanism may involve long-range effects of SPARC loss or indirect effects through other complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C154 are supported by RNA-seq data showing VSG upregulation from non-BES locations (C149, C152). However, the mechanistic explanations (C153-C154) are speculative hypotheses rather than tested conclusions. The observation that upregulated VSGs are lowly expressed (C151) is noted but its functional significance is uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "SET27 deletion causes derepression of retrotransposon-derived transcripts at promoter-proximal regions, suggesting SPARC may help maintain genome integrity by preventing mobile element expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C157 are supported by RNA-seq data showing upregulation of SLACS and ingi retrotransposon transcripts (C112-C113, C155). The hypothesis about preferential transposon insertion at TSRs (C156) and SPARC's role in genome integrity (C157) are reasonable speculations based on the data and comparisons to other organisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "SPARC-related complexes exist in other kinetoplastids including Leishmania, though with potentially different composition and distinct functions from JBP3-mediated transcription termination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C131 appropriately cite recent work identifying related complexes in Leishmania (C126) and distinguish SPARC function from JBP3-mediated termination based on the lack of termination defects in SET27/JBP2 deletions (C131). The proteomics data showing JBP3 association (C130) is consistent with related but distinct functions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C125"
+    ],
+    "result": "JBP2 is expressed in procyclic form T. brucei, contradicting a previous report.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C125 is supported by detection of YFP-JBP2 by immunolocalization and identification of untagged JBP2 in proteomics experiments in PF cells. This directly contradicts DiPaolo et al., 2005 and is appropriately noted as such.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "SPARC components show interactions with various chromatin-associated proteins including JBP3, histones, kinetochore proteins, RNAPII subunits, and FACT complex components, consistent with their predicted histone-binding domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C65 are supported by proteomics data from affinity purifications showing these interactions. The interpretation that histone recovery is consistent with predicted histone-binding domains (C61) is reasonable. These interactions provide context for SPARC function but are secondary to the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "The function of SET27 at T. brucei TSRs is reminiscent of the Set1/COMPASS complex at Opisthokont promoters, which also involves H3K4 methylation, PHD reader modules, and RNAPII interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C161 make an appropriate comparison to the well-characterized Set1/COMPASS complex based on functional similarities (promoter localization, predicted methyltransferase activity, PHD domains, RNAPII interactions). The comparison is supported by established knowledge about both systems, though direct evidence for H3K4 methylation by SET27 is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C140",
+      "C141"
+    ],
+    "result": "The authors were unable to identify sequence-specific motifs underlying SPARC or RNAPII binding sites, suggesting T. brucei promoters may be heterogeneous in composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C141 reports a negative result (inability to identify motifs) and offers speculation about promoter heterogeneity. While the negative result is noted, insufficient methodological details are provided to evaluate whether the motif search was comprehensive. The speculation about heterogeneity (C141) is reasonable but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "SET27 and CRD1 are Class I chromatin factors that exhibit sharp peaks at TSRs coinciding with nascent pre-mRNA 5' ends, distinct from Class II factors that extend into transcription units.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C38, C39, and C40 are supported by ChIP-seq data from previous work (Staneva et al., 2021) showing distinct localization patterns. This provides important context for the current study but represents previously published findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Background information on kinetoplastid biology, T. brucei life cycle, VSG expression, polycistronic transcription, and chromatin organization at TSRs and TTRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C37 present established background knowledge about T. brucei biology, appropriately cited from the literature. These provide essential context for understanding the significance of the findings but are not novel results of this study.",
+    "result_type": "MINOR"
+  }
+]

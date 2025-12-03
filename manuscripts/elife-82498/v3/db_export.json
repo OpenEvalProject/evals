@@ -1,0 +1,2469 @@
+{
+  "submission": {
+    "id": "add428d0-4d73-4352-b2f2-3738068a68e6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T19:26:24.101115Z",
+    "updated_at": "2025-12-03T19:26:24.101115Z"
+  },
+  "content": [
+    {
+      "id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "submission_id": "add428d0-4d73-4352-b2f2-3738068a68e6",
+      "content_type": "manuscript",
+      "content_text": "# Tracing the path of 37,050 studies into practice across 18 specialties of the 2.4 million published between 2011 and 2020\n\n## Authors\n\n- Moustafa Abdalla<sup>1</sup> ([ORCID: 0000-0002-2481-9753](https://orcid.org/0000-0002-2481-9753)) \u2020\n- Salwa Abdalla<sup>3</sup>\n- Mohamed Abdalla<sup>3</sup>\n\n### Affiliations\n\n1. Department of Surgery, Harvard Medical School, Massachusetts General Hospital Boston Canada ([ROR:002pd6e78](https://ror.org/002pd6e78))\n2. Computational Statistics and Machine Learning Group, Department of Statistics, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))\n3. Department of Computer Science, University of Toronto Toronto Canada ([ROR:03dbr7087](https://ror.org/03dbr7087))\n4. Institute for Better Health, Trillium Health Partners Ontario Canada ([ROR:03v6a2j28](https://ror.org/03v6a2j28))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe absence of evidence to assess treatment efficacy partially underpins the unsustainable expenditure of the US healthcare system, a challenge exacerbated by a limited understanding of the factors influencing the translation of clinical research into practice. Leveraging a dataset of >10,000 UpToDate articles, sampled every 3 months between 2011 and 2020, we trace the path of research (37,050 newly added articles from 887 journals) from initial publication to the point-of-care, compared to the 2.4 million uncited studies published during the same time window across 18 medical specialties. Our analysis reveals substantial variation in how specialties prioritize/adopt research, with regards to a fraction of literature cited (0.4\u20132.4%) and quality-of-evidence incorporated. In 9 of 18 specialties, less than 1 in 10 clinical trials are ever cited. Furthermore, case reports represent one of the most cited article types in 12 of 18 specialties, comprising nearly a third of newly added references for some specialties (e.g. dermatology). Anesthesiology, cardiology, critical care, geriatrics, internal medicine, and oncology tended to favor higher-quality evidence. By modeling citations as a function of National Institutes of Health (NIH) department-specific funding, we estimate the cost of bringing one new clinical citation to the point-of-care as ranging from thousands to tens of thousands of dollars depending on specialty. The success of a subset of specialties in incorporating a larger proportion of published research, as well as high(er) quality of evidence, demonstrates the existence of translational strategies that should be applied more broadly. In addition to providing a baseline for monitoring the efficiency of research investments, we also describe new \u2018impact\u2019 indices to assess the efficacy of reforms to the clinical scientific enterprise.\n\n## Introduction\n\nTwo key elements to the underperformance of national healthcare systems are that: (a) many patients do not receive recommended services (Gelijns and Gabriel, 2012; McGlynn et al., 2003; MEDICINE IROE-B, 2011) and (b) many receive treatment that is neither necessary nor appropriate for them (McGlynn et al., 2003; MEDICINE IROE-B, 2011; Fisher and Wennberg, 2003). The Institute of Medicine (IOM) Roundtable on Value and Science-Driven Healthcare argues; however, the challenge is not a matter of overuse (or underuse) of services, but the absence of evidence to assess the appropriateness of treatment approaches (MEDICINE IROE-B, 2011; Wennberg et al., 2002; Gill et al., 1996; Lee et al., 2005; Lee et al., 2000). With more than 1 million medical research articles published in the past year alone, the adoption of clinical studies into practice is one critical aspect of this challenge \u2013 further compounded by a limited understanding of how the wave of biomedical literature reaches the shores of clinical practice. A few case studies/series have attempted to understand this block in clinical adoption using surrogate markers, such as submission to the Food and Drug Administration (FDA) (Stern and Simes, 1997; Holgate, 2007), number of citations (Dickersin, 1990; Mansfield, 1991), or incorporation into society-specific clinical guidelines (Contopoulos-Ioannidis et al., 2008; Decullier et al., 2005; Buxton et al., 2008). However, these studies are often too coarse and indirect for a real-time and practical understanding of how clinicians read, synthesize, and integrate the literature into their everyday practice. Furthermore, these studies often conflate translation of basic science with translation of clinical studies to practice, which the IOM has identified as two separate and distinct translational blocks (Green et al., 2003). In addition, using citation in consensus documents or society recommendations is too slow and often limited in scope to provide answers to the questions defined here.\n\nFocusing on the translation of clinical studies into practice, we capitalize on the electronic resource UpToDate, which provides current evidence-based clinical information at the point-of-care and is used by over a million clinicians across 32,000 organizations in 180 countries (Post, 2020). While the relevance of UpToDate varies, it serves as a reliable and regularly updated source of a specialty-focused clinician-driven curation of the broader literature. Thus, we use citation in UpToDate as one metric to assess translation, especially given its quantifiable impact on patient care (Shimizu et al., 2018; Maviglia et al., 2002; Lucas et al., 2004; Marshall et al., 2013; Bonis et al., 2008). Leveraging a dataset of more than 10,000 UpToDate articles, sampled every 3 months for the past decade (2011\u20132020), we provide the first thorough and most comprehensive characterization and understanding of the factors that influence the adoption of clinical research by tracing the path of 37,050 newly added references from 887 journals, as well as provide valuable insight into the variation of adoption across 18 non-surgical specialties by clinical topic, article type, geography, and over time.\n\n## Results\n\n### What fraction of the published literature is eventually cited in point-of-care resources?\n\nAmong the 18 specialties included in our analysis, neurology had the highest citation rate; of the 85,843 research articles published in clinical neurology journals during our sampling window, 2057 (2.4%) were eventually cited at least once in UpToDate. Rheumatology (1442 cited of 62,681 published; 2.3%), hematology (2506 of 110,055; 2.3%), and pediatrics (2678 of 119,486; 2.2%) had similar citation rates. Three specialties had sub-percent citation rates: radiology (1214 cited of 165,985 published; 0.7%), geriatrics (64 of 9781; 0.6%), and pathology (317 of 69,343; 0.4%). All remaining specialties, including internal medicine, had between 1 and 2% of all published research eventually cited in UpToDate.\n\nThe proportion of citations also varied substantially by article type (Figure 1). Practice guidelines represented the most likely article type to be cited, with 9 of the 18 specialties citing >13% (interquartile range [IQR] of 5.1\u201314.5%) of all practice guidelines published in their respective journals. Although clinical trials (especially phase III trials) were the second most likely article type to be cited (9 of 18 specialties citing >9.5% of all phase III clinical trials published during our sampling window [IQR 3.0\u201313.0%]), it was also the most variable (SD of 8.7%). In 9 of the 18 specialties, we observed that less than 1 in 10 phase III clinical trials were ever cited at the point-of-care (Figure 1). Of the top-performing specialties, the citation rate of clinical trials was distinctly high in internal medicine (299 cited of 822 phase III clinical trials published; 36.3%), pediatrics (8 of 48; 16.7%), and infectious diseases (15 of 99; 15.1%). Notably, no equivalence trial, among the 43 published across all 18 specialties, was ever cited. Comparatively, pragmatic clinical trials were only cited in 5 of the 18 specialties: oncology (50% of published pragmatic clinical trials cited), internal medicine (20.3%), endocrinology (11.1%), cardiology (8.0%), and pediatrics (7.7%). The remaining 13 specialties had a 0% citation rate for pragmatic clinical trials. Similarly, case reports were also unlikely to be cited at the point-of-care across all specialties, with only 3111 case reports (0.8%) cited of the 403,043 published in specialty journals during our sampling window.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/82498/elife-82498-fig1-v3.jpg)\n\n**Figure 1.:** (A) Stacked barplot of the absolute number of citations in UpToDate over the past decade as a function of article type, grouped by specialty (inset: zoomed plot to permit comparison of non-medicine specialties). (B) Barplot of the % proportion of articles cited (defined as number of particular article type cited/total number of articles cited in UpToDate) \u00d7100, grouped by medical specialty. (NB:) Totals in panel A may differ slightly from the totals described in the text as some article may have more than one classification and some references are unclassified.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82498/elife-82498-fig1-figsupp1-v3.jpg)\n\n### Which are the predominant article types cited in point-of-care resources?\n\nDespite a cumulative citation rate of <1%, case reports still represented the most common article type of those cited in 2 of the 18 specialties (Figure 1). Among the 1506 citations added from dermatology journals over the past decade, 501 (32.0%) were case reports. Similarly, of the 317 citations from pathology journals, 49 (15.5%) were case reports. Strikingly, case reports were also consistently among the three most commonly cited article types across all but six specialties (median of 7.1% of added citations were case reports; IQR 5.6\u201312.3%). By comparison, phase III clinical trials represented less than 1.0% of added citations in 9 of 18 specialties (IQR 0.2\u20131.9%). Of the 18 specialties, anesthesiology, cardiac and cardiovascular systems, critical care, geriatrics, internal medicine, and oncology tended to favor higher-quality evidence (Figure 1); reviews/systematic reviews, practice-guidelines, and meta-analyses represented the three most cited article types among five of these six specialties. Oncology was relatively unique in that it was the only specialty where phase III clinical trials ranked among the most commonly cited article types; we counted 411 phase III clinical trials among the 3071 references added during our sampling window from oncology journals.\n\n### What is the time-to-citation by specialty and article type?\n\nTime-to-citation did not vary meaningfully between specialties; 50% of articles were cited within a year of publication (IQR 0\u20134 years). There were significant differences, however, between article types (Figure 1\u2014figure supplement 1). Phase III clinical trials had the shortest time-to-citation, with 75% cited within the year of publication (IQR 0\u20131 year). Meta-analyses, practice guidelines, and systematic reviews followed a similar, albeit slightly slower, trend. Case reports had the longest time-to-citation (median 3 years; IQR 1\u20139 years). Across all specialties, higher quality of evidence correlated with a shorter time-to-citation (Figure 1\u2014figure supplement 1).\n\n### Is journal impact factor predictive of either proportion of articles cited or time-to-citation in point-of-care resources?\n\nFor 12 of the 18 medical specialties, journal impact factor was significantly correlated with the proportion of articles cited (Figure 2). In descending order, impact factor was significantly correlated with citation rate in: rheumatology (Spearman\u2019s rho = 0.86, p=1.4 \u00d7 10\u20136), infectious diseases (rho = 0.79, p=7.7 \u00d7 10\u20135), hematology (rho = 0.69, p=8.1 \u00d7 10\u20135), pediatrics (rho = 0.66, p=0.0001), gastroenterology and hepatology (rho = 0.53, p=3.6 \u00d7 10\u20135), cardiac and cardiovascular systems (rho = 0.55, p=1.2 \u00d7 10\u20136), internal medicine (rho = 0.49, p=2.3 \u00d7 10\u20136), neurology (rho = 0.43, p=0.0086), dermatology (rho = 0.39, p=0.02), urology and nephrology (rho = 0.37, p=0.007), endocrinology and metabolism (rho = 0.32, p=0.02), and oncology (rho = 0.29, p=0.01). In other words, in these 12 specialties, journals with higher impact factors tended to have a larger fraction of their published articles cited at the point-of-care. Figure 2 visualizes the respective scatterplots labeled by journal. For the remaining six specialties, the relationship between impact factor and portion of cited articles was not significant (p>0.05).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/82498/elife-82498-fig2-v3.jpg)\n\n**Figure 2.:** Scatterplot of proportion of articles cited, defined as the number of citations/total number of articles published by a specific journal, as a function of the journal\u2019s 5 year impact factor for (A) anesthesiology, (B) cardiac and cardiovascular systems, (C) clinical neurology, (D) critical care medicine, (E) dermatology, (F) emergency medicine, (G) endocrinology and metabolism, (H) gastroenterology and hepatology, (I) geriatrics and gerontology, (J) hematology, (K) infectious diseases, (L) medicine (general and internal), (M) oncology, (N) pathology, (O) pediatrics, (P) \u2018radiology, nuclear medicine and medical imaging,\u2019 (Q) rheumatology, and (R) urology and nephrology.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82498/elife-82498-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Scatterplot of median time-to-citation as a function of the journal\u2019s 5 year impact factor, for (A) anesthesiology, (B) cardiac and cardiovascular systems, (C) clinical neurology, (D) critical care medicine, (E) dermatology, (F) emergency medicine, (G) endocrinology and metabolism, (H) gastroenterology and hepatology, (I) geriatrics and gerontology, (J) hematology, (K) infectious diseases, (L) medicine (general and internal), (M) oncology, (N) pathology, (O) pediatrics, (P) \u2018radiology, nuclear medicine and medical imaging\u2019, (Q) rheumatology, and (R) urology and nephrology. An empty plot panel denotes no term, or Unified Medical Language System (UMLS) concept was significant after multiple testing adjustment, and a blank placeholder was placed to explicitly confirm this.\n\nAnalogously, journal impact factor was significantly and negatively correlated with time-to-citation for 10 of 18 specialties: infectious diseases (Spearman\u2019s rho = \u20130.51, p=0.03), internal medicine (rho = \u20130.408, p=0.0001), hematology (rho = \u20130.407, p=0.03), pediatrics (rho = \u20130.40, p=0.03), dermatology (rho = \u20130.406, p=0.02), pathology (rho = \u20130.45, p=0.04), neurology (Spearman\u2019s rho = \u20130.37, p=0.03), urology and nephrology (rho = \u20130.34, p=0.02), cardiac and cardiovascular systems (rho = \u20130.36, p=0.002), and oncology (rho = \u20130.31, p=0.006). In other words, articles from higher impact specialty journals tended to have a quicker time to citation (Figure 2\u2014figure supplement 1).\n\nWhile the impact factor appears able to (partially) prioritize journals with greater (or quicker) than expected contributions to clinical practice, we sought to better quantify the impact of the journal on clinical practice using two previously introduced new indices (see Materials and methods): the clinical relevancy index (CRI) and the clinical immediacy index (CII). We calculated these indices for all journals in the 18 medical specialties discussed here in Supplementary file 1.\n\n### What topics are over-(or under-)represented in abstracts cited in point-of-care resources, compared to uncited literature?\n\n#### Do these topics explain variation in time-to-citation?\n\nAbstract contents (as assessed using Unified Medical Language System [UMLS] concepts or terms) can significantly explain citation (versus not) in point-of-care resources, as well as variation in time-to-citation among cited abstracts (Figure 3 and Figure 3\u2014figure supplements 1\u20134). While results for all 18 specialties are fascinating and informative, the Appendix 1 focuses on two specialties (cardiac and cardiovascular systems and endocrinology and metabolism).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/82498/elife-82498-fig3-v3.jpg)\n\n**Figure 3.:** Word cloud plots with size of word proportional to the strength of the association for (A) Unified Medical Language System (UMLS) concepts significantly overrepresented in articles cited from cardiac and cardiovascular systems (i.e. \u2018cardiology\u2019 journals); (B) UMLS concepts significantly overrepresented in articles cited from endocrinology and metabolism journals.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82498/elife-82498-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Word cloud plots with size of term proportional to the strength of the association for Unified Medical Language System (UMLS) concepts significantly overrepresented in articles cited from: (A) anesthesiology, (B) cardiac and cardiovascular systems, (C) clinical neurology, (D) critical care medicine, (E) dermatology, (F) emergency medicine, (G) endocrinology and metabolism, (H) gastroenterology and hepatology, (I) geriatrics and gerontology, (J) hematology, (K) infectious diseases, (L) medicine (general and internal), (M) oncology, (N) pathology, (O) pediatrics, (P) \u2018radiology, nuclear medicine and medical imaging,\u2019 (Q) rheumatology, and (R) urology and nephrology. An empty plot panel denotes no term, or UMLS concept was significant after multiple testing adjustment, and a blank placeholder was placed to explicitly confirm this.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/82498/elife-82498-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Word cloud plots with size of word proportional to the strength of the association for Unified Medical Language System (UMLS) concepts significantly underrepresented in articles cited from: (A) anesthesiology, (B) cardiac and cardiovascular systems, (C) clinical neurology, (D) critical care medicine, (E) dermatology, (F) emergency medicine, (G) endocrinology and metabolism, (H) gastroenterology and hepatology, (I) geriatrics and gerontology, (J) hematology, (K) infectious diseases, (L) medicine (general and internal), (M) oncology, (N) pathology, (O) pediatrics, (P) \u2018radiology, nuclear medicine and medical imaging,\u2019 (Q) rheumatology, and (R) urology and nephrology. An empty plot panel denotes no term, or UMLS concept was significant after multiple testing adjustment, and a blank placeholder was placed to explicitly confirm this.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/82498/elife-82498-fig3-figsupp3-v3.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Word cloud plots with size of term proportional to the strength of the association for Unified Medical Language System (UMLS) concepts significantly associated a shorter time-to-citation among articles cited from: (A) anesthesiology, (B) cardiac and cardiovascular systems, (C) clinical neurology, (D) critical care medicine, (E) dermatology, (F) emergency medicine, (G) endocrinology and metabolism, (H) gastroenterology and hepatology, (I) geriatrics and gerontology, (J) hematology, (K) infectious diseases, (L) medicine (general and internal), (M) oncology, (N) pathology, (O) pediatrics, (P) \u2018radiology, nuclear medicine and medical imaging,\u2019 (Q) rheumatology, and (R) urology and nephrology. An empty plot panel denotes no term, or UMLS concept was significant after multiple testing adjustment, and a blank placeholder was placed to explicitly confirm this.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/82498/elife-82498-fig3-figsupp4-v3.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Word cloud plots with size of term proportional to the strength of the association for Unified Medical Language System (UMLS) concepts significantly associated a longer time-to-citation among articles cited from: (A) anesthesiology, (B) cardiac and cardiovascular systems, (C) clinical neurology, (D) critical care medicine, (E) dermatology, (F) emergency medicine, (G) endocrinology and metabolism, (H) gastroenterology and hepatology, (I) geriatrics and gerontology, (J) hematology, (K) infectious diseases, (L) medicine (general and internal), (M) oncology, (N) pathology, (O) pediatrics, (P) \u2018radiology, nuclear medicine and medical imaging,\u2019 (Q) rheumatology, and (R) urology and nephrology. An empty plot panel denotes no term, or UMLS concept was significant after multiple testing adjustment, and a blank placeholder was placed to explicitly confirm this.\n\n### What is the influence of department-specific NIH funding on the absolute number of citations and time-to-citation?\n\n#### What is the impact of cumulative NIH funding?\n\nAs we previously noted in curation of our dataset, it is often difficult to disentangle hospitals, medical schools, and affiliated research institutions. As such, to explore the role and impact of NIH funding, we use city (rather than individual institutions or hospitals) as the unit of analysis. Our analysis primarily focused on the United States for two reasons. Firstly, 35% of references from the 18 medical specialties cited in UpToDate were from the United States; by way of comparison, in 2019, 39% of all publications in PubMed were from the United States. Thus, our data was well powered for our funding analyses. Secondly, the NIH publicly releases its funding information with sufficient granularity and standardized specialty labels to enable the analysis.\n\nOur department-specific analysis combined eight specialties (cardiac and cardiovascular systems, critical care medicine, endocrinology and metabolism, gastroenterology and hepatology, geriatrics and gerontology, hematology, rheumatology, and oncology) under the \u2018general and internal medicine\u2019 specialty label because a large portion of the funding for these specialties occurs through the NIH department combining name of \u2018internal medicine/medicine\u2019 (i.e. there was no specific department labels for these subset of specialties).\n\nAverage annual department-specific NIH funding correlated strongly with the absolute number of total citations, in the past decade, across all specialties (Figures 4 and 5): pathology (Spearman\u2019s rho = 0.73, p=1.2 \u00d7 10\u201310), neurology (rho = 0.70, p<2.2 \u00d7 10\u201316), pediatrics (rho = 0.67, p<2.2 \u00d7 10\u201316), radiology (rho = 0.64, p=4.8 \u00d7 10\u201312), internal medicine (rho = 0.60, p<2.2 \u00d7 10\u201316), dermatology (rho = 0.57, p=1.2 \u00d7 10\u20139), urology and nephrology (rho = 0.57, p=3.0 \u00d7 10\u201313), emergency medicine (rho = 0.52, p=2.1 \u00d7 10\u20137), anesthesiology (rho = 0.48, p=9.0 \u00d7 10\u20136), and infectious diseases (rho = 0.41, p=0.006). Figure 5 depicts city-labeled scatterplots that highlight, both, American cities (and institutions) that were successful at translating research back to the practice and cities that were particularly efficient. Figure 4 illustrates the cumulative correlation of NIH funding, across all medical and surgical specialties. In sharp contrast, to both the department specific and cumulative funding associations with number of citations, NIH funding did not correlate with time-to-citation in any specialty (Figure 4\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/82498/elife-82498-fig4-v3.jpg)\n\n**Figure 4.:** It is important to note that this includes all NIH departments (including all medical and surgical specialties, as well as more translational/basic funding departments).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82498/elife-82498-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Scatterplots of median time-to-citation, per city, as a function of the average 10 year department-specific NIH funding, for (A) anesthesiology, (B) clinical neurology, (C) dermatology, (D) emergency medicine, (E) infectious diseases, (F) medicine (general and internal), (G) pathology, (H) pediatrics, (I) \u2018radiology, nuclear medicine and medical imaging,\u2019 and (J) urology and nephrology. (NB:) The \u2018medicine, general and internal\u2019 plot, in panel F, combines the results for nine specialties (cardiac and cardiovascular systems, critical care medicine, endocrinology and metabolism, gastroenterology and hepatology, geriatrics and gerontology, hematology, rheumatology, and oncology \u2013 in addition to \u2018general and internal medicine\u2019) because a large portion of the funding for these eight specialties occurs through the NIH department combining name of \u2018internal medicine/medicine\u2019 (i.e. there was no specific department labels for these subset of specialties).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/82498/elife-82498-fig5-v3.jpg)\n\n**Figure 5.:** Scatterplots of absolute number of articles cited, per city, as a function of the average 10 year department-specific NIH funding, for (A) anesthesiology, (B) clinical neurology, (C) dermatology, (D) emergency medicine, (E) infectious diseases, (F) medicine (general and internal), (G) pathology, (H) pediatrics, (I) \u2018radiology, nuclear medicine and medical imaging,\u2019 and (J) urology and nephrology. (NB:) The \u2018medicine, general and internal\u2019 plot, in panel F, combines the results for nine specialties (cardiac and cardiovascular systems, critical care medicine, endocrinology and metabolism, gastroenterology and hepatology, geriatrics and gerontology, hematology, rheumatology, and oncology \u2013 in addition to \u2018general and internal medicine\u2019) because a large portion of the funding for these eight specialties occurs through the NIH department combining name of \u2018internal medicine/medicine\u2019 (i.e. there was no specific department labels for these subset of specialties). It is also important to note that relevant funding may come from other NIH departments (e.g. \u2018cell biology\u2019), and this is reflected in Figure 4.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82498/elife-82498-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Barplot summarizing the proportion of articles cited from (A) all countries with at least 10 articles cited over the past decade from the 18 medical specialties; and (B) all American cities with at least 10 articles cited over the past decade from the 18 medical specialties, organized in alphabetical order. Approximately 18% of articles had no primary affiliation.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/82498/elife-82498-fig5-figsupp2-v3.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Density world map illustrating the primary affiliation of articles in cited in UpToDate for all 18 medical subspecialties. (B) Density map of the United States illustrating the primary affiliation of articles in cited in UpToDate for all 18 medical subspecialties.\n\nGiven the strength of correlation of NIH funding with the absolute number of citations across all medical specialties, we also sought to quantify the cost of one new added citation to the point-of-care (i.e. the slope) using a simple linear model. More concretely, we defined the model as a linear function between the average number of UpToDate citations from each city over the past 10 years and the average annual NIH department-specific funding between 2011 and 2020. This estimate may be interpreted as the approximate (indirect) cost of bringing clinical research to the bedside in NIH funding dollars, with the intercept being proportional to the initial investment \u2018set-up\u2019 cost. In descending order, a new citation at the point-of-care costs: $48,086.18 per new point-of-care UpToDate citation from urology and nephrology journals (\u00b1 SE of $7410.68 and an intercept of $470,546.67), $34,529.29 dollars from dermatology journals (\u00b1 $4043.66 and an intercept = $251,133.85), $13,286.72 from general and internal medicine specialty journals (\u00b1 $746.58 and an intercept = $673,780.86), $10,655.93 dollars in emergency medicine (\u00b1 $2795.21 and an intercept = $265,336.27), $6,832.46 dollars from pediatrics journals (\u00b1 $756.08 and an intercept = $325,662.10), $6482.30 dollars from anesthesiology journals (\u00b1 $1393.98 and intercept = $206,374.57), $6,227.91 dollars from radiology journals (\u00b1 $1019.13 and intercept = $254,528.95), $6106.92 dollars from neurology journals (\u00b1 $607.81 and intercept = $261,566.15), and $874.85 dollars from pathology journals (\u00b1 $229.67 and an intercept = $174,163.00). The model was not significant for infectious diseases.\n\nWe subsequently generated US-focused maps to highlight, per specialty, institutions, and cities successful at translating clinical research from specialty journals to the bedside (Figure 5\u2014figure supplements 1 and 2).\n\n## Discussion\n\nWe have demonstrated that, depending on specialty, 0.4\u20132.4% of published clinical research is eventually cited in UpToDate. Our analysis also revealed several alarming trends: most clinical trials are never cited at the point-of-care \u2013 less than 1 in 10 phase III clinical trials are ever cited in 9 of 18 medical specialties. In the best-performing specialty (general and internal medicine), this citation reached a peak of 36%; that is, at least, 64% of trials are never cited. This was in line with a recent manual review of 125 randomized interventional clinical trials published in 2009\u20132010 in three disease areas (ischemic heart disease, diabetes mellitus, and lung cancer), which demonstrated only 26.4% of trials fulfilled four conditions of informativeness: importance of the clinical question, trial design, feasibility, and reporting of results (Hutchinson et al., 2022).\n\nThis trend was generally consistent among other higher quality-of-evidence research; 9 of 18 specialties had a citation rate of <13% for practice guidelines. Comparatively, while less than 1% of published case reports are ever cited, they represent one of the most commonly cited article types. For some specialties (e.g. dermatology), case-reports represented nearly a third of newly added references. The persistence of case reports as a resource to guide practice is itself not necessarily problematic; some are helpful in certain circumstances (e.g. to address rare conditions or phenomena that are hard to evaluate via other means). However, in some specialties, our results suggest that case reports outnumber most article types in UpToDate reference lists, including higher quality of evidence such as meta-analyses, systematic reviews, practice guidelines, and clinical trials. Further investigation of these case studies will highlight unmet clinical needs/questions that should be addressed with higher quality of evidence.\n\nReassuringly, a subset of specialties (e.g. \u2018cardiac and cardiovascular systems,\u2019 \u2018general and internal medicine,\u2019 and \u2018oncology\u2019) did incorporate higher quality of evidence into point-of-care reference lists, with more clinical trials cited than all other specialties cumulatively. In-depth investigation of differences between specialties in how clinical trials are designed/funded and how practice guidelines are formulated will likely reveal strategies to translating clinical research that should be applied more broadly.\n\nExploring over- and under-represented topics provided a fascinating perspective on how specialties prioritized particular topics, treatment paradigms, and clinical discoveries over the past decade. While a more thorough investigation is warranted, our preliminary study revealed that some specialties demonstrated a clear bias toward particular disease topics and treatment paradigms (e.g. cardiac and cardiovascular systems and oncology), while others were far more diverse (e.g. endocrinology and metabolism). The strong correlation of number of citations with NIH funding (both department specific and cumulatively) suggests that funding may, in part, dictate the research focus and, thus, which references are ultimately successful in making it back to the point-of-care.\n\n### Limitations\n\nThere are many possible reasons for the low rate of citation of published research noted in our analysis (e.g. it is possible that some of the published research does not adequately answer a particular clinical question). It is also quite likely that the problem is at least partly one of translation. Both practice guidelines and clinical trials have a low-citation rate despite their design and implementation requiring uncertainty or equipoise surrounding two or more care options (i.e. they are designed to help clinicians choose one treatment or diagnostic approach over another). Thus, the low rate of citation rate of clinical trials, practice guidelines, and other high-quality evidence (e.g. systematic reviews) itself suggests a translational block. To address this limitation of various factors causing the low-citation rate, we explicitly investigate the rate of citation of various article types (as well as analyze topic distributions of these article types) separately and cumulatively to delineate the quality of evidence independently of the global citation rate.\n\nAlthough it represents the largest and most comprehensive point-of-care resource, UpToDate is also just one perspective of how clinicians synthesize and integrate clinical research. Besides scholarly medical, nursing, and pharmacy journals (as major examples), many additional sources of information are readily available and accessed by these diverse stakeholders besides UpToDate. Examples include in person and online professional society communications and meetings, daily inter-professional interactions, local health system guideline consensus groups, access to clinicians who practice in \u2018centers of excellence,\u2019 and point-of-care decision support in electronic medical records. However, these are too informal and inaccessible for a systematic and comprehensive analysis of the translational highway between the clinical research enterprise and medical practice. Thus, UpToDate is a small but robust window into mapping and modeling translation.\n\nWe also recognize that the relevance of UpToDate varies by specialty and training status, and thus, its contents do not necessarily reflect the breadth or depth of medical care provided in a subset of medical specialties (and by extension, the body of evidence that underpins that care). Thus, while we use citation in UpToDate as a metric of translation, citation does not necessarily indicate actual changes in practice; rather citation represents adoption of knowledge to support current approaches, inform new changes in practice, or highlight points of controversy.\n\nImportantly, strengthening our conclusions, UpToDate does serve as a reliable source of a specialty-based clinician-driven curation of the broader literature; its regularly updated reference lists accurately represent a clinician\u2019s perspective on the ever-expanding literature (Shimizu et al., 2018; Maviglia et al., 2002; Lucas et al., 2004; Marshall et al., 2013; Bonis et al., 2008). Thus, rather than viewing our analysis as a comprehensive look at all evidence that underpins all care, we suggest that this analysis be viewed as a standardized (cursory) survey of a fixed set of clinicians over the past decade on particular topics (defined by the scope of UpToDate articles).\n\nOur division of the literature (and medical journals) into subspecialties using Clarivate\u2019s Journal Citation Reports admittedly does not capture the overlap/nuance of the boundaries between specialties (and journals); however, we believe it made our analyses much clearer and easier to understand. Where appropriate (e.g. citation rates of article types and cumulative NIH funding models), we analyzed all specialties together to enable us to retain a bird\u2019s eye view on global trends across all 18 medical specialties.\n\n### Conclusions\n\nTracing the path of clinical research into medical practice reveals substantial variation in how specialties prioritize and adopt clinical research into practice. The success of a subset of specialties in incorporating a larger proportion of published research, as well as high(er) quality of evidence, demonstrates the existence of translational strategies that should be applied more broadly. While the findings are largely descriptive and exploratory, the dataset and method described here are designed to generate hypotheses regarding the translation of biomedical research into practice. In designing the dataset, we sought to provide a baseline for monitoring the efficiency of research investments and ultimately lead to the development of mechanisms for weighing the efficacy of reforms to the biomedical scientific enterprise (e.g. quantifying impact at point-of-care rather than number of publications or citations).\n\n## Materials and methods\n\nWe sampled all UpToDate articles (n=10,036 articles) multiple times over the past decade using the Internet Archive\u2019s WayBackMachine; capturing 169,203 unique versions over a median of 39 months per article (IQR 16\u201373 months). The WayBackMachine is a digital archive of the World Wide Web that preserves archived copies of defunct or revised web pages. The reference list of each UpToDate article was subsequently extracted a median of 14 times (IQR 6\u201325 times) over its respective sampling window. The reference lists were subsequently filtered to exclude non-research references as defined by MEDLINE. Our final dataset consisted of 83,423 unique references from 4055 journals newly cited in the sampling window. The first version of each UpToDate article served as a baseline to enable us to calculate the time-to-citation for all references (an additional brief Methods Supplement [Appendix 1] provides additional details about UpToDate) For clarity, throughout the text, we use the shorter phrase \u2018citation at the point-of-care\u2019 as equivalent to \u2018citation in an UpToDate article during our sampling window.\u2019 We subsequently filtered the references to those published in non-surgical specialties as defined by the Clarivate\u2019s Journal Citation Reports: 37,050 newly added unique references from 887 journals. To enable comparisons with the uncited literature, we used PubMed to identify all articles published during our sampling window in these 887 journals. These 2.4 million articles were similarly processed (i.e. matched to appropriate metadata).\n\nWe subsequently paired all references with the corresponding entries in PubMed to extract the associated abstracts, author affiliations, and date of publication. Thus, our final dataset for analysis represented a curated list of all references added over the past 10 years to UpToDate, alongside relevant metadata (such as journal, year of citation, author affiliations, etc.). We extracted the UMLS concepts from the paired abstracts using SciSpacy (Neumann et al., 2019), which enabled us to map the abstract free text to UMLS concepts (Schuyler et al., 1993). This is a similar pipeline used by PubMed to index articles for search engines and enabled us to extract \u2018high-level\u2019 concepts from the abstracts of all references. The performance of these algorithms (including validity and misclassification) are described elsewhere (Schuyler et al., 1993).\n\nFor this manuscript, we subsequently filtered the references to those published in non-surgical specialties as defined by the Clarivate\u2019s Journal Citation Reports (i.e. the categories specified in assessment of the impact factor): anesthesiology, cardiac and cardiovascular systems (i.e. cardiology), clinical neurology, critical care medicine, dermatology, emergency medicine, endocrinology and metabolism, gastroenterology and hepatology, geriatrics and gerontology, hematology, infectious diseases, medicine (general and internal), oncology, pathology, pediatrics, \u2018radiology, nuclear medicine and medical imaging\u2019 (i.e. radiology), rheumatology, and urology and nephrology. This filtered dataset subset included 37,050 newly added unique references from 887 journals, alongside relevant meta-data. To enable comparisons with the uncited literature, we used PubMed to identify all articles published during our sampling window in these 887 journals. These 2.4 million articles were similarly processed (i.e. matched to appropriate metadata).\n\nFor all analyses, summary statistics were generated using base functions in R v4.1. Where appropriate, p-values were corrected for multiple testing using Benjamini-Hochberg.\n\nFor all 887 journals, we also calculate two new indices: the CRI and the CII. Unlike the impact factor, these metrics exclusively quantify citations in point-of-care resources (i.e. UpToDate), rather than overall number of citations in other research publications and thus indirectly assess the presumed impact of any given journal on clinical practice. The CRI captures the long-standing impact of the journal over the past decade using a fraction of articles from the journal cited at least once in UpToDate and is defined as:\n\n$$\nCRI_{decade}=\\frac{Articles\u00a0Cited\u00a0in\u00a0UpToDate\u00a0in\u00a0past\u00a0decade}{Total\u00a0Articles\u00a0Ever\u00a0Published\u00a0past\u00a0decade}\n$$\n\nSimilarly, by using median time-to-citation, the CII captures journal specific trends in time-to-clinical-adoption (i.e. a measure of latency for each journal) that is distinct from the overall impact of the journal, defined as:\n\n$$\nCII_{decade}=median(date\u00a0of\u00a0added\u00a0citations\u00a0in\u00a0past\u00a0decade\u2212date\u00a0of\u00a0publication)\n$$\n",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "a9577c3b-29fe-4e9c-b5d9-4ef29007185b",
+      "submission_id": "add428d0-4d73-4352-b2f2-3738068a68e6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jennifer Flegg, https://ror.org/01ej9dk98 The University of Melbourne Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82498.sa0](https://doi.org/10.7554/eLife.82498.sa0)\n\nThis paper presents an analysis of how clinical research makes its way into clinical practice in different medical specialties and across time. This is an important analysis since it has the potential to identify bottlenecks in the pathway from research to practice. The strength of evidence is convincing in that a substantial number of publications are considered over a wide time frame.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Jennifer Flegg, https://ror.org/01ej9dk98 The University of Melbourne Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82498.sa1](https://doi.org/10.7554/eLife.82498.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Tracing the Path of 37,050 Studies into Practice Across 18 Specialties of the 2.4 million Published between 2011-2020\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, including Jennifer Flegg as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by a Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Alan Schroeder (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Could something more than descriptive and exploratory be done? I feel like once the effect of one covariate is accounted for the significance of other variables may be changed. A multivariate statistical model could help address this.\n\n2) Can possible solutions be proposed to the issues that were found?\n\n3) The paper is long. The introduction (1.5 pages) could be shortened substantially. Where is the current knowledge gap lie and why does it need to be filled?\n\n4) In the Introduction where you cite data on UpToDate (UTD) usage \u2013 where does this data come from?\n\n5) The sampling strategy \u2013 this was truly done every 3 months since 2011? Specifically for this project?\n\n6) The Methods section would benefit from a bit more background on UpToDate. Some of this information may be proprietary, but if not \u2013 how are authors selected? How do they deal with financial COI? Are the submissions peer-reviewed? What is the process/cadence for updating articles? Are there other methods for quality control? This information \u2013 in addition to an elaboration on the previously published literature assessing the impact of UTD on practice \u2013 would help to provide additional context for the findings. Given the current length of the paper, could consider adding this as a supplement.\n\n7) There is a lot of information in this paper \u2013 it is very long and at times feels a bit scattered. Please consider simplifying the message.\n\nReviewer #1 (Recommendations for the authors):\n\nIn this work, the authors set out to trace the path from clinical research to clinical policy/practice. A major strength of this work is that a substantial number of publications are considered over a wide time frame. A weakness is that the statistical analysis is limited and could have been more sophisticated. I'm not convinced that the work will have a significant impact on the field since the findings are descriptive only.\n\n1) Can anything more sophisticated be done for the statistical analysis rather than just correlations? I feel like once the effect of one covariate is accounted for the significance of other variables may be changed. A multivariate statistical model could help address this.\n\n2) Could something more than descriptive and exploratory be done? Can possible solutions be proposed to the issues that were found?\n\nReviewer #2 (Recommendations for the authors):\n\nI applaud the authors (who include a section editor for UTD) for trying to better understand the current landscape of the complicated link between evidence and practice. My main critique is that there is a lot of information in this paper \u2013 it is very long and at times feels a bit scattered. I think it would have been reasonable to split this into several papers, as there appear to be multiple aims (type of article, type of funding, field, content of abstract, etc.).\n\nThe other main critique/suggestion is that all of these analyses are based on UpToDate publications. UpToDate is effectively being used as a surrogate for practice (termed \"point of care\" in this paper) and this is arguably a big leap. While this issue is acknowledged in the Limitations section, I do think it could be flushed out more, as suggested below. For whatever it is worth, I can attest that in my own daily clinical experience in a large teaching hospital, UTD is indeed a main \"go to\" for many clinical questions. But that may simply represent the local culture.\n\nSuggestions for improvement:\n\n1. The paper is long. The introduction (1.5 pages) could be shortened substantially. Where is the current knowledge gap lie and why does it need to be filled?\n\n2. In the Intro where you cite data on UTD usage \u2013 where does this data come from?\n\n3. I am still trying to wrap my head around the sampling strategy. This was truly done every 3 months since 2011? Specifically for this project?\n\n4. The Methods section would benefit from a bit more background on UpToDate. Some of this information may be proprietary, but if not \u2013 how are authors selected? How do they deal with financial COI? Are the submissions peer-reviewed? What is the process/cadence for updating articles? Are there other methods for quality control? This information \u2013 in addition to an elaboration on the previously published literature assessing the impact of UTD on practice \u2013 would help to provide additional context for the findings. Given the current length of the paper, could consider adding this as a supplement.\n",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "06659ab7-71b5-4bf4-bcb8-bf25f92a7cbd",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C1",
+      "claim": "The study analyzed more than 10,000 UpToDate articles sampled every 3 months between 2011 and 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "Leveraging a dataset of more than 10,000 UpToDate articles, sampled every 3 months for the past decade (2011\u20132020), we provide the first thorough and most comprehensive characterization and understanding of the factors that influence the adoption of clinical research by tracing the path of 37,050 newly added references from 887 journals",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the dataset size and sampling frequency in the abstract and introduction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "f89ef5e7-f83e-46f5-b03e-ab10ad655c5b",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C2",
+      "claim": "37,050 newly added articles from 887 journals were traced from publication to point-of-care.",
+      "claim_type": "EXPLICIT",
+      "source": "Leveraging a dataset of >10,000 UpToDate articles, sampled every 3 months between 2011 and 2020, we trace the path of research (37,050 newly added articles from 887 journals) from initial publication to the point-of-care",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the number of articles and journals analyzed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "49aac393-a394-46e0-b708-322735386417",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C3",
+      "claim": "2.4 million uncited studies were published during the same time window across 18 medical specialties.",
+      "claim_type": "EXPLICIT",
+      "source": "we trace the path of research (37,050 newly added articles from 887 journals) from initial publication to the point-of-care, compared to the 2.4 million uncited studies published during the same time window across 18 medical specialties",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the number of uncited studies for comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "7845ea43-d45c-49ab-a5c6-e6eee860b039",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C4",
+      "claim": "The fraction of literature cited in UpToDate ranges from 0.4% to 2.4% across specialties.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis reveals substantial variation in how specialties prioritize/adopt research, with regards to a fraction of literature cited (0.4\u20132.4%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly provides the range of citation rates across specialties.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "fc881891-50d3-472a-923c-2a23925eaa14",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C5",
+      "claim": "In 9 of 18 specialties, less than 1 in 10 clinical trials are ever cited.",
+      "claim_type": "EXPLICIT",
+      "source": "In 9 of 18 specialties, less than 1 in 10 clinical trials are ever cited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this finding about clinical trial citation rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "05de0548-3c34-43e4-b995-2e5deb858656",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C6",
+      "claim": "Case reports represent one of the most cited article types in 12 of 18 specialties.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, case reports represent one of the most cited article types in 12 of 18 specialties, comprising nearly a third of newly added references for some specialties (e.g. dermatology).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this finding about case report citation patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "d9a84221-5998-4ea4-96a6-e2e4d124b0e1",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C7",
+      "claim": "Case reports comprise nearly a third of newly added references for dermatology.",
+      "claim_type": "EXPLICIT",
+      "source": "case reports represent one of the most cited article types in 12 of 18 specialties, comprising nearly a third of newly added references for some specialties (e.g. dermatology)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly provides this specific statistic for dermatology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "819ed985-84c6-48f6-acbd-16b1c8d04f33",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C8",
+      "claim": "Anesthesiology, cardiology, critical care, geriatrics, internal medicine, and oncology tended to favor higher-quality evidence.",
+      "claim_type": "EXPLICIT",
+      "source": "Anesthesiology, cardiology, critical care, geriatrics, internal medicine, and oncology tended to favor higher-quality evidence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly lists these specialties as favoring higher-quality evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "2d4212fa-e362-41c8-98c4-b1b4db55fbd9",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C9",
+      "claim": "The cost of bringing one new clinical citation to the point-of-care ranges from thousands to tens of thousands of dollars depending on specialty.",
+      "claim_type": "EXPLICIT",
+      "source": "By modeling citations as a function of National Institutes of Health (NIH) department-specific funding, we estimate the cost of bringing one new clinical citation to the point-of-care as ranging from thousands to tens of thousands of dollars depending on specialty.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this cost estimate based on NIH funding modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "f24601b6-a264-4572-a986-62f18762015c",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C10",
+      "claim": "Many patients do not receive recommended services.",
+      "claim_type": "EXPLICIT",
+      "source": "Two key elements to the underperformance of national healthcare systems are that: (a) many patients do not receive recommended services (Gelijns and Gabriel, 2012; McGlynn et al., 2003; MEDICINE IROE-B, 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites multiple sources supporting this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "b9cfd391-7f04-46da-bb28-0d6c8d0de659",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C11",
+      "claim": "Many patients receive treatment that is neither necessary nor appropriate for them.",
+      "claim_type": "EXPLICIT",
+      "source": "many receive treatment that is neither necessary nor appropriate for them (McGlynn et al., 2003; MEDICINE IROE-B, 2011; Fisher and Wennberg, 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites multiple sources supporting this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "3e5bd3a1-040f-4505-ad6d-41ef29a69d39",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C12",
+      "claim": "The challenge in healthcare is the absence of evidence to assess the appropriateness of treatment approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "The Institute of Medicine (IOM) Roundtable on Value and Science-Driven Healthcare argues; however, the challenge is not a matter of overuse (or underuse) of services, but the absence of evidence to assess the appropriateness of treatment approaches (MEDICINE IROE-B, 2011; Wennberg et al., 2002; Gill et al., 1996; Lee et al., 2005; Lee et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites the IOM and multiple supporting sources for this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "1dea5bb2-0968-448a-bbc2-7f2a9bc78e49",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C13",
+      "claim": "More than 1 million medical research articles were published in the past year alone.",
+      "claim_type": "EXPLICIT",
+      "source": "With more than 1 million medical research articles published in the past year alone, the adoption of clinical studies into practice is one critical aspect of this challenge",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction explicitly states this publication volume.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "b4480ecb-1346-4c38-a5b8-8a2ee81fb194",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C14",
+      "claim": "UpToDate is used by over a million clinicians across 32,000 organizations in 180 countries.",
+      "claim_type": "EXPLICIT",
+      "source": "Focusing on the translation of clinical studies into practice, we capitalize on the electronic resource UpToDate, which provides current evidence-based clinical information at the point-of-care and is used by over a million clinicians across 32,000 organizations in 180 countries (Post, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites Post, 2020 as the source for these usage statistics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "3f5c0c67-d3aa-40f0-a68b-7ddc8a7e9f94",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C15",
+      "claim": "UpToDate has a quantifiable impact on patient care.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we use citation in UpToDate as one metric to assess translation, especially given its quantifiable impact on patient care (Shimizu et al., 2018; Maviglia et al., 2002; Lucas et al., 2004; Marshall et al., 2013; Bonis et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites multiple sources supporting the impact of UpToDate on patient care.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "1583c2e7-cc68-4821-8574-21a265c9b79e",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C16",
+      "claim": "Neurology had the highest citation rate among the 18 specialties, with 2.4% of published articles eventually cited in UpToDate.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 18 specialties included in our analysis, neurology had the highest citation rate; of the 85,843 research articles published in clinical neurology journals during our sampling window, 2057 (2.4%) were eventually cited at least once in UpToDate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides these specific numbers for neurology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "66022110-aa06-4de0-9bf0-4910d71d71e3",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C17",
+      "claim": "Rheumatology had a citation rate of 2.3% (1442 cited of 62,681 published).",
+      "claim_type": "EXPLICIT",
+      "source": "Rheumatology (1442 cited of 62,681 published; 2.3%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides these specific numbers for rheumatology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "44f68998-714b-4091-94f7-743c8f2d8f50",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C18",
+      "claim": "Hematology had a citation rate of 2.3% (2506 of 110,055 published).",
+      "claim_type": "EXPLICIT",
+      "source": "hematology (2506 of 110,055; 2.3%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides these specific numbers for hematology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "0be0c336-682e-4288-8ddf-4c368d796b90",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C19",
+      "claim": "Pediatrics had a citation rate of 2.2% (2678 of 119,486 published).",
+      "claim_type": "EXPLICIT",
+      "source": "pediatrics (2678 of 119,486; 2.2%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides these specific numbers for pediatrics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "c490a09b-5ddc-4fff-9f89-6de3dd97d86b",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C20",
+      "claim": "Radiology had a citation rate of 0.7% (1214 cited of 165,985 published).",
+      "claim_type": "EXPLICIT",
+      "source": "radiology (1214 cited of 165,985 published; 0.7%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides these specific numbers for radiology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "89eb95bc-eb35-4d06-9992-16f8443aba0c",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C21",
+      "claim": "Geriatrics had a citation rate of 0.6% (64 of 9781 published).",
+      "claim_type": "EXPLICIT",
+      "source": "geriatrics (64 of 9781; 0.6%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides these specific numbers for geriatrics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "45a12f1a-1f8c-4ed8-b094-d790f512332b",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C22",
+      "claim": "Pathology had the lowest citation rate at 0.4% (317 of 69,343 published).",
+      "claim_type": "EXPLICIT",
+      "source": "pathology (317 of 69,343; 0.4%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides these specific numbers for pathology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "0f694668-b2b8-4b2f-8927-10917e287bb8",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C23",
+      "claim": "Practice guidelines represented the most likely article type to be cited, with 9 of 18 specialties citing >13% of all practice guidelines published.",
+      "claim_type": "EXPLICIT",
+      "source": "Practice guidelines represented the most likely article type to be cited, with 9 of the 18 specialties citing >13% (interquartile range [IQR] of 5.1\u201314.5%) of all practice guidelines published in their respective journals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this finding about practice guidelines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "03d405b7-5abd-4ee9-9277-0bdbac72183a",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C24",
+      "claim": "Clinical trials were the second most likely article type to be cited, with 9 of 18 specialties citing >9.5% of all phase III clinical trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Although clinical trials (especially phase III trials) were the second most likely article type to be cited (9 of 18 specialties citing >9.5% of all phase III clinical trials published during our sampling window [IQR 3.0\u201313.0%])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this finding about clinical trials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "d3707620-df21-455c-9481-ba90f8dfdaa0",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C25",
+      "claim": "No equivalence trial among the 43 published across all 18 specialties was ever cited.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, no equivalence trial, among the 43 published across all 18 specialties, was ever cited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this finding about equivalence trials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "f7a465a4-77f6-46ca-a9b8-4794c4ae24f9",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C26",
+      "claim": "Pragmatic clinical trials were only cited in 5 of the 18 specialties.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparatively, pragmatic clinical trials were only cited in 5 of the 18 specialties: oncology (50% of published pragmatic clinical trials cited), internal medicine (20.3%), endocrinology (11.1%), cardiology (8.0%), and pediatrics (7.7%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly lists the five specialties that cited pragmatic trials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "6e680109-e9de-45db-bfef-ad57ecd9d572",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C27",
+      "claim": "The remaining 13 specialties had a 0% citation rate for pragmatic clinical trials.",
+      "claim_type": "EXPLICIT",
+      "source": "The remaining 13 specialties had a 0% citation rate for pragmatic clinical trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "646db5a5-2ddd-4d1e-8c34-aa8deb0e81c1",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C28",
+      "claim": "Only 3111 case reports (0.8%) were cited of the 403,043 published in specialty journals during the sampling window.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, case reports were also unlikely to be cited at the point-of-care across all specialties, with only 3111 case reports (0.8%) cited of the 403,043 published in specialty journals during our sampling window.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides these specific numbers for case reports.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "eae26e2a-a215-4525-9881-b7a851ea0f20",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C29",
+      "claim": "Among the 1506 citations added from dermatology journals over the past decade, 501 (32.0%) were case reports.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 1506 citations added from dermatology journals over the past decade, 501 (32.0%) were case reports.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides these specific numbers for dermatology case reports.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "4a6322a3-cbd0-43b4-b375-bad576cdbde6",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C30",
+      "claim": "Of the 317 citations from pathology journals, 49 (15.5%) were case reports.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, of the 317 citations from pathology journals, 49 (15.5%) were case reports.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides these specific numbers for pathology case reports.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "c79ef8d8-2656-4497-bdec-627b75764b93",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C31",
+      "claim": "Case reports were consistently among the three most commonly cited article types across all but six specialties.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, case reports were also consistently among the three most commonly cited article types across all but six specialties (median of 7.1% of added citations were case reports; IQR 5.6\u201312.3%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this finding about case report citation patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "88e70487-d0d9-4c12-b17b-c977f248022b",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C32",
+      "claim": "Phase III clinical trials represented less than 1.0% of added citations in 9 of 18 specialties.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparison, phase III clinical trials represented less than 1.0% of added citations in 9 of 18 specialties (IQR 0.2\u20131.9%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this finding about phase III clinical trial citations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "4540894a-fa3b-4f9e-853a-5c727f507f1a",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C33",
+      "claim": "Oncology was the only specialty where phase III clinical trials ranked among the most commonly cited article types.",
+      "claim_type": "EXPLICIT",
+      "source": "Oncology was relatively unique in that it was the only specialty where phase III clinical trials ranked among the most commonly cited article types; we counted 411 phase III clinical trials among the 3071 references added during our sampling window from oncology journals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this finding about oncology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "e65417c0-2c64-40a2-8352-caa3dd79366d",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C34",
+      "claim": "50% of articles were cited within a year of publication (IQR 0\u20134 years).",
+      "claim_type": "EXPLICIT",
+      "source": "Time-to-citation did not vary meaningfully between specialties; 50% of articles were cited within a year of publication (IQR 0\u20134 years).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this time-to-citation statistic.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "b5afdddc-dc71-441d-a703-4925d66cea6f",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C35",
+      "claim": "Phase III clinical trials had the shortest time-to-citation, with 75% cited within the year of publication (IQR 0\u20131 year).",
+      "claim_type": "EXPLICIT",
+      "source": "Phase III clinical trials had the shortest time-to-citation, with 75% cited within the year of publication (IQR 0\u20131 year).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this time-to-citation statistic for phase III trials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "3ef4bb9a-961d-4d91-9c83-324afa7ecd7a",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C36",
+      "claim": "Case reports had the longest time-to-citation (median 3 years; IQR 1\u20139 years).",
+      "claim_type": "EXPLICIT",
+      "source": "Case reports had the longest time-to-citation (median 3 years; IQR 1\u20139 years).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this time-to-citation statistic for case reports.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "3173497b-460e-4a99-a3d9-5e4c56d736b4",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C37",
+      "claim": "Higher quality of evidence correlated with a shorter time-to-citation across all specialties.",
+      "claim_type": "EXPLICIT",
+      "source": "Across all specialties, higher quality of evidence correlated with a shorter time-to-citation (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states this correlation and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "b0dbc0b2-dd92-481a-b244-a10f9a4187ed",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C38",
+      "claim": "For 12 of the 18 medical specialties, journal impact factor was significantly correlated with the proportion of articles cited.",
+      "claim_type": "EXPLICIT",
+      "source": "For 12 of the 18 medical specialties, journal impact factor was significantly correlated with the proportion of articles cited (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states this finding and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "e997ae39-2318-41e1-a3ad-fb0b3e563155",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C39",
+      "claim": "In rheumatology, impact factor was significantly correlated with citation rate (Spearman's rho = 0.86, p=1.4 \u00d7 10\u20136).",
+      "claim_type": "EXPLICIT",
+      "source": "In descending order, impact factor was significantly correlated with citation rate in: rheumatology (Spearman's rho = 0.86, p=1.4 \u00d7 10\u20136)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this statistical correlation for rheumatology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "9c7e67ff-cdf0-4c4d-b022-567487b16184",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C40",
+      "claim": "In infectious diseases, impact factor was significantly correlated with citation rate (rho = 0.79, p=7.7 \u00d7 10\u20135).",
+      "claim_type": "EXPLICIT",
+      "source": "infectious diseases (rho = 0.79, p=7.7 \u00d7 10\u20135)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this statistical correlation for infectious diseases.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "710d02bd-d073-454d-b501-73c9f942ead0",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C41",
+      "claim": "In hematology, impact factor was significantly correlated with citation rate (rho = 0.69, p=8.1 \u00d7 10\u20135).",
+      "claim_type": "EXPLICIT",
+      "source": "hematology (rho = 0.69, p=8.1 \u00d7 10\u20135)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this statistical correlation for hematology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "f466e07a-f8ca-4124-b8b9-1465d579c2b1",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C42",
+      "claim": "In pediatrics, impact factor was significantly correlated with citation rate (rho = 0.66, p=0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "pediatrics (rho = 0.66, p=0.0001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this statistical correlation for pediatrics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "b1f23eac-4693-45c0-af4d-8659e315073c",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C43",
+      "claim": "Journal impact factor was significantly and negatively correlated with time-to-citation for 10 of 18 specialties.",
+      "claim_type": "EXPLICIT",
+      "source": "Analogously, journal impact factor was significantly and negatively correlated with time-to-citation for 10 of 18 specialties",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this finding about the negative correlation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "cb8f1682-be96-4014-82fa-58d041eddfb3",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C44",
+      "claim": "Articles from higher impact specialty journals tended to have a quicker time to citation.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, articles from higher impact specialty journals tended to have a quicker time to citation (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states this interpretation and references a figure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "f029ac47-78c1-4bb2-8a71-ef021e2d6f8f",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C45",
+      "claim": "Abstract contents can significantly explain citation (versus not) in point-of-care resources.",
+      "claim_type": "EXPLICIT",
+      "source": "Abstract contents (as assessed using Unified Medical Language System [UMLS] concepts or terms) can significantly explain citation (versus not) in point-of-care resources, as well as variation in time-to-citation among cited abstracts (Figure 3 and Figure 3\u2014figure supplements 1\u20134).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states this finding and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "25fb96fc-3625-4365-b802-aa13c5ed5a6d",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C46",
+      "claim": "Average annual department-specific NIH funding correlated strongly with the absolute number of total citations across all specialties.",
+      "claim_type": "EXPLICIT",
+      "source": "Average annual department-specific NIH funding correlated strongly with the absolute number of total citations, in the past decade, across all specialties (Figures 4 and 5)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states this correlation and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "89f3d8f9-3f28-47b3-a9db-006ddadc82ed",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C47",
+      "claim": "In pathology, NIH funding correlated with citations (Spearman's rho = 0.73, p=1.2 \u00d7 10\u201310).",
+      "claim_type": "EXPLICIT",
+      "source": "pathology (Spearman's rho = 0.73, p=1.2 \u00d7 10\u201310)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this statistical correlation for pathology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "64fb68ab-f11c-4ed8-8b51-77671442ab0b",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C48",
+      "claim": "In neurology, NIH funding correlated with citations (rho = 0.70, p<2.2 \u00d7 10\u201316).",
+      "claim_type": "EXPLICIT",
+      "source": "neurology (rho = 0.70, p<2.2 \u00d7 10\u201316)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this statistical correlation for neurology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "120215fa-e9a3-453c-bbfa-cc97e758e151",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C49",
+      "claim": "In pediatrics, NIH funding correlated with citations (rho = 0.67, p<2.2 \u00d7 10\u201316).",
+      "claim_type": "EXPLICIT",
+      "source": "pediatrics (rho = 0.67, p<2.2 \u00d7 10\u201316)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this statistical correlation for pediatrics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "82abfc23-e755-4bef-8ef5-cc7b9dca0b4e",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C50",
+      "claim": "NIH funding did not correlate with time-to-citation in any specialty.",
+      "claim_type": "EXPLICIT",
+      "source": "In sharp contrast, to both the department specific and cumulative funding associations with number of citations, NIH funding did not correlate with time-to-citation in any specialty (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states this finding and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "8f8cfffb-6d0a-4cdd-bc47-3e9aa8a7894e",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C51",
+      "claim": "A new citation at the point-of-care costs $48,086.18 per new UpToDate citation from urology and nephrology journals.",
+      "claim_type": "EXPLICIT",
+      "source": "In descending order, a new citation at the point-of-care costs: $48,086.18 per new point-of-care UpToDate citation from urology and nephrology journals (\u00b1 SE of $7410.68 and an intercept of $470,546.67)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this cost estimate based on linear modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "22fd875b-11b8-46a1-a8bb-c4ebb62b1fcc",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C52",
+      "claim": "A new citation costs $34,529.29 dollars from dermatology journals.",
+      "claim_type": "EXPLICIT",
+      "source": "$34,529.29 dollars from dermatology journals (\u00b1 $4043.66 and an intercept = $251,133.85)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this cost estimate based on linear modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "93734a57-69cc-4781-a9bd-15058954f494",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C53",
+      "claim": "A new citation costs $13,286.72 from general and internal medicine specialty journals.",
+      "claim_type": "EXPLICIT",
+      "source": "$13,286.72 from general and internal medicine specialty journals (\u00b1 $746.58 and an intercept = $673,780.86)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this cost estimate based on linear modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "e81fa589-361e-4980-bbcd-e199d0f42100",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C54",
+      "claim": "A new citation costs $10,655.93 dollars in emergency medicine.",
+      "claim_type": "EXPLICIT",
+      "source": "$10,655.93 dollars in emergency medicine (\u00b1 $2795.21 and an intercept = $265,336.27)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this cost estimate based on linear modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "b90a8929-e393-4300-9ce5-93fc29d24367",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C55",
+      "claim": "A new citation costs $6,832.46 dollars from pediatrics journals.",
+      "claim_type": "EXPLICIT",
+      "source": "$6,832.46 dollars from pediatrics journals (\u00b1 $756.08 and an intercept = $325,662.10)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this cost estimate based on linear modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "960cc101-13eb-4b95-917a-3ebe041e5044",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C56",
+      "claim": "A new citation costs $6482.30 dollars from anesthesiology journals.",
+      "claim_type": "EXPLICIT",
+      "source": "$6482.30 dollars from anesthesiology journals (\u00b1 $1393.98 and intercept = $206,374.57)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this cost estimate based on linear modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "c98fe7bd-8c96-45ec-9306-268cdb3b1c58",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C57",
+      "claim": "A new citation costs $6,227.91 dollars from radiology journals.",
+      "claim_type": "EXPLICIT",
+      "source": "$6,227.91 dollars from radiology journals (\u00b1 $1019.13 and intercept = $254,528.95)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this cost estimate based on linear modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "03fa2f0c-c367-403a-a6c0-63363dbc0614",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C58",
+      "claim": "A new citation costs $6106.92 dollars from neurology journals.",
+      "claim_type": "EXPLICIT",
+      "source": "$6106.92 dollars from neurology journals (\u00b1 $607.81 and intercept = $261,566.15)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this cost estimate based on linear modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "688623a1-06d9-4318-9ed4-9111c57481ad",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C59",
+      "claim": "A new citation costs $874.85 dollars from pathology journals.",
+      "claim_type": "EXPLICIT",
+      "source": "$874.85 dollars from pathology journals (\u00b1 $229.67 and an intercept = $174,163.00)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this cost estimate based on linear modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "4de9ceed-d08b-4171-97e6-25597a6e1b9b",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C60",
+      "claim": "The low rate of citation of published research may be partly due to a translational problem.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also quite likely that the problem is at least partly one of translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section explicitly suggests translation as a contributing factor.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "4942a25d-7181-42f6-9ded-0e3e31a7c8d4",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C61",
+      "claim": "The low citation rate of clinical trials, practice guidelines, and other high-quality evidence suggests a translational block.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the low rate of citation rate of clinical trials, practice guidelines, and other high-quality evidence (e.g. systematic reviews) itself suggests a translational block.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section explicitly interprets the low citation rates as evidence of a translational block.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "25905804-d5aa-43ec-b439-8131d0863a4b",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C62",
+      "claim": "UpToDate serves as a reliable source of a specialty-based clinician-driven curation of the broader literature.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, strengthening our conclusions, UpToDate does serve as a reliable source of a specialty-based clinician-driven curation of the broader literature; its regularly updated reference lists accurately represent a clinician's perspective on the ever-expanding literature (Shimizu et al., 2018; Maviglia et al., 2002; Lucas et al., 2004; Marshall et al., 2013; Bonis et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section cites multiple sources supporting this characterization of UpToDate.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "b6260ae4-4055-4926-b8d9-73b0bf2e50a2",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C63",
+      "claim": "The dataset consisted of 169,203 unique versions of UpToDate articles captured over a median of 39 months per article (IQR 16\u201373 months).",
+      "claim_type": "EXPLICIT",
+      "source": "We sampled all UpToDate articles (n=10,036 articles) multiple times over the past decade using the Internet Archive's WayBackMachine; capturing 169,203 unique versions over a median of 39 months per article (IQR 16\u201373 months).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section explicitly describes the dataset composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "b56dcce6-89ee-444e-bb66-ef16a1c29e26",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C64",
+      "claim": "The reference list of each UpToDate article was extracted a median of 14 times (IQR 6\u201325 times) over its respective sampling window.",
+      "claim_type": "EXPLICIT",
+      "source": "The reference list of each UpToDate article was subsequently extracted a median of 14 times (IQR 6\u201325 times) over its respective sampling window.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section explicitly describes the extraction frequency.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "ae49f897-3f14-4fbb-94d2-b6d335d40871",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C65",
+      "claim": "The final dataset consisted of 83,423 unique references from 4055 journals newly cited in the sampling window.",
+      "claim_type": "EXPLICIT",
+      "source": "Our final dataset consisted of 83,423 unique references from 4055 journals newly cited in the sampling window.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section explicitly describes the final dataset size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "fe329b6b-8cff-4297-acd9-ab18e08a7c12",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C66",
+      "claim": "PubMed was used to identify all articles published during the sampling window in the 887 journals, totaling 2.4 million articles.",
+      "claim_type": "EXPLICIT",
+      "source": "To enable comparisons with the uncited literature, we used PubMed to identify all articles published during our sampling window in these 887 journals. These 2.4 million articles were similarly processed (i.e. matched to appropriate metadata).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section explicitly describes the use of PubMed and the number of articles identified.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "4e655b4e-b2e7-4304-bdfc-6afd811ece94",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C67",
+      "claim": "SciSpacy was used to extract UMLS concepts from paired abstracts.",
+      "claim_type": "EXPLICIT",
+      "source": "We extracted the UMLS concepts from the paired abstracts using SciSpacy (Neumann et al., 2019), which enabled us to map the abstract free text to UMLS concepts (Schuyler et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section explicitly describes the use of SciSpacy and cites the relevant sources.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "98e4df8b-e780-414d-8211-f5b756b059f8",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C70",
+      "claim": "In internal medicine, 36.3% of phase III clinical trials were cited (299 cited of 822 published).",
+      "claim_type": "EXPLICIT",
+      "source": "Of the top-performing specialties, the citation rate of clinical trials was distinctly high in internal medicine (299 cited of 822 phase III clinical trials published; 36.3%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides these specific numbers for internal medicine.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "bccc4de6-d90b-40c5-b9d2-eccaf7fa4729",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C71",
+      "claim": "In pediatrics, 16.7% of phase III clinical trials were cited (8 of 48).",
+      "claim_type": "EXPLICIT",
+      "source": "pediatrics (8 of 48; 16.7%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides these specific numbers for pediatrics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "9fe54b3c-676f-43e2-a7ea-ad938adcf1b2",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C72",
+      "claim": "In infectious diseases, 15.1% of phase III clinical trials were cited (15 of 99).",
+      "claim_type": "EXPLICIT",
+      "source": "infectious diseases (15 of 99; 15.1%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides these specific numbers for infectious diseases.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "d3c2e3fa-c110-4fed-8b46-5d602f337e7c",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C73",
+      "claim": "Oncology cited 50% of published pragmatic clinical trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparatively, pragmatic clinical trials were only cited in 5 of the 18 specialties: oncology (50% of published pragmatic clinical trials cited)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this percentage for oncology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "deca7a6b-0618-48e1-a4bf-b6f4a184bdfa",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C74",
+      "claim": "Internal medicine cited 20.3% of published pragmatic clinical trials.",
+      "claim_type": "EXPLICIT",
+      "source": "internal medicine (20.3%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this percentage for internal medicine.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "decb86f3-854c-4725-a3af-d9a5cbb4bf7b",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C75",
+      "claim": "Endocrinology cited 11.1% of published pragmatic clinical trials.",
+      "claim_type": "EXPLICIT",
+      "source": "endocrinology (11.1%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this percentage for endocrinology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "a2303c5d-bb09-4e48-aa71-ce540b9bd6e8",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C76",
+      "claim": "Cardiology cited 8.0% of published pragmatic clinical trials.",
+      "claim_type": "EXPLICIT",
+      "source": "cardiology (8.0%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this percentage for cardiology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "29e76756-597e-4cb9-a916-0355d45746c6",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C77",
+      "claim": "Pediatrics cited 7.7% of published pragmatic clinical trials.",
+      "claim_type": "EXPLICIT",
+      "source": "pediatrics (7.7%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this percentage for pediatrics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "b8b05164-142e-4cc1-8f1f-54926d00170b",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C78",
+      "claim": "Reviews/systematic reviews, practice-guidelines, and meta-analyses represented the three most cited article types among five of six specialties that favored higher-quality evidence.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 18 specialties, anesthesiology, cardiac and cardiovascular systems, critical care, geriatrics, internal medicine, and oncology tended to favor higher-quality evidence (Figure 1); reviews/systematic reviews, practice-guidelines, and meta-analyses represented the three most cited article types among five of these six specialties.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states this finding and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "15bcc08a-61c0-4bf6-bc13-255dfd7417a3",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C79",
+      "claim": "Oncology counted 411 phase III clinical trials among the 3071 references added during the sampling window from oncology journals.",
+      "claim_type": "EXPLICIT",
+      "source": "Oncology was relatively unique in that it was the only specialty where phase III clinical trials ranked among the most commonly cited article types; we counted 411 phase III clinical trials among the 3071 references added during our sampling window from oncology journals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides these specific numbers for oncology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "d8c86ea2-02c5-4db2-a64f-cdbd8725587f",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C80",
+      "claim": "Meta-analyses, practice guidelines, and systematic reviews had a slightly slower time-to-citation than phase III clinical trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Meta-analyses, practice guidelines, and systematic reviews followed a similar, albeit slightly slower, trend.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly compares time-to-citation for different article types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "aede64db-f608-4788-972d-2088174db189",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C81",
+      "claim": "In gastroenterology and hepatology, impact factor was significantly correlated with citation rate (rho = 0.53, p=3.6 \u00d7 10\u20135).",
+      "claim_type": "EXPLICIT",
+      "source": "gastroenterology and hepatology (rho = 0.53, p=3.6 \u00d7 10\u20135)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this statistical correlation for gastroenterology and hepatology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "cc64db8e-889f-4a18-8e3d-ee5a4bcc4c59",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C82",
+      "claim": "In cardiac and cardiovascular systems, impact factor was significantly correlated with citation rate (rho = 0.55, p=1.2 \u00d7 10\u20136).",
+      "claim_type": "EXPLICIT",
+      "source": "cardiac and cardiovascular systems (rho = 0.55, p=1.2 \u00d7 10\u20136)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this statistical correlation for cardiac and cardiovascular systems.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "e85201d2-b523-4334-be6d-d44aaf1e1281",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C83",
+      "claim": "In internal medicine, impact factor was significantly correlated with citation rate (rho = 0.49, p=2.3 \u00d7 10\u20136).",
+      "claim_type": "EXPLICIT",
+      "source": "internal medicine (rho = 0.49, p=2.3 \u00d7 10\u20136)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this statistical correlation for internal medicine.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "76f1d20e-7a8d-413c-aae5-5122f27e3142",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C84",
+      "claim": "In neurology, impact factor was significantly correlated with citation rate (rho = 0.43, p=0.0086).",
+      "claim_type": "EXPLICIT",
+      "source": "neurology (rho = 0.43, p=0.0086)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this statistical correlation for neurology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "a67ff8a6-04ed-42e2-aac4-dc6282999f12",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C85",
+      "claim": "In dermatology, impact factor was significantly correlated with citation rate (rho = 0.39, p=0.02).",
+      "claim_type": "EXPLICIT",
+      "source": "dermatology (rho = 0.39, p=0.02)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this statistical correlation for dermatology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "1b903d6d-bd4f-4933-b7df-51590d994563",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C86",
+      "claim": "In urology and nephrology, impact factor was significantly correlated with citation rate (rho = 0.37, p=0.007).",
+      "claim_type": "EXPLICIT",
+      "source": "urology and nephrology (rho = 0.37, p=0.007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this statistical correlation for urology and nephrology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "510137ea-a102-4e7f-a885-e30328285aa9",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C87",
+      "claim": "In endocrinology and metabolism, impact factor was significantly correlated with citation rate (rho = 0.32, p=0.02).",
+      "claim_type": "EXPLICIT",
+      "source": "endocrinology and metabolism (rho = 0.32, p=0.02)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this statistical correlation for endocrinology and metabolism.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "f5ffd2bc-770d-48d6-af8b-f8d871584388",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C88",
+      "claim": "In oncology, impact factor was significantly correlated with citation rate (rho = 0.29, p=0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "oncology (rho = 0.29, p=0.01)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this statistical correlation for oncology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "1eb180b4-0572-49b0-bedd-68b03cdc2e2e",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C89",
+      "claim": "For the remaining six specialties, the relationship between impact factor and portion of cited articles was not significant (p>0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "For the remaining six specialties, the relationship between impact factor and portion of cited articles was not significant (p>0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this finding about the non-significant relationships.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "c50aaa6a-6a65-4f5f-aa4c-53a53a98d654",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C90",
+      "claim": "In infectious diseases, impact factor was significantly and negatively correlated with time-to-citation (Spearman's rho = \u20130.51, p=0.03).",
+      "claim_type": "EXPLICIT",
+      "source": "infectious diseases (Spearman's rho = \u20130.51, p=0.03)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this statistical correlation for infectious diseases.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "4742385f-185f-46a8-9cad-6f80bf18b7bd",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C91",
+      "claim": "In internal medicine, impact factor was significantly and negatively correlated with time-to-citation (rho = \u20130.408, p=0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "internal medicine (rho = \u20130.408, p=0.0001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this statistical correlation for internal medicine.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "1ddbc14e-31f9-4241-81fb-4dff454ed2bd",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C92",
+      "claim": "In hematology, impact factor was significantly and negatively correlated with time-to-citation (rho = \u20130.407, p=0.03).",
+      "claim_type": "EXPLICIT",
+      "source": "hematology (rho = \u20130.407, p=0.03)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this statistical correlation for hematology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "9ea0f7b2-0c21-4244-8214-264053fed111",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C93",
+      "claim": "In pediatrics, impact factor was significantly and negatively correlated with time-to-citation (rho = \u20130.40, p=0.03).",
+      "claim_type": "EXPLICIT",
+      "source": "pediatrics (rho = \u20130.40, p=0.03)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this statistical correlation for pediatrics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "8ebb4691-e28d-4600-b8e3-9e80514b0b5f",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C94",
+      "claim": "In dermatology, impact factor was significantly and negatively correlated with time-to-citation (rho = \u20130.406, p=0.02).",
+      "claim_type": "EXPLICIT",
+      "source": "dermatology (rho = \u20130.406, p=0.02)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this statistical correlation for dermatology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "d7f9183e-beb5-430f-95cd-1717cf740b98",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C95",
+      "claim": "In pathology, impact factor was significantly and negatively correlated with time-to-citation (rho = \u20130.45, p=0.04).",
+      "claim_type": "EXPLICIT",
+      "source": "pathology (rho = \u20130.45, p=0.04)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this statistical correlation for pathology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "c1f063ec-59b7-4dcf-9f00-8bedafadc6d5",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C96",
+      "claim": "In neurology, impact factor was significantly and negatively correlated with time-to-citation (Spearman's rho = \u20130.37, p=0.03).",
+      "claim_type": "EXPLICIT",
+      "source": "neurology (Spearman's rho = \u20130.37, p=0.03)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this statistical correlation for neurology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "8d4421e6-91a4-4a7a-9f5e-a942acbea59b",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C97",
+      "claim": "In urology and nephrology, impact factor was significantly and negatively correlated with time-to-citation (rho = \u20130.34, p=0.02).",
+      "claim_type": "EXPLICIT",
+      "source": "urology and nephrology (rho = \u20130.34, p=0.02)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this statistical correlation for urology and nephrology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "534abddd-18a3-41f6-863f-d43ae74808f2",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C98",
+      "claim": "In cardiac and cardiovascular systems, impact factor was significantly and negatively correlated with time-to-citation (rho = \u20130.36, p=0.002).",
+      "claim_type": "EXPLICIT",
+      "source": "cardiac and cardiovascular systems (rho = \u20130.36, p=0.002)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this statistical correlation for cardiac and cardiovascular systems.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "51ef7b39-d57f-48de-b592-ccd77df5cfdf",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C99",
+      "claim": "In oncology, impact factor was significantly and negatively correlated with time-to-citation (rho = \u20130.31, p=0.006).",
+      "claim_type": "EXPLICIT",
+      "source": "oncology (rho = \u20130.31, p=0.006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this statistical correlation for oncology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "7cfce856-ad59-4deb-92a9-52b57a837949",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C100",
+      "claim": "In radiology, NIH funding correlated with citations (rho = 0.64, p=4.8 \u00d7 10\u201312).",
+      "claim_type": "EXPLICIT",
+      "source": "radiology (rho = 0.64, p=4.8 \u00d7 10\u201312)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this statistical correlation for radiology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "9a391b84-0b93-4b44-8c74-4acde71e9ded",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C101",
+      "claim": "In internal medicine, NIH funding correlated with citations (rho = 0.60, p<2.2 \u00d7 10\u201316).",
+      "claim_type": "EXPLICIT",
+      "source": "internal medicine (rho = 0.60, p<2.2 \u00d7 10\u201316)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this statistical correlation for internal medicine.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "84f619c5-333d-42d2-9753-a36f05d68989",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C102",
+      "claim": "In dermatology, NIH funding correlated with citations (rho = 0.57, p=1.2 \u00d7 10\u20139).",
+      "claim_type": "EXPLICIT",
+      "source": "dermatology (rho = 0.57, p=1.2 \u00d7 10\u20139)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this statistical correlation for dermatology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "97bc75f9-4e4b-4ab0-8061-ba57f89b5f48",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C103",
+      "claim": "In urology and nephrology, NIH funding correlated with citations (rho = 0.57, p=3.0 \u00d7 10\u201313).",
+      "claim_type": "EXPLICIT",
+      "source": "urology and nephrology (rho = 0.57, p=3.0 \u00d7 10\u201313)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this statistical correlation for urology and nephrology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "5fc2b673-2eb4-4089-a276-3eafe91d6de9",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C104",
+      "claim": "In emergency medicine, NIH funding correlated with citations (rho = 0.52, p=2.1 \u00d7 10\u20137).",
+      "claim_type": "EXPLICIT",
+      "source": "emergency medicine (rho = 0.52, p=2.1 \u00d7 10\u20137)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this statistical correlation for emergency medicine.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "97b70a78-bc77-42bf-aa89-ce5d8e3718e9",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C105",
+      "claim": "In anesthesiology, NIH funding correlated with citations (rho = 0.48, p=9.0 \u00d7 10\u20136).",
+      "claim_type": "EXPLICIT",
+      "source": "anesthesiology (rho = 0.48, p=9.0 \u00d7 10\u20136)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this statistical correlation for anesthesiology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "6a95fa26-3331-46b6-9c31-01a0ff42a6e0",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C106",
+      "claim": "In infectious diseases, NIH funding correlated with citations (rho = 0.41, p=0.006).",
+      "claim_type": "EXPLICIT",
+      "source": "infectious diseases (rho = 0.41, p=0.006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this statistical correlation for infectious diseases.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "3f017b10-c84c-4d2f-a5c8-4442bbeaa124",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C107",
+      "claim": "The model for NIH funding and citations was not significant for infectious diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "The model was not significant for infectious diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this finding about the linear model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "d5ee46ba-f12f-4edb-bd0f-a456141b8178",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C108",
+      "claim": "35% of references from the 18 medical specialties cited in UpToDate were from the United States.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis primarily focused on the United States for two reasons. Firstly, 35% of references from the 18 medical specialties cited in UpToDate were from the United States",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this percentage for US contributions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "1d1294f2-3fba-490b-b666-fbde06e5de1e",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C109",
+      "claim": "In 2019, 39% of all publications in PubMed were from the United States.",
+      "claim_type": "EXPLICIT",
+      "source": "by way of comparison, in 2019, 39% of all publications in PubMed were from the United States",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly provides this percentage for comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "c033c029-2ef2-4a6f-a617-58267a8e431b",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C110",
+      "claim": "A recent manual review of 125 randomized interventional clinical trials published in 2009\u20132010 demonstrated only 26.4% of trials fulfilled four conditions of informativeness.",
+      "claim_type": "EXPLICIT",
+      "source": "This was in line with a recent manual review of 125 randomized interventional clinical trials published in 2009\u20132010 in three disease areas (ischemic heart disease, diabetes mellitus, and lung cancer), which demonstrated only 26.4% of trials fulfilled four conditions of informativeness: importance of the clinical question, trial design, feasibility, and reporting of results (Hutchinson et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section cites Hutchinson et al., 2022 as the source for this finding.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "fbb50d39-cbab-417a-89e6-0ba383132364",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C111",
+      "claim": "The IOM has identified translation of basic science and translation of clinical studies to practice as two separate and distinct translational blocks.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, these studies often conflate translation of basic science with translation of clinical studies to practice, which the IOM has identified as two separate and distinct translational blocks (Green et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites Green et al., 2003 as the source for this IOM identification.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "bce59eb2-40d5-40b9-af2b-2bf5bb22f24e",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C112",
+      "claim": "The WayBackMachine is a digital archive of the World Wide Web that preserves archived copies of defunct or revised web pages.",
+      "claim_type": "EXPLICIT",
+      "source": "The WayBackMachine is a digital archive of the World Wide Web that preserves archived copies of defunct or revised web pages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section explicitly describes the WayBackMachine.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "0c0993f1-8a45-4321-9fb9-0af65fb3ef70",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C113",
+      "claim": "The department-specific analysis combined eight specialties under the 'general and internal medicine' specialty label because a large portion of the funding for these specialties occurs through the NIH department combining name of 'internal medicine/medicine'.",
+      "claim_type": "EXPLICIT",
+      "source": "Our department-specific analysis combined eight specialties (cardiac and cardiovascular systems, critical care medicine, endocrinology and metabolism, gastroenterology and hepatology, geriatrics and gerontology, hematology, rheumatology, and oncology) under the 'general and internal medicine' specialty label because a large portion of the funding for these specialties occurs through the NIH department combining name of 'internal medicine/medicine' (i.e. there was no specific department labels for these subset of specialties).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly explains this methodological decision.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "0a21ff38-777e-4174-b6b9-32614b56efe1",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C114",
+      "claim": "Approximately 18% of articles had no primary affiliation.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 18% of articles had no primary affiliation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 5\u2014figure supplement 1 caption explicitly states this finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "e162b657-fc6d-405e-b510-33bf14c8113a",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C115",
+      "claim": "Some specialties demonstrated a clear bias toward particular disease topics and treatment paradigms (e.g. cardiac and cardiovascular systems and oncology).",
+      "claim_type": "EXPLICIT",
+      "source": "While a more thorough investigation is warranted, our preliminary study revealed that some specialties demonstrated a clear bias toward particular disease topics and treatment paradigms (e.g. cardiac and cardiovascular systems and oncology)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section explicitly states this finding about specialty biases.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "ef2c907b-afa0-4ad4-baf5-5473bb34e0d0",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C116",
+      "claim": "Some specialties were far more diverse in their topic coverage (e.g. endocrinology and metabolism).",
+      "claim_type": "EXPLICIT",
+      "source": "while others were far more diverse (e.g. endocrinology and metabolism)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section explicitly contrasts this with the previous finding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "02b96965-41f4-460b-9c57-0c92df987072",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C117",
+      "claim": "The strong correlation of number of citations with NIH funding suggests that funding may, in part, dictate the research focus and which references are ultimately successful in making it back to the point-of-care.",
+      "claim_type": "EXPLICIT",
+      "source": "The strong correlation of number of citations with NIH funding (both department specific and cumulatively) suggests that funding may, in part, dictate the research focus and, thus, which references are ultimately successful in making it back to the point-of-care.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section explicitly interprets the correlation as suggesting this causal relationship.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "ff2e1445-cd09-4fa6-b7ff-70edb2ea9aef",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C118",
+      "claim": "It is possible that some of the published research does not adequately answer a particular clinical question.",
+      "claim_type": "EXPLICIT",
+      "source": "There are many possible reasons for the low rate of citation of published research noted in our analysis (e.g. it is possible that some of the published research does not adequately answer a particular clinical question).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section explicitly acknowledges this as a possible explanation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "5d0f4add-070c-411b-ab75-3d8f3787643e",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C119",
+      "claim": "Both practice guidelines and clinical trials have a low-citation rate despite their design and implementation requiring uncertainty or equipoise surrounding two or more care options.",
+      "claim_type": "EXPLICIT",
+      "source": "Both practice guidelines and clinical trials have a low-citation rate despite their design and implementation requiring uncertainty or equipoise surrounding two or more care options (i.e. they are designed to help clinicians choose one treatment or diagnostic approach over another).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section explicitly states this observation about practice guidelines and clinical trials.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "cb2de9c9-9f7c-4d97-96ed-d18ee54ff66c",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C120",
+      "claim": "Many additional sources of information are readily available and accessed by clinicians besides UpToDate.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides scholarly medical, nursing, and pharmacy journals (as major examples), many additional sources of information are readily available and accessed by these diverse stakeholders besides UpToDate. Examples include in person and online professional society communications and meetings, daily inter-professional interactions, local health system guideline consensus groups, access to clinicians who practice in 'centers of excellence,' and point-of-care decision support in electronic medical records.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section explicitly lists these alternative information sources.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "8a587efa-13a7-466e-ac58-4ae80959c2cf",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C121",
+      "claim": "These alternative information sources are too informal and inaccessible for a systematic and comprehensive analysis of the translational highway between the clinical research enterprise and medical practice.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these are too informal and inaccessible for a systematic and comprehensive analysis of the translational highway between the clinical research enterprise and medical practice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section explicitly explains why these sources were not used.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "5aa8530f-a3c5-466f-8b18-c6dfa748ae8d",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C122",
+      "claim": "The relevance of UpToDate varies by specialty and training status.",
+      "claim_type": "EXPLICIT",
+      "source": "We also recognize that the relevance of UpToDate varies by specialty and training status",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section explicitly acknowledges this limitation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "24f3fca1-cf61-4ec3-9196-e2b3ac5dd74e",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C123",
+      "claim": "Citation in UpToDate does not necessarily indicate actual changes in practice.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while we use citation in UpToDate as a metric of translation, citation does not necessarily indicate actual changes in practice; rather citation represents adoption of knowledge to support current approaches, inform new changes in practice, or highlight points of controversy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section explicitly clarifies the interpretation of citation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "af781e1b-ba00-4fc8-a3ed-8b4f0e653c62",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C124",
+      "claim": "The division of the literature and medical journals into subspecialties using Clarivate's Journal Citation Reports does not capture the overlap/nuance of the boundaries between specialties.",
+      "claim_type": "EXPLICIT",
+      "source": "Our division of the literature (and medical journals) into subspecialties using Clarivate's Journal Citation Reports admittedly does not capture the overlap/nuance of the boundaries between specialties (and journals)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section explicitly acknowledges this limitation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "cc5fd427-f3ed-4c75-a899-d94a7a36bf47",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C125",
+      "claim": "The success of a subset of specialties in incorporating a larger proportion of published research demonstrates the existence of translational strategies that should be applied more broadly.",
+      "claim_type": "EXPLICIT",
+      "source": "The success of a subset of specialties in incorporating a larger proportion of published research, as well as high(er) quality of evidence, demonstrates the existence of translational strategies that should be applied more broadly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract and discussion explicitly state this conclusion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "3adc6b94-52e9-4add-862e-66f2a0657227",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C126",
+      "claim": "The dataset and method described are designed to generate hypotheses regarding the translation of biomedical research into practice.",
+      "claim_type": "EXPLICIT",
+      "source": "While the findings are largely descriptive and exploratory, the dataset and method described here are designed to generate hypotheses regarding the translation of biomedical research into practice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section explicitly states the purpose of the dataset and method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "f30cc797-f100-4dc6-aa40-4009ebc42da9",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "claim_id": "C127",
+      "claim": "The study sought to provide a baseline for monitoring the efficiency of research investments.",
+      "claim_type": "EXPLICIT",
+      "source": "In designing the dataset, we sought to provide a baseline for monitoring the efficiency of research investments and ultimately lead to the development of mechanisms for weighing the efficacy of reforms to the biomedical scientific enterprise (e.g. quantifying impact at point-of-care rather than number of publications or citations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section explicitly states this goal of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "69170f21-78f4-44af-86a3-a66bc1115c1c",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study analyzed 10,036 UpToDate articles sampled quarterly from 2011-2020, capturing 169,203 unique versions and extracting 83,423 unique references from 4,055 journals. These 37,050 newly cited articles from 887 specialty journals were compared against 2.4 million uncited articles published in the same journals during the same period.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C63-C66 provide consistent, explicit descriptions of the dataset composition with specific numbers that align across abstract, results, and methods sections. The sampling methodology using WayBackMachine is clearly described, and the numbers are internally consistent (e.g., 83,423 total references filtered to 37,050 from specialty journals).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "d0ba5060-3064-4450-9122-b50bd56068e2",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Citation rates in UpToDate varied substantially across 18 medical specialties, ranging from 0.4% (pathology) to 2.4% (neurology). The highest rates were in neurology (2.4%), rheumatology (2.3%), hematology (2.3%), and pediatrics (2.2%), while the lowest were in pathology (0.4%), geriatrics (0.6%), and radiology (0.7%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C16-C22 provide explicit numerical data with specific citation rates and article counts for each specialty. The data is internally consistent and clearly presented with both percentages and absolute numbers, allowing verification of the calculations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "c3fddfab-21d8-4f99-971e-ba7a2fc18db3",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Clinical trial citation rates were highly variable across specialties. In 9 of 18 specialties, less than 10% of phase III clinical trials were cited. Practice guidelines had the highest citation rate (>13% in 9 specialties), while no equivalence trials (0 of 43 published) were ever cited. Internal medicine showed the highest clinical trial citation rate at 36.3%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C23-C25, and C70-C72 provide explicit data on clinical trial citation patterns with specific percentages and counts. The finding that no equivalence trials were cited is particularly striking and well-documented. The variation across specialties is clearly quantified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "bbbe5342-df8c-4c16-b8ea-eb48b0e7aa2a",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Pragmatic clinical trials were cited in only 5 of 18 specialties, with oncology citing 50%, internal medicine 20.3%, endocrinology 11.1%, cardiology 8.0%, and pediatrics 7.7%. The remaining 13 specialties had 0% citation rates for pragmatic trials.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C27 and C73-C77 provide explicit percentages for pragmatic trial citations across specialties. The data clearly shows limited adoption of this trial type, with specific quantification for each specialty that cited them.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "297749d8-cc80-474d-9a0c-36e314d570df",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Case reports represented one of the three most commonly cited article types in 12 of 18 specialties, despite only 0.8% (3,111 of 403,043) of published case reports being cited overall. In dermatology, case reports comprised 32.0% of citations, and in pathology 15.5%. By comparison, phase III clinical trials represented less than 1.0% of added citations in 9 of 18 specialties. Oncology was unique in having phase III trials among the most cited types (411 of 3,071 references).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7, C28-C33, and C79 provide detailed quantification of case report citation patterns with specific percentages and counts. The contrast between low overall citation rates but high representation among cited articles is clearly documented. The data for specific specialties like dermatology and oncology is explicitly stated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "dc374245-e85d-4824-8c32-adeafbd25e23",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Six specialties (anesthesiology, cardiology, critical care, geriatrics, internal medicine, and oncology) favored higher-quality evidence, with reviews/systematic reviews, practice guidelines, and meta-analyses representing the three most cited article types in five of these six specialties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8 and C78 explicitly identify specialties favoring higher-quality evidence and specify the article types most commonly cited. The data is clearly presented and references Figure 1 for visual support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "a741b2b4-2681-40a8-b3b4-074f92f7cb5f",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Time-to-citation varied by article type but not by specialty. Overall, 50% of articles were cited within one year (IQR 0-4 years). Phase III clinical trials had the shortest time-to-citation (75% within one year, IQR 0-1 year), while case reports had the longest (median 3 years, IQR 1-9 years). Higher quality evidence correlated with shorter time-to-citation across all specialties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C37 and C80 provide explicit time-to-citation statistics with medians and IQRs. The correlation between evidence quality and citation speed is clearly stated and supported by Figure 1\u2014figure supplement 1.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "b42f9095-4db0-4629-9941-3790d27f4405",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Journal impact factor was significantly correlated with citation proportion in 12 of 18 specialties, with correlations ranging from rho=0.86 (p=1.4\u00d710\u207b\u2076) in rheumatology to rho=0.29 (p=0.01) in oncology. The remaining six specialties showed no significant relationship (p>0.05).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C42 and C81-C89 provide explicit statistical correlations with Spearman's rho values and p-values for each specialty. The statistical tests are appropriate for the data type, and the results are clearly presented with specific values for each specialty.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "81a42bc1-98ad-407a-b97b-26bef95ec480",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Journal impact factor was significantly and negatively correlated with time-to-citation in 10 of 18 specialties, indicating that articles from higher impact journals were cited more quickly. Correlations ranged from rho=-0.51 (p=0.03) in infectious diseases to rho=-0.31 (p=0.006) in oncology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44 and C90-C99 provide explicit negative correlations with statistical significance values. The interpretation that higher impact journals lead to quicker citation is clearly stated and supported by the data. Figure 2\u2014figure supplement 1 provides visual support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "4d45bd9c-bb83-4083-bcd2-222425dac5fe",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Abstract contents, assessed using UMLS concepts, can significantly explain both whether articles are cited in point-of-care resources and variation in time-to-citation among cited abstracts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C45 is explicitly stated and supported by Figures 3 and 3\u2014figure supplements 1-4, which show word clouds of over- and under-represented concepts. The use of SciSpacy for UMLS extraction is described in the methods (C67).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "a8e83eaf-2991-4229-9a08-d1ef2b9c3d0a",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Average annual department-specific NIH funding correlated strongly with the absolute number of citations across all specialties, with correlations ranging from rho=0.73 (p=1.2\u00d710\u207b\u00b9\u2070) in pathology to rho=0.41 (p=0.006) in infectious diseases. Ten specialties showed significant correlations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C49 and C100-C106 provide explicit correlations between NIH funding and citation counts with statistical significance. The data is clearly presented with specific rho and p-values for each specialty, and Figures 4 and 5 provide visual support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "3e9a14af-2ac4-47f6-8daf-a8a6f7239d12",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "NIH funding did not correlate with time-to-citation in any specialty, contrasting sharply with its strong correlation with absolute citation numbers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C50 explicitly states the lack of correlation between NIH funding and time-to-citation, with reference to Figure 4\u2014figure supplement 1. This finding is clearly distinguished from the funding-citation number relationship.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "a127b1f1-d2c9-421d-8a99-e8c53268d2c8",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Using linear modeling of NIH funding versus citations, the estimated cost per new UpToDate citation ranged from $874.85 (pathology) to $48,086.18 (urology/nephrology), with intermediate costs for other specialties. The model was not significant for infectious diseases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C9 and C51-C59 provide specific cost estimates with standard errors and intercepts. However, the linear modeling approach has significant limitations: (1) the model assumes a causal relationship from correlation data, (2) confounding factors are not addressed (e.g., other funding sources, institutional factors, specialty-specific publication patterns), (3) the intercept interpretation as 'set-up cost' is not validated, (4) the model does not account for time lags between funding and publication/citation, and (5) city-level aggregation may introduce ecological fallacy. While the correlations are strong, the causal interpretation and cost estimates require additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "cc7d00a2-3774-4aa6-a738-10038152f5eb",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The analysis focused on the United States because 35% of UpToDate citations were from US sources (compared to 39% of all PubMed publications in 2019). Eight specialties were combined under 'general and internal medicine' for NIH funding analysis due to overlapping departmental funding structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C108-C109 and C113 provide explicit justification for the US focus and methodological decisions about specialty grouping. The percentages are clearly stated and the rationale for combining specialties is explained.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "113de3e8-8818-4999-ac29-4b3a69ece7d8",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Approximately 18% of articles had no primary affiliation listed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C114 is explicitly stated in Figure 5\u2014figure supplement 1 caption. This represents a limitation in the geographic analysis but is clearly documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "00943216-672b-4205-9986-95e316cfa748",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Preliminary analysis revealed that some specialties (e.g., cardiology and oncology) demonstrated clear bias toward particular disease topics and treatment paradigms, while others (e.g., endocrinology and metabolism) were more diverse in topic coverage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C115-C116 are explicitly stated in the discussion with specific examples. The authors acknowledge this is preliminary and warrants further investigation, appropriately qualifying the strength of the conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "cf3ad13e-3e84-42a1-aa6d-61d94a66d7ea",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The low citation rates, particularly for clinical trials and practice guidelines designed to address clinical uncertainty, suggest a translational block between research publication and clinical practice. NIH funding patterns may partially dictate which research successfully reaches point-of-care, though inadequate study design may also contribute to low citation rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C60-C61 and C117-C119 represent interpretations and speculations about causality. While the low citation rates are well-documented, the attribution to 'translational block' versus other factors (study quality, clinical relevance, alternative dissemination channels) is not definitively established. The discussion appropriately acknowledges multiple possible explanations, but the causal claims remain speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "122d5aa4-c8c9-496c-93d6-ad1f8b875e07",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The study is motivated by healthcare system underperformance due to patients not receiving recommended services and receiving unnecessary treatments. The challenge is the absence of evidence to assess treatment appropriateness. UpToDate serves as a reliable, widely-used point-of-care resource with quantifiable impact on patient care, making it suitable for studying clinical research translation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C15, C62, C110-C111 cite appropriate sources for background claims about healthcare system problems and UpToDate's characteristics. The citations support the rationale for using UpToDate as a proxy for clinical research translation, though limitations are acknowledged.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "3442fa12-a4db-4234-af16-3cdf881af54d",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The study used SciSpacy to extract UMLS concepts from abstracts and the WayBackMachine to archive UpToDate articles over time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67 and C112 describe methodological tools with appropriate citations. The use of established tools (SciSpacy, WayBackMachine) is clearly documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "ebe1b136-ac6b-445f-af10-0556a1ba6f90",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The study acknowledges several limitations: alternative information sources exist but are too informal for systematic analysis; UpToDate relevance varies by specialty and training; citation does not necessarily indicate practice changes; and specialty divisions using journal classifications do not fully capture overlap between fields.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C120-C124 explicitly acknowledge study limitations in the discussion section. These are appropriate caveats that strengthen the interpretation of results by clearly stating what the study does and does not demonstrate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    },
+    {
+      "id": "d9c0be22-8723-4286-9b5a-2f0ad0eda607",
+      "content_id": "e903f159-ebf3-4745-880e-66c80ae77805",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The study concludes that successful specialties demonstrate translational strategies that should be applied more broadly. The dataset and methods are designed to generate hypotheses about research translation and provide a baseline for monitoring research investment efficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C125-C127 represent the study's stated goals and conclusions. These are appropriately framed as descriptive/exploratory findings that generate hypotheses rather than definitive causal conclusions. The authors clearly state the intended purpose of the work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:26:24.101115Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "06659ab7-71b5-4bf4-bcb8-bf25f92a7cbd",
+      "result_id": "69170f21-78f4-44af-86a3-a66bc1115c1c"
+    },
+    {
+      "claim_id": "f89ef5e7-f83e-46f5-b03e-ab10ad655c5b",
+      "result_id": "69170f21-78f4-44af-86a3-a66bc1115c1c"
+    },
+    {
+      "claim_id": "49aac393-a394-46e0-b708-322735386417",
+      "result_id": "69170f21-78f4-44af-86a3-a66bc1115c1c"
+    },
+    {
+      "claim_id": "b6260ae4-4055-4926-b8d9-73b0bf2e50a2",
+      "result_id": "69170f21-78f4-44af-86a3-a66bc1115c1c"
+    },
+    {
+      "claim_id": "b56dcce6-89ee-444e-bb66-ef16a1c29e26",
+      "result_id": "69170f21-78f4-44af-86a3-a66bc1115c1c"
+    },
+    {
+      "claim_id": "ae49f897-3f14-4fbb-94d2-b6d335d40871",
+      "result_id": "69170f21-78f4-44af-86a3-a66bc1115c1c"
+    },
+    {
+      "claim_id": "fe329b6b-8cff-4297-acd9-ab18e08a7c12",
+      "result_id": "69170f21-78f4-44af-86a3-a66bc1115c1c"
+    },
+    {
+      "claim_id": "7845ea43-d45c-49ab-a5c6-e6eee860b039",
+      "result_id": "d0ba5060-3064-4450-9122-b50bd56068e2"
+    },
+    {
+      "claim_id": "1583c2e7-cc68-4821-8574-21a265c9b79e",
+      "result_id": "d0ba5060-3064-4450-9122-b50bd56068e2"
+    },
+    {
+      "claim_id": "66022110-aa06-4de0-9bf0-4910d71d71e3",
+      "result_id": "d0ba5060-3064-4450-9122-b50bd56068e2"
+    },
+    {
+      "claim_id": "44f68998-714b-4091-94f7-743c8f2d8f50",
+      "result_id": "d0ba5060-3064-4450-9122-b50bd56068e2"
+    },
+    {
+      "claim_id": "0be0c336-682e-4288-8ddf-4c368d796b90",
+      "result_id": "d0ba5060-3064-4450-9122-b50bd56068e2"
+    },
+    {
+      "claim_id": "c490a09b-5ddc-4fff-9f89-6de3dd97d86b",
+      "result_id": "d0ba5060-3064-4450-9122-b50bd56068e2"
+    },
+    {
+      "claim_id": "89eb95bc-eb35-4d06-9992-16f8443aba0c",
+      "result_id": "d0ba5060-3064-4450-9122-b50bd56068e2"
+    },
+    {
+      "claim_id": "45a12f1a-1f8c-4ed8-b094-d790f512332b",
+      "result_id": "d0ba5060-3064-4450-9122-b50bd56068e2"
+    },
+    {
+      "claim_id": "fc881891-50d3-472a-923c-2a23925eaa14",
+      "result_id": "c3fddfab-21d8-4f99-971e-ba7a2fc18db3"
+    },
+    {
+      "claim_id": "0f694668-b2b8-4b2f-8927-10917e287bb8",
+      "result_id": "c3fddfab-21d8-4f99-971e-ba7a2fc18db3"
+    },
+    {
+      "claim_id": "03d405b7-5abd-4ee9-9277-0bdbac72183a",
+      "result_id": "c3fddfab-21d8-4f99-971e-ba7a2fc18db3"
+    },
+    {
+      "claim_id": "d3707620-df21-455c-9481-ba90f8dfdaa0",
+      "result_id": "c3fddfab-21d8-4f99-971e-ba7a2fc18db3"
+    },
+    {
+      "claim_id": "98e4df8b-e780-414d-8211-f5b756b059f8",
+      "result_id": "c3fddfab-21d8-4f99-971e-ba7a2fc18db3"
+    },
+    {
+      "claim_id": "bccc4de6-d90b-40c5-b9d2-eccaf7fa4729",
+      "result_id": "c3fddfab-21d8-4f99-971e-ba7a2fc18db3"
+    },
+    {
+      "claim_id": "9fe54b3c-676f-43e2-a7ea-ad938adcf1b2",
+      "result_id": "c3fddfab-21d8-4f99-971e-ba7a2fc18db3"
+    },
+    {
+      "claim_id": "f7a465a4-77f6-46ca-a9b8-4794c4ae24f9",
+      "result_id": "bbbe5342-df8c-4c16-b8ea-eb48b0e7aa2a"
+    },
+    {
+      "claim_id": "6e680109-e9de-45db-bfef-ad57ecd9d572",
+      "result_id": "bbbe5342-df8c-4c16-b8ea-eb48b0e7aa2a"
+    },
+    {
+      "claim_id": "d3c2e3fa-c110-4fed-8b46-5d602f337e7c",
+      "result_id": "bbbe5342-df8c-4c16-b8ea-eb48b0e7aa2a"
+    },
+    {
+      "claim_id": "deca7a6b-0618-48e1-a4bf-b6f4a184bdfa",
+      "result_id": "bbbe5342-df8c-4c16-b8ea-eb48b0e7aa2a"
+    },
+    {
+      "claim_id": "decb86f3-854c-4725-a3af-d9a5cbb4bf7b",
+      "result_id": "bbbe5342-df8c-4c16-b8ea-eb48b0e7aa2a"
+    },
+    {
+      "claim_id": "a2303c5d-bb09-4e48-aa71-ce540b9bd6e8",
+      "result_id": "bbbe5342-df8c-4c16-b8ea-eb48b0e7aa2a"
+    },
+    {
+      "claim_id": "29e76756-597e-4cb9-a916-0355d45746c6",
+      "result_id": "bbbe5342-df8c-4c16-b8ea-eb48b0e7aa2a"
+    },
+    {
+      "claim_id": "05de0548-3c34-43e4-b995-2e5deb858656",
+      "result_id": "297749d8-cc80-474d-9a0c-36e314d570df"
+    },
+    {
+      "claim_id": "d9a84221-5998-4ea4-96a6-e2e4d124b0e1",
+      "result_id": "297749d8-cc80-474d-9a0c-36e314d570df"
+    },
+    {
+      "claim_id": "646db5a5-2ddd-4d1e-8c34-aa8deb0e81c1",
+      "result_id": "297749d8-cc80-474d-9a0c-36e314d570df"
+    },
+    {
+      "claim_id": "eae26e2a-a215-4525-9881-b7a851ea0f20",
+      "result_id": "297749d8-cc80-474d-9a0c-36e314d570df"
+    },
+    {
+      "claim_id": "4a6322a3-cbd0-43b4-b375-bad576cdbde6",
+      "result_id": "297749d8-cc80-474d-9a0c-36e314d570df"
+    },
+    {
+      "claim_id": "c79ef8d8-2656-4497-bdec-627b75764b93",
+      "result_id": "297749d8-cc80-474d-9a0c-36e314d570df"
+    },
+    {
+      "claim_id": "88e70487-d0d9-4c12-b17b-c977f248022b",
+      "result_id": "297749d8-cc80-474d-9a0c-36e314d570df"
+    },
+    {
+      "claim_id": "4540894a-fa3b-4f9e-853a-5c727f507f1a",
+      "result_id": "297749d8-cc80-474d-9a0c-36e314d570df"
+    },
+    {
+      "claim_id": "15bcc08a-61c0-4bf6-bc13-255dfd7417a3",
+      "result_id": "297749d8-cc80-474d-9a0c-36e314d570df"
+    },
+    {
+      "claim_id": "819ed985-84c6-48f6-acbd-16b1c8d04f33",
+      "result_id": "dc374245-e85d-4824-8c32-adeafbd25e23"
+    },
+    {
+      "claim_id": "b8b05164-142e-4cc1-8f1f-54926d00170b",
+      "result_id": "dc374245-e85d-4824-8c32-adeafbd25e23"
+    },
+    {
+      "claim_id": "e65417c0-2c64-40a2-8352-caa3dd79366d",
+      "result_id": "a741b2b4-2681-40a8-b3b4-074f92f7cb5f"
+    },
+    {
+      "claim_id": "b5afdddc-dc71-441d-a703-4925d66cea6f",
+      "result_id": "a741b2b4-2681-40a8-b3b4-074f92f7cb5f"
+    },
+    {
+      "claim_id": "3ef4bb9a-961d-4d91-9c83-324afa7ecd7a",
+      "result_id": "a741b2b4-2681-40a8-b3b4-074f92f7cb5f"
+    },
+    {
+      "claim_id": "3173497b-460e-4a99-a3d9-5e4c56d736b4",
+      "result_id": "a741b2b4-2681-40a8-b3b4-074f92f7cb5f"
+    },
+    {
+      "claim_id": "d8c86ea2-02c5-4db2-a64f-cdbd8725587f",
+      "result_id": "a741b2b4-2681-40a8-b3b4-074f92f7cb5f"
+    },
+    {
+      "claim_id": "b0dbc0b2-dd92-481a-b244-a10f9a4187ed",
+      "result_id": "b42f9095-4db0-4629-9941-3790d27f4405"
+    },
+    {
+      "claim_id": "e997ae39-2318-41e1-a3ad-fb0b3e563155",
+      "result_id": "b42f9095-4db0-4629-9941-3790d27f4405"
+    },
+    {
+      "claim_id": "9c7e67ff-cdf0-4c4d-b022-567487b16184",
+      "result_id": "b42f9095-4db0-4629-9941-3790d27f4405"
+    },
+    {
+      "claim_id": "710d02bd-d073-454d-b501-73c9f942ead0",
+      "result_id": "b42f9095-4db0-4629-9941-3790d27f4405"
+    },
+    {
+      "claim_id": "f466e07a-f8ca-4124-b8b9-1465d579c2b1",
+      "result_id": "b42f9095-4db0-4629-9941-3790d27f4405"
+    },
+    {
+      "claim_id": "aede64db-f608-4788-972d-2088174db189",
+      "result_id": "b42f9095-4db0-4629-9941-3790d27f4405"
+    },
+    {
+      "claim_id": "cc64db8e-889f-4a18-8e3d-ee5a4bcc4c59",
+      "result_id": "b42f9095-4db0-4629-9941-3790d27f4405"
+    },
+    {
+      "claim_id": "e85201d2-b523-4334-be6d-d44aaf1e1281",
+      "result_id": "b42f9095-4db0-4629-9941-3790d27f4405"
+    },
+    {
+      "claim_id": "76f1d20e-7a8d-413c-aae5-5122f27e3142",
+      "result_id": "b42f9095-4db0-4629-9941-3790d27f4405"
+    },
+    {
+      "claim_id": "a67ff8a6-04ed-42e2-aac4-dc6282999f12",
+      "result_id": "b42f9095-4db0-4629-9941-3790d27f4405"
+    },
+    {
+      "claim_id": "1b903d6d-bd4f-4933-b7df-51590d994563",
+      "result_id": "b42f9095-4db0-4629-9941-3790d27f4405"
+    },
+    {
+      "claim_id": "510137ea-a102-4e7f-a885-e30328285aa9",
+      "result_id": "b42f9095-4db0-4629-9941-3790d27f4405"
+    },
+    {
+      "claim_id": "f5ffd2bc-770d-48d6-af8b-f8d871584388",
+      "result_id": "b42f9095-4db0-4629-9941-3790d27f4405"
+    },
+    {
+      "claim_id": "1eb180b4-0572-49b0-bedd-68b03cdc2e2e",
+      "result_id": "b42f9095-4db0-4629-9941-3790d27f4405"
+    },
+    {
+      "claim_id": "b1f23eac-4693-45c0-af4d-8659e315073c",
+      "result_id": "81a42bc1-98ad-407a-b97b-26bef95ec480"
+    },
+    {
+      "claim_id": "cb8f1682-be96-4014-82fa-58d041eddfb3",
+      "result_id": "81a42bc1-98ad-407a-b97b-26bef95ec480"
+    },
+    {
+      "claim_id": "c50aaa6a-6a65-4f5f-aa4c-53a53a98d654",
+      "result_id": "81a42bc1-98ad-407a-b97b-26bef95ec480"
+    },
+    {
+      "claim_id": "4742385f-185f-46a8-9cad-6f80bf18b7bd",
+      "result_id": "81a42bc1-98ad-407a-b97b-26bef95ec480"
+    },
+    {
+      "claim_id": "1ddbc14e-31f9-4241-81fb-4dff454ed2bd",
+      "result_id": "81a42bc1-98ad-407a-b97b-26bef95ec480"
+    },
+    {
+      "claim_id": "9ea0f7b2-0c21-4244-8214-264053fed111",
+      "result_id": "81a42bc1-98ad-407a-b97b-26bef95ec480"
+    },
+    {
+      "claim_id": "8ebb4691-e28d-4600-b8e3-9e80514b0b5f",
+      "result_id": "81a42bc1-98ad-407a-b97b-26bef95ec480"
+    },
+    {
+      "claim_id": "d7f9183e-beb5-430f-95cd-1717cf740b98",
+      "result_id": "81a42bc1-98ad-407a-b97b-26bef95ec480"
+    },
+    {
+      "claim_id": "c1f063ec-59b7-4dcf-9f00-8bedafadc6d5",
+      "result_id": "81a42bc1-98ad-407a-b97b-26bef95ec480"
+    },
+    {
+      "claim_id": "8d4421e6-91a4-4a7a-9f5e-a942acbea59b",
+      "result_id": "81a42bc1-98ad-407a-b97b-26bef95ec480"
+    },
+    {
+      "claim_id": "534abddd-18a3-41f6-863f-d43ae74808f2",
+      "result_id": "81a42bc1-98ad-407a-b97b-26bef95ec480"
+    },
+    {
+      "claim_id": "51ef7b39-d57f-48de-b592-ccd77df5cfdf",
+      "result_id": "81a42bc1-98ad-407a-b97b-26bef95ec480"
+    },
+    {
+      "claim_id": "f029ac47-78c1-4bb2-8a71-ef021e2d6f8f",
+      "result_id": "4d45bd9c-bb83-4083-bcd2-222425dac5fe"
+    },
+    {
+      "claim_id": "25fb96fc-3625-4365-b802-aa13c5ed5a6d",
+      "result_id": "a8e83eaf-2991-4229-9a08-d1ef2b9c3d0a"
+    },
+    {
+      "claim_id": "89f3d8f9-3f28-47b3-a9db-006ddadc82ed",
+      "result_id": "a8e83eaf-2991-4229-9a08-d1ef2b9c3d0a"
+    },
+    {
+      "claim_id": "64fb68ab-f11c-4ed8-8b51-77671442ab0b",
+      "result_id": "a8e83eaf-2991-4229-9a08-d1ef2b9c3d0a"
+    },
+    {
+      "claim_id": "120215fa-e9a3-453c-bbfa-cc97e758e151",
+      "result_id": "a8e83eaf-2991-4229-9a08-d1ef2b9c3d0a"
+    },
+    {
+      "claim_id": "7cfce856-ad59-4deb-92a9-52b57a837949",
+      "result_id": "a8e83eaf-2991-4229-9a08-d1ef2b9c3d0a"
+    },
+    {
+      "claim_id": "9a391b84-0b93-4b44-8c74-4acde71e9ded",
+      "result_id": "a8e83eaf-2991-4229-9a08-d1ef2b9c3d0a"
+    },
+    {
+      "claim_id": "84f619c5-333d-42d2-9753-a36f05d68989",
+      "result_id": "a8e83eaf-2991-4229-9a08-d1ef2b9c3d0a"
+    },
+    {
+      "claim_id": "97bc75f9-4e4b-4ab0-8061-ba57f89b5f48",
+      "result_id": "a8e83eaf-2991-4229-9a08-d1ef2b9c3d0a"
+    },
+    {
+      "claim_id": "5fc2b673-2eb4-4089-a276-3eafe91d6de9",
+      "result_id": "a8e83eaf-2991-4229-9a08-d1ef2b9c3d0a"
+    },
+    {
+      "claim_id": "97b70a78-bc77-42bf-aa89-ce5d8e3718e9",
+      "result_id": "a8e83eaf-2991-4229-9a08-d1ef2b9c3d0a"
+    },
+    {
+      "claim_id": "6a95fa26-3331-46b6-9c31-01a0ff42a6e0",
+      "result_id": "a8e83eaf-2991-4229-9a08-d1ef2b9c3d0a"
+    },
+    {
+      "claim_id": "82abfc23-e755-4bef-8ef5-cc7b9dca0b4e",
+      "result_id": "3e9a14af-2ac4-47f6-8daf-a8a6f7239d12"
+    },
+    {
+      "claim_id": "2d4212fa-e362-41c8-98c4-b1b4db55fbd9",
+      "result_id": "a127b1f1-d2c9-421d-8a99-e8c53268d2c8"
+    },
+    {
+      "claim_id": "8f8cfffb-6d0a-4cdd-bc47-3e9aa8a7894e",
+      "result_id": "a127b1f1-d2c9-421d-8a99-e8c53268d2c8"
+    },
+    {
+      "claim_id": "22fd875b-11b8-46a1-a8bb-c4ebb62b1fcc",
+      "result_id": "a127b1f1-d2c9-421d-8a99-e8c53268d2c8"
+    },
+    {
+      "claim_id": "93734a57-69cc-4781-a9bd-15058954f494",
+      "result_id": "a127b1f1-d2c9-421d-8a99-e8c53268d2c8"
+    },
+    {
+      "claim_id": "e81fa589-361e-4980-bbcd-e199d0f42100",
+      "result_id": "a127b1f1-d2c9-421d-8a99-e8c53268d2c8"
+    },
+    {
+      "claim_id": "b90a8929-e393-4300-9ce5-93fc29d24367",
+      "result_id": "a127b1f1-d2c9-421d-8a99-e8c53268d2c8"
+    },
+    {
+      "claim_id": "960cc101-13eb-4b95-917a-3ebe041e5044",
+      "result_id": "a127b1f1-d2c9-421d-8a99-e8c53268d2c8"
+    },
+    {
+      "claim_id": "c98fe7bd-8c96-45ec-9306-268cdb3b1c58",
+      "result_id": "a127b1f1-d2c9-421d-8a99-e8c53268d2c8"
+    },
+    {
+      "claim_id": "03fa2f0c-c367-403a-a6c0-63363dbc0614",
+      "result_id": "a127b1f1-d2c9-421d-8a99-e8c53268d2c8"
+    },
+    {
+      "claim_id": "688623a1-06d9-4318-9ed4-9111c57481ad",
+      "result_id": "a127b1f1-d2c9-421d-8a99-e8c53268d2c8"
+    },
+    {
+      "claim_id": "3f017b10-c84c-4d2f-a5c8-4442bbeaa124",
+      "result_id": "a127b1f1-d2c9-421d-8a99-e8c53268d2c8"
+    },
+    {
+      "claim_id": "d5ee46ba-f12f-4edb-bd0f-a456141b8178",
+      "result_id": "cc7d00a2-3774-4aa6-a738-10038152f5eb"
+    },
+    {
+      "claim_id": "1d1294f2-3fba-490b-b666-fbde06e5de1e",
+      "result_id": "cc7d00a2-3774-4aa6-a738-10038152f5eb"
+    },
+    {
+      "claim_id": "0c0993f1-8a45-4321-9fb9-0af65fb3ef70",
+      "result_id": "cc7d00a2-3774-4aa6-a738-10038152f5eb"
+    },
+    {
+      "claim_id": "0a21ff38-777e-4174-b6b9-32614b56efe1",
+      "result_id": "113de3e8-8818-4999-ac29-4b3a69ece7d8"
+    },
+    {
+      "claim_id": "e162b657-fc6d-405e-b510-33bf14c8113a",
+      "result_id": "00943216-672b-4205-9986-95e316cfa748"
+    },
+    {
+      "claim_id": "ef2c907b-afa0-4ad4-baf5-5473bb34e0d0",
+      "result_id": "00943216-672b-4205-9986-95e316cfa748"
+    },
+    {
+      "claim_id": "4de9ceed-d08b-4171-97e6-25597a6e1b9b",
+      "result_id": "cf3ad13e-3e84-42a1-aa6d-61d94a66d7ea"
+    },
+    {
+      "claim_id": "4942a25d-7181-42f6-9ded-0e3e31a7c8d4",
+      "result_id": "cf3ad13e-3e84-42a1-aa6d-61d94a66d7ea"
+    },
+    {
+      "claim_id": "02b96965-41f4-460b-9c57-0c92df987072",
+      "result_id": "cf3ad13e-3e84-42a1-aa6d-61d94a66d7ea"
+    },
+    {
+      "claim_id": "ff2e1445-cd09-4fa6-b7ff-70edb2ea9aef",
+      "result_id": "cf3ad13e-3e84-42a1-aa6d-61d94a66d7ea"
+    },
+    {
+      "claim_id": "5d0f4add-070c-411b-ab75-3d8f3787643e",
+      "result_id": "cf3ad13e-3e84-42a1-aa6d-61d94a66d7ea"
+    },
+    {
+      "claim_id": "f24601b6-a264-4572-a986-62f18762015c",
+      "result_id": "122d5aa4-c8c9-496c-93d6-ad1f8b875e07"
+    },
+    {
+      "claim_id": "b9cfd391-7f04-46da-bb28-0d6c8d0de659",
+      "result_id": "122d5aa4-c8c9-496c-93d6-ad1f8b875e07"
+    },
+    {
+      "claim_id": "3e5bd3a1-040f-4505-ad6d-41ef29a69d39",
+      "result_id": "122d5aa4-c8c9-496c-93d6-ad1f8b875e07"
+    },
+    {
+      "claim_id": "1dea5bb2-0968-448a-bbc2-7f2a9bc78e49",
+      "result_id": "122d5aa4-c8c9-496c-93d6-ad1f8b875e07"
+    },
+    {
+      "claim_id": "b4480ecb-1346-4c38-a5b8-8a2ee81fb194",
+      "result_id": "122d5aa4-c8c9-496c-93d6-ad1f8b875e07"
+    },
+    {
+      "claim_id": "3f5c0c67-d3aa-40f0-a68b-7ddc8a7e9f94",
+      "result_id": "122d5aa4-c8c9-496c-93d6-ad1f8b875e07"
+    },
+    {
+      "claim_id": "25905804-d5aa-43ec-b439-8131d0863a4b",
+      "result_id": "122d5aa4-c8c9-496c-93d6-ad1f8b875e07"
+    },
+    {
+      "claim_id": "c033c029-2ef2-4a6f-a617-58267a8e431b",
+      "result_id": "122d5aa4-c8c9-496c-93d6-ad1f8b875e07"
+    },
+    {
+      "claim_id": "fbb50d39-cbab-417a-89e6-0ba383132364",
+      "result_id": "122d5aa4-c8c9-496c-93d6-ad1f8b875e07"
+    },
+    {
+      "claim_id": "4e655b4e-b2e7-4304-bdfc-6afd811ece94",
+      "result_id": "3442fa12-a4db-4234-af16-3cdf881af54d"
+    },
+    {
+      "claim_id": "bce59eb2-40d5-40b9-af2b-2bf5bb22f24e",
+      "result_id": "3442fa12-a4db-4234-af16-3cdf881af54d"
+    },
+    {
+      "claim_id": "cb2de9c9-9f7c-4d97-96ed-d18ee54ff66c",
+      "result_id": "ebe1b136-ac6b-445f-af10-0556a1ba6f90"
+    },
+    {
+      "claim_id": "8a587efa-13a7-466e-ac58-4ae80959c2cf",
+      "result_id": "ebe1b136-ac6b-445f-af10-0556a1ba6f90"
+    },
+    {
+      "claim_id": "5aa8530f-a3c5-466f-8b18-c6dfa748ae8d",
+      "result_id": "ebe1b136-ac6b-445f-af10-0556a1ba6f90"
+    },
+    {
+      "claim_id": "24f3fca1-cf61-4ec3-9196-e2b3ac5dd74e",
+      "result_id": "ebe1b136-ac6b-445f-af10-0556a1ba6f90"
+    },
+    {
+      "claim_id": "af781e1b-ba00-4fc8-a3ed-8b4f0e653c62",
+      "result_id": "ebe1b136-ac6b-445f-af10-0556a1ba6f90"
+    },
+    {
+      "claim_id": "cc5fd427-f3ed-4c75-a899-d94a7a36bf47",
+      "result_id": "d9c0be22-8723-4286-9b5a-2f0ad0eda607"
+    },
+    {
+      "claim_id": "3adc6b94-52e9-4add-862e-66f2a0657227",
+      "result_id": "d9c0be22-8723-4286-9b5a-2f0ad0eda607"
+    },
+    {
+      "claim_id": "f30cc797-f100-4dc6-aa40-4009ebc42da9",
+      "result_id": "d9c0be22-8723-4286-9b5a-2f0ad0eda607"
+    }
+  ],
+  "comparisons": []
+}

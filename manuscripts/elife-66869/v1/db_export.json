@@ -1,0 +1,1724 @@
+{
+  "submission": {
+    "id": "9cd0443b-a94c-486d-85ed-2fac69ded7f7",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T11:16:48.141628Z",
+    "updated_at": "2025-12-03T11:16:48.141628Z"
+  },
+  "content": [
+    {
+      "id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "submission_id": "9cd0443b-a94c-486d-85ed-2fac69ded7f7",
+      "content_type": "manuscript",
+      "content_text": "# Complex effects of kinase localization revealed by compartment-specific regulation of protein kinase A activity\n\n## Authors\n\n- Rebecca LaCroix<sup>1</sup>\n- Benjamin Lin<sup>1</sup>\n- Tae-Yun Kang<sup>1</sup>\n- Andre Levchenko<sup>1</sup> ([ORCID: 0000-0001-6262-1222](https://orcid.org/0000-0001-6262-1222)) \u2020\n\n### Affiliations\n\n1. Department of Biomedical Engineering, Yale University New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))\n2. Yale Systems Biology Institute, Yale University West Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))\n3. Department of Cell Biology, Skirball Institute of Biomolecular Medicine, NYU Langone Health New York United States ([ROR:005dvqh91](https://ror.org/005dvqh91))\n\n\u2020 Corresponding author\n\n## Abstract\n\nKinase activity in signaling networks frequently depends on regulatory subunits that can both inhibit activity by interacting with the catalytic subunits and target the kinase to distinct molecular partners and subcellular compartments. Here, using a new synthetic molecular interaction system, we show that translocation of a regulatory subunit of the protein kinase A (PKA-R) to the plasma membrane has a paradoxical effect on the membrane kinase activity. It can both enhance it at lower translocation levels, even in the absence of signaling inputs, and inhibit it at higher translocation levels, suggesting its role as a linker that can both couple and decouple signaling processes in a concentration-dependent manner. We further demonstrate that superposition of gradients of PKA-R abundance across single cells can control the directionality of cell migration, reversing it at high enough input levels. Thus, complex in vivo patterns of PKA-R localization can drive complex phenotypes, including cell migration.\n\n## Introduction\n\nIn intracellular signal transduction, the information is encoded in molecular interactions involving recognition of diverse substrates by specific enzymes. These interactions are facilitated by large sets of adapter and scaffold proteins linking the activated enzymes to substrates within specific subcellular compartments, controlling dynamic modifications of protein localization and local concentrations of effector molecules (Langeberg and Scott, 2015). Furthermore, the enzymes, such as the diverse and abundant kinases involved in cell signaling and other functions, frequently contain covalently linked regulatory and catalytic subunits, with the regulatory subunits controlling both the activity of the enzyme and its interactions with other enzymes and substrates. However, the enzymes belonging to the family of protein kinase A (PKA) serine-threonine kinases do not follow this covalent linkage rule. Instead, a PKA molecule is a complex of two catalytic subunits (PKA-C) and a regulatory subunit dimer (PKA-R) that can dissociate following binding of two cyclic AMP (cAMP) molecules to each of the PKA-R subunits (Taylor et al., 2013). This intricate organization of the kinase complex is further complicated by dynamically shifting subcellular pools of cAMP, tethering of the kinase and its substrates to a large family of differentially localized A-kinase anchoring proteins (AKAPs), localized phosphatase and phosphodiesterase activity, and the intrinsic inhibitory function of PKA-R (Baillie, 2009; Wong and Scott, 2004; Zhang et al., 2012). What emerges is a picture of structural and functional complexity of PKA signaling that is still incompletely understood in spite of decades of research and analysis.\n\nGiven the complexity of intermolecular interactions, the stoichiometry of multi-molecular complexes can have profound effects on the outcome of signaling processes. A particularly striking effect is observed if a linker protein, such as a scaffold molecule, can vary in its abundance. It has been shown, for example, for the MAPK signaling pathways, that a scaffold protein can enhance the pathway activity at an optimal level but can also inhibit it if its concentration exceeds the optimum (Chapman and Asthagiri, 2009; Levchenko et al., 2000). This \u2018combinatorial inhibition\u2019 effect (Good et al., 2011) suggests that variation of the relative abundance of the pathway components can modulate the pathway activity even if the input levels do not change. Given the structural complexity of PKA signaling, it is not clear whether and how the relative abundance of various signaling pathway components in different subcellular compartments may modulate the signaling outcomes. More specifically, it is not clear if PKA-R subunits would serve purely as inhibitors of PKA signaling (as expected due to their intrinsic inhibitory role, relieved only in the presence of high cAMP concentrations) or would potentially elevate the kinase activity by enhancing localization of the PKA holoenzyme to subcellular areas with increased signaling inputs.\n\nCompartmentalized PKA signaling is important in a number of contexts including glucose homeostasis, cardiomyocyte contractility, cell cycle regulation, and cell migration (Howe, 2004; Langeberg and Scott, 2005; Mauban et al., 2009; Wong and Scott, 2004). In regulating cell migration, PKA is known to positively affect the activity of some cytoskeletal regulators (e.g., Rac1, Cdc42, \u03b14\u03b21 integrin) and negatively affect others (e.g., RhoA). Additionally, both inhibition and activation of PKA have been shown to have inhibitory effects on cell migration (Howe, 2004). As a result, PKA\u2019s role in regulation of cell migration is still unclear. Several studies utilizing FRET biosensors have identified gradients of PKA activity in migrating cells, with relatively high PKA activity at the cell front and relatively low activity at the rear, suggesting that spatial control of the kinase is involved in this process (Lim et al., 2008; Paulucci-Holthauzen et al., 2009; Tkachenko et al., 2011). Furthermore, the regulatory but not the catalytic subunit has been shown to be enriched in the pseudopods of cells in culture, suggesting that regulatory subunit localization may play a role in the regulation of cell migration (Howe et al., 2005).\n\nSince PKA-R mediates anchoring of PKA to diverse intracellular locations, in large part due to its interactions with AKAPs, it is particularly important to explore whether and how its abundance at specific subcellular locations modulates the output of signaling activity both under the basal conditions and in response to specific stimulation. This analysis can benefit from a tool that can permit acute localization of PKA-R to a predefined cell location in the absence of direct pathway stimulation. We developed such a tool based on chemically inducible dimerization with the small, cell-permeable molecule rapamycin (Banaszynski et al., 2005). Rapamycin induces dimerization of two small, intracellularly transduced molecular components: FK506-binding protein (FKBP) and the FKPB-rapamycin domain (FRB), which can be tethered to proteins of interest as well as specific subcellular compartments. This technique has been used to study biochemical activity of different proteins (Chu et al., 2014; Dagliyan et al., 2017; Dagliyan et al., 2013; Inoue et al., 2005; Karginov et al., 2010). Previously, we demonstrated that this dimerization strategy, when combined with the use of a microfluidic device controlling spatial rapamycin distribution, can be used to study biomolecular systems controlling cell polarity and migration (Lin et al., 2012). For the current study, we have tethered FKBP to fluorescently labeled PKA-R, while anchoring FRB to the plasma membrane (PM), to enable dynamically controlled localization of PKA-R to the PM in a rapamycin-dependent fashion. Using this tool, we find that PKA-R can have unexpectedly complex regulatory effects on the activity and function of PKA at the PM, elucidating the potential role of PM PKA-R localization in normal and pathological cell function.\n\n## Results\n\n### Design and characterization of an inducible PKA-R translocation system\n\nOur aim was to develop a synthetic tool to control PKA-R abundance in a specific subcellular location, with the ability to assess the real-time local subunit abundance. We found that of the four PKA-R isoforms (PKAR-I\u03b1/\u03b2, PKAR-II\u03b1, and PKAR-II\u03b2) in a standard HeLa cell line, the expression of PKAR-II\u03b2 was particularly low (Figure 1\u2014figure supplement 1A and D, rightmost lane), prompting us to use this isoform as the basis for development of the chemical dimerization-based tool for acutely controlling local PKA-R abundance. Specifically, to induce rapid and spatially controlled translocation of PKA-R to the PM, we utilized a rapamycin-based dimerization strategy combined with in-dish or in-chip control of rapamycin concentration similar to the strategy we previously used to control Rac1 function (Lin et al., 2012). We linked one binding partner of rapamycin, FKBP, to a fluorescently tagged PKA-RII\u03b2 (PKAR-FKBP-FP) and the other, FRB, to the membrane-targeting sequence of Lyn kinase (Lyn11-FRB, also referred to as Lyn-FRB throughout the text) (Figure 1A). Two color variants of the PKA-R construct were created to facilitate co-imaging with fluorescent biosensors and dyes (Figure 1B and Figure 1\u2014figure supplement 2). In addition to our transient expression vectors, lentiviral Gateway expression vectors for PKAR-FKBP-FP and Lyn-FRB were created and integrated into the genome of HeLa cells for ease of experimentation. We will refer to these cell lines as HeLa PFM (mCherry variant) and HeLa PFY (YFP variant), respectively. Although, expectedly, transfection of the modified PKAR-II\u03b2 changed the expression level of this subunit in both transiently transfected (to a lower degree) cells and stably transfected clones (to a greater degree), the expression of PKA-C and most other isoforms was not affected (Figure 1\u2014figure supplement 1), the localization of the modified PKAR-II\u03b2 was confined to the cytosol prior to stimulation (Figure 1C) and there was no detectable phenotypic effect of this induced expression.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/66869/elife-66869-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic of PKA-R translocation system. Rapamycin induces heterodimerization of FKBP and FRB, resulting in translocation of PKA-R to the plasma membrane (FKBP = FK506-binding protein, FRB = FKBP-rapamycin-binding domain, R = rapamycin, PKA-R = PKA regulatory subunit, C = PKA catalytic subunit). (B) DNA construct design. Two versions of recombinant PKA-R were created with different fluorescent labels. (C) Subcellular localization of PKAR-FKBP-YFP (green) within a transiently transfected HeLa cell at 0 and 10 min after addition of 100 nM rapamycin. Scale bar, 10 \u00b5m. mCherry protein (red) co-expressed for visualization. (D) PKA-R translocation in HeLa PFM cells quantified as cytoplasmic intensity drop in mCherry channel following addition of DMSO or 100 nM rapamycin. p = 0.0039 at t = 24 min post-rapamycin addition; two-tailed Student\u2019s t-test. (E) Catalytic subunit of the protein kinase A (PKA-C) translocation in HeLa cells transiently transfected with PKAR-FKBP-YFP, Lyn-FRB, and mCherry-PKA-C, quantified as a cytoplasmic intensity drop in mCherry channel following addition of 100 nM rapamycin. Cells transfected with mCherry protein instead of mCherry-PKA-C were used as a control. p = 0.037 at t = 24 min post-rapamycin addition; two-tailed Student\u2019s t-test. Graphs display the mean of each data set with standard error of the mean (SEM) indicated by shaded region. Number of cells in each data set is as indicated in the figure. Data is the result of one (D) and three (E) independent experiments, respectively. Mean and SEM values for each condition and time point are provided in Figure 1\u2014source data 1. Arrows indicate the timing of drug addition.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66869/elife-66869-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Expression levels of PKA-RII\u03b2 (top panel) and PKA-RII\u03b1 (middle panel). PKAR-FKBP-FP appears as a separate band above endogenous PKA-RII\u03b2 due to its larger size. (B) Quantification of total (endogenous plus exogenous) RII\u03b2 expression in cells transiently or stably expressing PKAR-FKBP-FP, normalized to expression in HeLa cells (endogenous only). RII\u03b2 expression is significantly increased in HeLa PFM and PFY cell lines vs. control. (C) Quantification of PKA-RII\u03b1 expression normalized to expression in HeLa cells. (D) PKA-RI expression levels. (E) Quantification of RI expression normalized to expression in HeLa cells. (F) PKA-C expression levels. (G) Quantification of PKA-C expression normalized to expression in HeLa cells. GAPDH used as a loading control for all experiments. Lanes (from left to right) contain lysate from HeLa cells transiently expressing our YFP- or mCherry-tagged PKA-R translocation system (lanes 1 and 2), our HeLa PFM and PFY cell lines (lanes 3 and 4), and untransfected HeLa cells (lane 5). Each blot was repeated twice with representative images shown. Raw immunoblot images are provided in Figure 1\u2014figure supplement 1\u2014source data 1. Quantification, including exact p values, is provided in Figure 1\u2014figure supplement 1\u2014source data 2. (*p<0.05).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/66869/elife-66869-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Plasmid maps for (A) PKAR-FKBP-YFP and (B) PKAR-FKBP-mCherry.\n\nTo assay translocation of PKA-R to the membrane, HeLa cells transiently expressing the mCherry-tagged translocation system were treated with 100 nM rapamycin and imaged for 30 min. Addition of rapamycin resulted in rapid PKA-R translocation to the PM evaluated as a significant decrease in the cytoplasmic fluorescence intensity over the first 3 min of stimulation (Figure 1C and D). No significant translocation occurred after this initial period. To determine whether PKA-C translocated to the membrane along with the exogenous PKA-R, we co-transfected HeLa cells with PKAR-FKBP-YFP, Lyn-FRB, and the constructs encoding either recombinant mCherry protein or mCherry-tagged PKA-C. Following addition of rapamycin, PKA-C indeed translocated to the cell membrane whereas mCherry alone underwent no significant change in localization, demonstrating that our synthetic system can bring the intact PKA holoenzyme to the PM (Figure 1E and Videos 1 and 2). Furthermore, in contrast to absence of any detectable phenotypic effect of PKAR-FKBP-FP expression in unstimulated HeLa cells, these cells treated with rapamycin displayed a rapid change in cell morphology (spreading) and an increase in filopodia formation (not observed in untransfected cells treated with the same rapamycin dose) (Figure 1C and Video 1), pointing to a pronounced effect of a change in the local PKA-R levels at the PM.\n\n![Video 1.](https://cdn.elifesciences.org/articles/66869/elife-66869-video1.mp4.jpg)\n\n**Video 1.:** Translocation of PKA-R (green) to the plasma membrane of HeLa cells following treatment with 100 nM rapamycin at time zero as indicated in the video. Cells were co-transfected with mCherry protein (red) as a counterstain for visualization.\n\n![Video 2.](https://cdn.elifesciences.org/articles/66869/elife-66869-video2.mp4.jpg)\n\n**Video 2.:** Co-localization of PKA-C (red) and PKA-R (green) before and after treatment with 100 nM rapamycin at time zero as indicated in the video.\n\n### Characterization of cell response to PKA-R translocation\n\nThe dissociation of PKA-C from PKA-R is commonly seen as a relief of PKA-C inhibition within the holoenzyme, with the regulatory subunit thus treated as a negative regulator of the kinase activity. To test whether membrane translocation of PKA-R would indeed inhibit the basal PKA activity in this compartment, we transfected HeLa PFM cells with Lyn-AKAR4, a membrane-bound FRET probe for PKA activity (Depry et al., 2011). The dynamic range of the intracellular Lyn-AKAR4 responses in this cell line was determined to be 20.9% \u00b1 2.0% (n = 12) (mean \u00b1 standard error of the mean [SEM] [n = number of cells]) following cell treatment with a combination of an adenylyl cyclase activator forskolin (Fsk, 50 \u03bcM) and a competitive non-selective phosphodiesterase inhibitor 3-isobutyl-1-methylxanthine (IBMX, 100 \u03bcM) to maximally increase the intracellular cAMP levels (Figure 2\u2014figure supplement 1). Surprisingly, we found that rapamycin-induced PKA-R translation alone (without any additional stimulation) was able to induce a significant increase in PKA activity, which was transient in some cells and sustained in others (Figure 2A and B). To determine whether the variability in the concentration of PKA-R could account for this cell-cell variation of response, we examined the dependence of the maximum levels of PKA activity on the estimated PKA-R abundance, using mCherry fluorescence intensity as a proxy. Interestingly, we observed that the increase in activity was greatest for cells with intermediate PKA-R concentrations, decreasing when PKA-R was either higher or lower than this optimal level (Figure 2C). Furthermore, in the cells with the highest PKA-R expression, PKA activity, following the initial rise, later not only decreased vs. the maximum, but dropped below the basal level, indicating active inhibition of the PKA activity (Figure 2D and E). Notably, even in the cells in which the PKA activity was inhibited vs. the basal levels, this activity transiently increased, suggesting that the PKA-R translocation was gradual, and thus first reached activating levels at the PM, but ultimately exceeded these levels and reached inhibitory concentrations.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/66869/elife-66869-fig2-v1.jpg)\n\n**Figure 2.:** (A) Effect of rapamycin-induced PKA-R translocation on PKA activity at the plasma membrane (PM) as detected by Lyn-AKAR4. 100 nM rapamycin or 0.1% DMSO added at time = 0. p = 9.83 x 10-12 at t = 4 min post-rapamycin addition; two-tailed Student\u2019s t-test. (B) Single cell PKA activity dynamics at the PM following addition of 100 nM rapamycin (a subset of data used for (A) is shown for clarity). (C) Relationship between PKA-R concentration, as estimated by mCherry fluorescence intensity, and maximal PM PKA activity increase following PKA-R translocation (n = 44 cells). Envelope overlaid for visualization. (D) Classification of cells into \u2018low\u2019 and \u2018high\u2019 expressors of PKA-R. (E) Average PM PKA activity over time for \u2018low\u2019 vs. \u2018high\u2019 expressors of PKA-R (defined in panel D). p = 0.024 at t = 58 min post-rapamycin addition; two-tailed Student\u2019s t-test. (F) PM PKA activity response to two different rapamycin doses. p = 0.023 at t = 60 min post-rapamycin addition; two-tailed Student\u2019s t-test. Graphs in (A, E, F) display the mean of each data set with standard error of the mean (SEM) indicated by shaded region. Number of cells in each data set is as indicated in the figure. Data is the result of three (A\u2013E) and two (F) independent experiments, respectively. Mean and SEM values for each condition and time point, as well as single cell measurements for data presented in (A\u2013E), are provided in Figure 2\u2014source data 1. Arrows indicate the timing of drug addition. All experiments completed in HeLa PFM cells transiently expressing Lyn-AKAR4.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66869/elife-66869-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Lyn-AKAR4 FRET response in HeLa PFM cells following co-treatment with 50 \u03bcM forskolin and 100 \u03bcM 3-isobutyl-1-methylxanthine (IBMX) to maximally increase intracellular cyclic AMP (cAMP) levels. Data represent the mean of n = 12 cells from one independent experiment with standard error of the mean (SEM) indicated by shaded region. Arrow indicates drug addition.\n\nTo further investigate whether the local concentration of PKA-R played a role in determining the magnitude and duration of the response at the PM, we treated cells with two different lower concentrations of rapamycin \u2013 2 and 20 nM. We again found that treatment of cells with 20 nM of rapamycin led to PKA activation that was, on average, transient, consistent with the gradual accumulation of PKA-R at the PM, first to optimal and then inhibitory levels. Importantly, we found that inducing a decreased level of PKA-R translocation with a lower dose of rapamycin (2 nM) resulted in a slower but much more sustained increase in PKA activity, reaching, on average, much higher levels than those seen for the higher dose (Figure 2F), suggesting that the lower PKA-R levels achieved at this rapamycin concentration were close to optimal. These results collectively suggested that PKA-R translocation to the PM can stimulate the PKA activity up to an optimal level of this subunit but can also inhibit PKA when the PKA-R levels exceed the optimal level in the PM compartment.\n\nTo account for this paradoxical effect of the local PKA-R abundance, we hypothesized that similar to linker or scaffold molecules, this subunit can both enhance and inhibit signaling output, depending on its concentration relative to the concentrations of the other components of the holoenzyme (e.g., cAMP or PKA-C molecules). Over-abundance of this molecule can \u2018titrate out\u2019 other complex components thus exerting negative effect, whereas the lower levels of the linker are essential for the complex functionality. We constructed a new heuristic mathematical model of this effect, which, along with our prior modeling effort (Levchenko et al., 2000), suggested that there is indeed an optimal level of concentration expected for PKA-R, if it behaves as such a linker molecule (Appendix 1). Furthermore, an increase in the local PKA-R abundance was predicted to potentially drive the signaling to below baseline levels, if the initial concentration of PKA-R at the PM was sufficiently high prior to forced PKA-R translocation.\n\nOverall, the combination of experimental and mathematical analyses suggested that rapamycin-based PKA-R translocation to the PM leads to a gradual accumulation of this PKA subunit in the specific subcellular compartment, allowing it to progressively accumulate at sub-optimal, optimal, and supra-optimal levels, and thus initially enhance and then inhibit signaling output, by virtue of serving the role of a linker in the holoenzyme complex.\n\n### Graded translocation of PKA-R induces a reversal of cell polarity\n\nWe next explored the functional effects of induced PM localization of PKA-R. PKA activity and PKA-R abundance have been shown to be elevated at the front of migrating cells in vitro, but the role that spatial localization of PKA plays in regulating cell migration is not well understood (Lim et al., 2008; Paulucci-Holthauzen et al., 2009). We therefore used our translocation system to probe the effect of intracellular PKA activity gradients, induced by gradients of PKA-R PM translocation, on cell polarization and migration. To accomplish this, we took advantage of the fact that intracellular PKA-R-FKBP-FP gradients can be induced by extracellular rapamycin gradients controlled within a microfluidic device (Lin et al., 2012; Lin and Levchenko, 2015; Lin and Levchenko, 2015). We used a variant of the microfluidic chip capable of generating chemical gradients by passive diffusion, which was previously developed in our lab (Lin et al., 2015). We increased the throughput to enable observation of up to 304 individual cells in parallel narrow microchannels (\u2018cross-channels\u2019) allowing for 1D cell migration (Figure 3A and Appendix 2). A gradient of rapamycin in the cross-channels was induced through diffusion between continuously replenished \u2018source\u2019 and \u2018sink\u2019 channels and visualized using a dye of similar molecular weight (Alexa Fluor 594). The cells in the channels exposed to the gradient did not experience sheer stress because of a much higher hydraulic resistance within the channels relative to a much lower resistance in larger source and sink channels. HeLa PFY cells were seeded into the chip and allowed to migrate into cross-channels overnight. Due to directionality of cell seeding, most cells had an initial directional polarity of migration, resulting in the \u2018upward\u2019 migration direction (from \u2018sink\u2019 to \u2018source\u2019, as labeled in Figure 3A) before rapamycin was added.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/66869/elife-66869-fig3-v1.jpg)\n\n**Figure 3.:** (A) Schematic of the microfluidic device used to produce gradients of rapamycin across microchannels housing HeLa PFY or PFM cells. (B) Single cell response to 20 nM rapamycin gradient. Numbers show time in minutes. (Green = PKAR-FKBP-YFP [stably expressed], Blue = H2\u03b2-mCerulean [transiently expressed nuclear marker], Red = Alexa Fluor 594 dye). (C) Average nuclear position (normalized to t = 0) for HeLa PFY cells in 20 nM rapamycin gradient (0.08 nM/\u00b5m) vs. no-translocation rapamycin control (HeLa cells stably expressing PKAR-FKBP-YFP but not Lyn-FRB). Standard error of the mean (SEM) indicated by shaded regions. p = 1.34 \u00d7 10-5 at 180 min post-rapamycin addition; two-tailed Student\u2019s t-test. Number of cells in each data set as indicated in the figure. (D) Single cell nuclear position data for no-translocation rapamycin control cells in 20 nM rapamycin gradient. Data from one independent experiment. (E) Single cell nuclear position data for HeLa PFY cells in 20 nM rapamycin gradient. Data from three independent experiments. Data from (D) superimposed in light gray. (F) Tracking of intracellular PKA activity gradient in HeLa PFM cells using the transiently expressed FRET probe Lyn-AKAR4. Rapamycin gradient introduced at t = 0. Colorimetric FRET ratio scale as indicated by color bar. (G) Mean intracellular plasma membrane (PM) PKA activity tracking along the cell length from the high end of the rapamycin gradient (\u20180\u2019 in panel F) to the low end (\u20181\u2019 in panel F). Data represent the mean of n = 9 HeLa PFM cells from two independent experiments with SEM indicated by shaded region. Cells were divided into 20 bins with the average FRET ratio value taken for each. Arrows in (C\u2013E) indicate addition of rapamycin. Scale bars in (B) and (F), 10 \u00b5m. Mean and SEM values for each time point and condition in (C) and each time point and position in (G) are provided in Figure 3\u2014source data 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66869/elife-66869-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Single cell response to DMSO gradient (0\u20130.1% from \u2018sink\u2019 to \u2018source\u2019 as labeled in Figure 3A). Numbers show time in minutes. Scale bar, 10 \u00b5m. (Green = PKAR-FKBP-YFP [stably expressed], Blue = H2\u03b2-mCerulean [transiently expressed nuclear marker], Red = Alexa Fluor 594 dye). (B) Nuclear position normalized to t = 0 min post-DMSO addition. A positive nuclear position indicates net movement of the nuclear centroid toward the DMSO source as described in Materials and methods. Arrow indicates DMSO addition. Data represent nuclear position for n = 18 cells from two independent experiments. Mean and standard error of the mean (SEM) values for each time point are provided in Figure 3\u2014source data 1.\n\nUpon application of a rapamycin gradient (0\u201320 nM, 0.08 nM/\u03bcm), we found a pronounced reversal of the directionality of the cells\u2019 migration in the direction opposite to the initial \u2018upward\u2019 bias, with the preferred new direction thus being opposite to the direction of the rapamycin gradient (Figure 3C and E and Video 3). This was in stark contrast to cells without expression of Lyn-FRB or cells exposed to a DMSO gradient that did not experience PKA-R translocation and continued migrating in the \u2018upward\u2019 direction (Figure 3C and D, Figure 3\u2014figure supplement 1, and Video 4). This result was surprising and in apparent contradiction with the expectation that an increase in PKA-R at the cell front would enhance the pre-existing cell polarization toward the rapamycin source. However, it was consistent with our prior observations suggesting that in many cells, the translocation of PKA-R induced by a sufficiently high rapamycin concentration could have an inhibitory rather than activating effect on PKA. This inhibitory effect was certainly true for a 20 nM spatially homogeneous dose of rapamycin, as revealed by the experiments and analysis described above (Figure 2F).\n\n![Video 3.](https://cdn.elifesciences.org/articles/66869/elife-66869-video3.mp4.jpg)\n\n**Video 3.:** Single cell response to 20 nM rapamycin gradient applied at time zero as indicated in the video. (Green = PKAR-FKBP-YFP [stably expressed], Blue = H2\u03b2-mCerulean [transiently expressed nuclear marker], Red = Alexa Fluor 594 dye).\n\n![Video 4.](https://cdn.elifesciences.org/articles/66869/elife-66869-video4.mp4.jpg)\n\n**Video 4.:** Single cell response to DMSO gradient applied at time zero as indicated in the video. (Green = PKAR-FKBP-YFP [stably expressed], Blue = H2\u03b2-mCerulean [transiently expressed nuclear marker], Red = Alexa Fluor 594 dye).\n\nTo determine whether PKA activity was indeed affected by a graded translocation of PKA-R, we repeated the experiment with HeLa PFM cells transiently expressing Lyn-AKAR4. Prior to rapamycin exposure, most cells displayed an internal PKA activity gradient that corresponded with the cell polarization state (high PKA activity at the cell front and low at the rear) (Figure 3F). Upon exposure to the rapamycin gradient, we observed a reversal in the direction of the internal PKA activity gradient that was concurrent with the flip in the direction of cell migration (Figure 3F and G). Interestingly, we also observed a transient increase in PKA activity at the cell front (Figure 3F, 15 min time point) prior to this reversal. These results, in combination, further supported the explanation of the reversal of cell migration directionality due to a transiently positive but, in the longer run, negative effect of a high level of PKA-R PM translocation.\n\n### Cell polarization state can be tuned by the slope of the rapamycin gradient\n\nTo further explore the mechanism of the reversal of cell migration directionality, we investigated how the slope and magnitude of the rapamycin gradient affected the response of HeLa PFY cells. First, we explored the effects of spatially uniform (20 nM \u2013 20 nM and 100 nM \u2013 100 nM across the channel) rapamycin inputs. Both were expected to compete with internal polarity cues. We found that whereas the lower rapamycin concentration had no detectable effect (vs. e.g., the control Figure 3D), the higher concentration gradually randomized the cell migration directionality, suggesting a stronger negating effect on the intrinsic polarity regulation (Figure 4A). We then exposed the cells to a relatively shallow rapamycin gradient (10 nM \u2013 20 nM across the channel, or 0.04 nM/\u03bcm), contrasting the results with those produced by steeper spatially graded stimulation (0\u201320 nM, or 0.08 nM/\u03bcm, Figure 3E). We again found reversal of the average migration directionality, which was increasingly more pronounced with increasing gradient slope (Figure 4D and F). This result suggested that both gradient values were sufficient to compete with the intrinsic polarity regulation mechanisms, by suppressing PKA activity in the front of the cell more than in the rear. By this logic, we expected that presenting cells with a reverse gradient (20\u20130 nM, \u2018downward\u2019) would result in internal gradients of PKA activity that would effectively point \u2018upward\u2019 for a large subset of cells, which would be consistent with the directionality of their inherent polarity, an effect opposite to the rapamycin gradients pointing \u2018upward\u2019. Thus, cells were expected to continue moving \u2018upward\u2019, perhaps at an even greater rate vs. the control. We indeed observed that most cells under this condition moved similarly to the control case, while a subset of cells reversed their directionality from \u2018downward\u2019 to \u2018upward\u2019, and another subset displayed an increased speed of \u2018upward\u2019 migration vs. the maximal cell migration levels observed in the control (Figure 4G and H).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/66869/elife-66869-fig4-v1.jpg)\n\n**Figure 4.:** (A) Nuclear positions of single cells responding to a uniform 20 nM rapamycin stimulus. (B) Nuclear positions of single cells responding to a uniform 100 nM rapamycin stimulus. (C) Average nuclear position of cells responding to 20 nM vs. 100 nM uniform rapamycin stimulus. Standard error of the mean (SEM) indicated by shaded regions. (D) Nuclear positions of single cells responding to a shallow rapamycin gradient (10 nM -\u2013 20 nM, or 0.04 nM/\u00b5m). (E) Nuclear positions of single cells responding to a steep rapamycin gradient (0 nM -\u2013 20 nM, or 0.08 nM/\u00b5m). Data taken from Figure 3E. (F) Average nuclear position of cells responding to a uniform 20 nM stimulus from (A), shallow gradient from (D), or steep gradient from (E). Standard error of the mean (SEM) indicated by shaded regions. (G) Nuclear positions of single cells responding to a steep rapamycin gradient in the reverse direction (20 nM \u2013 0 nM, or 0.08 nM/\u00b5m) as what is shown in (3A). (H) Average nuclear position of cells responding to steep rapamycin gradient in the forward and reverse directions. SEM indicated by shaded regions. Arrows indicate addition of rapamycin. Number of cells in (C), (F), and (H) are as indicated in the figure. Data was collected from two (A, D, G) and three (B) independent experiments. Mean and SEM values for each time point and condition are provided in Figure 4\u2014source data 1. All experiments completed using HeLa PFY cells.\n\n## Discussion\n\nProper kinase localization is important for cell function, ensuring that the kinase activity is limited to a specific set of substrates in response to an extracellular cue. Here, we describe development and implementation of a novel approach to dynamically relocalize a regulatory subunit of a kinase, PKA, to the PM. In contrast to a previous relocalization technique utilizing a photoactivatable PKA-C, our approach maintains the dependence of resulting PKA activity on cAMP and does not require overexpression of the catalytic subunit (O\u2019Banion et al., 2018). Furthermore, our synthetic system recapitulates the natural mechanism of subcellular PKA targeting of the regulatory PKA subunits by AKAPs.\n\nIn regulation of PKA activity, the regulatory PKA subunit can play a dual role of an inhibitor of PKA-C and a mediator of PKA localization to specific subcellular compartments, potentially enriched in the kinase activator (cAMP) and kinase substrates. Thus, in spite of its canonically inhibitory function, PKA-R can potentially have a more positive, up-regulating role on the activity of the enzyme. Our approach has allowed us to clarify this paradoxical function of PKA-R. We demonstrate in particular that relocalization of PKA-R to the PM was sufficient to induce an increase in PKA activity in this intracellular compartment, particularly for lower levels of the translocated PKA-R, even in the absence of changes in upstream signaling through G protein-coupled receptors. The effect of the PKA-R translocation reached the maximal level at the optimum level of this subunit, decreasing at PKA-R higher levels and ultimately driving the PKA activity to below basal levels. This type of nonlinear behavior has been experimentally and computationally demonstrated for linker proteins, such as scaffold proteins (Chapman and Asthagiri, 2009; Good et al., 2011; Levchenko et al., 2000). At low levels, a scaffold can enhance signaling by bringing components of a signaling pathway into close proximity, enabling their interaction, and thus enhancing the pathway activity. However, when the scaffold concentration is too high, it sequesters pathway components away from each other, decreasing the pathway activity, a behavior that is recapitulated by our mathematical model. Our results suggest that within the cell, PKA-R plays a scaffold-like role for PKA-C and cAMP since the kinase activity requires linkage of two PKA-C subunits and four cAMP molecules into one molecular complex by these subunits. When the local PKA-R concentration is too high, it can lead to incomplete binding (titration away) of either cAMP or PKA-C, preventing activation. Therefore, as PKA-R is recruited to the membrane, PKA activity will increase until there is a local shortage of one or both of these components. This suggests a more complex view of PKA-R\u2019s role in this pathway, suggesting that it can have either a pathway inhibitory or enhancing role, depending on the expression of PKA-C or cAMP abundance both globally across the cell and in specific subcellular compartments. In particular, our results suggest that the abundance of PKA-R at the PM in the HeLa cells investigated here is sub-optimal, but one can expect that it can be optimal or \u2018super-optimal\u2019 in other cellular compartments.\n\nOur tool also allowed us to study the functional effect of controlling the basal PKA activity on a complex phenotypic response: the polarity of cell migration. Although PKA-R has been shown to be enriched at the leading edge (Howe et al., 2005) of moving cells, the functional importance of either this localization pattern or the overall PKA activity gradient across a polarized cell has not been fully understood. Indeed, PKA activity gradients can be triggered by a number of membrane localized receptors or other signaling proteins, which are frequently pleiotropic and can activate other signaling pathways. Within this in vivo complexity, our molecular tool can isolate the specific role of PKA activity in defining cell polarity. It can be particularly revealing if one can reverse the cell polarity by directly imposing an intracellular PKA activity gradient. We indeed found that inducing gradients of PKA-R PM translocation at levels inhibitory to PKA activity led to a reversal of the internal PKA activity gradient and, as a result, the cell polarity and direction of cell migration. This work therefore demonstrates for the first time that intracellular PKA activity gradients can provide a polarization cue that is powerful enough to overcome other existing polarization cues inside the cell.\n\nIt is likely that PKA activity gradients exert an effect on cell polarization via modulation of the activity of the two mutually inhibitory Rho-family small GTPases RhoA and Rac1. PKA phosphorylation of RhoA on Ser188 has been shown to promote its interaction with RhoGDI, leading to removal of RhoA from the PM (Lang et al., 1996). PKA is also implicated in Rac1 activation, although the direct target of this positive regulation is still unclear (O\u2019Connor and Mercurio, 2001). Since PKA has a positive effect on Rac1 activity and a negative effect on membrane localized RhoA activity, it would be reasonable to theorize that PKA acts to shift the balance of Rac1 to RhoA signaling in favor of Rac1. In this way, a gradient of intracellular PKA activity could help to enhance the internal polarization of these two polarity effectors. When the PKA activity gradient flips, as in Figure 3G, the effect would be to increase Rac1 and decrease RhoA activity at the cell rear, leading to a reversal of polarity if this signal is sufficiently strong.\n\nIn a broader sense, this work demonstrates the critical role that kinase localization plays in controlling the cell response to an incoming stimulus. The subcellular kinase concentration can be tuned by the expression levels of various scaffold proteins, and differential expression between cells may result in variability of signaling responses within a population. Localization of scaffold proteins may vary dynamically via modifications to subcellular localization sequences as well, resulting in similar effects to those described here. In the context of PKA, AKAPs are receiving attention as potential therapeutic targets, and at least one isoform of PKA-R has been implicated as a driver of oncogenesis (Codina et al., 2019; Esseltine and Scott, 2013; Veugelers et al., 2004). The kinase relocalization strategy demonstrated herein can be applied to study the effects of localized PKA activity in other subcellular compartments and can be adapted to the study of other kinases, enabling a better understanding of the role of compartmentalized signaling.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Homo sapiens)</td>\n      <td>PRKAR2B</td>\n      <td>GenBank</td>\n      <td>NCBI Reference Sequence:NM_002736.2</td>\n      <td>mRNA sequence for PKA RII\u03b2</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>DH5\u03b1</td>\n      <td>ThermoFisher Scientific</td>\n      <td>Cat#:18263012</td>\n      <td>Competent cells</td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>HeLa</td>\n      <td>Gift from Dr Jin Zhang, UCSD</td>\n      <td>RRID:CVCL_0030</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>HeLa PFY</td>\n      <td>This study</td>\n      <td></td>\n      <td>See \u2018Cell line generation\u2019 in Materials and methods</td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>HeLa PFM</td>\n      <td>This study</td>\n      <td></td>\n      <td>See \u2018Cell line generation\u2019 in Materials and methods</td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>HEK293FT</td>\n      <td>Laboratory stock</td>\n      <td>RRID:CVCL_6911</td>\n      <td>Used to generate lentivirus for creation of cell lines</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-PKA[C] (Mouse monoclonal)</td>\n      <td>BD</td>\n      <td>Cat#:610981; RRID: AB_398293</td>\n      <td>(1:1000, WB)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-PKA RII\u03b2 (Mouse monoclonal)</td>\n      <td>Santa Cruz Biotechnology</td>\n      <td>Cat#:sc-376778</td>\n      <td>(1:400, WB)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-PKA RII\u03b1 (Rabbit polyclonal)</td>\n      <td>Abcam</td>\n      <td>Cat#:ab38949</td>\n      <td>(1:1000, WB)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-PKA RI-\u03b1/\u03b2 (Rabbit polyclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cat#:3927</td>\n      <td>(1:1000, WB)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-GAPDH (Rabbit monoclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cat#:2118</td>\n      <td>(1:1000, WB)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>PKAR-FKBP-YFP transient expression plasmid</td>\n      <td>This study</td>\n      <td></td>\n      <td>See \u2018Plasmid design\u2019 in Materials and methods</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>PKAR-FKBP-mCh transient expression plasmid</td>\n      <td>This study</td>\n      <td></td>\n      <td>See \u2018Plasmid design\u2019 in Materials and methods</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Lyn11-FRB transient expression plasmid</td>\n      <td>DOI:10.1126/science.1131163</td>\n      <td></td>\n      <td>Gift from Dr Takanari Inoue, Johns Hopkins University</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLenti-cmv-PKAR-FKBP-YFP-puro dest</td>\n      <td>This study</td>\n      <td></td>\n      <td>Lentiviral construct for expression of PKAR-FKBP-YFP. See \u2018Cell line generation\u2019 in Materials and methods</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLenti-cmv-PKAR-FKBP-mCh-puro dest</td>\n      <td>This study</td>\n      <td></td>\n      <td>Lentiviral construct for expression of PKAR-FKBP-mCh. See \u2018Cell line generation\u2019 in Materials and methods</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLenti-cmv-Lyn-FRB-blast dest</td>\n      <td>This study</td>\n      <td></td>\n      <td>Lentiviral construct for expression of Lyn11-FRB. See \u2018Cell line generation\u2019 in Materials and methods</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Lyn-AKAR4</td>\n      <td>DOI:10.1039/c0mb00079e</td>\n      <td></td>\n      <td>Gift from Dr Jin Zhang, UCSD</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>H2\u03b2-mCerulean</td>\n      <td>This study</td>\n      <td></td>\n      <td>See \u2018Plasmid design\u2019 in Materials and methods</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>QIAprep Spin Miniprep kit</td>\n      <td>QIAGEN</td>\n      <td>Cat#:27104</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Pierce BCA Protein Assay Kit</td>\n      <td>ThermoFisher Scientific</td>\n      <td>Cat#:23225</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Rapamycin</td>\n      <td>LC Laboratories</td>\n      <td>Cat#:R-5000</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Forskolin; Fsk</td>\n      <td>MilliporeSigma</td>\n      <td>Cat#:344270; CAS:66575-29-9</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>3-Isobutyl-1-methylxanthine; IBMX</td>\n      <td>MilliporeSigma</td>\n      <td>Cat#:I5879; CAS:28822-58-4</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Fugene HD Transfection Reagent</td>\n      <td>Promega</td>\n      <td>Cat#:E2311</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>TurboFect Transfection Reagent</td>\n      <td>ThermoFisher Scientific</td>\n      <td>Cat#:FERR0531</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MATLAB, R2021b and prior versions</td>\n      <td>MathWorks</td>\n      <td></td>\n      <td>Used for custom image analysis. Code provided with manuscript</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad Prism 9.3.1</td>\n      <td>GraphPad Software, LLC</td>\n      <td></td>\n      <td>Used for statistical analysis</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Fiji/ImageJ</td>\n      <td>DOI: 10.1038/nmeth.2019</td>\n      <td>RRID:SCR_002285</td>\n      <td>Used for immunoblot analysis</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Multilayer microfluidic device/gradient generator</td>\n      <td>This study</td>\n      <td></td>\n      <td>See Materials and methods and Appendix 2</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell culture and transfection\n\nHeLa cells were cultured in high glucose Dulbecco\u2019s modified Eagle medium (DMEM, Corning, Corning, NY) supplemented with 10% fetal bovine serum (FBS) (ThermoFisher Scientific, Waltham, MA) and 1% penicillin/streptomycin (ThermoFisher Scientific). For stable lines, media was supplemented with 1 \u00b5g/ml puromycin (MilliporeSigma, Burlington, MA) and blasticidin (ThermoFisher Scientific) to continuously select for cells expressing PKAR-FKBP-FP and Lyn11-FRB (also referred throughout to as Lyn-FRB). Cells were cultured in a 37\u00b0C humidified incubator with 5% CO2 and kept isolated from other cell lines while in culture to prevent cross-contamination. DAPI staining was performed to test for mycoplasma contamination. The HeLa cell line was not authenticated over the course of this study since the significance of the results is independent of the specific cell source. Relevant characteristics that are cell line-dependent were specifically tested (for instance, PKA regulatory subunit expression levels). Transient transfections were completed using Fugene (Promega, Madison, WI) according to manufacturer\u2019s protocol. Transfection of lentiviral vectors was completed using TurboFect (ThermoFisher Scientific).\n\n### Plasmid design\n\nRNA was isolated from HeLa cell lysate, reverse transcribed, and PCR amplified for the cDNA sequences of PKA-RII\u03b2 and PKA-C\u03b2 respectively using custom primers. The gel purified PCR product was ligated into a transient expression plasmid containing FKBP and either YFP or mCherry fluorescent protein (gifts from Dr Takanari Inoue, Johns Hopkins University) in the case of PKAR-FKBP-FP, or mCherry alone in the case of mCherry-PKA-C. The plasmid was then transformed into DH5\u03b1 competent cells, amplified, recovered using a standard QIAprep Spin Miniprep kit (Qiagen, Hilden, Germany), and sent for sequencing. The H2\u03b2-mCerulean transient expression plasmid was created by cloning the H2\u03b2 DNA sequence into the mCerulean-N1 vector (Addgene #54758). The plasmid was transformed and amplified in DH5\u03b1 cells, recovered as above, and sent for sequencing.\n\n### Cell line generation\n\nPKAR-FKBP-FP and Lyn-FRB were transferred to lentiviral expression vectors by Gateway cloning. Both color variants of PKAR-FKBP-FP were cloned into pLenti CMV puro destination vectors (Addgene plasmid #17452). Lyn-FRB was cloned into the pLenti CMV blast destination vector (Addgene plasmid #17451). To generate lentivirus, HEK293FT cells were transfected with one of the three destination vectors plus a lentiviral packaging vector (psPAX2, Addgene plasmid #12260) and a VSV-G envelope expressing vector (pMD2.G, Addgene plasmid #12259). Cell media was collected over a 3-day period beginning 2 days post-transfection and spun down in order to collect supernatant. Then, lentivirus was recovered from supernatant using an Amicon Ultra Centrifugal 50 kDa filter (MilliporeSigma) and transduced into HeLa cells along with 10 \u03bcg/ml polybrene (Santa Cruz Biotechnology, Dallas, TX). Cells were transduced sequentially with PKAR-FKBP-FP followed by Lyn-FRB. Each time, a selection procedure was completed, using 10 \u03bcg/ml puromycin or blasticidin, respectively, followed by generation of clonal lines by limiting dilution. Following selection, stable cells were cultured in DMEM media containing 1 \u00b5g/ml puromycin and blasticidin to maintain expression of the PKA-R translocation system.\n\n### Microfluidic device fabrication\n\nMultilayer microfluidic devices were fabricated from polydimethylsiloxane (PDMS) via replica molding from custom silicon masters, as described in Appendix 2. Devices were cleaned with 2% Alconox and 70% ethanol and then thermally bonded to #1.5 glass coverslips (Corning) by a 24 hr bake at 85\u00b0C. See Appendix 2 for further details.\n\n### Microfluidic device setup\n\nMicrofluidic channels were coated with 10 \u03bcg/ml fibronectin by incubation for 1 hr at room temperature. Cells were suspended in imaging medium (DMEM without phenol red, 10% FBS, 1% penicillin/streptomycin) and seeded into the device as described in Appendix 2. Following overnight incubation at 37\u00b0C, a microfluidic valve was depressed to fluidically separate the cells from all future inputs and imaging medium containing rapamycin (or an equivalent volume of DMSO) was added to one or both sides of the device. A gradient from one side of the microchannels to the other was established by creating a height-driven pressure differential between two input and one output ports. Following the start of the imaging, the microfluidic valve was gradually released to expose cells to the gradient.\n\n### Imaging\n\nWidefield imaging was performed on a Zeiss Axiovert 200 M epifluorescence microscope with motorized stage (Prior, Rockland, MA) and live cell incubation chamber with humidity and temperature control (PeCon, Erbach, Germany) set to 37\u00b0C and 5% CO2. Cells were imaged using a 40\u00d7, 1.3 numerical aperture oil immersion objective (Zeiss, Oberkochen, Germany) and Cascade II:1024 EMCCD camera (Teledyne Photometrics, Tucson, AZ). Microscope automation was controlled with Slidebook 6.0 software (Intelligent Imaging Innovations, Denver, CO). PKA-R was imaged using YFP excitation and emission filters for HeLa PFY cells or mCherry excitation and emission filters for HeLa PFM cells. For nuclear tracking experiments, cells were transfected with H2\u03b2-mCerulean, which was detected using CFP excitation and emission filters. To better identify the cell boundary for translocation analysis, HeLa PFM cells were stained with Vybrant DiO Cell-Labeling Solution (ThermoFisher Scientific). All FRET images were obtained using a CFP excitation filter as well as CFP and YFP emission filters. Semrock filters and corresponding dichroics were used (IDEX Health & Science, LLC, Rochester, NY). For the migration experiments, a spectral 2D template autofocus algorithm was employed using the phase channel to correct for focus drift between time points.\n\nConfocal imaging was performed on a Nikon TiE inverted microscope (Nikon, Tokyo, Japan) equipped with a Yokogawa CSU-W1 spinning disk with 50 \u00b5m disk pattern (Yokogawa Electric, Tokyo, Japan) and CFI Plan Fluor 40\u00d7, 1.3 numerical aperture oil immersion objective (Nikon). Images were captured using an Andor iXon Ultra888 EMCCD camera (Oxford Instruments, Abingdon, UK). The microscope was equipped with a stage top incubator (Okolab, Pozzuoli, NA, Italy) maintaining humidity and 5% CO2.\n\n### Live cell imaging\n\nFor dish experiments, 35 mm glass bottom dishes #1.5 (Matsunami, Osaka, Japan) were coated with 5\u201310 \u00b5g/ml fibronectin (MilliporeSigma) for 1 hr at room temperature, and cells were incubated on the coated surfaces overnight prior to imaging. For FRET analysis, cells were imaged in Hank\u2019s balanced salt solution (ThermoFisher Scientific) to reduce background. All other imaging experiments were completed in the normal cell culture medium (see above) without phenol red. For analysis of translocation, images were taken every minute in the YFP and/or mCherry channels. For FRET, images were taken every 2 min in the CFP and FRET channels. HeLa PFM cells were used for all FRET experiments to avoid spectral overlap with YFP/CFP FRET probes. All other experiments were performed using HeLa PFY cells, except for the initial co-localization experiment shown in Figure 1, which was performed using HeLa cells transiently transfected with PKAR-FKBP-FP and Lyn-FRB, as a proof of principle.\n\n### FRET image analysis\n\nAll image analysis was performed using custom MATLAB codes. For FRET images, image registration was performed prior to analysis. Images were segmented by intensity thresholding in the YFP channel. The FRET ratio was calculated as (FRET-DF)/(CFP-DF), where FRET is the intensity of emission collected in the YFP channel following CFP excitation. Cells were excluded from the analysis if the expression of the FRET probe was below a threshold value (as determined by fluorescence intensity) that was consistent across experimental replicates.\n\n### Cytoplasmic intensity tracking\n\nTo verify translocation of PKA-R and PKA-C to the PM, the cytoplasmic intensity of fluorescently tagged PKA-R or PKA-C was tracked over time using images captured by spinning disk confocal microscopy. Post-imaging analysis was performed by: (1) segmenting the cells using YFP fluorescence; (2) eroding away the outermost 20 pixels (7.78 \u03bcm) of the segmented cell, leaving only the fluorescence intensity values for the non-PM compartments; and (3) taking an average of the non-zero pixels at each time point in the mCherry channel. This average was tracked as a function of time before and after rapamycin stimulation. Cells were excluded from the analysis if the intensity in the fluorescence channel used for segmentation was too low to properly distinguish cell from background.\n\n### Cell migration analysis by nuclear tracking\n\nPrior to seeding into microfluidic devices, cells were transfected with H2\u03b2-mCerulean for nuclear visualization and tracking. Following experimentation, images were registered in the phase channel to prevent any miscalculations of nuclear position due to stage drift. Then, the nucleus was identified by intensity thresholding in the CFP channel, the centroid of each nuclear ROI was calculated, and its location was tracked over time. Since cells were confined to motion in one dimension and devices were aligned such that microchannels were parallel to the stage mount, only the y position of the centroid was required to capture the change in nuclear position with respect to time zero. This positive or negative change in nuclear position was graphically presented for both single cells and as an average of cells in a population.\n\n### Immunoblotting\n\nHeLa cells transiently or stably expressing our PKA-R translocation system as well as untransfected controls were washed with ice-cold PBS, lysed with RIPA lysis buffer and Halt Protease and Phosphatase Inhibitor Cocktail (ThermoFisher) according to the manufacturer\u2019s protocols, and collected for immunoblotting. Laemmli buffer was added to lysates before heating them at 95\u00b0C for 5 min. Samples were allowed to cool and then loaded into 10% Mini-PROTEAN TGX Stain-Free protein gels for electrophoresis (Bio-Rad, Hercules, CA).\n\nFollowing gel electrophoresis, proteins were transferred to a nitrocellulose membrane. The membrane was blocked with 5% BSA in Tris-buffered saline with 0.1% Tween-20 (TBST) and incubated with primary antibodies overnight at 4\u00b0C. Following additional washes with TBST, the membrane was incubated with horseradish-peroxidase-coupled secondary antibody for 1 hr at room temperature, washed again with TBST, and incubated in ECL Western blotting substrate (Promega) for protein visualization on a ChemiDoc XRS System (Bio-Rad). The primary antibodies used in this study are purified mouse anti-PKA[C] at 1:1000 dilution (BD; 610981), anti-PKA RII\u03b2 at 1:400 dilution (Santa Cruz Biotechnology, Dallas, TX; sc-376778), anti-PKA RII\u03b1 at 1:1000 dilution (Abcam, Cambridge, UK; ab38949), anti-PKA RI-\u03b1/\u03b2 at 1:1000 dilution (Cell Signaling Technology, Danvers, MA; 3927), and anti-GAPDH at 1:1000 dilution as a loading control (Cell Signaling; 2118). HRP-linked anti-rabbit and HRP-linked anti-mouse (GE Healthcare, Chicago, IL) were used as secondary antibodies. Blots were stripped before probing for GAPDH or a second protein of interest. Immunoblot images were analyzed using Fiji software (Schindelin et al., 2012).\n\n### Statistical analysis\n\nResults of cell imaging experiments were presented either as single cell traces or as means with shaded regions indicating SEM. Numbers of biological and technical replicates are as indicated in each figure. A biological replicate is defined as a single cell in an imaging experiment. A technical replicate is defined as a single imaging experiment. Each technical replicate was performed in a different cell imaging dish or microfluidic chip. Statistical analysis was completed in Microsoft Excel. Comparisons between groups were conducted using a two-tailed Student\u2019s t-test. Differences were concluded to be significant for p values less than 0.05. For immunoblots, one-way ANOVA was performed in GraphPad Prism 9.3.1 followed by Tukey\u2019s multiple comparisons test. Differences between pairs were concluded to be significant if they had adjusted p values less than 0.05.\n",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "edd03f26-f8ba-4d45-985f-bbab27968e6c",
+      "submission_id": "9cd0443b-a94c-486d-85ed-2fac69ded7f7",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Volker D\u00f6tsch, https://ror.org/04cvxnb49 Goethe University Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.66869.sa0](https://doi.org/10.7554/eLife.66869.sa0)\n\nThis is a very thorough and important study demonstrating quantitative control of signaling through changes in the abundance and localization of a regulatory kinase subunit. The authors use live imaging experiments in microfluidic devices to reveal nonmonotonic dependence of PKA activity on the level of its regulatory subunit and provide evidence that it translates into corresponding changes of cell polarization and cell migration. Moreover, they provide a mathematical model that explains the underlying mechanism.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Volker D\u00f6tsch, https://ror.org/04cvxnb49 Goethe University Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.66869.sa1](https://doi.org/10.7554/eLife.66869.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Complex effects of kinase localization revealed by compartment-specific regulation of protein kinase A activity\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Volker D\u00f6tsch as Reviewing Editor and Reviewer #3, and the evaluation has been overseen by Philip Cole as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Stefan Knapp (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission. All reviewers agreed that the experiments reported interesting results on the regulation of PKA activity by local concentration. The main criticism focuses on the use of overexpression and the not reported relative concentrations of PKA and PKAR-II\u03b2.\n\nEssential revisions:\n\n1) Information on endogenous levels of PKA and of the regulatory subunit should be provided to show that at least overall levels are within the physiological range. A IHC comparison would be most useful as PKA concentration could be probed at different cellular locations in the presence and absence of PKA pathway stimulation.\n\n2) More information on the use of overexpression or stable expressing cell lines is needed in the description of the experiments and figure legends.\n\n3) A mathematical model that describes the quantitative behavior of the system would be very useful.Reviewer #1:\n\nThis is a very thorough and important study demonstrating quantitative control signaling through changes in the abundance and localization of a regulatory kinase subunit. The authors use live imaging experiments in microfluidic devices to reveal nonmonotonic dependence of PKA activity on the level of its regulatory subunit and provide evidence that it translates into corresponding changes of cell polarization and cell migration. The presentation is very clear and the results are convincing. Given the quantitative nature of the results, the authors could try to summarize their observations using a mathematical model. This would make the discussion even more convincing.\n\nReviewer #2:\n\nThe authors developed a FRET based sensor system that allows for the positioning of PKA at the plasma membrane in the absence of direct pathway stimulation. The system consists of a rapamycin-inducible dimerization domain which was achieved by linking the binding partner of rapamycin, FKBP, to fluorescent tagged PKA regulatory subunit PKAR-II\u03b2 (construct PKAR-FKBP-FP) and a second fluorescent protein linked to the membrane-targeting sequence of Lyn kinase (Lyn-FRB). This assay system was used to shed light on the question of how localization affects PKA signalling outputs including complex phenotypic responses such a polarity and cell migration. The study also addresses the role of the regulatory subunit which on the one hand is a potent inhibitor of PKA activity but it also targets PKA to cellular locations, a prerequisite for PKA dependent signalling, thus functional also as a local \"activator\". The authors indeed found evidence of this paradoxical activating role of the regulatory subunit, which was transient in some cell types. An innovative microfluidic device controlled rapamycin gradients revealing that cell polarity can be tuned by the slope of PKA-R gradient.\n\nThe developed inducible FRET system provides interesting insights into the role of PKA location and the regulatory subunit. However, the system relies on ectopic expression only and it is not clear how the expression level compares with endogenous PKA levels. The main cell system (HeLa) is not the most obvious choice of cell lines for these studies as these cells are genetically highly compromised.\n\nAs the authors nicely show that PKA activity is highly dependent on PKAR-II\u03b2 concentration, the relative levels of this regulatory subunit should be compared to levels in a PKA relevant cellular system. It is not clear if transient transfections or stable cell lines were used. It would have been helpful to add this information to the figure legends.\n\nReviewer #3:\n\nLaCroix et al., investigate the catalytic activity of the protein kinase PKA in the context of the translocation of the regulatory subunit PKA-R to the plasma membrane, For this forced translocation they use the rapamycin / FBBP system with one component tethered to the regulatory subunit and the other to a plasma membrane anchor. They observe a rapid translocation of the regulatory unit to the plasma membrane as well as a translocation of the catalytic subunit of the kinase. Probing the activity of the kinase they observe a complex behavior with the activity first increasing and then decreasing. This behavior also depends on the rapamycin concentration used with lower concentrations \u2013 translating into a slower translocation of the regulatory subunit to the plasma membrane \u2013 resulting in a slower but sustained increase in catalytic activity. They also demonstrate the effect by measuring cell migration using microfluidic devices and rapamycin gradients.\n\nThe interpretation of the authors is that for the full activity a dimer of the catalytic subunit must be bound to the dimeric regulatory unit which then gets activated at the plasma membrane by binding to cyclic AMP. If the concentration of the regulatory unit at the membrane increases the catalytic subunits will progressively bind to so far un-complexed regulatory subunits which will \u2013 after an initial increase in activity \u2013 decrease the activity again. This interpretation is logical. A limitation, however, is that the authors do not provide measures of the (relative) cellular concentrations of the catalytic and the regulatory subunits. Since they use a lentiviral or transient transfection system it remains unclear if the observed effect is relevant at all under basal expression conditions or are created by the overexpression of one of the components.\n",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "63dd6528-0407-4f1b-b9cb-90b3bd81919c",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C1",
+      "claim": "Kinase activity in signaling networks frequently depends on regulatory subunits that can both inhibit activity by interacting with the catalytic subunits and target the kinase to distinct molecular partners and subcellular compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinase activity in signaling networks frequently depends on regulatory subunits that can both inhibit activity by interacting with the catalytic subunits and target the kinase to distinct molecular partners and subcellular compartments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about kinase regulation that draws from established scientific understanding of kinase function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "b5802022-0433-4963-bc2a-5531c524a119",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C2",
+      "claim": "Translocation of PKA-R to the plasma membrane can enhance membrane kinase activity at lower translocation levels, even in the absence of signaling inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, using a new synthetic molecular interaction system, we show that translocation of a regulatory subunit of the protein kinase A (PKA-R) to the plasma membrane has a paradoxical effect on the membrane kinase activity. It can both enhance it at lower translocation levels, even in the absence of signaling inputs, and inhibit it at higher translocation levels, suggesting its role as a linker that can both couple and decouple signaling processes in a concentration-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the FRET biosensor experiments showing PKA activity increases upon PKA-R translocation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "ea63a89e-5f8a-46d6-8a2e-32dd16c0a0c0",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C3",
+      "claim": "Translocation of PKA-R to the plasma membrane can inhibit membrane kinase activity at higher translocation levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, using a new synthetic molecular interaction system, we show that translocation of a regulatory subunit of the protein kinase A (PKA-R) to the plasma membrane has a paradoxical effect on the membrane kinase activity. It can both enhance it at lower translocation levels, even in the absence of signaling inputs, and inhibit it at higher translocation levels, suggesting its role as a linker that can both couple and decouple signaling processes in a concentration-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing PKA activity decreases below baseline at high PKA-R expression levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "2aec2ea9-d309-40da-8da5-598a5d90a39f",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C4",
+      "claim": "PKA-R can act as a linker that can both couple and decouple signaling processes in a concentration-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "It can both enhance it at lower translocation levels, even in the absence of signaling inputs, and inhibit it at higher translocation levels, suggesting its role as a linker that can both couple and decouple signaling processes in a concentration-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the experimental observations and mathematical modeling presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "4173549f-45bf-4a8b-9fa6-158ca937c636",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C5",
+      "claim": "Superposition of gradients of PKA-R abundance across single cells can control the directionality of cell migration.",
+      "claim_type": "EXPLICIT",
+      "source": "We further demonstrate that superposition of gradients of PKA-R abundance across single cells can control the directionality of cell migration, reversing it at high enough input levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from microfluidic gradient experiments showing cell migration reversal.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "f6fc924b-b745-4560-bc77-d643345123af",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C6",
+      "claim": "Complex in vivo patterns of PKA-R localization can drive complex phenotypes, including cell migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, complex in vivo patterns of PKA-R localization can drive complex phenotypes, including cell migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental observations of PKA-R translocation effects on cell migration.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "5d71563e-6d21-4874-b6d7-5a47f72a0312",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C7",
+      "claim": "Adapter and scaffold proteins facilitate molecular interactions by linking activated enzymes to substrates within specific subcellular compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "These interactions are facilitated by large sets of adapter and scaffold proteins linking the activated enzymes to substrates within specific subcellular compartments, controlling dynamic modifications of protein localization and local concentrations of effector molecules (Langeberg and Scott, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "6c034662-ab82-412f-9a1f-e5b0c94f43c0",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C8",
+      "claim": "PKA molecules are complexes of two catalytic subunits (PKA-C) and a regulatory subunit dimer (PKA-R) that can dissociate following binding of two cyclic AMP (cAMP) molecules to each of the PKA-R subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, a PKA molecule is a complex of two catalytic subunits (PKA-C) and a regulatory subunit dimer (PKA-R) that can dissociate following binding of two cyclic AMP (cAMP) molecules to each of the PKA-R subunits (Taylor et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature describing PKA structure and function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "f4cf3da9-1177-4efb-a06e-637b84b5a360",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C9",
+      "claim": "PKA signaling complexity includes dynamically shifting subcellular pools of cAMP, tethering of the kinase and its substrates to A-kinase anchoring proteins (AKAPs), localized phosphatase and phosphodiesterase activity, and the intrinsic inhibitory function of PKA-R.",
+      "claim_type": "EXPLICIT",
+      "source": "This intricate organization of the kinase complex is further complicated by dynamically shifting subcellular pools of cAMP, tethering of the kinase and its substrates to a large family of differentially localized A-kinase anchoring proteins (AKAPs), localized phosphatase and phosphodiesterase activity, and the intrinsic inhibitory function of PKA-R (Baillie, 2009; Wong and Scott, 2004; Zhang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "57f10257-6bfe-4b95-8b39-ecbd1162b3a5",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C10",
+      "claim": "A scaffold protein can enhance pathway activity at an optimal level but can also inhibit it if its concentration exceeds the optimum.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown, for example, for the MAPK signaling pathways, that a scaffold protein can enhance the pathway activity at an optimal level but can also inhibit it if its concentration exceeds the optimum (Chapman and Asthagiri, 2009; Levchenko et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature on scaffold protein effects.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "2b124b91-b45d-4250-b9fe-ea386599cb7e",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C11",
+      "claim": "Variation of the relative abundance of pathway components can modulate pathway activity even if the input levels do not change.",
+      "claim_type": "EXPLICIT",
+      "source": "This 'combinatorial inhibition' effect (Good et al., 2011) suggests that variation of the relative abundance of the pathway components can modulate the pathway activity even if the input levels do not change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation and represents an inference from the combinatorial inhibition concept.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "fa04603e-b2dd-4bc7-8b63-c82a60a95460",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C12",
+      "claim": "Compartmentalized PKA signaling is important in glucose homeostasis, cardiomyocyte contractility, cell cycle regulation, and cell migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Compartmentalized PKA signaling is important in a number of contexts including glucose homeostasis, cardiomyocyte contractility, cell cycle regulation, and cell migration (Howe, 2004; Langeberg and Scott, 2005; Mauban et al., 2009; Wong and Scott, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "203be0ae-54a4-4f94-901e-b747196da9d6",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C13",
+      "claim": "PKA positively affects the activity of some cytoskeletal regulators (e.g., Rac1, Cdc42, \u03b14\u03b21 integrin) and negatively affects others (e.g., RhoA).",
+      "claim_type": "EXPLICIT",
+      "source": "In regulating cell migration, PKA is known to positively affect the activity of some cytoskeletal regulators (e.g., Rac1, Cdc42, \u03b14\u03b21 integrin) and negatively affect others (e.g., RhoA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim draws from established knowledge about PKA's effects on cytoskeletal regulators.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "f00fd7ff-e7f2-4501-ae98-dfc220815d81",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C14",
+      "claim": "Both inhibition and activation of PKA have been shown to have inhibitory effects on cell migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, both inhibition and activation of PKA have been shown to have inhibitory effects on cell migration (Howe, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "0e06d9c5-245c-4851-addb-fd8a958167d4",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C15",
+      "claim": "Several studies utilizing FRET biosensors have identified gradients of PKA activity in migrating cells, with relatively high PKA activity at the cell front and relatively low activity at the rear.",
+      "claim_type": "EXPLICIT",
+      "source": "Several studies utilizing FRET biosensors have identified gradients of PKA activity in migrating cells, with relatively high PKA activity at the cell front and relatively low activity at the rear, suggesting that spatial control of the kinase is involved in this process (Lim et al., 2008; Paulucci-Holthauzen et al., 2009; Tkachenko et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "14a7c294-0629-4e67-a771-9e4dbcd2db06",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C16",
+      "claim": "The regulatory but not the catalytic subunit of PKA has been shown to be enriched in the pseudopods of cells in culture.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the regulatory but not the catalytic subunit has been shown to be enriched in the pseudopods of cells in culture, suggesting that regulatory subunit localization may play a role in the regulation of cell migration (Howe et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "6997a1a0-570b-4a0e-9300-096fda8b2b51",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C17",
+      "claim": "Of the four PKA-R isoforms (PKAR-I\u03b1/\u03b2, PKAR-II\u03b1, and PKAR-II\u03b2) in a standard HeLa cell line, the expression of PKAR-II\u03b2 was particularly low.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that of the four PKA-R isoforms (PKAR-I\u03b1/\u03b2, PKAR-II\u03b1, and PKAR-II\u03b2) in a standard HeLa cell line, the expression of PKAR-II\u03b2 was particularly low (Figure 1\u2014figure supplement 1A and D, rightmost lane), prompting us to use this isoform as the basis for development of the chemical dimerization-based tool for acutely controlling local PKA-R abundance.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunoblot data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "63394103-c074-4379-a1df-4b00c9d8b210",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C18",
+      "claim": "Rapamycin induces heterodimerization of FKBP and FRB.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapamycin induces dimerization of two small, intracellularly transduced molecular components: FK506-binding protein (FKBP) and the FKPB-rapamycin domain (FRB), which can be tethered to proteins of interest as well as specific subcellular compartments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about rapamycin-induced dimerization systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "a9b05bb4-1540-4ec7-b593-d81a727a94a0",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C19",
+      "claim": "Transfection of the modified PKAR-II\u03b2 changed the expression level of this subunit in both transiently transfected cells (to a lower degree) and stably transfected clones (to a greater degree).",
+      "claim_type": "EXPLICIT",
+      "source": "Although, expectedly, transfection of the modified PKAR-II\u03b2 changed the expression level of this subunit in both transiently transfected (to a lower degree) cells and stably transfected clones (to a greater degree), the expression of PKA-C and most other isoforms was not affected (Figure 1\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunoblot data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "8ee9c3c6-4601-428a-8e86-d36a37cd7057",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C20",
+      "claim": "The expression of PKA-C and most other PKA-R isoforms was not affected by transfection of the modified PKAR-II\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "Although, expectedly, transfection of the modified PKAR-II\u03b2 changed the expression level of this subunit in both transiently transfected (to a lower degree) cells and stably transfected clones (to a greater degree), the expression of PKA-C and most other isoforms was not affected (Figure 1\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunoblot data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "71830b32-70b6-4ec7-989e-4edf3d8ae92f",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C21",
+      "claim": "The localization of the modified PKAR-II\u03b2 was confined to the cytosol prior to stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "the localization of the modified PKAR-II\u03b2 was confined to the cytosol prior to stimulation (Figure 1C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by imaging data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "7d61c5d6-f90b-4ea4-ab68-bcf22e2cc82d",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C22",
+      "claim": "There was no detectable phenotypic effect of induced expression of modified PKAR-II\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "the localization of the modified PKAR-II\u03b2 was confined to the cytosol prior to stimulation (Figure 1C) and there was no detectable phenotypic effect of this induced expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experiments, representing a negative result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "60373ef7-4f66-451e-b350-fd3ef59b2d98",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C23",
+      "claim": "Addition of rapamycin resulted in rapid PKA-R translocation to the plasma membrane evaluated as a significant decrease in the cytoplasmic fluorescence intensity over the first 3 min of stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of rapamycin resulted in rapid PKA-R translocation to the PM evaluated as a significant decrease in the cytoplasmic fluorescence intensity over the first 3 min of stimulation (Figure 1C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by imaging data and quantification shown in Figure 1C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "2cd7fa12-d83b-4a87-ad3a-43738a8af186",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C24",
+      "claim": "No significant PKA-R translocation occurred after the initial 3 minute period following rapamycin addition.",
+      "claim_type": "EXPLICIT",
+      "source": "No significant translocation occurred after this initial period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the data shown in Figure 1D showing plateau of translocation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "82cd8a2e-1f9c-4355-8ba2-978377498105",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C25",
+      "claim": "PKA-C translocated to the cell membrane along with exogenous PKA-R following rapamycin addition.",
+      "claim_type": "EXPLICIT",
+      "source": "Following addition of rapamycin, PKA-C indeed translocated to the cell membrane whereas mCherry alone underwent no significant change in localization, demonstrating that our synthetic system can bring the intact PKA holoenzyme to the PM (Figure 1E and Videos 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by imaging data shown in Figure 1E and Videos 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "88d4fd43-a104-40a9-8dd3-52b23ff45be9",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C26",
+      "claim": "mCherry protein alone underwent no significant change in localization following rapamycin addition.",
+      "claim_type": "EXPLICIT",
+      "source": "Following addition of rapamycin, PKA-C indeed translocated to the cell membrane whereas mCherry alone underwent no significant change in localization, demonstrating that our synthetic system can bring the intact PKA holoenzyme to the PM (Figure 1E and Videos 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by imaging data shown in Figure 1E serving as a negative control.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "1ce78006-569d-4c78-a2c6-082b5f9880a1",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C27",
+      "claim": "HeLa cells expressing PKAR-FKBP-FP and treated with rapamycin displayed a rapid change in cell morphology (spreading) and an increase in filopodia formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in contrast to absence of any detectable phenotypic effect of PKAR-FKBP-FP expression in unstimulated HeLa cells, these cells treated with rapamycin displayed a rapid change in cell morphology (spreading) and an increase in filopodia formation (not observed in untransfected cells treated with the same rapamycin dose) (Figure 1C and Video 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by imaging observations shown in Figure 1C and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "81e6f387-dca4-4f61-8ceb-e94d79ae2fb7",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C28",
+      "claim": "The dynamic range of intracellular Lyn-AKAR4 responses in HeLa PFM cells was determined to be 20.9% \u00b1 2.0% (n = 12) following cell treatment with forskolin and IBMX.",
+      "claim_type": "EXPLICIT",
+      "source": "The dynamic range of the intracellular Lyn-AKAR4 responses in this cell line was determined to be 20.9% \u00b1 2.0% (n = 12) (mean \u00b1 standard error of the mean [SEM] [n = number of cells]) following cell treatment with a combination of an adenylyl cyclase activator forskolin (Fsk, 50 \u03bcM) and a competitive non-selective phosphodiesterase inhibitor 3-isobutyl-1-methylxanthine (IBMX, 100 \u03bcM) to maximally increase the intracellular cAMP levels (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FRET biosensor data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "13381ebb-f284-4cbd-a091-4598f1276476",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C29",
+      "claim": "Rapamycin-induced PKA-R translocation alone (without any additional stimulation) was able to induce a significant increase in PKA activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we found that rapamycin-induced PKA-R translation alone (without any additional stimulation) was able to induce a significant increase in PKA activity, which was transient in some cells and sustained in others (Figure 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FRET biosensor data shown in Figure 2A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "2594ba8d-e44b-464e-99a9-8f54d5c77c0c",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C30",
+      "claim": "The increase in PKA activity following PKA-R translocation was greatest for cells with intermediate PKA-R concentrations, decreasing when PKA-R was either higher or lower than this optimal level.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed that the increase in activity was greatest for cells with intermediate PKA-R concentrations, decreasing when PKA-R was either higher or lower than this optimal level (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2C correlating PKA-R concentration with PKA activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "743cae2f-f817-43b5-a54c-82f51352ad81",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C31",
+      "claim": "In cells with the highest PKA-R expression, PKA activity, following the initial rise, later not only decreased vs. the maximum, but dropped below the basal level, indicating active inhibition of the PKA activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in the cells with the highest PKA-R expression, PKA activity, following the initial rise, later not only decreased vs. the maximum, but dropped below the basal level, indicating active inhibition of the PKA activity (Figure 2D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2D and E showing PKA activity dynamics in high PKA-R expressing cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "20844aa6-d425-424a-8732-1d5fff861b71",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C32",
+      "claim": "Treatment of cells with 20 nM of rapamycin led to PKA activation that was, on average, transient.",
+      "claim_type": "EXPLICIT",
+      "source": "We again found that treatment of cells with 20 nM of rapamycin led to PKA activation that was, on average, transient, consistent with the gradual accumulation of PKA-R at the PM, first to optimal and then inhibitory levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "2fce2f3a-b895-473a-bb81-0c8e872a0617",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C33",
+      "claim": "Inducing a decreased level of PKA-R translocation with 2 nM rapamycin resulted in a slower but much more sustained increase in PKA activity, reaching, on average, much higher levels than those seen for the higher dose.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we found that inducing a decreased level of PKA-R translocation with a lower dose of rapamycin (2 nM) resulted in a slower but much more sustained increase in PKA activity, reaching, on average, much higher levels than those seen for the higher dose (Figure 2F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2F comparing different rapamycin doses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "d7cc90d1-90fc-4477-a3f1-71f393968a11",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C34",
+      "claim": "PKA-R translocation to the PM can stimulate the PKA activity up to an optimal level of this subunit but can also inhibit PKA when the PKA-R levels exceed the optimal level in the PM compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "These results collectively suggested that PKA-R translocation to the PM can stimulate the PKA activity up to an optimal level of this subunit but can also inhibit PKA when the PKA-R levels exceed the optimal level in the PM compartment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in Figure 2.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "6189cb53-2c88-4523-9af2-4f819cd4d20f",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C35",
+      "claim": "Similar to linker or scaffold molecules, PKA-R can both enhance and inhibit signaling output, depending on its concentration relative to the concentrations of the other components of the holoenzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "To account for this paradoxical effect of the local PKA-R abundance, we hypothesized that similar to linker or scaffold molecules, this subunit can both enhance and inhibit signaling output, depending on its concentration relative to the concentrations of the other components of the holoenzyme (e.g., cAMP or PKA-C molecules).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed to explain the experimental observations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "07d6af3a-f0d0-461a-a242-595fb94e3d3b",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C36",
+      "claim": "A mathematical model suggests that there is an optimal level of concentration expected for PKA-R, if it behaves as a linker molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "We constructed a new heuristic mathematical model of this effect, which, along with our prior modeling effort (Levchenko et al., 2000), suggested that there is indeed an optimal level of concentration expected for PKA-R, if it behaves as such a linker molecule (Appendix 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by mathematical modeling described in Appendix 1 and cited prior work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "b169d06e-df17-4352-8721-01933ac4f6e4",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C37",
+      "claim": "An increase in the local PKA-R abundance was predicted to potentially drive the signaling to below baseline levels, if the initial concentration of PKA-R at the PM was sufficiently high prior to forced PKA-R translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, an increase in the local PKA-R abundance was predicted to potentially drive the signaling to below baseline levels, if the initial concentration of PKA-R at the PM was sufficiently high prior to forced PKA-R translocation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the mathematical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "58475cf0-d534-46c7-bd22-19109b37c110",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C38",
+      "claim": "Rapamycin-based PKA-R translocation to the PM leads to a gradual accumulation of this PKA subunit in the specific subcellular compartment, allowing it to progressively accumulate at sub-optimal, optimal, and supra-optimal levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the combination of experimental and mathematical analyses suggested that rapamycin-based PKA-R translocation to the PM leads to a gradual accumulation of this PKA subunit in the specific subcellular compartment, allowing it to progressively accumulate at sub-optimal, optimal, and supra-optimal levels, and thus initially enhance and then inhibit signaling output, by virtue of serving the role of a linker in the holoenzyme complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from both experimental data and mathematical modeling.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "82829b51-55a9-44e9-b4e2-16888e92fe97",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C39",
+      "claim": "PKA activity and PKA-R abundance have been shown to be elevated at the front of migrating cells in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "PKA activity and PKA-R abundance have been shown to be elevated at the front of migrating cells in vitro, but the role that spatial localization of PKA plays in regulating cell migration is not well understood (Lim et al., 2008; Paulucci-Holthauzen et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "55dc42fe-7cc7-4b0b-a059-84aff0cc6dcc",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C40",
+      "claim": "Upon application of a rapamycin gradient (0\u201320 nM, 0.08 nM/\u03bcm), there was a pronounced reversal of the directionality of the cells' migration in the direction opposite to the initial 'upward' bias.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon application of a rapamycin gradient (0\u201320 nM, 0.08 nM/\u03bcm), we found a pronounced reversal of the directionality of the cells' migration in the direction opposite to the initial 'upward' bias, with the preferred new direction thus being opposite to the direction of the rapamycin gradient (Figure 3C and E and Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by cell migration tracking data shown in Figure 3C and E and Video 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "f89bf946-ad92-4762-adb7-9abc371817bb",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C41",
+      "claim": "Cells without expression of Lyn-FRB or cells exposed to a DMSO gradient did not experience PKA-R translocation and continued migrating in the 'upward' direction.",
+      "claim_type": "EXPLICIT",
+      "source": "This was in stark contrast to cells without expression of Lyn-FRB or cells exposed to a DMSO gradient that did not experience PKA-R translocation and continued migrating in the 'upward' direction (Figure 3C and D, Figure 3\u2014figure supplement 1, and Video 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by control experiment data shown in Figure 3C and D, Figure 3\u2014figure supplement 1, and Video 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "ab176779-1b42-4f22-8067-3c2a86c7ae81",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C42",
+      "claim": "Prior to rapamycin exposure, most cells displayed an internal PKA activity gradient that corresponded with the cell polarization state (high PKA activity at the cell front and low at the rear).",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to rapamycin exposure, most cells displayed an internal PKA activity gradient that corresponded with the cell polarization state (high PKA activity at the cell front and low at the rear) (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FRET imaging data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "b382aca7-08e1-49c9-a599-d40068c6752c",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C43",
+      "claim": "Upon exposure to the rapamycin gradient, a reversal in the direction of the internal PKA activity gradient was observed that was concurrent with the flip in the direction of cell migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon exposure to the rapamycin gradient, we observed a reversal in the direction of the internal PKA activity gradient that was concurrent with the flip in the direction of cell migration (Figure 3F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FRET imaging data shown in Figure 3F and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "f52e5fa0-51f7-46b2-8a03-81d6561f668f",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C44",
+      "claim": "A transient increase in PKA activity at the cell front was observed prior to the reversal of the internal PKA activity gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we also observed a transient increase in PKA activity at the cell front (Figure 3F, 15 min time point) prior to this reversal.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FRET imaging data shown in Figure 3F at the 15 min time point.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "4a3cde51-9b66-40e0-a099-bbc96efb9244",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C45",
+      "claim": "A spatially uniform 20 nM rapamycin concentration had no detectable effect on cell migration directionality.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that whereas the lower rapamycin concentration had no detectable effect (vs. e.g., the control Figure 3D), the higher concentration gradually randomized the cell migration directionality, suggesting a stronger negating effect on the intrinsic polarity regulation (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by cell migration tracking data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "e94c3c55-6bdd-4353-94bd-3cbecd803e3e",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C46",
+      "claim": "A spatially uniform 100 nM rapamycin concentration gradually randomized the cell migration directionality.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that whereas the lower rapamycin concentration had no detectable effect (vs. e.g., the control Figure 3D), the higher concentration gradually randomized the cell migration directionality, suggesting a stronger negating effect on the intrinsic polarity regulation (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by cell migration tracking data shown in Figure 4A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "6cf1f137-f0c3-4228-a7bb-48e7cd2764c4",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C47",
+      "claim": "A shallow rapamycin gradient (10 nM \u2013 20 nM across the channel, or 0.04 nM/\u03bcm) resulted in reversal of the average migration directionality.",
+      "claim_type": "EXPLICIT",
+      "source": "We then exposed the cells to a relatively shallow rapamycin gradient (10 nM \u2013 20 nM across the channel, or 0.04 nM/\u03bcm), contrasting the results with those produced by steeper spatially graded stimulation (0\u201320 nM, or 0.08 nM/\u03bcm, Figure 3E). We again found reversal of the average migration directionality, which was increasingly more pronounced with increasing gradient slope (Figure 4D and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by cell migration tracking data shown in Figure 4D and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "d30b9e66-e5eb-4634-a36a-2ca651ab317b",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C48",
+      "claim": "The reversal of migration directionality was increasingly more pronounced with increasing rapamycin gradient slope.",
+      "claim_type": "EXPLICIT",
+      "source": "We again found reversal of the average migration directionality, which was increasingly more pronounced with increasing gradient slope (Figure 4D and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by cell migration tracking data shown in Figure 4D and F comparing different gradient slopes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "b3b7dc5f-4d06-4c63-85ed-d0e6bdf3a06c",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C49",
+      "claim": "Presenting cells with a reverse rapamycin gradient (20\u20130 nM, 'downward') resulted in most cells moving similarly to the control case, while a subset of cells reversed their directionality from 'downward' to 'upward', and another subset displayed an increased speed of 'upward' migration.",
+      "claim_type": "EXPLICIT",
+      "source": "We indeed observed that most cells under this condition moved similarly to the control case, while a subset of cells reversed their directionality from 'downward' to 'upward', and another subset displayed an increased speed of 'upward' migration vs. the maximal cell migration levels observed in the control (Figure 4G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by cell migration tracking data shown in Figure 4G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "26226d33-25fb-4a24-ae2b-965f607e2715",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C50",
+      "claim": "Relocalization of PKA-R to the PM was sufficient to induce an increase in PKA activity in this intracellular compartment, particularly for lower levels of the translocated PKA-R, even in the absence of changes in upstream signaling through G protein-coupled receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate in particular that relocalization of PKA-R to the PM was sufficient to induce an increase in PKA activity in this intracellular compartment, particularly for lower levels of the translocated PKA-R, even in the absence of changes in upstream signaling through G protein-coupled receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "cbf02ba5-056f-43a0-9a3d-41de1b319b16",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C51",
+      "claim": "The effect of the PKA-R translocation reached the maximal level at the optimum level of this subunit, decreasing at PKA-R higher levels and ultimately driving the PKA activity to below basal levels.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect of the PKA-R translocation reached the maximal level at the optimum level of this subunit, decreasing at PKA-R higher levels and ultimately driving the PKA activity to below basal levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "dfeb4808-2804-4e7c-9581-6b379903b0e3",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C52",
+      "claim": "At low levels, a scaffold can enhance signaling by bringing components of a signaling pathway into close proximity, enabling their interaction, and thus enhancing the pathway activity.",
+      "claim_type": "EXPLICIT",
+      "source": "At low levels, a scaffold can enhance signaling by bringing components of a signaling pathway into close proximity, enabling their interaction, and thus enhancing the pathway activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about scaffold protein function, supported by citations earlier in the text.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "6a47a65b-3ff3-4fbf-bb7c-bc14d433d1c2",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C53",
+      "claim": "When the scaffold concentration is too high, it sequesters pathway components away from each other, decreasing the pathway activity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when the scaffold concentration is too high, it sequesters pathway components away from each other, decreasing the pathway activity, a behavior that is recapitulated by our mathematical model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about scaffold protein function, supported by citations earlier in the text and the mathematical model.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "a849a905-52a8-48c9-83a1-c8d047bd8fef",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C54",
+      "claim": "Within the cell, PKA-R plays a scaffold-like role for PKA-C and cAMP since the kinase activity requires linkage of two PKA-C subunits and four cAMP molecules into one molecular complex by these subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that within the cell, PKA-R plays a scaffold-like role for PKA-C and cAMP since the kinase activity requires linkage of two PKA-C subunits and four cAMP molecules into one molecular complex by these subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results in the context of known PKA structure.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "e18cfa66-83d5-4144-9677-2c5680a5b799",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C55",
+      "claim": "When the local PKA-R concentration is too high, it can lead to incomplete binding (titration away) of either cAMP or PKA-C, preventing activation.",
+      "claim_type": "EXPLICIT",
+      "source": "When the local PKA-R concentration is too high, it can lead to incomplete binding (titration away) of either cAMP or PKA-C, preventing activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic explanation inferred from the experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "5de915e7-d835-448c-a1cd-2f6fe36eabe8",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C56",
+      "claim": "As PKA-R is recruited to the membrane, PKA activity will increase until there is a local shortage of one or both of these components (cAMP or PKA-C).",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, as PKA-R is recruited to the membrane, PKA activity will increase until there is a local shortage of one or both of these components.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic explanation inferred from the experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "e3cf5b90-4c5f-4b89-b9dd-27d486455150",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C57",
+      "claim": "PKA-R can have either a pathway inhibitory or enhancing role, depending on the expression of PKA-C or cAMP abundance both globally across the cell and in specific subcellular compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests a more complex view of PKA-R's role in this pathway, suggesting that it can have either a pathway inhibitory or enhancing role, depending on the expression of PKA-C or cAMP abundance both globally across the cell and in specific subcellular compartments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental observations and mechanistic reasoning.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "d72f70b3-d03a-4833-89a7-dd958c4201d8",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C58",
+      "claim": "The abundance of PKA-R at the PM in the HeLa cells investigated is sub-optimal.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, our results suggest that the abundance of PKA-R at the PM in the HeLa cells investigated here is sub-optimal, but one can expect that it can be optimal or 'super-optimal' in other cellular compartments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental observations showing that PKA-R translocation increases PKA activity.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "fdd8cce0-0207-400f-b2b2-bce6242968be",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C59",
+      "claim": "Inducing gradients of PKA-R PM translocation at levels inhibitory to PKA activity led to a reversal of the internal PKA activity gradient and, as a result, the cell polarity and direction of cell migration.",
+      "claim_type": "EXPLICIT",
+      "source": "We indeed found that inducing gradients of PKA-R PM translocation at levels inhibitory to PKA activity led to a reversal of the internal PKA activity gradient and, as a result, the cell polarity and direction of cell migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the microfluidic gradient experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "4107c670-4aee-4217-bc70-906566ad5b63",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C60",
+      "claim": "This work demonstrates for the first time that intracellular PKA activity gradients can provide a polarization cue that is powerful enough to overcome other existing polarization cues inside the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "This work therefore demonstrates for the first time that intracellular PKA activity gradients can provide a polarization cue that is powerful enough to overcome other existing polarization cues inside the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the cell migration reversal experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "c0d253d1-47d1-4adb-b609-55732757ac83",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C61",
+      "claim": "PKA activity gradients likely exert an effect on cell polarization via modulation of the activity of the two mutually inhibitory Rho-family small GTPases RhoA and Rac1.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that PKA activity gradients exert an effect on cell polarization via modulation of the activity of the two mutually inhibitory Rho-family small GTPases RhoA and Rac1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative mechanistic explanation based on known PKA targets.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "3649b5b3-2dcc-4094-9ac6-82b7b9306406",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C62",
+      "claim": "PKA phosphorylation of RhoA on Ser188 has been shown to promote its interaction with RhoGDI, leading to removal of RhoA from the PM.",
+      "claim_type": "EXPLICIT",
+      "source": "PKA phosphorylation of RhoA on Ser188 has been shown to promote its interaction with RhoGDI, leading to removal of RhoA from the PM (Lang et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "de5222c5-9fc0-40b4-ae54-0c0f0b7efe64",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C63",
+      "claim": "PKA is implicated in Rac1 activation, although the direct target of this positive regulation is still unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "PKA is also implicated in Rac1 activation, although the direct target of this positive regulation is still unclear (O'Connor and Mercurio, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "98e076ef-6e22-4607-bcd9-f2af2a0a8345",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C64",
+      "claim": "PKA has a positive effect on Rac1 activity and a negative effect on membrane localized RhoA activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Since PKA has a positive effect on Rac1 activity and a negative effect on membrane localized RhoA activity, it would be reasonable to theorize that PKA acts to shift the balance of Rac1 to RhoA signaling in favor of Rac1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of known PKA effects on these GTPases, supported by citations earlier in the text.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "3c67ef5d-98b2-469a-bc72-15bc86430b89",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C65",
+      "claim": "A gradient of intracellular PKA activity could help to enhance the internal polarization of Rac1 and RhoA.",
+      "claim_type": "EXPLICIT",
+      "source": "In this way, a gradient of intracellular PKA activity could help to enhance the internal polarization of these two polarity effectors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative mechanistic explanation for how PKA gradients affect cell polarity.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "34d2df0b-26c0-4b3f-990d-af9d48f06a8d",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C66",
+      "claim": "When the PKA activity gradient flips, the effect would be to increase Rac1 and decrease RhoA activity at the cell rear, leading to a reversal of polarity if this signal is sufficiently strong.",
+      "claim_type": "EXPLICIT",
+      "source": "When the PKA activity gradient flips, as in Figure 3G, the effect would be to increase Rac1 and decrease RhoA activity at the cell rear, leading to a reversal of polarity if this signal is sufficiently strong.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative mechanistic explanation for the observed polarity reversal.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "20fcf981-d54b-41c1-927b-8dc23ad8980d",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C67",
+      "claim": "The subcellular kinase concentration can be tuned by the expression levels of various scaffold proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In a broader sense, this work demonstrates the critical role that kinase localization plays in controlling the cell response to an incoming stimulus. The subcellular kinase concentration can be tuned by the expression levels of various scaffold proteins, and differential expression between cells may result in variability of signaling responses within a population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general principle inferred from the experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "78e3e6c6-243f-408d-ae30-b09512d16414",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C68",
+      "claim": "Differential expression of scaffold proteins between cells may result in variability of signaling responses within a population.",
+      "claim_type": "EXPLICIT",
+      "source": "The subcellular kinase concentration can be tuned by the expression levels of various scaffold proteins, and differential expression between cells may result in variability of signaling responses within a population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general principle inferred from the experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "56b2c8a8-5eff-4018-a59f-9ccea8eb99e1",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C69",
+      "claim": "Localization of scaffold proteins may vary dynamically via modifications to subcellular localization sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Localization of scaffold proteins may vary dynamically via modifications to subcellular localization sequences as well, resulting in similar effects to those described here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general principle based on known mechanisms of protein localization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "178e2bf0-7c4f-467e-acff-63ac6795a712",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C70",
+      "claim": "AKAPs are receiving attention as potential therapeutic targets.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of PKA, AKAPs are receiving attention as potential therapeutic targets, and at least one isoform of PKA-R has been implicated as a driver of oncogenesis (Codina et al., 2019; Esseltine and Scott, 2013; Veugelers et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "ca7c30d0-d387-4501-a00a-b13cbc44bce6",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C71",
+      "claim": "At least one isoform of PKA-R has been implicated as a driver of oncogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of PKA, AKAPs are receiving attention as potential therapeutic targets, and at least one isoform of PKA-R has been implicated as a driver of oncogenesis (Codina et al., 2019; Esseltine and Scott, 2013; Veugelers et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "22837e1e-2b6c-4579-9b8c-892b7df7f123",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C72",
+      "claim": "The kinase relocalization strategy demonstrated can be applied to study the effects of localized PKA activity in other subcellular compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "The kinase relocalization strategy demonstrated herein can be applied to study the effects of localized PKA activity in other subcellular compartments and can be adapted to the study of other kinases, enabling a better understanding of the role of compartmentalized signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about potential future applications of the developed tool.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "07047749-3d30-4d60-bc78-9e7711500bda",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C73",
+      "claim": "The kinase relocalization strategy can be adapted to the study of other kinases.",
+      "claim_type": "EXPLICIT",
+      "source": "The kinase relocalization strategy demonstrated herein can be applied to study the effects of localized PKA activity in other subcellular compartments and can be adapted to the study of other kinases, enabling a better understanding of the role of compartmentalized signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about potential future applications of the developed tool.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "829f5b52-c48e-4513-9b54-8e1b517eca9c",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C74",
+      "claim": "The rapamycin-based dimerization strategy has been used to study biochemical activity of different proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "This technique has been used to study biochemical activity of different proteins (Chu et al., 2014; Dagliyan et al., 2017; Dagliyan et al., 2013; Inoue et al., 2005; Karginov et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "5680561b-46a4-496c-8526-53c2c6e0ad2e",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C75",
+      "claim": "The dimerization strategy, when combined with the use of a microfluidic device controlling spatial rapamycin distribution, can be used to study biomolecular systems controlling cell polarity and migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we demonstrated that this dimerization strategy, when combined with the use of a microfluidic device controlling spatial rapamycin distribution, can be used to study biomolecular systems controlling cell polarity and migration (Lin et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "ddc78ed9-8627-4b91-9fa3-5e1ecabb816e",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C76",
+      "claim": "In contrast to a previous relocalization technique utilizing a photoactivatable PKA-C, the approach described maintains the dependence of resulting PKA activity on cAMP and does not require overexpression of the catalytic subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to a previous relocalization technique utilizing a photoactivatable PKA-C, our approach maintains the dependence of resulting PKA activity on cAMP and does not require overexpression of the catalytic subunit (O'Banion et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with a prior technique, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "045d17e3-159f-46f7-9ea3-346a89c76855",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C77",
+      "claim": "The synthetic system recapitulates the natural mechanism of subcellular PKA targeting of the regulatory PKA subunits by AKAPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our synthetic system recapitulates the natural mechanism of subcellular PKA targeting of the regulatory PKA subunits by AKAPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of how the synthetic system relates to natural PKA regulation.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "826ade9e-8643-4eb6-80eb-7c97181bd2b5",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C78",
+      "claim": "In regulation of PKA activity, the regulatory PKA subunit can play a dual role of an inhibitor of PKA-C and a mediator of PKA localization to specific subcellular compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "In regulation of PKA activity, the regulatory PKA subunit can play a dual role of an inhibitor of PKA-C and a mediator of PKA localization to specific subcellular compartments, potentially enriched in the kinase activator (cAMP) and kinase substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about PKA-R function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "74b8c0cb-acea-4b63-a8a1-057629542b20",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C79",
+      "claim": "In spite of its canonically inhibitory function, PKA-R can potentially have a more positive, up-regulating role on the activity of the enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in spite of its canonically inhibitory function, PKA-R can potentially have a more positive, up-regulating role on the activity of the enzyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental observations in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "d61bc0d9-b6c9-415e-8900-e0acb037f420",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C80",
+      "claim": "HeLa cells were cultured in high glucose Dulbecco's modified Eagle medium (DMEM) supplemented with 10% fetal bovine serum (FBS) and 1% penicillin/streptomycin.",
+      "claim_type": "EXPLICIT",
+      "source": "HeLa cells were cultured in high glucose Dulbecco's modified Eagle medium (DMEM, Corning, Corning, NY) supplemented with 10% fetal bovine serum (FBS) (ThermoFisher Scientific, Waltham, MA) and 1% penicillin/streptomycin (ThermoFisher Scientific).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing cell culture conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "07d52c8c-14c0-459f-98df-1325754e8b62",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C81",
+      "claim": "For stable cell lines, media was supplemented with 1 \u00b5g/ml puromycin and blasticidin to continuously select for cells expressing PKAR-FKBP-FP and Lyn11-FRB.",
+      "claim_type": "EXPLICIT",
+      "source": "For stable lines, media was supplemented with 1 \u00b5g/ml puromycin (MilliporeSigma, Burlington, MA) and blasticidin (ThermoFisher Scientific) to continuously select for cells expressing PKAR-FKBP-FP and Lyn11-FRB (also referred throughout to as Lyn-FRB).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing selection conditions for stable cell lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "d3960256-7cc0-4bc7-85c7-1079bde315b4",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C82",
+      "claim": "Addition of rapamycin resulted in rapid PKA-R translocation to the PM with p = 0.0039 at t = 24 min post-rapamycin addition.",
+      "claim_type": "EXPLICIT",
+      "source": "p = 0.0039 at t = 24 min post-rapamycin addition; two-tailed Student's t-test.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from the translocation experiment shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "2f0ca3c1-fe51-4645-867c-c354c511a2d5",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C83",
+      "claim": "PKA-C translocation to the membrane was statistically significant with p = 0.037 at t = 24 min post-rapamycin addition.",
+      "claim_type": "EXPLICIT",
+      "source": "p = 0.037 at t = 24 min post-rapamycin addition; two-tailed Student's t-test.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from the PKA-C translocation experiment shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "457c1dc1-ba1c-4494-b420-bf343ec6b965",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C84",
+      "claim": "Rapamycin-induced PKA-R translocation significantly increased PM PKA activity with p = 9.83 x 10-12 at t = 4 min post-rapamycin addition.",
+      "claim_type": "EXPLICIT",
+      "source": "p = 9.83 x 10-12 at t = 4 min post-rapamycin addition; two-tailed Student's t-test.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from the FRET experiment shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "a09778f7-5997-41dd-abcd-2be9b71041e5",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C85",
+      "claim": "High PKA-R expressors showed significantly different PM PKA activity compared to low expressors with p = 0.024 at t = 58 min post-rapamycin addition.",
+      "claim_type": "EXPLICIT",
+      "source": "p = 0.024 at t = 58 min post-rapamycin addition; two-tailed Student's t-test.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from the experiment shown in Figure 2E comparing high and low PKA-R expressors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "c5bb02da-e06b-4d2a-a15b-12307648ee05",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C86",
+      "claim": "2 nM rapamycin resulted in significantly different PM PKA activity compared to 20 nM rapamycin with p = 0.023 at t = 60 min post-rapamycin addition.",
+      "claim_type": "EXPLICIT",
+      "source": "p = 0.023 at t = 60 min post-rapamycin addition; two-tailed Student's t-test.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from the dose-response experiment shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "0ffff173-ffe1-46cb-8d11-893985d955b8",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C87",
+      "claim": "HeLa PFY cells in 20 nM rapamycin gradient showed significantly different nuclear position compared to no-translocation control with p = 1.34 \u00d7 10-5 at 180 min post-rapamycin addition.",
+      "claim_type": "EXPLICIT",
+      "source": "p = 1.34 \u00d7 10-5 at 180 min post-rapamycin addition; two-tailed Student's t-test.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from the cell migration experiment shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "7883d785-dfc4-46d4-b04f-0653b381fc84",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "claim_id": "C88",
+      "claim": "RII\u03b2 expression is significantly increased in HeLa PFM and PFY cell lines vs. control.",
+      "claim_type": "EXPLICIT",
+      "source": "RII\u03b2 expression is significantly increased in HeLa PFM and PFY cell lines vs. control.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification of immunoblot data shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8e1c9399-9367-4a5b-8675-523ac1d3c8d3",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a rapamycin-inducible system to translocate PKA-RII\u03b2 to the plasma membrane. PKAR-II\u03b2 was selected due to low endogenous expression in HeLa cells. Upon rapamycin addition, PKA-R rapidly translocated to the plasma membrane within 3 minutes, bringing PKA-C along with it, while controls showed no translocation. This translocation induced morphological changes including cell spreading and filopodia formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C27, C82-C83, and C88 collectively demonstrate successful development and characterization of the translocation system. The immunoblot data (C17, C19-C20, C88), imaging data (C21, C23-C27), and statistical analyses (C82-C83) provide converging evidence. The negative controls (C22, C26) and specificity of PKA-C co-translocation (C25) strengthen the validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "2dcf3aaf-22fc-4e12-b8d4-21aba21f43bf",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "PKA-R translocation to the plasma membrane produces a biphasic, concentration-dependent effect on PKA activity. At low/intermediate PKA-R levels, translocation enhances PKA activity even without upstream stimulation. At high PKA-R levels, activity initially increases but then drops below baseline, indicating active inhibition. Lower rapamycin doses (2 nM) produce more sustained PKA activation than higher doses (20 nM).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C34 and C84-C86 are well-supported by FRET biosensor measurements with appropriate controls and statistical analyses. The dose-response relationship (C32-C33, C86), concentration-dependence (C30-C31, C85), and dynamic range calibration (C28) provide robust quantitative evidence for the paradoxical biphasic effect. The statistical significance values strengthen the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "821762d8-8010-474a-a32d-b94f7a1d71f2",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "PKA-R functions as a scaffold-like linker molecule that can both enhance and inhibit signaling depending on its local concentration. Mathematical modeling predicts an optimal PKA-R concentration, with excess PKA-R sequestering PKA-C or cAMP and preventing activation. The basal PKA-R abundance at the plasma membrane in HeLa cells is sub-optimal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38 and C52-C58 integrate experimental observations with mathematical modeling and mechanistic reasoning. The scaffold analogy (C35, C52-C53) is supported by prior literature (C10) and recapitulated by the mathematical model (C36, C53). The mechanistic explanations (C54-C56) are logical inferences from known PKA structure and the experimental data. The conclusion about sub-optimal basal PKA-R levels (C58) follows from the observation that translocation increases activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "825aadf1-2493-461c-b201-84205d3b9e64",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Application of a rapamycin gradient (0-20 nM) across cells in microfluidic channels reversed the direction of cell migration opposite to the gradient direction. This reversal was accompanied by a flip in the internal PKA activity gradient, with a transient increase in PKA activity at the cell front preceding the reversal. Control cells without translocation capability continued migrating in their original direction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C44, C59, and C87 demonstrate a causal link between PKA-R gradients, PKA activity gradients, and cell migration directionality. The nuclear tracking data (C40, C87), FRET imaging of PKA activity gradients (C42-C44), and appropriate controls (C41) provide strong converging evidence. The statistical significance (C87) and temporal correlation between PKA activity changes and migration reversal support the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "9c0c2b3e-5a6f-4c33-9b5b-c405a12d3df4",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The effect of PKA-R translocation on cell migration directionality depends on both the magnitude and slope of the rapamycin gradient. Uniform 20 nM rapamycin had no effect, while uniform 100 nM randomized migration. Shallow gradients (0.04 nM/\u03bcm) reversed migration less than steep gradients (0.08 nM/\u03bcm). Reverse gradients (20-0 nM) produced heterogeneous responses with some cells showing enhanced migration in their original direction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C49 systematically characterize how gradient parameters affect cell behavior. The dose-response (C45-C46), gradient slope dependence (C47-C48), and reverse gradient experiments (C49) provide comprehensive evidence for the concentration-dependent and directional nature of the effect. The data support the interpretation that PKA-R levels must exceed a threshold to override intrinsic polarity cues.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "1fb58f11-a91b-4bcc-9631-d7890e3466a4",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "This work demonstrates for the first time that intracellular PKA activity gradients can provide a polarization cue powerful enough to overcome existing polarization cues and control cell migration directionality. Complex patterns of PKA-R localization can drive complex phenotypes including cell migration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60, C5, and C6 represent the major conceptual conclusions of the work. They are well-supported by the comprehensive experimental evidence showing that imposed PKA activity gradients can reverse pre-existing cell polarity (C40-C44, C59). The claim of being 'first time' (C60) is reasonable given the novelty of the approach and the cited literature showing only correlative evidence previously (C15, C39).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "68f09c9f-f2f8-4a0f-b8ad-6dcaaf1cf8f3",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "PKA activity gradients likely exert effects on cell polarization through modulation of RhoA and Rac1 activity. PKA phosphorylates RhoA to promote its removal from the plasma membrane and activates Rac1, shifting the balance toward Rac1. When PKA activity gradients flip, this would increase Rac1 and decrease RhoA at the cell rear, potentially reversing polarity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C61-C66 propose a mechanistic explanation for the observed polarity reversal. While the individual PKA effects on RhoA (C62) and Rac1 (C63) are supported by citations, the proposed mechanism (C61, C65-C66) is speculative. No direct measurements of RhoA or Rac1 activity or localization are provided in this study. The mechanism is plausible but requires experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "bcfb2062-8467-4760-ace4-e2732064c177",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "PKA-R translocation to the plasma membrane has a paradoxical, concentration-dependent effect on membrane kinase activity, enhancing it at lower levels and inhibiting it at higher levels. This demonstrates that PKA-R can have a positive, up-regulating role on enzyme activity despite its canonically inhibitory function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C4, C50-C51, and C79 summarize the key findings regarding PKA-R's dual role. These summary claims are well-supported by the detailed experimental evidence in the FRET biosensor experiments (C29-C34) and the mechanistic framework (C35-C38, C52-C58). The claims accurately reflect the data showing both enhancement and inhibition depending on PKA-R concentration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "50560897-feb1-4a7b-b768-d848584c96d7",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Subcellular kinase concentration can be tuned by expression levels of scaffold proteins, and differential expression between cells may result in variability of signaling responses within a population. Scaffold protein localization may vary dynamically via modifications to subcellular localization sequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C69 represent broader implications inferred from the experimental observations. The principles are supported by the demonstrated effects of varying PKA-R levels (C30-C31) and are consistent with established knowledge about scaffold proteins (C10-C11) and protein localization mechanisms (C69). These are reasonable generalizations from the specific findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "f36da4e9-f861-408b-befa-d3d912c33905",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "AKAPs are receiving attention as therapeutic targets, and at least one PKA-R isoform has been implicated in oncogenesis. The kinase relocalization strategy can be applied to study localized PKA activity in other compartments and adapted to study other kinases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C71 are supported by citations to prior literature and represent established knowledge about the therapeutic relevance of PKA signaling. Claims C72-C73 are reasonable statements about potential future applications of the developed tool, though they represent speculation about future work rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "587c1cee-aed1-4588-a0db-9aee9e4d5f92",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The rapamycin-based dimerization strategy has been previously used to study protein activity and cell polarity. The current approach maintains cAMP-dependence and does not require PKA-C overexpression, distinguishing it from photoactivatable approaches. The synthetic system recapitulates natural AKAP-mediated PKA targeting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C77 provide context for the methodological approach. C74-C75 are supported by citations to prior work. C76 makes a valid comparison with an alternative technique, supported by citation. C77 is a reasonable interpretation that the synthetic system mimics natural mechanisms, though this is an inference rather than directly demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "d2b5c26f-54f4-4625-a6c2-4a8959d09da6",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background claims about kinase regulation, PKA structure and function, scaffold protein effects, and PKA's role in cell migration. These establish the scientific context and prior knowledge relevant to the study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7-C16, and C78 represent established knowledge and prior work, all supported by appropriate citations or representing general scientific understanding. These provide necessary background context for interpreting the novel findings. The claims accurately represent the cited literature and established concepts in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    },
+    {
+      "id": "87dd3faa-2aaa-46ab-8f51-5fb452fd8c8d",
+      "content_id": "014cc36b-63ba-42e3-9097-5ee784323b87",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Methodological details describing cell culture conditions and selection procedures for stable cell lines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C81 are straightforward methodological descriptions that are standard practices in cell biology. These are adequately documented and appropriate for the experiments performed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:16:48.141628Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6997a1a0-570b-4a0e-9300-096fda8b2b51",
+      "result_id": "8e1c9399-9367-4a5b-8675-523ac1d3c8d3"
+    },
+    {
+      "claim_id": "63394103-c074-4379-a1df-4b00c9d8b210",
+      "result_id": "8e1c9399-9367-4a5b-8675-523ac1d3c8d3"
+    },
+    {
+      "claim_id": "a9b05bb4-1540-4ec7-b593-d81a727a94a0",
+      "result_id": "8e1c9399-9367-4a5b-8675-523ac1d3c8d3"
+    },
+    {
+      "claim_id": "8ee9c3c6-4601-428a-8e86-d36a37cd7057",
+      "result_id": "8e1c9399-9367-4a5b-8675-523ac1d3c8d3"
+    },
+    {
+      "claim_id": "71830b32-70b6-4ec7-989e-4edf3d8ae92f",
+      "result_id": "8e1c9399-9367-4a5b-8675-523ac1d3c8d3"
+    },
+    {
+      "claim_id": "7d61c5d6-f90b-4ea4-ab68-bcf22e2cc82d",
+      "result_id": "8e1c9399-9367-4a5b-8675-523ac1d3c8d3"
+    },
+    {
+      "claim_id": "60373ef7-4f66-451e-b350-fd3ef59b2d98",
+      "result_id": "8e1c9399-9367-4a5b-8675-523ac1d3c8d3"
+    },
+    {
+      "claim_id": "2cd7fa12-d83b-4a87-ad3a-43738a8af186",
+      "result_id": "8e1c9399-9367-4a5b-8675-523ac1d3c8d3"
+    },
+    {
+      "claim_id": "82cd8a2e-1f9c-4355-8ba2-978377498105",
+      "result_id": "8e1c9399-9367-4a5b-8675-523ac1d3c8d3"
+    },
+    {
+      "claim_id": "88d4fd43-a104-40a9-8dd3-52b23ff45be9",
+      "result_id": "8e1c9399-9367-4a5b-8675-523ac1d3c8d3"
+    },
+    {
+      "claim_id": "1ce78006-569d-4c78-a2c6-082b5f9880a1",
+      "result_id": "8e1c9399-9367-4a5b-8675-523ac1d3c8d3"
+    },
+    {
+      "claim_id": "d3960256-7cc0-4bc7-85c7-1079bde315b4",
+      "result_id": "8e1c9399-9367-4a5b-8675-523ac1d3c8d3"
+    },
+    {
+      "claim_id": "2f0ca3c1-fe51-4645-867c-c354c511a2d5",
+      "result_id": "8e1c9399-9367-4a5b-8675-523ac1d3c8d3"
+    },
+    {
+      "claim_id": "7883d785-dfc4-46d4-b04f-0653b381fc84",
+      "result_id": "8e1c9399-9367-4a5b-8675-523ac1d3c8d3"
+    },
+    {
+      "claim_id": "81e6f387-dca4-4f61-8ceb-e94d79ae2fb7",
+      "result_id": "2dcf3aaf-22fc-4e12-b8d4-21aba21f43bf"
+    },
+    {
+      "claim_id": "13381ebb-f284-4cbd-a091-4598f1276476",
+      "result_id": "2dcf3aaf-22fc-4e12-b8d4-21aba21f43bf"
+    },
+    {
+      "claim_id": "2594ba8d-e44b-464e-99a9-8f54d5c77c0c",
+      "result_id": "2dcf3aaf-22fc-4e12-b8d4-21aba21f43bf"
+    },
+    {
+      "claim_id": "743cae2f-f817-43b5-a54c-82f51352ad81",
+      "result_id": "2dcf3aaf-22fc-4e12-b8d4-21aba21f43bf"
+    },
+    {
+      "claim_id": "20844aa6-d425-424a-8732-1d5fff861b71",
+      "result_id": "2dcf3aaf-22fc-4e12-b8d4-21aba21f43bf"
+    },
+    {
+      "claim_id": "2fce2f3a-b895-473a-bb81-0c8e872a0617",
+      "result_id": "2dcf3aaf-22fc-4e12-b8d4-21aba21f43bf"
+    },
+    {
+      "claim_id": "d7cc90d1-90fc-4477-a3f1-71f393968a11",
+      "result_id": "2dcf3aaf-22fc-4e12-b8d4-21aba21f43bf"
+    },
+    {
+      "claim_id": "457c1dc1-ba1c-4494-b420-bf343ec6b965",
+      "result_id": "2dcf3aaf-22fc-4e12-b8d4-21aba21f43bf"
+    },
+    {
+      "claim_id": "a09778f7-5997-41dd-abcd-2be9b71041e5",
+      "result_id": "2dcf3aaf-22fc-4e12-b8d4-21aba21f43bf"
+    },
+    {
+      "claim_id": "c5bb02da-e06b-4d2a-a15b-12307648ee05",
+      "result_id": "2dcf3aaf-22fc-4e12-b8d4-21aba21f43bf"
+    },
+    {
+      "claim_id": "6189cb53-2c88-4523-9af2-4f819cd4d20f",
+      "result_id": "821762d8-8010-474a-a32d-b94f7a1d71f2"
+    },
+    {
+      "claim_id": "07d6af3a-f0d0-461a-a242-595fb94e3d3b",
+      "result_id": "821762d8-8010-474a-a32d-b94f7a1d71f2"
+    },
+    {
+      "claim_id": "b169d06e-df17-4352-8721-01933ac4f6e4",
+      "result_id": "821762d8-8010-474a-a32d-b94f7a1d71f2"
+    },
+    {
+      "claim_id": "58475cf0-d534-46c7-bd22-19109b37c110",
+      "result_id": "821762d8-8010-474a-a32d-b94f7a1d71f2"
+    },
+    {
+      "claim_id": "dfeb4808-2804-4e7c-9581-6b379903b0e3",
+      "result_id": "821762d8-8010-474a-a32d-b94f7a1d71f2"
+    },
+    {
+      "claim_id": "6a47a65b-3ff3-4fbf-bb7c-bc14d433d1c2",
+      "result_id": "821762d8-8010-474a-a32d-b94f7a1d71f2"
+    },
+    {
+      "claim_id": "a849a905-52a8-48c9-83a1-c8d047bd8fef",
+      "result_id": "821762d8-8010-474a-a32d-b94f7a1d71f2"
+    },
+    {
+      "claim_id": "e18cfa66-83d5-4144-9677-2c5680a5b799",
+      "result_id": "821762d8-8010-474a-a32d-b94f7a1d71f2"
+    },
+    {
+      "claim_id": "5de915e7-d835-448c-a1cd-2f6fe36eabe8",
+      "result_id": "821762d8-8010-474a-a32d-b94f7a1d71f2"
+    },
+    {
+      "claim_id": "e3cf5b90-4c5f-4b89-b9dd-27d486455150",
+      "result_id": "821762d8-8010-474a-a32d-b94f7a1d71f2"
+    },
+    {
+      "claim_id": "d72f70b3-d03a-4833-89a7-dd958c4201d8",
+      "result_id": "821762d8-8010-474a-a32d-b94f7a1d71f2"
+    },
+    {
+      "claim_id": "55dc42fe-7cc7-4b0b-a059-84aff0cc6dcc",
+      "result_id": "825aadf1-2493-461c-b201-84205d3b9e64"
+    },
+    {
+      "claim_id": "f89bf946-ad92-4762-adb7-9abc371817bb",
+      "result_id": "825aadf1-2493-461c-b201-84205d3b9e64"
+    },
+    {
+      "claim_id": "ab176779-1b42-4f22-8067-3c2a86c7ae81",
+      "result_id": "825aadf1-2493-461c-b201-84205d3b9e64"
+    },
+    {
+      "claim_id": "b382aca7-08e1-49c9-a599-d40068c6752c",
+      "result_id": "825aadf1-2493-461c-b201-84205d3b9e64"
+    },
+    {
+      "claim_id": "f52e5fa0-51f7-46b2-8a03-81d6561f668f",
+      "result_id": "825aadf1-2493-461c-b201-84205d3b9e64"
+    },
+    {
+      "claim_id": "fdd8cce0-0207-400f-b2b2-bce6242968be",
+      "result_id": "825aadf1-2493-461c-b201-84205d3b9e64"
+    },
+    {
+      "claim_id": "0ffff173-ffe1-46cb-8d11-893985d955b8",
+      "result_id": "825aadf1-2493-461c-b201-84205d3b9e64"
+    },
+    {
+      "claim_id": "4a3cde51-9b66-40e0-a099-bbc96efb9244",
+      "result_id": "9c0c2b3e-5a6f-4c33-9b5b-c405a12d3df4"
+    },
+    {
+      "claim_id": "e94c3c55-6bdd-4353-94bd-3cbecd803e3e",
+      "result_id": "9c0c2b3e-5a6f-4c33-9b5b-c405a12d3df4"
+    },
+    {
+      "claim_id": "6cf1f137-f0c3-4228-a7bb-48e7cd2764c4",
+      "result_id": "9c0c2b3e-5a6f-4c33-9b5b-c405a12d3df4"
+    },
+    {
+      "claim_id": "d30b9e66-e5eb-4634-a36a-2ca651ab317b",
+      "result_id": "9c0c2b3e-5a6f-4c33-9b5b-c405a12d3df4"
+    },
+    {
+      "claim_id": "b3b7dc5f-4d06-4c63-85ed-d0e6bdf3a06c",
+      "result_id": "9c0c2b3e-5a6f-4c33-9b5b-c405a12d3df4"
+    },
+    {
+      "claim_id": "4107c670-4aee-4217-bc70-906566ad5b63",
+      "result_id": "1fb58f11-a91b-4bcc-9631-d7890e3466a4"
+    },
+    {
+      "claim_id": "4173549f-45bf-4a8b-9fa6-158ca937c636",
+      "result_id": "1fb58f11-a91b-4bcc-9631-d7890e3466a4"
+    },
+    {
+      "claim_id": "f6fc924b-b745-4560-bc77-d643345123af",
+      "result_id": "1fb58f11-a91b-4bcc-9631-d7890e3466a4"
+    },
+    {
+      "claim_id": "c0d253d1-47d1-4adb-b609-55732757ac83",
+      "result_id": "68f09c9f-f2f8-4a0f-b8ad-6dcaaf1cf8f3"
+    },
+    {
+      "claim_id": "3649b5b3-2dcc-4094-9ac6-82b7b9306406",
+      "result_id": "68f09c9f-f2f8-4a0f-b8ad-6dcaaf1cf8f3"
+    },
+    {
+      "claim_id": "de5222c5-9fc0-40b4-ae54-0c0f0b7efe64",
+      "result_id": "68f09c9f-f2f8-4a0f-b8ad-6dcaaf1cf8f3"
+    },
+    {
+      "claim_id": "98e076ef-6e22-4607-bcd9-f2af2a0a8345",
+      "result_id": "68f09c9f-f2f8-4a0f-b8ad-6dcaaf1cf8f3"
+    },
+    {
+      "claim_id": "3c67ef5d-98b2-469a-bc72-15bc86430b89",
+      "result_id": "68f09c9f-f2f8-4a0f-b8ad-6dcaaf1cf8f3"
+    },
+    {
+      "claim_id": "34d2df0b-26c0-4b3f-990d-af9d48f06a8d",
+      "result_id": "68f09c9f-f2f8-4a0f-b8ad-6dcaaf1cf8f3"
+    },
+    {
+      "claim_id": "b5802022-0433-4963-bc2a-5531c524a119",
+      "result_id": "bcfb2062-8467-4760-ace4-e2732064c177"
+    },
+    {
+      "claim_id": "ea63a89e-5f8a-46d6-8a2e-32dd16c0a0c0",
+      "result_id": "bcfb2062-8467-4760-ace4-e2732064c177"
+    },
+    {
+      "claim_id": "2aec2ea9-d309-40da-8da5-598a5d90a39f",
+      "result_id": "bcfb2062-8467-4760-ace4-e2732064c177"
+    },
+    {
+      "claim_id": "26226d33-25fb-4a24-ae2b-965f607e2715",
+      "result_id": "bcfb2062-8467-4760-ace4-e2732064c177"
+    },
+    {
+      "claim_id": "cbf02ba5-056f-43a0-9a3d-41de1b319b16",
+      "result_id": "bcfb2062-8467-4760-ace4-e2732064c177"
+    },
+    {
+      "claim_id": "74b8c0cb-acea-4b63-a8a1-057629542b20",
+      "result_id": "bcfb2062-8467-4760-ace4-e2732064c177"
+    },
+    {
+      "claim_id": "20fcf981-d54b-41c1-927b-8dc23ad8980d",
+      "result_id": "50560897-feb1-4a7b-b768-d848584c96d7"
+    },
+    {
+      "claim_id": "78e3e6c6-243f-408d-ae30-b09512d16414",
+      "result_id": "50560897-feb1-4a7b-b768-d848584c96d7"
+    },
+    {
+      "claim_id": "56b2c8a8-5eff-4018-a59f-9ccea8eb99e1",
+      "result_id": "50560897-feb1-4a7b-b768-d848584c96d7"
+    },
+    {
+      "claim_id": "178e2bf0-7c4f-467e-acff-63ac6795a712",
+      "result_id": "f36da4e9-f861-408b-befa-d3d912c33905"
+    },
+    {
+      "claim_id": "ca7c30d0-d387-4501-a00a-b13cbc44bce6",
+      "result_id": "f36da4e9-f861-408b-befa-d3d912c33905"
+    },
+    {
+      "claim_id": "22837e1e-2b6c-4579-9b8c-892b7df7f123",
+      "result_id": "f36da4e9-f861-408b-befa-d3d912c33905"
+    },
+    {
+      "claim_id": "07047749-3d30-4d60-bc78-9e7711500bda",
+      "result_id": "f36da4e9-f861-408b-befa-d3d912c33905"
+    },
+    {
+      "claim_id": "829f5b52-c48e-4513-9b54-8e1b517eca9c",
+      "result_id": "587c1cee-aed1-4588-a0db-9aee9e4d5f92"
+    },
+    {
+      "claim_id": "5680561b-46a4-496c-8526-53c2c6e0ad2e",
+      "result_id": "587c1cee-aed1-4588-a0db-9aee9e4d5f92"
+    },
+    {
+      "claim_id": "ddc78ed9-8627-4b91-9fa3-5e1ecabb816e",
+      "result_id": "587c1cee-aed1-4588-a0db-9aee9e4d5f92"
+    },
+    {
+      "claim_id": "045d17e3-159f-46f7-9ea3-346a89c76855",
+      "result_id": "587c1cee-aed1-4588-a0db-9aee9e4d5f92"
+    },
+    {
+      "claim_id": "63dd6528-0407-4f1b-b9cb-90b3bd81919c",
+      "result_id": "d2b5c26f-54f4-4625-a6c2-4a8959d09da6"
+    },
+    {
+      "claim_id": "5d71563e-6d21-4874-b6d7-5a47f72a0312",
+      "result_id": "d2b5c26f-54f4-4625-a6c2-4a8959d09da6"
+    },
+    {
+      "claim_id": "6c034662-ab82-412f-9a1f-e5b0c94f43c0",
+      "result_id": "d2b5c26f-54f4-4625-a6c2-4a8959d09da6"
+    },
+    {
+      "claim_id": "f4cf3da9-1177-4efb-a06e-637b84b5a360",
+      "result_id": "d2b5c26f-54f4-4625-a6c2-4a8959d09da6"
+    },
+    {
+      "claim_id": "57f10257-6bfe-4b95-8b39-ecbd1162b3a5",
+      "result_id": "d2b5c26f-54f4-4625-a6c2-4a8959d09da6"
+    },
+    {
+      "claim_id": "2b124b91-b45d-4250-b9fe-ea386599cb7e",
+      "result_id": "d2b5c26f-54f4-4625-a6c2-4a8959d09da6"
+    },
+    {
+      "claim_id": "fa04603e-b2dd-4bc7-8b63-c82a60a95460",
+      "result_id": "d2b5c26f-54f4-4625-a6c2-4a8959d09da6"
+    },
+    {
+      "claim_id": "203be0ae-54a4-4f94-901e-b747196da9d6",
+      "result_id": "d2b5c26f-54f4-4625-a6c2-4a8959d09da6"
+    },
+    {
+      "claim_id": "f00fd7ff-e7f2-4501-ae98-dfc220815d81",
+      "result_id": "d2b5c26f-54f4-4625-a6c2-4a8959d09da6"
+    },
+    {
+      "claim_id": "0e06d9c5-245c-4851-addb-fd8a958167d4",
+      "result_id": "d2b5c26f-54f4-4625-a6c2-4a8959d09da6"
+    },
+    {
+      "claim_id": "14a7c294-0629-4e67-a771-9e4dbcd2db06",
+      "result_id": "d2b5c26f-54f4-4625-a6c2-4a8959d09da6"
+    },
+    {
+      "claim_id": "826ade9e-8643-4eb6-80eb-7c97181bd2b5",
+      "result_id": "d2b5c26f-54f4-4625-a6c2-4a8959d09da6"
+    },
+    {
+      "claim_id": "d61bc0d9-b6c9-415e-8900-e0acb037f420",
+      "result_id": "87dd3faa-2aaa-46ab-8f51-5fb452fd8c8d"
+    },
+    {
+      "claim_id": "07d52c8c-14c0-459f-98df-1325754e8b62",
+      "result_id": "87dd3faa-2aaa-46ab-8f51-5fb452fd8c8d"
+    }
+  ],
+  "comparisons": []
+}

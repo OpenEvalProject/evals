@@ -1,0 +1,323 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The authors developed a CRISPR-based sgRNA library targeting 19 out of 46 human tRNA gene families (9 proliferation-tRNAs, 10 differentiation-tRNAs, and 1 pseudo-tRNA). The sgRNA design maximized coverage of family members by targeting functional elements (A-box, B-box, anticodon), with fully matched tRNA genes being significantly more highly expressed than mismatched ones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C31-C34, C36-C38 collectively demonstrate successful development of a CRISPR library with strategic sgRNA design. The correlation between sequence conservation and expression level (C34, p<10\u207b\u2074) validates the targeting strategy, and the observation that targeted genes are more highly expressed (C36) supports functional relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "CRISPR-targeting of individual tRNAs in HeLa cells reduced expression up to 2-fold, with different kinetics for each tRNA. LeuTAG and ProCGG showed strong negative selection (suggesting essentiality), while SerCGA-edited cells maintained fitness. ProCGG, originally classified as a differentiation-tRNA, appears essential for HeLa cell proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C51 provide convergent evidence from expression dynamics, editing fraction analysis, and fitness inference. The temporal patterns of expression reduction followed by recovery (C42, with statistical tests) and the correlation between edited tRNA fraction and expression levels (C45-C46) support the interpretation of differential essentiality. The reclassification of ProCGG (C51) is justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "OFF-target effects show a positive linear correlation between number of mismatches and tRNA expression reduction (r=0.87, p<10\u207b\u2074), with minimal effects at \u22652 mismatches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 demonstrate specificity of the CRISPR system with strong statistical support (Pearson correlation r=0.87, p<10\u207b\u2074). The gradient of effects based on mismatch number validates the targeting strategy and provides confidence in ON-target interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The tRNA pool responds to CRISPR-targeting of essential tRNAs (ProCGG, ArgTCG, LeuTAG) with up to 2-4 fold changes in other tRNAs. Proliferation-tRNAs are preferentially up-regulated while differentiation-tRNAs are down-regulated, but SerCGA targeting (less essential) produces minimal response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C60 describe a coordinated cellular response to tRNA perturbation. The differential response patterns between essential (C55, C57) and non-essential (C56) tRNA targeting provide internal validation. The systematic nature of the response (proliferation-tRNAs up, differentiation-tRNAs down) suggests biological regulation rather than technical artifact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "In rapidly growing HeLa cells, proliferation-tRNAs are significantly more essential than differentiation-tRNAs (p<0.05). Some proliferation-tRNAs showed ~4000-fold decline in frequency over 14 days. tRNA essentiality correlates negatively with expression level (r=-0.71, p<10\u207b\u00b3), but the differential essentiality between tRNA groups cannot be explained by expression level or targeting efficiency differences alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C61-C69 provide strong evidence for differential essentiality with appropriate statistical tests (Wilcoxon rank-sum, p<0.05; Pearson correlation). The controls for expression level (C67, p=ns) and targeting efficiency (C68, p=ns) strengthen the conclusion that functional differences drive essentiality patterns. The magnitude of fitness effects (C63, ~4000-fold decline) indicates biological significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "A linear algebraic model accounting for OFF-targeting shows high correlation between estimated real and observed relative fitness (r=0.93, p<10\u207b\u2075), validating sgRNA design quality, though some deviations were observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 demonstrate that the mathematical correction for OFF-targeting is effective (high correlation) while acknowledging limitations (some deviations). The model provides a methodological advance for interpreting multi-gene family CRISPR experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "tRNA essentiality depends on both cell proliferation rate and cell origin. In slowly dividing WI38 slow cells, differentiation-tRNAs are more essential than in HeLa cells, while proliferation-tRNAs are less essential. WI38 slow and WI38 fast cells (same origin, different doubling times: ~72h vs ~24h) show similar essentiality profiles despite different proliferation rates. tRNA expression is highly correlated across cell lines (R>0.92), indicating essentiality differences are not explained by expression alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C72-C83, C88-C90 demonstrate cell-type-specific tRNA requirements with appropriate statistical support (multiple correlation analyses with p<0.05). The comparison of WI38 slow vs fast (same origin) and WI38 vs HeLa (different origins) provides a logical experimental design to separate proliferation rate from cell origin effects. The high correlation of expression (C82) combined with different essentiality patterns (C75-C77) supports the conclusion that functional requirements, not expression, drive differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "WI38 fast cells showed ~3-fold lower editing efficiency than HeLa cells, which may affect absolute fitness values but not relative essentiality rankings within cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 acknowledge a technical limitation (differential editing efficiency) while correctly arguing that within-cell-line rankings remain valid. This transparent discussion of potential confounders strengthens confidence in the main conclusions about relative essentiality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Both proliferation-tRNAs and differentiation-tRNAs show complex essentiality patterns during cell cycle arrest. Serum starvation (quiescence) and Etoposide treatment (senescence) induce distinct p21-mCherry distributions (all pairwise comparisons p<10\u207b\u2074). A negative correlation exists between tRNA essentiality for proliferation and for entering growth arrest (r=-0.45, p<0.05), suggesting distinct tRNA requirements for these cellular states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C94-C109 demonstrate that cell cycle arrest requires a different tRNA subset than proliferation. The validation of arrest states (C94-C97, C99-C100 with statistical tests and SASP markers) ensures biological relevance. The negative correlation (C107, r=-0.45, p<0.05) between proliferation and arrest essentiality, combined with clustering analysis (C101-C106), supports the conclusion of distinct tRNA requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "CRISPR-targeting of certain tRNAs (Arg-TCT, Ile-AAT, Gly-CCC) triggers elevated cell cycle arrest (p<0.05), while Ile-TAT targeting restricts arrest entry (p<0.01), indicating some tRNAs directly or indirectly regulate cell cycle transitions independent of their role in proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 provide evidence for tRNA-mediated regulation of cell cycle state with appropriate statistical tests. The bidirectional effects (some tRNAs promote arrest, others restrict it) suggest specific regulatory roles rather than general translation effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "tRNAs can be classified into four functional groups based on essentiality patterns: (1) essential in all conditions (e.g., LeuCAA), (2) essential for proliferation but not arrest (e.g., ArgTCG, ProAGG), (3) essential for arrest but not proliferation (e.g., IleTAT, ThrCGT), and (4) dispensable in all conditions (e.g., IleAAT). The pseudogene AsnATT is dispensable for proliferation but essential for cell cycle arrest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C119 synthesize the experimental findings into a functional classification supported by data across multiple cell lines and conditions. The specific examples provided (C116-C117) and the surprising finding about the pseudogene (C119) demonstrate the comprehensiveness of the analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The original proliferation/differentiation tRNA classification requires revision. IleAAT, IleTAT, and ValTAC (originally proliferation-tRNAs) should be reclassified, while ProCGG, ProAGG, and LeuCAG (originally differentiation-tRNAs) are actually essential for proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C125 demonstrate that functional essentiality testing reveals misclassifications in the expression-based categorization. The specific examples of reclassification (C124-C125) are supported by the essentiality data presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "tRNAs essential for growth are relatively dispensable for cell arrest entry, and vice versa, with a negative correlation observed (Figure 5C). However, the identity of arrest-essential tRNAs does not map precisely onto the proliferation/differentiation classification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C128 describe the complex relationship between proliferation and arrest requirements. The negative correlation (C127, illustrated in Figure 5C) supports the general principle, while the imprecise mapping (C128) acknowledges biological complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "This study demonstrates the feasibility of CRISPR-targeting complex multi-gene families through careful sgRNA design and provides a linear algebraic model to correct for OFF-targeting effects. The approach could be applied to other multi-gene families and protein-coding gene families.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C143 describe methodological advances validated by the successful targeting of tRNA families. The demonstration of feasibility (C138) is supported by the data throughout the manuscript, and the mathematical model (C140) shows high correlation with observed values (r=0.93, p<10\u207b\u2075).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Different subsets of the human tRNA pool (proliferation-tRNAs and differentiation-tRNAs) are expressed in different cellular conditions, as previously defined by Gingold et al., 2014. These two sets comprise about half of the human tRNA pool.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C25-C28 describe prior work that provides the foundation for the current study. These are well-established findings from cited literature (Gingold et al., 2014) and serve as the motivation for the functional validation performed in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "The correlation between tRNA expression state and cellular proliferation/arrest state does not reveal causal effects, motivating the need for functional studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 correctly identifies the limitation of correlative studies and provides the rationale for the experimental approach taken in this manuscript. This is a valid scientific motivation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "tRNA essentiality can differ based on cell origin. WI38-derived cell lines cluster together in tRNA expression and essentiality patterns. While tRNA isoacceptor expression is largely similar across cell lines, primary cells show tissue-specific differences, suggesting essentiality may be preserved according to cell line origin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C136 are supported by clustering analysis (C133-C134, Figure 4D, 5E) and literature citations. The speculation about preservation of essentiality (C137) is appropriately qualified as a hypothesis rather than a demonstrated fact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C153"
+    ],
+    "result": "The results suggest tRNAs could be therapeutic targets in cancer. Some tRNAs are essential for fast-growing cells but not slow-growing cells, suggesting selective targeting of cancer cells may be possible. CRISPR-editing of specific tRNAs causes immediate proliferation arrest even in HeLa cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C147-C151, C153 present therapeutic implications that are speculative (C147-C148, C151, C153 are marked as SPECULATION). While the differential essentiality data (C150, supported) provides a foundation, the leap to therapeutic application requires additional validation including in vivo studies, delivery methods, and assessment of effects on normal tissues. The immediate proliferation arrest (C149) is supported but does not alone validate therapeutic potential.",
+    "result_type": "MINOR"
+  }
+]

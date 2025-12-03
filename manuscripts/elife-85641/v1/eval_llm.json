@@ -1,0 +1,331 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C27",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C48"
+    ],
+    "result": "SiNRAT transports diverse divalent metal ions (Mn2+, Ca2+, Mg2+) with micromolar affinity in a proton-uncoupled manner. Mn2+ transport saturates with Km ~14 \u00b5M, and Ca2+/Mg2+ compete with Mn2+ transport and are themselves transported, albeit weakly. No proton coupling was detected across multiple metal ions tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C27, C38-C41, and C48 collectively demonstrate broad divalent metal ion transport by SiNRAT without proton coupling. The data include saturation kinetics (C38), competition assays (C39), direct transport measurements (C40), and negative results for proton coupling (C48). The experimental evidence is consistent and well-replicated across multiple independent reconstitutions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C43",
+      "C44",
+      "C45",
+      "C47"
+    ],
+    "result": "SiNRAT binds trivalent ions Al3+ and Ga3+, which are presumable substrates. Ga3+ inhibits Mn2+ transport specifically (not observed in EcoDMT), and ITC experiments show Al3+ binding with two binding constants in the low micromolar range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5, C43-C45, and C47 provide evidence for trivalent ion binding, but direct transport could not be assayed due to technical limitations (membrane disruption). The ITC data (C45, C47) are complicated by Al3+ hydroxyl complex equilibria at neutral pH, and the Ga3+ competition data (C43) show incomplete inhibition. While binding is demonstrated, definitive assignment as transported substrates requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C51",
+      "C53",
+      "C54",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The cryo-EM structure of SiNRAT at 3.66 \u00c5 resolution reveals an occluded conformation closer to inward- than outward-facing state. The structure shares the conserved SLC11 family architecture and resembles the inward-occluded state of DraNRAMP (RMSD 1.57 \u00c5) more than the outward-facing state (RMSD 2.71 \u00c5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C51, C53-C54, and C61-C67 are well-supported by high-quality cryo-EM data at 3.66 \u00c5 resolution. The structural comparisons with DraNRAMP conformations are quantitative (RMSD values) and the occluded state assignment is based on multiple structural features including gate residues and cavity accessibility. The map quality allowed unambiguous model building (C53).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C29",
+      "C30",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The SiNRAT binding site is remodeled to accommodate trivalent cations with increased charge density. The site contains an elongated aqueous pocket (~10 \u00c5 long, 4-5 \u00c5 wide) three times larger than DraNRAMP, with consensus binding residues (Asp66, Ser68, Asn69, Ala238, Thr241) and an additional acidic residue (Asp140) that increases negative charge density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C29-C30, C76-C79, C81-C83 are supported by structural data showing quantitative differences in binding site volume and composition. The identification of Asp140 as a conserved NRAT-specific residue that increases negative charge density is well-documented through structural comparison and sequence analysis. The replacement of methionine with threonine (C79) is structurally characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Mutations of conserved binding site residues (Asp66, Asn69, Thr241) severely impair Mn2+ transport and Al3+ binding. The T241V mutant abolishes Al3+ binding in ITC experiments, confirming the importance of this residue for trivalent cation interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 are supported by functional data from multiple independent reconstitutions showing loss of transport (C84, C85) and loss of Al3+ binding (C86). The T241V result (C86) provides strong evidence linking the structural observations to Al3+ binding at the consensus site (C87). The mutations target residues identified in the structure as critical for ion coordination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The S68A mutant shows distinct phenotypes for di- versus trivalent cations: Mn2+ transport is unaffected with similar kinetics and competition by Ca2+/Mg2+, but Ga3+ competition and Al3+ binding are abolished, suggesting different coordination requirements for trivalent ions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 demonstrate a clear differential effect of the S68A mutation on divalent versus trivalent cation interactions. The data are internally consistent: normal Mn2+ transport (C88) with normal divalent ion competition (implied in C88) but loss of trivalent ion interactions (C89, C90). This supports the inference (C91) of distinct coordination modes, though the structural basis requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C70"
+    ],
+    "result": "NRATs contain hallmark sequence features distinguishing them from classical NRAMPs: DPGN\u2192DPSN on \u03b11, A/CxxM\u2192AxxT on \u03b16 (replacing methionine with threonine), and a unique Ser68 (substituting Gly in other family members).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 and C70 are supported by sequence analysis shown in Figure 1\u2014figure supplement 1 (C32) and citations to previous work (C33, C34). The identification of these sequence signatures is consistent across the seven NRAT homologues identified (C31). The functional implications of these substitutions are tested experimentally in the mutagenesis studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Nanobody Nb1 binds SiNRAT at an extended extracellular interface (burying 1682 \u00c5\u00b2), inhibits Mn2+ transport in a concentration-dependent manner, and stabilizes a conformation where \u03b111 and \u03b112 are detached from the core domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 and C58-C60 are supported by functional data (transport inhibition) and structural data (binding interface characterization). The incomplete inhibition (C50) is reasonably explained by mixed liposome orientation. The structural observations about \u03b111/\u03b112 detachment (C60) are based on comparison with EcoDMT and attributed to Nb1 stabilization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C68"
+    ],
+    "result": "The cryo-EM sample did not contain added transported ions due to amphipol reconstitution challenges and pH incompatibility with nanobody binding. Residual density between Asp66 and Ser68 presumably originates from water, Na+, or trace divalent metal ions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52 and C68 accurately describe experimental limitations and the speculative nature of the residual density assignment. The authors appropriately acknowledge uncertainty about the density origin (C68) while using it cautiously to infer the ion binding position. This transparency about limitations is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C98"
+    ],
+    "result": "The broad substrate specificity of SiNRAT is consistent with other SLC11 family members (EcoDMT, DraNRAMP, EleNRMT), where mutagenesis typically retains Mn2+ transport capability, suggesting lower structural requirements for Mn2+ compared to other cations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 and C98 are supported by citations to previous work and are consistent with the experimental observations in this study. The inference about lower structural requirements for Mn2+ (C94) is reasonable based on the cited mutagenesis studies, though it remains somewhat speculative. The comparison provides useful context for interpreting SiNRAT's properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "The presumable trivalent ion binding region in SiNRAT was assigned by structural equivalence to other family members (DraNRAMP, ScaDMT, EleNRMT). Like NRMTs, the SiNRAT binding site is embedded in a larger aqueous cavity allowing both direct and water-mediated metal ion interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 appropriately acknowledge that the binding site assignment is based on inference from structural homology rather than direct observation of bound trivalent ions. The comparison with NRMTs (C101) is supported by structural data and citations. This approach is reasonable given the technical limitations preventing direct structure determination with bound Al3+.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Converting classical NRAMPs to Al3+ transporters by mutating only the consensus binding motif on \u03b11 and \u03b16 is likely insufficient. Previous unsuccessful attempts to convert EcoDMT to transport Mg2+ emphasize the importance of residues outside the narrow signature region for substrate selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 are supported by citations to previous work and are consistent with the structural findings showing that Asp140 (outside the consensus motif) is important for Al3+ binding. The inference (C102) is reasonable based on the structural data and previous failed conversion attempts (C103). This highlights the complexity of substrate selectivity determinants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The broad substrate specificity of SiNRAT contrasts with a previous study on rice NRAT1 showing selective Al3+ transport without Mn2+. This discrepancy may reflect different assay methods, and it remains unclear how Al3+ transport proceeds in the presence of other divalent ions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C107 acknowledge an important discrepancy with previous work but offer only speculation (C106) about the cause. The uncertainty about physiological function (C107) is appropriate given the in vitro nature of the experiments and the lack of proton coupling that might provide selectivity in vivo. This represents an unresolved question requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Background on the SLC11/NRAMP family and its branches (NRMTs, NRATs) based on established knowledge and previous work, including the authors' prior characterization of EleNRMT and the proposed role of NRATs in combating Al3+ toxicity in plants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C8-C26 provide background context supported by appropriate citations to previous work. These claims establish the scientific foundation for the current study and are not primary findings of this manuscript. The citations appear appropriate and the background knowledge claims are consistent with the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C31",
+      "C36",
+      "C37",
+      "C42"
+    ],
+    "result": "Seven NRAT homologues were identified through phylogenetic analysis, and SiNRAT from S. italica was selected for study based on expression level and biochemical behavior. The protein was purified in DDM detergent, and transport experiments were conducted at neutral pH for technical reasons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C36-C37, and C42 describe methodological choices and preliminary screening results. These are well-documented with appropriate figures and represent standard approaches for membrane protein characterization. The justification for neutral pH experiments (C42) is reasonable given the technical constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C55"
+    ],
+    "result": "SiNRAT contains 12 membrane-inserted helices like other eukaryotic SLC11 family members and EcoDMT, with C\u03b1 RMSD of 2.66 \u00c5 to EcoDMT. The unwound centers of the first helix of each repeat constitute the substrate binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 and C55 describe conserved structural features of the SLC11 family confirmed by the SiNRAT structure. The RMSD value (C57) provides quantitative support for structural similarity. The binding site location (C55) is consistent with the LeuT-fold architecture common to this family.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C80"
+    ],
+    "result": "Comparison of SiNRAT and DraNRAMPocc binding sites shows both have sealed water-filled paths to the metal ion binding site. In DraNRAMP, the Mn2+ ion is predominantly enclosed by protein residues (Asp56, Asn59, Ala53, Ala227, Met230) with octahedral coordination completed by water-mediated interaction with Gln378. In SiNRAT, Gln378 is replaced by Ser403.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 and C80 provide detailed structural comparison between SiNRAT and DraNRAMP binding sites. These comparisons are supported by structural data and citations to previous work on DraNRAMP (C72). The observations establish the baseline for understanding how SiNRAT differs from classical NRAMPs in accommodating different substrates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Classical NRAMPs use a conserved methionine (soft ligand) to prevent alkaline earth metal ion binding, and mutating it to alanine converts Ca2+ into a substrate. NRMTs transport Mg2+ by increasing binding site volume to accommodate the hydrated cation without compromising Mn2+ transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 summarize previous work on substrate selectivity mechanisms in the SLC11 family, supported by appropriate citations. These provide important context for understanding the SiNRAT adaptations for trivalent cation transport. The claims accurately represent the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "The evolutionary distance of SiNRAT to classical NRAMPs is much smaller than to NRMTs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C99 is supported by citations to previous phylogenetic analyses. This evolutionary context is important for understanding why SiNRAT retains more structural similarity to classical NRAMPs than to the more distantly related NRMTs, despite having evolved different substrate specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The findings are consistent with the proposed NRAT-mediated Al3+ detoxification mechanism in plants. The study provides the first structural insight into trivalent cation transport and reveals the architecture of a protein involved in plant defense against Al3+ toxicity. Future work could investigate whether NRAT overexpression increases plant Al3+ tolerance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C112 provide appropriate context and perspective on the significance of the work. C108 correctly notes consistency with previous proposals (with appropriate citation), C109-C110 accurately summarize the study's contributions, and C111-C112 appropriately suggest future directions based on previous work showing that overexpression of Al3+ tolerance proteins can improve tolerance.",
+    "result_type": "MINOR"
+  }
+]

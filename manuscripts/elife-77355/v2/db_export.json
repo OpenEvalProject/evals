@@ -1,0 +1,1201 @@
+{
+  "submission": {
+    "id": "ecb3e8c7-9f2e-4fec-a3b4-fe9077ef3c64",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T13:05:39.032366Z",
+    "updated_at": "2025-12-03T13:05:39.032366Z"
+  },
+  "content": [
+    {
+      "id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "submission_id": "ecb3e8c7-9f2e-4fec-a3b4-fe9077ef3c64",
+      "content_type": "manuscript",
+      "content_text": "# Visceral organ morphogenesis via calcium-patterned muscle constrictions\n\n## Authors\n\n- Noah P Mitchell<sup>1</sup> ([ORCID: 0000-0003-1922-8470](https://orcid.org/0000-0003-1922-8470))\n- Dillon J Cislo<sup>2</sup>\n- Suraj Shankar<sup>1</sup> ([ORCID: 0000-0002-4615-975X](https://orcid.org/0000-0002-4615-975X))\n- Yuzheng Lin<sup>2</sup>\n- Boris I Shraiman<sup>1</sup> ([ORCID: 0000-0003-0886-8990](https://orcid.org/0000-0003-0886-8990))\n- Sebastian J Streichan<sup>2</sup> ([ORCID: 0000-0002-6105-9087](https://orcid.org/0000-0002-6105-9087)) \u2020\n\n### Affiliations\n\n1. Kavli Institute for Theoretical Physics, University of California, Santa Barbara Santa Barbara United States ([ROR:02t274463](https://ror.org/02t274463))\n2. Department of Physics, University of California, Santa Barbara Santa Barbara United States ([ROR:02t274463](https://ror.org/02t274463))\n3. Department of Physics, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))\n4. Biomolecular Science and Engineering, University of California, Santa Barbara Santa Barbara United States ([ROR:02t274463](https://ror.org/02t274463))\n\n\u2020 Corresponding author\n\n## Abstract\n\nOrgan architecture is often composed of multiple laminar tissues arranged in concentric layers. During morphogenesis, the initial geometry of visceral organs undergoes a sequence of folding, adopting a complex shape that is vital for function. Genetic signals are known to impact form, yet the dynamic and mechanical interplay of tissue layers giving rise to organs' complex shapes remains elusive. Here, we trace the dynamics and mechanical interactions of a developing visceral organ across tissue layers, from subcellular to organ scale in vivo. Combining deep tissue light-sheet microscopy for in toto live visualization with a novel computational framework for multilayer analysis of evolving complex shapes, we find a dynamic mechanism for organ folding using the embryonic midgut of Drosophila as a model visceral organ. Hox genes, known regulators of organ shape, control the emergence of high-frequency calcium pulses. Spatiotemporally patterned calcium pulses trigger muscle contractions via myosin light chain kinase. Muscle contractions, in turn, induce cell shape change in the adjacent tissue layer. This cell shape change collectively drives a convergent extension pattern. Through tissue incompressibility and initial organ geometry, this in-plane shape change is linked to out-of-plane organ folding. Our analysis follows tissue dynamics during organ shape change in vivo, tracing organ-scale folding to a high-frequency molecular mechanism. These findings offer a mechanical route for gene expression to induce organ shape change: genetic patterning in one layer triggers a physical process in the adjacent layer \u2013 revealing post-translational mechanisms that govern shape change.\n\n## Introduction\n\nVisceral organ morphogenesis proceeds by the assembly of layered cell sheets into tubes, which develop into complex shapes (Nelson and Gleghorn, 2012). Through this process, genetic patterning instructs cellular behaviors, which in turn direct deformations in interacting tissue layers to sculpt organ-scale shape. This motif arises, for instance, in the coiled chambers of the heart, contortions of the gut tube, and branching airways of the lung (Savin et al., 2011; Le Garrec et al., 2017; Metzger et al., 2008). Meanwhile, elastic bilayer sheets highlight the potential for mechanical interactions alone to generate nontrivial 3D shape transformations (van Rees et al., 2017). While studies of monolayer tissue development in planar geometries imaged near the embryo surface or ex vivo have uncovered general principles (Irvine and Wieschaus, 1994; Streichan et al., 2018; Saadaoui et al., 2020; Rauskolb et al., 2014), following the dynamics of fully 3D visceral organ shape change has remained largely out of reach (Nerurkar et al., 2019; P\u00e9rez-Gonz\u00e1lez et al., 2021). Physical models inferred from static snapshots of organ morphology have proven useful in this regard, but connecting dynamics at the cellular and sub-cellular level with the dynamics of shape change at the organ scale through live imaging remains a new frontier (Vignes et al., 2022; Savin et al., 2011; Shyer et al., 2013).\n\nUncovering cell and tissue dynamics in a shape-shifting organ presents several challenges. A conceptual challenge is that visceral organs exhibit both genetic and mechanical interactions between multiple tissue layers (Sivakumar and Kurpios, 2018; Huycke et al., 2019). Technical challenges arise as well, since their complex, dynamic shapes develop deep inside embryos. Capturing dynamics in vivo therefore requires imaging methods that overcome image degradation due to scatter (de Medeiros et al., 2015) and a computational framework for analysis of complex shapes.\n\nThe embryonic midgut \u2013 composed of muscle cells ensheathing an endodermal layer, linked by extracellular matrix (Figure 1A) \u2013 offers a system in which we can overcome these challenges and probe in toto organ dynamics across tissue layers at sub-cellular resolution. Its size and the molecular toolkit of the model system render the midgut ideal for light-sheet microscopy (Krzic et al., 2012), tissue cartography (Heemskerk and Streichan, 2015), and non-neuronal optogenetics (Guglielmi et al., 2015). Hox genes expressed in the muscle layer are required for the midgut to form its four chambers, but the mechanism by which genetic expression patterns are translated into tissue deformation, and in turn to organ shape, remains unclear (Figure 1B\u2013C; Bienz, 1996; Hoppler and Bienz, 1994; Wolfstetter et al., 2009; Bienz and Tremml, 1988; Immergl\u00fcck et al., 1990; Reuter and Scott, 1990; Panganiban et al., 1990). Here, we connect this genetic patterning to mechanical interactions between layers during development and track the kinematic mechanism linking mechanical action to organ shape transformations. We find that dynamic, high-frequency calcium pulses drive patterned muscle contraction, inducing convergent extension in the endoderm to sculpt stereotyped folds.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/77355/elife-77355-fig1-v2.jpg)\n\n**Figure 1.:** (A\u2013B) Muscle and endoderm layers compose the midgut and interact to generate 3D shape. (C) Genetic patterning of hox transcription factors that govern midgut morphogenesis appears in the circumferential muscles. (D) Automatic segmentation using morphological snakes level sets enables layer-specific imaging, here shown for muscle (yellow) and endoderm (blue) for a w,Hand>GAL4;UAS-Hand:GFP;hist:GFP embryo. Morphogenesis proceeds first with a constriction cleaving the gut into two chambers (stage 15). Two more constrictions form a total of four chambers (16a) before the gut begins to coil (16b onward). Stages follow (Campos-Ortega and Hartenstein, 1997). (E) Surface area of the apical surface increases gradually during constrictions, but levels off by stage 16b. The enclosed volume decreases gradually, while the effective length of the organ \u2013 computed via the length of a centerline \u2013 nearly triples. Solid curves denote the means and shaded bands denote standard deviations ($N=7$). Developmental timelines are aligned by the onset of the middle constriction (dashed black line). (F\u2013G) Segmentation of the endoderm layer from MuVi SPIM imaging resolves individual cells, both in the endoderm and muscle layers, shown here at stage 15.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77355/elife-77355-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) We illuminate embryos embedded in an agarose column via a laser beam emerging from two illumination objectives (green). The laser sweeps along the long axis of the column to raster a sheet of light. Two detection objectives capture fluorescence in the orthogonal axis (red arrows). (B) By translating, rotating, and repeating, we build volumetric views from a series of angles. (C) Through fusion and deconvolution, multiple volumetric views build data volumes with nearly isotropic resolution for analysis.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/77355/elife-77355-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Automatic segmentation of the apical (inner) surface of the endoderm minimizes a non-local Chan-Vese energy functional (Chan and Vese, 2001; M\u00e1rquez-Neila et al., 2014) to encapsulate yolk without enclosing midgut tissue, shown for four snapshots of mid-sagittal sections using TubULAR (Mitchell and Cislo, 2022). Blue contours mark the surface intersection with the mid-sagittal plane.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/77355/elife-77355-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** We compute the centerline (brown curve) for extracted shapes (green with purple boundary for clarity) using the TubULAR package (Mitchell and Cislo, 2022). The cumulative length of these curves defines the effective length of the organ reported in Figure 1.\n\n## Results\n\n### Live deep tissue imaging reveals bilayer morphogenesis\n\nThe midgut is a closed tube by stage 15 of embryonic development, residing 20\u201360 \u03bcm below the embryo surface (Bate and Martinez Arias, 1993). The organ first constricts halfway along its length, then constricts again to subdivide into four chambers (Video 1). Within 75\u201390 min after the onset of the first fold, the constrictions are fully formed, and the organ beings to adopt a contorted shape.\n\n![Video 1.](https://cdn.elifesciences.org/articles/77355/elife-77355-video1.mp4.jpg)\n\n**Video 1.:** Here, we display panoramic views of fluorescently-labeled nuclei in both endoderm and muscle tissue layers of the midgut in a w;48Y-GAL4;klar \u00d7 w;UAS-histone::RFP embryo. Maximum intensity projections of half-volumes from left lateral (upper left), right lateral (lower left), dorsal (upper right), and ventral views (lower right) exhibit the nearly isotropic resolution of our imaging setup.\n\nQuantitative characterization of these dynamics requires extraction of the full organ\u2019s geometry, which is challenging due to tissue scatter. We overcome this challenge by in toto live imaging using confocal multi-view light sheet microscopy (de Medeiros et al., 2015). In conjunction, we express tissue-specific markers using the GAL4-UAS system (Brand and Perrimon, 1993) in klarsicht embryos (Welte et al., 1998), which exhibit genetically-induced optical clearing (see Materials and methods). To translate this volumetric data into dynamics of the midgut surface, we combine machine learning (Berg et al., 2019) with computer vision techniques (M\u00e1rquez-Neila et al., 2014; Chan and Vese, 2001) using an analysis package dubbed \u2018TubULAR\u2019 (Mitchell and Cislo, 2022). In this way, we are able to resolve sub-cellular structures with 1-min temporal resolution (Figure 1D, Figure 1\u2014figure supplement 1, Figure 1\u2014figure supplement 2, and Video 2).\n\n![Video 2.](https://cdn.elifesciences.org/articles/77355/elife-77355-video2.mp4.jpg)\n\n**Video 2.:** First, a morphological snakes level set identifies the midgut endoderm at a timepoint before the onset of constrictions. This surface follows the evolving shape of the organ during the subsequent dynamics. Rendering the data that intersects this dynamic surface allows us to visualize cells.\n\nWe find that gut morphogenesis is stereotyped and exhibits reproducible stages (Figure 1E). The surface area grows by \u223c30% during folding (stages 15-16a) and remains constant by the time constrictions are fully formed (16b), despite continued shape change. The enclosed volume within the midgut decreases only gradually during this process, while the effective length of the organ \u2013 the length along its curving centerline \u2013 triples (Figure 1E, Materials and methods).\n\n### Endodermal cell shape change underlies tissue shape change\n\nHow does this 3D shape change occur at the tissue and cellular scale? We first analyzed the endoderm layer. Inspection of these cells reveals strikingly anisotropic cell shapes before constrictions begin (Figures 1F and 2A\u2013B). In order to quantify cell shape on this dynamic surface, we cartographically project into the plane using TubULAR (Mitchell and Cislo, 2022; Aigerman and Lipman, 2015). This projection defines a global coordinate system in which we unambiguously define the anterior-posterior (AP) and circumferential axes for all time points, even when the organ exhibits deep folds and contortions (Figure 2\u2014figure supplement 1 and Mitchell and Cislo, 2022).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/77355/elife-77355-fig2-v2.jpg)\n\n**Figure 2.:** (A) Cell segmentation in a computationally flattened coordinate patch shows endodermal cells are initially elongated along the circumferential direction but change their shape during organ folding. (B\u2013C) Cell aspect ratios evolve from $a/b>2$ to $a/b\u22481$, shown in 3D for cells near the anterior fold. (C) The mean endodermal cell aspect ratio averaged over the organ decreases during constrictions. Colored bands denote area-weighted standard deviations for 600\u20131300 segmented cells per timepoint, and tick marks denote standard error on the mean. (D) As cells change their aspect ratio, their orientations do not rotate. (E) Single-cell tracking shows gentle increase of cell areas through violent folding events, suggesting that cell area changes do not drive organ shape change. The blue curve and shaded region denote mean and standard deviation, with raw traces in gray.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77355/elife-77355-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) To measure cell shapes, we trace cell membrane contours in a conformal mapping to a 2D pullback plane and re-embed cells into local tangent planes in 3D for shape quantification. After surface extraction, we project the data on a midgut surface \u223c2.5 \u03bcm beyond the apical side of the endoderm to the plane for segmentation. The pullback plane also defines material coordinate directions in which we can measure orientation of cells, \u03b8. By projecting cell contours back into 3D, we compute moment of inertia tensors for each cell in a local tangent plane. The eigenvalues and eigenvectors of the moment of inertia tensors define the cell anisotropy $a/b$ and the orientation of their long axis \u03b8 with respect to material coordinate directions $s^$ and $\u03d5^$. (B) Example segmentation in the pullback plane at a time near the onset of the first constriction. Each cell polygon is given a random, distinguishable color to demonstrate the segmentation quality. The longitudinal coordinate, $s/L$, in the pullback plane is proportional to the proper distance from the anterior face of the midgut to a given location along the tissue (see Materials and methods). (C) Here shown in raw histograms, cell aspect ratios decrease and condense close to 1 (isotropic shapes) by \u223c80 min after the onset of the first (middle) constriction. During this time, the cells do not rotate, as evidenced by the sustained peak in cell orientation near zero. At late times, when the cells are nearly isotropic, the orientation becomes less clearly defined and the distribution broadens.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/77355/elife-77355-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) The oriented cell anisotropy varies along the anterior-posterior axis. We define the cell shape anisotropy to be a signed quantity varying from positive for cells elongated along the circumferential axis and negative for cells elongated along the longitudinal axis. This signed measure of oriented anisotropy shows that some cells become elongated along the longitudinal (AP) axis, particularly near the posterior end of the midgut by $t=80$ min. In particular, the signed shape anisotropy of a cell is $\\alpha\u2261(1-a/b)\u2062cos\u20612\u2062\\theta$, where $a$ and $b$ are the semimajor and semiminor axes of the ellipse capturing each cell\u2019s moment of inertia tensor and \u03b8 is the cell\u2019s angle with respect to the material frame\u2019s longitudinal axis. Locations of the constrictions or constriction precursors are marked in dashed gray vertical lines. Cells near the anterior and middle constrictions are initially elongated along the circumferential axis more than cells in the interstitial regions. Cell anisotropy changes dramatically first at the middle constriction, then at the anterior and posterior constrictions. Shaded error bars denote standard deviations (semi-transparent bands) and standard error on the mean (opaque colored bands), while black curves denote the mean. Semi-transparent dots mark the anisotropy values of individual cells. Here, cell positions are parameterized by their longitudinal coordinate, $s/L$, which measures the proper distance along the tissue from the midgut\u2019s anterior face, normalized by the total proper length. (B) The total change in signed cell shape anisotropy over the 80-min timecourse shows strong, negative values near each constriction. We here parameterize cells\u2019 anterior-posterior positions at $t=80$ min by mapping to their locations back to $t=0$ using measured meso-scale tissue velocities in order to compare measurements made in the same tissue patches.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/77355/elife-77355-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) An example rosette of four tracked cells shows multiple topological rearrangements with different orientations. For visualization, the tissue patch is flattened to a plane such that the longitudinal and circumferential axes of the organ in the material frame align with the horizontal and vertical axis, respectively. The mapping to the plane is an as-rigid-as-possible map constrained so that the ratio of lengths in the longitudinal and circumferential directions is preserved near the center of the image (so the diagonal metric tensor components are equal $g_{11}\u2248g_{22}$). (B) Here we define T1 events to be AP oriented if the cells that lose contact are within 45\u00b0 of the longitudinal axis of the organ in the material frame. These events contribute to the net convergent extension of the organ. Conversely, in DV oriented T1 events, the cells that lose contact are within 45\u00b0 of the circumferential axis of the organ in the material frame, and these events counteract the net convergent extension of the organ. (C) In a collection of 175 tracked cells in the anterior midgut, we find no significant difference between the rate of cell intercalations oriented along the longitudinal direction versus the circumferential direction during stage 15 and the beginning of stage 16 (-27<43 min), while we find a bias in T1 orientations later during stage 16 (43<83 min) among the tracked cells. Uncertainties are taken as the square root of the count, and $\u2217=p<0.05$.\n\nBy segmenting cell shapes, we find that endodermal cells are strongly anisotropic, with an average aspect ratio $a/b>2$, and are globally aligned along the circumferential axis (Figure 2A-C). As constrictions develop, cells loose this anisotropy and even become elongated along the AP axis in posterior regions (Figure 2B, C, Figure 2\u2014figure supplement 2A). Measurement of endodermal cell orientations reveal that this effect is not due to rotations (Figure 2D). As shown in Figure 2\u2014figure supplement 2A, the initial anisotropy is patterned along the AP axis so that cells near two of the constriction locations are most anisotropic. While we do not presently know the mechanism of this patterning, it suggests these tissue regions may be primed for deformation by positional information before constrictions begin. Subsequent cell shape change is greatest near each constriction, as shown in Figure 2\u2014figure supplement 2B.\n\nDespite the large changes in aspect ratio, cell areas in the endoderm change only gradually (Figure 2E), such that cells converge along the circumferential axis while extending along the folding longitudinal axis. On a larger scale, the observed cellular deformation would collectively generate tissue movement called convergent extension. At the same time, other processes \u2013 such as oriented divisions or cell intercalations \u2013 could also contribute or counteract tissue-scale convergent extension (Etournay et al., 2015). However, we find no signs of cell division during this process, confirming previous observations (Campos-Ortega and Hartenstein, 1997). Moreover, although tracking quartets of cells in the anterior midgut revealed widespread intercalations (also called T1 transitions), the orientations of these events were not significantly biased for the early stages of constriction (Figure 2\u2014figure supplement 3 and Video 3). This suggests that anisotropic cell shape change may be the primary contributor to tissue-scale shape change. We next tested this hypothesis, asking how in-plane, cell-scale shape change connects to out-of-plane, tissue-scale deformations during constrictions.\n\n![Video 3.](https://cdn.elifesciences.org/articles/77355/elife-77355-video3.mp4.jpg)\n\n**Video 3.:** Here, the blue and green cells are not initially neighbors, but rearrange to separate the red and pink cells. Subsequently, the blue and pink cells lose their connection as well, as do the green and pink cells. Each frame shows the tissue patch mapped to 2D by a rigid flattening of the surface in a manner that the map is nearly conformal near the center of the image, with metric components $g_{11}\u2248g_{22}\u22481$. T1 transitions are not biased in their orientation until late stages of morphogenesis, consistent with cell shape change being the dominant contributor to tissue shear.\n\n### Tissue-scale convergent extension via constriction\n\nTo understand the kinematic mechanism underlying organ shape, we must bridge spatial scales from cell deformation to meso-scale tissue deformation. Given that the midgut tissue is thin compared to the organ radius, cells exert forces on one another primarily through in-plane interactions, but in-plane mechanical stress can couple to curvature to generate out-of-plane motion (Arroyo and Desimone, 2009). In a nearly incompressible tissue constricting out-of-plane, cells do not change area, but may change shape, collectively driving in-plane motion. In particular, the out-of-plane motion vn would couple to in-plane motion $v_{\u2225}$ through the mean curvature $H$, such that\n\n$$\n2\u2062H\u2062v_{n}\u2248\\nabla\u22c5v_{\u2225},\n$$\n\nwhere $\\nabla\u22c5v_{\u2225}$ is the in-plane divergence of the tissue motion along the surface. Such a kinematic constraint guides the shape changes that result from prescribed patterns of mechanical stresses in the tissue.\n\nWe hypothesized that the constricting midgut may behave as nearly incompressible, given that we found cell areas to vary only gradually during constrictions. To test this, we extract whole-organ tissue deformation patterns and find strong out-of-plane motion and in-plane dilatational flows concentrated near folds (Figure 3A, Video 4, and Figure 3\u2014figure supplement 1). Remarkably, we find that the pattern of out-of-plane deformation almost entirely accounts for in-plane dilatational motion in the gut, with only a small change in local tissue areas (Video 5). This tight link suggests that the tissue behaves as an incompressible medium. As shown in Figure 3B, these terms match with 97% correlation, leaving a residual in-plane growth residue at the level of \u223c1% per minute. This slow residual area growth, which is primarily concentrated in the lobes of rounding gut chambers, accounts for the surface area growth noted in Figure 1E and the cellular area growth in Figure 2E.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/77355/elife-77355-fig3-v2.jpg)\n\n**Figure 3.:** (A) Localized constrictions couple dilatational in-plane velocity patterns to out-of-plane deformation near folds. (B) In-plane divergence and out-of-plane deformation are correlated at the 97% level, signaling nearly incompressible behavior ($N=3$ embryos, with kinematics sampled in 320 non-overlapping tissue patches per minute for 0<90 min). Gray band denotes standard deviation and ticks denote standard error on the mean for each bin. Here, $H$ denotes mean curvature, vn is the normal (out-of-plane) velocity, and $\\nabla\u22c5v_{\u2225}$ is the covariant divergence of the in-plane velocity. (C) The tissue converges along the circumferential direction as cells sink into the constriction (blue) and extends along the bending longitudinal profile (orange) to preserve the area of a tissue patch. (D) In contrast to the curved gut, localized bending of a flat, incompressible sheet requires no cell shape change, and thus no tissue-scale convergent extension. (E) Cell shape deformations converging along the circumferential axis and extending along the the AP axis would generate tissue convergent extension corresponding to uniform constriction of a tube, but no localized constrictions would form. (F) Localized constriction of an incompressible sheet exhibits cell shape change without cell area change in the absence of oriented divisions or oriented cell intercalations. The cell shape extends along the bending longitudinal (AP) axis. (G) Convergent extension via constriction follows as a geometric consequence of localized constrictions of the tubular organ without local area change.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77355/elife-77355-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Resulting divergence of in-plane tissue motion ($\\nabla\u22c5v_{\u2225}$) and out-of-plane deformation measurements ($2\u2062H\u2062v_{n}$) on an representative embryo, plotted both on the midgut surface in 3D and in pullback coordinates, show strong correlation. The difference of the two patterns gives the local area change (right columns). Each image is the average of patterns over a 30-min timespan, while Video 5 shows the instantaneous measurements. The pullback representation uses the surface Lagrangian parameterization ($s$, $\u03d5$), such that the ventral tissue is in the midline of the image, anterior is to the left, posterior is to the right, and deformation of the organ shape in 3D is subtracted out from the pullback coordinates of subsequent timepoints (Mitchell and Cislo, 2022). The $s$ position in the pullback representation is proportional to the proper distance along the organ\u2019s longitudinal axis (see Materials and methods).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/77355/elife-77355-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) An initially flat, incompressible sheet may bend in a localized region without deforming the tissue in-plane. Distances between cells in plane are preserved, illustrated by the constant length between the ends of the sheet along the orange geodesic. (B) A uniformly constricting, incompressible tube exhibits convergent extension but has no localized folds. In the absence of cell intercalations, cells converge along the circumferential direction and elongate along the longitudinal direction, so an orange curve spanning several cells along the longitudinal axis lengthens over time. (C) In convergent extension via constriction, localized normal motion of the tube couples to in-plane tissue shape change. In a constricting, incompressible tube, the tissue converges along the circumference and extends along the bending longitudinal profile.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/77355/elife-77355-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) An initially flat incompressible sheet demonstrates kinematic coupling between in-plane dilatational flow and out-of-plane bending to preserve cells\u2019 2D areas. (B) Constriction couples to convergent extension via curvature of the surface. As a tube constricts, the tube elongates in order to preserve surface area. Correspondingly, cells change their aspect ratio and undergo convergent extension. (C) The two effects shown in (A) and (B) couple in a pinching tube with a localized constriction. A tube with a step-like constriction is composed of deformable cells whose areas shall not change. Constriction of the narrow tube via inward normal velocities would decrease the neck area (blue), so the neck extends to keep its area fixed. This is convergent extension. The faces are now dilated, triggering flow into the interior faces to correct for the change in tissue density. In this way, convergent extension is linked to incompressibility, which couples in-plane dilatational flow to out-of-plane deformation.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/77355/elife-77355-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** (A) Tissue-scale shear accumulates near each constriction, shown as a kymograph in the material coordinate frame averaged along the circumferential axis. As time increases (downward), orange streaks reflect area-preserving convergence of tissue patches along the organ circumference and extension along the folding AP axis near constrictions (red arrows). Here, the organ is parameterized by the position, $s/L$, at the onset of constriction ($t=0$), measured in proper length along the surface normalized by its total length, and deformation is averaged along the circumferential position in the kymograph. Color denotes the orientation of the anisotropic shear deformation in this material frame, such that deformation which converges along the circumferential axis and extends along the AP axis is denoted by orange color (colorwheel). Larger magnitudes of tissue shear are brighter, reflecting the Beltrami coefficient averaged over the circumferential axis. (B) The Beltrami coefficient \u03bc is defined as the amount of area-preserving shear transforming a circle into an ellipse with aspect ratio $1+|\\mu|/(1-|\\mu|)$ at an angle $arg\u2061\\mu/2$.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/77355/elife-77355-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** (A) As constrictions form, cells change shape from elongated circumferentially to elongated along the longitudinal axis of the organ. At the same time, the tissue deformation mirrors the cell shape change, converging along the circumference and elongating along the longitudinal axis of the organ. Cell intercalations (T1 events) could also contribute to convergent extension if oriented. We find these make a small contribution at early stages of constriction and a large contribution at later stages. No signs of divisions are present, so we rule out oriented cell divisions as contributors to convergent extension. (B) Tissue-scale deformation quantitatively tracks cell shape change at early times, while intercalations contribute to convergent extension at later stages. Change in cell shape anisotropy (assessed over all cells in each chamber) is plotted against the magnitude of tissue convergent extension (averaged over the same tissue positions in each chamber). On the vertical axis, we report cell shape change as the average cell shape anisotropy for all segmented cells in each chamber $\u27e8\\alpha\u2062(t)\u27e9$, minus the mean value for each chamber at the onset of the middle constriction $\u27e8\\alpha\u2062(t=0)\u27e9$, such that $\u0394\\alpha(t)\u2261\u27e8\\alpha(t)\u27e9\u2212\u27e8\\alpha(t=0)\u27e9$. Given that cells\u2019 orientations are steady during constrictions, we use a scalar measure of oriented cell shape anisotropy, $\\alpha=(1-a/b)\u2062cos\u20612\u2062\\theta$, where $a$ and $b$ are the semimajor and semiminor axes of the ellipse capturing each cell\u2019s in-plane moment of inertia tensor and \u03b8 is the cell\u2019s angle with respect to the material frame\u2019s longitudinal axis. To compute a tissue-scale shape change for comparison, we advect the cell contours of the initial segmentation along the meso-scale tissue flow and compute the cell shape anisotropy of the advected segmentation (Mitchell and Cislo, 2022). Chambers are numbered from anterior (1) to posterior (4), separated by constriction locations. Tick marks denote standard errors on the mean for cell anisotropies within each chamber.\n\n![Video 4.](https://cdn.elifesciences.org/articles/77355/elife-77355-video4.mp4.jpg)\n\n**Video 4.:** The tangential (in-plane) component of the velocity ($v_{\u2225}$, top panel) is colored by its orientation in the $(s,\u03d5)$ pullback plane described in the Materials and methods. In this \u2018unwrapped\u2019 pullback plane, ventral tissue occupies the center of the image, anterior is left, and posterior is right. For example, purple regions flow towards the midgut\u2019s posterior and orange regions flow towards the anterior. Opacity of the colored signal is proportional to the magnitude of the tissue velocity. The normal (out-of-plane) component of the velocity (vn, bottom panel) is red for motion in the endoderm\u2019s apical direction (toward the inside of the gut) and blue for motion in the basal (outer) direction. The corresponding midgut surface is shown on the left for all timepoints.\n\n![Video 5.](https://cdn.elifesciences.org/articles/77355/elife-77355-video5.mp4.jpg)\n\n**Video 5.:** For a representative embryo, we plot the out-of-plane deformation $2\u2062H\u2062v_{n}$ on the left, both as a left lateral view in 3D and in the $(s,\u03d5)$ pullback plane. Here, vn is the normal velocity and $H$ is the mean curvature, which is positive for a cylinder but negative for sharp folds whose outer radius of curvature is smaller than their inner circumference. In the middle column, we plot the dilatational flow for this embryo, defined as the covariant divergence of the in-plane velocity, $\\nabla\u22c5v_{\u2225}$. In the right column, we plot the difference between these two quantities, which measures the rate of isotropic expansion or contraction of the tissue.\n\nBecause the organ is curved into a tube, constrictions converge the tissue along the circumferential axis, and tissue incompressibility couples inward motion to extension along the longitudinal axis to preserve areas (Figure 3C). We dub this kinematic mechanism \u2018convergent extension via constriction\u2019: as the tissue constricts with an inward normal velocity, the length of the tissue along the circumferential direction shortens while curves along the longitudinal (AP) axis of the organ lengthen, keeping the areas of cells approximately constant (Figure 3C, F, Figure 3\u2014figure supplement 2, Figure 3\u2014figure supplement 3). As a consequence of tissue incompressibility and localized constrictions, the resulting area-preserving deformations are largest near constrictions (Figure 3\u2014figure supplement 4), mirroring the pattern of cell-scale deformations. Although the shape of the organ becomes increasingly complex, in-plane deformations remain globally aligned in the material coordinate system: the tissue converges and extends along the circumferential and longitudinal axes, respectively, even as these axes deform in 3D space as morphogenesis proceeds (Figure 3\u2014figure supplement 4).\n\nFinally, we find that tissue convergent extension is accounted for primarily by our previous measurement of cell shape change. Since the early stages of midgut constrictions have no divisions or oriented cell intercalations, we hypothesized that cell shape change alone can explain the tissue scale convergent extension. Figure 3\u2014figure supplement 5 shows a quantitative match between cell shape changes and tissue convergent extension, indicating that local cell shape changes primarily mediate tissue-scale convergent extension during the early stages of constrictions. Later during stage 16, the tight association between cell-scale and tissue-scale deformations loosens, corresponding to contributions from cell intercalations (Blanchard et al., 2009).\n\nIn short, we established a link from endodermal cell shape change to tissue-scale folding \u2013 in which incompressibility couples out-of-plane deformation to in-plane motion \u2013 resulting in convergent extension via constriction (Figure 3G). What mechanical process drives strong, localized contractions at the folds?\n\n### Muscle contractions drive cell and tissue shape change\n\nIt is known that embryos with either disrupted muscle or endoderm structure fail to fold (Bilder and Scott, 1995; Singer et al., 1996; Wolfstetter et al., 2009; Wolfstetter et al., 2017), as do embryos lacking integrins linking the two layers (Devenport and Brown, 2004). This suggests that gut morphogenesis requires an interaction between muscle and endodermal layers. At the same time, hox genes \u2013 which are expressed exclusively in the muscle layer \u2013 have been linked to the successful formation of specific folds (Figure 4A\u2013B; Tremml and Bienz, 1989). In particular, Antp mutants lack the anterior constriction lying near the center of the Antp domain (Figure 4C), while Ubx mutants lack the middle constriction lying at the posterior edge of the Ubx domain (Figure 4D). In this system, genetic patterning of the endoderm occurs via genetic patterning from the muscle layer (Bienz, 1996; Mendoza-Garcia et al., 2021), so it is possible that constrictions result from a genetic induction process. Alternatively, mechanical interactions between the layers could induce a program of convergent extension in the endoderm \u2013 with patterned deformation of the muscle layer sculpting a passive, tethered endoderm (Reuter and Scott, 1990) or triggering active endodermal cell shape change.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/77355/elife-77355-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013B) Hox genes Antp and Ubx are expressed in the circumferential muscle in discrete regions, shown for surfaces extracted from light-sheet imaging. (C\u2013D) Hox genes control organ shape: Antp and Ubx mutants lack anterior and middle constrictions, respectively. (E) Muscle and endoderm layers move together. By computationally extracting both muscle and endoderm layers in an embryo expressing both fluorescent circumferential muscle and endoderm (w,Hand>GAL4;UAS-Hand:GFP;hist:GFP), we track relative motion of initially close muscle-endoderm nuclei pairs. (F) Muscle-endoderm nuclei pairs show modest relative motion compared to the integrated motion of the tissue ($N=81$ pairs, colored bands denote standard deviations). (G) Optogenetic inhibition of contractility via CRY2-OCRL, which dephosphorylates PI(4,5)P2 (Guglielmi et al., 2015), mimics hox mutant behaviors ($N=11$ each), and stimulation of muscle contraction via recruitment of CRY2-RhoGEF2 to the plasma membrane (Izquierdo et al., 2018) drives ectopic folding ($N=5$ each). (H) Inhibiting muscle contraction via CRY2-OCRL prevents endoderm cell shape change, shown for snapshots before and after the anterior constriction would normally form. The black scale bar is 50 \u03bcm, and white scale bar in images of segmented cells is 25 \u03bcm. (I) Measurements of endodermal cell anisotropy over time confirm that mechanical inhibition in the muscle reduces cell shape change in the endoderm (blue, $p=1\\times10^{-22}$). Antp mutants also exhibit reduced endoderm cell shape change, consistent with Antp regulating muscle contraction (yellow, $p=4\\times10^{-9}$). Each datapoint is the weighted average of multiple adjacent timepoints from two to three embryos with at least 30 cells per timepoint segmented in each embryo. Colored bands denote standard error on the mean, and **** denotes $p<0.0001$.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77355/elife-77355-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Tracking muscle nuclei and counterpart nuclei in the endoderm reveals only a gradual increase in geodesic distance (distance along the gut surface) between initially close nuclei pairs over time. The mean displacement grows by \u223c5 \u03bcm per hour during folding on average, regardless of whether nuclei are located in deep folds (as in the example pair marked by a yellow curve) or on the surface of the gut chambers (green curve). (B) In contrast, the tissue deformation leads to large displacements of cells. We measure distances in 3D embedding space along pathline trajectories suitably smoothed to remove contributions from noise and transient motions. Distance traveled for example tracks invaginating into deep folds (yellow curve) or translating on gut chambers (green curve) are highlighted to match panel (A).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/77355/elife-77355-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Schematic of muscle nuclei configuration at early and late times. Muscle cells are positioned in bands along the AP axis and are initially clustered, such that each band is several cells wide along the circumferential axis. As constrictions form, circumferential muscle nuclei arrange in a nearly single-file configuration. (B) Motion of nuclei cells relative to the endodermal layer does not show strongly coherent (directional) motion, as demonstrated by individual tracks of relative displacement colored by timestamp. As before, the positions of 81 nuclei cells are measured relative to the center of mass of the endodermal nucleus that was nearest at the onset of constrictions. Distances are measured as geodesic lengths along the surface. Distances along the normal direction (through the thickness of the tissue) are ignored. That is, nuclear positions are projected along the thickness of the tissue onto the surface in which the endodermal nuclei reside. Histograms of accumulated displacements in either direction show the average over the first 30 min (blue), 30\u201360 min (red), and 60\u201390 min (yellow). (C) The same data shown in (B) is plotted as a distribution, with each component separated. The standard deviation of displacement coordinates (colored bands), either in the $s^$ direction (along the folding longitudinal axis in the material frame, blue) or the $\u03d5^$ direction (along the circumferential axis in the material frame, orange) show an increase of \u223c5 \u03bcm per hour, with nearly zero mean displacement in either axis.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/77355/elife-77355-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Snapshots of single-cell shape measurements of embryos under optogenetic perturbations demonstrate that muscle contraction induces endoderm cell shape change. During optogenetic inhibition of muscle contractility in the Antp domain using w,Antp-GAL4 \u00d7 w; UAS-CIBN::pmGFP;UAS-CRY2-OCRL, cell shapes in the interior two chambers (which remain as a single chamber in the optogenetic mutant) remain steady. (B) Endodermal cells undergo less shape change in both CRY2-OCRL and Antp mutants, as reported in the main text. As before, **** denotes $p<0.0001$ , and N.S. denotes $p>0.05$. (C) The endodermal cell orientation does not change significantly between conditions.\n\nTo clarify the relationship between layers during constriction dynamics, we first measured relative motion of the muscle layer against the endoderm. By tracking both circumferential muscle nuclei and endoderm nuclei in the same embryo, we find that these two layers move together, with initially close nuclei separating by \u223c5 \u03bcm per hour (Figure 4E\u2013F, Video 6, Figure 4\u2014figure supplement 1, and Figure 4\u2014figure supplement 2). This result is consistent with the notion that the two layers are tightly tethered by the integrins and extracellular matrix binding the heterologous layers (Devenport and Brown, 2004).\n\n![Video 6.](https://cdn.elifesciences.org/articles/77355/elife-77355-video6.mp4.jpg)\n\n**Video 6.:** Here, we false color two selected layers of a w,Hand>GAL4;UAS-Hand:GFP;hist:GFP embryo in yellow (muscle layer) and blue (endoderm).\n\nBased on this tight coupling, we hypothesized that muscle mechanically induces shape change in the tethered endoderm. To test this hypothesis, we inhibited contractility of the muscle layer by driving UAS-CIBN UAS-CRY2-OCRL, a two-component optogenetic construct that recruits OCRL to the plasma membrane to dephosphorylate PI(4,5)P2. This process has been shown to abolish actomyosin contractility in other developmental contexts by releasing actin from the plasma membrane (Guglielmi et al., 2015). Driving CRY2-OCRL with Antp-GAL4 under continuous activation of blue light reliably prevented anterior constrictions (Figure 4G). Likewise, driving CIBN and CRY2-OCRL under continuous blue light activation in muscle regions posterior to the anterior fold using Ubx-GAL4 M1 locally inhibited constriction dynamics. We note that Ubx-GAL4 M1 embryos express Ubx in a larger domain than the endogenous WT Ubx domain due to differences in its regulation (Garaulet et al., 2008), but Ubx-GAL4 M1 embryos nonetheless execute all three constrictions in the absence of UAS-CRY2-OCRL under similar imaging conditions. Inhibiting contraction in selected regions therefore mimics the genetic mutants known to remove folds.\n\nGiven that muscle contractility is required, we asked if optogenetically inducing actomyosin contraction in the muscle is sufficient to induce constrictions. Indeed, optogenetic activation using the CIBN UAS-RhoGEF2 system in the Antp region generates an anterior fold on demand on the timescale of a few minutes, even if induced long before the constriction would normally begin (Figure 4G). Similarly, activation of the Ubx-GAL4 M1 domain results in a nearly uniform constriction that dramatically alters the shape of the organ, forcing the yolk to flow into the anterior chamber. Additional optogenetic experiments inhibiting contractility of all muscles likewise led to folding defects ($N=13$, w;UAS-CIBN::pmGFP;Mef2-GAL4/UAS-mCherry::CRY2-OCRL). We conclude that muscle contractility is necessary for constrictions and inducing contraction and the associated downstream behaviors is sufficient to generate folds.\n\nWe then asked how these macro-scale perturbations on organ shape are linked to cell shapes in the endoderm. In contrast to wild-type, optogenetic inhibition of muscle contractility significantly reduced endodermal cell shape change. As shown in Figure 4H\u2013I and Figure 4\u2014figure supplement 3, cell segmentation of the endoderm reveals nearly constant aspect ratios during optogenetic inhibition of muscle contraction in the Antp domain: the endoderm cells near the Antp domain undergo reduced convergent extension when muscle contraction is locally disrupted (single-sided z-test: $p=1\\times10^{-6}$ for difference after 1 hr, $p=1\\times10^{-22}$ for sustained difference between curves, see Methods). We also observe analogous reduction of endodermal cell shape change in Antp mutants, which lack anterior folds (Figure 4I and Figure 4\u2014figure supplement 3, single-sided z-test: $p=7\\times10^{-3}$ for difference after 1 hr, $p=4\\times10^{-9}$ for sustained difference between curves). Thus, the endodermal program of convergent extension is induced by mechanical interaction with the contracting muscle layer.\n\n### Calcium pulses spatiotemporally pattern muscle contractility\n\nWhat mechanism triggers muscle contractions, allowing such sharp folds to arise? Recent studies have shown that calcium signaling triggers muscle contractions in a wide range of contexts (Kuo and Ehrlich, 2015). If hox genes use calcium signaling to pattern muscle contraction in the midgut, we would predict that calcium pulses should appear near localized constrictions. Furthermore, hox gene mutants lacking constrictions would not exhibit localized calcium pulses, and inhibition of the cell biological mechanism translating calcium into mechanical contraction should likewise inhibit constrictions.\n\nTo test for a link from hox genes to organ shape through this mechanism, we first imaged a fluorescent probe of calcium dynamics (GCaMP6s) in the muscle layer. As shown in Figure 5A\u2013E and Video 7, dynamic calcium pulses appear in the muscle layer in regions localized near all three midgut constrictions. Additionally, these calcium pulses are patterned in time, appearing only at the onset of constriction for each fold (Figure 5\u2014figure supplement 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/77355/elife-77355-fig5-v2.jpg)\n\n**Figure 5.:** (A) Dynamic calcium pulses appear near the anterior fold, localized to a region more narrow than the Antp domain. (B) Transient pulses in GCaMP6s intensity occur on the timescale of seconds and increase in amplitude when folding begins ($t=0$). Red, green, and blue channels of images represent maximum intensity projections of confocal stacks separated in time by 9 seconds, here and below. (C) Integrated transient pulses for the embryo in (B) show calcium pulses are localized near the fold: GCaMP6s signals 20 \u03bcm in front (red) or behind the fold (yellow) are less intense. (D) Snapshots of GCaMP6s fluorescence in muscle cells demonstrate calcium activity near constrictions. Each frame is a composite of three subsequent snapshots in red, green, and blue, so that transient pulses appear as colored signal, while background appears gray. Different muscle cells report calcium activity in adjacent frames. (E) Average fluorescent activity during the first 15 min of folding show localized signatures at each constriction, with particularly sharp peaks in the middle and anterior constrictions ($N=5$, $N=2$, and $N=7$ for anterior, middle, and posterior folds, respectively). (F) In Antp mutants, GCaMP6s fluorescence is significantly reduced ($p=2\\times10^{-8}$) and is not localized in space. Snapshots of GCaMP6s fluorescence 28 min after posterior fold onset (right) show almost no activity in the anterior region compared to the control (left). (G) Disruption of calcium regulation in muscle cells inhibits constrictions. The probability of forming three folds is reduced under heat-shock induced expression of the dominant negative mutant allele SERCA.R751Q with a muscle-specific driver Mef2-GAL4 ($N=130$, $p=7\\times10^{-9}$), and is likewise reduced under RNA interference of MLCK driven by tub67-GAL4;tub16-GAL4 ($N=37$, $p=2\\times10^{-4}$). (H) Altogether, we infer that hox genes are upstream of patterned calcium pulses, which generate muscle contraction that is mechanically coupled to the endoderm, driving tissue strains and ultimately organ shape.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77355/elife-77355-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** For each constriction, the transient signal is computed (colored signals in snapshots A-C) and averaged across the DV direction (in the lab frame) into a space-time heatmap (D\u2013F). A time of $t=0$ min for each panel corresponds to the time when localized constriction is visible in the bright-field channel at that constriction location and carries an uncertainty of \u00b15 minutes for each sample (dashed orange lines). The middle constriction (the sharpest fold, B and E) has the sharpest activity profile, and the posterior constriction (the widest fold, C and F) has the broadest activity profile.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/77355/elife-77355-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Kymographs of wild-type calcium dynamics near the anterior fold for $N=13$ control embryos show fluctuating calcium activity beginning at the onset of folding at the site of the fold. The domain of calcium activity broadens anteriorly and posteriorly in time. A red solid line marks the onset of the anterior constriction, and dashed lines denote the precision with which this time is known for a given sample. (B) In mutants, almost no calcium pulses are observed during the same timespan. A kymograph of average fluctuating GCaMP6s intensity for $N=5$ Antp mutants remains quiescent (dark blue). Given that the anterior fold does not form, $t=0$ was prescribed based on the depth of the posterior fold. We inferred the expected position of the anterior fold (which defines the horizontal axis of the kymograph) from the mean position of the anterior fold relative to the anterior face of the midgut in control embryos.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/77355/elife-77355-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** A dorsal view snapshot of pulsing calcium activity (top panel) and the associated brightfield image (bottom panel) of a Ubx mutant shows calcium pulses in the anterior constriction (white arrowhead). Each image is an overlay of maximum intensity projections for three shallow confocal stacks taken 10 s apart and false-colored red, green, and blue for each respective stack. The colorful streak near the anterior constriction reflects the transient pulses at that location. As in Figure 5F and Figure 5\u2014figure supplement 2, the posterior constriction lies outside the confocal stack and is therefore not visible in the GCaMP6s channel. These data suggest the calcium dynamics at each constriction are regulated locally along the length of the midgut ($N=5$). Some unrelated calcium activity is visible in the epidermis at the top and bottom of the image because the driver I-76-D-GAL4 was present.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/77355/elife-77355-fig5-figsupp4-v2.jpg)\n\n**Figure 5\u2014figure supplement 4.:** (A) Embryos expressing a dominant negative form of SERCA have fewer successful constrictions on average (single tailed Z-test, $N=130$, $p=3\\times10^{-8}$) using a muscle-specific driver, Mef2-GAL4, at elevated temperatures (continuous heatshock at 37\u00b0C). In adult flies, this dominant negative SERCA was previously shown to exhibit temperature-sensitive expression and inhibits muscle contractions at 37\u00b0C (Kaneko et al., 2014). (B) Embryos expressing RNAi against MLCK have fewer successful folds on average (single tailed Z-test, $N=37$, $p=0.002$). Here we use a ubiquitous driver, tub15-GAL4;tub67-GAL4, under continuous heatshock starting during or just after midgut closure, before constrictions appear. (C) Brightfield imaging of embryos expressing a mutant form of SERCA in muscles show reduced folding activity. Here, driving a mutant SERCA expression via heatshock starting at stage 15 shows no folds. (D) Control embryos without the mutant form of SERCA, in contrast, typically form three folds. Timestamps denote minutes since the onset of heatshock and scalebar is 100 \u03bcm.\n\n![Video 7.](https://cdn.elifesciences.org/articles/77355/elife-77355-video7.mp4.jpg)\n\n**Video 7.:** We visualize the dynamics of calcium pulses by overlaying three snapshots captured nine seconds apart as red, green, and blue images for each frame. Thus, colored pixels represent transient activity reported by GCaMP6s. A composite frame is imaged every 90 s, and the timestamp is shown relative to the onset of the constriction, as monitored in a separate bright-field channel (not shown).\n\nTo test whether hox genes pattern shape change through calcium dynamics, we measured GCaMP6s activity in flies mutant for Antp that lack an anterior constriction. As shown in Figure 5F, we found that calcium activity was almost entirely absent during stages 15\u201316. Calcium activity is strongly reduced at the location of the missing anterior constriction (single-sided z-test: $p=2\\times10^{-8}$) and subsequent calcium pulses are repressed within the vicinity of the region for the hour after the constriction would normally initiate (single-sided z-test: $p=1\\times10^{-13}$ within 50 \u03bcm, Video 8 and Figure 5\u2014figure supplement 2). In contrast, calcium pulses continue to appear at the anterior constriction in Ubx mutants, suggesting local control of calcium pulses by Antp in the anterior constriction (Figure 5\u2014figure supplement 3). The hox gene Antp is therefore upstream of dynamic calcium pulses.\n\n![Video 8.](https://cdn.elifesciences.org/articles/77355/elife-77355-video8.mp4.jpg)\n\n**Video 8.:** In WT embryos (top panel), calcium pulses appear at the onset of constrictions near the anterior constriction and appear in an increasingly spatially extended region as development progresses. In contrast, for Antp mutant embryos, calcium activity is reduced and does not exhibit an initially localized pattern (bottom panel).\n\nImportantly, we also find that in wild-type embryos, knock-downs of calcium signaling remove folds. In smooth muscle cells, calcium is known to trigger muscle contraction by binding to calmodulin, which in turn binds to myosin light chain kinase (MLCK) to trigger myosin light chain phosphorylation (Hill-Eubanks et al., 2011), and cytoplasmic calcium is transported from the cytosol into the sarcoplasmic reticulum for storage under regulation of SERCA (Kuo and Ehrlich, 2015). Driving a dominant negative form of SERCA previously shown to exhibit temperature-sensitive expression under Mef2-GAL4 (Kaneko et al., 2014), we find that disrupting calcium signaling via heatshock suppressed midgut constrictions ($p=7\\times10^{-9}$, Figure 5G, Video 9, Figure 5\u2014figure supplement 4). Separately, interrupting the production of MLCK in the muscle via RNA interference demonstrates a similar reduction in folding behavior ($p=2\\times10^{-4}$, Figure 5G). From this we infer that spatially localized calcium dynamics \u2013 under the control of hox gene patterning \u2013 triggers MLCK signaling leading to muscle contractions (Figure 5H).\n\n![Video 9.](https://cdn.elifesciences.org/articles/77355/elife-77355-video9.mp4.jpg)\n\n## Discussion\n\nHere, we studied morphogenesis of an organ in which heterologous tissue layers generate complex shape transformations. We found that convergent extension and sharp folds in the endodermal layer are triggered by mechanical interaction of muscle contractility together with tissue incompressibility, and patterns of calcium signaling regulate contractility in muscle cells according to hox-specified information (Figure 5H).\n\nAlthough correspondences between hox genes and cell fates have been established for decades (Bate and Martinez Arias, 1993), understanding the physical processes driven by hox genes remains an active area of research. Here, we demonstrated a link from genes to tissue morphodynamics through active forces, connecting hox genes to a mechanical induction cascade across layers that integrates high-frequency calcium pulses to advance reproducible morphogenesis of complex 3D shape. While calcium dynamics have known roles in early developmental stages of diverse organisms (Wallingford et al., 2001; Strutt, 2003; Li et al., 2019; Brodskiy et al., 2019) \u2013 including influencing the organization of muscle fibers in the midgut (Huycke et al., 2019) and determining cell fates in heart valves (Fukui et al., 2021) \u2013 our findings suggest a direct influence of calcium on shape, wherein pulses trigger a program of irreversible tissue deformation. These calcium-patterned muscle contractions control 3D shape through a mechanical cascade across tissue layers, with broad relevance to tissue engineering and organ morphogenesis in other organisms.\n\nAt the cellular level, a remaining question is how the midgut selects precise positions and times for localized calcium activity despite broad hox gene domains that vary slowly with time. For example, the anterior fold forms near the center of the Antp domain. Do cells sense subtle gradients of Antp, or does more refined patterning downstream of hox gene expression specify this location (Bilder and Scott, 1998)? One available avenue for the latter possibility is that hox genes govern the formation of anatomical structures that may transmit signals from the soma to trigger calcium pulses (Bataill\u00e9 et al., 2015).\n\nAt the tissue level, a remaining question is to what extent endodermal cells actively respond to muscle contraction, rather than passively deforming. For instance, there could be a mechanical signaling pathway provoking contractile behavior in endodermal cells, or even a mechanical induction loop between layers regulating morphological progression. Our findings open new avenues to study how dynamic interactions between layers encode complex shapes of visceral organs.\n\n## Materials and methods\n\n### Stocks and reagents\n\nFor this work, we used the following stocks based on Bloomington Drosophila Stock Center stocks: w;48Y-GAL4;klar, w;UAS-CAAX::mCherry, w;UAS-histone::RFP, w;20xUAS-IVS-GCaMP6s, w;UAS-SERCA.R751Q.tdTomato;MKRS/TM6B Tb, UAS-MLCK RNAi TRiP VALIUM20, y,w,Antp-GAL4;klar, w;sqhGFP, w[*];I-76-D,Ubx9.22,e1/TM6B,Tb, Df(3 R)AntpNS+RC3,red1,e1/TM3,Sb,Ser. Additional stocks used were w;Mef2-GAL4 (a gift from Lucy O\u2019Brien), w[*];UASp-CIBN::pmGFP;UASp-mCherry::CRY2-OCRL (a gift from Stefano de Renzis), w[*];UASp-CIBN::pmGFP;UASp-RhoGEF2-CRY2::mCherry (a gift from Stefano de Renzis), Hand-GFP;4xUAS-Hand (a gift from Zhe Han), w;+;Ubx-GAL4 M1 (a gift from Ellie Heckscher) (Garaulet et al., 2008; Crickmore et al., 2009), w;+;Ubx-GAL4 M3 (a gift from Ellie Heckscher) (Garaulet et al., 2008; Crickmore et al., 2009), w;tub67-GAL4;tub15-GAL4 (a gift from Eric Wieschaus), and w;+;Gap43 mCherry (a gift from Eric Wieschaus).\n\nWe used following antibodies for staining: Ubx FP3.38 (diluted 1:10, Developmental Studies Hybridoma Bank), Antp 8C11 (diluted 1:25, Developmental Studies Hybridoma Bank), anti-ABDA C11 (dilued 1:50, Santa Cruz Biotechnology).\n\n### Microscopy\n\nFor light sheet imaging of live and fixed embryos, we used a custom multi-view selective plane illumination microscope (confocal MuVi SPIM) drawn schematically in Figure 1\u2014figure supplement 1A. This setup has been previously described in Streichan et al., 2018.\n\nSubsequent registration, deconvolution, and fusion using the methods presented in Preibisch et al., 2014 results in a single, deconvolved data volume per timepoint with isotropic resolution (0.018 \u03bcm3 per voxel). For most experiments in this work, we acquire one volume per minute. The optimal number of deconvolution iterations varied between 8 and 20 for different fluorescent reporters. We used six or eight views for most datasets.\n\nTo peer deep inside the developing embryo, we leverage the UAS-GAL4 system (Brand and Perrimon, 1993) to express fluorescent proteins in gut-specific tissues and use embryos with the klarsicht mutation (Welte et al., 1998), which reduces scatter without altering gut morphogenesis. Video 1 shows a maximum intensity projection of lateral, dorsal, and ventral half-data volumes for a deconvolved nuclear marker in the midgut as a complement to Figure 1 of the main text. In Video 1, non-midgut tissues expressing 48Y-GAL4 are largely masked out using an iLastik training to darken voxels far from the gut, but some cells outside the midgut that express 48Y-GAL4 are visible, particularly on the dorsal side.\n\nWe used confocal microscopy (Leica SP8) for more detailed characterization of calcium dynamics, live imaging of Ubx and Antp mutants, and supplementary optogenetic experiments.\n\n### Parameterization of the organ shape\n\nTo quantify the geometry of organ shape and deformation, we built an analysis package called TubULAR, as reported in Mitchell and Cislo, 2022. While details of the publicly-available, open source package are included in Mitchell and Cislo, 2022 and the associated repository, here we describe our use of the package for the presented results.\n\nWe begin by using TubULAR\u2019s surface detection methods to extract the organ shape with a morphological snakes level set analysis (M\u00e1rquez-Neila et al., 2014; Chan and Vese, 2001) on the output of an iLastik training (Berg et al., 2019) against midgut tissue (membrane, nuclei, actin, or myosin). Example results from this segmentation performed on a w;48Y-GAL4/UAS-CAAX::mCh embryo are shown in midsagittal sections in Figure 1\u2014figure supplement 2. We then use TubULAR\u2019s cartographic mapping functions to map the surface to the plane and stabilize noise in the mappings\u2019 dynamics (Mitchell and Cislo, 2022). For visualization, we use a pullback parameterization $(s,\u03d5)$ such that the coordinate directions $(s^,\u03d5^)$ are determined by the conformal mapping to the plane at the onset of the first constriction ($t=0$). In this way, $\u03d5$ parameterizes the intrinsic circumferential axis and $s$ parameterizes a longitudinal position along the long axis of the organ at $t=0$. In subsequent timepoints, the difference in parameterization coordinates in 3D space are minimized to match the previous timepoint, such that the coordinates follow the shape change of the organ (Mitchell and Cislo, 2022). We find this $(s,\u03d5,t)$ parameterization aids in both visualization and enables more accurate velocimetry measurements than other choices. We define the \u2018material frame\u2019 of a given midgut as the tissue configuration at the onset of the middle constriction, which is the first constriction that appears.\n\nWe compute the centerline using the TubULAR package (Mitchell and Cislo, 2022), wherein the organ is divided into circumferential \u2018hoops\u2019 based on its planar parameterization (Figure 1\u2014figure supplement 3). Hoops for which s=constant define an effective circumference for increments along the length of the organ, and the average 3D position of each hoop defines its centerline point. Connecting mean points of adjacent hoops along the length of the organ defines the centerline of the object (brown curve) whose length is reported in the main text Figure 1E.\n\n### Endodermal cell segmentation and shape change\n\nUsing a single slice of the gut surface projected into stabilized $(s,\u03d5)$ pullback coordinates, we segmented 600\u20131300 cells per timepoint (Figure 2\u2014figure supplement 1) using a semi-automated procedure:\n\nThis gives us an estimate for the image segmentation. We then manually correct any spurious segmentation artifacts in GIMP (The Gimp Development Team, 2019) by overlaying the segmentation with the original pullback images. To resolve some ambiguous cell junctions, we examine not only a single slice of the endodermal cell layer near the apical side (about 2.5 \u03bcm beyond the apical side), but also the maximum intensity projection of several microns along the surface normal direction.\n\nWe compute cell anisotropy by finding segmented cell shapes in 2D, embedding those polygons in 3D, projecting each cell onto a local tangent plane, and measuring the moment of inertia tensor of this polygon in the material coordinate system. This procedure is shown schematically in Figure 2\u2014figure supplement 1A. We then embed the Lagrangian coordinate directions $(s^,\u03d5^)$ from a conformal mapping of the whole organ at the onset of the initial (middle) constriction $t=0$ onto the cell\u2019s centroid in 3D (in the deformed configuration at time $t\\neq0$). The moment of inertia tensor for the cell polygon is expressed in the local coordinate system from the embedded $(s^,\u03d5^)$ directions in the local tangent plane of the tissue. The eigenvalues I1 and I2 of the moment of inertia tensor and their associated eigenvectors then provide an effective ellipse for the cell with orientation \u03b8 with respect to the local $s^$ direction and an aspect ratio $a/b\u2261\\sqrt{I_{1}/I_{2}}$. Figure 2\u2014figure supplement 1C shows the raw data of these measurements without computing statistics.\n\nWe then average the cellular anisotropy over the organ surface to report a mean, standard deviation, and standard error for both the cellular aspect ratio and cell orientation. In this averaging, we weight each cell\u2019s contribution by its area, so that all material points on the organ are given equal weight. The results reported in Figure 2C and D in the main text show the weighted mean and weighted standard deviation for each distribution. The weighted means of the aspect ratio $a/b$ and orientation \u03b8 are\n\n$$\n\u27e8a/b\u27e9=\\frac{\\sumi=1NA_{i}a_{i}/b_{i}}{\\sumi=1NA_{i}}\n$$\n\n\n\n$$\n\u27e8\\theta\u27e9=tan^{\u22121}\u2061[\\frac{\\sumi=1NA_{i}sin\u2061\\theta_{i}}{\\sumi=1NA_{i}cos\u2061\\theta_{i}}],\n$$\n\nwhere $A_{i}$ is the area of the $i^{th}$ cell, and $N$ is the total number of cells. We note that we obtain similar results by weighting each cell equally, which would correspond to setting $A_{i}=1$ for all i above.\n\nWe obtain standard errors by bootstrapping. In detail, we subsample our collection of measurements, compute the weighted mean for the subsample, and repeat with replacement 1000 times. The variance of these 1000 means decreases in proportion to the number of samples $n$ included in our subsampling, so that $\\sigma_{x\u00af}^{2}\u2062(n)=\\sigma~_{x\u00af}^{2}/n+\\sigma_{0}^{2}$. Fitting for $\\sigma_{x\u00af}^{2}$ across 50 values of $n$ in the range $N/4<n<N$ and evaluating this fit for $n=N$ gives an estimate for the standard error on the mean $\\sigma_{x\u00af}=\\sqrt{\\sigma_{x\u00af}^{2}}$. In practice, the result is nearly identical to measuring the means of many weighted subsamplings of $n=N$ cells with replacement and computing the standard deviation of this collection of means.\n\n### Single-cell tracking\n\nWe tracked 175 cells from -27 min to 83 min of development relative to the onset of the middle constriction in a w;48Y-GAL4;klar \u00d7 w;UAS-CAAX::mCh embryo imaged using confocal multi-view lightsheet microscopy (confocal MuVi SPIM). First, we segmented the same 175 cells in the first chamber of the gut every two minutes using the same procedure as in the previous section. We tracked their positions over time using the iLastik manual tracking workflow using 2D $(s,\u03d5)$ pullback projections. From these segmented polygons, we project back into 3D onto the gut surface and measure the cell areas in a local tangent plane for Figure 2E in the main text.\n\n### Topological cell rearrangements in the endoderm\n\nCell rearrangements are also present in the endodermal tissue, and these \u2018T1\u2019 events could also contribute to the large-scale shear (Etournay et al., 2015). Importantly, the orientation of T1 transitions is not significantly aligned with the elongation axis at early times, suggesting that the endoderm is fluidized and that T1s are not a tightly controlled process directing morphogenesis.\n\nTo identify T1 transitions, we leveraged our single-cell tracking previously used in Figure 2E \u2013 a contiguous region of cells in the anterior chamber of the midgut, extending from the anteriormost portion of the midgut to the anterior fold. We query all cell pairs which share an edge in the endoderm at any time during the morphogenetic process. We then filter out any pairs that remain neighbors for all timepoints, since their shared edges do not participate in topological rearrangements. The remaining pairs reflect a cell-cell interface which either appears or vanishes during morphogenesis. We perform additionally screening of these candidate events to confirm that the change in cell topological is not an artifact from possible segmentation error by coloring the two cells participating and visually inspecting their motion. Video 3 and Figure 2\u2014figure supplement 3 show an example sequence of T1 transitions tracked using this scheme.\n\nFor each junction lost or gained, we measure the axis of the associated T1 transition by computing the centroid of each cell in the pair that is gaining or losing a junction. Figure 2\u2014figure supplement 3C shows a histogram of these axes\u2019 angles with respect to the anterior-posterior axis of the organ defined in a locally conformal coordinate patch, with the AP axis orientation inferred from the material (Lagrangian) frame. We find that T1 transitions oriented along the AP axis (converging along DV) occur about as frequently as T1 transitions oriented along the DV axis (converging along AP) for our collection of tracked cells in the first chamber, suggesting that topological cell rearrangements are not a principal driver of convergent extension in the tissue at early times. These rearrangements are therefore unlikely to drive shape change, as predicted by the quantitative similarity between tissue shear and cell shape change (Figure 3\u2014figure supplement 5).\n\n### Quantification of tissue deformation\n\nTo compute a coarse-grained tissue velocity over the gut surface, we again used the TubULAR package (Mitchell and Cislo, 2022). This resource enables velocimetry and discrete exterior calculus measurements (Crane et al., 2013) on the evolving surface. The result is a fully covariant measurement of the compressibility and shear of the tissue spanning the whole organ.\n\nBriefly, given our $(s,\u03d5,t)$ coordinate system defined in the TubULAR pipeline, we then run particle image velocimetry (PIV) using PIVLab (Thielicke and Sonntag, 2021; Thielicke and Stamhuis, 2014) and map tissue velocities in the domain of parameterization to the embedding space. Geometrically, displacement vectors $v$ extend from one $x\u2062(s_{0},\u03d5_{0},t_{0})$ coordinate in 3D on the surface at time t0 to a different $x\u2062(s_{1},\u03d5_{1},t_{1})$ coordinate on the deformed surface at time t1. When t0 and t1 are adjacent timepoints, this defines the 3D tissue velocity at $x\u2062(s_{0},\u03d5_{0},t_{0})$ as $v\u2062(s_{0},\u03d5_{0},t_{0})=(x\u2062(s_{1},\u03d5_{1},t_{1})-x\u2062(s_{0},\u03d5_{0},t_{0}))/(t_{1}-t_{0})$. We decompose the velocity into a component tangential to the surface $v_{\u2225}$ and a normal component $v_{n}=v_{n}\u2062n^$ for measuring divergence via discrete exterior calculus (Mitchell and Cislo, 2022) and for measuring out-of-plane deformation $2\u2062H\u2062v_{n}$, where $H$ is the mean curvature obtained via computing the Laplacian of the mesh vertices in (embedding) space: $\u0394\u2062X=2\u2062H\u2062n^$ (see Crane et al., 2013).\n\nAs shown in Figure 3\u2014figure supplement 1, the in-plane dilatational flow almost perfectly matches the out-of-plane deformation during the morphogenetic process. We make sense of dilatational flow and out-of-plane deformation and interpret their difference as the local area growth rate by the following argument. The surface changes according to its tissue velocity, which has tangential and normal components $v=\\partial_{t}\u2061X=v^{i}\u2062e_{i}+v_{n}\u2062n^$. The shape of the surface is encoded by the metric $g_{i\u2062j}=\\partial_{i}\u2061X\u22c5\\partial_{j}\u2061X$, which describes lengths and angles measured in the tissue, and by the second fundamental form $b_{i\u2062j}=\\partial_{i}\u2061\\partial_{j}\u2061X\u22c5n^=-\\partial_{i}\u2061X\u22c5\\partial_{j}\u2061n^$, which contains information relating to both intrinsic and extrinsic measures of surface curvature (Crane et al., 2013). The time rate of change of the metric is determined by the superposition of velocity gradients and normal motion where the surface is curved (Arroyo and Desimone, 2009; Marsden and Hughes, 1994):\n\n$$\n\\partial_{t}\u2061g_{i\u2062j}=\\nabla_{i}\u2061v_{j}+\\nabla_{j}\u2061v_{i}-2\u2062v_{n}\u2062b_{i\u2062j}.\n$$\n\nHere, \u2207 denotes the covariant derivative operator defined with respect to the embedding metric $g$. The covariant mass continuity equation gives (Arroyo and Desimone, 2009)\n\n$$\n0=\\frac{D\u03c1}{Dt}+\\frac{\u03c1}{2}Tr[g^{\u22121}g\u02d9]=\\frac{D\u03c1}{Dt}+\u03c1\u2207\u22c5v_{\u2225}\u2212\u03c12v_{n}H,\n$$\n\nwhere \u03c1 is the mass density in the physical embedding, and the material derivative is $D\u2062\u03c1/D\u2062t=\\partial_{t}\u2061\u03c1+\u03c1\u2062(\\nabla\u22c5v_{\u2225})+v\u22c5\\nabla\u2061\u03c1$. Incompressibility ($D\u2062\u03c1/D\u2062t=0$) then implies\n\n$$\n2\u2062H\u2062v_{n}=\\nabla\u22c5v_{\u2225}.\n$$\n\n### Minimal ingredients demonstrate geometric interplay between compressibility and shear\n\nA flat, nearly incompressible sheet demonstrates a kinematic coupling between dilatational in-plane flow ($\\nabla\u22c5v_{\u2225}$) and out-of-plane deformation ($2\u2062H\u2062v_{n}$). Contracting such a sheet as in Figure 3\u2014figure supplement 3A leads to out-of-plane bending to preserve surface area of the sheet. This out-of-plane motion leaves cells unchanged in their aspect ratio: no in-plane deformation is necessary.\n\nIf the sheet is curved into a tube (so that mean curvature is nonzero, $|H|>0$), then constricting an sheet (with inward velocity $v_{n}>0$) can generate deformation in the local tangent plane of the sheet. Such incompressibility couples to initial curvature to generate shear deformation. For example, an incompressible sheet of paper glued into a cylinder along one of its edges cannot be squeezed in this fashion without crumpling, folding, or tearing. An elastic sheet, however, can be deformed in this manner even if local areas of material patches are required not to change. In particular, the sheet may stretch along the long axis while constricted circumferentially, such that a circular material patch is transformed into an elliptical patch with the same area, as in Figure 3\u2014figure supplement 3B.\n\nFinally, these two effects are coupled in the case of the pinched cylinder with a localized constriction. In a given snapshot with an existing localized constriction, we can schematically understand the three ingredients by considering the pinched cylinder with a step-wise indentation shown in Figure 3\u2014figure supplement 3C. First, active stresses constrict the neck, decreasing the surface area of the neck (blue) and dilating the interior faces (red). In order to restore the surface area of the cells in the neck, its length may increase, resulting in extension along the long axis of the tube. In tandem, to combat the dilation in the interior faces, cells flow into the constriction from the chambers. Note that if all three steps are instantaneously coupled, the order of events is immaterial to the outcome: contractile surface flows could increase the density of cells in the interior faces, which leads to neck constriction to restore cell density in the faces and results in convergent extension of the neck.\n\nWe note also that when the constriction is broad along the longitude or when the indentation is shallow, the mean curvature will be positive everywhere (cylinder-like, $H>0$). In this case, inward motion of the incompressible tube causes an extensile surface flow ($\u2207\u22c5v_{\u2225}>0$), rather than a contractile one. This is a qualitative difference between broad or uniform constrictions of a tube and localized constrictions such as those seen in the midgut. In principle, we predict a crossover between the two modes of behavior during the very onset of constriction in our system \u2013 from positive to negative divergence as the curvature changes sign. This is a subtle and transient feature, given the large radius of the midgut compared to the small axial length of the constrictions and the non-uniform initial curvature of the midgut before constrictions begin.\n\n### Quantification of tissue shear\n\nWe employ a geometric method of tissue-scale shear quantification that accounts for both the shear due to the changing shape of the gut and the shear due to the material flow of cells along the dynamic surface. The first step is to establish consistent material coordinates for all times \u2013 that is, labels for parcels of tissue that follow those parcels as they move and deform. We prescribe these labels at the onset of the first midgut constriction by endowing the organ\u2019s surface with a planar parameterization, as before. The cut mesh is first conformally mapped into a planar annular domain, ${||x||:r\\leq||x||\\leq1}$, using a custom Ricci flow code included in the TubULAR package (Mitchell and Cislo, 2022). Fixing the outer radius of the annulus to 1, the inner radius $r$ is a conformal invariant that is automatically determined from the geometry of the organ. Taking the logarithm of these intermediate coordinates then defines a rectangular domain, with a branch cut identifying the top and bottom horizontal edges of the domain in such a way the the cylindrical topology of the cut mesh in 3D is fully respected. The coordinates in this domain are taken to be the material (\u2018Lagrangian\u2019) coordinate system, $(\u03b6~,\u03d5~)$. This conformal parameterization is, by construction, isotropic; the metric tensor is diagonal. This parameterization is therefore a suitable reference against which to measure all subsequent accumulation of anisotropy in the tissue. We note that at the reference time t0 (at the onset of the first constriction), the material coordinates are similar to the $(s,\u03d5,t_{0})$ coordinate system defined before, except that the coordinate $s$ measures a proper length on the surface along curves of constant $\u03d5$, while $\u03b6~$ is a coordinate of the conformally mapped planar domain. We chose to use $s$ instead of $\u03b6~$ for visualizations simply because deep constrictions exhibit extreme dilation in a conformal $(\u03b6~,\u03d5~)$ pullback plane, but these are attenuated in an $(s,\u03d5)$ pullback plane (see Mitchell and Cislo, 2022). We stress that all measurements account for the physical embedding of the surface: the coordinate system parameterizing the surface is a tool to define circumferential and longitudinal directions based on the organ\u2019s intrinsic geometry, and the choice of parameterization does not influence the magnitude of tissue deformation.\n\nIn order to recapitulate the material flow of the tissue, these coordinates are advected in the plane along the flow fields extracted using PIV (Thielicke and Stamhuis, 2014; Thielicke and Sonntag, 2021) and then mapped into 3D at each time point. This mapping defines a deformed mesh whose induced metric tensor, $g^{\u2032}\u2261g\u2062(t)$, can be computed relative to the material coordinates. All anisotropy in the mapping is encoded by the complex Beltrami coefficient, $\\mu\u2062(t)$, defined in terms of the components of the time-dependent metric tensor\n\n$$\n\\mu\u2062(t)=\\frac{g_{11}^{\u2032}-g_{22}^{\u2032}+2\u2062i\u2062g_{12}^{\u2032}}{g_{11}^{\u2032}+g_{22}^{\u2032}+2\u2062\\sqrt{g_{11}^{\u2032}\u2062g_{22}^{\u2032}-g12\u20322}}.\n$$\n\nAs illustrated in Figure 3\u2014figure supplement 4B, \u03bc describes how an initially circular infinitesimal patch of tissue is deformed into an elliptical patch under the action of the material mapping. The argument of \u03bc describes the orientation of this ellipse. The magnitude $|\\mu|$ is related to the ratio $K$ of the lengths of the major axis of this ellipse to its minor axis by\n\n$$\nK=\\frac{1+|\\mu|}{1-|\\mu|}.\n$$\n\nWhen $|\\mu|=0$, the material mapping is isotropic \u2013 that is, a circular patch of tissue remains circular under the mapping. Note that $|\\mu|<1$, and therefore \u03bc provides a bounded description of both the magnitude and orientation of material anisotropy in the deforming surface.\n\nThe results of this measurement are shown as a kymograph in Figure 3\u2014figure supplement 4 for a representative dataset. Constrictions begin to appear at times and locations marked by red arrows and continue to deepen. The Beltrami coefficient is averaged along the circumferential direction and plotted at the anterior-posterior position in tissue coordinates at the onset of the middle constriction (the first constriction to appear), so that the deformation of advected tissue patches are compared to their original shape. A single color dominates the kymograph, indicating that the deformation is globally aligned to extend along the local longitudinal axis (and contract along the material frame\u2019s circumferential axis), despite the contorting and complex shape. This is consistent with circumferential muscle orientations defining the axes for convergent extension in the midgut.\n\n### Relative motion between layers\n\nTo characterize relative motion between layers, we tracked 375 endodermal and 81 muscle nuclei in the same w,Hand>GAL4;UAS-Hand:GFP;hist:GFP embryo using a custom manual tracking workflow in MATLAB. Figure 4\u2014figure supplement 1 shows measurements of relative displacement of initially-close nuclei pairs (<5 \u03bcm apart at the onset of the first constriction). Two example tracks are highlighted in yellow and green. Figure 4\u2014figure supplement 2 shows additional statistics of the relative motion over time.\n\n### Optogenetic experiments\n\nThe UAS-CRY2-OCRL and UAS-RhoGEF2 constructs have been previously characterized (Guglielmi et al., 2015; Izquierdo et al., 2018). For optogenetic confocal microscopy experiments, we activated the optogenetic construct with continuous oblique illumination of a 470 nm LED at 6.2\u00b10.1 mW/cm2 power, in addition to periodic illumination with the 488 nm laser used to image the sample. Wild-type embryos developed normally under this illumination ($N=18/19$). Variations by a factor of two in either the LED power or in the 488 nm laser power used to image the GFP channel did not result in differences in phenotype. For light sheet imaging, we illuminated with a 488 nm laser line at 1 mW for 30 s once per minute.\n\nWe quantified the endoderm cell shapes using a similar procedure as before. After deconvolution (Huygens Essential software), we perform 3D segmentation via a morphological snakes level set method on an iLastik pixel classification to carve out an approximate midsurface of the endoderm. We measured the endoderm shape dynamics for two-color y,w,Antp-GAL4;;Gap43 mCherry \u00d7 w;UAS-CIBN::GFP;UAS-mCherry::CRY2-OCRL embryos held under continuous optogenetic activation from oblique illumination of a 470 nm LED at 6.2\u00b10.1 mW/cm2 power as before. For comparison, we additionally measured endoderm shapes in Antp mutant embryos with a membrane marker driven in the midgut endoderm (w,AntpNS+RC3;48Y-GAL4/UAS-CAAX::mCh).\n\nFigure 4\u2014figure supplement 3A shows representative snapshots of this segmentation procedure for a two-color y,w,Antp-GAL4;;Gap43 mCherry \u00d7 w;UAS-CIBN::GFP;UAS-mCherry::CRY2-OCRL embryo before the first constriction and 40 min after the middle constriction began. Circumferential muscle localized near the missing anterior constriction expresses the optogenetic construct (cyan band), while the endoderm is imaged using a ubiquitous membrane marker (grayscale). Image regions masked in semi-transparent gray are the deepest confocal plane acquired, while the rest of the image is a lateral view of the projected data on the segmented organ surface. Segmented endodermal cell polygons are colored by their aspect ratios. Cells are segmented in 2D and then projected into 3D for measurement of their aspect ratios. As shown in Figure 4\u2014figure supplement 3C, there is no significant difference between cell orientations in wild-type (blue), optogenetic mutants (red), and Antp mutants (yellow).\n\n### Wild-type calcium dynamics\n\nWe quantified calcium dynamics using confocal microscopy (Leica SP8) of the live reporter UAS-GCaMP6s driven by either the driver Mef2-GAL4, which is expressed across all muscles in the embryo, or 48Y-GAL4, which is expressed in the embryonic midgut both in endoderm and visceral muscles. Here, we used Mef2-GAL4 as a driver for characterizing anterior and middle constrictions. We used 48Y-GAL4 for the posterior constriction since many fluorescent somatic muscles occlude the line of sight for the posterior constriction under Mef2-GAL4, which complicated the analysis. We found that the two drivers yielded similar quantitative results for the anterior constriction.\n\nTo measure transient calcium activity without bias from variations in ambient fluorescent intensity due to spatially-dependent scattering, we imaged three confocal stacks with 2.5\u20133 \u03bcm step size in rapid succession (9 or 10 s apart) and subtracted subsequent image stacks from each other according to\n\n$$\n\\delta\u2062I\u2261|I_{1}-I_{2}|+|I_{2}-I_{3}|+|I_{1}-I_{3}|,\n$$\n\nwhere $I_{i}=I_{i}\u2062(x,y)$ is the maximum intensity projection (projected across approximately 30 \u03bcm) of the $i^{th}$ stack. Over such short timescales, motion of the midgut is small, but transient flashes of GCaMP6s are unlikely to span more than one acquisition. We then extract coherent features from $\\delta\u2062I$ using a Gaussian blur followed by a tophat filter, and sum the resulting signal along the circumferential direction. This defines our measure of GCaMP activity. For Figure 5B and C, we report the raw background-subtracted signal for each frame and its integral over time.\n\nWhile we interrogated GCaMP6s activity using many views of the gut, the quantification used three standardized views. For the anterior constriction, we used a dorsal view, since out-of-plane effects are smallest on the dorsal side and since the midgut is nearest to the surface on the dorsal side. For the middle constriction, we used ventrolateral views since there is a line of sight with fewer other muscles driven by Mef2-GAL4 from this view. For the posterior constriction, we used a left lateral view for quantification.\n\nTo time-align the GCaMP experiments of the anterior and middle constrictions, we defined $t=0$ as the first timestamp in which the constriction under observation showed localized bending along the longitudinal (AP) axis. For characterization of calcium dynamics at the posterior constriction, we defined the onset of constriction by the ventral side of the gut visceral muscle having moved dorsally by \u223c10 \u03bcm.\n\nFigure 5\u2014figure supplement 1 shows kymographs of GCaMP6s dynamics averaged across biological repeats. In these kymographs, activity begins near the time when constrictions begin.\n\n### Calcium activity in Antp mutants\n\nFigure 5\u2014figure supplement 2 shows delayed and suppressed GCaMP activity in Antp mutants compared to the wild-type behavior of sibling embryos that are not homozygous mutants for Antp. To compare calcium activity in Antp mutants against wild-type dynamics, we computed p values using a $z$-score measuring the difference between Antp heterozygotes (controls) and Antp homozygotes (mutants) as\n\n$$\nZ=\\frac{\\delta\u2062I\u00af_{mutant}-\\delta\u2062I\u00af_{control}}{\\sqrt{s_{control}^{2}/n_{control}+s_{mutant}^{2}/n_{mutant}}},\n$$\n\nwhere $\\delta\u2062I\u00af$ is the sample mean, $s_{control}$ and $s_{mutant}$ are the sample standard deviations, and $n_{control}$ and $n_{mutant}$ are the sample sizes. This score gives a single-sided p value via\n\n$$\np=\\frac{1}{2}\u2062erfc\u2062(-Z/\\sqrt{2}),\n$$\n\nwhere erfc is the complementary error function.\n\nTo quantify the difference in overall activity between mutants and heterozygotes, we first estimate the expected fluorescent intensity for a given embryo under the null hypothesis that all embryos, whether mutant or not, will have similar GCaMP6s activity. Since embryos vary in opacity, we normalized each heterozygous embryo according to a value dependent on its background fluorescent intensity measured in regions within the embryo but far (45\u201350 \u03bcm) from the site of the putative constriction. The observed maximum fluorescent activity $\\delta\u2062I$ correlated with this background signal with a correlation coefficient of 78% and a mean signal-to-background ratio of 5.1\u00b10.5. We then normalized each embryo\u2019s time-averaged $\\delta\u2062I=\\delta\u2062I\u2062(x)$ as\n\n$$\n\\delta\u2062I\u2192\\frac{\\delta\u2062I-\\delta\u2062I_{bg}}{\\delta\u2062I_{max}-\\delta\u2062I_{bg}}.\n$$\n\nThis enabled us to reduce the confounding influence of variation in optical density between embryos in the mutant analysis, so we could compare absolute $\\delta\u2062I$ curves rather than only their variation along the anterior-posterior axis.\n\n### MLCK RNAi and SERCA mutant analysis\n\nTo drive expression of MLCK RNAi or a dominant negative allele of SERCA, we administered heat shock by abruptly raising the temperature to 37\u00b0 C using a stage-top incuabator (Okolab) and observing embryos staged such that they had not yet completed gut closure at the initiation of heatshock. The standard errors in the probabilities of successful constrictions are given by\n\n$$\nS\u2062E=\\sqrt{\\frac{p^\u2062(1-p^)}{N}},\n$$\n\nwhere $p^$ is the observed frequency of forming all three constrictions and $N$ is the number of samples of a given genotype (for ex, Mef2-GAL4 \u00d7 UAS-SERCA.R751Q.tdTomato) measured in the experimental heat shock conditions. We note that the result is not sensitive to the details of the analysis. For example, we also computed the mean number of folds formed \u2013 that is, the number of deep constrictions \u2013 for each condition and compare the two distributions, as shown in Figure 5\u2014figure supplement 4A and B. The mean number of folds formed was reduced in both Mef2-GAL4 \u00d7 UAS-SERCA.R751Q embryos and tub67-GAL4;tub16-GAL4 \u00d7 UAS MLCK RNAi embryos ($p=3\\times10^{-8}$ and $p=0.002$, respectively).\n",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "40fb7917-f0cb-4135-87f5-846c9622ecf6",
+      "submission_id": "ecb3e8c7-9f2e-4fec-a3b4-fe9077ef3c64",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michel Bagnat, https://ror.org/00py81415 Duke University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.77355.sa0](https://doi.org/10.7554/eLife.77355.sa0)\n\nUsing state-of-the-art light sheet microscopy and novel image analyses, this study shows how genetically encoded contractions of the visceral muscle shape morphogenesis of the Drosophila midgut via mechanical coupling. Muscle contractions induce cell shape changes that cause convergence and extension of the gut epithelium, which folds due to its incompressible nature. Thus, this work defines novel mechanisms of convergence and extension and tissue folding via the interaction of a genetic program with physical processes.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Michel Bagnat, https://ror.org/00py81415 Duke University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.77355.sa1](https://doi.org/10.7554/eLife.77355.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Visceral organ morphogenesis via calcium-patterned muscle constrictions\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Didier Stainier as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nAll reviewers agree this is a highly interesting and technically sophisticated study that represents a significant advance for the field both conceptually and technically. While the conclusions are well supported by experimental data, the reviewers point out several points that need to be elaborated further with text changes or that need to be discussed. They also pointed out one instance in which analysis of existing data could improve the manuscript and made some suggestions that the authors should consider as well. Also included in the critiques below is a list detailing minor corrections that need attention.\n\nEssential revisions:\n\nAnalysis of existing data:\n\n1. The images in Figure 2B show that cells in the future-fold region had a more elongated shape than cells in the adjacent region at the initial developmental stage. I wonder if there is a correlation between cellular deformation and the determination of the fold position. This can be addressed by analyzing cells in the future-fold region and adjacent region separately (Figure 2C-E). Figure 2F may be modified or removed if spatial inhomogeneity in the cellular deformation is detected by the analysis suggested above.\n\nDiscussion points:\n\n2. The authors demonstrated that dilatational flows are accommodated with out-of-plane deformation to preserve the cell areas. However, it is not a priori clear that such local constrictions lead to convergent extension. In principle, the local constrictions and dilatational flows could also lead to the shortening of the tube. Authors should provide additional explanations as to what causes the convergent extension.\n\n3. Endodermal cells are shown to change shape and flow, but do they exchange neighbors? The contribution of (or lack of) neighbor exchanges to endodermal shape change should be discussed as this is the primary mechanism by which we know epithelial tissues to converge and extend. Specifically, In Line 169: \"As shown in Figure 3H-I, cell segmentation of the endoderm during optogenetic inhibition of muscle contraction in the Antp domain reveals nearly constant aspect ratios: the endoderm cells near the Antp domain undergo reduced convergent extension when muscle contraction is locally disrupted.\" Are the authors equating cell aspect ratio change as a change in convergent extension? Providing clear definitions for cell and tissue-scale behaviors in the main text would be helpful.\n\n4. In Eq. (6) the out-of-plane deformation is related to the divergence of the total velocity. However, for the data analysis authors equated the out-of-plane deformation to the divergence of the tangent component of the velocity. What is the reason for this difference?\n\n5. The novel computational framework called 'TubULAR' in Ref. 6 of the supporting information is not publicly available. Details of the computational framework should either be posted on the public preprint or included in this manuscript.\n\nSuggestions:\n\n6. The manuscript is very compact, and many aspects and methods are not fully explained in the main text, please consider decompressing the narrative and moving some of the key methods and associated figures to the main text.\n\n7. Quantifying the cellular deformation and Ca++ spikes in unaffected folds in mutant embryos and/or optogenetically manipulated embryos will further support the claim that Hox codes spatially restrict muscle constriction and resultant endodermal cell shape changes, leading to folding of the midgut.\n",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d244a4cc-9a82-4cf5-9272-4db09ef6edb1",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C1",
+      "claim": "The embryonic midgut of Drosophila is composed of muscle cells ensheathing an endodermal layer, linked by extracellular matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "The embryonic midgut \u2013 composed of muscle cells ensheathing an endodermal layer, linked by extracellular matrix (Figure 1A) \u2013 offers a system in which we can overcome these challenges and probe in toto organ dynamics across tissue layers at sub-cellular resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement describing the anatomical composition of the embryonic midgut.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "748d29ae-414b-4ec4-bcff-dd059bc1d2bc",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C2",
+      "claim": "Hox genes expressed in the muscle layer are required for the midgut to form its four chambers.",
+      "claim_type": "EXPLICIT",
+      "source": "Hox genes expressed in the muscle layer are required for the midgut to form its four chambers, but the mechanism by which genetic expression patterns are translated into tissue deformation, and in turn to organ shape, remains unclear (Figure 1B\u2013C; Bienz, 1996; Hoppler and Bienz, 1994; Wolfstetter et al., 2009; Bienz and Tremml, 1988; Immergl\u00fcck et al., 1990; Reuter and Scott, 1990; Panganiban et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "8fd5b556-771a-4ce4-8d1a-815fb985c0d0",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C3",
+      "claim": "Dynamic, high-frequency calcium pulses drive patterned muscle contraction, inducing convergent extension in the endoderm to sculpt stereotyped folds.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that dynamic, high-frequency calcium pulses drive patterned muscle contraction, inducing convergent extension in the endoderm to sculpt stereotyped folds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding statement summarizing the main discovery of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "e9797a6c-2d11-4577-9563-bb4b19e5645b",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C4",
+      "claim": "The midgut is a closed tube by stage 15 of embryonic development, residing 20\u201360 \u03bcm below the embryo surface.",
+      "claim_type": "EXPLICIT",
+      "source": "The midgut is a closed tube by stage 15 of embryonic development, residing 20\u201360 \u03bcm below the embryo surface (Bate and Martinez Arias, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "818b7392-5a87-4a7b-ba02-15399e62d236",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C5",
+      "claim": "The organ first constricts halfway along its length, then constricts again to subdivide into four chambers.",
+      "claim_type": "EXPLICIT",
+      "source": "The organ first constricts halfway along its length, then constricts again to subdivide into four chambers (Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by reference to Video 1 showing the developmental process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "ade1754d-0d1e-4d50-9ea1-28f2ab9fd14d",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C6",
+      "claim": "Within 75\u201390 min after the onset of the first fold, the constrictions are fully formed, and the organ beings to adopt a contorted shape.",
+      "claim_type": "EXPLICIT",
+      "source": "Within 75\u201390 min after the onset of the first fold, the constrictions are fully formed, and the organ beings to adopt a contorted shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a temporal observation from the study's data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "75627a1e-2f7b-4a11-b73c-537f31f3acc0",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C7",
+      "claim": "The surface area of the midgut grows by approximately 30% during folding (stages 15-16a).",
+      "claim_type": "EXPLICIT",
+      "source": "We find that gut morphogenesis is stereotyped and exhibits reproducible stages (Figure 1E). The surface area grows by \u223c30% during folding (stages 15-16a) and remains constant by the time constrictions are fully formed (16b), despite continued shape change.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative measurements shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "f3331958-0573-4f03-aa2e-7057c38b85ce",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C8",
+      "claim": "The enclosed volume within the midgut decreases only gradually during morphogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The enclosed volume within the midgut decreases only gradually during this process, while the effective length of the organ \u2013 the length along its curving centerline \u2013 triples (Figure 1E, Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by measurements shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "afcd0575-2bc3-4a9a-a648-c5c685e5faf3",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C9",
+      "claim": "The effective length of the organ triples during morphogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The enclosed volume within the midgut decreases only gradually during this process, while the effective length of the organ \u2013 the length along its curving centerline \u2013 triples (Figure 1E, Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by measurements shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "04755d1c-c64a-49f1-b3f2-2ea7e229ee58",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C11",
+      "claim": "As constrictions develop, endodermal cells lose their anisotropy and even become elongated along the AP axis in posterior regions.",
+      "claim_type": "EXPLICIT",
+      "source": "As constrictions develop, cells loose this anisotropy and even become elongated along the AP axis in posterior regions (Figure 2B, C, Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by cell shape measurements shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "69b76a5c-25f4-4bb1-a234-9a4e8fd077b8",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C12",
+      "claim": "Cell shape change is not due to rotations of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Measurement of endodermal cell orientations reveal that this effect is not due to rotations (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by orientation measurements shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "8058a861-e7da-4bdb-953c-b3e9c3c31609",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C13",
+      "claim": "Cell areas in the endoderm change only gradually during morphogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the large changes in aspect ratio, cell areas in the endoderm change only gradually (Figure 2E), such that cells converge along the circumferential axis while extending along the folding longitudinal axis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by single-cell tracking data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "644b473e-6b80-4489-8d9c-7ead39c3866d",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C14",
+      "claim": "There are no signs of cell division during midgut morphogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we find no signs of cell division during this process, confirming previous observations (Campos-Ortega and Hartenstein, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the authors' observations and a citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "ad68051c-f800-4a2b-9362-c34558cedc34",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C15",
+      "claim": "Cell intercalations are not significantly biased in orientation during early stages of constriction.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, although tracking quartets of cells in the anterior midgut revealed widespread intercalations (also called T1 transitions), the orientations of these events were not significantly biased for the early stages of constriction (Figure 2\u2014figure supplement 3 and Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by cell tracking data shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "190cac88-a5a0-40ff-a0d0-63c9389514fd",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C16",
+      "claim": "Anisotropic cell shape change may be the primary contributor to tissue-scale shape change.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that anisotropic cell shape change may be the primary contributor to tissue-scale shape change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the absence of cell divisions and unbiased intercalations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "c5b59d6b-b384-460f-915d-f1b09054ea3d",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C17",
+      "claim": "The midgut tissue is thin compared to the organ radius.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the midgut tissue is thin compared to the organ radius, cells exert forces on one another primarily through in-plane interactions, but in-plane mechanical stress can couple to curvature to generate out-of-plane motion (Arroyo and Desimone, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a geometric observation about the tissue structure, with a citation to theoretical work.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "5f550270-5041-4fbc-b433-432e41e5a95a",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C18",
+      "claim": "In-plane mechanical stress can couple to curvature to generate out-of-plane motion.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the midgut tissue is thin compared to the organ radius, cells exert forces on one another primarily through in-plane interactions, but in-plane mechanical stress can couple to curvature to generate out-of-plane motion (Arroyo and Desimone, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "0a303291-8d76-4578-abff-f155dd5fedf6",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C19",
+      "claim": "The pattern of out-of-plane deformation almost entirely accounts for in-plane dilatational motion in the gut.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, we find that the pattern of out-of-plane deformation almost entirely accounts for in-plane dilatational motion in the gut, with only a small change in local tissue areas (Video 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by velocity measurements shown in Video 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "6dae0f62-3f25-4b2f-8479-7f05219e3839",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C20",
+      "claim": "In-plane divergence and out-of-plane deformation are correlated at the 97% level.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3B, these terms match with 97% correlation, leaving a residual in-plane growth residue at the level of \u223c1% per minute.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative correlation analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "7ffeeaf3-ec7e-4604-91e4-3b9027aa8862",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C21",
+      "claim": "The tissue behaves as an incompressible medium.",
+      "claim_type": "EXPLICIT",
+      "source": "This tight link suggests that the tissue behaves as an incompressible medium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the tight correlation between out-of-plane and in-plane motion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "d47c1c17-8e54-4d57-bdb6-3be89fc7596b",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C22",
+      "claim": "Slow residual area growth is primarily concentrated in the lobes of rounding gut chambers.",
+      "claim_type": "EXPLICIT",
+      "source": "This slow residual area growth, which is primarily concentrated in the lobes of rounding gut chambers, accounts for the surface area growth noted in Figure 1E and the cellular area growth in Figure 2E.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation linking different measurements in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "e487a80e-d32a-485f-bd5d-fdd13a4c10d6",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C23",
+      "claim": "Embryos with disrupted muscle structure fail to fold.",
+      "claim_type": "EXPLICIT",
+      "source": "It is known that embryos with either disrupted muscle or endoderm structure fail to fold (Bilder and Scott, 1995; Singer et al., 1996; Wolfstetter et al., 2009; Wolfstetter et al., 2017), as do embryos lacking integrins linking the two layers (Devenport and Brown, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "6707fbb1-47ad-4fa9-83eb-48b4244a1b53",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C24",
+      "claim": "Embryos with disrupted endoderm structure fail to fold.",
+      "claim_type": "EXPLICIT",
+      "source": "It is known that embryos with either disrupted muscle or endoderm structure fail to fold (Bilder and Scott, 1995; Singer et al., 1996; Wolfstetter et al., 2009; Wolfstetter et al., 2017), as do embryos lacking integrins linking the two layers (Devenport and Brown, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "4b2b3dd8-bdb9-4355-aa86-e2ca892e5c9e",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C25",
+      "claim": "Embryos lacking integrins linking muscle and endoderm layers fail to fold.",
+      "claim_type": "EXPLICIT",
+      "source": "It is known that embryos with either disrupted muscle or endoderm structure fail to fold (Bilder and Scott, 1995; Singer et al., 1996; Wolfstetter et al., 2009; Wolfstetter et al., 2017), as do embryos lacking integrins linking the two layers (Devenport and Brown, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "24c9ec19-8f89-494d-87dc-3a417090c1d4",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C26",
+      "claim": "Gut morphogenesis requires an interaction between muscle and endodermal layers.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that gut morphogenesis requires an interaction between muscle and endodermal layers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the cited studies showing that disruption of either layer or their connection prevents folding.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "c19a0232-3170-4d9c-80d8-74d7cc5390a3",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C27",
+      "claim": "Hox genes are expressed exclusively in the muscle layer.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, hox genes \u2013 which are expressed exclusively in the muscle layer \u2013 have been linked to the successful formation of specific folds (Figure 4A\u2013B; Tremml and Bienz, 1989).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by a citation and reference to Figure 4.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "5dd66b20-0601-463b-890d-e0af497059e4",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C28",
+      "claim": "Antp mutants lack the anterior constriction.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, Antp mutants lack the anterior constriction lying near the center of the Antp domain (Figure 4C), while Ubx mutants lack the middle constriction lying at the posterior edge of the Ubx domain (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by observations shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "2fea764f-8dc2-4512-94f0-56af850a8983",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C29",
+      "claim": "Ubx mutants lack the middle constriction.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, Antp mutants lack the anterior constriction lying near the center of the Antp domain (Figure 4C), while Ubx mutants lack the middle constriction lying at the posterior edge of the Ubx domain (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by observations shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "8cef1ea4-77e9-42f9-8da8-51ec0c885ed9",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C30",
+      "claim": "Genetic patterning of the endoderm occurs via genetic patterning from the muscle layer.",
+      "claim_type": "EXPLICIT",
+      "source": "In this system, genetic patterning of the endoderm occurs via genetic patterning from the muscle layer (Bienz, 1996; Mendoza-Garcia et al., 2021), so it is possible that constrictions result from a genetic induction process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "bb0915ad-6848-47ba-95c8-76a1fbedf3ac",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C31",
+      "claim": "Muscle and endoderm layers move together, with initially close nuclei separating by approximately 5 \u03bcm per hour.",
+      "claim_type": "EXPLICIT",
+      "source": "By tracking both circumferential muscle nuclei and endoderm nuclei in the same embryo, we find that these two layers move together, with initially close nuclei separating by \u223c5 \u03bcm per hour (Figure 4E\u2013F, Video 6, Figure 4\u2014figure supplement 1, and Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by tracking data shown in Figure 4E-F and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "bb1a1259-b227-4948-bde9-668f3004cdc9",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C32",
+      "claim": "The two layers are tightly tethered by integrins and extracellular matrix binding the heterologous layers.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is consistent with the notion that the two layers are tightly tethered by the integrins and extracellular matrix binding the heterologous layers (Devenport and Brown, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed tight coupling, supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "fbd878c0-9db8-4d32-9ded-1778507e5121",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C33",
+      "claim": "Optogenetic inhibition of muscle contractility using CRY2-OCRL driven by Antp-GAL4 reliably prevented anterior constrictions.",
+      "claim_type": "EXPLICIT",
+      "source": "Driving CRY2-OCRL with Antp-GAL4 under continuous activation of blue light reliably prevented anterior constrictions (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by optogenetic experiments shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "1028bef2-1aa7-4e75-ba4c-34465996d395",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C34",
+      "claim": "Driving CIBN and CRY2-OCRL under continuous blue light activation in muscle regions posterior to the anterior fold using Ubx-GAL4 M1 locally inhibited constriction dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, driving CIBN and CRY2-OCRL under continuous blue light activation in muscle regions posterior to the anterior fold using Ubx-GAL4 M1 locally inhibited constriction dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "ad402570-ad6c-458c-8bee-47ffbd9a119f",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C35",
+      "claim": "Inhibiting contraction in selected regions mimics the genetic mutants known to remove folds.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibiting contraction in selected regions therefore mimics the genetic mutants known to remove folds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the similarity of optogenetic and genetic mutant phenotypes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "dd834000-0f77-4e95-8d3b-33532dc8453e",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C36",
+      "claim": "Optogenetic activation using the CIBN UAS-RhoGEF2 system in the Antp region generates an anterior fold on demand on the timescale of a few minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, optogenetic activation using the CIBN UAS-RhoGEF2 system in the Antp region generates an anterior fold on demand on the timescale of a few minutes, even if induced long before the constriction would normally begin (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by optogenetic experiments shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "6c018e4e-668a-427b-be20-b9f2d193f1f7",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C37",
+      "claim": "Activation of the Ubx-GAL4 M1 domain results in a nearly uniform constriction that dramatically alters the shape of the organ.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, activation of the Ubx-GAL4 M1 domain results in a nearly uniform constriction that dramatically alters the shape of the organ, forcing the yolk to flow into the anterior chamber.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "99c753fd-c465-456c-9391-767881642b11",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C39",
+      "claim": "Muscle contractility is necessary for constrictions.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that muscle contractility is necessary for constrictions and inducing contraction and the associated downstream behaviors is sufficient to generate folds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the optogenetic experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "44420540-9918-4d11-a46a-19d7aed74e7c",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C40",
+      "claim": "Inducing muscle contraction is sufficient to generate folds.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that muscle contractility is necessary for constrictions and inducing contraction and the associated downstream behaviors is sufficient to generate folds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the optogenetic experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "c94eba02-d330-475e-b833-276c41cb9189",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C41",
+      "claim": "Optogenetic inhibition of muscle contractility significantly reduced endodermal cell shape change.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to wild-type, optogenetic inhibition of muscle contractility significantly reduced endodermal cell shape change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "d1977ac2-c277-4773-a967-57ba7fd0f1ed",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C44",
+      "claim": "The endodermal program of convergent extension is induced by mechanical interaction with the contracting muscle layer.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the endodermal program of convergent extension is induced by mechanical interaction with the contracting muscle layer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the optogenetic and mutant experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "6d689ae6-cf4f-439b-8ecf-25fbc9ef0788",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C45",
+      "claim": "Calcium signaling triggers muscle contractions in a wide range of contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have shown that calcium signaling triggers muscle contractions in a wide range of contexts (Kuo and Ehrlich, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "5a066d16-62fa-4cd2-99cc-b85d305dafac",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C46",
+      "claim": "Dynamic calcium pulses appear in the muscle layer in regions localized near all three midgut constrictions.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 5A\u2013E and Video 7, dynamic calcium pulses appear in the muscle layer in regions localized near all three midgut constrictions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by GCaMP6s imaging data shown in Figure 5 and Video 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "60bc5618-1a12-4981-b3cd-344a9d02da97",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C47",
+      "claim": "Calcium pulses are patterned in time, appearing only at the onset of constriction for each fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, these calcium pulses are patterned in time, appearing only at the onset of constriction for each fold (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by temporal analysis shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "78dd86cf-78d9-441d-96f1-f1d48113829c",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C48",
+      "claim": "In Antp mutants, calcium activity was almost entirely absent during stages 15\u201316.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 5F, we found that calcium activity was almost entirely absent during stages 15\u201316.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by GCaMP6s measurements in Antp mutants shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "ad66375c-f888-4bab-9535-59a74601307c",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C50",
+      "claim": "Calcium pulses continue to appear at the anterior constriction in Ubx mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, calcium pulses continue to appear at the anterior constriction in Ubx mutants, suggesting local control of calcium pulses by Antp in the anterior constriction (Figure 5\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by GCaMP6s measurements in Ubx mutants shown in Figure 5\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "b6a76370-13c8-46b9-9981-b642cea8070f",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C51",
+      "claim": "The hox gene Antp is upstream of dynamic calcium pulses.",
+      "claim_type": "EXPLICIT",
+      "source": "The hox gene Antp is therefore upstream of dynamic calcium pulses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the observation that Antp mutants lack calcium pulses.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "2d5e656b-f8c0-4b28-b2c1-b101bdb5a750",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C52",
+      "claim": "In smooth muscle cells, calcium triggers muscle contraction by binding to calmodulin, which in turn binds to myosin light chain kinase (MLCK) to trigger myosin light chain phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "In smooth muscle cells, calcium is known to trigger muscle contraction by binding to calmodulin, which in turn binds to myosin light chain kinase (MLCK) to trigger myosin light chain phosphorylation (Hill-Eubanks et al., 2011), and cytoplasmic calcium is transported from the cytosol into the sarcoplasmic reticulum for storage under regulation of SERCA (Kuo and Ehrlich, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research on calcium signaling mechanisms.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "ea6a497a-be35-41d0-af62-d83b1f70105a",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C53",
+      "claim": "Cytoplasmic calcium is transported from the cytosol into the sarcoplasmic reticulum for storage under regulation of SERCA.",
+      "claim_type": "EXPLICIT",
+      "source": "In smooth muscle cells, calcium is known to trigger muscle contraction by binding to calmodulin, which in turn binds to myosin light chain kinase (MLCK) to trigger myosin light chain phosphorylation (Hill-Eubanks et al., 2011), and cytoplasmic calcium is transported from the cytosol into the sarcoplasmic reticulum for storage under regulation of SERCA (Kuo and Ehrlich, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research on calcium regulation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "8a367020-612e-43d7-81c5-4c2adf0ddef5",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C56",
+      "claim": "Spatially localized calcium dynamics \u2013 under the control of hox gene patterning \u2013 triggers MLCK signaling leading to muscle contractions.",
+      "claim_type": "EXPLICIT",
+      "source": "From this we infer that spatially localized calcium dynamics \u2013 under the control of hox gene patterning \u2013 triggers MLCK signaling leading to muscle contractions (Figure 5H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion based on the genetic, optogenetic, and calcium imaging experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "3a0a6c6b-ca21-4d19-ad2b-9e451c3f16d2",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C57",
+      "claim": "Convergent extension and sharp folds in the endodermal layer are triggered by mechanical interaction of muscle contractility together with tissue incompressibility.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that convergent extension and sharp folds in the endodermal layer are triggered by mechanical interaction of muscle contractility together with tissue incompressibility, and patterns of calcium signaling regulate contractility in muscle cells according to hox-specified information (Figure 5H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary statement of the main findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "7b767e60-a673-4b63-823b-944e1087c35d",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C58",
+      "claim": "Patterns of calcium signaling regulate contractility in muscle cells according to hox-specified information.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that convergent extension and sharp folds in the endodermal layer are triggered by mechanical interaction of muscle contractility together with tissue incompressibility, and patterns of calcium signaling regulate contractility in muscle cells according to hox-specified information (Figure 5H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary statement of the main findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "a7b3f1bb-5a5d-4dcc-963c-1c90dfb307b4",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C59",
+      "claim": "Calcium dynamics have known roles in early developmental stages of diverse organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "While calcium dynamics have known roles in early developmental stages of diverse organisms (Wallingford et al., 2001; Strutt, 2003; Li et al., 2019; Brodskiy et al., 2019) \u2013 including influencing the organization of muscle fibers in the midgut (Huycke et al., 2019) and determining cell fates in heart valves (Fukui et al., 2021) \u2013 our findings suggest a direct influence of calcium on shape, wherein pulses trigger a program of irreversible tissue deformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "1ca3b8bc-c7a6-4fbb-9e23-6bf05f799f72",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C60",
+      "claim": "Calcium dynamics influence the organization of muscle fibers in the midgut.",
+      "claim_type": "EXPLICIT",
+      "source": "While calcium dynamics have known roles in early developmental stages of diverse organisms (Wallingford et al., 2001; Strutt, 2003; Li et al., 2019; Brodskiy et al., 2019) \u2013 including influencing the organization of muscle fibers in the midgut (Huycke et al., 2019) and determining cell fates in heart valves (Fukui et al., 2021) \u2013 our findings suggest a direct influence of calcium on shape, wherein pulses trigger a program of irreversible tissue deformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "bbea2a93-ef6b-46d1-9a1a-0cf4ae2da829",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C61",
+      "claim": "Calcium dynamics determine cell fates in heart valves.",
+      "claim_type": "EXPLICIT",
+      "source": "While calcium dynamics have known roles in early developmental stages of diverse organisms (Wallingford et al., 2001; Strutt, 2003; Li et al., 2019; Brodskiy et al., 2019) \u2013 including influencing the organization of muscle fibers in the midgut (Huycke et al., 2019) and determining cell fates in heart valves (Fukui et al., 2021) \u2013 our findings suggest a direct influence of calcium on shape, wherein pulses trigger a program of irreversible tissue deformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "e24cc5f0-2d72-4b5f-a3df-3c30120349ac",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C62",
+      "claim": "Calcium pulses trigger a program of irreversible tissue deformation.",
+      "claim_type": "EXPLICIT",
+      "source": "While calcium dynamics have known roles in early developmental stages of diverse organisms (Wallingford et al., 2001; Strutt, 2003; Li et al., 2019; Brodskiy et al., 2019) \u2013 including influencing the organization of muscle fibers in the midgut (Huycke et al., 2019) and determining cell fates in heart valves (Fukui et al., 2021) \u2013 our findings suggest a direct influence of calcium on shape, wherein pulses trigger a program of irreversible tissue deformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "cfa0dfee-51e6-4596-ad00-f0e990175ab6",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C63",
+      "claim": "Calcium-patterned muscle contractions control 3D shape through a mechanical cascade across tissue layers.",
+      "claim_type": "EXPLICIT",
+      "source": "These calcium-patterned muscle contractions control 3D shape through a mechanical cascade across tissue layers, with broad relevance to tissue engineering and organ morphogenesis in other organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the findings and their implications.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "585e7e46-c27a-48fc-9037-1815709133ed",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "claim_id": "C64",
+      "claim": "The anterior fold forms near the center of the Antp domain.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the anterior fold forms near the center of the Antp domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "de471d1d-f5a9-45cb-a290-95b526980f36",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The Drosophila embryonic midgut is a bilayer organ composed of muscle and endoderm that undergoes stereotyped morphogenesis, forming four chambers through sequential constrictions over 75-90 minutes, with surface area increasing ~30%, volume decreasing gradually, and effective length tripling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C9 provide converging anatomical, temporal, and quantitative evidence for midgut morphogenesis. The anatomical description (C1, C4) is supported by citations and imaging data. The temporal sequence (C5, C6) and quantitative measurements (C7-C9) are supported by Figure 1E and Video 1, providing robust characterization of the developmental process.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "df4cb0d5-131f-4add-b545-bbf8e8d732e5",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Endodermal cells undergo anisotropic shape change during morphogenesis, transitioning from circumferentially elongated (aspect ratio >2) to isotropic or AP-elongated shapes without cell rotation, division, or biased intercalations at early stages, suggesting cell shape change is the primary driver of tissue-scale deformation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C16 are well-supported by cell segmentation and tracking data (Figure 2, Figure 2\u2014figure supplements 2-3, Video 3). The absence of cell divisions (C14) is confirmed by observation and citation. The lack of biased intercalations at early stages (C15) is quantified in Figure 2\u2014figure supplement 3. The inference that cell shape change is the primary contributor (C16) logically follows from the exclusion of other mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "a7d40e4e-8909-4777-b995-2e5c468d2fce",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The midgut tissue behaves as nearly incompressible, with out-of-plane deformation and in-plane dilatational flow correlated at 97%, leaving only ~1% per minute residual area growth concentrated in chamber lobes, demonstrating tight coupling between curvature and tissue flow.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C22 are strongly supported by quantitative velocity measurements (Figure 3A-B, Videos 4-5, Figure 3\u2014figure supplement 1). The 97% correlation (C20) is directly measured and reported with statistical analysis across multiple embryos (N=3, 320 tissue patches per minute). The geometric reasoning (C17-C18) is supported by citation to theoretical work. The inference of incompressibility (C21) is well-justified by the tight correlation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "bf58bea6-9b8a-4efa-bfbb-cc3093a1f14f",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Gut morphogenesis requires interaction between muscle and endoderm layers, with Hox genes (Antp, Ubx) expressed exclusively in muscle controlling formation of specific constrictions, as demonstrated by mutant phenotypes lacking corresponding folds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C30 are well-supported by multiple citations to prior work (C23-C25, C27, C30) and new observations of mutant phenotypes (C28-C29, Figure 4C-D). The requirement for both layers and their connection is established by cited literature. The exclusive muscle expression of Hox genes (C27) and their role in fold formation (C28-C29) are directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "88fbc041-ceff-4a27-8e98-7dc84c497cd9",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Muscle and endoderm layers move together during morphogenesis, with initially close nuclei separating by only ~5 \u03bcm per hour, consistent with tight tethering by integrins and extracellular matrix.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C32 are supported by dual-layer tracking experiments (Figure 4E-F, Video 6, Figure 4\u2014figure supplements 1-2) showing modest relative motion between layers. The inference of tight tethering (C32) is reasonable given the small separation rate and is supported by citation to prior work on integrin function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "7432b712-4e5a-46bd-a9da-5f2e6db5ef13",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Muscle contractility is both necessary and sufficient for midgut constrictions, as demonstrated by optogenetic inhibition (CRY2-OCRL) preventing folds and optogenetic activation (CRY2-RhoGEF2) inducing ectopic folds on demand within minutes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C40 are strongly supported by optogenetic experiments (Figure 4G). Inhibition experiments (C33-C34) reliably prevent constrictions and mimic genetic mutants (C35). Activation experiments (C36-C37) induce folds on demand, even prematurely. The necessity and sufficiency conclusions (C39-C40) are well-justified by these bidirectional perturbations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "27133b57-8159-4cc7-8e86-4123c50f5e51",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Optogenetic inhibition of muscle contractility significantly reduces endodermal cell shape change, demonstrating that the endodermal convergent extension program is mechanically induced by the contracting muscle layer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41 and C44 are supported by cell segmentation analysis of optogenetically perturbed embryos (Figure 4H-I, Figure 4\u2014figure supplement 3). The reduction in cell shape change is statistically significant (p=1\u00d710^-22). Similar reduction in Antp mutants (p=4\u00d710^-9) provides additional support. The mechanical induction conclusion (C44) is a reasonable inference from these data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "ab0b3f1d-6ee6-4c79-ae4e-af3b11c759bd",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Dynamic calcium pulses appear in muscle cells localized near all three constrictions and temporally patterned to constriction onset, with Antp mutants showing almost no calcium activity, demonstrating that Hox gene Antp is upstream of calcium dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C51 are well-supported by GCaMP6s imaging (Figure 5A-F, Video 7, Figure 5\u2014figure supplements 1-3). Spatial and temporal localization (C46-C47) is demonstrated across multiple embryos. The absence of calcium activity in Antp mutants (C48, p=2\u00d710^-8) strongly supports the upstream role of Antp (C51). The persistence of anterior calcium pulses in Ubx mutants (C50) supports local control.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "026769eb-4e14-4fa7-a250-4b7e507032df",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Spatially localized calcium dynamics, under Hox gene control, trigger MLCK signaling leading to muscle contractions through the canonical calcium-calmodulin-MLCK pathway regulating myosin light chain phosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 describe established mechanisms supported by citations to prior research. Claim C56 integrates these mechanisms with the study's findings on Hox genes and calcium dynamics. The inference is well-supported by the combination of calcium imaging, genetic perturbations, and functional knockdowns (Figure 5G, Figure 5\u2014figure supplement 4).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "a570fd5a-9047-48a4-9b0b-69ecde0ce4d8",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The complete mechanistic pathway connects Hox gene patterning to calcium signaling to muscle contraction to mechanical induction of endodermal convergent extension, ultimately sculpting organ shape through a mechanical cascade across tissue layers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C57-C58, C62-C63 represent the integrated model synthesizing all major findings. This synthesis is well-supported by the convergence of genetic (Hox mutants), optogenetic (muscle perturbations), calcium imaging, cell shape analysis, and tissue mechanics data. Each link in the pathway is independently validated, making the overall model robust.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "63d74685-2cea-45b5-a82b-4d042942d75a",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Hox genes expressed in the muscle layer are required for the midgut to form its four chambers, though the mechanism remained unclear prior to this study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C2 accurately summarizes prior knowledge supported by multiple citations. This establishes the context and motivation for the current study. The claim appropriately acknowledges the gap in mechanistic understanding that the study addresses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "0856eee9-aaa8-4731-b89c-fe1973d9ec4f",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Calcium dynamics have known roles in early development across diverse organisms, including muscle fiber organization in the midgut and cell fate determination in heart valves.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 accurately cite prior work establishing the broader context for calcium signaling in development. These claims provide appropriate background and are supported by multiple citations. They help position the current findings within the broader field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    },
+    {
+      "id": "fee1d8da-0ea7-44f9-8bca-5963afb2f686",
+      "content_id": "a8eedabe-04e0-4810-9368-296dec4f009a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The anterior fold forms near the center of the Antp domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C64 is a straightforward observational statement supported by the imaging data (Figure 4A-C). This spatial relationship is important for understanding the precision of Hox gene-mediated patterning.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:05:39.032366Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d244a4cc-9a82-4cf5-9272-4db09ef6edb1",
+      "result_id": "de471d1d-f5a9-45cb-a290-95b526980f36"
+    },
+    {
+      "claim_id": "e9797a6c-2d11-4577-9563-bb4b19e5645b",
+      "result_id": "de471d1d-f5a9-45cb-a290-95b526980f36"
+    },
+    {
+      "claim_id": "818b7392-5a87-4a7b-ba02-15399e62d236",
+      "result_id": "de471d1d-f5a9-45cb-a290-95b526980f36"
+    },
+    {
+      "claim_id": "ade1754d-0d1e-4d50-9ea1-28f2ab9fd14d",
+      "result_id": "de471d1d-f5a9-45cb-a290-95b526980f36"
+    },
+    {
+      "claim_id": "75627a1e-2f7b-4a11-b73c-537f31f3acc0",
+      "result_id": "de471d1d-f5a9-45cb-a290-95b526980f36"
+    },
+    {
+      "claim_id": "f3331958-0573-4f03-aa2e-7057c38b85ce",
+      "result_id": "de471d1d-f5a9-45cb-a290-95b526980f36"
+    },
+    {
+      "claim_id": "afcd0575-2bc3-4a9a-a648-c5c685e5faf3",
+      "result_id": "de471d1d-f5a9-45cb-a290-95b526980f36"
+    },
+    {
+      "claim_id": "04755d1c-c64a-49f1-b3f2-2ea7e229ee58",
+      "result_id": "df4cb0d5-131f-4add-b545-bbf8e8d732e5"
+    },
+    {
+      "claim_id": "69b76a5c-25f4-4bb1-a234-9a4e8fd077b8",
+      "result_id": "df4cb0d5-131f-4add-b545-bbf8e8d732e5"
+    },
+    {
+      "claim_id": "8058a861-e7da-4bdb-953c-b3e9c3c31609",
+      "result_id": "df4cb0d5-131f-4add-b545-bbf8e8d732e5"
+    },
+    {
+      "claim_id": "644b473e-6b80-4489-8d9c-7ead39c3866d",
+      "result_id": "df4cb0d5-131f-4add-b545-bbf8e8d732e5"
+    },
+    {
+      "claim_id": "ad68051c-f800-4a2b-9362-c34558cedc34",
+      "result_id": "df4cb0d5-131f-4add-b545-bbf8e8d732e5"
+    },
+    {
+      "claim_id": "190cac88-a5a0-40ff-a0d0-63c9389514fd",
+      "result_id": "df4cb0d5-131f-4add-b545-bbf8e8d732e5"
+    },
+    {
+      "claim_id": "c5b59d6b-b384-460f-915d-f1b09054ea3d",
+      "result_id": "a7d40e4e-8909-4777-b995-2e5c468d2fce"
+    },
+    {
+      "claim_id": "5f550270-5041-4fbc-b433-432e41e5a95a",
+      "result_id": "a7d40e4e-8909-4777-b995-2e5c468d2fce"
+    },
+    {
+      "claim_id": "0a303291-8d76-4578-abff-f155dd5fedf6",
+      "result_id": "a7d40e4e-8909-4777-b995-2e5c468d2fce"
+    },
+    {
+      "claim_id": "6dae0f62-3f25-4b2f-8479-7f05219e3839",
+      "result_id": "a7d40e4e-8909-4777-b995-2e5c468d2fce"
+    },
+    {
+      "claim_id": "7ffeeaf3-ec7e-4604-91e4-3b9027aa8862",
+      "result_id": "a7d40e4e-8909-4777-b995-2e5c468d2fce"
+    },
+    {
+      "claim_id": "d47c1c17-8e54-4d57-bdb6-3be89fc7596b",
+      "result_id": "a7d40e4e-8909-4777-b995-2e5c468d2fce"
+    },
+    {
+      "claim_id": "e487a80e-d32a-485f-bd5d-fdd13a4c10d6",
+      "result_id": "bf58bea6-9b8a-4efa-bfbb-cc3093a1f14f"
+    },
+    {
+      "claim_id": "6707fbb1-47ad-4fa9-83eb-48b4244a1b53",
+      "result_id": "bf58bea6-9b8a-4efa-bfbb-cc3093a1f14f"
+    },
+    {
+      "claim_id": "4b2b3dd8-bdb9-4355-aa86-e2ca892e5c9e",
+      "result_id": "bf58bea6-9b8a-4efa-bfbb-cc3093a1f14f"
+    },
+    {
+      "claim_id": "24c9ec19-8f89-494d-87dc-3a417090c1d4",
+      "result_id": "bf58bea6-9b8a-4efa-bfbb-cc3093a1f14f"
+    },
+    {
+      "claim_id": "c19a0232-3170-4d9c-80d8-74d7cc5390a3",
+      "result_id": "bf58bea6-9b8a-4efa-bfbb-cc3093a1f14f"
+    },
+    {
+      "claim_id": "5dd66b20-0601-463b-890d-e0af497059e4",
+      "result_id": "bf58bea6-9b8a-4efa-bfbb-cc3093a1f14f"
+    },
+    {
+      "claim_id": "2fea764f-8dc2-4512-94f0-56af850a8983",
+      "result_id": "bf58bea6-9b8a-4efa-bfbb-cc3093a1f14f"
+    },
+    {
+      "claim_id": "8cef1ea4-77e9-42f9-8da8-51ec0c885ed9",
+      "result_id": "bf58bea6-9b8a-4efa-bfbb-cc3093a1f14f"
+    },
+    {
+      "claim_id": "bb0915ad-6848-47ba-95c8-76a1fbedf3ac",
+      "result_id": "88fbc041-ceff-4a27-8e98-7dc84c497cd9"
+    },
+    {
+      "claim_id": "bb1a1259-b227-4948-bde9-668f3004cdc9",
+      "result_id": "88fbc041-ceff-4a27-8e98-7dc84c497cd9"
+    },
+    {
+      "claim_id": "fbd878c0-9db8-4d32-9ded-1778507e5121",
+      "result_id": "7432b712-4e5a-46bd-a9da-5f2e6db5ef13"
+    },
+    {
+      "claim_id": "1028bef2-1aa7-4e75-ba4c-34465996d395",
+      "result_id": "7432b712-4e5a-46bd-a9da-5f2e6db5ef13"
+    },
+    {
+      "claim_id": "ad402570-ad6c-458c-8bee-47ffbd9a119f",
+      "result_id": "7432b712-4e5a-46bd-a9da-5f2e6db5ef13"
+    },
+    {
+      "claim_id": "dd834000-0f77-4e95-8d3b-33532dc8453e",
+      "result_id": "7432b712-4e5a-46bd-a9da-5f2e6db5ef13"
+    },
+    {
+      "claim_id": "6c018e4e-668a-427b-be20-b9f2d193f1f7",
+      "result_id": "7432b712-4e5a-46bd-a9da-5f2e6db5ef13"
+    },
+    {
+      "claim_id": "99c753fd-c465-456c-9391-767881642b11",
+      "result_id": "7432b712-4e5a-46bd-a9da-5f2e6db5ef13"
+    },
+    {
+      "claim_id": "44420540-9918-4d11-a46a-19d7aed74e7c",
+      "result_id": "7432b712-4e5a-46bd-a9da-5f2e6db5ef13"
+    },
+    {
+      "claim_id": "c94eba02-d330-475e-b833-276c41cb9189",
+      "result_id": "27133b57-8159-4cc7-8e86-4123c50f5e51"
+    },
+    {
+      "claim_id": "d1977ac2-c277-4773-a967-57ba7fd0f1ed",
+      "result_id": "27133b57-8159-4cc7-8e86-4123c50f5e51"
+    },
+    {
+      "claim_id": "6d689ae6-cf4f-439b-8ecf-25fbc9ef0788",
+      "result_id": "ab0b3f1d-6ee6-4c79-ae4e-af3b11c759bd"
+    },
+    {
+      "claim_id": "5a066d16-62fa-4cd2-99cc-b85d305dafac",
+      "result_id": "ab0b3f1d-6ee6-4c79-ae4e-af3b11c759bd"
+    },
+    {
+      "claim_id": "60bc5618-1a12-4981-b3cd-344a9d02da97",
+      "result_id": "ab0b3f1d-6ee6-4c79-ae4e-af3b11c759bd"
+    },
+    {
+      "claim_id": "78dd86cf-78d9-441d-96f1-f1d48113829c",
+      "result_id": "ab0b3f1d-6ee6-4c79-ae4e-af3b11c759bd"
+    },
+    {
+      "claim_id": "ad66375c-f888-4bab-9535-59a74601307c",
+      "result_id": "ab0b3f1d-6ee6-4c79-ae4e-af3b11c759bd"
+    },
+    {
+      "claim_id": "b6a76370-13c8-46b9-9981-b642cea8070f",
+      "result_id": "ab0b3f1d-6ee6-4c79-ae4e-af3b11c759bd"
+    },
+    {
+      "claim_id": "2d5e656b-f8c0-4b28-b2c1-b101bdb5a750",
+      "result_id": "026769eb-4e14-4fa7-a250-4b7e507032df"
+    },
+    {
+      "claim_id": "ea6a497a-be35-41d0-af62-d83b1f70105a",
+      "result_id": "026769eb-4e14-4fa7-a250-4b7e507032df"
+    },
+    {
+      "claim_id": "8a367020-612e-43d7-81c5-4c2adf0ddef5",
+      "result_id": "026769eb-4e14-4fa7-a250-4b7e507032df"
+    },
+    {
+      "claim_id": "8fd5b556-771a-4ce4-8d1a-815fb985c0d0",
+      "result_id": "a570fd5a-9047-48a4-9b0b-69ecde0ce4d8"
+    },
+    {
+      "claim_id": "3a0a6c6b-ca21-4d19-ad2b-9e451c3f16d2",
+      "result_id": "a570fd5a-9047-48a4-9b0b-69ecde0ce4d8"
+    },
+    {
+      "claim_id": "7b767e60-a673-4b63-823b-944e1087c35d",
+      "result_id": "a570fd5a-9047-48a4-9b0b-69ecde0ce4d8"
+    },
+    {
+      "claim_id": "e24cc5f0-2d72-4b5f-a3df-3c30120349ac",
+      "result_id": "a570fd5a-9047-48a4-9b0b-69ecde0ce4d8"
+    },
+    {
+      "claim_id": "cfa0dfee-51e6-4596-ad00-f0e990175ab6",
+      "result_id": "a570fd5a-9047-48a4-9b0b-69ecde0ce4d8"
+    },
+    {
+      "claim_id": "748d29ae-414b-4ec4-bcff-dd059bc1d2bc",
+      "result_id": "63d74685-2cea-45b5-a82b-4d042942d75a"
+    },
+    {
+      "claim_id": "a7b3f1bb-5a5d-4dcc-963c-1c90dfb307b4",
+      "result_id": "0856eee9-aaa8-4731-b89c-fe1973d9ec4f"
+    },
+    {
+      "claim_id": "1ca3b8bc-c7a6-4fbb-9e23-6bf05f799f72",
+      "result_id": "0856eee9-aaa8-4731-b89c-fe1973d9ec4f"
+    },
+    {
+      "claim_id": "bbea2a93-ef6b-46d1-9a1a-0cf4ae2da829",
+      "result_id": "0856eee9-aaa8-4731-b89c-fe1973d9ec4f"
+    },
+    {
+      "claim_id": "585e7e46-c27a-48fc-9037-1815709133ed",
+      "result_id": "fee1d8da-0ea7-44f9-8bca-5963afb2f686"
+    }
+  ],
+  "comparisons": []
+}

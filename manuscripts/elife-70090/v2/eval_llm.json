@@ -1,0 +1,211 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The manuscript reviews prior knowledge about transcription initiation, including the structural basis for promoter unwinding, the narrowness of the RNAP active-centre cleft, and two competing mechanistic models ('load-unwind' vs. 'unwind-load') for how DNA enters the RNAP active-centre cleft.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 accurately summarize established knowledge from the literature, supported by appropriate citations. These claims provide necessary background context for the current work and are consistent with the cited structural and biochemical studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The authors developed a single-molecule unwinding-induced fluorescence enhancement (smUIFE) assay using Cy3-labeled promoter DNA that shows ~2-fold fluorescence increase upon promoter unwinding. Control experiments confirm that fluorescence enhancement events represent sequence-specific RNAP holoenzyme-promoter complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C18 describe the smUIFE method and validation controls. The controls (C10-C13) appropriately demonstrate specificity: promoter DNA binds RNAP holoenzyme but not core enzyme, forms heparin-resistant complexes only with promoter sequences, and shows fluorescence enhancement only with holoenzyme and promoter DNA. The experimental design is sound and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "RNAP-promoter complexes formed in the smUIFE experiments are transcriptionally active and competent for promoter escape, as demonstrated by formation of stalled initial transcribing complexes and subsequent promoter escape upon NTP addition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 demonstrate functional competence of the complexes studied. The sequential addition of NTP subsets shows expected behavior: formation of stable unwound complexes with incomplete NTP sets (~49%) and promoter escape with complete NTP sets (~27%). This validates that the assay monitors physiologically relevant complexes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The dwell time in the pre-unwinding state for lacCONS-[+2 Cy3] is ~7.5 s and depends on the energy barrier for promoter unwinding, as shown by shorter times (~2.8 s) for pre-unwound promoter and longer times (~18.8 s) for G/C-rich promoter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 present kinetic measurements with appropriate controls. The peaked dwell-time distribution indicates multi-step kinetics (C22), and the systematic variation with predicted energy barriers (pre-unwound faster, G/C-rich slower) validates that the assay reports on unwinding kinetics. The two-exponential fitting approach is reasonable for extracting total dwell times, though the authors appropriately acknowledge uncertainty about the number of sub-steps.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Promoter unwinding proceeds in a stepwise, upstream-to-downstream direction. For lacCONS, upstream unwinding (~5.5 s) is slower than downstream unwinding (~2.0 s), while for G/C lacCONS, downstream unwinding (~12.7 s) is slower than upstream unwinding (~6.0 s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32 demonstrate directional unwinding by comparing Cy3 positions at upstream (-9) vs. downstream (+2) locations. The shorter dwell times for upstream probes compared to downstream probes indicate sequential unwinding. The result confirms prior work (C30) and provides quantitative kinetic resolution of the two steps. The promoter-specific differences in rate-limiting steps are internally consistent with the G/C content at different positions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "In the presence of myxopyronin (Myx), an inhibitor that prevents RNAP clamp opening, promoter unwinding still occurs with similar fluorescence enhancement but faster kinetics (~4.0-4.1 s vs. ~5.5-7.5 s without Myx). This indicates that clamp opening is not required for promoter unwinding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C42 present a critical test of the 'load-unwind' model using a clamp-opening inhibitor. The observation that unwinding occurs (C35, C37) and is actually accelerated (C40) in the presence of Myx contradicts models requiring clamp opening for unwinding. The controls showing Myx prevents heparin-resistant complex formation (C34) while allowing unwinding support the interpretation. However, C41 is speculative about the mechanism of Myx action, and the acceleration of unwinding in the presence of Myx is not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Control experiments for smFRET assays demonstrate that doubly-labeled RNAP forms sequence-specific, heparin-resistant complexes exclusively with promoter DNA fragments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 provide appropriate controls for the smFRET experiments, parallel to those for smUIFE. The high percentage of heparin-resistant complexes (~87%) and specificity for promoter DNA validate the experimental system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "smFRET measurements show that RNAP binds promoter DNA with a closed clamp (E*~0.4), does not open during unwinding (no E*~0.2 detected), and transitions to a 'locked-clamp' state (E*~0.48) after ~7.8 s, coinciding with the time for complete promoter unwinding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 present the key smFRET results. The temporal resolution (~100 ms) is sufficient to detect transient opening if it occurred. The coincidence of clamp locking time (~7.8 s) with unwinding time (~7.5 s) within error (C52) supports coupling of these events. The identification of a new 'locked-clamp' state (C49-C50) is well-supported by the data showing E* increase from 0.40 to 0.48.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "For G/C lacCONS promoter, smFRET results show similar behavior: closed clamp upon binding (E*~0.41), no clamp opening detected (up to ~200 s with ~400 ms resolution), transition to locked-clamp state (E*~0.50), with timing matching the unwinding kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 demonstrate reproducibility of the clamp behavior with a different promoter sequence. The longer observation time (~200 s) and similar temporal resolution (~400 ms) strengthen the conclusion that clamp opening does not occur. The consistency across promoters supports generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The authors conclude that the RNAP clamp is closed upon promoter binding, does not open during promoter unwinding (within the temporal resolution of the analysis), and locks after promoter unwinding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 represent the main conclusions from the smFRET experiments. These are well-supported by the data showing: (1) E*~0.4 at binding, (2) no transitions to E*~0.2 during the pre-unwinding period, and (3) transition to higher E* (~0.48-0.50) after unwinding. The caveat about temporal resolution is appropriate and honestly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The authors propose a 'bind-unwind-load-and-lock' mechanism for RPo formation, in which the clamp remains closed during unwinding, implying that ssDNA (not dsDNA) enters the active-centre cleft and that unwinding occurs at least partially outside the cleft.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 present the central mechanistic model. This is well-supported by the combined smUIFE and smFRET data showing: (1) sequential unwinding (C27-C32), (2) unwinding without clamp opening (C48, C54, C58), (3) clamp locking after unwinding (C51, C56, C59), and (4) unwinding occurring even when clamp opening is inhibited (C42). The inference that ssDNA enters the cleft (C61-C62) is logical given structural constraints (C5-C6) and the closed clamp, though the authors appropriately note an alternative interpretation involving 'gate opening' in the Discussion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "The consensus promoter used in this study has been validated in prior work for studying transcription mechanisms, and recent cryo-EM studies of other promoters show similar features (partly unwound bubble with closed clamp), suggesting the mechanism may be general.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 provide context for generalizability. C63 appropriately cites prior validation of the promoter system, and C64 notes consistency with recent structural studies. However, the authors appropriately acknowledge that generalization to other promoters and RNAP holoenzymes requires further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "The authors suggest that the smUIFE and smFRET methods could be applied to other E. coli RNAP holoenzymes and promoters, and potentially adapted for other organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65-C66 are speculative statements about future applications. While the methods are likely adaptable, no data are presented to support application beyond the specific system studied. These are reasonable suggestions for future work but not demonstrated results.",
+    "result_type": "MINOR"
+  }
+]

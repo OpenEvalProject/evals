@@ -1,0 +1,210 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C16",
+      "C17",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The model demonstrates that bottleneck width is a crucial factor determining resource allocation patterns. For narrow bottlenecks (<10% of input neurons), higher density regions are exclusively represented or expanded (C16). For intermediate bottlenecks, low-density regions expand beyond proportional allocation, causing contraction of high-density regions (C17). For wide bottlenecks, all low-density information is captured and additional neurons allocate to high-density regions (C19). This nonlinear effect persists across density ratios (C20), with spatial correlation extent affecting narrow bottleneck allocation and convergence speed but not the convergence limit itself (C21).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by analytical derivations for negative exponential covariance functions and illustrated in Figures 2A-C. The mathematical framework provides eigenvalue-based allocation rules that explain the nonlinear relationship between bottleneck width and resource allocation. The convergence formula 1/(1+\u221ad) is derived analytically and matches numerical simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C54"
+    ],
+    "result": "Both receptor density and stimulus statistics (activation) jointly determine resource allocation, with activation ratio having a stronger influence than density ratio for 2D sensory sheets. The convergence for intermediate bottlenecks depends on both factors according to the formula 1/(1+a\u221ad), where a is activation ratio and d is density ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C54 are supported by analytical derivations and Figure 3A showing that varying activation ratio produces wider allocation spreads at narrow bottlenecks compared to varying density ratio. The mathematical framework correctly accounts for both factors through eigenvalue scaling, with activation providing multiplicative scaling and density affecting both scaling and receptor number.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Changes in stimulus statistics (receptor activation) lead to reallocation of output neurons, with the magnitude of this plasticity effect depending on bottleneck width. Larger effects occur for narrower bottlenecks, suggesting that plasticity should be stronger under extreme resource constraints than when information limits are generous.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by model simulations shown in Figure 4, demonstrating that allocation changes in response to increased receptor activation are bottleneck-dependent. The mathematical framework predicts this behavior through eigenvalue reordering when activation parameters change. However, this remains a theoretical prediction requiring empirical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "The model's predictions generalize to other monotonically decreasing covariance functions beyond the negative exponential. Allocation curves are qualitatively similar across Mat\u00e9rn covariance functions with different smoothness parameters (\u03bd), but smoother covariances yield less extreme allocation differences and more uniform convergence points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by numerical calculations for Mat\u00e9rn functions with \u03bd=1/2, 3/2, and 5/2 shown in Figure 5. The analysis demonstrates robustness of qualitative predictions while revealing systematic dependence on covariance smoothness. However, numerical instability at wider bottlenecks limits the analysis range, and the fitted convergence formulas (e.g., 1/(1+\u221c(ad)) for \u03bd=3/2) lack rigorous derivation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The model successfully predicts cortical allocations in the star-nosed mole, with models including receptor activation ('usage only' and 'full model') providing better fits (R\u00b2=0.86 for full model) than density-only models (R\u00b2=0.26). This suggests the star-nosed mole may employ an efficient coding strategy based on decorrelation, with both receptor density and usage statistics determining cortical magnification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the model shows good quantitative agreement with empirical cortical allocations (C37, Figure 6D), several limitations weaken support. The bottleneck width is unknown and was selected by minimizing RMSE across all possible widths, which could lead to overfitting. The block diagonal covariance approximation assumes independent rays, which may not hold during foraging. The \u03b3 decay parameters were estimated from a simplified prey contact model rather than measured directly. Random model controls (Figure 6\u2014figure supplement 1D) show poor fits, suggesting the result is not trivial, but the unknown bottleneck and model selection procedure introduce uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Topographic sensory representations exhibit non-proportional scaling, with cortical magnification observed for high-density/high-usage regions like the fovea in vision and fingertips in touch. These regions show both higher receptor densities and higher stimulus encounter rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims describe well-established empirical findings in neuroscience, supported by multiple citations to primary literature (C2, C3, C8-C11). The claims provide essential background context for the modeling work and are not contested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Prior hypotheses about cortical magnification include direct reflection of receptor density and plasticity driven by stimulus statistics. Receptor density alone is a poor predictor of magnification, while cortical regions can expand and contract dynamically based on usage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent prior work and competing hypotheses in the literature, supported by appropriate citations (C12-C14). They establish the scientific context and motivation for the current modeling approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C15",
+      "C27",
+      "C50"
+    ],
+    "result": "Efficient coding theory via redundancy reduction suggests neural populations maximize information by removing redundancy through decorrelation. This principle has been found to be a strong driver in early sensory processing across vision, audition, and touch, particularly in low-noise regimes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately describe the theoretical framework and its empirical support, with appropriate citations to foundational and recent work (C15, C27, C50). The claims establish the theoretical foundation for the modeling approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C44"
+    ],
+    "result": "The visual system exhibits a narrow bottleneck at the optic nerve (12-27% of photoreceptors), with higher cone density in the fovea than periphery. The model predicts extreme magnification for such narrow bottlenecks, consistent with observed foveal magnification and faster-than-expected decline in spatial resolution with eccentricity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The bottleneck calculation (C41) is based on cited empirical data with explicit assumptions stated. The qualitative agreement between model predictions and empirical observations (C44) supports the model's applicability, though quantitative validation comparable to the star-nosed mole analysis is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C45"
+    ],
+    "result": "Cortical magnification correlates with perceptual acuity in both vision and touch. Spatial discrimination in touch improves with training or passive stimulation, consistent with plasticity predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by citations to empirical studies (C43, C45) and provide evidence for perceptual consequences of cortical allocation patterns predicted by the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Receptor densities and fiber counts change during development and aging. The optic nerve undergoes rapid fiber loss during development and aging, while mechanoreceptor densities decrease in older adults.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by citations to empirical studies (C46-C48) and provide context for how the model might apply to developmental and aging-related changes in sensory systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "Foveal magnification increases along the visual pathway from V1 to V4, showing progressive expansion through the sensory hierarchy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim is supported by citation to empirical work (C49) and provides context for discussing where in the sensory hierarchy the model's predictions are most applicable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Changing tactile input statistics affects cortical representations, with increased digit stimulation leading to cortical expansion. Cross-species differences in mechanoreceptor densities and hand use statistics exist among primates. Receptive field size differences have been recreated from typical contact patterns during grasping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by citations to empirical and modeling studies (C56-C59) and provide evidence for the role of stimulus statistics in shaping cortical representations, supporting the model's assumptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C7"
+    ],
+    "result": "The strength of cortical magnification depends on resource limits, as demonstrated by the model's predictions across different bottleneck widths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion (C7) is supported by the collective modeling results showing nonlinear relationships between bottleneck width and allocation patterns. However, direct empirical validation of this specific prediction across different bottleneck widths is lacking.",
+    "result_type": "MAJOR"
+  }
+]

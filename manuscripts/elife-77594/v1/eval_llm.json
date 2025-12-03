@@ -1,0 +1,488 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C13",
+      "C15",
+      "C62",
+      "C63",
+      "C69"
+    ],
+    "result": "The mouse V1 microcircuit implements two ultrasensitive and bistable switches based on mutual inhibitory connectivity between SST, PV, and VIP interneurons that toggle pyramidal neurons between inhibited and disinhibited states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C13, C15, C62, C63, and C69 collectively describe the core switching mechanism. The computational model demonstrates that mutual inhibitory motifs between SST\u2194PV and SST\u2194VIP create ultrasensitive switches (C32, C36, C37) with sigmoidal response curves and hysteresis at high coupling strengths (C34, C70). The model shows robustness to noise (C38) and connectivity variations (C39), supporting the biological plausibility of this mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C51",
+      "C52",
+      "C74"
+    ],
+    "result": "State transitions triggered in one cortical layer propagate to the other layer through translaminar SST connections, synchronizing inhibited or disinhibited states across the microcircuit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C51, C52, and C74 describe translaminar propagation of circuit states. The model demonstrates that VIP or PV input to one layer causes disinhibition in the opposite layer primarily through translaminar SST connections (C51, Figure 8). Selective removal of translaminar connections in the model abolishes this effect, confirming the mechanism. This is a well-controlled computational experiment with clear causal manipulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C16",
+      "C79",
+      "C80",
+      "C91"
+    ],
+    "result": "Inhibited and disinhibited states are characterized by low-frequency (beta) and high-frequency (gamma) oscillations respectively, with asymmetric changes in frequency and power during state transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C16, C79, C80, and C91 describe oscillatory properties of circuit states. The model shows SST-dominated states produce beta oscillations (~15-40 Hz) while PV-dominated states produce gamma oscillations (~60-110 Hz) (C26, C27, C28). During transitions, frequency and power change asymmetrically\u2014frequency increases while power decreases (C40, C91). This asymmetry is abolished when PV or SST cells are silenced (C92, C109), providing internal validation. Results match experimental observations (C16, C24, C46).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C67"
+    ],
+    "result": "The differential inhibitory impact of PV versus SST cells on pyramidal neurons is explained by strong recurrent inhibition among PV cells versus absent recurrent connections among SST cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 and C67 explain the mechanistic basis for differential inhibition. The model identifies strong PV-PV connections and absent SST-SST connections in the connectivity matrix (C58). When these connections are experimentally swapped in the model, the roles of PV and SST cells invert (C60), with SST input now causing disinhibition. This computational manipulation provides strong causal evidence for the proposed mechanism and is consistent with prior simplified models (C67).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C34",
+      "C36",
+      "C37",
+      "C70"
+    ],
+    "result": "The switches exhibit ultrasensitivity with sigmoidal response curves at moderate coupling strengths and bistability with hysteresis at high coupling strengths, controlled by mutual inhibitory connection strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C34, C36, C37, and C70 characterize the switching dynamics. The model demonstrates sigmoidal SST response curves with increasing Hill coefficients (nH) as coupling parameter G increases (C32, C37, Figure 3A, 4A-B). Hysteresis appears at sufficiently high G values (C34, Figure 3C-D). Selectively increasing mutual inhibitory weights between SST\u2194VIP and SST\u2194PV is sufficient to produce ultrasensitivity and hysteresis (C36), confirming the mechanism. The quantitative characterization using Hill coefficients and hysteresis area provides rigorous evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "VIP cells require less input than PV cells to suppress SST activity and switch the circuit to the disinhibited state, suggesting VIP cells are specialized for switching while PV cells maintain excitation-inhibition balance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72 and C73 describe differential sensitivity of the two switches. The model shows VIP-mediated switching occurs at lower G values than PV-mediated switching (Figure 4C-D), and VIP input requires less current to suppress SST cells. This is supported by quantitative analysis of Hill coefficients and hysteresis onset across different G values. The functional interpretation (C73) is a reasonable inference from the model behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C41"
+    ],
+    "result": "The frequency switch between slow and fast oscillations is primarily determined by the connectivity pattern rather than intrinsic neuronal time constants, though time constants modulate the magnitude of frequency changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 and C41 describe the basis of oscillation frequency switching. The model demonstrates that transitions between slow and fast oscillations persist even when all neurons have identical time constants (C41), indicating connectivity is the primary determinant. Systematic variation of time constants shows they modulate the extent but not the presence of frequency switching (Figure 5E-H). This is a novel finding that contrasts with previous models (C86) and is well-supported by systematic parameter exploration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25",
+      "C88"
+    ],
+    "result": "Layer-specific differences in firing rates and oscillation power between superficial and deep layers arise from specific anatomical connections: stronger excitation and disinhibition in deep layers and stronger inhibition in superficial layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25 and C88 explain layer differences through anatomy. The model identifies three key asymmetric connections: PYRsup\u2192PYRdeep, translaminar SST, and stronger PV-PV connections in deep layers (Figure 2A). Selective removal of these connections abolishes layer differences in firing rates and oscillation power (Figure 2B-D). This is a well-controlled computational lesion study that establishes causal relationships between specific connections and observed layer differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Driving SST cells causes monotonic suppression of other cell types and reduces oscillation frequency, with oscillation power initially increasing then decreasing, replicating experimental surround suppression effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 describe SST-mediated inhibition. The model shows SST input monotonically suppresses PYR, PV, and VIP cells (C43, Figure 6B) and reduces oscillation frequency (C44). Oscillation power shows a non-monotonic response\u2014initially increasing then decreasing as PV cells are suppressed (C45). This matches experimental observations of surround suppression in mouse V1 (C46, citations to Chen 2017, Veit et al. 2017), providing validation against independent data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C104"
+    ],
+    "result": "Strong pyramidal cell drive increases SST activity and can reverse the circuit from a disinhibited state back to an inhibited state, providing a homeostatic mechanism against runaway excitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C48, C49, and C104 describe PYR-mediated homeostasis. The model shows PYR input strongly increases SST activity (C47, Figure 7A). When the circuit is in a disinhibited state (VIP or PV active), sufficiently strong PYR input causes a sudden jump back to high SST activity (C48, C104), restoring inhibition. This matches optogenetic experiments showing high SST activity with strong PYR drive (C49, Hakim et al. 2018). The mechanism provides a plausible homeostatic control against excessive disinhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C89"
+    ],
+    "result": "Both feedforward (visual stimulation) and feedback (attention) input suppress low-frequency oscillations and enhance high-frequency oscillations through PV and VIP activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C57, and C89 describe responses to physiological input patterns. The model shows both feedforward (L4\u2192L2/3) and feedback (ACC\u2192VIP) input patterns suppress spontaneous low-frequency oscillations and enhance gamma oscillations (C56, Figure 9D). This matches experimental observations of alpha suppression and gamma enhancement during visual stimulation and attention (C57, C89, citations to van Kerkoerle et al. 2014, Klimesch 2012). The model successfully replicates multiple experimental phenomena.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C29",
+      "C26",
+      "C27",
+      "C28",
+      "C92"
+    ],
+    "result": "The relative dominance of PV versus SST cell activity determines oscillation frequency and power, which are inversely related in the intact circuit but positively correlated when either cell type is silenced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C26-C28, and C92 describe the relationship between interneuron activity and oscillations. The model shows PV knockout produces slow oscillations (~30 Hz) with high power, while SST knockout produces fast oscillations (~110 Hz) with low power (C26-C28). In the intact circuit, frequency and power are inversely related, but this relationship becomes positive when PV or SST cells are silenced (C29, C92). This provides insight into how different interneuron types control oscillatory dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "The switching dynamics is preserved even without recurrent excitation among pyramidal cells, demonstrating that the switch is implemented by interactions among the three inhibitory neuron types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 demonstrates the sufficiency of inhibitory interactions. The model shows that removing recurrent PYR-PYR connections does not abolish switching dynamics (Figure 7\u2014figure supplement 4B), though it does affect oscillation frequency. This computational manipulation provides strong evidence that the switch mechanism is fundamentally implemented by inhibitory circuitry rather than requiring recurrent excitation, which is a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "The switching dynamics is robust to noise and variability in connection weights, though weight variability affects the slope of response curves and Hill coefficient values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38 and C39 assess model robustness. Adding Gaussian noise does not change switching results (C38, Figure 4\u2014figure supplement 2A). Jittering connection weights according to experimental variability changes response curve slopes and produces a range of Hill coefficients (C39, Figure 4\u2014figure supplement 2B-C), but switching behavior persists. This demonstrates the mechanism is robust to biological variability, supporting its plausibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "At high coupling parameter G values, feedforward and feedback input suppress SST and PYR activity, which is inconsistent with experimental observations, suggesting smaller G values may be more biologically realistic for mouse V1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98 and C99 identify a model limitation. The model shows SST and PYR suppression at high G values (C98), which contradicts experiments showing all cell types increase with visual stimulation (citations to Dipoppa et al. 2018, Kirchberger et al. 2021). The authors appropriately acknowledge this inconsistency and suggest smaller G values may be more realistic (C99). This is an honest assessment of model limitations and provides guidance for parameter selection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "The model is based on connectivity data from Jiang et al. 2015 that did not include layers 4 and 6, and there is limited anatomical knowledge about cell-specific connectivity in these layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100 and C101 describe model limitations. The connectivity matrix is based on Jiang et al. 2015, which excluded layers 4 and 6 (C100). While cell types in these layers have been characterized, detailed connectivity information is lacking (C101, citations to Scala et al. 2019, Frandolig et al. 2019, etc.). This is an appropriate acknowledgment of the model's scope and limitations based on available data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The model replicates experimental findings from monkey V1, including layer-specific oscillation patterns and stimulus size-dependent frequency transitions, suggesting canonical microcircuit principles may be shared across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C108 extend the model to monkey data. The model replicates some monkey V1 findings including gamma in superficial layers, slow oscillations in deep layers, and frequency transitions with stimulus size (C106, C107, citations to van Kerkoerle et al. 2014, Gieselmann and Thiele 2008). However, the inference that both species share common principles (C108) is speculative given the lack of detailed cell-type connectivity data in monkeys (citation to Vanni et al. 2021). The model is based on mouse data, so cross-species generalization requires additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The model makes testable predictions including: (1) asymmetric frequency-power changes are abolished with PV/SST silencing, (2) PYR drive produces linear or nonlinear inhibitory responses depending on circuit state, and (3) single-layer inhibitory cell stimulation propagates to the opposite layer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 present testable predictions. These predictions follow logically from the model results: C109 from the silencing experiments (C92), C110 from the PYR input experiments (C47-C48), and C111 from the translaminar propagation experiments (C51-C52). The predictions are specific, experimentally feasible, and would provide strong tests of the model's mechanisms. This represents good scientific practice in computational modeling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The computational model consists of two layers (L2/3 and L5) with four cell types each (PYR, PV, SST, VIP), using connectivity data from Jiang et al. 2015 corrected for cell type prevalence and scaled by a global coupling parameter G.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 and C117-C124 describe the model architecture and construction. The model is based on comprehensive experimental connectivity data from Jiang et al. 2015 (C118-C120), which was processed to create a single connectivity matrix (C121) and corrected for cell prevalence (C123-C124). VIP cells were divided into superficial and deep targeting types based on connectivity patterns (C122). The methodology is clearly described and appropriately references the source data. The scaling parameter G is justified by prior modeling work (C18, citations to Deco et al. 2013, Jobst et al. 2017).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Spontaneous activity in the model shows layer-specific patterns: higher firing rates in deep layers for PYR and SST cells, oscillation frequencies that decrease with increasing G, and layer-specific oscillation power distributions matching experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24 describe spontaneous model behavior. The model shows PYR, PV, and VIP rates increase then decrease with G (C19), with SST showing slower dynamics (C20). Deep layer PYR and SST rates are higher, matching mouse experiments (C21, citations to Sakata and Harris 2009, Senzai et al. 2019). Oscillation frequency decreases from high gamma to beta/low gamma with increasing G (C22), remains higher in deep layers (C23), and shows layer-specific power distributions matching experiments (C24). These results validate the model against multiple experimental observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C130"
+    ],
+    "result": "Pyramidal cell firing rates in each layer were used as a proxy for local field potentials (LFPs) in the model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C130 describes a methodological choice. Using pyramidal cell rates as LFP proxies is a common simplification in rate models, but it is an approximation. True LFPs reflect weighted sums of synaptic currents across populations, not just pyramidal cell firing rates. While this approximation may capture some oscillatory dynamics, it may not accurately represent all aspects of LFP signals, particularly phase relationships and contributions from inhibitory neurons. The authors do not discuss the limitations of this approximation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Bistability based on mutual inhibitory connections provides an alternative mechanism to recurrent excitation for persistent state transitions underlying working memory, attention, consciousness, and language processing, with anatomical heterogeneity potentially reflecting regional differences in switch types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76 and C77 propose broad implications. While the model demonstrates inhibition-based bistability as an alternative to excitation-based mechanisms (C76), the extension to working memory, attention, consciousness, and language is speculative. The model is of mouse V1 and does not directly address these cognitive functions. The suggestion that anatomical gradients reflect different switch types (C77) is an interesting hypothesis but lacks direct evidence. These claims represent reasonable speculation but require substantial additional work to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Background claims establish the context: neocortical organization, interneuron classification, canonical microcircuits, disinhibition, oscillations, and gaps in understanding multilayer dynamics and rate-oscillation relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5-C12 provide background context. These claims are well-supported by appropriate citations to established literature (Tremblay et al. 2016, Pfeffer et al. 2013, Jiang et al. 2015, Douglas and Martin 2004, Cardin et al. 2009, etc.). Claims C10 and C11 appropriately identify gaps in the literature that motivate the current study. This background is accurate and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C71"
+    ],
+    "result": "Discussion claims contextualize findings: SST cells as 'master regulators' in inhibited states, PV cells balancing excitation in disinhibited states, prior evidence for disinhibition, and evolutionary conservation of double negative feedback switches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 and C71 place results in broader context. The characterization of SST as 'master regulators' (C64) and PV as balancing excitation (C65) are supported by the model and cited experimental work. Prior evidence for disinhibition (C66) and PV self-inhibition effects (C67-C68) are appropriately cited. The evolutionary conservation of double negative feedback (C71) is well-established in other biological systems (citations to Ferrell and Ha 2014, Ferrell 2002, Tyson et al. 2003). These discussion points appropriately contextualize the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C75",
+      "C90",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Summary and implications: the microcircuit functions as a homeostatic switch controlled by inhibitory neurons, with feedforward/feedback/lateral input regulating the switch position, providing an anatomically-based taxonomy for oscillations and mechanistic insight into oscillation function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75, C90, C112-C116 summarize key findings and implications. The characterization of the microcircuit as a homeostatic switch (C112-C113) is well-supported by the modeling results. The suggestion that different inputs regulate switch position (C114) follows from the feedforward/feedback simulations. The proposed anatomical taxonomy for oscillations (C90) and mechanistic insights into oscillation function (C116) are reasonable inferences from the results, appropriately cited to relevant literature (Hahn et al. 2021, Klimesch et al. 2007, etc.).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C105"
+    ],
+    "result": "The disinhibited state risks runaway excitation, but the microcircuit contains homeostatic mechanisms where strong pyramidal drive can reverse SST neurons to high firing rates, restoring inhibition, as observed experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102, C103, and C105 describe homeostatic control. The inference that disinhibition risks runaway excitation (C102) is reasonable. The model demonstrates that strong PYR drive can reverse SST suppression (C103, C104), providing homeostasis. This phenomenon has been observed experimentally (C105, citations to Pakan et al. 2016, Garcia Del Molino et al. 2017). This represents a plausible homeostatic mechanism supported by both modeling and experimental evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C129"
+    ],
+    "result": "Conduction delays were not modeled explicitly because distances within the microcircuit are very short.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C129 describes a modeling decision. The justification that conduction delays are negligible for short distances within a microcircuit is reasonable for a rate model operating at the timescales studied (tens to hundreds of milliseconds). However, for fast oscillations (gamma range, ~10 ms periods), even short delays could be relevant. The authors do not discuss whether this simplification might affect high-frequency oscillation dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Methodological definitions: ultrasensitivity is quantified using the Hill equation with Hill coefficient n>1 indicating sigmoidal responses; hysteresis indicates memory with non-collapsing response curves for increasing versus decreasing input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C135 define analytical methods. The use of the Hill equation to quantify ultrasensitivity is standard and appropriately cited (Ferrell and Ha 2014). The definitions of Hill coefficient interpretation (C133) and hysteresis (C134-C135) are correct and standard in the field. These methodological approaches are appropriate for characterizing the switching dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "The finding that connectivity pattern determines oscillation frequency provides a potential explanation for what determines oscillation frequency in neuronal circuits, contrasting with previous models that used different time constants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85 and C86 position the findings relative to prior work. The model's demonstration that connectivity determines frequency switching (C82-C84) does provide insight into oscillation frequency determination, appropriately cited to relevant questions in the field (Brunel and Wang 2003, Jia et al. 2013). The contrast with previous models using time constants (C86, citations to Hyafil et al. 2015, Mejias et al. 2016) is accurate. However, the claim of providing an 'explanation' may be overstated\u2014the model provides one mechanism but doesn't exclude other mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C87",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Experimental observations show layer-specific oscillation power, stimulus size-dependent frequency transitions mediated by lateral SST input, and the model suggests surround suppression switches the circuit from PV/VIP to SST dominated states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87, C93-C96 connect model results to experimental phenomena. Layer-specific oscillation power (C87) and stimulus size effects (C93) are well-documented experimentally (multiple citations). The anatomical basis for surround suppression via lateral SST input (C94, Adesnik et al. 2012) is established. The model's mechanistic interpretation (C95) is a reasonable inference that connects anatomy to function. The note about inverse effects (C96, Ray and Maunsell 2010) appropriately acknowledges complexity in experimental observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "The coupling parameter G can be related to the overall cell count in the studied circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 interprets the coupling parameter. The statement is supported by citation to previous work (Deco et al. 2013) that used similar scaling approaches. The interpretation is reasonable since G scales all connections proportionally, which approximates the effect of having more neurons. However, this is a simplification\u2014real changes in cell count would also affect other properties like spatial extent and connection probability. The authors appropriately note this is a loose relationship.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Layer 4 preferentially drives PYR and PV cells in superficial layers, while feedback from anterior cingulate cortex mostly targets VIP cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53 and C54 describe input patterns used in the model. These are based on experimental studies (citations to Adesnik et al. 2012 and Zhang et al. 2014) and are used to model feedforward and feedback input patterns. The claims accurately represent the cited experimental findings and provide appropriate biological grounding for the model simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "Inhibition-based ultrasensitivity and hysteresis commonly require strong inhibitory interactions between system components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 states a general principle about ultrasensitivity and hysteresis. This is well-established in the systems biology literature and appropriately cited (Ferrell 2002). The principle is correctly applied to interpret the model results showing that increasing mutual inhibitory weights produces ultrasensitivity and hysteresis (C36).",
+    "result_type": "MINOR"
+  }
+]

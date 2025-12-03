@@ -1,0 +1,240 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The manuscript reviews prior work establishing that bNAbs are promising therapeutic agents against HIV-1, but viral escape remains a key obstacle, particularly in monotherapy. Combination therapy with multiple bNAbs shows improved suppression of viral rebound.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C12 collectively summarize well-established prior knowledge about bNAb therapy, supported by extensive citations to clinical trials and prior research. These claims provide appropriate context and motivation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The authors develop a computational approach using high-throughput HIV sequence data from bNAb-naive patients to predict bNAb therapy efficacy by quantifying mutational target size and fitness costs of escape mutations. The coarse-grained model accurately predicts rebound time distributions in clinical trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C18 describe the core methodological contribution. The approach is well-documented with appropriate data sources (C15, C18), and the model's predictive accuracy is demonstrated through comparison with clinical trial data (C14, C16, Figure 3B). The reliance on few patient-specific parameters (C17) is a strength for generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C25",
+      "C26"
+    ],
+    "result": "The authors model viral dynamics after bNAb infusion using logistic growth equations, where susceptible strains decay due to neutralization and resistant strains grow to carrying capacity. Rebound time is the key efficacy measure, determined by the pre-treatment fraction of resistant variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C26 describe the mathematical framework for modeling viral dynamics. The logistic growth model (C23) is appropriately simplified and justified by citations to prior work. Parameter inference methods (C25, C26) are clearly described, though full validation of the simplifying assumptions would strengthen the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C29",
+      "C31",
+      "C32",
+      "C37"
+    ],
+    "result": "The authors define and infer key population genetics parameters from HIV sequence data: escape variants are identified from DMS experiments using a 3-log frequency change threshold, neutral diversity is measured using synonymous mutations, and mutational target size is defined as the weighted number of mutational trajectories to escape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C37 describe parameter definitions and inference methods. The use of synonymous sites as neutral proxies (C29) is standard practice. The 3-log threshold for DMS data (C27) is reasonable but somewhat arbitrary. The observation that neutral diversity grows over infection time (C31, Figure 2D) is well-supported by data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "The viral reservoir can contribute to bNAb escape, as evidenced by the failure of pre-trial sequencing to exclude all patients harboring escape variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 identify an important biological consideration. The inference from trial screening failures (C34) is logical, though the evidence is indirect. The reservoir factor of 2.1 inferred later (Figure 4\u2014figure supplement 3) provides quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C41"
+    ],
+    "result": "Escape mutations against bNAbs are expected to be intrinsically deleterious because bNAbs target conserved viral regions. Escape variants are observed circulating in bNAb-naive patient populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39 and C41 are well-supported. The expectation of fitness costs (C39) is grounded in prior research and biological reasoning. The observation of circulating escape variants (C41, Figure 2B) is directly shown in the data and is crucial for the modeling approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The model accurately predicts rebound time distributions for monotherapy trials with 10-1074 and 3BNC117, and for combination therapy. The model correctly predicts the fraction of patients with late rebound (>56 days), which determines treatment efficacy. The success with combination therapy is consistent with the genomic spacing of escape sites beyond the recombination length scale.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 present the main validation results. The agreement between predictions and data (C42, C43, Figure 3B) is visually strong and statistically validated (Figure 4\u2014figure supplement 3). The prediction of late rebound fractions (C45) is particularly important for clinical relevance. The explanation based on recombination (C44) is biologically reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "Spontaneous mutations contribute to less than 4% of escape events across all three trials; escape is primarily driven by standing variation from serum or reservoirs prior to therapy. This conclusion is consistent with prior mechanistic modeling of VRC01 trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 present an important mechanistic finding. The quantitative estimate (C46, Figure 3E) is derived from the stochastic model and extinction threshold analysis (Figure 3D). The consistency with prior work (C47) strengthens confidence in the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C2",
+      "C48"
+    ],
+    "result": "Escape from monotherapies is almost certain, and a combination of at least three antibodies is necessary to limit the probability of early rebound (<56 days) to below 1%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C48 present a key predictive finding. The conclusion is supported by simulations across nine bNAbs (Figure 4C) and represents a concrete, actionable recommendation for therapy design. The 1% threshold is clinically meaningful.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Mutational target size and fitness cost of escape show a roughly linear relationship. For breadth, bNAbs need either small mutational target size or high fitness cost, but not both. 10E8 (mutation-limited) is best for monotherapy but less effective in combinations, while PGT151 (fitness-limited) is more effective in combinations. These strategies are differentially effective depending on viral diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 characterize distinct escape strategies. The linear relationship (C49, Figure 4B) is clearly shown. The interpretation about breadth requirements (C50) is logical given that all bNAbs have similar breadth. The differential effectiveness of mutation- vs. fitness-limited strategies (C54) is a valuable insight, though it relies on simulation predictions rather than direct experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "The best ranked three-antibody therapy (PG9, PGT151, VRC01) combines antibodies targeting different viral regions with both fitness- and mutation-limited strategies to cover the full range of viral diversities in pre-treatment individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 presents the optimal therapy prediction. The ranking is based on simulations (Figure 4C) using inferred parameters. The rationale combining different epitopes and escape strategies is sound. However, this is a computational prediction requiring experimental validation, and other factors (potency, half-life, tolerability) are acknowledged as not considered.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The coarse-grained model does not accurately reproduce detailed viremia dynamics in individual patients and ignores several factors including antibody concentration dynamics, IC50 neutralization, T-cell dynamics, epistasis, linkage, and codon usage bias. However, the simplifying assumption of neglecting incomplete escape is justified for the trials analyzed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62 acknowledge important limitations. The authors are appropriately transparent about what the model does not capture (C56, C60). The justification for neglecting incomplete neutralization (C61, C62) is supported by analysis in Appendix 3. These limitations do not invalidate the main predictions but constrain the model's applicability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "DMS-inferred escape variants lead to more optimistic predictions for treatment success compared to trial-inferred variants. This discrepancy may be due to differences in genetic backgrounds between DMS experiments (single background) and clinical populations (diverse backgrounds), with diverse populations more likely to contain variants with positive epistasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 identify an important methodological consideration. The observation of more optimistic DMS-based predictions (C63) is shown in Appendix 4. The proposed explanation involving epistasis (C64, C65) is speculative but biologically plausible. This highlights a limitation in using DMS data for clinical predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "The bNAb 10E8, identified as a promising monotherapy candidate, is poorly tolerated by patients with short half-life, making it undesirable for therapy. The bNAb candidates should be taken as guidelines requiring further assessment of efficacy and safety.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 provide important caveats about translating computational predictions to clinical practice. The limitation of 10E8 (C66) is supported by citation to prior work. The cautionary statement (C67) is appropriate given that the model focuses only on escape suppression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Combining bNAb therapy with ART could achieve longer-term treatment success by lowering viral replication rate and diversity. Fitness-limited bNAbs should be more effective in conjunction with ART because rare escape variants are less likely to emerge and establish in ART+ patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C57-C59 propose future therapeutic strategies. These are speculative suggestions (C57, C58, C59) based on logical extensions of the model but lack direct supporting data. The predictions about fitness-limited bNAbs in ART+ patients (C59) are reasonable but untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "Combining high-throughput genetic data with population genetics models has broad applicability. Similar methods could be applied to therapy design for cancer immunotherapy, antibiotic resistance, and influenza vaccination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 discuss broader implications. The demonstration of the approach's utility for HIV (C68) is well-supported by the results. The suggestions for other applications (C69) are speculative but reasonable given the generality of the evolutionary principles involved.",
+    "result_type": "MINOR"
+  }
+]

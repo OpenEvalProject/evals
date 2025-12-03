@@ -1,0 +1,344 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C80",
+      "C81"
+    ],
+    "result": "Scn8a+/- mice exhibit attention deficits on the Attentional Engagement Task (AET) specifically at intermediate cue lengths (2s and 1s), while showing no differences in performance when cue length is held constant, no differences in omissions, and no group differences in learning rate or reaction time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 and C80-C81 collectively demonstrate attention-specific deficits in Scn8a+/- mice. The behavioral data show impaired performance at intermediate cue lengths but not at constant cue lengths or in omissions, supporting the interpretation that deficits are specific to attentional load rather than sensory or motor impairments. Statistical analyses with appropriate controls strengthen these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "AET performance deficits in Scn8a+/- mice are unrelated to acute seizure activity, as seizures are largely absent during task performance and seizure-related ECoG power does not differ between correct and incorrect trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C44 provide converging evidence from ECoG recordings that seizures do not explain attention deficits. Seizure frequency is reduced during task engagement, seizures occur in <1% of trials during cues, and power in seizure-related frequency bands does not differ between correct/incorrect trials or between genotypes at the intermediate cue. This effectively dissociates attention deficits from acute seizure effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The mPFC is necessary for AET performance, as photoinhibition during the variable cue period reduces accuracy in the AET but not during the fixed cue period in the VDST, demonstrating attention-dependent mPFC involvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 and C82-C86 demonstrate through optogenetic manipulation that mPFC activity is specifically required during attention-demanding epochs. The differential effects in AET versus VDST provide strong evidence for attention-dependent mPFC function. In vitro validation (C83-C84) confirms the efficacy of the optogenetic approach across relevant time scales.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Scn8a+/- mice exhibit reduced disynaptic inhibition in mPFC Layer 2/3, as evidenced by a significant reduction in a late current source that is sensitive to post-synaptic blockers DNQX and CPP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by slice electrophysiology data showing reduced Layer 2/3 source amplitude in Scn8a+/- mice. Pharmacological characterization (C51) confirms the disynaptic nature of this response. However, C52 is speculative about GABAergic interneuron involvement, though this hypothesis is reasonable given the data and is tested in subsequent experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "PVINs in Scn8a+/- mice show increased synaptic failure rates during 40 Hz stimulation but retain the ability to inhibit pyramidal neuron output when optogenetically activated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 are supported by whole-cell patch clamp recordings showing significantly increased failure rates in Scn8a+/- mice during gamma-frequency stimulation, while spike reduction capacity remains intact. This suggests a specific deficit in PVIN output reliability rather than complete loss of inhibitory function, which is mechanistically important for understanding the pathology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C71",
+      "C72"
+    ],
+    "result": "Cue-evoked PVIN activity is reduced in Scn8a+/- mice and is associated with attention performance, as PVIN activity increases during correct trials at intermediate cue lengths in both genotypes, but is significantly reduced in Scn8a+/- mice specifically at the intermediate cue where behavioral deficits occur.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 and C71-C72 are strongly supported by fiber photometry data showing trial-by-trial correlation between PVIN activity and accuracy. The specificity of reduced PVIN activity in Scn8a+/- mice at the intermediate cue length (C58-C59) aligns with behavioral deficits. Machine learning classification (C61) provides additional quantitative support that PVIN activity patterns predict trial outcome.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Gamma-frequency (40 Hz) optogenetic stimulation of PVINs rescues attention performance deficits in Scn8a+/- mice specifically at the intermediate cue length, and this effect is specific to ChR2 expression as it is not observed in eYFP control mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 demonstrate causal rescue of attention deficits through optogenetic PVIN stimulation. The specificity at the intermediate cue length matches the behavioral and physiological deficits. Control experiments with eYFP (C64) and validation that 40 Hz stimulation increases gamma power (C63) strengthen the interpretation that PVIN-mediated gamma activity is sufficient to improve attention.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C111"
+    ],
+    "result": "VPA treatment significantly reduces seizure burden in Scn8a+/- mice but has no effect on AET performance, suggesting distinct mechanisms for seizures and attention impairments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 and C111 are supported by pharmacological data showing VPA reduces seizures but not attention deficits. This dissociation strengthens the conclusion that attention impairments are independent of acute seizure activity and suggests different therapeutic targets are needed for cognitive versus seizure symptoms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C95",
+      "C101",
+      "C102"
+    ],
+    "result": "Scn8a+/- mice exhibit reduced mPFC gamma power (particularly high gamma 60-90 Hz) during the AET at cue lengths where behavioral and PVIN activity deficits occur, with all deficits converging at the intermediate cue length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 and C95, C101-C102 demonstrate convergent evidence linking reduced gamma power to attention deficits and PVIN hypoactivity. The specificity of high gamma reduction at intermediate cue lengths (C68) aligns with behavioral deficits and PVIN activity patterns. The consistency across multiple measures at the intermediate cue (C101) strengthens the mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C29",
+      "C112"
+    ],
+    "result": "Scn8a+/- mice exhibit increased repetitive responding during the AET, which may indicate behavioral inflexibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29 and C112 are supported by behavioral data showing increased repetitive responding in Scn8a+/- mice. However, the interpretation of behavioral inflexibility (C112) is speculative and would benefit from additional testing with tasks specifically designed to measure cognitive flexibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "Scn8a+/- mice show no deficits in sociability (three-chamber task) or object recognition, suggesting behavioral impairments are not global.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 are supported by behavioral data from control tasks. These negative results are important for demonstrating specificity of attention deficits rather than global behavioral impairment, though sample sizes and statistical power should be considered.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "This study provides the first evidence of both behavioral manifestation and circuit biomarker of attention impairments in an animal model of absence epilepsy, identifying PVIN recruitment and gamma activity as key mechanisms during attentional engagement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 represent summary conclusions supported by the convergent experimental findings. The novelty claim (C73) appears justified based on the literature review presented. The mechanistic conclusion (C74) is well-supported by the multi-level experimental approach combining behavior, electrophysiology, and optogenetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "Reductions in feedforward inhibition and high-frequency PVIN output in vitro, combined with loss of gamma power during the AET, argue for PVIN-mediated pathology in Scn8a+/- mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 synthesize findings from multiple experiments (slice physiology, whole-cell recordings, ECoG) to support a coherent mechanistic model. The convergence of in vitro and in vivo findings strengthens this interpretation, though the exact relationship between different gamma frequency bands requires further investigation as acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Low and high gamma likely arise from separate mechanisms with differential spatial localization and relationships to distinct behavioral states, and ECoG recordings may obscure local rhythms in specific cortical layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100 are supported by citations to previous research and represent established knowledge about gamma oscillations and recording methods. These claims provide important context for interpreting the discrepancy between 40 Hz optogenetic rescue and high gamma (60-90 Hz) deficits observed in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C105",
+      "C106",
+      "C107",
+      "C117",
+      "C118"
+    ],
+    "result": "Cue-related PVIN activity represents an important mechanism for attention and may provide a therapeutic target for cognitive comorbidities in absence epilepsy and other disorders, potentially through cell-type-specific augmentation of PVIN activity or gamma oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9-C10 and C105-C107, C117-C118 represent interpretations and speculations about therapeutic implications. While C9 is reasonably supported by the correlation between PVIN activity and attention performance, claims about therapeutic potential (C10, C117-C118) are speculative. The mechanistic speculation about why elevated PVIN activity is beneficial (C106) is reasonable but not directly tested. These claims represent important future directions but require additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C32",
+      "C33",
+      "C34",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Background claims about absence epilepsy characterization, prevalence, clinical features, and the Scn8a gene/mouse model establish the clinical and scientific context for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C11-C14, C32-C34, C75-C79 represent established knowledge about absence epilepsy and the Scn8a model, supported by appropriate citations. These provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C3",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Prior literature establishes that PFC dysfunction may underlie attention impairments in absence epilepsy, that mPFC PVINs show attention-related activity and support attentional processes, and that PVINs are linked to feedforward inhibition and gamma oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C17-C21, C87-C92 represent literature review establishing the rationale for focusing on mPFC PVINs. These are appropriately cited and provide the scientific foundation for the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "Animal models reliably capture absence seizure phenotypes, but there has been little direct exploration of attention performance in rodent models of absence epilepsy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 establish a gap in the literature that this study addresses. C15 is supported by citations, while C16 is supported by the absence of such citations, justifying the novelty of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "Previous work suggests that relay cell function of the ventrobasal thalamus remains intact in Scn8a+/- mice, suggesting intrinsic excitability of thalamic relay neurons is not strongly affected by partial loss of Scn8a.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 cite previous work to provide context about thalamic function in this model. This helps interpret the current findings by suggesting cortical rather than thalamic mechanisms may be primary, though C104 involves inference from cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C115",
+      "C116"
+    ],
+    "result": "Attention impairments and other behavioral/cognitive deficits are reported across multiple disorders including absence epilepsy, and Scn8a mutations are associated with various neurodevelopmental conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110, C115-C116 provide broader context about comorbidities in absence epilepsy and other disorders, as well as the relevance of Scn8a mutations across conditions. These are appropriately cited and establish the broader significance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "Attentional engagement is a prerequisite for other cognitive functions, and deficits in attention likely lead to broader cognitive abnormalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114 represent established knowledge about the role of attention in cognition. These provide important context for understanding the significance of attention deficits but are not novel findings.",
+    "result_type": "MINOR"
+  }
+]

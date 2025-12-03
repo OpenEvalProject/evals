@@ -1,0 +1,1765 @@
+{
+  "submission": {
+    "id": "951fce0d-2932-4591-8f35-4027a8ccdac9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T15:59:32.561980Z",
+    "updated_at": "2025-12-03T15:59:32.561980Z"
+  },
+  "content": [
+    {
+      "id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "submission_id": "951fce0d-2932-4591-8f35-4027a8ccdac9",
+      "content_type": "manuscript",
+      "content_text": "# Polygenic adaptation after a sudden change in environment\n\n## Authors\n\n- Laura Katharine Hayward<sup>1</sup> ([ORCID: 0000-0003-4445-8067](https://orcid.org/0000-0003-4445-8067)) \u2020\n- Guy Sella<sup>3</sup> ([ORCID: 0000-0002-5239-7930](https://orcid.org/0000-0002-5239-7930)) \u2020\n\n### Affiliations\n\n1. Department of Mathematics, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))\n2. Institute of Science and Technology Maria Gugging Austria ([ROR:03gnh5541](https://ror.org/03gnh5541))\n3. Department of Biological Sciences, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))\n4. Program for Mathematical Genomics, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))\n\n\u2020 Corresponding author\n\n## Abstract\n\nPolygenic adaptation is thought to be ubiquitous, yet remains poorly understood. Here, we model this process analytically, in the plausible setting of a highly polygenic, quantitative trait that experiences a sudden shift in the fitness optimum. We show how the mean phenotype changes over time, depending on the effect sizes of loci that contribute to variance in the trait, and characterize the allele dynamics at these loci. Notably, we describe the two phases of the allele dynamics: The first is a rapid phase, in which directional selection introduces small frequency differences between alleles whose effects are aligned with or opposed to the shift, ultimately leading to small differences in their probability of fixation during a second, longer phase, governed by stabilizing selection. As we discuss, key results should hold in more general settings and have important implications for efforts to identify the genetic basis of adaptation in humans and other species.\n\n## Introduction\n\nMany traits under natural selection are quantitative, highly heritable, and genetically complex, meaning that they take on continuous values, that a substantial fraction of the population variation in their values arises from genetic differences among individuals, and that this variation arises from small contributions at many segregating loci. It therefore stands to reason that the responses to changing selective pressures often involve adaptive changes in such traits, accomplished through changes to allele frequencies at the many loci that affect them. In other words, we should expect polygenic adaptation in complex, quantitative traits to be ubiquitous. This view traces back to the dawn of population and quantitative genetics (Wright, 1931; Fisher, 1958) and is supported by many lines of evidence (Walsh and Lynch, 2018; Sella and Barton, 2019).\n\nNotably, it is supported by studies of the response to directional, artificial selection on many traits in plants and animals in agriculture and in evolution experiments (Walsh and Lynch, 2018; Sella and Barton, 2019). In these settings, selected traits typically exhibit amazingly rapid and sustained adaptive changes (Weber and Diggins, 1990; Barton and Keightley, 2002; Hill, 2016), which are readily explained by models in which the change is driven by small shifts in allele frequencies at numerous loci (Weber and Diggins, 1990; Hill and Kirkpatrick, 2010), and inconsistent with models with few alleles of large effect (Barton and Keightley, 2002; Zhang and Hill, 2005). The potential importance of polygenic adaptation has also been highlighted by more recent efforts to elucidate the genetic basis of adaptation in humans. In the first decade after genome-wide polymorphism datasets became available, this quest was largely predicated on the monogenic model of a hard selective sweep (Voight et al., 2006), in which adaptation proceeds by the fixation of new or initially rare beneficial mutations of large effect (e.g. Smith and Haigh, 1974; Kaplan et al., 1989). Subsequent analyses, however, echoed studies of artificial selection in indicating that hard sweeps were rare, at least over the past \u223c500,000 years of human evolution (Coop et al., 2009; Hernandez et al., 2011). Yet humans plausibly adapted in myriad ways during this time period, and they definitely experienced substantial changes in selection pressures, notably during more recent expansions across the globe. These considerations refocused the quest for the genetic basis of human adaptation on polygenic adaptation (Pritchard et al., 2010; Pritchard and Di Rienzo, 2010).\n\nFindings from genome wide association studies (GWASs) in humans have been central to this research program. Statistical analyses of GWASs indicate that in humans, heritable variation in complex traits is highly polygenic (Loh et al., 2015; Shi et al., 2016; Boyle et al., 2017). For example, for many traits, estimates of the heritability contributed by chromosomes are approximately proportional to their length (Shi et al., 2016), suggesting that the contributing variants are numerous and roughly uniformly distributed across the genome. Such findings reinforced the view that adaptive changes to quantitative traits are likely to often be highly polygenic, but also implied that their identification would be difficult, as the changes to allele frequencies at individual loci may be minute. To overcome this limitation, recent studies pooled signatures of frequency changes over the hundreds to thousands of alleles that were found to be associated with an increase (or decrease) in a given trait (Turchin et al., 2012; Berg and Coop, 2014; Robinson et al., 2015; Field et al., 2016; Berg et al., 2019b; Edge and Coop, 2019; Speidel et al., 2019). Initial studies suggest that polygenic adaptation has affected multiple human traits, but these conclusions have been called into question with the realization that the results are highly sensitive to systematic biases in GWASs, most notably due to population structure confounding (Berg et al., 2019a; Sohail et al., 2019).\n\nGiven that polygenic adaptation is plausibly ubiquitous, yet likely hard to identify, there is a clear need for a deep understanding of its behavior in populations and footprints in data. To date, theoretical work has primarily focused on two scenarios. The first is motivated by the observed responses to sustained artificial selection, modeled either as truncation selection (Robertson, 1960) or as stabilizing selection, with the optimal phenotype moving at a constant rate in a given direction (e.g. B\u00fcrger and Lynch, 1995; B\u00fcrger, 1999; Kopp and Hermisson, 2009; Matuszewski et al., 2015; Jain and Devi, 2018). In natural populations, however, quantitative traits are unlikely to be subject to long-term continuous change in one direction. Instead, considerable evidence indicates that they are often subject to long-term stabilizing selection (Sella and Barton, 2019), with intermittent shifts of the optimum in different directions. The second scenario therefore assumes that a sudden change in the environment induces an instantaneous shift in the optimum of a trait under stabilizing selection (Lande, 1976; Barton and de Vladar, 2009; de Vladar and Barton, 2014; Jain and Stephan, 2015; Bod\u2019ov\u00e1 et al., 2016; Jain and Stephan, 2017b; Stetter et al., 2018; Thornton, 2019). Although more elaborate scenarios (where, for example, the optimum and/or strength of stabilizing selection vary frequently) are also possible, this simple scenario provides a sensible starting point for thinking about polygenic adaptation in nature, and is our focus here.\n\nAlthough there has been considerable work on the adaptive response to an instantaneous change in optimal phenotype, our understanding of this process is still limited. Seminal work by Lande, 1976 described the change in the phenotypic mean assuming that phenotypes are normally distributed in the population and that the phenotypic variance remains constant over time. Barton and Turelli, 1986b derived recursions for the expected change to higher moments of the phenotypic distribution, and showed that when phenotypic variation arises from alleles with large effect sizes, which are strongly selected and rare, the response to selection introduces skew in the phenotypic distribution that can substantially affect the change in the phenotypic mean. Their recursions, however, are not generally tractable, and their analyses do not extend to the phenotypic response in more realistic cases, in which phenotypic variation arises from alleles with a wide range of effect sizes. Moreover, with GWASs now enabling us, at least in principle, to learn about the genetic basis of the phenotypic response, we would like to understand the allele dynamics that underlie it.\n\nSeveral studies have tackled this problem using simulations (e.g. Stetter et al., 2018; Thornton, 2019). Although illustrative of the dynamics, it is unclear how to generalize their results, given (necessarily) arbitrary choices about multiple parameters and the complexity of these dynamics. In turn, elegant analytical work by de Vladar and Barton, 2014 and extensions by Jain and Stephan, 2017a; Jain and Stephan, 2017b afford a general understanding of the allele dynamics in models with an infinite population size. These dynamics, however, are shaped by features of mutation-selection balance that are specific to infinite populations. Notably, they strongly depend on the frequency of alleles prior to the shift in optimum following deterministically from their effect size, and on the critical effect size at which this frequency transitions from being dominated by selection to being dominated by mutation. In real (finite) populations, the frequencies of alleles whose selection effects are sufficiently small to be dominated by mutation will be shaped by genetic drift; more generally, variation in allele frequencies due to genetic drift will crucially affect the allele response to selection (see below). Thus, we still lack a solid understanding of the allele dynamic underlying polygenic adaptation in natural populations, notably in humans.\n\nHere, we follow previous work in considering the phenotypic and allelic responses of highly polygenic traits after a sudden change in optimal phenotype, but we do so in finite populations and employ a combination of analytic and simulation approaches to characterize how the responses vary across a broad range of evolutionary parameters.\n\n## Model\n\nWe build upon the standard model for the evolution of a highly polygenic, quantitative trait subject to stabilizing selection (Wright, 1935b; Robertson, 1956b; Turelli, 1984; Keightley and Hill, 1988; Johnson and Barton, 2005; Simons et al., 2018; Sella and Barton, 2019). An individual\u2019s phenotype is represented by the value of a continuous trait, which follows from its genotype by the standard additive model (Falconer, 1996; Lynch and Walsh, 1998). Namely, we assume that the number of genomic sites affecting the trait (i.e. the target size) is very large, $L\u226b1$, and that an individual\u2019s phenotype is given by\n\n$$\nz=\\suml=1L(a_{l}+a_{l}^{\u2032})+\u03f5,\n$$\n\nwhere the first term is the genetic contribution, with a\n\nl\n and $a_{l}^{\u2032}$ denoting the phenotypic effects of the alleles inherited from the parents at site $l$, and $\u03f5\u223cN(0,V_{E})$ is the environmental contribution.\n\nStabilizing selection is introduced by assuming that fitness declines with distance from the optimal trait value positioned at the origin ($z=0$). Specifically, we assume a Gaussian fitness function:\n\n$$\nW(z)=Exp[\u2212z^{2}/(2V_{S})],\n$$\n\nwhere $V_{S}^{-1}$ measures the strength of selection. The specific form of the fitness function is unlikely to affect our results under parameter ranges of interest (see below), however. Additionally, since the additive environmental contribution to the phenotype can be absorbed into $V_{S}$ (by replacing it by $V_{S}^{\u2032}=V_{S}+V_{E}$; e.g., Turelli, 1984; B\u00fcrger, 2000), we consider only the genetic contribution.\n\nThe population dynamics follow the standard model of a diploid, panmictic population of constant size $N$, with non-overlapping generations. In each generation, parents are randomly chosen to reproduce with probabilities proportional to their fitness (i.e. Wright-Fisher sampling with fertility selection), followed by mutation, free recombination (i.e. no linkage) and Mendelian segregation. We assume that the mutational input per site per generation is sufficiently small such that segregating sites are rarely more than bi-allelic (i.e. that $\\theta=4Nu\u226a1$, where $u$ is the mutation rate per site per generation). We therefore employ the infinite sites approximation, in which the number of mutations per gamete per generation follows a Poisson distribution with mean $U=L\u2062u$. The effect sizes of mutations, $\\pma$, are drawn from a symmetric distribution, that is, with equal probability of increasing or decreasing the trait value; we therefore specify this distribution in terms of the distribution of allele magnitudes, $g\u2062(a)$. Appendix 1\u2014table 1 provides a summary of our notation.\n\n### Evolutionary scenario and parameter ranges\n\nWe consider that at the outset (i.e. before the shift in optimal phenotype), the population has attained mutation-selection-drift balance. We follow previous work modeling this balance in making several plausible assumptions about parameter ranges (e.g. Simons et al., 2018), which ensure that genetic variation in the trait is highly polygenic, and subject to effective but not catastrophically strong selection. First, we assume that the per generation, population scaled mutational input is sufficiently large to guarantee high polygenicity (specifically, that $\\sqrt{2NU}\u226b1$). Second, we assume that the expected number of mutations affecting the trait per generation, per gamete, is small (specifically, that $U=L\u2062u\\leq0.02$), such that the loss in mean population fitness (i.e. the genetic load) is not too large. As an example, for this assumption to be violated in humans, the mutational target size, $L$, would have to exceed \u223c1.5 Mb (assuming that $u\u22481.25\u22c510^{\u22128}$ per bp per generation; Kong et al., 2012; Besenbacher et al., 2016). We note that we expect our results to hold for substantially greater values of $U$ in extensions of our model in which genetic variation in the trait under consideration has pleiotropic effects on other selected traits. Third, we make the standard assumption that the selection coefficients of all alleles satisfy $s\u226a1$, which implies that $s_{e}=a^{2}/V_{S}\u226a1$ (subscript $e$ for equilibrium; see below and Wright, 1931; Wright, 1935a; Turelli, 1984). Fourth, we assume that a substantial proportion of mutations are not effectively neutral, i.e., have $S=2Ns_{e}\u2a861$ (by \"$\u2a86$\"/\"$\u2a85$\" we mean greater/smaller than or on the same order as). This last assumption is supported by empirical estimates of persistence time of mutations contributing to quantitative genetic variation for a variety of traits and taxa (Walsh and Lynch, 2018; Sella and Barton, 2019) and by inferences based on human GWASs (Simons et al., 2018; Zeng et al., 2018; O\u2019Connor et al., 2019; Zeng et al., 2021), which indicate that quantitative genetic variation is not predominantly neutral. Under these assumptions, the phenotypic distribution at mutation-selection-drift balance is symmetric and tightly centered on the optimal phenotype (Figure 1). Specifically, the mean phenotype exhibits tiny, rapid fluctuations around the optimal phenotype with variance $\\delta^{2}=V_{S}/(2\u2062N)$ (Simons et al., 2018); the phenotypic standard deviation is considerably greater than these fluctuations, i.e., $\\sqrt{V_{A}}\u226b\\delta$ (Section 3.2 of Appendix 3), but it is substantially smaller than the width of the fitness function, that is, $V_{S}\u226bV_{A}$ (Simons et al., 2018 and Section 3.2 of Appendix 3).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/66697/elife-66697-fig1-v3.jpg)\n\n**Figure 1.:** The evolutionary scenario.\nBefore the shift in optimum, phenotypes are distributed symmetrically, with a mean that is very close to the old optimum and a standard deviation that is substantially smaller than the width of the fitness function ($V_{A}(0)\u226aV_{S}$). We consider the response to an instantaneous shift in optimum, for the case where the magnitude of the shift is smaller than the width of the fitness function ($\u039b\u2a85\\sqrt{V_{S}}$). See text for further details.\n\nWe then consider the response to an instantaneous shift of $\u039b$ in optimal phenotype at time $t=0$ (Figure 1), ensuring that the shift is substantial yet not immensely large when compared to the genetic variance in the trait and in terms of the reduction in mean population fitness. To these ends, we first assume that the shift in optimum is greater than the equilibrium fluctuations in mean phenotype, i.e., that $\u039b>\\delta$. Second, we assume that the shift is smaller than, or on the order of, the width of the fitness function ($\u039b\u2a85\\sqrt{V_{S}}$) and that the vast majority of mutations move the phenotype by much less than the distance over which fitness declines, $\\sqrt{V_{S}}$ (i.e. that $a\u226a\\sqrt{V_{S}}$). These two assumptions guarantee that the maximal directional selection coefficient of alleles, attained immediately after the shift, satisfies $s_{d}=2\u22c5(\u039b\u22c5a)/V_{S}\u226a1$ (see below and Wright, 1931; Barton and Turelli, 1986b). Our current condition on the magnitudes of mutations (i.e. that $a\u226a\\sqrt{V_{S}}$) is stronger than our earlier one at equilibrium (i.e., that $s_{e}=a^{2}/V_{S}\u226a1$), but is still not particularly restrictive, as it allows for the selection coefficients of alleles at equilibrium, $s_{e}$, to be as large as 1%. As a concrete example, with a population size of $N=10^{4}$, both this condition and the condition that a substantial proportion of mutations not be effectively neutral ($S=2\u2062N\u2062s_{e}\u2a861$) are satisfied if selection coefficients of alleles at equilibrium are exponentially distributed with mean between $10^{-5}$ and $10^{-3}$. Third, we assume that adaptation to the new optimum requires only a small average frequency change per segregating site, which translates into the requirement that $\u039b/\\sqrt{V_{A}(0)}\u2a851/2\u22c5\\sqrt{2NU}$ (see Section 3.2 of Appendix 3). Both this and the previous bound on the shift size (that $\u039b\u2a85\\sqrt{V_{S}}$) are again not particularly restrictive, in that they allow for shifts of several equilibrium phenotypic standard deviations (given that $\\sqrt{2\u2062N\u2062U}\u226b1$ and $V_{S}\u226bV_{A}\u2062(0)$ for this and the former bounds, respectively). Our assumptions on parameter values are summarized in Appendix 1\u2014table 2.\n\n### Choice of units\n\nWhen we study the allelic response, we use units based on the dynamics at mutation-selection-drift balance (i.e. before the shift in optimum). Using arbitrary units, and denoting corresponding parameter values with tildes, the population-scaled selection coefficient at mutation-selection-drift balance is $S=2Ns_{e}=2Na~^{2}/V~_{S}=a~^{2}/\\delta~^{2}$. We measure the trait in units of $\\delta$, the typical deviation of the population mean from the optimum. In these units, the magnitude of effect size $a=\\sqrt{S}$, the stabilizing selection parameter $V_{S}=2\u2062N$, and the contribution of a segregating allele to variance is $v^{*}\u2062(a,x)=2\u2062a^{2}\u2062x\u2062(1-x)$. As shown below, stating our results in these terms makes their form invariant with respect to the population size, $N$, and the strength of stabilizing selection, $V_{S}^{-1}$.\n\n### Simulations and resources\n\nWe compare our analytical results to three kinds of simulations, which differ in their simplifying assumptions and computational tractability (see Section 2 of Appendix 3 for further detail). The first realizes the full model described above; it is run for a burn-in period of $10\u2062N$ generations before the shift and for a period of $12\u2062N$ generations after, to attain equilibrium both before and after. The second traces all alleles rather than individuals, assuming linkage equilibrium (rather than free recombination). Changes to allele frequencies every generation are modeled according to the Wright-Fisher process. These second simulations are also run with a burn-in period of $10N$ generations before the shift, then for $12\u2062N$ generations after. The third kind of simulation traces the trajectory of a single allele segregating at the time of the shift. To that end: (i) given the effect size of the allele, we sample initial minor allele frequencies from the closed form, equilibrium distributions (Equation A3-27 in Appendix 3), using importance sampling based on the density of variance contributed by different minor allele frequencies (Section 3.1 of Appendix 3); and (ii) the trajectory of the mean phenotype of the population over time, on which the allele dynamics depend, is given as input, based on either an analytical approximation (see below) or on an average over simulations of the second kind. The single allele simulation is run until the focal allele fixes or goes extinct. Documented code for simulations can be found at https://github.com/sellalab/PolygenicAdaptation1D (copy archived at swh:1:rev:35d0857272a3929bad9fad0856e90c24e032b5ff; Hayward and Sella, 2022).\n\nIn the main text, we use the simulations that afford the highest resolution in comparisons with analytical predictions, whereas in Section 2.2 of Appendix 3 we validate our main results against simulations that realize the full model (at a lower resolution). Specifically, we compare most of the predictions about the allele dynamics with the results of single allele simulations, running 250,000 replicas for any given allele effect size and optimum shift size (see parameter choices below). The single allele simulations do not describe phenotypic change or the trajectories of mutations that arise after the shift in optimum, however. We therefore compare the predictions for these processes with the results of the all alleles simulations; in these simulations, we run 2500 replicas with any given set of parameters.\n\nThe simulations used in the main text correspond to the two qualitative phenotypic responses described below, which we refer to as the Lande and non-Lande (see Results). Specifically, we use the following simulation parameter values:\n\n## Results\n\n### Phenotypic response\n\nWe first consider how the population\u2019s mean phenotype approaches the new optimum. In Section 1.2 of Appendix 3, we express the mean distance from the new optimum, $D\u2062(t)$, as a sum over alleles\u2019 contributions. We show that under our assumptions, the expected, per generation change in this distance is well approximated by\n\n$$\nE(\u0394D(t))\u2248\u2212V_{A}(t)/V_{S}\u22c5D(t)+(1\u2212D^{2}(t)/V_{S})\u22c5\\mu_{3}(t)/(2V_{S}),\n$$\n\nwhere $V_{A}\u2062(t)$ and $\\mu_{3}\u2062(t)$ denote the 2nd and 3rd central moments of the phenotypic distribution. The 1st term on the right-hand side reflects selection to reduce the distance between the mean phenotype and the new optimum, which is proportional to this distance and to the additive genetic variance (Lande, 1976). The 2nd term reflects the effect of stabilizing selection on an asymmetric (skewed) phenotypic distribution. In particular, when the mean phenotype is near the optimum (and this 2nd term is approximately $\\mu_{3}\u2062(t)/(2\u2062V_{S})$), stabilizing selection pushes the mean phenotype in the direction opposite to the thicker tail of the phenotype distribution (see Section 1.2 of Appendix 3 for further discussion of Equation 3). Similar expressions were derived by Barton and Turelli, 1986b under the rare-alleles approximation and by B\u00fcrger, 1991 under the assumption of a parabolic fitness function.\n\nWe rely on Equation 3 to describe the phenotypic response to selection. This response takes a simple form in the infinitesimal limit (Fisher, 1918) in which genetic variation at equilibrium arises from infinitely many segregating alleles with infinitesimally small effect sizes (see Section 8 of Appendix 3 for details). In this limit, the equilibrium phenotypic distribution is Normal and it remains Normal with the same variance after the shift, because the change in mean phenotype is achieved by infinitesimally small changes to allele frequencies at infinitely many loci, with no change to the frequency distribution (Lande, 1976, and Section 8 of Appendix 3). Under these assumptions, Equation 3 reduces to\n\n$$\nE(\u0394D(t))=\u2212V_{A}(0)/V_{S}\u22c5D(t),\n$$\n\nwhich (in continuous time) is solved by\n\n$$\nD_{L}(t)=\u039b\u22c5Exp[\u2212V_{A}(0)/V_{S}\u22c5t].\n$$\n\nThis solution was first derived by Lande, 1976, and in what follows, we refer to it as Lande\u2019s solution or approximation. When genetic variance is dominated by loci with small and intermediate effect sizes (as defined below), the trait is highly polygenic, and the shift in optimum is not too large relative to the phenotypic standard deviation, changes to the 2nd and 3rd central moments of the phenotypic distribution are small and the expected phenotypic response is well approximated by Lande\u2019s solution (Figure 2A and Appendix 3\u2014figures 26 and 27).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/66697/elife-66697-fig2-v3.jpg)\n\n**Figure 2.:** The phenotypic response to a shift in optimal phenotype.\n(A) Cartoon of the two kinds of phenotypic response: (i) the Lande approximation, in which the mean approaches the new optimum exponentially with time and the phenotypic distribution maintains its shape; (ii) substantial deviations from Lande\u2019s approximation, in which the mean approaches the new optimum rapidly at first, but during this time the phenotypic distribution becomes skewed, causing the mean\u2019s approach to slow down dramatically, to a rate that is dictated by the decay of the 3rd central moment. (B) In both the Lande and non-Lande cases, the mean phenotype initially approaches the new optimum rapidly. This approach is described by Lande\u2019s approximation, and is thus almost identical in the two cases (which is why only the Lande curve is visible). The simulation results were generated using the all alleles simulation with a shift of $\u039b=4\u22c5\\sqrt{V_{A}\u2062(0)}$, as detailed in Simulations and resources. For each quantity described in B-D, we show the simulations\u2019 mean \u00b11.96 SE (solid lines and shaded regions, respectively). (C) In the non-Lande case, the phenotypic variance and skewness increase during the rapid phase and then take a very long time to decay to their values at equilibrium. (D) Over the longer-term, the approach to the optimum in the non-Lande case almost grinds to a halt, where its rate can be described by the quasi-static approximation (Equation 6). While the non-Lande response differs from Lande\u2019s approximation, the difference is small: the maximal deviation in mean phenotype is $\u223c0.06\u22c5\\sqrt{V_{A}\u2062(0)}$, the variance increases by \u223c 10% and the maximal skewness is tiny (less than 0.01).\n\nMore generally, given our assumptions that polygenicity is high and that the shift is not too large (see Section 6 of Appendix 3), the deviations from Lande\u2019s approximation are usually small and their magnitude is determined by the distribution of allele effect sizes (see section on The allelic response in the equilibration phase and Section 6 of Appendix 3). Specifically, changes to the 2nd and 3rd central moments of the phenotypic distribution are greater when alleles with large effects contribute markedly to genetic variance (Figure 2C, Appendix 3\u2014figures 26 and 27, and Barton and Turelli, 1986b). For some intuition, consider a pair of minor alleles with the same initial frequency and magnitude of effect, where the effect of one is aligned with the shift and the effect of the other opposes it. After the shift, directional selection increases the frequency of the aligned allele relative to that of the opposing one. The frequency increase of the aligned allele increases variance more than the frequency decrease of the opposing allele decreases it, resulting in a net increase to variance (Figure 2C; Barton and Turelli, 1986b; de Vladar and Barton, 2014; Jain and Stephan, 2017a). The relative changes in frequency and thus the net increase in variance are greater for alleles with larger effects. Next consider the 3rd central moment. At equilibrium, the contributions of alleles with opposing effects to the 3rd central moment cancel out. After the shift, the frequency increase of aligned alleles relative to opposing ones introduces a non-zero 3rd central moment (Figure 2C). Large effect alleles contribute substantially more to this 3rd central moment, plausibly because their individual contribution to the 3rd central moment at equilibrium is greater (see Section 3.3 of Appendix 3 and Appendix 3\u2014figure 7B) and because they exhibit larger relative changes in frequency after the shift (see section on The allelic response in the rapid phase and Section 4 of Appendix 3). The same reasoning suggests that very large shifts in optima or low polygenicity could also lead to substantial changes to the 2nd and 3rd central moments of the phenotypic distribution (Section 6 of Appendix 3 and Barton and Turelli, 1986b), but these cases violate our assumptions and are beyond the scope of this manuscript.\n\nThe increase in 2nd and 3rd central moments after the shift result in a phenotypic dynamic with two distinct phases. First, immediately after the shift, the mean phenotype rapidly approaches the new optimum, akin to the exponential approach in Lande\u2019s approximation. In this case, however, genetic variance increases and thus the exponential rate of approach may increase, making the expected approach even faster (Equation 3). Shortly thereafter, when the mean phenotype nears the optimum, the decreasing distance and increasing 3rd central moment reach the point at which\n\n$$\nD\u2062(t)\u2248\\mu_{3}\u2062(t)/(2\u2062V_{A}\u2062(t)).\n$$\n\nThe two terms on the right-hand side of Equation 3 then approximately cancel out, and the dynamic enters a second, prolonged phase, in which the approach to the optimum nearly grinds to a halt (Figure 2D). During this phase, the expected change in mean phenotype can be described in terms of a quasi-static approximation given by Equation 6 (Figure 2D and Appendix 3\u2014figure 25). The rate of approaching the optimum is then largely determined by the rate at which the 3rd central moment decays. This roughly corresponds to the rate at which the allele frequency distribution equilibrates and mutation-selection-drift balance is restored around the new optimum (see section on Other properties of the equilibration process).\n\n### Allele dynamics\n\nWe now turn to the allele dynamics that underlie the phenotypic response. These dynamics can be described in terms of the first two moments of change in frequency in a single generation (Ewens, 2004, Chapter 4). For an allele with effect size $\\pma$ and frequency $x$, we calculate the moments by averaging the fitness of the three genotypes over genetic backgrounds (Section 1 of Appendix 3). Under our assumptions, the moments are well approximated by\n\n$$\nE\u2062(\u0394\u2062x)\u2248(\\pma\u22c5D\u2062(t)/V_{S})\u22c5x\u2062(1-x)-(a^{2}/V_{S})\u22c5(1-D^{2}\u2062(t)/V_{S})\u22c5x\u2062(1-x)\u2062(1/2-x)\n$$\n\nand\n\n$$\nV(\u0394x)\u2248x(1\u2212x)/(2N),\n$$\n\nwhich is the standard drift term. Similar expressions for the first moment trace back to Wright, 1935b and have been used previously to study the response to selection on quantitative traits (Barton, 1986a; B\u00fcrger, 1991; Charlesworth, 2013; de Vladar and Barton, 2014).\n\nThe two terms in the first moment reflect different modes of selection: directional and stabilizing, respectively. The first term arises from directional selection on the trait and takes a semi-dominant (additive) form with selection coefficient $s_{d}=\\pm2\u2062a\u22c5D\u2062(t)/V_{S}$. Its effect is to increase the frequency of alleles whose effects are aligned with the shift (and vice versa) and its strength weakens as the distance to the new optimum, $D$, decreases. The second term arises from stabilizing selection on the trait and takes an under-dominant form with selection coefficient $s_{e}=a^{2}/V_{S}\u22c5(1-D^{2}\u2062(t)/V_{S})$. Its effect is to decrease an allele\u2019s contribution to phenotypic variance, $2\u2062a^{2}\u2062x\u2062(1-x)$, by reducing minor allele frequency (MAF); it becomes weaker as the MAF approaches 1/2.\n\nThe relative importance of the two modes of selection varies as the mean distance to the new optimum, $D$, decreases. We therefore divide the allelic response into two phases: a rapid phase, immediately after the shift, in which the mean distance to the new optimum is substantial and changes rapidly, and a subsequent, prolonged equilibration phase, in which the mean distance is small and changes slowly (Jain and Stephan, 2017a). We define the end of the rapid phase as the time, $t_{1}$, at which Lande\u2019s approximation for the distance to the optimum $D_{L}\u2062(t_{1})$ equals the typical deviation of the population mean from the optimum at equilibrium $\\delta=\\sqrt{V_{S}/2N}$, i.e.,\n\n$$\nt_{1}\u2261(V_{S}/V_{A}(0))\u22c5Ln[\u039b/\\delta]\u223c(1/U)\u22c5Ln[\u039b/\\delta]\n$$\n\n(in Section 3.2 of Appendix 3 we show that $V_{S}/V_{A}\u2062(0)\u223c1/U$). This definition is somewhat arbitrary, as the transition between phases is gradual, but it roughly captures the change in allele dynamics (Appendix 3\u2014figure 25). Moreover, our analysis is insensitive to this particular choice (we only use it in comparing analytic and simulation results for the rapid phase).\n\nThe change in mean phenotype during the rapid phase is driven by the differential effect of directional selection on minor alleles whose effects are aligned and opposed to the shift in optimum (Figure 3). Considering a pair of minor alleles with opposing effects of the same magnitude and the same initial frequency, selection increases the frequency of the aligned allele relative to the opposing one. By the end of the rapid phase, the frequency differences across all aligned and opposing alleles drive the mean phenotype close to the new optimum (Figure 2A). Deviations from Lande\u2019s approximation manifest as prolonged, weak directional selection during the equilibration phase, which further increases the expected frequency difference between aligned and opposing alleles. However, given that we are considering a highly polygenic trait, the expected frequency difference between a pair of opposing alleles will be small. This small difference causes aligned alleles to have a slightly greater probability of eventually fixing during the equilibration phase (Figure 3). Over a period on the order of $2\u2062N$ generations (see below), the frequency differences between aligned and opposing alleles are replaced by a slight excess of fixed differences between them, and the equilibrium genetic architecture is restored around the new optimum. In the following sections, we describe these processes quantitatively: Specifically, we ask how the relative contribution of alleles to phenotypic change during the two phases depends on their effect size and initial frequency.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/66697/elife-66697-fig3-v3.jpg)\n\n**Figure 3.:** A cartoon of allele dynamics.\nWe divide the allele dynamics into rapid and equilibration phases, based on the rate of phenotypic change, and consider the trajectories of alleles with opposing effects of the same magnitude, which start at the same initial minor frequency. During the rapid phase, alleles whose effects align with the shift slightly increase in frequency relative to those with opposing effects. During the equilibration phase, this frequency difference can increase further and eventually leads aligned alleles to fix with slightly greater probabilities than opposing ones.\n\n### The allelic response in the rapid phase\n\nWe can describe changes to allele frequencies during the rapid phase with a simple deterministic approximation. The duration of the rapid phase is much shorter than the time scale over which genetic drift has a substantial effect ($t_{1}\u223c1/U\u226a2\u2062N$ generations; see Equation 9), allowing us to rely only on the first moment of change in allele frequency (Equation 7). Additionally, deviations of the distance $D\u2062(t)$ from Lande\u2019s approximation during this phase have negligible effects (Figure 2B and Appendix 3\u2014figure 8D\u2013F), allowing us to assume that $D(t)=D_{L}(t)$ (Equation 5). Lastly, when relative frequency changes are small, we can substitute the frequency in the first moment by its initial value. With these simplifications, we can integrate the first moment over time to obtain an explicit linear approximation for frequency changes.\n\nConsider a pair of minor alleles with opposing effects of size $\\pma$ and initial frequency $x_{0}$ before the shift in optimum. Using our linear approximation, we find that the frequency difference between them at the end of the rapid phase is\n\n$$\n\u0394x_{t_{1}}^{\u2217}(a,x_{0})=x_{t_{1}}(a,x_{0})\u2212x_{t_{1}}(\u2212a,x_{0})\u22482\u22c5(a/V_{S})\u22c5x_{0}(1\u2212x_{0})\\int_{0}^{t_{1}}D_{L}(t)dt=(\u039b\u2212D_{L}(t_{1}))\u22c52ax_{0}(1\u2212x_{0})/V_{A}(0).\n$$\n\nThe contribution of the pair to the change in mean phenotype is\n\n$$\n\u0394z_{t_{1}}^{\u2217}(a,x_{0})=2a\u22c5\u0394x_{t_{1}}^{\u2217}(a,x_{0})\u2248(\u039b\u2212D_{L}(t_{1}))\u22c52\u22c5v^{\u2217}(a,x_{0})/V_{A}(0),\n$$\n\nwhere $v^{*}\u2062(a,x_{0})=2\u2062a^{2}\u2062x_{0}\u2062(1-x_{0})$ is the contribution to variance of an allele with magnitude $a$ and frequency $x_{0}$. Thus, the pair\u2019s contribution to phenotypic change is proportional to its contribution to phenotypic variance before the shift in optimum.\n\nThe expected contribution of alleles with a given magnitude and initial frequency is therefore proportional to their expected contribution to phenotypic variance at equilibrium, before the shift occurs. We focus on the contribution of alleles divided by the mutation rate at which they are introduced into the population, that is the \u2018contribution per unit mutational input\u2019. To this end, we measure the trait value in units of $\\delta=\\sqrt{V_{S}/(2N)}$ and express allele magnitudes in terms of the scaled selection coefficients at equilibrium (when $D=0$); in these units $S=2\u2062N\u2062s_{e}=a^{2}$ (see Choice of units). Expressing our results in this form makes them invariant with respect to changing the population size, $N$, stabilizing selection parameter, $V_{S}$, mutational input per generation, $2\u2062N\u2062U$, and distribution of magnitudes, $g\u2062(a)$. In these terms, the expected contribution of alleles with given magnitude and initial MAF to phenotypic change is\n\n$$\n\u0394\u2062z_{t_{1}}\u2062(a,x_{0})\u2248(\u039b-D_{L}\u2062(t_{1}))\u22c5v\u2062(a,x_{0})/V_{A}\u2062(0),\n$$\n\nand the marginal contribution of alleles with a given magnitude is\n\n$$\n\u0394z_{t_{1}}(a)=\\int_{0}^{1/2}\u0394z_{t_{1}}(a,x)dx\u2248(\u039b\u2212D_{L}(t_{1}))\u22c5v(a)/V_{A}(0),\n$$\n\nwhere $v(a,x_{0})\u22484a^{2}\u22c5Exp[\u2212a^{2}x_{0}(1\u2212x_{0})]$ and $v(a)\u22484a^{2}\u22c5\\int_{0}^{1/2}Exp[\u2212a^{2}x(1\u2212x)]dx=4a\u22c5D_{+}(a/2)$ are the corresponding densities of variance per unit mutational input at equilibrium, and $D_{+}$ is the Dawson function (Section 3.2 of Appendix 3). The expected absolute contributions follow from multiplying these expressions by the mutational input per generation, $2\u2062N\u2062U\u22c5g\u2062(a)$. Specifically, as we would expect, the total change in mean phenotype during the rapid phase is $2NU\u22c5\u0394z_{t_{1}}=2NU\u22c5\\int_{0}^{\u221e}\u0394z_{t_{1}}(a)\u22c5g(a)da\u2248\u039b\u2212D_{L}(t_{1})$, as $V_{A}(0)=2NU\u22c5\\int_{0}^{\u221e}v(a)\u22c5g(a)da$.\n\nThe relative contribution of alleles with a given magnitude and initial MAF to phenotypic change follows from their expected contribution to variance at equilibrium (Equations 12 and 13, and Figure 4). The properties of $v\u2062(a)$ imply that (Figure 4A): (i) the relative contribution of alleles with small effect sizes ($a^{2}\u226a1$) scale linearly with $S=a^{2}$ ($v(a)\u22482a^{2}$, measured in units of $\\delta^{2}$); (ii) the contribution of alleles with moderate and large effect sizes (roughly $S=a^{2}>3$) are much greater, and fairly insensitive to the effect size (with $v\u2062(a)\u22484$); and (iii) the contribution is maximized for $a^{2}\u224810$ ($v(\\sqrt{10})\u22485.2$) (see Simons et al., 2018, for intuition about these properties). While large and moderate effect alleles make similar contributions to phenotypic change, MAFs of large effect alleles before the shift are much lower than MAFs of moderate ones (Figure 4B), because they are subject to stronger stabilizing selection. The expected frequency difference between pairs of opposing alleles is greatest for moderate effect sizes (Figure 4C), because it is proportional to $E\u2062(2\u2062a\u2062x_{0}\u2062(1-x_{0}))\u221dv\u2062(a)/a$ (Equation 10), and $v\u2062(a)$ is similar for moderate and large effect sizes. Additional properties of the allelic response during the rapid phase are presented in Section 4 of Appendix 3.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/66697/elife-66697-fig4-v3.jpg)\n\n**Figure 4.:** The allelic response during the rapid phase.\n(A) Alleles with moderate and large magnitudes make the greatest contribution to phenotypic change (per unit mutational input). The results of our linear approximation (derived in the main text) are compared with a more accurate nonlinear one (derived in Section 4.1.2 of Appendix 3) and with simulations. (B) The average MAF of aligned and opposing alleles at the end of the rapid phase decreases with effect size squared. (C) The expected frequency difference between pairs of opposing alleles is greatest for moderate effect sizes. In B and C, the results of the nonlinear approximation are compared with simulations. The simulation results in all panels were were generated using the single allele simulation, as detailed in Simulations and resources; error bars are not visible because they are smaller than the points.\n\nWhen the polygenicity is low and/or the shift in optimum or effect sizes are large our linear approximation becomes less accurate (Figure 4A). Specifically, minor alleles exhibit large relative changes in frequency such that substituting the initial MAF for the frequency in Equation 7 for the 1st moment is inaccurate. In Section 4.1.2 of Appendix 3 we derive a nonlinear approximation that is more accurate in these cases (Figure 4A and Appendix 3\u2014figures 9 and 10). Nonetheless, the qualitative behaviors we outlined remain intact.\n\n### The allelic response in the equilibration phase\n\nOver the long run, the small frequency differences between opposite alleles that accrue during the rapid phase translate into small differences in their fixation probabilities (Figure 3). In the non-Lande case, prolonged weak directional selection during the equilibration phase amplifies these differences in fixation probabilities. We approximate fixation probabilities in two steps. First, we model the effect of directional selection on frequency as an instantaneous, deterministic pulse. Second, we apply the diffusion approximation for the fixation probability (Ewens, 2004, Chapter 4), assuming stationary stabilizing selection ($D=0$), genetic drift, and the initial frequency after the pulse. We further assume that the relative changes in allele frequencies due to directional selection are small, such that we can use approximations that are linear in this change; but in Section 5 of Appendix 3, we derive nonlinear approximations that relax this assumption.\n\n### The Lande case\n\nWhen Lande\u2019s approximation is accurate, directional selection is non-negligible only briefly after the shift. This justifies approximating its effects as if they were caused by an instantaneous pulse. It also suggests that mutations that arise after the shift in optimum contribute negligibly to phenotypic change, because when directional selection is non-negligible, few of them arise and their fixation probabilities are tiny (given that they start from an initial frequency of $1/2\u2062N$).\n\nConsider a pair of opposite minor alleles, with magnitude $a$ and initial frequency $x_{0}$. Analogously to our derivations for the rapid phase (Equations 10, 11 and 12) by modeling the effects of directional selection on their frequencies as an instantaneous pulse, and assuming that these effects are small, we find that the resulting frequency differences between them is approximated by\n\n$$\n\u0394x_{d}^{\u2217}(a,x_{0})\u2261x_{d}(a,x_{0})\u2212x_{d}(\u2212a,x_{0})\u22482ax_{0}(1\u2212x_{0})\u22c5\\int_{0}^{\u221e}(D_{L}(\\tau)/V_{S})d\\tau=2ax_{0}(1\u2212x_{0})\u22c5\u039b/V_{A}(0).\n$$\n\nConsequently, the pair\u2019s expected contribution to phenotypic change is approximated by\n\n$$\n\u0394z_{d}^{\u2217}(a,x_{0})\u22612a\u22c5\u0394x_{d}^{\u2217}(a,x_{0})\u22482\u039b\u22c5v^{\u2217}(a,x)/V_{A}t(0),\n$$\n\nand the contribution of such pairs per unit mutational input is approximated by\n\n$$\n\u0394z_{d}^{L}(a,x_{0})\u2248\u039b\u22c5v(a,x)/V_{A}(0),\n$$\n\nwhere, as before, $v^{*}\u2062(a,x)=2\u2062a^{2}\u2062x\u2062(1-x)$ is an allele\u2019s contribution to genetic variance and $v\u2062(a,x)$ is the density of variance per unit mutational input at equilibrium, and we use the superscript $L$ to denote that this applies to the Lande case.\n\nWe approximate a pair\u2019s expected long-term, fixed contribution to phenotypic change by calculating the difference in fixation probabilities of the opposite alleles given their frequency after the pulse, again assuming that the effects of the pulse are small. Namely,\n\n$$\n\u0394z_{\u221e}^{\u2217}(a,x_{0})\u22482a(\\pi(a,x_{d}(a,x_{0}))\u2212\\pi(a,x_{d}(\u2212a,x_{0})))\u22482a\u22c5\\frac{\u2202\\pi}{\u2202x}(a,x_{0})\u22c5\u0394x_{d}^{\u2217}(a,x_{0})=\\frac{\u2202\\pi}{\u2202x}(a,x_{0})\u22c5\u0394z_{d}^{\u2217}(a,x_{0}).\n$$\n\nwhere $\\pi\u2062(a,x)$ denotes the fixation probability of an allele with magnitude $a$ and initial frequency $x$ under stationary stabilizing selection and drift. In Section 3 of Appendix 3 we derive the diffusion approximation for $\\pi\u2062(a,x)$ and show that\n\n$$\n\\frac{\u2202\\pi}{\u2202x}(a,x_{0})=2f(a)/v(a,x_{0}),\n$$\n\nwhere $f(a)\u22612a^{3}\u22c5Exp[\u2212a^{2}/4]/(\\sqrt{\\pi}\u22c5Erf[a/2])$. From Equation 14-18, we find that the expected fixed contribution per unit mutational input of pairs of alleles is\n\n$$\n\u0394z_{\u221e}^{L}(a,x_{0})\u2248\\frac{\u2202\\pi}{\u2202x}(a,x_{0})\u22c5\u0394z_{d}^{L}(a,x_{0})\u22482\u039b\u22c5f(a)/V_{A}(0).\n$$\n\nNote that this expression does not depend on the initial frequency! The expected marginal contribution of alleles with a given magnitude follows and is\n\n$$\n\u0394z_{\u221e}^{L}(a)=\\int_{0}^{1/2}\u0394z_{\u221e}(a,x)dx\u2248\u039b\u22c5f(a)/V_{A}(0).\n$$\n\nHence, the function $f$ approximates how the relative long-term contribution of alleles depends on their magnitudes (Figure 5A).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/66697/elife-66697-fig5-v3.jpg)\n\n**Figure 5.:** The long-term (fixed) allelic contribution to phenotypic adaptation.\nWe show the relative contribution of alleles as a function of effect size squared, based on the linear approximations and on simulations with the two shift sizes specified in the caption. (A) The Lande case. The theoretical prediction is described by the function $f\u2062(a)$ (Equations 13 and 20), and simulation results were generated using the single allele simulation, as detailed in Simulations and resources; error bars are not visible because they are smaller than the points. Our prediction for the long-term contribution (corresponding to $f\u2062(a)$) is always below the prediction for the rapid phase (corresponding to $v\u2062(a)$). The difference becomes substantial for $a^{2}\u2a864$, implying that the linear Lande approximation underestimates the fixed contribution when large effect alleles contribute markedly to the genetic variance at equilibrium. (B) The non-Lande case. Here, we assume an exponential distribution of effect sizes squared with $E\u2062(a^{2})=16$, which yields an amplification factor of $1+C\u22482.2$ (Equation 22). The theoretical prediction for the joint contribution of standing variation and new mutations is described by the function $(1+C)\u22c5f(a)\u039b/V_{A}(0)$ (Equation 28). Simulation results were generated using the all alleles simulation for the non-Lande case (see section on Simulations and resources). Specifically, we calculated the relative contribution of alleles in each effect size bin (between the gray gridlines), by dividing the contribution of all fixations in the bin by the mutation rate per generation corresponding to that bin. In both Lande and non-Lande cases, long-term stabilizing selection diminishes the contribution of alleles with large effects (red arrows). In the non-Lande case, long-term, weak directional selection greatly amplifies the contribution of alleles with small and moderate effects (blue arrow). See Appendix 3\u2014figures 12\u201319 for other attributes of the long-term allelic response and for the nonlinear approximations.\n\nWe expect the total long-term allelic contribution to equal the shift in optimum, $\u039b$. In our linear Lande approximation, the total contribution is\n\n$$\n2NU\u22c5\u0394z_{\u221e}^{L}=2NU\u22c5\\int_{0}^{\u221e}\u0394z_{\u221e}^{L}(a)\u22c5g(a)da\u2248\u039b\u22c5\\frac{2NU\u22c5\\int_{0}^{\u221e}f(a)\u22c5g(a)da}{V_{A}(0)}=\u039b\u22c5\\frac{\\int_{0}^{\u221e}f(a)\u22c5g(a)da}{\\int_{0}^{\u221e}v(a)\u22c5g(a)da}=\\frac{\u039b}{1+C},\n$$\n\nwhere we use the fact that $V_{A}(0)=2NU\u22c5\\int_{0}^{\u221e}v(a)\u22c5g(a)da$ and define\n\n$$\nC\u2261\\frac{\\int_{0}^{\u221e}v(a)\u22c5g(a)da}{\\int_{0}^{\u221e}f(a)\u22c5g(a)da}\u22121.\n$$\n\n$C$ measures the extent to which our approximation underestimates the long-term phenotypic change. We note that $C>0$ for any distribution of allele magnitudes, because $v(a)>f(a)$ for any magnitude $a$ (Figure 5A), and further that $C\u226a1$ is a necessary condition for our approximation to be accurate. Given that $v\u2062(a)$ is appreciably greater than $f\u2062(a)$ only for $a^{2}\u2a864$ (Figure 5A), this condition implies that for our approximation to be accurate, the vast majority of the genetic variance at equilibrium must arise from alleles with $a^{2}<4$.\n\nWhen alleles with larger effects contribute substantially to the variance at equilibrium (and $C$ is appreciable), Lande\u2019s approximation becomes inaccurate. The prevalence of large effect alleles leads to a quasi-static decay of the mean distance from the new optimum, $D$, during the equilibration phase (Figure 2D and the section on the Phenotypic response). For the distance during the equilibration phase, and therefore for the deviations from Lande\u2019s phenotypic approximation to be substantial, would require that $C\u226b1$ (see Section 6 of Appendix 3), which implies that the vast majority (e.g. > 90%) of the genetic variance at equilibrium arises from alleles with large effect sizes, say with $a^{2}\u226b4$ (see Figure 5A and Equation 22). Even a small distance $D$ during the equilibration phase, however, would result in prolonged, weak directional selection that could markedly amplify the difference in fixation probabilities between opposite alleles. Our linear Lande approximation does not account for this amplification, and it could therefore greatly underestimate the total long-term allelic contribution.\n\n### The non-Lande case\n\nWe can, however, extend our approximation to account for the amplification in the non-Lande case. To this end, we modify our instantaneous pulse approximation for a pair of opposite alleles (Equation 14) to\n\n$$\n\u0394x_{d}^{\u2217}(a,x_{0})\u2261x_{d}(a,x_{0})\u2212x_{d}(\u2212a,x_{0})\u22482ax_{0}(1\u2212x_{0})\u22c5(1+A)\u22c5\u039b/V_{A}(0),\n$$\n\nwhere the factor $A>0$ accounts for the greater effect of directional selection relative to the Lande case (with the caveat that the justification for the instantaneous pulse approximation is less obvious in the non-Lande case, given prolonged, weak directional selection; see Section 5.2 of Appendix 3). Following the same steps as taken in the Lande case, we then find that the expected long-term (fixed) contribution per unit mutational input of pairs of alleles with a given magnitude and initial MAF is\n\n$$\n\u0394z_{\u221e}(a,x_{0})\u22482\u22c5(1+A)\u22c5\u039b\u22c5f(a)/V_{A}(0)\n$$\n\nand that their expected marginal contribution for a given magnitude is\n\n$$\n\u0394\u2062z_{\u221e}^{v}\u2062(a)\u2248(1+A)\u22c5\u039b\u22c5f\u2062(a)/V_{A}\u2062(0),\n$$\n\nwhere the superscript $v$ denotes that these contributions originate from variation that segregated before the shift in optimum.\n\nIn the non-Lande case, the fixation of mutations that arise after the shift in optimum can also contribute substantially (Appendix 3\u2014figure 21B), because prolonged, weak directional selection can produce a substantial difference in the numbers of fixations of mutations with opposite effects. In Section 5.2.2 of Appendix 3, we follow the same approach that applied for standing variation to show that the relative long-term contribution of new mutations with a given magnitude can be approximated by\n\n$$\n\u0394\u2062z_{\u221e}^{m}\u2062(a)\u2248B\u22c5\u039b\u22c5f\u2062(a)/V_{A}\u2062(0),\n$$\n\nwhere the factor $B>0$ does not dependent on the magnitude (Section 5.2.2 of Appendix 3). Thus, similar to what we found in the Lande case, the function $f$ approximates how the relative long-term contribution of alleles depends on their magnitudes, but here it applies to both standing variation and new mutations (Figure 5B).\n\nTo gain further understanding of the non-Lande case, we consider the joint contribution of standing variation and new mutations. Equating the total contribution with the shift in optimum we find that\n\n$$\n2NU\u22c5\u0394z_{\u221e}=2NU\u22c5(\u0394z_{\u221e}^{v}+\u0394z_{\u221e}^{m})\u2248\\frac{1+A+B}{1+C}\u22c5\u039b=\u039b,\n$$\n\nwith $C$ defined in Equation 22. This implies that $A+B=C$ and that the proportional contributions of standing variation and new mutations are $(1+A)/(1+C)$ and $B/(1+C)$, respectively. It also implies that the contribution per unit mutational input of alleles with a given magnitude $a$ is\n\n$$\n\u0394\u2062z_{\u221e}\u2062(a)=\u0394\u2062z_{\u221e}^{v}\u2062(a)+\u0394\u2062z_{\u221e}^{m}\u2062(a)\u2248(1+C)\u22c5\u0394\u2062z_{\u221e}^{L}\u2062(a)=(1+C)\u22c5\u039b\u22c5f\u2062(a)/V_{A}\u2062(0).\n$$\n\nThus, in the linear non-Lande approximation, prolonged weak directional selection amplifies the relative contribution of alleles of any given magnitude by the same factor of $(1+C)$ (Figure 5B and Appendix 3\u2014figure 19). $C$ is therefore an allelic measure of the deviation from Lande\u2019s approximation (see Appendix 3\u2014figures 20 and 21), and, intriguingly, it depends only on the distribution of mutation magnitudes (Equation 22).\n\nIn Section 5 of Appendix 3, we show that the linear approximations are accurate when $a\u22c5(1+A)\u22c5\u039b/V_{A}(0)\u226a1$ (with $A=0$ in the Lande case) and we derive nonlinear approximations that are more accurate when this condition is violated (Figure 4A and Appendix 3\u2014figures 13 and 16). When polygenicity is low, the shift in optimum is large, or effect sizes are large, directional selection causes large relative changes in MAFs, such that the use of the initial MAF in the instantaneous pulse approximation (i.e. in Equations 14 and 23) and the Taylor approximation of fixation probabilities (Equation 17) become inaccurate. Even in these cases, however, the linear approximations capture the salient features of the long-term allelic contribution to phenotypic adaptation (Figure 5 and Appendix 3\u2014figures 13\u201319).\n\n### Turnover in the genetic basis of adaptation\n\nNotably, our linear approximations capture the dramatic turnover in the genetic basis of adaptation during the equilibration phase (Figure 6). In the long run, the short-term contribution of large effect alleles ($S=a^{2}\u2a8630$) is almost entirely wiped out, and is supplanted by the contribution of moderate effect alleles ($a^{2}\u22485$) (Figure 6A and Appendix 3\u2014figures 15 and 19). Moreover, for any given magnitude, the proportional long-term contribution of minor alleles that segregated at low frequencies before the shift is diminished relative to their short-term contribution, all the more so for large effect sizes (Figure 6B and Appendix 3\u2014figure 14). For instance, for an effect size $a^{2}=35$, minor alleles with initial frequencies below 0.05 account for more than 99% of the short-term contribution but for only \u223c10% of the (much smaller) long-term contribution (Figure 6B and Appendix 3\u2014figure 14).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/66697/elife-66697-fig6-v3.jpg)\n\n**Figure 6.:** The genetic basis of adaptation turns over during the equilibration phase.\n(A) The short-term contribution of large effect alleles is supplanted by the contribution of moderate effect alleles. As an illustration, we show the results of the linear approximation for the non-Lande case in Figure 5B (Equations 13 and 28). Specifically, we weight the short- and long-term relative contributions by the density of effect size squared (given $E\u2062(a^{2})=16$) and use a linear (rather than log) scale for the effect sizes squared. This way we can see that the decrease in the contribution of large effect alleles (shaded dark gray area) equals the increase in the contribution of moderate effect alleles (shaded blue area). (B) The proportional long-term contribution of alleles that segregated at low MAFs before the shift is diminished relative to their short-term contribution, an effect most pronounced for large effect sizes. As an illustration, we show the linear approximations for the contribution of alleles with a given effect size as a function of their initial MAF (Equations 12, 19 and 24) for the same non-Lande case as in A, with a shift of $\u039b=2\u2062\\sqrt{V_{A}\u2062(0)}$. To this end, we estimate the amplification factor for standing variation ($1+A$) using all alleles simulations for the non-Lande case (see section on Simulations and resources and Section 5.2 of Appendix 3). In both the Lande and non-Lande cases, long-term stabilizing selection diminishes the contribution of alleles with lower initial MAF and amplifies the contribution of alleles with higher initial MAF (red arrows). In the non-Lande case, prolonged, weak directional selection amplifies the contribution of alleles, regardless of their initial MAF (blue arrow).\n\nWe can understand this turnover by considering the effects of stabilizing selection during the equilibration phase (Appendix 2\u2014figure 2). As noted, stabilizing selection on the trait induces selection against minor alleles, which weakens as MAF increases and vanishes at MAF $=1/2$. Now consider how it affects a pair of alleles with opposite, moderate or large effect. If their initial frequencies are very low, both alleles will have low MAFs at the end of the rapid phase. Consequently, they will both be strongly selected against during the equilibration phase and will almost certainly go extinct (Appendix 2\u2014figure 2). In the long run, their expected contribution to phenotypic adaptation is therefore diminished. In contrast, if the alleles\u2019 initial MAF is sufficiently high, the relative increase in the aligned allele\u2019s frequency by the end of the rapid phase causes it to be subject to substantially weaker selection than is the opposing allele. In the extreme in which the aligned allele has exceeded frequency $1/2$, the direction of selection on it is even reversed (Appendix 2\u2014figure 2). In such cases, the pair\u2019s expected contribution to phenotypic adaptation will be amplified. This reasoning suggests that, for a given magnitude, there is a critical initial MAF such that the long-term contribution of alleles that start above it is amplified and the contribution of those that start below it is diminished (Figure 6B and Appendix 2\u2014figure 3). This critical frequency is lower in the non-Lande case, because prolonged, weak directional selection amplifies the long-term contribution from alleles with any initial MAF.\n\nThe turnover among alleles with different magnitudes can be explained in similar terms. Alleles with large magnitudes almost always start from low MAF, because they are subject to strong stabilizing selection before the shift (Figure 4B). Consequently, they are highly unlikely to exceed the critical initial frequency and their expected long-term contribution to phenotypic adaptation is diminished (Figures 5A and 6A). However, changes to the frequencies of these alleles skew the phenotypic distribution, leading to prolonged, weak directional selection that amplifies the long-term contribution of small and moderate effect alleles (Figure 6B). In our linear approximation, this amplification will occur for allele magnitudes that satisfy $(1+C)\u22c5f\u2062(a)\u2a86v\u2062(a)$ (Figure 5B). These considerations explain why the contributions of alleles with small and moderate effects supplant those of alleles with large effects (Figures 5A and 6A). They also highlight that deviations from Lande\u2019s approximation are critical to understanding the allelic response, even when they have small phenotypic effects.\n\n### Other properties of the equilibration process\n\nWhile long-term phenotypic adaptation arises from an excess in fixations of aligned relative to opposing alleles, this excess and the increase in the total number of fixations are typically small relative to the number of fixations at equilibrium (Figure 7). The relative excess of aligned fixations (defined as $(\\pi\u2062(a)-\\pi\u2062(-a))/(\\pi\u2062(a)+\\pi\u2062(-a))$) and the relative increase in total fixations (compared to the expected number at equilibrium) both decrease with increased polygenicity and increase with the shift in optimum and allele magnitude (Figure 7B and C). For sufficiently large effect sizes, practically all fixations are caused by the shift and are of aligned alleles (Figure 7B and C). However, with the exception of extreme cases in which the contribution of alleles of small and moderate effects to genetic variance is negligible, the number of fixations of such large effect alleles and their contribution to phenotypic change will be small (Figures 5 and 7). Typically, most fixations and contribution to phenotypic change will arise from alleles with small and moderate effects (Figures 5 and 7), for which the proportional excess of aligned and total fixations is modest (Figure 7B and C).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/66697/elife-66697-fig7-v3.jpg)\n\n**Figure 7.:** While long-term phenotypic adaptation arises from an excess in fixations of aligned relative to opposing alleles, this excess and its effect on the total number of fixations is typically small.\n(A) The fixation probabilities of aligned and opposing alleles segregating before the shift, as a function of their effect size squared. Simulation results were generated using the single alleles simulation, as detailed in Simulations and resources; error bars are not visible because they are smaller than the points. Analytic predictions in all panels were calculated using the nonlinear Lande approximation derived in Section 5.3 of Appendix 3. For large effect sizes, the fixation probabilities become vanishingly small, whereas for small and moderate effect sizes, the difference in the fixation probabilities of alleles with opposing effects is small. (B) The relative excess of fixations of aligned alleles as a function of effect size squared. (C) Polygenic adaptation typically adds a small number of fixations relative to the number at equilibrium. For large effect sizes, the relative increase in number is large, but their absolute number and the corresponding contribution to phenotypic adaptation are extremely small.\n\nIn the long run, these fixations move the mean phenotype all the way to the new optimum, and genetic variation around the new optimum returns to equilibrium. A proxy for the approach to equilibrium is the \u2018fixed distance from the optimum\u2019, defined as the phenotypic distance of an individual that is homozygous for the ancestral allele at every segregating site; at equilibrium, we expect the fixed distance to be $0$. Our simulations suggest that, under a broad range of parameter values, the change in fixed distance after the shift is well approximated by an exponential decay with a rate of $1/(2\u2062N)$ per generation (Figure 8 and Appendix 3\u2014figure 28). This approximation is remarkably accurate in the Lande case. In the non-Lande case, the decay is initially slower than the approximation suggests, possibly because the long-term contribution of new mutations (as opposed to standing variation) takes longer to amass. In both cases, the return to equilibrium occurs on a time scale of $2\u2062N$ generations after the shift (Figure 8 and Appendix 3\u2014figure 28).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/66697/elife-66697-fig8-v3.jpg)\n\n**Figure 8.:** Equilibrium around the new optimum is restored on a time scale of $2\u2062N$ generations after the shift.\nThe change in fixed distance after the shift estimated using all alleles simulations for the Lande and non-Lande cases (see section on Simulations and resources) is compared with an exponential decay with a rate of $1/(2\u2062N)$ per generation. See Appendix 3\u2014figure 28 for similar comparisons using a broad range of model parameter values.\n\n## Discussion\n\nHere, we investigated the phenotypic and genetic adaptive response to selection on a highly polygenic quantitative trait in a simple yet highly relevant setting, in which a sudden change in environment shifts the trait\u2019s optimal value. The phenotypic response to selection was previously studied by Lande, 1976. Assuming that phenotypes are normally distributed in the population, he predicted that after the shift the population\u2019s mean phenotype will approach the new optimum exponentially, at a rate that is proportional to the additive genetic variance in the trait. The Normality assumption, however, was only shown to hold in an infinitesimal limit, in which the effect sizes of individual loci are infinitesimally small (see Turelli, 2017 and Section 8 of Appendix 3). We found that when the trait is sufficiently polygenic and the shift in optimum is not too large (relative to genetic variance in the trait), Lande\u2019s prediction is accurate so long as the genetic variance is dominated by loci with small and moderate effect sizes, which are defined based on the selection acting on them before the shift. When these conditions are violated, most notably when loci with large effects contribute markedly to genetic variance, the initial, rapid change in mean phenotype is followed by a pronounced quasi-static phase, governed by changes to the 3rd central moment of the phenotypic distribution, in which the mean phenotype takes much longer to catch up to the new optimum.\n\nWe also characterized the genetic basis of these adaptive phenotypic changes. The closest previous work assumed an infinite population size (de Vladar and Barton, 2014; Jain and Stephan, 2015; Jain and Stephan, 2017a; Jain and Stephan, 2017b). As we show, relaxing this assumption leads to entirely different behavior. In infinite populations, small effect alleles, whose equilibrium frequencies are dominated by mutation and are held at $1/2$ before the shift, make the greatest contribution to phenotypic change after the shift (see Introduction). In contrast, in most if not all real (finite) populations (with $N_{e}\u226a1/u$, where $u$ is the mutation rate per site per generation), the frequencies of such small effect alleles are dominated by genetic drift rather than mutation. More generally, variation in allele frequencies due to genetic drift, which is absent in infinite populations, critically affects the allelic response to selection.\n\nTo study the allelic response, we divided it into two periods: a rapid phase, immediately after the shift, and a subsequent, prolonged equilibration phase. During the rapid phase, the population\u2019s mean distance to the optimum is substantial and changes rapidly. Directional selection on the trait increases the frequency of minor alleles whose effects are aligned with the shift relative to minor alleles with opposing effects (given the same magnitude and initial frequency). By the end of the rapid phase, the cumulative effect of these frequency differences pushes the mean phenotype close to the new optimum, but because this effect is spread over myriad alleles, the frequency difference between any individual pair of opposing alleles is fairly small. Specifically, we found that an allele\u2019s contribution to phenotypic change is proportional to its contribution to phenotypic variance before the shift, implying that alleles with moderate and large effect sizes make the greatest per site contributions to phenotypic change, while alleles with moderate effect sizes experience the greatest frequency changes. The expected frequency differences between opposing alleles is amplified by prolonged, weak directional selection during the subsequent equilibration phase, and this amplification is pronounced when the phenotypic approach to the new optimum deviates markedly from Lande\u2019s approximation.\n\nOver the long run, stabilizing selection on the trait and genetic drift transform these small frequency differences into a small excess of fixed aligned alleles relative to opposing ones, and cumulatively this excess moves the population mean all the way to the new optimum. This transformation process involves a massive turnover in the properties of the contributing alleles. Notably, the transient contributions of large effect alleles are supplanted by contributions of fixed moderate, and to a lesser extent, small effect alleles. In the non-Lande cases, the fixation of mutations that arise after the shift in optimum can also contribute substantially to long-term phenotypic adaptation. These processes take on the order of $2\u2062N_{e}$ generations, after which the equilibrium architecture of genetic variation around the new optimum is restored.\n\nOur finding that large effect alleles almost never sweep to fixation appears at odds with the results of previous studies of similar models. These discrepancies are largely explained by earlier papers considering settings that violate our assumptions, notably about evolutionary parameter ranges. For instance, some studies assume that large effect alleles segregate at high frequencies before the shift in optimum (e.g. Christodoulaki et al., 2019), which is presumably uncommon in natural populations and in any case, violates our assumption that the population is at mutation-selection-drift equilibrium before the shift. Other models implicitly consider quantitative traits of intermediate genetic complexity; while such traits likely exist, there are to our knowledge few well-established examples. Notably, Thornton, 2019 observes sweeps in cases in which the trait is not highly polygenic (violating our assumption that $\\sqrt{2\u2062N\u2062U}\u226b1$). Relatedly, Chevin and Hospital, 2008 observe sweeps in cases in which a rare mutation of large effect contributes substantially to genetic variance, which violates our assumptions that genetic variation is highly polygenic and is not predominantly effectively neutral (i.e. that alleles with $S\u2a861$ contribute substantially). Although it remains to be seen, we believe that this architecture is much less common, given mounting evidence, reviewed in the Introduction, which suggests that traits are often highly polygenic, and other considerations, notably estimates of persistence time (Walsh and Lynch, 2018; Sella and Barton, 2019) and inferences based on human GWASs (Simons et al., 2018; Zeng et al., 2018), which indicate that quantitative genetic variation is not predominantly neutral.\n\nLastly, Stetter et al., 2018 considered a huge shift in the optimal trait value (e.g. of \u223c90 phenotypic standard deviations), resulting in a massive drop in fitness (violating our assumption that $\u039b\u2a85\\sqrt{V_{S}}$)\u2014although shifts in optimum need not be that large to result in the fixations of some large effect alleles. While there are many examples of rapid and large environmental fluctuations, e.g., seasonal fluctuations or shifting weather systems, they occur on a much shorter time scale than fixation (although they might have some effect on genetic architecture; see below). In turn, little is known about the magnitude of shifts in optimal trait values over the time scales of large effect, beneficial fixations. While it seems plausible that moderate shifts, which fall within our assumed parameter ranges, are common, we cannot rule out that larger shifts are common as well. The response to such larger shifts is not covered by our analysis and clearly warrants further study.\n\nOther factors that we have not considered may also affect polygenic adaptation. Most notable among them is pleiotropy. Given that quantitative genetic variation affecting one trait often affects many other traits (Bulik-Sullivan et al., 2015; Pickrell et al., 2016; Boyle et al., 2017; Liu et al., 2019; Sella and Barton, 2019), alleles that would have been positively selected because of their effect on the trait under directional selection may be selected against because of their adverse effects on other traits. Moreover, pleiotropy is known to affect the genetic architecture of a given trait at equilibrium (Simons et al., 2018), which we have shown to shape the allelic response to selection on that trait. Pleiotropy is therefore likely to affect which alleles contribute to phenotypic change at the different phases of polygenic adaptation (see Otto, 2004, for related considerations for genetically simple traits). Linkage disequilibrium (LD) may have an effect as well, perhaps most notably for minor alleles with large effects, which start at low frequencies and experience strong directional selection during the rapid phase. Before the shift, large effect alleles located in genomic regions with low recombination and high functional density are more likely to be in LD with, for example, alleles with countervailing effects on the focal trait (Lande, 1975) or deleterious effects on other traits. If this were the case, then directional selection during the rapid phase might be effectively weaker, because it would act on extended haplotypes rather than on individual alleles.\n\nIn addition, the demography of a population, notably its size, and the selection pressures on quantitative traits are likely to change over a shorter time scale than it takes the genetic architecture of complex traits to equilibrate. When these changes occur over the $\u223c2\u2062N_{e}$ generations preceding a shift in optimal trait value, they may affect the genetic architecture of the trait and consequently its response to selection. Changes in population size influence the number of segregating sites affecting a trait and the distribution of their frequencies and contributions to variance, with more recent population sizes affecting strongly selected variation more than weakly selected variation (Lohmueller, 2014; Simons et al., 2014; Simons and Sella, 2016; Sella and Barton, 2019). The effects of varying selection will depend on the attributes of this variation in ways that await further study.\n\nWhile the effects of all of these factors on the response to a shift in optimum warrant investigation, we expect the response to follow from the principles we outlined. Notably, we expect the short-term contribution of alleles to phenotypic change to be proportional to their contribution to variance before the shift, and their long-term contribution to arise from differences between the fixation probabilities of alleles with opposite effects, caused by the opposing effects of directional selection on their frequencies. Thus, while all these factors are likely to affect the response, we expect the main features of the dynamics we portrayed to remain largely intact. These features include the role of the 3rd central moment of the phenotypic distribution in slowing down phenotypic adaptation near the new optimum; the transient contribution of large effect alleles to phenotypic adaptation; and the long-term importance of alleles with moderate effects.\n\nAs polygenic adaptation in quantitative traits is likely ubiquitous, our conclusions have potentially important implications. One is that, contrary to adaptation mediated by selective sweeps of initially rare, large effect, beneficial alleles (Smith and Haigh, 1974; Kaplan et al., 1989; Braverman et al., 1995; Hermisson and Pennings, 2005; Coop and Ralph, 2012; Berg and Coop, 2015), polygenic adaptation might have minor effects on patterns of neutral diversity at any given point in time (but may affect temporal diversity patterns; Buffalo and Coop, 2019; Buffalo and Coop, 2020). The effects of selected alleles on neutral diversity at linked loci follow from their trajectories (Barton, 2000). Our results indicate that directional selection on a highly polygenic trait introduces only small changes to allele frequencies at individual loci, which amount to minor perturbations to the allele trajectories expected under stabilizing selection at equilibrium (also see Chevin and Hospital, 2008; Thornton, 2019). Indeed, alleles with large effects exhibit only small, transient changes. For those with more moderate effects, there is a modest, long-term excess of fixations of those alleles whose effects are aligned with the shift relative to those whose effects are opposed, accompanied by a small increase in the total number of fixations (Figure 7). The trajectories of the alleles that fix are largely driven by weak stabilizing selection and tend to be drawn out (Figure 8). Thus, our results indicate that the effects of polygenic adaptation on neutral diversity should be minor (other than perhaps for massive shifts in optimal trait values, as noted above).\n\nIn contrast, long-term stabilizing selection on quantitative traits likely has substantial effects on neutral diversity patterns. Specifically, selection against minor alleles induced by stabilizing selection may well be a major source of background selection and is expected to affect neutral diversity patterns in ways that are similar to those of background (purifying) selection from other selective origins (Charlesworth et al., 1993; Hudson and Kaplan, 1995; Santiago and Caballero, 1998; McVean and Charlesworth, 2000).\n\nAnother implication of our results pertains to the search for the genetic basis of human adaptation, as well as adaptation in other species. Efforts to uncover the identity of individual adaptive genetic changes on the human lineage were guided by the notion that their identity would offer insight into what \u2018made us human\u2019. Under the plausible assumption that many adaptive changes on the human lineage arose from selection on complex, quantitative traits, this approach may not be as informative as it appears (Pritchard et al., 2010; Boyle et al., 2017). Our results indicate that after a shift in the optimal trait value, the number of fixations of alleles whose effects are aligned with the shift are typically nearly equal to the number of alleles that are opposed (Figure 7A). Moreover, the alleles that fix are a largely random draw from the vastly greater number of alleles that affect the trait, both in the sense of being those that happened to segregate at high MAFs at the onset of selection and because of the stochasticity of fixation. Thus, in this plausible scenario, it becomes meaningless to say that any given fixation was adaptive, and arguably uninteresting to focus on the particular subset of alleles that happened to reach fixation. In contrast, identifying the traits that experienced adaptive changes promises to provide important insights. Recent efforts to do so pool the signatures of frequency changes over many loci that were found to be associated with a given trait in GWAS (Turchin et al., 2012; Berg and Coop, 2014; Robinson et al., 2015; Field et al., 2016; Berg et al., 2019b; Edge and Coop, 2019; Speidel et al., 2019), an exciting approach that has also proven to be technically challenging (Berg et al., 2019a; Sohail et al., 2019). A better understanding of the process of polygenic adaptation should help to guide such efforts.\n",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "d2507186-7f5e-40bf-881d-d6d826eb5d6a",
+      "submission_id": "951fce0d-2932-4591-8f35-4027a8ccdac9",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Graham Coop, https://ror.org/05rrcem69 University of California, Davis United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.66697.sa0](https://doi.org/10.7554/eLife.66697.sa0)\n\nThis paper is an impressive look at an important problem: understanding the genetic underpinnings of evolution acting on a quantitative trait. The authors analytically study the response to an abrupt shift in phenotypic optimum, in terms of both phenotype and genetic basis (how various alleles/loci contribute to this response). The basic assumptions are classic, but the methods and findings are new (especially the finite population effects) and well supported by clear analytical approximations and extensive simulation checks. The main finding is that the relative contribution of large vs moderate effect alleles changes substantially and predictably over a long-time period after the shift, even though the phenotypic changes are already undetectable over this period.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Graham Coop, https://ror.org/05rrcem69 University of California, Davis United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.66697.sa1](https://doi.org/10.7554/eLife.66697.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Polygenic adaptation after a sudden change in environment\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Patricia Wittkopp as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Peter L Ralph (Reviewer #1); Guillaume Martin (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe reviewers and I appreciated the impressive steps made in the analysis of this important model. The paper is a difficult read, but that mostly reflects the challenging area and the broad scope of the results. Most of our comments focus on how the clarity could be improved.\n\n1) The reviewers have numerous suggestions on improving the clarity of the model. In particular, I think we all struggled with the parallel tracks throughout the paper.\n\nThere is enough new intuition from the Lande-style results that there's an argument for putting more of the technical results about the skewed distribution into the appendix. This would improve the readability of the paper, and I think would likely significantly broaden what the average eLife reader could take away from the paper. More technical readers will likely read the appendix anyway if it is clearly signposted from the main text. That said, I'm not going to force this move on you, and many of the suggested improvements to the manuscript could be made without this big change\n\n2) In our post-review discussion one point that came through clearly is that we all struggled to keep track of which of the simulation frameworks was being used at various points in the paper. Please make sure this is clearer throughout the manuscript.\n\nI apologize for the somewhat slow turn around I think everyone (especially myself) is currently struggling to get things done.\n\nFinally, the Coop lab discussed the preprint paper as part of our journal club, everyone liked it and got a lot out of the paper. We needed some more background on why large effect mutations lead to a skewed distribution under selection. We also felt like the results about skew changing the rate of approach to the optimum could be explained more. One of the lab members came up with the following argument:\n\n\"When the phenotypic mean is far below the optimum (1-D^2/V_S < 0), the phenotypic distribution sits on a convex part of the Gaussian fitness function. There, the positive skew of the phenotypic distribution, by shifting variance away from the left tail (where it is inefficiently selected) towards the right tail (where it is efficiently selected), increases the average efficiency of selection and therefore the rate at which the mean moves towards the optimum.\n\nThe opposite is true when the phenotypic mean is nearer the optimum though still not very close (1 >> 1-D^2/V_S > 0), because then the phenotypic distribution sits on a concave part of the fitness function.\n\nFinally, when the phenotypic mean is just below the optimum, so that the phenotypic distribution straddles the optimum, positive skew shifts variance away from the left tail (where it is relatively efficiently selected in the \"correct\" direction) towards the right tail (where it is relatively efficiently selected in the \"incorrect\" direction), and thus retards selection on the mean.\"\n\nI am not sure if this argument is fully correct/useful, but I wanted to send it along in case it helped. I do think a little more intuition on this point would be useful.\n\nReviewer #2 (Recommendations for the authors):\n\nThis paper tackles an old but definitely unsolved issue (at least in my opinion, and this opinion is supported by the review of the literature in the intro).\n\nOne main limit in existing treatments of this model of gaussian fitness landscape has been either to tackle non equilibrium, or finite populations. The approach here proposes a methodology to fill this gap on both accounts, so I think it is a new and important contribution to theoretical quantitative genetics.\n\nAs a theoretician, I appreciated the appendix, which could be made a bit clearer there and then but is overall flowing and easy to follow, especially when it comes to understanding where we are going. I also appreciated the many illustrative figures in the appendix to check various steps in the approximations by simulations, and as a way to explore a wide parameter range. Overall, the accuracy of the approximations in the various figures is very good. These approximations are not rigorously derived as a limit for some parameter being small etc., some approximations are plugged into others (eg the linear or non linear lande and non lande cases), but we get an intuition of the idea behind the approx., and we get quite many simulations to back it up. Of course a rigorous treatment or a dedicated simulation paper might help identify the exact parameter range of validity, but these would be articles of their own. As such the paper is clearly dense enough!\n\nI suggest that the authors clarify/emphasize two main points for the reader in main text\n\n\u2013 First that the phenotypic dynamics are overall correctly approximated by the lande model in the parameter range that was analysed. Indeed, the deviations are much smaller than the main trend in Figure 2 for ex. For the main part of observable phenotypic adaptation (ie until t1). What is lande or non lande here is not this phenotypic mean trajectory but rather its consequences in the longer term dynamics (if I got this right). That should be emphasized and maybe cases where the lande model is not accurate to begin with should be shown too in the simulations.\n\n\u2013 Second, therefore, the main contribution of the paper is on (i) obtaining the lande equation without the lande assumptions, (maybe, my knowledge of the vast literature is not large enough to knpw if the various derivations differ that much) and (ii) deriving the longer term dynamics after t1 and especially the genetic basis resuts (relative contribution of alleles as a function of their effect size). It would be nice to pull that string a bit further and illustrate a GWAS or QTL prediction between a pop staying in the original state and a pop having evolved in the new environment, either before t1, or after t1. This is to me the main impact that these results will have and it is somewhat not pushed to its final biological conclusion. Or I missed it and then it must be better put forward.\n\nThe paper is very long, both main text and the appendix. I found both flowing though, and that we were guided well into this elaborate modelling exercise. I don't know if this length will be a problematic criterion, that is for the editor to judge.\n\nIt was not always easy to know which type of simulations were used for each figure and check. The top check being the true individual based simulations of course. Maybe a table (sup info) dedicated to that would help clarify this without having to go back to methods to know which method is what.\n\nIn the intro maybe a link to other models mixing diffusion equation and deterministic pheno models would be nice, I am not sure I saw a reference to the stochastic house of cards approx. and its 'offspring' or to the zhang and hill methods I think.\n",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "af31390a-9eef-40fc-ab94-18658c7ab90e",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C1",
+      "claim": "Polygenic adaptation is thought to be ubiquitous.",
+      "claim_type": "EXPLICIT",
+      "source": "Polygenic adaptation is thought to be ubiquitous, yet remains poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current scientific view on polygenic adaptation, supported by the broader context of the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "c37105d4-64c9-48e0-bf81-2923cc8fbe1f",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C2",
+      "claim": "Many traits under natural selection are quantitative, highly heritable, and genetically complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Many traits under natural selection are quantitative, highly heritable, and genetically complex, meaning that they take on continuous values, that a substantial fraction of the population variation in their values arises from genetic differences among individuals, and that this variation arises from small contributions at many segregating loci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about trait characteristics supported by established scientific understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "d53e7717-41fc-48c8-9052-fed751d73891",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C3",
+      "claim": "Responses to changing selective pressures often involve adaptive changes in quantitative traits accomplished through changes to allele frequencies at many loci.",
+      "claim_type": "EXPLICIT",
+      "source": "It therefore stands to reason that the responses to changing selective pressures often involve adaptive changes in such traits, accomplished through changes to allele frequencies at the many loci that affect them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the properties of quantitative traits.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "4009b3a7-48e9-4231-a24f-c41a4a766bba",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C4",
+      "claim": "The view that polygenic adaptation should be ubiquitous traces back to the dawn of population and quantitative genetics.",
+      "claim_type": "EXPLICIT",
+      "source": "This view traces back to the dawn of population and quantitative genetics (Wright, 1931; Fisher, 1958) and is supported by many lines of evidence (Walsh and Lynch, 2018; Sella and Barton, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to historical and contemporary work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "0c48fff7-57dc-4f18-920f-ac557cc4fcb8",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C5",
+      "claim": "Selected traits in artificial selection typically exhibit rapid and sustained adaptive changes.",
+      "claim_type": "EXPLICIT",
+      "source": "In these settings, selected traits typically exhibit amazingly rapid and sustained adaptive changes (Weber and Diggins, 1990; Barton and Keightley, 2002; Hill, 2016), which are readily explained by models in which the change is driven by small shifts in allele frequencies at numerous loci (Weber and Diggins, 1990; Hill and Kirkpatrick, 2010), and inconsistent with models with few alleles of large effect (Barton and Keightley, 2002; Zhang and Hill, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to empirical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "b83ab794-f324-40bc-880b-8515eb453a2b",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C6",
+      "claim": "Rapid adaptive changes in artificial selection are readily explained by models with small shifts in allele frequencies at numerous loci.",
+      "claim_type": "EXPLICIT",
+      "source": "In these settings, selected traits typically exhibit amazingly rapid and sustained adaptive changes (Weber and Diggins, 1990; Barton and Keightley, 2002; Hill, 2016), which are readily explained by models in which the change is driven by small shifts in allele frequencies at numerous loci (Weber and Diggins, 1990; Hill and Kirkpatrick, 2010), and inconsistent with models with few alleles of large effect (Barton and Keightley, 2002; Zhang and Hill, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to theoretical models.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "f38d98f5-450e-442c-95f9-f30449a57a89",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C7",
+      "claim": "Rapid adaptive changes in artificial selection are inconsistent with models with few alleles of large effect.",
+      "claim_type": "EXPLICIT",
+      "source": "In these settings, selected traits typically exhibit amazingly rapid and sustained adaptive changes (Weber and Diggins, 1990; Barton and Keightley, 2002; Hill, 2016), which are readily explained by models in which the change is driven by small shifts in allele frequencies at numerous loci (Weber and Diggins, 1990; Hill and Kirkpatrick, 2010), and inconsistent with models with few alleles of large effect (Barton and Keightley, 2002; Zhang and Hill, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies comparing different models.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "d187f6b1-a787-48c4-b39f-8a0e6f4682de",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C8",
+      "claim": "Hard selective sweeps were rare over the past ~500,000 years of human evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent analyses, however, echoed studies of artificial selection in indicating that hard sweeps were rare, at least over the past \u223c500,000 years of human evolution (Coop et al., 2009; Hernandez et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to analyses of human genomic data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "bc9f07ee-e92f-428f-8b71-647897fb543a",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C9",
+      "claim": "Humans plausibly adapted in myriad ways during the past 500,000 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet humans plausibly adapted in myriad ways during this time period, and they definitely experienced substantial changes in selection pressures, notably during more recent expansions across the globe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on human evolutionary history and environmental changes.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "bb5392cc-b20f-4204-ad7e-65e866774f2d",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C10",
+      "claim": "Humans experienced substantial changes in selection pressures during expansions across the globe.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet humans plausibly adapted in myriad ways during this time period, and they definitely experienced substantial changes in selection pressures, notably during more recent expansions across the globe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of human migration and environmental variation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "db91b0ba-d724-4f2f-b3f6-c2f64af53343",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C11",
+      "claim": "In humans, heritable variation in complex traits is highly polygenic.",
+      "claim_type": "EXPLICIT",
+      "source": "Statistical analyses of GWASs indicate that in humans, heritable variation in complex traits is highly polygenic (Loh et al., 2015; Shi et al., 2016; Boyle et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to GWAS analyses.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "4db306f6-ded6-4d9c-a54a-5caddeea9f33",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C12",
+      "claim": "For many traits, estimates of heritability contributed by chromosomes are approximately proportional to their length.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, for many traits, estimates of the heritability contributed by chromosomes are approximately proportional to their length (Shi et al., 2016), suggesting that the contributing variants are numerous and roughly uniformly distributed across the genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a specific study and includes an inference about variant distribution.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "7ce0101a-077e-4d65-9e06-fff289c62898",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C13",
+      "claim": "Contributing variants to complex traits are numerous and roughly uniformly distributed across the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, for many traits, estimates of the heritability contributed by chromosomes are approximately proportional to their length (Shi et al., 2016), suggesting that the contributing variants are numerous and roughly uniformly distributed across the genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation about heritability and chromosome length.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "c9c5ad30-e759-4b8a-a114-e7b7b01b1fad",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C14",
+      "claim": "Changes to allele frequencies at individual loci contributing to polygenic adaptation may be minute.",
+      "claim_type": "EXPLICIT",
+      "source": "Such findings reinforced the view that adaptive changes to quantitative traits are likely to often be highly polygenic, but also implied that their identification would be difficult, as the changes to allele frequencies at individual loci may be minute.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the highly polygenic nature of traits.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "d14471b7-8162-4ff3-9270-3b051f488e66",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C15",
+      "claim": "Initial studies suggest that polygenic adaptation has affected multiple human traits.",
+      "claim_type": "EXPLICIT",
+      "source": "Initial studies suggest that polygenic adaptation has affected multiple human traits, but these conclusions have been called into question with the realization that the results are highly sensitive to systematic biases in GWASs, most notably due to population structure confounding (Berg et al., 2019a; Sohail et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies and their critiques.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "48350f91-14fa-4b4c-b3d0-3f15a775002b",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C16",
+      "claim": "Results of polygenic adaptation studies are highly sensitive to systematic biases in GWASs, most notably due to population structure confounding.",
+      "claim_type": "EXPLICIT",
+      "source": "Initial studies suggest that polygenic adaptation has affected multiple human traits, but these conclusions have been called into question with the realization that the results are highly sensitive to systematic biases in GWASs, most notably due to population structure confounding (Berg et al., 2019a; Sohail et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to methodological critiques.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "5da83089-1f61-41e6-94c5-0b8d4b89046b",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C17",
+      "claim": "Quantitative traits in natural populations are unlikely to be subject to long-term continuous change in one direction.",
+      "claim_type": "EXPLICIT",
+      "source": "In natural populations, however, quantitative traits are unlikely to be subject to long-term continuous change in one direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on understanding of natural selection and environmental variation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "5ae7d670-1a12-4adc-b823-90a1df0d82fd",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C18",
+      "claim": "Quantitative traits are often subject to long-term stabilizing selection with intermittent shifts of the optimum in different directions.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, considerable evidence indicates that they are often subject to long-term stabilizing selection (Sella and Barton, 2019), with intermittent shifts of the optimum in different directions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a review of evidence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "1c4f501b-48c5-4d59-9fb0-c8499a802f4d",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C19",
+      "claim": "Lande (1976) described the change in phenotypic mean assuming that phenotypes are normally distributed and that phenotypic variance remains constant over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Seminal work by Lande, 1976 described the change in the phenotypic mean assuming that phenotypes are normally distributed in the population and that the phenotypic variance remains constant over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of prior theoretical work, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "c2785c01-6625-45d8-91bb-619c25a8c178",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C20",
+      "claim": "Barton and Turelli (1986b) derived recursions for the expected change to higher moments of the phenotypic distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Barton and Turelli, 1986b derived recursions for the expected change to higher moments of the phenotypic distribution, and showed that when phenotypic variation arises from alleles with large effect sizes, which are strongly selected and rare, the response to selection introduces skew in the phenotypic distribution that can substantially affect the change in the phenotypic mean.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of prior theoretical work, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "73e739c7-4a04-43ab-b9c7-1f9fa8130aed",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C21",
+      "claim": "When phenotypic variation arises from alleles with large effect sizes, the response to selection introduces skew in the phenotypic distribution that can substantially affect the change in the phenotypic mean.",
+      "claim_type": "EXPLICIT",
+      "source": "Barton and Turelli, 1986b derived recursions for the expected change to higher moments of the phenotypic distribution, and showed that when phenotypic variation arises from alleles with large effect sizes, which are strongly selected and rare, the response to selection introduces skew in the phenotypic distribution that can substantially affect the change in the phenotypic mean.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "2d4c632b-de7f-4284-b9c7-b89a27d7e230",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C22",
+      "claim": "In infinite populations, the frequencies of alleles prior to the shift in optimum follow deterministically from their effect size.",
+      "claim_type": "EXPLICIT",
+      "source": "These dynamics, however, are shaped by features of mutation-selection balance that are specific to infinite populations. Notably, they strongly depend on the frequency of alleles prior to the shift in optimum following deterministically from their effect size, and on the critical effect size at which this frequency transitions from being dominated by selection to being dominated by mutation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of properties of infinite population models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "15c427d5-830c-43f9-b1e3-ebe1417e9265",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C23",
+      "claim": "In real (finite) populations, the frequencies of alleles whose selection effects are sufficiently small to be dominated by mutation will be shaped by genetic drift.",
+      "claim_type": "EXPLICIT",
+      "source": "In real (finite) populations, the frequencies of alleles whose selection effects are sufficiently small to be dominated by mutation will be shaped by genetic drift; more generally, variation in allele frequencies due to genetic drift will crucially affect the allele response to selection (see below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established population genetics theory.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "0628ffde-5a6c-49c6-936f-40ae6602f93a",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C24",
+      "claim": "Variation in allele frequencies due to genetic drift will crucially affect the allele response to selection.",
+      "claim_type": "EXPLICIT",
+      "source": "In real (finite) populations, the frequencies of alleles whose selection effects are sufficiently small to be dominated by mutation will be shaped by genetic drift; more generally, variation in allele frequencies due to genetic drift will crucially affect the allele response to selection (see below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established population genetics theory and is a key motivation for the study.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "b865e44c-5e87-40e0-be82-64d0d606c389",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C25",
+      "claim": "Before the shift in optimum, the phenotypic distribution at mutation-selection-drift balance is symmetric and tightly centered on the optimal phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Under these assumptions, the phenotypic distribution at mutation-selection-drift balance is symmetric and tightly centered on the optimal phenotype (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a theoretical result derived from the model assumptions, also shown in Figure 1.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "08be97d4-ce73-46e5-b646-8ff702394c95",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C30",
+      "claim": "The first term in the expected change in distance reflects selection to reduce the distance between the mean phenotype and the new optimum, proportional to this distance and to the additive genetic variance.",
+      "claim_type": "EXPLICIT",
+      "source": "The 1st term on the right-hand side reflects selection to reduce the distance between the mean phenotype and the new optimum, which is proportional to this distance and to the additive genetic variance (Lande, 1976).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the theoretical result, supported by citation to Lande's work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "ebd899fb-3f84-4e9f-9e99-47b77eb408a1",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C31",
+      "claim": "The second term in the expected change in distance reflects the effect of stabilizing selection on an asymmetric (skewed) phenotypic distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "The 2nd term reflects the effect of stabilizing selection on an asymmetric (skewed) phenotypic distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the theoretical result.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "8d895015-8a7c-4c3b-bfcf-a8a21e15bb1c",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C32",
+      "claim": "In the infinitesimal limit, the equilibrium phenotypic distribution is Normal and remains Normal with the same variance after the shift.",
+      "claim_type": "EXPLICIT",
+      "source": "In this limit, the equilibrium phenotypic distribution is Normal and it remains Normal with the same variance after the shift, because the change in mean phenotype is achieved by infinitesimally small changes to allele frequencies at infinitely many loci, with no change to the frequency distribution (Lande, 1976, and Section 8 of Appendix 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical result for the infinitesimal limit, supported by citation and derivation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "1defae8a-e200-4e39-96fd-09dcf93d0303",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C34",
+      "claim": "When genetic variance is dominated by loci with small and intermediate effect sizes, the trait is highly polygenic, and the shift in optimum is not too large relative to the phenotypic standard deviation, the expected phenotypic response is well approximated by Lande's solution.",
+      "claim_type": "EXPLICIT",
+      "source": "When genetic variance is dominated by loci with small and intermediate effect sizes (as defined below), the trait is highly polygenic, and the shift in optimum is not too large relative to the phenotypic standard deviation, changes to the 2nd and 3rd central moments of the phenotypic distribution are small and the expected phenotypic response is well approximated by Lande's solution (Figure 2A and Appendix 3\u2014figures 26 and 27).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a theoretical result supported by simulations shown in figures.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "465b19ed-6ef3-40da-9e04-90cc7afe1543",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C35",
+      "claim": "The magnitude of deviations from Lande's approximation is determined by the distribution of allele effect sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, given our assumptions that polygenicity is high and that the shift is not too large (see Section 6 of Appendix 3), the deviations from Lande's approximation are usually small and their magnitude is determined by the distribution of allele effect sizes (see section on The allelic response in the equilibration phase and Section 6 of Appendix 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical result derived in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "eeef4413-3644-4811-851e-e3a8966a3643",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C36",
+      "claim": "Changes to the 2nd and 3rd central moments of the phenotypic distribution are greater when alleles with large effects contribute markedly to genetic variance.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, changes to the 2nd and 3rd central moments of the phenotypic distribution are greater when alleles with large effects contribute markedly to genetic variance (Figure 2C, Appendix 3\u2014figures 26 and 27, and Barton and Turelli, 1986b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a theoretical result supported by simulations and citation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "8b93d593-e91e-43fb-b085-4f186c1e4342",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C37",
+      "claim": "The frequency increase of an aligned allele increases variance more than the frequency decrease of an opposing allele decreases it, resulting in a net increase to variance.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency increase of the aligned allele increases variance more than the frequency decrease of the opposing allele decreases it, resulting in a net increase to variance (Figure 2C; Barton and Turelli, 1986b; de Vladar and Barton, 2014; Jain and Stephan, 2017a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a theoretical result supported by citations and shown in figures.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "935d7af1-0b5b-4aef-ad91-06c7137bd5e2",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C38",
+      "claim": "The relative changes in frequency and the net increase in variance are greater for alleles with larger effects.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative changes in frequency and thus the net increase in variance are greater for alleles with larger effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical result derived from the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "fdc49553-f780-415c-b433-238e3ae096ca",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C39",
+      "claim": "Large effect alleles contribute substantially more to the 3rd central moment after the shift.",
+      "claim_type": "EXPLICIT",
+      "source": "Large effect alleles contribute substantially more to this 3rd central moment, plausibly because their individual contribution to the 3rd central moment at equilibrium is greater (see Section 3.3 of Appendix 3 and Appendix 3\u2014figure 7B) and because they exhibit larger relative changes in frequency after the shift (see section on The allelic response in the rapid phase and Section 4 of Appendix 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a theoretical result with supporting analysis in the appendix.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "9bcd5a1f-fd2a-4433-a2dc-cad2ba3a606b",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C40",
+      "claim": "The increase in 2nd and 3rd central moments after the shift result in a phenotypic dynamic with two distinct phases.",
+      "claim_type": "EXPLICIT",
+      "source": "The increase in 2nd and 3rd central moments after the shift result in a phenotypic dynamic with two distinct phases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical result derived from the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "86e80000-69ab-4cbe-a237-9c6f52023586",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C41",
+      "claim": "Immediately after the shift, the mean phenotype rapidly approaches the new optimum, akin to the exponential approach in Lande's approximation.",
+      "claim_type": "EXPLICIT",
+      "source": "First, immediately after the shift, the mean phenotype rapidly approaches the new optimum, akin to the exponential approach in Lande's approximation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the rapid phase derived from the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "0b9faf09-3168-4593-8077-486741dae2eb",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C43",
+      "claim": "During the prolonged phase, the rate of approaching the optimum is largely determined by the rate at which the 3rd central moment decays.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate of approaching the optimum is then largely determined by the rate at which the 3rd central moment decays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical result derived from the quasi-static approximation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "51e9010c-ce79-476d-8dee-e80f661ef2e6",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C51",
+      "claim": "The change in mean phenotype during the rapid phase is driven by the differential effect of directional selection on minor alleles whose effects are aligned and opposed to the shift in optimum.",
+      "claim_type": "EXPLICIT",
+      "source": "The change in mean phenotype during the rapid phase is driven by the differential effect of directional selection on minor alleles whose effects are aligned and opposed to the shift in optimum (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of the theoretical results, illustrated in Figure 3.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "0176adf6-4145-4993-ba19-a4d30ddc51c4",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C52",
+      "claim": "By the end of the rapid phase, the frequency differences across all aligned and opposing alleles drive the mean phenotype close to the new optimum.",
+      "claim_type": "EXPLICIT",
+      "source": "By the end of the rapid phase, the frequency differences across all aligned and opposing alleles drive the mean phenotype close to the new optimum (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a theoretical result shown in Figure 2A.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "0f9ffb98-3083-4fb9-a883-6647f390bb34",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C53",
+      "claim": "The expected frequency difference between a pair of opposing alleles will be small for a highly polygenic trait.",
+      "claim_type": "EXPLICIT",
+      "source": "However, given that we are considering a highly polygenic trait, the expected frequency difference between a pair of opposing alleles will be small.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the highly polygenic nature of the trait.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "28c89c3b-203d-4421-86ec-93d748b927e4",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C54",
+      "claim": "The small frequency difference causes aligned alleles to have a slightly greater probability of eventually fixing during the equilibration phase.",
+      "claim_type": "EXPLICIT",
+      "source": "This small difference causes aligned alleles to have a slightly greater probability of eventually fixing during the equilibration phase (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a theoretical result illustrated in Figure 3.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "da9e5a96-af5e-44fc-bfa8-535aba1667a3",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C59",
+      "claim": "The pair's contribution to phenotypic change is proportional to its contribution to phenotypic variance before the shift in optimum.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the pair's contribution to phenotypic change is proportional to its contribution to phenotypic variance before the shift in optimum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key theoretical result summarizing the relationship between variance contribution and phenotypic change.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "9f782be9-8d8a-4e47-9a46-9385f103c145",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C60",
+      "claim": "The expected contribution of alleles with a given magnitude and initial frequency is proportional to their expected contribution to phenotypic variance at equilibrium.",
+      "claim_type": "EXPLICIT",
+      "source": "The expected contribution of alleles with a given magnitude and initial frequency is therefore proportional to their expected contribution to phenotypic variance at equilibrium, before the shift occurs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical result extending the pair-wise result to expectations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "6f50046f-bc5b-4aae-b7c9-7b293fae5065",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C64",
+      "claim": "MAFs of large effect alleles before the shift are much lower than MAFs of moderate ones because they are subject to stronger stabilizing selection.",
+      "claim_type": "EXPLICIT",
+      "source": "While large and moderate effect alleles make similar contributions to phenotypic change, MAFs of large effect alleles before the shift are much lower than MAFs of moderate ones (Figure 4B), because they are subject to stronger stabilizing selection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a theoretical result shown in Figure 4B.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "913c7aaf-f1b0-4ae9-bf9a-bf99eeefcb48",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C66",
+      "claim": "Over the long run, the small frequency differences between opposite alleles that accrue during the rapid phase translate into small differences in their fixation probabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the long run, the small frequency differences between opposite alleles that accrue during the rapid phase translate into small differences in their fixation probabilities (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a theoretical result illustrated in Figure 3.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "1e591f51-8b89-40ab-afaf-28ee4ee0412c",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C67",
+      "claim": "In the non-Lande case, prolonged weak directional selection during the equilibration phase amplifies the differences in fixation probabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "In the non-Lande case, prolonged weak directional selection during the equilibration phase amplifies these differences in fixation probabilities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical result distinguishing the non-Lande case.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "91a423c0-e7f7-45c8-a586-460406d99662",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C68",
+      "claim": "When Lande's approximation is accurate, directional selection is non-negligible only briefly after the shift.",
+      "claim_type": "EXPLICIT",
+      "source": "When Lande's approximation is accurate, directional selection is non-negligible only briefly after the shift.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the Lande case.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "4ffc68d0-a04a-4667-9ad9-e9a76c2f6bef",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C78",
+      "claim": "In the non-Lande case, the fixation of mutations that arise after the shift in optimum can contribute substantially.",
+      "claim_type": "EXPLICIT",
+      "source": "In the non-Lande case, the fixation of mutations that arise after the shift in optimum can also contribute substantially (Appendix 3\u2014figure 21B), because prolonged, weak directional selection can produce a substantial difference in the numbers of fixations of mutations with opposite effects.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a theoretical result shown in Appendix 3\u2014figure 21B.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "1ba2a2af-8779-4f69-b6a0-c15fd7d9b8aa",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C83",
+      "claim": "The linear approximations capture the dramatic turnover in the genetic basis of adaptation during the equilibration phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, our linear approximations capture the dramatic turnover in the genetic basis of adaptation during the equilibration phase (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of theoretical results shown in Figure 6.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "5b0770b3-ac5e-4dd6-99be-a07c3639a155",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C85",
+      "claim": "For any given magnitude, the proportional long-term contribution of minor alleles that segregated at low frequencies before the shift is diminished relative to their short-term contribution, all the more so for large effect sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, for any given magnitude, the proportional long-term contribution of minor alleles that segregated at low frequencies before the shift is diminished relative to their short-term contribution, all the more so for large effect sizes (Figure 6B and Appendix 3\u2014figure 14).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a theoretical result shown in figures.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "862a8bef-27be-4537-872e-d2d70b2665cd",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C87",
+      "claim": "If the initial frequencies of a pair of alleles with opposite, moderate or large effect are very low, both alleles will have low MAFs at the end of the rapid phase and will almost certainly go extinct during the equilibration phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Now consider how it affects a pair of alleles with opposite, moderate or large effect. If their initial frequencies are very low, both alleles will have low MAFs at the end of the rapid phase. Consequently, they will both be strongly selected against during the equilibration phase and will almost certainly go extinct (Appendix 2\u2014figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a theoretical result illustrated in Appendix 2\u2014figure 2.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "c49bc84c-ffde-4c3a-b468-1d55f4c43474",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C88",
+      "claim": "If the initial MAF of a pair of alleles is sufficiently high, the aligned allele will be subject to substantially weaker selection than the opposing allele during the equilibration phase.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, if the alleles' initial MAF is sufficiently high, the relative increase in the aligned allele's frequency by the end of the rapid phase causes it to be subject to substantially weaker selection than is the opposing allele.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical result about the effect of initial MAF.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "1698160e-5bdc-459d-965c-0bbd2e4c95d7",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C89",
+      "claim": "For a given magnitude, there is a critical initial MAF such that the long-term contribution of alleles that start above it is amplified and the contribution of those that start below it is diminished.",
+      "claim_type": "EXPLICIT",
+      "source": "This reasoning suggests that, for a given magnitude, there is a critical initial MAF such that the long-term contribution of alleles that start above it is amplified and the contribution of those that start below it is diminished (Figure 6B and Appendix 2\u2014figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a theoretical result shown in figures.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "ef4d58b5-e3b9-4978-bc6d-cba0c67ea148",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C90",
+      "claim": "The critical initial MAF is lower in the non-Lande case because prolonged, weak directional selection amplifies the long-term contribution from alleles with any initial MAF.",
+      "claim_type": "EXPLICIT",
+      "source": "This critical frequency is lower in the non-Lande case, because prolonged, weak directional selection amplifies the long-term contribution from alleles with any initial MAF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical result distinguishing the non-Lande case.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "6d83c399-a76e-47cc-9773-73d03d667f7f",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C91",
+      "claim": "Alleles with large magnitudes almost always start from low MAF because they are subject to strong stabilizing selection before the shift.",
+      "claim_type": "EXPLICIT",
+      "source": "Alleles with large magnitudes almost always start from low MAF, because they are subject to strong stabilizing selection before the shift (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a theoretical result shown in Figure 4B.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "5e5d826a-76f4-4fbb-af4b-cd4e88e8edc7",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C92",
+      "claim": "Large effect alleles are highly unlikely to exceed the critical initial frequency and their expected long-term contribution to phenotypic adaptation is diminished.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, they are highly unlikely to exceed the critical initial frequency and their expected long-term contribution to phenotypic adaptation is diminished (Figures 5A and 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a theoretical result shown in figures.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "44322529-3b30-402e-8712-1990a82ba9b4",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C93",
+      "claim": "Changes to the frequencies of large effect alleles skew the phenotypic distribution, leading to prolonged, weak directional selection that amplifies the long-term contribution of small and moderate effect alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "However, changes to the frequencies of these alleles skew the phenotypic distribution, leading to prolonged, weak directional selection that amplifies the long-term contribution of small and moderate effect alleles (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a theoretical result shown in Figure 6B.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "70b671ef-7a22-4938-9b3e-67e5fb01a08d",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C94",
+      "claim": "While long-term phenotypic adaptation arises from an excess in fixations of aligned relative to opposing alleles, this excess and the increase in the total number of fixations are typically small relative to the number of fixations at equilibrium.",
+      "claim_type": "EXPLICIT",
+      "source": "While long-term phenotypic adaptation arises from an excess in fixations of aligned relative to opposing alleles, this excess and the increase in the total number of fixations are typically small relative to the number of fixations at equilibrium (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a theoretical result shown in Figure 7.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "215c8a1a-4359-4d04-af62-89f1c01e0276",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C96",
+      "claim": "For sufficiently large effect sizes, practically all fixations are caused by the shift and are of aligned alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "For sufficiently large effect sizes, practically all fixations are caused by the shift and are of aligned alleles (Figure 7B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a theoretical result shown in Figure 7B and C.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "52ff4832-687b-4ed2-b210-61e34a76791c",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C97",
+      "claim": "Typically, most fixations and contribution to phenotypic change will arise from alleles with small and moderate effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Typically, most fixations and contribution to phenotypic change will arise from alleles with small and moderate effects (Figures 5 and 7), for which the proportional excess of aligned and total fixations is modest (Figure 7B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a theoretical result shown in multiple figures.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "885009e0-6521-49f6-ba3a-3bc8b216636b",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C100",
+      "claim": "Lande (1976) predicted that after the shift the population's mean phenotype will approach the new optimum exponentially, at a rate that is proportional to the additive genetic variance in the trait.",
+      "claim_type": "EXPLICIT",
+      "source": "The phenotypic response to selection was previously studied by Lande, 1976. Assuming that phenotypes are normally distributed in the population, he predicted that after the shift the population's mean phenotype will approach the new optimum exponentially, at a rate that is proportional to the additive genetic variance in the trait.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of prior work, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "70ac7e2e-c608-4cb1-831c-c602338d25dd",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C101",
+      "claim": "The Normality assumption in Lande's work was only shown to hold in an infinitesimal limit, in which the effect sizes of individual loci are infinitesimally small.",
+      "claim_type": "EXPLICIT",
+      "source": "The Normality assumption, however, was only shown to hold in an infinitesimal limit, in which the effect sizes of individual loci are infinitesimally small (see Turelli, 2017 and Section 8 of Appendix 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of Lande's assumptions, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "d463a6ec-9547-4730-930c-f1b323a532f9",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C102",
+      "claim": "When the trait is sufficiently polygenic and the shift in optimum is not too large, Lande's prediction is accurate so long as the genetic variance is dominated by loci with small and moderate effect sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that when the trait is sufficiently polygenic and the shift in optimum is not too large (relative to genetic variance in the trait), Lande's prediction is accurate so long as the genetic variance is dominated by loci with small and moderate effect sizes, which are defined based on the selection acting on them before the shift.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "fa5a27b5-bdde-4241-9bc4-a85589f6767b",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C103",
+      "claim": "When loci with large effects contribute markedly to genetic variance, the initial, rapid change in mean phenotype is followed by a pronounced quasi-static phase in which the mean phenotype takes much longer to catch up to the new optimum.",
+      "claim_type": "EXPLICIT",
+      "source": "When these conditions are violated, most notably when loci with large effects contribute markedly to genetic variance, the initial, rapid change in mean phenotype is followed by a pronounced quasi-static phase, governed by changes to the 3rd central moment of the phenotypic distribution, in which the mean phenotype takes much longer to catch up to the new optimum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "1020d26d-a303-4801-af51-001fc84c3283",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C106",
+      "claim": "During the rapid phase, directional selection on the trait increases the frequency of minor alleles whose effects are aligned with the shift relative to minor alleles with opposing effects.",
+      "claim_type": "EXPLICIT",
+      "source": "During the rapid phase, the population's mean distance to the optimum is substantial and changes rapidly. Directional selection on the trait increases the frequency of minor alleles whose effects are aligned with the shift relative to minor alleles with opposing effects (given the same magnitude and initial frequency).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding about the rapid phase.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "6f8b06fd-fc7e-4660-834d-9a51416e9671",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C107",
+      "claim": "An allele's contribution to phenotypic change is proportional to its contribution to phenotypic variance before the shift.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we found that an allele's contribution to phenotypic change is proportional to its contribution to phenotypic variance before the shift, implying that alleles with moderate and large effect sizes make the greatest per site contributions to phenotypic change, while alleles with moderate effect sizes experience the greatest frequency changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "fe126f1c-84b1-4c15-83c8-83d1950e21cf",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C108",
+      "claim": "Alleles with moderate and large effect sizes make the greatest per site contributions to phenotypic change.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we found that an allele's contribution to phenotypic change is proportional to its contribution to phenotypic variance before the shift, implying that alleles with moderate and large effect sizes make the greatest per site contributions to phenotypic change, while alleles with moderate effect sizes experience the greatest frequency changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "65d8e224-2d3b-47f0-b4d9-9bdcf77a5ae3",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C109",
+      "claim": "Alleles with moderate effect sizes experience the greatest frequency changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we found that an allele's contribution to phenotypic change is proportional to its contribution to phenotypic variance before the shift, implying that alleles with moderate and large effect sizes make the greatest per site contributions to phenotypic change, while alleles with moderate effect sizes experience the greatest frequency changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "6ca25e53-6e68-4f9c-b93b-c7549d35dd25",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C110",
+      "claim": "Over the long run, stabilizing selection on the trait and genetic drift transform small frequency differences into a small excess of fixed aligned alleles relative to opposing ones.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the long run, stabilizing selection on the trait and genetic drift transform these small frequency differences into a small excess of fixed aligned alleles relative to opposing ones, and cumulatively this excess moves the population mean all the way to the new optimum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding about the equilibration phase.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "9ccfc759-0376-43fd-a387-95413781c8a0",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C111",
+      "claim": "The transformation process involves a massive turnover in the properties of the contributing alleles, with the transient contributions of large effect alleles supplanted by contributions of fixed moderate, and to a lesser extent, small effect alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "This transformation process involves a massive turnover in the properties of the contributing alleles. Notably, the transient contributions of large effect alleles are supplanted by contributions of fixed moderate, and to a lesser extent, small effect alleles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "321dc340-f1a1-46f1-86f8-5616fdb5f261",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C113",
+      "claim": "Large effect alleles almost never sweep to fixation in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding that large effect alleles almost never sweep to fixation appears at odds with the results of previous studies of similar models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "dc1fd5bf-bcc0-4d94-9d79-e7858e4f6e28",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C114",
+      "claim": "Discrepancies with previous studies are largely explained by earlier papers considering settings that violate the assumptions of this study.",
+      "claim_type": "EXPLICIT",
+      "source": "These discrepancies are largely explained by earlier papers considering settings that violate our assumptions, notably about evolutionary parameter ranges.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation for differences with prior work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "e482b7ef-f27d-44d3-96a2-14da24725d4b",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C115",
+      "claim": "Pleiotropy is likely to affect which alleles contribute to phenotypic change at the different phases of polygenic adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "Pleiotropy is therefore likely to affect which alleles contribute to phenotypic change at the different phases of polygenic adaptation (see Otto, 2004, for related considerations for genetically simple traits).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the effects of pleiotropy, with citation to related work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "8b92f500-8eec-48c7-8032-41048e9c009d",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C116",
+      "claim": "Linkage disequilibrium may have an effect on polygenic adaptation, perhaps most notably for minor alleles with large effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Linkage disequilibrium (LD) may have an effect as well, perhaps most notably for minor alleles with large effects, which start at low frequencies and experience strong directional selection during the rapid phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the effects of linkage disequilibrium.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "5632214b-4afb-4127-912a-23ae60f14560",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C117",
+      "claim": "The demography of a population and the selection pressures on quantitative traits are likely to change over a shorter time scale than it takes the genetic architecture of complex traits to equilibrate.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the demography of a population, notably its size, and the selection pressures on quantitative traits are likely to change over a shorter time scale than it takes the genetic architecture of complex traits to equilibrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the dynamics of real populations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "2ce37140-950a-4c59-aadb-acf7c8f9d837",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C119",
+      "claim": "The short-term contribution of alleles to phenotypic change is expected to be proportional to their contribution to variance before the shift, even with pleiotropy, linkage, and demographic changes.",
+      "claim_type": "EXPLICIT",
+      "source": "While the effects of all of these factors on the response to a shift in optimum warrant investigation, we expect the response to follow from the principles we outlined. Notably, we expect the short-term contribution of alleles to phenotypic change to be proportional to their contribution to variance before the shift, and their long-term contribution to arise from differences between the fixation probabilities of alleles with opposite effects, caused by the opposing effects of directional selection on their frequencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction about the generality of the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "c65a1aff-cc83-4b3a-8ecd-bff3384640cf",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C120",
+      "claim": "The long-term contribution of alleles is expected to arise from differences between the fixation probabilities of alleles with opposite effects, caused by the opposing effects of directional selection on their frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "While the effects of all of these factors on the response to a shift in optimum warrant investigation, we expect the response to follow from the principles we outlined. Notably, we expect the short-term contribution of alleles to phenotypic change to be proportional to their contribution to variance before the shift, and their long-term contribution to arise from differences between the fixation probabilities of alleles with opposite effects, caused by the opposing effects of directional selection on their frequencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction about the generality of the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "cf7fdc80-905d-4f4b-afaa-71002d40774f",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C121",
+      "claim": "The main features of the dynamics portrayed are expected to remain largely intact with pleiotropy, linkage, and demographic changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while all these factors are likely to affect the response, we expect the main features of the dynamics we portrayed to remain largely intact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction about the robustness of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "a0b9d371-8b16-433f-9fc3-6b4fb3b46128",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C122",
+      "claim": "Polygenic adaptation might have minor effects on patterns of neutral diversity at any given point in time, contrary to adaptation mediated by selective sweeps.",
+      "claim_type": "EXPLICIT",
+      "source": "One is that, contrary to adaptation mediated by selective sweeps of initially rare, large effect, beneficial alleles (Smith and Haigh, 1974; Kaplan et al., 1989; Braverman et al., 1995; Hermisson and Pennings, 2005; Coop and Ralph, 2012; Berg and Coop, 2015), polygenic adaptation might have minor effects on patterns of neutral diversity at any given point in time (but may affect temporal diversity patterns; Buffalo and Coop, 2019; Buffalo and Coop, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an implication of the findings, with citations to related work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "e4964cfc-247b-4c7f-826e-00809f2cd387",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C123",
+      "claim": "Directional selection on a highly polygenic trait introduces only small changes to allele frequencies at individual loci, which amount to minor perturbations to the allele trajectories expected under stabilizing selection at equilibrium.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that directional selection on a highly polygenic trait introduces only small changes to allele frequencies at individual loci, which amount to minor perturbations to the allele trajectories expected under stabilizing selection at equilibrium (also see Chevin and Hospital, 2008; Thornton, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an implication of the findings, with citations to related work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "55b828b1-0ce8-4439-8d28-458d5aa63eb0",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C124",
+      "claim": "For alleles with moderate effects, there is a modest, long-term excess of fixations of aligned alleles relative to opposing ones, accompanied by a small increase in the total number of fixations.",
+      "claim_type": "EXPLICIT",
+      "source": "For those with more moderate effects, there is a modest, long-term excess of fixations of those alleles whose effects are aligned with the shift relative to those whose effects are opposed, accompanied by a small increase in the total number of fixations (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding shown in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "670bf921-3f38-4bab-9094-e8c431f034e3",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C125",
+      "claim": "The trajectories of alleles that fix are largely driven by weak stabilizing selection and tend to be drawn out.",
+      "claim_type": "EXPLICIT",
+      "source": "The trajectories of the alleles that fix are largely driven by weak stabilizing selection and tend to be drawn out (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding shown in Figure 8.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "f5253f7d-5ad3-401d-9995-c95abf5f930e",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C126",
+      "claim": "The effects of polygenic adaptation on neutral diversity should be minor.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our results indicate that the effects of polygenic adaptation on neutral diversity should be minor (other than perhaps for massive shifts in optimal trait values, as noted above).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an implication of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "58a5b78d-5ed9-4813-a300-e0630765144b",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C127",
+      "claim": "Long-term stabilizing selection on quantitative traits likely has substantial effects on neutral diversity patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, long-term stabilizing selection on quantitative traits likely has substantial effects on neutral diversity patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an implication contrasting with the effects of polygenic adaptation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "82994640-1ab1-4442-a912-5803721c4f2d",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C128",
+      "claim": "Selection against minor alleles induced by stabilizing selection may well be a major source of background selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, selection against minor alleles induced by stabilizing selection may well be a major source of background selection and is expected to affect neutral diversity patterns in ways that are similar to those of background (purifying) selection from other selective origins (Charlesworth et al., 1993; Hudson and Kaplan, 1995; Santiago and Caballero, 1998; McVean and Charlesworth, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an implication with citations to related work on background selection.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "601d5186-7c0c-4211-b49b-8b410b78a733",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C129",
+      "claim": "Under the assumption that many adaptive changes on the human lineage arose from selection on complex, quantitative traits, focusing on individual adaptive genetic changes may not be as informative as it appears.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the plausible assumption that many adaptive changes on the human lineage arose from selection on complex, quantitative traits, this approach may not be as informative as it appears (Pritchard et al., 2010; Boyle et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an implication for human evolutionary studies, with citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "8a5a3392-c092-44ad-8401-ba721f2696b0",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C130",
+      "claim": "After a shift in the optimal trait value, the number of fixations of alleles whose effects are aligned with the shift are typically nearly equal to the number of alleles that are opposed.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that after a shift in the optimal trait value, the number of fixations of alleles whose effects are aligned with the shift are typically nearly equal to the number of alleles that are opposed (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding shown in Figure 7A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "f0196c99-4599-4d8e-a54b-4dafa8903843",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C131",
+      "claim": "The alleles that fix are a largely random draw from the vastly greater number of alleles that affect the trait.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the alleles that fix are a largely random draw from the vastly greater number of alleles that affect the trait, both in the sense of being those that happened to segregate at high MAFs at the onset of selection and because of the stochasticity of fixation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an implication of the findings about the role of drift.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "0f272423-ac8b-4d8f-8fbf-5dc04418bad5",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C132",
+      "claim": "In the scenario of polygenic adaptation, it becomes meaningless to say that any given fixation was adaptive.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in this plausible scenario, it becomes meaningless to say that any given fixation was adaptive, and arguably uninteresting to focus on the particular subset of alleles that happened to reach fixation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a philosophical implication of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "7d6b9a68-78a3-49f8-b15f-9648f2620c21",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C133",
+      "claim": "Identifying the traits that experienced adaptive changes promises to provide important insights.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, identifying the traits that experienced adaptive changes promises to provide important insights.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for future research based on the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "6f2a61a9-e91d-4e8f-bd3c-8d92107eeadf",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "claim_id": "C134",
+      "claim": "A better understanding of the process of polygenic adaptation should help to guide efforts to identify traits under selection.",
+      "claim_type": "EXPLICIT",
+      "source": "A better understanding of the process of polygenic adaptation should help to guide such efforts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the broader impact of the research.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d860d37c-9724-4f03-855c-2fb8eeeb44ea",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the biological and empirical context for studying polygenic adaptation, arguing that it is ubiquitous based on evidence from artificial selection, human evolution, and GWAS studies, while noting methodological challenges in detecting it.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C18 collectively provide a well-supported literature review establishing the prevalence of polygenic adaptation (C1-C7), evidence from human evolution (C8-C10), GWAS findings (C11-C13), and methodological challenges (C14-C16). These claims are appropriately cited and represent established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "699f2edf-68fc-4aea-8b9a-48f97dbfdd0c",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The manuscript reviews prior theoretical work on polygenic adaptation, highlighting that Lande's model assumes normality and constant variance, that Barton and Turelli extended this to higher moments, and that infinite population models differ fundamentally from finite populations where drift affects allele frequencies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C24 accurately describe prior theoretical work with appropriate citations (C19-C21) and correctly identify the key limitation that infinite population models (C22) differ from finite populations where drift is important (C23-C24). This provides essential motivation for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "516bb6a6-99f7-4f64-b220-811f60e38da2",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The manuscript derives that the phenotypic response to a shift in optimum depends on changes to the 2nd and 3rd central moments of the phenotypic distribution, with Lande's approximation holding when genetic variance is dominated by small/moderate effect loci, but deviating when large effect loci contribute substantially, leading to a two-phase dynamic with a rapid phase followed by a prolonged quasi-static phase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C43 present the core theoretical results on phenotypic dynamics, supported by mathematical derivations (Equation 3), simulations (Figure 2), and analytical approximations. The distinction between Lande and non-Lande cases is well-justified theoretically and empirically validated. The two-phase dynamic (C40-C43) follows logically from the behavior of the central moments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "15a57a5e-17cd-4b32-8e10-a5985310d44c",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "During the rapid phase, directional selection differentially affects aligned versus opposing alleles, with an allele's contribution to phenotypic change proportional to its contribution to variance before the shift. Moderate and large effect alleles make the greatest per-site contributions, while moderate effect alleles experience the greatest frequency changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C109 describe the rapid phase dynamics with strong theoretical support (Equations 10-13) and simulation validation (Figure 4). The proportionality between variance contribution and phenotypic change (C59-C60, C107) is a key finding derived analytically and confirmed empirically. The differential contributions by effect size (C108-C109) follow logically from the model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "760a74aa-9918-408f-b43b-e4e61ce146dc",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Over the long term, small frequency differences from the rapid phase translate into small differences in fixation probabilities, with prolonged weak directional selection amplifying these differences in the non-Lande case. This process involves massive turnover where transient contributions of large effect alleles are supplanted by fixed moderate and small effect alleles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C111 describe the equilibration phase dynamics with theoretical derivations (Equations 14-28) and simulation support (Figures 5-6). The turnover in genetic architecture (C111) is a major finding well-supported by both analytical approximations and simulations. The distinction between Lande and non-Lande cases (C67-C68, C78) is clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "38d9006e-7e0b-4fe8-bd71-113c5e79257b",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The genetic basis of adaptation undergoes dramatic turnover during equilibration, with the long-term contribution of low-frequency large effect alleles diminished relative to their short-term contribution, while moderate effect alleles at higher initial frequencies have amplified long-term contributions. This occurs because large effect alleles start at low frequencies due to strong stabilizing selection and are unlikely to exceed a critical frequency threshold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C93 detail the mechanisms of genetic turnover with strong support from linear approximations (Equations 19-28) and simulations (Figure 6, Appendix figures). The critical frequency concept (C89-C90) and its dependence on effect size (C91-C92) are well-justified theoretically and empirically. The role of stabilizing selection in shaping these dynamics (C93) is clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "d65b08ad-8682-4857-97ff-415f09071c40",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "While long-term adaptation arises from an excess of aligned fixations, this excess is typically small relative to equilibrium fixation rates. For large effect sizes, nearly all fixations are aligned, but most phenotypic change comes from small and moderate effect alleles. The number of aligned and opposing fixations are typically nearly equal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C130 characterize fixation patterns with strong empirical support from simulations (Figure 7). The finding that fixation excesses are modest (C94, C97) yet sufficient for adaptation is well-demonstrated. The near-equality of aligned and opposing fixations (C130) is a key result with important implications, clearly shown in Figure 7A.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "dc6cb247-fce5-4317-9f41-f547a1b76564",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study finds that Lande's prediction of exponential approach to the new optimum is accurate when the trait is sufficiently polygenic, the shift is not too large, and genetic variance is dominated by small/moderate effect loci. When large effect loci contribute markedly, a pronounced quasi-static phase follows the initial rapid change.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100-C103 summarize the main findings regarding Lande's approximation, with C100-C101 accurately describing prior work and C102-C103 presenting the key results of this study. These findings are well-supported by theoretical analysis (Equations 3-6) and extensive simulations (Figure 2, Appendix figures 26-27).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "89ec3693-d3b0-405b-971a-1a46594fbaa4",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The finding that large effect alleles almost never sweep to fixation appears to contradict previous studies, but these discrepancies are explained by earlier work considering parameter ranges that violate the assumptions of this study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C113-C114 address an apparent contradiction with prior literature. The explanation (C114) is reasonable and supported by specific examples of how previous studies violated the current assumptions (discussed in detail in the Discussion). This reconciliation strengthens rather than weakens the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "1fc46dcf-63f7-4eb5-aeb1-fa939f910258",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The manuscript speculates that pleiotropy, linkage disequilibrium, and demographic changes may affect polygenic adaptation but expects the main features of the dynamics to remain intact, with short-term contributions proportional to variance contributions and long-term contributions arising from differential fixation probabilities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C115-C121 are explicitly speculative (C115-C116, C121) about factors not included in the model. While the predictions about robustness (C119-C121) are reasonable extrapolations from the current findings, they remain untested hypotheses requiring future work. The claims appropriately acknowledge these limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "e4267f85-d804-48c9-8736-21ade4e30ba3",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Polygenic adaptation is predicted to have minor effects on neutral diversity patterns at any given time point because it introduces only small changes to allele frequencies at individual loci. In contrast, long-term stabilizing selection may substantially affect neutral diversity through background selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C122-C128 present implications for neutral diversity patterns, logically derived from the finding that frequency changes are small (C123) and fixation trajectories are drawn out (C125). The contrast with stabilizing selection (C127-C128) is well-reasoned. These are inferences from the model results rather than direct findings, but they are well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    },
+    {
+      "id": "2bd3b7e9-1aa4-4a22-b9f4-59e9ec16bf8a",
+      "content_id": "40ac937d-559a-43cf-ad19-399725c457fb",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study argues that for polygenic adaptation, focusing on individual adaptive fixations may be uninformative because fixed alleles are largely a random draw from many contributing alleles and aligned/opposing fixations are nearly equal in number. Instead, identifying traits under selection promises more important insights.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C129-C134 present important implications for studying human adaptation, logically following from the findings about fixation patterns (C130-C131) and the stochastic nature of which alleles fix (C131). The philosophical conclusion (C132) and recommendation (C133-C134) are well-justified by the results, though they represent interpretations rather than direct findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:59:32.561980Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "af31390a-9eef-40fc-ab94-18658c7ab90e",
+      "result_id": "d860d37c-9724-4f03-855c-2fb8eeeb44ea"
+    },
+    {
+      "claim_id": "c37105d4-64c9-48e0-bf81-2923cc8fbe1f",
+      "result_id": "d860d37c-9724-4f03-855c-2fb8eeeb44ea"
+    },
+    {
+      "claim_id": "d53e7717-41fc-48c8-9052-fed751d73891",
+      "result_id": "d860d37c-9724-4f03-855c-2fb8eeeb44ea"
+    },
+    {
+      "claim_id": "4009b3a7-48e9-4231-a24f-c41a4a766bba",
+      "result_id": "d860d37c-9724-4f03-855c-2fb8eeeb44ea"
+    },
+    {
+      "claim_id": "0c48fff7-57dc-4f18-920f-ac557cc4fcb8",
+      "result_id": "d860d37c-9724-4f03-855c-2fb8eeeb44ea"
+    },
+    {
+      "claim_id": "b83ab794-f324-40bc-880b-8515eb453a2b",
+      "result_id": "d860d37c-9724-4f03-855c-2fb8eeeb44ea"
+    },
+    {
+      "claim_id": "f38d98f5-450e-442c-95f9-f30449a57a89",
+      "result_id": "d860d37c-9724-4f03-855c-2fb8eeeb44ea"
+    },
+    {
+      "claim_id": "d187f6b1-a787-48c4-b39f-8a0e6f4682de",
+      "result_id": "d860d37c-9724-4f03-855c-2fb8eeeb44ea"
+    },
+    {
+      "claim_id": "bc9f07ee-e92f-428f-8b71-647897fb543a",
+      "result_id": "d860d37c-9724-4f03-855c-2fb8eeeb44ea"
+    },
+    {
+      "claim_id": "bb5392cc-b20f-4204-ad7e-65e866774f2d",
+      "result_id": "d860d37c-9724-4f03-855c-2fb8eeeb44ea"
+    },
+    {
+      "claim_id": "db91b0ba-d724-4f2f-b3f6-c2f64af53343",
+      "result_id": "d860d37c-9724-4f03-855c-2fb8eeeb44ea"
+    },
+    {
+      "claim_id": "4db306f6-ded6-4d9c-a54a-5caddeea9f33",
+      "result_id": "d860d37c-9724-4f03-855c-2fb8eeeb44ea"
+    },
+    {
+      "claim_id": "7ce0101a-077e-4d65-9e06-fff289c62898",
+      "result_id": "d860d37c-9724-4f03-855c-2fb8eeeb44ea"
+    },
+    {
+      "claim_id": "c9c5ad30-e759-4b8a-a114-e7b7b01b1fad",
+      "result_id": "d860d37c-9724-4f03-855c-2fb8eeeb44ea"
+    },
+    {
+      "claim_id": "d14471b7-8162-4ff3-9270-3b051f488e66",
+      "result_id": "d860d37c-9724-4f03-855c-2fb8eeeb44ea"
+    },
+    {
+      "claim_id": "48350f91-14fa-4b4c-b3d0-3f15a775002b",
+      "result_id": "d860d37c-9724-4f03-855c-2fb8eeeb44ea"
+    },
+    {
+      "claim_id": "5da83089-1f61-41e6-94c5-0b8d4b89046b",
+      "result_id": "d860d37c-9724-4f03-855c-2fb8eeeb44ea"
+    },
+    {
+      "claim_id": "5ae7d670-1a12-4adc-b823-90a1df0d82fd",
+      "result_id": "d860d37c-9724-4f03-855c-2fb8eeeb44ea"
+    },
+    {
+      "claim_id": "1c4f501b-48c5-4d59-9fb0-c8499a802f4d",
+      "result_id": "699f2edf-68fc-4aea-8b9a-48f97dbfdd0c"
+    },
+    {
+      "claim_id": "c2785c01-6625-45d8-91bb-619c25a8c178",
+      "result_id": "699f2edf-68fc-4aea-8b9a-48f97dbfdd0c"
+    },
+    {
+      "claim_id": "73e739c7-4a04-43ab-b9c7-1f9fa8130aed",
+      "result_id": "699f2edf-68fc-4aea-8b9a-48f97dbfdd0c"
+    },
+    {
+      "claim_id": "2d4c632b-de7f-4284-b9c7-b89a27d7e230",
+      "result_id": "699f2edf-68fc-4aea-8b9a-48f97dbfdd0c"
+    },
+    {
+      "claim_id": "15c427d5-830c-43f9-b1e3-ebe1417e9265",
+      "result_id": "699f2edf-68fc-4aea-8b9a-48f97dbfdd0c"
+    },
+    {
+      "claim_id": "0628ffde-5a6c-49c6-936f-40ae6602f93a",
+      "result_id": "699f2edf-68fc-4aea-8b9a-48f97dbfdd0c"
+    },
+    {
+      "claim_id": "b865e44c-5e87-40e0-be82-64d0d606c389",
+      "result_id": "516bb6a6-99f7-4f64-b220-811f60e38da2"
+    },
+    {
+      "claim_id": "08be97d4-ce73-46e5-b646-8ff702394c95",
+      "result_id": "516bb6a6-99f7-4f64-b220-811f60e38da2"
+    },
+    {
+      "claim_id": "ebd899fb-3f84-4e9f-9e99-47b77eb408a1",
+      "result_id": "516bb6a6-99f7-4f64-b220-811f60e38da2"
+    },
+    {
+      "claim_id": "8d895015-8a7c-4c3b-bfcf-a8a21e15bb1c",
+      "result_id": "516bb6a6-99f7-4f64-b220-811f60e38da2"
+    },
+    {
+      "claim_id": "1defae8a-e200-4e39-96fd-09dcf93d0303",
+      "result_id": "516bb6a6-99f7-4f64-b220-811f60e38da2"
+    },
+    {
+      "claim_id": "465b19ed-6ef3-40da-9e04-90cc7afe1543",
+      "result_id": "516bb6a6-99f7-4f64-b220-811f60e38da2"
+    },
+    {
+      "claim_id": "eeef4413-3644-4811-851e-e3a8966a3643",
+      "result_id": "516bb6a6-99f7-4f64-b220-811f60e38da2"
+    },
+    {
+      "claim_id": "8b93d593-e91e-43fb-b085-4f186c1e4342",
+      "result_id": "516bb6a6-99f7-4f64-b220-811f60e38da2"
+    },
+    {
+      "claim_id": "935d7af1-0b5b-4aef-ad91-06c7137bd5e2",
+      "result_id": "516bb6a6-99f7-4f64-b220-811f60e38da2"
+    },
+    {
+      "claim_id": "fdc49553-f780-415c-b433-238e3ae096ca",
+      "result_id": "516bb6a6-99f7-4f64-b220-811f60e38da2"
+    },
+    {
+      "claim_id": "9bcd5a1f-fd2a-4433-a2dc-cad2ba3a606b",
+      "result_id": "516bb6a6-99f7-4f64-b220-811f60e38da2"
+    },
+    {
+      "claim_id": "86e80000-69ab-4cbe-a237-9c6f52023586",
+      "result_id": "516bb6a6-99f7-4f64-b220-811f60e38da2"
+    },
+    {
+      "claim_id": "0b9faf09-3168-4593-8077-486741dae2eb",
+      "result_id": "516bb6a6-99f7-4f64-b220-811f60e38da2"
+    },
+    {
+      "claim_id": "51e9010c-ce79-476d-8dee-e80f661ef2e6",
+      "result_id": "15a57a5e-17cd-4b32-8e10-a5985310d44c"
+    },
+    {
+      "claim_id": "0176adf6-4145-4993-ba19-a4d30ddc51c4",
+      "result_id": "15a57a5e-17cd-4b32-8e10-a5985310d44c"
+    },
+    {
+      "claim_id": "0f9ffb98-3083-4fb9-a883-6647f390bb34",
+      "result_id": "15a57a5e-17cd-4b32-8e10-a5985310d44c"
+    },
+    {
+      "claim_id": "28c89c3b-203d-4421-86ec-93d748b927e4",
+      "result_id": "15a57a5e-17cd-4b32-8e10-a5985310d44c"
+    },
+    {
+      "claim_id": "da9e5a96-af5e-44fc-bfa8-535aba1667a3",
+      "result_id": "15a57a5e-17cd-4b32-8e10-a5985310d44c"
+    },
+    {
+      "claim_id": "9f782be9-8d8a-4e47-9a46-9385f103c145",
+      "result_id": "15a57a5e-17cd-4b32-8e10-a5985310d44c"
+    },
+    {
+      "claim_id": "6f50046f-bc5b-4aae-b7c9-7b293fae5065",
+      "result_id": "15a57a5e-17cd-4b32-8e10-a5985310d44c"
+    },
+    {
+      "claim_id": "1020d26d-a303-4801-af51-001fc84c3283",
+      "result_id": "15a57a5e-17cd-4b32-8e10-a5985310d44c"
+    },
+    {
+      "claim_id": "6f8b06fd-fc7e-4660-834d-9a51416e9671",
+      "result_id": "15a57a5e-17cd-4b32-8e10-a5985310d44c"
+    },
+    {
+      "claim_id": "fe126f1c-84b1-4c15-83c8-83d1950e21cf",
+      "result_id": "15a57a5e-17cd-4b32-8e10-a5985310d44c"
+    },
+    {
+      "claim_id": "65d8e224-2d3b-47f0-b4d9-9bdcf77a5ae3",
+      "result_id": "15a57a5e-17cd-4b32-8e10-a5985310d44c"
+    },
+    {
+      "claim_id": "913c7aaf-f1b0-4ae9-bf9a-bf99eeefcb48",
+      "result_id": "760a74aa-9918-408f-b43b-e4e61ce146dc"
+    },
+    {
+      "claim_id": "1e591f51-8b89-40ab-afaf-28ee4ee0412c",
+      "result_id": "760a74aa-9918-408f-b43b-e4e61ce146dc"
+    },
+    {
+      "claim_id": "91a423c0-e7f7-45c8-a586-460406d99662",
+      "result_id": "760a74aa-9918-408f-b43b-e4e61ce146dc"
+    },
+    {
+      "claim_id": "4ffc68d0-a04a-4667-9ad9-e9a76c2f6bef",
+      "result_id": "760a74aa-9918-408f-b43b-e4e61ce146dc"
+    },
+    {
+      "claim_id": "6ca25e53-6e68-4f9c-b93b-c7549d35dd25",
+      "result_id": "760a74aa-9918-408f-b43b-e4e61ce146dc"
+    },
+    {
+      "claim_id": "9ccfc759-0376-43fd-a387-95413781c8a0",
+      "result_id": "760a74aa-9918-408f-b43b-e4e61ce146dc"
+    },
+    {
+      "claim_id": "1ba2a2af-8779-4f69-b6a0-c15fd7d9b8aa",
+      "result_id": "38d9006e-7e0b-4fe8-bd71-113c5e79257b"
+    },
+    {
+      "claim_id": "5b0770b3-ac5e-4dd6-99be-a07c3639a155",
+      "result_id": "38d9006e-7e0b-4fe8-bd71-113c5e79257b"
+    },
+    {
+      "claim_id": "862a8bef-27be-4537-872e-d2d70b2665cd",
+      "result_id": "38d9006e-7e0b-4fe8-bd71-113c5e79257b"
+    },
+    {
+      "claim_id": "c49bc84c-ffde-4c3a-b468-1d55f4c43474",
+      "result_id": "38d9006e-7e0b-4fe8-bd71-113c5e79257b"
+    },
+    {
+      "claim_id": "1698160e-5bdc-459d-965c-0bbd2e4c95d7",
+      "result_id": "38d9006e-7e0b-4fe8-bd71-113c5e79257b"
+    },
+    {
+      "claim_id": "ef4d58b5-e3b9-4978-bc6d-cba0c67ea148",
+      "result_id": "38d9006e-7e0b-4fe8-bd71-113c5e79257b"
+    },
+    {
+      "claim_id": "6d83c399-a76e-47cc-9773-73d03d667f7f",
+      "result_id": "38d9006e-7e0b-4fe8-bd71-113c5e79257b"
+    },
+    {
+      "claim_id": "5e5d826a-76f4-4fbb-af4b-cd4e88e8edc7",
+      "result_id": "38d9006e-7e0b-4fe8-bd71-113c5e79257b"
+    },
+    {
+      "claim_id": "44322529-3b30-402e-8712-1990a82ba9b4",
+      "result_id": "38d9006e-7e0b-4fe8-bd71-113c5e79257b"
+    },
+    {
+      "claim_id": "70b671ef-7a22-4938-9b3e-67e5fb01a08d",
+      "result_id": "d65b08ad-8682-4857-97ff-415f09071c40"
+    },
+    {
+      "claim_id": "215c8a1a-4359-4d04-af62-89f1c01e0276",
+      "result_id": "d65b08ad-8682-4857-97ff-415f09071c40"
+    },
+    {
+      "claim_id": "52ff4832-687b-4ed2-b210-61e34a76791c",
+      "result_id": "d65b08ad-8682-4857-97ff-415f09071c40"
+    },
+    {
+      "claim_id": "55b828b1-0ce8-4439-8d28-458d5aa63eb0",
+      "result_id": "d65b08ad-8682-4857-97ff-415f09071c40"
+    },
+    {
+      "claim_id": "670bf921-3f38-4bab-9094-e8c431f034e3",
+      "result_id": "d65b08ad-8682-4857-97ff-415f09071c40"
+    },
+    {
+      "claim_id": "8a5a3392-c092-44ad-8401-ba721f2696b0",
+      "result_id": "d65b08ad-8682-4857-97ff-415f09071c40"
+    },
+    {
+      "claim_id": "885009e0-6521-49f6-ba3a-3bc8b216636b",
+      "result_id": "dc6cb247-fce5-4317-9f41-f547a1b76564"
+    },
+    {
+      "claim_id": "70ac7e2e-c608-4cb1-831c-c602338d25dd",
+      "result_id": "dc6cb247-fce5-4317-9f41-f547a1b76564"
+    },
+    {
+      "claim_id": "d463a6ec-9547-4730-930c-f1b323a532f9",
+      "result_id": "dc6cb247-fce5-4317-9f41-f547a1b76564"
+    },
+    {
+      "claim_id": "fa5a27b5-bdde-4241-9bc4-a85589f6767b",
+      "result_id": "dc6cb247-fce5-4317-9f41-f547a1b76564"
+    },
+    {
+      "claim_id": "321dc340-f1a1-46f1-86f8-5616fdb5f261",
+      "result_id": "89ec3693-d3b0-405b-971a-1a46594fbaa4"
+    },
+    {
+      "claim_id": "dc1fd5bf-bcc0-4d94-9d79-e7858e4f6e28",
+      "result_id": "89ec3693-d3b0-405b-971a-1a46594fbaa4"
+    },
+    {
+      "claim_id": "e482b7ef-f27d-44d3-96a2-14da24725d4b",
+      "result_id": "1fc46dcf-63f7-4eb5-aeb1-fa939f910258"
+    },
+    {
+      "claim_id": "8b92f500-8eec-48c7-8032-41048e9c009d",
+      "result_id": "1fc46dcf-63f7-4eb5-aeb1-fa939f910258"
+    },
+    {
+      "claim_id": "5632214b-4afb-4127-912a-23ae60f14560",
+      "result_id": "1fc46dcf-63f7-4eb5-aeb1-fa939f910258"
+    },
+    {
+      "claim_id": "2ce37140-950a-4c59-aadb-acf7c8f9d837",
+      "result_id": "1fc46dcf-63f7-4eb5-aeb1-fa939f910258"
+    },
+    {
+      "claim_id": "c65a1aff-cc83-4b3a-8ecd-bff3384640cf",
+      "result_id": "1fc46dcf-63f7-4eb5-aeb1-fa939f910258"
+    },
+    {
+      "claim_id": "cf7fdc80-905d-4f4b-afaa-71002d40774f",
+      "result_id": "1fc46dcf-63f7-4eb5-aeb1-fa939f910258"
+    },
+    {
+      "claim_id": "a0b9d371-8b16-433f-9fc3-6b4fb3b46128",
+      "result_id": "e4267f85-d804-48c9-8736-21ade4e30ba3"
+    },
+    {
+      "claim_id": "e4964cfc-247b-4c7f-826e-00809f2cd387",
+      "result_id": "e4267f85-d804-48c9-8736-21ade4e30ba3"
+    },
+    {
+      "claim_id": "f5253f7d-5ad3-401d-9995-c95abf5f930e",
+      "result_id": "e4267f85-d804-48c9-8736-21ade4e30ba3"
+    },
+    {
+      "claim_id": "58a5b78d-5ed9-4813-a300-e0630765144b",
+      "result_id": "e4267f85-d804-48c9-8736-21ade4e30ba3"
+    },
+    {
+      "claim_id": "82994640-1ab1-4442-a912-5803721c4f2d",
+      "result_id": "e4267f85-d804-48c9-8736-21ade4e30ba3"
+    },
+    {
+      "claim_id": "601d5186-7c0c-4211-b49b-8b410b78a733",
+      "result_id": "2bd3b7e9-1aa4-4a22-b9f4-59e9ec16bf8a"
+    },
+    {
+      "claim_id": "f0196c99-4599-4d8e-a54b-4dafa8903843",
+      "result_id": "2bd3b7e9-1aa4-4a22-b9f4-59e9ec16bf8a"
+    },
+    {
+      "claim_id": "0f272423-ac8b-4d8f-8fbf-5dc04418bad5",
+      "result_id": "2bd3b7e9-1aa4-4a22-b9f4-59e9ec16bf8a"
+    },
+    {
+      "claim_id": "7d6b9a68-78a3-49f8-b15f-9648f2620c21",
+      "result_id": "2bd3b7e9-1aa4-4a22-b9f4-59e9ec16bf8a"
+    },
+    {
+      "claim_id": "6f2a61a9-e91d-4e8f-bd3c-8d92107eeadf",
+      "result_id": "2bd3b7e9-1aa4-4a22-b9f4-59e9ec16bf8a"
+    }
+  ],
+  "comparisons": []
+}

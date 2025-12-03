@@ -1,0 +1,329 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The authors developed two methods to equalize the first division of C. elegans embryos: acute temperature-sensitive inactivation of LIN-5 and optogenetic recruitment of LIN-5 to the anterior cortex. Both methods successfully produced embryos with similarly sized AB and P1 cells while maintaining normal A-P polarity, as evidenced by normal PAR-2 and MEX-5 distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C53 provide direct experimental evidence that both methods achieve equalization (supported by figures and videos). Claims C48-C51 demonstrate that A-P polarity is preserved through PAR-2 and MEX-5 localization data. The reversibility of LIN-5 inactivation (C47) is important for allowing subsequent development. These converging lines of evidence strongly support the successful development of methods to specifically test the role of size asymmetry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "First division equalization can be tolerated to some extent, with approximately 50% of equalized embryos surviving, but there is a size asymmetry threshold at 48% relative AB size below which embryogenesis invariably fails. Lethality gradually increases as AB and P1 become more similar in size, from ~24% at 56-54% AB size to ~75% at 50-48% AB size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 provide quantitative data from both temperature-shift and optogenetic experiments showing the gradual increase in lethality with decreasing size asymmetry and the absolute threshold at 48%. The sample sizes are substantial (N=257 for temperature shift experiments) and the finding is replicated across two independent experimental approaches. Statistical analyses are referenced in supplementary materials. The conclusions (C64-C66) are well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C77"
+    ],
+    "result": "The size difference between AB and P1 contributes to their division asynchrony, as demonstrated by strong correlation between relative AB size and division timing. However, restoring asynchrony through laser-induced cell cycle delay in P1 did not rescue viability of equalized embryos, demonstrating that reduced division asynchrony per se is not responsible for lethality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 shows strong correlation (r value provided, Figure 2E) between size and asynchrony. The critical rescue experiment (C72) directly tests causality and shows no rescue despite restored asynchrony (Figure 2F), providing strong evidence for the conclusion in C73. Claim C70-C71 appropriately acknowledge that size is only one factor in asynchrony, supported by citations. This is a well-designed experiment with appropriate controls that rules out one potential mechanism of lethality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C78",
+      "C79"
+    ],
+    "result": "A minor fraction (~4%) of upshifted embryos adopt an abnormal T-arrangement at the 4-cell stage where P2 cannot contact ABp, preventing critical Delta/Notch signaling. All embryos with this arrangement died, illustrating one mechanism by which size asymmetry contributes to successful fate acquisition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 provides quantitative frequency data (n=257). Claims C75-C76 show the consequence of this arrangement with complete penetrance (n=11 all died). The inference about Delta/Notch signaling (C75) is reasonable given established knowledge about this pathway. However, this represents only a minor fraction of lethality and cannot explain the majority of deaths in equalized embryos, which the authors appropriately acknowledge in C77-C78.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Comprehensive 4D lineage analysis revealed that equalization causes faster cell cycle progression specifically in the P1 lineage but not the AB lineage, with the germline precursor P4 most affected (~33% shorter cell cycle). This leads to altered division sequence, with P1 descendants dividing before corresponding AB lineage cells. However, this alone does not explain differential survival of equalized embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lineage analysis is comprehensive (up to ~2000 data points per embryo, n=84 embryos total across conditions). Claims C82-C83 show clear differential effects between lineages (Figure 3A-B). Claim C85 provides specific quantitative data with statistical testing (p<0.001). The conclusion that timing changes alone don't explain lethality (C91-C92) is supported by finding no significant differences in timing between equalized alive vs. dead embryos. The analysis is rigorous with appropriate statistical corrections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Equalized dead and inverted embryos exhibit significantly less stereotyped cell cycle durations than equalized alive embryos, with increased coefficient of variation specifically in the P1 lineage (6.6% and 6.5% vs 5.2%, p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 provide specific quantitative measurements with statistical testing and appropriate sample sizes. The finding that increased variability is specific to the P1 lineage and to embryos that die is well-supported. However, it's unclear whether increased variability is a cause or consequence of the developmental defects, which the authors appropriately present as an observation rather than a causal claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Spatial analysis of cell positioning and division orientation shows that equalized alive embryos exhibit mild deviations from normal that remain constant over time, while equalized dead embryos show progressively increasing deviations. Division orientation defects are similarly more pronounced in embryos that die.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C101 describe clear patterns in the lineaging data shown in Figure 4A-B. The conclusion (C102) appropriately summarizes the differential trajectories between alive and dead embryos. The analysis uses a reference model for comparison, which is methodologically sound. However, the analysis is descriptive and doesn't establish which specific deviations are causally related to lethality versus being consequences of earlier defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "EMS division orientation is skewed by >35\u00b0 in ~19% of equalized embryos. In all eight embryos with such skew that died, this led to severe cell mispositioning. However, four equalized embryos that lived corrected the skew during late anaphase, demonstrating that uncorrected EMS skew results in lethality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 provide specific quantitative data with clear sample sizes (n=48 equalized, n=7 inverted). The observation that all embryos with uncorrected skew died while those that corrected it lived provides strong evidence for the causal relationship stated in C106. The data are supported by Figure 4F-G. This represents a clear mechanistic link between size equalization and a specific developmental defect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "MS division orientation deviates approximately three times more in equalized dead embryos than alive ones, leading to MSa/MSp left-right inversion that is significantly associated with death. However, some equalized alive embryos also show this inversion, indicating it can be compatible with survival through compensatory movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 provide quantitative comparisons supported by Figure 4H-K, with statistical significance testing. Claim C109 appropriately notes that the phenotype is not fully penetrant for lethality, which is important for understanding the complexity of the system. The conclusion (C110) is appropriately cautious, stating these defects \"can occur\" and \"contribute to\" rather than claiming they are necessary or sufficient for lethality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Overall variability in cell positioning and division orientation is increased in equalized embryos compared to controls, with significantly greater variability in embryos that die. These defects are variable rather than stereotyped.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112 are supported by Figure 4C-D with statistical testing (ANOVA and post-hoc tests). The conclusion about variable rather than stereotyped defects (C113) is consistent with the increased variance and the lack of significant associations between different qualitative features (C134). This is an important finding that distinguishes this system from more deterministic developmental defects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Equalized embryos are more susceptible to mechanical compression than controls. Six of ten features distinguishing alive from dead embryos correlate with compression, equalized dead embryos are significantly more compressed (19.8 vs 21.9 \u03bcm, p<0.002), and lethality decreases when embryos are imaged without compression (33% vs 55%, p=0.03).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C116 identify the correlation between compression and developmental defects. The direct test (C118) shows reduced lethality in uncompressed conditions with appropriate statistical testing (Fisher's exact test). Claim C117 provides an important control showing compression doesn't affect normal embryos. The conclusion (C119) is appropriately cautious about mechanism (\"may perturb\"). This represents an important finding about environmental sensitivity of equalized embryos.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Endodermal cells (Ea/Ep) in equalized embryos divide precociously and ingress incompletely, with reduced END-3::GFP expression (~62%, p<0.001) that correlates with AB size and cell cycle duration. ELT-2::GFP is often expressed in only 2-6 cells instead of the normal 8, though this is not significantly associated with lethality (p=0.69).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C125 provide quantitative data on Ea/Ep behavior and marker expression with statistical testing and correlations (Figure 5C-F, Video 8). Claims C126-C128 show downstream effects on ELT-2 expression with appropriate statistical testing showing lack of association with lethality. The conclusion (C127) is appropriately stated as \"less faithfully\" rather than claiming complete failure. The citation to Choi et al. 2017 supporting survival with partial gut is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Pharyngeal fate specification is defective in equalized embryos. While equalized alive embryos systematically show normal PHA-4::GFP expression (18 nuclei), ~47% of equalized dead/inverted embryos show abnormal expression (usually >18 nuclei), with ectopic expression in ABala or ABarp descendants suggesting illegitimate MS/MSa/MSp contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C130 provide clear quantitative data with sample sizes (n=5 alive, n=15 dead/inverted) showing differential expression patterns (Figure 5I-J). Claim C131 provides specific lineage information from supplementary figures. The inference about illegitimate contacts (C132) is reasonable given the known Delta/Notch signaling mechanism. The conclusion (C133) appropriately limits the claim to \"at the least\" these two lineages, acknowledging other lineages weren't examined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C134",
+      "C135"
+    ],
+    "result": "Statistical analysis found no significant associations between pairs of qualitative defects (P4 division, EMS skew, MSa/MSp inversion, aberrant ELT-2 or PHA-4 expression) in equalized embryos, suggesting these defects frequently arise independently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C134 reports comprehensive statistical testing (Fisher's exact test) across all pairs of features in the complete lineaging dataset. The conclusion (C135) is appropriately cautious (\"frequently\" rather than \"always\"). This is an important finding that indicates the complexity and stochastic nature of the developmental defects following equalization, though the lack of association could also reflect insufficient statistical power for some comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Machine learning analysis using Lasso regression identified that three features at the 15-cell stage (ABara dorsoventral position, ABara positional deviation, and Ca net movement) predict embryo fate with ~88% accuracy and 100% sensitivity. These features provide a shared early signature that diverges into variable phenotypic manifestations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C138 provide specific quantitative results from rigorous machine learning analysis with appropriate cross-validation (250 repetitions of 5-fold CV). The finding that ~89% of models converge on the same three features (C137) is remarkable and suggests these are robust predictors. Claim C139 provides additional support from direct lineaging analysis. The conclusion (C140) appropriately interprets these as early signatures. The analysis is methodologically sound with appropriate handling of the relatively small sample size through cross-validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C141",
+      "C142"
+    ],
+    "result": "Analysis of robustness identified only 23 of 1608 features that showed increased variability without change in mean when comparing equalized to control embryos, indicating these features are less robust to perturbation by first division equalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C142 apply appropriate criteria for assessing robustness (increased variance without mean change) to a comprehensive feature set. The analysis is supported by Figure 6\u2014figure supplement 3. However, the interpretation of \"less robust\" (C142) could be questioned\u2014these features might simply be more sensitive indicators of the perturbation rather than being inherently less robust. The analysis is descriptive and doesn't establish causal relationships.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Equalized embryos that die exhibit a characteristic terminal phenotype of failed ventral epidermal closure with tissue extrusion. Post-embryonic phenotypes including larval death and reduced fertility were also observed in animals that hatched, demonstrating that equalization can cause lethality beyond embryogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 describe the terminal phenotype with substantial sample sizes (n=92 for temperature shift, n=26 for optogenetics) and are supported by figures and videos. Claim C57 documents post-embryonic phenotypes with data in supplementary figures. The conclusion (C58) is well-supported. This establishes the range of consequences of first division equalization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C11",
+      "C65",
+      "C66",
+      "C143",
+      "C150"
+    ],
+    "result": "The authors conclude that unequal first cleavage is essential for invariably successful embryonic development of C. elegans, with physical asymmetry being fundamental for ensuring successful development. The size asymmetry provides resilience against mechanical stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These conclusions (C11, C65, C66, C150) are well-supported by the comprehensive experimental evidence showing: (1) only ~50% of equalized embryos survive, (2) there is an absolute threshold below which all embryos die, (3) multiple developmental defects occur in equalized embryos, and (4) equalized embryos are more sensitive to compression. The word \"invariably\" is key\u2014while some equalized embryos do survive, the system loses its robustness. Claim C143 about resilience is supported by the compression experiments. These represent the main conclusions of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "There was no significant difference in relative AB size between equalized alive and equalized dead embryos (both 50.6%, p=0.99), indicating that their different developmental outcomes cannot be attributed to size differences at the 2-cell stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 provide important negative results with appropriate statistical testing. This finding is crucial for the interpretation of subsequent analyses comparing these two groups\u2014it establishes that differences in outcome are not simply due to different degrees of equalization. The statistical test is appropriate and the conclusion is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C145"
+    ],
+    "result": "The authors hypothesize that compressed equalized embryos cannot undertake corrective movements for steric reasons or because their fate is compromised.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C145 is explicitly speculative (\"Presumably\") and is not directly tested. While it's a reasonable hypothesis given the compression sensitivity data and the known ability of normal embryos to correct positioning defects (C144), no experiments directly test whether equalized embryos attempt but fail corrective movements, or whether the mechanisms for such movements are compromised. This represents a plausible interpretation but lacks direct experimental support.",
+    "result_type": "MINOR"
+  }
+]

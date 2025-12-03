@@ -1,0 +1,275 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C20",
+      "C21",
+      "C23",
+      "C24",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C34",
+      "C35"
+    ],
+    "result": "HDXMS and MD simulations reveal domain-specific dynamics of the prefusion S protein, with the stalk region showing the greatest deuterium exchange and flexibility, while the S2 subunit exhibits higher average deuterium uptake than S1. The S1/S2 cleavage site region and heptad repeats show high dynamics, while the central helix and connector domain form a stable core.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C35 provide converging evidence from both HDXMS experimental data (87% sequence coverage, domain-specific RFU measurements) and MD simulations (RMSF values, principal component analysis) that consistently demonstrate differential dynamics across S protein domains. The experimental construct with abrogated cleavage site (C33) is appropriately noted, and the findings are internally consistent across multiple measurement approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C68"
+    ],
+    "result": "ACE2 binding induces long-range allosteric effects in the S protein: it enhances dynamics at the distal S1/S2 cleavage site (~27 \u00c5 away) and flanking regions while dampening dynamics in the stalk hinge regions (~130 \u00c5 away). These allosteric changes are proposed to prime the S protein for furin protease cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, and C48-C55 are supported by HDXMS data showing increased deuterium exchange at the S1/S2 site and decreased exchange in stalk regions upon ACE2 binding, even though the cleavage site is mutated in the construct (C52). The allosteric propagation is demonstrated experimentally, though the mechanistic link to enhanced protease cleavage (C55) is inferential since actual proteolysis cannot occur in this construct.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C44",
+      "C66"
+    ],
+    "result": "HDXMS mapping of the RBD:ACE2 interface reveals that peptides 340-359, 400-420, 432-452, and 487-502 show decreased deuterium exchange upon ACE2 binding, consistent with the crystallographically determined binding interface. These sites correlate with known mutational hotspots.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 and C44 are well-supported by HDXMS data that shows protection from deuterium exchange at the expected binding interface, with validation through comparison to X-ray crystallography structures (C38). The correlation with mutational hotspots (C40) provides additional orthogonal support for the functional relevance of these sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C45",
+      "C46"
+    ],
+    "result": "ACE2 binding causes differential effects on isolated RBD versus RBD within the S protein context, with greater deuterium exchange protection in isolated RBD. Increased exchange at the hinge region upon ACE2 binding suggests allosteric destabilization that maintains RBD in the open conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C45, and C46 are supported by comparative HDXMS data between RBDisolated and RBDS constructs. The interpretation that hinge destabilization maintains the open conformation (C46) is a reasonable inference from the increased deuterium exchange observed at this region, though it remains mechanistically inferential rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C61"
+    ],
+    "result": "RBD binding stabilizes ACE2 both at the direct binding interface (peptides 21-29, 30-39, 75-92) and at distal allosteric sites (peptides 121-146, 278-292, 575-586). Residues unique to SARS-CoV-1 interaction (R393, 325-330) show increased exchange in the SARS-CoV-2 S:ACE2 complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 are supported by HDXMS data showing both local stabilization at the binding interface and long-range allosteric effects in ACE2. The observation about SARS-CoV-1-specific residues (C61) provides comparative insight, though the functional significance of this difference requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Peptides connecting the RBD to the rest of the S protein show high deuterium exchange, suggesting a hinge function. MD simulations show spontaneous RBD motion from 'up' to 'down' conformation, with residues 476-486 in the receptor binding motif exhibiting high flexibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 are supported by converging HDXMS and MD simulation data. The high deuterium exchange (C25) and observed conformational transitions in simulations (C26) provide complementary evidence for hinge function. The high flexibility of residues 476-486 (C27) is demonstrated by RMSF analysis from MD simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C47",
+      "C56",
+      "C70"
+    ],
+    "result": "The authors propose that protease docking sites flanking the S1/S2 cleavage site and the RBD hinge region represent novel therapeutic targets based on their roles as dynamic hotspots and allosteric sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5, C47, C56, and C70 are speculative proposals for therapeutic targeting based on the observed dynamics and allosteric effects. While the underlying structural dynamics data is sound, the therapeutic potential remains untested. No binding studies, inhibition assays, or proof-of-concept experiments are provided to validate these sites as druggable targets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Biochemical characterization shows S protein (1-1208) elutes as a trimer, ACE2 as a dimer, and RBD as a monomer by size-exclusion chromatography. The binding affinities are KD ~15 nM for S:ACE2 and ~150 nM for RBDisolated:ACE2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 are supported by size-exclusion chromatography data and binding affinity measurements. The oligomeric states are consistent with expected behavior, and the KD values (C75) are cited from literature (Wrapp et al., 2020), providing validation for the experimental system used in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "An integrative model of full-length S protein was built using Modeller v.9.21 based on cryo-EM structures, embedded in an ERGIC membrane model, and subjected to 200 ns all-atom MD simulations using GROMACS 2018 with the CHARMM36 force field.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C82 describe the computational modeling methodology in appropriate detail. The use of established structural templates (C77), validated force fields (C80), and appropriate membrane models (C79) represents sound computational practice. However, the 200 ns simulation time (C80) is relatively short for a system of this size and complexity, which may limit sampling of rare conformational transitions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "MD simulations of ACE2 in complex with B0AT1 transporter reveal large motions of the peptidase domain relative to transmembrane domains, suggesting that both S protein and ACE2 have adaptable hinges allowing orientational freedom for recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 are supported by MD simulation data showing flexibility in the ACE2 peptidase domain. The comparison to S protein flexibility (C84-C85) is a reasonable inference that provides mechanistic insight into how the two proteins might achieve productive binding despite their inherent dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C33",
+      "C71",
+      "C72"
+    ],
+    "result": "The S protein construct used contains mutations at the S1/S2 cleavage site (RRAR\u2192GSAS) and at positions 986-987 (KV\u2192PP) to prevent proteolytic processing during expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C71, and C72 accurately describe the experimental construct design. These mutations are standard practice for stabilizing S protein for structural and biophysical studies. However, this design choice is a significant limitation when interpreting results about proteolytic priming (C55), as actual cleavage cannot be assessed in this system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background information on SARS-CoV-2 structure and infection mechanism, including the role of S protein in ACE2-mediated cell entry and subsequent proteolytic processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C15 provide established background knowledge about SARS-CoV-2 structure and function, appropriately cited from the literature. These claims serve as context for the study but do not represent novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C16",
+      "C65",
+      "C67"
+    ],
+    "result": "The study addresses a knowledge gap by using HDXMS and MD simulations to map the S:ACE2 interface in solution and reveal how ACE2 binding induces global conformational changes across the S trimer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C65, and C67 accurately describe the study's objectives and overall approach. The combination of HDXMS and MD simulations is appropriate for addressing the stated knowledge gap about solution-phase dynamics and allosteric effects that are not readily captured by static structural methods alone.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The S protein is highly glycosylated with at least 22 predicted sites (20 N-linked), but peptides spanning 12 glycosylation sites obtained in this study showed no glycosylation, making the analysis focus on non-glycosylated peptides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 appropriately acknowledge the glycosylation status of S protein and the limitation that the HDXMS analysis focuses on non-glycosylated peptides. This is a significant limitation as glycosylation can affect protein dynamics and interactions, but the authors are transparent about this constraint.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C22",
+      "C42",
+      "C43",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C64"
+    ],
+    "result": "Prior structural and biochemical studies have characterized S protein conformational states, RBD:ACE2 binding interfaces, and differences between SARS-CoV-1 and SARS-CoV-2 interactions with ACE2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C42, C43, C57-C60, and C64 cite relevant prior literature to contextualize the current findings. These claims accurately represent published work and provide appropriate background for interpreting the new HDXMS data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C4",
+      "C36"
+    ],
+    "result": "Comparative HDXMS between isolated RBD and RBD within S protein (RBDS) shows differences only at interdomain interfaces and trimer interaction sites, highlighting the stalk and proteolysis sites as dynamic hotspots in the prefusion state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C36 are supported by comparative HDXMS data. The observation that differences are localized to interdomain and trimer interfaces (C36) is consistent with expected effects of quaternary structure on local dynamics. The characterization of these regions as dynamic hotspots (C4) is supported by the high deuterium exchange observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "The authors speculate that this study may help explain how mutations in emerging SARS-CoV-2 strains alter ACE2 binding dynamics and infectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C69 is purely speculative about potential applications to understanding variant strains. While the dynamics map could theoretically inform such analyses, no actual variant data or mutational studies are presented. This represents a potential future direction rather than a supported conclusion from the current work.",
+    "result_type": "MINOR"
+  }
+]

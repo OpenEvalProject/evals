@@ -1,0 +1,1798 @@
+{
+  "submission": {
+    "id": "7245e42e-6c15-40bc-b91c-d64698930bbe",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T04:11:58.233791Z",
+    "updated_at": "2025-12-03T04:11:58.233791Z"
+  },
+  "content": [
+    {
+      "id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "submission_id": "7245e42e-6c15-40bc-b91c-d64698930bbe",
+      "content_type": "manuscript",
+      "content_text": "# De novo macrocyclic peptides dissect energy coupling of a heterodimeric ABC transporter by multimode allosteric inhibition\n\n## Authors\n\n- Erich Stefan<sup>1</sup>\n- Richard Obexer<sup>2</sup>\n- Susanne Hofmann<sup>1</sup>\n- Khanh Vu Huu<sup>3</sup>\n- Yichao Huang<sup>2</sup>\n- Nina Morgner<sup>3</sup> ([ORCID: 0000-0002-1872-490X](https://orcid.org/0000-0002-1872-490X))\n- Hiroaki Suga<sup>2</sup> \u2020\n- Robert Tamp\u00e9<sup>1</sup> ([ORCID: 0000-0002-0403-2160](https://orcid.org/0000-0002-0403-2160)) \u2020\n\n### Affiliations\n\n1. Institute of Biochemistry, Biocenter, Goethe University Frankfurt Frankfurt Germany\n2. Department of Chemistry, Graduate School of Science, The University of Tokyo Tokyo Japan\n3. Institute of Physical and Theoretical Chemistry, Goethe University Frankfurt Frankfurt Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nATP-binding cassette (ABC) transporters constitute the largest family of primary active transporters involved in a multitude of physiological processes and human diseases. Despite considerable efforts, it remains unclear how ABC transporters harness the chemical energy of ATP to drive substrate transport across cell membranes. Here, by random nonstandard peptide integrated discovery (RaPID), we leveraged combinatorial macrocyclic peptides that target a heterodimeric ABC transport complex and explore fundamental principles of the substrate translocation cycle. High-affinity peptidic macrocycles bind conformationally selective and display potent multimode inhibitory effects. The macrocycles block the transporter either before or after unidirectional substrate export along a single conformational switch induced by ATP binding. Our study reveals mechanistic principles of ATP binding, conformational switching, and energy transduction for substrate transport of ABC export systems. We highlight the potential of de novo macrocycles as effective inhibitors for membrane proteins implicated in multidrug resistance, providing avenues for the next generation of pharmaceuticals.\n\n## Introduction\n\nATP-binding cassette (ABC) transporters utilize the energy of ATP binding and hydrolysis to move a vast variety of chemically distinct compounds across cell membranes (Rees et al., 2009; Thomas and Tamp\u00e9, 2020; Locher, 2016; Szak\u00e1cs et al., 2014). They are implicated in many physiological processes and diseases including cystic fibrosis (Stutts et al., 1995; Csan\u00e1dy et al., 2019), diabetes (Aguilar-Bryan and Bryan, 1999), lipid-trafficking disorders (Brooks-Wilson et al., 1999), antibiotic resistance (Orelle et al., 2019), and acquired drug resistance in cancer chemotherapy (Kartner et al., 1983; Litman et al., 2000). ABC transporters are composed of two transmembrane domains (TMDs), forming the substrate translocation pathway, and two nucleotide-binding domains (NBDs), converting the chemical energy of ATP binding and hydrolysis into mechanic transitions (Rees et al., 2009; Locher, 2016; Thomas and Tamp\u00e9, 2018; Oldham et al., 2008). The heterodimeric multidrug resistance transporter TmrAB from Thermus thermophilus shares structural and functional homology with the transporter associated with antigen processing (TAP) and can restore antigen presentation in human TAP-deficient cells (Kim et al., 2015; N\u00f6ll et al., 2017; Zutz et al., 2011). TmrAB is particularly suitable for mechanistic and structural studies, as the various conformers along the translocation trajectory are only accessible at elevated temperatures, thus providing active control over the system (N\u00f6ll et al., 2017; Zutz et al., 2011; Hofmann et al., 2019; Stefan et al., 2020; Barth et al., 2018; Barth et al., 2020; Diederichs and Tamp\u00e9, 2021).\n\nTo correlate ATP binding and hydrolysis to substrate transport, several catalytic models for ABC systems have been depicted including alternating sites (Senior et al., 1995), constant contact (Jones and George, 2009), and processive clamp/ATP switch (Higgins and Linton, 2004; Janas et al., 2003; Abele and Tamp\u00e9, 2004). In all models, substrate translocation is coupled with\u00a0conformational transitions, which are linked to the ATP hydrolysis cycle (Thomas and Tamp\u00e9, 2020; Sz\u00f6ll\u0151si et al., 2018). The conformational landscape of a heterodimeric ABC transporter has recently been elucidated through nine high-resolution X-ray and cryo-EM structures (N\u00f6ll et al., 2017; Hofmann et al., 2019). To functionally integrate these conformers into the substrate translocation\u00a0trajectory, we performed single-turnover transport\u00a0studies using a variant with a slowdown in ATP hydrolysis. Using single liposome-based translocation assays, the unidirectional substrate export along a single conformational switch induced by ATP binding was demonstrated (Stefan et al., 2020).\n\nMany bioactive toxins, antibiotics, and inhibitors are macrocyclic peptides (CPs) with unnatural amino acid modifications (Nicolaou et al., 1999; Obexer et al., 2017). CPs are regarded as next-generation pharmaceutical compounds to target \u2018undruggable\u2019 proteins implicated in disease and diagnosis (Morrison, 2018; Vinogradov et al., 2019; Zorzi et al., 2017). To this end, various engineered and modified CPs are clinically approved or under clinical trials, for\u00a0example, Peginesatide, Linaclotide, and Pasireotide. Compared to conventional small-molecule drugs, CPs usually display an elevated selectivity as well as an increased potency, and they are easy to manufacture (Craik et al., 2013; Driggers et al., 2008). The random nonstandard peptide integrated discovery (RaPID) system comprises the identification of synthetic/de novo CPs against desired target protein complexes to enable structural and functional investigations (Murakami et al., 2006a; Murakami et al., 2006b). As a major advantage, unnatural amino acids such as N-chloroacetyl-d-tyrosine (Goto et al., 2008), N-methyl alanine (Yamagishi et al., 2011), and carboranyl alanine (Yin et al., 2019) can be incorporated by the Flexible In-vitro Translation (FIT) system, relying on aminoacylating ribozymes called Flexizymes (Goto et al., 2011) to construct highly diverse peptide libraries. Using the RaPID system, CPs were identified for receptor tyrosine kinases (Yin et al., 2019), ubiquitin ligase (Yamagishi et al., 2011), the Zika virus protease (Nitsche et al., 2019), prolyl hydroxylase (McAllister et al., 2018), and phosphoglycerate mutases (Yu et al., 2017).\n\nTo dissect the catalytic cycle and energy coupling of substrate translocation of a wild-type ABC transporter, we selected and identified high-affinity macrocyclic peptides against TmrAB applying the mRNA display-based RaPID system. Enriched CPs specifically bind to TmrAB and are high-affinity allosteric inhibitors, which prevent substrate transport and ATP turnover. Two mechanistically distinct CP inhibitor classes were elucidated that arrest the ABC transporter either before or right after ATP-binding induced substrate translocation. Thus, these CPs arrest TmrAB in the inward-facing (IF) and outward-facing conformation, respectively. Our work illustrates the important aspects of ATP binding and conformational switching for productive substrate translocation by a heterodimeric ABC transporter, and it also highlights the potential of CPs targeting transient conformers of membrane protein complexes to develop next-generation drug products.\n\n## Results\n\n### Identification of macrocyclic peptides\n\nWe elicited macrocyclic peptide binders against a heterodimeric ABC transport complex employing the RaPID approach. mRNA-encoded peptide libraries with 10\u201315 randomized amino acid positions were constructed by transcription of degenerate DNA templates, ligation of a puromycin linker, followed by\u00a0FIT\u00a0that relies on a reconstituted Escherichia coli translation system. The final library size was on the order of 1012 macrocyclic peptides. Head-to-side chain cyclization was mediated through ribosomal incorporation of N-chloroacetyl-d-tyrosine at the initiator position, which post-translationally undergoes intramolecular thioether formation with a downstream cysteine (Figure 1A). Catalytically reduced TmrAE523QB (TmrAEQB) complexes reconstituted in lipid nanodiscs with biotinylated membrane scaffold proteins (MSP) were purified by gel filtration and used as bait on streptavidin magnetic beads for affinity selection (Figure 1\u2014figure supplement 1). Empty nanodiscs were utilized for library clearing, purging non-target specific binders from the peptide library. After five iterative rounds of selection, including in vitro translation, affinity panning, reverse transcription, and PCR recovery, high-affinity binders were identified by deep sequencing. Along the affinity selection, several unrelated peptide families were enriched which differed in amino acid composition and length (Figure 1B,\u00a0C). The most abundant macrocyclic peptides after the fifth selection round, CP6, CP12, CP13, and CP14, constituted 41% of the final sequenced pool and could not be grouped into families (Figure 1C). For further analyses, CPs were produced by solid-phase peptide synthesis and extended by a linear C-terminal tail harboring a lysine residue for site-directed labeling by fluorescein (F) or biotin (B), yielding CPFs and CPBs, respectively (Figure 1B). All CPs were cyclized in solution through thioether formation. In the case of CP6, the second cysteine at position 14 was utilized for cyclization, rather than cysteine at position 4, which emerged in the randomized region. CPs were purified by reversed-phase (RP) HPLC, and their correct masses were confirmed by mass spectrometry (Figure 1\u2014figure supplement 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/67732/elife-67732-fig1-v2.jpg)\n\n**Figure 1.:** (A) RaPID selection of CPs. Starting from a DNA library, macrocyclic peptides were generated through transcription and ribosomal translation using the Flexible In-vitro Translation (FIT) system. Cognate mRNA was covalently attached to the nascent peptide through incorporation of mRNA-linked\u00a0puromycin. ABC transporter TmrAEQB reconstituted in lipid nanodiscs (Nds) was immobilized on streptavidin matrices and used as bait during affinity selections. After several iterative rounds of selection, high-affinity binders were isolated and identified by deep sequencing. (B) CPs targeting TmrAB. Enriched CPs were produced by solid-phase synthesis and conjugated with a short linear extension (colored in blue). Head-to-side chain thioether cyclization was mediated between the N-terminal N-chloroacetyl-D-tyrosine and a cysteine residue. The C-terminal lysine was used for site-directed labeling of fluorescein (F) or biotin (B). (C) Enrichment of CPs targeting TmrAB. The 5000 most abundant macrocyclic peptides per selection round based on deep sequencing were utilized to generate sequence similarity networks (Gerlt et al., 2015). Nodes represent unique peptide sequences, node sizes depict peptide frequency, and node colors exhibit peptide length. Sequence alignments of peptide clusters were generated using WebLogo (Crooks et al., 2004).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67732/elife-67732-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) TmrAEQB was reconstituted in lipid nanodiscs composed of biotinylated (B) MSP. Reconstituted nanodiscs were isolated by size-exclusion chromatography (SEC). Empty nanodiscs without TmrAEQB were isolated by SEC and served as bait for negative selections. (B) Purification of macrocyclic peptides (CPs). Selected CPs were synthesized on solid support followed by on-resin labeling and cyclization. Macrocycles were purified by C18 reversed-phase HPLC. (C) Identity of CPs. After synthesis, cyclization, and purification, molecular masses of macrocycles were confirmed by MALDI-TOF mass spectrometry. Derived masses, CP6F, calculated: 2708.18 Da, observed: 2707.85 Da; CP12F, calculated: 2788.24 Da, observed: 2788.19 Da; CP13F, calculated: 2574.19 Da, observed: 2574.61 Da; CP14F, calculated: 2579.14 Da, observed: 2579.41 Da.\n\n### Macrocyclic peptides bind with high affinity and selectivity\n\nIn order to analyze the binding affinity and specificity of CPs to TmrAB, we established a fluorescence polarization assay. Fluorescein-labeled CPFs were incubated with increasing concentrations of TmrAB reconstituted in liposomes at a protein-to-lipid ratio of 1:20 (w/w). The equilibrium binding revealed nanomolar binding affinities for all CPFs, with KD values ranging from 20 to 50 nM (Figure 2A,\u00a0B). If empty liposomes (without reconstituted TmrAB) were added to CPFs, no binding was detected, demonstrating a specific interaction of all CPs with TmrAB (Figure 2A,\u00a0B). Notably, TmrAB complexes could be affinity-captured on streptavidin\u00a0beads pre-loaded with biotinylated CPBs and detected in the eluate but not in the flow-through (Figure 2C, Figure 2\u2014figure supplement 1). If streptavidin beads were not pre-loaded with CPBs, TmrAB did not bind and was exclusively found in the flow-through. To explore the specificity of binding, we used CP13B and CP14B immobilized on streptavidin matrices to isolate intact TmrAB complexes from solubilized E. coli membranes. These results demonstrate the high specificity of the interaction and illustrate that the CPs can be used for efficient affinity purification of the membrane protein complex (Figure 2D, Figure 2\u2014figure supplement 1). For all CPFs, kinetically stable CPF-TmrAB complexes were formed as confirmed by gel filtration (Figure 2\u2014figure supplement 1). To address whether the CPs recognize a linear or non-linear epitope, we examined the binding of CPFs after disrupting the quaternary and tertiary structure of TmrAB complexes by adding anionic detergent SDS. Under these conditions, binding of TmrAB to all CPFs was impaired, indicating a conformation-specific interaction (Figure 2\u2014figure supplement 1). We also analyzed the CPF-TmrAB complexes by native mass spectrometry (MS), demonstrating a stoichiometric interaction (Figure 2E, Figure 2\u2014figure supplement 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/67732/elife-67732-fig2-v2.jpg)\n\n**Figure 2.:** (A, B) Equilibrium binding analysis. Fluorescence anisotropy of CPFs (50 nM) was determined at \u03bbex/em = 485/520 nm with increasing concentrations of TmrAB which was reconstituted in liposomes. TmrAB concentrations were calculated based on the random (50/50%) orientation in proteoliposomes (Stefan et al., 2020). As a control, equal amounts of empty liposomes were added to CPFs (dashed lines, open symbols). The difference in fluorescence polarization was normalized to free (0%) and 100% bound CPF. Mean values\u00a0\u00b1\u00a0SD (n\u00a0=\u00a03) are shown, and data were analyzed by a one-site binding model. (C) TmrAB binds specifically to CP14B-loaded matrices. Streptavidin beads loaded with CP14B (1 \u00b5M) were mixed with purified TmrAB (60 nM) for 1 hr at 4\u00b0C. Beads were washed and bound TmrAB was eluted by adding SDS loading buffer for 10 min at 95\u00b0C. Amounts of TmrA in input (I), flow-through (FT), wash fraction (W), and eluate (E) were analyzed by SDS-PAGE and immunoblotting (\u03b1-His). Beads without CPB served as negative control (right panel). (D) One-step purification of TmrAB via immobilized CP14B matrices. Streptavidin-agarose beads were loaded with CP14B (1 \u00b5M) and mixed with DDM-solubilized membranes of E. coli containing TmrAB as described in (C). Bound TmrAB was eluted in SDS loading buffer and analyzed by SDS-PAGE (silver stain). (E) Native mass spectrometry. TmrAB (4 \u00b5M) was buffer exchanged to ESI buffer and incubated with a 2-fold molar excess of CP14F for 10 min on ice. Protein complexes were investigated by ESI-TOF-mass spectrometry. Derived masses, TmrAB: 134.9 kDa, TmrAB\u00a0+CP14F: 137.4 kDa, TmrAB\u00a0+2 CP14F:140.0 kDa.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67732/elife-67732-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) CPBs-mediated isolation of solubilized TmrAB. Streptavidin matrices were loaded with CPBs (1 \u00b5M) and incubated with purified TmrAB (60 nM) for 1 hr at 4\u00b0C. Beads without CPBs served as control (see Figure 2C). Bound TmrAB complexes were eluted by the addition of SDS loading buffer for 10 min at 95\u00b0C. TmrAB in input (I), flow-through (FT), washing fraction (W), and eluate (E) was analyzed by SDS-PAGE and immunoblotting (\u03b1-His). (B) Isolation of TmrAB using CP13B. Streptavidin matrices were loaded with CP13B (1 \u00b5M) and mixed with DDM-solubilized membranes of E. coli expressing TmrAB as described in (A). Bound TmrAB complexes were eluted in SDS loading buffer and analyzed by SDS-PAGE (silver stain). (C) Formation of CPF-TmrAB complexes. DDM-solubilized TmrAB (1 \u00b5M) was incubated with CP12F, CP13F, CP14F (2 \u00b5M each), or CP6F (5 \u00b5M) for 10 min on ice. CPF-TmrAB complexes were analyzed by gel filtration. Non-specific peptide aggregation was not observed. (D) Conformational epitopes. CPFs (50 nM) were incubated with TmrAB (0.6 \u00b5M for CP6F and CP13F, 0.7 \u00b5M for CP12F, 0.5 \u00b5M for CP14F) in the presence of 1% (v/v) SDS. Fluorescence anisotropy was determined at \u03bbex/em = 485/520 nm. Mean values\u00a0\u00b1\u00a0SD (n\u00a0=\u00a03) are displayed.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/67732/elife-67732-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** TmrAB (4 \u00b5M) was buffer exchanged to ESI buffer and incubated with a 2-fold molar excess of CPFs for 10 min on ice. Protein complexes were investigated by ESI-TOF-mass spectrometry. (A) CP6F-TmrAB complexes. Derived masses, TmrAB: 135.1 kDa, TmrAB\u00a0+CP6F: 137.7 kDa. (B) CP12F-TmrAB complexes. Derived masses, TmrAB\u00a0+CP12F: 137.6 kDa, TmrAB\u00a0+2 CP12F: 140.5 kDa. (C) CP13F-TmrAB complexes. Derived masses, TmrAB\u00a0+CP13F: 137.4 kDa, TmrAB\u00a0+2 CP13F: 140.0 kDa.\n\n### Macrocyclic peptides are potent inhibitors of ATP hydrolysis and substrate transport\n\nIn order to investigate the functional impact of CPs, we examined the effect of the CPs on ATP hydrolysis and substrate transport of TmrAB (Figure 3A). We reconstituted TmrAB in liposomes and first assayed the ATPase activity. In the presence of the CPFs, ATPase activity was completely blocked to the level of autohydrolysis (Figure 3B). We next set out to investigate peptide transport by TmrAB using a filter-based transport assay. To investigate whether\u00a0CPs are recognized as substrates by TmrAB, we added fluorescein-labeled CPFs and examined ATP-dependent translocation. In contrast to the linear substrate peptide C4F, none of the CPFs were transported by TmrAB (Figure 3C). Next, we examined ATP-dependent transport of C4F peptides in the presence and absence of the different CPs. The data reveal that CP6F and CP12F completely blocked peptide translocation, while CP13F or CP14F only caused a partial inhibition (Figure 3D).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/67732/elife-67732-fig3-v2.jpg)\n\n**Figure 3.:** (A) Experimental scheme of ATP hydrolysis and peptide transport by TmrAB. (B) CPFs inhibit ATP hydrolysis. TmrAB in liposomes (100 nM) was incubated with ATP (2 mM, traced with [\u03b332P]-ATP), and MgCl2 (5 mM) in the presence and absence of CPFs (1 \u00b5M) for 10 min at 45\u00b0C. Autohydrolysis was determined in the absence of TmrAB, and background turnover was conducted in the presence of EDTA (10 mM). Release of [\u03b332P] was quantified by thin layer chromatography. (C) CPFs are not transported by TmrAB. TmrAB (0.4 \u00b5M) reconstituted in liposomes was incubated with C4F peptide (3 \u00b5M) or CPFs (1 \u00b5M) in the presence of ATP/ADP (3 mM) and MgCl2 (5 mM) for 5 min at 45\u00b0C. Since CPFs were dissolved in maximal 0.5% (v/v) of DMSO, C4F plus 0.5% DMSO served as control. Proteoliposomes were washed on filter plates, and transported peptides were quantified at \u03bbex/em = 485/520 nm. (D) Inhibition of substrate translocation. TmrAB in liposomes (0.4 \u00b5M) were incubated with C4F peptide (3 \u00b5M), ATP/ADP (3 mM), and MgCl2 (5 mM) in the presence and absence of CPFs (1 \u00b5M) for 15 min at 45\u00b0C. Transported peptides were quantified as described in (C). In (B\u2013C), mean values\u00a0\u00b1\u00a0SD (n\u00a0=\u00a03) are shown.\n\nTo elucidate the mechanistic basis for the inhibition of ATP hydrolysis and substrate transport, we investigated the effects of CPs on substrate binding. In the first approach, fluorescent CPFs were used as reporters in fluorescence polarization. At competitive concentrations above their KD values (Stefan et al., 2020), the transported peptides R9LQK or C4ATTO655 did not affect binding of CPFs to TmrAB (Figure 4A). In the second inverse approach using CPBs as competitors, we did not observe a competition of C4F peptide binding, in contrast to the linear peptide C4ATTO655, which interfered with C4F peptide binding (Figure 4B). In addition, we examined the impact of CPBs on ATP binding to TmrAB by scintillation proximity assays (SPA) (Figure 4C). CP12B and CP14B showed no effect on ATP binding. For CP6B and CP13B, only minor effects on ATP binding were detected (Figure 4C). Taken together, CPs are high-affinity allosteric inhibitors of TmrAB that leave ATP binding and substrate interaction largely unaffected, while impairing ATP hydrolysis and substrate translocation across the membrane.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/67732/elife-67732-fig4-v2.jpg)\n\n**Figure 4.:** (A) CPFs binding TmrAB is not affected by substrate peptide binding. After the addition of TmrAB (0.6 \u00b5M for CP6F and CP13F, 0.7 \u00b5M for CP12F, 0.5 \u00b5M for CP14F), fluorescence anisotropy of CPFs (50 nM) were monitored at \u03bbex/em = 485/520 nm. For competition, C4ATTO655 peptide (2 \u00b5M) or R9LQK peptide (200 \u00b5M) were added. (B) Binding of C4F peptide is not affected by CPBs. C4F peptides (50 nM) were mixed with TmrAB (4 \u00b5M), and fluorescence anisotropy was monitored as described in (A). For competition, C4ATTO655 (10 \u00b5M) or CPBs (6 \u00b5M) were added. (C) CPBs do not largely affect ATP binding. TmrAB (0.2 \u00b5M) were immobilized on SPA beads and incubated with ATP (3 \u03bcM, traced with 3H-ATP) in the presence and absence of CPBs (1 \u00b5M each) for 30 min on ice. ATP binding was monitored by SPA. Background values were determined after releasing TmrAB complexes from the beads by adding imidazole (200 mM). The background signal in the absence of CPBs was set to 0 cpm. In the case of CP13, the value of bound ATP exceeds the control without CPs. As this is an equilibrium experiment, this can be rationalized by the fact that CP13 stabilizes the ATP-bound OF conformer.\n\n### Macrocyclic peptides are conformation-specific inhibitors\n\nABC transport complexes such as TmrAB run through multiple conformational states along the ATP hydrolysis cycle to drive unidirectional substrate transport (Hofmann et al., 2019; Stefan et al., 2020). Within the substrate translocation cycle, two major conformers, inward-facing (IF) and outward-facing (OF), were identified. To investigate whether\u00a0CPs favor one of these conformers, we probed the binding of CPFs by fluorescence polarization analysis. For these studies, we utilized the catalytically reduced TmrAEQB variant, which can be populated either in the IF (in the absence of ATP) or OF (ATP-trapped) conformation as demonstrated previously (Stefan et al., 2020). In the latter case, the interaction studies were performed immediately after the IF-to-OF switch by incubation with ATP for 5 min at 45\u00b0C. To exclude an OF-to-IF return (\u03c41/2 of 25 min) (Stefan et al., 2020), the fluorescence anisotropy was recorded only within the first minute of incubation. Binding of CP6F and CP12F showed lower dissociation constants for the OF conformation in contrast to CP13F and CP14F, which show a preference for the OF conformer (Figure 5A,\u00a0B, Figure 5\u2014figure supplement 1A). These findings were further corroborated by demonstrating that CP13F and CP14F bind in the absence and presence of ATP and ADP, while CP6F and CP12F preferentially bind under conditions where IF TmrAB is exclusively populated (Figure 5\u2014figure supplement 1B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/67732/elife-67732-fig5-v2.jpg)\n\n**Figure 5.:** Conformation-specific preference of CPs. (A, B) CP6F (A) or CP13F (B, 50 nM each) were incubated with increasing concentrations of detergent-solubilized inward-facing TmrAB (in the absence of Mg-ATP) or outward-facing TmrAEQB, which was trapped with Mg-ATP (1 mM) for 5 min at 45\u00b0C as described (Hofmann et al., 2019; Stefan et al., 2020). Immediately after, the fluorescence anisotropy was assayed at \u03bbex/em = 485/520 nm. The difference in fluorescence polarization was normalized to free and fully bound CPF. Data were fitted by a one-site binding model. (C) Nucleotide occlusion promoted by CPs. TmrAB (2 \u00b5M each) were mixed with CPFs (4 \u00b5M), ATP (1 mM, traced with [\u03b132P]-ATP), and MgCl2 (5 mM) for 5 min at 4\u00b0C or 45\u00b0C. Cold ATP (10 mM) was added, and freely exchangeable nucleotides were removed by rapid gel filtration. Occluded nucleotides were analyzed by thin layer chromatography and autoradiography. Representative radiograms for independent triplicates are shown. (D) Stably occluded nucleotides, [\u03b132P]-ATP and [\u03b132P]-ADP, were quantified by autoradiography. Data were normalized to the vanadate-trapped state. In (A, B, D), mean values\u00a0\u00b1\u00a0SD (n\u00a0=\u00a03) are shown.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67732/elife-67732-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) CPFs (50 nM each) were incubated with increasing concentrations of detergent-solubilized IF TmrAB in the inward-facing (IF) conformation (absence of Mg-ATP) or TmrAEQB populated in the outward-facing (OF) conformation, which was trapped in the OF conformation by Mg-ATP (1 mM) after 5 min incubation at 45\u00b0C. The difference in fluorescence polarization was normalized to unbound (0%) and 100% bound CPF. Data were fitted by a one-site binding model. Fluorescence anisotropy was recorded at \u03bbex/em = 485/520 nm. (B) CPFs (50 nM each) were incubated with detergent-solubilized IF or OF TmrAEQB (150 nM for CP6F, 170 nM for CP12F, 50 nM for CP13F, and 120 nM for CP14F). (C) Nucleotide occlusion of the catalytically reduced TmrAB variant. TmrAEQB (2 \u00b5M) were incubated in the absence and presence of CPFs (4 \u00b5M each), ATP (1 mM, traced with [\u03b132P]-ATP), and MgCl2 (5 mM) for 5 min at 4\u00b0C or 45\u00b0C. Cold ATP (10 mM) was added, and free nucleotides were removed by rapid gel filtration. Occluded nucleotides were analyzed by thin layer chromatography and autoradiography. Representative radiograms for independent triplicates are shown. In (A, B), mean values\u00a0\u00b1\u00a0SD (n\u00a0=\u00a03) are displayed.\n\nWe also examined the impact of CPFs on the IF-to-OF transition of wild-type TmrAB induced by ATP binding through nucleotide occlusion (stable trapping) as the readout. We induced the IF-to-OF switch with radiotraced [\u03b132P]-ATP for 5 min at 45\u00b0C in the presence and absence of CPs and removed unbound nucleotides by rapid gel filtration. Subsequently, the occluded nucleotides were identified and quantified by thin layer chromatography and autoradiography (Figure 5C,\u00a0D). As a reference, wild-type TmrAB was trapped by orthovanadate in a post-hydrolysis transition state, characterized by the stoichiometric (1:1) occlusion of ATP and ADP, which is in agreement with the 2.8 \u00c5 cryo-EM structure (Hofmann et al., 2019). It is important to note that nucleotide occlusion strictly requires elevated temperatures to allow a IF-to-OF conformation switch, and does not occur at 4\u00b0C (Figure 5C,\u00a0D). In the presence of CP6F and CP12F, nucleotide occlusion was completely abolished. Notably, CP13F and CP14F promoted stable ATP occlusion in wild-type TmrAB \u2013 blocking hydrolysis to ADP, which is indicative of stabilization of a pre-hydrolysis state (Figure 5C,\u00a0D). Similar results were obtained for the catalytically reduced variant TmrAEQB (Figure 5\u2014figure supplement 1C). In this case, CP6F and CP12F inhibited ATP occlusion and blocked the IF-to-OF transition induced by ATP binding. Conversely, as TmrAEQB is trapped in a pre-hydrolysis state, ATP is occluded in the presence or absence of CP13F or CP14F. In conclusion, CP6F and CP12F display preferential binding to the IF conformation and inhibit the IF-to-OF switch by ATP binding. In contrast, CP13F and CP14F favorably bind to the OF conformation, promoting ATP occlusion, thus stabilizing TmrAB in a pre-hydrolysis state.\n\n### Stabilization of a pre-hydrolysis state after substrate translocation\n\nTo investigate whether\u00a0an IF-to-OF transition and conformational arrest by CP13F or CP14F can still result in a productive substrate translocation, we followed peptide transport by wild-type TmrAB by single liposome-based flow cytometry (Figure 6A). To this end, wild-type TmrAB was reconstituted in liposomes with a diameter of\u00a0~160 nm at a protein-to-lipid ratio of 1:20 (w/w), yielding a random (50/50) orientation, and a reconstitution efficiency of 95% as reported (Stefan et al., 2020). This procedure resulted in\u00a0~30 transport-competent (NBDs outside) TmrAB complexes per liposome. In flow cytometry, single liposomes were gated based on side and forward scatter intensities and then used for the evaluation of mean fluorescence intensities of transported peptide substrates (Figure 6\u2014figure supplement 1). By calibration and linear regression (R2\u00a0=\u00a00.99), the mean fluorescence values of C4ATTO655 were converted into the number of transported peptides per liposome (Figure 6\u2014figure supplement 1). In the presence and absence of CPFs, TmrAB-containing liposomes were incubated with C4ATTO655 peptide and ATP for 5 min at 45\u00b0C. Along a single IF-to-OF switch and arrest by CP13F or CP14F, approx. 10 or 30 C4ATTO655 peptides per liposome were transported, respectively (Figure 6B). From that, a coupling ratio of 0.3 to 1.0 peptides per transporter along the ATP-induced IF-to-OF switch can be derived. These results are in agreement with the observation that CP13F or CP14F promote ATP occlusion and inhibit ATP hydrolysis of wild-type TmrAB by stabilizing a pre-hydrolysis state. In contrast, CP6F and CP12F completely prevented C4ATTO655 peptide translocation. These findings are consistent with the results that CP6F and CP12F block C4F multiple-turnover transport (Figure 3D) and impair the IF-to-OF transition, as demonstrated by their preferential binding to the IF conformation and inhibition of nucleotide occlusion (Figure 5A,\u00a0B). Taking into account that the CPs are membrane\u00a0impermeable, these results indicate that the binding epitope of all CPs is on the TmrAB regions facing the cytosol.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/67732/elife-67732-fig6-v2.jpg)\n\n**Figure 6.:** (A) Single turnover by IF-to-OF switch monitored by single-liposome flow cytometry. TmrAB in liposomes (0.4 \u00b5M) were incubated with C4ATTO655 peptide (1 \u00b5M), ATP/ADP (3 mM), MgCl2 (5 mM), and CPFs (1 \u00b5M) for 5 min at 45\u00b0C. Transport reactions were stopped by the addition of EDTA (10 mM). 100,000 proteoliposomes were analyzed by flow cytometry monitoring fluorescein and ATTO655 intensities. (B) Mean fluorescence intensities of C4ATTO655 were converted into the number of peptides per liposome using the regression analysis described above (two-tailed T-test, ***p<0.0001). (C, D) Slowdown of multiple-turnover substrate transport. TmrAB reconstituted in liposomes (0.4 \u00b5M) was incubated with C4ATTO655 peptide (1 \u00b5M), ATP/ADP (3 mM), MgCl2 (5 mM), and CPFs (1 \u00b5M) for various periods of time at 45\u00b0C. Transported peptides per liposomes were evaluated and corrected by ADP background levels as described in (B). Transport kinetics were fitted monoexponentially. In (C), mean fluorescence intensities of transported C4ATTO655 were converted into the number of peptides per liposome as described above. (E) Two consecutive transport cycles. TmrAB reconstituted in liposomes was incubated with C4ATTO655 peptide, ATP/ADP, MgCl2, and CPFs as described in (A) for 5 min at 45\u00b0C, 60 min at 4\u00b0C, 5 min at 45\u00b0C, and 60 min at 4\u00b0C. Transported peptides per liposome were evaluated as described in (B) and corrected by background levels in the presence of ADP. In (B\u2013E), mean values\u00a0\u00b1\u00a0SD (n\u00a0=\u00a03) are displayed.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67732/elife-67732-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Gating strategy. Liposomes were selected according to side and forward scatter areas. Single liposomes were gated based on the height of forward scatter correlated to the area of forward scatter. Fluorescence intensities of 20,000 to 100,000 single liposomes were evaluated. (B) Liposomes without reconstituted TmrAB were destabilized by Triton X-100 and incubated with defined amounts of C4ATTO655 peptide (left). Detergent was removed, and liposomes were extensively washed by centrifugation. Mean fluorescence intensities of 100,000 liposomes were analyzed by flow cytometry. Equal concentrations of fluorescein served as loading control (right). (C) Linear regression. Encapsulated C4ATTO655 peptide intensities were correlated with the number of peptides per liposome. Data were analyzed by linear regression yielding y\u00a0=\u00a068.7 x\u00b11.7 x and R2\u00a0=\u00a00.99. Mean values\u00a0\u00b1\u00a0SD (n\u00a0=\u00a03) are shown.\n\nTo investigate whether\u00a0CP13F and CP14F prevent multiple rounds of conformational switching after long-term incubation, C4ATTO655 translocation by wild-type TmrAB in the presence of CPFs was examined over a period of 40 min. Compared to the positive control in the absence of CPFs, CP13F and CP14F drastically reduced the peptide transport rate (Figure 6C,\u00a0D). For CP13F, a single turnover driving peptide transport was observed before wild-type TmrAB became conformationally arrested (Figure 6C). In the presence of CP14F, we noted a slow turnover of wild-type TmrAB driving peptide transport over a period of 40 min (Figure 6C, D). To confirm the conformational arrest of wild-type TmrAB by CP13F and the slow turnover in the presence of CP14F, we examined two successive cycles of conformational transitions by flow cytometry. Liposomes containing wild-type TmrAB were incubated with C4ATTO655 peptide, ATP/ADP, and CPFs for 5 min at 45\u00b0C to induce the IF-to-OF switch and for 60 min at 4\u00b0C to allow the OF-to-IF return transition. Both steps were repeated to yield two consecutive cycles of conformational transitions. In the presence of CP13F, peptide transport was exclusively observed along the first IF-to-OF switch, indicating a conformational arrest of wild-type TmrAB over a period of 2 hr (Figure 6E). For CP14F, peptide transport was detected in both IF-to-OF switches, which confirmed the slow relaxation of wild-type TmrAB from a pre-hydrolysis to an IF state between both cycles (Figure 6E). In the presence of CP6F or CP12F, peptide translocation was completely abrogated as the underlying IF-to-OF switch was precluded (Figure 6E, Figure 6\u2014figure supplement 1). Taken together, the macrocyclic peptides CP13 and CP14 stabilize a pre-hydrolysis state, thus allowing a single-turnover translocation along the IF-to-OF switch.\n\n## Discussion\n\nIn this study, we identified macrocyclic peptides as multimode inhibitors, which block the heterodimeric ABC transport complex TmrAB at different stages in the substrate translocation cycle with nanomolar affinities. We reveal that CPs can be employed to arrest TmrAB at different stages during a single IF-to-OF switch induced by ATP binding, which drives substrate transport across the membrane (Figure 7). These IF-to-OF and OF-to-IF inhibitors stabilize TmrAB states that are distinct from the vanadate trapped states and allowed us to unravel mechanistic principles of substrate transport for wild-type ABC transproters and illustrate the potential of selective inhibitors as next-generation antibiotics. These findings will help to investigate key functional determinants of membrane proteins involved in multidrug resistance.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/67732/elife-67732-fig7-v2.jpg)\n\n**Figure 7.:** In the resting IF state, TmrAB binds nucleotides and substrates independently, which is not affected by CPs. ATP binding induces an IF-to-OF switch, which drives unidirectional substrate translocation. CP6F and CP12F bind preferentially to the IF state and block the transition to the OF state, preventing ATP occlusion and ATP hydrolysis. CP13F and CP14F favor and stabilize a pre-hydrolysis OF state after the IF-to-OF conformation switch and peptide translocation. CPs block ATP hydrolysis at different steps of the transport cycle. In the absence of CPs, ATP hydrolysis and phosphate release initiate the OF-to-IF return restoring transporter function.\n\nTo select specific CPs for a heterodimeric ABC transport complex, we successfully applied the RaPID system to isolate high-affinity CPs for soluble and membrane proteins (Yu et al., 2017; Sakai et al., 2019; Kodan et al., 2014; Tanaka et al., 2013). It has been shown that CPs are powerful agents to stabilize protein conformers or protein complexes for structural and functional investigations (Huang et al., 2019; Passioura and Suga, 2017). Upon cyclization of the peptide backbone, CPs mimic the complementary-determining regions (CDRs) of antibodies penetrating into buried cavities (Hill et al., 2014; McGeary and Fairlie, 1998). Compared to conventional antibodies and antibody fragments, the incorporation of unnatural amino acids largely expands the chemical diversity of paratopes to reach unexplored binding modes (Craik et al., 2013; Makley and Gestwicki, 2013; Tsomaia, 2015). By using the catalytically reduced variant TmrAEQB reconstituted in lipid nanodiscs as bait during selections, we hypothesized that even transient states could be populated that would allow us to isolate macrocycles with unique bioactivities (Hofmann et al., 2019; Stefan et al., 2020). As demonstrated by affinity isolation, gel filtration, and native mass spectrometry, all CPs selected against TmrAEQB in lipid nanodiscs also specifically bind to wild-type TmrAB in various lipid models. These findings illustrate the potential of the RaPID system to identify specific binders for delicate membrane proteins and less-populated transition states under carefully chosen conditions, which is a key requirement for pharmaceutical compounds (Vinogradov et al., 2019; Zorzi et al., 2017). Intriguingly, the most enriched macrocyclic peptides also display inhibitory activity, even though the selection is based on target binding alone. Based on deep sequencing, CP6 and CP12, acting on the IF state, showed higher enrichment than CP13 and CP14, acting on the OF state, which is consistent with the selections being performed at 4\u00b0C, where TmrAB adopts the IF state. However, due to high binding affinities of OF-specific CP13 and CP14, these CPs were also enriched along the course of the selection. In contrast to CPs elicited against the homodimeric ABC transporter cmABCB1 from Cyanidioschyzon merolae (aCAP) (Kodan et al., 2014) and the MATE transporter (MaD3S, MaD5, MaL6) (Tanaka et al., 2013), the CPs discovered in this study exclusively target the transporter from the cytosolic\u00a0side. In the case of aCAP, which was selected against detergent stabilized P-glycoprotein, the CP not only interacts with both protein subunits but also with the membrane, acting as an allosteric inhibitor thus stabilizing this ABC transporter in the IF conformation. Like aCAP, the CPs from this study are also enriched in aliphatic and aromatic amino acids, which could indicate membrane interactions. The ability of the CP6, CP12, CP13, and CP14 to specifically interact with either the IF or OF TmrAB conformer however, again suggests that the success of this selection experiment in discovering multimode inhibitors relied on specific preparation of the bait protein during the selection process.\n\nIn recent years, the molecular understanding of the conformation space of ABC transporters has been largely expanded (Thomas and Tamp\u00e9, 2020; Locher, 2016; Hofmann et al., 2019; Fan et al., 2020). High-resolution structures in different conformational states allowed to build a detailed mechanistic model of the substrate transport cycle composed of two major conformational transitions (IF-to-OF and OF-to-IF) (Hofmann et al., 2019; Fan et al., 2020; Manolaridis et al., 2018; Kim and Chen, 2018). We demonstrated unidirectional substrate transport along a single IF-to-OF switch induced by ATP binding for a catalytically reduced variant of TmrAB (Stefan et al., 2020). These results were consistent with the processive-clamp/ATP switch model where ATP binding and the subsequent IF-to-OF switch represent the power stroke to drive substrate transport (Higgins and Linton, 2004; Janas et al., 2003; Abele and Tamp\u00e9, 2004). To date, however, it remains an open question whether a single ATP-binding-induced conformational switch drives substrate translocation in the case of fully functional wild-type ABC transporters. Additionally, the relevance of futile ATP hydrolysis cycles as well as factors contributing to energy coupling (ratio of consumed ATP per translocated substrate) have remained unexplained for wild-type TmrAB and other ABC systems (Fan et al., 2020; Bock et al., 2019). To address these pressing questions, we used the in\u00a0vitro-selected peptidic macrocycles as mechanistic probes to arrest TmrAB at different stages of the substrate transport cycle. Inhibitors for ABC transporters exploit various modes of action such as substrate competition, conformational arrest, or hampering of ATP hydrolysis to affect substrate transport (Srikant and Gaudet, 2019; Aller et al., 2009; Ozvegy-Laczka et al., 2005; Orlando and Liao, 2020; Ho et al., 2018).\n\nFor the selected CPs, we observed a remarkably strong inhibition of ATP hydrolysis and substrate transport, which did not largely interfere with ATP or substrate binding. We rationalized that these macrocyclic peptides affect conformational transitions within the translocation cycle. Using nucleotide occlusion as readout, we could show that CP13F and CP14F stabilize wild-type TmrAB in a pre-hydrolysis state, unlike the vanadate-trapped state solved by cryo-EM, which occludes ADP and vanadate in the canonical ATP-binding site (Hofmann et al., 2019). Our hypothesis was that wild-type TmrAB in the presence of CP13 or CP14 is able to perform the the IF-to-OF transition induced by ATP binding, whereas only the opposite OF-to-IF transitions triggered by ATP hydrolysis are blocked. To test this hypothesis, we performed peptide transport assays with fully functional wild-type TmrAB in the presence of CP13 and CP14 and determined stoichiometric or near-stoichiometric amount of transported peptide per TmrAB complex. This coupling rate is comparable to the almost ideal coupling ratio observed under single-turnover conditions for a catalytically reduced variant (Stefan et al., 2020). This energy coupling is substantially higher compared to multiple-turnover steady-state approaches for wild-type TmrAB (Bock et al., 2019).\n\nBy analyzing peptide translocation of arrested wild-type TmrAB over long periods of time, we observed a slow turnover in the case of CP14, and a full conformational arrest for CP13. These observations were underpinned by analyzing two consecutive cycles of IF-to-OF switches and OF-to-IF return transitions in regard to peptide translocation. In the presence of CP14, wild-type TmrAB was able to transport peptides along the ATP-induced IF-to-OF switch followed by the relaxation from an ATP-bound OF state to an IF state in order to start a new IF-to-OF switch in the second cycle. In contrast, after the translocation of peptide, CP13 arrested wild-type TmrAB in an ATP-bound state and prevented the OF-to-IF return transition and further conformational cycling. On the other hand, CP6 and CP12 block peptide transport to background level as an IF-to-OF transition and ATP occlusion is prevented. Using macrocyclic inhibitors, we demonstrated, for the first time for a wild-type ABC transporter, that substrate translocation is driven along a single IF-to-OF switch triggered by ATP binding.\n\nIn this work, we utilized synthetic macrocyclic inhibitors to reveal fundamental mechanistic principles of ATP binding and hydrolysis, conformational transitions, and energy coupling of substrate translocation of a heterodimeric ABC transport complex. We highlight the versatility of macrocycles and their potential to study mechanistic determinants of membrane protein complexes. In future approaches, conformation-selective compounds along with single-liposome or single-molecule techniques will be essential to uncover unexplored aspects of conformational transitions, translocation events, and energy coupling of membrane translocation complexes.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Antibody</td>\n      <td>Monoclonal \u03b1-His antibody</td>\n      <td>Sigma-Aldrich</td>\n      <td>SAB1305538</td>\n      <td>Mouse origin. Final dilution: 1/2,000 (v/v)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>\u03b1-Mouse-HRP conjugate</td>\n      <td>Sigma-Aldrich</td>\n      <td>AP130P</td>\n      <td>Goat origin. Final dilution: 1/20,000 (v/v)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>\u03b2-n-Dodecyl \u03b2-D-maltoside (DDM)</td>\n      <td>Carl Roth</td>\n      <td>CN26.5</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Bovine brain lipid extract</td>\n      <td>Sigma-Aldrich</td>\n      <td>B1502</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>[2,5\u2019,8-3H(N)]-ATP (3H-ATP)</td>\n      <td>PerkinElmer</td>\n      <td>NET118900</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>[\u03b132P]-ATP</td>\n      <td>Hartmann Analytic</td>\n      <td>FP-207</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Copper-chelated PVT SPA beads</td>\n      <td>PerkinElmer</td>\n      <td>RPNQ0095</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>ClAc-D-Tyr-CME</td>\n      <td>Synthesized according to DOI: 10.1021/cb200388k</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Fmoc-protected amino acids</td>\n      <td>Merck Millipore/Watanabe Chemical Industries</td>\n      <td>various</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>HBTU</td>\n      <td>Watanabe Chemical Industries</td>\n      <td>A00149</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>HOBt</td>\n      <td>Watanabe Chemical Industries</td>\n      <td>A00014</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>NovaPEG Rink Amide resin</td>\n      <td>Merck Millipore</td>\n      <td>855047</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>N,N-Diisopropylethylamine</td>\n      <td>Nacalai Tesque</td>\n      <td>14014\u201355</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>N,N-Dimethylformamide</td>\n      <td>Nacalai Tesque</td>\n      <td>13016\u201323</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>5/6-Carboxyfluorescein succinimidyl ester</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>46410</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Acetonitrile</td>\n      <td>Wako Chemicals</td>\n      <td>015\u201308633</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Trifluoroacetic acid</td>\n      <td>Nacalai Tesque</td>\n      <td>3483305</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>D-Biotin</td>\n      <td>Nacalai Tesque</td>\n      <td>04822\u201391</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Pluronic F127</td>\n      <td>Sigma-Aldrich</td>\n      <td>P2443</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Albumin, Bovine, Acetylated</td>\n      <td>Nacalai Tesque</td>\n      <td>01278\u201344</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>NTPs</td>\n      <td>Jena Bioscience</td>\n      <td>NU-1010 NU-1011 NU-1012 NU-1013</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Dynabeads M-280 Streptavidin</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>11206</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>T7g10M.F46</td>\n      <td>Eurofins Genomics K.K. (Japan)</td>\n      <td>PCR primer</td>\n      <td>TAATACGACTCACTATAGGGTTAACTTTAAGAAGGAGATATACATA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>NNK(n).R(3n\u00a0+\u00a045)n\u00a0=\u00a010\u201315</td>\n      <td>Eurofins Genomics K.K. (Japan)</td>\n      <td>PCR primer for DNA library</td>\n      <td>GCTGCCGCTGCCGCTGCCGCA(MNN)nCATATGTATATCTCCTTCTTAAAG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>CGS3an13.R36</td>\n      <td>Eurofins Genomics K.K. (Japan)</td>\n      <td>PCR primer</td>\n      <td>TTTCCGCCCCCCGTCCTAGCTGCCGCTGCCGCTGCC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Ini-3'.R20-Me</td>\n      <td>Gene Design Inc (Japan)</td>\n      <td>PCR primer for tRNAfMetCAU assembly</td>\n      <td>TGmGTTGCGGGGGCCGGATTT (Gm\u00a0=\u00a02'-Methoxylated G)</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Ini-3'.R38</td>\n      <td>Eurofins Genomics K.K. (Japan)</td>\n      <td>PCR primer for tRNAfMetCAU assembly</td>\n      <td>TGGTTGCGGGGGCCGGATTTGAACCGACGATCTTCGGG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Ini1-1G-5'.F49</td>\n      <td>Eurofins Genomics K.K. (Japan)</td>\n      <td>PCR primer for tRNAfMetCAU assembly</td>\n      <td>GTAATACGACTCACTATAGGCGGGGTGGAGCAGCCTGGTAGCTCGTCGG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Ini cat.R44</td>\n      <td>Eurofins Genomics K.K. (Japan)</td>\n      <td>PCR primer for tRNAfMetCAU assembly</td>\n      <td>GAACCGACGATCTTCGGGTTATGAGCCCGACGAGCTACCAGGCT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Fx5'.F36</td>\n      <td>Eurofins Genomics K.K. (Japan)</td>\n      <td>PCR primer for eFx assembly</td>\n      <td>GTAATACGACTCACTATAGGATCGAAAGATTTCCGC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>eFx.R45</td>\n      <td>Eurofins Genomics K.K. (Japan)</td>\n      <td>PCR primer for eFx assembly</td>\n      <td>ACCTAACGCTAATCCCCTTTCGGGGCCGCGGAAATCTTTCGATCC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>eFx.R18</td>\n      <td>Eurofins Genomics K.K. (Japan)</td>\n      <td>PCR primer for eFx assembly</td>\n      <td>ACCTAACGCTAATCCCCT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>T7e \u00d7 5 .F22</td>\n      <td>Eurofins Genomics K.K. (Japan)</td>\n      <td>PCR primer for eFx assembly</td>\n      <td>GGCGTAATACGACTCACTATAG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>DNA-PEG-puromycin</td>\n      <td>Gene Design Inc, Osaka, Japan</td>\n      <td>linker for mRNA display</td>\n      <td>CTCCCGCCCCCCGTCC-(PEG18)5-CC-Pu</td>\n    </tr>\n    <tr>\n      <td>Gene</td>\n      <td>TmrA</td>\n      <td>Q72J05</td>\n      <td>TTC0976</td>\n      <td>Species: Thermus thermophilus</td>\n    </tr>\n    <tr>\n      <td>Gene</td>\n      <td>TmrB</td>\n      <td>Q72J04</td>\n      <td>TTC0977</td>\n      <td>Species: Thermus thermophilus</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>RRY-C*-KSTEL</td>\n      <td>This study (methods and material)</td>\n      <td></td>\n      <td>C* denotes fluorescein-labeled Cys</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Macrocyclic peptides CP6, CP12, C13 and CP14</td>\n      <td>This study (methods and material)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>KOD DNA Polymerase</td>\n      <td>Prepared in house (methods and material)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>T7 RNA polymerase</td>\n      <td>Prepared in house (methods and material)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>T4 RNA ligase</td>\n      <td>Prepared in house (methods and material)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>FIT system</td>\n      <td>Prepared in house according to DOI: 10.1038/nprot.2015.082</td>\n      <td></td>\n      <td>50 mM HEPES-KOH (pH 7.6), 12 mM magnesium acetate, 100 mM potassium acetate, 2 mM spermidine, 20 mM creatine phosphate, 2 mM DTT,2 mM ATP, 2 mM GTP, 1 mM CTP,1 mM UTP, 0.5 mM 19 proteinogenic amino acids other than Met, 1.5 mg/ml E. coli total tRNA, 0.73 \u00b5M AlaRS, 0.03 \u00b5M ArgRS, 0.38 \u00b5M AsnRS, 0.13 \u00b5M AspRS,0.02 \u00b5M CysRS, 0.06 \u00b5M GlnRS, 0.23 \u00b5M GluRS, 0.09 \u00b5M GlyRS, 0.02 \u00b5M HisRS,0.4 \u00b5M IleRS, 0.04 \u00b5M LeuRS, 0.11 \u00b5M LysRS, 0.03 \u00b5M MetRS, 0.68 \u00b5M PheRS,0.16 \u00b5M ProRS, 0.04 \u00b5M SerRS, 0.09 \u00b5M ThrRS, 0.03 \u00b5M TrpRS, 0.02 \u00b5M TyrRS,0.02 \u00b5M ValRS, 0.6 \u00b5M MTF, 2.7 \u00b5M IF1,0.4 \u00b5M IF2, 1.5 \u00b5M IF3,0.26 \u00b5M EF-G, 10 \u00b5M EF-Tu,10 \u00b5M EF-Ts, 0.25 \u00b5M RF2,0.17 \u00b5M RF3, 0.5 \u00b5M RRF,0.1 \u00b5M T7 RNA polymerase, 4 \u00b5g/ml creatine kinase, 3 \u00b5g/ml myokinase,0.1 \u00b5M pyrophosphatase, 0.1 \u00b5M nucleotide-diphosphatase kinase, 1.2 \u00b5M ribosome</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET-22b</td>\n      <td>Merck Millipore</td>\n      <td>69744</td>\n      <td>Vector for protein expression in E. coli</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>BL21(DE3)</td>\n      <td>Thermo Fisher</td>\n      <td>C600003</td>\n      <td>Chemically competent cells</td>\n    </tr>\n    <tr>\n      <td>Software, Algorithm</td>\n      <td>Prism 5</td>\n      <td>GraphPad</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Cytoscape</td>\n      <td>Shannon P et al. Genome Research 2003 13(11) 2498\u2013504</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>EFI-EST</td>\n      <td>Gerlt JA et al. Biochim Biophys Acta 1854: 1019-37</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>WebLogo</td>\n      <td>Crooks GE et al. Genome 561 Res 14: 1188\u201390</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Expression and purification of TmrAB\n\nTmrAB and TmrAE523QB (TmrAEQB), harboring a C-terminal His-tag at TmrA, were expressed in E. coli BL21(DE3) grown in LB high-salt media at 37 \u00b0C\u00a0(N\u00f6ll et al., 2017; Hofmann et al., 2019; Stefan et al., 2020). Expression was induced at an OD600 of 0.6 by adding 0.5 mM isopropyl \u03b2-d-thiogalactopyranoside (IPTG, Carbolution) for 3 hr at 37\u00b0C. Cells were harvested by centrifugation for 15 min at 4,500 g and resuspended in lysis buffer (20 mM HEPES-NaOH pH 7.5, 300 mM NaCl, 50 \u03bcg/ml lysozyme, 0.2 mM PMSF). After sonication, membranes were isolated by centrifugation at 100,000 g for 30 min at 4\u00b0C. Membranes were solubilized by adding 20 mM \u03b2-n-dodecyl \u03b2-D-maltoside (\u03b2-DDM, Carl Roth) in purification buffer (20 mM HEPES-NaOH pH 7.5, 300 mM NaCl) for 1 hr at 4\u00b0C. Samples were cleared at 100,000 g for 30 min, and solubilized proteins were loaded onto Ni-NTA agarose (Qiagen) at 4\u00b0C for 1 hr. Resin was washed with 20 column volumes of SEC buffer (20 mM HEPES-NaOH pH 7.5, 150 mM NaCl, 1 mM \u03b2-DDM) containing 50 mM imidazole. TmrAB was eluted in SEC buffer containing 300 mM imidazole. The eluate buffer was exchanged to SEC buffer using PD-10 desalting column (GE Healthcare).\n\n### Expression and purification of membrane scaffold proteins\n\nMSP1D1 was expressed in E. coli BL21(DE3) cultivated in LB high-salt media at 37\u00b0C. At an OD600 of 1.0, expression was induced by adding 1 mM IPTG for 1 hr at 37\u00b0C. Temperature was reduced to 28\u00b0C for additional 4 hr. MSP1D1 was purified as described (Hofmann et al., 2019). Briefly, cells were harvested by centrifugation at 4,500 g for 15 min and disrupted by sonication in 40 mM Tris\u2013HCl pH 8.0, 300 mM NaCl, 1% Triton X-100. Lysate was cleared by centrifugation for 30 min at 30,000 g and loaded onto Ni-NTA agarose (Qiagen) for 1 hr at 4\u00b0C. Resin was washed with 20 column volumes of 40 mM Tris\u2013HCl pH 8.0, 300 mM NaCl, 50 mM imidazole. MSP1D1 was eluted in 40 mM Tris\u2013HCl pH 8.0, 300 mM NaCl, 400 mM imidazole. The eluate buffer was exchanged to 20 mM Tris\u2013HCl pH 7.4, 100 mM NaCl, 0.5 mM EDTA using PD-10 desalting column (GE Healthcare).\n\n### Reconstitution in lipid nanodiscs\n\nTmrAB was reconstituted in lipid nanodiscs\u00a0(Hofmann et al., 2019)\u00a0composed of biotinylated MSP1D1. For biotinylation, purified MSP1D1 was buffer-exchanged to 20 mM HEPES-NaOH pH 7.5, 150 mM NaCl using Zeba spin desalting column (Thermo Fisher). A four-fold molar excess of EZ-Link NHS-PEG4-biotin (Thermo Fisher) was added for 2 hr on ice. Residual NHS-PEG4-biotin was quenched by adding 10 mM of Tris\u2013HCl pH 8.0. To remove the excess of NHS-PEG4-biotin, samples were buffer exchanged to 20 mM HEPES-NaOH pH 7.5, 150 mM NaCl using PD-10 desalting column (GE Healthcare). Bovine brain lipids (Sigma-Aldrich) were solubilized in 20 mM of \u03b2-DDM. Biotinylated MSP1D1 was mixed with bovine brain lipids with and without TmrAB in a TmrAB/MSP1D1/lipid molar ratio of 1/7.5/100 in SEC buffer without detergent to form TmrAB-filled or empty liposomes, respectively. Samples were incubated for 30 min at 20\u00b0C, and SM-2 Bio-beads (Bio-Rad) were added in two steps at 4\u00b0C (1 hr and overnight) for detergent removal. Samples were concentrated using Amicon Ultra-0.5 ml centrifugal filters with 50 kDa cut-off (Merck Millipore). Reconstituted nanodiscs were isolated by size-exclusion chromatography (SEC) via Superdex 200 Increase 3.2/300 (GE Healthcare).\n\n### Library generation\n\nFor library construction, DNA oligonucleotides (Eurofins Genomics) were assembled by PCR amplification using KOD polymerase in Phusion buffer (NEB). DNA products were purified by phenol/chloroform/isoamylalcohol extraction and ethanol precipitation (Hayashi et al., 2012). The final sequence contained a T7 promotor, the start codon, the randomized region flanked by a cysteine codon, a (GS)3 linker, the stop codon, and a short sequence stretch for annealing of the polyethylene glycol (PEG)-puromycin splinter. Templates for tRNAfMetCAU and Flexizyme (eFx) were prepared by primer assembly and converted to RNA through run-off transcription using T7 RNA polymerase (Goto et al., 2008; Shin et al., 2017). The tRNAfMetCAU was aminoacylated with chloroacetyl-d-tyrosine-cyanomethyl ester (ClAc-D-Tyr-CME) by eFx for 2 hr on ice (Goto et al., 2011; Hayashi et al., 2012).\n\n### Selection of macrocyclic peptides\n\nMacrocyclic peptides against the heterodimeric ABC transporter were selected using the RaPID system as described (Yamagishi et al., 2011; Hayashi et al., 2012). Briefly, DNA libraries (NNK10-15) were transcribed to RNA using T7 RNA polymerase and purified by denaturating PAGE and ethanol precipitation. Libraries were mixed in equimolar ratios, and a DNA-PEG-puromycin splinter was covalently attached using T4 RNA ligase. The product was purified by phenol/chloroform/isoamylalcohol extraction and ethanol precipitation (Hayashi et al., 2012). Puromycin-modified RNAs were translated by FIT supplemented with 50 \u03bcM ClAc-D-Tyr-tRNAfMetCAU for 30 min at 37\u00b0C at an RNA-puromycin concentration of 1 \u03bcM. The used FIT system was deficient in RF1, l-methionine, and 10-formyl-5,6,7,8-tetrahydrofolic acid to allow reprogramming of the initiator position. Subsequently, EDTA (10 mM) was added, followed by reverse transcription using MMLV reverse transcriptase (Promega). Dynabeads M280 Streptavidin (Invitrogen) were loaded with TmrAEQB reconstituted in biotinylated lipid nanodiscs (binding capacity: 0.3 pmol/\u03bcl bead slurry) for 20 min at 4\u00b0C. Beads were washed with selection buffer (20 mM HEPES-NaOH pH 7.5, 150 mM NaCl, 0.001% Pluronic F127) supplemented with acetylated BSA (1 g/l, Nacalai Tesque). Subsequently, the mRNA-peptide library was added and incubated for 15 min at 4\u00b0C (without supplementing additional reducing agents). The beads were washed three times with selection buffer followed by elution of cDNA in Phusion buffer for 5 min at 95\u00b0C. Recovered cDNA was quantified by real-time PCR using Taq polymerase and SYBR Green and amplified by Fusion polymerase (NEB). In subsequent rounds, the mRNA-peptide library was subjected to unmodified beads and beads with immobilized empty nanodiscs, to remove non-target specific\u00a0binders prior to incubation with TmrAEQB (Hayashi et al., 2012). Isolated and amplified DNA served as the input for subsequent selection rounds in an iterative manner. For sequencing, Nextera XT dual indices (Illumina) were added to both DNA termini of the recovered DNA pool by PCR using KOD polymerase. Sequencing was performed on a MiSeq sequencer (Illumina) (Rogers et al., 2018).\n\n### Synthesis of macrocyclic peptides\n\nMacrocycles were produced by Fmoc solid-phase synthesis on a Syro I (Biotage) synthesizer. NovaPEG Rink amide resin (Merck Millipore) was used as the solid support, giving rise to C-terminal amides. A combination of HBTU/HOBt (1/1, six equivalents) was utilized for carboxylate activation during the coupling steps. Double couplings were performed for Arg residues. To allow on-resin labeling and cyclization, orthogonally protected amino acids \u2013 Fmoc-Lys(MMT)-OH and Fmoc-Cys(StBu)-OH \u2013 were used, respectively. Chloroacetylation of the N terminus was achieved by manual coupling of chloroacetic acid using HBTU/HOBt (1/1, 10 equivalents) on resin for 1 hr. For site-directed labeling, the MMT protection group of the C-terminal lysine was cleaved by repeated incubations with 1% (v/v) trifluoroacetic acid (TFA) and 5% (v/v) triisopropyl silane (TIPS) in dichloromethane (DCM). The resin was washed with DCM, N,N-dimethylformamide (DMF), 20% (v/v) N,N-diisopropylethylamine in DMF, DMF, methanol, and DCM. Deprotected lysine side chains were conjugated with 5/6-carboxyfluorescein succinimidyl ester (ThermoFisher Scientific) or d-biotin in combination with HBTU/HOBt. The resin was dried and incubated with TFA/2,2\u2032-(ethylenedioxy)diethanethiol (DODT)/TIPS/water in a 92.5/2.5/2.5/2.5 (v/v) ratio for 2.5 hr at 20\u00b0C. Excess TFA was removed using GeneVac centrifugal evaporators (SP Industries), and peptides were precipitated and washed six times with diethylether on ice. Peptides were dissolved in 90% (v/v) dimethylsulfoxide (DMSO) in water, and the pH was adjusted to 10.0 by addition of triethylamine. For complete macrocyclization, samples were incubated at 20\u00b0C for 2 hr. TFA was added to reduce the pH to a value between 1.0 and 2.0. For CP6F, the StBu protection group of Cys was removed by adding 20 equivalents of tributylphosphine in 95% (v/v) trifluoroethanol in water. CP6F was pre-purified by reversed-phase (RP) HPLC using a SNAP C18 column (Biotage) on an Isolera-One system (Biotage), applying a linear acetonitrile gradient containing 0.1% (v/v) TFA. All macrocycles were purified by RP-HPLC on a Prominence LC-20AP system (Shimadzu) equipped with a Chromolith column (Merck Millipore) applying a linear acetonitrile gradient containing 0.1% (v/v) TFA. Identity and purity of macrocycles was confirmed by MALDI-TOF-MS and HPLC analysis.\n\n### Reconstitution in liposomes\n\nLiposomes composed of E. coli polar lipids and DOPC (7/3 w/w; Anatrace) were destabilized with Triton X-100, and purified TmrAB was added in a 1/20 (w/w) ratio. Detergent was removed by adding SM-2 Bio-beads (Bio-Rad) in four steps (1 hr, overnight, 2 hr, and 2 hr) at 4\u00b0C. Proteoliposomes were harvested at 270,000 g for 30 min at 4\u00b0C and resuspended in transport buffer (20 mM HEPES-NaOH pH 7.5, 150 mM NaCl, 5%\u00a0[v/v] glycerol) to a final lipid concentration of 5 mg/ml.\n\n### Fluorescence anisotropy\n\nTo determine equilibrium binding constants, CPFs (50 nM) were incubated with increasing concentrations of TmrAB-containing or empty liposomes. To probe the conformational selectivity, CPFs (50 nM) were mixed with detergent-solubilized IF TmrAB or OF TmrAEQB. Before, OF TmrAEQB was nucleotide-trapped by incubation with ATP (1 mM) and MgCl2 (3 mM) in the absence of CPFs for 5 min at 45\u00b0C. For competition binding studies, CPFs (50 nM) were mixed with detergent-solubilized TmrAB (0.6 \u00b5M for CP6F and CP13F, 0.7 \u00b5M for CP12F, 0.5 \u00b5M for CP14F) in the presence of RRYCATTO655KSTEL (C4ATTO655, 2 \u00b5M) or RRYQKSTEL peptide (R9LQK, 200 \u00b5M). For peptide competition studies, RRYCfluoresceinKSTEL (C4F, 50 nM) were incubated with detergent-solubilized TmrAB (4 \u00b5M), CPBs (6 \u00b5M), or C4ATTO655 (10 \u00b5M). To examine conformational selective binding, TmrAB (0.6 \u00b5M for CP6F and CP13F, 0.7 \u00b5M for CP12F, 0.5 \u00b5M for CP14F) were incubated with CPFs (50 nM) and SDS (1% (v/v)) for 10 min at 20\u00b0C. Fluorescence anisotropy was analyzed at \u03bbex/em of 485/520 nm using a microplate reader (CLARIOstar, BMG LABTECH). Fluorescence anisotropy was calculated using:\n\n$$\nr=\\frac{I_{||}\u2212I_{\u22a5}}{I_{||}+2\u22c5I_{\u22a5}}\n$$\n\nwith I||: parallel intensity and I\u22a5: perpendicular intensity. Binding of CPFs were fitted by a one-site binding model (Langmuir 1:1) using:\n\n$$\nY=\\frac{B_{max}\u2219[L]}{K_{D}+[L]}\n$$\n\nwith Y: binding, Bmax: maximal binding, KD: equilibrium dissociation constant, and [L]: ligand concentration. Data represent mean\u00a0\u00b1\u00a0SD from three experiments.\n\n### Macrocyclic peptide-mediated isolation of TmrAB\n\nCPBs (1 \u00b5M) were immobilized on streptavidin beads (Thermo Scientific) and incubated with purified TmrAB for 1 hr at 4\u00b0C. Alternatively, DDM-solubilized E. coli membranes containing TmrAB were added to reach a final protein concentration of 2 mg/ml. Beads were washed by centrifugation at 200 g for 1 min with SEC buffer (20 mM HEPES-NaOH pH 7.5, 150 mM NaCl, 1 mM \u03b2-DDM). Bound protein was eluted by adding SDS loading buffer (50 mM Tris\u2013HCl pH 6.8, 2%\u00a0[w/v] SDS, 10%\u00a0[v/v] glycerol, 0.1%\u00a0[w/v] bromophenol blue, 100 mM DTT) for 10 min at 95\u00b0C. Equal aliquots of input, flow-through, washing fraction, and eluate were analyzed by SDS\u2013PAGE and immunoblotting (\u03b1-His).\n\n### Gel filtration\n\nPurified TmrAB (1 \u00b5M) was incubated with CP12F, CP13F, CP14F (2 \u00b5M each), or CP6F (5 \u00b5M) in SEC buffer (20 mM HEPES-NaOH pH 7.5, 150 mM NaCl, 1 mM \u03b2-DDM) for 10 min on ice. CPF-TmrAB complexes were analyzed by gel filtration using Superdex 200 Increase 3.2/300 (GE Healthcare).\n\n### Mass spectrometry\n\nDetergent-solubilized TmrAB was buffer-exchanged to ESI buffer (100 mM ammonium acetate pH 7.2, 1 mM \u03b2-DDM) using Zeba desalting columns (Thermo Scientific). TmrAB (4 \u00b5M) was incubated with a twofold molar excess of CPFs for 10 min on ice. CPF-TmrAB complexes were examined by electrospray ionization-mass spectrometry (ESI-MS) on a Synapt G2S (Waters Corporation) equipped with a high-mass quadrupole upgrade. Pd/Pt sputtered nESI tips were pulled in house from borosilicate glass capillaries on a Flaming/Brown micropipette puller (P-1000, Sutter Instrument Co). Capillary and cone voltages were set to 1.85 kV and 150 V, respectively. The source block temperature was set to 30\u00b0C. Neither trap nor transfer collision energy was used. Data analysis was performed using the software MassLynx V4.1.\n\n### ATP binding assay\n\nDDM-solubilized TmrAB (0.2 \u00b5M) was incubated with ATP (2.8 \u03bcM), [2,5\u2019,8-3H(N)]-ATP (0.2 \u00b5M, 3H-ATP, PerkinElmer), MgCl2 (3 mM), and CPBs (1 \u00b5M) for 30 min on ice. Copper-chelated SPA beads (PerkinElmer) were added to a final concentration of 5 mg/ml. Total binding was determined at 20\u00b0C in cpm mode (Wallac MicroBeta). Bound TmrAB complexes were eluted by adding 200 mM of imidazole, and background binding was determined. Data represent mean\u00a0\u00b1\u00a0SD from three experiments.\n\n### Peptide transport assays\n\nTmrAB in liposomes (0.4 \u00b5M) were incubated with ATP/ADP (3 mM), MgCl2 (5 mM), C4F peptide (3 \u00b5M), and CPFs (1 \u00b5M) for 15 min at 45\u00b0C. Reactions were stopped by adding EDTA (10 mM), and proteoliposomes were washed with transport buffer (20 mM HEPES-NaOH pH 7.5, 150 mM NaCl, 5%\u00a0[v/v] glycerol) on PEI-equilibrated MultiScreen plates (0.65 \u00b5m, Merck Millipore). Proteoliposomes were solubilized by adding SDS (1%\u00a0[v/v]) in transport buffer for 10 min at 20\u00b0C. Transported peptides were quantified at \u03bbex/em = 485/520 nm using a microplate reader (CLARIOstar, BMG LABTECH).\n\n### Single-liposome assays\n\nTmrAB-containing liposomes (0.4 \u00b5M) were incubated with C4ATTO655 peptides (1 \u00b5M), ATP or ADP (3 mM each), MgCl2 (5 mM), and CPFs (1 \u00b5M) for 5 min at 45\u00b0C. Transport reactions were stopped by adding EDTA (10 mM). Samples were diluted to a final TmrAB concentration of 20 nM with transport buffer (20 mM HEPES-NaOH pH 7.5, 150 mM NaCl, 5%\u00a0[v/v] glycerol) and analyzed by flow cytometry (FACSCelesta). For regression analysis, liposomes were loaded with increasing amounts of peptides to convert the fluorescence intensities into the number of peptides per liposome (Stefan et al., 2020). For this, liposomes were destabilized by adding Triton X-100 while increasing the C4ATTO655 concentration. Equal amounts of carboxyfluorescein (Sigma-Aldrich) served as loading control. Detergent was removed by adding SM-2 Bio-beads (Bio-Rad) as detailed above. Liposomes were harvested for 30 min at 270,000 g and washed three times by centrifugation. Generally, 20,000\u2013100,000 proteoliposomes were selected according to sideward and forward scatter areas. Single events were selected based on the height of forward scatter plotted against the area of forward scatter. Mean fluorescence intensities of fluorescein and ATTO655 were calculated using FlowJo 10.6.1 software. Data represent mean\u00a0\u00b1\u00a0SD from three experiments.\n\n### ATP hydrolysis assays\n\nTmrAB reconstituted in liposomes (100 nM) were incubated with ATP (2 mM) traced with [\u03b332P]-ATP (Hartmann Analytic), ouabain (1 mM), NaN3 (5 mM), EGTA (50 \u00b5M), MgCl2 (3 mM), and CPFs (1 \u00b5M) for 10 min at 45\u00b0C. Autohydrolysis and background hydrolysis were examined in the absence of proteoliposomes or the presence of EDTA (10 mM). Samples were spotted onto polyethyleneimine cellulose plates (Merck Millipore), and thin-layer chromatography was performed with 0.8 M LiCl-acetic acid pH 3.2. Plates were developed overnight on Exposure Cassette-K (Bio-Rad) and evaluated on Personal Molecular Imager System (Bio-Rad). Data were recorded in triplicates and the mean values\u00a0\u00b1\u00a0SD (n\u00a0=\u00a03) are shown.\n\n### Nucleotide occlusion\n\nDetergent-solubilized TmrAB (2 \u00b5M) were incubated with ATP (1 mM) traced with [\u03b132P]-ATP (Hartmann Analytic), MgCl2 (5 mM), CPFs (4 \u00b5M), or orthovanadate (1 mM) for 5 min at 45\u00b0C. Cold ATP (10 mM) was added, and unbound nucleotides were removed by rapid gel filtration (Bio-Spin columns P-30, Bio-Rad). ATP (10 mM) was added, and samples were spotted onto polyethyleneimine cellulose plates (Merck Millipore). Thin-layer chromatography was performed using 0.75 M KH2PO4 pH 3.4. Plates were developed overnight on Exposure Cassette-K (Bio-Rad) and evaluated on Personal Molecular Imager System (Bio-Rad). Representative radiograms of three experiments are displayed.\n\n### Labeling and purification of substrate peptides\n\nC4 peptide (RRYCKSTEL) was synthesized on solid phase using standard Fmoc chemistry. For fluorophore labeling, C4 peptide was incubated with a 1.2 molar excess of 5-iodoacetamide-fluorescein (Sigma-Aldrich) or ATTO655-maleimide (ATTO-TEC) in PBS DMF buffer (8.1 mM Na2HPO4 pH 6.5, 137 mM NaCl, 2.7 mM KCl, 1.8 mM KH2PO4, 20%\u00a0[v/v] DMF) for 1 hr at 20\u00b0C. Peptides were purified by reversed-phase HPLC (Jasco; PerfectSil 300 ODS C18), utilizing a linear acetonitrile gradient from 5% to 80% supplemented with 0.1% (v/v) TFA. Purified fluorescently labeled peptides were snap-frozen in liquid nitrogen and freeze-dried (Lyovac GT2, Heraeus).\n\n### Data presentation and statistics\n\nAll measurements were performed in triplicates (n\u00a0=\u00a03). All diagrams were prepared in GraphPad Prism5, and mean values\u00a0\u00b1\u00a0SD were presented. Statistical analysis was performed in GraphPad Prism5 applying two-tailed t-tests.\n",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "c0b086dd-8212-471a-a045-1d4570b36724",
+      "submission_id": "7245e42e-6c15-40bc-b91c-d64698930bbe",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- David Drew, Stockholm University Sweden\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.67732.sa1](https://doi.org/10.7554/eLife.67732.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe RaPID technology is applied on the heterodimeric ABC transporter TmrAB from Thermus thermophilus to generate high-affinity macrocyclic peptides (MCPs) with conformational-specific preferences. The MCPs reveal novel, allosteric binding sites in TmrAB, which do not inhibit ATP or substrate binding, but block ATP hydrolysis. The MCPs are used as tool compounds to provide evidence that ATP binding, rather than ATP hydrolysis, is sufficient to drive substrate export in this highly-coupled ABC exporter. The authors further demonstrate that MCPs can be generated for membrane proteins embedded in nanodiscs, rather than in detergent, which is an important technical step for peptide-based drug discovery.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"De-novo macrocyclic peptides dissect energy coupling of a heterodimeric ABC transporter by multimode allosteric inhibition\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including David Drew as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Olga Boudker as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThis is an excellent technical and mechanistic work describing the discovery and characterization of macrocyclic peptides (MCPs) that target the heterodimeric ABC transporter TmrAB from Thermus thermophilus. It is significant because it reports on the discovery of at least two distinct classes of MCPs that trap TmrAB in distinct states, and the authors use these unique MCPs as powerful probes to provide new insight into the catalytic mechanism of TmrAB. The MCPs reveal novel allosteric binding sites in TmrAB and provides evidence that ATP binding, rather than ATP hydrolysis, is sufficient to drive substrate export in this highly-coupled ABC exporter. Overall, this work 1) introduces potent and selective modulators of the model TmrAB transporter, 2) provides key mechanistic insight into the still unsettled transport mechanism of TmrAB through pharmacological arrest, and 3) highlights the potential of MCPs as pharmacological tools and their potential as early drug leads.\n\n1. While Figure 5A/B are very welcome data, the authors do not systematically determine the affinity of all four MCPs in the liposome and detergent conditions that are used interchangeably throughout this study. Given the potential impact on Kd (i.e. CP6 shows an apparent 6-60-fold decrease in affinity from the liposomes to DDM condition), it seems of particular importance that the Koff for CP14 can be established (ideally at 45 degrees) in order to fully understand it's propensity to disassociate (i.e. bind/unbind) during the time course and temperature changes of the experiments presented in Figure 5C/D, and Figure 6E, since this has clear implications for the authors present interpretations as summarized in Figure 7. We would expect SPR experiments in detergent and liposomes (or nanodiscs) are important data to present \"IF\" these experiments are technically achievable. If not, Ki measurements of the CP's for C4-peptide uptake in liposomes with 50:50 orientation, should be able to provide a proxy for the binding affinity that should correlate with the preferences of the peptides for the OF or IF states as determined here in detergent.\n\nComments for authors:\n\nManuscript strengths:\n\n1. The authors build on their prior work on TmrAB to present and utilize an arsenal of well-established biochemical and biophysical assays throughout the manuscript.\n\n2. In general, the authors are thoughtful in their use of these novel MCPs to characterize the mechanism of action on TmrAB and to provide key and novel insights into the TmrAB transport mechanism.\n\n3. The scope of discovery and characterization presented in this work is rather unique for any membrane transport system; it will undoubtedly be of high interest to the ABC transporter field and to membrane biologists in general.\n\nManuscript weaknesses; support of claims and conclusions:\n\n1. While Figure 5A/B are very welcome data, the authors do not systematically determine the affinity of all four MCPs in the liposome and detergent conditions that are used interchangeably throughout this study. Given the potential impact on Kd (i.e. CP6 shows an apparent 6-60-fold decrease in affinity from the liposomes to the detergent condition), it seems of particular importance that the Koff for CP14 can be established (ideally at 45 degrees) in order to fully understand it's propensity to disassociate (i.e. bind/unbind) during the time course and temperature changes of the experiments presented in Figure 5C/D, and Figure 6E, since this has clear implications for the authors present interpretations as summarized in Figure 7.\n\n2. Quantitative analysis (Figure 5): CP13 has an affinity of 40 nM for the IF and 10 nM for OF. Why is it selective for OF? Since the concentration of the CP13 used in the assay is above 40 nM does this not imply that the IF state will also be recognized and trapped at this concentration? Does this really mean CFs are conformation specific or would it be more correct to conclude that they have conformational-specific preferences?\n\n3. Would different macrocyclic peptides have been generated if TmrAB was presented in detergent and the wild type protein was used instead? Whilst this is not a critical comparative control and the beneficial benefits of using nanodiscs are obvious, it would have helped to have included this control to fully benchmark the new methodological developments.\n\n4. The currently described MCPs are not able membrane permeable and so cannot be used in vivo without further chemical modification.\n\n5. As stated in line 129/130, all CPs analyzed blocked ATPase activity to the level of autohydrolysis. If the CPs abolished ATPase activity how is it possible that substrate transport is only partially inhibited by CP13 and CP14 (line 135/136) since transport depends on ATPase activity?\n\n6. It is unclear why the CP13 has a coupling ratio of 0.3. Does it mean that 30% of the transporters are not inhibited by CP13? Or does CP13 imposes inefficient coupling?\n\n7. Figure 3C and 3D: There are higher levels of transported peptide as compared to the WT protein when is ADP is added. It is unclear if the amount of transported CF4 in the presence of CPs really \"background\" as claimed by the authors?\n",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "dec152b8-e730-455a-a9e3-973eb07fc014",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C1",
+      "claim": "ATP-binding cassette (ABC) transporters constitute the largest family of primary active transporters involved in a multitude of physiological processes and human diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "ATP-binding cassette (ABC) transporters constitute the largest family of primary active transporters involved in a multitude of physiological processes and human diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about ABC transporters that draws from established scientific consensus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "3d9f20a1-3a7f-4582-bf86-ca7b4e6dd0d2",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C2",
+      "claim": "High-affinity peptidic macrocycles bind conformationally selective and display potent multimode inhibitory effects.",
+      "claim_type": "EXPLICIT",
+      "source": "High-affinity peptidic macrocycles bind conformationally selective and display potent multimode inhibitory effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript including binding assays and inhibition studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "f1b7a9a9-142a-464f-81cd-b75995e1a39f",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C3",
+      "claim": "The macrocycles block the transporter either before or after unidirectional substrate export along a single conformational switch induced by ATP binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The macrocycles block the transporter either before or after unidirectional substrate export along a single conformational switch induced by ATP binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from nucleotide occlusion assays and single-liposome transport studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "cc5ad76a-b205-412b-bfba-6275187f6029",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C4",
+      "claim": "ABC transporters are implicated in cystic fibrosis.",
+      "claim_type": "EXPLICIT",
+      "source": "They are implicated in many physiological processes and diseases including cystic fibrosis (Stutts et al., 1995; Csan\u00e1dy et al., 2019), diabetes (Aguilar-Bryan and Bryan, 1999), lipid-trafficking disorders (Brooks-Wilson et al., 1999), antibiotic resistance (Orelle et al., 2019), and acquired drug resistance in cancer chemotherapy (Kartner et al., 1983; Litman et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "c57420cd-1396-4eba-9534-3d244f054175",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C5",
+      "claim": "ABC transporters are implicated in diabetes.",
+      "claim_type": "EXPLICIT",
+      "source": "They are implicated in many physiological processes and diseases including cystic fibrosis (Stutts et al., 1995; Csan\u00e1dy et al., 2019), diabetes (Aguilar-Bryan and Bryan, 1999), lipid-trafficking disorders (Brooks-Wilson et al., 1999), antibiotic resistance (Orelle et al., 2019), and acquired drug resistance in cancer chemotherapy (Kartner et al., 1983; Litman et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "2f240fbf-7dce-4c5a-ac9d-a516fd773313",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C6",
+      "claim": "ABC transporters are implicated in lipid-trafficking disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "They are implicated in many physiological processes and diseases including cystic fibrosis (Stutts et al., 1995; Csan\u00e1dy et al., 2019), diabetes (Aguilar-Bryan and Bryan, 1999), lipid-trafficking disorders (Brooks-Wilson et al., 1999), antibiotic resistance (Orelle et al., 2019), and acquired drug resistance in cancer chemotherapy (Kartner et al., 1983; Litman et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "a1fa1041-5e2c-4499-876f-afe3a1b0b3a4",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C7",
+      "claim": "ABC transporters are implicated in antibiotic resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "They are implicated in many physiological processes and diseases including cystic fibrosis (Stutts et al., 1995; Csan\u00e1dy et al., 2019), diabetes (Aguilar-Bryan and Bryan, 1999), lipid-trafficking disorders (Brooks-Wilson et al., 1999), antibiotic resistance (Orelle et al., 2019), and acquired drug resistance in cancer chemotherapy (Kartner et al., 1983; Litman et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "b048f0ec-497f-4f16-90dc-7d9303f70c5a",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C8",
+      "claim": "ABC transporters are implicated in acquired drug resistance in cancer chemotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "They are implicated in many physiological processes and diseases including cystic fibrosis (Stutts et al., 1995; Csan\u00e1dy et al., 2019), diabetes (Aguilar-Bryan and Bryan, 1999), lipid-trafficking disorders (Brooks-Wilson et al., 1999), antibiotic resistance (Orelle et al., 2019), and acquired drug resistance in cancer chemotherapy (Kartner et al., 1983; Litman et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "24ab1e73-d30b-4cc8-8702-b7d29cf7489d",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C9",
+      "claim": "ABC transporters are composed of two transmembrane domains (TMDs), forming the substrate translocation pathway, and two nucleotide-binding domains (NBDs), converting the chemical energy of ATP binding and hydrolysis into mechanic transitions.",
+      "claim_type": "EXPLICIT",
+      "source": "ABC transporters are composed of two transmembrane domains (TMDs), forming the substrate translocation pathway, and two nucleotide-binding domains (NBDs), converting the chemical energy of ATP binding and hydrolysis into mechanic transitions (Rees et al., 2009; Locher, 2016; Thomas and Tamp\u00e9, 2018; Oldham et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "f15fb419-05aa-4b0a-bf87-a27490c63c25",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C10",
+      "claim": "The heterodimeric multidrug resistance transporter TmrAB from Thermus thermophilus shares structural and functional homology with the transporter associated with antigen processing (TAP).",
+      "claim_type": "EXPLICIT",
+      "source": "The heterodimeric multidrug resistance transporter TmrAB from Thermus thermophilus shares structural and functional homology with the transporter associated with antigen processing (TAP) and can restore antigen presentation in human TAP-deficient cells (Kim et al., 2015; N\u00f6ll et al., 2017; Zutz et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "dd3f6df1-f2b1-43d6-af93-e585714dca76",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C11",
+      "claim": "TmrAB can restore antigen presentation in human TAP-deficient cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The heterodimeric multidrug resistance transporter TmrAB from Thermus thermophilus shares structural and functional homology with the transporter associated with antigen processing (TAP) and can restore antigen presentation in human TAP-deficient cells (Kim et al., 2015; N\u00f6ll et al., 2017; Zutz et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "8d71bb39-9c91-4e86-9358-9c564b108310",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C12",
+      "claim": "TmrAB is particularly suitable for mechanistic and structural studies, as the various conformers along the translocation trajectory are only accessible at elevated temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "TmrAB is particularly suitable for mechanistic and structural studies, as the various conformers along the translocation trajectory are only accessible at elevated temperatures, thus providing active control over the system (N\u00f6ll et al., 2017; Zutz et al., 2011; Hofmann et al., 2019; Stefan et al., 2020; Barth et al., 2018; Barth et al., 2020; Diederichs and Tamp\u00e9, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "ed48e551-069b-4ae4-a6b6-12ff3835e378",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C13",
+      "claim": "Several catalytic models for ABC systems have been depicted including alternating sites, constant contact, and processive clamp/ATP switch.",
+      "claim_type": "EXPLICIT",
+      "source": "To correlate ATP binding and hydrolysis to substrate transport, several catalytic models for ABC systems have been depicted including alternating sites (Senior et al., 1995), constant contact (Jones and George, 2009), and processive clamp/ATP switch (Higgins and Linton, 2004; Janas et al., 2003; Abele and Tamp\u00e9, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "b121a43c-e9f0-4d51-83a7-97205601d752",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C14",
+      "claim": "In all models, substrate translocation is coupled with conformational transitions, which are linked to the ATP hydrolysis cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "In all models, substrate translocation is coupled with conformational transitions, which are linked to the ATP hydrolysis cycle (Thomas and Tamp\u00e9, 2020; Sz\u00f6ll\u0151si et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "5b27d9de-9c3f-4580-a9db-e185af935e5c",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C15",
+      "claim": "The conformational landscape of a heterodimeric ABC transporter has recently been elucidated through nine high-resolution X-ray and cryo-EM structures.",
+      "claim_type": "EXPLICIT",
+      "source": "The conformational landscape of a heterodimeric ABC transporter has recently been elucidated through nine high-resolution X-ray and cryo-EM structures (N\u00f6ll et al., 2017; Hofmann et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "bbd1832f-1305-4f67-899f-eb59b4323fee",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C16",
+      "claim": "Using single liposome-based translocation assays, the unidirectional substrate export along a single conformational switch induced by ATP binding was demonstrated.",
+      "claim_type": "EXPLICIT",
+      "source": "Using single liposome-based translocation assays, the unidirectional substrate export along a single conformational switch induced by ATP binding was demonstrated (Stefan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "1eae636b-3bf7-484f-9126-2b30fb9c8eb1",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C17",
+      "claim": "Many bioactive toxins, antibiotics, and inhibitors are macrocyclic peptides (CPs) with unnatural amino acid modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "Many bioactive toxins, antibiotics, and inhibitors are macrocyclic peptides (CPs) with unnatural amino acid modifications (Nicolaou et al., 1999; Obexer et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "d36e8816-e676-4531-ba92-b3a16ced969e",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C18",
+      "claim": "CPs are regarded as next-generation pharmaceutical compounds to target 'undruggable' proteins implicated in disease and diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "CPs are regarded as next-generation pharmaceutical compounds to target 'undruggable' proteins implicated in disease and diagnosis (Morrison, 2018; Vinogradov et al., 2019; Zorzi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "8ba3ed6d-137f-4e87-9c37-2f9280f35b3f",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C19",
+      "claim": "Various engineered and modified CPs are clinically approved or under clinical trials, for example, Peginesatide, Linaclotide, and Pasireotide.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, various engineered and modified CPs are clinically approved or under clinical trials, for example, Peginesatide, Linaclotide, and Pasireotide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by established knowledge about approved pharmaceutical compounds.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "cd6fbb6a-3d71-4029-8f93-35306530400e",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C20",
+      "claim": "Compared to conventional small-molecule drugs, CPs usually display an elevated selectivity as well as an increased potency, and they are easy to manufacture.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to conventional small-molecule drugs, CPs usually display an elevated selectivity as well as an increased potency, and they are easy to manufacture (Craik et al., 2013; Driggers et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "c553c460-7907-45e1-ae2e-738e9b1e5265",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C21",
+      "claim": "The random nonstandard peptide integrated discovery (RaPID) system comprises the identification of synthetic/de novo CPs against desired target protein complexes to enable structural and functional investigations.",
+      "claim_type": "EXPLICIT",
+      "source": "The random nonstandard peptide integrated discovery (RaPID) system comprises the identification of synthetic/de novo CPs against desired target protein complexes to enable structural and functional investigations (Murakami et al., 2006a; Murakami et al., 2006b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "c3658384-ecc8-4b0c-b9ce-787f8acd0a47",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C22",
+      "claim": "Unnatural amino acids such as N-chloroacetyl-d-tyrosine, N-methyl alanine, and carboranyl alanine can be incorporated by the Flexible In-vitro Translation (FIT) system.",
+      "claim_type": "EXPLICIT",
+      "source": "As a major advantage, unnatural amino acids such as N-chloroacetyl-d-tyrosine (Goto et al., 2008), N-methyl alanine (Yamagishi et al., 2011), and carboranyl alanine (Yin et al., 2019) can be incorporated by the Flexible In-vitro Translation (FIT) system, relying on aminoacylating ribozymes called Flexizymes (Goto et al., 2011) to construct highly diverse peptide libraries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "40af6131-8864-408c-85c9-46b488d0e698",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C23",
+      "claim": "Using the RaPID system, CPs were identified for receptor tyrosine kinases, ubiquitin ligase, the Zika virus protease, prolyl hydroxylase, and phosphoglycerate mutases.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the RaPID system, CPs were identified for receptor tyrosine kinases (Yin et al., 2019), ubiquitin ligase (Yamagishi et al., 2011), the Zika virus protease (Nitsche et al., 2019), prolyl hydroxylase (McAllister et al., 2018), and phosphoglycerate mutases (Yu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "c6f7317b-4a35-4983-8554-d12fc4a10347",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C24",
+      "claim": "Enriched CPs specifically bind to TmrAB and are high-affinity allosteric inhibitors, which prevent substrate transport and ATP turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "Enriched CPs specifically bind to TmrAB and are high-affinity allosteric inhibitors, which prevent substrate transport and ATP turnover.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from binding assays, transport assays, and ATPase assays presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "49a74df7-8a01-4e42-961c-c8312b3f5514",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C25",
+      "claim": "Two mechanistically distinct CP inhibitor classes were elucidated that arrest the ABC transporter either before or right after ATP-binding induced substrate translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "Two mechanistically distinct CP inhibitor classes were elucidated that arrest the ABC transporter either before or right after ATP-binding induced substrate translocation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from nucleotide occlusion and transport assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "3a619764-426e-43f9-8209-52293769afed",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C26",
+      "claim": "These CPs arrest TmrAB in the inward-facing (IF) and outward-facing conformation, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, these CPs arrest TmrAB in the inward-facing (IF) and outward-facing conformation, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from conformation-specific binding studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "bfd26f85-4601-4406-9f2d-f0be0704b650",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C27",
+      "claim": "The final library size was on the order of 10^12 macrocyclic peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "The final library size was on the order of 1012 macrocyclic peptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental methods used to generate the library.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "099ddf6c-6954-4b67-9668-1cf297013b36",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C28",
+      "claim": "Head-to-side chain cyclization was mediated through ribosomal incorporation of N-chloroacetyl-d-tyrosine at the initiator position, which post-translationally undergoes intramolecular thioether formation with a downstream cysteine.",
+      "claim_type": "EXPLICIT",
+      "source": "Head-to-side chain cyclization was mediated through ribosomal incorporation of N-chloroacetyl-d-tyrosine at the initiator position, which post-translationally undergoes intramolecular thioether formation with a downstream cysteine (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the experimental methods and illustrated in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "54ac49e1-049e-416f-ab7c-09b15a1c215e",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C29",
+      "claim": "After five iterative rounds of selection, including in vitro translation, affinity panning, reverse transcription, and PCR recovery, high-affinity binders were identified by deep sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "After five iterative rounds of selection, including in vitro translation, affinity panning, reverse transcription, and PCR recovery, high-affinity binders were identified by deep sequencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental methods described.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "705cdaef-02e1-4c0e-aafe-0dbdf1e52cff",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C30",
+      "claim": "The most abundant macrocyclic peptides after the fifth selection round, CP6, CP12, CP13, and CP14, constituted 41% of the final sequenced pool.",
+      "claim_type": "EXPLICIT",
+      "source": "The most abundant macrocyclic peptides after the fifth selection round, CP6, CP12, CP13, and CP14, constituted 41% of the final sequenced pool and could not be grouped into families (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by deep sequencing data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "0909172e-c197-4305-8bc0-50a628c1037d",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C31",
+      "claim": "All CPFs bind to TmrAB with nanomolar binding affinities, with KD values ranging from 20 to 50 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "The equilibrium binding revealed nanomolar binding affinities for all CPFs, with KD values ranging from 20 to 50 nM (Figure 2A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fluorescence polarization data shown in Figure 2A and 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "695c5a8f-a987-479b-b8ee-348553207703",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C32",
+      "claim": "If empty liposomes (without reconstituted TmrAB) were added to CPFs, no binding was detected, demonstrating a specific interaction of all CPs with TmrAB.",
+      "claim_type": "EXPLICIT",
+      "source": "If empty liposomes (without reconstituted TmrAB) were added to CPFs, no binding was detected, demonstrating a specific interaction of all CPs with TmrAB (Figure 2A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by control experiments shown in Figure 2A and 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "6434e7dd-3dbb-4468-98a6-b1820a4b3fb1",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C33",
+      "claim": "TmrAB complexes could be affinity-captured on streptavidin beads pre-loaded with biotinylated CPBs.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, TmrAB complexes could be affinity-captured on streptavidin beads pre-loaded with biotinylated CPBs and detected in the eluate but not in the flow-through (Figure 2C, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by affinity capture data shown in Figure 2C and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "cf2948cd-23db-457f-8619-8e6e515c8740",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C34",
+      "claim": "CP13B and CP14B immobilized on streptavidin matrices can isolate intact TmrAB complexes from solubilized E. coli membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "To explore the specificity of binding, we used CP13B and CP14B immobilized on streptavidin matrices to isolate intact TmrAB complexes from solubilized E. coli membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by affinity purification data shown in Figure 2D and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "8a0cdab4-b3b1-438d-a32f-2ab9f557cb9c",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C35",
+      "claim": "For all CPFs, kinetically stable CPF-TmrAB complexes were formed as confirmed by gel filtration.",
+      "claim_type": "EXPLICIT",
+      "source": "For all CPFs, kinetically stable CPF-TmrAB complexes were formed as confirmed by gel filtration (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gel filtration data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "b38be904-1d1b-46f0-8b54-2954ae774df8",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C36",
+      "claim": "Under conditions where the quaternary and tertiary structure of TmrAB complexes is disrupted by adding anionic detergent SDS, binding of TmrAB to all CPFs was impaired, indicating a conformation-specific interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "To address whether the CPs recognize a linear or non-linear epitope, we examined the binding of CPFs after disrupting the quaternary and tertiary structure of TmrAB complexes by adding anionic detergent SDS. Under these conditions, binding of TmrAB to all CPFs was impaired, indicating a conformation-specific interaction (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "9f7100e4-de5f-4f4b-9119-0aac7f7942a4",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C37",
+      "claim": "Native mass spectrometry demonstrates a stoichiometric interaction between CPFs and TmrAB.",
+      "claim_type": "EXPLICIT",
+      "source": "We also analyzed the CPF-TmrAB complexes by native mass spectrometry (MS), demonstrating a stoichiometric interaction (Figure 2E, Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by native MS data shown in Figure 2E and Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "fc3880f9-9dba-49ce-b1a5-5d5c271f6cb0",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C38",
+      "claim": "In the presence of the CPFs, ATPase activity was completely blocked to the level of autohydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of the CPFs, ATPase activity was completely blocked to the level of autohydrolysis (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ATPase activity data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "17a955c6-a91c-48ed-9a55-718d817992a6",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C39",
+      "claim": "None of the CPFs were transported by TmrAB.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the linear substrate peptide C4F, none of the CPFs were transported by TmrAB (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by transport assay data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "62a0cc4c-e9c6-43f3-880e-e7cc14e6e4aa",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C40",
+      "claim": "CP6F and CP12F completely blocked peptide translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "The data reveal that CP6F and CP12F completely blocked peptide translocation, while CP13F or CP14F only caused a partial inhibition (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by transport assay data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "10e7affc-3b31-465e-ab62-b5a1339fc9e8",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C41",
+      "claim": "CP13F or CP14F only caused a partial inhibition of peptide translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "The data reveal that CP6F and CP12F completely blocked peptide translocation, while CP13F or CP14F only caused a partial inhibition (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by transport assay data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "e906f664-f2cc-41d3-a6f5-a45ef923ac98",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C42",
+      "claim": "At competitive concentrations above their KD values, the transported peptides R9LQK or C4ATTO655 did not affect binding of CPFs to TmrAB.",
+      "claim_type": "EXPLICIT",
+      "source": "At competitive concentrations above their KD values (Stefan et al., 2020), the transported peptides R9LQK or C4ATTO655 did not affect binding of CPFs to TmrAB (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by competition binding data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "9338837c-1f49-409d-bf3e-1e959816f1bc",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C43",
+      "claim": "CPBs as competitors did not affect C4F peptide binding, in contrast to the linear peptide C4ATTO655, which interfered with C4F peptide binding.",
+      "claim_type": "EXPLICIT",
+      "source": "In the second inverse approach using CPBs as competitors, we did not observe a competition of C4F peptide binding, in contrast to the linear peptide C4ATTO655, which interfered with C4F peptide binding (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by competition binding data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "04c043f4-2406-4519-8d35-24b17c5480be",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C44",
+      "claim": "CP12B and CP14B showed no effect on ATP binding.",
+      "claim_type": "EXPLICIT",
+      "source": "CP12B and CP14B showed no effect on ATP binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by scintillation proximity assay data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "16de80e5-a89a-49ff-8265-3c861ce905c0",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C45",
+      "claim": "For CP6B and CP13B, only minor effects on ATP binding were detected.",
+      "claim_type": "EXPLICIT",
+      "source": "For CP6B and CP13B, only minor effects on ATP binding were detected (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by scintillation proximity assay data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "21b1d4e1-0f07-4876-846a-9fbcd82ed4d0",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C46",
+      "claim": "CPs are high-affinity allosteric inhibitors of TmrAB that leave ATP binding and substrate interaction largely unaffected, while impairing ATP hydrolysis and substrate translocation across the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, CPs are high-affinity allosteric inhibitors of TmrAB that leave ATP binding and substrate interaction largely unaffected, while impairing ATP hydrolysis and substrate translocation across the membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple experimental data including binding assays, ATPase assays, and transport assays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "0284ec9c-9b86-4012-9ac1-3f76469456a2",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C47",
+      "claim": "Binding of CP6F and CP12F showed lower dissociation constants for the OF conformation in contrast to CP13F and CP14F, which show a preference for the OF conformer.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding of CP6F and CP12F showed lower dissociation constants for the OF conformation in contrast to CP13F and CP14F, which show a preference for the OF conformer (Figure 5A, B, Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by conformation-specific binding data shown in Figure 5A, B, and Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "73769a75-48cf-4b35-b9dc-feb4ac3af4e9",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C48",
+      "claim": "CP13F and CP14F bind in the absence and presence of ATP and ADP, while CP6F and CP12F preferentially bind under conditions where IF TmrAB is exclusively populated.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings were further corroborated by demonstrating that CP13F and CP14F bind in the absence and presence of ATP and ADP, while CP6F and CP12F preferentially bind under conditions where IF TmrAB is exclusively populated (Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by binding data shown in Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "60ef99f1-b2bb-4b8f-a146-bdd45236863b",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C49",
+      "claim": "In the presence of CP6F and CP12F, nucleotide occlusion was completely abolished.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of CP6F and CP12F, nucleotide occlusion was completely abolished.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by nucleotide occlusion data shown in Figure 5C and 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "817fb066-3b2a-43b5-98bb-acf980d56257",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C50",
+      "claim": "CP13F and CP14F promoted stable ATP occlusion in wild-type TmrAB \u2013 blocking hydrolysis to ADP, which is indicative of stabilization of a pre-hydrolysis state.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, CP13F and CP14F promoted stable ATP occlusion in wild-type TmrAB \u2013 blocking hydrolysis to ADP, which is indicative of stabilization of a pre-hydrolysis state (Figure 5C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by nucleotide occlusion data shown in Figure 5C and 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "312eaf46-26c0-4aa8-9998-8c9b18ac6cbf",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C51",
+      "claim": "CP6F and CP12F display preferential binding to the IF conformation and inhibit the IF-to-OF switch by ATP binding.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, CP6F and CP12F display preferential binding to the IF conformation and inhibit the IF-to-OF switch by ATP binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by conformation-specific binding and nucleotide occlusion data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "336a44b3-d64c-402a-b5ba-1d477eda9843",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C52",
+      "claim": "CP13F and CP14F favorably bind to the OF conformation, promoting ATP occlusion, thus stabilizing TmrAB in a pre-hydrolysis state.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, CP13F and CP14F favorably bind to the OF conformation, promoting ATP occlusion, thus stabilizing TmrAB in a pre-hydrolysis state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by conformation-specific binding and nucleotide occlusion data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "c04a3b7c-34b6-46c3-9e0a-fea96b16edab",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C53",
+      "claim": "Along a single IF-to-OF switch and arrest by CP13F or CP14F, approx. 10 or 30 C4ATTO655 peptides per liposome were transported, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Along a single IF-to-OF switch and arrest by CP13F or CP14F, approx. 10 or 30 C4ATTO655 peptides per liposome were transported, respectively (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by single-liposome flow cytometry data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "774fc798-a605-4aaf-adac-b12dbf3e68db",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C54",
+      "claim": "A coupling ratio of 0.3 to 1.0 peptides per transporter along the ATP-induced IF-to-OF switch can be derived.",
+      "claim_type": "EXPLICIT",
+      "source": "From that, a coupling ratio of 0.3 to 1.0 peptides per transporter along the ATP-induced IF-to-OF switch can be derived.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the transport data and the number of transporters per liposome.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "72fdccdd-2f49-4908-96ad-f52450e1db69",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C55",
+      "claim": "CP6F and CP12F completely prevented C4ATTO655 peptide translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, CP6F and CP12F completely prevented C4ATTO655 peptide translocation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by single-liposome flow cytometry data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "f6bbd78e-c2c7-45ad-9b4f-68f115b5c2fb",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C56",
+      "claim": "The binding epitope of all CPs is on the TmrAB regions facing the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "Taking into account that the CPs are membrane impermeable, these results indicate that the binding epitope of all CPs is on the TmrAB regions facing the cytosol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the membrane impermeability of CPs and their ability to inhibit transport.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "05a6ed7e-aff9-4dfc-92b4-aa98ac87e252",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C57",
+      "claim": "Compared to the positive control in the absence of CPFs, CP13F and CP14F drastically reduced the peptide transport rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the positive control in the absence of CPFs, CP13F and CP14F drastically reduced the peptide transport rate (Figure 6C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by time-course transport data shown in Figure 6C and 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "6e3ab99e-4820-4381-9330-0231db7758f1",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C58",
+      "claim": "For CP13F, a single turnover driving peptide transport was observed before wild-type TmrAB became conformationally arrested.",
+      "claim_type": "EXPLICIT",
+      "source": "For CP13F, a single turnover driving peptide transport was observed before wild-type TmrAB became conformationally arrested (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by time-course transport data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "25fa7eb0-62da-4aaa-8479-7b4a226c3d9b",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C59",
+      "claim": "In the presence of CP14F, a slow turnover of wild-type TmrAB driving peptide transport over a period of 40 min was noted.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of CP14F, we noted a slow turnover of wild-type TmrAB driving peptide transport over a period of 40 min (Figure 6C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by time-course transport data shown in Figure 6C and 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "7b0ae10a-1852-469e-ab6e-04607c0f60f4",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C60",
+      "claim": "In the presence of CP13F, peptide transport was exclusively observed along the first IF-to-OF switch, indicating a conformational arrest of wild-type TmrAB over a period of 2 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of CP13F, peptide transport was exclusively observed along the first IF-to-OF switch, indicating a conformational arrest of wild-type TmrAB over a period of 2 hr (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by two-cycle transport data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "a1e7f218-975d-4421-8ef1-9c3cb8ff29f1",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C61",
+      "claim": "For CP14F, peptide transport was detected in both IF-to-OF switches, which confirmed the slow relaxation of wild-type TmrAB from a pre-hydrolysis to an IF state between both cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "For CP14F, peptide transport was detected in both IF-to-OF switches, which confirmed the slow relaxation of wild-type TmrAB from a pre-hydrolysis to an IF state between both cycles (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by two-cycle transport data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "62769cfd-36af-42f6-bac8-e44ed9210dbf",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C62",
+      "claim": "The macrocyclic peptides CP13 and CP14 stabilize a pre-hydrolysis state, thus allowing a single-turnover translocation along the IF-to-OF switch.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the macrocyclic peptides CP13 and CP14 stabilize a pre-hydrolysis state, thus allowing a single-turnover translocation along the IF-to-OF switch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple experimental data including nucleotide occlusion and transport assays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "34b93ca6-e144-4a58-b496-6f508b7d8953",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C63",
+      "claim": "Macrocyclic peptides can be employed to arrest TmrAB at different stages during a single IF-to-OF switch induced by ATP binding, which drives substrate transport across the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "We reveal that CPs can be employed to arrest TmrAB at different stages during a single IF-to-OF switch induced by ATP binding, which drives substrate transport across the membrane (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the collective experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "594a3038-69b1-4f42-9af0-92ac7d46274a",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C64",
+      "claim": "These IF-to-OF and OF-to-IF inhibitors stabilize TmrAB states that are distinct from the vanadate trapped states.",
+      "claim_type": "EXPLICIT",
+      "source": "These IF-to-OF and OF-to-IF inhibitors stabilize TmrAB states that are distinct from the vanadate trapped states and allowed us to unravel mechanistic principles of substrate transport for wild-type ABC transproters and illustrate the potential of selective inhibitors as next-generation antibiotics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison of nucleotide occlusion patterns between CP-arrested and vanadate-trapped states.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "2009025d-258e-4891-8836-9e01b69257d8",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C65",
+      "claim": "CPs are powerful agents to stabilize protein conformers or protein complexes for structural and functional investigations.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that CPs are powerful agents to stabilize protein conformers or protein complexes for structural and functional investigations (Huang et al., 2019; Passioura and Suga, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "3a1c2912-9c77-4111-b275-9ccc4f52512a",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C66",
+      "claim": "Upon cyclization of the peptide backbone, CPs mimic the complementary-determining regions (CDRs) of antibodies penetrating into buried cavities.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon cyclization of the peptide backbone, CPs mimic the complementary-determining regions (CDRs) of antibodies penetrating into buried cavities (Hill et al., 2014; McGeary and Fairlie, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "5c370217-83f9-4562-b31b-7086c0ad2544",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C67",
+      "claim": "Compared to conventional antibodies and antibody fragments, the incorporation of unnatural amino acids largely expands the chemical diversity of paratopes to reach unexplored binding modes.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to conventional antibodies and antibody fragments, the incorporation of unnatural amino acids largely expands the chemical diversity of paratopes to reach unexplored binding modes (Craik et al., 2013; Makley and Gestwicki, 2013; Tsomaia, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "038e076c-6956-47e8-98fa-e5aa343d4f5c",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C68",
+      "claim": "All CPs selected against TmrAEQB in lipid nanodiscs also specifically bind to wild-type TmrAB in various lipid models.",
+      "claim_type": "EXPLICIT",
+      "source": "As demonstrated by affinity isolation, gel filtration, and native mass spectrometry, all CPs selected against TmrAEQB in lipid nanodiscs also specifically bind to wild-type TmrAB in various lipid models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from affinity isolation, gel filtration, and native MS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "1954f77b-cc5a-4f08-ad97-9bca51ee1433",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C69",
+      "claim": "The most enriched macrocyclic peptides also display inhibitory activity, even though the selection is based on target binding alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, the most enriched macrocyclic peptides also display inhibitory activity, even though the selection is based on target binding alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the observation that enriched CPs inhibit ATPase activity and transport.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "3b56131a-9912-4529-986f-e0fd4f1181bd",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C70",
+      "claim": "Based on deep sequencing, CP6 and CP12, acting on the IF state, showed higher enrichment than CP13 and CP14, acting on the OF state, which is consistent with the selections being performed at 4\u00b0C, where TmrAB adopts the IF state.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on deep sequencing, CP6 and CP12, acting on the IF state, showed higher enrichment than CP13 and CP14, acting on the OF state, which is consistent with the selections being performed at 4\u00b0C, where TmrAB adopts the IF state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by deep sequencing data and the known conformational preference of TmrAB at different temperatures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "6bab023f-2716-4bd4-a36a-239adfc5559a",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C71",
+      "claim": "Due to high binding affinities of OF-specific CP13 and CP14, these CPs were also enriched along the course of the selection.",
+      "claim_type": "EXPLICIT",
+      "source": "However, due to high binding affinities of OF-specific CP13 and CP14, these CPs were also enriched along the course of the selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the enrichment data and binding affinities.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "3d27b9f1-9c38-43b1-8a15-5f8ea022c278",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C72",
+      "claim": "In contrast to CPs elicited against the homodimeric ABC transporter cmABCB1 from Cyanidioschyzon merolae (aCAP) and the MATE transporter (MaD3S, MaD5, MaL6), the CPs discovered in this study exclusively target the transporter from the cytosolic side.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to CPs elicited against the homodimeric ABC transporter cmABCB1 from Cyanidioschyzon merolae (aCAP) (Kodan et al., 2014) and the MATE transporter (MaD3S, MaD5, MaL6) (Tanaka et al., 2013), the CPs discovered in this study exclusively target the transporter from the cytosolic side.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the membrane impermeability of CPs and comparison with other studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "b9dd71cf-9783-45f8-8eda-675c3e0ee85e",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C73",
+      "claim": "In the case of aCAP, which was selected against detergent stabilized P-glycoprotein, the CP not only interacts with both protein subunits but also with the membrane, acting as an allosteric inhibitor thus stabilizing this ABC transporter in the IF conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of aCAP, which was selected against detergent stabilized P-glycoprotein, the CP not only interacts with both protein subunits but also with the membrane, acting as an allosteric inhibitor thus stabilizing this ABC transporter in the IF conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on prior research on aCAP.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "0337ab5a-7e2d-4e55-a64c-347a5deb1042",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C74",
+      "claim": "Like aCAP, the CPs from this study are also enriched in aliphatic and aromatic amino acids, which could indicate membrane interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Like aCAP, the CPs from this study are also enriched in aliphatic and aromatic amino acids, which could indicate membrane interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on sequence analysis and speculation about potential membrane interactions.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "b440fbaf-295a-44e1-978f-f05173f28cf4",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C75",
+      "claim": "The ability of the CP6, CP12, CP13, and CP14 to specifically interact with either the IF or OF TmrAB conformer suggests that the success of this selection experiment in discovering multimode inhibitors relied on specific preparation of the bait protein during the selection process.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability of the CP6, CP12, CP13, and CP14 to specifically interact with either the IF or OF TmrAB conformer however, again suggests that the success of this selection experiment in discovering multimode inhibitors relied on specific preparation of the bait protein during the selection process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the conformation-specific binding of CPs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "26e27647-c371-40b0-a11f-44799d5ebca8",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C76",
+      "claim": "In recent years, the molecular understanding of the conformation space of ABC transporters has been largely expanded.",
+      "claim_type": "EXPLICIT",
+      "source": "In recent years, the molecular understanding of the conformation space of ABC transporters has been largely expanded (Thomas and Tamp\u00e9, 2020; Locher, 2016; Hofmann et al., 2019; Fan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to recent research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "197f9ac6-654d-4d4b-9fb4-d5dbab7a170b",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C77",
+      "claim": "High-resolution structures in different conformational states allowed to build a detailed mechanistic model of the substrate transport cycle composed of two major conformational transitions (IF-to-OF and OF-to-IF).",
+      "claim_type": "EXPLICIT",
+      "source": "High-resolution structures in different conformational states allowed to build a detailed mechanistic model of the substrate transport cycle composed of two major conformational transitions (IF-to-OF and OF-to-IF) (Hofmann et al., 2019; Fan et al., 2020; Manolaridis et al., 2018; Kim and Chen, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "38bd02a1-84f2-4ac6-9a4d-847a1d03595a",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C78",
+      "claim": "Unidirectional substrate transport along a single IF-to-OF switch induced by ATP binding was demonstrated for a catalytically reduced variant of TmrAB.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrated unidirectional substrate transport along a single IF-to-OF switch induced by ATP binding for a catalytically reduced variant of TmrAB (Stefan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "13b22fa0-5717-4d6d-9c13-6d08c14d6f7d",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C79",
+      "claim": "These results were consistent with the processive-clamp/ATP switch model where ATP binding and the subsequent IF-to-OF switch represent the power stroke to drive substrate transport.",
+      "claim_type": "EXPLICIT",
+      "source": "These results were consistent with the processive-clamp/ATP switch model where ATP binding and the subsequent IF-to-OF switch represent the power stroke to drive substrate transport (Higgins and Linton, 2004; Janas et al., 2003; Abele and Tamp\u00e9, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research and inference from experimental results.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "5394282b-be05-4ab5-835e-68fdcfd680cd",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C80",
+      "claim": "It remains an open question whether a single ATP-binding-induced conformational switch drives substrate translocation in the case of fully functional wild-type ABC transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, however, it remains an open question whether a single ATP-binding-induced conformational switch drives substrate translocation in the case of fully functional wild-type ABC transporters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim identifies a gap in knowledge that the study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "7c12a4cb-0677-4df4-bcf1-166f3a9396b0",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C81",
+      "claim": "The relevance of futile ATP hydrolysis cycles as well as factors contributing to energy coupling (ratio of consumed ATP per translocated substrate) have remained unexplained for wild-type TmrAB and other ABC systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the relevance of futile ATP hydrolysis cycles as well as factors contributing to energy coupling (ratio of consumed ATP per translocated substrate) have remained unexplained for wild-type TmrAB and other ABC systems (Fan et al., 2020; Bock et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim identifies a gap in knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "116c69bd-69ce-41f0-8738-a0f85c000bbe",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C82",
+      "claim": "Inhibitors for ABC transporters exploit various modes of action such as substrate competition, conformational arrest, or hampering of ATP hydrolysis to affect substrate transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibitors for ABC transporters exploit various modes of action such as substrate competition, conformational arrest, or hampering of ATP hydrolysis to affect substrate transport (Srikant and Gaudet, 2019; Aller et al., 2009; Ozvegy-Laczka et al., 2005; Orlando and Liao, 2020; Ho et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "eeede5ea-8c5e-4304-a940-b0362eca6869",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C83",
+      "claim": "CP13F and CP14F stabilize wild-type TmrAB in a pre-hydrolysis state, unlike the vanadate-trapped state solved by cryo-EM, which occludes ADP and vanadate in the canonical ATP-binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "Using nucleotide occlusion as readout, we could show that CP13F and CP14F stabilize wild-type TmrAB in a pre-hydrolysis state, unlike the vanadate-trapped state solved by cryo-EM, which occludes ADP and vanadate in the canonical ATP-binding site (Hofmann et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by nucleotide occlusion data and comparison with structural data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "f752c315-89bb-4bb1-a3ce-210733b790c3",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C84",
+      "claim": "Wild-type TmrAB in the presence of CP13 or CP14 is able to perform the IF-to-OF transition induced by ATP binding, whereas only the opposite OF-to-IF transitions triggered by ATP hydrolysis are blocked.",
+      "claim_type": "EXPLICIT",
+      "source": "Our hypothesis was that wild-type TmrAB in the presence of CP13 or CP14 is able to perform the the IF-to-OF transition induced by ATP binding, whereas only the opposite OF-to-IF transitions triggered by ATP hydrolysis are blocked.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a hypothesis that is subsequently tested with experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "7cb90a41-41a5-41be-a513-c049a045dac7",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C85",
+      "claim": "The coupling rate observed under single-turnover conditions with CP13 or CP14 is substantially higher compared to multiple-turnover steady-state approaches for wild-type TmrAB.",
+      "claim_type": "EXPLICIT",
+      "source": "This energy coupling is substantially higher compared to multiple-turnover steady-state approaches for wild-type TmrAB (Bock et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison with prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "271a2a49-3773-49e5-8417-a5e0d220e2da",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C86",
+      "claim": "Using macrocyclic inhibitors, it was demonstrated for the first time for a wild-type ABC transporter that substrate translocation is driven along a single IF-to-OF switch triggered by ATP binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Using macrocyclic inhibitors, we demonstrated, for the first time for a wild-type ABC transporter, that substrate translocation is driven along a single IF-to-OF switch triggered by ATP binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the collective experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "442ae8ce-c242-40d9-afc5-c6ece5bc9dbf",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C87",
+      "claim": "Synthetic macrocyclic inhibitors reveal fundamental mechanistic principles of ATP binding and hydrolysis, conformational transitions, and energy coupling of substrate translocation of a heterodimeric ABC transport complex.",
+      "claim_type": "EXPLICIT",
+      "source": "In this work, we utilized synthetic macrocyclic inhibitors to reveal fundamental mechanistic principles of ATP binding and hydrolysis, conformational transitions, and energy coupling of substrate translocation of a heterodimeric ABC transport complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim summarizes the main findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "17090073-4a6e-465c-8927-0a569e365692",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "claim_id": "C88",
+      "claim": "In future approaches, conformation-selective compounds along with single-liposome or single-molecule techniques will be essential to uncover unexplored aspects of conformational transitions, translocation events, and energy coupling of membrane translocation complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "In future approaches, conformation-selective compounds along with single-liposome or single-molecule techniques will be essential to uncover unexplored aspects of conformational transitions, translocation events, and energy coupling of membrane translocation complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a forward-looking statement about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "591c49de-6868-4785-9321-205bed49a5e1",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "ABC transporters, including TmrAB, are a large family of primary active transporters with established roles in multiple diseases and physiological processes. TmrAB from Thermus thermophilus is structurally and functionally homologous to TAP and is suitable for mechanistic studies due to temperature-dependent conformational accessibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C4-C12 provide well-established background information about ABC transporters and TmrAB, supported by appropriate citations to prior research. These claims establish the biological and experimental context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "957a34bd-6122-4404-9260-44d0795feac5",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Multiple catalytic models exist for ABC transporters, all linking substrate translocation to ATP-driven conformational transitions. Prior structural and functional studies on TmrAB have elucidated the conformational landscape and demonstrated unidirectional substrate export along a single ATP-induced conformational switch.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C16 summarize established mechanistic models and prior work on TmrAB, appropriately cited. These claims provide the mechanistic framework and identify the knowledge gap that the current study addresses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "669ff3f9-6960-4837-a90f-9cb25e5eb9ad",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Macrocyclic peptides (CPs) are next-generation pharmaceutical compounds with advantages over conventional drugs. The RaPID system enables identification of synthetic CPs with unnatural amino acids against target proteins and has been successfully applied to multiple protein targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C23 provide well-documented background on macrocyclic peptides and the RaPID selection system, supported by appropriate citations. These establish the methodological foundation for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "c2d7f188-68a9-4b50-bf21-e64b362827cf",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A library of ~10^12 macrocyclic peptides was generated using the RaPID system with head-to-side chain cyclization. After five rounds of selection against TmrAEQB in lipid nanodiscs, four abundant macrocyclic peptides (CP6, CP12, CP13, CP14) were identified, constituting 41% of the final pool.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C30 describe the library generation and selection process with appropriate experimental detail. The enrichment data (Figure 1C) and deep sequencing results support the identification of the four lead CPs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "19ef0607-7af9-43a8-a59e-59505aa97854",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "All four CPs bind TmrAB with nanomolar affinity (KD 20-50 nM) in a specific, conformation-dependent manner. The CPs form kinetically stable, stoichiometric complexes with TmrAB and can be used for affinity purification of the transporter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C37 are well-supported by multiple complementary techniques including fluorescence polarization (Figure 2A,B), affinity capture (Figure 2C,D), gel filtration (Figure 2\u2014supplement 1), SDS disruption experiments, and native MS (Figure 2E). The convergent evidence from multiple methods strongly supports these binding characteristics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "476fe4e4-5917-477e-a7c0-381fb8d050e8",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "All CPs completely block ATP hydrolysis to autohydrolysis levels and are not transported substrates. CP6F and CP12F completely block peptide translocation, while CP13F and CP14F cause partial inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41 are supported by ATPase assays (Figure 3B) and transport assays (Figure 3C,D). The differential inhibition patterns between CP6/CP12 (complete block) and CP13/CP14 (partial inhibition) are clearly demonstrated and form the basis for mechanistic classification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "509019f2-83bc-4e71-9e45-7348900d5fcc",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "CPs are allosteric inhibitors that do not compete with substrate binding and have minimal effects on ATP binding, while completely blocking ATP hydrolysis and substrate translocation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C46 are supported by competition binding experiments (Figure 4A,B) and ATP binding assays (Figure 4C). The lack of competition with substrates and minimal ATP binding effects, combined with complete inhibition of hydrolysis and transport, clearly establish an allosteric mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "503e99d6-8dc4-42a7-9466-8a7c4a0a144f",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "CP6F and CP12F preferentially bind the IF conformation and block the IF-to-OF transition by preventing nucleotide occlusion. CP13F and CP14F preferentially bind the OF conformation and stabilize a pre-hydrolysis state by promoting ATP occlusion while blocking hydrolysis to ADP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C52 are strongly supported by conformation-specific binding studies (Figure 5A,B and supplements) and nucleotide occlusion experiments (Figure 5C,D). The differential binding preferences and effects on nucleotide occlusion clearly distinguish two mechanistic classes of inhibitors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "5f1bf598-3648-4360-bf55-3259089175fc",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Single-liposome transport assays demonstrate that CP13F and CP14F allow transport of 10-30 peptides per liposome along a single IF-to-OF switch, yielding a coupling ratio of 0.3-1.0 peptides per transporter. CP6F and CP12F completely prevent transport. The CPs bind from the cytosolic side.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C56 are supported by single-liposome flow cytometry data (Figure 6A,B). The quantification is based on calibration curves (Figure 6\u2014supplement 1) and accounts for the number of transporters per liposome. The inference about cytosolic binding (C56) is reasonable given membrane impermeability of CPs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "de0d701d-548c-495d-993b-91ed33514e11",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Time-course and two-cycle transport experiments show that CP13F causes conformational arrest after a single turnover, while CP14F allows slow turnover. CP13 and CP14 stabilize a pre-hydrolysis state allowing single-turnover translocation along the IF-to-OF switch.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C62 are supported by time-course transport data (Figure 6C,D) and two-cycle experiments (Figure 6E). The differential behavior between CP13F (single turnover arrest) and CP14F (slow turnover) is clearly demonstrated and mechanistically consistent with the nucleotide occlusion data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "07f2550b-970b-4109-9774-f341fa2c3471",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Macrocyclic peptides can arrest TmrAB at different stages of the ATP-induced IF-to-OF switch that drives substrate transport. These inhibitors stabilize states distinct from vanadate-trapped states and demonstrate for the first time in a wild-type ABC transporter that substrate translocation is driven along a single IF-to-OF switch triggered by ATP binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63, C64, C86, C87 represent the major conclusions of the study, well-supported by the collective experimental evidence including conformation-specific binding, nucleotide occlusion, and single-liposome transport assays. The distinction from vanadate-trapped states is supported by comparison of nucleotide occlusion patterns (Figure 5C,D).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "30bb2e7d-77e5-4aba-9f1b-bc926b983e1b",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "CPs selected against TmrAEQB in nanodiscs bind wild-type TmrAB in various lipid models and display inhibitory activity despite selection based on binding alone. The enrichment patterns reflect the conformational preferences of the CPs and the selection conditions (4\u00b0C favoring IF state).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C71, C75 are supported by the binding data across different systems and deep sequencing results (Figure 1C). The correlation between enrichment and conformational preference is logical and consistent with the known temperature-dependent conformational behavior of TmrAB.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "5e69f687-51ee-4e07-9ede-5fd43a9abf86",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Unlike CPs against other transporters (aCAP, MATE transporters), the CPs in this study target TmrAB from the cytosolic side. The CPs are enriched in aliphatic and aromatic amino acids, which could indicate membrane interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C72 is an inference based on membrane impermeability and comparison with other studies. Claim C74 is speculative about potential membrane interactions based on sequence composition. While the cytosolic targeting is reasonable, the membrane interaction hypothesis lacks direct experimental support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "f121fb08-8343-493b-b727-65d63e5580b2",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Recent structural studies have expanded understanding of ABC transporter conformational space and mechanistic models. Prior work demonstrated unidirectional transport along a single IF-to-OF switch for a catalytically reduced TmrAB variant, but whether this applies to wild-type transporters and the nature of energy coupling remained open questions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C81 appropriately summarize recent advances and identify the knowledge gaps that motivate the current study. These are well-supported by citations and accurately frame the scientific context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "12ba5f88-2269-49c0-becd-e0714d5289bf",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "CP13F and CP14F stabilize wild-type TmrAB in a pre-hydrolysis state distinct from vanadate-trapped states. The hypothesis that these CPs allow IF-to-OF transition but block OF-to-IF return is tested and supported. The coupling ratio under single-turnover conditions is substantially higher than in multiple-turnover steady-state approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C85 are supported by nucleotide occlusion data (Figure 5C,D), single-liposome transport data (Figure 6B), and comparison with prior steady-state measurements. The hypothesis (C84) is explicitly tested and validated by the experimental results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "340b5fa0-4a31-4f76-a6c0-04b154b5195a",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Macrocyclic peptides are powerful tools for stabilizing protein conformers, mimicking antibody CDRs with expanded chemical diversity through unnatural amino acids. ABC transporter inhibitors exploit various mechanisms including substrate competition, conformational arrest, and ATP hydrolysis inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67, C82 provide well-established background on CPs and ABC transporter inhibitors, appropriately cited. These contextualize the approach and findings of the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "beace568-618a-42f3-918e-fe2a721420c9",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Future approaches using conformation-selective compounds with single-liposome or single-molecule techniques will be essential for uncovering unexplored aspects of membrane translocation complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C88 is a reasonable forward-looking statement based on the demonstrated utility of the approach in this study. It appropriately suggests future research directions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    },
+    {
+      "id": "8bb47ef0-24fe-4004-abbf-11b6dcda831e",
+      "content_id": "b03b3c6b-b0ba-45f3-b85d-c93d3ec517ea",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "High-affinity peptidic macrocycles bind conformationally selective to TmrAB and display potent multimode inhibitory effects. Two mechanistically distinct CP inhibitor classes arrest the ABC transporter either before (IF state) or after (OF state) ATP-binding induced substrate translocation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C24-C26 represent the core findings summarized in the abstract. These are well-supported by the comprehensive experimental data including binding studies, inhibition assays, conformation-specific binding, nucleotide occlusion, and transport experiments presented throughout the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:11:58.233791Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "dec152b8-e730-455a-a9e3-973eb07fc014",
+      "result_id": "591c49de-6868-4785-9321-205bed49a5e1"
+    },
+    {
+      "claim_id": "cc5ad76a-b205-412b-bfba-6275187f6029",
+      "result_id": "591c49de-6868-4785-9321-205bed49a5e1"
+    },
+    {
+      "claim_id": "c57420cd-1396-4eba-9534-3d244f054175",
+      "result_id": "591c49de-6868-4785-9321-205bed49a5e1"
+    },
+    {
+      "claim_id": "2f240fbf-7dce-4c5a-ac9d-a516fd773313",
+      "result_id": "591c49de-6868-4785-9321-205bed49a5e1"
+    },
+    {
+      "claim_id": "a1fa1041-5e2c-4499-876f-afe3a1b0b3a4",
+      "result_id": "591c49de-6868-4785-9321-205bed49a5e1"
+    },
+    {
+      "claim_id": "b048f0ec-497f-4f16-90dc-7d9303f70c5a",
+      "result_id": "591c49de-6868-4785-9321-205bed49a5e1"
+    },
+    {
+      "claim_id": "24ab1e73-d30b-4cc8-8702-b7d29cf7489d",
+      "result_id": "591c49de-6868-4785-9321-205bed49a5e1"
+    },
+    {
+      "claim_id": "f15fb419-05aa-4b0a-bf87-a27490c63c25",
+      "result_id": "591c49de-6868-4785-9321-205bed49a5e1"
+    },
+    {
+      "claim_id": "dd3f6df1-f2b1-43d6-af93-e585714dca76",
+      "result_id": "591c49de-6868-4785-9321-205bed49a5e1"
+    },
+    {
+      "claim_id": "8d71bb39-9c91-4e86-9358-9c564b108310",
+      "result_id": "591c49de-6868-4785-9321-205bed49a5e1"
+    },
+    {
+      "claim_id": "ed48e551-069b-4ae4-a6b6-12ff3835e378",
+      "result_id": "957a34bd-6122-4404-9260-44d0795feac5"
+    },
+    {
+      "claim_id": "b121a43c-e9f0-4d51-83a7-97205601d752",
+      "result_id": "957a34bd-6122-4404-9260-44d0795feac5"
+    },
+    {
+      "claim_id": "5b27d9de-9c3f-4580-a9db-e185af935e5c",
+      "result_id": "957a34bd-6122-4404-9260-44d0795feac5"
+    },
+    {
+      "claim_id": "bbd1832f-1305-4f67-899f-eb59b4323fee",
+      "result_id": "957a34bd-6122-4404-9260-44d0795feac5"
+    },
+    {
+      "claim_id": "1eae636b-3bf7-484f-9126-2b30fb9c8eb1",
+      "result_id": "669ff3f9-6960-4837-a90f-9cb25e5eb9ad"
+    },
+    {
+      "claim_id": "d36e8816-e676-4531-ba92-b3a16ced969e",
+      "result_id": "669ff3f9-6960-4837-a90f-9cb25e5eb9ad"
+    },
+    {
+      "claim_id": "8ba3ed6d-137f-4e87-9c37-2f9280f35b3f",
+      "result_id": "669ff3f9-6960-4837-a90f-9cb25e5eb9ad"
+    },
+    {
+      "claim_id": "cd6fbb6a-3d71-4029-8f93-35306530400e",
+      "result_id": "669ff3f9-6960-4837-a90f-9cb25e5eb9ad"
+    },
+    {
+      "claim_id": "c553c460-7907-45e1-ae2e-738e9b1e5265",
+      "result_id": "669ff3f9-6960-4837-a90f-9cb25e5eb9ad"
+    },
+    {
+      "claim_id": "c3658384-ecc8-4b0c-b9ce-787f8acd0a47",
+      "result_id": "669ff3f9-6960-4837-a90f-9cb25e5eb9ad"
+    },
+    {
+      "claim_id": "40af6131-8864-408c-85c9-46b488d0e698",
+      "result_id": "669ff3f9-6960-4837-a90f-9cb25e5eb9ad"
+    },
+    {
+      "claim_id": "bfd26f85-4601-4406-9f2d-f0be0704b650",
+      "result_id": "c2d7f188-68a9-4b50-bf21-e64b362827cf"
+    },
+    {
+      "claim_id": "099ddf6c-6954-4b67-9668-1cf297013b36",
+      "result_id": "c2d7f188-68a9-4b50-bf21-e64b362827cf"
+    },
+    {
+      "claim_id": "54ac49e1-049e-416f-ab7c-09b15a1c215e",
+      "result_id": "c2d7f188-68a9-4b50-bf21-e64b362827cf"
+    },
+    {
+      "claim_id": "705cdaef-02e1-4c0e-aafe-0dbdf1e52cff",
+      "result_id": "c2d7f188-68a9-4b50-bf21-e64b362827cf"
+    },
+    {
+      "claim_id": "0909172e-c197-4305-8bc0-50a628c1037d",
+      "result_id": "19ef0607-7af9-43a8-a59e-59505aa97854"
+    },
+    {
+      "claim_id": "695c5a8f-a987-479b-b8ee-348553207703",
+      "result_id": "19ef0607-7af9-43a8-a59e-59505aa97854"
+    },
+    {
+      "claim_id": "6434e7dd-3dbb-4468-98a6-b1820a4b3fb1",
+      "result_id": "19ef0607-7af9-43a8-a59e-59505aa97854"
+    },
+    {
+      "claim_id": "cf2948cd-23db-457f-8619-8e6e515c8740",
+      "result_id": "19ef0607-7af9-43a8-a59e-59505aa97854"
+    },
+    {
+      "claim_id": "8a0cdab4-b3b1-438d-a32f-2ab9f557cb9c",
+      "result_id": "19ef0607-7af9-43a8-a59e-59505aa97854"
+    },
+    {
+      "claim_id": "b38be904-1d1b-46f0-8b54-2954ae774df8",
+      "result_id": "19ef0607-7af9-43a8-a59e-59505aa97854"
+    },
+    {
+      "claim_id": "9f7100e4-de5f-4f4b-9119-0aac7f7942a4",
+      "result_id": "19ef0607-7af9-43a8-a59e-59505aa97854"
+    },
+    {
+      "claim_id": "fc3880f9-9dba-49ce-b1a5-5d5c271f6cb0",
+      "result_id": "476fe4e4-5917-477e-a7c0-381fb8d050e8"
+    },
+    {
+      "claim_id": "17a955c6-a91c-48ed-9a55-718d817992a6",
+      "result_id": "476fe4e4-5917-477e-a7c0-381fb8d050e8"
+    },
+    {
+      "claim_id": "62a0cc4c-e9c6-43f3-880e-e7cc14e6e4aa",
+      "result_id": "476fe4e4-5917-477e-a7c0-381fb8d050e8"
+    },
+    {
+      "claim_id": "10e7affc-3b31-465e-ab62-b5a1339fc9e8",
+      "result_id": "476fe4e4-5917-477e-a7c0-381fb8d050e8"
+    },
+    {
+      "claim_id": "e906f664-f2cc-41d3-a6f5-a45ef923ac98",
+      "result_id": "509019f2-83bc-4e71-9e45-7348900d5fcc"
+    },
+    {
+      "claim_id": "9338837c-1f49-409d-bf3e-1e959816f1bc",
+      "result_id": "509019f2-83bc-4e71-9e45-7348900d5fcc"
+    },
+    {
+      "claim_id": "04c043f4-2406-4519-8d35-24b17c5480be",
+      "result_id": "509019f2-83bc-4e71-9e45-7348900d5fcc"
+    },
+    {
+      "claim_id": "16de80e5-a89a-49ff-8265-3c861ce905c0",
+      "result_id": "509019f2-83bc-4e71-9e45-7348900d5fcc"
+    },
+    {
+      "claim_id": "21b1d4e1-0f07-4876-846a-9fbcd82ed4d0",
+      "result_id": "509019f2-83bc-4e71-9e45-7348900d5fcc"
+    },
+    {
+      "claim_id": "0284ec9c-9b86-4012-9ac1-3f76469456a2",
+      "result_id": "503e99d6-8dc4-42a7-9466-8a7c4a0a144f"
+    },
+    {
+      "claim_id": "73769a75-48cf-4b35-b9dc-feb4ac3af4e9",
+      "result_id": "503e99d6-8dc4-42a7-9466-8a7c4a0a144f"
+    },
+    {
+      "claim_id": "60ef99f1-b2bb-4b8f-a146-bdd45236863b",
+      "result_id": "503e99d6-8dc4-42a7-9466-8a7c4a0a144f"
+    },
+    {
+      "claim_id": "817fb066-3b2a-43b5-98bb-acf980d56257",
+      "result_id": "503e99d6-8dc4-42a7-9466-8a7c4a0a144f"
+    },
+    {
+      "claim_id": "312eaf46-26c0-4aa8-9998-8c9b18ac6cbf",
+      "result_id": "503e99d6-8dc4-42a7-9466-8a7c4a0a144f"
+    },
+    {
+      "claim_id": "336a44b3-d64c-402a-b5ba-1d477eda9843",
+      "result_id": "503e99d6-8dc4-42a7-9466-8a7c4a0a144f"
+    },
+    {
+      "claim_id": "c04a3b7c-34b6-46c3-9e0a-fea96b16edab",
+      "result_id": "5f1bf598-3648-4360-bf55-3259089175fc"
+    },
+    {
+      "claim_id": "774fc798-a605-4aaf-adac-b12dbf3e68db",
+      "result_id": "5f1bf598-3648-4360-bf55-3259089175fc"
+    },
+    {
+      "claim_id": "72fdccdd-2f49-4908-96ad-f52450e1db69",
+      "result_id": "5f1bf598-3648-4360-bf55-3259089175fc"
+    },
+    {
+      "claim_id": "f6bbd78e-c2c7-45ad-9b4f-68f115b5c2fb",
+      "result_id": "5f1bf598-3648-4360-bf55-3259089175fc"
+    },
+    {
+      "claim_id": "05a6ed7e-aff9-4dfc-92b4-aa98ac87e252",
+      "result_id": "de0d701d-548c-495d-993b-91ed33514e11"
+    },
+    {
+      "claim_id": "6e3ab99e-4820-4381-9330-0231db7758f1",
+      "result_id": "de0d701d-548c-495d-993b-91ed33514e11"
+    },
+    {
+      "claim_id": "25fa7eb0-62da-4aaa-8479-7b4a226c3d9b",
+      "result_id": "de0d701d-548c-495d-993b-91ed33514e11"
+    },
+    {
+      "claim_id": "7b0ae10a-1852-469e-ab6e-04607c0f60f4",
+      "result_id": "de0d701d-548c-495d-993b-91ed33514e11"
+    },
+    {
+      "claim_id": "a1e7f218-975d-4421-8ef1-9c3cb8ff29f1",
+      "result_id": "de0d701d-548c-495d-993b-91ed33514e11"
+    },
+    {
+      "claim_id": "62769cfd-36af-42f6-bac8-e44ed9210dbf",
+      "result_id": "de0d701d-548c-495d-993b-91ed33514e11"
+    },
+    {
+      "claim_id": "34b93ca6-e144-4a58-b496-6f508b7d8953",
+      "result_id": "07f2550b-970b-4109-9774-f341fa2c3471"
+    },
+    {
+      "claim_id": "594a3038-69b1-4f42-9af0-92ac7d46274a",
+      "result_id": "07f2550b-970b-4109-9774-f341fa2c3471"
+    },
+    {
+      "claim_id": "271a2a49-3773-49e5-8417-a5e0d220e2da",
+      "result_id": "07f2550b-970b-4109-9774-f341fa2c3471"
+    },
+    {
+      "claim_id": "442ae8ce-c242-40d9-afc5-c6ece5bc9dbf",
+      "result_id": "07f2550b-970b-4109-9774-f341fa2c3471"
+    },
+    {
+      "claim_id": "038e076c-6956-47e8-98fa-e5aa343d4f5c",
+      "result_id": "30bb2e7d-77e5-4aba-9f1b-bc926b983e1b"
+    },
+    {
+      "claim_id": "1954f77b-cc5a-4f08-ad97-9bca51ee1433",
+      "result_id": "30bb2e7d-77e5-4aba-9f1b-bc926b983e1b"
+    },
+    {
+      "claim_id": "3b56131a-9912-4529-986f-e0fd4f1181bd",
+      "result_id": "30bb2e7d-77e5-4aba-9f1b-bc926b983e1b"
+    },
+    {
+      "claim_id": "6bab023f-2716-4bd4-a36a-239adfc5559a",
+      "result_id": "30bb2e7d-77e5-4aba-9f1b-bc926b983e1b"
+    },
+    {
+      "claim_id": "b440fbaf-295a-44e1-978f-f05173f28cf4",
+      "result_id": "30bb2e7d-77e5-4aba-9f1b-bc926b983e1b"
+    },
+    {
+      "claim_id": "3d27b9f1-9c38-43b1-8a15-5f8ea022c278",
+      "result_id": "5e69f687-51ee-4e07-9ede-5fd43a9abf86"
+    },
+    {
+      "claim_id": "b9dd71cf-9783-45f8-8eda-675c3e0ee85e",
+      "result_id": "5e69f687-51ee-4e07-9ede-5fd43a9abf86"
+    },
+    {
+      "claim_id": "0337ab5a-7e2d-4e55-a64c-347a5deb1042",
+      "result_id": "5e69f687-51ee-4e07-9ede-5fd43a9abf86"
+    },
+    {
+      "claim_id": "26e27647-c371-40b0-a11f-44799d5ebca8",
+      "result_id": "f121fb08-8343-493b-b727-65d63e5580b2"
+    },
+    {
+      "claim_id": "197f9ac6-654d-4d4b-9fb4-d5dbab7a170b",
+      "result_id": "f121fb08-8343-493b-b727-65d63e5580b2"
+    },
+    {
+      "claim_id": "38bd02a1-84f2-4ac6-9a4d-847a1d03595a",
+      "result_id": "f121fb08-8343-493b-b727-65d63e5580b2"
+    },
+    {
+      "claim_id": "13b22fa0-5717-4d6d-9c13-6d08c14d6f7d",
+      "result_id": "f121fb08-8343-493b-b727-65d63e5580b2"
+    },
+    {
+      "claim_id": "5394282b-be05-4ab5-835e-68fdcfd680cd",
+      "result_id": "f121fb08-8343-493b-b727-65d63e5580b2"
+    },
+    {
+      "claim_id": "7c12a4cb-0677-4df4-bcf1-166f3a9396b0",
+      "result_id": "f121fb08-8343-493b-b727-65d63e5580b2"
+    },
+    {
+      "claim_id": "eeede5ea-8c5e-4304-a940-b0362eca6869",
+      "result_id": "12ba5f88-2269-49c0-becd-e0714d5289bf"
+    },
+    {
+      "claim_id": "f752c315-89bb-4bb1-a3ce-210733b790c3",
+      "result_id": "12ba5f88-2269-49c0-becd-e0714d5289bf"
+    },
+    {
+      "claim_id": "7cb90a41-41a5-41be-a513-c049a045dac7",
+      "result_id": "12ba5f88-2269-49c0-becd-e0714d5289bf"
+    },
+    {
+      "claim_id": "2009025d-258e-4891-8836-9e01b69257d8",
+      "result_id": "340b5fa0-4a31-4f76-a6c0-04b154b5195a"
+    },
+    {
+      "claim_id": "3a1c2912-9c77-4111-b275-9ccc4f52512a",
+      "result_id": "340b5fa0-4a31-4f76-a6c0-04b154b5195a"
+    },
+    {
+      "claim_id": "5c370217-83f9-4562-b31b-7086c0ad2544",
+      "result_id": "340b5fa0-4a31-4f76-a6c0-04b154b5195a"
+    },
+    {
+      "claim_id": "116c69bd-69ce-41f0-8738-a0f85c000bbe",
+      "result_id": "340b5fa0-4a31-4f76-a6c0-04b154b5195a"
+    },
+    {
+      "claim_id": "17090073-4a6e-465c-8927-0a569e365692",
+      "result_id": "beace568-618a-42f3-918e-fe2a721420c9"
+    },
+    {
+      "claim_id": "3d9f20a1-3a7f-4582-bf86-ca7b4e6dd0d2",
+      "result_id": "8bb47ef0-24fe-4004-abbf-11b6dcda831e"
+    },
+    {
+      "claim_id": "f1b7a9a9-142a-464f-81cd-b75995e1a39f",
+      "result_id": "8bb47ef0-24fe-4004-abbf-11b6dcda831e"
+    },
+    {
+      "claim_id": "c6f7317b-4a35-4983-8554-d12fc4a10347",
+      "result_id": "8bb47ef0-24fe-4004-abbf-11b6dcda831e"
+    },
+    {
+      "claim_id": "49a74df7-8a01-4e42-961c-c8312b3f5514",
+      "result_id": "8bb47ef0-24fe-4004-abbf-11b6dcda831e"
+    },
+    {
+      "claim_id": "3a619764-426e-43f9-8209-52293769afed",
+      "result_id": "8bb47ef0-24fe-4004-abbf-11b6dcda831e"
+    }
+  ],
+  "comparisons": []
+}

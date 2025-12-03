@@ -1,0 +1,228 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The study analyzed plasma cfDNA from 883 healthy controls and 28 NF patients (7 with neurofibromas, 9 with PN, 12 with MPNST) using RealSeqS with ~10-11 million UIDs per sample. All samples had matched leukocyte analysis to exclude germline CNAs, with median follow-up of 523 days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C41 describe the study cohort and methodology. The sample sizes, sequencing depth, controls, and follow-up duration are clearly stated and provide adequate context for the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Genome-wide aneuploidy scoring (GAS) detected MPNST with 33% sensitivity and 97% specificity. Median GAS scores were 0.008\u00b10.102 in healthy controls, 0.005\u00b10.249 in benign/plexiform neurofibromas, and 0.018\u00b10.652 in MPNST, with significant difference between MPNST and controls (p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C42-C46 present the primary GAS analysis results with appropriate statistical testing. The sensitivity of 33% is modest but statistically significant compared to controls, and the 97% specificity is well-established by the large control cohort.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "GAS scores did not correlate with tumor volume (R\u00b2=0.09), prior adjuvant therapy (p=0.64), or PET positivity (p=0.25), but patients alive at last follow-up had lower GAS scores (p=0.045).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 report correlation analyses between GAS and clinical variables. The statistical tests are appropriate, though the association with survival (p=0.045) is marginally significant and should be interpreted cautiously given the small sample size and multiple comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Patient INDIA 1283, initially classified with plexiform neurofibroma, had a GAS score of 0.997 and atypical changes on biopsy, then progressed to MPNST 25 months later, suggesting the assay can predict malignant transformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C51-C54 describe a single case where high GAS preceded clinical MPNST diagnosis by 25 months. While suggestive of predictive value, this is an n=1 observation and the claim of 'significantly pre-dating' progression (C54) requires validation in larger prospective cohorts with longer follow-up.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C77"
+    ],
+    "result": "Analysis of sub-chromosomal CNAs across 13 chromosome arms improved MPNST detection sensitivity to 50% at 97% specificity. In MPNST patients, 50% (6/12) had SUZ12 losses, 17% (2/12) had TERT losses, and 8% (1/12) had TP53 losses. Only one benign/PN patient had focal deletions (TERT in patient INDIA 1283 who later progressed).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C55-C60, C77 describe focal CNA analysis results. The improved sensitivity to 50% by combining GAS with focal CNAs is supported by the data, though the small sample size (n=12 MPNST) limits precision. The high frequency of SUZ12 losses aligns with prior literature (C29).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Mutation analysis by ddPCR on 6 patients detected ctDNA mutations in 3 patients: GOLGA2 (0.19% MAF) in one benign neurofibroma patient, and RB1 (2.55% MAF) and TP53BP2 (0.04% MAF) in two MPNST patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C61-C65 report mutation detection results. The mutations are clearly identified with specific MAFs, though the limited sample size (n=6) and lack of validation or functional significance for some mutations (particularly GOLGA2 and TP53BP2) limit interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "Combining GAS with sub-chromosomal CNA detection (TERT, TP53, SUZ12) or ctDNA mutations may achieve ~50% sensitivity at 97% specificity for detecting MPNST.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C68 summarizes the combined diagnostic performance. While the individual components are supported, the exact combined sensitivity of '~50%' is not directly demonstrated through formal integration of all modalities. The claim appears to be based primarily on the focal CNA analysis (C9) rather than a true multimodal combination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C71"
+    ],
+    "result": "Study limitations include low genome-wide sequencing coverage and insufficient follow-up duration (mean 17 months) to definitively identify all cases that may progress to MPNST, as transformation can occur over years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69, C71 acknowledge important study limitations. The short follow-up relative to the natural history of malignant transformation is a significant constraint that could lead to underestimation of false positives and misclassification of early-stage MPNST as benign lesions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The RealSeqS method amplifies ~750,000 loci across 39 chromosome arms using a single primer pair, requiring only ~10M reads per sample (6-10\u00d7 less than typical aneuploidy studies). An SVM trained on 2,651 aneuploid and 1,348 euploid samples classifies samples using a GAS threshold of >0.28.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76, C88-C91 describe the RealSeqS methodology and its advantages. The technical specifications are clearly stated, and the comparison to other methods (C74) provides context for the efficiency claims. The SVM training dataset is substantial.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Background claims establish that MPNST is the deadliest NF1-associated cancer, arising from neoplastic Schwann cells with risk factors including PN (present in 30-50% of NF1 patients), prior radiotherapy, and germline NF1 mutations. Malignant transformation occurs in 10-15% of patients and requires additional alterations beyond bi-allelic NF1 loss, including mutations in TP53, SUZ12, CDKN2A, and TERT. Current diagnostic methods (MRI, FDG-PET, pathology) have significant limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C34 provide background context supported by appropriate citations. These establish the clinical need for improved MPNST detection methods and the molecular basis for the study's focus on specific genes and CNAs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "This is claimed to be the first published study using PCR amplicon-based aneuploidy and mutation analysis of ctDNA to differentiate MPNST from pre-malignant neurofibromas, though a concurrent publication (Szymanski et al., 2021) used orthogonal approaches with similar goals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 address novelty. The authors appropriately acknowledge concurrent work while distinguishing their methodological approach. The claim of being 'first' is qualified by the specific technical methods used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C70",
+      "C85"
+    ],
+    "result": "Future prospective studies with longer follow-up and serial blood sampling are needed to determine whether GAS, focal CNAs, or ctDNA positivity predict progression and overall survival, as malignant transformation can occur over years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70, C85 appropriately identify the need for longitudinal validation studies. This is a reasonable recommendation given the study's limitations and the preliminary nature of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "The study received IRB approval (Johns Hopkins IRB00075499) and complied with HIPAA and Declaration of Helsinki, with written informed consent from all participants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 document ethical compliance. These are standard regulatory statements that are appropriately included.",
+    "result_type": "MINOR"
+  }
+]

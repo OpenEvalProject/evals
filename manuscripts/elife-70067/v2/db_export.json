@@ -1,0 +1,1775 @@
+{
+  "submission": {
+    "id": "44f6f2a9-c7d8-4fa3-88de-8677f70d553b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T07:21:35.536137Z",
+    "updated_at": "2025-12-03T07:21:35.536137Z"
+  },
+  "content": [
+    {
+      "id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "submission_id": "44f6f2a9-c7d8-4fa3-88de-8677f70d553b",
+      "content_type": "manuscript",
+      "content_text": "# A universal pocket in fatty acyl-AMP ligases ensures redirection of fatty acid pool away from coenzyme A-based activation\n\n## Authors\n\n- Gajanan S Patil<sup>1</sup>\n- Priyadarshan Kinatukara<sup>1</sup> ([ORCID: 0000-0003-2210-2369](https://orcid.org/0000-0003-2210-2369))\n- Sudipta Mondal<sup>1</sup> ([ORCID: 0000-0002-3923-7449](https://orcid.org/0000-0002-3923-7449))\n- Sakshi Shambhavi<sup>1</sup> ([ORCID: 0000-0002-8852-1542](https://orcid.org/0000-0002-8852-1542))\n- Ketan D Patel<sup>1</sup> ([ORCID: 0000-0003-4254-3145](https://orcid.org/0000-0003-4254-3145))\n- Surabhi Pramanik<sup>1</sup>\n- Noopur Dubey<sup>1</sup>\n- Subhash Narasimhan<sup>1</sup>\n- Murali Krishna Madduri<sup>1</sup>\n- Biswajit Pal<sup>1</sup>\n- Rajesh S Gokhale<sup>3</sup>\n- Rajan Sankaranarayanan<sup>1</sup> ([ORCID: 0000-0003-4524-9953](https://orcid.org/0000-0003-4524-9953)) \u2020\n\n### Affiliations\n\n1. CSIR-Centre for Cellular and Molecular Biology Hyderabad India\n2. Academy of Scientific and Innovative Research (AcSIR) Ghaziabad India\n3. National Institute of Immunology New Delhi India\n\n\u2020 Corresponding author\n\n## Abstract\n\nFatty acyl-AMP ligases (FAALs) channelize fatty acids towards biosynthesis of virulent lipids in mycobacteria and other pharmaceutically or ecologically important polyketides and lipopeptides in other microbes. They do so by bypassing the ubiquitous coenzyme A-dependent activation and rely on the acyl carrier protein-tethered 4\u2032-phosphopantetheine (holo-ACP). The molecular basis of how FAALs strictly reject chemically identical and abundant acceptors like coenzyme A (CoA) and accept holo-ACP unlike other members of the ANL superfamily remains elusive. We show that FAALs have plugged the promiscuous canonical CoA-binding pockets and utilize highly selective alternative binding sites. These alternative pockets can distinguish adenosine 3\u2032,5\u2032-bisphosphate-containing CoA from holo-ACP and thus FAALs can distinguish between CoA and holo-ACP. These exclusive features helped identify the omnipresence of FAAL-like proteins and their emergence in plants, fungi, and animals with unconventional domain organizations. The universal distribution of FAALs suggests that they are parallelly evolved with FACLs for ensuring a CoA-independent activation and redirection of fatty acids towards lipidic metabolites.\n\n## Introduction\n\nThe ANL superfamily includes enzymes such as the acyl/aryl-CoA ligases (ACS or FACLs), adenylation domains (A-domains), and luciferases along with the recently identified fatty acyl-AMP ligases (FAALs) (Schmelz and Naismith, 2009). These enzymes are involved in the production of both primary metabolites such as acyl-CoA and secondary metabolites such as antibiotics (Sieber and Marahiel, 2005), complex lipids (Gokhale et al., 2007), cyclic peptides (Walsh, 2004), and lipopeptides (Hansen et al., 2007; Hemmerling et al., 2018). Basic metabolic pathways such as \u03b2-oxidation, membrane biogenesis, post-translational modifications, etc., use primary metabolites such as acyl-CoA. The secondary metabolites such as complex lipids that function as virulent molecules in Mycobacteria and bioactive molecules in several microbes that help tide over unfavorable conditions and establish themselves in their niches. Such diverse metabolites are produced by the members of the ANL superfamily through a two-step catalytic mechanism. It begins with the activation of carboxylate moiety containing substrates such as fatty acids or amino acids by adenosine triphosphate (ATP) hydrolysis and finally transferring it to an acceptor such as CoA or holo-ACP. Multiple structural and biochemical studies show that members of the superfamily such as FACLs and A-domains employ a common pocket for the chemically identical CoA and the 4'-PPant moieties attached to the holo-ACP, respectively, for the final transfer. It was later demonstrated that the A-domains can cross-react with CoA to form aminoacyl-CoA (Linne et al., 2007), which points to the liabilities of utilizing a common pocket for binding chemically identical moieties. Promiscuity towards the final acceptor has now been noted in different classes of ANL superfamily members where luciferases are shown to catalyze fatty acyl-CoA formation (Oba et al., 2003) and FACLs producing bioluminescence with molecular oxygen (Oba et al., 2009). While fatty acid/amino acid substrate promiscuity is well studied and exploited in combinatorial biosynthesis of bioactive molecules (Winn et al., 2020), the origin and basis of acceptor promiscuity is relatively less understood.\n\nFAALs are atypical enzyme systems of the ANL superfamily as these show a narrow preference for holo-ACP and not CoA, where they transfer the activated fatty acyl-AMP to the 4'-PPant of holo-ACP (Trivedi, 2004). FAALs rejecting the small, diffusible, and abundant CoA while accepting the ACP-tethered to a 4'-PPant moiety (Figure 1\u2014figure supplement 1a and b) is puzzling as they are chemically identical. In a previous study, it was proposed that the FAAL-specific insertion (FSI), an additional stretch of amino acids found only in the N-terminal domain of FAALs, prevents reaction with CoA (Arora, 2009). However, the deletion or destabilization of the FSI failed to convert FAALs as efficient producers of acyl-CoA as there is only a weak ability to react with CoA (Arora, 2009; Goyal et al., 2012). Moreover, it is also unclear how such a mechanism operates and distinguishes the two chemically identical acceptors, particularly when CoA is an abundant metabolite. These observations prompted us to hypothesize that FAALs have either evolved novel appendages or other modes for binding the acceptor to allow strict rejection of CoA.\n\nIn the present study, we have used structural, mutational, and biochemical analyses to identify the mechanistic basis of how FAALs can distinguish between near identical acceptors for the acyl transfer reaction. We show that, unlike other members of the superfamily, FAALs achieve acceptor fidelity by avoiding the usage of a promiscuous canonical CoA-binding pocket and utilizing a discriminatory pocket that is distinct from the canonical CoA-binding pocket. Loss- and gain-of-function mutations were generated by identifying the structural determinants that nullify the canonical CoA-binding pocket. Interestingly, we found that the non-functional canonical CoA-binding pocket and the unique discriminatory alternative pocket are unique features of FAALs, which is conserved in all forms of life including plant, fungi, and animals. The identification of such a conserved rejection mechanism across organisms has larger implications in determining the redirection of cellular flux of fatty acids towards synthesis of diverse metabolites across organisms.\n\n## Results and discussion\n\n### The promiscuous canonical CoA-binding pocket is inaccessible and redundant in FAALs\n\nThe structural features of a canonical CoA-binding pocket that allow the proper recognition of CoA/4'-PPant in different ANL superfamily members were compared and contrasted with the analogous structural positions in FAALs. A comprehensive analysis of the canonical CoA-binding pocket in the 26 structures (59 protomers) of the CoA/4'-PPant-bound ANL superfamily members (Supplementary file 1) revealed important aspects of CoA/4'-PPant recognition. It is observed that ligand interacts with the protein through three categories of interactions but none of the structures show the CoA/4'-PPant ligands bound in identical positions or orientations (Figure 1\u2014figure supplement 2a and b). The three categories of interactions are (i) the hydrogen bonds mediated by the A8-motif of the C-terminal domain, (ii) the water-mediated contacts through the N-terminal helices H10 and H14 (notation based on Escherichia coli FAAL, abbreviated as EcFAAL; PDB: 3PBK) (Zhang et al., 2011), and (iii) the interactions with the phosphates (Gulick et al., 2003; Reger et al., 2007; Reger et al., 2008; Kochan et al., 2009; Mitchell et al., 2012; Li and Nair, 2015; Miller et al., 2016; Hughes and Keatinge-Clay, 2011) of the adenosine 3',5'-bisphosphate moiety through the positively charged residues (Arg/Lys) (Figure 1\u2014figure supplement 3) in the loop connecting H23 and \u03b226 (notation based on EcFAAL).\n\nA comparative analysis of the structurally analogous CoA-binding pocket of FAALs (11 structures constituting 23 protomers) (Arora, 2009; Goyal et al., 2012; Zhang et al., 2011; Li et al., 2015; Guillet, 2016) sheds light on why FAALs cannot accept CoA. The analysis reveals an absence of selection from the positively charged residues (Arg/Lys) known to assist in CoA binding in the other members of the ANL superfamily (Figure 1a, Figure 1\u2014figure supplement 3). In addition, the CoA-binding pocket of FAALs shows the presence of bulky residues F279, W224, and M231 (in EcFAAL) at the base and a unique FAAL-specific helix (FSH) (T252-R258 in EcFAAL) at the entrance of the pocket (Figure 1b). These elements are highly conserved in other FAALs (Figure 1c) and restrict the space available for the incoming 4'-PPant arm of both CoA and holo-ACP. The superposition of CoA- and 4'-PPant-bound structures with FAALs revealed that the overcrowded pocket along with the FSH at the entrance of the pocket is unlikely to accommodate either CoA or 4'-PPant of holo-ACP by hindering their entry (Figure 1b). There are at least seven atoms of the N-terminal domain of FAALs at a distance less than 2.5 \u00c5 from the atoms of CoA in its various conformations found in the different CoA-bound FACL structures. On the contrary, the N-terminal domain of FACLs shows only one atom at 2.5 \u00c5 from the multiple CoA conformations (Supplementary file 2). The distance-based assessment clearly indicates the potential clashes an incoming CoA would face in the canonical pocket of FAALs. Moreover, the absence of positively charged residues will naturally be unfavorable for CoA from being appropriately oriented in the pocket. These observations lead to the hypothesis that the canonical CoA-binding pocket is rendered non-functional because of the inaccessibility in FAALs.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/70067/elife-70067-fig1-v2.jpg)\n\n**Figure 1.:** (a) The CoA-interacting residues in fatty acyl/aryl-CoA ligases (FACLs) (HsFACL, Aa4CBL, NtCCL, and SeACS) and the structurally analogous residues in FAALs (EcFAAL, MsFAAL32, and LpFAAL) are tabulated. The positively charged residues (blue) mainly are from the C-terminal domain (orange) and occasionally from the N-terminal domain (green). (b) The residues (cyan) in the vicinity (\u22642.5 \u00c5) of the bound CoA (yellow; HsFACL; PDB: 3EQ6) are shown as van der Waals spheres (light red) to compare the canonical pocket in FAALs and FACLs. The adenosine 3',5'-bisphosphate moiety of CoA is omitted in the representation for clarity. A unique FAAL-specific helix (FSHR251-P259) at the entry of the canonical pocket shown in cartoon representation (green) is replaced by a loop (L287-P293) in FACLs. (c) The canonical pocket-obstructing features seen in FAALs (light cyan) are highlighted in yellow in the structure-based sequence alignment and compared to other representative members of the ANL superfamily (FACLs in light green and A-domains in light orange). The secondary structures of EcFAAL (PDB: 3PBK) and HsFACL (PDB: 3EQ6) are marked at the top and bottom of the alignment, respectively.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70067/elife-70067-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) An overview of the characteristic enzymology presented by fatty acyl-AMP ligases (FAALs) and fatty acyl/aryl-CoA ligases (FACLs) leading to the dichotomy of the fate of free fatty acids. FAALs and FACLs both produce the fatty acyl-AMP from fatty acid (gray) but transfer the intermediate to different acceptors. Such a differential activity is despite two critical similarities; first, the overall structural similarity (N-terminal domain in green; C-terminal domain in orange connected by the A8-motif in violet), except an insertion in FAALs (cyan). Second, the differential activity is despite the chemical identity of the substrates that react during the second step, where coenzyme A (CoA) used by FACLs is used to post-translationally modify apo-ACP to holo-ACP (light green) that is utilized by FAALs. FAALs are highly specific in diverting the intermediate fatty acyl-adenylate to the holo-ACP acceptor and then divert the fate of the pool of free fatty acids towards various pathways that work independently of CoA. (b) The chemical structures of the molecules involved in the reaction are depicted using a general substrate (shown as G). The first step of the reaction with a molecule of adenosine triphosphate (ATP) is identical for both FAALs and FACLs that result in the formation of acyl-adenylate or acyl-AMP and a concomitant release of pyrophosphate (PPi). In the second step, FAALs facilitate the transfer of acyl group to 4'-phosphopantetheine (highlighted in orange) tethered holo-ACP to form acyl-ACP while FACLs transfer the acyl group to 4'-phosphopantetheine linked to CoA to form acyl-CoA. In both instances, a single molecule of AMP is released.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70067/elife-70067-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) A surface representation of coenzyme A (CoA)-bound HsFACL (PDB: 3EQ6) is shown with CoA (yellow) as a stick model sandwiched between the N-terminal (green) and C-terminal domain (orange) along with the connecting A8-motif (violet). The inset highlights the network of interactions between the CoA and the protein molecule, which can be grouped into three categories. (i) Arg/Lys clamp: structurally conserved Arg/Lys residues from the C-terminal domain (occasionally from the N-terminal domain) make ionic interactions with phosphates of CoA. The sequence positions of these positively charged residues need not be conserved. (ii) PPant clamp: residues from the highly conserved A8-motif form hydrogen bonds with the 4'-phosphopantetheine arm. (iii) N-terminal clamp: a series of water-mediated interactions with residues from the N-terminal and CoA. (b) A stick model of the CoA and residues of the protein forming a network of interactions is shown from three diverse CoA-bound fatty acyl/aryl-CoA ligases (FACL) structures, namely acetyl-CoA synthetase (SeFACL; PDB: 1PG4), 4-chloro benzoyl-CoA ligase (AaFACL; PDB: 3CW9), and coumarate-CoA ligase (NtCCL; PDB: 5BSR). The residues from the C-terminal domain are shown in orange, those from the N-terminal domain are shown in green, and residues from A8-motif are shown in violet. These interactions highlight the plasticity of the CoA-binding pocket with limited or no specific residues that impart specificity for CoA.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/70067/elife-70067-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (a) An electrostatic map of the C-terminal domain from coenzyme A (CoA)-bound fatty acyl/aryl-CoA ligases (FACLs) structures is shown along with a stick model for CoA, which shows that there are positive patches that assist in holding the phosphates of CoA. (b) The electrostatic potential map of the crystal structures of the C-terminal domain of fatty acyl-AMP ligases (FAALs) is shown for comparison, where the structurally analogous region binding to CoA is devoid of positively charged patch as seen in the case of FACLs. The electrostatic map was generated using the APBS module in PyMOL (Schr\u00f6dinger, LLC, 2015).\n\n### Resurrecting the canonical CoA pocket enables gain of function in FAALs\n\nThe structural analysis was used to design mutations in FAALs and FACLs where the bulkier residues of the canonical CoA-binding pocket of FAALs were mutated to smaller residues to induce \u2018gain of function\u2019 (Figure 2a and b). Likewise, the smaller residues in the canonical CoA-binding pocket of FACLs were substituted with the corresponding conserved bulkier residues present in FAALs to measure the \u2018loss of function\u2019 (Figure 2d and e). Individual mutations reducing the size of residues in the canonical CoA-binding pocket resulted in the production of acyl-CoA or \u2018gain of function\u2019 in FAALs that otherwise does not make any acyl-CoA (Figure 2c). A considerable amount of the total acyl-AMP formed was converted to acyl-CoA, ~80% in the case of MsFAAL32\u0394254-257 and ~60% in the case of RsFAAL\u0394240-243, when the FSH segment was deleted as compared to their wild-type proteins, respectively. Some of the single-point mutants such as A253F in MtFACL13 show reduced production of acyl-CoA by ~80%, while mutations in combinations such as A276F/A232M of AfFACL reduce the turnover of acyl-AMP to acyl-CoA by 98% as compared to wild-type (100%) (Figure 2f). These observations clearly indicate that the size of residues in the canonical CoA-binding pocket dictates the ability to accommodate CoA and hence the ability to facilitate the thioesterification reaction with CoA.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/70067/elife-70067-fig2-v2.jpg)\n\n**Figure 2.:** (a) The biochemical activity of a wild-type (Wt) FAAL as compared to its mutants (Mt) is schematically represented. (b) Various \u2018gain of function\u2019 mutations of FAALs (EcFAAL, MsFAAL32, and RsFAAL) are tabulated as the following: row 1: wild-type protein; rows 2 and 3: single-point mutations; row 4: deletion of FAAL-specific helix (FSH); rows 5 and 6: combinations of these mutations. (c) The fraction of acyl-AMP converted to acyl-CoA by wild-type and various mutants (numbered on the x-axis according to b) of FAALs is represented as a bar graph along with standard error of the mean. (d) The biochemical activity of a wild-type (Wt) FACL as compared to its mutants (Mt) is schematically represented. (e) The various \u2018loss of function\u2019 mutations generated in FACLs (MtFACL, AfFACL, and EcFACL) are tabulated as the following: row 1: wild-type protein; row 2: single-point mutations; row 3: insertion of FSH; rows 4\u20136: combinations of these mutations. (f) The fraction of acyl-AMP converted to acyl-CoA by wild-type and various mutants (numbered on the x-axis according to e) of FACLs is represented as a bar graph along with standard error of the mean. (g) A comparison of the gain of function from \u0394FSH mutation with \u0394FSI mutation in FAALs is schematically represented. (h) The fraction of acyl-AMP converted to acyl-CoA by wild-type, \u0394FSH, and \u0394FSI mutants of RsFAAL and MsFAAL32 (represented on the x-axis) is represented as a bar graph along with standard error of the mean. The original uncropped images of these experiments are presented as Figure 2\u2014source data 1. The intensity values used to compute the bar graphs are provided as an Excel file as the following: c = Figure 2\u2014source data 2 f = Figure 2\u2014source data 3; h = Figure 2\u2014source data 4.\n\nIt was previously identified that deletion of FAAL-specific insertion (\u0394FSI) can lead to gain of function in FAALs (Arora, 2009). Current results indicate that mutations in the canonical pocket alone are sufficient to introduce CoA production ability in FAALs. A comparison of acyl-CoA production of the \u0394FSI with FSH deletion mutant (\u0394FSH) (Figure 2g) reveals that RsFAAL\u0394FSH produces 2-fold excess acyl-CoA as compared to RsFAAL\u0394FSI while MsFAAL32\u0394FSH produces 10-fold excess acyl-CoA as compared to MsFAAL32\u0394FSI (Figure 2h). Therefore, it can be concluded that the FSH and other CoA- rejection elements around the canonical CoA-binding pocket significantly deter acyl-CoA production, which supersedes the inhibition of acyl-CoA production by FSI in FAALs. Overall, these observations lead to the conclusion that the available space in the canonical CoA-binding pocket of FAALs is very small to accommodate even the 4'-PPant moiety. Mutations that increase the pocket space enhance the acyl-CoA production in FAALs, while the opposite is observed in the case of FACLs. Therefore, the bulky residues in the putative canonical CoA-binding pocket of FAALs itself act as a negative selection gate to sterically exclude CoA. The rejection mechanism operational at the canonical CoA-binding pocket in FAALs is relatively more effective in rejecting CoA than the FSI-based rejection.\n\n### Identification of an alternative 4'-PPant-binding pocket in FAALs\n\nThe steric occlusion of the 4'-PPant binding in the canonical pocket would not only result in prevention of CoA-binding but also restrict the access to the 4'-PPant tethered holo-ACP. Previous studies have highlighted that FAALs work in coordination with holo-ACP\u2019s, stand-alone or fused to polyketide synthase (PKS) or nonribosomal peptide synthetase (NRPS) modules, to produce various bioactive molecules such as complex lipids of Mycobacterium (Gavalda, 2009; Leger, 2009; Simeone, 2010; Trivedi, 2005; Vats, 2012), lipopeptides of Ralstonia (Spraker et al., 2016; Kreutzer, 2011; Kage et al., 2013), and other cyanobacterial species (Mares et al., 2014; Zhu et al., 2018; Edwards, 2004; Kleigrewe, 2015; Humbert, 2013). Since the canonical pocket is rendered inaccessible, it immediately prompts the question, \u2018How then FAALs are able to transfer the activated fatty acids to the 4'-PPant arm of the holo-ACP?\u2019 We, therefore, sought to identify if FAALs have evolved an alternative mechanism to accommodate the 4'-PPant arm to allow binding and subsequent catalysis. Analysis of the crystal structures of the N-terminal domains of FAALs using various pocket search algorithms such as MOLE 2.0 (Pravda, 2018), DOGSiteScorer (Volkamer et al., 2012; Fahrrolfes, 2017), PyVOL (Smith et al., 2019), KVFinder (Oliveira, 2014), and POCASA (Yu et al., 2010) helped us in identifying a novel cavity in the N-terminal domain of FAALs (Figure 3a) but not identifiable in any of the known crystal structures of FACLs.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/70067/elife-70067-fig3-v2.jpg)\n\n**Figure 3.:** (a) The analysis of N-terminal domain of EcFAAL (PDB: 3PBK) (green: surface representation) with pocket finding algorithms identified a new pocket (dark blue: mesh representation; light blue: spheres representation). Also shown are the FAAL-specific insertion (cyan), an EcFAAL-bound lauryl-adenylate (gray: sticks representation) and the 4'-PPant moiety (yellow: sticks representation) of a CoA bound to HsFACL (PDB: 3EQ6) in the canonical pocket. The inset shows two different orientations (top view and lateral view) of the distinct alternative pocket poised against the acyl-adenylate and compared to the 4'-PPant of a CoA in canonical pocket. (b) Various residues (stick representation) of FAALs residing at the entrance of the unique pocket (dark blue: mesh representation; light blue: spheres representation) are identified through structural comparison. A structure-based sequence alignment of these residues (highlighted in pale green) with other representative members of the ANL superfamily reveals that FAALs have a higher frequency of prolines (occasionally Thr/Ser) than other members of the superfamily.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70067/elife-70067-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The representation indicates that the regions are highly variable. The conservation of prolines is higher in FAALs than FACLs. It may be occasionally replaced with threonine or serine in case of FAALs, and in case of FACLs it is replaced by leucine or asparagine. The frequency plot was generated from the sequence alignment using WebLogo (Crooks et al., 2004).\n\nThe entrance of the distinct tunnel is on the N-terminal side of the FSH, while the canonical pocket to accommodate CoA is on the C-terminal side of the FSH. The approach towards the active site in both cases is not on the same plane, but they coincide near the active site near the \u03b2-alanine of the 4'-PPant. The longest length along this pocket is aligned at ~25\u00b0 to the canonical CoA-binding pocket. The canonical pocket is mainly formed after the rotation of the C-terminal domain in the thioesterification state (T-state) bringing the A8-motif near the active site. The space generated between the A8-motif (from the C-terminal domain) and the subdomain-B of the N-terminal domain constitutes the canonical CoA-binding pocket. In contrast, the newly identified pocket is the space between the loops in subdomain-A and the FSH region of subdomain-B of FAALs. These loop regions are highly variable in length but rich in prolines (occasionally threonine or serine) some of which are conserved in FAALs such as P226 and P107 in EcFAAL (Figure 3b), while the FSH has a unique secondary structure characteristic of FAALs. The structurally analogous sites in FACLs show a high degree of variability with occasional prolines, but the frequency of prolines at the indicated positions is poor, as compared to FAALs, and often replaced by Asn/Leu (Figure 3\u2014figure supplement 1). The ability to consistently identify the tunnel with regions enriched in prolines around the opening led to the proposition that this alternative pocket is perhaps a universal attribute of FAALs that has evolved to accommodate the 4'-PPant arm.\n\n### The alternative pocket in FAALs is functional and accepts a 4'-PPant-tethered ACP\n\nThe ability of the alternative pocket to accommodate 4'-PPant arm tethered to ACP was tested using structure-guided mutagenesis. Bulkier residues (Phe/Arg) were introduced at the entrance of the tunnel that could potentially block the accessibility of the pocket for the incoming 4'-PPant arm. The biochemical analysis of these mutants requires an assay system to monitor the transfer of acyl-AMP to the 4'-PPant arm of holo-ACP. Typically, such acyl-transfers are assessed using SDS-PAGE (Trivedi, 2004; Kuhn, 2016) or conformationally sensitive urea-PAGE (CS-PAGE; Post-Beittenmiller et al., 1991). The ACPs that accept the acyl-chain from FAALs used in this study presented multiple complications such as poor conversion from apo-ACP to holo-ACP (Figure 4\u2014figure supplement 1a) and lack of separation on a CS-PAGE (Figure 4\u2014figure supplement 1b). Therefore, the CS-PAGE assay was modified for enhanced detection of the FAAL-dependent acyl-transfer on holo-ACP for the first time using the radiolabeled fatty acids. We tested the efficacy of the modified radio-CS-PAGE assay to probe three pairs of FAAL-ACP systems from diverse organisms (Figure 4a), viz., FAAL-ACP pairs from E. coli (EcFAAL-EcACP), Myxococcus xanthus (MxFAAL-MxACP), and Ralstonia solanacearum (RsFAAL-RsACP). The appearance of bright bands on the radio-CS-PAGE indicates that the radiolabeled fatty acid tethered to ACP, which is absent when apo-ACP is used, or ATP is omitted in the reaction. Thus, the assay system can enable the simultaneous probing of multiple FAAL-ACP pairs along with their mutations and facilitate similar studies in the future.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/70067/elife-70067-fig4-v2.jpg)\n\n**Figure 4.:** (a) A schematic representation of the acyl-transfer function in a wild-type (Wt) FAAL is compared to a mutant protein (Mt) that blocks the alternative pocket. (b) A representative radio conformationally sensitive urea-PAGE (radio-CS-PAGE) gel shows the acyl-transfer reaction by wild-type FAALs on their respective holo-ACP. The radio-CS-PAGE gel shows the successful transfer of the activated fatty acyl-AMP to holo-ACP using three pairs of FAAL-ACP systems (EcFAAL-EcACP, MxFAAL-MxACP, and RsFAAL-RsACP), which is observed as a band due to the incorporated radiolabeled fatty acid. The absence of a band is indicative of failure to transfer as seen in the control reactions lacking ATP or the presence of a mutant ACP (conserved serine mutated to alanine) lacking the 4'-PPant arm. Samples are loaded at the point marked origin and the bands below contain either unreacted radiolabeled fatty acid or fatty acyl-AMP. (c) The radio-CS-PAGE shows that mutations of the residues lining the alternative pocket to Arg/Phe show a reduced or negligible acyl-ACP formation as the bands are diminished or absent. (d) A radio-TLC shows the acyl-AMP formation ability of various FAAL mutants indicated by the bright band in the center after the sample was loaded at the origin and developed until the edge of TLC where unused radiolabeled fatty acid is observed. The radio-TLC shows that loss of acyl-ACP formation is not due to affected acyl-adenylate formation. The original uncropped images of these experiments are presented as Figure 4\u2014source data 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70067/elife-70067-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** SDS-PAGE-based assays are suitable for ACPs that are fused to polyketide synthase/nonribosomal peptide synthetase (PKS/NRPS) modules, which was used for MsFAAL32-MsPKS131-1042 in this study. This strategy is not suitable for smaller-sized molecules such as ACP (<10 kDa), which often migrate at the edges along with residual labeled fatty acid and acyl-adenylates. The assay also requires converting apo-ACP to holo-ACP using an enzyme, Sfp, from Bacillus subtilis. (a) A representative image of the mass-spectrometry analysis (AB-SCIEX 4800 MALDI-TOF and using 5 mg/ml sinapinic acid in 50% acetonitrile and 0.1% trifluoroacetic acid as matrix) of Sfp catalyzed post-translational modification of EcACP (9.6 kDa) to form holo-ACP (10 kDa). The analysis revealed that less than 50% of the apo-ACP is only converted to holo-ACP. (b) A representative image of Coomassie-stained conformationally sensitive urea-PAGE (15% acrylamide and 2.5 M urea) of the EcFAAL catalyzed acyl-transfer on holo-EcACP. The Coomassie-stained gel does not reveal the classic separation of holo-ACP and acyl-ACP. The uncropped images of b are provided as Figure 4\u2014figure supplement 1\u2014source data 1.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70067/elife-70067-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Wild-type FAAL, wild-type fatty acyl/aryl-CoA ligases (FACL), and reaction lacking any protein were used as controls. All the TLCs were marked at the origin, where the reaction mix containing 1-14C fatty acids was spotted. The products acyl-CoA band and the acyl-AMP band along with the free fatty acid band were visualized owing to the radiolabeled fatty acid. The radio conformationally sensitive urea-PAGE (radio-CS-PAGE) images presented here were used to assess the ability of FAALs, MxFAAL (D) and RsFAAL (E), with mutations in the alternate pocket to form acyl-ACP with their respective ACPs (RsACP and MxACP). Wild-type FAAL, reaction lacking ATP, and reaction containing a mutant ACP lacking 4'-phosphopantetheine arm were used as controls. All the radio-CS-PAGE were marked at the origin, where the reaction mix containing 1-14C fatty acids was loaded without boiling. The acyl-ACP along with unreacted fatty acids or acyl-AMP can only be visualized owing to the radiolabeled fatty acid. The unreacted fatty acids or acyl-AMP appeared as a diffused band at the bottom of the radio-CS-PAGE. Multiple bands in the modified radio-CS-PAGE may represent either the degradation products of MxACP-GFP or the multiple unfolded forms of MxACP-GFP in the presence of urea in the gel. Radio-SDS-PAGE images presented here were used to assess the ability of MsFAAL32 and its mutations in the alternate pocket to form acyl-MsPKS131-1042 (F). Wild-type MsFAAL32, reaction lacking ATP, and reaction containing a mutant ACP lacking 4'-phosphopantetheine arm were used as controls. The radio-SDS-PAGE was marked at the origin, where the reaction mix containing 1-14C fatty acids was loaded without boiling. The acyl-MsPKS131-1042 along with unreacted fatty acids or acyl-AMP can only be visualized owing to the radiolabeled fatty acid. The unreacted fatty acids or acyl-AMP appeared as a diffused band at the bottom of the radio-SDS-PAGE. Multiple bands in the radio-SDS-PAGE may represent either the degradation products of MsPKS131-1042 or the multiple unfolded forms of MsPKS131-1042 in the presence of SDS in the gel. Several mutations of the alternate pocket of different FAALs were generated in this study, which had multiple issues including protein stability, poor or complete loss of biochemical activity, etc., hence were not discussed further, and these mutations are marked by a red asterisk as \u2018not part of the study.\u2019 The original, uncropped images of the radio-TLC, radio-CS-PAGE, and radio-SDS-PAGE, which were part of the study, are presented here as Figure 4\u2014figure supplement 2\u2014source data 1.\n\nThe modified radio-CS-PAGE was then used to test if mutating prolines (occasionally a threonine) guarding the entrance of the pocket to bulkier residues can cause abrogation of the acyl-transfer activity (Figure 4c). It was found that even a single-point mutation, T83F or T83R, T252F or T252R, and P107F or P107R in EcFAAL, can almost abrogate the acyl-transfer reaction on holo-EcACP (Figure 4c). It should be noted that these mutations did not affect the adenylation ability of the proteins (Figure 4d). The mutations in other FAAL-ACP pairs, MxFAAL-MxACP (Figure 4\u2014figure supplement 2a and b) and RsFAAL-RsACP (Figure 4\u2014figure supplement 2c and d), also resulted in similar abrogation of the acyl-transfer ability on their respective cognate holo-ACPs. An additional FAAL-PKS pair of MsFAAL32-MsPKS131-1042 was also mutated and probed biochemically using the traditional radio-SDS-PAGE (Figure 4\u2014figure supplement 2e and f). The mutations of residues guarding the alternative pocket to bulkier residues in the MsFAAL32-MsPKS131-1042 system also resulted in diminished acyl-transfer ability. These results indicate that blocking the entrance of the alternative pocket prevents the entry of the incoming 4'-PPant arm tethered to ACP. Therefore, in FAALs, the identified alternative pocket is fully functional and distinct from the non-functional canonical pocket. Such a unique pocket facilitates the entry of the 4'-PPant arm of the ACP to approach the active site and catalyze the acyl-transfer reaction, a feature absent in other members of the superfamily.\n\n### A universal mechanism for rejection of highly abundant CoA in the alternative pocket\n\nThe primary attribute of a functional alternative pocket in FAALs is to discriminate and reject CoA from the chemically identical 4'-PPant of holo-ACP. Therefore, the pocket should allow the entry of 4'-PPant into the tunnel but not the additional \u2018head group,\u2019 adenosine 3',5'-bisphosphate moiety, containing CoA. Structural analysis of eight CoA-bound protein structures (constituting 14 protomers) of the ANL superfamily reveals the variability or degrees of freedom available for adenosine 3',5'-bisphosphate moiety (head group). The analysis reveals that the 4'-PPant arm remains largely rigid in an extended form and the major source of variability is the conformational freedom around the 4'-phosphate (Figure 5\u2014figure supplement 1a). Such a variability has previously been used to classify the conformations of CoA as extended conformations (e.g., SeACS, HsFACL) or bent conformations (e.g., Aa4'-CBL) (Chen, 2017). Limited variabilities in the conformations of the adenine ring and ribose are clustered in a small zone and therefore can be ignored (Figure 5\u2014figure supplement 1a). The length of the 4'-PPant arm is around 18\u201320 \u00c5 (Leibundgut et al., 2007) while it is around 15\u201316 \u00c5 (Mitchell et al., 2012) as seen in the crystal structures of various ANL superfamily members, which is comparable to the length of predicted pockets (17\u201318 \u00c5). The biochemical evidence (Figure 4c) along with length considerations indicates that the 4'-PPant arm can be accommodated within the predicted pocket. In the absence of structural information, the orientation of the 4'-PPant arm is random but limited to space with the identified pocket such that the 4'-phosphate is at the entry of the tunnel and the thiol near the active site.\n\nBased on the above considerations, a CoA molecule in ANL superfamily members can be visualized as \u2018flag hoisted on a mast.\u2019 The extended 4'-PPant arm can be considered as the \u2018mast\u2019 and the adenosine 3',5'-bisphosphate moiety as the \u2018flag.\u2019 The rotation of the \u2018flag\u2019 around the \u2018mast\u2019 placed within the pocket is comparable to the degree of freedom available for the \u2018flag\u2019 (Figure 5\u2014figure supplement 1b). We, therefore, rotated the \u2018flag\u2019 around the \u2018mast\u2019 to generate conformations at an angular sampling rate of 1\u00b0 per conformation for each of the four known conformations of CoA (Figure 5a). It was found that main-chain atoms and C\u03b2 atoms of the FAAL protein, irrespective of the conformation of the C-terminal domain (A-state or T-state), show an average of 28 clashes (van der Waals overlap >0.25 \u00c5) (Figure 5b, Figure 5\u2014figure supplement 2a). The adenosine 3',5'-bisphosphate or the \u2018flag\u2019 would encounter severe clashes because the entry of the alternative pocket is deeply embedded within the subdomain-A and -B of the N-terminal domain. It is unlike the entry of the canonical pocket, which is entirely open with the subdomain-B forming the base of the pocket (Figure 4). Therefore, the N-terminal domain of FAALs itself forms a strong deterrent for accommodating adenosine 3',5'-bisphosphate and hence prevents CoA binding (Figure 5\u2014figure supplement 2b). Interestingly, the structural elements resisting the adenosine 3',5'-bisphosphate are unique to FAALs such as the FSH (T252-R258 in EcFAAL) and the loop harboring proline residues that guard the opening of the tunnel. Therefore, a strong negative selection and the absence of any positive selection make accommodation of adenosine 3',5'-bisphosphate containing CoA unlikely. In contrast, the adenosine 3',5'-bisphosphate lacking 4'-PPant of holo-ACP can easily access the pocket and participate in the acyl-transfer reaction. This essentially forms the structural basis for the CoA-rejection mechanism in FAALs (Figure 5c).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/70067/elife-70067-fig5-v2.jpg)\n\n**Figure 5.:** (a) A \u2018mast\u2019 (the 4\u2019-PPant arm) is aligned along the longest length of the predicted pocket (blue: mesh representation) and the \u2018flag\u2019 (adenosine 3',5'-bisphosphate) is rotated to generate theoretical orientations of the \u2018flag.\u2019 These conformations of HsFACL (PDB: 3EQ6) are shown (yellow: stick format) at 45\u00b0 intervals. The regions of the EcFAAL (cartoon representation) showing clashes are highlighted (red). (b) The count of atoms (C, N, O, C\u03b1, and C\u03b2) of EcFAAL showing van der Waals short contacts (\u22640.25 \u00c5) with the conformations of the \u2018flag\u2019 is scored (short contacts \u226530 = 3; \u226510 = 2; \u22652 = 1 and <2 = 0). These scores (y-axis) are plotted against the specific rotation angles of the conformation, where the short contact is observed (x-axis). (c) The universal CoA-rejection mechanism is schematically summarized. The 4\u2019-PPant (light orange) of both CoA and holo-ACP (purple) bind to the canonical pocket of non-FAAL members through multiple interactions (dotted lines). Interactions between Arg/Lys patch (circle: blue) and the adenosine 3',5'-bisphosphate moiety (rhombus: blue) acts as positive selection. The negative selection elements of the canonical pocket clash (highlighted in red) with the adenosine 3',5'-bisphosphate in the alternative pocket. The absence of Arg/Lys patch (dotted circle) fails to provide stability to the adenosine 3',5'-bisphosphate moiety (dotted rhombus; blue). The 4'-PPant (yellow) tethered to ACP (purple) is only accepted in the alternative pocket, which is absent in non-FAAL members, as it shows no clashes. The ranked count of atoms used to generate the plot 5b is provided as an Excel file, Figure 5\u2014source data 1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70067/elife-70067-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) The available coenzyme A (CoA)-bound crystal structures of the ANL superfamily members were taken, which include SeACS (1PG4, two protomers; 2P2F, two protomers; 2P2J, two protomers), HsACSM2A (3EQ6, two protomers), NtCCL (5BSR, one protomer), DsPrpE (5GXD, one protomer), and Aa4CBL (3CW9, two protomers). These were aligned based on the maximum-common-substructure method as implemented in mcsalign plugin of PyMOL (Schr\u00f6dinger, LLC, 2015) along the length of the 4'-PPant. The superposition reveals that CoA structures are bound to ANL superfamily members mainly in an extended conformation (adenine ring away from the 4'-PPant arm) and rarely in bent conformation (adenine ring in proximity to 4'-PPant arm). The difference is due to the conformational freedom around the phosphodiester bonds; however, despite the variations, the phosphates tend to spatially organize in the similar positions available for the phosphate clamping arginine or lysine residues. The bent conformation has an additional contact point, ring clamp, where the adenine ring is held through aromatic amino acids, while the adenine ring is free in the extended conformation of CoA with orientations of adenine ring having a degree of variability but restricted to a small zone. The 4'-PPant arm is presented in a fully extended form in both the subsets of CoA and the PPant clamp atoms presented for hydrogen bonding with the A8 motif and water molecules. (b) In the absence of any structural information on how the 4'-PPant may be accommodated in the pocket, it is safe to assume the 4'-PPant is accommodated within the identified pocket analogous to the \u2018mast\u2019 of the flag. The flag here represents the head group, which can be rotated to identify any possible orientation that can be accommodated within the alternative pocket. All the known conformations of head groups from CoA-bound ANL superfamily members serve as a template in this case.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70067/elife-70067-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (a) The variation of clash score with an angle for the possible adenylation and putative thioesterification conformations of the two known fatty acyl-AMP ligases (FAALs) structures (EcFAAL; PDB: 3PBK; and MsFAAL32; PDB: 5ICR) is presented. It is very clear that none of the conformations, A-state or T-state, of both the proteins, EcFAAL and MsFAAL32, are capable of accommodating any of the known conformations of adenosine 3',5'-bisphosphate moiety of coenzyme A (CoA). A large number of the sampled conformations present clashes with more than 30 main-chain atoms even with a conservative distance of \u22640.25 \u00c5. The plot for EcFAAL in A-state and T-state is comparable in the zones of least resistance, which is also true for MsFAAL32 T-state, suggesting that these are conformation-independent. This observation indicates that the clashes can primarily be attributed to the N-terminal itself and the unique location of the pocket. It should be noted that the plot for MsFAAL32 A-state is unique because of the alternative pocket being occluded by a FAAL32-specific insertion described by Aldrich and co-workers. (b) The T-state EcFAAL was modeled by superposing the C-terminal domain with HsACSM2A and is shown in cartoon form (N-terminal in green and C-terminal in orange) along with theoretical orientations of the head group CoA from 220\u00b0 to 280\u00b0, which is shown in stick representation (yellow). The major elements of the N-terminal domain in EcFAAL that contribute to clashes are shown in a cartoon representation (red) along with the stick representation of the main-chain atoms and C\u03b2. The conformations of the head group from 220\u00b0 to 280\u00b0, where only a few (2\u201310) clashes are observed, particularly the region spanned between 240\u00b0 and 260\u00b0. The zone of least resistance is largely owing to a vacant space between N- and C-terminal domains without any residues to hold the phosphates or adenine ring. The space occupied by these conformations is close to the typical structural site for CoA accommodation in fatty acyl/aryl-CoA ligases (FACLs) except that the adenine ring is oriented away from the protein. The typical Arg/Lys residues that bind phosphates are absent in FAALs, and hence these conformations cannot be expected to be stabilized by phosphate clamps. The orientations with inward-facing adenine ring resemble the bent conformation of CoA, a rare conformation in ANL superfamily members, where the adenine ring is held by a conserved tryptophan as seen in AaCBL (PDB: 3CW9). The conserved tryptophan residue is absent in most ANL superfamily members including FAALs and FACLs, and hence these conformations cannot be expected to be stabilized by stacking interactions with adenine. Therefore, in the 220\u00b0\u2013280\u00b0 region even though the rejection by negative selection is weak, there is no scope of positive selection that renders the region incompatible with CoA binding. The ranked clash score used to generate the plot in (a) is tabulated in an Excel file, Figure 5\u2014source data 1.\n\n### Identification of FAAL-like proteins across different forms of life\n\nPrevious studies show that FAALs can be identified based on the presence of insertion and its anchorage to the N-terminal domain through hydrophobic interactions. A lack of sequence conservation in the FSI and only a single structural template for further analysis complicated the search procedure. Therefore, early genome mining efforts resulted in a sparse identification of FAALs in lineages of actinobacteria, cyanobacteria, and proteobacteria along with some eukaryotes such as humans and mouse (Goyal et al., 2012). The conserved sequence features from this study such as FSH, a blocked canonical pocket, and a proline-lined 4'-PPant binding pocket led to the identification of FAAL-like proteins with greater confidence. The analysis revealed a ubiquitous distribution of FAALs across different forms of life including bacteria, plants, fungi, and animals, except archaea (Figure 6a). The phylogenetic analysis reveals that all the FAAL-like proteins diverge and cluster away from FACLs or A-domains. FAAL-like proteins show three subgroups, viz., bacterial/plant FAALs group, fungal FAAL-like protein group, and animal FAAL-like protein group (Figure 6a). Typical FAALs are bacterial FAALs, which are always found in a genomic context with PKS and PKS/NRPS hybrid genes either as a stand-alone domain or as a didomain fused to ACP or multidomain fused to the entire PKS/NRPS gene (Supplementary file 3). Occasionally, the stand-alone bacterial FAALs are found to be interspersed with additional domains (Figure 6\u2014figure supplement 1a), mainly with dehydrogenases and oxygenases. Most plant FAAL-like domains resemble the bacterial FAALs from their sequence identity and domain organization. However, unique domain organizations are also found in plant FAAL-like domains, where an uncharacterized protein has FAAL-like domains sandwiched between HemY domains and catalase domains or amino acid oxidase domains (Figure 6\u2014figure supplement 1a). To the best of our knowledge, this is the first report of the presence of FAAL-like domains in plants and also the fusion of alternate domains to FAALs at their N-terminus.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/70067/elife-70067-fig6-v2.jpg)\n\n**Figure 6.:** (a) A clustering diagram with the bootstrapping values for all the FAAL-like sequences is presented. The ANL superfamily members have two major divergent classes, viz., CoA-rejecting FAAL-like sequences and CoA-accepting non-FAAL members (FACLs and A-domains). A graphical representation of the distribution of these members is shown using pictorial representation of the organisms, which include bacteria, plants, yeast, worm, fly, and human. (b) The ancestral fold of the ANL superfamily may have been a loose organization of peptide scaffolds working with thiol-containing molecules such as pantetheine, etc. The ancestral fold accumulated various mutations, resulting into the ancestor of modern-day acceptor promiscuity lacking FAAL-like forms and acceptor promiscuity containing non-FAAL members. The evolution of acceptor promiscuity spectrum may have been driven based on their participation in bulk metabolic reactions. FAALs did not participate in bulk metabolic reactions and hence dedicated themselves to their cognate ACP partners to redirect small molecules to specific pathways. The non-FAAL members of the ANL superfamily such as FACLs participate in bulk reactions, where minor cross-reaction products are observed.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70067/elife-70067-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** The sequences whose structures are available are colored (FAALs in blue, A-domains in light red, and fatty acyl/aryl-CoA ligases [FACLs] in green) and the secondary structures of EcFAAL (PDB: 3PBK; top) along with HsACSM2A (PDB: 3EQ6) are also included. The FAAL-specific insertion region is marked as a black rectangle and labeled accordingly (red). (a) A survey of the various domain organizations of various FAAL-like sequences is depicted as polyketide synthase/nonribosomal peptide synthetase (PKS/NRPS)-related domain organizations (top-left panel) and PKS/NRPS-independent domain organizations (top-right panel), while the bottom panels represent rare/miscellaneous domain organizations. The PKS/NRPS-related domain organizations are seen in bacteria, plants, and few lower eukaryotes including amoebozoa (e.g., Acanthamoeba), Haptista (e.g., Emiliania), and few fungi where bacterial/plant FAAL-like domains (dark green) are associated with a carrier protein domain (violet) and different domains of NRPS/PKS systems (variegated color). The bacterial/plant FAAL-like domains are occasionally seen in different domain contexts such as alpha aminoadipate reductase domains or \u03b1/\u03b2-hydrolases (white dotted box) in few bacterial, plant, and lower eukaryotic species or sandwiched between HemY (gray) and catalase (olive) domains exclusively found in plants. The PKS/NRPS-independent domain organizations are almost exclusively seen in opisthokonts and rarely in few plants. The FAAL-like sequences of opisthokonts are related to typical bacterial/plant FAAL-like sequence but show two different levels of sequence divergence, namely FAAL-like-1 (pale green) and FAAL-like-2 (green), where the lighter shade indicates the extent of divergence. All the identified opisthokonta FAAL-like sequences are always found as a tandem fusion of FAAL-like-1 and FAAL-like-2. This didomain organization is seen in choanoflagellates (e.g., Monosiga, Salpingoeca), while in higher forms it is almost exclusively seen as a fusion of didomain architecture with a DMAP1-binding domain (pentagon in light red) forming a highly conserved three-domain architecture. In fungi (and few plant species such as Quercus and Rhodamnia), the sequence similarity to DMAP1-binding domain is poor, indicated by a serrated pentagon, unlike higher forms. Additional domains such as ARG80, RAMP, PHA03247 family of domains (dotted white box) are occasionally fused to the conserved three-domain architecture. (b) A better sequence relationship with FAALs along with subtle differences in various motifs in opisthokont FAAL-like domains is commensurate with the clustering behavior in the phylogenetic tree generated by different methods. The maximum-likelihood tree implicates a closer relationship of opisthokont FAAL-like domains (pink) to bacterial FAALs (blue) and plant FAALs (green) unlike the NJ-tree; nevertheless, the partitioning of all FAALs away from A-domains (peach) or FACLs (orange) is noted throughout. (c) The FAAL-specific insertion region of FAAL-like-2 shows a comparable length with that of prokaryotic FAALs. (d) The FAAL-specific insertion region of FAAL-like-1 in fungi shows an unusually long insertion as compared to the insertion in prokaryotic FAALs, while the higher forms show comparable length.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70067/elife-70067-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** The sequences whose structures are available are colored (FAALs in blue, A-domains in light red, and fatty acyl/aryl-CoA ligases [FACLs] in green) and the secondary structures of EcFAAL (PDB: 3PBK; top) along with HsACSM2A (PDB: 3EQ6) are also included. The FAAL-specific helix (FSH) region is marked as a yellow rectangle and labeled accordingly (red). The bulky residues contributing to the CoA-rejection mechanism are highlighted in yellow. The structural sites that correspond to the prolines of the unique alternative pocket in FAALs are highlighted in green. The A4 motif, which is proposed to harbor the residues important for the catalysis of thioesterification, is marked in a red rectangle along with a star. (a) The FSH region of FAAL-like-2 is comparable to that of prokaryotic FAALs, while the additional bulky residues such as Trp/Phe (succeeding FSH) are conserved in higher opisthokonts but not fungal FAAL-like-2 sequences, whereas the Trp (preceding FSH) is completely absent in both fungi and higher opisthokonts. The prolines of the alternative pocket away from FSH appear in a circular mutation in fungi but in no other opisthokonts, while the prolines of the alternative pocket proximal to FSH appear conserved in all opisthokonts. The A4 motif of the FAAL-like-2 is a conserved Cys in higher opisthokont; however, no such conservation in noted in any of the fungal FAAL-like-2 domains. (b) The FSH region of FAAL-like-2 is comparable to that of prokaryotic FAALs, while the additional bulky residues such as Trp/Phe (succeeding FSH) are conserved in higher opisthokonts but not fungal FAAL-like-2 sequences, whereas the Trp/Tyr (preceding FSH) is present in fungi but no other opisthokonts. Similar to FAAL-like-2 domains, the prolines of the alternative pocket away from FSH appear in a circular mutation in fungi but no other opisthokonts, while the prolines of the alternative pocket proximal to FSH appear in circular mutation in higher opisthokonts but not fungi. The A4 motif of the FAAL-like-2 is a conserved Arg in higher opisthokont; however, in the fungal FAAL-like-2 domains, they may be Gln/Glu/His.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/70067/elife-70067-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** The sequences whose structures are available are colored (FAALs in blue, A-domains in light red, and fatty acyl/aryl-CoA ligases [FACLs] in green) and the secondary structures of EcFAAL (PDB: 3PBK; top) along with HsACSM2A (PDB: 3EQ6) are also included. The A8-motif and A5-motif, which are proposed to assist domain alternation and binding ribose of ATP respectively, are marked in a red rectangle along with a star(s). The phylogenetic tree was generated as described in the Materials and methods section. The A8-motif of FAAL-like-2 (a) and FAAL-like-1 (b) of higher opisthokonts is comparable in length to a typical A8-motif of ANL superfamily unlike the A8-motif of fungal FAAL-like-1 domains. However, in terms of sequence conservation, both FAAL-like-1 or FAAL-like-2 neither resemble FAALs nor other members of the superfamily. The A5-motif of fungal FAAL-like-2 (c) has a conserved Asp just like all members of the superfamily, but it has been replaced by a conserved Tyr in higher opisthokonts. The A5-motif of all FAAL-like-1 (d) has the conserved Asp replaced by a conserved Leu in all opisthokonts.\n\nFungal and animal FAAL-like domains tend to cluster together with bacterial/plant FAAL-like domains in bioinformatic analysis (Figure 6a, Figure 6\u2014figure supplement 1b) because of the conservation of unique FAAL-specific features. Despite their lower sequence identity, the FSI (Figure 6\u2014figure supplement 1c and d) supported by a hydrophobic patch and the FSH and CoA-rejecting features (Figure 6\u2014figure supplement 2a and b) are clearly identifiable. Such conserved FAAL-specific features indicate that FAAL-like modules are recruited in eukaryotes for specific metabolic processes owing to their unique ability to reject CoA. Interestingly, fungal and animal FAAL-like domains share a highly conserved three-domain architecture, and such an architecture is not seen in any of the prokaryotes and plants (Supplementary file 4). The conserved three-domain protein consists of a N-terminal DMAP1-binding domain followed by a tandemly fused two FAAL-like domains as found in fungi to animals. The eukaryotic metabolic context for avoiding a reaction with CoA through these FAAL-like domains and their unique domain organization remains to be explored. Based on these observations, FAAL-like domains are more widespread than previously anticipated and their omnipresence is comparable to the universally present FACLs. Therefore, we propose that FAALs may not have descended from FACLs and they rather share a parallel evolutionary history. The ancestral ANL fold could have diverged as non-promiscuous FAAL-like members and promiscuous nonFAAL-like members simultaneously in the last universal common ancestor (Figure 6b).\n\n### Conclusions\n\nThe study uncovers the mechanistic basis of how FAALs strictly reject CoA, which is highly abundant and almost chemically identical to their actual substrate, holo-ACP. The rejection mechanism relies on a discriminatory 4'-PPant-accepting pocket while avoiding the promiscuous canonical CoA-binding pocket that is rendered non-functional. It has been achieved through bulky hydrophobic residues in the pocket and a unique secondary structural element, FSH, at the entrance. The discriminatory 4'-PPant-accepting pocket in FAALs, on the other hand, has a unique architecture that negatively selects adenosine 3',5'-bisphosphate moiety and also lacks Arg/Lys residues for positive selection. Interestingly, these rejection criteria are not only conserved in bacteria but also in all forms of life (excluding archaea). The unique remodeling of pockets to ensure acceptor discrimination probably allowed the evolutionary recruitment of FAAL-like domains in metabolic crossroads for redirecting the fate of molecules to specific pathways. Such a widespread conservation of FAAL-like proteins puts the evolutionary origin of FAALs parallel with FACLs in the last universal common ancestor and not as a subset of FACLs.\n\nThe scaffold of the ANL superfamily of enzymes is known to be promiscuous not only for the substrates they act on (Arora et al., 2005), but also the final acceptor of the acyl adenylates. Surprisingly, billions of years of evolution have not prevailed upon the substrate-promiscuity problem as well as the acceptor-promiscuity problem. The probability of acceptor promiscuity influencing the erroneous product formation is high as some of the acceptors such as CoA and pantetheine are the most abundant molecules in the cell. The problem is greatly amplified as it can redirect the fate of metabolites from one pathway to another such as primary metabolism to secondary metabolism. Our analysis shows that the CoA-bound structures of ANL superfamily members exhibit non-conformity in the binding mode of 4'-PPant or the adenosine 3',5\u2019-bisphosphate moiety (Reger et al., 2008; Zahn, 2019). The variability in the 4'-PPant binding is also true for the A-domain:ACP complexes (Mitchell et al., 2012; Sundlov et al., 2012; Sundlov and Gulick, 2013). The variability could be resulting from highly divergent residues lining the CoA-binding site in FACLs and their analogous sites in FAALs (Supplementary file 5), which possibly explains the observed differential activity of certain loss-of-function and gain-of-function mutations (Supplementary file 5). Hence, it is evident that a defined CoA-binding pocket is lacking in ANL superfamily members, which is commensurate with the failure to identify the pocket in FACLs using various pocket search algorithms. Therefore, a promiscuous access to the active site without any selection determinants is the likely cause for the lack of discrimination for final acceptors in these enzymes.\n\nIt is not clear if the observed spectrum of latent activities in these enzymes\u2019 design is an evolutionary relic or has any physiological relevance in a specific cellular context. The persistence of acceptor promiscuity can only have two explanations: viz., the cross-reaction products are beneficial, or pocket modification is not possible without compromising the basic function. In this context, FAALs are surprisingly high-fidelity enzymes representing the extreme end of the promiscuity spectrum, offering no cross-reaction with CoA as acceptors of the acyl adenylates (Trivedi, 2004; Arora, 2009; Goyal et al., 2012; Priyadarshan and Sankaranarayanan, 2018). A functional and discriminatory 4'-PPant binding in FAALs has established them as an alternative enzymatic bridge between FA synthesis, exogenous fatty acids import, and PKS/NRPS machinery that produce diverse bioactive natural products such as bacillomycin (Lu, 2019; Koumoutsi, 2004), mycosubtilin (Duitman, 1999), daptomycin (Wittmann et al., 2008; Baltz, 2021), phenylnannolone (Bouhired, 2014), alkylresorcylic acid (Hayashi et al., 2011), caryoynencin (Ross et al., 2014), vioprolide (Auerbach et al., 2018), taromycin A (Yamanaka, 2014), tambjamine (Marchetti et al., 2018), ambruticin (Hemmerling et al., 2018; Julien et al., 2006), , to name a few (Supplementary file 3). The relevance of the lack of acceptor promiscuity in FAALs has been demonstrated in Mycobacteria as being responsible for dictating the fate of free fatty acids in producing virulent lipids (Arora, 2009).\n\nThe conserved sequence and structural features of bacterial FAALs enabled better identification of FAAL-like domains across all forms of life, except archaea. FAALs may have been recruited to specifically \u2018load\u2019 fatty acids on PKS/NRPS but the possibility of lack of promiscuity in FAALs driving their over-representation cannot be ignored. Their characteristic absence in archaea perhaps can be explained by the abysmal frequency or absence of PKS or NRPS systems. FAAL-like domains of bacteria and plants exhibit remarkable sequence similarity, which is expected because of the presence of canonical PKS/NRPS enzymology in both systems. A few of the identified FAAL-like domains in bacteria show unique domain organizations such as a fusion with lysophospholipid acyltransferases and alpha aminoadipate reductases or found interspersed in operons with dehydrogenases, decarboxylase, and ketoacyl synthases. Unique domain architectures are also found in plants, where FAAL-like domains are sandwiched between HemY and catalase domains and the function of these conserved proteins remain unknown. These unique architectures are evolutionary instances of the recruitment of FAAL-like domains for PKS/NRPS-independent functions.\n\nInterestingly, unique domain architectures are found in FAAL-like domain-containing proteins of fungi and animals, the majority of which are largely PKS/NRPS-free systems. In these organisms, two tandemly fused FAAL-like domains are found at the C-terminus and a DMAP-1-binding domain at the N-terminus of a highly conserved protein. These proteins are annotated and characterized as the virulent factor CPS1 in few fungal pathogens such as Magnaporthe oryzae (Wang, 2016), Cochliobolus heterostrophus (Lu, 2003), and Coccidioides posadasii (Narra, 2016). Therefore, they are proposed as a target for potential fungicides and as a vaccine candidate in plant and animal pathogens, respectively (Wang, 2016; Lu, 2003; Narra, 2016). In invertebrates and vertebrates, these are known as DIP2 and are important for proper axon bifurcation and guidance, suggesting their physiological importance (Nitta et al., 2017; Noblett, 2019). Recently, we showed that the mice lacking one of the eukaryotic FAAL-like proteins, DIP2A, show a diet-dependent growth anomaly such as obesity pointing to their importance in eukaryotic lipid metabolism (Kinatukara, 2020). The precise molecular and biochemical details of these proteins are yet to be elucidated. Given the extent of sequence divergence in various motifs of eukaryotic FAAL-like domains (Figure 6\u2014figure supplement 3a\u2013d), it is difficult to predict the processes they may be involved in. However, the presence of several elements of the CoA-rejection mechanism and their close identity to FAALs allow us to put forth the hypothesis that eukaryotic FAAL-like domains were recruited for their high acceptor-fidelity property. It is also possible that these divergences have some functional relevance in the context of eukaryotic metabolism, which may represent an additional member in the spectrum of biochemical activities represented in the ANL superfamily.\n\nThe current work identifying FAAL-like enzymology using a universal CoA rejection mechanism may form the platform for further studies to delineate why they have been recruited in fungal and animal systems. The study provides new structural and sequence attributes to confirm the identity of FAALs, many of which remain misannotated and uncharacterized. The study opens new avenues in combinatorial engineering of PKS/NRPS by using FAALs as a unique module to load fatty acids or use preexisting knowledge to engineer them to load unique molecules (Clark et al., 2018) with exceptional fidelity. Thus, FAALs can be exploited to produce novel bioactive molecules by virtue of their unique acceptor-fidelity property.\n\n## Materials and methods\n\n### Cloning, expression, and purification of proteins\n\nEcFAAL (A0A0H2VDD9), EcACP (A0A2X1NC35), EcFACL (P69451), MsFAAL32 (A0R618), MsPKS13 (A0R617; 1\u20131042 residues), RsFAAL (Q8XRP4), RsACP (Q8XRP0), AfFACL (O30147), MxFAAL (Q1CXX0), MxACP (Q1CXW9), and MtFACL13 (P9WQ37) were amplified by PCR from their respective genomic DNA using Phusion polymerase (Thermo Scientific) using specific primers (Supplementary file 6). These genes were expressed as hexahistidine-tagged proteins after the induction with IPTG using the E. coli BL21(DE3) expression system. The mutants were generated using quick-change site-directed mutagenesis. All the proteins including mutants were expressed and purified to homogeneity using Ni-NTA affinity chromatography followed by size-exclusion chromatography at 4\u00b0C. They were flash-frozen in liquid nitrogen and stored at \u201380\u00b0C until further use.\n\n### Biochemical analysis of FAALs and FACLs\n\nThe acyl-AMP and acyl-CoA formation by FAALs and FACLs was performed by previously described methods (Trivedi, 2004). Briefly, the reaction was carried out in a 15 \u03bcL reaction volume with 50 mM Tris (pH 8.0) containing 8 mM MgCl2, 176 \u03bcM fatty acid, and 24 \u03bcM 1\u201314C fatty acid. Lauric acid (C12) was used for all enzymes except MsFAAL32 where palmitic acid (C16) was used as the substrate. 2 mM CoASH was either included or excluded from the reaction according to the reaction process being assessed. 2 mM ATP was used to initiate the reaction and incubated at 30\u00b0C for 15 min on the water bath. The reaction was quenched using 5 \u03bcL of 10% acetic acid. The entire 20 \u03bcL reaction mixture was directly spotted on a silica gel 60 F254 TLC plate and allowed to dry for 2 hr. Subsequently the products were resolved using n-butanol/acetic acid/water (80:25:40; v/v) solvent system at 4\u00b0C. All FACLs (MtFACL13, EcFACL, AfFACL), EcFAAL and MsFAAL32 were used at 5 \u03bcM concentration while MxFAAL and RsFAAL were used at 7.5 \u03bcM. The 14C-fatty acids allowed detection of the products on a phosphorimager (Amersham Typhoon FLA 9000), which were then quantified by densitometry using Image Lab (Bio-Rad Laboratories Inc). All experiments were performed as triplicates. The percentage of acyl-AMP converted to acyl-CoA from the total acyl-AMP formed is used to plot and compare the activity, along with the standard error of the mean, of wild-type against the respective mutants.\n\n### Conversion of apo-ACP to holo-ACP\n\nAll the purified ACPs were converted to holo-ACP before being flash-frozen using previously described protocols (Lambalot, 1996). Briefly, after Ni-NTA purification, they were buffer exchanged to the phosphopantetheinylation buffer (20 mM Tris pH 8.8, 10 mM MgCl2, and 10 mM dithiothreitol). Approximately 250 \u03bcM of ACP was then incubated with 1.25 \u03bcM of a non-specific phosphopantetheinyl transferase Sfp from B. subtilis in a 300 \u03bcL reaction mixture along with 10 mM DTT, 10 mM MgCl2, and 1 mM CoASH. The reaction mixture was incubated at 25\u00b0C for 12\u201316 hr and further purified using size-exclusion chromatography at 4\u00b0C. The holo-ACP was flash-frozen in liquid nitrogen and stored at \u201380\u00b0C until further use. The conserved serine on which the 4'-PPant moiety is post-translationally modified was mutated to alanine, and the resulting protein was used as apo-ACP for all assays.\n\n### Loading-activated acyl chains on holo-ACP by FAALs\n\nThe transfer of activated acyl-chain to stand-alone holo-ACP by FAALs was assessed using radiolabeled fatty acids combined with CS-PAGE (Post-Beittenmiller et al., 1991). The following ratio of FAAL to holo-ACP was used: 1 \u03bcM of EcFAAL with 20 \u03bcM of EcACP, 4 \u03bcM of MxFAAL with 8 \u03bcM of MxACP, 5 \u03bcM of RsFAAL with 20 \u03bcM RsACP and 1 \u03bcM of MsFAAL32 with 12.5 \u03bcM of MsPKS13\u2206C. These proteins were incubated in a typical 15 \u03bcL reaction mixture composed of 50 mM HEPES pH 7.2, 5 mM MgCl2, 0.01% w/v Tween-20, 0.003% DMSO, 2 mM ATP, and 9 \u03bcM of 14C labeled-lauric acid (C12). The reactions of MxFAAL-MxACP and RsFAAL-RsACP consisted of 20 mM Tris pH 8.0 and lacked DMSO. The reaction mixture was incubated for 2 hr at 30\u00b0C and quenched with an equal volume of urea loading dye (25 mM Tris pH 6.8, 1.25 M urea, 20% glycerol, and 0.08% bromophenol blue). The contents were immediately loaded and separated on a 15% PAGE containing 2.5 M urea. The acyl-transfer on holo-MsPKS131-1042 by MsFAAL32 was carried out as previously described (Kuhn, 2016). Briefly, 14C labeled-palmitic acid (C16) was used to assess the transfer on holo-MsPKS131-1042 on an 8% SDS-PAGE. All gels were then dried using a gel drier (Bio-Rad gel dryer 583) and the radiolabeled acyl-ACP was detected using the phosphorimager (Amersham Typhoon FLA 9000).\n\n### Sequence and structural analysis\n\nAll sequences were identified and retrieved from the NCBI sequence database using EcFAAL as template and BLAST search algorithm. A structure-based sequence alignment was generated using msTALI (Shealy and Valafar, 2012) and then other sequences were added to the alignment in MAFFT (Katoh et al., 2019). The sequence alignments were rendered using ESPript (Robert and Gouet, 2014). The phylogenetic analysis of these sequences was carried out using both neighbor-joining as implemented in MAFFT (Katoh et al., 2019) and maximum-likelihood as implemented in IQTREE (Nguyen et al., 2015; Hoang et al., 2018; ) using default parameters. The phylogenetic tree was rendered in MixtureTree Annotator (Chen and Ogata, 2015). A graphical representation of the multiple sequence alignment was converted to sequence logo using WebLogo (Crooks et al., 2004). Images of various organisms were reusable silhouette images of organisms obtained from Phylopic (https://www.phylopic.org) under Creative Commons license. All structural analyses including structural superposition, van der Waals distance measurements, and ligand alignment were carried out with various in-built features of PyMOL (Schr\u00f6dinger, LLC, 2015). All cavity search programs were run using default parameters.\n",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "a0e18068-9300-4afc-81ef-86d1507a27ca",
+      "submission_id": "44f6f2a9-c7d8-4fa3-88de-8677f70d553b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Frank Raushel, Texas A&M University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70067.sa1](https://doi.org/10.7554/eLife.70067.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nThis study addresses the structural basis of the ability of fatty acyl-AMP ligases (FAAL) to exclude condensation of activated fatty acids with coenzyme-A and facilitate the reaction with other 4-phosphopantetheine linked acceptors. This issue is of significant interest with regard to understanding how certain fatty acids are channelled to specific metabolic fates. This work will contribute significantly to our current knowledge of how distinct classes of enzymes divert fatty acids to virulent lipids in mycobacteria, and it will be more broadly of interest for metabolic engineering.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A universal pocket in FAALs ensures redirection of fatty acid pool away from CoA-based activation\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Michael Marletta as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Satish K. Nair (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. In your manuscript you have highlighted a number of residues within the putative binding site for the 4'-pantatheine moieties in the FAAL enzymes that likely preclude the binding of this portion of the substrate. You have subsequently mutated these residues in the FAAL enzymes from three different organisms and have shown in certain instances that the mutated enzymes are now able to functionally activate CoA (Figure 2c). For example, why does the F284A/M233A mutant of MsFAAL32 function so differently than the corresponding mutant of RsFAAL? You need to explain why some of the FAALs behaved differently than others.\n\n2. You have provided further support for the inability of the apparent canonical site in the FAAL enzymes to be functional by mutating the residues within the active sites of certain FACL enzymes to the bulkier ones found in the FAAL enzymes. Many of the constructs resulted in the loss of function and their ability to activate CoA. However, the loss of function was not uniform across the three FACL enzymes chosen. For example, the A276F/A232M mutant of AfFACL is devoid of CoA activity, but the corresponding mutants of MtFACL13 and EcFACL are fully functional. You need to explain why some of the FACLs behaved differently than others.\n\n3. The discussion on the evolution of this system needs to be improved. You should enhance your discussion by looking at the genomic neighborhoods of bacterial FAALs for the presence of PKS/NRPS gene clusters. This analysis would bolster some of the evolutionary claims.\n\n4. It is imperative that the reactions catalyzed by these enzymes be shown as chemical structures for substrates and products (ChemDraw).\n\n5. There are a number of references (see reviewer #3) that should be included.\n\n6. The experimental details for some of the reactions are missing or quite difficult to find. For example, what is the specific fatty acid that is used in your assays?\n\nReviewer #1 (Recommendations for the authors):\n\nThe manuscript would have been significantly enhanced if further structural evidence for the newly identified binding pocket in the FAAL enzymes could have been obtained. My suggestion is that the authors use 4-phosphopantetheine itself as an additional substrate for their gain- and loss-of-function mutants and they also use this compound in crystallization trials with the FAAL enzymes to ascertain whether or not the new putative binding site is real or not.\n\nReviewer #2 (Recommendations for the authors):\n\nI would endorse publication pending a stronger analysis to bolster the evolutionary claims made by the authors. With this additional information, this would be a strong publication that would inform across the broad readership of eLife.\n\nReviewer #3 (Recommendations for the authors):\n\nI got confused by some of the language, maybe it is just me, the other reviewers may be OK. e.g. Line 46 \"they completely lack acceptor promiscuity\"\u2026.please change this to they display a narrow substrate preference for holo-ACP and not CoASH.\n\nPlease start the paper with a chemical, stepwise pathway \u2013 e.g. use ChemDraw \u2013 to draw out the steps as I described above.\n\nA new review I like which the authors MUST cite is by Winn et al., Harnessing and engineering amide bond forming ligases for the synthesis of amides. Curr. Op. Chem. Biol., 2020, Volume 55, Pages 77-85. This describes the chemistry, mechanism and structures well.\n\nAnother to read and cite is Schmelz, S. and Naismith, J.H. Adenylate-forming enzymes. Curr. Opin. Struct. Biol. 19, 666-671 (2009).\n\nThe authors should also cite this sequences analysis paper that complements their work.\n\nClark et al., PLOS One, 2018, In silico analysis of class I adenylate-forming enzymes reveals family and group-specific conservations. doi.org/10.1371/journal.pone.0203218\n\nThis combined sequence/structure analysis e.g. STable 1 with all PDBs is very useful.\n\nThe data on the mutants were confusing when not related back to the structure of ACPs \u2013 they tend to have -ve charge and although the authors discuss CoASH chemistry (e.g. the phosphates) they should also show an ACP \u2013 they are always shown as space-filled \u2013 show the electrostatics e.g. of EcACP.\n\nThere is quite a long conclusion which covers evolution and origin of diversity \u2013 this should be edited.\n\nOverall, I think this could be a useful and interesting paper to the field once it is has been edited and over hauled.\n\nPlease focus on explaining the biochemical data in a much clearer way.\n\nI suggest accept after major changes.\n",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "dcc2a367-0b66-4e67-9ee8-31f046351c76",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C1",
+      "claim": "Fatty acyl-AMP ligases (FAALs) channelize fatty acids towards biosynthesis of virulent lipids in mycobacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Fatty acyl-AMP ligases (FAALs) channelize fatty acids towards biosynthesis of virulent lipids in mycobacteria and other pharmaceutically or ecologically important polyketides and lipopeptides in other microbes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known function of FAALs",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "f7d42343-201d-4df3-8a55-0883aa2edd81",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C2",
+      "claim": "FAALs channelize fatty acids towards biosynthesis of pharmaceutically or ecologically important polyketides and lipopeptides in microbes.",
+      "claim_type": "EXPLICIT",
+      "source": "Fatty acyl-AMP ligases (FAALs) channelize fatty acids towards biosynthesis of virulent lipids in mycobacteria and other pharmaceutically or ecologically important polyketides and lipopeptides in other microbes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known function of FAALs",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "fc2a980f-3604-4074-8d90-a41bb1d58852",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C3",
+      "claim": "FAALs bypass the ubiquitous coenzyme A-dependent activation.",
+      "claim_type": "EXPLICIT",
+      "source": "They do so by bypassing the ubiquitous coenzyme A-dependent activation and rely on the acyl carrier protein-tethered 4\u2032-phosphopantetheine (holo-ACP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a characteristic of FAALs",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "40894a86-c624-4a9d-9b5b-cb0d5190c870",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C4",
+      "claim": "FAALs rely on the acyl carrier protein-tethered 4\u2032-phosphopantetheine (holo-ACP).",
+      "claim_type": "EXPLICIT",
+      "source": "They do so by bypassing the ubiquitous coenzyme A-dependent activation and rely on the acyl carrier protein-tethered 4\u2032-phosphopantetheine (holo-ACP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a characteristic of FAALs",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "0c255f54-e12d-4d3e-917d-4b0382798cea",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C5",
+      "claim": "FAALs have plugged the promiscuous canonical CoA-binding pockets.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that FAALs have plugged the promiscuous canonical CoA-binding pockets and utilize highly selective alternative binding sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study stated in the abstract",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "f6d3a3ca-6d17-4867-a739-2c0cb544c2fd",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C6",
+      "claim": "FAALs utilize highly selective alternative binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that FAALs have plugged the promiscuous canonical CoA-binding pockets and utilize highly selective alternative binding sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study stated in the abstract",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "0450b696-0004-4509-af1b-289b8c8cb7bb",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C7",
+      "claim": "The alternative pockets in FAALs can distinguish adenosine 3\u2032,5\u2032-bisphosphate-containing CoA from holo-ACP.",
+      "claim_type": "EXPLICIT",
+      "source": "These alternative pockets can distinguish adenosine 3\u2032,5\u2032-bisphosphate-containing CoA from holo-ACP and thus FAALs can distinguish between CoA and holo-ACP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study stated in the abstract",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "59bb903a-8932-445c-a716-24fe51a583fc",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C8",
+      "claim": "FAAL-like proteins are omnipresent in plants, fungi, and animals with unconventional domain organizations.",
+      "claim_type": "EXPLICIT",
+      "source": "These exclusive features helped identify the omnipresence of FAAL-like proteins and their emergence in plants, fungi, and animals with unconventional domain organizations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study stated in the abstract",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "ddf4dd91-f2d7-4206-877f-1c2494d10ce3",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C9",
+      "claim": "FAALs are parallelly evolved with FACLs for ensuring a CoA-independent activation and redirection of fatty acids towards lipidic metabolites.",
+      "claim_type": "EXPLICIT",
+      "source": "The universal distribution of FAALs suggests that they are parallelly evolved with FACLs for ensuring a CoA-independent activation and redirection of fatty acids towards lipidic metabolites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the universal distribution finding stated in the abstract",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "3b0d60a4-15a1-4adb-b939-1777e835ec74",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C10",
+      "claim": "The ANL superfamily includes acyl/aryl-CoA ligases (ACS or FACLs), adenylation domains (A-domains), luciferases, and fatty acyl-AMP ligases (FAALs).",
+      "claim_type": "EXPLICIT",
+      "source": "The ANL superfamily includes enzymes such as the acyl/aryl-CoA ligases (ACS or FACLs), adenylation domains (A-domains), and luciferases along with the recently identified fatty acyl-AMP ligases (FAALs) (Schmelz and Naismith, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "a8748132-66a3-48cc-ba88-5dc7489b96aa",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C11",
+      "claim": "ANL superfamily enzymes are involved in the production of primary metabolites such as acyl-CoA.",
+      "claim_type": "EXPLICIT",
+      "source": "These enzymes are involved in the production of both primary metabolites such as acyl-CoA and secondary metabolites such as antibiotics (Sieber and Marahiel, 2005), complex lipids (Gokhale et al., 2007), cyclic peptides (Walsh, 2004), and lipopeptides (Hansen et al., 2007; Hemmerling et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "05c4e087-cb4b-4ecb-8aad-0f4799eba195",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C12",
+      "claim": "ANL superfamily enzymes are involved in the production of secondary metabolites such as antibiotics, complex lipids, cyclic peptides, and lipopeptides.",
+      "claim_type": "EXPLICIT",
+      "source": "These enzymes are involved in the production of both primary metabolites such as acyl-CoA and secondary metabolites such as antibiotics (Sieber and Marahiel, 2005), complex lipids (Gokhale et al., 2007), cyclic peptides (Walsh, 2004), and lipopeptides (Hansen et al., 2007; Hemmerling et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "7beaaea3-2578-4f24-aaeb-6224ea1b307d",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C13",
+      "claim": "ANL superfamily members use a two-step catalytic mechanism involving activation of carboxylate moiety containing substrates by ATP hydrolysis and transfer to an acceptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Such diverse metabolites are produced by the members of the ANL superfamily through a two-step catalytic mechanism. It begins with the activation of carboxylate moiety containing substrates such as fatty acids or amino acids by adenosine triphosphate (ATP) hydrolysis and finally transferring it to an acceptor such as CoA or holo-ACP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as a known mechanism",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "359dac26-c82b-48d4-9417-b87d09a86286",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C14",
+      "claim": "FACLs and A-domains employ a common pocket for the chemically identical CoA and the 4'-PPant moieties attached to the holo-ACP.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple structural and biochemical studies show that members of the superfamily such as FACLs and A-domains employ a common pocket for the chemically identical CoA and the 4'-PPant moieties attached to the holo-ACP, respectively, for the final transfer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction based on previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "d6d16896-82de-430f-b491-5a1cf4f894f4",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C15",
+      "claim": "A-domains can cross-react with CoA to form aminoacyl-CoA.",
+      "claim_type": "EXPLICIT",
+      "source": "It was later demonstrated that the A-domains can cross-react with CoA to form aminoacyl-CoA (Linne et al., 2007), which points to the liabilities of utilizing a common pocket for binding chemically identical moieties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "2c82bae1-ca64-467e-a19b-8b0b502d7493",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C16",
+      "claim": "Luciferases are shown to catalyze fatty acyl-CoA formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Promiscuity towards the final acceptor has now been noted in different classes of ANL superfamily members where luciferases are shown to catalyze fatty acyl-CoA formation (Oba et al., 2003) and FACLs producing bioluminescence with molecular oxygen (Oba et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "c34de16d-dca3-43fe-a3ce-356960070e72",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C17",
+      "claim": "FACLs can produce bioluminescence with molecular oxygen.",
+      "claim_type": "EXPLICIT",
+      "source": "Promiscuity towards the final acceptor has now been noted in different classes of ANL superfamily members where luciferases are shown to catalyze fatty acyl-CoA formation (Oba et al., 2003) and FACLs producing bioluminescence with molecular oxygen (Oba et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "afff9a4b-c8f8-4bb5-9d26-0198f90142a5",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C18",
+      "claim": "FAALs show a narrow preference for holo-ACP and not CoA.",
+      "claim_type": "EXPLICIT",
+      "source": "FAALs are atypical enzyme systems of the ANL superfamily as these show a narrow preference for holo-ACP and not CoA, where they transfer the activated fatty acyl-AMP to the 4'-PPant of holo-ACP (Trivedi, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "5ac1611c-3044-479f-835d-a473a300bb92",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C19",
+      "claim": "FAALs transfer the activated fatty acyl-AMP to the 4'-PPant of holo-ACP.",
+      "claim_type": "EXPLICIT",
+      "source": "FAALs are atypical enzyme systems of the ANL superfamily as these show a narrow preference for holo-ACP and not CoA, where they transfer the activated fatty acyl-AMP to the 4'-PPant of holo-ACP (Trivedi, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "ab40d831-1b30-4b3d-828e-29b118218b3d",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C20",
+      "claim": "The FAAL-specific insertion (FSI) was proposed to prevent reaction with CoA.",
+      "claim_type": "EXPLICIT",
+      "source": "In a previous study, it was proposed that the FAAL-specific insertion (FSI), an additional stretch of amino acids found only in the N-terminal domain of FAALs, prevents reaction with CoA (Arora, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "01db3f50-c4ef-42a2-8780-b966823050ab",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C21",
+      "claim": "Deletion or destabilization of the FSI failed to convert FAALs as efficient producers of acyl-CoA.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the deletion or destabilization of the FSI failed to convert FAALs as efficient producers of acyl-CoA as there is only a weak ability to react with CoA (Arora, 2009; Goyal et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "c20c8b21-592d-48a5-9038-765bb15b9318",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C22",
+      "claim": "The canonical CoA-binding pocket in 26 structures (59 protomers) of the CoA/4'-PPant-bound ANL superfamily members was analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "A comprehensive analysis of the canonical CoA-binding pocket in the 26 structures (59 protomers) of the CoA/4'-PPant-bound ANL superfamily members (Supplementary file 1) revealed important aspects of CoA/4'-PPant recognition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section describing the analysis performed",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "4518e34d-aac4-4baf-ad0b-3cda518dcf0c",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C23",
+      "claim": "None of the CoA/4'-PPant ligands are bound in identical positions or orientations in ANL superfamily structures.",
+      "claim_type": "EXPLICIT",
+      "source": "It is observed that ligand interacts with the protein through three categories of interactions but none of the structures show the CoA/4'-PPant ligands bound in identical positions or orientations (Figure 1\u2014figure supplement 2a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with reference to figure supplement",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "871a9855-b767-488f-81f0-7eb7dd04d065",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C24",
+      "claim": "CoA/4'-PPant ligands interact with ANL superfamily proteins through three categories of interactions: hydrogen bonds mediated by the A8-motif, water-mediated contacts through N-terminal helices, and interactions with phosphates through positively charged residues.",
+      "claim_type": "EXPLICIT",
+      "source": "The three categories of interactions are (i) the hydrogen bonds mediated by the A8-motif of the C-terminal domain, (ii) the water-mediated contacts through the N-terminal helices H10 and H14 (notation based on Escherichia coli FAAL, abbreviated as EcFAAL; PDB: 3PBK) (Zhang et al., 2011), and (iii) the interactions with the phosphates (Gulick et al., 2003; Reger et al., 2007; Reger et al., 2008; Kochan et al., 2009; Mitchell et al., 2012; Li and Nair, 2015; Miller et al., 2016; Hughes and Keatinge-Clay, 2011) of the adenosine 3',5'-bisphosphate moiety through the positively charged residues (Arg/Lys) (Figure 1\u2014figure supplement 3) in the loop connecting H23 and \u03b226 (notation based on EcFAAL).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with citations and reference to figure supplement",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "37c2e772-0228-453e-bd2e-b2cbae695b40",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C25",
+      "claim": "The structurally analogous CoA-binding pocket of FAALs shows an absence of positively charged residues (Arg/Lys) known to assist in CoA binding in other ANL superfamily members.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis reveals an absence of selection from the positively charged residues (Arg/Lys) known to assist in CoA binding in the other members of the ANL superfamily (Figure 1a, Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with reference to figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "bee53dc2-f037-46c7-9739-e08151b51c01",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C26",
+      "claim": "The CoA-binding pocket of FAALs shows the presence of bulky residues F279, W224, and M231 (in EcFAAL) at the base.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the CoA-binding pocket of FAALs shows the presence of bulky residues F279, W224, and M231 (in EcFAAL) at the base and a unique FAAL-specific helix (FSH) (T252-R258 in EcFAAL) at the entrance of the pocket (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with reference to figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "9c4924c5-2655-46df-a4d2-c87ff6c95f4e",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C27",
+      "claim": "FAALs have a unique FAAL-specific helix (FSH) (T252-R258 in EcFAAL) at the entrance of the CoA-binding pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the CoA-binding pocket of FAALs shows the presence of bulky residues F279, W224, and M231 (in EcFAAL) at the base and a unique FAAL-specific helix (FSH) (T252-R258 in EcFAAL) at the entrance of the pocket (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with reference to figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "ee78bb4d-42a1-48bf-89a3-c6f6fd5af17b",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C28",
+      "claim": "The bulky residues and FSH in FAALs are highly conserved in other FAALs.",
+      "claim_type": "EXPLICIT",
+      "source": "These elements are highly conserved in other FAALs (Figure 1c) and restrict the space available for the incoming 4'-PPant arm of both CoA and holo-ACP.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with reference to figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "eafb0df2-f014-4d09-a0f8-7e9dfa942e62",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C29",
+      "claim": "The overcrowded pocket along with the FSH at the entrance is unlikely to accommodate either CoA or 4'-PPant of holo-ACP.",
+      "claim_type": "EXPLICIT",
+      "source": "The superposition of CoA- and 4'-PPant-bound structures with FAALs revealed that the overcrowded pocket along with the FSH at the entrance of the pocket is unlikely to accommodate either CoA or 4'-PPant of holo-ACP by hindering their entry (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section based on structural analysis with reference to figure",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "3b21e6bb-a0b0-42ed-9f0e-96c7c93d8691",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C30",
+      "claim": "There are at least seven atoms of the N-terminal domain of FAALs at a distance less than 2.5 \u00c5 from the atoms of CoA in its various conformations found in different CoA-bound FACL structures.",
+      "claim_type": "EXPLICIT",
+      "source": "There are at least seven atoms of the N-terminal domain of FAALs at a distance less than 2.5 \u00c5 from the atoms of CoA in its various conformations found in the different CoA-bound FACL structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on distance measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "1e5ae9b4-b77e-4124-8e2f-4453f2a66f20",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C31",
+      "claim": "The N-terminal domain of FACLs shows only one atom at 2.5 \u00c5 from the multiple CoA conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "On the contrary, the N-terminal domain of FACLs shows only one atom at 2.5 \u00c5 from the multiple CoA conformations (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on distance measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "26fd75de-4caf-40ea-9743-21178ee1b87f",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C32",
+      "claim": "Individual mutations reducing the size of residues in the canonical CoA-binding pocket resulted in the production of acyl-CoA or 'gain of function' in FAALs.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual mutations reducing the size of residues in the canonical CoA-binding pocket resulted in the production of acyl-CoA or 'gain of function' in FAALs that otherwise does not make any acyl-CoA (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with reference to figure showing experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "dd5e84d7-d731-49c3-9da2-c22ac639bb83",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C33",
+      "claim": "MsFAAL32\u0394254-257 converted ~80% of the total acyl-AMP formed to acyl-CoA.",
+      "claim_type": "EXPLICIT",
+      "source": "A considerable amount of the total acyl-AMP formed was converted to acyl-CoA, ~80% in the case of MsFAAL32\u0394254-257 and ~60% in the case of RsFAAL\u0394240-243, when the FSH segment was deleted as compared to their wild-type proteins, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "40ed1ca1-971c-4ca6-a242-0be3e30e8147",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C34",
+      "claim": "RsFAAL\u0394240-243 converted ~60% of the total acyl-AMP formed to acyl-CoA.",
+      "claim_type": "EXPLICIT",
+      "source": "A considerable amount of the total acyl-AMP formed was converted to acyl-CoA, ~80% in the case of MsFAAL32\u0394254-257 and ~60% in the case of RsFAAL\u0394240-243, when the FSH segment was deleted as compared to their wild-type proteins, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "6adaed88-54f1-42b0-9c26-31ec8367f9f8",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C35",
+      "claim": "The A253F mutation in MtFACL13 shows reduced production of acyl-CoA by ~80%.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of the single-point mutants such as A253F in MtFACL13 show reduced production of acyl-CoA by ~80%, while mutations in combinations such as A276F/A232M of AfFACL reduce the turnover of acyl-AMP to acyl-CoA by 98% as compared to wild-type (100%) (Figure 2f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with reference to figure showing experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "152e3739-0b60-4aa1-a637-eb2097359674",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C36",
+      "claim": "The A276F/A232M mutations in AfFACL reduce the turnover of acyl-AMP to acyl-CoA by 98% as compared to wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of the single-point mutants such as A253F in MtFACL13 show reduced production of acyl-CoA by ~80%, while mutations in combinations such as A276F/A232M of AfFACL reduce the turnover of acyl-AMP to acyl-CoA by 98% as compared to wild-type (100%) (Figure 2f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with reference to figure showing experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "a44c3924-dc81-49a6-a9c0-b51b1d78849a",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C37",
+      "claim": "The size of residues in the canonical CoA-binding pocket dictates the ability to accommodate CoA and facilitate the thioesterification reaction with CoA.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations clearly indicate that the size of residues in the canonical CoA-binding pocket dictates the ability to accommodate CoA and hence the ability to facilitate the thioesterification reaction with CoA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as a conclusion from the mutation experiments",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "a15aa38a-8bc8-4ba8-b2cf-1cc5026058bc",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C38",
+      "claim": "RsFAAL\u0394FSH produces 2-fold excess acyl-CoA as compared to RsFAAL\u0394FSI.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of acyl-CoA production of the \u0394FSI with FSH deletion mutant (\u0394FSH) (Figure 2g) reveals that RsFAAL\u0394FSH produces 2-fold excess acyl-CoA as compared to RsFAAL\u0394FSI while MsFAAL32\u0394FSH produces 10-fold excess acyl-CoA as compared to MsFAAL32\u0394FSI (Figure 2h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with reference to figure showing experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "2ae1c502-969a-4b06-8f22-59f4f148470f",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C39",
+      "claim": "MsFAAL32\u0394FSH produces 10-fold excess acyl-CoA as compared to MsFAAL32\u0394FSI.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of acyl-CoA production of the \u0394FSI with FSH deletion mutant (\u0394FSH) (Figure 2g) reveals that RsFAAL\u0394FSH produces 2-fold excess acyl-CoA as compared to RsFAAL\u0394FSI while MsFAAL32\u0394FSH produces 10-fold excess acyl-CoA as compared to MsFAAL32\u0394FSI (Figure 2h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with reference to figure showing experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "5ce971b5-9ca6-4c54-896b-089df19e1c30",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C40",
+      "claim": "The FSH and other CoA-rejection elements around the canonical CoA-binding pocket significantly deter acyl-CoA production, which supersedes the inhibition of acyl-CoA production by FSI in FAALs.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it can be concluded that the FSH and other CoA- rejection elements around the canonical CoA-binding pocket significantly deter acyl-CoA production, which supersedes the inhibition of acyl-CoA production by FSI in FAALs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as a conclusion from the comparison experiments",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "1e5ab378-3ecc-402e-a004-f340c81e5f4b",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C41",
+      "claim": "A novel cavity was identified in the N-terminal domain of FAALs using various pocket search algorithms.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the crystal structures of the N-terminal domains of FAALs using various pocket search algorithms such as MOLE 2.0 (Pravda, 2018), DOGSiteScorer (Volkamer et al., 2012; Fahrrolfes, 2017), PyVOL (Smith et al., 2019), KVFinder (Oliveira, 2014), and POCASA (Yu et al., 2010) helped us in identifying a novel cavity in the N-terminal domain of FAALs (Figure 3a) but not identifiable in any of the known crystal structures of FACLs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with citations and reference to figure",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "94d65542-33cf-4417-82bc-a2a12b3adf60",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C42",
+      "claim": "The novel cavity identified in FAALs is not identifiable in any of the known crystal structures of FACLs.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the crystal structures of the N-terminal domains of FAALs using various pocket search algorithms such as MOLE 2.0 (Pravda, 2018), DOGSiteScorer (Volkamer et al., 2012; Fahrrolfes, 2017), PyVOL (Smith et al., 2019), KVFinder (Oliveira, 2014), and POCASA (Yu et al., 2010) helped us in identifying a novel cavity in the N-terminal domain of FAALs (Figure 3a) but not identifiable in any of the known crystal structures of FACLs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with citations and reference to figure",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "64139740-1af9-4792-8ee8-bb066ffcabeb",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C43",
+      "claim": "The entrance of the distinct tunnel in FAALs is on the N-terminal side of the FSH, while the canonical pocket to accommodate CoA is on the C-terminal side of the FSH.",
+      "claim_type": "EXPLICIT",
+      "source": "The entrance of the distinct tunnel is on the N-terminal side of the FSH, while the canonical pocket to accommodate CoA is on the C-terminal side of the FSH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section describing the structural features",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "3e27dfc0-f15c-47ca-9835-092b52783226",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C44",
+      "claim": "The longest length along the alternative pocket is aligned at ~25\u00b0 to the canonical CoA-binding pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "The longest length along this pocket is aligned at ~25\u00b0 to the canonical CoA-binding pocket.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section describing the structural features",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "1c81d686-029f-4d63-8138-d0f896f8272c",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C45",
+      "claim": "The loop regions at the entrance of the alternative pocket are highly variable in length but rich in prolines (occasionally threonine or serine).",
+      "claim_type": "EXPLICIT",
+      "source": "These loop regions are highly variable in length but rich in prolines (occasionally threonine or serine) some of which are conserved in FAALs such as P226 and P107 in EcFAAL (Figure 3b), while the FSH has a unique secondary structure characteristic of FAALs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with reference to figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "0d9f52f7-0e96-478e-ab2f-e0a9ecbd0cfe",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C46",
+      "claim": "P226 and P107 in EcFAAL are conserved prolines at the entrance of the alternative pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "These loop regions are highly variable in length but rich in prolines (occasionally threonine or serine) some of which are conserved in FAALs such as P226 and P107 in EcFAAL (Figure 3b), while the FSH has a unique secondary structure characteristic of FAALs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with reference to figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "150a7848-1601-4470-8444-a482ef920d58",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C47",
+      "claim": "The structurally analogous sites in FACLs show a high degree of variability with occasional prolines, but the frequency of prolines at the indicated positions is poor compared to FAALs.",
+      "claim_type": "EXPLICIT",
+      "source": "The structurally analogous sites in FACLs show a high degree of variability with occasional prolines, but the frequency of prolines at the indicated positions is poor, as compared to FAALs, and often replaced by Asn/Leu (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with reference to figure supplement",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "3a42856a-f90e-415c-ad1d-5f9dc4d4f021",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C48",
+      "claim": "Single-point mutations T83F or T83R, T252F or T252R, and P107F or P107R in EcFAAL can almost abrogate the acyl-transfer reaction on holo-EcACP.",
+      "claim_type": "EXPLICIT",
+      "source": "It was found that even a single-point mutation, T83F or T83R, T252F or T252R, and P107F or P107R in EcFAAL, can almost abrogate the acyl-transfer reaction on holo-EcACP (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with reference to figure showing experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "396af91b-e8e3-474e-879f-07ffd288b10f",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C49",
+      "claim": "The mutations in the alternative pocket did not affect the adenylation ability of the proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that these mutations did not affect the adenylation ability of the proteins (Figure 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with reference to figure showing experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "37fe8d02-1ffe-4869-a190-32284ff6f34b",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C50",
+      "claim": "Mutations in MxFAAL-MxACP and RsFAAL-RsACP pairs resulted in abrogation of the acyl-transfer ability on their respective cognate holo-ACPs.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutations in other FAAL-ACP pairs, MxFAAL-MxACP (Figure 4\u2014figure supplement 2a and b) and RsFAAL-RsACP (Figure 4\u2014figure supplement 2c and d), also resulted in similar abrogation of the acyl-transfer ability on their respective cognate holo-ACPs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with reference to figure supplement showing experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "fcc6275d-1afb-42d7-8f40-5697d25fe8f4",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C51",
+      "claim": "Mutations of residues guarding the alternative pocket to bulkier residues in the MsFAAL32-MsPKS131-1042 system resulted in diminished acyl-transfer ability.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutations of residues guarding the alternative pocket to bulkier residues in the MsFAAL32-MsPKS131-1042 system also resulted in diminished acyl-transfer ability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "96f02510-1f67-4c0e-9f93-ca4230967e4f",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C52",
+      "claim": "Blocking the entrance of the alternative pocket prevents the entry of the incoming 4'-PPant arm tethered to ACP.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that blocking the entrance of the alternative pocket prevents the entry of the incoming 4'-PPant arm tethered to ACP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as a conclusion from the mutation experiments",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "adaf5e21-afef-43bd-a50e-4bb73cffe5c9",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C53",
+      "claim": "The identified alternative pocket in FAALs is fully functional and distinct from the non-functional canonical pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, in FAALs, the identified alternative pocket is fully functional and distinct from the non-functional canonical pocket.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as a conclusion from the experiments",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "a37dc108-8f28-470a-8ec7-d8d8bb01382b",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C54",
+      "claim": "The 4'-PPant arm remains largely rigid in an extended form in CoA-bound ANL superfamily structures.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis reveals that the 4'-PPant arm remains largely rigid in an extended form and the major source of variability is the conformational freedom around the 4'-phosphate (Figure 5\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with reference to figure supplement based on structural analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "5ae98cb1-6379-45d0-ba7b-544ed7113719",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C55",
+      "claim": "The major source of variability in CoA conformations is the conformational freedom around the 4'-phosphate.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis reveals that the 4'-PPant arm remains largely rigid in an extended form and the major source of variability is the conformational freedom around the 4'-phosphate (Figure 5\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with reference to figure supplement based on structural analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "614c7ddc-386d-4094-9cc0-532386f4597d",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C56",
+      "claim": "The length of the 4'-PPant arm is around 18\u201320 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The length of the 4'-PPant arm is around 18\u201320 \u00c5 (Leibundgut et al., 2007) while it is around 15\u201316 \u00c5 (Mitchell et al., 2012) as seen in the crystal structures of various ANL superfamily members, which is comparable to the length of predicted pockets (17\u201318 \u00c5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section with citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "b55c7dcf-09ff-4982-ac7f-8ca86c00c1b9",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C57",
+      "claim": "The length of predicted pockets in FAALs is 17\u201318 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The length of the 4'-PPant arm is around 18\u201320 \u00c5 (Leibundgut et al., 2007) while it is around 15\u201316 \u00c5 (Mitchell et al., 2012) as seen in the crystal structures of various ANL superfamily members, which is comparable to the length of predicted pockets (17\u201318 \u00c5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on structural analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "99a371f0-f481-4db6-baad-645612d21bc2",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C58",
+      "claim": "Main-chain atoms and C\u03b2 atoms of the FAAL protein show an average of 28 clashes (van der Waals overlap >0.25 \u00c5) with the adenosine 3',5'-bisphosphate moiety of CoA.",
+      "claim_type": "EXPLICIT",
+      "source": "It was found that main-chain atoms and C\u03b2 atoms of the FAAL protein, irrespective of the conformation of the C-terminal domain (A-state or T-state), show an average of 28 clashes (van der Waals overlap >0.25 \u00c5) (Figure 5b, Figure 5\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with reference to figures based on structural analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "090ac230-36cb-40f6-be90-76c2dd8131d5",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C59",
+      "claim": "The N-terminal domain of FAALs forms a strong deterrent for accommodating adenosine 3',5'-bisphosphate and prevents CoA binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the N-terminal domain of FAALs itself forms a strong deterrent for accommodating adenosine 3',5'-bisphosphate and hence prevents CoA binding (Figure 5\u2014figure supplement 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with reference to figure supplement as a conclusion from the structural analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "cf76b0a9-78a6-4634-af89-05eef6e4d414",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C60",
+      "claim": "The structural elements resisting the adenosine 3',5'-bisphosphate are unique to FAALs such as the FSH and the loop harboring proline residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the structural elements resisting the adenosine 3',5'-bisphosphate are unique to FAALs such as the FSH (T252-R258 in EcFAAL) and the loop harboring proline residues that guard the opening of the tunnel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on structural analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "5961c38d-441f-4982-8d57-3f6e8f385226",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C61",
+      "claim": "The adenosine 3',5'-bisphosphate lacking 4'-PPant of holo-ACP can easily access the alternative pocket and participate in the acyl-transfer reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the adenosine 3',5'-bisphosphate lacking 4'-PPant of holo-ACP can easily access the pocket and participate in the acyl-transfer reaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as a conclusion from the structural analysis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "8087a508-e2b1-4d07-88eb-7ae52529de9b",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C62",
+      "claim": "FAAL-like proteins show a ubiquitous distribution across different forms of life including bacteria, plants, fungi, and animals, except archaea.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis revealed a ubiquitous distribution of FAALs across different forms of life including bacteria, plants, fungi, and animals, except archaea (Figure 6a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with reference to figure based on bioinformatic analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "4dd9f810-ef6d-4712-a1a1-0aad764f62a9",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C63",
+      "claim": "FAAL-like proteins show three subgroups: bacterial/plant FAALs group, fungal FAAL-like protein group, and animal FAAL-like protein group.",
+      "claim_type": "EXPLICIT",
+      "source": "FAAL-like proteins show three subgroups, viz., bacterial/plant FAALs group, fungal FAAL-like protein group, and animal FAAL-like protein group (Figure 6a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with reference to figure based on phylogenetic analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "8720c5a6-e5c0-4927-b3aa-81dc5a83d51f",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C64",
+      "claim": "Typical FAALs are bacterial FAALs, which are always found in a genomic context with PKS and PKS/NRPS hybrid genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Typical FAALs are bacterial FAALs, which are always found in a genomic context with PKS and PKS/NRPS hybrid genes either as a stand-alone domain or as a didomain fused to ACP or multidomain fused to the entire PKS/NRPS gene (Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on genomic analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "0e42e938-9fcb-42e3-ba36-eb7257b38127",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C65",
+      "claim": "Most plant FAAL-like domains resemble the bacterial FAALs from their sequence identity and domain organization.",
+      "claim_type": "EXPLICIT",
+      "source": "Most plant FAAL-like domains resemble the bacterial FAALs from their sequence identity and domain organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on sequence analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "400a393a-f83c-4c81-bb35-318702e563d6",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C66",
+      "claim": "Unique domain organizations are found in plant FAAL-like domains, where an uncharacterized protein has FAAL-like domains sandwiched between HemY domains and catalase domains or amino acid oxidase domains.",
+      "claim_type": "EXPLICIT",
+      "source": "However, unique domain organizations are also found in plant FAAL-like domains, where an uncharacterized protein has FAAL-like domains sandwiched between HemY domains and catalase domains or amino acid oxidase domains (Figure 6\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with reference to figure supplement based on domain analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "37653c41-53c9-43a9-b0a2-342b6e86bb7a",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C67",
+      "claim": "This is the first report of the presence of FAAL-like domains in plants.",
+      "claim_type": "EXPLICIT",
+      "source": "To the best of our knowledge, this is the first report of the presence of FAAL-like domains in plants and also the fusion of alternate domains to FAALs at their N-terminus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as a novel finding",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "3b285cb3-7aaa-48c1-9ee2-e59fd581ab3f",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C68",
+      "claim": "This is the first report of the fusion of alternate domains to FAALs at their N-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "To the best of our knowledge, this is the first report of the presence of FAAL-like domains in plants and also the fusion of alternate domains to FAALs at their N-terminus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as a novel finding",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "59133a15-ca88-4c1e-9f2a-9f9c29cbbaa3",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C69",
+      "claim": "Fungal and animal FAAL-like domains share a highly conserved three-domain architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, fungal and animal FAAL-like domains share a highly conserved three-domain architecture, and such an architecture is not seen in any of the prokaryotes and plants (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on domain analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "3bc23d7e-e82e-4f54-b41a-9acb55bbdd55",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C70",
+      "claim": "The conserved three-domain protein in fungi and animals consists of a N-terminal DMAP1-binding domain followed by a tandemly fused two FAAL-like domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The conserved three-domain protein consists of a N-terminal DMAP1-binding domain followed by a tandemly fused two FAAL-like domains as found in fungi to animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on domain analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "8fa040f8-b524-4134-a771-9bf15b78c883",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C71",
+      "claim": "FAAL-like domains are more widespread than previously anticipated and their omnipresence is comparable to the universally present FACLs.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these observations, FAAL-like domains are more widespread than previously anticipated and their omnipresence is comparable to the universally present FACLs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as a conclusion from the bioinformatic analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "2bc7f8f4-1fc0-45bd-abbb-a31602669753",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C72",
+      "claim": "FAALs may not have descended from FACLs and they rather share a parallel evolutionary history.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we propose that FAALs may not have descended from FACLs and they rather share a parallel evolutionary history.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as a proposed evolutionary model",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "c580947e-8c11-49b3-860e-a0ea154753e2",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C73",
+      "claim": "The ancestral ANL fold could have diverged as non-promiscuous FAAL-like members and promiscuous nonFAAL-like members simultaneously in the last universal common ancestor.",
+      "claim_type": "EXPLICIT",
+      "source": "The ancestral ANL fold could have diverged as non-promiscuous FAAL-like members and promiscuous nonFAAL-like members simultaneously in the last universal common ancestor (Figure 6b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with reference to figure as a proposed evolutionary model",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "9809cd8d-d305-401c-9fa1-bab993554187",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C74",
+      "claim": "The rejection mechanism in FAALs relies on a discriminatory 4'-PPant-accepting pocket while avoiding the promiscuous canonical CoA-binding pocket that is rendered non-functional.",
+      "claim_type": "EXPLICIT",
+      "source": "The rejection mechanism relies on a discriminatory 4'-PPant-accepting pocket while avoiding the promiscuous canonical CoA-binding pocket that is rendered non-functional.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the conclusions section summarizing the findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "ca50a396-331d-4e9f-a501-b65c19eba049",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C75",
+      "claim": "The non-functional canonical CoA-binding pocket has been achieved through bulky hydrophobic residues in the pocket and a unique secondary structural element, FSH, at the entrance.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been achieved through bulky hydrophobic residues in the pocket and a unique secondary structural element, FSH, at the entrance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the conclusions section summarizing the findings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "6302e97f-3753-4de1-af1b-b6306277dfab",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C76",
+      "claim": "The discriminatory 4'-PPant-accepting pocket in FAALs has a unique architecture that negatively selects adenosine 3',5'-bisphosphate moiety and also lacks Arg/Lys residues for positive selection.",
+      "claim_type": "EXPLICIT",
+      "source": "The discriminatory 4'-PPant-accepting pocket in FAALs, on the other hand, has a unique architecture that negatively selects adenosine 3',5'-bisphosphate moiety and also lacks Arg/Lys residues for positive selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the conclusions section summarizing the findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "417be884-5436-44b9-bffc-24122c6da568",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C77",
+      "claim": "The rejection criteria are conserved in all forms of life (excluding archaea).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, these rejection criteria are not only conserved in bacteria but also in all forms of life (excluding archaea).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the conclusions section summarizing the findings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "6f9ed8e3-ceb7-4978-a787-0847ab681fa5",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C78",
+      "claim": "The unique remodeling of pockets to ensure acceptor discrimination probably allowed the evolutionary recruitment of FAAL-like domains in metabolic crossroads for redirecting the fate of molecules to specific pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "The unique remodeling of pockets to ensure acceptor discrimination probably allowed the evolutionary recruitment of FAAL-like domains in metabolic crossroads for redirecting the fate of molecules to specific pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the conclusions section as an interpretation of the findings",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "0c3b07ee-0076-4bd2-952c-35ba7e3a2e1a",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C79",
+      "claim": "The widespread conservation of FAAL-like proteins puts the evolutionary origin of FAALs parallel with FACLs in the last universal common ancestor and not as a subset of FACLs.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a widespread conservation of FAAL-like proteins puts the evolutionary origin of FAALs parallel with FACLs in the last universal common ancestor and not as a subset of FACLs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the conclusions section as an interpretation of the findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "0e85d1e0-62e5-423c-9b33-3f8f806460bc",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C80",
+      "claim": "The CoA-bound structures of ANL superfamily members exhibit non-conformity in the binding mode of 4'-PPant or the adenosine 3',5'-bisphosphate moiety.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis shows that the CoA-bound structures of ANL superfamily members exhibit non-conformity in the binding mode of 4'-PPant or the adenosine 3',5'-bisphosphate moiety (Reger et al., 2008; Zahn, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the conclusions section with citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "ef087bdc-f7a9-4160-90a3-66f4ee0bf95e",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C81",
+      "claim": "A defined CoA-binding pocket is lacking in ANL superfamily members.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, it is evident that a defined CoA-binding pocket is lacking in ANL superfamily members, which is commensurate with the failure to identify the pocket in FACLs using various pocket search algorithms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the conclusions section as an interpretation of the findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "06eb247f-33f7-4ba1-ab48-4d1010fc8e34",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C82",
+      "claim": "FAALs are high-fidelity enzymes representing the extreme end of the promiscuity spectrum, offering no cross-reaction with CoA as acceptors of the acyl adenylates.",
+      "claim_type": "EXPLICIT",
+      "source": "In this context, FAALs are surprisingly high-fidelity enzymes representing the extreme end of the promiscuity spectrum, offering no cross-reaction with CoA as acceptors of the acyl adenylates (Trivedi, 2004; Arora, 2009; Goyal et al., 2012; Priyadarshan and Sankaranarayanan, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the conclusions section with citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "754d6f91-c833-495f-ae94-734f86a1660d",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C83",
+      "claim": "FAALs have been established as an alternative enzymatic bridge between FA synthesis, exogenous fatty acids import, and PKS/NRPS machinery that produce diverse bioactive natural products.",
+      "claim_type": "EXPLICIT",
+      "source": "A functional and discriminatory 4'-PPant binding in FAALs has established them as an alternative enzymatic bridge between FA synthesis, exogenous fatty acids import, and PKS/NRPS machinery that produce diverse bioactive natural products such as bacillomycin (Lu, 2019; Koumoutsi, 2004), mycosubtilin (Duitman, 1999), daptomycin (Wittmann et al., 2008; Baltz, 2021), phenylnannolone (Bouhired, 2014), alkylresorcylic acid (Hayashi et al., 2011), caryoynencin (Ross et al., 2014), vioprolide (Auerbach et al., 2018), taromycin A (Yamanaka, 2014), tambjamine (Marchetti et al., 2018), ambruticin (Hemmerling et al., 2018; Julien et al., 2006), , to name a few (Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the conclusions section with citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "29f75396-0863-45ee-b0b8-05f9b91ac3eb",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C84",
+      "claim": "The relevance of the lack of acceptor promiscuity in FAALs has been demonstrated in Mycobacteria as being responsible for dictating the fate of free fatty acids in producing virulent lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "The relevance of the lack of acceptor promiscuity in FAALs has been demonstrated in Mycobacteria as being responsible for dictating the fate of free fatty acids in producing virulent lipids (Arora, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the conclusions section with a citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "9a17f805-98c7-4335-be5e-289b7d89669d",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C85",
+      "claim": "The characteristic absence of FAALs in archaea can be explained by the abysmal frequency or absence of PKS or NRPS systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Their characteristic absence in archaea perhaps can be explained by the abysmal frequency or absence of PKS or NRPS systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the conclusions section as a speculation",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "9c4836e4-fc58-4227-adf3-91b77f484487",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C86",
+      "claim": "FAAL-like domain-containing proteins in fungi are annotated and characterized as the virulent factor CPS1 in few fungal pathogens such as Magnaporthe oryzae, Cochliobolus heterostrophus, and Coccidioides posadasii.",
+      "claim_type": "EXPLICIT",
+      "source": "These proteins are annotated and characterized as the virulent factor CPS1 in few fungal pathogens such as Magnaporthe oryzae (Wang, 2016), Cochliobolus heterostrophus (Lu, 2003), and Coccidioides posadasii (Narra, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the conclusions section with citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "7df1efdf-ed74-4653-ab13-aa06149fef49",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C87",
+      "claim": "CPS1 proteins are proposed as a target for potential fungicides and as a vaccine candidate in plant and animal pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, they are proposed as a target for potential fungicides and as a vaccine candidate in plant and animal pathogens, respectively (Wang, 2016; Lu, 2003; Narra, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the conclusions section with citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "d869d8a8-ed21-475a-b2ad-fb266bd7ff2d",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C88",
+      "claim": "In invertebrates and vertebrates, FAAL-like proteins are known as DIP2 and are important for proper axon bifurcation and guidance.",
+      "claim_type": "EXPLICIT",
+      "source": "In invertebrates and vertebrates, these are known as DIP2 and are important for proper axon bifurcation and guidance, suggesting their physiological importance (Nitta et al., 2017; Noblett, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the conclusions section with citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "0587e6c6-f90d-4819-8866-bd7349b0ee05",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "claim_id": "C89",
+      "claim": "Mice lacking DIP2A show a diet-dependent growth anomaly such as obesity.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, we showed that the mice lacking one of the eukaryotic FAAL-like proteins, DIP2A, show a diet-dependent growth anomaly such as obesity pointing to their importance in eukaryotic lipid metabolism (Kinatukara, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the conclusions section with a citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5f924d58-1fdb-429f-93f4-786ff0148e5f",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "FAALs have rendered the canonical CoA-binding pocket non-functional through bulky hydrophobic residues (F279, W224, M231) and a unique FAAL-specific helix (FSH) at the entrance, which sterically excludes CoA binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6, C25-C31 provide converging structural evidence from multiple FAAL structures showing the canonical pocket is blocked by bulky residues and FSH. Distance measurements (C30-C31) quantitatively demonstrate steric clashes. The conclusion (C74-C75) is well-supported by the structural data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "880a361a-d881-41ed-b799-20cc2e8a7345",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Mutations that reduce the size of residues in the canonical CoA-binding pocket enable gain-of-function in FAALs (producing acyl-CoA), while introducing bulky residues in FACLs causes loss-of-function. FSH deletion is more effective than FSI deletion at enabling acyl-CoA production.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C40 present systematic mutagenesis data with quantitative measurements showing gain-of-function (C32-C34) and loss-of-function (C35-C36) mutations. The comparison of FSH vs FSI deletions (C38-C40) provides clear evidence that FSH is the primary determinant. The experimental design and controls appear appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "a6542600-497e-4f70-b16c-297a46e963ef",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A novel alternative pocket was identified in FAALs using multiple computational pocket-finding algorithms. This pocket is distinct from the canonical pocket, oriented ~25\u00b0 differently, and features proline-rich loop regions at its entrance that are conserved in FAALs but not FACLs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C47 describe the identification and characterization of the alternative pocket using multiple independent algorithms (C41), providing structural details (C43-C44), and sequence conservation analysis (C45-C47). The use of multiple algorithms and comparative analysis with FACLs strengthens the finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "0811a1c2-6a8b-4121-8f8e-17a48f0051c1",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The alternative pocket in FAALs is functional for acyl-transfer to holo-ACP. Single-point mutations blocking the entrance of this pocket abrogate acyl-transfer activity without affecting adenylation, demonstrating the pocket's essential role in substrate discrimination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C53 present loss-of-function mutagenesis data across multiple FAAL-ACP pairs (C48, C50-C51) with appropriate controls showing adenylation is unaffected (C49). The modified radio-CS-PAGE assay appears validated. The conclusion (C52-C53) logically follows from the experimental evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "561c1cc7-bd25-4fd0-bff6-15044414cfe5",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The alternative pocket in FAALs discriminates against CoA through negative selection of the adenosine 3',5'-bisphosphate moiety. Structural analysis shows ~28 clashes between FAAL atoms and CoA conformations, while the 4'-PPant arm of holo-ACP can access the pocket without steric hindrance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C61 provide detailed structural analysis with quantitative clash measurements (C58) across multiple CoA conformations. The length compatibility analysis (C56-C57) and identification of FAAL-specific structural elements (C60) support the discrimination mechanism. Claim C76 appropriately summarizes the negative selection mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "5f9bc320-2e48-4e6c-a6b7-dfb40d4d1f74",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "FAAL-like proteins show ubiquitous distribution across bacteria, plants, fungi, and animals (excluding archaea), with three distinct subgroups. Novel domain organizations were identified, including the first report of FAAL-like domains in plants and a conserved three-domain architecture in fungi and animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C71 present comprehensive bioinformatic analysis identifying FAAL distribution and domain architectures. The phylogenetic analysis (C62-C63) and domain organization studies (C64-C70) appear systematic. Claims C67-C68 appropriately identify novel findings. The conclusion about widespread distribution (C71) is supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "a3513ddd-1aae-487f-bb78-373ad385ef65",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "FAALs share a parallel evolutionary history with FACLs rather than descending from them, with both diverging from a common ancestor in the last universal common ancestor (LUCA).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C72-C73, C79 propose an evolutionary model based on the widespread distribution of FAALs. While the ubiquitous distribution supports parallel evolution, the claims are explicitly speculative (evidence_type includes SPECULATION). Phylogenetic analysis alone cannot definitively establish the evolutionary relationship without additional evidence such as molecular clock analysis or functional intermediate forms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "75ff1f2e-7736-4c5d-ab68-32612042c153",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Analysis of 26 CoA/4'-PPant-bound ANL superfamily structures reveals that ligands interact through three categories of interactions but show no identical binding positions or orientations across structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 describe a comprehensive structural analysis of 59 protomers from 26 structures. The identification of three interaction categories (C24) with supporting citations and the observation of binding variability (C23) are well-documented. This provides important context for understanding the promiscuity of the canonical pocket.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "aff5289d-2fe3-4759-ab5b-27230b27b7c5",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "FAALs channelize fatty acids toward biosynthesis of virulent lipids and bioactive compounds by bypassing CoA-dependent activation and utilizing holo-ACP, showing narrow preference for holo-ACP over CoA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4, C18-C19 describe established knowledge about FAAL function based on prior work (evidence_type: KNOWLEDGE, CITATION). These claims provide essential background context and are supported by citations to previous studies. They establish the biological significance of the discrimination mechanism investigated in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "cd2db5f6-3b64-4376-9239-166451a3c33d",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The ANL superfamily includes FAALs, FACLs, A-domains, and luciferases, which produce diverse metabolites through a two-step mechanism. Members show acceptor promiscuity, with A-domains cross-reacting with CoA and luciferases/FACLs showing cross-activities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C17 establish background knowledge about the ANL superfamily with appropriate citations. These claims document the known promiscuity problem that motivates the study of FAAL specificity. The evidence is from prior literature and provides important context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "8ea51e34-7f45-4ac3-91c3-5d3c5e8c5786",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Previous work proposed that the FAAL-specific insertion (FSI) prevents reaction with CoA, but deletion or destabilization of FSI failed to convert FAALs into efficient acyl-CoA producers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C21 accurately summarize prior work with appropriate citations. This establishes the gap in understanding that the current study addresses, showing that FSI alone does not explain CoA rejection. The claims are supported by cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "093ae585-2a50-4caf-97aa-421b4ad32d1c",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The CoA rejection criteria identified in FAALs are conserved across all forms of life (excluding archaea), suggesting evolutionary recruitment of FAAL-like domains at metabolic crossroads for redirecting molecules to specific pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C77 is directly supported by the bioinformatic analysis showing conservation of rejection features across organisms (C62-C71). Claim C78 is a reasonable interpretation but includes speculative elements about evolutionary recruitment. The conservation data strongly supports C77, while C78 is a plausible but not definitively proven hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "1ac24e3e-dbe2-44c7-b296-a8867b875fae",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "CoA-bound ANL superfamily structures exhibit non-conformity in binding modes, indicating a lack of defined CoA-binding pocket. FAALs represent high-fidelity enzymes at the extreme end of the promiscuity spectrum with no CoA cross-reaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C82 synthesize findings from structural analysis (C80) with appropriate citations, draw logical conclusions about pocket definition (C81), and characterize FAALs' position in the promiscuity spectrum (C82) with supporting citations. These claims effectively contextualize the study's findings within the broader understanding of ANL superfamily enzymology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "823dc438-f4fa-4546-9d10-b593346da13f",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "FAALs serve as an alternative enzymatic bridge between fatty acid synthesis/import and PKS/NRPS machinery producing diverse bioactive natural products. Their lack of acceptor promiscuity dictates the fate of free fatty acids in producing virulent lipids in Mycobacteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C84 summarize the biological significance of FAAL specificity with extensive citations to prior work. These claims establish the functional importance of the discrimination mechanism characterized in this study and are well-supported by the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "b9299a4c-3f4e-423a-a7f0-8785e17f545a",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The absence of FAALs in archaea can be explained by the low frequency or absence of PKS or NRPS systems in these organisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C85 is explicitly speculative (evidence_type: SPECULATION) and proposes a correlation between FAAL absence and PKS/NRPS absence in archaea. While this is a reasonable hypothesis, no data is presented to test this correlation or rule out alternative explanations for FAAL absence in archaea.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    },
+    {
+      "id": "4572eb15-44d9-4c8e-ae19-39f14bb482e9",
+      "content_id": "a6bb9345-7386-4c67-a73c-70256d358fdc",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "FAAL-like proteins in eukaryotes have characterized biological roles: as virulence factor CPS1 in fungal pathogens (proposed as fungicide targets), as DIP2 proteins important for axon guidance in animals, and involvement in lipid metabolism with DIP2A knockout mice showing obesity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C89 summarize known biological functions of eukaryotic FAAL-like proteins with appropriate citations. These claims establish the broader significance of identifying FAAL-like proteins across eukaryotes and are supported by the cited literature, though they represent prior work rather than findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:21:35.536137Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0c255f54-e12d-4d3e-917d-4b0382798cea",
+      "result_id": "5f924d58-1fdb-429f-93f4-786ff0148e5f"
+    },
+    {
+      "claim_id": "f6d3a3ca-6d17-4867-a739-2c0cb544c2fd",
+      "result_id": "5f924d58-1fdb-429f-93f4-786ff0148e5f"
+    },
+    {
+      "claim_id": "37c2e772-0228-453e-bd2e-b2cbae695b40",
+      "result_id": "5f924d58-1fdb-429f-93f4-786ff0148e5f"
+    },
+    {
+      "claim_id": "bee53dc2-f037-46c7-9739-e08151b51c01",
+      "result_id": "5f924d58-1fdb-429f-93f4-786ff0148e5f"
+    },
+    {
+      "claim_id": "9c4924c5-2655-46df-a4d2-c87ff6c95f4e",
+      "result_id": "5f924d58-1fdb-429f-93f4-786ff0148e5f"
+    },
+    {
+      "claim_id": "ee78bb4d-42a1-48bf-89a3-c6f6fd5af17b",
+      "result_id": "5f924d58-1fdb-429f-93f4-786ff0148e5f"
+    },
+    {
+      "claim_id": "eafb0df2-f014-4d09-a0f8-7e9dfa942e62",
+      "result_id": "5f924d58-1fdb-429f-93f4-786ff0148e5f"
+    },
+    {
+      "claim_id": "3b21e6bb-a0b0-42ed-9f0e-96c7c93d8691",
+      "result_id": "5f924d58-1fdb-429f-93f4-786ff0148e5f"
+    },
+    {
+      "claim_id": "1e5ae9b4-b77e-4124-8e2f-4453f2a66f20",
+      "result_id": "5f924d58-1fdb-429f-93f4-786ff0148e5f"
+    },
+    {
+      "claim_id": "9809cd8d-d305-401c-9fa1-bab993554187",
+      "result_id": "5f924d58-1fdb-429f-93f4-786ff0148e5f"
+    },
+    {
+      "claim_id": "ca50a396-331d-4e9f-a501-b65c19eba049",
+      "result_id": "5f924d58-1fdb-429f-93f4-786ff0148e5f"
+    },
+    {
+      "claim_id": "26fd75de-4caf-40ea-9743-21178ee1b87f",
+      "result_id": "880a361a-d881-41ed-b799-20cc2e8a7345"
+    },
+    {
+      "claim_id": "dd5e84d7-d731-49c3-9da2-c22ac639bb83",
+      "result_id": "880a361a-d881-41ed-b799-20cc2e8a7345"
+    },
+    {
+      "claim_id": "40ed1ca1-971c-4ca6-a242-0be3e30e8147",
+      "result_id": "880a361a-d881-41ed-b799-20cc2e8a7345"
+    },
+    {
+      "claim_id": "6adaed88-54f1-42b0-9c26-31ec8367f9f8",
+      "result_id": "880a361a-d881-41ed-b799-20cc2e8a7345"
+    },
+    {
+      "claim_id": "152e3739-0b60-4aa1-a637-eb2097359674",
+      "result_id": "880a361a-d881-41ed-b799-20cc2e8a7345"
+    },
+    {
+      "claim_id": "a44c3924-dc81-49a6-a9c0-b51b1d78849a",
+      "result_id": "880a361a-d881-41ed-b799-20cc2e8a7345"
+    },
+    {
+      "claim_id": "a15aa38a-8bc8-4ba8-b2cf-1cc5026058bc",
+      "result_id": "880a361a-d881-41ed-b799-20cc2e8a7345"
+    },
+    {
+      "claim_id": "2ae1c502-969a-4b06-8f22-59f4f148470f",
+      "result_id": "880a361a-d881-41ed-b799-20cc2e8a7345"
+    },
+    {
+      "claim_id": "5ce971b5-9ca6-4c54-896b-089df19e1c30",
+      "result_id": "880a361a-d881-41ed-b799-20cc2e8a7345"
+    },
+    {
+      "claim_id": "1e5ab378-3ecc-402e-a004-f340c81e5f4b",
+      "result_id": "a6542600-497e-4f70-b16c-297a46e963ef"
+    },
+    {
+      "claim_id": "94d65542-33cf-4417-82bc-a2a12b3adf60",
+      "result_id": "a6542600-497e-4f70-b16c-297a46e963ef"
+    },
+    {
+      "claim_id": "64139740-1af9-4792-8ee8-bb066ffcabeb",
+      "result_id": "a6542600-497e-4f70-b16c-297a46e963ef"
+    },
+    {
+      "claim_id": "3e27dfc0-f15c-47ca-9835-092b52783226",
+      "result_id": "a6542600-497e-4f70-b16c-297a46e963ef"
+    },
+    {
+      "claim_id": "1c81d686-029f-4d63-8138-d0f896f8272c",
+      "result_id": "a6542600-497e-4f70-b16c-297a46e963ef"
+    },
+    {
+      "claim_id": "0d9f52f7-0e96-478e-ab2f-e0a9ecbd0cfe",
+      "result_id": "a6542600-497e-4f70-b16c-297a46e963ef"
+    },
+    {
+      "claim_id": "150a7848-1601-4470-8444-a482ef920d58",
+      "result_id": "a6542600-497e-4f70-b16c-297a46e963ef"
+    },
+    {
+      "claim_id": "3a42856a-f90e-415c-ad1d-5f9dc4d4f021",
+      "result_id": "0811a1c2-6a8b-4121-8f8e-17a48f0051c1"
+    },
+    {
+      "claim_id": "396af91b-e8e3-474e-879f-07ffd288b10f",
+      "result_id": "0811a1c2-6a8b-4121-8f8e-17a48f0051c1"
+    },
+    {
+      "claim_id": "37fe8d02-1ffe-4869-a190-32284ff6f34b",
+      "result_id": "0811a1c2-6a8b-4121-8f8e-17a48f0051c1"
+    },
+    {
+      "claim_id": "fcc6275d-1afb-42d7-8f40-5697d25fe8f4",
+      "result_id": "0811a1c2-6a8b-4121-8f8e-17a48f0051c1"
+    },
+    {
+      "claim_id": "96f02510-1f67-4c0e-9f93-ca4230967e4f",
+      "result_id": "0811a1c2-6a8b-4121-8f8e-17a48f0051c1"
+    },
+    {
+      "claim_id": "adaf5e21-afef-43bd-a50e-4bb73cffe5c9",
+      "result_id": "0811a1c2-6a8b-4121-8f8e-17a48f0051c1"
+    },
+    {
+      "claim_id": "a37dc108-8f28-470a-8ec7-d8d8bb01382b",
+      "result_id": "561c1cc7-bd25-4fd0-bff6-15044414cfe5"
+    },
+    {
+      "claim_id": "5ae98cb1-6379-45d0-ba7b-544ed7113719",
+      "result_id": "561c1cc7-bd25-4fd0-bff6-15044414cfe5"
+    },
+    {
+      "claim_id": "614c7ddc-386d-4094-9cc0-532386f4597d",
+      "result_id": "561c1cc7-bd25-4fd0-bff6-15044414cfe5"
+    },
+    {
+      "claim_id": "b55c7dcf-09ff-4982-ac7f-8ca86c00c1b9",
+      "result_id": "561c1cc7-bd25-4fd0-bff6-15044414cfe5"
+    },
+    {
+      "claim_id": "99a371f0-f481-4db6-baad-645612d21bc2",
+      "result_id": "561c1cc7-bd25-4fd0-bff6-15044414cfe5"
+    },
+    {
+      "claim_id": "090ac230-36cb-40f6-be90-76c2dd8131d5",
+      "result_id": "561c1cc7-bd25-4fd0-bff6-15044414cfe5"
+    },
+    {
+      "claim_id": "cf76b0a9-78a6-4634-af89-05eef6e4d414",
+      "result_id": "561c1cc7-bd25-4fd0-bff6-15044414cfe5"
+    },
+    {
+      "claim_id": "5961c38d-441f-4982-8d57-3f6e8f385226",
+      "result_id": "561c1cc7-bd25-4fd0-bff6-15044414cfe5"
+    },
+    {
+      "claim_id": "6302e97f-3753-4de1-af1b-b6306277dfab",
+      "result_id": "561c1cc7-bd25-4fd0-bff6-15044414cfe5"
+    },
+    {
+      "claim_id": "8087a508-e2b1-4d07-88eb-7ae52529de9b",
+      "result_id": "5f9bc320-2e48-4e6c-a6b7-dfb40d4d1f74"
+    },
+    {
+      "claim_id": "4dd9f810-ef6d-4712-a1a1-0aad764f62a9",
+      "result_id": "5f9bc320-2e48-4e6c-a6b7-dfb40d4d1f74"
+    },
+    {
+      "claim_id": "8720c5a6-e5c0-4927-b3aa-81dc5a83d51f",
+      "result_id": "5f9bc320-2e48-4e6c-a6b7-dfb40d4d1f74"
+    },
+    {
+      "claim_id": "0e42e938-9fcb-42e3-ba36-eb7257b38127",
+      "result_id": "5f9bc320-2e48-4e6c-a6b7-dfb40d4d1f74"
+    },
+    {
+      "claim_id": "400a393a-f83c-4c81-bb35-318702e563d6",
+      "result_id": "5f9bc320-2e48-4e6c-a6b7-dfb40d4d1f74"
+    },
+    {
+      "claim_id": "37653c41-53c9-43a9-b0a2-342b6e86bb7a",
+      "result_id": "5f9bc320-2e48-4e6c-a6b7-dfb40d4d1f74"
+    },
+    {
+      "claim_id": "3b285cb3-7aaa-48c1-9ee2-e59fd581ab3f",
+      "result_id": "5f9bc320-2e48-4e6c-a6b7-dfb40d4d1f74"
+    },
+    {
+      "claim_id": "59133a15-ca88-4c1e-9f2a-9f9c29cbbaa3",
+      "result_id": "5f9bc320-2e48-4e6c-a6b7-dfb40d4d1f74"
+    },
+    {
+      "claim_id": "3bc23d7e-e82e-4f54-b41a-9acb55bbdd55",
+      "result_id": "5f9bc320-2e48-4e6c-a6b7-dfb40d4d1f74"
+    },
+    {
+      "claim_id": "8fa040f8-b524-4134-a771-9bf15b78c883",
+      "result_id": "5f9bc320-2e48-4e6c-a6b7-dfb40d4d1f74"
+    },
+    {
+      "claim_id": "2bc7f8f4-1fc0-45bd-abbb-a31602669753",
+      "result_id": "a3513ddd-1aae-487f-bb78-373ad385ef65"
+    },
+    {
+      "claim_id": "c580947e-8c11-49b3-860e-a0ea154753e2",
+      "result_id": "a3513ddd-1aae-487f-bb78-373ad385ef65"
+    },
+    {
+      "claim_id": "0c3b07ee-0076-4bd2-952c-35ba7e3a2e1a",
+      "result_id": "a3513ddd-1aae-487f-bb78-373ad385ef65"
+    },
+    {
+      "claim_id": "c20c8b21-592d-48a5-9038-765bb15b9318",
+      "result_id": "75ff1f2e-7736-4c5d-ab68-32612042c153"
+    },
+    {
+      "claim_id": "4518e34d-aac4-4baf-ad0b-3cda518dcf0c",
+      "result_id": "75ff1f2e-7736-4c5d-ab68-32612042c153"
+    },
+    {
+      "claim_id": "871a9855-b767-488f-81f0-7eb7dd04d065",
+      "result_id": "75ff1f2e-7736-4c5d-ab68-32612042c153"
+    },
+    {
+      "claim_id": "dcc2a367-0b66-4e67-9ee8-31f046351c76",
+      "result_id": "aff5289d-2fe3-4759-ab5b-27230b27b7c5"
+    },
+    {
+      "claim_id": "f7d42343-201d-4df3-8a55-0883aa2edd81",
+      "result_id": "aff5289d-2fe3-4759-ab5b-27230b27b7c5"
+    },
+    {
+      "claim_id": "fc2a980f-3604-4074-8d90-a41bb1d58852",
+      "result_id": "aff5289d-2fe3-4759-ab5b-27230b27b7c5"
+    },
+    {
+      "claim_id": "40894a86-c624-4a9d-9b5b-cb0d5190c870",
+      "result_id": "aff5289d-2fe3-4759-ab5b-27230b27b7c5"
+    },
+    {
+      "claim_id": "afff9a4b-c8f8-4bb5-9d26-0198f90142a5",
+      "result_id": "aff5289d-2fe3-4759-ab5b-27230b27b7c5"
+    },
+    {
+      "claim_id": "5ac1611c-3044-479f-835d-a473a300bb92",
+      "result_id": "aff5289d-2fe3-4759-ab5b-27230b27b7c5"
+    },
+    {
+      "claim_id": "3b0d60a4-15a1-4adb-b939-1777e835ec74",
+      "result_id": "cd2db5f6-3b64-4376-9239-166451a3c33d"
+    },
+    {
+      "claim_id": "a8748132-66a3-48cc-ba88-5dc7489b96aa",
+      "result_id": "cd2db5f6-3b64-4376-9239-166451a3c33d"
+    },
+    {
+      "claim_id": "05c4e087-cb4b-4ecb-8aad-0f4799eba195",
+      "result_id": "cd2db5f6-3b64-4376-9239-166451a3c33d"
+    },
+    {
+      "claim_id": "7beaaea3-2578-4f24-aaeb-6224ea1b307d",
+      "result_id": "cd2db5f6-3b64-4376-9239-166451a3c33d"
+    },
+    {
+      "claim_id": "359dac26-c82b-48d4-9417-b87d09a86286",
+      "result_id": "cd2db5f6-3b64-4376-9239-166451a3c33d"
+    },
+    {
+      "claim_id": "d6d16896-82de-430f-b491-5a1cf4f894f4",
+      "result_id": "cd2db5f6-3b64-4376-9239-166451a3c33d"
+    },
+    {
+      "claim_id": "2c82bae1-ca64-467e-a19b-8b0b502d7493",
+      "result_id": "cd2db5f6-3b64-4376-9239-166451a3c33d"
+    },
+    {
+      "claim_id": "c34de16d-dca3-43fe-a3ce-356960070e72",
+      "result_id": "cd2db5f6-3b64-4376-9239-166451a3c33d"
+    },
+    {
+      "claim_id": "ab40d831-1b30-4b3d-828e-29b118218b3d",
+      "result_id": "8ea51e34-7f45-4ac3-91c3-5d3c5e8c5786"
+    },
+    {
+      "claim_id": "01db3f50-c4ef-42a2-8780-b966823050ab",
+      "result_id": "8ea51e34-7f45-4ac3-91c3-5d3c5e8c5786"
+    },
+    {
+      "claim_id": "417be884-5436-44b9-bffc-24122c6da568",
+      "result_id": "093ae585-2a50-4caf-97aa-421b4ad32d1c"
+    },
+    {
+      "claim_id": "6f9ed8e3-ceb7-4978-a787-0847ab681fa5",
+      "result_id": "093ae585-2a50-4caf-97aa-421b4ad32d1c"
+    },
+    {
+      "claim_id": "0e85d1e0-62e5-423c-9b33-3f8f806460bc",
+      "result_id": "1ac24e3e-dbe2-44c7-b296-a8867b875fae"
+    },
+    {
+      "claim_id": "ef087bdc-f7a9-4160-90a3-66f4ee0bf95e",
+      "result_id": "1ac24e3e-dbe2-44c7-b296-a8867b875fae"
+    },
+    {
+      "claim_id": "06eb247f-33f7-4ba1-ab48-4d1010fc8e34",
+      "result_id": "1ac24e3e-dbe2-44c7-b296-a8867b875fae"
+    },
+    {
+      "claim_id": "754d6f91-c833-495f-ae94-734f86a1660d",
+      "result_id": "823dc438-f4fa-4546-9d10-b593346da13f"
+    },
+    {
+      "claim_id": "29f75396-0863-45ee-b0b8-05f9b91ac3eb",
+      "result_id": "823dc438-f4fa-4546-9d10-b593346da13f"
+    },
+    {
+      "claim_id": "9a17f805-98c7-4335-be5e-289b7d89669d",
+      "result_id": "b9299a4c-3f4e-423a-a7f0-8785e17f545a"
+    },
+    {
+      "claim_id": "9c4836e4-fc58-4227-adf3-91b77f484487",
+      "result_id": "4572eb15-44d9-4c8e-ae19-39f14bb482e9"
+    },
+    {
+      "claim_id": "7df1efdf-ed74-4653-ab13-aa06149fef49",
+      "result_id": "4572eb15-44d9-4c8e-ae19-39f14bb482e9"
+    },
+    {
+      "claim_id": "d869d8a8-ed21-475a-b2ad-fb266bd7ff2d",
+      "result_id": "4572eb15-44d9-4c8e-ae19-39f14bb482e9"
+    },
+    {
+      "claim_id": "0587e6c6-f90d-4819-8866-bd7349b0ee05",
+      "result_id": "4572eb15-44d9-4c8e-ae19-39f14bb482e9"
+    }
+  ],
+  "comparisons": []
+}

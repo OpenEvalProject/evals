@@ -1,0 +1,350 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Maternal crowding induces winged offspring in pea aphids in a density- and duration-dependent manner. Two adults in contact for 4 hours is sufficient to produce over 80% winged offspring for 3 days, with 2-hour contact producing approximately 50% winged offspring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 provide consistent experimental evidence showing dose-response relationships for both maternal density and contact duration on wing morph determination. The data demonstrate clear thresholds and temporal dynamics, with appropriate statistical comparisons (Figure 1A-C). The results are reproducible across multiple aphid strains (Figure 1\u2014figure supplement 1).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C2"
+    ],
+    "result": "Wing disc degeneration in wingless-destined aphids initiates at 30 hours postbirth. Wing discs are morphologically similar between morphs at 24 hours but rapidly degenerate in wingless-destined morphs while continuing to develop in winged-destined morphs by 30 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 and C2 are well-supported by histological data (Figure 1E-F) showing temporal progression of wing disc development. The 30-hour timepoint is consistently identified across multiple experimental approaches. Statistical analysis confirms significant differences in wing disc area between morphs at 30 hours but not at 24 hours.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C76",
+      "C77"
+    ],
+    "result": "Wing disc degeneration in wingless-destined aphids occurs via autophagy rather than apoptosis. Autophagic features are observed in 54% of wingless-destined wing disc cells versus 15% in winged-destined cells, with elevated expression of autophagy-related genes but no significant differences in apoptosis-related genes or apoptotic morphological features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C41-C45, C76-C77 are strongly supported by multiple complementary approaches: TEM showing autophagic structures (C41-C43), immunofluorescence for ATG8 (Figure 2B), TUNEL assays showing minimal apoptosis (Figure 2C), and qPCR data for autophagy and apoptosis genes (C44-C45, Figure 2D-E). The convergence of morphological, molecular, and gene expression data provides robust evidence for autophagy as the primary mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C46",
+      "C47"
+    ],
+    "result": "Pharmacological manipulation of autophagy directly affects wing morph determination. Rapamycin (autophagy activator) reduces winged proportion from 67% to 36%, while 3-MA (autophagy inhibitor) increases winged proportion from 54% to 67%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C46-C47 demonstrate causal relationships through pharmacological intervention. The bidirectional effects of rapamycin and 3-MA on both autophagy levels (immunofluorescence, Figure 2F-G) and wing morph proportions (Figure 2H-I) provide strong evidence. However, potential off-target effects of these drugs are not discussed, and only single concentrations were tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C48",
+      "C49"
+    ],
+    "result": "RNA-seq identified 387 differentially expressed genes between wing morphs at 24 hours postbirth, including REPTOR2 and SLC38A9 in the TOR signaling pathway that are upregulated in wingless-destined morphs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C48-C49 are supported by RNA-seq data with three biological replicates (Figure 3A). The identification of REPTOR2 as a differentially expressed TOR pathway gene is appropriate given the study's focus on autophagy. However, the criteria for selecting these two genes from the TOR pathway (among potentially many pathway members) could be more explicitly justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C8",
+      "C98",
+      "C99"
+    ],
+    "result": "Pea aphids possess two REPTOR genes (ApREPTOR1 and ApREPTOR2), unlike seven other aphid species that have only one copy. ApREPTOR2 has 7 exons compared to ApREPTOR1's 9 exons, and is located on the X chromosome while ApREPTOR1 is on chromosome A1, suggesting ApREPTOR2 arose from duplication and translocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56, C8, C98-C99 are supported by comprehensive genomic analyses including phylogenetic trees (Figure 3D), sequence alignments (Figure 3C, E), chromosomal mapping (Figure 3G), and comparative genomics across aphid species. The evidence for gene duplication and translocation is strong, though the exact mechanism and timing of translocation remain inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C6"
+    ],
+    "result": "REPTOR2 shows higher expression in wingless-destined morphs at 12 and 24 hours postbirth, with highest expression in the thorax where wing discs are located.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 are supported by qPCR data showing temporal (Figure 3H) and spatial (Figure 3I) expression patterns. The thorax-specific enrichment is particularly relevant given the location of wing discs. The data are consistent with RNA-seq results (C6) and provide appropriate validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C9"
+    ],
+    "result": "RNAi-mediated knockdown of REPTOR2 reduces its expression by 53-65%, decreases expression of autophagy genes ATG13 and ATG14, attenuates wing disc autophagy, and increases winged morph proportion from 39% to 51%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 and C9 demonstrate functional importance of REPTOR2 through loss-of-function experiments. The data show consistent effects across molecular (FISH and qPCR, Figure 3K-L), cellular (immunofluorescence, Figure 3M), and organismal (wing morph proportion, Figure 3N) levels. The knockdown efficiency is moderate (53-65%), which may explain the partial phenotypic rescue.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "ApREPTOR1 expression is unaffected by wing morph or tissue type, and its knockdown does not affect REPTOR2, autophagy genes, or wing morph proportions, indicating ApREPTOR2 specifically regulates tissue-specific wing disc degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 provide important negative controls demonstrating functional divergence between the two REPTOR paralogs. The data (Figure 3\u2014figure supplement 1) show that only REPTOR2, not REPTOR1, is involved in wing dimorphism, supporting the hypothesis of neofunctionalization after gene duplication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C10"
+    ],
+    "result": "TOR expression is higher in wing discs of winged-destined compared to wingless-destined morphs, consistent with REPTOR's canonical role as a negative regulator of TOR signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63 and C10 are supported by FISH data (Figure 4A) showing differential TOR expression between morphs. This inverse relationship with REPTOR2 expression is consistent with known TOR-REPTOR regulatory relationships, though the manuscript incorrectly states this is consistent with \"REPTOR's canonical negative regulatory role of TOR\" when TOR actually negatively regulates REPTOR.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C11"
+    ],
+    "result": "RNAi knockdown of TOR reduces its expression by 34-48%, decreases winged proportion from 69% to 52%, and activates wing disc autophagy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 and C11 demonstrate TOR's role through loss-of-function experiments with consistent effects on gene expression (Figure 4B-C), wing morph (Figure 4D), and autophagy. However, the knockdown efficiency is moderate, and the phenotypic effect on wing proportion is less dramatic than REPTOR2 knockdown, which may reflect incomplete knockdown or compensatory mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "Pharmacological activation of TOR with MHY1485 suppresses wing disc autophagy and increases winged proportion from 37% to 55%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 provide gain-of-function evidence complementing the TOR knockdown experiments. The data show consistent bidirectional effects on autophagy (Figure 4E) and wing morph (Figure 4F). However, potential off-target effects of MHY1485 are not discussed, and only one concentration was tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "Dietary amino acid depletion (50% of standard) suppresses TOR activity, enhances wing disc autophagy, and dramatically decreases winged proportion from 49% to 15%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 demonstrate TOR regulation through nutrient availability, consistent with TOR's canonical role as a nutrient sensor. The large effect size on wing morph proportion (Figure 4H) is notable. However, amino acid depletion may have pleiotropic effects beyond TOR signaling that could contribute to the phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C12",
+      "C13"
+    ],
+    "result": "Co-suppression of TOR and REPTOR2 shows that REPTOR2 knockdown masks the autophagy-promoting effect of TOR knockdown. TOR knockdown increases REPTOR2 expression 1.75-1.97-fold, indicating REPTOR2 acts downstream of TOR in the signaling pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71, C12-C13 provide epistasis analysis demonstrating the regulatory hierarchy. The data show that dsREPTOR2 suppresses the phenotype of dsTOR (Figure 4I-J), and that TOR knockdown increases REPTOR2 expression (Figure 4K-L), consistent with TOR negatively regulating REPTOR2. This establishes REPTOR2 as downstream of TOR, though the molecular mechanism of regulation is not determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C14",
+      "C78",
+      "C79"
+    ],
+    "result": "The TOR signaling pathway suppresses autophagic degradation of wing discs by negatively regulating REPTOR2 expression. Maternal crowding increases TOR expression in offspring, repressing REPTOR2 and autophagy to produce winged morphs, while solitary conditions lead to low TOR, high REPTOR2, and autophagy-mediated wing disc degeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C78-C79 represent the main conclusions synthesizing multiple lines of evidence. The model is well-supported by the collective data on TOR and REPTOR2 expression patterns, functional manipulations, and epistasis experiments. However, the maternal signaling mechanisms that differentially regulate TOR in offspring remain unclear, and the direct molecular mechanism by which TOR regulates REPTOR2 expression is not established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C100"
+    ],
+    "result": "The translocation of REPTOR2 to the X chromosome may explain why sexual females are monomorphically wingless while males (with one X chromosome) are dimorphic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C100 is speculative and not directly tested. While the chromosomal location is established (C56), the functional connection to sex-specific wing patterns requires additional evidence such as dosage compensation analysis, sex-specific expression studies, or functional tests in males versus females. The hypothesis is plausible but remains unvalidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Wing dimorphism in insects is an adaptive trait balancing dispersal and reproduction, with the wingless morph optimizing resource allocation. In aphids, wing morph is maternally determined and influenced by environmental factors, with the winged morph being the ancestral default state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C15-C20 provide background context supported by appropriate citations to established literature. These claims accurately represent current understanding of wing dimorphism evolution and regulation, though they are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C75"
+    ],
+    "result": "Programmed cell death (PCD) including autophagy and apoptosis is common in insect tissue degradation, with tissue-specific requirements for different PCD types. Previous studies showed wing disc degeneration occurs via apoptosis in some insects but the mechanism in aphids was unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C26 and C75 provide relevant background on PCD mechanisms in insects, appropriately cited from literature. These establish the context for investigating which PCD type mediates aphid wing disc degeneration, though they represent prior knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The TOR pathway regulates growth-autophagy balance in response to nutrients and stress. TOR suppresses autophagy through multiple mechanisms including phosphorylation of Atg13 and REPTOR, with TOR downregulation necessary for autophagic tissue degradation in insects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32 accurately summarize established TOR pathway biology from cited literature. These provide essential background for the study's hypothesis but represent prior knowledge. The citations appropriately support each mechanistic claim about TOR function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C72",
+      "C73",
+      "C74",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Background on molecular mechanisms: SLC38A9 regulates TORC1 via amino acid sensing; REPTOR is a transcription factor in TOR signaling; wing discs contain cells destined to form wings; TOR pathway regulates developmental plasticity in insects including honeybee caste determination; insulin and TOR signaling are interconnected and both regulate wing dimorphism in insects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51, C72-C74, C80-C93 provide extensive background on relevant molecular mechanisms and prior studies, all appropriately cited. These establish the conceptual framework and justify the study's focus on TOR-REPTOR signaling. While accurately representing prior knowledge, these are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C101"
+    ],
+    "result": "Gene duplication is a major source of evolutionary novelty and phenotypic plasticity. Duplicated genes including fs3 in pea aphids and InR2 in planthoppers regulate wing dimorphism, with differential expression of paralogs representing adaptive responses to environmental challenges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 and C101 provide relevant evolutionary context for interpreting the REPTOR2 duplication, appropriately citing literature on gene duplication and wing polyphenism. These establish precedent for the study's findings but represent background knowledge rather than new results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "The pea aphid strain Ningxia Red used in this study was collected from Medicago sativa in Ningxia Province and maintained in laboratory culture for over 8 years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 describe the biological materials used in the study. This information is important for reproducibility and interpretation but represents methodological details rather than scientific findings. Long-term laboratory culture could potentially affect phenotypic plasticity, though this is not discussed.",
+    "result_type": "MINOR"
+  }
+]

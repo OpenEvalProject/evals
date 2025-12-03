@@ -1,0 +1,304 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C42",
+      "C43"
+    ],
+    "result": "The study recorded from 123 well-isolated MT neurons in two macaques performing an object motion detection task during self-motion. The task involved viewing two square planar objects defined by random dots while the animal was translated sinusoidally (0.5 Hz) along the preferred-null motion axis of the neuron. In the base condition (\u0394Depth = 0), both objects were stationary in the world. In other conditions, one object was stationary while a 'dynamic' object moved such that its depth defined by motion parallax (dMP) was inconsistent with its depth defined by binocular disparity (dBD), creating a cue conflict. Animals indicated their decision by making a saccade to one of two targets. The experimental design prevented animals from detecting the dynamic object based solely on retinal image velocity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C43 provide a comprehensive description of the experimental design, sample size, stimulus configuration, and behavioral task. These methodological details are clearly stated in the text and supported by figures (Figure 1A, B, Figure 1\u2014figure supplement 1, Video 1). The claims are internally consistent and provide sufficient detail to understand the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Monkeys performed at chance when \u0394Depth = 0, and their percent correct increased with the magnitude of \u0394Depth, demonstrating that monkeys can perform the task as expected from human behavioral work (Rushton et al., 2007). Performance was near chance levels in a control experiment without binocular disparity cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 describe the behavioral performance of the animals and are directly supported by data shown in Figure 1C and Figure 1\u2014figure supplement 2. The results are consistent with predictions from prior human studies (Rushton et al., 2007), providing validation of the task design. The control experiment without disparity cues further supports the interpretation that binocular disparity is critical for task performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Logistic regression analysis revealed that animals primarily weighted the |\u0394Depth| cue to make their decisions, although there were small contributions from the individual depth cues (dMP and dBD). This pattern held in both the two-object and four-object versions of the task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C48-C50 are supported by logistic regression analysis shown in Figure 1D, E and Figure 1\u2014figure supplement 3D, E. The statistical analysis appropriately quantifies the relative contributions of different depth cues to behavioral decisions. The finding that animals primarily rely on |\u0394Depth| rather than individual depth cues is critical for interpreting the neural data, as it confirms that animals are detecting cue conflicts rather than simply responding to depth from a single cue.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Depth tuning of MT neurons was measured for depth defined by binocular disparity or motion parallax cues. Example neurons showed either congruent tuning (preferring the same depth sign for both cues) or opposite tuning (preferring near depths for motion parallax but far depths for disparity). Motion parallax stimuli were presented monocularly to ensure selectivity was not due to binocular cues. Responses to binocular disparity were substantially greater than responses to motion parallax due to methodological differences in stimulus presentation. Across the population, depth-sign preferences for motion parallax were strongly biased toward near-preferring neurons, while disparity preferences were well balanced. Congruent and opposite cells were roughly equally prevalent in the MT sample.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C61 describe the depth tuning properties of MT neurons and are supported by data shown in Figures 2A-C and 3A, along with citations to prior work (Nadler et al., 2013). The methodological detail about monocular presentation of motion parallax stimuli (C53) is important for ruling out confounds. The explanation for differences in response magnitude between the two cues (C57) is reasonable given the stimulus parameters. The population-level characterization (C58-C61) is directly supported by Figure 3A and is consistent with prior reports.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "During the detection task, congruent cells responded more strongly to stationary objects than to dynamic objects, while opposite cells showed the reverse pattern, responding more strongly to dynamic objects. Across the population, peak response ratio (dynamic:stationary) was significantly anti-correlated with RMP_BD (R = \u22120.39, p=2.8\u00d710\u207b\u2075, n=106), indicating that neurons with incongruent depth tuning (RMP_BD < 0) tend to be preferentially activated by dynamic objects, while congruent neurons (RMP_BD > 0) tend to be preferentially activated by stationary objects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C71 describe the relationship between depth tuning congruency and responses to dynamic vs. stationary objects. These claims are supported by data shown in Figures 2D-F and 3B. The statistical analysis (Spearman correlation) is appropriate for the data. The finding that opposite cells preferentially respond to dynamic objects is a key result that supports the proposed mechanism. However, the authors acknowledge (C66-C67) that not all opposite cells are expected to respond preferentially to dynamic objects due to the fixed pedestal depth used in the experiment, which is an important caveat.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "DSDIdyn (quantifying each neuron's preference for positive/negative \u0394Depth values) was robustly correlated with \u0394DSDI (the difference in DSDI values computed from depth tuning curves for disparity and motion parallax) (R=0.54, p=2.7\u00d710\u207b\u2079, n=106). Thus, selectivity for \u0394Depth during the detection task is reasonably predictable from the congruency of depth tuning measured during a fixation task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 are supported by data shown in Figure 3C. The correlation analysis is appropriate and the result is statistically significant. This finding strengthens the link between depth tuning properties measured in a fixation task and responses during the detection task, supporting the hypothesis that incongruent tuning is functionally relevant for detecting object motion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Detection probability (DP) was computed from ambiguous trials (\u0394Depth = 0) by sorting responses according to the monkey's choice. The mean DP value of 0.56 was significantly greater than chance (p=6\u00d710\u207b\u2075, t(91) = 4.21, n=92), with 13 of 92 neurons showing individually significant DP values. All neurons with significant DP values had effects in the expected direction (DP>0.5). The mean DP value was significantly greater than chance for each monkey individually. This demonstrates that many MT neurons have responses that are correlated with detection choices in the task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C80 describe the detection probability analysis and are supported by data shown in Figure 4. The statistical tests (t-tests and permutation tests) are appropriate. The finding that MT neurons show choice-related activity is important for linking neural responses to perceptual decisions. However, the effect size is modest (mean DP = 0.56), and only 13 of 92 neurons showed individually significant effects, which suggests that the choice-related signal is relatively weak at the single-neuron level.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Neurometric performance (NP) quantified how reliably single neurons signal whether an object is dynamic or stationary. DP and NP were strongly correlated (R=0.47, p=3.2\u00d710\u207b\u2076, n=92), such that neurons with DP values substantially greater than 0.5 tend to be neurons that are selective for dynamic objects (NP >0.5). This correlation was significant for each animal individually. All neurons with large DP values (>0.7) also had NP values substantially greater than 0.5. Thus, the MT neurons that most strongly predict decisions to detect the dynamic object are those with a consistent preference for dynamic objects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 are supported by data shown in Figure 5G. The correlation analysis is appropriate and the result is statistically significant. This is a key finding that links neural selectivity for dynamic objects (NP) to choice-related activity (DP). The fact that these two metrics, computed from completely different sets of trials, are strongly correlated provides strong evidence that neurons with consistent preferences for dynamic objects are involved in perceptual decisions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C89",
+      "C90"
+    ],
+    "result": "The distribution of NP values was biased toward values >0.5 (mean NP = 0.56, significantly greater than 0.5, p=2.5\u00d710\u207b\u2076). This bias likely arises because the depth values for dynamic objects were biased toward negative (near) values, and most neurons have a near preference for depth from motion parallax. This asymmetry leads to a mean NP value >0.5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 describe a bias in the NP distribution and provide a reasonable explanation for it. The statistical test (one-sample t-test) is appropriate. The explanation (C87, C89-C90) is logical and consistent with the stimulus design and neural tuning properties shown in Figure 3A. This is an important caveat for interpreting the NP metric, as it indicates that the bias toward NP >0.5 is partly due to the stimulus distribution rather than solely reflecting neural selectivity for dynamic objects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "NP was robustly correlated with peak response ratio (R=0.43, p=4.5\u00d710\u207b\u2076), such that neurons with peak response ratios substantially greater than unity almost always have NP >0.5. However, there was no significant correlation between DP and peak response ratio (R=0.12, p=0.25), partly because there is a cluster of neurons with large peak response ratios that have DP values near 0.5. To achieve high NP values, neurons need to have a consistent preference for dynamic objects. What is crucial for producing high DP values is that a neuron consistently prefers dynamic objects over the range tested. This explains the robust correlation between DP and NP and the weak correlation between DP and peak response ratio. Thus, incongruent tuning tends to lead to a preference for dynamic objects (high peak response ratio), but does not always lead to high DP values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C98 are supported by data shown in Figure 5\u2014figure supplement 1A, B. The correlation analyses are appropriate. The interpretation (C95-C98) provides a reasonable explanation for why NP correlates with peak response ratio but DP does not. This analysis clarifies the relationship between different metrics of neural selectivity and choice-related activity, highlighting that consistency of preference across the stimulus range is important for producing strong choice-related signals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "Choice-related activity appeared within a few hundred ms after the onset of self-motion and was largely sustained throughout the rest of the stimulus period, even when motion of the object was in the anti-preferred direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 are supported by data shown in Figure 4\u2014figure supplement 1. The time course analysis provides additional characterization of the choice-related activity, showing that it is not transient but sustained throughout the trial. This is consistent with a role in perceptual decision-making.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "A simple linear decoder was trained to detect dynamic objects based on simulated responses of 97 MT neurons. The decoder performed very well, indicating that there is extensive information available in a moderately sized sample of MT neurons. With independent noise, there was a significant positive correlation between DPpred and NP (R=0.53, p=4.9\u00d710\u207b\u2078), consistent with empirical observations. There was also a strong relationship between DPpred and decoding weights (R=0.92, p<1\u00d710\u207b\u00b9\u2075), with positive readout weights being associated with DPpred values greater than 0.5. However, DPpred values tended to be substantially closer to 0.5 than the values observed experimentally, which is not surprising given that neurons in this simulation were assumed to have independent noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C108 describe the decoding simulations with independent noise and are supported by data shown in Figure 6A-C. The simulation approach is reasonable and the results are clearly presented. The finding that the decoder can recapitulate the relationship between DPpred and NP supports the hypothesis that MT neurons carry information for detecting dynamic objects. However, the authors appropriately note (C107-C108) that DPpred values are closer to 0.5 than observed experimentally, which motivates the subsequent simulations with correlated noise.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Neurons in MT exhibit correlated noise, and choice-related activity is expected to be stronger in the presence of correlated noise. Simulations with a moderate level of correlated noise (median Rnoise = 0.15) had little impact on decoder performance but resulted in DPpred values showing a greater spread around 0.5 and being much more strongly correlated with NP values (R=0.89, p<3\u00d710\u207b\u00b9\u2076, n=92). Correlated noise enhanced the relationship between DPpred and NP but weakened the relationship between DPpred and decoding weights (R=0.46, p=3.4\u00d710\u207b\u2076), as expected from theoretical studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C114 are supported by data shown in Figure 6D-F and citations to prior work on correlated noise in MT (Zohary et al., 1994; Huang and Lisberger, 2009) and theoretical predictions (Haefner et al., 2013). The simulations with correlated noise produce results that are more consistent with the empirical data, particularly the stronger correlation between DPpred and NP. The finding that correlated noise weakens the relationship between DPpred and decoding weights is consistent with theoretical predictions, which strengthens confidence in the simulation approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The simulations show that the main experimental finding is recapitulated by a simple linear decoder that is trained to distinguish between dynamic and static objects based on MT responses. However, the authors have not attempted to find parameters of the decoding simulations that would best match the empirical data, as this would require making assumptions about the structure of correlated noise that cannot be sufficiently constrained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117 provide a summary and caveat about the decoding simulations. The statement that the main experimental finding is recapitulated (C115) is supported by the data in Figure 6. The caveat (C116-C117) is appropriate and reflects a conservative approach to interpreting the simulations. While it would be possible to fit the model more closely to the data, the authors correctly note that this would require making unjustified assumptions about noise correlations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Decoding performance was significantly greater for the subgroup of neurons with the highest peak response ratios compared with the low and middle subgroups. Similarly, neurons with the most negative values of RMP_BD achieved significantly greater decoding performance than neurons with intermediate or high values of RMP_BD. DPpred values from decoding simulations were greatest for neurons with the highest peak response ratios and not significantly above chance for neurons with the lowest peak response ratios. These results demonstrate that neurons with incongruent tuning carry enhanced information for detecting moving objects during self-motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C122 are supported by data shown in Figure 7A, B. The analysis comparing decoding performance across subgroups based on peak response ratio or RMP_BD is appropriate and provides strong evidence that neurons with incongruent tuning carry more information for detecting dynamic objects. The finding that DPpred values are greatest for neurons with the highest peak response ratios (C120-C121) further supports this conclusion. This is a key result that demonstrates the functional importance of incongruent tuning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The decoding simulations demonstrate that a population of MT neurons with the described depth tuning properties could be utilized to detect scene-relative object motion, and that such a read-out could produce the relationship between DP and NP that was observed empirically. The simulations further indicate that neurons with larger peak response ratios provide better decoding performance, consistent with the idea that incongruent tuning is adaptive for detecting object motion during self-motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C126 provide a summary of the implications of the decoding simulations. These claims are supported by the data shown in Figures 6 and 7. The conclusion that incongruent tuning is adaptive for detecting object motion (C126) is a reasonable inference based on the decoding results, though it is important to note that this is a computational demonstration rather than direct evidence of how the brain actually performs this computation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C127",
+      "C128",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C183",
+      "C184",
+      "C185",
+      "C196"
+    ],
+    "result": "The study establishes that neurons in macaque MT area with incongruent depth tuning for binocular disparity and motion parallax cues respond selectively to scene-relative object motion, and their responses are predictive of perceptual decisions when animals detect a moving object during self-motion. MT neurons with incongruent tuning are generally more sensitive to scene-relative object motion than neurons with congruent tuning. Neurons with a consistent preference for dynamic objects tend to more strongly predict perceptual decisions. Training a linear decoder to detect object motion based on MT responses largely reproduces the main empirical results, and selectively decoding neurons with incongruent tuning yields better performance than decoding congruent neurons. These findings establish a novel mechanism for detecting moving objects during self-motion, revealing a sensory substrate for a specific form of causal inference. The findings provide novel evidence that the functional roles of MT go well beyond representing retinal image motion and suggest that some MT neurons play fundamental roles in helping to infer the origins, or causes, of retinal image motion. This provides the first empirical evidence for a specific contribution of opposite neurons to perceptual inference about causes of sensory signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the central result of the paper, integrating multiple lines of evidence from neural recordings, behavioral analysis, and computational modeling. The claims are well-supported by the data presented in Figures 2-7. The finding that neurons with incongruent tuning respond selectively to dynamic objects (C4, C5, C23, C127) is supported by Figures 2 and 3. The finding that these neurons predict perceptual decisions (C6, C24, C128) is supported by Figures 4 and 5. The decoding results (C25, C26, C123-C126) support the conclusion that this mechanism could be used to detect object motion. The interpretation that this establishes a novel mechanism for causal inference (C27, C28, C133-C135, C196) is reasonable given the data, though it is important to note that this is correlational evidence rather than causal manipulation. The claim of novelty (C7, C132, C135, C183-C185) is supported by the lack of prior direct evidence linking opposite neurons to behavior in this context.",
+    "result_type": "MAJOR"
+  }
+]

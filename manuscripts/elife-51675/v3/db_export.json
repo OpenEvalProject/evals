@@ -1,0 +1,1627 @@
+{
+  "submission": {
+    "id": "3acfb6fc-0bf3-4fa4-b6ec-a1ae51f75ddd",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T02:53:54.532692Z",
+    "updated_at": "2025-12-03T02:53:54.532692Z"
+  },
+  "content": [
+    {
+      "id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "submission_id": "3acfb6fc-0bf3-4fa4-b6ec-a1ae51f75ddd",
+      "content_type": "manuscript",
+      "content_text": "# Relationship between simultaneously recorded spiking activity and fluorescence signal in GCaMP6 transgenic mice\n\n## Authors\n\n- Lawrence Huang<sup>1</sup>\n- Peter Ledochowitsch<sup>1</sup> ([ORCID: 0000-0003-0835-3444](https://orcid.org/0000-0003-0835-3444))\n- Ulf Knoblich<sup>1</sup>\n- J\u00e9r\u00f4me Lecoq<sup>1</sup>\n- Gabe J Murphy<sup>1</sup>\n- R Clay Reid<sup>1</sup> ([ORCID: 0000-0002-8697-6797](https://orcid.org/0000-0002-8697-6797))\n- Saskia EJ de Vries<sup>1</sup> ([ORCID: 0000-0002-3704-3499](https://orcid.org/0000-0002-3704-3499))\n- Christof Koch<sup>1</sup>\n- Hongkui Zeng<sup>1</sup> ([ORCID: 0000-0002-0326-5878](https://orcid.org/0000-0002-0326-5878)) \u2020\n- Michael A Buice<sup>1</sup> ([ORCID: 0000-0002-2196-1498](https://orcid.org/0000-0002-2196-1498))\n- Jack Waters<sup>1</sup> ([ORCID: 0000-0002-2312-4183](https://orcid.org/0000-0002-2312-4183)) \u2020\n- Lu Li<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Allen Institute for Brain Science Seattle United States\n2. Guangdong Provincial Key Laboratory of Malignant Tumor Epigenetics and Gene Regulation, Guangdong-Hong Kong Joint Laboratory for RNA Medicine, Medical Research Center, Sun Yat-sen Memorial Hospital, Sun Yat-sen University Guangzhou China\n\n\u2020 Corresponding author\n\n## Abstract\n\nFluorescent calcium indicators are often used to investigate neural dynamics, but the relationship between fluorescence and action potentials (APs) remains unclear. Most APs can be detected when the soma almost fills the microscope\u2019s field of view, but calcium indicators are used to image populations of neurons, necessitating a large field of view, generating fewer photons per neuron, and compromising AP detection. Here, we characterized the AP-fluorescence transfer function in vivo for 48 layer 2/3 pyramidal neurons in primary visual cortex, with simultaneous calcium imaging and cell-attached recordings from transgenic mice expressing GCaMP6s or GCaMP6f. While most APs were detected under optimal conditions, under conditions typical of population imaging studies, only a minority of 1 AP and 2 AP events were detected (often <10% and ~20\u201330%, respectively), emphasizing the limits of AP detection under more realistic imaging conditions.\n\n## Introduction\n\nGenetically encoded calcium indicators (GECIs) are widely used with two-photon laser scanning microscopy to report neuronal activity within local populations in vivo (Luo et al., 2018). This optical approach is minimally invasive and enables simultaneous measurement of activity from hundreds or even thousands of neurons at single-cell resolution, over multiple sessions. Using a contemporary GECI such as GCaMP6s, fluorescence changes associated with isolated spikes (action potentials, APs) in vivo can be detected when imaged at sufficiently high spatiotemporal resolution (Chen et al., 2013) (http://dx.doi.org/10.6080/K02R3PMN). Yet undetected APs are common in population imaging experiments (Theis et al., 2016; Berens et al., 2018).\n\nInferring the underlying AP train or firing rate from calcium imaging remains challenging for several reasons. First, population imaging studies necessarily employ a large field of view containing many neurons. In contrast, the AP to calcium-dependent fluorescence transfer function is typically characterized with a soma filling the field of view of the microscope, to maximize photon flux from the soma and thereby signal-to-noise ratio. Second, there is no ground truth spiking information available for most neurons in a population. Spiking information, often from a cell-attached recording, can be used to refine the spike inference model and thereby optimize AP detection. Third, the AP to calcium-dependent fluorescence transfer function may be different for each neuron due to various intrinsic and extrinsic factors, such as neuron-to-neuron differences in indicator expression.\n\nCompared to viral expression, transgenic mouse lines offer convenience (e.g. bypassing virus injection and associated procedures) and achieve more uniform GECI expression in genetically defined neuronal populations (Madisen et al., 2015; Daigle et al., 2018). Using our intersectional transgenic mouse lines that enable Cre recombinase-dependent expression of GCaMP6s or GCaMP6f, we simultaneously characterized the spiking activity and fluorescence of individual GECI-expressing pyramidal neurons in layer 2/3 of mouse primary visual cortex (V1). We then tested the performance of several spike inference models, detecting APs under optimal conditions (models refined using the spiking information, with the soma filling the field of view) and under the less optimal conditions typical of population imaging experiments. Our results provide insight into the relationship between spiking activity in vivo and fluorescence signals and will aid the interpretation of existing and future calcium imaging datasets.\n\n## Results\n\nTo characterize the single-cell transfer function between observed fluorescence signals and underlying APs in vivo, we performed simultaneous calcium imaging and cell-attached recordings in V1 L2/3 excitatory pyramidal neurons in anesthetized mice (Figure 1A,B). To directly compare our results to virally\u00a0expressed GCaMP6f and GCaMP6s (Chen et al., 2013) (http://dx.doi.org/10.6080/K02R3PMN), we used a small field of view (19.3\u201327.3 \u00d7 19.3\u201321.5 \u00b5m; scanning rate 141.3\u2013158.3 frames per second [fps]). 2\u201310 min recordings were obtained from 213 neurons, all with fluorescence excluded from the nucleus. Quality control code was deployed to exclude from further analysis recordings with artifacts such as motion, photobleaching, somatic dye from the recording pipette, electrophysiological or fluorescence baseline instability, and abrupt changes in AP waveform (see 'Materials\u00a0and\u00a0methods'). The dataset for further analysis was from 48 neurons from mice of four transgenic lines, two expressing GCaMP6s and two GCaMP6f in excitatory neurons in layer 2/3 and deeper layers of cortex (Table 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/51675/elife-51675-fig1-v3.jpg)\n\n**Figure 1.:** (A) Experimental design. (B) Fluorescence and Vm traces from an exemplar Emx1-s neuron. (C) 5 s of data from the neuron in panel B, showing a 2\u00a0AP, a 1 AP, and a 3 AP event. Pre- and post-AP exclusion windows, used to separate events, are illustrated for each event.\u00a0AP,\u00a0action potential.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51675/elife-51675-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Mouse age. (B) Cell depths. (C) For each neuron, percentage of action potentials\u00a0(APs) contained within 1\u20135\u00a0AP events.\n\n**Table 1.**\n Dataset.Sample size for each mouse line (see also Figure 1\u2014figure supplement 1).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Mouse line</th>\n      <th>Acronym</th>\n      <th>GECI</th>\n      <th>Mice</th>\n      <th>Cells</th>\n      <th>Recording duration</th>\n      <th>APs per neuron</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Emx1-IRES-Cre; Camk2a-tTA;Ai94</td>\n      <td>Emx1-s</td>\n      <td>GCaMP6s</td>\n      <td>5</td>\n      <td>21</td>\n      <td>241\u00a0\u00b1\u00a032 s</td>\n      <td>478\u00a0\u00b1\u00a0121</td>\n    </tr>\n    <tr>\n      <td>Camk2a-tTA; tetO-GCaMP6s</td>\n      <td>tetO-s</td>\n      <td>GCaMP6s</td>\n      <td>1</td>\n      <td>4</td>\n      <td>347\u00a0\u00b1\u00a0108 s</td>\n      <td>348\u00a0\u00b1\u00a071</td>\n    </tr>\n    <tr>\n      <td>Cux2-CreERT2; Camk2a-tTA;Ai93</td>\n      <td>Cux2-f</td>\n      <td>GCaMP6f</td>\n      <td>3</td>\n      <td>12</td>\n      <td>300\u00a0\u00b1\u00a079 s</td>\n      <td>484\u00a0\u00b1\u00a0112</td>\n    </tr>\n    <tr>\n      <td>Emx1-IRES-Cre; Camk2a-tTA;Ai93</td>\n      <td>Emx1-f</td>\n      <td>GCaMP6f</td>\n      <td>4</td>\n      <td>11</td>\n      <td>201\u00a0\u00b1\u00a023 s</td>\n      <td>219\u00a0\u00b1\u00a038</td>\n    </tr>\n  </tbody>\n</table>\n\nWe analyzed events with fluorescence transients separated from those of adjacent events, containing a total of 5427 APs (28% of APs; Figure 1\u2014figure supplement 1C). An event was defined as one or more APs within 250 ms, with no APs in the preceding or subsequent 300 ms for GCaMP6f or 1 s and 500 ms for GCaMP6s (Figure 1C).\n\n### Calcium transients differ across mouse lines\n\nFluorescence measured from the soma is contaminated with fluorescence from the surrounding neuropil, due to the extended nature of the microscope point spread function. Neuropil contamination is often removed by subtracting a scaled version of the neuropil fluorescence from the somatic fluorescence, with the scale factor referred to as the r value (Kerlin et al., 2010; Akerboom et al., 2012). The r value can affect AP detection, with under-subtraction of neuropil leading to false positives (events detected when there was activity in the neuropil but not the soma) and over-subtraction leading\u00a0to false negatives (failure to detect somatic activity). We examined the effects of r on detection of 1\u00a0AP events, with electrical recordings providing ground truth (Figure 2 and Figure 2\u2014figure supplement 1). For many GCaMP6s neurons, the receiver operating characteristic (ROC) curve changed little with r (Figure 2A), indicating that APs were detected with few false positives with little effect of neuropil subtraction. Neuropil subtraction exerted a stronger influence on event detection in GCaMP6f neurons, where the ROC curve changed with r (Figure 2A), permitting identification of the optimal r as that which maximized the area under the ROC curve and, thereby, the true/false event detection ratio. Optimal r for Emx1-f and Cux2-f neurons was approximately normally distributed with mean \u00b1 SEM of 0.82\u00a0\u00b1\u00a00.07 (20 neurons, Figure 2B). Our results indicate that the value of r has a modest effect on event detection in GCaMP6f neurons in mouse V1. The effect of neuropil subtraction may be greater during coordinated activity across the whole network, such as during strong sensory stimuli.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/51675/elife-51675-fig2-v3.jpg)\n\n**Figure 2.:** (A) Effect of changing neuropil subtraction on detection for exemplar GCaMP6s and GCaMP6f neurons. Upper plots: family of receiver operating characteristic (ROC) curves. Each curve illustrates detection probability for true APs against probability of false positives as detection threshold is changed, for 1\u00a0AP events. False positives were calculated from time windows with no APs. Each ROC curve represents a different value of r. Lower plots: area under the ROC curve as a function of r. Gray symbols represent value of r for which r * Fneuropil(t) was greater than Fcell_measured(t), resulting in a negative F0 and inversion of the \u0394F/F trace. (B) Distribution of r values for 20 GCaMP6f neurons.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51675/elife-51675-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Simulated cell and neuropil traces. The neuropil trace contained transients that were (1) associated with cell transients and (2) between cell transients, and amplitudes were scaled by the neuropil contamination ratio r (r\u00a0=\u00a00.3) relative to the cell amplitudes. (B) (Left) Receiver operating characteristic (ROC) curves for classifying cell amplitudes, where r was varied from 0 to 1 for neuropil correction. The detection threshold was defined as the xth percentile of noise amplitudes (amplitudes of the neuropil trace that were between cell transients), where 1\u2013x represented the false positive probability, and the detection probability (true positive probability) was the fraction of estimated cell amplitudes (amplitudes of the summed trace that were associated with cell transients) above the detection threshold. (Right) Area under ROC curves as a function of r.\n\nAfter neuropil subtraction (see 'Materials\u00a0and\u00a0methods'), we averaged trials by number of APs, fit a sum of exponentials to estimate rise and decay time constants and calculated peak \u0394F/F (mean fluorescence over 100 ms around the maximum within 300 ms for GCaMP6f and 500 ms for GCaMP6s) for events with 1\u20135\u00a0APs (Figure 3). 28\u201355% of detected APs were in events with 1\u20135\u00a0APs (Figure 1\u2014figure supplement 1) and\u00a0>70% of these analyzed APs were in multi-AP events. As expected, peak \u0394F/F increased approximately linearly with 1\u20135\u00a0APs, and peak \u0394F/F and decay time constant were greater with GCaMP6s than GCaMP6f (Figure 3C). Peak \u0394F/F was comparable to or slightly greater than in previous studies with GCaMP6s and GCaMP6f, possibly because we subtracted more of the neuropil fluorescence with a slightly greater r value (r\u00a0=\u00a00.8 vs. 0.7; Chen et al., 2013).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/51675/elife-51675-fig3-v3.jpg)\n\n**Figure 3.:** (A) Example fluorescence traces (\u0394F/F, with r\u00a0=\u00a00.82 neuropil subtraction) for 1\u00a0AP, 2\u00a0AP, and 3\u00a0AP events for an exemplar Emx1-s neuron (forty-two 1\u00a0AP events, thirty-eight 2\u00a0AP events, sixteen 3\u00a0AP events) and an exemplar Emx1-f neuron (twenty-three 1\u00a0AP events, twelve 2\u00a0AP events, eleven 3\u00a0AP events). (B) Mean fluorescence traces and fits (sum of two exponentials) for 1\u20135\u00a0AP events for the two neurons in A. (C) Mean \u00b1 SEM peak DF/F, rise time constant, and decay time constant for four mouse lines. Number of neurons for 1\u20135\u00a0AP events were: 15, 16, 14, 9, 6 for Emx1-s; 4, 4, 4, 0, 0 for tetO-s; 10, 10, 10, 5, 4 for Emx1-f; 9, 9, 7, 4, 2 for Cux2-f. Asterisks indicate differences between mouse lines (p<0.05, one-way ANOVA).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51675/elife-51675-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Fraction of trials in which the peak of the fluorescence transient exceeded the range expected from Poisson noise, a measure of trial-to-trial variability.\u00a0(A) Example 1\u00a0AP event for an Emx1-s neuron, with fluorescence in units of photons. Dashed line: mean, across trials, of peak fluorescence. Gray: 95% confidence interval for Poisson-distributed noise. (B) Amplitudes of 1\u00a0AP events for 30 trials. Dashed line and gray area: mean and 95% confidence interval. (C) Mean \u00b1 SEM percentage of trials with peak \u0394F outside the 95% confidence interval, for each mouse line. In all four mouse lines, peak fluorescence exceeded the 95% confidence interval for Poisson-distributed noise in\u00a0>>5% of 1\u00a0AP trials. The fraction of trials outside the confidence interval correlated with resting fluorescence, likely the result of different illumination intensities across experiments.\n\nAs expected, photon shot noise was the dominant noise source in images from all mouse lines. The pixelwise slope of the least squares fit between the variance and mean of the photon flux was 1.04\u00a0\u00b1\u00a00.01 (mean \u00b1 SEM), consistent with the noise following a Poisson process (intercept \u22120.08\u00a0\u00b1\u00a00.2, 48 neurons). Trial-to-trial variability in the amplitude of the 1\u00a0AP-evoked fluorescence was substantial and exceeded photon shot noise in most neurons (Figure 3\u2014figure supplement 1). The sources of non-Poisson variability in our results are unclear, but negligible motion was visible in the movies after motion correction. Likely the variability results primarily from trial-to-trial differences in the AP-evoked calcium concentration,\u00a0assuming\u00a0GCaMP6f and GCaMP6s are expressed at sufficient concentrations to report resting changes in calcium concentration in all four mouse lines.\n\n### Increasing field of view reduces optimized event detection\n\nGCaMP6 indicators have been widely adopted because they exhibit greater AP-evoked \u0394F/F than previous GCaMP indicators, but still some APs may go undetected (Chen et al., 2013). Under ideal conditions, almost all APs can be detected (with probability close to 1 at a false positive probability of 1%; Chen et al., 2013). However, many imaging experiments are performed with a field of view of hundreds of micrometers and this large field of view limits the dwell time per soma and thereby the photon flux per soma and signal-to-noise ratio. What event detection rate might be expected when imaging a large field of view, sufficient to include hundreds of somata? How much does field of view affect event detection?\n\nWe calculated detection probability for 1\u00a0AP and 2\u00a0AP events, using AP times from electrophysiology recordings to optimize event detection for each neuron (Chen et al., 2013). In high spatial and temporal resolution images, the probability of 1\u00a0AP event detected spanned a wide range (probability 0.07\u20131 and 0.11\u20130.95 for GCaMP6s and GCaMP6f, at 1% false positive probability, Figure 4A-C). As expected (Dana et al., 2014; Wei et al., 2019), most 1\u00a0AP events were detected in GCaMP6s and GCaMP6f neurons, but with lower average probability in GCaMP6f neurons (1\u00a0AP detection probability 0.70\u00a0\u00b1\u00a00.06 for 18 Emx1-s neurons, 0.80\u00a0\u00b1\u00a00.03 for three tetO-s neurons, 0.40\u00a0\u00b1\u00a00.08 for nine Cux2-f neurons, 0.60\u00a0\u00b1\u00a00.08 for 11 Emx1-f neurons, mean \u00b1 SEM at 1% false positive probability). 2\u00a0AP events were reliably detected in all four mouse lines (Figure 4C; detection probability 0.90\u00a0\u00b1\u00a00.06 for Emx1-s, 1.0\u00a0\u00b1\u00a00.0 for tetO-s, 0.66\u00a0\u00b1\u00a00.07 for Cux2-f, 0.80\u00a0\u00b1\u00a00.05 for Emx1-f, at 1% false positive probability). In high spatial and temporal resolution images, in all four mouse lines, it was possible to detect most but by no means all 1\u00a0AP and 2\u00a0AP events with a false positive probability of only 1%.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/51675/elife-51675-fig4-v3.jpg)\n\n**Figure 4.:** (A\u2013C) Event detection from images at high spatial and temporal resolution. (A) Receiver operating characteristic (ROC) curves for 1\u00a0AP events in 42 neurons, organized by mouse line. Neuropil subtraction was performed with r\u00a0=\u00a00.8 where possible (see 'Materials\u00a0and\u00a0methods'). Numbers of neurons were 18 Emx1-s, 3 tetO-s, 11 Cux2-f, 9 Emx1-f. (B) Mean ROC curves for the four mouse lines. (C) Event detection probabilities for 1\u00a0AP and 2\u00a0AP events. Bars represent mean \u00b1 SEM. (D\u2013F) Equivalent plots for the same neurons after downsampling.\n\nIn these transgenic mice, 1\u00a0AP detection probabilities were lower than in previously reported neurons with virally\u00a0expressed GCaMP6s and GCaMP6f (0.99 and 0.84 at 1% false positive probability in Chen et al., 2013). There are several possible reasons for this difference. In the transgenic mice used here, GCaMP expression is widespread throughout neocortex, which may result in labeling of greater numbers of axons and dendrites that contribute to the neuropil signal. Furthermore, GCaMP6 expression may be weaker in the four TIGRE1.0 mouse line crosses examined here than with strong promoter-driven adeno-associated virus (AAV) vectors as used in Chen et al., 2013. The newer TIGRE2.0 reporter lines drive GCaMP expression that\u00a0is comparable to that from strong promoter-driven AAVs (Daigle et al., 2018), likely enabling 1\u00a0AP and 2\u00a0AP detection rates in transgenic mice that are comparable to those achieved with viral expression of GCaMP6.\n\nOur recordings were obtained with a small field of view, at a high frame rate and centered on the soma (~19.3\u00d719.3 \u00b5m,\u00a0~158 Hz, Figure 5A,B). In an attempt to simulate commonly used imaging conditions, we downsampled our images in space and time to mimic imaging with a 412 \u00d7 412 \u00b5m field of view at 30.3 Hz, as used in the Allen Brain Observatory (Figure 5C,D). The baseline fluorescence noise from downsampled images was comparable to that in the Allen Brain Observatory (Figure 5E) and is presumably comparable to images in many two-photon datasets with populations of hundreds of neurons.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/51675/elife-51675-fig5-v3.jpg)\n\n**Figure 5.:** (A) Original, high spatial and temporal resolution GCaMP6f image of an exemplar Cux2-f neuron.\u00a0(B) 1\u00a0AP, 2\u00a0AP, and 3\u00a0AP traces for the same neuron. Thin lines, individual trials; thick line, mean. Dashed line, \u0394F/F\u00a0=\u00a00. (C) Downsampled image of the same neuron. (D) Traces from the downsampled neuron. (E) Normalized distribution of baseline noise (robust standard deviation\u00a0[rSTD]) for 48 downsampled neurons (red) and 11,816 layer 2/3 neurons from Emx1-f and Cux2-f mice in the Allen Brain Observatory (blue).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51675/elife-51675-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Median of traces extracted from an example segmentation in which only the neuron of interest was found in each image during segmentation. The trace is significantly different from noise (KS test, p=1.8\u00d710\u221240). (B) Median of traces extracted from an example segmentation in which only the neuron of interest was found in each image during segmentation. The trace is not significantly different from noise (KS test, p=0.072). (C) Medians of traces extracted from an example segmentation in which three regions of interest were identified. Each trace is significantly different from noise (KS tests, p=7.7\u00d710\u2212152, 1.6 \u00d7 10\u221219, 2.2 \u00d7 10\u221225). The sum of these three cluster medians had the highest correlation with the firing rate and was therefore used as the \u0394F/F trace for this recording in the dataset. Scale bars apply to A\u2013C. (D) Example fluorescence trace with an abrupt and sustained rise in fluorescence and in spike rate and subsequent loss of spiking activity. This neuron was manually removed from the dataset.\n\nAs expected, event detection probabilities were lower for downsampled images than for the original, high-resolution images (Figure 4D\u2013F). 1\u00a0AP and 2\u00a0AP event detection probabilities were 0.32\u00a0\u00b1\u00a00.05 and 0.55\u00a0\u00b1\u00a00.08 for 18 Emx1-s neurons, 0.43\u00a0\u00b1\u00a00.07 and 0.89\u00a0\u00b1\u00a00.06 for three tetO-s neurons, 0.16\u00a0\u00b1\u00a00.04 and 0.24\u00a0\u00b1\u00a00.04 for 9 Cux2-f neurons, 0.21\u00a0\u00b1\u00a00.04 and 0.42\u00a0\u00b1\u00a00.09 for 11 Emx1-f neurons (mean \u00b1 SEM at 1% false positive probability). Even for 2\u00a0AP events, detection probability is\u00a0<0.5 when imaging with GCaMP6f and a field of view of several hundred micrometers.\n\nIn summary, 1\u00a0AP and 2\u00a0AP events were detected with high probability when images were acquired with high spatial and temporal resolution and when analysis was performed with an event detection algorithm optimized for each neuron using known AP times. Even with known AP times to optimize detection for each neuron, event detection was severely impaired by a reduction in spatial and temporal resolution to mimic a typical two-photon population imaging experiment.\n\n### Modest effect of field of view on event detection under typical imaging conditions\n\nIn a typical two-photon population imaging experiment, no electrophysiology recording is available to optimize event detection. Often, the shape of the calcium transient is estimated from published indicator rise and decay times or derived from a representative sample of fluorescence transients. What are typical event detection and false positive probabilities under these sub-optimal conditions\u00a0when the underlying AP times\u00a0are\u00a0unknown? Is performance degraded equally for high and for low resolution images?\n\nWe compared event detection from high-resolution and downsampled images using three spike inference algorithms: unconstrained non-negative deconvolution (NND; Friedrich et al., 2017), non-negative deconvolution with an L0 constraint to enforce event sparseness (Exact L0; Jewell et al., 2020), and a biophysical model that explicitly accounts for intracellular calcium dynamics (MLspike; Deneux et al., 2016). These three algorithms are among the highest performing spike inference algorithms (Berens et al., 2018).\n\nFor each neuron, the algorithms were deployed to estimate the number of APs in each image of the movie. All three algorithms estimated AP numbers that approximately recapitulated the number of APs measured with electrophysiology, but the number of APs per frame was typically not an integer due to imperfect spike inference (Figure 6A,D). We characterized performance using the Pearson correlation coefficient and the Matthews correlation coefficient, which compare measured and estimated AP number at each time point and the presence or absence of an event at each time point, respectively. Pearson correlation coefficients were\u00a0~0.4 when calculated with 33 ms time bins, increasing toward 0.7 as bin size was increased to 500 ms (Figure 6\u2014figure supplement 1), comparable to published results (Berens et al., 2018). Mean Pearson and Matthews correlation coefficients were similar across inference algorithms and mouse lines and differed little between high-resolution and downsampled images (Figure 6B,E).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/51675/elife-51675-fig6-v3.jpg)\n\n**Figure 6.:** (A) Results from an exemplar Cux2-f neuron, at high resolution. Fluorescence and action\u00a0potential\u00a0(AP) rate from electrophysiology (black). Below, APs per image frame estimated with three spike inference algorithms: MLspike (blue), Exact L0 (purple), and non-negative deconvolution (NND, orange). (B) Pearson correlation coefficient (r) and Matthews correlation coefficient (MCC) for the three algorithms for each mouse line. 300 ms bins. (C) Receiver operating characteristic (ROC) curves, reporting probabilities of detecting true and false events in each time bin. Thin lines: individual neurons. Thick lines: mean across neurons. 300 ms bins. (D\u2013F) Equivalent plots for downsampled images.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51675/elife-51675-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Receiver operating characteristic (ROC) curves for MLspike (blue), Exact L0 (purple), and non-negative deconvolution (NND) (orange) algorithms after binning of spike probabilities into 33, 100, 200, 300, and 500 ms bins, for downsampled images resampled to 150 Hz. (B and C) Pearson correlation coefficients (r) and Matthews correlation coefficients (MCC) for each bin duration.\n\nWe plot ROC curves to more directly examine the relationship between detected events and false positives. Since spike inference is generally useful only where false positive rates are low, we focused on false positive probabilities in the range of 0\u20130.05. Performance differed greatly between neurons, but mean ROC curves were similar across mouse lines, with only modest differences between algorithms, between GCaMP6s and GCaMP6f lines, or between high-resolution and downsampled conditions (Figure 6C,F).\n\nNaturally, detection probability increased with the number of APs per event. At a false positive probability of 0.01, detection probability was commonly\u00a0<0.1 for 1\u00a0AP events, increasing approximately linearly with AP number, often to\u00a0~0.8 for 5\u00a0AP events (Figure 7A,B). With 1\u00a0AP events being the most common event type in all four mouse lines (Figure 7C), it was possible to detect only a minority of events with a low false positive probability. Using these spike inference algorithms, although detection probabilities were commonly slightly lower for downsampled than for high-resolution images, the difference was modest, indicating that the decreased SNR of population imaging had little effect on event detection in our dataset.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/51675/elife-51675-fig7-v3.jpg)\n\n**Figure 7.:** (A) Mean \u00b1 SEM detection probabilities at 1% false positive probability for high-resolution images. (B) Mean \u00b1 SEM detection probabilities at 1% false positive probability for downsampled images. (C) Frequency of 0\u20135\u00a0AP events for 250 ms bins for each mouse line.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51675/elife-51675-fig7-figsupp1-v3.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Performance of the NND algorithm when applied to fluorescence traces from downsampled images (frame rate 30 Hz) and to the same fluorescence traces after upsampling to 150 Hz. 100 ms bins. (A) Pearson r and Matthews correlation coefficient (MCC). (B) Receiver operating characteristic (ROC) curves.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/51675/elife-51675-fig7-figsupp2-v3.jpg)\n\n**Figure 7\u2014figure supplement 2.:** Performance of MLspike with and without use of the autocalibration procedure, applied to downsampled images, with fluorescence traces upsampled to a frame rate of 158 Hz. 100 ms bins. (A) Pearson r and Matthews correlation coefficient (MCC). (B) Receiver operating characteristic (ROC) curves.\n\n![Figure 7\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/51675/elife-51675-fig7-figsupp3-v3.jpg)\n\n**Figure 7\u2014figure supplement 3.:** (A) Mean \u00b1 SEM 1\u00a0AP event detection probability at 1% false positive probability for ground\u00a0truth-optimized and blind algorithms (used in Figure 4 and in Figures 6 and 7, respectively). Traces were selected as for Figure 4. (B) 1\u00a0AP events detected by each blind algorithm as a fraction of those detected by the ground truth-optimized algorithm, at 1% false positive probability.\n\nUsing our dataset, we compared event detection with three algorithms: unpenalized\u00a0NND, NND with L0 constraint and mathematically guaranteed globally optimal solution (Exact L0), and the biophysically inspired MLspike model. For NND, performance was poor at 30 Hz and considerably improved by upsampling to 150 Hz (Figure 7\u2014figure supplement 1). Upsampling of low frame rate data, often to 100 Hz, is a common practice in the field (Theis et al., 2016; Berens et al., 2018; Pachitariu et al., 2018). For MLspike, performance was poor without use of the autocalibration procedure to optimize the model for each neuron (Figure 7\u2014figure supplement 2). MLspike thus contrasted with deconvolution-based algorithms, for which fixed parameters are more effective (Pachitariu et al., 2018). For Exact L0, neither upsampling nor optimization for each neuron was necessary for optimal mean performance across neurons.\n\nPachitariu et al., 2018 found that unpenalized\u00a0NND matched and often exceeded the performance of algorithms with sparsifying constraints such as NND with an approximate L0 constraint (no mathematical guarantee of globally optimal solution). Consistent with the conclusions of\u00a0Pachitariu et al., 2018, Exact L0 lagged the performance of NND for some metrics and genotypes (Figure 7 A, B) but was indistinguishable or even superior for others (Figure 6B,\u00a0E).\u00a0The performance of MLspike was broadly equivalent to that of NND, but the loss of performance due to downsampling was less with MLspike, resulting in outperformance of MLspike on downsampled images. Our results point to MLspike as a compelling choice for spike inference in population imaging experiments. Our results also suggest that\u00a0there\u00a0is ample room for improvement of spike inference models since event detection by the three spike inference models falls far short of the performance of the ground truth-optimized approach employed in Figure 4 (Figure 7\u2014figure supplement 3).\n\nIn summary, relative to small field-of-view imaging, population imaging conditions decreased the probability of spike event detection with an event detector optimized to each individual neuron using ground truth AP information (Figure 4). With blind spike inference, many events went undetected even under near-ideal imaging conditions with a small field of view, and event detection was not substantially worse under population imaging conditions (Figure 6, Figure 7, Figure 7\u2014figure supplement 3). The results of Figures 6 and 7 are likely representative of event detection in many GCaMP6 imaging experiments, where ground truth AP information is not available and blind spike inference is employed. Our results indicate that even though GCaMP6 indicators are bright and sensitive enough to enable the detection of most 1\u00a0AP events in superficial cortical pyramidal neurons in vivo if the detection procedure is optimized using ground truth AP information, most events containing 1, 2, and sometimes greater numbers of APs go undetected in our (and likely in\u00a0many other) imaging experiments with GCaMP6.\n\n## Discussion\n\nCalcium imaging is widely used to report neuronal spiking activity in vivo. However, accurate spike inference from calcium imaging remains a challenge, and there are relatively few ground truth datasets with simultaneous calcium imaging and electrophysiology to aid the development of more accurate spike inference algorithms. In a recent challenge,\u00a0~40 algorithms were trained and tested on datasets consisting of 37 GCaMP6-expressing neurons, underscoring the need for additional GCaMP6 calibration data (Berens et al., 2018). In addition to supporting efforts toward spike inference, an improved understanding of the relationship between spiking and observed fluorescence signals is necessary to further broaden the utility and impact of calcium imaging. To these ends, we contribute a ground truth dataset consisting of 48 V1 L2/3 excitatory neurons recorded at single-cell resolution (available at https://portal.brain-map.org/explore/circuits/oephys) and characterized their AP-to-calcium fluorescence transfer function. Complementing existing datasets with viral GECI expression (Chen et al., 2013; Theis et al., 2016; Dana et al., 2016), our work facilitates interpretation of existing and future calcium imaging studies using mainstream transgenic mouse lines, such as the Allen Institute\u2019s Brain Observatory Visual Coding dataset (http://observatory.brain-map.org/visualcoding) (de Vries et al., 2020).\n\nPrevious studies have established that most APs can be detected with GCaMP6 indicators under near-optimal conditions (Chen et al., 2013). Yet undetected APs are common in population imaging experiments (Theis et al., 2016; Berens et al., 2018). To investigate why APs are often missed during population imaging, we compared event detection in 250 ms time\u00a0windows with a neuronal soma occupying most of the image, near-optimal conditions for AP event detection, and event detection when the soma occupies just a small percentage of the field of view, less ideal conditions that are common in population imaging studies. Importantly, we downsampled images to simulate population imaging conditions, enabling comparison for the same APs under different imaging conditions.\n\nOur results indicate that, in GCaMP6 transgenic mice, most APs can be detected under near-optimal conditions, while detection is less effective during population imaging. These conclusions are similar to those of previous studies with viral GCaMP6 expression, but our results also reveal two reasons for the difference in detection. Unsurprisingly, the reduced signal-to-noise ratio of population imaging, relative to single soma imaging, results in less effective event detection. However, a high signal-to-noise ratio, achieved by imaging one soma, was no guarantee of effective event detection. Effective detection also required optimization of detection for the neuron of interest, using known AP times to identify events with different AP numbers and so generate kernels of the appropriate amplitude and time course. Parameter tuning in the absence of known AP times, with the MLspike autocalibration routine, improved event detection but not to the high standard of ground truth-optimized detection. Unfortunately, measuring AP times for every neuron with electrophysiology is rarely feasible, severely limiting the percentage of events one might reasonably expect to detect with GCaMP6 in most imaging experiments.\n\nOur results point to several practices that might be adopted to maximize spike detection. First, minimize the field of view, hence\u00a0maximizing photon flux per neuron. Second, tune the spike inference model for each neuron independently, where possible. Third, compare the results of several spike inference models. The three models employed here produced similar AP detection rates, whether applied to high-resolution or to downsampled images. Similarly, Pachitariu et al., 2018 observed that the L0 constraint failed to improve performance of the NND model. Nonetheless, each model has strengths and weaknesses. For example, a model may detect more APs than another but at the cost of a greater false positive rate. As a result, model performance may diverge for some AP rates and patterns. In the worst case, comparing models provides some protection from errors in implementation. Fourth, ensure that traces are sampled (or upsampled) at a sufficiently high rate when employing NND and use autocalibration with MLspike; both make a substantial difference to model performance. Finally, exercise caution when interpreting the inferred spike rates. Commonly, many APs are not detected using even the most accurate spike inference models.\n\nIn summary, in this study we present a ground truth dataset from anesthetized mice with simultaneous electrophysiology and calcium imaging. Analysis of this dataset revealed that only a small fraction of isolated APs were detected under typical population imaging conditions and with existing spike inference algorithms. By making our data freely available, we hope that it will serve the community as a further resource to better understand the quantitative link between calcium-evoked fluorescent imaging signals and spiking activity.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent Mus musculus</td>\n      <td>B6.129S2-Emx1tm1(cre)Krj/J, Emx1-IRES-Cre</td>\n      <td>Jackson Laboratory</td>\n      <td>RRID:IMSR_JAX:005628 RRID:MGI:2684610</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent Mus musculus</td>\n      <td>B6(Cg)-Cux2tm3.1(cre/ERT2)Mull/Mmmh, Cux2-CreERT2</td>\n      <td>MMRRC</td>\n      <td>RRID:MMRRC_032779-MU RRID:MGI:5014172</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent Mus musculus</td>\n      <td>B6.Cg-Tg(Camk2a-tTA)1Mmay/DboJ, Camk2a-tTA</td>\n      <td>Jackson Laboratory</td>\n      <td>RRID:IMSR_JAX:007004 RRID:MGI:2179066</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent Mus musculus</td>\n      <td>B6;DBA-Tg(tetO-GCaMP6s)2Niell/J, tetO-GCaMP6s</td>\n      <td>Jackson Laboratory</td>\n      <td>RRID:IMSR_JAX:024742 RRID:MGI:5553332</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent Mus musculus</td>\n      <td>B6;129S6-Igs7tm93.1(tetO-GCaMP6f)Hze/J, Ai93(TITL-GCaMP6f)</td>\n      <td>Jackson Laboratory</td>\n      <td>RRID:IMSR_JAX:024103 RRID:MGI:5558086</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent Mus musculus</td>\n      <td>B6.Cg-Igs7tm94.1(tetO-GCaMP6s)Hze/J, Ai94(TITL-GCaMP6s)</td>\n      <td>Jackson Laboratory</td>\n      <td>RRID:IMSR_JAX:024104 RRID:MGI:5607576</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MATLAB R2016b</td>\n      <td>http://www.mathworks.com/products/matlab/</td>\n      <td>RRID:SCR_001622</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Python 3.7.4</td>\n      <td>http://www.python.org/</td>\n      <td>RRID:SCR_008394</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>LabVIEW 2015</td>\n      <td>http://www.ni.com/labview/</td>\n      <td>RRID:SCR_014325</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\nExperimental procedures were conducted in accordance with NIH guidelines and approved by the Institutional Animal Care and Use Committee (IACUC) of the Allen Institute for Brain Science under protocol number 1509.\n\n### Mice\n\nTwo-photon-targeted electrophysiology and two-photon calcium imaging were conducted in 2-\u00a0to\u00a05-month-old male and female transgenic mice: five Emx1-IRES-Cre;Camk2a-tTA;Ai94 (Emx1-s) mice, one Camk2a-tTA;tetO-GCaMP6s (tetO-s) mouse, three Emx1-IRES-Cre;Camk2a-tTA;Ai93 (Emx1-f) mice, and four Cux2-CreERT2;Camk2a-tTA;Ai93 (Cux2-f) mice. All four lines drive GCaMP expression primarily in excitatory neurons. In Cux2-CreERT2 mice, Cre and GCaMP expression are enriched in layer 2/3 (Franco et al., 2012; Harris et al., 2014). In Emx1-IRES-Cre and Camk2a-tTA mice, GCaMP is expressed throughout cortical layers (Gorski et al., 2002; Wekselblatt et al., 2016). Images showing the pattern of Cre and GCaMP expression in these mouse lines are available via the Transgenic Characterization pages of the Allen Mouse Brain Connectivity Atlas and Allen Brain Observatory: https://connectivity.brain-map.org/transgenic, http://observatory.brain-map.org/visualcoding/transgenic.\n\nMice of some of the genotypes used here, most notably Emx1-f, can exhibit epileptiform activity (Steinmetz et al., 2017), including overt seizures. Mice with seizures were excluded from the study. However, the spiking patterns of neurons from GCaMP6s and -f lines commonly differed, suggesting that one or more transgenes affected cell or circuit activity (Figure 1\u2014figure supplement 1C).\n\n### Surgery\n\nMice were anesthetized with either isoflurane (0.75\u20131.5% in O2) or urethane (1.5 g/kg, 30% aqueous solution, intraperitoneal injection), then implanted with a metal head-post. A circular craniotomy was performed with skull thinning over the left V1 centering on 1.3 mm anterior and 2.6 mm lateral to the lambda. During surgery, the craniotomy was filled with artificial cerebrospinal fluid (ACSF) containing (in mM): NaCl 126, KCl 2.5, NaH2PO4 1.25, MgCl2 1, NaHCO3 26, glucose 10, CaCl2 2, in ddH2O; 290 mOsm; pH was adjusted to 7.3 with NaOH to keep the exposed V1 region from overheating or drying. Durotomy was performed to expose V1 regions of interest\u00a0(ROIs) that were free of major blood vessels to facilitate the penetration of recording micropipettes. A thin layer of low-melting-point agarose (1\u20131.3% in ACSF, Sigma-Aldrich) was then applied to the craniotomy to control brain motion. The mouse body temperature was maintained at 37\u00b0C with a feedback-controlled animal heating pad (Harvard Apparatus).\n\n### Calcium imaging\n\nIndividual GCaMP6+ neurons\u00a0~100\u2013300 \u00b5m below the pial surface of cortex were visualized under adequate anesthesia (stage III-3) using a Bruker (Prairie) two-photon microscope and Chameleon Ultra II Ti:sapphire laser (Coherent). Fluorescence excited at 920 nm wavelength, with\u00a0<70 mW laser power measured after the objective, was collected in two spectral channels using green (510/42 nm) and red (641/75 nm) emission filters (Semrock) to visualize GCaMP6 and the Alexa Fluor 594-containing micropipette, respectively. Fluorescence images of 96\u2013136 \u00d7 96\u2013107 pixels and a 19.3\u201327.3 \u00d7 19.3\u201321.5 \u00b5m field of view were acquired at 141.3\u2013158 frames per second through a 16\u00d7 water\u00a0immersion objective lens (Nikon, NA 0.8). Recordings included periods with and without visual stimuli. Mean \u00b1 SEM number of pixels per neuron was 1136\u00a0\u00b1\u00a046.\n\n### Electrophysiology\n\nTwo-photon-targeted cell-attached recording was performed following established protocols (Margrie et al., 2003; Kitamura et al., 2008; Knoblich et al., 2019). Long-shank borosilicate (KG-33, King Precision Glass) micropipettes (5\u201310 M\u03a9) were pulled with a P-97 puller (Sutter) and filled with ACSF and Alexa Fluor 594 to perform cell-attached recordings on GCaMP6+ neurons. Micropipettes were installed on a MultiClamp 700B headstage (Molecular Devices), which was mounted onto a Patchstar micromanipulator (Scientifica) with an approaching angle of 31\u00b0 from horizontal plane. Minimal seal resistance was 20 M\u03a9. Data were acquired under \u2018I\u00a0=\u00a00\u2019 mode (zero current injection) with a Multiclamp 700B, recorded at 40 kHz using Multifunction I/O Devices (National Instruments) and custom software written in LabVIEW (National Instruments) and MATLAB (MathWorks). Isoflurane level was intentionally adjusted during recording sessions to keep the anesthesia depth as light as possible, resulting in fluctuation of the firing rates of recorded neurons.\n\n### Visual stimulation\n\nWhole-screen sinusoidal static and drifting gratings were presented on a calibrated LCD monitor spanning 60\u00b0 in elevation and 130\u00b0 in azimuth to the contralateral eye. The mouse\u2019s eye was positioned\u00a0~22 cm away from the center of the monitor. For static gratings, the stimulus consisted of four orientations (45\u00b0 increment), four spatial frequencies (0.02, 0.04, 0.08, and 0.16 cycles per degree), and four phases (0, 0.25, 0.5, 0.75) at 80% contrast in a random sequence with 10 repetitions. Each static grating was presented for 0.25 s, with no inter-stimulus interval. A gray screen at mean illuminance was presented randomly a total of 60 times. For drifting gratings, the stimulus consisted of eight orientations (45\u00b0 increment), four spatial frequency (0.02, 0.04, 0.08, and 0.16 cycles per degree), and one temporal frequency (2 Hz), at 80% contrast in a random sequence with up to five repetitions. Each drifting grating lasted for 2 s with an inter-stimulus interval of 2 s. A gray screen at mean illuminance was presented randomly for up to 15 times.\n\n### Neuron selection\n\nWe obtained recordings from 213 neurons and developed a numerical routine to exclude neurons with questionable electrophysiology or fluorescence movies, such as abrupt changes in baseline voltage or AP waveform or image artifacts such as those due to motion, photobleaching, or other slow baseline changes. Neurons were accepted for analysis if they passed both electrophysiology and image quality control criteria. Electrophysiology quality control is described in the next section and imaging quality control in the \u2018Image downsampling\u2019 section; 145 and 10 neurons were eliminated in the electrophysiology and image quality control steps, leaving 58 neurons. Of these, 10 were excluded from further analysis: red indicator had entered the soma from the pipette in seven instances, two neurons segmented poorly during image analysis, and one had a truncated electrophysiology recording. The final dataset consisted of 48 neurons.\n\n### Electrophysiology quality control\n\nElectrophysiology traces were first baseline-subtracted to remove slow drift (third-order Savitzky-Golay filter over 20,001 samples using MATLAB\u00a0sgolayfilt). APs were detected as peaks of amplitude more than 10 times the Quiroga threshold (QT), the median(|V(t)|/0.6745).\n\nTo develop a numerical routine, a group of human annotators identified 48 \u2018high-quality\u2019 electrophysiology recordings. We then compiled a large set of descriptive statistics, listed below, and calculated the distribution of each of these statistics in the reference dataset, thereby defining an acceptable range expected of high-quality recordings. Each descriptive statistic was subsequently computed for recordings from all 213 neurons. Each recording was passed for further analysis if for all metrics it fell within the range spanned by the manually selected dataset of 48 recordings.\n\nFor each electrophysiology recording, we calculated 35 descriptive statistics.\n\nMetrics computed on continuous electrophysiological data:\n\n(1)\u00a0Median relative deviation of the membrane potential (MRDM), the ratio between the median absolute deviation (MAD) and the median: MRDM = MAD(Vm)/median(Vm).\n\n(2)\u00a0Mean of the baseline (BL).\n\n(3)\u00a0Coefficient of variation of the baseline: std\u00a0(BL)/mean\u00a0(BL).\n\n(4)\u00a0Mean of the baseline noise, approximated by the QT (Jewell et al., 2020).\n\n(5)\u00a0Stability of the QT: thousand 10\u00a0s\u00a0intervals were uniformly sampled from each recording, and the QT was computed on each sample. Quiroga noise stability (QNS) was defined as the coefficient of variation over the 1000 QT samples.\n\n(6)\u00a0r2 of linear regression (MATLAB regression function) of the 1000 QT samples against the start times of the 10 s segments on which the QT was computed.\n\n(7)\u00a0Slope of linear regression (MATLAB regression function) of the 1000 QT samples against the start times of the 10 s segments on which the QT was computed.\n\n(8)\u00a0r2 of linear regression (MATLAB regression function) of the baseline against time.\n\n(9)\u00a0Slope of linear regression (MATLAB regression function) of the baseline against time.\n\n(10)\u00a0The number of samples for which the baseline-subtracted trace exceeds the QT divided by the number of samples for which it dips below the negative of the QT.\n\nMetrics computed on the AP time series. Only recordings with\u00a0>3\u00a0APs were included:\n\n(11)\u00a0Number of APs.\n\n(12)\u00a0Maximum likelihood inter-AP interval (MATLAB lognfit function).\n\n(13)\u00a0Mean AP amplitude.\n\n(14)\u00a0AP amplitude coefficient of variation.\n\n(15)\u00a0AP amplitude median relative deviation.\n\n(16)\u00a0Relative AP amplitude range: (max[amplitude] \u2013 min[amplitude])/median(amplitude).\n\n(17)\u00a0AP amplitude max/min ratio: max(amplitude)/min(amplitude).\n\n(18)\u00a0Signal-to-noise ratio (SNR), median(amplitude)/QT.\n\nMetrics computed on 2-ms-long AP waveforms, AP time\u00a0\u00b11 ms smoothed with MATLAB smooth function with sgolay option:\n\n(19)\u00a0'Left' width-half-max (LWHM), the mean width at half the amplitude before the detected AP time.\n\n(20)\u00a0'Right' width-half-max (RWHM), the mean width at half the amplitude after the detected AP time.\n\n(21)\u00a0Full width at half amplitude (FWHM). FWHM = LWHM + RWHM.\n\n(22)\u00a0Coefficient of variation of LWHM.\n\n(23)\u00a0Coefficient of variation of RWHM.\n\n(24)\u00a0Coefficient of variation of FWHM.\n\n(25)\u00a0r2 of linear regression (MATLAB regression function) of AP amplitude against AP time.\n\n(26)\u00a0Slope of linear regression (MATLAB regression function) of AP amplitude against AP time.\n\n(27)\u00a0r2 of linear regression (MATLAB regression function) of AP FWHM against AP time.\n\n(28)\u00a0Slope of linear regression (MATLAB regression function) of AP FWHM against AP time.\n\nFiring\u00a0rate-based metrics. Firing rate was estimated by convolution of the AP train with a 1-s-long box-car window (MATLAB conv function):\n\n(29)\u00a0Mean firing rate (FR).\n\n(30)\u00a0Coefficient of variation of FR.\n\n(31)\u00a0r2 of linear regression (MATLAB regression function) of firing rate against time.\n\n(32)\u00a0Slope of linear regression (MATLAB regression function) of firing rate against time.\n\n(33)\u00a0Pearson correlation (MATLAB corrcoef function) of BL vs. FR.\n\n(34)\u00a0Pearson correlation (MATLAB corrcoef function) between the baseline at AP time points and AP amplitude.\n\n(35)\u00a0Pearson correlation (MATLAB corrcoef function) between the baseline at AP times and the AP FWHM.\n\n### Neuropil subtraction, high-resolution images\n\nTo approximate somatic fluorescence (Fcell_true) without neuropil contamination, a scale version of the neuropil fluorescence (Fneuropil) was subtracted from each somatic fluorescence trace, after (Akerboom et al., 2012): Fcell_true(t) = Fcell_measured(t)\u00a0\u2013 r * Fneuropil(t). We determined the optimal scale factor (r) for neurons with GCaMP6f to be 0.82 (see 'Results'\u00a0section). We therefore used r\u00a0=\u00a00.8 as our default scale factor. For some neurons, Fneuropil was large enough relative to Fcell_measured that r\u00a0=\u00a00.8 resulted in negative fluorescence. For these neurons, we set r to 0.7, 0.6, or 0.5. For our dataset of 48 GCaMP6s and GCaMP6f neurons, we set r to 0.8 for 40 neurons, to 0.7 for four neurons, to 0.6 for three neurons, and to 0.5 for one neuron.\n\n### Neuropil subtraction, downsampled images\n\nNeuropil subtraction was performed as described for the Allen Brain Observatory (de Vries et al., 2020).\n\n### Trace analysis\n\nElectrophysiology and calcium imaging data were analyzed using custom MATLAB and Python scripts. For electrophysiology, Vm was filtered between 250 Hz and 5 kHz, and automated AP detection was performed using a threshold criterion (5\u00d7std of Vm).\n\nFor calcium imaging, in-plane motion artifacts were corrected (Dombeck et al., 2007), and neuron/ROI selection was performed using a semi-automatic algorithm (Chen et al., 2013) (kindly provided by Karel Svoboda, Janelia Research Campus). Ring-shaped ROIs were used to select GCaMP6-positive excitatory neurons, with GCaMP6 expression typically excluded from the nucleus and restricted to the cytoplasm.\n\nTo construct AP-calcium fluorescence response curves, we first identified all isolated AP events. For GCaMP6s, isolated events were separated from previous and subsequent events by\u00a0\u22651000 and\u00a0\u2265500 ms, respectively. For GCaMP6f, isolated events were separated from previous and subsequent events by\u00a0\u2265300 ms. One result of finding isolated events is that only a minority of APs were used to construct AP-calcium fluorescence response curves. Within each event, APs were summed over 250 ms. Fluorescence traces were aligned to the first AP in each event, with t\u00a0=\u00a00 preceding the AP by\u00a0<1 frame (6.3 ms at 158 Hz). For each event, \u0394F/F = (F-F0,local)/F0,global, where F0,local was the mean fluorescence over 100 ms before the first AP, and F0,global was the minimum F0,local across trials. For GCaMP6s and GCaMP6f, peak \u0394F/F was calculated by first finding tmax, the time of the maximum \u0394F/F\u00a0\u2264\u00a0500 ms and 300 ms after the first AP, respectively. Peak \u0394F/F was the mean \u0394F/F from tmax - 50 ms to tmax + 50 ms. Bursts of\u00a0>5\u00a0APs were excluded from analysis due to the low frequency of such events.\n\n### Fluorescence-to-photon conversion\n\nMean and variance of the fluorescence, calculated pixelwise for each image, were linearly related, consistent with shot noise-limited imaging.\n\nThe resulting slope and offset of the least squares fit were used to convert fluorescence to number of photons: photons = (F \u2013 [\u2013offset/slope])/slope (http://github.com/AllenInstitute/QC_2P). To account for different pixel dwell times along the resonant scanning axis, photon gain and offset were computed pixel-by-pixel along the resonant axis.\n\n### Trial-to-trial variability\n\nFor each neuron, fluorescence was summed over all somatic pixels and converted to photons. For each 1\u00a0AP event, mean photon count 0.1\u20130 s before the AP was subtracted. tmax, the time of the maximum photon count, was calculated from the mean 1\u00a0AP trace. Photon count in each trial was determined at tmax, and the 95% confidence interval was calculated as mean (across trials)\u00b11.96 * $\\sqrt{mean\u00a0peak}$. The percentage of trials with peak fluorescence outside the 95% confidence interval was used as a measure of trial-to-trial variability.\n\n### Ground truth-optimized event detection\n\nWe compared fluorescence traces of the response (1\u00a0AP or 2\u00a0AP events) to that of 0\u00a0AP events (Chen et al., 2013). For each recording, the mean response trace was used as the template vector. The template vector was normalized after subtracting the mean to create the unit vector, and the scalar results of projecting the response and noise traces on the unit vector were computed: ri and ni for response and noise scalars, respectively. The detection threshold was defined as the xth percentile of ni values, where 1\u2013x represented the false positive probability (e.g. x\u00a0=\u00a095 for 95th percentile or 5% false positive probability), and the detection probability (true positive probability) was the fraction of ri values above the detection threshold.\n\n### Image downsampling\n\nFluorescence movies were sub-sampled by a factor of 4 in space and 5 in time (to pixel size 0.80 \u00b5m and frame rate 30.3 Hz) to match the sampling rate and approximate number of pixels per soma of the Allen Brain Observatory (de Vries et al., 2020). To assess the effect of downsampling on subsequent processing, 20 different approaches were tried in parallel (downsampling starting with the 1st, 2nd,\u2026, 4th pixel \u00d7 1st, 2nd,\u2026, 5th frame, respectively). 4 \u00d7 5 internally identical blocks, one block for each downsampling strategy, were tiled for a total of 400 almost identical ROIs per recording. Segmentation to find somatic ROIs, demixing of traces from nearby somata, neuropil subtraction, and the calculation of \u0394F/F were performed as described for the Allen Brain Observatory (de Vries et al., 2020).\n\nIn cases where only the neuron of interest was found during segmentation, trace extraction would yield a family of 400 self-similar traces and the median was used for subsequent analysis. To catch cases where segmentation yielded additional objects that were not part of the neuron of interest, additional QC steps were required. The traces were first clustered using DBSCAN (Ester et al., 1996; Schubert et al., 2017), and each cluster median was compared against white noise of the same mean and standard deviation (KS\u00a0test) and rejected as artifact if it was not significantly different (p<0.05). In cases where multiple clusters were significantly different from noise, this was either due to multiple neurons being present in the field\u00a0of\u00a0view or due to residual motion artifacts resulting in multiple translated copies of the same neuron. To disambiguate these two possibilities, the top three clusters were merged: sums were computed for all six possible combinations (sampled without replacement) of (up to) three most distinct cluster medians, and the combination most significantly correlated with the measured electrophysiological AP train was selected for subsequent analysis. Correlation significance was determined by building a null distribution of correlations between the cluster medians and 1000 random Poisson trains with a rate matching that of the recorded AP train. If there was no more significant correlation between any cluster median (or sum thereof) and the measured AP train than the 0.5th percentile of the null distribution (i.e. p>0.005), the recording was failed. Finally, we eliminated from further analysis\u00a0<10 neurons with an abrupt and sustained (seconds) rise in spike rate and subsequent loss spiking activity out of concern that this activity pattern might indicate a breached plasma membrane.\n\nTo compare the noise characteristics of the downsampled images to the Allen Brain Observatory, we computed the robust standard deviation, a median-based method with outlier\u00a0removal (de Vries et al., 2020). For the Allen Brain Observatory, we analyzed fluorescence over periods in which there were no apparent AP-evoked changes in fluorescence.\n",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "130a98cc-c367-4541-a585-e5286b34457a",
+      "submission_id": "3acfb6fc-0bf3-4fa4-b6ec-a1ae51f75ddd",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Gary L Westbrook, Oregon Health and Science University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.51675.sa1](https://doi.org/10.7554/eLife.51675.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe study by Huang, Knoblich et al. represents an important contribution to the field, providing critical examination of in vivo 2-photon calcium imaging for the detection of underlying spike events. Overall, the work is very high quality. The demonstration that spike detection is ~15% under normal \"low zoom\" imaging conditions is a stunning observation that should be a wake-up call to large parts of the community. The results are somewhat sobering for investigators in the sense that no once-size-fits all strategy accurately extracted spiking in commonly-used conditions from fluorescence data.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Relationship between spiking activity and simultaneous fluorescence signals in transgenic mice expressing GCaMP6\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Gary Westbrook as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Karel Svoboda (Reviewer #1); Michael Higley (Reviewer #2); Bernardo L Sabatini (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Senior Editor has drafted this decision to help you prepare a revised submission.\n\nSummary\n\nThis manuscript explores an important topic with data that is difficult to obtain. All reviewers thought the manuscript was worth publishing in eLife after appropriate revisions. However all reviewers had concerns (some overlapping) that are important to address. Many of comments can be addressed with clarifications, rewording and better explanation/analysis of some aspects of the work. However, the manuscript contains some statements and conclusions that indicate incomplete understanding of sources of noise in the imaging experiments. This is important because the paper is really focused on detection. The full comments of the reviewers are below.\n\nReviewer #1:\n\nCalcium imaging is widely used to track activity in large populations of neurons. Calcium-dependent fluorescence is often thought of as \u201cactivity\u201d, but it is unclear what this means because the spike to fluorescence transform is not well understood. As a result the interpretation of calcium imaging data is often superficial and misleading. This is in part because ground truth data (i.e. simultaneous imaging and recording) is scarce. The major contribution of this paper is the report of a substantial bolus of additional ground truth data in several widely used transgenic mouse lines. This is hard-won data and I support publication. But some work is required first.\n\nThe take-home messages in this paper are: There are differences in spike detection across mouse lines, with 6s-expressing mice outperforming 6f-expressing mice. This is expected.\n\nThere are differences in detection across mice expressing the same indicator:\n\nThese differences across mice expressing the same indicator are not explained. My suspicion is that differences in neuropil (i.e. background) is likely the culprit (emx1 expresses in L4 \u2013 with lots of axons in L2/3; CamK2 does not). Explain this and the strange claim that the noise level is different in the emx1-s vs the tetO-s mice.\n\nThere is variability in the response to single spikes:\n\nNo attempt is made to distinguish interesting biological sources of noise (e.g. spike calcium coupling) to non-interesting biology (movement) and non-biological explanations (instrumentation). The paper would be stronger if the sources of noise were analyzed better. In particular, are the measurements done in a shot-noise limited regime? Does movement contribute? How about other instrumentation noise (shouldn't but still)?\n\nLower zoom imaging produces lower snr than higher zoom imaging\n\nThe section \u201cComparing spike-to-calcium fluorescence response curves imaged at high and low spatiotemporal resolutions\u201d is also strange. It's not clear to me what exactly the point is here.\n\nObviously, everything else being equal, increasing the fov from 20 \u2013 400 \u03bcm reduces the light dose per neuron by a factor of 400 and thus the SNR by a factor of 20 (see Peron et al., CONB 2015) just based on shot-noise alone! No one would image a 20 \u03bcm FOV with the same power as a 400 \u03bcm FOV.\n\nReviewer #2:\n\nThe study by Huang, Knoblich et al. represents a very important contribution to the field, providing critical examination of in vivo 2-photon calcium imaging for the detection of underlying spike events. Overall, the work is very high quality, and I have no concerns or suggestions with regard to data collection. I do have several major points on analyses that need to be addressed, detailed below. Overall, the work reads as if the major focus is the comparison of different transgenic GCaMP6 lines. While this topic is interesting, the far more important issue is the ability to estimate spiking from imaging data under \"real world\" conditions. Thus, far more emphasis needs to be placed on the \"low zoom\" data. The difference between the mouse lines is modest at best. However, the demonstration that spike detection is ~15% under normal imaging conditions is a stunning observation that should be a wake-up call to large parts of the community.\n\n1) As noted, the high impact value of the study is on the \"low zoom\" data, as this represents the situation for the vast majority of experimental labs using GCaMP6. All analyses in the manuscript, including the examples comparing \u0394F/F and spiking (Figures 1-6) need to be repeated for the low-zoom data. The analysis of neuropil correction is absolutely critical, as this may play a much larger role in the reduced spatiotemporal sampling regime. I would actually suggest making these analyses the major focus, rather than limited to Figure 7.\n\n2) The paired statistical comparisons of single spike signals with a random period (e.g., Figures 4\u2014figure supplement 1 and Figure 7\u2014figure supplement 1) are not very informative. The fact that there is an average difference is far less important than the discriminability of true spikes from noise.\n\n3) It is unclear how the 91 selected cells were chosen for \"high quality recording and imaging\". It would be useful to know how the results change for \"lower quality\" imaging, as this may better inform experimentalists on data collection.\n\n4) The authors should make some attempt to explain why the spike detection is so much poorer at low zoom. Is it the fewer pixels per cell (factor of 16) or the lower sampling rate (factor of 4-5). Disambiguating these contributors would better help the field. For example, how does spatially or temporally down-sampling the high-zoom data affect spike detection?\n\n5) The sensitivity and ROC analyses assume that the only way to extract spike information from a fluorescence trace is to do a linear thresholding on \u0394F/F amplitude, but many spike extraction methods take into account multiple properties of the shape of fluorescence transients. It would be beneficial if the authors could apply some of the most commonly used spike extraction algorithms to their data in order to benchmark/validate them (particularly under the low-zoom conditions).\n\n6) Please address the accuracy of spike detection under low-zoom for all locations across the FOV. At low zoom, most commercial two-photon microscopes have increased PSF and reduced photon collection efficiency at the edges of a large field.\n\n7) Please explain why the imaging data were temporally smoothed. This is non-standard, and it is important to know how the analyses apply to conventional approaches.\n\n8) It is unclear why the tetO-GCaMP6s have a higher noise floor. Are there any systematic differences in the way these data were collected (different anesthetic, different depth, different amounts of brain motion, different age of mice) that could explain this?\n\n9) Please state the ages of each individual animal used in this study. Is age a confound? Are the distribution of ages for each mouse line matched? For viral expression of GCaMP, time of expression is an important variable. What role does it play in transgenic mice?\n\nReviewer #3:\n\nThis is a well done and systematic comparison of the relationship between electrophysiologically recorded action potentials and GECI-reported fluorescence transients in a variety of transgenic mouse lines used for such recordings. The authors carefully compare the ability of detect single and 5 spike events. Many people will read this study and find its results useful in designing their own experiments and in analyzing their data.\n\nA few points need consideration\n\n1) The authors only use 91 out of the of the 237 cells collected. If there was selection made based on the quality of the imaging data, this may strongly impact the results. How were the cells chosen for inclusion? What happens if the other cells are analyzed?\n\n2) Only peri-cell annular neuropil fluorescence correction is attempted. What if CNMF-type algorithms are used? Does this yield substantially different results? It is not clear that the fixed r-value subtractive approach is necessarily the best when trying to detect single spikes. (I am happy to be convinced otherwise if I am wrong).\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your article \"Relationship between simultaneously recorded spiking activity and fluorescence signal in GCaMP6 transgenic mice\" for consideration by eLife. Your revised article has been reviewed by three peer reviewers, and the evaluation has been overseen by Gary Westbrook as the Senior Editor and Reviewing Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Karel Svoboda (Reviewer #1); Michael Higley (Reviewer #2); Bernardo L Sabatini (Reviewer #3). The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option.\n\nSummary\n\nThe reviewers all agreed that this data is an important resource. This manuscript reports a valuable simultaneous ephys-ophys dataset with a great number of cells recorded (N = 237) and selected (N = 91). This data set will support the development of more refined spike-to-fluorescence or fluorescence-to-spike inference models. However, inclusion of data collected under more \"real world\" conditions \u2013 meaning low zoom and typical laser power \u2013 would substantially increase the impact. As presented, the results remain somewhat limited without such data for comparison. The authors were requested to examine how different spike detection and neuropil subtraction algorithms would change their conclusions. Instead of including that analysis here, they have instead posted another manuscript to BioRxiv. Although this makes the analysis public, it fails to improve this manuscript.\n\nA number of specific comments below require your attention before we can make a final decision regarding publication in eLife.\n\nEssential revisions\n\n1) There is really only minimal analysis of the data. It would be greatly improve the impact of this work to compare detailed spike to fluorescence model parameters to other measurements using the models in Wei et al., 2019.\n\n2) From this and previous studies it is clear that viral expression of GCamp provides better SNR than transgenic expression. This remains a mystery and would be worthy of comment in the manuscript\n\n3) Of course, it is expected that SNR will decrease with zoom at constant power because of shot noise. But it is highly unlikely that investigators would use the same laser power for imaging over changes in zoom by a factor of 20. Please comment.\n\n4) Critical references are missing. Dana et al., 2014 and Wei et al., 2019 have shown that \u201cGCaMP6s cells have spike-triggered fluorescence responses of larger amplitude, lower variability and greater single-spike detectability than GCaMP6f\u201d in transgenic mice.\n\n5) Important spike-to-calcium parameters (e.g. rise- and decay- time constants) are missing. These parameters should be reported as part of the basic analyses; please incorporate the analyses e.g. Figures 2D,E,F and 3F in Chen et al., 2013. One can also use existing spike-to-fluorescence models to estimate the parameters (Wei et al., 2019).\n\n6) Spike-event snippet creation. First, the authors should demonstrate how they chose the parameters for the snippets in each imaging condition. It is not clear that the choice of snippet parameters were optimal; for example, Emx1-s and tetO-s \u0394F/F at 4APs in Figure 2 seem not to reach the maximum within 200 ms window. Ideally, these parameters could be determined by the estimates of rise- and decay- time constants. For example, if the half-rise time is 100 ms and the spike-event snippet is 200 ms, one should use a time window at least 400 ms to capture the peak dF/F.\n\n7) Neuropil removal. This is a confusing part throughout the manuscript. At the beginning, the authors preferred not performing neuropil correction because it might increase peak \u0394F/F variability (Figure 2\u2014figure supplement 1D), then in the later part, the authors claimed that the importance of the neuropil correction to the spike detection. The authors could offer a systematic study to address if neuropil should be removed and how. It seems like the optimal r for each cell should be used throughout the manuscript. One study from Kerlin et al., 2010 (this paper should be cited) provided some answers to this.\n\n8) \u0394F/F computation. In general one would take a long time-window to compute F0 with the background subtraction in the denominator, where F0 aims to reflect 0AP fluorescence. Computing locally as the mean within 50 or 20 ms before the first spike event is risky, because F0 in a short window can be contaminated by the previous calcium decay after a many-AP event e.g. F0 around 5-AP in Figure 1B.\n\n9) Peak \u0394F/F variability. First, it is not clear how the mean coefficient of variation of \u0394F/F peak (a main measure of peak \u0394F/F variability throughout the manuscript) was defined and computed. Is the coefficient in the term of the number of spikes? How was it computed in a given nAP case, e.g. Figure 4A right or Figure 4B? Second, although shot noise is dominant on single pixels, or at high sample rates or in low brightness conditions, variability would be reduced when computing F by averaging over N pixels. The analysis on single pixels is somewhat misleading. Third, trial-by-trial variability is important but the measurement is not clear. In general, the peak \u0394F/F should depend on the time series of the spikes. It roughly depends on the number of the spikes in a brief time window. One would thus expect two sources of trial-by-trial variance, one depends on the number of spikes; the other depends on the spike pattern as the number of spikes is fixed. Authors should be able to decompose the variability into these terms.\n\n10) The finding that variance in response amplitude is no larger than expected from shot-noise is surprising and unlikely to be true. There are many reasons why the coupling between AP and Ca might be variable (modulation, baseline potential, state of channels, channel fluctuations). Make sure this analysis is correct.\n\n11) Lastly, as demonstrated above, the peak \u0394F/F does not directly depend on behavioral condition when the spike pattern is given. Yet the difference in spon vs visstim in Cux2-f mice is striking. Can this difference be explained by the spike pattern difference in spon vs visstim conditions? If not, what causes this difference?\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Relationship between simultaneously recorded spiking activity and fluorescence signal in GCaMP6 transgenic mice\" for further consideration by eLife. Your revised article has been evaluated by Gary Westbrook (Senior Editor) and Reviewers 2 and 3 from the original submission.\n\nWe are satisfied with the data in the revised manuscript, but ask that you revise the text in accord with the comments below as we believe that these changes with substantially improve the impact of your important work.\n\nReviewer #2:\n\nFar more emphasis needs to be placed on the \"low zoom\" data. The difference between the mouse lines is modest at best. However, the demonstration that spike detection is ~15% under normal imaging conditions is a stunning observation that should be a wake-up call to large parts of the community.\n\nReviewer #3:\n\nThe authors have done a great deal to improve the study. There are some remaining points can be easily addressed to improve the study even further.\n\n1) There is no description of what cells the Cux2 and Emx1 cre lines target. It would help make the study more approachable and useful to include this information here.\n\n2) The authors report that there is no epileptiform activity in the mice they use. Do they not see such activity in these mice in their hands or do they select individual mice without seizures? How to they judge the presence of epileptiform activity?\n\n3) In light of point 2, the fraction of spikes that are in groups of 1-5 spike bursts is very different for GCAMP6s and GCAMP6f mice. This is a metric measured by the cell-attached recording. Doesn't this indicate that the transgene has a large effect on cellular or circuit activity patterns?\n\n4) The authors use QC metrics to reduce the number of cells analyzed from >200 to 48. Can they report what factors result in 75% of the cells being rejected? Do they know which rejection factors actually impact the ability to accurately infer spiking from fluorescence? Such insight would be very useful for others who don't have cell-attached recordings but want to be able to understand what cells to include in their final analyses.\n\n5) Lastly, the Discussion leaves something to be desired. It is a synopsis of the conclusions and iterates some rather obvious points but also making some claims without backing. It is not clear that the statements about GFP quantum yield being the limiting factor to further improvement of single-spike detection is correct. The Ca-sensitive fluorophores may not get brighter, but their linearity, DF/F, stability etc may improve. Given the assumption that photon-budget is limiting, the statement that voltage-sensors may provide the solution seems wrong as these will provide many fewer photons per AP. The authors could use the discussion instead of provide some helpful hints to imagers to make the best use of their data based on the analyses presented.\n",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "36b2cf86-b6b7-4709-b898-47c7c9216c65",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C1",
+      "claim": "Simultaneous calcium imaging and cell-attached recordings were performed in V1 L2/3 excitatory pyramidal neurons in anesthetized mice.",
+      "claim_type": "EXPLICIT",
+      "source": "To characterize the single-cell transfer function between observed fluorescence signals and underlying APs in vivo, we performed simultaneous calcium imaging and cell-attached recordings in V1 L2/3 excitatory pyramidal neurons in anesthetized mice (Figure 1A,B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text describing the experimental approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "2ea87aa5-bded-4ce0-b7e6-383860b9448c",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C2",
+      "claim": "A small field of view of 19.3\u201327.3 \u00d7 19.3\u201321.5 \u00b5m was used with scanning rate 141.3\u2013158.3 frames per second.",
+      "claim_type": "EXPLICIT",
+      "source": "To directly compare our results to virally expressed GCaMP6f and GCaMP6s (Chen et al., 2013) (http://dx.doi.org/10.6080/K02R3PMN), we used a small field of view (19.3\u201327.3 \u00d7 19.3\u201321.5 \u00b5m; scanning rate 141.3\u2013158.3 frames per second [fps]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text describing the imaging parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "897136c3-d242-4d79-91f5-de2a01efa092",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C3",
+      "claim": "2\u201310 min recordings were obtained from 213 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "2\u201310 min recordings were obtained from 213 neurons, all with fluorescence excluded from the nucleus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text describing the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "8c3a3519-7792-42ad-b118-26336f23c3dd",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C4",
+      "claim": "The final dataset for analysis consisted of 48 neurons from mice of four transgenic lines.",
+      "claim_type": "EXPLICIT",
+      "source": "The dataset for further analysis was from 48 neurons from mice of four transgenic lines, two expressing GCaMP6s and two GCaMP6f in excitatory neurons in layer 2/3 and deeper layers of cortex (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text describing the final dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "b57018d0-41e6-429b-af36-83d709d6a324",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C5",
+      "claim": "28% of action potentials were contained in events with fluorescence transients separated from those of adjacent events.",
+      "claim_type": "EXPLICIT",
+      "source": "We analyzed events with fluorescence transients separated from those of adjacent events, containing a total of 5427 APs (28% of APs; Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text describing the analyzed events.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "16f26608-d3c5-4c0b-81c4-00b885586178",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C6",
+      "claim": "An event was defined as one or more APs within 250 ms, with no APs in the preceding or subsequent 300 ms for GCaMP6f or 1 s and 500 ms for GCaMP6s.",
+      "claim_type": "EXPLICIT",
+      "source": "An event was defined as one or more APs within 250 ms, with no APs in the preceding or subsequent 300 ms for GCaMP6f or 1 s and 500 ms for GCaMP6s (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text defining events.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "741c8e48-c076-4972-9427-a1721d52eb9f",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C7",
+      "claim": "Optimal r for Emx1-f and Cux2-f neurons was approximately normally distributed with mean \u00b1 SEM of 0.82 \u00b1 0.07.",
+      "claim_type": "EXPLICIT",
+      "source": "Optimal r for Emx1-f and Cux2-f neurons was approximately normally distributed with mean \u00b1 SEM of 0.82 \u00b1 0.07 (20 neurons, Figure 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text describing the optimal neuropil subtraction parameter.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "451ffc91-3b46-4c96-9be3-f7b07fe38c98",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C8",
+      "claim": "The value of r has a modest effect on event detection in GCaMP6f neurons in mouse V1.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that the value of r has a modest effect on event detection in GCaMP6f neurons in mouse V1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text as a conclusion from the neuropil subtraction analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "62d52c6f-2fdd-43f7-9773-9adb1e881db5",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C9",
+      "claim": "Peak \u0394F/F increased approximately linearly with 1\u20135 APs.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, peak \u0394F/F increased approximately linearly with 1\u20135 APs, and peak \u0394F/F and decay time constant were greater with GCaMP6s than GCaMP6f (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the manuscript text and supported by Figure 3C showing the relationship.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "c5e4f5db-8af7-4b80-9dce-645dff5469ce",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C10",
+      "claim": "Peak \u0394F/F and decay time constant were greater with GCaMP6s than GCaMP6f.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, peak \u0394F/F increased approximately linearly with 1\u20135 APs, and peak \u0394F/F and decay time constant were greater with GCaMP6s than GCaMP6f (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the manuscript text and supported by Figure 3C showing the comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "ba9745e9-4f09-4db1-9810-5371d07d2793",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C11",
+      "claim": "Peak \u0394F/F was comparable to or slightly greater than in previous studies with GCaMP6s and GCaMP6f, possibly because more neuropil fluorescence was subtracted with a slightly greater r value (r = 0.8 vs. 0.7; Chen et al., 2013).",
+      "claim_type": "EXPLICIT",
+      "source": "Peak \u0394F/F was comparable to or slightly greater than in previous studies with GCaMP6s and GCaMP6f, possibly because we subtracted more of the neuropil fluorescence with a slightly greater r value (r = 0.8 vs. 0.7; Chen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text comparing results to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "7de5b37b-4fc0-4f6e-a8ae-f6aaf4eacf98",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C12",
+      "claim": "Photon shot noise was the dominant noise source in images from all mouse lines.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, photon shot noise was the dominant noise source in images from all mouse lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text describing the noise characteristics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "fcc8991e-3520-476e-8132-2f6532a1ec39",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C13",
+      "claim": "The pixelwise slope of the least squares fit between the variance and mean of the photon flux was 1.04 \u00b1 0.01, consistent with the noise following a Poisson process.",
+      "claim_type": "EXPLICIT",
+      "source": "The pixelwise slope of the least squares fit between the variance and mean of the photon flux was 1.04 \u00b1 0.01 (mean \u00b1 SEM), consistent with the noise following a Poisson process (intercept \u22120.08 \u00b1 0.2, 48 neurons).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text describing the noise analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "9066c8e0-d91a-47cf-a0d9-b2a43d5e1a01",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C14",
+      "claim": "Trial-to-trial variability in the amplitude of the 1 AP-evoked fluorescence was substantial and exceeded photon shot noise in most neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Trial-to-trial variability in the amplitude of the 1 AP-evoked fluorescence was substantial and exceeded photon shot noise in most neurons (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the manuscript text and supported by Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "4f726e2d-9149-46bc-8577-8b771a2901f8",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C15",
+      "claim": "The variability likely results primarily from trial-to-trial differences in the AP-evoked calcium concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Likely the variability results primarily from trial-to-trial differences in the AP-evoked calcium concentration, assuming GCaMP6f and GCaMP6s are expressed at sufficient concentrations to report resting changes in calcium concentration in all four mouse lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text as a likely explanation for the observed variability.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "856029f0-14a6-4640-b5bb-8400993f9fae",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C16",
+      "claim": "In high spatial and temporal resolution images, the probability of 1 AP event detected spanned a wide range (probability 0.07\u20131 and 0.11\u20130.95 for GCaMP6s and GCaMP6f, at 1% false positive probability).",
+      "claim_type": "EXPLICIT",
+      "source": "In high spatial and temporal resolution images, the probability of 1 AP event detected spanned a wide range (probability 0.07\u20131 and 0.11\u20130.95 for GCaMP6s and GCaMP6f, at 1% false positive probability, Figure 4A-C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the manuscript text and supported by Figure 4A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "dd88a801-a96c-4b2c-b890-7bf03c1dcb8a",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C17",
+      "claim": "Most 1 AP events were detected in GCaMP6s and GCaMP6f neurons, but with lower average probability in GCaMP6f neurons (1 AP detection probability 0.70 \u00b1 0.06 for 18 Emx1-s neurons, 0.80 \u00b1 0.03 for three tetO-s neurons, 0.40 \u00b1 0.08 for nine Cux2-f neurons, 0.60 \u00b1 0.08 for 11 Emx1-f neurons, mean \u00b1 SEM at 1% false positive probability).",
+      "claim_type": "EXPLICIT",
+      "source": "As expected (Dana et al., 2014; Wei et al., 2019), most 1 AP events were detected in GCaMP6s and GCaMP6f neurons, but with lower average probability in GCaMP6f neurons (1 AP detection probability 0.70 \u00b1 0.06 for 18 Emx1-s neurons, 0.80 \u00b1 0.03 for three tetO-s neurons, 0.40 \u00b1 0.08 for nine Cux2-f neurons, 0.60 \u00b1 0.08 for 11 Emx1-f neurons, mean \u00b1 SEM at 1% false positive probability).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text describing detection probabilities.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "484fb848-d2e6-40d6-a6f2-7210484a8500",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C18",
+      "claim": "2 AP events were reliably detected in all four mouse lines (detection probability 0.90 \u00b1 0.06 for Emx1-s, 1.0 \u00b1 0.0 for tetO-s, 0.66 \u00b1 0.07 for Cux2-f, 0.80 \u00b1 0.05 for Emx1-f, at 1% false positive probability).",
+      "claim_type": "EXPLICIT",
+      "source": "2 AP events were reliably detected in all four mouse lines (Figure 4C; detection probability 0.90 \u00b1 0.06 for Emx1-s, 1.0 \u00b1 0.0 for tetO-s, 0.66 \u00b1 0.07 for Cux2-f, 0.80 \u00b1 0.05 for Emx1-f, at 1% false positive probability).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the manuscript text and supported by Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "0cf61489-4ec9-48db-9ff6-c3294f6c50d9",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C19",
+      "claim": "In high spatial and temporal resolution images, in all four mouse lines, it was possible to detect most but by no means all 1 AP and 2 AP events with a false positive probability of only 1%.",
+      "claim_type": "EXPLICIT",
+      "source": "In high spatial and temporal resolution images, in all four mouse lines, it was possible to detect most but by no means all 1 AP and 2 AP events with a false positive probability of only 1%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text as a summary of detection performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "8f37c72e-bf66-4652-bd11-3727b326080e",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C20",
+      "claim": "In these transgenic mice, 1 AP detection probabilities were lower than in previously reported neurons with virally expressed GCaMP6s and GCaMP6f (0.99 and 0.84 at 1% false positive probability in Chen et al., 2013).",
+      "claim_type": "EXPLICIT",
+      "source": "In these transgenic mice, 1 AP detection probabilities were lower than in previously reported neurons with virally expressed GCaMP6s and GCaMP6f (0.99 and 0.84 at 1% false positive probability in Chen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text comparing results to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "ce8f0c41-f496-4cf4-94ad-76d9bab5ff36",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C21",
+      "claim": "In the transgenic mice used here, GCaMP expression is widespread throughout neocortex, which may result in labeling of greater numbers of axons and dendrites that contribute to the neuropil signal.",
+      "claim_type": "EXPLICIT",
+      "source": "In the transgenic mice used here, GCaMP expression is widespread throughout neocortex, which may result in labeling of greater numbers of axons and dendrites that contribute to the neuropil signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text as a possible explanation for differences.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "11819487-ece8-40e7-9ed9-bbfca1505ce0",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C22",
+      "claim": "GCaMP6 expression may be weaker in the four TIGRE1.0 mouse line crosses examined here than with strong promoter-driven adeno-associated virus (AAV) vectors as used in Chen et al., 2013.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, GCaMP6 expression may be weaker in the four TIGRE1.0 mouse line crosses examined here than with strong promoter-driven adeno-associated virus (AAV) vectors as used in Chen et al., 2013.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text as a possible explanation for differences.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "05af61b6-b88e-4c6f-b78a-25f6d18ffda7",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C23",
+      "claim": "The newer TIGRE2.0 reporter lines drive GCaMP expression that is comparable to that from strong promoter-driven AAVs (Daigle et al., 2018), likely enabling 1 AP and 2 AP detection rates in transgenic mice that are comparable to those achieved with viral expression of GCaMP6.",
+      "claim_type": "EXPLICIT",
+      "source": "The newer TIGRE2.0 reporter lines drive GCaMP expression that is comparable to that from strong promoter-driven AAVs (Daigle et al., 2018), likely enabling 1 AP and 2 AP detection rates in transgenic mice that are comparable to those achieved with viral expression of GCaMP6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text comparing different mouse lines.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "183ff170-f047-4d56-aac8-2cde2e497dba",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C24",
+      "claim": "Recordings were obtained with a small field of view at a high frame rate and centered on the soma (~19.3\u00d719.3 \u00b5m, ~158 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "Our recordings were obtained with a small field of view, at a high frame rate and centered on the soma (~19.3\u00d719.3 \u00b5m, ~158 Hz, Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the manuscript text describing the imaging conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "0b7e8c8a-b4f5-4616-9f9e-70e520059e05",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C25",
+      "claim": "Images were downsampled in space and time to mimic imaging with a 412 \u00d7 412 \u00b5m field of view at 30.3 Hz, as used in the Allen Brain Observatory.",
+      "claim_type": "EXPLICIT",
+      "source": "In an attempt to simulate commonly used imaging conditions, we downsampled our images in space and time to mimic imaging with a 412 \u00d7 412 \u00b5m field of view at 30.3 Hz, as used in the Allen Brain Observatory (Figure 5C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the manuscript text describing the downsampling procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "2c226a73-a38f-46d5-a42f-6a9c99f6755d",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C26",
+      "claim": "The baseline fluorescence noise from downsampled images was comparable to that in the Allen Brain Observatory.",
+      "claim_type": "EXPLICIT",
+      "source": "The baseline fluorescence noise from downsampled images was comparable to that in the Allen Brain Observatory (Figure 5E) and is presumably comparable to images in many two-photon datasets with populations of hundreds of neurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the manuscript text and supported by Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "6a5ea979-4108-44df-b1d1-ee33231b9cdc",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C27",
+      "claim": "Event detection probabilities were lower for downsampled images than for the original, high-resolution images.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, event detection probabilities were lower for downsampled images than for the original, high-resolution images (Figure 4D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the manuscript text and supported by Figure 4D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "788e2277-38eb-4a45-8aca-5d650d2ac686",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C28",
+      "claim": "1 AP and 2 AP event detection probabilities were 0.32 \u00b1 0.05 and 0.55 \u00b1 0.08 for 18 Emx1-s neurons, 0.43 \u00b1 0.07 and 0.89 \u00b1 0.06 for three tetO-s neurons, 0.16 \u00b1 0.04 and 0.24 \u00b1 0.04 for 9 Cux2-f neurons, 0.21 \u00b1 0.04 and 0.42 \u00b1 0.09 for 11 Emx1-f neurons (mean \u00b1 SEM at 1% false positive probability) for downsampled images.",
+      "claim_type": "EXPLICIT",
+      "source": "1 AP and 2 AP event detection probabilities were 0.32 \u00b1 0.05 and 0.55 \u00b1 0.08 for 18 Emx1-s neurons, 0.43 \u00b1 0.07 and 0.89 \u00b1 0.06 for three tetO-s neurons, 0.16 \u00b1 0.04 and 0.24 \u00b1 0.04 for 9 Cux2-f neurons, 0.21 \u00b1 0.04 and 0.42 \u00b1 0.09 for 11 Emx1-f neurons (mean \u00b1 SEM at 1% false positive probability).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text describing detection probabilities for downsampled images.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "44ee60ed-ea8c-450a-992f-fe70bb81959b",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C29",
+      "claim": "Even for 2 AP events, detection probability is <0.5 when imaging with GCaMP6f and a field of view of several hundred micrometers.",
+      "claim_type": "EXPLICIT",
+      "source": "Even for 2 AP events, detection probability is <0.5 when imaging with GCaMP6f and a field of view of several hundred micrometers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text as a summary of detection performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "0a65df91-5ca3-4184-98ce-74f47811f634",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C30",
+      "claim": "1 AP and 2 AP events were detected with high probability when images were acquired with high spatial and temporal resolution and when analysis was performed with an event detection algorithm optimized for each neuron using known AP times.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, 1 AP and 2 AP events were detected with high probability when images were acquired with high spatial and temporal resolution and when analysis was performed with an event detection algorithm optimized for each neuron using known AP times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text as a summary of detection performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "968cb9bd-200e-4056-965c-fb99885e8548",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C31",
+      "claim": "Even with known AP times to optimize detection for each neuron, event detection was severely impaired by a reduction in spatial and temporal resolution to mimic a typical two-photon population imaging experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Even with known AP times to optimize detection for each neuron, event detection was severely impaired by a reduction in spatial and temporal resolution to mimic a typical two-photon population imaging experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text as a summary of detection performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "23b2c2f4-4af6-458c-b912-048f8a98825d",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C32",
+      "claim": "Three spike inference algorithms were compared: unconstrained non-negative deconvolution (NND; Friedrich et al., 2017), non-negative deconvolution with an L0 constraint to enforce event sparseness (Exact L0; Jewell et al., 2020), and a biophysical model that explicitly accounts for intracellular calcium dynamics (MLspike; Deneux et al., 2016).",
+      "claim_type": "EXPLICIT",
+      "source": "We compared event detection from high-resolution and downsampled images using three spike inference algorithms: unconstrained non-negative deconvolution (NND; Friedrich et al., 2017), non-negative deconvolution with an L0 constraint to enforce event sparseness (Exact L0; Jewell et al., 2020), and a biophysical model that explicitly accounts for intracellular calcium dynamics (MLspike; Deneux et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text describing the methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "cb125036-127a-44f3-9557-327e320581ed",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C33",
+      "claim": "These three algorithms are among the highest performing spike inference algorithms (Berens et al., 2018).",
+      "claim_type": "EXPLICIT",
+      "source": "These three algorithms are among the highest performing spike inference algorithms (Berens et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text citing previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "051eef76-caab-4f50-b7e7-2d301d112be9",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C34",
+      "claim": "All three algorithms estimated AP numbers that approximately recapitulated the number of APs measured with electrophysiology, but the number of APs per frame was typically not an integer due to imperfect spike inference.",
+      "claim_type": "EXPLICIT",
+      "source": "All three algorithms estimated AP numbers that approximately recapitulated the number of APs measured with electrophysiology, but the number of APs per frame was typically not an integer due to imperfect spike inference (Figure 6A,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the manuscript text and supported by Figure 6A,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "2b738ed5-2ec1-4d7a-b37f-c2007f3006de",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C35",
+      "claim": "Pearson correlation coefficients were ~0.4 when calculated with 33 ms time bins, increasing toward 0.7 as bin size was increased to 500 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Pearson correlation coefficients were ~0.4 when calculated with 33 ms time bins, increasing toward 0.7 as bin size was increased to 500 ms (Figure 6\u2014figure supplement 1), comparable to published results (Berens et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the manuscript text and supported by Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "e8312ea1-7ce7-4702-9fc4-03928c4b3c11",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C36",
+      "claim": "Mean Pearson and Matthews correlation coefficients were similar across inference algorithms and mouse lines and differed little between high-resolution and downsampled images.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean Pearson and Matthews correlation coefficients were similar across inference algorithms and mouse lines and differed little between high-resolution and downsampled images (Figure 6B,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the manuscript text and supported by Figure 6B,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "ee7bb28f-1809-49f8-ae16-c79c8540519a",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C37",
+      "claim": "Performance differed greatly between neurons, but mean ROC curves were similar across mouse lines, with only modest differences between algorithms, between GCaMP6s and GCaMP6f lines, or between high-resolution and downsampled conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Performance differed greatly between neurons, but mean ROC curves were similar across mouse lines, with only modest differences between algorithms, between GCaMP6s and GCaMP6f lines, or between high-resolution and downsampled conditions (Figure 6C,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the manuscript text and supported by Figure 6C,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "6f548404-a2e0-4df0-a251-68bf0640bc81",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C38",
+      "claim": "At a false positive probability of 0.01, detection probability was commonly <0.1 for 1 AP events, increasing approximately linearly with AP number, often to ~0.8 for 5 AP events.",
+      "claim_type": "EXPLICIT",
+      "source": "At a false positive probability of 0.01, detection probability was commonly <0.1 for 1 AP events, increasing approximately linearly with AP number, often to ~0.8 for 5 AP events (Figure 7A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the manuscript text and supported by Figure 7A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "656263da-4f47-40e7-b414-ac02fc266931",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C39",
+      "claim": "With 1 AP events being the most common event type in all four mouse lines, it was possible to detect only a minority of events with a low false positive probability.",
+      "claim_type": "EXPLICIT",
+      "source": "With 1 AP events being the most common event type in all four mouse lines (Figure 7C), it was possible to detect only a minority of events with a low false positive probability.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the manuscript text and supported by Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "fcc3b506-c470-46ca-8d0b-ff53fae545b6",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C40",
+      "claim": "Using these spike inference algorithms, although detection probabilities were commonly slightly lower for downsampled than for high-resolution images, the difference was modest, indicating that the decreased SNR of population imaging had little effect on event detection in our dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Using these spike inference algorithms, although detection probabilities were commonly slightly lower for downsampled than for high-resolution images, the difference was modest, indicating that the decreased SNR of population imaging had little effect on event detection in our dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text as a conclusion from the analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "1367f785-3d89-4007-82b6-90d8eb34a0e2",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C41",
+      "claim": "For NND, performance was poor at 30 Hz and considerably improved by upsampling to 150 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "For NND, performance was poor at 30 Hz and considerably improved by upsampling to 150 Hz (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the manuscript text and supported by Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "1bff4681-ceba-48bd-bad7-49d6efeb3e43",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C42",
+      "claim": "For MLspike, performance was poor without use of the autocalibration procedure to optimize the model for each neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "For MLspike, performance was poor without use of the autocalibration procedure to optimize the model for each neuron (Figure 7\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the manuscript text and supported by Figure 7\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "de139234-af3a-4325-b7e8-cf64ecb5338c",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C43",
+      "claim": "MLspike contrasted with deconvolution-based algorithms, for which fixed parameters are more effective (Pachitariu et al., 2018).",
+      "claim_type": "EXPLICIT",
+      "source": "MLspike thus contrasted with deconvolution-based algorithms, for which fixed parameters are more effective (Pachitariu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text citing previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "15df8722-54b6-4b3b-b627-f55168ae776c",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C44",
+      "claim": "For Exact L0, neither upsampling nor optimization for each neuron was necessary for optimal mean performance across neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "For Exact L0, neither upsampling nor optimization for each neuron was necessary for optimal mean performance across neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text describing algorithm performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "702e4c9e-18de-483a-9d36-a07562736077",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C45",
+      "claim": "The performance of MLspike was broadly equivalent to that of NND, but the loss of performance due to downsampling was less with MLspike, resulting in outperformance of MLspike on downsampled images.",
+      "claim_type": "EXPLICIT",
+      "source": "The performance of MLspike was broadly equivalent to that of NND, but the loss of performance due to downsampling was less with MLspike, resulting in outperformance of MLspike on downsampled images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text comparing algorithm performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "a7ead480-7506-4bda-a17b-3b00dc9e63f9",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C46",
+      "claim": "Our results point to MLspike as a compelling choice for spike inference in population imaging experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results point to MLspike as a compelling choice for spike inference in population imaging experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text as a recommendation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "ffcf01eb-6926-44cd-83c7-e5d03855c727",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C47",
+      "claim": "There is ample room for improvement of spike inference models since event detection by the three spike inference models falls far short of the performance of the ground truth-optimized approach.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results also suggest that there is ample room for improvement of spike inference models since event detection by the three spike inference models falls far short of the performance of the ground truth-optimized approach employed in Figure 4 (Figure 7\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the manuscript text and supported by Figure 7\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "a029d734-4486-4552-90e4-5d1c5ea5d4a4",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C48",
+      "claim": "Relative to small field-of-view imaging, population imaging conditions decreased the probability of spike event detection with an event detector optimized to each individual neuron using ground truth AP information.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, relative to small field-of-view imaging, population imaging conditions decreased the probability of spike event detection with an event detector optimized to each individual neuron using ground truth AP information (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the manuscript text as a summary conclusion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "9a085494-da78-4c7a-b4d5-b1977d6f7e0b",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C49",
+      "claim": "With blind spike inference, many events went undetected even under near-ideal imaging conditions with a small field of view, and event detection was not substantially worse under population imaging conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "With blind spike inference, many events went undetected even under near-ideal imaging conditions with a small field of view, and event detection was not substantially worse under population imaging conditions (Figure 6, Figure 7, Figure 7\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the manuscript text as a summary conclusion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "e7b2d97d-2ef3-4616-87fb-bc97857dc66d",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C50",
+      "claim": "The results of Figures 6 and 7 are likely representative of event detection in many GCaMP6 imaging experiments, where ground truth AP information is not available and blind spike inference is employed.",
+      "claim_type": "EXPLICIT",
+      "source": "The results of Figures 6 and 7 are likely representative of event detection in many GCaMP6 imaging experiments, where ground truth AP information is not available and blind spike inference is employed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text as a conclusion about generalizability.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "41619bae-ed7a-4f51-b212-3057cfeba6e4",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C51",
+      "claim": "Even though GCaMP6 indicators are bright and sensitive enough to enable the detection of most 1 AP events in superficial cortical pyramidal neurons in vivo if the detection procedure is optimized using ground truth AP information, most events containing 1, 2, and sometimes greater numbers of APs go undetected in our (and likely in many other) imaging experiments with GCaMP6.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that even though GCaMP6 indicators are bright and sensitive enough to enable the detection of most 1 AP events in superficial cortical pyramidal neurons in vivo if the detection procedure is optimized using ground truth AP information, most events containing 1, 2, and sometimes greater numbers of APs go undetected in our (and likely in many other) imaging experiments with GCaMP6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text as a main conclusion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "2c890049-27b6-4a9d-b3d2-bae67b75d281",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C52",
+      "claim": "Accurate spike inference from calcium imaging remains a challenge.",
+      "claim_type": "EXPLICIT",
+      "source": "However, accurate spike inference from calcium imaging remains a challenge, and there are relatively few ground truth datasets with simultaneous calcium imaging and electrophysiology to aid the development of more accurate spike inference algorithms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text in the Discussion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "12dd4534-5b4e-4472-ab39-4ed08a5a4136",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C53",
+      "claim": "There are relatively few ground truth datasets with simultaneous calcium imaging and electrophysiology to aid the development of more accurate spike inference algorithms.",
+      "claim_type": "EXPLICIT",
+      "source": "However, accurate spike inference from calcium imaging remains a challenge, and there are relatively few ground truth datasets with simultaneous calcium imaging and electrophysiology to aid the development of more accurate spike inference algorithms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text in the Discussion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "0b0f00cb-333a-4bbc-90c7-7fa3dfc7396d",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C54",
+      "claim": "In a recent challenge, ~40 algorithms were trained and tested on datasets consisting of 37 GCaMP6-expressing neurons, underscoring the need for additional GCaMP6 calibration data (Berens et al., 2018).",
+      "claim_type": "EXPLICIT",
+      "source": "In a recent challenge, ~40 algorithms were trained and tested on datasets consisting of 37 GCaMP6-expressing neurons, underscoring the need for additional GCaMP6 calibration data (Berens et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text citing previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "ecbc9d40-29f7-4225-bf97-3da5dd3afb56",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C55",
+      "claim": "A ground truth dataset consisting of 48 V1 L2/3 excitatory neurons recorded at single-cell resolution is available at https://portal.brain-map.org/explore/circuits/oephys.",
+      "claim_type": "EXPLICIT",
+      "source": "To these ends, we contribute a ground truth dataset consisting of 48 V1 L2/3 excitatory neurons recorded at single-cell resolution (available at https://portal.brain-map.org/explore/circuits/oephys) and characterized their AP-to-calcium fluorescence transfer function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text describing the contribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "ff370d95-bc29-44d0-96c1-f4a3ab75e900",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C56",
+      "claim": "This work facilitates interpretation of existing and future calcium imaging studies using mainstream transgenic mouse lines, such as the Allen Institute's Brain Observatory Visual Coding dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Complementing existing datasets with viral GECI expression (Chen et al., 2013; Theis et al., 2016; Dana et al., 2016), our work facilitates interpretation of existing and future calcium imaging studies using mainstream transgenic mouse lines, such as the Allen Institute's Brain Observatory Visual Coding dataset (http://observatory.brain-map.org/visualcoding) (de Vries et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text describing the contribution.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "98119a5d-3647-45ca-bbd4-4a33696423e9",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C57",
+      "claim": "Previous studies have established that most APs can be detected with GCaMP6 indicators under near-optimal conditions (Chen et al., 2013).",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have established that most APs can be detected with GCaMP6 indicators under near-optimal conditions (Chen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text citing previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "3382b190-9a43-46ba-a36e-1467a243c376",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C58",
+      "claim": "Undetected APs are common in population imaging experiments (Theis et al., 2016; Berens et al., 2018).",
+      "claim_type": "EXPLICIT",
+      "source": "Yet undetected APs are common in population imaging experiments (Theis et al., 2016; Berens et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text citing previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "b922b104-f990-4a01-8cb7-81f5cfdf2a29",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C59",
+      "claim": "The reduced signal-to-noise ratio of population imaging, relative to single soma imaging, results in less effective event detection.",
+      "claim_type": "EXPLICIT",
+      "source": "Unsurprisingly, the reduced signal-to-noise ratio of population imaging, relative to single soma imaging, results in less effective event detection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text as a conclusion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "4746f61b-d746-46ec-8e8d-1b03c7c17b8c",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C60",
+      "claim": "A high signal-to-noise ratio, achieved by imaging one soma, was no guarantee of effective event detection.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a high signal-to-noise ratio, achieved by imaging one soma, was no guarantee of effective event detection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text as a conclusion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "55427096-23a5-4281-83f0-eb86fab38b37",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C61",
+      "claim": "Effective detection also required optimization of detection for the neuron of interest, using known AP times to identify events with different AP numbers and so generate kernels of the appropriate amplitude and time course.",
+      "claim_type": "EXPLICIT",
+      "source": "Effective detection also required optimization of detection for the neuron of interest, using known AP times to identify events with different AP numbers and so generate kernels of the appropriate amplitude and time course.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text as a conclusion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "6e50c8a1-492d-4f94-8c88-495c0e401341",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C62",
+      "claim": "Parameter tuning in the absence of known AP times, with the MLspike autocalibration routine, improved event detection but not to the high standard of ground truth-optimized detection.",
+      "claim_type": "EXPLICIT",
+      "source": "Parameter tuning in the absence of known AP times, with the MLspike autocalibration routine, improved event detection but not to the high standard of ground truth-optimized detection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text as a conclusion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "e6155f96-044a-4a32-ad9b-ea73a8248b9d",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C63",
+      "claim": "Measuring AP times for every neuron with electrophysiology is rarely feasible, severely limiting the percentage of events one might reasonably expect to detect with GCaMP6 in most imaging experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, measuring AP times for every neuron with electrophysiology is rarely feasible, severely limiting the percentage of events one might reasonably expect to detect with GCaMP6 in most imaging experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text as a conclusion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "cad59a0f-f58f-4f00-b3b0-f77ce35c1dd2",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C64",
+      "claim": "Only a small fraction of isolated APs were detected under typical population imaging conditions and with existing spike inference algorithms.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of this dataset revealed that only a small fraction of isolated APs were detected under typical population imaging conditions and with existing spike inference algorithms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text as a main conclusion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "25a96992-eb54-4b26-9786-2bae7a9e6ae8",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C65",
+      "claim": "Mice were 2- to 5-month-old male and female transgenic mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Two-photon-targeted electrophysiology and two-photon calcium imaging were conducted in 2- to 5-month-old male and female transgenic mice: five Emx1-IRES-Cre;Camk2a-tTA;Ai94 (Emx1-s) mice, one Camk2a-tTA;tetO-GCaMP6s (tetO-s) mouse, three Emx1-IRES-Cre;Camk2a-tTA;Ai93 (Emx1-f) mice, and four Cux2-CreERT2;Camk2a-tTA;Ai93 (Cux2-f) mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text describing the experimental subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "3eb2c9c5-5ab4-4a0b-9e84-26d4cd4ea571",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C66",
+      "claim": "All four lines drive GCaMP expression primarily in excitatory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "All four lines drive GCaMP expression primarily in excitatory neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text describing the mouse lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "0a9da4d5-b90c-49b9-b936-404222f634eb",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C67",
+      "claim": "In Cux2-CreERT2 mice, Cre and GCaMP expression are enriched in layer 2/3 (Franco et al., 2012; Harris et al., 2014).",
+      "claim_type": "EXPLICIT",
+      "source": "In Cux2-CreERT2 mice, Cre and GCaMP expression are enriched in layer 2/3 (Franco et al., 2012; Harris et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text citing previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "a98a0c4f-38d8-459e-8206-2bff3ee37a63",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C68",
+      "claim": "In Emx1-IRES-Cre and Camk2a-tTA mice, GCaMP is expressed throughout cortical layers (Gorski et al., 2002; Wekselblatt et al., 2016).",
+      "claim_type": "EXPLICIT",
+      "source": "In Emx1-IRES-Cre and Camk2a-tTA mice, GCaMP is expressed throughout cortical layers (Gorski et al., 2002; Wekselblatt et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text citing previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "ebca837f-b49a-43cd-be9f-0939d416bac0",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C69",
+      "claim": "Mice of some of the genotypes used here, most notably Emx1-f, can exhibit epileptiform activity (Steinmetz et al., 2017), including overt seizures.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice of some of the genotypes used here, most notably Emx1-f, can exhibit epileptiform activity (Steinmetz et al., 2017), including overt seizures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text citing previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "10987308-8ad1-4ff2-8a3e-7dfbe71b11ae",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C70",
+      "claim": "Mice with seizures were excluded from the study.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice with seizures were excluded from the study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text describing the exclusion criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "55ce0560-f9f5-4c7e-a2d6-125348252b02",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C71",
+      "claim": "The spiking patterns of neurons from GCaMP6s and -f lines commonly differed, suggesting that one or more transgenes affected cell or circuit activity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the spiking patterns of neurons from GCaMP6s and -f lines commonly differed, suggesting that one or more transgenes affected cell or circuit activity (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the manuscript text and supported by Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "a1899368-694b-488f-9880-f15be1b2ded5",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C72",
+      "claim": "Mice were anesthetized with either isoflurane (0.75\u20131.5% in O2) or urethane (1.5 g/kg, 30% aqueous solution, intraperitoneal injection).",
+      "claim_type": "EXPLICIT",
+      "source": "Mice were anesthetized with either isoflurane (0.75\u20131.5% in O2) or urethane (1.5 g/kg, 30% aqueous solution, intraperitoneal injection), then implanted with a metal head-post.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text describing the surgical procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "88f2d96f-65e7-4147-a0ff-74c41afc21e2",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C73",
+      "claim": "A circular craniotomy was performed with skull thinning over the left V1 centering on 1.3 mm anterior and 2.6 mm lateral to the lambda.",
+      "claim_type": "EXPLICIT",
+      "source": "A circular craniotomy was performed with skull thinning over the left V1 centering on 1.3 mm anterior and 2.6 mm lateral to the lambda.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text describing the surgical procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "23dcd897-7603-40b8-a45d-ff5c9b4dce8b",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C74",
+      "claim": "Individual GCaMP6+ neurons ~100\u2013300 \u00b5m below the pial surface of cortex were visualized under adequate anesthesia (stage III-3) using a Bruker (Prairie) two-photon microscope and Chameleon Ultra II Ti:sapphire laser (Coherent).",
+      "claim_type": "EXPLICIT",
+      "source": "Individual GCaMP6+ neurons ~100\u2013300 \u00b5m below the pial surface of cortex were visualized under adequate anesthesia (stage III-3) using a Bruker (Prairie) two-photon microscope and Chameleon Ultra II Ti:sapphire laser (Coherent).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text describing the imaging procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "73e11015-aa74-48f3-8d51-f22e3177b120",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C75",
+      "claim": "Fluorescence excited at 920 nm wavelength, with <70 mW laser power measured after the objective, was collected in two spectral channels using green (510/42 nm) and red (641/75 nm) emission filters (Semrock) to visualize GCaMP6 and the Alexa Fluor 594-containing micropipette, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluorescence excited at 920 nm wavelength, with <70 mW laser power measured after the objective, was collected in two spectral channels using green (510/42 nm) and red (641/75 nm) emission filters (Semrock) to visualize GCaMP6 and the Alexa Fluor 594-containing micropipette, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text describing the imaging procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "628326c4-3cf0-43f9-984e-309e0872e2bd",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C76",
+      "claim": "Fluorescence images of 96\u2013136 \u00d7 96\u2013107 pixels and a 19.3\u201327.3 \u00d7 19.3\u201321.5 \u00b5m field of view were acquired at 141.3\u2013158 frames per second through a 16\u00d7 water immersion objective lens (Nikon, NA 0.8).",
+      "claim_type": "EXPLICIT",
+      "source": "Fluorescence images of 96\u2013136 \u00d7 96\u2013107 pixels and a 19.3\u201327.3 \u00d7 19.3\u201321.5 \u00b5m field of view were acquired at 141.3\u2013158 frames per second through a 16\u00d7 water immersion objective lens (Nikon, NA 0.8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text describing the imaging procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "fc64cd1e-a9e5-4f63-aa15-a075bc481105",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C77",
+      "claim": "Mean \u00b1 SEM number of pixels per neuron was 1136 \u00b1 46.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean \u00b1 SEM number of pixels per neuron was 1136 \u00b1 46.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text describing the imaging procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "e295d745-0e38-4039-a9d2-54f231d5482b",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C78",
+      "claim": "Two-photon-targeted cell-attached recording was performed following established protocols (Margrie et al., 2003; Kitamura et al., 2008; Knoblich et al., 2019).",
+      "claim_type": "EXPLICIT",
+      "source": "Two-photon-targeted cell-attached recording was performed following established protocols (Margrie et al., 2003; Kitamura et al., 2008; Knoblich et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text citing previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "43c4aa73-67c2-4417-a422-080c2df8e6e0",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C79",
+      "claim": "Minimal seal resistance was 20 M\u03a9.",
+      "claim_type": "EXPLICIT",
+      "source": "Minimal seal resistance was 20 M\u03a9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text describing the electrophysiology procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "d02dfbcf-8de3-46b9-966e-f945081e9bb9",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C80",
+      "claim": "Data were acquired under 'I = 0' mode (zero current injection) with a Multiclamp 700B, recorded at 40 kHz using Multifunction I/O Devices (National Instruments) and custom software written in LabVIEW (National Instruments) and MATLAB (MathWorks).",
+      "claim_type": "EXPLICIT",
+      "source": "Data were acquired under 'I = 0' mode (zero current injection) with a Multiclamp 700B, recorded at 40 kHz using Multifunction I/O Devices (National Instruments) and custom software written in LabVIEW (National Instruments) and MATLAB (MathWorks).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text describing the electrophysiology procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "6f66ad7c-9570-4d77-a803-b600714751b3",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "claim_id": "C81",
+      "claim": "Fluorescence movies were sub-sampled by a factor of 4 in space and 5 in time (to pixel size 0.80 \u00b5m and frame rate 30.3 Hz) to match the sampling rate and approximate number of pixels per soma of the Allen Brain Observatory.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluorescence movies were sub-sampled by a factor of 4 in space and 5 in time (to pixel size 0.80 \u00b5m and frame rate 30.3 Hz) to match the sampling rate and approximate number of pixels per soma of the Allen Brain Observatory (de Vries et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript text describing the downsampling procedure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "994d66af-fd1f-4d40-8b4a-7f93af2d15cc",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors performed simultaneous two-photon calcium imaging and cell-attached electrophysiology recordings in V1 L2/3 excitatory pyramidal neurons from anesthetized transgenic mice expressing GCaMP6s or GCaMP6f. High spatial and temporal resolution imaging was used (19.3\u201327.3 \u00d7 19.3\u201321.5 \u00b5m field of view at 141.3\u2013158.3 fps), yielding a final dataset of 48 neurons from four transgenic mouse lines after quality control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 and C65-C80 provide comprehensive methodological details about the experimental design, including mouse lines, imaging parameters, electrophysiology procedures, and quality control criteria. The methods are well-documented with specific parameters, and the final dataset size (48 neurons from 213 initial recordings) is clearly stated with justification for exclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "bb1d241d-a9b2-42dc-9eeb-0728a5146d53",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The optimal neuropil subtraction parameter (r) for GCaMP6f neurons was approximately normally distributed with mean \u00b1 SEM of 0.82 \u00b1 0.07, and the value of r had a modest effect on event detection in GCaMP6f neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8 are supported by the analysis shown in Figure 2, which demonstrates the distribution of optimal r values and their effect on ROC curves. The conclusion that r has a modest effect is based on empirical data showing that ROC curves changed with r for GCaMP6f but less so for GCaMP6s neurons.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "624c79a1-dabd-46ea-b3ba-e8fd9453f422",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Peak \u0394F/F increased approximately linearly with 1\u20135 APs, and both peak \u0394F/F and decay time constant were greater with GCaMP6s than GCaMP6f. Peak \u0394F/F values were comparable to or slightly greater than previous studies, possibly due to greater neuropil subtraction (r = 0.8 vs. 0.7).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C11 are supported by Figure 3C showing the quantitative relationships between AP number and fluorescence properties. The comparison to previous studies (Chen et al., 2013) is appropriate, though the explanation for differences (C11) is speculative but reasonable given the methodological differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "ae05de58-8ac2-408b-af40-654380a52966",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Photon shot noise was the dominant noise source (variance-to-mean slope of 1.04 \u00b1 0.01, consistent with Poisson process), but trial-to-trial variability in 1 AP-evoked fluorescence amplitude was substantial and exceeded photon shot noise in most neurons, likely due to differences in AP-evoked calcium concentration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C14 are well-supported by quantitative analysis showing Poisson-like noise characteristics and trial-to-trial variability exceeding shot noise (Figure 3\u2014figure supplement 1). Claim C15 is speculative but represents a reasonable interpretation assuming sufficient GCaMP expression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "015ae876-1f11-499e-abab-5808941614f1",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Under high spatial and temporal resolution imaging conditions, 1 AP detection probability ranged widely (0.07\u20131 for GCaMP6s, 0.11\u20130.95 for GCaMP6f) with mean probabilities of 0.70 \u00b1 0.06 (Emx1-s), 0.80 \u00b1 0.03 (tetO-s), 0.40 \u00b1 0.08 (Cux2-f), and 0.60 \u00b1 0.08 (Emx1-f) at 1% false positive probability. These detection rates were lower than previously reported for virally expressed GCaMP6, possibly due to widespread transgenic expression increasing neuropil signal or weaker expression in TIGRE1.0 lines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C20 provide quantitative detection probabilities supported by Figure 4A-C and are based on ground truth-optimized detection. Claims C21-C23 offer reasonable speculations for differences from prior work, citing appropriate references. The comparison to viral expression (Chen et al., 2013) and newer TIGRE2.0 lines (Daigle et al., 2018) provides useful context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "5ae39996-8970-4ec3-b55f-d7c1122f9077",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "When images were downsampled to simulate population imaging conditions (412 \u00d7 412 \u00b5m field of view at 30.3 Hz), event detection probabilities decreased substantially. For downsampled images, 1 AP detection probabilities ranged from 0.16 \u00b1 0.04 to 0.43 \u00b1 0.07, and 2 AP detection probabilities ranged from 0.24 \u00b1 0.04 to 0.89 \u00b1 0.06 across mouse lines. Even with ground truth-optimized detection, spatial and temporal downsampling severely impaired event detection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C31 are well-supported by Figures 4D-F and 5, which show the effect of downsampling on detection performance. The downsampling procedure was designed to match Allen Brain Observatory conditions (C25-C26), providing a realistic simulation of population imaging. The quantitative detection probabilities (C28) are clearly stated with error estimates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "4a552bce-0283-4398-84d8-47121e7b5aad",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Three high-performing spike inference algorithms (NND, Exact L0, MLspike) were compared on both high-resolution and downsampled images. All three algorithms approximately recapitulated AP numbers but with imperfect inference. Pearson correlation coefficients were ~0.4 at 33 ms bins, increasing to ~0.7 at 500 ms bins. Mean performance metrics were similar across algorithms, mouse lines, and imaging conditions, though individual neuron performance varied greatly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C37 are supported by Figure 6 and Figure 6\u2014figure supplement 1. The comparison of three established algorithms (C32-C33) is appropriate, and the performance metrics (C35-C37) are consistent with published results (Berens et al., 2018). The finding that downsampling had little effect on these blind inference algorithms is notable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "32c2cc5e-71d2-4635-8d92-98ea549307ab",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Using blind spike inference algorithms at 1% false positive probability, detection probability was commonly <0.1 for 1 AP events, increasing approximately linearly to ~0.8 for 5 AP events. Since 1 AP events were most common, only a minority of events could be detected with low false positive probability. The modest difference between high-resolution and downsampled images indicates that decreased SNR from population imaging had little effect on event detection with these algorithms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40 are supported by Figure 7A-C. The finding that blind inference performs poorly for 1 AP events (C38-C39) is a key result. Claim C40's interpretation that SNR differences had little effect is supported by the data but somewhat counterintuitive\u2014it suggests that blind inference is already limited even under optimal conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "acf84e80-7afa-4f74-8fae-d41f980ae4bb",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Algorithm-specific optimizations revealed that NND performance improved considerably with upsampling from 30 Hz to 150 Hz, MLspike required autocalibration for optimal performance (contrasting with deconvolution-based algorithms), and Exact L0 required neither upsampling nor per-neuron optimization. MLspike showed less performance loss with downsampling and is recommended for population imaging. Substantial room for improvement exists since all three algorithms fell far short of ground truth-optimized detection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C47 are supported by Figure 7\u2014figure supplements 1-3. The algorithm-specific findings (C41-C44) provide practical guidance, and the comparison to ground truth-optimized detection (C47) highlights the gap between current methods and theoretical limits. The recommendation for MLspike (C46) is reasonable based on the data, though the differences between algorithms are modest.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "495a31cc-f3e7-402a-a064-2aa3c1ed428c",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Population imaging conditions decreased event detection probability with ground truth-optimized detection, but with blind spike inference, many events went undetected even under near-ideal conditions, and detection was not substantially worse under population imaging conditions. Most 1 AP, 2 AP, and sometimes higher AP events go undetected in typical GCaMP6 imaging experiments despite the indicators being bright and sensitive enough to detect most 1 AP events when detection is optimized using ground truth information.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51 synthesize the main findings from Figures 4, 6, and 7. The key insight that blind inference is the primary limitation rather than SNR (C49-C50) is well-supported. Claim C51 effectively summarizes the central conclusion: GCaMP6 indicators are capable of detecting single APs, but practical limitations in spike inference prevent this in typical experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "98494938-e284-4893-8302-281c52cd3ef8",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors contribute a ground truth dataset of 48 V1 L2/3 excitatory neurons (available at https://portal.brain-map.org/explore/circuits/oephys) to address the challenge of accurate spike inference and the scarcity of calibration datasets. This work facilitates interpretation of calcium imaging studies using transgenic mouse lines, such as the Allen Brain Observatory Visual Coding dataset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C56 describe the broader context and contribution of the work. The dataset contribution (C55) is concrete and valuable. Claims C52-C54 accurately characterize the field's challenges, citing appropriate references (Berens et al., 2018). Claim C56's assertion about facilitating interpretation is reasonable given the dataset's characteristics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "53f4c1ce-e919-4bdb-9e75-7ff10b0e6676",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors conclude that while most APs can be detected under near-optimal conditions (as established by previous studies), undetected APs are common in population imaging due to both reduced SNR and, more importantly, the lack of ground truth information for optimizing detection. High SNR alone does not guarantee effective detection; optimization using known AP times is crucial. Parameter tuning without ground truth (e.g., MLspike autocalibration) improves detection but not to the level of ground truth-optimized methods. Since electrophysiology for every neuron is rarely feasible, detection rates in most experiments are severely limited.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C64 synthesize the discussion and main conclusions. These claims are well-supported by the experimental results (Figures 4-7) and appropriately cite prior work (C57-C58). The key insight about the importance of ground truth optimization (C60-C62) is a major contribution. Claim C63's practical conclusion about feasibility is reasonable, and C64 summarizes the main finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "b7f7d52a-934e-42ab-aac2-d17bf2d5a6f1",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Spiking patterns of neurons from GCaMP6s and GCaMP6f lines commonly differed, suggesting that one or more transgenes affected cell or circuit activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C71 is supported by Figure 1\u2014figure supplement 1C showing differences in AP distributions across lines. However, this observation raises concerns about potential confounds in the dataset. The authors excluded mice with overt seizures (C70) but acknowledge that transgene expression may affect neural activity. This could complicate interpretation of differences between GCaMP6s and GCaMP6f performance, as they may reflect both indicator properties and altered neural activity patterns.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    },
+    {
+      "id": "c6583898-3ba8-473b-a3c2-aa5ac7d7fb0d",
+      "content_id": "da760810-90de-414a-9d3b-f7ed62a088f1",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Fluorescence movies were downsampled by a factor of 4 in space and 5 in time to match the Allen Brain Observatory sampling parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C81 describes the downsampling procedure used to simulate population imaging conditions. This is a methodological detail that is clearly stated and appropriate for comparing to the Allen Brain Observatory dataset. The specific downsampling factors are provided with justification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:53:54.532692Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "36b2cf86-b6b7-4709-b898-47c7c9216c65",
+      "result_id": "994d66af-fd1f-4d40-8b4a-7f93af2d15cc"
+    },
+    {
+      "claim_id": "2ea87aa5-bded-4ce0-b7e6-383860b9448c",
+      "result_id": "994d66af-fd1f-4d40-8b4a-7f93af2d15cc"
+    },
+    {
+      "claim_id": "897136c3-d242-4d79-91f5-de2a01efa092",
+      "result_id": "994d66af-fd1f-4d40-8b4a-7f93af2d15cc"
+    },
+    {
+      "claim_id": "8c3a3519-7792-42ad-b118-26336f23c3dd",
+      "result_id": "994d66af-fd1f-4d40-8b4a-7f93af2d15cc"
+    },
+    {
+      "claim_id": "b57018d0-41e6-429b-af36-83d709d6a324",
+      "result_id": "994d66af-fd1f-4d40-8b4a-7f93af2d15cc"
+    },
+    {
+      "claim_id": "16f26608-d3c5-4c0b-81c4-00b885586178",
+      "result_id": "994d66af-fd1f-4d40-8b4a-7f93af2d15cc"
+    },
+    {
+      "claim_id": "25a96992-eb54-4b26-9786-2bae7a9e6ae8",
+      "result_id": "994d66af-fd1f-4d40-8b4a-7f93af2d15cc"
+    },
+    {
+      "claim_id": "3eb2c9c5-5ab4-4a0b-9e84-26d4cd4ea571",
+      "result_id": "994d66af-fd1f-4d40-8b4a-7f93af2d15cc"
+    },
+    {
+      "claim_id": "0a9da4d5-b90c-49b9-b936-404222f634eb",
+      "result_id": "994d66af-fd1f-4d40-8b4a-7f93af2d15cc"
+    },
+    {
+      "claim_id": "a98a0c4f-38d8-459e-8206-2bff3ee37a63",
+      "result_id": "994d66af-fd1f-4d40-8b4a-7f93af2d15cc"
+    },
+    {
+      "claim_id": "ebca837f-b49a-43cd-be9f-0939d416bac0",
+      "result_id": "994d66af-fd1f-4d40-8b4a-7f93af2d15cc"
+    },
+    {
+      "claim_id": "10987308-8ad1-4ff2-8a3e-7dfbe71b11ae",
+      "result_id": "994d66af-fd1f-4d40-8b4a-7f93af2d15cc"
+    },
+    {
+      "claim_id": "55ce0560-f9f5-4c7e-a2d6-125348252b02",
+      "result_id": "994d66af-fd1f-4d40-8b4a-7f93af2d15cc"
+    },
+    {
+      "claim_id": "a1899368-694b-488f-9880-f15be1b2ded5",
+      "result_id": "994d66af-fd1f-4d40-8b4a-7f93af2d15cc"
+    },
+    {
+      "claim_id": "88f2d96f-65e7-4147-a0ff-74c41afc21e2",
+      "result_id": "994d66af-fd1f-4d40-8b4a-7f93af2d15cc"
+    },
+    {
+      "claim_id": "23dcd897-7603-40b8-a45d-ff5c9b4dce8b",
+      "result_id": "994d66af-fd1f-4d40-8b4a-7f93af2d15cc"
+    },
+    {
+      "claim_id": "73e11015-aa74-48f3-8d51-f22e3177b120",
+      "result_id": "994d66af-fd1f-4d40-8b4a-7f93af2d15cc"
+    },
+    {
+      "claim_id": "628326c4-3cf0-43f9-984e-309e0872e2bd",
+      "result_id": "994d66af-fd1f-4d40-8b4a-7f93af2d15cc"
+    },
+    {
+      "claim_id": "fc64cd1e-a9e5-4f63-aa15-a075bc481105",
+      "result_id": "994d66af-fd1f-4d40-8b4a-7f93af2d15cc"
+    },
+    {
+      "claim_id": "e295d745-0e38-4039-a9d2-54f231d5482b",
+      "result_id": "994d66af-fd1f-4d40-8b4a-7f93af2d15cc"
+    },
+    {
+      "claim_id": "43c4aa73-67c2-4417-a422-080c2df8e6e0",
+      "result_id": "994d66af-fd1f-4d40-8b4a-7f93af2d15cc"
+    },
+    {
+      "claim_id": "d02dfbcf-8de3-46b9-966e-f945081e9bb9",
+      "result_id": "994d66af-fd1f-4d40-8b4a-7f93af2d15cc"
+    },
+    {
+      "claim_id": "741c8e48-c076-4972-9427-a1721d52eb9f",
+      "result_id": "bb1d241d-a9b2-42dc-9eeb-0728a5146d53"
+    },
+    {
+      "claim_id": "451ffc91-3b46-4c96-9be3-f7b07fe38c98",
+      "result_id": "bb1d241d-a9b2-42dc-9eeb-0728a5146d53"
+    },
+    {
+      "claim_id": "62d52c6f-2fdd-43f7-9773-9adb1e881db5",
+      "result_id": "624c79a1-dabd-46ea-b3ba-e8fd9453f422"
+    },
+    {
+      "claim_id": "c5e4f5db-8af7-4b80-9dce-645dff5469ce",
+      "result_id": "624c79a1-dabd-46ea-b3ba-e8fd9453f422"
+    },
+    {
+      "claim_id": "ba9745e9-4f09-4db1-9810-5371d07d2793",
+      "result_id": "624c79a1-dabd-46ea-b3ba-e8fd9453f422"
+    },
+    {
+      "claim_id": "7de5b37b-4fc0-4f6e-a8ae-f6aaf4eacf98",
+      "result_id": "ae05de58-8ac2-408b-af40-654380a52966"
+    },
+    {
+      "claim_id": "fcc8991e-3520-476e-8132-2f6532a1ec39",
+      "result_id": "ae05de58-8ac2-408b-af40-654380a52966"
+    },
+    {
+      "claim_id": "9066c8e0-d91a-47cf-a0d9-b2a43d5e1a01",
+      "result_id": "ae05de58-8ac2-408b-af40-654380a52966"
+    },
+    {
+      "claim_id": "4f726e2d-9149-46bc-8577-8b771a2901f8",
+      "result_id": "ae05de58-8ac2-408b-af40-654380a52966"
+    },
+    {
+      "claim_id": "856029f0-14a6-4640-b5bb-8400993f9fae",
+      "result_id": "015ae876-1f11-499e-abab-5808941614f1"
+    },
+    {
+      "claim_id": "dd88a801-a96c-4b2c-b890-7bf03c1dcb8a",
+      "result_id": "015ae876-1f11-499e-abab-5808941614f1"
+    },
+    {
+      "claim_id": "484fb848-d2e6-40d6-a6f2-7210484a8500",
+      "result_id": "015ae876-1f11-499e-abab-5808941614f1"
+    },
+    {
+      "claim_id": "0cf61489-4ec9-48db-9ff6-c3294f6c50d9",
+      "result_id": "015ae876-1f11-499e-abab-5808941614f1"
+    },
+    {
+      "claim_id": "8f37c72e-bf66-4652-bd11-3727b326080e",
+      "result_id": "015ae876-1f11-499e-abab-5808941614f1"
+    },
+    {
+      "claim_id": "ce8f0c41-f496-4cf4-94ad-76d9bab5ff36",
+      "result_id": "015ae876-1f11-499e-abab-5808941614f1"
+    },
+    {
+      "claim_id": "11819487-ece8-40e7-9ed9-bbfca1505ce0",
+      "result_id": "015ae876-1f11-499e-abab-5808941614f1"
+    },
+    {
+      "claim_id": "05af61b6-b88e-4c6f-b78a-25f6d18ffda7",
+      "result_id": "015ae876-1f11-499e-abab-5808941614f1"
+    },
+    {
+      "claim_id": "183ff170-f047-4d56-aac8-2cde2e497dba",
+      "result_id": "5ae39996-8970-4ec3-b55f-d7c1122f9077"
+    },
+    {
+      "claim_id": "0b7e8c8a-b4f5-4616-9f9e-70e520059e05",
+      "result_id": "5ae39996-8970-4ec3-b55f-d7c1122f9077"
+    },
+    {
+      "claim_id": "2c226a73-a38f-46d5-a42f-6a9c99f6755d",
+      "result_id": "5ae39996-8970-4ec3-b55f-d7c1122f9077"
+    },
+    {
+      "claim_id": "6a5ea979-4108-44df-b1d1-ee33231b9cdc",
+      "result_id": "5ae39996-8970-4ec3-b55f-d7c1122f9077"
+    },
+    {
+      "claim_id": "788e2277-38eb-4a45-8aca-5d650d2ac686",
+      "result_id": "5ae39996-8970-4ec3-b55f-d7c1122f9077"
+    },
+    {
+      "claim_id": "44ee60ed-ea8c-450a-992f-fe70bb81959b",
+      "result_id": "5ae39996-8970-4ec3-b55f-d7c1122f9077"
+    },
+    {
+      "claim_id": "0a65df91-5ca3-4184-98ce-74f47811f634",
+      "result_id": "5ae39996-8970-4ec3-b55f-d7c1122f9077"
+    },
+    {
+      "claim_id": "968cb9bd-200e-4056-965c-fb99885e8548",
+      "result_id": "5ae39996-8970-4ec3-b55f-d7c1122f9077"
+    },
+    {
+      "claim_id": "23b2c2f4-4af6-458c-b912-048f8a98825d",
+      "result_id": "4a552bce-0283-4398-84d8-47121e7b5aad"
+    },
+    {
+      "claim_id": "cb125036-127a-44f3-9557-327e320581ed",
+      "result_id": "4a552bce-0283-4398-84d8-47121e7b5aad"
+    },
+    {
+      "claim_id": "051eef76-caab-4f50-b7e7-2d301d112be9",
+      "result_id": "4a552bce-0283-4398-84d8-47121e7b5aad"
+    },
+    {
+      "claim_id": "2b738ed5-2ec1-4d7a-b37f-c2007f3006de",
+      "result_id": "4a552bce-0283-4398-84d8-47121e7b5aad"
+    },
+    {
+      "claim_id": "e8312ea1-7ce7-4702-9fc4-03928c4b3c11",
+      "result_id": "4a552bce-0283-4398-84d8-47121e7b5aad"
+    },
+    {
+      "claim_id": "ee7bb28f-1809-49f8-ae16-c79c8540519a",
+      "result_id": "4a552bce-0283-4398-84d8-47121e7b5aad"
+    },
+    {
+      "claim_id": "6f548404-a2e0-4df0-a251-68bf0640bc81",
+      "result_id": "32c2cc5e-71d2-4635-8d92-98ea549307ab"
+    },
+    {
+      "claim_id": "656263da-4f47-40e7-b414-ac02fc266931",
+      "result_id": "32c2cc5e-71d2-4635-8d92-98ea549307ab"
+    },
+    {
+      "claim_id": "fcc3b506-c470-46ca-8d0b-ff53fae545b6",
+      "result_id": "32c2cc5e-71d2-4635-8d92-98ea549307ab"
+    },
+    {
+      "claim_id": "1367f785-3d89-4007-82b6-90d8eb34a0e2",
+      "result_id": "acf84e80-7afa-4f74-8fae-d41f980ae4bb"
+    },
+    {
+      "claim_id": "1bff4681-ceba-48bd-bad7-49d6efeb3e43",
+      "result_id": "acf84e80-7afa-4f74-8fae-d41f980ae4bb"
+    },
+    {
+      "claim_id": "de139234-af3a-4325-b7e8-cf64ecb5338c",
+      "result_id": "acf84e80-7afa-4f74-8fae-d41f980ae4bb"
+    },
+    {
+      "claim_id": "15df8722-54b6-4b3b-b627-f55168ae776c",
+      "result_id": "acf84e80-7afa-4f74-8fae-d41f980ae4bb"
+    },
+    {
+      "claim_id": "702e4c9e-18de-483a-9d36-a07562736077",
+      "result_id": "acf84e80-7afa-4f74-8fae-d41f980ae4bb"
+    },
+    {
+      "claim_id": "a7ead480-7506-4bda-a17b-3b00dc9e63f9",
+      "result_id": "acf84e80-7afa-4f74-8fae-d41f980ae4bb"
+    },
+    {
+      "claim_id": "ffcf01eb-6926-44cd-83c7-e5d03855c727",
+      "result_id": "acf84e80-7afa-4f74-8fae-d41f980ae4bb"
+    },
+    {
+      "claim_id": "a029d734-4486-4552-90e4-5d1c5ea5d4a4",
+      "result_id": "495a31cc-f3e7-402a-a064-2aa3c1ed428c"
+    },
+    {
+      "claim_id": "9a085494-da78-4c7a-b4d5-b1977d6f7e0b",
+      "result_id": "495a31cc-f3e7-402a-a064-2aa3c1ed428c"
+    },
+    {
+      "claim_id": "e7b2d97d-2ef3-4616-87fb-bc97857dc66d",
+      "result_id": "495a31cc-f3e7-402a-a064-2aa3c1ed428c"
+    },
+    {
+      "claim_id": "41619bae-ed7a-4f51-b212-3057cfeba6e4",
+      "result_id": "495a31cc-f3e7-402a-a064-2aa3c1ed428c"
+    },
+    {
+      "claim_id": "2c890049-27b6-4a9d-b3d2-bae67b75d281",
+      "result_id": "98494938-e284-4893-8302-281c52cd3ef8"
+    },
+    {
+      "claim_id": "12dd4534-5b4e-4472-ab39-4ed08a5a4136",
+      "result_id": "98494938-e284-4893-8302-281c52cd3ef8"
+    },
+    {
+      "claim_id": "0b0f00cb-333a-4bbc-90c7-7fa3dfc7396d",
+      "result_id": "98494938-e284-4893-8302-281c52cd3ef8"
+    },
+    {
+      "claim_id": "ecbc9d40-29f7-4225-bf97-3da5dd3afb56",
+      "result_id": "98494938-e284-4893-8302-281c52cd3ef8"
+    },
+    {
+      "claim_id": "ff370d95-bc29-44d0-96c1-f4a3ab75e900",
+      "result_id": "98494938-e284-4893-8302-281c52cd3ef8"
+    },
+    {
+      "claim_id": "98119a5d-3647-45ca-bbd4-4a33696423e9",
+      "result_id": "53f4c1ce-e919-4bdb-9e75-7ff10b0e6676"
+    },
+    {
+      "claim_id": "3382b190-9a43-46ba-a36e-1467a243c376",
+      "result_id": "53f4c1ce-e919-4bdb-9e75-7ff10b0e6676"
+    },
+    {
+      "claim_id": "b922b104-f990-4a01-8cb7-81f5cfdf2a29",
+      "result_id": "53f4c1ce-e919-4bdb-9e75-7ff10b0e6676"
+    },
+    {
+      "claim_id": "4746f61b-d746-46ec-8e8d-1b03c7c17b8c",
+      "result_id": "53f4c1ce-e919-4bdb-9e75-7ff10b0e6676"
+    },
+    {
+      "claim_id": "55427096-23a5-4281-83f0-eb86fab38b37",
+      "result_id": "53f4c1ce-e919-4bdb-9e75-7ff10b0e6676"
+    },
+    {
+      "claim_id": "6e50c8a1-492d-4f94-8c88-495c0e401341",
+      "result_id": "53f4c1ce-e919-4bdb-9e75-7ff10b0e6676"
+    },
+    {
+      "claim_id": "e6155f96-044a-4a32-ad9b-ea73a8248b9d",
+      "result_id": "53f4c1ce-e919-4bdb-9e75-7ff10b0e6676"
+    },
+    {
+      "claim_id": "cad59a0f-f58f-4f00-b3b0-f77ce35c1dd2",
+      "result_id": "53f4c1ce-e919-4bdb-9e75-7ff10b0e6676"
+    },
+    {
+      "claim_id": "55ce0560-f9f5-4c7e-a2d6-125348252b02",
+      "result_id": "b7f7d52a-934e-42ab-aac2-d17bf2d5a6f1"
+    },
+    {
+      "claim_id": "6f66ad7c-9570-4d77-a803-b600714751b3",
+      "result_id": "c6583898-3ba8-473b-a3c2-aa5ac7d7fb0d"
+    }
+  ],
+  "comparisons": []
+}

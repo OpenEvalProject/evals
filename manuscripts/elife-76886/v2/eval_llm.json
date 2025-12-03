@@ -1,0 +1,323 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C43",
+      "C111",
+      "C146",
+      "C147",
+      "C228",
+      "C229"
+    ],
+    "result": "The TC66T mutant TVA variant dramatically reduces off-target labeling near the injection site compared to wild-type TVA (TCB), enabling accurate quantification of local inputs to VTADA cells. Using TC66T, nearly half (46%) of inputs to VTADA cells were found to be local, which were missed or misquantified in previous studies using wild-type TVA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 establish the methodological basis for using TC66T, while C228-C229 provide quantitative control data showing TC66T reduces background to near-zero levels (2.67 cells vs. 3,183 with TCB). Claims C43 and C111 present the key finding that 46% of inputs are local. The convergence index data (C40-C42) confirms that TC66T maintains labeling efficiency comparable to TCB for long-range inputs, validating the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C112"
+    ],
+    "result": "Comprehensive RABV tracing using TC66T in DAT-Cre mice labeled an average of 23,000 input cells from 900-2,400 starter cells, with a convergence index of approximately 8 that did not significantly differ from wild-type TVA tracing. The majority of starter cells were located in the PBP (58\u00b16%) and PN (27\u00b16%) nuclei of the VTA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C35 provide detailed quantitative data on starter cell numbers and distributions. Claims C39-C42 establish that the convergence index is consistent with previous studies, validating the TC66T approach. The statistical comparison (C41) and similarity to Watabe-Uchida et al. (C42) support the reliability of the method. These claims collectively demonstrate successful implementation of the modified tracing approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "UMAP analysis comparing the current dataset with Faget et al. showed that data mixed for long-range inputs but segregated for local and questionable brain regions, supporting the necessity of using TC66T to properly examine local inputs in the ventral midbrain. Local regions (VTA, SNc, SNr, RPC, IPN) combined yielded 20% of total inputs, including 10% within the VTA itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 describe the UMAP analysis results showing data mixing for long-range inputs but segregation for local regions. Claims C44-C48 provide quantitative breakdowns of local input percentages. The interpretation (C51-C53) that TC66T is necessary for examining local inputs is well-supported by the segregation pattern in UMAP space, which indicates different variances between datasets for local regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "UMAP analysis revealed three clusters of inputs to VTADA cells based on their medial-lateral projection patterns in the VTA. Cluster 1 inputs project laterally/dorsally (including SNr, mRT, PAG), cluster 2 inputs project uniformly (including VTA subregions, RPC, IC), and cluster 3 inputs project medially (including IPN, SuM, SC). This topographical organization applies to both long-distance and local inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C74 provide detailed characterization of the three UMAP clusters with specific regional assignments. Claims C66, C69, and C73 present validation data from Allen Mouse Brain Connectivity Atlas showing the predicted medial-lateral projection biases. Claim C75 synthesizes these findings into a coherent organizational principle. The convergence of UMAP clustering with independent anatomical projection data strongly supports this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "GABAergic input mapping revealed that the SNr is the single largest source of inhibition to VTADA cells (20.1\u00b11.4%), followed by VTA PBP (19.3\u00b10.7%) and SNc (10.5\u00b12.4%). Together with VTA IF and PN, 64% of inhibitory inputs arise from regions within or immediately adjacent to the VTA. Additional distributed inhibitory inputs come from posterior regions including PnO (7.5\u00b12.4%), mRT (5.5\u00b11.3%), and other hindbrain nuclei.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C89 provide detailed quantitative data on GABAergic input sources identified through FISH for GAD1/GAD2. The percentages are reported with standard errors and sum to 100%, indicating comprehensive quantification. Claims C91-C92 contextualize these findings within the broader input map. The methodology combining RABV tracing with FISH is appropriate for identifying GABAergic inputs, and the quantitative results are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C131"
+    ],
+    "result": "Approximately 40% of RABV-labeled inputs in the VTA and RRF that did not express TC66T costained with tyrosine hydroxylase (TH), indicating substantial DA-DA connectivity. This percentage was consistent across different distances from the injection site, suggesting these represent bona fide synaptic connections rather than off-target labeling. DA-DA inputs comprise approximately 4-5% of total inputs to VTADA cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 present the key quantitative finding with appropriate controls (distance from injection site). Claim C98 provides the calculation for total DA-DA input percentage. The consistency across distances (C97) is critical evidence against off-target labeling. However, the interpretation assumes that RABV transmission through DA-DA connections occurs with similar efficiency to other connection types, which may not be accurate given the known volume transmission properties of DA (discussed in C121-C132).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Serotonergic input mapping using Tph2 immunostaining revealed that approximately 30% of RABV-labeled cells in each serotonergic region costained with Tph2, with this fraction being relatively constant across all serotonergic nuclei. The vast majority of serotonergic inputs arise from the dorsal raphe (376\u00b124 per 10,000 inputs), with additional distributed inputs from mRT, MnR, RMg, and pons. Together, serotonergic inputs from non-DR sources represent approximately 1.5% of total inputs to VTADA cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 establish the consistent fraction of serotonergic cells across regions. Claims C105-C107 provide quantitative data on the distribution of serotonergic inputs normalized per 10,000 total inputs, enabling comparison across regions. The methodology combining RABV tracing with Tph2 immunostaining is appropriate. The finding that ~30% of inputs from serotonergic regions are actually serotonergic is important for interpreting the functional significance of these connections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Based on UMAP clustering and previous projection mapping studies, local inputs are predicted to target specific VTADA subpopulations: cluster 1 inputs (SNr, mRT, PAG, etc.) principally target VTADA\u2192NAcLat cells, cluster 2 inputs (VTA subregions, RPC, IC, etc.) predominately innervate VTADA\u2192Amygdala neurons, and cluster 3 inputs (IPN, SuM, SC, etc.) are biased onto VTADA\u2192NAcMed or VTADA\u2192mPFC cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C118-C120 present inferences about local input targeting based on UMAP clustering associations with long-range inputs of known projection biases (C114-C117). While the logic is reasonable and supported by the medial-lateral projection patterns validated in Figure 3, these are indirect inferences rather than direct measurements. The study did not perform projection-specific tracing of local inputs to directly test these predictions. The small sample size (n=4) for UMAP analysis (C203) also limits confidence in these inferences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C152",
+      "C153",
+      "C154",
+      "C227"
+    ],
+    "result": "Control experiments in Cre-negative mice demonstrated that wild-type TVA (TCB) results in thousands of non-Cre-dependent infections near the injection site (average 3,183 cells), while TC66T reduces this to near-background levels (2.67 cells). Off-target labeling with TCB is TVA-mediated, as it does not occur without AAV injection, and likely results from both local leaky expression and retrograde uptake of AAV followed by non-Cre-mediated TVA expression in distant inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 and C227 provide quantitative data on off-target labeling with TCB. Claims C152-C154 describe the control experiments and interpretation. The demonstration that infections do not occur without AAV (C24) is critical evidence that the labeling is TVA-mediated rather than due to direct RABV infection. The proposed mechanism involving both local leak and retrograde AAV uptake (C154) is a reasonable interpretation of the observation that some long-distance inputs are labeled in Cre-negative controls.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C110",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Previous RABV mapping studies using wild-type TVA have a fundamental limitation: non-Cre-dependent expression of TVA near the injection site leads to off-target labeling of local inputs. This occurs because only a single functional unit (three TVA molecules bound to an EnvA trimer) is required for infection, and standard FLExloxP/DIO cassettes exhibit incomplete suppression of transcription/translation. This limitation has prevented accurate assessment of local inputs in previous VTA mapping studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C18-C22 establish the technical basis for the limitation. Claims C110, C148-C151 discuss the prevalence and implications of this problem. The mechanistic explanation (C21-C22) is supported by citations. The quantitative demonstration of off-target labeling with TCB (C23, C227) provides direct evidence for this limitation. This represents an important methodological critique of the field that is well-supported by both mechanistic understanding and empirical data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184"
+    ],
+    "result": "The TC66T approach offers several advantages over alternative strategies for reducing off-target labeling: it simplifies experimental setup, does not require careful viral titration, avoids addition of extra amino acids to the protein, maintains comparable convergence index to wild-type TVA, and enables labeling of large numbers of inputs without high off-target labeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C179-C184 enumerate the advantages of TC66T. Claim C182 provides empirical support by referencing Figure 1H showing no significant difference in convergence index. The comparison with alternative strategies (viral titration in C164-C166, ATG-Out in C167-C169) provides context. These advantages are well-supported by the data presented in the manuscript, particularly the convergence index comparison and the low background in controls.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208",
+      "C209",
+      "C210"
+    ],
+    "result": "The study has several acknowledged limitations: small sample sizes (n=3-4 per group) leading to high variance in some cases, spatial analysis limited to the medial-lateral axis (not capturing dorsal-ventral or anterior-posterior gradients), and the medial-lateral axis not fully capturing distinctions between VTA subregions (IF, PBP, PN).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C203-C210 explicitly acknowledge study limitations. These are honest assessments of the work's scope and constraints. The small sample size is evident in the error bars in figures and is appropriate to acknowledge. The focus on medial-lateral axis is justified by previous work (C207) but does represent a limitation for fully characterizing local input organization. These limitations do not invalidate the major findings but appropriately qualify their interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C211",
+      "C212",
+      "C213",
+      "C214",
+      "C215",
+      "C216",
+      "C217",
+      "C218",
+      "C219",
+      "C220",
+      "C221",
+      "C222",
+      "C223",
+      "C224",
+      "C225",
+      "C226"
+    ],
+    "result": "RABV mapping has inherent limitations: it labels only 10-40% of actual inputs, potential biases for specific input types are unknown, population-level tracing reduces resolution of input-starter cell connectivity, and the relationship between RABV labeling and functional connection properties (synaptic strength, release probability) is unclear. Despite these limitations, RABV mapping provides essential anatomical connectivity data as a foundation for functional studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C211-C225 provide a comprehensive and critical assessment of RABV mapping limitations, supported by citations (C212, C223). These are well-established limitations in the field. Claim C226 appropriately contextualizes the value of the approach despite these limitations. This represents a balanced and scientifically rigorous discussion of methodological constraints that should be considered when interpreting any RABV mapping study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C132"
+    ],
+    "result": "The mechanism of DA-DA transmission detected by RABV is unclear, as DA is thought to signal through volume transmission while RABV transmits through synapses. Evidence suggests DA-DA transmission may occur through focal release at specific sites rather than volume transmission, though RABV labeling efficiency for DA-DA connections may be reduced ~10-fold. If corrected for this reduced efficiency, the actual DA influence on VTADA cells could be extraordinarily high.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C121-C130 present evidence and arguments about DA-DA transmission mechanisms, supported by citations. However, claim C132 makes a speculative extrapolation about the \"extraordinarily high\" DA influence based on a 10-fold correction factor from a different system (dorsal striatum, C124). This calculation assumes the same efficiency reduction applies to VTA DA-DA connections, which is not directly tested. The uncertainty about transmission mechanisms (C125) and the speculative nature of the extrapolation (C132 is marked as SPECULATION) make this result uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "DA-DA interconnectivity in the ventral midbrain has implications for tract tracing studies: RABV could spread between DA cell populations with different projection targets, potentially degrading pathway-specific connectivity. The AND-gate TRIO strategy was designed to avoid this problem and is required for maintaining pathway specificity in input-output analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C135 present the logical problem of DA-DA connectivity for pathway-specific tracing. Claims C136-C137 describe the TRIO solution, supported by citations. The finding of substantial DA-DA connectivity (C98-C99) provides empirical support for this concern. The argument is logically sound: if DA cells with different projection targets are interconnected, then RABV injected at one projection site could label inputs to DA cells projecting elsewhere. The TRIO strategy addresses this by requiring both Cre and Flp expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Serotonergic inputs from the dorsal raphe represent only 3.7% of total inputs to VTADA cells, yet provide powerful functional influence on reward behavior by triggering DA release in the nucleus accumbens. The serotonergic influence may be underrepresented in RABV mapping due to volume transmission reducing labeling efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C141 provides the quantitative calculation (3.7%) based on the experimental data. Claim C142 is supported by multiple citations to functional studies. Claim C143 offers a reasonable caveat about potential underrepresentation due to volume transmission. The disconnect between the small percentage of inputs and the strong functional effects highlights an important principle: input quantity does not necessarily predict functional importance. This is well-supported by the cited functional studies.",
+    "result_type": "MINOR"
+  }
+]

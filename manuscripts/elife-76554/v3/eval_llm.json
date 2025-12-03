@@ -1,0 +1,232 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C38"
+    ],
+    "result": "Plasma TMA levels are elevated while TMAO levels are decreased in AH patients, correlating with reduced hepatic FMO3 expression. FMO3 mRNA and protein are uniquely suppressed in severe AH but not in other liver diseases such as NAFLD or viral hepatitis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 and C38 provide converging evidence from LC-MS/MS measurements (C1, C2), RNA sequencing (C3), and Western blot analysis (C4) demonstrating elevated TMA, decreased TMAO, and reduced FMO3 in AH patients. The reciprocal relationship between reduced FMO3 (the enzyme converting TMA to TMAO) and elevated TMA is mechanistically coherent. Sample sizes are adequate (n=13-152 depending on group) and statistical significance is reported (p<0.001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "Circulating choline levels were not significantly altered in AH patients, but carnitine, betaine, and \u03b3-butyrobetaine (TMA pathway co-metabolites) were elevated compared to healthy controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C7 are supported by mass spectrometry data shown in Figure 1\u2014figure supplement 1. The finding that choline is unchanged while other TMA precursors/co-metabolites are elevated provides important context for understanding the TMA pathway alterations in AH. Statistical methods appear appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "LPS injection in mice induces acute hepatic inflammation associated with reduced Fmo3 expression and increased Taar5 (TMA receptor) expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C5 is supported by qPCR data from LPS-injected mice (Figure 1E, n=6). This provides mechanistic insight linking inflammation to FMO3 suppression. However, the authors note that ethanol feeding alone does not consistently reduce Fmo3 in mice, suggesting inflammation rather than ethanol per se drives FMO3 suppression. Statistical significance is reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "IMC treatment effectively reduced plasma TMA/TMAO, prevented ethanol-induced increases in ALT and hepatic steatosis, reduced liver triglycerides and cholesterol esters, and decreased Tnf\u03b1 expression. However, IMC caused unexpected reductions in food intake and body weight in ethanol-fed mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8-C11 demonstrate protective effects of IMC with appropriate biochemical and histological data (Figures 2A-L, n=4-5). However, C12 reveals a significant confounding factor: IMC caused reduced food intake and body weight specifically in ethanol-fed mice. This drug-ethanol interaction complicates interpretation, as the protective effects could be partially due to reduced caloric intake rather than specific TMA pathway inhibition. The authors acknowledge this limitation and tested an alternative inhibitor (FMC).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "FMC treatment was well tolerated without affecting food intake or body weight, reduced plasma TMA/TMAO levels, and significantly protected against ethanol-induced ALT elevations, hepatic steatosis, and cholesterol accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 demonstrate that FMC, a structurally distinct TMA lyase inhibitor, provides similar hepatoprotection as IMC but without the confounding effects on food intake and body weight (Figures 2\u2014figure supplement 1C-D and Figure 3, n=3-5). This strengthens the conclusion that TMA pathway inhibition specifically protects against ethanol-induced liver injury. Statistical significance is appropriately reported with two-way ANOVA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C64"
+    ],
+    "result": "Gut microbe-targeted choline TMA lyase inhibition with two structurally distinct inhibitors (IMC or FMC) can protect mice against ethanol-induced liver injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40 and C64 are summary statements supported by the collective data from Figures 2 and 3. Both inhibitors showed protective effects, with FMC providing cleaner evidence due to lack of confounding effects on food intake. The use of two structurally distinct inhibitors targeting the same pathway strengthens the conclusion that TMA production contributes to ethanol-induced liver injury.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C41"
+    ],
+    "result": "Both IMC and FMC promoted restructuring of the cecal microbiome in an ethanol-dependent manner, with some consistent but many different alterations at the phylum and genus levels between the two inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 and C41 are supported by 16S rRNA sequencing data with appropriate statistical analyses (PERMANOVA, Mann-Whitney U test, Figure 4). NMDS plots show clear separation between groups. The finding that both inhibitors alter the microbiome differently yet both protect against liver injury (C48) suggests the protective effects may not be solely due to microbiome restructuring. Sample sizes and statistical methods are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C42"
+    ],
+    "result": "IMC treatment altered the host liver transcriptome in an ethanol-dependent manner, affecting genes involved in xenobiotic metabolism, hormone/cytokine signaling, hepatocyte metabolism, and RNA processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 and C42 are supported by unbiased RNA sequencing data (Figure 5, n=4 per group). NMDS and hierarchical clustering show clear separation between groups. Differential expression analysis identifies specific genes and pathways altered by IMC treatment. The data are deposited in GEO (GSE157681), supporting reproducibility. Statistical methods using edgeR are appropriate for RNA-seq analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C45",
+      "C46"
+    ],
+    "result": "Direct portal vein administration of TMA elicits rapid (10 min) phosphorylation changes in 36 liver proteins, including those involved in PKA signaling, insulin signaling, GEF pathways, and RNA processing, supporting the notion that TMA acts as a gut microbe-derived hormone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C24-C26, C45, and C46 are supported by phosphoproteomics data (Figure 6, n=4 per group). However, several concerns limit confidence: (1) TMA was administered at supraphysiological concentrations (125-320 \u03bcM in portal blood vs. 0.5-2 \u03bcM in vehicle controls), which may not reflect physiological signaling; (2) the 10-minute timepoint captures only acute effects; (3) the authors acknowledge that 'future studies should focus on more physiologically relevant modes of TMA production'; (4) phosphorylation changes alone do not establish functional consequences. While the data demonstrate that TMA can alter hepatic signaling, whether this occurs at physiological concentrations and contributes to liver injury remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "Both IMC and FMC similarly improved ethanol-induced liver injury despite having some consistent but many different cecal microbiome alterations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C48 is supported by comparing microbiome data (Figure 4) with liver injury data (Figures 2 and 3). This observation suggests that the protective effects are primarily due to TMA pathway inhibition rather than specific microbiome restructuring patterns. This is an important mechanistic insight, though the authors appropriately note that some beneficial effects may still originate from microbiome restructuring (C49).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "Multiple clinical severity markers (MELD score, Maddrey's discriminant function, Child-Pugh score, AST, bilirubin, creatinine, INR) were higher in severe vs. moderate AH patients, while serum albumin was lower.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36 and C37 describe the clinical characteristics of the patient cohort, which are essential for validating that the moderate and severe AH groups are appropriately classified. The data are summarized in Figure 1\u2014source data 1 and 2. These are standard clinical measures for AH severity assessment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "TMA and related co-metabolites may allow for discrimination of AH from other liver diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C39 is based on the unique elevation of TMA in AH and unique suppression of FMO3 in severe AH compared to other liver diseases (C1-C4), combined with cited breath metabolomics studies. However, this is a speculative conclusion that would require formal diagnostic accuracy studies (sensitivity, specificity, ROC analysis) across different liver disease etiologies to be definitively supported. The current data are suggestive but not sufficient for a biomarker claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C47",
+      "C54",
+      "C56"
+    ],
+    "result": "Selective drugs targeting the gut microbial TMA pathway may hold promise for treating AH, and diet/ethanol-microbe-host metabolic interplay can be causally linked to ethanol-induced liver injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C54, and C56 are summary conclusions supported by the collective evidence: elevated TMA in AH patients (C1), reduced FMO3 (C3-C4), and protective effects of two TMA lyase inhibitors in mouse models (C8-C15, C40). The mouse data provide proof-of-concept for therapeutic potential, though translation to human AH requires clinical trials. The use of 'may hold promise' appropriately reflects the preliminary nature of these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C43",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C65"
+    ],
+    "result": "Background claims establishing the context of AH mortality, microbiome involvement in ALD, the TMA/TMAO pathway, and prior work on TMA lyase inhibitors in other diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C35, C43, C50-C53, and C59-C65 are background/context claims supported by appropriate citations to published literature. These establish the rationale for the study and provide necessary context. The citations appear appropriate and the claims represent established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C44",
+      "C49",
+      "C55",
+      "C57",
+      "C58"
+    ],
+    "result": "Speculative claims about TMA acting as a hormone, beneficial effects originating from microbiome restructuring, bi-directional crosstalk between gut microbes and liver, and advantages of bacterial enzyme inhibitors as therapeutics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C44, C49, C55, C57, and C58 represent speculative interpretations and future directions. While these are reasonable hypotheses based on the data presented, they extend beyond what is directly demonstrated. C44 is partially addressed by the phosphoproteomics experiment but with limitations noted above. C49 and C55 are plausible but not definitively proven. C57 and C58 are theoretical advantages that require validation in clinical settings.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,309 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The authors established a reconstituted in vitro system using micropatterned glass surfaces with immobilized WAVE1\u0394N to assemble branched actin networks from purified components (profilin-actin, Arp2/3, capping protein). These networks grow as three-dimensional pillars at ~7.3 \u03bcm/min and reach steady-state growth lasting >1 hour, with uniform component densities across the network indicating no diffusion limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C49 collectively describe a well-characterized experimental system with multiple lines of evidence supporting steady-state network assembly. The uniform density distributions (C38-C39), stable growth rates (C37, C41), and calculations showing minimal protein depletion (C48-C49) provide strong support for the system's validity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "When subjected to stepwise increases in compressive load via AFM cantilever, branched actin networks rapidly adapt by decreasing growth velocity while simultaneously increasing the steady-state density of all network components (actin, capping protein, Arp2/3) in a coordinated manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 describe the core phenomenological observation with direct experimental evidence from TIRF microscopy and AFM measurements (Figure 1). Control networks in the same chamber show constant density, ruling out artifacts from protein concentration changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "At steady state, the overall rates of nucleation and capping must be equal, and any increase in free barbed end density must reflect either increased nucleation rate or decreased per-filament capping rate. The relationship E = R_nucleate / (k_cap[CP]) constrains the possible mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 present a logical framework based on steady-state mass balance. The reasoning is sound and supported by previous work (C57, C58). This theoretical constraint is essential for interpreting the experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C70",
+      "C71"
+    ],
+    "result": "Network-level rates of nucleation, elongation, and capping all decrease linearly with applied force (~50% reduction at stall force). However, when normalized by the number of free barbed ends, per-filament elongation and capping rates show exponential decay with force per filament, indicating that the force-sensitivity of the capping rate constant (k_cap) drives the increase in barbed end density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C71 present a key mechanistic finding supported by quantitative analysis (Figure 2). The normalization by free barbed end density (C64-C66) and the exponential fits (C65-C66) provide strong evidence. The conclusion that k_cap decreases with force (C70-C71) follows logically from the data and steady-state constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Single-molecule TIRF imaging of Arp2/3 incorporation reveals a nucleation rate of 0.037 s\u207b\u00b9 per WAVE1\u0394N molecule, which is surprisingly fast compared to solution-based assays. Under load, the rate decreases only moderately (~20%), with fluorescence decay times inversely correlated with network growth velocity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C79 describe single-molecule measurements with clear experimental evidence (Figure 3A-E, Video 1). The nucleation rate calculation (C73) is based on measured parameters. The comparison to solution assays (C74) and speculation about force-facilitated NPF dissociation (C75) are appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Bulk fluorescence measurements show a ~50% decrease in Arp2/3 incorporation under load, more pronounced than the ~20% decrease in single-molecule measurements. This discrepancy is explained by rapid dissociation of newly formed branches near the coverslip surface, evidenced by a 'shoulder' of short dwell times at high loads that cannot be attributed to photobleaching or tracking artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C89 reconcile an apparent discrepancy between two measurement methods through careful analysis of dwell time distributions (Figure 3F-I). The evidence for rapid dissociation events (C83-C85) is supported by controls ruling out artifacts. The interpretation that branch failures are localized near the surface (C87-C88) is reasonable, though the speculation about force-dependence (C89) is appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Using a FRET-based assay, the authors demonstrate that free barbed ends compete with actin monomers for WH2 domain binding on NPFs. Under high load, the fraction of WH2 domains protected from quenching increases 3.7-fold (from 7% to 27%), matching the 3.3-fold increase in free barbed end density. This 'barbed end interference' mechanism quantitatively explains the 20% decrease in nucleation rate under load.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C98 present a mechanistic explanation for decreased nucleation under load, supported by direct FRET measurements (Figure 4). The quantitative agreement between WH2 protection (3.7-fold, C93-C94) and barbed end density increase (3.3-fold, C95) is striking. The 20% decrease in available WH2 domains matching the nucleation rate decrease (C96) provides strong support for the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The average filament length in branched actin networks remains constant across a wide range of applied loads, despite changes in capping protein concentration affecting filament length at any given load. This load-invariance of filament length is explained by matched force responses of elongation and capping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C103 describe an important observation supported by previous work (C99) and new experiments varying capping protein concentration (C101-C103, Figure 5\u2014figure supplement 1). The data clearly show that while [CP] affects filament length, force does not, supporting the matched force response hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Brownian Ratchet theory predicts that both actin monomers and capping protein, which require the same 2.7 nm gap to bind filament barbed ends, should exhibit matched force responses. This theory predicts that altering the size of capping protein should alter its force response and break the coordination with filament elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 present theoretical predictions based on established Brownian Ratchet models and structural data. The gap size requirement (C106) is based on atomic structures from cited work. The prediction (C107) follows logically from the theory and sets up the key experimental test.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Bulky capping protein mutants (GST-CP and NusA-CP) cap filaments with wildtype kinetics in solution but show dramatically different behavior under load. While wildtype CP maintains constant stoichiometry with actin under all loads, the bulky mutants diverge under load, with their incorporation decreasing more strongly with force. This size-dependent force response is not due to impaired diffusion through the network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C116 describe a critical experimental test of Brownian Ratchet theory. The bulky mutants function normally in solution (C111) but show altered force response (C112-C114, Figure 5D-F, Video 3). Controls rule out diffusion limitations (C115) and tag-specific effects (C116). This provides direct experimental support for the size-dependent insertional mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "An analytical model based on Brownian Ratchet theory, with only one free parameter (characteristic tethering force of 0.3 pN), accurately predicts the force-dependent change in relative incorporation of wildtype versus bulky capping protein. This demonstrates that capping is a size-dependent insertional process governed by Brownian Ratchet mechanics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C119 show that the experimental data (C117, Figure 5E) can be quantitatively explained by Brownian Ratchet theory with minimal free parameters. The tethering force value (C118) is consistent with weak protein-protein interactions. This provides strong theoretical support for the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Compressive forces increase filament density by decreasing the per-filament capping rate (via force-sensitive k_cap), not by increasing nucleation. This mechanism results solely from force sensitivity of filament capping and should be universal across all branched actin networks regardless of which NPF directs assembly, as it is independent of nucleation reaction details.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C125 synthesize the main findings into a coherent mechanism. The conclusion is well-supported by the experimental data. The mesh size calculation (C122-C123) rules out diffusion limitations. The prediction of universality (C125) is reasonable given the mechanism's independence from NPF-specific details.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "All Type I NPFs share common motifs (CA region, WH2 domains, proline-rich region) that enable force generation. While CA and proline-rich region variations affect nucleation kinetics, the WH2 domain size determines force-dependent tethering. NPFs with multiple WH2 domains (N-WASP, JMY) might exhibit different force dependences than single-WH2 NPFs (WAVE, WASP, WASH).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C132 discuss the generalizability of findings to other NPFs. The structural similarities (C126) are well-established. The prediction about multi-WH2 NPFs (C132) is appropriately qualified as speculation and follows logically from the size-dependence principle.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The force-dependent decrease in k_cap is explained by Brownian Ratchet theory. Since both capping protein and actin require the same gap size, they respond identically to force, causing filaments to grow slower but for proportionally longer times. The bulky capping protein experiment provides the most direct experimental support for Brownian Ratchet models of force generation to date.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C137 connect the experimental findings to Brownian Ratchet theory. The theoretical explanation (C133-C135) is well-grounded in established models. The assessment that the bulky CP experiment provides direct support (C137) is justified given that it tests a specific, quantitative prediction of the theory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The matched force responses suggest that capping protein size may be evolutionarily adaptive, as size mismatches would cause deleterious filament length changes under load. The force-generating Brownian ratchet (elongation) is controlled by a regulatory Brownian ratchet (capping) to form a balanced motor, allowing independent tuning of filament length by other polymerases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C138-C143 present evolutionary and functional interpretations that, while logical, are speculative. The reasoning about deleterious consequences of size mismatches (C139-C141) is plausible but not directly tested. These are interesting hypotheses that would require additional evidence to support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Force decreases Arp2/3 activity, indicating mother filament availability is not limiting. Instead, increased free barbed ends inhibit nucleation by sequestering WH2 domains ('barbed end interference'). This mechanism, distinct from but functionally equivalent to 'monomer gating', explains how networks maintain homeostatic density despite autocatalytic nucleation, and the current study provides direct experimental evidence that it accounts for the majority of feedback regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C150 present a mechanistic model for negative feedback regulation supported by the FRET data (Figure 4). The distinction between 'barbed end interference' and 'monomer gating' (C146-C148) is clearly explained. The claim that this accounts for the majority of feedback (C150) is supported by the quantitative agreement between WH2 occupancy and nucleation rate changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Comparison of bulk and single-molecule Arp2/3 measurements reveals that some newly formed branches fail soon after creation, within tens of nanometers of the nucleation site. These early failures appear to increase with force, though the data cannot definitively distinguish force-dependent failure from force-induced slowing causing more failures to occur within the TIRF field. The vulnerability period may relate to ATP hydrolysis or forces on uncapped filaments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C151-C156 describe an interesting observation about branch failure, but the interpretation is complicated by technical limitations of TIRF imaging (C153-C154). While the evidence for early branch failures is solid (C151-C152, C155), the force-dependence and mechanism (C153-C154, C156) remain speculative. Additional experiments would be needed to definitively establish these points.",
+    "result_type": "MINOR"
+  }
+]

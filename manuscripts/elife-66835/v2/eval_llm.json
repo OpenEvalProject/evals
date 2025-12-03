@@ -1,0 +1,339 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C26",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C45"
+    ],
+    "result": "The tTARGIT system consists of a Flp-dependent Driver AAV expressing tTA and a Cre-dependent Payload AAV expressing the transgene of interest, requiring both recombinases for robust transgene expression in target cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C26, C40-C43, and C45 collectively describe the design and logic of the tTARGIT system. The Driver AAV uses a Flp-dependent fDIO cassette to express tTA with a positive feedback loop (C40-C41), while the Payload AAV requires Cre-mediated inversion for tTA/TRE-dependent transgene expression (C42). Only cells with both recombinases express the transgene (C43), and the system mediates constitutive expression without tetracycline (C45). This is a well-supported description of the system's design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The tTARGIT system demonstrates strict dual recombinase dependence, with robust transgene expression only when both Driver and Payload AAVs are co-injected into mice expressing both Flp and Cre recombinases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 and C52-C55 demonstrate that transgene expression requires both AAVs and both recombinases. No or minimal expression was detected in wild-type, single-recombinase mice, or with single AAV injections (C46-C48, C52-C53), while robust expression occurred with both AAVs in dual-recombinase mice (C49, C54). This is supported by data in Figures 1c and 1e, providing strong evidence for the system's specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C70",
+      "C71"
+    ],
+    "result": "The tTARGIT system produces functional transgene expression, as demonstrated by photostimulation and chemogenetic activation experiments showing colocalization of transgene markers with FOS-IR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 and C70-C71 demonstrate functional transgene expression. Photostimulation of ChR2-expressing cells (C50) and CNO administration to hM3Dq-expressing cells (C71) both promoted colocalization with FOS-IR, indicating neuronal activation. This is supported by data in Figure 1\u2014figure supplement 4 and Figure 3b-d, confirming that the tTARGIT system produces functional proteins capable of manipulating neuronal activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The tTARGIT system can be modified to a Flp-ON/Cre-OFF configuration by placing the payload in forward orientation, resulting in transgene expression in Flp-expressing cells lacking Cre, though 1-7% of Cre-positive cells showed detectable expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 describe the Flp-ON/Cre-OFF system design and demonstrate its function, with data in Figure 1\u2014figure supplement 5c showing expression predominantly in Cre-negative cells. However, C60-C62 acknowledge incomplete Cre-OFF inactivation (1-7% leakiness), attributed to low LeprCre expression (C61). The authors predict improved performance with stronger Cre drivers (C62). While the system works as designed, the incomplete inactivation is a documented limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "A Slc17a6FlpO mouse line and Rosa26RCFL-eGFP-L10a reporter were generated, which together with LeprCre largely restricted eGFP expression to VMH cells within the mediobasal hypothalamus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 describe the generation of genetic tools and their validation. The combination of Slc17a6FlpO, LeprCre, and the dual-recombinase reporter restricted eGFP expression to VMH cells in the mediobasal hypothalamus (C36), as shown in Figure 1\u2014figure supplement 1. While C35 notes expression elsewhere in the brain, the key finding is the VMH specificity within the target region, which is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C37",
+      "C38"
+    ],
+    "result": "Initial attempts to study LepRbVMH neurons using standard Cre-dependent vectors or INTRSECT AAVs were unsuccessful due to viral spread to neighboring LepRb populations and insufficient transgene expression, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 describe challenges with Cre-only approaches (viral spread), while C37-C38 document INTRSECT system failure (\u22641 cell/section expressing ChR2, Figure 1\u2014figure supplement 2). The authors attribute INTRSECT failure to poor Flp activity and moderate recombinase expression (C38). These observations motivated development of the tTARGIT system and are supported by the presented data, though C31 notes 'data not shown' for the Cre-only experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Using tTARGIT AAVs with a GFP-2A-SynmRuby payload in Slc17a6FlpO;LeprCre mice, LepRbVMH neurons were found to project to the periaqueductal gray, arcuate, periventricular thalamic nucleus, periventricular hypothalamic nucleus, bed nucleus of the stria terminalis, and preoptic area.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 describe projection mapping using the tTARGIT system. Robust VMH-restricted GFP expression was achieved (C63), and GFP-IR (used due to low mRuby detection, C64-C65) revealed projections to multiple brain regions (C66), consistent with known VMH projections (C67, supported by citations). This is supported by data in Figure 2b-d and represents a successful application of the tTARGIT system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Chemogenetic activation of LepRbVMH neurons significantly increased 24-hour oxygen consumption and energy expenditure (primarily during the light phase) while decreasing ambulatory activity (primarily during the dark phase).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 describe metabolic cage results following CNO administration to LepRbVMH-Dq mice. The data in Figure 3g-h show significant increases in VO2 and energy expenditure with phase-specific effects (C72-C74), alongside decreased activity (C75). Statistical significance is reported, and the phase-specific effects are clearly documented. This represents a well-supported finding about LepRbVMH neuron function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Chemogenetic activation of LepRbVMH neurons suppressed 24-hour food intake, primarily during the light phase, revealing a previously unsuspected role for these cells in feeding suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 report decreased food intake following LepRbVMH neuron activation, with data in Figure 3i showing significant suppression primarily during the light phase. The authors characterize this as a 'previously unsuspected role' (C77), suggesting novelty. The finding is well-supported by the data, though the novelty claim would benefit from more explicit comparison to prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "CNO administration to LepRbVMH-Dq mice decreased the respiratory exchange ratio during the light phase, consistent with increased fat metabolism due to combined increased energy expenditure and decreased food intake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 report decreased RER during the light phase (supported by Figure 3j) and interpret this as increased fat metabolism (C79). The interpretation is reasonable given the concurrent changes in energy expenditure and food intake, though it remains inferential. The data support the observation, and the interpretation is physiologically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "CNO administration significantly increased intrascapular temperatures in LepRbVMH-Dq mice compared to controls, suggesting that LepRbVMH neurons promote energy expenditure at least in part through BAT thermogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 report increased intrascapular temperature (a proxy for BAT thermogenesis) in LepRbVMH-Dq mice following CNO administration, supported by data in Figure 3k-l showing significant differences. The inference that this reflects BAT thermogenesis (C81) is reasonable given the measurement location, though direct BAT activity measurements would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Three-day CNO administration to LepRbVMH-Dq mice decreased body weight by approximately 10% (reversible upon CNO cessation), with the weight loss primarily attributed to increased energy expenditure rather than decreased food or water intake based on timing and magnitude of effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C88 describe chronic CNO effects. Body weight decreased ~10% in LepRbVMH-Dq mice but not controls (C82-C84, Figure 4a), with reversibility upon CNO cessation (C83). Food and water intake decreased (C85-C86, Figure 4b-d), but the authors argue timing and magnitude indicate energy expenditure as the primary driver (C87-C88). This interpretation is supported by the acute metabolic cage data, though the relative contributions could be more rigorously quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C121",
+      "C122"
+    ],
+    "result": "The tTARGIT system revealed that LepRbVMH neuron activation increases energy expenditure and decreases food intake specifically during the light/inactive phase, suggesting diurnal control of energy balance by these neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 and C121-C122 synthesize the phase-specific effects observed in the metabolic studies. The light-phase specificity of effects (supported by data in Figure 3) leads to the inference of diurnal control (C90, C121). C122 speculates that neurons may decrease activity during the light phase, allowing observation of activation effects. The diurnal control conclusion is well-supported by the data, though the mechanistic speculation (C122) remains untested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The tTARGIT system displays low-level leaky payload expression in LeprCre-only mice and with Payload AAV alone, attributed to tTA-independent TRE activity, which had minimal functional impact in the current studies but requires appropriate experimental controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C105 acknowledge a limitation of the tTARGIT system: leaky expression in the absence of full recombinase complement. The authors attribute this to known tTA-independent TRE activity (C102, supported by citation) and predict it occurs primarily in Cre-expressing cells (C103). Importantly, they note minimal functional impact in their studies (C104) but emphasize the need for appropriate controls (C105). This represents a transparent discussion of system limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C93",
+      "C98",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The tTARGIT system addresses limitations of previous intersectional tools by providing robust dual recombinase-sensitive transgene expression, with a suite of payload plasmids developed to facilitate study of intersectional neural populations across the CNS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93, C98, and C123-C126 summarize the study's contributions. The tTARGIT system addresses prior limitations (C93), yields robust expression (C124), and a suite of payloads was developed (C98, Table 1). The system successfully defined LepRbVMH circuitry and function (C125). C126 predicts broad utility, which is reasonable but remains to be demonstrated. The claims are well-supported as a summary of the work's significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "While dual AAVs could theoretically compete for cellular resources, the authors conclude that any such competition with tTARGIT AAVs is minor based on their results and prior successful use of dual AAV systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 address a potential concern about dual AAV competition. C94 raises the theoretical concern, while C95 concludes competition is minor based on the study's results and prior work (C96-C97, supported by citations). This represents a reasonable assessment, though direct comparison of single vs. dual AAV expression levels would strengthen the conclusion. The inference is supported by the observed robust expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C12",
+      "C13",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Existing viral systems have limitations: Cre-dependent vectors cannot target subpopulations or provide spatial specificity within Cre-expressing populations, while the INTRSECT system can be limited by insufficient recombinase activity and requires complex optimization for new transgenes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 and C12-C13 describe limitations of single-recombinase systems (established knowledge), while C22-C25 describe limitations of existing dual-recombinase approaches, particularly INTRSECT. These claims are supported by citations to prior work (C12, C22-C23, C25) and the authors' own observations (C24). This provides appropriate context for the development of tTARGIT, though C24 includes speculation about the cause of INTRSECT limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C68",
+      "C69",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Prior work established that LepRbVMH neurons modulate metabolic adaptations to obesogenic diets and that VMH Lepr deletion impairs energy expenditure on high-fat diet, but these neurons have been difficult to study directly due to neighboring LepRb populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 and C68-C69 describe prior work on LepRbVMH neurons (supported by citations), while C114-C117 provide additional context about VMH Lepr deletion studies. These claims accurately represent prior knowledge and establish the rationale for the current study. The citations support the claims, and C28 correctly identifies the technical challenge that motivated the tTARGIT approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The tTARGIT system as built provides constitutive expression without tetracycline, though doxycycline treatment could potentially decrease expression; an rtTA-based Driver was built for inducible expression but has not been tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C108-C112 describe the constitutive nature of the current system (C108) and discuss potential for inducible control. C109 speculates about doxycycline effects, C110 describes an untested rtTA Driver, and C111-C112 note the rtTA system's limitations and lack of testing. Since the rtTA system has not been tested (C112), these claims represent future possibilities rather than demonstrated capabilities. The speculation is reasonable but unvalidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C99",
+      "C106",
+      "C107"
+    ],
+    "result": "The limitations of tTARGIT Payload vectors likely mirror those of standard Cre-dependent viruses, and appropriate controls are required for studies using tTARGIT AAVs, with potential improvements to the Cre-OFF system through longer incubation or stronger Cre drivers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99, C106-C107 discuss system limitations and recommendations. C99 predicts limitations similar to standard Cre-dependent systems (reasonable inference), C106 suggests potential improvements to Cre-OFF (speculation based on observed leakiness), and C107 emphasizes the need for controls. These represent appropriate caveats and recommendations based on the study's findings, though C99 and C106 remain predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C113",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The tTARGIT system enabled specific targeting of LepRbVMH neurons, revealing their projections, ability to suppress food intake and promote energy expenditure (including BAT thermogenesis), and diurnal control of energy balance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113 and C118-C120 summarize the biological findings enabled by tTARGIT. The system successfully targeted LepRbVMH neurons (C113), identified projections (C118), demonstrated effects on feeding and energy expenditure (C119), and identified BAT thermogenesis as a target (C120). These claims synthesize the major biological findings and are well-supported by the data presented in Figures 2-4.",
+    "result_type": "MAJOR"
+  }
+]

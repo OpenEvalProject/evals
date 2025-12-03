@@ -1,0 +1,265 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C15",
+      "C16",
+      "C17",
+      "C27",
+      "C28",
+      "C29",
+      "C47",
+      "C66"
+    ],
+    "result": "The authors developed a normative decision-making model where attention modulates the reliability (variance) of momentary evidence rather than the magnitude of value, consistent with neurophysiological findings showing attention reduces neural variability and increases signal-to-noise ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C15-17, C27-29 establish the neurophysiological basis for attention modulating information reliability. Claims C47 and C66 describe the model's implementation of this principle. The approach is well-grounded in cited neurophysiology literature and represents a key theoretical contribution distinguishing this model from prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C18",
+      "C19",
+      "C20",
+      "C44"
+    ],
+    "result": "The optimal model reproduces key fixation-related choice biases observed in human behavior: more frequent attention switches for similar-valued items, bias toward last-fixated items, bias toward longer-fixated items, and a specific fixation duration pattern (short-long-medium).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C18-20, C44 are supported by model simulations shown in Figure 3. The model qualitatively replicates multiple established human behavioral patterns without requiring exogenous fixation generation, representing a major validation of the normative framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C48",
+      "C49"
+    ],
+    "result": "The model provides a Bayesian computational rationale for fixation-driven choice biases: under a zero-mean prior, longer fixation to one item creates a sharper likelihood function, causing the posterior to be less biased toward the prior and resulting in subjectively higher value for the attended item.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C48-49 present a theoretical explanation illustrated in Figure 4A. The Bayesian account elegantly explains why attention modulation of variance (not value magnitude) can still produce choice biases. This represents a novel theoretical insight, though it depends critically on the zero-mean prior assumption.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "The model predicted and confirmed in human data that choice biases vary with response time (decreasing with longer RT) and with the sum of item values (increasing with higher value sum).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-22 describe novel predictions confirmed in Figure 4B-C. Statistical tests show significant effects in both human and model data (human RT: t(38)=-3.25, p=0.0024; value sum: t(38)=2.95, p=0.0054). These represent successful a priori predictions validating the model's explanatory power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Simulations varying the attention bottleneck parameter \u03ba revealed that decision performance is maximized when cognitive resources are balanced evenly between attended and unattended items (\u03ba=0.5), though fitted human parameters suggest humans allocate most resources to the attended item (\u03ba\u22480.004).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C81-83 are supported by simulations in Figure 4E showing peak performance at \u03ba=0.5 (t(38)=-8.51, p<0.001). The finding is consistent with prior work (C82). However, the discrepancy between optimal and human-fitted parameters suggests the attentional bottleneck may serve other cognitive functions beyond binary decision-making.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C67",
+      "C68"
+    ],
+    "result": "The optimal policy can be implemented as a four-dimensional accumulation-to-bound model with policy spaces divided into regions for different actions (choose, accumulate, switch), featuring collapsing decision boundaries over time and mirror-symmetric spaces for attending to each item.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-38, C67-68 describe the optimal policy structure shown in Figure 2. The policy was derived using dynamic programming and exhibits expected properties including collapsing boundaries consistent with prior normative models. The mathematical derivation appears sound and the visualizations clearly demonstrate the policy structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C45",
+      "C46"
+    ],
+    "result": "The attentional drift diffusion model (aDDM) produced qualitatively similar behavioral predictions to the optimal model, though the aDDM required sampling fixations from empirical human data and treating the first fixation separately to achieve the observed fixation pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C45-46 compare the optimal model to aDDM using supplementary figures. The comparison is fair and acknowledges that aDDM achieves similar qualitative predictions despite different mechanisms. The limitation that aDDM requires exogenous fixation generation highlights an advantage of the current normative approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The optimal policy framework successfully extends to perceptual decision-making tasks, reproducing attention-driven biases observed in human perceptual decisions where longer-fixated options are more likely to be chosen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-57 demonstrate generalization to perceptual decisions using data from Tavares et al. 2017, shown in Figure 3\u2014figure supplement 2. This extension demonstrates the framework's generality beyond value-based decisions, though the perceptual task analysis appears less detailed than the value-based analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The model provides a unified normative framework where fixations are endogenously generated as part of the optimal decision strategy, contrasting with prior models that assumed exogenous fixation sources or used heuristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-64 position the work relative to prior literature. The characterization of prior models appears accurate based on citations. The claim that fixations are endogenously generated is supported by the dynamic programming derivation showing attention switches emerge from optimality rather than being imposed externally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "The zero-mean prior predicts opposite choice bias effects for aversive items (less-fixated items preferred), which has been observed in humans, though some evidence suggests choice biases also occur when choosing only between appetitive items.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C78 makes a prediction supported by citation to Armel et al. 2008, but C79 notes conflicting evidence from other studies. The zero-mean prior assumption is critical for the choice bias explanation but may not fully account for all human behavior. The tension between these claims suggests the prior specification remains an open question requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The model aims to provide qualitative normative explanations rather than quantitative fits to all behavioral details, acknowledging that other models using approximations may achieve better quantitative fits and that the nervous system likely implements the complex optimal policy only approximately.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-72 clearly state the model's scope and limitations. This is an honest assessment supported by observations that the model doesn't perfectly match all human behavioral details (e.g., concave vs. linear chronometric curves in Figure 3). The acknowledgment of limitations is appropriate for a normative modeling approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The current model differs from Callaway et al. 2020's rational inattention approach in allowing graded attention (rather than complete ignoring of unattended items) and using a zero-mean prior (rather than choice-set-centered prior), which enables prediction of choice biases in binary decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-77 provide detailed comparison with recent related work. The distinctions are clearly articulated and appear accurate based on the citations. These differences have substantive implications for model predictions, particularly regarding choice biases and the role of the attentional bottleneck.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Attentional bottlenecks provide benefits in machine learning applications (text translation, object recognition, video games) and may similarly benefit human cognition in domains beyond binary decisions by reducing computational burden and focusing on salient features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-89 draw parallels between the model and machine learning applications, supported by multiple citations. The speculation that attentional bottlenecks benefit broader cognitive processes beyond decision-making is reasonable given the machine learning evidence, though it remains speculative for human cognition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "The authors speculate that choice biases driven by zero-mean priors would generalize to multi-alternative choices, though it's unclear whether equally divided attention would maximize reward in such scenarios where value and salience heuristics may influence attention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-91 are explicitly speculative about generalization to multi-alternative choice. While the speculation is reasonable, no data or simulations are provided to support these claims. This represents an important direction for future work but cannot be evaluated as supported by the current manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The manuscript reviews prior work establishing that traditional accumulation-to-bound models assume equal attention to all options, while human decision-makers alternate fixations between items in ways that causally bias choices toward longer-fixated items, with prior models treating fixations as exogenous to decision computations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-3, C8-14 accurately characterize prior literature on decision-making models and human fixation behavior, supported by appropriate citations. These claims establish the motivation and context for the current work but do not represent novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The attention-free baseline model assumes the decision maker knows the prior distribution shape but not the true values, with posterior variance reflecting uncertainty that decreases identically over time for both items.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-26 describe properties of the baseline attention-free model from prior work (Tajima et al. 2016). These are standard assumptions in Bayesian decision models and serve as the foundation for introducing attention modulation. The mathematical properties are correctly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "Previous attention-based decision models accounted for attention by down-weighting the value of unattended items, which a priori assumes fixations should bias choices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 accurately characterizes prior models (Krajbich et al. 2010, Song et al. 2019) based on citations. This distinction is important for understanding the novelty of the current approach but represents a characterization of prior work rather than a new finding.",
+    "result_type": "MINOR"
+  }
+]

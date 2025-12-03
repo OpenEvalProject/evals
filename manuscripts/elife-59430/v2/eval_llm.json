@@ -1,0 +1,279 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "The human subcortex contains more than 450 individual nuclei, but only 7% have been depicted in standard MRI atlases prior to this work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C1 and C2 present quantitative statements about subcortical nuclei composition and atlas coverage without providing supporting citations or data. The 450 nuclei count and 7% coverage figure are presented as established knowledge but lack verification in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Subcortical structures are important but challenging to study due to technical limitations, and previous automated parcellation methods have been limited in scope.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C18 establish the scientific context through appropriate citations to prior work. These claims collectively justify the need for the proposed method by documenting the importance of subcortical structures and limitations of existing approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C19",
+      "C20",
+      "C21",
+      "C27",
+      "C28",
+      "C29",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "MASSP is a new Bayesian parcellation algorithm that uses quantitative MRI contrasts (R1, R2*, QSM) and explicitly models interfaces between 17 subcortical structures based on 10 expert manual delineations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C19-C21, C27-C29, and C79-C92 describe the methodological approach with appropriate detail. The data acquisition, processing steps, and algorithm design are documented with citations and references to figures, providing a reproducible framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C22",
+      "C52",
+      "C53",
+      "C54",
+      "C56"
+    ],
+    "result": "MASSP achieves high accuracy compared to manual delineations, with Dice overlap >95% of manual rater quality for 8 major structures and dilated Dice overlap >75% for all 17 structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C37, C22, C52-C54, and C56 are supported by quantitative validation data in Tables 1, Figures 3-4. The leave-one-out validation provides appropriate statistical evidence, though the interpretation acknowledges size-dependent limitations of the Dice metric and proposes dilated Dice as more representative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "MASSP performs similarly to or better than existing methods (Freesurfer, FSL FIRST, multi-atlas registration) while parcellating more structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 are supported by comparative data in Table 2. The comparison is fair as methods were applied to the same subjects, though different input contrasts were used (R1 only for Freesurfer/FIRST vs. all three contrasts for multi-atlas and MASSP), which may introduce bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C25"
+    ],
+    "result": "MASSP can be applied to different MRI contrasts (T1w/T2w) with high test-retest reproducibility comparable to Freesurfer on HCP data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44 and C25 are supported by test-retest data in Table 3 and Figure 5. The application to HCP data demonstrates generalizability, though the histogram mapping approach used to transfer priors to new contrasts is somewhat indirect and may limit accuracy compared to native training.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "MASSP performance stabilizes with atlases of more than 5 subjects, with no significant difference when using 8 or more subjects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 is supported by data in Figure 6 and statistical testing (Welch's t-tests). This finding is consistent with prior work (cited) and provides practical guidance for atlas construction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C60",
+      "C61"
+    ],
+    "result": "MASSP shows decreased performance for subjects aged 60-80 years, with limited benefit from age-matched priors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48, C60-C61 are supported by age bias analysis in Figure 7. The finding that age-matched priors do not consistently improve performance is somewhat surprising and suggests the bias may be more complex than simple intensity shifts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C64"
+    ],
+    "result": "Age bias affects volume and thickness measurements, but quantitative MRI measures (R1, R2*, QSM) are more robust to parcellation bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 and C64 are supported by data in Figure 8. This is an important finding for the field, suggesting that quantitative MRI parameters may be preferable to morphometric measures in aging studies. However, the mechanism underlying this robustness is not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C62",
+      "C63",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Age biases exist in both manual and automated parcellation methods, requiring caution when studying elderly populations and potentially requiring explicit age modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59, C62-C63, C65-C67 provide important discussion of bias sources. C59 is supported by Table 4 and citations. C62 is appropriately framed as speculative (\"may be required\"). C63 provides appropriate caution. C65-C67 make reasonable inferences about bias in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "MASSP includes structures seldom or never before considered in MRI atlases (GPe, GPi, VTA, 3V, 4V, ic, fx, PAG, PPN, Cl).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 is supported by comparison with prior work cited in C15-C16. The novelty claim is reasonable based on the literature review, though a systematic comparison of structure coverage across methods would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C24",
+      "C43",
+      "C57",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "MASSP is extensible to new structures, populations, and MRI contrasts, requiring only manual delineations on representative subjects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C43, C57, C75-C78 describe the flexibility of the method. C25 and C44 provide empirical support for generalization to new contrasts. The extensibility claims are reasonable based on the method design, though C78 is appropriately framed as speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Dilated overlap is a better performance metric than standard Dice for small structures, and MASSP provides probability maps that can be used for conservative/inclusive masking or voxel weighting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 are supported by the validation data showing size-independence of dilated Dice (Table 1, C35). C71 is appropriately speculative about applications. C72 correctly describes a capability of the Bayesian framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "MASSP may help neurosurgeons in deep-brain stimulation surgery, though manual refinement will still be required for precise targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 make reasonable speculative statements about clinical applications, appropriately qualified with limitations. C68 is supported by citation to relevant work (Ewert et al., 2018).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C26",
+      "C107",
+      "C108"
+    ],
+    "result": "MASSP provides fast (<30 min), accurate parcellation using an explicit Bayesian model without tuning parameters, available as open-source software in Nighres.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74, C26, C107-C108 summarize key properties of the method. The speed claim (C108) is verifiable. Software availability (C26, C107) is factual and appropriately cited. The \"no tuning parameters\" claim (C74) is somewhat overstated as the method has several fixed parameters (\u03b4, histogram bins, convergence threshold, etc.).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C94",
+      "C96",
+      "C98",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "MASSP uses several technical innovations including asymmetric interface functions, skeleton-based shape priors, Markovian diffusion regularization, topology correction, and skeleton-guided region growing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94, C96, C98, C100-C104 describe technical details of the algorithm with appropriate mathematical formulation and citations. These methodological details are internally consistent and support the main innovation claim (C21).",
+    "result_type": "MINOR"
+  }
+]

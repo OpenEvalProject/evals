@@ -1,0 +1,2106 @@
+{
+  "submission": {
+    "id": "e67e498e-fc12-44c7-949b-959227e406df",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T15:31:05.021361Z",
+    "updated_at": "2025-12-03T15:31:05.021361Z"
+  },
+  "content": [
+    {
+      "id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "submission_id": "e67e498e-fc12-44c7-949b-959227e406df",
+      "content_type": "manuscript",
+      "content_text": "# Poxviruses capture host genes by LINE-1 retrotransposition\n\n## Authors\n\n- Sarah M Fixsen<sup>1</sup>\n- Kelsey R Cone<sup>1</sup> ([ORCID: 0000-0002-4547-7174](https://orcid.org/0000-0002-4547-7174))\n- Stephen A Goldstein<sup>1</sup>\n- Thomas A Sasani<sup>1</sup> ([ORCID: 0000-0003-2317-1374](https://orcid.org/0000-0003-2317-1374))\n- Aaron R Quinlan<sup>1</sup>\n- Stefan Rothenburg<sup>2</sup> ([ORCID: 0000-0002-2525-8230](https://orcid.org/0000-0002-2525-8230))\n- Nels C Elde<sup>1</sup> ([ORCID: 0000-0002-0426-1377](https://orcid.org/0000-0002-0426-1377)) \u2020\n\n### Affiliations\n\n1. Department of Human Genetics, University of Utah Salt Lake City United States ([ROR:03r0ha626](https://ror.org/03r0ha626))\n2. Department of Medical Microbiology and Immunology, University of California, Davis Davis United States ([ROR:05rrcem69](https://ror.org/05rrcem69))\n3. Howard Hughes Medical Institute Chevy Chase United States ([ROR:006w34k90](https://ror.org/006w34k90))\n\n\u2020 Corresponding author\n\n## Abstract\n\nHorizontal gene transfer (HGT) provides a major source of genetic variation. Many viruses, including poxviruses, encode genes with crucial functions directly gained by gene transfer from hosts. The mechanism of transfer to poxvirus genomes is unknown. Using genome analysis and experimental screens of infected cells, we discovered a central role for Long Interspersed Nuclear Element-1 retrotransposition in HGT to virus genomes. The process recapitulates processed pseudogene generation, but with host messenger RNA directed into virus genomes. Intriguingly, hallmark features of retrotransposition appear to favor virus adaption through rapid duplication of captured host genes on arrival. Our study reveals a previously unrecognized conduit of genetic traffic with fundamental implications for the evolution of many virus classes and their hosts.\n\n## Introduction\n\nThe movement of genetic material from one organism to another by horizontal gene transfer (HGT) bypasses vertical inheritance from parent to offspring (Keeling and Palmer, 2008). HGT can shortcut more gradual mutational processes by providing the opportunity for adaptive leaps through single mutational events where genes can be transferred between genomes across kingdoms of life (Keeling and Palmer, 2008). HGT plays a central role in the diversification of many infectious microbes, which contend with complex environments and host immune defenses to persist and replicate. HGT is particularly well-described in bacteria, where it can contribute to the emerging crisis of multi-antibiotic resistant pathogens (Wijayawardena et al., 2013).\n\nMany classes of viruses acquire genes from the hosts they infect by horizontal transfer (Caprari et al., 2015). A conspicuous example is Rous Sarcoma virus, in which recognition of the horizontal transfer of the host c-Src gene into the virus genome led to the discovery of oncogenes (Swanstrom et al., 1983). Other co-opted host genes diverge to aid the virus in inhibiting host defenses (Kawagishi-Kobayashi et al., 1997; Elde and Malik, 2009). It has become increasingly clear that the acquisition of host genes is a common mechanism by which viruses of many classes gain adaptive advantages to propagate (Dolja and Koonin, 2018). Despite the prevalence of HGT in diverse viruses and its importance in virus evolution, the mechanisms by which genes are transferred from host to virus genomes are not well understood.\n\nTo investigate mechanisms of transfer we examined poxviruses, which encode a plethora of genes gained by horizontal transfer. Based on phylogenetic analysis, more than 25% of poxvirus genes were acquired by HGT from hosts (Hughes and Friedman, 2005), although similarities not evident in sequence comparisons but revealed by shared protein structures suggest that a higher proportion of genes were acquired by horizontal transfer (Bahar et al., 2011). Many captured genes adapt to act as inhibitors of host immune defenses to favor virus replication (Elde and Malik, 2009). Some act as host range factors because their deletion leads to restriction of infectible cell types or species, implying that new acquisitions may aid in host jumps (Bratke et al., 2013; Haller et al., 2014). While the most notorious poxvirus, variola virus which caused smallpox, has been eradicated, other extant poxviruses are capable of infecting humans and pose the risk of new pandemics, as appears to be the case for monkeypox (Sklenovsk\u00e1 and Van Ranst, 2018). Poxviruses also serve as useful model systems for other viruses with large double-stranded (ds) DNA genomes (Deeg et al., 2018).\n\nBecause poxvirus-encoded copies of host genes lack introns, it was hypothesized that transfer occurs through a spliced mRNA intermediate (Lefkowitz et al., 2006). For integration, mRNA templates need to be reverse transcribed into virus genomes by either a retrovirus or a retrotransposon. The discovery of a provirus encoded in the genome of fowlpox virus (Hertig et al., 1997) and a Short Interspersed Nuclear Element (SINE) retrotransposon found in the taterapox virus genome (Piskurek and Okada, 2007) indicate that either is capable of catalyzing insertions in poxvirus genomes.\n\nGiven differences in biochemical activity, it is possible to detect patterns distinguishing mechanisms of retroviral versus retrotransposon-based transfer of host genes into virus genomes. Long Interspersed Nuclear Element-1 (LINE-1) retrotransposons are known to reverse transcribe and integrate host genes in a sequence independent manner, resulting in collections of processed pseudogenes in diverse host genomes (Esnault et al., 2000). LINE-1 transcripts encode two proteins: an RNA binding protein (ORF1) and an endonuclease (EN)/reverse transcriptase (RT) protein (ORF2). ORF2 preferentially nicks one strand of DNA at a TTTT/AA site in the host genome, and reverse transcription is primed from the exposed 3\u2032hydroxl. LINE-1 elements can also integrate at sites of dsDNA breaks in an endonuclease-independent manner (Morrish et al., 2002). LINE-1 RT shows cis-preference, meaning it is most likely to transcribe the RNA from which it was translated, but SINE elements like the one found in the taterapox genome can hijack LINE-1 machinery to integrate following replication.\n\nSometimes LINE-1 enzymes promiscuously reverse transcribe host mRNA, which might facilitate transfers of host genes to virus genomes. It is plausible that the poly(A) tail of either the host mRNA or a poly(A) tract in SINE transcripts initializes LINE-1 reverse transcription, in addition to faithful recognition of LINE-1 transcripts. Short target site duplications (TSDs) of sequences ~8\u201320 bp flank LINE-1 insertions of either LINE-1 or host sequences, likely a product of repairing staggered breaks during integration. The resulting LINE-1-mediated flanking duplications are copies of host sequences as opposed to specific retrovirus sequences. Additional evidence of LINE-1 action comes from comparisons with closely related species lacking the insertion and instead containing what is termed an \u2018empty site\u2019. Taken together, these features can help distinguish whether LINE-1 is involved in the transfer of host genes to virus genomes.\n\nHowever, given that viruses rapidly mutate, unique signatures of retrovirus or LINE-1-mediated horizontal transfer may quickly degrade and obscure mechanisms of transfer. Therefore, we devised an experimental system to screen for the horizontal transfer of a gene from host to virus genomes using an artificial selection scheme. Combined with observations of viruses encoding recently acquired and highly conserved genes, we reveal LINE-1 elements as molecular accomplices in the transfer of host genes to virus genomes.\n\n## Results\n\nWe hypothesized that examination of genes recently acquired by HGT might provide clues for revealing mechanisms of gene transfer. Virus homologs of the host Golgi Anti-Apoptotic Protein (GAAP; also called transmembrane Bax inhibitor motif protein family 4 or TMBIM4), found in several orthopoxviruses, are ~75% identical to human GAAP (Gubser et al., 2007; Saraiva et al., 2013), suggesting a recent acquisition and/or highly conserved function favoring virus replication. Strikingly, we observed nearly identical 21 base pair sequences flanking the open reading frame of virus GAAP (vGAAP), indicative of a TSD, consistent with gene capture resulting from LINE-1-mediated retrotransposition of host mRNA (Figure 1A and Figure 1\u2014figure supplement 1). The vGAAP gene is situated near one of two identical inverted terminal repeat (ITR) regions of the virus genome, and on opposite ends of the genome in various viruses, suggesting that it was originally transferred into the ITR. A single copy of the putative 21 bp TSD at an analogous position near the other ITR in the cowpox genome suggests a pseudo-empty site (Figure 1A). Taken together, with a published account of a non-autonomous SINE in the genome of taterapox virus (Piskurek and Okada, 2007), these observations suggest that host genes can be retrotransposed into poxvirus genomes by LINE-1 activity in a process akin to the generation of processed pseudogenes.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/63332/elife-63332-fig1-v2.jpg)\n\n**Figure 1.:** (A) The poxvirus gene vGAAP (orange) is encoded near the inverted terminal repeat (ITR; gray) of cowpox genomes. Signatures of retrotransposition include TSDs (blue), a LINE-1-like endonuclease site (EN; underlined), and a partially degraded poly(A) tail (pink). Some cowpox genomes (CPXV_5\u2032; top line) contain a pseudo-empty site, with a single copy of the TSD sequence. (B) Phylogeny of TMBIM proteins, including TMBIM4, or GAAP, and virus-encoded TMBIM4s (red). Bootstrap values >50 are indicated. TSD, target site duplication.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63332/elife-63332-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) v-GAAP (orange bar) is encoded by many orthopox species, including most camelpox strains, many cowpox strains, and at least one vaccinia strain. In camelpox viruses, v-GAAP is encoded on the left end of the genome; in all other strains, v-GAAP is on the right end. In all strains, v-GAAP is flanked by CrmE and vaccinia-B22R. In vaccinia strains that do not encode v-GAAP, CrmE is also missing, suggesting recombination of the region between B22R and B25R, which is truncated in the Lister strain. (B) Alignment of target site duplications (blue) and flanking sequence in 21 v-GAAP-encoding poxvirus strains. CMLV, camelpox; CPXV, cowpox; MPXV, monkeypox; VACV, vaccinia. Asterisks denote gene truncations.\n\nPhylogenetic analysis revealed a single origin for the horizontal transfer of GAAP into poxvirus genomes. In addition, at least two other classes of DNA viruses, herpesviruses and iridoviruses, independently acquired GAAP by horizontal transfer (Figure 1B; Bellehumeur et al., 2016; de Groof et al., 2015). Another study of Squirrel Monkey cytomegalovirus revealed that the S1 gene encodes a protein more than 95% identical to squirrel monkey Signaling lymphocytic activation molecule family 6 (SLAMF6), followed by portions of the 3\u2032 untranslated region (UTR) of the host mRNA (P\u00e9rez-Carmona et al., 2015). Taken together, these findings suggest that many DNA viruses acquire host genes by retrotransposition. However, the majority of host to virus gene transfers lack signatures of retrotransposition, which can quickly degrade through mutation, motivating our development of an experimental strategy for capturing HGT events in real time.\n\nWe developed a selection scheme using vaccinia virus (Copenhagen strain), which encodes nearly 200 genes in a 191,737 bp genome (See Materials and methods). We focused on K3L, a gene that was presumably acquired from a host by an ancient poxvirus based on sequence identity with human eukaryotic initiation factor 2\u03b1 (eIF2\u03b1; 27.6% identical) (Beattie et al., 1991; Elde et al., 2009; Elde and Malik, 2009). K3L diverged from eIF2\u03b1 to encode a protein that blocks the host defense Protein Kinase R (PKR) pathway. PKR is activated by dsRNA produced by viruses in the cytoplasm during transcription of virus genes and virus replication. Upon activation, PKR phosphorylates eIF2\u03b1, leading to a block in protein translation and virus replication. K3L acts as a pseudo-substrate of PKR to competitively inhibit PKR from binding eIF2\u03b1 (Figure 2\u2014figure supplement 1; Beattie et al., 1991; Kawagishi-Kobayashi et al., 1997), and can be essential for productive infections depending on the host (Langland and Jacobs, 2002; Park et al., 2019; Park et al., 2021).\n\nUsing a mutant virus deleted for K3L and another PKR inhibitor, E3L (Brennan et al., 2014), we infected a rabbit kidney cell line (RK13) expressing chromosome-integrated copies of K3L fused to the gene encoding mCherry fluorescent protein (RK13-K3L) (Figure 2A and see Materials and methods for details). The host copy of mCherry-K3L complements the mutant virus lacking K3L, allowing it to replicate. Viruses grown in RK13-K3L cells were transferred to a non-complementing baby hamster kidney (BHK) cell line. Viruses lacking K3L replicate poorly in BHK cells, providing strong selection for viruses that \u2018reclaimed\u2019 the mCherry-K3L gene by horizontal transfer and/or somehow adapted in the absence of K3L to block host PKR and regain productive replication.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/63332/elife-63332-fig2-v2.jpg)\n\n**Figure 2.:** (A) Viruses lacking K3L (VCR2) replicated in RK13 cells expressing mCherry-K3L and were transferred to BHK cells lacking K3L to select for capture of mCherry-K3L. (B) Replication of VCR2 in RK13-K3L cells and BHK cells compared to VCR2+mCherry-K3L (see Materials and methods). (C) Replication of recovered isolates in BHK cells. Three biological replicates of each strain/isolate with mean titer and standard error bars are shown in (B) and (C). (D) Vaccinia genome illustrating K3L integrations in recovered isolates indicated by colored triangles. Endogenous K3L location is shown. The central region of the genome is highlighted in yellow. Triangles above and below the genome denote positive and negative sense orientation, respectively. Virus genes interrupted by K3L integrations are indicated. The asterisk denotes a genomic rearrangement in isolate 10 (see Figure 3A).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63332/elife-63332-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** When activated, PKR binds and phosphorylates the eukaryotic initiation factor, eIF2\u03b1, leading to a block in translation and preventing viral replication. K3L acts as a pseudo-substrate of PKR, preventing activated PKR from binding eIF2\u03b1, which is then free to initiate translation. In the complementing RK13-K3L cells, an mCherry-K3L fusion gene was integrated into cellular chromosomes. The cellular mCherry-K3L expression construct is shown below. The fusion gene is driven by a strong EF1a promoter, but the construct also includes a poxvirus-specific promoter, the SLP, so that mCherry-K3L could be immediately expressed if transferred.\n\nUsing this scheme, we screened ~500 million viruses over many experiments and recovered ten virus isolates from mCherry-positive infected cell clones. In the restrictive BHK cells, viruses encoding K3L replicate ~100-fold better than the parent virus deleted for K3L (Figure 2B), allowing us to identify viruses with improved replication compared to the larger population of K3L-deficient viruses. After plaque purification of candidate mCherry positive isolates, we infected BHK cells with each recovered virus isolate and observed titers on par with viruses encoding K3L (Figure 2C). By sequencing the genome of each recovered virus isolate, we found that the mCherry-K3L fusion gene was integrated into the virus genome at a unique position in every isolate (Figures 2D and 3A), providing the opportunity to compare each independent integration event.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/63332/elife-63332-fig3-v2.jpg)\n\n**Figure 3.:** (A) A detailed view of the region K3L inserted in each experimentally captured virus isolate. Arrows above cartoons indicate reading frame orientation. Flanking and/or interrupted (*) viral genes (blue/purple boxes), 3\u2032/5\u2032 untranslated regions (UTRs; gray), and poly(A) tails (An; white) are shown. Genomic rearrangements included in isolate 10 are also shown. (B) Schematic of construct integrated in RK13-K3L cells (top) compared to K3L integrations in recovered viruses (bottom). Shared features include spliced introns, 5\u2032 and 3\u2032 UTRs, and poly(A) tails (An). Seven isolates have target site duplications (TSDs, blue) with LINE-1 endonuclease cut sites (EN, cyan). Six isolates encode a guanine (G cap) adjacent to the 5\u2032UTR, indicative of 7-methylguanylate mRNA capping. LINE-1, Long Interspersed Nuclear Element-1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63332/elife-63332-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Genetic features of each isolate recovered in the screen, including endonuclease (EN) cut site, target site duplication (TSD) length, presence or absence of transcript features: 5\u2032-guanosine triphosphate (G) cap, 5\u2032 untranslated region (UTR), splicing, 3-UTR, and poly adenosine (A) tail, and whether there is evidence of a dsDNA break. ND (not determined). (B) A sequence logo plot of nucleotide preference from EN sites detected among all virus isolates.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/63332/elife-63332-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Representative 100 mm dishes from several experiments show visible Neo-resistant colonies. 4\u00d7 magnification of dishes shown to the right.\n\nAll integrations were consistent with a mechanism of LINE-1 retrotransposition-mediated HGT. The sequence of each transferred gene revealed hallmark features of mRNA gene capture, including 5\u2032 and 3\u2032 UTRs, precise intron splicing, and poly(A) tails (Figure 3B). For 7 of 10 isolates, TSDs flanked mCherry-K3L insertions and contained cut site sequences matching the consensus (TTTT/AA) of LINE-1 endonuclease (Figure 3 and Figure 3\u2014figure supplement 1). Although there were no TSDs flanking mCherry-K3L in isolates 5, 9, and 10, these integrations might result from an endonuclease-independent LINE-1 mechanism at DNA breaks (Morrish et al., 2002). Because our experiments lack any exogenous reverse transcriptase, we tested for endogenous activity in the RK13 cells and detected robust LINE-1 activity (Figure 3\u2014figure supplement 2). These results suggest that LINE-1-mediated retrotransposition may be a common mechanism of HGT in poxvirus genomes. While we do not exclude the possibility that genes can also be transposed into the viral genome by retroviruses, this would require co-infection. LINE-1-mediated retrotransposition may be more likely simply because LINE-1 enzymes are nearly ubiquitous in mammals.\n\nIn general, poxvirus genomes are arranged with the essential genes, shared by all poxviruses, in the central region of the genome. Clade- or species-specific genes, which more commonly exhibit evidence of HGT, are enriched near the ends of the genome (Lefkowitz et al., 2006; McLysaght et al., 2003). This pattern may reflect that gene transfer into the central genomic region genome is more likely to interrupt genes vital for virus replication (Lefkowitz et al., 2006). Consistent with this, all but 1 of the 10 isolates, we recovered integrated K3L outside a roughly defined central region of the genome containing 90 core chordopoxvirus genes (Lefkowitz et al., 2006; Figure 2D). In the case of isolate 5, the K3L integration involved a duplication of two essential genes, G9R and L1R (Figure 3B). In a contemporaneous study (Rahman et al., 2022), virus genomes that acquired a host gene by horizontal transfer within a duplicated gene also propagated. In both cases, gene functions were preserved by duplication. Spurious gene duplications can appear frequently in poxvirus genomes (Hughes and Friedman, 2005), pointing to a flexible means of poxvirus adaptation involving horizontal transfer even into essential genes.\n\nPrevious studies found that duplication of poxvirus genes, followed by rapid gene copy amplification, can boost virus replication (Brennan et al., 2014; Elde et al., 2012). In our analysis, we discovered two isolates where K3L had undergone polymorphic copy number increases (isolates 4 and 5; Figure 4A). Homologous recombination, including unequal crossovers leading to duplications, requires as little as 16 bp of homology in poxviruses (Yao and Evans, 2001), suggesting that LINE-1 induced TSDs might facilitate gene amplification. Genes transferred within the ITR are duplicated on the other end by replication-based mechanisms (McFadden and Dales, 1979), as we observed in isolates 4 and 9 (Figure 2C). Genes integrated near the termini of the genome by HGT, like isolate 4, may be especially prone to duplication due to stretches of short, high copy tandem repeats found in and near the ITR regions (Figure 4A and Figure 5\u2014figure supplement 1A). These observations are consistent with the idea that HGT occurs evenly across poxvirus genomes, but with an enrichment of transferred genes persisting near the ends, where insults to essential genes are less probable and duplication-based adaptation is favored (Figure 5\u2014figure supplement 1). Along these lines, gene families found only in specific lineages of poxviruses, indicating more recent acquisition, are more likely to be present in multiple copies than single-copy host-acquired genes found among diverse poxviruses (Hughes and Friedman, 2005).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/63332/elife-63332-fig4-v2.jpg)\n\n**Figure 4.:** (A) Schematics of mCherry-K3L duplications in isolates 4 and 5. (B) Virus titers after serial infections of eIF2\u03b1 viruses in HeLa cells (see Materials and methods). (C) Schematics of eIF2\u03b1 duplications following virus passaging. Asterisks denote gene truncations.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63332/elife-63332-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Arrows indicate reading frame orientation.\n\nWhile our experimental system revealed LINE-1-driven mechanisms of HGT, the selection scheme involved viruses regaining K3L, an existing virus gene as opposed to gaining a bona fide host gene. To better model virus adaptation following acquisition of a host gene, we engineered viruses with the human eIF2\u03b1 gene in place of K3L (Figure 4\u2014figure supplement 1; see Materials and methods). This recombinant virus better approximates the original ancient HGTs of the eIF2\u03b1 gene that then evolved to become K3L in diverse clades of modern poxviruses (Kawagishi-Kobayashi et al., 2000). Because the viruses we engineered to encode eIF2\u03b1 in place of K3L also lack E3L, which encodes another inhibitor of the host PKR antiviral pathway, experiments with these viruses focus strong selective pressure on eIF2\u03b1 to adapt to inhibit PKR.\n\nWe performed four serial infections of viruses expressing eIF2\u03b1 or an eIF2\u03b1 variant lacking the PKR phosphorylation site (S51A) in RK13 cells. While the recombinant viruses replicate weakly, we observed a nearly tenfold increase in virus replication for both eIF2\u03b1-encoding viruses after passaging (Figure 4B). By sequencing the eIF2\u03b1 region in evolved virus isolates, we found independent gene copy increases of eIF2\u03b1 in both viruses (Figure 4C). These results support a critical role for gene copy increases following HGT in poxvirus evolution, as also observed for K3L and other genes (Brennan et al., 2014; Elde et al., 2012) and suggest a common pathway facilitating adaptation of host genes captured by poxviruses.\n\n## Discussion\n\nHGT is an important process facilitating virus evolution (Caprari et al., 2015; Deeg et al., 2018; Hughes and Friedman, 2005; Koonin and Yutin, 2019; McLysaght et al., 2003). Our discovery of LINE-1 retrotransposition-mediated HGT from host to poxvirus genomes has several notable implications. In addition to self-propagation in host genomes, retrotransposition to virus genomes could greatly extend the range of LINE-1 or related elements that subsequently mobilize to a newly infected virus host (Piskurek and Okada, 2007). The extensive host range of some poxviruses, for example, between rodent and primate species, suggests the possibility of cross-host lineage transfer of LINE-1s, non-autonomous SINEs, and host transcripts between mammals. A process involving the frequent appearance of DNA transposons in some insect viruses suggests an analogous mechanism for the spread of transposable elements between insect species (Gilbert et al., 2016). In cases of retrotransposition of host transcripts, the resulting processed pseudogene products are enriched for highly expressed genes (Zhang et al., 2004). The overrepresentation of certain transcripts might provide clues for understanding and predicting how viruses might adapt with repurposed genes mimicking host functions (Elde and Malik, 2009). Currently recognized cases of HGT involving oncogenes, regulators of translation, like eIF2\u03b1, and antiviral genes that are highly expressed in response to infection. These examples of transcripts exhibit high gene expression and encode cellular functions easily repurposed to promote virus replication.\n\nRepetitive TSDs generated by LINE-1 activity may also enhance poxvirus adaptation by facilitating rapid gene copy number amplification of horizontally transferred genes on arrival. Increases in gene copy number augment the probability of beneficial mutations appearing, allowing for swift diversification of newly acquired genes (Elde et al., 2012). Thus, form follows function as the repetitive termini of poxvirus genomes further enable the emergence and persistence of acquired genes predominately at the ends of the genome (Figure 5). As beneficial virus gene variants endure, they end up closer to the center of the genome as subsequently captured genes appear near the ends.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/63332/elife-63332-fig5-v2.jpg)\n\n**Figure 5.:** The schematic highlights how host genes (purple) are retrotransposed by LINE-1 reverse transcriptase (RT, blue), into virus genomes (yellow box). Following horizontal transfer, gene duplication is facilitated by unequal crossover recombination between TSDs (blue) or flanking repeat sequence (gray). LINE-1, Long Interspersed Nuclear Element-1; TSD, target site duplication.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63332/elife-63332-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Genes that land in the repetitive region of the ITR are likely to be duplicated by both replication mechanisms (to the other ITR) and recombination mechanisms (tandem duplications). Duplications provide more chances for advantageous mutations to arise, increasing the likelihood of fixation. (B) Genes acquired outside the ITR may still be duplicated via TSD-mediated recombination. (C) Acquired genes that interrupt essential genes are unlikely to be maintained.\n\nSimilar mechanisms of virus adaptation by HGT may be shared by other diverse classes of nucleocytoplasmic DNA viruses (NCLDVs), in addition to poxviruses (Deeg et al., 2018; Koonin and Yutin, 2019). Many giant viruses, which can exceed a megabase in genome size and infect diverse host species, encode a variety of genes acquired by HGT, including ribosomal genes. Given a primary role for LINE-1 elements in facilitating gene transfer, we speculate that other classes of transposable elements may spur NCDLV evolution by mobilizing host genes into virus genomes across diverse ecosystems.\n\n## Materials and methods\n\n### Phylogenetic analysis and sequence comparisons of vGAAP and host GAAP/TMBIM4\n\nTMBIM sequences for various species were downloaded from NCBI (Supplemental data) and aligned using the COBALT Multiple Alignment Tool. Amino acid Phylip alignments (see supplemental materials) were analyzed by PhyML (http://www.atgc-montpellier.fr/phyml/) for tree building with 100 bootstraps (Guindon et al., 2010).\n\n### Cell culture\n\nBHK (ATCC) and HeLa (gift from Adam Geballe, Fred Hutchinson Cancer Research Center) cells were cultured in Dulbecco minimum essential medium (HyClone) supplemented with 10% fetal bovine serum (FBS), 2 mM L-glutamine, and 100 \u00b5g/ml of pen/strep. RK13 cells were cultured in MEM-alpha supplemented with 10% fetal bovine serum (Gibco), 2 mM L-glutamine (HyClone), and 100 \u00b5g/ml of penicillin-streptomycin (pen/strep; HyClone).\n\nRK13 cells expressing SLP-mCherry-K3L (RK13-K3L) were generated by transfecting 3\u00d7105 RK13-E3K3 cells (Brennan et al., 2014) with 2.5 \u00b5g piggybac vector (see supplemental sequences) and 0.5 \u00b5g transposase vector (gift from Ed Grow, University of Utah) with 9 \u00b5L Fugene-HD. Cells with the piggybac construct integrated were selected by the presence of 1\u20132 \u00b5g/ml puromycin, and populations were monitored for mCherry expression. After 2 weeks of selection, remaining polyclonal cells were propagated in MEM-alpha media supplemented with 10% FBS, 2 mM L-glutamine, and 100 \u00b5g/ml of pen/strep. All cultures were maintained, and infections were performed at 37\u00b0C in a humidified 5% CO2 incubator.\n\n### Virus strains\n\nVC-2 refers to the Vaccinia virus-Copenhagen strain (Goebel et al., 1990) and VCR2 is a genetically modified isolate of VC-2 deleted for E3L and K3L (Brennan et al., 2014). To generate VCR2+mCherry-K3L, we cloned pBlue_165_mCherry-K3L (see supplemental sequences) into the MCS of pBluescriptIIKS (\u2212) (Addgene). This plasmid was transfected into BHK cells, which were then infected with VCR2 virus. Recombinant viruses were plaque purified in BHK cells and checked for purity by PCR amplifying across the mCherry-K3L insertion site. The amplicon was gel purified and sequenced.\n\nTo make eIF2\u03b1 viruses, sequences flanking K3L from VACV were amplified from VC-2 viral DNA: 680 bp of 5\u2032 homologous sequence was amplified with the primers K2Lflank_F (5\u2032-CTTCTTATC GATTTTTTATACCGAACATAAAAATAAGGTTAATTA) and K2Lflank_R (5\u2032-CTTCTTCATATGG TGATTGTATTTCCTTGCAATTTAG), and 1024 bp of 3\u2032 homologous sequence (including the native K3L promoter) was amplified with the primers K4Lflank_F (5\u2032-CGTCGTGCGGCCGCCTTGTTAACGGGCTCGTAAATT) and K4Lflank_R (5\u2032-CGA GCGGAGCTCGTACGATACATAGATATTACAAATATCCTAG). A VACV synthetic early/late promoter (SLP) (Chakrabarti et al., 1997) was created by annealing primers SLP_F (5\u2032 TCGACAATTGGATCAGCTTTTTTTTTTTTTTTTTTGGCATATAAATA AGAAGCTTCCCGGGTCTAGAC) and SLP_R (5\u2032-AGCTCAGATCTGGGCCCTTCG AAGAATAAATATACGGTTTTTTTTTTTTTTTTTTCGACTAGGTTAAC). EGFP was amplified from pN1-EGFP (Addgene) using primers EGFP_F (5\u2032-GGAGGACTCGAGATGGTGAGCAAGGGCGA) and EGFP_R (5\u2032-GGAGGTATCGA TTTACTTGTACAGCTCGTCCATGC). Each PCR product was digested with restriction enzymes (New England Biolabs), gel purified (Zymo Research), and sequentially cloned into pB.2 as follows: 5\u2032 flank with ClaI and NdeI, 3\u2032 flank with NotI and SacI, SLP with SalI and XhoI, and EGFP with XhoI and ClaI. The resulting plasmid contained EGFP following SLP, between the two K3L flanking sequences (pB.2-EGFP). The K3L open reading frame was amplified from VC-2 viral DNA using primers K3L_F (5\u2032-GTTGTAG GATCCATGCTTGCATTTTGTTATTCGTTGC) and K3L_R (5\u2032-GTTCTTGTCGACTT ATTGATGTCTACACATCCTTTTG). The eIF2\u03b1 gene was amplified from human cDNA using primers eIF2\u03b1_F (5\u2032-GATGTAGGATCCATGCCGGGTCTAAGTTGTAGAT) and eIF2\u03b1_R (5\u2032-CTACTTGTCGACTTAATCTTCAGCTTTGGCTTCCAT). The resulting PCR products were cloned into pB.2-EGFP with BamHI and SalI, placing K3L or eIF2\u03b1 immediately following the native K3L promoter, and upstream of SLP-EGFP to create pB.2-K3L and pB.2-eIF2\u03b1, respectively. Site-directed mutagenesis was performed on pB.2-eIF2\u03b1 or pB.2-eIF2\u03b1-\u0394C using primers eIF2\u03b1_S51A_F (5\u2032-GATAC GCCTTCTGGCTAATTCACTAAGAAGAATCATGCCTTC) and eIF2\u03b1_S51A_R (5\u2032-GAAGGCATGATTCTTCTTAGTGAATTAGCCAGAAGGCGTATC) to generate pB.2-eIF2\u03b1-S51A.\n\nRecombinant eIF2\u03b1-encoding viruses were constructed by replacing the K3L gene using homologous recombination. RK13-E3K3 cells were infected with VCR2 (MOI=1.0) and transfected at 1 hr post-infection with pB.2-EGFP, pB.2-K3L, pB.2-eIF2\u03b1, or pB.2-eIF2\u03b1-S51A plasmids by use of FuGENE6 (Promega) according to the manufacturer\u2019s protocol. Infected cells were collected at 48 hr post-infection, and viruses were released by one freeze-thaw cycle followed by sonication. Resulting viruses were plaque purified in RK13-E3K3 cells four times, selecting for recombinants expressing EGFP. Final virus clones were verified by PCR and sequencing of viral DNA across the K2L-K4L region of the genome.\n\n### Experimental screen for HGT events\n\nConfluent 150 mm dishes of RK13-K3L cells were infected with VCR2 at an MOI of 0.1. Cell-associated virus was collected after 48 hr of infection, and released from the cell by one freeze-thaw cycle followed by sonication as described (Isaacs, 2004). Confluent 150 mm dishes of BHK cells were then infected with ~106 PFUs of this virus stock for 7 days, during which they were monitored for mCherry expression. About 500 plates were screened, which accounts for an estimated 500 million viruses. For mCherry positive clones observed by fluorescence microscopy, cell-associated virus was collected and released by one freeze-thaw cycle followed by sonication. mCherry-expressing virus was then plaque purified in BHK cells as described (Isaacs, 2004).\n\n### Analysis of HGT events by inverse PCR\n\nVirus DNA was extracted from mCherry-expressing clones as previously described from infected BHK cells (Esposito et al., 1981). Purified DNA was digested with XbaI and SpeI or BglII (New England Biolabs (NEB)), diluted, and ligated (Quick ligase; NEB) to circularize linear fragments. Primers pointing away from each other in both mCherry (F-CGTGGAACAGTACGAACGCG and R-CCATGTTATCCTCCTCGCCC) and K3L (F-GAGCATAATCCTTCTCGTATACTC and R-GAATATAGGGATAAACTGGTAGGG) were used to amplify regions flanking mCherry-K3L insertions. Resulting PCR bands were gel purified and Sanger sequenced with the inverse PCR (iPCR) primers. From this sequencing, the general location of the mCherry-K3L insert could be inferred. Primers flanking this region were then used to amplify the putative insertion, along with flanking sequences. These amplicons were then gel purified, Sanger sequenced, and compared to the parent (VCR2) genome to characterize gene integrations. Because isolates 7 and 9 incorporated mCherry-K3L within the repetitive ITR, each end was PCR amplified separately using unique flanking primers and internal primers (mCherry-R and K3L-F, above). However, only the 5\u2032 end of the insertion of isolate 9 was amplified, despite multiple attempts. Thus, we cannot be sure whether this isolate includes a TSD or was cut at a LINE-1 endonuclease site.\n\n### Long read genome sequencing of virus isolates\n\nVirus particles from plaques expressing mCherry-K3L were isolated from BHK cells and virus cores were purified by ultracentrifugation through a 36% sucrose cushion at 60 k rcf for 1 hr. Virus DNA was extracted as previously described (Esposito et al., 1981). The SQK-LSK108 library kit (Oxford Nanopore Technologies) was used to prep isolate 1 DNA, which was sequenced on an FLO-MIN106 cell. An SQK-RBK001 kit was used to prep DNA from isolates 2 to 5, which were multiplexed on an FLO-MIN107 cell. Isolates 6\u201310 were also multiplexed using the SQK-RBK004 library prep kit, and sequenced on FLO-MIN107. Reads were base-called with the Oxford Nanopore Albacore program and aligned to a reference genome that included the VCR2 genome on one contig and the cellularly-expressed mCherry-K3L construct on a separate contig using default NGMLR parameters (Sedlazeck et al., 2018). Integrative Genomics Viewer (IGV) software (Broad Institute) was used to visualize insertions (Robinson et al., 2011). Sequencing data can be found at the NCBI SRA, accession number: PRJNA614958.\n\n### Measuring titers of virus strains and isolates\n\nWe plated 5\u00d7106 cells in 100 mm dishes and infected them 16 hr later at an MOI of 0.1. Three plates (biological replicates) were infected with each isolate or strain. After 48 hr, media was aspirated, and cell-associated virus stock was collected by one freeze-thaw and sonication cycle. Then, six-well plates were seeded with 5\u00d7105 BHK cells per well, and, 16 hr later, infected with tenfold serial dilutions of virus stock (2 wells per dilution) in 200 \u00b5l media. After 2 hr at 37\u00b0C, 2 ml of media was added to each well. Cells were fixed and stained with 20% Methanol+0.2% crystal violet 48 hr pos-infection. Wells with 10\u2013100 plaques were counted and averaged to calculate virus titer. Each of the biological replicates is shown in Figure 2 and Figure 4, along with an average of the three and standard deviation.\n\n### Alu assay of RK13 cells\n\n5\u00d7105 HA-HeLa or RK13 cells were plated per 100 mm dish (3\u00d7 each cell type). After 16 hr, each plate was transfected with 5 \u00b5g Alu-Neo (Dewannieux et al., 2003). After 2 days, all cells were treated with 2 \u00b5g/ml G418. Media were replaced daily for 7 days, after which time it was removed, and cells were fixed and stained with 20% Methanol+0.2% crystal violet.\n\n### Detection of duplication events\n\nSingle Nanopore reads with multiple tandem copies of the mCherry-K3L fusion gene were analyzed using IGV (Robinson et al., 2011). Duplications were confirmed by PCR, using the iPCR primers in mCherry (F-CGTGGAACAGTACGAACGCG and R-CCATGTTATCCTCCTCGCCC). PCR amplicons were then gel purified and Sanger sequenced to determine break points. However, due to the repetitive nature of the sequence flanking the isolate 7 insertion, the exact break point was not able to be determined.\n\n### Serial passage of VACV-eIF2\u03b1 virus strains\n\nFor each passage, 150 mm dishes were seeded with an aliquot from the same stock RK13 cells (5\u00d7106 cells/dish). For P1, dishes were infected with eIF2\u03b1-GFP or eIF2\u03b1S51A-GFP virus (MOI=1.0) for 2 hr in 5 ml and then supplemented with 15 ml medium. After 48 hr, cells were washed, pelleted, and resuspended in 1 ml of medium. Virus was released by one freeze-thaw cycle followed by sonication. About 900 \u00b5l of virus was then used to infect a new dish of cells for P2, and the process was repeated for subsequent passages. Viral titers were determined using the remaining 100 \u00b5l of reserved virus stocks from each passage by 48 hr plaque assay in RK13-E3K3 cells.\n\n### Analysis of viral-encoded eIF2\u03b1 genes\n\nRK13-E3K3 cells were infected with P4 eIF2\u03b1-GFP or eIF2\u03b1S51A-GFP viruses (MOI=0.1) for 24 hr. Virus-infected cells were collected, and total viral DNA extracted as previously described (Esposito et al., 1981). The region between K2L and K4L containing the different viral-encoded eIF2\u03b1 genes was amplified by PCR with primers K2L_seq_F and K4L_seq_R (5\u2032-GGCATTGGTAAATCCTTGCAGA and 5\u2032-CACCTTTTAGTAGGACTAGTATCGTACAA, respectively). SNV detection was performed by sequencing across eIF2\u03b1 using primers eIF2\u03b1_F and eIF2\u03b1_R for eIF2\u03b1-GFP and eIF2\u03b1S51A-GFP PCR products, CNV analysis was performed by PCR using primers eIF2\u03b1_rep_F (5\u2032-CCTCCTATGGAAGCCAAAGCTGAAGATGAA) and eIF2\u03b1_rep_R (5\u2032-CCTCCTATCTACAACTTAGACC CGGCAT) for eIF2\u03b1-GFP and eIF2\u03b1S51A-GFP viral DNA. Any CNV PCR products formed were sequenced using the same primers for break point detection.\n",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "505beed8-4dff-4d2b-887d-fc326012ac4a",
+      "submission_id": "e67e498e-fc12-44c7-949b-959227e406df",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Karla Kirkegaard, https://ror.org/00f54p054 Stanford University School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.63332.sa0](https://doi.org/10.7554/eLife.63332.sa0)\n\nThis is a very important piece of work and a landmark in understanding the mechanism of horizontal gene transfer between viruses and their hosts. Horizontal gene transfer is a powerful mechanism of rapid evolution in many genomes, including humans and viruses. In this manuscript, a clever selection scheme is implemented to identify poxvirus genomes that have incorporated sequences from their host genome. Subsequent sequence analysis reveals that many of these sequences display the characteristics of terminal sequence repeats, splice junctions like mature mRNAs, and other features characteristics of the movement of LINE elements in cellular DNA genomes. Then, subsequent duplication of these transferred sequences is consistent with the viral DNA replication strategy and rationalizes many of the extant examples of horizontal gene transfer.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Karla Kirkegaard, https://ror.org/00f54p054 Stanford University School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.63332.sa1](https://doi.org/10.7554/eLife.63332.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Poxviruses capture host genes by LINE-1 retrotransposition\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Patricia Wittkopp as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Eugene V. Koonin (Reviewer #2); Derek Walsh (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis is a very important piece of work. Horizontal gene transfer is a powerful mechanism of rapid evolution in many genomes, including humans and viruses. In this manuscript, a clever selection scheme is implemented to identify poxvirus genomes that have incorporated sequences from their host genome. Subsequent sequence analysis reveals that many of these sequences display the characteristics of terminal sequence repeats, splice junctions like mature mRNAs and other features characteristics of the movement of LINE elements in cellular DNA genomes. Then, subsequent duplication of these transferred sequences are consistent with the viral DNA replication strategy and rationalize some of the extant examples of horizontal gene transfer.\n\nEssential revisions:\n\nThe only requests for modifications come in the presentation. Some of the experimental descriptions and interpretations are written so tersely and vaguely that it is difficult to understand them, let alone critique them. The explicatory parts of this paper are very short and seem to be written for a journal with a less general and curious audience and that enforces restrictive line requirements. This is not the goal of eLife. Specific examples of needed rewrites include:\n\n1. In the Introduction, explication is needed for the curious non-expert of the biology and biochemistry of LINE elements and what was known about the mechanisms of their intra-genome movements. Statements such as that on line 67, stating that a target site duplication is consistent with LINE-mediated retrotransposition are not useful in the absence of such an introduction, given that there are many recombination mechanisms that can generate target site duplication. Perhaps that was implied in the phrasing \"consistent with\". The argument becomes more convincing when, on line 76, sequences consistent with 'a process akin to the generation of processed pseudogenes' are described. It is not until Supplementary Figure 4, and the paragraph that beings on page 114, that the uninitiated reader learns about the LINE endonuclease and reverse transcriptase activities. The biochemical assays for them are not described. It would be much more helpful if this information were in the Intro.\n\n2. The Supplemental Figures contain a wealth of information. Some of this should be in the main manuscript. For example, the genomic structures of the selected viruses \u2013 the most important data in the paper \u2013 are found in Supplementary Figure 3. At a minimum, these need to be in the main paper, and all the junction sequences in the Supplementary Material.\n\n3. Similarly, the idea to select for the horizontal transfer of eIF2alpha to inhibit PKR is great, and it would be easy to explain to the non-virologist \u2013 it actually is, but only in the legend to Supplementary Figure 2. Interesting questions are asked about the ability of both wild-type version of eIF2alpha and a version that is not phosphorylatable being able to rescue a virus with its genes deleted of PKR inhibitors, but the implications for this on the mechanism of eIF2alpha inhibition of PKR are not discussed. Actually, the Supplementary Figures are barely referenced in the main manuscript, and S Figures 1 and 2 not at all.\n\n4. On lines 137-139, there is the interesting line \"this activity might enable the persistence of horizontally transferred genes\". There are many steps of logic in this suggestion that are interesting and potentially persuasive, and they need to be parsed. It is likely that they are presented in Supplementary Figure 5, which has a six-line legend for a very complicated series of hypotheses.\n",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "516862f4-2647-4b68-85f7-b8c323ad76dc",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C1",
+      "claim": "Horizontal gene transfer (HGT) provides a major source of genetic variation.",
+      "claim_type": "EXPLICIT",
+      "source": "Horizontal gene transfer (HGT) provides a major source of genetic variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about HGT that draws from established scientific consensus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "a2a51d4a-d084-4209-b0ed-70b5cfa68504",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C2",
+      "claim": "Many viruses, including poxviruses, encode genes with crucial functions directly gained by gene transfer from hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "Many viruses, including poxviruses, encode genes with crucial functions directly gained by gene transfer from hosts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established scientific knowledge and is referenced throughout the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "da86fef8-6017-4125-8d6a-0572bb815e4c",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C3",
+      "claim": "The mechanism of transfer to poxvirus genomes is unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism of transfer to poxvirus genomes is unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement establishes the knowledge gap that the study addresses, based on the state of the field prior to this work.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "7504d0b7-d8e4-426d-bd2c-1d5d415ac210",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C4",
+      "claim": "Long Interspersed Nuclear Element-1 retrotransposition plays a central role in HGT to virus genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Using genome analysis and experimental screens of infected cells, we discovered a central role for Long Interspersed Nuclear Element-1 retrotransposition in HGT to virus genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary finding of the study, supported by both genome analysis and experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "9674a594-b622-421c-bd09-922fc4f67bd0",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C5",
+      "claim": "The process of LINE-1 mediated HGT to poxvirus genomes recapitulates processed pseudogene generation, but with host messenger RNA directed into virus genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The process recapitulates processed pseudogene generation, but with host messenger RNA directed into virus genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental observations and comparison with known LINE-1 mechanisms in host genomes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "d6fc8d4e-0918-4403-bcdf-6ca8ee99fb3d",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C6",
+      "claim": "Hallmark features of retrotransposition favor virus adaptation through rapid duplication of captured host genes on arrival.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, hallmark features of retrotransposition appear to favor virus adaption through rapid duplication of captured host genes on arrival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental observations of gene duplications in recovered isolates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "2273b748-ba4b-4f54-96de-534b74fafdc9",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C7",
+      "claim": "HGT bypasses vertical inheritance from parent to offspring.",
+      "claim_type": "EXPLICIT",
+      "source": "The movement of genetic material from one organism to another by horizontal gene transfer (HGT) bypasses vertical inheritance from parent to offspring (Keeling and Palmer, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "df7b9ad1-9553-4751-a252-9232eb80e53d",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C8",
+      "claim": "HGT can shortcut more gradual mutational processes by providing the opportunity for adaptive leaps through single mutational events where genes can be transferred between genomes across kingdoms of life.",
+      "claim_type": "EXPLICIT",
+      "source": "HGT can shortcut more gradual mutational processes by providing the opportunity for adaptive leaps through single mutational events where genes can be transferred between genomes across kingdoms of life (Keeling and Palmer, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "dbf79b51-aca8-4e03-9c1a-6c3cea71af83",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C9",
+      "claim": "HGT plays a central role in the diversification of many infectious microbes.",
+      "claim_type": "EXPLICIT",
+      "source": "HGT plays a central role in the diversification of many infectious microbes, which contend with complex environments and host immune defenses to persist and replicate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement supported by established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "97d9ad99-9ddf-48f7-ae68-52bebe898e03",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C10",
+      "claim": "HGT is particularly well-described in bacteria, where it can contribute to the emerging crisis of multi-antibiotic resistant pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "HGT is particularly well-described in bacteria, where it can contribute to the emerging crisis of multi-antibiotic resistant pathogens (Wijayawardena et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "a27f49fc-c52c-4b4e-b5a7-e8f4ad026f71",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C11",
+      "claim": "Many classes of viruses acquire genes from the hosts they infect by horizontal transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "Many classes of viruses acquire genes from the hosts they infect by horizontal transfer (Caprari et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "bfdfcdd2-4817-4ecc-a4dd-297949239349",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C12",
+      "claim": "Recognition of the horizontal transfer of the host c-Src gene into the Rous Sarcoma virus genome led to the discovery of oncogenes.",
+      "claim_type": "EXPLICIT",
+      "source": "A conspicuous example is Rous Sarcoma virus, in which recognition of the horizontal transfer of the host c-Src gene into the virus genome led to the discovery of oncogenes (Swanstrom et al., 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "928eda66-bb65-4a40-aebf-d08c56f0b13b",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C13",
+      "claim": "Other co-opted host genes diverge to aid the virus in inhibiting host defenses.",
+      "claim_type": "EXPLICIT",
+      "source": "Other co-opted host genes diverge to aid the virus in inhibiting host defenses (Kawagishi-Kobayashi et al., 1997; Elde and Malik, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "8c357275-46ed-4015-8842-4a154287821b",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C14",
+      "claim": "The acquisition of host genes is a common mechanism by which viruses of many classes gain adaptive advantages to propagate.",
+      "claim_type": "EXPLICIT",
+      "source": "It has become increasingly clear that the acquisition of host genes is a common mechanism by which viruses of many classes gain adaptive advantages to propagate (Dolja and Koonin, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "9c2bd08c-df28-4db0-aa18-24b60b909bbd",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C15",
+      "claim": "The mechanisms by which genes are transferred from host to virus genomes are not well understood.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the prevalence of HGT in diverse viruses and its importance in virus evolution, the mechanisms by which genes are transferred from host to virus genomes are not well understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement establishes the knowledge gap based on the state of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "a7f63c0f-0335-458c-9939-4398002d79f1",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C16",
+      "claim": "More than 25% of poxvirus genes were acquired by HGT from hosts based on phylogenetic analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on phylogenetic analysis, more than 25% of poxvirus genes were acquired by HGT from hosts (Hughes and Friedman, 2005), although similarities not evident in sequence comparisons but revealed by shared protein structures suggest that a higher proportion of genes were acquired by horizontal transfer (Bahar et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "e929a3ca-01aa-41a3-8351-14da0654332f",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C17",
+      "claim": "Similarities revealed by shared protein structures suggest that a higher proportion of poxvirus genes than 25% were acquired by horizontal transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on phylogenetic analysis, more than 25% of poxvirus genes were acquired by HGT from hosts (Hughes and Friedman, 2005), although similarities not evident in sequence comparisons but revealed by shared protein structures suggest that a higher proportion of genes were acquired by horizontal transfer (Bahar et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "8cdf952c-57d3-4872-a7d5-9f34aef08253",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C18",
+      "claim": "Many captured poxvirus genes adapt to act as inhibitors of host immune defenses to favor virus replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Many captured genes adapt to act as inhibitors of host immune defenses to favor virus replication (Elde and Malik, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "2bab7d02-1a8d-46ea-a786-e7936a7e733c",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C19",
+      "claim": "Some captured poxvirus genes act as host range factors because their deletion leads to restriction of infectible cell types or species.",
+      "claim_type": "EXPLICIT",
+      "source": "Some act as host range factors because their deletion leads to restriction of infectible cell types or species, implying that new acquisitions may aid in host jumps (Bratke et al., 2013; Haller et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "576ba631-78ff-43ef-a21d-47e14aca31d5",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C20",
+      "claim": "New acquisitions of host genes by poxviruses may aid in host jumps.",
+      "claim_type": "EXPLICIT",
+      "source": "Some act as host range factors because their deletion leads to restriction of infectible cell types or species, implying that new acquisitions may aid in host jumps (Bratke et al., 2013; Haller et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that some genes act as host range factors, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "a1e206d0-f3c0-4b1c-8cdf-6f6774238094",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C21",
+      "claim": "Variola virus, which caused smallpox, has been eradicated.",
+      "claim_type": "EXPLICIT",
+      "source": "While the most notorious poxvirus, variola virus which caused smallpox, has been eradicated, other extant poxviruses are capable of infecting humans and pose the risk of new pandemics, as appears to be the case for monkeypox (Sklenovsk\u00e1 and Van Ranst, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established historical fact supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "d4da718c-0484-42a8-8a44-2218d68ae958",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C22",
+      "claim": "Other extant poxviruses are capable of infecting humans and pose the risk of new pandemics.",
+      "claim_type": "EXPLICIT",
+      "source": "While the most notorious poxvirus, variola virus which caused smallpox, has been eradicated, other extant poxviruses are capable of infecting humans and pose the risk of new pandemics, as appears to be the case for monkeypox (Sklenovsk\u00e1 and Van Ranst, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "a76cca75-2309-4a5a-823a-358b757a7592",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C23",
+      "claim": "Poxviruses serve as useful model systems for other viruses with large double-stranded (ds) DNA genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Poxviruses also serve as useful model systems for other viruses with large double-stranded (ds) DNA genomes (Deeg et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "2200af60-903b-4e27-960b-8acac771334e",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C24",
+      "claim": "Poxvirus-encoded copies of host genes lack introns.",
+      "claim_type": "EXPLICIT",
+      "source": "Because poxvirus-encoded copies of host genes lack introns, it was hypothesized that transfer occurs through a spliced mRNA intermediate (Lefkowitz et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "8d81ad59-ed4c-4147-a9af-c45c5e20cb03",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C25",
+      "claim": "It was hypothesized that transfer of host genes to poxviruses occurs through a spliced mRNA intermediate.",
+      "claim_type": "EXPLICIT",
+      "source": "Because poxvirus-encoded copies of host genes lack introns, it was hypothesized that transfer occurs through a spliced mRNA intermediate (Lefkowitz et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This hypothesis is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "eba86b99-6624-4b06-ba77-525e2bbcd2b7",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C26",
+      "claim": "For integration, mRNA templates need to be reverse transcribed into virus genomes by either a retrovirus or a retrotransposon.",
+      "claim_type": "EXPLICIT",
+      "source": "For integration, mRNA templates need to be reverse transcribed into virus genomes by either a retrovirus or a retrotransposon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of molecular mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "9aa38ec7-f43d-453b-a1ef-dea56a1ce2cc",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C27",
+      "claim": "A provirus is encoded in the genome of fowlpox virus.",
+      "claim_type": "EXPLICIT",
+      "source": "The discovery of a provirus encoded in the genome of fowlpox virus (Hertig et al., 1997) and a Short Interspersed Nuclear Element (SINE) retrotransposon found in the taterapox virus genome (Piskurek and Okada, 2007) indicate that either is capable of catalyzing insertions in poxvirus genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "f60042ce-231e-400c-94c8-7bef31ca068c",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C28",
+      "claim": "A Short Interspersed Nuclear Element (SINE) retrotransposon is found in the taterapox virus genome.",
+      "claim_type": "EXPLICIT",
+      "source": "The discovery of a provirus encoded in the genome of fowlpox virus (Hertig et al., 1997) and a Short Interspersed Nuclear Element (SINE) retrotransposon found in the taterapox virus genome (Piskurek and Okada, 2007) indicate that either is capable of catalyzing insertions in poxvirus genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "0ca7bc6f-ffcf-433a-8f56-4cdc17f95759",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C29",
+      "claim": "Either retroviruses or retrotransposons are capable of catalyzing insertions in poxvirus genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The discovery of a provirus encoded in the genome of fowlpox virus (Hertig et al., 1997) and a Short Interspersed Nuclear Element (SINE) retrotransposon found in the taterapox virus genome (Piskurek and Okada, 2007) indicate that either is capable of catalyzing insertions in poxvirus genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the cited discoveries of provirus and SINE elements in poxvirus genomes.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "98f7ef64-ace0-46e4-91e1-107ddc8f6f09",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C30",
+      "claim": "LINE-1 retrotransposons reverse transcribe and integrate host genes in a sequence independent manner, resulting in collections of processed pseudogenes in diverse host genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Long Interspersed Nuclear Element-1 (LINE-1) retrotransposons are known to reverse transcribe and integrate host genes in a sequence independent manner, resulting in collections of processed pseudogenes in diverse host genomes (Esnault et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "03afc672-2a05-42e1-91ab-02783e60f2cf",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C31",
+      "claim": "LINE-1 transcripts encode two proteins: an RNA binding protein (ORF1) and an endonuclease (EN)/reverse transcriptase (RT) protein (ORF2).",
+      "claim_type": "EXPLICIT",
+      "source": "LINE-1 transcripts encode two proteins: an RNA binding protein (ORF1) and an endonuclease (EN)/reverse transcriptase (RT) protein (ORF2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about LINE-1 structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "28abcdbb-2b01-4388-9bfa-397757878427",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C32",
+      "claim": "ORF2 preferentially nicks one strand of DNA at a TTTT/AA site in the host genome.",
+      "claim_type": "EXPLICIT",
+      "source": "ORF2 preferentially nicks one strand of DNA at a TTTT/AA site in the host genome, and reverse transcription is primed from the exposed 3\u2032hydroxl.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about LINE-1 mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "2ac521c0-f4c6-493f-a01d-3054a398be6d",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C33",
+      "claim": "Reverse transcription is primed from the exposed 3\u2032hydroxyl after ORF2 nicks DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "ORF2 preferentially nicks one strand of DNA at a TTTT/AA site in the host genome, and reverse transcription is primed from the exposed 3\u2032hydroxl.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about LINE-1 mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "0a8152bf-82a9-478f-bc38-4db305f76c69",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C34",
+      "claim": "LINE-1 elements can integrate at sites of dsDNA breaks in an endonuclease-independent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "LINE-1 elements can also integrate at sites of dsDNA breaks in an endonuclease-independent manner (Morrish et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "fe83df55-a93d-4f17-a41a-71c085315860",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C35",
+      "claim": "LINE-1 RT shows cis-preference, meaning it is most likely to transcribe the RNA from which it was translated.",
+      "claim_type": "EXPLICIT",
+      "source": "LINE-1 RT shows cis-preference, meaning it is most likely to transcribe the RNA from which it was translated, but SINE elements like the one found in the taterapox genome can hijack LINE-1 machinery to integrate following replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about LINE-1 mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "a096b45d-7daf-47bc-bb16-72b21b2d3803",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C36",
+      "claim": "SINE elements can hijack LINE-1 machinery to integrate following replication.",
+      "claim_type": "EXPLICIT",
+      "source": "LINE-1 RT shows cis-preference, meaning it is most likely to transcribe the RNA from which it was translated, but SINE elements like the one found in the taterapox genome can hijack LINE-1 machinery to integrate following replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about SINE and LINE-1 interaction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "3047f7c7-0bf5-4a2b-a186-88a21cf7d529",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C37",
+      "claim": "LINE-1 enzymes promiscuously reverse transcribe host mRNA, which might facilitate transfers of host genes to virus genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Sometimes LINE-1 enzymes promiscuously reverse transcribe host mRNA, which might facilitate transfers of host genes to virus genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on known LINE-1 behavior.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "cae66c64-5fb5-4cba-b914-2a125c015ee2",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C38",
+      "claim": "The poly(A) tail of host mRNA or a poly(A) tract in SINE transcripts may initialize LINE-1 reverse transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "It is plausible that the poly(A) tail of either the host mRNA or a poly(A) tract in SINE transcripts initializes LINE-1 reverse transcription, in addition to faithful recognition of LINE-1 transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a plausible mechanism based on known LINE-1 behavior.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "9e97a777-32ae-444a-8828-c61d5e7aa82c",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C39",
+      "claim": "Short target site duplications (TSDs) of sequences ~8\u201320 bp flank LINE-1 insertions.",
+      "claim_type": "EXPLICIT",
+      "source": "Short target site duplications (TSDs) of sequences ~8\u201320 bp flank LINE-1 insertions of either LINE-1 or host sequences, likely a product of repairing staggered breaks during integration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about LINE-1 insertions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "53a90eeb-255a-4f4e-8db3-0d44341936e3",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C40",
+      "claim": "TSDs flanking LINE-1 insertions are likely a product of repairing staggered breaks during integration.",
+      "claim_type": "EXPLICIT",
+      "source": "Short target site duplications (TSDs) of sequences ~8\u201320 bp flank LINE-1 insertions of either LINE-1 or host sequences, likely a product of repairing staggered breaks during integration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the mechanism of TSD formation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "02103558-b0fd-42d2-aa2d-18ed496ffb7a",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C41",
+      "claim": "LINE-1-mediated flanking duplications are copies of host sequences as opposed to specific retrovirus sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting LINE-1-mediated flanking duplications are copies of host sequences as opposed to specific retrovirus sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This distinguishes LINE-1 from retroviral mechanisms based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "dcbbb17a-72d5-428a-8908-ba16ad14ba58",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C42",
+      "claim": "Viruses rapidly mutate, and unique signatures of retrovirus or LINE-1-mediated horizontal transfer may quickly degrade and obscure mechanisms of transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "However, given that viruses rapidly mutate, unique signatures of retrovirus or LINE-1-mediated horizontal transfer may quickly degrade and obscure mechanisms of transfer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of viral mutation rates and inference about signature degradation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "c2f43005-8cb2-4c37-a70a-4847dd29bd58",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C43",
+      "claim": "Virus homologs of the host Golgi Anti-Apoptotic Protein (GAAP) found in several orthopoxviruses are ~75% identical to human GAAP.",
+      "claim_type": "EXPLICIT",
+      "source": "Virus homologs of the host Golgi Anti-Apoptotic Protein (GAAP; also called transmembrane Bax inhibitor motif protein family 4 or TMBIM4), found in several orthopoxviruses, are ~75% identical to human GAAP (Gubser et al., 2007; Saraiva et al., 2013), suggesting a recent acquisition and/or highly conserved function favoring virus replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "e51bcb16-ca6a-4ea9-8d21-9d348b3fe5e3",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C44",
+      "claim": "The high identity between virus and human GAAP suggests a recent acquisition and/or highly conserved function favoring virus replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Virus homologs of the host Golgi Anti-Apoptotic Protein (GAAP; also called transmembrane Bax inhibitor motif protein family 4 or TMBIM4), found in several orthopoxviruses, are ~75% identical to human GAAP (Gubser et al., 2007; Saraiva et al., 2013), suggesting a recent acquisition and/or highly conserved function favoring virus replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the high sequence identity observed.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "8eaf114f-fe92-42dd-b08e-c101b55e36dc",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C45",
+      "claim": "Nearly identical 21 base pair sequences flank the open reading frame of virus GAAP (vGAAP), indicative of a TSD.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, we observed nearly identical 21 base pair sequences flanking the open reading frame of virus GAAP (vGAAP), indicative of a TSD, consistent with gene capture resulting from LINE-1-mediated retrotransposition of host mRNA (Figure 1A and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is supported by data shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "275e852f-79ee-4a18-a48a-528152b6a891",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C46",
+      "claim": "The flanking sequences of vGAAP are consistent with gene capture resulting from LINE-1-mediated retrotransposition of host mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, we observed nearly identical 21 base pair sequences flanking the open reading frame of virus GAAP (vGAAP), indicative of a TSD, consistent with gene capture resulting from LINE-1-mediated retrotransposition of host mRNA (Figure 1A and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observed TSD pattern.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "08d88306-b33a-443b-93d3-727a80ec28e1",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C47",
+      "claim": "The vGAAP gene is situated near one of two identical inverted terminal repeat (ITR) regions of the virus genome.",
+      "claim_type": "EXPLICIT",
+      "source": "The vGAAP gene is situated near one of two identical inverted terminal repeat (ITR) regions of the virus genome, and on opposite ends of the genome in various viruses, suggesting that it was originally transferred into the ITR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from genome analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "8f91a277-5611-4fd9-892e-1209da88bff8",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C48",
+      "claim": "vGAAP is on opposite ends of the genome in various viruses, suggesting that it was originally transferred into the ITR.",
+      "claim_type": "EXPLICIT",
+      "source": "The vGAAP gene is situated near one of two identical inverted terminal repeat (ITR) regions of the virus genome, and on opposite ends of the genome in various viruses, suggesting that it was originally transferred into the ITR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the genomic location patterns observed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "10071cf1-53da-4726-b778-97e07cbecf55",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C49",
+      "claim": "A single copy of the putative 21 bp TSD at an analogous position near the other ITR in the cowpox genome suggests a pseudo-empty site.",
+      "claim_type": "EXPLICIT",
+      "source": "A single copy of the putative 21 bp TSD at an analogous position near the other ITR in the cowpox genome suggests a pseudo-empty site (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the genomic data shown in the figure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "3ccb8d51-ffef-4bc6-9bc9-303ac5eada85",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C50",
+      "claim": "Host genes can be retrotransposed into poxvirus genomes by LINE-1 activity in a process akin to the generation of processed pseudogenes.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, with a published account of a non-autonomous SINE in the genome of taterapox virus (Piskurek and Okada, 2007), these observations suggest that host genes can be retrotransposed into poxvirus genomes by LINE-1 activity in a process akin to the generation of processed pseudogenes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observations of vGAAP and the cited SINE element.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "68df32fc-8fac-472e-ab40-5ce1ddda8370",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C51",
+      "claim": "Phylogenetic analysis revealed a single origin for the horizontal transfer of GAAP into poxvirus genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Phylogenetic analysis revealed a single origin for the horizontal transfer of GAAP into poxvirus genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by phylogenetic analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "626679e3-1c6c-4c5b-9990-2c2afafc99dc",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C52",
+      "claim": "At least two other classes of DNA viruses, herpesviruses and iridoviruses, independently acquired GAAP by horizontal transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, at least two other classes of DNA viruses, herpesviruses and iridoviruses, independently acquired GAAP by horizontal transfer (Figure 1B; Bellehumeur et al., 2016; de Groof et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phylogenetic analysis and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "eaa7dd75-7260-4a12-bafb-d17f57992bf2",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C53",
+      "claim": "The S1 gene of Squirrel Monkey cytomegalovirus encodes a protein more than 95% identical to squirrel monkey SLAMF6, followed by portions of the 3\u2032 untranslated region (UTR) of the host mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Another study of Squirrel Monkey cytomegalovirus revealed that the S1 gene encodes a protein more than 95% identical to squirrel monkey Signaling lymphocytic activation molecule family 6 (SLAMF6), followed by portions of the 3\u2032 untranslated region (UTR) of the host mRNA (P\u00e9rez-Carmona et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "e5a66216-2792-41de-b3a8-2faa07526063",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C54",
+      "claim": "Many DNA viruses acquire host genes by retrotransposition.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these findings suggest that many DNA viruses acquire host genes by retrotransposition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the multiple examples of HGT with retrotransposition signatures.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "f40ca5e0-8b52-4cdb-be0e-becff0ab4b70",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C55",
+      "claim": "The majority of host to virus gene transfers lack signatures of retrotransposition, which can quickly degrade through mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the majority of host to virus gene transfers lack signatures of retrotransposition, which can quickly degrade through mutation, motivating our development of an experimental strategy for capturing HGT events in real time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that few transfers show clear signatures.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "102dbcaa-b525-4779-b2fb-4a18fefafa0b",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C56",
+      "claim": "Vaccinia virus (Copenhagen strain) encodes nearly 200 genes in a 191,737 bp genome.",
+      "claim_type": "EXPLICIT",
+      "source": "We developed a selection scheme using vaccinia virus (Copenhagen strain), which encodes nearly 200 genes in a 191,737 bp genome (See Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the vaccinia virus genome.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "19cd2ba1-d012-4bf8-a1d0-355d70bff2c5",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C57",
+      "claim": "K3L was presumably acquired from a host by an ancient poxvirus based on sequence identity with human eukaryotic initiation factor 2\u03b1 (eIF2\u03b1; 27.6% identical).",
+      "claim_type": "EXPLICIT",
+      "source": "We focused on K3L, a gene that was presumably acquired from a host by an ancient poxvirus based on sequence identity with human eukaryotic initiation factor 2\u03b1 (eIF2\u03b1; 27.6% identical) (Beattie et al., 1991; Elde et al., 2009; Elde and Malik, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "1f7a767f-b91f-47af-abe1-3937bd310fa6",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C58",
+      "claim": "K3L diverged from eIF2\u03b1 to encode a protein that blocks the host defense Protein Kinase R (PKR) pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "K3L diverged from eIF2\u03b1 to encode a protein that blocks the host defense Protein Kinase R (PKR) pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about K3L function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "f9f74c31-1fd0-446c-a877-e17ab45e1d24",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C59",
+      "claim": "PKR is activated by dsRNA produced by viruses in the cytoplasm during transcription of virus genes and virus replication.",
+      "claim_type": "EXPLICIT",
+      "source": "PKR is activated by dsRNA produced by viruses in the cytoplasm during transcription of virus genes and virus replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about PKR activation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "fa070fce-562f-4e42-a24c-0f9307215ed8",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C60",
+      "claim": "Upon activation, PKR phosphorylates eIF2\u03b1, leading to a block in protein translation and virus replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon activation, PKR phosphorylates eIF2\u03b1, leading to a block in protein translation and virus replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about PKR function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "8b6bc740-ada3-416a-a802-6053f34a33f7",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C61",
+      "claim": "K3L acts as a pseudo-substrate of PKR to competitively inhibit PKR from binding eIF2\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "K3L acts as a pseudo-substrate of PKR to competitively inhibit PKR from binding eIF2\u03b1 (Figure 2\u2014figure supplement 1; Beattie et al., 1991; Kawagishi-Kobayashi et al., 1997), and can be essential for productive infections depending on the host (Langland and Jacobs, 2002; Park et al., 2019; Park et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by citations to prior work and illustrated in a figure.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "b6de2754-6c42-49f5-b479-e8f5e1c7af42",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C62",
+      "claim": "K3L can be essential for productive infections depending on the host.",
+      "claim_type": "EXPLICIT",
+      "source": "K3L acts as a pseudo-substrate of PKR to competitively inhibit PKR from binding eIF2\u03b1 (Figure 2\u2014figure supplement 1; Beattie et al., 1991; Kawagishi-Kobayashi et al., 1997), and can be essential for productive infections depending on the host (Langland and Jacobs, 2002; Park et al., 2019; Park et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "355766ca-7da0-4233-a352-21996192e367",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C63",
+      "claim": "Viruses lacking K3L replicate poorly in BHK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Viruses lacking K3L replicate poorly in BHK cells, providing strong selection for viruses that 'reclaimed' the mCherry-K3L gene by horizontal transfer and/or somehow adapted in the absence of K3L to block host PKR and regain productive replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "9c224602-7358-4a6b-8f17-131169ddd6f8",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C64",
+      "claim": "Ten virus isolates were recovered from mCherry-positive infected cell clones after screening ~500 million viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this scheme, we screened ~500 million viruses over many experiments and recovered ten virus isolates from mCherry-positive infected cell clones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "ba78eb70-c261-4d77-95b6-52b9495c8a1c",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C65",
+      "claim": "Viruses encoding K3L replicate ~100-fold better than the parent virus deleted for K3L in the restrictive BHK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In the restrictive BHK cells, viruses encoding K3L replicate ~100-fold better than the parent virus deleted for K3L (Figure 2B), allowing us to identify viruses with improved replication compared to the larger population of K3L-deficient viruses.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "c811ade4-6458-4ed4-ac20-920f17dc0d17",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C66",
+      "claim": "Each recovered virus isolate infected BHK cells with titers on par with viruses encoding K3L.",
+      "claim_type": "EXPLICIT",
+      "source": "After plaque purification of candidate mCherry positive isolates, we infected BHK cells with each recovered virus isolate and observed titers on par with viruses encoding K3L (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "2742f11e-7cb2-48b9-a3a4-320c67d490e2",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C67",
+      "claim": "The mCherry-K3L fusion gene was integrated into the virus genome at a unique position in every isolate.",
+      "claim_type": "EXPLICIT",
+      "source": "By sequencing the genome of each recovered virus isolate, we found that the mCherry-K3L fusion gene was integrated into the virus genome at a unique position in every isolate (Figures 2D and 3A), providing the opportunity to compare each independent integration event.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequencing data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "fd16ca44-1f90-48fd-8819-e352eeef5901",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C68",
+      "claim": "All integrations were consistent with a mechanism of LINE-1 retrotransposition-mediated HGT.",
+      "claim_type": "EXPLICIT",
+      "source": "All integrations were consistent with a mechanism of LINE-1 retrotransposition-mediated HGT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the analysis of all recovered isolates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "6da9001e-83e0-49ef-9d58-a5fa41f46b8a",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C69",
+      "claim": "The sequence of each transferred gene revealed hallmark features of mRNA gene capture, including 5\u2032 and 3\u2032 UTRs, precise intron splicing, and poly(A) tails.",
+      "claim_type": "EXPLICIT",
+      "source": "The sequence of each transferred gene revealed hallmark features of mRNA gene capture, including 5\u2032 and 3\u2032 UTRs, precise intron splicing, and poly(A) tails (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequencing data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "fc27e539-5729-4aab-b32a-53f386a01f1b",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C70",
+      "claim": "For 7 of 10 isolates, TSDs flanked mCherry-K3L insertions and contained cut site sequences matching the consensus (TTTT/AA) of LINE-1 endonuclease.",
+      "claim_type": "EXPLICIT",
+      "source": "For 7 of 10 isolates, TSDs flanked mCherry-K3L insertions and contained cut site sequences matching the consensus (TTTT/AA) of LINE-1 endonuclease (Figure 3 and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequencing data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "35b00671-e0c3-4121-a5c8-19c27c6b7220",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C71",
+      "claim": "Integrations in isolates 5, 9, and 10 lacking TSDs might result from an endonuclease-independent LINE-1 mechanism at DNA breaks.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there were no TSDs flanking mCherry-K3L in isolates 5, 9, and 10, these integrations might result from an endonuclease-independent LINE-1 mechanism at DNA breaks (Morrish et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the absence of TSDs and supported by citation to prior work on endonuclease-independent mechanisms.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "0492d5f7-6098-4d18-8210-12dfc5365c33",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C72",
+      "claim": "Robust LINE-1 activity was detected in RK13 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Because our experiments lack any exogenous reverse transcriptase, we tested for endogenous activity in the RK13 cells and detected robust LINE-1 activity (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "03090e63-348f-42dc-9f4b-fbbfc99f5842",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C73",
+      "claim": "LINE-1-mediated retrotransposition may be a common mechanism of HGT in poxvirus genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that LINE-1-mediated retrotransposition may be a common mechanism of HGT in poxvirus genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results showing LINE-1 signatures in all recovered isolates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "abfa7f7a-5e5d-4cf2-9d8d-76ff94898cca",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C74",
+      "claim": "LINE-1-mediated retrotransposition may be more likely than retroviral mechanisms simply because LINE-1 enzymes are nearly ubiquitous in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "While we do not exclude the possibility that genes can also be transposed into the viral genome by retroviruses, this would require co-infection. LINE-1-mediated retrotransposition may be more likely simply because LINE-1 enzymes are nearly ubiquitous in mammals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the ubiquity of LINE-1 elements and the requirement for co-infection in retroviral mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "d6541402-0811-476d-8482-d582e80cc49b",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C75",
+      "claim": "Poxvirus genomes are arranged with essential genes shared by all poxviruses in the central region of the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, poxvirus genomes are arranged with the essential genes, shared by all poxviruses, in the central region of the genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about poxvirus genome organization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "1c87d021-90a1-406b-a2e3-0a88acbaf1f7",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C76",
+      "claim": "Clade- or species-specific genes, which more commonly exhibit evidence of HGT, are enriched near the ends of the poxvirus genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Clade- or species-specific genes, which more commonly exhibit evidence of HGT, are enriched near the ends of the genome (Lefkowitz et al., 2006; McLysaght et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "df428996-d98c-41a6-9a4c-72a79caec71c",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C77",
+      "claim": "The pattern of gene distribution may reflect that gene transfer into the central genomic region is more likely to interrupt genes vital for virus replication.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern may reflect that gene transfer into the central genomic region genome is more likely to interrupt genes vital for virus replication (Lefkowitz et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observed pattern and supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "0cc1454c-c2d7-48a3-892a-63bedcee228e",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C78",
+      "claim": "All but 1 of the 10 isolates integrated K3L outside a roughly defined central region of the genome containing 90 core chordopoxvirus genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, all but 1 of the 10 isolates, we recovered integrated K3L outside a roughly defined central region of the genome containing 90 core chordopoxvirus genes (Lefkowitz et al., 2006; Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "4fd7810d-aed8-4852-b47a-56ec073d84eb",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C79",
+      "claim": "In isolate 5, the K3L integration involved a duplication of two essential genes, G9R and L1R.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of isolate 5, the K3L integration involved a duplication of two essential genes, G9R and L1R (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequencing data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "24156e7f-e8d1-4fa5-9524-16ebda85ae5b",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C80",
+      "claim": "In a contemporaneous study, virus genomes that acquired a host gene by horizontal transfer within a duplicated gene also propagated.",
+      "claim_type": "EXPLICIT",
+      "source": "In a contemporaneous study (Rahman et al., 2022), virus genomes that acquired a host gene by horizontal transfer within a duplicated gene also propagated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to another study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "35d20ef7-9706-42bb-8e24-12d581b88289",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C81",
+      "claim": "In both cases of gene duplication, gene functions were preserved by duplication.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, gene functions were preserved by duplication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that viruses with duplicated genes remained viable.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "edde9843-4a80-4e16-a1a2-5c2e24832797",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C82",
+      "claim": "Spurious gene duplications can appear frequently in poxvirus genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Spurious gene duplications can appear frequently in poxvirus genomes (Hughes and Friedman, 2005), pointing to a flexible means of poxvirus adaptation involving horizontal transfer even into essential genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "4483d5a5-41c8-46f1-b409-1875846da8cc",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C83",
+      "claim": "Gene duplications point to a flexible means of poxvirus adaptation involving horizontal transfer even into essential genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Spurious gene duplications can appear frequently in poxvirus genomes (Hughes and Friedman, 2005), pointing to a flexible means of poxvirus adaptation involving horizontal transfer even into essential genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation of gene duplications and their role in maintaining viability.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "9885f4c5-a6e2-4752-ab49-64b7010f4f51",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C84",
+      "claim": "Duplication of poxvirus genes, followed by rapid gene copy amplification, can boost virus replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies found that duplication of poxvirus genes, followed by rapid gene copy amplification, can boost virus replication (Brennan et al., 2014; Elde et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "cb2a1007-8e59-4c89-a662-0f69c46c79a9",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C85",
+      "claim": "Two isolates (4 and 5) showed polymorphic copy number increases of K3L.",
+      "claim_type": "EXPLICIT",
+      "source": "In our analysis, we discovered two isolates where K3L had undergone polymorphic copy number increases (isolates 4 and 5; Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "35112349-c845-402e-bccf-37a347876251",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C86",
+      "claim": "Homologous recombination in poxviruses requires as little as 16 bp of homology.",
+      "claim_type": "EXPLICIT",
+      "source": "Homologous recombination, including unequal crossovers leading to duplications, requires as little as 16 bp of homology in poxviruses (Yao and Evans, 2001), suggesting that LINE-1 induced TSDs might facilitate gene amplification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "c5bff9ed-8635-4087-90ca-4457e4efb579",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C87",
+      "claim": "LINE-1 induced TSDs might facilitate gene amplification.",
+      "claim_type": "EXPLICIT",
+      "source": "Homologous recombination, including unequal crossovers leading to duplications, requires as little as 16 bp of homology in poxviruses (Yao and Evans, 2001), suggesting that LINE-1 induced TSDs might facilitate gene amplification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the minimal homology requirement and the presence of TSDs.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "92d0dcf1-70fa-400c-8795-64dec833a3a6",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C88",
+      "claim": "Genes transferred within the ITR are duplicated on the other end by replication-based mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes transferred within the ITR are duplicated on the other end by replication-based mechanisms (McFadden and Dales, 1979), as we observed in isolates 4 and 9 (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by citation and experimental observations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "f026f441-eba5-41b1-bee7-52fd17e02b45",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C89",
+      "claim": "Genes integrated near the termini of the genome by HGT may be especially prone to duplication due to stretches of short, high copy tandem repeats found in and near the ITR regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes integrated near the termini of the genome by HGT, like isolate 4, may be especially prone to duplication due to stretches of short, high copy tandem repeats found in and near the ITR regions (Figure 4A and Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the genomic features and observed duplications.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "3e8ee417-ce91-425d-964d-0307164f8812",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C90",
+      "claim": "HGT occurs evenly across poxvirus genomes, but with an enrichment of transferred genes persisting near the ends, where insults to essential genes are less probable and duplication-based adaptation is favored.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations are consistent with the idea that HGT occurs evenly across poxvirus genomes, but with an enrichment of transferred genes persisting near the ends, where insults to essential genes are less probable and duplication-based adaptation is favored (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the experimental observations and genomic patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "05d76483-b568-49e8-a2e4-e87c7a0063b5",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C91",
+      "claim": "Gene families found only in specific lineages of poxviruses are more likely to be present in multiple copies than single-copy host-acquired genes found among diverse poxviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Along these lines, gene families found only in specific lineages of poxviruses, indicating more recent acquisition, are more likely to be present in multiple copies than single-copy host-acquired genes found among diverse poxviruses (Hughes and Friedman, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "67ecb4e7-aab1-4f57-a23f-6bb5f40c4b54",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C92",
+      "claim": "Recombinant viruses encoding eIF2\u03b1 in place of K3L replicate weakly.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed four serial infections of viruses expressing eIF2\u03b1 or an eIF2\u03b1 variant lacking the PKR phosphorylation site (S51A) in RK13 cells. While the recombinant viruses replicate weakly, we observed a nearly tenfold increase in virus replication for both eIF2\u03b1-encoding viruses after passaging (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "b3788013-f065-460b-9aa1-bae76ef254ae",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C93",
+      "claim": "A nearly tenfold increase in virus replication was observed for both eIF2\u03b1-encoding viruses after passaging.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed four serial infections of viruses expressing eIF2\u03b1 or an eIF2\u03b1 variant lacking the PKR phosphorylation site (S51A) in RK13 cells. While the recombinant viruses replicate weakly, we observed a nearly tenfold increase in virus replication for both eIF2\u03b1-encoding viruses after passaging (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "c26869da-8f86-4771-b298-ead8b4e763a1",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C94",
+      "claim": "Independent gene copy increases of eIF2\u03b1 were found in both evolved virus isolates.",
+      "claim_type": "EXPLICIT",
+      "source": "By sequencing the eIF2\u03b1 region in evolved virus isolates, we found independent gene copy increases of eIF2\u03b1 in both viruses (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequencing data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "30d9faa3-9bf7-48bf-9d7f-03577641c238",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C95",
+      "claim": "Gene copy increases following HGT play a critical role in poxvirus evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "These results support a critical role for gene copy increases following HGT in poxvirus evolution, as also observed for K3L and other genes (Brennan et al., 2014; Elde et al., 2012) and suggest a common pathway facilitating adaptation of host genes captured by poxviruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results and supported by citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "9c87a839-d092-4d21-bb49-3d456b2a70bf",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C96",
+      "claim": "There is a common pathway facilitating adaptation of host genes captured by poxviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "These results support a critical role for gene copy increases following HGT in poxvirus evolution, as also observed for K3L and other genes (Brennan et al., 2014; Elde et al., 2012) and suggest a common pathway facilitating adaptation of host genes captured by poxviruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the consistent observation of gene copy increases across different experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "1e434d01-b7cc-4334-92e6-53c4a3639665",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C97",
+      "claim": "HGT is an important process facilitating virus evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "HGT is an important process facilitating virus evolution (Caprari et al., 2015; Deeg et al., 2018; Hughes and Friedman, 2005; Koonin and Yutin, 2019; McLysaght et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "32630d02-1914-49ed-9e56-6efc5b0016ce",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C98",
+      "claim": "Retrotransposition to virus genomes could greatly extend the range of LINE-1 or related elements that subsequently mobilize to a newly infected virus host.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to self-propagation in host genomes, retrotransposition to virus genomes could greatly extend the range of LINE-1 or related elements that subsequently mobilize to a newly infected virus host (Piskurek and Okada, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the implications of the findings, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "b4fb2b17-e04b-4ba5-95a8-5b02b5384f64",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C99",
+      "claim": "The extensive host range of some poxviruses suggests the possibility of cross-host lineage transfer of LINE-1s, non-autonomous SINEs, and host transcripts between mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "The extensive host range of some poxviruses, for example, between rodent and primate species, suggests the possibility of cross-host lineage transfer of LINE-1s, non-autonomous SINEs, and host transcripts between mammals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the known host range of poxviruses.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "4eec781a-18db-4d30-8984-a4d57fdae9e7",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C100",
+      "claim": "A process involving the frequent appearance of DNA transposons in some insect viruses suggests an analogous mechanism for the spread of transposable elements between insect species.",
+      "claim_type": "EXPLICIT",
+      "source": "A process involving the frequent appearance of DNA transposons in some insect viruses suggests an analogous mechanism for the spread of transposable elements between insect species (Gilbert et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "806bfc10-4d38-4430-ac06-e609b8986cf5",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C101",
+      "claim": "Processed pseudogene products are enriched for highly expressed genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In cases of retrotransposition of host transcripts, the resulting processed pseudogene products are enriched for highly expressed genes (Zhang et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "34f86215-ac07-40e3-9c35-6f0eabc00907",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C102",
+      "claim": "The overrepresentation of certain transcripts might provide clues for understanding and predicting how viruses might adapt with repurposed genes mimicking host functions.",
+      "claim_type": "EXPLICIT",
+      "source": "The overrepresentation of certain transcripts might provide clues for understanding and predicting how viruses might adapt with repurposed genes mimicking host functions (Elde and Malik, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the implications of the findings, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "baed1a3d-dbc3-4980-af29-fed237c7b95a",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C103",
+      "claim": "Currently recognized cases of HGT involve oncogenes, regulators of translation like eIF2\u03b1, and antiviral genes that are highly expressed in response to infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently recognized cases of HGT involving oncogenes, regulators of translation, like eIF2\u03b1, and antiviral genes that are highly expressed in response to infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of known HGT cases.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "41c7e41c-8ca3-49b2-81e7-34032533d918",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C104",
+      "claim": "Repetitive TSDs generated by LINE-1 activity may enhance poxvirus adaptation by facilitating rapid gene copy number amplification of horizontally transferred genes on arrival.",
+      "claim_type": "EXPLICIT",
+      "source": "Repetitive TSDs generated by LINE-1 activity may also enhance poxvirus adaptation by facilitating rapid gene copy number amplification of horizontally transferred genes on arrival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observed gene duplications and the presence of TSDs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "818bb9c7-87c7-47ca-9411-ea16b9e96548",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C105",
+      "claim": "Increases in gene copy number augment the probability of beneficial mutations appearing, allowing for swift diversification of newly acquired genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Increases in gene copy number augment the probability of beneficial mutations appearing, allowing for swift diversification of newly acquired genes (Elde et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "76927165-7559-4a36-ba22-208312e9a0a6",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C106",
+      "claim": "The repetitive termini of poxvirus genomes enable the emergence and persistence of acquired genes predominately at the ends of the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, form follows function as the repetitive termini of poxvirus genomes further enable the emergence and persistence of acquired genes predominately at the ends of the genome (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the genomic features and observed patterns of gene distribution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "5345b09f-c10a-4e1a-98f4-934e639db8da",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C107",
+      "claim": "As beneficial virus gene variants endure, they end up closer to the center of the genome as subsequently captured genes appear near the ends.",
+      "claim_type": "EXPLICIT",
+      "source": "As beneficial virus gene variants endure, they end up closer to the center of the genome as subsequently captured genes appear near the ends.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observed pattern of gene distribution in poxvirus genomes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "0bc0ecda-039a-4ca2-ace1-ec8578680b43",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C108",
+      "claim": "Similar mechanisms of virus adaptation by HGT may be shared by other diverse classes of nucleocytoplasmic DNA viruses (NCLDVs), in addition to poxviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar mechanisms of virus adaptation by HGT may be shared by other diverse classes of nucleocytoplasmic DNA viruses (NCLDVs), in addition to poxviruses (Deeg et al., 2018; Koonin and Yutin, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the broader implications, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "e8619ef6-478d-450b-92d8-2774e1d33042",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C109",
+      "claim": "Many giant viruses encode a variety of genes acquired by HGT, including ribosomal genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Many giant viruses, which can exceed a megabase in genome size and infect diverse host species, encode a variety of genes acquired by HGT, including ribosomal genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about giant viruses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "de33f293-65c0-4483-b90e-e1676b9dbc5d",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "claim_id": "C110",
+      "claim": "Other classes of transposable elements may spur NCDLV evolution by mobilizing host genes into virus genomes across diverse ecosystems.",
+      "claim_type": "EXPLICIT",
+      "source": "Given a primary role for LINE-1 elements in facilitating gene transfer, we speculate that other classes of transposable elements may spur NCDLV evolution by mobilizing host genes into virus genomes across diverse ecosystems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the broader implications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f490f143-3a8c-4507-bc91-e20d2c6e74ac",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Analysis of the vGAAP gene in poxviruses reveals signatures of LINE-1-mediated horizontal gene transfer, including target site duplications (TSDs), LINE-1 endonuclease sites, and poly(A) tails. Phylogenetic analysis shows a single origin for GAAP transfer into poxviruses, with independent acquisitions by other DNA viruses (herpesviruses and iridoviruses).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C52 provide converging evidence from sequence analysis (C43, C45), genomic location patterns (C47-C49), and phylogenetic analysis (C51-C52) that collectively support LINE-1-mediated HGT. The presence of TSDs, endonuclease sites, and pseudo-empty sites are hallmark features of LINE-1 activity, and the data shown in Figure 1 corroborates these observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "4d225a05-660f-4b15-a863-2411494b674a",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "An experimental selection scheme was developed using vaccinia virus lacking K3L (a PKR inhibitor) to screen for horizontal gene transfer events. Ten virus isolates were recovered from ~500 million viruses screened, each with mCherry-K3L integrated at unique genomic positions, and all showed restored replication capacity comparable to K3L-encoding viruses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C67 describe the experimental design and results. The selection scheme is well-justified (C57-C63), the screening scale is clearly reported (C64), and the functional validation is demonstrated through titer measurements (C65-C66, Figure 2B-C). Genome sequencing confirmed unique integration sites (C67, Figure 2D), providing independent HGT events for analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "75d3c621-d6a2-44a5-946d-fed550cd4cc5",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "All ten experimentally recovered virus isolates showed features consistent with LINE-1-mediated retrotransposition, including mRNA hallmarks (UTRs, spliced introns, poly(A) tails), TSDs with LINE-1 endonuclease consensus sites in 7/10 isolates, and endogenous LINE-1 activity detected in the host cells used.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C73 are strongly supported by sequencing data (Figure 3, Figure 3\u2014figure supplement 1). The presence of mRNA features (C69), TSDs with endonuclease sites (C70), and detection of endogenous LINE-1 activity (C72, Figure 3\u2014figure supplement 2) provide multiple independent lines of evidence. The explanation for isolates lacking TSDs (C71) is reasonable given known endonuclease-independent mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "dba4ff46-6b08-46a2-98f2-3ebf9f9eaaba",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Experimentally captured genes integrated predominantly outside the central genomic region containing essential genes (9/10 isolates), consistent with known poxvirus genome organization. One isolate (isolate 5) involved duplication of essential genes G9R and L1R, preserving their function while allowing HGT into the central region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C83 are well-supported by the experimental data (Figure 2D, Figure 3B) and prior literature (C76, C82). The observation that 9/10 isolates integrated outside the central region (C78) aligns with the expectation that insertions into essential genes would be lethal (C77). The gene duplication in isolate 5 (C79) provides a mechanism for viable HGT into otherwise restricted regions, supported by a contemporaneous study (C80).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "839a0956-cc26-4e66-849c-dc930445359f",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Two experimentally recovered isolates (4 and 5) showed polymorphic copy number increases of the transferred K3L gene. LINE-1-induced TSDs may facilitate gene amplification through homologous recombination, which requires as little as 16 bp of homology in poxviruses. Genes integrated near genome termini are especially prone to duplication due to repetitive sequences in ITR regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C91 are supported by experimental observations (C85, Figure 4A) and prior work on poxvirus recombination (C84, C86). The inference that TSDs facilitate amplification (C87) is reasonable given the minimal homology requirements (C86). The observation that genes near termini are prone to duplication (C89) is supported by genomic features and the data from isolates 4 and 9 (C88).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "95c590a9-5d39-4f89-a0e2-5fac36621d90",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Viruses engineered to encode human eIF2\u03b1 (the ancestral host gene from which K3L evolved) in place of K3L showed weak initial replication but nearly tenfold increases after serial passaging. Sequencing revealed independent gene copy number increases of eIF2\u03b1 in both evolved isolates, supporting a critical role for gene amplification in poxvirus adaptation following HGT.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C96 are supported by experimental data (Figure 4B-C). The initial weak replication (C92) and subsequent improvement (C93) demonstrate selection pressure. The discovery of independent copy number increases (C94) in both lineages provides strong evidence for the adaptive role of gene amplification (C95-C96), consistent with prior observations for K3L and other genes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "37dabe63-77a4-4ed1-8e35-b1cbe2171ab4",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "LINE-1 retrotransposition plays a central role in horizontal gene transfer to poxvirus genomes, recapitulating processed pseudogene generation but directing host mRNA into virus genomes. Hallmark features of retrotransposition (TSDs) favor virus adaptation through rapid duplication of captured genes, and the repetitive termini of poxvirus genomes enable emergence and persistence of acquired genes at genome ends.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6, C54, C73-C74, C104, and C106 represent the major conclusions of the study. These are well-supported by the convergence of genomic analysis (vGAAP), experimental screens (10 isolates with LINE-1 signatures), detection of endogenous LINE-1 activity, and observations of gene duplication. The mechanism is consistent across all experimental and natural examples examined.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "41e8a1f5-5cbb-4d34-9816-b527007d1307",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Horizontal gene transfer is a major source of genetic variation in viruses, including poxviruses, but the mechanisms of transfer to poxvirus genomes were previously unknown. HGT can provide adaptive leaps and plays a central role in diversification of infectious microbes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C15 establish the background and motivation for the study. These are well-supported by citations to prior work and represent established knowledge in the field. The knowledge gap (C3, C15) is clearly articulated and justified, motivating the current investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "3db6db78-7779-4513-b75b-ee82be1bc8c5",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "More than 25% of poxvirus genes were acquired by HGT from hosts, with protein structure comparisons suggesting even higher proportions. Many captured genes function as immune inhibitors or host range factors, and extant poxviruses pose pandemic risks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C23 provide context about poxviruses and HGT, supported by citations to prior work. These establish the importance of studying HGT mechanisms in poxviruses and justify the choice of poxviruses as a model system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "37e91745-8f9f-4311-b097-a7154009fa75",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Poxvirus-encoded copies of host genes lack introns, leading to the hypothesis that transfer occurs through spliced mRNA intermediates requiring reverse transcription by retroviruses or retrotransposons. Prior discoveries of a provirus in fowlpox and a SINE in taterapox indicate both are capable of catalyzing insertions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C29 establish prior hypotheses and evidence for retrotransposition-based HGT mechanisms, supported by citations. These provide the conceptual foundation for the current study's focus on LINE-1 elements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "14ead7f4-a747-47eb-a714-d655dce5f144",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "LINE-1 retrotransposons reverse transcribe and integrate host genes in a sequence-independent manner, creating processed pseudogenes. LINE-1 machinery includes ORF1 (RNA binding) and ORF2 (endonuclease/reverse transcriptase), preferentially nicks DNA at TTTT/AA sites, and creates characteristic TSDs. LINE-1 can also act at dsDNA breaks and promiscuously reverse transcribe host mRNA, though signatures may degrade rapidly in viruses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C42 describe established LINE-1 biology, supported by citations and general knowledge. These provide the mechanistic framework for interpreting the experimental results. The note about signature degradation (C42) appropriately motivates the experimental approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "cac4e5bc-5abb-4fcb-87a5-742851a32f0e",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The S1 gene of Squirrel Monkey cytomegalovirus encodes a protein >95% identical to host SLAMF6 with 3' UTR sequences, but the majority of host-to-virus gene transfers lack clear retrotransposition signatures due to mutational degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53 and C55 are supported by citation (C53) and logical inference from the observation that few transfers show clear signatures (C55). This motivates the need for real-time experimental capture of HGT events.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    },
+    {
+      "id": "56319b11-a13e-432c-b9e5-57bb32bc0406",
+      "content_id": "cf606213-a679-485d-b8fd-1a8831b2e5ad",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The findings have broad implications: LINE-1-mediated HGT may extend the range of retrotransposons across host species via viruses, processed pseudogenes are enriched for highly expressed genes (suggesting predictable HGT targets), gene copy increases augment beneficial mutation probability, and similar mechanisms may operate in other DNA virus classes including giant viruses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C97-C110 represent speculative extensions and implications of the findings. While some are supported by citations (C97, C100, C101, C105) and logical inference from the data, others are explicitly speculative (C98, C99, C102, C108, C110). These represent reasonable hypotheses for future work but are not directly demonstrated by the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:31:05.021361Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c2f43005-8cb2-4c37-a70a-4847dd29bd58",
+      "result_id": "f490f143-3a8c-4507-bc91-e20d2c6e74ac"
+    },
+    {
+      "claim_id": "e51bcb16-ca6a-4ea9-8d21-9d348b3fe5e3",
+      "result_id": "f490f143-3a8c-4507-bc91-e20d2c6e74ac"
+    },
+    {
+      "claim_id": "8eaf114f-fe92-42dd-b08e-c101b55e36dc",
+      "result_id": "f490f143-3a8c-4507-bc91-e20d2c6e74ac"
+    },
+    {
+      "claim_id": "275e852f-79ee-4a18-a48a-528152b6a891",
+      "result_id": "f490f143-3a8c-4507-bc91-e20d2c6e74ac"
+    },
+    {
+      "claim_id": "08d88306-b33a-443b-93d3-727a80ec28e1",
+      "result_id": "f490f143-3a8c-4507-bc91-e20d2c6e74ac"
+    },
+    {
+      "claim_id": "8f91a277-5611-4fd9-892e-1209da88bff8",
+      "result_id": "f490f143-3a8c-4507-bc91-e20d2c6e74ac"
+    },
+    {
+      "claim_id": "10071cf1-53da-4726-b778-97e07cbecf55",
+      "result_id": "f490f143-3a8c-4507-bc91-e20d2c6e74ac"
+    },
+    {
+      "claim_id": "3ccb8d51-ffef-4bc6-9bc9-303ac5eada85",
+      "result_id": "f490f143-3a8c-4507-bc91-e20d2c6e74ac"
+    },
+    {
+      "claim_id": "68df32fc-8fac-472e-ab40-5ce1ddda8370",
+      "result_id": "f490f143-3a8c-4507-bc91-e20d2c6e74ac"
+    },
+    {
+      "claim_id": "626679e3-1c6c-4c5b-9990-2c2afafc99dc",
+      "result_id": "f490f143-3a8c-4507-bc91-e20d2c6e74ac"
+    },
+    {
+      "claim_id": "102dbcaa-b525-4779-b2fb-4a18fefafa0b",
+      "result_id": "4d225a05-660f-4b15-a863-2411494b674a"
+    },
+    {
+      "claim_id": "19cd2ba1-d012-4bf8-a1d0-355d70bff2c5",
+      "result_id": "4d225a05-660f-4b15-a863-2411494b674a"
+    },
+    {
+      "claim_id": "1f7a767f-b91f-47af-abe1-3937bd310fa6",
+      "result_id": "4d225a05-660f-4b15-a863-2411494b674a"
+    },
+    {
+      "claim_id": "f9f74c31-1fd0-446c-a877-e17ab45e1d24",
+      "result_id": "4d225a05-660f-4b15-a863-2411494b674a"
+    },
+    {
+      "claim_id": "fa070fce-562f-4e42-a24c-0f9307215ed8",
+      "result_id": "4d225a05-660f-4b15-a863-2411494b674a"
+    },
+    {
+      "claim_id": "8b6bc740-ada3-416a-a802-6053f34a33f7",
+      "result_id": "4d225a05-660f-4b15-a863-2411494b674a"
+    },
+    {
+      "claim_id": "b6de2754-6c42-49f5-b479-e8f5e1c7af42",
+      "result_id": "4d225a05-660f-4b15-a863-2411494b674a"
+    },
+    {
+      "claim_id": "355766ca-7da0-4233-a352-21996192e367",
+      "result_id": "4d225a05-660f-4b15-a863-2411494b674a"
+    },
+    {
+      "claim_id": "9c224602-7358-4a6b-8f17-131169ddd6f8",
+      "result_id": "4d225a05-660f-4b15-a863-2411494b674a"
+    },
+    {
+      "claim_id": "ba78eb70-c261-4d77-95b6-52b9495c8a1c",
+      "result_id": "4d225a05-660f-4b15-a863-2411494b674a"
+    },
+    {
+      "claim_id": "c811ade4-6458-4ed4-ac20-920f17dc0d17",
+      "result_id": "4d225a05-660f-4b15-a863-2411494b674a"
+    },
+    {
+      "claim_id": "2742f11e-7cb2-48b9-a3a4-320c67d490e2",
+      "result_id": "4d225a05-660f-4b15-a863-2411494b674a"
+    },
+    {
+      "claim_id": "fd16ca44-1f90-48fd-8819-e352eeef5901",
+      "result_id": "75d3c621-d6a2-44a5-946d-fed550cd4cc5"
+    },
+    {
+      "claim_id": "6da9001e-83e0-49ef-9d58-a5fa41f46b8a",
+      "result_id": "75d3c621-d6a2-44a5-946d-fed550cd4cc5"
+    },
+    {
+      "claim_id": "fc27e539-5729-4aab-b32a-53f386a01f1b",
+      "result_id": "75d3c621-d6a2-44a5-946d-fed550cd4cc5"
+    },
+    {
+      "claim_id": "35b00671-e0c3-4121-a5c8-19c27c6b7220",
+      "result_id": "75d3c621-d6a2-44a5-946d-fed550cd4cc5"
+    },
+    {
+      "claim_id": "0492d5f7-6098-4d18-8210-12dfc5365c33",
+      "result_id": "75d3c621-d6a2-44a5-946d-fed550cd4cc5"
+    },
+    {
+      "claim_id": "03090e63-348f-42dc-9f4b-fbbfc99f5842",
+      "result_id": "75d3c621-d6a2-44a5-946d-fed550cd4cc5"
+    },
+    {
+      "claim_id": "d6541402-0811-476d-8482-d582e80cc49b",
+      "result_id": "dba4ff46-6b08-46a2-98f2-3ebf9f9eaaba"
+    },
+    {
+      "claim_id": "1c87d021-90a1-406b-a2e3-0a88acbaf1f7",
+      "result_id": "dba4ff46-6b08-46a2-98f2-3ebf9f9eaaba"
+    },
+    {
+      "claim_id": "df428996-d98c-41a6-9a4c-72a79caec71c",
+      "result_id": "dba4ff46-6b08-46a2-98f2-3ebf9f9eaaba"
+    },
+    {
+      "claim_id": "0cc1454c-c2d7-48a3-892a-63bedcee228e",
+      "result_id": "dba4ff46-6b08-46a2-98f2-3ebf9f9eaaba"
+    },
+    {
+      "claim_id": "4fd7810d-aed8-4852-b47a-56ec073d84eb",
+      "result_id": "dba4ff46-6b08-46a2-98f2-3ebf9f9eaaba"
+    },
+    {
+      "claim_id": "24156e7f-e8d1-4fa5-9524-16ebda85ae5b",
+      "result_id": "dba4ff46-6b08-46a2-98f2-3ebf9f9eaaba"
+    },
+    {
+      "claim_id": "35d20ef7-9706-42bb-8e24-12d581b88289",
+      "result_id": "dba4ff46-6b08-46a2-98f2-3ebf9f9eaaba"
+    },
+    {
+      "claim_id": "edde9843-4a80-4e16-a1a2-5c2e24832797",
+      "result_id": "dba4ff46-6b08-46a2-98f2-3ebf9f9eaaba"
+    },
+    {
+      "claim_id": "4483d5a5-41c8-46f1-b409-1875846da8cc",
+      "result_id": "dba4ff46-6b08-46a2-98f2-3ebf9f9eaaba"
+    },
+    {
+      "claim_id": "9885f4c5-a6e2-4752-ab49-64b7010f4f51",
+      "result_id": "839a0956-cc26-4e66-849c-dc930445359f"
+    },
+    {
+      "claim_id": "cb2a1007-8e59-4c89-a662-0f69c46c79a9",
+      "result_id": "839a0956-cc26-4e66-849c-dc930445359f"
+    },
+    {
+      "claim_id": "35112349-c845-402e-bccf-37a347876251",
+      "result_id": "839a0956-cc26-4e66-849c-dc930445359f"
+    },
+    {
+      "claim_id": "c5bff9ed-8635-4087-90ca-4457e4efb579",
+      "result_id": "839a0956-cc26-4e66-849c-dc930445359f"
+    },
+    {
+      "claim_id": "92d0dcf1-70fa-400c-8795-64dec833a3a6",
+      "result_id": "839a0956-cc26-4e66-849c-dc930445359f"
+    },
+    {
+      "claim_id": "f026f441-eba5-41b1-bee7-52fd17e02b45",
+      "result_id": "839a0956-cc26-4e66-849c-dc930445359f"
+    },
+    {
+      "claim_id": "3e8ee417-ce91-425d-964d-0307164f8812",
+      "result_id": "839a0956-cc26-4e66-849c-dc930445359f"
+    },
+    {
+      "claim_id": "05d76483-b568-49e8-a2e4-e87c7a0063b5",
+      "result_id": "839a0956-cc26-4e66-849c-dc930445359f"
+    },
+    {
+      "claim_id": "67ecb4e7-aab1-4f57-a23f-6bb5f40c4b54",
+      "result_id": "95c590a9-5d39-4f89-a0e2-5fac36621d90"
+    },
+    {
+      "claim_id": "b3788013-f065-460b-9aa1-bae76ef254ae",
+      "result_id": "95c590a9-5d39-4f89-a0e2-5fac36621d90"
+    },
+    {
+      "claim_id": "c26869da-8f86-4771-b298-ead8b4e763a1",
+      "result_id": "95c590a9-5d39-4f89-a0e2-5fac36621d90"
+    },
+    {
+      "claim_id": "30d9faa3-9bf7-48bf-9d7f-03577641c238",
+      "result_id": "95c590a9-5d39-4f89-a0e2-5fac36621d90"
+    },
+    {
+      "claim_id": "9c87a839-d092-4d21-bb49-3d456b2a70bf",
+      "result_id": "95c590a9-5d39-4f89-a0e2-5fac36621d90"
+    },
+    {
+      "claim_id": "7504d0b7-d8e4-426d-bd2c-1d5d415ac210",
+      "result_id": "37dabe63-77a4-4ed1-8e35-b1cbe2171ab4"
+    },
+    {
+      "claim_id": "9674a594-b622-421c-bd09-922fc4f67bd0",
+      "result_id": "37dabe63-77a4-4ed1-8e35-b1cbe2171ab4"
+    },
+    {
+      "claim_id": "d6fc8d4e-0918-4403-bcdf-6ca8ee99fb3d",
+      "result_id": "37dabe63-77a4-4ed1-8e35-b1cbe2171ab4"
+    },
+    {
+      "claim_id": "e5a66216-2792-41de-b3a8-2faa07526063",
+      "result_id": "37dabe63-77a4-4ed1-8e35-b1cbe2171ab4"
+    },
+    {
+      "claim_id": "03090e63-348f-42dc-9f4b-fbbfc99f5842",
+      "result_id": "37dabe63-77a4-4ed1-8e35-b1cbe2171ab4"
+    },
+    {
+      "claim_id": "abfa7f7a-5e5d-4cf2-9d8d-76ff94898cca",
+      "result_id": "37dabe63-77a4-4ed1-8e35-b1cbe2171ab4"
+    },
+    {
+      "claim_id": "41c7e41c-8ca3-49b2-81e7-34032533d918",
+      "result_id": "37dabe63-77a4-4ed1-8e35-b1cbe2171ab4"
+    },
+    {
+      "claim_id": "76927165-7559-4a36-ba22-208312e9a0a6",
+      "result_id": "37dabe63-77a4-4ed1-8e35-b1cbe2171ab4"
+    },
+    {
+      "claim_id": "516862f4-2647-4b68-85f7-b8c323ad76dc",
+      "result_id": "41e8a1f5-5cbb-4d34-9816-b527007d1307"
+    },
+    {
+      "claim_id": "a2a51d4a-d084-4209-b0ed-70b5cfa68504",
+      "result_id": "41e8a1f5-5cbb-4d34-9816-b527007d1307"
+    },
+    {
+      "claim_id": "da86fef8-6017-4125-8d6a-0572bb815e4c",
+      "result_id": "41e8a1f5-5cbb-4d34-9816-b527007d1307"
+    },
+    {
+      "claim_id": "2273b748-ba4b-4f54-96de-534b74fafdc9",
+      "result_id": "41e8a1f5-5cbb-4d34-9816-b527007d1307"
+    },
+    {
+      "claim_id": "df7b9ad1-9553-4751-a252-9232eb80e53d",
+      "result_id": "41e8a1f5-5cbb-4d34-9816-b527007d1307"
+    },
+    {
+      "claim_id": "dbf79b51-aca8-4e03-9c1a-6c3cea71af83",
+      "result_id": "41e8a1f5-5cbb-4d34-9816-b527007d1307"
+    },
+    {
+      "claim_id": "97d9ad99-9ddf-48f7-ae68-52bebe898e03",
+      "result_id": "41e8a1f5-5cbb-4d34-9816-b527007d1307"
+    },
+    {
+      "claim_id": "a27f49fc-c52c-4b4e-b5a7-e8f4ad026f71",
+      "result_id": "41e8a1f5-5cbb-4d34-9816-b527007d1307"
+    },
+    {
+      "claim_id": "bfdfcdd2-4817-4ecc-a4dd-297949239349",
+      "result_id": "41e8a1f5-5cbb-4d34-9816-b527007d1307"
+    },
+    {
+      "claim_id": "928eda66-bb65-4a40-aebf-d08c56f0b13b",
+      "result_id": "41e8a1f5-5cbb-4d34-9816-b527007d1307"
+    },
+    {
+      "claim_id": "8c357275-46ed-4015-8842-4a154287821b",
+      "result_id": "41e8a1f5-5cbb-4d34-9816-b527007d1307"
+    },
+    {
+      "claim_id": "9c2bd08c-df28-4db0-aa18-24b60b909bbd",
+      "result_id": "41e8a1f5-5cbb-4d34-9816-b527007d1307"
+    },
+    {
+      "claim_id": "a7f63c0f-0335-458c-9939-4398002d79f1",
+      "result_id": "3db6db78-7779-4513-b75b-ee82be1bc8c5"
+    },
+    {
+      "claim_id": "e929a3ca-01aa-41a3-8351-14da0654332f",
+      "result_id": "3db6db78-7779-4513-b75b-ee82be1bc8c5"
+    },
+    {
+      "claim_id": "8cdf952c-57d3-4872-a7d5-9f34aef08253",
+      "result_id": "3db6db78-7779-4513-b75b-ee82be1bc8c5"
+    },
+    {
+      "claim_id": "2bab7d02-1a8d-46ea-a786-e7936a7e733c",
+      "result_id": "3db6db78-7779-4513-b75b-ee82be1bc8c5"
+    },
+    {
+      "claim_id": "576ba631-78ff-43ef-a21d-47e14aca31d5",
+      "result_id": "3db6db78-7779-4513-b75b-ee82be1bc8c5"
+    },
+    {
+      "claim_id": "a1e206d0-f3c0-4b1c-8cdf-6f6774238094",
+      "result_id": "3db6db78-7779-4513-b75b-ee82be1bc8c5"
+    },
+    {
+      "claim_id": "d4da718c-0484-42a8-8a44-2218d68ae958",
+      "result_id": "3db6db78-7779-4513-b75b-ee82be1bc8c5"
+    },
+    {
+      "claim_id": "a76cca75-2309-4a5a-823a-358b757a7592",
+      "result_id": "3db6db78-7779-4513-b75b-ee82be1bc8c5"
+    },
+    {
+      "claim_id": "2200af60-903b-4e27-960b-8acac771334e",
+      "result_id": "37e91745-8f9f-4311-b097-a7154009fa75"
+    },
+    {
+      "claim_id": "8d81ad59-ed4c-4147-a9af-c45c5e20cb03",
+      "result_id": "37e91745-8f9f-4311-b097-a7154009fa75"
+    },
+    {
+      "claim_id": "eba86b99-6624-4b06-ba77-525e2bbcd2b7",
+      "result_id": "37e91745-8f9f-4311-b097-a7154009fa75"
+    },
+    {
+      "claim_id": "9aa38ec7-f43d-453b-a1ef-dea56a1ce2cc",
+      "result_id": "37e91745-8f9f-4311-b097-a7154009fa75"
+    },
+    {
+      "claim_id": "f60042ce-231e-400c-94c8-7bef31ca068c",
+      "result_id": "37e91745-8f9f-4311-b097-a7154009fa75"
+    },
+    {
+      "claim_id": "0ca7bc6f-ffcf-433a-8f56-4cdc17f95759",
+      "result_id": "37e91745-8f9f-4311-b097-a7154009fa75"
+    },
+    {
+      "claim_id": "98f7ef64-ace0-46e4-91e1-107ddc8f6f09",
+      "result_id": "14ead7f4-a747-47eb-a714-d655dce5f144"
+    },
+    {
+      "claim_id": "03afc672-2a05-42e1-91ab-02783e60f2cf",
+      "result_id": "14ead7f4-a747-47eb-a714-d655dce5f144"
+    },
+    {
+      "claim_id": "28abcdbb-2b01-4388-9bfa-397757878427",
+      "result_id": "14ead7f4-a747-47eb-a714-d655dce5f144"
+    },
+    {
+      "claim_id": "2ac521c0-f4c6-493f-a01d-3054a398be6d",
+      "result_id": "14ead7f4-a747-47eb-a714-d655dce5f144"
+    },
+    {
+      "claim_id": "0a8152bf-82a9-478f-bc38-4db305f76c69",
+      "result_id": "14ead7f4-a747-47eb-a714-d655dce5f144"
+    },
+    {
+      "claim_id": "fe83df55-a93d-4f17-a41a-71c085315860",
+      "result_id": "14ead7f4-a747-47eb-a714-d655dce5f144"
+    },
+    {
+      "claim_id": "a096b45d-7daf-47bc-bb16-72b21b2d3803",
+      "result_id": "14ead7f4-a747-47eb-a714-d655dce5f144"
+    },
+    {
+      "claim_id": "3047f7c7-0bf5-4a2b-a186-88a21cf7d529",
+      "result_id": "14ead7f4-a747-47eb-a714-d655dce5f144"
+    },
+    {
+      "claim_id": "cae66c64-5fb5-4cba-b914-2a125c015ee2",
+      "result_id": "14ead7f4-a747-47eb-a714-d655dce5f144"
+    },
+    {
+      "claim_id": "9e97a777-32ae-444a-8828-c61d5e7aa82c",
+      "result_id": "14ead7f4-a747-47eb-a714-d655dce5f144"
+    },
+    {
+      "claim_id": "53a90eeb-255a-4f4e-8db3-0d44341936e3",
+      "result_id": "14ead7f4-a747-47eb-a714-d655dce5f144"
+    },
+    {
+      "claim_id": "02103558-b0fd-42d2-aa2d-18ed496ffb7a",
+      "result_id": "14ead7f4-a747-47eb-a714-d655dce5f144"
+    },
+    {
+      "claim_id": "dcbbb17a-72d5-428a-8908-ba16ad14ba58",
+      "result_id": "14ead7f4-a747-47eb-a714-d655dce5f144"
+    },
+    {
+      "claim_id": "eaa7dd75-7260-4a12-bafb-d17f57992bf2",
+      "result_id": "cac4e5bc-5abb-4fcb-87a5-742851a32f0e"
+    },
+    {
+      "claim_id": "f40ca5e0-8b52-4cdb-be0e-becff0ab4b70",
+      "result_id": "cac4e5bc-5abb-4fcb-87a5-742851a32f0e"
+    },
+    {
+      "claim_id": "1e434d01-b7cc-4334-92e6-53c4a3639665",
+      "result_id": "56319b11-a13e-432c-b9e5-57bb32bc0406"
+    },
+    {
+      "claim_id": "32630d02-1914-49ed-9e56-6efc5b0016ce",
+      "result_id": "56319b11-a13e-432c-b9e5-57bb32bc0406"
+    },
+    {
+      "claim_id": "b4fb2b17-e04b-4ba5-95a8-5b02b5384f64",
+      "result_id": "56319b11-a13e-432c-b9e5-57bb32bc0406"
+    },
+    {
+      "claim_id": "4eec781a-18db-4d30-8984-a4d57fdae9e7",
+      "result_id": "56319b11-a13e-432c-b9e5-57bb32bc0406"
+    },
+    {
+      "claim_id": "806bfc10-4d38-4430-ac06-e609b8986cf5",
+      "result_id": "56319b11-a13e-432c-b9e5-57bb32bc0406"
+    },
+    {
+      "claim_id": "34f86215-ac07-40e3-9c35-6f0eabc00907",
+      "result_id": "56319b11-a13e-432c-b9e5-57bb32bc0406"
+    },
+    {
+      "claim_id": "baed1a3d-dbc3-4980-af29-fed237c7b95a",
+      "result_id": "56319b11-a13e-432c-b9e5-57bb32bc0406"
+    },
+    {
+      "claim_id": "818bb9c7-87c7-47ca-9411-ea16b9e96548",
+      "result_id": "56319b11-a13e-432c-b9e5-57bb32bc0406"
+    },
+    {
+      "claim_id": "5345b09f-c10a-4e1a-98f4-934e639db8da",
+      "result_id": "56319b11-a13e-432c-b9e5-57bb32bc0406"
+    },
+    {
+      "claim_id": "0bc0ecda-039a-4ca2-ace1-ec8578680b43",
+      "result_id": "56319b11-a13e-432c-b9e5-57bb32bc0406"
+    },
+    {
+      "claim_id": "e8619ef6-478d-450b-92d8-2774e1d33042",
+      "result_id": "56319b11-a13e-432c-b9e5-57bb32bc0406"
+    },
+    {
+      "claim_id": "de33f293-65c0-4483-b90e-e1676b9dbc5d",
+      "result_id": "56319b11-a13e-432c-b9e5-57bb32bc0406"
+    }
+  ],
+  "comparisons": []
+}

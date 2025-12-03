@@ -1,0 +1,1608 @@
+{
+  "submission": {
+    "id": "b48403fd-e28f-41cc-b123-3d20746a4a90",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T15:46:46.010717Z",
+    "updated_at": "2025-12-03T15:46:46.010717Z"
+  },
+  "content": [
+    {
+      "id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "submission_id": "b48403fd-e28f-41cc-b123-3d20746a4a90",
+      "content_type": "manuscript",
+      "content_text": "# Photonic hyperthermia of malignant peripheral nerve sheath tumors at the third near-infrared biowindow\n\n## Authors\n\n- Yihui Gu<sup>1</sup> ([ORCID: 0000-0002-9321-1768](https://orcid.org/0000-0002-9321-1768))\n- Zhichao Wang<sup>1</sup>\n- Chengjiang Wei<sup>1</sup>\n- Yuehua Li<sup>1</sup>\n- Wei Feng<sup>2</sup>\n- Wei Wang<sup>1</sup>\n- Meiqi Chang<sup>3</sup> ([ORCID: 0000-0003-2211-4044](https://orcid.org/0000-0003-2211-4044)) \u2020\n- Yu Chen<sup>2</sup> \u2020\n- Qingfeng Li<sup>1</sup> ([ORCID: 0000-0001-7822-618X](https://orcid.org/0000-0001-7822-618X)) \u2020\n\n### Affiliations\n\n1. Department of Plastic and Reconstructive Surgery, Shanghai Ninth People\u2019s Hospital, Shanghai Jiao Tong University School of Medicine Shanghai China ([ROR:0220qvk04](https://ror.org/0220qvk04))\n2. School of Life Sciences, Shanghai University Shanghai China ([ROR:006teas31](https://ror.org/006teas31))\n3. State Key Laboratory of High Performance Ceramics and Superfine Microstructure, Shanghai Institute of Ceramics, Chinese Academy of Sciences Shanghai China ([ROR:05etnz140](https://ror.org/05etnz140))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:Malignant peripheral nerve sheath tumors (MPNSTs) are aggressive sarcomas that typically carry a dismal prognosis. Given the insensitivity of these tumors to traditional chemotherapy and the absence of effective targeted drugs, new therapeutic strategies are urgently needed. Photothermal therapy (PTT) including near-infrared laser at the third biowindow (NIR-III) has demonstrated significant potential in cancer theranostics due to its minimally invasive nature and excellent therapeutic outcomes. However, the passive utilization of photothermal agents (PTAs) with poor target specificity and biocompatibility substantially hinders the clinical translation and application of this method.Methods:We evaluated the efficiency, safety, and underlying mechanisms of NIR-III without PTAs in the treatment of MPNSTs. The photothermal performance and tissue penetration capability of the NIR-III laser were evaluated in human MPNST cell lines using CCK-8, Calcein-AM and propidium iodide (PI) staining, and Annexin V-FITC/PI assays. The tumor xenografted mice model was used for evaluating the efficacy and biosafety of NIR-III photothermal ablation. Finally, the underlying mechanisms of NIR-III treatment, explored by whole-transcriptome sequencing, are further verified by RT-qPCR.Results:We found that although the NIR-III photothermal treatment efficiency varied among individuals, which was possibly influenced by different endoplasmic reticulum stress responses, the expected antineoplastic effect was ultimately achieved after adjustment of the power density and radiation duration.Conclusions:The present study provides an intriguing noninvasive therapy for MPNSTs that accelerates the clinical translation of PTT while avoiding the biocompatibility issues arising from PTAs.Funding:This work was supported by grants from National Natural Science Foundation of China (82102344; 82172228); Shanghai Rising Star Program supported by Science and Technology Commission of Shanghai Municipality (20QA1405600); Natural Science Foundation of Shanghai (22ZR1422300); Science and Technology Commission of Shanghai Municipality (19JC1413) ; \u201cChenguang Program\u201d supported by Shanghai Education Development Foundation (SHEDF) (19CG18); Shanghai Municipal Key Clinical Specialty (shslczdzk00901); Innovative research team of high-level local universities in Shanghai (SSMU-ZDCX20180700).\n\n## Introduction\n\nMalignant peripheral nerve sheath tumors (MPNSTs) are aggressive soft-tissue sarcomas that arise within peripheral nerves. MPNSTs, which affect approximately 10% of patients with neurofibromatosis type 1 (NF1) and cause severe organ damage, are associated with high morbidity (Mowery and Clayburgh, 2019; Widemann, 2009). Chemotherapy and radiotherapy provide only limited benefits to MPNST patients, and there is no targeted therapy approved for clinical use (Vitolo et al., 2019; van Noesel et al., 2019; Kroep et al., 2011). The key to improving the prognosis of MPNST patients is extended resection with negative surgical margins, which still faces problems such as the difficulty of surgery, high risk of local recurrence, and distant metastasis (Widemann and Italiano, 2018). There is thus a very large unmet medical need to develop efficient therapeutic strategies for MPNSTs.\n\nPhotothermal therapy (PTT), a minimally invasive, highly specific, and temporally and spatially selective local treatment modality, has gained increasing attention in the field of cancer theranostics, including for the treatment of MPNSTs (Huang and Lovell, 2017). Traditional PTT contains two elements: photothermal agents (PTAs) and lasers. PTAs can be grouped into inorganic and organic materials. Inorganic PTAs include noble metal materials (e.g., Au, Pd, Pt, etc.) (Tang et al., 2014; Shi et al., 2016a), metal chalcogenide materials (e.g., Ag2S, CuS, Cu2-xSe, etc.) (Sheng et al., 2018), carbon-based materials (e.g., carbon nanotubes, carbon dots, and graphene) (Xu et al., 2018), and graphene analogs (two-dimensional transition metal carbides/nitrides [MXenes], two-dimensional monoelemental materials [Xenes], hexagonal boron nitride, carbon nitride, and transition metal dichalcogenides) (Luo et al., 2018; Thapa et al., 2016). However, inorganic PTAs have intrinsic issues such as poor biodegradability, disappointing processability, and apparent cytotoxicity. Organic PTAs include mainly small molecules (e.g., cyanine, porphyrin, phthalocyanine, croconaine, boron dipyrromethene, etc.) (Bhattarai and Dai, 2017; Cao et al., 2017; Pan et al., 2019) and semiconducting polymer-based nanoparticles (e.g., polyaniline, polypyrrole, etc.) (Xia et al., 2017; Yang et al., 2018; Ma et al., 2019). Although the advantageous properties of organic agents include distinct biodegradability and biocompatibility, optimization of photothermal conversion efficiency and photothermal stability is highly challenging (Liu et al., 2019). Therefore, both organic and inorganic PTAs significantly hinder the clinical application of PTT (Yuan et al., 2013).\n\nNear-infrared (NIR) lasers, which represent a promising type of PTT-related laser, play significant roles in addressing the demand for superficial tumor therapy due to their biowindow characteristics, which include a lower background signal and higher tissue penetration depth than those of other biowindows (Lin et al., 2017). NIR light can be divided into four distinct regions according to wavelength: NIR-I (700\u2013950 nm), NIR-II (1000\u20131350 nm), NIR-III (1600\u20131870 nm), and NIR-IV (2100\u20132300 nm) (Sordillo et al., 2017). The latest research on light-responsive wavelengths for PTT has focused mainly on NIR-I and NIR-II biowindows in combination with NIR lasers and wavelength-matched PTAs (Guo et al., 2018; Feng et al., 2019). The evidence regarding NIR-III lasers remains comparatively limited in the field of PTT. Compared with NIR-I and NIR-II lasers, NIR-III lasers possess relatively high penetration depths and low optical scattering effects (Horton et al., 2013). The total attenuation lengths of human prostate and breast cancer have been revealed to be higher in the NIR-III optical windows than in the other NIR regions, confirming the potential for application of NIR-III lasers in tumor therapy (Choi et al., 2016).\n\nThe majority of MPNSTs are located on the body surface including head, neck, and extremity (Le Guellec et al., 2016). Therefore, it could be boldly speculated that NIR-III laser would effectively induce photothermal ablation of MPNSTs due to their surface layout characteristics. Sordillo et al., 2017 previously demonstrated that NIR-III treatment appears to involve a better wavelength range for tissue containing high collagen than conventional NIR-I treatment. In addition, a previous genetic profiling study has revealed that collagen expression is significantly upregulated in MPNSTs (Karube et al., 2006). Therefore, the photothermal effects of NIR-III could be more concentrated in MPNSTs than in adjacent normal skin and soft tissue. Moreover, the safety of NIR-III has been widely demonstrated in various medical applications, including optical imaging (Shi et al., 2016b), eye disease treatment (Sakimoto et al., 2006), and even cosmetic treatments (Adatto et al., 2017). In summary, the potential therapeutic effectiveness and desirable safety of NIR-III treatment will likely accelerate its clinical application compared with that of traditional photothermal theranostic methods. Although the application of NIR-III for PTT has not yet been demonstrated in MPNSTs, the existing data further strengthen our expectation that NIR-III laser can be used for PTT of tumors without the utilization of PTAs.\n\nIn this work, with the aim of reducing the pain of MPNST patients (Figure 1a\u2013b) and avoiding the intrinsic drawbacks of PTAs and the aforementioned critical problems, we performed PTT using a 1650 nm NIR-III laser in a simple manner without the addition of PTAs (Figure 1\u2014figure supplement 1). The relatively high collagen content of MPNSTs ensure the efficiency of photothermal tumor ablation and make the NIR-III laser a suitable and potent therapeutic modality that has potential for use in clinical applications. In principle, the photothermal conversion of the NIR-III laser is attributed to the thermal molecular movement of the irradiated object after laser irradiation. In addition, the power safety limit for the NIR-III laser is higher than that for NIR-I and NIR-II lasers, which in turn leads to efficient and safe tumor ablation (Figure 1c\u2013d). Both in vitro and in vivo results indicate that the photothermal conversion ability of the NIR-III laser is enough to rapidly ablate cancer cells, which affirms the antineoplastic effect of NIR-III PTT. This PTAs-free PTT strategy possesses unique advantages for the development of clinical application and the improvement of patient prognosis due to the excellent biocompatibility and predominant photothermal conversion efficiency of NIR-III laser.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/75473/elife-75473-fig1-v2.jpg)\n\n**Figure 1.:** (a) Photograph and (b) magnetic resonance images of malignant peripheral nerve sheath tumor (MPNST) patient. (c) Classification of four near-infrared (NIR) wavelength regions for biomedical applications. (d) Schematic illustration of NIR-III laser (1650 nm) tumor photothermal therapy (PTT) through photothermal ablation without the addition of photothermal agents (PTAs).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75473/elife-75473-fig1-figsupp1-v2.jpg)\n\n## Materials and methods\n\n### Materials and reagents\n\nDulbecco\u2019s modified Eagle\u2019s medium (DMEM), fetal bovine serum (FBS), and penicillin/streptomycin were purchased from Gibco, USA. A Cell Counting Kit-8 (CCK-8) and Calcein/PI Cell Viability/Cytotoxicity Assay Kit were purchased from Dojindo, JP. A FITC-Annexin V Apoptosis Detection Kit was purchased from BD Biosciences, USA.\n\n### Photothermal performance of the NIR-III laser\n\nThe laser was customized by Shanghai Xilong Optoelectronics Technology Co., Ltd. The characteristics of the NIR-III laser were tested and verified as described in Supplementary file 1. To investigate the photothermal performance of the NIR-III laser, deionized water was irradiated by the NIR-III laser at different power densities (0.25, 0.5, 0.75, 1, 1.25, and 1.5 W cm\u20132) for 15 min. The surfaces of chicken breasts with different thicknesses (0, 2, 4, 6, 8, and 10 mm) was irradiated by the NIR-III laser at different power densities (0.25, 0.5, 0.75, 1, 1.25, and 1.5 W cm\u20132) for 10 min. Fat of different thicknesses (0, 2, 4, 6, 8, and 10 mm) was also irradiated by the NIR-III laser at different power densities (0.25, 0.5, 0.75, 1, 1.25, and 1.5 W cm\u20132) for 10 min. Temperature changes were monitored by an infrared thermal camera, and the relevant data were analyzed with AnalyzIR software. In addition, to compare the photothermal performance of lasers with different wavelengths, deionized water was also irradiated by 808, 980, and 1064 nm lasers with different power densities (0.25, 0.5, 0.75, 1, 1.25, and 1.5 W cm\u20132) for 10 min.\n\n### Cell lines and cell culture\n\nTwo MPNST cell lines (STS26T and S462) were generously donated by Dr Vincent Keng. S462 was derived from an NF1-MPNST patient, whereas STS26T was derived from a sporadic MPNST patient. The two MPNST cell lines were maintained in high-glucose DMEM with 10% FBS and 1% penicillin/streptomycin in a 37\u00b0C, 5% CO2 incubator providing a humidified atmosphere. The culture medium was replaced every 3 days, and the cells were passaged using 0.25% trypsin until they approached 80% confluence. All cell lines were tested mycoplasma negative every 3 months. Verification of cell lines was confirmed by Short Tandem Repeat DNA profiling (Applied Biological Materials Inc, Canada).\n\n### Cell viability assays\n\nA CCK-8 cell viability assay was implemented to assess the photothermal ablation effect and penetration capability of the NIR-III laser. MPNST cells (STS26T and S462) were seeded at a density of 10,000 cells per well in 96-well cell culture plates and cultured overnight for adherence. The adherent cells were irradiated by the NIR-III laser at different power densities (0.25, 0.5, 0.75, 1, 1.25, 1.5 W cm\u20132) for 5 and 10 min. The cells were irradiated by the NIR-III laser at a power density of 0.5 or 1 W cm\u20132 for 5 min with chicken skin of different thicknesses (2, 4, and 6 mm) covered on the culture plates. After the different irradiation protocols, the cells were incubated at 37\u00b0C under 5% CO2 for 30 min. Subsequently, the culture medium was replaced with 100 \u00b5l of DMEM containing 10 \u03bcl of CCK-8 reagent per well, and the cells were incubated for 2 hr at 37\u00b0C. The absorbance was recorded at 450 nm.\n\n### Confocal laser scanning microscopy\n\nConfocal laser scanning microscopy (CLSM) imaging was also performed to further evaluate the photoinduced damage caused by the NIR-III laser in MPNST cells. STS26T and S462 cells were seeded on coverslips in 96-well cell culture plates and cultured overnight for adherence. After the different treatments mentioned above, the cells were rinsed with phosphate-buffered saline (PBS) three times and stained with calcein-AM and PI in PBS for 15 min in a CO2 incubator. After 15 min of staining, the cells were washed three times with PBS and then observed and recorded by CLSM (Ex: 488 nm, Em: 515 nm for live cells; Ex: 535 nm, Em: 617 nm for dead cells).\n\n### Flow cytometry\n\nAn Annexin V-FITC/propidium iodide (PI) assay was employed to detect apoptotic and necrotic cells. MPNST cells (STS26T and S462) were seeded in 96-well cell culture plates (5\u00d7104 cells suspended in 100 \u00b5l of culture medium per well) and irradiated by the NIR-III laser for different durations (2, 5, and 10 min) at different power densities (0.5 and 1 W cm\u20132). The NIR-III laser was focused on the middle of each plate. Similar experiments were also conducted in 24-well cell culture plates (2\u00d7105 cells suspended in 400 \u00b5l of culture medium per well). After photothermal treatment with the NIR-III laser, 1\u00d7105 MPNST cells (STS26T and S462) were resuspended in 100 \u03bcl of binding buffer, and 5 \u03bcl of Annexin V-FITC and 5 \u03bcl of PI were added sequentially. The stained cells were incubated at room temperature in the dark for 15 min and then analyzed using a flow cytometer (Beckman Coulter, Shanghai) equipped with CytExpert software. The cells were divided into viable cells, early apoptotic cells, late apoptotic or dead cells, and necrotic cells.\n\n### Animal xenograft tumor model\n\nFour-week-old male immunodeficient athymic nude mice were purchased from Shanghai Model Organisms Co., Ltd. (Shanghai, China). All animals received humane care in compliance with the guidelines outlined in the Guide for the Care and Use of Laboratory Animals. All procedures were performed in accordance with the guidelines approved by the Shanghai Medical Experimental Animal Care Commission (IACUC: 2019-0008). The MPNST cell line STS26T and S462 was used to establish a cell line-based xenograft model. A total of 5\u00d7106 STS26T cells or 1\u00d7107 S462 cells suspended in 100 \u00b5l of PBS were engrafted subcutaneously on the back of each mouse.\n\n### Tumor temperature monitoring during laser irradiation\n\nTo investigate the in vivo photothermal performance of the NIR-III laser, the temperatures of STS26T and S462 xenografts irradiated at two different power densities (0.5 and 1 W cm\u20132) were monitored after different irradiation durations (0, 2, 4, 6, 8, and 10 min). The temperature changes were monitored by an infrared thermal camera, and the relevant data were analyzed with AnalyzIR software.\n\n### Deep-tissue PTT\n\nThe tissue penetration ability of the NIR-III laser for photothermal ablation was assessed. When the tumor volume reached approximately 1500 mm3, the STS26T tumor-bearing mice were irradiated at two different power densities (0.5 and 1 W cm\u20132) for 5 min. The tumors were harvested 10 hr post treatment and sectioned into slices at different depths (1.5, 3, 4.5, 6, 7.5 mm). The sections were stained with H&E or with antibodies against Cleaved-Caspase 3 and Ki-67 for further histological analysis.\n\n### In vivo PTT\n\nThe efficacy and safety of NIR-III PTT were evaluated simultaneously. When the average tumor volume reached 100 mm3, the STS26T tumor-bearing mice were divided into three groups: the control group, the low-power density group (0.5 W cm\u20132), and the high-power density group (1 W cm\u20132). All mice were anesthetized before receiving NIR-III laser irradiation for 5 min. After the treatment, a proportion of the mice in three groups were euthanized and the tumors were harvested for histological analysis. The rest of the mice were closely observed for the changes in tumors and health over the next 15 days. The tumor sizes were measured by a digital caliper every 2 days, and the tumor volumes were calculated with the equation 0.5 \u00d7 L \u00d7 W2, where L is the longest diameter and W is the width. The mice were euthanized once the tumor volume reached 1500 mm3 or the maximum diameter of the tumor reached 2 cm. The body weights were also recorded every 2 days to reflect the health of the mice. After close observation for 15 days, all tumors were excised and weighed, and then the major organs were dissected and processed by using H&E staining for histological evaluation.\n\n### Histology and immunohistochemistry\n\nTissue processing, embedding, and sectioning were performed by Biosci Biotechnology. The paraffin sections were stained with H&E, TUNEL, a Ki-67 antibody and a Cleaved-Caspase 3 antibody for histological analysis according to standard protocols with minor modifications due to antibody optimization. Commercially available antibodies were utilized for immunohistochemical staining of Ki-67 (1:400, 9449, Cell Signaling Technology) and Cleaved-Caspase 3 (1:500, 9664, Cell Signaling Technology). A TUNEL Apoptosis Detection Kit (FITC) (40306ES20, Yeasen Biotech) was used for TUNEL staining.\n\n### RNA-seq analysis\n\nTo explore the transcriptional alterations of MPNST after the NIR-III treatment, RNA-seq analysis was conducted in STS26T and S462 xenografts. After the successful establishment of the xenografts, the tumor-bearing mice were anesthetized and irradiated at two different power densities (0.5 and 1 W cm\u20132) for 5 min. Immediately after the treatment, the mice in two treatment groups and control group were euthanized and the tumors were harvested for RNA-seq analysis (n=1 for each group) and RT-qPCR analysis. Total RNA of the tumors was extracted using TRIzol reagent (Invitrogen) according to the manufacturer\u2019s instructions. RNA-seq data were generated using an Illumina HiSeq platform. A reference genome and gene model annotation files were downloaded directly from the genome website. STAR (v2.5.1b) was used to build an index of the reference genome and to align the paired-end clean reads to the reference genome. STAR uses the Maximal Mappable Prefix (MMP) method, which can generate precise mapping results for junction reads. HTSeq v0.6.0 was used to count the reads numbers mapped to each gene. And then FPKM (the fragments per kilobase of transcript per million mapped reads) of each gene was calculated based on the length of the gene and reads count mapped to this gene. Prior to differential gene expression analysis, for each sequenced library, the read counts were adjusted by the edgeR program package with one scaling normalization factor. Differential expression analysis between two conditions was performed using the edgeR R package (v3.12.1). The p-values were adjusted using the Benjamini & Hochberg method. padj <0.05, |LFC|>1, and FPKM >1 in at least one sample were set as the thresholds for significant differential expression.\n\n### Enrichment analysis\n\nGO enrichment analysis was performed with the clusterProfiler R package with correction for gene length bias. GO terms with corrected p-values less than 0.05 were considered significantly enriched. The KEGG is a database resource for understanding the high-level functions and utilities of biological systems, such as cells, organisms, and ecosystems, from molecular-level information, especially large-scale molecular datasets generated by genome sequencing and other high-throughput experimental techniques (http://www.genome.jp/kegg/). We used the clusterProfiler R package to test the statistical enrichment in KEGG pathways.\n\n### Statistical analysis\n\nStatistical analysis was conducted using Prism 8.0 (GraphPad Software, San Diego, CA). The statistical analyses included the chi-square test, Student\u2019s t-test, and one-way ANOVA, as appropriate. p-values <0.05 were considered to indicate statistical significance, and asterisks (*) are used to indicate significant differences between two specified groups. ** indicates a p-value <0.01, while *** indicates a p-value <0.001. p-Values >0.05 qualified as not statistically significant.\n\n## Results\n\nThe 1650 nm NIR-III laser used in this work was composed of laser diodes, a collimator lens, a photodetector, a spectroscope, focusing lenses, and an optical fiber interface (Figure 2a). The relevant laser parameters are listed in Supplementary file 1. The photothermal effectiveness of the NIR-III laser was initially evaluated by measuring the temperature changes of an aqueous solution. A schematic diagram and the equipment are shown in Figure 2b. The temperature of the aqueous solution increased gradually with increasing irradiation time and power density (Figure 2c\u2013d). Notably, the 1.5 W cm\u20132 laser caused an ~40\u00b0C temperature increase within 10 min.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/75473/elife-75473-fig2-v2.jpg)\n\n**Figure 2.:** (a) Circuit diagram of the NIR-III laser. (b) Schematic diagram and equipment for detection of the photothermal effectiveness of the NIR-III laser. (c) Photothermal images of aqueous solutions irradiated for various durations with a 1650 nm laser at different power densities. (d) Temperature curves of aqueous solutions irradiated by a 1650 nm laser at different power densities.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75473/elife-75473-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Photothermal images of aqueous solutions irradiated for various durations by an 808 nm laser (NIR-I) at different power densities. (b) Temperature curves of water irradiated by the NIR-I laser at different power densities.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/75473/elife-75473-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a) Photothermal images of aqueous solutions irradiated for various durations by a 980 nm laser (NIR-II) at different power densities. (b) Temperature curves of aqueous solutions irradiated by the NIR-II laser at different power densities.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/75473/elife-75473-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (a) Photothermal images of aqueous solutions irradiated for various durations by a 1064 nm laser (NIR-II) at different power densities. (b) Temperature curves of aqueous solutions irradiated by the NIR-II laser at different power densities.\n\nTo further distinguish the photothermal efficiencies of lasers in different biowindows, the temperature changes of aqueous solutions irradiated by NIR-I (808 nm) and NIR-II (980 and 1064 nm) lasers at different power densities were also recorded. For the NIR-I group, adjustment of the laser power had a negligible effect on the change in aqueous solution temperature (Figure 2\u2014figure supplement 1). In contrast, in the NIR-II group, an increase in power density elevated the aqueous solution temperature to a certain extent. However, the maximum temperature difference was controlled within 15\u00b0C regardless of the duration (Figure 2\u2014figure supplements 2 and 3). The results above confirm the excellent photothermal performance of the NIR-III laser in comparison to traditional NIR-I and NIR-II lasers.\n\nThe NIR-III laser must penetrate skin and subcutaneous fat before it can produce a tumor ablation effect. Therefore, we further evaluated the tissue penetration capability of the NIR-III laser using different biological tissue models (Figure 3a). First, the dependence of the temperature increment on power density was evaluated in chicken breast models (Figure 3b and c). The temperature of the chicken breast surface rapidly increased from 27.2\u00b0C to 76.7\u00b0C within 10 min under NIR-III laser irradiation (1.5 W cm\u20132). In addition, the results of photothermal penetration experiments further validated the highly efficient photothermal performance of the NIR-III laser, as shown in Figure 3d and e. The difference between the temperature at 0 s and the temperature at 600 s (\u0394T) was still over 10\u00b0C even when a chicken breast of 10 mm thickness was used to block the radiation. Similar results were obtained in the pig fat penetration experiments, namely, the extent of the temperature change was proportional to the power density and inversely proportional to the fat thickness (Figure 3f\u2013i). Notably, temperature range (36.6\u201391.1\u00b0C) varied with laser power and fat thickness. In addition, the temperature alterations at various tissue depths indicated that similar attenuation of photothermal efficiency could be obtained regardless of whether the biological tissue was chicken breast or pig fat (Figure 3j).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/75473/elife-75473-fig3-v2.jpg)\n\n**Figure 3.:** (a) Schematic diagram for detection of the tissue penetration capability of the NIR-III laser. (b\u2013c) Temperature curves (b) and photothermal images (c) of chicken breast surfaces irradiated by the NIR-III laser at different power densities. (d\u2013e) Temperature curves (d) and photothermal images (e) of chicken breasts with different thicknesses irradiated by the NIR-III laser at 1.0 W cm\u20132. (f\u2013g) Temperature curves (f) and photothermal images (g) of pig fat surfaces irradiated for various durations with the NIR-III laser at different power densities. (h\u2013i) Temperature curves (h) and photothermal images (i) of pig fat with different thicknesses irradiated for various durations with the NIR-III laser at 1.0 W cm\u20132. (j) Bar graphs of temperature changes in chicken breast and pig fat of different thicknesses caused by NIR-III laser irradiation for 600 s.\n\nTwo representative MPNST cell lines, STS26T and S462, were utilized for in vitro experiments. First, the influences of power density and irradiation time on the anticancer efficacy of the NIR-III laser were assessed in STS26T cells (Figure 4a). In the 5 min group, the 0.25 W cm\u20132 NIR-III laser induced a 25% reduction in cell viability, while lasers with higher power density all exhibited a strong killing effect. In the 10 min group, NIR-III irradiation caused maximum cell death regardless of the power density. In addition, the tumor killing efficiency of the NIR-III laser at different penetration depths was also evaluated. The NIR-III laser (1 W cm\u20132) demonstrated almost 100% cell killing efficiency after penetrating chicken skin thickness of 4 mm (Figure 4b). Similar results were obtained in the S462 cell groups (Figure 4c and d). A significant increase in S462 cell viability was observed with a chicken skin thickness of 6 mm. For a more thorough examination, calcein-AM/propidium iodide (PI) assays were implemented to investigate the relationship between power density/irradiation time and cell viability. The results demonstrated that significant cell death occurred in NIR-III (0.5 W cm\u20132, 5 min) group, the NIR-III (1 W cm\u20132, 2 min) group, and the NIR-III (1 W cm\u20132, 5 min) groups in both STS26T and S462 cells (Figure 4e and f, Figure 4\u2014figure supplement 1). In addition, consistent results were obtained through flow cytometric analysis. For the NIR-III (1 W cm\u20132, 2 min), NIR-III (1 W cm\u20132, 5 min), NIR-III (1 W cm\u20132, 10 min), NIR-III (0.5 W cm\u20132, 5 min), and NIR-III (0.5 W cm\u20132, 10 min) groups, the late apoptotic and dead cell populations reached almost 100%, confirming the outstanding photothermal ablation effect of the NIR-III laser (Figure 4g and h). To support clinical applications, the optimal power density and irradiation time should be investigated to maximize the tumor ablation efficiency of the NIR-III laser.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/75473/elife-75473-fig4-v2.jpg)\n\n**Figure 4.:** (a, c) Relative viabilities of STS26T cells (a) and S462 cells (c) seeded in 96-well culture plates and subjected to various durations of irradiation with the NIR-III laser at different power densities. (b, d) Relative viabilities of STS26T cells (b) and S462 cells (d) treated with the NIR-III laser (0.5 and 1 W cm\u20132) under different chicken skin thickness. All data are presented as mean \u00b1 SD and were analyzed with the unpaired t-test (n=3). (e\u2013f) Confocal laser scanning microscopy (CLSM) images of STS26T cells (e) and S462 cells (f) costained with calcein-AM (green) and propidium iodide (PI) (red) after different treatments. (g\u2013h) Flow cytometric analysis using Annexin V-FITC/PI kits in STS26T cells (g) and S462 cells (h) after different treatments. *p<0.05,**p<0.01, and ***p<0.001.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75473/elife-75473-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** All data are presented as mean \u00b1 SD and were analyzed with the unpaired t-test (n=3). \u2018NS\u2019 indicates \u2018not significant\u2019. *p<0.05, **p<0.01, and ***p<0.001.\n\nSTS26T and S462 MPNST xenograft mouse models were constructed to explore the capacity of the NIR-III laser at 0.5 and 1.0 W cm\u20132 to alter temperature and achieve photothermal ablation in vivo, as shown in Figure 5a\u2013d. In the STS26T xenograft model (Figure 5a and b), the tumor temperature increased from 32.9\u00b0C and 33.9\u00b0C to 60.2\u00b0C and 75.4\u00b0C within 10 min of irradiation at the low (\u0394T=27.3\u00b0C) and high (\u0394T=41.5\u00b0C) power densities, respectively. Additionally, after adjustment of the laser power density and irradiation time, similar increasing trends were observed in the S462 xenograft group for the low (\u0394T=18.6\u00b0C) and high (\u0394T=30.7\u00b0C) power densities (Figure 5c and d). The excellent photothermal performance in vivo further affirms the potential of the NIR-III laser.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/75473/elife-75473-fig5-v2.jpg)\n\n**Figure 5.:** (a\u2013b) Temperature curves (a) and photothermal images (b) of STS26T tumor-bearing mice irradiated with the NIR-III laser at different power densities. Temperature curves (c) and photothermal images (d) of S462 tumor-bearing mice irradiated with the NIR-III laser at different power densities. (e) Schematic diagram for detection of the STS26T tumor tissue penetration capability of the NIR-III laser. (f\u2013h) Hematoxylin and eosin (H&E) staining for pathological changes (f) anti-Cleaved-Caspase 3 immunohistochemical staining for apoptosis (g) and anti-Ki-67 immunohistochemical staining for cellular proliferation (h) at different depths (1.5, 3, 4.5, 6, and 7.5 mm) of dissected STS26T tumor tissues from the NIR-III (0.5 W cm\u20132, 5 min) group and the NIR-III (1 W cm\u20132, 5 min) group.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75473/elife-75473-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** All data are presented as mean \u00b1 SD and were analyzed with the unpaired t-test (n=3). \u2018NS\u2019 indicates \u2018not significant\u2019. *p<0.05 and **p<0.01.\n\nTo further evaluate the in vivo tissue penetration depth of NIR-III photothermal ablation, STS26T xenograft tissues were dissected, and histological changes, apoptosis, and cell proliferation were observed at different depths (Figure 5e). It was revealed that effective photothermal ablation of subcutaneous xenograft tumors could be achieved at a depth of 4.5 mm in the NIR-III (0.5 W cm\u20132, 10 min) group. However, in the NIR-III (1 W cm\u20132, 10 min) group, the effective photothermal ablation depth was over 7.5 mm, as revealed by hematoxylin and eosin (H&E) staining, Ki-67 immunohistochemical staining, and Cleaved-Caspase 3 immunohistochemical staining (Figure 5f\u2013h) and the corresponding statistic analysis (Figure 5\u2014figure supplement 1). Therefore, it could be concluded that a higher power density is correlated with better therapeutic efficiency and outcomes.\n\nTo simultaneously evaluate the efficacy and safety of NIR-III PTT, further in vivo PTT experiments were conducted when the tumor volume reached approximately 100 mm3. The STS26T tumor-bearing mice were divided into three groups: the control group, the NIR-III (0.5 W cm\u20132, 5 min), group and the NIR-III (1 W cm\u20132, 5 min) group. The tumor volume of each mouse was recorded every other day (Figure 6a). Two days after photothermal ablation treatment, the tumors in the two treated groups could no longer be observed with the naked eye and had been replaced by black scars. However, four out of seven mice in the NIR-III (0.5 W cm\u20132, 5 min) group had tumor recurrence after 15 days. In comparison, the tumors in the NIR-III (1 W cm\u20132, 5 min) group were completely eradicated (Figure 6b and c). In conclusion, the long-term effectiveness evaluation confirmed that the NIR-III (1 W cm\u20132, 5 min) treatment group had the best outcome in terms of survival rate in STS26T tumor-bearing mice (Figure 6d and e). Pathological changes revealed by H&E staining and TdT-mediated dUTP-biotin nick and labeling (TUNEL) staining in tumor slices are shown in Figure 6g. More necrotic regions were observed in the NIR-III (1 W cm\u20132, 5 min) group than in the NIR-III (0.5 W cm\u20132, 5 min) group. In addition, apoptosis occurred in the NIR-III (0.5 W cm\u20132, 5 min) group according to TUNEL assays, but the apoptosis in the NIR-III (1 W cm\u20132, 5 min) group was more obvious (Figure 6\u2014figure supplement 1).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/75473/elife-75473-fig6-v2.jpg)\n\n**Figure 6.:** (a) Time-dependent tumor growth curves for the control, NIR-III (0.5 W cm\u20132, 5 min), and NIR-III (1 W cm\u20132, 5 min) groups. (b) Tumor weights for tumor-bearing nude mice after different treatments. All data are presented as mean \u00b1 SD and were analyzed with the unpaired t-test (n=7). \u2018NS\u2019 indicates \u2018not significant\u2019. (c) Photographs of STS26T tumor-bearing mice and their tumor regions at 1, 3, 7, 11, and 15 days after different treatments. (d\u2013e) Overall survival (OS) curves (d) and recurrence-free survival (RFS) curves (e) of mice after various treatments (n=7, p-value, log-rank test). (f) Time-dependent body weight curves of nude mice after different treatments (n=7). (g) Hematoxylin and eosin (H&E) staining and TdT-mediated dUTP-biotin nick and labeling (TUNEL) staining for pathological changes in tumor tissues from each group. *p<0.05.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75473/elife-75473-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** All data are presented as mean \u00b1 SD and were analyzed with the unpaired t-test (n=3). **p<0.01 and ***p<0.001.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/75473/elife-75473-fig6-figsupp2-v2.jpg)\n\nFurthermore, to test the biosafety of NIR-III treatment, major organs, including the heart, liver, spleen, lungs, and kidneys were collected, and sliced for H&E staining (Figure 6\u2014figure supplement 2). No significant pathological toxicity was observed in the two groups treated with PTT, and all of the mice demonstrated negligible weight fluctuations (Figure 6f), confirming that NIR-III-induced photothermal ablation had negligible adverse effects.\n\nTo explore the underlying mechanisms of the effects of NIR-III treatment, whole-transcriptome sequencing was performed on S462 and STS26T xenograft tumors from the control, NIR-III (0.5 W cm\u20132, 5 min), and NIR-III (1 W cm\u20132, 5 min) groups. In STS26T tumors, significant transcriptional alterations were observed and were further analyzed (Figure 7a). Both upregulated and downregulated overlapping mRNAs were found in the NIR-III (0.5 W cm\u20132, 5 min) group and the NIR-III (1 W cm\u20132, 5 min) group compared with control group (Figure 7b). According to Kyoto Encyclopedia of Genes and Genomes (KEGG) enrichment analyses, the protein processing in endoplasmic reticulum (ER) pathway (hsa04141) were among the most enriched pathways (Figure 7c). Gene Ontology (GO) enrichment analysis of the genes related to the protein processing in ER pathway (hsa04141) was further performed, which revealed that the key biological processes including the ubiquitin-dependent protein catabolic process, the response to unfold protein were enriched, indicating that NIR-III treatment could lead to ER stress in STS26T xenograft tumors (Figure 7d).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/75473/elife-75473-fig7-v2.jpg)\n\n**Figure 7.:** (a) Heatmap of the mRNA screening data for STS26T tumors with or without NIR-III laser treatment at the indicated power densities. Blue indicates a low abundance of mRNA, and red indicates a high abundance. (b) Venn diagram showing the intersection of differentially expressed transcripts (DETs) in 0.5 and 1 W cm\u20132 NIR-III laser treatment group. (c) Top 20 pathways revealed by Kyoto Encyclopedia of Genes and Genomes (KEGG) functional enrichment among DETs simultaneously upregulated or downregulated in the NIR-III (0.5 W cm\u20132, 5 min) and NIR-III (1 W cm\u20132, 5 min) groups. The color indicates the q value; red represents a lower q value, while green represents a higher q value. A lower q value indicates more significant enrichment. The point size indicates the number of DET-related genes. (d-e) Gene Ontology (GO) functional enrichment (d) and protein-protein interaction network (e) of the genes enriched in the protein processing in endoplasmic reticulum pathway. (f) mRNA expression levels of ATF4, ATF6B, HSPA1A, and P4HB were measured by RT-qPCR in the indicated groups. All data are presented as mean \u00b1 SD and were analyzed with the unpaired t-test (n=3). **p<0.01 and ***p<0.001.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75473/elife-75473-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (a) Gene Ontology (GO) functional enrichment and (b) protein-protein interaction network of the genes enriched in the protein processing in ubiquitin-mediated proteolysis pathway.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/75473/elife-75473-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** (a) Heatmap of the mRNA screening data for S462 tumors with or without NIR-III laser treatment at the indicated power density. (b) Venn diagram showing the intersections of genes induced and repressed by 0.5 and 1 W cm\u20132 NIR-III laser treatment. (c) Top 20 pathways revealed by Kyoto Encyclopedia of Genes and Genomes (KEGG) functional enrichment among the differentially expressed transcripts (DETs) simultaneously upregulated or downregulated in the NIR-III (0.5 W cm\u20132, 5 min) and NIR-III (1 W cm\u20132, 5 min) groups.\n\n![Figure 7\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/75473/elife-75473-fig7-figsupp3-v2.jpg)\n\nER stress is a condition during which a variety of pathological conditions including high temperature may impede the capacity of cells to properly fold secretory and transmembrane proteins in the ER and lead to the accumulation of misfolded proteins. Cells with ER stress can initiate a self-protection mechanism termed the unfolded protein response (UPR) that induces a set of transcriptional and translational events to restore ER homeostasis (Qi and Chen, 2019). To explore the specific mechanism, we investigated the interactions between ER pathway-related genes (Figure 7e). It could be found that the key transcription factors regulating the UPR (ATF4 and ATF6B) were among the top upregulated mRNAs related to protein processing in ER pathway (Supplementary file 2). RT-qPCR analysis also confirmed the significant upregulation of ATF4 and ATF6B in the NIR-III (0.5 W cm\u20132, 5 min) group and the NIR-III (1 W cm\u20132, 5 min) group (Figure 7f). It was demonstrated in previous studies that ATF4 and ATF6B contributed to stress relief and survival by inducing the expression of ER chaperones, which have critical functions in facilitating protein folding and assembly. We identified the most significantly upregulated ER chaperones genes P4HB and HSP1A1 and further confirmed the upregulation of these two genes using RT-qPCR (Figure 7f).\n\nIn addition to ER chaperones, the UPR regulated by ATF4 and ATF6 also upregulates the components of ER-associated degradation (ERAD). Proteins that do not properly fold within a certain time are targeted for ERAD, which efficiently retro-translocates them from the ER into the cytosol for degradation via the ubiquitin-proteasome system. According to KEGG enrichment analyses, the ubiquitin-mediated proteolysis pathway (hsa04120) was also enriched (Figure 7c). GO enrichment analyses revealed the related key biological processes including protein polyubiquitination (Figure 7\u2014figure supplement 1a). The interactions between ubiquitin-mediated proteolysis pathway-related genes are shown in Figure 7\u2014figure supplement 1b. The most significantly upregulated mRNAs including UBA3, UBE2E1, and HERC3 were listed in Supplementary file 3.\n\nTherefore, it can be speculated that the ER stress response (ERSR) enabled a proportion of STS26T cells to survive the NIR-III laser treatment through improving protein-folding capacity and ubiquitylating unfolded proteins.\n\nWhole-transcriptome sequencing and corresponding bioinformatics analyses were also performed on S462 cells (Figure 7\u2014figure supplement 2). However, the ER pathway was not enriched in the analyses, indicating that heterogeneity exists in response to NIR-III laser treatment among different MPNST cell types. Notably, STS26T cells exhibited stronger resistance to NIR-III laser treatment than S462 cells, as demonstrated by flow cytometric analysis (Figure 7\u2014figure supplement 3).\n\n## Discussion\n\nIn clinic, the main management for MPNSTs is still surgical resection with sufficient margins, which is often highly risky due to expected damage to adjacent nerves and neurovascular bundles. Therefore, it is applicable to combine preoperative NIR-III photothermal laser treatment and surgery to reduce the scope and the risk of surgery. In addition, postoperative local recurrence and distant metastasis are unfavorable factors affecting the outcomes of MPNST patients. The postoperative application of NIR-III laser treatment at the resection margin could be a potent modality to reduce the risk of local recurrence. However, further experiments and clinical studies are necessary for verification of the safety and effectiveness of these clinical applications.\n\nMechanically, it is possible that STS26T MPNST cells strongly enhanced the protein processing capacity of the ER to survive the ER stress induced by NIR-III laser treatment. The specific mechanism and regulatory networks need to be explored in the future. In addition, it is speculated that the combination of NIR-III laser treatment with an ER stress inhibitor (such as icariin or ghrelin) could potentially increase therapeutic effectiveness (Wang et al., 2019; Li et al., 2019), which should be further verified in future studies. Although the tumor ablation effect is influenced by individual differences in molecular response and treatment efficiency, an optimal effect can still be achieved by optimizing the power density and irradiation time of the NIR-III laser.\n\n### Conclusions\n\nIn summary, we developed a distinct NIR-III photothermal laser treatment for MPNSTs that does not involve traditional PTAs. The safety, effectiveness, and underlying mechanisms were systematically assessed both in vitro and in vivo, which verified the excellent antineoplastic effect originating from the remarkable photothermal conversion efficiency of the NIR-III laser. This work provides preclinical evidence for the effectiveness of NIR-III treatment against MPNSTs. Further clinical studies are needed to establish safe and optimal therapeutic parameters. It is expected that this PTAs-free NIR-III PTT approach may be further generalized for the treatment of other benign and malignant skin and soft-tissue tumors.\n",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "66c6d84c-66fb-468c-b0e0-dcdfeaa5e40e",
+      "submission_id": "b48403fd-e28f-41cc-b123-3d20746a4a90",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Wei Tao, https://ror.org/03vek6s52 Harvard University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75473.sa0](https://doi.org/10.7554/eLife.75473.sa0)\n\nLi et al. report on their effort in NIR-III laser-based photothermal therapy for MPNSTs treatment. Importantly, the biosafety issues of photothermal agents could be circumvented through the introduction of NIR-III laser with relatively high penetration depths and low optical scattering effects. in vitro and in vivo results corroborated the relevant conclusions. This work features high novelty on photonic tumor therapy.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Wei Tao, https://ror.org/03vek6s52 Harvard University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75473.sa1](https://doi.org/10.7554/eLife.75473.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Photonic hyperthermia of malignant peripheral nerve sheath tumors at the third near-infrared biowindow\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Wei Tao as Guest Editor and Reviewer #1, and the evaluation has been overseen by Wafik El-Deiry as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Gongwei Wu (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Please note Reviewer #2's comment on mechanism studies, which could provide more information for future readers \u2013 \"The mechanism studies in this manuscript provided some information, but a deeper investigation would improve this manuscript.\"\n\n2) Please note Reviewer #3's comment on comparison, which could highlight the novelty of this study \u2013 \"The tumor-therapeutic safety and efficacy of NIR-III laser is suggested to be compared with the traditional and mostly used NIR-I and NIR-II lasers in together with photothermal agents.\"\n\nReviewer #1 (Recommendations for the authors):\n\nLi et al. reported in this manuscript on their effort in NIR-III laser-based photothermal therapy for MPNSTs treatment. Importantly, the biosafety issues of photothermal agents could be circumvented through the introduction of NIR-III laser with relatively high penetration depths and low optical scattering effects. In vitro and in vivo results corroborated the relevant conclusions. This work features high novelty on photonic tumor therapy.\n\nReviewer #2 (Recommendations for the authors):\n\nMalignant peripheral nerve sheath tumors (MPNSTs) are a kind of dismal and relatively rare tumors that account for nearly 5% of the 15,000 soft tissue sarcomas diagnosed in the United States each year. Gu et al., developed a unique near-infrared laser at the third biowindow (NIR-III) photothermal therapy (PTT) method to treat MPNSTs without photothermal agents (PTAs), which eliminated the limitations of PTAs to the clinical practice and showed good efficacies in both some in vitro and in vivo MPNSTs models. Overall, the authors developed and applied a unique NIR-III PPT to treat MPNSTs and demonstrated its potential to translate it for the treatment of patients with MPNSTs.\n\nSome comments to strengthen this manuscript.\n\n1. It is great and the data is solid that the authors compared NIR-I, NIR-II and NIR-III, and showed NIR-III is suitable for the treatment of MPNSTs. A future study would be the optimization of the best biowindow/laser among NIR-III which would improve this manuscript and be good for clinical practice.\n\n2. The authors examined some major organs to test the biosafety of the treatment, however, the authors didn't examine the tissues near the tumor and the treatment spot, such as the tissues beside and behind the tumor/treatment spot.\n\n3. The mechanism studies in this manuscript provided some information, but a deeper investigation would improve this manuscript.\n\nSome detailed comments.\n\n1. This manuscript is somehow rough and lacks much detailed information, the authors should carefully revise the manuscript and provide that information to the readers. For example, how many S462 cells were subQ injected, which time point/when the tumor samples were collected for RNAseq, and how many biological replicates, the authors should add the biological replicates number for each experiment in all figure legends, how did Figure 3b and d were performed, and many and so on.\n\n2. The authors should provide more details about the RNAseq datasets and how did they analyze the data. Current analysis showed that more than 11,000 genes were up-regulated and more than 8,000 genes were down-regulated after NIR-III treatment with either 1 W cm-2 or 0.5 W cm-2, which means around 20,000 genes were significantly regulated, that's almost all of the genes were regulated since human just express around 20,000 genes. The qPCR result in Figure 6d showed that ATF4 only regulated to 1.2 times compared to the control after 0.5 W cm-2, which is obviously not significantly regulated. Why did authors choose ATF4, ATF6B, HSPA1A and P4HB for validation, why not XBP1, MAPK8 or other genes? A deeper analysis should be performed and a detailed description of the samples is also helpful. The authors also need to deposit the RNAseq to a public database.\n\n3. In Figure 3e, the cell morphology of the two Controls are very different, why?\n\n4. It's better to add the data of 0.25W for Figure 3e and f, which have fewer dead cells.\n\n5. Figure 4g is an IHC result instead of an IF result, not consistent with what the authors described in the manuscript. The 1 W cm-2 and 3.0 mm conditions look like having more positive staining cells of caspase-3 than 1 W cm-2 1.5 mm condition. It's better to have a statistics analysis here.\n\n6. Figure 6f should be re-format, current formation missed some legend.\n\n7. For Figure 5a, the control curve should be stopped at day 7.\n\n8. Which sample was chosen to be represented here in Figure 5g?\n\n9. The author should re-gate the flow data for Figure S6a, current gating is not correct.\n\nStatistical analysis is necessary for the flow data.\n\n10. For Figure 3a-d, the control results should be included.\n\nReviewer #3 (Recommendations for the authors):\n\nThe premise behind this manuscript is important and timely both for physician scientists and clinicians. The present study provides an intriguing noninvasive therapy for malignant peripheral nerve sheath tumors that accelerates the clinical translation of photonic therapy while avoiding the biocompatibility issues arising from photothermal agents. Gu et al. reported and developed a unique near-infrared laser at the third biowindow (NIR III) for photothermal treatment of malignant peripheral nerve sheath tumors (MPNSTs). Unlike the traditional photothermal therapy involving organic or inorganic photothermal agents, this study explored a new strategy employing laser in safe power density to treat cancer in high efficiency, which is interesting and promising in clinical transformation. I think this study is well organized. The result and conclusion are supported by the given data.\n\nTherefore, I recommend it to publish in eLife after addressing the following issues.\n\n1. The front size in figures such as Figure 2b-I should be magnified. The fluorescent intensity in Figures 3e, 3f and 5g would be better quantified.\n\n2. The cell size in the control group for 2 min treatment appears bigger than for 5 min treatment in Figure 3e. Please check the scale bar size in Figure 3e. I am also confused about the statistic analysis in Figures 5a, 5b and 5e. Please check and correct them.\n\n3. The black fame in Figures 4f-h and 5g should be unified. There is a spacing between Time and (s) in Figures 4a and 4c, 100 and \u03bcm in Figures 4f-h.\n\n4. The scale bar in Figures 4h and 5g should be clearer. Furthermore, 50 \u03bcm not 50 um in Figure 5g. Please correct it. According to the requirements of eLife, the format of reference should be unified.\n\n5. The tumor-therapeutic safety and efficacy of NIR-III laser are suggested to be compared with the traditional and mostly used NIR-I and NIR-II lasers together with photothermal agents.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Photonic hyperthermia of malignant peripheral nerve sheath tumors at the third near-infrared biowindow\" for further consideration by eLife. Your revised article has been evaluated by Wafik El-Deiry (Senior Editor) and a Guest Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nPlease carefully address the comments from Reviewer #2.\n\nReviewer #2 (Recommendations for the authors):\n\nThe revised manuscript is substantially improved. The authors answered most of my questions and comments. My last concern is still about the RNA-seq datasets. The authors provided the details in the revised manuscript that the authors only performed 1 replicate for each group and used the 'edgeR' package for differential expression analysis. 'edgeR' package requires multiple replicates instead of only 1, and this may be the reason that there were around 20,000 genes were significantly regulated and RT-qPCR couldn't perfectly validate the RNA-seq result. I would like to suggest performing more replicates for RNA-seq or deleting the data.\n\nReviewer #3 (Recommendations for the authors):\n\nThe authors have fully addressed my concerns. I think it can be accepted now.\n",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f7e9d1ca-bda6-40c0-9a70-777d81e10f18",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C1",
+      "claim": "Malignant peripheral nerve sheath tumors (MPNSTs) are aggressive sarcomas that typically carry a dismal prognosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Malignant peripheral nerve sheath tumors (MPNSTs) are aggressive sarcomas that typically carry a dismal prognosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general characterization statement about MPNSTs supported by established medical knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "aca3dece-cea6-4fe2-988b-3137bbadbcb3",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C2",
+      "claim": "MPNSTs are insensitive to traditional chemotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the insensitivity of these tumors to traditional chemotherapy and the absence of effective targeted drugs, new therapeutic strategies are urgently needed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement draws from established clinical knowledge about MPNST treatment resistance.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "6d7d8ed8-d742-45b6-aff6-c718bfc7a418",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C3",
+      "claim": "There are no effective targeted drugs for MPNSTs.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the insensitivity of these tumors to traditional chemotherapy and the absence of effective targeted drugs, new therapeutic strategies are urgently needed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects current clinical knowledge about the lack of approved targeted therapies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "45d5aa81-87b7-4ab3-9753-f6fa97056ab0",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C4",
+      "claim": "Photothermal therapy (PTT) at the third near-infrared biowindow (NIR-III) has demonstrated significant potential in cancer theranostics.",
+      "claim_type": "EXPLICIT",
+      "source": "Photothermal therapy (PTT) including near-infrared laser at the third biowindow (NIR-III) has demonstrated significant potential in cancer theranostics due to its minimally invasive nature and excellent therapeutic outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to existing literature on NIR-III applications.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "f721e4ea-2b1b-46db-8cc9-4e1e831935b1",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C5",
+      "claim": "Poor target specificity and biocompatibility of photothermal agents (PTAs) hinder clinical translation of PTT.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the passive utilization of photothermal agents (PTAs) with poor target specificity and biocompatibility substantially hinders the clinical translation and application of this method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on known limitations of PTAs discussed in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "fe33f6db-149c-4645-849e-20d60e290d2f",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C6",
+      "claim": "MPNSTs affect approximately 10% of patients with neurofibromatosis type 1 (NF1).",
+      "claim_type": "EXPLICIT",
+      "source": "MPNSTs, which affect approximately 10% of patients with neurofibromatosis type 1 (NF1) and cause severe organ damage, are associated with high morbidity (Mowery and Clayburgh, 2019; Widemann, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statistic is supported by citations to Mowery and Clayburgh, 2019 and Widemann, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "3502b56b-c0ee-45f0-a266-ef412eb0afc0",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C7",
+      "claim": "Chemotherapy and radiotherapy provide only limited benefits to MPNST patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Chemotherapy and radiotherapy provide only limited benefits to MPNST patients, and there is no targeted therapy approved for clinical use (Vitolo et al., 2019; van Noesel et al., 2019; Kroep et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Vitolo et al., 2019; van Noesel et al., 2019; and Kroep et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "a9acd8f1-a215-4c24-8c2c-5bef2fa8fed9",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C8",
+      "claim": "Extended resection with negative surgical margins is key to improving the prognosis of MPNST patients.",
+      "claim_type": "EXPLICIT",
+      "source": "The key to improving the prognosis of MPNST patients is extended resection with negative surgical margins, which still faces problems such as the difficulty of surgery, high risk of local recurrence, and distant metastasis (Widemann and Italiano, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Widemann and Italiano, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "bbda849b-892e-4079-bfb1-d33904a9b618",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C9",
+      "claim": "Inorganic PTAs have intrinsic issues such as poor biodegradability, disappointing processability, and apparent cytotoxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, inorganic PTAs have intrinsic issues such as poor biodegradability, disappointing processability, and apparent cytotoxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about limitations of inorganic materials.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "cce26118-0544-4808-bbdd-ac6a160724ab",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C10",
+      "claim": "Optimization of photothermal conversion efficiency and photothermal stability is highly challenging for organic PTAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the advantageous properties of organic agents include distinct biodegradability and biocompatibility, optimization of photothermal conversion efficiency and photothermal stability is highly challenging (Liu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Liu et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "1d54e7df-a85d-470f-982a-601d89d8fb25",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C11",
+      "claim": "NIR light can be divided into four distinct regions: NIR-I (700\u2013950 nm), NIR-II (1000\u20131350 nm), NIR-III (1600\u20131870 nm), and NIR-IV (2100\u20132300 nm).",
+      "claim_type": "EXPLICIT",
+      "source": "NIR light can be divided into four distinct regions according to wavelength: NIR-I (700\u2013950 nm), NIR-II (1000\u20131350 nm), NIR-III (1600\u20131870 nm), and NIR-IV (2100\u20132300 nm) (Sordillo et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This classification is supported by citation to Sordillo et al., 2017 and shown in Figure 1c.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "6ffbb90d-1ac5-4c70-807f-7fb75bb34c38",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C12",
+      "claim": "NIR-III lasers possess relatively high penetration depths and low optical scattering effects compared with NIR-I and NIR-II lasers.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with NIR-I and NIR-II lasers, NIR-III lasers possess relatively high penetration depths and low optical scattering effects (Horton et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Horton et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "ab3f2e1c-65c7-4aa8-8c87-8e57cbe360a2",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C13",
+      "claim": "The total attenuation lengths of human prostate and breast cancer are higher in the NIR-III optical windows than in other NIR regions.",
+      "claim_type": "EXPLICIT",
+      "source": "The total attenuation lengths of human prostate and breast cancer have been revealed to be higher in the NIR-III optical windows than in the other NIR regions, confirming the potential for application of NIR-III lasers in tumor therapy (Choi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Choi et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "2c29e4b0-ec3a-4fc0-8d6c-c6b0246b94c9",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C14",
+      "claim": "The majority of MPNSTs are located on the body surface including head, neck, and extremity.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of MPNSTs are located on the body surface including head, neck, and extremity (Le Guellec et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Le Guellec et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "b3a4dc87-5440-4669-87ec-2feba60afcd0",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C15",
+      "claim": "NIR-III treatment involves a better wavelength range for tissue containing high collagen than conventional NIR-I treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Sordillo et al., 2017 previously demonstrated that NIR-III treatment appears to involve a better wavelength range for tissue containing high collagen than conventional NIR-I treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Sordillo et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "2dbf192a-2428-41b0-8369-b32c1bc73313",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C16",
+      "claim": "Collagen expression is significantly upregulated in MPNSTs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, a previous genetic profiling study has revealed that collagen expression is significantly upregulated in MPNSTs (Karube et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Karube et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "da55d4bc-2ba4-4072-8b36-916be379188f",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C17",
+      "claim": "The safety of NIR-III has been widely demonstrated in various medical applications, including optical imaging, eye disease treatment, and cosmetic treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the safety of NIR-III has been widely demonstrated in various medical applications, including optical imaging (Shi et al., 2016b), eye disease treatment (Sakimoto et al., 2006), and even cosmetic treatments (Adatto et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Shi et al., 2016b; Sakimoto et al., 2006; and Adatto et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "5d2eff27-d6e8-4ae8-95a0-279ffe2549c5",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C18",
+      "claim": "The temperature of an aqueous solution increased gradually with increasing irradiation time and power density of the NIR-III laser.",
+      "claim_type": "EXPLICIT",
+      "source": "The temperature of the aqueous solution increased gradually with increasing irradiation time and power density (Figure 2c\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 2c-d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "724f5828-e59a-4595-a30f-a2d806a306c5",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C19",
+      "claim": "The 1.5 W cm\u20132 NIR-III laser caused an ~40\u00b0C temperature increase within 10 min in aqueous solution.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the 1.5 W cm\u20132 laser caused an ~40\u00b0C temperature increase within 10 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental measurements of temperature changes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "9fcff77e-abbe-40f1-8969-4c8fd244ad0f",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C20",
+      "claim": "The temperature of chicken breast surface rapidly increased from 27.2\u00b0C to 76.7\u00b0C within 10 min under NIR-III laser irradiation (1.5 W cm\u20132).",
+      "claim_type": "EXPLICIT",
+      "source": "The temperature of the chicken breast surface rapidly increased from 27.2\u00b0C to 76.7\u00b0C within 10 min under NIR-III laser irradiation (1.5 W cm\u20132).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental measurements in chicken breast tissue models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "12d078f2-daf8-4566-b570-733b6b272ab6",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C21",
+      "claim": "The difference between the temperature at 0 s and the temperature at 600 s (\u0394T) was still over 10\u00b0C even when a chicken breast of 10 mm thickness was used to block the radiation.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference between the temperature at 0 s and the temperature at 600 s (\u0394T) was still over 10\u00b0C even when a chicken breast of 10 mm thickness was used to block the radiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental measurements of tissue penetration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "14dd11c8-9be5-4c6e-83a6-17203574e9e2",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C22",
+      "claim": "In the 5 min group, the 0.25 W cm\u20132 NIR-III laser induced a 25% reduction in STS26T cell viability.",
+      "claim_type": "EXPLICIT",
+      "source": "In the 5 min group, the 0.25 W cm\u20132 NIR-III laser induced a 25% reduction in cell viability, while lasers with higher power density all exhibited a strong killing effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on CCK-8 cell viability assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "1ed0cf78-5096-4e09-91ed-0e209c0b3bfa",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C23",
+      "claim": "In the 10 min group, NIR-III irradiation caused maximum cell death regardless of the power density in STS26T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In the 10 min group, NIR-III irradiation caused maximum cell death regardless of the power density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on CCK-8 cell viability assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "9fafb56d-1af4-44ed-882b-5983580b5147",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C24",
+      "claim": "The NIR-III laser (1 W cm\u20132) demonstrated almost 100% cell killing efficiency after penetrating chicken skin thickness of 4 mm in STS26T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The NIR-III laser (1 W cm\u20132) demonstrated almost 100% cell killing efficiency after penetrating chicken skin thickness of 4 mm (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on cell viability assay data shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "712ad23d-e68f-4df7-be26-50d2bb3609f3",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C25",
+      "claim": "For the NIR-III (1 W cm\u20132, 2 min), NIR-III (1 W cm\u20132, 5 min), NIR-III (1 W cm\u20132, 10 min), NIR-III (0.5 W cm\u20132, 5 min), and NIR-III (0.5 W cm\u20132, 10 min) groups, the late apoptotic and dead cell populations reached almost 100%.",
+      "claim_type": "EXPLICIT",
+      "source": "For the NIR-III (1 W cm\u20132, 2 min), NIR-III (1 W cm\u20132, 5 min), NIR-III (1 W cm\u20132, 10 min), NIR-III (0.5 W cm\u20132, 5 min), and NIR-III (0.5 W cm\u20132, 10 min) groups, the late apoptotic and dead cell populations reached almost 100%, confirming the outstanding photothermal ablation effect of the NIR-III laser (Figure 4g and h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on flow cytometric analysis data shown in Figure 4g and h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "6e0f2046-c422-4396-af66-18b40b51e5a7",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C26",
+      "claim": "In the STS26T xenograft model, the tumor temperature increased from 32.9\u00b0C and 33.9\u00b0C to 60.2\u00b0C and 75.4\u00b0C within 10 min of irradiation at the low (\u0394T=27.3\u00b0C) and high (\u0394T=41.5\u00b0C) power densities, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In the STS26T xenograft model (Figure 5a and b), the tumor temperature increased from 32.9\u00b0C and 33.9\u00b0C to 60.2\u00b0C and 75.4\u00b0C within 10 min of irradiation at the low (\u0394T=27.3\u00b0C) and high (\u0394T=41.5\u00b0C) power densities, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on in vivo temperature measurements shown in Figure 5a and b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "c822adea-07f7-47c8-88d4-d196d84e4d43",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C27",
+      "claim": "Effective photothermal ablation of subcutaneous xenograft tumors could be achieved at a depth of 4.5 mm in the NIR-III (0.5 W cm\u20132, 10 min) group.",
+      "claim_type": "EXPLICIT",
+      "source": "It was revealed that effective photothermal ablation of subcutaneous xenograft tumors could be achieved at a depth of 4.5 mm in the NIR-III (0.5 W cm\u20132, 10 min) group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on histological analysis of tumor sections at different depths.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "df6de8ea-4a9d-4989-8e7e-5b00e5dd0b43",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C28",
+      "claim": "In the NIR-III (1 W cm\u20132, 10 min) group, the effective photothermal ablation depth was over 7.5 mm.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the NIR-III (1 W cm\u20132, 10 min) group, the effective photothermal ablation depth was over 7.5 mm, as revealed by hematoxylin and eosin (H&E) staining, Ki-67 immunohistochemical staining, and Cleaved-Caspase 3 immunohistochemical staining (Figure 5f\u2013h) and the corresponding statistic analysis (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on histological analysis shown in Figure 5f-h and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "7cce35ca-cd7d-466d-b084-fce250ee2925",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C29",
+      "claim": "Four out of seven mice in the NIR-III (0.5 W cm\u20132, 5 min) group had tumor recurrence after 15 days.",
+      "claim_type": "EXPLICIT",
+      "source": "However, four out of seven mice in the NIR-III (0.5 W cm\u20132, 5 min) group had tumor recurrence after 15 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on long-term observation of tumor-bearing mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "76a00f76-e25d-4040-8112-fd4d99a64e51",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C30",
+      "claim": "The tumors in the NIR-III (1 W cm\u20132, 5 min) group were completely eradicated.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, the tumors in the NIR-III (1 W cm\u20132, 5 min) group were completely eradicated (Figure 6b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on long-term observation data shown in Figure 6b and c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "093e3220-cd85-464b-91aa-cb4d1708407b",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C31",
+      "claim": "No significant pathological toxicity was observed in major organs in the two groups treated with PTT.",
+      "claim_type": "EXPLICIT",
+      "source": "No significant pathological toxicity was observed in the two groups treated with PTT, and all of the mice demonstrated negligible weight fluctuations (Figure 6f), confirming that NIR-III-induced photothermal ablation had negligible adverse effects.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on H&E staining of major organs and body weight measurements shown in Figure 6f and Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "60047808-276a-4798-9365-63d7996ae6f5",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C32",
+      "claim": "The protein processing in endoplasmic reticulum (ER) pathway (hsa04141) was among the most enriched pathways in STS26T tumors after NIR-III treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "According to Kyoto Encyclopedia of Genes and Genomes (KEGG) enrichment analyses, the protein processing in endoplasmic reticulum (ER) pathway (hsa04141) were among the most enriched pathways (Figure 7c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on KEGG enrichment analysis of RNA-seq data shown in Figure 7c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "22ce98e4-e494-424b-af25-9cbc5db66120",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C33",
+      "claim": "NIR-III treatment could lead to ER stress in STS26T xenograft tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene Ontology (GO) enrichment analysis of the genes related to the protein processing in ER pathway (hsa04141) was further performed, which revealed that the key biological processes including the ubiquitin-dependent protein catabolic process, the response to unfold protein were enriched, indicating that NIR-III treatment could lead to ER stress in STS26T xenograft tumors (Figure 7d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on GO enrichment analysis of RNA-seq data shown in Figure 7d.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "0c16ea71-c68f-4281-9a8d-c54745fbf3f7",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C34",
+      "claim": "ATF4 and ATF6B were among the top upregulated mRNAs related to protein processing in ER pathway in STS26T tumors after NIR-III treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "It could be found that the key transcription factors regulating the UPR (ATF4 and ATF6B) were among the top upregulated mRNAs related to protein processing in ER pathway (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on RNA-seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "eb7dcbca-c6d2-44b5-8fe2-9b5ac93d1854",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C35",
+      "claim": "RT-qPCR analysis confirmed the significant upregulation of ATF4 and ATF6B in the NIR-III (0.5 W cm\u20132, 5 min) group and the NIR-III (1 W cm\u20132, 5 min) group.",
+      "claim_type": "EXPLICIT",
+      "source": "RT-qPCR analysis also confirmed the significant upregulation of ATF4 and ATF6B in the NIR-III (0.5 W cm\u20132, 5 min) group and the NIR-III (1 W cm\u20132, 5 min) group (Figure 7f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RT-qPCR validation data shown in Figure 7f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "7f78bfb0-30e7-4967-ba6f-6cf455908191",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C36",
+      "claim": "P4HB and HSPA1A were the most significantly upregulated ER chaperone genes in STS26T tumors after NIR-III treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified the most significantly upregulated ER chaperones genes P4HB and HSP1A1 and further confirmed the upregulation of these two genes using RT-qPCR (Figure 7f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RNA-seq data and RT-qPCR validation shown in Figure 7f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "7077893a-97cc-45ab-a55c-5310305a9b3f",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C37",
+      "claim": "The ubiquitin-mediated proteolysis pathway (hsa04120) was enriched in STS26T tumors after NIR-III treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "According to KEGG enrichment analyses, the ubiquitin-mediated proteolysis pathway (hsa04120) was also enriched (Figure 7c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on KEGG enrichment analysis shown in Figure 7c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "5357a1cd-58d3-406b-816b-59199935b272",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C38",
+      "claim": "The ER pathway was not enriched in S462 cells after NIR-III treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the ER pathway was not enriched in the analyses, indicating that heterogeneity exists in response to NIR-III laser treatment among different MPNST cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on RNA-seq analysis of S462 tumors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "99472ec7-1fb9-4508-ac4d-c863387d6515",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C39",
+      "claim": "STS26T cells exhibited stronger resistance to NIR-III laser treatment than S462 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, STS26T cells exhibited stronger resistance to NIR-III laser treatment than S462 cells, as demonstrated by flow cytometric analysis (Figure 7\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on flow cytometric analysis shown in Figure 7\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "3dad71ae-e40d-416c-83df-6664d7527caf",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C40",
+      "claim": "The ER stress response (ERSR) enabled a proportion of STS26T cells to survive the NIR-III laser treatment through improving protein-folding capacity and ubiquitylating unfolded proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it can be speculated that the ER stress response (ERSR) enabled a proportion of STS26T cells to survive the NIR-III laser treatment through improving protein-folding capacity and ubiquitylating unfolded proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the RNA-seq and pathway analysis results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "23046c38-ddba-474f-91b0-51644c89c2b8",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C41",
+      "claim": "The combination of NIR-III laser treatment with an ER stress inhibitor (such as icariin or ghrelin) could potentially increase therapeutic effectiveness.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, it is speculated that the combination of NIR-III laser treatment with an ER stress inhibitor (such as icariin or ghrelin) could potentially increase therapeutic effectiveness (Wang et al., 2019; Li et al., 2019), which should be further verified in future studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation supported by citations to Wang et al., 2019 and Li et al., 2019.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "d8057e93-82af-4d56-bbd5-208582dbced1",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C42",
+      "claim": "The power safety limit for the NIR-III laser is higher than that for NIR-I and NIR-II lasers.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the power safety limit for the NIR-III laser is higher than that for NIR-I and NIR-II lasers, which in turn leads to efficient and safe tumor ablation (Figure 1c\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and illustrated in Figure 1c-d.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "80538dea-97c9-43ab-9122-74a24636835b",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C43",
+      "claim": "The photothermal conversion of the NIR-III laser is attributed to the thermal molecular movement of the irradiated object after laser irradiation.",
+      "claim_type": "EXPLICIT",
+      "source": "In principle, the photothermal conversion of the NIR-III laser is attributed to the thermal molecular movement of the irradiated object after laser irradiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic explanation based on physical principles.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "56f1d99e-27f6-4544-9a96-a693507e8a16",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C44",
+      "claim": "The relatively high collagen content of MPNSTs ensures the efficiency of photothermal tumor ablation with the NIR-III laser.",
+      "claim_type": "EXPLICIT",
+      "source": "The relatively high collagen content of MPNSTs ensure the efficiency of photothermal tumor ablation and make the NIR-III laser a suitable and potent therapeutic modality that has potential for use in clinical applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the combination of collagen expression in MPNSTs and NIR-III properties.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "37fe8727-60cb-43bc-b412-07f76e2662a5",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C45",
+      "claim": "The photothermal effects of NIR-III could be more concentrated in MPNSTs than in adjacent normal skin and soft tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the photothermal effects of NIR-III could be more concentrated in MPNSTs than in adjacent normal skin and soft tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the high collagen content in MPNSTs and NIR-III properties.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "b888ebbf-ce8f-4beb-8548-78356fd5cae3",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C46",
+      "claim": "NIR-III laser would effectively induce photothermal ablation of MPNSTs due to their surface layout characteristics.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it could be boldly speculated that NIR-III laser would effectively induce photothermal ablation of MPNSTs due to their surface layout characteristics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the surface location of MPNSTs and NIR-III penetration properties.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "db9763e0-cd48-4bb9-b03a-03dff86f0d06",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C47",
+      "claim": "Two MPNST cell lines (STS26T and S462) were used for in vitro experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Two representative MPNST cell lines, STS26T and S462, were utilized for in vitro experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "f5c82b56-c680-401e-8f34-3bebe7708e4b",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C48",
+      "claim": "S462 was derived from an NF1-MPNST patient, whereas STS26T was derived from a sporadic MPNST patient.",
+      "claim_type": "EXPLICIT",
+      "source": "S462 was derived from an NF1-MPNST patient, whereas STS26T was derived from a sporadic MPNST patient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the cell line origins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "651ca20c-eb3f-4a55-b6f0-b42641a44bd1",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C49",
+      "claim": "The 1650 nm NIR-III laser used in this work was composed of laser diodes, a collimator lens, a photodetector, a spectroscope, focusing lenses, and an optical fiber interface.",
+      "claim_type": "EXPLICIT",
+      "source": "The 1650 nm NIR-III laser used in this work was composed of laser diodes, a collimator lens, a photodetector, a spectroscope, focusing lenses, and an optical fiber interface (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the laser system shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "65915aca-c43e-436f-b816-a7f6adc04497",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C50",
+      "claim": "Adjustment of the laser power had a negligible effect on the change in aqueous solution temperature for the NIR-I (808 nm) laser.",
+      "claim_type": "EXPLICIT",
+      "source": "For the NIR-I group, adjustment of the laser power had a negligible effect on the change in aqueous solution temperature (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental measurements shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "b6f69572-21ae-494c-a6f5-d0371d001dd7",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C51",
+      "claim": "In the NIR-II group, an increase in power density elevated the aqueous solution temperature to a certain extent, but the maximum temperature difference was controlled within 15\u00b0C regardless of the duration.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in the NIR-II group, an increase in power density elevated the aqueous solution temperature to a certain extent. However, the maximum temperature difference was controlled within 15\u00b0C regardless of the duration (Figure 2\u2014figure supplements 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental measurements shown in Figure 2\u2014figure supplements 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "4c6f5dae-ff82-46ad-8f17-6d4234129772",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C52",
+      "claim": "The temperature range varied from 36.6\u201391.1\u00b0C with laser power and fat thickness in pig fat penetration experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, temperature range (36.6\u201391.1\u00b0C) varied with laser power and fat thickness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental measurements in pig fat models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "76bc8574-69f6-4cd1-ad57-9e60b0d73c5d",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C53",
+      "claim": "Similar attenuation of photothermal efficiency could be obtained regardless of whether the biological tissue was chicken breast or pig fat.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the temperature alterations at various tissue depths indicated that similar attenuation of photothermal efficiency could be obtained regardless of whether the biological tissue was chicken breast or pig fat (Figure 3j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparative analysis of tissue penetration data shown in Figure 3j.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "a392e179-5f3d-49cf-ac74-b9291eccb167",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C54",
+      "claim": "A significant increase in S462 cell viability was observed with a chicken skin thickness of 6 mm.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were obtained in the S462 cell groups (Figure 4c and d). A significant increase in S462 cell viability was observed with a chicken skin thickness of 6 mm.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on cell viability assay data shown in Figure 4c and d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "989f181d-6b7d-4932-8bcf-20ab3361aaf7",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C55",
+      "claim": "Significant cell death occurred in NIR-III (0.5 W cm\u20132, 5 min) group, the NIR-III (1 W cm\u20132, 2 min) group, and the NIR-III (1 W cm\u20132, 5 min) groups in both STS26T and S462 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The results demonstrated that significant cell death occurred in NIR-III (0.5 W cm\u20132, 5 min) group, the NIR-III (1 W cm\u20132, 2 min) group, and the NIR-III (1 W cm\u20132, 5 min) groups in both STS26T and S462 cells (Figure 4e and f, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on calcein-AM/PI assay data shown in Figure 4e, f, and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "4c3181da-2da5-45cf-9564-e8dc6c665b4e",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C56",
+      "claim": "After adjustment of the laser power density and irradiation time, similar increasing trends were observed in the S462 xenograft group for the low (\u0394T=18.6\u00b0C) and high (\u0394T=30.7\u00b0C) power densities.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, after adjustment of the laser power density and irradiation time, similar increasing trends were observed in the S462 xenograft group for the low (\u0394T=18.6\u00b0C) and high (\u0394T=30.7\u00b0C) power densities (Figure 5c and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on in vivo temperature measurements shown in Figure 5c and d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "8a84725d-4b4d-4e62-930f-97582bd538b4",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C57",
+      "claim": "More necrotic regions were observed in the NIR-III (1 W cm\u20132, 5 min) group than in the NIR-III (0.5 W cm\u20132, 5 min) group.",
+      "claim_type": "EXPLICIT",
+      "source": "More necrotic regions were observed in the NIR-III (1 W cm\u20132, 5 min) group than in the NIR-III (0.5 W cm\u20132, 5 min) group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on H&E staining analysis of tumor sections.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "725fcbb4-0a76-4182-bc1e-54a885ac407a",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C58",
+      "claim": "Apoptosis occurred in the NIR-III (0.5 W cm\u20132, 5 min) group according to TUNEL assays, but the apoptosis in the NIR-III (1 W cm\u20132, 5 min) group was more obvious.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, apoptosis occurred in the NIR-III (0.5 W cm\u20132, 5 min) group according to TUNEL assays, but the apoptosis in the NIR-III (1 W cm\u20132, 5 min) group was more obvious (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on TUNEL staining data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "992d1e23-61b9-4194-a26b-848475a7d8a1",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C59",
+      "claim": "All of the mice demonstrated negligible weight fluctuations after NIR-III treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "No significant pathological toxicity was observed in the two groups treated with PTT, and all of the mice demonstrated negligible weight fluctuations (Figure 6f), confirming that NIR-III-induced photothermal ablation had negligible adverse effects.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on body weight measurements shown in Figure 6f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "323869f0-6944-4b71-851f-5879c081174d",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C60",
+      "claim": "Significant transcriptional alterations were observed in STS26T tumors after NIR-III treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In STS26T tumors, significant transcriptional alterations were observed and were further analyzed (Figure 7a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RNA-seq analysis shown in Figure 7a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "479802bc-15b8-4285-85a6-7f00ffe412e1",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C61",
+      "claim": "Both upregulated and downregulated overlapping mRNAs were found in the NIR-III (0.5 W cm\u20132, 5 min) group and the NIR-III (1 W cm\u20132, 5 min) group compared with control group in STS26T tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Both upregulated and downregulated overlapping mRNAs were found in the NIR-III (0.5 W cm\u20132, 5 min) group and the NIR-III (1 W cm\u20132, 5 min) group compared with control group (Figure 7b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RNA-seq analysis shown in Figure 7b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "d45766ca-a8c0-4c03-ae45-75c9c20ad541",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C62",
+      "claim": "ATF4 and ATF6 contribute to stress relief and survival by inducing the expression of ER chaperones.",
+      "claim_type": "EXPLICIT",
+      "source": "It was demonstrated in previous studies that ATF4 and ATF6B contributed to stress relief and survival by inducing the expression of ER chaperones, which have critical functions in facilitating protein folding and assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge from previous studies.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "4a2b9b5a-b9f3-4e47-b0bd-cc2265121798",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C63",
+      "claim": "The UPR regulated by ATF4 and ATF6 upregulates the components of ER-associated degradation (ERAD).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to ER chaperones, the UPR regulated by ATF4 and ATF6 also upregulates the components of ER-associated degradation (ERAD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about UPR mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "dc01e8ca-1acf-4175-9679-bbe074e5d08f",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C64",
+      "claim": "Proteins that do not properly fold within a certain time are targeted for ERAD, which efficiently retro-translocates them from the ER into the cytosol for degradation via the ubiquitin-proteasome system.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteins that do not properly fold within a certain time are targeted for ERAD, which efficiently retro-translocates them from the ER into the cytosol for degradation via the ubiquitin-proteasome system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about ERAD mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "ddc52626-024f-46b2-a09b-14b50678d35e",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C65",
+      "claim": "Heterogeneity exists in response to NIR-III laser treatment among different MPNST cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the ER pathway was not enriched in the analyses, indicating that heterogeneity exists in response to NIR-III laser treatment among different MPNST cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the different RNA-seq results between STS26T and S462 cells.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "63f40f69-99b9-4689-9102-1e7727297e50",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C66",
+      "claim": "ER stress is a condition during which a variety of pathological conditions including high temperature may impede the capacity of cells to properly fold secretory and transmembrane proteins in the ER and lead to the accumulation of misfolded proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "ER stress is a condition during which a variety of pathological conditions including high temperature may impede the capacity of cells to properly fold secretory and transmembrane proteins in the ER and lead to the accumulation of misfolded proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about ER stress mechanisms, supported by citation to Qi and Chen, 2019.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "f71e16c6-f158-4814-9410-310b8042ad48",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C67",
+      "claim": "Cells with ER stress can initiate a self-protection mechanism termed the unfolded protein response (UPR) that induces a set of transcriptional and translational events to restore ER homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells with ER stress can initiate a self-protection mechanism termed the unfolded protein response (UPR) that induces a set of transcriptional and translational events to restore ER homeostasis (Qi and Chen, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about UPR mechanisms, supported by citation to Qi and Chen, 2019.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "c932c479-3d09-485c-97e0-a966185770f0",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C68",
+      "claim": "The most significantly upregulated mRNAs in the ubiquitin-mediated proteolysis pathway include UBA3, UBE2E1, and HERC3.",
+      "claim_type": "EXPLICIT",
+      "source": "The most significantly upregulated mRNAs including UBA3, UBE2E1, and HERC3 were listed in Supplementary file 3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on RNA-seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "6da8c8cd-9d0b-4989-bacc-a219d68dba69",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C69",
+      "claim": "It is applicable to combine preoperative NIR-III photothermal laser treatment and surgery to reduce the scope and the risk of surgery for MPNSTs.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it is applicable to combine preoperative NIR-III photothermal laser treatment and surgery to reduce the scope and the risk of surgery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential clinical applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "cbcafd6e-e943-43a7-86d9-7235513b6fe1",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C70",
+      "claim": "The postoperative application of NIR-III laser treatment at the resection margin could be a potent modality to reduce the risk of local recurrence.",
+      "claim_type": "EXPLICIT",
+      "source": "The postoperative application of NIR-III laser treatment at the resection margin could be a potent modality to reduce the risk of local recurrence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential clinical applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "a13828cc-81f6-4343-89b6-141fbb464bb8",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C71",
+      "claim": "STS26T MPNST cells strongly enhanced the protein processing capacity of the ER to survive the ER stress induced by NIR-III laser treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanically, it is possible that STS26T MPNST cells strongly enhanced the protein processing capacity of the ER to survive the ER stress induced by NIR-III laser treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the RNA-seq and pathway analysis results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "ac47a398-b8cf-498a-82bb-eb7b9fb7d5f1",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C72",
+      "claim": "An optimal effect can be achieved by optimizing the power density and irradiation time of the NIR-III laser despite individual differences in molecular response and treatment efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the tumor ablation effect is influenced by individual differences in molecular response and treatment efficiency, an optimal effect can still be achieved by optimizing the power density and irradiation time of the NIR-III laser.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental results showing different responses between cell lines.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "de76652e-07c0-42c5-8f82-b0d0feab6514",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C73",
+      "claim": "The NIR-III photothermal treatment efficiency varied among individuals, which was possibly influenced by different endoplasmic reticulum stress responses.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that although the NIR-III photothermal treatment efficiency varied among individuals, which was possibly influenced by different endoplasmic reticulum stress responses, the expected antineoplastic effect was ultimately achieved after adjustment of the power density and radiation duration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental results and RNA-seq analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "3adebd39-135f-491a-abbd-2dd314f473e2",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C74",
+      "claim": "The expected antineoplastic effect was ultimately achieved after adjustment of the power density and radiation duration.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that although the NIR-III photothermal treatment efficiency varied among individuals, which was possibly influenced by different endoplasmic reticulum stress responses, the expected antineoplastic effect was ultimately achieved after adjustment of the power density and radiation duration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the in vivo experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "c84c549d-579a-478e-938a-5e209f3e9f58",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C75",
+      "claim": "This PTAs-free PTT strategy possesses unique advantages for the development of clinical application and the improvement of patient prognosis due to the excellent biocompatibility and predominant photothermal conversion efficiency of NIR-III laser.",
+      "claim_type": "EXPLICIT",
+      "source": "This PTAs-free PTT strategy possesses unique advantages for the development of clinical application and the improvement of patient prognosis due to the excellent biocompatibility and predominant photothermal conversion efficiency of NIR-III laser.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the overall experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "3e71f8a2-7280-452e-8ebd-52778e81a19e",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "claim_id": "C76",
+      "claim": "This PTAs-free NIR-III PTT approach may be further generalized for the treatment of other benign and malignant skin and soft-tissue tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "It is expected that this PTAs-free NIR-III PTT approach may be further generalized for the treatment of other benign and malignant skin and soft-tissue tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential broader applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "436aa153-c1ce-4729-9643-b7c5e6173e65",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The NIR-III laser (1650 nm) demonstrates superior photothermal conversion efficiency compared to NIR-I and NIR-II lasers. The 1.5 W cm\u207b\u00b2 NIR-III laser caused ~40\u00b0C temperature increase in aqueous solution within 10 min, and chicken breast surface temperature increased from 27.2\u00b0C to 76.7\u00b0C. Temperature difference remained >10\u00b0C even through 10 mm chicken breast thickness. In contrast, NIR-I (808 nm) showed negligible temperature changes with power adjustment, and NIR-II (980, 1064 nm) showed maximum temperature differences <15\u00b0C.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C21 and C50-C51 provide converging experimental evidence from multiple tissue models (aqueous solution, chicken breast) demonstrating NIR-III's superior photothermal performance. The comparative data with NIR-I and NIR-II lasers (Figures 2c-d, Figure 2\u2014figure supplements 1-3) clearly establish the advantage of NIR-III. The tissue penetration data (C21) further validates practical applicability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "bc51b40f-5235-43e1-ae04-238813df3c4a",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "NIR-III laser demonstrates consistent tissue penetration capability across different biological tissue types. Temperature ranges of 36.6\u201391.1\u00b0C were achieved in pig fat penetration experiments varying with laser power and fat thickness. Similar attenuation of photothermal efficiency was observed regardless of whether the tissue was chicken breast or pig fat.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 are supported by experimental data from multiple tissue models (Figure 3). The consistency across different tissue types (chicken breast and pig fat) strengthens the generalizability of the findings. However, the manuscript would benefit from more detailed statistical analysis of the comparative attenuation rates.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "981329ad-a4c6-4687-ad50-8c5ac2f58b8c",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "NIR-III laser treatment effectively kills MPNST cells in vitro in a power density- and time-dependent manner. In STS26T cells, 0.25 W cm\u207b\u00b2 for 5 min induced 25% cell death, while higher power densities showed strong killing effects. At 10 min, maximum cell death occurred regardless of power density. The NIR-III laser (1 W cm\u207b\u00b2) achieved almost 100% cell killing efficiency after penetrating 4 mm chicken skin. Flow cytometry confirmed nearly 100% late apoptotic/dead cell populations in multiple treatment conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C25, C54-C55 are well-supported by multiple complementary assays (CCK-8, calcein-AM/PI staining, flow cytometry) shown in Figure 4. The dose-response relationship is clearly demonstrated across both cell lines (STS26T and S462). The tissue penetration experiments (C24, C54) provide clinically relevant context. The convergence of multiple independent assays strengthens confidence in the results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "38b287b9-3ef3-4996-8e99-868b5d17bb0e",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "NIR-III laser achieves effective photothermal ablation of MPNST xenograft tumors in vivo with power density-dependent penetration depth. In STS26T xenografts, tumor temperature increased from 32.9\u00b0C to 60.2\u00b0C (0.5 W cm\u207b\u00b2) and to 75.4\u00b0C (1 W cm\u207b\u00b2) within 10 min. Effective ablation was achieved at 4.5 mm depth with 0.5 W cm\u207b\u00b2 for 10 min, and >7.5 mm depth with 1 W cm\u207b\u00b2 for 10 min, as confirmed by H&E, Ki-67, and Cleaved-Caspase 3 staining.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28, C56 are strongly supported by in vivo temperature measurements (Figure 5a-d) and histological analysis at multiple tissue depths (Figure 5f-h). The use of multiple complementary staining methods (H&E, Ki-67, Cleaved-Caspase 3) provides robust validation. The depth-dependent efficacy is clearly demonstrated with appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "1c252461-ead7-4d35-96f6-0f53352d753d",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "NIR-III laser treatment at 1 W cm\u207b\u00b2 for 5 min completely eradicates STS26T tumors with minimal toxicity, while 0.5 W cm\u207b\u00b2 for 5 min shows incomplete efficacy. Four of seven mice in the lower power group had tumor recurrence after 15 days, while tumors in the higher power group were completely eradicated. More necrotic regions and obvious apoptosis were observed in the 1 W cm\u207b\u00b2 group. No significant pathological toxicity was observed in major organs, and mice showed negligible weight fluctuations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31, C57-C59 are supported by long-term in vivo efficacy data (Figure 6) including tumor growth curves, survival analysis, histology (H&E, TUNEL), and safety assessment. The comparison between two power densities clearly demonstrates the importance of treatment parameters. The safety data from major organ histology and body weight monitoring (Figure 6f, Figure 6\u2014figure supplement 2) adequately support the biosafety claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "23c8d102-7cd7-4087-bd07-ba8984fb6f83",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "NIR-III treatment induces ER stress response in STS26T tumors, characterized by enrichment of protein processing in ER pathway (hsa04141) and ubiquitin-mediated proteolysis pathway (hsa04120). Key UPR transcription factors ATF4 and ATF6B, and ER chaperones P4HB and HSPA1A were significantly upregulated, as confirmed by both RNA-seq and RT-qPCR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C37, C60-C61 are supported by comprehensive transcriptomic analysis (RNA-seq) with appropriate bioinformatics (KEGG, GO enrichment) and independent validation by RT-qPCR (Figure 7). The mechanistic interpretation linking NIR-III treatment to ER stress through pathway analysis is logical and well-supported. However, the RNA-seq appears to use n=1 per group, which is a significant limitation for transcriptomic studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "07156664-e8e4-4312-bf10-4395bc7d7ba2",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Different MPNST cell types show heterogeneous responses to NIR-III laser treatment. The ER pathway was not enriched in S462 cells after NIR-III treatment, unlike STS26T cells. STS26T cells exhibited stronger resistance to NIR-III laser treatment than S462 cells, as demonstrated by flow cytometry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39, C65 are supported by comparative RNA-seq analysis (Figure 7\u2014figure supplement 2) and flow cytometry data (Figure 7\u2014figure supplement 3). The observation of cell line-specific responses is important for understanding treatment variability. However, the mechanistic basis for this heterogeneity requires further investigation beyond the current data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "86b3c506-5a5b-491d-8bfa-cdfe5924cc85",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The ER stress response (ERSR) enabled a proportion of STS26T cells to survive NIR-III laser treatment through improving protein-folding capacity and ubiquitylating unfolded proteins. STS26T MPNST cells strongly enhanced the protein processing capacity of the ER to survive the ER stress induced by NIR-III laser treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C40 and C71 are explicitly labeled as speculation in the evidence. While the RNA-seq data showing upregulation of ER stress response genes provides circumstantial support, direct functional validation (e.g., using ER stress inhibitors, genetic manipulation of UPR components) is lacking. The causal relationship between ERSR activation and cell survival remains to be experimentally demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "d4e085ed-48bc-4627-8f1a-f2bc43df00be",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The combination of NIR-III laser treatment with an ER stress inhibitor (such as icariin or ghrelin) could potentially increase therapeutic effectiveness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C41 is explicitly labeled as speculation and represents a proposed future direction rather than a demonstrated result. While the hypothesis is logical based on the ER stress findings, no experimental data testing this combination approach is provided. This requires future validation studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "7946fb12-96f8-4a2e-9d16-c66ac891e9d4",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Despite individual differences in molecular response and treatment efficiency (possibly influenced by different ER stress responses), optimal antineoplastic effects can be achieved by adjusting NIR-III laser power density and irradiation time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C74 are supported by the comprehensive in vitro and in vivo data showing that both STS26T and S462 tumors can be effectively treated with appropriate parameter optimization. The dose-response experiments (Figures 4-6) demonstrate that treatment efficacy can be modulated. However, the claim would be strengthened by more systematic optimization studies and clearer guidelines for parameter selection.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "2d786c6e-48c7-4413-99dc-eb3f9b85f594",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "MPNSTs are aggressive sarcomas with dismal prognosis, affecting ~10% of NF1 patients. They are insensitive to traditional chemotherapy, lack effective targeted drugs, and have limited benefit from chemotherapy/radiotherapy. Extended resection with negative margins is key to improving prognosis but faces challenges including surgical difficulty and high recurrence risk.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C6-C8 establish the clinical context and unmet medical need. These are well-supported by appropriate citations to established literature (Mowery and Clayburgh, 2019; Widemann, 2009; Vitolo et al., 2019; van Noesel et al., 2019; Kroep et al., 2011; Widemann and Italiano, 2018). This background appropriately motivates the need for new therapeutic approaches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "963ab205-5a4b-4821-ab89-6bb264cd429f",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "While PTT at NIR-III has demonstrated potential in cancer theranostics, traditional PTAs (both inorganic and organic) have significant limitations. Inorganic PTAs have poor biodegradability, processability, and apparent cytotoxicity. Organic PTAs face challenges in optimizing photothermal conversion efficiency and stability. Poor target specificity and biocompatibility of PTAs hinder clinical translation of PTT.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5, C9-C10 accurately summarize established knowledge about PTT and PTA limitations, supported by appropriate citations. This provides strong rationale for the PTA-free approach investigated in this study. The characterization of PTA limitations is consistent with the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "4b638b12-7e76-4782-a1fb-8ccb9dda3079",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "NIR-III (1600-1870 nm) possesses advantages for MPNST treatment: higher penetration depth and lower optical scattering than NIR-I/II, better performance in high-collagen tissue, and demonstrated safety in various medical applications. MPNSTs are located on body surfaces and have significantly upregulated collagen expression, making them suitable targets for NIR-III treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C17 establish the scientific rationale for using NIR-III specifically for MPNSTs. These are well-supported by appropriate citations (Sordillo et al., 2017; Horton et al., 2013; Choi et al., 2016; Le Guellec et al., 2016; Karube et al., 2006; Shi et al., 2016b; Sakimoto et al., 2006; Adatto et al., 2017). The logical connection between MPNST characteristics (surface location, high collagen) and NIR-III properties is sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "c08e0342-569e-4e1b-b4bb-7b2a0d406ff7",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The NIR-III laser has a higher power safety limit than NIR-I/II lasers. Its photothermal conversion is attributed to thermal molecular movement of the irradiated object. The high collagen content of MPNSTs ensures efficiency of photothermal ablation, and photothermal effects could be more concentrated in MPNSTs than adjacent normal tissue. NIR-III laser would effectively induce photothermal ablation of MPNSTs due to their surface layout characteristics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C46 combine established physical principles (C43) with logical inferences based on MPNST characteristics and NIR-III properties. C42 is supported by Figure 1c-d. C44 is a reasonable inference from the combination of high collagen in MPNSTs (C16) and NIR-III's preferential interaction with collagen (C15). C45-C46 are logical speculations that are subsequently validated by the experimental results. The mechanistic framework is sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "8e2a47f2-b0c3-4130-9aff-38807eaa8077",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "ER stress occurs when pathological conditions (including high temperature) impede proper protein folding in the ER, leading to accumulation of misfolded proteins. Cells initiate the UPR to restore ER homeostasis. ATF4 and ATF6 contribute to stress relief by inducing ER chaperones and upregulating ERAD components. Misfolded proteins are targeted for ERAD and degraded via the ubiquitin-proteasome system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C64, C66-C67 accurately describe established mechanisms of ER stress and UPR, appropriately supported by citations (Qi and Chen, 2019). This background knowledge is correctly applied to interpret the RNA-seq findings. The mechanistic framework is consistent with current understanding of ER stress biology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "9be3c72b-fb0c-4616-93be-64e463b1f556",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The most significantly upregulated mRNAs in the ubiquitin-mediated proteolysis pathway include UBA3, UBE2E1, and HERC3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C68 is supported by RNA-seq data analysis (Supplementary file 3). This finding is consistent with the enrichment of the ubiquitin-mediated proteolysis pathway (C37) and supports the overall mechanistic interpretation of ER stress response involving ERAD.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "7b2faba6-c260-4cba-9df5-f07a6de77504",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "NIR-III PTT could be combined with surgery (preoperatively to reduce surgical scope/risk, or postoperatively at resection margins to reduce recurrence risk) for MPNST treatment. This PTA-free NIR-III PTT approach may be generalized for treatment of other benign and malignant skin and soft-tissue tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C69-C70, C76 are explicitly labeled as speculation about potential clinical applications and broader generalization. While the preclinical data support the feasibility of these applications, no clinical studies or experiments in other tumor types are provided. These represent reasonable future directions but require validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "2433e770-d58e-45e0-a816-98bc0c6ddeb8",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "This PTA-free PTT strategy possesses unique advantages for clinical application and patient prognosis improvement due to excellent biocompatibility and predominant photothermal conversion efficiency of NIR-III laser.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C75 is a summary conclusion supported by the overall experimental results demonstrating efficacy (C22-C30, C72-C74) and safety (C31, C59). The advantage of avoiding PTAs is logical given the established limitations of PTAs (C5, C9-C10). However, the claim of 'unique advantages' for clinical application is somewhat overstated without direct clinical data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    },
+    {
+      "id": "efa4d3cb-657d-4733-a414-243c454b2a08",
+      "content_id": "da7bd7a9-f9ad-4c76-8eaa-4010a5e7cc4a",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Two MPNST cell lines (STS26T from sporadic MPNST, S462 from NF1-MPNST) were used for in vitro experiments. The 1650 nm NIR-III laser system consisted of laser diodes, collimator lens, photodetector, spectroscope, focusing lenses, and optical fiber interface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 describe the experimental materials and methods. These are straightforward methodological descriptions supported by the text and Figure 2a. The use of two cell lines from different MPNST subtypes strengthens the generalizability of findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:46:46.010717Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5d2eff27-d6e8-4ae8-95a0-279ffe2549c5",
+      "result_id": "436aa153-c1ce-4729-9643-b7c5e6173e65"
+    },
+    {
+      "claim_id": "724f5828-e59a-4595-a30f-a2d806a306c5",
+      "result_id": "436aa153-c1ce-4729-9643-b7c5e6173e65"
+    },
+    {
+      "claim_id": "9fcff77e-abbe-40f1-8969-4c8fd244ad0f",
+      "result_id": "436aa153-c1ce-4729-9643-b7c5e6173e65"
+    },
+    {
+      "claim_id": "12d078f2-daf8-4566-b570-733b6b272ab6",
+      "result_id": "436aa153-c1ce-4729-9643-b7c5e6173e65"
+    },
+    {
+      "claim_id": "65915aca-c43e-436f-b816-a7f6adc04497",
+      "result_id": "436aa153-c1ce-4729-9643-b7c5e6173e65"
+    },
+    {
+      "claim_id": "b6f69572-21ae-494c-a6f5-d0371d001dd7",
+      "result_id": "436aa153-c1ce-4729-9643-b7c5e6173e65"
+    },
+    {
+      "claim_id": "4c6f5dae-ff82-46ad-8f17-6d4234129772",
+      "result_id": "bc51b40f-5235-43e1-ae04-238813df3c4a"
+    },
+    {
+      "claim_id": "76bc8574-69f6-4cd1-ad57-9e60b0d73c5d",
+      "result_id": "bc51b40f-5235-43e1-ae04-238813df3c4a"
+    },
+    {
+      "claim_id": "14dd11c8-9be5-4c6e-83a6-17203574e9e2",
+      "result_id": "981329ad-a4c6-4687-ad50-8c5ac2f58b8c"
+    },
+    {
+      "claim_id": "1ed0cf78-5096-4e09-91ed-0e209c0b3bfa",
+      "result_id": "981329ad-a4c6-4687-ad50-8c5ac2f58b8c"
+    },
+    {
+      "claim_id": "9fafb56d-1af4-44ed-882b-5983580b5147",
+      "result_id": "981329ad-a4c6-4687-ad50-8c5ac2f58b8c"
+    },
+    {
+      "claim_id": "a392e179-5f3d-49cf-ac74-b9291eccb167",
+      "result_id": "981329ad-a4c6-4687-ad50-8c5ac2f58b8c"
+    },
+    {
+      "claim_id": "989f181d-6b7d-4932-8bcf-20ab3361aaf7",
+      "result_id": "981329ad-a4c6-4687-ad50-8c5ac2f58b8c"
+    },
+    {
+      "claim_id": "712ad23d-e68f-4df7-be26-50d2bb3609f3",
+      "result_id": "981329ad-a4c6-4687-ad50-8c5ac2f58b8c"
+    },
+    {
+      "claim_id": "6e0f2046-c422-4396-af66-18b40b51e5a7",
+      "result_id": "38b287b9-3ef3-4996-8e99-868b5d17bb0e"
+    },
+    {
+      "claim_id": "4c3181da-2da5-45cf-9564-e8dc6c665b4e",
+      "result_id": "38b287b9-3ef3-4996-8e99-868b5d17bb0e"
+    },
+    {
+      "claim_id": "c822adea-07f7-47c8-88d4-d196d84e4d43",
+      "result_id": "38b287b9-3ef3-4996-8e99-868b5d17bb0e"
+    },
+    {
+      "claim_id": "df6de8ea-4a9d-4989-8e7e-5b00e5dd0b43",
+      "result_id": "38b287b9-3ef3-4996-8e99-868b5d17bb0e"
+    },
+    {
+      "claim_id": "7cce35ca-cd7d-466d-b084-fce250ee2925",
+      "result_id": "1c252461-ead7-4d35-96f6-0f53352d753d"
+    },
+    {
+      "claim_id": "76a00f76-e25d-4040-8112-fd4d99a64e51",
+      "result_id": "1c252461-ead7-4d35-96f6-0f53352d753d"
+    },
+    {
+      "claim_id": "8a84725d-4b4d-4e62-930f-97582bd538b4",
+      "result_id": "1c252461-ead7-4d35-96f6-0f53352d753d"
+    },
+    {
+      "claim_id": "725fcbb4-0a76-4182-bc1e-54a885ac407a",
+      "result_id": "1c252461-ead7-4d35-96f6-0f53352d753d"
+    },
+    {
+      "claim_id": "093e3220-cd85-464b-91aa-cb4d1708407b",
+      "result_id": "1c252461-ead7-4d35-96f6-0f53352d753d"
+    },
+    {
+      "claim_id": "992d1e23-61b9-4194-a26b-848475a7d8a1",
+      "result_id": "1c252461-ead7-4d35-96f6-0f53352d753d"
+    },
+    {
+      "claim_id": "60047808-276a-4798-9365-63d7996ae6f5",
+      "result_id": "23c8d102-7cd7-4087-bd07-ba8984fb6f83"
+    },
+    {
+      "claim_id": "22ce98e4-e494-424b-af25-9cbc5db66120",
+      "result_id": "23c8d102-7cd7-4087-bd07-ba8984fb6f83"
+    },
+    {
+      "claim_id": "0c16ea71-c68f-4281-9a8d-c54745fbf3f7",
+      "result_id": "23c8d102-7cd7-4087-bd07-ba8984fb6f83"
+    },
+    {
+      "claim_id": "eb7dcbca-c6d2-44b5-8fe2-9b5ac93d1854",
+      "result_id": "23c8d102-7cd7-4087-bd07-ba8984fb6f83"
+    },
+    {
+      "claim_id": "7f78bfb0-30e7-4967-ba6f-6cf455908191",
+      "result_id": "23c8d102-7cd7-4087-bd07-ba8984fb6f83"
+    },
+    {
+      "claim_id": "7077893a-97cc-45ab-a55c-5310305a9b3f",
+      "result_id": "23c8d102-7cd7-4087-bd07-ba8984fb6f83"
+    },
+    {
+      "claim_id": "323869f0-6944-4b71-851f-5879c081174d",
+      "result_id": "23c8d102-7cd7-4087-bd07-ba8984fb6f83"
+    },
+    {
+      "claim_id": "479802bc-15b8-4285-85a6-7f00ffe412e1",
+      "result_id": "23c8d102-7cd7-4087-bd07-ba8984fb6f83"
+    },
+    {
+      "claim_id": "5357a1cd-58d3-406b-816b-59199935b272",
+      "result_id": "07156664-e8e4-4312-bf10-4395bc7d7ba2"
+    },
+    {
+      "claim_id": "99472ec7-1fb9-4508-ac4d-c863387d6515",
+      "result_id": "07156664-e8e4-4312-bf10-4395bc7d7ba2"
+    },
+    {
+      "claim_id": "ddc52626-024f-46b2-a09b-14b50678d35e",
+      "result_id": "07156664-e8e4-4312-bf10-4395bc7d7ba2"
+    },
+    {
+      "claim_id": "3dad71ae-e40d-416c-83df-6664d7527caf",
+      "result_id": "86b3c506-5a5b-491d-8bfa-cdfe5924cc85"
+    },
+    {
+      "claim_id": "a13828cc-81f6-4343-89b6-141fbb464bb8",
+      "result_id": "86b3c506-5a5b-491d-8bfa-cdfe5924cc85"
+    },
+    {
+      "claim_id": "23046c38-ddba-474f-91b0-51644c89c2b8",
+      "result_id": "d4e085ed-48bc-4627-8f1a-f2bc43df00be"
+    },
+    {
+      "claim_id": "ac47a398-b8cf-498a-82bb-eb7b9fb7d5f1",
+      "result_id": "7946fb12-96f8-4a2e-9d16-c66ac891e9d4"
+    },
+    {
+      "claim_id": "de76652e-07c0-42c5-8f82-b0d0feab6514",
+      "result_id": "7946fb12-96f8-4a2e-9d16-c66ac891e9d4"
+    },
+    {
+      "claim_id": "3adebd39-135f-491a-abbd-2dd314f473e2",
+      "result_id": "7946fb12-96f8-4a2e-9d16-c66ac891e9d4"
+    },
+    {
+      "claim_id": "f7e9d1ca-bda6-40c0-9a70-777d81e10f18",
+      "result_id": "2d786c6e-48c7-4413-99dc-eb3f9b85f594"
+    },
+    {
+      "claim_id": "aca3dece-cea6-4fe2-988b-3137bbadbcb3",
+      "result_id": "2d786c6e-48c7-4413-99dc-eb3f9b85f594"
+    },
+    {
+      "claim_id": "6d7d8ed8-d742-45b6-aff6-c718bfc7a418",
+      "result_id": "2d786c6e-48c7-4413-99dc-eb3f9b85f594"
+    },
+    {
+      "claim_id": "fe33f6db-149c-4645-849e-20d60e290d2f",
+      "result_id": "2d786c6e-48c7-4413-99dc-eb3f9b85f594"
+    },
+    {
+      "claim_id": "3502b56b-c0ee-45f0-a266-ef412eb0afc0",
+      "result_id": "2d786c6e-48c7-4413-99dc-eb3f9b85f594"
+    },
+    {
+      "claim_id": "a9acd8f1-a215-4c24-8c2c-5bef2fa8fed9",
+      "result_id": "2d786c6e-48c7-4413-99dc-eb3f9b85f594"
+    },
+    {
+      "claim_id": "45d5aa81-87b7-4ab3-9753-f6fa97056ab0",
+      "result_id": "963ab205-5a4b-4821-ab89-6bb264cd429f"
+    },
+    {
+      "claim_id": "f721e4ea-2b1b-46db-8cc9-4e1e831935b1",
+      "result_id": "963ab205-5a4b-4821-ab89-6bb264cd429f"
+    },
+    {
+      "claim_id": "bbda849b-892e-4079-bfb1-d33904a9b618",
+      "result_id": "963ab205-5a4b-4821-ab89-6bb264cd429f"
+    },
+    {
+      "claim_id": "cce26118-0544-4808-bbdd-ac6a160724ab",
+      "result_id": "963ab205-5a4b-4821-ab89-6bb264cd429f"
+    },
+    {
+      "claim_id": "1d54e7df-a85d-470f-982a-601d89d8fb25",
+      "result_id": "4b638b12-7e76-4782-a1fb-8ccb9dda3079"
+    },
+    {
+      "claim_id": "6ffbb90d-1ac5-4c70-807f-7fb75bb34c38",
+      "result_id": "4b638b12-7e76-4782-a1fb-8ccb9dda3079"
+    },
+    {
+      "claim_id": "ab3f2e1c-65c7-4aa8-8c87-8e57cbe360a2",
+      "result_id": "4b638b12-7e76-4782-a1fb-8ccb9dda3079"
+    },
+    {
+      "claim_id": "2c29e4b0-ec3a-4fc0-8d6c-c6b0246b94c9",
+      "result_id": "4b638b12-7e76-4782-a1fb-8ccb9dda3079"
+    },
+    {
+      "claim_id": "b3a4dc87-5440-4669-87ec-2feba60afcd0",
+      "result_id": "4b638b12-7e76-4782-a1fb-8ccb9dda3079"
+    },
+    {
+      "claim_id": "2dbf192a-2428-41b0-8369-b32c1bc73313",
+      "result_id": "4b638b12-7e76-4782-a1fb-8ccb9dda3079"
+    },
+    {
+      "claim_id": "da55d4bc-2ba4-4072-8b36-916be379188f",
+      "result_id": "4b638b12-7e76-4782-a1fb-8ccb9dda3079"
+    },
+    {
+      "claim_id": "d8057e93-82af-4d56-bbd5-208582dbced1",
+      "result_id": "c08e0342-569e-4e1b-b4bb-7b2a0d406ff7"
+    },
+    {
+      "claim_id": "80538dea-97c9-43ab-9122-74a24636835b",
+      "result_id": "c08e0342-569e-4e1b-b4bb-7b2a0d406ff7"
+    },
+    {
+      "claim_id": "56f1d99e-27f6-4544-9a96-a693507e8a16",
+      "result_id": "c08e0342-569e-4e1b-b4bb-7b2a0d406ff7"
+    },
+    {
+      "claim_id": "37fe8727-60cb-43bc-b412-07f76e2662a5",
+      "result_id": "c08e0342-569e-4e1b-b4bb-7b2a0d406ff7"
+    },
+    {
+      "claim_id": "b888ebbf-ce8f-4beb-8548-78356fd5cae3",
+      "result_id": "c08e0342-569e-4e1b-b4bb-7b2a0d406ff7"
+    },
+    {
+      "claim_id": "d45766ca-a8c0-4c03-ae45-75c9c20ad541",
+      "result_id": "8e2a47f2-b0c3-4130-9aff-38807eaa8077"
+    },
+    {
+      "claim_id": "4a2b9b5a-b9f3-4e47-b0bd-cc2265121798",
+      "result_id": "8e2a47f2-b0c3-4130-9aff-38807eaa8077"
+    },
+    {
+      "claim_id": "dc01e8ca-1acf-4175-9679-bbe074e5d08f",
+      "result_id": "8e2a47f2-b0c3-4130-9aff-38807eaa8077"
+    },
+    {
+      "claim_id": "63f40f69-99b9-4689-9102-1e7727297e50",
+      "result_id": "8e2a47f2-b0c3-4130-9aff-38807eaa8077"
+    },
+    {
+      "claim_id": "f71e16c6-f158-4814-9410-310b8042ad48",
+      "result_id": "8e2a47f2-b0c3-4130-9aff-38807eaa8077"
+    },
+    {
+      "claim_id": "c932c479-3d09-485c-97e0-a966185770f0",
+      "result_id": "9be3c72b-fb0c-4616-93be-64e463b1f556"
+    },
+    {
+      "claim_id": "6da8c8cd-9d0b-4989-bacc-a219d68dba69",
+      "result_id": "7b2faba6-c260-4cba-9df5-f07a6de77504"
+    },
+    {
+      "claim_id": "cbcafd6e-e943-43a7-86d9-7235513b6fe1",
+      "result_id": "7b2faba6-c260-4cba-9df5-f07a6de77504"
+    },
+    {
+      "claim_id": "3e71f8a2-7280-452e-8ebd-52778e81a19e",
+      "result_id": "7b2faba6-c260-4cba-9df5-f07a6de77504"
+    },
+    {
+      "claim_id": "c84c549d-579a-478e-938a-5e209f3e9f58",
+      "result_id": "2433e770-d58e-45e0-a816-98bc0c6ddeb8"
+    },
+    {
+      "claim_id": "db9763e0-cd48-4bb9-b03a-03dff86f0d06",
+      "result_id": "efa4d3cb-657d-4733-a414-243c454b2a08"
+    },
+    {
+      "claim_id": "f5c82b56-c680-401e-8f34-3bebe7708e4b",
+      "result_id": "efa4d3cb-657d-4733-a414-243c454b2a08"
+    },
+    {
+      "claim_id": "651ca20c-eb3f-4a55-b6f0-b42641a44bd1",
+      "result_id": "efa4d3cb-657d-4733-a414-243c454b2a08"
+    }
+  ],
+  "comparisons": []
+}

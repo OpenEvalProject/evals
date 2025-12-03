@@ -1,0 +1,236 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C56",
+      "C57"
+    ],
+    "result": "Genome-wide analysis of 73 TFs in K562 cells revealed that relaxed spacing relationships are the dominant pattern, with 45 TFs exclusively exhibiting relaxed spacing, 25 TFs participating in both relaxed and constrained interactions depending on partners, and only 3 TFs showing exclusively constrained spacing. Among 29 TF pairs with constrained spacing, most bind within 15 bp of each other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 and C56-C57 provide converging computational evidence from ChIP-seq analysis of 73 TFs. The classification methodology is clearly described (C1), quantitative results are provided (C2-C5), and the finding that relaxed spacing dominates is consistently supported across multiple claims with specific numbers and statistical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C58",
+      "C59"
+    ],
+    "result": "The study confirmed known constrained TF pairs (GATA1-TAL1, NFATC3-FOSL1) and identified novel constrained spacing patterns including MEF2A-JUND, CEBPB-TEAD4, and EGR1-JUND.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 and C58-C59 provide both validation of prior findings through citation and presentation of novel discoveries. The computational framework successfully identified both known composite motif pairs and previously unreported constrained relationships, with supporting data shown in figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "TFs with relaxed spacing show progressively declining co-binding frequency with distance, this pattern is consistent across motif orientations and cell types, and binding activity is independent of spacing distance. Most relaxed spacing relationships are maintained in both repetitive and nonrepetitive regions, though some constrained pairs show region-specific patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C15 provide multiple lines of evidence characterizing relaxed spacing relationships. The observations are supported by computational analysis across different conditions (motif orientations, cell types, genomic regions) with consistent findings and appropriate statistical tests (KS test mentioned in C22).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Analysis of >60 million InDels from gnomAD reveals that InDels between TF binding sites with constrained spacing are enriched for singletons and depleted for high-frequency variants, suggesting these spacing alterations are as deleterious as motif mutations. In contrast, InDels between relaxed TF pairs show patterns similar to background regions, suggesting weaker functional effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 present a coherent analysis of human population genetics data. The size distributions (C16-C17), enrichment patterns (C18-C19), and functional inferences (C20-C21) are logically connected and supported by large-scale data. The inference about deleteriousness is appropriately qualified and based on established principles cited from prior work (Lek et al., 2016).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Analysis of natural genetic variation across five mouse strains shows that PU.1 and C/EBP\u03b2 exhibit relaxed spacing relationships with binding activity independent of spacing. Spacing alterations have smaller effect sizes on TF binding than motif mutations, with effects independent of InDel size or direction. Similar patterns are observed for both TFs and across promoters and enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C31 present comprehensive analysis of natural variation with multiple independent strain comparisons. The statistical framework (KS test, Cohen's d effect sizes, Spearman correlations) is appropriate. The consistent findings across four pairwise comparisons and both TFs strengthen the conclusions. The observation that spacing effects are independent of InDel size (C27) while motif effects correlate with PWM score changes (C28) provides strong evidence for spacing tolerance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The spacing tolerance observed for PU.1-C/EBP\u03b2 extends to hierarchical TF interactions (PU.1-p65, c-Jun-p65) and to downstream functional readouts including nascent transcription (GRO-seq) and histone acetylation (H3K27ac), with spacing alterations consistently showing weaker effects than motif mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 extend the findings to additional TF pairs and functional readouts. The consistency across different experimental measures (ChIP-seq, GRO-seq, H3K27ac) and TF pairs strengthens the generality of the spacing tolerance phenomenon. The correlation analyses (C35) appropriately distinguish spacing effects from binding affinity effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Analysis of human endothelial cell QTLs shows that ERG and p65 exhibit relaxed spacing, with InDels altering spacing significantly depleted in bQTLs (Fisher's exact p=1.3e-15) compared to motif mutations which are enriched. Spacing alterations have smaller effect sizes than motif mutations for both p65 binding and H3K27ac in IL-1\u03b2-treated cells, and are not significantly different from likely non-functional variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C45 provide human cell-based validation using QTL data from dozens of individuals. The statistical evidence for depletion of spacing-altering InDels in QTLs (C41) is strong. The hierarchical interaction pattern (C44) is consistent with prior knowledge (C37). The effect size comparisons (C43, C45) appropriately use statistical tests and are consistent with the mouse data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "CRISPR/Cas9 mutagenesis at six endogenous loci between PU.1 and C/EBP\u03b2 binding sites generated InDels ranging from >30 bp deletions to short insertions. Spacing alterations (not overlapping motifs) had significantly weaker effects on TF binding than motif-overlapping deletions. At test regions #6 and #1, spacing alterations from 5 bp insertion to 22-41 bp deletion showed minimal effects on C/EBP\u03b2 and PU.1 binding, while motif-overlapping deletions substantially reduced binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C55 provide direct experimental validation through CRISPR mutagenesis. The experimental design is sound, testing six independent loci with a range of InDel sizes exceeding natural variation (C47). The odds ratio analysis appropriately compares ChIP-seq to input DNA. The consistency between natural variation at test region #1 (C53) and synthetic InDels (C54) strengthens the conclusions. Statistical significance is reported (C48) and specific examples are provided (C49, C51).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C64"
+    ],
+    "result": "The findings are consistent with prior locus-specific studies of constrained spacing (interferon-\u03b2 enhanceosome, Ciona enhancers) and recent single-molecule profiling showing lack of association between TF co-occupancy and precise spacing/orientation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 and C64 appropriately place the current findings in context of prior literature. The citations are relevant and the comparisons are logical. The consistency with both structural studies of constrained interactions and recent single-molecule studies of relaxed interactions supports the validity of the computational classification approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "The study's spacing analysis methodology has limitations: it does not consider overlapping TF binding sites and therefore cannot discover constrained TFs recognizing overlapping motifs or distinguish spacing alteration effects from effects on overlapping composite motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 explicitly acknowledge methodological limitations. This is an appropriate and honest assessment that helps interpret the scope of the findings, particularly in comparison to prior in vitro studies (Jolma et al., 2015) that identified >300 TF-TF interactions including overlapping sites.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The dominance of relaxed spacing relationships has implications for enhancer/promoter selection mechanisms, suggesting that most TF collaborative binding does not require specific protein-protein interactions, though the mechanistic basis remains poorly understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65-C67 present interpretive statements about mechanistic implications. While the inference that relaxed spacing doesn't require specific protein-protein interactions (C66) is logical, it remains speculative without direct protein interaction data. The acknowledgment that mechanisms are poorly understood (C67) is appropriate but highlights the uncertain nature of these mechanistic claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The studies demonstrate clear tolerance of spacing alterations for TFs with relaxed spacing through both natural variation and CRISPR experiments. However, outliers exist where InDels between binding sites associate with significant TF binding differences, though at similar rates to regions without such InDels. Notably, bringing PU.1-C/EBP\u03b2 sites closer through deletions did not improve binding despite higher density of sites at closer distances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 provide a balanced summary acknowledging both the main findings and limitations. The observation about outliers (C69) is important for interpreting generality. The paradox noted in C71-C72 (closer spacing in natural distribution but no improvement with deletions) is an interesting observation that suggests the spacing distribution may reflect other factors beyond optimal binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "The spacing tolerance could potentially associate with high TF binding site turnover observed in prior studies, though this requires further investigation. A limitation is that few short insertions were obtained, preventing conclusions about tolerance of increased spacing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C73 is appropriately speculative with acknowledgment that further work is needed. Claim C74 identifies a genuine experimental limitation - the CRISPR approach generated mostly deletions with few insertions, creating an asymmetry in the data. This limits conclusions about whether spacing increases are as well-tolerated as decreases.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The studies provide a framework for interpreting naturally occurring non-coding InDels: the majority (<5 bp) between relaxed TF pairs are unlikely to alter function, and even much longer InDels are frequently tolerated. In contrast, InDels between constrained TF pairs have potential for biological consequences. Application to disease-associated variants requires knowledge of relevant cell types and TF interaction types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C80 present appropriate conclusions and applications of the findings. The size threshold (C76-C77) is well-supported by data from multiple sources. The distinction between relaxed and constrained pairs (C77-C79) is consistently demonstrated. The caveats about application to disease (C80) are appropriate and acknowledge the complexity of translating these findings to specific contexts.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,439 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The manuscript provides background on colorectal cancer (CRC) epidemiology, treatment, and chemoresistance. CRC is the second leading cause of cancer death in the US with over 50,000 deaths annually. Standard treatment for metastatic CRC includes FOLFOX chemotherapy, which extends median survival to 18-24 months, but patients frequently develop oxaliplatin resistance through various mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C17 are background claims supported by appropriate citations to established literature. These provide context for the study but are not novel findings. The claims accurately represent prior knowledge about CRC epidemiology, treatment outcomes, and mechanisms of chemoresistance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The manuscript establishes the biological rationale for the study by describing TRAIL-mediated apoptosis, lipid raft biology, and the gap in knowledge. TRAIL induces apoptosis via death receptors DR4 and DR5. Lipid rafts enhance death receptor signaling through CASMER formation. While chemotherapy can sensitize cells to TRAIL through various mechanisms, no prior study examined whether oxaliplatin-resistant cells have enhanced TRAIL sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C28 provide well-cited background on TRAIL biology and lipid rafts (C18-C27) and identify the knowledge gap (C28) that motivates the study. These are appropriately supported by literature citations and establish the scientific rationale for investigating TRAIL sensitivity in oxaliplatin-resistant CRC cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C110"
+    ],
+    "result": "Oxaliplatin-resistant HT29, SW620, and HCT116 cell lines showed increased TRAIL sensitization compared to parental cells, while SW480 showed similar or decreased sensitization. IC50 values demonstrated augmented TRAIL-mediated apoptosis in two cell lines. In SW620 cells, 60.6% of OxR cells were in late-stage apoptosis after TRAIL treatment compared to 33.3% of parental cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 and C110 are supported by dose-response curves (Figure 1A), IC50 calculations (Figure 1B), and flow cytometry data (Figure 1C). The data show cell line-specific differences in TRAIL sensitivity, with three of four lines showing enhanced sensitivity in OxR derivatives. Statistical analyses appear appropriate with biological replicates (N=3) and technical replicates (n=9).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "SW620 OxR cells exhibited over a threefold increase in mitochondrial depolarization (JC-1 red-negative cells) compared to parental cells. This effect was significant at TRAIL concentrations of 50 ng/ml and higher, demonstrating that enhanced TRAIL-mediated apoptosis occurs via the intrinsic pathway and mitochondrial disruption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 are supported by JC-1 mitochondrial membrane potential assay data (Figure 1D-E). The threefold increase in depolarization and dose-dependent effects are clearly shown. Similar results in HCT116 cells (Figure 1\u2014figure supplement 3) strengthen the conclusion. The inference that apoptosis occurs via the intrinsic pathway (C36) is reasonable given the mitochondrial data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C111"
+    ],
+    "result": "RT-PCR profiler arrays revealed that HCT116 OxR cells upregulated pro-apoptotic transcripts cytochrome-c and caspase-4, while SW620 OxR cells upregulated Fas and osteoprotegerin. Both cell lines showed downregulation of caspase-10 as the most significant transcriptional change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C40-C41, and C111 are supported by RT-PCR array data shown in volcano plots (Figure 2A-B). The biological significance of these changes is appropriately contextualized with citations (C38-C39). The arrays analyzed 84 apoptotic genes with N=3 replicates, providing adequate statistical power for the transcriptional profiling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "Upregulated Fas expression in SW620 OxR cells was confirmed by flow cytometry, but neutralization with anti-Fas antibody (ZB4) had no effect on TRAIL sensitization, indicating Fas does not contribute to the observed TRAIL sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 are supported by flow cytometry validation (Figure 2\u2014figure supplement 1A) and functional neutralization experiments (Figure 2\u2014figure supplement 1B-C). The lack of effect from Fas neutralization appropriately rules out Fas as a mechanism, strengthening the focus on DR4. The experimental design with appropriate controls is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C112"
+    ],
+    "result": "Both HCT116 and SW620 OxR cells showed caspase-10 as the most downregulated transcript. CRISPR-Cas9 knockout of caspase-10 in SW620 parental cells (93% efficiency) resulted in only slight decreases in cell viability and no significant change in maximum TRAIL sensitization, demonstrating that caspase-10 downregulation does not drive TRAIL sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 and C112 are well-supported by RT-PCR data (Figure 2A-B), western blot validation of knockout efficiency (Figure 2C), and functional assays (Figure 2D-F). The CRISPR approach with 93% knockout efficiency provides strong evidence that caspase-10 downregulation is not responsible for enhanced TRAIL sensitivity. This negative result appropriately redirects focus to other mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C113"
+    ],
+    "result": "Oxaliplatin-resistant HCT116 and SW620 cells showed significantly increased DR4 expression by confocal microscopy, with increased DR4 area per cell and surface expression confirmed by flow cytometry. Western blot showed significant increases only in SW620 cells. DR4 expression was similar in HT29 and SW480 cells, which showed minimal TRAIL sensitization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 and C113 are supported by multiple complementary methods: confocal microscopy (Figure 3A-C), flow cytometry (Figure 3D), and western blot (Figure 3E-F). The correlation between DR4 upregulation and TRAIL sensitivity across cell lines strengthens the conclusion. Cell size controls (C51, Figure 3\u2014figure supplement 1) appropriately rule out artifacts. Some inconsistency between methods (western blot significant only in SW620) is acknowledged but does not undermine the overall conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "DR5 expression showed inconsistent patterns across cell lines and methods. OxR HCT116, SW620, and HT29 cells showed increases in DR5 area per cell by microscopy, but surface expression by flow cytometry was only significantly upregulated in SW620 OxR cells. Western blot showed no change in HCT116 and a decrease in SW620. Total DR5 area per cell was considerably lower than DR4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55-C60 reveal conflicting data across methods (microscopy, flow cytometry, western blot) for DR5 expression. The lower overall DR5 levels (C57) and inconsistent changes suggest DR5 is not the primary driver of TRAIL sensitivity. However, the contradictory results across methods raise questions about technical issues or biological complexity that are not fully resolved. The authors appropriately note these inconsistencies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "All four CRC cell lines showed no meaningful difference in surface expression of decoy receptors DcR1 and DcR2 between parental and OxR derivatives, ruling out decoy receptor modulation as a mechanism of altered TRAIL sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is supported by flow cytometry data (Figure 3\u2014figure supplement 6). The lack of changes in decoy receptors appropriately rules out this alternative mechanism. The chi-squared statistical analysis is appropriate for flow cytometry histogram comparisons. This negative result strengthens the focus on DR4 as the key mediator.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Treatment with the DR4-agonist antibody mapatumumab demonstrated DR4 specificity. SW620 OxR cells showed significant increases in apoptosis (threefold at 10 \u00b5g/ml) and dose-responsive decreases in viability. Maximum mapatumumab sensitization exceeded 40% in both HCT116 and SW620 OxR cells, paralleling TRAIL treatment responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 are supported by mapatumumab dose-response data (Figure 3G-I, Figure 3\u2014figure supplement 7). The DR4-specific agonist provides strong causal evidence that DR4 upregulation drives TRAIL sensitivity. The parallel responses between TRAIL and mapatumumab strengthen the mechanistic conclusion. Appropriate controls and replicates (N=3, n=6) support the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C115"
+    ],
+    "result": "OxR HCT116 and SW620 cells showed enhanced DR4 translocation into lipid rafts with over fourfold increases in DR4/LR colocalization area. This was confirmed by Manders' Correlation Coefficient analysis. The fold change in DR4/LR colocalization exhibited a strong linear correlation (R\u00b2=0.86) with TRAIL sensitization across all four cell lines. HT29 and SW480 showed no significant changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 and C115 are supported by confocal microscopy with binary colocalization analysis (Figure 4A-B), Manders' coefficient (Figure 4\u2014figure supplement 1), and correlation analysis (Figure 4C). The strong correlation (R\u00b2=0.86) between DR4/LR colocalization and TRAIL sensitivity across cell lines provides compelling evidence for this mechanism. Multiple colocalization methods strengthen the conclusion. The cell line specificity (C67) appropriately matches TRAIL sensitivity patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "DR5 colocalization with lipid rafts was significantly enhanced only in HCT116 and HT29 cells. The correlation between DR5/LR colocalization and TRAIL sensitization was weaker (R\u00b2=0.48) compared to DR4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 are supported by colocalization analysis (Figure 4\u2014figure supplement 2A-C). The weaker correlation for DR5 (R\u00b2=0.48 vs 0.86 for DR4) appropriately supports the conclusion that DR4, not DR5, is the primary mediator. This comparative analysis strengthens the DR4-specific mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "Lipid raft area per cell showed insignificant changes between parental and OxR derivatives in all cell lines except HT29, where parental cells had significantly more rafts, indicating that enhanced DR4/LR colocalization is not due to increased raft abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 is supported by quantification data (Figure 4\u2014figure supplement 3). This control analysis appropriately demonstrates that the enhanced DR4/LR colocalization is due to receptor redistribution rather than increased raft formation. The HT29 result (decreased rafts in OxR) further supports this interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Western blots of isolated lipid raft fractions showed significant increases in DR4 for both HCT116 and SW620 OxR cells, but no detectable DR5. This is consistent with studies in hematological cancers showing raft localization of DR4 but not DR5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 are supported by western blots of biochemically isolated lipid raft fractions (Figure 4D-E, Figure 4\u2014figure supplement 2D). This biochemical validation complements the microscopy data and provides strong evidence for DR4-specific raft localization. The consistency with prior literature (C75) strengthens the conclusion. \u03b2-actin normalization is appropriate for raft fractions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "FRET efficiency measurements showed significantly increased proximity between DR4 and lipid rafts in OxR cells, with over twofold increase in HCT116 and fivefold increase in SW620 OxR cells compared to parental cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 is supported by flow cytometry-based FRET analysis (Figure 4F). FRET provides nanometer-scale proximity information, complementing the colocalization data. The donor quenching method is appropriate. The magnitude of FRET efficiency increases (2-5 fold) is consistent with the colocalization data and strengthens the conclusion of enhanced DR4/LR association.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C116"
+    ],
+    "result": "Nystatin, a cholesterol-sequestering agent that inhibits lipid raft formation, significantly decreased TRAIL sensitization in SW620 OxR cells (from 45% to 23%) and HCT116 OxR cells (from 62% to 1%). This coincided with dramatic decreases in DR4/LR colocalization (over 20-fold in SW620, over ninefold in HCT116).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 and C116 are supported by combination treatment experiments with nystatin (Figure 5A-C, G-I, M). The parallel decreases in both TRAIL sensitivity and DR4/LR colocalization provide strong causal evidence that lipid raft localization drives TRAIL sensitivity. The dramatic effects (up to 20-fold reduction in colocalization) and near-complete loss of sensitization in HCT116 (62% to 1%) are compelling. Appropriate controls and replicates strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C116"
+    ],
+    "result": "Resveratrol, which stabilizes lipid rafts, significantly sensitized parental SW620 cells to TRAIL (68% maximum sensitization) and HCT116 cells (59% sensitization). This coincided with significant increases in DR4/LR colocalization (over sixfold in SW620, nearly sevenfold in HCT116).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 and C116 are supported by resveratrol combination experiments (Figure 5D-F, J-L, N). The reciprocal experiment to nystatin provides strong bidirectional evidence that lipid raft modulation controls TRAIL sensitivity. The ability to induce OxR-like TRAIL sensitivity in parental cells by enhancing rafts is particularly compelling. The citation supporting resveratrol's mechanism (C81) is appropriate. Statistical significance and adequate replication support the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C114"
+    ],
+    "result": "DR4 has four distinct palmitoylation sites with enhanced palmitoylation in OxR cells (55% vs 43% palmitoylated). Total cellular palmitoylation was unchanged between parental and OxR cells, indicating DR4-specific enhancement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 and C114 are supported by palmitoylation assays using mass tag labeling (Figure 6A-B) and total palmitoylation controls (Figure 6\u2014figure supplement 1). The identification of four palmitoylation sites and quantification of increased palmitoylation in OxR cells is novel. The control showing unchanged total cellular palmitoylation (C88) appropriately demonstrates specificity. The method appears technically sound with appropriate controls (IFC, APC-). N=3 replicates support statistical conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "The palmitoylation inhibitor 2-bromopalmitate (2BP) significantly reduced TRAIL sensitization in SW620 OxR cells, increasing IC50 to over 1000 ng/ml. 2BP reduced apoptotic cells in both parental and OxR cells, demonstrating the importance of DR4 palmitoylation for TRAIL signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 are supported by 2BP combination experiments (Figure 6C-E). The palmitoylation inhibitor provides functional validation that enhanced palmitoylation drives TRAIL sensitivity. The effect in both parental and OxR cells (C90) appropriately demonstrates that palmitoylation is generally important for TRAIL signaling, with enhanced palmitoylation in OxR cells providing additional sensitivity. Dose-response curves and statistical analyses support the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C108"
+    ],
+    "result": "TRAIL liposomes significantly decreased viable CTCs in patient blood to 43% compared to 86% with oxaliplatin treatment. TRAIL liposomes reduced viable CTC counts by 58% compared to control liposomes and 32% compared to oxaliplatin. Two patients (P10, P11) showed complete elimination of detectable viable CTCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 and C108 are supported by ex vivo patient blood experiments (Figure 7B, Figure 7\u2014figure supplement 1). The study included 13 patients with 21 total samples, providing reasonable sample size. The cone-and-plate viscometer to simulate circulatory shear is appropriate. CTC identification criteria (cytokeratin+, DAPI+, CD45-, PI-) are standard. Statistical significance (p<0.001, p<0.0001) supports the efficacy claims. Complete CTC elimination in two patients (C94) is notable but should be interpreted cautiously given small numbers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "Patients with liver or bone metastases showed greater CTC reduction (69% and 71%) than those with lung and liver metastases (32%). Patients undergoing FOLFOX or capecitabine+oxaliplatin had the highest CTC reduction (65% and 60%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C96 are supported by subgroup analyses (Figure 7D-E). However, the small sample sizes in each subgroup (not specified but likely <5 per group based on 13 total patients) limit statistical power. The trends are interesting but should be interpreted cautiously. No statistical tests are reported for these subgroup comparisons. These exploratory analyses generate hypotheses but require validation in larger cohorts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "There was no significant difference in CTC response to TRAIL liposomes when categorizing patients as oxaliplatin-sensitive versus resistant, or when comparing patients currently undergoing oxaliplatin versus those who had failed oxaliplatin previously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 are supported by subgroup analyses (Figure 7\u2014figure supplement 2A-B). The lack of difference between oxaliplatin-sensitive and resistant patients is important, demonstrating TRAIL liposome efficacy regardless of oxaliplatin resistance status. However, the oxaliplatin resistance definition (>80% CTC viability at 5 \u00b5M) is somewhat arbitrary. Sample sizes in subgroups are small, limiting power to detect differences. The conclusion that TRAIL works in both groups is reasonable but should be confirmed in larger studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C109"
+    ],
+    "result": "In patient CTCs, decreasing DR4/LR colocalization correlated with reduced TRAIL liposome efficacy (negative slope significantly different from zero). Increasing DR4/LR colocalization correlated with increasing oxaliplatin resistance (positive slope significantly different from zero).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 and C109 are supported by correlation analyses of patient CTC staining (Figure 7F-G). The correlations provide translational validation of the in vitro mechanism. Linear regression shows significant deviation from zero (p<0.0001) for both relationships. However, the scatter in the data is substantial, and some outliers are apparent. The correlations support the mechanism but individual patient variability is high. Sample size (21 samples from 13 patients) is modest for correlation analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C101"
+    ],
+    "result": "Patient 7, who progressed on FOLFOX treatment over 10 months, exhibited increased DR4/LR colocalization in CTCs despite disease progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C101 is supported by longitudinal CTC analysis with confocal microscopy (Figure 7H). This single-patient case study provides interesting evidence that DR4/LR colocalization can increase during oxaliplatin treatment even with progression. However, this is an N=1 observation and should be interpreted cautiously. The finding suggests that TRAIL resistance mechanisms may differ from oxaliplatin resistance, but requires validation in more patients.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "This is the first study to investigate lipid raft/protein interactions in primary circulating tumor cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 is a novelty claim supported by the authors' statement and self-citation. The technical achievement of staining and analyzing lipid rafts in rare CTCs from patient blood is notable. The claim appears reasonable given the technical challenges, though comprehensive literature searches would be needed to definitively confirm this is the first such study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Palmitoylation of DR4 is critical for receptor oligomerization and lipid raft translocation. Both Fas and DR4 are palmitoylated while DR5 is not. Oxaliplatin treatment increases palmitoylation of \u03b4-catenin in rat neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 are background claims supported by appropriate citations. These establish the biological rationale for investigating DR4 palmitoylation. The rat neuron study (C105) provides precedent that oxaliplatin can enhance palmitoylation, though in a different cell type and protein. These claims appropriately contextualize the novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "Oxaliplatin-resistant cell lines were derived by exposure to increasing oxaliplatin concentrations until 10-fold IC50 increase was achieved. OxR cells showed increased invasion and motility compared to parental cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 describe methods and validation of OxR cell lines. The derivation method is standard and appropriately cited (C106). Validation of oxaliplatin resistance (Figure 1\u2014figure supplement 1A) and increased invasion/motility (Figure 1\u2014figure supplement 1B) confirms the OxR phenotype. These are important quality controls for the model system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C29",
+      "C110"
+    ],
+    "result": "The central finding is that oxaliplatin-resistant CRC cells show enhanced sensitivity to TRAIL-mediated apoptosis through lipid raft translocation of DR4, representing a novel therapeutic vulnerability in chemoresistant cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29 and C110 represent the main conclusion, supported by the collective evidence from claims C30-C100. The mechanism is established through multiple lines of evidence: enhanced TRAIL sensitivity in OxR cells, DR4 upregulation, increased DR4/LR colocalization, enhanced DR4 palmitoylation, functional validation with raft modulators and palmitoylation inhibitors, and translational validation in patient CTCs. The convergence of in vitro, mechanistic, and patient data provides strong support for this major conclusion.",
+    "result_type": "MAJOR"
+  }
+]

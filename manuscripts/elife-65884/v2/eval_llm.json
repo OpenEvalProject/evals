@@ -1,0 +1,379 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11"
+    ],
+    "result": "The study is based on the hypothesis that shared phenotypic features in MDEMs arise from shared epigenetic and transcriptomic alterations downstream of distinct genetic mutations in epigenetic regulators, following a causal chain from coding variant to epigenomic abnormalities to transcriptome perturbations to phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, and C11 establish the conceptual framework and hypothesis of the study. C1 states established knowledge about MDEMs, C2 presents the central hypothesis being tested, and C11 describes the proposed causal chain. These claims are appropriately framed as the study's premise and are supported by citations and logical reasoning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Using ATAC-seq on CD19+ B cells from three MDEM mouse models (7 KS1, 5 KS2, 5 RT1, and 12-7 wild-type mice), the study identified 420 promoter peaks with shared differential accessibility across all three disorders at 10% FDR, with 98.8% showing concordant directionality. The novel overlap analysis method provided >4-fold more shared peaks than standard approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C31 and C100-C102 describe the chromatin accessibility findings with specific quantitative results and sample sizes. The statistical significance is reported (p < 2.2e-16), concordance of effect directions is high (98.8%), and the methodological improvement is validated through comparison. The sample sizes are modest but appropriate for the experimental design, and the use of littermate controls strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Analysis of distal regulatory elements revealed 167 shared disrupted elements across all three MDEMs at 10% FDR, with 98.9% showing concordant directionality. Shared hits showed 7.1-fold enrichment at promoters compared to distal elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 present quantitative findings for distal regulatory elements with appropriate statistical testing. The enrichment at promoters (7.1-fold, p < 2.2e-16) is well-supported. However, the overlap at distal elements is weaker than at promoters (35.6% vs 67%), which is appropriately noted in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C85",
+      "C86"
+    ],
+    "result": "Shared disrupted promoter peaks predominantly show increased chromatin accessibility in KS1 (83.5%) and KS2 (91.2%), while RT1 shows predominantly decreased accessibility (62.2%). This pattern is unexpected given that the causative mutations would theoretically push toward closed chromatin based on the histone marks they affect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 and C85-C86 present a surprising finding with clear quantitative data. The directionality bias is well-documented and the authors appropriately note the discrepancy with theoretical expectations (C86). The discussion acknowledges this as unexpected and proposes potential explanations including indirect effects, compensatory responses, or incorrect assumptions about the mutations' effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C99",
+      "C103"
+    ],
+    "result": "Integration of ATAC-seq and RNA-seq data from the same mice revealed that 40-45% of genes downstream of the top 1000 differentially accessible promoter peaks show differential expression, with strong concordance between accessibility and expression changes (Pearson r = 0.78-0.84).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C55 and C99, C103 demonstrate functional consequences of chromatin accessibility changes. The correlation coefficients are high (0.78-0.84) and the percentage of affected genes is substantial. The experimental design of generating RNA-seq and ATAC-seq from the same mice (C99) strengthens the findings. The gradient analysis (C51) showing decreasing proportions with less stringent cutoffs supports a causal relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "Genes downstream of shared disrupted promoter peaks have a higher probability of dysregulated expression compared to genes downstream of disorder-specific disrupted peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 is supported by comparative analysis shown in Figure 3E and Figure 3\u2014figure supplement 1. This finding validates the hypothesis that shared chromatin alterations are more likely to have functional impact, which is central to the study's approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C3",
+      "C4"
+    ],
+    "result": "The study identified 264 genes with shared differential expression across all three MDEMs at 10% FDR, with a preponderance of downregulated genes (175 down vs 89 up), corresponding to 587 total loci when combined with chromatin accessibility data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60, C3, and C4 present the core quantitative findings for shared gene expression changes. The numbers are specific and consistent across the abstract and results. The statistical approach using the novel overlap method is appropriate, and the directionality bias toward downregulation is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Only 29 genes show both shared differential expression and shared differential promoter accessibility across all three MDEMs, representing modest enrichment (OR=2.37, p=0.0001). This indicates convergent gene expression dysregulation that is not always a direct consequence of shared epigenetic alterations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 reveal an important finding about the relationship between chromatin and expression changes. The modest overlap (29 genes, OR=2.37) is statistically significant but indicates that many expression changes occur without corresponding promoter accessibility changes. This is appropriately interpreted as evidence for indirect effects and is consistent with the complexity of gene regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "In KS1 and KS2, but not RT1, the top differentially expressed genes are more likely to have disrupted promoters than genes further down the differential list.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is supported by the analysis in Figure 4G showing a gradient effect in KS1 and KS2 but not RT1. This disorder-specific difference is interesting and suggests different mechanisms may predominate in RT1 versus the Kabuki syndromes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Transcription factor motif analysis revealed that NF-\u03baB pathway transcription factors are affected at the expression level in all three disorders, but overall the regulatory network disruption does not converge to a few dominant transcription factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67 and C68 are supported by the motif enrichment analysis. The finding of modest enrichments and lack of convergence on dominant transcription factors is appropriately interpreted as indicating widespread, distributed regulatory disruption rather than focused effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Gene set analysis revealed collective dysregulation of transcription factors in all three MDEMs and IgA deficiency genes in KS1 (p=0.03) and RT1 but not KS2. Serum IgA measurements confirmed IgA deficiency in KS1 (p=0.0008) but not KS2 (p=0.8), supporting the gene expression findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 and C6-C8 demonstrate that collective subtle changes in multiple genes can explain specific phenotypes. The gene set analysis shows statistically significant shifts (p=0.001 for TFs in KS1, p=0.03 for IgA genes in KS1), and the IgA measurements provide orthogonal validation. The absence of IgA deficiency in KS2 despite high phenotypic similarity to KS1 is a surprising and well-supported finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "Collective defects in expression of transcription factors and IgA deficiency genes are not driven by similar shifts toward abnormal promoter accessibility, except for transcription factor promoters in RT1 (p=0.04).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 indicates that the collective gene expression changes occur without corresponding promoter accessibility changes in most cases. This supports the interpretation that many effects are indirect and reinforces the complexity of the regulatory disruption.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C41",
+      "C83"
+    ],
+    "result": "KS1 and KS2 share a greater proportion of their molecular abnormalities than either shares with RT1, consistent with their greater phenotypic similarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41 and C83 are supported by pairwise overlap analyses shown in Figure 2\u2014figure supplement 2. The authors verified this is not an artifact of using the same wild-type controls for KS1 and KS2. This finding aligns with clinical observations and validates the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "PCA analysis shows KS1 mice cluster close to RT1, while KS2 clusters closer to wild-type with smaller effect sizes, potentially explained by X-chromosome mosaicism in KS2 female mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 describe PCA results with a reasonable biological explanation for the KS2 pattern. The mosaicism explanation (C34) is plausible given X-inactivation in females, though this remains somewhat speculative as it was not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "The study used only female mice because complete loss of Kdm6a is lethal in male mice, enabling comparison across all three disease models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91 and C92 explain a key methodological choice. The lethality in males (C92) is stated as the authors' observation. While this limits generalizability, it is a reasonable experimental design decision given the constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "Simulation studies validated that the novel overlap analysis method provides substantially greater power to estimate overlap size compared to standard approaches, with false discovery proportion of 10.9% close to the nominal 10% FDR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93 and C94 validate the novel statistical method through simulation. The FDR control is appropriate (10.9% vs 10% nominal), and the increased power is demonstrated. This methodological contribution is important for the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "99.88% of identified ATAC peaks overlapped DNase Hypersensitivity Sites from ENCODE B cell data, validating that they represent true regulatory regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 provides important orthogonal validation of the ATAC-seq peak calls using independent public data. The high overlap percentage (99.88%) strongly supports the technical quality of the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C82",
+      "C90"
+    ],
+    "result": "The findings indicate that MDEMs exhibit generalized, systems-level dysregulation with widespread epigenetic perturbations, making them effectively complex disorders at the molecular level despite being Mendelian at the genetic level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78, C82, and C90 present the study's main interpretive conclusions. These are well-supported by the extensive data showing: (1) many chromatin-expression links (C77), (2) systematic changes in phenotype-relevant genes (C78), and (3) widespread distributed effects (C82, C90). The conceptualization of MDEMs as molecularly complex is a reasonable interpretation of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background information establishes that KS1, KS2, and RT1 are caused by haploinsufficiency in KMT2D, KDM6A, and CREBBP respectively, with shared phenotypes including intellectual disability, growth retardation, and immune dysfunction, particularly IgA deficiency in KS1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C22 present established background knowledge supported by appropriate citations. These provide necessary context for the study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "IgA deficiency has been observed in both male and female KS1 patients and mice, and the immune dysfunction in KS1 mice mimics many aspects seen in patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 are supported by citations to prior work (Pilarowski et al., 2020). These claims justify the relevance of the mouse model and address concerns about sex-specific effects, though they rely on prior studies rather than new data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "Many shared genes identified are not known to be directly targeted by KMT2D, KDM6A, or CREBBP proteins, supporting the possibility of indirect effects or compensatory responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C87 is stated as supporting evidence for a hypothesis but lacks specific quantification or systematic analysis. The claim that 'many' genes are not direct targets is not rigorously demonstrated with data showing which genes are or are not known targets. This weakens what could be an important mechanistic insight.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The study profiled CD19+ B cells from peripheral blood of 2.5-3.5 month old mice, the age when IgA deficiency first manifests in KS1 mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 describe key experimental design choices with appropriate justification. The age range selection is based on prior characterization of the KS1 model (C98, citing Pilarowski et al., 2020).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C9",
+      "C10"
+    ],
+    "result": "MDEMs are caused by coding variants in epigenetic regulators, which are generally intolerant to loss-of-function variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C10 present established knowledge supported by citation (Boukas et al., 2019). These provide important context but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "This study differs from DNA methylation episignature studies by specifically designing to identify abnormalities with primary functional roles in shared MDEM pathogenesis rather than maximizing phenotypic prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88 and C89 appropriately distinguish this work from related studies. The distinction between predictive episignatures and functionally relevant alterations is valid and important for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "Abnormalities in IgA deficiency genes are present in KS1 and RT1 but absent in KS2, providing an exception to the general pattern of greater KS1/KS2 similarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 summarizes a key finding that is well-supported by the gene set analysis (C70-C72) and IgA measurements (C73-C74). This phenotype-specific difference is important for understanding the relationship between molecular and phenotypic similarity.",
+    "result_type": "MAJOR"
+  }
+]

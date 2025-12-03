@@ -1,0 +1,2315 @@
+{
+  "submission": {
+    "id": "66484f5b-7203-49d6-94a2-8994638fd7d1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T13:49:52.922827Z",
+    "updated_at": "2025-12-03T13:49:52.922827Z"
+  },
+  "content": [
+    {
+      "id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "submission_id": "66484f5b-7203-49d6-94a2-8994638fd7d1",
+      "content_type": "manuscript",
+      "content_text": "# A new insight into RecA filament regulation by RecX from the analysis of conformation-specific interactions\n\n## Authors\n\n- Aleksandr Alekseev<sup>1</sup> ([ORCID: 0000-0003-4371-265X](https://orcid.org/0000-0003-4371-265X)) \u2020\n- Georgii Pobegalov<sup>1</sup> ([ORCID: 0000-0003-0836-0732](https://orcid.org/0000-0003-0836-0732)) \u2020\n- Natalia Morozova<sup>1</sup>\n- Alexey Vedyaykin<sup>1</sup>\n- Galina Cherevatenko<sup>1</sup>\n- Alexander Yakimov<sup>1</sup>\n- Dmitry Baitin<sup>2</sup>\n- Mikhail Khodorkovskii<sup>1</sup>\n\n### Affiliations\n\n1. Peter the Great St. Petersburg Polytechnic University St. Petersburg Russian Federation ([ROR:02x91aj62](https://ror.org/02x91aj62))\n2. Petersburg Nuclear Physics Institute Named by B.P. Konstantinov of National Research Center \u00abKurchatov Institute\u00bb Gatchina Russian Federation ([ROR:037styt87](https://ror.org/037styt87))\n\n\u2020 Corresponding author\n\n## Abstract\n\nRecA protein mediates homologous recombination repair in bacteria through assembly of long helical filaments on ssDNA in an ATP-dependent manner. RecX, an important negative regulator of RecA, is known to inhibit RecA activity by stimulating the disassembly of RecA nucleoprotein filaments. Here we use a single-molecule approach to address the regulation of (Escherichia coli) RecA-ssDNA filaments by RecX (E. coli) within the framework of distinct conformational states of RecA-ssDNA filament. Our findings revealed that RecX effectively binds the inactive conformation of RecA-ssDNA filaments and slows down the transition to the active state. Results of this work provide new mechanistic insights into the RecX-RecA interactions and highlight the importance of conformational transitions of RecA filaments as an additional level of regulation of its biological activity.\n\n## Introduction\n\nIn bacteria, the RecA protein is a central player in DNA repair, genetic recombination, and SOS response activation (Cox, 1999; Lusetti and Cox, 2002; Cox, 1991; Clark and Sandler, 1994; d\u2019Ari, 1985). RecA acts through assembly of long helical filaments on ssDNA in an ATP-dependent manner (van Loenhout et al., 2009; VanLoock et al., 2003b; Takahashi and Nord\u00e9n, 1994; Galletto et al., 2006; Hegner et al., 1999). RecA-ssDNA filaments can further pair with homologous duplex DNA, catalyzing DNA strand exchange reaction, a key step during homologous recombination which ensures rescue of stalled replication forks, faithful DNA repair, and genetic recombination (Cox, 2007a; Heller and Marians, 2006). Apart from that, RecA-ssDNA filaments stimulate proteolytic cleavage of the LexA repressor, allowing activation of over 40 SOS response genes involved in DNA repair and cell cycle regulation (Little, 1993; Baralla, 2008). Importantly, RecA-dependent SOS response activation is one of many pathways for development of antibiotic resistance by bacteria through enhanced mutagenesis in the presence of continuous DNA damage. RecA nucleoprotein filaments are very dynamic and may experience large-scale conformational changes induced by ATP binding and hydrolysis (van Loenhout et al., 2009; Kim et al., 2014; Kim et al., 2017; Nishinaka et al., 2007; Alekseev et al., 2020b). Besides intrinsic ATPase activity of RecA, assembly and stability of RecA-ssDNA filaments are also dynamically regulated by a network of various protein mediators (Bell et al., 2012; Gasior et al., 2001; Morimatsu and Kowalczykowski, 2003; Cox, 2007b; Baitin et al., 2008).\n\nRecX is an important negative regulator, which has been reported to suppress ATPase, DNA pairing, and strand exchange activities of RecA (Ragone et al., 2008; VanLoock et al., 2003a; Le et al., 2017; C\u00e1rdenas et al., 2012; Gruenig et al., 2010). RecX also inhibits RecA co-protease activity (Stohl et al., 2003). Genes encoding RecX were found in genomes of a wide diversity of bacteria and some plants (Lin et al., 2007). In Escherichia coli, recX is a SOS-regulated gene located downstream of recA, which encodes a small 19.4 kDa protein. recX and recA are co-transcribed; however, expression of recX is downregulated at both transcriptional and translational levels resulting in about a 500-fold lower protein level compared to RecA (Pag\u00e8s et al., 2003).\n\nIn vivo studies showed that either loss-of-function RecX mutation or overexpression of RecX decreases bacterial resistance to UV irradiation (Stohl et al., 2003), while overexpression of RecA had a toxic effect on cell viability when RecX was mutated (Vierling et al., 2000; Papavinasasundaram et al., 1998; Sano, 1993; Stohl and Seifert, 2001). For some species, such as Deinococcus radiodurans, RecX shows dual-negative regulation of RecA function - it not only directly inhibits RecA activity at the protein level but also inhibits RecA induction at the transcriptional level (Sheng et al., 2005). Interestingly, RecX is also an important mediator of natural transformation in Bacillus subtilis, where it colocalizes with RecA threads, while the lack of RecX decreases chromosomal transformation approximately by 200-fold (C\u00e1rdenas et al., 2012).\n\nA capping model has been proposed to elegantly explain the inhibitory mechanism of RecX at substoichiometric concentrations relative to RecA. According to this model, RecX binds to the growing 3\u2019-end of the RecA filament and blocks the filament extension, which results in net filament depolymerization (Drees et al., 2004a). On the other hand, observation of faster RecA depolymerization at higher RecX concentrations together with structural evidence of RecX binding along the RecA filament groove (Ragone et al., 2008; VanLoock et al., 2003a; Shvetsov et al., 2014) indicates that alternative internal nicking mechanism may exist, in which RecX locally destabilizes the RecA filament and increases the number of the disassembling ends (Gruenig et al., 2010; Venkatesh et al., 2002). In support of this model, a recent study of Mycobacterium smegmatis RecX (MsRecX) showed that incubation of MsRecX with RecA filaments resulted in RecA dissociation from within the filament. It has also been shown that mechanical forces, which are an important factor in regulating the stability of the RecA filament (Le et al., 2017; Fu et al., 2013), can counteract the inhibitory effect of RecX at as little as 7 pN, prevent disassembly of the RecA filament, and even stimulate the repolymerization of RecA on DNA in the presence of RecX.\n\nAnother completely different model of the RecX inhibitory action was proposed based on the transmission electron microscopy data (VanLoock et al., 2003a). This model is not associated with a decrease in the number of RecA monomers on DNA as a result of filament depolymerization, but alternatively suggests that RecX binds to the interface between RecA monomers and blocks the transition between inactive and active states, thereby preventing ATP hydrolysis.\n\nSingle-molecule studies proved to be a powerful tool for addressing the inhibitory mechanism of RecX. Magnetic tweezers assays have been used to directly observe disassembly of RecA filaments induced by RecX proteins from Mycobacterium tuberculosis (Le et al., 2014) and B. subtilis (Le et al., 2017). Measurements of the dynamic characteristics of RecA-ssDNA filaments in the active state showed that RecX promotes net depolymerization of preformed filaments at low tensile forces (about 3 pN) in ATP hydrolysis and RecX concentration-dependent manner, which is generally consistent with results of ensemble experiments. At the same time, this approach made it possible to discover that depolymerization of the RecA filament took place in a non-monotonic stepwise manner with pauses of various lengths (10\u2013100 s). Moreover, RecA depolymerization could proceed with an initial lag phase followed by a strikingly rapid net depolymerization phase (Le et al., 2017) indicating a complicated nature of interaction between RecX and RecA-DNA complex.\n\nRecently, we characterized three mechanically distinct conformational states that occur within the E. coli RecA-ssDNA filaments in the course of ATP hydrolysis (Alekseev et al., 2020b). In the present work, building on the developed single-molecule assay we aimed to study interactions of E. coli RecX with different forms of RecA nucleoprotein filaments to further deepen understanding of RecX inhibitory mechanism.\n\n## Results\n\n### RecX stimulates biphasic shortening of RecA-ssDNA filaments\n\nIn this work, we addressed the dynamics of interaction between E. coli RecX and RecA nucleoprotein filaments (Figure 1A) utilizing a single-molecule approach which combines dual-trap optical tweezers and a microfluidic laminar flow cell for manipulation of individual DNA molecules (Figure 1B) as reported elsewhere (Alekseev et al., 2020b; Candelli et al., 2014; Gutierrez-Escribano et al., 2019; Forget and Kowalczykowski, 2012; Brouwer et al., 2016; Belan et al., 2021; Alekseev et al., 2020a; Yakimov et al., 2017). The microfluidic flow cell (Lumicks B.V.) consisted of five laminar flow channels which facilitated optical trapping of the beads, DNA tethering, and RecA nucleoprotein filaments assembly (see Materials and methods). Additionally, changing the composition and order of the microfluidic channels provided flexibility in the experimental design to study how RecX interacts with various forms of RecA-DNA filaments (Figure 1\u2014figure supplement 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/78409/elife-78409-fig1-v2.jpg)\n\n**Figure 1.:** (A) A schematic of RecX binding along the groove of the active RecA-ssDNA. Atomic structure model for RecA::RecX::ssDNA is adopted from Shvetsov et al., 2014. (B) A schematic of a five-channel microfluidic flow cell (Lumicks). Dash line highlights two working regions. The three-channel region was used to study the effect of RecX on the RecA-ssDNA filament. In the five-channel region, the beads trapping, DNA tether formation, and generation of ssDNA by force-induced melting were performed. (C) The change in the length of RecA-ssDNA filament upon transition from the channel containing 1 \u03bcM RecA and 1 mM ATP to the channel containing 1 \u03bcM RecA, 1 mM ATP, and various concentrations of RecX. During incubation, a constant tension of 3 pN was applied to the tether. (D) The impact of RecX concentration on the average rate of reduction in the RecA-ssDNA filament length over 250 s after initial steep decrease. (E) The dependence of the RecX induced initial sharp decrease in RecA-ssDNA filament on the RecX concentration. Solid curve - fit of experimental data with Hill equation with a Hill coefficient of 2.0\u00b10.3. Each data point in (D) and (E) is a mean value of at least three measurements, bars represent SD.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78409/elife-78409-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Single-molecule manipulations were performed within a five-channel microfluidic flow chip (A). Two working regions are highlighted with a dash line. The three-channel region (left) was used to study the effect of RecX on the RecA-ssDNA filament (B\u2013D). In the five-channel region, the beads trapping, DNA tether formation, and generation of ssDNA by force-induced melting were performed (E). The RecA-ssDNA filaments were assembled by applying a stretching force of 12 pN to the ssDNA molecule in the channel containing 1 \u03bcM RecA and 1 mM ATP. Binding of RecA to ssDNA was followed by an increase in the end-to-end distance (F).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/78409/elife-78409-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Adopted from Alekseev et al., 2020b. The dash line indicates 3 pN tension.\n\nPreviously, single-molecule magnetic tweezers experiments revealed that M. tuberculosis RecX and B. subtilis RecX stimulate gradual disassembly of the corresponding active RecA-ssDNA filaments resulting in the net decrease of the DNA tether length (Le et al., 2017; Le et al., 2014). First, we aimed to investigate whether E. coli RecX (further referred as RecX) exhibits the same behavior. To address the dynamics of RecA filaments preassembled on 11,071 nt long ssDNA (further referred as RecA-ssDNA filaments), the RecA-ssDNA tether was stretched with a constant force of 3 pN while its end-to-end distance was simultaneously recorded. The force was chosen as low enough to not introduce structural deformations in the filament as reported previously (Alekseev et al., 2020b).\n\nIntroduction of the preassembled RecA-ssDNA filament into the channel containing RecX (0.2\u20131 \u03bcM) in the presence of both RecA (1 \u03bcM) and ATP (1 mM) resulted in the initial step-like shortening of the tether followed by a slow decrease in the end-to-end distance (Figure 1C). After 200 s of incubation with RecX the length reduction reached steady state and proceeded with an almost linear profile. Average rate of the filament length reduction was dependent on the concentration of RecX (Figure 1D). Higher RecX concentrations stimulated faster shortening in line with previously reported observations for M. tuberculosis and B. subtilis RecX (Le et al., 2017; Le et al., 2014). Interestingly, the initial step-like shortening of the RecA-ssDNA filament also scaled with RecX concentration (Figure 1E). Corresponding dependence is presented in Figure 1E and is well fitted by a Hill equation with a Hill coefficient of 2.0\u00b10.3. These observations indicate that E. coli RecX stimulates shortening of the RecA-ssDNA filaments which proceeds in two phases.\n\n### Shortening of RecA-ssDNA filaments induced by RecX is driven by reversible conformational change in the filament and slow filament disassembly\n\nAt a stretching force of 3 pN, the length of the RecA-ssDNA filament is significantly greater than the length of bare ssDNA (van Loenhout et al., 2009; Alekseev et al., 2020b; Figure 1\u2014figure supplement 2). Therefore, shortening of the RecA-ssDNA tether can be caused by RecX displacing RecA from ssDNA. Alternatively, since both RecX and RecA were present at comparable concentrations, RecX could interact with free RecA in solution preventing its interaction with DNA.\n\nAdditionally, RecA-ssDNA filaments may adopt different conformations depending on the nucleotide cofactor bound in the RecA monomer-monomer interface. ATP-bound or \u2018active\u2019 form is characterized by a longer pitch which results in a stretched conformation of the filament (Yu and Egelman, 1992; DiCapua et al., 1990; Lebedev et al., 2003; Ellouze et al., 1995; Ellouze et al., 1999; Stasiak et al., 1988; Chen et al., 2008), while \u2018inactive\u2019 ADP-bound and apo forms are characterized by a smaller pitch and a more compact structure (Yu and Egelman, 1992; DiCapua et al., 1990; Lebedev et al., 2003; Ellouze et al., 1995; Ellouze et al., 1999; Ruigrok et al., 1993; Chang et al., 1988). Hence, shortening of the RecA-ssDNA tether induced by RecX can be caused not only by RecA dissociation but also by a conformational transition between active and inactive states.\n\nTo further elucidate the details of the RecX interaction with RecA nucleoprotein filaments, we performed experiments without the presence of free RecA during the incubation with RecX. For this, we first preassembled the RecA-ssDNA filament in the channel containing RecA and ATP and transferred the tether into a channel containing only the buffer supplemented with ATP (Figure 2A). Upon transfer, RecA-ssDNA tether did not show any significant change in its length and was relatively stable. This confirmed that RecA is tightly bound to ssDNA, and no turnover between DNA-bound and free RecA is necessary to keep RecA-ssDNA filaments stable.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/78409/elife-78409-fig2-v2.jpg)\n\n**Figure 2.:** (A) A schematic of the experiment revealing that RecX is able to induce reversible structural changes in the RecA-ssDNA filaments. (B) RecX induces reversible changes in the RecA-ssDNA filament structure in the presence of ATP. (C) A comparison of the reversible (compression) and the irreversible (disassembly) reduction in RecA-ssDNA filament length. Stacked histogram represents multiple measurements for six different molecules. Bars represent SD.\n\nNext, the RecA-ssDNA filament was transferred into a channel containing ATP (1 mM) and RecX (1 \u03bcM). This transition resulted in the reduction of the tether length (Figure 2B) in a manner similar to the experiment described in the previous section, indicating that shortening of the RecA-ssDNA filament is induced by direct interaction of RecX with the DNA-bound RecA since this process does not depend on the presence of free RecA. Surprisingly, when the RecA-ssDNA filament was moved back to the channel containing ATP without RecX a gradual elongation of the tether length was observed (Figure 2B). Since no free RecA was present, the observed elongation is solely driven by structural rearrangement within the RecA-ssDNA filament. This indicates that binding of RecX to the RecA-ssDNA tether introduces a conformational change within the RecA nucleoprotein filament that leads to a shortening of its overall length, which can be reversed when RecX is eliminated.\n\nCycles of shortening and elongation of the tether could be observed multiple times on the same DNA molecule by simply transferring the RecA-ssDNA filament between the RecX and the buffer channels (Figure 2B). However, after each incubation with RecX subsequent length restoration was not complete with the RecA-ssDNA filaments consistently showing decreased length. This indicates that at each cycle a part of RecA irreversibly dissociated from DNA (Figure 2C). These observations suggest that RecX-induced shortening of the RecA-ssDNA tether is a combined result of two processes: a fast conformational transition into a more compact form and slow disassembly of the RecA nucleoprotein filament.\n\n### RecX interacts with inactive RecA-ssDNA filaments and inhibits transition into the active state\n\nAt saturated concentrations of ATP (1 mM used in the current work), the RecA-ssDNA filament adopts an overall \u2018active\u2019 or stretched conformation. However, continuous ATP hydrolysis occurs throughout the filament and generates a dynamic and heterogeneous structure in which apo and ADP conformations may transiently occur as local patches (Alekseev et al., 2020b; Alekseev et al., 2020a; Boyer et al., 2019). One possible explanation of the reversible shortening of the RecA-ssDNA tether is that RecX interacts with the compressed conformations locally occurring within the filament and increases their lifetime. To test this hypothesis, we addressed the interaction of RecX with the apo form of RecA-ssDNA filaments.\n\nWe first assembled an active filament in the presence of 1 \u03bcM RecA and 1 mM ATP and then transferred it into a channel containing a buffer without ATP (Figure 3A). ATP hydrolysis stimulated fast accumulation of the compact apo conformation accompanied by a characteristic reduction of the tether length (Figure 3B). Next, the filament was transferred into the channel containing 500 nM RecX and incubated for 100 s. During incubation no change in the filament length was registered. After that, the filament was transferred back into the buffer channel and subsequently into the RecA-ATP channel.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/78409/elife-78409-fig3-v2.jpg)\n\n**Figure 3.:** (A) A schematic of the experiment revealing that RecX binds inactive RecA-ssDNA filaments. (B) The change of the RecA-ssDNA filament length upon conformational transitions between apo and ATP-bound states. Incubation of apo RecA-ssDNA filament with 500 nM RecX (green area) leads to a slowdown of the subsequent decompression of the RecA-ssDNA filament (black arrow points the beginning of the slowed down decompression). A constant tension of 3 pN was applied to the tether during incubation and transitions. (C) Relative extension of the RecA-ssDNA filament in the course of decompression after incubation of inactive RecA-ssDNA filament with 500 nM RecX for 30, 100, and 200 s. (D) Corresponding rate constants of the decompression obtained by exponential fitting (solid line in (C)) of the elongation profiles. Each point is a mean of at least six measurements. Bars represent SD.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78409/elife-78409-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** ATP-containing channel was also supplemented with free RecA.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/78409/elife-78409-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** ATP-containing channel was also supplemented with free RecA.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/78409/elife-78409-fig3-figsupp3-v2.jpg)\n\nIn the RecA-ATP channel, we observed a slow elongation of the tether suggesting gradual accumulation of the stretched ATP conformation within the RecA-ssDNA filament due to a conformational transition from the apo into the ATP-bound state. However, decompression of the filament after incubation with RecX was remarkably slower compared to the case when incubation with RecX was omitted (Figure 3C). Interestingly, when the same molecule was subjected to another cycle of apo-ATP transition without RecX incubation, decompression proceeded rapidly with the rate similar to the control case without RecX incubation. This experiment confirms that RecX interacts with the apo form of the RecA-ssDNA and delays its conformational transition into the ATP-bound form. However, decompression of the RecA-ssDNA filament irreversibly disrupts a specific linkage between RecX and the apo state of the filament.\n\nTo quantitatively assess the observed effect, we varied the time of incubation with RecX and calculated the rate constants of the corresponding decompression events using exponential fitting (Figure 3C and D). A profile of the filament elongation was fitted with the following expression: L=L0+\u0394L\u00b7exp(\u2212kt), where L0 is the length of the apo state of the RecA-ssDNA filament, \u0394L is the change of RecA filament length upon conformational transition from the apo to the ATP-bound state, and k is the rate constant of the conformational transition. Increasing the time of incubation with RecX from 30 to 200 s resulted in slowing down of the decompression characterized by decrease in kdecompression from 0.2 to 0.13 s\u20131. For comparison, the rate constant of the RecA-ssDNA filament decompression without incubation with RecX was 1.3\u00b10.3 s\u20131 (N=5). This value is limited by the temporal resolution of the current measurement, e.g., the time required to transfer the tether between the channels while operating optical tweezers in a force clamp mode. In the previous work, using the same DNA construct and a fast movement between microfluidic channels the rate constant of the apo-ATP transition was estimated to be greater than 10 s\u20131 (Alekseev et al., 2020b).\n\nAdditional control experiments verified that RecX remains bound to the apo form of the RecA-ssDNA filament in the RecX-free buffer (Figure 3\u2014figure supplement 1). The observed slowdown in the decompression rate was also independent of how long the RecA-ssDNA filament remained in the inactive state in the absence of RecX (Figure 3\u2014figure supplement 2). Our results indicate that RecX tightly binds the apo state of RecA-ssDNA filament and stabilizes it, retarding the apo-ATP transition. The conformational transition of the RecA-ssDNA filament from the apo to the ATP state results in the gradual loss of specific interaction of RecX and the apo conformation.\n\nWe also examined the interaction of RecX with ADP state of the RecA-ssDNA filament. Recently, it was shown that ADP and apo conformations represent two distinct inactive states of RecA-ssDNA filament (Alekseev et al., 2020b). Incubation of ADP-bound form of the RecA-ssDNA filament with RecX also resulted in the slowdown of the following decompression (Figure 3\u2014figure supplement 3) similar to the RecX interaction with apo RecA-ssDNA filament. Interestingly, ADP-bound RecA-ssDNA filaments exhibited greater stability when supplemented with RecX.\n\n### ATP promotes RecX dissociation from RecA-ssDNA filaments\n\nTo understand whether RecX remains bound to the RecA-ssDNA filament after ATP-induced decompression we generated a fluorescent version of E. coli RecX. For this, the N-terminus of RecX was fused to a green fluorescent protein mNeonGreen (Clavel et al., 2016; Shaner et al., 2013) via a short peptide linker. mNeonGreen-RecX (RecXmNG) retained the inhibitory effect on RecA at the level comparable to the wild-type RecX. This was tested by ability of RecXmNG to inhibit ATPase activity of RecA in bulk (Figure 4A) as well as to slow down the apo-ATP transition rate in the single-molecule experiments (Figure 4B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/78409/elife-78409-fig4-v2.jpg)\n\n**Figure 4.:** (A) Inhibition of RecA ATPase activity by wild-type RecX (blue) and fluorescent mNeonGreen-RecX (RecXmNG) (green). ATP hydrolysis by RecA in the absence of RecX is shown in black. Each data point represents the average of three independent experiments (error bars \u2013 SD). (B) Relative extension of the RecA-ssDNA filament in the course of apo-ATP transition without incubation in RecXmNG (black curve) and after incubation of apo RecA-ssDNA filament with 500 nM RecXmNG for 100 s (blue curve). (C) Fluorescent images of: RecA-ssDNA filament in apo (top) and ATP-bound state (middle) after incubation with 1 \u03bcM RecXmNG for 30 s; RecA-ssDNA filament assembled in the presence of ATPgS (bottom) after incubation with 1 \u03bcM RecXmNG for 30 s. Scale bar is 5 \u03bcm. (D) Comparison of the average intensity of the tether after incubation with RecXmNG for apo (N=6 molecules), ATP-bound RecA-ssDNA filament (N=3 molecules), and the filament assembled in the presence of ATPgS (N=6 molecules) (consistently with (B)). Data are representative of three independent experiments, and values are expressed in mean \u00b1 SD.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78409/elife-78409-fig4-figsupp1-v2.jpg)\n\nTo evaluate binding of RecXmNG to the apo form of RecA-ssDNA filaments, we first preassembled the active RecA-ssDNA filament and transferred it into the channel with ATP-free buffer to obtain the apo conformation. After that, the tether was incubated in the channel containing 1 \u03bcM of RecXmNG for 30 s and then transferred back to the buffer channel (lacking both RecXmNG and ATP) to be imaged using wide-field fluorescence microscopy. Visualization revealed a strong fluorescent signal along the DNA tether confirming that RecXmNG tightly binds the compressed RecA-ssDNA filament (Figure 4C). For fluorescence experiments, a longer DNA substrate of ~24,000 nt was used to obtain a larger separation between the beads.\n\nNext, we transferred the RecXmNG-bound filament to the channel containing RecA and ATP to induce a transition into the active state and imaged the tether again after decompression was completed. Fluorescent visualization demonstrated significant loss of RecXmNG from the RecA-ssDNA filament (Figure 4C). Quantitative analysis showed that the conformational transition of RecA filaments to the ATP-bound state results in reduction of the average intensity of RecXmNG bound to the tether almost down to a background level (Figure 4D).\n\nTo address dynamics of the apo-ATP transition, we performed continuous fluorescent visualization of the RecA-ssDNA filament during the transfer from the ATP-free to the ATP-containing channel (Video 1). To keep a constant stretching force during image acquisition, one of the beads was released from the optical trap, and the tether was stretched by a constant fluid flow adjusted to exert a force of ~3 pN. Upon entry into the ATP-containing channel, the dynamic increase in the tether length was correlated to the gradual loss of the RecXmNG fluorescence signal. These observations suggest that ATP-induced transition between inactive and active states of the RecA filament promotes dissociation of RecX.\n\n![Video 1.](https://cdn.elifesciences.org/articles/78409/elife-78409-video1.mp4.jpg)\n\n**Video 1.:** Scale bar is 5 \u00b5m.\n\nWe also assesed RecXmNG binding to the active form of RecA-ssDNA using non-hydrolyzable ATP analog, ATP\u03b3S. The RecA-ssDNA filament was formed in the presence of 0.5 mM ATP\u03b3S, after which was incubated in the channel containing 1 \u03bcM RecXmNG and 0.5 mM ATP\u03b3S for 30 s, and then was visualized in the channel containing 0.5 mM ATP\u03b3S and no proteins. As a result, average intensity of the tether was close to the background level (Figure 4D) indicating that RecXmNG did not remain bound to the active RecA-ssDNA filament. Thus we suppose that RecX interaction with active form of RecA-ssDNA filament is much weaker compared to the binding of RecX to apo state. Interestingly, in the presence of ATP\u03b3S, RecX did not induce any shortening of RecA-ssDNA filaments (Figure 4\u2014figure supplement 1) indicating the essential role of ATP hydrolysis in the RecX-induced destabilization of RecA-ssDNA filaments.\n\n### RecX efficiently disassembles RecA filaments on dsDNA\n\nIn addition to RecA filaments assembled on ssDNA, we decided to test whether RecX exhibits similar effects on RecA filaments formed on dsDNA. Since, the assembly of RecA-dsDNA filament is impeded at room temperature, the experiment was carried out at 37\u00b0C. RecA-dsDNA filaments were assembled by applying a tension of 55 pN to the dsDNA molecule (11,071 bp) in the presence of 1 \u03bcM RecA and 1 mM ATP (Figure 5A). As a result of RecA binding the length of the dsDNA molecule increased to 5.4\u00b10.1 \u03bcm (N=9), which corresponds to ~150% elongation of the B-form of dsDNA. At a force of 3 pN RecA-dsDNA filaments exhibited the length of 4.9\u00b10.2 (N=9), which is slightly lower than the length of RecA filaments formed on equivalent ssDNA at the same force; however, this length was stable over a long period of time.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/78409/elife-78409-fig5-v2.jpg)\n\n**Figure 5.:** (A) The assembly of the RecA-dsDNA filament. (B) The disassembly of the RecA-dsDNA filament in the presence of 200 nM RecX. (C) The comparison of the average length reduction of RecA-dsDNA (N=4) and RecA-ssDNA (N=4) filament induced by 200 nM RecX. The data for RecA-ssDNA is consistent with Figure 1D. Data are representative of at least three independent experiments, and values are expressed in mean \u00b1 SD.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78409/elife-78409-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) ATP elimination leads to rapid RecA-dsDNA filament disassembly. (B) The elimination of free RecA promotes RecA-dsDNA filament disassembly.\n\nPreassembled RecA-dsDNA filaments were transferred from the channel containing 1 \u03bcM RecA and 1 mM ATP to the channel containing 1 \u03bcM RecA, 1 mM ATP, and 200 nM RecX (Figure 5B) at a constant tension of 3 pN. Surprisingly, in this case, RecX stimulated a dramatic reduction of the tether length down to the length of bare dsDNA within 30 s. Subsequent reintroduction of the tether back to the RecX-free channel did not produce any elongation of the dsDNA molecule. These observations suggest that RecX is highly efficient at irreversible disassembly of RecA-dsDNA filament. Analysis of the results obtained with 200 nM RecX revealed that the average rate of the filament length reduction is two-order higher for the RecA-dsDNA filaments compared to RecA-ssDNA (Figure 5C).\n\n## Discussion\n\nThe results presented above comprise a detailed analysis of the conformation-specific interactions of the E. coli RecX and RecA nucleoprotein filaments. We first discuss the effect of RecX on the RecA-ssDNA filaments. Our experiments confirm that RecX stimulates a net disassembly of the RecA-ssDNA filament; however, this process is very slow and takes hundreds of seconds for an ~5\u03bcm long RecA filament to depolymerize. Previously proposed capping model (Drees et al., 2004a) suggests that RecX binds to the filament end and blocks its growth leading to a net RecA depolymerization. This model alone fails to explain our results since in the absence of RecA polymerization RecX actively stimulated shortening of the RecA-ssDNA filament (Figure 2). Such behavior indicates that RecX also binds along the RecA-ssDNA filament and promotes structural rearrangements and/or disassembly from within the filament.\n\nUnexpectedly, we discovered that RecX interacts with the ADP and apo forms of the RecA-ssDNA filament and inhibits their transition into the ATP-bound state. This is in line with the reported inhibition of the RecA ATPase activity by RecX measured in bulk (Venkatesh et al., 2002) since depletion of the ATP-bound conformation within the filament should effectively reduce the overall rate of ATP hydrolysis. Interestingly, the possibility of RecX to inhibit RecA ATPase without actual displacement of RecA monomers from ssDNA was proposed previously in VanLoock et al., 2003a. It is worth noting that RecX-bound inactive RecA filaments persisted without noticeable changes for over 200 s indicating that RecX does not promote depolymerization of inactive RecA filaments.\n\nInterestingly, when such filaments were supplemented with ATP, RecX gradually dissociated in the course of apo-ATP transition (Figure 4). Previously, low-resolution electron microscopy demonstrated that RecX can bind along the groove of the ATP-bound conformation of RecA filaments (VanLoock et al., 2003a); however, these interactions were addressed at a higher concentration of RecX (3 \u03bcM). Our results indicate that RecX strongly binds the apo conformation of the RecA-ssDNA filament while its affinity to the ATP-bound conformation is significantly lower. Depolymerization of the RecA-ssDNA filament occurred only in the presence of ATP (Figure 2B), suggesting that RecX-stimulated RecA dissociation from DNA is coupled to ATP binding or hydrolysis.\n\nBased on the observations discussed above, we propose a following model of how RecX interacts with RecA-ssDNA filaments under conditions of continuous ATP hydrolysis (Figure 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/78409/elife-78409-fig6-v2.jpg)\n\n**Figure 6.:** In the presence of ATP, RecX binds inactive patches within RecA-ssDNA filaments and hampers the transition to the active state (see text for details).\n\nRecX binds the inactive patches, transiently presented within the active RecA-ssDNA filament, and increases their lifetime by hampering the transition into the active state. The transition of the inactive patch bound by RecX to the active state is accompanied by dissociation of RecX. As a result of the dynamic interaction of RecX with inactive states, their average lifetime and fraction within the filament increase, which leads to the reduction in the filament length. When RecX is removed from solution, bound RecX dissociates as the inactive patches change their conformation to the active, the fraction of inactive states returns to the initial level.\n\nIt is noteworthy that previous electron microscopy studies provide a possible explanation of how RecX binding hampers the apo-ATP transition of the RecA filament. It was shown that the conformational change of the filament is accompanied by a large movement of RecA\u2019s C-terminal domain, which is supposed to be allosterically coupled to the ATPase site (VanLoock et al., 2003b). According to low-resolution electron microscopy studies, RecX binds from the C-terminal domain of one RecA subunit to the core domain of another (VanLoock et al., 2003a). Thus it was proposed that RecX inhibits RecA ATPase activity by preventing conformational transition through clamping RecA\u2019s C-terminal domain. Although the proposed mechanism is in line with the results of the current study, we believe that additional research is required to elucidate the mechanistic basis of the RecX effect on the conformational transitions of the RecA-ssDNA filament.\n\nThe current study showed that RecX-induced fast compression of the RecA-ssDNA tether is characterized by positive cooperativity with the Hill coefficient \u22482 (Figure 1E). However, such fast compression is in contrast to the slow binding of RecX to the compressed RecA filament which apparently does not reach saturation even after 100 s incubation with a micromolar concentration of RecX (Figure 3C). Previous studies revealed that the apo-ATP transition of the RecA-ssDNA flament is highly cooperative (Kim et al., 2014; Alekseev et al., 2020b) meaning that such transitions within the filament are affected by the conformational state of adjacent RecA monomer-monomer interfaces. We hypothesize that apart from inhibition of conformational transitions by direct binding, RecX may interfere with the cooperativity of the apo-ATP transition in the process that involves binding of two RecX monomers.\n\nUnlike RecA-ssDNA complexes, RecX is much more efficient at disrupting RecA filaments formed on duplex DNA. Such filaments mimic postsynaptic RecA-DNA complexes, yet their structure is closely related to the presynaptic RecA-ssDNA filament (Chen et al., 2008). Considering structural similarity, we assume that RecX interacts with the RecA-dsDNA filament in a similar manner by trapping transiently occurring inactive states. However, the internal tension of the stretched duplex DNA makes the compressed form of the RecA filament highly unstable. RecX impedes the transition into the stable active conformation, and by this stimulates the dissociation of RecA (Figure 5B). Instability of the inactive form of RecA-dsDNA filaments was confirmed by a control experiment which demonstrated that elimination of ATP leads to a complete dissociation of RecA from dsDNA within seconds (Figure 5\u2014figure supplement 1A). Alternatively, RecA-dsDNA filaments depolymerization may be due to efficient inhibition of the filament growth by RecX via capping mechanism (Drees et al., 2004a). RecA-dsDNA complexes are not stable without free RecA and quickly depolymerize as a result of ATP hydrolysis, indicating that a significant turnover of free and DNA-bound RecA is necessary for maintaining the filament (Figure 5\u2014figure supplement 1B).\n\nOne potential implication of high efficiency of RecX-induced disruption of RecA-dsDNA filaments is preventing erroneous binding of RecA to a duplex DNA inside the cell. Another interesting possibility is that RecX may interact with the RecA-ssDNA filament and stay bound until the homologous dsDNA is found. Once the strand exchange occurs and the heteroduplex is formed within the filament, RecX stimulates fast dissociation of the postsynaptic complex.\n\nResults of this work provide new mechanistic insights into the RecX-RecA interactions and highlight the importance of conformational transitions of RecA filaments as an additional level of regulation of its biological activity. Regulation of recombination by conformation-specific interactions might be relevant for eukaryotic recombinases Rad51, Dmc1.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>prl574-rpoC(plasmid)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>DNA manipulation, 11 kbp-long substrate; Khodorkovskii Lab, NanoBio, SPbPU, St.Petersburg, Russia</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pBAD-mng-recx(plasmid)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Histag-mNeonGreen-RecX purification (Ampicillin resistance);Khodorkovskii Lab, NanoBio, SPbPU, St.Petersburg, Russia</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Lambda DNA</td>\n      <td>New England BioLabs</td>\n      <td>New England BioLabs:N3011L</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Xbai_L_bio</td>\n      <td>Alkor Bio</td>\n      <td></td>\n      <td>5\u2019-CTAGCGAGTGXXXXX-3\u2019 (X denotes biotin tag)</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>SacI_L_bio</td>\n      <td>Alkor Bio</td>\n      <td></td>\n      <td>5\u2019-XXXXXCAGTCCAGCT-3\u2019 (X denotes biotin tag)</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>SacI_S</td>\n      <td>Alkor Bio</td>\n      <td></td>\n      <td>5\u2019-GGACTG-3\u2019</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Klenow fragment</td>\n      <td>Thermo Scientific</td>\n      <td>Thermo Scientific:EP0052</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>pyruvate kinase (from rabbit muscle)</td>\n      <td>Sigma</td>\n      <td>Sigma:P1506-5KU</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>lactate dehydrogenase (from rabbit muscle)</td>\n      <td>Sigma</td>\n      <td>Sigma: L2500-25KU</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Biotin-16dCTP</td>\n      <td>Jena Bioscience</td>\n      <td>Jena Bioscience:NU-809-BIO16-S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>ATP</td>\n      <td>Sigma</td>\n      <td>Sigma:A7699-1G</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>ATP\u03b3S</td>\n      <td>Sigma</td>\n      <td>Sigma:A1388-25MG</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>poly(dT)</td>\n      <td>Sigma</td>\n      <td>Sigma:P6905-5UN</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>PEP</td>\n      <td>Sigma</td>\n      <td>Sigma:P7252-1G</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### DNA constructs and proteins\n\nA linear 11.1 kbp DNA with biotinylated ends was used for all single-molecule manipulations except fluorescence experiments. This DNA construct was prepared as described previously (Alekseev et al., 2020b; Alekseev et al., 2020a). Briefly, the biotin labeling was performed by a ligation of the biotinylated oligonucleotides XbaI_L_bio and SacI_L_bio to the plasmid vector prl574 containing insertion of the rpoC gene (Metelev et al., 2017) digested with XbaI and SacI restriction enzymes. ssDNA molecules were generated during experiment by a force-induced melting of DNA molecules (Candelli et al., 2013).\n\nFor fluorescence experiments a longer DNA construct was used. A set of 22 kbp and 24 kbp DNA molecules, enabling generation of ssDNA by force-induced melting, was prepared starting from Lambda DNA (48.5 kbp) as follows. The 3\u2019-ends of Lambda DNA were filled in with biotinylated nucleotides. The reaction contained 1\u00d7 Tango Buffer (Thermo Scientific), 50 \u00b5M dATP, dTTP, dGTP (Thermo Scientific), Biotin-16-dCTP (Jena Bioscience), 7.5 nM Lambda DNA (New England Biolabs), 0.3 units/\u00b5l Klenow fragment (Thermo Scientific). After incubation at 37\u00b0C for 30 min the reaction was heat inactivated (10 min at 75\u00b0C), after which DNA was purified using Bio-Gel P-30 size exclusion spin column (Bio-Rad). Then DNA was digested with SacI (Thermo Scientific) in 1\u00d7 Tango Buffer and subsequently ligated with the biotinylated oligonucleotide SacI_L_bio at 22\u00b0C for 2 hr. A 50:1 ratio of oligonucleotides to DNA overhangs was used. Short complementary oligonucleotide SacI_S was added to increase ligation efficiency (Horspool et al., 2010). The reaction was heat inactivated (20 min at 65\u00b0C), after which DNA was purified from the excess of oligonucleotides using the Bio-Gel P-30 spin column.\n\nWild-type EcRecA and EcRecX were purified as described previously (Drees et al., 2004a; Cox et al., 1981; Drees et al., 2004b).\n\nTo visualize RecX interaction with RecA-ssDNA filament, a fluorescent RecXmNG fusion protein was prepared as follows. A genetic construct consisting of 6xHis-tag, short linker (GMASM), mNeonGreen gene, short linker (GGGSGG), and recX (E. coli) was cloned into the pBAD/HisB plasmid vector. E. coli Rosetta cells were transformed with the resulting pBad_mNeonGreen_RecX vector. Bacteria cells were grown at 37\u00b0C. When OD600 reached 0.6, expression was induced by addition of 1 mM isopropyl 1-thio-D-galactopyranoside, after which cells were grown for 3 hr. The cells were harvested by centrifugation and resuspended in a lysis buffer (Na-phosphate buffer, pH 7.5, 500 mM NaCl, 5% glycerol, 10 mM Imidazole, 1 mg/ml Lysozyme). Cells were sonicated for 30 min and were centrifuged for 40 min at 16,000 g. After passing through a 0.4 \u03bcm filter the supernatant was loaded onto a HisTrap HP 1 mL column (GE Healthcare). The protein was eluted with a lysis buffer supplemented with 300 mM Imidazole. The eluted fractions were loaded onto a Superose 6 Increase 10/300 GL column (GE Healthcare) equilibrated with 50 mM Tris\u2013HCl pH 8.0 (4\u00b0C), 500 mM NaCl, 1 mM Dithiothreitol. The resulting chromatogram revealed a single peak in the 50 kDa region, corresponding to the monomeric fraction of the mNeonGreen-RecX fusion protein (47.6 kDa). The fractions containing RecXmNG were supplemented with 10% glycerol, frozen in liquid nitrogen, and stored at \u201380\u00b0C. The resulting RecXmNG protein showed the ability to inhibit the ATPase activity of RecA at a similar level compared to the wild-type RecX protein.\n\n### Optical tweezers setup\n\nCustom-built dual optical tweezers were used as described previously (Alekseev et al., 2020b; Pobegalov et al., 2015). In brief, optical trapping was performed with the Nd:YVO4 1064 nm CW laser (5 W, Spectra-Physics BL-106C), high numerical aperture oil immersion lens (LOMO, 100\u00d7, NA=1.25), five-channel microfluidic flow chip (Lumicks), and EMCCD camera (Andor Technology, iXon Ultra 897). The x,y-position of one of the traps was additionally controlled with nanometer accuracy by the mirror mounted on a piezo platform (S-330.80L, Physik Instrumente, Karlsruhe, Germany). The applied force and the end-to-end distance of the DNA tether were measured in real time with 30 ms time resolution by processing images of the trapped beads with a custom-made software designed in LabVIEW. The optical trap stiffness was calibrated by a drag force method using a high-precision piezo stage (P-561.3DD, Physik Instrumente). To apply a constant tension to DNA tether, optical tweezers were operated in a force clamp mode.\n\nFluorescent images of RecXmNG-RecA-ssDNA complexes were obtained with a separate EMCCD camera (Cascade II, Photometrics) using freely available MicroManager software. The fluorescence was excited by the DPSS 473 nm CW laser (100 mW, Lasever, LSR473U) attenuated with a 2.0 OD ND filter. Filter set 10 (Carl Zeiss) was used for separating the fluorescence and the excitation light. Images were collected at 50 ms exposure time and electron multiplier gain of 3000 and saved as TIFF files without compression. Images were further processed in FIJI ImageJ.\n\n### Single-molecule assay\n\n#### Buffer solution, experimental conditions, and passivation of the microfluidic chip\n\nAll experiments were made in 25 mM Tris-HCl (pH 7.5), 5 mM MgCl2, and 50 mM NaCl. ATP-containing channels were also supplied with 10 U/ml pyruvate kinase and 0.2 mM phosphoenolpyruvate (PEP). In fluorescence experiments, microfluidic channels used for imaging were also supplemented with the oxygen scavenging system: 3 u/ml pyranose oxidase (Sigma-Aldrich), 90 units/ml catalase (Sigma-Aldrich), and 1% glucose. Channels of the microfluidic chip were passivated with 0.5% Pluronic F-127 and 0.1% BSA (Belan et al., 2021). Experiments with RecA-ssDNA filaments as well as experiments studying DNA binding activity of RecX were done at 22\u00b0C. Experiments with RecA-dsDNA filaments were made at 37\u00b0C.\n\n#### DNA tether formation and force-induced melting\n\nTwo of the five channels of the microfluidic chip (Figure 1\u2014figure supplement 1A) were correspondingly fed with a 0.01% solution of a 2.1 \u03bcm streptavidin-coated polystyrene beads (Spherotech) and a 15 pM solution of dsDNA (11.1 kbp) with biotinylated ends (Figure 1\u2014figure supplement 1E). To obtain a single DNA tether, two beads were initially optically trapped and then moved to the DNA-containing channel, where attachment of the DNA to the beads occured. The attachment of a single DNA molecule to the beads was verified by applying a stretching force of about 20 pN to the tether and controlling its length. Additional check was done during force-induced melting, when a dsDNA molecule exhibited an overstretching plateau at a tension of about 65 pN. To obtain ssDNA, the distance between beads was gradually increased until the tension reached 70\u201380 pN, after which the tether was incubated under this tension for 10\u201320 s. Typically, the slight increase in the end-to-end distance and a slight decrease in the tension were observed. After this, the DNA tether was relaxed and its force extension was measured. If the force extension curve followed that of ssDNA, then after incubation of DNA tether under low tension for about 7 s its force extension curve was measured once more to verify that dsDNA was fully melted into ssDNA.\n\nDNA tether formation and ssDNA generation using a longer DNA construct (22 and 24 kbp) were performed analogously except that a lower concentration of DNA fragments was used: 3.5 pM instead of 15 pM.\n\n### Manipulations with RecA-ssDNA filament\n\n#### RecA-ssDNA filament formation\n\nThe assembly of RecA-ssDNA filaments was performed by applying a stretching force of 12 pN to the ssDNA molecule in the channel containing 1 \u03bcM RecA and 1 mM ATP. The applied tension promoted the assembly of RecA filaments by removing the secondary structure of ssDNA. Binding of RecA to ssDNA resulted in the elongation of the DNA tether (Figure 1\u2014figure supplement 1F).\n\n#### The study of the effect of RecX on the active RecA-ssDNA filament\n\nThe effect of RecX on the active RecA-ssDNA filament was examined using the configuration of microfluidic channels presented in Figure 1\u2014figure supplement 1B. After the assembly of the RecA-ssDNA filament in the channel supplemented with 1 \u03bcM RecA and 1 mM ATP, the applied tension was lowered to 3 pN. Under this tension, the RecA-ssDNA filament was moved to the channel which in addition to 1 \u03bcM RecA and 1 mM ATP was also supplemented with RecX of indicated concentration and the change in the end-to-end distance was monitored.\n\nTo investigate the reversibility of the change in RecA-ssDNA filament length caused by RecX, another configuration of microfluidic channels was used (Figure 1\u2014figure supplement 1C). The RecA-ssDNA filament was assembled in second channel, after which at 3 pN tension the length of the RecA-ssDNA filament was registered during incubation and transitions between third and fourth channels, where the third channel contained 1 mM ATP and the fourth channel contained 1 mM ATP and 500 nM RecX. Importantly, both third and fourth channels contained no free RecA. The transfer of the filament between the midpoints of the adjacent channels took less than 5 s.\n\n### Manipulations with inactive RecA-ssDNA filament\n\nThe inactive RecA-ssDNA filament was obtained by transferring the preassembled active RecA-ssDNA filament to the ATP-lacking channel (Figure 1\u2014figure supplement 1D). During transitions and incubations a constant tension of 3 pN was applied to the RecA-ssDNA filament. To examine the effect of RecX on the inactive RecA-ssDNA filament, it was transferred to the fourth channel supplemented with RecX of indicated concentration.\n\nTo examine the effect of RecX on the conformational transition from the inactive state to the active state, the inactive RecA-ssDNA filament was incubated in the presence of RecX (fourth channel) at 3 pN tension and then was moved to the second channel supplemented with 1 \u03bcM RecA and 1 mM ATP, where the increase in the RecA-ssDNA filament length was observed due to conformational transition induced by ATP binding. After the filament length was restored, the RecA-ssDNA filament was again moved to the third channel, which caused a transition to an inactive state. In the third channel the filament was incubated for 30 s, after which the filament was moved to the second channel, and dynamics of restoration of the RecA-ssDNA filament length was registered repeatedly.\n\n### Manipulations with RecA-dsDNA filament\n\nTo assemble RecA-dsDNA filament, dsDNA was incubated under 55 pN tension in the presence of 1 \u03bcM RecA and 1 mM ATP. After the assembly of the RecA-dsDNA filament, the applied tension was lowered to 3 pN for further manipulations. The measurements of the effect of RecX on the RecA-dsDNA filaments were performed similarly to the experiments with RecA-ssDNA filament.\n\n### RecXmNG fluorescence intensity analysis\n\nTo calculate average intensity of the tether after incubation with fluorescent RecXmNG a custom Fiji ImageJ script was used (Source code 1). First, mean intensity of the background was calculated by measuring mean gray value of the first eight rows of pixels (8 \u00d7 52 pixels rectangle, 1 pixel=142 nm) containing neither the tether nor the beads. This value was further subtracted from all the pixels in the image. To avoid the influence of auto-fluorescence of the beads only a central part of the tether comprising a rectangle of 21 \u00d7 6 pixels (for apo state) and 31 \u00d7 6 pixels (for ATP state) was used to calculate an average intensity of the fluorescent signal.\n\n### Normalization of average length reduction rates of RecA-ssDNA and RecA-dsDNA filaments\n\nAverage length reduction rates for RecA-ssDNA and RecA-dsDNA filaments were measured in the units of nm/s (Figure 5C) and then were recalculated in terms of RecA monomers per second using normalization factors of 1.30 and 0.49 nm/monomer for RecA-ssDNA and RecA-dsDNA filaments, respectively (see Appendix 1 for details).\n\n### ATPase assay\n\nThe RecA\u2019s DNA-dependent ATPase activity and its inhibition by wild-type RecX and RecXmNG was measured using a coupled enzyme spectrophotometric assay as previously described (Yakimov et al., 2017). The reaction mix contained 25 mM Tris-HCl (pH 7.5), 10 mM MgCl2, 2 mM ATP, 2 mM PEP, 30 U/ml pyruvate kinase, 30 U/ml lactate dehydrogenase, 1.5 mM NADH, 5 \u00b5M poly(dT), and 3 \u00b5M RecA. The ATPase assay was performed at 37\u00b0C. The amount of ATP hydrolyzed was followed by the decrease in the absorbance at 380 nm using the NADH extinction coefficient \u03b5380=1.21 mM\u20131cm\u20131. Reaction mix containing RecA and poly(dT) was incubated for 10 min at 37\u00b0C followed by addition of 500 nM of RecX.\n",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "b6f0e285-40b0-4a0b-9a03-17b3adab4c99",
+      "submission_id": "66484f5b-7203-49d6-94a2-8994638fd7d1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Maria Spies, https://ror.org/036jqmy94 University of Iowa United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.78409.sa0](https://doi.org/10.7554/eLife.78409.sa0)\n\nThis paper is of interest to readers in the fields of DNA repair, DNA-protein interactions, and those employing single-molecule techniques. Using single-molecule methods, the authors visualized how RecX, a negative regulator of homologous recombination in bacteria, interferes with the active species in recombination, the RecA nucleoprotein filament. They showed that RecX binds to the RecA filament in its post-ATP hydrolysis state, promotes RecA dissociation from ssDNA, and causes a reversible conformational change of the filament. The latter mode of RecX action is novel and of particular interest. The authors present an interesting model of the RecX-RecA-ATP-ssDNA system.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Maria Spies, https://ror.org/036jqmy94 University of Iowa United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.78409.sa1](https://doi.org/10.7554/eLife.78409.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A new insight into RecA filament regulation by RecX from the analysis of conformation-specific interactions\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Maria Spies as Reviewing Editor and Kevin Struhl as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Kailey Cash (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) All reviewers and the editor agreed that to confirm the proposed model, the authors should measure the RecX binding to the extended RecA filament stabilized by the ATP-g-S.\n\n2) Please address also the individual comments\n\nReviewer #1 (Recommendations for the authors):\n\n-Line 40: \"RecA-dependent SOS-response activation is one of many pathways\", currently reads as \"one of pathways\"\n\n-Line 197: need space between \"Figure\" and \"2\"\n\n-Line 304: what buffer channel? The one without ATP or the one with ATP and RecA in which the filament was initially assembled? It's not clear in the text.\n\n-Line 322: mNG should be subscript (RecXmNG) to remain consistent\n\n-Throughout the manuscript apo vs apo is inconsistent.\n\nLines 321-323, 325, 405, 437, 441, and 639 apo isn't italicized\n\n-Line 401: \"noting\" It is worth \"noting\" that RecX-bound\u2026etc\n\n-Lines 556-557: typo with the temperatures, degree symbol should be between the numbers and the C\n\n-Try to stay consistent with decimals vs commas for numbers in graph axes\n\nExample: Figure 1C-E have commas to indicate decimal place while Figure 2B has decimals\n\nReviewer #2 (Recommendations for the authors):\n\nLines 289 and 298: The authors reference (data not shown) but it is recommended to use a supplement to present such data.\n\nThe comparison of length reduction rate for dsDNA and ssDNA in Figure 5C in units of nm/s is combining two separate values of interest that should be displayed separately. First, the length change of dsDNA and ssDNA upon RecA filamentation should be measured (either in nm or preferably fractional extension increase since dsDNA and ssDNA have such different initial lengths). Using this value as a normalization factor, the rate of length reduction can be calculated in units of 1/s, so that underlying kinetic rates of RecX binding and compacting can be directly compared for both cases without the confounding factor of different length scales.\n\nFigure S1 (bare vs RecA) uses two different y axes scales (log and linear) which makes comparing the two curves difficult.\n\nReviewer #3 (Recommendations for the authors):\n\nOverall, this is an interesting study that may be published in eLife, provided that the authors satisfactorily address the comments listed below.\n\n1. To test the hypothesis that RecX binds specifically to the inactive conformation of RecA-ssDNA filament (in the apo form), the authors may assemble RecA filament in the presence of non-hydrolyzable ATP analog and test binding of the fluorescently labeled RecX.\n\n2. The authors need to discuss the structural basis of the RecA filament transition between the active and inactive form in the presence of RecX, which does not involve RecA dissociation/reassociation. This transition should strongly affect the filament structure. Is this model consistent with the previous EM studies?\n",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "305a141d-2eaf-4cd9-9147-801b26f477c9",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C1",
+      "claim": "RecA protein mediates homologous recombination repair in bacteria through assembly of long helical filaments on ssDNA in an ATP-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "RecA protein mediates homologous recombination repair in bacteria through assembly of long helical filaments on ssDNA in an ATP-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by established scientific knowledge about RecA function in bacteria.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "74353e2c-693f-4b2b-af13-9119eac17b62",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C2",
+      "claim": "RecX is an important negative regulator of RecA.",
+      "claim_type": "EXPLICIT",
+      "source": "RecX, an important negative regulator of RecA, is known to inhibit RecA activity by stimulating the disassembly of RecA nucleoprotein filaments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about RecX function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "e7486f46-cacd-4fcd-aeda-217feb28445b",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C3",
+      "claim": "RecX inhibits RecA activity by stimulating the disassembly of RecA nucleoprotein filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "RecX, an important negative regulator of RecA, is known to inhibit RecA activity by stimulating the disassembly of RecA nucleoprotein filaments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "e106b27a-f850-4d13-8fa9-9ad8b86dade6",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C4",
+      "claim": "RecX effectively binds the inactive conformation of RecA-ssDNA filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings revealed that RecX effectively binds the inactive conformation of RecA-ssDNA filaments and slows down the transition to the active state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data presented in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "2e4d74ce-5073-469b-b34c-a9d796133dd9",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C5",
+      "claim": "RecX slows down the transition of RecA-ssDNA filaments from inactive to active state.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings revealed that RecX effectively binds the inactive conformation of RecA-ssDNA filaments and slows down the transition to the active state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "e8d41454-b3db-4d8d-93e5-739bfb116013",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C6",
+      "claim": "RecA acts through assembly of long helical filaments on ssDNA in an ATP-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "RecA acts through assembly of long helical filaments on ssDNA in an ATP-dependent manner (van Loenhout et al., 2009; VanLoock et al., 2003b; Takahashi and Nord\u00e9n, 1994; Galletto et al., 2006; Hegner et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "f8c83be3-73ae-4972-9858-6bb0565298db",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C7",
+      "claim": "RecA-ssDNA filaments can pair with homologous duplex DNA and catalyze DNA strand exchange reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "RecA-ssDNA filaments can further pair with homologous duplex DNA, catalyzing DNA strand exchange reaction, a key step during homologous recombination which ensures rescue of stalled replication forks, faithful DNA repair, and genetic recombination (Cox, 2007a; Heller and Marians, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "c14b7532-0573-4a61-938b-923305d6cfa3",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C8",
+      "claim": "RecA-ssDNA filaments stimulate proteolytic cleavage of the LexA repressor.",
+      "claim_type": "EXPLICIT",
+      "source": "Apart from that, RecA-ssDNA filaments stimulate proteolytic cleavage of the LexA repressor, allowing activation of over 40 SOS response genes involved in DNA repair and cell cycle regulation (Little, 1993; Baralla, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "27618d3f-059f-4c59-86b2-ed7e9bcafd6a",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C9",
+      "claim": "RecA-dependent SOS response activation is one of many pathways for development of antibiotic resistance by bacteria through enhanced mutagenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, RecA-dependent SOS response activation is one of many pathways for development of antibiotic resistance by bacteria through enhanced mutagenesis in the presence of continuous DNA damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about RecA's role in antibiotic resistance.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "e1a6b463-5973-45b5-8573-7d88a7772a20",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C10",
+      "claim": "RecA nucleoprotein filaments may experience large-scale conformational changes induced by ATP binding and hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "RecA nucleoprotein filaments are very dynamic and may experience large-scale conformational changes induced by ATP binding and hydrolysis (van Loenhout et al., 2009; Kim et al., 2014; Kim et al., 2017; Nishinaka et al., 2007; Alekseev et al., 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "bac8c4bf-6b0b-4281-8797-34749b421bd2",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C11",
+      "claim": "RecX suppresses ATPase, DNA pairing, and strand exchange activities of RecA.",
+      "claim_type": "EXPLICIT",
+      "source": "RecX is an important negative regulator, which has been reported to suppress ATPase, DNA pairing, and strand exchange activities of RecA (Ragone et al., 2008; VanLoock et al., 2003a; Le et al., 2017; C\u00e1rdenas et al., 2012; Gruenig et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "c6fa57f1-5159-4ae3-acbc-ae1434c15e46",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C12",
+      "claim": "RecX inhibits RecA co-protease activity.",
+      "claim_type": "EXPLICIT",
+      "source": "RecX also inhibits RecA co-protease activity (Stohl et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "85e4ec52-0eb5-4c81-a01a-3beba9fc2e8a",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C13",
+      "claim": "Genes encoding RecX were found in genomes of a wide diversity of bacteria and some plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes encoding RecX were found in genomes of a wide diversity of bacteria and some plants (Lin et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "bfa7eb0f-056b-4f06-9c9c-877dfd33a561",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C14",
+      "claim": "In Escherichia coli, recX is a SOS-regulated gene located downstream of recA.",
+      "claim_type": "EXPLICIT",
+      "source": "In Escherichia coli, recX is a SOS-regulated gene located downstream of recA, which encodes a small 19.4 kDa protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about E. coli genetics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "9a89d569-85f2-42c0-802e-5cb58a0094a8",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C15",
+      "claim": "recX and recA are co-transcribed.",
+      "claim_type": "EXPLICIT",
+      "source": "recX and recA are co-transcribed; however, expression of recX is downregulated at both transcriptional and translational levels resulting in about a 500-fold lower protein level compared to RecA (Pag\u00e8s et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "7443d4b3-53f7-47a9-a19d-c3ee0c7f3f7c",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C16",
+      "claim": "Expression of recX is downregulated at both transcriptional and translational levels resulting in about a 500-fold lower protein level compared to RecA.",
+      "claim_type": "EXPLICIT",
+      "source": "recX and recA are co-transcribed; however, expression of recX is downregulated at both transcriptional and translational levels resulting in about a 500-fold lower protein level compared to RecA (Pag\u00e8s et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "5a51883a-216f-412c-9b6d-c1779c002c59",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C17",
+      "claim": "Either loss-of-function RecX mutation or overexpression of RecX decreases bacterial resistance to UV irradiation.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo studies showed that either loss-of-function RecX mutation or overexpression of RecX decreases bacterial resistance to UV irradiation (Stohl et al., 2003), while overexpression of RecA had a toxic effect on cell viability when RecX was mutated (Vierling et al., 2000; Papavinasasundaram et al., 1998; Sano, 1993; Stohl and Seifert, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "1905bc2b-ab3e-436a-85b9-fc905215faef",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C18",
+      "claim": "Overexpression of RecA had a toxic effect on cell viability when RecX was mutated.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo studies showed that either loss-of-function RecX mutation or overexpression of RecX decreases bacterial resistance to UV irradiation (Stohl et al., 2003), while overexpression of RecA had a toxic effect on cell viability when RecX was mutated (Vierling et al., 2000; Papavinasasundaram et al., 1998; Sano, 1993; Stohl and Seifert, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "84cadc42-dae5-4994-a9c0-8cd8a74dba66",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C19",
+      "claim": "In Deinococcus radiodurans, RecX shows dual-negative regulation of RecA function by directly inhibiting RecA activity at the protein level and inhibiting RecA induction at the transcriptional level.",
+      "claim_type": "EXPLICIT",
+      "source": "For some species, such as Deinococcus radiodurans, RecX shows dual-negative regulation of RecA function - it not only directly inhibits RecA activity at the protein level but also inhibits RecA induction at the transcriptional level (Sheng et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "4cb796b8-26c7-4535-ba8f-a0e4ef34f406",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C20",
+      "claim": "RecX is an important mediator of natural transformation in Bacillus subtilis.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, RecX is also an important mediator of natural transformation in Bacillus subtilis, where it colocalizes with RecA threads, while the lack of RecX decreases chromosomal transformation approximately by 200-fold (C\u00e1rdenas et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "d0c1f059-08ea-4855-8d0f-5b47e3023967",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C21",
+      "claim": "The lack of RecX decreases chromosomal transformation in Bacillus subtilis approximately by 200-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, RecX is also an important mediator of natural transformation in Bacillus subtilis, where it colocalizes with RecA threads, while the lack of RecX decreases chromosomal transformation approximately by 200-fold (C\u00e1rdenas et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "9508b403-08ca-42f3-819e-c75d34000474",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C22",
+      "claim": "According to the capping model, RecX binds to the growing 3'-end of the RecA filament and blocks the filament extension, which results in net filament depolymerization.",
+      "claim_type": "EXPLICIT",
+      "source": "A capping model has been proposed to elegantly explain the inhibitory mechanism of RecX at substoichiometric concentrations relative to RecA. According to this model, RecX binds to the growing 3'-end of the RecA filament and blocks the filament extension, which results in net filament depolymerization (Drees et al., 2004a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research describing the capping model.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "153f298e-4891-4d04-bafb-6759ea6f778f",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C23",
+      "claim": "Observation of faster RecA depolymerization at higher RecX concentrations together with structural evidence of RecX binding along the RecA filament groove indicates that alternative internal nicking mechanism may exist.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, observation of faster RecA depolymerization at higher RecX concentrations together with structural evidence of RecX binding along the RecA filament groove (Ragone et al., 2008; VanLoock et al., 2003a; Shvetsov et al., 2014) indicates that alternative internal nicking mechanism may exist, in which RecX locally destabilizes the RecA filament and increases the number of the disassembling ends (Gruenig et al., 2010; Venkatesh et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research and involves inference about alternative mechanisms.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "5a9e30b3-75ad-4908-989a-d8a293917f6b",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C24",
+      "claim": "Incubation of MsRecX with RecA filaments resulted in RecA dissociation from within the filament.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this model, a recent study of Mycobacterium smegmatis RecX (MsRecX) showed that incubation of MsRecX with RecA filaments resulted in RecA dissociation from within the filament.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on a recent study mentioned in the text.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "26c4fbcc-9aa6-4776-a53b-480e68e7aa44",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C25",
+      "claim": "Mechanical forces can counteract the inhibitory effect of RecX at as little as 7 pN.",
+      "claim_type": "EXPLICIT",
+      "source": "It has also been shown that mechanical forces, which are an important factor in regulating the stability of the RecA filament (Le et al., 2017; Fu et al., 2013), can counteract the inhibitory effect of RecX at as little as 7 pN, prevent disassembly of the RecA filament, and even stimulate the repolymerization of RecA on DNA in the presence of RecX.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "1f70204f-bdec-440b-bfd4-2e3ba9ab9946",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C26",
+      "claim": "A model based on transmission electron microscopy data suggests that RecX binds to the interface between RecA monomers and blocks the transition between inactive and active states, thereby preventing ATP hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Another completely different model of the RecX inhibitory action was proposed based on the transmission electron microscopy data (VanLoock et al., 2003a). This model is not associated with a decrease in the number of RecA monomers on DNA as a result of filament depolymerization, but alternatively suggests that RecX binds to the interface between RecA monomers and blocks the transition between inactive and active states, thereby preventing ATP hydrolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "84400b55-e606-4886-a5b9-c36075941132",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C27",
+      "claim": "Magnetic tweezers assays have been used to directly observe disassembly of RecA filaments induced by RecX proteins from Mycobacterium tuberculosis and B. subtilis.",
+      "claim_type": "EXPLICIT",
+      "source": "Magnetic tweezers assays have been used to directly observe disassembly of RecA filaments induced by RecX proteins from Mycobacterium tuberculosis (Le et al., 2014) and B. subtilis (Le et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "383702c1-903c-44e4-adc0-3fec7e53907c",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C28",
+      "claim": "RecX promotes net depolymerization of preformed RecA filaments at low tensile forces (about 3 pN) in ATP hydrolysis and RecX concentration-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Measurements of the dynamic characteristics of RecA-ssDNA filaments in the active state showed that RecX promotes net depolymerization of preformed filaments at low tensile forces (about 3 pN) in ATP hydrolysis and RecX concentration-dependent manner, which is generally consistent with results of ensemble experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by previous single-molecule studies mentioned in the text.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "6f8f0523-a757-4e8e-a30a-3a8302705e37",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C29",
+      "claim": "Depolymerization of the RecA filament took place in a non-monotonic stepwise manner with pauses of various lengths (10\u2013100 s).",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, this approach made it possible to discover that depolymerization of the RecA filament took place in a non-monotonic stepwise manner with pauses of various lengths (10\u2013100 s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on previous single-molecule studies mentioned in the text.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "5b44f16e-9363-4605-b1d4-fe728ce811b0",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C30",
+      "claim": "RecA depolymerization could proceed with an initial lag phase followed by a strikingly rapid net depolymerization phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, RecA depolymerization could proceed with an initial lag phase followed by a strikingly rapid net depolymerization phase (Le et al., 2017) indicating a complicated nature of interaction between RecX and RecA-DNA complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "f289e499-a897-4c96-aed1-e514ece86186",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C31",
+      "claim": "Three mechanically distinct conformational states occur within the E. coli RecA-ssDNA filaments in the course of ATP hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, we characterized three mechanically distinct conformational states that occur within the E. coli RecA-ssDNA filaments in the course of ATP hydrolysis (Alekseev et al., 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "de4dc728-604e-4dfa-96a4-fad32bbd7dbf",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C32",
+      "claim": "Introduction of the preassembled RecA-ssDNA filament into the channel containing RecX (0.2\u20131 \u03bcM) in the presence of both RecA (1 \u03bcM) and ATP (1 mM) resulted in the initial step-like shortening of the tether followed by a slow decrease in the end-to-end distance.",
+      "claim_type": "EXPLICIT",
+      "source": "Introduction of the preassembled RecA-ssDNA filament into the channel containing RecX (0.2\u20131 \u03bcM) in the presence of both RecA (1 \u03bcM) and ATP (1 mM) resulted in the initial step-like shortening of the tether followed by a slow decrease in the end-to-end distance (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "749e4333-92de-4af7-ba43-aaf885ed34ac",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C33",
+      "claim": "Average rate of the filament length reduction was dependent on the concentration of RecX.",
+      "claim_type": "EXPLICIT",
+      "source": "Average rate of the filament length reduction was dependent on the concentration of RecX (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "3e940798-1c2f-498b-a722-51f8528559fc",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C34",
+      "claim": "Higher RecX concentrations stimulated faster shortening of RecA-ssDNA filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher RecX concentrations stimulated faster shortening in line with previously reported observations for M. tuberculosis and B. subtilis RecX (Le et al., 2017; Le et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and citations to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "fd805e89-aece-4e73-b60d-6b43625f43fc",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C35",
+      "claim": "The initial step-like shortening of the RecA-ssDNA filament scaled with RecX concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the initial step-like shortening of the RecA-ssDNA filament also scaled with RecX concentration (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "359840ee-8965-4a76-b920-42d70b1ea5ed",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C36",
+      "claim": "The dependence of RecX induced initial sharp decrease in RecA-ssDNA filament on RecX concentration is well fitted by a Hill equation with a Hill coefficient of 2.0\u00b10.3.",
+      "claim_type": "EXPLICIT",
+      "source": "Corresponding dependence is presented in Figure 1E and is well fitted by a Hill equation with a Hill coefficient of 2.0\u00b10.3.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data and fitting analysis shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "99f83377-3c7d-4379-92dc-a644b862b787",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C37",
+      "claim": "E. coli RecX stimulates shortening of the RecA-ssDNA filaments which proceeds in two phases.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations indicate that E. coli RecX stimulates shortening of the RecA-ssDNA filaments which proceeds in two phases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental observations of initial step-like shortening followed by slow decrease.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "d5db6d67-964a-48ac-97a2-316f4781437c",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C38",
+      "claim": "At a stretching force of 3 pN, the length of the RecA-ssDNA filament is significantly greater than the length of bare ssDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "At a stretching force of 3 pN, the length of the RecA-ssDNA filament is significantly greater than the length of bare ssDNA (van Loenhout et al., 2009; Alekseev et al., 2020b; Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations to previous research and reference to a figure.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "488285fa-69ff-4953-ba3f-982db23643f3",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C39",
+      "claim": "ATP-bound or 'active' form of RecA-ssDNA filament is characterized by a longer pitch which results in a stretched conformation of the filament.",
+      "claim_type": "EXPLICIT",
+      "source": "ATP-bound or 'active' form is characterized by a longer pitch which results in a stretched conformation of the filament (Yu and Egelman, 1992; DiCapua et al., 1990; Lebedev et al., 2003; Ellouze et al., 1995; Ellouze et al., 1999; Stasiak et al., 1988; Chen et al., 2008), while 'inactive' ADP-bound and apo forms are characterized by a smaller pitch and a more compact structure (Yu and Egelman, 1992; DiCapua et al., 1990; Lebedev et al., 2003; Ellouze et al., 1995; Ellouze et al., 1999; Ruigrok et al., 1993; Chang et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "2cfe3467-58c9-467c-9c88-71dbd7355e24",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C40",
+      "claim": "'Inactive' ADP-bound and apo forms of RecA-ssDNA filament are characterized by a smaller pitch and a more compact structure.",
+      "claim_type": "EXPLICIT",
+      "source": "ATP-bound or 'active' form is characterized by a longer pitch which results in a stretched conformation of the filament (Yu and Egelman, 1992; DiCapua et al., 1990; Lebedev et al., 2003; Ellouze et al., 1995; Ellouze et al., 1999; Stasiak et al., 1988; Chen et al., 2008), while 'inactive' ADP-bound and apo forms are characterized by a smaller pitch and a more compact structure (Yu and Egelman, 1992; DiCapua et al., 1990; Lebedev et al., 2003; Ellouze et al., 1995; Ellouze et al., 1999; Ruigrok et al., 1993; Chang et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "3a491b03-1f2a-40a8-bc1a-c149b78803eb",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C41",
+      "claim": "Upon transfer to a channel containing only buffer supplemented with ATP, RecA-ssDNA tether did not show any significant change in its length and was relatively stable.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon transfer, RecA-ssDNA tether did not show any significant change in its length and was relatively stable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "97268925-a153-4f88-9b70-955b40ff5059",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C42",
+      "claim": "RecA is tightly bound to ssDNA, and no turnover between DNA-bound and free RecA is necessary to keep RecA-ssDNA filaments stable.",
+      "claim_type": "EXPLICIT",
+      "source": "This confirmed that RecA is tightly bound to ssDNA, and no turnover between DNA-bound and free RecA is necessary to keep RecA-ssDNA filaments stable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental observation that RecA-ssDNA filaments remain stable without free RecA.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "92edd237-2af4-481a-a931-b9bf17fc2fbe",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C43",
+      "claim": "Transfer of RecA-ssDNA filament into a channel containing ATP (1 mM) and RecX (1 \u03bcM) resulted in the reduction of the tether length.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, the RecA-ssDNA filament was transferred into a channel containing ATP (1 mM) and RecX (1 \u03bcM). This transition resulted in the reduction of the tether length (Figure 2B) in a manner similar to the experiment described in the previous section, indicating that shortening of the RecA-ssDNA filament is induced by direct interaction of RecX with the DNA-bound RecA since this process does not depend on the presence of free RecA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "b3fe8251-6296-4f18-ab07-ea53f884ab73",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C44",
+      "claim": "Shortening of the RecA-ssDNA filament is induced by direct interaction of RecX with the DNA-bound RecA since this process does not depend on the presence of free RecA.",
+      "claim_type": "EXPLICIT",
+      "source": "This transition resulted in the reduction of the tether length (Figure 2B) in a manner similar to the experiment described in the previous section, indicating that shortening of the RecA-ssDNA filament is induced by direct interaction of RecX with the DNA-bound RecA since this process does not depend on the presence of free RecA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental observation that RecX causes shortening even without free RecA present.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "656ae2fb-a83c-4987-b63b-51f321dc9d96",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C45",
+      "claim": "When the RecA-ssDNA filament was moved back to the channel containing ATP without RecX a gradual elongation of the tether length was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, when the RecA-ssDNA filament was moved back to the channel containing ATP without RecX a gradual elongation of the tether length was observed (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "78cfa5ae-5534-46cb-8a45-9ac92ae5de26",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C46",
+      "claim": "The observed elongation of RecA-ssDNA filament after RecX removal is solely driven by structural rearrangement within the RecA-ssDNA filament since no free RecA was present.",
+      "claim_type": "EXPLICIT",
+      "source": "Since no free RecA was present, the observed elongation is solely driven by structural rearrangement within the RecA-ssDNA filament.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental observation that elongation occurs without free RecA.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "14c08571-ecdb-4fac-b464-70fba86f1944",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C47",
+      "claim": "Binding of RecX to the RecA-ssDNA tether introduces a conformational change within the RecA nucleoprotein filament that leads to a shortening of its overall length, which can be reversed when RecX is eliminated.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that binding of RecX to the RecA-ssDNA tether introduces a conformational change within the RecA nucleoprotein filament that leads to a shortening of its overall length, which can be reversed when RecX is eliminated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental observations of reversible shortening and elongation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "90f78cd6-cd4e-425e-8524-453d73f84a9e",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C48",
+      "claim": "Cycles of shortening and elongation of the tether could be observed multiple times on the same DNA molecule by simply transferring the RecA-ssDNA filament between the RecX and the buffer channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Cycles of shortening and elongation of the tether could be observed multiple times on the same DNA molecule by simply transferring the RecA-ssDNA filament between the RecX and the buffer channels (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "9f71dacb-a4fc-41e8-800e-44d34702360d",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C49",
+      "claim": "After each incubation with RecX subsequent length restoration was not complete with the RecA-ssDNA filaments consistently showing decreased length.",
+      "claim_type": "EXPLICIT",
+      "source": "However, after each incubation with RecX subsequent length restoration was not complete with the RecA-ssDNA filaments consistently showing decreased length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "818a2f0e-f559-468a-bf8a-8444457b07e7",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C50",
+      "claim": "At each cycle a part of RecA irreversibly dissociated from DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that at each cycle a part of RecA irreversibly dissociated from DNA (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the observation of incomplete length restoration and supported by data in Figure 2C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "cf2a2b2d-841f-4106-bcad-057c7b2dada4",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C51",
+      "claim": "RecX-induced shortening of the RecA-ssDNA tether is a combined result of two processes: a fast conformational transition into a more compact form and slow disassembly of the RecA nucleoprotein filament.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that RecX-induced shortening of the RecA-ssDNA tether is a combined result of two processes: a fast conformational transition into a more compact form and slow disassembly of the RecA nucleoprotein filament.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental observations of reversible and irreversible components of shortening.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "4e27ff0e-270f-4b35-831d-c3c3139dcce2",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C52",
+      "claim": "At saturated concentrations of ATP (1 mM), the RecA-ssDNA filament adopts an overall 'active' or stretched conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "At saturated concentrations of ATP (1 mM used in the current work), the RecA-ssDNA filament adopts an overall 'active' or stretched conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about RecA filament behavior at saturating ATP concentrations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "bb82ef6c-96d2-4e90-8d40-2636a00b11d6",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C53",
+      "claim": "Continuous ATP hydrolysis occurs throughout the RecA-ssDNA filament and generates a dynamic and heterogeneous structure in which apo and ADP conformations may transiently occur as local patches.",
+      "claim_type": "EXPLICIT",
+      "source": "However, continuous ATP hydrolysis occurs throughout the filament and generates a dynamic and heterogeneous structure in which apo and ADP conformations may transiently occur as local patches (Alekseev et al., 2020b; Alekseev et al., 2020a; Boyer et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "ea32cf11-9703-4d66-9244-669c53b2b7f5",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C54",
+      "claim": "ATP hydrolysis stimulated fast accumulation of the compact apo conformation accompanied by a characteristic reduction of the tether length.",
+      "claim_type": "EXPLICIT",
+      "source": "ATP hydrolysis stimulated fast accumulation of the compact apo conformation accompanied by a characteristic reduction of the tether length (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "c41bee4c-83a2-4581-9719-0b127e7685c5",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C55",
+      "claim": "During incubation of apo RecA-ssDNA filament with 500 nM RecX for 100 s, no change in the filament length was registered.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, the filament was transferred into the channel containing 500 nM RecX and incubated for 100 s. During incubation no change in the filament length was registered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "37362199-6de6-4fff-9410-c6003cd718c3",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C56",
+      "claim": "Decompression of the RecA-ssDNA filament after incubation with RecX was remarkably slower compared to the case when incubation with RecX was omitted.",
+      "claim_type": "EXPLICIT",
+      "source": "However, decompression of the filament after incubation with RecX was remarkably slower compared to the case when incubation with RecX was omitted (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "2086238a-e61a-41de-b0f3-5ac7c3b88de4",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C57",
+      "claim": "When the same molecule was subjected to another cycle of apo-ATP transition without RecX incubation, decompression proceeded rapidly with the rate similar to the control case without RecX incubation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, when the same molecule was subjected to another cycle of apo-ATP transition without RecX incubation, decompression proceeded rapidly with the rate similar to the control case without RecX incubation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "f9e7bc58-eccc-4363-900e-c594249db87a",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C58",
+      "claim": "RecX interacts with the apo form of the RecA-ssDNA and delays its conformational transition into the ATP-bound form.",
+      "claim_type": "EXPLICIT",
+      "source": "This experiment confirms that RecX interacts with the apo form of the RecA-ssDNA and delays its conformational transition into the ATP-bound form.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental observations of slowed decompression after RecX incubation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "aaad30e6-9e30-4e83-8395-14b7249beeb7",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C59",
+      "claim": "Decompression of the RecA-ssDNA filament irreversibly disrupts a specific linkage between RecX and the apo state of the filament.",
+      "claim_type": "EXPLICIT",
+      "source": "However, decompression of the RecA-ssDNA filament irreversibly disrupts a specific linkage between RecX and the apo state of the filament.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that subsequent cycles without RecX show normal decompression rates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "d671e02c-0a6d-4dd9-8f99-7ab230634ea8",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C60",
+      "claim": "Increasing the time of incubation with RecX from 30 to 200 s resulted in slowing down of the decompression characterized by decrease in kdecompression from 0.2 to 0.13 s\u20131.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing the time of incubation with RecX from 30 to 200 s resulted in slowing down of the decompression characterized by decrease in kdecompression from 0.2 to 0.13 s\u20131.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and analysis shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "06f3b359-9d6e-4160-b0ab-aa713fb1ed19",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C61",
+      "claim": "The rate constant of the RecA-ssDNA filament decompression without incubation with RecX was 1.3\u00b10.3 s\u20131.",
+      "claim_type": "EXPLICIT",
+      "source": "For comparison, the rate constant of the RecA-ssDNA filament decompression without incubation with RecX was 1.3\u00b10.3 s\u20131 (N=5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "2cd4f545-ba13-4acb-8d97-6a0269d9cdff",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C62",
+      "claim": "The rate constant of the apo-ATP transition was estimated to be greater than 10 s\u20131 in previous work.",
+      "claim_type": "EXPLICIT",
+      "source": "In the previous work, using the same DNA construct and a fast movement between microfluidic channels the rate constant of the apo-ATP transition was estimated to be greater than 10 s\u20131 (Alekseev et al., 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "ca50c7a6-21b2-4a6f-b184-0aa88f1783af",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C63",
+      "claim": "RecX remains bound to the apo form of the RecA-ssDNA filament in the RecX-free buffer.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional control experiments verified that RecX remains bound to the apo form of the RecA-ssDNA filament in the RecX-free buffer (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by control experiments shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "00240478-e972-4f12-a26a-72d3eff14e96",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C64",
+      "claim": "The observed slowdown in the decompression rate was independent of how long the RecA-ssDNA filament remained in the inactive state in the absence of RecX.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed slowdown in the decompression rate was also independent of how long the RecA-ssDNA filament remained in the inactive state in the absence of RecX (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by control experiments shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "8d79b2f9-c8a4-4de4-894d-6f1ed0795eb9",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C65",
+      "claim": "RecX tightly binds the apo state of RecA-ssDNA filament and stabilizes it, retarding the apo-ATP transition.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that RecX tightly binds the apo state of RecA-ssDNA filament and stabilizes it, retarding the apo-ATP transition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental observations of slowed decompression and tight binding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "f3a3f606-0e0a-4aff-bd4b-547d2b287bf3",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C66",
+      "claim": "The conformational transition of the RecA-ssDNA filament from the apo to the ATP state results in the gradual loss of specific interaction of RecX and the apo conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "The conformational transition of the RecA-ssDNA filament from the apo to the ATP state results in the gradual loss of specific interaction of RecX and the apo conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental observations that subsequent cycles show normal decompression rates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "f53a05b5-4133-4d82-b3f4-cc43c0fd441e",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C67",
+      "claim": "Incubation of ADP-bound form of the RecA-ssDNA filament with RecX resulted in the slowdown of the following decompression similar to the RecX interaction with apo RecA-ssDNA filament.",
+      "claim_type": "EXPLICIT",
+      "source": "Incubation of ADP-bound form of the RecA-ssDNA filament with RecX also resulted in the slowdown of the following decompression (Figure 3\u2014figure supplement 3) similar to the RecX interaction with apo RecA-ssDNA filament.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "cd4e6a6d-6c35-4e13-a051-ad50e9865b16",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C68",
+      "claim": "ADP and apo conformations represent two distinct inactive states of RecA-ssDNA filament.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, it was shown that ADP and apo conformations represent two distinct inactive states of RecA-ssDNA filament (Alekseev et al., 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "438543be-8cb0-4f93-9526-b5a2344442ea",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C69",
+      "claim": "ADP-bound RecA-ssDNA filaments exhibited greater stability when supplemented with RecX.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, ADP-bound RecA-ssDNA filaments exhibited greater stability when supplemented with RecX.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "55523ece-429c-42f1-b576-9c0d631966a9",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C70",
+      "claim": "mNeonGreen-RecX (RecXmNG) retained the inhibitory effect on RecA at the level comparable to the wild-type RecX.",
+      "claim_type": "EXPLICIT",
+      "source": "mNeonGreen-RecX (RecXmNG) retained the inhibitory effect on RecA at the level comparable to the wild-type RecX. This was tested by ability of RecXmNG to inhibit ATPase activity of RecA in bulk (Figure 4A) as well as to slow down the apo-ATP transition rate in the single-molecule experiments (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "c561ce46-d83c-42c7-a4a4-c27f953b5b09",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C71",
+      "claim": "Visualization revealed a strong fluorescent signal along the DNA tether confirming that RecXmNG tightly binds the compressed RecA-ssDNA filament.",
+      "claim_type": "EXPLICIT",
+      "source": "Visualization revealed a strong fluorescent signal along the DNA tether confirming that RecXmNG tightly binds the compressed RecA-ssDNA filament (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fluorescence imaging data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "1c976b0b-b447-45ae-80c6-e84d39d78f0c",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C72",
+      "claim": "Fluorescent visualization demonstrated significant loss of RecXmNG from the RecA-ssDNA filament after decompression was completed.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluorescent visualization demonstrated significant loss of RecXmNG from the RecA-ssDNA filament (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fluorescence imaging data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "84400240-66ca-46c4-97b1-df91ac6ea809",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C73",
+      "claim": "The conformational transition of RecA filaments to the ATP-bound state results in reduction of the average intensity of RecXmNG bound to the tether almost down to a background level.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative analysis showed that the conformational transition of RecA filaments to the ATP-bound state results in reduction of the average intensity of RecXmNG bound to the tether almost down to a background level (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative analysis of fluorescence data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "84cb659a-961b-4350-a3d9-d17aa8cb0745",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C74",
+      "claim": "Upon entry into the ATP-containing channel, the dynamic increase in the tether length was correlated to the gradual loss of the RecXmNG fluorescence signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon entry into the ATP-containing channel, the dynamic increase in the tether length was correlated to the gradual loss of the RecXmNG fluorescence signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by continuous fluorescence visualization described in the text and shown in Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "e10f0835-64ba-4ab3-815e-81f42ee31928",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C75",
+      "claim": "ATP-induced transition between inactive and active states of the RecA filament promotes dissociation of RecX.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that ATP-induced transition between inactive and active states of the RecA filament promotes dissociation of RecX.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental observations of RecX loss during apo-ATP transition.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "0b012c16-3ade-4674-b0b4-a64b1f07081a",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C76",
+      "claim": "Average intensity of the tether after incubation with RecXmNG in the presence of ATP\u03b3S was close to the background level indicating that RecXmNG did not remain bound to the active RecA-ssDNA filament.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, average intensity of the tether was close to the background level (Figure 4D) indicating that RecXmNG did not remain bound to the active RecA-ssDNA filament.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fluorescence data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "e5dfa801-fa7e-4311-a316-51be918a4ba3",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C77",
+      "claim": "RecX interaction with active form of RecA-ssDNA filament is much weaker compared to the binding of RecX to apo state.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus we suppose that RecX interaction with active form of RecA-ssDNA filament is much weaker compared to the binding of RecX to apo state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the fluorescence data showing minimal RecX binding to active filaments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "5e307eb2-53a1-44f9-bedc-385f2282fb6f",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C78",
+      "claim": "In the presence of ATP\u03b3S, RecX did not induce any shortening of RecA-ssDNA filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in the presence of ATP\u03b3S, RecX did not induce any shortening of RecA-ssDNA filaments (Figure 4\u2014figure supplement 1) indicating the essential role of ATP hydrolysis in the RecX-induced destabilization of RecA-ssDNA filaments.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "52a267d2-793d-4cda-b4d7-8cb870aed872",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C79",
+      "claim": "ATP hydrolysis plays an essential role in the RecX-induced destabilization of RecA-ssDNA filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in the presence of ATP\u03b3S, RecX did not induce any shortening of RecA-ssDNA filaments (Figure 4\u2014figure supplement 1) indicating the essential role of ATP hydrolysis in the RecX-induced destabilization of RecA-ssDNA filaments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that RecX does not cause shortening when ATP cannot be hydrolyzed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "d982bcf3-e3a1-4e8e-8d9c-f08115554752",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C80",
+      "claim": "RecA-dsDNA filaments were assembled by applying a tension of 55 pN to the dsDNA molecule (11,071 bp) in the presence of 1 \u03bcM RecA and 1 mM ATP at 37\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "RecA-dsDNA filaments were assembled by applying a tension of 55 pN to the dsDNA molecule (11,071 bp) in the presence of 1 \u03bcM RecA and 1 mM ATP (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim describes the experimental method used and is supported by Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "c55d3274-dde1-46d8-8aaf-998bc04a89e0",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C81",
+      "claim": "As a result of RecA binding the length of the dsDNA molecule increased to 5.4\u00b10.1 \u03bcm (N=9), which corresponds to ~150% elongation of the B-form of dsDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result of RecA binding the length of the dsDNA molecule increased to 5.4\u00b10.1 \u03bcm (N=9), which corresponds to ~150% elongation of the B-form of dsDNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "8c27ded7-efd8-4910-bc40-e66a195b29eb",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C82",
+      "claim": "At a force of 3 pN RecA-dsDNA filaments exhibited the length of 4.9\u00b10.2 (N=9), which is slightly lower than the length of RecA filaments formed on equivalent ssDNA at the same force.",
+      "claim_type": "EXPLICIT",
+      "source": "At a force of 3 pN RecA-dsDNA filaments exhibited the length of 4.9\u00b10.2 (N=9), which is slightly lower than the length of RecA filaments formed on equivalent ssDNA at the same force; however, this length was stable over a long period of time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "baca9ebb-cbfc-4ebe-8914-f8153dc3b67e",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C83",
+      "claim": "RecX stimulated a dramatic reduction of the RecA-dsDNA tether length down to the length of bare dsDNA within 30 s.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, in this case, RecX stimulated a dramatic reduction of the tether length down to the length of bare dsDNA within 30 s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations described in the text and shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "911eddcd-a992-4d39-842d-816aab073282",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C84",
+      "claim": "Subsequent reintroduction of the tether back to the RecX-free channel did not produce any elongation of the dsDNA molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent reintroduction of the tether back to the RecX-free channel did not produce any elongation of the dsDNA molecule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "adc291ec-855e-4611-89a4-f020e3b2b42f",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C85",
+      "claim": "RecX is highly efficient at irreversible disassembly of RecA-dsDNA filament.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that RecX is highly efficient at irreversible disassembly of RecA-dsDNA filament.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental observations of rapid and irreversible disassembly.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "0730ae04-f389-4b84-919b-4492000d2333",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C86",
+      "claim": "The average rate of the filament length reduction is two-order higher for the RecA-dsDNA filaments compared to RecA-ssDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the results obtained with 200 nM RecX revealed that the average rate of the filament length reduction is two-order higher for the RecA-dsDNA filaments compared to RecA-ssDNA (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative analysis of experimental data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "5e1f0883-0903-4c08-84fa-98f841f6aba7",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C87",
+      "claim": "RecX stimulates a net disassembly of the RecA-ssDNA filament.",
+      "claim_type": "EXPLICIT",
+      "source": "We first discuss the effect of RecX on the RecA-ssDNA filaments. Our experiments confirm that RecX stimulates a net disassembly of the RecA-ssDNA filament; however, this process is very slow and takes hundreds of seconds for an ~5\u03bcm long RecA filament to depolymerize.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "36d783cf-e521-49d8-b49e-7a35bc0ee21b",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C88",
+      "claim": "The disassembly process of RecA-ssDNA filament by RecX is very slow and takes hundreds of seconds for an ~5\u03bcm long RecA filament to depolymerize.",
+      "claim_type": "EXPLICIT",
+      "source": "Our experiments confirm that RecX stimulates a net disassembly of the RecA-ssDNA filament; however, this process is very slow and takes hundreds of seconds for an ~5\u03bcm long RecA filament to depolymerize.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations described in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "615934a9-2cda-4d30-9baa-26023033c86a",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C89",
+      "claim": "The capping model alone fails to explain the results since in the absence of RecA polymerization RecX actively stimulated shortening of the RecA-ssDNA filament.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously proposed capping model (Drees et al., 2004a) suggests that RecX binds to the filament end and blocks its growth leading to a net RecA depolymerization. This model alone fails to explain our results since in the absence of RecA polymerization RecX actively stimulated shortening of the RecA-ssDNA filament (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the experimental results that contradict the capping model predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "740c07c5-f59d-4dc9-a845-0e1a69eb1c54",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C90",
+      "claim": "RecX binds along the RecA-ssDNA filament and promotes structural rearrangements and/or disassembly from within the filament.",
+      "claim_type": "EXPLICIT",
+      "source": "Such behavior indicates that RecX also binds along the RecA-ssDNA filament and promotes structural rearrangements and/or disassembly from within the filament.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental observations that RecX causes shortening without filament growth.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "aecf4374-5f28-4af2-9e3e-96dfdd55d4fb",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C91",
+      "claim": "RecX interacts with the ADP and apo forms of the RecA-ssDNA filament and inhibits their transition into the ATP-bound state.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, we discovered that RecX interacts with the ADP and apo forms of the RecA-ssDNA filament and inhibits their transition into the ATP-bound state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "1893c749-2a22-4792-95a6-202e2b525398",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C92",
+      "claim": "The interaction of RecX with inactive RecA filaments is in line with the reported inhibition of the RecA ATPase activity by RecX measured in bulk.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in line with the reported inhibition of the RecA ATPase activity by RecX measured in bulk (Venkatesh et al., 2002) since depletion of the ATP-bound conformation within the filament should effectively reduce the overall rate of ATP hydrolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim connects the current findings to previous research through logical inference.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "148b4e48-659a-4613-a5f8-6738b3036ae2",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C93",
+      "claim": "The possibility of RecX to inhibit RecA ATPase without actual displacement of RecA monomers from ssDNA was proposed previously.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the possibility of RecX to inhibit RecA ATPase without actual displacement of RecA monomers from ssDNA was proposed previously in VanLoock et al., 2003a.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "d151ce7c-f196-4a02-a020-e2ad3fdebd9b",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C94",
+      "claim": "RecX-bound inactive RecA filaments persisted without noticeable changes for over 200 s indicating that RecX does not promote depolymerization of inactive RecA filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that RecX-bound inactive RecA filaments persisted without noticeable changes for over 200 s indicating that RecX does not promote depolymerization of inactive RecA filaments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations described in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "2c1e3315-3821-4724-876a-ccc79b75fe06",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C95",
+      "claim": "When RecX-bound inactive filaments were supplemented with ATP, RecX gradually dissociated in the course of apo-ATP transition.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, when such filaments were supplemented with ATP, RecX gradually dissociated in the course of apo-ATP transition (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "fcd0c5f5-a09c-4268-8a19-9e76389e7d3e",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C96",
+      "claim": "Low-resolution electron microscopy demonstrated that RecX can bind along the groove of the ATP-bound conformation of RecA filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, low-resolution electron microscopy demonstrated that RecX can bind along the groove of the ATP-bound conformation of RecA filaments (VanLoock et al., 2003a); however, these interactions were addressed at a higher concentration of RecX (3 \u03bcM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "041ab4db-7b52-4eff-9df4-97c4c8d491ef",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C97",
+      "claim": "RecX strongly binds the apo conformation of the RecA-ssDNA filament while its affinity to the ATP-bound conformation is significantly lower.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that RecX strongly binds the apo conformation of the RecA-ssDNA filament while its affinity to the ATP-bound conformation is significantly lower.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental observations of differential binding to different conformations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "c75e7ddb-11cb-48cc-9f9f-d85352d1c80b",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C98",
+      "claim": "Depolymerization of the RecA-ssDNA filament occurred only in the presence of ATP, suggesting that RecX-stimulated RecA dissociation from DNA is coupled to ATP binding or hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Depolymerization of the RecA-ssDNA filament occurred only in the presence of ATP (Figure 2B), suggesting that RecX-stimulated RecA dissociation from DNA is coupled to ATP binding or hydrolysis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the experimental observation that depolymerization requires ATP.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "b5be10c1-1665-475f-b5fd-4e15d62a9d54",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C99",
+      "claim": "RecX binds the inactive patches, transiently presented within the active RecA-ssDNA filament, and increases their lifetime by hampering the transition into the active state.",
+      "claim_type": "EXPLICIT",
+      "source": "RecX binds the inactive patches, transiently presented within the active RecA-ssDNA filament, and increases their lifetime by hampering the transition into the active state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the proposed model based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "7da58020-b293-4e47-bdfa-cf1bafaf6a12",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C100",
+      "claim": "The transition of the inactive patch bound by RecX to the active state is accompanied by dissociation of RecX.",
+      "claim_type": "EXPLICIT",
+      "source": "The transition of the inactive patch bound by RecX to the active state is accompanied by dissociation of RecX.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the proposed model based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "d70c60ca-f0df-413f-ae00-b1c90bbf2cbf",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C101",
+      "claim": "As a result of the dynamic interaction of RecX with inactive states, their average lifetime and fraction within the filament increase, which leads to the reduction in the filament length.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result of the dynamic interaction of RecX with inactive states, their average lifetime and fraction within the filament increase, which leads to the reduction in the filament length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the proposed model based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "30b30a2c-7b93-4c0c-8282-5dfea1fd7fe6",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C102",
+      "claim": "When RecX is removed from solution, bound RecX dissociates as the inactive patches change their conformation to the active, the fraction of inactive states returns to the initial level.",
+      "claim_type": "EXPLICIT",
+      "source": "When RecX is removed from solution, bound RecX dissociates as the inactive patches change their conformation to the active, the fraction of inactive states returns to the initial level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the proposed model based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "f4f1ec92-2dae-4410-b5b6-d8976981982e",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C103",
+      "claim": "The conformational change of the RecA filament is accompanied by a large movement of RecA's C-terminal domain, which is supposed to be allosterically coupled to the ATPase site.",
+      "claim_type": "EXPLICIT",
+      "source": "It was shown that the conformational change of the filament is accompanied by a large movement of RecA's C-terminal domain, which is supposed to be allosterically coupled to the ATPase site (VanLoock et al., 2003b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "69c5212a-a003-4111-ad53-32c3819ca6da",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C104",
+      "claim": "According to low-resolution electron microscopy studies, RecX binds from the C-terminal domain of one RecA subunit to the core domain of another.",
+      "claim_type": "EXPLICIT",
+      "source": "According to low-resolution electron microscopy studies, RecX binds from the C-terminal domain of one RecA subunit to the core domain of another (VanLoock et al., 2003a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "78483b88-95f8-4a8e-8eb2-57107fb25a94",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C105",
+      "claim": "It was proposed that RecX inhibits RecA ATPase activity by preventing conformational transition through clamping RecA's C-terminal domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus it was proposed that RecX inhibits RecA ATPase activity by preventing conformational transition through clamping RecA's C-terminal domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes a previously proposed mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "bd677d66-3ed1-43dc-97f4-d5a7a4e272cf",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C106",
+      "claim": "RecX-induced fast compression of the RecA-ssDNA tether is characterized by positive cooperativity with the Hill coefficient \u22482.",
+      "claim_type": "EXPLICIT",
+      "source": "The current study showed that RecX-induced fast compression of the RecA-ssDNA tether is characterized by positive cooperativity with the Hill coefficient \u22482 (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data and analysis shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "5ad7880e-1a4e-4b82-a815-bf8d4f81daed",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C107",
+      "claim": "The apo-ATP transition of the RecA-ssDNA filament is highly cooperative.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies revealed that the apo-ATP transition of the RecA-ssDNA flament is highly cooperative (Kim et al., 2014; Alekseev et al., 2020b) meaning that such transitions within the filament are affected by the conformational state of adjacent RecA monomer-monomer interfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "ce511ae0-67da-4dfb-8e06-cc42786fdef5",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C108",
+      "claim": "Apart from inhibition of conformational transitions by direct binding, RecX may interfere with the cooperativity of the apo-ATP transition in the process that involves binding of two RecX monomers.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that apart from inhibition of conformational transitions by direct binding, RecX may interfere with the cooperativity of the apo-ATP transition in the process that involves binding of two RecX monomers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors based on their findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "857f36ee-fb9f-40a2-ba74-b20e9301ee6f",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C109",
+      "claim": "RecX is much more efficient at disrupting RecA filaments formed on duplex DNA compared to RecA-ssDNA complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike RecA-ssDNA complexes, RecX is much more efficient at disrupting RecA filaments formed on duplex DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data comparing RecA-ssDNA and RecA-dsDNA filament disassembly.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "58c9ddc6-4ce4-4656-aa5e-f539d6e22f01",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C110",
+      "claim": "RecA-dsDNA filaments mimic postsynaptic RecA-DNA complexes, yet their structure is closely related to the presynaptic RecA-ssDNA filament.",
+      "claim_type": "EXPLICIT",
+      "source": "Such filaments mimic postsynaptic RecA-DNA complexes, yet their structure is closely related to the presynaptic RecA-ssDNA filament (Chen et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "3a9b950d-6f5f-4816-ba7f-50b1f0fa9f58",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C111",
+      "claim": "RecX interacts with the RecA-dsDNA filament in a similar manner by trapping transiently occurring inactive states.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering structural similarity, we assume that RecX interacts with the RecA-dsDNA filament in a similar manner by trapping transiently occurring inactive states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assumption made by the authors based on structural similarity.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "446b16c6-4afd-4cdf-9dd9-9cb6268f7457",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C112",
+      "claim": "The internal tension of the stretched duplex DNA makes the compressed form of the RecA filament highly unstable.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the internal tension of the stretched duplex DNA makes the compressed form of the RecA filament highly unstable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental observations and physical principles.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "7ca4ed87-48f0-441b-b114-60e4ea3cceeb",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C113",
+      "claim": "RecX impedes the transition into the stable active conformation, and by this stimulates the dissociation of RecA from dsDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "RecX impedes the transition into the stable active conformation, and by this stimulates the dissociation of RecA (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the experimental observations and the proposed mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "cbc370eb-1b99-44d5-a75e-c5b6ab053114",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C114",
+      "claim": "Elimination of ATP leads to a complete dissociation of RecA from dsDNA within seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "Instability of the inactive form of RecA-dsDNA filaments was confirmed by a control experiment which demonstrated that elimination of ATP leads to a complete dissociation of RecA from dsDNA within seconds (Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by control experiment data shown in Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "b8e7b40a-72e7-4fd6-9c7e-d4c56812f555",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C115",
+      "claim": "RecA-dsDNA complexes are not stable without free RecA and quickly depolymerize as a result of ATP hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "RecA-dsDNA complexes are not stable without free RecA and quickly depolymerize as a result of ATP hydrolysis, indicating that a significant turnover of free and DNA-bound RecA is necessary for maintaining the filament (Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "c2e846a8-ca6d-4270-aef0-66a5889008ff",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C116",
+      "claim": "One potential implication of high efficiency of RecX-induced disruption of RecA-dsDNA filaments is preventing erroneous binding of RecA to a duplex DNA inside the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "One potential implication of high efficiency of RecX-induced disruption of RecA-dsDNA filaments is preventing erroneous binding of RecA to a duplex DNA inside the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the biological significance of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "88613999-9e52-44f6-ab34-7c6dc6fd9fb6",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C117",
+      "claim": "RecX may interact with the RecA-ssDNA filament and stay bound until the homologous dsDNA is found, and once the strand exchange occurs and the heteroduplex is formed within the filament, RecX stimulates fast dissociation of the postsynaptic complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Another interesting possibility is that RecX may interact with the RecA-ssDNA filament and stay bound until the homologous dsDNA is found. Once the strand exchange occurs and the heteroduplex is formed within the filament, RecX stimulates fast dissociation of the postsynaptic complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the biological significance of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "be312f1a-7446-4cab-ac4d-a589e7e65036",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C118",
+      "claim": "Results of this work provide new mechanistic insights into the RecX-RecA interactions and highlight the importance of conformational transitions of RecA filaments as an additional level of regulation of its biological activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Results of this work provide new mechanistic insights into the RecX-RecA interactions and highlight the importance of conformational transitions of RecA filaments as an additional level of regulation of its biological activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the study's contributions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "b4a0adbe-60b5-4e3b-adcb-7043d15ce138",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "claim_id": "C119",
+      "claim": "Regulation of recombination by conformation-specific interactions might be relevant for eukaryotic recombinases Rad51, Dmc1.",
+      "claim_type": "EXPLICIT",
+      "source": "Regulation of recombination by conformation-specific interactions might be relevant for eukaryotic recombinases Rad51, Dmc1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the broader implications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5ca41379-42e4-48e7-b892-3d9e10651e5a",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "E. coli RecX induces biphasic shortening of RecA-ssDNA filaments in a concentration-dependent manner. The shortening consists of an initial rapid step-like decrease followed by a slower gradual reduction in filament length. The initial shortening exhibits positive cooperativity with a Hill coefficient of 2.0\u00b10.3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C37 are well-supported by experimental data shown in Figures 1C-E. The concentration-dependent effects, biphasic kinetics, and Hill coefficient analysis are all directly demonstrated through single-molecule optical tweezers measurements with appropriate controls and replicates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "3c76698d-3a62-408c-8c28-5803ca581e7a",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "RecX-induced shortening of RecA-ssDNA filaments comprises two distinct processes: a reversible conformational change causing rapid compression and irreversible slow disassembly. RecX directly interacts with DNA-bound RecA independent of free RecA in solution, and the conformational change can be reversed upon RecX removal, though incomplete restoration indicates progressive RecA dissociation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C51 are strongly supported by the experimental design in Figure 2, which cleverly eliminates free RecA to demonstrate direct RecX-RecA filament interactions. The reversibility experiments with multiple cycles and quantification of reversible vs. irreversible components (Figure 2C) provide compelling evidence for the two-process model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "5ad577d4-e8d9-4061-900b-eedaf7d3f4e5",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "RecX binds tightly to the inactive (apo) conformation of RecA-ssDNA filaments and significantly retards the apo-to-ATP conformational transition. Incubation time with RecX correlates with slower decompression rates (kdecompression decreasing from 0.2 to 0.13 s\u207b\u00b9 with 30-200s incubation), compared to 1.3\u00b10.3 s\u207b\u00b9 without RecX. The RecX-apo interaction is disrupted during the conformational transition to the ATP-bound state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C66 are well-supported by systematic experiments in Figure 3 showing RecX effects on inactive filaments. The quantitative kinetic analysis with varying incubation times, appropriate controls (Figure 3 supplements 1-2), and reproducible measurements (N\u22655) provide strong evidence for conformation-specific RecX binding and its effect on transition kinetics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "fc93a073-564d-4d7d-9ae0-e2e78877638d",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "RecX also interacts with the ADP-bound form of RecA-ssDNA filaments, slowing the subsequent decompression similarly to its interaction with apo filaments. ADP-bound filaments show enhanced stability when supplemented with RecX.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C69 are supported by experimental data in Figure 3 supplement 3 and reference to prior work (C68) establishing ADP and apo as distinct states. The parallel behavior with apo filaments strengthens the conclusion that RecX preferentially binds inactive conformations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "9784303c-29c7-4db6-bacb-f96faa70c948",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Fluorescently labeled RecX (RecXmNG) retains wild-type inhibitory activity and reveals that RecX tightly binds compressed (inactive) RecA-ssDNA filaments but dissociates during ATP-induced transition to the active state. RecX shows minimal binding to active ATP-bound filaments, indicating much weaker affinity for the active conformation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C77 are strongly supported by multiple complementary approaches: bulk ATPase assays (Figure 4A), single-molecule kinetics (Figure 4B), and fluorescence imaging (Figures 4C-D, Video 1). The functional validation of RecXmNG and quantitative fluorescence analysis provide direct visualization confirming conformation-specific binding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "d6d4e2a7-56dd-40ef-8f6e-3ede4819edf3",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In the presence of non-hydrolyzable ATP analog ATP\u03b3S, RecX does not induce shortening of RecA-ssDNA filaments, indicating that ATP hydrolysis is essential for RecX-induced destabilization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C79 are supported by experimental data in Figure 4 supplement 1. This control experiment is critical for establishing the mechanistic requirement for ATP hydrolysis, though the inference in C79 could benefit from additional mechanistic validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "524b4823-dec5-4508-9c2d-542f0dbd0838",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "RecX is highly efficient at irreversible disassembly of RecA-dsDNA filaments, reducing filament length to bare dsDNA within 30 seconds. The disassembly rate for RecA-dsDNA is approximately 100-fold faster than for RecA-ssDNA filaments at 200 nM RecX.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C86 are well-supported by experimental data in Figure 5. The dramatic difference in disassembly kinetics between dsDNA and ssDNA filaments is quantitatively demonstrated (Figure 5C) with appropriate sample sizes (N=9 for assembly, N=4 for comparison). The irreversibility is clearly shown by lack of re-elongation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "8f29f194-0765-408f-82e6-e2646ca24d34",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "RecX stimulates net disassembly of RecA-ssDNA filaments, though the process is slow (hundreds of seconds for ~5 \u03bcm filaments). The capping model alone cannot explain the results since RecX causes shortening even without RecA polymerization, indicating RecX binds along filaments and promotes internal structural rearrangements and/or disassembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C91 synthesize experimental findings to challenge the existing capping model. The logic is sound: experiments without free RecA (Figure 2) directly contradict predictions of a pure capping mechanism. The conclusion that RecX acts internally is well-supported, though the specific mechanism remains partially uncertain.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "8893fc49-bbeb-4289-86ae-80d6e570dc35",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "RecX preferentially binds inactive (apo/ADP) RecA-ssDNA conformations with high affinity while showing significantly lower affinity for ATP-bound active conformations. RecX-bound inactive filaments are stable for >200 seconds without depolymerization, but RecX gradually dissociates during ATP-induced transitions. Depolymerization requires ATP presence, suggesting coupling to ATP binding or hydrolysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C98 integrate current findings with prior literature (C92-C93, C96) to establish differential binding affinity. The experimental evidence from Figures 3-4 strongly supports conformation-specific binding. The connection to prior ATPase inhibition data (C92) strengthens the mechanistic interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "9dcaed6b-0e4a-4479-9e66-4e9a506672f6",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors propose a model where RecX binds transiently occurring inactive patches within active RecA-ssDNA filaments, increasing their lifetime by hampering transition to the active state. Transition to the active state is accompanied by RecX dissociation. This dynamic interaction increases the fraction and lifetime of inactive states, causing filament shortening that reverses when RecX is removed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C102 present the authors' mechanistic model, which is well-supported by the collective experimental evidence from Figures 1-4. The model elegantly explains the biphasic kinetics, reversibility, concentration dependence, and conformation-specific binding. While the model involves inference, it is strongly grounded in the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "b9d31f00-ba27-402d-9fef-d0b694cd0690",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Previous structural studies suggest RecX binds between RecA's C-terminal and core domains, potentially clamping the C-terminal domain to prevent conformational transitions. The current study shows RecX-induced compression exhibits positive cooperativity (Hill coefficient \u22482), and prior work established that apo-ATP transitions are highly cooperative.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C103-C107 appropriately cite prior structural and mechanistic work (VanLoock et al., Kim et al.) and integrate it with current findings. The Hill coefficient analysis (C106, Figure 1E) is properly conducted. These claims provide important context for interpreting the mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "e7b47e5e-7f91-42c9-bc0d-870dac776876",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors hypothesize that RecX may interfere with the cooperativity of the apo-ATP transition through a process involving binding of two RecX monomers, beyond direct inhibition by binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C108 is explicitly presented as a hypothesis to explain the Hill coefficient of ~2. While the cooperativity data supports some form of multi-RecX interaction, the specific mechanism remains speculative and would require additional structural or biochemical validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "f0a02661-e700-4fac-8031-d378b1e54c5a",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "RecX is much more efficient at disrupting RecA-dsDNA filaments than RecA-ssDNA complexes. The authors propose RecX interacts similarly by trapping inactive states, but internal tension in stretched dsDNA makes the compressed form highly unstable, leading to rapid RecA dissociation. Control experiments confirm inactive RecA-dsDNA filaments are unstable without ATP or free RecA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C109-C115 are supported by experimental data in Figure 5 and supplements. The dramatic kinetic difference is well-documented (C109, C86). The mechanistic interpretation (C111-C113) is reasonable inference based on structural similarity (C110) and physical principles. Control experiments (C114-C115, Figure 5 supplements) validate the instability claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "f0c0e8bd-d92f-4b87-95d5-c44c5cbb5af2",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors speculate on biological implications: RecX-mediated disruption of RecA-dsDNA filaments may prevent erroneous RecA binding to duplex DNA, or RecX may remain bound to RecA-ssDNA until strand exchange occurs, then stimulate rapid postsynaptic complex dissociation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C116-C117 are explicitly speculative interpretations of potential biological functions. While the speculation is reasonable given the experimental findings, these claims lack direct experimental validation in cellular contexts and represent hypotheses for future investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "331fe9a3-a8cf-466c-bdfb-1a648dcf5bd5",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background claims establishing the biological roles of RecA and RecX, their biochemical properties, genetic organization, and prior models of RecX inhibition including the capping model and conformational blocking model. Previous single-molecule studies characterized RecA conformational states and RecX-induced depolymerization kinetics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C31, C38-C40, C52-C53, C62, C68 appropriately cite established knowledge and prior research. These provide essential context for the current work. The citations appear accurate and relevant, though detailed verification of each cited claim is beyond the scope of this review.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "c62296d8-ed84-4de0-97d9-7124f964d10a",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The study's main conclusions: RecX effectively binds inactive RecA-ssDNA conformations and slows the transition to the active state, providing new mechanistic insights into RecX-RecA interactions and highlighting conformational transitions as an additional regulatory level.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 and C118 represent the study's primary conclusions, which are well-supported by the comprehensive experimental evidence from multiple complementary approaches (optical tweezers, fluorescence microscopy, biochemical assays). The conclusions appropriately reflect the strength of the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    },
+    {
+      "id": "9357ca57-8c0b-434c-b089-1618f9ffbbfd",
+      "content_id": "820a7cd1-f265-4b59-a777-c33c4fda126b",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The authors suggest that regulation of recombination by conformation-specific interactions might be relevant for eukaryotic recombinases Rad51 and Dmc1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C119 is speculative extrapolation to eukaryotic systems. While RecA and Rad51/Dmc1 share functional similarities, this claim lacks experimental support and represents a hypothesis for future investigation rather than a conclusion of this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:49:52.922827Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "de4dc728-604e-4dfa-96a4-fad32bbd7dbf",
+      "result_id": "5ca41379-42e4-48e7-b892-3d9e10651e5a"
+    },
+    {
+      "claim_id": "749e4333-92de-4af7-ba43-aaf885ed34ac",
+      "result_id": "5ca41379-42e4-48e7-b892-3d9e10651e5a"
+    },
+    {
+      "claim_id": "3e940798-1c2f-498b-a722-51f8528559fc",
+      "result_id": "5ca41379-42e4-48e7-b892-3d9e10651e5a"
+    },
+    {
+      "claim_id": "fd805e89-aece-4e73-b60d-6b43625f43fc",
+      "result_id": "5ca41379-42e4-48e7-b892-3d9e10651e5a"
+    },
+    {
+      "claim_id": "359840ee-8965-4a76-b920-42d70b1ea5ed",
+      "result_id": "5ca41379-42e4-48e7-b892-3d9e10651e5a"
+    },
+    {
+      "claim_id": "99f83377-3c7d-4379-92dc-a644b862b787",
+      "result_id": "5ca41379-42e4-48e7-b892-3d9e10651e5a"
+    },
+    {
+      "claim_id": "3a491b03-1f2a-40a8-bc1a-c149b78803eb",
+      "result_id": "3c76698d-3a62-408c-8c28-5803ca581e7a"
+    },
+    {
+      "claim_id": "97268925-a153-4f88-9b70-955b40ff5059",
+      "result_id": "3c76698d-3a62-408c-8c28-5803ca581e7a"
+    },
+    {
+      "claim_id": "92edd237-2af4-481a-a931-b9bf17fc2fbe",
+      "result_id": "3c76698d-3a62-408c-8c28-5803ca581e7a"
+    },
+    {
+      "claim_id": "b3fe8251-6296-4f18-ab07-ea53f884ab73",
+      "result_id": "3c76698d-3a62-408c-8c28-5803ca581e7a"
+    },
+    {
+      "claim_id": "656ae2fb-a83c-4987-b63b-51f321dc9d96",
+      "result_id": "3c76698d-3a62-408c-8c28-5803ca581e7a"
+    },
+    {
+      "claim_id": "78cfa5ae-5534-46cb-8a45-9ac92ae5de26",
+      "result_id": "3c76698d-3a62-408c-8c28-5803ca581e7a"
+    },
+    {
+      "claim_id": "14c08571-ecdb-4fac-b464-70fba86f1944",
+      "result_id": "3c76698d-3a62-408c-8c28-5803ca581e7a"
+    },
+    {
+      "claim_id": "90f78cd6-cd4e-425e-8524-453d73f84a9e",
+      "result_id": "3c76698d-3a62-408c-8c28-5803ca581e7a"
+    },
+    {
+      "claim_id": "9f71dacb-a4fc-41e8-800e-44d34702360d",
+      "result_id": "3c76698d-3a62-408c-8c28-5803ca581e7a"
+    },
+    {
+      "claim_id": "818a2f0e-f559-468a-bf8a-8444457b07e7",
+      "result_id": "3c76698d-3a62-408c-8c28-5803ca581e7a"
+    },
+    {
+      "claim_id": "cf2a2b2d-841f-4106-bcad-057c7b2dada4",
+      "result_id": "3c76698d-3a62-408c-8c28-5803ca581e7a"
+    },
+    {
+      "claim_id": "ea32cf11-9703-4d66-9244-669c53b2b7f5",
+      "result_id": "5ad577d4-e8d9-4061-900b-eedaf7d3f4e5"
+    },
+    {
+      "claim_id": "c41bee4c-83a2-4581-9719-0b127e7685c5",
+      "result_id": "5ad577d4-e8d9-4061-900b-eedaf7d3f4e5"
+    },
+    {
+      "claim_id": "37362199-6de6-4fff-9410-c6003cd718c3",
+      "result_id": "5ad577d4-e8d9-4061-900b-eedaf7d3f4e5"
+    },
+    {
+      "claim_id": "2086238a-e61a-41de-b0f3-5ac7c3b88de4",
+      "result_id": "5ad577d4-e8d9-4061-900b-eedaf7d3f4e5"
+    },
+    {
+      "claim_id": "f9e7bc58-eccc-4363-900e-c594249db87a",
+      "result_id": "5ad577d4-e8d9-4061-900b-eedaf7d3f4e5"
+    },
+    {
+      "claim_id": "aaad30e6-9e30-4e83-8395-14b7249beeb7",
+      "result_id": "5ad577d4-e8d9-4061-900b-eedaf7d3f4e5"
+    },
+    {
+      "claim_id": "d671e02c-0a6d-4dd9-8f99-7ab230634ea8",
+      "result_id": "5ad577d4-e8d9-4061-900b-eedaf7d3f4e5"
+    },
+    {
+      "claim_id": "06f3b359-9d6e-4160-b0ab-aa713fb1ed19",
+      "result_id": "5ad577d4-e8d9-4061-900b-eedaf7d3f4e5"
+    },
+    {
+      "claim_id": "ca50c7a6-21b2-4a6f-b184-0aa88f1783af",
+      "result_id": "5ad577d4-e8d9-4061-900b-eedaf7d3f4e5"
+    },
+    {
+      "claim_id": "00240478-e972-4f12-a26a-72d3eff14e96",
+      "result_id": "5ad577d4-e8d9-4061-900b-eedaf7d3f4e5"
+    },
+    {
+      "claim_id": "8d79b2f9-c8a4-4de4-894d-6f1ed0795eb9",
+      "result_id": "5ad577d4-e8d9-4061-900b-eedaf7d3f4e5"
+    },
+    {
+      "claim_id": "f3a3f606-0e0a-4aff-bd4b-547d2b287bf3",
+      "result_id": "5ad577d4-e8d9-4061-900b-eedaf7d3f4e5"
+    },
+    {
+      "claim_id": "f53a05b5-4133-4d82-b3f4-cc43c0fd441e",
+      "result_id": "fc93a073-564d-4d7d-9ae0-e2e78877638d"
+    },
+    {
+      "claim_id": "cd4e6a6d-6c35-4e13-a051-ad50e9865b16",
+      "result_id": "fc93a073-564d-4d7d-9ae0-e2e78877638d"
+    },
+    {
+      "claim_id": "438543be-8cb0-4f93-9526-b5a2344442ea",
+      "result_id": "fc93a073-564d-4d7d-9ae0-e2e78877638d"
+    },
+    {
+      "claim_id": "55523ece-429c-42f1-b576-9c0d631966a9",
+      "result_id": "9784303c-29c7-4db6-bacb-f96faa70c948"
+    },
+    {
+      "claim_id": "c561ce46-d83c-42c7-a4a4-c27f953b5b09",
+      "result_id": "9784303c-29c7-4db6-bacb-f96faa70c948"
+    },
+    {
+      "claim_id": "1c976b0b-b447-45ae-80c6-e84d39d78f0c",
+      "result_id": "9784303c-29c7-4db6-bacb-f96faa70c948"
+    },
+    {
+      "claim_id": "84400240-66ca-46c4-97b1-df91ac6ea809",
+      "result_id": "9784303c-29c7-4db6-bacb-f96faa70c948"
+    },
+    {
+      "claim_id": "84cb659a-961b-4350-a3d9-d17aa8cb0745",
+      "result_id": "9784303c-29c7-4db6-bacb-f96faa70c948"
+    },
+    {
+      "claim_id": "e10f0835-64ba-4ab3-815e-81f42ee31928",
+      "result_id": "9784303c-29c7-4db6-bacb-f96faa70c948"
+    },
+    {
+      "claim_id": "0b012c16-3ade-4674-b0b4-a64b1f07081a",
+      "result_id": "9784303c-29c7-4db6-bacb-f96faa70c948"
+    },
+    {
+      "claim_id": "e5dfa801-fa7e-4311-a316-51be918a4ba3",
+      "result_id": "9784303c-29c7-4db6-bacb-f96faa70c948"
+    },
+    {
+      "claim_id": "5e307eb2-53a1-44f9-bedc-385f2282fb6f",
+      "result_id": "d6d4e2a7-56dd-40ef-8f6e-3ede4819edf3"
+    },
+    {
+      "claim_id": "52a267d2-793d-4cda-b4d7-8cb870aed872",
+      "result_id": "d6d4e2a7-56dd-40ef-8f6e-3ede4819edf3"
+    },
+    {
+      "claim_id": "d982bcf3-e3a1-4e8e-8d9c-f08115554752",
+      "result_id": "524b4823-dec5-4508-9c2d-542f0dbd0838"
+    },
+    {
+      "claim_id": "c55d3274-dde1-46d8-8aaf-998bc04a89e0",
+      "result_id": "524b4823-dec5-4508-9c2d-542f0dbd0838"
+    },
+    {
+      "claim_id": "8c27ded7-efd8-4910-bc40-e66a195b29eb",
+      "result_id": "524b4823-dec5-4508-9c2d-542f0dbd0838"
+    },
+    {
+      "claim_id": "baca9ebb-cbfc-4ebe-8914-f8153dc3b67e",
+      "result_id": "524b4823-dec5-4508-9c2d-542f0dbd0838"
+    },
+    {
+      "claim_id": "911eddcd-a992-4d39-842d-816aab073282",
+      "result_id": "524b4823-dec5-4508-9c2d-542f0dbd0838"
+    },
+    {
+      "claim_id": "adc291ec-855e-4611-89a4-f020e3b2b42f",
+      "result_id": "524b4823-dec5-4508-9c2d-542f0dbd0838"
+    },
+    {
+      "claim_id": "0730ae04-f389-4b84-919b-4492000d2333",
+      "result_id": "524b4823-dec5-4508-9c2d-542f0dbd0838"
+    },
+    {
+      "claim_id": "5e1f0883-0903-4c08-84fa-98f841f6aba7",
+      "result_id": "8f29f194-0765-408f-82e6-e2646ca24d34"
+    },
+    {
+      "claim_id": "36d783cf-e521-49d8-b49e-7a35bc0ee21b",
+      "result_id": "8f29f194-0765-408f-82e6-e2646ca24d34"
+    },
+    {
+      "claim_id": "615934a9-2cda-4d30-9baa-26023033c86a",
+      "result_id": "8f29f194-0765-408f-82e6-e2646ca24d34"
+    },
+    {
+      "claim_id": "740c07c5-f59d-4dc9-a845-0e1a69eb1c54",
+      "result_id": "8f29f194-0765-408f-82e6-e2646ca24d34"
+    },
+    {
+      "claim_id": "aecf4374-5f28-4af2-9e3e-96dfdd55d4fb",
+      "result_id": "8f29f194-0765-408f-82e6-e2646ca24d34"
+    },
+    {
+      "claim_id": "1893c749-2a22-4792-95a6-202e2b525398",
+      "result_id": "8893fc49-bbeb-4289-86ae-80d6e570dc35"
+    },
+    {
+      "claim_id": "148b4e48-659a-4613-a5f8-6738b3036ae2",
+      "result_id": "8893fc49-bbeb-4289-86ae-80d6e570dc35"
+    },
+    {
+      "claim_id": "d151ce7c-f196-4a02-a020-e2ad3fdebd9b",
+      "result_id": "8893fc49-bbeb-4289-86ae-80d6e570dc35"
+    },
+    {
+      "claim_id": "2c1e3315-3821-4724-876a-ccc79b75fe06",
+      "result_id": "8893fc49-bbeb-4289-86ae-80d6e570dc35"
+    },
+    {
+      "claim_id": "fcd0c5f5-a09c-4268-8a19-9e76389e7d3e",
+      "result_id": "8893fc49-bbeb-4289-86ae-80d6e570dc35"
+    },
+    {
+      "claim_id": "041ab4db-7b52-4eff-9df4-97c4c8d491ef",
+      "result_id": "8893fc49-bbeb-4289-86ae-80d6e570dc35"
+    },
+    {
+      "claim_id": "c75e7ddb-11cb-48cc-9f9f-d85352d1c80b",
+      "result_id": "8893fc49-bbeb-4289-86ae-80d6e570dc35"
+    },
+    {
+      "claim_id": "b5be10c1-1665-475f-b5fd-4e15d62a9d54",
+      "result_id": "9dcaed6b-0e4a-4479-9e66-4e9a506672f6"
+    },
+    {
+      "claim_id": "7da58020-b293-4e47-bdfa-cf1bafaf6a12",
+      "result_id": "9dcaed6b-0e4a-4479-9e66-4e9a506672f6"
+    },
+    {
+      "claim_id": "d70c60ca-f0df-413f-ae00-b1c90bbf2cbf",
+      "result_id": "9dcaed6b-0e4a-4479-9e66-4e9a506672f6"
+    },
+    {
+      "claim_id": "30b30a2c-7b93-4c0c-8282-5dfea1fd7fe6",
+      "result_id": "9dcaed6b-0e4a-4479-9e66-4e9a506672f6"
+    },
+    {
+      "claim_id": "f4f1ec92-2dae-4410-b5b6-d8976981982e",
+      "result_id": "b9d31f00-ba27-402d-9fef-d0b694cd0690"
+    },
+    {
+      "claim_id": "69c5212a-a003-4111-ad53-32c3819ca6da",
+      "result_id": "b9d31f00-ba27-402d-9fef-d0b694cd0690"
+    },
+    {
+      "claim_id": "78483b88-95f8-4a8e-8eb2-57107fb25a94",
+      "result_id": "b9d31f00-ba27-402d-9fef-d0b694cd0690"
+    },
+    {
+      "claim_id": "bd677d66-3ed1-43dc-97f4-d5a7a4e272cf",
+      "result_id": "b9d31f00-ba27-402d-9fef-d0b694cd0690"
+    },
+    {
+      "claim_id": "5ad7880e-1a4e-4b82-a815-bf8d4f81daed",
+      "result_id": "b9d31f00-ba27-402d-9fef-d0b694cd0690"
+    },
+    {
+      "claim_id": "ce511ae0-67da-4dfb-8e06-cc42786fdef5",
+      "result_id": "e7b47e5e-7f91-42c9-bc0d-870dac776876"
+    },
+    {
+      "claim_id": "857f36ee-fb9f-40a2-ba74-b20e9301ee6f",
+      "result_id": "f0a02661-e700-4fac-8031-d378b1e54c5a"
+    },
+    {
+      "claim_id": "58c9ddc6-4ce4-4656-aa5e-f539d6e22f01",
+      "result_id": "f0a02661-e700-4fac-8031-d378b1e54c5a"
+    },
+    {
+      "claim_id": "3a9b950d-6f5f-4816-ba7f-50b1f0fa9f58",
+      "result_id": "f0a02661-e700-4fac-8031-d378b1e54c5a"
+    },
+    {
+      "claim_id": "446b16c6-4afd-4cdf-9dd9-9cb6268f7457",
+      "result_id": "f0a02661-e700-4fac-8031-d378b1e54c5a"
+    },
+    {
+      "claim_id": "7ca4ed87-48f0-441b-b114-60e4ea3cceeb",
+      "result_id": "f0a02661-e700-4fac-8031-d378b1e54c5a"
+    },
+    {
+      "claim_id": "cbc370eb-1b99-44d5-a75e-c5b6ab053114",
+      "result_id": "f0a02661-e700-4fac-8031-d378b1e54c5a"
+    },
+    {
+      "claim_id": "b8e7b40a-72e7-4fd6-9c7e-d4c56812f555",
+      "result_id": "f0a02661-e700-4fac-8031-d378b1e54c5a"
+    },
+    {
+      "claim_id": "c2e846a8-ca6d-4270-aef0-66a5889008ff",
+      "result_id": "f0c0e8bd-d92f-4b87-95d5-c44c5cbb5af2"
+    },
+    {
+      "claim_id": "88613999-9e52-44f6-ab34-7c6dc6fd9fb6",
+      "result_id": "f0c0e8bd-d92f-4b87-95d5-c44c5cbb5af2"
+    },
+    {
+      "claim_id": "305a141d-2eaf-4cd9-9147-801b26f477c9",
+      "result_id": "331fe9a3-a8cf-466c-bdfb-1a648dcf5bd5"
+    },
+    {
+      "claim_id": "74353e2c-693f-4b2b-af13-9119eac17b62",
+      "result_id": "331fe9a3-a8cf-466c-bdfb-1a648dcf5bd5"
+    },
+    {
+      "claim_id": "e7486f46-cacd-4fcd-aeda-217feb28445b",
+      "result_id": "331fe9a3-a8cf-466c-bdfb-1a648dcf5bd5"
+    },
+    {
+      "claim_id": "e8d41454-b3db-4d8d-93e5-739bfb116013",
+      "result_id": "331fe9a3-a8cf-466c-bdfb-1a648dcf5bd5"
+    },
+    {
+      "claim_id": "f8c83be3-73ae-4972-9858-6bb0565298db",
+      "result_id": "331fe9a3-a8cf-466c-bdfb-1a648dcf5bd5"
+    },
+    {
+      "claim_id": "c14b7532-0573-4a61-938b-923305d6cfa3",
+      "result_id": "331fe9a3-a8cf-466c-bdfb-1a648dcf5bd5"
+    },
+    {
+      "claim_id": "27618d3f-059f-4c59-86b2-ed7e9bcafd6a",
+      "result_id": "331fe9a3-a8cf-466c-bdfb-1a648dcf5bd5"
+    },
+    {
+      "claim_id": "e1a6b463-5973-45b5-8573-7d88a7772a20",
+      "result_id": "331fe9a3-a8cf-466c-bdfb-1a648dcf5bd5"
+    },
+    {
+      "claim_id": "bac8c4bf-6b0b-4281-8797-34749b421bd2",
+      "result_id": "331fe9a3-a8cf-466c-bdfb-1a648dcf5bd5"
+    },
+    {
+      "claim_id": "c6fa57f1-5159-4ae3-acbc-ae1434c15e46",
+      "result_id": "331fe9a3-a8cf-466c-bdfb-1a648dcf5bd5"
+    },
+    {
+      "claim_id": "85e4ec52-0eb5-4c81-a01a-3beba9fc2e8a",
+      "result_id": "331fe9a3-a8cf-466c-bdfb-1a648dcf5bd5"
+    },
+    {
+      "claim_id": "bfa7eb0f-056b-4f06-9c9c-877dfd33a561",
+      "result_id": "331fe9a3-a8cf-466c-bdfb-1a648dcf5bd5"
+    },
+    {
+      "claim_id": "9a89d569-85f2-42c0-802e-5cb58a0094a8",
+      "result_id": "331fe9a3-a8cf-466c-bdfb-1a648dcf5bd5"
+    },
+    {
+      "claim_id": "7443d4b3-53f7-47a9-a19d-c3ee0c7f3f7c",
+      "result_id": "331fe9a3-a8cf-466c-bdfb-1a648dcf5bd5"
+    },
+    {
+      "claim_id": "5a51883a-216f-412c-9b6d-c1779c002c59",
+      "result_id": "331fe9a3-a8cf-466c-bdfb-1a648dcf5bd5"
+    },
+    {
+      "claim_id": "1905bc2b-ab3e-436a-85b9-fc905215faef",
+      "result_id": "331fe9a3-a8cf-466c-bdfb-1a648dcf5bd5"
+    },
+    {
+      "claim_id": "84cadc42-dae5-4994-a9c0-8cd8a74dba66",
+      "result_id": "331fe9a3-a8cf-466c-bdfb-1a648dcf5bd5"
+    },
+    {
+      "claim_id": "4cb796b8-26c7-4535-ba8f-a0e4ef34f406",
+      "result_id": "331fe9a3-a8cf-466c-bdfb-1a648dcf5bd5"
+    },
+    {
+      "claim_id": "d0c1f059-08ea-4855-8d0f-5b47e3023967",
+      "result_id": "331fe9a3-a8cf-466c-bdfb-1a648dcf5bd5"
+    },
+    {
+      "claim_id": "9508b403-08ca-42f3-819e-c75d34000474",
+      "result_id": "331fe9a3-a8cf-466c-bdfb-1a648dcf5bd5"
+    },
+    {
+      "claim_id": "153f298e-4891-4d04-bafb-6759ea6f778f",
+      "result_id": "331fe9a3-a8cf-466c-bdfb-1a648dcf5bd5"
+    },
+    {
+      "claim_id": "5a9e30b3-75ad-4908-989a-d8a293917f6b",
+      "result_id": "331fe9a3-a8cf-466c-bdfb-1a648dcf5bd5"
+    },
+    {
+      "claim_id": "26c4fbcc-9aa6-4776-a53b-480e68e7aa44",
+      "result_id": "331fe9a3-a8cf-466c-bdfb-1a648dcf5bd5"
+    },
+    {
+      "claim_id": "1f70204f-bdec-440b-bfd4-2e3ba9ab9946",
+      "result_id": "331fe9a3-a8cf-466c-bdfb-1a648dcf5bd5"
+    },
+    {
+      "claim_id": "84400b55-e606-4886-a5b9-c36075941132",
+      "result_id": "331fe9a3-a8cf-466c-bdfb-1a648dcf5bd5"
+    },
+    {
+      "claim_id": "383702c1-903c-44e4-adc0-3fec7e53907c",
+      "result_id": "331fe9a3-a8cf-466c-bdfb-1a648dcf5bd5"
+    },
+    {
+      "claim_id": "6f8f0523-a757-4e8e-a30a-3a8302705e37",
+      "result_id": "331fe9a3-a8cf-466c-bdfb-1a648dcf5bd5"
+    },
+    {
+      "claim_id": "5b44f16e-9363-4605-b1d4-fe728ce811b0",
+      "result_id": "331fe9a3-a8cf-466c-bdfb-1a648dcf5bd5"
+    },
+    {
+      "claim_id": "f289e499-a897-4c96-aed1-e514ece86186",
+      "result_id": "331fe9a3-a8cf-466c-bdfb-1a648dcf5bd5"
+    },
+    {
+      "claim_id": "d5db6d67-964a-48ac-97a2-316f4781437c",
+      "result_id": "331fe9a3-a8cf-466c-bdfb-1a648dcf5bd5"
+    },
+    {
+      "claim_id": "488285fa-69ff-4953-ba3f-982db23643f3",
+      "result_id": "331fe9a3-a8cf-466c-bdfb-1a648dcf5bd5"
+    },
+    {
+      "claim_id": "2cfe3467-58c9-467c-9c88-71dbd7355e24",
+      "result_id": "331fe9a3-a8cf-466c-bdfb-1a648dcf5bd5"
+    },
+    {
+      "claim_id": "4e27ff0e-270f-4b35-831d-c3c3139dcce2",
+      "result_id": "331fe9a3-a8cf-466c-bdfb-1a648dcf5bd5"
+    },
+    {
+      "claim_id": "bb82ef6c-96d2-4e90-8d40-2636a00b11d6",
+      "result_id": "331fe9a3-a8cf-466c-bdfb-1a648dcf5bd5"
+    },
+    {
+      "claim_id": "2cd4f545-ba13-4acb-8d97-6a0269d9cdff",
+      "result_id": "331fe9a3-a8cf-466c-bdfb-1a648dcf5bd5"
+    },
+    {
+      "claim_id": "cd4e6a6d-6c35-4e13-a051-ad50e9865b16",
+      "result_id": "331fe9a3-a8cf-466c-bdfb-1a648dcf5bd5"
+    },
+    {
+      "claim_id": "e106b27a-f850-4d13-8fa9-9ad8b86dade6",
+      "result_id": "c62296d8-ed84-4de0-97d9-7124f964d10a"
+    },
+    {
+      "claim_id": "2e4d74ce-5073-469b-b34c-a9d796133dd9",
+      "result_id": "c62296d8-ed84-4de0-97d9-7124f964d10a"
+    },
+    {
+      "claim_id": "be312f1a-7446-4cab-ac4d-a589e7e65036",
+      "result_id": "c62296d8-ed84-4de0-97d9-7124f964d10a"
+    },
+    {
+      "claim_id": "b4a0adbe-60b5-4e3b-adcb-7043d15ce138",
+      "result_id": "9357ca57-8c0b-434c-b089-1618f9ffbbfd"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,447 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Under drought-like conditions simulated in the laboratory, wild type Aedes aegypti females retain mature eggs in their ovaries for extended periods (up to 12 days post-blood-meal) while maintaining high egg viability. The proportion of viable eggs remained consistently high (~58-73% hatch rate) even after extended retention, although the number of melanized eggs laid decreased with increasing retention duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C31-C35 are well-supported by experimental data in Figure 1I-K showing egg laying and hatching rates across different retention periods. The data demonstrate that wild type females maintain reproductive resilience during drought conditions, with statistical comparisons showing consistent viability across retention durations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Two previously uncharacterized genes, tweedledee and tweedledum, were identified through transcriptomic and proteomic profiling of Aedes aegypti ovaries. Both genes show ovary-enriched, adult-specific, and temporally-restricted expression, with dramatic upregulation during egg retention periods (tweedledee increases ~3 orders of magnitude, tweedledum rises from <1 TPM to ~10,000 TPM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C40-C47 are strongly supported by RNA-seq data (Figure 2D-G) and proteomics data (Figure 2J) showing the identification and expression patterns of these genes. The temporal and spatial specificity of expression is well-documented across multiple experimental approaches and replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "tweedledee and tweedledum encode secreted proteins with N-terminal signal peptides that are detected in the hemolymph. Both proteins are strongly upregulated in the hemolymph during egg retention and within 5 hours of egg-laying, suggesting tightly regulated expression and secretion from somatic ovary cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 are supported by computational prediction (SignalP) and proteomics data (Figure 2M) showing detection of both proteins in hemolymph with temporal regulation. The inference about somatic ovary cell secretion is reasonable given the signal peptide predictions and hemolymph detection, though direct cellular localization of secretion is not definitively demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Spatial expression analysis using whole-mount ovary fluorescence RNA in situ hybridization reveals that tweedledee is expressed in calyx cells in non-blood-fed ovaries, while both tweedledee and tweedledum are co-expressed in follicular epithelial cells of primary follicle remnants during egg retention. Neither gene is expressed in secondary follicles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C65 are well-supported by RNA in situ hybridization data shown in Figure 3A-F. The spatial expression patterns are clearly documented across different reproductive states, with appropriate controls and consistent observations. The inference about functional role (C65) is reasonable but speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C66",
+      "C67",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "tweedledee and tweedledum are mosquito-specific genes located adjacent to each other on chromosome 2 of Aedes aegypti, with orthologs identifiable only in Aedes albopictus (E-value <0.05). Both genes have a conserved two-exon structure with a short first exon and longer second exon, and are flanked by conserved genes (peritrophin-like and scratch).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C66-C67, C77-C79 are supported by genomic analysis (Figure 4A, 4E) and BLAST searches. The taxon-restricted nature is well-documented, though the claim of mosquito-specificity should be qualified as limited to detectable sequence homology at the specified E-value threshold.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Syntenic loci with conserved flanking genes exist in Culex quinquefasciatus and multiple Anopheles species, containing single uncharacterized genes hypothesized to be ancient putative orthologs. These putative orthologs lack sequence homology to tweedledee/tweedledum but share structural features including two-exon structure, similar protein length (190-269 aa), N-terminal signal peptides, and similar amino acid composition biases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C87 are supported by synteny analysis (Figure 4E-F) and sequence analysis. The identification of putative orthologs based on synteny and structural similarity is reasonable, though the lack of sequence homology makes orthology inference uncertain. The shared features provide circumstantial evidence for common ancestry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "tweedledee, tweedledum, and the Anopheles gambiae putative ortholog are rapidly evolving under positive selection. dN/dS analysis places these genes in the 92nd-99th percentile of all protein-coding genes in their respective genomes. McDonald-Kreitman tests show high alpha values (0.48-0.87) with p-values suggesting positive selection (p=0.048-0.068 for Aedes genes, p=0.0066 for Anopheles).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C88-C97 are supported by dN/dS analysis (Figure 5A-B) and McDonald-Kreitman tests using population genetic data. The statistical evidence for rapid evolution and positive selection is strong, though the p-value for tweedledee (0.068) is marginally above the conventional 0.05 threshold. The sliding window analysis (C92) provides additional support for localized rapid divergence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Both tweedledee and tweedledum are in the top 90th percentile of genes showing non-spurious correlations to ecological variables reflecting climate variability. Permutation tests demonstrate significant correlations (p<0.05) to multiple climate variables including temperature seasonality and precipitation patterns, suggesting that genetic variants may reflect adaptation to local climate parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 are supported by correlation analysis (Figure 5C-E) using population genetic data from 25 African populations and permutation testing. The statistical approach is appropriate, though the authors correctly note that correlation does not prove causation. The inference about adaptation (C100) is reasonable but requires additional functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "CRISPR-Cas9 deletion of both tweedledee and tweedledum (\u0394deedum mutant with 11.7 kb deletion) produces healthy mosquitoes with normal host-seeking behavior, blood-feeding capacity, and behavioral modulation across reproductive states. The mutants show no defects in attraction to humans, blood meal consumption, or host-seeking suppression during egg retention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C101-C108 are supported by molecular characterization (Figure 6A) and behavioral data (Figure 6B-C). The mutant characterization is thorough, with appropriate controls and statistical analysis. The conclusion that basic reproductive behaviors are intact provides important context for interpreting the egg viability phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "\u0394deedum mutant females develop and retain morphologically normal eggs with motile sperm in spermathecae, but show reduced egg viability after moderate retention (6 days post-blood-meal). While 98% of wild type females vs 82% of mutants produced viable offspring, the hatch rate dropped from 73% (wild type) to 36% (\u0394deedum), demonstrating a considerable effect on egg viability during moderate retention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C116 are well-supported by microscopy (Figure 6D) and egg laying/hatching data (Figure 6E-F). Sample sizes are adequate (n=48-50 females/group), and statistical comparisons are appropriate. The phenotype is clear and reproducible, though the mechanism underlying reduced viability remains unknown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C134",
+      "C135"
+    ],
+    "result": "The \u0394deedum phenotype worsens dramatically with extended egg retention (12 days post-blood-meal). While 100% of wild type females produced viable offspring with 58% hatch rate, only 56% of \u0394deedum females produced viable offspring with 15% hatch rate. Wild type females maintain reproductive resilience regardless of retention duration, while mutants show time-dependent loss of reproductive resilience.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C121, C134-C135 are strongly supported by experimental data (Figure 6H-I) showing the time-dependent phenotype. The contrast between wild type and mutant is striking and statistically significant. Sample sizes are adequate and the conclusion about time-dependent loss of resilience is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "The \u0394deedum phenotype is recessive and maternally-derived. Heterozygous females laid similar numbers of eggs to wild type at both 6 and 12 days post-blood-meal. When \u0394deedum females were mated to wild type males, they still showed significantly reduced egg laying after extended retention, demonstrating maternal inheritance of the phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C123 are supported by genetic crosses (Figure 6\u2014figure supplement 1B-D). The recessive nature is clearly demonstrated by heterozygote data, and the maternal effect is shown by crosses with wild type males. These genetic analyses are important for understanding the inheritance pattern and mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "A \u0394dum single mutant (175 bp deletion in tweedledum exon 2) shows a phenotype largely overlapping with \u0394deedum. \u0394dum mutants blood-feed normally and lay similar numbers of eggs as wild type after moderate retention, but show significantly fewer melanized eggs and starkly reduced viable offspring after extended retention (12 days), suggesting tweedledum contributes to drought resilience.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C130 are supported by molecular characterization and phenotypic data (Figure 6\u2014figure supplement 2). The \u0394dum phenotype provides important evidence that tweedledum alone contributes to the drought resilience phenotype. However, the inability to generate a \u0394dee single mutant leaves open whether both genes are required or if tweedledum is sufficient.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Virgin and mated Aedes aegypti females are both attracted to human hosts prior to blood-feeding, with mated females showing significantly stronger attraction. After blood-feeding, mated females suppress host-seeking during egg development and retention (6-12 days post-blood-meal), restoring attraction within 2 hours of completing egg laying. This pattern is consistent across multiple reproductive cycles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C25 are supported by behavioral data using live human olfactometer assays (Figure 1B-E, Figure 1\u2014figure supplement 1). The experiments include appropriate controls, adequate sample sizes (n=12-31 trials with ~20 females each), and statistical analysis. The temporal dynamics of host-seeking behavior are well-characterized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Virgin females lay few melanized eggs when provided freshwater 6 days post-blood-meal, demonstrating that egg-laying requires both mating and blood-feeding. Blood-feeding and mating are decoupled (either can occur first), but egg-laying is tightly coupled to both and requires both to occur.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 are supported by experimental data (Figure 1F-G) and consistent with cited literature. The decoupling of mating and blood-feeding with tight coupling of egg-laying to both is well-demonstrated. The inference about reproductive strategy (C29-C30) is reasonable based on the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Principal component analysis of ovary RNA-seq data shows that biological replicates cluster by reproductive stage, with PC1 and PC2 separating different stages. This reflects major transcriptional changes across the reproductive cycle and indicates that each reproductive stage is distinctly and tightly regulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 are supported by PCA analysis (Figure 2B) of RNA-seq data with appropriate replication (n=3-4 per group). The clustering and separation of stages validates the experimental design and sample quality. The inference about tight regulation (C38-C39) is reasonable based on the clear separation of stages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "tweedledee and tweedledum encode small proteins (216 and 116 amino acids, respectively) with N-terminal signal peptides and disordered regions but no other known domains. Despite structural similarities, they share no sequence similarity. Both have high GC content (94th and 89th percentile) and unusual amino acid composition with underrepresentation of leucine, threonine, glycine and complete absence of cysteine, tyrosine, and tryptophan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C76 are supported by sequence analysis (Figure 4B-D) using standard bioinformatics tools. The protein characterization is thorough and the unusual features are well-documented. The lack of sequence similarity between the two genes (C71) is notable given their similar expression patterns and potential functional relationship.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C48",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Based on expression patterns showing high levels in ovaries <5 hours post-egg-laying when mature eggs have been laid, the authors speculate that tweedledee and tweedledum are expressed in somatic ovary tissues. They propose that co-expression in follicular epithelial cells may protect eggs during retention, while tweedledee expression in the calyx may facilitate egg competence for fertilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C48, C142-C144 are speculative interpretations based on expression data. While the spatial and temporal expression patterns (Figure 2J, Figure 3) support the possibility of somatic expression and protective functions, direct evidence for these specific mechanisms is lacking. These are reasonable hypotheses requiring further experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C145",
+      "C146"
+    ],
+    "result": "The authors speculate about the function of circulating tweedledee and tweedledum proteins in hemolymph, proposing they could be waste products destined for destruction or serve a signaling function to alert other organs of reproductive status, analogous to vitellogenins in social insects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C145-C146 are purely speculative with no direct experimental evidence. While the detection of proteins in hemolymph is established (C50-C51), their function remains unknown. The analogy to vitellogenins provides context but does not constitute evidence for the proposed mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C96",
+      "C156",
+      "C157"
+    ],
+    "result": "Based on synteny, gene structure, and evolutionary analyses, the authors propose that tweedledee, tweedledum, and the Culex/Anopheles putative orthologs likely shared a common ancestor and may co-opt similar pathways to function across mosquito genera.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C96, C156-C157 involve evolutionary inference based on circumstantial evidence (synteny, structure) in the absence of sequence homology. While the synteny and structural similarities are suggestive of common ancestry, the lack of sequence conservation makes this inference uncertain. The proposal about similar pathways (C157) is speculative and requires functional studies in other species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background claims about Aedes aegypti biology, including their role as disease vectors, invasiveness, host preferences, mating behavior, sperm storage, egg development, and embryonic diapause. These establish the biological context for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C17 are well-established facts about Aedes aegypti biology supported by appropriate citations to published literature and general knowledge in the field. These provide necessary background context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C59",
+      "C60"
+    ],
+    "result": "Background claims about Aedes aegypti ovary anatomy and egg development, including follicle structure, egg transit through the calyx and oviducts, fertilization, and the composition of primary follicles. These provide anatomical context for understanding gene expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56, C59-C60 are established anatomical facts supported by citations to published research. These provide necessary context for interpreting the spatial expression data but represent background knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C136"
+    ],
+    "result": "Discussion claims about the adaptive value of reproductive flexibility in Aedes aegypti, including decoupling of mating and blood-feeding, embryonic diapause, and the ability to retain viable eggs. The authors propose these findings highlight plasticity in innate reproductive behaviors enabling survival in variable climates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C133, C136 are interpretive conclusions well-supported by the experimental data and broader biological context. The inference about adaptive value is reasonable given the demonstrated egg retention capability and the ecological challenges faced by the species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Discussion claims providing comparative context from other species, including oocyte storage risks in mammals and Drosophila, the role of heat shock proteins in Drosophila oocyte maintenance, and mechanisms of germline-soma communication. These establish precedents for protective mechanisms during oocyte storage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C141 are supported by appropriate citations to published research in other model systems. These provide valuable comparative context for interpreting the mosquito findings but represent established knowledge from other species rather than novel discoveries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Discussion claims about taxon-restricted genes and their role in adaptations, including examples from vitellogenins, mouse de novo genes, water strider morphology genes, and predictions about Aedes expansion. The authors propose their findings support the importance of rapidly evolving genes in ecological flexibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C153 are supported by appropriate citations and provide important context for interpreting the significance of tweedledee and tweedledum. The inference about the importance of rapidly evolving genes (C153) is reasonable but represents a broader interpretation rather than a direct finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C158"
+    ],
+    "result": "Discussion claims about expression patterns of putative orthologs in other Anopheles species and the unusual pattern of rapid evolution in Aedes aegypti ovary-specific genes compared to testis-enriched genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C155, C158 are supported by citations to published transcriptomic data from other species. These provide additional context suggesting conservation of expression patterns across genera, though functional conservation remains to be demonstrated.",
+    "result_type": "MINOR"
+  }
+]

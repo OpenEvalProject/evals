@@ -1,0 +1,537 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Bioinformatic analysis identified 826 complete Aat systems across diverse pathogenic bacteria including ETEC, EAEC, enteropathogenic E. coli, Shiga-toxin producing E. coli, Shigella sp., Salmonella enterica, Citrobacter rodentium, Providencia alcalifaciens, and Yersinia entercolitica. Six distinct genomic organizations of the aat operon were identified, with the most common organization (51.8%) having aap/cexE separated from aatPABCD by >1 kb. Despite organizational differences, aatPABC genes consistently formed a single operonic unit located with aatD and aap/cexE on chromosomal pathogenicity islands or large virulence plasmids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C52 provide comprehensive bioinformatic evidence for the distribution and organization of the Aat system. The identification of 826 systems with detailed organizational analysis (Figure 1) and the finding that all systems maintain co-localization on mobile genetic elements provides strong support for the widespread distribution and conserved functional organization of this system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The Aat system is essential for CexE secretion. CexE (11.8 kDa) was detected in culture supernatants from wild-type ETEC H10407 pCfaD but not from any aat mutants (\u0394aatP, \u0394aatA, \u0394aatB, \u0394aatC, \u0394aatD) or the cexE mutant. CexE was present in whole-cell lysates of all aat mutants but absent in the cexE null mutant, demonstrating that the Aat system is required for secretion but not for CexE production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 are strongly supported by western blot data (Figure 2A-B) showing CexE secretion requires all Aat components. The experimental design appropriately distinguishes between protein production (whole-cell lysates) and secretion (supernatants), with proper controls including the cexE null mutant. The conclusion that the Aat system is essential for secretion is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "CexE exists in two forms in whole-cell lysates: an upper band (uCexE, 12.7 kDa) and a lower band (mCexE, 11.8 kDa) in wild-type and all aat mutants except \u0394aatD, which shows only uCexE. Treatment with sodium azide (Sec pathway inhibitor) revealed a third form (preCexE, 13.2 kDa), indicating the size difference between uCexE and mCexE is due to AatD-mediated post-translational modification rather than inefficient signal peptide cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 are supported by western blot data (Figure 2B-C) showing distinct CexE forms with calculated molecular masses. The sodium azide experiment provides critical evidence that the size difference is not due to signal peptide cleavage, and the specific absence of mCexE only in the \u0394aatD mutant directly implicates AatD in the modification. The molecular mass calculations appear consistent with gel migration patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "AatD mediates post-translational modification of both CexE and Aap. Deletion of aatD in EAEC 042 resulted in an apparent size increase of Aap, which was restored to wild-type size by complementation with plasmid pJNW encoding the complete aat operon. This modification is required for secretion of the mature substrate to the extracellular milieu.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 are supported by western blot data (Figure 2D) showing Aap size changes in the \u0394aatD mutant and complementation. Combined with the CexE data and the observation that unmodified CexE is not secreted (Figure 7\u2014figure supplement 2), the conclusion that AatD-mediated modification is required for secretion is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Phylogenetic analysis reveals the Aat system is a composite of T1SS and Lol pathway components. AatA is homologous to the trimeric OMP TolC, and AatB is a periplasmic adaptor protein (PAP), both typical of T1SS. However, AatD is homologous to apolipoprotein N-acyltransferase (Lnt) and forms a clade with Lnt. AatC's ATPase domain clusters with LolD, and AatP is more closely related to LolC/LolE than to typical T1SS ABC transporters like HlyB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C75 are supported by phylogenetic analyses (Figure 3 and supplements) showing clear evolutionary relationships. The HMM-based searches and phylogenetic trees demonstrate that the Aat system contains components from both T1SS (AatA, AatB) and Lol pathway (AatD, AatC, AatP), supporting the conclusion that it is a composite system. The methodology is appropriate for establishing homology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "AatD is an acyltransferase that modifies CexE by adding acyl chains. Using 17-ODYA (alkyne fatty acid) labeling followed by click chemistry, CexE was fluorescently labeled only in the presence of both AatD and 17-ODYA. Only mCexE was labeled, confirming uCexE is unacylated. Counterintuitively, acylated mCexE migrates faster on SDS-PAGE than unacylated uCexE. Only acylated forms of Aap and CexE were present in culture supernatants, and only mCexE was detected in membrane fractions of wild-type and \u0394aatPABC mutants, but not in \u0394aatD mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C85 are strongly supported by 17-ODYA labeling experiments (Figure 4 and supplements) demonstrating AatD-dependent acylation. The click chemistry approach provides direct evidence of fatty acid incorporation. The membrane fractionation data (Figure 4\u2014figure supplement 2) showing mCexE association with membranes and the observation that only acylated forms are secreted provide strong support for the acyltransferase function of AatD.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "AatD is necessary for CexE modification in a heterologous system. When CexE and AatD were co-expressed in E. coli BL21(DE3), which lacks native Aat components, mCexE was produced and migrated further on SDS-PAGE compared to uCexE produced in the absence of AatD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 are supported by experimental data (Figure 5) showing AatD-dependent modification in E. coli BL21(DE3). This heterologous expression experiment is critical because it demonstrates that AatD alone is sufficient for modification without other Aat components, and that the modification does not require ETEC-specific factors. This strengthens the conclusion that AatD is the acyltransferase.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "AatD contains a conserved catalytic triad (E217, K278, C325) and stabilizing residue (E286) homologous to Lnt's catalytic residues. These four residues are 100% conserved in all identified AatD sequences. Structural prediction shows these residues superimpose on Lnt's catalytic triad. Alanine substitution of any catalytic residue (E217A, K276A, E286A, C325A) completely abolished CexE acylation, with only uCexE detected in these mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C99 are supported by sequence alignment (Figure 6A), structural prediction (Figure 6B-C), and mutagenesis data (Figure 6D). The 100% conservation of catalytic residues across all AatD sequences and the complete loss of acylation activity upon mutation of any catalytic residue provide strong evidence that AatD uses a similar catalytic mechanism to Lnt. The structural superposition supports the functional similarity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C104",
+      "C106",
+      "C107"
+    ],
+    "result": "CexE lacks typical bacterial lipoprotein features but has a conserved N-terminal glycine-serine motif. SignalP predicted signal peptidase I cleavage between A19 and G20, confirmed by N-terminal sequencing revealing GGGNS. Bioinformatic analysis of 224 CexE homologs found no lipobox sequences or N-terminal cysteine residues characteristic of canonical lipoproteins. Instead, all CexE and Aap proteins have conserved glycine and serine residues in the first five positions after signal sequence cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C107 are supported by SignalP prediction (Figure 7A), N-terminal sequencing data, and bioinformatic analysis (Figure 7B, Figure 7\u2014figure supplement 1). The absence of lipobox and N-terminal cysteine, combined with the conserved glycine-serine motif, provides strong evidence that CexE/Aap represent a distinct class of lipoproteins. The N-terminal sequencing directly confirms the predicted cleavage site.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The N-terminal glycine at position 20 is critical for CexE acylation. The G20E mutation completely abolished acylation (migration similar to uCexE), and G21E significantly reduced acylation (p=0.0013). Mutations at positions 22-24 (G22E, N23E, S24E) had no significant effect on acylation. CexE with the G20E mutation was not secreted, demonstrating that acylation at G20 is essential for secretion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C112 are supported by mutagenesis data (Figure 7C) with quantification and statistical analysis, and secretion data (Figure 7\u2014figure supplement 2). The complete loss of acylation with G20E, partial reduction with G21E, and no effect with mutations at other positions clearly demonstrate the importance of the N-terminal glycines. The secretion data directly links acylation to function. Statistical significance is properly reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Mass spectrometry confirms N-terminal glycine acylation of CexE. HPLC analysis revealed a peak in mCexE not present in uCexE. MS/MS analysis identified the five N-terminal residues of CexE with an addition of 238 Da, corresponding to a single 16-carbon fatty acid (palmitoyl) modification on the N-terminal glycine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C115 are supported by LC-MS/MS data (Figure 8A-B) showing a unique peptide in mCexE with a mass addition consistent with palmitoylation. The mass spectrometry provides direct molecular evidence for the site and nature of the modification. The 238 Da addition matches the expected mass for a C16 fatty acid, and the MS/MS fragmentation pattern confirms the modification is on the N-terminal glycine.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "A single N-terminal glycine is sufficient for AatD-mediated acylation of heterologous proteins. Using mCherry fusions with the CexE signal sequence followed by varying numbers of glycines (0-3), the signal sequence alone did not cause 17-ODYA incorporation. However, a single N-terminal glycine was sufficient for acylation, and increasing the number of glycines increased fluorescence signal proportionally, indicating enhanced AatD activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C120 are supported by mCherry fusion experiments (Figure 9) showing dose-dependent acylation with increasing glycine residues. This demonstrates that the N-terminal glycine is the minimal requirement for AatD recognition and that no other CexE-specific sequences are required. The proportional increase in signal with additional glycines suggests they enhance substrate recognition or catalytic efficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C130",
+      "C137",
+      "C182",
+      "C183"
+    ],
+    "result": "This work identifies the first enzyme-mediated N-palmitoylation of a protein at a glycine residue and characterizes CexE and Aap as the first members of a new class of N-terminally glycine-acylated bacterial lipoproteins. A novel N-acyltransferase (AatD) and a novel class of bacterial lipoproteins secreted by a composite secretion system have been characterized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130, C137, C182-C183 represent the major conclusions of the study. These are well-supported by the comprehensive experimental evidence including: (1) phylogenetic analysis showing AatD is an Lnt homolog, (2) 17-ODYA labeling demonstrating acylation, (3) mass spectrometry confirming N-terminal glycine palmitoylation, (4) mutagenesis showing glycine is essential, and (5) heterologous expression demonstrating sufficiency. The novelty claim is supported by literature review (C121-C129) showing no prior examples of enzyme-mediated glycine N-palmitoylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C7",
+      "C41",
+      "C75",
+      "C155",
+      "C156"
+    ],
+    "result": "The Aat system is a composite secretion system combining elements of T1SS and the Lol pathway. It not only secretes a novel class of lipoproteins from the periplasm to the cell surface but also acylates the substrate protein itself through AatD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C41, C75, C155-C156 are supported by phylogenetic evidence (Figure 3) showing Aat components have homology to both T1SS (AatA, AatB) and Lol pathway (AatD, AatC, AatP) proteins, combined with functional data showing the system both acylates (via AatD) and secretes (via AatPABC) substrates. This represents a novel combination of functions not previously described in bacterial secretion systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C32",
+      "C33",
+      "C34",
+      "C38",
+      "C42",
+      "C43"
+    ],
+    "result": "During secretion, AatD acylates CexE on a highly conserved N-terminal glycine residue, and this acylation is required for membrane incorporation and trafficking. This reveals a new function for acylation in protein secretion, with AatD representing a new acyltransferase targeting glycine for N-palmitoylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C32-C34, C38, C42-C43 synthesize the major findings about the acylation mechanism and its function. These are supported by: (1) mass spectrometry identifying the glycine modification site, (2) mutagenesis showing acylation is required for secretion, (3) membrane fractionation showing acylation is required for membrane association, and (4) the observation that only acylated forms are secreted. The conclusion that acylation has a new function in secretion is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C40"
+    ],
+    "result": "CexE is the first member of a new class of glycine-acylated lipoprotein, and Aat represents a new secretion system that displays the substrate lipoprotein on the cell surface. Aap and CexE are members of a novel class of lipoprotein secreted through the Aat system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C40 represent key conclusions about the novelty of the system. These are supported by: (1) the demonstration of glycine acylation (unprecedented), (2) the lack of typical lipoprotein features (no lipobox, no N-terminal cysteine), (3) the composite nature of the secretion system, and (4) evidence that the protein is displayed on the cell surface. The classification as a new class of lipoprotein is justified by the unique features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C36",
+      "C87",
+      "C147",
+      "C154"
+    ],
+    "result": "AatD is both necessary and sufficient for monoacylation of CexE and Aap. Experiments in E. coli BL21(DE3) demonstrate that AatD alone can acylate CexE without other Aat components, and acylation of heterologous proteins with a single N-terminal glycine confirms AatD is a specific N-acyltransferase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C87, C147, C154 are supported by heterologous expression experiments (Figure 5) showing AatD-dependent modification in E. coli BL21(DE3) lacking other Aat components, and mCherry fusion experiments (Figure 9) showing acylation of non-native substrates with N-terminal glycine. These experiments definitively demonstrate both necessity (from deletion studies) and sufficiency (from heterologous expression) of AatD for acylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "CexE secretion depends on the Sec apparatus, the secreted protein is acylated, and the catalytic triad of C-N hydrolases is required for AatD-mediated acylation. This work demonstrates these dependencies that were not fully characterized in concurrent publications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C136 are supported by: (1) sodium azide experiments (Figure 2C) showing Sec-dependence, (2) 17-ODYA labeling and mass spectrometry showing secreted protein is acylated, and (3) catalytic residue mutagenesis (Figure 6D) showing requirement for the C-N hydrolase triad. These represent important mechanistic details that distinguish this work from the concurrent Belmont-Monroy et al. 2020 publication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "AatD and Lnt likely share a similar mechanism of action with different substrate proteins. Based on similarities with Lnt, which preferentially uses phosphatidylethanolamine (PE) as a lipid donor in vitro, PE is likely the major source of palmitoyl for N-palmitoylation of CexE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C138-C140 represent reasonable inferences based on the conservation of catalytic residues (C92-C99) and known Lnt biochemistry (C139 supported by citation). However, C140 is explicitly stated as speculation (\"Although not directly tested in this work\"). The lipid source for AatD-mediated acylation was not experimentally determined, making this conclusion uncertain. Direct biochemical experiments would be needed to confirm PE as the lipid donor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C145",
+      "C146"
+    ],
+    "result": "Lnt does not play a role in CexE acylation. Multiple lines of evidence support this: CexE lacks a lipobox, signal peptidase I (not II) cleaves the signal sequence, AatD-mediated acylation can be reconstituted in E. coli BL21(DE3) which has Lnt but not AatD, and no CexE modification was detected in AatD-negative, Lnt-positive backgrounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C146 are supported by multiple converging lines of evidence: (1) absence of lipobox in CexE (C102), (2) signal peptidase I cleavage (C100-C101), (3) reconstitution in BL21(DE3) (Figure 5), and (4) absence of modification without AatD (Figure 2B, Figure 5). This addresses a potential alternative explanation and strengthens the conclusion that AatD, not Lnt, is responsible for CexE acylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "MacA and MacB are homologs of AatB and AatPC respectively, suggesting AatPC may use a similar mechanotransmission mechanism as MacB to secrete Aap/CexE, and AatB may form a similar gating ring to MacA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C162-C164 are based on phylogenetic analysis identifying homology between Aat and Mac components, but the proposed mechanistic similarities (C163-C164) are speculative (\"suggesting,\" \"may\"). While the homology is supported by data and citations, the functional implications for the secretion mechanism have not been experimentally tested. These represent reasonable hypotheses for future work but are not directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "A mechanistic model for Aat-mediated secretion is proposed: (1) Sec secretes preCexE to the periplasm where signal peptidase I cleaves it to form uCexE, (2) AatD acylates the N-terminal glycine creating mCexE which associates with the inner membrane, (3) AatPC extracts mCexE from the membrane, (4) AatA/AatB/AatPC form a channel for secretion, (5) mCexE inserts into the outer membrane outer leaflet, and (6) mCexE remains surface-exposed or is secreted in soluble form or via outer membrane vesicles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C165-C175 present a comprehensive mechanistic model shown in Figure 10. Steps 1-2 are well-supported by experimental data (Sec-dependence, AatD-mediated acylation, membrane association). Step 3 (AatPC extraction) is inferred from homology to LolCDE but not directly demonstrated. Steps 4-6 are largely speculative, based on homology to T1SS and prior work on surface localization. While the model is reasonable and consistent with available data, key mechanistic steps lack direct experimental validation. This represents a working model for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C176",
+      "C177",
+      "C178",
+      "C179"
+    ],
+    "result": "The Aat system represents a potential new drug target. It is conserved in pathogenic strains but absent in non-pathogenic strains, and previous studies show deletion of aat genes reduces bacterial colonization and disease. Chemicals targeting the Aat system could prevent or reduce disease severity without off-target effects on non-pathogenic bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C176-C179 represent speculation about therapeutic applications. C177 is supported by citations showing aat deletions reduce virulence. C179 is supported by the bioinformatic analysis showing distribution in pathogens (C45-C47). However, C176 and C178 are speculative about drug development potential. While the rationale is sound, no drug development or target validation studies are presented. This represents a reasonable future direction but is not experimentally supported in this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C180",
+      "C181"
+    ],
+    "result": "The ability to acylate heterologous proteins with a simple N-terminal glycine addition is a valuable biotechnology tool for producing novel acylated peptides in E. coli, potentially improving peptide drug half-life similar to acylated insulin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C180-C181 represent speculation about biotechnology applications. C180 is supported by citation regarding acylated insulin. The demonstration that AatD can acylate heterologous proteins (mCherry fusions, Figure 9) provides proof-of-concept. However, C181's claim of being \"a valuable new tool\" is speculative without demonstration of practical applications, optimization, or comparison to existing methods. This represents a reasonable future application but requires further development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Background on protein acylation and bacterial lipoprotein processing: Protein acylation is critical across all life domains. In bacteria, lipoproteins are important for virulence and are targets for antimicrobials and vaccines. Bacterial lipoproteins are secreted via Sec (or TAT in Gram-positives), acylated on N-terminal cysteine by three enzymes (Lgt, Lsp, Lnt), and transported to the outer membrane by the Lol pathway in Gram-negatives. Some lipoproteins are surface-localized, but the mechanism of outer membrane translocation is poorly understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C21 provide established background knowledge supported by appropriate citations and general scientific knowledge. These claims accurately describe the canonical lipoprotein processing pathway and set up the context for the novel findings. The statement about poor understanding of surface localization mechanisms (C21) appropriately identifies the knowledge gap addressed by this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Background on CexE, Aap, and the Aat system: CexE (ETEC) and Aap (EAEC) are outer membrane proteins implicated in virulence. Despite sharing only 18% amino acid identity, both are secreted by the Aat system, which requires five proteins (AatPABCD) including components resembling T1SS (OMP and PAP). Unlike T1SS, Aap/CexE use a two-step mechanism: first Sec-mediated translocation to the periplasm, then Aat-mediated secretion across the outer membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C31 provide background on the Aat system supported by appropriate citations to prior work. These claims accurately describe what was known about CexE, Aap, and the Aat system before this study, establishing the foundation for the novel findings about the acylation mechanism. The two-step secretion mechanism was previously established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "The genomic organization data suggest that AatPABCD have a role in Aap/CexE secretion, as these genes consistently co-localize on pathogenicity islands or virulence plasmids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 is a reasonable inference from the bioinformatic analysis (C45-C52) showing consistent co-localization of aat genes with aap/cexE on mobile genetic elements. This inference is further validated by the experimental demonstration that all Aat components are required for secretion (C54-C58). The genomic organization provides supporting evidence for functional relationships.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Literature review on glycine acylation: N-palmitoylation of glycine in Bacteroidetes does not involve protein incorporation. N-terminal glycine acylation by N-myristoyltransferase is restricted to eukaryotes. Bacterial examples rely on eukaryotic proteins or type III secretion into eukaryotic cells. Reported glycine N-palmitoylation in G\u03b1s is dependent on adjacent cysteine S-palmitoylation and may be an artifact. No enzyme has been identified for G\u03b1s N-palmitoylation. Thus, N-palmitoylation of glycine appears rare or under-described, and this is the first report of enzyme-mediated N-palmitoylation of a protein at glycine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C129 provide a thorough literature review supported by appropriate citations establishing the novelty of the findings. The review accurately describes the state of knowledge regarding glycine acylation and appropriately identifies why this work represents a first. The critical assessment of the G\u03b1s N-palmitoylation report (C127) strengthens the novelty claim by addressing a potential counterexample.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Critical assessment of concurrent work: Belmont-Monroy et al. 2020 identified AatD as an acyltransferase responsible for N-palmitoylation of glycine but failed to recognize this as the first confirmed example of enzyme-mediated glycine N-palmitoylation or demonstrate that position and conservation of N-terminal amino acids are crucial for acylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C133 provide appropriate critical assessment of concurrent work. C131 accurately cites the Belmont-Monroy findings. C132-C133 identify legitimate gaps in that work that are addressed by the current study: the mutagenesis experiments (Figure 7) demonstrating the importance of glycine position and conservation, and the broader contextualization of the novelty. This represents fair scientific discourse about concurrent discoveries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Discussion of lipid source: Belmont-Monroy et al. 2020 suggested PE is the lipid source based on increased PE in an aar mutant. However, this seems counterintuitive because aar deletion increases aggR expression, which increases AatD production, and Aar is a negative regulator of aggR in EAEC 042.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C141-C143 present a critical analysis of the Belmont-Monroy interpretation regarding PE as the lipid source. The logic is sound: if AatD uses PE as substrate, increased AatD should decrease PE, not increase it. However, this analysis is speculative and does not provide alternative experimental data. The regulatory relationships are supported by citations (C142-C143), but the lipid homeostasis implications are not directly tested. This represents reasonable scientific skepticism but lacks experimental resolution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Comparison to other surface-exposed lipoproteins: The Aat system is the only secretion system that acylates and secretes a lipoprotein substrate to the cell surface. Other surface-exposed lipoproteins in E. coli (Lpp, RcsF, SslE) and Neisseria are acylated by Lgt/Lnt on N-terminal cysteine and use the Lol pathway, with Neisseria requiring the Slam OMP for surface translocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C153 provide appropriate comparison to other systems supported by citations. The distinction that Aat both acylates (via AatD) and secretes (via AatPABC) its substrate, while other systems use separate acylation (Lgt/Lnt) and trafficking (Lol/Slam) machinery, is valid and highlights the novelty of the Aat system. The claim of uniqueness (C149) is appropriately qualified (\"to our knowledge\").",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C157",
+      "C158"
+    ],
+    "result": "Proposal for reclassification: The Aat system should be reclassified as the first example of the lipoprotein secretion system (LSS), remaining as a sub-class of T1SS to emphasize similarities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C157-C158 propose a new classification scheme. While the rationale is reasonable given the unique features of the Aat system (acylation + secretion, composite T1SS/Lol architecture), this is a nomenclature proposal rather than an experimental finding. The appropriateness of this classification would depend on community acceptance and whether additional similar systems are discovered. This represents a reasonable proposal but is not experimentally testable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Comparison to MacAB-TolC: The Aat system is not unique in secreting periplasmic substrates, as other T1SS like MacAB-TolC employ two-step secretion mechanisms, with MacAB-TolC secreting heat-stable enterotoxin from the periplasm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C161 provide appropriate context by comparing to MacAB-TolC, supported by citation (C161). This acknowledges that two-step secretion via T1SS is not unprecedented, helping to accurately position the novelty of the Aat system (which lies in the acylation function and composite architecture, not the two-step mechanism per se).",
+    "result_type": "MINOR"
+  }
+]

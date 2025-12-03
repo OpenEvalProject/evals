@@ -1,0 +1,415 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The cambium is a bifacial stem cell niche that produces xylem and phloem bidirectionally through periclinal cell divisions. This system is difficult to study through live-cell imaging and represents a paradigm for bifacial stem cell niches across kingdoms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 establish well-supported background knowledge about cambium structure and function, citing established literature (C5, C8) and general plant biology knowledge (C1, C6, C7). These provide the foundational context for the study and are consistently supported across plant biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The PXY/CLE41 signaling module is a central regulator of cambium activity, with CLE41/44 peptides produced in phloem binding to PXY receptor in cambium cells to promote WOX4 expression and cell proliferation while repressing xylem differentiation. Additional regulators include MOL1 in the distal cambium, ARF5 in the proximal cambium, and PEAR transcription factors from phloem.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C23 comprehensively describe the known molecular regulatory framework of cambium activity, all supported by extensive citations to prior literature (C9-C23 all cite previous work). This establishes the prior knowledge foundation upon which the computational model is built.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Model 1 successfully maintained a circular pool of dividing cambium cells with high PXYactive* concentration while producing xylem cells toward the organ center. Cell division rates were highest near CLE41*-producing phloem cells, and PXY* levels were low in the distal cambium region, matching observed PXY promoter activity patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 describe Model 1 outputs that are directly demonstrated in Figure 1C-G and associated videos (C24-C27 reference specific figures). The pattern comparison with experimental observations (C28) provides validation, though this is only a qualitative comparison at this stage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Model 2A produced bidirectional tissue formation with both xylem and phloem production, established a maximum cell division rate in the central cambium domain, and qualitatively reproduced mature Arabidopsis hypocotyl anatomy. However, the model displayed front instability not observed in plants, suggesting missing stabilizing mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 are supported by model outputs shown in Figure 2B-E and videos (C29-C32 reference specific figures). The qualitative anatomical match (C33) is demonstrated by comparison with Figure 2A. The acknowledged front instability (C34) represents appropriate recognition of model limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Ectopic CLE41 expression using the IRX3 promoter substantially disrupts hypocotyl anatomy, with PXYpro:CFP activity appearing in irregular patches throughout the cross-section and SMXL5pro:YFP activity found in both proximal and distal regions in irregular patterns, demonstrating that cambium organization depends on the site of CLE41 production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 are supported by experimental observations shown in Figure 3A and supplementary figures (C36-C38 reference specific figures). The conclusion about CLE41 production site dependence (C39) is a reasonable inference from the observed disrupted patterns, though C35 also cites prior work (Etchells and Turner, 2010).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Model 2B, simulating IRX3pro:CLE41 by having xylem cells produce CLE41*, successfully reproduced the disrupted cambium organization observed in IRX3pro:CLE41 plants, including patchy xylem formation and ectopic phloem production in central organ regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 describe Model 2B outputs demonstrated in Figure 3B-D and videos (C40-C43 reference specific figures). The comparison with experimental IRX3pro:CLE41 phenotypes (C42, C44) shows good qualitative agreement, validating the model's predictive capacity for this genetic perturbation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "In pxy mutants, xylem tissue clustered in radial sectors with PXYpro:CFP and SMXL5pro:YFP activity, but the activity domains remained mostly distinct. Model 2C (eliminating PXY* activity) and Model 2D (reducing PXY* activity) failed to reproduce the pxy phenotype, revealing that the CLE41-PXY signaling module does not restrict PXY promoter activity in the distal cambium as initially assumed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 identify a critical discrepancy between model predictions and experimental observations. The pxy mutant phenotype is documented in Figure 3E and supplementary figures (C46-C47), while model failures are shown in Figure 3F (C51). This represents rigorous model testing that revealed incorrect assumptions, leading to model refinement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Quantitative analysis of wild-type and pxy mutant hypocotyls revealed that total xylem cell number and vessel number were comparable, but pxy mutants had substantially reduced fiber cells and increased parenchyma cells, indicating that PXY promotes the fiber-parenchyma ratio while vessel formation and total proximal tissue production are largely PXY-independent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 are supported by quantitative image analysis shown in Figure 3G-I and Figure 3\u2014figure supplement 6 (C52-C53 reference specific figures). The statistical analysis appears appropriate, and the conclusion (C54) is a reasonable inference from the quantitative data, though it challenges expectations from primary vascular development studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Model 3A established two cambium subdomains (distal with high DF*, proximal with high PXY*), produced phloem parenchyma and phloem poles in a patchy pattern resembling plants, showed locally increased cell division rates near phloem poles, and generated stable radial patterns of gene activity over time comparable to the in planta situation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 describe Model 3A outputs demonstrated in Figure 4B-D and videos (C55-C57, C59 reference specific figures). The comparison with plant observations (C56, C58, C59) shows good agreement. The model successfully incorporates phloem-derived factors and generates stable patterns, representing a significant advance over Model 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Model 3B, simulating IRX3pro:CLE41 by having xylem cells produce CLE41*, resulted in ectopic DF* production and phloem-parenchyma formation in proximal regions while still forming xylem in a patchy pattern, resembling the anatomy found in IRX3pro:CLE41 plants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 describe Model 3B outputs shown in Figure 4E and videos (C61-C62 reference specific figures). The comparison with experimental IRX3pro:CLE41 phenotypes shows good qualitative agreement, demonstrating that Model 3 maintains predictive capacity for this genetic perturbation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Model 3C, eliminating CLE41* binding to PXY* while keeping PXY* positional information, generated a patchy distal cambium outline with heterogeneous cambium activity observable at early growth phases and reduced overall tissue production, successfully simulating important features of the pxy mutant phenotype by introducing both a PXY*-independent proliferation pathway and dependence on distance to phloem poles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 describe Model 3C outputs shown in Figure 4F and videos (C63, C65 reference specific figures). The comparison with pxy mutant phenotypes (C65-C66) demonstrates that Model 3 successfully addresses the failures of Model 2, representing a major achievement in establishing a robust computational framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Cell division orientation in model outputs was almost random, contrasting with the strong dominance of periclinal divisions in plants, suggesting that radial cell file formation cannot be explained by the molecular signaling pathways implemented in the model and that physical forces may play a role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 identify a limitation of the molecular signaling model and propose a hypothesis about physical forces. C68 is supported by comparison of model output with plant anatomy (Figure 4A referenced), C69 is a reasonable inference from plant observations, and C70 cites classical literature supporting the physical force hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Cell wall staining intensities in cambium cells were approximately half as strong as surrounding tissue, leading to the assumption that cambium stem cells are half as stiff as surrounding cells, which was integrated into the model by expanding VirtualLeaf to allow cell-type specific wall stiffness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C71 is supported by experimental observations (Figure 4\u2014figure supplement 2), but C72 makes a significant assumption that staining intensity directly correlates with stiffness. While C72 cites AFM data (Arnould et al., 2022) for support, the quantitative relationship between staining and stiffness is not validated, and the assumption of a 2-fold difference is not rigorously justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "An automated parameter search of 12,500 simulations identified 5 parameter sets producing more realistic cell-type proportions than manually selected parameters. Multiple parameter sets describing experimental tissue ratios equally well demonstrated consistent model behavior, reaffirming the model structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 describe the parameter optimization approach with results shown in Figure 4G and Figure 4\u2014figure supplement 3. The identification of multiple parameter sets with consistent behavior (C74) strengthens confidence in the model structure, though the evaluation is based on tissue proportions alone rather than multiple independent metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Increasing xylem cell wall stiffness led to xylem-specific decreases in cell size and major axis length, increased cambium cell length, and decreased total cell number (particularly xylem cells), explained by physical constraints from stiffer xylem cells impairing neighboring cambium cell expansion. Phloem cells and cambium cell numbers remained unaffected, suggesting comparable growth dynamics across stiffness regimes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 describe Model 4 outputs with varying xylem stiffness, demonstrated in Figure 5C and Figure 5\u2014figure supplement 1 (C75, C77, C79 reference specific figures). The mechanistic explanation (C78) is a reasonable inference from the model behavior. The consistency of cambium behavior (C79) provides important validation of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "Varying epidermis stiffness did not impact cell size or length but decreased the total number of cells per simulation (particularly phloem parenchyma and phloem pole cells) as increased outer tissue boundary resistance limited overall tissue growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 describe Model 4 outputs with varying epidermis stiffness, demonstrated in Figure 5D and Figure 5\u2014figure supplement 2 (C80-C81 reference specific figures). The mechanistic explanation in C81 is a reasonable inference from the model behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Increasing the xylem to non-xylem cell wall stiffness ratio produced a shift from curved lineages toward more radial lineages, attributed to increased radial elongation of cambium cells and VirtualLeaf's preference for division along the shortest axis. This demonstrates that radial cell files can emerge as a property of xylem cell wall stiffness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 describe lineage analysis results shown in Figure 5G and Figure 5\u2014figure supplement 3A (C82 references specific figures). The mechanistic explanation (C83) appropriately cites VirtualLeaf behavior (Merks et al., 2011). The conclusion (C84) acknowledges that not all lineages were affected, providing an appropriately nuanced interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "Varying epidermis cell wall stiffness did not show clear changes in lineage distribution as increasing stiffness limited tissue growth and lineage formation. Results for both xylem and epidermis stiffness regimes remained consistent when varying other cell wall dynamic parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 describe additional analyses shown in Figure 5H, Figure 5\u2014figure supplement 3B, and Figure 5\u2014figure supplement 4 (C85-C86 reference specific figures). The robustness testing (C86) strengthens confidence in the stiffness effects, though the lack of epidermis effect may reflect model limitations rather than biological reality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The computational model represents a minimal framework integrating the PXY/CLE41 module as a central element for cambium patterning and maintenance. Iterative comparisons of plant and model anatomies support the conclusion that PXY and CLE41 are part of a minimal framework sufficient for instructing tissue organization, and that a limited number of factors are sufficient to create radial growth by bidirectional tissue production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C87-C89 present the main conclusions of the study. These are supported by the successful simulation of wild-type anatomy (Models 2A, 3A, 4), genetic perturbations (IRX3pro:CLE41 in Models 2B, 3B; pxy in Model 3C), and the integration of physical properties. The iterative model refinement process and validation against multiple experimental observations provide strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The model demonstrates that cambium organization and radial patterning can be maintained by a distinct pattern of radially acting morphogens, using the PXY/CLE41 module to generate gradients instructing cell differentiation and proliferation. This setup was sufficient to maintain stable radial tissue organization and establish maximum cell division rates in the cambium center.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C95 discuss the morphogen gradient concept underlying the model. C90 cites established developmental biology principles, C91-C92 describe the modeling approach, and C93-C94 present conclusions supported by model behavior (C93 cites Shi et al., 2019 for comparison). The contrast with auxin (C95) is appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The overall amount of proximal tissue production during radial plant growth did not depend on PXY function, with vessel formation being PXY/CLE41-independent while fiber formation is positively associated with the PXY/CLE41 module. This indicates that xylem formation is unlikely to be instructed by PXY/CLE41 signaling alone and additional signals are required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 present conclusions from the quantitative analysis of pxy mutants (supporting C52-C54). These conclusions are supported by the data in Figure 3G-I and appropriately contrast with expectations from primary vascular development (C96-C97 cite relevant literature). The inference about additional signals (C99) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "PXY-deficiency leads to cambium disorganization in some hypocotyl regions while other areas maintain cambium anatomy in regularly spaced patterns, suggesting factors acting in parallel to PXY/CLE41 that carry spatial information. Candidates include PEAR transcription factors, the ER/EPFL receptor-ligand pathway, and CLE45/RPK2 signaling, which may correspond to the PF* factor in the model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C106 discuss the interpretation of pxy mutant phenotypes and propose candidate factors. C100 is supported by experimental observations, C101 is a reasonable inference, and C102-C106 propose specific candidates with appropriate literature citations (C102-C104 cite relevant papers). The connection to the PF* model factor (C102, C105) is appropriately speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The model deliberately excluded certain aspects including upstream regulation of factors like PXY* or CLE41* (which depends on positional information potentially mediated by auxin or cytokinin), longitudinal signaling effects (such as polar auxin transport), and the transition from bisymmetric to concentric tissue organization, as these would have required additional assumptions and complicated the model without providing clear benefits for the 2D framework.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C112 discuss model scope and limitations with appropriate justification. The exclusions are clearly stated with citations to relevant literature (C107-C108, C110, C112 cite supporting papers). The rationale for these design choices (C111-C112) is reasonable for establishing a minimal framework, though these represent important areas for future model development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The cambium front is almost perfectly circular in plants but shows instability in simulations, likely due to local noise in cellular patterns leading to differential diffusion. Analysis of developmental stages argues against increased front instability as the cause of pxy anatomy. The model allows testing of stabilizing mechanisms, and increasing epidermis stiffness increased organ circularity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C118 discuss front stability as a model limitation. C113 identifies the discrepancy, C114-C115 propose explanations, C116 provides evidence from developmental analysis (referencing supplementary figures), and C117-C118 discuss implications. The analysis is appropriately self-critical and identifies areas for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "By expanding VirtualLeaf to allow cell-type-specific wall stiffness, the study fundamentally increased the spectrum of potential modeling approaches, enabling simulation of auxin or brassinosteroid-mediated cell wall loosening and development of hypotheses about how inter-tissue forces influence stem cell behavior both cell autonomously and non-cell-autonomously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C123 discuss the methodological contribution and implications. C119 cites established knowledge, C120 provides rationale for the computational approach, C121 describes the technical achievement, and C122-C123 discuss applications. The expansion of VirtualLeaf represents a significant methodological advance, though future applications (C122) remain to be demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The model has potential to recapitulate qualitative and quantitative variation in radial plant growth across different mutants and species, including remarkable features like concentric cambium rings or phloem wedges, and may help predict targets of environmental stimuli inducing changes in cambium activity, providing a useful tool for investigating processes not observable in real time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C124-C127 discuss future applications of the model. While the model has demonstrated success with specific perturbations tested in this study, the broader claims about recapitulating variation across species (C124-C125) and predicting environmental responses (C126) remain speculative. These represent reasonable hypotheses for future work but are not yet demonstrated.",
+    "result_type": "MINOR"
+  }
+]

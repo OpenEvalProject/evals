@@ -1,0 +1,210 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The manuscript establishes the biological and biophysical context for biomolecular condensates, including their formation via LLPS, their functional roles, and the known differences between homotypic and heterotypic systems. Homotypic systems exhibit buffering behavior, while heterotypic systems do not, and a theoretical framework for predicting concentration thresholds in heterotypic systems is lacking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C20 provide well-established background knowledge supported by appropriate citations. These claims accurately describe the current understanding of biomolecular condensates and identify the gap (C17) that motivates the current work. The citations are appropriate and the characterization of prior work appears accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "The manuscript draws an analogy between biomolecular condensates and ionic solution chemistry, specifically the solubility product constant (Ksp) for salts like AgCl.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 present established chemistry knowledge correctly. The Ksp value for AgCl and the common ion effect are well-documented principles. This analogy serves as the conceptual foundation for the computational modeling approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "For a tetravalent heterotypic pair (A4-B4) with Kd = 350 \u00b5M, the Ksp is 169 \u00b5M\u00b2. Below this threshold, the system exists as a single phase with small clusters; above it, the system forms large clusters yielding two phases with bimodal distributions. The Ksp serves as a quantitative indicator for the phase separation threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C31 are well-supported by the NFsim simulation data in Figure 1 and supplements. The characterization of cluster size distributions below and above Ksp is quantitative and consistent across multiple simulation conditions. The bimodal distribution above Ksp and the insensitivity to system size below Ksp are clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Using the clamped monomer concentration (CMC) approach, systems below Ksp converge to steady states, while at or above Ksp they show unbounded growth with stochastic nucleation behavior. The CMC and FTC methods yield consistent results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 are supported by Figure 2 and supplements showing CMC simulations. The stochastic behavior at Ksp (C34) and the consistency between FTC and CMC methods (C36-C37) are well-documented. The interpretation of stochastic nucleation (C35) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Phase transition depends on whether the solubility product exceeds Ksp, regardless of individual monomer concentrations. Even when monomer supply becomes depleted in unequal stoichiometry, Ksp serves as an upper limit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 are supported by Figure 3 showing that the phase transition is determined by SP relative to Ksp, not individual concentrations. The depletion scenario (C40-C41) in Figure 3 supplement 1 demonstrates a limitation but confirms Ksp as an upper bound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Higher valency increases phase separation propensity by reducing the Ksp. Going from 3v,3v to 4v,4v reduces Ksp fivefold (852 to 169 \u00b5M\u00b2), and from 4v,4v to 5v,5v reduces it threefold (169 to 55 \u00b5M\u00b2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 are supported by Figure 4 showing systematic variation of valency. The quantitative Ksp values are clearly measured from simulations. The trend is consistent with established knowledge (C42) and the specific fold-changes are directly quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "For mixed-valent A5-B3 systems, the simple product of free monomer concentrations does not plateau, but when corrected for ideal stoichiometry as SP = (free A5)\u00b3(free B3)\u2075, the Ksp concept holds. Individual monomer concentrations do not display buffering above threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 are supported by Figure 5 showing that stoichiometry-corrected Ksp applies to mixed-valent systems. The failure of simple buffering (C49) and the need for stoichiometric correction (C48) are clearly demonstrated. This extends the Ksp concept beyond equal-valency systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Simple multivalent binding simulations reproduce experimental patterns showing lack of buffering in heterotypic systems. For the ternary A3-B1,3-C6 system, despite failure of simple buffering, concentrations are constrained by Ksp \u2248 10\u00b9\u00b2 \u00b5M\u00b9\u00b9, and individual monomer concentrations continue changing after Ksp is reached.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 are supported by Figure 6 comparing simulations to experimental data from Riback et al. 2020. The qualitative match to experimental patterns (C51) is evident, and the Ksp constraint (C52-C53) is demonstrated for both titration scenarios. The continued change in individual concentrations (C54) is clearly shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Spatial simulations using SpringSaLaD confirm the Ksp concept for a tetravalent A4a-B4b system (Ksp = 318 \u00b5M\u00b2). Spatial effects introduce a 'dimer trap' and greater stochastic fluctuations, but the fundamental Ksp threshold behavior is preserved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C63 are supported by Figure 7 and supplements showing SpringSaLaD spatial simulations. The Ksp determination (C55), dimer preference (C56-C57), and phase transition behavior (C59-C60) are well-documented. The increased stochasticity (C61-C62) is quantified and reasonably explained. The validation of Ksp in spatial simulations (C63) is a key finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "The Ksp defines a threshold for unbounded growth of large clusters and serves as a quantitative metric for phase separation tendency across most scenarios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 is the main conclusion, supported by the comprehensive simulation results across multiple systems (Figures 1-7). The qualification 'for most scenarios, if not all' appropriately acknowledges limitations observed in some edge cases (e.g., extreme stoichiometric imbalances).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The authors acknowledge limitations of their simplified models and propose experimental approaches to measure Ksp and validate the concept in real biological systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 appropriately acknowledge model limitations and propose reasonable experimental validation strategies. The proposed fluorescence microscopy approach (C67) is supported by appropriate citation. These are speculative but well-reasoned proposals for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The manuscript describes the computational methods (NFsim and SpringSaLaD) and relates the percolation boundary to phase separation, acknowledging they may not be completely coincident. The relationship between Ksp and phase diagrams is discussed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C80 provide methodological details and theoretical context supported by appropriate citations. The caveat about percolation vs. phase separation (C74) is important. The predictions about Ksp in phase diagrams (C79-C80) are reasonable inferences but remain to be validated.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,342 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C44"
+    ],
+    "result": "A phospho-specific antibody against Afadin-pY1230 was generated and validated, showing increased signal in PTPRK KO cells, responsiveness to pervanadate treatment, reduction upon Afadin knockdown, and specificity confirmed by Y1230F mutation abolishing signal increase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 and C44 provide convergent experimental validation of antibody specificity through multiple orthogonal approaches including genetic knockout, pharmacological manipulation, siRNA knockdown, and site-directed mutagenesis. The data shown in Figure 1\u2014figure supplement 2 support these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C45"
+    ],
+    "result": "PTPRK-ICD, but not D1 domain alone, efficiently dephosphorylates Afadin at Y1230 in a D2 domain-dependent manner, while p120-Catenin is dephosphorylated equally by both constructs. Rescue experiments confirm catalytic activity is required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 and C45 demonstrate differential substrate requirements through time course experiments, rescue with wildtype but not catalytically inactive PTPRK, and appropriate controls (p120-Catenin, paxillin). The data in Figures 1B and 1\u2014figure supplement 2E-G provide strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C54"
+    ],
+    "result": "Full-length Afadin binds directly to PTPRK-ICD through its C-terminal region, specifically requiring a 63-residue coiled-coil (CC) domain (aa. 1393-1455) that is both necessary and sufficient for the interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 and C54 describe systematic truncation mapping using wheat germ expression and GST pull-downs (Figure 1C-E) that progressively narrow the binding region to the CC domain. Multiple independent constructs support the necessity and sufficiency conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The Afadin-CC region contains a high proportion of charged residues, the PTPRK-Afadin interaction is salt-sensitive, and the two proteins have complementary isoelectric points (pI 5.3 and 10.2), suggesting electrostatic mediation of binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 provide sequence analysis and experimental evidence (salt titration in Figure 1F) supporting electrostatic interaction. The complementary pI values and salt sensitivity are consistent with charge-mediated binding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "SEC-MALS analysis demonstrates that Afadin-CC is monomeric with a molecular mass of ~8 kDa, though some degradation may occur after GST tag removal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 are supported by SEC-MALS data in Figure 2A showing measured mass consistent with predicted monomeric mass. The observation of minor degradation products is appropriately noted as a caveat.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Afadin-CC forms an equimolar complex with PTPRK-ICD with KD = 3.2 \u00b1 0.6 \u00b5M, consistent with a reversible enzyme-substrate interaction. The interaction is enthalpically driven (\u0394H = -17.6 \u00b1 0.7 kcal/mol).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 are supported by ITC data in Figure 2B and E showing stoichiometry, affinity, and thermodynamic parameters. The interpretation of micromolar affinity as consistent with enzyme-substrate interaction is reasonable, and the enthalpic contribution is consistent with the charged nature of the interface.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The PTPRK-D2 domain alone is necessary and sufficient for Afadin-CC binding with KD = 6.3 \u00b1 0.3 \u00b5M, only a modest twofold reduction compared to the full ICD, while D1 shows no interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 are supported by pull-down data (Figure 2C) and ITC measurements (Figure 2D-E) demonstrating D2 sufficiency and D1 lack of binding. The twofold difference in affinity is within experimental variation and supports D2 as the primary binding surface.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "AlphaFold2 modeling and experimental truncation mapping demonstrate that N- and C-terminal regions of Afadin-CC are dispensable for PTPRK binding, while the core charged sequence (aa. 1408-1448) is essential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 show agreement between computational prediction (Figure 3\u2014figure supplement 1) and experimental validation (Figure 3A). The systematic truncation approach provides strong evidence for the minimal binding region.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "The core charged region of Afadin (aa. 1408-1448) is highly conserved across vertebrates but diverges in Drosophila melanogaster, which lacks a full-length PTPRK ortholog.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 are supported by sequence alignment data (Figure 3\u2014figure supplement 2) and citation to previous literature on PTPRK orthologs. The evolutionary correlation between Afadin sequence conservation and PTPRK presence is suggestive but not definitive proof of co-evolution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "AlphaFold2 predicts Afadin-CC adopts a linear alpha-helical structure across the PTPRK-D2 surface with moderate-to-high confidence. Mutagenesis of predicted interface residues (W1418-Y1419, R1432-K1433) abolishes binding, while mutations at distal residues have no effect, validating the structural model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C77 demonstrate strong agreement between computational prediction (Figures 3B-C, 3\u2014figure supplement 3) and experimental validation (Figure 3D-E). The mutagenesis strategy appropriately includes both interface and control mutations, providing robust validation of the predicted structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Sequence analysis identifies four PTPRK-D2 residues (Y1270, G1273, E1332, L1335) that are conserved in PTPRK/PTPRU but divergent in PTPRM, mapping to an acidic pocket predicted to bind Afadin-CC. PTPRM-D2 modeling shows altered surface topology and loss of this acidic pocket, potentially explaining differential binding specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C84 use comparative sequence analysis (Figure 4\u2014figure supplement 1) and structural modeling (Figure 4A-C) to identify specificity determinants. The logic linking sequence divergence to binding specificity is sound, though experimental validation of PTPRM binding is cited from previous work rather than shown directly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Single point mutations G1273H or L1335R in PTPRK-D2 abolish Afadin-CC binding in pull-down and ITC assays, while maintaining proper protein folding (Tm 39-41\u00b0C). These residues are crucial for binding full-length Afadin and likely determine binding specificity versus PTPRM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89, C94-C96 provide comprehensive validation through multiple assays (pull-downs in Figures 4D-E, G-H; ITC in Figure 4F; DSF in Figure 4\u2014figure supplement 3). The inclusion of thermal stability controls addresses potential misfolding artifacts. The data strongly support these residues as specificity determinants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "PTPRK-F1225A mutation reduces Afadin-CC binding, validating the complex model, but this residue is conserved across R2B family members and thus contributes to affinity but not specificity. The M-loop mutation retains binding, indicating this region does not determine PTPRK vs PTPRM specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 appropriately distinguish between residues affecting binding affinity versus specificity based on conservation patterns and mutagenesis data (Figure 4H, Figure 4\u2014figure supplement 2). The logic is sound and conclusions are appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "WT and double mutant (DM) PTPRK-ICDs have identical activity against pNPP substrate, but only WT dephosphorylates Afadin-pY1230 while both dephosphorylate p120-Catenin equally. This demonstrates that D2 domain recruitment of Afadin is critical for efficient dephosphorylation and that PTPRK uses distinct surfaces to recruit different substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C104 provide strong functional validation through phosphatase assays (Figure 5A-C) showing that D2 mutations specifically affect Afadin but not p120-Catenin dephosphorylation, while maintaining catalytic activity. The use of multiple substrates and both direct and IP-based readouts strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Afadin is recruited for dephosphorylation by directly binding to the PTPRK D2 pseudophosphatase domain via a CC region >100 amino acids from the substrate pTyr residue. This demonstrates that PTP substrate specificity can be determined by protein-protein interactions distal to the active site, explaining how PTPs achieve specificity despite lack of consensus sequences at the pTyr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C6-C8 represent the central conclusions of the manuscript, integrating findings from binding studies, structural modeling, and functional assays. The evidence from multiple experimental approaches (Figures 1-5) strongly supports these conclusions. The phosphorylation-independent binding through a non-catalytic domain is well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C5",
+      "C109",
+      "C110"
+    ],
+    "result": "Afadin is selectively dephosphorylated by PTPRK but not PTPRM, with the binding site >100 amino acids from the phosphosite and distinct from the D2 'active site', explaining the molecular basis of substrate specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C109-C110 integrate structural and functional data to explain specificity. The differential binding to PTPRK vs PTPRM is supported by previous citations and the current mutagenesis data. The spatial separation of binding and catalytic sites is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The Afadin-PTPRK-D2 interaction is phosphorylation-independent and brings Afadin into proximity without directly positioning pTyr in the active site. This explains the apparent lack of phosphatase specificity for phosphopeptide substrates, as substrate targeting is not determined by motifs near the pTyr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 draw mechanistic conclusions from the spatial organization of the complex and previous observations. The inference that proximity rather than precise positioning drives specificity is reasonable given the >100 amino acid separation, though direct evidence for conformational dynamics is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C9",
+      "C111",
+      "C112",
+      "C115",
+      "C118"
+    ],
+    "result": "The phosphorylation-independent binding through a non-catalytic pseudophosphatase domain suggests that receptor PTPs could function as intracellular scaffolds in addition to catalyzing dephosphorylation, and that pseudophosphatase domains have been repurposed for protein-protein interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9, C111-C112, C115, C118 are speculative extrapolations from the demonstrated phosphorylation-independent binding. While the speculation is reasonable and supported by cited examples (e.g., PTPRF-Liprin), direct evidence for scaffolding function or evolutionary repurposing is not provided in this study. These represent hypotheses for future investigation rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C23"
+    ],
+    "result": "Afadin domain annotations in UniProt show good agreement with AlphaFold2 and IUPred3 predictions of ordered/disordered regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C23 is supported by visual comparison in Figure 1A and Figure 1\u2014figure supplement 1 showing concordance between database annotations and computational predictions. This validates the use of these predictions for experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C31",
+      "C32",
+      "C33",
+      "C113",
+      "C114",
+      "C116",
+      "C117",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Background and context claims about PTPRK, Afadin, PTPs in general, and related proteins are established from previous literature and general knowledge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C10-C33, C113-C114, C116-C117, C119-C121 provide background context supported by appropriate citations to previous literature. These establish the biological significance and prior knowledge foundation for the current study. The citations appear appropriate and the background claims are standard for the field.",
+    "result_type": "MINOR"
+  }
+]

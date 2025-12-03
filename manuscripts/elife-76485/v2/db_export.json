@@ -1,0 +1,2250 @@
+{
+  "submission": {
+    "id": "8e8ed3d0-ebc0-46a7-bf54-2fed0034604a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T13:27:03.822352Z",
+    "updated_at": "2025-12-03T13:27:03.822352Z"
+  },
+  "content": [
+    {
+      "id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "submission_id": "8e8ed3d0-ebc0-46a7-bf54-2fed0034604a",
+      "content_type": "manuscript",
+      "content_text": "# Visualizing molecules of functional human profilin\n\n## Authors\n\n- Morgan L Pimm<sup>1</sup>\n- Xinbei Liu<sup>1</sup>\n- Farzana Tuli<sup>1</sup>\n- Jennifer Heritz<sup>1</sup>\n- Ashley Lojko<sup>1</sup>\n- Jessica L Henty-Ridilla<sup>1</sup> ([ORCID: 0000-0002-7203-8791](https://orcid.org/0000-0002-7203-8791)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry and Molecular Biology, SUNY Upstate Medical University Syracuse United States ([ROR:040kfrw16](https://ror.org/040kfrw16))\n2. Department of Neuroscience and Physiology, SUNY Upstate Medical University Syracuse United States ([ROR:040kfrw16](https://ror.org/040kfrw16))\n\n\u2020 Corresponding author\n\n## Abstract\n\nProfilin-1 (PFN1) is a cytoskeletal protein that regulates the dynamics of actin and microtubule assembly. Thus, PFN1 is essential for the normal division, motility, and morphology of cells. Unfortunately, conventional fusion and direct labeling strategies compromise different facets of PFN1 function. As a consequence, the only methods used to determine known PFN1 functions have been indirect and often deduced in cell-free biochemical assays. We engineered and characterized two genetically encoded versions of tagged PFN1 that behave identical to each other and the tag-free protein. In biochemical assays purified proteins bind to phosphoinositide lipids, catalyze nucleotide exchange on actin monomers, stimulate formin-mediated actin filament assembly, and bound tubulin dimers (kD = 1.89 \u00b5M) to impact microtubule dynamics. In PFN1-deficient mammalian cells, Halo-PFN1 or mApple-PFN1 (mAp-PEN1) restored morphological and cytoskeletal functions. Titrations of self-labeling Halo-ligands were used to visualize molecules of PFN1. This approach combined with specific function-disrupting point-mutants (Y6D and R88E) revealed PFN1 bound to microtubules in live cells. Cells expressing the ALS-associated G118V disease variant did not associate with actin filaments or microtubules. Thus, these tagged PFN1s are reliable tools for studying the dynamic interactions of PFN1 with actin or microtubules in vitro as well as in important cell processes or disease-states.\n\n## Introduction\n\nProfilin-1 (PFN1) is a small (~15 kDa) cytosolic protein that interacts with actin monomers, poly-L-proline (PLP) containing ligands, phosphoinositide (PIP) lipids, and microtubules to regulate many essential cell behaviors (Davey and Moens, 2020; Pimm et al., 2020; Karlsson and Dr\u00e1ber, 2021). It maintains cellular reserves of unassembled actin monomers, catalyzes nucleotide exchange, and sterically inhibits new filament formation (Goldschmidt-Clermont et al., 1992; Kaiser et al., 1999; Wolven et al., 2000; Suarez et al., 2015; Pimm et al., 2020; Colombo et al., 2021). In contrast, PFN1 can drastically stimulate actin assembly when paired with certain PLP-containing ligands (e.g. formins or Ena/VASP) (Manchester, 1998; Romero et al., 2004; Kovar et al., 2006; Breitsprecher and Goode, 2013; Henty-Ridilla and Goode, 2015; Funk et al., 2019; Zweifel and Courtemanche, 2020). Competitive interactions between PFN1, actin monomers, and PIP lipids transmit cellular signals from the plasma membrane to distinct intracellular vesicles (Lassing and Lindberg, 1985; Davey and Moens, 2020). Furthermore, PFN1 directly impacts microtubule organization and polymerization (Nejedl\u00e1 et al., 2021; Nejedla et al., 2016; Henty-Ridilla et al., 2017; Pimm and Henty-Ridilla, 2021). Notably, the only methods used to deduce PFN1 functions have been indirect, as standard labeling methods compromise different facets of PFN1 function.\n\nConventional protein tagging strategies using a GFP-derived fluorescent tag on the C- or N-terminus impede PFN1 interactions with PIP lipids or PLP-containing ligands (Wittenmayer et al., 2000; Davey and Moens, 2020; Pimm et al., 2020). Moving the fluorescent tag to a protruding loop in PFN1 restores these interactions, unfortunately compromising full actin-binding capacity (Nejedla et al., 2017; Karlsson and Dr\u00e1ber, 2021). Furthermore, a split PFN1 approach cannot be universally applied to all profilin isoforms or homologs. To complicate matters more, high concentrations (8\u2013500 \u00b5M) make fluorescent PFN1 difficult to image in cells (Wittenmayer et al., 2000; Funk et al., 2019). A popular imaging approach to circumvent some of these issues employs anti-PFN1 antibodies to stain the detergent-extracted remnants of fixed cells (Henty-Ridilla et al., 2017; Nejedl\u00e1 et al., 2021; Nejedla et al., 2017; DeCaprio and Kohl, 2020). This technique unambiguously localizes PFN1 to stable cytoskeletal structures (i.e. stress fibers, the microtubules, and nuclear components) in cells. However, it obscures the spatiotemporal details required to measure the flux or dynamics of cellular pools of PFN1.\n\nTo date no uniform tagging strategy has produced a tagged PFN1 that retains key functions and can be used in biochemical assays or diverse cellular situations. Here, we engineered and characterized two new versions of tagged PFN1 that behave identically to the tag-free version. To overcome the drawbacks of previous approaches a flexible linker at the N-terminus is coupled with GFP-derived or titratable self-labeling approaches (i.e. SNAP-, Halo-, or CLIP-tags). Purified mAp-PFN1 binds PIP lipids, catalyzes nucleotide exchange on actin monomers, stimulates formin-mediated actin filament assembly, and impacts microtubule dynamics equivalent to the tag-less PFN1. In PFN1-deficient cells, tagged versions of PFN1 restore protein concentration, cell morphology, and cytoskeleton-based phenotypes to endogenous levels. Using titrations of self-labeling ligands, PFN1 was detected in the cytoplasm, nucleus, and on actin filaments and microtubules in N2a, 3T3, and U2OS cells. The microtubule localization was shifted by expressing specific function-disrupting mutations in PFN1 (R88E, Y6D, and ALS-related variant G118V). We anticipate these tools will be useful in future biochemical and cell-based studies exploring how PFN1 regulates the cytoskeleton to maintain homeostasis or trigger disease states.\n\n## Results\n\n### Design of tagged (PFN1)\n\nCritical aspects of PFN1 function occur through conserved binding sites for PIP lipids, actin monomers, PLP motifs or microtubules (Figure 1A and B). To directly monitor PFN1 activities, we engineered two genetically encoded versions of the protein visible with either an mApple probe or self-labeling ligands that bind to Halo-tags. We chose the mApple probe over standard fluorescent proteins (e.g. GFP) because it is bright, relatively stable, and avoids overlap with the excitation and emission ranges of well-characterized actin-labels used in biochemical assays (e.g. Oregon-Green; OG, and pyrene-labeled actin; Shaner et al., 2008; Bindels et al., 2017). We fused each tag to the N-terminus of PFN1 flanked by a linking sequence, based on strategies used in the Michael Davidson Fluorescent Protein Collection (https://www.addgene.org/fluorescent-proteins/davidson/; Figure 1C), then expressed and purified recombinant versions of untagged PFN1 or mApple-PFN1 (mAp-PFN1) to compare the effects of the tag in several biochemistry assays. SDS-PAGE and gel filtration analyses revealed that the tag-free and tagged versions were of the expected size and highly pure (Figure 1D and Figure 1\u2014figure supplement 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/76485/elife-76485-fig1-v2.jpg)\n\n**Figure 1.:** (A) View of profilin (PFN1; purple) with an actin monomer (gray) and poly-L-proline (PLP; blue), from PDB: 2BTF and 2PAV. (B) Profilin residues that contact actin (teal), microtubules (MT) (M114 and G118; pink), PLP (Y6D; blue) or phosphoinositide (PIP) lipids. (C) Position of genetically encoded tag and linking sequence (SGLRSRAQAS) on PFN1. (D) Coomassie-stained SDS-PAGE gel of PFN1 and mApple-PFN1 (mAp-PFN1). Source file contains uncropped gel in (D).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76485/elife-76485-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Trace of mAp-PFN1 (pink) elution from gel filtration column. Source file contains values plotted to obtain the UV trace.\n\n### mAp-PFN1 binds PIP lipids\n\nPFN1 binds numerous PIP lipids through two different surfaces that overlap with either the actin- or PLP-binding sites (Figure 1B; Hartwig et al., 1989; Lambrechts et al., 2002; Skare and Karlsson, 2002; Ferron et al., 2007; Nejedla et al., 2017). PFN1-PI(4,5)P2 interactions inhibit actin polymerization to regulate the morphology of the plasma membrane (Niggli, 2005; Davey and Moens, 2020). In addition, PFN1-PI(3,5)P2 interactions facilitate trafficking of late endosomes to the lysosome (Goldschmidt-Clermont et al., 1990; Martys et al., 1996; Dong et al., 2000; Hong et al., 2015; De Craene et al., 2017; Hasegawa et al., 2017; Wallroth and Haucke, 2018; Lees et al., 2020). Thus, we performed liposome pelleting assays to assess whether mAp-PFN1 bound PI(3,5)P2 or PI(4,5)P2 lipids (Figure 2A\u2013C and Figure 2\u2014figure supplement 1A, B; Banerjee and Kane, 2017; Chandra, 2019). We detected mAp-PFN1 and untagged PFN1 bound to either PI(3,5)P2- or PI(4,5)P2-containing liposomes via Western blots using PFN1-specific antibodies (Figure 2B-E). Untagged PFN1 was detected in pellets containing phosphatidylserine (control) or either PI(3,5)P2 or PI(4,5)P2 lipids (Figure 2B-D), but did not pellet without liposomes (buffer alone). Blot densitometry confirmed that mAp-PFN1 binds either PI(3,5)P2 or PI(4,5)P2 similar to tag-free PFN1 (Figure 2D, E).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/76485/elife-76485-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic of liposome pelleting assay. (B) Blot of supernatant and pellet samples from 1 \u00b5M profilin-1 (PFN1) in buffer, PS control, or 0.33 mM PI(3,5)P2 or PI(4,5)P2. Blots were probed with anti-PFN1 primary antibody (1:5000; SantaCruz 137235, clone B-10) paired with goat anti-mouse:IRDye 800CW secondary (1:10,000; LI-COR Biosciences 926\u201332210). (C) Blot for 1 \u00b5M mApple-profilin-1 (mAp-PFN1). Assay as in (B). (D) Band densitometry after background subtraction. (E) Fold change in binding normalized to PFN1. Shaded values are independent data points (n=2\u20133). Error bars, SE. Not significant by Student\u2019s t-test, ns. Full blots in Figure 2\u2014figure supplement 1. Figure 2\u2014source data 1 contains uncropped blots and quantification values for (D and E).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76485/elife-76485-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Supernatant and pellet samples from liposome pelleting assays in Figure 2B. (B) Blot from assay in (A) with mApple-PFN1 (mAp-PFN1). Blots were probed with anti-PFN1 antibody (1:5000; SantaCruz 137235, clone B-10) paired with goat anti-mouse:IRDye 800CW (1:10,000; LI-COR Biosciences 926\u201332210). Source file contains uncropped blot images.\n\n### PFN1 and mAp-PFN1 are indistinguishable for actin-related functions\n\nPFN1 is a well-characterized, high affinity (kD = 0.1 \u00b5M) actin monomer binding protein that catalyzes nucleotide exchange and suppresses actin filament nucleation (Mockrin and Korn, 1980; Goldschmidt-Clermont et al., 1992; Eads et al., 1998; Vinson et al., 1998; Wolven et al., 2000; Wen et al., 2008; Blanchoin et al., 2014; Colombo et al., 2021). To assess whether mAp-PFN1 binds actin monomers with similar affinity as untagged PFN1, we performed fluorescence polarization assays (Figure 3 and Figure 3\u2014figure supplement 1). Consistent with previous reports, we were unable to detect a change in polarization in reactions that contained untagged PFN1 and OG-labeled actin monomers (Figure 3\u2014figure supplement 1A; Vinson et al., 1998; Kaiser et al., 1999). This is likely due to the short lifetime of the probe. However, several studies demonstrate that Thymosin \u03b24 (T\u03b24) and PFN1 compete to bind actin monomers (Goldschmidt-Clermont et al., 1992; Aguda et al., 2006; Xue et al., 2014). After confirming that GFP-T\u03b24 bound actin (kD = 5.4 \u00b1 1.2 nM; Figure 3A), we used competitive binding assays to measure the affinity of each PFN1 for actin monomers (Figure 3B). Each protein bound actin monomers with similar affinity (PFN1: kD = 99.6 \u00b1 5.1 nM or mAp-PFN1: kD = 101.9 \u00b1 6.5 nM; Figure 3B). These values are similar to those measured from direct binding assays (kD = 105.2 \u00b1 26.9 nM; Figure 3\u2014figure supplement 1B; Wen et al., 2008). To assess whether mAp-PFN1 is capable of catalyzing nucleotide exchange with similar efficiency as untagged PFN1, we performed time resolved fluorescence polarization assays containing ATP-ATTO-488, unlabeled actin monomers, and either PFN1 (Colombo et al., 2021). Each PFN1 catalyzed and accelerated the nucleotide exchange on actin monomers at similar rates (p=0.1; ANOVA) (PFN1: k = 18.7 \u00b1 7.5 nM or mAp-PFN1: k = 13.2 \u00b1 9.7 nM), but were accelerated compared to control reactions lacking either PFN1 (actin alone: k = 514.3 \u00b1 61.6 nM) (Figure 3C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/76485/elife-76485-fig3-v2.jpg)\n\n**Figure 3.:** (A) Fluorescence polarization of 10 nM actin (unlabeled) with concentrations of GFP-thymosin \u03b24 (GFP-T\u03b24). (B) Competitive polarization of 10 nM GFP-T\u03b24, 10 nM actin, and concentrations of profilin-1 (PFN1; purple) or mApple-PFN1 (mAp-PFN1; pink). (C) Kinetics of 500 nM ATP-ATTO-488\u20132 \u00b5M actin in the presence of MEI buffer (gray), 1 \u00b5M PFN1, or mAp-PFN1. Dots represent time resolved means from n=3 replicates. (D) Actin assembly via bulk fluorescence. Reactions contain: 2 \u00b5M actin (5% pyrene-labeled), and 3 \u00b5M PFN1 or mAp-PFN1. Shaded values are SE from n=3 assays. (E) Time lapse total internal reflection fluorescence (TIRF) of 1 \u00b5M actin (20% Oregon Green-labeled, 0.6 nM biotin-actin) in buffer (control), or 3 \u00b5M PFN1 or mAp-PFN1. Scale bars, 20 \u00b5m. See Figure 3\u2014video 1 and Figure 4\u2014video 2. (F) Actin filament nucleation 100 s following initiation from movies as in (E), n=4 fields of view. (G) Actin filament elongation rates from movies as in (E) (n=51 filaments per condition). Shaded dots are single data points. Error bars, SE. Statistics, one-way ANOVA with Bartlett\u2019s correction: ns, not different; (A) p<0.05 from control. No difference found for mAp-PFN1 to PFN1. Source file contains quantification values for (A\u2013D and F and G).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76485/elife-76485-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Fluorescence polarization of 10 nM OG-actin mixed with concentrations of profilin-1 (PFN1). PFN1 did not elicit a change in polarization (n=1). (B) Polarization of 10 nM actin (unlabeled) with mAp-PFN1 bound actin equivalent to PFN1 (Figure 3B; n=3). Source file contains quantification values.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76485/elife-76485-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Image and montage from a total internal reflection fluorescence (TIRF) assay containing: 1 \u00b5M actin (10% Alexa-647-labeled; 0.6 nM biotin-actin; blue), and 5 \u00b5M mAp-PFN1 (pink). (B) Magnified view of (A). (C) Image of 0.5 \u00b5M actin (10% Alexa-647-labeled; 0.6 nM biotin-actin; blue) and 5 \u00b5M mAp-PFN1. (D) Quantification of mAp-PFN1 with actin. Scale bars, 10 \u00b5m. Source file contains quantification values for (D).\n\nNext, we assessed the ability of mAp-PFN1 to suppress spontaneous actin filament nucleation in bulk actin-fluorescence (pyrene) assays (Figure 3D). Less total actin polymer was made in the presence of either protein compared to the actin alone control (Figure 3D), demonstrating that both versions of PFN1 inhibit the spontaneous assembly of actin filaments. To examine this more carefully, we directly monitored actin filaments assembled in the presence of each PFN1 using total internal reflection fluorescence (TIRF) microscopy (Figure 3E). Reactions lacking PFN1 (actin alone), had an average of 45.3 \u00b1 1.4 filaments per field of view (Figure 3E and F). In contrast, there were significantly fewer actin filaments in reactions supplemented with either PFN1 (21.5 \u00b1 3.4 filaments) or mAp-PFN1 (19.8 \u00b1 2.9 filaments; Figure 3F). As expected, neither protein substantially changed the mean elongation rate of actin filaments (control: 10.07 \u00b1 0.16 subunits s\u20131 \u00b5M\u20131; PFN1: 10.07 \u00b1 0.16 subunits s\u20131 \u00b5M\u20131; mAp-PFN1: 10.05 \u00b1 0.16 subunits s\u20131 \u00b5M\u20131; Figure 3G). PFN1 is thought to bind to the fast-growing plus-ends of actin filaments at high concentrations (KD >20 \u00b5M; J\u00e9gou et al., 2011; Courtemanche and Pollard, 2013; Pernier et al., 2016; Funk et al., 2019; Zweifel and Courtemanche, 2020; Zweifel et al., 2021). Therefore, to assess whether or not mAp-PFN1 could be resolved on the end of actin filaments, we performed two-color TIRF microscopy at different actin-mAp-PFN1 stoichiometries (Figure 3\u2014figure supplement 2). We observed few (<25 total) transient (>5 s) plus-end localization events (Figure 3\u2014figure supplement 2A-D). In sum, these data demonstrate that mAp-PFN1 is equivalent to PFN1 for binding to actin monomers, catalyzing nucleotide exchange, and suppressing spontaneous actin assembly.\n\n### PFN1 and mAp-PFN1 equally promote formin-based actin assembly\n\nIn addition to its role as a strong inhibitor of actin filament assembly (Figure 3), PFN1 can simultaneously bind actin monomers and proline-rich motifs (PLP) present in cytoskeletal regulatory proteins to stimulate actin filament assembly (Kovar et al., 2006; Paul and Pollard, 2008; Breitsprecher and Goode, 2013; Zweifel and Courtemanche, 2020). We used bulk pyrene fluorescence assays to assess whether mAp-PFN1 was capable of enhancing actin filament assembly through the PLP motif-containing formin, mDia1 (Figure 4A). Total actin filament polymerization reached similar levels in the presence of PFN1 or mAp-PFN1 (Figures 3D and 4A). Actin filaments assembled with the constitutively active formin mDia1(FH1-C) and either protein resulted in a strong enhancement in actin polymerization (Figure 4A). Using TIRF microscopy to directly monitor formin-based actin filament assembly we measured elevated levels of actin fluorescence from reactions that contained formin and either protein compared to controls (Figure 4B\u2013C and Figure 4\u2014figure supplement 1A). TIRF reactions containing actin and mDia1(FH1-C) had an average of 659.3 \u00b1 98.3 filaments, which was significantly higher (p=0.014, ANOVA) than control reactions lacking formin or either PFN1 (Figure 4D). Consistent with previous reports that PFN1 also suppresses formin nucleation, reactions containing formin and either tag-free (42.7 \u00b1 9.8 filaments) or mAp-PFN1 (48.3 \u00b1 14.5 filaments) had statistically fewer filaments than control reactions containing formin and actin (p=0.0004, ANOVA) (Kovar et al., 2006; Breitsprecher et al., 2012; Henty-Ridilla et al., 2016).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/76485/elife-76485-fig4-v2.jpg)\n\n**Figure 4.:** (A) Bulk actin assembly: 2 \u00b5M actin (5% pyrene-labeled), 25 nM mDia1(FH1-C), and 5 \u00b5M profilin-1 (PFN1) or mApple-PFN1 (mAp-PFN1). Shaded values are SE from n=2 assays. (B) total internal reflection fluorescence (TIRF) of 1 \u00b5M actin (10% Alexa-647-labeled, 0.6 nM biotin-actin), 25 nM mDia1(FH1-C), and 5 \u00b5M PFN1 or mAp-PFN1. Scale bars, 10 \u00b5m. See Figure 4\u2014video 1, Figure 4\u2014video 2 . (C) Actin fluorescence from TIRF videos. Shading indicates SE from n = 3 videos. (D) Mean nucleation 100 s after initiation, from n=4 fields of view. (E) Actin filament elongation rates from movies as in (B) (n=51 total filaments per condition). Shaded dots are individual data points. Error bars, SE. Statistics, one-way ANOVA with Bartlett\u2019s correction: ns, not different; (A) p<0.05 from control; (B) p<0.05 from PFN1; (C) p<0.05 from mAp-PFN1; (D) p<0.05 from actin and mDia1 control. No difference was found for mAp-PFN1 to PFN1. Source file contains quantification values for (C\u2013E).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76485/elife-76485-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Full views formin-mediated actin polymerization montage in Figure 4B (white boxes). (B) Multi-color total internal reflection fluorescence (TIRF) montage containing: 1 \u00b5M actin (10% Alexa-647-labeled; 0.6 nM biotin-actin), 25 nM mDia1(FH1-C) and 5 \u00b5M mAp-PFN1. Scale bars, 20 \u00b5m.\n\nTo assess whether mAp-PFN1 was capable of stimulating formin-based actin assembly, we quantified actin filament elongation rates from TIRF movies (Figure 4E and Figure 4\u2014figure supplement 1B). We measured actin filaments elongating at two different speeds that correspond to the recorded rates of unassisted growth (10.1 \u00b1 0.4 subunits s\u20131 \u00b5M\u20131) and mDia1(FH1-C)-assisted growth in the presence of PFN1 (PFN1: 42.7 \u00b1 9.8 subunits s\u20131 \u00b5M\u20131; or mAp-PFN1: 48.3 \u00b1 14.5 subunits s\u20131 \u00b5M\u20131) (Kovar et al., 2006; Henty-Ridilla et al., 2016). No substantial change to the number of mAp-PFN1 end-association events in the presence was observed with formin in two-color TIRF assays. These data demonstrate that PFN1 and mAp-PFN1 stimulate formin-based actin assembly to comparable levels.\n\n### PFN1 directly binds to tubulin dimers and enhances microtubule growth\n\nIn addition to functions with actin, PFN1 regulates microtubule polymerization (Nejedla et al., 2016; Henty-Ridilla et al., 2017). We used TIRF microscopy to monitor and compare the dynamics of microtubules polymerized in the presence of either protein (Figure 5A and Figure 5\u2014figure supplement 1A). Microtubules in control reactions polymerized at an average rate of 1.9 \u00b1 0.2 \u00b5m\u20131 min\u20131 (Figure 5B\u2013C), whereas microtubules polymerized in the presence of either PFN1 grew at rates ~6 fold faster (PFN1: 12.7 \u00b1 0.3 \u00b5m\u20131 min\u20131; mAp-PFN1: 12.6 \u00b1 0.4 \u00b5m\u20131 min\u20131; Figure 5B, C; p<0.0001, ANOVA). Consistent with elevated microtubule growth rates, reactions performed in the presence of either PFN1 had significantly longer microtubules (Figure 5D; p<0.0001, ANOVA) that displayed more stable growth behaviors (Figure 5E; p<0.0001, ANOVA). Reactions containing either PFN1 had more microtubules than controls (Figure 5F; p=0.0048, ANOVA).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/76485/elife-76485-fig5-v2.jpg)\n\n**Figure 5.:** (A) Total internal reflection fluorescence (TIRF) images of reactions of biotinylated GMP-CPP seeds, 10 \u00b5M free tubulin (5% HiLyte-488 labeled), and buffer (control) or 5 \u00b5M profilin-1 (PFN1) or mApple-PFN1 (mAp-PFN1). Scale bars, 20 \u00b5m. See Figure 5\u2014video 1. (B) Kymographs display dynamics as in (A). Scale bars: length, 10 \u00b5m; time, 100 s. (C) Microtubule polymerization (35\u201358 microtubules from n=3 experiments). (D) Microtubule length (n=35\u201358 microtubules from n=3 experiments). (E) Stability index: rescue/catastrophe frequency (n=18\u201346 microtubules from n=3 experiments). (F) Number of microtubules (n=4 experiments). Shaded dots are single data points. Error bars, SE. (G) Polarization of 10 nM tubulin (unlabeled) and mAp-PFN1. (H) TIRF as in (A), but visualizing tubulin (black) and mAp-PFN1 (pink). Scale bars, 20 \u00b5m. See Figure 5\u2014video 2. (I) Kymographs display dynamics in (H). Scale bars: length, 15 \u00b5m; time, 540 s. (J) Montage of a microtubule (black) and mAp-PFN1 (pink) merged, with the intensity profiles of mAp-PFN1 along the microtubule lattice. See Figure 5\u2014video 3. Scale bar, 10 \u00b5m. + and -, microtubule polarity. Statistics, one-way ANOVA with Bartlett\u2019s correction: (A) p<0.05 from control. No difference was found for mAp-PFN1 to PFN1. Source file contains quantification values for (C\u2013G and J).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76485/elife-76485-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Full views of montages present in Figure 5A (black boxes). (B) Full view of multi-color time lapse total internal reflection fluorescence montage present in Figure 5H (black boxes). Scale bars, 20 \u00b5m. (C) Montage of a microtubule (black), mAp-PFN1 (pink) and merge from Figure 5I. Scale bar, 10 \u00b5m. + and - indicate microtubule polarity.\n\nThe combined regulatory activities of PFN1 on microtubule polymerization may be explained by several mechanisms, including that it binds or stabilizes tubulin dimers at growing microtubule plus-ends. To test for a direct interaction between mAp-PFN1 and unlabeled tubulin dimers, we performed fluorescence polarization (kD = 1.89 \u00b1 0.28 \u00b5M) (Figure 5G). This affinity is 5.9-fold stronger than its affinity for polymerized microtubules (kD = ~10 \u00b5M) (Henty-Ridilla et al., 2017). We used TIRF microscopy to evaluate whether microtubule plus-ends were enriched with mAp-PFN1 (Figure 5H\u2013J and Figure 5\u2014figure supplement 1B, C). Rather than decorating plus-ends, mAp-PFN1 localized to the side of growing microtubules (Figure 5H\u2013I and Figure 5\u2014figure supplement 1B). Side-bound mAp-PFN1 molecules appear to diffuse along the microtubule lattice (Figure 5J and Figure 5\u2014figure supplement 1C). Thus, mAp-PFN1 and PFN1 are equivalent regulators of microtubule dynamics, and promote assembly by direct interactions with dimers and the microtubule lattice.\n\n### mAp-PFN1 restores endogenous protein levels and cell functions\n\nMutations in PFN1 are associated with neurodegenerative disease, including amyotrophic lateral sclerosis (ALS; Wu et al., 2012; Murk et al., 2021). Therefore, we generated and confirmed two clonal CRISPR/Cas9 knockout lines (PFN1(-/-)) in immortalized neuroblastoma-2a (N2a) cells (Figure 6A and Figure 6\u2014figure supplement 1A-C) that have been successfully used to model features of ALS (De Vos, 2007; Vance et al., 2009; Coussee et al., 2011; Henty-Ridilla et al., 2017). PFN1 deficient cell lines did not proliferate as efficiently as endogenous controls (Figure 6B), consistent with previously reported cell cycle defects (Suetsugu et al., 1998; Witke et al., 2001; Moens and Coumans, 2015). We used quantitative Western blots to evaluate whether PFN1 or tagged proteins (mAp-PFN1 or Halo-PFN1) restored PFN1 protein to endogenous levels (Figure 6C and Figure 6\u2014figure supplement 1D-F). N2a cells contain 121 \u00b1 15 \u00b5M PFN1 and each plasmid harboring tagged or tag-free PFN1 restored the protein to endogenous levels (Figure 6D).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/76485/elife-76485-fig6-v2.jpg)\n\n**Figure 6.:** (A) Blot confirming knockout and rescue of PFN1 with tag-free PFN1, mApple-PFN1 (mAp-PFN1) or Halo-PFN1 plasmids. Extracts prepared from endogenous PFN1(+/+), PFN1(-/-), and PFN1(-/-) transfected with tag-free (rescue), mAp-PFN1 or Halo-PFN1 plasmids. Blot probed with anti-PFN1 antibody (1:3500; SantaCruz 137235, clone B-10) paired with goat anti-mouse:IRDye 800CW secondary (1:5000; LI-COR Biosciences 926\u201332210), and anti-\u03b1-tubulin (1:10,000; Abcam 18251) paired with donkey anti-rabbit 926\u201368073 secondary (1:20,000). Coomassie stained membrane used as loading control. Full blot in Figure 6\u2014figure supplement 1A-C. (B) PFN1(+/+) cells proliferate significantly better than PFN1-deficient cell lines. (C) Blot probed as in (A) with known quantities of purified PFN1 and mAp-PFN1. Full blot in Figure 6\u2014figure supplement 1D-F. (D) PFN1 levels in neuroblastoma (N2a) cells. Shaded dots are data points from n=4 experiments. Error bars, SE. Maximum intensity images and quantification of (E\u2013F) cell morphology and (G\u2013H) fluorescence of phalloidin-stained actin filaments or (I\u2013J) microtubules from N2a cells expressing endogenous PFN1 (blue), PFN1(-/-) (pink), PFN1(-/-) transfected with mAp-PFN1 (yellow) or tag-free PFN1 plasmids (Figure 6\u2014figure supplement 1G). Cells were plated on micropatterns and stained with anti-\u03b1-tubulin antibody (1:100; Abcam 18251) paired with donkey anti-rabbit conjugated to AlexaFluor-647 (1:100; Life Technologies A31573). Scale bars, 10 \u00b5m. Shaded dots are individual cells (n=4\u201315 cells) from n=3 coverslips. Error bars, SE. Statistics, one-way ANOVA with Bartlett\u2019s correction: ns, not different from PFN1(+/+); (A) p<0.05 from PFN1(+/+). No significant difference was found for mAp-PFN1, Halo-PFN1 or tag-less PFN1 to endogenous PFN1(+/+). Source file contains uncropped blots and quantification values for (B, D, F, H, and J).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76485/elife-76485-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Blots confirming knockout or rescue of PFN1 as in Figure 6A. (A) Blots were probed with anti-PFN1 antibody (1:3500; SantaCruz 137235, clone B-10) paired with goat anti-mouse:IRDye 800CW secondary antibody (1:5000; LI-COR Biosciences 926\u201332210) and (B) anti-\u03b1-tubulin primary (1:10,000; Abcam 18251) paired with donkey anti-rabbit:IRDye 680RD (1:20,000; LI-COR Biosciences 926\u201368073). (C) Coomassie stained membrane from (A). (D) Example blot used to determine PFN1 concentration N2a cells (n=4 total). Blot probed as in (A\u2013C) for (D) PFN1 and (E) \u03b1-tubulin, and (F) Coomassie stained. (G) Morphology measurements related to Figure 6 for tag-free PFN1. Source file contains uncropped blots.\n\nTo assess whether mAp-PFN1 also restored cell-based functions, we plated cells on micropatterns to standardize the shape and measured cell morphology (Figure 6E and F and Figure 6\u2014figure supplement 1G), the fluorescence of actin filaments (Figure 6G and H) or the fluorescence of microtubules (Figure 6I and J) in endogenous, knockout, and PFN1(-/-) cells transfected with tag-free or mAp-PFN1 plasmids. Notably, traditional assays for assessing the cytoskeleton in these cells are difficult to perform because N2a cells do not efficiently migrate or divide. PFN1(-/-) knockout cell morphology significantly deviated from all cells expressing PFN1 (endogenous, tagged, or untagged; p=0.01; ANOVA; Figure 6E and F). In addition, knockout cells displayed strikingly aberrant actin filament (p=0.02; ANOVA; Figure 6G and H) and microtubule networks (p=0.002; ANOVA; Figure 6I and J). Compared to PFN1(+/+), the cell morphology, architecture of actin filaments, and shape of the microtubule network was not different than PFN1(-/-) cells expressing tag-free or mAp-PFN1 plasmids (p=0.78; ANOVA; Figure 6E and J and Figure 6\u2014figure supplement 1G). This demonstrates that mAp-PFN1 complements cytoskeleton-based activities in cells.\n\n### Aberrant PFN1 regulation of actin filaments and microtubules contributes to ALS\n\nEight mutations in PFN1 cause ALS (Wu et al., 2012; Liu et al., 2022). However, the detailed mechanisms that explain how PFN1 variants contribute to the disease state remain unclear. Empowered by the knowledge that mAp-PFN1 fully compensates for PFN1, we measured cell and cytoskeletal morphology parameters for PFN1(-/-) cells expressing Halo-PFN1(G118V), an ALS variant that does not effectively bind actin monomers or microtubules, (Figure 7; Henty-Ridilla et al., 2017; Liu et al., 2022). Consistent with analyses comparing cells expressing mAp-PFN1 (Figure 6E\u2013J), PFN1 deficient cells displayed aberrant cell morphology (p=0.02; ANOVA; Figure 7A and B), as well as significantly decreased fluorescence of actin filaments (p=0.03; ANOVA; Figure 7C and D) and microtubules (p=0.01; ANOVA; Figure 7E and F). PFN1(-/-) cells expressing only Halo-PFN1(G118V) were unable to compensate for any of these parameters (p=0.01; ANOVA; Figure 7A\u2013F). Thus, PFN1(G118V) contributes to ALS through actin and microtubule-based mechanisms.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/76485/elife-76485-fig7-v2.jpg)\n\n**Figure 7.:** (A\u2013B) Maximum intensity images and quantification of cell morphology and (C\u2013D) fluorescence of phalloidin-stained actin filaments (E\u2013F) or microtubules from neuroblastoma-2a PFN1(-/-) transfected with Halo-PFN1 (blue), PFN1(-/-) (pink), or PFN1(-/-) cells transfected with Halo-PFN1(G118V; lime). Cells plated and stained as in Figure 6I\u2013J. Scale bars, 10 \u00b5m. Shaded dots are individual cells (n=16\u201325 cells) from at least n=3 coverslips. Error bars, SE. Statistics, one-way ANOVA with Bartlett\u2019s correction: ns, not different from PFN1(-/-) expressing Halo-PFN1 (control); (A) p<0.05 from control. Source file contains quantification values for (B, D, and F).\n\n### Live-cell visualization of Halo-PFN1\n\nThe discrete cellular localization of PFN1 has been difficult to determine because the endogenous protein is present at high cellular concentrations (121 \u00b5M; Figure 6D; Pollard et al., 2000; Funk et al., 2019; Skruber et al., 2020). Therefore, to further confirm the utility of the fluorescently-tagged protein, we performed live-cell imaging of PFN1 deficient N2a cells transfected with Halo-PFN1 and markers for actin or microtubules (Figure 8, Figure 8\u2014figure supplements 1 and 2). We performed a titration of Janelia Fluor-646 (JF-646) ligand to limit the amount of cellular PFN1 signal and to test whether molecules of the protein could be visualized coincident with actin or microtubules (Figure 8A). At high concentrations of JF-646, Halo-PFN1 was localized to the nucleus and throughout the cytoplasm (Figure 8A). Single molecules of Halo-PFN1 were identified at 1\u201310 nM ligand, and localized to microtubules in ~60% of N2a cells (Figure 8A\u2013C).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/76485/elife-76485-fig8-v2.jpg)\n\n**Figure 8.:** (A) Maximum intensity projections of PFN1(-/-) expressing markers for actin (green), microtubules (pink) or Halo-PFN1 (blue; top) visualized with JF-646 and imaged as in Figure 6. Titration of JF-646 to illuminate PFN1 molecules. (B) PFN1(-/-) transfected with Halo-PFN1 plasmids (wild-type, R88E, Y6D, and G118V) as in (A). Scale bars, 10 \u00b5m. (C) Halo-PFN1-microtubule overlap in cells from (B). Overlap analysis was performed in n=3\u20134 experiments. Averages from 10 to 25 cells per experiment. Statistics, one-way ANOVA with Bartlett\u2019s correction: ns, not different from PFN1(-/-) expressing Halo-PFN1 (control); (A) p<0.05 from control; (B) p<0.05 from Halo-PFN1(R88E) or Halo-PFN1(Y6D); (C) p<0.05 from Halo-PFN1(G118V). (D) Kymographs display microtubule dynamics (see Figure 8\u2014figure supplement 2 and Figure 8\u2014video 1). (E) Model of PFN1 distribution in cells. Source file contains quantification values for (C).\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76485/elife-76485-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (A) Maximum intensity images of different PFN1(+/+) cells transiently expressing GFP-actin (green), a marker for microtubules (EMTB-2\u00d7 mCherry; pink), and either Halo-PFN1 (Halo-PFN1) or Halo-PFN1(R88E) (light blue), visualized with 10 nM JF-646 ligand. Scale bars, 10 \u00b5m. (B\u2013D) Quantification of Halo-PFN1-microtubule overlap from different cell types from (A) (n=15\u201349 cells). (E) No difference was found Halo-PFN1 or Halo-PFN1(R88E)-microtubule colocalization (n=42\u201346 cells). Source file contains quantification values for (B\u2013E).\n\n![Figure 8\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76485/elife-76485-fig8-figsupp2-v2.jpg)\n\n**Figure 8\u2014figure supplement 2.:** View of kymograph line drawn on cells expressing Halo-PFN1 mutants in Figure 8D. Scale bars, 10 \u00b5m.\n\nTo explore whether this localization was cell-type specific, we overexpressed Halo-PFN1 in additional mammalian cell types (Figure 8\u2014figure supplement 1A). In NIH 3T3 cells, Halo-PFN1 localized to actin filaments in all cells assessed and only occurred with microtubules at sites where both polymers overlapped (Figure 8\u2014figure supplement 1A, B). In contrast, Halo-PFN1 associated more frequently with microtubules than actin filaments for U2OS and N2a cells (Figure 8\u2014figure supplement 1A-D). Notably, for N2a cells, the localization of Halo-PFN1 to actin filaments only occurred at sites where both polymers overlapped (Figure 8\u2014figure supplement 1D). Expressing Halo-PFN1 over endogenous PFN1 did not stimulate further microtubule association (Figure 8\u2014figure supplement 1E).\n\nTo shift cellular PFN1 pools from the endogenous localization, we transfected PFN1(-/-) cells with Halo-PFN1 plasmids harboring point mutations that disrupt specific PFN1 functions (Ezezika et al., 2009; Rotty et al., 2015; Suarez et al., 2015; Henty-Ridilla et al., 2017; Liu et al., 2022). PFN1 colocalized with microtubules >50% of cells expressing the actin monomer binding deficient PFN1, Halo-PFN1(R88E) (n>50 cells from 5 separate experiments; Figure 8B\u2013C). Line scans projected as kymographs further demonstrate that at least some protein is associated with microtubules (Figure 8D and Figure 8\u2014figure supplement 2). However, it is still difficult to resolve whether these molecules are transiently associated or move along the microtubule lattice Figure 8\u2014video 1. Surprisingly, PFN1 colocalized with microtubules in >75% of cells expressing the formin/poly-L-proline binding deficient Y6D mutation (Figure 8B and C; Ezezika et al., 2009; Henty-Ridilla et al., 2017; Liu et al., 2022). Microtubules in these cells appear less dynamic than wild-type or R88E-expressing cells, which may strengthen the hypothesis that PFN1-microtubule interactions stabilize microtubule dynamics (Figure 8D and Figure 8\u2014video 1). Significantly less PFN1 was associated with microtubules in cells expressing the microtubule-binding deficient, and ALS-relevant, G118V mutation (Figure 8B and C). These cells displayed PFN1 accumulations may be disease-relevant aggregates that are hypothesized to contribute to ALS onset (Wu et al., 2012; Figley et al., 2014). A line scan placed over a Halo-PFN1(G118V) expressing cell does not show much colocalization with microtubules (Figure 8D, Figure 8\u2014figure supplement 2, and Figure 8\u2014video 1). Thus, the localization of molecules of PFN1 can be shifted from actin- or microtubule-binding activities with specific point mutations.\n\n## Discussion\n\nThe lipid, actin, and microtubule regulating capabilities of profilin (PFN1) position it as a critical convergence point for major cell signaling pathways. Here we engineered and characterized genetically encoded tagged PFN1 proteins that are fully functional for interactions with important signaling lipids, binding and exchanging nucleotides on actin monomers, stimulating mDia1-based actin filament assembly, and binding to microtubules (Figure 8E). In cells, Halo-PFN1 fully compensates for the loss of the endogenous protein and restores normal cell morphology and actin filament and microtubule array architectures. A titration of specific self-labeling JF-646 ligand allowed us to directly localize a subset of PFN1 molecules for the first time in living cells. Overall, these tools directly illuminate functions of PFN1 that could not be deduced previously through indirect mechanisms or observed due to high cellular concentrations.\n\nFluorescent PFN1 also offers many advantages for dissecting direct PFN1-binding relationships. First, mAp-PFN1 is well-suited for fluorescence polarization assays to determine the affinities of PFN1 for binding actin monomers or tubulin dimers. This assay may now be expanded to disease-relevant mutations in PFN1 or to determine the binding constants of canonical ligands (i.e. formin, VASP, PLP, and PIPs) (Liu et al., 2022). Second, PFN1 was tagged with two entirely different genetically encodable probes through the same flexible linker. This validates that the tagging strategy may be applied with new fluorophores of different wavelengths or sizes (Oliinyk et al., 2019). Furthermore, when paired with appropriate and well-placed fluorophores, functional fluorescently tagged PFN1 may now be combined with FRET. Such studies paired with elegantly engineered formins may elucidate more details of how PFN1 interacts with PLP-tracts of different lengths or compositions at nm resolution (Courtemanche and Pollard, 2013; Aydin et al., 2018; Zweifel and Courtemanche, 2020).\n\nPerhaps the greatest benefit of these tools is the ability to decipher mechanisms of PFN1 function with actin or microtubules in important cell processes. Dye-ligand titrations to illuminate Halo-PFN1 effectively overcome many of the problems associated with visualizing highly concentrated fluorescent proteins in cells. While advantageous, it is worth reiterating that only a fraction of the total cellular PFN1 is visible with this approach. As a consequence, Halo-PFN1 is the most appropriate for deciphering high affinity cellular mechanisms that occur at high concentrations and discrete cellular locations. Specifically, Halo-PFN1 is suitable for detecting interactions with microtubules, vesicles, stress fibers, and centrosomes rather than with actin monomers in the cytoplasm. However, the utility of these probes in the cytoplasm or at the leading edge may be achieved with optimization, genetics, different cell types, or clever techniques that stimulate PFN1 (Lee et al., 2013; Skruber et al., 2020).\n\nFinally, several disease-variants of PFN1 have been identified in cancer and neurodegenerative disorders (Michaelsen-Preusse et al., 2016; Pimm et al., 2020; Murk et al., 2021). Using a genetic approach, we observed less microtubule association in cells expressing the actin- and microtubule-binding deficient PFN1(G118V) ALS variant. This is the first examination of the effects of an ALS-related PFN1 at endogenous levels. Future studies will detail how other functional or disease-related mutations influence the role of PFN1 in diverse signaling schemes, associated disorders, and different cell types.\n\n## Materials and methods\n\n### Reagents\n\nAll materials were obtained from Fisher Scientific (Waltham, MA) unless otherwise noted.\n\n### Plasmid construction\n\nDNA from pmApple-C1 (Kremers et al., 2009) was PCR amplified with primers: 5\u2019- CTTTAAGAAGGAGATATACATATGGTGAGCAAGGGCGAGG-3\u2019; 5\u2019- CCACCCGGCCATGGAAGCTTGAGC \u20133\u2019. Fragments of mApple and NdeI-linearized pMW172 (Eads et al., 1998) DNA containing human PFN1 (NCBI Gene ID: 5216) were joined via Gibson assembly. For mammalian expression, the mAp-PFN1 cassette was synthesized and inserted into pmApple-C1 behind the CMV promoter at the Ndel and BamHI restriction sites (Genscript). The amino acid linker and PFN1 were synthesized into the backbone of a pcDNA-Halo expression vector (provided by Gunther Hollopeter, Cornell University) flanked by KpnI and NotI sites (Genscript). We did not test additional flexible linkers of varying amino acid length or composition. Site-directed mutagenesis introduced the Y6D, R88E, G118V mutations into Halo-PFN1 (Genscript). The final sequence of each plasmid was confirmed (Genewiz, South Plainfield, NJ).\n\n### Protein purification\n\nPFN1 and mAp-PFN1 in pMW172 were transformed and expressed in Rosetta2(DE3) pRare2 competent cells and purified as described in detail (Liu et al., 2022). Notably, mAp-PFN1 stored >1 year at \u201380\u00b0C occasionally contains aggregates. We recommend pre-clearing the protein via ultracentrifugation before use. N-terminally tagged 6 \u00d7 His-GFP-thymosin-\u03b24 (GFP-T\u03b24) was synthesized and cloned into a modified pET23b vector at the AgeI and NotI restriction sites (Genscript). Bacteria were transformed, induced, collected, and stored identically to PFN1 (Liu et al., 2022). Cell pellets were resuspended in 2 \u00d7 PBS (pH 8.0) (2.8 M NaCl, 50 mM KCl, 200 mM sodium dibasic, 35 mM potassium monobasic), 20 mM imidazole (pH 7.4), 500 mM NaCl, 0.1% Triton-X 100, 14 mM BME and lysed. Lysate was clarified via centrifugation for 30 min at 20,000 \u00d7 g and the supernatant was flowed over cobalt affinity columns (Cytiva) equilibrated in low imidazole buffer (1 \u00d7 PBS; (pH 8.0), 20 mM imidazole; (pH 7.4), 500 mM NaCl, 0.1% Triton-X 100, and 14 mM BME). GFP-T\u03b24 was eluted using a linear gradient into high imidazole buffer (1 \u00d7 PBS (pH 8.0), 300 mM imidazole (pH 7.4), 150 mM NaCl, 0.1% Triton-X 100, and 14 mM BME). The 6 \u00d7 His tag was cleaved with 5 mg/mL ULP1 protease for 2 hr at 4\u00b0C, concentrated, and applied to a Superdex 75 (10/300) gel filtration column equilibrated in 1\u00d7PBS (pH 8.0), 150 mM NaCl, and 14 mM BME. Fractions containing GFP-T\u03b24 were pooled, aliquoted, and stored at \u201380\u00b0C. The constitutively active formin 6\u00d7His-mDia1(FH1-C) (amino acids 571\u20131255) was synthesized and cloned into modified pET23b vector at the AgeI and NotI restriction sites (Genscript). Purification of 6 \u00d7 His-mDia1(FH1-C) was handled exactly as described for GFP-T\u03b24, but a Superose 6 Increase (10/300; Cytiva) column was used for gel filtration.\n\nRabbit skeletal muscle actin (RMA), OG, and N-(1-pyrenyl)iodoacetamide (pyrene) actin were purified from acetone powder and labeled on cysteine 374 as described (Spudich and Watt, 1971; Cooper et al., 1984; Kuhn and Pollard, 2005). Alexa-647 (NHS ester) actin was labeled as above but on lysine residues (Hertzog and Carlier, 2005). OG- and Alexa-647 actin were stored at \u201320\u00b0C in G-buffer with 50% glycerol. Unlabeled, biotinylated, and pyrene-labeled actins were flash frozen in G-buffer and stored at \u201380\u00b0C. Glycerol stored actins were dialyzed in G-buffer at 4\u00b0C overnight and pre-cleared via ultracentrifugation at 279,000\u00d7g before use. Tubulin was purified from Bovine brains by three cycles of temperature-induced polymerization and depolymerization (Castoldi and Popov, 2003). Labeled tubulin was purchased from Cytoskeleton, Inc (Denver, CO). AlexaFluor-647 GMP-CPP microtubule seeds were made as in Groen et al., 2014. Unlabeled tubulin was recycled before use.\n\nAll protein concentrations were determined by band densitometry from Coomassie-stained SDS-PAGE gels, compared to a BSA standard curve. Stoichiometries were determined using spectroscopy, extinction coefficients, and correction factors: actin \u03b5290 = 25,974 M\u20131 cm\u20131, pyrene \u03b5339 = 26,000 M\u20131 cm\u20131, OG \u03b5496 = 70,000 M\u20131 cm\u20131, Alexa-647 \u03b5650 = 239,000 M\u20131 cm\u20131. The correction factor for OG was 0.12, and 0.03 for Alexa-647.\n\n### Liposome pelleting assays\n\nLiposomes 55% 16:0 PC, 25% 16:0 PS, 18% 16:0 PE, and 5% 18:1 (0.33 mM final) PI phosphates (PI(3,5)P2 or PI(4,5)P2; Avanti Polar lipids, Alabaster, AL) were prepared according to Banerjee and Kane, 2017. Liposomes were resuspended in 9:20:1 CH3OH:CHCl3:H2O, lyophilized for 30\u201340 min at 35\u00b0C, rehydrated in ice-cold 25 mM NaCl (pH 7.4) and 50 mM Tris-HCl, freeze-thawed five times, and extruded through a 100 nm filter twenty times. Liposomes and 1 \u00b5M PFN1 or mAp-PFN1 were incubated for 30 min at room temperature, and pelleted at 400,000 \u00d7 g. Collected supernatants and pellets were resuspended in equal volumes (100 \u00b5L) of buffer, precipitated in 10%(v/v) trichloroacetic acid, washed with cold 100% acetone, and dissolved in 50 \u00b5L of 50 mM Tris-HCl (pH 6.8), 8 M urea, 5% SDS, and 1 mM EDTA. Blots were probed as described in figure legends. Densitometry was performed in Fiji (Schindelin et al., 2012).\n\n### Fluorescence polarization binding assays\n\nReactions with actin (10 nM; unlabeled or OG-labeled) were performed in 1 \u00d7 PBS (pH 8.0) and 150 mM NaCl and incubated at room temperature for 15 min before recording. Competitive experiments had 10 nM unlabeled actin, 10 nM GFP-T\u03b24, and concentrations of either PFN1 protein. Direct tubulin-binding experiments were performed with 10 nM tubulin in 1 \u00d7 BRB80 (80 mM PIPES, 1 mM MgCl2, and 1 mM EGTA; pH 6.8) with 150 mM NaCl, and concentrations of mAp-PFN1, at 4\u00b0C. No microtubules were found when the contents of the highest tubulin-containing reaction were spotted onto coverslips and screened for microtubules by epifluorescence microscopy (561 filter) at the end of the experiment. Time-lapse polarization was performed to determine the rate of nucleotide exchange on actin using 2 \u00b5M actin (unlabeled), 500 nM ATP-ATTO-488, and 1 \u00b5M PFN1 or mAp-PFN1 in NFG (5 \u2009mM Tris (pH 8), 0.2 \u2009mM CaCl2, 0.5 \u2009mM DTT) supplemented with MEI (1 \u2009mM MgCl2, 1 \u2009mM EGTA, and 10 \u2009mM imidazole-HCl (pH 7.0)), similar to Colombo et al., 2021. Polarization was recorded every 7.5\u20138 s for 30 min. Actin was dialyzed for 30 min in NFG and pre-cleared before use. Polarization of OG, GFP or ATTO-488 probes was determined at 440 nm/510 nm, whereas assays using the mAp-PFN1 were set to 568 nm/592 nm. Assays were performed in a plate reader (Tecan, M\u00e4nnedorf, Switzerland). All proteins and reagents were pre-cleared via centrifugation at 279,000\u00d7g. Non-linear curve fits were performed using data normalized so that the smallest mean in each data set was defined as zero. Data were fit to the following curve using least squares regression with no constraints: Y = Y0 \u2212 Bmax*(X/(KD + X)).\n\n### Bulk actin assembly assays\n\nBulk assembly assays were performed by combining 2 \u03bcM Mg-ATP actin (5% pyrene labeled), proteins or control buffers, and initiation mix (2 mM MgCl2, 0.5 mM ATP, 50 mM KCl). Reactions for each replicate were initiated simultaneously by adding actin to reactions using a multichannel pipette. Total fluorescence was monitored at 365 nm/407 nm in a plate reader. Recorded values were averaged between three replicates.\n\n### In vitro TIRF microscopy assays\n\nTIRF microscopy was executed as described in Henty-Ridilla, 2022, with the exception that actin reactions were performed in 20 mM imidazole (pH 7.4) 50 mM KCl, 1 mM MgCl2, 1 mM EGTA, 0.2 mM ATP, 10 mM DTT, 40 mM glucose, and 0.25% methylcellulose (4000 cP). TIRF microscopy used a DMi8 inverted microscope equipped with 120\u2013150 mW solid-state lasers, a 100 \u00d7 Plan Apo 1.47 NA oil-immersion TIRF objective (Leica Microsystems, Wetzlar, Germany), and an iXon Life 897 EMCCD camera (Andor; Belfast, Northern Ireland). Frames were captured at 5 s intervals. Parameters of actin or microtubules dynamics were determined from TIRF images as in Henty-Ridilla, 2022.\n\n### Mammalian cell culture and cell lines\n\nN2a (Synthego, Menlo Park, CA), NIH 3T3 (ATCC, Manassas, VA), or U2OS (ATCC) cells were grown in DMEM supplemented with 200 mM L-glutamine, 10% FBS and 1 \u00d7 penicillin (500 U/mL)-streptomycin (500 \u00b5g/mL). All cell lines were screened for mycoplasma at regular intervals, by screening fixed cells for irregular (non-nuclear associated) DAP1 stain. All transfections were performed using Lipofectamine 3000 according to manufacturer\u2019s instructions for 6-well plates with 75 K cells and 100\u2013200 ng plasmid per well. Cells were lysed (for blots) or imaged 18\u201324 hr following transfection. To generate clonal lines, pooled PFN1 CRISPR cells (Synthego, Menlo Park, CA) were diluted to 0.5 cells per well, grown in conditioned media, and confirmed via blot. Blots were probed with anti-PFN1 (1:3500; SantaCruz 137235, clone B-10) and anti-\u03b1-tubulin (1:10,000; Abcam 18251) primary antibodies for 1 hr then washed with 1 \u00d7 TBST (20 mM Tris (pH8.0), 150 mM NaCl, and 0.1% Tween-20), and probed with goat anti-mouse:IRDye 800CW (1:5000; LI-COR Biosciences 926\u201332210), and donkey anti-rabbit 926\u201368073 (1:20,000) antibodies for 1 hr and washed with 1 \u00d7 TBS. Fluorescent secondary antibodies were detected with a LI-COR Odyssey Fc (LI-COR Biosciences, Lincoln, NE) and quantified by densitometry in Fiji software. For cell proliferation comparisons, 100 K PFN1(+/+) wild-type or PFN1(-/-) knockout cells were seeded per T25 flask, passaged, and counted every 4 days.\n\n### Determining the concentration of PFN1 in N2a cells\n\nThe concentration of PFN1, mAp-PFN1, or Halo-PFN1 was determined using quantitative Western blots from 100 K confluent cells lysed in 200 \u00b5L 2 \u00d7 Laemmli buffer. The total mass of PFN1 was determined from 50 \u00b5L of lysate and determined from PFN1 or mAp-PFN1 standard curves. The mean cell volume of a typical N2a cell was calculated as 196 \u00b5m3 (1.96 \u00d7 10\u201313 L) by taking the average XY area of ten well-spread N2a cells and then multiplying by the mean cell thickness in Z (~1 \u00b5m) from the same cells, similar to Christ et al., 2010; Cadart et al., 2017. Correction of lysates was not necessary as transfection efficiencies were 70\u201390% for these cells (Henty-Ridilla et al., 2016; Henty-Ridilla et al., 2017).\n\n### Cell morphology imaging and measurements\n\nThe morphology of N2a cells was standardized by plating 200 K PFN1(+/+) or PFN1(-/-) cells on medium-sized fibronectin coated Y-pattern coverslips (CYTOO, Inc, Grenoble, France). After 1 hr unattached cells were aspirated. Remaining cells were washed in 0.3% glutaraldehyde and 0.25% Triton X-100 diluted in 1 \u00d7 PBS and fixed in 2% glutaraldehyde for 8 min. Autofluorescence was quenched with freshly prepared 0.1%(w/v) sodium borohydride. Coverslips were blocked for 1 h in 1% BSA(w/v) diluted in 1 \u00d7 PBST (1 \u00d7 PBS and 0.1% Tween-20), incubated with anti-\u03b1-tubulin (1:250; Abcam 18251) primary antibody resuspended in 1 \u00d7 PBST for 1 hr, washed three times in 1 \u00d7 PBST and probed with AlexaFluor-568 donkey anti-rabbit secondary antibody (A10042) and AlexaFluor-488 phalloidin (1:500; Life Technologies, Carlsbad, CA) to stain actin filaments. After 1 hr, coverslips were washed and mounted in AquaMount.\n\nCells were imaged by spinning disk confocal microscopy on an inverted Nikon Ti2-E microscope (SoRa; Nikon Instruments, Melville, NY) equipped with 488 nm, and 561 nm wavelength lasers, a CF160 Plan Apo 60 \u00d7 1.4 NA oil-immersion objective, a CSU-W1 imaging head (Yokogawa Instruments, Tokyo, Japan), a SoRa disk (Nikon Instruments, Melville, NY), and a Prime BSI sCMOS camera with a pixel size of 6.5 \u00b5m/pixel (Teledyne Photometrics, Tucson, AZ). Artificial intelligence denoise and 40 iterations of Richardson-Lucy deconvolution was applied to 7\u201310 \u00b5m Z-stacks acquired with identical laser exposures and power using Nikon Elements software. Images for cell morphology (saturated actin signal), actin fluorescence or microtubule fluorescence quantification were converted to 8-bit grayscale, binarized, and counted (RawIntDen) in Fiji software.\n\n### Live-cell imaging\n\nCells were imaged via SoRa (as above) in phenol-red free DMEM (supplemented as above) buffered with 10 mM HEPES (pH 7.4) at 37\u00b0C. Temperature was maintained with a stage heater insert (OKO labs, Ambridge, PA). 42 K cells were plated in glass-bottom 35 mm dishes (MatTek, Ashland, MA) and transfected with 100 ng maxi-prepped plasmid per dish: reduced expression GFP-beta-actin (Watanabe and Mitchison, 2002), ensconsin-microtubule binding domain (EMTB)\u20132 \u00d7 mCherry (Miller and Bement, 2009), and Halo-PFN1 (wild-type or mutants; this work). Janelia Fluor-646 (JF-646; Promega, Madison, WI) was added directly to dishes 5 min before acquisition.\n\n### Data analyses and availability\n\nGraphPad Prism 9 (GraphPad Software, San Diego, CA) was used for analyses and statistical tests. The design, sample size, and statistics used for each experiment are in each figure legend. All datasets passed tests for normality. Individual data points are shown in each figure shaded by replicate. Source datasets for all quantitative data are linked in the figure legends. The Henty-Ridilla Zenodo contains the original large image files and is available upon confirmation that users will follow CC-BY licensing guidelines for reuse at: http://doi.org/10.5281/zenodo.5329584.\n",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "af19f0fe-01ee-4073-b1c6-f850c1ab3c2d",
+      "submission_id": "8e8ed3d0-ebc0-46a7-bf54-2fed0034604a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Alphee Michelot, https://ror.org/02me5cy06 Institut de Biologie du D\u00e9veloppement France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76485.sa0](https://doi.org/10.7554/eLife.76485.sa0)\n\nThe development and rigorous characterization of fully functional, fluorescently labeled versions of profilin will be useful to cell biologists and biochemists who study the cytoskeleton. For cell biologists, these tools will allow a better understanding of the cellular dynamics of profilin and its interactions with different components of the cytoskeleton (actin networks and microtubules). Fluorescent profilins will also be precious to understand the consequences of different mutations. For biochemists, these tools offer new possibilities to study profilin dynamics in bulk assays or by live imaging.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Alphee Michelot, https://ror.org/02me5cy06 Institut de Biologie du D\u00e9veloppement France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76485.sa1](https://doi.org/10.7554/eLife.76485.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Visualizing functional human profilin in cells and in vitro applications\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, including Alphee Michelot as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Anna Akhmanova as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nYou will see that we easily reached a consensus as our reviews are quite similar. In general, we appreciated the good quality of your work. However, we also found that efforts should be made to better explain how your tools were developed, and why they will be useful for our community in the future. On this last point, it would be useful to discuss concrete examples of future applications. In addition, we found at times a lack of explanation of how the experiments were conducted. Please make an effort to clarify how each experiment was conducted, and ensure that each conclusion written in the text is clearly supported by experiments presented in this work.\n\nFinally, a few additional experiments are suggested by the reviewers, which I believe should be feasible without much difficulty.\n\nReviewer #1 (Recommendations for the authors):\n\nThis work is of great quality but deserves a bit of extra work to correct few issues. Please find below are my suggestions for corrections and improvements.\n\n1. To complete the story and confirm the normal interaction with G-actin, the authors could easily confirm that labeled profilin accelerates nucleotide exchange as well as native profilin.\n\n2. The experiment of Figure S2 is not exactly showing that untagged profilin is unsuitable for conventional anisotropy assays. The reason why anisotropy signals do not change in this experiment is that the fluorescence lifetime of Oregon green is too short for proteins of the size of actin. But I am pretty sure that such experiment would work with longer lifetime fluorophores. KU dyes, for example, sells quite good ones.\n\n3. Could the author clarify whether Oregon-Green Actin is labeled on lysines or Cys374? I could not find this information which is important to analyze the data. If labeling is on lysines, I am fine with it. If labeled on Cys374, how do the authors analyze their data as binding to profilin should be compromised?\n\n4. TIRF movies give the impression of labeled-profilin spots of different sizes, which are often signs of the presence of aggregates. Is this true? Is this due to the TIRF buffer or to the presence of G-actin? What is the gel filtration profile of an mApple-profilin preps?\n\nThe experiment showing the binding of labeled profilin to the barbed ends of actin filaments seems nice and must be difficult to perform. I was wondering if the authors tried to lower the amount of G-actin. With actin filaments elongating more slowly, perhaps such events would be easier to detect. What bothers me here, at 1\u00b5M of G-actin, is that each filament should elongate by about 50 actin subunits in the 5 seconds they detect profilin binding. Therefore, detection at barbed ends should theoretically be impossible at this recording time interval, which makes me wonder if profilin binding in this video is real or just a coincidence.\n\n5. There are things I don't understand in the experiments of Figure 7A. First of all, the authors talk about experiments performed at the \"recommended dilution of JF-646 ligand\", but I could not find what concentration this is. I assume from reading what follows that it is 2 \u00b5M, 1\u00b5M or 100 nM, but I am not sure.\n\nThe authors then evaluate that only 2% of Halo-profilin is labeled at this \"recommended\" concentration. How do they evaluate that? If this is the case, I would expect that further dilution of the JF-646 ligand would result in a decrease in fluorescence intensity but that the overall fluorescence profile would be conserved (unless the dilution was such that single molecules began to be seen which does not seem to be the case). Why isn't it the case? Isn't that rather an indication that a high fraction of JF-646 remains unbound to Halo-profilin above 100 nM?\n\nAt nanomolar concentration, the authors write that Halo-profilin appears localized to the cytoplasm, but I only see clusters in their images (the image of 7A-10 nM does not look very different to me from the image 7B-G118V where the authors talk about aggregates). What are these aggregates in 7A-10 nM?\n\nThe authors mention in the introduction that profilin has been detected on stress fibers. Do the authors have any idea why they can't recapitulate this observation?\n\n6. Any idea why only 60% of the cells show localization of profilin to microtubules?\n\n7. I find that some parts of the discussion repeat much of what is already mentioned in the introduction and Results sections. These parts of the discussion could be removed without affecting the quality of the manuscript. On the other hand, I found that for a manuscript describing new tools, the authors did not take advantage of the discussion to describe potential future applications. This would make the discussion even more exciting and would help less specialized readers see the value of these tools.\n\nReviewer #3 (Recommendations for the authors):\n\nIn this manuscript, Pimm and colleagues report their development of a functional probe that enables in vivo visualization of profilin, a cytoskeletal protein that interacts with both actin and microtubules. Because of its dual impacts on actin and microtubule dynamics, profilin is a critical regulatory hub for cytoskeletal assembly and cellular morphology. Through systematic characterization, the authors find that attachment of a fluorescent protein (or Halo tag) and 10 amino acid linker at the N-terminus of human profilin-1 does not decrease profilin's lipid-, actin-, or poly-L-proline-binding functions, or its ability to influence actin and microtubule assembly. Further, expression of Halo-tagged profilin-1 rescues neuroblastoma cells from profilin-1 knockout-induced morphological and cytoskeletal defects. Finally, the localization of Halo-tagged profilin-1 to microtubule networks in these cells requires an intact tubulin-binding interface but is unaffected by disruption of its actin- or poly-L-proline functions.\n\nThe experiments are well designed, and the data are robust. My suggestions are aimed at clarifying a few questions I had while reading the manuscript. They are included below, in the approximate order in which they appear in the text:\n\n(1) On line 58, the authors write: \"Some profilin outcompetes actin bound to intracellular lipids\u2026\". This sounds very interesting, and I would like to make certain that I understand what this means. Does profilin displace actin that is bound to intracellular lipids?\n\n(2) How was the length of the linker between mApple and profilin selected? I assume that the previous studies that placed a GFP-derived fluorescent protein at profilin's N-terminus (referred to on line 82) did not use such a linker. Do the authors have insight into how sensitive profilin's functions are to the linker length?\n\n(3) The authors state on line 162 that their assays with liposomes demonstrate that profilin and tagged-profilin bind PI(3,5)P2 or PI(4,5)P2 with similar affinity. Have the authors measured this affinity? If not, this interpretation might be a bit too strong, because it is difficult to compare affinities when only a single concentration is assayed. For example, if the lipid binding sites are saturated at this concentration, a change in the binding affinity would not necessarily result in a change in the \"fraction bound\". I would suggest rewording the sentence to emphasize that the fluorescent tag does not disrupt (or preclude) binding of profilin to the two PIP lipids.\n\n(4) On lines 261-263, I think the authors may have meant to say that the TIRF reactions containing profilin had significantly less fluorescence than the control reaction that contained only actin and mDia1. Also, the text states that these reactions were carried out using OG-labeled actin, whereas the figure legend states that the actin was labeled with Alexa 647. My understanding from the Methods section is that the Alexa 647-labeled actin is labeled on lysines, whereas OG-labeled actin is labeled on cysteines. Since the position of the label on the actin has implications for the fluorescence of filaments assembled by formins, this point should be clarified.\n\n(5) On line 273, the authors state that \"in the presence of mDia1, mApple-profilin stimulates actin filament assembly in a manner similar to the untagged protein\". Do the authors mean that both profilins stimulate filament elongation to the same extent? I ask because Figures 4C and 4D reveal that both profilins decrease nucleation compared to what is observed in reaction containing only actin and mDia1.\n\n(6) On line 371, the cell morphology index is defined as \"the ratio of endogenous cell area to other cell conditions for cells plated on micropatterns of the same size\". However, in the legend for Figure S6H, this measurement is described as \"the ratio of cell area to endogenous control cells\". It appears that one of these descriptions might be the inverse of the other. Can the authors specify which description is correct?\n\n(7) Does the morphology index for actin and microtubules report the fraction of the cell area that is occupied by polymerized actin or microtubules? Is this value normalized relative to the cell size or fluorescence intensity (i.e., density of the cytoskeletal network)?\n\n(8) Does the fraction of cells in which profilin associates with microtubules differ between wild-type and Halo-Y6D profilin-expressing cells? The authors state that \"Halo-Y6D shifts profilin toward microtubules\" (line 516), so I am unsure how to interpret the quantification in Figure 7C. Is the difference between the PFN (WT) and Y6D measurements shown in this graph significant?\n\n(9) The effect of profilin on microtubule elongation and stability is striking. Do profilin knockout cells expressing Halo-G118V have altered microtubule morphologies relative to cells in which Halo-profilin-1 is expressed?\n",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "46e12404-9208-42fb-b3ce-7f96fe48404b",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C1",
+      "claim": "Profilin-1 (PFN1) is a cytoskeletal protein that regulates the dynamics of actin and microtubule assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Profilin-1 (PFN1) is a cytoskeletal protein that regulates the dynamics of actin and microtubule assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about PFN1 function that is supported by the subsequent experimental data and citations throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "59071e40-e432-46f5-836a-b0e34f63d6e6",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C2",
+      "claim": "PFN1 is essential for the normal division, motility, and morphology of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, PFN1 is essential for the normal division, motility, and morphology of cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by the cell-based experiments showing morphological and cytoskeletal defects in PFN1-deficient cells (Figure 6).",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "ba5b4b7e-ca9d-49fd-a9be-1f0cf7435f9d",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C3",
+      "claim": "Conventional fusion and direct labeling strategies compromise different facets of PFN1 function.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, conventional fusion and direct labeling strategies compromise different facets of PFN1 function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work and the rationale for developing new tagged versions.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "6b8bc422-1350-4d7c-b747-3971385f227a",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C4",
+      "claim": "The only methods used to determine known PFN1 functions have been indirect and often deduced in cell-free biochemical assays.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, the only methods used to determine known PFN1 functions have been indirect and often deduced in cell-free biochemical assays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the literature review in the introduction and citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "845ccd6a-edb5-4684-8fa9-b8e31b322d23",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C5",
+      "claim": "Two genetically encoded versions of tagged PFN1 (Halo-PFN1 and mApple-PFN1) behave identical to each other and the tag-free protein.",
+      "claim_type": "EXPLICIT",
+      "source": "We engineered and characterized two genetically encoded versions of tagged PFN1 that behave identical to each other and the tag-free protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple biochemical assays comparing tagged and untagged proteins (Figures 2-5).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "8246778f-c7c4-4c32-96c7-f416506a24d4",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C6",
+      "claim": "Purified mAp-PFN1 binds to phosphoinositide lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "In biochemical assays purified proteins bind to phosphoinositide lipids, catalyze nucleotide exchange on actin monomers, stimulate formin-mediated actin filament assembly, and bound tubulin dimers (kD = 1.89 \u00b5M) to impact microtubule dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by liposome pelleting assays shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "032c0443-d256-4dc6-9789-3cfa9d45d063",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C7",
+      "claim": "Purified mAp-PFN1 catalyzes nucleotide exchange on actin monomers.",
+      "claim_type": "EXPLICIT",
+      "source": "In biochemical assays purified proteins bind to phosphoinositide lipids, catalyze nucleotide exchange on actin monomers, stimulate formin-mediated actin filament assembly, and bound tubulin dimers (kD = 1.89 \u00b5M) to impact microtubule dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by time-resolved fluorescence polarization assays shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "6593dfbd-cba9-49ff-b7eb-864eceebb1bc",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C8",
+      "claim": "Purified mAp-PFN1 stimulates formin-mediated actin filament assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "In biochemical assays purified proteins bind to phosphoinositide lipids, catalyze nucleotide exchange on actin monomers, stimulate formin-mediated actin filament assembly, and bound tubulin dimers (kD = 1.89 \u00b5M) to impact microtubule dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by bulk fluorescence and TIRF microscopy assays shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "847714f0-f372-4826-a35e-a701d58ab3ea",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C9",
+      "claim": "mAp-PFN1 bound tubulin dimers with a kD of 1.89 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "In biochemical assays purified proteins bind to phosphoinositide lipids, catalyze nucleotide exchange on actin monomers, stimulate formin-mediated actin filament assembly, and bound tubulin dimers (kD = 1.89 \u00b5M) to impact microtubule dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by fluorescence polarization assays shown in Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "5dd5cee3-d733-4cb3-837c-382d089355c5",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C10",
+      "claim": "mAp-PFN1 impacts microtubule dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "In biochemical assays purified proteins bind to phosphoinositide lipids, catalyze nucleotide exchange on actin monomers, stimulate formin-mediated actin filament assembly, and bound tubulin dimers (kD = 1.89 \u00b5M) to impact microtubule dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by TIRF microscopy assays of microtubule polymerization shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "053015d0-7dec-4736-a9fd-a226efe83486",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C11",
+      "claim": "In PFN1-deficient mammalian cells, Halo-PFN1 or mApple-PFN1 restored morphological and cytoskeletal functions.",
+      "claim_type": "EXPLICIT",
+      "source": "In PFN1-deficient mammalian cells, Halo-PFN1 or mApple-PFN1 (mAp-PEN1) restored morphological and cytoskeletal functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cell morphology and cytoskeletal imaging experiments shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "ada83aeb-7659-4e05-88cb-10200d46393f",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C12",
+      "claim": "Titrations of self-labeling Halo-ligands were used to visualize molecules of PFN1.",
+      "claim_type": "EXPLICIT",
+      "source": "Titrations of self-labeling Halo-ligands were used to visualize molecules of PFN1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the live-cell imaging experiments shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "ad9481f8-c242-4ee9-bf95-5ff65ff37433",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C13",
+      "claim": "Function-disrupting point-mutants (Y6D and R88E) revealed PFN1 bound to microtubules in live cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach combined with specific function-disrupting point-mutants (Y6D and R88E) revealed PFN1 bound to microtubules in live cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by live-cell imaging of mutant PFN1 shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "6450882d-6bb0-4e60-b6bb-f70558efd626",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C14",
+      "claim": "Cells expressing the ALS-associated G118V disease variant did not associate with actin filaments or microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells expressing the ALS-associated G118V disease variant did not associate with actin filaments or microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by live-cell imaging and quantification shown in Figures 7 and 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "86633d5d-32a0-4be9-ba5e-0dc152fdd971",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C15",
+      "claim": "PFN1 maintains cellular reserves of unassembled actin monomers.",
+      "claim_type": "EXPLICIT",
+      "source": "It maintains cellular reserves of unassembled actin monomers, catalyzes nucleotide exchange, and sterically inhibits new filament formation (Goldschmidt-Clermont et al., 1992; Kaiser et al., 1999; Wolven et al., 2000; Suarez et al., 2015; Pimm et al., 2020; Colombo et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "3f48ef88-a83f-43fd-894d-8dad93e4f009",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C16",
+      "claim": "PFN1 catalyzes nucleotide exchange on actin monomers.",
+      "claim_type": "EXPLICIT",
+      "source": "It maintains cellular reserves of unassembled actin monomers, catalyzes nucleotide exchange, and sterically inhibits new filament formation (Goldschmidt-Clermont et al., 1992; Kaiser et al., 1999; Wolven et al., 2000; Suarez et al., 2015; Pimm et al., 2020; Colombo et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work and experimental data in Figure 3C.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "eea205da-d104-4e84-a6bf-8442d65ddee3",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C17",
+      "claim": "PFN1 sterically inhibits new actin filament formation.",
+      "claim_type": "EXPLICIT",
+      "source": "It maintains cellular reserves of unassembled actin monomers, catalyzes nucleotide exchange, and sterically inhibits new filament formation (Goldschmidt-Clermont et al., 1992; Kaiser et al., 1999; Wolven et al., 2000; Suarez et al., 2015; Pimm et al., 2020; Colombo et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work and experimental data in Figure 3.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "e586cd81-7770-48fb-b441-89531a7c9ccc",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C18",
+      "claim": "PFN1 can drastically stimulate actin assembly when paired with certain PLP-containing ligands (e.g. formins or Ena/VASP).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, PFN1 can drastically stimulate actin assembly when paired with certain PLP-containing ligands (e.g. formins or Ena/VASP) (Manchester, 1998; Romero et al., 2004; Kovar et al., 2006; Breitsprecher and Goode, 2013; Henty-Ridilla and Goode, 2015; Funk et al., 2019; Zweifel and Courtemanche, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work and experimental data in Figure 4.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "9f37ab12-1650-4473-8ee9-44a49ea5c530",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C19",
+      "claim": "Competitive interactions between PFN1, actin monomers, and PIP lipids transmit cellular signals from the plasma membrane to distinct intracellular vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "Competitive interactions between PFN1, actin monomers, and PIP lipids transmit cellular signals from the plasma membrane to distinct intracellular vesicles (Lassing and Lindberg, 1985; Davey and Moens, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "01a484a1-84ac-439d-912e-21613c4915d3",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C20",
+      "claim": "PFN1 directly impacts microtubule organization and polymerization.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, PFN1 directly impacts microtubule organization and polymerization (Nejedl\u00e1 et al., 2021; Nejedla et al., 2016; Henty-Ridilla et al., 2017; Pimm and Henty-Ridilla, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work and experimental data in Figure 5.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "e9ac9432-4be9-4819-9e63-630011cca739",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C21",
+      "claim": "Conventional protein tagging strategies using a GFP-derived fluorescent tag on the C- or N-terminus impede PFN1 interactions with PIP lipids or PLP-containing ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "Conventional protein tagging strategies using a GFP-derived fluorescent tag on the C- or N-terminus impede PFN1 interactions with PIP lipids or PLP-containing ligands (Wittenmayer et al., 2000; Davey and Moens, 2020; Pimm et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "7db2b42c-9552-4e23-ac7a-949892468b22",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C22",
+      "claim": "Moving the fluorescent tag to a protruding loop in PFN1 restores interactions with PIP lipids and PLP-containing ligands but compromises full actin-binding capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "Moving the fluorescent tag to a protruding loop in PFN1 restores these interactions, unfortunately compromising full actin-binding capacity (Nejedla et al., 2017; Karlsson and Dr\u00e1ber, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "407d0fce-015d-4be8-b45c-6ea0e3a56ad9",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C24",
+      "claim": "Anti-PFN1 antibodies unambiguously localize PFN1 to stable cytoskeletal structures (i.e. stress fibers, the microtubules, and nuclear components) in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This technique unambiguously localizes PFN1 to stable cytoskeletal structures (i.e. stress fibers, the microtubules, and nuclear components) in cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work using immunofluorescence.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "246e3e31-0d9c-42ec-ae5b-11183b40f5cf",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C25",
+      "claim": "Antibody staining of fixed cells obscures the spatiotemporal details required to measure the flux or dynamics of cellular pools of PFN1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it obscures the spatiotemporal details required to measure the flux or dynamics of cellular pools of PFN1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the limitations of fixed-cell imaging.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "33102929-1759-4555-a7be-f7467c7dd080",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C26",
+      "claim": "mAp-PFN1 was chosen over standard fluorescent proteins (e.g. GFP) because it is bright, relatively stable, and avoids overlap with the excitation and emission ranges of well-characterized actin-labels used in biochemical assays.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose the mApple probe over standard fluorescent proteins (e.g. GFP) because it is bright, relatively stable, and avoids overlap with the excitation and emission ranges of well-characterized actin-labels used in biochemical assays (e.g. Oregon-Green; OG, and pyrene-labeled actin; Shaner et al., 2008; Bindels et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations about mApple properties and the experimental design.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "fb79dbe9-fcd3-476d-9448-bf96fca59f4c",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C27",
+      "claim": "The tag-free and tagged versions of PFN1 were of the expected size and highly pure.",
+      "claim_type": "EXPLICIT",
+      "source": "SDS-PAGE and gel filtration analyses revealed that the tag-free and tagged versions were of the expected size and highly pure (Figure 1D and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the SDS-PAGE gel and gel filtration data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "be1ea2c8-1718-4ddd-a783-40041a68e244",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C28",
+      "claim": "PFN1 binds numerous PIP lipids through two different surfaces that overlap with either the actin- or PLP-binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "PFN1 binds numerous PIP lipids through two different surfaces that overlap with either the actin- or PLP-binding sites (Figure 1B; Hartwig et al., 1989; Lambrechts et al., 2002; Skare and Karlsson, 2002; Ferron et al., 2007; Nejedla et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to previous structural work and the structural diagram in Figure 1B.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "7aa70934-7f6b-4b80-8c91-b845df2fa64f",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C29",
+      "claim": "PFN1-PI(4,5)P2 interactions inhibit actin polymerization to regulate the morphology of the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "PFN1-PI(4,5)P2 interactions inhibit actin polymerization to regulate the morphology of the plasma membrane (Niggli, 2005; Davey and Moens, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "3b7f720c-6f36-4077-969b-8e9ac25d8d5d",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C30",
+      "claim": "PFN1-PI(3,5)P2 interactions facilitate trafficking of late endosomes to the lysosome.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, PFN1-PI(3,5)P2 interactions facilitate trafficking of late endosomes to the lysosome (Goldschmidt-Clermont et al., 1990; Martys et al., 1996; Dong et al., 2000; Hong et al., 2015; De Craene et al., 2017; Hasegawa et al., 2017; Wallroth and Haucke, 2018; Lees et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "6961d4be-5724-4947-9079-b89912a72480",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C31",
+      "claim": "mAp-PFN1 and untagged PFN1 were detected bound to either PI(3,5)P2- or PI(4,5)P2-containing liposomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected mAp-PFN1 and untagged PFN1 bound to either PI(3,5)P2- or PI(4,5)P2-containing liposomes via Western blots using PFN1-specific antibodies (Figure 2B-E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the Western blot data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "3f87614b-7bb1-45bf-ae94-eadf532610b9",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C32",
+      "claim": "Untagged PFN1 was detected in pellets containing phosphatidylserine (control) or either PI(3,5)P2 or PI(4,5)P2 lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "Untagged PFN1 was detected in pellets containing phosphatidylserine (control) or either PI(3,5)P2 or PI(4,5)P2 lipids (Figure 2B-D), but did not pellet without liposomes (buffer alone).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the Western blot data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "5cad601d-b973-4889-a50d-8d8adf444875",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C33",
+      "claim": "Untagged PFN1 did not pellet without liposomes (buffer alone).",
+      "claim_type": "EXPLICIT",
+      "source": "Untagged PFN1 was detected in pellets containing phosphatidylserine (control) or either PI(3,5)P2 or PI(4,5)P2 lipids (Figure 2B-D), but did not pellet without liposomes (buffer alone).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the Western blot data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "6788817a-1535-48d6-9414-a75d41ecb27a",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C34",
+      "claim": "mAp-PFN1 binds either PI(3,5)P2 or PI(4,5)P2 similar to tag-free PFN1.",
+      "claim_type": "EXPLICIT",
+      "source": "Blot densitometry confirmed that mAp-PFN1 binds either PI(3,5)P2 or PI(4,5)P2 similar to tag-free PFN1 (Figure 2D, E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the densitometry quantification shown in Figure 2D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "03dcf422-03bd-4bb0-a707-13083a788aa4",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C35",
+      "claim": "PFN1 is a high affinity (kD = 0.1 \u00b5M) actin monomer binding protein.",
+      "claim_type": "EXPLICIT",
+      "source": "PFN1 is a well-characterized, high affinity (kD = 0.1 \u00b5M) actin monomer binding protein that catalyzes nucleotide exchange and suppresses actin filament nucleation (Mockrin and Korn, 1980; Goldschmidt-Clermont et al., 1992; Eads et al., 1998; Vinson et al., 1998; Wolven et al., 2000; Wen et al., 2008; Blanchoin et al., 2014; Colombo et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "6a9e9644-b7d3-47dd-9beb-ffe890aa99f9",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C36",
+      "claim": "No change in polarization was detected in reactions that contained untagged PFN1 and OG-labeled actin monomers.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous reports, we were unable to detect a change in polarization in reactions that contained untagged PFN1 and OG-labeled actin monomers (Figure 3\u2014figure supplement 1A; Vinson et al., 1998; Kaiser et al., 1999).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the fluorescence polarization data shown in Figure 3\u2014figure supplement 1A and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "d5732f69-18a9-43a3-a108-0f65d5ea19e0",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C37",
+      "claim": "The lack of polarization change with OG-labeled actin is likely due to the short lifetime of the probe.",
+      "claim_type": "EXPLICIT",
+      "source": "This is likely due to the short lifetime of the probe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the properties of the fluorescent probe.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "0328b860-9192-4d3a-9c55-7c056b7103bd",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C38",
+      "claim": "Thymosin \u03b24 (T\u03b24) and PFN1 compete to bind actin monomers.",
+      "claim_type": "EXPLICIT",
+      "source": "However, several studies demonstrate that Thymosin \u03b24 (T\u03b24) and PFN1 compete to bind actin monomers (Goldschmidt-Clermont et al., 1992; Aguda et al., 2006; Xue et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "ce627de5-b913-4a7b-a2c0-f40beaa5cc39",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C39",
+      "claim": "GFP-T\u03b24 bound actin with a kD of 5.4 \u00b1 1.2 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "After confirming that GFP-T\u03b24 bound actin (kD = 5.4 \u00b1 1.2 nM; Figure 3A), we used competitive binding assays to measure the affinity of each PFN1 for actin monomers (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the fluorescence polarization data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "13a7cf10-5ddf-4f64-ac94-413eb191b655",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C40",
+      "claim": "PFN1 bound actin monomers with a kD of 99.6 \u00b1 5.1 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Each protein bound actin monomers with similar affinity (PFN1: kD = 99.6 \u00b1 5.1 nM or mAp-PFN1: kD = 101.9 \u00b1 6.5 nM; Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the competitive fluorescence polarization data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "a556ed66-99f3-4d4e-9a1c-815f1522e656",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C41",
+      "claim": "mAp-PFN1 bound actin monomers with a kD of 101.9 \u00b1 6.5 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Each protein bound actin monomers with similar affinity (PFN1: kD = 99.6 \u00b1 5.1 nM or mAp-PFN1: kD = 101.9 \u00b1 6.5 nM; Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the competitive fluorescence polarization data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "f7fc71cf-53c4-4bd6-acdf-6383ccc22229",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C42",
+      "claim": "The measured kD values are similar to those measured from direct binding assays (kD = 105.2 \u00b1 26.9 nM).",
+      "claim_type": "EXPLICIT",
+      "source": "These values are similar to those measured from direct binding assays (kD = 105.2 \u00b1 26.9 nM; Figure 3\u2014figure supplement 1B; Wen et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the direct binding data shown in Figure 3\u2014figure supplement 1B and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "909b136b-0038-4918-b32d-3440f290a982",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C43",
+      "claim": "PFN1 catalyzed nucleotide exchange on actin monomers at a rate of k = 18.7 \u00b1 7.5 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Each PFN1 catalyzed and accelerated the nucleotide exchange on actin monomers at similar rates (p=0.1; ANOVA) (PFN1: k = 18.7 \u00b1 7.5 nM or mAp-PFN1: k = 13.2 \u00b1 9.7 nM), but were accelerated compared to control reactions lacking either PFN1 (actin alone: k = 514.3 \u00b1 61.6 nM) (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the time-resolved fluorescence polarization data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "22520484-7324-476e-98c8-6cb286f39ee8",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C44",
+      "claim": "mAp-PFN1 catalyzed nucleotide exchange on actin monomers at a rate of k = 13.2 \u00b1 9.7 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Each PFN1 catalyzed and accelerated the nucleotide exchange on actin monomers at similar rates (p=0.1; ANOVA) (PFN1: k = 18.7 \u00b1 7.5 nM or mAp-PFN1: k = 13.2 \u00b1 9.7 nM), but were accelerated compared to control reactions lacking either PFN1 (actin alone: k = 514.3 \u00b1 61.6 nM) (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the time-resolved fluorescence polarization data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "0b694595-3683-45c8-8e7b-65d4b37a7203",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C45",
+      "claim": "Control reactions lacking PFN1 had a nucleotide exchange rate of k = 514.3 \u00b1 61.6 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Each PFN1 catalyzed and accelerated the nucleotide exchange on actin monomers at similar rates (p=0.1; ANOVA) (PFN1: k = 18.7 \u00b1 7.5 nM or mAp-PFN1: k = 13.2 \u00b1 9.7 nM), but were accelerated compared to control reactions lacking either PFN1 (actin alone: k = 514.3 \u00b1 61.6 nM) (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the time-resolved fluorescence polarization data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "7ae3705c-a5d5-45c0-8900-b38d806739b5",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C46",
+      "claim": "Less total actin polymer was made in the presence of either PFN1 protein compared to the actin alone control.",
+      "claim_type": "EXPLICIT",
+      "source": "Less total actin polymer was made in the presence of either protein compared to the actin alone control (Figure 3D), demonstrating that both versions of PFN1 inhibit the spontaneous assembly of actin filaments.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the bulk pyrene fluorescence data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "a9e4de00-77ad-410a-a0e7-75cddda346dd",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C47",
+      "claim": "Both versions of PFN1 inhibit the spontaneous assembly of actin filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "Less total actin polymer was made in the presence of either protein compared to the actin alone control (Figure 3D), demonstrating that both versions of PFN1 inhibit the spontaneous assembly of actin filaments.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the bulk pyrene fluorescence data shown in Figure 3D and TIRF microscopy data in Figure 3E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "f3300802-48de-48cc-93e7-c6d9634dbe85",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C48",
+      "claim": "Reactions lacking PFN1 (actin alone) had an average of 45.3 \u00b1 1.4 filaments per field of view.",
+      "claim_type": "EXPLICIT",
+      "source": "Reactions lacking PFN1 (actin alone), had an average of 45.3 \u00b1 1.4 filaments per field of view (Figure 3E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the TIRF microscopy data shown in Figure 3E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "9d9ece2b-e411-4838-b592-09e8921dcf62",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C49",
+      "claim": "Reactions supplemented with PFN1 had 21.5 \u00b1 3.4 filaments per field of view.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, there were significantly fewer actin filaments in reactions supplemented with either PFN1 (21.5 \u00b1 3.4 filaments) or mAp-PFN1 (19.8 \u00b1 2.9 filaments; Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the TIRF microscopy data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "50f86365-e5f8-4c04-b121-179582273d56",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C50",
+      "claim": "Reactions supplemented with mAp-PFN1 had 19.8 \u00b1 2.9 filaments per field of view.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, there were significantly fewer actin filaments in reactions supplemented with either PFN1 (21.5 \u00b1 3.4 filaments) or mAp-PFN1 (19.8 \u00b1 2.9 filaments; Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the TIRF microscopy data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "738dd1a1-f7c6-457f-a236-70596e62be20",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C51",
+      "claim": "Neither PFN1 nor mAp-PFN1 substantially changed the mean elongation rate of actin filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, neither protein substantially changed the mean elongation rate of actin filaments (control: 10.07 \u00b1 0.16 subunits s\u20131 \u00b5M\u20131; PFN1: 10.07 \u00b1 0.16 subunits s\u20131 \u00b5M\u20131; mAp-PFN1: 10.05 \u00b1 0.16 subunits s\u20131 \u00b5M\u20131; Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the TIRF microscopy data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "3a923fbe-4bab-4cf7-b8a3-e68d3ecc776a",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C52",
+      "claim": "Control actin filaments elongated at 10.07 \u00b1 0.16 subunits s\u20131 \u00b5M\u20131.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, neither protein substantially changed the mean elongation rate of actin filaments (control: 10.07 \u00b1 0.16 subunits s\u20131 \u00b5M\u20131; PFN1: 10.07 \u00b1 0.16 subunits s\u20131 \u00b5M\u20131; mAp-PFN1: 10.05 \u00b1 0.16 subunits s\u20131 \u00b5M\u20131; Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the TIRF microscopy data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "f4883707-88b0-47a6-ab11-b08c739cc0fa",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C53",
+      "claim": "Actin filaments in the presence of PFN1 elongated at 10.07 \u00b1 0.16 subunits s\u20131 \u00b5M\u20131.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, neither protein substantially changed the mean elongation rate of actin filaments (control: 10.07 \u00b1 0.16 subunits s\u20131 \u00b5M\u20131; PFN1: 10.07 \u00b1 0.16 subunits s\u20131 \u00b5M\u20131; mAp-PFN1: 10.05 \u00b1 0.16 subunits s\u20131 \u00b5M\u20131; Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the TIRF microscopy data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "5a03820d-c518-47e6-8425-045010404f0c",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C54",
+      "claim": "Actin filaments in the presence of mAp-PFN1 elongated at 10.05 \u00b1 0.16 subunits s\u20131 \u00b5M\u20131.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, neither protein substantially changed the mean elongation rate of actin filaments (control: 10.07 \u00b1 0.16 subunits s\u20131 \u00b5M\u20131; PFN1: 10.07 \u00b1 0.16 subunits s\u20131 \u00b5M\u20131; mAp-PFN1: 10.05 \u00b1 0.16 subunits s\u20131 \u00b5M\u20131; Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the TIRF microscopy data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "870167fa-387a-44cb-be47-f46dc4ad77aa",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C55",
+      "claim": "PFN1 is thought to bind to the fast-growing plus-ends of actin filaments at high concentrations (KD >20 \u00b5M).",
+      "claim_type": "EXPLICIT",
+      "source": "PFN1 is thought to bind to the fast-growing plus-ends of actin filaments at high concentrations (KD >20 \u00b5M; J\u00e9gou et al., 2011; Courtemanche and Pollard, 2013; Pernier et al., 2016; Funk et al., 2019; Zweifel and Courtemanche, 2020; Zweifel et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "975d71ff-552e-463c-9cbb-3054ffe90af6",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C56",
+      "claim": "Few (<25 total) transient (>5 s) plus-end localization events of mAp-PFN1 were observed on actin filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed few (<25 total) transient (>5 s) plus-end localization events (Figure 3\u2014figure supplement 2A-D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the two-color TIRF microscopy data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "08afd520-b284-4f40-a9d2-3568ade35062",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C57",
+      "claim": "mAp-PFN1 is equivalent to PFN1 for binding to actin monomers, catalyzing nucleotide exchange, and suppressing spontaneous actin assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, these data demonstrate that mAp-PFN1 is equivalent to PFN1 for binding to actin monomers, catalyzing nucleotide exchange, and suppressing spontaneous actin assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement supported by the data in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "52e65e7c-d77c-4fbb-aa53-6e6f3a0dbc37",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C58",
+      "claim": "Total actin filament polymerization reached similar levels in the presence of PFN1 or mAp-PFN1.",
+      "claim_type": "EXPLICIT",
+      "source": "Total actin filament polymerization reached similar levels in the presence of PFN1 or mAp-PFN1 (Figures 3D and 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the bulk pyrene fluorescence data shown in Figures 3D and 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "0e1b9061-afd7-4839-b3e7-df0d5ad8ab17",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C59",
+      "claim": "Actin filaments assembled with the constitutively active formin mDia1(FH1-C) and either protein resulted in a strong enhancement in actin polymerization.",
+      "claim_type": "EXPLICIT",
+      "source": "Actin filaments assembled with the constitutively active formin mDia1(FH1-C) and either protein resulted in a strong enhancement in actin polymerization (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the bulk pyrene fluorescence data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "cc8eedb6-7977-4e21-8ef3-37b8cd6c9a55",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C60",
+      "claim": "TIRF reactions containing actin and mDia1(FH1-C) had an average of 659.3 \u00b1 98.3 filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "TIRF reactions containing actin and mDia1(FH1-C) had an average of 659.3 \u00b1 98.3 filaments, which was significantly higher (p=0.014, ANOVA) than control reactions lacking formin or either PFN1 (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the TIRF microscopy data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "563783d4-2416-4e78-9ac8-41708ced1b6c",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C61",
+      "claim": "Reactions containing formin and tag-free PFN1 had 42.7 \u00b1 9.8 filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous reports that PFN1 also suppresses formin nucleation, reactions containing formin and either tag-free (42.7 \u00b1 9.8 filaments) or mAp-PFN1 (48.3 \u00b1 14.5 filaments) had statistically fewer filaments than control reactions containing formin and actin (p=0.0004, ANOVA) (Kovar et al., 2006; Breitsprecher et al., 2012; Henty-Ridilla et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the TIRF microscopy data shown in Figure 4D and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "7d2dd3a3-46af-4148-b11b-be3f0c2dd3c6",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C62",
+      "claim": "Reactions containing formin and mAp-PFN1 had 48.3 \u00b1 14.5 filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous reports that PFN1 also suppresses formin nucleation, reactions containing formin and either tag-free (42.7 \u00b1 9.8 filaments) or mAp-PFN1 (48.3 \u00b1 14.5 filaments) had statistically fewer filaments than control reactions containing formin and actin (p=0.0004, ANOVA) (Kovar et al., 2006; Breitsprecher et al., 2012; Henty-Ridilla et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the TIRF microscopy data shown in Figure 4D and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "c51adbc1-9b27-48f5-8282-054959fa12da",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C63",
+      "claim": "PFN1 suppresses formin nucleation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous reports that PFN1 also suppresses formin nucleation, reactions containing formin and either tag-free (42.7 \u00b1 9.8 filaments) or mAp-PFN1 (48.3 \u00b1 14.5 filaments) had statistically fewer filaments than control reactions containing formin and actin (p=0.0004, ANOVA) (Kovar et al., 2006; Breitsprecher et al., 2012; Henty-Ridilla et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the TIRF microscopy data shown in Figure 4D and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "a36800f4-48c7-49b8-8ec5-2a358a2c2724",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C64",
+      "claim": "Actin filaments elongated at two different speeds that correspond to unassisted growth (10.1 \u00b1 0.4 subunits s\u20131 \u00b5M\u20131) and mDia1(FH1-C)-assisted growth in the presence of PFN1.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured actin filaments elongating at two different speeds that correspond to the recorded rates of unassisted growth (10.1 \u00b1 0.4 subunits s\u20131 \u00b5M\u20131) and mDia1(FH1-C)-assisted growth in the presence of PFN1 (PFN1: 42.7 \u00b1 9.8 subunits s\u20131 \u00b5M\u20131; or mAp-PFN1: 48.3 \u00b1 14.5 subunits s\u20131 \u00b5M\u20131) (Kovar et al., 2006; Henty-Ridilla et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the TIRF microscopy data shown in Figure 4E and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "dd2315ed-472e-4821-980d-75794250b4aa",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C65",
+      "claim": "mDia1(FH1-C)-assisted actin filament growth in the presence of PFN1 occurred at 42.7 \u00b1 9.8 subunits s\u20131 \u00b5M\u20131.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured actin filaments elongating at two different speeds that correspond to the recorded rates of unassisted growth (10.1 \u00b1 0.4 subunits s\u20131 \u00b5M\u20131) and mDia1(FH1-C)-assisted growth in the presence of PFN1 (PFN1: 42.7 \u00b1 9.8 subunits s\u20131 \u00b5M\u20131; or mAp-PFN1: 48.3 \u00b1 14.5 subunits s\u20131 \u00b5M\u20131) (Kovar et al., 2006; Henty-Ridilla et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the TIRF microscopy data shown in Figure 4E and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "1208e400-8618-4159-8738-08c8d6ece8dd",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C66",
+      "claim": "mDia1(FH1-C)-assisted actin filament growth in the presence of mAp-PFN1 occurred at 48.3 \u00b1 14.5 subunits s\u20131 \u00b5M\u20131.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured actin filaments elongating at two different speeds that correspond to the recorded rates of unassisted growth (10.1 \u00b1 0.4 subunits s\u20131 \u00b5M\u20131) and mDia1(FH1-C)-assisted growth in the presence of PFN1 (PFN1: 42.7 \u00b1 9.8 subunits s\u20131 \u00b5M\u20131; or mAp-PFN1: 48.3 \u00b1 14.5 subunits s\u20131 \u00b5M\u20131) (Kovar et al., 2006; Henty-Ridilla et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the TIRF microscopy data shown in Figure 4E and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "5a14b44b-c563-44c9-9f00-76065d22b2cd",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C67",
+      "claim": "PFN1 and mAp-PFN1 stimulate formin-based actin assembly to comparable levels.",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrate that PFN1 and mAp-PFN1 stimulate formin-based actin assembly to comparable levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement supported by the data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "5481b35a-19b4-4f34-9111-1615cebdd7f5",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C68",
+      "claim": "Microtubules in control reactions polymerized at an average rate of 1.9 \u00b1 0.2 \u00b5m\u20131 min\u20131.",
+      "claim_type": "EXPLICIT",
+      "source": "Microtubules in control reactions polymerized at an average rate of 1.9 \u00b1 0.2 \u00b5m\u20131 min\u20131 (Figure 5B\u2013C), whereas microtubules polymerized in the presence of either PFN1 grew at rates ~6 fold faster (PFN1: 12.7 \u00b1 0.3 \u00b5m\u20131 min\u20131; mAp-PFN1: 12.6 \u00b1 0.4 \u00b5m\u20131 min\u20131; Figure 5B, C; p<0.0001, ANOVA).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the TIRF microscopy data shown in Figure 5B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "01eef98a-349a-46d0-9f57-df18069d950e",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C69",
+      "claim": "Microtubules polymerized in the presence of PFN1 grew at rates of 12.7 \u00b1 0.3 \u00b5m\u20131 min\u20131.",
+      "claim_type": "EXPLICIT",
+      "source": "Microtubules in control reactions polymerized at an average rate of 1.9 \u00b1 0.2 \u00b5m\u20131 min\u20131 (Figure 5B\u2013C), whereas microtubules polymerized in the presence of either PFN1 grew at rates ~6 fold faster (PFN1: 12.7 \u00b1 0.3 \u00b5m\u20131 min\u20131; mAp-PFN1: 12.6 \u00b1 0.4 \u00b5m\u20131 min\u20131; Figure 5B, C; p<0.0001, ANOVA).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the TIRF microscopy data shown in Figure 5B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "b28681c7-a47d-4d44-bce3-546d9052243b",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C70",
+      "claim": "Microtubules polymerized in the presence of mAp-PFN1 grew at rates of 12.6 \u00b1 0.4 \u00b5m\u20131 min\u20131.",
+      "claim_type": "EXPLICIT",
+      "source": "Microtubules in control reactions polymerized at an average rate of 1.9 \u00b1 0.2 \u00b5m\u20131 min\u20131 (Figure 5B\u2013C), whereas microtubules polymerized in the presence of either PFN1 grew at rates ~6 fold faster (PFN1: 12.7 \u00b1 0.3 \u00b5m\u20131 min\u20131; mAp-PFN1: 12.6 \u00b1 0.4 \u00b5m\u20131 min\u20131; Figure 5B, C; p<0.0001, ANOVA).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the TIRF microscopy data shown in Figure 5B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "dd6a557f-fe52-4243-9ec1-df16a63a87ce",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C71",
+      "claim": "Reactions performed in the presence of either PFN1 had significantly longer microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with elevated microtubule growth rates, reactions performed in the presence of either PFN1 had significantly longer microtubules (Figure 5D; p<0.0001, ANOVA) that displayed more stable growth behaviors (Figure 5E; p<0.0001, ANOVA).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the TIRF microscopy data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "d530bb6e-fdcd-4568-9dd2-476688756e03",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C72",
+      "claim": "Microtubules in the presence of either PFN1 displayed more stable growth behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with elevated microtubule growth rates, reactions performed in the presence of either PFN1 had significantly longer microtubules (Figure 5D; p<0.0001, ANOVA) that displayed more stable growth behaviors (Figure 5E; p<0.0001, ANOVA).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the TIRF microscopy data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "8c8a6561-1cf9-4a23-9881-9d58a50f26f8",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C73",
+      "claim": "Reactions containing either PFN1 had more microtubules than controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Reactions containing either PFN1 had more microtubules than controls (Figure 5F; p=0.0048, ANOVA).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the TIRF microscopy data shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "5dfb785a-b047-4f61-bf6a-f3a09700f1e2",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C74",
+      "claim": "mAp-PFN1 binds unlabeled tubulin dimers with a kD of 1.89 \u00b1 0.28 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "To test for a direct interaction between mAp-PFN1 and unlabeled tubulin dimers, we performed fluorescence polarization (kD = 1.89 \u00b1 0.28 \u00b5M) (Figure 5G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the fluorescence polarization data shown in Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "19fc8aeb-067c-4e40-a60b-8cc525e670ac",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C75",
+      "claim": "The affinity of mAp-PFN1 for tubulin dimers is 5.9-fold stronger than its affinity for polymerized microtubules (kD = ~10 \u00b5M).",
+      "claim_type": "EXPLICIT",
+      "source": "This affinity is 5.9-fold stronger than its affinity for polymerized microtubules (kD = ~10 \u00b5M) (Henty-Ridilla et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to a previously published value.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "d2eded10-3ad6-4277-93df-7c15f58f95f6",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C76",
+      "claim": "mAp-PFN1 localized to the side of growing microtubules rather than decorating plus-ends.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather than decorating plus-ends, mAp-PFN1 localized to the side of growing microtubules (Figure 5H\u2013I and Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the TIRF microscopy data shown in Figure 5H-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "45df7b64-e6a5-47e2-970f-99d21f75d691",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C77",
+      "claim": "Side-bound mAp-PFN1 molecules appear to diffuse along the microtubule lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "Side-bound mAp-PFN1 molecules appear to diffuse along the microtubule lattice (Figure 5J and Figure 5\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the TIRF microscopy data shown in Figure 5J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "9e922902-59a1-4365-885e-46cb2e7fc2ca",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C78",
+      "claim": "mAp-PFN1 and PFN1 are equivalent regulators of microtubule dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, mAp-PFN1 and PFN1 are equivalent regulators of microtubule dynamics, and promote assembly by direct interactions with dimers and the microtubule lattice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement supported by the data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "460f1dd4-d0ac-4662-a799-64dab96e991d",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C79",
+      "claim": "mAp-PFN1 and PFN1 promote microtubule assembly by direct interactions with dimers and the microtubule lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, mAp-PFN1 and PFN1 are equivalent regulators of microtubule dynamics, and promote assembly by direct interactions with dimers and the microtubule lattice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement supported by the data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "a6892d83-9dfb-491a-b5b4-664096f0698d",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C80",
+      "claim": "Mutations in PFN1 are associated with amyotrophic lateral sclerosis (ALS).",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in PFN1 are associated with neurodegenerative disease, including amyotrophic lateral sclerosis (ALS; Wu et al., 2012; Murk et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "7174a4d7-1386-404c-82b7-8915bdb60f66",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C81",
+      "claim": "Two clonal CRISPR/Cas9 knockout lines (PFN1(-/-)) were generated in immortalized neuroblastoma-2a (N2a) cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we generated and confirmed two clonal CRISPR/Cas9 knockout lines (PFN1(-/-)) in immortalized neuroblastoma-2a (N2a) cells (Figure 6A and Figure 6\u2014figure supplement 1A-C) that have been successfully used to model features of ALS (De Vos, 2007; Vance et al., 2009; Coussee et al., 2011; Henty-Ridilla et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the Western blot data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "c2ecb516-f4b9-4eb8-89ae-a9e7771b9b87",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C82",
+      "claim": "N2a cells have been successfully used to model features of ALS.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we generated and confirmed two clonal CRISPR/Cas9 knockout lines (PFN1(-/-)) in immortalized neuroblastoma-2a (N2a) cells (Figure 6A and Figure 6\u2014figure supplement 1A-C) that have been successfully used to model features of ALS (De Vos, 2007; Vance et al., 2009; Coussee et al., 2011; Henty-Ridilla et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "69fcf481-f13b-4cc8-8cb5-ccb14c6e9eb3",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C83",
+      "claim": "PFN1 deficient cell lines did not proliferate as efficiently as endogenous controls.",
+      "claim_type": "EXPLICIT",
+      "source": "PFN1 deficient cell lines did not proliferate as efficiently as endogenous controls (Figure 6B), consistent with previously reported cell cycle defects (Suetsugu et al., 1998; Witke et al., 2001; Moens and Coumans, 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the cell proliferation data shown in Figure 6B and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "913b9208-1a3c-4f91-a70f-665cc479e59a",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C84",
+      "claim": "N2a cells contain 121 \u00b1 15 \u00b5M PFN1.",
+      "claim_type": "EXPLICIT",
+      "source": "N2a cells contain 121 \u00b1 15 \u00b5M PFN1 and each plasmid harboring tagged or tag-free PFN1 restored the protein to endogenous levels (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the quantitative Western blot data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "4bf9bb70-230c-46b3-8ff5-1e54ac973325",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C85",
+      "claim": "Each plasmid harboring tagged or tag-free PFN1 restored the protein to endogenous levels.",
+      "claim_type": "EXPLICIT",
+      "source": "N2a cells contain 121 \u00b1 15 \u00b5M PFN1 and each plasmid harboring tagged or tag-free PFN1 restored the protein to endogenous levels (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the quantitative Western blot data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "97e55b6c-bf6f-4bcb-9130-6ed0fb13e1d7",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C86",
+      "claim": "PFN1(-/-) knockout cell morphology significantly deviated from all cells expressing PFN1 (endogenous, tagged, or untagged).",
+      "claim_type": "EXPLICIT",
+      "source": "PFN1(-/-) knockout cell morphology significantly deviated from all cells expressing PFN1 (endogenous, tagged, or untagged; p=0.01; ANOVA; Figure 6E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the cell morphology data shown in Figure 6E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "7711ad43-82ef-49a2-a645-f44c5f3c50e4",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C87",
+      "claim": "Knockout cells displayed strikingly aberrant actin filament networks.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, knockout cells displayed strikingly aberrant actin filament (p=0.02; ANOVA; Figure 6G and H) and microtubule networks (p=0.002; ANOVA; Figure 6I and J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the imaging data shown in Figure 6G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "5da588cf-da27-413c-9d3a-d10c5ea908ca",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C88",
+      "claim": "Knockout cells displayed strikingly aberrant microtubule networks.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, knockout cells displayed strikingly aberrant actin filament (p=0.02; ANOVA; Figure 6G and H) and microtubule networks (p=0.002; ANOVA; Figure 6I and J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the imaging data shown in Figure 6I and J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "ab5bf346-e298-4d39-b786-abf962cffa31",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C89",
+      "claim": "The cell morphology, architecture of actin filaments, and shape of the microtubule network was not different between PFN1(+/+) and PFN1(-/-) cells expressing tag-free or mAp-PFN1 plasmids.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to PFN1(+/+), the cell morphology, architecture of actin filaments, and shape of the microtubule network was not different than PFN1(-/-) cells expressing tag-free or mAp-PFN1 plasmids (p=0.78; ANOVA; Figure 6E and J and Figure 6\u2014figure supplement 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the imaging data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "7e1bd757-da7d-4370-9533-572bc3d7dda3",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C90",
+      "claim": "mAp-PFN1 complements cytoskeleton-based activities in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrates that mAp-PFN1 complements cytoskeleton-based activities in cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement supported by the data in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "6eb936b7-73c4-4146-b25c-bda72860c554",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C91",
+      "claim": "Eight mutations in PFN1 cause ALS.",
+      "claim_type": "EXPLICIT",
+      "source": "Eight mutations in PFN1 cause ALS (Wu et al., 2012; Liu et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "00284b3a-3b76-43e1-9069-ede518e2f052",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C92",
+      "claim": "PFN1(G118V) is an ALS variant that does not effectively bind actin monomers or microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Empowered by the knowledge that mAp-PFN1 fully compensates for PFN1, we measured cell and cytoskeletal morphology parameters for PFN1(-/-) cells expressing Halo-PFN1(G118V), an ALS variant that does not effectively bind actin monomers or microtubules, (Figure 7; Henty-Ridilla et al., 2017; Liu et al., 2022).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "8ed02922-e776-4e4c-a0aa-b98f477ce927",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C93",
+      "claim": "PFN1 deficient cells displayed aberrant cell morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with analyses comparing cells expressing mAp-PFN1 (Figure 6E\u2013J), PFN1 deficient cells displayed aberrant cell morphology (p=0.02; ANOVA; Figure 7A and B), as well as significantly decreased fluorescence of actin filaments (p=0.03; ANOVA; Figure 7C and D) and microtubules (p=0.01; ANOVA; Figure 7E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the imaging data shown in Figure 7A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "8b6191f0-8bbe-4737-9598-5feb5c248825",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C94",
+      "claim": "PFN1 deficient cells displayed significantly decreased fluorescence of actin filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with analyses comparing cells expressing mAp-PFN1 (Figure 6E\u2013J), PFN1 deficient cells displayed aberrant cell morphology (p=0.02; ANOVA; Figure 7A and B), as well as significantly decreased fluorescence of actin filaments (p=0.03; ANOVA; Figure 7C and D) and microtubules (p=0.01; ANOVA; Figure 7E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the imaging data shown in Figure 7C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "38c3ff5a-901b-4cfa-b107-b7d0554f823f",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C95",
+      "claim": "PFN1 deficient cells displayed significantly decreased fluorescence of microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with analyses comparing cells expressing mAp-PFN1 (Figure 6E\u2013J), PFN1 deficient cells displayed aberrant cell morphology (p=0.02; ANOVA; Figure 7A and B), as well as significantly decreased fluorescence of actin filaments (p=0.03; ANOVA; Figure 7C and D) and microtubules (p=0.01; ANOVA; Figure 7E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the imaging data shown in Figure 7E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "52b16bfc-b1ca-41c3-9e0c-fd3ee2e675eb",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C96",
+      "claim": "PFN1(-/-) cells expressing only Halo-PFN1(G118V) were unable to compensate for cell morphology, actin filament, or microtubule defects.",
+      "claim_type": "EXPLICIT",
+      "source": "PFN1(-/-) cells expressing only Halo-PFN1(G118V) were unable to compensate for any of these parameters (p=0.01; ANOVA; Figure 7A\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the imaging data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "7c8d5417-0827-4321-9d3c-4bb9938b218b",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C97",
+      "claim": "PFN1(G118V) contributes to ALS through actin and microtubule-based mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, PFN1(G118V) contributes to ALS through actin and microtubule-based mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the data in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "7dcdecad-a5f1-424b-81ad-2ed525dded11",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C98",
+      "claim": "The endogenous protein is present at high cellular concentrations (121 \u00b5M).",
+      "claim_type": "EXPLICIT",
+      "source": "The discrete cellular localization of PFN1 has been difficult to determine because the endogenous protein is present at high cellular concentrations (121 \u00b5M; Figure 6D; Pollard et al., 2000; Funk et al., 2019; Skruber et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the quantitative Western blot data shown in Figure 6D and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "08ca9ba6-7c0f-4304-861c-e05d3810f6dd",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C99",
+      "claim": "At high concentrations of JF-646, Halo-PFN1 was localized to the nucleus and throughout the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "At high concentrations of JF-646, Halo-PFN1 was localized to the nucleus and throughout the cytoplasm (Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the live-cell imaging data shown in Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "d5c9bb89-1f67-4334-848a-022c2952135a",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C100",
+      "claim": "Single molecules of Halo-PFN1 were identified at 1\u201310 nM ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "Single molecules of Halo-PFN1 were identified at 1\u201310 nM ligand, and localized to microtubules in ~60% of N2a cells (Figure 8A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the live-cell imaging data shown in Figure 8A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "04d76d54-9522-430d-a543-bd54985f67c1",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C101",
+      "claim": "Halo-PFN1 localized to microtubules in ~60% of N2a cells at 1-10 nM JF-646 ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "Single molecules of Halo-PFN1 were identified at 1\u201310 nM ligand, and localized to microtubules in ~60% of N2a cells (Figure 8A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the live-cell imaging data shown in Figure 8A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "0bfca891-8402-41d4-b300-761922645903",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C102",
+      "claim": "In NIH 3T3 cells, Halo-PFN1 localized to actin filaments in all cells assessed.",
+      "claim_type": "EXPLICIT",
+      "source": "In NIH 3T3 cells, Halo-PFN1 localized to actin filaments in all cells assessed and only occurred with microtubules at sites where both polymers overlapped (Figure 8\u2014figure supplement 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the live-cell imaging data shown in Figure 8\u2014figure supplement 1A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "8dd54ded-b065-4794-ac12-9ce1a63913ab",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C103",
+      "claim": "In NIH 3T3 cells, Halo-PFN1 only occurred with microtubules at sites where both actin and microtubules overlapped.",
+      "claim_type": "EXPLICIT",
+      "source": "In NIH 3T3 cells, Halo-PFN1 localized to actin filaments in all cells assessed and only occurred with microtubules at sites where both polymers overlapped (Figure 8\u2014figure supplement 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the live-cell imaging data shown in Figure 8\u2014figure supplement 1A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "8057b0f6-1b77-4d6b-9b56-9fed49b1e5b2",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C104",
+      "claim": "Halo-PFN1 associated more frequently with microtubules than actin filaments for U2OS and N2a cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Halo-PFN1 associated more frequently with microtubules than actin filaments for U2OS and N2a cells (Figure 8\u2014figure supplement 1A-D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the live-cell imaging data shown in Figure 8\u2014figure supplement 1A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "47384f94-b698-4d8b-b203-dc110258cf12",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C105",
+      "claim": "For N2a cells, the localization of Halo-PFN1 to actin filaments only occurred at sites where both actin and microtubules overlapped.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, for N2a cells, the localization of Halo-PFN1 to actin filaments only occurred at sites where both polymers overlapped (Figure 8\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the live-cell imaging data shown in Figure 8\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "c3d0f819-b34a-4c2a-bdad-c772cf3a28e5",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C106",
+      "claim": "Expressing Halo-PFN1 over endogenous PFN1 did not stimulate further microtubule association.",
+      "claim_type": "EXPLICIT",
+      "source": "Expressing Halo-PFN1 over endogenous PFN1 did not stimulate further microtubule association (Figure 8\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the live-cell imaging data shown in Figure 8\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "573e5bac-5be6-4a41-b791-08a44d4faa4b",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C107",
+      "claim": "PFN1 colocalized with microtubules in >50% of cells expressing the actin monomer binding deficient PFN1, Halo-PFN1(R88E).",
+      "claim_type": "EXPLICIT",
+      "source": "PFN1 colocalized with microtubules >50% of cells expressing the actin monomer binding deficient PFN1, Halo-PFN1(R88E) (n>50 cells from 5 separate experiments; Figure 8B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the live-cell imaging data shown in Figure 8B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "050c5cac-9d86-46ba-bee7-855123fce013",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C108",
+      "claim": "PFN1 colocalized with microtubules in >75% of cells expressing the formin/poly-L-proline binding deficient Y6D mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, PFN1 colocalized with microtubules in >75% of cells expressing the formin/poly-L-proline binding deficient Y6D mutation (Figure 8B and C; Ezezika et al., 2009; Henty-Ridilla et al., 2017; Liu et al., 2022).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the live-cell imaging data shown in Figure 8B and C and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "45b07cf1-337c-403c-a7fb-4eb3b39fc55e",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C109",
+      "claim": "Microtubules in cells expressing Y6D appear less dynamic than wild-type or R88E-expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Microtubules in these cells appear less dynamic than wild-type or R88E-expressing cells, which may strengthen the hypothesis that PFN1-microtubule interactions stabilize microtubule dynamics (Figure 8D and Figure 8\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the live-cell imaging data shown in Figure 8D.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "903ebda1-0760-46f5-87b7-030e851caff6",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C110",
+      "claim": "PFN1-microtubule interactions may stabilize microtubule dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Microtubules in these cells appear less dynamic than wild-type or R88E-expressing cells, which may strengthen the hypothesis that PFN1-microtubule interactions stabilize microtubule dynamics (Figure 8D and Figure 8\u2014video 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the observation of less dynamic microtubules.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "c3bbdddd-358d-4873-a702-05f5bd27c02f",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C111",
+      "claim": "Significantly less PFN1 was associated with microtubules in cells expressing the microtubule-binding deficient, and ALS-relevant, G118V mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Significantly less PFN1 was associated with microtubules in cells expressing the microtubule-binding deficient, and ALS-relevant, G118V mutation (Figure 8B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the live-cell imaging data shown in Figure 8B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "d951acdc-76d2-4aa6-a636-fd137ae96985",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C112",
+      "claim": "Cells expressing G118V displayed PFN1 accumulations that may be disease-relevant aggregates hypothesized to contribute to ALS onset.",
+      "claim_type": "EXPLICIT",
+      "source": "These cells displayed PFN1 accumulations may be disease-relevant aggregates that are hypothesized to contribute to ALS onset (Wu et al., 2012; Figley et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement supported by citations to previous work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "ce7b23d9-e382-449f-bc6c-083309e326ba",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "claim_id": "C113",
+      "claim": "The localization of molecules of PFN1 can be shifted from actin- or microtubule-binding activities with specific point mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the localization of molecules of PFN1 can be shifted from actin- or microtubule-binding activities with specific point mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement supported by the data in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "fdc131d9-852e-4275-a9e2-8827b565e291",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Two genetically encoded tagged versions of PFN1 (mApple-PFN1 and Halo-PFN1) were successfully engineered with an N-terminal flexible linker. The purified proteins were of expected size and high purity as confirmed by SDS-PAGE and gel filtration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C27, and C26 are well-supported by biochemical characterization data (Figures 1D, Figure 1\u2014figure supplement 1). The design rationale for choosing mApple is clearly justified, and protein purity is demonstrated through multiple analytical methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "1bb1b2b8-c95f-4bfc-bfcb-645902d4a83b",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "mAp-PFN1 binds phosphoinositide lipids PI(3,5)P2 and PI(4,5)P2 with similar affinity to untagged PFN1, as demonstrated by liposome pelleting assays and Western blot densitometry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C31-C34 are supported by liposome pelleting assays with appropriate controls (Figure 2). Quantitative densitometry confirms equivalent binding between tagged and untagged proteins. The negative control (buffer alone) appropriately demonstrates specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "de208134-987a-4a3c-90f4-0fa2a1364f24",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "mAp-PFN1 binds actin monomers with similar affinity to untagged PFN1 (kD ~100 nM) and catalyzes nucleotide exchange at comparable rates (k ~13-19 nM), both significantly faster than actin alone (k = 514 nM).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C16, C40-C45 are well-supported by competitive fluorescence polarization assays using GFP-T\u03b24 (Figure 3A-C). The measured kD values are consistent with literature values and direct binding assays. Statistical analysis (ANOVA, p=0.1) confirms no significant difference between tagged and untagged proteins.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "a69a15cb-627d-4615-882c-85af5d6d009b",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Both PFN1 and mAp-PFN1 inhibit spontaneous actin filament nucleation, reducing filament numbers from ~45 to ~20 per field of view, without substantially affecting elongation rates (~10 subunits s\u207b\u00b9 \u00b5M\u207b\u00b9).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C54 are supported by bulk pyrene fluorescence and TIRF microscopy data (Figure 3D-G). Quantitative measurements show statistically significant reduction in filament numbers with appropriate replication (n=4 fields of view, n=51 filaments per condition). The lack of effect on elongation rate is consistent with known PFN1 function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "b51e0892-07fa-4030-9ce1-5ec56e5c6fd9",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "mAp-PFN1 stimulates formin (mDia1)-mediated actin assembly equivalently to untagged PFN1, increasing elongation rates from ~10 to ~43-48 subunits s\u207b\u00b9 \u00b5M\u207b\u00b9 while suppressing formin nucleation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C18, C58-C67 are well-supported by bulk fluorescence and TIRF microscopy assays (Figure 4). Statistical analysis (ANOVA) confirms significant differences from controls and no difference between tagged and untagged proteins. The dual effects on nucleation suppression and elongation enhancement are consistent with known PFN1-formin interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "54b57743-6710-4984-b591-638d51cd3926",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "mAp-PFN1 binds tubulin dimers with kD = 1.89 \u00b5M and enhances microtubule polymerization ~6-fold (from 1.9 to ~12.6 \u00b5m\u207b\u00b9 min\u207b\u00b9), localizing to the microtubule lattice rather than plus-ends.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10, C68-C74, C76-C79 are supported by fluorescence polarization and TIRF microscopy data (Figure 5). Statistical analysis (ANOVA, p<0.0001) confirms significant effects on growth rate, length, and stability. The localization to the lattice rather than plus-ends is clearly demonstrated by imaging data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "cb67a23e-11f0-452a-8d17-200ed7cf2c6f",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In PFN1-deficient N2a cells, tagged PFN1 (mAp-PFN1 or Halo-PFN1) restores protein to endogenous levels (121 \u00b5M) and rescues cell morphology, actin filament, and microtubule network defects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C81, C83-C90 are supported by quantitative Western blots, cell proliferation assays, and morphological imaging (Figure 6). Statistical analysis (ANOVA) confirms significant differences between knockout and rescued cells, with no difference between tagged and endogenous PFN1. The rescue is comprehensive across multiple phenotypes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "f00fcfb1-9980-4676-aee5-03e74672a0d4",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The ALS-associated PFN1(G118V) variant fails to rescue cell morphology, actin filament, or microtubule defects in PFN1-deficient cells, suggesting the variant contributes to ALS through both actin and microtubule-based mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14, C92-C97 are supported by morphological and cytoskeletal imaging data (Figure 7). Statistical analysis (ANOVA) confirms that G118V-expressing cells remain significantly different from wild-type controls. However, the mechanistic conclusion (C97) is somewhat inferential, as direct causation to ALS is not demonstrated in this cellular model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "c0a8b121-7367-4eac-925b-ff3ce8eaadaa",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Titration of JF-646 Halo-ligand (1-10 nM) enables visualization of single Halo-PFN1 molecules, which localize to microtubules in ~60% of N2a cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12, C99-C101 are supported by live-cell imaging with ligand titration (Figure 8A-C). The approach successfully overcomes the high cellular concentration problem. However, the quantification of '~60%' appears to be based on limited replication (n=3-4 experiments with 10-25 cells per experiment).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "f2217cf7-77f8-48cd-b6cd-d01a6b7e88e8",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Function-disrupting point mutations shift PFN1 localization: R88E (actin-binding deficient) shows >50% microtubule colocalization, Y6D (PLP-binding deficient) shows >75% microtubule colocalization, while G118V (microtubule-binding deficient) shows significantly reduced microtubule association.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13, C107-C108, C111, C113 are supported by live-cell imaging and quantification (Figure 8B-C). Statistical analysis (ANOVA) confirms significant differences between mutants. The results logically demonstrate that disrupting one binding interface shifts localization to the other, validating the approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "e7956f97-6e10-4e6a-881f-fc438a87fc16",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Halo-PFN1 localization is cell-type specific: in NIH 3T3 cells it localizes primarily to actin filaments, while in U2OS and N2a cells it associates more frequently with microtubules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C106 are supported by live-cell imaging across multiple cell types (Figure 8\u2014figure supplement 1). The cell-type specificity is clearly demonstrated, though the mechanistic basis for this difference is not explored. Sample sizes appear adequate (n=15-49 cells).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "0a56a5ed-50b7-4faf-be45-d507013de352",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Microtubules in cells expressing Y6D appear less dynamic than wild-type or R88E-expressing cells, which may support the hypothesis that PFN1-microtubule interactions stabilize microtubule dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C109-C110 are based on qualitative observations from kymographs (Figure 8D). The claim is explicitly speculative ('may strengthen the hypothesis') and lacks quantitative analysis of microtubule dynamics. This observation requires additional quantification and statistical validation to be conclusive.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "43397fd3-fedd-4fdc-92c3-866846fee5eb",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Few (<25 total) transient (>5 s) plus-end localization events of mAp-PFN1 were observed on actin filaments in two-color TIRF microscopy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C56 is based on limited observations (Figure 3\u2014figure supplement 2). The low number of events and lack of detailed quantification make it difficult to determine whether this represents true biological behavior or technical limitations. The threshold for 'transient' (>5 s) is not justified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "0fbbf6f5-1022-4a45-90dd-746f6e87d8d6",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The affinity of mAp-PFN1 for tubulin dimers (kD = 1.89 \u00b5M) is 5.9-fold stronger than its affinity for polymerized microtubules (kD = ~10 \u00b5M).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C75 compares the measured tubulin dimer affinity to a previously published value for polymerized microtubules. While the calculation is correct, the comparison involves different experimental conditions and methods, making the direct fold-change comparison potentially misleading without additional validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "9895db9a-daa3-4f30-aa24-fdea666f828b",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Cells expressing G118V display PFN1 accumulations that may be disease-relevant aggregates hypothesized to contribute to ALS onset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C112 is explicitly speculative and based on visual observations without quantitative characterization of the 'accumulations.' While the observation is interesting and supported by citations to previous work, the claim that these are disease-relevant aggregates requires biochemical characterization and functional validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "6f1052ff-8a49-49d5-bfad-c38166eb3825",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background claims about PFN1 function, structure, and disease associations based on prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C15-C17, C19-C20, C28-C30, C35, C38, C55, C80, C82, C91 are general knowledge claims supported by appropriate citations to previous work. These provide necessary context but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "c30e5841-556d-4378-8aa7-51ca3555840e",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Limitations of previous PFN1 tagging and imaging approaches that motivated the current study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4, C21-C22, C24-C25 describe limitations of prior approaches based on literature review. These claims appropriately justify the need for the new tools developed in this study and are supported by citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "bf0b73e0-6b7d-4eb1-a5fd-adff7f2245f8",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Technical observations about fluorescence polarization assays with different probes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37, C39 describe methodological observations and controls for the binding assays. The inability to detect PFN1 binding with OG-actin is consistent with previous reports and appropriately explained. GFP-T\u03b24 binding affinity is well-characterized.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "635d2bd9-0493-4316-941a-0db8ba6e76ee",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Summary statements concluding equivalence between tagged and untagged PFN1 for various functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57, C67, C78, C90 are summary statements that accurately reflect the collective evidence from multiple experiments. These conclusions are well-supported by the data but represent synthesis rather than individual findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    },
+    {
+      "id": "c55defc7-452e-4308-b496-a12265ec5d8e",
+      "content_id": "c6536b31-3298-4eba-9e07-70a79a59002c",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "PFN1 is present at high cellular concentrations (121 \u00b5M) in N2a cells, making discrete localization difficult to determine.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C98 is supported by quantitative Western blot data (Figure 6D) and citations to previous work. The concentration measurement is based on appropriate methodology including cell volume calculations. This provides important context for the imaging approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:27:03.822352Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "845ccd6a-edb5-4684-8fa9-b8e31b322d23",
+      "result_id": "fdc131d9-852e-4275-a9e2-8827b565e291"
+    },
+    {
+      "claim_id": "fb79dbe9-fcd3-476d-9448-bf96fca59f4c",
+      "result_id": "fdc131d9-852e-4275-a9e2-8827b565e291"
+    },
+    {
+      "claim_id": "33102929-1759-4555-a7be-f7467c7dd080",
+      "result_id": "fdc131d9-852e-4275-a9e2-8827b565e291"
+    },
+    {
+      "claim_id": "8246778f-c7c4-4c32-96c7-f416506a24d4",
+      "result_id": "1bb1b2b8-c95f-4bfc-bfcb-645902d4a83b"
+    },
+    {
+      "claim_id": "6961d4be-5724-4947-9079-b89912a72480",
+      "result_id": "1bb1b2b8-c95f-4bfc-bfcb-645902d4a83b"
+    },
+    {
+      "claim_id": "3f87614b-7bb1-45bf-ae94-eadf532610b9",
+      "result_id": "1bb1b2b8-c95f-4bfc-bfcb-645902d4a83b"
+    },
+    {
+      "claim_id": "5cad601d-b973-4889-a50d-8d8adf444875",
+      "result_id": "1bb1b2b8-c95f-4bfc-bfcb-645902d4a83b"
+    },
+    {
+      "claim_id": "6788817a-1535-48d6-9414-a75d41ecb27a",
+      "result_id": "1bb1b2b8-c95f-4bfc-bfcb-645902d4a83b"
+    },
+    {
+      "claim_id": "032c0443-d256-4dc6-9789-3cfa9d45d063",
+      "result_id": "de208134-987a-4a3c-90f4-0fa2a1364f24"
+    },
+    {
+      "claim_id": "3f48ef88-a83f-43fd-894d-8dad93e4f009",
+      "result_id": "de208134-987a-4a3c-90f4-0fa2a1364f24"
+    },
+    {
+      "claim_id": "13a7cf10-5ddf-4f64-ac94-413eb191b655",
+      "result_id": "de208134-987a-4a3c-90f4-0fa2a1364f24"
+    },
+    {
+      "claim_id": "a556ed66-99f3-4d4e-9a1c-815f1522e656",
+      "result_id": "de208134-987a-4a3c-90f4-0fa2a1364f24"
+    },
+    {
+      "claim_id": "f7fc71cf-53c4-4bd6-acdf-6383ccc22229",
+      "result_id": "de208134-987a-4a3c-90f4-0fa2a1364f24"
+    },
+    {
+      "claim_id": "909b136b-0038-4918-b32d-3440f290a982",
+      "result_id": "de208134-987a-4a3c-90f4-0fa2a1364f24"
+    },
+    {
+      "claim_id": "22520484-7324-476e-98c8-6cb286f39ee8",
+      "result_id": "de208134-987a-4a3c-90f4-0fa2a1364f24"
+    },
+    {
+      "claim_id": "0b694595-3683-45c8-8e7b-65d4b37a7203",
+      "result_id": "de208134-987a-4a3c-90f4-0fa2a1364f24"
+    },
+    {
+      "claim_id": "7ae3705c-a5d5-45c0-8900-b38d806739b5",
+      "result_id": "a69a15cb-627d-4615-882c-85af5d6d009b"
+    },
+    {
+      "claim_id": "a9e4de00-77ad-410a-a0e7-75cddda346dd",
+      "result_id": "a69a15cb-627d-4615-882c-85af5d6d009b"
+    },
+    {
+      "claim_id": "f3300802-48de-48cc-93e7-c6d9634dbe85",
+      "result_id": "a69a15cb-627d-4615-882c-85af5d6d009b"
+    },
+    {
+      "claim_id": "9d9ece2b-e411-4838-b592-09e8921dcf62",
+      "result_id": "a69a15cb-627d-4615-882c-85af5d6d009b"
+    },
+    {
+      "claim_id": "50f86365-e5f8-4c04-b121-179582273d56",
+      "result_id": "a69a15cb-627d-4615-882c-85af5d6d009b"
+    },
+    {
+      "claim_id": "738dd1a1-f7c6-457f-a236-70596e62be20",
+      "result_id": "a69a15cb-627d-4615-882c-85af5d6d009b"
+    },
+    {
+      "claim_id": "3a923fbe-4bab-4cf7-b8a3-e68d3ecc776a",
+      "result_id": "a69a15cb-627d-4615-882c-85af5d6d009b"
+    },
+    {
+      "claim_id": "f4883707-88b0-47a6-ab11-b08c739cc0fa",
+      "result_id": "a69a15cb-627d-4615-882c-85af5d6d009b"
+    },
+    {
+      "claim_id": "5a03820d-c518-47e6-8425-045010404f0c",
+      "result_id": "a69a15cb-627d-4615-882c-85af5d6d009b"
+    },
+    {
+      "claim_id": "6593dfbd-cba9-49ff-b7eb-864eceebb1bc",
+      "result_id": "b51e0892-07fa-4030-9ce1-5ec56e5c6fd9"
+    },
+    {
+      "claim_id": "e586cd81-7770-48fb-b441-89531a7c9ccc",
+      "result_id": "b51e0892-07fa-4030-9ce1-5ec56e5c6fd9"
+    },
+    {
+      "claim_id": "52e65e7c-d77c-4fbb-aa53-6e6f3a0dbc37",
+      "result_id": "b51e0892-07fa-4030-9ce1-5ec56e5c6fd9"
+    },
+    {
+      "claim_id": "0e1b9061-afd7-4839-b3e7-df0d5ad8ab17",
+      "result_id": "b51e0892-07fa-4030-9ce1-5ec56e5c6fd9"
+    },
+    {
+      "claim_id": "cc8eedb6-7977-4e21-8ef3-37b8cd6c9a55",
+      "result_id": "b51e0892-07fa-4030-9ce1-5ec56e5c6fd9"
+    },
+    {
+      "claim_id": "563783d4-2416-4e78-9ac8-41708ced1b6c",
+      "result_id": "b51e0892-07fa-4030-9ce1-5ec56e5c6fd9"
+    },
+    {
+      "claim_id": "7d2dd3a3-46af-4148-b11b-be3f0c2dd3c6",
+      "result_id": "b51e0892-07fa-4030-9ce1-5ec56e5c6fd9"
+    },
+    {
+      "claim_id": "c51adbc1-9b27-48f5-8282-054959fa12da",
+      "result_id": "b51e0892-07fa-4030-9ce1-5ec56e5c6fd9"
+    },
+    {
+      "claim_id": "a36800f4-48c7-49b8-8ec5-2a358a2c2724",
+      "result_id": "b51e0892-07fa-4030-9ce1-5ec56e5c6fd9"
+    },
+    {
+      "claim_id": "dd2315ed-472e-4821-980d-75794250b4aa",
+      "result_id": "b51e0892-07fa-4030-9ce1-5ec56e5c6fd9"
+    },
+    {
+      "claim_id": "1208e400-8618-4159-8738-08c8d6ece8dd",
+      "result_id": "b51e0892-07fa-4030-9ce1-5ec56e5c6fd9"
+    },
+    {
+      "claim_id": "5a14b44b-c563-44c9-9f00-76065d22b2cd",
+      "result_id": "b51e0892-07fa-4030-9ce1-5ec56e5c6fd9"
+    },
+    {
+      "claim_id": "847714f0-f372-4826-a35e-a701d58ab3ea",
+      "result_id": "54b57743-6710-4984-b591-638d51cd3926"
+    },
+    {
+      "claim_id": "5dd5cee3-d733-4cb3-837c-382d089355c5",
+      "result_id": "54b57743-6710-4984-b591-638d51cd3926"
+    },
+    {
+      "claim_id": "5481b35a-19b4-4f34-9111-1615cebdd7f5",
+      "result_id": "54b57743-6710-4984-b591-638d51cd3926"
+    },
+    {
+      "claim_id": "01eef98a-349a-46d0-9f57-df18069d950e",
+      "result_id": "54b57743-6710-4984-b591-638d51cd3926"
+    },
+    {
+      "claim_id": "b28681c7-a47d-4d44-bce3-546d9052243b",
+      "result_id": "54b57743-6710-4984-b591-638d51cd3926"
+    },
+    {
+      "claim_id": "dd6a557f-fe52-4243-9ec1-df16a63a87ce",
+      "result_id": "54b57743-6710-4984-b591-638d51cd3926"
+    },
+    {
+      "claim_id": "d530bb6e-fdcd-4568-9dd2-476688756e03",
+      "result_id": "54b57743-6710-4984-b591-638d51cd3926"
+    },
+    {
+      "claim_id": "8c8a6561-1cf9-4a23-9881-9d58a50f26f8",
+      "result_id": "54b57743-6710-4984-b591-638d51cd3926"
+    },
+    {
+      "claim_id": "5dfb785a-b047-4f61-bf6a-f3a09700f1e2",
+      "result_id": "54b57743-6710-4984-b591-638d51cd3926"
+    },
+    {
+      "claim_id": "d2eded10-3ad6-4277-93df-7c15f58f95f6",
+      "result_id": "54b57743-6710-4984-b591-638d51cd3926"
+    },
+    {
+      "claim_id": "45df7b64-e6a5-47e2-970f-99d21f75d691",
+      "result_id": "54b57743-6710-4984-b591-638d51cd3926"
+    },
+    {
+      "claim_id": "9e922902-59a1-4365-885e-46cb2e7fc2ca",
+      "result_id": "54b57743-6710-4984-b591-638d51cd3926"
+    },
+    {
+      "claim_id": "460f1dd4-d0ac-4662-a799-64dab96e991d",
+      "result_id": "54b57743-6710-4984-b591-638d51cd3926"
+    },
+    {
+      "claim_id": "053015d0-7dec-4736-a9fd-a226efe83486",
+      "result_id": "cb67a23e-11f0-452a-8d17-200ed7cf2c6f"
+    },
+    {
+      "claim_id": "7174a4d7-1386-404c-82b7-8915bdb60f66",
+      "result_id": "cb67a23e-11f0-452a-8d17-200ed7cf2c6f"
+    },
+    {
+      "claim_id": "69fcf481-f13b-4cc8-8cb5-ccb14c6e9eb3",
+      "result_id": "cb67a23e-11f0-452a-8d17-200ed7cf2c6f"
+    },
+    {
+      "claim_id": "913b9208-1a3c-4f91-a70f-665cc479e59a",
+      "result_id": "cb67a23e-11f0-452a-8d17-200ed7cf2c6f"
+    },
+    {
+      "claim_id": "4bf9bb70-230c-46b3-8ff5-1e54ac973325",
+      "result_id": "cb67a23e-11f0-452a-8d17-200ed7cf2c6f"
+    },
+    {
+      "claim_id": "97e55b6c-bf6f-4bcb-9130-6ed0fb13e1d7",
+      "result_id": "cb67a23e-11f0-452a-8d17-200ed7cf2c6f"
+    },
+    {
+      "claim_id": "7711ad43-82ef-49a2-a645-f44c5f3c50e4",
+      "result_id": "cb67a23e-11f0-452a-8d17-200ed7cf2c6f"
+    },
+    {
+      "claim_id": "5da588cf-da27-413c-9d3a-d10c5ea908ca",
+      "result_id": "cb67a23e-11f0-452a-8d17-200ed7cf2c6f"
+    },
+    {
+      "claim_id": "ab5bf346-e298-4d39-b786-abf962cffa31",
+      "result_id": "cb67a23e-11f0-452a-8d17-200ed7cf2c6f"
+    },
+    {
+      "claim_id": "7e1bd757-da7d-4370-9533-572bc3d7dda3",
+      "result_id": "cb67a23e-11f0-452a-8d17-200ed7cf2c6f"
+    },
+    {
+      "claim_id": "6450882d-6bb0-4e60-b6bb-f70558efd626",
+      "result_id": "f00fcfb1-9980-4676-aee5-03e74672a0d4"
+    },
+    {
+      "claim_id": "00284b3a-3b76-43e1-9069-ede518e2f052",
+      "result_id": "f00fcfb1-9980-4676-aee5-03e74672a0d4"
+    },
+    {
+      "claim_id": "8ed02922-e776-4e4c-a0aa-b98f477ce927",
+      "result_id": "f00fcfb1-9980-4676-aee5-03e74672a0d4"
+    },
+    {
+      "claim_id": "8b6191f0-8bbe-4737-9598-5feb5c248825",
+      "result_id": "f00fcfb1-9980-4676-aee5-03e74672a0d4"
+    },
+    {
+      "claim_id": "38c3ff5a-901b-4cfa-b107-b7d0554f823f",
+      "result_id": "f00fcfb1-9980-4676-aee5-03e74672a0d4"
+    },
+    {
+      "claim_id": "52b16bfc-b1ca-41c3-9e0c-fd3ee2e675eb",
+      "result_id": "f00fcfb1-9980-4676-aee5-03e74672a0d4"
+    },
+    {
+      "claim_id": "7c8d5417-0827-4321-9d3c-4bb9938b218b",
+      "result_id": "f00fcfb1-9980-4676-aee5-03e74672a0d4"
+    },
+    {
+      "claim_id": "ada83aeb-7659-4e05-88cb-10200d46393f",
+      "result_id": "c0a8b121-7367-4eac-925b-ff3ce8eaadaa"
+    },
+    {
+      "claim_id": "08ca9ba6-7c0f-4304-861c-e05d3810f6dd",
+      "result_id": "c0a8b121-7367-4eac-925b-ff3ce8eaadaa"
+    },
+    {
+      "claim_id": "d5c9bb89-1f67-4334-848a-022c2952135a",
+      "result_id": "c0a8b121-7367-4eac-925b-ff3ce8eaadaa"
+    },
+    {
+      "claim_id": "04d76d54-9522-430d-a543-bd54985f67c1",
+      "result_id": "c0a8b121-7367-4eac-925b-ff3ce8eaadaa"
+    },
+    {
+      "claim_id": "ad9481f8-c242-4ee9-bf95-5ff65ff37433",
+      "result_id": "f2217cf7-77f8-48cd-b6cd-d01a6b7e88e8"
+    },
+    {
+      "claim_id": "573e5bac-5be6-4a41-b791-08a44d4faa4b",
+      "result_id": "f2217cf7-77f8-48cd-b6cd-d01a6b7e88e8"
+    },
+    {
+      "claim_id": "050c5cac-9d86-46ba-bee7-855123fce013",
+      "result_id": "f2217cf7-77f8-48cd-b6cd-d01a6b7e88e8"
+    },
+    {
+      "claim_id": "c3bbdddd-358d-4873-a702-05f5bd27c02f",
+      "result_id": "f2217cf7-77f8-48cd-b6cd-d01a6b7e88e8"
+    },
+    {
+      "claim_id": "ce7b23d9-e382-449f-bc6c-083309e326ba",
+      "result_id": "f2217cf7-77f8-48cd-b6cd-d01a6b7e88e8"
+    },
+    {
+      "claim_id": "0bfca891-8402-41d4-b300-761922645903",
+      "result_id": "e7956f97-6e10-4e6a-881f-fc438a87fc16"
+    },
+    {
+      "claim_id": "8dd54ded-b065-4794-ac12-9ce1a63913ab",
+      "result_id": "e7956f97-6e10-4e6a-881f-fc438a87fc16"
+    },
+    {
+      "claim_id": "8057b0f6-1b77-4d6b-9b56-9fed49b1e5b2",
+      "result_id": "e7956f97-6e10-4e6a-881f-fc438a87fc16"
+    },
+    {
+      "claim_id": "47384f94-b698-4d8b-b203-dc110258cf12",
+      "result_id": "e7956f97-6e10-4e6a-881f-fc438a87fc16"
+    },
+    {
+      "claim_id": "c3d0f819-b34a-4c2a-bdad-c772cf3a28e5",
+      "result_id": "e7956f97-6e10-4e6a-881f-fc438a87fc16"
+    },
+    {
+      "claim_id": "45b07cf1-337c-403c-a7fb-4eb3b39fc55e",
+      "result_id": "0a56a5ed-50b7-4faf-be45-d507013de352"
+    },
+    {
+      "claim_id": "903ebda1-0760-46f5-87b7-030e851caff6",
+      "result_id": "0a56a5ed-50b7-4faf-be45-d507013de352"
+    },
+    {
+      "claim_id": "975d71ff-552e-463c-9cbb-3054ffe90af6",
+      "result_id": "43397fd3-fedd-4fdc-92c3-866846fee5eb"
+    },
+    {
+      "claim_id": "19fc8aeb-067c-4e40-a60b-8cc525e670ac",
+      "result_id": "0fbbf6f5-1022-4a45-90dd-746f6e87d8d6"
+    },
+    {
+      "claim_id": "d951acdc-76d2-4aa6-a636-fd137ae96985",
+      "result_id": "9895db9a-daa3-4f30-aa24-fdea666f828b"
+    },
+    {
+      "claim_id": "46e12404-9208-42fb-b3ce-7f96fe48404b",
+      "result_id": "6f1052ff-8a49-49d5-bfad-c38166eb3825"
+    },
+    {
+      "claim_id": "59071e40-e432-46f5-836a-b0e34f63d6e6",
+      "result_id": "6f1052ff-8a49-49d5-bfad-c38166eb3825"
+    },
+    {
+      "claim_id": "86633d5d-32a0-4be9-ba5e-0dc152fdd971",
+      "result_id": "6f1052ff-8a49-49d5-bfad-c38166eb3825"
+    },
+    {
+      "claim_id": "3f48ef88-a83f-43fd-894d-8dad93e4f009",
+      "result_id": "6f1052ff-8a49-49d5-bfad-c38166eb3825"
+    },
+    {
+      "claim_id": "eea205da-d104-4e84-a6bf-8442d65ddee3",
+      "result_id": "6f1052ff-8a49-49d5-bfad-c38166eb3825"
+    },
+    {
+      "claim_id": "9f37ab12-1650-4473-8ee9-44a49ea5c530",
+      "result_id": "6f1052ff-8a49-49d5-bfad-c38166eb3825"
+    },
+    {
+      "claim_id": "01a484a1-84ac-439d-912e-21613c4915d3",
+      "result_id": "6f1052ff-8a49-49d5-bfad-c38166eb3825"
+    },
+    {
+      "claim_id": "be1ea2c8-1718-4ddd-a783-40041a68e244",
+      "result_id": "6f1052ff-8a49-49d5-bfad-c38166eb3825"
+    },
+    {
+      "claim_id": "7aa70934-7f6b-4b80-8c91-b845df2fa64f",
+      "result_id": "6f1052ff-8a49-49d5-bfad-c38166eb3825"
+    },
+    {
+      "claim_id": "3b7f720c-6f36-4077-969b-8e9ac25d8d5d",
+      "result_id": "6f1052ff-8a49-49d5-bfad-c38166eb3825"
+    },
+    {
+      "claim_id": "03dcf422-03bd-4bb0-a707-13083a788aa4",
+      "result_id": "6f1052ff-8a49-49d5-bfad-c38166eb3825"
+    },
+    {
+      "claim_id": "0328b860-9192-4d3a-9c55-7c056b7103bd",
+      "result_id": "6f1052ff-8a49-49d5-bfad-c38166eb3825"
+    },
+    {
+      "claim_id": "870167fa-387a-44cb-be47-f46dc4ad77aa",
+      "result_id": "6f1052ff-8a49-49d5-bfad-c38166eb3825"
+    },
+    {
+      "claim_id": "a6892d83-9dfb-491a-b5b4-664096f0698d",
+      "result_id": "6f1052ff-8a49-49d5-bfad-c38166eb3825"
+    },
+    {
+      "claim_id": "c2ecb516-f4b9-4eb8-89ae-a9e7771b9b87",
+      "result_id": "6f1052ff-8a49-49d5-bfad-c38166eb3825"
+    },
+    {
+      "claim_id": "6eb936b7-73c4-4146-b25c-bda72860c554",
+      "result_id": "6f1052ff-8a49-49d5-bfad-c38166eb3825"
+    },
+    {
+      "claim_id": "ba5b4b7e-ca9d-49fd-a9be-1f0cf7435f9d",
+      "result_id": "c30e5841-556d-4378-8aa7-51ca3555840e"
+    },
+    {
+      "claim_id": "6b8bc422-1350-4d7c-b747-3971385f227a",
+      "result_id": "c30e5841-556d-4378-8aa7-51ca3555840e"
+    },
+    {
+      "claim_id": "e9ac9432-4be9-4819-9e63-630011cca739",
+      "result_id": "c30e5841-556d-4378-8aa7-51ca3555840e"
+    },
+    {
+      "claim_id": "7db2b42c-9552-4e23-ac7a-949892468b22",
+      "result_id": "c30e5841-556d-4378-8aa7-51ca3555840e"
+    },
+    {
+      "claim_id": "407d0fce-015d-4be8-b45c-6ea0e3a56ad9",
+      "result_id": "c30e5841-556d-4378-8aa7-51ca3555840e"
+    },
+    {
+      "claim_id": "246e3e31-0d9c-42ec-ae5b-11183b40f5cf",
+      "result_id": "c30e5841-556d-4378-8aa7-51ca3555840e"
+    },
+    {
+      "claim_id": "6a9e9644-b7d3-47dd-9beb-ffe890aa99f9",
+      "result_id": "bf0b73e0-6b7d-4eb1-a5fd-adff7f2245f8"
+    },
+    {
+      "claim_id": "d5732f69-18a9-43a3-a108-0f65d5ea19e0",
+      "result_id": "bf0b73e0-6b7d-4eb1-a5fd-adff7f2245f8"
+    },
+    {
+      "claim_id": "ce627de5-b913-4a7b-a2c0-f40beaa5cc39",
+      "result_id": "bf0b73e0-6b7d-4eb1-a5fd-adff7f2245f8"
+    },
+    {
+      "claim_id": "08afd520-b284-4f40-a9d2-3568ade35062",
+      "result_id": "635d2bd9-0493-4316-941a-0db8ba6e76ee"
+    },
+    {
+      "claim_id": "5a14b44b-c563-44c9-9f00-76065d22b2cd",
+      "result_id": "635d2bd9-0493-4316-941a-0db8ba6e76ee"
+    },
+    {
+      "claim_id": "9e922902-59a1-4365-885e-46cb2e7fc2ca",
+      "result_id": "635d2bd9-0493-4316-941a-0db8ba6e76ee"
+    },
+    {
+      "claim_id": "7e1bd757-da7d-4370-9533-572bc3d7dda3",
+      "result_id": "635d2bd9-0493-4316-941a-0db8ba6e76ee"
+    },
+    {
+      "claim_id": "7dcdecad-a5f1-424b-81ad-2ed525dded11",
+      "result_id": "c55defc7-452e-4308-b496-a12265ec5d8e"
+    }
+  ],
+  "comparisons": []
+}

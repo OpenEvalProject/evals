@@ -1,0 +1,379 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C23",
+      "C24",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Using a two-round mass spectrometry approach with a comprehensive ORF database, 993 unannotated translated ORFs (utORFs) were identified in D. melanogaster, supported by 3123 unique peptides. The two-round method dramatically improved sensitivity while maintaining comparable false discovery rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C23-C24, C28-C30 collectively describe the methodology and main identification result. The two-round MS approach is validated by enrichment analysis (C29) and supported by supplementary data. The comprehensive ORF database generation (C23-C24) and filtering steps are clearly described, providing strong methodological foundation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "utORFs have distinct biochemical properties compared to annotated proteins, including differences in amino acid composition (enriched in hydrophobic and positively charged residues, depleted in negatively charged residues) that are statistically significant and similar to the composition of potential ORFs, suggesting limited evolutionary optimization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C40 describe length distributions and amino acid composition with statistical support (C34, C36, C37, C39). The inference that utORFs have not accumulated substitutions toward annotated protein composition (C40) is supported by correlation analysis showing similarity to potential ORFs rather than annotated proteins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "utORFs occupy diverse genomic locations including intergenic regions (~1/3), sense and antisense overlaps with annotated genes, and UTRs. A subset of intergenic utORFs longer than 50 aa with canonical start codons may represent single-exon unannotated proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 describe genomic location analysis with quantitative data (C44). The proposal that some intergenic utORFs are single-exon proteins (C45) is appropriately qualified as speculative but based on clear criteria (length >50 aa, canonical start codon).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "utORFs have significantly higher GC content (43.4%) than the genome (42.15%) but not significantly different from annotated genes (42.9%), suggesting either selective pressure for increased GC content or preferential origination from high-GC regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by statistical tests. The interpretation (C50) appropriately presents alternative explanations as speculation. The statistical significance is clearly stated with p-values.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Approximately half of utORFs have majority coiled-coil secondary structure, with median structural disorder of 24.5%. Compared to length-matched potential ORFs, utORFs have significantly lower coiled-coil proportion but similar disorder levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 describe structural predictions with statistical validation (C54, C55). The comparison to an empirical null distribution of length-matched potential ORFs strengthens the analysis by controlling for length bias.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C132"
+    ],
+    "result": "The identified peptides are not artifacts from polymorphisms in annotated genes, as fewer than 1% of unique peptides (30 of 3123) could result from single or double amino acid substitutions in annotated proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61, C132 describe a systematic analysis using trie data structures to calculate minimum distances between utORF peptides and annotated protein peptides. The quantitative results (only 1 peptide from single substitution, <1% from double substitutions) strongly support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Using a synteny-based MSA-guided Smith-Waterman alignment approach with a conservative similarity threshold of 2.5, utORFs show a wide range of inferred ages from D. melanogaster-specific to conservation across ancient insect taxa, with the plurality predating the last common ancestor with D. grimshawi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62, C64-C69 describe the phylostratigraphic methodology and results. The approach addresses known limitations of BLAST (C62) by using MSA-guided alignment (C64-C65). The threshold choice (C66) is justified by null model analysis (Figure 2C), and robustness to threshold choice is demonstrated (C69).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Latent class analysis identifies five distinct classes of utORFs: Class 1 (putatively nonfunctional, 4.35%), Class 2 (melanogaster-specific, 5.71%), Class 3 (fast-evolving, 12.03%), Class 4 (general unannotated ORFs, 57.61%), and Class 5 (alternative-frame ORFs, 20.30%), each with distinct genomic, transcriptional, and evolutionary properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C84 describe the LCA methodology and class assignments. The approach is appropriate for categorical data and the five-class model is justified by model selection criteria. Class interpretations (C76, C78, C80, C82, C83) are based on distinct patterns in multiple variables. Posterior probabilities show clean partitioning (C84).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C2",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The fastest-evolving utORFs (Class 3, characterized by negative phyloP scores) are not the youngest evolutionarily; the melanogaster-specific class (Class 2) is younger, contradicting expectations that the fastest-evolving genes would be the youngest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C85-C90 describe conservation patterns across classes with statistical support. The key finding (C2, C90) is supported by both phastCons and phyloP scores (C85, C87) and phylostratigraphic age inference (C89). The observation that 61.4% of negative phyloP scores are from fast-evolving utORFs (C88) supports the characterization of this class.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C135",
+      "C136"
+    ],
+    "result": "Fast-evolving and putatively nonfunctional utORFs are significantly shorter than other classes, but melanogaster-specific utORFs are not significantly shorter despite being the youngest, suggesting that previous reports of younger genes being shorter may reflect conflation of fast evolution with gene age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92, C135-C136 describe length patterns with statistical tests. The finding that melanogaster-specific utORFs are not significantly shorter (C92, p=0.11) despite being youngest challenges prior work (C135). The speculation about conflation (C136) is appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C103",
+      "C139",
+      "C140"
+    ],
+    "result": "utORFs, particularly fast-evolving ones, are preferentially expressed in the brain rather than the testis, with 34.4% of fast-evolving utORFs having highest expression in brain versus 10.4% in testis. This contrasts with prior findings that young genes typically emerge in testis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C93-C101, C103, C139-C140 describe tissue-specific expression patterns with statistical support (C93, C95, C96, C97, C99, C103). The quantitative data (C98) and comparison to annotated genes (C99, C100) are clearly presented. The contrast with prior work (C101, C139) is appropriately noted, and alternative explanations are offered (C140).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Between 40-75% of utORFs across classes show evidence consistent with de novo origin based on synteny-based protein similarity analysis, with 67.8% having three or more supporting outgroup species. The methodology employs best practices by incorporating syntenic information and is robust to individual homology calls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C105-C110, C121-C123 describe the de novo origin inference with clear criteria (C105) and quantitative results (C107, C109). The methodology addresses known limitations of BLAST-based approaches (C121-C123) by using synteny and requiring multiple supporting outgroups. Statistical significance of class differences is demonstrated (C108).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C111",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Losses of utORFs after inferred de novo origin are extremely common, with 80.9% showing at least one inferred loss event. This frequent turnover is consistent with prior studies and suggests that de novo gene death must be relatively frequent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C111, C143-C146 describe gene loss patterns with quantitative data (C111). The inference that gene death is frequent (C143) is supported by logic and the observation (C144). The interpretation that sequence divergence indicates gene death (C145) is clearly stated, and consistency with prior work is noted (C146).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "Retention time analysis shows that 12.3% of peptides supporting utORFs (385 of 3123) have retention times within the 95th percentile of annotated protein peptides, supporting 270 utORFs, providing independent validation of a subset of identifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114 describe retention time validation with clear quantitative results. The use of AutoRT for prediction and comparison to annotated proteins provides independent support for a subset of utORFs. The modest proportion (12.3%) is appropriately interpreted given the challenges of retention time prediction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C127"
+    ],
+    "result": "Independent validation experiments detected 1 of 15 targeted utORFs by PRM-MS, additional utORFs by shotgun MS, and 243 utORFs by ribosome profiling, with 17 of 81 utORFs (21.0%) showing statistically significant framing bias supporting active translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C118, C127 describe validation experiments with clear results. The low validation rate by targeted MS (1/15) is appropriately contextualized by the low power of MS (C128) and sample heterogeneity (C129-C130). The ribosome profiling framing analysis (C118) provides strong independent support for translation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C102",
+      "C104"
+    ],
+    "result": "Analysis restricted to utORFs with canonical start codons (331 of 993) yields qualitatively similar results to the full dataset, and noncanonical start initiation is increasingly recognized for short ORFs based on ribosome profiling and MS evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102, C104 describe the robustness of results to start codon requirements. The qualitative similarity (C102) is supported by supplementary figures. The recognition of noncanonical start initiation (C104) is supported by multiple citations to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "The identification of 993 utORFs is larger than previous studies of de novo genes in Drosophila and consistent with systematic studies in other organisms. The MS-based method provides stronger inference of translation than typical approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C120 compare results to prior work with appropriate citations. The comparison is fair and the advantage of the MS-first approach for inferring translation (C120) is clearly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "While the protein similarity score may be vulnerable to calling spurious similarity in closely related species, and alternative mechanisms like horizontal gene transfer or extensive divergence could explain lineage-specific genes, recent work suggests extensive divergence is not the dominant mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C126 appropriately acknowledge limitations and alternative explanations. The potential vulnerability (C124) is noted as speculation, and alternative mechanisms (C125) are discussed with citations. The citation to recent work (C126) provides context for dismissing extensive divergence as the primary explanation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C133"
+    ],
+    "result": "The low validation rate in independent MS experiments is explained by the notoriously low power of MS, sample heterogeneity (mixed 0-24 hr embryos vs. narrowly staged samples), and the expected low abundance and specific expression of utORFs. The reverse-decoy FDR control remains valid for the two-round method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C131, C133 provide appropriate context for interpreting validation results. The explanations for low validation rates (C128-C130) are supported by citations and logical reasoning. The validation of the FDR approach (C133) is supported by supplementary data showing similar power for annotated genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C134",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The LCA approach allows refinement beyond simple per-variable analyses and reveals that the relationship between fast evolution and length may explain previous reports of younger genes being shorter, though the directionality of this relationship cannot be determined from the current analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134, C136-C138 discuss the advantages of LCA and limitations of the analysis. The speculation about previous reports (C136) is appropriately qualified, and the inability to determine directionality (C137-C138) is clearly acknowledged as a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C141",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "The findings suggest diverse evolutionary trajectories for young proteins in Drosophila, with some potentially acting as neuropeptides. The frequent turnover may indicate that de novo gene evolution proceeds like a random walk rather than unidirectionally, consistent with proto-gene or pre-adaptation models, though no single unified theory may describe all phenomena.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C141, C148-C154 present speculative interpretations and synthesis. While the speculation is appropriately qualified and supported by citations to relevant models (C150), the claims are primarily interpretive rather than directly supported by the data. The acknowledgment that no single theory may suffice (C153) is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "Whether similar distinct evolutionary trajectories exist in other model organisms remains to be determined. Differences in effective population size and other factors between Drosophila, mammals, and yeast may affect de novo protein evolution, suggesting that similar approaches could be applied to humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C159 appropriately discuss future directions and comparative considerations. The speculation about population size effects (C157) is appropriately qualified, and the suggestion to extend the approach to humans (C159) is logical given the advantages noted (C158).",
+    "result_type": "MINOR"
+  }
+]

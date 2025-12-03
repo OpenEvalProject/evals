@@ -1,0 +1,326 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Sequence analysis reveals that SpoIVA has altered G4 (NKxD) and G5 (SxE) motifs compared to ancestral GTPases. The Lys in the NKxD motif is substituted by Ser/Thr, the conserved Asp is substituted by polar residues (K, H, N, or R), and the G5 motif shows less constrained residues with acidic positions downstream. These changes are proposed to contribute to ATP-specificity in SpoIVA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 present sequence analysis data shown in Figure 1, documenting specific amino acid substitutions in the G4 and G5 motifs. Claim C38 draws a reasonable inference from this data that these changes may contribute to ATP specificity. The sequence analysis is appropriately documented and the inference is conservative (\"may have contributed\").",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Mutational analysis of the G4 and G5 motifs demonstrates their roles in nucleotide specificity. Restoring the NKxD motif in SpoIVA increases catalytic efficiency for both ATP and GTP but decreases ATP preference. The SpoIVAGTPase variant (NSxD SxA) displays similar catalytic efficiency to Era with slight GTP preference. Conversely, introducing SpoIVA-like mutations into Era (EraATPase) switches its specificity toward ATP. The Asp in NKxD and Glu in SxE contribute to nucleotide discrimination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C50 present extensive in vitro enzymatic data shown in Figure 2 and supplements, with appropriate replication (n=3-4) and error bars. The Michaelis-Menten kinetics are properly analyzed. Claims C51-C53 draw reasonable mechanistic conclusions from the mutational data. The reciprocal experiments with Era strengthen the conclusions about determinants of nucleotide specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "In vivo complementation assays show that SpoIVA variants with restored Lys or full NKxD motif fail to support sporulation despite being expressed at WT levels. The SpoIVAGTPase variant (NSxD SxA) complements the spoIVA deletion and localizes properly to the forespore surface, supporting near-WT sporulation efficiency. Variants with only SxE disruptions maintain proper localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C63 present in vivo functional data from sporulation assays (Figure 3) and microscopy, with appropriate controls including protein expression levels (C58). The data show clear phenotypic differences between variants, with proper quantification of sporulation efficiency. The localization data by fluorescence microscopy provides additional functional validation. Multiple independent replicates (n=3-4) support the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Limited trypsin proteolysis reveals that both ATP and GTP hydrolysis drive conformational changes in WT SpoIVA at similar rates. Non-hydrolyzable analogs (ATP-\u03b3-S, GTP-\u03b3-S) and ADP/GDP produce only intermediate conformational changes, while transition state mimics (ADP-AlFx, GDP-AlFx) produce full conformational changes. This indicates that NTP hydrolysis while bound to the active site, not simply NDP binding, is required for the polymerization-competent conformational change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C77 present conformational change data from limited proteolysis assays (Figure 4) with appropriate controls including Walker A and Sensor T mutants. The use of non-hydrolyzable analogs and transition state mimics provides strong mechanistic insight. The data are replicated (n=3-4) and quantified. The conclusions about the requirement for hydrolysis (C75-C77) are well-supported by the systematic analysis of different nucleotide states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Dynamic light scattering shows that WT SpoIVA polymerizes with ATP but not GTP, displaying >30% higher polymerization rate with ATP. SpoIVA variants with restored Lys in G4 cannot polymerize with either nucleotide. SpoIVAGTPase, despite undergoing conformational changes with both nucleotides, only polymerizes with ATP, indicating a specific requirement for the ATP base beyond energy release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C84 present polymerization data from DLS (Figure 5 and supplements) with appropriate replication (n=3). The systematic analysis of variants correlates with previous enzymatic and conformational data. Claim C85 draws a key mechanistic conclusion that is well-supported by the observation that SpoIVAGTPase hydrolyzes both nucleotides but only polymerizes with ATP, directly demonstrating base-specific requirements beyond energetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Size exclusion chromatography, mass spectrometry, and electron microscopy reveal that ATP hydrolysis drives formation of high molecular weight SpoIVA multimers (2\u00d710\u00b3 to 10\u2076 kDa) that retain bound ADP. These ADP-bound multimers are functional polymerization intermediates that can polymerize after ATP removal and concentration increase, releasing ADP to form nucleotide-free polymers. GTP hydrolysis does not produce stable multimers or retain GDP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C105 present a comprehensive characterization of polymerization intermediates using multiple complementary techniques (SEC, iSCAMS, SEC-MALS, EM, UV absorbance). The data clearly show ATP-specific formation of ADP-bound multimers (C87-C98) and their functionality (C99-C102). The model proposed (C103-C105) is well-supported by the experimental evidence. The use of multiple orthogonal methods strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "LC-MS quantification of nucleotides during B. subtilis sporulation shows that ATP levels decrease from 2.3 mM to 1.6 mM at t=3.5h (when SpoIVA assembles) and 0.81 mM at t=5h. GTP drops from 0.65 mM to 0.071 mM immediately upon sporulation induction, then rises to 0.20 mM at t=3.5h, resulting in an ~8-fold ATP:GTP ratio. The alarmones ppGpp and pGpp increase ~30-fold upon sporulation induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C117 present LC-MS metabolomics data (Figure 6A-D) with appropriate replication (n=3) and error bars. The measurements are properly converted to intracellular concentrations using cell volume and detection efficiencies (C110). The data provide important physiological context for understanding the evolutionary pressure for ATP specificity. The alarmone measurements (C116-C117) are consistent with prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "At physiological nucleotide concentrations (1.5 mM ATP, 0.06 mM GTP), WT SpoIVA undergoes conformational changes and polymerizes efficiently, while SpoIVAGTPase undergoes conformational changes but fails to polymerize. This demonstrates that the extant SpoIVA has evolved to function efficiently at limiting ATP concentrations present during late sporulation, suggesting this was the selective pressure driving nucleotide specificity evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C120 present functional data at physiologically relevant nucleotide concentrations (Figure 6E-G), directly testing the evolutionary hypothesis. The differential performance of WT vs SpoIVAGTPase at limiting ATP (C120-C121) provides strong support for the evolutionary model. Claim C122 draws a reasonable evolutionary conclusion supported by the combined nucleotide measurement and functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C33",
+      "C124",
+      "C127",
+      "C128",
+      "C131",
+      "C133",
+      "C150"
+    ],
+    "result": "The authors propose that reduced GTP levels relative to ATP during late sporulation (when SpoIVA functions) provided the evolutionary pressure for SpoIVA to switch from GTP to ATP specificity. This is supported by nucleotide measurements showing 8-fold ATP:GTP excess at t=3.5h, the requirement for low GTP during sporulation, and the superior performance of extant SpoIVA over SpoIVAGTPase at limiting ATP concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims present the central evolutionary hypothesis, which is well-supported by multiple lines of evidence: (1) nucleotide measurements during sporulation (Figure 6A), (2) functional assays at physiological concentrations (Figure 6E-G), (3) literature on GTP depletion during sporulation, and (4) the observation that extant SpoIVA outperforms the ancestral-like variant under physiological conditions. The evolutionary argument is logical and supported by data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The authors speculate on the evolutionary trajectory: first, Lys\u2192Ser substitution in the NKxD motif modulated enzyme activity; second, loss of Asp increased ATP preference; finally, emergence of Glu in the G5 loop enhanced ATP catalytic efficiency and polymerization at lower ATP levels. This pathway is supported by the observation that variants retaining Lys are non-functional.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C134-C137 are explicitly speculative (\"we can speculate\") about the evolutionary pathway. While the speculation is informed by the mutational data showing Lys-containing variants are non-functional (Figures 2-4), this represents a proposed evolutionary trajectory rather than directly tested historical events. The speculation is reasonable but cannot be definitively supported without ancestral reconstruction or additional evolutionary analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "A model is proposed where ATP hydrolysis produces ADP-bound SpoIVA multimers that polymerize upon concentration increase, releasing ADP to form nucleotide-free polymers. GTP hydrolysis fails to retain GDP, preventing multimer formation. This model is consistent with delayed ADP release observed previously and resembles septin GDP-dependent multimerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C146 present a mechanistic model (Figure 7) that integrates multiple experimental observations: ADP-bound multimer formation (Figure 5B-C), functional polymerization after ATP removal (Figure 5E-J), nucleotide-free final polymers (C143), and failure with GTP (C146). The model is well-supported by the data and provides a coherent mechanistic framework. The comparison to septins (C142) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Background claims about nucleotide energetics and typical functions: NTP hydrolysis releases similar energy (~30 kJ/mol), ATP typically powers energy-intensive reactions while GTP functions as a switch, and ATP abundance drove evolution of motor proteins like myosin and kinesin from ancestral GTPases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C10-C12 present established knowledge from the literature with appropriate citations (Berg et al., 2007; Bennett et al., 2009; Leipe et al., 2002). These provide necessary context for the study but are not novel findings. The claims accurately represent current understanding in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Background on SpoIVA: it is a bacterial cytoskeletal ATPase from the TRAFAC class of GTPases, evolved from Era GTPase via gene duplication, exclusively found in sporulating Firmicutes, essential for spore coat assembly, and requires ATP hydrolysis to form static nucleotide-free polymers. The TRAFAC GTPases contain conserved motifs including the NKxD motif for guanine specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C27 present established background on SpoIVA and TRAFAC GTPases from prior literature (multiple citations to Ramamurthi, Castaing, Leipe, and others). These are well-documented facts that provide essential context. The structural information about the NKxD motif (C25-C27) is supported by crystal structure data from the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C129",
+      "C130"
+    ],
+    "result": "Literature-based claims about GTP depletion: amino acid starvation and stationary phase reduce GTP/GDP levels while increasing (p)ppGpp, GTP depletion is implicated in sporulation initiation, (p)ppGpp inhibits GTP production, and artificially elevating GTP during nutrient limitation is detrimental.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C126, C129-C130 present established knowledge from the literature with appropriate citations (Kriel et al., 2012; Lopez et al., 1979; Ochi et al., 1982). These provide important physiological context for understanding the selective pressure for ATP specificity but are not novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C151",
+      "C152"
+    ],
+    "result": "Discussion claims about functional implications: SpoIVA retained the ancestral 'switch' function of GTPases (conformational change upon hydrolysis), was likely recruited for structural roles due to GTPase oligomerization capacity, and functionally resembles STAND clade ATPases that use ATP hydrolysis to transmit conformational changes rather than perform motor functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C152 present interpretive conclusions about SpoIVA's functional evolution. C148 is well-supported by the conformational change data (Figure 4). C149 is reasonable speculation based on GTPase properties. C151-C152 make appropriate comparisons to STAND clade proteins with proper citations (Leipe et al., 2004; Danot et al., 2009). These provide useful functional context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Summary claims from abstract: SpoIVAGTPase functions as a GTPase but fails to polymerize due to inability to form an NDP-bound intermediate required for polymerization. It also fails to polymerize efficiently with limiting ATP. This reveals that the nucleotide base, beyond energy release, is critical for function, and ATP abundance during late sporulation drove the evolutionary change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C30-C32 are summary statements from the abstract that accurately reflect the major findings presented in the manuscript. They are supported by the detailed experimental data in Figures 2-6, including enzymatic assays, conformational change studies, polymerization assays, and nucleotide measurements. These represent appropriate high-level summaries of the work.",
+    "result_type": "MAJOR"
+  }
+]

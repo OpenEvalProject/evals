@@ -1,0 +1,338 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C44",
+      "C45",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Deletion of Mcph1 in mouse ES cells causes condensin II-dependent premature chromosome condensation during G1 and G2 phases, but not S phase, independent of CDK1 activity. This results in prophase-like chromosomes in 39.1% of cells (vs 6.4% in WT), with individualized centromeres and loss of chromocenter clustering. The phenotype is completely reversed by NCAPH2-Halo degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11, C44-C45, C55-C60, C63-C65 provide converging evidence from multiple experimental approaches (microscopy, FACS, EdU labeling, CDK1 inhibition, PROTAC degradation) demonstrating that Mcph1 deletion causes condensin II-dependent chromosome condensation during interphase. The quantification (C55), cell cycle analysis (C56-C58), and rescue experiments (C64-C65) strongly support the conclusion. The CDK1-independence (C11, C71-C75) is demonstrated through inhibitor experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "MCPH1 prevents stable association of condensin II with chromatin during interphase. FRAP experiments show that in wild-type cells, NCAPH2-Halo fluorescence recovers 95% within 1 minute, while in Mcph1-deleted cells only 28% recovers, indicating 72% of condensin II complexes are stably chromatin-associated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 present FRAP data (Figure 2) demonstrating a dramatic change in condensin II dynamics upon Mcph1 deletion. The quantitative measurements and interpretation are clearly stated. However, the manuscript does not provide information about the number of cells analyzed or statistical analysis of the FRAP data, which would strengthen confidence in the result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The hyperactivity of condensin II in Mcph1-deleted cells is independent of CDK1. Treatment with CDK1 inhibitor RO-3306 causes G2 arrest in both WT and mutant cells, but only mutant cells show prophase-like chromosome organization, indicating MCPH1 regulates condensin II directly rather than through CDK1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 provide evidence from CDK1 phosphorylation analysis (C71), cyclin B1 localization (C71), and CDK1 inhibitor experiments (C72-C74) showing that the Mcph1 deletion phenotype persists in the absence of CDK1 activity. The cell counts (200 WT cells, 150 mutant cells) provide adequate sample sizes. The conclusion that MCPH1 regulates condensin II directly (C75-C76) is a reasonable inference from these data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Hi-C analysis reveals that Mcph1 deletion causes loss of chromocenter organization (reduced p-termini and q-termini clustering), increased long-range intra-chromosomal contacts, and enhanced inter-compartment (A-B) mixing, without major changes to loops or contact domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 present Hi-C data (Figure 4) showing genome-wide changes in chromosome organization. The data are consistent with microscopy observations of chromocenter loss. The manuscript reports substantial sequencing depth (509M contacts for WT, 1.28B for mutant), supporting data quality. However, no statistical tests or replicates are mentioned for the Hi-C experiments, which limits confidence in the reproducibility of these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C12",
+      "C48",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "MCPH1 binds to condensin II through a conserved short linear motif (SLiM) in its central domain (residues 410-424) that specifically interacts with the NCAPG2 subunit. The peptide binds with Kd = 0.64 \u00b1 0.12 \u03bcM, and binding is specific to condensin II (not condensin I).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C48, C84-C93 present multiple lines of biochemical evidence (pull-downs, size exclusion chromatography, fluorescence polarization) identifying the MCPH1-condensin II interaction. The sequence conservation analysis (C90), peptide binding assays (C92-C93), and specificity tests (C86) provide strong support. The fluorescence polarization data include error estimates and replicates (n=3), strengthening confidence in the Kd measurement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "Phosphorylation of MCPH1 at S417 reduces its affinity for condensin II approximately 10-fold (from 5.3 \u00b1 1.0 \u03bcM to 53 \u00b1 8 \u03bcM), suggesting CDK1 phosphorylation may regulate MCPH1-condensin II interaction during prophase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 present fluorescence polarization competition data (Figure 5G) showing that phosphorylation at S417 reduces MCPH1 binding affinity. The measurements include error estimates and replicates. However, C96 is speculative about the biological role, as no in vivo experiments test whether S417 phosphorylation actually regulates the interaction during prophase. The result is supported biochemically but the functional significance remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The central domain SLiM of MCPH1 is essential for its interaction with condensin II and its inhibitory function in vivo. Deletion of the central domain (MCPH1\u0394Cen) abolishes co-immunoprecipitation with NCAPH2 and causes prophase-like chromosome condensation identical to complete Mcph1 deletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C102 provide co-immunoprecipitation data (Figure 6A, C) and phenotypic analysis (Figure 6E) demonstrating that the central domain is essential for both binding and function. The experiments are performed at endogenous protein levels, which is important given the authors' criticism of prior overexpression studies. The immunoprecipitation experiments are stated to be repeated three times, supporting reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "MCPH1 binding to condensin II has little effect on its ATPase activity in vitro and does not prevent simultaneous DNA binding. The condensin II-MCPH1 complex shows similar ATPase activity to condensin II alone (modestly lower DNA stimulation), and both MCPH1 and DNA can bind condensin II simultaneously in EMSA assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106 present in vitro biochemical data (Figure 7A-D) showing that MCPH1 does not directly inhibit condensin II's enzymatic activity or DNA binding. The ATPase assays include appropriate controls (Q-loop mutant) and replicates (n=3). The conclusion (C106) that the inhibitory mechanism involves features absent from in vitro assays is a reasonable inference, though it highlights that the molecular mechanism remains incompletely understood.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Overexpression of MCPH1 in mouse oocytes prevents condensin II loading on chromosomes and causes chromosome segregation defects during meiosis I. MCPH1 prevents de novo condensin II association but does not remove complexes already bound to chromosomes. The N-terminal 200 amino acids are required for this inhibitory activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C111 present live cell imaging data from mouse oocytes (Figure 8) showing that MCPH1 overexpression reduces condensin II association with chromosomes and causes segregation defects. The experiments include appropriate controls and quantification (Figure 8E). The distinction between preventing loading vs. releasing bound complexes (C110) is based on timing experiments. Sample sizes are reported (e.g., 18/19 oocytes show defects), supporting the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C13",
+      "C51",
+      "C52",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "A translational fusion between SMC2's C-terminus and NCAPH2's N-terminus is functional and resistant to MCPH1 inhibition in mouse oocytes. The fusion rescues Ncaph2 deletion (17/18 oocytes), localizes normally to chromosome axes, and remains active in the presence of excess MCPH1. TEV protease cleavage of the fusion restores MCPH1 sensitivity, indicating resistance arises from connecting the SMC2-NCAPH2 interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C51-C52, C112-C117 present compelling evidence from oocyte experiments (Figures 9) that the SMC2-NCAPH2 fusion is resistant to MCPH1. The rescue experiments (C112), localization data (C113), MCPH1 resistance (C114-C115), and TEV cleavage experiments (C116-C117) provide strong support for the conclusion that MCPH1 acts by opening the SMC2-NCAPH2 interface. Sample sizes are adequate (17/18 oocytes rescued).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C15",
+      "C54",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Simultaneous deletion of Wapl and Mcph1 causes cohesin vermicelli to adopt a coiled/solenoidal configuration during G2 and metaphase. The cohesin axes form spring-like structures visible by confocal microscopy, which super-resolution imaging reveals to be composed of twisted segments with alternating handedness. This transformation only occurs when both cohesin and condensin II are stably associated with chromatin during G2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C54, C126-C133 present microscopy data (Figures 10-11) showing dramatic chromosome reorganization in double mutants. The confocal and super-resolution (3D-SIM) imaging provide complementary views of the solenoidal structures. The observation that this only occurs when both complexes are active during G2 (C131) is an important mechanistic insight. However, the manuscript does not provide quantification of the coiling parameters or statistical analysis of the structural features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "Mcph1 deletion causes a modest but detectable reduction in NCAPH2 protein levels, implying that MCPH1 restricts the activity of individual condensin II complexes rather than regulating their abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 present Western blot data (Figures 1A, D) showing reduced NCAPH2 levels in Mcph1-deleted cells. This observation distinguishes the mechanism from other systems where increased condensin II levels cause similar phenotypes. The inference (C67) that MCPH1 restricts individual complex activity is reasonable given the FRAP data showing stable chromatin association. However, the magnitude of the reduction is not quantified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "MCPH1, not lack of CDK1 phosphorylation, prevents condensin II association with chromosomes during G2. MCPH1 inhibits condensin II during both G1 and G2 (but not S phase), and this inhibition depends on both the central SLiM and N-terminal BRCT domain. CDK1 may regulate the interaction by phosphorylating MCPH1 at S417.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C139 synthesize multiple lines of evidence to conclude that MCPH1 is the primary regulator of condensin II during interphase. The CDK1 inhibitor experiments (C134), cell cycle analysis (C136-C137), and domain requirements (C139) support this model. However, C135 and C138 involve speculation about mechanisms not directly tested. The claim about S-phase specific inhibition (C137-C138) is based on EdU labeling but the mechanism remains unknown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C14",
+      "C53",
+      "C142",
+      "C144"
+    ],
+    "result": "MCPH1 may inhibit condensin II by a mechanism similar to WAPL's regulation of cohesin, potentially by opening the interface between NCAPH2's NTD and SMC2's neck. This is suggested by the resistance of the SMC2-NCAPH2 fusion to MCPH1 inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C14, C53, C142, C144 propose a mechanistic model based on analogy to WAPL and the fusion protein experiments. While the fusion data (C13, C51-C52, C116-C117) strongly support that MCPH1 acts at the SMC2-NCAPH2 interface, the specific mechanism (opening the interface, facilitating kleisin release) remains speculative. No direct structural or biochemical evidence demonstrates that MCPH1 causes kleisin-neck dissociation. The model is plausible but requires further experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C146"
+    ],
+    "result": "MCPH1 overexpression in oocytes prevents de novo association of condensin II with chromosomes but does not remove complexes already stably associated with them.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C146 distinguishes between preventing loading and releasing bound condensin II. However, the evidence is described as \"data not shown\" and the experiments are only briefly mentioned (injection into meiosis I arrested oocytes showing \"much milder reduction within the first two hours\"). Without seeing the actual data, the strength of this conclusion cannot be properly evaluated. This represents an important mechanistic distinction that requires published data for verification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Background knowledge about chromosome organization, cohesin and condensin function, WAPL mechanism, and MCPH1 mutations in microcephaly patients. These claims establish the scientific context for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C43 present established knowledge from the literature, supported by appropriate citations. These provide essential background for understanding the significance of the experimental findings. The claims accurately represent current understanding of SMC complex function, loop extrusion, and the clinical phenotype of MCPH1 mutations. No experimental evaluation is needed for these knowledge claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Wapl deletion causes cohesin to form vermicelli (thread-like structures with axial accumulation), while Mcph1 deletion causes condensin II to form gumball chromosomes without forming axes. In wild-type cells, cohesin and condensin II show distinct localization patterns during the cell cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C125 describe the distinct phenotypes of single mutants and wild-type localization patterns. These observations (Figure 10) establish the baseline for understanding the double mutant phenotype. The descriptions are consistent with prior literature (C118, C123 cite previous work) and the microscopy data presented. These serve as important controls for interpreting the double mutant results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C7",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Discussion of loop extrusion mechanisms and speculation about how MCPH1 might interfere with condensin II loading through NCAPD3. The authors propose that inactivation of either WAPL or MCPH1 leads to chromatid-like structures during interphase, and simultaneous depletion causes major chromosome transformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C147-C153 mix established knowledge about loop extrusion (C147) with speculation about mechanisms (C148, C150, C151). The discussion of how MCPH1 might interfere with NCAPD3 function (C151) is entirely speculative with no experimental support. Claims C152-C153 summarize the main findings but C153 is already covered in the double mutant result. These claims represent discussion and speculation rather than experimental results.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,342 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "In passive stretch of relaxed rat muscle, muscle spindle Ia afferent firing rates can be described in terms of extrafusal muscle fiber force and yank. Linear combinations of estimated extrafusal muscle fiber force and yank, subjected to a threshold, reconstruct fine temporal details of rat Ia afferent firing including initial bursts, dynamic responses, rate adaptation, and movement history-dependent firing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C22 collectively demonstrate that muscle fiber force and yank can reconstruct diverse passive features of rat muscle spindle firing. The experimental data in Figures 1 and 2 show strong correlations between the force/yank model and recorded firing rates, with specific features (initial bursts, dynamic responses, rate adaptation) attributed to specific components (yank vs. force). The assumption in C15 is reasonable for passive conditions and the approach is validated across multiple afferents.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The sensitivity of muscle spindle Ia afferents to force and yank can be decoupled, as demonstrated by differential effects of oxaliplatin treatment and axonal stimulation. Varying force and yank sensitivity generates a spectrum of firing phenotypes resembling experimentally observed static and dynamic muscle spindle responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 are well-supported by experimental manipulations (oxaliplatin and axonal stimulation) that selectively alter force vs. yank sensitivity, and by systematic modeling showing that varying these sensitivities reproduces the continuum of static-to-dynamic firing phenotypes observed experimentally. The data in Figures 2D-F and Figure 3 provide converging evidence for independent force and yank encoding mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "A biophysical muscle spindle model based on cross-bridge cycling kinetics of intrafusal muscle fibers predicts well-known firing characteristics. The model consists of parallel 'dynamic' and 'static' fibers with different myosin kinetics, and history-dependent forces emerge from cross-bridge population dynamics including short-range stiffness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C36-C43 describe the core biophysical model structure and demonstrate that it produces history-dependent forces from first principles. The model design is justified by citations to prior work on muscle mechanics and intrafusal fiber properties. Figure 4 shows the model architecture and demonstrates emergent cross-bridge dynamics. The approach is mechanistically grounded rather than phenomenological.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The biophysical model predicts that the scaling properties of muscle spindle dynamic responses and initial bursts with stretch velocity arise from intrafusal cross-bridge kinetics. The model exhibits sublinear (fractional-power) velocity scaling of dynamic index and linear acceleration scaling of initial burst amplitude, both emerging from the same mechanistic framework.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 demonstrate that classic velocity-dependent firing properties emerge from the cross-bridge model without explicit parameterization. Figure 5 shows quantitative agreement with classical experimental data for both velocity and acceleration scaling. The novelty claim (C49) appears valid based on the literature citations provided. The mechanistic explanation (strain-dependent detachment rates) is clearly articulated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The biophysical model predicts history-dependent changes in muscle spindle firing (initial burst and dynamic response) analogous to those observed in multiple species. History dependence emerges from asymmetry in strain-dependent cross-bridge detachment rates, with recovery occurring over ~10 seconds. This is the first demonstration of history dependence in a muscle spindle model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C56 show that the model reproduces history-dependent firing patterns observed across species (cat, rat, toad, human). Figure 6 demonstrates qualitative agreement with experimental data from multiple sources. While the model doesn't quantitatively match all details (acknowledged in C113), it captures the key phenomena. The novelty claim (C56) is supported by citations showing prior models lack this feature, though the mechanism was previously hypothesized (C55).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C91"
+    ],
+    "result": "The biophysical model predicts differential effects of dynamic versus static gamma motor neuron activation on muscle spindle firing. Dynamic gamma drive increases initial burst and dynamic responses with smaller effects on baseline firing, while static gamma drive primarily increases baseline firing. These effects, including changes in dynamic index, match prior experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 and C91 demonstrate that gamma drive effects emerge from the biophysical model without explicit parameterization. Figure 7 shows quantitative predictions matching classical experimental findings. The model correctly predicts opposite effects on dynamic index for dynamic vs. static fiber activation. This validates that the model captures fusimotor control mechanisms through muscle mechanics alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "During isometric conditions, the interaction between alpha drive (extrafusal muscle) and gamma drive (intrafusal muscle) produces highly variable muscle spindle firing patterns. Depending on the relative balance of alpha and gamma drive, Ia afferents can increase firing, decrease firing, or remain silent, explaining paradoxical observations in human experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C61-C72 demonstrate complex alpha-gamma interactions during isometric contractions. Figure 8 systematically shows how different combinations of drives produce diverse firing patterns, including the paradoxical human data from Edin & Vallbo (1990). The mechanistic explanation (extrafusal shortening vs. intrafusal activation) is clear and the simulations span the range of experimental observations. This addresses a longstanding puzzle in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "During muscle stretch with varying levels of alpha and gamma drive, muscle spindle firing depends on the interaction between musculotendon dynamics and intrafusal activation. Alpha drive reduces muscle spindle responses by causing extrafusal shortening, while gamma drive increases responses by activating intrafusal fibers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78 demonstrate how alpha and gamma drive interact during muscle stretch. Figure 9 shows systematic effects on initial burst, dynamic response, and baseline firing. The results are internally consistent and mechanistically explained by the model structure. This extends the isometric findings to dynamic conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The multiscale biophysical model demonstrates that diverse Ia afferent firing characteristics emerge from first principles of intrafusal muscle contractile mechanics. The model converts intrafusal force and yank into driving potentials via a simple linear relationship, representing the mechanotransduction process, and provides a framework for understanding proprioceptive signals across conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84 summarize the main contributions of the work. The model successfully predicts multiple firing characteristics (history dependence, velocity scaling, gamma effects, alpha-gamma interactions) from biophysical principles without parameter changes across conditions. The framework is demonstrated to be more general than prior phenomenological models. The claim about providing a foundation for future work (C83) is reasonable given the demonstrated capabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C101",
+      "C102"
+    ],
+    "result": "Depending on neuromechanical conditions, muscle spindle firing can appear to encode various biomechanical variables including force, yank, length, stiffness, velocity, and/or acceleration. The model reveals that firing depends critically on intrafusal fiber activation, force, and length, which shapes the degree to which firing resembles different extrafusal muscle variables.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C101, and C102 are supported by the diverse simulations showing context-dependent encoding properties. The model demonstrates how the same spindle can appear to encode different variables under different alpha-gamma activation patterns and mechanical conditions. This provides a mechanistic explanation for the apparent flexibility of muscle spindle encoding observed experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7"
+    ],
+    "result": "Muscle spindle Ia afferent firing exhibits movement history dependence and nonlinear scaling with stretch velocity. Firing patterns do not uniquely encode muscle length and velocity even in controlled conditions, and independent alpha and gamma activation can each profoundly alter sensory signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C6, and C7 establish well-known properties of muscle spindles that motivate the modeling work. These are supported by extensive citations to prior experimental literature and are consistent with the experimental data presented in the manuscript. These claims provide essential context for the significance of the modeling contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C30",
+      "C31",
+      "C85",
+      "C88",
+      "C89"
+    ],
+    "result": "Existing computational models of muscle spindle firing are largely phenomenological, have high fidelity under specific conditions but generalize poorly, and do not simulate history dependence. Prior models explicitly impose features like fractional-power velocity relationships rather than deriving them from biophysical principles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C9, C30, C31, C85, C88, and C89 provide a critical assessment of prior modeling approaches, supported by citations to existing models. The characterization of prior models as phenomenological and lacking history dependence is accurate based on the cited literature. This establishes the novelty and advantages of the current biophysical approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The anatomical arrangement and biomechanical properties of intrafusal muscle fibers affect muscle spindle firing. Muscle spindles contain specialized bag and chain fibers with similar basic architecture, innervated by gamma motor neurons in polar regions, with mechanotransduction occurring at the equatorial region. However, intrafusal forces have not been recorded with afferent activity, and few receptor potential recordings exist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 and C32-C35 summarize established anatomical and physiological knowledge about muscle spindles, supported by extensive citations. The statements about experimental limitations (C12, C13) accurately describe gaps in the literature that motivate the modeling approach. This background is essential for understanding the model design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The model design with slow-cycling myosin in the dynamic fiber and fast-cycling myosin in the static fiber, combined with structural modeling of intrafusal-extrafusal interactions, enables robust simulation of gamma drive effects. Variations in force and yank sensitivity account for static-dynamic variability across afferents and predict firing across different velocities and displacements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C97 describe key model design choices and their consequences. The design is justified by citations to fiber properties (C92) and prior structural models (C93). The ability to account for afferent variability (C94, C96) and generalize across conditions (C97) is demonstrated in Figures 3 and 5. These are important validation results supporting the model's utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Explicit simulation of intrafusal muscle fibers within the muscle-tendon unit demonstrates profound effects of alpha and gamma drive during active conditions. This approach emphasizes the importance of anatomical arrangement shown in prior models and provides a computational testbed for exploring how intrafusal forces drive firing rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 describe the musculotendon modeling approach and its advantages. The importance of this structural approach is demonstrated in Figures 8 and 9. The comparison to prior work (C99) is supported by citations. The claim about providing a testbed (C100) is reasonable given the demonstrated capabilities, though somewhat speculative about future applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The model may explain complex Ia afferent behavior during locomotion, where firing appears to follow velocity/length during swing phase, increases during early stance despite no length change, and ceases during midstance. The model also addresses load-dependent firing in humans, potentially through agonist-antagonist interactions, though simulating intermuscular interactions would require coupled models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C109 propose interpretations of locomotor and load-dependent firing based on the model, supported by citations to experimental observations. However, these specific scenarios were not actually simulated (acknowledged in the text). The interpretations are plausible given the model's demonstrated capabilities, but remain speculative without direct validation. The suggestion about intermuscular interactions (C108, C109) is reasonable but untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C122"
+    ],
+    "result": "The model provides proof of concept for more elaborate models and can serve as a platform for testing effects of various multiscale mechanisms on muscle spindle firing. Future work could optimize parameters to match specific experimental conditions following approaches like Mileusnic et al. 2006.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110, C111, and C122 describe the model's potential for future extensions. The proof-of-concept claim (C110) is supported by the demonstrated capabilities. The platform claim (C111) is reasonable given the modular structure, though the specific extensions listed are speculative. The suggestion about parameter optimization (C122) is a reasonable future direction supported by citation to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The model was designed to qualitatively reproduce history dependence using a simple two-state cross-bridge model. While it has limitations (cannot separate elastic contributions, discrepancies in triangle stretches, may not account for occlusion), it successfully reproduces sinusoidal stretch responses. Future improvements may require muscle-specific kinetics, sophisticated titin models, or accounting for additional history-dependence sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C117 provide an honest assessment of model limitations and potential improvements. The acknowledgment of qualitative vs. quantitative goals (C112) and specific shortcomings (C113, C114) is appropriate. The speculation about future improvements (C115, C116, C117) is reasonable and supported by citations. This critical self-assessment strengthens confidence in the supported claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Mechanotransduction mechanisms remain incompletely understood, so the model represents this process with constant gains. The dynamics of equatorial region viscoelasticity, ion channels, and intrinsic neural dynamics likely play significant roles not fully captured. The model framework could potentially extend to group II afferents and Golgi tendon organs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C121 acknowledge limitations in modeling mechanotransduction and neural dynamics, supported by citations. The simplification to constant gains (C119) is clearly stated as a limitation. The recognition of unmodeled factors (C120) is appropriate and supported by literature. The speculation about extensions to other proprioceptors (C121) is reasonable but untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The complex interplay between central drive, internal forces, and environmental forces cannot be ignored when interpreting muscle spindle firing, especially during voluntary movement and environmental interactions. Neuromechanical interactions are key for understanding perception of force and position. The model provides a framework to move beyond viewing spindles as simple passive encoders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C125 present the main conceptual conclusions of the work, supported by the modeling results and citations to prior work on perception (C124). The argument that spindles cannot be viewed as simple encoders is well-supported by the demonstrated context-dependent firing patterns. This represents an important conceptual advance in understanding proprioception.",
+    "result_type": "MAJOR"
+  }
+]

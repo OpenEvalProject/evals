@@ -1,0 +1,426 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C35",
+      "C36",
+      "C37",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The Reproducibility Project: Cancer Biology attempted to replicate 193 experiments from 53 high-impact papers published in 2010-2012, but completed only 50 experiments (26%) from 23 papers, examining 158 effects total. All protocols were peer-reviewed in advance with sample sizes determined a priori for at least 80% power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C35-C37, and C135-C139 provide consistent, well-documented evidence about the project's scope, design, and completion rate. The methodological rigor (peer review, preregistration, power calculations) is clearly stated and the completion rate (26%) is transparently reported with reasons detailed in a companion paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C38",
+      "C39",
+      "C6",
+      "C7",
+      "C40",
+      "C41"
+    ],
+    "result": "Of the 158 effects examined, 136 (86%) were positive effects and 22 (14%) were null effects in the original papers. Among these, 117 (74%) were reported as numerical values and 41 (26%) as representative images.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 and C38-C41 provide consistent descriptive statistics about the distribution of effect types and reporting formats in the original studies. These are straightforward data summaries that are internally consistent and add up correctly (136+22=158; 117+41=158).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C110"
+    ],
+    "result": "Among positive effects, 79% of replications (108/136) were in the same direction as the original finding, with similar rates for numerical results (80%) and representative images (79%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C43, and C110 consistently report the 'same direction' criterion results. The data are internally consistent and the comparison between numerical and image-based results strengthens the finding. However, the authors correctly note this is a 'low bar' for replication success.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "For the 97 positive effects with statistical tests, only 43% of replications were statistically significant in the same direction, far below the expected 87% if replications were consistent with originals. For 15 null effects, 73% of replications remained null.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C52 provide detailed statistical comparisons with appropriate power calculations (C48). The observed 43% success rate is substantially and significantly lower than the expected 87%, providing strong evidence of replication challenges. The statistical reasoning is sound and the comparison to expected values strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C109"
+    ],
+    "result": "For positive effects, the median replication effect size was 85% smaller than the original (0.43 vs 2.96), and 92% of replication effect sizes were smaller than the original. This pattern is statistically highly significant (binomial test p = 1.92 \u00d7 10\u207b\u00b2\u2074).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C70-C74, and C109 consistently document dramatic effect size reductions. The binomial test (C72) provides strong statistical evidence that this pattern is not due to chance. The 97% rate (94/97) of smaller effects for numerical results is compelling evidence of systematic overestimation in original studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Comparing effect size distributions, original positive effects had mean 6.15 (median 2.96) versus replication mean 1.37 (median 0.43). Despite magnitude differences, larger original effects correlated with larger replication effects (Spearman's r = 0.47, p = 1.83 \u00d7 10\u207b\u2077).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 provide detailed statistical comparisons showing both the magnitude of effect size differences and preservation of rank ordering. The significant correlation (C79) suggests some signal despite overall attenuation, which is an important nuance. The statistics are appropriate and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Only 18% of original positive effect sizes fell within the 95% CI of replication effect sizes, while 73% of null effects did. Combining numerical and image data, 30% of replications were consistent on this criterion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 report a stringent replication criterion with appropriate acknowledgment that larger replication sample sizes (C55) affect CI precision. The stark difference between positive (18%) and null (73%) effects is internally consistent and methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "When testing if replication effect sizes fell within original 95% CIs, 43% of positive effects and 80% of null effects met this criterion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 report the complementary CI criterion. The higher success rate (43% vs 18% in the reverse direction) is correctly attributed to smaller original sample sizes creating wider CIs. This methodological insight strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Using the 95% prediction interval criterion, 58% of positive effects and 80% of null effects replicated successfully. The median p_orig was 0.064, with 42% having p_orig < 0.05, and aggregated p_orig of 0.0005 indicating significant inconsistency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C69 employ sophisticated statistical methods (prediction intervals, p_orig metric) with appropriate citations. The authors correctly note this is a more liberal criterion. The aggregated p_orig analysis (C69) using harmonic mean p-values provides strong evidence of systematic inconsistency across the dataset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Across three null hypothesis significance testing criteria, only 13/97 (13%) positive effects succeeded on all three, while 40/97 (41%) failed on all three. For null effects, 8/15 (53%) succeeded on all three criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 synthesize multiple criteria to provide a comprehensive assessment. The distribution across success levels is clearly reported and the stark contrast between positive and null effects is consistent with other findings. The multi-criteria approach strengthens confidence in the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Meta-analytic combination of original and replication data showed 62% of positive effects significant at p<0.05 (40% at p<0.005), with mean effect size 1.66. For null effects, 67% remained null, but combining data revealed significant effects in one-third of cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 appropriately use fixed-effect meta-analysis to combine evidence. The finding that combining data for null effects reveals significance in 33% of cases (C84) is important and correctly interpreted as potentially indicating underpowered original studies. The methodology is sound with appropriate caveats about potential publication bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Across five dichotomous criteria, 40% of positive effects (39/97) succeeded on three or more criteria, while 80% of null effects (12/15) did. Overall, 46% (51/112) succeeded on a majority of criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 and C101-C106 provide a comprehensive multi-criteria synthesis. The consistent finding that null effects replicate at twice the rate of positive effects (80% vs 40%) is robust across multiple analytical approaches. The detailed breakdown by number of criteria met (C101-C104) adds transparency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C107"
+    ],
+    "result": "The five replication criteria were positively correlated with one another (range 0.15 to 0.78, median 0.345), suggesting they provide related but distinct information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C107 appropriately characterizes the relationships among criteria. The moderate correlations indicate the criteria capture overlapping but not redundant aspects of replication success, justifying the multi-criteria approach. This is supported by Figure 7.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C118",
+      "C119"
+    ],
+    "result": "Animal experiments showed lower replication rates than non-animal experiments on all criteria (e.g., 12% vs 54% for significance agreement). However, this appears driven by smaller original effect sizes in animal experiments (median 1.61 vs 3.65) rather than experiment type per se.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 and C97-C100 document descriptive differences, while C118-C119 provide the key mechanistic insight. The interpretation that effect size rather than experiment type drives replication success is well-supported by the data and represents sophisticated causal reasoning. This is an important finding for understanding replication patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "Multi-level models found no consistent significant association between five candidate moderators (animal vs non-animal, CRO labs, core facilities, materials sharing, clarification quality) and replication success, though moderators were variably correlated (r = -0.68 to 0.53).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 report null findings from appropriately sophisticated statistical models accounting for nested data structure. The authors correctly note they cannot generalize about these moderators' effects beyond this sample. The correlation among moderators (C90) is important context. The analysis is methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Original animal experiments rarely reported key methodological details: 0/15 reported blinding, 1/15 reported randomization, 0/15 reported a priori sample size determination. Replications reported these practices much more frequently (5/15 blinding, 13/15 randomization, 15/15 a priori sample sizes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C96 document a stark contrast in methodological reporting and practices between original and replication studies. This is important context for interpreting replication outcomes, though the authors appropriately note these factors couldn't be examined as moderators due to lack of variation in originals. The data are clearly presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Combining positive and null effects across five criteria, replication success rates were: 47% for direction and significance, 25% for original in replication CI, 48% for replication in original CI, 61% for prediction interval, and 63% for meta-analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C116 provide a clear summary of success rates across all criteria. The range from 25% to 63% reflects the different stringency and assumptions of each criterion. This comprehensive reporting allows readers to evaluate replication success under multiple frameworks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C117"
+    ],
+    "result": "Replication rates were relatively consistent across different levels of aggregation (outcomes, effects, experiments, papers).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C117 addresses an important methodological concern about how nested data structure affects conclusions. The consistency across aggregation levels (documented in Tables 1-6 and supplementary materials) strengthens confidence that findings are robust to analytical choices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C108",
+      "C127"
+    ],
+    "result": "Across multiple criteria, replications provided weaker evidence than original papers, suggesting replicability is lower than expected in the published literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108 and C127 provide appropriate summary statements supported by the extensive quantitative evidence from other claims. The cautious language ('suggests,' 'lower than expected') is appropriate given the limitations discussed. This represents a fair synthesis of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The authors emphasize that successful replication does not definitively confirm findings, and replication failure does not definitively disconfirm them, but failure suggests additional investigation is needed. Findings can be replicable yet invalid, or fail to replicate for various reasons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14 and C20-C22 provide important epistemological context for interpreting replication results. These are well-established principles in philosophy of science (supported by citations in C17) and represent appropriate scientific humility. The nuanced interpretation strengthens rather than weakens the paper's conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C128"
+    ],
+    "result": "Replication failures could result from false positives in originals (supported by evidence of low power, publication bias, p-hacking), false negatives in replications, or genuine differences in experimental contexts. The causes are likely multifactorial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C122 and C128 appropriately discuss multiple possible explanations for non-replicability. C121 is well-supported by extensive citations to the literature on research practices. The authors appropriately acknowledge they cannot definitively parse causes for individual findings, which is scientifically honest.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The project used independent laboratories with appropriate expertise, employed large sample sizes, used original materials when possible, engaged advance peer review, preregistered protocols, and made all materials, data, and code openly available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C125 describe methodological safeguards implemented to maximize replication quality. These practices represent current best practices in replication research and are well-documented. The transparency (C125) allows for independent verification and critique, which is a strength.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Prior evidence suggests non-replicability may be occurring at higher rates than recognized, driven by incentives favoring innovation over verification. Theoretical analyses, surveys, and prior replication studies across disciplines document replication challenges, with particularly low success rates in biomedical research (11-25% in industry studies).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C34 provide extensive context from prior literature, all supported by appropriate citations. The range of evidence types (theoretical analyses, surveys, empirical replication studies) strengthens the case that replication challenges are widespread. However, the authors appropriately note limitations in prior industry studies (lack of transparency).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C126",
+      "C131",
+      "C132"
+    ],
+    "result": "The study provides substantial evidence about replicability in high-impact cancer biology papers from 2010-2012. The high failure rate may indicate friction in translating preclinical research and reinforces calls for improved rigor and transparency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126, C131-C132 provide appropriate summary and implications. The connection to translational challenges (C131) is speculative but reasonable given the evidence. C132 appropriately links findings to prior recommendations with supporting citations. The scope and limitations are clearly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C133",
+      "C134"
+    ],
+    "result": "Replicability is an important feature of scientific research, though contemporary culture's emphasis on novelty can undervalue it. Science earns trustworthiness through continuously seeking and eradicating error.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19 and C133-C134 provide philosophical framing supported by appropriate citations (C17). These represent well-established principles in philosophy of science and provide important context for the empirical work. The statements are conceptually sound and appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C129",
+      "C130"
+    ],
+    "result": "Research culture creates dysfunctional incentives and practices that reduce credibility. Selective reporting, questionable research practices, and low-powered research contribute to unreliability across disciplines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C130 synthesize evidence about systemic issues in research culture, supported by multiple citations. These represent well-documented problems in the literature. The claims appropriately distinguish between evidence about the current system and the present study's specific findings.",
+    "result_type": "MINOR"
+  }
+]

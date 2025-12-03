@@ -1,0 +1,391 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C45",
+      "C46",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C60"
+    ],
+    "result": "Low-dose pinometostat (10-100 nM) reduces MV4;11 cell proliferation without affecting HOXA9 and MEIS1 expression, with MLL-r cell lines harboring FLT3-ITD mutations being most susceptible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent experiments with two different DOT1L inhibitors (pinometostat and SGC0946) consistently show proliferation reduction at low doses without HOXA9/MEIS1 downregulation (C55-C58, C60). The data include dose-response curves, Western blots, and RT-qPCR from multiple timepoints, providing strong convergent evidence. This represents a clear exception to the canonical model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C69",
+      "C70",
+      "C82",
+      "C92",
+      "C93"
+    ],
+    "result": "Low-dose pinometostat treatment results in thousands of differentially expressed genes including downregulation of MLL-AF4 targets FLT3, MEF2C, and PBX3, with more genes upregulated than downregulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RNA-seq data shows 1916 downregulated and 2007 upregulated genes (C61), with significant overlap with published MLL-AF4 targets (C62, C63). The downregulation of FLT3, MEF2C, and PBX3 is verified by both RNA-seq and orthogonal RT-qPCR and Western blot methods (C82, C92, C93), providing robust validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C48",
+      "C99",
+      "C102",
+      "C103",
+      "C105",
+      "C108",
+      "C116"
+    ],
+    "result": "ICeChIP-seq reveals that MLL-AF4 targets downregulated by pinometostat have the highest H3K79me2 levels and experience the largest reductions in H3K79me2 density upon treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Quantitative ICeChIP-seq data demonstrates that pinometostat-downregulated MLL-AF4 targets have higher H3K79me2 than other gene categories and show the largest HMD reductions (C102, C105, C116). The correlation between H3K79me2 levels and gene expression (R\u00b2=0.53, C99) and the dramatic reduction in H3K79me2 density across gene bodies (C108) provide strong mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C132"
+    ],
+    "result": "MLL-r cell lines with FLT3-ITD mutations show significantly greater sensitivity to both DOT1L inhibition and FLT3 inhibition compared to those with wild-type FLT3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Systematic comparison across four cell lines with matched MLL translocations but different FLT3 status shows consistent differential sensitivity (C126-C130, C132). MV4;11 (FLT3-ITD/ITD) shows 74% viability reduction while SEM (WT FLT3) shows no change with 100 nM pinometostat (C127-C128), providing clear evidence of FLT3-dependent sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Low-dose pinometostat reduces STAT5A phosphorylation by 65\u00b18% in MV4;11 cells, with FLT3 expression reduced earlier (48h) than other MLL-AF4 targets (72h).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Western blot data shows reduced STAT5A phosphorylation without affecting total STAT5A levels (C136, C137), and time-course RT-qPCR demonstrates FLT3 is uniquely sensitive at 48h while other targets require 72h (C141-C143). The quantification (65\u00b18% reduction, C137) and comparison with FLT3 inhibitor effects (C140) provide robust evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C161"
+    ],
+    "result": "FLT3 knockdown recapitulates pinometostat effects by reducing proliferation, STAT5A phosphorylation, and expression of STAT5A target genes PIM1 and ARID3B.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "shRNA-mediated FLT3 knockdown in three independent clones shows consistent proliferation reduction (C156), reduced STAT5A phosphorylation (C157), and downregulation of STAT5A targets (C158). This genetic validation provides strong causal evidence that FLT3 downregulation mediates pinometostat effects, though the rescue is not complete.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C183",
+      "C184",
+      "C186",
+      "C190",
+      "C191"
+    ],
+    "result": "Overexpression of constitutively active STAT5A rescues MV4;11 cells from pinometostat-induced proliferation defects and apoptosis in proportion to expression level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Three independent STAT5A-CA clones show dose-dependent rescue of proliferation (C183, C184), restoration of target gene expression (C186), and complete rescue from apoptosis at 100 nM pinometostat (C190, C191). The proportional rescue across clones with different expression levels provides strong evidence for STAT5A as the critical mediator.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C50",
+      "C215",
+      "C216",
+      "C217",
+      "C218"
+    ],
+    "result": "Pinometostat treatment causes paradoxical genome-wide increases in H3K4me3 at transcription start sites, with the largest increases at downregulated MLL-AF4 targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ICeChIP-seq data shows genome-wide H3K4me3 increases (C215), with pinometostat-downregulated MLL-AF4 targets having the highest H3K4me3 levels (C217). The observation at both 4-day and 7-day timepoints (C219) and validation by qPCR in independent experiments provides robust evidence for this unexpected finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C49",
+      "C193",
+      "C194",
+      "C198",
+      "C199"
+    ],
+    "result": "Pinometostat treatment causes genome-wide reduction in H3K27me3 through downregulation of PRC2 complex members EZH2 and EED.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RT-qPCR and Western blot show EZH2 and EED downregulation (C193), and quantitative ICeChIP-seq demonstrates genome-wide H3K27me3 reduction of 2-5% at promoters (C198, C199). The mechanistic link between PRC2 component downregulation and H3K27me3 loss is well-supported, though the functional consequences are more modest.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C207",
+      "C208",
+      "C209"
+    ],
+    "result": "EZH2 overexpression provides only partial rescue of proliferation defects from pinometostat, indicating PRC2 pathway contributes modestly compared to FLT3-STAT5A pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "EZH2 overexpression shows partial but incomplete rescue (C207), contrasting with near-complete rescue by STAT5A-CA (C183). This comparative analysis clearly establishes the FLT3-ITD-STAT5A pathway as predominant (C209), though the lack of quantitative comparison limits precision.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C214",
+      "C228",
+      "C229",
+      "C230",
+      "C231"
+    ],
+    "result": "MLL1 inhibitors (MI-503 and MM-401) show greater effects on FLT3-ITD+ cells, reduce STAT5A phosphorylation, and effects are rescued by STAT5A-CA overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Proliferation assays show differential sensitivity based on FLT3 status (C214), Western blots demonstrate reduced STAT5A phosphorylation (C228), and STAT5A-CA provides partial to complete rescue depending on expression level (C230, C231). This orthogonal validation strengthens the conclusion that the pathway is generally sensitive to MLL-fusion disruption.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "DOT1L inhibition reduces viability of non-MLL-rearranged FLT3-ITD+ leukemia (PL-21) through FLT3-ITD/STAT5A pathway disruption, independent of HOXA9/MEIS1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "PL-21 cells show reduced viability with 10 \u00b5M pinometostat (C163), accompanied by FLT3 and PIM1 downregulation (C164) and reduced STAT5A phosphorylation (C166). The absence of detectable HOXA9/MEIS1 expression (C168) provides strong evidence that FLT3-ITD targeting is mechanistically distinct from canonical MLL-r pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "Low-dose pinometostat (100 nM) reduces EOL-1 (MLL-PTD) viability and FLT3 expression without affecting HOXA9, MEIS1, or PIM1, consistent with published xenograft data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "EOL-1 cells show viability reduction at 100 nM pinometostat (C173) with FLT3 downregulation but no change in HOXA9, MEIS1, or PIM1 (C174). This finding is consistent with published in vivo data (C175), providing independent validation. However, the lack of STAT5A phosphorylation changes (C176) suggests a different mechanism than FLT3-ITD cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Pinometostat treatment upregulates MHC class II and immune response genes, with enrichment for interferon-gamma signaling pathway and hematopoietic differentiation markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RNA-seq shows upregulation of MHC class II genes (C71), confirmed by RT-qPCR (C72), with GO enrichment for immune response pathways (C73). GSEA shows enrichment for differentiation factors (C79) and upregulation of CSF1R/CSF3R (C80). The pattern suggests differentiation toward macrophage-like state, though the functional significance is not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C220",
+      "C221",
+      "C222",
+      "C224"
+    ],
+    "result": "The poor correlation between H3K79me2 reductions and H3K4me3 increases is incompatible with direct antagonism, suggesting decoupling of transcription initiation from elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ICeChIP-seq analysis shows poor correlation between H3K79me2 loss and H3K4me3 gain (C220), ruling out direct antagonism (C221). The observation that genes are downregulated despite H3K4me3 increases (C222) and lack of correlation with transcriptional activity (C224) support the decoupling model, though alternative mechanisms are not fully explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C233",
+      "C234",
+      "C235",
+      "C237",
+      "C238",
+      "C239"
+    ],
+    "result": "Combined MLL1 and DOT1L inhibitors show additive effects on proliferation and downregulate partially overlapping gene sets including FLT3, MEF2C, and PIM1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Proliferation assays show additive effects (C233), and RT-qPCR demonstrates that MI-503 alone causes 30% FLT3 reduction, doubling to 60% with combination treatment (C235). The differential effects on HOXA9/MEIS1 (C237) and overlapping targets (C239) suggest distinct but convergent mechanisms, though the molecular basis for additivity is not fully elucidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Fold-change in H3K79me2 HMD shows poor linear correlation (R\u00b2=0.13) with gene expression changes, but genes with largest HMD reductions are uniformly downregulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ICeChIP-seq and RNA-seq integration shows poor overall correlation (C112), but analysis of absolute HMD differences reveals that genes with largest reductions are uniformly downregulated (C113). FLT3-ITD-upregulated genes show small HMD reductions, suggesting secondary effects (C115). This nuanced analysis reveals context-dependent H3K79me2 function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Four-day pinometostat treatment shows differential H3K79me2 depletion kinetics, with 5' peak reduction at MLL-AF4 targets but increased HMD in gene bodies of downregulated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ICeChIP-seq at 4-day timepoint shows little effect on highly expressed genes (C119), diminished 5' peaks at MLL-AF4 targets (C120), but paradoxically increased HMD in gene bodies of downregulated genes (C121). This temporal analysis reveals complex depletion dynamics, though the mechanism for the 3' shift is not explained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C203",
+      "C204",
+      "C205",
+      "C206"
+    ],
+    "result": "EZH2 inhibition downregulates HOXA9 and MEIS1 without affecting FLT3 or STAT5 phosphorylation, indicating PRC2 pathway is largely independent of FLT3-ITD-STAT5A pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "EI1 treatment shows opposite effects on HOXA9/MEIS1 compared to low-dose pinometostat (C203), with no changes in FLT3 or STAT5 phosphorylation (C204). This differential response pattern provides strong evidence for pathway independence (C206), though the speculation about H3K27me3 levels (C205) is not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background context on MLL-rearranged leukemia: accounts for ~10% of leukemias, prominent in infants (70-80%), has poor prognosis, and requires additional mutations for full leukemogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the clinical and biological context from cited literature (C14-C16). The evidence for cooperating mutations comes from patient data showing additional mutations (C18) and mouse model latency data (C19-C20). This background is well-established in the field and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Background on MLL1 biology: MLL1 is an H3K4 methyltransferase regulating HOX genes; translocations create fusions lacking methyltransferase activity that recruit DOT1L to hypermethylate H3K79 and activate target genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims summarize established molecular biology of MLL1 and MLL-fusions from cited literature (C21-C30). The facts about MLL1 function, fusion partners, DOT1L recruitment, and target gene activation are well-documented in the field. This provides necessary background for understanding the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Background on DOT1L inhibition and HOXA9/MEIS1: DOT1L ablation abrogates MLL-fusion gene expression, induces apoptosis/differentiation, extends mouse survival; HOXA9/MEIS1 co-expression causes leukemia in mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the canonical model from cited literature showing DOT1L is required for MLL-fusion leukemia (C31-C33) and HOXA9/MEIS1 are sufficient for leukemogenesis (C34-C36). This well-established paradigm provides the context for the current study's findings that challenge this model at low inhibitor doses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Background on pinometostat: highly specific DOT1L inhibitor with 37,000-fold selectivity; MLL-AF4 cell lines show variable sensitivity; MV4;11 IC50 for proliferation is 20\u00d7 lower than for HOXA9/MEIS1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish pinometostat specificity and the key observation motivating the study: differential IC50 values for proliferation vs. HOXA9/MEIS1 expression (C43). This is cited from published literature and provides the rationale for investigating low-dose effects. The inference about HOXA9/MEIS1 not contributing at low doses (C44) is reasonable but speculative.",
+    "result_type": "MINOR"
+  }
+]

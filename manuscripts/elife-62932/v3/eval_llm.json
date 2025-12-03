@@ -1,0 +1,234 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C18",
+      "C24",
+      "C25",
+      "C68"
+    ],
+    "result": "The authors developed an experimental system using two engineered S. cerevisiae strains (K1 and K2) that express different killer toxins under independent, titratable control via galactose- and copper-inducible promoters, providing a synthetic model for studying microbial antagonism with tunable interaction strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C18, C24, C25, and C68 collectively describe the construction and key features of the experimental system. The genetic constructs are detailed in the methods, shown in Figure 1A, and the independent control of toxin production is demonstrated throughout Figures 2-5. This represents a well-documented methodological achievement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Increasing inducer concentrations (galactose for K1, copper for K2/K2b) increased the killing strength of toxin-producing strains in competition assays, with K2b being a weaker killer than K2 at all copper concentrations, and K1 showing no killing activity without galactose while K2/K2b showed leaky expression without copper.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 are directly supported by experimental data in Figure 2, which shows dose-dependent increases in killer frequency over time with increasing inducer concentrations. The leaky expression of PCUP1 is supported by both experimental data and literature citations (Butt et al., 1984; Gorman et al., 1986).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C20",
+      "C22"
+    ],
+    "result": "Mathematical models of population dynamics regulated by toxin production and toxin-induced cell death were developed, parametrized using killer vs. sensitive competition assays, and correctly predict the dynamics of competition between toxin-producing strains in well-mixed and spatially structured populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C20, and C22 describe the modeling framework. The models (Equations 1-12) are parametrized using data from Figure 2, and their predictions match experimental data in Figures 3, 4, 5, and 7. The agreement between model predictions and experimental observations across multiple spatial contexts supports these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C14",
+      "C15",
+      "C21"
+    ],
+    "result": "Experimental verification confirmed the theoretical prediction that a stronger antagonist can invade a weaker one only if the initial invading population exceeds a critical frequency in well-mixed populations or a critical size in spatially structured populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C14, C15, and C21 are supported by experimental data in Figures 3, 4, and 5. Figure 3 demonstrates critical frequency in liquid cultures, Figure 4 shows similar dynamics on surfaces, and Figure 5 demonstrates a critical inoculum size of ~12 mm\u00b2 in spatially structured populations. The theoretical prediction (C14, C15) is experimentally validated (C5, C21).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "In spatially structured populations, K1 inoculations below 12 mm\u00b2 were driven to extinction by the K2b lawn, while those above 12 mm\u00b2 persisted and expanded, with control experiments using nonkiller strains showing no such size-dependent dynamics, confirming that the critical inoculum size is due to antagonistic interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C48, C51, C52, and C53 are directly supported by Figure 5B-D and Figure 5\u2014figure supplement 2. The critical size of 12 mm\u00b2 is clearly demonstrated, and the control experiment with nonkiller strains (C52) rules out alternative explanations, supporting the inference that antagonism drives the observed dynamics (C53).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "Most spatially structured populations above the critical inoculum size exhibited biphasic dynamics: an initial retreat of both strains creating a cell-free halo (width 400\u00b1200 \u00b5m) at the boundary, followed by expansion of the stronger antagonist K1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49 and C50 are supported by Figure 5C-E, which clearly shows the retreat-expansion dynamics and provides quantitative measurements of halo width. The biphasic pattern is consistently observed across multiple replicates above the critical size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "A spatial model explicitly incorporating nutrient (glucose) dynamics successfully reproduces the formation of halos between antagonistic strains, predicts the correct critical inoculum size (8-14 mm\u00b2), and suggests that halos emerge from combined toxin-induced killing and nutrient diffusion away from the boundary region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 are supported by Figure 7 and Figure 7\u2014figure supplements. The model that includes nutrient dynamics (Equations 7-9) reproduces the halo formation that simpler models could not (Figure 7\u2014figure supplement 1), predicts a critical size consistent with experiments, and provides mechanistic insight into halo formation. The model predictions align well with experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Experimental verification at 32\u00b0C, where both K1 and K2 toxins are unstable and inactive, showed no growth in halo regions, supporting the model's prediction that halos result from combined toxin activity and nutrient depletion rather than toxin activity alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65 and C66 are supported by Figure 5\u2014figure supplements 3 and 4, along with literature citations (Marquina et al., 2002; Luk\u0161a et al., 2016). The temperature-shift experiment provides direct evidence for the role of toxins in halo formation and validates the model's mechanistic interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C54",
+      "C55",
+      "C56",
+      "C67"
+    ],
+    "result": "Mutations arose during spatially structured competitions that altered antagonistic outcomes, including a weaker killer variant (K1o) with reduced fluorescence and toxin production, demonstrating that adaptive evolution can affect microbial antagonism in spatial settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C54, C55, C56, and C67 are supported by Figure 6A-C and Figure 6\u2014figure supplement 1. The outlier population K1o showed reduced fluorescence (flow cytometry, Figure 6B) and weaker killing activity (competition assays, Figure 6C), with growth rates unchanged (Figure 6\u2014figure supplements 2-3), confirming that the phenotypic change was specific to toxin production.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C57"
+    ],
+    "result": "A K2b sub-population (K2br) that re-invaded a K1 population developed greatly decreased sensitivity to K1 toxin, suggesting emergence of toxin resistance, while K2b cells from other regions (K2bo) retained normal sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58 and C57 are supported by Figure 6D and Figure 6\u2014figure supplement 1B. Competition assays clearly show that K2br cells were resistant to K1 toxin while K2bo cells were not, indicating spatial heterogeneity in evolutionary outcomes. The control (C57) strengthens the interpretation that resistance evolved specifically in the re-invading population.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "For replicates initialized near the unstable equilibrium frequency, there was no correlation between frequencies at the first and second measurement time points, suggesting stochasticity dominates over initial conditions in determining long-term outcomes near the critical frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 is supported by Figure 3\u2014figure supplement 2, which shows no correlation (Pearson's r = -0.26, p = 0.38) between frequencies at consecutive time points for replicates near the unstable equilibrium. This provides evidence for stochastic dynamics near the critical threshold.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "No differences in growth rate were detected between any pairs of strains (K1, K1s, K1o, K2b, K2bo, K2br), ruling out that altered competition outcomes were due to changes in cell division rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 is supported by Figure 6\u2014figure supplements 2 and 3, which show no statistically significant differences in growth rates between strains (all p > 0.05). This control is important for attributing phenotypic differences to antagonistic interactions rather than fitness differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background context on microbial antagonism, spatial structure in microbial communities, and the mechanisms of K1 and K2 killer toxins, establishing the scientific foundation and definitions used in the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C7-C13, and C26-C28 provide background information supported by literature citations and established knowledge. These claims set the context for the experimental work and define key terms (e.g., 'stronger antagonist'). While not original findings, they are accurately presented and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "The existence of a critical inoculum size has implications for evolutionary dynamics: mutations conferring increased antagonism may fail to establish if mutant population size is below threshold, and weaker antagonist populations should resist invasion below certain immigration rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16 and C17 are logical inferences from the demonstrated existence of critical inoculum sizes (C5, C47-C48). While not directly tested experimentally, these are reasonable theoretical predictions that follow from the experimental results and are consistent with the observed emergence of mutants (C6, C54-C58).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C19"
+    ],
+    "result": "The study investigated competitive exclusion dynamics in three environments: well-mixed liquid cultures, well-mixed populations on surfaces, and spatially structured populations on surfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C19 accurately describes the experimental design, which is implemented in Figures 2-5. This organizational claim is well-supported by the experimental data presented throughout the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C23"
+    ],
+    "result": "The mathematical models highlight the processes leading to cell-free regions (halos) between antagonistic strains on solid surfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C23 is supported by Figure 7 and the modeling analysis in the Materials and methods section. The models provide mechanistic insight into halo formation, though the claim is somewhat general. The specific mechanism (C62) is addressed in a separate result.",
+    "result_type": "MINOR"
+  }
+]

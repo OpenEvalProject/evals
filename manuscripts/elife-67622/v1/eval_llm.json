@@ -1,0 +1,324 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C70"
+    ],
+    "result": "Six autosomal dominant loss-of-function BEST1 mutations (A10T, R218H, L234P, A243T, Q293K, D302A) behave recessively at 1:1 ratio with WT but exhibit dominant-negative behavior at 4:1 mutant:WT ratio in HEK293 cells, while the autosomal recessive P274R mutation behaves recessively at both ratios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 and C25-C30 are well-supported by experimental data in Figure 1 showing similar currents to WT at 1:1 ratio but significantly reduced currents at 4:1 ratio for the six autosomal dominant mutations, while P274R maintains WT-like currents at both ratios. The patch clamp data with appropriate controls and statistical analysis (Figure 1\u2014figure supplement 1) provide strong evidence for this dosage-dependent behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C4",
+      "C34",
+      "C79"
+    ],
+    "result": "The six previously classified autosomal dominant loss-of-function BEST1 mutations act in a dominant-negative manner rather than canonical dominant manner, with allelic imbalance of BEST1 transcription contributing to this effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C4, C34, and C79 are supported by the combination of functional data (C17-C18) showing recessive behavior at 1:1 and dominant-negative at 4:1, together with transcriptional data (C20, C31-C33) showing 3-4 fold higher mutant allele expression in patient cells. The inference that these mutations are dominant-negative rather than truly dominant is logically sound given the experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C31",
+      "C32",
+      "C33",
+      "C73"
+    ],
+    "result": "The mutant BEST1 allele is transcribed at 3-4 fold higher levels than the WT allele in patient-derived iPSC-RPE cells and native RPE cells, demonstrating allelic expression imbalance at the BEST1 locus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C31-C33, and C73 are supported by experimental data in Table 1 showing consistent 3-4:1 ratios of mutant to WT transcripts across 12 patient-derived iPSC-RPE clones and native RPE cells. The RT-PCR and TOPO cloning methodology is appropriate for measuring allelic transcription ratios, though the mechanism underlying this imbalance is not investigated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C90"
+    ],
+    "result": "Three BEST1 gain-of-function mutations (D203A, I205T, Y236C) exhibit true dominant behavior, with currents resembling mutant-only even at 1:4 mutant:WT ratio, suggesting one mutant monomer is sufficient to dominate pentameric channel function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C37-C42, and C90 are well-supported by experimental data in Figure 2 showing that gain-of-function mutations produce mutant-like currents at both 1:1 and 1:4 ratios with WT. The data demonstrate a potent dominant effect distinct from the loss-of-function mutations. The inference about single mutant monomers (C42) is reasonable given the pentameric structure and 1:4 ratio data, though direct structural evidence is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C56",
+      "C83",
+      "C24"
+    ],
+    "result": "BEST1, but not TMEM16A, TMEM16B, or LRRC8A, is the bona fide Ca2+-activated Cl- channel in human RPE, as demonstrated by complete elimination of Ca2+-dependent Cl- currents only in BEST1-/- cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53, C56, C83, and C24 are strongly supported by systematic knockout experiments in Figure 3 showing abolished currents only in BEST1-/- cells while TMEM16A-/-, TMEM16B-/-, and LRRC8A-/- cells retain WT-like currents. The isogenic knockout approach with appropriate controls (protein/mRNA levels, rescue experiments) provides definitive evidence for BEST1 as the primary CaCC in RPE.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C55",
+      "C84"
+    ],
+    "result": "hPSC-RPE cells are validated as a model system for studying BEST1 function, showing Ca2+-dependent Cl- currents nearly identical to donor-derived iPSC-RPE cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48, C55, and C84 are supported by experimental data in Figure 3a showing comparable current densities and Ca2+ sensitivity between hPSC-RPE and iPSC-RPE cells. The validation is strengthened by consistent expression of RPE markers (Figure 3\u2014figure supplement 1) and similar functional properties, establishing hPSC-RPE as a reliable model system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "BEST1 I205T and Y236C gain-of-function mutations exhibit their characteristic phenotypes in hPSC-RPE cells, with I205T showing Ca2+-independent leak and Y236C showing enhanced currents at all Ca2+ concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 are supported by experimental data in Figure 4a-f showing mutation-specific phenotypes in hPSC-RPE cells consistent with prior HEK293 results. The data demonstrate that the gain-of-function behavior observed in heterologous expression systems is recapitulated in the physiologically relevant RPE cell model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C22",
+      "C5",
+      "C92",
+      "C93"
+    ],
+    "result": "Gene augmentation alone is insufficient to rescue BEST1 gain-of-function mutations in hPSC-RPE cells, as aberrant Ca2+-dependent Cl- currents persist despite high-level exogenous WT BEST1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62, C22, C5, C92-C93 are supported by experimental data in Figure 4b,e showing persistent aberrant currents after gene augmentation despite higher exogenous than endogenous BEST1 expression (Figure 4\u2014figure supplement 1a). This contrasts with successful rescue of loss-of-function mutations and is consistent with the strong dominant effect observed at 1:4 ratio in HEK293 cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C7",
+      "C23"
+    ],
+    "result": "BEST1 gain-of-function mutations are rescuable by combining CRISPR/Cas9-mediated silencing of endogenous BEST1 (using BVSi 3-8) with gene augmentation of wobble WT BEST1, restoring Ca2+-dependent Cl- currents to WT levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C69, C7, and C23 are well-supported by experimental data in Figures 4-5 showing: (1) efficient knockdown with BVSi 3-8 (C63-C64), (2) validation in WT cells (C65), (3) abolished currents after silencing in mutant cells (C66-C67), and (4) complete rescue with wobble WT augmentation (C68). The proof-of-concept is convincing, though clinical translation would require additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C35",
+      "C6",
+      "C46",
+      "C80",
+      "C100"
+    ],
+    "result": "Gene augmentation can restore Ca2+-dependent Cl- currents in RPE cells bearing BEST1 loss-of-function mutations when augmented WT BEST1 is expressed at similar or higher levels than endogenous BEST1, and simultaneous silencing does not interfere with this rescue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C6, C46, C80, and C100 are supported by experimental data showing successful rescue of BEST1-/- cells (Figure 3b) and prior work (Ji et al., 2019b) on loss-of-function mutations. The mechanism is explained by the dominant-negative behavior requiring >4:1 mutant:WT ratio, which gene augmentation can overcome. The claim about simultaneous silencing (C100) is inferred from the rescue experiments but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C72"
+    ],
+    "result": "BEST1 loss-of-function and gain-of-function mutations require different mutant:WT ratios for phenotypic manifestation, indicating that allele-specific epigenetic control plays an important role in bestrophinopathy development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C72 are supported by the collective experimental evidence showing loss-of-function mutations require 4:1 ratio while gain-of-function mutations are dominant at 1:4 ratio, combined with the allelic imbalance data. The inference about epigenetic control is reasonable given the transcriptional imbalance observed, though the specific epigenetic mechanisms are not investigated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Gain-of-function BEST1 mutants are expressed at similar levels to WT and retain interaction with WT BEST1 monomers, similar to loss-of-function mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are supported by experimental data in Figure 2d showing comparable expression levels and co-immunoprecipitation of mutant and WT BEST1. This confirms that the dominant effects are not due to differential expression or loss of oligomerization, but rather to altered channel function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "WT BEST1 expression from baculovirus vector fully rescues Ca2+-dependent Cl- currents in BEST1-/- hPSC-RPE and patient-derived BEST1 null iPSC-RPE cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 is supported by experimental data in Figure 3b and Figure 3\u2014figure supplement 3c showing restoration of currents to WT levels after baculovirus-mediated WT BEST1 expression. This validates both the baculovirus delivery system and confirms that loss of BEST1 is the sole cause of current elimination.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "BEST1 mutations can be classified into different 'strength' classes based on the number of mutant protomers required in the pentameric channel: autosomal recessive (5 mutants), autosomal dominant loss-of-function (2-4 mutants), and gain-of-function (1 mutant).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C89 present a speculative model for classifying mutations based on protomer requirements. While C85-C86 are supported by experimental data from this study, C87-C89 are largely speculative, particularly the classification of specific mutations into 2/3-mutant-protomer classes based solely on prior 1:1 ratio data (Sun et al., 2002). The model is conceptually reasonable but lacks direct experimental validation of protomer stoichiometry.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "For effective gene augmentation therapy of gain-of-function mutations, total WT BEST1 protein must be at least four-fold higher than endogenous mutant BEST1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C91 is inferred from the 1:4 ratio data showing dominant effect, but the actual requirement for therapeutic rescue may differ from the in vitro ratio. The failure of gene augmentation despite apparently higher exogenous expression (C92) suggests the requirement may be even more stringent, or that other factors beyond simple ratio are important. Additional dose-response studies would be needed to establish the precise therapeutic threshold.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The three gain-of-function mutations (D203A, I205T, Y236C) are located at or near the neck or aperture of the BEST1 channel and are involved in opening Ca2+-dependent gates, with I205T causing Ca2+-independent leak through channel enlargement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 are supported by structural analysis (Figure 1\u2014figure supplement 2) and citations to prior work characterizing these mutations. The structural localization is based on homology modeling from chicken BEST1, and the functional mechanisms are supported by prior studies (Ji et al., 2019a; Zhang et al., 2018). The I205T leak mechanism is consistent with both structural and functional data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C101"
+    ],
+    "result": "The BVSi design targeting a mutation-free BEST1 genomic locus is universally suited for silencing in all bestrophinopathy patients, and the silencing plus augmentation strategy can potentially treat all bestrophinopathies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 are supported by knowledge of reported mutations and the rational design of the BVSi system. Claim C101 is more speculative but reasonably supported by the successful rescue of both gain-of-function mutations tested and prior success with loss-of-function mutations. However, the claim of universal applicability requires validation across more mutation types and consideration of potential off-target effects or delivery challenges in clinical settings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C78",
+      "C81"
+    ],
+    "result": "Bestrophinopathies caused by autosomal dominant BEST1 mutations may serve as a paradigm for understanding AEI influence in Mendelian disorders and provide an explanation for incomplete penetrance and variable expressivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78 and C81 are reasonable inferences from the novel findings linking inherited missense mutations with AEI in disease pathogenesis. The explanation for variable penetrance/expressivity (C81) is supported by citations and is logically consistent with the allelic imbalance data. However, these remain somewhat speculative as direct evidence linking AEI variation to clinical variability is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C8",
+      "C9",
+      "C10",
+      "C36",
+      "C45",
+      "C71",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C82",
+      "C97"
+    ],
+    "result": "Background claims about BEST1 function, structure, mutations, and allelic expression imbalance based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C16, C36, C45, C71, C74-C77, C82, and C97 are background claims supported by appropriate citations to prior work. These establish the context for the current study and are generally well-established in the field. The citations appear appropriate and the claims are consistent with current understanding of BEST1 biology and bestrophinopathies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "Only BEST1 mRNA, but not TMEM16A, TMEM16B, or LRRC8A mRNA, is detectable in WT PSC-RPE or donor native RPE cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 is supported by RT-PCR data in Figure 3\u2014figure supplement 2a-b. This is important for interpreting the knockout experiments, as it shows that the other candidate CaCCs are not normally expressed in RPE cells. However, the sensitivity of RT-PCR for detecting low-level expression is limited, and more quantitative methods (qPCR, RNA-seq) would provide stronger evidence.",
+    "result_type": "MINOR"
+  }
+]

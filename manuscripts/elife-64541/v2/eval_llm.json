@@ -1,0 +1,302 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C60"
+    ],
+    "result": "The study analyzed data from 433 intertidal sites spanning 155\u00b0 of latitude (74.8\u00b0S to 80.5\u00b0N), with only 11 sites located above 70\u00b0 latitude in both hemispheres combined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, and C60 provide consistent information about the dataset scope and are explicitly stated with specific numbers. The large latitudinal range and site count are clearly documented, though the limited high-latitude sampling (C2) is acknowledged as a data limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C8"
+    ],
+    "result": "In the northern hemisphere, \u03b1-diversity peaked at mid-latitudes (30-55\u00b0N) with similar diversity in tropical and Arctic regions, showing no support for a classic tropical-to-polar decrease. No latitudinal-scale environmental drivers were significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 and C8 are supported by statistical analysis (GAMM, p=0.023) and Table 1 showing non-significant environmental drivers. The mid-latitude peak contradicts the classic latitudinal diversity gradient hypothesis, which is a key finding of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "In the southern hemisphere, \u03b1-diversity showed a linear latitudinal pattern with a non-significant slight decline at the highest latitude and was not related to any latitudinal-scale environmental drivers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C7 are supported by GLMM analysis and Table 1 showing non-significant relationships with all tested environmental drivers. The pattern differs from the northern hemisphere, indicating hemispheric asymmetry in diversity patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Local-scale drivers (salinity, macroalgal cover, wave exposure, ice scour) significantly affected \u03b1-diversity, with salinity showing the strongest effect (R\u00b2=0.19). These local processes outweighed latitudinal diversity gradients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C21 are supported by statistical analyses with reported effect sizes, confidence intervals, and p-values (Table 2, Figures 3-4). However, the R\u00b2 values are relatively low (0.05-0.19), indicating that while statistically significant, these models explain limited variance. The conclusion that local processes outweigh latitudinal gradients (C10) is an inference that may be overstated given the modest explanatory power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C22",
+      "C23"
+    ],
+    "result": "Species richness of predators, grazers, and suspension feeders declined with latitude in both hemispheres, while algal richness showed an inverse gradient, increasing with latitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C12, C22, and C23 are supported by Figure 5 showing clear latitudinal patterns in functional group composition. This represents a major finding that functional groups show different patterns than overall \u03b1-diversity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The relative distribution of functional groups changed faster across latitudes in the southern hemisphere (with rapid changes around 20\u00b0S) compared to the northern hemisphere (which was more consistent from 25-60\u00b0N). No data were available for 15-25\u00b0N.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 are supported by Figure 5 showing different rates of change between hemispheres. The data gap at 15-25\u00b0N (C27) is explicitly acknowledged and represents a significant limitation for interpreting tropical patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Detailed quantitative patterns of functional group composition across latitudes show predators and grazers declining at higher latitudes, suspension feeders dominating mid-latitudes, and algae increasing toward poles, with high-latitude assemblages dominated by grazers and algae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C35 provide specific percentages with standard deviations for functional group composition across latitudinal bands. These are well-supported by the data analysis and Figure 5, providing detailed characterization of the functional group patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C13",
+      "C36",
+      "C105",
+      "C107",
+      "C108",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Polar and tropical intertidal data were sparse, with 44% of studies from mid-latitude Europe and North America (24-60\u00b0N). High-latitude Antarctic sites were represented by only one study. More sampling from polar and tropical regions is required to improve understanding of biodiversity patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C36, C105, C107-C108, and C111-C114 acknowledge significant sampling biases and data limitations. These are critical caveats that affect interpretation of the main findings, particularly the mid-latitude peak in the northern hemisphere which may be a sampling artifact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C73",
+      "C74"
+    ],
+    "result": "Organisms inhabiting the intertidal do not conform to classic latitudinal diversity gradient patterns. The combined stress experienced by populations may balance out across latitudes, producing no clear gradient, consistent with findings from South America.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65, C73, and C74 represent major conclusions drawn from the data analysis. C65 is directly supported by the statistical results. C73 is a mechanistic inference that is plausible but speculative. C74 provides supporting evidence from prior work (Cruz-Motta et al., 2020).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Subtidal benthic habitats experience relatively homogenous environmental conditions at small-to-moderate spatial scales, and latitudinal biodiversity gradients in ectotherms have been attributed to water temperature changes, requiring special adaptations for cold waters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 provide context from prior work on subtidal systems to contrast with intertidal findings. These are well-supported by citations and represent established knowledge used to frame the study's novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The importance of microhabitats, biological interactions, and local physical parameters (including algal canopies, wave exposure, and tidal timing) on intertidal community structure has been extensively studied, with high spatial variability well documented.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C72 synthesize prior literature on local-scale processes in intertidal systems. These are well-supported by multiple citations and provide mechanistic context for why local factors might override latitudinal gradients.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "In polar regions with persistent ice cover, no intertidal communities are present. Arctic permafrost coastline represents ~34% of world's coastline, while Antarctica accounts for ~2.7%, with only ~12% ice-free in Antarctic summer. Future ice reduction will permit colonization and increase biodiversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 and C101-C104 describe ice impacts on polar intertidal systems with specific statistics from cited sources. C77-C79 include speculative elements about winter survival and future changes, which are appropriately qualified but represent predictions rather than demonstrated findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Predators decline at high latitudes (>60\u00b0N), consistent with reduced predation pressure in polar regions. Multiple hypotheses exist for this pattern (calcium carbonate solubility, temperature effects on muscle function), but mechanisms remain debated. This indicates decreased importance of top-down control at high latitudes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C89 synthesize findings on latitudinal predation patterns with supporting citations. The decline in predators is well-documented (C80-C82), but mechanistic explanations (C83-C84) are acknowledged as debated (C85). The inference about decreased top-down control (C88-C89) is reasonable but represents interpretation beyond the direct data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Polar macrophytes can regenerate after ice damage and survive extreme sub-zero temperatures. Air temperature is the prime stressor in polar intertidal systems. High-latitude shores contain fewer visually obvious species, but coralline algae and encrusting species survive in microhabitats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C95 describe adaptations and survival strategies of polar intertidal organisms, supported by citations. C95 includes speculation about winter survival mechanisms (air pockets, brine pools) that is appropriately qualified as 'likely.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Grazing can have powerful effects on algal biomass at low-to-mid latitudes and is important in some Antarctic locations, but its importance varies regionally (e.g., absent in south Greenland). Data on grazing impacts in polar intertidal habitats are too limited for conclusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100 acknowledge the variable and poorly understood role of grazing across latitudes. C100 explicitly states data limitations, which is an important caveat for interpreting functional group patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The manuscript provides extensive background on latitudinal diversity gradients, functional group ecology, and prior intertidal studies, establishing that patterns vary across taxa and habitats, with conflicting evidence for classic gradients in marine systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C59 represent literature review and background context, all supported by appropriate citations. These establish the knowledge gaps and contradictions in prior work that motivate the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C106",
+      "C109"
+    ],
+    "result": "Previous studies showed intertidal species richness increasing with latitude from southern Atlantic to Antarctic Peninsula. Sampling intensity is highest at mid-latitudes in the northern hemisphere across marine habitats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106 and C109 cite prior work showing different patterns and sampling biases. These provide important context for interpreting the current study's findings and limitations.",
+    "result_type": "MINOR"
+  }
+]

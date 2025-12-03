@@ -1,0 +1,1832 @@
+{
+  "submission": {
+    "id": "f65460cb-56c7-4409-b994-8f68790d5358",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T05:26:21.025989Z",
+    "updated_at": "2025-12-03T05:26:21.025989Z"
+  },
+  "content": [
+    {
+      "id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "submission_id": "f65460cb-56c7-4409-b994-8f68790d5358",
+      "content_type": "manuscript",
+      "content_text": "# Different translation dynamics of \u03b2- and \u03b3-actin regulates cell migration\n\n## Authors\n\n- Pavan Vedula<sup>1</sup> ([ORCID: 0000-0002-9914-0008](https://orcid.org/0000-0002-9914-0008))\n- Satoshi Kurosaka<sup>2</sup> ([ORCID: 0000-0002-4365-9003](https://orcid.org/0000-0002-4365-9003))\n- Brittany MacTaggart<sup>1</sup> ([ORCID: 0000-0001-7674-6042](https://orcid.org/0000-0001-7674-6042))\n- Qin Ni<sup>3</sup>\n- Garegin Papoian<sup>4</sup>\n- Yi Jiang<sup>5</sup>\n- Dawei W Dong<sup>1</sup>\n- Anna Kashina<sup>1</sup> ([ORCID: 0000-0002-0243-6866](https://orcid.org/0000-0002-0243-6866)) \u2020\n\n### Affiliations\n\n1. Department of Biomedical Sciences, School of Veterinary Medicine, University of Pennsylvania Philadelphia United States\n2. Institute of Advanced Technology, Kindai University, Kainan Wakayama Japan\n3. Department of Chemical and Biomolecular Engineering, University of Maryland College Park United States\n4. Department of Chemistry, University of Maryland College Park United States\n5. Department of Mathematics and Statistics, Georgia State University Atlanta United States\n6. Institute for Biomedical Informatics, Perelman School of Medicine, University of Pennsylvania Philadelphia United States\n\n\u2020 Corresponding author\n\n## Abstract\n\n\u03b2- and \u03b3-cytoplasmic actins are ubiquitously expressed in every cell type and are nearly identical at the amino acid level but play vastly different roles in vivo. Their essential roles in embryogenesis and mesenchymal cell migration critically depend on the nucleotide sequences of their genes, rather than their amino acid sequences; however, it is unclear which gene elements underlie this effect. Here we address the specific role of the coding sequence in \u03b2- and \u03b3-cytoplasmic actins\u2019 intracellular functions, using stable polyclonal populations of immortalized mouse embryonic fibroblasts with exogenously expressed actin isoforms and their \u2018codon-switched\u2019 variants. When targeted to the cell periphery using \u03b2-actin 3\u2032UTR; \u03b2-actin and \u03b3-actin have differential effects on cell migration. These effects directly depend on the coding sequence. Single-molecule measurements of actin isoform translation, combined with fluorescence recovery after photobleaching, demonstrate a pronounced difference in \u03b2- and \u03b3-actins\u2019 translation elongation rates in cells, leading to changes in their dynamics at focal adhesions, impairments in actin bundle formation, and reduced cell anchoring to the substrate during migration. Our results demonstrate that coding sequence-mediated differences in actin translation play a key role in cell migration.\n\n## Introduction\n\nActin is one of the most essential and abundant eukaryotic proteins, highly conserved across the tree of life. Among the six mammalian actins, \u03b2- and \u03b3-cytoplasmic actins are the only two that are ubiquitously expressed in every mammalian cell type and share the highest identity at the amino acid level, with only four conservative substitutions within their N-termini (Vandekerckhove and Weber, 1978). Despite this near-identity, the coding sequences for these two actin isoforms are different by approximately 13% due to synonymous substitutions (Erba et al., 1986). Our work has previously shown that this coding sequence difference can lead to differential arginylation of these two actins. Arginylated \u03b2-actin accumulates in vivo, while arginylated \u03b3-actin is degraded (Zhang et al., 2010).\n\nIn mice, \u03b2- and \u03b3-cytoplasmic actins play vastly different physiological roles. \u03b2-actin knockout leads to defects in embryogenesis and early embryonic lethality (Bunnell et al., 2011; Shawlot et al., 1998; Shmerling et al., 2005; Strathdee et al., 2008; Tondeleir et al., 2013; Tondeleir et al., 2014), while \u03b3-cytoplasmic actin knockout mice survive until birth and have much milder overall phenotypic defects (Belyantseva et al., 2009; Bunnell and Ervasti, 2010). Our prior work has\u00a0shown that \u03b2-actin\u2019s nucleotide sequence, rather than its amino acid sequence, underlies its essential role in embryogenesis (Vedula et al., 2017). Using CRISPR/Cas9, we edited the five nucleotides at the beginning of the \u03b2-actin coding sequence within the \u03b2-actin gene (Actb), causing it to encode \u03b3-actin protein (Actbc-g/c-g, \u03b2-coded\u00a0\u03b3-actin). Such Actbc-g/c-g mice developed normally and showed no gross phenotypic defects, thus demonstrating that the intact \u03b2-actin gene, rather than protein, defines its essential role in embryogenesis (Patrinostro et al., 2018; Vedula et al., 2017). Thus, nucleotide sequence constitutes a major, previously unknown determinant of actin function, even though it is unclear which specific nucleotide-based elements of the actin gene play a role in this effect.\n\nHere we tested whether the coding sequence alone, in the context of invariant non-coding elements and independent of the positional effects of the actin gene, plays a role in cytoplasmic actins\u2019 intracellular function. To do this, we incorporated the coding sequences of \u03b2- and \u03b3-actins and their \u2018codon-switched\u2019 variants (\u03b2-coded\u00a0\u03b3-actin and \u03b3-coded\u00a0\u03b2-actin) into otherwise identical constructs containing the human \u03b2-actin promoter, an N-terminal enhanced Greef Fluorescent Protein (eGFP) fusion, and the \u03b2-actin 3\u2032UTR. Stable expression of these constructs in mouse embryonic fibroblasts (MEFs) resulted in dramatically different effects on directional cell migration. While cells expressing \u03b2-actin migrated at rates similar to wild-type untransfected cells in wound-healing assays, cells expressing \u03b3-actin migrated nearly twofold faster. This difference depended directly on the\u00a0coding sequence, as evident by the use of the \u2018codon-switched\u2019 actin variants. Expression of \u03b3- or \u03b3-coded\u00a0\u03b2-actin led to changes in cell morphology and distribution of focal adhesions, which were larger in size and localized mostly at the cell periphery rather than under the entire cell, similarly to previously reported cellular phenotypes linked to poorer cell attachment and faster migration (Kim and Wirtz, 2013). Focal adhesions in \u03b3-actin- or \u03b3-coded-\u03b2-actin-expressing cells appeared to be poorly anchored, though\u00a0often not visibly associated with long actin bundles. In contrast, long actin cables could be clearly seen anchoring focal adhesions in \u03b2-actin- or \u03b2-coded\u00a0\u03b3-actin-expressing cells.\n\nSingle-molecule measurements of actin translation using the SunTag system at the focal adhesion sites showed an\u00a0approximately\u00a0twofold faster translation elongation of \u03b2-actin compared to \u03b3-actin. Fluorescence recovery after photobleaching (FRAP) demonstrated that \u03b3-actin accumulation in cells was slower than \u03b2-actin, further confirming global differences in actin isoform translation. Molecular simulations of actin assembly at the focal adhesions showed that differences in translation rates can directly impact actin bundle formation, leading to shorter actin bundles in the case of slower translating \u03b3-actin, in agreement with our experimental data.\n\nOur results demonstrate that nucleotide coding sequence-dependent translation rates, coupled to zipcode-targeted actin mRNA localization, play an essential role in differentiating actin isoforms\u2019 function in cell migration.\n\n## Results\n\n### \u03b2- and \u03b3-actin coding sequences have differential effects on cell migration speed\n\nTo test the specific effect of coding sequences on intracellular functions of actin isoforms, we generated immortalized MEF cell cultures stably expressing \u03b2- and \u03b3-actin coding sequences, as well as their codon-switched variants (\u03b2-coded\u00a0\u03b3-actin and \u03b3-coded\u00a0\u03b2-actin), cloned into identical expression constructs under the human \u03b2-actin promoter, containing an N-terminal eGFP fusion and the \u03b2-actin 3\u2032UTR (Figure 1, top left, and 'Materials and methods'). This construct design enabled us to confine our experiments to the effects of the coding sequence and exclude any potential contribution from other elements known to mediate differences between \u03b2- and \u03b3-actins, including promoter-mediated transcription (Tunnacliffe et al., 2018), differential 3\u2032UTR-mediated mRNA targeting (Hill and Gunning, 1993; Katz et al., 2012; Kislauskis et al., 1993; Kislauskis et al., 1994), and differential N-terminal processing (Zhang et al., 2010). Cell populations stably expressing eGFP constructs were checked to ensure similar levels of eGFP mRNA, as well as to confirm that the expression of the exogenous eGFP-actin did not have any significant effect on the endogenous \u03b2-actin and \u03b3-actin mRNA levels (Figure 1\u2014figure supplement 1). We also confirmed that \u03b2-actin 3\u2032UTR targeted the eGFP-actin mRNA to the cell periphery, using fluorescence in situ hybridization (FISH) (Figure 1\u2014figure supplement 2). Finally, we confirmed that the level and distribution of F-actin in each of the cell cultures transfected with different actin isoforms was largely similar to each other (Figure 1\u2014figure supplement 3). Thus, in these cell populations, the effects of exogenously expressed actin could be tested without perturbation of other actin-related processes that are essential for cell viability.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig1-v3.jpg)\n\n**Figure 1.:** Top left, mutagenesis strategy used to generate \u2018codon-switched\u2019 actin variants and linear maps of the major constructs used in this study. Top right, scatter plot of migration rates in a wound-healing assay of cell populations expressing different actin constructs. Bottom, representative images of the migrating wound edge, with the initial and the final position of the edge denoted by the yellow and the green line, respectively. Cell migration rates were derived as the\u00a0area covered over time by the cell layer within the field of view (calculated as the area between the yellow and the green lines). N\u00a0=\u00a020 (for \u03b2-actin); 22 (for \u03b3-actin); 18 (for \u03b2c-\u03b3-actin); 19 (for \u03b3c-\u03b2-actin). Independent experimental replicates (two or more) are indicated by different symbols within each cell population. One way non-parametric analysis of variance (ANOVA) yielded a p-value<0.0001 with multiple comparisons shown on the plot. Error bars represent mean\u00a0\u00b1\u00a095% CI. *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001. See also Videos 1\u20134. Scale bars, 100 \u00b5m.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Data from the real-time PCR (quantitative PCR, or qPCR)\u00a0of the four cell lines, using primer pairs detecting actin isoforms\u2019 endogenous 3\u2019UTRs and GFP. Each of the qPCR was repeated four times and outliers were excluded in Graphpad PRISM. The error bars represent 95% CI. One-way analysis of variance (ANOVA) indicated that\u00a0there was a significant change only in the amount of eGFP mRNA (p=0.02), with multiple comparisons showing a significant change between \u03b2-actin and \u03b3-coded \u03b2-actin only (p=0.02).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Images of GFP-actin-transfected cell lines with and without 3\u2032UTR (as indicated on the left) visualized by GFP fluorescence (green), 4\u2032,6-diamidino-2-phenylindole\u00a0(DAPI) (blue), and GFP-encoding mRNA (white) detected using single-molecule fluorescence in situ hybridization (smFISH) probes against GFP mRNA. Insets show a zoom of the boxed areas in FISH images, showing localization of eGFP mRNA significantly more pronounced in the presence of \u03b2-actin 3\u2032UTR. Scale bar, 20 \u00b5m.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (Top) Images of GFP-actin-transfected cell lines visualized by fluorescent phalloidin staining. (Bottom) Box and whisker plot of log2 (phalloidin intensity) in each cell line with error bars indicating 95% CI\u00a0the mean. Scale bar\u00a0=\u00a020 \u00b5m. N\u00a0=\u00a020 each for \u03b2-actin, \u03b3-actin,\u00a0and \u03b3-coded \u03b2-actin and 22 for \u03b2-coded \u03b3-actin.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig1-figsupp4-v3.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Cell migration rate box plots showing untransfected (wild-type, WT), eGFP-\u03b2-actin (\u03b2-actin), and eGFP-\u03b3-actin (\u03b3-actin). The different symbols represent different scratch wounds.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig1-figsupp5-v3.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Migration rate plots of cell populations expressing different actin constructs, derived as area covered over time by the cell layer in the field of view as shown in Figure 1. \u03943\u2032UTR denotes the constructs lacking the \u03b2-actin 3\u2032UTR responsible for zipcode targeting. All other constructs contained the \u03b2-actin 3\u2032UTR. Error bars represent mean \u00b1 95% CI. Different symbols within each cell population represent different scratch wounds. Number of technical replicates: N\u00a0=\u00a05 (for \u03b2-actin \u03943\u2032UTR); 8 (for \u03b3-actin \u03943\u2032UTR); 20 (for \u03b2-actin); 22 (for \u03b3-actin). Results of unpaired t-test are indicated on the graph (*p<0.05).\n\n\u03b2- and \u03b3-cytoplasmic actins make up more than 50% of the total actin in these cells and have been previously shown to play major non-overlapping roles in directional cell migration (Patrinostro et al., 2017). We, therefore, tested whether cells expressing eGFP-\u03b2-actin or eGFP-\u03b3-actin showed any differences in cell migration using a wound-healing assay. Strikingly, while cells expressing eGFP-\u03b2-actin migrated at rates similar to wild-type untransfected cells, cells expressing eGFP-\u03b3-actin migrated nearly twofold faster (Figure 1, top right and bottom; Figure 1\u2014figure supplement 4; Videos 1 and 2). This difference in cell migration rates was coding sequence dependent, as seen in cells expressing the codon-switched actin variants, \u03b3-coded\u00a0\u03b2-actin (which migrated faster, similarly to those expressing \u03b3-actin), and \u03b2-coded\u00a0\u03b3-actin (which migrated slower, like \u03b2-actin-expressing cells) (Figure 1, top left; Videos 3 and 4). Thus, the effect of actin isoform expression on directional cell migration is mediated by their nucleotide coding sequence and does not appear to be influenced by their amino acid sequence.\n\n![Video 1.](https://cdn.elifesciences.org/articles/68712/elife-68712-video1.mp4.jpg)\n\n**Video 1.:** Mouse embryonic fibroblast\u00a0(MEF) cell cultures stably expressing eGFP-\u03b2-actin migrating into an infinite wound edge over a period of 10 hr.\n\n![Video 2.](https://cdn.elifesciences.org/articles/68712/elife-68712-video2.mp4.jpg)\n\n**Video 2.:** Mouse embryonic fibroblast\u00a0(MEF) cell cultures stably expressing eGFP-\u03b3-actin migrating into an infinite wound edge over a period of 10 hr.\n\n![Video 3.](https://cdn.elifesciences.org/articles/68712/elife-68712-video3.mp4.jpg)\n\n**Video 3.:** Mouse embryonic fibroblast\u00a0(MEF) cell cultures stably expressing eGFP-\u03b2-coded \u03b3-actin migrating into an infinite wound edge over a period of 10 hr.\n\n![Video 4.](https://cdn.elifesciences.org/articles/68712/elife-68712-video4.mp4.jpg)\n\n**Video 4.:** Mouse embryonic fibroblast\u00a0(MEF) cell cultures stably expressing eGFP-\u03b3-coded \u03b2-actin migrating into an infinite wound edge over a period of 10 hr.\n\nIn normal cells, the \u03b2-actin 3\u2032UTR contains a zipcode sequence that is required for its mRNA localization to the cell periphery (Kislauskis et al., 1993) and has been shown to be important for directional cell migration (Condeelis and Singer, 2005; Katz et al., 2012; Kislauskis et al., 1994; Kislauskis et al., 1997). \u03b3-actin mRNA has no such sequence and does not undergo targeting to the cell periphery (Hill and Gunning, 1993). All our constructs described above contained the \u03b2-actin 3\u2032UTR with the zipcode sequence as one of the constant elements. To test whether 3\u2032UTR-mediated targeting of actin mRNA affects the cell migration phenotypes observed in our stably transfected cell cultures, we performed the same experiment using cell cultures stably expressing similar actin constructs, but without the \u03b2-actin 3\u2032UTR (Figure 1\u2014figure supplement 2). These cells did not exhibit significant differences in cell migration rates (Figure 1\u2014figure supplement 5). Thus, differences in the effects of cytoplasmic actin coding sequences on cell migration require mRNA targeting to the cell periphery.\n\n### Actin isoforms affect focal adhesion size, cell spreading, and actin dynamics at focal adhesions in a coding sequence-dependent manner\n\nChanges in cell migration rates are normally associated with changes in actin dynamics at the leading edge, rate and persistence of leading edge protrusions and retractions, as well as focal adhesion formation and dynamics, which affect cell spreading, polarization, and attachment to the substrate. Focal adhesions\u2019 strength and persistence are closely regulated by their association with actin filaments, which grow at the focal adhesion sites to form a dynamic actin bundle that participates in anchoring the cells to the substrate. Thus, focal adhesions critically depend on actin dynamics in the vicinity of the adhesion site. In turn, focal adhesions can regulate cell spreading and polarization, in addition to cell migration rates.\n\nTo test these processes in eGFP-actin isoform-transfected cells, we first looked at the rate and persistence of leading edge protrusions and retractions, but found no consistent differences between the cell populations that correlated with cell migration rates (Figure 2\u2014figure supplement 1). We next assessed focal adhesion dynamics in these cells using total internal reflection fluorescence microscopy (TIRF-M) of eGFP-\u03b2-actin and eGFP-\u03b3-actin. Since the\u00a0imaging volume in TIRF-M is limited to the basal 300 nm or less, we reasoned that most of the actin signals visible in this volume should be associated with focal adhesion patches. Imaging the long-term (hours) behavior of actin at focal adhesion patches during wound healing using TIRF-M revealed that in migrating cells, eGFP-\u03b2-actin patches appeared more prominent and persisted considerably longer than eGFP-\u03b3-actin patches (Figure 2A\u2013C), suggesting that focal adhesions in eGFP-\u03b2-actin-expressing cells persist for longer periods of time. At the same time, testing short-term (5 min) actin dynamics at the focal adhesions using Fluorescence Recovery After Photobleaching (FRAP) showed no notable differences in focal adhesion recovery rates that correlated with either coding or amino acid sequence (Figure 2\u2014figure supplement 2). Thus, different actin isoforms affect long-term focal adhesion persistence without strongly affecting short-term focal adhesion or protrusion dynamics during persistent directional migration at the cell leading edge.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig2-v3.jpg)\n\n**Figure 2.:** (A) Montages of eGFP-\u03b2-actin- (top two rows) and eGFP-\u03b3-actin (bottom row)-expressing cells undergoing wound healing following a scratch wound. Total internal reflection fluorescence microscopy\u00a0(TIRF-M) images (cyan) are overlaid with widefield images (magenta). Scale bar\u00a0=\u00a010 \u00b5m. Arrows point to focal adhesions being formed and disassembled over time. (B) Maximum intensity projections of TIRF-M images of eGFP-actin over time for each of the \u03b2- and \u03b3-actin-expressing cell populations during a 12-hr wound healing. Scale represents the temporal color scale. Note that \u03b2-actin persists longer in the TIRF plane as compared to \u03b3-actin. (C) Actin patch lifetimes in the TIRF-M channel. Five fields of view for each cell population were used to estimate lifetimes (solid colors) with N\u00a0=\u00a050 (\u03b2-actin) and 53 (\u03b3-actin) patches (transparent colors). Error bars represent mean\u00a0\u00b1\u00a095% CI. Unpaired t-test gave a p-value<0.05.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Super-plots of (A) protrusion rate, (B) protrusion duration, (C) retraction rate, and (D) retraction duration, measured from kymographs. Number of fields of view (indicated by the opaque data points in the above graphs, with the mean and 95% CI displayed) analyzed for each population: \u03b2-actin\u00a0=\u00a011, \u03b3-actin\u00a0=\u00a014, \u03b2-coded\u00a0\u03b3-actin\u00a0=\u00a013, \u03b3-coded\u00a0\u03b2-actin\u00a0=\u00a014. Number of protrusions analyzed: \u03b2-actin\u00a0=\u00a0139, \u03b3-actin\u00a0=\u00a0130, \u03b2-coded\u00a0\u03b3-actin\u00a0=\u00a0143, \u03b3-coded\u00a0\u03b2-actin\u00a0=\u00a0121. Number of retractions analyzed: \u03b2-actin\u00a0=\u00a0112, \u03b3-actin\u00a0=\u00a0108, \u03b2-coded\u00a0\u03b3-actin\u00a0=\u00a0124, \u03b3-coded\u00a0\u03b2-actin\u00a0=\u00a0101. One-way non-parametric analysis of variance (ANOVA) (Kruskal-Wallis test) gave a p-value\u00a0=\u00a00.0798 (protrusion rate), 0.0540 (protrusion duration), 0.1065 (retraction rate), and 0.0002 (retraction duration) with multiple comparisons shown on the plot. *p<0.05, **p<0.01, and ***p<0.001.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Fluorescence recovery after photobleaching (FRAP) curves for the recovery of actin bleached at the focal adhesions. t1/2 of recovery for each actin variant is listed in the inset. N\u00a0=\u00a08 (\u03b2-actin), 10 (\u03b3-actin), 10 (\u03b2-coded\u00a0\u03b3-actin), and 9 (\u03b3-coded\u00a0\u03b2-actin) actin patches. Each data set was fit to a one-phase association curve. R-squared values ranged from 0.52 to 0.62. A single curve was unable to fit all data sets, indicating that\u00a0the recovery curves were different from each other (p-value<0.0001). The half-life of recovery for each curve derived from the fit is \u03b2-actin\u00a0=\u00a044.63 s, \u03b3-actin\u00a0=\u00a054.97 s, \u03b2-coded\u00a0\u03b3-actin\u00a0=\u00a045.38 s, and \u03b3-coded\u00a0\u03b2-actin\u00a0=\u00a041.93 s. Error bars are SEM.\n\nTo get deeper insights into the focal adhesion morphology and distribution in cells transfected with different actin isoforms, we grew cells at a\u00a0low density, to enable visualization of the morphology and cytoskeleton-dependent structures in individual cells isolated on coverslips, without contacting their neighbors. Notably, cells in such scarce cultures are under no stimuli to migrate. Many of them remain stationary or move randomly around the same area, resulting in much slower rates of persistent migration and overall displacement over time. Consequently, such sparsely grown cells transfected with different actin isoforms do not prominently differ from each other in their migration (Figure 3\u2014figure supplement 1), even though they are expected to undergo similar actin isoform-related changes at the subcellular level.\n\nTo analyze focal adhesions and spreading in these cells, we first used TIRF-M to image single cells stained with antibodies to the focal adhesion protein paxillin. These assays revealed prominent differences in focal adhesion morphology and distribution between the cell populations transfected with different actin isoforms (Figure 3, top row of images; see also Figure 3\u2014figure supplements 2\u20135). In eGFP-\u03b2-actin-expressing cells, focal adhesions had a\u00a0normal elongated morphology and were distributed throughout the entire cell footprint. In contrast, eGFP-\u03b3-actin-expressing cells formed focal adhesions that localized mostly at the cell periphery (Figure 3, top row of images; Figure 3\u2014figure supplement 6A,B). This trend depended on the actin coding sequence: focal adhesions in eGFP-\u03b2-coded-\u03b3-actin-expressing cells resembled those in eGFP-\u03b2-actin, while focal adhesions in eGFP-\u03b3-coded-\u03b2-actin-expressing cells were like those in eGFP-\u03b3-actin-expressing cells (Figure 3\u2014figure supplement 6A,B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig3-v3.jpg)\n\n**Figure 3.:** Top, representative images of eGFP-actin-transfected cells stained with anti-paxillin to visualize focal adhesions. Total interference reflection fluorescence microscopy (TIRF-M) images of paxillin staining are shown alone (top) and as an\u00a0overlay with widefield eGFP signals (bottom). Bottom, quantification of focal adhesion size in the four different cell populations, shown as a distribution plot (for all focal adhesions analyzed) and as a scatter plot (for individual cells) in the inset. Scale bar\u00a0=\u00a010 \u00b5m. \u03b2-actin\u00a0=\u00a020, \u03b3-actin\u00a0=\u00a028, \u03b2-coded\u00a0\u03b3-actin\u00a0=\u00a030, and \u03b3-coded\u00a0\u03b2-actin\u00a0=\u00a029 cells with N\u00a0=\u00a0996, 786, 1245, and 1041 focal adhesions for the respective cell types. Results for non-parametric one-way analysis of variance (ANOVA) with multiple comparisons are indicated on the graph.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Average velocity plots for single-cell migration in sparse cultures over a 3-hr period. One-way parametric analysis of variance (ANOVA) yielded a p-value\u00a0=\u00a00.0191, with multiple comparisons shown on the plot. *p<0.05. (B) Log-log plots of Mean Squared Displacement vs time for each of the cell lines indicated on the graph. Number of cells: \u03b2-actin\u00a0=\u00a086, \u03b3-actin\u00a0=\u00a0121, \u03b2-coded\u00a0\u03b3-actin\u00a0=\u00a097, \u03b3-coded\u00a0\u03b2-actin\u00a0=\u00a069, untransfected (WT)\u00a0=\u00a0100.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Scale bar, 10 \u00b5m.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig3-figsupp3-v3.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Scale bar, 10 \u00b5m.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig3-figsupp4-v3.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Scale bar, 10 \u00b5m.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig3-figsupp5-v3.jpg)\n\n**Figure 3\u2014figure supplement 5.:** Scale bar, 10 \u00b5m.\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig3-figsupp6-v3.jpg)\n\n**Figure 3\u2014figure supplement 6.:** (A) Total number of focal adhesions per cell. (B) Number of focal adhesions away from cell periphery. (C) Average focal adhesion aspect ratio for each cell. Each data point represents a single cell with \u03b2-actin\u00a0=\u00a020, \u03b3-actin\u00a0=\u00a028, \u03b2-coded\u00a0\u03b3-actin\u00a0=\u00a030, and \u03b3-coded\u00a0\u03b2-actin\u00a0=\u00a029 cells. One-way non-parametric analysis of variance (ANOVA) (Kruskal-Wallis test) results are as follows: total number of focal adhesions:<0.0001, number of focal adhesions away from cell periphery: 0.0012, and focal adhesion aspect ratios: 0.0003. Results of multiple comparisons are indicated on the plots with *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001. Error bars represent mean\u00a0\u00b1\u00a095% CI.\n\n![Figure 3\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig3-figsupp7-v3.jpg)\n\n**Figure 3\u2014figure supplement 7.:** Fluorescence recovery after photobleaching (FRAP) curves for the recovery of actin bleached at the focal adhesions. N\u00a0=\u00a015 actin patches for each cell line. Each data set was fit to a one-phase association curve. R-squared values ranged from 0.36 to 0.59. A single curve was unable to fit all data sets, indicating the recovery curves were different from each other (p-value<0.0001). The half-life of recovery for each curve derived from the fit is \u03b2-actin\u00a0=\u00a022.30 s, \u03b3-actin\u00a0=\u00a025.99 s, \u03b2-coded\u00a0\u03b3-actin\u00a0=\u00a022.13 s, and \u03b3-coded\u00a0\u03b2-actin\u00a0=\u00a027.87 s. Error bars are SEM.\n\n![Figure 3\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig3-figsupp8-v3.jpg)\n\n**Figure 3\u2014figure supplement 8.:** (A) Principal component analysis (PCA) plot classifying cell shapes from the four cell lines listed on top right according to the shape modes shown in the insert on bottom right. Shapes in the chart represent the actual cell outlines, with the size (Shape Mode 1) decreasing from left to right and the polarization variance (Shape Mode 2) spreading along the y-axis. Scale bars, 250 \u00b5m, and inset, 50 \u00b5m. (B) Quantification of the area of spherical trypsinized cells (left, N\u00a0=\u00a01230, 600, 1096, and 925) and the footprint of the\u00a0cells spread on the substrate (right, N\u00a0=\u00a025, 36, 27, and 23). Results of one-way analysis of variance (ANOVA) with multiple comparisons are indicated on the graph.\n\nImaging eGFP-actin in widefield showed that most focal adhesions in cells expressing eGFP-\u03b2-actin and eGFP-\u03b2-coded\u00a0\u03b3-actin were associated with long thick bundles of actin emanating from the focal adhesion point (Figure 3, top, and Figure 3\u2014figure supplements 2\u20135). In comparison, the dorsal bundles connecting to the focal adhesions were much less prominent in \u03b3-actin- and \u03b3-coded\u00a0\u03b2-actin-expressing cells.\n\nFocal adhesion size uniquely predicts cell migration rate (Kim and Wirtz, 2013), with the larger focal adhesions correlating with faster migration speeds. We measured the\u00a0focal adhesion area in all the\u00a0four cell cultures transfected with different actin isoforms and found that faster migrating cells expressing \u03b3-actin, and \u03b3-coded\u00a0\u03b2-actin indeed, had significantly larger focal adhesions than slower migrating cells expressing \u03b2-actin and \u03b2-coded\u00a0\u03b3-actin (Figure 3, bottom). Morphologically, focal adhesions in \u03b3-actin- and \u03b3-coded\u00a0\u03b2-actin-expressing cells appeared wider and less elongated than in \u03b2-actin- and \u03b2-coded\u00a0\u03b3-actin-expressing cells; however, global measurements of their aspect ratios did not reveal any consistent statistically significant differences (Figure 3\u2014figure supplement 6C). This could be due to the fact that the majority of focal adhesions in all of these cells were small and dot-like, and only a few larger ones tended to exhibit potential differences in morphology. Thus, \u03b2- and \u03b3-actin coding sequences determine the size and distribution of focal adhesions in migrating cells in a manner that correlates with changes in their migration speed.\n\nWe also measured focal adhesion recovery rates in single-cell cultures using FRAP. Focal adhesions in cells transfected with \u03b2-actin and \u03b2-coded\u00a0\u03b3-actin recovered slightly faster than cells transfected with \u03b3-actin and \u03b3-coded\u00a0\u03b2-actin (Figure 3\u2014figure supplement 7). While statistically significant, these coding sequence-dependent differences were small, and thus it is unclear if they can prominently contribute to the cells\u2019 phenotype.\n\nCell spreading and polarization are critically determined by their adhesion to the substrate and correlate with their migratory behavior (Kim and Wirtz, 2013). To test whether focal adhesion changes in our cell populations are accompanied by changes in cell spreading and polarization, we used Celltool (Pincus and Theriot, 2007) to analyze shape distribution of single cells stably expressing eGFP-\u03b2-actin, eGFP-\u03b3-actin, and their codon-switched variants. Using images of live single cells, the shape space was parameterized into various shape modes, and shape modes 1 and 2 accounted for\u00a0~60% of variance in shapes across all cells (Figure 3\u2014figure supplement 8A, inset). The first mode roughly captures the\u00a0variation in the size of the cell footprint on the substrate and accounts for\u00a0~40% of the\u00a0variance in shape, while the second mode captures cell polarization and accounts for\u00a0~20% of the variance in shape. Using these shape modes to analyze images of cells expressing different actin isoforms\u2019 coding sequences, we found that cells expressing eGFP-\u03b2-actin had a larger footprint (Figure 3\u2014figure supplement 8A, clustered to the left of the y-axis) and had more variance in their polarization (Figure 3\u2014figure supplement 8A, spread across the y-axis), while cells expressing eGFP-\u03b3-actin exhibited the opposite trends (Figure 3\u2014figure supplement 8A, clustered mostly in the top right quadrant). Expression of the codon-switched actin variants, \u03b2-coded\u00a0\u03b3-actin, and \u03b3-coded\u00a0\u03b2-actin showed that the footprint size depended on the actin isoform coding sequence, while the polarization variance appeared to be amino acid sequence-dependent.\n\nChanges in the area of the cell footprint can arise due to either reduced cell spreading or reduced overall cell size. To distinguish between these possibilities, we quantified the area of trypsinized near-spherical cells (pre-spreading), which directly reflects cell size and volume. Cells expressing the \u03b3-actin coding sequence were slightly smaller than those expressing \u03b2-actin coding sequence (Figure 3\u2014figure supplement 8B, left). This\u00a0~6% difference in cell size was far less prominent than the difference in spread cell area (Figure 3\u2014figure supplement 8B, right), which accounted for a greater than 80% change in the size of cell footprint. Thus, cells expressing \u03b3-actin are less spread on the substrate, and this difference in spreading is coding sequence-dependent.\n\n### \u03b2-actin exhibits faster intracellular translation elongation than \u03b3-actin\n\nIn search of an underlying mechanism that could link actin isoforms\u2019 coding sequence to their intracellular properties, we turned to our previous study that used computational predictions of the mRNA secondary structures for \u03b2-actin and \u03b3-actin. This study suggested that the coding region of \u03b2-actin mRNA forms a more relaxed secondary structure than that of \u03b3-actin, predicting potential differences in translation elongation rates (Zhang et al., 2010). Such differences, if prominent enough, could in principle lead to changes in cells\u2019 ability to form focal adhesions and migrate. To test this prediction, we first compared the rates of overall protein accumulation of eGFP-\u03b2- and eGFP-\u03b3-actin, by comparing FRAP of the total eGFP signal in the cell after whole-cell photobleaching. We reasoned that this would serve as a proxy for estimation of newly synthesized \u03b2- and \u03b3-actin (Figure 4A). Notably, the recovery observed in these FRAP experiments within a 10-min imaging window arises from the folding and maturation of already synthesized eGFP fused to actin (since the eGFP maturation rate in vivo has been estimated to be approximately 14 min [Balleza et al., 2018; Iizuka et al., 2011]); given the constant time delay, this recovery rate directly reflects the rate of de novo synthesized actin accumulation within the imaging window. Photobleaching was calibrated to ensure that\u00a0the\u00a0cells remained healthy and visually normal during the experiment (Figure 4A, bottom). The recovery rate was significantly faster for eGFP-\u03b2-actin compared to eGFP-\u03b3-actin (Figure 4A, top right). Thus, newly synthesized \u03b2-actin accumulates in cells faster than \u03b3-actin.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig4-v3.jpg)\n\n**Figure 4.:** (A) Images and quantification of GFP fluorescence in cells before and after photobleaching the entire intracellular GFP signal. Top left panels show representative cells before and after photobleaching, with gray levels scaled to show the actual difference in signal intensity. Top right graph shows the fluorescence recovery after photobleaching (FRAP) curve during the first 10 min post-bleach. Data points are dots and the linear regression curves are in bold (with dotted lines representing the 95% confidence bands). N\u00a0=\u00a08 for eGFP-\u03b2-actin and N\u00a0=\u00a010 for eGFP-\u03b3-actin. Bottom, post-bleached images of cells taken at 2.5\u2032 intervals from 0\u2032 (left) to 10\u2032 (right), with the gray levels scaled up to enhance the residual eGFP signal. Scale bars\u00a0=\u00a010 \u00b5m. (B) Left: representative images of actin protein and mRNA used for the experiments. Insets on the right of each image show the enlarged region indicated in the image on the left. Right: quantification of ribosomes per mRNA, calculated as the SunTag signal from the nascent peptides (NAPs) at each translation site divided by the HaloTag signal from the mRNA. (C) Left: FRAP curves showing recovery of the green fluorescence signal in individual translation spots. Right: fluorescence recovery time for each actin isoform and translation elongation rate (amino acids/s) calculated from the fluorescence recovery and NAPs/RNA. (B) and (C) right: gray boxed area at the bottom of each bar indicates the contribution from SunTag, the\u00a0auxin-induced degron (AID), and linker portion of the construct (see 'Materials\u00a0and\u00a0methods'), and p-values are from one-tailed Welch\u2019s t-test. Error bars represent SEM for n data points, calculated geometrically and plotted in a\u00a0linear fashion.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The 5\u2032 end of the construct encodes 24 Suntag repeats, each of which upon translation binds to sfGFP-fused anti-Suntag antibody fragment expressed in the cells. This is followed by the \u03b2- or \u03b3-actin coding sequence. This is then followed by Auxin-induced degron, which once translated targets the nascent peptide for degradation. The construct also contains the \u03b2-actin 3\u2032UTR required for mRNA zipcode-mediated targeting to the leading edge. Lastly, the construct encodes 24 MS2 repeats each, which bind to MS2 coat-binding protein fused to Halo-Tag. These MS2 repeats were used to visualize the mRNA of\u00a0single-molecule imaging of nascent peptide synthesis (SINAPS) constructs.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** The number of nascent peptides\u00a0(NAPs)/mRNA is higher for \u03b3-actin, indicating that \u03b3-actin translation elongation is slower than that of \u03b2-actin.\n\nTo directly estimate \u03b2- and \u03b3-actin translation elongation rates, we performed single-molecule imaging of nascent peptide synthesis (SINAPS) for these two actin isoforms using the SunTag system (Wu et al., 2016). Similarly to the constructs used for generating eGFP-actin stable cell populations, we ensured that the coding sequence was the only variable, flanked by otherwise identical upstream and downstream elements, including the promoter of the polyubiquitin gene (UbC)\u00a0for constitutive expression, the N-terminal 5\u2032 SunTag fusion to visualize the nascent peptide, the C-terminal auxin-induced degron to degrade fully synthesized polypeptides and reduce the background signal, the \u03b2-actin 3\u2032UTR for cell periphery targeting, and MS2 repeats in the non-coding region to visualize mRNA via constitutively expressed MS2 coat-binding protein (MCP) fused to a HaloTag (Figure 4\u2014figure supplement 1).\n\nSimultaneous imaging of SunTag-bound superfolder GFP (sfGFP) and MS2-bound HaloTag in fixed cells (labeled with JaneliaFluor 646) enabled us to estimate the number of nascent peptides (NAPs) per mRNA, a measure of the ribosome load and, by proxy, the\u00a0translation elongation rate. Assuming similar translation initiation rates for both constructs (given their identical 5\u2032 sequences at and around the translation initiation sites), fewer elongating ribosomes in this assay arise from their faster translocation over the mRNA, leading to weaker sfGFP signals per mRNA. Thus, differences in ribosome load per mRNA (and thus, the number of NAPs per mRNA) would directly indicate differences in translation elongation.\n\n\u03b3-actin coding sequence showed a\u00a0nearly twofold higher level of NAPs/mRNA than that of \u03b2-actin (Figure 4B, Figure 4\u2014figure supplement 2), indicating that the elongating ribosomes had a\u00a0twofold higher load, and thus slower translocation rate, over \u03b3-actin mRNA compared to \u03b2-actin. This is the first characterization of different ribosome loads on individual mRNAs of two protein isoforms that have the same coding sequence length.\n\nNext, we estimated the real-time translation elongation rate of \u03b2- and \u03b3-actin using FRAP of individual translation sites. To minimize mRNA movement, we tethered SINAPS-\u03b2-actin and SINAPS-\u03b3-actin mRNA to focal adhesions, by co-transfecting cells with vinculin-MCP-HaloTag fusion. Fluorescence recovery rate of individual translation sites directly reflects the rate of translation elongation to generate new nascent peptides bearing new sfGFP bound to the SunTag peptides. This recovery rate was\u00a0approximately\u00a0twofold slower for \u03b3-actin compared to \u03b2-actin (Figure 4C), confirming that \u03b3-actin translation elongation is indeed slower than that of \u03b2-actin, in agreement with the NAP/mRNA measurements.\n\nUsing both sets of data, we conclude that the translation elongation rate of the two actin isoforms differs by approximately twofold\u2014faster for \u03b2-actin compared to \u03b3-actin (Figure 4D).\n\n### Faster initial subunit supply rates at the focal adhesions facilitate longer actin bundle formation\n\nDuring cell migration, the initial formation of nascent focal adhesions critically depends on local actin subunit supply rate. Many studies assume that this subunit supply rate is not a limiting factor in vivo, due to high concentrations of G-actin at the cell leading edge (Raz-Ben Aroush et al., 2017). However, it is likely that the actin bundles forming at focal adhesion sites must compete with the actin meshwork at the lamellipodium for polymerization competent actin. There is increasing evidence suggesting such a competition between various actin-driven processes in vivo (Faust et al., 2019; Suarez and Kovar, 2016). In addition, it is possible that at a given moment, some, or most, of the free actin can be sequestered, for\u00a0example, by monomer-binding proteins (Skruber et al., 2018), forcing the elongating leading edge filaments to depend on de novo synthesized actin. In support, actin mRNA targeting to the cell leading edge is essential for cell migration, suggesting that local actin synthesis at the cell leading edge must be important (Katz et al., 2012). Furthermore, local actin translation bursts have been observed in neurons (Buxbaum et al., 2014). It is possible that these bursts, regardless of the overall actin concentrations, are required for locally supplying actin subunits at the focal adhesions during cell migration. If so, replacing the faster translationally elongating \u03b2-actin with the slower elongating \u03b3-actin at these sites could potentially limit this supply and make a difference in focal adhesion anchoring, leading to shorter actin bundles at the focal adhesions, poorer spreading, and faster migration seen in \u03b3-actin-expressing cells.\n\nSince measuring local polymerization-competent actin in a cell is impossible experimentally, we used the computational model of active networks, MEDYAN (Popov et al., 2016). We simulated actin bundle growth at the focal adhesions at different subunit supply rates, in the presence of non-muscle myosin II motors and \u03b1-actinin as crosslinkers, which are critical for actin filament bundling in cells (Chandrasekaran et al., 2019; Figure 5A and Figure 5\u2014figure supplement 1A). In these simulations, filaments elongate by incorporating newly supplied actin monomers, and then bundle together through the action of myosin motors and crosslinkers. During 10-min simulations, the time window typically sufficient for establishment of robust focal adhesions, varying actin subunit supply rate resulted in pronounced differences in the length of the actin bundle growing from the focal adhesion site (Videos 5 and 6). A twofold decrease in subunit supply rate resulted in over a twofold decrease in actin bundle length (Figure 5A, right and Figure 5\u2014figure supplement 1B). To test this prediction experimentally, we measured the length of eGFP-actin-decorated bundles emanating from paxillin-positive focal adhesion patches in cells stably expressing different eGFP-actin isoforms, using both the migrating cells at the edge of the wound and single cells (Figure 5B\u2013D). In both types of cultures, actin bundles associated with the focal adhesion sites were markedly longer in \u03b2-actin-expressing cells, compared to those expressing \u03b3-actin (Figure 5B\u2013D). Moreover, these trends followed the actin coding sequence, rather than the\u00a0amino acid sequence (Figure 5B,C). Thus, the\u00a0slower subunit supply dictated by differences in translation elongation rates of \u03b2- and \u03b3-actin coding sequences during the initial events of focal adhesion formation and maturation bears direct consequences to cell adhesion and migration.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig5-v3.jpg)\n\n**Figure 5.:** (A) Molecular simulations of actin filament growth at the focal adhesion at four different subunit supply rates, using the components listed on the right. Length of the actin bundle for each supply rate is indicated underneath, with SD listed for five independent simulations. All systems contain 0.012 \u03bcM non-muscle myosin II mini-filaments and 1.25 \u03bcM alpha-actinin crosslinkers. (B, C) Scatter plots showing the lengths of actin bundles emanating from focal adhesions in two separate experiments\u2014single-cell cultures (B) and wound edge (C). Solid colors indicate individual cells (\u03b2-actin: 16, \u03b3-actin: 21, \u03b2-coded\u00a0\u03b3-actin: 26, \u03b3-coded\u00a0\u03b2-actin: 30) or fields of view (\u03b2-actin: 31, \u03b3-actin: 30, \u03b2-coded\u00a0\u03b3-actin: 8, \u03b3-coded\u00a0\u03b2-actin: 30), and transparent colors represent individual actin bundle length measurements. Error bars are mean\u00a0\u00b1\u00a095% CI. Number of actin cables measured: (B) \u03b2-actin\u00a0=\u00a01715, \u03b3-actin\u00a0=\u00a0756, \u03b2-coded\u00a0\u03b3-actin\u00a0=\u00a0482, and \u03b3-coded\u00a0\u03b2-actin\u00a0=\u00a02383; (C) \u03b2-actin\u00a0=\u00a01165, \u03b3-actin\u00a0=\u00a01129, \u03b2-coded\u00a0\u03b3-actin\u00a0=\u00a01726, and \u03b3-coded\u00a0\u03b2-actin\u00a0=\u00a0898. A non-parametric one-way analysis of variance (ANOVA) (Kruskal-Wallis) test for both single-cell cultures and wound edge gave a significant p-value (<0.0001). (D) Representative images of the single-cell cultures (S) and cells at wound edge (W) showing eGFP-actin (green) co-stained with focal adhesion marker paxillin (red). Scale bar, 20 \u00b5m.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Measurements of the actin bundle length from distribution plots of F-actin distribution in the Z-axis. (B) Representative simulation snapshots similar to those shown in Figure 5A but with a\u00a0higher non-muscle myosin motor concentration (0.021 \u03bcM).\n\n![Video 5.](https://cdn.elifesciences.org/articles/68712/elife-68712-video5.mp4.jpg)\n\n![Video 6.](https://cdn.elifesciences.org/articles/68712/elife-68712-video6.mp4.jpg)\n\n## Discussion\n\nOur study follows up on the recent discovery of the essential role of nucleotide, rather than amino acid, sequence in non-muscle actin isoform function and demonstrates for the first time that actin coding sequence, uncoupled from other gene elements, can directly affect cell behavior. We found that differences in \u03b2- and \u03b3-actin coding sequences result in different ribosome elongation rates during their translation, leading to changes in cell spreading, focal adhesion anchoring, and cell migration speed. This study constitutes the first direct comparison of translation rates of two closely related proteins and the first demonstration that these translation rates can mediate their functions in vivo.\n\nOn the surface, it appears to be surprising that expression of the slower-translating \u03b3-actin can make the cells move faster than the faster-translating \u03b2-actin. However, this result fits well into the context of the previously proposed localized bursts of \u03b2-actin translation, implicated in cell spreading and focal adhesion formation (Condeelis and Singer, 2005; Katz et al., 2012). Our data show that faster translating \u03b2-actin is required for generating stable focal adhesions, while the slower translating \u03b3-actin leads to faster focal adhesion turnover. Importantly, our data also show that the effects mediated by slower translating \u03b3-actin on cell migration manifest only when the \u03b3-actin mRNA is targeted to the cell periphery via the \u03b2-actin zipcode sequence. Our study on codon profile-mediated actin isoform-specific translation differences, along with studies that showed actin isoform UTRs conferring isoform-specific mRNA localization with unique functional consequences (Kislauskis et al., 1993; Moradi et al., 2017), establish physiological roles to nucleotide elements in determining cellular phenotypes of isoactins.\n\nWe propose that slower translation at the leading edge makes \u03b3-actin less capable of supporting and sustaining strong focal adhesions. Given that rapid polymerization of actin is required for lamellipodium protrusion and focal adhesion formation, one plausible role of localized fast actin translation at focal adhesions is to balance the competition between actin monomer pools required for protrusion and adhesion formation. In support, in \u03b3-actin-expressing cells, most focal adhesions, while larger in area, do not appear to be visibly anchored by prominent actin bundles. In contrast, cells expressing \u03b2-actin contain long actin cables emanating from most of the focal adhesion sites. This difference impairs spreading without significantly changing protrusion dynamics. We propose that the\u00a0faster migration rate is thus caused by weaker cell-substrate attachment in cells expressing \u03b3-actin (Figure 6). Notably, this increase in cell speed is only evident in a wound-healing assay, where cells are collectively stimulated to migrate directionally, rather than randomly move around as typical for these cells in single-cell cultures of MEFs. It is likely that actin behavior in response to the strong signals for cells to polarize and move directionally during wound healing depends on local actin translation more critically than during random migration, where cells can change directions or remain stationary for extended periods of time and are not constrained in the direction of their polarization and motility. These constraints could potentially involve tension generated in dense cultures during collective migration (Trepat et al., 2009), as well as other forms of signaling in dense cultures.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/68712/elife-68712-fig6-v3.jpg)\n\n**Figure 6.:** Faster translating \u03b2-actin facilitates focal adhesion (FA) formation and persistence, resulting in increased cell spreading and a\u00a0reduced rate of directional cell movement. Slower translating \u03b3-actin has the opposite effect.\n\nWhile the local supply rate of actin subunits to the forming focal adhesion sites during cell migration is nearly impossible to measure experimentally with the currently available methods, the use of modeling and simulation enables us to vary this parameter and estimate the subunit supply rate that could make a difference in this process. It appears surprising that a twofold difference in translation elongation rate found in our study could exert such a pronounced effect on the length of the actin bundles forming locally at the focal adhesion sites, especially given the fact that polymerization-competent actin should exist everywhere in the lamellipodia. Our results suggest that the concentration of this polymerization-competent actin pool may be far lower than previously estimated, potentially due to the competition between different actin pools undergoing rapid polymerization, as well as the action of monomer sequestering proteins and/or posttranslational modifications that may prevent actin from incorporating into filaments (Skruber et al., 2018). It is also possible that, even with a\u00a0higher actin concentration in the lamellipodia, focal adhesions compete with the monomer pool, thus requiring local translation of \u03b2-actin. Notably, these differences are expected to be even higher with the native non-eGFP-fused actin isoforms, which likely differ in their translation initiation rates in addition to the difference in elongation rates we observed. These questions, and the exact interplay between newly synthesized and diffusible actin in cells, constitute an exciting direction of future studies.\n\nOur previous work has\u00a0shown that actin coding sequence leads to differential arginylation of \u03b2- and \u03b3-actin (Zhang et al., 2010), and this arginylation is important\u00a0for directional cell migration (Karakozova et al., 2006). In the present study, the use of N-terminal eGFP fusions likely excludes arginylation as a variable in our cell populations, since arginylation is believed to require an exposed \u03b2-actin N-terminus. The use of GFP-actin fusions also likely limits the types of effects we can observe, since these fusions are not fully functionally equivalent to the native actin and are impaired, for\u00a0example, in formin nucleation (Chen et al., 2012). Thus, our constructs cannot substitute for all aspects of normal actin in cells, and this could explain the fact that the strongest effects we observe are related to cell adhesion and migration, the processes that are likely able to fully utilize eGFP-actin. Notably, in our cells, the endogenous \u03b2- and \u03b3-actin are still present and still able to support cell migration, likely compensating for these types of functions, and potentially diminishing the observed phenotypes.\n\nThinking of the nucleotide sequence, rather than the amino acid sequence, as a determinant of actin function is a novel view that opens up many exciting questions. The present study demonstrates that coding sequence alone can play a significant role in cell behavior, but it does not exclude the possibility that other nucleotide-based elements of the actin gene also contribute to actin isoforms\u2019 global role in organism survival. For example, it has been shown that a unique intron in the \u03b3-actin gene can contribute to its function (Lloyd and Gunning, 1993). Studies of the interplay of nucleotide- and amino acid-based determinants in actin functions constitute exciting future directions in the field.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>NEB Stable (Stbl3)</td>\n      <td>New England Biosciences</td>\n      <td>C3040I</td>\n      <td>Chemically competent E.\u00a0coli</td>\n    </tr>\n    <tr>\n      <td>Cell line (Mus musculus)</td>\n      <td>Spontaneously immortalized MEFs</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Mouse embryonic fibroblasts were derived from E12.5-E16.5 mouse embryos. The primary cells were cultured till spontaneously immortalized populations survived.</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (synthetic)</td>\n      <td>pHR-scFv-GCN4-sfGFP-GB1-NLS-dWPRE</td>\n      <td>Tanenbaum et al., 2014</td>\n      <td>Addgene plasmid #60906</td>\n      <td>Plasmid containing Superfolder-GFP fused to single-chain variable fragment against GCN4 repeats used to localize nascent peptides from SINAPS constructs</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (synthetic)</td>\n      <td>pBabe TIR1-9myc</td>\n      <td>Holland et al., 2012</td>\n      <td>Addgene plasmid #47328</td>\n      <td>Plasmid containing the ubiquitin ligase TIR, which targets auxin-induced degrons in nascent peptides from SINAPS constructs</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Paxillin (mouse monoclonal)</td>\n      <td>BD Transduction Laboratories</td>\n      <td>Cat#: 610619</td>\n      <td>IF (1:100)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>eTC GFP beta-actin full length (plasmid)</td>\n      <td>Rodriguez et al., 2006</td>\n      <td>Addgene plasmid #27123</td>\n      <td>Human ACTB promoter and 3\u2032UTR containing plasmid with eGFP. This was used to construct the mouse \u03b2-, \u03b3-, \u03b2-coded-\u03b3-, and \u03b3-coded-\u03b2-actin plasmids with \u03b2-actin 3\u2032UTR.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>eTC GFP beta-actin \u0394Zip (plasmid)</td>\n      <td>Rodriguez et al., 2006</td>\n      <td>Addgene plasmid # 27124</td>\n      <td>Human ACTB promoter with no ACTB 3\u2032UTR plasmid with eGFP. This was used to construct the mouse \u03b2-, \u03b3-, \u03b2-coded-\u03b3-, and \u03b3-coded-\u03b2-actin plasmids without \u03b2-actin 3\u2032UTR.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pUbC-FLAG-24xSuntagV4-oxEBFP-AID-baUTR1-24xMS2V5-Wpre (plasmid)</td>\n      <td>Wu et al., 2016</td>\n      <td>Addgene plasmid # 84561</td>\n      <td>Plasmid containing Suntag, AID, \u03b2-actin 3\u2032UTR, MS2 repeats. This was used to generate mouse SINAPS-\u03b2-actin and SINAPS-\u03b3-actin reporters.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>UbC NLS HA stdMCP stdHalo</td>\n      <td>Voigt et al., 2017</td>\n      <td>Addgene plasmid #104999</td>\n      <td>Plasmid containing MCP tandem dimer fused to HaloTag tandem dimer to visualize MS2 repeat containing RNA</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pUbC-nls-ha-stdMCP-stdGFP</td>\n      <td>Wu et al., 2016</td>\n      <td>Addgene plasmid #98916</td>\n      <td>Plasmid containing MCP tandem dimer fused to GFP tandem dimer. Mouse vinculin sequence was cloned upstream of MCP to allow for tethering of MS2-containing RNA to focal adhesions. GFP was replaced by HaloTag.</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Actb_F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GATCAAGATCATTGCTCCTCCTG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Actb_F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>AGGGTGTAAAACGCAGCTCA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Actg1_F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GCGCAAGTACTCAGTCTGGAT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Actg1_R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>TGCCAGGGCAAATTGATACTTC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>eGFP_F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GTGAAGTTCGAGGGCGACA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>eGFP_R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>TCGATGTTGTGGCGGATCTT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Tbp_F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>TAATCCCAAGCGATTTGCTGC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Tbp_R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>AGAACTTAGCTGGGAAGCCC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>eGFP FISH probes</td>\n      <td>LGC Biosearch Technologies</td>\n      <td>VSMF 1015\u20135</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FishQuant</td>\n      <td>Mueller et al., 2013</td>\n      <td></td>\n      <td>Used for quantifying signals from SINAPS constructs in fixed cells</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Airlocalize</td>\n      <td>Lionnet et al., 2011</td>\n      <td></td>\n      <td>Used for quantifying signals from SINAPS constructs in FRAP experiments in live cells</td>\n    </tr>\n  </tbody>\n</table>\n\n### Constructs\n\nConstructs were generated using the eTC GFP beta-actin full-length plasmid (Addgene plasmid # 27123) and eTC GFP beta-actin \u0394Zip (Addgene plasmid # 27124), which were gifts from Robert Singer (Rodriguez et al., 2006). Plasmid #27123 encodes the\u00a0human \u03b2-actin promoter, followed by TC-eGFP, a five-amino-acid (GSTSG) linker, and the full-length human \u03b2-actin complementary DNA (cDNA )containing \u03b2-actin 3\u2032UTR (eTC GFP beta-actin full-length plasmid), followed by the transcription terminator bGH polyA, which carries the typical AAUAAA sequence responsible for transcription termination and polyadenylation of the mRNA. Plasmid #27214 is identical, except that it does not contain the beta-actin 3\u2032UTR (eTC GFP beta-actin \u0394Zip). No 5\u2032UTR or any other non-coding elements from the \u03b2-actin gene besides the promoter are included in these plasmids. To generate actin isoform-encoding constructs for this study, we used plasmid #27213 or #27214 as the backbone for the construct with and without \u03b2-actin 3\u2032UTR, respectively. To obtain constructs expressing actin isoforms in this study, \u03b2-actin coding sequence (starting with the first ATG and ending with the terminator codon) was replaced with the corresponding sequence encoding mouse \u03b2-actin or mouse \u03b3-actin (generating eGFP-\u03b2-actin and eGFP-\u03b3-actin from plasmid #27213 and eGFP-\u03b2-actin \u03943\u2032UTR and eGFP-\u03b3-actin \u03943\u2032UTR from plasmid #27214). For the codon-switched constructs, point mutations were introduced into the coding sequence of the actin isoforms as shown in Figure 1 and described in Vedula et al., 2017 to generate eGFP-\u03b2-coded\u00a0\u03b3-actin and eGFP-\u03b3-coded\u00a0\u03b2-actin. pUbC-FLAG-24xSuntagV4-oxEBFP-AID-baUTR1-24xMS2V5-Wpre was a gift from Robert Singer (Addgene plasmid # 84561) and was used to generate the actin isoform SINAPS reporters (Wu et al., 2016). The \u03b2- and \u03b3-actin coding sequences were cloned in place of the oxEBFP sequence in the original construct. For fixed-cell imaging of ribosome load per mRNA, phage UbC NLS HA stdMCP stdHalo, a gift from Jeffrey Chao (Addgene plasmid # 104999) (Voigt et al., 2017), was used. For constructing the mRNA tether in live-cell real-time imaging of translation dynamics, pUbC-nls-ha-stdMCP-stdGFP, a gift from Robert Singer (Addgene plasmid # 98916) (Wu et al., 2016),\u00a0was used to clone mouse vinculin sequence upstream of stdMCP, and stdGFP was replaced by HaloTag. pHR-scFv-GCN4-sfGFP-GB1-NLS-dWPRE,\u00a0a gift from Ron Vale (Addgene plasmid # 60906) (Tanenbaum et al., 2014),\u00a0was used for the NAP sensor. pBabe TIR1-9myc,\u00a0a gift from Don Cleveland (Addgene plasmid # 47328) (Holland et al., 2012),\u00a0was used for degrading the fully synthesized SINAPS construct.\n\n### Generation of polyclonal stable cell populations\n\nSpontaneously immortalized MEFs used in this project were obtained in the lab from E12.5-E16.5 mouse embryos and immortalized by continuous passaging in culture, using Dulbecco\u2019s modified Eagle\u2019s medium (DMEM) (Gibco) supplemented with 10% fetal bovine serum (FBS) (Gibco) as the tissue culture medium. These cells were produced and maintained in the lab and have not been independently authenticated, but they were continuously observed to maintain characteristic morphology of mouse embryonic fibroblasts. All mycoplasma tests conducted in the lab were negative.\n\nTo obtain the stable cell cultures described in this study, these cells were transfected with the linearized EGFP-actin constructs described above. Following G418 selection, GFP-positive cells were sorted using fluorescence activated cell sorting (FACS) and cultured. Live-cell imaging was carried out in FluorBrite DMEM (Life Technologies) culture media supplemented with 10% FBS (Sigma) and L-glutamine (Gibco).\n\nHEK-293T cells were cultured in DMEM (Gibco) supplemented with 10% FBS (Gibco). Lipofectamine 2000 (Life Technologies) was used to transfect these cells with plasmids for generating either lentiviral particles, pMD.G, pPAX, and plasmid containing gene of interest, or retroviral particles, pCL10A and pBabe TIR1-9myc. Virus-containing medium was harvested and used to infect immortalized MEFs in the following order: first, either UbC-NLS-HA-stdMCP-stdHalo for fixed-cell imaging of number of NAPs/mRNA or Vinculin-stdMCP-Halo for live-cell dynamics of translation elongation, second, TIR1-9myc followed by puromycin selection of infected cells, third, scFv-GCN4-sfGFP-GB1-NLS, and lastly, either SINAPS-\u03b2-actin- or SINAPS-\u03b3-actin-containing lentivirus. These polyclonal cells were used for imaging the\u00a0number of NAPs on each of \u03b2- and \u03b3-actin constructs. Indole-3-acetic acid was used at 500 \u00b5g/ml to induce degradation of fully synthesized SINAPS constructs. Janelia Fluor 646-tagged Halo ligand (Promega) was used at 200 nM final concentration to label SINAPS-mRNA in cells prior to fixation/imaging.\n\n### Cell migration assays and imaging\n\nCell migration was stimulated by making an infinite scratch wound. The cells were allowed to recover for a period of 2 hr before imaging. Images were acquired using a X10 phase objective on a Lecia DMI 4000 equipped with a Hamamatsu ImagEM EMCCD camera. Images were captured every 5 min for 10 hr. Migration rates were measured as the area covered by the edge of the wound in the field of view per unit time using Fiji (NIH). For TIRF wound-healing experiments, cells were imaged on a Nikon Ti with a X100, 1.49 NA objective using the 488 nm laser and an Andor iXon Ultra 888 EMCCD.\n\n### Fluorescence recovery after photobleaching\n\nFor all FRAP experiments, imaging was carried out on a Nikon Ti inverted microscope equipped with either an Andor iXon Ultra 888 EMCCD camera (0.13 \u00b5m/pixel\u2014for imaging TIRF-FRAP and widefield whole-cell eGFP-actin FRAP) or an\u00a0Andor iXon Ultra 897 EMCCD camera (0.16 \u00b5m/pixel\u2014for imaging SINAPS-FRAP using a Yokogowa CSU X1 spinning disc confocal). Photobleaching was carried out with a Bruker miniscanner equipped with XY Galvo mirrors. The region of interest for photobleaching was defined using a freehand Region of Interest (ROI) manager in Nikon Instruments NIS elements software: an elliptical region encompassing an actin patch at the cell periphery for TIRF-FRAP, the entire cell for widefield whole-cell FRAP, and a\u00a0single-pixel spot containing the translation site for SINAPS-FRAP. eGFP-actin-expressing cells were seeded on Matek glass bottom dishes and allowed to spread overnight. For photobleaching, the 488 nm laser was set to 80% power and used to bleach a defined eGFP-actin patch at the cell periphery with a dwell time of 400\u00a0\u00b5s/pixel. Images were acquired in the TIRF mode with the 488 nm laser set to 50% power and 200 ms exposure and an electron-multiplying (EM) gain of 200. Images were acquired at 3\u00a0s intervals for 12 s pre-bleach and 6 min post-bleach. The\u00a0change in fluorescence intensity in a circle within an actin patch that was not bleached was used as a reference to account for photobleaching during acquisition. The change in intensity within a circle of the same area within the bleached actin patch was used to calculate the recovery curve. The obtained values were normalized to one at pre-bleach, and the resulting post-bleach curves were fit using non-linear regression to a single exponential fit in GraphPad PRISM.\n\nFor whole-cell eGFP-actin FRAP, the whole cell was outlined. For photobleaching, the 488 nm laser was set to 70% power with a dwell time of 70\u00a0\u00b5s/pixel. Acquisition was carried out using a 488 nm LED illumination from Spectra/Aura with 10% illumination intensity and 200 ms exposure with an EM gain of 300. Images were acquired every 10 s for a total of 10 min after bleaching. The recovery curves obtained were fit using a linear regression model in GraphPad PRISM.\n\nFor live-cell SINAPS-FRAP, cells expressing SINAPS-actin constructs were\u00a0tethered using Vinculin-stdMCP-Halo (see sections\u00a0'Constructs' and 'Generation of polyclonal stable cell populations' above). For photobleaching, the 488 nm laser was set to 80% power with a dwell time of 1 ms/pixel. Images were acquired in the spinning disc confocal mode with the 488 nm laser set to 30% power and 35 ms exposure with\u00a0an EM gain of 300. Images were acquired at 700 ms intervals for 30 s pre-bleach and 7 min post-bleach.\n\n### Translation elongation rate measurements\n\nFishQuant (Mueller et al., 2013) was used to detect NAP and mRNA signals. Spots in the NAP channel that were within 300 nm of a spot in the mRNA channel were considered bonafide NAPs and were\u00a0used for estimating the integrated fluorescence intensity in both channels.\n\nAirlocalize (Lionnet et al., 2011) was used to fit the signal from tethered NAPs. The integrated signal was recorded pre-bleach and post-bleach. These values were used to calculate the translation elongation rates of the two actin isoforms.\n\nAssuming that beta-actin has the same elongation rate as Suntag, AID, and linkers, following the theoretical derivation of Wu et al., 2016, it is straight forward to show that the proportion of beta-actin contribution to recovery time and NAP/mRNA is (L+(N\u00a0+\u00a01)/2)/(S\u00a0+\u00a0L\u00a0+\u00a0(N\u00a0+\u00a01)/2), in which N is the total number of Suntags, S is the beta-actin length in the unit of 1 Suntag, and L is the length of AID and linkers in the unit of 1 Suntag, shown as the gray bar in Figure 4B and C. It is not surprising to see from those figures that the ratios of recovery time to NAP/mRNA are similar for beta- and gamma-actin, since the initiation rates for both constructs should be the same, given the identical N-termini. Therefore, we calculated the variance-weighted geometric average of the two ratios, which is T\u00a0~\u00a026.9 s, and used it to combine the data from recovery time and NAP/mRNA to calculate the beta-actin elongation rate: Rb=(S\u00a0+\u00a0L\u00a0+\u00a0(N\u00a0+\u00a01)/2)/t or Rb=(S\u00a0+\u00a0L\u00a0+\u00a0(N\u00a0+\u00a01)/2)/n/T, where t is recovery time and n is NAP/mRNA, for each data point, followed by geometric averaging. The contribution from Suntag, AID, and linkers to recovery time is T0\u00a0=\u00a0(L+(N\u00a0+\u00a01)/2)/Rb, which is used to calculate the gamma-actin elongation rate: Rg\u00a0=\u00a0S/(t-T0) or Rg\u00a0=\u00a0S/(n*T-T0) for each data point, followed by geometric averaging. The results are shown in Figure 4D.\n\n### Immunofluorescence staining and analysis\n\nTo quantify the amount of actin polymer, cells were seeded on coverslips in six-well plates at 20,000 cells/well overnight and fixed in 4% (w/v) paraformaldehyde\u00a0(PFA) at room temperature for 30 min. Cells were then stained with phalloidin conjugated to AlexaFluor 594 (Molecular Probes). Images were acquired on Leica DM6000 at X40 and the total intensity of phalloidin per cell was measured using Fiji (NIH). To analyze focal adhesions in single cells, eGFP-actin-expressing cells were seeded on coverslips and\u00a0allowed to adhere and spread overnight. Cells were then fixed in 4% (w/v) PFA at room temperature for 30 min followed by 0.5% Triton-X 100 treatment for 5 min. Cells were incubated with mouse anti-paxillin monoclonal antibody (BD Biosciences), followed by AlexaFluor 555-conjugated goat-anti-mouse secondary antibody (Life Technologies). Cells were imaged with Citifluor (Cytoskeleton Inc) anti-bleaching agent. To analyze cell spreading and cell area, Celltool was used to outline cell shapes and classify them and extract shape modes. The shape modes that captured 60% of the overall variability in the shape model were used to assess the distribution of cell shapes in a principle component analysis\u00a0(PCA) plot. Additionally, a kernel density estimate of the marginal was used to plot the area of focal adhesions.\n\nFISH eGFP mRNA probes (conjugated to Quasar 670 dye) were purchased from LGC Biosearch Technologies (VSMF 1015\u20135) and FISH was carried out as per manufacturers\u2019 protocol. Briefly, cells were seeded onto coverslips in six-well plates at 20,000 cells/well overnight and fixed in 4% (w/v) PFA at room temperature for 30 min followed by treatment with 70% alcohol at 4\u00b0C for 1 hr. Cells were incubated with 125 nM probes at 37\u00b0C overnight. Cells were stained with 4\u2032,6-diamidino-2-phenylindole (5 ng/ml) and mounted using Prolong Diamond (Life Technologies). Images were acquired using Leica DM6000 at X40. Z-stacks were acquired, and blind deconvolution was carried out using Leica LAS X software.\n\n### Real-time PCR\n\nCells were seeded onto 10-cm culture dishes and grown to confluence. RNA was isolated using RNeasy mini kit (Qiagen) and cDNA was synthesized using oligo dT primers with a first strand cDNA synthesis kit (Applied Biosystems). After standard curves were obtained, quantitative\u00a0PCR\u00a0(qPCR) was carried out using SybrGreen (Applied Biosystems) and the following primer sets. PCR was carried out on QuantStudio Flex 6 Real Time PCR system (Applied Biosystems). \u0394\u0394Ct method was used to estimate the relative expression levels of mRNA using Tbp as the reference transcript.\n\n### Simulations of actin filament growth at focal adhesions\n\nComputational simulations of actin bundle growth from focal adhesions to predict the bundle length at different \u03b2- and \u03b3-actin local supply rates were performed using a recently developed software MEDYAN (Popov et al., 2016). In brief, MEDYAN simulates actin networks by integrating the stochastic diffusion-reaction dynamics and mechanical relaxation of the cytoskeletal network. Diffusing molecular species, including actin monomers, unbound myosin motors, and unbound crosslinkers, are contained in a solution phase. Stochastic chemical reactions such as actin (de)polymerization and (un)binding of motors and linkers follow mass-action kinetics, and change the mechanical energy of the actin network. The net forces are then periodically relaxed using conjugate-gradient mechanical equilibration. This step also updates reaction rates of motor walking, motor unbinding, and linker unbinding, based on residue tension after minimization.\n\nWe used a 1\u00d71\u00d74 \u03bcm3 simulation box, containing non-muscle myosin II motors, alpha-actinin crosslinkers, actin monomers, and actin filaments growing from the bottom focal adhesion region. The focal adhesion region was presented as a hemisphere with 30 actin filaments attached. We tested and\u00a0found\u00a0that the actin filaments never grow longer than 4 \u03bcm in the z-direction, and thus, no length constraints on the actin bundles factored into the simulations. Actin filaments were only allowed to elongate at one end (the barbed end), while the elongation rate constant was averaged over filament polymerization rates and depolymerization rates of both the\u00a0barbed end and the\u00a0pointed end. The filament elongation was driven by the addition of actin monomers to the system, simulating the synthesis of actin monomers near the focal adhesion region. Multiple actin supply rates were tested at 50% increments based on the experimental measurements of the differences between \u03b2- and \u03b3-actin synthesis rates. The simulations were run for 10 min to match the timescale of the experiments. The starting concentration of actin at the attachment site was assumed to be\u00a0~2 \u03bcM locally, creating an initial bundle at around 0.1 \u03bcm long. In the simulation, the majority (more than 90%) of actin for the filament growth was assumed to arise from the de novo subunit addition. The concentrations of myosin mini-filaments (0.012\u20130.021 \u03bcM) and alpha-actinin crosslinkers (1.25 \u03bcM) were chosen to ensure proper bundling of filaments (all model parameters are listed in Table 1).\n\n**Table 1.**\n Model parameters.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Parameter name</th>\n      <th>Value</th>\n      <th>Reference and notes</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Filaments</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Filament polymerization and depolymerization rates</td>\n      <td>\u03baon = 12.9 (11.6 + 1.3) \u03bcM-1s-1 \u03baoff = 2.2 (1.4 + 0.8) s-1</td>\n      <td>(Fujiwara et al., 2007) Taking both barbed ends and pointed ends into account</td>\n    </tr>\n    <tr>\n      <td>Filament bending constant</td>\n      <td>672.5 pN\u00b7nm</td>\n      <td>(Ott et al., 1993) Bending constant between connecting cylinders*</td>\n    </tr>\n    <tr>\n      <td>Filament stretching constant</td>\n      <td>100.0\u00a0pN/nm</td>\n      <td>(Popov et al., 2016) Stretching constant of cylinder</td>\n    </tr>\n    <tr>\n      <td>Motors</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Binding rate constant</td>\n      <td>0.2 s-1 per head</td>\n      <td>Stam et al., 2015</td>\n    </tr>\n    <tr>\n      <td>Duty ratio</td>\n      <td>0.1</td>\n      <td>Stam et al., 2015</td>\n    </tr>\n    <tr>\n      <td>Number of motor heads per mini-filament</td>\n      <td>15\u201330</td>\n      <td>Verkhovsky and Borisy, 1993</td>\n    </tr>\n    <tr>\n      <td>Stretching constant</td>\n      <td>56.0\u00a0pN/nm</td>\n      <td>Popov et al., 2016</td>\n    </tr>\n    <tr>\n      <td>Characteristic stall force</td>\n      <td>15.0 pN per head</td>\n      <td>Popov et al., 2016</td>\n    </tr>\n    <tr>\n      <td>Characteristic motor unbinding force</td>\n      <td>12.6 pN per head</td>\n      <td>Erdmann et al., 2013</td>\n    </tr>\n    <tr>\n      <td>Crosslinkers</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Binding rate constant</td>\n      <td>0.7\u00a0\u03bcM-1s-1</td>\n      <td>Wachsstock et al., 1993</td>\n    </tr>\n    <tr>\n      <td>Unbinding rate constant</td>\n      <td>0.3\u00a0s-1</td>\n      <td>Wachsstock et al., 1993</td>\n    </tr>\n    <tr>\n      <td>Stretching constant</td>\n      <td>8.0\u00a0pN/nm</td>\n      <td>DiDonna and Levine, 2007</td>\n    </tr>\n    <tr>\n      <td>Characteristic linker unbinding force</td>\n      <td>17.2\u00a0pN</td>\n      <td>Ferrer et al., 2008</td>\n    </tr>\n  </tbody>\n</table>\n\n_* Filaments are discretized into cylinders, and the length of\u00a0cylinders ranges from 2.7 nm (1 subunit) to a maximum of\u00a0108 nm (40 subunits). Bending is only allowed between two connecting cylinders._\n\nTo determine the actin bundle length, we measured the F-actin distribution along the Z-axis and defined the actin bundle length as the width of central 80% of the F-actin distribution (Figure 5\u2014figure supplement 1A). Although the length measured in simulations was much shorter than that\u00a0in\u00a0the experiments, the beta-actin bundles were\u00a0~50\u201380% longer than gamma-actin bundles, in agreement with the experimental measurements.\n",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "1a0f98c9-5a3f-4f7b-a074-344585023b3a",
+      "submission_id": "f65460cb-56c7-4409-b994-8f68790d5358",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Robert H Singer, Albert Einstein College of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.68712.sa1](https://doi.org/10.7554/eLife.68712.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis work provides good evidence that the mRNAs for the actin isoforms mainly differ in their spatial expression of protein, rather than the protein itself and this has profound effects on the cell physiology.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Different translation dynamics of \u03b2-and \u03b3-actin regulates cell migration\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Anna Akhmanova as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: R Dyche Mullins (Reviewer #2); Peter W Gunning (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. The details of the gene construct used to build the vectors is not clear in Methods. How much 5' upstream sequence of the \u03b2-actin gene is used and from what species (chicken, mouse, human)? Are any introns present? Is the full 5'UTR of \u03b2-actin included? Is there a linker between GFP and the amino terminus of actin? What provides the transcription termination down stream of the polyadenylation site? This is all important information to enable reproduction of the study.\n\n2. The authors refer to cell lines throughout the paper. Transfected cell lines relate to a clonal origin whereas these are polyclonal populations of cells. I recommend avoidance of the term cell lines to avoid confusion.\n\n3. In Figure 1 the legend refers to constructs that lack the \u03b2-actin 3'UTR targeting sequence, but this is not shown in the figure. Is only the targeting sequence eliminated or is the entire \u03b2-actin 3'UTR removed? If it is the latter, what is used to provide a 3'UTR? Results are mentioned in the text that demonstrate that the functional differences are only observed with the targeting sequence intact in the constructs. This is an important point and addressed in Figure S5, however, it is not clear if removal of the targeting sequence from the \u03b3-actin gene construct produces a significant decrease in motility. Is the difference statistically significant?\n\n4. The images in Figure 2 would benefit from quantitation of focal adhesion lifetimes and morphology (beyond area convincingly covered in Figure 3) to support the conclusions that both are impacted differently by the nucleotide sequences of \u03b2- and \u03b3-actin.\n\n5. The images in Figure 3 suggest that unlike \u03b2-actin with both peripheral and internal focal adhesions, the \u03b3-actin nucleotide sequence promotes almost exclusively only peripheral focal adhesions. Is this widespread in the cells or does it reflect atypical images in the figure?\n\n6. In the Discussion the authors argue that local synthesis is important for focal adhesion assembly and that there is low availability of actin for polymerisation from the lamellipodium. This seems unlikely because of the rapid polymerisation of actin in the lamellipodium. Could this rather reflect competition between the lamellipodium and focal adhesions for polymerisation competent actin?\n\n7. The results of Kislauskis and Singer (1997, J Cell Biol) and their work on the spatial distribution of \u03b2 and \u03b1 actin isoforms (J. Cell Bio, 1993) and the effect on cell phenotype (J. Cell Bio 1994) should be incorporated into the Discussion since they have addressed the significance of peripheral targeting of \u03b2-actin.\n\n8. More information on statistics would improve the presentation. For example in the scratch assays in Figure 1 the N values are reported as 20 and 22 (for \u03b2- and \u03b3-actin respectively) but it is unclear whether this reflects the number of scratches, the number of coverslips, or (unlikely) the number of days on which the experiment was repeated. All of these numbers would be useful for judging the significance of the result. Also in the box-and-whisker plots the authors should indicate the replicate-to-replicate (day-to-day) variation in the results.\n\n9. The above comment applies generally to the presentation of quantitative cell biological data in the paper. In Figure 3, for example, N is the number of focal adhesions but it is unclear how many cells, coverslips, and/or biological replicates are included in the data. The bar graphs should be replaced by graphics that illustrate the variation between biological replicates (one way to do this would be 'super-plots' https://pubmed.ncbi.nlm.nih.gov/32346721/ \u2013 note that other methods are available). Ditto for quantitative data in Figures 4 and 5 and all the Supplementary Figures.\n",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "53618e2f-a376-43ce-a925-062a49b9471d",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C1",
+      "claim": "\u03b2- and \u03b3-cytoplasmic actins are ubiquitously expressed in every cell type.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2- and \u03b3-cytoplasmic actins are ubiquitously expressed in every cell type and are nearly identical at the amino acid level but play vastly different roles in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement in the abstract about the expression pattern of these actin isoforms, supported by established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "82c4a98d-30de-4c27-84f5-db59681bfad5",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C2",
+      "claim": "\u03b2- and \u03b3-cytoplasmic actins are nearly identical at the amino acid level.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2- and \u03b3-cytoplasmic actins are ubiquitously expressed in every cell type and are nearly identical at the amino acid level but play vastly different roles in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work (Vandekerckhove and Weber, 1978) showing only four conservative substitutions.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "7e369b57-319a-41ae-9fc3-bc92d380d2af",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C3",
+      "claim": "\u03b2- and \u03b3-cytoplasmic actins play vastly different roles in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2- and \u03b3-cytoplasmic actins are ubiquitously expressed in every cell type and are nearly identical at the amino acid level but play vastly different roles in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies showing different phenotypes in knockout mice.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "5755f784-eb32-4c58-8761-a133bf6e3a40",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C4",
+      "claim": "The essential roles of \u03b2- and \u03b3-cytoplasmic actins in embryogenesis and mesenchymal cell migration critically depend on the nucleotide sequences of their genes, rather than their amino acid sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Their essential roles in embryogenesis and mesenchymal cell migration critically depend on the nucleotide sequences of their genes, rather than their amino acid sequences",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by prior work from the authors (Vedula et al., 2017) showing that \u03b2-actin's nucleotide sequence underlies its essential role.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "895e46d2-763d-43ab-be2b-215c336458a5",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C5",
+      "claim": "When targeted to the cell periphery using \u03b2-actin 3\u2032UTR, \u03b2-actin and \u03b3-actin have differential effects on cell migration.",
+      "claim_type": "EXPLICIT",
+      "source": "When targeted to the cell periphery using \u03b2-actin 3\u2032UTR; \u03b2-actin and \u03b3-actin have differential effects on cell migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1 demonstrating different migration rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "d18a2fe7-070a-499b-b17b-8360d3db7970",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C6",
+      "claim": "The differential effects of \u03b2-actin and \u03b3-actin on cell migration directly depend on the coding sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "These effects directly depend on the coding sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experiments using codon-switched variants showing that the coding sequence determines the phenotype.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "726c11de-0ce9-4e45-9399-044967d59d84",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C7",
+      "claim": "\u03b2-actin exhibits a faster translation elongation rate than \u03b3-actin.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-molecule measurements of actin isoform translation, combined with fluorescence recovery after photobleaching, demonstrate a pronounced difference in \u03b2- and \u03b3-actins' translation elongation rates in cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly measured using single-molecule SINAPS experiments and FRAP, as shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "cbdc7355-9d1c-41fe-95e0-92e1454ac9d6",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C8",
+      "claim": "Differences in \u03b2- and \u03b3-actin translation elongation rates lead to changes in their dynamics at focal adhesions.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-molecule measurements of actin isoform translation, combined with fluorescence recovery after photobleaching, demonstrate a pronounced difference in \u03b2- and \u03b3-actins' translation elongation rates in cells, leading to changes in their dynamics at focal adhesions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by TIRF microscopy data showing different persistence times of actin at focal adhesions (Figure 2).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "8d6fda07-a807-4cc5-97eb-e53c831b8d62",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C9",
+      "claim": "Differences in \u03b2- and \u03b3-actin translation elongation rates lead to impairments in actin bundle formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-molecule measurements of actin isoform translation, combined with fluorescence recovery after photobleaching, demonstrate a pronounced difference in \u03b2- and \u03b3-actins' translation elongation rates in cells, leading to changes in their dynamics at focal adhesions, impairments in actin bundle formation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by measurements of actin bundle lengths at focal adhesions (Figure 5) and supported by computational modeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "f73259a4-274d-4b49-9612-3ee3571c4ca4",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C10",
+      "claim": "Differences in \u03b2- and \u03b3-actin translation elongation rates lead to reduced cell anchoring to the substrate during migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-molecule measurements of actin isoform translation, combined with fluorescence recovery after photobleaching, demonstrate a pronounced difference in \u03b2- and \u03b3-actins' translation elongation rates in cells, leading to changes in their dynamics at focal adhesions, impairments in actin bundle formation, and reduced cell anchoring to the substrate during migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from focal adhesion analysis showing different distributions and sizes (Figure 3) and cell spreading measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "f6139f01-038a-4c86-b0ac-73121b9232ae",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C11",
+      "claim": "Coding sequence-mediated differences in actin translation play a key role in cell migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate that coding sequence-mediated differences in actin translation play a key role in cell migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion supported by all experimental data showing that coding sequence determines translation rate, which affects focal adhesions and migration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "9c637396-490f-46cd-9a0c-c5f2780d8aa1",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C12",
+      "claim": "\u03b2- and \u03b3-cytoplasmic actins share the highest identity at the amino acid level among mammalian actins, with only four conservative substitutions within their N-termini.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the six mammalian actins, \u03b2- and \u03b3-cytoplasmic actins are the only two that are ubiquitously expressed in every mammalian cell type and share the highest identity at the amino acid level, with only four conservative substitutions within their N-termini (Vandekerckhove and Weber, 1978).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Vandekerckhove and Weber, 1978.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "5ea5e400-e250-4a59-81de-9118c0175f50",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C13",
+      "claim": "The coding sequences for \u03b2- and \u03b3-cytoplasmic actins are different by approximately 13% due to synonymous substitutions.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this near-identity, the coding sequences for these two actin isoforms are different by approximately 13% due to synonymous substitutions (Erba et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Erba et al., 1986.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "7292b418-98e1-4f46-af5b-4b1b48ed1e89",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C14",
+      "claim": "The coding sequence difference between \u03b2- and \u03b3-actin can lead to differential arginylation of these two actins.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work has previously shown that this coding sequence difference can lead to differential arginylation of these two actins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work (Zhang et al., 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "30b72db2-9c58-49bb-947f-031b13d439be",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C15",
+      "claim": "Arginylated \u03b2-actin accumulates in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Arginylated \u03b2-actin accumulates in vivo, while arginylated \u03b3-actin is degraded (Zhang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Zhang et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "33bb4aed-9bf9-4aa7-89a6-4de7b7c7bd38",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C16",
+      "claim": "Arginylated \u03b3-actin is degraded in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Arginylated \u03b2-actin accumulates in vivo, while arginylated \u03b3-actin is degraded (Zhang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Zhang et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "7ab41803-74a9-4048-9bd4-9043d6480327",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C17",
+      "claim": "\u03b2-actin knockout leads to defects in embryogenesis and early embryonic lethality in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2-actin knockout leads to defects in embryogenesis and early embryonic lethality (Bunnell et al., 2011; Shawlot et al., 1998; Shmerling et al., 2005; Strathdee et al., 2008; Tondeleir et al., 2013; Tondeleir et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to studies showing embryonic lethality in \u03b2-actin knockout mice.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "421e60ff-2ff0-4cbb-952b-389fb7545350",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C18",
+      "claim": "\u03b3-cytoplasmic actin knockout mice survive until birth and have much milder overall phenotypic defects compared to \u03b2-actin knockout mice.",
+      "claim_type": "EXPLICIT",
+      "source": "while \u03b3-cytoplasmic actin knockout mice survive until birth and have much milder overall phenotypic defects (Belyantseva et al., 2009; Bunnell and Ervasti, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Belyantseva et al., 2009 and Bunnell and Ervasti, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "50a0a7e7-bc8a-4b42-9239-e49c8c2747fb",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C19",
+      "claim": "\u03b2-actin's nucleotide sequence, rather than its amino acid sequence, underlies its essential role in embryogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our prior work has shown that \u03b2-actin's nucleotide sequence, rather than its amino acid sequence, underlies its essential role in embryogenesis (Vedula et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Vedula et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "dc4dbe21-c69d-47a0-82a5-d03850a83615",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C20",
+      "claim": "Actbc-g/c-g mice (\u03b2-coded \u03b3-actin) developed normally and showed no gross phenotypic defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Such Actbc-g/c-g mice developed normally and showed no gross phenotypic defects, thus demonstrating that the intact \u03b2-actin gene, rather than protein, defines its essential role in embryogenesis (Patrinostro et al., 2018; Vedula et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Patrinostro et al., 2018 and Vedula et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "24e99b7d-597a-4bed-9e02-fe8769954037",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C21",
+      "claim": "The intact \u03b2-actin gene, rather than protein, defines its essential role in embryogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Such Actbc-g/c-g mice developed normally and showed no gross phenotypic defects, thus demonstrating that the intact \u03b2-actin gene, rather than protein, defines its essential role in embryogenesis (Patrinostro et al., 2018; Vedula et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Patrinostro et al., 2018 and Vedula et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "106862d6-718c-46a3-a45e-bc02c5d28d37",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C22",
+      "claim": "Cells expressing \u03b2-actin migrated at rates similar to wild-type untransfected cells in wound-healing assays.",
+      "claim_type": "EXPLICIT",
+      "source": "While cells expressing \u03b2-actin migrated at rates similar to wild-type untransfected cells in wound-healing assays, cells expressing \u03b3-actin migrated nearly twofold faster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "b126480b-038b-4b6f-b60f-dc09b8a01704",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C23",
+      "claim": "Cells expressing \u03b3-actin migrated nearly twofold faster than cells expressing \u03b2-actin in wound-healing assays.",
+      "claim_type": "EXPLICIT",
+      "source": "While cells expressing \u03b2-actin migrated at rates similar to wild-type untransfected cells in wound-healing assays, cells expressing \u03b3-actin migrated nearly twofold faster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "c547d43f-42b1-43aa-b29f-94983f028ca0",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C24",
+      "claim": "Expression of \u03b3- or \u03b3-coded \u03b2-actin led to changes in cell morphology and distribution of focal adhesions.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of \u03b3- or \u03b3-coded \u03b2-actin led to changes in cell morphology and distribution of focal adhesions, which were larger in size and localized mostly at the cell periphery rather than under the entire cell",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "42c2d742-c768-4d73-87d3-f15979909257",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C25",
+      "claim": "Focal adhesions in \u03b3-actin- or \u03b3-coded-\u03b2-actin-expressing cells were larger in size and localized mostly at the cell periphery rather than under the entire cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of \u03b3- or \u03b3-coded \u03b2-actin led to changes in cell morphology and distribution of focal adhesions, which were larger in size and localized mostly at the cell periphery rather than under the entire cell, similarly to previously reported cellular phenotypes linked to poorer cell attachment and faster migration (Kim and Wirtz, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 3 and supported by citation to Kim and Wirtz, 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "521dfc79-4bcb-4bbe-bb89-3cfe62543db1",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C26",
+      "claim": "Focal adhesions in \u03b3-actin- or \u03b3-coded-\u03b2-actin-expressing cells appeared to be poorly anchored and often not visibly associated with long actin bundles.",
+      "claim_type": "EXPLICIT",
+      "source": "Focal adhesions in \u03b3-actin- or \u03b3-coded-\u03b2-actin-expressing cells appeared to be poorly anchored, though often not visibly associated with long actin bundles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 3 and Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "245b6360-fec3-4041-b699-4b6dc15ca1ae",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C27",
+      "claim": "Long actin cables could be clearly seen anchoring focal adhesions in \u03b2-actin- or \u03b2-coded \u03b3-actin-expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, long actin cables could be clearly seen anchoring focal adhesions in \u03b2-actin- or \u03b2-coded \u03b3-actin-expressing cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 3 and Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "e3849a1f-341b-4837-9877-d69ef7b7d317",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C28",
+      "claim": "\u03b2-actin translation elongation is approximately twofold faster than \u03b3-actin at focal adhesion sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-molecule measurements of actin translation using the SunTag system at the focal adhesion sites showed an approximately twofold faster translation elongation of \u03b2-actin compared to \u03b3-actin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly measured using SINAPS experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "4c8084a3-43f6-46b3-8c6e-a17d5862f4fb",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C29",
+      "claim": "\u03b3-actin accumulation in cells was slower than \u03b2-actin.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluorescence recovery after photobleaching (FRAP) demonstrated that \u03b3-actin accumulation in cells was slower than \u03b2-actin, further confirming global differences in actin isoform translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by FRAP experiments shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "b0c9bb2b-4133-43b7-adbf-c8c2aa65decb",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C30",
+      "claim": "Differences in translation rates can directly impact actin bundle formation, leading to shorter actin bundles in the case of slower translating \u03b3-actin.",
+      "claim_type": "EXPLICIT",
+      "source": "Molecular simulations of actin assembly at the focal adhesions showed that differences in translation rates can directly impact actin bundle formation, leading to shorter actin bundles in the case of slower translating \u03b3-actin, in agreement with our experimental data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by computational modeling shown in Figure 5 and supported by experimental measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "02825bdc-22be-4b07-ace3-c1f6998250f8",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C31",
+      "claim": "Nucleotide coding sequence-dependent translation rates, coupled to zipcode-targeted actin mRNA localization, play an essential role in differentiating actin isoforms' function in cell migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate that nucleotide coding sequence-dependent translation rates, coupled to zipcode-targeted actin mRNA localization, play an essential role in differentiating actin isoforms' function in cell migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion supported by all experimental data showing that both coding sequence and mRNA localization are required for the observed phenotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "fb1babac-9f29-4f5e-aafd-7bf0d41362ac",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C32",
+      "claim": "Cells expressing eGFP-\u03b2-actin migrated at rates similar to wild-type untransfected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, while cells expressing eGFP-\u03b2-actin migrated at rates similar to wild-type untransfected cells, cells expressing eGFP-\u03b3-actin migrated nearly twofold faster (Figure 1, top right and bottom; Figure 1\u2014figure supplement 4; Videos 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 1 and Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "4feec215-b73f-4976-908a-e0ae3edb0a1b",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C33",
+      "claim": "Cells expressing eGFP-\u03b3-actin migrated nearly twofold faster than cells expressing eGFP-\u03b2-actin.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, while cells expressing eGFP-\u03b2-actin migrated at rates similar to wild-type untransfected cells, cells expressing eGFP-\u03b3-actin migrated nearly twofold faster (Figure 1, top right and bottom; Figure 1\u2014figure supplement 4; Videos 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 1 and Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "e2e36777-7452-4d04-83e3-a829b830d032",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C34",
+      "claim": "The difference in cell migration rates between \u03b2-actin and \u03b3-actin expressing cells was coding sequence dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference in cell migration rates was coding sequence dependent, as seen in cells expressing the codon-switched actin variants, \u03b3-coded \u03b2-actin (which migrated faster, similarly to those expressing \u03b3-actin), and \u03b2-coded \u03b3-actin (which migrated slower, like \u03b2-actin-expressing cells) (Figure 1, top left; Videos 3 and 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data using codon-switched variants shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "5b67e12b-25cf-4ed6-b8b5-39e82743c464",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C35",
+      "claim": "The effect of actin isoform expression on directional cell migration is mediated by their nucleotide coding sequence and does not appear to be influenced by their amino acid sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the effect of actin isoform expression on directional cell migration is mediated by their nucleotide coding sequence and does not appear to be influenced by their amino acid sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the codon-switched experiments showing that coding sequence determines the phenotype.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "e0c1f241-2ed7-4af8-a062-238e5dc54f96",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C36",
+      "claim": "The \u03b2-actin 3\u2032UTR contains a zipcode sequence that is required for its mRNA localization to the cell periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "In normal cells, the \u03b2-actin 3\u2032UTR contains a zipcode sequence that is required for its mRNA localization to the cell periphery (Kislauskis et al., 1993)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Kislauskis et al., 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "fcdce38d-310e-4194-bebe-af10d0da628b",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C37",
+      "claim": "The \u03b2-actin 3\u2032UTR zipcode sequence has been shown to be important for directional cell migration.",
+      "claim_type": "EXPLICIT",
+      "source": "the \u03b2-actin 3\u2032UTR contains a zipcode sequence that is required for its mRNA localization to the cell periphery (Kislauskis et al., 1993) and has been shown to be important for directional cell migration (Condeelis and Singer, 2005; Katz et al., 2012; Kislauskis et al., 1994; Kislauskis et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "6b89a240-37e0-4fdb-afad-4e2024b47f37",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C38",
+      "claim": "\u03b3-actin mRNA has no zipcode sequence and does not undergo targeting to the cell periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b3-actin mRNA has no such sequence and does not undergo targeting to the cell periphery (Hill and Gunning, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hill and Gunning, 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "d197a146-e437-4fd3-aa5a-014f29e8ac2a",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C39",
+      "claim": "Cells expressing actin constructs without the \u03b2-actin 3\u2032UTR did not exhibit significant differences in cell migration rates.",
+      "claim_type": "EXPLICIT",
+      "source": "These cells did not exhibit significant differences in cell migration rates (Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 1\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "53fdce07-f90c-4c6a-8166-a2b8ea7643e7",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C40",
+      "claim": "Differences in the effects of cytoplasmic actin coding sequences on cell migration require mRNA targeting to the cell periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, differences in the effects of cytoplasmic actin coding sequences on cell migration require mRNA targeting to the cell periphery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from experiments comparing constructs with and without the \u03b2-actin 3\u2032UTR.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "95ef61c6-6e40-42bd-9b9f-620f15fee802",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C41",
+      "claim": "In migrating cells, eGFP-\u03b2-actin patches appeared more prominent and persisted considerably longer than eGFP-\u03b3-actin patches at focal adhesion sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Imaging the long-term (hours) behavior of actin at focal adhesion patches during wound healing using TIRF-M revealed that in migrating cells, eGFP-\u03b2-actin patches appeared more prominent and persisted considerably longer than eGFP-\u03b3-actin patches (Figure 2A\u2013C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by TIRF microscopy data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "1412d44d-76f6-4a9a-81c4-cf3690d1943b",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C42",
+      "claim": "Focal adhesions in eGFP-\u03b2-actin-expressing cells persist for longer periods of time than in eGFP-\u03b3-actin-expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Imaging the long-term (hours) behavior of actin at focal adhesion patches during wound healing using TIRF-M revealed that in migrating cells, eGFP-\u03b2-actin patches appeared more prominent and persisted considerably longer than eGFP-\u03b3-actin patches (Figure 2A\u2013C), suggesting that focal adhesions in eGFP-\u03b2-actin-expressing cells persist for longer periods of time.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from TIRF microscopy data shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "92cb262e-11d8-4b6c-90e6-a649127362c7",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C43",
+      "claim": "Short-term actin dynamics at the focal adhesions showed no notable differences in focal adhesion recovery rates that correlated with either coding or amino acid sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, testing short-term (5 min) actin dynamics at the focal adhesions using Fluorescence Recovery After Photobleaching (FRAP) showed no notable differences in focal adhesion recovery rates that correlated with either coding or amino acid sequence (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by FRAP experiments shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "926baf92-7dfe-4b23-9df8-49077b9ccc6d",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C44",
+      "claim": "Different actin isoforms affect long-term focal adhesion persistence without strongly affecting short-term focal adhesion or protrusion dynamics during persistent directional migration at the cell leading edge.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, different actin isoforms affect long-term focal adhesion persistence without strongly affecting short-term focal adhesion or protrusion dynamics during persistent directional migration at the cell leading edge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparing long-term TIRF data with short-term FRAP data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "8c30532b-4a0c-4444-abf6-b835e4d42cff",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C45",
+      "claim": "In eGFP-\u03b2-actin-expressing cells, focal adhesions had a normal elongated morphology and were distributed throughout the entire cell footprint.",
+      "claim_type": "EXPLICIT",
+      "source": "In eGFP-\u03b2-actin-expressing cells, focal adhesions had a normal elongated morphology and were distributed throughout the entire cell footprint.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by immunofluorescence data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "76f97d16-8760-4b51-bed7-506c2abf9efa",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C46",
+      "claim": "eGFP-\u03b3-actin-expressing cells formed focal adhesions that localized mostly at the cell periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, eGFP-\u03b3-actin-expressing cells formed focal adhesions that localized mostly at the cell periphery (Figure 3, top row of images; Figure 3\u2014figure supplement 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunofluorescence data shown in Figure 3 and Figure 3\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "25f080e3-e73b-487f-bad2-5253019d8c69",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C47",
+      "claim": "Focal adhesions in eGFP-\u03b2-coded-\u03b3-actin-expressing cells resembled those in eGFP-\u03b2-actin.",
+      "claim_type": "EXPLICIT",
+      "source": "This trend depended on the actin coding sequence: focal adhesions in eGFP-\u03b2-coded-\u03b3-actin-expressing cells resembled those in eGFP-\u03b2-actin, while focal adhesions in eGFP-\u03b3-coded-\u03b2-actin-expressing cells were like those in eGFP-\u03b3-actin-expressing cells (Figure 3\u2014figure supplement 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunofluorescence data shown in Figure 3\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "221c7ae2-27bf-4058-ad52-bf1071f1c457",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C48",
+      "claim": "Focal adhesions in eGFP-\u03b3-coded-\u03b2-actin-expressing cells were like those in eGFP-\u03b3-actin-expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This trend depended on the actin coding sequence: focal adhesions in eGFP-\u03b2-coded-\u03b3-actin-expressing cells resembled those in eGFP-\u03b2-actin, while focal adhesions in eGFP-\u03b3-coded-\u03b2-actin-expressing cells were like those in eGFP-\u03b3-actin-expressing cells (Figure 3\u2014figure supplement 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunofluorescence data shown in Figure 3\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "f984101a-2df7-453d-aef5-89c808a8847d",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C49",
+      "claim": "Most focal adhesions in cells expressing eGFP-\u03b2-actin and eGFP-\u03b2-coded \u03b3-actin were associated with long thick bundles of actin emanating from the focal adhesion point.",
+      "claim_type": "EXPLICIT",
+      "source": "Imaging eGFP-actin in widefield showed that most focal adhesions in cells expressing eGFP-\u03b2-actin and eGFP-\u03b2-coded \u03b3-actin were associated with long thick bundles of actin emanating from the focal adhesion point (Figure 3, top, and Figure 3\u2014figure supplements 2\u20135).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by widefield microscopy data shown in Figure 3 and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "8a30ed61-f59b-4f1c-a6ee-83b1274c6dd5",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C50",
+      "claim": "The dorsal bundles connecting to the focal adhesions were much less prominent in \u03b3-actin- and \u03b3-coded \u03b2-actin-expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, the dorsal bundles connecting to the focal adhesions were much less prominent in \u03b3-actin- and \u03b3-coded \u03b2-actin-expressing cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by widefield microscopy data shown in Figure 3 and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "509265d2-d2fb-4472-9870-9d51b1c8aadf",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C51",
+      "claim": "Focal adhesion size uniquely predicts cell migration rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Focal adhesion size uniquely predicts cell migration rate (Kim and Wirtz, 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Kim and Wirtz, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "9d1ef8e5-700c-46cf-bf57-904b30cca526",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C52",
+      "claim": "Larger focal adhesions correlate with faster migration speeds.",
+      "claim_type": "EXPLICIT",
+      "source": "Focal adhesion size uniquely predicts cell migration rate (Kim and Wirtz, 2013), with the larger focal adhesions correlating with faster migration speeds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Kim and Wirtz, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "8e2449a6-53d6-48dd-975b-9f0b2152de32",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C53",
+      "claim": "Faster migrating cells expressing \u03b3-actin and \u03b3-coded \u03b2-actin had significantly larger focal adhesions than slower migrating cells expressing \u03b2-actin and \u03b2-coded \u03b3-actin.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured the focal adhesion area in all the four cell cultures transfected with different actin isoforms and found that faster migrating cells expressing \u03b3-actin, and \u03b3-coded \u03b2-actin indeed, had significantly larger focal adhesions than slower migrating cells expressing \u03b2-actin and \u03b2-coded \u03b3-actin (Figure 3, bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by focal adhesion measurements shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "5478e0b3-7dff-4b5f-99ba-7fe99c89fe7a",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C54",
+      "claim": "\u03b2- and \u03b3-actin coding sequences determine the size and distribution of focal adhesions in migrating cells in a manner that correlates with changes in their migration speed.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, \u03b2- and \u03b3-actin coding sequences determine the size and distribution of focal adhesions in migrating cells in a manner that correlates with changes in their migration speed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the correlation between focal adhesion properties and migration rates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "e7c9898f-7bbc-4b30-885c-f47ac5a227e0",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C55",
+      "claim": "Focal adhesions in cells transfected with \u03b2-actin and \u03b2-coded \u03b3-actin recovered slightly faster than cells transfected with \u03b3-actin and \u03b3-coded \u03b2-actin.",
+      "claim_type": "EXPLICIT",
+      "source": "Focal adhesions in cells transfected with \u03b2-actin and \u03b2-coded \u03b3-actin recovered slightly faster than cells transfected with \u03b3-actin and \u03b3-coded \u03b2-actin (Figure 3\u2014figure supplement 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by FRAP experiments shown in Figure 3\u2014figure supplement 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "96f50814-0613-43fe-8148-0ffce6c197ed",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C56",
+      "claim": "Cell spreading and polarization are critically determined by their adhesion to the substrate and correlate with their migratory behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell spreading and polarization are critically determined by their adhesion to the substrate and correlate with their migratory behavior (Kim and Wirtz, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Kim and Wirtz, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "2ec14c2e-03d5-4091-bfde-0b0296e45d74",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C57",
+      "claim": "Cells expressing eGFP-\u03b2-actin had a larger footprint than cells expressing eGFP-\u03b3-actin.",
+      "claim_type": "EXPLICIT",
+      "source": "Using these shape modes to analyze images of cells expressing different actin isoforms' coding sequences, we found that cells expressing eGFP-\u03b2-actin had a larger footprint (Figure 3\u2014figure supplement 8A, clustered to the left of the y-axis)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by cell shape analysis shown in Figure 3\u2014figure supplement 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "c7bd12e0-a11a-420a-b5ec-48b69412bc28",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C58",
+      "claim": "Cells expressing eGFP-\u03b2-actin had more variance in their polarization than cells expressing eGFP-\u03b3-actin.",
+      "claim_type": "EXPLICIT",
+      "source": "we found that cells expressing eGFP-\u03b2-actin had a larger footprint (Figure 3\u2014figure supplement 8A, clustered to the left of the y-axis) and had more variance in their polarization (Figure 3\u2014figure supplement 8A, spread across the y-axis)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by cell shape analysis shown in Figure 3\u2014figure supplement 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "dd65ebaf-6136-43b4-92cb-4961de4a30bf",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C59",
+      "claim": "The footprint size of cells depends on the actin isoform coding sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of the codon-switched actin variants, \u03b2-coded \u03b3-actin, and \u03b3-coded \u03b2-actin showed that the footprint size depended on the actin isoform coding sequence",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by cell shape analysis using codon-switched variants shown in Figure 3\u2014figure supplement 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "c0cfd1b5-10e2-48a9-a360-68edbeea557d",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C60",
+      "claim": "The polarization variance of cells appeared to be amino acid sequence-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of the codon-switched actin variants, \u03b2-coded \u03b3-actin, and \u03b3-coded \u03b2-actin showed that the footprint size depended on the actin isoform coding sequence, while the polarization variance appeared to be amino acid sequence-dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by cell shape analysis using codon-switched variants shown in Figure 3\u2014figure supplement 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "bc5daa64-1c29-415d-9636-86c3d0b7b160",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C61",
+      "claim": "Cells expressing the \u03b3-actin coding sequence were slightly smaller than those expressing \u03b2-actin coding sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells expressing the \u03b3-actin coding sequence were slightly smaller than those expressing \u03b2-actin coding sequence (Figure 3\u2014figure supplement 8B, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by measurements of trypsinized cell area shown in Figure 3\u2014figure supplement 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "fbd3a277-7bc4-43c6-9803-f62275983a4a",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C62",
+      "claim": "The ~6% difference in cell size was far less prominent than the difference in spread cell area, which accounted for a greater than 80% change in the size of cell footprint.",
+      "claim_type": "EXPLICIT",
+      "source": "This ~6% difference in cell size was far less prominent than the difference in spread cell area (Figure 3\u2014figure supplement 8B, right), which accounted for a greater than 80% change in the size of cell footprint.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by comparing pre-spreading and post-spreading cell areas shown in Figure 3\u2014figure supplement 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "5505e0d3-6c4c-4b20-af36-46d097491786",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C63",
+      "claim": "Cells expressing \u03b3-actin are less spread on the substrate, and this difference in spreading is coding sequence-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, cells expressing \u03b3-actin are less spread on the substrate, and this difference in spreading is coding sequence-dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from cell area measurements shown in Figure 3\u2014figure supplement 8B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "ebba34bc-5903-48d0-ae5d-608d03eb3506",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C64",
+      "claim": "Computational predictions suggest that the coding region of \u03b2-actin mRNA forms a more relaxed secondary structure than that of \u03b3-actin.",
+      "claim_type": "EXPLICIT",
+      "source": "In search of an underlying mechanism that could link actin isoforms' coding sequence to their intracellular properties, we turned to our previous study that used computational predictions of the mRNA secondary structures for \u03b2-actin and \u03b3-actin. This study suggested that the coding region of \u03b2-actin mRNA forms a more relaxed secondary structure than that of \u03b3-actin, predicting potential differences in translation elongation rates (Zhang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Zhang et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "1c32194c-8218-464b-8fd3-75757a08b764",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C65",
+      "claim": "The recovery rate of eGFP fluorescence after whole-cell photobleaching was significantly faster for eGFP-\u03b2-actin compared to eGFP-\u03b3-actin.",
+      "claim_type": "EXPLICIT",
+      "source": "The recovery rate was significantly faster for eGFP-\u03b2-actin compared to eGFP-\u03b3-actin (Figure 4A, top right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by FRAP experiments shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "91e0fd98-df20-4398-8645-d3976e26cacc",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C66",
+      "claim": "Newly synthesized \u03b2-actin accumulates in cells faster than \u03b3-actin.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, newly synthesized \u03b2-actin accumulates in cells faster than \u03b3-actin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from FRAP experiments showing faster recovery of \u03b2-actin.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "5e838fd6-d45e-4f06-a5d1-9f64a63664f2",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C67",
+      "claim": "\u03b3-actin coding sequence showed a nearly twofold higher level of NAPs/mRNA than that of \u03b2-actin.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b3-actin coding sequence showed a nearly twofold higher level of NAPs/mRNA than that of \u03b2-actin (Figure 4B, Figure 4\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by SINAPS experiments shown in Figure 4B and Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "ab4a9418-6dbe-43ed-992c-6d928493350d",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C68",
+      "claim": "The elongating ribosomes had a twofold higher load, and thus slower translocation rate, over \u03b3-actin mRNA compared to \u03b2-actin.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b3-actin coding sequence showed a nearly twofold higher level of NAPs/mRNA than that of \u03b2-actin (Figure 4B, Figure 4\u2014figure supplement 2), indicating that the elongating ribosomes had a twofold higher load, and thus slower translocation rate, over \u03b3-actin mRNA compared to \u03b2-actin.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from NAPs/mRNA measurements shown in Figure 4B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "243dcd85-1b98-4b1f-9f72-8ac1054648b8",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C69",
+      "claim": "This is the first characterization of different ribosome loads on individual mRNAs of two protein isoforms that have the same coding sequence length.",
+      "claim_type": "EXPLICIT",
+      "source": "This is the first characterization of different ribosome loads on individual mRNAs of two protein isoforms that have the same coding sequence length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "ca5d4dc8-4219-4e64-8b2c-bcc2eaf57519",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C70",
+      "claim": "The fluorescence recovery rate of individual translation sites was approximately twofold slower for \u03b3-actin compared to \u03b2-actin.",
+      "claim_type": "EXPLICIT",
+      "source": "This recovery rate was approximately twofold slower for \u03b3-actin compared to \u03b2-actin (Figure 4C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by FRAP of translation sites shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "89592816-a706-4a38-959b-e3eac52f6f55",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C71",
+      "claim": "The translation elongation rate of \u03b2-actin and \u03b3-actin differs by approximately twofold\u2014faster for \u03b2-actin compared to \u03b3-actin.",
+      "claim_type": "EXPLICIT",
+      "source": "Using both sets of data, we conclude that the translation elongation rate of the two actin isoforms differs by approximately twofold\u2014faster for \u03b2-actin compared to \u03b3-actin (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is concluded from both NAPs/mRNA and FRAP measurements shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "23b923c9-ef3d-4967-a89c-97985a644553",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C72",
+      "claim": "A twofold decrease in subunit supply rate resulted in over a twofold decrease in actin bundle length in computational simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "During 10-min simulations, the time window typically sufficient for establishment of robust focal adhesions, varying actin subunit supply rate resulted in pronounced differences in the length of the actin bundle growing from the focal adhesion site (Videos 5 and 6). A twofold decrease in subunit supply rate resulted in over a twofold decrease in actin bundle length (Figure 5A, right and Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by computational modeling shown in Figure 5A and Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "b0dea37d-8708-4519-81d7-1e3ce9eb805f",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C73",
+      "claim": "Actin bundles associated with the focal adhesion sites were markedly longer in \u03b2-actin-expressing cells, compared to those expressing \u03b3-actin.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this prediction experimentally, we measured the length of eGFP-actin-decorated bundles emanating from paxillin-positive focal adhesion patches in cells stably expressing different eGFP-actin isoforms, using both the migrating cells at the edge of the wound and single cells (Figure 5B\u2013D). In both types of cultures, actin bundles associated with the focal adhesion sites were markedly longer in \u03b2-actin-expressing cells, compared to those expressing \u03b3-actin (Figure 5B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental measurements shown in Figure 5B\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "b6cbc6bf-0fc4-4b53-b734-e431727ba240",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C74",
+      "claim": "The trends in actin bundle length followed the actin coding sequence, rather than the amino acid sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, these trends followed the actin coding sequence, rather than the amino acid sequence (Figure 5B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by measurements using codon-switched variants shown in Figure 5B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "e43b87e3-b184-4f60-a4a2-13dff72d306f",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C75",
+      "claim": "The slower subunit supply dictated by differences in translation elongation rates of \u03b2- and \u03b3-actin coding sequences during the initial events of focal adhesion formation and maturation bears direct consequences to cell adhesion and migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the slower subunit supply dictated by differences in translation elongation rates of \u03b2- and \u03b3-actin coding sequences during the initial events of focal adhesion formation and maturation bears direct consequences to cell adhesion and migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combination of computational modeling and experimental measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "64ea3d06-0fc5-4e7d-81b0-669f2a87d3a9",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C76",
+      "claim": "This study constitutes the first direct comparison of translation rates of two closely related proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "This study constitutes the first direct comparison of translation rates of two closely related proteins and the first demonstration that these translation rates can mediate their functions in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "fc7866e7-1a98-46e0-a187-8c1bb69cf436",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C77",
+      "claim": "This study constitutes the first demonstration that translation rates can mediate protein functions in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "This study constitutes the first direct comparison of translation rates of two closely related proteins and the first demonstration that these translation rates can mediate their functions in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "6772e32f-7fec-476a-a0ab-d60e26dbe30b",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C78",
+      "claim": "Faster translating \u03b2-actin is required for generating stable focal adhesions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that faster translating \u03b2-actin is required for generating stable focal adhesions, while the slower translating \u03b3-actin leads to faster focal adhesion turnover.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing longer persistence of \u03b2-actin at focal adhesions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "4fcab857-0024-4694-842f-a345ae9ccd01",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C79",
+      "claim": "Slower translating \u03b3-actin leads to faster focal adhesion turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that faster translating \u03b2-actin is required for generating stable focal adhesions, while the slower translating \u03b3-actin leads to faster focal adhesion turnover.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing shorter persistence of \u03b3-actin at focal adhesions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "238313c5-af9d-4bab-9c22-fd3e43302251",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C80",
+      "claim": "The effects mediated by slower translating \u03b3-actin on cell migration manifest only when the \u03b3-actin mRNA is targeted to the cell periphery via the \u03b2-actin zipcode sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, our data also show that the effects mediated by slower translating \u03b3-actin on cell migration manifest only when the \u03b3-actin mRNA is targeted to the cell periphery via the \u03b2-actin zipcode sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experiments comparing constructs with and without the \u03b2-actin 3\u2032UTR.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "560d9104-760b-494b-8275-3234aee22c78",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C81",
+      "claim": "Slower translation at the leading edge makes \u03b3-actin less capable of supporting and sustaining strong focal adhesions.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that slower translation at the leading edge makes \u03b3-actin less capable of supporting and sustaining strong focal adhesions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on the experimental observations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "5f60286d-f64e-4af2-a9ca-157324ab3333",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C82",
+      "claim": "One plausible role of localized fast actin translation at focal adhesions is to balance the competition between actin monomer pools required for protrusion and adhesion formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that rapid polymerization of actin is required for lamellipodium protrusion and focal adhesion formation, one plausible role of localized fast actin translation at focal adhesions is to balance the competition between actin monomer pools required for protrusion and adhesion formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on the experimental observations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "52c726f3-7c89-45a5-9008-3eca3d4dfb01",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C83",
+      "claim": "In \u03b3-actin-expressing cells, most focal adhesions, while larger in area, do not appear to be visibly anchored by prominent actin bundles.",
+      "claim_type": "EXPLICIT",
+      "source": "In support, in \u03b3-actin-expressing cells, most focal adhesions, while larger in area, do not appear to be visibly anchored by prominent actin bundles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by microscopy data shown in Figure 3 and Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "e32cbcd3-3dfb-475f-bad0-fdb1e5914169",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C84",
+      "claim": "Cells expressing \u03b2-actin contain long actin cables emanating from most of the focal adhesion sites.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, cells expressing \u03b2-actin contain long actin cables emanating from most of the focal adhesion sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by microscopy data shown in Figure 3 and Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "0a8b4b0c-d2de-472f-8109-aa6ca7ebe213",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C85",
+      "claim": "The faster migration rate in \u03b3-actin-expressing cells is caused by weaker cell-substrate attachment.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that the faster migration rate is thus caused by weaker cell-substrate attachment in cells expressing \u03b3-actin (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed mechanism based on the experimental observations, illustrated in Figure 6.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "658fb50e-a499-4899-aa46-64bd03932a3a",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C86",
+      "claim": "The increase in cell speed in \u03b3-actin-expressing cells is only evident in a wound-healing assay, where cells are collectively stimulated to migrate directionally.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, this increase in cell speed is only evident in a wound-healing assay, where cells are collectively stimulated to migrate directionally, rather than randomly move around as typical for these cells in single-cell cultures of MEFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by comparing wound-healing assays with single-cell migration assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "23711507-e8af-4c5f-8610-1fd49d287e7d",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C87",
+      "claim": "Actin behavior in response to strong signals for cells to polarize and move directionally during wound healing depends on local actin translation more critically than during random migration.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that actin behavior in response to the strong signals for cells to polarize and move directionally during wound healing depends on local actin translation more critically than during random migration, where cells can change directions or remain stationary for extended periods of time and are not constrained in the direction of their polarization and motility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed explanation for the observed differences between wound-healing and single-cell migration.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "a23e2c81-be5b-4f55-be33-e724b9826f36",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C88",
+      "claim": "The use of N-terminal eGFP fusions likely excludes arginylation as a variable in the cell populations studied.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present study, the use of N-terminal eGFP fusions likely excludes arginylation as a variable in our cell populations, since arginylation is believed to require an exposed \u03b2-actin N-terminus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from knowledge about arginylation requirements.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "34c38f73-a0d3-4857-94f0-62135360049d",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C89",
+      "claim": "The use of GFP-actin fusions likely limits the types of effects that can be observed, since these fusions are not fully functionally equivalent to the native actin.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of GFP-actin fusions also likely limits the types of effects we can observe, since these fusions are not fully functionally equivalent to the native actin and are impaired, for example, in formin nucleation (Chen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Chen et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "1a0b227b-30c6-4eb1-bcd2-6c385351041c",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C90",
+      "claim": "GFP-actin fusions are impaired in formin nucleation.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of GFP-actin fusions also likely limits the types of effects we can observe, since these fusions are not fully functionally equivalent to the native actin and are impaired, for example, in formin nucleation (Chen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Chen et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "99afb53d-2246-46c9-a9a3-0786b01638c1",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C91",
+      "claim": "The endogenous \u03b2- and \u03b3-actin are still present in the transfected cells and still able to support cell migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, in our cells, the endogenous \u03b2- and \u03b3-actin are still present and still able to support cell migration, likely compensating for these types of functions, and potentially diminishing the observed phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental design using stable transfection in addition to endogenous actin.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "ae05e73e-bbd3-4bdb-97e5-c2beb2f5345d",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "claim_id": "C92",
+      "claim": "A unique intron in the \u03b3-actin gene can contribute to its function.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, it has been shown that a unique intron in the \u03b3-actin gene can contribute to its function (Lloyd and Gunning, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lloyd and Gunning, 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "df5148a6-e082-4c75-9236-399f9bd8dd03",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "\u03b2- and \u03b3-cytoplasmic actins are ubiquitously expressed, nearly identical at the amino acid level (only four conservative N-terminal substitutions), but differ by ~13% in their coding sequences due to synonymous substitutions, and play vastly different roles in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C12-C13 are well-established facts supported by multiple citations to prior work (Vandekerckhove and Weber, 1978; Erba et al., 1986) and knockout mouse studies. These foundational claims about actin isoform properties are well-documented in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "1ae8615b-6707-4d5f-9ca4-41377ba58398",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The coding sequence difference between \u03b2- and \u03b3-actin leads to differential arginylation, with arginylated \u03b2-actin accumulating in vivo while arginylated \u03b3-actin is degraded.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C16 are supported by citation to prior work from the same laboratory (Zhang et al., 2010). However, the authors note (C88) that their current experimental design using N-terminal eGFP fusions likely excludes arginylation as a variable, making this prior finding contextual rather than directly relevant to the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "74b08336-a680-4778-a7e4-70b4a9c10f65",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "\u03b2-actin knockout causes embryonic lethality while \u03b3-actin knockout has milder phenotypes, and the essential role of \u03b2-actin in embryogenesis depends on its nucleotide sequence rather than amino acid sequence, as demonstrated by viable \u03b2-coded \u03b3-actin mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C21 are supported by multiple citations to prior work including the authors' own studies (Vedula et al., 2017; Patrinostro et al., 2018). These establish the biological context and rationale for investigating coding sequence-dependent effects in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "783495d6-f0ab-4ca2-9a7e-7d4e71dbdfd5",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "When targeted to the cell periphery using \u03b2-actin 3\u2032UTR, cells expressing \u03b3-actin migrate nearly twofold faster than those expressing \u03b2-actin in wound-healing assays, and this effect depends on the coding sequence as demonstrated by codon-switched variants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6 and C22-C23, C32-C35 are supported by experimental data in Figure 1 showing statistically significant differences in migration rates (p<0.0001) that follow the coding sequence rather than amino acid sequence. The use of codon-switched variants provides strong evidence for coding sequence dependence. Sample sizes appear adequate (N=18-22 per group).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "99f2c518-1583-412f-97aa-7201ae642543",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The differential effects of actin coding sequences on cell migration require mRNA targeting to the cell periphery via the \u03b2-actin 3\u2032UTR zipcode sequence, as constructs lacking the 3\u2032UTR show no significant migration differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C40 are supported by experimental data (Figure 1\u2014figure supplement 5) showing that constructs without the \u03b2-actin 3\u2032UTR do not exhibit migration differences, and by citations establishing the role of the zipcode sequence (Kislauskis et al., 1993). This demonstrates that both coding sequence and mRNA localization are required for the observed phenotype.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "6a33e6d3-6859-4f38-9ac0-7b68af6f600d",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "\u03b2-actin patches at focal adhesions persist considerably longer than \u03b3-actin patches during long-term (hours) imaging, but short-term (5 min) FRAP shows no notable differences in recovery rates, indicating that actin isoforms affect long-term focal adhesion persistence without strongly affecting short-term dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C44 are supported by TIRF microscopy data (Figure 2) showing statistically significant differences in patch lifetime (p<0.05) and FRAP data (Figure 2\u2014figure supplement 2) showing no significant short-term differences. The distinction between long-term and short-term dynamics is well-documented experimentally.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "9eaf63b8-8ffb-4758-915b-8671cfd8c22b",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Expression of \u03b3-actin or \u03b3-coded \u03b2-actin leads to focal adhesions that are larger, localized at the cell periphery, and poorly anchored without prominent actin bundles, while \u03b2-actin or \u03b2-coded \u03b3-actin expression results in focal adhesions distributed throughout the cell with long actin cables, and these differences depend on coding sequence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C27 and C45-C50 are supported by extensive immunofluorescence and microscopy data (Figure 3 and supplements 2-6) showing coding sequence-dependent differences in focal adhesion morphology, distribution, and association with actin bundles. The use of codon-switched variants strengthens the conclusion about coding sequence dependence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "91422b81-d827-419e-a93d-0adda028147b",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Faster migrating cells expressing \u03b3-actin and \u03b3-coded \u03b2-actin have significantly larger focal adhesions than slower migrating cells expressing \u03b2-actin and \u03b2-coded \u03b3-actin, consistent with the principle that focal adhesion size predicts cell migration rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 are supported by focal adhesion measurements (Figure 3, bottom) showing statistically significant differences (p<0.01-0.001) and citation to Kim and Wirtz, 2013 establishing the relationship between focal adhesion size and migration rate. The correlation between focal adhesion properties and migration speed is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "357be8e9-c29f-42ec-a72c-0e4a88abfe8d",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Focal adhesions in cells transfected with \u03b2-actin and \u03b2-coded \u03b3-actin recovered slightly faster than cells transfected with \u03b3-actin and \u03b3-coded \u03b2-actin in FRAP experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C55 is supported by FRAP data (Figure 3\u2014figure supplement 7) showing statistically significant differences, but the authors themselves note these differences are small and it is unclear if they prominently contribute to the cellular phenotype. The biological significance of this finding is questionable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "a753fdc7-ddc4-4d89-9936-e07c0be378df",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Cells expressing \u03b2-actin have larger footprints and more variance in polarization than \u03b3-actin-expressing cells, with footprint size depending on coding sequence and polarization variance appearing amino acid sequence-dependent. The difference in spreading (~80% change) far exceeds the difference in cell size (~6%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C63 are supported by cell shape analysis (Figure 3\u2014figure supplement 8) using Celltool and measurements of trypsinized vs. spread cells. The distinction between cell size and spreading is well-documented. However, the claim about polarization being amino acid sequence-dependent (C60) is based on limited data and could benefit from additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "a46f861c-8d89-4f46-8a66-9e7aef41298f",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Computational predictions suggest that \u03b2-actin mRNA forms a more relaxed secondary structure than \u03b3-actin, predicting potential differences in translation elongation rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C64 is supported by citation to prior computational work (Zhang et al., 2010). This provides the mechanistic hypothesis that motivated the translation rate experiments in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "fc0630cb-7f5a-4729-a1fb-7bc7a3856d19",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "\u03b2-actin exhibits approximately twofold faster translation elongation than \u03b3-actin, as measured by whole-cell FRAP showing faster accumulation of newly synthesized \u03b2-actin, SINAPS showing twofold higher ribosome load (NAPs/mRNA) for \u03b3-actin, and FRAP of translation sites showing twofold slower recovery for \u03b3-actin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C28, C65-C71 are supported by multiple complementary experimental approaches (Figure 4): whole-cell FRAP, SINAPS measurements of ribosome load, and FRAP of individual translation sites. The convergence of evidence from different methods strengthens the conclusion. The claim of being the first characterization of different ribosome loads on isoform mRNAs (C69) is a novelty claim that cannot be independently verified but is plausible.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "e7e4368f-edb3-4906-8f8a-48b31d3ffba9",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Computational simulations show that a twofold decrease in actin subunit supply rate results in over twofold decrease in bundle length, and experimental measurements confirm that actin bundles at focal adhesions are markedly longer in \u03b2-actin-expressing cells compared to \u03b3-actin-expressing cells, following the coding sequence rather than amino acid sequence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30, C72-C75 are supported by computational modeling (Figure 5A, MEDYAN simulations) and experimental measurements (Figure 5B-D) showing statistically significant differences (p<0.0001) in bundle lengths. The agreement between computational predictions and experimental observations strengthens the conclusion. However, the simulations make assumptions about local actin concentrations and competition that are difficult to verify experimentally.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "563704b8-d342-4736-8aa4-993cc09dc238",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Coding sequence-mediated differences in actin translation rates, coupled to zipcode-targeted mRNA localization, play a key role in cell migration by affecting focal adhesion stability, with faster translating \u03b2-actin generating stable focal adhesions and slower translating \u03b3-actin leading to faster focal adhesion turnover, manifesting only when mRNA is targeted to the cell periphery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C31, C76-C80 represent the main conclusions integrating all experimental findings. These are well-supported by the convergence of evidence from migration assays, focal adhesion analysis, translation rate measurements, and the requirement for 3\u2032UTR-mediated localization. The novelty claims (C76-C77) about being the first direct comparison of translation rates and demonstration of their functional role are plausible but cannot be independently verified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "079c50a4-3fca-48cc-9262-8f4b02c1bf3b",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors propose that slower translation at the leading edge makes \u03b3-actin less capable of supporting strong focal adhesions, potentially by affecting competition between actin monomer pools for protrusion and adhesion, resulting in weaker cell-substrate attachment and faster migration that is only evident during directional wound-healing migration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C81-C82, C85, C87 are explicitly labeled as proposed mechanisms and speculation by the authors. While C83-C84, C86 are supported by experimental observations, the mechanistic interpretation linking these observations to monomer pool competition and the context-dependence of the effect involves speculation beyond what the data directly demonstrate. The proposed mechanism is plausible but requires additional experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "f1c50aa3-7f8d-4e86-8637-6f790c6dea16",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The use of N-terminal eGFP fusions likely excludes arginylation as a variable and limits observable effects since GFP-actin fusions are not fully functionally equivalent to native actin (e.g., impaired in formin nucleation), while endogenous \u03b2- and \u03b3-actin remain present and may compensate for some functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C91 represent important experimental limitations acknowledged by the authors. C88 is a reasonable inference about arginylation requirements. C89-C90 are supported by citation (Chen et al., 2012). C91 is a logical inference from the experimental design. These limitations are appropriately discussed and do not invalidate the main findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    },
+    {
+      "id": "12ee8582-30fe-4959-930c-4ac0a312d987",
+      "content_id": "72ade507-cd23-4b4b-8dbb-4a2a1506ace0",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "A unique intron in the \u03b3-actin gene can contribute to its function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C92 is supported by citation to Lloyd and Gunning, 1993. This acknowledges that other nucleotide-based elements beyond the coding sequence may contribute to actin isoform function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:26:21.025989Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "53618e2f-a376-43ce-a925-062a49b9471d",
+      "result_id": "df5148a6-e082-4c75-9236-399f9bd8dd03"
+    },
+    {
+      "claim_id": "82c4a98d-30de-4c27-84f5-db59681bfad5",
+      "result_id": "df5148a6-e082-4c75-9236-399f9bd8dd03"
+    },
+    {
+      "claim_id": "7e369b57-319a-41ae-9fc3-bc92d380d2af",
+      "result_id": "df5148a6-e082-4c75-9236-399f9bd8dd03"
+    },
+    {
+      "claim_id": "9c637396-490f-46cd-9a0c-c5f2780d8aa1",
+      "result_id": "df5148a6-e082-4c75-9236-399f9bd8dd03"
+    },
+    {
+      "claim_id": "5ea5e400-e250-4a59-81de-9118c0175f50",
+      "result_id": "df5148a6-e082-4c75-9236-399f9bd8dd03"
+    },
+    {
+      "claim_id": "7292b418-98e1-4f46-af5b-4b1b48ed1e89",
+      "result_id": "1ae8615b-6707-4d5f-9ca4-41377ba58398"
+    },
+    {
+      "claim_id": "30b72db2-9c58-49bb-947f-031b13d439be",
+      "result_id": "1ae8615b-6707-4d5f-9ca4-41377ba58398"
+    },
+    {
+      "claim_id": "33bb4aed-9bf9-4aa7-89a6-4de7b7c7bd38",
+      "result_id": "1ae8615b-6707-4d5f-9ca4-41377ba58398"
+    },
+    {
+      "claim_id": "7ab41803-74a9-4048-9bd4-9043d6480327",
+      "result_id": "74b08336-a680-4778-a7e4-70b4a9c10f65"
+    },
+    {
+      "claim_id": "421e60ff-2ff0-4cbb-952b-389fb7545350",
+      "result_id": "74b08336-a680-4778-a7e4-70b4a9c10f65"
+    },
+    {
+      "claim_id": "50a0a7e7-bc8a-4b42-9239-e49c8c2747fb",
+      "result_id": "74b08336-a680-4778-a7e4-70b4a9c10f65"
+    },
+    {
+      "claim_id": "dc4dbe21-c69d-47a0-82a5-d03850a83615",
+      "result_id": "74b08336-a680-4778-a7e4-70b4a9c10f65"
+    },
+    {
+      "claim_id": "24e99b7d-597a-4bed-9e02-fe8769954037",
+      "result_id": "74b08336-a680-4778-a7e4-70b4a9c10f65"
+    },
+    {
+      "claim_id": "895e46d2-763d-43ab-be2b-215c336458a5",
+      "result_id": "783495d6-f0ab-4ca2-9a7e-7d4e71dbdfd5"
+    },
+    {
+      "claim_id": "d18a2fe7-070a-499b-b17b-8360d3db7970",
+      "result_id": "783495d6-f0ab-4ca2-9a7e-7d4e71dbdfd5"
+    },
+    {
+      "claim_id": "106862d6-718c-46a3-a45e-bc02c5d28d37",
+      "result_id": "783495d6-f0ab-4ca2-9a7e-7d4e71dbdfd5"
+    },
+    {
+      "claim_id": "b126480b-038b-4b6f-b60f-dc09b8a01704",
+      "result_id": "783495d6-f0ab-4ca2-9a7e-7d4e71dbdfd5"
+    },
+    {
+      "claim_id": "fb1babac-9f29-4f5e-aafd-7bf0d41362ac",
+      "result_id": "783495d6-f0ab-4ca2-9a7e-7d4e71dbdfd5"
+    },
+    {
+      "claim_id": "4feec215-b73f-4976-908a-e0ae3edb0a1b",
+      "result_id": "783495d6-f0ab-4ca2-9a7e-7d4e71dbdfd5"
+    },
+    {
+      "claim_id": "e2e36777-7452-4d04-83e3-a829b830d032",
+      "result_id": "783495d6-f0ab-4ca2-9a7e-7d4e71dbdfd5"
+    },
+    {
+      "claim_id": "5b67e12b-25cf-4ed6-b8b5-39e82743c464",
+      "result_id": "783495d6-f0ab-4ca2-9a7e-7d4e71dbdfd5"
+    },
+    {
+      "claim_id": "e0c1f241-2ed7-4af8-a062-238e5dc54f96",
+      "result_id": "99f2c518-1583-412f-97aa-7201ae642543"
+    },
+    {
+      "claim_id": "fcdce38d-310e-4194-bebe-af10d0da628b",
+      "result_id": "99f2c518-1583-412f-97aa-7201ae642543"
+    },
+    {
+      "claim_id": "6b89a240-37e0-4fdb-afad-4e2024b47f37",
+      "result_id": "99f2c518-1583-412f-97aa-7201ae642543"
+    },
+    {
+      "claim_id": "d197a146-e437-4fd3-aa5a-014f29e8ac2a",
+      "result_id": "99f2c518-1583-412f-97aa-7201ae642543"
+    },
+    {
+      "claim_id": "53fdce07-f90c-4c6a-8166-a2b8ea7643e7",
+      "result_id": "99f2c518-1583-412f-97aa-7201ae642543"
+    },
+    {
+      "claim_id": "95ef61c6-6e40-42bd-9b9f-620f15fee802",
+      "result_id": "6a33e6d3-6859-4f38-9ac0-7b68af6f600d"
+    },
+    {
+      "claim_id": "1412d44d-76f6-4a9a-81c4-cf3690d1943b",
+      "result_id": "6a33e6d3-6859-4f38-9ac0-7b68af6f600d"
+    },
+    {
+      "claim_id": "92cb262e-11d8-4b6c-90e6-a649127362c7",
+      "result_id": "6a33e6d3-6859-4f38-9ac0-7b68af6f600d"
+    },
+    {
+      "claim_id": "926baf92-7dfe-4b23-9df8-49077b9ccc6d",
+      "result_id": "6a33e6d3-6859-4f38-9ac0-7b68af6f600d"
+    },
+    {
+      "claim_id": "c547d43f-42b1-43aa-b29f-94983f028ca0",
+      "result_id": "9eaf63b8-8ffb-4758-915b-8671cfd8c22b"
+    },
+    {
+      "claim_id": "42c2d742-c768-4d73-87d3-f15979909257",
+      "result_id": "9eaf63b8-8ffb-4758-915b-8671cfd8c22b"
+    },
+    {
+      "claim_id": "521dfc79-4bcb-4bbe-bb89-3cfe62543db1",
+      "result_id": "9eaf63b8-8ffb-4758-915b-8671cfd8c22b"
+    },
+    {
+      "claim_id": "245b6360-fec3-4041-b699-4b6dc15ca1ae",
+      "result_id": "9eaf63b8-8ffb-4758-915b-8671cfd8c22b"
+    },
+    {
+      "claim_id": "8c30532b-4a0c-4444-abf6-b835e4d42cff",
+      "result_id": "9eaf63b8-8ffb-4758-915b-8671cfd8c22b"
+    },
+    {
+      "claim_id": "76f97d16-8760-4b51-bed7-506c2abf9efa",
+      "result_id": "9eaf63b8-8ffb-4758-915b-8671cfd8c22b"
+    },
+    {
+      "claim_id": "25f080e3-e73b-487f-bad2-5253019d8c69",
+      "result_id": "9eaf63b8-8ffb-4758-915b-8671cfd8c22b"
+    },
+    {
+      "claim_id": "221c7ae2-27bf-4058-ad52-bf1071f1c457",
+      "result_id": "9eaf63b8-8ffb-4758-915b-8671cfd8c22b"
+    },
+    {
+      "claim_id": "f984101a-2df7-453d-aef5-89c808a8847d",
+      "result_id": "9eaf63b8-8ffb-4758-915b-8671cfd8c22b"
+    },
+    {
+      "claim_id": "8a30ed61-f59b-4f1c-a6ee-83b1274c6dd5",
+      "result_id": "9eaf63b8-8ffb-4758-915b-8671cfd8c22b"
+    },
+    {
+      "claim_id": "509265d2-d2fb-4472-9870-9d51b1c8aadf",
+      "result_id": "91422b81-d827-419e-a93d-0adda028147b"
+    },
+    {
+      "claim_id": "9d1ef8e5-700c-46cf-bf57-904b30cca526",
+      "result_id": "91422b81-d827-419e-a93d-0adda028147b"
+    },
+    {
+      "claim_id": "8e2449a6-53d6-48dd-975b-9f0b2152de32",
+      "result_id": "91422b81-d827-419e-a93d-0adda028147b"
+    },
+    {
+      "claim_id": "5478e0b3-7dff-4b5f-99ba-7fe99c89fe7a",
+      "result_id": "91422b81-d827-419e-a93d-0adda028147b"
+    },
+    {
+      "claim_id": "e7c9898f-7bbc-4b30-885c-f47ac5a227e0",
+      "result_id": "357be8e9-c29f-42ec-a72c-0e4a88abfe8d"
+    },
+    {
+      "claim_id": "96f50814-0613-43fe-8148-0ffce6c197ed",
+      "result_id": "a753fdc7-ddc4-4d89-9936-e07c0be378df"
+    },
+    {
+      "claim_id": "2ec14c2e-03d5-4091-bfde-0b0296e45d74",
+      "result_id": "a753fdc7-ddc4-4d89-9936-e07c0be378df"
+    },
+    {
+      "claim_id": "c7bd12e0-a11a-420a-b5ec-48b69412bc28",
+      "result_id": "a753fdc7-ddc4-4d89-9936-e07c0be378df"
+    },
+    {
+      "claim_id": "dd65ebaf-6136-43b4-92cb-4961de4a30bf",
+      "result_id": "a753fdc7-ddc4-4d89-9936-e07c0be378df"
+    },
+    {
+      "claim_id": "c0cfd1b5-10e2-48a9-a360-68edbeea557d",
+      "result_id": "a753fdc7-ddc4-4d89-9936-e07c0be378df"
+    },
+    {
+      "claim_id": "bc5daa64-1c29-415d-9636-86c3d0b7b160",
+      "result_id": "a753fdc7-ddc4-4d89-9936-e07c0be378df"
+    },
+    {
+      "claim_id": "fbd3a277-7bc4-43c6-9803-f62275983a4a",
+      "result_id": "a753fdc7-ddc4-4d89-9936-e07c0be378df"
+    },
+    {
+      "claim_id": "5505e0d3-6c4c-4b20-af36-46d097491786",
+      "result_id": "a753fdc7-ddc4-4d89-9936-e07c0be378df"
+    },
+    {
+      "claim_id": "ebba34bc-5903-48d0-ae5d-608d03eb3506",
+      "result_id": "a46f861c-8d89-4f46-8a66-9e7aef41298f"
+    },
+    {
+      "claim_id": "726c11de-0ce9-4e45-9399-044967d59d84",
+      "result_id": "fc0630cb-7f5a-4729-a1fb-7bc7a3856d19"
+    },
+    {
+      "claim_id": "e3849a1f-341b-4837-9877-d69ef7b7d317",
+      "result_id": "fc0630cb-7f5a-4729-a1fb-7bc7a3856d19"
+    },
+    {
+      "claim_id": "1c32194c-8218-464b-8fd3-75757a08b764",
+      "result_id": "fc0630cb-7f5a-4729-a1fb-7bc7a3856d19"
+    },
+    {
+      "claim_id": "91e0fd98-df20-4398-8645-d3976e26cacc",
+      "result_id": "fc0630cb-7f5a-4729-a1fb-7bc7a3856d19"
+    },
+    {
+      "claim_id": "5e838fd6-d45e-4f06-a5d1-9f64a63664f2",
+      "result_id": "fc0630cb-7f5a-4729-a1fb-7bc7a3856d19"
+    },
+    {
+      "claim_id": "ab4a9418-6dbe-43ed-992c-6d928493350d",
+      "result_id": "fc0630cb-7f5a-4729-a1fb-7bc7a3856d19"
+    },
+    {
+      "claim_id": "243dcd85-1b98-4b1f-9f72-8ac1054648b8",
+      "result_id": "fc0630cb-7f5a-4729-a1fb-7bc7a3856d19"
+    },
+    {
+      "claim_id": "ca5d4dc8-4219-4e64-8b2c-bcc2eaf57519",
+      "result_id": "fc0630cb-7f5a-4729-a1fb-7bc7a3856d19"
+    },
+    {
+      "claim_id": "89592816-a706-4a38-959b-e3eac52f6f55",
+      "result_id": "fc0630cb-7f5a-4729-a1fb-7bc7a3856d19"
+    },
+    {
+      "claim_id": "b0c9bb2b-4133-43b7-adbf-c8c2aa65decb",
+      "result_id": "e7e4368f-edb3-4906-8f8a-48b31d3ffba9"
+    },
+    {
+      "claim_id": "23b923c9-ef3d-4967-a89c-97985a644553",
+      "result_id": "e7e4368f-edb3-4906-8f8a-48b31d3ffba9"
+    },
+    {
+      "claim_id": "b0dea37d-8708-4519-81d7-1e3ce9eb805f",
+      "result_id": "e7e4368f-edb3-4906-8f8a-48b31d3ffba9"
+    },
+    {
+      "claim_id": "b6cbc6bf-0fc4-4b53-b734-e431727ba240",
+      "result_id": "e7e4368f-edb3-4906-8f8a-48b31d3ffba9"
+    },
+    {
+      "claim_id": "e43b87e3-b184-4f60-a4a2-13dff72d306f",
+      "result_id": "e7e4368f-edb3-4906-8f8a-48b31d3ffba9"
+    },
+    {
+      "claim_id": "f6139f01-038a-4c86-b0ac-73121b9232ae",
+      "result_id": "563704b8-d342-4736-8aa4-993cc09dc238"
+    },
+    {
+      "claim_id": "02825bdc-22be-4b07-ace3-c1f6998250f8",
+      "result_id": "563704b8-d342-4736-8aa4-993cc09dc238"
+    },
+    {
+      "claim_id": "64ea3d06-0fc5-4e7d-81b0-669f2a87d3a9",
+      "result_id": "563704b8-d342-4736-8aa4-993cc09dc238"
+    },
+    {
+      "claim_id": "fc7866e7-1a98-46e0-a187-8c1bb69cf436",
+      "result_id": "563704b8-d342-4736-8aa4-993cc09dc238"
+    },
+    {
+      "claim_id": "6772e32f-7fec-476a-a0ab-d60e26dbe30b",
+      "result_id": "563704b8-d342-4736-8aa4-993cc09dc238"
+    },
+    {
+      "claim_id": "4fcab857-0024-4694-842f-a345ae9ccd01",
+      "result_id": "563704b8-d342-4736-8aa4-993cc09dc238"
+    },
+    {
+      "claim_id": "238313c5-af9d-4bab-9c22-fd3e43302251",
+      "result_id": "563704b8-d342-4736-8aa4-993cc09dc238"
+    },
+    {
+      "claim_id": "560d9104-760b-494b-8275-3234aee22c78",
+      "result_id": "079c50a4-3fca-48cc-9262-8f4b02c1bf3b"
+    },
+    {
+      "claim_id": "5f60286d-f64e-4af2-a9ca-157324ab3333",
+      "result_id": "079c50a4-3fca-48cc-9262-8f4b02c1bf3b"
+    },
+    {
+      "claim_id": "52c726f3-7c89-45a5-9008-3eca3d4dfb01",
+      "result_id": "079c50a4-3fca-48cc-9262-8f4b02c1bf3b"
+    },
+    {
+      "claim_id": "e32cbcd3-3dfb-475f-bad0-fdb1e5914169",
+      "result_id": "079c50a4-3fca-48cc-9262-8f4b02c1bf3b"
+    },
+    {
+      "claim_id": "0a8b4b0c-d2de-472f-8109-aa6ca7ebe213",
+      "result_id": "079c50a4-3fca-48cc-9262-8f4b02c1bf3b"
+    },
+    {
+      "claim_id": "658fb50e-a499-4899-aa46-64bd03932a3a",
+      "result_id": "079c50a4-3fca-48cc-9262-8f4b02c1bf3b"
+    },
+    {
+      "claim_id": "23711507-e8af-4c5f-8610-1fd49d287e7d",
+      "result_id": "079c50a4-3fca-48cc-9262-8f4b02c1bf3b"
+    },
+    {
+      "claim_id": "a23e2c81-be5b-4f55-be33-e724b9826f36",
+      "result_id": "f1c50aa3-7f8d-4e86-8637-6f790c6dea16"
+    },
+    {
+      "claim_id": "34c38f73-a0d3-4857-94f0-62135360049d",
+      "result_id": "f1c50aa3-7f8d-4e86-8637-6f790c6dea16"
+    },
+    {
+      "claim_id": "1a0b227b-30c6-4eb1-bcd2-6c385351041c",
+      "result_id": "f1c50aa3-7f8d-4e86-8637-6f790c6dea16"
+    },
+    {
+      "claim_id": "99afb53d-2246-46c9-a9a3-0786b01638c1",
+      "result_id": "f1c50aa3-7f8d-4e86-8637-6f790c6dea16"
+    },
+    {
+      "claim_id": "ae05e73e-bbd3-4bdb-97e5-c2beb2f5345d",
+      "result_id": "12ee8582-30fe-4959-930c-4ac0a312d987"
+    }
+  ],
+  "comparisons": []
+}

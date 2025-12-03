@@ -1,0 +1,1886 @@
+{
+  "submission": {
+    "id": "860b31c1-6370-4b10-a2c6-c87993a97717",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T13:42:31.937377Z",
+    "updated_at": "2025-12-03T13:42:31.937377Z"
+  },
+  "content": [
+    {
+      "id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "submission_id": "860b31c1-6370-4b10-a2c6-c87993a97717",
+      "content_type": "manuscript",
+      "content_text": "# An expanded toolkit for Drosophila gene tagging using synthesized homology donor constructs for CRISPR-mediated homologous recombination\n\n## Authors\n\n- Oguz Kanca<sup>1</sup> ([ORCID: 0000-0001-5438-0879](https://orcid.org/0000-0001-5438-0879)) \u2020\n- Jonathan Zirin<sup>3</sup>\n- Yanhui Hu<sup>3</sup>\n- Burak Tepe<sup>1</sup>\n- Debdeep Dutta<sup>1</sup>\n- Wen-Wen Lin<sup>1</sup>\n- Liwen Ma<sup>1</sup>\n- Ming Ge<sup>1</sup>\n- Zhongyuan Zuo<sup>1</sup>\n- Lu-Ping Liu<sup>3</sup>\n- Robert W Levis<sup>4</sup> ([ORCID: 0000-0003-3453-2390](https://orcid.org/0000-0003-3453-2390))\n- Norbert Perrimon<sup>3</sup> ([ORCID: 0000-0001-7542-472X](https://orcid.org/0000-0001-7542-472X))\n- Hugo J Bellen<sup>1</sup> ([ORCID: 0000-0001-5992-5989](https://orcid.org/0000-0001-5992-5989)) \u2020\n\n### Affiliations\n\n1. Department of Molecular and Human Genetics, Baylor College of Medicine Houston United States ([ROR:02pttbw34](https://ror.org/02pttbw34))\n2. Duncan Neurological Research Institute, Texas Children Hospital Houston United States ([ROR:05cz92x43](https://ror.org/05cz92x43))\n3. Department of Genetics, Harvard Medical School Boston United States\n4. Department of Embryology, Carnegie Institution for Science Baltimore United States ([ROR:04jr01610](https://ror.org/04jr01610))\n5. Howard Hughes Medical Institute, Harvard Medical School Boston United States\n6. Department of Neuroscience, Baylor College of Medicine Houston United States ([ROR:02pttbw34](https://ror.org/02pttbw34))\n\n\u2020 Corresponding author\n\n## Abstract\n\nPreviously, we described a large collection of Drosophila strains that each carry an artificial exon containing a T2AGAL4 cassette inserted in an intron of a target gene based on CRISPR-mediated homologous recombination. These alleles permit numerous applications and have proven to be very useful. Initially, the homologous recombination-based donor constructs had long homology arms (>500 bps) to promote precise integration of large constructs (>5 kb). Recently, we showed that in vivo linearization of the donor constructs enables insertion of large artificial exons in introns using short homology arms (100\u2013200 bps). Shorter homology arms make it feasible to commercially synthesize homology donors and minimize the cloning steps for donor construct generation. Unfortunately, about 58% of Drosophila genes lack a suitable coding intron for integration of artificial exons in all of the annotated isoforms. Here, we report the development of new set of constructs that allow the replacement of the coding region of genes that lack suitable introns with a KozakGAL4 cassette, generating a knock-out/knock-in allele that expresses GAL4 similarly as the targeted gene. We also developed custom vector backbones to further facilitate and improve transgenesis. Synthesis of homology donor constructs in custom plasmid backbones that contain the target gene sgRNA obviates the need to inject a separate sgRNA plasmid and significantly increases the transgenesis efficiency. These upgrades will enable the targeting of nearly every fly gene, regardless of exon\u2013intron structure, with a 70\u201380% success rate.\n\n## Introduction\n\nThe Drosophila Gene Disruption Project (GDP) aims to generate versatile genetic tools for most genes to facilitate the study of gene function in vivo and to create fly stocks for the community. The CRISPR-mediated integration cassette (CRIMIC) approach is a recent addition to the GDP to target fly genes. The CRIMIC strategy is based on integrating a Swappable Integration Cassette (SIC) containing an artificial exon encoding attP-FRT-Splice Acceptor (SA)-T2AGAL4-polyA-3XP3EGFP-polyA-FRT-attP (T2AGAL4). The SIC is integrated in an intron between two coding exons (coding intron) by CRISPR-mediated homologous recombination (Lee et al., 2018; Gnerer et al., 2015; Diao et al., 2015). The viral T2A sequence leads to the truncation of the nascent target gene polypeptide and reinitiation of translation of the downstream GAL4 as an independent protein. This cassette typically creates a strong loss of function allele of the targeted gene and expresses the yeast GAL4 transcription factor in a similar spatial and temporal pattern as the protein encoded by the targeted gene (Lee et al., 2018). These alleles can be used to: (1) determine the gene expression pattern; (2) study the effect of loss of function of the gene product; (3) replace the SIC through Recombinase Mediated Cassette Exchange (RMCE) (Bateman et al., 2006; Venken et al., 2011) with an artificial coding exon that encodes a fluorescent protein to assess protein subcellular localization (Venken et al., 2011) and identify interacting proteins; (4) express UAS-cDNAs of the targeted gene and its variants to assess rescue of the mutant phenotype and conduct structure/function studies (Wangler et al., 2017); (5) excise the insert with UAS-Flippase to confirm that removal of the insertion will revert the phenotype (Lee et al., 2018).\n\nThe introduction of an artificial exon is only feasible for genes that contain a suitable large coding intron, typically 100 nt or more (Lee et al., 2018). This requirement makes more than half of the genes inaccessible to strategies based on the use of artificial exons (Supplementary file 1). In addition, the genes that do not have a suitable intron are typically smaller in size than genes that contain a suitable intron, and usually have fewer previously isolated alleles than larger genes with a suitable intron (Supplementary file 1).\n\nHere, we describe the development of a knock-out/knock-in strategy to replace the coding sequence of genes with a Kozak sequence-GAL4-polyA-FRT-3XP3EGFP-polyA-FRT (KozakGAL4) cassette to target genes that lack introns that are suitable for artificial exon knock-ins. The targeted gene is cut by Cas9 using two sgRNAs, one targeting the 5\u2032 untranslated region (UTR) and the other the 3\u2032 UTR. We targeted ~100 genes with this strategy and show that about 80% of the integrated KozakGAL4 cassettes lead to UAS-mCherry expression in the third instar larval brain, a ratio that is similar to what was observed for the T2AGAL4 strategy (Lee et al., 2018).\n\nWe also improved the design of the homology donor constructs that can be used for integration of either KozakGAL4 or T2AGAL4 cassettes. We previously showed that short homology arms combined with the linearization of the donor plasmid DNA, in vivo results in integration of large constructs (~5 kb) through homologous recombination (Kanca et al., 2019b). This allows commercial DNA synthesis of the entire gene-specific portion of the donor plasmid, a cheaper and more efficient option than PCR amplification and cloning of each homology arm. To further extend this approach, we developed a method in which the DNA sequences directing the transcription of the target gene-specific sgRNA(s) are synthesized together in the same segment as the homology arms. This design eliminates the need to clone and inject a separate vector for the sgRNAs. We tested our new designs on ~200 genes and show that the upgrades result in a transgenesis efficacy of ~80%. The strategies that we introduce here allow targeting of nearly every gene in the fly genome, further streamline the generation of homology donor DNAs, increase efficiency as compared to previous strategies, and improve the rate of precise genome editing.\n\n## Results and discussion\n\n### The KozakGAL4 cassette\n\nIntegration of an artificial exon is only feasible for genes that have coding introns large enough to identify an sgRNA target site that is located at a sufficient distance from the preceding splice donor and the following splice acceptor site. Based on our experience, an intron should be larger than 100 nt to be suitable for integration of an artificial exon. An analysis of the Drosophila genome shows that 5787 out of 13,931 protein-coding genes have a sufficiently large coding intron that is shared among all the annotated splicing isoforms of the gene (Supplementary file 1). In our analysis, we focused on the suitable introns that target all the annotated transcripts for the GDP, to affect all possible isoforms of the targeted gene. This is a stringent criterion and individual laboratories that aim to generate isoform-specific alleles can use suitable introns that affect only some of the isoforms or generate multiple insertions for the same gene to cover all the annotated isoforms using our methodology. Using these criteria, 8144 genes lack suitable introns, making them less accessible for the T2AGAL4 and other artificial exon-based strategies.\n\nSupplementary file 1 compares the 5787 genes with a suitable coding intron (as defined above) with the 8,144 genes lacking a suitable intron. Genes with a suitable intron typically have larger coding sequences (2051 nt vs 1173 nt) and have a larger number of previously isolated mutant alleles based on FlyBase data (10.4 vs 2.1) than genes without a suitable intron(s) (Supplementary file 1; Larkin et al., 2021). To integrate a GAL4 cassette that can be used in a similar manner as the T2AGAL4 insertions, we developed the KozakGAL4 knock-in/knock-out strategy. The Kozak sequence is an optimal translation initiation site in eukaryotic mRNAs, and it is identified as (C/A) AA (C/A) AUG in Drosophila (Cavener, 1987; Kozak, 1986). We use CAAA as a Kozak sequence upstream of the start codon of GAL4. To replace the coding region of genes, we typically identify sgRNA target sites in the 5\u2032 UTR and 3\u2032 UTR (Figure 1). To retain possible gene expression regulation by the 5\u2032 UTR, we select the upstream sgRNA target site that is closest to the start codon and that is not predicted to have off-target activity based on CRISPR Optimal Target Finder (Gratz et al., 2014). The location of the downstream sgRNA target site in the 3\u2032 UTR is less stringent since the endogenous 3\u2032 UTR is not included in the final transcript due to the polyA signal in the KozakGAL4 cassette. The median 5\u2032 and 3\u2032 UTR lengths for Drosophila genes are 214 and 224 bps, respectively (Chen et al., 2011; Jan et al., 2011), which are typically large enough to identify putative sgRNA targets. In our experience the 5\u2032 UTRs typically contain multiple sgRNA targets whereas 3\u2032 UTRs contain few candidate sgRNA target sites due to their A/T rich nature. In cases where a suitable sgRNA target site cannot be found in the 3\u2032 UTR, we target a site within the coding region, close to the stop codon, to minimize the coding region of the gene that remains. In cases where a suitable sgRNA site cannot be found within the 5\u2032 UTR region, the search is expanded to the promoter region and the sequence between the sgRNA cut site and transcription start site is added to the homology region. In such cases, a single nucleotide substitution to eliminate the PAM sequence is introduced in the homology donor construct, preventing cutting of the homology donor.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/76077/elife-76077-fig1-v2.jpg)\n\n**Figure 1.:** Schematics of the KozakGAL4 targeting. Gray boxes, UTRs; orange box, gene-coding region.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76077/elife-76077-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** For genes that cannot be targeted by artificial exon strategies and where suitable sgRNAs could not be found in the 5\u2032 UTR, an artificial exon with SA_KozakGAL4 can be inserted in an intron in the 5\u2032 UTR (A) or in a short intron by deleting the exons following the intron (B).\n\nWe also developed alternative strategies to target genes without suitable introns and for which no proper sgRNA site could be identified within the 5\u2032 UTR or promoter. We generated the SA-KozakGAL4-polyA-3XP3EGFP-polyA cassette that can be introduced in an intron within the 5\u2032 UTR (Figure 1\u2014figure supplement 1A). Alternatively, for genes with small coding introns, we make two cuts: one within a coding intron just upstream of the SA of an exon; the second in the 3\u2032 UTR. The excised sequence is then replaced with a T2AGAL4 cassette (Figure 1\u2014figure supplement 1B).\n\n### KozakGAL4 alleles drive expression of UAS transgenes\n\nThe expression of the yeast GAL4 protein in Drosophila in a temporal/spatial pattern that mimics a Drosophila gene has been a key tool for functional genetics. There have been two main approaches to generate alleles that express GAL4 in the pattern of a Drosophila gene that are not based on the T2AGAL4-based strategies. The first one is based on an insertion of minimal promoter-GAL4-coding sequences in a transposon backbone. The strategy is called enhancer trapping and was based originally on GFP and LacZ rather than GAL4 (O\u2019Kane and Gehring, 1987; Bellen et al., 1989). Upon mobilization of the transposon, lines are established where the GAL4 expression pattern is of interest (Brand and Perrimon, 1993; Lukacsovich et al., 2001; Hacker et al., 2003; Metaxakis et al., 2005; Bellen et al., 2011; Gohl et al., 2011). Given that GAL4 cassettes are inserted in the genome by transposable elements in this strategy, they are not always optimally placed to report the full expression pattern of the gene (Spradling et al., 1995; Mayer et al., 2013), but they have been used extensively as many reflect the expression pattern of a nearby gene (Wilson et al., 1989). Many however are not mutagenic (Spradling et al., 1999). The second strategy to generate alleles that may express GAL4 in the expression pattern of a gene is to clone a 500 bp to 5 kb region upstream of the promoter of the gene upstream of the GAL4-coding sequences and inserting the transgene in the genome. There are large collections of these enhancer-GAL4 alleles and most aim to report the expression of enhancer fragments rather than reporting the expression pattern of the gene from which they are derived (Jenett et al., 2012; Manning et al., 2012; Pfeiffer et al., 2008). Additionally, two ends-out homologous recombination based knock-in strategies were developed to target rabGTPase genes (Chan et al., 2011; Jin et al., 2012). These methods were based on recombineering to generate homology donor constructs that either replace the entire coding sequence of the gene with GAL4-coding sequence or knock-in a GAL4-coding sequence to replace the ATG codon-containing exon of the targeted rabGTPase. These GAL4 knock-in alleles of rabGTPases were used to determine and compare the phenotypes and expression domains of all 29 rabGTPase genes in the genome. These approaches can now be complemented and expanded with the KozakGAL4 approach that should incorporate all or most upstream regulatory information and to generate a null allele of the targeted gene. The latter greatly facilitates rescue experiments using UAS-cDNA transgenes.\n\nTo assess the potential of the KozakGAL4 strategy, we targeted 109 genes to date and successfully replaced the coding region of 82 genes with the KozakGAL4 cassette (Supplementary file 2). We crossed 57 of these with UAS-CD8mCherry transgenic flies to determine the GAL4 expression of the targeted gene in the brain of wandering third instar larvae. Our previous findings, using T2AGAL4 alleles have shown that ~80% of all T2AGAL4 alleles lead to specific expression in third instar larval brains (Lee et al., 2018). Similarly, with KozakGAL4 alleles, we detected specific GAL4 expression for about 80% (46/57) of the genes (Figure 2A). Although KozakGAL4 targeted genes are typically small, limiting the possible regulatory information in the coding region, it is possible that the removal of coding and small introns as well as some UTR sequences may affect the regulatory input. We therefore tested whether a few KozakGAL4 alleles drive the expression of the UAS-CD8mCherry in a similar pattern as the targeted gene. We selected a KozakGAL4 allele that drives expression of the reporter in a restricted group of cells in the third instar larval brain (CG10939KozakGAL4) and analyzed the single-cell RNA sequencing (scRNAseq) data for the third instar larval brain to determine cell clusters that express the targeted gene (Ravenscroft et al., 2020). We then used the same scRNAseq dataset to determine other genes expressed in overlapping clusters and that were previously targeted with T2AGAL4. The KozakGAL4-driven UAS-CD8mCherry reporter is expressed in a very similar expression pattern as the T2AGAL4-driven reporter expression of the genes that we identified through scRNAseq. The other genes expressed in the overlapping cluster according to scRNAseq such as serp, verm, and emp suggest that this cluster corresponds to tracheal cells, which is in line with the observed expression pattern based on imaging (Figure 2B, Figure 2\u2014figure supplement 1B; Luschnig et al., 2006; Lee et al., 2018). We also performed the analysis for three additional KozakGAL4 alleles that lead to reporter expression in restricted groups of cells (CG3770, CG10947, and CG15093). Comparison of the expression patterns of the other tested KozakGAL4 targeted genes and T2AGAL4 targeted genes that are expressed in overlapping cell groups showed again overlapping expression patterns based on imaging (CG3770KozakGAL4-DebclT2AGAL4; CG10947KozakGAL4-PK2-R1T2AGAL4; CG15093KozakGAL4-pippinT2AGAL4; Figure 2\u2014figure supplement 1A). Hence, the use of scRNAseq data can provide an independent means of verification of accuracy of the observed reporter expression patterns for the lines tested.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/76077/elife-76077-fig2-v2.jpg)\n\n**Figure 2.:** (A) Examples of third instar larval brain gene expression patterns obtained by crossing KozakGAL4 allele of indicated genes with UAS-CD8mCherry flies. (B) The imaging results of reporter expression generated with KozakGAL4 allele were compared to the expression pattern of genes that are expressed in similar cells by analysis of single-cell sequencing data imaged using T2AGAL4 alleles. Images are taken by crossing the GAL4 alleles with UAS-CD8mCherry. Arrowheads point to the shared expression pattern. Scale bar is 50\u00b5m.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76077/elife-76077-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) The single-cell sequencing data from Ravenscroft et al., 2020 with the cells expressing the gene targeted by KozakGAL4 marked by red circles and cells expressing the gene targeted with T2AGAL4 allele marked by green circles. The imaging results of reporter expression generated with KozakGAL4 alleles were compared to the expression patterns of genes that are expressed in similar cells by analysis of single-cell sequencing data imaged using T2AGAL4 alleles. Images are taken by crossing the GAL4 alleles with UAS-CD8mCherry. Arrowheads show the regions with the most overlap. (B) Cluster of trachea markers in the scRNA data from Ravenscroft et al., 2020. Scale bar is 50\u00b5m.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76077/elife-76077-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** GAL4 mRNA and gene-specific mRNAs are detected simultaneously by two color smiFISH. In each case, there was significant overlap between signals. yw flies are used as control for the specificity of GAL4 probes. Scale bar is 30\u00b5m.\n\nNext, we compared the RNA expression patterns of the GAL4 mRNA and the targeted gene mRNA for eight genes targeted by KozakGAL4 in flies heterozygous for a KozakGAL4 allele. We opted to compare mRNA expression patterns rather than comparing the signal obtained by KozakGAL4/UAS-Fluorescent Protein to the protein expression pattern of the targeted gene because there are no available antibodies for vast majority of the genes we targeted. Moreover, if the antibodies would be available, and even if the antibodies were completely specific, the staining pattern would likely be different from the GAL4-UAS reporter expression pattern due to the subcellular localization of the gene product being different from the subcellular localization of the reporter protein. Finally, the GAL4-UAS system amplifies the signal compared to the expression of the gene product. Lee et al., 2018 noted the greater level of expression provided by the T2AGAL4 system when they used RMCE to convert the same MiMIC lines to EGFP protein trap alleles or T2AGAL4 gene trap alleles. The signals that they detected in larval or adult brains using these alleles often looked qualitatively different as well. Comparing the expression pattern of the targeted gene product to the KozakGAL4-UAS reporter gene signal would suffer from the same issue.\n\nFor a more direct comparison of the spatial/temporal expression of the KozakGAL4 allele and the targeted gene, we compared their RNA expression patterns by in situ hybridization. We employed smiFISH (single molecule Fluorescent In-Situ Hybridization) in third instar larval brains for eight genes (Calvo et al., 2021; Yang et al., 2017). We crossed the KozakGAL4 alleles of these genes (Setx, CG7943, CG8202, CG8778, CG15093, IntS11, ZnT49B, and Vps29) to yw flies with wild-type alleles of these genes and performed costaining of the GAL4 mRNA, expressed by the KozakGAL4 allele, and the targeted gene mRNA, expressed from the wild-type allele of the gene. In seven cases, where we could detect the mRNA expression of the gene product reliably (Setx, CG7943, CG8202, CG8778, CG15093, IntS11, and ZnT49B), four showed clear overlap between the gene product and GAL4 mRNAs (Setx, CG8202, CG10593, and IntS11, Figure 2\u2014figure supplement 2). Three additional cases, CG7943, CG8778, and ZnT49B had very low signal-to-noise ratio and are inconclusive. There were no cases where we saw clear target gene product staining and no Gal4 overlap. Taken together these data suggest that the knock-ins are expressed in the correct gene pattern but given the low sample size we do not draw any strong conclusion as to how consistent this is across the genome.\n\nNext, we determined if UAS-human or fly cDNAs could rescue the phenotype associated with 11 gene deletions caused by the KozakGAL4 knock-ins. UAS-fly or human cDNA rescued the lethality of KozakGAL4 allele for Pngl (Clement Chow, personal communication), Tom70, CG8320, CG16787, and IntS11 and behavioral phenotypes for Wdr37, suggesting that the KozakGAL4 is expressed where the targeted gene product is required for the gene function. For Pex2, Pex16, Fitm, PIG-A, and CG34293 the expression of orthologous human cDNA did not rescue the associated phenotypes.\n\nIn summary, KozakGAL4 offers a means to disrupt gene function while expressing GAL4 in the expression domain of the targeted genes with the caveat that possible exonic and intronic regulatory information would be removed. This approach allows us to tag the remainder of the genes that do not contain a suitable coding intron for the T2AGAL4 strategy which corresponds to 58% of all the genes.\n\n### New vector backbones for synthesis of homology donor constructs that are also templates for sgRNA expression\n\nWe previously showed that linearizing the homology donor constructs in vivo allows for integration of large constructs in the genome through CRISPR-mediated homologous recombination even using short homology arms (Kanca et al., 2019b). This approach makes inexpensive commercial synthesis of homology donor intermediates feasible. The intermediate vectors can be used for a single step directional cloning of the SIC in the homology donor intermediate vector. This greatly facilitates the generation of homology donor vectors which previously required four-way ligations with large homology arms. Moreover, this eliminates cloning failures (~20\u201330%) and troubleshooting associated constructs with large homology arms (Kanca et al., 2019b). The resulting homology donor vectors with short homology arms were previously injected together with two vectors that express two sgRNAs (pCFD3, Port et al., 2014) in embryos that express Cas9 in their germline. The first sgRNA, which we refer to as sgRNA1, targets the homology donor vector backbone to linearize the homology donor and does not have a target in the Drosophila genome (Garcia-Marques et al., 2019). The second sgRNA vector expresses the sgRNA to target the gene and introduce the double strand DNA break that serves as a substrate for homologous recombination. In Kanca et al., 2019b, we demonstrated that injection of these constructs resulted in transgenesis efficiencies of about 60%.\n\nWe developed new approaches to increase the transgenesis efficiency of the custom DNA backbones, decrease the workload, and to simplify the generation of homology donor constructs. The first custom vector backbone that we tested has the U6-3::sgRNA1 sequence in the vector backbone and sgRNA1 targets, on either side of the EcoRV site where the synthesized fragments are directionally integrated by Gibson Assembly by the synthesis company (vector backbone named pUC57_Kan_gw_OK, design named int200, Figure 3A). With this design, the homology donor vector intermediates that are commercially synthesized contain the sgRNA1-coding sequence, obviating the need to coinject one of the sgRNA vectors. Having the sgRNA1-coding region in the backbone also helps with in vivo linearization of the homology donor since the homology donor construct and the sgRNA1 are delivered together in a single vector. The int200 design also removes the sgRNA1 target sites from the synthesized region as they are present in the vector. This allows increasing the homology arm length to 200 bps without increasing the cost of synthesis.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/76077/elife-76077-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematics of the int200 strategy. (B) Transgenesis data using int200_T2AGAL4 or int200_KozakGAL4 strategies.\n\nWe tested the int200 design for 397 genes with T2AGAL4 cassettes and 36 genes with KozakGAL4 cassettes. For each construct, we injected 400\u2013600 embryos that express Cas9 in the germline. For inserting the KozakGAL4 cassette, the two gene-specific sgRNAs were cloned into pCFD5 (Port and Bullock, 2016). For both T2AGAL4 and KozakGAL4 insertions, the int200 homology donor plasmid was coinjected with the plasmid that encodes the target-specific sgRNA (pCFD3 for the former and pCFD5 for the latter case). We successfully integrated T2AGAL4 cassette in 252 genes (~65% success rate) and replaced the coding region of 22 genes with KozakGAL4 (~61% success rate) (Figure 3B). PCR verification of each of the two flanks of each insertion site was performed by using a gene-specific PCR primer outside the homology region pointing toward the insert and a construct specific PCR primer. For 88% of the T2AGAL4 inserts we obtained PCR verification on both sides of the insert and for the remaining 12% we obtained PCR products on one side of the construct. For 91% of KozakGAL4 inserts we obtained amplicons on both sides of the insert. For the inserts with a single PCR verification, we sequenced the amplicon to ensure the insert is in the proper locus. Hence, the overall transgenesis success rate of the int200 method is 63% (Figure 3B). This is very similar to the injection success rate of homologous recombination using large (0.5\u20131 kb) homology arms (1165 insertions in 1,84 targeted genes, Lee et al., 2018) but leads to very significant reductions in labor and cost. Additionally, int200 facilitates the cloning of homology donor constructs and eliminates cloning failures which reduce the overall successful targeting rate using large homology arms to ~50% (successful cloning of 80% constructs that are injected with 65% transgenesis success rate). In summary, the int200 method provides a ~30% gain in overall efficiency (from 50% to 65%).\n\nTo further optimize the custom vector backbone, we repositioned the U6-3::sgRNA1 and added a partial tRNA construct directly upstream of the EcoRV site where the synthesized fragments are inserted (Figure 4A). The placement of the partial tRNA allows seamless integration of the remainder of the tRNA and gene-specific sgRNA sequence to the synthesized fragment (vector named pUC57_Kan_gw_OK2 and design named gRNA_int200 for T2AGAL4 constructs and named 2XgRNA_int200 for KozakGAL4 constructs). Hence, two sgRNAs (or three sgRNAs for KozakGAL4) can be produced from the single injected plasmid. One of the sgRNA1 target sites is added to the synthesized fragment before the start of the homology arm and the other sgRNA1 target site is added to the backbone just downstream of the EcoRV site where the synthesized fragment is directionally inserted. This design obviates the need to clone a separate sgRNA vector to target the genomic locus. It also ensures simultaneous delivery of all the components of the homologous recombination reaction as they are delivered on a single plasmid. We have targeted 127 genes with gRNA_int200_T2AGAL4 donor plasmids (Supplementary file 2) and successfully inserted the T2AGAL4 cassette in 95 genes (~75% success rate, Figure 4B). We also tested whether genes for which the tagging failed using the int200 strategy (Figure 3) could be targeted with the gRNA_int200_T2AGAL4 using the same gene-specific sgRNA and homology arms. For three out of four genes tested, use of the gRNA_int200 strategy resulted in successful integration of the T2AGAL4 cassette. These data show that incorporating all the sgRNAs in the donor vector improves the transgenesis efficiency.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/76077/elife-76077-fig4-v2.jpg)\n\n**Figure 4.:** (A) Schematics of the gRNA_int200 strategy. (B) Transgenesis data using gRNA_int200_T2AGAL4 or 2XgRNA_int200_KozakGAL4 strategies.\n\nFor the KozakGAL4 constructs, we inserted a second tRNA sequence after the first synthesized sgRNA and added the second gene-specific sgRNA sequence to the synthesis reaction. We targeted 72 genes with the 2XgRNA_int200_KozakGAL4 cassette and successfully inserted KozakGAL4 in 59 genes (~82% success rate, Figure 4B; Supplementary file 2). We tested whether genes for which the tagging failed using the int200_KozakGAL4 strategy (Figure 3) could be properly targeted with the 2XgRNA_int200_KozakGAL4 using the same gene-specific sgRNAs and homology arms sequences and again observed that for three out of four tested genes, the 2XgRNA_int200_KozakGAL4 strategy was successful. In summary, the gRNA_int200 design increases the transgenesis rate and streamlines the creation of T2AGAL4 and KozakGAL4 constructs by obviating the need to generate a separate sgRNA expression plasmid and ensuring codelivery of all components for homologous recombination. In summary, the gRNA_int200 allows a 78% transgenesis success rate, or an additional 20% when compared to the int200 approach (increase from 65% to 78%).\n\n### Use of 2XgRNA_int200 intermediate vectors for GFP tagging\n\nWe have previously shown that integrating a SA-linker-EGFP-FlAsH-StrepII-3xTEVcs-3xFLAG-linker-SD (SA-GFP-SD) in coding introns of genes is an efficient approach to tag proteins with GFP (Venken et al., 2011; Nagarkar-Jaiswal et al., 2015b; Nagarkar-Jaiswal et al., 2017; Li-Kroeger et al., 2018). We typically generate these alleles through RMCE of existing MiMIC SICs and we have shown that they are functional in 72% of tested genes (Nagarkar-Jaiswal et al., 2015b; Nagarkar-Jaiswal et al., 2015a). A major factor that affects the functionality of the GFP protein trap is the insertion position. In cases where the artificial exon encoding the protein trap is inserted in a coding intron that bisects a predicted functional protein domain, the resulting protein trap is often not functional. Hence, it would be highly desirable to have another efficient approach to tag proteins encoded by genes that have no intron, small introns or no suitable MiMICs in any preselected position in the protein structure.\n\nWe tested the use of synthesized homology donor intermediate vectors to replace the coding sequence of a gene with the gene-coding sequence fused to GFP at different locations. We selected the Wdr37 gene as it has a small intron (Kanca et al., 2019a). We amplified Wdr37 sequences from the genome by PCR and used NEB HiFi DNA assembly to generate homology donor constructs where a sfGFP tag is integrated at the N terminus, C terminus, or internally (Figure 5, Figure 5\u2014figure supplements 1\u20133 for schematics of HiFi assembly). The 3XP3 DsRed flanked by PiggyBac transposase inverted repeats is integrated after the 3\u2032 UTR and serves as the transformation marker that can be excised precisely using the PiggyBac transposase (http://flycrispr.molbio.wisc.edu/; Bier et al., 2018; Figure 5A). The assembled sequences are subcloned in the synthesized homology donor intermediate. Injection of the homology donor plasmids into embryos expressing Cas9 in their germline resulted in positive transgenics in each case. A western blot of the resulting protein trap alleles using anti-GFP antibody detected bands at the expected length for the tagged protein in each case. However, the internally tagged allele is less abundant, underlining that the placement of the sfGFP tag can affect protein stability (Figure 5B). Hence, the strategy to replace the whole coding region with a GFP tagged coding region allows tagging almost any gene in any position in the coding sequence.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/76077/elife-76077-fig5-v2.jpg)\n\n**Figure 5.:** (A) Schematics of the targeting constructs to integrate sfGFP protein tag at an N-terminal, internal, or C-terminal location in Wdr37 gene locus. (B) Western blot analysis from adult flies show full-length protein in all protein trap alleles with the arrow indicating the 81 kDa band that is the length predicted for the Wdr37 protein fused to sfGFP.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76077/elife-76077-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Schematics of fragments used for NEB-HiFi DNA assembly cloning of Wdr37GFP-NTerm homology donor plasmid.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76077/elife-76077-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Schematics of fragments used for NEB-HiFi DNA assembly cloning of Wdr37GFP-int homology donor plasmid.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/76077/elife-76077-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Schematics of fragments used for NEB-HiFi DNA assembly cloning of Wdr37GFP-CTerm homology donor plasmid.\n\nIn summary, we developed a KozakGAL4 strategy to target the genes that do not have a suitable intron and a set of novel custom vector backbones to facilitate homology donor construct production and increase transgenesis rate. The methods we developed are versatile and can be modified to generate GAL4 gene traps or GFP protein fusions of the targeted genes. Finally, the methodology we describe should be easy to implement in any other model organisms to facilitate generation of gene trap and protein trap alleles.\n\n## Materials and methods\n\n### Generation of homology donor constructs\n\nTemplates for ordering the int200 and gRNA_int200 constructs and detailed explanation of construct design and cloning steps can be found in Supplementary file 3. Homology donor intermediate vectors were ordered for production from Genewiz (\u2018ValueGene\u2019 option) in pUC57 Kan_gw_OK (for int200 strategy) or pUC57 Kan_gw_OK2 (for gRNA_int200 strategy) vector backbone at 4 \u03bcg production scale. The lyophilized vectors were resuspended in 53 \u03bcl of ddH2O. 1 \u03bcl was used for Golden Gate assembly with 290 ng of pM37 vector of reading frame phase corresponding to the targeted intron (for T2GAL4, Lee et al., 2018) or 265 ng of pM37_KozakGAL4 vector (for KozakGAL4). The Golden Gate Assembly reaction was set in 200 \u00b5l PCR tubes (ThermoScientific AB2000) with 2.5 \u00b5l 10\u00d7 T4 DNA ligase buffer (NEB B0202S), 0.5 \u00b5l T4 DNA ligase (NEB M0202L), 1 \u00b5l restriction enzyme (BbsI_HF or BsaI_HFv2 NEB R3559L and R3733L, respectively), 1 \u00b5l of SIC (pM37_T2AGAL4 or pM37_KozakGAL4 at 290 or 265 ng/\u00b5l, respectively), 19 \u00b5l of dH2O, and 1 \u00b5l of homology donor construct. For cloning multiple constructs in parallel, master mixes were prepared including all the components except for the homology donor intermediate vector. The reactions were incubated in a Thermocycler (cycle 30 times between 37\u00b0C 5 min, 16\u00b0C 5 min, then 65\u00b0C 20 min, 8\u00b0C hold). An additional digestion step was done to remove self-ligating plasmid backbones by adding 19.5 \u00b5l dH2O, 5 \u00b5l 10\u00d7 CutSmart buffer (NEB B7204S) and 0.5 \u00b5l BbsI or BsaI_HFv2 (the enzyme used for the cloning reaction). The reaction product was transformed in DH5\u237a competent cells and plated on Kanamycin + LB plates.\n\n### Fly injections\n\nInt200-T2AGAL4 and int200-KozakGAL4 constructs were injected at 250 ng/\u00b5l along with 100 ng/\u00b5l gene-specific gRNA(s) cloned in pCFD3 or pCFD5, respectively (Port et al., 2014; Port and Bullock, 2016). Injections were performed as described in Lee et al., 2018. 400\u2013600 embryos from y1w*; iso18; attP2(y+){nos-Cas9(v+)} for genes on the second or fourth chromosome and y1w* iso6;; attP2(y+){nos-Cas9(v+)} for genes on the X chromosome and y1w*; attP40(y+){nos-Cas9(v+)}; iso5 (Kondo and Ueda, 2013) for genes on the third chromosome per genotype were injected. Whole genome sequencing BAM files of isogenized lines can be found at https://zenodo.org/record/1341241. Resulting G0 males and females were crossed individually to y1w* flies as single fly crosses for 3XP3-EGFP detection. Positive lines were balanced, and stocks were established. Up to five independent lines were generated per construct per gene. The list of generated alleles can be found in Supplementary file 2. The sequences of homology arms and sgRNA(s) as well as the results of PCR validation and imaging on third instar larval brain are available at https://flypush.research.bcm.edu/pscreen/crimic/crimic.php. The stocks are deposited in the Bloomington Drosophila Stock Center (BDSC) on a regular basis. The stocks are available from the Bellen lab until they are deposited and established in the BDSC.\n\n### PCR validation\n\nPCR primers that flank the integration site were designed for each targeted gene. These primers were used in combination with SIC-specific primers that bind 5\u2032 of the inserted cassette in reverse orientation and 3\u2032 of the insert in forward orientation (pointing outwards from the insert cassette). SIC-specific primer sequences can be found in Supplementary file 4. 200\u2013800 nt amplicons were amplified from genomic DNA from individual insertion lines through single fly PCR (Gloor et al., 1993) using OneTaq PCR master mix (NEB #M0271L). PCR conditions were 95\u00b0C for 30 s, 95\u00b0C 30 s, 58\u00b0C 30 s, 68\u00b0C 1 min for 34 cycles, and 68\u00b0C 5 min.\n\n### Confocal imaging of transgenic larval brains\n\nDissection and imaging were performed following the protocols in Lee et al., 2018. In brief, fluorescence-positive third instar larvae were collected in 1\u00d7 phosphate-buffered saline (PBS) solution and then cut in half and inverted to expose the brain. Brains were transferred into 1.5 ml centrifuge tubes and fixed in 4% Paraformaldehyde (PFA) in 1\u00d7 PBS buffer for 20 min. Brains were then washed for 10 min three times in 0.2% PBS Triton X-100 (PBST). Finally, samples were mounted on glass slides with 8 \u00b5l of VectaShield (VectorLabs #H-1000) and imaged at 20\u00d7 zoom with a Nikon W1 dual laser spinning-disc confocal microscope.\n\n### smiFISH assay for dual detection of KozakGAL4 and targeted gene mRNA\n\nsmiFISH probes for the indicated genes and GAL4 are designed using Biosearch Technologies Stellaris RNA FISH probe designer tool (https://www.biosearchtech.com/support/tools/design-software/stellaris-probe-designer). Flap sequence \u2018CCTCCTAAGTTTCGAGCTGGACTCAGTG\u2019 were added at the 5\u2032 end of each probe generating 48mer oligonucleotides. For GAL4, Setx, ZnT49B, CG8208, CG7943, and IntS11, 48 probes were designed. mRNAs of Vps29, CG8778, and CG15093 were not long enough to design 48 probes. We designed 30 probes for Vps29, 32 probes for CG8778, and 34 probes for CG15093. Probe sequences can be found in Supplementary file 5. Probes were ordered from Sigma-Aldrich at 0.025 \u00b5M scale normalized to 100 \u00b5M per well in plates. X-FLAP (CACTGAGTCCAGCTCGAAACTTAGGAGG) oligos tagged with Cy3 or Cy5 were also ordered from Sigma-Aldrich at 0.025 \u00b5M synthesis scale. Gene-specific oligos were pooled and annealed to X-FLAP oligos as described in Calvo et al., 2021 at 20 \u00b5M scale.\n\nKozakGAL4/+ third instar larvae were dissected and stained as specified in Yang et al., 2017. Samples were incubated with gene-specific probes labeled with Cy5 and GAL4-specific probes labeled with Cy3 by annealing to respective oligos. 1 \u00b5M final concentration of each probe were used for incubating the third instar larval brains for 12 hr. yw larval brains were used as a negative control for GAL4-specific probes.\n\n### Analysis of single-cell sequencing data\n\nTo identify genes with expression profiles that overlap with expression of genes replaced with KozakGAL4 sequences, we queried the data from third instar larval CNS scRNAseq data described in Ravenscroft et al., 2020. The data (http://scope.aertslab.org/#/Larval_Brain/*/welcome) were imported into Seurat (version 4.0.1). Cells expressing the selected genes, for which the KozakGAL4 allele was generated (e.g., CG3770, CG10939, CG10947, and CG15093), were identified using WhichCells function and genes enriched in these cells were identified using FindMarkers with default parameters. A list of the top 10 genes that were minimally expressed outside the expression domain of genes with KozakGAL4 alleles was generated. We then selected genes from the list for which T2AGAL4 were generated and compared the expression profiles using available images.\n\n### Western blots\n\nFlies were homogenized using Cell Lysis Buffer (25 mM Tris\u2013HCl pH 7.5, 100 mM NaCl, 1 mM Ethylenediaminetetraacetic acid (EDTA), 1% Triton X-100, 1\u00d7 liquid protease inhibitor [Gen DEPOT], 0.1 M Dithiothreitol (DTT)). The supernatant was collected after centrifugation at 13,000 rpm for 10 min at 4\u00b0C (Eppendorf 5424R with rotor Eppendorf FA-45-24-11). The supernatant was mixed with Laemmli Buffer containing \u03b2-mercaptoethanol and heated at 95\u00b0C for 10 min. Subsequently, the samples were loaded in 4\u201320% gradient polyacrylamide gels (BioRad Mini-PROTEAN TGX). Following electrophoresis, proteins were transferred onto a polyvinylidene difluoride membrane (Immobilon, Sigma). The membrane was blocked using skimmed milk and treated with the primary antibody for overnight. The following antibodies were used in the present study: rabbit anti-GFP (1:1000) (Thermo Fisher Scientific, #A-11122), mouse anti-Actin (1:5000) (EMD Millipore, #MAB1501). Horseradish peroxidase-conjugated secondary antibody was used to detect the respective primary antibody. Blots were imaged on a BioRad ChemiDocMP.\n\n### Cloning of Wdr37-KIGFP constructs\n\nThe fragments that position the GFP tag to the selected sites were PCR amplified from genomic DNA, sfGFP was amplified from pBS_SA_sfGFP_SD (Kanca et al., 2019a) and scarless DSred from pScarlessHD-DsRed pScarlessHD-DsRed was a gift from Kate O\u2019Connor-Giles (Addgene plasmid # 64703; http://www.addgene.org/64703/; RRID:Addgene_64703). The fragments were used together with homology donor intermediate for Wdr37 gene used for generating KozakGAL4 allele (CR70111) cut with BbsI-HF to assemble NEB-HiFi DNA assembly following manufacturer\u2019s instructions. Schematics of HiFi assembly can be found in Figure 5\u2014figure supplements 1\u20133. Primer sequences to clone the homology donor constructs can be found at Supplementary file 4.\n",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "f43d6194-5574-4903-9ee4-fcf11643ccc8",
+      "submission_id": "860b31c1-6370-4b10-a2c6-c87993a97717",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- K VijayRaghavan, https://ror.org/03ht1xw27 National Centre for Biological Sciences, Tata Institute of Fundamental Research India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76077.sa0](https://doi.org/10.7554/eLife.76077.sa0)\n\nThis manuscript is of general interest to Drosophila researchers who widely use the many tools generated by the Gene Disruption Project ( GDP). This is a valuable addition to this toolkit. The approach in this paper generates new vectors, which allow the rapid generation of hundred of gene-specific GAL4 lines using CRISPR technology. The approach taken by the authors has important implications outside the Drosophila community too.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- K VijayRaghavan, https://ror.org/03ht1xw27 National Centre for Biological Sciences, Tata Institute of Fundamental Research India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76077.sa1](https://doi.org/10.7554/eLife.76077.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"An expanded toolkit for Drosophila gene tagging using synthesized homology donor constructs for CRISPR mediated homologous recombination\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and K VijayRaghavan as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Benjamin H White (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission, upon which the manuscript should be ready for acceptance,\n\nEssential revisions:\n\nPlease see the two reviewers' reports below. An important point raised relates to improving the data on the fidelity of the KozakGal4 method. This could require more experiments, but the work will be on even stronger ground if addressed. At the very least, consistency (or inconsistency) with known patterns of tissue expression in published databases should be established for a representative subset of genes. Validation by some direct method, such as immunostaining where antibodies are available or in situ hybridization, would be highly desirable. Given that the authors have successfully targeted over 150 genes with KozakGal4 lines, they could probably find antibodies and/or make in situ probes for testing a subset of them, if they don't already have such data. Providing the reader with a better sense of the expression fidelity achievable using the method would be useful.\n\nReviewer #1 (Recommendations for the authors):\n\np.8 As noted in the general comments, the presentation on the fidelity of expression is confusing and needs to be changed. Part of the confusion as it is currently written stems from the fact that the name of the KozakGal4 line initially discussed (KozakGal4-CG10939) is not named in the text.\n\np. 9: The sentence beginning \"The resulting new homology donor vectors were previously\u2026\" is very confusing, since it is not clear what \"new\" refers to, especially in the context of being \"previously\" injected. It seems like maybe some innovation since Kanca, 2019a is being referred to, but this doesn't seem to be the case. It would be helpful if this were rephrased so that it is clear that only the older technology is being described.\n\np. 10: the \"success rates\" referred to seem to indicate successful transgenesis (i.e. incorporation of the selection marker) rather than recovery of the desired insertion product (since PCR failed to verify correct insertion on both sides of the gene for some 12% of cases). Is this correct? It isn't clear from the text, and would be useful if the authors were explicit on this point.\n\np. 11: The increased success rate reported for gRNA-int200 seems somewhat surprising. Why might incorporating the sgRNAs into the same vector prove so much more effective--especially when several hundreds of embryos are being injected for each construct? Was the frequency of transformants for any given construct increased when the gRNA-int200 approach was used? One can understand going from a few transformants recovered to many transformants, but going from no transformants to transformants in three-quarters of cases seems surprising. What do the authors speculate is the cause?\n\np. 12: Direct genomic insertion of tags into genes of interest has become fairly commonplace using CRISPR-based methods. Is there a particular benefit of the author's approach?\n\nFigure 1A: for clarity \"avg\" should be replaced by \"avg length\".\n\nFigure 2B: why are there two arrowheads in the images?\n\nSupplementary Table 1: Is there any particular reason to reproduce the left-side table, which has already been presented in Figure 1A?\n\nReviewer #2 (Recommendations for the authors):\n\nMost importantly, the highlight of the paper that makes it suitable for publication in eLife, is the simple and universal gRNA_int200 strategy for HDR-mediated CRISPR-based gene targeting. All the other method improvements described in the manuscript become obsolete as they can be replaced by the sgRNA_int strategy. Therefore, the paper should focus and emphasize much more \u2013 or alternatively even culminate \u2013 in the detailed presentation of this method. -Maybe the renaming of the strategy may be helpful as we expect it to become a standard in the field. While the material and methods section are sufficiently described, the method would deserve much better visual representation by generating an extended Figure 4 that would guide the reader step by step through the use and application of the vector backbone.\n\nIn the main text the authors write that the synthesized fragments are inserted in a directional fashion using EcoRV, which is misleading as EcoRV is a blunt cutter. If we understand correctly the orientation of the synthesized fragment in Figure 3 does actually not matter. What matters there is the orientation of the Gal4 cassettes with respect to the 200bps homology arms and that is indeed directed by the BbsI cloning.\n\nThe situation appears to be different with the gRNA_int200 strategy in Figure 4. Again, mentioning directional insertion together with EcoRV is misleading. Further, the scheme in the first part (A) is confusing. The synthesized fragment of 571 bps starts with a \"AgRNA*\" part, but the dotted line does not include this part. Yet, as we understand this \"AgRNA*\" is part of the synthesized fragment that needs to be inserted into the backbone. The supplementary methods with more detailed cloning instructions supports the notion that the gene-specific gRNA 2 + gRNA scaffold is indeed part of the synthesized fragment. We therefore ask to correct and adapt the Figure accordingly. In addition, we suggest to extend the main text and to highlight in more detail the strategy as well as the relevance of the method for the field. Finally, we suggest that the authors add a detailed paragraph in which they guide the readers through an exemplary cloning of an insert into the sgRNA_int200 backbone. Because even after repeated reading, it was not apparent how a custom template should be ordered from gene synthesis providers to get a seamless restoration of the tRNA sequence. A very good example for a similar user manual has been provided by Port and Bullock (2016) where they describe in great detail the crucial steps for the successful use of pCFD5. This paper has been cited by the authors.\n",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "109b7379-eb89-4850-9492-92655ee0230d",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C1",
+      "claim": "5787 out of 13,931 protein-coding genes in Drosophila have a sufficiently large coding intron that is shared among all the annotated splicing isoforms of the gene.",
+      "claim_type": "EXPLICIT",
+      "source": "An analysis of the Drosophila genome shows that 5787 out of 13,931 protein-coding genes have a sufficiently large coding intron that is shared among all the annotated splicing isoforms of the gene (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data analysis presented in Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "3f84c618-78e8-4cd0-8d5f-808f59ffd731",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C2",
+      "claim": "About 58% of Drosophila genes lack a suitable coding intron for integration of artificial exons in all of the annotated isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, about 58% of Drosophila genes lack a suitable coding intron for integration of artificial exons in all of the annotated isoforms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by the analysis in Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "defd5a4e-bdb2-4215-b48b-73b3bf7bbe0e",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C3",
+      "claim": "8144 genes in Drosophila lack suitable introns for T2AGAL4 and other artificial exon-based strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "Using these criteria, 8144 genes lack suitable introns, making them less accessible for the T2AGAL4 and other artificial exon-based strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on genome analysis data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "c5a73cb8-7612-4103-824c-fdc314145b1c",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C4",
+      "claim": "Genes with a suitable intron have larger coding sequences (2051 nt vs 1173 nt) than genes without a suitable intron.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes with a suitable intron typically have larger coding sequences (2051 nt vs 1173 nt) and have a larger number of previously isolated mutant alleles based on FlyBase data (10.4 vs 2.1) than genes without a suitable intron(s) (Supplementary file 1; Larkin et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This comparison is based on data analysis presented in Supplementary file 1 and cited FlyBase data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "4cbc4b34-4798-4102-a7c1-a0c6462b6a1a",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C5",
+      "claim": "Genes with a suitable intron have a larger number of previously isolated mutant alleles (10.4 vs 2.1) than genes without a suitable intron.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes with a suitable intron typically have larger coding sequences (2051 nt vs 1173 nt) and have a larger number of previously isolated mutant alleles based on FlyBase data (10.4 vs 2.1) than genes without a suitable intron(s) (Supplementary file 1; Larkin et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on FlyBase data analysis cited in the manuscript.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "45c41370-7a5a-4402-a96d-d8b107f1acd9",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C6",
+      "claim": "The Kozak sequence is identified as (C/A) AA (C/A) AUG in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "The Kozak sequence is an optimal translation initiation site in eukaryotic mRNAs, and it is identified as (C/A) AA (C/A) AUG in Drosophila (Cavener, 1987; Kozak, 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Cavener, 1987 and Kozak, 1986.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "e33156a5-375b-4c13-b966-0fcabd3b440b",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C7",
+      "claim": "The median 5\u2032 and 3\u2032 UTR lengths for Drosophila genes are 214 and 224 bps, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The median 5\u2032 and 3\u2032 UTR lengths for Drosophila genes are 214 and 224 bps, respectively (Chen et al., 2011; Jan et al., 2011), which are typically large enough to identify putative sgRNA targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Chen et al., 2011 and Jan et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "37883826-5930-43a2-9097-2db0ae81247b",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C8",
+      "claim": "109 genes were targeted with the KozakGAL4 strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess the potential of the KozakGAL4 strategy, we targeted 109 genes to date and successfully replaced the coding region of 82 genes with the KozakGAL4 cassette (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "cd91eef1-2422-49a6-bb40-51d6fba165f9",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C9",
+      "claim": "The coding region of 82 genes was successfully replaced with the KozakGAL4 cassette.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess the potential of the KozakGAL4 strategy, we targeted 109 genes to date and successfully replaced the coding region of 82 genes with the KozakGAL4 cassette (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "87f2fa67-e850-4525-a7b6-004c4d38656a",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C10",
+      "claim": "About 80% of KozakGAL4 alleles lead to specific expression in third instar larval brains.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, with KozakGAL4 alleles, we detected specific GAL4 expression for about 80% (46/57) of the genes (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data showing 46 out of 57 tested genes showed specific expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "a25fab84-541a-4d52-b3d4-a612795bce7c",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C11",
+      "claim": "About 80% of all T2AGAL4 alleles lead to specific expression in third instar larval brains.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous findings, using T2AGAL4 alleles have shown that ~80% of all T2AGAL4 alleles lead to specific expression in third instar larval brains (Lee et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lee et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "00d0909f-0b3f-4fc9-8818-4dd9d07a8cce",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C12",
+      "claim": "UAS-fly or human cDNA rescued the lethality of KozakGAL4 allele for Pngl, Tom70, CG8320, CG16787, and IntS11.",
+      "claim_type": "EXPLICIT",
+      "source": "UAS-fly or human cDNA rescued the lethality of KozakGAL4 allele for Pngl (Clement Chow, personal communication), Tom70, CG8320, CG16787, and IntS11 and behavioral phenotypes for Wdr37, suggesting that the KozakGAL4 is expressed where the targeted gene product is required for the gene function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental rescue data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "75979944-0bc9-48ee-8c36-f947651880c8",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C13",
+      "claim": "UAS-fly or human cDNA rescued behavioral phenotypes for Wdr37.",
+      "claim_type": "EXPLICIT",
+      "source": "UAS-fly or human cDNA rescued the lethality of KozakGAL4 allele for Pngl (Clement Chow, personal communication), Tom70, CG8320, CG16787, and IntS11 and behavioral phenotypes for Wdr37, suggesting that the KozakGAL4 is expressed where the targeted gene product is required for the gene function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental rescue data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "19de606a-821c-492d-99fd-62cd60f630cf",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C14",
+      "claim": "For Pex2, Pex16, Fitm, PIG-A, and CG34293 the expression of orthologous human cDNA did not rescue the associated phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "For Pex2, Pex16, Fitm, PIG-A, and CG34293 the expression of orthologous human cDNA did not rescue the associated phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental rescue data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "dc7970a0-9f98-498f-958c-823b0507430a",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C15",
+      "claim": "The viral T2A sequence leads to the truncation of the nascent target gene polypeptide and reinitiation of translation of the downstream GAL4 as an independent protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The viral T2A sequence leads to the truncation of the nascent target gene polypeptide and reinitiation of translation of the downstream GAL4 as an independent protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of T2A function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "db7ff1cf-112e-4183-abdd-450afc2dc3f0",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C16",
+      "claim": "The T2AGAL4 cassette typically creates a strong loss of function allele of the targeted gene.",
+      "claim_type": "EXPLICIT",
+      "source": "This cassette typically creates a strong loss of function allele of the targeted gene and expresses the yeast GAL4 transcription factor in a similar spatial and temporal pattern as the protein encoded by the targeted gene (Lee et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lee et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "5ddb1b2a-1383-4d38-816b-1f58c763e4f6",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C17",
+      "claim": "The T2AGAL4 cassette expresses the yeast GAL4 transcription factor in a similar spatial and temporal pattern as the protein encoded by the targeted gene.",
+      "claim_type": "EXPLICIT",
+      "source": "This cassette typically creates a strong loss of function allele of the targeted gene and expresses the yeast GAL4 transcription factor in a similar spatial and temporal pattern as the protein encoded by the targeted gene (Lee et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lee et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "2380421a-3f3a-4897-bb2c-0cd3a6847682",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C18",
+      "claim": "An intron should be larger than 100 nt to be suitable for integration of an artificial exon.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our experience, an intron should be larger than 100 nt to be suitable for integration of an artificial exon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' experimental experience.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "f74fc983-a589-4e20-9ad4-1ef6884ae0f6",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C19",
+      "claim": "Short homology arms combined with the linearization of the donor plasmid DNA in vivo results in integration of large constructs (~5 kb) through homologous recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that short homology arms combined with the linearization of the donor plasmid DNA, in vivo results in integration of large constructs (~5 kb) through homologous recombination (Kanca et al., 2019b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Kanca et al., 2019b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "d69ded01-8469-452b-a214-498a70859e20",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C20",
+      "claim": "397 genes were targeted with int200_T2AGAL4 constructs.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested the int200 design for 397 genes with T2AGAL4 cassettes and 36 genes with KozakGAL4 cassettes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "7729581f-752e-4ad0-bf32-cebbc2d1d741",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C21",
+      "claim": "36 genes were targeted with int200_KozakGAL4 constructs.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested the int200 design for 397 genes with T2AGAL4 cassettes and 36 genes with KozakGAL4 cassettes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "5e206f91-0ab1-409f-a985-5ae5c249a22a",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C22",
+      "claim": "The T2AGAL4 cassette was successfully integrated in 252 genes using the int200 strategy (~65% success rate).",
+      "claim_type": "EXPLICIT",
+      "source": "We successfully integrated T2AGAL4 cassette in 252 genes (~65% success rate) and replaced the coding region of 22 genes with KozakGAL4 (~61% success rate) (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "32d879ac-69cf-41f1-8fc0-d695aea9f2c6",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C23",
+      "claim": "The coding region of 22 genes was replaced with KozakGAL4 using the int200 strategy (~61% success rate).",
+      "claim_type": "EXPLICIT",
+      "source": "We successfully integrated T2AGAL4 cassette in 252 genes (~65% success rate) and replaced the coding region of 22 genes with KozakGAL4 (~61% success rate) (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "d1ab51a3-c23a-4dba-a755-1833787ccacc",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C24",
+      "claim": "For 88% of the T2AGAL4 inserts using int200 strategy, PCR verification was obtained on both sides of the insert.",
+      "claim_type": "EXPLICIT",
+      "source": "For 88% of the T2AGAL4 inserts we obtained PCR verification on both sides of the insert and for the remaining 12% we obtained PCR products on one side of the construct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "9b668134-d9e6-4dee-b7be-1afde63938b1",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C25",
+      "claim": "For 91% of KozakGAL4 inserts using int200 strategy, PCR amplicons were obtained on both sides of the insert.",
+      "claim_type": "EXPLICIT",
+      "source": "For 91% of KozakGAL4 inserts we obtained amplicons on both sides of the insert.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "941f7063-d375-4fe8-9902-d3ca5834914d",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C26",
+      "claim": "The overall transgenesis success rate of the int200 method is 63%.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the overall transgenesis success rate of the int200 method is 63% (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "11c2dd6d-db4f-4f4b-bd11-8c3d0bb45713",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C27",
+      "claim": "The int200 transgenesis success rate is very similar to the injection success rate of homologous recombination using large (0.5\u20131 kb) homology arms.",
+      "claim_type": "EXPLICIT",
+      "source": "This is very similar to the injection success rate of homologous recombination using large (0.5\u20131 kb) homology arms (1165 insertions in 1,84 targeted genes, Lee et al., 2018) but leads to very significant reductions in labor and cost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to data from Lee et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "5e518bd7-6aa4-4344-a413-6799ae58c7aa",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C28",
+      "claim": "127 genes were targeted with gRNA_int200_T2AGAL4 donor plasmids.",
+      "claim_type": "EXPLICIT",
+      "source": "We have targeted 127 genes with gRNA_int200_T2AGAL4 donor plasmids (Supplementary file 2) and successfully inserted the T2AGAL4 cassette in 95 genes (~75% success rate, Figure 4B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "cd8f57e4-631c-46bc-b765-c22201d27c5d",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C29",
+      "claim": "The T2AGAL4 cassette was successfully inserted in 95 genes using gRNA_int200_T2AGAL4 strategy (~75% success rate).",
+      "claim_type": "EXPLICIT",
+      "source": "We have targeted 127 genes with gRNA_int200_T2AGAL4 donor plasmids (Supplementary file 2) and successfully inserted the T2AGAL4 cassette in 95 genes (~75% success rate, Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "75e48758-3731-4f62-8166-019a29b86908",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C30",
+      "claim": "For three out of four genes that failed tagging using int200 strategy, use of the gRNA_int200 strategy resulted in successful integration of the T2AGAL4 cassette.",
+      "claim_type": "EXPLICIT",
+      "source": "We also tested whether genes for which the tagging failed using the int200 strategy (Figure 3) could be targeted with the gRNA_int200_T2AGAL4 using the same gene-specific sgRNA and homology arms. For three out of four genes tested, use of the gRNA_int200 strategy resulted in successful integration of the T2AGAL4 cassette.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "e97bc72f-466c-4841-82be-58b3324d9ad2",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C31",
+      "claim": "72 genes were targeted with the 2XgRNA_int200_KozakGAL4 cassette.",
+      "claim_type": "EXPLICIT",
+      "source": "We targeted 72 genes with the 2XgRNA_int200_KozakGAL4 cassette and successfully inserted KozakGAL4 in 59 genes (~82% success rate, Figure 4B; Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "0bcbe922-5d50-4512-bf48-1f93a8223886",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C32",
+      "claim": "KozakGAL4 was successfully inserted in 59 genes using 2XgRNA_int200_KozakGAL4 strategy (~82% success rate).",
+      "claim_type": "EXPLICIT",
+      "source": "We targeted 72 genes with the 2XgRNA_int200_KozakGAL4 cassette and successfully inserted KozakGAL4 in 59 genes (~82% success rate, Figure 4B; Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "3dee533a-862f-44af-a85b-0e62db83ef34",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C33",
+      "claim": "For three out of four genes that failed tagging using int200_KozakGAL4 strategy, the 2XgRNA_int200_KozakGAL4 strategy was successful.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested whether genes for which the tagging failed using the int200_KozakGAL4 strategy (Figure 3) could be properly targeted with the 2XgRNA_int200_KozakGAL4 using the same gene-specific sgRNAs and homology arms sequences and again observed that for three out of four tested genes, the 2XgRNA_int200_KozakGAL4 strategy was successful.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "f90060a2-eaf1-40b3-8284-3601d9161e21",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C34",
+      "claim": "The gRNA_int200 design allows a 78% transgenesis success rate.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the gRNA_int200 allows a 78% transgenesis success rate, or an additional 20% when compared to the int200 approach (increase from 65% to 78%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "f606ee69-63a3-4c03-b052-dbc832b6c9c8",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C35",
+      "claim": "Integrating a SA-linker-EGFP-FlAsH-StrepII-3xTEVcs-3xFLAG-linker-SD (SA-GFP-SD) in coding introns of genes is an efficient approach to tag proteins with GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that integrating a SA-linker-EGFP-FlAsH-StrepII-3xTEVcs-3xFLAG-linker-SD (SA-GFP-SD) in coding introns of genes is an efficient approach to tag proteins with GFP (Venken et al., 2011; Nagarkar-Jaiswal et al., 2015b; Nagarkar-Jaiswal et al., 2017; Li-Kroeger et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "60c93a11-a117-47ea-8c7f-8440080d3507",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C36",
+      "claim": "GFP protein traps generated through RMCE of existing MiMIC SICs are functional in 72% of tested genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We typically generate these alleles through RMCE of existing MiMIC SICs and we have shown that they are functional in 72% of tested genes (Nagarkar-Jaiswal et al., 2015b; Nagarkar-Jaiswal et al., 2015a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Nagarkar-Jaiswal et al., 2015b and 2015a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "178fe689-3468-40e4-b799-7def29d20389",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C37",
+      "claim": "Injection of homology donor plasmids for Wdr37 GFP tagging into embryos expressing Cas9 in their germline resulted in positive transgenics in each case.",
+      "claim_type": "EXPLICIT",
+      "source": "Injection of the homology donor plasmids into embryos expressing Cas9 in their germline resulted in positive transgenics in each case.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "c9852cca-b520-47db-a2f9-8a6ad1a6ac12",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C38",
+      "claim": "Western blot of Wdr37 protein trap alleles using anti-GFP antibody detected bands at the expected length for the tagged protein in each case.",
+      "claim_type": "EXPLICIT",
+      "source": "A western blot of the resulting protein trap alleles using anti-GFP antibody detected bands at the expected length for the tagged protein in each case.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "6de67917-a7b9-4bae-b6fe-dedcb7858429",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C39",
+      "claim": "The internally tagged Wdr37 allele is less abundant than N-terminal and C-terminal tagged alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the internally tagged allele is less abundant, underlining that the placement of the sfGFP tag can affect protein stability (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on western blot data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "d5bf68f6-8365-4a89-bb3e-6cf0bfc5668a",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C40",
+      "claim": "The placement of the sfGFP tag can affect protein stability.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the internally tagged allele is less abundant, underlining that the placement of the sfGFP tag can affect protein stability (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the western blot data showing different abundance levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "ff5036fd-7f02-407e-903a-ccb975866609",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C41",
+      "claim": "The CRIMIC strategy is based on integrating a Swappable Integration Cassette (SIC) containing an artificial exon encoding attP-FRT-Splice Acceptor (SA)-T2AGAL4-polyA-3XP3EGFP-polyA-FRT-attP (T2AGAL4).",
+      "claim_type": "EXPLICIT",
+      "source": "The CRIMIC strategy is based on integrating a Swappable Integration Cassette (SIC) containing an artificial exon encoding attP-FRT-Splice Acceptor (SA)-T2AGAL4-polyA-3XP3EGFP-polyA-FRT-attP (T2AGAL4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the CRIMIC methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "a447222d-6af7-4263-993a-c5cab4f8cb8a",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C42",
+      "claim": "The SIC is integrated in an intron between two coding exons (coding intron) by CRISPR-mediated homologous recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "The SIC is integrated in an intron between two coding exons (coding intron) by CRISPR-mediated homologous recombination (Lee et al., 2018; Gnerer et al., 2015; Diao et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lee et al., 2018; Gnerer et al., 2015; Diao et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "27fd32c4-36a6-42d0-a269-65d03b713483",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C43",
+      "claim": "CRIMIC alleles can be used to determine the gene expression pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "These alleles can be used to: (1) determine the gene expression pattern;",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as one of the applications of CRIMIC alleles.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "29c41be6-72a7-40ae-8003-7d1cccc2afcd",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C44",
+      "claim": "CRIMIC alleles can be used to study the effect of loss of function of the gene product.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) study the effect of loss of function of the gene product;",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as one of the applications of CRIMIC alleles.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "e9114bd5-0c5e-4c57-ac0e-f2a75f04ad1b",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C45",
+      "claim": "CRIMIC alleles can be used to replace the SIC through Recombinase Mediated Cassette Exchange (RMCE) with an artificial coding exon that encodes a fluorescent protein to assess protein subcellular localization and identify interacting proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "(3) replace the SIC through Recombinase Mediated Cassette Exchange (RMCE) (Bateman et al., 2006; Venken et al., 2011) with an artificial coding exon that encodes a fluorescent protein to assess protein subcellular localization (Venken et al., 2011) and identify interacting proteins;",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Bateman et al., 2006 and Venken et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "3fad45a2-e299-4aba-893b-13089d0b0ad0",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C46",
+      "claim": "CRIMIC alleles can be used to express UAS-cDNAs of the targeted gene and its variants to assess rescue of the mutant phenotype and conduct structure/function studies.",
+      "claim_type": "EXPLICIT",
+      "source": "(4) express UAS-cDNAs of the targeted gene and its variants to assess rescue of the mutant phenotype and conduct structure/function studies (Wangler et al., 2017);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Wangler et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "a155c99b-0c71-4ae7-abf9-864a36c93c39",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C47",
+      "claim": "CRIMIC alleles can be used to excise the insert with UAS-Flippase to confirm that removal of the insertion will revert the phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "(5) excise the insert with UAS-Flippase to confirm that removal of the insertion will revert the phenotype (Lee et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lee et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "4c6e8d0c-ebdb-47ef-a4a5-b79bbf24bf5b",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C48",
+      "claim": "The introduction of an artificial exon is only feasible for genes that contain a suitable large coding intron, typically 100 nt or more.",
+      "claim_type": "EXPLICIT",
+      "source": "The introduction of an artificial exon is only feasible for genes that contain a suitable large coding intron, typically 100 nt or more (Lee et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lee et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "97c87f85-4692-496c-bf6d-ba3c8fc75d4e",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C49",
+      "claim": "More than half of the genes are inaccessible to strategies based on the use of artificial exons.",
+      "claim_type": "EXPLICIT",
+      "source": "This requirement makes more than half of the genes inaccessible to strategies based on the use of artificial exons (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on data analysis in Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "abd4c165-5ceb-42a1-aad2-e096219f6e26",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C50",
+      "claim": "The KozakGAL4 knock-out/knock-in strategy replaces the coding sequence of genes with a Kozak sequence-GAL4-polyA-FRT-3XP3EGFP-polyA-FRT (KozakGAL4) cassette.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we describe the development of a knock-out/knock-in strategy to replace the coding sequence of genes with a Kozak sequence-GAL4-polyA-FRT-3XP3EGFP-polyA-FRT (KozakGAL4) cassette to target genes that lack introns that are suitable for artificial exon knock-ins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodology developed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "469b6704-e260-45e8-ad2c-68f4395396f8",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C51",
+      "claim": "The targeted gene is cut by Cas9 using two sgRNAs, one targeting the 5\u2032 untranslated region (UTR) and the other the 3\u2032 UTR in the KozakGAL4 strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "The targeted gene is cut by Cas9 using two sgRNAs, one targeting the 5\u2032 untranslated region (UTR) and the other the 3\u2032 UTR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "c98fdd5e-30a7-4cac-996d-4a28ef441e25",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C52",
+      "claim": "About 80% of the integrated KozakGAL4 cassettes lead to UAS-mCherry expression in the third instar larval brain.",
+      "claim_type": "EXPLICIT",
+      "source": "We targeted ~100 genes with this strategy and show that about 80% of the integrated KozakGAL4 cassettes lead to UAS-mCherry expression in the third instar larval brain, a ratio that is similar to what was observed for the T2AGAL4 strategy (Lee et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "f3cb461f-7d38-47e1-a5f9-2f5a91d46ae1",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C53",
+      "claim": "The ratio of KozakGAL4 cassettes leading to UAS-mCherry expression is similar to what was observed for the T2AGAL4 strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "We targeted ~100 genes with this strategy and show that about 80% of the integrated KozakGAL4 cassettes lead to UAS-mCherry expression in the third instar larval brain, a ratio that is similar to what was observed for the T2AGAL4 strategy (Lee et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to data from Lee et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "451074a6-02c6-41fc-8e45-a8cd0f6392fa",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C54",
+      "claim": "The upgrades result in a transgenesis efficacy of ~80%.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested our new designs on ~200 genes and show that the upgrades result in a transgenesis efficacy of ~80%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "24cc4253-810d-4c72-af02-94a10d0f0e77",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C55",
+      "claim": "The strategies introduced allow targeting of nearly every gene in the fly genome.",
+      "claim_type": "EXPLICIT",
+      "source": "The strategies that we introduce here allow targeting of nearly every gene in the fly genome, further streamline the generation of homology donor DNAs, increase efficiency as compared to previous strategies, and improve the rate of precise genome editing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the combined capabilities of T2AGAL4 and KozakGAL4 strategies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "536acf91-7a48-4160-a68f-9a0d4428236f",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C56",
+      "claim": "The new strategies further streamline the generation of homology donor DNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "The strategies that we introduce here allow targeting of nearly every gene in the fly genome, further streamline the generation of homology donor DNAs, increase efficiency as compared to previous strategies, and improve the rate of precise genome editing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the methodological improvements described in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "ea5409e3-9099-4f48-8652-86529d2b26a8",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C57",
+      "claim": "The new strategies increase efficiency as compared to previous strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "The strategies that we introduce here allow targeting of nearly every gene in the fly genome, further streamline the generation of homology donor DNAs, increase efficiency as compared to previous strategies, and improve the rate of precise genome editing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the comparison of transgenesis rates between different strategies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "5c23adc0-1119-49b8-88a3-0cd708dc3620",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C58",
+      "claim": "The new strategies improve the rate of precise genome editing.",
+      "claim_type": "EXPLICIT",
+      "source": "The strategies that we introduce here allow targeting of nearly every gene in the fly genome, further streamline the generation of homology donor DNAs, increase efficiency as compared to previous strategies, and improve the rate of precise genome editing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the experimental data showing improved success rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "1027df9d-9b00-456d-93ef-e1b4a94fd998",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C59",
+      "claim": "CAAA is used as a Kozak sequence upstream of the start codon of GAL4.",
+      "claim_type": "EXPLICIT",
+      "source": "We use CAAA as a Kozak sequence upstream of the start codon of GAL4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "b4960413-7df4-42ad-bae6-3ec43d2ac63c",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C60",
+      "claim": "The upstream sgRNA target site is selected to be closest to the start codon and not predicted to have off-target activity based on CRISPR Optimal Target Finder.",
+      "claim_type": "EXPLICIT",
+      "source": "To retain possible gene expression regulation by the 5\u2032 UTR, we select the upstream sgRNA target site that is closest to the start codon and that is not predicted to have off-target activity based on CRISPR Optimal Target Finder (Gratz et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodology with citation to Gratz et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "b56eb6cc-a179-4037-a023-661ff8b77288",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C61",
+      "claim": "The 5\u2032 UTRs typically contain multiple sgRNA targets whereas 3\u2032 UTRs contain few candidate sgRNA target sites due to their A/T rich nature.",
+      "claim_type": "EXPLICIT",
+      "source": "In our experience the 5\u2032 UTRs typically contain multiple sgRNA targets whereas 3\u2032 UTRs contain few candidate sgRNA target sites due to their A/T rich nature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' experimental experience.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "9509f88d-7828-40eb-add0-69f4765c8f71",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C62",
+      "claim": "In cases where a suitable sgRNA target site cannot be found in the 3\u2032 UTR, a site within the coding region close to the stop codon is targeted.",
+      "claim_type": "EXPLICIT",
+      "source": "In cases where a suitable sgRNA target site cannot be found in the 3\u2032 UTR, we target a site within the coding region, close to the stop codon, to minimize the coding region of the gene that remains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "6150d3c7-6f45-4fa1-ad5b-665f749e1f4d",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C63",
+      "claim": "In cases where a suitable sgRNA site cannot be found within the 5\u2032 UTR region, the search is expanded to the promoter region and the sequence between the sgRNA cut site and transcription start site is added to the homology region.",
+      "claim_type": "EXPLICIT",
+      "source": "In cases where a suitable sgRNA site cannot be found within the 5\u2032 UTR region, the search is expanded to the promoter region and the sequence between the sgRNA cut site and transcription start site is added to the homology region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "dc8c3d33-817b-42e5-8446-2e28a4513631",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C64",
+      "claim": "A single nucleotide substitution to eliminate the PAM sequence is introduced in the homology donor construct when targeting the promoter region, preventing cutting of the homology donor.",
+      "claim_type": "EXPLICIT",
+      "source": "In such cases, a single nucleotide substitution to eliminate the PAM sequence is introduced in the homology donor construct, preventing cutting of the homology donor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "112731d4-df79-4497-a57f-a45200b038ae",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C65",
+      "claim": "The KozakGAL4-driven UAS-CD8mCherry reporter is expressed in a very similar expression pattern as the T2AGAL4-driven reporter expression of genes identified through scRNAseq.",
+      "claim_type": "EXPLICIT",
+      "source": "The KozakGAL4-driven UAS-CD8mCherry reporter is expressed in a very similar expression pattern as the T2AGAL4-driven reporter expression of the genes that we identified through scRNAseq.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of imaging data with scRNAseq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "0fed0987-06c6-45e6-b16f-35a04cc8796f",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C66",
+      "claim": "The expression pattern of CG10939KozakGAL4 corresponds to tracheal cells based on scRNAseq data and imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "The other genes expressed in the overlapping cluster according to scRNAseq such as serp, verm, and emp suggest that this cluster corresponds to tracheal cells, which is in line with the observed expression pattern based on imaging (Figure 2B, Figure 2\u2014figure supplement 1B; Luschnig et al., 2006; Lee et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on scRNAseq data analysis and imaging, with citation to Luschnig et al., 2006 and Lee et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "374b7a3d-1158-4a1f-9f24-92f0ac5c3fec",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C67",
+      "claim": "The use of scRNAseq data can provide an independent means of verification of accuracy of the observed reporter expression patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the use of scRNAseq data can provide an independent means of verification of accuracy of the observed reporter expression patterns for the lines tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the comparison of scRNAseq and imaging data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "349426aa-1ccb-483c-a314-e7909ff92f0b",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C68",
+      "claim": "In seven cases where the mRNA expression of the gene product could be detected reliably, four showed clear overlap between the gene product and GAL4 mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "In seven cases, where we could detect the mRNA expression of the gene product reliably (Setx, CG7943, CG8202, CG8778, CG15093, IntS11, and ZnT49B), four showed clear overlap between the gene product and GAL4 mRNAs (Setx, CG8202, CG10593, and IntS11, Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on smiFISH experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "b6fc22b1-968b-4e2b-85b0-0cb8b2703aed",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C69",
+      "claim": "Three cases (CG7943, CG8778, and ZnT49B) had very low signal-to-noise ratio and are inconclusive for smiFISH analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Three additional cases, CG7943, CG8778, and ZnT49B had very low signal-to-noise ratio and are inconclusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on smiFISH experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "6585282a-d2cb-48bd-a6aa-7a4715a81fd8",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C70",
+      "claim": "There were no cases where clear target gene product staining was seen without GAL4 overlap in smiFISH analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "There were no cases where we saw clear target gene product staining and no Gal4 overlap.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on smiFISH experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "1f42327e-d7e4-4f8a-be3f-bceb1c9a016d",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C71",
+      "claim": "The GAL4-UAS system amplifies the signal compared to the expression of the gene product.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the GAL4-UAS system amplifies the signal compared to the expression of the gene product.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of the GAL4-UAS system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "d7899aaa-b627-48cb-bc46-f25377124316",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C72",
+      "claim": "Lee et al., 2018 noted the greater level of expression provided by the T2AGAL4 system when they used RMCE to convert the same MiMIC lines to EGFP protein trap alleles or T2AGAL4 gene trap alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "Lee et al., 2018 noted the greater level of expression provided by the T2AGAL4 system when they used RMCE to convert the same MiMIC lines to EGFP protein trap alleles or T2AGAL4 gene trap alleles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lee et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "9c3a6695-d5fa-4b9a-a2b2-b94500181f82",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C73",
+      "claim": "The signals detected in larval or adult brains using EGFP protein trap alleles and T2AGAL4 gene trap alleles often looked qualitatively different.",
+      "claim_type": "EXPLICIT",
+      "source": "The signals that they detected in larval or adult brains using these alleles often looked qualitatively different as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on observations from Lee et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "e0f8a7ea-fcc2-4dc3-84d0-bbb6187eaaa8",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C74",
+      "claim": "KozakGAL4 offers a means to disrupt gene function while expressing GAL4 in the expression domain of the targeted genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, KozakGAL4 offers a means to disrupt gene function while expressing GAL4 in the expression domain of the targeted genes with the caveat that possible exonic and intronic regulatory information would be removed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "1b3b7101-95ee-41cf-8a9a-d0e0f36cdff6",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C75",
+      "claim": "KozakGAL4 strategy removes possible exonic and intronic regulatory information.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, KozakGAL4 offers a means to disrupt gene function while expressing GAL4 in the expression domain of the targeted genes with the caveat that possible exonic and intronic regulatory information would be removed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical consequence of the methodology.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "97fb460f-19f8-4ff7-a321-6e08364e515c",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C76",
+      "claim": "The KozakGAL4 approach allows tagging the remainder of the genes that do not contain a suitable coding intron for the T2AGAL4 strategy which corresponds to 58% of all the genes.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach allows us to tag the remainder of the genes that do not contain a suitable coding intron for the T2AGAL4 strategy which corresponds to 58% of all the genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the genome analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "e03f8cff-da01-4611-b6e2-dc6df7a43cb6",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C77",
+      "claim": "The int200 method provides a ~30% gain in overall efficiency (from 50% to 65%).",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the int200 method provides a ~30% gain in overall efficiency (from 50% to 65%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from experimental data comparing to previous methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "1b5c7d9b-6e97-4c36-b972-b187c8c2413b",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C78",
+      "claim": "The gRNA_int200 allows an additional 20% increase in transgenesis success rate when compared to the int200 approach (increase from 65% to 78%).",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the gRNA_int200 allows a 78% transgenesis success rate, or an additional 20% when compared to the int200 approach (increase from 65% to 78%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "740a8dff-3504-482b-98d2-cb443b7a0886",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C79",
+      "claim": "Incorporating all the sgRNAs in the donor vector improves the transgenesis efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that incorporating all the sgRNAs in the donor vector improves the transgenesis efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the comparison of int200 and gRNA_int200 strategies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "7438de9e-e27e-4bef-a8d7-e9df199e39d2",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C80",
+      "claim": "The gRNA_int200 design obviates the need to clone a separate sgRNA vector to target the genomic locus.",
+      "claim_type": "EXPLICIT",
+      "source": "This design obviates the need to clone a separate sgRNA vector to target the genomic locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodological advantage.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "e9ecfc6b-39cb-4ffa-8295-12fabf9e21f6",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C81",
+      "claim": "The gRNA_int200 design ensures simultaneous delivery of all the components of the homologous recombination reaction as they are delivered on a single plasmid.",
+      "claim_type": "EXPLICIT",
+      "source": "It also ensures simultaneous delivery of all the components of the homologous recombination reaction as they are delivered on a single plasmid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodological advantage.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "99bf6661-28cf-4633-81df-f32d88508ce0",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C82",
+      "claim": "The gRNA_int200 design increases the transgenesis rate and streamlines the creation of T2AGAL4 and KozakGAL4 constructs by obviating the need to generate a separate sgRNA expression plasmid.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the gRNA_int200 design increases the transgenesis rate and streamlines the creation of T2AGAL4 and KozakGAL4 constructs by obviating the need to generate a separate sgRNA expression plasmid and ensuring codelivery of all components for homologous recombination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the methodological advantages supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "c1c99d23-f97d-4218-a68b-6b825b1b8612",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C83",
+      "claim": "A major factor that affects the functionality of the GFP protein trap is the insertion position.",
+      "claim_type": "EXPLICIT",
+      "source": "A major factor that affects the functionality of the GFP protein trap is the insertion position.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previous experimental observations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "2d91a17f-a7b6-4cc0-a691-e82bddaff169",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C84",
+      "claim": "When the artificial exon encoding the protein trap is inserted in a coding intron that bisects a predicted functional protein domain, the resulting protein trap is often not functional.",
+      "claim_type": "EXPLICIT",
+      "source": "In cases where the artificial exon encoding the protein trap is inserted in a coding intron that bisects a predicted functional protein domain, the resulting protein trap is often not functional.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previous experimental observations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "98db74db-2a05-42e0-8054-b27de5ea2eeb",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C85",
+      "claim": "The strategy to replace the whole coding region with a GFP tagged coding region allows tagging almost any gene in any position in the coding sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the strategy to replace the whole coding region with a GFP tagged coding region allows tagging almost any gene in any position in the coding sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the successful tagging of Wdr37 at different positions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "e05e4c63-228c-45fc-9629-8cf60af6f205",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C86",
+      "claim": "The methodology described should be easy to implement in any other model organisms to facilitate generation of gene trap and protein trap alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the methodology we describe should be easy to implement in any other model organisms to facilitate generation of gene trap and protein trap alleles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the applicability of the methods.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "1464c852-f64d-4e13-af78-c2dd292972c1",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C87",
+      "claim": "400\u2013600 embryos from Cas9-expressing lines were injected per genotype.",
+      "claim_type": "EXPLICIT",
+      "source": "400\u2013600 embryos from y1w*; iso18; attP2(y+){nos-Cas9(v+)} for genes on the second or fourth chromosome and y1w* iso6;; attP2(y+){nos-Cas9(v+)} for genes on the X chromosome and y1w*; attP40(y+){nos-Cas9(v+)}; iso5 (Kondo and Ueda, 2013) for genes on the third chromosome per genotype were injected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "14ba49a7-d36b-4da1-95a8-cfe293c3fbac",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C88",
+      "claim": "Int200-T2AGAL4 constructs were injected at 250 ng/\u00b5l along with 100 ng/\u00b5l gene-specific gRNA(s) cloned in pCFD3.",
+      "claim_type": "EXPLICIT",
+      "source": "Int200-T2AGAL4 and int200-KozakGAL4 constructs were injected at 250 ng/\u00b5l along with 100 ng/\u00b5l gene-specific gRNA(s) cloned in pCFD3 or pCFD5, respectively (Port et al., 2014; Port and Bullock, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methodology with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "cef753cd-509c-4048-b4a9-a398190e2ded",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C89",
+      "claim": "Int200-KozakGAL4 constructs were injected at 250 ng/\u00b5l along with 100 ng/\u00b5l gene-specific gRNA(s) cloned in pCFD5.",
+      "claim_type": "EXPLICIT",
+      "source": "Int200-T2AGAL4 and int200-KozakGAL4 constructs were injected at 250 ng/\u00b5l along with 100 ng/\u00b5l gene-specific gRNA(s) cloned in pCFD3 or pCFD5, respectively (Port et al., 2014; Port and Bullock, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methodology with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "c602cb76-cb08-46ce-960b-3d0f9773c08e",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C90",
+      "claim": "Up to five independent lines were generated per construct per gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Up to five independent lines were generated per construct per gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "59f86d86-91d0-4573-a5c6-2812327a4c4e",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C91",
+      "claim": "The stocks are deposited in the Bloomington Drosophila Stock Center (BDSC) on a regular basis.",
+      "claim_type": "EXPLICIT",
+      "source": "The stocks are deposited in the Bloomington Drosophila Stock Center (BDSC) on a regular basis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about data/resource availability.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "3dff26fb-8360-46d3-992f-a5d93979412e",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C92",
+      "claim": "The stocks are available from the Bellen lab until they are deposited and established in the BDSC.",
+      "claim_type": "EXPLICIT",
+      "source": "The stocks are available from the Bellen lab until they are deposited and established in the BDSC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about data/resource availability.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "0906272c-53b1-431c-bc47-1f4ddfbe2977",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C93",
+      "claim": "smiFISH probes for the indicated genes and GAL4 were designed using Biosearch Technologies Stellaris RNA FISH probe designer tool.",
+      "claim_type": "EXPLICIT",
+      "source": "smiFISH probes for the indicated genes and GAL4 are designed using Biosearch Technologies Stellaris RNA FISH probe designer tool (https://www.biosearchtech.com/support/tools/design-software/stellaris-probe-designer).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "8bc0e1f0-c1db-4385-be76-d24d00204c2a",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C94",
+      "claim": "For GAL4, Setx, ZnT49B, CG8208, CG7943, and IntS11, 48 smiFISH probes were designed.",
+      "claim_type": "EXPLICIT",
+      "source": "For GAL4, Setx, ZnT49B, CG8208, CG7943, and IntS11, 48 probes were designed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "e86bb112-6124-4724-9ddf-7f96557269ee",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C95",
+      "claim": "30 smiFISH probes were designed for Vps29, 32 probes for CG8778, and 34 probes for CG15093.",
+      "claim_type": "EXPLICIT",
+      "source": "We designed 30 probes for Vps29, 32 probes for CG8778, and 34 probes for CG15093.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "033938aa-517d-471a-9e90-250a8e701a25",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C96",
+      "claim": "The single-cell sequencing data from Ravenscroft et al., 2020 was used to identify genes with expression profiles that overlap with expression of genes replaced with KozakGAL4 sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify genes with expression profiles that overlap with expression of genes replaced with KozakGAL4 sequences, we queried the data from third instar larval CNS scRNAseq data described in Ravenscroft et al., 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data analysis methodology with citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "fc83e288-37c1-4879-83e9-b644dc35e3e7",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C97",
+      "claim": "The data from Ravenscroft et al., 2020 were imported into Seurat (version 4.0.1).",
+      "claim_type": "EXPLICIT",
+      "source": "The data (http://scope.aertslab.org/#/Larval_Brain/*/welcome) were imported into Seurat (version 4.0.1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data analysis methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "50bda603-40a7-46ac-aa5b-6f939dfe2825",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C98",
+      "claim": "Homology donor intermediate vectors were ordered for production from Genewiz ('ValueGene' option) in pUC57 Kan_gw_OK or pUC57 Kan_gw_OK2 vector backbone at 4 \u03bcg production scale.",
+      "claim_type": "EXPLICIT",
+      "source": "Homology donor intermediate vectors were ordered for production from Genewiz ('ValueGene' option) in pUC57 Kan_gw_OK (for int200 strategy) or pUC57 Kan_gw_OK2 (for gRNA_int200 strategy) vector backbone at 4 \u03bcg production scale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "18924915-cadf-4883-aacb-a439ffab3767",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C99",
+      "claim": "The lyophilized vectors were resuspended in 53 \u03bcl of ddH2O.",
+      "claim_type": "EXPLICIT",
+      "source": "The lyophilized vectors were resuspended in 53 \u03bcl of ddH2O.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "a885e599-4494-4589-bb34-d99eefef18c6",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "claim_id": "C100",
+      "claim": "1 \u03bcl of resuspended vector was used for Golden Gate assembly with 290 ng of pM37 vector for T2GAL4 or 265 ng of pM37_KozakGAL4 vector for KozakGAL4.",
+      "claim_type": "EXPLICIT",
+      "source": "1 \u03bcl was used for Golden Gate assembly with 290 ng of pM37 vector of reading frame phase corresponding to the targeted intron (for T2GAL4, Lee et al., 2018) or 265 ng of pM37_KozakGAL4 vector (for KozakGAL4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "965bdcfe-5d3c-4157-bb07-6a14ca21683c",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Approximately 58% of Drosophila genes (8,144 out of 13,931) lack suitable coding introns (\u2265100 nt) for artificial exon integration strategies like T2AGAL4. These genes without suitable introns are typically smaller (1,173 nt vs 2,051 nt coding sequence) and have fewer previously isolated mutant alleles (2.1 vs 10.4) compared to genes with suitable introns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5, C18, C48-C49 provide consistent genomic analysis data from Supplementary file 1 showing the distribution and characteristics of genes with and without suitable introns. The 100 nt threshold is based on the authors' experimental experience (C18), and the genome-wide analysis provides clear quantitative support for the limitation of artificial exon strategies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "c7f482d2-cf28-4d8f-b990-839fd33727d9",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The KozakGAL4 knock-out/knock-in strategy was developed to target genes lacking suitable introns by replacing the coding sequence with a Kozak-GAL4 cassette using two sgRNAs targeting the 5' and 3' UTRs. Of 109 genes targeted, 82 were successfully replaced (75% success rate), and 80% (46/57 tested) showed specific GAL4 expression in third instar larval brains, similar to T2AGAL4 performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C10, C50-C53 provide clear experimental data on the development and success rates of the KozakGAL4 strategy. The methodology is well-described (C51, C59-C64), and the expression validation (C10, C52) demonstrates functional GAL4 expression comparable to the established T2AGAL4 approach. This addresses the major limitation identified in Result 1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "31389559-0e88-4199-b0e0-27a818c8074b",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "KozakGAL4 alleles express GAL4 in patterns consistent with endogenous gene expression, as validated by rescue experiments (6/11 genes rescued), scRNAseq comparisons showing overlapping expression patterns, and smiFISH showing GAL4 mRNA overlap with target gene mRNA in 4/7 reliably detected cases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While multiple validation approaches support that KozakGAL4 drives expression in appropriate patterns (C12-C13, C65-C68), the rescue experiments show mixed results (C14), and smiFISH analysis had low sample size with 3/7 cases inconclusive (C69). The authors acknowledge the small sample size and do not draw strong conclusions. More comprehensive validation would strengthen this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "1d2cde11-b803-4920-81bb-4ce7ef872b82",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The int200 strategy, which incorporates sgRNA1 in the vector backbone and uses 200 bp homology arms, achieved 65% transgenesis success for T2AGAL4 (252/397 genes) and 61% for KozakGAL4 (22/36 genes), with 88-91% PCR verification on both flanks. This represents a ~30% gain in overall efficiency compared to previous methods (from 50% to 65%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C27, C77 provide comprehensive experimental data on the int200 strategy with large sample sizes (397 and 36 genes). The success rates are well-documented with PCR verification, and the comparison to previous methods (C27) is appropriately cited. The efficiency gain calculation is supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "23ff2a19-4c80-4d31-9278-e20f379b2d9f",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The gRNA_int200 strategy, which incorporates all sgRNAs into the donor vector, achieved 75% transgenesis success for T2AGAL4 (95/127 genes) and 82% for KozakGAL4 (59/72 genes), representing a 20% improvement over int200 (from 65% to 78%). This design successfully rescued 3/4 genes that failed with int200 for both strategies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C34, C78-C82 provide strong experimental evidence for the improved gRNA_int200 strategy with substantial sample sizes. The rescue of previously failed genes (C30, C33) provides direct evidence of improved efficiency. The mechanistic advantages (C80-C81) are logical and supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "221daa51-b78c-4142-be03-574508a0a4e0",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The 2XgRNA_int200 strategy enables GFP tagging at any position in the coding sequence by replacing the entire coding region. Wdr37 was successfully tagged at N-terminal, internal, and C-terminal positions, with Western blot confirming expected protein sizes, though internal tagging resulted in lower protein abundance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C40 provide direct experimental evidence for successful GFP tagging at multiple positions with Western blot validation. The observation that internal tagging affects protein stability (C39-C40) is supported by the data and represents an important caveat. Claims C83-C85 provide appropriate context from prior work and logical conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "0eb075a4-97f4-4610-ac82-91e3c8790d88",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The combined strategies (KozakGAL4 for genes without suitable introns and improved int200/gRNA_int200 methods) enable targeting of nearly every gene in the Drosophila genome with ~80% transgenesis efficiency, while streamlining donor DNA generation and improving genome editing precision.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C58 represent appropriate summary conclusions supported by the experimental data from Results 2, 4, and 5. The ~80% efficiency claim (C54) is directly supported by the gRNA_int200 data (C34). The claim of near-complete genome coverage (C55) is logical given that KozakGAL4 addresses the 58% of genes lacking suitable introns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "ecec15bb-0da3-4c30-a1bf-8cce9ab5acc6",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Background information on the CRIMIC/T2AGAL4 system and relevant Drosophila genomic features, including Kozak sequence definition, UTR lengths, T2A mechanism, and applications of CRIMIC alleles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7, C15-C17, C19, C41-C47, C71-C73 provide appropriate background context supported by citations to prior work. These establish the foundation for the current study but do not represent new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "135b4144-7168-4cf3-8166-9c0c22ed12c9",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Detailed experimental methodology for fly injections, PCR validation, imaging, smiFISH, scRNAseq analysis, and construct generation, including specific reagent concentrations, sample sizes, and data availability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C100 provide comprehensive methodological details that are appropriately specific and enable reproducibility. These are standard methods descriptions rather than results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    },
+    {
+      "id": "2122d8f5-578d-4edd-9a54-393ec502f50c",
+      "content_id": "9c94062b-13dd-4e18-9271-d4a3d1af9eb0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The methodology should be easily implementable in other model organisms to facilitate gene trap and protein trap allele generation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C86 is speculative about applicability to other organisms. While the logic is reasonable given the general nature of CRISPR-based approaches, no experimental evidence is provided for other model systems. This represents a hypothesis for future work rather than a demonstrated result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:42:31.937377Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "109b7379-eb89-4850-9492-92655ee0230d",
+      "result_id": "965bdcfe-5d3c-4157-bb07-6a14ca21683c"
+    },
+    {
+      "claim_id": "3f84c618-78e8-4cd0-8d5f-808f59ffd731",
+      "result_id": "965bdcfe-5d3c-4157-bb07-6a14ca21683c"
+    },
+    {
+      "claim_id": "defd5a4e-bdb2-4215-b48b-73b3bf7bbe0e",
+      "result_id": "965bdcfe-5d3c-4157-bb07-6a14ca21683c"
+    },
+    {
+      "claim_id": "c5a73cb8-7612-4103-824c-fdc314145b1c",
+      "result_id": "965bdcfe-5d3c-4157-bb07-6a14ca21683c"
+    },
+    {
+      "claim_id": "4cbc4b34-4798-4102-a7c1-a0c6462b6a1a",
+      "result_id": "965bdcfe-5d3c-4157-bb07-6a14ca21683c"
+    },
+    {
+      "claim_id": "2380421a-3f3a-4897-bb2c-0cd3a6847682",
+      "result_id": "965bdcfe-5d3c-4157-bb07-6a14ca21683c"
+    },
+    {
+      "claim_id": "4c6e8d0c-ebdb-47ef-a4a5-b79bbf24bf5b",
+      "result_id": "965bdcfe-5d3c-4157-bb07-6a14ca21683c"
+    },
+    {
+      "claim_id": "97c87f85-4692-496c-bf6d-ba3c8fc75d4e",
+      "result_id": "965bdcfe-5d3c-4157-bb07-6a14ca21683c"
+    },
+    {
+      "claim_id": "37883826-5930-43a2-9097-2db0ae81247b",
+      "result_id": "c7f482d2-cf28-4d8f-b990-839fd33727d9"
+    },
+    {
+      "claim_id": "cd91eef1-2422-49a6-bb40-51d6fba165f9",
+      "result_id": "c7f482d2-cf28-4d8f-b990-839fd33727d9"
+    },
+    {
+      "claim_id": "87f2fa67-e850-4525-a7b6-004c4d38656a",
+      "result_id": "c7f482d2-cf28-4d8f-b990-839fd33727d9"
+    },
+    {
+      "claim_id": "abd4c165-5ceb-42a1-aad2-e096219f6e26",
+      "result_id": "c7f482d2-cf28-4d8f-b990-839fd33727d9"
+    },
+    {
+      "claim_id": "469b6704-e260-45e8-ad2c-68f4395396f8",
+      "result_id": "c7f482d2-cf28-4d8f-b990-839fd33727d9"
+    },
+    {
+      "claim_id": "c98fdd5e-30a7-4cac-996d-4a28ef441e25",
+      "result_id": "c7f482d2-cf28-4d8f-b990-839fd33727d9"
+    },
+    {
+      "claim_id": "f3cb461f-7d38-47e1-a5f9-2f5a91d46ae1",
+      "result_id": "c7f482d2-cf28-4d8f-b990-839fd33727d9"
+    },
+    {
+      "claim_id": "1027df9d-9b00-456d-93ef-e1b4a94fd998",
+      "result_id": "c7f482d2-cf28-4d8f-b990-839fd33727d9"
+    },
+    {
+      "claim_id": "b4960413-7df4-42ad-bae6-3ec43d2ac63c",
+      "result_id": "c7f482d2-cf28-4d8f-b990-839fd33727d9"
+    },
+    {
+      "claim_id": "b56eb6cc-a179-4037-a023-661ff8b77288",
+      "result_id": "c7f482d2-cf28-4d8f-b990-839fd33727d9"
+    },
+    {
+      "claim_id": "9509f88d-7828-40eb-add0-69f4765c8f71",
+      "result_id": "c7f482d2-cf28-4d8f-b990-839fd33727d9"
+    },
+    {
+      "claim_id": "6150d3c7-6f45-4fa1-ad5b-665f749e1f4d",
+      "result_id": "c7f482d2-cf28-4d8f-b990-839fd33727d9"
+    },
+    {
+      "claim_id": "dc8c3d33-817b-42e5-8446-2e28a4513631",
+      "result_id": "c7f482d2-cf28-4d8f-b990-839fd33727d9"
+    },
+    {
+      "claim_id": "e0f8a7ea-fcc2-4dc3-84d0-bbb6187eaaa8",
+      "result_id": "c7f482d2-cf28-4d8f-b990-839fd33727d9"
+    },
+    {
+      "claim_id": "1b3b7101-95ee-41cf-8a9a-d0e0f36cdff6",
+      "result_id": "c7f482d2-cf28-4d8f-b990-839fd33727d9"
+    },
+    {
+      "claim_id": "97fb460f-19f8-4ff7-a321-6e08364e515c",
+      "result_id": "c7f482d2-cf28-4d8f-b990-839fd33727d9"
+    },
+    {
+      "claim_id": "00d0909f-0b3f-4fc9-8818-4dd9d07a8cce",
+      "result_id": "31389559-0e88-4199-b0e0-27a818c8074b"
+    },
+    {
+      "claim_id": "75979944-0bc9-48ee-8c36-f947651880c8",
+      "result_id": "31389559-0e88-4199-b0e0-27a818c8074b"
+    },
+    {
+      "claim_id": "19de606a-821c-492d-99fd-62cd60f630cf",
+      "result_id": "31389559-0e88-4199-b0e0-27a818c8074b"
+    },
+    {
+      "claim_id": "112731d4-df79-4497-a57f-a45200b038ae",
+      "result_id": "31389559-0e88-4199-b0e0-27a818c8074b"
+    },
+    {
+      "claim_id": "0fed0987-06c6-45e6-b16f-35a04cc8796f",
+      "result_id": "31389559-0e88-4199-b0e0-27a818c8074b"
+    },
+    {
+      "claim_id": "374b7a3d-1158-4a1f-9f24-92f0ac5c3fec",
+      "result_id": "31389559-0e88-4199-b0e0-27a818c8074b"
+    },
+    {
+      "claim_id": "349426aa-1ccb-483c-a314-e7909ff92f0b",
+      "result_id": "31389559-0e88-4199-b0e0-27a818c8074b"
+    },
+    {
+      "claim_id": "b6fc22b1-968b-4e2b-85b0-0cb8b2703aed",
+      "result_id": "31389559-0e88-4199-b0e0-27a818c8074b"
+    },
+    {
+      "claim_id": "6585282a-d2cb-48bd-a6aa-7a4715a81fd8",
+      "result_id": "31389559-0e88-4199-b0e0-27a818c8074b"
+    },
+    {
+      "claim_id": "d69ded01-8469-452b-a214-498a70859e20",
+      "result_id": "1d2cde11-b803-4920-81bb-4ce7ef872b82"
+    },
+    {
+      "claim_id": "7729581f-752e-4ad0-bf32-cebbc2d1d741",
+      "result_id": "1d2cde11-b803-4920-81bb-4ce7ef872b82"
+    },
+    {
+      "claim_id": "5e206f91-0ab1-409f-a985-5ae5c249a22a",
+      "result_id": "1d2cde11-b803-4920-81bb-4ce7ef872b82"
+    },
+    {
+      "claim_id": "32d879ac-69cf-41f1-8fc0-d695aea9f2c6",
+      "result_id": "1d2cde11-b803-4920-81bb-4ce7ef872b82"
+    },
+    {
+      "claim_id": "d1ab51a3-c23a-4dba-a755-1833787ccacc",
+      "result_id": "1d2cde11-b803-4920-81bb-4ce7ef872b82"
+    },
+    {
+      "claim_id": "9b668134-d9e6-4dee-b7be-1afde63938b1",
+      "result_id": "1d2cde11-b803-4920-81bb-4ce7ef872b82"
+    },
+    {
+      "claim_id": "941f7063-d375-4fe8-9902-d3ca5834914d",
+      "result_id": "1d2cde11-b803-4920-81bb-4ce7ef872b82"
+    },
+    {
+      "claim_id": "11c2dd6d-db4f-4f4b-bd11-8c3d0bb45713",
+      "result_id": "1d2cde11-b803-4920-81bb-4ce7ef872b82"
+    },
+    {
+      "claim_id": "e03f8cff-da01-4611-b6e2-dc6df7a43cb6",
+      "result_id": "1d2cde11-b803-4920-81bb-4ce7ef872b82"
+    },
+    {
+      "claim_id": "5e518bd7-6aa4-4344-a413-6799ae58c7aa",
+      "result_id": "23ff2a19-4c80-4d31-9278-e20f379b2d9f"
+    },
+    {
+      "claim_id": "cd8f57e4-631c-46bc-b765-c22201d27c5d",
+      "result_id": "23ff2a19-4c80-4d31-9278-e20f379b2d9f"
+    },
+    {
+      "claim_id": "75e48758-3731-4f62-8166-019a29b86908",
+      "result_id": "23ff2a19-4c80-4d31-9278-e20f379b2d9f"
+    },
+    {
+      "claim_id": "e97bc72f-466c-4841-82be-58b3324d9ad2",
+      "result_id": "23ff2a19-4c80-4d31-9278-e20f379b2d9f"
+    },
+    {
+      "claim_id": "0bcbe922-5d50-4512-bf48-1f93a8223886",
+      "result_id": "23ff2a19-4c80-4d31-9278-e20f379b2d9f"
+    },
+    {
+      "claim_id": "3dee533a-862f-44af-a85b-0e62db83ef34",
+      "result_id": "23ff2a19-4c80-4d31-9278-e20f379b2d9f"
+    },
+    {
+      "claim_id": "f90060a2-eaf1-40b3-8284-3601d9161e21",
+      "result_id": "23ff2a19-4c80-4d31-9278-e20f379b2d9f"
+    },
+    {
+      "claim_id": "1b5c7d9b-6e97-4c36-b972-b187c8c2413b",
+      "result_id": "23ff2a19-4c80-4d31-9278-e20f379b2d9f"
+    },
+    {
+      "claim_id": "740a8dff-3504-482b-98d2-cb443b7a0886",
+      "result_id": "23ff2a19-4c80-4d31-9278-e20f379b2d9f"
+    },
+    {
+      "claim_id": "7438de9e-e27e-4bef-a8d7-e9df199e39d2",
+      "result_id": "23ff2a19-4c80-4d31-9278-e20f379b2d9f"
+    },
+    {
+      "claim_id": "e9ecfc6b-39cb-4ffa-8295-12fabf9e21f6",
+      "result_id": "23ff2a19-4c80-4d31-9278-e20f379b2d9f"
+    },
+    {
+      "claim_id": "99bf6661-28cf-4633-81df-f32d88508ce0",
+      "result_id": "23ff2a19-4c80-4d31-9278-e20f379b2d9f"
+    },
+    {
+      "claim_id": "f606ee69-63a3-4c03-b052-dbc832b6c9c8",
+      "result_id": "221daa51-b78c-4142-be03-574508a0a4e0"
+    },
+    {
+      "claim_id": "60c93a11-a117-47ea-8c7f-8440080d3507",
+      "result_id": "221daa51-b78c-4142-be03-574508a0a4e0"
+    },
+    {
+      "claim_id": "178fe689-3468-40e4-b799-7def29d20389",
+      "result_id": "221daa51-b78c-4142-be03-574508a0a4e0"
+    },
+    {
+      "claim_id": "c9852cca-b520-47db-a2f9-8a6ad1a6ac12",
+      "result_id": "221daa51-b78c-4142-be03-574508a0a4e0"
+    },
+    {
+      "claim_id": "6de67917-a7b9-4bae-b6fe-dedcb7858429",
+      "result_id": "221daa51-b78c-4142-be03-574508a0a4e0"
+    },
+    {
+      "claim_id": "d5bf68f6-8365-4a89-bb3e-6cf0bfc5668a",
+      "result_id": "221daa51-b78c-4142-be03-574508a0a4e0"
+    },
+    {
+      "claim_id": "c1c99d23-f97d-4218-a68b-6b825b1b8612",
+      "result_id": "221daa51-b78c-4142-be03-574508a0a4e0"
+    },
+    {
+      "claim_id": "2d91a17f-a7b6-4cc0-a691-e82bddaff169",
+      "result_id": "221daa51-b78c-4142-be03-574508a0a4e0"
+    },
+    {
+      "claim_id": "98db74db-2a05-42e0-8054-b27de5ea2eeb",
+      "result_id": "221daa51-b78c-4142-be03-574508a0a4e0"
+    },
+    {
+      "claim_id": "451074a6-02c6-41fc-8e45-a8cd0f6392fa",
+      "result_id": "0eb075a4-97f4-4610-ac82-91e3c8790d88"
+    },
+    {
+      "claim_id": "24cc4253-810d-4c72-af02-94a10d0f0e77",
+      "result_id": "0eb075a4-97f4-4610-ac82-91e3c8790d88"
+    },
+    {
+      "claim_id": "536acf91-7a48-4160-a68f-9a0d4428236f",
+      "result_id": "0eb075a4-97f4-4610-ac82-91e3c8790d88"
+    },
+    {
+      "claim_id": "ea5409e3-9099-4f48-8652-86529d2b26a8",
+      "result_id": "0eb075a4-97f4-4610-ac82-91e3c8790d88"
+    },
+    {
+      "claim_id": "5c23adc0-1119-49b8-88a3-0cd708dc3620",
+      "result_id": "0eb075a4-97f4-4610-ac82-91e3c8790d88"
+    },
+    {
+      "claim_id": "45c41370-7a5a-4402-a96d-d8b107f1acd9",
+      "result_id": "ecec15bb-0da3-4c30-a1bf-8cce9ab5acc6"
+    },
+    {
+      "claim_id": "e33156a5-375b-4c13-b966-0fcabd3b440b",
+      "result_id": "ecec15bb-0da3-4c30-a1bf-8cce9ab5acc6"
+    },
+    {
+      "claim_id": "dc7970a0-9f98-498f-958c-823b0507430a",
+      "result_id": "ecec15bb-0da3-4c30-a1bf-8cce9ab5acc6"
+    },
+    {
+      "claim_id": "db7ff1cf-112e-4183-abdd-450afc2dc3f0",
+      "result_id": "ecec15bb-0da3-4c30-a1bf-8cce9ab5acc6"
+    },
+    {
+      "claim_id": "5ddb1b2a-1383-4d38-816b-1f58c763e4f6",
+      "result_id": "ecec15bb-0da3-4c30-a1bf-8cce9ab5acc6"
+    },
+    {
+      "claim_id": "f74fc983-a589-4e20-9ad4-1ef6884ae0f6",
+      "result_id": "ecec15bb-0da3-4c30-a1bf-8cce9ab5acc6"
+    },
+    {
+      "claim_id": "ff5036fd-7f02-407e-903a-ccb975866609",
+      "result_id": "ecec15bb-0da3-4c30-a1bf-8cce9ab5acc6"
+    },
+    {
+      "claim_id": "a447222d-6af7-4263-993a-c5cab4f8cb8a",
+      "result_id": "ecec15bb-0da3-4c30-a1bf-8cce9ab5acc6"
+    },
+    {
+      "claim_id": "27fd32c4-36a6-42d0-a269-65d03b713483",
+      "result_id": "ecec15bb-0da3-4c30-a1bf-8cce9ab5acc6"
+    },
+    {
+      "claim_id": "29c41be6-72a7-40ae-8003-7d1cccc2afcd",
+      "result_id": "ecec15bb-0da3-4c30-a1bf-8cce9ab5acc6"
+    },
+    {
+      "claim_id": "e9114bd5-0c5e-4c57-ac0e-f2a75f04ad1b",
+      "result_id": "ecec15bb-0da3-4c30-a1bf-8cce9ab5acc6"
+    },
+    {
+      "claim_id": "3fad45a2-e299-4aba-893b-13089d0b0ad0",
+      "result_id": "ecec15bb-0da3-4c30-a1bf-8cce9ab5acc6"
+    },
+    {
+      "claim_id": "a155c99b-0c71-4ae7-abf9-864a36c93c39",
+      "result_id": "ecec15bb-0da3-4c30-a1bf-8cce9ab5acc6"
+    },
+    {
+      "claim_id": "1f42327e-d7e4-4f8a-be3f-bceb1c9a016d",
+      "result_id": "ecec15bb-0da3-4c30-a1bf-8cce9ab5acc6"
+    },
+    {
+      "claim_id": "d7899aaa-b627-48cb-bc46-f25377124316",
+      "result_id": "ecec15bb-0da3-4c30-a1bf-8cce9ab5acc6"
+    },
+    {
+      "claim_id": "9c3a6695-d5fa-4b9a-a2b2-b94500181f82",
+      "result_id": "ecec15bb-0da3-4c30-a1bf-8cce9ab5acc6"
+    },
+    {
+      "claim_id": "1464c852-f64d-4e13-af78-c2dd292972c1",
+      "result_id": "135b4144-7168-4cf3-8166-9c0c22ed12c9"
+    },
+    {
+      "claim_id": "14ba49a7-d36b-4da1-95a8-cfe293c3fbac",
+      "result_id": "135b4144-7168-4cf3-8166-9c0c22ed12c9"
+    },
+    {
+      "claim_id": "cef753cd-509c-4048-b4a9-a398190e2ded",
+      "result_id": "135b4144-7168-4cf3-8166-9c0c22ed12c9"
+    },
+    {
+      "claim_id": "c602cb76-cb08-46ce-960b-3d0f9773c08e",
+      "result_id": "135b4144-7168-4cf3-8166-9c0c22ed12c9"
+    },
+    {
+      "claim_id": "59f86d86-91d0-4573-a5c6-2812327a4c4e",
+      "result_id": "135b4144-7168-4cf3-8166-9c0c22ed12c9"
+    },
+    {
+      "claim_id": "3dff26fb-8360-46d3-992f-a5d93979412e",
+      "result_id": "135b4144-7168-4cf3-8166-9c0c22ed12c9"
+    },
+    {
+      "claim_id": "0906272c-53b1-431c-bc47-1f4ddfbe2977",
+      "result_id": "135b4144-7168-4cf3-8166-9c0c22ed12c9"
+    },
+    {
+      "claim_id": "8bc0e1f0-c1db-4385-be76-d24d00204c2a",
+      "result_id": "135b4144-7168-4cf3-8166-9c0c22ed12c9"
+    },
+    {
+      "claim_id": "e86bb112-6124-4724-9ddf-7f96557269ee",
+      "result_id": "135b4144-7168-4cf3-8166-9c0c22ed12c9"
+    },
+    {
+      "claim_id": "033938aa-517d-471a-9e90-250a8e701a25",
+      "result_id": "135b4144-7168-4cf3-8166-9c0c22ed12c9"
+    },
+    {
+      "claim_id": "fc83e288-37c1-4879-83e9-b644dc35e3e7",
+      "result_id": "135b4144-7168-4cf3-8166-9c0c22ed12c9"
+    },
+    {
+      "claim_id": "50bda603-40a7-46ac-aa5b-6f939dfe2825",
+      "result_id": "135b4144-7168-4cf3-8166-9c0c22ed12c9"
+    },
+    {
+      "claim_id": "18924915-cadf-4883-aacb-a439ffab3767",
+      "result_id": "135b4144-7168-4cf3-8166-9c0c22ed12c9"
+    },
+    {
+      "claim_id": "a885e599-4494-4589-bb34-d99eefef18c6",
+      "result_id": "135b4144-7168-4cf3-8166-9c0c22ed12c9"
+    },
+    {
+      "claim_id": "e05e4c63-228c-45fc-9629-8cf60af6f205",
+      "result_id": "2122d8f5-578d-4edd-9a54-393ec502f50c"
+    }
+  ],
+  "comparisons": []
+}

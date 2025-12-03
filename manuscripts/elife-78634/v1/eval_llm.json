@@ -1,0 +1,321 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C63",
+      "C64"
+    ],
+    "result": "Standard linear regression with logit transformation is highly sensitive to extreme values in dose-response data. A small change in a single extreme data point (from 0.005 to 1e-6) causes substantial estimation errors, with the estimated IC50 corresponding to 70% cell fraction affected instead of 50%, and the response at the true IC50 being only 22% (Figure 1). Beta regression is much more robust to such extreme values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C10, C11, and C63 provide specific quantitative evidence from Figure 1 demonstrating the sensitivity of linear regression to extreme values and the robustness of beta regression. The demonstration is clear and well-documented with visual evidence. The magnitude of error (20% inflation) is substantial and clearly shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C40",
+      "C65",
+      "C66"
+    ],
+    "result": "Deleting extreme values from dose-response data does not eliminate estimation bias but instead impairs estimation efficiency with wider confidence intervals and worse coverage probabilities. This strategy may further harm estimation accuracy, particularly for extreme responses like IC90.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by simulation results in Figures 2 and 4, showing that deletion of extreme values fails to improve performance of standard regression and introduces larger uncertainty. The evidence demonstrates both the futility of this common approach and its negative consequences on statistical inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C21",
+      "C33",
+      "C34",
+      "C35",
+      "C38",
+      "C41",
+      "C70",
+      "C71"
+    ],
+    "result": "The proposed robust beta regression approach consistently provides robust estimation for the median-effect equation across various scenarios. When extreme observations are present, it achieves much lower bias and RMSE for point estimates and better coverage probability than linear regression. Even without extreme values, it provides narrower confidence intervals, indicating higher statistical efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are strongly supported by comprehensive simulation studies presented in Figure 4 and Appendix tables. The simulations cover multiple scenarios (different dose sets, with/without extreme values, different error structures) and consistently demonstrate superiority of the robust beta regression approach in both point and interval estimation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C67"
+    ],
+    "result": "Heavy-tailed linear regression (t-distribution with 3 degrees of freedom) demonstrates improved point estimation compared to standard linear regression but has severely underestimated confidence intervals with coverage probabilities below 50% in most cases, making it unreliable for statistical inference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36 and C37 are supported by simulation results in Appendix 1\u2014table 1 showing poor coverage probabilities despite improved point estimates. This demonstrates that improved point estimation alone is insufficient without proper interval estimation, which is critical for valid statistical inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "Similar results demonstrating the superiority of robust beta regression are obtained with data simulated using beta error terms that induce heteroscedasticity at different dose levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 is supported by additional simulation results in Appendix 1\u2014figure 1 and Appendix 1\u2014table 2, demonstrating that the findings are robust to different error structures and not limited to normal error assumptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C25",
+      "C109"
+    ],
+    "result": "The proposed robust beta regression approach provides narrower confidence intervals compared to linear regression, suggesting higher statistical power even without acquiring additional experimental data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by simulation results in Figure 4 and Appendix tables showing consistently narrower confidence intervals across scenarios. However, the inference about 'higher power' is somewhat indirect\u2014narrower CIs suggest higher precision, which typically translates to higher power, but actual power calculations for hypothesis tests are not presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The constant error variance assumption commonly used in standard linear regression is questionable for dose-response estimation, as many dose-response data show either constant variance before logit transformation or positive correlation with drug dose, making linear regression inappropriate when heteroscedasticity is present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 are supported by citations to statistical literature and empirical observations. Claim C47 provides direct evidence of heteroscedasticity in the B-cell lymphoma example. The theoretical argument is sound and supported by both literature and data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C74",
+      "C75"
+    ],
+    "result": "REAP is a freely accessible, user-friendly web-based application developed using R Shiny that implements robust beta regression with MDPDE and data-driven tuning parameter optimization. It allows users to specify custom target effect levels and perform hypothesis testing for comparing dose-response curves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims describe the REAP tool's features and accessibility, supported by Figure 3 showing the interface and the provided URL. The tool's functionality is demonstrated in the examples. These are straightforward descriptive claims about the software implementation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C104",
+      "C105"
+    ],
+    "result": "The proposed method uses robust beta regression with minimum density power divergence estimators (MDPDE) and a data-driven approach to optimize the tuning parameter. Beta regression accounts for non-normality and heteroscedasticity, and has been shown to provide the best estimation among alternatives in the presence of these issues, though standard beta regression can still be sensitive to outliers due to maximum likelihood estimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are well-supported by citations to the relevant statistical literature (Ferrari and Cribari-Neto 2004, Ghosh 2019, Ribeiro and Ferrari 2020, Kieschnick and McCullough 2016). The methodological framework is clearly described and builds on established statistical methods with appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C72"
+    ],
+    "result": "In the B-cell lymphoma example using auranofin treatment data across six MCL cell lines, REAP successfully modeled dose-dependent heteroscedasticity (decreasing variance with increasing concentration) and detected significant differences in dose-response between cell lines (p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by Figure 5 showing the fitted curves with dose-dependent precision and the statistical test results. The example demonstrates REAP's ability to handle heteroscedasticity, which is a key advantage over standard methods. The data source is properly cited (Wang et al., 2019).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "In the SARS-CoV-2 antiviral example, REAP provided reasonable dose-response curve estimation where linear regression yielded inconclusive results (e.g., for hydroxychloroquine). Statistical testing revealed significant differences in slopes (p=0.0003) and EC50 values (p=0.003) among antivirals, with Calpain Inhibitor IV showing higher potency than hydroxychloroquine (p=0.0038).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by Figure 6 and the statistical test results. The comparison with the original publication (Bobrowski et al., 2021) showing inconclusive linear regression results for hydroxychloroquine provides strong evidence for REAP's practical utility. The statistical comparisons are properly conducted with appropriate p-values reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Beta regression cannot handle values equal to or outside (0,1), so a sequential data truncation algorithm was developed to overcome limitations of conventional transformation methods, particularly for small sample sizes. This algorithm has been empirically validated using simulated data but could be improved in future work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims acknowledge a limitation of beta regression and describe a solution. Claim C89 states empirical validation was performed, though details are not provided in the main text. The authors appropriately acknowledge this as an area for future improvement, showing appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C92"
+    ],
+    "result": "REAP has substantial advantages over existing methods by reducing the impact of random errors and extreme values. This is the first application of beta regression to dose-response estimation, providing robust and efficient curve estimation with practical utility for drug investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68 and C92 are supported by the simulation studies and examples throughout the manuscript. Claim C69 about novelty is based on the authors' literature knowledge and cannot be independently verified from the manuscript alone, but is plausible given the comprehensive citations provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Statistical comparisons in the beta regression framework are conducted using likelihood ratio tests for Hill coefficients and dose-response curves, F-tests for median effect doses, and pairwise t-tests with Benjamini-Hochberg correction for multiple comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims describe standard statistical testing procedures appropriately adapted to the beta regression framework. These are methodological descriptions that are consistent with established statistical practice. The methods are clearly described and appropriately applied in the examples.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C22",
+      "C23"
+    ],
+    "result": "The median-effect equation is a widely used fundamental method based on the mass-action law for describing dose-response relationships and evaluating drug potency. Key measures include the Hill coefficient (sigmoidicity) and median effect dose (e.g., IC50).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims provide background context supported by appropriate citations (Chou 1976, 2006; Chou and Talalay 1984; etc.). These are well-established facts in pharmacology and are appropriately cited. The definitions of key parameters are standard in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Quantifying drug potency is central to life sciences with applications across pharmacology, toxicology, environmental science, and medicine. Dose-response curves provide toxicological risk assessment and can predict in vivo effects from in vitro assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims provide general context about the importance of dose-response estimation, supported by appropriate citations (Schindler 2017, National Research Council 2007, Blaauboer et al. 2012, Groothuis et al. 2015). These are well-established applications in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The proposed method is suitable for high-throughput settings and can be extended to model time-dependent cytotoxicity and drug interaction effects. Robust dose-response estimation is crucial for investigating drug combinations, which have demonstrated advantages in improving therapeutic efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76, C78, and C79 describe potential applications and extensions but are speculative\u2014no actual implementation or validation of these extensions is provided. Claims C80-C81 about the importance of combination therapies are general knowledge, but the specific utility of REAP for this application remains to be demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The modeling framework can be adapted to other dose-response functions (probit, Weibull). The median-effect equation assumes compounds can affect all cells; compounds with limited binding affinity yield over-conservative median dose estimates. For compounds with different maximal effects, the Emax model may be preferable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims appropriately discuss limitations and alternatives. Claim C82 about adaptability is reasonable given the general framework. Claims C83-C85 acknowledge assumptions and limitations of the median-effect equation with appropriate citation to an alternative model (Lee et al. 2010). This shows appropriate scientific nuance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "REAP differs from other dose-response methods by internally modeling heterogeneity with a dose-dependent precision component rather than requiring externally specified weights.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 is supported by the demonstration in Figure 5 where dose-dependent precision is modeled. This is a legitimate advantage over methods requiring pre-specified weights, which could be misspecified. The comparison is fair and the advantage is real.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "Good modeling strategies must effectively characterize observed dose-response patterns. Advances in drug development combined with deficiencies in modeling extreme values create opportunities for next-generation quantitative approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 is a general principle supported by citation (Lyles et al. 2008). Claim C91 provides context and motivation for the work. These are reasonable framing statements supported by the evidence presented throughout the manuscript.",
+    "result_type": "MINOR"
+  }
+]

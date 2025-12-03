@@ -1,0 +1,409 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7"
+    ],
+    "result": "Myxococcus xanthus is a soil bacterium that predates collectively using motility to invade prey colonies in a 'wolf-pack' mechanism. Prior to this work, prey lysis was thought to rely on secreted factors, antibiotics, enzymes, and direct contact with Myxococcus cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, and C7 establish the background knowledge about M. xanthus predation. These are well-established facts in the field, supported by citations (C7 cites Thiery and Kaimer, 2020), and provide the context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "A-motility is the main driver of prey invasion on surfaces. A+S- (\u0394pilA) cells are proficient at prey invasion, while A-S+ (\u0394aglQ) cells are very defective at prey colony invasion despite being able to contact prey colonies. A-motile cells penetrate prey colonies with single cells followed by larger groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12 are supported by microscopy data in Figure 1 showing differential invasion capabilities of motility mutants. The data clearly demonstrate that A-motility is essential for prey invasion while S-motility alone is insufficient, with quantitative observations of invasion patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "During prey colony invasion, Myxococcus cells form 'arrow-shaped' groups with assembled focal adhesions. A-motile cells pause and disassemble bFAs upon contacting E. coli, followed by rapid prey death detected by instantaneous dispersal of cytosolic fluorescent protein, indicating killing by plasmolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 are supported by microscopy data in Figure 2a-c showing arrow-shaped formations, motility pauses, and rapid prey lysis (n=20 cells). The instantaneous dispersal of fluorescent protein provides direct evidence for plasmolysis, consistent with prior work (Zhang et al., 2020b).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Upon contact, Myxococcus induces degradation of E. coli peptidoglycan at the predator-prey contact site, with PG hydrolysis propagating bi-directionally from the initial contact site. This PG degradation provokes cell lysis due to loss of turgor pressure and hyperosmotic shock, potentially driven by PG hydrolase(s) disseminating from the contact site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 are supported by TADA-labeled peptidoglycan microscopy data in Figure 2d-e showing local PG degradation and bi-directional propagation. Claim C21 is a reasonable hypothesis based on the observed propagation pattern, though the specific hydrolase remains unidentified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "The T6SS is not involved in contact-dependent killing on surfaces. A T6SS deletion strain (\u0394t6ss) has no observable defect in contact-dependent killing, and the Myxococcus T6SS assembles in a prey-independent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 are supported by predation assays (Figure 2\u2014figure supplements 1 and 3) and VipA-GFP microscopy (Figure 2\u2014figure supplements 4-5). The data clearly show that T6SS deletion does not affect predation and that T6SS assembly is not prey-dependent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "In liquid cultures, TFPs promote prey-induced aggregation of cells, likely mediating tight contacts between Myxococcus and E. coli cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 is supported by biofilm assays shown in Figure 2\u2014figure supplement 8, demonstrating that TFPs are required for prey-induced biofilm formation in liquid cultures, which differs from the surface predation mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Two genetic regions (MXAN_3102\u20133108 and MXAN_4648\u20134661) encoding a complementary set of Tad pilus proteins are critical for contact-dependent killing. All predicted core genes are essential for prey lysis except the pre-pilin peptidase KilA. Deletion of pseudo-pilins KilL and M does not affect killing, while deletion of major pilin KilK reduces but does not eliminate lytic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 are supported by CPRG assays in Figure 3b showing systematic deletion analysis of kil genes. The data demonstrate differential requirements for various components, with core genes being essential while pilins show partial redundancy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The Kil system proteins function in starvation conditions to form a Tad-like core structure for prey cell recognition, motility regulation upon contact, and prey killing. Prey recognition (motility pauses) is severely impaired in secretin, IM platform, and triple pilin mutants but not in other mutants. Prey cell plasmolysis is dramatically impacted in all core component mutants except the single pilin mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 are supported by microscopy analysis in Figure 3c-d showing differential effects of kil mutations on motility pauses and prey lysis. The data reveal distinct requirements for recognition versus killing, with statistical significance demonstrated for multiple mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "NG-KilF rapidly forms fluorescent-bright clusters at prey contact sites when Myxococcus cells establish contact with prey. Cluster formation is invariably followed by motility pause and cell lysis, occurs at contact sites rather than specific cellular locations, and correlates with motility arrest and dispersal with motility resumption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 are supported by microscopy data in Figure 4a and Video 5 showing dynamic NG-KilF localization. The data demonstrate prey-dependent cluster formation at contact sites with temporal correlation to motility pauses and prey lysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "KilG-NG clusters form at prey contact sites immediately followed by cell lysis, suggesting that a Tad-apparatus is assembled from the products of cluster 1 and cluster 2 genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 are supported by microscopy data in Figure 4b and Video 6. Although the KilG-NG fusion is only partially functional (Figure 4\u2014figure supplement 2), the observation of clusters at contact sites from both cluster 1 (KilF) and cluster 2 (KilG) proteins supports the assembly of a unified Tad apparatus.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "NG-KilD clusters form only in contact with prey, preceding cell lysis. PG degradation is detected at points where NG-KilD clusters form, and killing is observed within ~2 min after Kil system assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 are supported by microscopy data in Figure 4c-d and Figure 4\u2014figure supplement 3. The NG-KilD fusion is fully functional, and the data show temporal correlation between cluster formation, PG degradation, and rapid prey lysis (n=61 measurements).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The Tad-like Kil system is dispensable for immediate prey recognition but functions downstream to induce motility pause and provoke prey cell lysis. In WT cells, ~30% of contacts are productive for NG-KilD cluster formation. In kil mutants, clusters still form with minor reduction, but cluster-induced motility pauses are impaired and cluster formation is rarely followed by cell lysis (~4% vs >80% in WT).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 are supported by comprehensive microscopy analysis in Figure 4e-g showing NG-KilD behavior in multiple kil mutants. The data demonstrate that cluster formation does not require a functional Kil system, but motility regulation and killing do, with statistical significance shown for multiple mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Core kil mutants are unable to predate colonies on plates, which can be fully complemented by ectopic expression. The \u0394kilACF mutant can invade prey colonies but shows no prey killing. WT Myxococcus completely takes over E. coli populations after 72 hr, while E. coli remains fully viable with the \u0394kilACF mutant. Predatory-null phenotypes are observed in core Tad component deletions, with partial defect in single pilin mutant but complete deficiency in triple pilin mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 are supported by predation assays (Figure 5a), microscopy (Figure 5b, Video 9), and flow cytometry analysis (Figure 5c-d). The data demonstrate that the Kil system is essential for predation with proper genetic complementation controls and quantitative measurements of prey survival (n=6-9 per strain).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Invading Myxococcus cells grow actively during prey invasion with cell size increasing linearly until cytokinesis, followed by immediate resumption of growth. Cell size and age are linearly correlated, allowing estimation of ~5.5 hr generation time (n=16). In contrast, \u0394kilACF mutant cells decrease in size over time without division (n=20), demonstrating the central function of the Kil Tad apparatus in prey killing and consumption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 are supported by single-cell tracking microscopy in Figure 5e-f and Video 10. The data provide direct evidence that Kil-dependent killing provides nutrients for growth, with quantitative measurements of cell size over time in both WT and mutant backgrounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "M. xanthus is able to lyse diverse prey bacteria (C. crescentus, S. typhimurium, B. subtilis) except P. aeruginosa. When the Kil system is deleted, predation ability is severely diminished against all tested preys. Myxococcus assembles NG-KilD clusters in contact with Caulobacter, Salmonella, and Bacillus leading to plasmolysis, but is unable to form lethal clusters with Pseudomonas (n=150 contacts tested).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 are supported by predation assays (Figure 6a-f), CFU counting (Figure 6b-f), and microscopy (Figure 6g-i, Videos 11-14). The data demonstrate broad but not universal prey range for the Kil system, with both monoderm and diderm bacteria susceptible except P. aeruginosa.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Kil-like systems are related to Tad systems but restricted to delta-proteobacteria (Myxococcales, Bdellovibrionales, Bradymonadales). These bacteria are all predatory, and genetic evidence shows Bdellovibrio Kil homologs are important for prey invasion and attachment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 are supported by phylogenetic analysis in Figure 7 showing distribution of Kil-like systems. Claim C69 is supported by citations to Avidan et al., 2017 and Duncan et al., 2019, providing independent evidence for Kil function in other predatory bacteria.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "Contact-dependent killing is the major prey killing mechanism in Myxococcus, while secreted proteins, OMVs, and antibiotics are most likely involved in prey cell digestion rather than killing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 represent a major conclusion of the study, supported by the comprehensive data showing that Kil-dependent contact killing is essential for predation. The inference about other factors being involved in digestion rather than killing is reasonable given the data, though not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Type-VI secretion and OME control social compatibility in Myxococcus, preventing immune cells from mixing with non-immune cells. OME allows transfer of OM proteins and lipids between Myxococcus cells through TraA receptors and mediates social compatibility through SitA lipoprotein toxin delivery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 are supported by citations to Vassallo et al., 2020; Sah and Wall, 2020; and Vassallo et al., 2017. These represent established knowledge explaining why T6SS and OME were not tested for prey killing\u2014they function in intraspecies interactions rather than predation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Dynamic assembly of the Tad-like Kil system at prey contact sites is a novel observation, contrasting with Type-IV filamentous systems that typically assemble at fixed cellular sites. NG-KilD clusters do not require a functional Tad-like system to form, suggesting prey contact induces Tad assembly via an upstream signaling cascade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 are supported by the microscopy data showing dynamic Kil localization (Figure 4) and the observation that clusters form in kil mutants (Figure 4e). The novelty claim is supported by citations showing typical Type-IV systems assemble at fixed sites (Mercier et al., 2020; Ellison et al., 2017; Koch et al., 2021).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The sensory system for prey recognition could be encoded within clusters 1 and 2, which contain many conserved genes with unknown functions, including FHA domain proteins that may function in a signaling cascade. By analogy to Pseudomonas T6SS, the Kil system recognition mechanism could be triggered by general membrane perturbation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C82 are speculative hypotheses based on bioinformatics analysis (Supplementary file 1) and analogy to other systems (Basler et al., 2013; Ho et al., 2013). While the presence of FHA domain proteins is documented, their specific function in prey recognition remains to be experimentally demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Kil assembly is provoked by both monoderm and diderm bacteria, suggesting prey-specific determinants are unlikely. However, recognition is non-universal and does not occur with Pseudomonas or Myxococcus itself, indicating evasion mechanisms must exist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 are supported by the data showing Kil clusters form with diverse prey types (Figure 6) but not with Pseudomonas (Video 14) or self. Claim C85 is a reasonable inference from these observations, though the specific evasion mechanisms remain to be identified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Motility regulation by the Kil system could be indirect due to differential effects of kil gene deletions, while prey killing requires a functional Tad apparatus. Pilin proteins are required during prey invasion but partially dispensable in liquid cultures, possibly because TFPs enforce direct contacts in biofilms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 are supported by the differential phenotypes observed in Figures 3-5. Claim C89 is a reasonable hypothesis to explain the differential pilin requirements in liquid versus on surfaces, supported by the biofilm data (Figure 2\u2014figure supplement 8).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "How pilins organize to form polymers remains to be determined. The lack of major pilin KilK is compensated by pseudo-pilins KilL and M, which is surprising given that pseudopilins generally prime assembly of major pilin polymers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 acknowledges an open question. Claim C91 is supported by the data showing \u0394kilK retains partial activity while \u0394kilKLM is completely deficient (Figures 3, 5), demonstrating functional compensation. The surprise is justified by comparison to canonical Tad systems (Denise et al., 2019).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "It is unclear if the Kil system functions as a toxin-secretion device or Type II secretion system. Alternatively, the Kil complex might recruit a toxin delivery system at the prey contact site, as suggested by residual killing activity in kil mutants. A secreted cell wall hydrolase may become active at the prey contact site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C94 are speculative hypotheses about the killing mechanism. While the residual activity in kil mutants (Figures 3-4) supports the recruitment hypothesis (C93), and local PG degradation (Figure 2d-e) supports the hydrolase hypothesis (C94), direct evidence for these mechanisms is lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Bdellovibrio secretes sophisticated PG modifying enzymes (D,D-endopeptidases, L,D transpeptidases, lysozyme-like enzymes) to penetrate prey cells. In Myxococcus, deleting potential D,D-endopeptidases (\u0394dacB) did not affect predation. Several toxic effectors could be injected by the Kil system, explaining how Myxococcus kills both monoderm and diderm preys.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 is supported by citations to Lerner et al., 2012; Kuru et al., 2017; Harding et al., 2020. Claim C96 is supported by predation assays in Figure 7\u2014figure supplement 1. Claim C97 is a reasonable hypothesis based on analogy to T6SS (LaCourse et al., 2018) and the broad prey range observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "Myxobacteria are potential keystone taxa in the soil microbial food web, meaning Kil-dependent mechanisms could have major impact in shaping soil ecosystems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C98 is supported by citation to Petters et al., 2021. Claim C99 is a reasonable inference from the demonstrated importance of the Kil system in predation, though the actual ecological impact remains to be directly demonstrated in soil environments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The Kil system differs from canonical Tad systems: it involves a single ATPase with missing assembly proteins (TadG, RcpB, TadD), has unique signatures including many unknown function genes and over-represented FHA domain proteins, and has a uniquely short KilC secretin lacking the N0 domain, which could be linked to increased propensity for dynamic recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 are supported by bioinformatics analysis comparing Kil to canonical Tad systems (Denise et al., 2019; Tosi et al., 2014). Claim C103 is a reasonable hypothesis linking the structural features of KilC to its observed dynamic localization, though this remains to be experimentally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "Future studies of the Kil machinery could reveal how contact-dependent properties of Tad pili were adapted to prey cell interaction and intoxication, likely a key evolutionary process in predatory bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C104 is a reasonable statement of future directions based on the findings of the study. It appropriately identifies the evolutionary adaptation of Tad-like systems for predation as an important area for future investigation.",
+    "result_type": "MINOR"
+  }
+]

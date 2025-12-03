@@ -1,0 +1,2256 @@
+{
+  "submission": {
+    "id": "a26b125b-29fc-4bf9-8c69-32e518b75231",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T10:38:43.915803Z",
+    "updated_at": "2025-12-03T10:38:43.915803Z"
+  },
+  "content": [
+    {
+      "id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "submission_id": "a26b125b-29fc-4bf9-8c69-32e518b75231",
+      "content_type": "manuscript",
+      "content_text": "# A model of preferential pairing between epithelial and dendritic cells in thymic antigen transfer\n\n## Authors\n\n- Matou\u0161 Vobo\u0159il<sup>1</sup> ([ORCID: 0000-0002-3672-7629](https://orcid.org/0000-0002-3672-7629))\n- Ji\u0159\u00ed B\u0159ezina<sup>1</sup> ([ORCID: 0000-0001-6865-3874](https://orcid.org/0000-0001-6865-3874))\n- Tom\u00e1\u0161 Brabec<sup>1</sup>\n- Jan Dobe\u0161<sup>1</sup> ([ORCID: 0000-0003-1853-1603](https://orcid.org/0000-0003-1853-1603))\n- Ond\u0159ej Ballek<sup>1</sup>\n- Martina Dobe\u0161ov\u00e1<sup>1</sup>\n- Jasper Manning<sup>1</sup>\n- Richard S Blumberg<sup>3</sup>\n- Dominik Filipp<sup>1</sup> ([ORCID: 0000-0003-2506-9330](https://orcid.org/0000-0003-2506-9330)) \u2020\n\n### Affiliations\n\n1. Laboratory of Immunobiology, Institute of Molecular Genetics of the Czech Academy of Sciences Prague Czech Republic\n2. Department of Cell Biology, Charles University, Faculty of Science, Charles University Prague Czech Republic\n3. Division of Gastroenterology, Hepatology, and Endoscopy, Department of Medicine, Brigham and Women\u2019s Hospital, Harvard Medical School Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMedullary thymic epithelial cells (mTECs), which produce and present self-antigens, are essential for the establishment of central tolerance. Since mTEC numbers are limited, their function is complemented by thymic dendritic cells (DCs), which transfer mTEC-produced self-antigens via cooperative antigen transfer (CAT). While CAT is required for effective T cell selection, many aspects remain enigmatic. Given the recently described heterogeneity of mTECs and DCs, it is unclear whether the antigen acquisition from a particular TEC subset is mediated by preferential pairing with a specific subset of DCs. Using several relevant Cre-based mouse models that control for the expression of fluorescent proteins, we have found that, in regards to CAT, each subset of thymic DCs preferentially targets a distinct mTEC subset(s). Importantly, XCR1+-activated DC subset represented the most potent subset in CAT. Interestingly, thymic DCs can also acquire antigens from more than one mTEC, and of these, monocyte-derived dendritic cells (moDCs) were determined to be the most efficient. moDCs also represented the most potent DC subset in the acquisition of antigen from other DCs. These findings suggest a preferential pairing model for the distribution of mTEC-derived antigens among distinct populations of thymic DCs.\n\n## Introduction\n\nCentral tolerance, which operates during T cell development in the thymus, can result in the elimination of self-reactive T cells or deviation to a thymic regulatory T cell (tTreg) lineage (Klein et al., 2019). The underlying principle of this event compels immature T cells to test their T cell receptor (TCR) for potential self-reactivity through the scanning of self-antigens that are presented by antigen-presenting cells (APCs). Among all thymic APCs, thymic epithelial cells (TECs) are central to this selection process (Klein et al., 2014). Based on their localization within the thymus, TECs are generally divided into two major populations: cortical thymic epithelial cells (cTECs) and medullary thymic epithelial cells (mTECs) (Derbinski et al., 2001). Recently, results of single-cell RNA sequencing (scRNAseq) revealed an unexpected heterogeneity of mTECs with at least five distinct subsets defined by developmental stage, transcription profile, and function (referred to as mTEC-I, -II, -IIIa, IIIb, and Tuft cells) (Baran-Gale et al., 2020; Bornstein et al., 2018; Miller et al., 2018).\n\nDue to their unique ability to express and present more than 80% of the protein-coding genome, mTECs are well-adapted to serve as a principal self-antigen-producing cellular component of central tolerance (Brennecke et al., 2015; Meredith et al., 2015; Sansom et al., 2014). This is in part facilitated by the expression of the autoimmune regulator (Aire). Aire controls the gene expression of a large set of tissue-restricted antigens (TRAs) that are found only in the immune periphery (Derbinski et al., 2001). Interestingly, an effective display of a complete set of thymically expressed TRAs is achieved by their combinatorial mosaic expression by each mTEC with any particular TRA expressed by only 1\u20133% of mTECs (Derbinski et al., 2008) while a single mTEC is capable of expressing up to 300 different TRAs (Meredith et al., 2015; Sansom et al., 2014). However, mTEC subsets are not equal in terms of Aire expression and TRA presentation. During their progression through mTEC-I, -II, -IIIa, and -IIIb stages, the highest Aire and TRA expression is observed within the mTEC-II stage, historically referred to as mTEChigh. As mTEC-II cells enter pre-post Aire and post-Aire phases (phase -IIIa and -IIIb, respectively), they downregulate the expression of Aire, although their TRA protein levels remain high, making them available for transfer to other cells (Kadouri et al., 2020). It is noteworthy that the expression of TRA in mTEC-I (also referred to as mTEClow) is limited (Baran-Gale et al., 2020; Bornstein et al., 2018).\n\nThe relatively low number of mTECs in comparison to the sheer number of developing T cells, coupled to mosaic and stage-restricted expression of TRAs, places significant constraints on the process of T cell selection. To overcome this limitation, TRAs from apoptotic mTECs can be transferred into, and indirectly presented to, T cells by thymic dendritic cells (DCs) via the process of cooperative antigen transfer (CAT) (Gallegos and Bevan, 2004; Koble and Kyewski, 2009). It has been demonstrated that CAT is critical for the establishment of central tolerance to mTEC-derived self-antigens (Lancaster et al., 2019; Perry et al., 2014; Perry et al., 2018). Despite its importance, the elucidation of the basic principles of CAT has been hampered by the complexity of thymic DC populations.\n\nIn general, thymic DCs can be divided into two major categories: plasmacytoid dendritic cells (pDCs) and classical dendritic cells (cDCs), the latter of which can be subdivided into cDC1 and cDC2 subsets (Guilliams et al., 2014). Previous studies have shown that these DC subsets vary in their capacity to acquire mTEC-derived antigens (Kroger et al., 2017; Lancaster et al., 2019; Vobo\u0159il et al., 2020). The cDC1 subset has been shown to strongly acquire GFP antigen from mTEC in an Aire-GFP mouse model (Perry et al., 2018) while the cDC2 subset robustly acquired mOVA antigen in a RIP-mOVA mouse model (Lancaster et al., 2019). Since the expression of Aire-driven GFP and mOVA in the thymus was largely restricted to Aire+ mTECs (Gardner et al., 2008) and mTECLow/post-Aire mTECs, respectively (Mouri et al., 2017), it has been inferred that distinct subsets of thymic DCs acquire antigens from distinct subsets of mTECs. However, our recent scRNAseq analysis, along with data from the human thymus cell atlas study, exposed a much broader heterogeneity of DCs in the thymus of mice and humans (Park et al., 2020; Vobo\u0159il et al., 2020). Thus, a more comprehensive analysis is needed to determine the mode of CAT between defined subsets of TECs and DCs as well as other means of thymic antigen spreading.\n\nIn this study, we used several Cre reporter mouse models in which the expression of fluorescent TdTOMATO protein (TdTOM) is restricted to different subsets of TECs. We present evidence that suggests that distinct subsets of thymic DCs preferentially acquire TdTOM from a specific TEC subset. Using the ConfettiBrainbow2.1 system, we have also shown that CAT can occur as a repetitive event whereby a single thymic CD11c+ cell can acquire antigen from two or more individual TECs. Furthermore, based on our data, we postulate that antigen transfer can also occur between DC subsets themselves. Thus, this dataset suggests a deterministic model of preferential engagement of specific mTEC and DC subsets for directional thymic antigen distribution.\n\n## Results\n\n### Thymic epithelial cell models of cooperative antigen transfer\n\nIn recent years, the robustness of scRNAseq has yielded a vast amount of information regarding the thymic APCs inventory and has been instrumental in revealing a list of suitable markers (Baran-Gale et al., 2020; Bautista et al., 2021; Bornstein et al., 2018; Dhalla et al., 2020; Park et al., 2020; Vobo\u0159il et al., 2020; Wells et al., 2020). The combinatorial specificity of these markers has led us to design novel flow cytometry gating strategies that allow for the study of CAT.\n\nTo understand antigen transfer trajectories within the intricate network of all subsets of TECs and CD11c+ APCs identified thus far, we first established mouse models where cytoplasmic expression of TdTOM is preferentially confined to distinct TEC subsets. By crossing three previously characterized Cre-based mouse models with a Rosa26TdTOM mouse strain, we generated (i) Foxn1CreRosa26TdTOM (Foxn1Cre) mice that express TdTOM in all populations of CD45\u2013EpCAM+ TECs (Gordon et al., 2007; Vobo\u0159il et al., 2020), (ii) CsnbCreRosa26TdTOM (CsnbCre) with Casein \u03b2 (Csnb) loci operating as an Aire-independent TRA that confines TdTOM expression to the mTECHigh subset and their closest progenitors and progeny (Bornstein et al., 2018; Tykocinski et al., 2010), and (iii) Defa6iCreRosa26TdTOM (Defa6iCre). The latter model represents the \u2018classical\u2019 Aire-dependent TRA model, in which TdTOM is expressed in 1\u20133% of Aire+ mTECHigh cells as well as post-Aire mTEC progeny (Adolph et al., 2013; Dobe\u0161 et al., 2015; Figure 1a\u2013c). A quantitatively distinct representation of TdTOM+ cells in these three mouse models (Figure 1e) has been corroborated by microscopic examination of thymic sections (Figure 1d).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/71578/elife-71578-fig1-v1.jpg)\n\n**Figure 1.:** (a) Mouse models of CAT with confined expression of TdTOM to distinct TEC subsets. (b) Representative flow cytometry plots showing the frequency of TdTOM+ cells among MACS-enriched CD45\u2013EpCAM+ cells isolated from Foxn1CreRosa26TdTOM (Foxn1Cre), CsnbCreRosa26TdTOM (CsnbCre), and Defa6iCreRosa26TdTOM (Defa6iCre) mice. (c) Quantification of TdTOM+ cells from Figure 1b (mean \u00b1 SEM, n = 7\u201312 mice from three independent experiments). (d) Microscopy images of thymic sections from Foxn1Cre, CsnbCre, Defa6iCre, and Cre\u2013 control mice depicting the levels of TdTOM expression and its restriction to keratin 14+ areas demarcating thymic medulla. Yellow dashed lines denote the zones that are shown in higher magnification. Scale bars and color code are provided. (e) Quantification of the absolute numbers of CD45\u2013EpCAM+TdTOM+ cells isolated from Foxn1Cre, CsnbCre, and Defa6iCre thymi counted by flow cytometry. (f) Representative flow cytometry plots of different TEC subsets in Foxn1Cre, CsnbCre, and Defa6iCre mice. (g) Quantification of the ratios of the frequencies of TEC subsets within CD45\u2013EpCAM+TdTOM+ cells to the frequencies of TEC subsets within CD45\u2013EpCAM+ cells in Foxn1Cre, CsnbCre, and Defa6iCre mice (mean \u00b1 SEM, n = 7\u20138 mice from three independent experiments). The ratios were calculated using percentages in Figure 1\u2014figure supplement 1c. Statistical analysis in (g) was performed using one-way ANOVA with Bonferroni\u00b4s multiple comparison test, *p\u22640.05, **p\u22640.01, ***p\u22640.001, ****p<0.0001, ns, not significant.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71578/elife-71578-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Complete gating strategy for the distinction of TEC populations. The thymic cell fraction was MACS-enriched for CD45\u2013 cells and sequentially gated as singlets, live, and CD45\u2013EpCAM+ cells. The fraction of isolated TECs was then gated as cortical thymic epithelial cells (cTECs) (LY51+), Tuft medullary thymic epithelial cells (mTECs) (LY51\u2013L1CAM+), and mTECs (LY51\u2013L1CAM\u2013). mTECs consists of four major populations: mTECLow (MHCIILowLY6D\u2013), mTECHigh (MHCIIHighLY6D\u2013), pre-post Aire mTECs (MHCIIHighLY6D+), and post-Aire mTECs (MHCIIHighLy6dHigh). (b) The gating strategy used for calculation of the ratios in Figure 1g. CD45\u2013EpCAM+ cells were gated either as TdTOM+ (TdTOM+ TECs; red gate) or 100% of TECs was gated regardless of TdTOM expression (all TECs; blue gate) and further distinguished according to (a) (the CsnbCre model was used for representative gating panel). (c) Graphs depicting the comparison of the percentage of TEC subsets within all TECs (blue squares) and TdTOM+ TECs (red squares) (mean \u00b1 SEM, n = 7\u20138 mice from three independent experiments) used for the calculation of the ratios in Figure 1g. (d) Quantification of the frequencies of TdTOM+ cells among the indicated TEC subsets (mean \u00b1 SEM, n = 7\u20138 mice from three independent experiments).\n\nThe gating strategy implemented to assess the frequency of TdTOM-labeled CD45\u2013EpCAM+ TEC subsets in the Cre models introduced above is shown in Figure 1\u2014figure supplement 1a. Six subsets of TECs were distinguished: cTEC, mTECLow, mTECHigh, two subsets of LY6D+ terminally differentiated subsets: pre-post Aire and post-Aire mTECs, and L1CAM+ thymic Tuft cells. To show differences in the preferential expression of TdTOM among TEC subsets, we first determined the percentage representation of TEC subsets within the TdTOM+ gate as well as each TEC subset overall (an example of gating is illustrated in Figure 1\u2014figure supplement 1b, top and bottom rows, respectively) in all three mouse models used. While the frequencies of TEC subsets overall showed comparable values among the three models (all TECs), those from the TdTOM+ gate (TdTOM+ TECs) differed (Figure 1\u2014figure supplement 1c, blue and red squares, respectively). These differences are readily apparent when representative samples from each of the reporter model used are compared (Figure 1f). The ratio between the percentage of a given TEC subset from TdTOM+ gate normalized to the percentage of the same TEC subset overall indicates the relative over- or underrepresentation of the former within the thymic CD45\u2013EpCAM+TdTOM+ population among the three models used (Figure 1g). Thus, whereas the cTEC and mTECLow subsets were increased in Foxn1Cre and the mTECHigh subset in the CsnbCre model, the ratios of pre-post Aire and Tuft mTECs were increased in the Defa6iCre model (Figure 1g) and post-Aire mTECs were diminished in the CsnbCre model. A comparative analysis of the percentage of TdTOM+ cells within the parent TEC population confirmed that whereas the frequency of TdTOM+ cells in the Foxn1Cre model reached as expected nearly 100%, it dramatically decreased in the CsnbCre and to a greater extent in the Defa6iCre model (Figure 1\u2014figure supplement 1d). It is also clear that the major contribution to the TdTOM+ pool of cells in the CsnbCre and Defa6iCre models came from the mTECHigh and pre-post Aire subsets (Figure 1\u2014figure supplement 1d). This data validated the utility of the Cre-based Rosa26TdTOM mouse models for the study of CAT since in each model the expression of TdTOM protein was predictably and reproducibly enriched in different subsets of TECs.\n\n### Antigen transfer of TdTOM to thymic dendritic cells\n\nHaving characterized the distinct distribution of TdTOM in TEC subsets in our Cre-based Rosa26TdTOM mouse models, we next tested the distribution of TdTOM among its acceptors, the thymic population of CD11c+ cells (Figure 2a). As previously shown (Vobo\u0159il et al., 2020) as well as in Figure 2b and c, TdTOM is mostly acquired by CD11c+ cells. The robustness of this transfer, which is heavily dependent on the type of Cre-based Rosa26TdTOM mouse model, was then examined. Whereas TdTOM positivity was observed in ~6% of CD11c+ cells in the Foxn1Cre model, its frequency in CsnbCre and Defa6iCre was limited to ~0.6% and ~0.02%, respectively (Figure 2c). Interestingly, since the frequency of TdTOM+ TECs was analogously decreased across the Foxn1Cre, CsnbCre, and Defa6iCre mouse models (Figure 1c), the ratio between the frequency of TdTOM+CD11c+ and TdTOM+CD45\u2013EpCAM+ TECs was comparable (Figure 2d). These analyses argue for the similarity in CAT efficiency between donor TECs and CD11c+ APC acceptors, irrespective of the robustness and cell-subset range of TdTOM expression in TECs.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/71578/elife-71578-fig2-v1.jpg)\n\n**Figure 2.:** (a) Experimental design. (b) Representative flow cytometry plots comparing the frequency of TdTOM+CD11c+ cells among MACS-enriched CD11c+ thymic cells from mouse models described in (a). (c) Quantification of TdTOM+CD11c+ cells from (b) (mean \u00b1 SEM, n = 10 mice from a minimum of three independent experiments). (d) Comparison of the ratio between the frequency of TdTOM+CD11c+ (quantified in c) to TdTOM+ thymic epithelial cell (TEC) (quantified in Figure 1c) subsets in mouse models described in (a) (mean \u00b1 SEM, n = 10 mice from a minimum of three independent experiments). (e) Concatenated (n = 30 mice) and (f) separate (n = 10 mice) flow cytometry tSNE analysis of TdTOM+CD11c+ cells from the three mouse models described in (a). (g) Quantification of the ratios of the frequencies of DC subsets within CD11c+TdTOM+ cells to the frequencies of DC subsets within CD11c+ cells in Foxn1Cre, CsnbCre, and Defa6iCre mice (mean \u00b1 SEM, n = 10 mice from a minimum of three independent experiments). The ratios were calculated using percentages in Figure 2\u2014figure supplement 2c. CD11c+ cell subsets were distinguished as in Figure 2\u2014figure supplement 1a. Statistical analysis in (d) and (g) was performed using one-way ANOVA with Bonferroni\u00b4s multiple comparison test, *p\u22640.05, **p\u22640.01, ***p\u22640.001, ****p<0.0001, ns, not significant.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71578/elife-71578-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Complete gating strategy for the distinction of thymic DC populations. The thymic cell fraction was MACS-enriched for CD11c+ cells and sequentially gated as singlets and live cells. This cell fraction was then depleted of plasmacytoid dendritic cells (pDCs) (B220+CD11cLow) and divided into CD11c+MHCII+ and CD11cLowMHCIILow populations. CD11c+MHCII+ cells represent the major thymic DC populations: cDC1 (XCR1+CCR7\u2013), XCR1+ aDC (XCR1+CCR7+), XCR1\u2013 aDC (XCR1\u2013CCR7+), cDC2 (XCR1\u2013CCR7\u2013MGL2+CD14\u2013), and moDC (XCR1\u2013CCR7\u2013MGL2+CD14+). CD11cLowMHCIILow cells contain CX3CR1+ macrophage-like population (Mac). Historically, SIRP\u03b1 gating was used to distinguish cDC1 from cDC2 subsets. Since XCR1 and CCR7 gating enabled us to distinguish several subsets of thymic DCs, we omitted SIRP\u03b1 from our gating strategy. (b) Quantification of the frequencies of TdTOM+ cells among the indicated DC subsets (mean \u00b1 SEM, n = 10 from a minimum of three independent experiments). (c) Experimental design. (d) Representative flow cytometry plots comparing the frequency of CD45.1+TdTOM+CD11c+ cells among MACS-enriched CD11c+ thymic cells from the mouse models described in (c). (e) Quantification of CD45.1+TdTOM+CD11c+ cells from (d) (mean \u00b1 SEM, n = 5\u20136 mice from two independent experiments). (f) Quantification of the frequency of TdTOM+ cells among the indicated DC subsets from mice described in (c) (mean \u00b1 SEM, n = 5\u20136 mice from two independent experiments).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/71578/elife-71578-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a) Heat map generated from flow cytometry tSNE analysis of TdTOM+CD11c+ cell populations from Figure 2e. tSNE analysis was performed using FlowJo software, based on FSC-A, SSC-A, TdTOMATO, CD11c, MHCII, B220, XCR1, CCR7, CX3CR1, MGL2, and CD14. (b) Back-gating of TdTOM+CD11c+ populations defined in (a), onto the CD11c+ gating strategy described in Figure 2\u2014figure supplement 1a. (c) Comparison of the percentage of DC subsets within all DCs (blue squares) and TdTOM+ DCs (red squares) (mean \u00b1 SEM, n = 10 mice from a minimum of three independent experiments) calculated analogically as in Figure 1\u2014figure supplement 1c. DC subsets were gated as in Figure 2\u2014figure supplement 1a. The data were used for calculation of the ratios in Figure 2g.\n\nTo study CAT in the mouse models defined above, we determined seven subpopulations of thymic CD11c+ cells (Figure 2\u2014figure supplement 1a). These cells comprise three major categories: B220+ pDCs, CD11cLowMHCIILowCX3CR1+ macrophage-like population (Mac), and CD11c+MHCIIHigh cells, which represent a conventional type of thymic DCs that have been subdivided into two groups, cDC1 and cDC2, defined by the expression of the chemokine receptors, XCR1 and SIRP\u03b1, respectively (Li et al., 2009). Recently, the SIRP\u03b1+ DCs were described to encompass a minimum of two different subpopulations, defined by the expression of MGL2 (CD301b) and CD14 to MGL2+CD14\u2013 cDC2 and MGL2+CD14+ monocyte-derived dendritic cells (moDC) (Vobo\u0159il et al., 2020). It has also become evident that DCs could be phenotypically and functionally defined by their activation status (Ardouin et al., 2016; Oh et al., 2018; Park et al., 2020; Vobo\u0159il et al., 2020). Hence, two phenotypically distinct subsets of activated dendritic cells (aDCs), CCR7+XCR1+ and CCR7+XCR1\u2013, can be identified (Figure 2\u2014figure supplement 1a). A comparative analysis of the ability of each of these thymic CD11c+ APC subsets to acquire TEC-derived TdTOM showed that XCR1+ aDCs were the most efficient cells involved in CAT irrespective of the Cre-based Rosa26TdTOM model used. On the other hand, while Macs and pDCs were relatively inefficient, the remaining subsets varied in this efficiency depending on the Cre-model analyzed (Figure 2\u2014figure supplement 1b). Using bone marrow (BM) chimeras of sublethally irradiated mouse models (Foxn1Cre, CsnbCre, and Defa6iCre) reconstituted with congenically marked BM cells isolated from WT animals, we verified that TdTOM is indeed transferred from TECs to all subpopulations of thymic CD11c+ APCs and is not endogenously expressed by these APCs themselves (Figure 2\u2014figure supplement 1c\u2013f).\n\nSince the frequency of each CD11c+ APC subset as well as their capacity to acquire TEC-derived antigen differs, we next assessed their contribution to CAT in all three Cre-based Rosa26TdTOM mouse models. Due to the comparative nature of this approach (comparing the efficiency of CAT for each CD11c+ APC subset in each Cre model), we first performed an unsupervised flow cytometry analysis of all CD11c+TdTOM+ cells concatenated from 10 independent samples from each of the Cre-based mouse models, that is, 30 samples in total (Figure 2e). Based on the markers shown in Figure 2\u2014figure supplement 2a, we identified all phenotypically distinct CD11c+ APC subsets in the resulting tSNE plot (Figure 2\u2014figure supplement 2a and b). Analyzing each of the Cre-based Rosa26TdTOM mouse models individually (Figure 2f), the data revealed that whereas the contribution of cDC1s and moDCs to CAT was robust in all three models, the contribution of pDCs, Macs, cDC2s, and both populations of aDC subsets varied among the models. To investigate the preferential uptake of TdTOM among DC subsets, we compared the percentage representation of TdTOM+ DC subsets (TdTOM+ DCs) with the frequency of DC subsets among the entire DC population (All DCs) (Figure 2\u2014figure supplement 2c) and calculated the ratios as similarly done in Figure 1 (Figure 2g). Notably, the ratio between the percentage of TdTOM+ DC subset and the overall percentage for cDC2s, pDCs, and Macs was increased in the Foxn1Cre mouse model. In contrast, this ratio for XCR1+ and XCR1\u2013 aDCs was the lowest in Foxn1Cre, with an increase detected in CsnbCre, and the highest ratio detected in the Defa6iCre model (Figure 2g). Taken together, this data shows that the extent of the involvement of each DC subset in CAT depends on the distribution of TdTOM protein expression among the different subtypes of TECs and/or the overall proportion of TECs expressing the TdTOM. In this way, the assorted expression of TdTOM antigen by a limited but defined subset of TECs allows the visual identification of those DC subsets that engage these TEC subsets during CAT.\n\n### Projecting preferential trajectories of CAT between TEC and thymic DC subsets\n\nTo reveal the possible combinations of TEC and DC subsets that are preferentially engaged in CAT, the ratio between the percentage of a given TEC subset from the TdTOM+ gate normalized to the percentage of the same TEC subset overall (Figure 1g), and the ratio between the percentages TdTOM+ cells and the entire population of a particular DC subset (Figure 2g) is depicted for each Cre-based mouse model (Figure 3a, upper and bottom rows, respectively). Upon inspection of these plots, a trend towards a decrease of mTECLow versus an increase of mTECHigh and pre-post Aire cells from Foxn1Cre to CsnbCre to Defa6iCre mouse models is apparent. On the other hand, a decrease in the ratio of cDC2s, pDCs, and Macs was observed while the contribution of XCR1+ and XCR1\u2013 aDCs in the TdTOM+ gate was increased. The simplest interpretation of these correlations is the possibility of cDC2s, pDCs, and Macs preferentially acquiring antigens from the mTECLow subset, while the CAT to both populations of aDCs is likely associated with mTECHigh and pre-post Aire cells (Figure 3a).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/71578/elife-71578-fig3-v1.jpg)\n\n**Figure 3.:** (a) Visualization of the ratios of TEC and DC subsets from Figure 1g (top) and Figure 2g (bottom), respectively, compared within Foxn1Cre, CsnbCre, and Defa6iCre models. Ratio = 1 is indicated by dotted line. (b) Bar graphs showing linear regression (R) between the ratios of TdTOM+ TECs and the indicated subset of TdTOM+ DCs from Figures 1g and 2g (n = 5\u20138 mice, from a minimum of three independent experiments). (c) Bar graph showing the R values between the ratio of TdTOM+ DCs from Figure 2g and the ratio of the frequency of TdTOM+ TECs (Figure 1c) to the frequency of all TECs (n = 8\u201310 mice from a minimum of three independent experiments). Statistical analysis in (b) and (c) was performed using a Pearson\u2019s product-moment correlation, *p\u22640.05, **p\u22640.01, ***p\u22640.001, ****p<0.0001, ns, not significant.\n\nTo identify the predominant TEC-to-DC subsets trajectories of CAT, we performed a linear regression analysis of TEC and DC ratios across Foxn1Cre, CsnbCre, and Defa6iCre mouse models (Figure 3a). The data presented in Figure 3b confirmed the selectivity of each of the thymic DC subsets for certain TEC subset(s) from which they preferentially acquired antigens. Specifically, CAT to cDC1s significantly correlated with the expression of TdTOM in mTECHigh, XCR1+ aDCs with mTECHigh, pre-post Aire, and Tuft mTECs, whereas XCR1\u2013 aDCs with mTECHigh and pre-post Aire mTECs. Interestingly, pDCs, and to a lesser extent Macs, correlated with antigen production in post-Aire mTECs. The positive correlation observed between pDCs and post-Aire mTECs is consistent with the fact that Hassall\u2019s corpuscles affect the migration and activation of thymic pDCs through the production of chemokines and cytokines (Wang et al., 2019). Macs, cDC2s, and pDCs were found to also correlate with the mTECLow population. In addition, the Macs population, and to a lesser extent cDC2s, significantly correlated with the expression of TdTOM in cTECs. This is consistent with the notion that both thymic Macs and cDC2s reside in the thymic cortex (Baba et al., 2009; Breed et al., 2019). It is also important to emphasize that CAT to pDCs, Macs, and cDC2s is highly affected by the frequency of total TdTOM+ TECs (Figure 3c). Thus, if the availability of TEC-derived antigens is limited, these subsets are outcompeted in CAT by other DC subsets.\n\nTogether, this data confirms the hypothesis that CAT occurs between subsets of TECs and thymic DCs in a selective manner, with the exception of moDCs, which failed to reveal a preference for any subset of TECs.\n\n### Thymic moDCs are the most efficient subset in repetitive CAT\n\nIn experiments in which single-fluorescent protein (FP) transfer mouse models were utilized, most of the thymic CD11c+ subsets acquired antigens from more than one mTEC subset (Figure 3c). This poses the question of whether a single DC can take up antigens from several distinct TECs repetitively. To test this hypothesis, we utilized the Foxn1CreConfettiBrainbow2.1 mouse model in which cytosolic RFP, YFP, and membrane CFP are expressed individually or in combination by TECs. The transfer of these FPs to DCs (Figure 4a) was then measured. The expression of GFP, which should be present in the nucleus of Foxn1CreConfettiBrainbow2.1 TECs (Snippert et al., 2010), was recently reported to be abrogated (Venables et al., 2019). Visualizing TECs from Foxn1CreConfettiBrainbow2.1 and MHCII-EGFP mice, the latter used as a positive control, either separately or as a mixed cell suspension, confirmed that GFP is indeed absent in TECs isolated from Foxn1CreConfettiBrainbow2.1 mice (Figure 4\u2014figure supplement 1a). Given that YFP and RFP/CFP are expressed from mutually exclusive cassettes in Foxn1CreConfettiBrainbow2.1 mice (Snippert et al., 2010), those TECs that express YFP do not express RFP and/or CFP and vice versa (Figure 4\u2014figure supplement 1b\u2013d). Therefore, those DCs that were positive for both RFP and YFP must have obtained these antigens from two or more distinct TECs (Figure 4b). We found that this multi-antigen transfer occurred nearly as frequently as the transfer from a single mTEC and that all CD11c+ APCs were involved in repetitive CAT. However, moDCs revealed the highest frequency of RFP+YFP+ cells, which suggests a high level of promiscuity in targeting TEC subsets (Figure 4b, Figure 4\u2014figure supplement 1e).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/71578/elife-71578-fig4-v1.jpg)\n\n**Figure 4.:** (a) Experimental design. (b) Quantification of the frequency of fluorescent protein+ (FP+) cells among the indicated dendritic cell (DC) subsets (mean \u00b1 SEM, n = 7 mice from three independent experiments). (c) Quantification of the frequency of CFP+ cells among the indicated DC subsets (mean \u00b1 SEM, n = 7 mice from three independent experiments). (d) Representative images from ImageStream analysis showing the localization of transferred FP in XCR1+ activated dendritic cell (aDC) from the thymus of Foxn1CreConfettiBrainbow2.1 (n = 2 independent experiments).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71578/elife-71578-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) Representative microscopic images of sorted thymic epithelial cells (TECs) from MHCII-EGFP (left panel), Foxn1CreConfettiBrainbow2.1 (middle panel), and a mixed population of TECs isolated from both MHCII-EGFP and Foxn1CreConfettiBrainbow2.1 (right panels) mouse models. (b) Representative flow cytometry plots showing the frequency of YFP, RFP, and CFP+ CD45\u2013EpCAM+ TECs. (c) Quantification of FP+ cells from (b) (mean \u00b1 SEM, n = 3 mice from two independent experiments). (d) Representative microscopic images of all TEC variants from the model described in Figure 5a. (e), (f) Statistical analysis of the frequency of FP+ cells among the indicated dendritic cell (DC) subsets from Figure 4b and c (n = 7 mice from three independent experiments). Analysis was performed using repeated-measures ANOVA with Bonferroni\u00b4s multiple comparison test, *p\u22640.05, **p\u22640.01, ***p\u22640.001, ****p<0.0001, ns, not significant. (g) Quantification of the frequency of FP+ cells among the CFP+ DC subsets (mean \u00b1 SEM, n = 7 from three independent experiments).\n\nThe Foxn1CreConfettiBrainbow2.1 model also showed that the transfer of the CFP membrane antigen was observed less frequently than that of cytosolic antigens YFP and RFP. CFP transfer was largely mediated by XCR1+ aDCs, which exhibited more than a fivefold higher frequency of CFP positivity than any other CD11c+ subset (Figure 4c, Figure 4\u2014figure supplement 1f). Among the CD11c+ cell subsets that acquired the CFP, we also analyzed the co-acquisition of the other two FPs (Figure 4\u2014figure supplement 1g). As expected and consistent with their strong capacity to acquire FPs from more than one mTEC, the highest frequency of CFP+RFP+YFP+ cells was found in the moDC subset (Figure 4\u2014figure supplement 1g, right plot). There were only a few CFP+YFP+ cells observed in the CD11c+ subsets, which correlated with the overall low abundance of CFP single positive mTECs (Figure 4\u2014figure supplement 1b) and consequently a low probability of a sequential encounter with YFP+ and CFP single positive TEC by CD11c+ cells. Since XCR1+ aDCs were, in general, the most potent DC subset in CAT in Foxn1CreConfettiBrainbow2.1 mice, we imaged this subset with all possible FP+ variants using imaging flow cytometry (Figure 4d). It is of note that CFP was in direct contrast to other FPs that were localized mainly to the plasma membranes of CAT-experienced XCR1+ aDCs.\n\nTaken together, using Foxn1CreConfettiBrainbow2.1 mice, we demonstrated that a single CD11c+ APC frequently acquired antigens from more than one mTEC and that the most potent subset in this repetitive CAT were moDCs. Moreover, we also showed that XCR1+ aDCs were effective in the acquisition of both cytosolic and membrane-bound antigens.\n\n### Thymic CD11c+ cells can share their antigens\n\nApart from the other CD11c+ APCs analyzed, the moDC subset showed no specific preference for any TEC subset in CAT (Figure 3b). This, together with their highest capacity among other CD11c+ subsets for repetitive CAT (Figure 4b), led us to test their possible involvement in the acquisition of antigens from other thymic CD11c+ cells. We performed a mixed BM chimera experiment in which irradiated CD45.1+CD45.2+ WT mice were reconstituted with a mix of BM (50:50) isolated from CD45.1+ WT and CD45.2+ Cd11cCreRosa26TdTOM mice (Figure 5a, Figure 5\u2014figure supplement 1a). Flow cytometric analysis showed that out of all CD45.1+CD11c+ cells, approximately 0,75% acquired TdTOM from CD45.2+CD11c+ cells (Figure 5b and c). While the contribution of both aDC subsets and cDC2s to CAT was robust, the highest frequency of TdTOM+ cells was found among the moDC subset (Figure 5d, Figure 5\u2014figure supplement 1b). Thus, thymic CD11c+ cells, especially moDCs, acquired antigens not only from TECs but from other CD11c+ cells as well.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/71578/elife-71578-fig5-v1.jpg)\n\n**Figure 5.:** (a) Experimental design. (b) Representative flow cytometry plots showing the frequency of the transfer of TdTOM into CD45.1+CD11c+ cells among MACS-enriched CD11c+ thymic cells from mixed bone marrow chimeras (50:50) of WT (CD45.1+) and Cd11cCreRosa26TdTOMATO (CD45.2+) mice. Mixed bone marrow chimeras (50:50) of WT (CD45.1+) and Rosa26TdTOMATO (negative control; CD45.2+) mice were used as a negative control to TdTOM acquisition. (c) Quantification of CD45.1+TdTOM+CD11c+ cells from (b) (mean \u00b1 SEM, n = 11 mice from two independent experiments). Statistical analysis was performed using unpaired, two-tailed Student\u2019s t-test, ***p\u22640.001. (d) Quantification of the frequency of TdTOM+ cells among the indicated dendritic cell (DC) subsets from reconstituted mice described in (a) (mean \u00b1 SEM, n = 11 mice from two independent experiments).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71578/elife-71578-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) Representative flow cytometry plots showing gating and frequency of CD11c+TdTOM+ cells from mixed bone marrow chimera of WT (CD45.1+, lower panel) and Cd11cCreRosa26TdTOMATO (CD45.2+, upper panel) mice. (b) Statistical analysis of the frequency of TdTOM+ cells among the indicated dendritic cell (DC) subsets from Figure 5d (n = 11 mice from two independent experiments). Analysis was performed using repeated-measures ANOVA with Bonferroni\u2019s multiple comparison test, *p\u22640.05, **p\u22640.01, ***p\u22640.001, ****p<0.0001, ns, not significant.\n\nTogether, this data demonstrates that the acquisition of antigens by the thymic population of CD11c+ cells is not restricted to TEC subsets but is extended to their own CD11c+ cells. Remarkably, among all thymic DCs, moDCs were the most efficient in this special type of \u2018cannibalistic\u2019 CAT.\n\n## Discussion\n\nThis study, which has been based on the initial observations of others (Lancaster et al., 2019; Mouri et al., 2017; Perry et al., 2018), confirmed that CAT, that is, TEC-to-DC antigen-spreading, is not a random process. Using these studies, along with reports concerning the heterogeneity of thymic APCs as a foundation, we have provided detailed insight into how particular subsets of TECs and thymic APCs are interconnected in the transfer of TEC-produced antigens. Specifically, utilizing several murine genetic models that allowed the tracking of TEC-produced antigen, we determined that CAT is mediated predominantly by preferential pairing between the following TEC and CD11c+ DC subsets: (i) cTECs to Mac and cDC2; (ii) mTECLow to Mac, cDC2, and pDC; (iii) mTECHigh to XCR1+ and XCR1\u2013 aDC, and cDC1; (iv) pre-post Aire mTEC to XCR1+ and XCR1\u2013 aDC; (v) post-Aire mTEC to pDCs and Mac; and (vi) Tuft mTEC to XCR1+ aDC. These CAT trajectories, which are depicted in Figure 6a, argue in favor of a model of preferential pairing in thymic antigen transfer. It seems that the antigen acquisition by Macs, cDC2s, and, to some extent, pDCs can occur when antigen is abundant. In addition, we also report that thymic moDCs, which do not exhibit subset specificity in CAT, generally obtain antigen from multiple cellular sources of thymic TECs as well as CD11c+ DC subsets.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/71578/elife-71578-fig6-v1.jpg)\n\n**Figure 6.:** (a) Based on the data presented in this study, we postulate that phenotypically defined subsets of thymic CD11c+ cells preferentially and predictably acquire antigens from distinct subsets of developmentally related thymic epithelial cells (TECs) (left panel). Our data also suggests that thymic monocyte-derived dendritic cell (moDC), which represented the only CD11c+ subset that does not specifically prefer any particular subset of TECs (Figure 3b), excels in the acquisition of antigens from multiple TECs or other CD11c+ cells compared to both subsets of activated dendritic cell (aDC), cDC2, and cDC1, which also perform such modes of CAT, however, to a significantly lesser extent (right panel). Note that the size of the antigen acceptor\u2019s images reflects the strength of their correlation with particular TEC subset (left panel) or their potency in defined modes of CAT (right panel).\n\nIn this study, we confirmed a high level of internal TEC heterogeneity that could be divided into a minimum of six distinct subsets (Baran-Gale et al., 2020; Bautista et al., 2021; Bornstein et al., 2018; Dhalla et al., 2020; Wells et al., 2020). Since the majority of these subsets are developmentally related (Bornstein et al., 2018; Metzger et al., 2013; Miller et al., 2018), our Cre-based Rosa26TdTOM mouse models (Figure 1a) suggest some developmental relationships between mTEC subsets. It has been reported that TdTOM expression in the CsnbCreRosa26TdTOM mouse model is detected in a small proportion of mTECLow, in most mTECHigh, post-Aire mTEC, and Tuft mTEC subsets (Bornstein et al., 2018). This is consistent with our data (Figure 1f), which suggests that Csnb is expressed by a specific population of mTECLow progenitors that further differentiate into mTECsHigh cells and later into their progeny. In contrast, the TdTOM expression in Defa6iCreRosa26TdTOM should be specifically attributed to the Aire+ mTECHigh subset and their post-Aire progeny since the expression of defensins in the thymus is highly dependent on Aire (Dobe\u0161 et al., 2015). Despite that, we also observed TdTOM expression in the small LY6D\u2013 population of mTECLow (Figure 1f). Since several distinct subpopulations of post-Aire mTEC were detected (Dhalla et al., 2020), we hypothesized that Cre recombination in mTECLow likely reflects the presence of the LY6D\u2013 population of post-Aire cells than Defa6 locus activation in Aire\u2013 mTECLow progenitors. Thus, the significant correlation in CAT between mTECLow and pDC subsets could be influenced by this phenomenon since pDCs were shown to acquire the antigen mostly from post-Aire mTECs (Figure 3b). It is also important to emphasize that all three mouse models used in this study were based on a Cre recombination system leading to the production of TdTOM in cells with an active Foxn1, or Csn2, or Defa6 locus as well as to those cells that developmentally descend from these cells. Thus, the caveat of this approach is that the expression of TdTOM antigen is not targeted to a particular TEC subset exclusively, which would provide a more accurate system for assessing the preferential pairing of TEC and DC subsets in CAT.\n\nThe development of novel gating strategies has allowed us to reveal the substantial heterogeneity of thymic DCs that could be divided into phenotypically and functionally distinct subsets (Li et al., 2009; Park et al., 2020; Vobo\u0159il et al., 2020). Our data points to at least seven subtypes of CD11c+ cells that are capable of antigen acquisition from different subsets of TECs, that is, cDC1, XCR1+ aDC, XCR1\u2013 aDC, cDC2, moDC, pDC, and Mac (Figure 2e, Figure 2\u2014figure supplement 2a and b). Among them, we have phenotypically identified two subsets of thymic aDCs that are marked by the overexpression of the chemokine receptor, CCR7 (Ardouin et al., 2016; Hu et al., 2017; Oh et al., 2018). Notably, it has been reported that the expression of Ccr7 defines the population of XCR1+CCR7+ cDC1s that is considered to be the progeny of XCR1+CCR7\u2013 cDC1s (Ardouin et al., 2016). However, since these CCR7+ cDC1s express not only molecules that are associated with the cDC1 signature, such as Batf3, Cd8\u03b1, Ly75, or Cadm1 (Vobo\u0159il et al., 2020), but also molecules that characterize the population of aDCs (Il12b, Il15, Il15ra Cd274, Cd70, Cd40, Tnfrsf4) (Ardouin et al., 2016; Park et al., 2020), we defined and renamed this subset as XCR1+ aDC. Remarkably, these cells are the most efficient DC subset in CAT even when compared to cDC1s (Figure 2\u2014figure supplement 1b, Figure 4b). It was recently suggested that the differentiation of XCR1+ aDCs from cDC1s is driven by the uptake of apoptotic cells (Maier et al., 2020). Since CAT has been shown to be mediated mostly by endocytosis of apoptotic bodies (Koble and Kyewski, 2009; Perry et al., 2018), the differentiation of XCR1+ aDCs in the thymus is consistent with being driven by CAT. Thus, the grounds for the correlation between mTECHigh and XCR1+ aDCs in TdTOM antigen transfer could be found in the fact that mTECHigh transfer antigen to XCR1+ cDC1 that further differentiate into XCR1+ aDC cells (Ardouin et al., 2016; Maier et al., 2020). In this context, it is also important to emphasize that the transcriptional signature of XCR1\u2013 aDCs is more similar to cDC2 (e.g., Sirpa and Pdcd1lg2) than the cDC1 subset (Park et al., 2020). By the same token, this suggests that antigen transfer into cDC2s induces their differentiation into XCR1\u2013 aDCs.\n\nUsing linear regression analysis of TdTOM+ TECs and DCs frequencies from all three mouse models, we identified two subsets of CD11c+ cells, cDC1 and moDC, that exhibited limited or no correlation with TEC subsets in TdTOM transfer. Surprisingly, the correlation of mTECHigh with cDC1s seems limited when compared to the correlation of mTECHigh with XCR1+ aDC (Figure 3b). This is contradictory to previous reports that described cDC1 subset as the most efficient in acquiring antigens from Aire+ mTECHigh (Lei et al., 2011; Perry et al., 2018). This could be explained by the fact that only XCR1 positivity was used by the authors to characterize cDC1 cells in the thymus. This does not allow one to discriminate between cDC1s and XCR1+ aDCs. Thus, as suggested by our data, the antigen transfer from mTECHigh is mediated mostly by XCR1+ aDCs and only to a lesser extent by cDC1s (Figure 3b). On the other hand, the linear regression model used in this study takes advantage of the variability in the ratios between TdTOM+ frequencies in TEC and DC subsets across all Cre-based Rosa26TdTOM models. Since in the case of cDC1 this variability displays apparent limitations (Figure 3a), we see only inadequate correlation for this cell subset.\n\nThe second subset of thymic CD11c+ cells, which failed to show a correlation with any TEC subset in CAT, consisted of moDCs. Interestingly, while moDCs are very potent in CAT (Figure 2e, Figure 2\u2014figure supplement 1b), their capacity can be further enhanced under inflammatory conditions (Vobo\u0159il et al., 2020). We demonstrated that among other thymic DCs the moDC subset was the most efficient in repetitive CAT (Figure 4b, Figure 5\u2014figure supplement 1g). This, along with their ability to efficiently acquire antigen from other CD11c+ APCs (Figure 5d), is a testament to their important function in central tolerance (Park et al., 2020; Vobo\u0159il et al., 2020). Since thymic moDCs were shown to express a plethora of different chemokines and scavenger receptors (Park et al., 2020; Vobo\u0159il et al., 2020), we propose that these characteristics correlate with their high competence in regulated migration and phagocytic activity compared to other DC subsets (Croxford et al., 2015).\n\nIn conclusion, using novel gating strategies for the identification of multiple TEC subsets that produce TdTOM antigen and tracking of its transfer into phenotypically defined thymic CD11c+ APC subsets has allowed us to define preferential antigen trajectories that mediate CAT. Our data shows that XCR1+ aDCs are the most potent subset in the acquisition of TEC-derived antigens. It also characterizes the moDC subset as the most efficient in the acquisition of antigen from multiple TECs as well as DCs. Taken together, our work proposes that CAT relies on a cellular interaction network with preferential partnerships between defined subtypes of TECs and DCs. This, in turn, suggests that the indirect presentation of antigens from developmentally related but phenotypically and functionally distinct types of TECs is ascribed to different subsets of thymic DCs. However, how these cell-to-cell preferential interactions, which are the underlying characteristics of CAT, facilitate the processes of central tolerance such as the deletion of self-reactive clones of T cells or their conversion to Tregs awaits resolution. Although this study suggests that CAT is a deterministic process, the molecules and mechanisms that determine TEC-to-DC cell-cell interactions remain to be identified.\n\n## Materials and methods\n\n### Mice\n\nAll mouse models used in this study were of C57BL/6J genetic background and housed under SPF conditions at the animal facility of the Institute of Molecular Genetics (IMG) in Prague. All animal experiments were approved by the ethical committee of the IMG and the Czech Academy of Sciences. C57BL/6J, Foxn1Cre (B6(Cg)-Foxn1tm3(cre)Nrm/J; MGI:5432012) (Gordon et al., 2007), Ly5.1 (B6.SJL-Ptprca Pepcb/BoyJ; MGI:2164701) (Janowska-Wieczorek et al., 2001), and Cd11cCre (B6.Cg-Tg(Itgax-cre)1-1Reiz/J; MGI:3763375) (Caton et al., 2007) mice were purchased from The Jackson Laboratory. CsnbCre mice (Bornstein et al., 2018) were kindly provided by J. Abramson (Department of Immunology, Weizmann Institute of Science, Rehovot, Israel). Defa6iCre mice (Adolph et al., 2013) were kindly provided by R. S. Blumberg (Division of Gastroenterology, Department of Medicine, Brigham and Women\u2019s Hospital, Harvard Medical School, Boston, MA). Rosa26TdTOMATO mice (B6;129S6-Gt(ROSA)26Sortm14(CAG-TdTOMATO)Hze/J; MGI:3813512) (Madisen et al., 2010) were provided by V. Ko\u0159\u00ednek (IMG, Prague, Czech Republic). ConfettiBrainbow2.1 (Gt(ROSA)26Sortm1(CAG-Brainbow2.1)Cle/J; MGI:4835546) (Snippert et al., 2010) mice were provided by the Czech Center for Phenogenomics (IMG, Vestec, Czech Republic). MHCII-EGFP mice-MGI:2387946 (Boes et al., 2002) were provided by J. \u010cern\u00fd (Department of Cell Biology, Faculty of Science, Charles University, Prague). All mice were fed an Altromin 1314 IRR diet. Reverse osmosis filtered and chlorinated water was available to the animals ad libitum. All mice were bred in an environment in which the temperature and humidity of 22 \u00b1 1\u00b0C and 55 \u00b1 5%, respectively, were constant and under a 12 hr oscillating light/dark cycle. Prior to tissue isolation, mice were euthanized by cervical dislocation.\n\n### Tissue preparation and cell isolation\n\nThymic tissue was extracted using forceps, cut into small pieces, and enzymatically digested with 0.1 mg*ml\u22121 Dispase II (Gibco) dissolved in RPMI. Pieces of thymic tissue were pipetted up and down several times using a pipette tip that had been cut and incubated in a shaker at 800 rpm for 10 min at 37\u00b0C. This procedure was repeated approximately five times to completely dissolve the tissue. The supernatant was collected and the enzymatic reaction was stopped by adding 3% FCS and 2 mM EDTA. To isolate TECs, isolated cells were MACS-depleted of CD45+ cells using CD45 microbeads (Miltenyi). After depletion, the suspension was spun down (4\u00b0C, 300 \u00d7 g, 10 min) and the resulting pellet was resuspended in ACK lysis buffer for 2 min to deplete erythrocytes. To isolate thymic DCs and macrophages, MACS enrichment for CD11c+ cells was performed using CD11c biotin-conjugated antibody (eBioscience) and Ultrapure Anti-Biotin microbeads (Miltenyi).\n\n### Flow cytometry analysis and cell sorting\n\nCell staining for flow cytometry (FACS) analysis and sorting was performed at 4\u00b0C, in the dark, for 20\u201330 min, with the exception of anti-CCR7 antibody (BioLegend) staining that required incubation at 37\u00b0C for a minimum of 30 min. To exclude dead cells, either Hoechst 33258 (Sigma-Aldrich) or viability dye eFluor 506 (eBioscience) was used. FACS analysis of TECs and DCs was performed using BD LSR II and BD FACSymphony A5 cytometers, respectively. A BD FACSAria IIu sorter was used for cell sorting. BD FACSDiva software and FlowJo V10 software (Treestar) were used for FACS data analysis. For the purpose of tSNE analysis, the same amount of CD11c+ TdTOM+ cells from each model was concatenated by using the FlowJo concatenate function. The final tSNE was calculated by FlowJo opt\u2013SNE plugin. Total TEC counts in Figure 1e were obtained by analyzing the whole fraction of CD45\u2013 MACS-enriched cells. Calculation of the ratios in Figures 1g and 2g is described in the \u2018Results\u2019 section and figure legends. The entire list of FACS staining reagents is provided in Supplementary file 1.\n\n### Visualization of TdTOM expression in the thymus\n\nTo image TdTOM expression in Foxn1CreRosa26TdTOM, CsnbCreRosa26TdTOM, and Defa6iCreRosa26TdTOM mice (Figure 1d), we extracted the thymi from these models as well as the Cre\u2013 control mouse using forceps, submerged them in optimal cutting temperature solution, and froze on dry ice. The samples were stored overnight at \u201380\u00b0C. The next day, the thymi were cut into 10-\u03bcm-thick sections and put onto microscope slides. To stain thymic medullas, thymic sections were washed three times in PBS, fixed with 4% PFA in PBS for 10 min, washed again three times in PBS, permeabilized with 0.1% Triton X-100 in PBS for 15 min at room temperature (RT), and blocked for 30 min in 5% BSA and 0.1% Triton X-100 in PBS (blocking buffer) at RT. Next, slides were incubated for 40 min with purified anti-keratin 14 antibody (BioLegend; clone: Poly19053) diluted 1:500 in blocking buffer, washed three times in PBS, and incubated for 20 min with goat anti-rabbit Alexa Fluor 647 secondary antibody (Life Technologies; Cat# A-21244) diluted 1:500 in blocking buffer. Before imaging, the samples were washed three times in PBS, gently washed in distilled water, and dried. Samples were imaged on Leica DM6000 widefield microscope using HC PL FLUOTAR \u00d710/0.30 DRY PH1; FWD 11.0; CG 0.17 | BF, DF, POL, PH objective. The tile scans of whole thymi were created using the LAS X Navigator tool (Leica). Importantly, bright-field and keratine 14 staining was imaged on sequential thymic sections to those used for TdTOM imaging. TdTOM was imaged right after cryosectioning.\n\n### Imaging flow cytometry\n\nImaging flow cytometry (ImageStream) was performed using AMNIS ImageStream X MkII at the Center for Preclinical Imaging (CAPI) in Prague. Imaged XCR1+ aDCs were isolated from Foxn1CreConfettiBrainbow2.1 mice, stained for their CD11c, XCR1, and CCR7 markers, and sorted as RFP+ and/or YFP+ and/or CFP+. The data was acquired via ImageStream with \u00d740 magnification. Ideas 6.1 software (AMNIS) was used for data analysis.\n\n### Confocal and spinning disk microscopy\n\nTo test GFP expression in TECs from Foxn1CreConfettiBrainbow2.1 mice (Figure 4\u2014figure supplement 1a), thymic cells from Foxn1CreConfettiBrainbow2.1 and MHCII-EGFP mice were MACS-depleted of CD45+ fraction and imaged on a Leica TCS SP5 AOBS Tandem confocal microscope using the HCX PL APO \u00d710/0.40 DRY CS; FWD 2.2; CG 0.17 | BF, POL objective. To visualize TEC fluorescent variants from Foxn1CreConfettiBrainbow2.1 mice (Figure 4\u2014figure supplement 1d), CD45+EpCAM+ TECs were sorted as RFP+ and/or YFP+ and/or CFP+ and visualized in an uncoated \u00b5-Slide 8 Well (ibidi) with Andor Dragonfly 503 spinning disk confocal microscope using HCX PL APO \u00d763/1.40\u20130.6 OIL \u03bbB; FWD 0.12; CG 0.17 | BF, POL, DIC objective.\n\n### Bone marrow chimeras\n\nBM was flushed out from the femur and tibia of Ly5.1 (CD45.1+; Figure 5, Figure 2\u2014figure supplement 1d\u2013f, Figure 5\u2014figure supplement 1) or Cd11cCreRosa26TdTOMATO (CD45.2+; Figure 5, Figure 5\u2014figure supplement 1) mice using a syringe with 26G needle. Isolated cells were depleted of erythrocytes with ACK lysis buffer. Recipient mice were sublethally irradiated with 6 Gy and reconstituted with 2 \u00d7 106 Ly5.1 BM cells in the case of Foxn1Cre/CsnbCre/Defa6iCreRosa26TdTOMATO mice (Figure 2\u2014figure supplement 1d\u2013f) or with 2 \u00d7 106, 50:50 mixed Ly5.1:Cd11cCreRosa26TdTOMATO BM cells in the case of C57BL/6J Ly5.1 mice (CD45.1+CD45.2+; Figure 5, Figure 5\u2014figure supplement 1). Three weeks after irradiation, the BM reconstitution was verified by the staining of blood with anti-CD45.1 and CD45.2 antibodies. Mice were subjected to further analysis 6 weeks after irradiation if the BM reconstitution exceeded 80% (Figure 2\u2014figure supplement 1d\u2013f) or was between 40 and 60% within both CD45.1+ and CD45.2+ cell compartments (Figure 5, Figure 5\u2014figure supplement 1).\n\n### Statistical analysis\n\nStatistical analysis and graph layouts were performed using Prism 5.04 software (GraphPad). Linear regressions were calculated using R 3.6.2. (R core team 2019). The statistical tests used for data analysis are indicated in the figure legends.\n",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "f5bf2e02-a9b0-492a-8158-84a6fad8f3d9",
+      "submission_id": "a26b125b-29fc-4bf9-8c69-32e518b75231",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Juan Carlos Z\u00fa\u00f1iga-Pfl\u00fccker, University of Toronto, Sunnybrook Research Institute Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.71578.sa0](https://doi.org/10.7554/eLife.71578.sa0)\n\nThis manuscript will be of interest to immunologists studying mechanisms of thymic central tolerance. The study elegantly makes use of multiple genetic mouse models to generate data supporting the conclusion that different dendritic cell subsets in the thymus capture self-antigens from distinct subsets of thymic epithelial cells.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Juan Carlos Z\u00fa\u00f1iga-Pfl\u00fccker, University of Toronto, Sunnybrook Research Institute Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.71578.sa1](https://doi.org/10.7554/eLife.71578.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A model of preferential pairing between epithelial and dendritic cells in thymic antigen transfer\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including JC Z\u00fa\u00f1iga-Pfl\u00fccker as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Tadatsugu Taniguchi as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) The reviewers agreed that some additional analyses would strengthen the conclusions of the study. However, if these additional analyses lead to altered interpretation of the data presented then the authors should revise the model that was provided.\n\n2) Please pay close attention to the detailed recommendations provided by Rev #3.\n\nReviewer #1 (Recommendations for the authors):\n\n1- The main approach makes use of different mouse models expressing tdTomato under different cre-drivers, and it would be good to show immunofluorescence (IF) histological analysis of thymus section from these mice, which would further illustrate the elegance of the approach, by directly showing the expression pattern within the thymus medulla, or more broadly for the Foxn1-cre. Potentially, this analysis may even allow for the authors to show neighboring DCs that have picked up dtTomato as well.\n\n2- For Figure 1, it could be useful to also show the cell numbers for the indicated subsets, rather than just the percentages.\n\nReviewer #3 (Recommendations for the authors):\n\nSome additional analyses would strengthen the conclusions of the study, but they may lead to altered interpretation of the data presented and revision of the model. Here are some suggestions:\n\nFor Figure 1, to strengthen the conclusion about which TEC subsets are over-represented in the 3 reporter mice, it would be helpful to show the distribution of TEC subsets in the CD45-EpCAM+ gate (regardless of TdTomato). This is important because, for example, P5 line 122 indicates that \"cTEC and mTEClow subsets were over-represented in Foxn1cre\" reporter mice. However, comparison to the frequency of TEC subsets in Supplementary Figure 1 suggests that these TEC subsets are not over-represented in the reporter, but are instead represented according to their normal subset frequencies. Similar conclusions can be drawn for post-Aire TECs and Tuft cells in the Defa6cre reporter. Comparing the percent of TEC subsets within the Tomato+ gate to the percent of subsets overall would more accurately indicate if a given subsets is over- or under-represented. In addition, it would be advisable to show the % of TdTomato+ cells within each subset to help interpret negative results. Both of these analyses could be added to Figure 1, and results/conclusions in the text should be revised accordingly.\n\nSimilarly, in Figure 2g, the % of each DC subsets within the CD11c+Tomato+ cells is quantified, but this could be influenced by the frequency of different DC subsets at steady state and/or their ability to acquire TdTomato from different TEC subsets. So it would be helpful to the frequency of DC subsets out of total CD11c+ cells, relative to the frequency of each subset within the TdTomato+ CD11c gate for each reporter to more accurately determine if the DC subsets are truly over- or under-represented. To this point, P6 line 156 states, \"XCR1+ aDCs were the most efficient cells involved in CAT irrespective of the Cre-based ROSA26TdTOM model used.\" However, the data show that ~40% of the tdTomato+CD11c+ cells are cDC1. From S2, ~ 40% of all Cd11c+ cells are cDC1. So instead of being more efficient at acquiring tdTomato from Foxn1cre reporter mTECs, they seem to be just the most abundant subset of DCs.\n\nIn Figure S2, showing the gating scheme for DC subsets, ~60% of the Xcr1-Ccr7- DCs do not express either MGL2 or CD14. This large subset of cDC2 cells seems to be excluded from downstream analyses. Do any of these cells acquire TdTomato in any of the reporters? Please either include the subset in the analyses or give a rationale for excluding them.\n\nFigure 3a provides the overall summary of data in Figures 1 and 2, while Figure 3C presents the results of the linear regression between the frequencies of TdTomato TEC subset and TdTomato DC subsets based on the combined 3 reporters. This regression analysis is used to draw the model in Figure 6. However, some aspects of the model seem inconsistent with data in Figure 1. For example, given the reduced representation of mTEChi plus pre-post Aire+ mTEC in Defa6iCre (54%) relative to Csnbcre (68%) (Figure 3a), one would expect a reduction in the frequency of XCR1+ aDC in tomato+DCs according to the model in Figure 6, since this DC subset acquires antigen from both of these TEC subsets. However, the frequency of XCR1+aDC stays about the same between the two models, as seen by the insignificant difference in the % Xcr1+aDC within the CD11c+TdTOM+ compartment in Figure 1g. So it seems like the model may be overinterpreting the results. The authors acknowledge that the model isn't really accurately reflecting antigen acquisition, as it predicted that cDC1 interacted only with cTECs, despite evidence in the literature to the contrary (lines 224-235). Thus, the authors used an alternate regression model based on Csnbcre reporters at 2 different ages, which precited that cDC1 cells could acquire antigen from mTEChigh cells. However, the possibility should be considered that the frequency of the DC subsets changes between 4-6weeks and 11-13 weeks, so changes in the frequency of DC subsets in TdTomato+ could reflect that change, rather than antigen acquisition from mTEChigh cells. To test this the subset frequency of DCs at 4-6 weeks versus 11-13 weeks should be shown. Also, from the regression data in 3c, it seems like both XCR1+ and XCR1- aDCs can generally acquire antigen from mTEChi and Pre-post Aire cells, while cDC2 seem to acquire antigen from both Post Aire cells and mTEClow cells too. So if regression analysis is the basis for the model in Figure 6, it needs to be modified accordingly.\n\nIn Figure 4, only ~10% of RFP+ and/or YFP+ TECs in the Foxn1cre ConfettiBrainbow2.1 mice were cDC1. This is surprising given that cDC1s made up ~40% TdTomato+ DCs in Foxn1cre mice in Figure 3a. Have the authors stained for the different TEC populations in the rainbow confetti mice to see if RFP/CFP vs YFP expression is equally dispersed among the TEC subsets? If so, what accounts for this discrepancy?\n\nIn Figure 5, CD11c+ cell scavenging can occur from all cDC subsets, so the model in 6 should be revised to include these.\n\nGiven that this study does not confirm expression of Cre by specific TEC subsets, conclusions about lineage tracing using these models in the Discussion (p11-12 lines 315-337) should be softened significantly or eliminated. The data in the paper don't adequately justify the conclusions in this paragraph.\n\nOn page 12, 343-345, it is stated that the authors \"defined two novel subsets of thymic aDCs, which are marked by the overexpression of the chemokine receptor CCR7.\" This is not novel, as Ardouin et al., defined these subsets within cDC1, as recognized by the authors, and Oh et al., (JI 2018; 200:1399-1412) and Hu et al., (Cell Reports 2017; 21:168-180) both showed expression of CCR7 by activated cDC1 and activated cDC2 subsets in the mouse thymus. Please modify the discussion accordingly.\n",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d0a49185-31b6-4c5d-a452-8a3df541fdb3",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C1",
+      "claim": "Medullary thymic epithelial cells (mTECs) produce and present self-antigens and are essential for the establishment of central tolerance.",
+      "claim_type": "EXPLICIT",
+      "source": "Medullary thymic epithelial cells (mTECs), which produce and present self-antigens, are essential for the establishment of central tolerance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement from the abstract that references established scientific understanding about mTEC function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "e31371ba-94d1-4f0b-8a8e-358d2720e145",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C2",
+      "claim": "mTEC function is complemented by thymic dendritic cells (DCs) which transfer mTEC-produced self-antigens via cooperative antigen transfer (CAT).",
+      "claim_type": "EXPLICIT",
+      "source": "Since mTEC numbers are limited, their function is complemented by thymic dendritic cells (DCs), which transfer mTEC-produced self-antigens via cooperative antigen transfer (CAT).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement in the abstract references established knowledge about DC function in the thymus.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "ce7eb859-ac6c-4680-a576-48cc5925300a",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C3",
+      "claim": "CAT is required for effective T cell selection.",
+      "claim_type": "EXPLICIT",
+      "source": "While CAT is required for effective T cell selection, many aspects remain enigmatic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement in the abstract references established knowledge about CAT function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "f26750bc-27e2-440d-a506-eb9f8ce13be8",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C4",
+      "claim": "Each subset of thymic DCs preferentially targets a distinct mTEC subset(s) in regards to CAT.",
+      "claim_type": "EXPLICIT",
+      "source": "Using several relevant Cre-based mouse models that control for the expression of fluorescent proteins, we have found that, in regards to CAT, each subset of thymic DCs preferentially targets a distinct mTEC subset(s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract based on experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "e5d84454-ea87-4df2-bc26-cfa5142cf652",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C5",
+      "claim": "XCR1+-activated DC subset represented the most potent subset in CAT.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, XCR1+-activated DC subset represented the most potent subset in CAT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract based on experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "802fda5a-b9c5-4703-9bc1-858acc6d97bd",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C6",
+      "claim": "Thymic DCs can acquire antigens from more than one mTEC.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, thymic DCs can also acquire antigens from more than one mTEC, and of these, monocyte-derived dendritic cells (moDCs) were determined to be the most efficient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract based on experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "1d39cb08-324b-4331-8869-fb7c9d8a1d17",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C7",
+      "claim": "Monocyte-derived dendritic cells (moDCs) are the most efficient DC subset in acquiring antigens from more than one mTEC.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, thymic DCs can also acquire antigens from more than one mTEC, and of these, monocyte-derived dendritic cells (moDCs) were determined to be the most efficient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract based on experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "a9cfbc88-d48f-4597-b899-bb2aa4562093",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C8",
+      "claim": "moDCs represented the most potent DC subset in the acquisition of antigen from other DCs.",
+      "claim_type": "EXPLICIT",
+      "source": "moDCs also represented the most potent DC subset in the acquisition of antigen from other DCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract based on experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "50264f4d-f051-4a69-95a2-cfb911476ce0",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C9",
+      "claim": "Central tolerance operates during T cell development in the thymus and can result in the elimination of self-reactive T cells or deviation to a thymic regulatory T cell (tTreg) lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Central tolerance, which operates during T cell development in the thymus, can result in the elimination of self-reactive T cells or deviation to a thymic regulatory T cell (tTreg) lineage (Klein et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references established knowledge with a citation to Klein et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "510a308f-510c-47d9-87e6-6a026cc229de",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C10",
+      "claim": "Immature T cells test their T cell receptor (TCR) for potential self-reactivity through scanning of self-antigens presented by antigen-presenting cells (APCs).",
+      "claim_type": "EXPLICIT",
+      "source": "The underlying principle of this event compels immature T cells to test their T cell receptor (TCR) for potential self-reactivity through the scanning of self-antigens that are presented by antigen-presenting cells (APCs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes established knowledge about T cell selection.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "61f8b14b-bfbb-48e4-8d49-4b743dc43eb6",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C11",
+      "claim": "Thymic epithelial cells (TECs) are central to the T cell selection process.",
+      "claim_type": "EXPLICIT",
+      "source": "Among all thymic APCs, thymic epithelial cells (TECs) are central to this selection process (Klein et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references established knowledge with a citation to Klein et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "741f3aa1-2c64-4ee4-8e75-b4396aa17835",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C12",
+      "claim": "TECs are divided into cortical thymic epithelial cells (cTECs) and medullary thymic epithelial cells (mTECs) based on their localization within the thymus.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on their localization within the thymus, TECs are generally divided into two major populations: cortical thymic epithelial cells (cTECs) and medullary thymic epithelial cells (mTECs) (Derbinski et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references established knowledge with a citation to Derbinski et al., 2001.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "5d763fe8-4c4d-4397-be2e-4ff158f09c46",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C13",
+      "claim": "Single-cell RNA sequencing (scRNAseq) revealed an unexpected heterogeneity of mTECs with at least five distinct subsets.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, results of single-cell RNA sequencing (scRNAseq) revealed an unexpected heterogeneity of mTECs with at least five distinct subsets defined by developmental stage, transcription profile, and function (referred to as mTEC-I, -II, -IIIa, IIIb, and Tuft cells) (Baran-Gale et al., 2020; Bornstein et al., 2018; Miller et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references findings from other studies with citations to Baran-Gale et al., 2020; Bornstein et al., 2018; Miller et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "d25b0d1f-48b1-471b-8c32-a22e17bb474f",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C14",
+      "claim": "mTECs express and present more than 80% of the protein-coding genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to their unique ability to express and present more than 80% of the protein-coding genome, mTECs are well-adapted to serve as a principal self-antigen-producing cellular component of central tolerance (Brennecke et al., 2015; Meredith et al., 2015; Sansom et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references findings from other studies with citations to Brennecke et al., 2015; Meredith et al., 2015; Sansom et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "aaf6a3e3-cce9-4242-8dc7-2cb50e0a6258",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C15",
+      "claim": "The autoimmune regulator (Aire) controls the gene expression of a large set of tissue-restricted antigens (TRAs) found only in the immune periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in part facilitated by the expression of the autoimmune regulator (Aire). Aire controls the gene expression of a large set of tissue-restricted antigens (TRAs) that are found only in the immune periphery (Derbinski et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references established knowledge with a citation to Derbinski et al., 2001.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "7df2a693-d4d3-4018-97f0-880f0bca2031",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C16",
+      "claim": "Any particular TRA is expressed by only 1\u20133% of mTECs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, an effective display of a complete set of thymically expressed TRAs is achieved by their combinatorial mosaic expression by each mTEC with any particular TRA expressed by only 1\u20133% of mTECs (Derbinski et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references findings from another study with a citation to Derbinski et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "d7cf4261-45a2-4261-aa23-bb2c8a8dbaa3",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C17",
+      "claim": "A single mTEC is capable of expressing up to 300 different TRAs.",
+      "claim_type": "EXPLICIT",
+      "source": "while a single mTEC is capable of expressing up to 300 different TRAs (Meredith et al., 2015; Sansom et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references findings from other studies with citations to Meredith et al., 2015; Sansom et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "09c131ab-ce2b-4de7-8ff9-ecf746095cbb",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C18",
+      "claim": "The highest Aire and TRA expression is observed within the mTEC-II stage during mTEC progression.",
+      "claim_type": "EXPLICIT",
+      "source": "During their progression through mTEC-I, -II, -IIIa, and -IIIb stages, the highest Aire and TRA expression is observed within the mTEC-II stage, historically referred to as mTEChigh.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes findings about mTEC development and Aire expression.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "ace6c175-044c-4811-9ed1-4f03afea41fa",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C19",
+      "claim": "mTEC-II cells downregulate Aire expression as they enter pre-post Aire and post-Aire phases, but their TRA protein levels remain high.",
+      "claim_type": "EXPLICIT",
+      "source": "As mTEC-II cells enter pre-post Aire and post-Aire phases (phase -IIIa and -IIIb, respectively), they downregulate the expression of Aire, although their TRA protein levels remain high, making them available for transfer to other cells (Kadouri et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references findings from another study with a citation to Kadouri et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "270270a6-9c43-4ef9-ad72-d30078b35ddd",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C20",
+      "claim": "The expression of TRA in mTEC-I (mTEClow) is limited.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that the expression of TRA in mTEC-I (also referred to as mTEClow) is limited (Baran-Gale et al., 2020; Bornstein et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references findings from other studies with citations to Baran-Gale et al., 2020; Bornstein et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "afc5c21c-7b5b-4253-a84f-ed8d87972117",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C21",
+      "claim": "TRAs from apoptotic mTECs can be transferred into and indirectly presented to T cells by thymic dendritic cells (DCs) via cooperative antigen transfer (CAT).",
+      "claim_type": "EXPLICIT",
+      "source": "To overcome this limitation, TRAs from apoptotic mTECs can be transferred into, and indirectly presented to, T cells by thymic dendritic cells (DCs) via the process of cooperative antigen transfer (CAT) (Gallegos and Bevan, 2004; Koble and Kyewski, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references established knowledge with citations to Gallegos and Bevan, 2004; Koble and Kyewski, 2009.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "92b82944-c6a7-41dd-9ac0-3041ca801fd8",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C22",
+      "claim": "CAT is critical for the establishment of central tolerance to mTEC-derived self-antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been demonstrated that CAT is critical for the establishment of central tolerance to mTEC-derived self-antigens (Lancaster et al., 2019; Perry et al., 2014; Perry et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references findings from other studies with citations to Lancaster et al., 2019; Perry et al., 2014; Perry et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "70ff4be5-10ff-4767-98e0-648d8a1bb392",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C23",
+      "claim": "Thymic DCs can be divided into plasmacytoid dendritic cells (pDCs) and classical dendritic cells (cDCs), with cDCs subdivided into cDC1 and cDC2 subsets.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, thymic DCs can be divided into two major categories: plasmacytoid dendritic cells (pDCs) and classical dendritic cells (cDCs), the latter of which can be subdivided into cDC1 and cDC2 subsets (Guilliams et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references established knowledge with a citation to Guilliams et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "5e4247aa-95a7-4ae6-9e8e-9d817a82900b",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C24",
+      "claim": "DC subsets vary in their capacity to acquire mTEC-derived antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that these DC subsets vary in their capacity to acquire mTEC-derived antigens (Kroger et al., 2017; Lancaster et al., 2019; Vobo\u0159il et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references findings from other studies with citations to Kroger et al., 2017; Lancaster et al., 2019; Vobo\u0159il et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "2b3aeaaa-a7ad-4391-8f07-ee6c662e106d",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C25",
+      "claim": "The cDC1 subset strongly acquires GFP antigen from mTEC in an Aire-GFP mouse model.",
+      "claim_type": "EXPLICIT",
+      "source": "The cDC1 subset has been shown to strongly acquire GFP antigen from mTEC in an Aire-GFP mouse model (Perry et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references findings from another study with a citation to Perry et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "bece0724-e4fc-4047-8adb-99c533749910",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C26",
+      "claim": "The cDC2 subset robustly acquires mOVA antigen in a RIP-mOVA mouse model.",
+      "claim_type": "EXPLICIT",
+      "source": "while the cDC2 subset robustly acquired mOVA antigen in a RIP-mOVA mouse model (Lancaster et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references findings from another study with a citation to Lancaster et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "65a54d3a-d94b-4e70-8519-901fe866ee51",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C27",
+      "claim": "The expression of Aire-driven GFP in the thymus is largely restricted to Aire+ mTECs.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the expression of Aire-driven GFP and mOVA in the thymus was largely restricted to Aire+ mTECs (Gardner et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references findings from another study with a citation to Gardner et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "45a03a58-09d3-4e40-b713-9d2326c305be",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C28",
+      "claim": "The expression of mOVA in the thymus is largely restricted to mTECLow/post-Aire mTECs.",
+      "claim_type": "EXPLICIT",
+      "source": "and mTECLow/post-Aire mTECs, respectively (Mouri et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references findings from another study with a citation to Mouri et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "380bc5d2-07eb-4543-95c6-6f59368603cf",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C29",
+      "claim": "Distinct subsets of thymic DCs acquire antigens from distinct subsets of mTECs.",
+      "claim_type": "EXPLICIT",
+      "source": "it has been inferred that distinct subsets of thymic DCs acquire antigens from distinct subsets of mTECs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on previous studies mentioned in the text.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "c8dce9bb-17f0-449d-8479-75fa05a4a169",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C30",
+      "claim": "scRNAseq analysis exposed a much broader heterogeneity of DCs in the thymus of mice and humans.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our recent scRNAseq analysis, along with data from the human thymus cell atlas study, exposed a much broader heterogeneity of DCs in the thymus of mice and humans (Park et al., 2020; Vobo\u0159il et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references findings from studies with citations to Park et al., 2020; Vobo\u0159il et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "1314e471-f1bc-4c22-baa8-66ffcccd8445",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C31",
+      "claim": "Foxn1CreRosa26TdTOM (Foxn1Cre) mice express TdTOM in all populations of CD45\u2013EpCAM+ TECs.",
+      "claim_type": "EXPLICIT",
+      "source": "we generated (i) Foxn1CreRosa26TdTOM (Foxn1Cre) mice that express TdTOM in all populations of CD45\u2013EpCAM+ TECs (Gordon et al., 2007; Vobo\u0159il et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental mouse model used in the study with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "016faa71-5da4-419a-87ac-05a4371b0638",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C32",
+      "claim": "CsnbCreRosa26TdTOM (CsnbCre) mice have Casein \u03b2 (Csnb) loci operating as an Aire-independent TRA that confines TdTOM expression to the mTECHigh subset and their closest progenitors and progeny.",
+      "claim_type": "EXPLICIT",
+      "source": "(ii) CsnbCreRosa26TdTOM (CsnbCre) with Casein \u03b2 (Csnb) loci operating as an Aire-independent TRA that confines TdTOM expression to the mTECHigh subset and their closest progenitors and progeny (Bornstein et al., 2018; Tykocinski et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental mouse model used in the study with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "ca5e8b99-c53b-4ee3-87dc-4cfa141ca672",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C33",
+      "claim": "Defa6iCreRosa26TdTOM (Defa6iCre) represents the 'classical' Aire-dependent TRA model, in which TdTOM is expressed in 1\u20133% of Aire+ mTECHigh cells as well as post-Aire mTEC progeny.",
+      "claim_type": "EXPLICIT",
+      "source": "and (iii) Defa6iCreRosa26TdTOM (Defa6iCre). The latter model represents the 'classical' Aire-dependent TRA model, in which TdTOM is expressed in 1\u20133% of Aire+ mTECHigh cells as well as post-Aire mTEC progeny (Adolph et al., 2013; Dobe\u0161 et al., 2015; Figure 1a\u2013c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental mouse model used in the study with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "4b55a437-e868-43a2-8949-7a59414098d6",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C34",
+      "claim": "The frequency of TdTOM+ cells in the Foxn1Cre model reaches nearly 100%.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparative analysis of the percentage of TdTOM+ cells within the parent TEC population confirmed that whereas the frequency of TdTOM+ cells in the Foxn1Cre model reached as expected nearly 100%",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "5235c9f4-6b14-453b-b03f-4a29fc2abc1d",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C35",
+      "claim": "The frequency of TdTOM+ cells dramatically decreases in the CsnbCre model compared to Foxn1Cre.",
+      "claim_type": "EXPLICIT",
+      "source": "it dramatically decreased in the CsnbCre and to a greater extent in the Defa6iCre model (Figure 1\u2014figure supplement 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's experimental data analysis with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "4d8ae014-cd23-436f-abf7-17213668388e",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C36",
+      "claim": "The major contribution to the TdTOM+ pool of cells in the CsnbCre and Defa6iCre models comes from the mTECHigh and pre-post Aire subsets.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also clear that the major contribution to the TdTOM+ pool of cells in the CsnbCre and Defa6iCre models came from the mTECHigh and pre-post Aire subsets (Figure 1\u2014figure supplement 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's experimental data analysis with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "0d236105-83ac-4f7c-bd9c-18f99dc6bfdf",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C37",
+      "claim": "TdTOM is mostly acquired by CD11c+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously shown (Vobo\u0159il et al., 2020) as well as in Figure 2b and c, TdTOM is mostly acquired by CD11c+ cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's experimental data with reference to previous work and figures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "a2e094c9-741c-49ef-825e-32afe8c1a166",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C38",
+      "claim": "TdTOM positivity is observed in ~6% of CD11c+ cells in the Foxn1Cre model.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas TdTOM positivity was observed in ~6% of CD11c+ cells in the Foxn1Cre model",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the study's experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "ff130b4e-12bd-4f7a-b053-686382b7a642",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C39",
+      "claim": "TdTOM positivity in CsnbCre is limited to ~0.6% of CD11c+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "its frequency in CsnbCre and Defa6iCre was limited to ~0.6% and ~0.02%, respectively (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the study's experimental data with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "34f83ce0-0d9e-4e8d-8c69-23f23ebffa24",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C40",
+      "claim": "TdTOM positivity in Defa6iCre is limited to ~0.02% of CD11c+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "its frequency in CsnbCre and Defa6iCre was limited to ~0.6% and ~0.02%, respectively (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the study's experimental data with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "952c1e2a-e37f-4873-9bfd-3e5b42717f27",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C41",
+      "claim": "The ratio between the frequency of TdTOM+CD11c+ and TdTOM+CD45\u2013EpCAM+ TECs is comparable across Foxn1Cre, CsnbCre, and Defa6iCre mouse models.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, since the frequency of TdTOM+ TECs was analogously decreased across the Foxn1Cre, CsnbCre, and Defa6iCre mouse models (Figure 1c), the ratio between the frequency of TdTOM+CD11c+ and TdTOM+CD45\u2013EpCAM+ TECs was comparable (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's experimental data analysis with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "05a3293b-171f-4e9c-9b0e-165baa1d05f7",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C42",
+      "claim": "CAT efficiency between donor TECs and CD11c+ APC acceptors is similar irrespective of the robustness and cell-subset range of TdTOM expression in TECs.",
+      "claim_type": "EXPLICIT",
+      "source": "These analyses argue for the similarity in CAT efficiency between donor TECs and CD11c+ APC acceptors, irrespective of the robustness and cell-subset range of TdTOM expression in TECs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "93c571f3-5d23-43a1-8866-659921f66044",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C43",
+      "claim": "XCR1+ aDCs are the most efficient cells involved in CAT irrespective of the Cre-based Rosa26TdTOM model used.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparative analysis of the ability of each of these thymic CD11c+ APC subsets to acquire TEC-derived TdTOM showed that XCR1+ aDCs were the most efficient cells involved in CAT irrespective of the Cre-based Rosa26TdTOM model used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "d35c07fd-8a5b-406e-9374-085d43327ee8",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C44",
+      "claim": "Macs and pDCs are relatively inefficient in CAT.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, while Macs and pDCs were relatively inefficient, the remaining subsets varied in this efficiency depending on the Cre-model analyzed (Figure 2\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's experimental data analysis with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "3d0d2965-41e3-4800-b810-40781ecc24e3",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C45",
+      "claim": "TdTOM is transferred from TECs to all subpopulations of thymic CD11c+ APCs and is not endogenously expressed by these APCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Using bone marrow (BM) chimeras of sublethally irradiated mouse models (Foxn1Cre, CsnbCre, and Defa6iCre) reconstituted with congenically marked BM cells isolated from WT animals, we verified that TdTOM is indeed transferred from TECs to all subpopulations of thymic CD11c+ APCs and is not endogenously expressed by these APCs themselves (Figure 2\u2014figure supplement 1c\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's experimental data using bone marrow chimeras with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "3cce4ed5-c799-44de-80a1-fee5b0c74e3d",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C46",
+      "claim": "The contribution of cDC1s and moDCs to CAT is robust in all three Cre-based Rosa26TdTOM models.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyzing each of the Cre-based Rosa26TdTOM mouse models individually (Figure 2f), the data revealed that whereas the contribution of cDC1s and moDCs to CAT was robust in all three models",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's experimental data analysis with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "cf71f463-7ba9-4526-8ebb-f86cb85b0a0d",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C47",
+      "claim": "The contribution of pDCs, Macs, cDC2s, and both populations of aDC subsets to CAT varies among the Cre-based Rosa26TdTOM models.",
+      "claim_type": "EXPLICIT",
+      "source": "the contribution of pDCs, Macs, cDC2s, and both populations of aDC subsets varied among the models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "23f561bf-6fdb-47a7-99cf-cca19b87730b",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C48",
+      "claim": "The ratio between the percentage of TdTOM+ DC subset and the overall percentage for cDC2s, pDCs, and Macs is increased in the Foxn1Cre mouse model.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the ratio between the percentage of TdTOM+ DC subset and the overall percentage for cDC2s, pDCs, and Macs was increased in the Foxn1Cre mouse model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "d4e42054-d1f8-4949-81bf-00040054f762",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C49",
+      "claim": "The ratio for XCR1+ and XCR1\u2013 aDCs is lowest in Foxn1Cre, increases in CsnbCre, and is highest in the Defa6iCre model.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, this ratio for XCR1+ and XCR1\u2013 aDCs was the lowest in Foxn1Cre, with an increase detected in CsnbCre, and the highest ratio detected in the Defa6iCre model (Figure 2g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's experimental data analysis with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "f224f44d-7a6a-4018-be86-478d9f6485cd",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C50",
+      "claim": "CAT to cDC1s significantly correlates with the expression of TdTOM in mTECHigh.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, CAT to cDC1s significantly correlated with the expression of TdTOM in mTECHigh",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's linear regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "0ded1864-d540-4023-9c93-e0ea43f6558b",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C51",
+      "claim": "CAT to XCR1+ aDCs correlates with mTECHigh, pre-post Aire, and Tuft mTECs.",
+      "claim_type": "EXPLICIT",
+      "source": "XCR1+ aDCs with mTECHigh, pre-post Aire, and Tuft mTECs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's linear regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "b7856974-fd4d-4351-bb66-773e7e493826",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C52",
+      "claim": "CAT to XCR1\u2013 aDCs correlates with mTECHigh and pre-post Aire mTECs.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas XCR1\u2013 aDCs with mTECHigh and pre-post Aire mTECs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's linear regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "8bffbd7c-8bcc-424e-bbd7-60ce82c8affb",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C53",
+      "claim": "pDCs and Macs correlate with antigen production in post-Aire mTECs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, pDCs, and to a lesser extent Macs, correlated with antigen production in post-Aire mTECs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's linear regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "f4a1b5f8-73ec-4600-860e-df8a60eecd2c",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C54",
+      "claim": "The positive correlation between pDCs and post-Aire mTECs is consistent with Hassall's corpuscles affecting the migration and activation of thymic pDCs through the production of chemokines and cytokines.",
+      "claim_type": "EXPLICIT",
+      "source": "The positive correlation observed between pDCs and post-Aire mTECs is consistent with the fact that Hassall's corpuscles affect the migration and activation of thymic pDCs through the production of chemokines and cytokines (Wang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the study's findings in the context of previous research with a citation to Wang et al., 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "559afb65-9175-462a-9dcb-a1a80dc7b660",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C55",
+      "claim": "Macs, cDC2s, and pDCs correlate with the mTECLow population.",
+      "claim_type": "EXPLICIT",
+      "source": "Macs, cDC2s, and pDCs were found to also correlate with the mTECLow population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's linear regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "a9341203-d4a7-412c-890b-d6c110668e98",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C56",
+      "claim": "The Macs population and cDC2s significantly correlate with the expression of TdTOM in cTECs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the Macs population, and to a lesser extent cDC2s, significantly correlated with the expression of TdTOM in cTECs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's linear regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "bf6fd01c-5797-4106-b99d-592aa9864bc9",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C57",
+      "claim": "Thymic Macs and cDC2s reside in the thymic cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the notion that both thymic Macs and cDC2s reside in the thymic cortex (Baba et al., 2009; Breed et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references established knowledge with citations to Baba et al., 2009; Breed et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "db9b7066-94e3-4454-8644-c5e4626f9131",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C58",
+      "claim": "CAT to pDCs, Macs, and cDC2s is highly affected by the frequency of total TdTOM+ TECs.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also important to emphasize that CAT to pDCs, Macs, and cDC2s is highly affected by the frequency of total TdTOM+ TECs (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's experimental data analysis with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "6021d57d-965b-437f-82ee-2a4b91b24aaa",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C59",
+      "claim": "If the availability of TEC-derived antigens is limited, pDCs, Macs, and cDC2s are outcompeted in CAT by other DC subsets.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, if the availability of TEC-derived antigens is limited, these subsets are outcompeted in CAT by other DC subsets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "4e8369b1-d30a-4ac2-9e2a-91bf6fa15b13",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C60",
+      "claim": "CAT occurs between subsets of TECs and thymic DCs in a selective manner, with the exception of moDCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, this data confirms the hypothesis that CAT occurs between subsets of TECs and thymic DCs in a selective manner, with the exception of moDCs, which failed to reveal a preference for any subset of TECs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study's experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "8bf87c6d-a69a-49f0-a49c-a006b77ac3f3",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C61",
+      "claim": "moDCs failed to reveal a preference for any subset of TECs in CAT.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, this data confirms the hypothesis that CAT occurs between subsets of TECs and thymic DCs in a selective manner, with the exception of moDCs, which failed to reveal a preference for any subset of TECs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "86ab63ed-bb83-4983-9507-89436f549350",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C62",
+      "claim": "Most thymic CD11c+ subsets acquire antigens from more than one mTEC subset.",
+      "claim_type": "EXPLICIT",
+      "source": "In experiments in which single-fluorescent protein (FP) transfer mouse models were utilized, most of the thymic CD11c+ subsets acquired antigens from more than one mTEC subset (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's experimental data analysis with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "13b9a22c-aa35-4ae9-ae05-55f5101f50e7",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C63",
+      "claim": "GFP expression is absent in TECs isolated from Foxn1CreConfettiBrainbow2.1 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Visualizing TECs from Foxn1CreConfettiBrainbow2.1 and MHCII-EGFP mice, the latter used as a positive control, either separately or as a mixed cell suspension, confirmed that GFP is indeed absent in TECs isolated from Foxn1CreConfettiBrainbow2.1 mice (Figure 4\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's experimental data with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "d5c10b8f-1424-4201-950c-47a6c1a8c401",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C64",
+      "claim": "TECs that express YFP do not express RFP and/or CFP and vice versa in Foxn1CreConfettiBrainbow2.1 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that YFP and RFP/CFP are expressed from mutually exclusive cassettes in Foxn1CreConfettiBrainbow2.1 mice (Snippert et al., 2010), those TECs that express YFP do not express RFP and/or CFP and vice versa (Figure 4\u2014figure supplement 1b\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's experimental data with reference to a citation and figures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "1c81ecbf-dcc2-43a2-909e-16b394c0fbe0",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C65",
+      "claim": "DCs that are positive for both RFP and YFP must have obtained these antigens from two or more distinct TECs.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, those DCs that were positive for both RFP and YFP must have obtained these antigens from two or more distinct TECs (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a logical inference from the experimental design and data with reference to a figure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "fd5e485e-b7cf-4005-9e60-b279f98fe031",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C66",
+      "claim": "Multi-antigen transfer occurs nearly as frequently as the transfer from a single mTEC.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that this multi-antigen transfer occurred nearly as frequently as the transfer from a single mTEC and that all CD11c+ APCs were involved in repetitive CAT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "9ea6f6ce-abbb-4fc0-8c8e-42d2ff296d7e",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C67",
+      "claim": "All CD11c+ APCs are involved in repetitive CAT.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that this multi-antigen transfer occurred nearly as frequently as the transfer from a single mTEC and that all CD11c+ APCs were involved in repetitive CAT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "666ea01f-ad09-4ca4-9ce7-569f6f648dbd",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C68",
+      "claim": "moDCs reveal the highest frequency of RFP+YFP+ cells, suggesting a high level of promiscuity in targeting TEC subsets.",
+      "claim_type": "EXPLICIT",
+      "source": "However, moDCs revealed the highest frequency of RFP+YFP+ cells, which suggests a high level of promiscuity in targeting TEC subsets (Figure 4b, Figure 4\u2014figure supplement 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's experimental data analysis with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "f2be8589-08e4-4630-a1c2-956c178fb231",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C69",
+      "claim": "The transfer of CFP membrane antigen is observed less frequently than that of cytosolic antigens YFP and RFP.",
+      "claim_type": "EXPLICIT",
+      "source": "The Foxn1CreConfettiBrainbow2.1 model also showed that the transfer of the CFP membrane antigen was observed less frequently than that of cytosolic antigens YFP and RFP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "131b92c5-a66b-445a-bf1d-b087be0685fe",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C70",
+      "claim": "CFP transfer is largely mediated by XCR1+ aDCs, which exhibit more than a fivefold higher frequency of CFP positivity than any other CD11c+ subset.",
+      "claim_type": "EXPLICIT",
+      "source": "CFP transfer was largely mediated by XCR1+ aDCs, which exhibited more than a fivefold higher frequency of CFP positivity than any other CD11c+ subset (Figure 4c, Figure 4\u2014figure supplement 1f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's experimental data analysis with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "ac721416-06ed-4c73-8c61-4c3f72ffe3d1",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C71",
+      "claim": "The highest frequency of CFP+RFP+YFP+ cells is found in the moDC subset.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected and consistent with their strong capacity to acquire FPs from more than one mTEC, the highest frequency of CFP+RFP+YFP+ cells was found in the moDC subset (Figure 4\u2014figure supplement 1g, right plot).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's experimental data analysis with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "8ffa1d08-0802-4c3b-a97e-fe73c7d94c6d",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C72",
+      "claim": "CFP is localized mainly to the plasma membranes of CAT-experienced XCR1+ aDCs.",
+      "claim_type": "EXPLICIT",
+      "source": "It is of note that CFP was in direct contrast to other FPs that were localized mainly to the plasma membranes of CAT-experienced XCR1+ aDCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's imaging flow cytometry analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "6c0924a7-8976-400e-a625-5552a4bfa869",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C73",
+      "claim": "A single CD11c+ APC frequently acquires antigens from more than one mTEC.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, using Foxn1CreConfettiBrainbow2.1 mice, we demonstrated that a single CD11c+ APC frequently acquired antigens from more than one mTEC",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study's experimental data using the Foxn1CreConfettiBrainbow2.1 mouse model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "226691d3-8693-4299-963b-bd34b7a52dd8",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C74",
+      "claim": "moDCs are the most potent subset in repetitive CAT.",
+      "claim_type": "EXPLICIT",
+      "source": "and that the most potent subset in this repetitive CAT were moDCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study's experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "07d1aa10-c52e-49bb-b97f-da28edc990f3",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C75",
+      "claim": "XCR1+ aDCs are effective in the acquisition of both cytosolic and membrane-bound antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we also showed that XCR1+ aDCs were effective in the acquisition of both cytosolic and membrane-bound antigens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study's experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "774543c4-6990-4610-b14d-2fabed94be33",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C76",
+      "claim": "Out of all CD45.1+CD11c+ cells, approximately 0.75% acquire TdTOM from CD45.2+CD11c+ cells in mixed BM chimera experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Flow cytometric analysis showed that out of all CD45.1+CD11c+ cells, approximately 0,75% acquired TdTOM from CD45.2+CD11c+ cells (Figure 5b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's bone marrow chimera experiment with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "04b1ee03-9103-4545-9c2b-2ae9d6cfdb16",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C77",
+      "claim": "The contribution of both aDC subsets and cDC2s to CAT from other CD11c+ cells is robust.",
+      "claim_type": "EXPLICIT",
+      "source": "While the contribution of both aDC subsets and cDC2s to CAT was robust",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's bone marrow chimera experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "bf6af818-0669-49ce-a8e9-0b8c78795a5a",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C78",
+      "claim": "The highest frequency of TdTOM+ cells from other CD11c+ cells is found among the moDC subset.",
+      "claim_type": "EXPLICIT",
+      "source": "the highest frequency of TdTOM+ cells was found among the moDC subset (Figure 5d, Figure 5\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's bone marrow chimera experiment with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "d9adc861-a8b3-4b65-a911-757fe194d83e",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C79",
+      "claim": "Thymic CD11c+ cells, especially moDCs, acquire antigens from other CD11c+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, thymic CD11c+ cells, especially moDCs, acquired antigens not only from TECs but from other CD11c+ cells as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study's bone marrow chimera experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "17a83489-b8e2-4607-802d-0582c1548f7b",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C80",
+      "claim": "CAT is mediated predominantly by preferential pairing between cTECs and Mac and cDC2.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, utilizing several murine genetic models that allowed the tracking of TEC-produced antigen, we determined that CAT is mediated predominantly by preferential pairing between the following TEC and CD11c+ DC subsets: (i) cTECs to Mac and cDC2",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study's experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "268a6131-742b-41bd-9546-edb174a12acc",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C81",
+      "claim": "CAT is mediated predominantly by preferential pairing between mTECLow and Mac, cDC2, and pDC.",
+      "claim_type": "EXPLICIT",
+      "source": "(ii) mTECLow to Mac, cDC2, and pDC",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study's experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "f7db6125-d2cf-4df3-a76f-eb693396e451",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C82",
+      "claim": "CAT is mediated predominantly by preferential pairing between mTECHigh and XCR1+ and XCR1\u2013 aDC, and cDC1.",
+      "claim_type": "EXPLICIT",
+      "source": "(iii) mTECHigh to XCR1+ and XCR1\u2013 aDC, and cDC1",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study's experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "82aef545-2ac8-4928-84ec-d70315843685",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C83",
+      "claim": "CAT is mediated predominantly by preferential pairing between pre-post Aire mTEC and XCR1+ and XCR1\u2013 aDC.",
+      "claim_type": "EXPLICIT",
+      "source": "(iv) pre-post Aire mTEC to XCR1+ and XCR1\u2013 aDC",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study's experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "ca37a423-faec-4e57-ba4f-84914baef403",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C84",
+      "claim": "CAT is mediated predominantly by preferential pairing between post-Aire mTEC and pDCs and Mac.",
+      "claim_type": "EXPLICIT",
+      "source": "(v) post-Aire mTEC to pDCs and Mac",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study's experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "ab5f4b33-4d95-466a-aea3-8b43a94a770e",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C85",
+      "claim": "CAT is mediated predominantly by preferential pairing between Tuft mTEC and XCR1+ aDC.",
+      "claim_type": "EXPLICIT",
+      "source": "and (vi) Tuft mTEC to XCR1+ aDC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study's experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "dfee0147-7b81-4417-8baf-585037ec329a",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C86",
+      "claim": "Antigen acquisition by Macs, cDC2s, and pDCs can occur when antigen is abundant.",
+      "claim_type": "EXPLICIT",
+      "source": "It seems that the antigen acquisition by Macs, cDC2s, and, to some extent, pDCs can occur when antigen is abundant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "38f4b5a7-e98c-419f-82f8-df3fd1bdc14b",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C87",
+      "claim": "Thymic moDCs generally obtain antigen from multiple cellular sources of thymic TECs as well as CD11c+ DC subsets.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we also report that thymic moDCs, which do not exhibit subset specificity in CAT, generally obtain antigen from multiple cellular sources of thymic TECs as well as CD11c+ DC subsets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study's experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "21cc9209-d9b2-46e3-b73f-f4c6dbd72e6b",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C88",
+      "claim": "TdTOM expression in the CsnbCreRosa26TdTOM mouse model is detected in a small proportion of mTECLow, in most mTECHigh, post-Aire mTEC, and Tuft mTEC subsets.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been reported that TdTOM expression in the CsnbCreRosa26TdTOM mouse model is detected in a small proportion of mTECLow, in most mTECHigh, post-Aire mTEC, and Tuft mTEC subsets (Bornstein et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references findings from another study with a citation to Bornstein et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "3159b60d-9471-475b-ae90-ace5b8befee9",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C89",
+      "claim": "Csnb is expressed by a specific population of mTECLow progenitors that further differentiate into mTECsHigh cells and later into their progeny.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with our data (Figure 1f), which suggests that Csnb is expressed by a specific population of mTECLow progenitors that further differentiate into mTECsHigh cells and later into their progeny.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the study's data with reference to a figure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "9e65d3e7-3ad3-4ce1-bd78-5879cdd42ed1",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C90",
+      "claim": "The expression of defensins in the thymus is highly dependent on Aire.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the TdTOM expression in Defa6iCreRosa26TdTOM should be specifically attributed to the Aire+ mTECHigh subset and their post-Aire progeny since the expression of defensins in the thymus is highly dependent on Aire (Dobe\u0161 et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references findings from another study with a citation to Dobe\u0161 et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "4984a101-22a0-44f6-be71-baa98efc33ba",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C91",
+      "claim": "Several distinct subpopulations of post-Aire mTEC have been detected.",
+      "claim_type": "EXPLICIT",
+      "source": "Since several distinct subpopulations of post-Aire mTEC were detected (Dhalla et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references findings from another study with a citation to Dhalla et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "07475d75-7d29-41fc-90f3-042dbe2c3f18",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C92",
+      "claim": "Cre recombination in mTECLow in the Defa6iCre model likely reflects the presence of the LY6D\u2013 population of post-Aire cells rather than Defa6 locus activation in Aire\u2013 mTECLow progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "we hypothesized that Cre recombination in mTECLow likely reflects the presence of the LY6D\u2013 population of post-Aire cells than Defa6 locus activation in Aire\u2013 mTECLow progenitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors based on their data and previous findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "359f408c-2197-40c7-aa32-0a7e69075fd2",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C93",
+      "claim": "The significant correlation in CAT between mTECLow and pDC subsets could be influenced by the presence of LY6D\u2013 post-Aire cells in the mTECLow gate.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the significant correlation in CAT between mTECLow and pDC subsets could be influenced by this phenomenon since pDCs were shown to acquire the antigen mostly from post-Aire mTECs (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the study's findings with reference to a figure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "93f231a5-55d4-4c6a-a94a-302608e05076",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C94",
+      "claim": "The expression of Ccr7 defines the population of XCR1+CCR7+ cDC1s that is considered to be the progeny of XCR1+CCR7\u2013 cDC1s.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, it has been reported that the expression of Ccr7 defines the population of XCR1+CCR7+ cDC1s that is considered to be the progeny of XCR1+CCR7\u2013 cDC1s (Ardouin et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references findings from another study with a citation to Ardouin et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "68cc13c1-5f85-4be1-a67d-66bc5b3e9fe4",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C95",
+      "claim": "CCR7+ cDC1s express molecules associated with the cDC1 signature such as Batf3, Cd8\u03b1, Ly75, or Cadm1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, since these CCR7+ cDC1s express not only molecules that are associated with the cDC1 signature, such as Batf3, Cd8\u03b1, Ly75, or Cadm1 (Vobo\u0159il et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references findings from another study with a citation to Vobo\u0159il et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "144dfca8-c203-4cad-b7fe-b42134b6f247",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C96",
+      "claim": "CCR7+ cDC1s express molecules that characterize the population of aDCs including Il12b, Il15, Il15ra Cd274, Cd70, Cd40, Tnfrsf4.",
+      "claim_type": "EXPLICIT",
+      "source": "but also molecules that characterize the population of aDCs (Il12b, Il15, Il15ra Cd274, Cd70, Cd40, Tnfrsf4) (Ardouin et al., 2016; Park et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references findings from other studies with citations to Ardouin et al., 2016; Park et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "c5e0915f-72e6-4d43-a2b1-30f5f2458e78",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C97",
+      "claim": "XCR1+ aDCs are the most efficient DC subset in CAT even when compared to cDC1s.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, these cells are the most efficient DC subset in CAT even when compared to cDC1s (Figure 2\u2014figure supplement 1b, Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's experimental data analysis with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "1aed6cbe-ff20-4e5e-84d9-2d81ec5a932e",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C98",
+      "claim": "The differentiation of XCR1+ aDCs from cDC1s is driven by the uptake of apoptotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "It was recently suggested that the differentiation of XCR1+ aDCs from cDC1s is driven by the uptake of apoptotic cells (Maier et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references findings from another study with a citation to Maier et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "ef3f8fa4-f3b7-42d1-8a86-c676f0f6b53c",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C99",
+      "claim": "CAT has been shown to be mediated mostly by endocytosis of apoptotic bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Since CAT has been shown to be mediated mostly by endocytosis of apoptotic bodies (Koble and Kyewski, 2009; Perry et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references findings from other studies with citations to Koble and Kyewski, 2009; Perry et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "67936760-d990-4c33-825f-f3a518bae643",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C100",
+      "claim": "The differentiation of XCR1+ aDCs in the thymus is consistent with being driven by CAT.",
+      "claim_type": "EXPLICIT",
+      "source": "the differentiation of XCR1+ aDCs in the thymus is consistent with being driven by CAT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the study's findings in the context of previous research.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "1b753691-5d5d-46f0-9028-f556d68142ee",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C101",
+      "claim": "The correlation between mTECHigh and XCR1+ aDCs in TdTOM antigen transfer could be due to mTECHigh transferring antigen to XCR1+ cDC1 that further differentiate into XCR1+ aDC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the grounds for the correlation between mTECHigh and XCR1+ aDCs in TdTOM antigen transfer could be found in the fact that mTECHigh transfer antigen to XCR1+ cDC1 that further differentiate into XCR1+ aDC cells (Ardouin et al., 2016; Maier et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the study's findings in the context of previous research with citations to Ardouin et al., 2016; Maier et al., 2020.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "fcb70dc6-5f75-43b8-878b-9b8486a73cd7",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C102",
+      "claim": "The transcriptional signature of XCR1\u2013 aDCs is more similar to cDC2 than the cDC1 subset.",
+      "claim_type": "EXPLICIT",
+      "source": "In this context, it is also important to emphasize that the transcriptional signature of XCR1\u2013 aDCs is more similar to cDC2 (e.g., Sirpa and Pdcd1lg2) than the cDC1 subset (Park et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references findings from another study with a citation to Park et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "e4744149-efe2-4558-98a0-d4c679e0aeaf",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C103",
+      "claim": "Antigen transfer into cDC2s induces their differentiation into XCR1\u2013 aDCs.",
+      "claim_type": "EXPLICIT",
+      "source": "By the same token, this suggests that antigen transfer into cDC2s induces their differentiation into XCR1\u2013 aDCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "3475a041-39e4-44f4-895c-738270844665",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C104",
+      "claim": "The correlation of mTECHigh with cDC1s is limited when compared to the correlation of mTECHigh with XCR1+ aDC.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, the correlation of mTECHigh with cDC1s seems limited when compared to the correlation of mTECHigh with XCR1+ aDC (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's linear regression analysis with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "d4562be5-52bc-4e26-bf34-7d33fbf62b8e",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C105",
+      "claim": "Previous reports described cDC1 subset as the most efficient in acquiring antigens from Aire+ mTECHigh.",
+      "claim_type": "EXPLICIT",
+      "source": "This is contradictory to previous reports that described cDC1 subset as the most efficient in acquiring antigens from Aire+ mTECHigh (Lei et al., 2011; Perry et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references findings from other studies with citations to Lei et al., 2011; Perry et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "a5f4361d-7c47-4891-9d44-e4954e0276a4",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C106",
+      "claim": "Previous studies used only XCR1 positivity to characterize cDC1 cells in the thymus, which does not allow discrimination between cDC1s and XCR1+ aDCs.",
+      "claim_type": "EXPLICIT",
+      "source": "This could be explained by the fact that only XCR1 positivity was used by the authors to characterize cDC1 cells in the thymus. This does not allow one to discriminate between cDC1s and XCR1+ aDCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of previous studies' methodologies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "273b4496-b44b-4ba3-b2c2-bdaa3747bb6d",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C107",
+      "claim": "Antigen transfer from mTECHigh is mediated mostly by XCR1+ aDCs and only to a lesser extent by cDC1s.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, as suggested by our data, the antigen transfer from mTECHigh is mediated mostly by XCR1+ aDCs and only to a lesser extent by cDC1s (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion from the study's experimental data analysis with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "df77970a-12ed-48db-ad20-c8656416576a",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C108",
+      "claim": "moDCs are very potent in CAT.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, while moDCs are very potent in CAT (Figure 2e, Figure 2\u2014figure supplement 1b)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's experimental data analysis with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "d9de52a9-72b4-4eb1-8599-5b5caa19d6b3",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C109",
+      "claim": "The capacity of moDCs in CAT can be further enhanced under inflammatory conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "their capacity can be further enhanced under inflammatory conditions (Vobo\u0159il et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references findings from another study with a citation to Vobo\u0159il et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "204fac0f-8a67-4930-9203-bcab4e0f9207",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C110",
+      "claim": "Among other thymic DCs, the moDC subset is the most efficient in repetitive CAT.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrated that among other thymic DCs the moDC subset was the most efficient in repetitive CAT (Figure 4b, Figure 5\u2014figure supplement 1g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's experimental data analysis with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "556f040e-2523-4eb4-9eb2-fcce6560a008",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C111",
+      "claim": "moDCs' ability to efficiently acquire antigen from other CD11c+ APCs is a testament to their important function in central tolerance.",
+      "claim_type": "EXPLICIT",
+      "source": "This, along with their ability to efficiently acquire antigen from other CD11c+ APCs (Figure 5d), is a testament to their important function in central tolerance (Park et al., 2020; Vobo\u0159il et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the study's findings in the context of previous research with citations to Park et al., 2020; Vobo\u0159il et al., 2020.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "eb1eb748-c85d-4488-ae9d-8eaedfd6db47",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C112",
+      "claim": "Thymic moDCs express a plethora of different chemokines and scavenger receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Since thymic moDCs were shown to express a plethora of different chemokines and scavenger receptors (Park et al., 2020; Vobo\u0159il et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references findings from other studies with citations to Park et al., 2020; Vobo\u0159il et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "db25aa1c-eae9-40aa-aa17-623646fc4342",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C113",
+      "claim": "The characteristics of moDCs correlate with their high competence in regulated migration and phagocytic activity compared to other DC subsets.",
+      "claim_type": "EXPLICIT",
+      "source": "we propose that these characteristics correlate with their high competence in regulated migration and phagocytic activity compared to other DC subsets (Croxford et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposal by the authors based on their findings and previous research with a citation to Croxford et al., 2015.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "f3f2c689-01b5-429e-9782-9a8c876e873c",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C114",
+      "claim": "XCR1+ aDCs are the most potent subset in the acquisition of TEC-derived antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data shows that XCR1+ aDCs are the most potent subset in the acquisition of TEC-derived antigens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study's experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "7932c1a0-eeb7-40d3-a8dd-b48585b075ad",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C115",
+      "claim": "The moDC subset is the most efficient in the acquisition of antigen from multiple TECs as well as DCs.",
+      "claim_type": "EXPLICIT",
+      "source": "It also characterizes the moDC subset as the most efficient in the acquisition of antigen from multiple TECs as well as DCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study's experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "78542f25-567a-419c-8901-e592a66f17d1",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C116",
+      "claim": "CAT relies on a cellular interaction network with preferential partnerships between defined subtypes of TECs and DCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our work proposes that CAT relies on a cellular interaction network with preferential partnerships between defined subtypes of TECs and DCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study's experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "7bd9b74f-496c-4c9c-bbd9-b95e4ebee85b",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C117",
+      "claim": "The indirect presentation of antigens from developmentally related but phenotypically and functionally distinct types of TECs is ascribed to different subsets of thymic DCs.",
+      "claim_type": "EXPLICIT",
+      "source": "This, in turn, suggests that the indirect presentation of antigens from developmentally related but phenotypically and functionally distinct types of TECs is ascribed to different subsets of thymic DCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "3e9139f0-b7f6-4349-8b1f-c89460246ebd",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "claim_id": "C118",
+      "claim": "CAT is a deterministic process.",
+      "claim_type": "EXPLICIT",
+      "source": "Although this study suggests that CAT is a deterministic process",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study's experimental data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c3c9c4bd-19b8-4d7c-ac23-7e45ed33db4f",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Three Cre-based Rosa26TdTOM mouse models (Foxn1Cre, CsnbCre, Defa6iCre) were generated to express TdTOM in distinct TEC subsets. Foxn1Cre expresses TdTOM in nearly 100% of all TECs, CsnbCre in mTECHigh and related subsets, and Defa6iCre in 1-3% of Aire+ mTECHigh cells and post-Aire progeny.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C36 describe the experimental mouse models and their TdTOM expression patterns. The data in Figure 1 shows quantitative validation of TdTOM expression frequencies across TEC subsets in each model, with appropriate controls and microscopy confirmation. The models are well-characterized and properly cited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "f0d257e5-f74e-436b-a049-05d2f2e4937e",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "TdTOM is transferred from TECs to CD11c+ cells with frequencies of ~6%, ~0.6%, and ~0.02% in Foxn1Cre, CsnbCre, and Defa6iCre models respectively. The ratio of TdTOM+CD11c+ to TdTOM+TECs is comparable across models, suggesting similar CAT efficiency regardless of TdTOM expression levels in TECs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C42, C45 are supported by flow cytometry data (Figure 2b-d) and bone marrow chimera experiments confirming transfer rather than endogenous expression. The ratio analysis provides quantitative evidence for consistent CAT efficiency across models with different antigen availability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "7c0b00b4-a161-44cb-a99c-076ff0a877d3",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "XCR1+ aDCs are the most efficient DC subset in CAT across all three mouse models. The contribution of different DC subsets to CAT varies: cDC1s and moDCs show robust contribution in all models, while pDCs, Macs, cDC2s, and aDC subsets show model-dependent variation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C49 are supported by comparative flow cytometry analysis (Figure 2e-g, Figure 2\u2014figure supplement 1b) showing differential TdTOM acquisition by DC subsets. The tSNE analysis and ratio calculations provide quantitative evidence for subset-specific CAT efficiency.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "4dc52556-dbcf-44ff-9238-f13f1b1055cf",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Linear regression analysis reveals preferential pairing between specific TEC and DC subsets: cDC1s correlate with mTECHigh; XCR1+ aDCs with mTECHigh, pre-post Aire, and Tuft mTECs; XCR1- aDCs with mTECHigh and pre-post Aire; pDCs and Macs with post-Aire mTECs and mTECLow; Macs and cDC2s with cTECs. CAT to pDCs, Macs, and cDC2s is highly affected by total TdTOM+ TEC frequency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C60 are supported by linear regression analysis (Figure 3b-c) showing significant correlations between specific TEC and DC subsets. The statistical approach is appropriate for identifying preferential pairing patterns across the three mouse models with varying TdTOM expression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "53b46359-37da-4f43-99c2-34cf0bcefa92",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "moDCs show no preference for any specific TEC subset in CAT.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C61 is supported by the linear regression analysis (Figure 3b) showing that moDCs do not significantly correlate with any particular TEC subset, in contrast to other DC subsets that show clear preferential pairing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "a4ef2aea-93ac-4392-b7c9-8a14348f810f",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Using Foxn1CreConfettiBrainbow2.1 mice, single CD11c+ APCs frequently acquire antigens from more than one mTEC. Multi-antigen transfer occurs nearly as frequently as single-mTEC transfer, with all CD11c+ APCs involved. moDCs show the highest frequency of acquiring antigens from multiple TECs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C68, C73-C74 are supported by the Confetti system data (Figure 4b, Figure 4\u2014figure supplement 1e) showing RFP+YFP+ double-positive cells. The experimental design properly controls for mutually exclusive fluorescent protein expression in TECs, making double-positive DCs definitive evidence of multi-TEC antigen acquisition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "fe481581-6c79-4a33-bd89-8d820baafcdd",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "CFP membrane antigen transfer is less frequent than cytosolic antigens (YFP/RFP) and is largely mediated by XCR1+ aDCs, which show >5-fold higher CFP acquisition than other subsets. CFP localizes to plasma membranes of XCR1+ aDCs, demonstrating their effectiveness in acquiring both cytosolic and membrane-bound antigens.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C70, C72, C75 are supported by flow cytometry (Figure 4c) and imaging flow cytometry data (Figure 4d) showing differential acquisition of membrane vs. cytosolic antigens. The localization data provides mechanistic insight into antigen transfer.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "5f07cc53-3e4f-4aa6-8156-9f490efd56ea",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "moDCs show the highest frequency of CFP+RFP+YFP+ triple-positive cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C71 is supported by data in Figure 4\u2014figure supplement 1g showing moDCs have the highest frequency of triple-positive cells, consistent with their promiscuous antigen acquisition from multiple TECs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "464af977-b75c-4865-8f9b-3c8aed81a16e",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In mixed bone marrow chimera experiments, approximately 0.75% of CD45.1+CD11c+ cells acquire TdTOM from CD45.2+CD11c+ cells. Both aDC subsets and cDC2s show robust contribution, with moDCs showing the highest frequency of antigen acquisition from other DCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C79 are supported by bone marrow chimera data (Figure 5b-d) demonstrating DC-to-DC antigen transfer. The experimental design with congenic markers properly controls for endogenous expression vs. transfer.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "4373f60a-f631-4727-82ce-d04278422cc1",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "CAT is mediated by preferential pairing between specific TEC and DC subsets: (i) cTECs\u2192Mac/cDC2, (ii) mTECLow\u2192Mac/cDC2/pDC, (iii) mTECHigh\u2192XCR1+/XCR1- aDC/cDC1, (iv) pre-post Aire\u2192XCR1+/XCR1- aDC, (v) post-Aire\u2192pDC/Mac, (vi) Tuft\u2192XCR1+ aDC. XCR1+ aDCs are the most potent in TEC-derived antigen acquisition, while moDCs are most efficient in acquiring antigens from multiple TECs and other DCs. CAT relies on a deterministic cellular interaction network with preferential partnerships.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C87, C114-C118 represent the main conclusions synthesized from multiple experimental approaches (three Cre models, linear regression, Confetti system, BM chimeras). The convergent evidence from different methodologies strongly supports the preferential pairing model, though the authors acknowledge that molecular mechanisms remain unknown.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "1978e8d9-c070-4b67-8687-4d21de20a4ea",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "TdTOM expression patterns in CsnbCre and Defa6iCre models suggest developmental relationships between mTEC subsets. Csnb is expressed by mTECLow progenitors that differentiate into mTECHigh and progeny. Defa6 expression is Aire-dependent and restricted to mTECHigh and post-Aire progeny. The presence of LY6D- post-Aire cells in the mTECLow gate may influence observed correlations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C88-C93 involve interpretation of TdTOM expression patterns and developmental relationships. While C88-C91 cite supporting literature, C92-C93 are speculative hypotheses about LY6D- post-Aire cell contamination in the mTECLow gate. The authors acknowledge this as a caveat but do not provide direct experimental validation of this hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "86793321-9b68-4b2d-a2a8-59bad379a3a3",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "XCR1+ aDCs express both cDC1 signature molecules (Batf3, Cd8\u03b1, Ly75, Cadm1) and aDC markers (Il12b, Il15, Il15ra, Cd274, Cd70, Cd40, Tnfrsf4). They are the most efficient DC subset in CAT, even compared to cDC1s. Their differentiation from cDC1s may be driven by uptake of apoptotic cells during CAT, consistent with the mechanism of CAT via endocytosis of apoptotic bodies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C101 integrate the study's findings with prior literature on DC differentiation. The phenotypic characterization (C94-C96) is supported by citations, and the efficiency data (C97) is from this study. The mechanistic interpretation (C98-C101) is reasonable inference based on cited literature, though direct experimental validation of aDC differentiation driven by CAT is not provided in this study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "05aa6dc6-c774-4e34-86d2-a7402a92681e",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "XCR1- aDCs have a transcriptional signature more similar to cDC2 than cDC1, suggesting that antigen transfer into cDC2s induces their differentiation into XCR1- aDCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C102 is supported by citation to Park et al., 2020, but C103 is speculative inference without direct experimental validation in this study. The authors propose a parallel mechanism to XCR1+ aDC differentiation, but this remains a hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "714ad6aa-7461-4d82-befb-cbb6bd8ea3d9",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The correlation of mTECHigh with cDC1s is limited compared to XCR1+ aDCs. This apparent contradiction with previous reports is explained by prior studies using only XCR1 positivity to identify cDC1s, which does not discriminate between cDC1s and XCR1+ aDCs. Antigen transfer from mTECHigh is mediated mostly by XCR1+ aDCs and only to a lesser extent by cDC1s.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C104-C107 reconcile this study's findings with prior literature. The linear regression data (Figure 3b) supports C104 and C107. The methodological critique of prior studies (C105-C106) is reasonable given the improved gating strategy used here that distinguishes XCR1+CCR7- cDC1s from XCR1+CCR7+ aDCs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "a91d1849-561b-4b53-853d-fa44edaed4e4",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "moDCs are very potent in CAT and can be further enhanced under inflammatory conditions. They are the most efficient subset in repetitive CAT and in acquiring antigens from other CD11c+ APCs. moDCs express diverse chemokines and scavenger receptors, correlating with high competence in regulated migration and phagocytic activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C108-C113 are supported by data from Figures 2, 4, and 5, with C109 and C112 citing prior work. The proposal in C113 about migration and phagocytic activity is reasonable inference based on molecular expression patterns, though direct functional validation is not provided in this study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    },
+    {
+      "id": "c5a6e237-eaae-45bc-a976-b260098ef3c5",
+      "content_id": "d9171537-bb22-4aa6-beb9-24eece4bd0a9",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background knowledge claims about mTECs, TECs, DCs, central tolerance, and CAT establish the scientific context for the study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C30 represent established knowledge from the literature, properly cited throughout. These provide the necessary background for understanding the study's rationale and significance. C29 is an inference from prior studies that motivated this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:43.915803Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1314e471-f1bc-4c22-baa8-66ffcccd8445",
+      "result_id": "c3c9c4bd-19b8-4d7c-ac23-7e45ed33db4f"
+    },
+    {
+      "claim_id": "016faa71-5da4-419a-87ac-05a4371b0638",
+      "result_id": "c3c9c4bd-19b8-4d7c-ac23-7e45ed33db4f"
+    },
+    {
+      "claim_id": "ca5e8b99-c53b-4ee3-87dc-4cfa141ca672",
+      "result_id": "c3c9c4bd-19b8-4d7c-ac23-7e45ed33db4f"
+    },
+    {
+      "claim_id": "4b55a437-e868-43a2-8949-7a59414098d6",
+      "result_id": "c3c9c4bd-19b8-4d7c-ac23-7e45ed33db4f"
+    },
+    {
+      "claim_id": "5235c9f4-6b14-453b-b03f-4a29fc2abc1d",
+      "result_id": "c3c9c4bd-19b8-4d7c-ac23-7e45ed33db4f"
+    },
+    {
+      "claim_id": "4d8ae014-cd23-436f-abf7-17213668388e",
+      "result_id": "c3c9c4bd-19b8-4d7c-ac23-7e45ed33db4f"
+    },
+    {
+      "claim_id": "0d236105-83ac-4f7c-bd9c-18f99dc6bfdf",
+      "result_id": "f0d257e5-f74e-436b-a049-05d2f2e4937e"
+    },
+    {
+      "claim_id": "a2e094c9-741c-49ef-825e-32afe8c1a166",
+      "result_id": "f0d257e5-f74e-436b-a049-05d2f2e4937e"
+    },
+    {
+      "claim_id": "ff130b4e-12bd-4f7a-b053-686382b7a642",
+      "result_id": "f0d257e5-f74e-436b-a049-05d2f2e4937e"
+    },
+    {
+      "claim_id": "34f83ce0-0d9e-4e8d-8c69-23f23ebffa24",
+      "result_id": "f0d257e5-f74e-436b-a049-05d2f2e4937e"
+    },
+    {
+      "claim_id": "952c1e2a-e37f-4873-9bfd-3e5b42717f27",
+      "result_id": "f0d257e5-f74e-436b-a049-05d2f2e4937e"
+    },
+    {
+      "claim_id": "05a3293b-171f-4e9c-9b0e-165baa1d05f7",
+      "result_id": "f0d257e5-f74e-436b-a049-05d2f2e4937e"
+    },
+    {
+      "claim_id": "3d0d2965-41e3-4800-b810-40781ecc24e3",
+      "result_id": "f0d257e5-f74e-436b-a049-05d2f2e4937e"
+    },
+    {
+      "claim_id": "93c571f3-5d23-43a1-8866-659921f66044",
+      "result_id": "7c0b00b4-a161-44cb-a99c-076ff0a877d3"
+    },
+    {
+      "claim_id": "d35c07fd-8a5b-406e-9374-085d43327ee8",
+      "result_id": "7c0b00b4-a161-44cb-a99c-076ff0a877d3"
+    },
+    {
+      "claim_id": "3cce4ed5-c799-44de-80a1-fee5b0c74e3d",
+      "result_id": "7c0b00b4-a161-44cb-a99c-076ff0a877d3"
+    },
+    {
+      "claim_id": "cf71f463-7ba9-4526-8ebb-f86cb85b0a0d",
+      "result_id": "7c0b00b4-a161-44cb-a99c-076ff0a877d3"
+    },
+    {
+      "claim_id": "23f561bf-6fdb-47a7-99cf-cca19b87730b",
+      "result_id": "7c0b00b4-a161-44cb-a99c-076ff0a877d3"
+    },
+    {
+      "claim_id": "d4e42054-d1f8-4949-81bf-00040054f762",
+      "result_id": "7c0b00b4-a161-44cb-a99c-076ff0a877d3"
+    },
+    {
+      "claim_id": "f224f44d-7a6a-4018-be86-478d9f6485cd",
+      "result_id": "4dc52556-dbcf-44ff-9238-f13f1b1055cf"
+    },
+    {
+      "claim_id": "0ded1864-d540-4023-9c93-e0ea43f6558b",
+      "result_id": "4dc52556-dbcf-44ff-9238-f13f1b1055cf"
+    },
+    {
+      "claim_id": "b7856974-fd4d-4351-bb66-773e7e493826",
+      "result_id": "4dc52556-dbcf-44ff-9238-f13f1b1055cf"
+    },
+    {
+      "claim_id": "8bffbd7c-8bcc-424e-bbd7-60ce82c8affb",
+      "result_id": "4dc52556-dbcf-44ff-9238-f13f1b1055cf"
+    },
+    {
+      "claim_id": "f4a1b5f8-73ec-4600-860e-df8a60eecd2c",
+      "result_id": "4dc52556-dbcf-44ff-9238-f13f1b1055cf"
+    },
+    {
+      "claim_id": "559afb65-9175-462a-9dcb-a1a80dc7b660",
+      "result_id": "4dc52556-dbcf-44ff-9238-f13f1b1055cf"
+    },
+    {
+      "claim_id": "a9341203-d4a7-412c-890b-d6c110668e98",
+      "result_id": "4dc52556-dbcf-44ff-9238-f13f1b1055cf"
+    },
+    {
+      "claim_id": "db9b7066-94e3-4454-8644-c5e4626f9131",
+      "result_id": "4dc52556-dbcf-44ff-9238-f13f1b1055cf"
+    },
+    {
+      "claim_id": "6021d57d-965b-437f-82ee-2a4b91b24aaa",
+      "result_id": "4dc52556-dbcf-44ff-9238-f13f1b1055cf"
+    },
+    {
+      "claim_id": "4e8369b1-d30a-4ac2-9e2a-91bf6fa15b13",
+      "result_id": "4dc52556-dbcf-44ff-9238-f13f1b1055cf"
+    },
+    {
+      "claim_id": "8bf87c6d-a69a-49f0-a49c-a006b77ac3f3",
+      "result_id": "53b46359-37da-4f43-99c2-34cf0bcefa92"
+    },
+    {
+      "claim_id": "86ab63ed-bb83-4983-9507-89436f549350",
+      "result_id": "a4ef2aea-93ac-4392-b7c9-8a14348f810f"
+    },
+    {
+      "claim_id": "13b9a22c-aa35-4ae9-ae05-55f5101f50e7",
+      "result_id": "a4ef2aea-93ac-4392-b7c9-8a14348f810f"
+    },
+    {
+      "claim_id": "d5c10b8f-1424-4201-950c-47a6c1a8c401",
+      "result_id": "a4ef2aea-93ac-4392-b7c9-8a14348f810f"
+    },
+    {
+      "claim_id": "1c81ecbf-dcc2-43a2-909e-16b394c0fbe0",
+      "result_id": "a4ef2aea-93ac-4392-b7c9-8a14348f810f"
+    },
+    {
+      "claim_id": "fd5e485e-b7cf-4005-9e60-b279f98fe031",
+      "result_id": "a4ef2aea-93ac-4392-b7c9-8a14348f810f"
+    },
+    {
+      "claim_id": "9ea6f6ce-abbb-4fc0-8c8e-42d2ff296d7e",
+      "result_id": "a4ef2aea-93ac-4392-b7c9-8a14348f810f"
+    },
+    {
+      "claim_id": "666ea01f-ad09-4ca4-9ce7-569f6f648dbd",
+      "result_id": "a4ef2aea-93ac-4392-b7c9-8a14348f810f"
+    },
+    {
+      "claim_id": "6c0924a7-8976-400e-a625-5552a4bfa869",
+      "result_id": "a4ef2aea-93ac-4392-b7c9-8a14348f810f"
+    },
+    {
+      "claim_id": "226691d3-8693-4299-963b-bd34b7a52dd8",
+      "result_id": "a4ef2aea-93ac-4392-b7c9-8a14348f810f"
+    },
+    {
+      "claim_id": "f2be8589-08e4-4630-a1c2-956c178fb231",
+      "result_id": "fe481581-6c79-4a33-bd89-8d820baafcdd"
+    },
+    {
+      "claim_id": "131b92c5-a66b-445a-bf1d-b087be0685fe",
+      "result_id": "fe481581-6c79-4a33-bd89-8d820baafcdd"
+    },
+    {
+      "claim_id": "8ffa1d08-0802-4c3b-a97e-fe73c7d94c6d",
+      "result_id": "fe481581-6c79-4a33-bd89-8d820baafcdd"
+    },
+    {
+      "claim_id": "07d1aa10-c52e-49bb-b97f-da28edc990f3",
+      "result_id": "fe481581-6c79-4a33-bd89-8d820baafcdd"
+    },
+    {
+      "claim_id": "ac721416-06ed-4c73-8c61-4c3f72ffe3d1",
+      "result_id": "5f07cc53-3e4f-4aa6-8156-9f490efd56ea"
+    },
+    {
+      "claim_id": "774543c4-6990-4610-b14d-2fabed94be33",
+      "result_id": "464af977-b75c-4865-8f9b-3c8aed81a16e"
+    },
+    {
+      "claim_id": "04b1ee03-9103-4545-9c2b-2ae9d6cfdb16",
+      "result_id": "464af977-b75c-4865-8f9b-3c8aed81a16e"
+    },
+    {
+      "claim_id": "bf6af818-0669-49ce-a8e9-0b8c78795a5a",
+      "result_id": "464af977-b75c-4865-8f9b-3c8aed81a16e"
+    },
+    {
+      "claim_id": "d9adc861-a8b3-4b65-a911-757fe194d83e",
+      "result_id": "464af977-b75c-4865-8f9b-3c8aed81a16e"
+    },
+    {
+      "claim_id": "17a83489-b8e2-4607-802d-0582c1548f7b",
+      "result_id": "4373f60a-f631-4727-82ce-d04278422cc1"
+    },
+    {
+      "claim_id": "268a6131-742b-41bd-9546-edb174a12acc",
+      "result_id": "4373f60a-f631-4727-82ce-d04278422cc1"
+    },
+    {
+      "claim_id": "f7db6125-d2cf-4df3-a76f-eb693396e451",
+      "result_id": "4373f60a-f631-4727-82ce-d04278422cc1"
+    },
+    {
+      "claim_id": "82aef545-2ac8-4928-84ec-d70315843685",
+      "result_id": "4373f60a-f631-4727-82ce-d04278422cc1"
+    },
+    {
+      "claim_id": "ca37a423-faec-4e57-ba4f-84914baef403",
+      "result_id": "4373f60a-f631-4727-82ce-d04278422cc1"
+    },
+    {
+      "claim_id": "ab5f4b33-4d95-466a-aea3-8b43a94a770e",
+      "result_id": "4373f60a-f631-4727-82ce-d04278422cc1"
+    },
+    {
+      "claim_id": "dfee0147-7b81-4417-8baf-585037ec329a",
+      "result_id": "4373f60a-f631-4727-82ce-d04278422cc1"
+    },
+    {
+      "claim_id": "38f4b5a7-e98c-419f-82f8-df3fd1bdc14b",
+      "result_id": "4373f60a-f631-4727-82ce-d04278422cc1"
+    },
+    {
+      "claim_id": "f3f2c689-01b5-429e-9782-9a8c876e873c",
+      "result_id": "4373f60a-f631-4727-82ce-d04278422cc1"
+    },
+    {
+      "claim_id": "7932c1a0-eeb7-40d3-a8dd-b48585b075ad",
+      "result_id": "4373f60a-f631-4727-82ce-d04278422cc1"
+    },
+    {
+      "claim_id": "78542f25-567a-419c-8901-e592a66f17d1",
+      "result_id": "4373f60a-f631-4727-82ce-d04278422cc1"
+    },
+    {
+      "claim_id": "7bd9b74f-496c-4c9c-bbd9-b95e4ebee85b",
+      "result_id": "4373f60a-f631-4727-82ce-d04278422cc1"
+    },
+    {
+      "claim_id": "3e9139f0-b7f6-4349-8b1f-c89460246ebd",
+      "result_id": "4373f60a-f631-4727-82ce-d04278422cc1"
+    },
+    {
+      "claim_id": "21cc9209-d9b2-46e3-b73f-f4c6dbd72e6b",
+      "result_id": "1978e8d9-c070-4b67-8687-4d21de20a4ea"
+    },
+    {
+      "claim_id": "3159b60d-9471-475b-ae90-ace5b8befee9",
+      "result_id": "1978e8d9-c070-4b67-8687-4d21de20a4ea"
+    },
+    {
+      "claim_id": "9e65d3e7-3ad3-4ce1-bd78-5879cdd42ed1",
+      "result_id": "1978e8d9-c070-4b67-8687-4d21de20a4ea"
+    },
+    {
+      "claim_id": "4984a101-22a0-44f6-be71-baa98efc33ba",
+      "result_id": "1978e8d9-c070-4b67-8687-4d21de20a4ea"
+    },
+    {
+      "claim_id": "07475d75-7d29-41fc-90f3-042dbe2c3f18",
+      "result_id": "1978e8d9-c070-4b67-8687-4d21de20a4ea"
+    },
+    {
+      "claim_id": "359f408c-2197-40c7-aa32-0a7e69075fd2",
+      "result_id": "1978e8d9-c070-4b67-8687-4d21de20a4ea"
+    },
+    {
+      "claim_id": "93f231a5-55d4-4c6a-a94a-302608e05076",
+      "result_id": "86793321-9b68-4b2d-a2a8-59bad379a3a3"
+    },
+    {
+      "claim_id": "68cc13c1-5f85-4be1-a67d-66bc5b3e9fe4",
+      "result_id": "86793321-9b68-4b2d-a2a8-59bad379a3a3"
+    },
+    {
+      "claim_id": "144dfca8-c203-4cad-b7fe-b42134b6f247",
+      "result_id": "86793321-9b68-4b2d-a2a8-59bad379a3a3"
+    },
+    {
+      "claim_id": "c5e0915f-72e6-4d43-a2b1-30f5f2458e78",
+      "result_id": "86793321-9b68-4b2d-a2a8-59bad379a3a3"
+    },
+    {
+      "claim_id": "1aed6cbe-ff20-4e5e-84d9-2d81ec5a932e",
+      "result_id": "86793321-9b68-4b2d-a2a8-59bad379a3a3"
+    },
+    {
+      "claim_id": "ef3f8fa4-f3b7-42d1-8a86-c676f0f6b53c",
+      "result_id": "86793321-9b68-4b2d-a2a8-59bad379a3a3"
+    },
+    {
+      "claim_id": "67936760-d990-4c33-825f-f3a518bae643",
+      "result_id": "86793321-9b68-4b2d-a2a8-59bad379a3a3"
+    },
+    {
+      "claim_id": "1b753691-5d5d-46f0-9028-f556d68142ee",
+      "result_id": "86793321-9b68-4b2d-a2a8-59bad379a3a3"
+    },
+    {
+      "claim_id": "fcb70dc6-5f75-43b8-878b-9b8486a73cd7",
+      "result_id": "05aa6dc6-c774-4e34-86d2-a7402a92681e"
+    },
+    {
+      "claim_id": "e4744149-efe2-4558-98a0-d4c679e0aeaf",
+      "result_id": "05aa6dc6-c774-4e34-86d2-a7402a92681e"
+    },
+    {
+      "claim_id": "3475a041-39e4-44f4-895c-738270844665",
+      "result_id": "714ad6aa-7461-4d82-befb-cbb6bd8ea3d9"
+    },
+    {
+      "claim_id": "d4562be5-52bc-4e26-bf34-7d33fbf62b8e",
+      "result_id": "714ad6aa-7461-4d82-befb-cbb6bd8ea3d9"
+    },
+    {
+      "claim_id": "a5f4361d-7c47-4891-9d44-e4954e0276a4",
+      "result_id": "714ad6aa-7461-4d82-befb-cbb6bd8ea3d9"
+    },
+    {
+      "claim_id": "273b4496-b44b-4ba3-b2c2-bdaa3747bb6d",
+      "result_id": "714ad6aa-7461-4d82-befb-cbb6bd8ea3d9"
+    },
+    {
+      "claim_id": "df77970a-12ed-48db-ad20-c8656416576a",
+      "result_id": "a91d1849-561b-4b53-853d-fa44edaed4e4"
+    },
+    {
+      "claim_id": "d9de52a9-72b4-4eb1-8599-5b5caa19d6b3",
+      "result_id": "a91d1849-561b-4b53-853d-fa44edaed4e4"
+    },
+    {
+      "claim_id": "204fac0f-8a67-4930-9203-bcab4e0f9207",
+      "result_id": "a91d1849-561b-4b53-853d-fa44edaed4e4"
+    },
+    {
+      "claim_id": "556f040e-2523-4eb4-9eb2-fcce6560a008",
+      "result_id": "a91d1849-561b-4b53-853d-fa44edaed4e4"
+    },
+    {
+      "claim_id": "eb1eb748-c85d-4488-ae9d-8eaedfd6db47",
+      "result_id": "a91d1849-561b-4b53-853d-fa44edaed4e4"
+    },
+    {
+      "claim_id": "db25aa1c-eae9-40aa-aa17-623646fc4342",
+      "result_id": "a91d1849-561b-4b53-853d-fa44edaed4e4"
+    },
+    {
+      "claim_id": "d0a49185-31b6-4c5d-a452-8a3df541fdb3",
+      "result_id": "c5a6e237-eaae-45bc-a976-b260098ef3c5"
+    },
+    {
+      "claim_id": "e31371ba-94d1-4f0b-8a8e-358d2720e145",
+      "result_id": "c5a6e237-eaae-45bc-a976-b260098ef3c5"
+    },
+    {
+      "claim_id": "ce7eb859-ac6c-4680-a576-48cc5925300a",
+      "result_id": "c5a6e237-eaae-45bc-a976-b260098ef3c5"
+    },
+    {
+      "claim_id": "50264f4d-f051-4a69-95a2-cfb911476ce0",
+      "result_id": "c5a6e237-eaae-45bc-a976-b260098ef3c5"
+    },
+    {
+      "claim_id": "510a308f-510c-47d9-87e6-6a026cc229de",
+      "result_id": "c5a6e237-eaae-45bc-a976-b260098ef3c5"
+    },
+    {
+      "claim_id": "61f8b14b-bfbb-48e4-8d49-4b743dc43eb6",
+      "result_id": "c5a6e237-eaae-45bc-a976-b260098ef3c5"
+    },
+    {
+      "claim_id": "741f3aa1-2c64-4ee4-8e75-b4396aa17835",
+      "result_id": "c5a6e237-eaae-45bc-a976-b260098ef3c5"
+    },
+    {
+      "claim_id": "5d763fe8-4c4d-4397-be2e-4ff158f09c46",
+      "result_id": "c5a6e237-eaae-45bc-a976-b260098ef3c5"
+    },
+    {
+      "claim_id": "d25b0d1f-48b1-471b-8c32-a22e17bb474f",
+      "result_id": "c5a6e237-eaae-45bc-a976-b260098ef3c5"
+    },
+    {
+      "claim_id": "aaf6a3e3-cce9-4242-8dc7-2cb50e0a6258",
+      "result_id": "c5a6e237-eaae-45bc-a976-b260098ef3c5"
+    },
+    {
+      "claim_id": "7df2a693-d4d3-4018-97f0-880f0bca2031",
+      "result_id": "c5a6e237-eaae-45bc-a976-b260098ef3c5"
+    },
+    {
+      "claim_id": "d7cf4261-45a2-4261-aa23-bb2c8a8dbaa3",
+      "result_id": "c5a6e237-eaae-45bc-a976-b260098ef3c5"
+    },
+    {
+      "claim_id": "09c131ab-ce2b-4de7-8ff9-ecf746095cbb",
+      "result_id": "c5a6e237-eaae-45bc-a976-b260098ef3c5"
+    },
+    {
+      "claim_id": "ace6c175-044c-4811-9ed1-4f03afea41fa",
+      "result_id": "c5a6e237-eaae-45bc-a976-b260098ef3c5"
+    },
+    {
+      "claim_id": "270270a6-9c43-4ef9-ad72-d30078b35ddd",
+      "result_id": "c5a6e237-eaae-45bc-a976-b260098ef3c5"
+    },
+    {
+      "claim_id": "afc5c21c-7b5b-4253-a84f-ed8d87972117",
+      "result_id": "c5a6e237-eaae-45bc-a976-b260098ef3c5"
+    },
+    {
+      "claim_id": "92b82944-c6a7-41dd-9ac0-3041ca801fd8",
+      "result_id": "c5a6e237-eaae-45bc-a976-b260098ef3c5"
+    },
+    {
+      "claim_id": "70ff4be5-10ff-4767-98e0-648d8a1bb392",
+      "result_id": "c5a6e237-eaae-45bc-a976-b260098ef3c5"
+    },
+    {
+      "claim_id": "5e4247aa-95a7-4ae6-9e8e-9d817a82900b",
+      "result_id": "c5a6e237-eaae-45bc-a976-b260098ef3c5"
+    },
+    {
+      "claim_id": "2b3aeaaa-a7ad-4391-8f07-ee6c662e106d",
+      "result_id": "c5a6e237-eaae-45bc-a976-b260098ef3c5"
+    },
+    {
+      "claim_id": "bece0724-e4fc-4047-8adb-99c533749910",
+      "result_id": "c5a6e237-eaae-45bc-a976-b260098ef3c5"
+    },
+    {
+      "claim_id": "65a54d3a-d94b-4e70-8519-901fe866ee51",
+      "result_id": "c5a6e237-eaae-45bc-a976-b260098ef3c5"
+    },
+    {
+      "claim_id": "45a03a58-09d3-4e40-b713-9d2326c305be",
+      "result_id": "c5a6e237-eaae-45bc-a976-b260098ef3c5"
+    },
+    {
+      "claim_id": "380bc5d2-07eb-4543-95c6-6f59368603cf",
+      "result_id": "c5a6e237-eaae-45bc-a976-b260098ef3c5"
+    },
+    {
+      "claim_id": "c8dce9bb-17f0-449d-8479-75fa05a4a169",
+      "result_id": "c5a6e237-eaae-45bc-a976-b260098ef3c5"
+    }
+  ],
+  "comparisons": []
+}

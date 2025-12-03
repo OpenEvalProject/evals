@@ -1,0 +1,2287 @@
+{
+  "submission": {
+    "id": "011f46d0-cd13-45be-ba41-a02100e3d821",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T10:24:20.572495Z",
+    "updated_at": "2025-12-03T10:24:20.572495Z"
+  },
+  "content": [
+    {
+      "id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "submission_id": "011f46d0-cd13-45be-ba41-a02100e3d821",
+      "content_type": "manuscript",
+      "content_text": "# Emergence of behaviour in a self-organized living matter network\n\n## Authors\n\n- Philipp Fleig<sup>1</sup> ([ORCID: 0000-0003-4103-7478](https://orcid.org/0000-0003-4103-7478))\n- Mirna Kramar<sup>2</sup> ([ORCID: 0000-0002-1637-140X](https://orcid.org/0000-0002-1637-140X))\n- Michael Wilczek<sup>2</sup> ([ORCID: 0000-0002-1423-8285](https://orcid.org/0000-0002-1423-8285))\n- Karen Alim<sup>2</sup> ([ORCID: 0000-0002-2527-5831](https://orcid.org/0000-0002-2527-5831)) \u2020\n\n### Affiliations\n\n1. Department of Physics & Astronomy, University of Pennsylvania Philadelphia United States\n2. Max Planck Institute for Dynamics and Self-Organization G\u00f6ttingen Germany\n3. Physik-Department and Center for Protein Assemblies, Technische Universit\u00e4t M\u00fcnchen Garching Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nWhat is the origin of behaviour? Although typically associated with a nervous system, simple organisms also show complex behaviours. Among them, the slime mold Physarum polycephalum, a giant single cell, is ideally suited to study emergence of behaviour. Here, we show how locomotion and morphological adaptation behaviour emerge from self-organized patterns of rhythmic contractions of the actomyosin lining of the tubes making up the network-shaped organism. We quantify the spatio-temporal contraction dynamics by decomposing experimentally recorded contraction patterns into spatial contraction modes. Notably, we find a continuous spectrum of modes, as opposed to a few dominant modes. Our data suggests that the continuous spectrum of modes allows for dynamic transitions between a plethora of specific behaviours with transitions marked by highly irregular contraction states. By mapping specific behaviours to states of active contractions, we provide the basis to understand behaviour\u2019s complexity as a function of biomechanical dynamics.\n\n## Introduction\n\nSurvival in changing environments requires from organisms the ability to transition between diverse behaviours (Angilletta and Sears, 2011; Wong and Candolin, 2014). In higher organisms, a plethora of neural dynamics enable this capacity, ranging from almost random to strongly correlated firing patterns of neurons (Mochizuki et al., 2016). Decoding the origin of behaviour from neuronal activity has been called the \u2018holy grail of neuroscience\u2019 (Bando et al., 2019), a task especially challenging given the vastly complex networks of neurons (Berman, 2018). Significant progress has been made by simultaneous tracking of neuronal activity and behaviour \u2013 defined as trajectories through spaces of postural dynamics \u2013 in the fruit fly Drosophila melanogaster (Honegger et al., 2020) and the nematode Caenorhabditis elegans (Nguyen et al., 2016). Behaviours of these systems have been identified as low-dimensional (Stephens et al., 2008) and hierarchical (Berman et al., 2016).\n\nWhile these discoveries have advanced our understanding of the origin of behaviour, the complexity and size of biological neural networks make the acquisition and interpretation of experimental data especially challenging. Curiously, organisms without a nervous system may offer an ideal intermediate step towards understanding behaviour. Certain non-neural organisms readily transition between a multitude of behaviors similar in dynamic variability to that of organisms with a nervous system (Berg and Brown, 1972; Otto and Kessin, 2001; McMains et al., 2008; Ben-Jacob et al., 1994; Ben-Jacob et al., 2000; Wan and Goldstein, 2014; Wan, 2018) and thus provide the opportunity to study the link between the underlying biophysical process and behaviour.\n\nA non-neural organism with an exceptionally versatile behavioural repertoire is the slime mould Physarum polycephalum - a unicellular, network-shaped organism (Sauer, 1982) of macroscopic dimensions, typically ranging from a millimeter to tens of centimeters. P. polycephalum\u2019s complex behaviour is most impressively demonstrated by its ability to solve spatial optimisation and decision-making problems (Nakagaki et al., 2000; Tero et al., 2010; Nakagaki and Guy, 2007; Dussutour et al., 2010; Reid et al., 2016), exhibit habituation to temporal stimuli (Boisseau et al., 2016), and use exploration versus exploitation strategy (Aono et al., 2014). Recently, P. polycephalum was found capable of encoding memory about food source locations in the hierarchy of its body plan (Kramar and Alim, 2021) in a process much reminding of synaptic facilitation\u2013 the brain\u2019s way of creating memories (Jackman and Regehr, 2017). The generation of such rich behaviour requires a mechanism allowing not only for long-range spatial coordination but also the flexibility to enable switching between different specific behavioural states.\n\nThe behaviour generating mechanism in P. polycephalum are the active, rhythmic, cross-sectional contractions of the actomyosin cortex lining the tube walls (Yoshimoto and Kamiya, 1984; Ueda et al., 1986; Kamiya et al., 1988). The contractions drive cytoplasmic flows throughout the organism\u2019s network (Iima and Nakagaki, 2012; Alim et al., 2013), transporting nutrients and signalling molecules (Alim et al., 2017). Cytoplasmic flow is responsible for mass transport across the organism and thereby contractions directly control locomotion behaviour (Rieu et al., 2015; Lewis et al., 2015; Zhang et al., 2017; B\u00e4uerle et al., 2020; Rodiek et al., 2015).\n\nSo far, only one type of network-spanning peristaltic contraction pattern has been described experimentally (Alim et al., 2013; Oettmeier et al., 2017). However, for small P. polycephalum plasmodial fragments various other short-range contraction patterns have been observed (Lewis et al., 2015; Zhang et al., 2017) and predicted by theory of active contractions (Bois et al., 2011; Radszuweit et al., 2013; Radszuweit et al., 2014; Julien and Alim, 2018; Kulawiak et al., 2019). Similarly, up to now unknown complex, large-scale contraction patterns might play a role in generating the behaviour of large P. polycephalum networks. Furthermore, transitions between such large-scale patterns are needed to allow for switching between specific behaviours, for example taking sharp turns during migration in the absence of stimuli (Rodiek and Hauser, 2015).\n\nHere, we decompose experimentally recorded contractions of a large P. polycephalum network of stable morphology into a set of physically interpretable contraction modes using Principal Component Analysis. We find a continuous spectrum of modes and high variability in the activation of modes along this spectrum. By perturbing the network with an attractive stimulus, we show that the resulting locomotion response is coupled to a selective activation of regular contraction patterns. Guided by these observations, we design an experiment on a P. polycephalum specimen reduced in morphological complexity to a single tube. This allows us to quantify the causal relation between locomotion behaviour, cytoplasmic flow rate and varying types of contraction patterns, thus revealing the central role of dynamical variability in generating different behaviours.\n\n## Results\n\n### Continuous spectrum of contraction modes reveals large variability in organism\u2019s contraction dynamics\n\nTo characterize the contraction dynamics of a P. polycephalum network, we record contractions using bright-field microscopy (Video 1) and decompose this data into a set of modes using Principal Component Analysis (PCA). At first, networks in bright-field images are skeletonized, with every single skeleton pixel representing the local tube intensity as a measure of the local contraction state (B\u00e4uerle et al., 2017). Thus, any network state at a time ti is represented by a list of pixels, $I\u2192^{t_{i}}$, along the skeleton, see Figure 1A and \u2018Data processing\u2019 (Appendix 1). Performing PCA on this data results in a linear decomposition of the intensity vectors $I\u2192^{t_{i}}$ into a basis of modes $\u03d5\u2192_{i}$:\n\n$$\nI\u2192^{t_{i}}=\\sum\\mua_{\\mu}^{t_{i}}\u2062\u03d5\u2192_{\\mu}.\n$$\n\n![Figure 1.](https://cdn.elifesciences.org/articles/62863/elife-62863-fig1-v1.jpg)\n\n**Figure 1.:** (A) Example stack of bright-field images of the recorded network. Pixel intensities encode the contraction state (tube dilation) at each point of the network. Principal Component Analysis is performed on a stack of post-processed bright-field frames. (B) Ranked spectrum of relative eigenvalues in percent (orange), plotted against the mode rank $\\mu$ on a log-log graph. The eigenvalue spectrum is continuous, without a natural cutoff. Spectrum of randomised data (gray) shown for comparison. The cutoff for the continuous spectrum is defined by the largest eigenvalue of the spectrum from randomised data (black line). (C) (i) Structure of the four highest-ranking modes $\u03d5\u2192_{1,2,3,4}$ with their respective coefficients shown in (ii). The red-blue colour spectrum indicates the contraction state. The modes are eigenvectors of the covariance matrix. The coefficient $a_{1}$ of the first mode captures the organism\u2019s characteristic oscillation period of $\u2248100sec$, while the coefficients $a_{2,3,4}$ show considerable variation in amplitude and frequency over time. The PCA was performed on a data segment with 1500 frames, at the rate of 3 sec per frame.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62863/elife-62863-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Eigenvalue spectrum computed from randomised data.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/62863/elife-62863-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Variation in amplitude of the coefficients of the four top ranked modes over time.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/62863/elife-62863-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Spatial structure of mode $\u03d5\u2192_{30}$.Contraction mode $\u03d5\u2192_{30}$ obtained from Principal Component Analysis of the large rectangular network.\n\n![Video 1.](https://cdn.elifesciences.org/articles/62863/elife-62863-video1.mp4.jpg)\n\nSee \u2018Principal Component Analysis (PCA) (Appendix 2)\u2019 for details. The modes, $\u03d5\u2192_{\\mu}$, are orthonormal eigenvectors of the covariance matrix of the data and represent linearly uncorrelated contraction patterns of the network, and $a_{\\mu}^{t_{i}}$ denotes the time-dependent coefficients of the modes.\n\nWe rank modes according to the magnitude of their eigenvalues. Contrary to the small number of large eigenvalues found in a number of biological systems (Stephens et al., 2008; Jordan et al., 2013; Gilpin et al., 2016), here the spectrum of relative eigenvalues, see \u2018Principal component analysis (PCA)\u2019 (Appendix 2) for technical details, is continuous with no clear cutoff (Figure 1B) and as a result the contraction dynamics is high-dimensional. Notably, this is even the case when we disregard eigenvalues which lie below the upper noise bound (black line), computed from randomised data. Therefore, PCA does not directly lead to a dimensionality reduction of the data. Instead, we here investigate the characteristics of mode dynamics that result from a continuous spectrum and how these shape the organism\u2019s behaviour.\n\nThe highest-ranking modes shown in Figure 1C(i) have a smooth spatial structure that varies on the scale of network size. As we will discuss below, such large-scale modes are associated with the long wavelength peristalsis observed in Iima and Nakagaki, 2012; Alim et al., 2013. Interestingly, we also find modes highlighting specific morphological characteristics of the network. For example, the structure of mode $\u03d5\u2192_{4}$, Figure 1C(i), corresponds to the thickest tubes of the network Figure 1A, which suggests a special role of these tubes in the functioning of the network. Finally, as we go to lower ranked modes, the spatial structure of the modes becomes increasingly finer. Yet, despite lacking an obvious interpretation for their structures, like for mode $\u03d5\u2192_{30}$, Figure 1\u2014figure supplement 1, it is not possible to ignore their contribution relative to high-ranking modes.\n\nNext, we turn to the time-dependent coefficients of modes shown in Figure 1C(ii). In accordance with the known rhythmic contractions (Kamiya, 1960) the coefficient $a_{1}$ of the highest ranked mode $\u03d5\u2192_{1}$ oscillates with a typical period of $T\u223c100sec$ . Most strikingly, amplitudes of mode coefficients vary significantly over time - even on orders of magnitude, as shown in Figure 1\u2014figure supplement 2.\n\nTo map out the complexity of contractions over time, we define a set of significant modes for every time point. We quantify the activity of a mode by its relative amplitude\n\n$$\np_{\\mu}^{t_{i}}=\\frac{a^{2}~_{\\mu}^{t_{i}}}{\\sum\u03bda^{2}~_{\u03bd}^{t_{i}}},\n$$\n\nwhere $a_{\\mu}^{2}~$ denotes the amplitude of the square of the mode\u2019s coefficient. By definition the sum over the relative amplitudes of all modes is normalized to one at any given time, $\\sum_{\\mu}p_{\\mu}^{t_{i}}=1$. For any given time point, we order the modes by their relative amplitude from largest to smallest and take the cumulative sum of their values until a chosen cutoff percentage is reached, see Figure 2A. We find that the percentage of modes required to reach a specified cutoff value varies considerably over time. For a 90% cumulative amplitude cutoff, we find that on average 6.06% ($\u224870$ modes) of the 1500 modes are significant. As discussed in more detail in \u2018Choice of the cutoff of mode coefficient amplitudes\u2019 (Appendix 6), defining a cutoff for the cumulative sum of mode amplitudes is related to the problem of defining a cutoff for a continuous spectrum of eigenvalues. One common method is to define the cutoff with respect to the largest eigenvalue of the spectrum computed from a randomised version of the original data (Berman et al., 2014). In \u2018Choice of the cutoff of mode coefficient amplitudes\u2019 (Appendix 6), we find that the 90% cumulative amplitude cutoff considered above is consistent with this definition of cutoff for eigenvalues. As an important feature, we observe that there is large variation in the number of significant modes over time, with a standard deviation of 36.96% from the mean value. This is an indicator for the complexity of the contractions in the network.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/62863/elife-62863-fig2-v1.jpg)\n\n**Figure 2.:** (A) Significant modes given the number of modes required for the cumulative sum of their relative amplitudes to reach 70% (thin light green) and 90% (thick dark green) of the total amplitude plotted over time. Gray dashed line is the mean value of significant modes ($\u224870$ modes or equivalently 4.68% of the total 1500 modes). (B) Distribution of temporal correlation values between mode coefficients depending on the number of significant modes taken from the 70%-cutoff curve in (A). Correlation values show a trend from strong (anti-)correlation for a small number of significant modes (left) to a more uniform distribution of correlation values for a large number of significant modes (right).\n\nApart from the number of significant modes, the dynamics of the network depend on the temporal correlation of modes. While the modes form a spatially uncorrelated basis, the temporal correlation of mode activation is non-trivial. In Figure 2B, we show the distribution of temporal correlations between mode coefficients as a function of the number of significant modes, see \u2018Distribution of temporal correlations\u2019 (Appendix 3) for technical details. For a small number of significant modes, the coefficients are strongly (anti-)correlated in time, while for a large number of significant modes, correlations values between coefficients are more uniformly distributed. Here, correlated coefficients result in coordinated pumping behaviour/contractions, while least correlated coefficients coincide with irregular network-wide contractions. The above analysis shows that the dynamics of network contractions covers a wide range in complexity, from superposition of few large-scale modes strongly correlated in time, to superpositions of many modes of varying spatial scale and temporal correlations. This gives rise to strong variability in the regularity of the contraction dynamics over time. Up to now, we investigated an \u2018idle\u2019 network not performing a specific task, so we next stimulate the network to provoke a specific behaviour and scrutinize how the continuous spectrum of modes contributes to it.\n\n### Stimulus response behaviour is paired with activation of regular, large-scale contraction patterns interspersed by many-mode states\n\nTo probe the connection between a specific behaviour and network contraction dynamics, we next apply a food stimulus to the same network, see Figure 3A. Food acts as an attractant and causes locomotion of the organism toward the stimulus in the long term. The stimulus immediately triggers the tubes in the network to grow in a concentric region around the stimulus site. Also, the thick transport tubes oriented toward stimulus location increase their volume, see Figure 3A. Altogether these morphological changes are typical for the specific behaviour induced here, namely the generation of a new locomotion front.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/62863/elife-62863-fig3-v1.jpg)\n\n**Figure 3.:** (A) Sequence of bright-field frames showing the network\u2019s growth response to a food stimulus (red arrow in the 84 min). (B) Growth curves of the two most active growth regions of the network. The two tracked regions are indicated by the green and burgundy boxes in the frame at 81 min shown in (A). The growth is shown as the percentage change in area with respect to the initial state at 75 min. After stimulus application, the upper part of the network undergoes significant growth at the expense of the fan-like shaped locomotion front in the lower left corner. (C) The spatial contraction pattern of the three top-ranked modes $\u03d5\u2192_{1}$, $\u03d5\u2192_{2}$, and $\u03d5\u2192_{3}$. (D) Activity of the three top-ranked modes measured by their respective relative amplitude, $p_{\\mu}$. After the stimulus (dashed line at 83.5 min), time intervals with a single contraction mode dominating in amplitude (red for the relative amplitude of mode $\u03d5\u2192_{1}$, blue for $\u03d5\u2192_{2}$ and yellow for $\u03d5\u2192_{3}$) prevail over all other modes. Mode amplitudes four to seven are shown in gray for reference. This growth response is paired with activation of mode $\u03d5\u2192_{3}$, as indicated by the pink shaded box extending across (B) and (D). (E) Significant number of modes for a cumulatively summed amplitude of 70% (thin light green) and 90% (thick dark green), over time. Gray dashed line indicates the 6.06% ($\u224842$ modes) average of significant modes for the 90% criterion. When contractions switch from one dominant mode to another, we find time intervals where a larger number of modes have a similar relative amplitude. These times are indicated by the blue shaded boxes extending across (D) and (E).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62863/elife-62863-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Principal Component Analysis yields a continuous spectrum (yellow) of contraction modes in the P. polycephalum network exposed to a food stimulus. The eigenvalue spectrum is computed from data consisting of 700 frames. For comparison we show the eigenvalue spectrum computed from randomised data (gray). The black line indicates the cutoff chosen for the continuous eigenvalue spectrum from the largest eigenvalue of the randomised spectrum.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/62863/elife-62863-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Bright-field frames showing the network\u2019s growth behaviour pre-stimulus. (B) The spatial contraction pattern of the three top-ranked modes $\u03d5\u2192_{1}$, $\u03d5\u2192_{2}$ and $\u03d5\u2192_{3}$. (C) Growth curve of the fan-like locomotion front extending from the bottom left corner of the network. The tracked region is indicated by the green box in the frame at $60min$ shown in (A). The growth is shown as the percentage change in area with respect to the initial state at $45min$. The area of fan-like shaped locomotion front shows strong growth between $45min$-$55min$ followed by stagnation. Subsequently there are two small growth bursts around $67min$ and $72min$. This growth behaviour is paired with activation of mode $\u03d5\u2192_{1}$ (red curve), as indicated by the pink shaded boxes extending across (C) and (D). (D) Activity of the three top-ranked modes measured by their respective relative amplitude, $p_{\\mu}$. Over long periods of time mode $\u03d5\u2192_{1}$ (red curve) is the most dominant mode. Mode amplitudes four to seven are also shown in gray for reference.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/62863/elife-62863-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Temporal dynamics of the coefficients of the three top-ranked contraction modes $\u03d5\u2192_{1}$ (red), $\u03d5\u2192_{2}$ (blue) and $\u03d5\u2192_{3}$ (yellow) in the large rectangular network. The variation in amplitude, frequency and relative phase shift between coefficients is captured before and after application of the stimulus to the network. The time of stimulus application is indicated by the dashed line.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/62863/elife-62863-fig3-figsupp4-v1.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Instantaneous rank of modes over time for the unstimulated network. The top 80 modes are color-coded according to their rank in the eigenvalue spectrum of the same data section used in Figure 3\u2014figure supplement 2. Here we only show a time interval of 10 min. The instantaneous rank is a measure for the activity of a mode and is based on the ranking of relative amplitudes at any given time (see Equation 2). We observe that modes frequently change their instantaneous rank, moving across a wide range of ranks which is only possible in a continuous spectrum.\n\nIn Figure 3B, we quantify this stimulus response behaviour by tracking the growth of the most active regions of the network, defined by the boxes shown in the 81 min in Figure 3A. The tracked regions are located on opposing sides of the network. Starting approximately at 85 min, the part of the network next to the stimulus site grows rapidly (burgundy curve in Figure 3B), at the expense of the fan-shaped locomotion front in the lower left corner of the network (green curve in Figure 3B). In Figure 3\u2014figure supplement 2, we additionally show that prior to the stimulus, the network grows the fan-like shaped locomotion front in the lower left corner. Taken together, the application of the stimulus leads to a reversal of the network\u2019s growth direction.\n\nTo identify potential changes in the contraction dynamics due to stimulus application, we perform PCA on a 700 frames long subset of the data subsequent to the \u2018idle\u2019 data of the previous section. First, we rediscover a continuous spectrum of modes, see Figure 3\u2014figure supplement 1, resembling that of the \u2018idle\u2019 dynamic state. However, now the highest-ranked contraction modes, see Figure 3C, show spatial patterns which can be directly related to the network\u2019s growth behaviour. This includes activation of the upper region of the network close to the stimulus, as well as activation of the thick tubes extending from top to bottom of the network. In fact, for more than 500 frames after the stimulus has been applied, the rhythmic contraction dynamics of the network are dominated by the three highest-ranked modes, see Figure 3D and Figure 3\u2014figure supplement 3 for the oscillatory dynamics of mode coefficients. During this period, every time a single mode is the most active one for a duration of $\u00a7gt;30$ frames, its amplitude exceeds that of any other mode by 20\u201330%.\n\nNext we link the stimulus-induced reversal in growth direction to the changes in the contraction pattern. Specifically, we observe that the time interval of growth reversal Figure 3B coincides with the activation of the third-ranked mode $\u03d5\u2192_{3}$, (orange curve in Figure 3D), as indicated by the pink shaded box extending across Figure 3D and B. The structure of this mode shows a clear distinction of the growth area close to the stimulus and an activation of the two thick tubes stretching from bottom to the top of the network. This mode is followed by an activation of mode $\u03d5\u2192_{2}$ (blue curve), clearly marking the growth region within its spatial structure.\n\nFinally, over time the growth of the stimulus response region tapers off and we find reactivation of mode $\u03d5\u2192_{1}$ (red curve) which was the dominant mode before stimulus application. We note that the spatial structure of mode $\u03d5\u2192_{1}$ is remarkably similar to mode $\u03d5\u2192_{1}$, the top-ranked mode that we find for PCA on the pre-stimulus \u2018idle\u2019 data Figure 3\u2014figure supplement 2B. The reactivation of this mode indicates that this contraction pattern is intrinsic to the network and is not simply erased by the stimulus.\n\nStrikingly, the regular contraction dynamics shown in Figure 3D are interspersed with many-mode states where the number of significant modes increases considerably, see Figure 3E. The number of significant modes oscillates after the stimulus. The oscillation maxima coincide with times at which the organism switches from one dominant contraction pattern to another, as indicated by the blue-shaded boxes extending across Figure 3D and E. Our results suggest that prolonged regular dynamics dominated by a few or even a single mode are associated with specific behaviour like locomotion and growth, while the many-mode states seem to serve as transition states between them.\n\nWhile the network morphology is characteristic for P. polycephalum, reducing network complexity may help to conclude on the role of regular dynamics in driving specific behaviours, and the role of many-mode states and the therefrom arising continuous distribution of modes.\n\n### Number of significant modes determines maximum cytoplasmic flow rate in the minimal morphological representation of the network\n\nWe next perform exactly the same course of experiments as before but on a P. polycephalum specimen reduced in complexity to a single tube with a locomotion front at either end, see inset in Figure 4 and Video 2. Strikingly, when performing PCA on this specimen of simple morphology we again find a continuous spectrum of modes (Figure 5\u2014figure supplement 1) and large variability, including spikes of many-mode states, in the number of significant modes (Figure 5A). This observation finally underlines that the continuous spectrum of modes and its variability in activation is intrinsic to the organism\u2019s behaviour, ruling out that the complexity of contraction modes only mirrors morphological complexity. Foremost, this minimal constituent of a network allows us now to directly map the effect of variations in the contraction dynamics onto behaviour.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/62863/elife-62863-fig4-v1.jpg)\n\n**Figure 4.:** Inset: Single tube with locomotion fronts at both ends. Main plot: Volume flow rate at the left tube end, calculated from tube contraction dynamics versus the number of significant modes at different times. High flow rates are only achieved for a small number of significant modes.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62863/elife-62863-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Number of significant modes is indicative for the volume flow rate in a cell reduced in its network complexity to a single tube. Volume flow rate at the right tube end, calculated from tube contraction dynamics versus the number of significant modes at different times. High flow rates are only achieved for a small number of significant modes.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/62863/elife-62863-fig5-v1.jpg)\n\n**Figure 5.:** (A) Sequence of bright-field images showing the locomotion behaviour of the single tube including its response to stimulus application at the left end (red arrow) at 77 min (dashed line). (B) Behaviour of the locomotion front at each end of the tube over time. Tracked regions of the tube are indicated by the green and burgundy boxes in top bright-field frame in (A). (C) Spatial profile of the top-ranked modes $\u03d5\u2192_{1}$ and $\u03d5\u2192_{2}$ approximately showing sine and cosine shape, respectively. Larger version of the plot is shown in Figure 5\u2014figure supplement 2. (D) Activation of the two top-ranked modes given by their relative amplitude (red and blue). Relative amplitudes of lower ranked modes are shown in gray for comparison. Vertical pink boxes extending across (B) and (D) indicate two representative time intervals and the nature of the two-mode superposition is specified. (E) The number of significant modes over time with 90% cumulative relative amplitude cutoff. Blue boxes extending across (D) and (E) highlight the most pronounced many-mode states.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62863/elife-62863-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Principal Component Analysis yields a continuous spectrum of contraction modes in a P. polycephalum specimen with single tube morphology. The eigenvalue spectrum is computed from a data segment which 3300 frames long, including the application of a stimulus to one end of the tube.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/62863/elife-62863-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Top-ranked mode $\u03d5\u00af_{1}$ (red) has the shape of a sine function and the second-ranked mode $\u03d5\u00af_{2}$ (blue) has cosine shape.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/62863/elife-62863-fig5-figsupp3-v1.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Temporal dynamics of the coefficients of the two top-ranked contraction modes $\u03d5\u00af_{1}$ (red) and $\u03d5\u00af_{2}$ (blue) in the single-tube P. polycephalum network.The variation in amplitude, frequency and relative phase shift between coefficients is captured shortly before and after application of the stimulus to the single tube. The time of stimulus application is indicated by the dashed line.\n\n![Video 2.](https://cdn.elifesciences.org/articles/62863/elife-62863-video2.mp4.jpg)\n\nFrom the experimentally quantified tube contractions, we calculate the maximal flow rate at any point along the tube (Li and Brasseur, 1993) and over time correlate the strength of the flow rates, driving locomotion behaviour at the tube ends, with the number of significant modes, see \u2018Flow rate calculation in a P. polycephalum cell with single-tube morphology\u2019 (Appendix 4). For both the flow rate at the left and right end of the tube, shown in Figure 4, and Figure 4\u2014figure supplement 1, respectively, we find that large flow rates are only achieved when the number of significant modes is small. We had previously found that few significant modes are highly (anti-)correlated, whereas states with many significant modes are not, see Figure 2B. This observation now confirms our physical intuition that the irregularity of states consisting of many modes goes hand in hand with reduced pumping efficiency and thus unspecific behaviour. Since a small number of significant modes not necessarily always implies a large flow rate, we next turn to analyze their exact spatial structure and instantaneous temporal correlation to determine how cytoplasmic flow rates impact behaviour.\n\n### Instantaneous coupling and selective activation of modes determine locomotion behaviour\n\nWe now demonstrate the impact of changes in the dynamics of a small number of modes on the organism\u2019s behaviour. For this, we quantify the locomotion behaviour of the single tube by tracking the area of the locomotion fronts protruding from each end of the tube over time, see Figure 5A. The growth curves of the tube ends are shown in Figure 5B. While initially the right end is protruding faster at the expense of the left end, a food stimulus applied to the left end of the tube reverses the direction of locomotion.\n\nAs for the network, we use PCA to analyse the contraction dynamics of the single tube and link it to behaviour. We apply PCA to contraction data along the tube which we parameterize by a longitudinal coordinate. The spatial shapes of the two top-ranked modes $\u03d5\u2192_{1}$ and $\u03d5\u2192_{2}$ approximate Fourier modes, see Figure 5C and Figure 5\u2014figure supplement 2. Examining the activation of modes, we find that over long time intervals, and in particular after the stimulus, the two top-ranked modes dominate the tube\u2019s contraction dynamics, see Figure 5D. To illustrate the connection between the nature of tube contraction dynamics and locomotion behaviour, we pick two representative time intervals after the stimulus where either only mode $\u03d5\u2192_{1}$, or modes $\u03d5\u2192_{1}$ and $\u03d5\u2192_{2}$ equally, dominate overall, see vertical pink bars in Figure 5D. During the first interval when mode $\u03d5\u2192_{1}$ alone is dominating, the tube is driven by a standing wave contraction pattern - yielding only a low cytoplasmic flow rate. Correspondingly, the size of the locomotion front at either end shows no significant change in area during this interval. In contrast, during the interval when both modes $\u03d5\u2192_{1}$ and $\u03d5\u2192_{2}$ are equally active, the resulting superposition is a left-traveling wave producing a large cytoplasmic flow rate in that direction. The left-traveling wave is in accordance with the growth of the left and retraction of the right locomotion front as quantified in Figure 5B. See \u2018Mode superpositions in a P. polycephalum cell with single-tube morphology\u2019 (Appendix 4) for more details. In Figure 5E, we highlight the most pronounced many-mode states during changes of dominant contraction dynamics.\n\nThese two examples solve the conundrum of Figure 4, which shows that a small number of significant modes does not necessarily lead to high cytoplasmic flow rates. Yet, the direct mapping of contraction dynamics onto ensuing cytoplasmic flows confirms that a small number of significant modes is associated with specific behaviour. High cytoplasmic flow rates at the tube ends drive locomotion, while lower flow rates likely lead to other behaviours such as mixing. Furthermore, many-mode states seem necessary for transitions in a multi-behavioural space.\n\nOur explanation of behaviour \u2013 from contractions via flows to locomotion behaviour \u2013 in the single tube is a template for an analogous explanation in the network morphology. The analogy is justified by the strong resemblance of the continuous mode spectrum, dynamics of significant modes, activation of regular contraction patterns and the nature of growth behaviour in both the network and single tube. Therefore, while it is beyond the scope of this study, we expect a detailed analysis of the link between contractions and flows in the network morphology to yield qualitatively similar results to those of the single tube, thus completing the mechanism of behaviour generation.\n\n## Discussion\n\nTo uncover the origin of behaviour in P. polycephalum, we quantified the dynamics of this living matter network and linked it to its emerging behaviour. The simple build of this non-neural organism allows us to trace contractions of the actomyosin-lined tubes, compute cytoplasmic flows from the contractions and finally link these dynamics to the emerging mass redistribution and whole-organism locomotion behavior. Decomposing the contractions across the network into individual modes, we discover a large intrinsic variability in the number of significant modes over time along a continuous spectrum of modes. By triggering locomotion through application of a stimulus, we identify that states with few significant modes and regular contraction patterns correspond to specific behaviors, in this case locomotion. Yet, irregular contraction patterns consisting of a large number of significant modes are also present, particularly marking the transitions between different regular contraction states. The use of an organism with a single-tube morphology allows us to obtain quantitative insights into the mechanism connecting contraction dynamics and locomotion behavior and in first approximation serves as an analogue system for the large P. polycephalum with network morphology. Our findings suggest that a continuous spectrum of contraction modes allows the living matter network P. polycephalum to quickly transition between a multitude of behaviours using the superposition of multiple contraction patterns.\n\nNetworks are ubiquitous in biology, including examples such as ecological networks (Garc\u00eda Mart\u00edn and Goldenfeld, 2006) and biomolecular interaction networks (Albert, 2005). Measurable quantities of these networks, for instance the degree distribution of the network, typically follow continuous distributions and are oftentimes power-laws. The spectrum of eigenvalues Figure 1B that we find for the contraction dynamics in P. polycephalum may similarly suggest a power-law. However, the presence of a power-law is generally difficult to prove and interpret. Instead, our sole focus is on the continuous nature of the spectrum. It is important to emphasise that the continuity of the eigenvalue spectrum is not simply the result of the organism\u2019s complex network morphology. This is demonstrated by the fact that we find a similar spectrum also for the single-tube morphology Figure 5\u2014figure supplement 1. Therefore, here the continuous spectrum of eigenvalues is distinctively a property of the dynamic state of the organism.\n\nOur observation of interlaced regular and irregular contraction patterns in P. polycephalum reminds of the strongly correlated or random firing patterns of neurons in higher organisms (Mochizuki et al., 2016). In neural organisms, stereotyped behaviours are associated with controlled neural activity, as for example for locomotion in C. elegans (Liu et al., 2018) or the behavioural states of the fruit fly Drosophila melanogaster (Berman et al., 2014; Berman et al., 2016). Variability in the dynamics of behaviour is also widely observed in these neuronal organisms (Grobstein, 1994; Renart and Machens, 2014; Werkhoven et al., 2021; Honegger et al., 2020; Ahamed et al., 2020). It is thus likely that the transition role of irregular states consisting of many significant modes observed here for P. polycephalum parallels the mechanisms of generating behaviour in the more complex forms of life.\n\nP. polycephalum is renowned for its ability to make informed decisions and navigate a complex environment (Nakagaki et al., 2000; Tero et al., 2010; Nakagaki and Guy, 2007; Dussutour et al., 2010; Reid et al., 2016; Boisseau et al., 2016; Aono et al., 2014; Ueda et al., 1976; Miyake et al., 1991). It would be fascinating to next follow the variability of contraction dynamics during more complex decision-making processes. Furthermore, it would be interesting to observe \u2018idle\u2019 networks during foraging over tens of hours. It is likely that the contraction states with many significant modes here act as noisy triggers that can spontaneously cause the organism to reorient its direction of locomotion.\n\nIn the context of P. polycephalum\u2019s foraging behaviour, another exciting line of research opened by our results is the link between contraction modes and the organism\u2019s metabolic changes. The foraging networks displays a plethora of morphological patterns which are linked to the underlying metabolic states (Takamatsu et al., 2017; Lee et al., 2018). It has recently been shown that in the neural organism Drosophila melanogaster, behaviour stemming from neural activity causes large-scale changes in metabolic activity (Mann et al., 2021). Exploring the relationship between behaviour emergence and metabolism in P. polycephalum will bring key insight about the interplay between the mechanical and the biochemical machinery of the organism.\n\nP. polycephalum\u2019s body-plan as a fluid-filled living network with emerging behaviour finds its theoretical counterpart in theories for active flow networks developed recently (Woodhouse et al., 2016; Forrow et al., 2017). Strikingly, these theories predict selective activation of thick tubes which we observe in the living network as well, prominently appearing among the top ranking modes, see $\u03d5\u2192_{4}$ in Figure 1C(i) or $\u03d5\u2192_{3}$ in Figure 3C. This is a first hint that dynamics states arising from first principles in active flow networks could map onto behavioural and transition states observed here.\n\nLikely our most broadly relevant finding in this work is that irregular dynamics, here arising in states with many significant modes, play an important role in switching between behaviours. This should inspire theoretical investigations to embrace irregularities rather than focusing solely on regular dynamic states. The most powerful aspect of P. polycephalum as a model organism of behaviour lies in the direct link between actomyosin contractions, resulting in cytoplasmic flows and emerging behaviours. The broad understanding of the theory of active contractions (Bois et al., 2011; Radszuweit et al., 2013; Radszuweit et al., 2014; Julien and Alim, 2018; Kulawiak et al., 2019) might therefore well be the foundation to formulate the physics of behaviour not only in P. polycephalum but also in other simple organisms. This would not only open up an new perspective on life but also guide the design of bio-inspired soft robots with a behavioural repertoire comparable to higher organisms.\n\n## Materials and methods\n\n### Experiments\n\nThe specimen was prepared from fused microplasmodia grown in a liquid culture (Daniel et al., 1962) and plated on 1.5%-agar. The network was trimmed and imaged in the bright field setting in Zeiss ZEN two imaging software with a Zeiss Axio Zoom V.16 microscope equipped with a Hamamatsu ORCA-Flash 4.0 digital camera and Zeiss PlanNeoFluar 1 x/0.25 objective. The acquisition frame rate was 3 sec. The stimulus was applied in a form of a heat-killed HB101 bacterial pellet in close network proximity.\n",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "d3d00ec1-bd76-42a8-8e1d-864dc3fe275c",
+      "submission_id": "011f46d0-cd13-45be-ba41-a02100e3d821",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Herbert Levine, Northeastern University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.62863.sa0](https://doi.org/10.7554/eLife.62863.sa0)\n\nWe have judged that the response to the referee's residual comments are sufficient to allow this paper to proceed to publication. In particular, the detailed analysis of the mode spectrum and its relationship to behavior is novel and possibly of general use in this field. Also, the experimental data per se should be interesting to a wide spectrum of readers.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Herbert Levine, Northeastern University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.62863.sa1](https://doi.org/10.7554/eLife.62863.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Emergence of behavior in a self-organized living matter network\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Naama Barkai as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe paper on \"The emergence of behavior \u2026\" has been seen by three referees all of whom have worked in the field of quantitative measures of organismal behavior. Based on their reports and my own reading of the paper, it is clear that the paper is not acceptable in its current form. As will be explained in detail below, there are many questions regarding exactly what is being claimed and proven regarding the modal analysis of the data. As there are no significant qualms about the experimental data per se and there is universal agreement that the questions being posed are important and the Physarum setting is a reasonable choice for addressing those questions, I have decided that the authors should be given a chance to address these questions. Only if these questions can be resolved by what undoubtedly would be a major revision would the manuscript be reconsidered for publication.\n\nEssential revisions:\n\nWithout a more detailed presentation of the meaning of the various results shown for the eigenvalue spectrum and the model structure, it is very hard to assess the extent to which the observed changes are actually correlated with important behavioral responses. This is partially because of vague and unsupported statements such as (line 161) \"This observation finally underlines that the continuous spectrum of modes and its variability in activation is intrinsic to the organism's behavior\", and (line 215) \"Our findings suggest that a continuous spectrum of contraction modes allows the living matter network P. polycephalum to quickly transition between a multitude of behaviors using the superposition of multiple contraction patterns.\"\n\nSpecific points that need to be addressed in this regard include:\n\n\u2013 The discussion of the eigenvalue spectrum is severally lacking. While it is true that the authors don't find a low-dimensional system (although I am not sure why they expected to), they do find a power-law spectrum. There is a vast literature of graphs that have this property (including many from biology and ecology) and the authors should connect with this work. It is also true that purely random networks also have a continuous eigenvalue spectrum, although it is not a power law it can look like one sometimes. How well can the authors quantitatively determine that the observed data is a power law and not more representative of a random process. Is there some specific control dataset that can be generated by randomization of the original data to demonstrate the biological meaning of the features they find?\n\n\u2013 It is difficult to judge if the findings from the tube explain the results for the networks. This is due to the fact that different aspects of the PCA are shown for different cases. Some problems are (i) is the symmetry breaking seen in the tube also present in the network and how can we see it (e. g. in the shape of the modes) and (ii) do the numbers of significant modes change in the idle tube in a similar way before signal application vary in a similar fashion than in the network.\n\n\u2013 The authors should carefully bring out the relation between qualitative change of dynamics and the behavior (i. e. response to external stimulus) more clearly to justify title of their study. The authors seem to have shown that the behavior is realized by a change in contraction dynamics (one form of self-organisation) in an otherwise relatively constant random network topology (another form of self-organisation). Given that the self-organisation in the topology of Physarum has been studied abundantly in previous work (e. g. Nakagaki et al. in Science \u2026), the novelty here is the claim that the dynamics correspond to different \"behaviors\" such as moving towards or away from a stimulus or enhanced pumping of optical fluid.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Emergence of behavior in a self-organized living matter network\" for further consideration by eLife. Your revised article has been evaluated by Naama Barkai (Senior Editor) and a Reviewing Editor.\n\nAll reviewers and I agree that the manuscript has been significantly improved but there are some remaining issues that need to be addressed, as outlined below:\n\nAs can be seen from the detailed reviews given below, there is still a somewhat mixed opinion about exactly how informative the mode analysis is regarding behavior. There are also some residual technical questions that could be answered in a modest revision. Given these reports and a positive recommendation from an initial third reviewer, I expect that the paper will be acceptable for publication once these questions are properly addressed.\n\nReviewer #1:\n\nOverall, the manuscript has improved in revision and I appreciate the efforts of the authors. There are, however, still rough patches and I list some specific comments below.\n\nI am still left wanting for more understanding of the continuous spectrum. Perhaps control is just spatially local? How dependent is the finding of high-dimensionality on the particular representation of the behavior local contractions0? Or on the method (PCA)?\n\nLine 16\n\nI recommend removing \"Surprisingly\" as it is not clear why we would actually expect a low-dimensional covariance space. I would also remove an additional occurrence of \"surprisingly\" in the last paragraph of the introduction.\n\nLine 26\n\nThe choice of Marom et al. (2002) as a reference is odd as this refers to neural activity in cultured networks, that is those without a body and thus without behavior.\n\nLine 37\n\nI would consider adding more recent references from work on ciliated organisms, e.g. work from the KY Wan and R Goldstein groups.\n\nLine 103 How do we know that phi_4 is really preferentially exciting thicker tubes? A single image could simply be a spatial accident. Is there a correlation over the whole dataset?\n\nLine 129 The temporal correlation of the modes should be better described. A first glance this is very confusing as the modes from PCA are, of course, uncorrelated across the whole dataset. Thus these correlations are coming from the window of +- 15 frames. This should be clarified in the main text and/or the caption for Figure 2.\n\nLine 151\n\nWhy do we jump from a description of Figure 3A immediately to Figure 3E and then later come back to B-D?\n\nReviewer #3:\n\nWhile the revised manuscript is improved in several ways, I remain unconvinced that the author's PCA-based analysis has revealed substantially new understanding about the behavior of P. Polycephalum. My main criticisms are the following:\n\n1. As the authors mention in the paper, there are many ways to get the observed continuous power spectrum. E.g., pure 1/f noise would suffice. As such, this seems like a negative result, and I am not sure it adds to our understanding of the system.\n\n2. The PCA modes appear to be approximately combinations of 2D plane waves, as is expected for a general 2D system. Indeed, for most 2D constructions without specific enhanced structures, a Fourier-like decomposition can be shown to be optimal. Given the increasing wavenumber for increasing mode number (as the authors defined using the power/eigenvalues), I think the data indicates that spatial frequency would be more informative compared to PCA.\n\n3. The authors most interesting finding appears in Figure 3. relating the amplitudes in different modes and the number of \"significant\" modes to the application of a stimulus. I believe the authors do show that the response *is not* a simple 2-state traveling wave (peristaltic pump), but the authors don't then follow up with a description/understanding of what the response actually *is*. Apparently, the organism engages many more modes to produce the behavior. Why does this combination require so many modes and how does it work? If the response is actually linear in shape (or step shaped, or anything with many frequencies), a Fourier decomposition would involve many modes (actually an infinite number). I struggle to see how the mode decomposition as presented has taught us how the slime mold moves or responds to stimuli.\n",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "022728d4-fba2-4eef-a393-b7d58815547a",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C1",
+      "claim": "Physarum polycephalum is a giant single cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, the slime mold Physarum polycephalum, a giant single cell, is ideally suited to study emergence of behaviour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement in the abstract describing the organism",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "3e1626f5-6c7f-446b-bb46-b727767352f1",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C2",
+      "claim": "Locomotion and morphological adaptation behaviour in Physarum polycephalum emerge from self-organized patterns of rhythmic contractions of the actomyosin lining of the tubes.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show how locomotion and morphological adaptation behaviour emerge from self-organized patterns of rhythmic contractions of the actomyosin lining of the tubes making up the network-shaped organism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Main finding stated in the abstract, supported by experimental data throughout the manuscript",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "aed04f2b-a841-4545-916b-c8247bed0c13",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C3",
+      "claim": "The contraction dynamics of Physarum polycephalum can be decomposed into spatial contraction modes using Principal Component Analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "We quantify the spatio-temporal contraction dynamics by decomposing experimentally recorded contraction patterns into spatial contraction modes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Methodological approach described in abstract and demonstrated throughout results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "daf96b9e-03d1-4f5a-8875-d0ebb7970b38",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C4",
+      "claim": "Physarum polycephalum exhibits a continuous spectrum of contraction modes, as opposed to a few dominant modes.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we find a continuous spectrum of modes, as opposed to a few dominant modes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Key finding stated in abstract and supported by eigenvalue spectrum data in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "25ad64f2-3fb5-409f-85ad-41d57158b7d3",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C5",
+      "claim": "The continuous spectrum of modes allows for dynamic transitions between a plethora of specific behaviours.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggests that the continuous spectrum of modes allows for dynamic transitions between a plethora of specific behaviours with transitions marked by highly irregular contraction states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of experimental data presented in abstract",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "2405de7a-2b06-4390-adeb-a4de88bc561a",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C6",
+      "claim": "Transitions between behaviours are marked by highly irregular contraction states.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggests that the continuous spectrum of modes allows for dynamic transitions between a plethora of specific behaviours with transitions marked by highly irregular contraction states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from experimental data described in abstract",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "a122dacd-9262-4d85-b75a-ede52eedc7fd",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C7",
+      "claim": "Survival in changing environments requires organisms to transition between diverse behaviours.",
+      "claim_type": "EXPLICIT",
+      "source": "Survival in changing environments requires from organisms the ability to transition between diverse behaviours (Angilletta and Sears, 2011; Wong and Candolin, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General biological principle supported by citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "601109e0-bf1a-439d-9e80-6b32f97d51df",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C8",
+      "claim": "In higher organisms, a plethora of neural dynamics enable the capacity to transition between diverse behaviours, ranging from almost random to strongly correlated firing patterns of neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In higher organisms, a plethora of neural dynamics enable this capacity, ranging from almost random to strongly correlated firing patterns of neurons (Mochizuki et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about neural organisms supported by citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "244a1654-b4ae-45a9-ac60-e4f93a8bb16f",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C9",
+      "claim": "Decoding the origin of behaviour from neuronal activity has been called the 'holy grail of neuroscience'.",
+      "claim_type": "EXPLICIT",
+      "source": "Decoding the origin of behaviour from neuronal activity has been called the 'holy grail of neuroscience' (Bando et al., 2019), a task especially challenging given the vastly complex networks of neurons (Berman, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement attributed to cited source",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "137447d3-822f-474c-8ece-e36f14a9a7ae",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C10",
+      "claim": "The task of decoding the origin of behaviour from neuronal activity is especially challenging given the vastly complex networks of neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Decoding the origin of behaviour from neuronal activity has been called the 'holy grail of neuroscience' (Bando et al., 2019), a task especially challenging given the vastly complex networks of neurons (Berman, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "c761360f-c532-4d0a-9f2d-73685f22cb1e",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C11",
+      "claim": "Significant progress has been made by simultaneous tracking of neuronal activity and behaviour in Drosophila melanogaster.",
+      "claim_type": "EXPLICIT",
+      "source": "Significant progress has been made by simultaneous tracking of neuronal activity and behaviour \u2013 defined as trajectories through spaces of postural dynamics \u2013 in the fruit fly Drosophila melanogaster (Honegger et al., 2020) and the nematode Caenorhabditis elegans (Nguyen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about research progress supported by citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "2b4205ca-f637-4fb3-83a0-249f1bbbb0a6",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C12",
+      "claim": "Significant progress has been made by simultaneous tracking of neuronal activity and behaviour in Caenorhabditis elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Significant progress has been made by simultaneous tracking of neuronal activity and behaviour \u2013 defined as trajectories through spaces of postural dynamics \u2013 in the fruit fly Drosophila melanogaster (Honegger et al., 2020) and the nematode Caenorhabditis elegans (Nguyen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about research progress supported by citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "85fffb98-cc29-4517-a513-cdd850444064",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C13",
+      "claim": "Behaviours of Drosophila melanogaster and Caenorhabditis elegans have been identified as low-dimensional.",
+      "claim_type": "EXPLICIT",
+      "source": "Behaviours of these systems have been identified as low-dimensional (Stephens et al., 2008) and hierarchical (Berman et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Finding from cited research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "23bbffcf-39a3-4109-a4c7-bfd79008c978",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C14",
+      "claim": "Behaviours of Drosophila melanogaster and Caenorhabditis elegans have been identified as hierarchical.",
+      "claim_type": "EXPLICIT",
+      "source": "Behaviours of these systems have been identified as low-dimensional (Stephens et al., 2008) and hierarchical (Berman et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Finding from cited research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "4b1718c5-a7ea-4717-bee4-f524622d31c4",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C15",
+      "claim": "The complexity and size of biological neural networks make the acquisition and interpretation of experimental data especially challenging.",
+      "claim_type": "EXPLICIT",
+      "source": "While these discoveries have advanced our understanding of the origin of behaviour, the complexity and size of biological neural networks make the acquisition and interpretation of experimental data especially challenging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General statement about challenges in neuroscience research",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "85f44a5c-9a0a-4dba-9ecf-c9e133a78025",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C16",
+      "claim": "Organisms without a nervous system may offer an ideal intermediate step towards understanding behaviour.",
+      "claim_type": "EXPLICIT",
+      "source": "Curiously, organisms without a nervous system may offer an ideal intermediate step towards understanding behaviour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposition based on reasoning about research strategy",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "4b087ce7-442d-4a45-836a-906cf8512beb",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C17",
+      "claim": "Certain non-neural organisms readily transition between a multitude of behaviors similar in dynamic variability to that of organisms with a nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "Certain non-neural organisms readily transition between a multitude of behaviors similar in dynamic variability to that of organisms with a nervous system (Berg and Brown, 1972; Otto and Kessin, 2001; McMains et al., 2008; Ben-Jacob et al., 1994; Ben-Jacob et al., 2000; Wan and Goldstein, 2014; Wan, 2018) and thus provide the opportunity to study the link between the underlying biophysical process and behaviour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "7ca22d55-cde3-4c8b-b75e-6b23ecb4d550",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C18",
+      "claim": "Non-neural organisms provide the opportunity to study the link between the underlying biophysical process and behaviour.",
+      "claim_type": "EXPLICIT",
+      "source": "Certain non-neural organisms readily transition between a multitude of behaviors similar in dynamic variability to that of organisms with a nervous system (Berg and Brown, 1972; Otto and Kessin, 2001; McMains et al., 2008; Ben-Jacob et al., 1994; Ben-Jacob et al., 2000; Wan and Goldstein, 2014; Wan, 2018) and thus provide the opportunity to study the link between the underlying biophysical process and behaviour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference from the properties of non-neural organisms",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "e413cd52-8ced-4993-8708-eb305f24413f",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C19",
+      "claim": "Physarum polycephalum is a unicellular, network-shaped organism.",
+      "claim_type": "EXPLICIT",
+      "source": "A non-neural organism with an exceptionally versatile behavioural repertoire is the slime mould Physarum polycephalum - a unicellular, network-shaped organism (Sauer, 1982) of macroscopic dimensions, typically ranging from a millimeter to tens of centimeters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Basic description of the organism supported by citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "c3ecb8d8-e2dd-4e23-908a-36a9bfb11482",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C20",
+      "claim": "Physarum polycephalum has macroscopic dimensions, typically ranging from a millimeter to tens of centimeters.",
+      "claim_type": "EXPLICIT",
+      "source": "A non-neural organism with an exceptionally versatile behavioural repertoire is the slime mould Physarum polycephalum - a unicellular, network-shaped organism (Sauer, 1982) of macroscopic dimensions, typically ranging from a millimeter to tens of centimeters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Factual description of organism size",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "10def3b3-e33f-4195-a062-64c0b3b4ceb1",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C21",
+      "claim": "Physarum polycephalum can solve spatial optimisation and decision-making problems.",
+      "claim_type": "EXPLICIT",
+      "source": "P. polycephalum's complex behaviour is most impressively demonstrated by its ability to solve spatial optimisation and decision-making problems (Nakagaki et al., 2000; Tero et al., 2010; Nakagaki and Guy, 2007; Dussutour et al., 2010; Reid et al., 2016), exhibit habituation to temporal stimuli (Boisseau et al., 2016), and use exploration versus exploitation strategy (Aono et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Behavioral capability supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "094d55fb-5657-48b6-9edb-452e5ab3b174",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C22",
+      "claim": "Physarum polycephalum can exhibit habituation to temporal stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "P. polycephalum's complex behaviour is most impressively demonstrated by its ability to solve spatial optimisation and decision-making problems (Nakagaki et al., 2000; Tero et al., 2010; Nakagaki and Guy, 2007; Dussutour et al., 2010; Reid et al., 2016), exhibit habituation to temporal stimuli (Boisseau et al., 2016), and use exploration versus exploitation strategy (Aono et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Behavioral capability supported by citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "a301b692-c2cc-4600-b6ba-158b3bdd5896",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C23",
+      "claim": "Physarum polycephalum can use exploration versus exploitation strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "P. polycephalum's complex behaviour is most impressively demonstrated by its ability to solve spatial optimisation and decision-making problems (Nakagaki et al., 2000; Tero et al., 2010; Nakagaki and Guy, 2007; Dussutour et al., 2010; Reid et al., 2016), exhibit habituation to temporal stimuli (Boisseau et al., 2016), and use exploration versus exploitation strategy (Aono et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Behavioral capability supported by citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "4552d7d0-7dd5-4702-8865-93765f694721",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C24",
+      "claim": "Physarum polycephalum is capable of encoding memory about food source locations in the hierarchy of its body plan.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, P. polycephalum was found capable of encoding memory about food source locations in the hierarchy of its body plan (Kramar and Alim, 2021) in a process much reminding of synaptic facilitation\u2013 the brain's way of creating memories (Jackman and Regehr, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Recent finding supported by citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "9761d5c7-158d-4e14-98a9-b3d27e911ba1",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C25",
+      "claim": "The memory encoding process in Physarum polycephalum is reminiscent of synaptic facilitation, the brain's way of creating memories.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, P. polycephalum was found capable of encoding memory about food source locations in the hierarchy of its body plan (Kramar and Alim, 2021) in a process much reminding of synaptic facilitation\u2013 the brain's way of creating memories (Jackman and Regehr, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison between P. polycephalum memory and synaptic facilitation, supported by citations",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "931c6b57-9a02-4cc6-ad86-0bbc41f181f5",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C26",
+      "claim": "The generation of rich behaviour in Physarum polycephalum requires a mechanism allowing for long-range spatial coordination and flexibility to enable switching between different specific behavioural states.",
+      "claim_type": "EXPLICIT",
+      "source": "The generation of such rich behaviour requires a mechanism allowing not only for long-range spatial coordination but also the flexibility to enable switching between different specific behavioural states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical requirement inferred from the organism's behavioral capabilities",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "5a63c5e8-bb24-4a22-ac6e-bd34f9c44506",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C27",
+      "claim": "The behaviour generating mechanism in Physarum polycephalum are the active, rhythmic, cross-sectional contractions of the actomyosin cortex lining the tube walls.",
+      "claim_type": "EXPLICIT",
+      "source": "The behaviour generating mechanism in P. polycephalum are the active, rhythmic, cross-sectional contractions of the actomyosin cortex lining the tube walls (Yoshimoto and Kamiya, 1984; Ueda et al., 1986; Kamiya et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established mechanism supported by citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "2165a3b2-a585-4b8e-87b0-f7ac63a8797c",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C28",
+      "claim": "The contractions in Physarum polycephalum drive cytoplasmic flows throughout the organism's network.",
+      "claim_type": "EXPLICIT",
+      "source": "The contractions drive cytoplasmic flows throughout the organism's network (Iima and Nakagaki, 2012; Alim et al., 2013), transporting nutrients and signalling molecules (Alim et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established relationship supported by citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "403cc69e-4cbf-4e5d-aff3-6bdd25df608d",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C29",
+      "claim": "Cytoplasmic flow in Physarum polycephalum transports nutrients and signalling molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "The contractions drive cytoplasmic flows throughout the organism's network (Iima and Nakagaki, 2012; Alim et al., 2013), transporting nutrients and signalling molecules (Alim et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Function of cytoplasmic flow supported by citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "371a1d3c-037e-498a-81bd-10520993f394",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C30",
+      "claim": "Cytoplasmic flow is responsible for mass transport across Physarum polycephalum and thereby contractions directly control locomotion behaviour.",
+      "claim_type": "EXPLICIT",
+      "source": "Cytoplasmic flow is responsible for mass transport across the organism and thereby contractions directly control locomotion behaviour (Rieu et al., 2015; Lewis et al., 2015; Zhang et al., 2017; B\u00e4uerle et al., 2020; Rodiek et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Causal relationship supported by multiple citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "0763b995-66fd-421d-a003-988e4a318d61",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C31",
+      "claim": "Only one type of network-spanning peristaltic contraction pattern has been described experimentally in Physarum polycephalum.",
+      "claim_type": "EXPLICIT",
+      "source": "So far, only one type of network-spanning peristaltic contraction pattern has been described experimentally (Alim et al., 2013; Oettmeier et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the state of prior research supported by citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "39316c8c-e692-40fd-8c67-49ddf10b1b96",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C32",
+      "claim": "Various short-range contraction patterns have been observed in small Physarum polycephalum plasmodial fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for small P. polycephalum plasmodial fragments various other short-range contraction patterns have been observed (Lewis et al., 2015; Zhang et al., 2017) and predicted by theory of active contractions (Bois et al., 2011; Radszuweit et al., 2013; Radszuweit et al., 2014; Julien and Alim, 2018; Kulawiak et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from prior research supported by citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "e75c2567-5b4c-4ed9-abb0-16a7afa85231",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C33",
+      "claim": "Short-range contraction patterns in Physarum polycephalum have been predicted by theory of active contractions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for small P. polycephalum plasmodial fragments various other short-range contraction patterns have been observed (Lewis et al., 2015; Zhang et al., 2017) and predicted by theory of active contractions (Bois et al., 2011; Radszuweit et al., 2013; Radszuweit et al., 2014; Julien and Alim, 2018; Kulawiak et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Theoretical predictions supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "7ee5663b-d83f-44c9-a472-f5829e37fc72",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C34",
+      "claim": "Unknown complex, large-scale contraction patterns might play a role in generating the behaviour of large Physarum polycephalum networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, up to now unknown complex, large-scale contraction patterns might play a role in generating the behaviour of large P. polycephalum networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesis about unexplored contraction patterns",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "713bab0e-262d-4f31-9108-90f8525f94fc",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C35",
+      "claim": "Transitions between large-scale contraction patterns are needed to allow for switching between specific behaviours in Physarum polycephalum.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, transitions between such large-scale patterns are needed to allow for switching between specific behaviours, for example taking sharp turns during migration in the absence of stimuli (Rodiek and Hauser, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical requirement for behavioral flexibility, with example supported by citation",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "c86726af-6dbc-4c0b-ab46-3702107e972b",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C36",
+      "claim": "The eigenvalue spectrum of contraction modes in Physarum polycephalum is continuous with no clear cutoff.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to the small number of large eigenvalues found in a number of biological systems (Stephens et al., 2008; Jordan et al., 2013; Gilpin et al., 2016), here the spectrum of relative eigenvalues, see 'Principal component analysis (PCA)' (Appendix 2) for technical details, is continuous with no clear cutoff (Figure 1B) and as a result the contraction dynamics is high-dimensional.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Finding from PCA analysis shown in Figure 1B, contrasted with cited prior work",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "5412837f-273b-4e03-8e30-58eea4fa726c",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C37",
+      "claim": "The contraction dynamics of Physarum polycephalum is high-dimensional.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to the small number of large eigenvalues found in a number of biological systems (Stephens et al., 2008; Jordan et al., 2013; Gilpin et al., 2016), here the spectrum of relative eigenvalues, see 'Principal component analysis (PCA)' (Appendix 2) for technical details, is continuous with no clear cutoff (Figure 1B) and as a result the contraction dynamics is high-dimensional.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Conclusion drawn from the continuous eigenvalue spectrum shown in Figure 1B",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "c8a0da95-16f9-4747-b7af-3d814c013077",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C38",
+      "claim": "PCA does not directly lead to a dimensionality reduction of the contraction data in Physarum polycephalum.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, PCA does not directly lead to a dimensionality reduction of the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from the continuous spectrum finding",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "a399754d-6ca7-44c8-8145-d7e5aa3f1361",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C39",
+      "claim": "The highest-ranking contraction modes in Physarum polycephalum have a smooth spatial structure that varies on the scale of network size.",
+      "claim_type": "EXPLICIT",
+      "source": "The highest-ranking modes shown in Figure 1C(i) have a smooth spatial structure that varies on the scale of network size.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from mode structures shown in Figure 1C(i)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "f9304aa6-057b-461d-bf48-9660b41a91e5",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C40",
+      "claim": "Large-scale contraction modes in Physarum polycephalum are associated with the long wavelength peristalsis.",
+      "claim_type": "EXPLICIT",
+      "source": "As we will discuss below, such large-scale modes are associated with the long wavelength peristalsis observed in Iima and Nakagaki, 2012; Alim et al., 2013.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Association with prior observations supported by citations",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "12544485-5c22-417b-b1f3-a024e7af0941",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C41",
+      "claim": "Some contraction modes in Physarum polycephalum highlight specific morphological characteristics of the network.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we also find modes highlighting specific morphological characteristics of the network. For example, the structure of mode \u03d5\u21924, Figure 1C(i), corresponds to the thickest tubes of the network Figure 1A, which suggests a special role of these tubes in the functioning of the network.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from mode structures shown in Figure 1C(i) and comparison with Figure 1A",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "f3295eb5-b0e5-4b85-9e19-6aa6dbc13de6",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C42",
+      "claim": "The structure of mode \u03d5\u21924 corresponds to the thickest tubes of the Physarum polycephalum network, suggesting a special role of these tubes in the functioning of the network.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the structure of mode \u03d5\u21924, Figure 1C(i), corresponds to the thickest tubes of the network Figure 1A, which suggests a special role of these tubes in the functioning of the network.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from Figure 1C(i) and Figure 1A with interpretation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "a6623a04-da73-4c67-9a0b-23aa686b5b1c",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C43",
+      "claim": "As mode rank decreases, the spatial structure of contraction modes becomes increasingly finer.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, as we go to lower ranked modes, the spatial structure of the modes becomes increasingly finer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation about the pattern of mode structures across ranks",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "07b1483c-ee75-4c2c-b96a-416fcfd68717",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C45",
+      "claim": "Amplitudes of mode coefficients vary significantly over time in Physarum polycephalum, even on orders of magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Most strikingly, amplitudes of mode coefficients vary significantly over time - even on orders of magnitude, as shown in Figure 1\u2014figure supplement 2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from Figure 1\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "07177c3e-781e-4d31-8c42-f8eda593d1ad",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C46",
+      "claim": "On average, approximately 6.06% (\u224870 modes) of the 1500 modes are significant for a 90% cumulative amplitude cutoff in Physarum polycephalum.",
+      "claim_type": "EXPLICIT",
+      "source": "For a 90% cumulative amplitude cutoff, we find that on average 6.06% (\u224870 modes) of the 1500 modes are significant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative result from analysis of mode amplitudes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "c58a9ee9-930b-4909-88a6-69e18d46d456",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C47",
+      "claim": "There is large variation in the number of significant modes over time in Physarum polycephalum, with a standard deviation of 36.96% from the mean value.",
+      "claim_type": "EXPLICIT",
+      "source": "As an important feature, we observe that there is large variation in the number of significant modes over time, with a standard deviation of 36.96% from the mean value.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical measure of variability from data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "2f8eadfb-1e2b-4271-9b82-c734d913d75f",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C48",
+      "claim": "Large variation in the number of significant modes over time is an indicator for the complexity of the contractions in the Physarum polycephalum network.",
+      "claim_type": "EXPLICIT",
+      "source": "This is an indicator for the complexity of the contractions in the network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of the observed variability",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "e2c15a90-b3be-4329-9ae9-b75730b54e36",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C49",
+      "claim": "For a small number of significant modes, the mode coefficients are strongly (anti-)correlated in time in Physarum polycephalum.",
+      "claim_type": "EXPLICIT",
+      "source": "For a small number of significant modes, the coefficients are strongly (anti-)correlated in time, while for a large number of significant modes, correlations values between coefficients are more uniformly distributed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Finding from temporal correlation analysis shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "28be702d-d25a-454f-8dff-f01309c3192f",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C50",
+      "claim": "For a large number of significant modes, correlation values between mode coefficients are more uniformly distributed in Physarum polycephalum.",
+      "claim_type": "EXPLICIT",
+      "source": "For a small number of significant modes, the coefficients are strongly (anti-)correlated in time, while for a large number of significant modes, correlations values between coefficients are more uniformly distributed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Finding from temporal correlation analysis shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "c07b0776-5252-4a89-8507-93b391a45dad",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C51",
+      "claim": "Correlated mode coefficients result in coordinated pumping behaviour/contractions in Physarum polycephalum.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, correlated coefficients result in coordinated pumping behaviour/contractions, while least correlated coefficients coincide with irregular network-wide contractions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of the correlation patterns",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "cecdcc97-6f4e-479c-800c-3dd829fd668b",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C52",
+      "claim": "Least correlated mode coefficients coincide with irregular network-wide contractions in Physarum polycephalum.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, correlated coefficients result in coordinated pumping behaviour/contractions, while least correlated coefficients coincide with irregular network-wide contractions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of the correlation patterns",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "1859777d-a335-49f0-b901-8a9914aaec2e",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C53",
+      "claim": "The dynamics of network contractions in Physarum polycephalum covers a wide range in complexity, from superposition of few large-scale modes strongly correlated in time, to superpositions of many modes of varying spatial scale and temporal correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "The above analysis shows that the dynamics of network contractions covers a wide range in complexity, from superposition of few large-scale modes strongly correlated in time, to superpositions of many modes of varying spatial scale and temporal correlations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings from mode and correlation analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "e19932cb-a17e-445b-bb0f-c82d1550cf35",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C54",
+      "claim": "The variability in contraction dynamics gives rise to strong variability in the regularity of the contraction dynamics over time in Physarum polycephalum.",
+      "claim_type": "EXPLICIT",
+      "source": "This gives rise to strong variability in the regularity of the contraction dynamics over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from the observed range of complexity",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "b1b40a20-ba70-43f4-807d-3dcbf01a6710",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C55",
+      "claim": "Food acts as an attractant and causes locomotion of Physarum polycephalum toward the stimulus in the long term.",
+      "claim_type": "EXPLICIT",
+      "source": "Food acts as an attractant and causes locomotion of the organism toward the stimulus in the long term.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from stimulus experiment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "976b1e5b-3269-4433-8afb-e65023daeef6",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C56",
+      "claim": "Food stimulus immediately triggers the tubes in the Physarum polycephalum network to grow in a concentric region around the stimulus site.",
+      "claim_type": "EXPLICIT",
+      "source": "The stimulus immediately triggers the tubes in the network to grow in a concentric region around the stimulus site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Immediate response observed in stimulus experiment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "8c330980-7011-4140-96cc-12602971a294",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C57",
+      "claim": "The thick transport tubes oriented toward stimulus location increase their volume in response to food stimulus in Physarum polycephalum.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, the thick transport tubes oriented toward stimulus location increase their volume, see Figure 3A.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from stimulus experiment shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "dd5c5f09-7c3f-48c0-ae12-8a75307b7abf",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C58",
+      "claim": "After stimulus application, the upper part of the Physarum polycephalum network undergoes significant growth at the expense of the fan-like shaped locomotion front in the lower left corner.",
+      "claim_type": "EXPLICIT",
+      "source": "After stimulus application, the upper part of the network undergoes significant growth at the expense of the fan-like shaped locomotion front in the lower left corner.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from growth tracking shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "3d5bda7b-2a6b-471d-be67-db8c0b307b2e",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C59",
+      "claim": "The application of food stimulus leads to a reversal of the Physarum polycephalum network's growth direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the application of the stimulus leads to a reversal of the network's growth direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from growth tracking data in Figure 3B and Figure 3\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "ece995fc-3a9f-4e77-a15f-aa368c1f3400",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C60",
+      "claim": "After food stimulus application, the rhythmic contraction dynamics of the Physarum polycephalum network are dominated by the three highest-ranked modes for more than 500 frames.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, for more than 500 frames after the stimulus has been applied, the rhythmic contraction dynamics of the network are dominated by the three highest-ranked modes, see Figure 3D and Figure 3\u2014figure supplement 3 for the oscillatory dynamics of mode coefficients.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from PCA analysis of post-stimulus data shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "8a62c91f-3cfc-4b2d-9e4c-30ace72d1cb5",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C61",
+      "claim": "When a single contraction mode is the most active one for a duration of >30 frames in Physarum polycephalum, its amplitude exceeds that of any other mode by 20\u201330%.",
+      "claim_type": "EXPLICIT",
+      "source": "During this period, every time a single mode is the most active one for a duration of \u00a7gt;30 frames, its amplitude exceeds that of any other mode by 20\u201330%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative observation from mode amplitude analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "d909392b-a497-44cf-8fc9-852ce92eb0d7",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C62",
+      "claim": "The time interval of growth reversal in Physarum polycephalum coincides with the activation of the third-ranked contraction mode.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we observe that the time interval of growth reversal Figure 3B coincides with the activation of the third-ranked mode \u03d5\u21923, (orange curve in Figure 3D), as indicated by the pink shaded box extending across Figure 3D and B.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Temporal correlation observed between growth data (Figure 3B) and mode activation (Figure 3D)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "432fd1f2-2c76-45c0-a665-0b987a5c51b5",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C63",
+      "claim": "The structure of the third-ranked contraction mode shows a clear distinction of the growth area close to the stimulus and an activation of the two thick tubes stretching from bottom to the top of the Physarum polycephalum network.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of this mode shows a clear distinction of the growth area close to the stimulus and an activation of the two thick tubes stretching from bottom to the top of the network.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from mode structure shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "687febce-216f-410e-a539-07fdd62763c0",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C64",
+      "claim": "Over time the growth of the stimulus response region tapers off and there is reactivation of mode \u03d5\u21921 in Physarum polycephalum.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, over time the growth of the stimulus response region tapers off and we find reactivation of mode \u03d5\u21921 (red curve) which was the dominant mode before stimulus application.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from Figure 3D showing mode activation over time",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "736e0050-743d-4534-9832-33a351ab3284",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C65",
+      "claim": "The spatial structure of mode \u03d5\u21921 after stimulus is remarkably similar to mode \u03d5\u21921 before stimulus in Physarum polycephalum.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that the spatial structure of mode \u03d5\u21921 is remarkably similar to mode \u03d5\u21921, the top-ranked mode that we find for PCA on the pre-stimulus 'idle' data Figure 3\u2014figure supplement 2B.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison between mode structures from different time periods shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "faea9f01-caaf-48d7-8599-4f13d2251664",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C66",
+      "claim": "The reactivation of mode \u03d5\u21921 indicates that this contraction pattern is intrinsic to the Physarum polycephalum network and is not simply erased by the stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "The reactivation of this mode indicates that this contraction pattern is intrinsic to the network and is not simply erased by the stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of the mode reactivation observation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "d64cac7f-2f81-4c6b-a4cf-7b0654825276",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C67",
+      "claim": "The regular contraction dynamics in Physarum polycephalum are interspersed with many-mode states where the number of significant modes increases considerably.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the regular contraction dynamics shown in Figure 3D are interspersed with many-mode states where the number of significant modes increases considerably, see Figure 3E.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from Figure 3E showing variation in number of significant modes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "b8b4deb3-cbd1-4761-8bf8-5a2d84b2393a",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C68",
+      "claim": "The number of significant modes oscillates after the stimulus in Physarum polycephalum, with oscillation maxima coinciding with times at which the organism switches from one dominant contraction pattern to another.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of significant modes oscillates after the stimulus. The oscillation maxima coincide with times at which the organism switches from one dominant contraction pattern to another, as indicated by the blue-shaded boxes extending across Figure 3D and E.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Temporal correlation observed between Figures 3D and 3E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "765d0989-5ff2-4775-b998-fcfd41d1a1e9",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C69",
+      "claim": "Prolonged regular dynamics dominated by a few or even a single mode are associated with specific behaviour like locomotion and growth in Physarum polycephalum.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that prolonged regular dynamics dominated by a few or even a single mode are associated with specific behaviour like locomotion and growth, while the many-mode states seem to serve as transition states between them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of the correlation between mode dynamics and behavior",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "d0682afb-1551-4ecc-9ca3-c781f9dcce00",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C70",
+      "claim": "Many-mode states seem to serve as transition states between specific behaviours in Physarum polycephalum.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that prolonged regular dynamics dominated by a few or even a single mode are associated with specific behaviour like locomotion and growth, while the many-mode states seem to serve as transition states between them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of the role of many-mode states based on observations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "67bd1559-2486-4c94-b7ed-9bdda7af3a49",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C71",
+      "claim": "A continuous spectrum of modes is found when performing PCA on a Physarum polycephalum specimen reduced in complexity to a single tube.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, when performing PCA on this specimen of simple morphology we again find a continuous spectrum of modes (Figure 5\u2014figure supplement 1) and large variability, including spikes of many-mode states, in the number of significant modes (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Finding from PCA on single-tube specimen shown in Figure 5\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "d2aa5a6b-ca99-4d25-a853-dfb7bdb3d8e6",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C72",
+      "claim": "Large variability, including spikes of many-mode states, in the number of significant modes is found in a Physarum polycephalum specimen reduced to a single tube.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, when performing PCA on this specimen of simple morphology we again find a continuous spectrum of modes (Figure 5\u2014figure supplement 1) and large variability, including spikes of many-mode states, in the number of significant modes (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Finding from analysis of single-tube specimen shown in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "b0217f78-3b83-4ead-9283-7d4b809dbfef",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C73",
+      "claim": "The continuous spectrum of modes and its variability in activation is intrinsic to the organism's behaviour, not merely a reflection of morphological complexity.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation finally underlines that the continuous spectrum of modes and its variability in activation is intrinsic to the organism's behaviour, ruling out that the complexity of contraction modes only mirrors morphological complexity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from finding continuous spectrum in both network and single-tube morphologies",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "d7a2fb81-350a-4601-a25b-61c1b518f5c8",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C74",
+      "claim": "High flow rates in Physarum polycephalum are only achieved when the number of significant modes is small.",
+      "claim_type": "EXPLICIT",
+      "source": "For both the flow rate at the left and right end of the tube, shown in Figure 4, and Figure 4\u2014figure supplement 1, respectively, we find that large flow rates are only achieved when the number of significant modes is small.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Finding from flow rate analysis shown in Figure 4 and Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "aef52ea9-1eb8-4459-9d58-6cd598fa3302",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C75",
+      "claim": "The irregularity of states consisting of many modes goes hand in hand with reduced pumping efficiency and thus unspecific behaviour in Physarum polycephalum.",
+      "claim_type": "EXPLICIT",
+      "source": "We had previously found that few significant modes are highly (anti-)correlated, whereas states with many significant modes are not, see Figure 2B. This observation now confirms our physical intuition that the irregularity of states consisting of many modes goes hand in hand with reduced pumping efficiency and thus unspecific behaviour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation connecting correlation patterns (Figure 2B) with flow rate observations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "9a592ccc-0b77-4afc-bd76-f7af35ae6fed",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C76",
+      "claim": "A small number of significant modes does not necessarily always imply a large flow rate in Physarum polycephalum.",
+      "claim_type": "EXPLICIT",
+      "source": "Since a small number of significant modes not necessarily always implies a large flow rate, we next turn to analyze their exact spatial structure and instantaneous temporal correlation to determine how cytoplasmic flow rates impact behaviour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from flow rate analysis that motivates further investigation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "6e80be01-9d33-48e8-a8d4-445d2ce23c56",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C77",
+      "claim": "A food stimulus applied to the left end of a single-tube Physarum polycephalum reverses the direction of locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "While initially the right end is protruding faster at the expense of the left end, a food stimulus applied to the left end of the tube reverses the direction of locomotion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from locomotion tracking shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "5ebdea00-85c8-4e05-87a4-f49ce8b9e069",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C78",
+      "claim": "The spatial shapes of the two top-ranked contraction modes in single-tube Physarum polycephalum approximate Fourier modes.",
+      "claim_type": "EXPLICIT",
+      "source": "The spatial shapes of the two top-ranked modes \u03d5\u21921 and \u03d5\u21922 approximate Fourier modes, see Figure 5C and Figure 5\u2014figure supplement 2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from mode structures shown in Figure 5C and Figure 5\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "bc9b2480-4838-45bd-95ca-0541afc671f6",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C79",
+      "claim": "Over long time intervals after the stimulus, the two top-ranked modes dominate the contraction dynamics of single-tube Physarum polycephalum.",
+      "claim_type": "EXPLICIT",
+      "source": "Examining the activation of modes, we find that over long time intervals, and in particular after the stimulus, the two top-ranked modes dominate the tube's contraction dynamics, see Figure 5D.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from mode activation analysis shown in Figure 5D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "9d01c511-11cb-437c-8a90-a62d75b9f33b",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C80",
+      "claim": "When mode \u03d5\u21921 alone is dominating in single-tube Physarum polycephalum, the tube is driven by a standing wave contraction pattern yielding only a low cytoplasmic flow rate.",
+      "claim_type": "EXPLICIT",
+      "source": "During the first interval when mode \u03d5\u21921 alone is dominating, the tube is driven by a standing wave contraction pattern - yielding only a low cytoplasmic flow rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of specific time interval linking mode activation to flow pattern",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "3f348a08-c7a9-41ff-9ec1-d854acbf242c",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C81",
+      "claim": "When mode \u03d5\u21921 alone is dominating in single-tube Physarum polycephalum, the size of the locomotion front at either end shows no significant change in area.",
+      "claim_type": "EXPLICIT",
+      "source": "Correspondingly, the size of the locomotion front at either end shows no significant change in area during this interval.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from growth tracking corresponding to standing wave interval",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "db7c067d-71f8-43b3-acfa-e96a3b946f7a",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C82",
+      "claim": "When both modes \u03d5\u21921 and \u03d5\u21922 are equally active in single-tube Physarum polycephalum, the resulting superposition is a left-traveling wave producing a large cytoplasmic flow rate in that direction.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, during the interval when both modes \u03d5\u21921 and \u03d5\u21922 are equally active, the resulting superposition is a left-traveling wave producing a large cytoplasmic flow rate in that direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of specific time interval linking mode superposition to flow pattern",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "1f0ecaf6-88b4-4219-a4ab-ddaa5bfee9e6",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C83",
+      "claim": "The left-traveling wave in single-tube Physarum polycephalum is in accordance with the growth of the left and retraction of the right locomotion front.",
+      "claim_type": "EXPLICIT",
+      "source": "The left-traveling wave is in accordance with the growth of the left and retraction of the right locomotion front as quantified in Figure 5B.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Correlation between flow pattern and growth behavior shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "3321ef8f-e2c2-4cd9-87c1-1eabdd50075e",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C84",
+      "claim": "A small number of significant modes is associated with specific behaviour in Physarum polycephalum.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, the direct mapping of contraction dynamics onto ensuing cytoplasmic flows confirms that a small number of significant modes is associated with specific behaviour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from analysis of single-tube experiments",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "d18ffe77-f79c-4842-a697-ad3edcb9142b",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C85",
+      "claim": "High cytoplasmic flow rates at the tube ends drive locomotion in Physarum polycephalum, while lower flow rates likely lead to other behaviours such as mixing.",
+      "claim_type": "EXPLICIT",
+      "source": "High cytoplasmic flow rates at the tube ends drive locomotion, while lower flow rates likely lead to other behaviours such as mixing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of flow rate effects on behavior, with speculation about low flow rate behaviors",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "a72515df-ef9e-441b-ac16-ed5a542c9300",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C86",
+      "claim": "Many-mode states are necessary for transitions in a multi-behavioural space in Physarum polycephalum.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, many-mode states seem necessary for transitions in a multi-behavioural space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from observations of mode dynamics during behavioral transitions",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "812bc739-fec7-43ba-82d5-3eaafc0cb7cc",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C87",
+      "claim": "A detailed analysis of the link between contractions and flows in the network morphology of Physarum polycephalum is expected to yield qualitatively similar results to those of the single tube.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, while it is beyond the scope of this study, we expect a detailed analysis of the link between contractions and flows in the network morphology to yield qualitatively similar results to those of the single tube, thus completing the mechanism of behaviour generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Expectation based on similarities between network and single-tube observations",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "b8b28115-4eeb-4de0-b3bf-79455a2dd240",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C88",
+      "claim": "Decomposing the contractions across the Physarum polycephalum network into individual modes reveals a large intrinsic variability in the number of significant modes over time along a continuous spectrum of modes.",
+      "claim_type": "EXPLICIT",
+      "source": "Decomposing the contractions across the network into individual modes, we discover a large intrinsic variability in the number of significant modes over time along a continuous spectrum of modes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of key finding from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "9e34cc7d-f24b-4456-809f-90b4e53645ea",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C89",
+      "claim": "States with few significant modes and regular contraction patterns correspond to specific behaviors, such as locomotion, in Physarum polycephalum.",
+      "claim_type": "EXPLICIT",
+      "source": "By triggering locomotion through application of a stimulus, we identify that states with few significant modes and regular contraction patterns correspond to specific behaviors, in this case locomotion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Finding from stimulus experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "0691fd11-9d42-4175-bbf3-27ea8491a52b",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C90",
+      "claim": "Irregular contraction patterns consisting of a large number of significant modes are present in Physarum polycephalum, particularly marking the transitions between different regular contraction states.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, irregular contraction patterns consisting of a large number of significant modes are also present, particularly marking the transitions between different regular contraction states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from analysis of contraction dynamics over time",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "c503f8dd-f98f-4d12-aead-80ec5a34738d",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C91",
+      "claim": "A continuous spectrum of contraction modes allows the living matter network Physarum polycephalum to quickly transition between a multitude of behaviours using the superposition of multiple contraction patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that a continuous spectrum of contraction modes allows the living matter network P. polycephalum to quickly transition between a multitude of behaviours using the superposition of multiple contraction patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Main conclusion of the study based on all findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "29ed9c0d-f9eb-44fa-b951-4c9d62ad0f64",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C92",
+      "claim": "Measurable quantities of biological networks, such as the degree distribution, typically follow continuous distributions and are oftentimes power-laws.",
+      "claim_type": "EXPLICIT",
+      "source": "Measurable quantities of these networks, for instance the degree distribution of the network, typically follow continuous distributions and are oftentimes power-laws.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General statement about properties of biological networks",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "47ebfc10-7987-4e73-83d2-4e4b3a2a332d",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C93",
+      "claim": "The spectrum of eigenvalues found for the contraction dynamics in Physarum polycephalum may suggest a power-law.",
+      "claim_type": "EXPLICIT",
+      "source": "The spectrum of eigenvalues Figure 1B that we find for the contraction dynamics in P. polycephalum may similarly suggest a power-law.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Speculation about the nature of the eigenvalue spectrum",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "0f3e1455-f904-4a81-b981-c0f6bb7e30ef",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C94",
+      "claim": "The continuity of the eigenvalue spectrum in Physarum polycephalum is not simply the result of the organism's complex network morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to emphasise that the continuity of the eigenvalue spectrum is not simply the result of the organism's complex network morphology. This is demonstrated by the fact that we find a similar spectrum also for the single-tube morphology Figure 5\u2014figure supplement 1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Conclusion from comparison of network and single-tube spectra",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "a7fc1831-8b4c-44f2-8cfa-285c9b281e3b",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C95",
+      "claim": "The continuous spectrum of eigenvalues in Physarum polycephalum is distinctively a property of the dynamic state of the organism.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, here the continuous spectrum of eigenvalues is distinctively a property of the dynamic state of the organism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from finding continuous spectrum in both morphologies",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "baf28eee-1e58-4935-9af0-9ba43f6437a9",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C96",
+      "claim": "The observation of interlaced regular and irregular contraction patterns in Physarum polycephalum is reminiscent of the strongly correlated or random firing patterns of neurons in higher organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observation of interlaced regular and irregular contraction patterns in P. polycephalum reminds of the strongly correlated or random firing patterns of neurons in higher organisms (Mochizuki et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with neural systems supported by citation",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "02a8d01e-7043-4e22-9089-edef90a7cf02",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C97",
+      "claim": "In neural organisms, stereotyped behaviours are associated with controlled neural activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In neural organisms, stereotyped behaviours are associated with controlled neural activity, as for example for locomotion in C. elegans (Liu et al., 2018) or the behavioural states of the fruit fly Drosophila melanogaster (Berman et al., 2014; Berman et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about neural organisms supported by citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "b8ca690d-8d22-4a2e-bf1e-4049b19f4fec",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C98",
+      "claim": "Variability in the dynamics of behaviour is widely observed in neuronal organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Variability in the dynamics of behaviour is also widely observed in these neuronal organisms (Grobstein, 1994; Renart and Machens, 2014; Werkhoven et al., 2021; Honegger et al., 2020; Ahamed et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about behavioral variability in neural organisms supported by multiple citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "674b73b1-a90f-4a5e-aa53-e208efb10f0d",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C99",
+      "claim": "The transition role of irregular states consisting of many significant modes observed in Physarum polycephalum likely parallels the mechanisms of generating behaviour in more complex forms of life.",
+      "claim_type": "EXPLICIT",
+      "source": "It is thus likely that the transition role of irregular states consisting of many significant modes observed here for P. polycephalum parallels the mechanisms of generating behaviour in the more complex forms of life.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about broader implications based on similarities with neural organisms",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "e21f1399-e2eb-496c-b1af-4ddbc6d4f6d0",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C100",
+      "claim": "Physarum polycephalum is renowned for its ability to make informed decisions and navigate a complex environment.",
+      "claim_type": "EXPLICIT",
+      "source": "P. polycephalum is renowned for its ability to make informed decisions and navigate a complex environment (Nakagaki et al., 2000; Tero et al., 2010; Nakagaki and Guy, 2007; Dussutour et al., 2010; Reid et al., 2016; Boisseau et al., 2016; Aono et al., 2014; Ueda et al., 1976; Miyake et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about organism capabilities supported by multiple citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "2cc9ed6e-5e22-4c6c-9f00-d23c1e0410d7",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C101",
+      "claim": "The contraction states with many significant modes in Physarum polycephalum likely act as noisy triggers that can spontaneously cause the organism to reorient its direction of locomotion during foraging.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that the contraction states with many significant modes here act as noisy triggers that can spontaneously cause the organism to reorient its direction of locomotion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about the functional role of many-mode states in foraging behavior",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "9e486ff2-eade-4dce-a4c1-80f80c7c9216",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C102",
+      "claim": "The foraging networks of Physarum polycephalum display a plethora of morphological patterns which are linked to the underlying metabolic states.",
+      "claim_type": "EXPLICIT",
+      "source": "The foraging networks displays a plethora of morphological patterns which are linked to the underlying metabolic states (Takamatsu et al., 2017; Lee et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about morphology-metabolism relationship supported by citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "58887add-133a-4ced-93d9-186383ebf59d",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C103",
+      "claim": "In Drosophila melanogaster, behaviour stemming from neural activity causes large-scale changes in metabolic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "It has recently been shown that in the neural organism Drosophila melanogaster, behaviour stemming from neural activity causes large-scale changes in metabolic activity (Mann et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Recent finding in Drosophila supported by citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "da1e31b1-7558-48b1-83f0-6d31f3e72af2",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C104",
+      "claim": "Theories for active flow networks predict selective activation of thick tubes.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, these theories predict selective activation of thick tubes which we observe in the living network as well, prominently appearing among the top ranking modes, see \u03d5\u21924 in Figure 1C(i) or \u03d5\u21923 in Figure 3C.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Theoretical prediction that matches experimental observations shown in figures",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "4c508613-c034-4a89-8da2-734b943963b9",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C105",
+      "claim": "Selective activation of thick tubes is observed in the living Physarum polycephalum network, prominently appearing among the top ranking modes.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, these theories predict selective activation of thick tubes which we observe in the living network as well, prominently appearing among the top ranking modes, see \u03d5\u21924 in Figure 1C(i) or \u03d5\u21923 in Figure 3C.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from mode structures shown in Figure 1C(i) and Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "44717adb-d8f5-4d86-90be-8d9f1d52f5ad",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C106",
+      "claim": "Dynamic states arising from first principles in active flow networks could map onto behavioural and transition states observed in Physarum polycephalum.",
+      "claim_type": "EXPLICIT",
+      "source": "This is a first hint that dynamics states arising from first principles in active flow networks could map onto behavioural and transition states observed here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about connection between theory and observations",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "dff3b424-9dc6-4e5b-8e25-b46f80adda54",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C107",
+      "claim": "Irregular dynamics arising in states with many significant modes play an important role in switching between behaviours in Physarum polycephalum.",
+      "claim_type": "EXPLICIT",
+      "source": "Likely our most broadly relevant finding in this work is that irregular dynamics, here arising in states with many significant modes, play an important role in switching between behaviours.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Key conclusion from the study",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "09c9407f-4979-4ed0-a9f6-a16fa4efb59b",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C108",
+      "claim": "The most powerful aspect of Physarum polycephalum as a model organism of behaviour lies in the direct link between actomyosin contractions, resulting in cytoplasmic flows and emerging behaviours.",
+      "claim_type": "EXPLICIT",
+      "source": "The most powerful aspect of P. polycephalum as a model organism of behaviour lies in the direct link between actomyosin contractions, resulting in cytoplasmic flows and emerging behaviours.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the advantages of P. polycephalum as a model system",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "eef0f7fd-e206-4433-a644-75e46eb04074",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C109",
+      "claim": "The broad understanding of the theory of active contractions might be the foundation to formulate the physics of behaviour not only in Physarum polycephalum but also in other simple organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "The broad understanding of the theory of active contractions (Bois et al., 2011; Radszuweit et al., 2013; Radszuweit et al., 2014; Julien and Alim, 2018; Kulawiak et al., 2019) might therefore well be the foundation to formulate the physics of behaviour not only in P. polycephalum but also in other simple organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about broader implications supported by citations to theory",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "8bfc611d-4b8c-4c8c-9d4a-ab0b9812edec",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C110",
+      "claim": "The specimen was prepared from fused microplasmodia grown in a liquid culture and plated on 1.5%-agar.",
+      "claim_type": "EXPLICIT",
+      "source": "The specimen was prepared from fused microplasmodia grown in a liquid culture (Daniel et al., 1962) and plated on 1.5%-agar.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental method description with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "53ead1ec-2da0-4115-9467-8ec494c56301",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C111",
+      "claim": "The network was imaged in the bright field setting with a Zeiss Axio Zoom V.16 microscope at an acquisition frame rate of 3 sec.",
+      "claim_type": "EXPLICIT",
+      "source": "The network was trimmed and imaged in the bright field setting in Zeiss ZEN two imaging software with a Zeiss Axio Zoom V.16 microscope equipped with a Hamamatsu ORCA-Flash 4.0 digital camera and Zeiss PlanNeoFluar 1 x/0.25 objective. The acquisition frame rate was 3 sec.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental method description",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "c8560f16-3631-467c-81db-7bd50a1b2a12",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "claim_id": "C112",
+      "claim": "The stimulus was applied in the form of a heat-killed HB101 bacterial pellet in close network proximity.",
+      "claim_type": "EXPLICIT",
+      "source": "The stimulus was applied in a form of a heat-killed HB101 bacterial pellet in close network proximity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental method description",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "aa275c76-7a4e-480b-a597-cd28cc2b6305",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Principal Component Analysis (PCA) of contraction dynamics in P. polycephalum reveals a continuous eigenvalue spectrum with no clear cutoff, contrasting with low-dimensional behaviors found in other biological systems. This continuous spectrum indicates high-dimensional contraction dynamics and does not lead to direct dimensionality reduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C36, C37, and C38 are well-supported by Figure 1B showing the continuous eigenvalue spectrum and comparison with randomized data. The finding is explicitly contrasted with prior work on other organisms (C36), and the conclusion about high-dimensionality (C37) and lack of dimensionality reduction (C38) logically follows from the continuous spectrum observation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "72915e50-1e8d-4e2d-afc2-b246a928e39d",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The spatial structure of contraction modes varies systematically with mode rank: highest-ranking modes show smooth, large-scale patterns associated with peristalsis; some modes highlight specific morphological features like thick tubes; and lower-ranked modes exhibit increasingly fine spatial structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C43 are supported by visual evidence in Figure 1C(i) and Figure 1A. The observation that mode \u03c6\u2084 corresponds to thick tubes (C41, C42) is directly shown in the figures. The systematic variation in spatial structure across ranks (C39, C43) is documented, and the association with peristalsis (C40) is supported by citations to prior work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "50ecc805-f848-4734-851d-81ac82e89c4a",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Mode coefficients exhibit large temporal variability in amplitude (orders of magnitude), with approximately 6.06% (~70 modes) being significant at any given time for a 90% cumulative amplitude cutoff. The number of significant modes shows high variability over time (standard deviation 36.96%), indicating complexity in network contractions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48 are supported by quantitative data from Figure 1\u2014figure supplement 2 and Figure 2A. The specific percentages and statistical measures (C46, C47) are explicitly stated with supporting data. The interpretation of variability as indicating complexity (C48) is a reasonable inference from the observed high standard deviation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "b92a0baa-14df-48fe-be5c-557596fecfa7",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Temporal correlations between mode coefficients depend on the number of significant modes: few significant modes show strong (anti-)correlations corresponding to coordinated pumping, while many significant modes show uniformly distributed correlations corresponding to irregular contractions. This creates a wide range of contraction complexity over time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C54 are supported by Figure 2B showing the distribution of temporal correlations. The connection between correlation patterns and pumping behavior (C51, C52) is a reasonable physical interpretation. The summary statements (C53, C54) logically synthesize the observations about mode numbers and correlations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "1be8e320-9c8f-48d8-9bfd-7cdabb0bb176",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Food stimulus triggers immediate local growth around the stimulus site and in thick tubes oriented toward it, leading to reversal of the network's growth direction from the original locomotion front to the stimulus region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C59 are supported by observations in Figure 3A and quantitative growth tracking in Figure 3B. The immediate response (C56, C57) and subsequent growth reversal (C58, C59) are documented with visual and quantitative evidence. The causal connection between stimulus and behavior is clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "3da84265-a1bb-4937-bf4d-cec9deb2c0ea",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "After stimulus application, contraction dynamics are dominated by the three highest-ranked modes for >500 frames, with specific modes (particularly \u03c6\u2083) coinciding with growth reversal. The reactivation of mode \u03c6\u2081, similar to the pre-stimulus dominant mode, indicates intrinsic contraction patterns that persist despite stimulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C66 are supported by Figure 3D showing mode activation over time and Figure 3C showing mode structures. The temporal correlation between mode \u03c6\u2083 activation and growth reversal (C62) is demonstrated by aligned time windows in Figure 3B and 3D. The similarity between pre- and post-stimulus \u03c6\u2081 modes (C65) is shown in supplementary figures, supporting the interpretation of intrinsic patterns (C66).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "bb36cb20-b6ee-4d0c-9f4f-29a00265f394",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Regular contraction dynamics dominated by few modes are interspersed with many-mode states where the number of significant modes increases considerably. These many-mode states coincide with transitions between dominant contraction patterns, suggesting that few-mode states correspond to specific behaviors while many-mode states serve as transitions between them.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C70 are supported by Figure 3E showing oscillations in the number of significant modes, with temporal alignment to mode transitions in Figure 3D (blue-shaded boxes). The interpretation that many-mode states serve as transitions (C70) is reasonable given the temporal correlation with behavioral switches, though it remains somewhat inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "c958c6d6-6a01-4753-99c7-b6502d3f8f4c",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "A continuous spectrum of modes and large variability in significant mode numbers is also found in single-tube P. polycephalum specimens, demonstrating that this property is intrinsic to the organism's behavior rather than a reflection of morphological complexity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C73, C94-C95 are supported by Figure 5\u2014figure supplement 1 and Figure 5A showing similar continuous spectra and variability in both network and single-tube morphologies. The conclusion that the continuous spectrum is a property of dynamic state rather than morphology (C73, C95) is well-justified by the comparison across different morphologies (C94).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "f0c17474-5f7f-47f1-927d-8ae25cc3c178",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "High cytoplasmic flow rates are only achieved when the number of significant modes is small, confirming that irregular many-mode states have reduced pumping efficiency. However, a small number of significant modes does not always guarantee high flow rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C76 are supported by Figure 4 and Figure 4\u2014figure supplement 1 showing the relationship between flow rates and number of significant modes. The connection to earlier correlation findings (C75 referencing Figure 2B) strengthens the interpretation. The caveat (C76) is important and motivates further analysis of mode structure and correlations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "b2efdba5-1717-4b3b-a4b0-d5e7298c696d",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "In single-tube specimens, food stimulus reverses locomotion direction. The two top-ranked modes (approximating Fourier modes) dominate post-stimulus dynamics. When mode \u03c6\u2081 alone dominates, a standing wave produces low flow and no growth; when both \u03c6\u2081 and \u03c6\u2082 are equally active, their superposition creates a traveling wave producing high flow and directional growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C84 are supported by Figure 5B (locomotion tracking), Figure 5C (mode shapes), and Figure 5D (mode activation). The connection between mode superposition and wave type (C80, C82) is physically sound, and the correlation with growth behavior (C81, C83) is demonstrated in Figure 5B. This provides direct mechanistic evidence linking contraction patterns to behavior (C84).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "baad92f3-ea3f-4a51-8a5f-957b20d6e13a",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Locomotion and morphological adaptation behaviors emerge from self-organized rhythmic contractions. The continuous spectrum of modes enables dynamic transitions between specific behaviors, with transitions marked by irregular contraction states consisting of many significant modes. Regular patterns with few modes correspond to specific behaviors like locomotion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C5, C6, C88-C91 represent the main conclusions of the study, synthesizing findings from all experiments. These are well-supported by the collective evidence: continuous spectrum (Figures 1B, 5\u2014figure supplement 1), correlation between few-mode states and specific behaviors (Figures 3, 5), and many-mode states marking transitions (Figures 3E, 5E). The mechanistic link from contractions to behavior is demonstrated in the single-tube experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "7c2176be-f793-4f8c-a19b-dee7d7817c14",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "High cytoplasmic flow rates at tube ends drive locomotion, while lower flow rates likely lead to other behaviors such as mixing. Many-mode states appear necessary for transitions in multi-behavioral space. Similar results are expected for network morphology based on analogies with single-tube findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C85 about mixing is speculative without direct evidence. Claim C86 about necessity of many-mode states is inferential but reasonable given the temporal correlations. Claim C87 about network morphology is explicitly acknowledged as beyond the study's scope and remains an expectation rather than demonstrated result. These require additional experiments for full support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "8ae31254-da43-49e7-bcbf-47d55d753612",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The eigenvalue spectrum may suggest a power-law distribution. The transition role of irregular many-mode states in P. polycephalum likely parallels behavior generation mechanisms in more complex organisms. Many-mode states may act as noisy triggers for spontaneous reorientation during foraging. Dynamic states from active flow network theory could map onto observed behavioral states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C93, C99, C101, C106, and C109 are explicitly speculative (using terms like \"may,\" \"likely,\" \"might\"). While these are reasonable hypotheses based on the data and comparisons with other systems, they lack direct experimental support. C93 about power-law is difficult to prove from the data shown. C99 and C101 about broader implications require testing in other contexts. C106 about theory-experiment mapping needs more detailed analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "ba012ad5-47af-4202-b8f3-03e01d2761da",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The interlaced regular and irregular contraction patterns in P. polycephalum are reminiscent of correlated or random neural firing patterns in higher organisms. In neural organisms, stereotyped behaviors are associated with controlled neural activity, and behavioral variability is widely observed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C98 are supported by appropriate citations to prior work on neural organisms. The comparison (C96) is reasonable given the documented similarities in dynamics. However, this is primarily a contextual observation rather than a novel finding of the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "e8250bc7-6b9c-4144-851c-8067dcb25c3d",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Theories for active flow networks predict selective activation of thick tubes, which is observed in the living P. polycephalum network among top-ranking modes (\u03c6\u2084 in Figure 1C(i) and \u03c6\u2083 in Figure 3C).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C104-C105 are supported by visual evidence in the cited figures showing thick tube activation in high-ranking modes. The agreement between theoretical predictions and experimental observations is noteworthy, though the theoretical work is from prior studies (citations implied but not fully detailed in the claims).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "aacac799-f467-4cd1-b6a9-5efe27cc1f73",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "P. polycephalum is a giant single cell, unicellular network-shaped organism with macroscopic dimensions typically ranging from millimeters to tens of centimeters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C19, C20 are basic factual descriptions of the organism supported by citations and general knowledge. These are well-established characteristics of P. polycephalum.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "910ab533-a5c1-4719-a996-d7ccf6b00162",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "P. polycephalum exhibits complex behaviors including solving spatial optimization problems, decision-making, habituation to stimuli, exploration-exploitation strategies, and memory encoding about food locations in its body plan hierarchy, reminiscent of synaptic facilitation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C25 and C100 describe known capabilities of P. polycephalum, all supported by appropriate citations to prior work. These establish the context and motivation for the current study but are not novel findings of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "2037aed3-8cee-458f-87ab-e1a1c1022cf2",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The behavior-generating mechanism in P. polycephalum consists of rhythmic actomyosin contractions that drive cytoplasmic flows, which transport nutrients and signaling molecules and directly control locomotion through mass transport.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C30 describe established mechanisms supported by multiple citations to prior work. This provides essential background for understanding the current study's focus on contraction patterns but represents prior knowledge rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "89a134fe-04e7-47da-8c45-11faa29e49a4",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Prior work has described only one type of network-spanning peristaltic contraction pattern, though various short-range patterns have been observed in small fragments and predicted by theory. Unknown complex large-scale patterns might exist in large networks, and transitions between patterns are needed for behavioral switching.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C35 accurately summarize the state of prior research (supported by citations) and identify gaps that motivate the current study. C34 and C35 are reasonable hypotheses based on prior observations. This provides important context but is not a result of the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "69f66ed9-1000-43d7-9648-ef92cf62d1cb",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "P. polycephalum foraging networks display morphological patterns linked to metabolic states. In Drosophila, behavior from neural activity causes large-scale metabolic changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C103 cite prior work on metabolism-behavior relationships in P. polycephalum and Drosophila. These provide context for potential future research directions but are not findings of the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "74e0784e-d1bd-457d-97b5-ca66b2a45aa2",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Irregular dynamics in many-mode states play an important role in behavioral switching. P. polycephalum's value as a model organism lies in the direct link between actomyosin contractions, cytoplasmic flows, and emerging behaviors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C107 is a key conclusion supported by the temporal correlations shown throughout the results. Claim C108 is a justified assessment of the organism's advantages as a model system, supported by the successful mechanistic analysis demonstrated in the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "c5b74119-0fe5-48ab-b5b3-81362813ac66",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Specimens were prepared from microplasmodia grown in liquid culture and plated on agar, imaged with bright-field microscopy at 3-second intervals, and stimulated with heat-killed bacterial pellets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C110-C112 describe the experimental methods with appropriate detail and citations. These are straightforward methodological descriptions that are adequately documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "93b5d9d5-acee-49d2-a6a2-426c16f1772d",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Background on behavioral complexity in organisms: survival requires behavioral transitions; neural organisms use diverse neural dynamics; decoding behavior from neural activity is challenging; progress has been made in Drosophila and C. elegans showing low-dimensional, hierarchical behaviors; non-neural organisms may offer an intermediate step for understanding behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C18 provide literature context supported by appropriate citations. These establish the scientific motivation and position the current work within the broader field but are not results of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "8c169ab4-7926-409a-b449-38e9bc67935b",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Rich behavior in P. polycephalum requires mechanisms for long-range spatial coordination and flexibility to switch between behavioral states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C26 is a logical requirement inferred from the organism's known behavioral capabilities. This provides motivation for investigating contraction patterns but is not itself a result of the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    },
+    {
+      "id": "5511312d-4f92-4202-a0f5-b2af3c973f1c",
+      "content_id": "529e3ca5-9b4d-4580-a07e-97dd663c028e",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "Measurable quantities of biological networks, such as degree distributions, typically follow continuous distributions and are often power-laws.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C92 is general knowledge about biological networks that provides context for interpreting the continuous eigenvalue spectrum. This is background information rather than a result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:20.572495Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "aed04f2b-a841-4545-916b-c8247bed0c13",
+      "result_id": "aa275c76-7a4e-480b-a597-cd28cc2b6305"
+    },
+    {
+      "claim_id": "daf96b9e-03d1-4f5a-8875-d0ebb7970b38",
+      "result_id": "aa275c76-7a4e-480b-a597-cd28cc2b6305"
+    },
+    {
+      "claim_id": "c86726af-6dbc-4c0b-ab46-3702107e972b",
+      "result_id": "aa275c76-7a4e-480b-a597-cd28cc2b6305"
+    },
+    {
+      "claim_id": "5412837f-273b-4e03-8e30-58eea4fa726c",
+      "result_id": "aa275c76-7a4e-480b-a597-cd28cc2b6305"
+    },
+    {
+      "claim_id": "c8a0da95-16f9-4747-b7af-3d814c013077",
+      "result_id": "aa275c76-7a4e-480b-a597-cd28cc2b6305"
+    },
+    {
+      "claim_id": "a399754d-6ca7-44c8-8145-d7e5aa3f1361",
+      "result_id": "72915e50-1e8d-4e2d-afc2-b246a928e39d"
+    },
+    {
+      "claim_id": "f9304aa6-057b-461d-bf48-9660b41a91e5",
+      "result_id": "72915e50-1e8d-4e2d-afc2-b246a928e39d"
+    },
+    {
+      "claim_id": "12544485-5c22-417b-b1f3-a024e7af0941",
+      "result_id": "72915e50-1e8d-4e2d-afc2-b246a928e39d"
+    },
+    {
+      "claim_id": "f3295eb5-b0e5-4b85-9e19-6aa6dbc13de6",
+      "result_id": "72915e50-1e8d-4e2d-afc2-b246a928e39d"
+    },
+    {
+      "claim_id": "a6623a04-da73-4c67-9a0b-23aa686b5b1c",
+      "result_id": "72915e50-1e8d-4e2d-afc2-b246a928e39d"
+    },
+    {
+      "claim_id": "07b1483c-ee75-4c2c-b96a-416fcfd68717",
+      "result_id": "50ecc805-f848-4734-851d-81ac82e89c4a"
+    },
+    {
+      "claim_id": "07177c3e-781e-4d31-8c42-f8eda593d1ad",
+      "result_id": "50ecc805-f848-4734-851d-81ac82e89c4a"
+    },
+    {
+      "claim_id": "c58a9ee9-930b-4909-88a6-69e18d46d456",
+      "result_id": "50ecc805-f848-4734-851d-81ac82e89c4a"
+    },
+    {
+      "claim_id": "2f8eadfb-1e2b-4271-9b82-c734d913d75f",
+      "result_id": "50ecc805-f848-4734-851d-81ac82e89c4a"
+    },
+    {
+      "claim_id": "e2c15a90-b3be-4329-9ae9-b75730b54e36",
+      "result_id": "b92a0baa-14df-48fe-be5c-557596fecfa7"
+    },
+    {
+      "claim_id": "28be702d-d25a-454f-8dff-f01309c3192f",
+      "result_id": "b92a0baa-14df-48fe-be5c-557596fecfa7"
+    },
+    {
+      "claim_id": "c07b0776-5252-4a89-8507-93b391a45dad",
+      "result_id": "b92a0baa-14df-48fe-be5c-557596fecfa7"
+    },
+    {
+      "claim_id": "cecdcc97-6f4e-479c-800c-3dd829fd668b",
+      "result_id": "b92a0baa-14df-48fe-be5c-557596fecfa7"
+    },
+    {
+      "claim_id": "1859777d-a335-49f0-b901-8a9914aaec2e",
+      "result_id": "b92a0baa-14df-48fe-be5c-557596fecfa7"
+    },
+    {
+      "claim_id": "e19932cb-a17e-445b-bb0f-c82d1550cf35",
+      "result_id": "b92a0baa-14df-48fe-be5c-557596fecfa7"
+    },
+    {
+      "claim_id": "b1b40a20-ba70-43f4-807d-3dcbf01a6710",
+      "result_id": "1be8e320-9c8f-48d8-9bfd-7cdabb0bb176"
+    },
+    {
+      "claim_id": "976b1e5b-3269-4433-8afb-e65023daeef6",
+      "result_id": "1be8e320-9c8f-48d8-9bfd-7cdabb0bb176"
+    },
+    {
+      "claim_id": "8c330980-7011-4140-96cc-12602971a294",
+      "result_id": "1be8e320-9c8f-48d8-9bfd-7cdabb0bb176"
+    },
+    {
+      "claim_id": "dd5c5f09-7c3f-48c0-ae12-8a75307b7abf",
+      "result_id": "1be8e320-9c8f-48d8-9bfd-7cdabb0bb176"
+    },
+    {
+      "claim_id": "3d5bda7b-2a6b-471d-be67-db8c0b307b2e",
+      "result_id": "1be8e320-9c8f-48d8-9bfd-7cdabb0bb176"
+    },
+    {
+      "claim_id": "ece995fc-3a9f-4e77-a15f-aa368c1f3400",
+      "result_id": "3da84265-a1bb-4937-bf4d-cec9deb2c0ea"
+    },
+    {
+      "claim_id": "8a62c91f-3cfc-4b2d-9e4c-30ace72d1cb5",
+      "result_id": "3da84265-a1bb-4937-bf4d-cec9deb2c0ea"
+    },
+    {
+      "claim_id": "d909392b-a497-44cf-8fc9-852ce92eb0d7",
+      "result_id": "3da84265-a1bb-4937-bf4d-cec9deb2c0ea"
+    },
+    {
+      "claim_id": "432fd1f2-2c76-45c0-a665-0b987a5c51b5",
+      "result_id": "3da84265-a1bb-4937-bf4d-cec9deb2c0ea"
+    },
+    {
+      "claim_id": "687febce-216f-410e-a539-07fdd62763c0",
+      "result_id": "3da84265-a1bb-4937-bf4d-cec9deb2c0ea"
+    },
+    {
+      "claim_id": "736e0050-743d-4534-9832-33a351ab3284",
+      "result_id": "3da84265-a1bb-4937-bf4d-cec9deb2c0ea"
+    },
+    {
+      "claim_id": "faea9f01-caaf-48d7-8599-4f13d2251664",
+      "result_id": "3da84265-a1bb-4937-bf4d-cec9deb2c0ea"
+    },
+    {
+      "claim_id": "d64cac7f-2f81-4c6b-a4cf-7b0654825276",
+      "result_id": "bb36cb20-b6ee-4d0c-9f4f-29a00265f394"
+    },
+    {
+      "claim_id": "b8b4deb3-cbd1-4761-8bf8-5a2d84b2393a",
+      "result_id": "bb36cb20-b6ee-4d0c-9f4f-29a00265f394"
+    },
+    {
+      "claim_id": "765d0989-5ff2-4775-b998-fcfd41d1a1e9",
+      "result_id": "bb36cb20-b6ee-4d0c-9f4f-29a00265f394"
+    },
+    {
+      "claim_id": "d0682afb-1551-4ecc-9ca3-c781f9dcce00",
+      "result_id": "bb36cb20-b6ee-4d0c-9f4f-29a00265f394"
+    },
+    {
+      "claim_id": "67bd1559-2486-4c94-b7ed-9bdda7af3a49",
+      "result_id": "c958c6d6-6a01-4753-99c7-b6502d3f8f4c"
+    },
+    {
+      "claim_id": "d2aa5a6b-ca99-4d25-a853-dfb7bdb3d8e6",
+      "result_id": "c958c6d6-6a01-4753-99c7-b6502d3f8f4c"
+    },
+    {
+      "claim_id": "b0217f78-3b83-4ead-9283-7d4b809dbfef",
+      "result_id": "c958c6d6-6a01-4753-99c7-b6502d3f8f4c"
+    },
+    {
+      "claim_id": "0f3e1455-f904-4a81-b981-c0f6bb7e30ef",
+      "result_id": "c958c6d6-6a01-4753-99c7-b6502d3f8f4c"
+    },
+    {
+      "claim_id": "a7fc1831-8b4c-44f2-8cfa-285c9b281e3b",
+      "result_id": "c958c6d6-6a01-4753-99c7-b6502d3f8f4c"
+    },
+    {
+      "claim_id": "d7a2fb81-350a-4601-a25b-61c1b518f5c8",
+      "result_id": "f0c17474-5f7f-47f1-927d-8ae25cc3c178"
+    },
+    {
+      "claim_id": "aef52ea9-1eb8-4459-9d58-6cd598fa3302",
+      "result_id": "f0c17474-5f7f-47f1-927d-8ae25cc3c178"
+    },
+    {
+      "claim_id": "9a592ccc-0b77-4afc-bd76-f7af35ae6fed",
+      "result_id": "f0c17474-5f7f-47f1-927d-8ae25cc3c178"
+    },
+    {
+      "claim_id": "6e80be01-9d33-48e8-a8d4-445d2ce23c56",
+      "result_id": "b2efdba5-1717-4b3b-a4b0-d5e7298c696d"
+    },
+    {
+      "claim_id": "5ebdea00-85c8-4e05-87a4-f49ce8b9e069",
+      "result_id": "b2efdba5-1717-4b3b-a4b0-d5e7298c696d"
+    },
+    {
+      "claim_id": "bc9b2480-4838-45bd-95ca-0541afc671f6",
+      "result_id": "b2efdba5-1717-4b3b-a4b0-d5e7298c696d"
+    },
+    {
+      "claim_id": "9d01c511-11cb-437c-8a90-a62d75b9f33b",
+      "result_id": "b2efdba5-1717-4b3b-a4b0-d5e7298c696d"
+    },
+    {
+      "claim_id": "3f348a08-c7a9-41ff-9ec1-d854acbf242c",
+      "result_id": "b2efdba5-1717-4b3b-a4b0-d5e7298c696d"
+    },
+    {
+      "claim_id": "db7c067d-71f8-43b3-acfa-e96a3b946f7a",
+      "result_id": "b2efdba5-1717-4b3b-a4b0-d5e7298c696d"
+    },
+    {
+      "claim_id": "1f0ecaf6-88b4-4219-a4ab-ddaa5bfee9e6",
+      "result_id": "b2efdba5-1717-4b3b-a4b0-d5e7298c696d"
+    },
+    {
+      "claim_id": "3321ef8f-e2c2-4cd9-87c1-1eabdd50075e",
+      "result_id": "b2efdba5-1717-4b3b-a4b0-d5e7298c696d"
+    },
+    {
+      "claim_id": "3e1626f5-6c7f-446b-bb46-b727767352f1",
+      "result_id": "baad92f3-ea3f-4a51-8a5f-957b20d6e13a"
+    },
+    {
+      "claim_id": "25ad64f2-3fb5-409f-85ad-41d57158b7d3",
+      "result_id": "baad92f3-ea3f-4a51-8a5f-957b20d6e13a"
+    },
+    {
+      "claim_id": "2405de7a-2b06-4390-adeb-a4de88bc561a",
+      "result_id": "baad92f3-ea3f-4a51-8a5f-957b20d6e13a"
+    },
+    {
+      "claim_id": "b8b28115-4eeb-4de0-b3bf-79455a2dd240",
+      "result_id": "baad92f3-ea3f-4a51-8a5f-957b20d6e13a"
+    },
+    {
+      "claim_id": "9e34cc7d-f24b-4456-809f-90b4e53645ea",
+      "result_id": "baad92f3-ea3f-4a51-8a5f-957b20d6e13a"
+    },
+    {
+      "claim_id": "0691fd11-9d42-4175-bbf3-27ea8491a52b",
+      "result_id": "baad92f3-ea3f-4a51-8a5f-957b20d6e13a"
+    },
+    {
+      "claim_id": "c503f8dd-f98f-4d12-aead-80ec5a34738d",
+      "result_id": "baad92f3-ea3f-4a51-8a5f-957b20d6e13a"
+    },
+    {
+      "claim_id": "d18ffe77-f79c-4842-a697-ad3edcb9142b",
+      "result_id": "7c2176be-f793-4f8c-a19b-dee7d7817c14"
+    },
+    {
+      "claim_id": "a72515df-ef9e-441b-ac16-ed5a542c9300",
+      "result_id": "7c2176be-f793-4f8c-a19b-dee7d7817c14"
+    },
+    {
+      "claim_id": "812bc739-fec7-43ba-82d5-3eaafc0cb7cc",
+      "result_id": "7c2176be-f793-4f8c-a19b-dee7d7817c14"
+    },
+    {
+      "claim_id": "47ebfc10-7987-4e73-83d2-4e4b3a2a332d",
+      "result_id": "8ae31254-da43-49e7-bcbf-47d55d753612"
+    },
+    {
+      "claim_id": "674b73b1-a90f-4a5e-aa53-e208efb10f0d",
+      "result_id": "8ae31254-da43-49e7-bcbf-47d55d753612"
+    },
+    {
+      "claim_id": "2cc9ed6e-5e22-4c6c-9f00-d23c1e0410d7",
+      "result_id": "8ae31254-da43-49e7-bcbf-47d55d753612"
+    },
+    {
+      "claim_id": "44717adb-d8f5-4d86-90be-8d9f1d52f5ad",
+      "result_id": "8ae31254-da43-49e7-bcbf-47d55d753612"
+    },
+    {
+      "claim_id": "eef0f7fd-e206-4433-a644-75e46eb04074",
+      "result_id": "8ae31254-da43-49e7-bcbf-47d55d753612"
+    },
+    {
+      "claim_id": "baf28eee-1e58-4935-9af0-9ba43f6437a9",
+      "result_id": "ba012ad5-47af-4202-b8f3-03e01d2761da"
+    },
+    {
+      "claim_id": "02a8d01e-7043-4e22-9089-edef90a7cf02",
+      "result_id": "ba012ad5-47af-4202-b8f3-03e01d2761da"
+    },
+    {
+      "claim_id": "b8ca690d-8d22-4a2e-bf1e-4049b19f4fec",
+      "result_id": "ba012ad5-47af-4202-b8f3-03e01d2761da"
+    },
+    {
+      "claim_id": "da1e31b1-7558-48b1-83f0-6d31f3e72af2",
+      "result_id": "e8250bc7-6b9c-4144-851c-8067dcb25c3d"
+    },
+    {
+      "claim_id": "4c508613-c034-4a89-8da2-734b943963b9",
+      "result_id": "e8250bc7-6b9c-4144-851c-8067dcb25c3d"
+    },
+    {
+      "claim_id": "022728d4-fba2-4eef-a393-b7d58815547a",
+      "result_id": "aacac799-f467-4cd1-b6a9-5efe27cc1f73"
+    },
+    {
+      "claim_id": "e413cd52-8ced-4993-8708-eb305f24413f",
+      "result_id": "aacac799-f467-4cd1-b6a9-5efe27cc1f73"
+    },
+    {
+      "claim_id": "c3ecb8d8-e2dd-4e23-908a-36a9bfb11482",
+      "result_id": "aacac799-f467-4cd1-b6a9-5efe27cc1f73"
+    },
+    {
+      "claim_id": "10def3b3-e33f-4195-a062-64c0b3b4ceb1",
+      "result_id": "910ab533-a5c1-4719-a996-d7ccf6b00162"
+    },
+    {
+      "claim_id": "094d55fb-5657-48b6-9edb-452e5ab3b174",
+      "result_id": "910ab533-a5c1-4719-a996-d7ccf6b00162"
+    },
+    {
+      "claim_id": "a301b692-c2cc-4600-b6ba-158b3bdd5896",
+      "result_id": "910ab533-a5c1-4719-a996-d7ccf6b00162"
+    },
+    {
+      "claim_id": "4552d7d0-7dd5-4702-8865-93765f694721",
+      "result_id": "910ab533-a5c1-4719-a996-d7ccf6b00162"
+    },
+    {
+      "claim_id": "9761d5c7-158d-4e14-98a9-b3d27e911ba1",
+      "result_id": "910ab533-a5c1-4719-a996-d7ccf6b00162"
+    },
+    {
+      "claim_id": "e21f1399-e2eb-496c-b1af-4ddbc6d4f6d0",
+      "result_id": "910ab533-a5c1-4719-a996-d7ccf6b00162"
+    },
+    {
+      "claim_id": "5a63c5e8-bb24-4a22-ac6e-bd34f9c44506",
+      "result_id": "2037aed3-8cee-458f-87ab-e1a1c1022cf2"
+    },
+    {
+      "claim_id": "2165a3b2-a585-4b8e-87b0-f7ac63a8797c",
+      "result_id": "2037aed3-8cee-458f-87ab-e1a1c1022cf2"
+    },
+    {
+      "claim_id": "403cc69e-4cbf-4e5d-aff3-6bdd25df608d",
+      "result_id": "2037aed3-8cee-458f-87ab-e1a1c1022cf2"
+    },
+    {
+      "claim_id": "371a1d3c-037e-498a-81bd-10520993f394",
+      "result_id": "2037aed3-8cee-458f-87ab-e1a1c1022cf2"
+    },
+    {
+      "claim_id": "0763b995-66fd-421d-a003-988e4a318d61",
+      "result_id": "89a134fe-04e7-47da-8c45-11faa29e49a4"
+    },
+    {
+      "claim_id": "39316c8c-e692-40fd-8c67-49ddf10b1b96",
+      "result_id": "89a134fe-04e7-47da-8c45-11faa29e49a4"
+    },
+    {
+      "claim_id": "e75c2567-5b4c-4ed9-abb0-16a7afa85231",
+      "result_id": "89a134fe-04e7-47da-8c45-11faa29e49a4"
+    },
+    {
+      "claim_id": "7ee5663b-d83f-44c9-a472-f5829e37fc72",
+      "result_id": "89a134fe-04e7-47da-8c45-11faa29e49a4"
+    },
+    {
+      "claim_id": "713bab0e-262d-4f31-9108-90f8525f94fc",
+      "result_id": "89a134fe-04e7-47da-8c45-11faa29e49a4"
+    },
+    {
+      "claim_id": "9e486ff2-eade-4dce-a4c1-80f80c7c9216",
+      "result_id": "69f66ed9-1000-43d7-9648-ef92cf62d1cb"
+    },
+    {
+      "claim_id": "58887add-133a-4ced-93d9-186383ebf59d",
+      "result_id": "69f66ed9-1000-43d7-9648-ef92cf62d1cb"
+    },
+    {
+      "claim_id": "dff3b424-9dc6-4e5b-8e25-b46f80adda54",
+      "result_id": "74e0784e-d1bd-457d-97b5-ca66b2a45aa2"
+    },
+    {
+      "claim_id": "09c9407f-4979-4ed0-a9f6-a16fa4efb59b",
+      "result_id": "74e0784e-d1bd-457d-97b5-ca66b2a45aa2"
+    },
+    {
+      "claim_id": "8bfc611d-4b8c-4c8c-9d4a-ab0b9812edec",
+      "result_id": "c5b74119-0fe5-48ab-b5b3-81362813ac66"
+    },
+    {
+      "claim_id": "53ead1ec-2da0-4115-9467-8ec494c56301",
+      "result_id": "c5b74119-0fe5-48ab-b5b3-81362813ac66"
+    },
+    {
+      "claim_id": "c8560f16-3631-467c-81db-7bd50a1b2a12",
+      "result_id": "c5b74119-0fe5-48ab-b5b3-81362813ac66"
+    },
+    {
+      "claim_id": "a122dacd-9262-4d85-b75a-ede52eedc7fd",
+      "result_id": "93b5d9d5-acee-49d2-a6a2-426c16f1772d"
+    },
+    {
+      "claim_id": "601109e0-bf1a-439d-9e80-6b32f97d51df",
+      "result_id": "93b5d9d5-acee-49d2-a6a2-426c16f1772d"
+    },
+    {
+      "claim_id": "244a1654-b4ae-45a9-ac60-e4f93a8bb16f",
+      "result_id": "93b5d9d5-acee-49d2-a6a2-426c16f1772d"
+    },
+    {
+      "claim_id": "137447d3-822f-474c-8ece-e36f14a9a7ae",
+      "result_id": "93b5d9d5-acee-49d2-a6a2-426c16f1772d"
+    },
+    {
+      "claim_id": "c761360f-c532-4d0a-9f2d-73685f22cb1e",
+      "result_id": "93b5d9d5-acee-49d2-a6a2-426c16f1772d"
+    },
+    {
+      "claim_id": "2b4205ca-f637-4fb3-83a0-249f1bbbb0a6",
+      "result_id": "93b5d9d5-acee-49d2-a6a2-426c16f1772d"
+    },
+    {
+      "claim_id": "85fffb98-cc29-4517-a513-cdd850444064",
+      "result_id": "93b5d9d5-acee-49d2-a6a2-426c16f1772d"
+    },
+    {
+      "claim_id": "23bbffcf-39a3-4109-a4c7-bfd79008c978",
+      "result_id": "93b5d9d5-acee-49d2-a6a2-426c16f1772d"
+    },
+    {
+      "claim_id": "4b1718c5-a7ea-4717-bee4-f524622d31c4",
+      "result_id": "93b5d9d5-acee-49d2-a6a2-426c16f1772d"
+    },
+    {
+      "claim_id": "85f44a5c-9a0a-4dba-9ecf-c9e133a78025",
+      "result_id": "93b5d9d5-acee-49d2-a6a2-426c16f1772d"
+    },
+    {
+      "claim_id": "4b087ce7-442d-4a45-836a-906cf8512beb",
+      "result_id": "93b5d9d5-acee-49d2-a6a2-426c16f1772d"
+    },
+    {
+      "claim_id": "7ca22d55-cde3-4c8b-b75e-6b23ecb4d550",
+      "result_id": "93b5d9d5-acee-49d2-a6a2-426c16f1772d"
+    },
+    {
+      "claim_id": "931c6b57-9a02-4cc6-ad86-0bbc41f181f5",
+      "result_id": "8c169ab4-7926-409a-b449-38e9bc67935b"
+    },
+    {
+      "claim_id": "29ed9c0d-f9eb-44fa-b951-4c9d62ad0f64",
+      "result_id": "5511312d-4f92-4202-a0f5-b2af3c973f1c"
+    }
+  ],
+  "comparisons": []
+}

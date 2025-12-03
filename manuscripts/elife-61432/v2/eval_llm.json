@@ -1,0 +1,258 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Cytonemes are thin filopodia (<200 nm diameter) that can extend up to ~300 \u03bcm from the cell body and contain various signaling molecules including HH, WNT, TGF\u03b2, Notch ligands, and growth factors. These structures were first recognized in Drosophila wing imaginal discs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are well-supported by citations to established literature (Kornberg 2014, Ram\u00edrez-Weber and Kornberg 1999, Fairchild and Barna 2014). These claims provide essential background context from prior work and are appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "SHH expression promotes cytoneme formation in cultured cells. MYO10 localizes to cytoneme tips and colocalizes with SHH puncta. SHH expression increases cytoneme occurrence rates from ~30% to ~60% in both MEFs and NIH3T3 cells, and more than doubles the average number of cytonemes per cell. This effect is dose-dependent with SHH expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C9 are supported by quantitative microscopy data (Figures 1C-E, Figure 1\u2014figure supplement 1B-F). The dose-dependent relationship between SHH expression and cytoneme occurrence provides strong evidence for a causal relationship. Sample sizes appear adequate and statistical comparisons are provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "SMO is not required for SHH-induced cytoneme formation. Direct SMO activation with SAG does not alter cytoneme occurrence, and Smo-/- cells still show increased cytoneme occurrence (~15%) in response to SHH expression, though the response is attenuated compared to wild-type cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 are supported by experiments using pharmacological SMO modulation and genetic knockout (Figure 1\u2014figure supplement 1G). The data demonstrate that SHH can promote cytoneme formation independently of its canonical receptor SMO, suggesting an alternative mechanism. The reduced but not abolished response in Smo-/- cells is appropriately interpreted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Multiple signaling molecules can modulate cytoneme occurrence. Jagged and FGF2 approximately double cytoneme occurrence similar to SHH, Wnt3A increases occurrence to a lesser extent, while BMP2 has no effect on baseline cytoneme occurrence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 are supported by quantitative data in Figure 1F. The differential effects of various signaling molecules suggest specificity in cytoneme regulation. However, the manuscript would benefit from more detailed characterization of the mechanisms underlying these differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C90"
+    ],
+    "result": "Cytoneme-mediated SHH delivery induces rapid, receptor-dependent Ca2+ signaling in target cells within ~10-20 seconds of ligand deposition. R-GECO reporter cells in contact with SHH-containing cytonemes show significantly higher Ca2+ flux than controls. This response is blocked by SMO inhibition (Smo-/- cells or cyclopamine treatment), confirming specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C22 and C90 are well-supported by live imaging Ca2+ flux data (Figure 2). The temporal correlation between SHH deposition and Ca2+ response is statistically validated (p=6.1e-05, Wilcoxon signed rank test). Controls with Smo-/- cells and cyclopamine treatment confirm pathway specificity. The rapid timescale (seconds) is a novel finding that advances understanding of cytoneme-mediated signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "SHH traffics inside cytonemes through a vesicular transport mechanism rather than along membrane surfaces in lipid rafts. SHH shows negative correlation with lipid raft marker CTX, colocalizes with exosomal markers CD9 and CD81, and is detected in multiple vesicles within cytonemes by electron microscopy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 are supported by multiple complementary approaches: colocalization analysis showing negative correlation with CTX (Figure 3A-B), extracellular immunostaining showing lack of surface SHH on cytonemes (Figure 3C'), colocalization with exosomal markers (Figure 3D-E), and direct visualization of SHH-positive vesicles by immuno-EM (Figure 3F). The convergent evidence from different methodologies strongly supports vesicular transport.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "SHH is actively transported along cytonemes, potentially by MYO10, rather than by diffusion. FRAP analysis shows SHH-mCherry and MYO10-GFP recover at similar rates (~0.25-0.27 \u03bcm/s) in control conditions but fail to recover after ionomycin treatment, while membrane diffusion rates are unaffected by ionomycin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 are supported by FRAP experiments (Figure 4A-B, Videos 6-7). The similar recovery rates of SHH and MYO10, their shared sensitivity to ionomycin (which disrupts motor activity), and the maintained membrane diffusion under ionomycin treatment provide strong evidence for active motor-driven transport. The inference that MYO10 is the motor is reasonable but requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C88"
+    ],
+    "result": "MYO10 is required for SHH enrichment in cytonemes and cargo domain-mediated transport to cytoneme tips. Myo10-/- MEFs show reduced SHH cytoneme enrichment and fail to increase cytoneme occurrence in response to SHH. Wild-type and \u0394PH MYO10 rescue these defects, but cargo-binding mutant MYO10-HMM does not. MYO10-HMM expression also reduces SHH-induced Ca2+ flux in reporter cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C40 and C88 are supported by comprehensive genetic and functional analyses (Figure 4C-F). The use of Myo10-/- cells, rescue experiments with different MYO10 constructs, and functional Ca2+ flux assays provide strong evidence for MYO10's role. The domain-specific requirements (cargo domain necessary, PH domain dispensable) are particularly informative about mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C89"
+    ],
+    "result": "Loss of MYO10 in vivo alters SHH morphogen gradient organization in neural tubes. Myo10-/- embryos show reduced SHH::GFP in the floor plate, compressed Gli1 expression domain, reduced Olig2 expression, and delayed notochord regression, all consistent with attenuated SHH signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 and C89 are supported by in vivo analysis of Myo10-/- embryos (Figure 5). Multiple independent readouts of SHH signaling (SHH::GFP distribution, Gli1 expression, Olig2 expression, notochord regression) all show consistent defects. However, the authors appropriately note variable penetrance and acknowledge that other SHH distribution mechanisms may compensate. The in vivo validation strengthens the physiological relevance of the in vitro findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "DISP, BOC, and SHH form a complex in cytonemes. All three proteins localize to cytonemes, with SHH expression increasing DISP-BOC colocalization. STED microscopy shows DISP and SHH positioned adjacent to BOC, suggesting a trimeric complex. Puncta containing all three proteins are found in receiving cells, and SHH-containing endosomes are detected near cytoneme contact points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C53 are supported by high-resolution imaging (confocal and STED microscopy, Figure 6A-C, H-I) and immuno-EM. The spatial proximity of the three proteins and their presence in receiving cells suggest coordinated function. However, C53 (trimeric complex formation) is appropriately qualified as speculative based on spatial proximity rather than direct biochemical evidence of a stable complex.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "DISP and BOC can associate biochemically in the absence of SHH, and SHH incorporates into DISP-BOC complexes without significantly altering BOC binding. SHH may promote enrichment of the trimeric complex in cytonemes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 are supported by co-immunoprecipitation data (Figure 6J). The biochemical interaction between DISP and BOC independent of SHH is clearly demonstrated. However, C57 regarding SHH promoting enrichment in cytonemes is appropriately marked as speculative and requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "CDON shows different interaction dynamics with DISP compared to BOC. CDON colocalizes with DISP at SHH-positive puncta but ligand expression does not increase DISP-CDON colocalization along cytoneme length. Biochemically, CDON-DISP association is reduced upon SHH binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 are supported by colocalization analysis (Figure 6D-G) and co-immunoprecipitation (Figure 6K). The differential behavior of CDON versus BOC suggests distinct functional roles or regulation. The reduced CDON-DISP association upon SHH binding contrasts with BOC behavior and is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C91"
+    ],
+    "result": "BOC and CDON, but not GAS1, are required for SHH-induced cytoneme occurrence and function in ligand-producing cells. BCG triple knockout cells fail to increase cytoneme occurrence or induce Ca2+ responses via cytonemes, though they can signal through direct cell-cell contact. BOC re-expression fully rescues these defects, while CDON partially rescues, indicating BOC is the predominant co-receptor in cytonemes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C70 and C91 are supported by comprehensive genetic analysis using triple knockout cells and rescue experiments (Figure 6L-N). The differential rescue efficiency of BOC versus CDON provides insight into their relative importance. The maintained ability to signal through direct contact in BCG KO cells is an important control showing the defect is specific to cytoneme-mediated signaling. This represents a novel function for these co-receptors in ligand-producing cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Background information on HH pathway signaling, lipid modifications, deployment proteins, and related cellular mechanisms from prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C87 provide essential background context and are appropriately supported by citations to established literature. These claims accurately represent prior knowledge in the field and provide necessary context for interpreting the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "BOC or CDON might connect SHH with actin remodelers for cytoneme movement based on BOC's reported ability to activate JNK during neuronal differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C83 is appropriately marked as speculative. While the hypothesis is reasonable based on the cited work (Vuong et al., 2017), no direct evidence is provided in this manuscript to support this specific mechanism. This represents a plausible model for future investigation rather than a demonstrated result.",
+    "result_type": "MINOR"
+  }
+]

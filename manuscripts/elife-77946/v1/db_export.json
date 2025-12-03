@@ -1,0 +1,2065 @@
+{
+  "submission": {
+    "id": "f66590b7-abe8-42ac-8cfb-51b018b3192c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T14:44:03.033358Z",
+    "updated_at": "2025-12-03T14:44:03.033358Z"
+  },
+  "content": [
+    {
+      "id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "submission_id": "f66590b7-abe8-42ac-8cfb-51b018b3192c",
+      "content_type": "manuscript",
+      "content_text": "# Structural motifs for subtype-specific pH-sensitive gating of vertebrate otopetrin proton channels\n\n## Authors\n\n- Bochuan Teng<sup>1</sup>\n- Joshua P Kaplan<sup>1</sup>\n- Ziyu Liang<sup>1</sup>\n- Zachary Krieger<sup>1</sup>\n- Yu-Hsiang Tu<sup>3</sup>\n- Batuujin Burendei<sup>4</sup>\n- Andrew B Ward<sup>4</sup> ([ORCID: 0000-0001-7153-3769](https://orcid.org/0000-0001-7153-3769))\n- Emily R Liman<sup>1</sup> ([ORCID: 0000-0003-4765-5496](https://orcid.org/0000-0003-4765-5496)) \u2020\n\n### Affiliations\n\n1. Section of Neurobiology, Department of Biological Sciences, University of Southern California Los Angeles United States ([ROR:03taz7m60](https://ror.org/03taz7m60))\n2. Program in Neuroscience, University of Southern California Los Angeles United States ([ROR:03taz7m60](https://ror.org/03taz7m60))\n3. Diabetes, Endocrinology, and Obesity Branch, National Institute of Diabetes and Digestive and Kidney Diseases, National Institutes of Health Bethesda United States ([ROR:00adh9b73](https://ror.org/00adh9b73))\n4. Department of Integrative Structural and Computational Biology, The Scripps Research Institute La Jolla United States ([ROR:02dxx6824](https://ror.org/02dxx6824))\n\n\u2020 Corresponding author\n\n## Abstract\n\nOtopetrin (OTOP) channels are proton-selective ion channels conserved among vertebrates and invertebrates, with no structural similarity to other ion channels. There are three vertebrate OTOP channels (OTOP1, OTOP2, and OTOP3), of which one (OTOP1) functions as a sour taste receptor. Whether extracellular protons gate OTOP channels, in addition to permeating them, was not known. Here, we compare the functional properties of the three murine OTOP channels using patch-clamp recording and cytosolic pH microfluorimetry. We find that OTOP1 and OTOP3 are both steeply activated by extracellular protons, with thresholds of pHo <6.0 and 5.5, respectively, and kinetics that are pH-dependent. In contrast, OTOP2 channels are broadly active over a large pH range (pH 5 pH 10) and carry outward currents in response to extracellular alkalinization (>pH 9.0). Strikingly, we could change the pH-sensitive gating of OTOP2 and OTOP3 channels by swapping extracellular linkers that connect transmembrane domains. Swaps of extracellular linkers in the N domain, comprising transmembrane domains 1\u20136, tended to change the relative conductance at alkaline pH of chimeric channels, while swaps within the C domain, containing transmembrane domains 7\u201312, tended to change the rates of OTOP3 current activation. We conclude that members of the OTOP channel family are proton-gated (acid-sensitive) proton channels and that the gating apparatus is distributed across multiple extracellular regions within both the N and C domains of the channels. In addition to the taste system, OTOP channels are expressed in the vertebrate vestibular and digestive systems. The distinct gating properties we describe may allow them to subserve varying cell-type specific functions in these and other biological systems.\n\n## Introduction\n\nThe activity of ion channels is often tightly controlled through a change in conformation, known as gating, that opens and closes the ion permeation pathway (Hille, 2001). Gating can be in response to voltage (voltage-dependent), chemical stimuli (ligand-gated), or membrane deformation (mechanically-gated). Understanding the gating of an ion channel is critical to understanding its physiological function. Recently, a new family of ion channels that are selective for protons and with little or no structural similarity to other ion channels was identified, collectively named the Otopetrins or OTOPs (Tu et al., 2018). These ion channels mediate proton influx in response to acid stimuli, but whether protons also gate them was unknown. Notably, while the structures of vertebrate OTOP1 and OTOP3 channels were recently solved (Chen et al., 2019; Saotome et al., 2019), it is not known if these structures are in open or closed states due to the lack of information regarding the gating of the channels.\n\nOTOP1 currents were first characterized in taste receptor cells, where pH sensitivity, proton selectivity, and inhibition by Zn2+ were described (Chang et al., 2010; Bushman et al., 2015). The founding member of the OTOP family, mOTOP1, was identified as the product of a gene mutated in a murine vestibular disorder (Hurle et al., 2003; Hughes et al., 2004) and was subsequently shown to form a proton channel that functions as a receptor for sour taste in vertebrates (Tu et al., 2018; Teng et al., 2019; Zhang et al., 2019). Most vertebrate genomes encode two related proteins, OTOP2 and OTOP3, that also form proton channels (Tu et al., 2018) and are expressed in a diverse array of tissues, including in the digestive tract, where mutations in the corresponding genes have been linked to disease (Tu et al., 2018; Parikh et al., 2019; Qu et al., 2019; Yang et al., 2019a). Functional OTOP channels are conserved across species, including in invertebrates, where they play roles in acid sensing and biomineralization (Hurle et al., 2011; Tu et al., 2018; Chang et al., 2021; Ganguly et al., 2021; Mi et al., 2021).\n\nIon channels selective for protons are rare in nature, comprising just a small subset of the hundreds of types of ion channels that have been described over the last 80 years (Hille, 2001). The two best characterized proton-selective ion channels are M2, a viral protein involved in the acidification of the influenza virus interior, and Hv1, a voltage-gated ion channel that extrudes protons during the phagocyte respiratory burst to maintain pH (Pinto et al., 1992; Ramsey et al., 2006; Sasaki et al., 2006; Morgan et al., 2009). OTOP1 channels, unlike HV1, are not gated by voltage (Bushman et al., 2015; Tu et al., 2018) but might instead be gated by protons, like Hv1 and M2 (Cherny et al., 1995; Liang et al., 2016). However, establishing that the permeant ion gates an ion channel is not trivial. For example, an increase in current magnitudes as pH is lowered could be attributed to the opening of channels or an increase in the driving force for proton entry. Here we describe the biophysical response properties of the three murine OTOP channels to varying extracellular pH. By focusing on parameters that are independent of the driving force, we show that extracellular protons gate the three channels in a subtype-specific manner and that the extracellular linker between transmembrane domains eleven and twelve plays a role in gating.\n\n## Results\n\n### Differential current response profiles of three murine OTOP channels to acidic and basic stimuli\n\nWe previously reported that all three murine OTOP channels conduct inward proton currents in response to acid stimuli, but show differences in their current as a function of pH (I-pH) relations (Tu et al., 2018). We reasoned that these differences likely reflect differences in gating. To test this hypothesis, we performed a careful comparative analysis of the response properties of murine OTOP1, OTOP2, and OTOP3.\n\nWe used patch-clamp recording from HEK-293 cells transfected with cDNAs encoding each of the three channels for these experiments. If not otherwise stated, the intracellular solution was pH 7.4 (Cs-Aspartate-based), and the holding potential was \u201380 mV. All three channels carried inward currents in response to lowering pHo in a Na+-free solution, as previously reported (Tu et al., 2018). The magnitude of the OTOP1 currents increased as the extracellular pH (pHo) was lowered over a range of pH 6 to pH 4.5, while the magnitude of OTOP2 currents changed very little over the same pH range (Figure 1A). OTOP3 currents increased more steeply over the same range, with little or no inward currents in response to pH 6 (Figure 1A and C). For all three channels, currents decayed in response to prolonged acid exposure, and the rate of current decay was faster as the pHo was lowered (Figure 1A), likely due in part to intracellular accumulation of protons (DeCoursey and Cherny, 1996; Bushman et al., 2015; De-la-Rosa et al., 2016; Tu et al., 2018) (discussed below).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/77946/elife-77946-fig1-v1.jpg)\n\n**Figure 1.:** (A) Proton currents elicited in response to acidic stimuli (pH 6\u20134.5) in the absence of extracellular Na+ measured from HEK-293 cells expressing each of the three OTOP channels as labeled (Vm = -80 mV). (B) Proton currents in response to solutions that varied in pH (pH 10\u20135) were measured from HEK-293 cells expressing each of the three OTOP channels as labeled (Vm = -80 mV). (C) Average data showing the peak current magnitude in response to stimuli of varying pHo, measured from experiments as in (A) and (B). OTOP3 currents are only observed in response to solutions of pH <5.5, while OTOP1 currents are evoked by solutions of <pH 6 and alkaline stimuli, and OTOP2 currents are evoked in response to all stimuli. Data represent mean \u00b1 s.e.m. of biological replicates where for each data point n=5\u201310 for OTOP1, n=6\u201310 for OTOP2, and n=4\u201310 for OTOP3.\n\nTo further investigate the I-pH response profile of the three channels, we extended the pH range of the test solutions, now including neutral and alkaline solutions (Figure 1B and C). In OTOP1-expressing cells, we observed a small outward current in response to the alkaline solutions (pH 9\u201310) that was not observed in untransfected cells, which we, therefore, attribute to currents through OTOP1 channels. In response to the pH 9, but not pH 10 solution, we observed a \u2018tail current\u2019 upon return to neutral pH (for pH 9, Itail = \u2013123+/-20 pA, n=5; for pH 10, Itail = \u201336+/-11 pA); this may reflect cytosolic H+ depletion during the pH 9 stimulus, creating a driving force for proton entry through open OTOP1 channels that subsequently close when the pH was restored to 7.4. In response to pH 8 and 7 solutions, no measurable change in the baseline currents was observed.\n\nA very different pH-response profile was observed in OTOP2-expressing cells (Figure 1B and C). Quite surprisingly, large outward currents were evoked in response to alkaline solutions of pH 9 and pH 10, which were similar in magnitude to the inward currents evoked in response to the acidic solutions. We also observed changes in the holding current in response to solutions at near-neutral pH (pH 8 or 7), suggesting that the channels are open at the resting pHo. Overall, we observed changes in OTOP2 currents in response to changes in extracellular pH over the entire pH range tested. The magnitude and direction of the responses were generally proportional to the driving force on the proton. This relationship broke down over the more acidic pH range, where a change of 10-fold in ion concentration (e.g. pH 6 versus pH 5; Figure 1) did not lead to a substantial increase in current magnitude. Although we do not yet understand this phenomenon, we suspect that it may be due in part to the rapid decay kinetics of the currents in response to acid stimuli and the consequent attenuation of the peak currents as well as possible inhibition of the channels by intracellular acidification.\n\nOTOP3 currents were active over a narrower pH range than OTOP1 and OTOP2 currents (Figure 1B and C). They were activated steeply below pH 6, and no outward currents were observed in response to any of the alkaline stimuli.\n\nThese data suggest a sharp threshold for activating OTOP1 and OTOP3 channels of ~pH 6 (OTOP1) and pH 5.5. (OTOP3). In contrast, OTOP2 channels are active over the entire pH range. They also show that both OTOP1 and OTOP2 channels can conduct outward currents, which may be physiologically relevant under some circumstances.\n\n### OTOP2 is selective for protons and open at neutral pH\n\nThe unusual response properties of OTOP2 raise the question of whether OTOP2 is selective for protons. OTOP1 is highly selective for H+ over Na+, by a factor of at least 105 fold (Tu et al., 2018), and currents carried by OTOP3 follow the expectations for a proton-selective current, such as a shift in the reversal potential that follows the equilibrium potential for the H+ ion (Tu et al., 2018; Chen et al., 2019). OTOP2 is known to permeate protons (Tu et al., 2018), but selectivity for protons was not previously measured. To address this question, we first performed ion substitution experiments. We observed no change in the magnitude of the currents when the concentrations of either Na+ or Cl- in the extracellular solution were changed (Figure 2A), indicating that OTOP2 is not permeable to either ion. We also measured the reversal potential of OTOP2 currents as a function of \u0394pH (pHo \u2013 pHi) under conditions designed to minimize H+ ion accumulation (see methods) (Cherny and DeCoursey, 1999; Ramsey et al., 2006; Tu et al., 2018). These experiments showed that Erev changed ~59 mV/pH as expected for an H+-selective ion channel (Figure 2B). Thus, we conclude that OTOP2 is selective for protons.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/77946/elife-77946-fig2-v1.jpg)\n\n**Figure 2.:** (A) Representative OTOP2 current elicited in response to a pH 5.5 solution with 160 mM Na+ replacing NMDG+ (top) or 140 mM Methane sulfonate-/ 20 mM Cl- replacing 160 mM Cl- (bottom) in the extracellular solutions at times indicated. Vm was held at \u201380 mV. (B) The I-V relationship (top) of the Zn2+ sensitive component of OTOP2 current in response to different pHo stimuli was obtained from ramp depolarizations in the presence and absence of Zn2+. pHi was adjusted to 6.5. Bottom: Erev measured as a function of \u0394pH (pHo \u2013 pHi). pHi was adjusted to 6.0, 6.5, or 7.0 as indicated. The red dotted line is the predicted equilibrium potential for H+, EH. (C) Extracellular Zn2+ inhibits resting OTOP2 currents in a dose-dependent manner. Trace (top) shows inhibition of resting current in OTOP2-expressing HEK-293 cells by 10 \u03bcM Zn2+. Vm as indicated. Fractional inhibition was fit with a Hill slope = 0.6 and IC50=5.6 \u00b5M. Data represent mean \u00b1 s.e.m of biological replicates where n=3\u20134 for each data point.\n\nThe unusual response properties of OTOP2 suggested that it might be open when pHo = 7.4. Consistent with this possibility, we routinely observed a large resting current at \u201380 mV in OTOP2-expressing cells. We reasoned that if this resting current is due to open OTOP2 channels, it should be inhibited by Zn2+, a blocker of OTOP1 and other proton channels (Tu et al., 2018). Indeed, OTOP2 currents at neutral pH were inhibited by Zn2+ with an IC50 of 5.6 \u03bcM (Figure 2C). Note that because the inhibition of OTOP1 by Zn2+ is pH-dependent (Bushman et al., 2015; Teng et al., 2019), the sensitivity of OTOP2 currents at neutral pH to micromolar concentrations Zn2+ as compared with the requirement of millimolar concentrations of Zn2+ to inhibit OTOP1 currents evoked in response to acid stimuli is as to be expected.\n\nThus, we concluded that OTOP2 is a proton-selective ion channel open at neutral pH.\n\n### Different pH-response profiles of three murine OTOP channels measured with pH imaging\n\nInward and outward currents carried by protons through OTOP channels are expected to cause a change in intracellular pH. Thus, to confirm the results described above, we assessed the activity of each OTOP channel by monitoring intracellular pH. For these experiments we co-transfected HEK-293 cells with a pH-sensitive fluorescent protein \u2013 pHluorin, a variant of GFP whose fluorescence emission changes as a function of the intracellular pH (Miesenb\u00f6ck et al., 1998). As a control to confirm the expression and activity of pHluorin, all cells were exposed at the end of the experiment to acetic acid, which crosses cell membranes and causes intracellular acidification (Figure 3A-D, dark red bar) (Wang et al., 2011).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/77946/elife-77946-fig3-v1.jpg)\n\n**Figure 3.:** (A\u2013D) Changes in intracellular fluorescence emission upon exposure to changing extracellular pH, as indicated, were measured from HEK-293 cells co-expressing OTOP channels and the pH-sensitive indicator pHluorin (A\u2013C) or pHluorin alone (D). Data are shown as the mean \u00b1 SEM for n=7, 7, 11, and 3 cells for (A), (B), (C), and (D), respectively. Acetic acid, which is permeable through cell membranes and acidifies cell cytosol directly, served as a positive control. Only OTOP1 and OTOP2 conducted protons out of the cell cytosol in response to alkalinization, while all three channels conducted protons into the cell cytosol in response to acidification, albeit at different rates. The lower panel shows images of a single cell in the field of view used for these experiments taken at the pH indicated (pseudo color is arbitrary units).\n\nCells expressing each of the three OTOP channels responded to the acidic solutions with large changes in intracellular pH, a response not observed in control cells (Figure 3A \u2013 D). Strikingly, we also observed changes in intracellular pH in response to an alkaline solution (pHo = 8.5) in both OTOP1- and OTOP2-expressing cells but not in OTOP3-expressing cells. This data is consistent with the patch-clamp data showing that OTOP1 and OTOP2, but not OTOP3, conduct outward proton currents in response to alkaline extracellular stimuli.\n\nWe also noted differences in the time course of the response to acidic solutions (pH 6 or pH 5) in cells expressing the three OTOP channels. Notably, the response of OTOP3-expressing cells appeared slower than that of OTOP1 or OTOP2-expressing cells (compare Figure 3C with 3 A and 3B). This is likely a consequence of the smaller currents that are evoked by these stimuli in OTOP3 cells and the slower kinetics of channel activation (see below).\n\nTogether these data support the conclusion that OTOP1 and OTOP2 can conduct outward proton currents in response to alkaline extracellular solution solutions, while all three channels carry inward proton currents in response to acidic stimuli.\n\n### Kinetics of OTOP channels provide direct evidence of pH-dependent gating\n\nIn patch-clamp recordings such as those shown in Figure 1, we noted differences in the kinetics of the currents elicited in response to acidic solutions among the three channels. For example, OTOP2 currents showed faster activation than OTOP1 currents, while OTOP3 currents were considerably slower. These differences likely reflect differences in activation of the channels by protons. In particular, for a channel that is open at neutral pH (OTOP2), we expect the currents to change in response to an increase or decrease in the concentration of the permeant ion (H+) with a time course that reflects the speed of the solution exchange. In contrast, for a channel that is closed at neutral pH (OTOP1 and OTOP3), currents may increase more slowly, with kinetics determined by the rates of agonist binding and opening of the channels.\n\nThe rate of activation of each channel in response to acid stimuli was measured by fitting the time course of the current upon solution exchange with a single exponential (Figure 4A), excluding the first few milliseconds where responses deviated from an exponential time course due to a lag in the solution exchange. We also measured the rate of decay of the currents after return to neutral pH in a similar manner.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/77946/elife-77946-fig4-v1.jpg)\n\n**Figure 4.:** (A) Representative current traces (black) from cells expressing each of the three OTOP channels in response to the application and the removal of pH 5.5 solutions. The activation and the decay kinetics of the currents were fitted with a single exponential (red and blue curves, respectively). (B) Solution exchange kinetics measured with an open K+ channel KIR2.1 are similar to the kinetics of OTOP2 currents. (C) Summary data for \u03c4on (left panel) and toff (right panel) of the three OTOP channels (OTOP1: green, OTOP2: blue, OTOP3: red) and KIR2.1 (black) in response to the application and removal of pH 5.5 extracellular solution. n=6, 5\u20136, 6 for OTOP1, OTOP2 and OTOP3 respectively. (D) Time constants for activation (\u03c4on, red) and deactivation (\u03c4off, blue) of OTOP1, OTOP2, and OTOP3 currents in response to acidic stimuli (pH 6.0, 5.5, and 5.0) measured from experiments as in A. Note that the data at pH 5.5. is also shown in Panel C. n=6,5\u20136, and 6 for OTOP1, OTOP2, and OTOP3, respectively.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77946/elife-77946-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A-C) Representative traces showing the activation of OTOP1 (A), OTOP2 (B), and OTOP3 (C) currents in response to solutions with extracellular pH titrated to 6.0 (left panel), 5.5 (middle panel), and 5.0 (right panel). The activation of the currents was fit by a single exponential curve (red part of the trace). Inserted shows a zoom-in view of the current activation. The initial few milliseconds where data deviated from an exponential were not included in the curve fitting as they reflect the non-instantaneous solution exchange. No measurable current was evoked in OTOP3 in response to pH 6.0.\n\nIn response to the pH 5.5 stimulus, the activation kinetics of the three OTOP channels varied over nearly two orders of magnitude (Figure 4A and C). The time constant for activation of OTOP2 was 12.0\u00b11.6ms (n=10) which was slightly faster than the rate of solution exchange as measured using cells expressing an inward rectifier K+ channel and solutions that varied in potassium concentration (Figure 4B and C; \u03c4=26.1 \u00b1 2.9ms). Time constants for activation of OTOP1 and OTOP3 were 142.7\u00b113.5ms (n=6) and 1098.0\u00b183.0ms (n=6), respectively, considerably slower than the solution exchange suggesting that both are gated by extracellular protons. In contrast, the time constant for deactivation of OTOP1, OTOP2, and OTOP3 currents were similar to the rate of the solution exchange (\u03c4=18.6 \u00b1 4.4ms, n=6, 19.3\u00b12.8ms, n=9, and 20.9\u00b13.0ms, n=13, respectively; Figure 4A and C). The off-rates of the OTOP currents likely reflect the rate of removal of the permeant ion and not the closing rates of the channels (which could be slower). This also confirms that the differences in on-rates were not artifacts of varying solution exchange times between groups of cells.\n\nWe also measured the kinetics of the currents carried by all three channels in response to solutions that varied in pHo. The activation rate of OTOP1 and OTOP3 currents increased as the pHo was lowered (Figure 4D and Figure 4\u2014figure supplement 1). This is as expected if protons gate the channels. In contrast, the activation rate of the OTOP2 currents was insensitive to the extracellular pH over this range, consistent with an interpretation that the channels are open at neutral pH, and lowering the pH does not further increase channel open probability (Figure 4D and Figure 4\u2014figure supplement 1). The decay rate of the currents upon return to neutral pH did not vary as a function of the pH of the stimulus for any of the three channels (Figure 4D).\n\nTogether, the slow, pH-dependent kinetics of currents carried by OTOP1 and OTOP3 channels provides strong evidence that they are gated by extracellular protons.\n\n### Effect of extracellular pH on slope conductance\n\nTo provide further evidence that extracellular protons gate OTOP channels, we measured the slope conductance as a function of pHo for all three channels. The slope conductance (\u0394I/\u0394V) was measured from responses to ramp depolarizations at or near the peak of the response to the stimulus (pHo = 10\u20135) (Figure 5A and B) using a range of Vm from \u201380 mV to 0 mV, where the currents were generally linear and not contaminated by endogenous currents. Slope conductance (G) is related to the channel\u2019s open probability (Po) by G=N*g*Po, where N is the number of channels and g is the single-channel conductance. Since the number of channels is constant, the slope conductance is a measure of Po*g. Importantly, this provides a measure of open probability, even when the holding potential is close to the equilibrium potential for H+ where currents are small (e.g. for stimuli at 8.0).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/77946/elife-77946-fig5-v1.jpg)\n\n**Figure 5.:** (A) Voltage and solution exchange protocol used to measure the slope conductance in response to changing extracellular pH. Vm was held at \u201380 mV and ramped to +80 mV (1 V/s at 1 Hz). The first ramp after the currents peaked was used for later measurements. (B) Representative I-V relationship from HEK-293 cells expressing each of the three OTOP channels in response to alkaline or acidic stimuli (pH 10\u20135) from experiments described in (A). The conductance was measured from the slope of the I-V curve between \u201380 mV and 0 mV to avoid contamination from outwardly rectifying Cl- currents. (C) Average slope conductance measured from cells expressing each of the three OTOP channels in response to different pHo stimuli from data as in (B). Data represent mean \u00b1 s.e.m. of biological replicates where for each data point n=5 for OTOP1, n=6\u20137 for OTOP2, and n=5\u20137 for OTOP3.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77946/elife-77946-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) I-V curves from experiments in which OTOP1 currents were evoked in response to a pH 5.0 stimulus with Vm = \u201380 mV and ramp depolarizations (\u201380 mV to +80 mV; 1 V/s) applied every second as in Figure 5A show a shift in Erev as a function of time. (B) Average data showing the change in reversal potential as a function of time for OTOP1, OTOP2, and OTOP3. n=5, n=3\u20135, n=7, respectively. Comparison between t=0 s and t=4 s by two-tailed, paired Student\u2019s T-test was significant at p=0.02, p=0.02, and p=0.03 for OTOP1, OTOP2, and OTOP3, respectively. (C) Comparison of the measured magnitude of currents at Vm = \u201380 mV and that predicted if the initial current decays due to a change in driving force for H+ entry. The predicted currents were calculated as I(x) = I1s * (Vm -Erev(x)/(Vm -Erev(1 s))), where x is a time point between 2 and 4 s after the onset of the stimulus. For OTOP1, the predicted and measured currents were similar, while for OTOP2, there was a large difference between the observed and predicted currents. n=5 and n=3 for OTOP1 and OTOP2.\n\nIn OTOP1-expressing cells, the slope conductance varied as a function of extracellular pH, dramatically increasing when the extracellular pH was lowered below pHo = 6.0 (Figure 5B and C). We also observed an increase in the slope conductance when the pHo was made more alkaline, consistent with data in Figure 1 showing that an alkaline pHo of 9.0 can be activating. In OTOP2-expressing cells, the slope conductance was highest in alkaline pH (pHo = 10) and decreased as the pHo was lowered (Figure 5B and C). The response of OTOP3-expressing cells was more similar to that of OTOP1, but with some clear differences (Figure 5B and C). The slope conductance remained very small when extracellular pH was between 10 and 6 and increased drastically when pHo was 5. These data support the conclusion that OTOP1 and OTOP3 are gated by extracellular protons, while OTOP2 is conductive over a broad pH range.\n\nThis series of experiments also provided an opportunity to test the extent to which intracellular acidification accounts for the decay of the macroscopic currents. In particular, we noted that the decay of the currents was often accompanied by a shift in Erev (Figure 5\u2014figure supplement 1A, B). Although in these experiments the currents were not leak-subtracted and, consequently, Erev cannot be used to precisely measure \u0394pH, shifts in Erev can, nonetheless, be considered as evidence of a relative change in intracellular pH. For OTOP1, the observation that Erev shifted by \u201342.5+/-10.4 mV (n=5) between the first and the fourth ramp depolarization (4 seconds apart) suggests that the cytosol acidified by ~0.7 pH units (Figure 5\u2014figure supplement 1B). A more modest shift of \u201327.9+/-3.4 mV (n=3) was observed for OTOP2 currents, while for slowly activating OTOP3 currents, Erev shifted slightly but significantly in the positive direction (6.82+/-2.5 mV, n=7; p=0.03, two-tailed paired Student\u2019s T-test comparing t=0 s and t=4 s). To test whether acidification of the cytosol could account for the decay of OTOP1 and OTOP2 currents, we calculated the expected effect of the change in driving force (Vm-Erev) on the current magnitude at 1 s timepoints as the currents decayed and compared this to the observed current magnitudes at these times. As seen in Figure 5\u2014figure supplement 1C, the shift in driving force mostly accounts for the decay of OTOP1 currents. For OTOP2, the decays in current magnitudes is much greater than can be explained by a change in driving force, suggesting that intracellular acidification may directly inhibit OTOP2 channel activity or conductance. We could not perform a similar analysis of OTOP3 currents, which in these experiments did not decay significantly during the stimulus.\n\n### Extracellular linkers are key determinants for pH-sensitive gating\n\nThe difference in pHo sensitivity of the three murine OTOP channels suggested that structural domains that vary among the channels contribute to the gating apparatus and that these domains could be identified using chimeric channels. Specifically, we generated chimeras between mOTOP2 and mOTOP3, which, as described above, are the most divergent functionally of the three murine OTOP channels. OTOP channels contain twelve transmembrane domains (S1-S12), with N and C termini located intracellularly. The transmembrane domains 1\u20136 and 7\u201312 respectively constitute the structurally homologous \u2018N\u2019 and \u2018C\u2019 domains. Reasoning that the residues involved in sensing the extracellular pH and gating the channels would be located on the extracellular surface of the channels, we swapped each of the six extracellular linkers that connect transmembrane helices (Figure 6\u2014figure supplement 1). Each of the twelve chimeric channels was then tested over a range from pH 10 to pH 5. To simplify the analysis, we divided the chimeras into four categories: OTOP2 N domain (OTOP2 backbone with OTOP3 linkers), OTOP2 C domain, OTOP3 N domain, and OTOP3 C domain.\n\nOf the three OTOP2 N domain chimeras, two were functional. Strikingly, the replacement of the OTOP2 S5-S6 linker (L5-6) with that from OTOP3 nearly eliminated the outward currents in response to alkaline stimuli and reduced the response to the mildly acidic stimulus (pH 6) but had little effect on the magnitude or kinetics of the inward currents elicited in response to the pH 5 stimulus (Figure 6A\u2013C; OTOP2/OTOP3(L5-6)). Replacement of the OTOP2 S1-2 linker with that from OTOP3 reduced current magnitudes (possibly due to effects on trafficking) but did not significantly change relative responses to the stimuli of varying pH. In contrast to the OTOP2 N domain chimeras, the two functional C domain chimeras (L7-8 and L11-12) showed a similar pH dependence as WT OTOP channels, suggesting that the mutations did not specifically affect channel gating (Figure 6A and D\u2013E). None of the chimeras showed a significant change in kinetics (Figure 7A, B and E).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/77946/elife-77946-fig6-v1.jpg)\n\n**Figure 6.:** (A-F) Representative current traces in response to varying pH from 10 to 5 measured from HEK-293 cells expressing OTOP2 channels and chimeras with an OTOP2 backbone (A) or OTOP3 channels and chimeras with an OTOP3 backbone (F) where numbers refer to linkers between corresponding transmembrane domains. Membrane potential was held at \u201380 mV. (B, D, G, I) Current magnitude (mean +/-s.e.m.) for OTOP2 N-domain chimeras (n=4\u20135) (B), OTOP2 C-domain chimeras (n=4\u201310) (D), OTOP3 N-domain chimeras (n=3\u20135) (G), and OTOP3 C-domain chimeras (n=4\u20136) (I) from experiments such as in (A) and (F). (C, E, H, J) Same data for pH 10 and pH 6, normalized to the response to pH 5.0 to control for differences in expression. Significance was tested using the Mann-Whitney test. The p-values and n are given in Figure 6\u2014source data 2.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77946/elife-77946-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Mouse OTOP1, 2, and 3 channels are aligned. The transmembrane helices are depicted in cylinders above the sequence. Residuals conserved in all three channels are shaded pink. External loops that were swapped between OTOP2 and OTOP3 are labeled in blue boxes.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/77946/elife-77946-fig7-v1.jpg)\n\n**Figure 7.:** (A\u2013D) Time constants for activation of chimeric as compared with wildtype channels, measured from traces as in Figure 6A and F, using methods as in Figure 4. The \u03c4on of OTOP2 and its chimeras (A, B) was not pH dependent and followed the rate of the solution exchange. Data are mean \u00b1 s.e.m, (n=3\u20134). The \u03c4on of OTOP3 chimeras bearing OTOP2 linkers (C, D) was generally faster than that of the wildtype channels (n=3\u20134). Same nomenclature as in Figure 6. (E, F) Same data as in A-D, plotted to allow comparison across all chimeras at the same pH (as indicated; note that because wildtype OTOP3 is not activated by pH 6, data using a pH 6 stimulus is not included in the analysis). Statistical results report the comparison between chimeric channels and the wildtype channel using ANOVA and Dunnett\u2019s multiple comparisons tests.\n\nNext, we examined OTOP3 channels containing extracellular linkers from OTOP2. Of these, the most striking was an OTOP3 N domain chimera with the L3-4 of OTOP2, which conducted outward currents in response to extracellular alkalinization (Figure 6F\u2013H). Moreover, this chimera activated at a more mild pH than OTOP3 channels and with faster kinetics (Figure 7C and F). Thus, the simple swap of the 3\u20134 linker conferred a partial gating phenotype of the donor, OTOP2. The chimera containing the L5-6 from OTOP2 was more similar to OTOP3, while the L1-2 chimera appeared to be non-functional. Interestingly, the C domain chimeras also produced apparent changes in gating (Figure 7D and F): all three chimeras activated more rapidly and at higher pH, adopting some features from the donor channel (OTOP2). But they retained the steep pH sensitivity of the OTOP3 channels and did not support proton efflux in response to alkaline stimuli like OTOP2.\n\nThe structure of OTOP2 channels has not yet been resolved experimentally, and the cryo-EM structures of OTOP1 and OTOP3 channels do not allow the visualization of the S5-6 linker (Chen et al., 2019; Saotome et al., 2019), possibly because the linker adopts multiple conformations. Thus, to gain structural insight into the possible mechanisms by which extracellular linker regions could contribute to gating, we examined the structures of murine OTOP1, OTOP2, and OTOP3 channels predicted by AlphaFold (Jumper et al., 2021; Varadi et al., 2022). We first verified that the AlphaFold structures were reliable by comparing them to the cryoEM structures where available (e.g. for DrOTOP1 and GgOTOP3). This analysis revealed excellent agreement between the observed and expected structures (Figure 8\u2014figure supplement 1). Inspection of the predicted structures of the three mammalian OTOP channels shows the putative location of the extracellular linker and associated transmembrane domains (Figure 8). Interestingly, the 5\u20136 linker of OTOP2 is longer, and transmembrane domain 5 (TM5) of OTOP2 adopts a helical structure with a pronounced kink, whereas that of OTOP3 is straight and rod-like. Thus, it is possible that the introduction of the OTOP3 S5-6 linker onto OTOP2, which disrupts conduction at alkaline pH, may do so through a structural rearrangement of transmembrane helices within the N domain of the channel. In contrast, differences between OTOP2 and OTOP3 in the 3\u20134 and C terminal linkers and associated transmembrane domains are less pronounced, suggesting that single amino acids that differ between the channels may tune the pH dependence of gating. Together, we conclude that extracellular linkers participate in the gating of OTOP channels and that the gating apparatus is distributed across multiple extracellular regions within both the N and C domains.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/77946/elife-77946-fig8-v1.jpg)\n\n**Figure 8.:** mOTOP2 and mOTOP3. (A) Top views (top) and side views (bottom) of AlphaFold predicted structural models of mOTOP1, mOTOP2, and mOTOP3. The N- and C- domain halves of mOTOP1, mOTOP2, and mOTOP3 are colored green and light green, blue and light blue, and magenta and hot pink, respectively. (B) A superimposed overlay of mOTOP2 and mOTOP3 highlights the different orientations of the transmembrane 5 helices and S5-6 linkers.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77946/elife-77946-fig8-figsupp1-v1.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (A) Superimposed structural alignments of the AlphaFold2 predicted model for zebrafish OTOP1 (DrOTOP11; cyan) and DrOTOP1 cryoEM structure PDB:6NF4 (purple) using single subunits, N domain, or C domain. (B) Superimposed structural alignments of the AlphaFold2 predicted model for mouse Otop1 (MmOTOP1) (N domain in green, C domain in light green) and DrOTOP1 cryoEM structure PDB:6NF4 (purple) based on a single subunit. (C) Superimposed structural alignments of the AlphaFold2 predicted model for mouse OTOP3 (MmOTOP3) (N domain in pink, C domain in salmon) and chicken OTOP3 (GgOTOP3) cryoEM structure PDB:6NF6 (blue) based on a single subunit. Alignments and root-mean-square deviation (RMSD) values were calculated using the command \u2018matchmaker\u2019 in ChimeraX v1.2.5 software. AlphaFold2 predicted models were downloaded from the AlphaFold Protein Structure Database (https://alphafold.ebi.ac.uk), with the following entry codes: DrOTOP1 - E7F5C1, MmOTOP1 - Q80VM9, and MmOTOP3 - Q80UF9.\n\n## Discussion\n\nUnlike other ion channels where functional descriptions of functional properties largely preceded their molecular identification, for OTOP1 and related proteins, such descriptions were limited to a few studies of native OTOP1 channels in taste receptor cells (Chang et al., 2010; Bushman et al., 2015). Thus, while ion selectivity of vertebrate and invertebrate OTOP channels has been well established (Tu et al., 2018; Chen et al., 2019), descriptions of basic gating mechanisms have been limited. For example, previous studies showed that the channels are not voltage-sensitive (Tu et al., 2018), but whether they are ligand-gated was not known. Here we provide the first direct evidence that the three murine OTOP channels are gated by extracellular protons in a subtype-specific manner (Figure 9). OTOP1 and OTOP3 show no or little activity at neutral pHo and are activated by lowering pH, while OTOP2 is active at neutral and alkaline pHo, and lowering pHo appears to inhibit the channel. The varying pH sensitivity of the three vertebrate OTOP channels may allow them to subserve different functions in the cells within which they are expressed and is reminiscent of the varying temperatures sensitivities of thermo-TRP channels (Dhaka et al., 2006).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/77946/elife-77946-fig9-v1.jpg)\n\n**Figure 9.:** Lowering extracellular pH increases the slope conductance of OTOP1 and OTOP3 channels while it lowers the slope conductance of OTOP2 channels. OTOP1 also has a peak of activity at mildly alkaline pH.\n\n### Gating in response to changes in extracellular pH\n\nThe gating of ion channels by protons has been described previously. For example, the thermosensitive ion channel TRPV1, the acid-sensing ion channels (ASIC), and proton-activated chloride channels (PAC) are all activated by protons acting on extracellular sites (Waldmann et al., 1997; Jordt et al., 2000; Lambert and Oberwinkler, 2005; Ullrich et al., 2019; Yang et al., 2019b; Ruan et al., 2020; Deng et al., 2021). Others are gated by protons acting on the intracellular side of the membrane (Cuello et al., 2010; Wang et al., 2010). Notably, the only other plasmalemma proton channel in eukaryotes, the voltage-gated proton channel Hv1, shows a shift in voltage dependence as a function of pH (Ramsey et al., 2006; Decoursey, 2012), while a lysosomal K+ channel, TMEM175 was recently shown to function as a proton-activated proton channel (Cang et al., 2015; Hu et al., 2022; Zheng et al., 2022). For channels in which the proton is not the primary permeant ion, the effect of pH on gating can be measured simply by comparing current magnitudes as extracellular pH is varied. In contrast, because changing pH will also change the driving force for proton entry and, therefore, the magnitude of proton currents, establishing an effect of pH (protons) on the gating of a proton channel is more difficult. Such an analysis is further complicated by the exceedingly small conductance of proton channels at physiological or even acid pH (Decoursey, 2012), which makes it hard, if not impossible, to measure the effects of pH on the gating of single channels.\n\nThe magnitude of OTOP currents was previously shown to vary as a function of pHo (Tu et al., 2018). We confirmed the effects of pHo and extended the pH range of test solutions, allowing us to observe that OTOP2 and, to a lesser extent, OTOP1 channels can carry outward proton currents in response to extracellular alkalization. The differences in currents suggest underlying differences in gating. To provide direct evidence for differential gating of the vertebrate OTOP channels, we devised a strategy that avoids confounds introduced by the changing driving force for proton movement inherent in these experiments. Taking advantage of differences in the three murine OTOP channels, we provide three independent pieces of evidence that extracellular protons gate the OTOP channels. First, we found that OTOP1 and OTOP3 currents activated slowly in response to acid stimuli, with rates that increased as the extracellular pH was lowered. These results can be explained if lowering the pH opens the channels. Second, the slope conductance of the OTOP channels, which is independent of driving force, varied as a function of pHo for all three channels. Consistent with the kinetic data, the slope conductance of both OTOP1 and OTOP3 currents increased dramatically upon lowering the pH below 6.0 (OTOP1) and 5.5 (OTOP3), while the slope conductance of OTOP2 increased with alkalization above pH 8.0. Finally, these results are consistent with pH imaging experiments where proton efflux in response to extracellular alkalinization was only observed for OTOP1 and OTOP2 and not for OTOP3-expressing cells. Together these data allow us to conclude that the three murine OTOP channels are gated differentially by extracellular protons.\n\n### Structure of OTOP channels and role of extracellular linkers\n\nThe recent cryo-EM structures of OTOP1 and OTOP3 channels have revealed that the channels adopt a novel fold, with twelve transmembrane alpha-helices organized into two structurally homologous six-helix domains (N and C domains) (Chen et al., 2019; Saotome et al., 2019). Thus, as a dimer, the channels adopt a pseudo-tetrameric structure. However, in contrast to most ion channels where the subunits come together to form a shared pore, the central cavity of OTOP channels is filled with cholesterol-like molecules and, therefore, cannot mediate ion conduction (Saotome et al., 2019). Three putative pathways for protons have been identified in the structures: one each in the N and C domains and another at the interface of N and C domains (intrasubunit interface). Mutations in each putative permeation pathway that cause loss of function have been identified, including mutations of conserved residues (E267 and H574 in ZfOTOP1) at the intrasubunit interface that are required for function but not subunit assembly or trafficking (Saotome et al., 2019). Whether these residues mediate gating or permeation of the channels is still not known, and it is possible they participate in both (Tombola et al., 2008; Musset et al., 2011). Moreover, with three possible routes for proton permeation, there may be multiple pores that open under different conditions. For example, our observation that OTOP1 channels show a biphasic response to extracellular pH could be explained by two pores that open over different pH ranges, a hypothesis that would need to be tested.\n\nOur data also provide a framework for understanding the structural basis for the gating of OTOP channels by protons. Swapping extracellular loops of OTOP2 and OTOP3 selectively changed the gating of the channels in a predictable manner. Swapping loops in the N domain of the channels selectively affected the outward currents elicited in response to alkalinization, such that OTOP2/OTOP3 (L5-6) channels carried less outward current, while OTOP3/OTOP2(L3-4) channels carried more outward current than the respective wildtype channels. They also showed rapid activation kinetics to acid stimuli like OTOP2. This suggests that the N domain either contains the pore that is active over a broad pH range or contains a sensor that opens a common pore over a large pH range (for example, at the intrasubunit interface). In contrast, swapping loops within the C domain had no discernable effect on OTOP2 but changed the gating of OTOP3 channels such that they opened faster and at higher pH (like OTOP2). This suggests that activation of OTOP3 may involve a pH-dependent conformational change within the C domain linkers that otherwise inhibit its activity.\n\nHow the structure of the extracellular linkers participate in gating and whether they function as pH sensors or allosterically modulate gating remains to be determined. Structural predictions of MmOTOP2 from AlphaFold (Jumper et al., 2021; Varadi et al., 2022) point to intriguing differences in the position of S5 domain and the S5-6 linker between OTOP2 and OTOP3 that may underlie differences in gating. In contrast, AlphaFold predicted similar conformations of the L3-L4 loop for both channels, so that we do not presently have a structural basis for the phenotype of the OTOP3/OTOP2(L3-4) chimera. It is worth noting that the chemical makeup of this linker is very variable; for example, OTOP3 has three positively charged residues (two His and one Lys) and three negatively charged residues, while OTOP2 has just one positively and one negatively charged residues (conserved in OTOP1) and several aromatic residues.\n\nTogether our description of the differential gating of the three mammalian OTOP channels by protons provides the basis for a deeper understanding of this new ion channel family and will lead to a better understanding of how OTOP channels contribute to a wide range of physiological processes, from gravity senses and taste to digestion, both in health and disease. Further understanding of the mechanism by which protons gate OTOP channels will require a combination of structure-guided mutagenesis and the resolution of the structure of OTOP channels in different states.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (M. musculus)</td>\n      <td>Otop1, Otop2 and Otop3</td>\n      <td>Tu et al., 2018. PMID:29371428</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo-sapiens)</td>\n      <td>HEK293</td>\n      <td>ATCC</td>\n      <td>CRL-1573</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo-sapiens)</td>\n      <td>PAC-KO HEK293 cells</td>\n      <td>Yang et al., 2019a. PMID:31023925</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Otop1, Otop2, and Otop3 in pcDNA3.1</td>\n      <td>Tu et al., 2018. PMID:29371428</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Otop1, Otop2, and Otop3 \u2013 GFP</td>\n      <td>Saotome et al., 2019. PMID:31160780</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>mO2_O3 loop swap mutations</td>\n      <td>This paper</td>\n      <td></td>\n      <td>cDNAs encode chimeric channels (see methods and Figure 6\u2014figure supplement 1). Available upon request</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>mO3_O2 loop swap mutations</td>\n      <td>This paper</td>\n      <td></td>\n      <td>cDNAs encode chimeric channels (see methods and Figure 6\u2014figure supplement 1). Available upon request</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pHluorin in pcDNA3</td>\n      <td>Miesenb\u00f6ck et al., 1998. PMID:9671304</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>CHES</td>\n      <td>Sigma</td>\n      <td>C2885</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>PIPES</td>\n      <td>Sigma</td>\n      <td>P6757</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Homopiperazine-1,4-bis(2-ethanesulfonic acid)</td>\n      <td>Sigma</td>\n      <td>53,588</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad Prism 8 and 9</td>\n      <td>GraphPad</td>\n      <td>RRID:SCR_002798</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>pClamp and clampfit</td>\n      <td>Molecular Devices</td>\n      <td>RRID:SCR_011323</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Origin</td>\n      <td>OriginLab corporation</td>\n      <td>RRID:SCR_002815</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>CorelDraw</td>\n      <td>Corel</td>\n      <td>RRID:SCR_014235</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>SimplePCI</td>\n      <td>HCImage</td>\n      <td>https://hcimage.com/simple-pci-legacy/</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Clones, cell lines, and transfection\n\nMouse Otop1, Otop2, and Otop3 cDNAs were cloned into the pcDNA3.1 vector as previously described (Tu et al., 2018). For experiments in Figures 6 and 7, both mOtop2 and mOtop3 cDNAs were cloned into the pcDNA3.1 vector with an N-terminal fusion tag consisting of an octahistidine tag followed by eGFP, a Gly-Thr-Gly-Thr linker, and 3 C protease cleavage site (LEVLFQGP) as previously described (Saotome et al., 2019). Chimeras were generated using In-Fusion Cloning (Takara Bio) and were confirmed by Sanger sequencing (Genewiz).\n\nHEK293 cells were purchased from ATCC (CRL-1573). PAC-KO cells were a kind gift from Dr. Zhaozhu Qiu (Yang et al., 2019b). The cells were cultured in a humidified incubator at 37 C in 5% CO2 and 95% O2 using a high glucose DMEM (ThermoFisher) containing 10% fetal bovine serum (Life Technology) and 1% Penicillin-streptomycin antibiotics. Cells were passaged every 3\u20134 days. Cells were tested and found free of mycoplasma using a PCR detection kit (Sigma-Aldrich, USA).\n\nCells used for patch-clamp recordings were transfected in 35 mm Petri dishes with ~600 ng DNA and 2 \u00b5L TransIT-LT1 transfection reagents (Mirus Bio Corporation) following the manufacturer\u2019s protocol. OTOP channels were co-transfected with GFP or pHluorin at a ratio of 5:1. The cells were lifted using Trypsin-EDTA 24 h after transfection, plated onto a coverslip, and used within 3\u20134 hr for patch-clamp recordings.\n\n### Patch-clamp electrophysiology\n\nWhole-cell patch-clamp recording was performed as previously described (Tu et al., 2018). Currents were filtered at 1 KHz and digitized at 5 kHz using an Axonpatch 200B amplifier and Digidata 1322 a 16-bit data acquisition system. Acquisition control and analysis were performed with pClamp 8.2 and Clampfit 9 (Molecular Devices). Patch pipettes with a resistance of 2\u20134 M\u2126 were fabricated from borosilicate glass (Sutter instrument) and fire polished. Only cells with stable giga-ohm seals were used for data collection and subsequent analysis. Records were analog filtered at 1 kHz before digital sampling at 5 kHz. Millisecond solution exchange was achieved with a fast-step perfusion system (Warner instrument, SF-77B) custom modified to hold seven microcapillary tubes in a linear array.\n\nThe holding potential was \u201380 mV unless otherwise indicated. For experiments in Figure 5, the voltage was held at \u201380 mV and ramped to +80 m at 1 V/s once per second. The slope of the first ramp after the peak current in response to acids was measured to determine the conductance.\n\n### Patch-clamp electrophysiology solutions\n\nTyrode\u2019s solution contained 145 mM NaCl, 5 mM KCl, 1 mM MgCl2, 2 mM CaCl2, 20 mM dextrose, 10 mM HEPES (pH adjusted to 7.4 with NaOH). Standard pipette solution contained 120 mM Cs-aspartate, 15 mM CsCl, 2 mM Mg-ATP, 5 mM EGTA, 2.4 mM CaCl2 (100 nM free Ca2+), and 10 mM HEPES (pH adjusted to 7.3 with CsOH; 290 mosm). Standard Na +free extracellular solutions contained 160 mM NMDG-Cl, 2 mM CaCl2, and 10 mM buffer based on pH (CHES for pH 10\u20139, HEPES for pH 8\u20137.4, PIPES for pH 7, Bis-tris for pH 6.5, MES for pH 6\u20135.5 and HomoPIPES for pH 5\u20134.5).\n\nFor sodium solution in Figure 2A, 160 mM NMDG-Cl was replaced by an equimolar concentration of NaCl. For the low chloride solution in Figure 2B, 120 mM HCl was replaced by methane sulfonic acid (CH3SO3H). In these experiments, 200 \u00b5M Amiloride was added to block endogenous ASIC channels.\n\n### pH imaging for transfected HEK-293 cells\n\nHEK-293 cells were cultured in 35 mm Petri dishes. OTOP channels and the pH-sensitive indicator pHluorin were co-transfected into the cells. After 24 hr, the cells were lifted and plated on poly-D-lysine-coated coverslips at room temperature. The cells were incubated in standard Tyrodes' solutions before experiments, and the pHluorin fluorescence intensity in response to different solutions was measured. All stimulating solutions were modified from the standard Tyrodes' solution, containing 10 mM of different buffer salt based on the pH (CHES for pH 8.5, MES for pH 6.0, Homo-PIPES for pH 5.0, and Acetic acid for pH 5.0 [HOAC] group). Excitation was 488 nm, and emission was detected at 510 nm using a U-MNIBA2 GFP filter cube (Olympus). Images were acquired on a Hamamatsu digital CCD camera attached to an Olympus IX71 microscope using Simple PCI software. The fluorescence intensity of each cell was normalized to its baseline in Tyrodes' solutions (F0) before the first test stimulus was given to the cells.\n\n### Quantification, statistical analysis, and generation of AlphaFold models\n\nAll data are presented as mean \u00b1 SEM if not otherwise noted. Statistical analysis was performed using Graphpad Prism 8 or 9 (Graphpad Software Inc). The sample sizes of 3\u201310 independent recordings from individual cells per data point are similar to those in the literature for similar studies. All data are biological replicates. In some cases where technical replicates were performed (e.g. re-running the test protocol a second time on the same cell), we typically used the first series unless there was a loss of seal resistance and recovery, in which case we used the second replicate. Selection, in this case, was blind to the result/outcome. Representative electrophysiology traces shown in the figures were acquired with pClamp, and in some cases, the data was decimated 10-fold before exporting into graphic programs, Origin (Microcal) and Coreldraw (Corel).\n\nThe predicted structural models of mOTOP1, mOTOP2, and mOTOP3 were downloaded from the AlphaFold Protein Structure Database https://alphafold.ebi.ac.uk (Jumper et al., 2021; Varadi et al., 2022). Figures of the models were generated using UCSF ChimeraX https://www.rbvi.ucsf.edu/chimerax/ (Goddard et al., 2018).\n",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "129f3176-cddc-44bc-865a-203ac6fb2aaa",
+      "submission_id": "f66590b7-abe8-42ac-8cfb-51b018b3192c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jon T Sack, https://ror.org/05rrcem69 University of California Davis School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.77946.sa0](https://doi.org/10.7554/eLife.77946.sa0)\n\nThe manuscript shows that OTOP proton channels are proton-gated with distinct pH sensitivities, and identifies regions on the proteins that alter pH-dependent gating. The main claims are well supported by the data. These findings are likely to be of interest to researchers studying acid/base physiology, sensory physiology, and ion channel biophysics.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Jon T Sack, https://ror.org/05rrcem69 University of California Davis School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.77946.sa1](https://doi.org/10.7554/eLife.77946.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Structural motifs for subtype-specific pH-sensitive gating of vertebrate otopetrin proton channels\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Jon Sack as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Richard Aldrich as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Ian Scott Ramsey (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Provide additional data to assess pH at the cell membrane during whole-cell patch-clamp experiments. It seems important to distinguish whether channel responses, such as the current decay are caused by pH changes or channel gating. See comments by reviewers #1 and #3. We suggest this could be achieved by: measurement of OTOP current reversal potentials at a series of time points during the rise and fall of OTOP currents; replacement of aspartate in the pipette with an anion that is less likely to be subject to transmembrane diffusion in its neutral form; changing the intracellular pH.\n\n2) Provide additional data to establish what solution exchange times are. See comments by reviewers #1 and #3. We suggest this could be achieved by open tip potential measurements.\n\n3) The section describing the effect of extracellular pH on slope conductance needs to be revised and the value of the slope conductance measurements clarified. See comments by reviewers #2 and #3.\n\n4) Discuss which titratable residues could potentially be pH sensors. Experiments with point mutations of titratable residues could greatly increase the impact of this study.\n\n5) Address each of the comments of the reviewers by revision of the manuscript or explain in the response letter why not.\n\nReviewer #1 (Recommendations for the authors):\n\nAbstract\n\nline 5 \"permeated by\"?\n\nResults\n\nline 75 \"the rate of current decay was faster as the pHo was lowered.\" Could this be a result of H+ accumulation/depletion?\n\nline 83 \"this suggests that channels had opened in response to the pH 9 stimulus and subsequently closed over a period of several seconds upon return to neutral pH. In response to pH 8 and 7 solutions, no change in the baseline currents was observed.\" Could this be a result of H+ accumulation/depletion?\n\nline 144 \"Notably, the response of OTOP3-expressing cells was significantly slower than that of OTOP1 or OTOP2-expressing cells.\" I suggest more clearly pointing out in Figure 3 the basis for this conclusion.\n\nFigure 4D \u2013 A log Y scale might help readers assess the relative pH-dependence of tau-off.\n\nline 164 \"Note that we excluded the first few milliseconds where responses deviated from an exponential time course, likely due to the non-instantaneous rate of solution exchange.\" Confusing, as the manuscript seems to soon state that the 15ms tau was the time of solution exchange.\n\nline 183 \"the deactivation rate of the currents upon return to neutral pH did not vary as a function of pH for any of the three channels and instead reflected the exchange time for the solutions, as expected (Figure 4D). \" Independent evidence of the exchange time is needed.\n\nFigure 5 \u2013 The repetitive ramp currents in Figure 5A as well as the reversal potentials in slope-conductance measurements seem consistent with H+ accumulation in patched cells. Assessment of whether H+ accumulation/depletion impacts currents seems needed. Could H+ accumulation in cells account for all of the current decay after acid stimuli?\n\nFigure 5C \u2013 n-values missing.\n\nFigure 9 \u2013 What does 1.0 conductance mean? Why doesn't OTOP3 go to 1.0? Could it be that all OTOPs have lower single-channel conductance at low pH, but this is obscured by the increase in Popen at lower pH for OTOP1 and 3?\n\nReviewer #2 (Recommendations for the authors):\n\nThis is an interesting manuscript investigating the basic mechanism of OTOPs gating. It provides evidence that protons gate the channels in a subtype-specific manner and identifies two extracellular loops in the protein as important contributors to pH-dependent gating. Overall, the experiments are well justified, and the results are explained clearly. The conclusions are supported by the data but there are several points that need to be addressed.\n\nThe section describing the effect of extracellular pH on slope conductance needs to be revised. Slope conductance is defined as dI/dV and can be positive or negative depending on the voltage range of activation of the channel and the current reversal potential. The connection between slope conductance and N*Po*g indicated by the authors is unclear, as Po is usually the open probability at a given V, and g is the single channels chord conductance. If the authors really wanted to measure a parameter that does not depend on the driving force for proton entry, they should have just calculated the conductance as G = I/(V-Erev), not I/V.\n\nThe I/V ratio for OTOP2 varies with pHo in a confusing way (Figure 5C). It decreases going from pHo = 10 to pHo = 6, and then increases going to pHo = 5 (while the current remains constant between pHo = 6 and pHo = 5, Figure 1C). This seems inconsistent with the statement that \"OTOP2 is constitutively open\" which implies that Po does not depend on pH in this channel.\n\nThe authors state that the pH imaging data in Figure 3 provide the first direct evidence that the three murine OTOP channels are gated by extracellular protons in a subtype-specific manner. But what about the current data in Figure 1. Why is that data not sufficient to make the claim?\n\nIn Figure 4A, for OTOP1 and OTOP3, a k(on) connects a closed state in low H+ conc. to an open state in high H+ conc., but the k(off) does not connect the open state to the closed state. So, in what state is the channel right after returning to neutral pH? Did the authors try to open the channels with two consecutive acid pulses?\n\nThe structural differences in the L5-6 loops of the three OTOPs predicted by AlphaFold are interesting but what about the L3-4 loops? How are these differences helpful in understanding the experimental data on loop swapping? How do AlphaFold predictions compare with the Cryo-EM structures in the resolved transmembrane region?\n\nWhile the 3D structure of the loops is expected to affect function, what about the number/nature of charged and titratable residues? For instance, the L3-4 loop of OTOP2 contains three positive charges, of which two are His residues, while OTOP1 and OTOP2 have a net negative charge carried by a conserved Glu residue. It would be useful to discuss this kind of difference in light of the results of loop swapping.\n\nReviewer #3 (Recommendations for the authors):\n\n1. Currents shown in Figure 1 at nearly all pHo tested show a pronounced decay that is reported to be faster when pHo is lower (lines 74-76). However, it is not clear whether currents plotted in Figure 1C were measured at the peak vs. some other time during the pHo change. Do the authors do not offer any insight into the mechanism underlying current decay? For example, the relatively large current amplitudes suggest that despite pipette solution pH buffering, pHi could change as a result of current flowing through open Otop channels; alternatively, Otops might exhibit a form of desensitization or inactivation. If the former is the case, are the authors confident that current amplitudes are accurately measured and that the imposed change in pHo has been achieved at the time when currents were measured? (See also comments about solution exchange time below).\n\n2. Intracellular pH is 7.4 in all experiments (except Figure 2, where only Otop2 was measured), and the effect of changing pHi does not appear to have been tested. Why not?\n\n3. pHluorin imaging shown in Figure 3 is indirect and, due to lack of voltage clamp and lack of good pHi buffering, an intrinsically less robust method than electrophysiology; perhaps this data is better suited to Supplementary material? Experiments demonstrating net inward vs. outward proton fluxes during voltage ramps applied at various pHo (Figure 5B) appear to be a more appropriate method for tracking the direction of permeant ion movement.\n\n4. The fastest gating transition measured in Figure 4 is limited by solution exchange time, as the authors note, but it's not clear that solution exchange times were independently measured (i.e., by open-tip potential changes) using the same apparatus. Is the off-time constant for Otop2 (32 ms; Figure 4C, middle panel) substantially slower than the solution exchange time (if so, then the simplified scheme proposed in Figure 4A would not hold for Otop 2)?. Alternatively, the relatively slow current deactivation rate measured in Figure 4C might not be representative of the average behavior (as suggested by summary data shown in Figure 4D, middle panel). Furthermore, the kinetic schemes shown in Figure 4A do not consider that proton binding or unbinding from its putative binding site(s) might be rate-limiting for gating transitions; is this assumption supported by the experimental data?\n\n5. What new information is gleaned from measuring slope conductance (Figure 5C)? The G vs. pHo graphs appear to have the same shape as I vs. pHo graphs in Figure 1C, suggesting that the two methods report the same pH-dependent gating transitions. Could channel numbers be estimated (i.e., via current variance analysis) to calculate unitary conductances for Otop 1-3?\n\n6. Otop2/3 chimera data (Figure 6) are interesting, but leave open the question as to whether discrete titratable residues are responsible for low- vs. high-pH dependent gating. It would seem that the chimeras would help narrow the range of candidates, allowing the authors to focus on just a few. Additional data in single- or double-mutant channels would greatly enhance the strength of the manuscript. Why are no Otop1 chimeras shown?\n\n7. The reliability of AlphaFold-generated models is not independently established (i.e., during MD simulations), and it remains unclear whether the structural differences shown in Figure 8 are truly representative of physiologically meaningful differences in protein structure. How does the data in Figure 8 contribute to knowledge about the structural basis of pH-dependent gating in Otop channels? Do models identify specific titratable residues that could be experimentally tested (see item 6 above)?\n",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9e758e39-f1c8-4e31-9052-b457ba05454c",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C1",
+      "claim": "Otopetrin (OTOP) channels are proton-selective ion channels conserved among vertebrates and invertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Otopetrin (OTOP) channels are proton-selective ion channels conserved among vertebrates and invertebrates, with no structural similarity to other ion channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations to prior work (Tu et al., 2018) establishing OTOP channels as proton-selective.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "a167aadd-82b7-4660-a468-486f6b051630",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C2",
+      "claim": "OTOP channels have no structural similarity to other ion channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Otopetrin (OTOP) channels are proton-selective ion channels conserved among vertebrates and invertebrates, with no structural similarity to other ion channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by structural studies (Chen et al., 2019; Saotome et al., 2019) showing a novel fold.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "d0c829fc-2347-4226-8323-c1cc42a34903",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C3",
+      "claim": "There are three vertebrate OTOP channels: OTOP1, OTOP2, and OTOP3.",
+      "claim_type": "EXPLICIT",
+      "source": "There are three vertebrate OTOP channels (OTOP1, OTOP2, and OTOP3), of which one (OTOP1) functions as a sour taste receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by prior characterization studies (Tu et al., 2018).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "afbad1bf-f119-4827-ac77-5625c750bf6a",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C4",
+      "claim": "OTOP1 functions as a sour taste receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "There are three vertebrate OTOP channels (OTOP1, OTOP2, and OTOP3), of which one (OTOP1) functions as a sour taste receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations (Tu et al., 2018; Teng et al., 2019; Zhang et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "7d4f3a77-db92-4e4a-94f4-4504c48b2eeb",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C5",
+      "claim": "OTOP1 is steeply activated by extracellular protons with a threshold of pHo <6.0.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that OTOP1 and OTOP3 are both steeply activated by extracellular protons, with thresholds of pHo <6.0 and 5.5, respectively, and kinetics that are pH-dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by patch-clamp recordings showing pH-dependent activation (Figure 1, Figure 4, Figure 5) and slope conductance measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "277363da-8719-49f4-92ec-fad33be88688",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C6",
+      "claim": "OTOP3 is steeply activated by extracellular protons with a threshold of pHo <5.5.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that OTOP1 and OTOP3 are both steeply activated by extracellular protons, with thresholds of pHo <6.0 and 5.5, respectively, and kinetics that are pH-dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by patch-clamp recordings showing pH-dependent activation (Figure 1, Figure 4, Figure 5) and slope conductance measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "9ffbdaf2-29c3-40ea-baec-5f74c97cb5b7",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C7",
+      "claim": "OTOP1 and OTOP3 activation kinetics are pH-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that OTOP1 and OTOP3 are both steeply activated by extracellular protons, with thresholds of pHo <6.0 and 5.5, respectively, and kinetics that are pH-dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by measurements showing that activation rates increase as pH is lowered (Figure 4D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "0435955d-0ddb-4631-b651-e09b21acc7a0",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C8",
+      "claim": "OTOP2 channels are broadly active over a large pH range (pH 5 to pH 10).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, OTOP2 channels are broadly active over a large pH range (pH 5 pH 10) and carry outward currents in response to extracellular alkalinization (>pH 9.0).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by patch-clamp recordings showing currents across the entire pH range tested (Figure 1, Figure 5).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "4d1f2aac-318e-4223-9124-bcb79f9efb16",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C9",
+      "claim": "OTOP2 channels carry outward currents in response to extracellular alkalinization (>pH 9.0).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, OTOP2 channels are broadly active over a large pH range (pH 5 pH 10) and carry outward currents in response to extracellular alkalinization (>pH 9.0).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by patch-clamp recordings (Figure 1B) and pH imaging experiments (Figure 3B) showing outward currents and proton efflux at alkaline pH.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "1b417382-cfa1-4827-aaa3-4c5469b8ae40",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C10",
+      "claim": "Swapping extracellular linkers between OTOP2 and OTOP3 changes the pH-sensitive gating of the channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, we could change the pH-sensitive gating of OTOP2 and OTOP3 channels by swapping extracellular linkers that connect transmembrane domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experiments with chimeric channels showing altered pH responses (Figure 6, Figure 7).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "30787c1d-f2ee-47e7-85e2-b3a650be48b4",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C11",
+      "claim": "Swaps of extracellular linkers in the N domain tend to change the relative conductance at alkaline pH of chimeric channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Swaps of extracellular linkers in the N domain, comprising transmembrane domains 1\u20136, tended to change the relative conductance at alkaline pH of chimeric channels, while swaps within the C domain, containing transmembrane domains 7\u201312, tended to change the rates of OTOP3 current activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing that OTOP2/OTOP3(L5-6) nearly eliminated outward currents at alkaline pH (Figure 6C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "ba3534b7-df5c-4ba6-ac2d-dbc21465830a",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C12",
+      "claim": "Swaps of extracellular linkers in the C domain tend to change the rates of OTOP3 current activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Swaps of extracellular linkers in the N domain, comprising transmembrane domains 1\u20136, tended to change the relative conductance at alkaline pH of chimeric channels, while swaps within the C domain, containing transmembrane domains 7\u201312, tended to change the rates of OTOP3 current activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing that C domain chimeras activated more rapidly than wildtype OTOP3 (Figure 7D, F).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "572ebb37-7b87-4ee7-9187-6ebc786ddfc7",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C13",
+      "claim": "Members of the OTOP channel family are proton-gated (acid-sensitive) proton channels.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that members of the OTOP channel family are proton-gated (acid-sensitive) proton channels and that the gating apparatus is distributed across multiple extracellular regions within both the N and C domains of the channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on kinetic analysis (Figure 4), slope conductance measurements (Figure 5), and pH imaging (Figure 3).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "9f3c1ac1-a979-4dc1-8aa8-20a9f6f5ed88",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C14",
+      "claim": "The gating apparatus of OTOP channels is distributed across multiple extracellular regions within both the N and C domains.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that members of the OTOP channel family are proton-gated (acid-sensitive) proton channels and that the gating apparatus is distributed across multiple extracellular regions within both the N and C domains of the channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by chimera experiments showing that linkers in both N and C domains affect gating (Figure 6, Figure 7).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "5c14710f-bd85-47e6-8a46-689de76e695d",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C15",
+      "claim": "OTOP channels are expressed in the vertebrate vestibular and digestive systems.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the taste system, OTOP channels are expressed in the vertebrate vestibular and digestive systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior expression studies (Tu et al., 2018; Parikh et al., 2019; Qu et al., 2019; Yang et al., 2019a).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "c60dac5f-f9da-4fa7-955d-bc875e6b091a",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C16",
+      "claim": "OTOP1 was identified as the product of a gene mutated in a murine vestibular disorder.",
+      "claim_type": "EXPLICIT",
+      "source": "The founding member of the OTOP family, mOTOP1, was identified as the product of a gene mutated in a murine vestibular disorder (Hurle et al., 2003; Hughes et al., 2004) and was subsequently shown to form a proton channel that functions as a receptor for sour taste in vertebrates (Tu et al., 2018; Teng et al., 2019; Zhang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "0d79df10-961e-4726-b416-fdc00a42134a",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C17",
+      "claim": "OTOP1 forms a proton channel that functions as a receptor for sour taste in vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "The founding member of the OTOP family, mOTOP1, was identified as the product of a gene mutated in a murine vestibular disorder (Hurle et al., 2003; Hughes et al., 2004) and was subsequently shown to form a proton channel that functions as a receptor for sour taste in vertebrates (Tu et al., 2018; Teng et al., 2019; Zhang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "782b9fdf-e2b9-4d26-b811-0a193db6bef2",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C18",
+      "claim": "Most vertebrate genomes encode OTOP2 and OTOP3 proteins that also form proton channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Most vertebrate genomes encode two related proteins, OTOP2 and OTOP3, that also form proton channels (Tu et al., 2018) and are expressed in a diverse array of tissues, including in the digestive tract, where mutations in the corresponding genes have been linked to disease (Tu et al., 2018; Parikh et al., 2019; Qu et al., 2019; Yang et al., 2019a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "f093cc9c-3dfc-4fb1-9255-4a5646cfbf8a",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C19",
+      "claim": "OTOP2 and OTOP3 are expressed in the digestive tract.",
+      "claim_type": "EXPLICIT",
+      "source": "Most vertebrate genomes encode two related proteins, OTOP2 and OTOP3, that also form proton channels (Tu et al., 2018) and are expressed in a diverse array of tissues, including in the digestive tract, where mutations in the corresponding genes have been linked to disease (Tu et al., 2018; Parikh et al., 2019; Qu et al., 2019; Yang et al., 2019a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "5f152c39-9e2d-461e-9f9c-fc50c38ace45",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C20",
+      "claim": "Mutations in OTOP2 and OTOP3 genes have been linked to disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Most vertebrate genomes encode two related proteins, OTOP2 and OTOP3, that also form proton channels (Tu et al., 2018) and are expressed in a diverse array of tissues, including in the digestive tract, where mutations in the corresponding genes have been linked to disease (Tu et al., 2018; Parikh et al., 2019; Qu et al., 2019; Yang et al., 2019a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "e87c3a2e-21a6-45fc-bb68-ed9f09552415",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C21",
+      "claim": "Functional OTOP channels are conserved across species, including in invertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional OTOP channels are conserved across species, including in invertebrates, where they play roles in acid sensing and biomineralization (Hurle et al., 2011; Tu et al., 2018; Chang et al., 2021; Ganguly et al., 2021; Mi et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "8f918f74-5c7a-4607-b49d-2ce8405a1b7f",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C22",
+      "claim": "OTOP channels in invertebrates play roles in acid sensing and biomineralization.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional OTOP channels are conserved across species, including in invertebrates, where they play roles in acid sensing and biomineralization (Hurle et al., 2011; Tu et al., 2018; Chang et al., 2021; Ganguly et al., 2021; Mi et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "81ce4d3b-7407-47a2-91a7-beea086f092a",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C23",
+      "claim": "OTOP1 channels are not gated by voltage.",
+      "claim_type": "EXPLICIT",
+      "source": "OTOP1 channels, unlike HV1, are not gated by voltage (Bushman et al., 2015; Tu et al., 2018) but might instead be gated by protons, like Hv1 and M2 (Cherny et al., 1995; Liang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "775bf66f-39e3-46a2-9339-8e9d49e6d431",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C24",
+      "claim": "OTOP1 channels might be gated by protons, like Hv1 and M2.",
+      "claim_type": "EXPLICIT",
+      "source": "OTOP1 channels, unlike HV1, are not gated by voltage (Bushman et al., 2015; Tu et al., 2018) but might instead be gated by protons, like Hv1 and M2 (Cherny et al., 1995; Liang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a hypothesis in the introduction with supporting citations to proton-gated channels.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "5afe9d97-0c1d-4934-a703-43907228363d",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C25",
+      "claim": "All three murine OTOP channels conduct inward proton currents in response to acid stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "All three channels carried inward currents in response to lowering pHo in a Na+-free solution, as previously reported (Tu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by patch-clamp recordings (Figure 1A) and prior studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "7ced8da4-5231-4bf2-b5d3-9befd250a944",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C26",
+      "claim": "The magnitude of OTOP1 currents increases as extracellular pH is lowered from pH 6 to pH 4.5.",
+      "claim_type": "EXPLICIT",
+      "source": "The magnitude of the OTOP1 currents increased as the extracellular pH (pHo) was lowered over a range of pH 6 to pH 4.5, while the magnitude of OTOP2 currents changed very little over the same pH range (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly shown in Figure 1A and quantified in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "488f3380-b590-4b65-b685-03440843dce6",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C27",
+      "claim": "The magnitude of OTOP2 currents changes very little over the pH range of 6 to 4.5.",
+      "claim_type": "EXPLICIT",
+      "source": "The magnitude of the OTOP1 currents increased as the extracellular pH (pHo) was lowered over a range of pH 6 to pH 4.5, while the magnitude of OTOP2 currents changed very little over the same pH range (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly shown in Figure 1A and quantified in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "93fe8e52-a290-4b20-90e9-a3e09f9af436",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C28",
+      "claim": "OTOP3 currents increase steeply over the pH range of 6 to 4.5, with little or no inward currents at pH 6.",
+      "claim_type": "EXPLICIT",
+      "source": "OTOP3 currents increased more steeply over the same range, with little or no inward currents in response to pH 6 (Figure 1A and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly shown in Figure 1A and quantified in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "c8d8b3c0-8c1b-44cb-bd27-32660b559f2c",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C29",
+      "claim": "For all three OTOP channels, currents decay in response to prolonged acid exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "For all three channels, currents decayed in response to prolonged acid exposure, and the rate of current decay was faster as the pHo was lowered (Figure 1A), likely due in part to intracellular accumulation of protons (DeCoursey and Cherny, 1996; Bushman et al., 2015; De-la-Rosa et al., 2016; Tu et al., 2018) (discussed below).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1A and attributed to intracellular proton accumulation based on prior studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "cd90a7fe-8e78-43b9-a753-dd75da268d5a",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C30",
+      "claim": "The rate of OTOP current decay is faster as the extracellular pH is lowered.",
+      "claim_type": "EXPLICIT",
+      "source": "For all three channels, currents decayed in response to prolonged acid exposure, and the rate of current decay was faster as the pHo was lowered (Figure 1A), likely due in part to intracellular accumulation of protons (DeCoursey and Cherny, 1996; Bushman et al., 2015; De-la-Rosa et al., 2016; Tu et al., 2018) (discussed below).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1A and attributed to intracellular proton accumulation based on prior studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "2f942299-011c-42fc-a6df-1c361782b952",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C31",
+      "claim": "OTOP1 channels carry small outward currents in response to alkaline solutions (pH 9-10).",
+      "claim_type": "EXPLICIT",
+      "source": "In OTOP1-expressing cells, we observed a small outward current in response to the alkaline solutions (pH 9\u201310) that was not observed in untransfected cells, which we, therefore, attribute to currents through OTOP1 channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 1B and compared to untransfected cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "62b96a11-749f-4e9a-87a0-38bef2eba46a",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C32",
+      "claim": "OTOP1 channels show a tail current upon return to neutral pH after pH 9 stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In response to the pH 9, but not pH 10 solution, we observed a 'tail current' upon return to neutral pH (for pH 9, Itail = \u2013123+/-20 pA, n=5; for pH 10, Itail = \u201336+/-11 pA); this may reflect cytosolic H+ depletion during the pH 9 stimulus, creating a driving force for proton entry through open OTOP1 channels that subsequently close when the pH was restored to 7.4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the data and interpreted based on understanding of proton gradients.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "5ebdc07a-f837-484a-a5d1-c2b5b26f4376",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C33",
+      "claim": "OTOP2 channels carry large outward currents in response to alkaline solutions of pH 9 and pH 10.",
+      "claim_type": "EXPLICIT",
+      "source": "Quite surprisingly, large outward currents were evoked in response to alkaline solutions of pH 9 and pH 10, which were similar in magnitude to the inward currents evoked in response to the acidic solutions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 1B and quantified in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "69fd2940-f65a-49c2-8e5b-c832e24ae052",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C34",
+      "claim": "OTOP2 channels show changes in holding current in response to near-neutral pH solutions (pH 8 or 7).",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed changes in the holding current in response to solutions at near-neutral pH (pH 8 or 7), suggesting that the channels are open at the resting pHo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the data (Figure 1B) and interpreted as evidence of channel activity at neutral pH.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "91b4235c-0347-459a-a012-4daf3993d913",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C35",
+      "claim": "OTOP2 channels are open at resting extracellular pH.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed changes in the holding current in response to solutions at near-neutral pH (pH 8 or 7), suggesting that the channels are open at the resting pHo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from changes in holding current and later confirmed by Zn2+ sensitivity experiments (Figure 2C).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "84ff224e-fe1b-40c3-aadd-14e9108b9404",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C36",
+      "claim": "OTOP2 channels show changes in currents in response to changes in extracellular pH over the entire pH range tested (pH 10 to pH 5).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we observed changes in OTOP2 currents in response to changes in extracellular pH over the entire pH range tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 1B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "247db227-7961-48bc-aaad-424f03e4faa4",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C37",
+      "claim": "OTOP3 channels are active over a narrower pH range than OTOP1 and OTOP2 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "OTOP3 currents were active over a narrower pH range than OTOP1 and OTOP2 currents (Figure 1B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "c06a07d8-9cfb-4d90-8081-ec95e59536b6",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C38",
+      "claim": "OTOP3 channels are activated steeply below pH 6.",
+      "claim_type": "EXPLICIT",
+      "source": "They were activated steeply below pH 6, and no outward currents were observed in response to any of the alkaline stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 1B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "3c3568b7-efeb-4683-9e04-525996a8c453",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C39",
+      "claim": "OTOP3 channels do not conduct outward currents in response to alkaline stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "They were activated steeply below pH 6, and no outward currents were observed in response to any of the alkaline stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 1B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "9944035a-dc5d-448b-9ba1-0f9bd7f5d964",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C40",
+      "claim": "OTOP1 has a sharp threshold for activation of approximately pH 6.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest a sharp threshold for activating OTOP1 and OTOP3 channels of ~pH 6 (OTOP1) and pH 5.5. (OTOP3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data in Figure 1 and Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "7ebdca3b-5aac-4186-808c-83273bde4974",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C41",
+      "claim": "OTOP3 has a sharp threshold for activation of approximately pH 5.5.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest a sharp threshold for activating OTOP1 and OTOP3 channels of ~pH 6 (OTOP1) and pH 5.5. (OTOP3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data in Figure 1 and Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "ca8ef14d-5e27-4d08-b797-de58244facca",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C42",
+      "claim": "Both OTOP1 and OTOP2 channels can conduct outward currents.",
+      "claim_type": "EXPLICIT",
+      "source": "They also show that both OTOP1 and OTOP2 channels can conduct outward currents, which may be physiologically relevant under some circumstances.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 1B and Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "67a9c49c-449b-478c-8c10-de2ce00da6bf",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C43",
+      "claim": "OTOP1 is highly selective for H+ over Na+, by a factor of at least 10^5 fold.",
+      "claim_type": "EXPLICIT",
+      "source": "OTOP1 is highly selective for H+ over Na+, by a factor of at least 105 fold (Tu et al., 2018), and currents carried by OTOP3 follow the expectations for a proton-selective current, such as a shift in the reversal potential that follows the equilibrium potential for the H+ ion (Tu et al., 2018; Chen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "9529573c-30c1-462c-baef-6817fa89d44a",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C44",
+      "claim": "OTOP3 currents follow the expectations for a proton-selective current.",
+      "claim_type": "EXPLICIT",
+      "source": "OTOP1 is highly selective for H+ over Na+, by a factor of at least 105 fold (Tu et al., 2018), and currents carried by OTOP3 follow the expectations for a proton-selective current, such as a shift in the reversal potential that follows the equilibrium potential for the H+ ion (Tu et al., 2018; Chen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "ccc9406e-aa61-400f-be46-0d1cc40bf0b3",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C45",
+      "claim": "OTOP2 is known to permeate protons.",
+      "claim_type": "EXPLICIT",
+      "source": "OTOP2 is known to permeate protons (Tu et al., 2018), but selectivity for protons was not previously measured.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "892a3827-fb27-413b-b5d7-21e4a65f1807",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C46",
+      "claim": "OTOP2 current magnitude does not change when Na+ concentration in the extracellular solution is changed.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed no change in the magnitude of the currents when the concentrations of either Na+ or Cl- in the extracellular solution were changed (Figure 2A), indicating that OTOP2 is not permeable to either ion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "ee82e625-9f54-4687-a0c1-caec199f95ff",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C47",
+      "claim": "OTOP2 current magnitude does not change when Cl- concentration in the extracellular solution is changed.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed no change in the magnitude of the currents when the concentrations of either Na+ or Cl- in the extracellular solution were changed (Figure 2A), indicating that OTOP2 is not permeable to either ion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "09059aa8-ea68-4a30-b08f-7260cdc81b03",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C48",
+      "claim": "OTOP2 is not permeable to Na+ or Cl-.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed no change in the magnitude of the currents when the concentrations of either Na+ or Cl- in the extracellular solution were changed (Figure 2A), indicating that OTOP2 is not permeable to either ion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from ion substitution experiments (Figure 2A).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "04a59512-d5e8-43d9-ae2a-36c5c23a6e58",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C49",
+      "claim": "The reversal potential of OTOP2 currents changes approximately 59 mV per pH unit as a function of \u0394pH.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments showed that Erev changed ~59 mV/pH as expected for an H+-selective ion channel (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2B and is consistent with the Nernst equation for protons.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "1127d8f9-9bd8-4c71-a3f1-44674144f51a",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C50",
+      "claim": "OTOP2 is selective for protons.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we conclude that OTOP2 is selective for protons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded based on ion substitution and reversal potential measurements (Figure 2A, B).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "a1df184e-1750-4d12-9fa6-eda10b8cb1dd",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C51",
+      "claim": "OTOP2 is a proton-selective ion channel open at neutral pH.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we concluded that OTOP2 is a proton-selective ion channel open at neutral pH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded based on selectivity measurements and Zn2+ sensitivity of resting currents (Figure 2).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "1f5724fc-48a9-4a76-922d-74f50865e8be",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C52",
+      "claim": "OTOP2 resting currents at neutral pH are inhibited by Zn2+ with an IC50 of 5.6 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, OTOP2 currents at neutral pH were inhibited by Zn2+ with an IC50 of 5.6 \u03bcM (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "2d290a17-1998-49f7-b1de-b65b63dd0e03",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C53",
+      "claim": "Cells expressing OTOP1, OTOP2, and OTOP3 respond to acidic solutions with large changes in intracellular pH.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells expressing each of the three OTOP channels responded to the acidic solutions with large changes in intracellular pH, a response not observed in control cells (Figure 3A \u2013 D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3A-D using pHluorin imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "129763e7-f03a-4e8f-ae24-2b59610359a0",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C54",
+      "claim": "Changes in intracellular pH in response to alkaline solution (pHo = 8.5) are observed in OTOP1- and OTOP2-expressing cells but not in OTOP3-expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, we also observed changes in intracellular pH in response to an alkaline solution (pHo = 8.5) in both OTOP1- and OTOP2-expressing cells but not in OTOP3-expressing cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "a3748f86-7c87-4ee4-8340-74cae80f6722",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C55",
+      "claim": "The response of OTOP3-expressing cells to acidic solutions (pH 6 or pH 5) appears slower than that of OTOP1 or OTOP2-expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We also noted differences in the time course of the response to acidic solutions (pH 6 or pH 5) in cells expressing the three OTOP channels. Notably, the response of OTOP3-expressing cells appeared slower than that of OTOP1 or OTOP2-expressing cells (compare Figure 3C with 3 A and 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in Figure 3 and attributed to smaller currents and slower kinetics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "cb754a43-23f7-4972-961c-f360267c8299",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C56",
+      "claim": "OTOP1 and OTOP2 can conduct outward proton currents in response to alkaline extracellular solutions.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these data support the conclusion that OTOP1 and OTOP2 can conduct outward proton currents in response to alkaline extracellular solution solutions, while all three channels carry inward proton currents in response to acidic stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by patch-clamp (Figure 1) and pH imaging (Figure 3) data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "d4e9e7b5-f92d-4ccb-8b8b-8bc725223074",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C57",
+      "claim": "All three OTOP channels carry inward proton currents in response to acidic stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these data support the conclusion that OTOP1 and OTOP2 can conduct outward proton currents in response to alkaline extracellular solution solutions, while all three channels carry inward proton currents in response to acidic stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by patch-clamp (Figure 1) and pH imaging (Figure 3) data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "be6fd2f7-0012-4f5a-bb34-234d129d64a1",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C58",
+      "claim": "OTOP2 currents show faster activation than OTOP1 currents.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, OTOP2 currents showed faster activation than OTOP1 currents, while OTOP3 currents were considerably slower.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 4A and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "0e74bfc5-e20b-45d4-a691-db136e3363a9",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C59",
+      "claim": "OTOP3 currents show considerably slower activation than OTOP1 and OTOP2 currents.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, OTOP2 currents showed faster activation than OTOP1 currents, while OTOP3 currents were considerably slower.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 4A and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "035eff44-ddc5-4f04-9612-066b30e04d95",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C60",
+      "claim": "The time constant for activation of OTOP2 in response to pH 5.5 is 12.0\u00b11.6 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "The time constant for activation of OTOP2 was 12.0\u00b11.6ms (n=10) which was slightly faster than the rate of solution exchange as measured using cells expressing an inward rectifier K+ channel and solutions that varied in potassium concentration (Figure 4B and C; \u03c4=26.1 \u00b1 2.9ms).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured from exponential fits to current traces (Figure 4A, C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "608de74c-1495-4520-abc4-f804ef48b5d7",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C61",
+      "claim": "The time constant for activation of OTOP1 in response to pH 5.5 is 142.7\u00b113.5 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Time constants for activation of OTOP1 and OTOP3 were 142.7\u00b113.5ms (n=6) and 1098.0\u00b183.0ms (n=6), respectively, considerably slower than the solution exchange suggesting that both are gated by extracellular protons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured from exponential fits to current traces (Figure 4A, C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "1657aa0f-8df6-4c52-aa27-2e79e8c83c64",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C62",
+      "claim": "The time constant for activation of OTOP3 in response to pH 5.5 is 1098.0\u00b183.0 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Time constants for activation of OTOP1 and OTOP3 were 142.7\u00b113.5ms (n=6) and 1098.0\u00b183.0ms (n=6), respectively, considerably slower than the solution exchange suggesting that both are gated by extracellular protons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured from exponential fits to current traces (Figure 4A, C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "211915e0-a4ff-4857-8f29-c56667246952",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C63",
+      "claim": "The activation time constants of OTOP1 and OTOP3 are considerably slower than the solution exchange, suggesting that both are gated by extracellular protons.",
+      "claim_type": "EXPLICIT",
+      "source": "Time constants for activation of OTOP1 and OTOP3 were 142.7\u00b113.5ms (n=6) and 1098.0\u00b183.0ms (n=6), respectively, considerably slower than the solution exchange suggesting that both are gated by extracellular protons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparison of activation kinetics to solution exchange rate (Figure 4C).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "b5da1ac0-eaf4-4339-b9b2-180134de1c3f",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C64",
+      "claim": "The time constant for deactivation of OTOP1, OTOP2, and OTOP3 currents are similar to the rate of solution exchange.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the time constant for deactivation of OTOP1, OTOP2, and OTOP3 currents were similar to the rate of the solution exchange (\u03c4=18.6 \u00b1 4.4ms, n=6, 19.3\u00b12.8ms, n=9, and 20.9\u00b13.0ms, n=13, respectively; Figure 4A and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured from exponential fits to current traces (Figure 4A, C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "50b1398b-91a3-43c1-8eb1-7da8de0620fc",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C65",
+      "claim": "The activation rate of OTOP1 and OTOP3 currents increases as the extracellular pH is lowered.",
+      "claim_type": "EXPLICIT",
+      "source": "The activation rate of OTOP1 and OTOP3 currents increased as the pHo was lowered (Figure 4D and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4D and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "3ca846c2-c74e-4509-ba63-5d5832701ce8",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C66",
+      "claim": "The activation rate of OTOP2 currents is insensitive to extracellular pH over the range tested.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the activation rate of the OTOP2 currents was insensitive to the extracellular pH over this range, consistent with an interpretation that the channels are open at neutral pH, and lowering the pH does not further increase channel open probability (Figure 4D and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4D and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "c35a50da-3680-4380-a977-2a87b2e840d4",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C67",
+      "claim": "The decay rate of OTOP currents upon return to neutral pH does not vary as a function of the pH of the stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "The decay rate of the currents upon return to neutral pH did not vary as a function of the pH of the stimulus for any of the three channels (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "6219496e-58e9-4dd3-bd9c-b022bfe38e6e",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C68",
+      "claim": "The slow, pH-dependent kinetics of currents carried by OTOP1 and OTOP3 channels provides strong evidence that they are gated by extracellular protons.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the slow, pH-dependent kinetics of currents carried by OTOP1 and OTOP3 channels provides strong evidence that they are gated by extracellular protons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded based on kinetic analysis (Figure 4).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "d548951b-6e4b-48ec-a2f6-2b69807d7923",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C69",
+      "claim": "In OTOP1-expressing cells, the slope conductance varies as a function of extracellular pH, dramatically increasing when the extracellular pH is lowered below pHo = 6.0.",
+      "claim_type": "EXPLICIT",
+      "source": "In OTOP1-expressing cells, the slope conductance varied as a function of extracellular pH, dramatically increasing when the extracellular pH was lowered below pHo = 6.0 (Figure 5B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "9a1ebbec-b7b7-4b6e-ae4c-4153e745bbf9",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C70",
+      "claim": "OTOP1 slope conductance increases when the extracellular pH is made more alkaline (pH 9.0).",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed an increase in the slope conductance when the pHo was made more alkaline, consistent with data in Figure 1 showing that an alkaline pHo of 9.0 can be activating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 5C and is consistent with Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "fb7c0ae5-0234-496d-8675-67e8884184db",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C71",
+      "claim": "In OTOP2-expressing cells, the slope conductance is highest at alkaline pH (pHo = 10) and decreases as the pH is lowered.",
+      "claim_type": "EXPLICIT",
+      "source": "In OTOP2-expressing cells, the slope conductance was highest in alkaline pH (pHo = 10) and decreased as the pHo was lowered (Figure 5B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "c8d44e37-50a3-4fb3-8e87-53e02ca7fbf5",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C72",
+      "claim": "OTOP3 slope conductance remains very small when extracellular pH is between 10 and 6 and increases drastically when pHo is 5.",
+      "claim_type": "EXPLICIT",
+      "source": "The slope conductance remained very small when extracellular pH was between 10 and 6 and increased drastically when pHo was 5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 5B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "d6883fcd-6346-4f7a-a82e-da939e38dd8c",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C73",
+      "claim": "Slope conductance data support the conclusion that OTOP1 and OTOP3 are gated by extracellular protons, while OTOP2 is conductive over a broad pH range.",
+      "claim_type": "EXPLICIT",
+      "source": "These data support the conclusion that OTOP1 and OTOP3 are gated by extracellular protons, while OTOP2 is conductive over a broad pH range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded based on slope conductance measurements (Figure 5).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "a8167186-dc16-42e9-8b46-edc350797b09",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C74",
+      "claim": "For OTOP1, the shift in driving force mostly accounts for the decay of currents during acid stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "As seen in Figure 5\u2014figure supplement 1C, the shift in driving force mostly accounts for the decay of OTOP1 currents.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5\u2014figure supplement 1C by comparing predicted and measured currents.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "97fbbf5e-da74-4b11-b514-48a859ec81df",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C75",
+      "claim": "For OTOP2, the decay in current magnitude is much greater than can be explained by a change in driving force.",
+      "claim_type": "EXPLICIT",
+      "source": "For OTOP2, the decays in current magnitudes is much greater than can be explained by a change in driving force, suggesting that intracellular acidification may directly inhibit OTOP2 channel activity or conductance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 5\u2014figure supplement 1C and interpreted as evidence of direct inhibition.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "5a462242-ebb1-4e93-a36b-f2f87f92ab6a",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C76",
+      "claim": "Intracellular acidification may directly inhibit OTOP2 channel activity or conductance.",
+      "claim_type": "EXPLICIT",
+      "source": "For OTOP2, the decays in current magnitudes is much greater than can be explained by a change in driving force, suggesting that intracellular acidification may directly inhibit OTOP2 channel activity or conductance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the discrepancy between predicted and measured currents (Figure 5\u2014figure supplement 1C).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "01c53cf3-fc61-48e3-a6a3-4101c0957d73",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C77",
+      "claim": "OTOP channels contain twelve transmembrane domains (S1-S12), with N and C termini located intracellularly.",
+      "claim_type": "EXPLICIT",
+      "source": "OTOP channels contain twelve transmembrane domains (S1-S12), with N and C termini located intracellularly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on structural studies (Chen et al., 2019; Saotome et al., 2019).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "dfe69f42-3776-4443-ab3c-813553e154d2",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C78",
+      "claim": "Transmembrane domains 1\u20136 constitute the structurally homologous 'N' domain of OTOP channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The transmembrane domains 1\u20136 and 7\u201312 respectively constitute the structurally homologous 'N' and 'C' domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on structural studies (Chen et al., 2019; Saotome et al., 2019).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "dd081122-1b3d-4add-b5f1-3ec69d7f4976",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C79",
+      "claim": "Transmembrane domains 7\u201312 constitute the structurally homologous 'C' domain of OTOP channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The transmembrane domains 1\u20136 and 7\u201312 respectively constitute the structurally homologous 'N' and 'C' domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on structural studies (Chen et al., 2019; Saotome et al., 2019).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "2d0a0efa-ad7a-49ed-a1f9-7626fccd5831",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C80",
+      "claim": "Replacement of the OTOP2 S5-S6 linker with that from OTOP3 nearly eliminates outward currents in response to alkaline stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the replacement of the OTOP2 S5-S6 linker (L5-6) with that from OTOP3 nearly eliminated the outward currents in response to alkaline stimuli and reduced the response to the mildly acidic stimulus (pH 6) but had little effect on the magnitude or kinetics of the inward currents elicited in response to the pH 5 stimulus (Figure 6A\u2013C; OTOP2/OTOP3(L5-6)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "60bca704-e968-458a-9682-1143dec67c7d",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C81",
+      "claim": "The OTOP3/OTOP2(L3-4) chimera conducts outward currents in response to extracellular alkalinization.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, the most striking was an OTOP3 N domain chimera with the L3-4 of OTOP2, which conducted outward currents in response to extracellular alkalinization (Figure 6F\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6F-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "2312aff8-1307-486d-927a-819d0b72fab2",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C82",
+      "claim": "The OTOP3/OTOP2(L3-4) chimera activates at a more mild pH than OTOP3 channels and with faster kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, this chimera activated at a more mild pH than OTOP3 channels and with faster kinetics (Figure 7C and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7C and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "55efdf9b-1ce5-43a1-b3be-405b66c1ecd5",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C83",
+      "claim": "The simple swap of the 3\u20134 linker confers a partial gating phenotype of the donor, OTOP2.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the simple swap of the 3\u20134 linker conferred a partial gating phenotype of the donor, OTOP2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded based on the properties of the OTOP3/OTOP2(L3-4) chimera (Figure 6, 7).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "db615094-94da-49da-a271-9ec2b22e4f0c",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C84",
+      "claim": "OTOP3 C domain chimeras with OTOP2 linkers activate more rapidly and at higher pH than wildtype OTOP3.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the C domain chimeras also produced apparent changes in gating (Figure 7D and F): all three chimeras activated more rapidly and at higher pH, adopting some features from the donor channel (OTOP2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7D and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "6316efc6-8272-42f5-a03d-68bac9ee25d9",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C85",
+      "claim": "OTOP3 C domain chimeras retain the steep pH sensitivity of OTOP3 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "But they retained the steep pH sensitivity of the OTOP3 channels and did not support proton efflux in response to alkaline stimuli like OTOP2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the data for C domain chimeras (Figure 6, 7).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "2daba857-e369-433c-98fe-b55ab1c6dd4f",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C86",
+      "claim": "OTOP3 C domain chimeras do not support proton efflux in response to alkaline stimuli like OTOP2.",
+      "claim_type": "EXPLICIT",
+      "source": "But they retained the steep pH sensitivity of the OTOP3 channels and did not support proton efflux in response to alkaline stimuli like OTOP2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the data for C domain chimeras (Figure 6).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "59204a98-c386-49d8-ab9b-c4251c8b920e",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C87",
+      "claim": "The structure of OTOP2 channels has not yet been resolved experimentally.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of OTOP2 channels has not yet been resolved experimentally, and the cryo-EM structures of OTOP1 and OTOP3 channels do not allow the visualization of the S5-6 linker (Chen et al., 2019; Saotome et al., 2019), possibly because the linker adopts multiple conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to existing structural studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "c8b68e2d-6fb8-4757-bd25-56a8979ddf50",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C88",
+      "claim": "The cryo-EM structures of OTOP1 and OTOP3 channels do not allow the visualization of the S5-6 linker.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of OTOP2 channels has not yet been resolved experimentally, and the cryo-EM structures of OTOP1 and OTOP3 channels do not allow the visualization of the S5-6 linker (Chen et al., 2019; Saotome et al., 2019), possibly because the linker adopts multiple conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to existing structural studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "8558a162-63a6-4dee-bd29-b038defd102e",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C89",
+      "claim": "The S5-6 linker of OTOP channels may adopt multiple conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of OTOP2 channels has not yet been resolved experimentally, and the cryo-EM structures of OTOP1 and OTOP3 channels do not allow the visualization of the S5-6 linker (Chen et al., 2019; Saotome et al., 2019), possibly because the linker adopts multiple conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the inability to visualize the linker in cryo-EM structures.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "72844fed-c0e2-4e41-bc81-0cc4f4c71895",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C90",
+      "claim": "AlphaFold predicted structures of murine OTOP1, OTOP2, and OTOP3 show excellent agreement with cryoEM structures where available.",
+      "claim_type": "EXPLICIT",
+      "source": "We first verified that the AlphaFold structures were reliable by comparing them to the cryoEM structures where available (e.g. for DrOTOP1 and GgOTOP3). This analysis revealed excellent agreement between the observed and expected structures (Figure 8\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 8\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "0bc34eff-2f6d-4a9e-a0a8-9e6f1ef8a3c4",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C91",
+      "claim": "The 5\u20136 linker of OTOP2 is longer than that of OTOP3.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the 5\u20136 linker of OTOP2 is longer, and transmembrane domain 5 (TM5) of OTOP2 adopts a helical structure with a pronounced kink, whereas that of OTOP3 is straight and rod-like.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in AlphaFold predicted structures (Figure 8).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "03c54ef8-852e-4814-8a3f-19783537629d",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C92",
+      "claim": "Transmembrane domain 5 (TM5) of OTOP2 adopts a helical structure with a pronounced kink.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the 5\u20136 linker of OTOP2 is longer, and transmembrane domain 5 (TM5) of OTOP2 adopts a helical structure with a pronounced kink, whereas that of OTOP3 is straight and rod-like.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in AlphaFold predicted structures (Figure 8).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "f849d3c9-26bf-4442-b536-8670124b27e8",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C93",
+      "claim": "Transmembrane domain 5 (TM5) of OTOP3 is straight and rod-like.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the 5\u20136 linker of OTOP2 is longer, and transmembrane domain 5 (TM5) of OTOP2 adopts a helical structure with a pronounced kink, whereas that of OTOP3 is straight and rod-like.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in AlphaFold predicted structures (Figure 8).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "c3af95b4-d1fc-438b-9cad-bdd304c75ac3",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C94",
+      "claim": "Extracellular linkers participate in the gating of OTOP channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, we conclude that extracellular linkers participate in the gating of OTOP channels and that the gating apparatus is distributed across multiple extracellular regions within both the N and C domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded based on chimera experiments (Figure 6, 7).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "5d7f7c25-9e4c-4902-b9d6-876113bc1b3f",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C95",
+      "claim": "OTOP channels adopt a novel fold with twelve transmembrane alpha-helices organized into two structurally homologous six-helix domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The recent cryo-EM structures of OTOP1 and OTOP3 channels have revealed that the channels adopt a novel fold, with twelve transmembrane alpha-helices organized into two structurally homologous six-helix domains (N and C domains) (Chen et al., 2019; Saotome et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to structural studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "5b151e51-32df-49fe-8dee-c78be6fba6b2",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C96",
+      "claim": "As a dimer, OTOP channels adopt a pseudo-tetrameric structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, as a dimer, the channels adopt a pseudo-tetrameric structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on structural studies (Chen et al., 2019; Saotome et al., 2019).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "655a4d0d-be43-4fbb-98be-a58044465c87",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C97",
+      "claim": "The central cavity of OTOP channels is filled with cholesterol-like molecules and cannot mediate ion conduction.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in contrast to most ion channels where the subunits come together to form a shared pore, the central cavity of OTOP channels is filled with cholesterol-like molecules and, therefore, cannot mediate ion conduction (Saotome et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to structural studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "07d2dff7-025e-47e1-ae68-ee1e322e4f62",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C98",
+      "claim": "Three putative pathways for protons have been identified in OTOP channel structures: one each in the N and C domains and another at the intrasubunit interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Three putative pathways for protons have been identified in the structures: one each in the N and C domains and another at the interface of N and C domains (intrasubunit interface).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on structural studies (Chen et al., 2019; Saotome et al., 2019).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "97eacdad-f2c5-4014-b9dc-50643809abbe",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C99",
+      "claim": "Mutations of conserved residues E267 and H574 in ZfOTOP1 at the intrasubunit interface are required for function but not subunit assembly or trafficking.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in each putative permeation pathway that cause loss of function have been identified, including mutations of conserved residues (E267 and H574 in ZfOTOP1) at the intrasubunit interface that are required for function but not subunit assembly or trafficking (Saotome et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "d9884499-c473-4f64-a073-ffadccf24342",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C100",
+      "claim": "OTOP1 channels show a biphasic response to extracellular pH.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, our observation that OTOP1 channels show a biphasic response to extracellular pH could be explained by two pores that open over different pH ranges, a hypothesis that would need to be tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the data (Figure 5C) and discussed as a possible explanation.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "6d5844f8-771f-4685-9097-cff151e8e0e1",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C101",
+      "claim": "The N domain of OTOP channels may contain the pore that is active over a broad pH range or contains a sensor that opens a common pore over a large pH range.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the N domain either contains the pore that is active over a broad pH range or contains a sensor that opens a common pore over a large pH range (for example, at the intrasubunit interface).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from chimera data showing that N domain swaps affect alkaline pH responses (Figure 6).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "6c18ea40-f8c4-4c15-8581-3240fb50f027",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C102",
+      "claim": "Activation of OTOP3 may involve a pH-dependent conformational change within the C domain linkers that otherwise inhibit its activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that activation of OTOP3 may involve a pH-dependent conformational change within the C domain linkers that otherwise inhibit its activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from chimera data showing that C domain swaps change OTOP3 activation kinetics (Figure 7).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "7dab4c71-c460-48f9-b1b0-ba2ed5088200",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C103",
+      "claim": "OTOP1 currents were first characterized in taste receptor cells, where pH sensitivity, proton selectivity, and inhibition by Zn2+ were described.",
+      "claim_type": "EXPLICIT",
+      "source": "OTOP1 currents were first characterized in taste receptor cells, where pH sensitivity, proton selectivity, and inhibition by Zn2+ were described (Chang et al., 2010; Bushman et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "77344566-8f04-4f5a-bc0e-dc731f74acd3",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C104",
+      "claim": "M2 is a viral protein involved in the acidification of the influenza virus interior.",
+      "claim_type": "EXPLICIT",
+      "source": "The two best characterized proton-selective ion channels are M2, a viral protein involved in the acidification of the influenza virus interior, and Hv1, a voltage-gated ion channel that extrudes protons during the phagocyte respiratory burst to maintain pH (Pinto et al., 1992; Ramsey et al., 2006; Sasaki et al., 2006; Morgan et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "76f02fb4-bf0e-4d5a-8e6c-56db14b054ab",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C105",
+      "claim": "Hv1 is a voltage-gated ion channel that extrudes protons during the phagocyte respiratory burst to maintain pH.",
+      "claim_type": "EXPLICIT",
+      "source": "The two best characterized proton-selective ion channels are M2, a viral protein involved in the acidification of the influenza virus interior, and Hv1, a voltage-gated ion channel that extrudes protons during the phagocyte respiratory burst to maintain pH (Pinto et al., 1992; Ramsey et al., 2006; Sasaki et al., 2006; Morgan et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "45ebdb67-a4ab-47b7-88be-fca3ad44d20b",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C106",
+      "claim": "Hv1 shows a shift in voltage dependence as a function of pH.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the only other plasmalemma proton channel in eukaryotes, the voltage-gated proton channel Hv1, shows a shift in voltage dependence as a function of pH (Ramsey et al., 2006; Decoursey, 2012), while a lysosomal K+ channel, TMEM175 was recently shown to function as a proton-activated proton channel (Cang et al., 2015; Hu et al., 2022; Zheng et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "52821847-2d00-4041-a811-29e4f7325ad3",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "claim_id": "C107",
+      "claim": "TMEM175 was recently shown to function as a proton-activated proton channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the only other plasmalemma proton channel in eukaryotes, the voltage-gated proton channel Hv1, shows a shift in voltage dependence as a function of pH (Ramsey et al., 2006; Decoursey, 2012), while a lysosomal K+ channel, TMEM175 was recently shown to function as a proton-activated proton channel (Cang et al., 2015; Hu et al., 2022; Zheng et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to recent work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "80e39922-0ffe-4dac-ae3d-751d44f0c1f0",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the background and context for OTOP channels, including their conservation, structural features, and prior characterization. OTOP channels are proton-selective ion channels conserved across vertebrates and invertebrates with a novel fold consisting of twelve transmembrane domains organized into N and C domains. OTOP1 functions as a sour taste receptor, and the three vertebrate OTOP channels (OTOP1, OTOP2, OTOP3) are expressed in diverse tissues including vestibular and digestive systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are well-supported by citations to prior work (Tu et al., 2018; Chen et al., 2019; Saotome et al., 2019) and represent established knowledge in the field. The structural features are confirmed by cryo-EM studies, and the functional roles are documented in multiple independent studies. This background information provides appropriate context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "7160d3cd-ec34-4a5e-9ab5-277c063061f5",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "OTOP1 and OTOP3 are steeply activated by extracellular protons with thresholds of approximately pH 6.0 and pH 5.5, respectively, and their activation kinetics are pH-dependent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are strongly supported by multiple independent lines of evidence including patch-clamp recordings (Figure 1), kinetic analysis (Figure 4), and slope conductance measurements (Figure 5). The pH thresholds are consistently observed across different experimental approaches, and the pH-dependent kinetics provide direct evidence of proton gating.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "f51b31c9-c7d4-4df3-8abd-f1d3394c3c85",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "OTOP2 channels are broadly active over a large pH range (pH 5 to pH 10) and carry outward currents in response to extracellular alkalinization (>pH 9.0).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This result is well-supported by patch-clamp recordings (Figure 1B, C), pH imaging experiments (Figure 3B), and slope conductance measurements (Figure 5). The data consistently show that OTOP2 responds to both acidic and alkaline stimuli, distinguishing it from OTOP1 and OTOP3. The outward currents at alkaline pH are a novel and striking finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "c34deff8-7393-4845-b742-b7ad427df9cc",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "OTOP3 channels are active over a narrower pH range than OTOP1 and OTOP2, being activated steeply below pH 6 with no outward currents in response to alkaline stimuli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This is directly demonstrated by patch-clamp recordings (Figure 1B, C) and pH imaging (Figure 3C). The narrow pH range of OTOP3 activation is consistently observed across multiple experimental approaches and distinguishes it from the other two channels.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "53a7cd99-47fd-4aed-9f60-3d38b4a43557",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "All three murine OTOP channels conduct inward proton currents in response to acid stimuli, but show distinct pH-response profiles. OTOP1 currents increase as pH is lowered from 6 to 4.5 and show small outward currents at alkaline pH with tail currents upon return to neutral pH. OTOP2 currents change little over pH 6-4.5 but show large outward currents at pH 9-10 and changes in holding current at near-neutral pH, suggesting the channels are open at resting pH.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These detailed characterizations are directly shown in Figure 1 and quantified in Figure 1C. The observations are internally consistent and provide the foundation for subsequent mechanistic studies. The tail current observation for OTOP1 is appropriately interpreted as evidence of cytosolic H+ depletion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "90cfde59-5be2-46f2-998d-520beabbfbe1",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "OTOP2 is a proton-selective ion channel that is open at neutral pH. Ion substitution experiments show no permeability to Na+ or Cl-, and the reversal potential changes ~59 mV/pH as expected for an H+-selective channel. Resting currents at neutral pH are inhibited by Zn2+ with an IC50 of 5.6 \u03bcM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This result is well-supported by multiple complementary experiments (Figure 2). The ion substitution experiments (Figure 2A) rule out Na+ and Cl- permeability, the reversal potential measurements (Figure 2B) confirm proton selectivity following the Nernst equation, and the Zn2+ sensitivity (Figure 2C) confirms that channels are open at neutral pH. The IC50 value is precisely measured.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "2f6a8261-038d-44f2-9bb2-29f9fe0fb10b",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "pH imaging experiments confirm that cells expressing OTOP1, OTOP2, and OTOP3 respond to acidic solutions with large changes in intracellular pH. OTOP1 and OTOP2, but not OTOP3, show changes in intracellular pH in response to alkaline solution (pH 8.5), confirming that OTOP1 and OTOP2 can conduct outward proton currents while all three channels carry inward proton currents in response to acidic stimuli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The pH imaging data (Figure 3) provide independent confirmation of the patch-clamp results and demonstrate functional proton flux through the channels. The slower response of OTOP3-expressing cells is appropriately attributed to smaller currents and slower kinetics. This orthogonal approach strengthens the conclusions about differential pH gating.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "52a3b621-e36c-4213-8524-4d2f2b086fb7",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Kinetic analysis provides direct evidence that OTOP1 and OTOP3 are gated by extracellular protons. OTOP2 currents activate rapidly (\u03c4=12.0\u00b11.6 ms), similar to solution exchange rate, while OTOP1 (\u03c4=142.7\u00b113.5 ms) and OTOP3 (\u03c4=1098.0\u00b183.0 ms) activate much more slowly. The activation rates of OTOP1 and OTOP3 increase as pH is lowered, while OTOP2 activation is pH-insensitive. Deactivation rates for all three channels are similar to solution exchange rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This is a key result providing direct evidence of pH-dependent gating. The kinetic measurements (Figure 4) are carefully controlled using KIR2.1 as a reference for solution exchange rate. The pH-dependent acceleration of OTOP1 and OTOP3 activation, but not OTOP2, strongly supports the conclusion that OTOP1 and OTOP3 are gated by protons while OTOP2 is constitutively open. The experimental design and analysis are rigorous.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "0eb5038d-8a96-4d3b-8bf1-7ea5cb41cb68",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Slope conductance measurements, which are independent of driving force, confirm that OTOP1 and OTOP3 are gated by extracellular protons while OTOP2 is conductive over a broad pH range. OTOP1 slope conductance increases dramatically below pH 6.0 and also increases at alkaline pH (pH 9.0). OTOP2 slope conductance is highest at alkaline pH (pH 10) and decreases as pH is lowered. OTOP3 slope conductance remains very small between pH 10-6 and increases drastically at pH 5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The slope conductance measurements (Figure 5) provide critical evidence that is independent of driving force considerations. This approach elegantly addresses the challenge of studying proton channel gating where changing pH affects both gating and driving force. The results are consistent with the kinetic data and strengthen the conclusion about differential pH-dependent gating.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "e6d81cbc-0241-4e95-af9d-2ee3d3a61ca9",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "For all three OTOP channels, currents decay in response to prolonged acid exposure, with faster decay at lower pH. For OTOP1, the shift in driving force due to intracellular acidification mostly accounts for current decay. For OTOP2, the decay is much greater than can be explained by driving force changes, suggesting that intracellular acidification may directly inhibit OTOP2 channel activity or conductance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The current decay phenomenon is clearly observed (Figure 1A) and the mechanistic analysis (Figure 5\u2014figure supplement 1) is thoughtful. The comparison of predicted vs. measured currents based on Erev shifts provides quantitative support for the interpretation. However, the conclusion about direct inhibition of OTOP2 by intracellular acidification is somewhat speculative and would benefit from additional experiments (e.g., inside-out patches with controlled intracellular pH).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "3b965a95-6aab-40c8-aef1-7af8570ddaac",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Swapping extracellular linkers between OTOP2 and OTOP3 changes pH-sensitive gating in a domain-specific manner. N domain linker swaps (particularly L5-6 and L3-4) tend to change relative conductance at alkaline pH, while C domain linker swaps tend to change activation rates of OTOP3 currents. The OTOP2/OTOP3(L5-6) chimera nearly eliminates outward currents at alkaline pH, while the OTOP3/OTOP2(L3-4) chimera conducts outward currents and activates at milder pH with faster kinetics. This demonstrates that extracellular linkers participate in gating and that the gating apparatus is distributed across multiple extracellular regions in both N and C domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The chimera experiments (Figures 6 and 7) provide strong evidence for the role of extracellular linkers in pH-dependent gating. The domain-specific effects (N domain affecting alkaline pH responses, C domain affecting activation kinetics) are clearly demonstrated. The OTOP3/OTOP2(L3-4) chimera is particularly striking as it confers a partial OTOP2 phenotype. However, some chimeras were non-functional, limiting the completeness of the analysis. The conclusion about distributed gating apparatus is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "1fff2cdd-781e-4970-a14e-d395abf27f22",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "AlphaFold predicted structures of murine OTOP1, OTOP2, and OTOP3 show excellent agreement with available cryo-EM structures and reveal structural differences that may underlie functional differences. The S5-6 linker of OTOP2 is longer than OTOP3, and TM5 of OTOP2 adopts a helical structure with a pronounced kink while OTOP3 TM5 is straight and rod-like. The S5-6 linker is not visualized in cryo-EM structures, possibly because it adopts multiple conformations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The AlphaFold analysis (Figure 8 and Figure 8\u2014figure supplement 1) is appropriately validated against existing cryo-EM structures showing excellent agreement (RMSD values provided). The structural differences between OTOP2 and OTOP3 in the S5-6 region are clearly shown and provide a structural basis for understanding the functional effects of the L5-6 swap. However, the interpretation that the S5-6 linker adopts multiple conformations is speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "7e0eedcc-83ea-486d-a309-7b5de64de92b",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Members of the OTOP channel family are proton-gated (acid-sensitive) proton channels. OTOP1 channels are not gated by voltage but are gated by protons. OTOP1 is highly selective for H+ over Na+ (>10^5 fold), and OTOP3 currents follow expectations for proton-selective currents.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This is the central conclusion of the paper and is well-supported by the comprehensive set of experiments including kinetics (Figure 4), slope conductance (Figure 5), and pH imaging (Figure 3). The lack of voltage gating is established by prior work (cited). The proton selectivity of OTOP1 and OTOP3 is supported by prior studies (cited). The current work provides the first direct evidence of proton gating through kinetic and conductance analyses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    },
+    {
+      "id": "40d60f01-8479-44bb-a79c-a7ebe03c3fe8",
+      "content_id": "64abd50f-d063-4aad-a532-e81843725d3a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The biphasic pH response of OTOP1 could be explained by two pores that open over different pH ranges. The N domain may contain the pore active over a broad pH range or a sensor that opens a common pore. Activation of OTOP3 may involve a pH-dependent conformational change within C domain linkers that otherwise inhibit its activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These are speculative mechanistic interpretations based on the chimera data and structural considerations. While the observations (biphasic OTOP1 response, effects of N vs C domain swaps) are well-documented, the proposed mechanisms are hypotheses that require further testing. The authors appropriately present these as possibilities rather than conclusions. Additional experiments such as single-channel recordings or structural studies of different states would be needed to test these hypotheses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:44:03.033358Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9e758e39-f1c8-4e31-9052-b457ba05454c",
+      "result_id": "80e39922-0ffe-4dac-ae3d-751d44f0c1f0"
+    },
+    {
+      "claim_id": "a167aadd-82b7-4660-a468-486f6b051630",
+      "result_id": "80e39922-0ffe-4dac-ae3d-751d44f0c1f0"
+    },
+    {
+      "claim_id": "d0c829fc-2347-4226-8323-c1cc42a34903",
+      "result_id": "80e39922-0ffe-4dac-ae3d-751d44f0c1f0"
+    },
+    {
+      "claim_id": "afbad1bf-f119-4827-ac77-5625c750bf6a",
+      "result_id": "80e39922-0ffe-4dac-ae3d-751d44f0c1f0"
+    },
+    {
+      "claim_id": "5c14710f-bd85-47e6-8a46-689de76e695d",
+      "result_id": "80e39922-0ffe-4dac-ae3d-751d44f0c1f0"
+    },
+    {
+      "claim_id": "c60dac5f-f9da-4fa7-955d-bc875e6b091a",
+      "result_id": "80e39922-0ffe-4dac-ae3d-751d44f0c1f0"
+    },
+    {
+      "claim_id": "0d79df10-961e-4726-b416-fdc00a42134a",
+      "result_id": "80e39922-0ffe-4dac-ae3d-751d44f0c1f0"
+    },
+    {
+      "claim_id": "782b9fdf-e2b9-4d26-b811-0a193db6bef2",
+      "result_id": "80e39922-0ffe-4dac-ae3d-751d44f0c1f0"
+    },
+    {
+      "claim_id": "f093cc9c-3dfc-4fb1-9255-4a5646cfbf8a",
+      "result_id": "80e39922-0ffe-4dac-ae3d-751d44f0c1f0"
+    },
+    {
+      "claim_id": "5f152c39-9e2d-461e-9f9c-fc50c38ace45",
+      "result_id": "80e39922-0ffe-4dac-ae3d-751d44f0c1f0"
+    },
+    {
+      "claim_id": "e87c3a2e-21a6-45fc-bb68-ed9f09552415",
+      "result_id": "80e39922-0ffe-4dac-ae3d-751d44f0c1f0"
+    },
+    {
+      "claim_id": "8f918f74-5c7a-4607-b49d-2ce8405a1b7f",
+      "result_id": "80e39922-0ffe-4dac-ae3d-751d44f0c1f0"
+    },
+    {
+      "claim_id": "01c53cf3-fc61-48e3-a6a3-4101c0957d73",
+      "result_id": "80e39922-0ffe-4dac-ae3d-751d44f0c1f0"
+    },
+    {
+      "claim_id": "dfe69f42-3776-4443-ab3c-813553e154d2",
+      "result_id": "80e39922-0ffe-4dac-ae3d-751d44f0c1f0"
+    },
+    {
+      "claim_id": "dd081122-1b3d-4add-b5f1-3ec69d7f4976",
+      "result_id": "80e39922-0ffe-4dac-ae3d-751d44f0c1f0"
+    },
+    {
+      "claim_id": "5d7f7c25-9e4c-4902-b9d6-876113bc1b3f",
+      "result_id": "80e39922-0ffe-4dac-ae3d-751d44f0c1f0"
+    },
+    {
+      "claim_id": "5b151e51-32df-49fe-8dee-c78be6fba6b2",
+      "result_id": "80e39922-0ffe-4dac-ae3d-751d44f0c1f0"
+    },
+    {
+      "claim_id": "655a4d0d-be43-4fbb-98be-a58044465c87",
+      "result_id": "80e39922-0ffe-4dac-ae3d-751d44f0c1f0"
+    },
+    {
+      "claim_id": "07d2dff7-025e-47e1-ae68-ee1e322e4f62",
+      "result_id": "80e39922-0ffe-4dac-ae3d-751d44f0c1f0"
+    },
+    {
+      "claim_id": "97eacdad-f2c5-4014-b9dc-50643809abbe",
+      "result_id": "80e39922-0ffe-4dac-ae3d-751d44f0c1f0"
+    },
+    {
+      "claim_id": "7dab4c71-c460-48f9-b1b0-ba2ed5088200",
+      "result_id": "80e39922-0ffe-4dac-ae3d-751d44f0c1f0"
+    },
+    {
+      "claim_id": "77344566-8f04-4f5a-bc0e-dc731f74acd3",
+      "result_id": "80e39922-0ffe-4dac-ae3d-751d44f0c1f0"
+    },
+    {
+      "claim_id": "76f02fb4-bf0e-4d5a-8e6c-56db14b054ab",
+      "result_id": "80e39922-0ffe-4dac-ae3d-751d44f0c1f0"
+    },
+    {
+      "claim_id": "45ebdb67-a4ab-47b7-88be-fca3ad44d20b",
+      "result_id": "80e39922-0ffe-4dac-ae3d-751d44f0c1f0"
+    },
+    {
+      "claim_id": "52821847-2d00-4041-a811-29e4f7325ad3",
+      "result_id": "80e39922-0ffe-4dac-ae3d-751d44f0c1f0"
+    },
+    {
+      "claim_id": "7d4f3a77-db92-4e4a-94f4-4504c48b2eeb",
+      "result_id": "7160d3cd-ec34-4a5e-9ab5-277c063061f5"
+    },
+    {
+      "claim_id": "277363da-8719-49f4-92ec-fad33be88688",
+      "result_id": "7160d3cd-ec34-4a5e-9ab5-277c063061f5"
+    },
+    {
+      "claim_id": "9ffbdaf2-29c3-40ea-baec-5f74c97cb5b7",
+      "result_id": "7160d3cd-ec34-4a5e-9ab5-277c063061f5"
+    },
+    {
+      "claim_id": "9944035a-dc5d-448b-9ba1-0f9bd7f5d964",
+      "result_id": "7160d3cd-ec34-4a5e-9ab5-277c063061f5"
+    },
+    {
+      "claim_id": "7ebdca3b-5aac-4186-808c-83273bde4974",
+      "result_id": "7160d3cd-ec34-4a5e-9ab5-277c063061f5"
+    },
+    {
+      "claim_id": "0435955d-0ddb-4631-b651-e09b21acc7a0",
+      "result_id": "f51b31c9-c7d4-4df3-8abd-f1d3394c3c85"
+    },
+    {
+      "claim_id": "4d1f2aac-318e-4223-9124-bcb79f9efb16",
+      "result_id": "f51b31c9-c7d4-4df3-8abd-f1d3394c3c85"
+    },
+    {
+      "claim_id": "84ff224e-fe1b-40c3-aadd-14e9108b9404",
+      "result_id": "f51b31c9-c7d4-4df3-8abd-f1d3394c3c85"
+    },
+    {
+      "claim_id": "ca8ef14d-5e27-4d08-b797-de58244facca",
+      "result_id": "f51b31c9-c7d4-4df3-8abd-f1d3394c3c85"
+    },
+    {
+      "claim_id": "247db227-7961-48bc-aaad-424f03e4faa4",
+      "result_id": "c34deff8-7393-4845-b742-b7ad427df9cc"
+    },
+    {
+      "claim_id": "c06a07d8-9cfb-4d90-8081-ec95e59536b6",
+      "result_id": "c34deff8-7393-4845-b742-b7ad427df9cc"
+    },
+    {
+      "claim_id": "3c3568b7-efeb-4683-9e04-525996a8c453",
+      "result_id": "c34deff8-7393-4845-b742-b7ad427df9cc"
+    },
+    {
+      "claim_id": "5afe9d97-0c1d-4934-a703-43907228363d",
+      "result_id": "53a7cd99-47fd-4aed-9f60-3d38b4a43557"
+    },
+    {
+      "claim_id": "7ced8da4-5231-4bf2-b5d3-9befd250a944",
+      "result_id": "53a7cd99-47fd-4aed-9f60-3d38b4a43557"
+    },
+    {
+      "claim_id": "488f3380-b590-4b65-b685-03440843dce6",
+      "result_id": "53a7cd99-47fd-4aed-9f60-3d38b4a43557"
+    },
+    {
+      "claim_id": "93fe8e52-a290-4b20-90e9-a3e09f9af436",
+      "result_id": "53a7cd99-47fd-4aed-9f60-3d38b4a43557"
+    },
+    {
+      "claim_id": "2f942299-011c-42fc-a6df-1c361782b952",
+      "result_id": "53a7cd99-47fd-4aed-9f60-3d38b4a43557"
+    },
+    {
+      "claim_id": "62b96a11-749f-4e9a-87a0-38bef2eba46a",
+      "result_id": "53a7cd99-47fd-4aed-9f60-3d38b4a43557"
+    },
+    {
+      "claim_id": "5ebdc07a-f837-484a-a5d1-c2b5b26f4376",
+      "result_id": "53a7cd99-47fd-4aed-9f60-3d38b4a43557"
+    },
+    {
+      "claim_id": "69fd2940-f65a-49c2-8e5b-c832e24ae052",
+      "result_id": "53a7cd99-47fd-4aed-9f60-3d38b4a43557"
+    },
+    {
+      "claim_id": "91b4235c-0347-459a-a012-4daf3993d913",
+      "result_id": "53a7cd99-47fd-4aed-9f60-3d38b4a43557"
+    },
+    {
+      "claim_id": "ccc9406e-aa61-400f-be46-0d1cc40bf0b3",
+      "result_id": "90cfde59-5be2-46f2-998d-520beabbfbe1"
+    },
+    {
+      "claim_id": "892a3827-fb27-413b-b5d7-21e4a65f1807",
+      "result_id": "90cfde59-5be2-46f2-998d-520beabbfbe1"
+    },
+    {
+      "claim_id": "ee82e625-9f54-4687-a0c1-caec199f95ff",
+      "result_id": "90cfde59-5be2-46f2-998d-520beabbfbe1"
+    },
+    {
+      "claim_id": "09059aa8-ea68-4a30-b08f-7260cdc81b03",
+      "result_id": "90cfde59-5be2-46f2-998d-520beabbfbe1"
+    },
+    {
+      "claim_id": "04a59512-d5e8-43d9-ae2a-36c5c23a6e58",
+      "result_id": "90cfde59-5be2-46f2-998d-520beabbfbe1"
+    },
+    {
+      "claim_id": "1127d8f9-9bd8-4c71-a3f1-44674144f51a",
+      "result_id": "90cfde59-5be2-46f2-998d-520beabbfbe1"
+    },
+    {
+      "claim_id": "a1df184e-1750-4d12-9fa6-eda10b8cb1dd",
+      "result_id": "90cfde59-5be2-46f2-998d-520beabbfbe1"
+    },
+    {
+      "claim_id": "1f5724fc-48a9-4a76-922d-74f50865e8be",
+      "result_id": "90cfde59-5be2-46f2-998d-520beabbfbe1"
+    },
+    {
+      "claim_id": "2d290a17-1998-49f7-b1de-b65b63dd0e03",
+      "result_id": "2f6a8261-038d-44f2-9bb2-29f9fe0fb10b"
+    },
+    {
+      "claim_id": "129763e7-f03a-4e8f-ae24-2b59610359a0",
+      "result_id": "2f6a8261-038d-44f2-9bb2-29f9fe0fb10b"
+    },
+    {
+      "claim_id": "a3748f86-7c87-4ee4-8340-74cae80f6722",
+      "result_id": "2f6a8261-038d-44f2-9bb2-29f9fe0fb10b"
+    },
+    {
+      "claim_id": "cb754a43-23f7-4972-961c-f360267c8299",
+      "result_id": "2f6a8261-038d-44f2-9bb2-29f9fe0fb10b"
+    },
+    {
+      "claim_id": "d4e9e7b5-f92d-4ccb-8b8b-8bc725223074",
+      "result_id": "2f6a8261-038d-44f2-9bb2-29f9fe0fb10b"
+    },
+    {
+      "claim_id": "be6fd2f7-0012-4f5a-bb34-234d129d64a1",
+      "result_id": "52a3b621-e36c-4213-8524-4d2f2b086fb7"
+    },
+    {
+      "claim_id": "0e74bfc5-e20b-45d4-a691-db136e3363a9",
+      "result_id": "52a3b621-e36c-4213-8524-4d2f2b086fb7"
+    },
+    {
+      "claim_id": "035eff44-ddc5-4f04-9612-066b30e04d95",
+      "result_id": "52a3b621-e36c-4213-8524-4d2f2b086fb7"
+    },
+    {
+      "claim_id": "608de74c-1495-4520-abc4-f804ef48b5d7",
+      "result_id": "52a3b621-e36c-4213-8524-4d2f2b086fb7"
+    },
+    {
+      "claim_id": "1657aa0f-8df6-4c52-aa27-2e79e8c83c64",
+      "result_id": "52a3b621-e36c-4213-8524-4d2f2b086fb7"
+    },
+    {
+      "claim_id": "211915e0-a4ff-4857-8f29-c56667246952",
+      "result_id": "52a3b621-e36c-4213-8524-4d2f2b086fb7"
+    },
+    {
+      "claim_id": "b5da1ac0-eaf4-4339-b9b2-180134de1c3f",
+      "result_id": "52a3b621-e36c-4213-8524-4d2f2b086fb7"
+    },
+    {
+      "claim_id": "50b1398b-91a3-43c1-8eb1-7da8de0620fc",
+      "result_id": "52a3b621-e36c-4213-8524-4d2f2b086fb7"
+    },
+    {
+      "claim_id": "3ca846c2-c74e-4509-ba63-5d5832701ce8",
+      "result_id": "52a3b621-e36c-4213-8524-4d2f2b086fb7"
+    },
+    {
+      "claim_id": "c35a50da-3680-4380-a977-2a87b2e840d4",
+      "result_id": "52a3b621-e36c-4213-8524-4d2f2b086fb7"
+    },
+    {
+      "claim_id": "6219496e-58e9-4dd3-bd9c-b022bfe38e6e",
+      "result_id": "52a3b621-e36c-4213-8524-4d2f2b086fb7"
+    },
+    {
+      "claim_id": "d548951b-6e4b-48ec-a2f6-2b69807d7923",
+      "result_id": "0eb5038d-8a96-4d3b-8bf1-7ea5cb41cb68"
+    },
+    {
+      "claim_id": "9a1ebbec-b7b7-4b6e-ae4c-4153e745bbf9",
+      "result_id": "0eb5038d-8a96-4d3b-8bf1-7ea5cb41cb68"
+    },
+    {
+      "claim_id": "fb7c0ae5-0234-496d-8675-67e8884184db",
+      "result_id": "0eb5038d-8a96-4d3b-8bf1-7ea5cb41cb68"
+    },
+    {
+      "claim_id": "c8d44e37-50a3-4fb3-8e87-53e02ca7fbf5",
+      "result_id": "0eb5038d-8a96-4d3b-8bf1-7ea5cb41cb68"
+    },
+    {
+      "claim_id": "d6883fcd-6346-4f7a-a82e-da939e38dd8c",
+      "result_id": "0eb5038d-8a96-4d3b-8bf1-7ea5cb41cb68"
+    },
+    {
+      "claim_id": "c8d8b3c0-8c1b-44cb-bd27-32660b559f2c",
+      "result_id": "e6d81cbc-0241-4e95-af9d-2ee3d3a61ca9"
+    },
+    {
+      "claim_id": "cd90a7fe-8e78-43b9-a753-dd75da268d5a",
+      "result_id": "e6d81cbc-0241-4e95-af9d-2ee3d3a61ca9"
+    },
+    {
+      "claim_id": "a8167186-dc16-42e9-8b46-edc350797b09",
+      "result_id": "e6d81cbc-0241-4e95-af9d-2ee3d3a61ca9"
+    },
+    {
+      "claim_id": "97fbbf5e-da74-4b11-b514-48a859ec81df",
+      "result_id": "e6d81cbc-0241-4e95-af9d-2ee3d3a61ca9"
+    },
+    {
+      "claim_id": "5a462242-ebb1-4e93-a36b-f2f87f92ab6a",
+      "result_id": "e6d81cbc-0241-4e95-af9d-2ee3d3a61ca9"
+    },
+    {
+      "claim_id": "1b417382-cfa1-4827-aaa3-4c5469b8ae40",
+      "result_id": "3b965a95-6aab-40c8-aef1-7af8570ddaac"
+    },
+    {
+      "claim_id": "30787c1d-f2ee-47e7-85e2-b3a650be48b4",
+      "result_id": "3b965a95-6aab-40c8-aef1-7af8570ddaac"
+    },
+    {
+      "claim_id": "ba3534b7-df5c-4ba6-ac2d-dbc21465830a",
+      "result_id": "3b965a95-6aab-40c8-aef1-7af8570ddaac"
+    },
+    {
+      "claim_id": "9f3c1ac1-a979-4dc1-8aa8-20a9f6f5ed88",
+      "result_id": "3b965a95-6aab-40c8-aef1-7af8570ddaac"
+    },
+    {
+      "claim_id": "2d0a0efa-ad7a-49ed-a1f9-7626fccd5831",
+      "result_id": "3b965a95-6aab-40c8-aef1-7af8570ddaac"
+    },
+    {
+      "claim_id": "60bca704-e968-458a-9682-1143dec67c7d",
+      "result_id": "3b965a95-6aab-40c8-aef1-7af8570ddaac"
+    },
+    {
+      "claim_id": "2312aff8-1307-486d-927a-819d0b72fab2",
+      "result_id": "3b965a95-6aab-40c8-aef1-7af8570ddaac"
+    },
+    {
+      "claim_id": "55efdf9b-1ce5-43a1-b3be-405b66c1ecd5",
+      "result_id": "3b965a95-6aab-40c8-aef1-7af8570ddaac"
+    },
+    {
+      "claim_id": "db615094-94da-49da-a271-9ec2b22e4f0c",
+      "result_id": "3b965a95-6aab-40c8-aef1-7af8570ddaac"
+    },
+    {
+      "claim_id": "6316efc6-8272-42f5-a03d-68bac9ee25d9",
+      "result_id": "3b965a95-6aab-40c8-aef1-7af8570ddaac"
+    },
+    {
+      "claim_id": "2daba857-e369-433c-98fe-b55ab1c6dd4f",
+      "result_id": "3b965a95-6aab-40c8-aef1-7af8570ddaac"
+    },
+    {
+      "claim_id": "c3af95b4-d1fc-438b-9cad-bdd304c75ac3",
+      "result_id": "3b965a95-6aab-40c8-aef1-7af8570ddaac"
+    },
+    {
+      "claim_id": "59204a98-c386-49d8-ab9b-c4251c8b920e",
+      "result_id": "1fff2cdd-781e-4970-a14e-d395abf27f22"
+    },
+    {
+      "claim_id": "c8b68e2d-6fb8-4757-bd25-56a8979ddf50",
+      "result_id": "1fff2cdd-781e-4970-a14e-d395abf27f22"
+    },
+    {
+      "claim_id": "8558a162-63a6-4dee-bd29-b038defd102e",
+      "result_id": "1fff2cdd-781e-4970-a14e-d395abf27f22"
+    },
+    {
+      "claim_id": "72844fed-c0e2-4e41-bc81-0cc4f4c71895",
+      "result_id": "1fff2cdd-781e-4970-a14e-d395abf27f22"
+    },
+    {
+      "claim_id": "0bc34eff-2f6d-4a9e-a0a8-9e6f1ef8a3c4",
+      "result_id": "1fff2cdd-781e-4970-a14e-d395abf27f22"
+    },
+    {
+      "claim_id": "03c54ef8-852e-4814-8a3f-19783537629d",
+      "result_id": "1fff2cdd-781e-4970-a14e-d395abf27f22"
+    },
+    {
+      "claim_id": "f849d3c9-26bf-4442-b536-8670124b27e8",
+      "result_id": "1fff2cdd-781e-4970-a14e-d395abf27f22"
+    },
+    {
+      "claim_id": "572ebb37-7b87-4ee7-9187-6ebc786ddfc7",
+      "result_id": "7e0eedcc-83ea-486d-a309-7b5de64de92b"
+    },
+    {
+      "claim_id": "81ce4d3b-7407-47a2-91a7-beea086f092a",
+      "result_id": "7e0eedcc-83ea-486d-a309-7b5de64de92b"
+    },
+    {
+      "claim_id": "775bf66f-39e3-46a2-9339-8e9d49e6d431",
+      "result_id": "7e0eedcc-83ea-486d-a309-7b5de64de92b"
+    },
+    {
+      "claim_id": "67a9c49c-449b-478c-8c10-de2ce00da6bf",
+      "result_id": "7e0eedcc-83ea-486d-a309-7b5de64de92b"
+    },
+    {
+      "claim_id": "9529573c-30c1-462c-baef-6817fa89d44a",
+      "result_id": "7e0eedcc-83ea-486d-a309-7b5de64de92b"
+    },
+    {
+      "claim_id": "d9884499-c473-4f64-a073-ffadccf24342",
+      "result_id": "40d60f01-8479-44bb-a79c-a7ebe03c3fe8"
+    },
+    {
+      "claim_id": "6d5844f8-771f-4685-9097-cff151e8e0e1",
+      "result_id": "40d60f01-8479-44bb-a79c-a7ebe03c3fe8"
+    },
+    {
+      "claim_id": "6c18ea40-f8c4-4c15-8581-3240fb50f027",
+      "result_id": "40d60f01-8479-44bb-a79c-a7ebe03c3fe8"
+    }
+  ],
+  "comparisons": []
+}

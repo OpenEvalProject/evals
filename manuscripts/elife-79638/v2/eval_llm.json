@@ -1,0 +1,128 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C27",
+      "C28"
+    ],
+    "result": "Carpenter ants confined in an agarose corral exhibit a transition from exploratory behavior (wall-following and random excavation) to exploitative collective excavation at a localized site, eventually escaping the corral. Single ants cannot excavate through the barrier, demonstrating the necessity of collective action.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C19-C24, C27-C28 collectively describe experimental observations of ant behavior tracked via video and analyzed through density distributions and Fourier analysis (Figures 1-2). The transition from exploration to exploitation is well-documented through spatial localization of ant density, temporal progression of excavation, and the failure of single ants to excavate, providing converging evidence for collective behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C35",
+      "C36",
+      "C41",
+      "C42",
+      "C43",
+      "C49",
+      "C50",
+      "C51",
+      "C68"
+    ],
+    "result": "Agent-based simulations and a continuum theoretical model coupling ant density, communication field, and substrate density successfully capture the emergence of cooperative excavation. The models identify a phase space characterized by cooperation intensity (C) and excavation strength (E), showing that environmentally mediated communication and local behavioral rules suffice for robust excavation without centralized planning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C30-C36, C41-C43, C49-C51, C68 describe computational models validated against experimental observations. The agent-based model (Equations 1-3) and continuum model (Equations 4-5) both reproduce key experimental features including localization and successful excavation (Figures 3-5). The reduction to Keller-Segel in limiting cases (C42) provides theoretical grounding, and the identification of dimensionless parameters C and E provides a predictive framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C52",
+      "C53",
+      "C54",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Custom-built robots (RAnts) equipped with sensors and programmed with simple behavioral rules successfully recreate cooperative excavation behaviors predicted by theory. By tuning the cooperation parameter C, RAnts can synthetically generate the full range of predicted behavioral phases, demonstrating robustness of the coarse-grained framework.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C52-C54, C69-C71 describe robotic experiments that validate theoretical predictions. The RAnts implement the theoretical model through photormone fields and behavioral rules (Figure 6), successfully excavating when C is high and failing when C is low. The systematic variation of C and measurement of excavation times (Figure 6g) provides quantitative validation of the phase diagram, demonstrating that the theoretical framework captures essential dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C72",
+      "C73",
+      "C67"
+    ],
+    "result": "The emergence of different collective strategies (cooperative excavation, jamming, diffusion, partial tunneling) arises as a function of cooperation parameter C and excavation rate E, forming a phase diagram. Cooperation emerges from slow decay of environmental signals coupled to threshold excavation rates, with jammed and partial tunneling states observed as transients in ant experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C67, C72-C73 synthesize findings across ants, models, and robots to identify a unified phase space (Figure 8). The phase diagram is supported by theoretical analysis, simulations showing different regimes (Appendix 2), and robotic experiments systematically varying C and E. The observation of predicted transient states in ant experiments (C67, Videos 1 and 4) provides additional validation of the phase space structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Collective behavior across biological scales is functional, involves communication and cooperation, and in social insects often relies on stigmergy\u2014environmental modification that serves as spatio-temporal memory through chemical, mechanical, or hydrodynamic signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C11 establish background knowledge about collective behavior and stigmergy, supported by extensive citations to established literature (Nowak 2006, Camazine et al. 2020, H\u00f6lldobler & Wilson 2009, etc.). These claims provide context for the study but represent prior knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C17",
+      "C18"
+    ],
+    "result": "Experimental methods involved confining Camponotus pennsylvanicus workers (12 major ants or mixed castes) in agarose corrals, monitoring them with infrared light to mimic nest conditions. Major ants with large mandibles lead excavation while other castes transport debris, with communication occurring through antennae-mediated pheromone sensing and tactile contact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15, C17-C18 describe experimental design and ant biology. The methods are clearly documented (Figure 1a, Materials and Methods section) with appropriate sample sizes (4 experiments with 12 majors, 3 with mixed castes). The description of caste roles and communication mechanisms is supported by citations and consistent with established ant biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "The ability to solve complex eco-physiological problems like collective excavation correlates with selective advantage in evolution, suggesting collective behavior should be studied in functional contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74-C75 are explicitly speculative (\"perhaps collective behavior must always be studied...\") and represent discussion points rather than tested hypotheses. While the functional advantage of collective excavation is plausible, no evolutionary data or comparative analysis is provided to support the correlation with selective advantage (C74), and the prescriptive claim about how collective behavior \"must\" be studied (C75) is a methodological opinion rather than an empirical result.",
+    "result_type": "MINOR"
+  }
+]

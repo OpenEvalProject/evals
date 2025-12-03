@@ -1,0 +1,335 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The manuscript provides background information on ABCG2 structure, function, tissue distribution, and clinical significance based on established literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C25 represent well-established background knowledge about ABCG2, supported by appropriate citations to prior literature. These claims accurately describe the protein's function, structure, substrates, tissue localization, and clinical relevance in drug resistance and disease.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The manuscript describes the structural features of ABCG2 in IF and OF conformations, including substrate-binding cavities and the 5D3 antibody epitope, based on prior structural studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C36 accurately summarize structural knowledge from prior cryo-EM studies (cited appropriately), including the IF/OF conformations, cavity architecture, and 5D3 epitope recognition. These provide essential context for interpreting the current experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C40",
+      "C41"
+    ],
+    "result": "ABCG2 and ABCG2-GFP are expressed at comparable levels in MDCK II cells, exhibit similar transport activity, and show comparable conformational responses to Ko143 treatment, indicating the GFP tag does not affect function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 are supported by Western blot data (Figure 2A), transport assays (Figure 2B-D), and 5D3-reactivity measurements (Figure 2E-G). The data demonstrate functional equivalence between tagged and untagged ABCG2, validating the use of ABCG2-GFP for subsequent experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C93",
+      "C94",
+      "C116",
+      "C117"
+    ],
+    "result": "Nucleotide binding (ATP, AMP-PNP, or ADP) is sufficient to induce the IF to OF conformational transition of ABCG2, as detected by loss of 5D3 antibody reactivity, and this transition does not require ATP hydrolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C42-C46, C93-C94, C116-C117 are strongly supported by nucleotide titration experiments (Figure 3) showing that ATP, AMP-PNP, and ADP all induce loss of 5D3 binding under conditions that prevent hydrolysis (EDTA, low temperature, or non-hydrolyzable analog). This is a major finding demonstrating that nucleotide binding, not hydrolysis, drives the IF-OF transition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Phosphate analogs (Vi and BeFx) trap ABCG2 in a post-hydrolytic state with ~10-fold increased nucleotide affinity, and resetting to the IF conformation requires dissociation of hydrolysis products.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C56 are supported by nucleotide trapping experiments (Figure 3, Table 1) showing increased apparent affinity with Vi/BeFx only under hydrolysis-permitting conditions. The observation that ADP/Mg2+ can induce the transition but leaves ~30% in IF state (C52) supports the inference that product dissociation is required for complete reset (C56, C98).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C103",
+      "C104"
+    ],
+    "result": "Transported substrates (E3S and quercetin) accelerate the rate of Vi/BeFx trapping from ATP/Mg2+ by ~5-fold, consistent with substrate-stimulated ATPase activity, but do not accelerate trapping from ADP/Mg2+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61, C103-C104 are supported by kinetic trapping experiments (Figure 4) showing substrate-dependent acceleration of trapping from ATP but not ADP. This supports the interpretation that substrates accelerate ATP hydrolysis but do not affect the stability of the ADP-bound state (C61).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C105",
+      "C106",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C124"
+    ],
+    "result": "Substrates accelerate the IF to OF transition when bound to the IF state, as shown by enhanced 5D3 antibody dissociation kinetics, but cannot accelerate the transition once nucleotides have induced NBD dimer formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C62-C72, C105-C111, C124 are supported by 5D3 dissociation experiments (Figure 5) showing that substrates accelerate antibody dissociation in the presence of ATP/Mg2+ (~5-fold decrease in t1/2), and when added before AMP-PNP, but not when added after AMP-PNP binding. This demonstrates bidirectional TMD-NBD coupling and that substrates facilitate the transition only from the IF state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C39",
+      "C63",
+      "C89",
+      "C90"
+    ],
+    "result": "The inhibitor Ko143 stabilizes ABCG2 in the IF conformation and prevents the IF to OF transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C39, C63, C89-C90 are supported by multiple experiments showing Ko143 increases 5D3 binding (Figure 2E-G), prevents 5D3 dissociation (Figure 5A), and is consistent with prior cryo-EM studies (cited). This validates Ko143 as a tool to stabilize the IF state.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C87",
+      "C88",
+      "C91",
+      "C92",
+      "C95",
+      "C117"
+    ],
+    "result": "The high-to-low substrate affinity switch coincides with the IF to OF conformational transition induced by nucleotide binding, and ATP hydrolysis is not required for this affinity switch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C87-C88, C91-C92, C95, C117 are supported by confocal microscopy experiments (Figures 6-8) showing that MX binding to ABCG2 is high in ATP-depleted (IF) cells but low after AMP-PNP treatment (OF state). The simultaneous loss of 5D3 and MX binding with nucleotide addition directly demonstrates the coincidence of conformational and affinity changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C96"
+    ],
+    "result": "In live cells, ATP depletion increases MX binding to ABCG2 in the plasma membrane (PCC=0.72), while Vi treatment reduces binding (PCC=0.18), and a significant fraction of ABCG2 molecules are MX-bound even under physiological conditions (PCC=0.3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C82, C96 are supported by confocal microscopy and co-localization analysis (Figure 6). The Pearson correlation coefficients quantitatively demonstrate high MX binding in ATP-depleted cells, low binding with Vi treatment, and intermediate binding in untreated cells, consistent with the model of conformational equilibrium.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "FCS measurements confirm that MX binds to ABCG2 by showing reduced MX diffusion coefficient upon ATP depletion, and Ko143 prevents this binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 are supported by FCS data (Figure 7) showing that MX diffusion decreases to match ABCG2-GFP diffusion upon ATP depletion, and Ko143 prevents this decrease. This provides independent validation of MX binding to ABCG2 using a mobility-based assay.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "In permeabilized cells, MX shows strong co-localization with ABCG2-GFP (PCC=0.85) in the absence of nucleotides, but pre-treatment with AMP-PNP/Mg2+ prevents MX binding (PCC=-0.12).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 are supported by confocal microscopy of permeabilized cells (Figure 8). This experiment directly demonstrates that nucleotide-induced conformational changes prevent substrate binding, providing strong evidence that the OF state has low substrate affinity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C56",
+      "C97",
+      "C98"
+    ],
+    "result": "Low substrate binding persists in the Vi-trapped post-hydrolysis state, confirming that dissociation of ATP hydrolysis products is required to reset the high substrate affinity IF conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C56, C97-C98 are supported by confocal microscopy showing low MX binding with Vi treatment (Figure 6) and nucleotide trapping experiments (Figure 3). The persistence of low substrate affinity in the post-hydrolysis state logically supports the inference that product dissociation is required for reset, though this is an inference rather than direct demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Similar substrate affinity changes and bidirectional NBD-TMD coupling have been observed in other ABC transporters (ABCB1, ABCC1), suggesting conserved mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 are supported by appropriate citations to prior studies on ABCB1 and ABCC1. The inference about conserved long-range coupling (C102) is reasonable given the structural distance between NBDs and TMDs, though it remains somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C107"
+    ],
+    "result": "The reversible nature of 5D3 binding explains why saturating antibody concentrations do not completely inhibit transport and ATPase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C107 is supported by the 5D3 dissociation experiments (Figure 5) demonstrating reversibility, and is consistent with prior observations (cited). This provides a mechanistic explanation for incomplete inhibition by 5D3.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "In ABCG2, the IF to OF transition is not the rate-limiting step of the catalytic cycle, as the majority of molecules adopt the OF conformation at saturating ATP concentrations, and only a small fraction is in the substrate-bound IF state in live cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C123 are supported by nucleotide titration data (Figure 3A-B) showing predominance of OF state at high ATP, and confocal microscopy (Figure 6) showing low MX binding in untreated cells. The comparison to CFTR, ABCC1, and ABCB1 (C118-C119) is appropriately cited. The inference about rate-limiting steps is logical but indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C73",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Substrate binding likely reduces the energy barrier for NBD dimer formation and IF-OF transition, and substrates should bind to the IF conformer based on structural accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73, C112-C115 combine experimental observations with structural interpretations from cited cryo-EM studies. The speculation about energy barriers (C73) is reasonable given the kinetic data, and the inference that substrates bind to IF (C115) is supported by both current experiments and cited structural studies showing decreased cavity accessibility in semi-closed states.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The authors propose a model with two distinct pre-hydrolytic OF states to explain how substrates stimulate ATPase activity beyond simply accelerating the IF-OF transition: a coupled pathway with substrate-accelerated IF-OF transition, and an uncoupled basal pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C125-C132 represent a speculative model proposed to reconcile the observation that substrates accelerate IF-OF transition (which is not rate-limiting) with their known stimulation of ATPase activity. While the model is logical and supported by citations to similar proposals for other transporters (C129-C130), it lacks direct experimental validation in this study. The claims are clearly marked as speculation/inference, and the model requires future testing.",
+    "result_type": "MINOR"
+  }
+]

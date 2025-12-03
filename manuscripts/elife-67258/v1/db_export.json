@@ -1,0 +1,1662 @@
+{
+  "submission": {
+    "id": "0bbe72ca-4c3b-431e-bcb5-50ac5a0925ed",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T13:24:45.000891Z",
+    "updated_at": "2025-12-03T13:24:45.000891Z"
+  },
+  "content": [
+    {
+      "id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "submission_id": "0bbe72ca-4c3b-431e-bcb5-50ac5a0925ed",
+      "content_type": "manuscript",
+      "content_text": "# A general decoding strategy explains the relationship between behavior and correlated variability\n\n## Authors\n\n- Amy M Ni<sup>1</sup> ([ORCID: 0000-0002-1746-9206](https://orcid.org/0000-0002-1746-9206)) \u2020\n- Chengcheng Huang<sup>1</sup>\n- Brent Doiron<sup>2</sup>\n- Marlene R Cohen<sup>1</sup> ([ORCID: 0000-0001-8583-4300](https://orcid.org/0000-0001-8583-4300))\n\n### Affiliations\n\n1. Department of Neuroscience,University of Pittsburgh Pittsburgh United States ([ROR:01an3r305](https://ror.org/01an3r305))\n2. Center for the Neural Basis of Cognition Pittsburgh United States ([ROR:00jfeg660](https://ror.org/00jfeg660))\n3. Department of Mathematics, University of Pittsburgh Pittsburgh United States ([ROR:01an3r305](https://ror.org/01an3r305))\n\n\u2020 Corresponding author\n\n## Abstract\n\nImprovements in perception are frequently accompanied by decreases in correlated variability in sensory cortex. This relationship is puzzling because overall changes in correlated variability should minimally affect optimal information coding. We hypothesize that this relationship arises because instead of using optimal strategies for decoding the specific stimuli at hand, observers prioritize generality: a single set of neuronal weights to decode any stimuli. We tested this using a combination of multineuron recordings in the visual cortex of behaving rhesus monkeys and a cortical circuit model. We found that general decoders optimized for broad rather than narrow sets of visual stimuli better matched the animals\u2019 decoding strategy, and that their performance was more related to the magnitude of correlated variability. In conclusion, the inverse relationship between perceptual performance and correlated variability can be explained by observers using a general decoding strategy, capable of decoding neuronal responses to the variety of stimuli encountered in natural vision.\n\n## Introduction\n\nMany studies have demonstrated that increases in perceptual performance correspond to decreases in a very simple measure of shared variability in a population of sensory neurons: the mean correlation between the responses of a pair of neurons to repeated presentations of the same stimulus (termed spike count or noise correlations, or rSC; Cohen and Kohn, 2011; Nirenberg and Latham, 2003; Cohen and Maunsell, 2009; Cohen and Maunsell, 2011; Gregoriou et al., 2014; Gu et al., 2011; Herrero et al., 2013; Luo and Maunsell, 2015; Mayo and Maunsell, 2016; Mitchell et al., 2009; Nandy et al., 2017; Ni et al., 2018; Ruff and Cohen, 2014a; Ruff and Cohen, 2014b; Ruff and Cohen, 2016; Ruff and Cohen, 2019; Yan et al., 2014; Z\u00e9non and Krauzlis, 2012). We recently found that the axis in neuronal population space that explains the most mean correlated variability explains virtually all of the choice-predictive signals in visual area V4 (Ni et al., 2018).\n\nThese observations comprise a paradox because changes in this simple measure should have a minimal effect on information coding. Recent theoretical work shows that neuronal population decoders that extract the maximum amount of sensory information for the specific task at hand can easily ignore mean correlated noise (Kafashan et al., 2021; Kanitscheider et al., 2015b; Moreno-Bote et al., 2014; Pitkow et al., 2015; Rumyantsev et al., 2020; for review, see Kohn et al., 2016). Decoders for the specific task at hand can ignore mean correlated variability because it does not corrupt the dimensions of neuronal population space that are most informative about the stimulus (Moreno-Bote et al., 2014).\n\nWe propose a hypothesis that reconciles the numerous experimental observations of an inverse relationship between performance and mean correlated variability and these seemingly contradictory theoretical predictions. The theoretical predictions are predicated on the assumption that observers (and their neuronal population decoding mechanisms) use a decoding strategy that maximizes the amount of information extracted for the specific task at hand. We hypothesize that instead, observers use a general decoding strategy: one set of neuronal population decoding weights to extract sensory information about any visual stimuli.\n\nStimuli in the visual environment vary in many task-irrelevant as well as -relevant features. Our idea is that the dimensions of the neural code that are optimal for the general decoding of any stimuli might be very similar to the axes that account for the mean correlated variability, because mean correlated variability is well known to depend on all of the stimulus features for which the population of neurons is tuned (Cohen and Kohn, 2011). If observers used this kind of general decoding strategy, their perceptual performance might be inextricably linked to mean correlated variability (Ruff et al., 2018). This decoding mechanism would explain the much-observed relationship between behavior and correlated variability.\n\nHere, we report the results of an initial test of this overarching hypothesis, based on a single stimulus dimension. We used a simple, well-studied behavioral task to test whether a more-general decoder (optimized for a broader range of stimulus values along a single dimension) better explained the relationship between behavior and mean correlated variability than a more-specific decoder (optimized for a narrower range of stimulus values along a single dimension). Specifically, we used a well-studied orientation change detection task (Cohen and Maunsell, 2009) to test whether a general decoder for the full range of stimulus orientations better explained the relationship between behavior and mean correlated variability than a specific decoder for the orientation change presented in the behavioral trial at hand.\n\nThis test based on a single stimulus dimension is an important initial test of the general decoder hypothesis because many of the studies that found that performance increased when mean correlated variability decreased used a change detection task (Cohen and Maunsell, 2009; Cohen and Maunsell, 2011; Herrero et al., 2013; Luo and Maunsell, 2015; Mayo and Maunsell, 2016; Nandy et al., 2017; Ni et al., 2018; Ruff and Cohen, 2016; Ruff and Cohen, 2019; Yan et al., 2014; Z\u00e9non and Krauzlis, 2012). This task has been studied frequently because it is a simple laboratory version of a real-life scenario: the observer must report that a stimulus changed, regardless of the magnitude of the change.\n\nFor this test, we used a combination of experiments and theory. We used multineuron recordings in two rhesus monkeys to directly compare the effects of modulating visual attention on the mean correlated variability of the neuronal population to the effects of attention on the monkeys\u2019 neuronal decoding strategy. We then used a cortical circuit model to compare the effects of attention on the monkeys\u2019 decoding strategy to the effects of attention on an ideal general decoder for all orientations.\n\nOur combined electrophysiological and theoretical results support our general decoder hypothesis. They demonstrate that using a single set of neuronal weights to decode sensory neuron population responses to any stimulus change can explain the frequently observed relationship between performance and mean correlated variability.\n\n## Results\n\n### A behavioral framework for studying the general decoder hypothesis\n\nWe designed a behavioral task for two rhesus monkeys that allowed us to test the hypothesis that the relationship between perceptual performance and correlated variability is better explained by a more-general decoding strategy. This test required two main components. First, we used an orientation change detection task with multiple potential orientation changes (Figure 1A; different aspects of these data were presented previously, Ni et al., 2018). This allowed us to analyze decoders optimized for narrower versus broader ranges of stimulus orientations. Two Gabor stimuli of the same orientation flashed on and off until, at a random time, the orientation of one of the stimuli changed. The changed orientation was randomly selected from five options (Figure 1B). The monkey could not predict which orientation change was to be detected on any given trial and was rewarded for responding to any orientation change.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/67258/elife-67258-fig1-v1.jpg)\n\n**Figure 1.:** (A) Orientation change detection task with cued attention. After the monkey fixated the central spot, two Gabor stimuli synchronously flashed on (200 ms) and off (randomized 200\u2013400 ms period) at the starting orientation until, at a random time, the orientation of one stimulus changed. To manipulate attention, the monkey was cued in blocks of 125 trials as to which of the two stimuli would change in 80% of the trials in the block, with the change occurring at the uncued location in the other 20%. (B) A cued changed orientation was randomly assigned per trial from five potential orientations. An uncued changed orientation was randomly either the median (20 trials) or largest change amount (5 trials). To compare cued to uncued changes, median orientation change trials were analyzed. (C) The activity of a neuronal population in V4 was recorded simultaneously. Plotted for Monkey 1: the location of Stimulus 2 (red circle) relative to fixation (red cross) overlapped the receptive field (RF) centers of the recorded units (black circles). A representative RF size is illustrated (dashed circle). Only orientation changes at the RF location were analyzed. Stimulus 1 was located in the opposite hemifield (gray circle). (D) Schematic of the specific decoder, a linear classifier with leave-one-out cross-validation, which was trained to best differentiate the V4 neuronal population responses to the median changed orientation from the V4 responses to the starting orientation presented immediately before it (first and second principal components [PC] shown for illustrative purposes). (E) Schematic of the monkey\u2019s decoder, which was based on the same neuronal population responses as in (D) but was trained to best differentiate the V4 responses when the monkey made a saccade (indicating it detected an orientation change) from the V4 responses when the monkey did not choose to make a saccade.\n\nSecond, we made a manipulation designed to create a larger dynamic range of perceptual performance. We manipulated visual attention within the task (Figure 1A) using a classic Posner cueing paradigm (Posner, 1980). Cued trials were collected for all five change amounts and uncued trials were collected mainly for the median change amount (Figure 1B). Our attention analyses focused on this median change amount, for which we had both cued and uncued trials.\n\nFor each monkey, we used a chronically implanted microelectrode array to record from a population of V4 neurons while the monkey performed the behavioral task (Figure 1C). These electrophysiological recordings allowed us to measure the effects of attention on the mean correlated variability of the V4 population. They also allowed us to measure the effects of attention on the performance of two linear decoders of the V4 population activity: a specific decoder (Figure 1D) and the monkey\u2019s decoder (Figure 1E).\n\nWe tasked both decoders with differentiating the V4 neuronal population responses to the median changed orientation from the V4 responses to the starting orientation presented immediately before it. We first estimated the neuronal decoding weights that best performed this specific task (Figure 1D). Theoretical studies have found that mean correlated variability should not affect the performance of such an optimal linear decoder (Kafashan et al., 2021; Kanitscheider et al., 2015b; Moreno-Bote et al., 2014; Pitkow et al., 2015; Rumyantsev et al., 2020; reviewed by Kohn et al., 2016).\n\nTo compare the monkey\u2019s strategy to the performance of the specific decoder, we estimated the neuronal decoding weights that best predicted the monkey\u2019s pattern of choices on this same task (Figure 1E). This allowed us to directly compare the performance of the monkey\u2019s decoder to that of the specific decoder on the same task. Using leave-one-out cross-validation, we calculated the ability of each decoder to correctly identify whether each left-out orientation was the median changed orientation or the starting orientation.\n\n### A mechanistic circuit model to test the general decoder hypothesis\n\nHere, we describe a circuit model that we designed to allow us to compare the specific and monkey\u2019s decoders from our electrophysiological dataset to modeled ideal specific and general decoders. The primary benefit of our model is that it can take actual images as inputs and produce neuronal tuning and covariance that are compatible with each other because of constraints from the simulated network that processed the inputs (Huang et al., 2019). Parametric models in which tuning and covariance can be manipulated independently would not provide such constraints. In our model, the mean correlated variability of the population activity is restricted to very few dimensions, matching experimentally recorded data from visual cortex demonstrating that mean correlated variability occupies a low-dimensional subset of the full neuronal population space (Ecker et al., 2014; Goris et al., 2014; Huang et al., 2019; Kanashiro et al., 2017; Lin et al., 2015; Rabinowitz et al., 2015; Semedo et al., 2019; Williamson et al., 2016).\n\nFor our electrophysiological dataset, the behavioral task was designed to allow us to compare the specific and monkey\u2019s decoders for an attention task with a range of orientation change amounts. To collect the necessary number of repetitions of behavioral trials per stimulus condition (with the limited total number of behavioral trials collected per day), we limited the number of different orientation change amounts to five (Figure 1B) and focused our uncued trials on the median orientation change. Our modeled dataset is critical to addressing our general decoder hypothesis as it allows us to step beyond the restraints of physiological data to model multiple attentional modulation levels for the full range of stimulus orientations. While the main purpose of the electrophysiological data was to analyze the monkey\u2019s decoder, which could only be determined using the neuronal responses recorded from a behaving animal, the purpose of our modeled data is to compare the monkey\u2019s decoder to an ideal general decoder, which can only be determined here using a model.\n\nOur circuit model is an extension of our previously published excitatory/inhibitory cortical network model of attention (Huang et al., 2019). We improved this model to allow us to calculate the network\u2019s responses to the full range of stimulus orientations by extending the three-layer model of V1 and V4 neuronal populations (Huang et al., 2019; Huang et al., 2020) to mimic realistic orientation tuning and organization in the V1 layer (Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/67258/elife-67258-fig2-v1.jpg)\n\n**Figure 2.:** (A) Schematic of an excitatory and inhibitory neuronal network model of attention (Huang et al., 2019) that extends the three-layer, spatially ordered network to include the orientation tuning and organization of V1. The network models the hierarchical connectivity between layer 4 of V1, layers 2 and 3 of V1, and V4. In this model, attention depolarizes the inhibitory neurons in V4 and increases the feedforward projection strength from layers 2 and 3 of V1 to V4. (B, C) We mapped the n-dimensional neuronal activity of our model to a two-dimensional space (a ring). Each dot represents the neuronal activity of the simulated population on a single trial and each color represents the trials for a given orientation. These fluctuations are more elongated in the (B) unattended state than in the (C) attended state. We then calculated the effects of these attentional changes on the performance of specific and general decoders (see Materials and methods). The axes are arbitrary units. (D\u2013F) Comparisons of the modeled versus electrophysiologically recorded effects of attention on V4 population activity. (D) Firing rates of excitatory neurons increased, (E) mean correlated variability decreased, and (F) as illustrated with the first five largest eigenvalues of the shared component of the spike count covariance matrix from the V4 neurons, attention largely reduced the eigenvalue of the first mode. Attentional state denoted by marker color for the model (yellow: most attended; green: least attended) and electrophysiological data (yellow: cued; green: uncued). For the model: 30 samplings of n=50 neurons. Monkey 1 data illustrated for the electrophysiological data: n=46 days of recorded data. SEM error bars. Also see Figure 2\u2014figure supplement 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67258/elife-67258-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) As previously observed in electrophysiological data (Cohen and Maunsell, 2009; Cohen and Kohn, 2011), we observe a strong relationship between noise and signal correlations. During additional recordings collected during most recording sessions (for Monkey 1 illustrated here, n=37 days with additional recordings), the monkey was rewarded for passively fixating the center of the monitor while Gabors with randomly interleaved orientations were flashed at the receptive field location (\u2018Stim 2\u2019 location in Figure 1C). The presented orientations spanned the full range of stimulus orientations (12 equally spaced orientations from 0\u00b0 to 330\u00b0). We calculated the signal correlation for each pair of units based on their mean responses to each of the 12 orientations. We define the noise correlation for each pair of units as the average noise correlation for each orientation. The plot depicts signal correlation as a function of noise correlation across all recording sessions, binned into eight equally sized sets of unit pairs. Error bars represent SEM. (B) The model reproduces the relationship between noise and signal correlations. Signal correlation is plotted as a function of noise correlation, binned into 20 equally sized sets of unit pairs (n=2000 neurons), for each attentional modulation strength (green: least attended; yellow: most attended). The results were averaged over 50 tested orientations. (C) The slope of the relationship between noise and signal correlations (y-axis) decreases with increasing attentional modulation (x-axis). This suggests that noise is less aligned with signal correlation with increasing attentional modulation.\n\nThis model is key to this initial test of the general decoder hypothesis because it allowed us to test an ideal general decoder that used the same set of neuronal weights to estimate the full range of orientations (see Materials and methods). Further, this specific model is key to our study because it is the only model (to our knowledge) that captures the effects of attention on correlated variability that have been frequently observed in electrophysiological data (Huang et al., 2019).\n\nAs the basis for our modeled general decoder, we first mapped the n-dimensional neuronal activity of our model in response to the full range of orientations to a two-dimensional space. Because the neurons were tuned for orientation, we could map the n-dimensional population responses to a ring (Figure 2B, C). The orientation of correlations (the shape of each color cloud in Figure 2B) was not an assumed parameter, and illustrates the outcome of the correlation structure and dimensionality modeled by our data. In Figure 2B, we can see that the fluctuations along the radial directions are much larger than those along other directions for a given orientation. This is consistent with the low-dimensional structure of the modeled neuronal activity. In our model, the fluctuations of the neurons, mapped to the radial direction on the ring, were more elongated in the unattended state (Figure 2B) than in the attended state (Figure 2C).\n\nImportantly, this model reproduces the correlation between noise and signal correlations (Figure 2\u2014figure supplement 1) observed in electrophysiological data (Cohen and Maunsell, 2009; Cohen and Kohn, 2011). This correlation between the shared noise and the shared tuning is a key component of the general decoder hypothesis. We observed this strong relationship between noise and signal correlations in our recorded neurons (Figure 2\u2014figure supplement 1A) as well as in our modeled data (Figure 2\u2014figure supplement 1B). Using this model, we were able to measure the relationship between noise and signal correlations for varying strengths of attentional modulation. Consistent with the predictions of the general decoder hypothesis, attention weakened the relationship between noise and signal correlations (Figure 2\u2014figure supplement 1C).\n\nNext, we calculated the effect of this attentional change on the performances of modeled ideal specific and general decoders, which we will compare to our electrophysiological results in the next section. The specific decoder used optimal neuronal weights (for n neurons in the population) based on the n-dimensional discrimination of two orientations (\u03b81 and \u03b82 in Figure 2B). The general decoder was also tested on the discrimination of those same two orientations (\u03b81 and \u03b82 in Figure 2B), but the neuronal weights of the general decoder were based on the neuronal population responses to all of the orientations in the ring (see Materials and methods for details). Finally, the model more than captured our electrophysiologically recorded attentional changes in V4 firing rates (Figure 2D), mean correlated variability (Figure 2E), and covariance eigenspectrum (Figure 2F).\n\n### A general decoding strategy may clarify the role of mean correlated variability\n\nFirst, we analyzed whether the relationship between attention, behavior, and mean correlated variability could be explained by a specific decoding strategy. This is an important first step because theoretical studies, which do not predict a relationship between mean correlated variability and performance, typically model decision-making as based on an optimal decoding strategy that maximizes the sensory information extracted from the neuronal population activity (Kafashan et al., 2021; Kanitscheider et al., 2015b; Moreno-Bote et al., 2014; Pitkow et al., 2015; Rumyantsev et al., 2020). A resolution to the apparent conflict between theoretical predictions and empirical results would be that perceptual performance is not based on a specific decoding strategy.\n\nIndeed, we found that the effects of attention on the performance of the monkey\u2019s decoder did not match the effects of attention on the performance of the specific decoder (Figure 3A). Manipulating attention affected the performance of each decoder differently: the performance of the specific decoder was little affected by attention, while that of the monkey\u2019s decoder was strongly affected by attention.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/67258/elife-67258-fig3-v1.jpg)\n\n**Figure 3.:** (A) Physiological data for Monkey 1 and Monkey 2: the effect of attention on decoder performance was larger for the monkey\u2019s decoder than for the specific decoder. Left plots: decoder performance (y-axis; leave-one-out cross-validated proportion of trials in which the orientation was correctly identified: starting versus median changed orientation) for each neuronal population size (x-axis) is plotted for the specific (thin lines) and monkey\u2019s (thick lines) decoders in the cued (yellow) and uncued (green) attention conditions. Right plots: the ratio of the decoder performance in the cued versus uncued conditions is plotted for each neuronal population size. SEM error bars (Monkey 1: n=46 days; Monkey 2: n=28 days). (B) Modeled data: the effect of attention on decoder performance was larger for the general decoder than for the specific decoder. Left plot: the inverse of the variance of the estimation of theta (y-axis; equivalent to linear Fisher information for the specific decoder) for each neuronal population size (x-axis) is plotted for the specific decoder (small markers; Equation 1, see Materials and methods) and for the general decoder (large markers; Equation 3, see Materials and methods) in the attended (yellow) and unattended (green) conditions. Right plot: the ratio of Fisher information in the attended versus unattended conditions is plotted for each neuronal population size. (C) Physiological data for Monkey 1 and Monkey 2: the performance of the monkey\u2019s decoder was more related to mean correlated variability (left plots, gray lines of best fit; Monkey 1 correlation coefficient: n=86, or 44 days with two attention conditions plotted per day and two data points excluded \u2013 see Materials and methods, r=\u20130.38, p=5.9 \u00d7 10\u20134; Monkey 2: n=54, or 27 days with two attention conditions plotted per day, r=\u20130.30, p=0.03) than the performance of the specific decoder (right plots; Monkey 1 correlation coefficient: r=\u20130.07, p=0.53; Monkey 2: r=0.13, p=0.36). For both monkeys, the correlation coefficients associated with the two decoders were significantly different from each other (Williams\u2019 procedure; Monkey 1: t=3.7, p=2.3 \u00d7 10\u20134; Monkey 2: t=3.2, p=1.4 \u00d7 10\u20133). Also see Figure 3\u2014figure supplement 1. (D) Modeled data: the performance of the general decoder was more related to mean correlated variability (left plot) than the performance of the specific decoder (right plot; number of neurons fixed at 100 and attentional state denoted by marker color, yellow to green: most attended to least attended). (E) An example plot of the first versus second principal component (PC) of the V4 population responses to each of the six orientations presented in the session, to justify a linear decoding strategy for the more-general decoders (starting orientation illustrated in black, five changed orientations illustrated with a red-blue color gradient from smallest to largest). Though the brain may use nonlinear decoding methods, the neuronal population representations of the small range of orientations tested per day were reasonably approximated by a line; thus, linear methods were sufficient to capture decoder performance for the physiological dataset. (F) Physiological data for Monkey 1 (orange) and Monkey 2 (purple): the more general the decoder (x-axis; number of orientation changes used to determine the decoder weights, with the decoder that best differentiated the V4 responses to the starting orientation from those to one changed orientation on the far left, and the decoder that best differentiated V4 responses to the starting orientation from those to four different changed orientations on the far right), the more correlated its performance to the performance of the monkey\u2019s decoder (y-axis; the across-days correlation between the performance of the monkey\u2019s decoder and the performance of the decoder specified by the x-axis). Mean across all points in a column illustrated by a black horizontal line (see Materials and methods for n values). There was a significant correlation between decoder specificity level (x-axis) and the correlation with the performance of the monkey\u2019s decoder (y-axis; correlation coefficient: r=0.25, p=0.016). (G) The more general the decoder (x-axis), the better its performance predicting the monkey\u2019s choices on the median changed orientation trials (y-axis; the proportion of leave-one-out trials in which the decoder correctly predicted the monkey\u2019s decision as to whether the orientation was the starting orientation or the median changed orientation). Conventions as in (F) (see Materials and methods for n values). There was a significant correlation between decoder specificity level (x-axis) and performance predicting the monkey\u2019s choices (y-axis; correlation coefficient: r=0.44, p=0.016).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67258/elife-67258-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Within the cued attention condition, the performance of the monkey\u2019s decoder was more related to mean correlated variability (left plot; correlation coefficient: n=71 days, r=\u20130.23, p=0.058) than the performance of the specific decoder (right plot; correlation coefficient: r=0.038, p=0.75). The correlation coefficients associated with the two decoders were significantly different from each other (Williams\u2019 procedure: t=3.8, p=1.5 \u00d7 10\u20134). Best fit lines plotted in gray. Data from both monkeys combined (Monkey 1 data shown in orange: n=44 days; Monkey 2 data shown in purple: n=27 days) with mean correlated variability z-scored within monkey. (B) The data within the uncued attention condition showed a similar pattern, with the performance of the monkey\u2019s decoder more related to mean correlated variability (n=69 days, r=\u20130.20, p=0.14) than the performance of the specific decoder (r=0.085, p=0.51; Williams\u2019 procedure: t=2.0, p=0.049). Conventions as in (A) (Monkey 1: n=42 days \u2013 see Materials and methods for data exclusions as in Figure 3C; Monkey 2: n=27 days).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/67258/elife-67258-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Randomly shuffling the trial order per neuron resulted in the Fisher information for the modeled general decoder increasing linearly with the log of the number of neurons (dashed lines) in both the attended (yellow) and unattended (green) conditions. Shuffling removes differential correlations (Moreno-Bote et al., 2014); thus, the Fisher information based on the trial-shuffled data does not saturate. (B) The trial-shuffled data resulted in the Fisher information for the modeled specific decoder increasing linearly with the log of the number of neurons (dashed lines) as well. (C) The superposition of (A) and (B) illustrates that with shuffled data, the general decoder (large markers) and the specific decoder (small markers) behave very similarly. (D) After shuffling the trials, the performances of the general decoder (E) and of the specific decoder based on the trial-shuffled data had very similar relationships to the amount of correlated variability removed by the trial shuffling (number of neurons fixed at 100 and attentional state denoted by marker color, yellow to green: most attended to least attended).\n\nSecond, we used our circuit model of attention to test whether a modeled ideal general decoder was a better match to the physiological monkey\u2019s decoder than a modeled ideal specific decoder. The model allowed us to generate a large dataset with an experimentally unfeasible number of trials per stimulus orientation for a full ring of stimulus orientations, in multiple attention conditions (Figure 2B and C).\n\nWe found that the large effects of attention on the physiological monkey\u2019s decoder (Figure 3A) were better matched by the similarly large effects of attention on the modeled general decoder (Figure 3B) than by the small effects of attention on the modeled specific decoder (Figure 3B). In other words, the monkey\u2019s decoding strategy was most qualitatively matched to the modeled general decoder.\n\nWe note that the effects of attention on the modeled general decoder (Figure 3B) matched the effects of attention on the physiological monkey\u2019s decoder (Figure 3A) in the neuronal population size range recorded in the physiological data. But we also observed that the difference in the attentional effects on the two modeled decoders decreased with larger population sizes (right plot of Figure 3B). This is not noteworthy in and of itself because the attentional effects necessarily decreased as the decoders reached their information saturation points, as defined by the parameters of the modeled neurons. What we do want to note, however, is that the large attentional effects on the physiological monkey\u2019s decoders suggest that the monkeys were not working in the optimal regime near the saturation point. Instead, the monkeys appear to have been working at an inner regime that allowed them to demonstrate large effects of attention on their performance.\n\nThird, we tested the crux of our hypothesis: that a general decoding strategy underlies the frequently reported relationship between perceptual performance and mean correlated variability. This was our most critical test toward understanding the much debated role of mean correlated variability. It would be difficult to interpret a relationship between the performance of a decoder and mean correlated variability in isolation, because a correlation between these two factors could come about through an indirect relationship. But here, we tested the explicit hypothesis that the modeled general decoder would be more related to mean correlated variability than the modeled specific decoder, just as the physiological monkey\u2019s decoder would be more strongly related to mean correlated variability than the physiological specific decoder. Such a finding would indicate that a more-general decoding strategy better explained the relationship between behavior and mean correlated variability than a more-specific decoding strategy.\n\nIndeed, we found that just as the performance of the physiological monkey\u2019s decoder was more strongly related to mean correlated variability than the performance of the physiological specific docoder (Figure 3C; see Figure 3\u2014figure supplement 1 for analyses per attention condition), the performance of the modeled general decoder was more strongly related to mean correlated variability than the performance of the modeled specific decoder (Figure 3D; see Figure 3\u2014figure supplement 2 for trial-shuffled analyses). We modeled much stronger relationships to correlated variability (Figure 3D) than observed with our physiological data (Figure 3C). We observed that the correlation with specific decoder performance was significant with the modeled data but not with the physiological data. This is not surprising as we saw attentional effects, albeit small ones, on specific decoder performance with both the physiological and the modeled data (Figure 3A, B). Even small attentional effects would result in a correlation between decoder performance and mean correlated variability with a large enough range of mean correlated variability values. It is possible that with enough electrophysiological data, the performance of the specific decoder would be significantly related to correlated variability, as well. As described above, our focus is not on whether the performance of any one decoder is significantly correlated with mean correlated variability, but on which decoder provides a better explanation of the frequently observed relationship between performance and mean correlated variability. The performance of the general decoder was more strongly related to mean correlated variability than the performance of the specific decoder.\n\nFinally, while the circuit model allowed us to analyze an ideal general decoder for the full range of stimulus orientations in multiple attention conditions (Figure 2B, C; a full ring of orientations in both unattended and attended conditions), as a sanity check, we used the physiological data from the cued attention condition only (a limited set of five orientation change amounts as illustrated in Figure 1B, in the cued condition only as the uncued condition focused on the median orientation change amount only) to test whether more-general decoders were more related to the monkey\u2019s decoder than more-specific decoders. Would a decoder based on more stimulus orientations be more related to the monkey\u2019s decoder than a decoder based on fewer stimulus orientations?\n\nFor the physiological data, we again used linear decoders as illustrated in Figure 1D and E, as the V4 neuronal population representations of the limited range of stimulus orientations tested in our behavioral task (Figure 1B) were reasonably approximated by a line (Figure 3E; while a complex linear estimator was required for the modeled data based on the full range of orientations, linear methods were sufficient to capture decoder performance for the physiological dataset). First, for each monkey, we calculated the across-days correlation between the performance of the monkey\u2019s decoder and the performance of a decoder based on a single orientation change amount (Figure 3F, \u20181 ori\u2019; see Materials and methods for more details). Next, we calculated the across-days correlation between the performance of the monkey\u2019s decoder and the performance of decoders based on two, three, or four orientation change amounts (Figure 3F, \u20182 oris\u2019 through \u20184 oris\u2019). We found that the more general the decoder, the more its performance was correlated with that of the monkey\u2019s decoder. Further, the more general the decoder, the better it predicted the monkey\u2019s trial-by-trial choices on the median changed orientation trials (Figure 3G).\n\n## Discussion\n\nOur results suggest that the relationship between behavior and mean correlated variability is more consistent with observers using a more-general strategy that employs the same neuronal weights for decoding any stimulus change. The modeled general decoder better matched the attentional effects on the electrophysiological monkey\u2019s decoder and, most importantly, was more strongly related to mean correlated variability than the specific decoder. Further, based on our electrophysiological data, the more general the decoder (the more orientation change amounts used to determine the decoder weights), the more its performance was correlated with that of the monkey\u2019s decoder. Together, these results support the hypothesis that observers use a more-general decoding strategy in scenarios that require flexibility to changing stimulus conditions.\n\nOur study also demonstrates the utility of combining electrophysiological and circuit modeling approaches to studying neural coding. Our model mimicked the correlated variability and effects of attention in our physiological data. Critically, our model produced neuronal tuning and covariance based on the constraints of an actual network capable of processing images as inputs. Using a circuit model allowed us to test a full range of stimulus orientations in multiple attention conditions, allowing us to test the effects of attention on a true general decoder for orientation.\n\n### A fixed readout mechanism\n\nA prior study from our lab found that attention, rather than changing the neuronal weights of the observer\u2019s decoder, reshaped neuronal population activity to better align with a fixed readout mechanism (Ruff and Cohen, 2019). To test whether the neuronal weights of the monkey\u2019s decoder changed across attention conditions (attended versus unattended), Ruff and Cohen switched the neuronal weights across conditions, testing the stimulus information in one attention condition with the neuronal weights from the other. They found that even with the switched weights, the performance of the monkey\u2019s decoder was still higher in the attended condition. The results of this study support the conclusion that attention reshapes neuronal activity so that a fixed readout mechanism can better read out stimulus information. In other words, differences in the performance of the monkey\u2019s decoder across attention conditions may be due to differences in how well the neuronal activity aligns with a fixed decoder.\n\nOur study extends the findings of Ruff and Cohen to test whether that fixed readout mechanism is determined by a general decoding strategy. Our findings support the hypothesis that observers use a general decoding strategy in the face of changing stimulus and task conditions. Our findings do not exclude other potential explanations for the suboptimality of the monkey\u2019s decoder, nor do they exclude the possibility that attention modulates decoder neuronal weights. However, our findings together with those of Ruff and Cohen shed light on why neuronal decoders are suboptimal in a manner that aligns the fixed decoder axis with the correlated variability axis (Ni et al., 2018; Ruff et al., 2018).\n\n### A general decoding strategy in the face of unpredictable stimuli\n\nWe performed this initial test of the overarching general decoder hypothesis in the context of a change detection task along a single stimulus dimension because this type of task was used in many of the studies that reported a relationship between perceptual performance and mean correlated variability (Cohen and Maunsell, 2009; Cohen and Maunsell, 2011; Herrero et al., 2013; Luo and Maunsell, 2015; Mayo and Maunsell, 2016; Nandy et al., 2017; Ni et al., 2018; Ruff and Cohen, 2016; Ruff and Cohen, 2019; Verhoef and Maunsell, 2017; Yan et al., 2014; Z\u00e9non and Krauzlis, 2012). This simple and well-studied task provided an ideal initial test of our general decoder hypothesis.\n\nThis initial test of the general decoder hypothesis suggests that a more-general decoding strategy may explain observations in studies that use a variety of behavioral and stimulus conditions. Studies using a variety of tasks have also demonstrated a relationship between perceptual performance and mean correlated variability. These tasks include heading (Gu et al., 2011), orientation (Gregoriou et al., 2014), and contrast (Ruff and Cohen, 2014a; Ruff and Cohen, 2014b) discrimination tasks, in which the observer must respond to certain stimulus values or compare stimulus values. Some studies of discrimination tasks suggest that the relationship between perceptual performance and mean correlated variability cannot be explained by a specific decoding strategy that maximizes the amount of sensory information extracted for the task (Clery et al., 2017; Gu et al., 2011). It will be interesting to determine whether general decoders for linearly varying stimulus dimensions such as contrast (or speed, direction of motion, etc.) also provide a better explanation of the relationship between behavior and mean correlated variability than specific decoders.\n\nOn the other hand, other studies of perceptual performance have found that observers can achieve high levels of perceptual precision under certain circumstances (Burgess et al., 1981; Kersten, 1987). Such studies suggest that decoding strategies that maximize the amount of extracted sensory information might be used in certain situations. Further tests of decoding strategies in a variety of stimulus conditions and behavioral contexts will be necessary to determine when sensory information decoding prioritizes accuracy and when decoding prioritizes flexibility, or generality, over accuracy. Of particular interest is the potential role of perceptual learning (Seitz and Watanabe, 2005) in determining the extent to which decoding is specific (Gu et al., 2011; Jeanne et al., 2013; Ni et al., 2018).\n\n### General decoders of all features would be inextricably linked to mean correlated variability\n\nOur results address a paradox in the literature. Electrophysiological and theoretical evidence supports that there is a relationship between mean correlated variability and perceptual performance (Abbott and Dayan, 1999; Clery et al., 2017; Haefner et al., 2013; Jin et al., 2019; Ni et al., 2018; Ruff and Cohen, 2019; reviewed by Ruff et al., 2018). Yet, a specific decoding strategy in which different sets of neuronal weights are used to decode different stimulus changes cannot easily explain this relationship (Kafashan et al., 2021; Kanitscheider et al., 2015b; Moreno-Bote et al., 2014; Pitkow et al., 2015; Rumyantsev et al., 2020; reviewed by Kohn et al., 2016). This is because specific decoders of neuronal population activity can easily ignore changes in mean correlated noise (Moreno-Bote et al., 2014).\n\nThe general decoder hypothesis offers a resolution to this paradox. As a decoder becomes more general to more stimulus features, its weights will have to depend on more and more tuning properties of the neuronal population. A fully general decoder of stimuli that vary along many feature dimensions would be one whose neuronal weights depend on the tuning properties of the neurons to all stimulus features to which they are selective. For example, two V4 neurons may both prefer vertical orientations. If they also share a color tuning preference for red, a large response from both neurons might indicate vertical orientation, the color red, or a combination of both features. A fully general decoder would need to resolve this discrepancy by choosing weights for these and other neurons that take not only their tuning for orientation but also their tuning for color into account.\n\nTherefore, the weights of a fully general decoder would depend on the tuning of all neurons to all of the stimulus features to which they are selective. A large number of studies have shown that mean correlated variability depends on tuning similarity for all stimulus features (for review, see Cohen and Kohn, 2011; Ruff et al., 2018). The implication is that the decoding weights for a fully general decoder would depend on exactly the same properties as mean correlated variability.\n\nThis initial study of the general decoder hypothesis tested this idea in the context of a visual environment in which stimulus values only changed along a single dimension. However, our overarching hypothesis is that observers use a general decoding strategy in the complex and feature-rich visual scenes encountered in natural environments. In everyday environments, visual stimuli can change rapidly and unpredictably along many stimulus dimensions. The hypothesis that such a truly general decoder explains the relationship between perceptual performance and mean correlated variability is suggested by our finding that the modeled general decoder for orientation was more strongly related to mean correlated variability than the modeled specific decoder (Figure 3D). Future tests of a general decoder for multiple stimulus features would be needed to determine if this decoding strategy is used in the face of multiple changing stimulus features. Further, such tests would need to consider alternative hypotheses for how sensory information is decoded when observing multiple aspects of a stimulus (Berkes et al., 2009; Deneve, 2012; Lorteije et al., 2015). Studies that use complex or naturalistic visual stimuli may be ideal for further investigations of this hypothesis.\n\nThe purpose of this study was to investigate the relationship between mean correlated variability and a general decoder. We made an initial test of the overarching hypothesis that observers use a general decoding strategy in feature-rich environments by testing whether a decoder optimized for a broader range of stimulus values better matched the decoder actually used by the monkeys than a specific decoder optimized for a narrower range of stimulus values. We purposefully did not make claims about the utility of correlated variability relative to hypothetical situations in which correlated variability does not exist in the responses of a group of neurons, as we suspect that this is not a physiologically realistic condition. Studies that causally manipulate the level of correlated variability in neuronal populations to measure the true physiological and behavioral effects of increasing or decreasing correlated variability levels, through pharmacological or genetic means, may provide important insights into the impact of correlated variability on various decoding strategies.\n\nIn our model, which was designed to mimic real data, attention changed many aspects of neural responses besides just correlated variability. It is therefore possible that any relationship between decoding performance and correlated variability is mostly caused by those concomitant changes. Thus, we used the many trials in our modeled data to test the effects of randomly shuffling the trial order per modeled neuron. These shuffled data resulted in the modeled general and specific decoders becoming essentially indistinguishable in their relationships with the removed correlated variability (Figure 3\u2014figure supplement 2), with those removed correlations essentially representing attention condition. The effects of attention on many aspects of neuronal population activity have been well documented, including effects on neuronal firing rates and on both individual and shared trial-to-trial response variability (Cohen and Maunsell, 2009; Cohen and Maunsell, 2011; Herrero et al., 2013; Luo and Maunsell, 2015; Mayo and Maunsell, 2016; Mitchell et al., 2009; Nandy et al., 2017; Ni et al., 2018; Ruff and Cohen, 2014a; Ruff and Cohen, 2014b; Ruff and Cohen, 2016; Ruff and Cohen, 2019; Z\u00e9non and Krauzlis, 2012). The simulated neurons in our model captured many of these attention effects (Figure 2D\u2013F; Huang et al., 2019). Much theoretical work has supported that in the presence of correlations between neuronal responses, specifically differential or information-limiting correlations, limits on decoding performance will be dominated by these correlations (Moreno-Bote et al., 2014; for review, see Kohn et al., 2016). Removing these correlations by shuffling the trials results in many changes; in particular, our trial-shuffled data demonstrate the well-documented linear growth in Fisher information that is expected with increasing numbers of neurons (Figure 3\u2014figure supplement 2A\u2013C; Averbeck et al., 2006; Kohn et al., 2016; Shadlen et al., 1996). Our trial-shuffled analysis illustrates that removing correlations results in decoder performance being dominated by other effects of attention on neuronal activity, such as the firing rates (gains) of the neurons. Our model reproduces the gain effects of attention on neuronal firing rates observed in electrophysiological data (Figure 2D) which, in the absence of correlations, increases the sensitivity of the population (Averbeck et al., 2006; Kohn et al., 2016; Shadlen et al., 1996). In summary, general and specific decoder performances had indistinguishable relationships with the amount of correlated variability removed by the trial shuffling (Figure 3\u2014figure supplement 2D, E), suggesting that decoder performance became dominated by attention-related firing rate gains intrinsic to our model.\n\nIn conclusion, the findings of this study support the usefulness of a framework that relates sensory information decoding to behavior (for review, see Panzeri et al., 2017). By first determining the decoder that guided each monkey\u2019s behavioral choices, we were able to compare the monkey\u2019s decoder to modeled specific and general decoders to test our hypothesis. These results demonstrate that constraining analyses of neuronal data by behavior can provide important insights into the neurobiological mechanisms underlying perception and cognition.\n\n## Materials and methods\n\n### Electrophysiological recordings\n\nThe subjects were two adult male rhesus monkeys (Macaca mulatta, 8 and 10 kg). All animal procedures were approved by the Institutional Animal Care and Use Committees of the University of Pittsburgh and Carnegie Mellon University (Protocol #17071123). Different aspects of these data were presented previously (Ni et al., 2018). We recorded extracellularly from single units and sorted multiunit clusters (the term \u2018unit\u2019 refers to either; see Ni et al., 2018) in V4 of the left hemisphere using chronically implanted 96-channel microelectrode arrays (Blackrock Microsystems) with 1 mm long electrodes. We performed all spiking sorting manually using Plexon\u2019s Offline Sorter (version 3.3.5, Plexon).\n\nWe only included a recorded unit if its stimulus-driven firing rate was both greater than 10 Hz and significantly higher than the baseline firing rate (baseline calculated as the firing rate in the 100 ms window immediately prior to the onset of the first stimulus per trial; two-sided Wilcoxon signed rank test: p<10\u201310). The population size of simultaneously recorded units was 8\u201345 units (mean 39) per day for Monkey 1 and 7\u201331 units (mean 19) per day for Monkey 2.\n\nNo statistical methods were used to predetermine our sample sizes of subjects or recorded units, but our sample sizes are similar to those used in previous publications that analyzed neuronal and behavioral data similar to the data analyzed here (Cohen and Maunsell, 2009; Ni et al., 2018).\n\n### Behavioral task\n\nThe monkeys performed a change detection task (Figure 1A; Cohen and Maunsell, 2009) with multiple orientation change options (Figure 1B) and cued attention (Posner, 1980) while we recorded electrophysiological data. We presented visual stimuli on a CRT monitor (calibrated to linearize intensity; 1024\u00d7768 pixels; 120 Hz refresh rate) placed 52 cm from the monkey, using custom software written in MATLAB (Psychophysics Toolbox; Brainard, 1997; Pelli, 1997). We monitored each monkey\u2019s eye position using an infrared eye tracker (Eyelink 1000; SR Research) and recorded eye position, neuronal responses (30,000 samples/s), and the signal from a photodiode to align neuronal responses to stimulus presentation times (30,000 samples/s) using Ripple hardware.\n\nA trial began when a monkey fixed its gaze on a small, central spot on the video display while two peripheral Gabor stimuli (one overlapping the RFs of the recorded neurons, the other in the opposite visual hemifield; Figure 1C) synchronously flashed on (for 200 ms) and off (for a randomized period between 200 and 400 ms) at the same starting orientation until at a random, unsignaled time the orientation of one of the stimuli changed. The monkey received a liquid reward for making a saccade to the changed stimulus within 400 ms of its onset.\n\nAttention was cued in blocks of trials, with each block preceded by 10 instruction trials that cued one of the two stimulus locations by only presenting stimuli at that location. Each block consisted of approximately 125 orientation change trials. In each block, the orientation change occurred at the cued location in 80% of the change trials and at the uncued location in 20% of the change trials. Catch trials were intermixed, in which no orientation change occurred within the maximum of 12 stimulus presentations. In catch trials, the monkeys were rewarded for maintaining fixation. Blocks of trials with attention cued to the left hemifield location or to the right hemifield location were presented in alternating order within a recording day.\n\nThe changed orientation at the cued location was randomly selected per trial from one of five changed orientations (with the constraint of required numbers of presentations per changed orientation per block; Figure 1B) such that the monkeys could not predict which orientation change amount was to be detected on any given trial. The changed orientation at the uncued location was randomly either the median (20 trials per block) or the largest orientation change amount (5 trials per block). Uncued changes were collected mainly for the median change amount to maximize the number of uncued trials collected for one change amount. All analyses of the effects of attention analyzed the cued versus uncued median change amounts.\n\nThe size, location, and spatial frequency of the Gabor stimuli were fixed across all recording days. These three parameters were determined in advance of recording the data presented here, using a receptive field mapping task. These parameters were set to maximize the neuronal responses recorded by the array.\n\nThe starting orientation (Figure 1A, B) was identical for all trials within a day. We changed the starting orientation by 15\u00b0 for each new day of recording. We also changed the five changed orientation options (Figure 1B) for each new day of recording, to maintain the task at approximately the same level of difficulty across days. The five changed orientation options were always the same within one session of trials, with one session equaling two blocks of trials: one block of trials with the left stimulus cued, and one block of trials with the right stimulus cued (Figure 1C). We sometimes changed the five orientation options between sessions within a day, again to maintain a consistent level of task difficulty. For those days, we binned the orientation change amounts into five bins based on their log distribution.\n\n### Electrophysiological data analysis\n\nThe data presented are from 46 days of recording for Monkey 1 and 28 days of recording for Monkey 2. Instruction trials were not included in any analyses. Only trials in which the orientation changes occurred at the RF location (Figure 1C) and catch trials were analyzed (see below for specific inclusions per analysis). The first stimulus presentation of each trial was excluded from all analyses to minimize temporal non-stationarities due to adaptation.\n\nFiring rates (Figure 2D), mean correlated variability (Figures 2E and 3C), and covariance eigenspectrum analyses (Figure 2F) were calculated based on orientation change trials on which the monkey correctly detected the change as well as on catch trials. From these trials, only the starting orientation stimulus presentations were included in the analyses. The firing rate per stimulus presentation was based on the spike count response between 60 and 260 ms after stimulus onset to account for V4 latency. These analyses were performed per recording day (such that all starting orientation stimuli analyzed together were identical). Data were presented as the mean per day (Figure 3C) or across days (Figure 2D\u2013F) per attention condition (cued or uncued).\n\nWe defined the mean correlated variability of each pair of simultaneously recorded units (quantified as the noise correlation or spike count correlation; Cohen and Kohn, 2011) as the correlation between the firing rates of the two units in response to repeated presentations of the same stimulus (the starting orientation). This measure of mean correlated variability represents correlations in noise rather than in signal because the visual stimulus was always the same.\n\nFor Figure 3C, we used Williams\u2019 procedure for comparing correlated correlation coefficients (Howell, 2007) to compare the across-days correlation between the performance of the monkey\u2019s decoder and the mean correlated variability of the V4 population to the across-days correlation between the performance of the specific decoder and the mean correlated variability of the V4 population.\n\nFor Monkey 1, two outlier points (uncued trials for each of 2 days) with mean correlated variability values greater than 0.35 were excluded from analysis based on the Tukey method (see Figure 3C for the range of included correlated variability values for Monkey 1). For Figure 3C, with the excluded points included, the correlation coefficients were qualitatively unchanged: for the monkey\u2019s decoder, n=88, or 44 days (see below for data included in decoder analyses) with two attention conditions plotted per day, r=\u20130.34, p=1.7 \u00d7 10\u20133; for the specific decoder, r=\u20130.22, p=0.05.\n\n### V4 population specific decoder\n\nFor Figure 3A and C, we calculated the performance of a specific decoder based on the electrophysiologically recorded V4 neuronal population data (Ni et al., 2018). To avoid artifacts in neuronal firing rates due to eye movements in response to the changed orientation, all V4 population decoder analyses were based on neuronal firing rates during an abbreviated time window: 60\u2013130 ms after stimulus onset.\n\nThe specific decoder was a linear classifier trained to best differentiate the V4 population responses to the median changed orientation from the V4 responses to the starting orientation presented immediately before it (Figure 1D; first and second principal components shown for illustrative purposes only \u2013 analyses were based on neuronal population firing rates). The neuronal weights were calculated per day and per attention condition.\n\nDecoder performance was quantified as the leave-one-out cross-validated proportion of correctly identified orientations (median changed orientation or starting orientation). For Figure 3A, decoder performance was analyzed per number of neurons (x-axis). Per neuronal population size, the most responsive neurons (ranked by evoked response: stimulus-evoked firing rate minus baseline firing rate) were analyzed.\n\nFor Figure 3C, decoder performance was illustrated for a set number of neurons (Monkey 1: 20 units, Monkey 2: 10 units). The number of neurons analyzed for these plots was selected to maximize the number of included neurons and recording days (Monkey 1: n=44 days, 2 days with 8 and 19 recorded units excluded; Monkey 2: n=27 days, 1 day with 7 recorded units excluded).\n\n### V4 population monkey\u2019s decoder\n\nFor Figure 3A, C, we calculated the performance of the monkey\u2019s choice decoder as well (Figure 1E). The monkey\u2019s decoder was a linear classifier trained on the same set of V4 population responses as the specific decoder described above (the neuronal population firing rates in response to the median changed orientation and in response to the starting orientation presented immediately before it). However, unlike the specific decoder, the monkey\u2019s decoder was trained to best differentiate the V4 population responses when the monkey made a saccade indicating it detected the orientation change from the V4 responses when the monkey did not make a saccade (both correctly in response to the starting orientation and incorrectly when the monkey missed the changed orientation).\n\nDecoder performance was quantified just as it was for the specific decoder described above: as the leave-one-out cross-validated proportion of correctly identified orientations (median changed orientation or starting orientation). Figure 3A, C was calculated as described above for the specific decoder.\n\nIn summary, the physiological specific and monkey\u2019s decoders were trained on different classifications of the same set of V4 responses and thus had different neuronal weights. However, everything else about how they were analyzed was the same, including that their performance was tested on the same task of correctly identifying whether each left-out orientation was the median changed orientation or the starting orientation.\n\n### V4 population more-general versus more-specific decoders\n\nFor Figure 3F, we calculated decoders that were increasingly more general, to compare their performance to that of the monkey\u2019s decoder. As described above, due to the limited number of behavioral trials collected per day, we could not calculate an ideal general decoder for orientation based on the physiological data as we could based on the modeled data. However, as a sanity check, we wanted to check whether more-general decoders were more strongly related to the monkey\u2019s decoder than more-specific decoders. Additionally, we only analyzed trials from the cued attention condition (uncued trials were mainly collected for the median orientation change amount, which is why the median orientation change trials were analyzed in the attention analyses illustrated in Figure 3A, C). As with Figure 3C as described above, decoder performance was illustrated for a set number of neurons (Monkey 1: 20 units, Monkey 2: 10 units).\n\nAs above, the monkey\u2019s decoder was trained on the median (third; Figure 1B) orientation change trials. The monkey\u2019s decoder was trained to best differentiate the V4 population responses when the monkey made a saccade (indicating it detected the orientation change) from the V4 responses when the monkey did not make a saccade. Importantly, we sought to avoid the relationship that would be inherent between the monkey\u2019s decoder and any decoder based on those same median (third) orientation change trials. Thus, only the neuronal weights for the monkey\u2019s decoder were based on the median (third) orientation change trials. The weights of all of the other decoders in Figure 3F were based on trials other than the median orientation change trials.\n\nThe most specific decoder tested in Figure 3F was trained to best differentiate the V4 population responses to one changed orientation from the V4 responses to the starting orientation presented immediately before it. The performance of this specific decoder was quantified as the leave-one-out cross-validated proportion of trials on which the decoder correctly identified whether the left-out orientation was that one changed orientation or the starting orientation. The one changed orientation that was tested was either the first, second, fourth, or fifth largest changed orientation (all but the median changed orientation, which was excluded from this analysis due to the inherent relationship between any decoder that included this orientation and the monkey\u2019s decoder which was based on this orientation, as noted above). We calculated the performance of each decoder on each day of recording. We then calculated the across-days correlation between the performance of this specific decoder and the performance of the monkey\u2019s decoder (described above). The correlation coefficient was plotted in the \u20181 ori\u2019 column of Figure 3F for each monkey (n=8 decoders; 1 decoder for each of the 4 included changed orientations, for each of the 2 monkeys).\n\nWe performed this same procedure for increasingly more-general decoders. The decoders illustrated in the \u20182 oris\u2019 column were trained to best differentiate the V4 responses to two changed orientations from the V4 responses to the starting orientation. The two changed orientations used for each \u20182 oris\u2019 decoder were chosen from the four possibilities: the first, second, fourth, and fifth (max) largest changed orientations (n=48 decoders; 1 decoder for each of the 6 combinations of 2 changed orientations, tested on each of the 4 included changed orientations, for each of the 2 monkeys). We calculated the performance of each \u20182 oris\u2019 decoder on the same task as above: identifying whether the orientation was the changed orientation (the first, second, fourth, or fifth largest changed orientation) or the starting orientation. Again, we calculated the across-days correlation between the performance of each \u20182 oris\u2019 decoder and the performance of the monkey\u2019s decoder.\n\nEach \u20183 oris\u2019 decoder was trained to best differentiate the V4 responses to three changed orientations from the V4 responses to the starting orientation (n=32 decoders; 1 decoder for each of the 4 combinations of 3 changed orientations, tested on each of the 4 included changed orientations, for each of the 2 monkeys). The \u20184 oris\u2019 decoder for each monkey was trained to best differentiate the V4 responses to four changed orientations from the V4 responses to the starting orientation (n=8 decoders; 1 decoder for the 1 combination of 4 changed orientations, tested on each of the 4 included changed orientations, for each of the 2 monkeys).\n\nFor Figure 3G, we performanced analyses similar to those performed for Figure 3F, in that we tested each stimulus decoder: \u20181 ori\u2019 decoders (n=8 decoders; 1 specific decoder for either the first, second, fourth, or fifth largest changed orientation, for each of the 2 monkeys), \u20182 oris\u2019 decoders (n=12 decoders; 1 decoder for each of the 6 combinations of 2 changed orientations, for each of the 2 monkeys), \u20183 oris\u2019 decoders (n=8 decoders; 1 decoder for each of the 4 combinations of 3 changed orientations, for each of the 2 monkeys), and \u20184 oris\u2019 decoders (n=2 decoders; 1 decoder for the 1 combination of 4 changed orientations, for each of the 2 monkeys). However, unlike in Figure 3F, where the performance of the stimulus decoders was compared to the performance of the monkey\u2019s decoder on the median orientation change trials, here, we calculated the performance of the stimulus decoder when tasked with predicting the trial-by-trial choices that the monkey made on the median orientation change trials. We plotted the proportion of leave-one-out trials in which each decoder correctly predicted the monkey\u2019s choice as to whether the orientation was the starting orientation or the median changed orientation.\n\n### Network model description\n\nThe network model is similar to the one in Huang et al., 2019. Briefly, the network consists of three modeled stages: (1) layer (L) 4 neurons of V1, (2) L2/3 neurons of V1, and (3) L2/3 neurons of V4 (Figure 2A). Neurons from each area are arranged on a uniform grid covering a unit square $\u0393=[-0.5,0.5]\\times[-0.5,0.5]$. The L4 neurons of V1 are modeled as a population of excitatory neurons, the spikes of which are taken as inhomogeneous Poisson processes with rates determined as below. The L2/3 of V1 and V4 populations are recurrently coupled networks with excitatory and inhibitory neurons. Each neuron is modeled as an exponential integrate-and-fire (EIF) neuron. The connection probability between neurons decays with distance. The network model captures many attention-mediated changes on neuronal responses, such as the reduction of correlated variability within each visual area, increase in correlated variability between visual areas, and the quenching of the low-dimensional correlated variability by attention. The network parameters are the same as those used in Huang et al., 2019 except the following. The feedforward projection width from V1 (L2/3) to V4 is $\\alpha_{ffwd}^{(3)}=0.05$. The feedforward strength from V1 (L2/3) to V4 is $[J_{eF}^{3},J_{iF}^{3}]=\\gamma\u2062[1,0.4]$. From the most unattended state to the most attended state (attentional modulation scale from 0 to 1), $\\gamma$ varies from 20 to 23 mV, and the depolarizing current to the inhibitory neurons in V4, $\\mu_{i}$, varies from 0 to 0.5 mV/ms (Figure 2, Figure 3B, D).\n\nThe model differs from the previous model (Huang et al., 2019) in the following ways. We modeled the V1 (L4) neurons as orientation selective filters with static nonlinearity and Poisson spike generation (Kanitscheider et al., 2015b). The firing rate of each neuron i is $r_{i}\u2062(\\theta,t)=[F_{i}\\timesI~\u2062(\\theta,t)]_{+}$, where $F_{i}$ is a Gabor filter and $I~\u2062(\\theta,t)$ is a Gabor image corrupted by independent noise following the Ornstein-Uhlenbeck process,\n\n$$\nI~\u2062(\\theta,t)=I\u2062(\\theta)+\u03b7\u2062(t)\u2003and\u2003\\tau_{n}\u2062d\u2062\u03b7_{i}=-\u03b7_{i}\u2062d\u2062t+\\sigma_{n}\u2062d\u2062W,\n$$\n\nwith $\\tau_{n}=40$ ms and $\\sigma_{n}=3.5$. The Gabor filters were normalized such that the mean firing rate of V1 (L4) neurons was 10 Hz. Spike trains of V1 (L4) neurons were generated as inhomogeneous Poisson processes with rate $r_{i}\u2062(\\theta,t)$. The Gabor image is defined on $\u0393$ with $25\\times25$ pixels with spatial Gaussian envelope width $\\sigma=0.2$, spatial wavelength $\\lambda=0.6$ and phase $\u03d5=0$ (Kanitscheider et al., 2015b, Supp Equation 6 ). The Gabor filters of V1 (L4) neurons had the same $\\sigma$, $\\lambda$ and $\u03d5$ as the image (Kanitscheider et al., 2015b, Supp Equation 5 ). The orientation $\\theta$ was normalized between 0 and 1. The orientation preference map of L4 neurons in V1 was generated using the formula from Kaschube et al., 2010 (Supp Equation 20) with average column spacing $\u039b=0.2$.\n\nEach network simulation was 20 sec long consisting of alternating OFF (300 ms) and ON (200 ms) intervals. During OFF intervals, spike trains of Layer 1 neurons were independent Poisson processes with rate $r_{X}=5$ Hz. An image with a randomly selected orientation was presented during ON intervals. Spike counts during the ON intervals were used to compute the performance of different decoders and correlated variability. The first spike count in each simulation was excluded. For each parameter condition, the connectivity matrices were fixed for all simulations. The initial states of each neuron\u2019s membrane potential were randomized in each simulation. All simulations were performed on the CNBC Cluster in the University of Pittsburgh. All simulations were written in a combination of C and Matlab (Matlab R 2015a, Mathworks). The differential equations of the neuron model were solved using the forward Euler method with time step $0.01$ ms.\n\n### Network model specific decoder\n\nLet $r$ be a vector of spike counts from all neurons on a single trial, $f$ be the tuning curve function, and $\u03a3$ be the covariance matrix. Consider a fine discrimination task of two orientations $\\theta^{+}=\\theta_{0}+d\u2062\\theta$ and $\\theta^{-}=\\theta_{0}-d\u2062\\theta$. The specific decoder is a local linear estimator:\n\n$$\n\\theta^=\\theta_{0}+w^{T}(r\u2212\\frac{f(\\theta^{+})+f(\\theta^{\u2212})}{2}).\n$$\n\nThe optimal weight to minimize the mean squared error over all trials, $E=\u27e8|\\theta^\u2212\\theta|^{2}\u27e9$, is\n\n$$\nw_{opt}^{s}=\\frac{\u03a3^{\u22121}f^{\u2032}}{f^{\u2032}\u03a3^{\u22121}f^{\u2032}}.\n$$\n\nThe linear Fisher information is equivalent to the inverse of the variance of the optimal specific decoder:\n\n$$\nI=\\frac{1}{Var(\\theta^_{opt}|\\theta^{i})}=f^{\u2032}\u03a3^{\u22121}f^{\u2032}.\n$$\n\nThe linear Fisher information is estimated with bias-correction (Figure 3B; Kanitscheider et al., 2015a):\n\n$$\nI^=\\frac{(f^{+}\u2212f^{\u2212})^{T}}{d\\theta}(\\frac{\u03a3^{+}+\u03a3^{\u2212}}{2})^{\u22121}\\frac{(f^{+}\u2212f^{\u2212})}{d\\theta}(\\frac{2N_{tr}\u2212N\u22123}{2N_{tr}\u22122})\u2212\\frac{2N}{N_{tr}d\\theta^{2}},\n$$\n\nwhere $f^{i}$ and $\u03a3^{i}$ are the empirical mean and covariance, respectively, for $\\theta^{i}$, $i\\in{+,-}$. The number of neurons sampled is $N$, and the number of trials for each $\\theta^{i}$ is $N_{tr}$. In simulations, we used $\\theta_{0}=0.5$ and $d\u2062\\theta=0.01$. There were 58,500 spike counts in total for $\\theta^{+}$ and $\\theta^{-}$.\n\n### Network model general decoder\n\nThe general decoder is a complex linear estimator $z^=w^{T}r$ (Shamir and Sompolinsky, 2006) where $w$ is fixed for all $\\theta$. The estimator $z^$ maps the population activity $r$ in response to all orientations to a circle ($z=e^{i\u2062\\theta}$ in complex domain). The estimation of orientation is $\\theta^=arg\u2062(z^)$. The optimal weight $w_{opt}^{g}$ that minimizes the mean squared error, $E(w)=\u27e8|z^\u2212z|^{2}\u27e9_{\\theta,r}$, averaged over all $\\theta$ and trials of $r$, is\n\n$$\nw_{opt}^{g}=\u27e8\u03a3(\\theta)+ff^{T}\u27e9_{\\theta}^{\u22121}\u27e8fe^{i\\theta}\u27e9_{\\theta},\n$$\n\nThe mean squared error of the optimal general decoder is\n\n$$\nE(w_{opt}^{g})=1\u2212(\u27e8fe^{i\\theta}\u27e9_{\\theta})^{\u2217}\u27e8\u03a3(\\theta)+ff^{T}\u27e9_{\\theta}^{\u22121}(\u27e8fe^{i\\theta}\u27e9_{\\theta}),\n$$\n\nwhere $*$ denotes the conjugate transpose. Hence, the estimation error of $z^$ depends on both the covariance matrix, $\u03a3$, and tuning similarity, $ff^{T}$. The performance of the general decoder is measured as $I_{g}=1/Var\u2062(\\theta^)$ (Figure 3B). The estimation of $I_{g}$ is\n\n$$\nI^_{g}=\\frac{1}{Var(arg((w_{opt}^{g})^{T}r)\u2212\\theta)}\\frac{N_{tr}\u2212N\u22122}{N_{tr}\u22121},\n$$\n\nwhere $N_{tr}$ is the total number of trials for all $\\theta$\u2019s. In simulations, we used 50 $\\theta$\u2019s uniformly spaced between 0 and 1. There were 117,000 trials in total for all $\\theta$\u2019s.\n\n### Dependence of network model decoders\u2019 performance on correlated variability (Figure 3D)\n\nWe trained specific and general decoders on the same spike count dataset ($r$) in response to pairs of orientations, $\\theta_{1}$ and $\\theta_{2}$ (with difference $\u0394\u2062\\theta=0.04$). The specific decoder was trained on the $N$-dimensional space of neural responses, using a support vector machine model with two-fold cross-validation to linearly classify $r$ for the two orientations. The general decoder first maps $r$ to a two-dimensional plane $z^=(w_{opt}^{g})^{T}r$ using the optimal weight $w_{opt}^{g}$ (Equation 2) computed with the spike counts of all orientations. Then a two-dimensional support vector machine model with two-fold cross-validation was trained to linearly classify $z^$ for $\\theta_{1}$ and $\\theta_{2}$. The correlated variability was computed from the spike counts data for $\\theta_{1}$ of each pair. There were 200 samplings of $N=100$ excitatory neurons from the V4 network, and 10 orientation pairs varying between 0 and 1. There were on average 2,340 trials for each $\\theta$.\n\n### Factor analysis for network model\n\nLet $x\\in\u211d^{n\\times1}$ be the spike counts from $n$ simultaneously recorded neurons. Factor analysis assumes that $x$ is a multi-variable Gaussian process:\n\n$$\nx\u223cN(\\mu,LL^{T}+\u03a8)\n$$\n\nwhere $\\mu\\inR^{n\\times1}$ is the mean spike counts, $L\\in\u211d^{n\\timesm}$ is the loading matrix of the $m$ latent variables and $\u03a8\\in\u211d^{n\\times1}$ is a diagonal matrix of independent variances for each neuron (Cunningham and Yu, 2014). We chose $m=5$ and computed the eigenvalues of $LL^{T}$, $\\lambda_{i}(i=1,2,...,m)$, ranked in descending order. Spike counts were collected using a 200 ms window. There were on average 2,340 trials per attentional condition.\n\n### Code availability\n\nComputer code for all simulations and analysis of the resulting data will be available at https://github.com/hcc11/GeneralDecoder; swh:1:rev:5056b409f2d943736b0478ff7ff38dd247b468b5, Ni et al., 2022.\n",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "3e5daa94-3822-4605-b869-22e509c89d3f",
+      "submission_id": "0bbe72ca-4c3b-431e-bcb5-50ac5a0925ed",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Srdjan Ostojic, https://ror.org/05a0dhs15 Ecole Normale Superieure Paris France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.67258.sa0](https://doi.org/10.7554/eLife.67258.sa0)\n\nEmpirical findings have established that experimental manipulations which increase perceptual accuracy also generally reduce the amount of shared variability between neurons in the visual cortex. To explain this observation, this study combines neurophysiology data and a network model of visual cortex and tests the hypothesis that perception relies on a \"general\" decoding strategy. The results suggest that the brain seeks to decode arbitrary changes in stimuli that appear in the environment.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Srdjan Ostojic, https://ror.org/05a0dhs15 Ecole Normale Superieure Paris France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.67258.sa1](https://doi.org/10.7554/eLife.67258.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A general decoding strategy explains the relationship between behavior and correlated variability\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Tirin Moore as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nA highly robust result when investigating how neural population activity is impacted by performance in a task is that the trial to trial correlations (noise correlations) between neurons is reduced as performance increases. However, the theoretical and experimental literature so far has failed to account for this robust link since reduced noise correlations do not systematically contribute to improved availability or transmission of information (often measured using decoding of stimulus identity). This paper sets out to address this discrepancy by proposing that the key to linking noise correlations to decoding and thus bridging the gap with performance is to rethink the decoders we use : instead of decoders optimized to the specific task imposed on the animal on any given trial (A vs B / B vs C / A vs C), they hypothesize that we should favor a decoder optimized for a general readout of stimulus properties (A vs B vs C).\n\nTo test this hypothesis, the authors use a combination of quantitative data analysis and mechanistic network modeling. Data were recorded from neuronal populations in area V4 of two monkeys trained to perform an orientation change detection task, where the magnitude of orientation change could vary across trials, and the change could happen at cued (attended) or uncued (unattended) locations in the visual field. The model, which extends previous work by the authors, reproduces many basic features of the data, and both the model and data offer support (with one exception, details below) for the hypothesis.\n\nThe reviewers agreed that this is a potentially important contribution, that addresses a widely observed, but puzzling, relation between perceptual performance and noise correlations. The clarity of the hypothesis, and the combination of data analysis and computational modelling are two essential strengths of the paper. Nonetheless, as detailed below, the reviewers believe the manuscript clarity could be further improved in several points, and some additional analysis of the data would provide more straightforward test of the hypothesis.\n\nEssential revisions:\n\n1. it would be important to verify that the model reproduces the correlation between noise and signal correlations since this is really a key argument leading to the author's hypothesis. One possibility would be to make a scatterplot of these two correlations for all neurons for both neural data and the model and for example compare slopes. The slope for the model could be shown for a range of levels of attentional modulation and for the neural data in attended vs unattended as they already do in fig2d of Fig2e. The authors could provide insight into the difference between the specific and general decoder by directly assessing the alignment between the decoders and the noise dimension. This could perhaps (depending on data noise) also be assessed for their physiological decoders of increasing generality (Fig3e).\n\n2. Testing the hypothesis of the general decoder:\n\n2.1 In the data, the authors compare mainly the specific (stimulus) decoder and the monkey's choice decoder. The general stimulus decoder is only considered in Figure 3f, because data across multiple orientations are available only for the cued condition, and therefore the general and specific decoders cannot be compared for changes between cued and uncued. Fair enough, though this could be stated more explicitly around Line 160. However, the hypothesized relation between mean correlations and performance should also be true within a fixed attention condition (cued), comparing sessions with larger vs. smaller correlation. In other words, if the hypothesis is correct, you should find that performance of the \"most general\" decoder (as in Figure 3f) correlates negatively with average noise correlations, across sessions, more so than the \"most specific\" decoder. If there is enough data to identify this trend, it could strengthen the conclusions, because Figure 3c per se is not particularly overwhelming, and this reviewer is not sure that the correlation is significant for cued alone or uncued alone data, despite the fact that the range of noise correlation values within each condition is comparable to the range across conditions.\n\n2.2 The analysis in fig3F provides a strong second line of argument in favor of the hypothesis. However, a lot hangs on the two points for \"1 ori\". This is because the authors restricted analysis to using the 4th orientation as a reference. It seems possible that this analysis could be repeated for other orientations apart from the 3rd on which the monkey data is trained so as to augment the number of points and bring out the relation more clearly.\n\n2.3 In figure 3f, a more straightforward and precise comparison is to use the stimulus decoders to predict the choice, and test whether the more specific or the more general can predict choices more accurately.\n\n3. The main goal of the manuscript is to determine the impact of noise correlations on various decoding schemes. The figures however only show how decoding co-varies with correlations, but a direct, more causal analysis of the effect of correlations on decoding seems to be missing. Such an analysis can be obtained by comparing decoding on simultaneously recorded activity with decoding on trial-shuffled activity, in which noise-correlations are removed. Related to this, the manuscript starts by stating that theoretical studies predict optimal decoding is independent of correlations. Yet, it is apparently never shown (using shuffles) that this prediction actually holds for the \"specific\" decoder. Conversely, it is not shown that the monkeys' or the general decoder are actually sensitive to removing correlations by shuffling.\n\n4. Figure 3a: Why is the performance of the \"monkey's decoder\" so low on uncued trials? Is this fully explained by a change in the magnitude of correlations (ie would shuffling single trials in the cued trials lead to such a large decrease)? Or is it due to some other mechanism?\n\nOn a related note, how different are the four different decoders (specific/monkey, cued/uncued)? It would be interesting to see how much they overlap. More generally, the authors should discuss the alternative that attention modulates also the readout/decoding weights, rather than or in addition to modulating V4 activity. And also, that the decoder is just suboptimal, not suboptimal locally because optimized for generality. For instance, Figure 3a suggests that in the uncued condition there is lots of information in the neural activity, but the monkeys do not use it. In contrast, the general decoder in the model extracts a large fraction of the information (Figure 3b).\n\n5. Quantifying the link between model and data:\n\n5.1 the text providing motivation for the model could be improved. The motivation used in the manuscript is, essentially, that the model allows to extrapolate beyond the data (more stimuli, more repetitions, more neurons). That sounds weak, as the dangers of extrapolation beyond the range of the data are well known. A model that extrapolates beyond existing data is useful to design new experiments and test predictions, but this is not done here. Because the manuscript is about information and decoding, a better motivation is the fact that this model takes an actual image as input and produces tuning and covariance compatible with each other because they are constrained by an actual network that processes the input (as opposed to parametric models where tuning and covariance can be manipulated independently).\n\n5.2 The ring structure, and the orientation of correlations (Figure 2b) seem to be key ingredients of the model, but are they based on data, or ad-hoc assumptions? L'179-181:\"we first mapped the neuronal activity to a 2d space\" \u2013 how was this done? What are the axes in Figure 2b? The correlation structure appears to be organized in 2d, how can one then understand the 1d changes in Figure 2f?\n\n5.3 In the model, the specific decoder is quite strongly linked to correlated variability and the improvement of the general decoder is clear but incremental (0.66 vs 0.83) whereas in the data there really is no correlation at all (Figure 3c). This is a bit problematic because the authors begin by stating that specific decoders cannot explain the link between noise correlations and accuracy but their specific decoder clearly shows a link.\n\nIt may be that the comparison is a bit unfair on the author's hypothesis precisely because of the huge power provided by the model. In order to compare the magnitude of the effect with physiological data, the authors could down sample the results from their model to the range of correlated variability from the monkey data. This may be revealing because the correlation does not seem quite linear and plateaus out close to the monkey's range.\n\n5.4 Quantitative mismatch between model and data: the model is intended to offer only qualitative predictions, and this is fine. But the reviewers did not understand the argument (eg. Line 191 and Line 320) that a quantitative mismatch is a good thing\u2026 after all, if the range of changes in noise correlations is small for the data, isn't that the relevant range?\n\n6. General decoder: Some parts of the text (eg. Line 60, Line 413) refer to a decoder that accounts for discrimination along different stimulus dimensions (eg. different values of orientation, or different color of the visual input). But the results of the manuscripts are about a general decoder for multiple values along a single stimulus dimension. The disconnect should be discussed, and the relation between these two scenarios explained.\n\n7. Some statements in the discussion such as l 354 \"the relationship between behavior and mean correlated variability is explained by the hypothesis that observers use a general strategy\" should be qualified: the authors clearly show that the general decoder amplifies the relationship but in their own data the relationship exists already with a specific decoder.\n\n8. Low-Dimensionality, beginning of Introduction and end of Discussion: experimentally, cortical activity is low-dimensional, and the proposed model captures that. But this reviewer does not understand the argument offered for why this matters for the relation between average correlations and performance. It seems that the dimensionality of the population covariance is not relevant: The point instead is that a change in amplitude of fluctuations along the f'f' direction necessarily impact performance of a \"specific\" decoder, whereas changes in all other dimensions can be accounted for by the appropriate weights of the \"specific\" decoder. On the other hand, changes in fluctuation strength along multiple directions may impact the performance of the \"general\" decoder. Please revise the text to clarify.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"A general decoding strategy explains the relationship between behavior and correlated variability\" for further consideration by eLife. Your revised article has been evaluated by Tirin Moore (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below.\n\nThe authors declined to investigate the impact of shuffling data on their results and the reason given (they are not making claims whether correlations vs no correlation is better) doesn't seem relevant to the point raised. The key issue is that the text suggests a causal, mechanistic link between correlations and the decoder, but this need not to be the case. For instance, in the model, the authors manipulate noise correlations via the modulation of simulated top-down feedback. This may impact other aspects of network activity rather than only correlations, and these other aspects may be responsible for the modified decoding. Similarly, changes in attention levels may indirectly lead to changes in both correlations and decoding, without the two being in a direct causal relation.\n\nIt seems like an easy and straight-forward sanity check to see if the accuracy of the two decoders correlates with attention level after shuffling both training and test sets. If shuffling has no effect on the results, the causal statements would need to be amended and/or discussed.\n",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c7f9f37d-58c9-4318-94dc-39450bc81f8f",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C1",
+      "claim": "Improvements in perception are frequently accompanied by decreases in correlated variability in sensory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Improvements in perception are frequently accompanied by decreases in correlated variability in sensory cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about a relationship observed in the field, supported by multiple citations in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "a992d9fe-b206-46c0-a3e5-85978be07a06",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C2",
+      "claim": "Overall changes in correlated variability should minimally affect optimal information coding.",
+      "claim_type": "EXPLICIT",
+      "source": "This relationship is puzzling because overall changes in correlated variability should minimally affect optimal information coding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by theoretical work cited in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "1032411c-63c6-479c-be1f-d40fba0d41c8",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C4",
+      "claim": "General decoders optimized for broad sets of visual stimuli better matched the animals' decoding strategy than specific decoders.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that general decoders optimized for broad rather than narrow sets of visual stimuli better matched the animals' decoding strategy, and that their performance was more related to the magnitude of correlated variability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's experiments and modeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "cccc04b8-8189-4a05-a8b8-0257d4997f20",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C5",
+      "claim": "The performance of general decoders was more related to the magnitude of correlated variability than specific decoders.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that general decoders optimized for broad rather than narrow sets of visual stimuli better matched the animals' decoding strategy, and that their performance was more related to the magnitude of correlated variability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's experiments and modeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "8d86377a-e62d-4a6f-9b06-2a3aff169073",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C6",
+      "claim": "The inverse relationship between perceptual performance and correlated variability can be explained by observers using a general decoding strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, the inverse relationship between perceptual performance and correlated variability can be explained by observers using a general decoding strategy, capable of decoding neuronal responses to the variety of stimuli encountered in natural vision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "2d12a72a-fd39-4934-b3a0-d65e47a65a93",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C7",
+      "claim": "Increases in perceptual performance correspond to decreases in mean correlation between responses of pairs of neurons to repeated presentations of the same stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Many studies have demonstrated that increases in perceptual performance correspond to decreases in a very simple measure of shared variability in a population of sensory neurons: the mean correlation between the responses of a pair of neurons to repeated presentations of the same stimulus (termed spike count or noise correlations, or rSC; Cohen and Kohn, 2011; Nirenberg and Latham, 2003; Cohen and Maunsell, 2009; Cohen and Maunsell, 2011; Gregoriou et al., 2014; Gu et al., 2011; Herrero et al., 2013; Luo and Maunsell, 2015; Mayo and Maunsell, 2016; Mitchell et al., 2009; Nandy et al., 2017; Ni et al., 2018; Ruff and Cohen, 2014a; Ruff and Cohen, 2014b; Ruff and Cohen, 2016; Ruff and Cohen, 2019; Yan et al., 2014; Z\u00e9non and Krauzlis, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by numerous citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "cd75f59b-7503-4a1b-acaf-7ef5bcaef9f5",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C8",
+      "claim": "The axis in neuronal population space that explains the most mean correlated variability explains virtually all of the choice-predictive signals in visual area V4.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently found that the axis in neuronal population space that explains the most mean correlated variability explains virtually all of the choice-predictive signals in visual area V4 (Ni et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a previous study by the authors.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "17d75e3e-a5e2-400d-83b6-a84c1ce074e9",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C9",
+      "claim": "Neuronal population decoders that extract the maximum amount of sensory information for the specific task at hand can easily ignore mean correlated noise.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent theoretical work shows that neuronal population decoders that extract the maximum amount of sensory information for the specific task at hand can easily ignore mean correlated noise (Kafashan et al., 2021; Kanitscheider et al., 2015b; Moreno-Bote et al., 2014; Pitkow et al., 2015; Rumyantsev et al., 2020; for review, see Kohn et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple theoretical studies cited.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "db98cae7-cae0-4056-bcf5-c98c7303f183",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C10",
+      "claim": "Decoders for specific tasks can ignore mean correlated variability because it does not corrupt the dimensions of neuronal population space that are most informative about the stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Decoders for the specific task at hand can ignore mean correlated variability because it does not corrupt the dimensions of neuronal population space that are most informative about the stimulus (Moreno-Bote et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explanation is supported by a citation to a theoretical study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "72413fed-fdb8-40ba-b4f3-62ac91f66bb6",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C11",
+      "claim": "The dimensions of the neural code that are optimal for general decoding of any stimuli might be very similar to the axes that account for mean correlated variability.",
+      "claim_type": "EXPLICIT",
+      "source": "Our idea is that the dimensions of the neural code that are optimal for the general decoding of any stimuli might be very similar to the axes that account for the mean correlated variability, because mean correlated variability is well known to depend on all of the stimulus features for which the population of neurons is tuned (Cohen and Kohn, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on known properties of correlated variability.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "54e13330-3af5-4827-a8bd-e1fd22b5b890",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C12",
+      "claim": "Mean correlated variability is well known to depend on all of the stimulus features for which the population of neurons is tuned.",
+      "claim_type": "EXPLICIT",
+      "source": "Our idea is that the dimensions of the neural code that are optimal for the general decoding of any stimuli might be very similar to the axes that account for the mean correlated variability, because mean correlated variability is well known to depend on all of the stimulus features for which the population of neurons is tuned (Cohen and Kohn, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "4ce2c7a6-6567-46b4-9b6f-4b09ad30f79d",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C13",
+      "claim": "If observers used a general decoding strategy, their perceptual performance might be inextricably linked to mean correlated variability.",
+      "claim_type": "EXPLICIT",
+      "source": "If observers used this kind of general decoding strategy, their perceptual performance might be inextricably linked to mean correlated variability (Ruff et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the general decoder hypothesis.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "d0aa60f2-1222-40d4-957a-4d428b75e717",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C14",
+      "claim": "Many studies that found performance increased when mean correlated variability decreased used a change detection task.",
+      "claim_type": "EXPLICIT",
+      "source": "This test based on a single stimulus dimension is an important initial test of the general decoder hypothesis because many of the studies that found that performance increased when mean correlated variability decreased used a change detection task (Cohen and Maunsell, 2009; Cohen and Maunsell, 2011; Herrero et al., 2013; Luo and Maunsell, 2015; Mayo and Maunsell, 2016; Nandy et al., 2017; Ni et al., 2018; Ruff and Cohen, 2016; Ruff and Cohen, 2019; Yan et al., 2014; Z\u00e9non and Krauzlis, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of previous studies supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "7aeb5a30-2d30-43a9-b02c-21746153302e",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C15",
+      "claim": "The effects of attention on the performance of the monkey's decoder did not match the effects of attention on the performance of the specific decoder.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that the effects of attention on the performance of the monkey's decoder did not match the effects of attention on the performance of the specific decoder (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the electrophysiological experiments, illustrated in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "0aca4829-9734-4422-b719-6e506c961c00",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C16",
+      "claim": "The performance of the specific decoder was little affected by attention, while that of the monkey's decoder was strongly affected by attention.",
+      "claim_type": "EXPLICIT",
+      "source": "Manipulating attention affected the performance of each decoder differently: the performance of the specific decoder was little affected by attention, while that of the monkey's decoder was strongly affected by attention.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the electrophysiological experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "d77fe570-cd34-4840-80c7-cc5b48fc2d1f",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C17",
+      "claim": "The large effects of attention on the physiological monkey's decoder were better matched by the similarly large effects of attention on the modeled general decoder than by the small effects of attention on the modeled specific decoder.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the large effects of attention on the physiological monkey's decoder (Figure 3A) were better matched by the similarly large effects of attention on the modeled general decoder (Figure 3B) than by the small effects of attention on the modeled specific decoder (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from comparing the electrophysiological data to the model results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "c72f62da-3c4c-4b28-8960-2559b9f30078",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C18",
+      "claim": "The monkey's decoding strategy was most qualitatively matched to the modeled general decoder.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, the monkey's decoding strategy was most qualitatively matched to the modeled general decoder.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the comparison of decoder performances.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "7f8a4f6a-ed6d-4a02-927e-d3734398083a",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C19",
+      "claim": "The performance of the physiological monkey's decoder was more strongly related to mean correlated variability than the performance of the physiological specific decoder.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that just as the performance of the physiological monkey's decoder was more strongly related to mean correlated variability than the performance of the physiological specific docoder (Figure 3C; see Figure 3\u2014figure supplement 1 for analyses per attention condition), the performance of the modeled general decoder was more strongly related to mean correlated variability than the performance of the modeled specific decoder (Figure 3D; see Figure 3\u2014figure supplement 2 for trial-shuffled analyses).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the electrophysiological data analysis, shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "f9c8c83b-12c9-4299-b282-2371693b47a4",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C20",
+      "claim": "The performance of the modeled general decoder was more strongly related to mean correlated variability than the performance of the modeled specific decoder.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that just as the performance of the physiological monkey's decoder was more strongly related to mean correlated variability than the performance of the physiological specific docoder (Figure 3C; see Figure 3\u2014figure supplement 1 for analyses per attention condition), the performance of the modeled general decoder was more strongly related to mean correlated variability than the performance of the modeled specific decoder (Figure 3D; see Figure 3\u2014figure supplement 2 for trial-shuffled analyses).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the modeling analysis, shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "8b80621c-e38d-4d8b-a6ba-e120cc485b2b",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C21",
+      "claim": "The more general the decoder, the more its performance was correlated with that of the monkey's decoder.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the more general the decoder, the more its performance was correlated with that of the monkey's decoder.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the physiological data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "3f9190cb-30c8-4f27-a1b0-cf9540cf42ce",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C22",
+      "claim": "The more general the decoder, the better it predicted the monkey's trial-by-trial choices on the median changed orientation trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the more general the decoder, the better it predicted the monkey's trial-by-trial choices on the median changed orientation trials (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the physiological data analysis, shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "146b19f5-66a2-421c-a5d2-72b89c889b79",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C23",
+      "claim": "The modeled general decoder better matched the attentional effects on the electrophysiological monkey's decoder than the specific decoder.",
+      "claim_type": "EXPLICIT",
+      "source": "The modeled general decoder better matched the attentional effects on the electrophysiological monkey's decoder and, most importantly, was more strongly related to mean correlated variability than the specific decoder.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "7199cfc6-ba5f-4918-9f5b-5f760cc5183e",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C24",
+      "claim": "The circuit model mimicked the correlated variability and effects of attention in the physiological data.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model mimicked the correlated variability and effects of attention in our physiological data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model's capabilities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "437c92e6-0565-433b-ae14-e448eba2e64b",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C25",
+      "claim": "The circuit model produced neuronal tuning and covariance based on the constraints of an actual network capable of processing images as inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Critically, our model produced neuronal tuning and covariance based on the constraints of an actual network capable of processing images as inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model's design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "8442103f-1890-44e0-acd9-bb41645697bd",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C26",
+      "claim": "Attention reshapes neuronal population activity to better align with a fixed readout mechanism rather than changing the neuronal weights of the observer's decoder.",
+      "claim_type": "EXPLICIT",
+      "source": "A prior study from our lab found that attention, rather than changing the neuronal weights of the observer's decoder, reshaped neuronal population activity to better align with a fixed readout mechanism (Ruff and Cohen, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a previous study by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "035af0f4-e7a6-4722-b9dc-be3477085c99",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C27",
+      "claim": "Even with switched neuronal weights across attention conditions, the performance of the monkey's decoder was still higher in the attended condition.",
+      "claim_type": "EXPLICIT",
+      "source": "They found that even with the switched weights, the performance of the monkey's decoder was still higher in the attended condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a previous study by Ruff and Cohen.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "b02d877d-8d98-4943-adad-09f78aa99717",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C28",
+      "claim": "Differences in the performance of the monkey's decoder across attention conditions may be due to differences in how well the neuronal activity aligns with a fixed decoder.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, differences in the performance of the monkey's decoder across attention conditions may be due to differences in how well the neuronal activity aligns with a fixed decoder.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of findings from a previous study.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "9401f65b-2fbb-4f21-9cc7-0ffb30062b09",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C29",
+      "claim": "The findings support the hypothesis that observers use a general decoding strategy in the face of changing stimulus and task conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings support the hypothesis that observers use a general decoding strategy in the face of changing stimulus and task conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "cc582c03-f361-4177-9be8-ddb5cf8ceb86",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C30",
+      "claim": "Studies using a variety of tasks have demonstrated a relationship between perceptual performance and mean correlated variability.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies using a variety of tasks have also demonstrated a relationship between perceptual performance and mean correlated variability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "110d58ac-8378-4740-a56b-02bd1b4d298f",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C31",
+      "claim": "Some studies of discrimination tasks suggest that the relationship between perceptual performance and mean correlated variability cannot be explained by a specific decoding strategy that maximizes the amount of sensory information extracted for the task.",
+      "claim_type": "EXPLICIT",
+      "source": "Some studies of discrimination tasks suggest that the relationship between perceptual performance and mean correlated variability cannot be explained by a specific decoding strategy that maximizes the amount of sensory information extracted for the task (Clery et al., 2017; Gu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "5f47d7dd-ecd3-4caf-a8ff-6a8601073863",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C32",
+      "claim": "Other studies of perceptual performance have found that observers can achieve high levels of perceptual precision under certain circumstances.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, other studies of perceptual performance have found that observers can achieve high levels of perceptual precision under certain circumstances (Burgess et al., 1981; Kersten, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "52bfbc5a-2200-4643-9d8a-b62e53023cff",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C33",
+      "claim": "As a decoder becomes more general to more stimulus features, its weights will have to depend on more and more tuning properties of the neuronal population.",
+      "claim_type": "EXPLICIT",
+      "source": "As a decoder becomes more general to more stimulus features, its weights will have to depend on more and more tuning properties of the neuronal population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the properties of general decoders.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "b78060e5-e967-4ffe-9323-d12229470634",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C34",
+      "claim": "A fully general decoder of stimuli that vary along many feature dimensions would be one whose neuronal weights depend on the tuning properties of the neurons to all stimulus features to which they are selective.",
+      "claim_type": "EXPLICIT",
+      "source": "A fully general decoder of stimuli that vary along many feature dimensions would be one whose neuronal weights depend on the tuning properties of the neurons to all stimulus features to which they are selective.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the properties of fully general decoders.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "b1913334-1570-4904-befe-f2425559d1e3",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C35",
+      "claim": "The weights of a fully general decoder would depend on the tuning of all neurons to all of the stimulus features to which they are selective.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the weights of a fully general decoder would depend on the tuning of all neurons to all of the stimulus features to which they are selective.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the properties of fully general decoders.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "2a01673e-717e-4591-9f87-ae08f0726b69",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C36",
+      "claim": "A large number of studies have shown that mean correlated variability depends on tuning similarity for all stimulus features.",
+      "claim_type": "EXPLICIT",
+      "source": "A large number of studies have shown that mean correlated variability depends on tuning similarity for all stimulus features (for review, see Cohen and Kohn, 2011; Ruff et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations to review articles.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "8d11c1ab-cb04-4360-9e1a-2d978e7304c5",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C37",
+      "claim": "The decoding weights for a fully general decoder would depend on exactly the same properties as mean correlated variability.",
+      "claim_type": "EXPLICIT",
+      "source": "The implication is that the decoding weights for a fully general decoder would depend on exactly the same properties as mean correlated variability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the properties of general decoders and correlated variability.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "ab4b1a46-fb42-478e-af39-db309c282e35",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C38",
+      "claim": "The circuit model is the only model (to the authors' knowledge) that captures the effects of attention on correlated variability that have been frequently observed in electrophysiological data.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, this specific model is key to our study because it is the only model (to our knowledge) that captures the effects of attention on correlated variability that have been frequently observed in electrophysiological data (Huang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the uniqueness of the model used in the study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "073fe1bc-14b8-46a5-9787-cb9752f7ab6d",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C39",
+      "claim": "The effects of attention on many aspects of neuronal population activity have been well documented, including effects on neuronal firing rates and on both individual and shared trial-to-trial response variability.",
+      "claim_type": "EXPLICIT",
+      "source": "The effects of attention on many aspects of neuronal population activity have been well documented, including effects on neuronal firing rates and on both individual and shared trial-to-trial response variability (Cohen and Maunsell, 2009; Cohen and Maunsell, 2011; Herrero et al., 2013; Luo and Maunsell, 2015; Mayo and Maunsell, 2016; Mitchell et al., 2009; Nandy et al., 2017; Ni et al., 2018; Ruff and Cohen, 2014a; Ruff and Cohen, 2014b; Ruff and Cohen, 2016; Ruff and Cohen, 2019; Z\u00e9non and Krauzlis, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "16dbdc4f-d11d-47b8-8f73-b5a6043f323d",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C40",
+      "claim": "The simulated neurons in the model captured many of the attention effects observed in electrophysiological data.",
+      "claim_type": "EXPLICIT",
+      "source": "The simulated neurons in our model captured many of these attention effects (Figure 2D\u2013F; Huang et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the model's capabilities, supported by reference to figures and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "464bb7f8-2a0b-4c9b-8d10-e878808d0b55",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C41",
+      "claim": "In the presence of correlations between neuronal responses, specifically differential or information-limiting correlations, limits on decoding performance will be dominated by these correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "Much theoretical work has supported that in the presence of correlations between neuronal responses, specifically differential or information-limiting correlations, limits on decoding performance will be dominated by these correlations (Moreno-Bote et al., 2014; for review, see Kohn et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established theoretical knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "cebeb503-1d9d-4638-bfb0-e57c6dd77f70",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C42",
+      "claim": "Removing correlations by shuffling trials results in linear growth in Fisher information with increasing numbers of neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Removing these correlations by shuffling the trials results in many changes; in particular, our trial-shuffled data demonstrate the well-documented linear growth in Fisher information that is expected with increasing numbers of neurons (Figure 3\u2014figure supplement 2A\u2013C; Averbeck et al., 2006; Kohn et al., 2016; Shadlen et al., 1996).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the trial-shuffled analysis, supported by citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "0bd468a4-bb32-41ce-a204-f56090305b47",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C43",
+      "claim": "The model reproduces the gain effects of attention on neuronal firing rates observed in electrophysiological data.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model reproduces the gain effects of attention on neuronal firing rates observed in electrophysiological data (Figure 2D) which, in the absence of correlations, increases the sensitivity of the population (Averbeck et al., 2006; Kohn et al., 2016; Shadlen et al., 1996).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the model's capabilities, supported by reference to a figure and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "8ed78b15-d0e2-43fa-b97a-a0739a270565",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C44",
+      "claim": "General and specific decoder performances had indistinguishable relationships with the amount of correlated variability removed by trial shuffling.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, general and specific decoder performances had indistinguishable relationships with the amount of correlated variability removed by the trial shuffling (Figure 3\u2014figure supplement 2D, E), suggesting that decoder performance became dominated by attention-related firing rate gains intrinsic to our model.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the trial-shuffled analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "2e746ca9-1af1-456c-a3b5-ec5c0818fa5a",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C45",
+      "claim": "Constraining analyses of neuronal data by behavior can provide important insights into the neurobiological mechanisms underlying perception and cognition.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that constraining analyses of neuronal data by behavior can provide important insights into the neurobiological mechanisms underlying perception and cognition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's approach and findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "83aaa923-7fb6-4af7-949c-ac337fbe7288",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C46",
+      "claim": "The subjects were two adult male rhesus monkeys weighing 8 and 10 kg.",
+      "claim_type": "EXPLICIT",
+      "source": "The subjects were two adult male rhesus monkeys (Macaca mulatta, 8 and 10 kg).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "06e33ad5-9a0a-4926-a4be-94004c5465dc",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C47",
+      "claim": "All animal procedures were approved by the Institutional Animal Care and Use Committees of the University of Pittsburgh and Carnegie Mellon University.",
+      "claim_type": "EXPLICIT",
+      "source": "All animal procedures were approved by the Institutional Animal Care and Use Committees of the University of Pittsburgh and Carnegie Mellon University (Protocol #17071123).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical approval for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "84cb3fc5-45af-4d30-ae9c-b9abdd7a63e3",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C48",
+      "claim": "Extracellular recordings were made from single units and sorted multiunit clusters in V4 of the left hemisphere using chronically implanted 96-channel microelectrode arrays.",
+      "claim_type": "EXPLICIT",
+      "source": "We recorded extracellularly from single units and sorted multiunit clusters (the term 'unit' refers to either; see Ni et al., 2018) in V4 of the left hemisphere using chronically implanted 96-channel microelectrode arrays (Blackrock Microsystems) with 1 mm long electrodes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the recording methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "28a45479-c315-4c8e-9a7b-794b369468f5",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C49",
+      "claim": "The population size of simultaneously recorded units was 8\u201345 units (mean 39) per day for Monkey 1 and 7\u201331 units (mean 19) per day for Monkey 2.",
+      "claim_type": "EXPLICIT",
+      "source": "The population size of simultaneously recorded units was 8\u201345 units (mean 39) per day for Monkey 1 and 7\u201331 units (mean 19) per day for Monkey 2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the sample sizes in the electrophysiological recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "9d109663-1bcb-415c-905b-b0b47499147f",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C50",
+      "claim": "Visual stimuli were presented on a CRT monitor calibrated to linearize intensity with 1024\u00d7768 pixels and 120 Hz refresh rate.",
+      "claim_type": "EXPLICIT",
+      "source": "We presented visual stimuli on a CRT monitor (calibrated to linearize intensity; 1024\u00d7768 pixels; 120 Hz refresh rate) placed 52 cm from the monkey, using custom software written in MATLAB (Psychophysics Toolbox; Brainard, 1997; Pelli, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "c21ec795-e367-43aa-9490-fd94c0ff95c9",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C51",
+      "claim": "The monkey's eye position was monitored using an infrared eye tracker.",
+      "claim_type": "EXPLICIT",
+      "source": "We monitored each monkey's eye position using an infrared eye tracker (Eyelink 1000; SR Research) and recorded eye position, neuronal responses (30,000 samples/s), and the signal from a photodiode to align neuronal responses to stimulus presentation times (30,000 samples/s) using Ripple hardware.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "37ea63c2-afa0-46a1-ad6c-c24064b4bd6a",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C52",
+      "claim": "The monkey received a liquid reward for making a saccade to the changed stimulus within 400 ms of its onset.",
+      "claim_type": "EXPLICIT",
+      "source": "The monkey received a liquid reward for making a saccade to the changed stimulus within 400 ms of its onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the behavioral task reward structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "57bdf0be-dbf4-463f-ae98-a48fabdf8cb6",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C53",
+      "claim": "Attention was cued in blocks of trials, with each block preceded by 10 instruction trials that cued one of the two stimulus locations.",
+      "claim_type": "EXPLICIT",
+      "source": "Attention was cued in blocks of trials, with each block preceded by 10 instruction trials that cued one of the two stimulus locations by only presenting stimuli at that location.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the attention manipulation in the behavioral task.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "3d56b702-4772-42ea-98b4-48390d2a4979",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C54",
+      "claim": "In each block, the orientation change occurred at the cued location in 80% of the change trials and at the uncued location in 20% of the change trials.",
+      "claim_type": "EXPLICIT",
+      "source": "In each block, the orientation change occurred at the cued location in 80% of the change trials and at the uncued location in 20% of the change trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the attention manipulation in the behavioral task.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "f09bbd0e-3193-48c4-aaed-812f3e5927a6",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C55",
+      "claim": "The firing rate per stimulus presentation was based on the spike count response between 60 and 260 ms after stimulus onset to account for V4 latency.",
+      "claim_type": "EXPLICIT",
+      "source": "The firing rate per stimulus presentation was based on the spike count response between 60 and 260 ms after stimulus onset to account for V4 latency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data analysis methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "a686cec4-0b88-4032-aaf6-29d22f1d776f",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C56",
+      "claim": "Mean correlated variability of each pair of simultaneously recorded units was defined as the correlation between the firing rates of the two units in response to repeated presentations of the same stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "We defined the mean correlated variability of each pair of simultaneously recorded units (quantified as the noise correlation or spike count correlation; Cohen and Kohn, 2011) as the correlation between the firing rates of the two units in response to repeated presentations of the same stimulus (the starting orientation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of how mean correlated variability was calculated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "e8be2a13-9a60-4662-bf57-c02f694095c0",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C57",
+      "claim": "For Monkey 1, two outlier points with mean correlated variability values greater than 0.35 were excluded from analysis based on the Tukey method.",
+      "claim_type": "EXPLICIT",
+      "source": "For Monkey 1, two outlier points (uncued trials for each of 2 days) with mean correlated variability values greater than 0.35 were excluded from analysis based on the Tukey method (see Figure 3C for the range of included correlated variability values for Monkey 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of data exclusion criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "008dfdc6-74de-4422-bb29-ef6b5fa09774",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C58",
+      "claim": "The specific decoder was a linear classifier trained to best differentiate the V4 population responses to the median changed orientation from the V4 responses to the starting orientation presented immediately before it.",
+      "claim_type": "EXPLICIT",
+      "source": "The specific decoder was a linear classifier trained to best differentiate the V4 population responses to the median changed orientation from the V4 responses to the starting orientation presented immediately before it (Figure 1D; first and second principal components shown for illustrative purposes only \u2013 analyses were based on neuronal population firing rates).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the specific decoder analysis method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "979d30cb-fd9e-4dc3-96c2-c1ae51dcdd5f",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C59",
+      "claim": "The monkey's decoder was a linear classifier trained to best differentiate the V4 population responses when the monkey made a saccade from the V4 responses when the monkey did not make a saccade.",
+      "claim_type": "EXPLICIT",
+      "source": "The monkey's decoder was a linear classifier trained on the same set of V4 population responses as the specific decoder described above (the neuronal population firing rates in response to the median changed orientation and in response to the starting orientation presented immediately before it). However, unlike the specific decoder, the monkey's decoder was trained to best differentiate the V4 population responses when the monkey made a saccade indicating it detected the orientation change from the V4 responses when the monkey did not make a saccade (both correctly in response to the starting orientation and incorrectly when the monkey missed the changed orientation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the monkey's decoder analysis method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "e9503425-a2eb-4d26-90ce-40b02291eedc",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C60",
+      "claim": "The network model is an extension of a previously published excitatory/inhibitory cortical network model of attention.",
+      "claim_type": "EXPLICIT",
+      "source": "Our circuit model is an extension of our previously published excitatory/inhibitory cortical network model of attention (Huang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model used in the study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "df15195e-80d2-486e-ad8b-b0e4a647777c",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C61",
+      "claim": "The network model consists of three modeled stages: layer 4 neurons of V1, L2/3 neurons of V1, and L2/3 neurons of V4.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, the network consists of three modeled stages: (1) layer (L) 4 neurons of V1, (2) L2/3 neurons of V1, and (3) L2/3 neurons of V4 (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the model architecture.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "f527f079-cc16-47c9-819a-ffb97015e54e",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C62",
+      "claim": "The L4 neurons of V1 were modeled as orientation selective filters with static nonlinearity and Poisson spike generation.",
+      "claim_type": "EXPLICIT",
+      "source": "We modeled the V1 (L4) neurons as orientation selective filters with static nonlinearity and Poisson spike generation (Kanitscheider et al., 2015b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model design.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "3acf36c0-c3c9-4bd3-8f5d-2493d2cd5668",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C63",
+      "claim": "The model more than captured the electrophysiologically recorded attentional changes in V4 firing rates, mean correlated variability, and covariance eigenspectrum.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the model more than captured our electrophysiologically recorded attentional changes in V4 firing rates (Figure 2D), mean correlated variability (Figure 2E), and covariance eigenspectrum (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the model's performance in matching experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "2932fc24-17d9-4a37-a5ed-353a825f4b3f",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C64",
+      "claim": "The model reproduces the relationship between noise and signal correlations observed in electrophysiological data.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this model reproduces the correlation between noise and signal correlations (Figure 2\u2014figure supplement 1) observed in electrophysiological data (Cohen and Maunsell, 2009; Cohen and Kohn, 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the model's performance in matching experimental data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "2dc72038-49d6-4798-bdcd-a086132dfe1f",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C65",
+      "claim": "Attention weakened the relationship between noise and signal correlations in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this model, we were able to measure the relationship between noise and signal correlations for varying strengths of attentional modulation. Consistent with the predictions of the general decoder hypothesis, attention weakened the relationship between noise and signal correlations (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the modeling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "24ad452e-4a76-4475-aa67-327d0b364b6a",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C66",
+      "claim": "The difference in the attentional effects on the two modeled decoders decreased with larger population sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "But we also observed that the difference in the attentional effects on the two modeled decoders decreased with larger population sizes (right plot of Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the modeling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "e2b0447c-1765-44f3-bd67-8910a770963c",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C67",
+      "claim": "The large attentional effects on the physiological monkey's decoders suggest that the monkeys were not working in the optimal regime near the saturation point.",
+      "claim_type": "EXPLICIT",
+      "source": "What we do want to note, however, is that the large attentional effects on the physiological monkey's decoders suggest that the monkeys were not working in the optimal regime near the saturation point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the comparison of decoder performances.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "9fa1dd28-b6ca-430f-b3dc-a6c9d82fe6a4",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C68",
+      "claim": "The monkeys appear to have been working at an inner regime that allowed them to demonstrate large effects of attention on their performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the monkeys appear to have been working at an inner regime that allowed them to demonstrate large effects of attention on their performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the comparison of decoder performances.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "08c475c0-a557-4c6e-aabb-9fc53e58becd",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C69",
+      "claim": "The V4 neuronal population representations of the limited range of stimulus orientations tested in the behavioral task were reasonably approximated by a line.",
+      "claim_type": "EXPLICIT",
+      "source": "For the physiological data, we again used linear decoders as illustrated in Figure 1D and E, as the V4 neuronal population representations of the limited range of stimulus orientations tested in our behavioral task (Figure 1B) were reasonably approximated by a line (Figure 3E; while a complex linear estimator was required for the modeled data based on the full range of orientations, linear methods were sufficient to capture decoder performance for the physiological dataset).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a justification for the use of linear decoders in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "b99a074e-b3a0-488b-99cd-7e5f19db466c",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C70",
+      "claim": "There was a significant correlation between decoder specificity level and the correlation with the performance of the monkey's decoder.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a significant correlation between decoder specificity level (x-axis) and the correlation with the performance of the monkey's decoder (y-axis; correlation coefficient: r=0.25, p=0.016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the analysis of decoder specificity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "d0bdbb09-0894-4945-bf2d-03b79479708b",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C71",
+      "claim": "There was a significant correlation between decoder specificity level and performance predicting the monkey's choices.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a significant correlation between decoder specificity level (x-axis) and performance predicting the monkey's choices (y-axis; correlation coefficient: r=0.44, p=0.016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the analysis of decoder specificity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "ead7a096-f518-4162-85d2-31085330cdfd",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C72",
+      "claim": "The correlation coefficients associated with the monkey's decoder and the specific decoder were significantly different from each other for Monkey 1.",
+      "claim_type": "EXPLICIT",
+      "source": "For both monkeys, the correlation coefficients associated with the two decoders were significantly different from each other (Williams' procedure; Monkey 1: t=3.7, p=2.3 \u00d7 10\u20134; Monkey 2: t=3.2, p=1.4 \u00d7 10\u20133).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the comparison of decoders.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "4f6a8b1a-e465-4276-9beb-1d122198ec44",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C73",
+      "claim": "The correlation coefficients associated with the monkey's decoder and the specific decoder were significantly different from each other for Monkey 2.",
+      "claim_type": "EXPLICIT",
+      "source": "For both monkeys, the correlation coefficients associated with the two decoders were significantly different from each other (Williams' procedure; Monkey 1: t=3.7, p=2.3 \u00d7 10\u20134; Monkey 2: t=3.2, p=1.4 \u00d7 10\u20133).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the comparison of decoders.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "f7a9f89c-c91d-4bf2-a60b-7e20c17c7120",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C74",
+      "claim": "Within the cued attention condition, the performance of the monkey's decoder was more related to mean correlated variability than the performance of the specific decoder.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the cued attention condition, the performance of the monkey's decoder was more related to mean correlated variability (left plot; correlation coefficient: n=71 days, r=\u20130.23, p=0.058) than the performance of the specific decoder (right plot; correlation coefficient: r=0.038, p=0.75).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of the cued attention condition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "09c87be0-ab8f-4140-bebd-454d1d8826cf",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C75",
+      "claim": "Within the uncued attention condition, the performance of the monkey's decoder was more related to mean correlated variability than the performance of the specific decoder.",
+      "claim_type": "EXPLICIT",
+      "source": "The data within the uncued attention condition showed a similar pattern, with the performance of the monkey's decoder more related to mean correlated variability (n=69 days, r=\u20130.20, p=0.14) than the performance of the specific decoder (r=0.085, p=0.51; Williams' procedure: t=2.0, p=0.049).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of the uncued attention condition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "b3dd2795-a460-408c-96d0-cad81586fbdd",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C76",
+      "claim": "Randomly shuffling the trial order per neuron resulted in the Fisher information for the modeled general decoder increasing linearly with the log of the number of neurons in both the attended and unattended conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Randomly shuffling the trial order per neuron resulted in the Fisher information for the modeled general decoder increasing linearly with the log of the number of neurons (dashed lines) in both the attended (yellow) and unattended (green) conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the trial-shuffled analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "17b5d802-64d9-482a-b534-eb4c278fbdd8",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C77",
+      "claim": "Shuffling removes differential correlations, thus the Fisher information based on the trial-shuffled data does not saturate.",
+      "claim_type": "EXPLICIT",
+      "source": "Shuffling removes differential correlations (Moreno-Bote et al., 2014); thus, the Fisher information based on the trial-shuffled data does not saturate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the trial-shuffled analysis results, supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "abbec529-37d0-49fd-9921-38b0e387dffa",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C78",
+      "claim": "With shuffled data, the general decoder and the specific decoder behave very similarly.",
+      "claim_type": "EXPLICIT",
+      "source": "The superposition of (A) and (B) illustrates that with shuffled data, the general decoder (large markers) and the specific decoder (small markers) behave very similarly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the trial-shuffled analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "933cb4c2-bc9c-495b-b253-5f5c68b26ceb",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C79",
+      "claim": "A strong relationship between noise and signal correlations was observed in the recorded neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed this strong relationship between noise and signal correlations in our recorded neurons (Figure 2\u2014figure supplement 1A) as well as in our modeled data (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the electrophysiological data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "f2dd1c03-9eb2-4613-b210-1d46f314f944",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C80",
+      "claim": "The data presented are from 46 days of recording for Monkey 1 and 28 days of recording for Monkey 2.",
+      "claim_type": "EXPLICIT",
+      "source": "The data presented are from 46 days of recording for Monkey 1 and 28 days of recording for Monkey 2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the dataset size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "6b721a1a-fc56-4ba3-9a70-f8044ceaed37",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "claim_id": "C81",
+      "claim": "Computer code for all simulations and analysis will be available at https://github.com/hcc11/GeneralDecoder.",
+      "claim_type": "EXPLICIT",
+      "source": "Computer code for all simulations and analysis of the resulting data will be available at https://github.com/hcc11/GeneralDecoder; swh:1:rev:5056b409f2d943736b0478ff7ff38dd247b468b5, Ni et al., 2022.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about code availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "55818443-4c00-4bea-90de-9f9bd136ebcf",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes a paradox in the literature: while many studies show that perceptual performance improvements correlate with decreased mean correlated variability in sensory cortex (C1, C7), theoretical work predicts that optimal decoders should be minimally affected by such changes in correlated variability (C2, C9, C10).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C7 are well-supported by extensive citations to prior empirical work. Claims C2, C9, and C10 accurately represent theoretical predictions from multiple cited studies. The paradox is clearly articulated and forms the motivation for the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "9f7b347f-d229-4950-b2b6-21a43d970f4d",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors propose the 'general decoder hypothesis': that observers use a single set of neuronal weights to decode any stimuli, and that such general decoders would be inextricably linked to mean correlated variability because both depend on tuning similarity across all stimulus features (C11, C13, C33-C37).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The hypothesis is logically constructed from established knowledge about correlated variability (C12, C36) and follows from reasonable inferences about decoder properties (C33-C35, C37). The theoretical framework is internally consistent and provides a testable prediction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "2412aded-192f-4b7c-a81a-a1bcbdb7b5b5",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Electrophysiological recordings from V4 in two monkeys performing an orientation change detection task revealed that attention strongly affected the monkey's decoder performance but had minimal effects on the specific decoder performance (C15, C16), with the monkey's strategy qualitatively matching a general decoder (C17, C18).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C16 are directly supported by data shown in Figure 3A. The comparison to the modeled general decoder (C17) is supported by Figure 3B. However, the claim that the monkey's strategy was 'most qualitatively matched' (C18) is somewhat subjective and based on visual comparison rather than quantitative metrics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "36e8cda5-2c89-44f4-80ba-46a388d6680a",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The performance of the monkey's decoder was significantly more strongly related to mean correlated variability than the specific decoder in both physiological data (C19, C72-C75) and in the circuit model (C20), supporting the general decoder hypothesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The statistical analyses are appropriate (Williams' procedure for comparing correlations) and show significant differences between decoders for both monkeys (C72, C73). The findings hold within individual attention conditions (C74, C75) and are replicated in the model (C20). Figure 3C and 3D provide clear visual support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "d5e84a6c-15ab-483a-9344-8fdd48c2278c",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Analysis of decoders with varying levels of generality showed that more general decoders (trained on more orientation changes) had performance more correlated with the monkey's decoder (C21, C70) and better predicted the monkey's trial-by-trial choices (C22, C71).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The gradient analysis provides additional support for the general decoder hypothesis. Statistical significance is reported for both correlations (C70: r=0.25, p=0.016; C71: r=0.44, p=0.016). Figure 3F and 3G illustrate the trends clearly. This provides converging evidence beyond the binary specific vs. general comparison.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "c18c1161-22ee-4670-ab8f-2f6a8bea8c47",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A three-layer excitatory/inhibitory cortical circuit model extending from V1 to V4 successfully reproduced key features of the physiological data, including attention effects on firing rates, correlated variability, covariance eigenspectrum, and the relationship between noise and signal correlations (C24, C40, C63-C65).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The model is well-described (C60-C62) and Figure 2D-F shows good qualitative agreement with physiological data. The model's ability to reproduce the noise-signal correlation relationship (C64) and its modulation by attention (C65) is particularly important for testing the general decoder hypothesis. The claim that it 'more than captured' effects (C63) is somewhat imprecise but supported by the figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "3b72e3b8-864f-4a89-b62e-d9a97e6d3392",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The study concludes that general decoders optimized for broad sets of stimuli better matched the animals' decoding strategy and were more related to correlated variability than specific decoders, explaining the inverse relationship between perceptual performance and correlated variability (C4-C6, C23, C29).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These summary claims accurately reflect the convergent evidence from the electrophysiological experiments (C19, C21-C22) and modeling (C20). The conclusion (C6, C29) is appropriately cautious, noting this explains the relationship rather than claiming definitive proof. The evidence supports the hypothesis within the constraints of the experimental design.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "2b1fb891-bdf6-4c39-a6fd-39f2a2bd11be",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors claim their circuit model is the only model that captures the effects of attention on correlated variability observed in electrophysiological data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the authors cite Huang et al., 2019 to support this claim, the assertion that it is 'the only model' is difficult to verify without comprehensive knowledge of all existing models. The qualifier 'to our knowledge' appropriately acknowledges uncertainty, but this remains a strong claim that may not account for all relevant literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "f54ef816-1e29-43fb-bb1e-2dd62882a638",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Prior work from the authors' lab found that attention reshapes neuronal population activity to align with a fixed readout mechanism rather than changing decoder weights (C26-C28).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims accurately summarize findings from Ruff and Cohen, 2019, which is appropriately cited. The interpretation (C28) follows logically from the cited results. This provides important context for the current study's focus on general decoders.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "f2aa5e99-9a2e-4f70-95ce-fe2c93dce577",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The model showed that differences in attentional effects between general and specific decoders decreased with larger population sizes (C66), suggesting monkeys operated in a regime below saturation where attention could have large effects (C67-C68).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C66 is supported by Figure 3B (right plot). The inferences about the monkeys' operating regime (C67-C68) are reasonable interpretations of the data, though they remain somewhat speculative. The authors appropriately note this is an observation rather than a central claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "9b9d34eb-168c-49f0-9750-70e09f6e4b56",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Trial-shuffling analysis showed that removing correlations resulted in linear growth of Fisher information with neuron number and made general and specific decoders behave similarly (C42, C76-C78), with performance then dominated by attention-related firing rate gains (C43-C44).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The trial-shuffling analysis is well-executed and appropriately interpreted. Claims C42, C76-C78 are supported by Figure 3\u2014figure supplement 2A-C. The interpretation that decoder performance becomes dominated by firing rate gains (C43-C44) is reasonable and supported by citations. This control analysis strengthens the main findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "0d0608e9-da88-4c19-be1b-9aca285bb39a",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The manuscript contextualizes the study within broader literature, noting that change detection tasks frequently show relationships between performance and correlated variability (C14, C30), while some discrimination studies suggest specific decoders cannot explain this relationship (C31), though high precision is achievable under certain circumstances (C32).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims accurately summarize relevant prior literature with appropriate citations. They provide important context for understanding when general vs. specific decoding strategies might be employed. The nuanced presentation acknowledges complexity in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "5c2a0848-6e9e-4a2a-a894-83b20ed9d328",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors conclude that constraining analyses of neuronal data by behavior can provide important insights into neurobiological mechanisms underlying perception and cognition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This methodological conclusion is well-supported by the study's approach of comparing the monkey's decoder (constrained by behavior) to theoretical decoders. The study demonstrates the value of this approach by resolving the paradox between theoretical predictions and empirical observations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "d7fb9592-a8a2-48f8-83a6-3ad389df8c04",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The methods section describes the experimental subjects (two male rhesus monkeys, C46), ethical approvals (C47), recording techniques (C48-C49), behavioral task design (C50-C54), and data analysis procedures (C55-C59), with data from 46 and 28 recording days for the two monkeys (C80) and code availability (C81).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The methods are described in appropriate detail for replication. Sample sizes (C49, C80) are reasonable for this type of study. Ethical approvals are documented (C47). The exclusion of two outlier points (C57) is justified using the Tukey method. Code availability (C81) supports reproducibility. No major methodological concerns are apparent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "228b39c2-954d-4768-aedf-2b1f43fed1f9",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The V4 neuronal population representations of the limited range of stimulus orientations tested were reasonably approximated by a line, justifying the use of linear decoders for the physiological dataset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This justification is supported by Figure 3E, which shows the population responses in PC space. The claim appropriately notes that while complex estimators were needed for the full orientation range in the model, linear methods were sufficient for the limited range tested physiologically. This is a reasonable methodological choice.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "9c3d6eb7-020c-4774-adcc-25a42af14d5e",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "A strong relationship between noise and signal correlations was observed in both recorded neurons and modeled data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This claim is supported by Figure 2\u2014figure supplement 1A (physiological data) and 1B (model data). The relationship is well-established in the literature (Cohen and Maunsell, 2009; Cohen and Kohn, 2011) and its reproduction in the model is important for validating the model's relevance to the hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "c3d96bf5-c0cf-4309-9111-598e7a183f8c",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Previous work by the authors found that the axis explaining the most mean correlated variability explains virtually all choice-predictive signals in V4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This claim accurately summarizes findings from Ni et al., 2018, which is appropriately cited. This prior finding provides important motivation for the current study's focus on the relationship between correlated variability and decoding strategy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    },
+    {
+      "id": "1b4b5e11-3421-464e-84d1-f5eeff1e6460",
+      "content_id": "bddde72b-fa05-44a3-843d-2cab5969720a",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The manuscript reviews established knowledge about attention effects on neuronal activity (C39) and the theoretical prediction that differential correlations dominate decoding performance limits (C41).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Both claims accurately represent established knowledge with appropriate citations. C39 is supported by extensive empirical literature, and C41 is supported by theoretical work (Moreno-Bote et al., 2014; Kohn et al., 2016). These provide necessary background for interpreting the study's findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:24:45.000891Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c7f9f37d-58c9-4318-94dc-39450bc81f8f",
+      "result_id": "55818443-4c00-4bea-90de-9f9bd136ebcf"
+    },
+    {
+      "claim_id": "a992d9fe-b206-46c0-a3e5-85978be07a06",
+      "result_id": "55818443-4c00-4bea-90de-9f9bd136ebcf"
+    },
+    {
+      "claim_id": "2d12a72a-fd39-4934-b3a0-d65e47a65a93",
+      "result_id": "55818443-4c00-4bea-90de-9f9bd136ebcf"
+    },
+    {
+      "claim_id": "17d75e3e-a5e2-400d-83b6-a84c1ce074e9",
+      "result_id": "55818443-4c00-4bea-90de-9f9bd136ebcf"
+    },
+    {
+      "claim_id": "db98cae7-cae0-4056-bcf5-c98c7303f183",
+      "result_id": "55818443-4c00-4bea-90de-9f9bd136ebcf"
+    },
+    {
+      "claim_id": "72413fed-fdb8-40ba-b4f3-62ac91f66bb6",
+      "result_id": "9f7b347f-d229-4950-b2b6-21a43d970f4d"
+    },
+    {
+      "claim_id": "54e13330-3af5-4827-a8bd-e1fd22b5b890",
+      "result_id": "9f7b347f-d229-4950-b2b6-21a43d970f4d"
+    },
+    {
+      "claim_id": "4ce2c7a6-6567-46b4-9b6f-4b09ad30f79d",
+      "result_id": "9f7b347f-d229-4950-b2b6-21a43d970f4d"
+    },
+    {
+      "claim_id": "52bfbc5a-2200-4643-9d8a-b62e53023cff",
+      "result_id": "9f7b347f-d229-4950-b2b6-21a43d970f4d"
+    },
+    {
+      "claim_id": "b78060e5-e967-4ffe-9323-d12229470634",
+      "result_id": "9f7b347f-d229-4950-b2b6-21a43d970f4d"
+    },
+    {
+      "claim_id": "b1913334-1570-4904-befe-f2425559d1e3",
+      "result_id": "9f7b347f-d229-4950-b2b6-21a43d970f4d"
+    },
+    {
+      "claim_id": "2a01673e-717e-4591-9f87-ae08f0726b69",
+      "result_id": "9f7b347f-d229-4950-b2b6-21a43d970f4d"
+    },
+    {
+      "claim_id": "8d11c1ab-cb04-4360-9e1a-2d978e7304c5",
+      "result_id": "9f7b347f-d229-4950-b2b6-21a43d970f4d"
+    },
+    {
+      "claim_id": "7aeb5a30-2d30-43a9-b02c-21746153302e",
+      "result_id": "2412aded-192f-4b7c-a81a-a1bcbdb7b5b5"
+    },
+    {
+      "claim_id": "0aca4829-9734-4422-b719-6e506c961c00",
+      "result_id": "2412aded-192f-4b7c-a81a-a1bcbdb7b5b5"
+    },
+    {
+      "claim_id": "d77fe570-cd34-4840-80c7-cc5b48fc2d1f",
+      "result_id": "2412aded-192f-4b7c-a81a-a1bcbdb7b5b5"
+    },
+    {
+      "claim_id": "c72f62da-3c4c-4b28-8960-2559b9f30078",
+      "result_id": "2412aded-192f-4b7c-a81a-a1bcbdb7b5b5"
+    },
+    {
+      "claim_id": "7f8a4f6a-ed6d-4a02-927e-d3734398083a",
+      "result_id": "36e8cda5-2c89-44f4-80ba-46a388d6680a"
+    },
+    {
+      "claim_id": "f9c8c83b-12c9-4299-b282-2371693b47a4",
+      "result_id": "36e8cda5-2c89-44f4-80ba-46a388d6680a"
+    },
+    {
+      "claim_id": "ead7a096-f518-4162-85d2-31085330cdfd",
+      "result_id": "36e8cda5-2c89-44f4-80ba-46a388d6680a"
+    },
+    {
+      "claim_id": "4f6a8b1a-e465-4276-9beb-1d122198ec44",
+      "result_id": "36e8cda5-2c89-44f4-80ba-46a388d6680a"
+    },
+    {
+      "claim_id": "f7a9f89c-c91d-4bf2-a60b-7e20c17c7120",
+      "result_id": "36e8cda5-2c89-44f4-80ba-46a388d6680a"
+    },
+    {
+      "claim_id": "09c87be0-ab8f-4140-bebd-454d1d8826cf",
+      "result_id": "36e8cda5-2c89-44f4-80ba-46a388d6680a"
+    },
+    {
+      "claim_id": "8b80621c-e38d-4d8b-a6ba-e120cc485b2b",
+      "result_id": "d5e84a6c-15ab-483a-9344-8fdd48c2278c"
+    },
+    {
+      "claim_id": "3f9190cb-30c8-4f27-a1b0-cf9540cf42ce",
+      "result_id": "d5e84a6c-15ab-483a-9344-8fdd48c2278c"
+    },
+    {
+      "claim_id": "b99a074e-b3a0-488b-99cd-7e5f19db466c",
+      "result_id": "d5e84a6c-15ab-483a-9344-8fdd48c2278c"
+    },
+    {
+      "claim_id": "d0bdbb09-0894-4945-bf2d-03b79479708b",
+      "result_id": "d5e84a6c-15ab-483a-9344-8fdd48c2278c"
+    },
+    {
+      "claim_id": "7199cfc6-ba5f-4918-9f5b-5f760cc5183e",
+      "result_id": "c18c1161-22ee-4670-ab8f-2f6a8bea8c47"
+    },
+    {
+      "claim_id": "437c92e6-0565-433b-ae14-e448eba2e64b",
+      "result_id": "c18c1161-22ee-4670-ab8f-2f6a8bea8c47"
+    },
+    {
+      "claim_id": "16dbdc4f-d11d-47b8-8f73-b5a6043f323d",
+      "result_id": "c18c1161-22ee-4670-ab8f-2f6a8bea8c47"
+    },
+    {
+      "claim_id": "e9503425-a2eb-4d26-90ce-40b02291eedc",
+      "result_id": "c18c1161-22ee-4670-ab8f-2f6a8bea8c47"
+    },
+    {
+      "claim_id": "df15195e-80d2-486e-ad8b-b0e4a647777c",
+      "result_id": "c18c1161-22ee-4670-ab8f-2f6a8bea8c47"
+    },
+    {
+      "claim_id": "f527f079-cc16-47c9-819a-ffb97015e54e",
+      "result_id": "c18c1161-22ee-4670-ab8f-2f6a8bea8c47"
+    },
+    {
+      "claim_id": "3acf36c0-c3c9-4bd3-8f5d-2493d2cd5668",
+      "result_id": "c18c1161-22ee-4670-ab8f-2f6a8bea8c47"
+    },
+    {
+      "claim_id": "2932fc24-17d9-4a37-a5ed-353a825f4b3f",
+      "result_id": "c18c1161-22ee-4670-ab8f-2f6a8bea8c47"
+    },
+    {
+      "claim_id": "2dc72038-49d6-4798-bdcd-a086132dfe1f",
+      "result_id": "c18c1161-22ee-4670-ab8f-2f6a8bea8c47"
+    },
+    {
+      "claim_id": "1032411c-63c6-479c-be1f-d40fba0d41c8",
+      "result_id": "3b72e3b8-864f-4a89-b62e-d9a97e6d3392"
+    },
+    {
+      "claim_id": "cccc04b8-8189-4a05-a8b8-0257d4997f20",
+      "result_id": "3b72e3b8-864f-4a89-b62e-d9a97e6d3392"
+    },
+    {
+      "claim_id": "8d86377a-e62d-4a6f-9b06-2a3aff169073",
+      "result_id": "3b72e3b8-864f-4a89-b62e-d9a97e6d3392"
+    },
+    {
+      "claim_id": "146b19f5-66a2-421c-a5d2-72b89c889b79",
+      "result_id": "3b72e3b8-864f-4a89-b62e-d9a97e6d3392"
+    },
+    {
+      "claim_id": "9401f65b-2fbb-4f21-9cc7-0ffb30062b09",
+      "result_id": "3b72e3b8-864f-4a89-b62e-d9a97e6d3392"
+    },
+    {
+      "claim_id": "ab4b1a46-fb42-478e-af39-db309c282e35",
+      "result_id": "2b1fb891-bdf6-4c39-a6fd-39f2a2bd11be"
+    },
+    {
+      "claim_id": "8442103f-1890-44e0-acd9-bb41645697bd",
+      "result_id": "f54ef816-1e29-43fb-bb1e-2dd62882a638"
+    },
+    {
+      "claim_id": "035af0f4-e7a6-4722-b9dc-be3477085c99",
+      "result_id": "f54ef816-1e29-43fb-bb1e-2dd62882a638"
+    },
+    {
+      "claim_id": "b02d877d-8d98-4943-adad-09f78aa99717",
+      "result_id": "f54ef816-1e29-43fb-bb1e-2dd62882a638"
+    },
+    {
+      "claim_id": "24ad452e-4a76-4475-aa67-327d0b364b6a",
+      "result_id": "f2aa5e99-9a2e-4f70-95ce-fe2c93dce577"
+    },
+    {
+      "claim_id": "e2b0447c-1765-44f3-bd67-8910a770963c",
+      "result_id": "f2aa5e99-9a2e-4f70-95ce-fe2c93dce577"
+    },
+    {
+      "claim_id": "9fa1dd28-b6ca-430f-b3dc-a6c9d82fe6a4",
+      "result_id": "f2aa5e99-9a2e-4f70-95ce-fe2c93dce577"
+    },
+    {
+      "claim_id": "cebeb503-1d9d-4638-bfb0-e57c6dd77f70",
+      "result_id": "9b9d34eb-168c-49f0-9750-70e09f6e4b56"
+    },
+    {
+      "claim_id": "0bd468a4-bb32-41ce-a204-f56090305b47",
+      "result_id": "9b9d34eb-168c-49f0-9750-70e09f6e4b56"
+    },
+    {
+      "claim_id": "8ed78b15-d0e2-43fa-b97a-a0739a270565",
+      "result_id": "9b9d34eb-168c-49f0-9750-70e09f6e4b56"
+    },
+    {
+      "claim_id": "b3dd2795-a460-408c-96d0-cad81586fbdd",
+      "result_id": "9b9d34eb-168c-49f0-9750-70e09f6e4b56"
+    },
+    {
+      "claim_id": "17b5d802-64d9-482a-b534-eb4c278fbdd8",
+      "result_id": "9b9d34eb-168c-49f0-9750-70e09f6e4b56"
+    },
+    {
+      "claim_id": "abbec529-37d0-49fd-9921-38b0e387dffa",
+      "result_id": "9b9d34eb-168c-49f0-9750-70e09f6e4b56"
+    },
+    {
+      "claim_id": "d0aa60f2-1222-40d4-957a-4d428b75e717",
+      "result_id": "0d0608e9-da88-4c19-be1b-9aca285bb39a"
+    },
+    {
+      "claim_id": "cc582c03-f361-4177-9be8-ddb5cf8ceb86",
+      "result_id": "0d0608e9-da88-4c19-be1b-9aca285bb39a"
+    },
+    {
+      "claim_id": "110d58ac-8378-4740-a56b-02bd1b4d298f",
+      "result_id": "0d0608e9-da88-4c19-be1b-9aca285bb39a"
+    },
+    {
+      "claim_id": "5f47d7dd-ecd3-4caf-a8ff-6a8601073863",
+      "result_id": "0d0608e9-da88-4c19-be1b-9aca285bb39a"
+    },
+    {
+      "claim_id": "2e746ca9-1af1-456c-a3b5-ec5c0818fa5a",
+      "result_id": "5c2a0848-6e9e-4a2a-a894-83b20ed9d328"
+    },
+    {
+      "claim_id": "83aaa923-7fb6-4af7-949c-ac337fbe7288",
+      "result_id": "d7fb9592-a8a2-48f8-83a6-3ad389df8c04"
+    },
+    {
+      "claim_id": "06e33ad5-9a0a-4926-a4be-94004c5465dc",
+      "result_id": "d7fb9592-a8a2-48f8-83a6-3ad389df8c04"
+    },
+    {
+      "claim_id": "84cb3fc5-45af-4d30-ae9c-b9abdd7a63e3",
+      "result_id": "d7fb9592-a8a2-48f8-83a6-3ad389df8c04"
+    },
+    {
+      "claim_id": "28a45479-c315-4c8e-9a7b-794b369468f5",
+      "result_id": "d7fb9592-a8a2-48f8-83a6-3ad389df8c04"
+    },
+    {
+      "claim_id": "9d109663-1bcb-415c-905b-b0b47499147f",
+      "result_id": "d7fb9592-a8a2-48f8-83a6-3ad389df8c04"
+    },
+    {
+      "claim_id": "c21ec795-e367-43aa-9490-fd94c0ff95c9",
+      "result_id": "d7fb9592-a8a2-48f8-83a6-3ad389df8c04"
+    },
+    {
+      "claim_id": "37ea63c2-afa0-46a1-ad6c-c24064b4bd6a",
+      "result_id": "d7fb9592-a8a2-48f8-83a6-3ad389df8c04"
+    },
+    {
+      "claim_id": "57bdf0be-dbf4-463f-ae98-a48fabdf8cb6",
+      "result_id": "d7fb9592-a8a2-48f8-83a6-3ad389df8c04"
+    },
+    {
+      "claim_id": "3d56b702-4772-42ea-98b4-48390d2a4979",
+      "result_id": "d7fb9592-a8a2-48f8-83a6-3ad389df8c04"
+    },
+    {
+      "claim_id": "f09bbd0e-3193-48c4-aaed-812f3e5927a6",
+      "result_id": "d7fb9592-a8a2-48f8-83a6-3ad389df8c04"
+    },
+    {
+      "claim_id": "a686cec4-0b88-4032-aaf6-29d22f1d776f",
+      "result_id": "d7fb9592-a8a2-48f8-83a6-3ad389df8c04"
+    },
+    {
+      "claim_id": "e8be2a13-9a60-4662-bf57-c02f694095c0",
+      "result_id": "d7fb9592-a8a2-48f8-83a6-3ad389df8c04"
+    },
+    {
+      "claim_id": "008dfdc6-74de-4422-bb29-ef6b5fa09774",
+      "result_id": "d7fb9592-a8a2-48f8-83a6-3ad389df8c04"
+    },
+    {
+      "claim_id": "979d30cb-fd9e-4dc3-96c2-c1ae51dcdd5f",
+      "result_id": "d7fb9592-a8a2-48f8-83a6-3ad389df8c04"
+    },
+    {
+      "claim_id": "f2dd1c03-9eb2-4613-b210-1d46f314f944",
+      "result_id": "d7fb9592-a8a2-48f8-83a6-3ad389df8c04"
+    },
+    {
+      "claim_id": "6b721a1a-fc56-4ba3-9a70-f8044ceaed37",
+      "result_id": "d7fb9592-a8a2-48f8-83a6-3ad389df8c04"
+    },
+    {
+      "claim_id": "08c475c0-a557-4c6e-aabb-9fc53e58becd",
+      "result_id": "228b39c2-954d-4768-aedf-2b1f43fed1f9"
+    },
+    {
+      "claim_id": "933cb4c2-bc9c-495b-b253-5f5c68b26ceb",
+      "result_id": "9c3d6eb7-020c-4774-adcc-25a42af14d5e"
+    },
+    {
+      "claim_id": "cd75f59b-7503-4a1b-acaf-7ef5bcaef9f5",
+      "result_id": "c3d96bf5-c0cf-4309-9111-598e7a183f8c"
+    },
+    {
+      "claim_id": "073fe1bc-14b8-46a5-9787-cb9752f7ab6d",
+      "result_id": "1b4b5e11-3421-464e-84d1-f5eeff1e6460"
+    },
+    {
+      "claim_id": "464bb7f8-2a0b-4c9b-8d10-e878808d0b55",
+      "result_id": "1b4b5e11-3421-464e-84d1-f5eeff1e6460"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,406 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C40",
+      "C41",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Dietary choice (separating macronutrients) reduces lifespan in Drosophila compared to a fixed diet, with effects that are sex-specific and not artifacts of laboratory culture. Males consistently show 29-37% reduction in mean lifespan across laboratory and wild strains, while females show variable responses (5-15% reduction in lab strains, variable in wild strains).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 provide direct experimental evidence with appropriate sample sizes (N=104-152) and statistical significance (p<0.001). The sex-specific nature (C40, C131) and validation in wild strains (C35, C36, C41, C132, C133) strengthen the conclusion that this is a robust biological phenomenon. Multiple independent experiments across different genetic backgrounds support the core finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Short-term exposure to dietary choice (2 weeks) does not cause acute toxicity, as flies maintain normal intestinal integrity and climbing ability comparable to fixed diet siblings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37 and C38 provide direct measurements with adequate sample sizes (N=246-291 for intestinal integrity, N=14 for climbing) and non-significant p-values (p=0.33, p=0.49), supporting the inference in C39 that effects are not due to acute toxicity. This is important for ruling out trivial explanations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The lifespan reduction from dietary choice is not primarily explained by increased sugar consumption. Flies on choice diets consume more sugar but similar yeast compared to fixed diets, yet the lifespan effect is much greater than that from high-sugar fixed diets. Additionally, dietary choice reduces triglycerides while high-sugar fixed diets do not, and body weight and protein levels show patterns inconsistent with a simple sugar toxicity mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of evidence support this conclusion: (1) Direct feeding measurements (C42-C44) with adequate replication (N=65-89); (2) Comparison with high-sugar fixed diets showing larger effects from choice (C45); (3) Opposite physiological effects on triglycerides (C46-C49); (4) Body composition data inconsistent with sugar effects (C48, C135, C136); (5) Citation to prior work showing modest effects of extreme sugar diets (C134). The convergence of behavioral, physiological, and comparative evidence strongly supports that the mechanism is distinct from sugar consumption alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Manipulating the concentration of the yeast component in a choice diet modulates lifespan even when total nutrient consumption remains constant, with increased yeast concentration extending lifespan\u2014opposite to effects seen in homogeneous diets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50 and C51 present experimental data (Figures 1I, 1J) showing that changing choice structure affects lifespan independent of consumption amounts. The observation that effects are opposite to those in homogeneous diets (C51, citing Mair et al., 2005) strengthens the argument that choice presentation itself matters. However, the mechanism remains unclear and sample sizes are not explicitly stated in these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C137",
+      "C158"
+    ],
+    "result": "The transcription factor dFoxo, which is required for lifespan effects of excess dietary sugar, is dispensable for the dietary choice effect on lifespan. Similarly, TOR activity and female fecundity (markers of protein availability) are not altered by dietary choice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 provide genetic evidence (Figure 1\u2014figure supplement 2) showing dFoxo is not required for choice effects despite being required for sugar effects (supported by citation to Dobson et al., 2017). Claims C137 and C158 extend this with additional molecular markers. This genetic dissection effectively rules out known sugar-responsive and protein-responsive pathways, supporting a distinct mechanism. The use of established genetic tools and molecular markers is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Animals respond differently to macronutrients depending on how they are presented, and the effects of dietary choice on lifespan and physiology may be mediated by processes distinct from macronutrient intake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims (C54, C55) are well-supported by the convergence of evidence from the previous result groups: consumption patterns don't explain effects, physiological responses differ from high-sugar diets, genetic pathways differ from known nutrient-response pathways, and choice structure matters independent of consumption. This represents a valid synthesis of multiple experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C60",
+      "C61",
+      "C62",
+      "C64",
+      "C65"
+    ],
+    "result": "Neuronal expression of serotonin receptor 5-HT2A in adult flies is required for the lifespan effects of dietary choice. P-element insertion in 5-HT2A abrogates lifespan differences between diets, pan-neuronal RNAi knockdown eliminates or strongly reduces the effect, and adult-specific pharmacological antagonism with pirenperone eliminates the effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary genetic and pharmacological approaches converge on the same conclusion: (1) P-element mutant data (C56-C57, Figure 2A); (2) Two independent RNAi lines with pan-neuronal driver (C60-C61, Figure 2B); (3) Adult-specific drug treatment (C62, Figure 2C). The use of multiple approaches (mutation, RNAi, pharmacology) and the adult-specific effect (C64) provide strong evidence. Sample sizes appear adequate (N=145-153). The modest short lifespan of mutants on fixed diet (C58) is appropriately attributed to pleiotropic effects with citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C83"
+    ],
+    "result": "5-HT2A mutant flies exhibit similar feeding behavior to controls (consuming more sucrose than yeast, spending more time on yeast food) but do not show diet-dependent changes in lifespan, indicating that 5-HT2A is not involved in determining how animals interact with the choice environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 provide behavioral data (Figures 2D, 2E) showing mutants retain normal feeding preferences. Claim C69 notes the critical dissociation between behavior and lifespan in mutants. Claim C83 appropriately concludes that 5-HT2A is not involved in choice behavior per se. This dissociation is important for understanding the receptor's role and is well-supported by the data, though sample sizes (N=97-115 for feeding, N=24 for position) could be larger for behavioral assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Flies on choice diets show increased locomotor activity (greater distance traveled, more walking and micromovements, less sleep/rest) compared to fixed diet siblings, but this effect is independent of 5-HT2A and therefore not causal to lifespan changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 present detailed behavioral tracking data (Figures 2F, 2G) with appropriate statistical analysis (two-way ANOVA, p values for diet\u00d7genotype interaction >0.05). The sample sizes (N=10-11) are modest but reasonable for video tracking. The conclusion in C75 that locomotion changes are not causal is logically sound because mutants show the behavioral change without the lifespan change. This is an important negative result that rules out a simple activity-based mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C81",
+      "C82"
+    ],
+    "result": "Dietary choice induces stress-related phenotypes in a 5-HT2A-dependent manner: increased ethanol consumption, reduced triglycerides, and reduced starvation resistance. These effects are absent in 5-HT2A mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 show diet-dependent ethanol consumption that requires 5-HT2A (Figure 2H, N=16-21). Claims C81-C82 show diet-dependent changes in TAG and starvation resistance that are 5-HT2A-dependent (Figures 2I, 2J, N=48-88). The convergence of multiple stress-related phenotypes all showing 5-HT2A dependence strengthens the interpretation. However, the ethanol assay is somewhat indirect and the starvation resistance could be confounded by the TAG differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C138",
+      "C139"
+    ],
+    "result": "Dietary choice causes rapid and reversible changes in age-specific mortality. Mortality increases within 48 hours of switching to choice diet and reaches steady-state in ~5 days. Conversely, switching from choice to fixed diet decreases mortality within 48 hours, reaching steady-state in ~10 days. Effects are observed only until middle age (~40 days).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C90 provide detailed mortality kinetics from diet-switching experiments (Figures 3A, 3B) with large sample sizes (N=225-282). The rapid response times (48 hours) and asymmetric recovery kinetics (5 vs 10 days) are specific quantitative findings. Claims C138-C139 appropriately summarize these patterns. The age-specificity (effects only until day 40) is an important observation. The experimental design is sound and the data clearly support the conclusions about rapid, reversible, age-limited effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "5-HT2A mutant animals show no mortality differences between dietary conditions and no response to dietary switches, confirming the receptor's requirement for diet-dependent mortality effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 presents control data (Figures 3C, 3D) showing that the dramatic mortality responses to diet switches seen in wild-type flies are completely absent in 5-HT2A mutants. This is a critical negative control that strengthens all conclusions about 5-HT2A's role. Sample sizes appear adequate (N=225-282 mentioned for related experiments).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Principal component analysis of metabolomes identifies two distinct processes: (A) a stable 5-HT2A-independent metabolic network responding slowly to diet history (10.2-11.2% of variation, PC2/PC3), and (B) a dynamic 5-HT2A-dependent network responding rapidly to dietary switches and associated with mortality (2.0-2.2% of variation, PC6).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C102 describe a sophisticated PCA analysis (Figures 3F-I) that successfully separates genotype effects, diet history effects, and acute diet-switch effects. The identification of two distinct metabolic processes with different kinetics and 5-HT2A dependence is well-supported by the data (N=8-10 samples per treatment, 30-50 heads/bodies per sample). The variance explained by each PC is quantified. However, the interpretation that PC6 (2% of variance) represents the causally relevant changes requires the assumption that small variance components can have large phenotypic effects, which is reasonable but should be stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "5-HT2A-independent metabolic changes (Group A): 45 metabolites in heads and 46 in bodies show diet-dependent changes independent of genotype, with 13/21 increased and 32/25 decreased in heads/bodies respectively. Pathway analysis reveals involvement of amino acid metabolism pathways. About 40% of these metabolites are modulated in both tissues, with 75% changing in the same direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C108 present systematic metabolomics analysis with clear statistical criteria (pDiet<0.05, pDiet\u00d7Genotype>0.05) applied to 103 head and 125 body metabolites. The numbers are specific and the pathway analysis (C106, Figure 4C) is appropriately qualified as limited by the small metabolite panel. The tissue concordance analysis (C107-C108) provides additional validation. The statistical approach is sound, though the authors appropriately note limitations of pathway analysis with incomplete metabolite coverage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "5-HT2A-dependent metabolic changes (Group B): 18 metabolites in heads and 19 in bodies show diet\u00d7genotype interactions. Six of seven metabolites present in both tissues change in the same direction. Pathway analysis identifies 'alanine, aspartate and glutamate metabolism' as the only category affected in both tissues in a 5-HT2A-dependent manner, with candidate metabolites being TCA cycle members or direct precursors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C114 present the key 5-HT2A-dependent metabolic signature with appropriate statistics (ANOVA, pDiet\u00d7Genotype\u22640.05). The high concordance between tissues (6/7 in same direction, C111) strengthens confidence. The pathway analysis (C112-C113, Figure 4D) identifies a specific, biologically coherent pathway. Claim C114's interpretation linking to TCA cycle is supported by KEGG pathway analysis. This represents a focused, mechanistically interpretable metabolic signature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C115",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Dietary choice causes 5-HT2A-dependent upregulation of TCA cycle intermediates and their amino acid precursors. Oxaloacetate increases in both tissues; \u03b1-ketoglutarate increases in heads only; fumarate increases in bodies only. The corresponding amino acid precursors (asparagine, glutamine, aspartate) show tissue-specific increases matching their TCA intermediate products. Lysine (acetyl-CoA precursor) increases in both tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115 and C118-C124 present a coherent metabolic story with specific, tissue-resolved changes (Figure 5A). The parallel changes in TCA intermediates and their amino acid precursors provide internal consistency and biological plausibility. The tissue-specific patterns (e.g., \u03b1-ketoglutarate and glutamine only in heads) suggest localized metabolic regulation. The data are presented as boxplots with individual points visible, allowing assessment of variability. This is a well-supported, mechanistically interpretable result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C151"
+    ],
+    "result": "Knockdown of glutamate dehydrogenase (GDH) using an inducible adult-specific system abrogates the lifespan differences between choice and fixed diets, without affecting nutrient consumption or total protein levels. This implicates GDH and \u03b1-ketoglutarate metabolism in the dietary choice effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C127 presents the key genetic intervention (Figure 5C, N=144-153) showing GDH knockdown eliminates diet effects on lifespan. Claim C128 provides appropriate negative control showing the inducer (RU486) itself doesn't cause the effect (Figure 5\u2014figure supplement 1). Claims C129-C130 show the intervention doesn't affect feeding or protein levels (Figures 5D, 5\u2014figure supplement 2), ruling out trivial explanations. Claim C151 connects this to the metabolomics. This is strong causal evidence linking a specific metabolic enzyme to the phenotype, though the tissue/cell-type specificity remains unknown as the authors acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The mortality patterns from dietary choice are distinct from other dietary/environmental perturbations: effects don't accumulate and are absent in older flies (>40 days), unlike dietary restriction (which affects all of adulthood) or temperature (which has cumulative, permanent effects).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C141 present the interpretation of age-limited effects based on the mortality data. Claims C142-C145 provide comparative context with appropriate citations (Chapman and Partridge 1996; Mair et al., 2003; Carvalho et al., 2017). The comparisons effectively position the dietary choice effect as mechanistically distinct. However, C140 includes speculation about mechanisms (age-dependent reduction in serotonin signaling, demographic heterogeneity) that is not directly tested. The core observation of age-limited effects is well-supported; the mechanistic speculation is appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "The neuronal response to dietary choice, mediated by 5-HT2A, reshapes metabolic networks in peripheral tissues, particularly affecting TCA cycle and amino acid metabolism. At least one metabolite, \u03b1-ketoglutarate, is directly involved in the lifespan effect, as evidenced by its increased abundance on choice diets and the abrogation of lifespan effects by GDH inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C146-C150) synthesize the major findings into a coherent model. The evidence chain is strong: 5-HT2A is required (genetic/pharmacological data), metabolic changes are 5-HT2A-dependent (metabolomics), TCA cycle is specifically affected (pathway analysis), \u03b1-ketoglutarate is elevated (metabolomics), and GDH knockdown eliminates the effect (genetics). The model in Figure 6 appropriately summarizes this. The conclusion that \u03b1-ketoglutarate is \"directly involved\" (C149) is well-supported by the GDH experiment, though downstream mechanisms remain unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "While \u03b1-ketoglutarate has been shown to modulate longevity in C. elegans (via TOR inhibition) and recently in flies and mice, the dietary choice effect operates through different mechanisms: neither FOXO nor TOR signaling is involved, suggesting \u03b1-ketoglutarate may recruit different mechanisms in a choice environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C157 appropriately cite prior work establishing \u03b1-ketoglutarate's role in aging across species (Chin et al., 2014; Williams et al., 2009; Su et al., 2019; Asadi Shahmirzadi et al., 2020). Claims C158-C159 present the key negative results (Figures 1\u2014figure supplement 2, 1\u2014figure supplement 3) showing FOXO and TOR are not involved in the choice effect. This effectively distinguishes the current mechanism from known \u03b1-ketoglutarate-dependent pathways. The speculation in C159 is appropriately qualified. This comparative analysis strengthens the novelty of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "The authors propose that dietary choice effects result from metabolic changes induced by the need to continuously evaluate macronutrient availability against physiological demand. This could involve sequential activation of nutrient-sensing pathways (when nutrients are consumed separately vs. simultaneously) or differences in perceived flavor when macronutrients are paired vs. separate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C161-C164 present hypotheses about mechanisms (marked as SPECULATION and INFERENCE in evidence types). While these are reasonable hypotheses consistent with the data, they are not directly tested. Claim C164 cites relevant work (Ahn et al., 2011; Ostojic et al., 2014) but doesn't provide direct evidence for flavor differences in this system. These represent plausible models for future testing rather than established results. The speculation is appropriate for a Discussion section but should not be considered demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Historical context and literature review: Diet has been recognized to modulate aging for nearly a century, with early focus on caloric restriction. Recent work has shifted focus from calories to dietary composition and specific nutrients, with evidence that macronutrient ratios and nutrient availability are often more important than total calories. The long-term effects of complex nutritional environments with dietary choice on aging were previously unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C20 provide appropriate historical context and literature review with relevant citations (McCay et al., 1935; Weindruch et al., 1986; Lee et al., 2008; Bruce et al., 2013; etc.). These claims accurately represent the field's evolution from caloric restriction to geometric framework approaches. Claim C20 appropriately identifies the knowledge gap addressed by the current study. This background is well-supported by citations and accurately frames the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "Behavioral observations show that flies consume more sugar than yeast but spend more time on yeast food when given a choice. This behavior is retained in 5-HT2A mutants, establishing that both control and mutant flies can recognize dietary components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C165 presents the behavioral observation (from Figures 2D, 2E). Claims C166-C168 note that mutants retain this behavior and draw the appropriate inference about recognition ability. This is important for interpreting the mutant phenotype\u2014the receptor is not required for nutrient recognition per se but for coupling recognition to physiological/lifespan outcomes. The logic is sound and the data support the conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "Broader context: In nature, animals continuously evaluate resources to maximize fitness. In humans, abundant choice can be stressful. Acute stress can be beneficial but chronic stress is detrimental. Drosophila exhibit stress-related behaviors mediated by conserved neuronal pathways including serotonin signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C173 provide appropriate broader context with relevant citations (Galef, 1996; Lima, 1998; Schwartz, 2004; Dhabhar et al., 2012; Epel et al., 2004; Yang et al., 2013; etc.). These claims accurately represent established knowledge and provide context for interpreting the findings in terms of stress and decision-making. The citations support the statements made.",
+    "result_type": "MINOR"
+  }
+]

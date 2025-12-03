@@ -1,0 +1,349 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "TNBC represents 15-20% of breast cancers and is characterized by aggressive clinical features, lack of ER/PR/HER2 expression, and limited treatment options historically restricted to chemotherapy with significant toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 establish the clinical context for TNBC through citations to established literature (Anders and Carey 2009; Masui et al. 2013). These are well-established facts in the field and provide appropriate background for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "ZHX2 is a transcription factor located on 8q24 with context-dependent roles as either tumor suppressor or oncogene, and is regulated by pVHL in ccRCC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C23 provide comprehensive background on ZHX2 structure, function, and prior characterization, all supported by appropriate citations. The context-dependent role (C22) is appropriately inferred from the cited evidence showing different functions in different cancer types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Tumor hypoxia and the HIF pathway are established mechanisms in cancer biology, with EglN-mediated hydroxylation leading to pVHL-dependent HIF1\u03b1 degradation under normoxia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C34 describe well-established mechanisms of hypoxia signaling supported by appropriate citations (Semenza 2012; Appelhoff et al. 2004; Ivan et al. 2001; Jaakkola et al. 2001). This provides necessary background for understanding the study's mechanistic findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "ZHX2 is amplified in various cancers including breast cancer (~15%) and ovarian cancer (~40%), with TNBC showing the highest amplification rate among breast cancer subtypes, and amplification correlates with gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C41 are supported by TCGA and METABRIC data analysis shown in Figure 1A-D. The correlation analysis (C40) shows statistical significance, and the inference that amplification contributes to overexpression (C41) is reasonable given the correlation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "ZHX2 overexpression correlates with worse survival specifically in TNBC but not other breast cancer subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 is supported by Kaplan-Meier survival analysis shown in Figure 1\u2014figure supplement 1A, B. The subtype-specific association strengthens the rationale for focusing on TNBC.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "ZHX2 protein is elevated in breast cancer cell lines compared to normal breast epithelial cells, and is upregulated in the majority (8/10) of TNBC patient tumors with increased nuclear localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are supported by western blot data (Figure 1E, F) and IHC quantification (Figure 1G, H) from patient samples. The sample size for patient tissues (n=10 pairs for western blot, n=20 pairs for IHC) is modest but adequate for initial validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "ZHX2 is regulated by pVHL in TNBC cells, with pVHL overexpression decreasing and pVHL depletion increasing ZHX2 levels, and ZHX2 is stabilized by hypoxia, DMOG, and MG132 treatment, consistent with regulation through prolyl hydroxylation and proteasomal degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C56 are supported by Co-IP (Figure 1I), gain/loss-of-function experiments (Figure 1J, K), pharmacological treatments (Figure 1L), patient tissue analysis (Figure 1\u2014figure supplement 1F), and TMA analysis (Figure 1M, N). The mechanistic inference (C53) is well-supported by the pharmacological data showing effects of hypoxia, DMOG, and MG132.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "ZHX2 depletion decreases TNBC cell proliferation, 2D colony formation, 3D soft agar growth, and invasion, with phenotypes rescued by shRNA-resistant ZHX2, confirming on-target effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 are supported by multiple functional assays (Figure 2C-H) using two independent shRNAs in two cell lines. The rescue experiments (Figure 2I-N) with shRNA-resistant ZHX2 provide critical validation that phenotypes are due to on-target ZHX2 depletion rather than off-target effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "ZHX2 depletion significantly reduces tumor growth and lung metastasis in orthotopic MDA-MB-231 xenografts, primarily affecting proliferation (Ki-67) rather than angiogenesis or apoptosis, and functions independently of c-Myc.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C69 are supported by in vivo xenograft data (Figure 3B-G) and IHC analysis (Figure 3L, M). The use of doxycycline-inducible shRNAs and confirmation of ZHX2 knockdown in tumors (Figure 3E) strengthen the conclusions. The independence from c-Myc (C67-C68) is supported by western blot data showing no effect on c-Myc levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "ZHX2 does not consistently bind with p65 or affect NF-\u03baB signaling in TNBC cells, unlike its role in ccRCC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 are supported by Co-IP experiments (Figure 4\u2014figure supplement 1A, B) and western blot analysis of p65 levels and localization (Figure 4\u2014figure supplement 1C-E). This negative result is important for establishing that ZHX2 functions differently in TNBC compared to ccRCC.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "RNA-seq analysis reveals that ZHX2-regulated genes are enriched for hypoxia pathway members, with 678 genes (17%) overlapping with HIF DKO downregulated genes (adj. p = 1.07 \u00d7 10\u207b\u2076\u2079), establishing a functional link between ZHX2 and HIF signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C80 are supported by RNA-seq data (Figure 4A-E) using two independent shRNAs. The pathway enrichment analysis and GSEA (Figure 4C, Figure 4\u2014figure supplement 2A-C) provide robust statistical support. The highly significant overlap with HIF DKO genes (C79) strongly supports the functional connection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "ZHX2 affects HIF activity and regulates HIF target gene expression, with ZHX2 depletion decreasing and ZHX2 overexpression increasing HIF reporter activity in a dose-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 are supported by qRT-PCR data (Figure 4\u2014figure supplement 2D) and HIF reporter assays (Figure 4\u2014figure supplement 2E, F). The rescue experiments and dose-response relationship strengthen the conclusion that ZHX2 directly affects HIF transcriptional activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "ZHX2 binds with HIF1\u03b1 and HIF1\u03b2 but not HIF2\u03b1, and regulates HIF1\u03b1 protein levels in a bidirectional manner, suggesting ZHX2 regulates hypoxia signaling mainly through HIF1\u03b1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 are supported by Co-IP experiments (Figure 4F-H, L) and western blot analysis (Figure 4I-K). The specificity for HIF1\u03b1 over HIF2\u03b1 is clearly demonstrated by both binding and functional data, providing important mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "ZHX2 regulates HIF1\u03b1 protein stability post-transcriptionally by preventing proteasome-mediated degradation, as evidenced by MG132 rescue and decreased ubiquitination, without affecting HIF1A mRNA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C97 are supported by qRT-PCR (Figure 4M), MG132 rescue experiments (Figure 4N), and ubiquitination assays (Figure 4O). The lack of effect on HIF1A mRNA combined with protein stabilization and reduced ubiquitination provides strong evidence for post-transcriptional regulation. The unidirectional relationship (C97) is also demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "ChIP-seq analysis identifies 957 ZHX2 binding sites, with 94% overlapping H3K27ac and 96% overlapping H3K4me3, indicating binding to active promoters. Seven candidate genes (PTGES3L, KDM3A, WSB1, AP2B1, OXSR1, RUNDC1, COX20) are co-regulated by ZHX2 and HIF1\u03b1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C107 are supported by ChIP-seq data (Figure 5A) and validation by qRT-PCR in both ZHX2 manipulation (Figure 5B, C) and HIF DKO cells (Figure 5D). The integrated analysis of ChIP-seq and RNA-seq provides strong evidence for direct transcriptional regulation of these target genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "Four genes (AP2B1, COX20, KDM3A, PTGES3L) partially rescue growth defects caused by ZHX2 depletion, suggesting these downstream targets contribute to ZHX2's oncogenic role in an accumulative fashion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 are supported by rescue experiments shown in Figure 5E, F. The partial rescue by individual genes supports the inference that multiple targets contribute cumulatively. However, the mechanism by which these specific genes contribute to oncogenesis could be further explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Structural modeling and MD simulations identify Arg491 (HD2), Arg581 (HD3), and Arg674 (HD4) as critical DNA-contacting residues with highest binding affinity, along with five additional conserved residues important for ZHX2-DNA binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 are supported by homology modeling, contact analysis, and MM/PBSA-derived binding energy calculations. The computational approach is appropriate and the methods are described in detail. However, these are computational predictions that require experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "ZHX2 mutants R491A, R581A, and R674A fail to rescue cell growth defects in multiple functional assays, confirming these residues are important for ZHX2's oncogenic function in TNBC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C116 are supported by cell proliferation (Figure 6B), 2D colony formation, 3D soft agar, and invasion assays (Figure 6C-F). The functional validation of computationally predicted residues strengthens both the computational and experimental findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "ZHX2 mutants R581A and R674A maintain HIF1\u03b1 binding and protein stabilization but show decreased transcriptional activation of HIF1\u03b1 target genes, indicating these residues are essential for ZHX2's transactivation function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C120 are supported by Co-IP (Figure 6G), western blot (Figure 6H), and qRT-PCR (Figure 6I) data. This dissection of binding versus transcriptional activity provides important mechanistic insight, suggesting these residues are critical for DNA binding or recruitment of transcriptional machinery rather than HIF1\u03b1 interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "ZHX2 functions as an oncogene in TNBC by binding HIF1\u03b1/\u03b2, stabilizing HIF1\u03b1 protein, and activating HIF1\u03b1 transcriptional activity through specific DNA-binding residues, establishing ZHX2 as a potential therapeutic target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C126 represent the overall conclusions supported by the collective experimental evidence. However, C127 (therapeutic target potential) is speculative and would require additional validation including druggability assessment and therapeutic intervention studies.",
+    "result_type": "MAJOR"
+  }
+]

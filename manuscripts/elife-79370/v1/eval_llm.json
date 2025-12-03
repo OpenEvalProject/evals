@@ -1,0 +1,236 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The study included 52 participants: 17 early blind (EB), 15 late blind (LB), and 20 sighted controls (SC). EB and SC groups were age and gender matched, while LB and SC groups were gender matched but not age matched. One EB participant was excluded due to incomplete data. The EB and 17 SC participants overlapped with a previous study (Mattioni et al., 2020).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C68 provide comprehensive demographic information with appropriate statistical tests confirming matching (or lack thereof) between groups. The age mismatch between LB and SC is acknowledged and addressed by including age as a covariate in analyses. Sample sizes are adequate for fMRI studies, though the gender imbalance across groups could be a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "The study used 24 sounds from eight categories (human vocalization, human non-vocalization, birds, mammals, tools, graspable objects, environmental scenes, big mechanical objects) that could be organized into four superordinate categories (human, animals, manipulable objects, big objects/places).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 describe the stimulus set with clear categorical organization. The hierarchical structure is well-defined and appropriate for testing categorical representations. The stimulus design is supported by Figure 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Univariate fMRI analysis revealed enhanced responses to sounds in occipital regions of both EB and LB groups compared to SC, with concomitant reduced responses in temporal regions. In occipital ROIs, there was a main effect of Group but no effect of Category or Group\u00d7Category interaction. In temporal ROIs, there was a main effect of Group and Category (with human sounds showing highest activation), but no Group\u00d7Category interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 and C16-C29 present consistent univariate results with appropriate statistical tests (ANOVA). The lack of Group\u00d7Category interaction suggests that no single category drives the group differences at the univariate level. However, the ROIs were defined using group contrasts, which introduces circularity for the main effect of Group (acknowledged by authors). The leave-one-subject-out approach partially addresses this concern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C81",
+      "C82"
+    ],
+    "result": "MVPA eight-way classification revealed that EB and LB groups showed significant decoding of sound categories in both occipital and temporal ROIs, while SC showed significant decoding only in temporal ROIs. Decoding accuracy was significantly higher in occipital cortex for blind groups compared to SC, and significantly lower in temporal cortex for blind groups compared to SC. Significant Group\u00d7Region interactions were observed for both EB/SC and LB/SC comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C39 and C81-C82 present comprehensive MVPA results with appropriate statistical tests (permutation tests, ART for interactions). The pattern of enhanced occipital and reduced temporal decoding in blind groups is consistent across EB and LB. The use of 40 voxels (based on smallest ROI) ensures fair comparison across ROIs. Effect sizes (Cohen's d) are reported and substantial (0.65-1.25).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C85"
+    ],
+    "result": "RSA revealed that the representational structure of sound categories in occipital and temporal regions is more similar in blind subjects (both EB and LB) compared to sighted subjects. Significant correlations between occipital and temporal DSMs were found only in blind groups (EB: r=0.12, p<0.01; LB: r=0.14, p<0.01), not in SC (r=0.02). Group differences were significant for both EB/SC and LB/SC comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C40-C44 demonstrate increased similarity between occipital and temporal representations in blind groups using appropriate RSA methods. The correlation values are modest but statistically significant with proper permutation testing and FDR correction. This finding supports the hypothesis of coordinated reorganization across brain regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C8",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C79",
+      "C86",
+      "C89",
+      "C90"
+    ],
+    "result": "RSA with representational models revealed that the 'human' model best explained the representational structure in temporal ROIs across all groups and in occipital ROIs of blind groups only. The human model showed significantly higher correlation with occipital DSMs in blind groups compared to SC, and significantly lower correlation with temporal DSMs in blind groups compared to SC. Significant Group\u00d7Region interactions were observed. Importantly, only the human model showed this pattern; other categorical and acoustic models did not differ between groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C8, and C45-C55 demonstrate selective reorganization of voice/human category representation. The use of multiple models (7 total) allows dissociation of categorical from acoustic features. Statistical tests are appropriate (permutation tests, ART). The finding that only the human model shows group differences (not acoustic models like pitch/HNR) is particularly compelling and addresses potential confounds. Effect sizes are substantial (Cohen's d: 0.65-0.76).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Acoustic features of sounds (pitch, harmonicity-to-noise ratio) are represented in primary auditory regions (Heschl gyrus, right STS) similarly across all groups, with no group differences in the encoding of these low-level features in either occipital or temporal regions. The human model correlates with extended bilateral STS regions across all groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C76-C78 demonstrate that acoustic processing is preserved across groups using RSA with partial correlation to dissociate acoustic from categorical representations (Figure 6). This is critical for ruling out the alternative explanation that group differences are driven by low-level acoustic differences rather than categorical reorganization. The spatial dissociation between acoustic (Heschl gyrus) and categorical (STS) representations is well-established in the literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Split-half analysis revealed stable patterns of activity in temporal cortex across all groups. The split-half correlation was increased in occipital cortex and decreased in temporal cortex of both blind groups compared to SC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 provide validation that the stimuli produce reliable patterns of activity. The split-half results parallel the main MVPA findings, providing convergent evidence for the redistribution of categorical representations. However, these results are described as supplementary and lack detailed statistical reporting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C87",
+      "C88"
+    ],
+    "result": "The occipital ROIs are located in fusiform gyrus/infero-temporal cortex, partially overlapping with the fusiform face area. The temporal ROIs are located in superior temporal gyrus (STG), extending over the temporal voice areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 and C87-C88 provide anatomical localization of ROIs with appropriate citations. The correspondence between occipital ROIs and face-processing regions, and temporal ROIs and voice-processing regions, provides important context for interpreting the functional reorganization. However, the overlap is described as 'partial' without quantification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "The current study challenges the dominant view that late blindness results in less functionally organized occipital reorganization compared to early blindness. The results show functionally specific coding of sound categories in LB that is increased compared to SC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 present an important reinterpretation of previous literature. The data showing similar patterns of categorical reorganization in both EB and LB groups (Figures 3-5) support this conclusion. However, direct comparison between EB and LB groups shows some quantitative differences (e.g., decoding accuracy, correlation values), suggesting the reorganization may not be entirely equivalent. The claim is somewhat overstated given that previous studies used different tasks and stimuli.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C80"
+    ],
+    "result": "Visual deprivation may trigger a redeployment mechanism that reallocates processing from temporal to occipital cortex. The increased representation of sound categories in VOTC of blind people could be an extension of intrinsic multisensory categorical organization that is partially independent from vision. The same feature (human voice category) is concomitantly reorganized in temporal and occipital cortices of both blind groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-C72 and C80 present mechanistic interpretations of the results. While the data show coordinated changes in occipital and temporal regions, the causal mechanism ('redeployment') is speculative. The study is cross-sectional and cannot establish whether temporal regions 'reallocate' processing to occipital cortex or whether independent plasticity mechanisms occur in both regions. The interpretation about 'intrinsic multisensory organization' is supported by the LB results but requires additional evidence (e.g., multisensory stimulation in SC) to be fully validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Prior literature has established that occipital cortex of early blind individuals enhances its response to non-visual stimuli, particularly sounds. Previous studies have shown both enhanced and decreased engagement of sensory cortices in blindness. Some studies reported increased occipital and decreased temporal representation of auditory stimuli in congenitally blind people. Categorical membership predicts representational structure in VOTC of blind people. Previous studies suggested late blindness results in less organized reorganization than early blindness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C9-C15 accurately summarize prior literature with appropriate citations. These claims provide context for the current study and identify gaps in knowledge (e.g., the relationship between occipital and temporal reorganization, the role of blindness onset). The characterization of contradictory findings in the literature (enhanced vs. decreased activity) is fair and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "The LB and SC groups were not age matched, with LB participants being significantly older (mean age 44.4 vs 35.1 years, p=0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claim C66 identifies a significant confound: the LB group is ~9 years older than SC on average. While the authors state they included age as a covariate in parametric tests, this does not fully address the concern. Age-related changes in brain structure and function could contribute to group differences. The supplementary analysis with age-matched subgroups (Figure 3\u2014figure supplement 2) partially addresses this, but this analysis is not consistently applied across all results. This is a notable limitation that could affect interpretation of LB-specific findings.",
+    "result_type": "MAJOR"
+  }
+]

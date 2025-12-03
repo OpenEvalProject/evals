@@ -1,0 +1,1998 @@
+{
+  "submission": {
+    "id": "a21afc16-621a-4c4e-bcfe-b4aa3fa61e92",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T18:34:23.893163Z",
+    "updated_at": "2025-12-03T18:34:23.893163Z"
+  },
+  "content": [
+    {
+      "id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "submission_id": "a21afc16-621a-4c4e-bcfe-b4aa3fa61e92",
+      "content_type": "manuscript",
+      "content_text": "# Structure-based prediction of T cell receptor:peptide-MHC interactions\n\n## Authors\n\n- Philip Bradley<sup>1</sup> ([ORCID: 0000-0002-0224-6464](https://orcid.org/0000-0002-0224-6464)) \u2020\n\n### Affiliations\n\n1. Herbold Computational Biology Program, Division of Public Health Sciences. Fred Hutchinson Cancer Center Seattle United States ([ROR:007ps6h72](https://ror.org/007ps6h72))\n2. Institute for Protein Design. University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe regulatory and effector functions of T cells are initiated by the binding of their cell-surface T cell receptor (TCR) to peptides presented by major histocompatibility complex (MHC) proteins on other cells. The specificity of TCR:peptide-MHC interactions, thus, underlies nearly all adaptive immune responses. Despite intense interest, generalizable predictive models of TCR:peptide-MHC specificity remain out of reach; two key barriers are the diversity of TCR recognition modes and the paucity of training data. Inspired by recent breakthroughs in protein structure prediction achieved by deep neural networks, we evaluated structural modeling as a potential avenue for prediction of TCR epitope specificity. We show that a specialized version of the neural network predictor AlphaFold can generate models of TCR:peptide-MHC interactions that can be used to discriminate correct from incorrect peptide epitopes with substantial accuracy. Although much work remains to be done for these predictions to have widespread practical utility, we are optimistic that deep learning-based structural modeling represents a path to generalizable prediction of TCR:peptide-MHC interaction specificity.\n\n## Introduction\n\nThe specificity of T cell receptors (TCR) for peptides presented by major histocompatibility complex proteins (pMHC) is a critical determinant of adaptive immune responses to pathogens and tumors and of autoimmune disease. A predictive model of TCR:pMHC interactions, capable of mapping between TCR sequences and pMHC targets, could lead to advances in cancer immunotherapy and in the diagnosis and treatment of infectious and autoimmune diseases. Despite recent progress in TCR sequence analysis and modeling (Gielis et al., 2019; Huang et al., 2020; Mayer-Blackwell et al., 2021; Montemurro et al., 2021), a generalizable predictive model of TCR:pMHC interactions remains out of reach: existing predictors can learn to recognize new TCR sequences specific for pMHCs in their training set, but robust generalization to unseen pMHC epitopes has not been convincingly demonstrated (Moris et al., 2021). Two key difficulties are the diversity of TCR:pMHC recognition modes, a consequence of TCR sequence and structural diversity and flexibility in TCR:pMHC docking orientation, and the limited number of experimentally validated TCR:pMHC interaction examples for use in training.\n\nWe hypothesized that 3D structural modeling might offer a path toward generalizable prediction of TCR:pMHC interactions in the current data-limited regime. At the biophysical level, TCR:pMHC interaction specificity is determined by the structures and flexibilities of the interacting partners. A wealth of structural studies have provided valuable insights into the atomistic determinants of specificity (Rossjohn et al., 2015; Rudolph et al., 2006; Singh et al., 2017). Collectively, these experimentally determined structures define a range of docking geometries that likely covers the majority of unseen interactions; they also provide valuable templates for cutting-edge deep neural network structure prediction methods such as AlphaFold (Jumper et al., 2021) and RoseTTAfold (Baek et al., 2021). These prediction tools feature advanced network architectures with millions of parameters that are trained on structurally characterized proteins and their sequence homologs. Despite being trained on monomeric structures, these approaches can generate state-of-the-art structure predictions for protein complexes, and they have even been used to predict whether or not protein pairs will associate (Humphreys et al., 2021).\n\nHere we show that a version of AlphaFold specialized for TCR:pMHC modeling can be used to predict TCR:pMHC binding specificity with some success. Whereas the default AlphaFold version trained to predict protein:protein docking (AlphaFold-Multimer Evans et al., 2021) shows inconsistent performance on TCR:pMHC structures (Yin et al., 2022), our specialized pipeline demonstrates improved accuracy and reduced computational cost. Moreover, this modeling pipeline has significant power to discriminate target peptides from decoy peptides as evaluated on a benchmark of human and mouse MHC class I epitopes. Importantly, success in predicting the correct peptide target correlates with structural accuracy of the models, suggesting that when the pipeline succeeds, it does so by recapitulating key specificity determinants. This work, together with previous studies applying molecular modeling techniques to TCRs (Borrman et al., 2020; Jensen et al., 2019; Lanzarotti et al., 2018; Pierce and Weng, 2013), suggests that structure-based approaches represent a promising path forward for predicting TCR:pMHC interaction specificity.\n\n## Results\n\n### Structure prediction\n\nWe first evaluated the structure prediction performance of a recently released version of AlphaFold (AlphaFold-Multimer Evans et al., 2021) that was specifically trained for protein:protein docking. AlphaFold-Multimer leverages inter-chain residue covariation observed in orthologs of the target proteins to identify amino acid pairs making interface contacts. Given that TCR:pMHC interactions are determined in part by highly variable, non-germline encoded CDR3 regions, it was unclear whether AlphaFold\u2019s strong docking performance on other systems would translate to TCR:pMHC interactions. Indeed, the AlphaFold-Multimer developers noted that it does not perform well on antibody:antigen complexes, which share many features with TCR:pMHC complexes.\n\nWe tested two versions of AlphaFold-Multimer, one in which the full sequences of the interacting partners are provided as input ('AFM_full': MHC-I or MHC-IIa, beta-2 microglobulin or MHC-IIb, peptide, TCRa, and TCRb variable and constant domains), and one in which only the directly interacting domains are provided as input ('AFM_trim': TCR constant domains, beta-2 microglobulin, and C-terminal MHC domains are removed). Restricting to the core interacting domains speeds the calculations substantially at the risk of introducing decoy docking sites at the location of interfaces with the missing domains. Although both models were capable of generating high-quality predictions on a nonredundant set of 130 TCR:pMHC complexes (as indicated by CDR loop RMSDs at and below ~2 \u00c5; details below), prediction quality was highly variable, and visual inspection revealed that many of the predicted models had displaced peptides and/or TCR:pMHC docking modes that were outside the range observed in native proteins. Additionally, these AlphaFold predictions took multiple hours per target to complete, limiting their throughput.\n\nOne limitation of AlphaFold-Multimer is that it does not support multi-chain templates (Evans et al., 2021): template information from the database of solved structures can inform the internal conformation of individual chains, but it does not guide the docking of chains into higher order complexes. The constrained nature of the TCR:pMHC binding mode suggests that higher and more consistent prediction accuracy could be obtained by providing additional template information. A challenge when modeling TCR structures is that the V-alpha and V-beta genes largely determine the best structural template, and these genes associate freely rather than in fixed pairings, which means that the optimal structural template for the TCR-alpha chain will often come from a different PDB structure as that for the TCR-beta chain. Additionally, the TCR:pMHC docking mode varies widely within an overall diagonal binding mode, in a way that is not easily predicted directly from sequence, making it challenging to select an optimal template for the TCR:pMHC relative orientation. Guided by these considerations, we developed an AlphaFold-based TCR docking pipeline that uses hybrid structural templates to provide a broad, native-like sampling of potential docking modes (Figure 1). In this approach, individual chain templates are first selected based on sequence similarity to the target TCR:pMHC (Figure 1A). Hybrid complexes are created from these individual chain templates by using a diverse set of representative docking geometries to orient the TCR chains relative to the pMHC (see Methods). Docking geometries are defined in terms of the 6 degrees of freedom that relate the MHC reference frame to the TCR reference frame, where the MHC and TCR reference frames are defined based on internal pseudo symmetry (Figure 1B and D and Methods). These hybrid complexes are provided as templates to multiple independent AlphaFold simulations, four templates per simulation, with the highest confidence model from the simulations taken as the final prediction (Figure 1C). During benchmarking, templates and docking geometries from structures with similar TCRs or pMHCs to the target are excluded to reduce bias toward the native structure (see Methods; this constraint was not applied to the default AlphaFold-Multimer methods). Given that we are providing template information that constrains the inter-chain docking, we chose not to include additional multiple sequence alignment (MSA) information beyond the target sequence. This greatly speeds the predictions: MSA building is the most time-consuming part of the AlphaFold pipeline, and the neural network inference step is also significantly faster without MSA information.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/82813/elife-82813-fig1-v1.jpg)\n\n**Figure 1.:** (A) Four structural templates for each TCR chain and for the peptide:MHC are identified in the Protein Databank (Berman et al., 2000) by sequence similarity search. (B) TCR:pMHC docking geometry is defined by computing the rigid-body transformation between TCR and pMHC coordinate frames. Coordinate frames are oriented based on internal pseudo symmetry as described in the Methods. (C) Three independent AlphaFold simulations are performed, each with four hybrid templates built from the four sets of single-chain templates oriented relative to one another using one of twelve representative docking geometries chosen to cover a wide range of experimentally determined ternary complexes. (D) TCR coordinate frames from class I pMHC ternary structures and the 12 representative transforms (thicker arrows) are shown in a common coordinate system defined by their corresponding pMHC coordinate frames.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82813/elife-82813-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The MHC symmetry axis is the rotation axis of the transformation that superimposes the 12 core residues onto themselves, interchanging the N- and C-terminal half-cores. The TCR symmetry axis is the rotation axis of the superposition transform that interchanges the TCRA and TCRB cores.\n\nWe found that the hybrid templates AlphaFold pipeline specialized for TCR:pMHC ('AF_TCR') produces higher quality models than either of the Alphafold-Multimer variants on a benchmark set (Figure 2\u2014figure supplement 1) of 130 TCR:pMHC complexes (Figure 2A, Wilcoxon P<10\u20137 vs AFM_full and P<10\u201312 vs AFM_trim on the full set; Figure 2B, P<10\u20133 for both comparisons on 20 targets without a close homolog in the AlphaFold-Multimer training set; and Figure 2\u2014figure supplement 2 for peptide modeling accuracy). The AF_TCR pipeline also outperforms the state of the art TCRpMHCmodels pipeline (Jensen et al., 2019) for Class I MHC TCR modeling (Figure 2\u2014figure supplement 3A\u2013B), and produces better docking geometries than simply borrowing the geometry from the most sequence-similar template (Figure 2\u2014figure supplement 3C). There was a significant positive correlation between predicted and observed model accuracy (Figure 2C).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/82813/elife-82813-fig2-v1.jpg)\n\n**Figure 2.:** (A) Comparison between Alphafold-Multimer with full ('AFM_full') or trimmed ('AFM_trim') input sequences and the hybrid-templates TCR pipeline ('AF_TCR'). CDR RMSD values (y-axis) are computed by superimposing the native and modeled MHC coordinates and comparing the placement of the TCR CDR loops (see Methods). (B) Same as in (A) but for the 20 benchmark targets unrelated to any TCR:pMHC structure deposited before May 2018, the cutoff date for the AlphaFold-Multimer training set. (C) AlphaFold\u2019s predicted aligned error (PAE) measure, evaluated between TCR and pMHC, correlates with CDR RMSD between model and native structure. (D) The docking geometry of the final AlphaFold model improves over the best of the 12 templates in 30% of cases (points above the line y=x). (E) The docking geometry of the final AlphaFold model improves over the median of the 12 templates in 94% of cases (points above the line y=x). (F) Fine-tuning AlphaFold\u2019s parameters on human TCR:pMHC complexes improves prediction of mouse TCR:pMHC complexes. Boxes in A, B, and F show the quartiles of the plotted distributions.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82813/elife-82813-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Source organism (left column), MHC allele (middle column), and peptide length (right column) composition of two different nonredundant versions of the ternary database. In the first ('Set 1'), no two structures have both fewer than three peptide mismatches and a paired chain TCRdist distance less than 120. In the second ('Set 2'), no two structures have either fewer than three peptide mismatches or a paired chain TCRdist less than 120. Set 1 corresponds to the 130-member benchmark set used for method comparisons. MHC Class II peptides are trimmed to the common 9-residue core plus two residues on either side, making them length 11 by construction, consistent with the lack of insertions/deletions in the middle of the peptide. TCRs with distances less than 120 tend to share one or both V gene identities and similar CDR3 lengths and sequences, and are often found to bind the same epitope in TCR clustering studies (Dash et al., 2017; Minervina et al., 2022).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/82813/elife-82813-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Peptide backbone RMSD (rows 1 and 3) and peptide length (row 2) versus CDR RMSD for MHC class I (rows 1\u20132) and MHC class II (row 3). CDR RMSD is calculated by first superimposing the model and the native structure using the MHC coordinates, and then computing the RMSD over the CDR loop residues without further superposition. In the RMSD calculation, a weight of three is applied to the CDR3 coordinates to reflect their greater role in peptide specificity. Peptide backbone (BB) RMSD is computed over the N, CA, C, and O atoms after superimposing the modeled and native MHC coordinates.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/82813/elife-82813-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A\u2013B) Comparison between the AlphaFold-TCR pipeline and the TCRpMHCmodels software on MHC class I targets. The TCRpMHCmodels calculation was run locally, and nearby templates were excluded using the '--blacklist' command line option (applying the same exclusion criteria used in the AF_TCR calculations). (C) Comparison between the AlphaFold-TCR pipeline and a simple protocol that borrows the docking geometry from the most sequence-similar ternary structure template. Sequence similarity is calculated over the concatenated MHC, peptide, and TCR chains with a uniform residue weight ('SeqID(unwtd)') or upweighting residues inversely proportional to chain length, to equalize contributions from the peptide, MHC, TCRalpha, and TCRbeta chains. P values correspond to the larger of the Wilcoxon and paired t test 2-sided P values comparing the indicated RMSD distributions.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/82813/elife-82813-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Docking RMSD and CDR RMSD are well correlated. CDR RMSD tends to be larger than docking RMSD because it also includes deviation in the internal structures of the CDR loops.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/82813/elife-82813-fig2-figsupp5-v1.jpg)\n\n**Figure 2\u2014figure supplement 5.:** The UMAP (McInnes et al., 2018) algorithm was used to transform a matrix of docking RMSD distances into a 2D landscape projection of the 130 native structures and the models from the AlphaFold TCR pipeline ('AF_TCR') and from two variants of the AlphaFold-Multimer model ('AFM_trim' and 'AFM_full'). Regions of docking space not sampled by the natives can be seen at the far left and bottom of the landscapes. Representative AlphaFold-Multimer models are shown: in the bottom left panel, a TCR docked to the underside of the MHC; in the bottom right panel, a TCR docked to the side of the MHC and not making contacts with the peptide. In each panel, structures from one source are colored as indicated in the legend, and the remaining points are gray.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/82813/elife-82813-fig2-figsupp6-v1.jpg)\n\n**Figure 2\u2014figure supplement 6.:** Ordinary least squares (OLS) linear regression was used to identify factors influencing the docking accuracy of AF_TCR models. In all panels, the y-axis corresponds to the Dock RMSD of the final AF_TCR model. In panels 1\u20138 (top left to bottom middle), a single feature (named in the panel title) is plotted on the x-axis. The panel title indicates the coefficient assigned to each feature in the fitted linear regression model as well as the p value assigned to the feature (which reflects the strength of its influence on docking RMSD). 'Native docking geometry Z-score' is a measure of the distance between the docking geometry in the native structure and the mean docking geometry of all ternary structures in the same MHC class (defined using the Mahalobis distance to account for correlations between the six parameters defining docking geometry); outlier docking geometries will have larger values. This is by far the largest contributor to the accuracy of the AF_TCR model. 'V templates TCRdist' is the sum of the V gene TCRdist for the closest TCR alpha and beta templates; values of 0 mean that both the V genes in the target TCR are found in an unrelated template structure and hence available for modeling. 'Loop RMSD' measures the accuracy of the CDR loop structure in the TCRalpha and TCRbeta CDR loops, ignoring alpha/beta pairing geometry and docking geometry. It is calculated for each chain separately by superimposing on the single-chain TCR core residues (Figure 1\u2014figure supplement 1) and upweighting the CDR3 by a factor of 3; the final value is the sum of the alpha and beta chain RMSDS. 'TCR core RMSD' is calculated by superimposing the 26 TCR core residues (13 from each chain) of the model onto the native structure; it mainly reflects the accuracy of the alpha/beta pairing geometry, since the core residue positions are well conserved within each TCR chain structure. 'Peptide RMSD' records the backbone atom (N, CA, C, O) RMSD between modeled and native peptides after superimposing on the MHC coordinates. The bottom right panel shows the OLS fitted RMSD (x-axis) versus the actual Dock RMSD (y-axis).\n\nFor each benchmark target, the AlphaFold TCR pipeline is provided with 12 hybrid template complexes whose TCR:pMHC docking modes are taken from 12 diverse ternary structures unrelated to the target. We were curious to know whether the AlphaFold simulation was improving on the docking information present in these template structures. To answer this question, we compared the accuracy of the docking geometry present in the final model to the accuracies of the 12 template structures. Since the 12 templates differ in the sequences and structures of their CDR loops, we developed a distance between TCR:pMHC docking geometries that compares the placement of 'generic' CDR loops ('docking RMSD', see Methods). This docking RMSD measure is correlated with CDR RMSD in comparisons of models to natives (Figure 2\u2014figure supplement 4), but it focuses exclusively on the docking geometry and provides a sequence-independent way of comparing binding modes that emphasizes CDR loop placement. For 30% of the targets, the AlphaFold TCR final model had a lower RMSD than the best template docking geometry (Figure 2D); the final model improved over the median template RMSD for 94% of the targets (Figure 2E). To visualize the overall docking geometry landscape of models and natives, we calculated docking RMSD values between all of the native ternary structures and the AlphaFold-TCR and AlphaFold-Multimer models and transformed this distance matrix into a 2D projection (Figure 2\u2014figure supplement 5) using the UMAP algorithm (McInnes et al., 2018). Inspection of this 2D docking geometry landscape reveals regions that are distant from the native structures and only sampled by the AlphaFold-Multimer models, supporting the view that incorporating template docking geometries helps to constrain predictions to native-like geometries. We analyzed the factors contributing to docking prediction accuracy and found that two dominant factors are the degree to which the docking geometry in the native structure deviates from the consensus binding mode (as captured in a multidimensional Z score, see methods) and the MHC class (class II binding modes were better predicted than class I), with minor contributions from V gene template sequence distance, CDR loop modeling accuracy, peptide modeling accuracy, and TCRalpha/TCRbeta docking accuracy (Figure 2\u2014figure supplement 6).\n\nAn attractive feature of neural network architectures is the potential to 'fine tune' a general network for improved prediction accuracy in a specific domain. We fine-tuned the AlphaFold parameters in the context of the AlphaFold TCR pipeline on the set of 93 human TCR:pMHC complexes from the benchmarking set and subsequently evaluated the performance of this model on the 37 mouse TCR:pMHC targets. Despite the small size of the TCR:pMHC ternary structure database, the fine-tuned model showed improved performance on the mouse targets (Figure 2F; Wilcoxon p<0.015), which are distinct in the details of their epitope, MHC, and TCR sequences from the human training set, suggesting that the model was able to learn generalizable features of TCR:pMHC interactions. This fine-tuning procedure was facilitated by the fact that the AF2 model requires significantly less memory in the absence of MSA information, making it possible to perform parameter optimization on full TCR:pMHC systems without any residue cropping.\n\n### Binding specificity prediction\n\nHaving established that the AlphaFold TCR pipeline can generate more accurate TCR:pMHC models than AlphaFold-Multimer, we evaluated its performance in TCR epitope prediction. The general problem of predicting, de novo, which peptide:MHCs a given TCR recognizes is likely to be very difficult due to the diversity of TCR:pMHC recognition modes, the polyspecificity of individual TCRs, and the paucity of available training data (Moris et al., 2021). Here we consider instead the simpler problem of selecting the correct target peptide from a small set of candidates. This might correspond to a real-world scenario in which we know the source antigen from which the unknown peptide epitope is taken, or we have a positive hit in a T cell stimulation assay that implicates a pool of peptides rather than a unique epitope. For benchmarking, we focus on peptide-MHC epitopes for which a repertoire of cognate TCRs has been identified. This allows us to evaluate the sensitivity of the predictions to small changes in TCR sequence. It also lets us investigate a scenario in which we are given not one TCR, but a set of TCRs that are all predicted to recognize the same epitope, and we consider the extent to which this helps to constrain the target epitope. With improved single-cell technologies for paired TCR sequencing, and improved methods for identifying TCR sequence convergence, we hypothesize that this will become an increasingly common scenario.\n\nWe selected a set of 8 Class I peptide:MHC systems (Table 1) for which a repertoire of paired epitope-specific TCRs and a solved ternary structure were available. These systems include one human (A*0201) and one mouse (H2-Db) MHC allele, each with 9- and 10-residue peptides. TCR repertoires containing more than 50 unique TCR sequences were subsampled to a set of 50 TCRs using an algorithm that removed redundancy while concentrating on the more densely sampled regions of TCR space (see Methods). For each MHC/peptide length combination, we used the NetMHCpan-4.1 (Reynisson et al., 2020) method to select 9 decoy peptides with binding scores in the range of the true peptide binders. We additionally selected 50 irrelevant TCRs at random from human and mouse CD8 T cell datasets made available by 10 X Genomics (these TCRs were used to correct for pMHC-intrinsic effects; see below and Methods).\n\n**Table 1.**\n Binding specificity benchmark.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Organism</th>\n      <th>MHC</th>\n      <th>Peptide length</th>\n      <th>Peptide sequence</th>\n      <th>Antigen</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>human</td>\n      <td>HLA-A*02:01</td>\n      <td>9</td>\n      <td>GILGFVFTL</td>\n      <td>Flu M1</td>\n    </tr>\n    <tr>\n      <td>human</td>\n      <td>HLA-A*02:01</td>\n      <td>9</td>\n      <td>GLCTLVAML</td>\n      <td>EBV BMLF1</td>\n    </tr>\n    <tr>\n      <td>human</td>\n      <td>HLA-A*02:01</td>\n      <td>9</td>\n      <td>NLVPMVATV</td>\n      <td>CMV pp65</td>\n    </tr>\n    <tr>\n      <td>human</td>\n      <td>HLA-A*02:01</td>\n      <td>9</td>\n      <td>YLQPRTFLL</td>\n      <td>SARS-CoV-2 Spike</td>\n    </tr>\n    <tr>\n      <td>human</td>\n      <td>HLA-A*02:01</td>\n      <td>10</td>\n      <td>ELAGIGILTV</td>\n      <td>human MART-1</td>\n    </tr>\n    <tr>\n      <td>human</td>\n      <td>HLA-A*02:01</td>\n      <td>10</td>\n      <td>KLVALGINAV</td>\n      <td>HCV POLG</td>\n    </tr>\n    <tr>\n      <td>mouse</td>\n      <td>H2-Db</td>\n      <td>9</td>\n      <td>ASNENMETM</td>\n      <td>Flu NP</td>\n    </tr>\n    <tr>\n      <td>mouse</td>\n      <td>H2-Db</td>\n      <td>10</td>\n      <td>SSLENFRAYV</td>\n      <td>Flu PA</td>\n    </tr>\n  </tbody>\n</table>\n\nWe used the AlphaFold TCR pipeline to generate docked complexes and associated interface accuracy estimates for pairings of each TCR with its true pMHC epitope and with 9 decoy peptides of the same length (Figure 3A). This produces, for each of the eight pMHCs, an Nx10 matrix of predicted interface accuracies (Figure 3B, left panel), where N is the number of TCRs specific for the given pMHC. To generate a single number representing the estimated interface accuracy of a complex, we summed the residue-residue predicted aligned error (PAE) for all TCR:pMHC residue pairs. These raw accuracy estimates showed significant TCR- and pMHC-intrinsic effects (Figure 3B). Certain TCRs had consistently higher or lower than average predicted interface accuracies due to features such as longer CDR3 loops or usage of V genes without a close structural template. We saw similar, albeit weaker, trends across different peptide:MHC complexes, perhaps due to AlphaFold\u2019s confidence in the MHC-bound structure of the peptide. TCR-intrinsic factors do not change the relative order of candidate peptides, but they make comparisons of binding predictions across TCRs difficult; pMHC effects have the potential to change the rank ordering of candidate peptide epitopes. Since we are interested here in evaluating the compatibility between TCR and pMHC and not, e.g., ranking peptides by their affinity for MHC, we corrected for these TCR- and pMHC-intrinsic effects to generate an array of TCR:pMHC binding scores intended to be comparable across different pMHCs and TCRs (Figure 3B, middle panel; lower scores indicate stronger predicted binding, see Methods).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/82813/elife-82813-fig3-v1.jpg)\n\n**Figure 3.:** (A) For each of the eight peptide:MHC epitopes, we docked multiple cognate TCRs against multiple decoy peptides and the wild type epitope. Here three TCRs and three pMHCs are shown; 9 decoys and up to 50 TCRs were actually modeled. (B) For each candidate TCR:pMHC pairing, the mean AlphaFold predicted aligned error (PAE) for the TCR:pMHC interface was calculated (left) and transformed into a binding score by subtracting out TCR-intrinsic and pMHC-intrinsic factors (middle). These binding scores were averaged to define a repertoire-level binding score for the WT epitope and each of the decoys (bottom). Also calculated was the rank of the WT binding score within the list of all the binding scores for each TCR (right). (C) TCRdist hierarchical clustering tree of the 50 modeled TCRs for the A*02:01 GIL9 epitope, labeled with the TCR sequence information, top-ranked peptide, and rank of the WT peptide, and colored by the rank of the WT peptide. Internal edges, which correspond to multiple \u2018leaf\u2019 TCRs, are colored by the rank of the WT peptide after averaging the binding scores over the leaf TCRs. (D) Repertoire binding scores for each of the eight target epitopes and the 9 decoy peptides, with the lowest (most favorable) binding score in each row boxed. (E) Receiver operating characteristic (ROC) curves for discrimination of WT from decoy peptides by binding score. Area under the ROC curve (AUROC) values are given in the legend along with the sequence of the WT peptide.\n\nWe evaluated the accuracy of these binding predictions across the eight pMHC epitopes. First, we calculated the rank of the true peptide epitope amongst the 9 decoy peptides (Figure 3B, right panel) on a per-TCR basis. To visualize how these ranks vary across each pMHC-specific repertoire, we constructed hierarchical clustering trees of the TCR sequences using the TCRdist measure (Dash et al., 2017) and colored them by the rank of the true peptide (Figure 3C and Figure 4). Internal edges, which correspond to multiple \u2018leaf\u2019 TCRs, are colored by the rank of the true peptide after averaging the binding scores over the leaf TCRs. Looking across all eight epitopes, we can see, first, that the predictions are not random: on average the correct peptide is ranked more favorably than most of the decoys (i.e. there is more blue than red). For six of the eight epitopes, the correct peptide is ranked first when we average the binding scores of all the TCRs in the repertoire (Figure 3D; Figure 4: the largest branch of the tree is dark blue). It also appears that the epitopes with more sequence-diverse repertoires (A*0201-GLC9 and A*02:01-NLV9) are more challenging to predict: the trees that merge completely at smaller TCRdist values (further to the left) are bluer than the other trees in Figure 4. This can be seen quantitatively by plotting the TCRdiv repertoire sequence diversity measure (Dash et al., 2017) against measures of binding prediction success (Figure 4\u2014figure supplement 1). If we rank the peptides by binding score and compare the recovery of true binder peptides to decoys using receiver operating characteristic (ROC) curves, we can see that some epitopes, such as A*02:01-YLQ9 and A*02:01-ELA10 are predicted very well (by area under the ROC curve, AUROC \u2265 0.96) and some predictions are only slightly better than random (Figure 3E). We find an overall AUROC value of 0.82 when binding and non-binding TCR:pMHC pairs from all epitopes are ranked together.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/82813/elife-82813-fig4-v1.jpg)\n\n**Figure 4.:** The rank of the wild type peptide relative to the 9 decoys (0=best, 9=worst) is shown in a heatmap and a TCRdist hierarchical clustering tree of the epitope-specific TCRs. Each row of the heatmap corresponds to a single TCR; each column corresponds to one of the 10 modeled peptides, with the wild type peptide on the left. The vertical ordering of the TCRs in the heatmaps and trees is the same. Internal edges of the trees, which correspond to multiple \u2018leaf\u2019 TCRs, are colored by the rank of the wild type peptide after averaging the binding scores over the leaf TCRs.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82813/elife-82813-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** TCR repertoire sequence diversity is measured with the TCRdiv measure (Dash et al., 2017) with a sigma value of 120. Each colored marker corresponds to one of the eight benchmark epitopes as indicated in the legend. (A) For each epitope, the average rank of the wild type peptide relative to the nine decoys (0=best binding score; 9=worst binding score) is calculated over all the epitope-specific TCRs and plotted against the TCRdiv score for the corresponding TCR repertoire. (B) TCRdiv scores are plotted against the area under the receiver operating characteristic curve (AUROC) values for discriminating the wild type from decoy peptides by binding score.\n\nWe looked to see whether structural modeling accuracy correlated with binding prediction success (Figure 5). Although very few of the specific TCRs being modeled have been structurally characterized, each of the epitopes has at least one solved ternary structure in the protein structure database. For each TCR, we computed docking RMSDs between the TCR:pMHC model in complex with its cognate epitope and the solved ternary structures for that epitope and took the minimum value as a proxy for the accuracy of the predicted binding mode. Figure 5A shows the distribution of these RMSD values across each repertoire. Well-predicted epitopes such as A*02:01-YLQ9 and A*02:01-ELA10 indeed appear to have smaller RMSD values than other repertoires. The mouse pMHC H2Db-ASN9 is an outlier, with an RMSD distribution shifted to very high values. Examination of the three ternary structures for this pMHC revealed that they represent a unique population of TRBV17+ TCRs that is distinct from the consensus repertoire modeled here. Two of the three TCRs bind with a reversed docking orientation (Gras et al., 2016), and the third has a highly displaced binding footprint (Zareie et al., 2021); all three are outliers in a hierarchical clustering tree of Class I TCRs based on docking RMSD (Figure 5\u2014figure supplement 1). If we exclude H2Db:ASN9 and plot docking RMSD to the closest epitope structure versus binding score for the correct peptide, we see that there is a positive correlation (Figure 5B). The TCRs for which the correct peptide is ranked first have a lower RMSD distribution than other TCRs, and this RMSD distribution shifts upward as the rank of the correct peptide declines (Figure 5C). These results suggest that the correct binding predictions are driven at least in part by recovery of native-like structural features (analysis of peptide backbone RMSDs shows a positive, but much weaker, correlation between binding prediction and modeling accuracy: Figure 5\u2014figure supplement 2).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/82813/elife-82813-fig5-v1.jpg)\n\n**Figure 5.:** (A) For each TCR, the structural model in complex with the wild type epitope was compared to all experimentally determined ternary structures for that epitope and the smallest docking RMSD was recorded. The resulting RMSD distributions were smoothed using kernel density estimation and plotted. (B) Scatter plot of docking RMSD to the nearest wild type structure versus the binding score for the wild type peptide. Favorable wild type binding scores correlate with lower RMSD values. (C) Distributions of docking RMSD to the nearest wild type structure (y-axis) as a function of the rank of the wild type peptide (x-axis). When the wild type peptide is ranked first (left violin), the corresponding docking geometries are more similar to those of ternary complexes for that epitope, suggesting higher accuracy.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82813/elife-82813-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Structures are labeled with PDB IDs and, for the epitopes in the peptide decoy discrimination benchmark, MHC and peptide sequence colored as in main text Figures 3, 5 and 6.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/82813/elife-82813-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) For each TCR, the structural model in complex with the wild type epitope was compared to all experimentally determined ternary structures for that epitope and the median peptide backbone RMSD was recorded. The resulting RMSD distributions were smoothed using kernel density estimation and plotted. (B) Scatter plot of peptide backbone RMSD versus the binding score for the wild type peptide. The correlation between more favorable (lower) wild type binding scores and lower RMSD values is much weaker than that seen for docking RMSDs in Figure 5B. (C) Distributions of peptide backbone RMSD (y-axis) as a function of the rank of the wild type peptide (x-axis). When the wild type peptide is ranked first (left violin), the corresponding peptide backbone RMSDs are slightly lower, although the trend is again weaker than that seen for docking RMSDs in Figure 5C.\n\nTo further investigate the behavior of our modeling approach, we performed an in silico epitope alanine scan of each of the eight pMHC-specific repertoires. We built models and calculated binding scores for each epitope-specific TCR docked to all single-alanine mutants of the native peptide (native alanine residues were mutated to glycine). Binding scores for each TCR and each of the alanine mutants are shown in the heatmaps in Figure 6. Averaging these binding scores over all of the TCRs for each epitope and subtracting the score for the native peptide gives a predicted repertoire-level sensitivity to mutation at each peptide position (Figure 6B). From these sensitivity plots, we can see that the majority of the epitope-specific repertoires show the expected preference for the native peptide at most positions, with a subset of positions showing high sensitivity. Coloring the pMHC structures by mutation sensitivity (Figure 6A) reveals that these highly sensitive positions are largely TCR-exposed; several are sites of known viral escape mutations, such as A*02:01-KLV position L5 (W\u00f6lfl et al., 2008) and H2Db-SSL position R7 (Valkenburg et al., 2013). Although the observation that positions predicted to disrupt TCR binding are largely TCR-exposed accords with biophysical intuition, this is still an important validation of the protocol. Since the binding scores are derived from pairwise AlphaFold confidence measures partly involving the peptide, one concern is that they might be reflecting peptide-MHC binding preferences rather pMHC-TCR binding. The fact that peptide anchor mutations are not among the most strongly predicted positions here suggests that, by subtracting each peptide\u2019s average binding score for the background \u2018non-binder\u2019 TCRs, we are able to correct for these peptide-intrinsic features. As a final test, we evaluated the specificity protocol in a more challenging setting: single TCRs (rather than TCR repertoires) interacting with altered peptide variants, some with diverse amino acid mutations. Here we found much poorer performance than in the decoy-discrimination task (Figure 6\u2014figure supplement 1), which could be somewhat improved by including related TCR:pMHC complexes in the template pool (suggesting that future improvements to the structure prediction methods may translate into improved binding predictions).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/82813/elife-82813-fig6-v1.jpg)\n\n**Figure 6.:** (A) Heatmaps showing the binding scores for the wild type peptide (left column) and all single-alanine mutants (columns labeled with the wild type sequence) in complex with each TCR (rows). Below each heatmap, the wild type pMHC crystal structure is shown with the peptide colored by the delta between mutant and wild-type repertoire-averaged binding scores. (B) Line plots of the delta between the mutant and wild-type repertoire-averaged binding scores reflect the predicted repertoire-level sensitivity to epitope mutations.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82813/elife-82813-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A\u2013B) Experimental binding affinities for the A6 and 1G4 TCRs were taken from Pettmann et al., 2021 Figure 1 source data, 'Bmax constrained' KD values. (A) Binding predictions generated without related templates show poor correlation with experiment (lower binding scores and lower KD values correspond to tighter binding, so we would expect to see a positive correlation). (B) Inclusion of related templates in the modeling pipeline leads to improved binding predictions. (C) Activation data for single-alanine mutants of the A*02:01 restricted M158 epitope were taken from Figure 4 (Berkhoff et al., 2005) and plotted against the repertoire-level binding score for the M158 epitope (GILGFVFTL) from our alanine scanning simulations (Figure 6). Here, we see the expected association between lower binding scores (i.e. stronger predicted binding) and higher levels of activation, though the correlation is relatively weak.\n\n## Discussion\n\nPrediction of TCR:pMHC interactions is challenging because of the diversity of TCR:pMHC recognition modes and the limited number of validated interactions available for training. Inspired by recent breakthroughs in protein structure prediction (Baek et al., 2021; Jumper et al., 2021), we hypothesized that structure-based approaches, which can leverage general features of protein structures and interactions, might offer a path to generalizable TCR:pMHC binding predictions from limited data. We developed a specialized AlphaFold pipeline for TCR:pMHC structure prediction that uses hybrid templates assembled from existing TCR:pMHC structures to constrain the TCR docking orientation to native-like geometries. Here we show that this pipeline can generate more accurate structure predictions of TCR:pMHC complexes than the state-of-the-art method Alphafold-Multimer. Prediction accuracy correlates with model confidence, and model quality can be further improved by fine-tuning the AlphaFold parameters on TCR:pMHC structures. When tested on peptide decoy discrimination, we found that the model\u2019s docking accuracy estimates, corrected for TCR- and pMHC-intrinsic effects, could be used to select the correct target peptides from decoys with substantial accuracy. Success in this decoy discrimination task correlated with the structural accuracy of the models, suggesting that the pipeline was picking out the correct peptide on the basis of molecular specificity determinants. Prediction accuracy varied across pMHC epitopes, with those epitopes having more sequence-diverse TCR repertoires proving more challenging to model.\n\nThere are a number of caveats to this work. First, the overall level of accuracy falls short of what would be required for most practical applications of TCR:pMHC binding prediction. As described below, we are pursuing multiple avenues for improving this initial pipeline; it may also be possible to predict from the simulations themselves which systems are reliably modeled, which could allow useful predictions to be extracted from large-scale calculations. Second, several of the epitopes in our peptide decoy discrimination benchmark have been extensively characterized in structural studies. While we made efforts to avoid using information from related structures during template assembly (see Methods), it is still possible that bias toward native-like conformations was introduced. For example, the AlphaFold parameters that we rely on in the pipeline were trained on individual protein chains (not protein complexes) deposited prior to May 2018. Some of the TCR chains modeled in the decoy discrimination task are likely similar to protein chains present in this AlphaFold training set. As the database of TCR:pMHC pairs grows, future benchmarking will establish whether the performance observed here will extend to epitopes without structural coverage. Until then, these results should be considered a favorable upper bound on the method\u2019s performance. Finally, our template-based modeling approach is unlikely to succeed on TCR:pMHC systems with highly divergent binding modes. Although we do see evidence that AlphaFold can improve over the best template provided (Figure 2D), it is unlikely that it can reliably predict complexes that deviate substantially from any template (e.g. reversed-orientation geometries Beringer et al., 2015; Gras et al., 2016). More generally, a template-based approach such as ours is fundamentally limited by the coverage of the structure database, which is highly biased toward well-studied alleles such as HLA-A*02:01 and, for MHC Class I, toward canonical 9-residue epitopes (Figure 2\u2014figure supplement 1).\n\nThe modeling pipeline described here represents a first step in applying deep learning structure prediction tools to study TCR:pMHC interactions. We anticipate that it can be improved by further testing on other systems and by comparison with other experimental data types (binding affinities, interface mutations, etc.). This initial pipeline does not make use of multiple sequence alignment (MSA) information, but it may be helpful to include MSAs for individual chains or to construct \u2018paired MSAs\u2019 consisting of concatenated TCR:peptide:MHC sequences of known binding examples. Such paired MSAs could take the place of the paired ortholog alignments used by AlphaFold-Multimer to detect residue covariation across interfaces. We evaluated the use of AlphaFold\u2019s residue-residue accuracy estimate (PAE) to discriminate wild type from decoy peptide-MHC epitopes, but it may also be worth exploring the use of other binding affinity estimates such as binding energies computed with the Rosetta software package (Leaver-Fay et al., 2011) or other molecular modeling tools (Lee et al., 2018). Finally, it may be possible to fine-tune AlphaFold parameters directly to discriminate TCR:pMHC binding examples from non-binding examples, as we have recently demonstrated for peptide:MHC interactions (Motmaen et al., 2022). This would allow us to directly leverage the thousands of validated TCR:pMHC interactions within the context of a structurally informed training procedure.\n\n## Methods\n\n### Defining TCR:pMHC docking geometry\n\nThe TCR:pMHC docking geometry is defined by the rigid body transformation that maps between the MHC and TCR coordinate frames (Figure 1B). The MHC coordinate frame is defined on the basis of the approximate 2-fold symmetry axis that relates the N- and C-terminal halves of the beta sheet forming the floor of the peptide binding pocket. 12 core residues in the beta sheet were selected (Figure 1\u2014figure supplement 1A), 6 from the N-terminal half and 6 from the C-terminal half, that are related by this approximate 2-fold rotational symmetry. For a given MHC structure, the transformation mapping these 12 residues onto themselves, interchanging the N- and C-terminal residues and minimizing the RMSD of the alpha carbon atoms, is computed. The rotation axis of this orthogonal transformation, oriented to point toward the peptide, is taken as the x-axis of the MHC coordinate frame. The z-axis of the coordinate frame points from the center of mass (COM) of the 6 N-terminal core alpha carbons to the COM of the 6 C-terminal core alpha carbons. The coordinate frame is centered at the COM of the 12 core residues.\n\nTo define the TCR coordinate frame, 13 structurally conserved core residues from the TCR alpha chain and 13 aligned core residues from the TCR beta chain (Figure 1\u2014figure supplement 1B\u2013C) were selected on the basis of visual inspection of TCR multiple structural alignments. The same procedure as outlined above for the MHC is used to define the TCR coordinate frame, replacing the 6 N-terminal and 6 C-terminal core residues of the MHC with the 13 TCRA and 13 TCRB core residues of the TCR heterodimer. The x-axis of the coordinate frame is chosen to point along the TCR pseudo symmetry axis toward the CDR loops, while the z-axis points from the COM of the TCRA core residues to the COM of the TCRB core residues.\n\nThe docking geometry is defined by the rigid body transformation relating the MHC coordinate frame to the TCR coordinate frame. This transformation naturally lives in a 6-dimensional non-Euclidean space (SE(3)). We take advantage of the fact that, as defined above, the x-axes of the MHC and TCR frames point toward the typical location of their partner in order to define a local 6-dimensional parameterization of this space in terms of the distance between the frame origins, a dihedral angle about the axis connecting the frame origins, the unit vector pointing from the MHC to TCR in the MHC frame, and the unit vector pointing from TCR to MHC in the TCR frame (see the README at https://github.com/phbradley/TCRdock for further details and visualizations). This mapping of TCR:pMHC docking geometries to 6 real-valued parameters allows us to approximate the space of docking geometries by a multidimensional normal distribution and assign a \u2018Z score\u2019 (using the Mahalanobis distance) to any observed docking geometry. This score reflects the degree to which the docking geometry diverges from the consensus binding mode for its MHC class and was found to be a strong predictor of docking accuracy (Figure 2\u2014figure supplement 6 upper left panel). The Python script parse_tcr_pmhc_pdbfile.py in the TCRdock github repository (see Code Availability) computes the MHC and TCR coordinate frames for an input PDB structure and calculates the docking geometry.\n\n### AlphaFold modeling pipeline\n\nTo model a given TCR:pMHC target, three AlphaFold simulations (using the 'model_2_ptm' parameter set) are conducted and the final model with the lowest predicted aligned error (PAE) between the TCR and pMHC is selected (Figure 1). The model_2_ptm parameter set was chosen based on our experience in peptide:MHC binding predictions, but the model_1_ptm set gives very similar results. To reduce parameter training bias, we used the original AlphaFold monomer parameters, which were trained on single protein chains, rather than the AlphaFold-Multimer parameter set, whose training set included protein complexes. Each AlphaFold simulation can use a maximum of four templates, allowing for 12 total templates across the three runs (Figure 1C). These 12 templates are constructed from four templates for each of the pMHC, TCRA, and TCRB chains selected on the basis of sequence identity to the modeling target (Figure 1A) combined with 12 docking geometry templates. The same four templates per chain are used in each of the three AlphaFold runs; only the docking geometries vary between runs. Thus the full combinatorics of chain templates by docking geometries is not sampled. Peptide-MHC templates are sorted by total sequence identity computed over both the MHC and the peptide. To create hybrid templates for AlphaFold modeling, the pMHC and TCRB template coordinates must be mapped into the coordinate frame of the TCRA template structure. First, the TCR structure from which the TCRB template coordinates are being taken is superimposed onto the TCRA template structure by superimposing the 13 TCRA core residues. Then the superimposed TCRB coordinates are appended to the hybrid template after the TCRA coordinates. To map the pMHC coordinates into the coordinate frame of the TCRA and TCRB coordinates, MHC and TCR coordinate frames are defined as described above, and 12 representative docking geometries are selected. Each docking geometry defines the transformation between the MHC and TCR coordinate frames, allowing the pMHC template coordinates to be mapped into the hybrid template TCR coordinate frame. To choose the 12 representative docking geometries, docking geometries from TCR:pMHC structures of the same MHC class as the target are hierarchically clustered and the clustering tree is cut at a distance threshold at which there are 12 clusters. The docking geometry from each cluster with the smallest mean distance to the other cluster members is chosen as the representative. For hierarchical clustering, a matrix of docking RMSDs (defined below) is provided to the hierarchy.linkage function in the SciPy (Virtanen et al., 2020) cluster module. The hierarchy.fcluster function with 'maxclust' criterion is used to select the distance threshold at which the docking geometry tree divides into 12 clusters. Template structures were downloaded from the RCSB Protein Databank (Berman et al., 2000) ftp site on 2021-08-05.\n\n### Fine-tuning AlphaFold for TCR:pMHC structure prediction\n\nTo fine tune the AlphaFold parameters for TCR:pMHC structure prediction, we used a version of the AlphaFold package that was modified slightly to expose the parameter training interface (Motmaen et al., 2022). The Python script run_finetuning_for_structure.py in the alphafold_finetune github repository (https://github.com/phbradley/alphafold_finetune; Bradley, 2022a) with the additional command line flags '--model_name model_2_ptm --crop_size 419' was provided with a training set consisting of three runs for each of the 93 human ternary structures (279 total training examples). Due to the small size of the training dataset, training was stopped after two epochs to avoid over-fitting.\n\n### Structure prediction benchmark\n\nThe structure prediction benchmark set consists of 130 nonredundant ternary TCR:pMHC structures deposited prior to 2021-08-05 (Figure 2\u2014source data 1). No two structures in the set have fewer than 3 peptide mismatches and a paired TCRdist (Dash et al., 2017) distance less than or equal to 120. This constraint eliminates pairs of structures with the same or similar TCRs binding to the same or similar peptides. After visual inspection, we eliminated the following 9 outlier structures with highly divergent binding modes (reversed docking orientations, extremely bulged peptides, etc.): PDB IDs 5sws, 7jwi, 4jry, 4nhu, 3tjh, 4y19, 4y1a, 1ymm, and 2wbj.\n\nDuring benchmarking, we excluded templates and docking geometries that were too similar to the target sequence being modeled. Peptide-MHC templates were excluded if they had fewer than three peptide mismatches with the target peptide. TCR chain templates were excluded if they had a single-chain TCRdist of 36 or less to the target chain (corresponding to three non-conservative mismatches or indels in the CDR3 loop). Docking geometries were excluded if they came from a structure with fewer than three peptide mismatches to the target or a TCRdist of 48 or less from the target TCR.\n\n### RMSD measures\n\nWe assessed model accuracy by comparing the placement of the CDR loops relative to the MHC in the native and modeled structures. The two structures were first superimposed on the MHC coordinates; then an alpha-carbon RMSD was calculated (without further superposition) over the CDR loops, up-weighting residues in the CDR3 by a factor of 3 to reflect the greater importance of the CDR3 for epitope recognition (this is the 'CDR RMSD' reported in Figure 2). TCRdist CDR loop definitions were used.\n\nTo compare docking geometries between structures with different CDR loop sequences, we developed a 'docking geometry RMSD' intended to approximate the CDR RMSD in a sequence-independent fashion. The full template database was first used to calculate a mean center of mass of the residues in each CDR loop with respect to the TCR coordinate frame. To compute the docking RMSD between two docking geometries, each docking geometry is used to build a TCR coordinate frame assuming the MHC coordinate frame is centered at the origin and aligned with the coordinate axes. Then the CDR centers of mass are built with respect to each of these two TCR coordinate frames, and an RMSD is calculated between these two sets of eight points (4 CDR centers of mass each for the TCRA and TCRB chains) without superposition, upweighting the CDR3 center of mass by a factor of 3. The correlation between CDR RMSD and docking RMSD is shown in Figure 2\u2014figure supplement 4.\n\n### Epitope decoy discrimination benchmark\n\nEight MHC class I epitopes with TCR repertoire data and experimentally determined structures were selected as targets for a decoy discrimination benchmark (Table 1). Paired alpha and beta sequences of TCRs specific for these eight epitopes were collected from the literature (10xGenomics, 2020; Dash et al., 2017; Francis et al., 2022; Minervina et al., 2022; Schattgen et al., 2022; Shugay et al., 2018). Epitope-specific TCR repertoires with more than 50 TCRs were subsampled to 50 representatives using a Gaussian kernel density-based algorithm designed to preferentially sample denser regions of TCR space without introducing excessive redundancy (see algorithms_from_the_paper.py in the TCRdock github repository). The goal in sampling denser regions of TCR space was to avoid outlier TCR sequences that might represent experimental errors. 100 additional 'irrelevant' background TCR sequences (50 mouse TCRs and 50 human TCRs) were selected at random from naive CD8 T cells in datasets made publicly available by 10xGenomics, 2020 for human and here for mouse. All epitope-specific and background TCR sequences are listed in Figure 3\u2014source data 1.\n\nThe eight MHC class I epitopes include 9 and 10 residue peptides presented by the MHC alleles HLA-A*02:01 and H2-Db. For each MHC and peptide length, 9 decoy peptides were selected by scanning a 1500 residue artificial source antigen sequence with NetMHCpan-4.1 (Reynisson et al., 2020) and selecting the top 9 predicted binders (Figure 3\u2014source data 2). The artificial source antigen sequence was created by concatenating the source antigen sequences for the nine benchmark targets (Table 1), shuffling, and selecting the first 1500 residues.\n\nEach epitope-specific TCR was modeled in complex with its cognate peptide epitope and in complex with the nine length- and MHC-matched decoy peptides using the AlphaFold pipeline specialized for TCRs. The mean predicted aligned error (PAE) residue-residue accuracy measure for TCR:pMHC residue pairs was calculated for each complex and stored in an Nx10 matrix, where N is the number of TCRs (each row corresponds to a TCR and each column to a peptide). To convert these raw TCR:pMHC PAE values into a binding score that can be compared across TCRs and pMHCs, we also modeled each pMHC in complex with 50 irrelevant background TCRs from the same organism. The mean TCR:pMHC PAE for these background complexes was calculated for each pMHC and was subtracted from the matrix column of PAE values involving that pMHC. The values in the resulting matrix of adjusted PAE values were then shifted to have 0 row sums by subtracting its mean value from each row. Thus in the final Nx10 matrix of binding scores, the mean value for each row is 0, while the mean values of the columns reflect the overall binding preference of the full repertoire of TCRs for the peptide corresponding to the column ('Repertoire binding score' in Figures 3 and 6).\n\nDuring modeling, the TCR- and pMHC-similarity constraints described above in 'Structure Prediction Benchmark' were applied to exclude templates; in addition, ternary structures with a peptide having fewer than three mismatches from the wild type peptide were excluded from all simulations (with decoy or wild type peptides). Note that the original AlphaFold monomer network (model_2_ptm), not the structure fine-tuned network, was used for the epitope specificity benchmark, since the training set used for fine-tuning overlapped with the specificity benchmark targets.\n\nThe epitope alanine-scanning benchmark was performed as described above with the difference that the decoys were single-residue alanine mutants of the wild type peptide (alanine residues in the wild type peptide were mutated to glycine). Thus there were nine decoys for 9-residue peptides and 10 decoys for 10-residue peptides.\n\n### Software and data availability\n\nPython software to set up and run the TCR-specialized AlphaFold pipeline described here and to parse TCR:pMHC ternary structures are available in the TCRdock github repository (https://github.com/phbradley/TCRdock, copy archived at swh:1:rev:060bdb4a59391f2d7d57b0f2a923e4b4d6c9a89f; Bradley, 2022b). Benchmark datasets are provided as Source Data for Figures 2 and 3.\n",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "1c371abe-6ff1-4349-bdb4-5b8f8c52ff04",
+      "submission_id": "a21afc16-621a-4c4e-bcfe-b4aa3fa61e92",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael L Dustin, https://ror.org/052gg0110 University of Oxford United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82813.sa0](https://doi.org/10.7554/eLife.82813.sa0)\n\nThe study provides a significant step forward in the prediction of T cell receptor docking to peptide-major histocompatibility complex ligands using a specialised version of the deep neural network structure prediction program AlphaFold. Progress towards this goal has implications for vaccine development, and cancer immunotherapy and is an intrinsically interesting structural problem due to the variability of the T cell receptor scaffold.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Michael L Dustin, https://ror.org/052gg0110 University of Oxford United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82813.sa1](https://doi.org/10.7554/eLife.82813.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Structure-based prediction of T cell receptor:peptide-MHC interactions\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Michael L Dustin as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Tadatsugu Taniguchi as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nPlease see the comments from each reviewer and the specific recommendations. Please address the points with an emphasis on revisions that will clarify and quantify the strengths of the approach without overstatement and that clarify limitations to identify areas requiring further innovation. Any opportunity to use existing data to check predictions should be prioritised.\n\nReviewer #1 (Recommendations for the authors):\n\nNo specific recommendations. In addition to alanine scans, interesting peptide libraries have been developed by changing key residues to all other residues to look for useful altered peptide ligands. Does this version of \u03b1 fold do well in predicting known APC series- for altered peptide ligand series for OT1 or 1G4 TCR? This is another limited problem where there are currently labor-intensive experimental approaches that might be accelerated by reliable structural predictions.\n\nReviewer #2 (Recommendations for the authors):\n\nBradley has made a bold step forward here. Yes, TCR-pMHC structure predictions are fraught with danger and have historically been treated with healthy scepticism (and rightly so). However, we need to make a foray into this space \u2013 the number of paired TCR sequences is increasing exponentially, but the number of unique experimentally determined TCR-pMHC structures has plateaued. This is an issue for the field. While an argument could be easily made that the experimental data set is insufficient and biased (and it is), I cannot see the experimental data set increasing sufficiently in the next decade \u2013 thus someone needs to make a tentative, yet credible step in this direction. The manuscript is clearly lacking any experimental validation of novel predictions \u2013 and this represents a key weakness \u2013 but the manuscript has merits and will stimulate the field.\n\n1) One major concern is the extent to which biases within the training data would undoubtedly influence predictions \u2013 there is clearly an overrepresentation of TCR ternary complexes for HLA-A*02 and H2-Db, for example. How many 'unique' TCR-pMHC complexes out of the limited data set have been determined and what is the functional definition of unique? I feel a graphic highlighting the bias of the current experimental data set in a class I and class II setting would be worthwhile, and discussions surrounding these limitations would be prudent.\n\n2) A key question is whether 'close enough is good enough' regarding structural predictions. In TCR-pMHC structures, subtle shifts in structures (eg < 1A) can be the difference between immune recognition or not. Thus a seemingly close prediction could still miss the mark \u2013 this needs reflection.\n\n3) It is also an obvious choice to exclude bulged or longer peptides from the class I modelling in this preliminary work. Typical peptidome data suggests that ~60-80% of HLA-I eluted peptides are 8-11aa long. However, this also means there is an over-representation of shorter epitopes within structural databases (excluding class II). Can the author, therefore, include a comment in the discussion about the extent to which removing the longer peptides might bias the final output towards recapitulating known docking topologies? Would a Docking RMSD vs epitope length be informative? Is modelling more likely to fail as epitopes get larger?\n\n4) There are far more high-resolution pMHC complexes in isolation than co-complexed TCR structures. A complicating factor for modelling of TCR:pMHC complexes will be that any errors modelling epitope structure, particularly in defining which residues project outward will obviously cascade into docking errors. Is it possible to utilise this larger pool of high-resolution structures to better characterise RMSD in peptide modelling?\n\n5) That is can we better understand for which epitopes the modelling pipeline is likely to fail? Bradley has defined cases in which TCR docking topologies diverge. Does the author envisage, or have they tested, similar conditions for which the peptide structure may also fail to be correctly modelled? For example, cases such as PDB: 5T6X where point-mutations in the P3 position drastically alter epitope shape. Or longer epitopes containing helical turns (e.g. 6AVF).\n\n6) Bradley rightly mentions one reversed TCR-pMHC-I docking structure. The original reference is Gras et al. Immunity 2016. Note, there is another reversed structure, TCR-pMHC-II (Beringer et al. NI 2015). Further, as the TCR-pMHC class I docking topologies are very diverse (over 80 degrees \u2013 ignoring the reversed docking), there are likely to be many more outliers/poorly modelled ternary complexes beyond the reversed dockers.\n\nThe paper is generally well-written and has easy-to-understand figures. The multiple uses of \"we\" in the abstract comes across oddly with only a single author.\n\nReviewer #3 (Recommendations for the authors):\n\n1. For Figure S1, the gray points do not seem to be specifically described in the figure legend or key. The author should specify what the gray points represent, to avoid ambiguity.\n\n2. Results: \"predicted models had displace peptides\" should be \"predicted models had displaced peptides\".\n\n3. Figures 2 and 5 show RMSD values, but the axis labels do not have units (presumably \u00c5ngstroms) shown. Appropriate units should be added to all axis labels that are reporting RMSD values.\n\n4. The plot in Figure 2D uses the same colors as Figure 2A and 2B to represent different methods than those panels. The author should change the colors in order not to confuse readers (AF_TCR can be green, AF_TCR finetuned can be some other color).\n\n5. In another study by the author focused on peptide-MHC modeling and reporting the AF finetuning method, the authors appeared to use model_1 and model_2 from AlphaFold, which both utilize templates. However, in this study, the author only appears to use model_2. The author should briefly note why this was done and model_1 was not used here.\n\n6. The author states: \"There was a strong positive correlation between predicted and observed model accuracy (Figure 2C).\". The author should remove (or replace) \"strong\" there, as the correlation does not seem strong based on the value (r = 0.484) or visual inspection.\n\n7. It is not clear where the results for the 50 non-binding TCRs are given in any of the figures. If these results are not given, they should be added in the revision, or else the note regarding that set should be removed to avoid confusion.\n\n8. In the \"Binding specificity prediction\" section of the Results, the statement: \"It also lets us investigate a scenario in which we are given not one TCR, but a set of TCRs that all recognize the same epitope, and we consider the extent to which this helps to constrain the target epitope.\" It seems that if TCRs are known for certain to bind the same epitope, that would be due to an experimental assay that already assesses epitope specificity. Based on the sentence that follows the above sentence, it seems that the author means that the TCRs are inferred to bind the same epitope based on sequence similarity or clustering. If this is the case, the above sentence should be modified to clarify this distinction for readers, e.g. \"\u2026a set of TCRs that are predicted to recognize the same epitope\u2026\".\n\n9. In the Methods, the author notes: \"100 additional 'irrelevant' TCR sequences (50 mouse TCRs and 50 human TCRs) were selected at random from naive CD8 T cells in datasets made publicly available by 10X Genomics (https://www.10xgenomics.com/resources/datasets).\" As 10X has many datasets available through that set, the author should specify the specific datasets being utilized for this. The \"A new way of exploring immunity\" 10X dataset (included by the author in the References) seems to be a part of this, but it seems to be human only and would not contain the 50 murine TCRs.\n",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "34454d59-e780-4fb9-9594-7794cd16b55d",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C1",
+      "claim": "The specificity of TCR:peptide-MHC interactions underlies nearly all adaptive immune responses.",
+      "claim_type": "EXPLICIT",
+      "source": "The specificity of TCR:peptide-MHC interactions, thus, underlies nearly all adaptive immune responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about the role of TCR:pMHC interactions in adaptive immunity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "490c3a3e-f074-418d-8352-a214a84415be",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C2",
+      "claim": "Two key barriers to generalizable predictive models of TCR:peptide-MHC specificity are the diversity of TCR recognition modes and the paucity of training data.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite intense interest, generalizable predictive models of TCR:peptide-MHC specificity remain out of reach; two key barriers are the diversity of TCR recognition modes and the paucity of training data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by references to the challenges in the field and is based on established understanding of the limitations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "d03e0924-28c2-45d1-ba66-459d1fd95599",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C3",
+      "claim": "A specialized version of AlphaFold can generate models of TCR:peptide-MHC interactions that can discriminate correct from incorrect peptide epitopes with substantial accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that a specialized version of the neural network predictor AlphaFold can generate models of TCR:peptide-MHC interactions that can be used to discriminate correct from incorrect peptide epitopes with substantial accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript, particularly in the binding specificity prediction section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "8c4628f3-ac1e-492c-9111-2b727c4da10c",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C4",
+      "claim": "Deep learning-based structural modeling represents a path to generalizable prediction of TCR:peptide-MHC interaction specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Although much work remains to be done for these predictions to have widespread practical utility, we are optimistic that deep learning-based structural modeling represents a path to generalizable prediction of TCR:peptide-MHC interaction specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a forward-looking statement based on the results presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "d0c1b8e3-915c-4c83-8873-bdf919e2a92d",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C5",
+      "claim": "Existing predictors can learn to recognize new TCR sequences specific for pMHCs in their training set, but robust generalization to unseen pMHC epitopes has not been convincingly demonstrated.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite recent progress in TCR sequence analysis and modeling (Gielis et al., 2019; Huang et al., 2020; Mayer-Blackwell et al., 2021; Montemurro et al., 2021), a generalizable predictive model of TCR:pMHC interactions remains out of reach: existing predictors can learn to recognize new TCR sequences specific for pMHCs in their training set, but robust generalization to unseen pMHC epitopes has not been convincingly demonstrated (Moris et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work in the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "b5d6e2fb-da90-4a51-93aa-2dcba0d255eb",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C6",
+      "claim": "Two key difficulties in TCR:pMHC prediction are the diversity of TCR:pMHC recognition modes and the limited number of experimentally validated TCR:pMHC interaction examples for use in training.",
+      "claim_type": "EXPLICIT",
+      "source": "Two key difficulties are the diversity of TCR:pMHC recognition modes, a consequence of TCR sequence and structural diversity and flexibility in TCR:pMHC docking orientation, and the limited number of experimentally validated TCR:pMHC interaction examples for use in training.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects established challenges in the field based on prior knowledge and literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "e8136fab-774b-4232-b5e2-b9f3ea2a6b0f",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C7",
+      "claim": "At the biophysical level, TCR:pMHC interaction specificity is determined by the structures and flexibilities of the interacting partners.",
+      "claim_type": "EXPLICIT",
+      "source": "At the biophysical level, TCR:pMHC interaction specificity is determined by the structures and flexibilities of the interacting partners.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established biophysical principles.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "b5537208-aaa6-43e2-adba-52d13bc6d26d",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C8",
+      "claim": "Experimentally determined TCR:pMHC structures define a range of docking geometries that likely covers the majority of unseen interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these experimentally determined structures define a range of docking geometries that likely covers the majority of unseen interactions; they also provide valuable templates for cutting-edge deep neural network structure prediction methods such as AlphaFold (Jumper et al., 2021) and RoseTTAfold (Baek et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the body of structural studies and is supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "9d9ccb17-e158-4f9a-b299-19f2231f17ca",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C9",
+      "claim": "AlphaFold and RoseTTAfold feature advanced network architectures with millions of parameters that are trained on structurally characterized proteins and their sequence homologs.",
+      "claim_type": "EXPLICIT",
+      "source": "These prediction tools feature advanced network architectures with millions of parameters that are trained on structurally characterized proteins and their sequence homologs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the AlphaFold and RoseTTAfold methods, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "159d2a26-b979-42a6-84a7-f0e8e8dd1459",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C10",
+      "claim": "AlphaFold and RoseTTAfold can generate state-of-the-art structure predictions for protein complexes despite being trained on monomeric structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite being trained on monomeric structures, these approaches can generate state-of-the-art structure predictions for protein complexes, and they have even been used to predict whether or not protein pairs will associate (Humphreys et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "d5820aef-f10a-4076-aec3-3ef7676f967a",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C11",
+      "claim": "The default AlphaFold version trained to predict protein:protein docking (AlphaFold-Multimer) shows inconsistent performance on TCR:pMHC structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the default AlphaFold version trained to predict protein:protein docking (AlphaFold-Multimer Evans et al., 2021) shows inconsistent performance on TCR:pMHC structures (Yin et al., 2022), our specialized pipeline demonstrates improved accuracy and reduced computational cost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation and by data presented in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "63f1d2eb-3d06-4672-9293-1d23080aae7a",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C12",
+      "claim": "The specialized AlphaFold pipeline demonstrates improved accuracy and reduced computational cost compared to AlphaFold-Multimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the default AlphaFold version trained to predict protein:protein docking (AlphaFold-Multimer Evans et al., 2021) shows inconsistent performance on TCR:pMHC structures (Yin et al., 2022), our specialized pipeline demonstrates improved accuracy and reduced computational cost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript, particularly in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "386d20b5-2795-46b7-a692-5983d1c04385",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C13",
+      "claim": "The modeling pipeline has significant power to discriminate target peptides from decoy peptides as evaluated on a benchmark of human and mouse MHC class I epitopes.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, this modeling pipeline has significant power to discriminate target peptides from decoy peptides as evaluated on a benchmark of human and mouse MHC class I epitopes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the binding specificity prediction section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "05efb181-4365-4b3a-90f3-71c6f7b50f78",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C14",
+      "claim": "Success in predicting the correct peptide target correlates with structural accuracy of the models.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, success in predicting the correct peptide target correlates with structural accuracy of the models, suggesting that when the pipeline succeeds, it does so by recapitulating key specificity determinants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data presented in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "9cac8c71-2989-4202-b7ba-4bd769be195d",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C15",
+      "claim": "When the pipeline succeeds in predicting the correct peptide, it does so by recapitulating key specificity determinants.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, success in predicting the correct peptide target correlates with structural accuracy of the models, suggesting that when the pipeline succeeds, it does so by recapitulating key specificity determinants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the correlation between prediction success and structural accuracy.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "cdece217-e682-41be-89b1-26e6ba769fe4",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C16",
+      "claim": "AlphaFold-Multimer leverages inter-chain residue covariation observed in orthologs of the target proteins to identify amino acid pairs making interface contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "AlphaFold-Multimer leverages inter-chain residue covariation observed in orthologs of the target proteins to identify amino acid pairs making interface contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of how AlphaFold-Multimer works, based on established knowledge of the method.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "930d3556-8e28-410a-8358-e001dc84a354",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C17",
+      "claim": "TCR:pMHC interactions are determined in part by highly variable, non-germline encoded CDR3 regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that TCR:pMHC interactions are determined in part by highly variable, non-germline encoded CDR3 regions, it was unclear whether AlphaFold's strong docking performance on other systems would translate to TCR:pMHC interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about TCR biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "114b2e17-9f60-4071-b736-47d15e9da13c",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C18",
+      "claim": "The AlphaFold-Multimer developers noted that it does not perform well on antibody:antigen complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the AlphaFold-Multimer developers noted that it does not perform well on antibody:antigen complexes, which share many features with TCR:pMHC complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on information from the AlphaFold-Multimer developers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "60361c41-8581-4836-8a59-53b465679b1f",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C19",
+      "claim": "Antibody:antigen complexes share many features with TCR:pMHC complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the AlphaFold-Multimer developers noted that it does not perform well on antibody:antigen complexes, which share many features with TCR:pMHC complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established knowledge of immunological systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "e7118b4b-bd80-40df-9867-064681184ecb",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C20",
+      "claim": "Both AlphaFold-Multimer versions (AFM_full and AFM_trim) were capable of generating high-quality predictions on a nonredundant set of 130 TCR:pMHC complexes as indicated by CDR loop RMSDs at and below ~2 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Although both models were capable of generating high-quality predictions on a nonredundant set of 130 TCR:pMHC complexes (as indicated by CDR loop RMSDs at and below ~2 \u00c5; details below), prediction quality was highly variable, and visual inspection revealed that many of the predicted models had displaced peptides and/or TCR:pMHC docking modes that were outside the range observed in native proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "8333d32b-0b38-485a-ab69-576e4964d9f3",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C21",
+      "claim": "Prediction quality of AlphaFold-Multimer was highly variable.",
+      "claim_type": "EXPLICIT",
+      "source": "Although both models were capable of generating high-quality predictions on a nonredundant set of 130 TCR:pMHC complexes (as indicated by CDR loop RMSDs at and below ~2 \u00c5; details below), prediction quality was highly variable, and visual inspection revealed that many of the predicted models had displaced peptides and/or TCR:pMHC docking modes that were outside the range observed in native proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and visual inspection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "e74ececb-c9de-462c-9358-f7a6078a33e0",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C22",
+      "claim": "Many AlphaFold-Multimer predicted models had displaced peptides and/or TCR:pMHC docking modes that were outside the range observed in native proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Although both models were capable of generating high-quality predictions on a nonredundant set of 130 TCR:pMHC complexes (as indicated by CDR loop RMSDs at and below ~2 \u00c5; details below), prediction quality was highly variable, and visual inspection revealed that many of the predicted models had displaced peptides and/or TCR:pMHC docking modes that were outside the range observed in native proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by visual inspection of the models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "ba3bcf4c-846d-4b6b-bdb0-b91160cde812",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C23",
+      "claim": "AlphaFold-Multimer predictions took multiple hours per target to complete, limiting their throughput.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, these AlphaFold predictions took multiple hours per target to complete, limiting their throughput.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about computational performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "d9bb0aa9-a1b2-498d-bca8-ce6083b52825",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C24",
+      "claim": "AlphaFold-Multimer does not support multi-chain templates.",
+      "claim_type": "EXPLICIT",
+      "source": "One limitation of AlphaFold-Multimer is that it does not support multi-chain templates (Evans et al., 2021): template information from the database of solved structures can inform the internal conformation of individual chains, but it does not guide the docking of chains into higher order complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the capabilities of AlphaFold-Multimer, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "c8613d16-f947-4de5-b0dd-5a7f8671cc9b",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C25",
+      "claim": "In AlphaFold-Multimer, template information from the database of solved structures can inform the internal conformation of individual chains, but it does not guide the docking of chains into higher order complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "One limitation of AlphaFold-Multimer is that it does not support multi-chain templates (Evans et al., 2021): template information from the database of solved structures can inform the internal conformation of individual chains, but it does not guide the docking of chains into higher order complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of how AlphaFold-Multimer uses template information, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "8287ebb4-5e55-42b3-9155-54116634e633",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C26",
+      "claim": "The constrained nature of the TCR:pMHC binding mode suggests that higher and more consistent prediction accuracy could be obtained by providing additional template information.",
+      "claim_type": "EXPLICIT",
+      "source": "The constrained nature of the TCR:pMHC binding mode suggests that higher and more consistent prediction accuracy could be obtained by providing additional template information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the characteristics of TCR:pMHC binding.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "8cf140a1-fcc8-4937-9353-93a350136331",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C27",
+      "claim": "The V-alpha and V-beta genes largely determine the best structural template for TCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "A challenge when modeling TCR structures is that the V-alpha and V-beta genes largely determine the best structural template, and these genes associate freely rather than in fixed pairings, which means that the optimal structural template for the TCR-alpha chain will often come from a different PDB structure as that for the TCR-beta chain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on knowledge of TCR biology and structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "b21e322d-5474-4654-9a71-02287f148187",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C28",
+      "claim": "V-alpha and V-beta genes associate freely rather than in fixed pairings.",
+      "claim_type": "EXPLICIT",
+      "source": "A challenge when modeling TCR structures is that the V-alpha and V-beta genes largely determine the best structural template, and these genes associate freely rather than in fixed pairings, which means that the optimal structural template for the TCR-alpha chain will often come from a different PDB structure as that for the TCR-beta chain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on knowledge of TCR biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "d5803963-0ca7-4667-a23d-2aad05224aab",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C29",
+      "claim": "The optimal structural template for the TCR-alpha chain will often come from a different PDB structure as that for the TCR-beta chain.",
+      "claim_type": "EXPLICIT",
+      "source": "A challenge when modeling TCR structures is that the V-alpha and V-beta genes largely determine the best structural template, and these genes associate freely rather than in fixed pairings, which means that the optimal structural template for the TCR-alpha chain will often come from a different PDB structure as that for the TCR-beta chain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the free association of V genes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "66e22aa5-b169-45f5-b430-1d0bc84d2b87",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C30",
+      "claim": "The TCR:pMHC docking mode varies widely within an overall diagonal binding mode, in a way that is not easily predicted directly from sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the TCR:pMHC docking mode varies widely within an overall diagonal binding mode, in a way that is not easily predicted directly from sequence, making it challenging to select an optimal template for the TCR:pMHC relative orientation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on knowledge of TCR:pMHC structural diversity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "565af4e8-149c-4f93-ac1a-4f0197bdfc3e",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C31",
+      "claim": "The AlphaFold-based TCR docking pipeline uses hybrid structural templates to provide a broad, native-like sampling of potential docking modes.",
+      "claim_type": "EXPLICIT",
+      "source": "Guided by these considerations, we developed an AlphaFold-based TCR docking pipeline that uses hybrid structural templates to provide a broad, native-like sampling of potential docking modes (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the method developed in this study, illustrated in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "5a6dbc7f-bcc8-43ec-9a5d-f405d907e2e0",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C32",
+      "claim": "Individual chain templates are first selected based on sequence similarity to the target TCR:pMHC.",
+      "claim_type": "EXPLICIT",
+      "source": "In this approach, individual chain templates are first selected based on sequence similarity to the target TCR:pMHC (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the method, illustrated in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "7290aae8-fa73-4da4-afbc-12090680a5bd",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C33",
+      "claim": "Hybrid complexes are created from individual chain templates by using a diverse set of representative docking geometries to orient the TCR chains relative to the pMHC.",
+      "claim_type": "EXPLICIT",
+      "source": "Hybrid complexes are created from these individual chain templates by using a diverse set of representative docking geometries to orient the TCR chains relative to the pMHC (see Methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the method developed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "2a1131f4-3e6f-47e2-97fd-99d3f0e918ab",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C34",
+      "claim": "Hybrid complexes are provided as templates to multiple independent AlphaFold simulations, four templates per simulation, with the highest confidence model from the simulations taken as the final prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "These hybrid complexes are provided as templates to multiple independent AlphaFold simulations, four templates per simulation, with the highest confidence model from the simulations taken as the final prediction (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the method, illustrated in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "1461c12a-7e44-4c38-b5aa-f13bd37566c6",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C35",
+      "claim": "During benchmarking, templates and docking geometries from structures with similar TCRs or pMHCs to the target are excluded to reduce bias toward the native structure.",
+      "claim_type": "EXPLICIT",
+      "source": "During benchmarking, templates and docking geometries from structures with similar TCRs or pMHCs to the target are excluded to reduce bias toward the native structure (see Methods; this constraint was not applied to the default AlphaFold-Multimer methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the benchmarking methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "e65ff00a-ad22-4d2e-9a73-313bf1ad6027",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C36",
+      "claim": "The pipeline does not include additional multiple sequence alignment (MSA) information beyond the target sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that we are providing template information that constrains the inter-chain docking, we chose not to include additional multiple sequence alignment (MSA) information beyond the target sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a methodological choice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "76167b3a-fa8d-4d1e-bb4f-d0225a1190bf",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C37",
+      "claim": "Not including MSA information greatly speeds the predictions because MSA building is the most time-consuming part of the AlphaFold pipeline, and the neural network inference step is also significantly faster without MSA information.",
+      "claim_type": "EXPLICIT",
+      "source": "This greatly speeds the predictions: MSA building is the most time-consuming part of the AlphaFold pipeline, and the neural network inference step is also significantly faster without MSA information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about computational performance based on the method design.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "9ae56533-bb77-4488-b359-18377ebba4e3",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C38",
+      "claim": "The hybrid templates AlphaFold pipeline specialized for TCR:pMHC ('AF_TCR') produces higher quality models than either of the Alphafold-Multimer variants on a benchmark set of 130 TCR:pMHC complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the hybrid templates AlphaFold pipeline specialized for TCR:pMHC ('AF_TCR') produces higher quality models than either of the Alphafold-Multimer variants on a benchmark set (Figure 2\u2014figure supplement 1) of 130 TCR:pMHC complexes (Figure 2A, Wilcoxon P<10\u20137 vs AFM_full and P<10\u201312 vs AFM_trim on the full set; Figure 2B, P<10\u20133 for both comparisons on 20 targets without a close homolog in the AlphaFold-Multimer training set; and Figure 2\u2014figure supplement 2 for peptide modeling accuracy).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in Figure 2 with statistical significance values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "ad55d95f-c8c2-4c0e-94ba-a267332a671c",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C39",
+      "claim": "The AF_TCR pipeline outperforms the state of the art TCRpMHCmodels pipeline for Class I MHC TCR modeling.",
+      "claim_type": "EXPLICIT",
+      "source": "The AF_TCR pipeline also outperforms the state of the art TCRpMHCmodels pipeline (Jensen et al., 2019) for Class I MHC TCR modeling (Figure 2\u2014figure supplement 3A\u2013B), and produces better docking geometries than simply borrowing the geometry from the most sequence-similar template (Figure 2\u2014figure supplement 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in Figure 2\u2014figure supplement 3 and a citation to the TCRpMHCmodels method.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "748c93b7-41dc-46d8-b1d4-58faf93dce8b",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C40",
+      "claim": "The AF_TCR pipeline produces better docking geometries than simply borrowing the geometry from the most sequence-similar template.",
+      "claim_type": "EXPLICIT",
+      "source": "The AF_TCR pipeline also outperforms the state of the art TCRpMHCmodels pipeline (Jensen et al., 2019) for Class I MHC TCR modeling (Figure 2\u2014figure supplement 3A\u2013B), and produces better docking geometries than simply borrowing the geometry from the most sequence-similar template (Figure 2\u2014figure supplement 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in Figure 2\u2014figure supplement 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "d9ca1859-1921-44c6-8ec4-eb8863f797b5",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C41",
+      "claim": "There was a significant positive correlation between predicted and observed model accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a significant positive correlation between predicted and observed model accuracy (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "20ef276f-e6b2-4b25-9f73-4f7b94d45547",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C42",
+      "claim": "For 30% of the targets, the AlphaFold TCR final model had a lower RMSD than the best template docking geometry.",
+      "claim_type": "EXPLICIT",
+      "source": "For 30% of the targets, the AlphaFold TCR final model had a lower RMSD than the best template docking geometry (Figure 2D); the final model improved over the median template RMSD for 94% of the targets (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "23395afb-15cc-4ff6-8309-b795ed078d3b",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C43",
+      "claim": "The final AlphaFold TCR model improved over the median template RMSD for 94% of the targets.",
+      "claim_type": "EXPLICIT",
+      "source": "For 30% of the targets, the AlphaFold TCR final model had a lower RMSD than the best template docking geometry (Figure 2D); the final model improved over the median template RMSD for 94% of the targets (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "f18cdc29-dd4c-4f3f-a1ae-0865b95dc093",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C44",
+      "claim": "Two dominant factors contributing to docking prediction accuracy are the degree to which the docking geometry in the native structure deviates from the consensus binding mode and the MHC class.",
+      "claim_type": "EXPLICIT",
+      "source": "We analyzed the factors contributing to docking prediction accuracy and found that two dominant factors are the degree to which the docking geometry in the native structure deviates from the consensus binding mode (as captured in a multidimensional Z score, see methods) and the MHC class (class II binding modes were better predicted than class I), with minor contributions from V gene template sequence distance, CDR loop modeling accuracy, peptide modeling accuracy, and TCRalpha/TCRbeta docking accuracy (Figure 2\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by analysis presented in Figure 2\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "6226b3ee-0782-43dc-a451-0f77b24d5f0b",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C45",
+      "claim": "Class II binding modes were better predicted than class I.",
+      "claim_type": "EXPLICIT",
+      "source": "We analyzed the factors contributing to docking prediction accuracy and found that two dominant factors are the degree to which the docking geometry in the native structure deviates from the consensus binding mode (as captured in a multidimensional Z score, see methods) and the MHC class (class II binding modes were better predicted than class I), with minor contributions from V gene template sequence distance, CDR loop modeling accuracy, peptide modeling accuracy, and TCRalpha/TCRbeta docking accuracy (Figure 2\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by analysis presented in Figure 2\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "01706498-5a14-4fd5-8f49-97bc72b4d3ba",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C46",
+      "claim": "The fine-tuned AlphaFold model showed improved performance on mouse targets compared to the non-fine-tuned model.",
+      "claim_type": "EXPLICIT",
+      "source": "We fine-tuned the AlphaFold parameters in the context of the AlphaFold TCR pipeline on the set of 93 human TCR:pMHC complexes from the benchmarking set and subsequently evaluated the performance of this model on the 37 mouse TCR:pMHC targets. Despite the small size of the TCR:pMHC ternary structure database, the fine-tuned model showed improved performance on the mouse targets (Figure 2F; Wilcoxon p<0.015), which are distinct in the details of their epitope, MHC, and TCR sequences from the human training set, suggesting that the model was able to learn generalizable features of TCR:pMHC interactions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in Figure 2F with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "21e5ad7a-6dbd-4b44-9c50-87f6a2b46d06",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C47",
+      "claim": "The fine-tuned model was able to learn generalizable features of TCR:pMHC interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the small size of the TCR:pMHC ternary structure database, the fine-tuned model showed improved performance on the mouse targets (Figure 2F; Wilcoxon p<0.015), which are distinct in the details of their epitope, MHC, and TCR sequences from the human training set, suggesting that the model was able to learn generalizable features of TCR:pMHC interactions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the improved performance on mouse targets after training on human targets.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "b3aad648-9e5c-4c4b-943b-f4a541a64c65",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C48",
+      "claim": "The general problem of predicting, de novo, which peptide:MHCs a given TCR recognizes is likely to be very difficult due to the diversity of TCR:pMHC recognition modes, the polyspecificity of individual TCRs, and the paucity of available training data.",
+      "claim_type": "EXPLICIT",
+      "source": "The general problem of predicting, de novo, which peptide:MHCs a given TCR recognizes is likely to be very difficult due to the diversity of TCR:pMHC recognition modes, the polyspecificity of individual TCRs, and the paucity of available training data (Moris et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the difficulty of the problem, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "724bb559-7b78-4135-8f70-56a2ebe9dbfe",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C49",
+      "claim": "Eight Class I peptide:MHC systems were selected for which a repertoire of paired epitope-specific TCRs and a solved ternary structure were available.",
+      "claim_type": "EXPLICIT",
+      "source": "We selected a set of 8 Class I peptide:MHC systems (Table 1) for which a repertoire of paired epitope-specific TCRs and a solved ternary structure were available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the benchmark dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "12fefd02-5f7f-452b-9028-8249b1605951",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C50",
+      "claim": "These systems include one human (A*0201) and one mouse (H2-Db) MHC allele, each with 9- and 10-residue peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "These systems include one human (A*0201) and one mouse (H2-Db) MHC allele, each with 9- and 10-residue peptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the benchmark dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "c1bf5c80-ea8b-49c7-afcd-5e11c3ceda49",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C51",
+      "claim": "TCR repertoires containing more than 50 unique TCR sequences were subsampled to a set of 50 TCRs using an algorithm that removed redundancy while concentrating on the more densely sampled regions of TCR space.",
+      "claim_type": "EXPLICIT",
+      "source": "TCR repertoires containing more than 50 unique TCR sequences were subsampled to a set of 50 TCRs using an algorithm that removed redundancy while concentrating on the more densely sampled regions of TCR space (see Methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data processing methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "a109dd44-690e-42c9-b326-206fb09b9bca",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C52",
+      "claim": "NetMHCpan-4.1 was used to select 9 decoy peptides with binding scores in the range of the true peptide binders for each MHC/peptide length combination.",
+      "claim_type": "EXPLICIT",
+      "source": "For each MHC/peptide length combination, we used the NetMHCpan-4.1 (Reynisson et al., 2020) method to select 9 decoy peptides with binding scores in the range of the true peptide binders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodology for selecting decoy peptides, with a citation to the NetMHCpan method.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "301931fa-02f8-4412-8b75-e0f389d5e80f",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C53",
+      "claim": "Raw accuracy estimates showed significant TCR- and pMHC-intrinsic effects.",
+      "claim_type": "EXPLICIT",
+      "source": "These raw accuracy estimates showed significant TCR- and pMHC-intrinsic effects (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "f5e415bb-142a-4ed1-85d4-2c5b63d28728",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C54",
+      "claim": "Certain TCRs had consistently higher or lower than average predicted interface accuracies due to features such as longer CDR3 loops or usage of V genes without a close structural template.",
+      "claim_type": "EXPLICIT",
+      "source": "Certain TCRs had consistently higher or lower than average predicted interface accuracies due to features such as longer CDR3 loops or usage of V genes without a close structural template.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about TCR-intrinsic effects based on the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "c3b3e8de-f9d3-4d9c-a343-1194afe1ebb5",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C55",
+      "claim": "TCR-intrinsic factors do not change the relative order of candidate peptides, but they make comparisons of binding predictions across TCRs difficult.",
+      "claim_type": "EXPLICIT",
+      "source": "TCR-intrinsic factors do not change the relative order of candidate peptides, but they make comparisons of binding predictions across TCRs difficult; pMHC effects have the potential to change the rank ordering of candidate peptide epitopes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the nature of TCR-intrinsic effects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "aa04f18f-1cbd-4009-90e7-93748d4bbb28",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C56",
+      "claim": "pMHC effects have the potential to change the rank ordering of candidate peptide epitopes.",
+      "claim_type": "EXPLICIT",
+      "source": "TCR-intrinsic factors do not change the relative order of candidate peptides, but they make comparisons of binding predictions across TCRs difficult; pMHC effects have the potential to change the rank ordering of candidate peptide epitopes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the nature of pMHC-intrinsic effects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "81a3d584-dfba-40ba-98fc-99eb0ec5e574",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C57",
+      "claim": "For six of the eight epitopes, the correct peptide is ranked first when averaging the binding scores of all the TCRs in the repertoire.",
+      "claim_type": "EXPLICIT",
+      "source": "For six of the eight epitopes, the correct peptide is ranked first when we average the binding scores of all the TCRs in the repertoire (Figure 3D; Figure 4: the largest branch of the tree is dark blue).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figures 3D and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "e204145d-b22f-4ced-9ef7-7ef865aa780c",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C58",
+      "claim": "Epitopes with more sequence-diverse repertoires (A*0201-GLC9 and A*02:01-NLV9) are more challenging to predict.",
+      "claim_type": "EXPLICIT",
+      "source": "It also appears that the epitopes with more sequence-diverse repertoires (A*0201-GLC9 and A*02:01-NLV9) are more challenging to predict: the trees that merge completely at smaller TCRdist values (further to the left) are bluer than the other trees in Figure 4.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation based on visual inspection of Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "acfe37de-6d1c-4378-8b98-13974e17b307",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C59",
+      "claim": "TCRdiv repertoire sequence diversity measure correlates with binding prediction success.",
+      "claim_type": "EXPLICIT",
+      "source": "This can be seen quantitatively by plotting the TCRdiv repertoire sequence diversity measure (Dash et al., 2017) against measures of binding prediction success (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 4\u2014figure supplement 1 and a citation to the TCRdiv measure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "78a519a2-8f2c-4b9d-bbfc-023c32d683c8",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C60",
+      "claim": "Some epitopes, such as A*02:01-YLQ9 and A*02:01-ELA10 are predicted very well (by area under the ROC curve, AUROC \u2265 0.96).",
+      "claim_type": "EXPLICIT",
+      "source": "If we rank the peptides by binding score and compare the recovery of true binder peptides to decoys using receiver operating characteristic (ROC) curves, we can see that some epitopes, such as A*02:01-YLQ9 and A*02:01-ELA10 are predicted very well (by area under the ROC curve, AUROC \u2265 0.96) and some predictions are only slightly better than random (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "3ab5ca1f-df06-4b61-b5b7-1ebd2f6046e7",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C61",
+      "claim": "Some predictions are only slightly better than random.",
+      "claim_type": "EXPLICIT",
+      "source": "If we rank the peptides by binding score and compare the recovery of true binder peptides to decoys using receiver operating characteristic (ROC) curves, we can see that some epitopes, such as A*02:01-YLQ9 and A*02:01-ELA10 are predicted very well (by area under the ROC curve, AUROC \u2265 0.96) and some predictions are only slightly better than random (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "bac5caa7-773f-46fc-a084-afd6c8fe918f",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C62",
+      "claim": "An overall AUROC value of 0.82 was found when binding and non-binding TCR:pMHC pairs from all epitopes are ranked together.",
+      "claim_type": "EXPLICIT",
+      "source": "We find an overall AUROC value of 0.82 when binding and non-binding TCR:pMHC pairs from all epitopes are ranked together.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statistic from the binding prediction analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "eb2c2b2e-1e5b-42b1-9055-51c9bd7cdac9",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C63",
+      "claim": "Well-predicted epitopes such as A*02:01-YLQ9 and A*02:01-ELA10 have smaller RMSD values than other repertoires.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 5A shows the distribution of these RMSD values across each repertoire. Well-predicted epitopes such as A*02:01-YLQ9 and A*02:01-ELA10 indeed appear to have smaller RMSD values than other repertoires.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "03ff8d64-512a-46c5-85f4-91e885cea691",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C64",
+      "claim": "The mouse pMHC H2Db-ASN9 is an outlier, with an RMSD distribution shifted to very high values.",
+      "claim_type": "EXPLICIT",
+      "source": "The mouse pMHC H2Db-ASN9 is an outlier, with an RMSD distribution shifted to very high values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation based on the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "e465f865-26e9-4996-9c2d-794e3eeac140",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C65",
+      "claim": "Three ternary structures for H2Db-ASN9 represent a unique population of TRBV17+ TCRs that is distinct from the consensus repertoire modeled.",
+      "claim_type": "EXPLICIT",
+      "source": "Examination of the three ternary structures for this pMHC revealed that they represent a unique population of TRBV17+ TCRs that is distinct from the consensus repertoire modeled here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation based on examination of structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "83a87fdc-f43d-43f4-a22f-8e0d7e372388",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C66",
+      "claim": "Two of the three H2Db-ASN9 TCRs bind with a reversed docking orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "Two of the three TCRs bind with a reversed docking orientation (Gras et al., 2016), and the third has a highly displaced binding footprint (Zareie et al., 2021); all three are outliers in a hierarchical clustering tree of Class I TCRs based on docking RMSD (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations and data presented in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "e79ea5fd-e23a-445e-904d-1e71fba2ddce",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C67",
+      "claim": "The third H2Db-ASN9 TCR has a highly displaced binding footprint.",
+      "claim_type": "EXPLICIT",
+      "source": "Two of the three TCRs bind with a reversed docking orientation (Gras et al., 2016), and the third has a highly displaced binding footprint (Zareie et al., 2021); all three are outliers in a hierarchical clustering tree of Class I TCRs based on docking RMSD (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by a citation and data presented in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "4b3d05b7-f28e-4784-b6a4-ffd7842e7866",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C68",
+      "claim": "All three H2Db-ASN9 TCRs are outliers in a hierarchical clustering tree of Class I TCRs based on docking RMSD.",
+      "claim_type": "EXPLICIT",
+      "source": "Two of the three TCRs bind with a reversed docking orientation (Gras et al., 2016), and the third has a highly displaced binding footprint (Zareie et al., 2021); all three are outliers in a hierarchical clustering tree of Class I TCRs based on docking RMSD (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "c24d47a9-4b0c-45c9-95a9-2940fa12b4a2",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C69",
+      "claim": "Excluding H2Db:ASN9, there is a positive correlation between docking RMSD to the closest epitope structure and binding score for the correct peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "If we exclude H2Db:ASN9 and plot docking RMSD to the closest epitope structure versus binding score for the correct peptide, we see that there is a positive correlation (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "75334652-4e7e-4f34-acbd-c8672ac775dc",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C70",
+      "claim": "The TCRs for which the correct peptide is ranked first have a lower RMSD distribution than other TCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "The TCRs for which the correct peptide is ranked first have a lower RMSD distribution than other TCRs, and this RMSD distribution shifts upward as the rank of the correct peptide declines (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "68364ed4-70b9-4409-8c7f-ff9c7e46be31",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C71",
+      "claim": "The RMSD distribution shifts upward as the rank of the correct peptide declines.",
+      "claim_type": "EXPLICIT",
+      "source": "The TCRs for which the correct peptide is ranked first have a lower RMSD distribution than other TCRs, and this RMSD distribution shifts upward as the rank of the correct peptide declines (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "9675f4bd-c456-4802-ba8f-8dc604b9d527",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C72",
+      "claim": "The correct binding predictions are driven at least in part by recovery of native-like structural features.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the correct binding predictions are driven at least in part by recovery of native-like structural features (analysis of peptide backbone RMSDs shows a positive, but much weaker, correlation between binding prediction and modeling accuracy: Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the correlation between binding prediction success and structural accuracy.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "c36f877f-a943-4cad-82bc-18d427b9e298",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C73",
+      "claim": "Analysis of peptide backbone RMSDs shows a positive, but much weaker, correlation between binding prediction and modeling accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the correct binding predictions are driven at least in part by recovery of native-like structural features (analysis of peptide backbone RMSDs shows a positive, but much weaker, correlation between binding prediction and modeling accuracy: Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "76d7cec2-1418-47db-a979-22a02be1ad29",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C74",
+      "claim": "The majority of the epitope-specific repertoires show the expected preference for the native peptide at most positions, with a subset of positions showing high sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "From these sensitivity plots, we can see that the majority of the epitope-specific repertoires show the expected preference for the native peptide at most positions, with a subset of positions showing high sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation based on the alanine scanning data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "3b5f3c80-42f0-402d-adae-1304d26ab25e",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C75",
+      "claim": "Highly sensitive positions in the alanine scan are largely TCR-exposed.",
+      "claim_type": "EXPLICIT",
+      "source": "Coloring the pMHC structures by mutation sensitivity (Figure 6A) reveals that these highly sensitive positions are largely TCR-exposed; several are sites of known viral escape mutations, such as A*02:01-KLV position L5 (W\u00f6lfl et al., 2008) and H2Db-SSL position R7 (Valkenburg et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "865004b5-1740-4ba0-9813-d5f47c169b5a",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C76",
+      "claim": "Several highly sensitive positions are sites of known viral escape mutations, such as A*02:01-KLV position L5 and H2Db-SSL position R7.",
+      "claim_type": "EXPLICIT",
+      "source": "Coloring the pMHC structures by mutation sensitivity (Figure 6A) reveals that these highly sensitive positions are largely TCR-exposed; several are sites of known viral escape mutations, such as A*02:01-KLV position L5 (W\u00f6lfl et al., 2008) and H2Db-SSL position R7 (Valkenburg et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations and data presented in Figure 6A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "e4c35c99-0cf8-40f3-9255-bbf71502c7ae",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C77",
+      "claim": "Peptide anchor mutations are not among the most strongly predicted positions in the alanine scan.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that peptide anchor mutations are not among the most strongly predicted positions here suggests that, by subtracting each peptide's average binding score for the background 'non-binder' TCRs, we are able to correct for these peptide-intrinsic features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation based on the alanine scanning data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "183a6c18-969a-46be-924c-01d1a593b3c3",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C78",
+      "claim": "By subtracting each peptide's average binding score for the background 'non-binder' TCRs, the method is able to correct for peptide-intrinsic features.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that peptide anchor mutations are not among the most strongly predicted positions here suggests that, by subtracting each peptide's average binding score for the background 'non-binder' TCRs, we are able to correct for these peptide-intrinsic features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation about anchor mutations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "71877f06-8755-47c6-b75a-a105b3c92f67",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C79",
+      "claim": "The specificity protocol showed much poorer performance in a more challenging setting of single TCRs interacting with altered peptide variants with diverse amino acid mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "As a final test, we evaluated the specificity protocol in a more challenging setting: single TCRs (rather than TCR repertoires) interacting with altered peptide variants, some with diverse amino acid mutations. Here we found much poorer performance than in the decoy-discrimination task (Figure 6\u2014figure supplement 1), which could be somewhat improved by including related TCR:pMHC complexes in the template pool (suggesting that future improvements to the structure prediction methods may translate into improved binding predictions).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "a2848ccc-12f5-4bee-a7cf-ab92bf7b6eee",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C80",
+      "claim": "Performance in the single TCR altered peptide variant task could be somewhat improved by including related TCR:pMHC complexes in the template pool.",
+      "claim_type": "EXPLICIT",
+      "source": "As a final test, we evaluated the specificity protocol in a more challenging setting: single TCRs (rather than TCR repertoires) interacting with altered peptide variants, some with diverse amino acid mutations. Here we found much poorer performance than in the decoy-discrimination task (Figure 6\u2014figure supplement 1), which could be somewhat improved by including related TCR:pMHC complexes in the template pool (suggesting that future improvements to the structure prediction methods may translate into improved binding predictions).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "40cde606-1afa-4e3a-b840-7f2dae0deda3",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C81",
+      "claim": "Future improvements to the structure prediction methods may translate into improved binding predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we found much poorer performance than in the decoy-discrimination task (Figure 6\u2014figure supplement 1), which could be somewhat improved by including related TCR:pMHC complexes in the template pool (suggesting that future improvements to the structure prediction methods may translate into improved binding predictions).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative statement based on the observation that including related templates improved performance.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "1f4aff4c-6e6f-447e-8468-76bae1a032a4",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C82",
+      "claim": "The overall level of accuracy falls short of what would be required for most practical applications of TCR:pMHC binding prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the overall level of accuracy falls short of what would be required for most practical applications of TCR:pMHC binding prediction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of the practical utility of the method based on the results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "1edfb37c-f2ee-42b6-8c8d-d7dd6a838a23",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C83",
+      "claim": "It may be possible to predict from the simulations themselves which systems are reliably modeled.",
+      "claim_type": "EXPLICIT",
+      "source": "As described below, we are pursuing multiple avenues for improving this initial pipeline; it may also be possible to predict from the simulations themselves which systems are reliably modeled, which could allow useful predictions to be extracted from large-scale calculations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future possibilities.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "1c9dc3ba-ff64-4b22-8a07-c54a11b2ef60",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C84",
+      "claim": "Several of the epitopes in the peptide decoy discrimination benchmark have been extensively characterized in structural studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, several of the epitopes in our peptide decoy discrimination benchmark have been extensively characterized in structural studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the benchmark dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "b34eb4d1-82d7-4c48-ac50-2f159feae8b9",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C85",
+      "claim": "Efforts were made to avoid using information from related structures during template assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "While we made efforts to avoid using information from related structures during template assembly (see Methods), it is still possible that bias toward native-like conformations was introduced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodology and its limitations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "139cff72-3732-418b-b38a-131b2c5228a2",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C86",
+      "claim": "It is still possible that bias toward native-like conformations was introduced despite efforts to avoid using information from related structures.",
+      "claim_type": "EXPLICIT",
+      "source": "While we made efforts to avoid using information from related structures during template assembly (see Methods), it is still possible that bias toward native-like conformations was introduced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a potential limitation.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "2bdcaa23-c0ed-4c32-88ff-9e110faecee1",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C87",
+      "claim": "Some of the TCR chains modeled in the decoy discrimination task are likely similar to protein chains present in the AlphaFold training set.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the AlphaFold parameters that we rely on in the pipeline were trained on individual protein chains (not protein complexes) deposited prior to May 2018. Some of the TCR chains modeled in the decoy discrimination task are likely similar to protein chains present in this AlphaFold training set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about potential overlap between training and test data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "d26a4991-90ff-4b11-bcf8-d7968e0f1d61",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C88",
+      "claim": "As the database of TCR:pMHC pairs grows, future benchmarking will establish whether the performance observed here will extend to epitopes without structural coverage.",
+      "claim_type": "EXPLICIT",
+      "source": "As the database of TCR:pMHC pairs grows, future benchmarking will establish whether the performance observed here will extend to epitopes without structural coverage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future work needed to validate the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "48344a0d-6e3f-496e-92b5-22e069a1f09c",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C89",
+      "claim": "The results should be considered a favorable upper bound on the method's performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Until then, these results should be considered a favorable upper bound on the method's performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cautionary statement about interpreting the results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "8c1a6cd3-2bb3-4337-b0a6-78e4c8749fcc",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C90",
+      "claim": "The template-based modeling approach is unlikely to succeed on TCR:pMHC systems with highly divergent binding modes.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, our template-based modeling approach is unlikely to succeed on TCR:pMHC systems with highly divergent binding modes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the limitations of the template-based approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "8d0aa88d-dfa1-4388-9110-69431150edf3",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C91",
+      "claim": "AlphaFold can improve over the best template provided in some cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we do see evidence that AlphaFold can improve over the best template provided (Figure 2D), it is unlikely that it can reliably predict complexes that deviate substantially from any template (e.g. reversed-orientation geometries Beringer et al., 2015; Gras et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "24751ca5-0710-4170-af10-ba150ccc8b6d",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C92",
+      "claim": "It is unlikely that AlphaFold can reliably predict complexes that deviate substantially from any template.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we do see evidence that AlphaFold can improve over the best template provided (Figure 2D), it is unlikely that it can reliably predict complexes that deviate substantially from any template (e.g. reversed-orientation geometries Beringer et al., 2015; Gras et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference about the limitations of the method, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "e7e42a80-1fac-4c21-802c-0a3661796c2f",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C93",
+      "claim": "A template-based approach is fundamentally limited by the coverage of the structure database.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, a template-based approach such as ours is fundamentally limited by the coverage of the structure database, which is highly biased toward well-studied alleles such as HLA-A*02:01 and, for MHC Class I, toward canonical 9-residue epitopes (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about the fundamental limitations of template-based approaches, supported by data in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "461797ee-29ad-4293-846c-8a8755babc83",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C94",
+      "claim": "The structure database is highly biased toward well-studied alleles such as HLA-A*02:01 and, for MHC Class I, toward canonical 9-residue epitopes.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, a template-based approach such as ours is fundamentally limited by the coverage of the structure database, which is highly biased toward well-studied alleles such as HLA-A*02:01 and, for MHC Class I, toward canonical 9-residue epitopes (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "43c575f4-1797-4f8b-b4d7-447ec490ed36",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C95",
+      "claim": "The modeling pipeline can be improved by further testing on other systems and by comparison with other experimental data types.",
+      "claim_type": "EXPLICIT",
+      "source": "We anticipate that it can be improved by further testing on other systems and by comparison with other experimental data types (binding affinities, interface mutations, etc.).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future directions for improving the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "b4d0927d-9c39-425b-9a69-b59659c8e987",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C96",
+      "claim": "It may be helpful to include MSAs for individual chains or to construct 'paired MSAs' consisting of concatenated TCR:peptide:MHC sequences of known binding examples.",
+      "claim_type": "EXPLICIT",
+      "source": "This initial pipeline does not make use of multiple sequence alignment (MSA) information, but it may be helpful to include MSAs for individual chains or to construct 'paired MSAs' consisting of concatenated TCR:peptide:MHC sequences of known binding examples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential improvements to the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "886104c8-4669-43c2-a8c0-782d53fc4738",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C97",
+      "claim": "Paired MSAs could take the place of the paired ortholog alignments used by AlphaFold-Multimer to detect residue covariation across interfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Such paired MSAs could take the place of the paired ortholog alignments used by AlphaFold-Multimer to detect residue covariation across interfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about how paired MSAs could be used.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "949e68b8-5b0f-4eb5-ae4c-e32e26a5f26d",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C98",
+      "claim": "It may be worth exploring the use of other binding affinity estimates such as binding energies computed with the Rosetta software package or other molecular modeling tools.",
+      "claim_type": "EXPLICIT",
+      "source": "We evaluated the use of AlphaFold's residue-residue accuracy estimate (PAE) to discriminate wild type from decoy peptide-MHC epitopes, but it may also be worth exploring the use of other binding affinity estimates such as binding energies computed with the Rosetta software package (Leaver-Fay et al., 2011) or other molecular modeling tools (Lee et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about alternative approaches, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "fb9bde06-eb77-46b6-adda-dfac75d12bb7",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C99",
+      "claim": "It may be possible to fine-tune AlphaFold parameters directly to discriminate TCR:pMHC binding examples from non-binding examples.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, it may be possible to fine-tune AlphaFold parameters directly to discriminate TCR:pMHC binding examples from non-binding examples, as we have recently demonstrated for peptide:MHC interactions (Motmaen et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future directions, supported by a citation to related work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "88836c44-f107-4df1-9dc9-a0c7d0aae29a",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "claim_id": "C100",
+      "claim": "Direct fine-tuning would allow leveraging the thousands of validated TCR:pMHC interactions within the context of a structurally informed training procedure.",
+      "claim_type": "EXPLICIT",
+      "source": "This would allow us to directly leverage the thousands of validated TCR:pMHC interactions within the context of a structurally informed training procedure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential benefits of direct fine-tuning.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7e2ca020-4e03-4fb7-8331-0ccf4682d1e2",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "AlphaFold-Multimer shows inconsistent performance on TCR:pMHC structures, with highly variable prediction quality, displaced peptides, non-native docking modes, and long computational times, despite being capable of generating some high-quality predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C20-C23 collectively demonstrate that while AlphaFold-Multimer can produce high-quality predictions (CDR RMSD ~2\u00c5), the performance is highly variable with many models showing displaced peptides and non-native docking modes. The computational cost limitation (C23) and citation support (C11) strengthen this assessment. Visual inspection data (C22) provides additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "9361dbf2-e899-400c-b99f-3b51cd0cd149",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "AlphaFold-Multimer's limitation in not supporting multi-chain templates, combined with the free association of V genes and variable TCR:pMHC docking modes, motivated the development of a specialized pipeline using hybrid templates to provide better docking geometry constraints.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C30 establish the rationale for the new method. C24-C25 describe AlphaFold-Multimer's technical limitation (supported by citation), C27-C29 explain TCR biology constraints, and C26, C30 provide the logical connection to why hybrid templates would improve performance. This forms a coherent justification for the methodological innovation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "95645ba0-ed87-4bb4-b533-47d222c9032b",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A specialized AlphaFold pipeline (AF_TCR) was developed that uses hybrid structural templates from diverse docking geometries, excludes similar structures during benchmarking, omits MSA information for computational efficiency, and selects the highest confidence model from multiple simulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C37 describe the complete AF_TCR methodology with supporting figures (Figure 1). The methodological choices are clearly documented: hybrid template construction (C31-C33), model selection (C34), benchmarking controls (C35), and computational optimization (C36-C37). The approach is internally consistent and well-justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "e2303e24-890f-4fe9-a54d-1e25f1458e58",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The AF_TCR pipeline produces higher quality models than AlphaFold-Multimer variants and the TCRpMHCmodels pipeline, with statistically significant improvements (P<10\u207b\u2077), positive correlation between predicted and observed accuracy, and improvement over template geometries in 30-94% of targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C43 present comprehensive benchmarking data with strong statistical support (Figure 2). Multiple comparison methods (Wilcoxon tests, RMSD metrics) consistently show AF_TCR superiority. The correlation analysis (C41) and template improvement metrics (C42-C43) provide convergent evidence. Sample sizes (N=130) are adequate for the statistical claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "d5476366-37a0-4697-bd46-3c44907c0d43",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Two dominant factors contributing to docking prediction accuracy are the deviation of native docking geometry from consensus binding mode and MHC class, with class II binding modes predicted better than class I.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45 are supported by systematic analysis in Figure 2\u2014figure supplement 6. The multidimensional Z-score approach for quantifying docking geometry deviation is methodologically sound. The identification of MHC class as a factor is data-driven, though the mechanistic explanation for why class II performs better is not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "0f271b44-b959-4bae-82f8-046bb082f7c9",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Fine-tuning AlphaFold on human TCR:pMHC complexes improved performance on mouse targets (p<0.015), suggesting the model learned generalizable features of TCR:pMHC interactions despite the small training set.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 demonstrate cross-species generalization with statistical significance (Figure 2F). The inference that generalizable features were learned (C47) is reasonable given the sequence and structural differences between human and mouse systems. However, the small training set size (93 structures) and modest improvement suggest this result should be interpreted cautiously.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "6d370d4c-951f-4baf-ad68-69dddc5dc32c",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A benchmark of 8 Class I pMHC systems with TCR repertoires was established, using NetMHCpan-4.1 to select decoy peptides, revealing significant TCR- and pMHC-intrinsic effects in raw accuracy estimates that required correction for proper binding score comparisons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C56 describe the benchmark design and initial observations. The dataset selection criteria are clear (C49-C51), decoy selection methodology is appropriate (C52), and the identification of intrinsic effects (C53-C56) is supported by Figure 3B. The correction strategy for these effects is methodologically sound, though the specific correction algorithm could be better validated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "78278a11-08a2-4793-b464-79d1d017bde1",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The AF_TCR pipeline correctly ranked the target peptide first for 6 of 8 epitopes when averaging across TCR repertoires, achieved an overall AUROC of 0.82, with performance varying by epitope (AUROC \u22650.96 for some, near-random for others) and correlating with TCR repertoire diversity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C62 present the main binding specificity results with comprehensive data (Figures 3D-E, 4). The repertoire-level prediction success (C57) and overall AUROC (C62) are clearly quantified. The correlation with repertoire diversity (C58-C59) is supported by TCRdiv analysis (Figure 4\u2014figure supplement 1). The variable performance across epitopes (C60-C61) is honestly reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "b9042400-1728-4e90-8204-81480cc1e5aa",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Well-predicted epitopes have smaller structural RMSD values, with H2Db-ASN9 as an outlier due to its unique TRBV17+ TCR population with reversed/displaced binding modes. Excluding this outlier, there is positive correlation between docking RMSD and binding score, and TCRs with correctly ranked peptides show lower RMSD distributions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C71 establish the connection between structural accuracy and prediction success (Figure 5). The H2Db-ASN9 outlier analysis (C64-C68) is well-supported by citations and clustering data. The correlations (C69-C71) demonstrate that successful predictions are driven by structural accuracy. However, the exclusion of H2Db-ASN9 from correlation analysis could be seen as selective data presentation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "9c97c4bd-0840-4461-a424-8024e4ea6bf7",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Correct binding predictions are driven at least in part by recovery of native-like structural features, though peptide backbone RMSD shows only weak correlation with binding prediction accuracy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C73 provide mechanistic insight into prediction success. C72 is a reasonable inference from the docking RMSD correlations, while C73 (Figure 5\u2014figure supplement 2) shows that peptide conformation alone is insufficient. This suggests the method captures interface geometry better than peptide structure, which is consistent with the template-based approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "e21404e2-81f3-4a4f-be3b-a57f4f05c833",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In silico alanine scanning shows that most epitope-specific repertoires prefer native peptides at most positions, with highly sensitive positions being largely TCR-exposed, including known viral escape mutation sites, while peptide anchor positions are not strongly predicted, suggesting successful correction for peptide-intrinsic features.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C78 validate the method through alanine scanning (Figure 6). The identification of TCR-exposed sensitive positions (C75) and known escape mutations (C76 with citations) provides biological validation. The observation about anchor positions (C77-C78) supports the correction methodology, though this is somewhat circular reasoning since the correction was designed to remove such effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "400d7361-b27a-4a24-a9fc-78cb9036ee71",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The specificity protocol showed much poorer performance on single TCRs with altered peptide variants compared to the decoy-discrimination task, though performance could be somewhat improved by including related templates, suggesting future method improvements may enhance binding predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C81 honestly report limitations (Figure 6\u2014figure supplement 1). The poor performance on altered peptide variants (C79) is a significant limitation. The improvement with related templates (C80) is data-supported, and the speculation about future improvements (C81) is reasonable but remains unvalidated. This represents an important boundary condition for the method.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "53fafcbe-ce3c-4dc0-97f2-0d5ddf4c334e",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The overall accuracy falls short of practical application requirements, several benchmark epitopes have extensive structural characterization that may introduce bias despite exclusion efforts, some TCR chains may overlap with AlphaFold training data, and future benchmarking is needed to establish performance on epitopes without structural coverage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C89 provide critical self-assessment of limitations. The acknowledgment of insufficient practical utility (C82), potential bias from structural coverage (C84-C86), and training set overlap (C87) demonstrate scientific rigor. The call for future validation (C88) and cautious interpretation (C89) are appropriate. These limitations are significant and honestly reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "7ee14d9b-3578-4a47-8553-af38f2458f28",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The template-based approach is unlikely to succeed on highly divergent binding modes and is fundamentally limited by structure database coverage, which is biased toward well-studied alleles like HLA-A*02:01 and canonical 9-residue epitopes, though AlphaFold can improve over templates in some cases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C94 identify fundamental limitations of the template-based approach. The inability to predict divergent geometries (C90, C92) is supported by citations and consistent with the method design. The database bias (C93-C94) is documented in Figure 2\u2014figure supplement 1. The acknowledgment that AlphaFold can sometimes improve templates (C91) provides balanced assessment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "641810a3-f701-43b9-afc4-e23e60a9fcd4",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Multiple potential improvements are proposed including testing on other systems, incorporating MSA information or paired MSAs, exploring alternative binding affinity estimates like Rosetta energies, and directly fine-tuning AlphaFold to discriminate binding from non-binding examples.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C95-C100 are entirely speculative about future directions. While the suggestions are reasonable and some are supported by citations to related work (C98-C99), none have been tested in this study. These represent hypotheses rather than results. The speculation is appropriate for a Discussion section but cannot be evaluated as supported findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "9b854625-86dd-413f-8181-811138a63417",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "TCR:pMHC interaction specificity underlies adaptive immunity, but generalizable predictive models remain elusive due to recognition mode diversity and limited training data, though existing structural studies likely cover most docking geometries and specificity is determined by structure and flexibility at the biophysical level.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C5-C8 establish the scientific context and motivation. These are well-supported by citations and represent established knowledge in the field. C1 and C7 state fundamental immunological principles, C2 and C5-C6 accurately describe current limitations (supported by citations), and C8 provides reasonable inference about structural coverage. This context appropriately frames the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "1dd2e1dd-2291-4d14-857e-1230f9a68ba7",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "A specialized AlphaFold version can discriminate correct from incorrect peptide epitopes with substantial accuracy, with success correlating with structural accuracy and recapitulating key specificity determinants, suggesting deep learning-based structural modeling represents a path to generalizable TCR:pMHC prediction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4, C13-C15 present the main conclusions. C3 and C13 are supported by the binding specificity data (AUROC 0.82, 6/8 epitopes ranked first). The correlation between prediction success and structural accuracy (C14-C15) is demonstrated in Figure 5. However, C4's optimism about generalizability should be tempered by the acknowledged limitations (C82-C94). The evidence supports cautious optimism rather than strong confidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    },
+    {
+      "id": "97091c1c-0093-48b9-9c07-f97c01a82c04",
+      "content_id": "e4cbeda3-1a7f-4176-8909-143d0bdbf04f",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "AlphaFold and RoseTTAfold use advanced architectures trained on protein structures and can predict protein complexes despite monomer training, with AlphaFold-Multimer leveraging inter-chain covariation, though performance on antibody:antigen complexes (similar to TCR:pMHC) is poor and TCR:pMHC interactions involve variable CDR3 regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10, C16-C19 provide technical background on AlphaFold methods. These are well-supported by citations to the original AlphaFold papers and represent accurate descriptions of the methods. The connection to TCR:pMHC challenges (C17-C19) appropriately motivates why specialized approaches might be needed. This is established knowledge appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:23.893163Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d5820aef-f10a-4076-aec3-3ef7676f967a",
+      "result_id": "7e2ca020-4e03-4fb7-8331-0ccf4682d1e2"
+    },
+    {
+      "claim_id": "63f1d2eb-3d06-4672-9293-1d23080aae7a",
+      "result_id": "7e2ca020-4e03-4fb7-8331-0ccf4682d1e2"
+    },
+    {
+      "claim_id": "e7118b4b-bd80-40df-9867-064681184ecb",
+      "result_id": "7e2ca020-4e03-4fb7-8331-0ccf4682d1e2"
+    },
+    {
+      "claim_id": "8333d32b-0b38-485a-ab69-576e4964d9f3",
+      "result_id": "7e2ca020-4e03-4fb7-8331-0ccf4682d1e2"
+    },
+    {
+      "claim_id": "e74ececb-c9de-462c-9358-f7a6078a33e0",
+      "result_id": "7e2ca020-4e03-4fb7-8331-0ccf4682d1e2"
+    },
+    {
+      "claim_id": "ba3bcf4c-846d-4b6b-bdb0-b91160cde812",
+      "result_id": "7e2ca020-4e03-4fb7-8331-0ccf4682d1e2"
+    },
+    {
+      "claim_id": "d9bb0aa9-a1b2-498d-bca8-ce6083b52825",
+      "result_id": "9361dbf2-e899-400c-b99f-3b51cd0cd149"
+    },
+    {
+      "claim_id": "c8613d16-f947-4de5-b0dd-5a7f8671cc9b",
+      "result_id": "9361dbf2-e899-400c-b99f-3b51cd0cd149"
+    },
+    {
+      "claim_id": "8287ebb4-5e55-42b3-9155-54116634e633",
+      "result_id": "9361dbf2-e899-400c-b99f-3b51cd0cd149"
+    },
+    {
+      "claim_id": "8cf140a1-fcc8-4937-9353-93a350136331",
+      "result_id": "9361dbf2-e899-400c-b99f-3b51cd0cd149"
+    },
+    {
+      "claim_id": "b21e322d-5474-4654-9a71-02287f148187",
+      "result_id": "9361dbf2-e899-400c-b99f-3b51cd0cd149"
+    },
+    {
+      "claim_id": "d5803963-0ca7-4667-a23d-2aad05224aab",
+      "result_id": "9361dbf2-e899-400c-b99f-3b51cd0cd149"
+    },
+    {
+      "claim_id": "66e22aa5-b169-45f5-b430-1d0bc84d2b87",
+      "result_id": "9361dbf2-e899-400c-b99f-3b51cd0cd149"
+    },
+    {
+      "claim_id": "565af4e8-149c-4f93-ac1a-4f0197bdfc3e",
+      "result_id": "95645ba0-ed87-4bb4-b533-47d222c9032b"
+    },
+    {
+      "claim_id": "5a6dbc7f-bcc8-43ec-9a5d-f405d907e2e0",
+      "result_id": "95645ba0-ed87-4bb4-b533-47d222c9032b"
+    },
+    {
+      "claim_id": "7290aae8-fa73-4da4-afbc-12090680a5bd",
+      "result_id": "95645ba0-ed87-4bb4-b533-47d222c9032b"
+    },
+    {
+      "claim_id": "2a1131f4-3e6f-47e2-97fd-99d3f0e918ab",
+      "result_id": "95645ba0-ed87-4bb4-b533-47d222c9032b"
+    },
+    {
+      "claim_id": "1461c12a-7e44-4c38-b5aa-f13bd37566c6",
+      "result_id": "95645ba0-ed87-4bb4-b533-47d222c9032b"
+    },
+    {
+      "claim_id": "e65ff00a-ad22-4d2e-9a73-313bf1ad6027",
+      "result_id": "95645ba0-ed87-4bb4-b533-47d222c9032b"
+    },
+    {
+      "claim_id": "76167b3a-fa8d-4d1e-bb4f-d0225a1190bf",
+      "result_id": "95645ba0-ed87-4bb4-b533-47d222c9032b"
+    },
+    {
+      "claim_id": "9ae56533-bb77-4488-b359-18377ebba4e3",
+      "result_id": "e2303e24-890f-4fe9-a54d-1e25f1458e58"
+    },
+    {
+      "claim_id": "ad55d95f-c8c2-4c0e-94ba-a267332a671c",
+      "result_id": "e2303e24-890f-4fe9-a54d-1e25f1458e58"
+    },
+    {
+      "claim_id": "748c93b7-41dc-46d8-b1d4-58faf93dce8b",
+      "result_id": "e2303e24-890f-4fe9-a54d-1e25f1458e58"
+    },
+    {
+      "claim_id": "d9ca1859-1921-44c6-8ec4-eb8863f797b5",
+      "result_id": "e2303e24-890f-4fe9-a54d-1e25f1458e58"
+    },
+    {
+      "claim_id": "20ef276f-e6b2-4b25-9f73-4f7b94d45547",
+      "result_id": "e2303e24-890f-4fe9-a54d-1e25f1458e58"
+    },
+    {
+      "claim_id": "23395afb-15cc-4ff6-8309-b795ed078d3b",
+      "result_id": "e2303e24-890f-4fe9-a54d-1e25f1458e58"
+    },
+    {
+      "claim_id": "f18cdc29-dd4c-4f3f-a1ae-0865b95dc093",
+      "result_id": "d5476366-37a0-4697-bd46-3c44907c0d43"
+    },
+    {
+      "claim_id": "6226b3ee-0782-43dc-a451-0f77b24d5f0b",
+      "result_id": "d5476366-37a0-4697-bd46-3c44907c0d43"
+    },
+    {
+      "claim_id": "01706498-5a14-4fd5-8f49-97bc72b4d3ba",
+      "result_id": "0f271b44-b959-4bae-82f8-046bb082f7c9"
+    },
+    {
+      "claim_id": "21e5ad7a-6dbd-4b44-9c50-87f6a2b46d06",
+      "result_id": "0f271b44-b959-4bae-82f8-046bb082f7c9"
+    },
+    {
+      "claim_id": "724bb559-7b78-4135-8f70-56a2ebe9dbfe",
+      "result_id": "6d370d4c-951f-4baf-ad68-69dddc5dc32c"
+    },
+    {
+      "claim_id": "12fefd02-5f7f-452b-9028-8249b1605951",
+      "result_id": "6d370d4c-951f-4baf-ad68-69dddc5dc32c"
+    },
+    {
+      "claim_id": "c1bf5c80-ea8b-49c7-afcd-5e11c3ceda49",
+      "result_id": "6d370d4c-951f-4baf-ad68-69dddc5dc32c"
+    },
+    {
+      "claim_id": "a109dd44-690e-42c9-b326-206fb09b9bca",
+      "result_id": "6d370d4c-951f-4baf-ad68-69dddc5dc32c"
+    },
+    {
+      "claim_id": "301931fa-02f8-4412-8b75-e0f389d5e80f",
+      "result_id": "6d370d4c-951f-4baf-ad68-69dddc5dc32c"
+    },
+    {
+      "claim_id": "f5e415bb-142a-4ed1-85d4-2c5b63d28728",
+      "result_id": "6d370d4c-951f-4baf-ad68-69dddc5dc32c"
+    },
+    {
+      "claim_id": "c3b3e8de-f9d3-4d9c-a343-1194afe1ebb5",
+      "result_id": "6d370d4c-951f-4baf-ad68-69dddc5dc32c"
+    },
+    {
+      "claim_id": "aa04f18f-1cbd-4009-90e7-93748d4bbb28",
+      "result_id": "6d370d4c-951f-4baf-ad68-69dddc5dc32c"
+    },
+    {
+      "claim_id": "81a3d584-dfba-40ba-98fc-99eb0ec5e574",
+      "result_id": "78278a11-08a2-4793-b464-79d1d017bde1"
+    },
+    {
+      "claim_id": "e204145d-b22f-4ced-9ef7-7ef865aa780c",
+      "result_id": "78278a11-08a2-4793-b464-79d1d017bde1"
+    },
+    {
+      "claim_id": "acfe37de-6d1c-4378-8b98-13974e17b307",
+      "result_id": "78278a11-08a2-4793-b464-79d1d017bde1"
+    },
+    {
+      "claim_id": "78a519a2-8f2c-4b9d-bbfc-023c32d683c8",
+      "result_id": "78278a11-08a2-4793-b464-79d1d017bde1"
+    },
+    {
+      "claim_id": "3ab5ca1f-df06-4b61-b5b7-1ebd2f6046e7",
+      "result_id": "78278a11-08a2-4793-b464-79d1d017bde1"
+    },
+    {
+      "claim_id": "bac5caa7-773f-46fc-a084-afd6c8fe918f",
+      "result_id": "78278a11-08a2-4793-b464-79d1d017bde1"
+    },
+    {
+      "claim_id": "eb2c2b2e-1e5b-42b1-9055-51c9bd7cdac9",
+      "result_id": "b9042400-1728-4e90-8204-81480cc1e5aa"
+    },
+    {
+      "claim_id": "03ff8d64-512a-46c5-85f4-91e885cea691",
+      "result_id": "b9042400-1728-4e90-8204-81480cc1e5aa"
+    },
+    {
+      "claim_id": "e465f865-26e9-4996-9c2d-794e3eeac140",
+      "result_id": "b9042400-1728-4e90-8204-81480cc1e5aa"
+    },
+    {
+      "claim_id": "83a87fdc-f43d-43f4-a22f-8e0d7e372388",
+      "result_id": "b9042400-1728-4e90-8204-81480cc1e5aa"
+    },
+    {
+      "claim_id": "e79ea5fd-e23a-445e-904d-1e71fba2ddce",
+      "result_id": "b9042400-1728-4e90-8204-81480cc1e5aa"
+    },
+    {
+      "claim_id": "4b3d05b7-f28e-4784-b6a4-ffd7842e7866",
+      "result_id": "b9042400-1728-4e90-8204-81480cc1e5aa"
+    },
+    {
+      "claim_id": "c24d47a9-4b0c-45c9-95a9-2940fa12b4a2",
+      "result_id": "b9042400-1728-4e90-8204-81480cc1e5aa"
+    },
+    {
+      "claim_id": "75334652-4e7e-4f34-acbd-c8672ac775dc",
+      "result_id": "b9042400-1728-4e90-8204-81480cc1e5aa"
+    },
+    {
+      "claim_id": "68364ed4-70b9-4409-8c7f-ff9c7e46be31",
+      "result_id": "b9042400-1728-4e90-8204-81480cc1e5aa"
+    },
+    {
+      "claim_id": "9675f4bd-c456-4802-ba8f-8dc604b9d527",
+      "result_id": "9c97c4bd-0840-4461-a424-8024e4ea6bf7"
+    },
+    {
+      "claim_id": "c36f877f-a943-4cad-82bc-18d427b9e298",
+      "result_id": "9c97c4bd-0840-4461-a424-8024e4ea6bf7"
+    },
+    {
+      "claim_id": "76d7cec2-1418-47db-a979-22a02be1ad29",
+      "result_id": "e21404e2-81f3-4a4f-be3b-a57f4f05c833"
+    },
+    {
+      "claim_id": "3b5f3c80-42f0-402d-adae-1304d26ab25e",
+      "result_id": "e21404e2-81f3-4a4f-be3b-a57f4f05c833"
+    },
+    {
+      "claim_id": "865004b5-1740-4ba0-9813-d5f47c169b5a",
+      "result_id": "e21404e2-81f3-4a4f-be3b-a57f4f05c833"
+    },
+    {
+      "claim_id": "e4c35c99-0cf8-40f3-9255-bbf71502c7ae",
+      "result_id": "e21404e2-81f3-4a4f-be3b-a57f4f05c833"
+    },
+    {
+      "claim_id": "183a6c18-969a-46be-924c-01d1a593b3c3",
+      "result_id": "e21404e2-81f3-4a4f-be3b-a57f4f05c833"
+    },
+    {
+      "claim_id": "71877f06-8755-47c6-b75a-a105b3c92f67",
+      "result_id": "400d7361-b27a-4a24-a9fc-78cb9036ee71"
+    },
+    {
+      "claim_id": "a2848ccc-12f5-4bee-a7cf-ab92bf7b6eee",
+      "result_id": "400d7361-b27a-4a24-a9fc-78cb9036ee71"
+    },
+    {
+      "claim_id": "40cde606-1afa-4e3a-b840-7f2dae0deda3",
+      "result_id": "400d7361-b27a-4a24-a9fc-78cb9036ee71"
+    },
+    {
+      "claim_id": "1f4aff4c-6e6f-447e-8468-76bae1a032a4",
+      "result_id": "53fafcbe-ce3c-4dc0-97f2-0d5ddf4c334e"
+    },
+    {
+      "claim_id": "1edfb37c-f2ee-42b6-8c8d-d7dd6a838a23",
+      "result_id": "53fafcbe-ce3c-4dc0-97f2-0d5ddf4c334e"
+    },
+    {
+      "claim_id": "1c9dc3ba-ff64-4b22-8a07-c54a11b2ef60",
+      "result_id": "53fafcbe-ce3c-4dc0-97f2-0d5ddf4c334e"
+    },
+    {
+      "claim_id": "b34eb4d1-82d7-4c48-ac50-2f159feae8b9",
+      "result_id": "53fafcbe-ce3c-4dc0-97f2-0d5ddf4c334e"
+    },
+    {
+      "claim_id": "139cff72-3732-418b-b38a-131b2c5228a2",
+      "result_id": "53fafcbe-ce3c-4dc0-97f2-0d5ddf4c334e"
+    },
+    {
+      "claim_id": "2bdcaa23-c0ed-4c32-88ff-9e110faecee1",
+      "result_id": "53fafcbe-ce3c-4dc0-97f2-0d5ddf4c334e"
+    },
+    {
+      "claim_id": "d26a4991-90ff-4b11-bcf8-d7968e0f1d61",
+      "result_id": "53fafcbe-ce3c-4dc0-97f2-0d5ddf4c334e"
+    },
+    {
+      "claim_id": "48344a0d-6e3f-496e-92b5-22e069a1f09c",
+      "result_id": "53fafcbe-ce3c-4dc0-97f2-0d5ddf4c334e"
+    },
+    {
+      "claim_id": "8c1a6cd3-2bb3-4337-b0a6-78e4c8749fcc",
+      "result_id": "7ee14d9b-3578-4a47-8553-af38f2458f28"
+    },
+    {
+      "claim_id": "8d0aa88d-dfa1-4388-9110-69431150edf3",
+      "result_id": "7ee14d9b-3578-4a47-8553-af38f2458f28"
+    },
+    {
+      "claim_id": "24751ca5-0710-4170-af10-ba150ccc8b6d",
+      "result_id": "7ee14d9b-3578-4a47-8553-af38f2458f28"
+    },
+    {
+      "claim_id": "e7e42a80-1fac-4c21-802c-0a3661796c2f",
+      "result_id": "7ee14d9b-3578-4a47-8553-af38f2458f28"
+    },
+    {
+      "claim_id": "461797ee-29ad-4293-846c-8a8755babc83",
+      "result_id": "7ee14d9b-3578-4a47-8553-af38f2458f28"
+    },
+    {
+      "claim_id": "43c575f4-1797-4f8b-b4d7-447ec490ed36",
+      "result_id": "641810a3-f701-43b9-afc4-e23e60a9fcd4"
+    },
+    {
+      "claim_id": "b4d0927d-9c39-425b-9a69-b59659c8e987",
+      "result_id": "641810a3-f701-43b9-afc4-e23e60a9fcd4"
+    },
+    {
+      "claim_id": "886104c8-4669-43c2-a8c0-782d53fc4738",
+      "result_id": "641810a3-f701-43b9-afc4-e23e60a9fcd4"
+    },
+    {
+      "claim_id": "949e68b8-5b0f-4eb5-ae4c-e32e26a5f26d",
+      "result_id": "641810a3-f701-43b9-afc4-e23e60a9fcd4"
+    },
+    {
+      "claim_id": "fb9bde06-eb77-46b6-adda-dfac75d12bb7",
+      "result_id": "641810a3-f701-43b9-afc4-e23e60a9fcd4"
+    },
+    {
+      "claim_id": "88836c44-f107-4df1-9dc9-a0c7d0aae29a",
+      "result_id": "641810a3-f701-43b9-afc4-e23e60a9fcd4"
+    },
+    {
+      "claim_id": "34454d59-e780-4fb9-9594-7794cd16b55d",
+      "result_id": "9b854625-86dd-413f-8181-811138a63417"
+    },
+    {
+      "claim_id": "490c3a3e-f074-418d-8352-a214a84415be",
+      "result_id": "9b854625-86dd-413f-8181-811138a63417"
+    },
+    {
+      "claim_id": "d0c1b8e3-915c-4c83-8873-bdf919e2a92d",
+      "result_id": "9b854625-86dd-413f-8181-811138a63417"
+    },
+    {
+      "claim_id": "b5d6e2fb-da90-4a51-93aa-2dcba0d255eb",
+      "result_id": "9b854625-86dd-413f-8181-811138a63417"
+    },
+    {
+      "claim_id": "e8136fab-774b-4232-b5e2-b9f3ea2a6b0f",
+      "result_id": "9b854625-86dd-413f-8181-811138a63417"
+    },
+    {
+      "claim_id": "b5537208-aaa6-43e2-adba-52d13bc6d26d",
+      "result_id": "9b854625-86dd-413f-8181-811138a63417"
+    },
+    {
+      "claim_id": "d03e0924-28c2-45d1-ba66-459d1fd95599",
+      "result_id": "1dd2e1dd-2291-4d14-857e-1230f9a68ba7"
+    },
+    {
+      "claim_id": "8c4628f3-ac1e-492c-9111-2b727c4da10c",
+      "result_id": "1dd2e1dd-2291-4d14-857e-1230f9a68ba7"
+    },
+    {
+      "claim_id": "386d20b5-2795-46b7-a692-5983d1c04385",
+      "result_id": "1dd2e1dd-2291-4d14-857e-1230f9a68ba7"
+    },
+    {
+      "claim_id": "05efb181-4365-4b3a-90f3-71c6f7b50f78",
+      "result_id": "1dd2e1dd-2291-4d14-857e-1230f9a68ba7"
+    },
+    {
+      "claim_id": "9cac8c71-2989-4202-b7ba-4bd769be195d",
+      "result_id": "1dd2e1dd-2291-4d14-857e-1230f9a68ba7"
+    },
+    {
+      "claim_id": "9d9ccb17-e158-4f9a-b299-19f2231f17ca",
+      "result_id": "97091c1c-0093-48b9-9c07-f97c01a82c04"
+    },
+    {
+      "claim_id": "159d2a26-b979-42a6-84a7-f0e8e8dd1459",
+      "result_id": "97091c1c-0093-48b9-9c07-f97c01a82c04"
+    },
+    {
+      "claim_id": "cdece217-e682-41be-89b1-26e6ba769fe4",
+      "result_id": "97091c1c-0093-48b9-9c07-f97c01a82c04"
+    },
+    {
+      "claim_id": "930d3556-8e28-410a-8358-e001dc84a354",
+      "result_id": "97091c1c-0093-48b9-9c07-f97c01a82c04"
+    },
+    {
+      "claim_id": "114b2e17-9f60-4071-b736-47d15e9da13c",
+      "result_id": "97091c1c-0093-48b9-9c07-f97c01a82c04"
+    },
+    {
+      "claim_id": "60361c41-8581-4836-8a59-53b465679b1f",
+      "result_id": "97091c1c-0093-48b9-9c07-f97c01a82c04"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,328 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The manuscript describes the basic anatomical organization of the Drosophila olfactory system, including approximately 150 uPNs forming 58 glomeruli in the antennal lobe that project to MB calyx and LH. Homotypic uPNs remain tightly bundled throughout neuropils, though glomerular organization is not maintained in higher brain centers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C12-C14 describe well-established anatomical features of the Drosophila olfactory system supported by EM reconstruction data and prior literature. The observations about bundling and loss of glomerular structure in higher centers are directly demonstrated through distance matrices and clustering analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C24",
+      "C27",
+      "C28"
+    ],
+    "result": "Hierarchical clustering based on inter-PN distances identifies 10 clusters in MB calyx and 11 clusters in LH from the FAFB dataset, with comparable results (14 and 13 clusters respectively) from the hemibrain dataset. Homotypic uPNs are grouped together in AL dendrograms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21, C24, C27-C28 present direct results from hierarchical clustering analysis shown in Figures 2-4 and supplementary figures. The consistency between datasets and the grouping of homotypic uPNs are demonstrated through dendrograms and distance matrices, though the number of clusters differs between datasets due to methodological differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Odor-type dependent clusters of multiple homotypes innervate MB calyx and LH, with statistically significant associations between spatial organization and olfactory responses. Pheromone-encoding and hygro/thermo-sensing homotypes are spatially segregated in MB calyx, while LH shows two distinct food-related clusters plus segregation of pheromone and hygro/thermo homotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 are supported by clustering analysis (Figures 3-4, 8), statistical tests (Pearson's \u03c7\u00b2-test, mutual information in Appendix 1), and visualization of spatial organization. The odor-type associations are demonstrated through color-coded clustering results and validated across both FAFB and hemibrain datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C40",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The spatial organization of uPNs varies greatly across the three neuropils. While homotypic bundling is preserved (comparable d\u0304intra values), homotype-to-homotype segregation present in AL is lost in MB calyx (high \u03bb values) but partially recovered in LH for some homotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38, C40, C66-C68 are directly supported by quantitative analysis of inter-PN distances (Figure 5-7) showing d\u0304intra, d\u0304inter, and \u03bb values across neuropils. The data clearly demonstrate preserved bundling but variable segregation, with statistical validation across both datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "A higher degree of overlapping in MB calyx carries over to uPN organization in LH, demonstrated by positive correlation between \u03bbX values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 is supported by scatter plot analysis (Figure 7C, Figure 7\u2014figure supplement 1C) showing moderate positive correlation (r=0.642, p<0.0001 for FAFB; r=0.677, p<0.0001 for hemibrain) between \u03bbX values in MB calyx and LH.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C45"
+    ],
+    "result": "Most KCs and LHNs integrate information from multiple homotypes, but a small number synapse with only a single homotype. Homotype-specific connections are much more prevalent in LHNs than KCs, and increase under more stringent synapse selection criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43, C45 are supported by connectivity analysis from the hemibrain dataset (Figure 10, Figure 10\u2014figure supplement 1). The data clearly show the prevalence of integration versus specific connections, with quantitative differences between KCs and LHNs validated using different synaptic thresholds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C46"
+    ],
+    "result": "Signals from tightly bundled homotypes converge to specific groups of LHNs, indicating homotype-specific signal integration at the PN-LHN interface. This suggests labeled-line strategy extends beyond second-order neurons to higher brain centers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C46 are supported by connectivity analysis (Figures 10-12) showing convergence patterns and homotype-specific connections. The common synapse matrices (Figure 11) and tanglegram analysis (Figure 12) demonstrate the relationship between spatial organization and connectivity patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C75"
+    ],
+    "result": "Olfactory information is encoded in the spatial organization of uPNs before neural computation in the inner brain, demonstrating that a labeled-line strategy operates in the Drosophila olfactory system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C75 represent the main conclusion supported by the combined evidence of spatial clustering (Figures 3-8), statistical associations with odor types (Appendix 1), and connectivity patterns (Figures 10-12). The convergence of spatial organization, odor-type associations, and homotype-specific connections provides strong support for this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C52",
+      "C53"
+    ],
+    "result": "PN-KC connections in MB calyx are largely integrative and randomized except for hygro/thermo-sensing homotypes. Spatial clustering does not translate to structured connectivity patterns, consistent with prior observations of randomized PN-KC connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49, C52-C53 are supported by tanglegram analysis (Figure 12A) comparing spatial and connectivity-based clustering, showing lack of correspondence except for hygro/thermo homotypes. This is consistent with cited literature (Caron et al., 2013; Stevens, 2015; Eichler et al., 2017; Zheng et al., 2020; Li et al., 2020).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "In LH, homotypic uPNs are grouped in connectivity-based clustering, indicating spatially proximal uPNs synapse with similar LHNs. Stereotyped organization and connectivity are expressed throughout LH over all uPNs, with spatial characteristics well-translated to connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 are supported by tanglegram analysis (Figure 12B) showing alignment between spatial and connectivity-based clustering in LH, contrasting with MB calyx. Statistical comparisons (Appendix 2) and consistency with prior literature (Jefferis et al., 2007; Liang et al., 2013; Kohl et al., 2013; Fi\u015fek and Wilson, 2014) validate this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "LH is compartmentalized into four regions based on odor types: posterior-dorsal (food-related), anterior-ventral (pheromone), biforked bundle (aversive food-related), and posterior-ventral-medial (hygro/thermo). This is compatible with previous domain identifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 are supported by clustering analysis (Figures 4, 8) and comparison with prior studies (Strutz et al., 2014; Bates et al., 2020). The compartmentalization is demonstrated through spatial visualization and odor-type associations, with reasonable correspondence to previously identified domains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C81",
+      "C61"
+    ],
+    "result": "Results from FAFB and hemibrain datasets are generally consistent, supporting previous claims of stereotypy in Drosophila brain and neuronal structures. The findings are consistent with previous studies on uPN organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79, C81, C61 are supported by comparative analysis showing similar d\u0304intra, d\u0304inter, \u03bb values (Figure 5), comparable clustering patterns (Figure 8, Figure 8\u2014figure supplement 1), and consistent statistical test results (Appendix 1) across both datasets. This validates the generalizability of findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C69"
+    ],
+    "result": "While third-order olfactory neurons primarily integrate signals, several labeled lines exist. The heterogeneity of homotypes at the PN-KC interface may physically assist randomized sampling between uPNs and KCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 is supported by connectivity analysis showing both integration and homotype-specific connections (Figures 10-11). Claim C69 is a reasonable speculation based on observed high overlapping in MB calyx (Figure 5) and cited literature on randomized PN-KC connections, though it remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Comparison with the 'fovea' concept from Zheng et al., 2020 shows that some food-related homotypes under the 'fovea' are spatially clustered, but factors beyond spatial organization contribute. A potential hygro/thermo 'fovea' exists where VP1d and VP2 cluster spatially and connect to the same KCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C89 involve comparison with prior work and speculation about 'fovea' existence. While C85 and C89 are supported by clustering and connectivity data, C86-C88 are speculative interpretations. The relationship to the 'fovea' concept requires additional validation beyond spatial clustering alone.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "There may exist a sophisticated level of spatial organization beyond pheromone/non-pheromone segregation. While uPN spatial organization in LH relates to odor type functionality, it doesn't directly translate to segregated chemical features in LHNs, but divergence with stereotyped connectivity may enable higher resolution odor categorization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C78 are speculative interpretations extending beyond the direct data. While C76 is suggested by clustering patterns showing more than binary segregation, C77-C78 involve comparison with Frechter et al., 2019 and speculation about functional implications that require additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "28 uPNs not innervating all three neuropils were excluded from the main analysis. Adding 27 uPNs (mostly GABAergic, following mlALT) to LH analysis created four new clusters and increased d\u0304intra values, indicating these uPNs are spatially and organizationally distinct and should be analyzed separately.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94, C96-C99 describe methodological choices and their consequences, supported by supplementary analysis (Figure 4\u2014figure supplement 1-2, Figure 5\u2014figure supplement 2). The data clearly show that excluded uPNs have different spatial characteristics, justifying separate analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Many single-uPN homotypes with densely branched morphology encode aversive signals. Direct transmission via single PNs might simplify processing and reduce energetic cost. Despite structural differences between single and multi-uPN homotypes, all uPN innervations within neuropil share similar morphology, suggesting multi-scale characteristics of pseudo-unipolar neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C101 is supported by observations in Figures 6 and 8. Claims C102 and C104 are speculative interpretations about functional significance. Claim C103 is supported by Figure 6\u2014figure supplement 1 and Choi et al., 2022, but the broader implications require additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Data preparation involved collecting 135 uPNs (57 homotypes) from FAFB and 120 uPNs (58 glomeruli) from hemibrain, both using the criterion of innervating all three neuropils. Discrepancies between datasets likely result from boundary definition differences. Neuropil segmentation was systematically performed and validated against Ito et al., 2014.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C121 describe methodological procedures that are clearly documented in the Materials and methods section. The data preparation steps, segmentation procedures, and validation are appropriately described, though some details (like the boundary comparison) are not shown.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C64",
+      "C73"
+    ],
+    "result": "The inter-PN organization and its association with odor type/valence reflects the principle that form determines function. Previous stereotypes were based on pheromone/non-pheromone differentiation. Current results are consistent with previous studies and share similarities with NBLAST-based clustering. Spatially localized homotypic uPNs in LH associate with key survival features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60, C64, C73 place the current work in context of prior literature. The consistency with previous studies is demonstrated through comparison of clustering results and cited literature (Ruta et al., 2010; Kohl et al., 2013; Bates et al., 2020; Seki et al., 2017), supporting the interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C90",
+      "C91",
+      "C92",
+      "C100"
+    ],
+    "result": "Background information on multiglomerular PNs (mPNs): they innervate multiple glomeruli, contribute to inhibitory regulation, are largely GABAergic, are narrowly tuned to specific odor stimuli, and some follow mlALT or lALT bypassing higher centers. GABAergic neurons are morphologically 'smooth' and aspiny.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16, C90-C92, C100 present background information supported by appropriate citations (Berck et al., 2016; Tobin et al., 2017; Wilson et al., 2004; Schultzhaus et al., 2017; Zheng et al., 2018; Bates et al., 2020; Douglas et al., 1989; Bopp et al., 2014; Gouwens et al., 2019). These are well-established facts in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Discussion of broader context and future directions: EM reconstruction projects are nearing completion, methods may be translatable to other systems though mammalian olfactory systems are more complex, functional studies would supplement findings, and extension to other neuron types would be valuable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C112 discuss context and future directions with appropriate citations (Dorkenwald et al., 2022; Scheffer et al., 2020; Maresh et al., 2008; Mombaerts et al., 1996; Dolan et al., 2019; Badel et al., 2016; M\u00fcnch and Galizia, 2016; Bak et al., 2018). These are reasonable statements about the state of the field and potential future work.",
+    "result_type": "MINOR"
+  }
+]

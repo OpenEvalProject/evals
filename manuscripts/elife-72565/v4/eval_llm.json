@@ -1,0 +1,153 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C10",
+      "C11",
+      "C30",
+      "C31",
+      "C35",
+      "C36",
+      "C37",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Binning and linear regression on ln(Ld/Lb) vs \u27e8\u03bb\u27e9Td plots can produce misleading results about growth mode. The authors demonstrate through modeling and simulations that exponentially growing cells can produce non-linear binned data trends and best-fit lines deviating from y=x due to hidden noise sources and inspection bias, making it impossible to rule out exponential growth based on these deviations alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 provide experimental observations, while C42-C44 provide theoretical explanations validated through simulations (Figure 2C). The analytical derivation (Equation 2) and simulations demonstrate that the binned data trend depends on the ratio of growth rate noise to division timing noise, explaining why exponential growth cannot be ruled out despite apparent deviations. The convergence of theory, simulation, and experimental data strongly supports this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C53"
+    ],
+    "result": "When axes are interchanged to plot \u27e8\u03bb\u27e9Td vs ln(Ld/Lb), both exponentially and linearly growing cells produce best-fit lines that closely follow the y=x trend. This demonstrates that this plot cannot distinguish between exponential and linear growth modes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50 and C53 are supported by both experimental data (Figure 2B, Figure 2\u2014figure supplement 1) and simulations (Figure 3A). The analytical calculations in the 'Differentiating linear from exponential growth' section show that linear growth produces a slope of ~1.04 and intercept of -0.03, nearly identical to exponential growth. This convergence of theory, simulation, and experiment provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C55",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Growth rate vs age plots provide a consistent method to distinguish between different growth modes. Simulations show that exponential growth produces constant growth rates, linear growth produces decreasing growth rates (\u221d1/(1+age)), and super-exponential growth produces increasing growth rates, with binned data trends matching theoretical predictions across multiple cell cycle models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 demonstrate validation through simulations of multiple models (adder, adder per origin, super-exponential) shown in Figure 3B. The binned data trends consistently match theoretical predictions for each growth mode. C59 synthesizes these findings into a methodological conclusion. The systematic validation across different models and growth modes provides strong support for this method's reliability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C34",
+      "C60",
+      "C61"
+    ],
+    "result": "E. coli length growth is non-exponential, with growth rate increasing during the cell cycle and becoming faster than exponential in later stages. This was observed across three growth conditions (alanine, glycerol, glucose-cas) using validated growth rate vs age analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 provide experimental evidence from Figure 4A-C showing growth rate increases in all three conditions. C61 demonstrates that the observed increase (~more than 3%) significantly exceeds what would be expected from geometric effects alone. The use of the validated growth rate vs age method (established in the previous result) strengthens confidence in these findings. The consistency across multiple growth conditions provides robust support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "The timing of growth rate increase relative to constriction varies with growth rate. In slower growth conditions (alanine, glycerol), growth rate increase begins before constriction onset, while in the fastest condition (glucose-cas), the increase coincides with constriction onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are based on experimental data analysis shown in Figure 4A-C. C64 is additionally supported by citations to prior work (Reshes et al., 2008; Banerjee et al., 2017). The observations are clear from the figures where timing of initiation, constriction, and growth rate changes are marked. However, the mechanistic interpretation remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C67",
+      "C69",
+      "C70",
+      "C71",
+      "C73"
+    ],
+    "result": "The authors propose a methodological framework where data analysis should be conducted in the context of generative models that can be validated analytically or through synthetic data. This framework aims to reduce arbitrariness in statistical method selection and ensure consistency between modeling and data analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C67-C73 articulate the methodological framework illustrated in Figure 5. The entire manuscript demonstrates this approach by validating statistical methods (binning, linear regression) against generative models before applying them to experimental data. The framework is not just proposed but actively demonstrated throughout the work, showing its practical utility in identifying when methods are non-informative (C70).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C11"
+    ],
+    "result": "Inspection bias, where certain data are over-represented, contributes to deviations from expected trends in binned data. This occurs when cells with longer generation times (slower growth rates) disproportionately contribute to certain bins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11 and C46 explain inspection bias as a mechanism for observed deviations. This is demonstrated through simulations in Figure 3\u2014figure supplement 2, where growth rate trends show artifacts at time extremes that correlate with changes in average generation time of cells in those bins. The concept is well-established (C46 cites Stein and Dattero, 2018) and its application here is clearly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C18"
+    ],
+    "result": "The modeling assumes intrinsic biological noise is the dominant source of variability, with measurement error being much smaller than intrinsic population variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C18 explicitly states this modeling assumption. The Discussion section notes that typical measurement errors (~0.02\u27e8Lb\u27e9) have negligible effects on the growth rate trends, providing post-hoc validation. However, this assumption limits the generalizability of the findings to systems where measurement error is non-negligible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "While length growth is observed to be non-exponential, it remains unclear whether biomass growth follows similar non-exponential behavior or is exponential as previously suggested, given that mass-density variations within the cell cycle are small.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C65 cites recent work (Oldewurtel et al., 2021) showing small mass-density variations, while C66 explicitly states uncertainty about biomass growth mode. The relationship between length growth and biomass growth depends on cell geometry and density, which are not fully characterized here. This represents an important open question rather than a resolved finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Experimental methods included phase-contrast microscopy at 4-minute intervals, with cell lengths determined from segmented images and division timing determined by Ypet-FtsN dissociation from the cell middle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 describe the experimental methodology, which is standard and well-established. The methods are described in sufficient detail in the Materials and Methods section and reference additional details in Tiruvadi-Krishnan et al., 2021. The 4-minute temporal resolution is appropriate for the cell cycle timescales studied (65-214 minutes).",
+    "result_type": "MINOR"
+  }
+]

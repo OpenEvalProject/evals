@@ -1,0 +1,222 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C63",
+      "C64",
+      "C74",
+      "C75",
+      "C76",
+      "C79"
+    ],
+    "result": "Using iBioID proximity proteomics with three bait proteins (RIMPPCP-BirA, ELKS2\u03b2-BirA, CaV\u03b24-BirA), the authors identified 527 proteins enriched \u22652.0-fold at dopamine release sites over soluble axonal proteins (BirA-tdTomato control). Of these, 190 proteins were enriched with multiple baits and 41 with all three baits. The proteome included 37% proteins with synaptic annotations in SynGO, with 19% presynaptic and 17% postsynaptic annotations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mass spectrometry data from four independent biological replicates (C74, C75) with appropriate controls (BirA-tdTomato normalization) provide robust quantitative evidence. The enrichment threshold of \u22652.0-fold was validated by showing similar percentages of synaptic proteins at alternate thresholds (C79). Self-biotinylation of bait proteins was confirmed (C76), and the experimental workflow including biotin injections, affinity purification, and pyruvate carboxylase depletion is well-documented. The SynGO annotations provide independent validation of the synaptic nature of identified proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The BirA fusion proteins showed appropriate subcellular localization in dopamine axons, with RIMPPCP-BirA and ELKS2\u03b2-BirA appearing in punctate structures consistent with release sites, CaV\u03b24-BirA more widespread similar to Ca2+ entry patterns, and BirA-tdTomato broadly distributed. In vivo biotinylation was efficient with limited background in the absence of biotin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Immunofluorescence imaging (C67-C70) and Western blot validation (C71-C73) provide converging evidence for proper localization and biotinylation. The localization patterns are consistent with known distributions of these proteins and Ca2+ entry in dopamine axons (citations to Pereira et al., 2016; Liu et al., 2018). However, the authors acknowledge that high-quality superresolution microscopy could not be obtained, which limits precise spatial characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Neuroplastin, a protein not previously associated with dopamine release sites, was strongly enriched across all bait conditions in the iBioID dataset. Independent validation using striatal synaptosomes showed significantly higher Neuroplastin antibody staining in TH-positive particles when the release site marker Bassoon was present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mass spectrometry enrichment data (C37) is validated by an independent immunofluorescence approach in synaptosomes (C38, Figure 2\u2014figure supplement 4). The synaptosome experiment provides orthogonal validation with appropriate controls (Bassoon+/- comparison in TH+ particles) and statistical significance. This represents a strong example of how the iBioID approach can identify novel components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C42",
+      "C43",
+      "C47",
+      "C80",
+      "C81",
+      "C83",
+      "C84",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C92",
+      "C94"
+    ],
+    "result": "RIM knockout (RIM cKODA) dramatically reduced the number of proteins enriched at release sites, with only 198 hits detected compared to 527 in controls. Protein enrichment was particularly disrupted for ELKS2\u03b2-BirA and CaV\u03b24-BirA baits, while RIMPPCP-BirA showed partial restoration. SynGO-annotated synaptic, presynaptic, and active zone proteins showed depletion in RIM cKODA, while the overall axonal proteome remained intact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic manipulation is well-controlled (C80, C81, C94) with similar overall axonal protein content across genotypes. The dramatic reduction in enriched proteins (C42, C47) and the specific depletion of synaptic proteins (C87-C89) provide strong evidence for RIM's scaffolding role. The partial rescue by RIMPPCP-BirA expression (C43, C90) supports the interpretation that RIM's scaffolding domains are critical. However, the RIM cKODA dataset has only 2 biological replicates versus 4 for controls, which somewhat limits statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C45",
+      "C46",
+      "C48",
+      "C85",
+      "C91"
+    ],
+    "result": "Synaptotagmin-1 knockout (Syt-1 cKODA) had minimal effects on release site protein composition, with 450 hits detected (similar to 527 in controls) and 37% overlap with the control dataset. The enrichment patterns for synaptic proteins remained similar to controls across all bait conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison between Syt-1 cKODA and controls is well-controlled with similar experimental design. The quantitative data (C41, C45, C46, C48) consistently show preservation of the release site proteome despite loss of synchronous release. This provides strong evidence that release site structure is maintained independently of Syt-1-mediated release function. The contrast with RIM cKODA results strengthens the interpretation that RIM has a unique structural role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "\u03b1-Synuclein (encoded by Snca), a protein linked to Parkinson's disease, was enriched \u22652.0-fold at dopamine release sites in all three bait conditions in controls. This enrichment was lost in both RIM cKODA and Syt-1 cKODA mice, falling below the 2.0-fold threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The enrichment of \u03b1-synuclein in controls (C50) and its loss in both mutants (C51) is clearly documented in the mass spectrometry data. The finding is biologically plausible given \u03b1-synuclein's known association with synaptic vesicles (C52) and the loss of docked vesicles in RIM and Syt-1 knockouts (C53). However, the mechanism linking \u03b1-synuclein loss to these mutations requires further investigation, as acknowledged by the authors' discussion of vesicle docking deficits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C66"
+    ],
+    "result": "The authors conclude that RIM organizes scaffolded dopamine release sites, with dopamine release site scaffolding having less redundancy and relying more heavily on RIM compared to classical synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion is well-supported by the dramatic loss of enriched proteins in RIM cKODA (C42, C47) compared to the minimal effects in Syt-1 cKODA (C45). The comparison to classical synapses is supported by citations showing that RIM ablation does not severely disrupt release site structure at classical synapses (C65). However, the authors appropriately acknowledge that similar proteomic approaches have not been performed at classical synapses, limiting direct comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C90"
+    ],
+    "result": "Expression of RIMPPCP (the central scaffolding region of RIM) may partially restore scaffolding deficits in RIM cKODA mice, as evidenced by 49% of hits in RIM cKODA coming from RIMPPCP-BirA only and absence of protein depletion in this condition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the data show that RIMPPCP-BirA detects more proteins in RIM cKODA (C43) and shows less depletion (C90), this could reflect either genuine rescue of scaffolding or simply better detection due to the bait itself providing some scaffolding. The authors appropriately use cautious language ('may restore'), but definitive evidence for rescue would require additional experiments such as functional rescue of dopamine release or independent validation of protein localization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "There is 65% overlap between axonal proteins identified with BirA-tdTomato and those identified using APEX2-based proximity proteomics (Hobson et al., 2022). Key active zone and calcium channel proteins previously implicated in dopamine release were detected in the iBioID dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison with an independent proximity proteomics method (C95) provides validation of the axonal proteome. The detection of known dopamine release machinery components (C96) including RIM1, Bassoon, ELKS, and CaV2 channels is consistent with prior functional and localization studies. This cross-validation strengthens confidence in the overall approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C99",
+      "C98",
+      "C100",
+      "C101"
+    ],
+    "result": "Munc13, despite being essential for dopamine release, was only enriched in some cases with iBioID and was also absent from a previous vesicle docking proteome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The discrepancy between Munc13's functional importance (C98) and its inconsistent detection (C99) is clearly documented and honestly discussed by the authors. The comparison with another proteomic study (C101) suggests this may be a general limitation rather than specific to this approach. The authors provide plausible explanations including broader distribution (C100) or technical detection issues. This represents appropriate acknowledgment of methodological limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C59",
+      "C57",
+      "C58",
+      "C62"
+    ],
+    "result": "Postsynaptic proteins including Gephyrin were enriched in the iBioID dataset, potentially reflecting sparse synaptic-like connections, cholinergic input to dopamine axons, or trans-membrane biotinylation within the ~50 nm labeling radius. Dopamine receptors were not enriched, consistent with their extrasynaptic localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The detection of postsynaptic proteins (C60) is explained through multiple plausible mechanisms supported by citations (C57-C59, C62). The absence of dopamine receptor enrichment (C61) provides internal validation that the method is not simply detecting all proteins in the vicinity. The authors appropriately discuss the limitations and alternative interpretations of detecting postsynaptic proteins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Unexpected proteins were enriched including histone proteins H1.3 and H4 (Hist1h1d, Hist1h4a), several kinesins (Kif21a, Kif21b, Kif5a, Kif5b), and synaptic ribosomes, which may reflect non-release site localization of baits, transport complexes, or genuine but uncharacterized synaptic functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The authors appropriately acknowledge these unexpected findings (C104, C105) and provide plausible explanations including transport packets (C105) and non-active zone bait localization (C106). However, without additional validation experiments, it remains unclear whether these represent genuine release site components, artifacts of the method, or proteins associated with bait trafficking. The authors' cautious interpretation is appropriate given the uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "Pyruvate carboxylase (PC) depletion was efficient, reducing PC and PCCA peptides from 28% and 10% before depletion to 3% and 1.7% after depletion, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pilot experiments clearly demonstrate effective depletion of endogenously biotinylated proteins (C107, C108), which is critical for reducing background in iBioID experiments. The quantitative assessment provides confidence in the specificity of the enrichment data.",
+    "result_type": "MINOR"
+  }
+]

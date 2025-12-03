@@ -1,0 +1,267 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The manuscript provides background information on condensin I structure, function, and cell cycle regulation. Condensin I is a pentameric complex essential for mitotic chromosome assembly, with two condensin complexes (I and II) in vertebrates that share SMC2/SMC4 subunits but differ in non-SMC subunits. The kleisin subunit CAP-H has five conserved motifs and an N-terminal tail (~80 amino acids in vertebrates) that is largely disordered but contains a conserved helix and multiple SP/TP phosphorylation sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge in the field, supported by multiple citations to prior work (C1, C2, C8-C26) and computational predictions (C27, C28). The structural and functional characterization of condensin complexes is well-documented in the literature cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Deletion of the CAP-H N-tail (H-dN mutant) accelerates condensin I loading onto chromosomes in mitotic Xenopus egg extracts. At 35 nM, H-dN produces thinner chromosomes than wild-type, but at 17.5 nM H-dN produces chromosomes comparable to 35 nM wild-type, indicating that chromosomal condensin I levels correlate with chromosome morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by quantitative immunofluorescence data (Figure 1B-D) showing significantly higher H-dN loading at multiple concentrations and time points (C31), with dose-dependent effects on chromosome morphology (C32, C33). Statistical analysis with appropriate controls supports the conclusion (C34).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Deletion of the conserved helix (H-dCH) or charge reversal of basic residues within it (H-crCH) produces phenotypes similar to complete N-tail deletion (H-dN), demonstrating that the conserved helix and its positive charges negatively regulate condensin I loading in mitotic extracts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by experimental data in Figure 1\u2014figure supplement 2A-C showing that both H-dCH and H-crCH mutants exhibit increased loading and altered chromosome morphology similar to H-dN. This provides strong evidence for the functional importance of the conserved helix region.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The CAP-H N-tail is phosphorylated in a mitosis-specific manner. Two phosphoepitopes (pS17 and pS76) were detected in wild-type condensin I in mitotic but not interphase extracts, and were absent in the phosphorylation-deficient H-N19A mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by phospho-specific antibody data (Figure 2\u2014figure supplement 1A, B) showing mitosis-specific phosphorylation at defined sites. The use of phosphatase treatment and peptide competition assays (Figure 2\u2014figure supplement 1C, D) validates antibody specificity. Prior work (C38, C39) provides additional context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C45",
+      "C46"
+    ],
+    "result": "The phosphorylation-deficient mutant H-N19A shows greatly reduced loading onto chromatin compared to wild-type or H-dN, and produces poorly organized, abnormally thick chromosomes with hazy surfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by quantitative immunofluorescence data (Figure 2A-C) showing significantly reduced H-N19A loading and aberrant chromosome morphology. The phenotype is opposite to that of H-dN, supporting the role of phosphorylation in relieving N-tail-mediated inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C47",
+      "C48"
+    ],
+    "result": "The phosphorylation-mimetic mutant H-N19D behaves similarly to H-dN in the add-back assay, supporting the model that multisite phosphorylation of the CAP-H N-tail relieves its negative effects on condensin I loading and chromosome assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim is supported by experimental data (Figure 2D-F) showing that H-N19D mimics the H-dN phenotype. While the authors acknowledge potential caveats about multiple mutations affecting protein conformation (C48), the convergent evidence from deletion, charge reversal, and phosphomimetic mutants strongly supports the phosphoregulation model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "In interphase extracts, endogenous condensin I does not load onto chromatin. However, high concentrations (150 nM) of H-dN mutant can load onto chromatin and assemble mitotic chromosome-like structures even in interphase, while 150 nM wild-type produces chromatin masses similar to 35 nM H-dN. Neither CAP-H N-tail nor CAP-D2 C-tail SP/TP sites are phosphorylated in interphase extracts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by immunofluorescence data (Figure 3A, B, D) showing cell cycle-specific differences in condensin loading and the remarkable ability of H-dN to bypass normal cell cycle regulation. The phosphorylation data (C55, Figure 2\u2014figure supplement 1A, B) confirms the interphase state of the extracts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Both H-crCH and H-N19D mutants behave similarly to H-dN in interphase extracts at 150 nM, though H-N19D shows somewhat lower loading efficiency than H-crCH. These results demonstrate that compromising the CAP-H N-tail enables condensin I to assemble mitotic chromosome-like structures even in interphase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by experimental data (Figure 3\u2014figure supplement 1A, B) showing that multiple types of N-tail mutations can bypass interphase inhibition. The convergent evidence from different mutant types strengthens the conclusion about the N-tail's regulatory role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "In a topological loading assay, H-dN shows ~2.5-fold higher recovery of nicked circular DNA compared to wild-type in an ATP-dependent manner, while neither complex recovers linear DNA regardless of nucleotide presence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by quantitative gel electrophoresis data (Figure 4A, C) with appropriate statistical analysis from three independent experiments. The specificity for nicked circular DNA and ATP-dependence are consistent with topological entrapment by the condensin ring.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "In single-molecule loop extrusion assays, H-dN forms DNA loops on ~33% of DNA molecules compared to ~17% for wild-type, but shows no significant differences in loop extrusion rate, duration, or size. Neither complex forms loops without ATP. This indicates that N-tail deletion affects initial DNA interactions but not the core loop extrusion activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by single-molecule imaging data (Figure 4D-H, Figure 4\u2014figure supplement 1) with appropriate statistical analysis. The selective effect on loop formation frequency without affecting other parameters provides mechanistic insight into the N-tail's function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The CAP-H N-tail represents the first identified negative regulatory element in vertebrate condensin I, distinct from prior findings in yeast where SMC4 phosphorylation regulates nuclear import or chromosome turnover, and from the CAP-D2 C-tail which has little functional impact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by citations to prior work (C66, C67, C68) and the current study's findings. The comparison with other regulatory mechanisms and condensin subunits appropriately contextualizes the novelty of the N-tail regulatory function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The authors propose a 'gatekeeper' model where the CAP-H N-tail stabilizes the closed SMC2-kleisin gate during interphase (with the conserved helix contributing to stabilization), and multisite phosphorylation upon mitotic entry relieves this stabilization to allow gate opening and condensin loading. This may create an ultrasensitive switch-like response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims represent a speculative mechanistic model (C70-C74) based on the experimental findings. While the model is consistent with the data, it lacks direct structural or biochemical evidence for the proposed N-tail-SMC2 interaction and gate stabilization mechanism. The authors appropriately acknowledge alternative models exist and that their data do not exclude other mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Condensin II's kleisin subunit CAP-H2 lacks the N-terminal extension corresponding to the CAP-H N-tail, so this negative regulation is not shared by condensin II. However, deletion of the CAP-D3 C-tail accelerates condensin II loading, suggesting condensins I and II may use similar IDR-mediated regulatory mechanisms in different ways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims about CAP-H2 structure (C75, C76) are supported by sequence analysis and established knowledge. The comparison with condensin II regulation (C77, C78) is supported by citation to recent work (Yoshida et al., 2022), though the speculation about similar mechanisms (C78) is appropriately tentative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The current findings argue against the Tada et al. 2011 model proposing that aurora B phosphorylation of the CAP-H N-tail enables interaction with histone H2A N-tail to trigger condensin loading. Multiple lines of evidence show aurora B, H2A N-tail, and even whole nucleosomes are not essential for condensin I-mediated chromosome assembly, and N-tail deletion accelerates rather than decelerates loading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by citations to multiple prior studies (C79-C81) and the current experimental data (C82, C83). The authors provide a thorough rebuttal of an alternative model with converging evidence from different experimental systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "The ability of N-tail mutants to assemble chromosome-like structures in interphase extracts raises the possibility that vertebrate condensin I can escape the tight requirement for Cdk1 phosphorylation under certain conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This claim (C84) is speculative and based on the interphase assembly results. However, the authors note that SP/TP sites in both CAP-H N-tail and CAP-D2 C-tail are barely phosphorylated in interphase (C55), so it's unclear whether this represents true Cdk1-independent function or simply bypassing one layer of regulation while other phosphorylation-dependent mechanisms remain inactive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Prior work established that condensin I is phosphorylated in a mitosis-specific manner, with Cdk1 phosphorylation activating its supercoiling activity and enabling chromosome loading and assembly. Major phosphorylation targets include CAP-D2 and CAP-H subunits, with Cdk1 phosphorylation often occurring in intrinsically disordered regions (IDRs) with poor evolutionary conservation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims summarize established prior work supported by multiple citations (C85-C91). This background appropriately contextualizes the current study's focus on the CAP-H N-tail as an IDR regulatory element.",
+    "result_type": "MINOR"
+  }
+]

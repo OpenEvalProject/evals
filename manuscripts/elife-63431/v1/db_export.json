@@ -1,0 +1,1860 @@
+{
+  "submission": {
+    "id": "bfb48d31-1dfb-4ac8-a002-44d75069f843",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T02:43:18.622398Z",
+    "updated_at": "2025-12-03T02:43:18.622398Z"
+  },
+  "content": [
+    {
+      "id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "submission_id": "bfb48d31-1dfb-4ac8-a002-44d75069f843",
+      "content_type": "manuscript",
+      "content_text": "# tRNA sequences can assemble into a replicator\n\n## Authors\n\n- Alexandra K\u00fchnlein<sup>1</sup> ([ORCID: 0000-0001-9582-6304](https://orcid.org/0000-0001-9582-6304))\n- Simon A Lanzmich<sup>1</sup>\n- Dieter Braun<sup>1</sup> ([ORCID: 0000-0001-7751-1448](https://orcid.org/0000-0001-7751-1448)) \u2020\n\n### Affiliations\n\n1. Systems Biophysics, Physics Department, Center for NanoScience, Ludwig-Maximilians-Universit\u00e4t M\u00fcnchen Munich Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nCan replication and translation emerge in a single mechanism via self-assembly? The key molecule, transfer RNA (tRNA), is one of the most ancient molecules and contains the genetic code. Our experiments show how a pool of oligonucleotides, adapted with minor mutations from tRNA, spontaneously formed molecular assemblies and replicated information autonomously using only reversible hybridization under thermal oscillations. The pool of cross-complementary hairpins self-selected by agglomeration and sedimentation. The metastable DNA hairpins bound to a template and then interconnected by hybridization. Thermal oscillations separated replicates from their templates and drove an exponential, cross-catalytic replication. The molecular assembly could encode and replicate binary sequences with a replication fidelity corresponding to 85\u201390 % per nucleotide. The replication by a self-assembly of tRNA-like sequences suggests that early forms of tRNA could have been involved in molecular replication. This would link the evolution of translation to a mechanism of molecular replication.\n\n## Introduction\n\nA machine to create replicate of itself is an old dream of engineering (von Neumann, 1951). Biological systems have solved this problem long ago at the nanoscale with DNA and RNA. Their replication machinery was optimized to perfection through Darwinian evolution. In modern living systems, the replication of DNA and RNA necessitates the formation of covalent bonds. It requires an interconnected machinery: proteins need to perform base-by-base replication of sequence information, a modern metabolism to supply activated molecules, and tRNA as well as the ribosome to create the required proteins.\n\nThis is a complex system to set up in the first place at the emergence of life. The RNA world hypothesis proposes, that early on, the catalytic function of highly defined RNA sequences was used for self-replication (Horning and Joyce, 2016; Orgel, 2004; Turk et al., 2011). These ribozymes catalyze the ligation of RNA (Doudna et al., 1991; Mutschler et al., 2015; Paul and Joyce, 2002; Robertson et al., 2001; Walton et al., 2020) and the addition of individual bases (Attwater et al., 2013; Horning and Joyce, 2016). These very special sequences were engineered using in vitro evolution. It is unclear how autonomous evolution of early life could have reached such levels of sequence complexity.\n\nHere, we focus on how such replication may have been predated by simpler forms of self-replication. Creating a replicator must fulfill a series of requirements. Replication must yield fidelity in copying, be fast, enable exponential replication, be fed by an autonomous energy source, not require complex sequences and should not form too many replicates without the existence of a template.\n\nWe show that replication of information can be realized by the reversible hybridization interactions between tRNA-like molecules alone. The proposed mechanism is driven by an external physical non-equilibrium setting, in our case thermal oscillations. Since the process does not involve chemical ligation, it does not rely on a particular non-enzymatic or catalytic ligation chemistry (Dolinnaya et al., 1988; Engelhart et al., 2012; Patzke et al., 2014; Pino et al., 2011; Rohatgi et al., 1996; Sievers and von Kiedrowski, 1994; von Kiedrowski, 1986) or particular catalytically active sequences, but merely requires sequence complementarity. The advantage of reversible hybridization is the re-usability of educts and products. Moreover, sequence-encoded interactions can self-select by forming agglomerates.\n\nNature\u2019s approach to achieve exponential growth is the usage of cross-catalysis: the replicate of a template serves as a template for the next round of replication. For short replicators under isothermal conditions, the binding between template and replicate has to be weak such that the dissociation of strands happens spontaneously and is not rate limiting (Paul and Joyce, 2002; Sievers and von Kiedrowski, 1994; von Kiedrowski, 1986). For longer replicates, temperature change has successfully been used to separate strands for replication catalyzed by thermostable proteins (Barany, 1991; Saiki et al., 1985). For catalytic RNA, elevated salt concentrations disfavor strand separation by temperature and catalyze hydrolysis (Horning and Joyce, 2016). In an interesting alternative to strand separation by temperature, Schulman et al. used moderate shear flows to separate DNA tile assemblies (Schulman et al., 2012).\n\nApart from nucleotide-based replicators, very interesting replication systems using non-covalent interactions have been developed with non-biological compounds (Bottero et al., 2016; Sadownik and Philp, 2008; Tjivikua et al., 1990), peptide-based approaches (Altay et al., 2017; Bourbo et al., 2011; Carnall et al., 2010; Lee et al., 1996; Rubinov et al., 2012), and peptide nucleic acids (Ura et al., 2009). We also want to point to several instructive reviews about the state-of-the-art systems chemistry regarding self-replication (Adamski et al., 2020; Ashkenasy et al., 2017; Kosikova and Philp, 2017).\n\nIn the past, metastable hairpin states have been prepared in a physically separated manner. The reaction was then triggered by mixing. For example, the mixing of hairpins with a trigger sequence has been shown to form long concatemers (Dirks and Pierce, 2004). With a similar logic, mixing a low entropy combination of molecules was used to create entropically driven DNA machines, including exponentially amplifying assemblies (Zhang et al., 2007). These reactions run downwards into the binding equilibrium. However, the preparation of the initial low entropy state required human intervention or a unique flow setting for mixing.\n\n### Sequence design\n\nWe designed a set of cooperatively replicating DNA strands using the program package NUPACK (Zadeh et al., 2011). The sequences are designed to have self-complementary double hairpins and are pairwise complementary within the molecule pool, such that the 3\u2019 hairpin of one strand is complementary to the 5\u2019 hairpin of the next. Their structure resembles the secondary structure of proto-tRNAs proposed by stereochemical theories (Figure 1a), comprising two hairpin loops that surround the anticodon with a few neighboring bases (Krammer et al., 2012). The lengths of 82\u201384 nt of the double hairpins are that of average tRNA molecules (Sharp et al., 1985), with stem loops consisting of 30\u201333 nt and the information-encoding interjacent domains of 15 nt. As the replication mechanism is based on hybridization only, it is expected to perform equally well for DNA and RNA. Here, we implemented the system with DNA and not RNA as done previously (Krammer et al., 2012). Both, in the design and the implementation we did not see significant differences between the two versions. Because of the simpler and more inexpensive synthesis of the 82\u201384 nt long sequences we now implemented the replicator in DNA. Due to short heating times and moderate magnesium concentrations, we estimate that an RNA version could survive for days if not weeks (Li and Breaker, 1999; Mariani et al., 2018). The most critical step regarding the RNA stability would be the initial temperature spike to 95\u00a0\u00b0C, which remains unchanged from our previous study (Krammer et al., 2012) and did not prove critical. We also show that an RNA version behaves structurally identical to the implemented DNA version (Figure 1\u2014figure supplement 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/63431/elife-63431-fig1-v1.jpg)\n\n**Figure 1.:** (a) Transfer RNA folds into a double-hairpin conformation upon very few base substitutions. In that configuration, the 3\u2019-terminal amino acid binding site (green) is close to the anticodon (blue) and a double hairpin structure forms. A set of pairwise complementary double hairpins can encode and replicate sequences of information. A binary code implemented in the position of the anti-codon, the information domain, allows to encode and replicate binary sequences (red vs blue). Each strand (82-84 nt) comprises two hairpin loops (gray) and an interjacent unpaired information domain of 15 nt length (blue/red, here: $0_{D}$). The displayed structure of eight strands shows replication of a template corresponding to the binary code 0010. Note, that no covalent linkage is involved in the process. (b) Replication is driven by thermal oscillations in four steps: (0) The hairpins are activated into their closed conformation by fast cooling indicated by triangles. (1) Strands with matching information domain bind to the template. (2) Fluctuations in the bound strands\u2019 hairpins facilitate the hybridization of neighboring strands. (3) Subsequent heating splits replica from template, while keeping the longer hairpin sequences connected, freeing both as templates for the next cycle.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63431/elife-63431-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Combinations of sets of four complementary double hairpins are displayed for (a) DNA and (b) RNA at 25\u00a0\u00b0C, 1 M Na+ and 0.625 mM per strand. For (b) every 'T' in the DNA sequence is substituted by a 'U'. Due to computational limitations the only four strands could be calculated at a time. The predicted structures look as expected, forming the backbone (top and bottom from center) and the information domain bonds (left and right from center), which are flanked by the closed hairpins. The DNA (a) and RNA (b) version are identical. Also, there is no difference in structure or free energy between information domain '0' and information domain '1'. The calculated free energies are given below each structure and are averaged over each complete set.\n\n### Replication mechanism\n\nThe replication mechanism is a template-based replication, where instead of single nucleotides, information is encoded by a succession of oligomers. The domain, at the location of the anticodon in tRNA, is the template sequence and thus contains the information to be replicated. We therefore term it information domain. The goal is to replicate the succession of information domains.\n\nTo allow longer replicates, we chose the resulting meta-sequences to be periodic with a periodicity of four different hairpins. This makes the minimal cyclic meta-sequence large enough to keep the information domains accessible even in cyclic configuration. The information domains feature a binary system and contain sequences marked by '0' and '1' (blue/red). For replication, two sets of strands replicate strings of codons in a cross-catalytic manner (Figure 1b), using complementary information domains (light/dark colors).\n\nThe replication is driven by thermal oscillations and operates in four steps (Figure 1b): (0) Fast cooling within seconds brings the strands to their activated state with both hairpins closed. (1) At the base temperature, activated strands with complementary information domains can bind to an already assembled template. (2) Thermal fluctuations cause open-close fluctuations of the hairpins. When strands are already bound to a template at the information domain, those fluctuations permit adjacent complementary hairpins of different strands to bind. In this way, the succession of information domains is replicated. (3) Subsequent heating splits the newly formed replicate from the template at the information domains. Due to their higher melting temperatures, the backbone of hairpin strands remains stable. Both, replicate and template, are available for a new replication round. This makes both the replicate and the template replication cross-catalytic in a subsequent step. Later, high temperatures spikes can unbind and recycle all molecules for new rounds of replication.\n\nBecause of the initial fast cooling, all hairpins are closed in free solution. This inhibits the formation of replicates without template. While the binding of adjacent hairpins with template happens within minutes, hairpins in free solution connect without template only on timescales slower than hours and thus give false positives at a very low rate.\n\nThe basic principle of this replication mechanism was previously explored by Krammer et al. using a set of four hairpins using half a tRNA sequence (36 nt) that amplified into dimers (Krammer et al., 2012). This amplification could not encode information and suffered from a high rate (>50\u00a0%) of unspecific amplification without template (Figure 4 therein). Here, in contrast, we demonstrate exponential amplification, and the replicator can now encode sequence information \u20180\u2019 and \u20181\u2019 with four bits. Moreover, the strands making up the new replicator are double hairpins with the sequence structure and length of tRNA. The replicator now shows a significantly decreased unspecific amplification without template of approximately 10\u00a0% (Figure 5a).\n\n## Results\n\n### Analysis of molecule conformations\n\nNative polyacrylamide gel electrophoresis (PAGE) showed that the double hairpins assembled as intended (Figure 2). Comparing different subsets of strands allowed to identify all gel bands.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/63431/elife-63431-fig2-v1.jpg)\n\n**Figure 2.:** Samples contained strands at 200 nM concentration each and were slowly annealed as described in Materials\u00a0and\u00a0methods. Lane contents are indicated at the top of each lane. Comparison of different lanes allowed for the attribution of bands to complexes. Complexes incorporating all present strands are marked (\u2022). The red channel shows the intensity $0_{A}$-Cy5, the cyan channel shows SYBR Green I fluorescence. Single information domain bonds (lane 2, 7) break during gel electrophoresis.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63431/elife-63431-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Ferguson plot of differently sized complexes compared to linear dsDNA (gray lines) of comparable mass. The slopes of log(mobility) vs. gel concentration are proportional to the friction constants of the molecules (Rodbard and Chrambach, 1970). (b) Linear dsDNA shows significantly lower friction constants than any of the complexes of at least two molecules. Symbolic complexes are indicated next to the data points. This is due to the branched structure of the complexes and conforms with the suggested assembly geometry. Idealized tertiary structures of complexes $0_{A}0_{B}$ and $0_{A}0_{B}$:$0\u00af_{A}0\u00af_{B}$, and 100 bp dsDNA are given as size reference.\n\nAll complexes were formed at concentrations of 200 nM of each strand and could be resolved despite their branched tertiary structure. Friction coefficients of complexes of two to four strands were 1.6\u20131.8-fold higher than for linear dsDNA, and 2.4-fold higher for larger complexes (4:4 configuration, ca. 660 nt, Figure 2\u2014figure supplement 1). This agrees with the branched structure of the suggested strand assembly geometry (Figure 1a). Partially assembled complexes of two or three strands bound to a four-strand template could be resolved (Figure 6\u2014figure supplement 1). Complexes containing single bound information domains were not stable during electrophoresis (Figure 2, lanes 2, 7\u00a0and Figure 6\u2014figure supplement 1). This allowed to differentiate fully assembled complexes from those where individual strands are bound to a template but have not formed backbone duplexes. Covalent end labels and two reference lanes on each gel were used to quantify concentrations from gel intensities using image analysis as described in Materials\u00a0and\u00a0methods.\n\n### Selection by agglomeration and sedimentation\n\nFor a replicator to be autonomous, there must be a mechanism in place to select, assemble and (re-)accumulate its molecular components purely at one location. We argue that DNA hydrogels could offer such a solution. While DNA often, also in our case, assembles into agglomerates, DNA hydrogels have been shown to be able to form fluid phases if gaps of single bases were added to create flexible linkers between molecules (Nguyen and Saleh, 2017).\n\nWe combined eight matching hairpin sequences of design as introduced in Figure 1 at moderately elevated concentrations and cooled the system to only 25\u00a0\u00b0C after separating the molecules at 95\u00a0\u00b0C (Figure 3). We found the spontaneous formation of agglomerates that were large enough to sediment under gravity. The initial homogeneous fluorescence turned into micrometer-sized grains and sedimented within hours. The fluorescence was provided by a covalently attached label to either strand $0_{A}$ or $1_{A}$. Since the double hairpins have a periodic boundary condition, they can create large assemblies (Figure 3a).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/63431/elife-63431-fig3-v1.jpg)\n\n**Figure 3.:** (a) In a simple, sealed microfluidic chamber (Figure 3\u2014figure supplement 2), the hairpin strands can self-assemble into agglomerates and sediment on a timescale of hours. The sample was initially heated to 95\u00a0\u00b0C for 10 s to ensure an unbound initial state, then rapidly (within 30 s) cooled to 25\u00a0\u00b0C, where self-assembly and sedimentation occured. Note, that agglomeration and sedimentation only occured if all eight matching hairpins were provided (top two rows) but not in the case of a knockout (-$1_{D}$, bottom row). For quantification, the bulk and sediment intensities were normalized by the first frame after heating. Samples contained strands at total concentration of 5 \u00b5M, about threefold higher than in Figure 2 and the following replication experiments. (b) Time traces of concentration increase for sediment and bulk of different configurations, same examples as shown in a. The time traces of all further knockout permutations are shown in Figure 3\u2014figure supplement 1b. (c) Final concentration increase of sediment, relative to first frame after heating, for all configurations. The final values (N\u22653) for c/c0 are retrieved from fitting the time traces. For the full set of complementary hairpins, self-assembly and sedimentation is most pronounced.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63431/elife-63431-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Original fluorescence microscopy images (left) and cuttings (right) as shown in Figure 3a. To calculate c/c0 time traces (Figure 3b), (c) the image stacks were stabilized and the whole flank was integrated, the cuttings serve barely illustrative purpose. (b) Time traces of concentration increase for sediment and bulk of all different configurations, including all knockout permutations. (c) Final concentration increase of sediment, relative to first frame after heating, for all configurations including labeling and random-sequence controls (bottom three rows). The sedimentation of the full system is independent of the label and its position. Random sequences do not show agglomeration nor sedimentation. (d) Concentration dependence of the sedimentation kinetics. The characteristic sedimentation time is determined by fitting the initial increase of c/c0 over time with an exponential function. The concentration dependence can be fitted with a power law function y(c) = a1+a2*cp, which yields an exponent of p\u00a0=\u00a0\u2013\ufeff1.06, fit with weighted error bars displayed.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/63431/elife-63431-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (a) One chamber contained five independent pockets of 20 \u00b5L capacity, which were accessed through a 0.5 mm channel. After inserting the sample, the pockets were sealed with Parafilm. An additional pocket contained a temperature sensor in water, which was used for the PID temperature regulation. (b) Image of one chamber. The chamber design is cut out of a 500 \u00b5m FEP\u00a0foil and fit between two plane sapphires. Three Peltier elements are attached to the backside of the chamber which allow quick heating and cooling of the sample at rates\u00a0>\u00a02 K/s. This package is then screwed onto an aluminum base by a steel top frame. The sapphire allowed full visual access to the sample.\n\nIt is\u00a0evident from Figure 3\u2014video 1 that the sedimentation was very selective. When only seven of the eight matching hairpins were present, sedimentation was much weaker and, in most cases, undetectable (Figure 3b,c). For the full system, the sedimentation kinetics showed to be strongly concentration dependent (Figure 3\u2014figure supplement 1b). Analogous experiments with random sequences (random pool of 84 nt strands) at equal concentration did not show agglomeration nor sedimentation (Figure 3\u2014figure supplement 1c). We have previously found that similar hairpin molecules provided the shortest sequences capable of forming agglomerates (Morasch et al., 2016).\n\nThe above results suggest that agglomeration could serve as an efficient way to assemble matching hairpins from much less structured and selected sequences in an autonomous way. After the molecules have been assembled as sedimented agglomerates, a convection flow can carry the large assemblies into regions of warmer temperatures, where the molecules would be disassembled by heat and activated for replication with a cooling step. Similar recycling behavior is seen in thermal gradient traps (Morasch et al., 2016), which were also found to enhance the molecular assembly (Mast et al., 2013) with characteristics that can match the above scenario.\n\n### Templating kinetics\n\nHybridization between stems of neighboring hairpins (Figure 1b, step 2) was catalyzed by the presence of already assembled complexes $0\u00af_{A}0\u00af_{B}0\u00af_{C}0\u00af_{D}$, confirming its role as a template. Assembly kinetics at 45\u00a0\u00b0C were recorded in reactions containing 200 nM of each strand for a range of template concentrations. At 120 nM template concentration, 40\u00a0% yield was achieved within 10 min (Figure 4b, black line). The untemplated, spontaneous reaction proceeded significantly slower (1.4 % yield, light gray line).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/63431/elife-63431-fig4-v1.jpg)\n\n**Figure 4.:** (a) Schematic representation of the templating step at constant temperature.\u00a0(b) Kinetics of tetramer formation at 45\u00a0\u00b0C with different starting concentrations of template ($c\u00af_{0}$). Data includes concentrations of all complexes containing tetramers. (c) Templating observed over a broad temperature range. Large circles show data for reactions at $c\u00af_{0}=120$ nM of template $0\u00af_{A}0\u00af_{B}0\u00af_{C}0\u00af_{D}$, small circles show the spontaneous formation ($c\u00af_{0}=0$). The latter increases at T > 45\u00a0\u00b0C. Above 48\u00a0\u00b0C, binding of monomers to the template gets weaker, slowing down the rate of template assisted formation. This is consistent with the melting temperatures of the information domains (see Figure 4\u2014figure supplement 1).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63431/elife-63431-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) Melting temperatures of complementary information domains (red, strands $0_{A}+0\u00af_{A}$, determined via quenching of $0_{A}$-Cy5) and backbone domains (blue, strands $0_{A}+0_{B}$, determined via UV absorption). Dashed lines show simulation data. Dotted gray lines depict simulated melting curves for $0_{B}+0_{C}$, $0_{C}+0_{D}$, $0_{D}+0_{A}$. The hatched area indicates the thermal oscillation range of 45\u201367\u00a0\u00b0C. (b) Simulated equilibrium concentrations in a reaction mixture containing 200 nM of each of $0_{A}$, $0_{B}$, $0_{C}$, $0\u00af_{A}$, $0\u00af_{B}$, $0\u00af_{C}$. The peak temperature of the thermal oscillations mostly melts the bond between the trimers $0_{A}0_{B}0_{C}$ and $0\u00af_{A}0\u00af_{B}0\u00af_{C}$ but is below the melting transition of $0_{A}0_{B}0_{C}$ or $0\u00af_{A}0\u00af_{B}0\u00af_{C}$ (yellow, green).\n\nAssembly rates showed a strong dependence on incubation temperature (Figure 4c). At 39\u00a0\u00b0C, the reaction proceeded significantly slower than at 42\u00a0\u00b0C or 45\u00a0\u00b0C. This is because the hairpins are predominantly in closed configuration and cannot bind to neighboring molecules in the assembly. Binding between complementary information domains still occurs, but the formation of bonds between neighboring strands becomes rate limiting. Above the melting temperature of the information domain (48\u00a0\u00b0C) (see Figure 4\u2014figure supplement 1), template-directed assembly becomes slower. However, the slower kinetics of template-directed product formation are partially superposed by the spontaneous product formation lacking an initial template (Figure 4c, small circles), which becomes an additional reaction channel due to the now open hairpins.\n\n### Exponential amplification\n\nAs intermediate step toward replication, we studied amplification reactions under thermal oscillations (Figure 5). The amplification reactions only contained strands encoding for information domain '0', that\u00a0is $0_{A}$, $0\u00af_{A}$, $0_{B}$, $0\u00af_{B}$, \u2026, $0\u00af_{D}$. The strands were subjected to thermal oscillations between Tbase = 45\u00a0\u00b0C and Tpeak = 67\u00a0\u00b0C. The lower temperature was held for 20 min, the upper for one second with temperature ramps amounting to 20\u00b11 s in each full cycle. This asymmetric shape of the temperature cycle accords with differences in kinetics of the elongation step and the melting of the information domain. It is typical for trajectories in thermal convection settings with local heating (Braun et al., 2003).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/63431/elife-63431-fig5-v1.jpg)\n\n**Figure 5.:** (a) Amplification time traces for concentration c for sequence 0000 during the first four\u00a0to\u00a0six cycles (Tpeak = 67\u00a0\u00b0C) for template ($0\u00af_{A}0\u00af_{B}0\u00af_{C}0\u00af_{D}$) concentrations $c\u00af_{0}$ from 0 to 45 nM. The data was fitted using the cross-catalytic model from equation (1). Strands $0_{A}$, $0\u00af_{A}$, $0_{B}$, \u2026, $0\u00af_{D}$ were used at 200 nM concentration each. Data points show concentrations of complexes 4:4. (b) Initial reaction velocity as a function of initial template concentration $c\u00af_{0}$. The data points show good agreement with the line calculated from the fits in panel a. (c) Amplification proceeded for peak temperatures below 74\u00a0\u00b0C. Above, backbone duplexes start to melt, and the complexes are no longer stable. The base temperature was 45\u00a0\u00b0C, reactions initially contained 30 nM of complex $0\u00af_{A}0\u00af_{B}0\u00af_{C}0\u00af_{D}$ as template. (d) Serial transfer experiment. The reaction containing strands $0_{A}$, $0\u00af_{A}$, $0_{B}$, \u2026, $0\u00af_{D}$ (black circles) survived successive dilution by a factor of 1/2 every three cycles at almost constant concentration. In contrast, a reaction with the same amount of template $0\u00af_{A}0\u00af_{B}0\u00af_{C}0\u00af_{D}$, but lacking monomers $0\u00af_{A\u2212D}$, fades out (open circles). The solid line shows the model from Equation 1.\n\nThe growth of molecular assemblies with different initial concentrations of template $0\u00af_{A}0\u00af_{B}0\u00af_{C}0\u00af_{D}$ revealed an almost linear dependence of the reaction velocity on the initial amount of template (Figure 5a, b). This confirms the exponential nature of the replication. The cross-catalytic replication kinetics can be described by a simplistic model that only considers the concentrations $ct$ of the template $0_{A}0_{B}0_{C}0_{D}$ and its complement $c-t$ of $0\u00af_{A}0\u00af_{B}0\u00af_{C}0\u00af_{D}$:\n\n$$\n\\frac{d}{dt}c(t)=k\u22c5c\u00af(t)+k_{0},\\frac{d}{dt}c\u00af(t)=k\u22c5c(t)+k_{0}\n$$\n\nHere, $k$ is the rate of cross-catalysis and $k_{0}$ the spontaneous formation rate. For $c(t)\u2248c\u00af(t)$, the model corresponds to simple exponential growth on a per-cycle basis. The model can be solved in closed form but does not account for saturation effects from the depletion of monomers. Therefore, it is not valid for concentrations similar to the total concentration of each strand. Fitting the model to the amplification reactions with 0\u201345 nM of template $0\u00af_{A}0\u00af_{B}0\u00af_{C}0\u00af_{D}$ revealed rate constants of $k$ = 0.16 cycle\u22121 and $k_{0}$ = 0.4 nM cycle\u22121 (Figure 5b). Amplification was robust with regard to the peak temperature of the oscillations. For Tpeak below 74\u00a0\u00b0C, the reaction remained almost unaffected (Figure 5c). Above, the temperature is too close to the melting transitions of the hairpin-hairpin duplexes, ranging from 76 to 79 \u00b0C (Figure 4\u2014figure supplement 1).\n\nThe ability to withstand consecutive dilutions is characteristic for exponentially growing replicators and was tested for in serial transfer experiments. Strands encoding for '0' (i.e. $0_{A}$, $0\u00af_{A}$, $0_{B}$, etc.) were thermally cycled with 30 nM of template $0\u00af_{A}0\u00af_{B}0\u00af_{C}0\u00af_{D}$. After three cycles each, samples were diluted one to one with buffer containing all eight strands as monomers at 200 nM each (Figure 5d). This high frequency of dilutions prevented the reaction from transitioning into the saturating regime. The cross-catalytic model was fitted to the data with the dilution factor as single free parameter, that was found to be 0.43. The difference from the theoretical value of 0.50 was likely due to strands sticking to the reaction vessels before dilution. As a control, a reaction with the same initial concentration of template $0\u00af_{A}0\u00af_{B}0\u00af_{C}0\u00af_{D}$, but without monomers $0\u00af_{A}$, $0\u00af_{B}$, $0\u00af_{C}$, $0\u00af_{D}$, was subjected to the same protocol. As the control could not grow exponentially, it gradually died out (Figure 5d, open circles).\n\n### Sequence replication\n\nThe above-mentioned reactions did amplify, but not replicate actual sequence information, as they only contained strands with 0/$0\u00af$ information domains. To study the replication of arbitrary sequences of binary code, replication reactions with all 16 strands encoding for '0' and '1' were performed. To discriminate sequences encoded in equally sized complexes and deduce error rates, we compared these results to those from different reaction runs with defects, that\u00a0is lacking one or two of the hairpin sequences required for the faithful replication of a particular template. Reference reactions contained all 16 strands ($0_{A}$, $0\u00af_{A}$, $1_{A}$, $1\u00af_{A}$, $0_{B}$, \u2026, $1\u00af_{D}$) at 100 nM each, and were run for each of three different template sequences ($0\u00af_{A}0\u00af_{B}0\u00af_{C}0\u00af_{D}$, $0\u00af_{A}1\u00af_{B}0\u00af_{C}1\u00af_{D}$, and $0\u00af_{A}0\u00af_{B}1\u00af_{C}1\u00af_{D}$) (Figure 6). The product yields were quantified from reaction time traces, extracted by integrating the intensities of all gel bands containing tetramers with the labeled strand $0_{A}$.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/63431/elife-63431-fig6-v1.jpg)\n\n**Figure 6.:** (a) Replication of sequence $0_{A}0_{B}0_{C}0_{D}$. Reactions were started with 15 nM initial template $0\u00af_{A}0\u00af_{B}0\u00af_{C}0\u00af_{D}$. All strands ($0_{A}$, $0\u00af_{A}$, $1_{A}$, \u2026, $1\u00af_{D}$) were present at 100 nM each. Native-PAGE results comparing the reaction of all 16 strands ('++++') with the reaction lacking strand $0_{D}$ ('+++\u2212').\u00a0The defective set '+++\u2212' mostly produced 3:4 complexes instead of 4:4 complexes (see schematics on the right). The overall yield of tetramer-containing complexes was greatly reduced. As size reference, the marker lane contained complexes $0_{A}0_{B}0_{C}0_{D}$, $0_{A}0_{B}0_{C}$, $0_{A}0_{B}$, and monomers $0_{A}$. The complete gel is presented in Figure 6\u2014figure supplement 1. (b) Product concentration over time for the complete sequence network (yellow) and three defective sets with missing strands. Data was integrated by quantitative image analysis from electrophoresis gels using covalent markers on the $0_{A}$-strand counting all product complexes containing tetramers. Mutations of information in the product from '0' to '1' were induced by defective reactions that lacked strands $0_{D}$ ('+++\u2212'), $0_{C}and0_{D}$ ('++\u2212\u2212'), and $0_{B}and0_{D}$ ('+\u2212+\u2212'). All reactions were initiated with 15 nM of $0\u00af_{A}0\u00af_{B}0\u00af_{C}0\u00af_{D}$. The solid line shows data from reaction '++++' without template. (c) End point comparison of reactions with templates $0\u00af_{A}0\u00af_{B}0\u00af_{C}0\u00af_{D}$ (panels a, b), $0\u00af_{A}1\u00af_{B}0\u00af_{C}1\u00af_{D}$, and $0\u00af_{A}0\u00af_{B}1\u00af_{C}1\u00af_{D}$ after six cycles. Horizontal lines indicate averages of the three template sequences. A single missing strand reduced product yield to about 40\u00a0%, two missing strands to 15\u201320\u00a0%.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63431/elife-63431-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (a) Assembly yields of different strands bound to tetramer template $0_{A}0_{B}0_{C}0_{D}$. Lane contents are given above each lane, complexes are identified on the right. Samples were annealed as for Figure 2 and described in Materials\u00a0and\u00a0methods. The red channel shows the intensity of $0_{A}$-Cy5, the cyan channel shows SYBR Green I. Single or unconnected strands (lanes 2, 4) detached from the template during electrophoresis. Complexes of size 2:4, 3:4, and 4:4 were resolved. (b) Full PAGE result from Figure 6a. The gel shows replication of template $0\u00af_{A}0\u00af_{B}0\u00af_{C}0\u00af_{D}$ in a reaction containing all strands ('++++', left) with a reaction lacking strand $0_{D}$ ('+++\u2212', right). The marker lane contained complexes $0_{A}0_{B}0_{C}0_{D}$, $0_{A}0_{B}0_{C}$, $0_{A}0_{B}$, and monomer $0_{A}$, and was prepared as described in Materials\u00a0and\u00a0methods.\n\nLeaving out a single strand (reaction label \u201c+++\u2212\u201d, for\u00a0example omitting $0_{D}$ for template $0\u00af_{A}0\u00af_{B}0\u00af_{C}0\u00af_{D}$) reduced the yield of full-size product to about 40\u00a0% (Figure 6a, b). The non-zero product yield with a missing strand is most likely due to the incorporation of the corresponding strand with an information domain mismatch (here $1_{D}$). This type of mismatch allows the hairpin backbone to form regardless, and the unfaithful product can propagate since both strands needed for an amplification of '1' at position D ($1_{D}$ and $1\u00af_{D}$) are provided.\n\nIn particular during the first few cycles, mostly complex $0_{A}0_{B}0_{C}$:$0\u00af_{A}0\u00af_{B}0\u00af_{C}0\u00af_{D}$ (3:4) was detected in the gel, instead of the desired tetramer product (Figure 6\u2014figure supplement 1). This was expected given the lack of strand $0_{D}$ and provides an upper limit on the error rate of the full replication. The fact that the full reaction produced almost no complexes 3:4 or 4:3 indicates that the incomplete product was indeed caused by the lack of a particular strand.\n\nRemoval of a further strand either directly next to the previous one ('++\u2212\u2212', missing strands $0_{C}and0_{D}$) or not ('+\u2212+\u2212', missing strands $0_{B}and0_{D}$) reduced the yield of product tetramers even further. Due to the periodic design those two variants represent all defective sets with two missing strands. Replication of the other two templates $0\u00af_{A}1\u00af_{B}0\u00af_{C}1\u00af_{D}$ and $0\u00af_{A}0\u00af_{B}1\u00af_{C}1\u00af_{D}$ produced very similar results. Product concentrations after six cycles are given in Figure 6c for each of the three templates as well as an average over the template sequences (horizontal lines). A single defect reduced the yield of tetramer complexes to about 40\u00a0%, two defects to 15\u201320\u00a0%, which is close to $0.4\\times0.4=0.16\u224315\u221220$ %, that\u00a0is the combined probability of two independent mismatches.\n\n### Replication fidelity\n\nThe observed rate of erroneous product formation can be attributed to the spontaneous background rate (Figure 4b,c, Figure 5a,b and Figure 6b). The reaction \u2018+\u2212+\u2212' (dark green) amplified similarly to the untemplated reference reaction (solid line), as it did not contain any strands that could bind next to each other to the template and form a backbone duplex (Figure 6b). For the templated reactions '+++\u2212' and '++\u2212\u2212', templating worked for partial sequences, producing intermediate yields.\n\nThe reduction in yield caused by a single defect (i.e. missing strand) to ~40\u00a0% (and to ~16\u00a0% for two defects) translates into a replication fidelity per information domain of ~60\u00a0%. The exact value for the replication fidelity is 62\u00a0% and can be calculated from Figure 6b by extracting the endpoint concentrations (blue vs. yellow line) and calculating $1\u2212\\frac{14nM}{37nM}=0.62$.\n\nHowever, this is a worst-case estimation, and the replication fidelity is likely higher due to binding competition. The mutations caused by a single defect ('+++-') in Figure 6b were imposed by not providing strand $0_{D}$ for a template ending with $0\u00af_{D}$ and only leaving the option to incorporate $1_{D}$ instead. For the full system ('++++'), however, with the presence of the matching strand, there is a binding competition for position D. Since the matching strand preferentially binds, the unfaithful incorporation of the wrong strand would be reduced. A similar effect of competition was observed in a protein-catalyzed ligation reaction (Toyabe and Braun, 2019). There, a comparable binding competition lead to a sevenfold decrease of the inferior ligation reaction in the presence of competition (Figure 2a, b therein). Therefore, we expect the real fidelity to be better than above lower bound estimate.\n\nIt is interesting to project and compare this per information domain replication fidelity to a per nucleotide replicator (i.e. polymerization). To do so, we define a threshold in the decrease of melting temperature per information domain as the criterion for when the replication mechanism is still functional. Then, we estimate how many point mutations in the information domain can maximally be tolerated to stay within this range of decrease in melting temperature. From this, we can calculate a hypothetical, corresponding per nucleotide fidelity to the measured information domain fidelity.\n\nWe compared the properties of the duplex\u00a00:$0\u00af$ to duplexes\u00a00:$0\u00af$*, where $0\u00af$* differs from $0\u00af$ by $K$ point mutations. We assumed that within the temperature range of this replication mechanism (Figure 7b, gray box) a reduction in information domain melting temperature Tm of the mutated duplex 0:$0\u00af$* by up to 10\u00a0\u00b0C compared to the original duplex 0:$0\u00af$ would be tolerated by the replication reaction. This was inferred from the width of the melting transition of duplex 0:$0\u00af$ (Figure 7b), where a shift of 10\u00a0\u00b0C corresponds to an increase of the unbound fraction from 0.08 at Tbase = 45\u00a0\u00b0C to 0.66 at 55\u00a0\u00b0C. In terms of free energies of the information domain duplex, this difference corresponds to \u0394G(0:$0\u00af$*) \u2265 \u221212.5 kcal/mol compared to \u0394G(0:$0\u00af$) = \u221215.4 kcal/mol. 99 %\u00a0of all duplexes 0:$0\u00af$*, with $0\u00af$* containing three point mutations, met that criterion (Figure 7a). Therefore, up to $K=3$ point mutations can be allowed.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/63431/elife-63431-fig7-v1.jpg)\n\n**Figure 7.:** The binding energies quantify the ability of the replication mechanism to discriminate nucleotide mutations.\u00a0(a) Cumulative free energy distributions of information domain duplexes 0:$0\u00af$ (red), $1$:$1\u00af$ (light red), as well as all\u00a00:$0\u00af$* and $1$:$1\u00af$* with up to three point mutations in $0\u00af$* and $1\u00af$* (yellow, green, blue). 99 % of duplexes 0:$0\u00af$* with three point mutations have free energies \u0394G \u2265 -12.5 kcal/mol (dashed line), significantly weaker than that of 0:$0\u00af$ (\u0394G = -15.4 kcal/mol). (b) Melting curves of information domain duplexes 0:$0\u00af$ (red), $1$:$1\u00af$ (light red), and the two duplexes 0:$0\u00af$* indicated by arrows in panel a. Even the 0:$0\u00af$* duplex (i) at the low end of the \u0394G distribution has a melting temperature of about 10\u00a0\u00b0C below that of 0:$0\u00af$. This difference in melting temperature destabilizes binding of the information domain and causes the replication mechanism to reject these sequences in the thermal oscillation regime between Tbase\u00a0=\u00a045\u00a0\u00b0C and Tpeak\u00a0=\u00a067\u00a0\u00b0C (gray box).\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63431/elife-63431-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Cumulative free energy distribution of duplexes 0:$0\u00af$* (as in Figure 7), split into information domains $0\u00af$* containing mutations at terminal bases (thin lines) and those with internal mutations only (thick lines). The dashed line shows combined data for two\u00a0to\u00a0three internal mutations. The logarithmic plot shows the fast drop and thus small influence by special mutations in the energy landscape.\n\nWe will assume that the replication did not differentiate between information domain $0\u00af$ and any information domain $0\u00af$* if $0\u00af$ and $0\u00af$* differ by less than $K$ point mutations. The fidelity per information domain $p_{K}N$ is given by a cumulative binomial distribution:\n\n$$\np_{K}(N)=\\sumk=0K\u22121(Nk)p^{N\u2212k}(1\u2212p)^{k}\n$$\n\nHere, $N$ is the information domain length, and $p$ the per nucleotide replication fidelity. The reduction in binding energy of the information domain duplex 0:$0\u00af$* and subsequent change in melting temperature was used as criterion to define the functionality of the replicator and to translate between a per information domain and a per nucleotide approach. As justified above, we calculate with $K=3$ mutations within the $N=15$ bases of the information domain, that\u00a0is the replication can tolerate up to three mismatches in the information domain. From Figure 6 we extracted a per information domain fidelity of $p_{3}(15)=0.62$, and deduce a per nucleotide fidelity of $p=85$ %. In fact, information domain duplexes 0:$0\u00af$* with mutations at two internal bases all show similar properties as information domains with a total of three mutations (Figure 7\u2014figure supplement 1). This refinement ($p_{2}(13)=0.62$) would increase the per nucleotide fidelity to $p=90$ %. We therefore estimate that a per nucleotide replication process would need a replication fidelity of 85\u201390\u00a0% to produce sequences with an error rate equivalent to the presented mechanism. Detailed calculations of the per nucleotide fidelities can be found in the supplementary information.\n\n## Discussion\n\nA cross-catalytic replicator can be made from short sequences and without covalent bonds under a simple non-equilibrium setting of periodic thermal oscillations. The replication is fast and proceeds within a few thermal oscillations of 20 min each. This velocity is comparable to other replicators (Kindermann et al., 2005), cross-ligating ribozymes (Robertson and Joyce, 2014), or autocatalytic DNA networks (Yin et al., 2008). The required thermal oscillations can be obtained by laminar convection in thermal gradients (Braun et al., 2003; Salditt et al., 2020), which also accumulates oligonucleotides (Mast et al., 2013). Depending on the envisioned environment, the mechanism could also be driven by thermochemical oscillations (Ball and Brindley, 2014) or convection in pH gradients (Keil et al., 2017). It should however be noted, that with the current state-of-the-art prebiotic chemistry regarding polymerization and ligation, the creation of\u00a0>80 nt RNA is not yet understood.\n\nIt is likely that a slower prebiotic ligation chemistry could later fix the replication results over long timescales. Such an additional non-enzymatic ligation (Stadlbauer et al., 2015) that joins successive strands would relax the constraint that backbone duplexes must not melt during high-temperature steps. Early on, this is difficult to achieve in aqueous solution against the high concentration of water. In order to overcome this competition and to favor the reaction entropically by a leaving group, individual bases are typically activated by triphosphates (Attwater et al., 2013; Horning and Joyce, 2016) or imidazoles, which are especially interesting in this context since they can replicate RNA directly (O'Flaherty et al., 2019; Zhou et al., 2019). However, the required chemical conditions of enhanced Mg2+ concentration hinder strand separation.\n\nThe overall replication fidelity is limited by the spontaneous bond formation rate between pairs of hairpin sequences, caused by the interaction of strands in free solution. At lower concentrations, as one would imagine in a prebiotic setting, this rate would decrease at the expense of an overall slower reaction. To some degree and despite ongoing design efforts, such a background rate is inherent to hairpin-fuelled DNA or RNA reactions (Green et al., 2006; Krammer et al., 2012; Yin et al., 2008).\n\nThe replication mechanism is expected to also work with shorter strands, as long as the order of the melting temperatures of the information domain and the backbone duplexes is preserved. Smaller strands would also be easier to produce by an upstream polymerization process, simply because they contain less nucleotides. In addition, binding of shorter information domain duplexes could discriminate even single base mismatches, resulting in an increased selectivity. It is not straightforward to estimate a minimal sequence length for the demonstrated mechanism. However, it is worth noting that it has been suggested that tRNA arose from two proto-tRNA sequences (Hopfield, 1978).\n\nPre-selection of nucleic acids for the presented hairpin-driven replication mechanism can be provided by highly sequence-specific gelation of DNA. This gel formation has been shown to be most efficient with double hairpin structures very similar to the tRNA-like sequences used in this study (Morasch et al., 2016). For our replication system, we have demonstrated this in Figure 3 by showing the spontaneous formation of agglomerates and sedimentation under gravity if all molecules of the assembly are present. This self-selection shows a possible pathway how the system can emerge from random or semi-random sequences, for example in a flow or a convection system where the molecules are selected as macroscopic agglomerate (Mast et al., 2013). Another selection pressure could stem from the biased hydrolysis of double-stranded nucleotide backbones, which favors assembled complexes over the initial hairpins (Obermayer et al., 2011).\n\nThe replication mechanism could serve as a mutable assembly strategy for larger functional RNAs (Mutschler et al., 2015; Vaidya et al., 2012). As an evolutionary route toward a more mRNA-like replication product with chemically ligated information domains, the mechanism would be supplemented by self-cleavage next to the information domains that cuts out the non-coding backbone duplexes, followed by ligation of the information domains. Both operations could potentially be performed by very small ribozymatic centers (Dange et al., 1990; Szostak, 2012; Vlassov et al., 2005).\n\nThe proposed replication mechanism of assemblies from tRNA-like sequences allows to speculate about a transition from an autonomous replication of successions of information domains to the translation of codon sequences encoded in modern mRNA (Figure 1a). Short peptide-RNA hybrids (Griesser et al., 2017; Jauker et al., 2015), combined with specific interactions between 3\u2019-terminal amino acids and the anticodons, could have given rise to a primitive genetic code. The spatial arrangement of tRNA-like sequences that are replicated by the presented mechanism would translate into a spatial arrangement of the amino acid or short peptide tails that are attached to the strands in a codon-encoded manner (Schimmel and Henderson, 1994). The next stage would then be the detachment and linking of the tails to form longer peptides. Eventually, tRNA would transition to its modern role in protein translation. The mechanism thus proposes a hypothesis for the emergence of predecessors of tRNA, independent of protein translation. This is crucial for models of the evolution of translation, because it could justify the existence of tRNA before it was utilized in an early translation process. However, many questions around the evolutionary steps that created translation are still unclear.\n\nTherefore, replication and translation could have, at an early stage, emerged along a common evolutionary trajectory. This supports the notion that predecessors of tRNA could have featured a rudimentary replication mechanism: starting with a double hairpin structure of tRNA-like sequences, the replication of a succession of informational domains would emerge. The interesting aspect is, that the replication is first encoded by hybridization and can later be fixed by a much slower ligation of the hairpins. The demonstrated mechanism could therefore jumpstart a non-enzymatic replication chemistry, which was most likely restricted in fidelity due to working on a nucleotide-by-nucleotide basis (Robertson and Joyce, 2012; Szathm\u00e1ry, 2006).\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>0A</td>\n      <td>Biomers</td>\n      <td></td>\n      <td>P - GCAGCGTTAATTCCCGC GCCTATCGGGAATGTAA CGCAGTGGGTAATAATG ACGATAGCCGTTCGGGA AAAGCGAACGGTATCG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>0B</td>\n      <td>Biomers</td>\n      <td></td>\n      <td>P - GCAGCGATACCGTTCG CTTTTCCCGAACGGCT ATCGCAGTGGGTAATA ATGAGCGAACTGTCGG TGCTTGCGACAGTGTCGC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>0C</td>\n      <td>Biomers</td>\n      <td></td>\n      <td>P - GCAGGCGACACTGTCG CAAGCACCGACAGTTC GCCAGTGGGTAATAAT GAGCGGTTCCTTGCGG AGTAGGCAAGGAATCCGC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>0D</td>\n      <td>Biomers</td>\n      <td></td>\n      <td>P - GCAGGCGGATTCCTTG CCTACTCCGCAAGGAA TCGCCAGTGGGTAATA ATGACGTTACATTCCC GATAGGCGCGGGAATTAACG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>0\u00afA</td>\n      <td>Biomers</td>\n      <td></td>\n      <td>P - GCTGCGCATTAACGCG CTTGTCCCGCGTTAAT TGCGCTCATTATTACC CACTCGCTCTCGGCTG TTTTGCCCAGCCGAGCAGCG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>0\u00afB</td>\n      <td>Biomers</td>\n      <td></td>\n      <td>P \u2013 GCTGCGTTGCATTGGC GATCAAAGCCAATGCG AACGCTCATTATTACC CACTCGCAATTAACGC GGGACAAGCGCGTTAATGCG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>0\u00afC</td>\n      <td>Biomers</td>\n      <td></td>\n      <td>P - GCTGGTTGGAGAAGGC GAACAGCACGCCTTCC CAACCTCATTATTACCC ACTCGTTCGCATTGGC TTTGATC GCCAATGCAACG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>0\u00afD</td>\n      <td>Biomers</td>\n      <td></td>\n      <td>P - GCTGCGCTGCTCGGCT GGGCAAAACAGCCGAG AGCGCTCATTATTACCC ACTGTTGGGAAGGCGT GCTGTTCGCCTTCTCCAAC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>1A</td>\n      <td>Biomers</td>\n      <td></td>\n      <td>P - GCAGCGTTAATTCCCG CGCCTATCGGGAATGT AACGCAAAAGAAGAGA AAGACGATAGCCGTTC GGGAAAAGCGAACGGTATCG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>1B</td>\n      <td>Biomers</td>\n      <td></td>\n      <td>P - GCAGCGATACCGTTCG CTTTTCCCGAACGGCT ATCGCAAAAGAAGAGA AAGAGCGAACTGTCGG TGCTTGCGACAGTGTCGC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>1C</td>\n      <td>Biomers</td>\n      <td></td>\n      <td>P - GCAGGCGACACTGTCG CAAGCACCGACAGTTC GCCAAAAGAAGAGAAA GAGCGGTTCCTTGCGG AGTAGGCAAGGAATCCGC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>1D</td>\n      <td>Biomers</td>\n      <td></td>\n      <td>P - GCAGGCGGATTCCTTG CCTACTCCGCAAGGAA TCGCCAAAAGAAGAGA AAGACGTTACATTCCC GATAGGCGCGGGAATTAACG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>1\u00afA</td>\n      <td>Biomers</td>\n      <td></td>\n      <td>P - GCTGCGCATTAACGCG CTTGTCCCGCGTTAAT TGCGCTCTTTCTCTTC TTTTCGCTCTCGGCTG TTTTGCCCAGCCGAGCAGCG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>1\u00afB</td>\n      <td>Biomers</td>\n      <td></td>\n      <td>P - GCTGCGTTGCATTGGC GATCAAAGCCAATGCG AACGCTCTTTCTCTTC TTTTCGCAATTAACGC GGGACAAGCGCGTTAATGCG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>1\u00afC</td>\n      <td>Biomers</td>\n      <td></td>\n      <td>P - GCTGGTTGGAGAAGGC GAACAGCACGCCTTCC CAACCTCTTTCTCTTC TTTTCGTTCGCATTGG CTTTGATCGCCAATGCAACG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>1\u00afD</td>\n      <td>Biomers</td>\n      <td></td>\n      <td>P- GCTGCGCTGCTCGGCT GGGCAAAACAGCCGAG AGCGCTCTTTCTCTTC TTTTGTTGGGAAGGCG TGCTGTTCGCCTTCTCCAAC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>0A \u2013 Cy5</td>\n      <td>Biomers</td>\n      <td></td>\n      <td>Cy5 -GCAGCGTTAATTCCCGC GCCTATCGGGAATGTAA CGCAGTGGGTAATAATG ACGATAGCCGTTCGGGA AAAGCGAACGGTATCG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>1A \u2013 Cy5</td>\n      <td>Biomers</td>\n      <td></td>\n      <td>Cy5 - GCAGCGTTAATTCCCG CGCCTATCGGGAATGT AACGCAAAAGAAGAGA AAGACGATAGCCGTTC GGGAAAAGCGAACGGTATCG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>R (random)</td>\n      <td>Biomers</td>\n      <td></td>\n      <td>NNNNNNNNNNNNNNNN NNNNNNNNNNNNNNNN NNNNNNNNNNNNNNNN NNNNNNNNNNNNNNNN NNNNNNNNNNNNNNNNNNNN</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>R (random) \u2013 Cy5</td>\n      <td>Biomers</td>\n      <td></td>\n      <td>Cy5 - NNNNNNNNNNNNNNNN NNNNNNNNNNNNNNNN NNNNNNNNNNNNNNNN NNNNNNNNNNNNNNNN NNNNNNNNNNNNNNNNNNNN</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>NUPACK</td>\n      <td>nupack.org</td>\n      <td>https://doi.org/10.1002/jcc.21596</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageJ</td>\n      <td>ImageJ http://imagej.nih.gov/ij/</td>\n      <td>RRID:SCR_002285</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageJ stabilization plugin</td>\n      <td>http://www.cs.cmu.edu/~kangli/code/Image_Stabilizer.html</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Strand design\n\nDNA double-hairpin sequences were designed using the NUPACK software package (Zadeh et al., 2011). In addition to the secondary structures of the double-hairpins, the design algorithm was constrained by all target dimers. Candidate sequences were selected for optimal homogeneity of binding energies and melting temperatures. Backbone domains connecting consecutive strands (e.g. $0_{A}0_{B}0_{C}$) had to be the most stable bonds in the system, in particular more stable than between a template and a newly formed product complex (e.g. $0_{B}$:$0\u00af_{B}$). On the other hand, hairpin melting temperatures had to be low enough to allow for a sufficient degree of thermal fluctuations. To reconcile this with the length of the strands, mismatches were introduced in the hairpin stems. The sequences of all strands are listed in Supplementary file 1.\n\n### Thermal cycling assays\n\nAll reactions were performed in salt 20 mM Tris-HCl pH 8, 150 mM NaCl with added 20 mM MgCl2. DNA oligonucleotides (Biomers, Germany) were used at 200 nM concentration per strand in reactions containing a fixed-sequence subset of eight strands (e.g. 0/$0\u00af$ only) and 100 nM per strand in reactions containing all 16 different strands.\n\nThermal cycling was done in a standard PCR cycler (Bio-Rad C1000). Reaction kinetics were obtained by running each reaction for different run times or numbers of cycles in parallel. The products were analyzed using native PAGE. The time between thermal cycling and PAGE analysis was minimized to exclude artifacts from storage on ice.\n\nTemplate sequences were prepared using a two-step protocol. Annealing from 95\u00b0C to 70\u00b0C within 1 hr, followed by incubation at 70\u00a0\u00b0C for 30 min. Afterwards, samples were cooled to 2\u00a0\u00b0C and stored on ice. When assembling complexes containing paired information domains (Figure 2), samples were slowly cooled down from 70 to 25\u00a0\u00b0C within 90 min before being transferred onto ice. DNA double hairpins were quenched into monomolecular state by heating to 95\u00a0\u00b0C and subsequent fast transfer into ice water.\n\n### Product analysis\n\nDNA complexes were analyzed using native polyacrylamide gel electrophoresis (PAGE) in gels at 5\u00a0% acrylamide concentration and 29:1 acrylamide / bisacrylamide ratio (Bio-Rad, Germany). Gels were run at electric fields of 14 V/cm at room temperature. Strand $0_{A}$/$1_{A}$ was covalently labeled with Cy5. Cy5 fluorescence intensities were later used to compute strand concentrations. As an additional color channel, strands were stained using SYBR Green I dye (New England Biolabs). Complexes were identified by comparing the products obtained from annealing different strand subsets.\n\nTo correctly identify bands in the time-resolved measurements, gels were run with a marker lane. The marker contained strands $0_{A}$ (200 nM), $0_{B}$ (150 nM), $0_{C}$ (50 nM), and $0_{D}$ (100 nM), and was prepared using the two-step annealing protocol from 95 to 70\u00a0\u00b0C. The unequal strand concentrations ensured that the sample contained a mixture of mono-, di-, tri-, and tetramers.\n\nElectrophoresis gels were imaged in a multi-channel imager (Bio-Rad ChemiDoc MP), image post processing, and data analysis were performed using a self-developed LabVIEW software. Post-processing corrected for inhomogeneous illumination by the LEDs, image rotation, and distortions of the gel lanes if applicable. Background fluorescence was determined from empty lanes on the gel, albeit generally low in the Cy5 channel.\n\nFor the determination of reaction yields, the intensities of all gel bands containing strands of the sequence length of interest were added up. For strings of four strands, these were the single tetramer as well as its complex with di- and tri- and tetramers. Single strands separated from their complements during electrophoresis (Figure 2 and Figure 6\u2014figure supplement 1).\n\n### Thermal melting curves\n\nThermal melting curves were measured using either UV absorbance at 260 nm wavelength in a UV/Vis spectrometer (JASCO V-650, 1 cm optical path length), via quenching of the Cy5 label at the 5'-end of strand $0_{A}$ (excitation: 620\u2013650 nm, detection: 675\u2013690 nm), or using fluorescence of the intercalating dye SYBR Green I (excitation: 450\u2013490 nm, detection: 510\u2013530 nm). Fluorescence measurements were performed in a PCR cycler (Bio-Rad C1000). Samples measured via fluorescence were at 200 nM of each strand, those measured via UV absorption contained 1 \u00b5M total DNA concentration to improve the signal-to-noise ratio. Before analysis of the melting curves (Mergny and Lacroix, 2003), data were corrected for baseline signals from reference samples containing buffer and intercalating dye, if applicable.\n\n### Self-assembly and sedimentation analysis\n\nThe samples were mixed in the replication buffer (150 mM NaCl, 20 mM MgCl2, 20 mM Tris-HCl pH 8) at a total oligomer concentration of 5 \u00b5M, that\u00a0is varying concentration per strand depending on the number of different strands in the configuration (4, 7, or 8). The microfluidic chamber was assembled with a custom cut, 500 \u00b5m thick, Teflon foil placed between two plane sapphires (Figure 3\u2014figure supplement 2). Three Peltier elements (QuickCool QC-31\u20131.4-3.7AS, purchased from Conrad Electronics, Germany) were attached to the backside of the chamber to provide full temperature control. The chamber was initially flushed with 3M Novec7500 (3M, Germany) to avoid bubble formation. The samples were pipetted into the microfluidic chamber through the 0.5 mm channels using microloader pipette tips (Eppendorf, Germany). The chamber was then sealed with Parafilm and heated to 95\u00a0\u00b0C for 10 s to fully separate the strands and cooled rapidly (within 30 s) to 25\u00a0\u00b0C. Assembly and sedimentation were monitored for 20 hr on a fluorescence microscope (Axiotech Vario, Zeiss, Germany) with two LEDs (490 nm and 625 nm, Thorlabs, Germany) using a 2.5 x objective (Fluar, Zeiss, Germany). The observed sedimentation was independent of the attached dye and its position (Figure 3\u2014figure supplement 1c). Prior to image analysis the image stacks were stabilized using an ImageJ plugin (Li, 2008). The ratio of sedimented fluorescence relative to the first frame after heating was used to quantify sedimentation (Figure 3). The sedimentation time-traces (Figure 3b) were fitted with a Sigmoid function to determine the final concentration increase c/c0 (Figure 3c). The experiment was also performed with random 84 nt DNA strands at 5 \u00b5M total concentration to exclude unspecific agglomeration (Figure 3\u2014figure supplement 1c).\n",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "2fd95978-5a13-428d-8269-f82fa90d1dd8",
+      "submission_id": "bfb48d31-1dfb-4ac8-a002-44d75069f843",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Gonen Ashkenasy, Ben-Gurion University Israel\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.63431.sa1](https://doi.org/10.7554/eLife.63431.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nWe have found special interest in your new system, since it can serve as a new platform for building a replicator or an amplifier, and hence may help understanding how DNA/RNA self-replicate and pass on information.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"tRNA sequences can assemble into a replicator\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Patricia Wittkopp as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our policy on revisions we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, when editors judge that a submitted work as a whole belongs in eLife but that some conclusions require a modest amount of additional new data, as they do with your paper, we are asking that the manuscript be revised to either limit claims to those supported by data in hand, or to explicitly state that the relevant conclusions require additional supporting data.\n\nOur expectation is that the authors will eventually carry out the additional experiments and report on how they affect the relevant conclusions either in a preprint on bioRxiv or medRxiv, or if appropriate, as a Research Advance in eLife, either of which would be linked to the original paper.\n\nSummary:\n\nThe authors describe a new replication system, driven by DNA molecules for which the sequence design was inspired by natural tRNAs. The new system assembles into four hairpins that can template the replication of complementary sequences. One of the main challenges in obtaining efficient (exponential) replication is originated from product inhibition, namely that the template-replicate duplexes are more stable than their single stranded forms, thus tend to have longer lifetimes and slow down the next replication cycles. In the current work, the authors developed a smart thermal strategy to drive the templates amplification. Their design offers a good mechanism for building a replicator or an amplifier and may serve as a simplified platform in understanding more about how DNA/RNA may self-replicate and pass on information. The experiments of templated kinetics and exponential replication seem to be conducted appropriately, and the article is well-written and supported on previous literature from the field.\n\nThe paper can be of interest to the growing community exploring the chemistry of the origin of life, and particularly replicative chemistry. The paper is recommended to be published after addressing the following comments.\n\nEssential revisions:\n\n1) For the Sequence replication, Figure 6b, what is the concentration of y-axis that is being reported? Is it the tetramer concentration (including 0A0B0C0D and 0\u00afA0\u00afB0\u00afC0\u00afD) or does it only include 0A0B0C0D? If it includes both, it should be specified, if not, can the authors explain why it is possible to form new 0A0B0C0D tetramers when there is no 0D fuels? Also, as all 4 reactions (++++, +++-, ++--, +-+-) starts with 15 nM of 0A0B0C0D tetramers, should they not begin with at least 15 nM in the 4 cases compared to the no template case?\n\n2) Can the authors better explain the section of the calculation of Replication fidelity? As there are no mutations happening in the hairpins, wouldn't it make more sense for calculating the fidelity rate on information-domain-basis instead of on the nucleotide-basis? Also, the equation for fidelity per information domain \ud835\udc5d\ud835\udc3e(\ud835\udc41) may need more explanation and clarification, it would be helpful, thus, to add a section in the supplementary information clearing up the definition of fidelity rate (of the final tetramers, how many of them are 0A0B0C0D) and how these equations are derived. The 71 % fidelity per information domain caused by the 40 % decrease is also a bit confusing, as in this case, all these products should be errors, doesn't it translate to 60 % of leak for such cases?\n\n3) No comments are made along the paper regarding the possibility of non-nucleic acid molecules to replicate, but many recent studies have highlighted this possibility. As a minimum, to complete the discussion it would be nice to refer the reader to review papers on this topic. In addition, since the replication process described in this paper is based on self-assembly, some references to previous works where self-assembly and replication were also intimately related are missing.\n\n4) By reading the end of the Abstract (and from the title) one may understand that today's tRNA sequences, or very similar sequences, could confer any advantages with respect to replication and selection. As this point is not directly demonstrated in the paper, the authors could consider a more conservative discussion of this issue and clarify how far this argument holds.\n\n5) The statement \"Here, we implemented the system with DNA for practical reasons\u2060. Nevertheless, due to short heating times and moderate magnesium concentrations, we also estimate that an RNA version can survive for weeks (Li and Breaker, 1999)\" may be true according to that reference, but it would have so important implications that it requires some experimental verification. Otherwise, it would be better to be more conservative about this point.\n",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8f4543f0-de62-48e8-81dd-37e7b43f287f",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C1",
+      "claim": "A pool of oligonucleotides adapted with minor mutations from tRNA spontaneously formed molecular assemblies and replicated information autonomously using only reversible hybridization under thermal oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our experiments show how a pool of oligonucleotides, adapted with minor mutations from tRNA, spontaneously formed molecular assemblies and replicated information autonomously using only reversible hybridization under thermal oscillations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract directly states experimental results showing spontaneous assembly and autonomous replication.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "851a2438-b123-4b90-b3b8-dfa2a6ff8e8b",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C2",
+      "claim": "The pool of cross-complementary hairpins self-selected by agglomeration and sedimentation.",
+      "claim_type": "EXPLICIT",
+      "source": "The pool of cross-complementary hairpins self-selected by agglomeration and sedimentation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this as an experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "71b43858-f126-4f31-8834-02db7003b2c4",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C3",
+      "claim": "Metastable DNA hairpins bound to a template and then interconnected by hybridization.",
+      "claim_type": "EXPLICIT",
+      "source": "The metastable DNA hairpins bound to a template and then interconnected by hybridization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract describes this as an observed mechanism.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "2df2e7ba-6aa9-4ca1-a03b-2fb05eb5645e",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C4",
+      "claim": "Thermal oscillations separated replicates from their templates and drove an exponential, cross-catalytic replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Thermal oscillations separated replicates from their templates and drove an exponential, cross-catalytic replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this as an experimental finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "0aee33f6-cc8b-4265-80d6-8e203103f6e5",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C5",
+      "claim": "The molecular assembly could encode and replicate binary sequences with a replication fidelity corresponding to 85\u201390% per nucleotide.",
+      "claim_type": "EXPLICIT",
+      "source": "The molecular assembly could encode and replicate binary sequences with a replication fidelity corresponding to 85\u201390 % per nucleotide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract provides a specific quantitative measurement of replication fidelity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "6ae73153-506c-42b5-a7bb-4f6e9acacc95",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C6",
+      "claim": "Early forms of tRNA could have been involved in molecular replication.",
+      "claim_type": "EXPLICIT",
+      "source": "The replication by a self-assembly of tRNA-like sequences suggests that early forms of tRNA could have been involved in molecular replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a speculative interpretation of the experimental results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "40624ce5-4784-4531-9af0-3909ae73d690",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C7",
+      "claim": "The replication mechanism would link the evolution of translation to a mechanism of molecular replication.",
+      "claim_type": "EXPLICIT",
+      "source": "This would link the evolution of translation to a mechanism of molecular replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "af720dcb-b4df-401e-bffd-e3ee850a99c8",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C8",
+      "claim": "In modern living systems, the replication of DNA and RNA necessitates the formation of covalent bonds.",
+      "claim_type": "EXPLICIT",
+      "source": "In modern living systems, the replication of DNA and RNA necessitates the formation of covalent bonds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established scientific knowledge about modern biological systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "4bc52706-5df0-4493-9a8b-26f8e4de8e38",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C9",
+      "claim": "Modern DNA and RNA replication requires an interconnected machinery: proteins need to perform base-by-base replication of sequence information, a modern metabolism to supply activated molecules, and tRNA as well as the ribosome to create the required proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "It requires an interconnected machinery: proteins need to perform base-by-base replication of sequence information, a modern metabolism to supply activated molecules, and tRNA as well as the ribosome to create the required proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes established knowledge about modern biological replication systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "4edd9586-8ad8-42b6-b8b8-8742400ad4da",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C10",
+      "claim": "The RNA world hypothesis proposes that early on, the catalytic function of highly defined RNA sequences was used for self-replication.",
+      "claim_type": "EXPLICIT",
+      "source": "The RNA world hypothesis proposes, that early on, the catalytic function of highly defined RNA sequences was used for self-replication (Horning and Joyce, 2016; Orgel, 2004; Turk et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "6ca020cd-060b-46f5-80a9-1af1dc57544c",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C11",
+      "claim": "Ribozymes catalyze the ligation of RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "These ribozymes catalyze the ligation of RNA (Doudna et al., 1991; Mutschler et al., 2015; Paul and Joyce, 2002; Robertson et al., 2001; Walton et al., 2020) and the addition of individual bases (Attwater et al., 2013; Horning and Joyce, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "bf426893-f70c-4d32-8be1-f6bec1228db8",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C12",
+      "claim": "Ribozymes catalyze the addition of individual bases.",
+      "claim_type": "EXPLICIT",
+      "source": "These ribozymes catalyze the ligation of RNA (Doudna et al., 1991; Mutschler et al., 2015; Paul and Joyce, 2002; Robertson et al., 2001; Walton et al., 2020) and the addition of individual bases (Attwater et al., 2013; Horning and Joyce, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "d2ae2694-68a8-48d5-822a-7bbf6c762164",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C13",
+      "claim": "Ribozyme sequences were engineered using in vitro evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "These very special sequences were engineered using in vitro evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method used to create ribozymes, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "958ec58f-b7b8-46aa-8566-0bc2d3bf6f66",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C14",
+      "claim": "It is unclear how autonomous evolution of early life could have reached such levels of sequence complexity.",
+      "claim_type": "EXPLICIT",
+      "source": "It is unclear how autonomous evolution of early life could have reached such levels of sequence complexity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an open question in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "17578b17-b065-47b4-b596-285ceea24266",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C15",
+      "claim": "Replication of information can be realized by the reversible hybridization interactions between tRNA-like molecules alone.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that replication of information can be realized by the reversible hybridization interactions between tRNA-like molecules alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a key finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "9e332725-a39c-467c-98ff-a7b3562884b8",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C16",
+      "claim": "The proposed replication mechanism is driven by an external physical non-equilibrium setting, in this case thermal oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "The proposed mechanism is driven by an external physical non-equilibrium setting, in our case thermal oscillations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental conditions used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "d76a4baf-9ee3-4876-8350-bb4ec41f32d2",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C17",
+      "claim": "The replication process does not involve chemical ligation.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the process does not involve chemical ligation, it does not rely on a particular non-enzymatic or catalytic ligation chemistry (Dolinnaya et al., 1988; Engelhart et al., 2012; Patzke et al., 2014; Pino et al., 2011; Rohatgi et al., 1996; Sievers and von Kiedrowski, 1994; von Kiedrowski, 1986) or particular catalytically active sequences, but merely requires sequence complementarity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key feature of the mechanism, contrasted with cited prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "a08a5bf7-6bfb-4de6-82c0-aa59144b396d",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C18",
+      "claim": "The replication mechanism does not require particular catalytically active sequences, but merely requires sequence complementarity.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the process does not involve chemical ligation, it does not rely on a particular non-enzymatic or catalytic ligation chemistry (Dolinnaya et al., 1988; Engelhart et al., 2012; Patzke et al., 2014; Pino et al., 2011; Rohatgi et al., 1996; Sievers and von Kiedrowski, 1994; von Kiedrowski, 1986) or particular catalytically active sequences, but merely requires sequence complementarity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key feature of the mechanism.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "1c2c342b-ef8d-4c58-9336-6dbe3af7ea53",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C19",
+      "claim": "The advantage of reversible hybridization is the re-usability of educts and products.",
+      "claim_type": "EXPLICIT",
+      "source": "The advantage of reversible hybridization is the re-usability of educts and products.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a logical advantage of the mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "96dd2a57-f4a8-44f6-a5f9-ce179a830269",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C20",
+      "claim": "Sequence-encoded interactions can self-select by forming agglomerates.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, sequence-encoded interactions can self-select by forming agglomerates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a property of the system.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "96a5c478-612b-406e-b618-c356f97c6c0b",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C21",
+      "claim": "Nature's approach to achieve exponential growth is the usage of cross-catalysis: the replicate of a template serves as a template for the next round of replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Nature's approach to achieve exponential growth is the usage of cross-catalysis: the replicate of a template serves as a template for the next round of replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established biological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "82d72e4d-f6cf-4f25-9c73-70d4b7d0a9c3",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C22",
+      "claim": "For short replicators under isothermal conditions, the binding between template and replicate has to be weak such that the dissociation of strands happens spontaneously and is not rate limiting.",
+      "claim_type": "EXPLICIT",
+      "source": "For short replicators under isothermal conditions, the binding between template and replicate has to be weak such that the dissociation of strands happens spontaneously and is not rate limiting (Paul and Joyce, 2002; Sievers and von Kiedrowski, 1994; von Kiedrowski, 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "bce916cc-00de-44b5-8f84-ee043cf6327b",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C23",
+      "claim": "For longer replicates, temperature change has successfully been used to separate strands for replication catalyzed by thermostable proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "For longer replicates, temperature change has successfully been used to separate strands for replication catalyzed by thermostable proteins (Barany, 1991; Saiki et al., 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "497ce3e5-a374-444e-b366-837d2d11c9e1",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C24",
+      "claim": "For catalytic RNA, elevated salt concentrations disfavor strand separation by temperature and catalyze hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "For catalytic RNA, elevated salt concentrations disfavor strand separation by temperature and catalyze hydrolysis (Horning and Joyce, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "b115e223-8798-4f38-baa7-4610c0bfe603",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C25",
+      "claim": "Schulman et al. used moderate shear flows to separate DNA tile assemblies.",
+      "claim_type": "EXPLICIT",
+      "source": "In an interesting alternative to strand separation by temperature, Schulman et al. used moderate shear flows to separate DNA tile assemblies (Schulman et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "b7c4679f-647e-411b-a1f2-249e2cc3ed14",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C26",
+      "claim": "The sequences are designed to have self-complementary double hairpins and are pairwise complementary within the molecule pool.",
+      "claim_type": "EXPLICIT",
+      "source": "The sequences are designed to have self-complementary double hairpins and are pairwise complementary within the molecule pool, such that the 3' hairpin of one strand is complementary to the 5' hairpin of the next.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the design of the sequences used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "517fccdb-ad32-48b7-a522-8fb5fbc8ae80",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C27",
+      "claim": "The structure of the designed sequences resembles the secondary structure of proto-tRNAs proposed by stereochemical theories.",
+      "claim_type": "EXPLICIT",
+      "source": "Their structure resembles the secondary structure of proto-tRNAs proposed by stereochemical theories (Figure 1a), comprising two hairpin loops that surround the anticodon with a few neighboring bases (Krammer et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 1a and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "71ee9433-cb97-4c68-a2ed-ffb2917ebeb9",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C28",
+      "claim": "The lengths of 82\u201384 nt of the double hairpins are that of average tRNA molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "The lengths of 82\u201384 nt of the double hairpins are that of average tRNA molecules (Sharp et al., 1985), with stem loops consisting of 30\u201333 nt and the information-encoding interjacent domains of 15 nt.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated and supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "6897923c-37b6-4228-adf2-869bd4479d48",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C29",
+      "claim": "The replication mechanism is expected to perform equally well for DNA and RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "As the replication mechanism is based on hybridization only, it is expected to perform equally well for DNA and RNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an expectation based on the mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "47cf4056-66a1-4a14-9c7e-376e30c617d3",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C30",
+      "claim": "The system was implemented with DNA and not RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we implemented the system with DNA and not RNA as done previously (Krammer et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental choice made in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "d7a0acb1-6968-46ec-8e36-8691ab62ff0e",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C31",
+      "claim": "An RNA version could survive for days if not weeks due to short heating times and moderate magnesium concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to short heating times and moderate magnesium concentrations, we estimate that an RNA version could survive for days if not weeks (Li and Breaker, 1999; Mariani et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an estimate based on cited prior research.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "eaa04236-76d9-4e1f-a0d7-bb3b6d4b0a95",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C32",
+      "claim": "An RNA version behaves structurally identical to the implemented DNA version.",
+      "claim_type": "EXPLICIT",
+      "source": "We also show that an RNA version behaves structurally identical to the implemented DNA version (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated and supported by Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "9c6458b2-bf91-412e-81b4-fe08d3a79939",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C33",
+      "claim": "Fast cooling brings the strands to their activated state with both hairpins closed.",
+      "claim_type": "EXPLICIT",
+      "source": "(0) Fast cooling within seconds brings the strands to their activated state with both hairpins closed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes step 0 of the replication mechanism.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "84feec73-ce27-43dd-b797-33edcbbaef0e",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C34",
+      "claim": "At the base temperature, activated strands with complementary information domains can bind to an already assembled template.",
+      "claim_type": "EXPLICIT",
+      "source": "(1) At the base temperature, activated strands with complementary information domains can bind to an already assembled template.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes step 1 of the replication mechanism.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "a63046f5-f948-4c40-ae23-3bfe93114a90",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C35",
+      "claim": "Thermal fluctuations cause open-close fluctuations of the hairpins, permitting adjacent complementary hairpins of different strands to bind when strands are already bound to a template at the information domain.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) Thermal fluctuations cause open-close fluctuations of the hairpins. When strands are already bound to a template at the information domain, those fluctuations permit adjacent complementary hairpins of different strands to bind.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes step 2 of the replication mechanism.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "29a6712c-e014-471b-8d52-51a218f85ce3",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C36",
+      "claim": "Subsequent heating splits the newly formed replicate from the template at the information domains while the backbone of hairpin strands remains stable due to their higher melting temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "(3) Subsequent heating splits the newly formed replicate from the template at the information domains. Due to their higher melting temperatures, the backbone of hairpin strands remains stable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes step 3 of the replication mechanism.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "86c8ddbe-bdf0-44cf-aef4-d55e3caceb54",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C37",
+      "claim": "Both replicate and template are available for a new replication round, making the replication cross-catalytic.",
+      "claim_type": "EXPLICIT",
+      "source": "Both, replicate and template, are available for a new replication round. This makes both the replicate and the template replication cross-catalytic in a subsequent step.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the cross-catalytic nature of the mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "cbd22837-39aa-44c5-a848-8246a636485d",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C38",
+      "claim": "Because of the initial fast cooling, all hairpins are closed in free solution, which inhibits the formation of replicates without template.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of the initial fast cooling, all hairpins are closed in free solution. This inhibits the formation of replicates without template.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key feature of the mechanism that reduces background.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "533941e0-22fa-4f97-b6b7-2cce2c3e83c0",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C39",
+      "claim": "While the binding of adjacent hairpins with template happens within minutes, hairpins in free solution connect without template only on timescales slower than hours.",
+      "claim_type": "EXPLICIT",
+      "source": "While the binding of adjacent hairpins with template happens within minutes, hairpins in free solution connect without template only on timescales slower than hours and thus give false positives at a very low rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the kinetics of templated vs. untemplated reactions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "0bc5f0d8-2a25-4b99-bdbf-7e10e208b10e",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C40",
+      "claim": "The basic principle of this replication mechanism was previously explored by Krammer et al. using a set of four hairpins using half a tRNA sequence (36 nt) that amplified into dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "The basic principle of this replication mechanism was previously explored by Krammer et al. using a set of four hairpins using half a tRNA sequence (36 nt) that amplified into dimers (Krammer et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "15064bb8-77f2-4cb3-9db5-e6a9ea629630",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C41",
+      "claim": "The previous amplification by Krammer et al. could not encode information and suffered from a high rate (>50%) of unspecific amplification without template.",
+      "claim_type": "EXPLICIT",
+      "source": "This amplification could not encode information and suffered from a high rate (>50 %) of unspecific amplification without template (Figure 4 therein).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of prior work, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "8c684eae-c03d-4ba2-a093-b062ca712496",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C42",
+      "claim": "The new replicator demonstrates exponential amplification and can encode sequence information '0' and '1' with four bits.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, in contrast, we demonstrate exponential amplification, and the replicator can now encode sequence information '0' and '1' with four bits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key improvement over prior work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "b50bc13d-f2e0-4b26-b11d-91b1961a56c8",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C43",
+      "claim": "The new replicator shows a significantly decreased unspecific amplification without template of approximately 10%.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the strands making up the new replicator are double hairpins with the sequence structure and length of tRNA. The replicator now shows a significantly decreased unspecific amplification without template of approximately 10 % (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated and supported by Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "f6be42a2-c861-4c11-a7df-fc71fabaa7c0",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C44",
+      "claim": "Native polyacrylamide gel electrophoresis (PAGE) showed that the double hairpins assembled as intended.",
+      "claim_type": "EXPLICIT",
+      "source": "Native polyacrylamide gel electrophoresis (PAGE) showed that the double hairpins assembled as intended (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated and supported by Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "f810eb94-06d1-4101-8f77-52d167903c66",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C45",
+      "claim": "All complexes were formed at concentrations of 200 nM of each strand and could be resolved despite their branched tertiary structure.",
+      "claim_type": "EXPLICIT",
+      "source": "All complexes were formed at concentrations of 200 nM of each strand and could be resolved despite their branched tertiary structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental conditions and results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "2ec17e00-5d65-4350-86d1-745e88f3a933",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C46",
+      "claim": "Friction coefficients of complexes of two to four strands were 1.6\u20131.8-fold higher than for linear dsDNA, and 2.4-fold higher for larger complexes (4:4 configuration, ca. 660 nt).",
+      "claim_type": "EXPLICIT",
+      "source": "Friction coefficients of complexes of two to four strands were 1.6\u20131.8-fold higher than for linear dsDNA, and 2.4-fold higher for larger complexes (4:4 configuration, ca. 660 nt, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated and supported by Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "ae931d48-6499-44f0-ad70-555ce9c28782",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C47",
+      "claim": "The higher friction coefficients agree with the branched structure of the suggested strand assembly geometry.",
+      "claim_type": "EXPLICIT",
+      "source": "This agrees with the branched structure of the suggested strand assembly geometry (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an interpretation of the data, supported by Figure 1a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "5abdc147-169f-4c0b-bb39-551bce4d50df",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C48",
+      "claim": "Complexes containing single bound information domains were not stable during electrophoresis.",
+      "claim_type": "EXPLICIT",
+      "source": "Complexes containing single bound information domains were not stable during electrophoresis (Figure 2, lanes 2, 7 and Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated and supported by figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "d0248890-98b0-4c9a-a735-f56a151b38a7",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C49",
+      "claim": "The instability of single information domain bonds during electrophoresis allowed differentiation of fully assembled complexes from those where individual strands are bound to a template but have not formed backbone duplexes.",
+      "claim_type": "EXPLICIT",
+      "source": "This allowed to differentiate fully assembled complexes from those where individual strands are bound to a template but have not formed backbone duplexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the electrophoresis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "d56f7691-5aa0-49f3-8263-656574461773",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C50",
+      "claim": "Eight matching hairpin sequences combined at moderately elevated concentrations and cooled to 25\u00b0C after separation at 95\u00b0C spontaneously formed agglomerates that were large enough to sediment under gravity.",
+      "claim_type": "EXPLICIT",
+      "source": "We combined eight matching hairpin sequences of design as introduced in Figure 1 at moderately elevated concentrations and cooled the system to only 25 \u00b0C after separating the molecules at 95 \u00b0C (Figure 3). We found the spontaneous formation of agglomerates that were large enough to sediment under gravity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an experimental observation, supported by Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "5c81ff18-4d67-49bc-af72-4e93e3771221",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C51",
+      "claim": "The initial homogeneous fluorescence turned into micrometer-sized grains and sedimented within hours.",
+      "claim_type": "EXPLICIT",
+      "source": "The initial homogeneous fluorescence turned into micrometer-sized grains and sedimented within hours.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the observed sedimentation behavior.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "4c1378e5-fe73-49eb-84dc-5dd4cb22c7ae",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C52",
+      "claim": "Sedimentation was very selective: when only seven of the eight matching hairpins were present, sedimentation was much weaker and, in most cases, undetectable.",
+      "claim_type": "EXPLICIT",
+      "source": "It is evident from Figure 3\u2014video 1 that the sedimentation was very selective. When only seven of the eight matching hairpins were present, sedimentation was much weaker and, in most cases, undetectable (Figure 3b,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated and supported by Figure 3b,c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "c5bb6fe0-6ffd-4c92-9352-758936ea345b",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C53",
+      "claim": "For the full system, the sedimentation kinetics showed to be strongly concentration dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "For the full system, the sedimentation kinetics showed to be strongly concentration dependent (Figure 3\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated and supported by Figure 3\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "8a0cb497-803f-4ec3-b34c-3cc593744be3",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C54",
+      "claim": "Analogous experiments with random sequences (random pool of 84 nt strands) at equal concentration did not show agglomeration nor sedimentation.",
+      "claim_type": "EXPLICIT",
+      "source": "Analogous experiments with random sequences (random pool of 84 nt strands) at equal concentration did not show agglomeration nor sedimentation (Figure 3\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a control experiment, supported by Figure 3\u2014figure supplement 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "8a9bd4fb-bf2c-43d5-9940-a69fa38cdfa3",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C55",
+      "claim": "Similar hairpin molecules provided the shortest sequences capable of forming agglomerates in previous work.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously found that similar hairpin molecules provided the shortest sequences capable of forming agglomerates (Morasch et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "aa648935-ae09-4563-a8f3-0904f0071090",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C56",
+      "claim": "Agglomeration could serve as an efficient way to assemble matching hairpins from much less structured and selected sequences in an autonomous way.",
+      "claim_type": "EXPLICIT",
+      "source": "The above results suggest that agglomeration could serve as an efficient way to assemble matching hairpins from much less structured and selected sequences in an autonomous way.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "ddfbcd1f-07ec-49bb-a50e-35f8a9510bac",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C58",
+      "claim": "At 120 nM template concentration, 40% yield was achieved within 10 min at 45\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "At 120 nM template concentration, 40 % yield was achieved within 10 min (Figure 4b, black line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated and supported by Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "0fe1e32e-d1e3-4345-a3c4-bfe32de9426a",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C59",
+      "claim": "The untemplated, spontaneous reaction proceeded significantly slower (1.4% yield).",
+      "claim_type": "EXPLICIT",
+      "source": "The untemplated, spontaneous reaction proceeded significantly slower (1.4 % yield, light gray line).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a comparison to the templated reaction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "63224b2f-81da-4bd2-84e0-62219a013758",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C60",
+      "claim": "Assembly rates showed a strong dependence on incubation temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Assembly rates showed a strong dependence on incubation temperature (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated and supported by Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "f0c8549d-8651-45e3-b714-3ed8db74e7c0",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C61",
+      "claim": "At 39\u00b0C, the reaction proceeded significantly slower than at 42\u00b0C or 45\u00b0C because the hairpins are predominantly in closed configuration and cannot bind to neighboring molecules in the assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "At 39 \u00b0C, the reaction proceeded significantly slower than at 42 \u00b0C or 45 \u00b0C. This is because the hairpins are predominantly in closed configuration and cannot bind to neighboring molecules in the assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an explanation for the temperature dependence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "38dda8d7-a557-4381-9e82-eec96a6cffd6",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C62",
+      "claim": "Above the melting temperature of the information domain (48\u00b0C), template-directed assembly becomes slower.",
+      "claim_type": "EXPLICIT",
+      "source": "Above the melting temperature of the information domain (48 \u00b0C) (see Figure 4\u2014figure supplement 1), template-directed assembly becomes slower.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated and supported by Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "51eafd82-8dbd-457c-b710-6440baddfda6",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C64",
+      "claim": "The almost linear dependence of reaction velocity on initial template amount confirms the exponential nature of the replication.",
+      "claim_type": "EXPLICIT",
+      "source": "This confirms the exponential nature of the replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "6849bf1b-2bf5-4f99-86df-ba72db50fbf8",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C66",
+      "claim": "Amplification was robust with regard to the peak temperature of the oscillations for Tpeak below 74\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Amplification was robust with regard to the peak temperature of the oscillations. For Tpeak below 74 \u00b0C, the reaction remained almost unaffected (Figure 5c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated and supported by Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "ad9a1252-8f8f-4f7e-9447-111de1c846a9",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C67",
+      "claim": "Above 74\u00b0C, the temperature is too close to the melting transitions of the hairpin-hairpin duplexes, ranging from 76 to 79\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Above, the temperature is too close to the melting transitions of the hairpin-hairpin duplexes, ranging from 76 to 79 \u00b0C (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an explanation, supported by Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "2998a322-5d7d-4e34-a5fd-696c59cf1af4",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C68",
+      "claim": "The replicator withstood consecutive dilutions in serial transfer experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to withstand consecutive dilutions is characteristic for exponentially growing replicators and was tested for in serial transfer experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental test of exponential growth.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "49e77058-8944-44e7-8d58-6a34b5d2ee06",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C69",
+      "claim": "In serial transfer experiments, the cross-catalytic model was fitted to the data with the dilution factor as single free parameter, found to be 0.43.",
+      "claim_type": "EXPLICIT",
+      "source": "The cross-catalytic model was fitted to the data with the dilution factor as single free parameter, that was found to be 0.43.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of model fitting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "8adb7b1b-4d83-452e-8996-df264aa7166e",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C70",
+      "claim": "The difference from the theoretical dilution value of 0.50 was likely due to strands sticking to the reaction vessels before dilution.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference from the theoretical value of 0.50 was likely due to strands sticking to the reaction vessels before dilution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the discrepancy.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "4f8eb53e-e9c9-4e59-a963-a09246cf5a21",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C75",
+      "claim": "The fact that the full reaction produced almost no complexes 3:4 or 4:3 indicates that the incomplete product was indeed caused by the lack of a particular strand.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that the full reaction produced almost no complexes 3:4 or 4:3 indicates that the incomplete product was indeed caused by the lack of a particular strand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the comparison.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "104e2cbd-f19e-48d2-b8d3-2bd49d45e2ee",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C78",
+      "claim": "The observed rate of erroneous product formation can be attributed to the spontaneous background rate.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed rate of erroneous product formation can be attributed to the spontaneous background rate (Figure 4b,c, Figure 5a,b and Figure 6b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an interpretation, supported by multiple figures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "97fe2835-9267-4db5-a58e-d363ff46367e",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C79",
+      "claim": "The reduction in yield caused by a single defect to ~40% translates into a replication fidelity per information domain of ~60%.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduction in yield caused by a single defect (i.e. missing strand) to ~40 % (and to ~16 % for two defects) translates into a replication fidelity per information domain of ~60 %.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a calculation from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "97c04bcb-3058-4c16-9203-f4523194ca28",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C81",
+      "claim": "The replication fidelity is likely higher than the worst-case estimation due to binding competition.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this is a worst-case estimation, and the replication fidelity is likely higher due to binding competition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "6d0f12e6-1dc2-4eff-9bab-db1cffec5c0d",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C84",
+      "claim": "A per nucleotide replication process would need a replication fidelity of 85\u201390% to produce sequences with an error rate equivalent to the presented mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore estimate that a per nucleotide replication process would need a replication fidelity of 85\u201390 % to produce sequences with an error rate equivalent to the presented mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an estimate based on the analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "0ce986aa-6510-4052-bbb8-8e98f1c0bdd9",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C85",
+      "claim": "A cross-catalytic replicator can be made from short sequences and without covalent bonds under a simple non-equilibrium setting of periodic thermal oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "A cross-catalytic replicator can be made from short sequences and without covalent bonds under a simple non-equilibrium setting of periodic thermal oscillations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary conclusion of the work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "bb8bd9e6-5aa0-4b43-922f-54613f6f2fd1",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C86",
+      "claim": "The replication is fast and proceeds within a few thermal oscillations of 20 min each.",
+      "claim_type": "EXPLICIT",
+      "source": "The replication is fast and proceeds within a few thermal oscillations of 20 min each.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of the system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "bb57e91d-381c-4357-8058-2326da3accd8",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C87",
+      "claim": "This velocity is comparable to other replicators, cross-ligating ribozymes, or autocatalytic DNA networks.",
+      "claim_type": "EXPLICIT",
+      "source": "This velocity is comparable to other replicators (Kindermann et al., 2005), cross-ligating ribozymes (Robertson and Joyce, 2014), or autocatalytic DNA networks (Yin et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a comparison, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "dd1a6672-86e5-43d9-a7ed-958bcdbed957",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C88",
+      "claim": "The required thermal oscillations can be obtained by laminar convection in thermal gradients.",
+      "claim_type": "EXPLICIT",
+      "source": "The required thermal oscillations can be obtained by laminar convection in thermal gradients (Braun et al., 2003; Salditt et al., 2020), which also accumulates oligonucleotides (Mast et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "b68f7322-308b-4149-ae19-e76e434a006d",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C89",
+      "claim": "With the current state-of-the-art prebiotic chemistry regarding polymerization and ligation, the creation of >80 nt RNA is not yet understood.",
+      "claim_type": "EXPLICIT",
+      "source": "It should however be noted, that with the current state-of-the-art prebiotic chemistry regarding polymerization and ligation, the creation of >80 nt RNA is not yet understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of current knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "421afac8-9c33-4689-a8f8-0858a0439b1a",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C90",
+      "claim": "A slower prebiotic ligation chemistry could later fix the replication results over long timescales.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that a slower prebiotic ligation chemistry could later fix the replication results over long timescales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculation about how the mechanism could be extended.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "079f6096-4267-4671-9757-aab32db66f04",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C91",
+      "claim": "The overall replication fidelity is limited by the spontaneous bond formation rate between pairs of hairpin sequences, caused by the interaction of strands in free solution.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall replication fidelity is limited by the spontaneous bond formation rate between pairs of hairpin sequences, caused by the interaction of strands in free solution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "143c63da-bc66-4d60-bc51-1fea73ed4653",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C92",
+      "claim": "At lower concentrations, the spontaneous bond formation rate would decrease at the expense of an overall slower reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "At lower concentrations, as one would imagine in a prebiotic setting, this rate would decrease at the expense of an overall slower reaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a prediction based on the mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "1ed518e4-1f39-49c4-897e-54948927ca43",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C93",
+      "claim": "The replication mechanism is expected to also work with shorter strands, as long as the order of the melting temperatures of the information domain and the backbone duplexes is preserved.",
+      "claim_type": "EXPLICIT",
+      "source": "The replication mechanism is expected to also work with shorter strands, as long as the order of the melting temperatures of the information domain and the backbone duplexes is preserved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a prediction about the mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "26f51fb3-6550-421d-927d-1d30f599bda9",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C94",
+      "claim": "Smaller strands would be easier to produce by an upstream polymerization process, simply because they contain less nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "Smaller strands would also be easier to produce by an upstream polymerization process, simply because they contain less nucleotides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a logical inference.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "fe0b5dc0-4a52-40b1-a4c0-30e3b3ce8625",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C95",
+      "claim": "Binding of shorter information domain duplexes could discriminate even single base mismatches, resulting in an increased selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, binding of shorter information domain duplexes could discriminate even single base mismatches, resulting in an increased selectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a prediction.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "ff994d2a-3ece-4fff-b3bc-63927e24afd6",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C96",
+      "claim": "It has been suggested that tRNA arose from two proto-tRNA sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is worth noting that it has been suggested that tRNA arose from two proto-tRNA sequences (Hopfield, 1978).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "c198bbc8-a162-4b0f-a2f3-b8703b6ae94f",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C97",
+      "claim": "Pre-selection of nucleic acids for the presented hairpin-driven replication mechanism can be provided by highly sequence-specific gelation of DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Pre-selection of nucleic acids for the presented hairpin-driven replication mechanism can be provided by highly sequence-specific gelation of DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "7aeefcd3-ddb9-4edd-8aed-420e30d99a6d",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C98",
+      "claim": "DNA gel formation has been shown to be most efficient with double hairpin structures very similar to the tRNA-like sequences used in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "This gel formation has been shown to be most efficient with double hairpin structures very similar to the tRNA-like sequences used in this study (Morasch et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "bb491f14-8a41-402d-a03f-8f07b28e649a",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C99",
+      "claim": "The spontaneous formation of agglomerates and sedimentation under gravity if all molecules of the assembly are present shows a possible pathway how the system can emerge from random or semi-random sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "For our replication system, we have demonstrated this in Figure 3 by showing the spontaneous formation of agglomerates and sedimentation under gravity if all molecules of the assembly are present. This self-selection shows a possible pathway how the system can emerge from random or semi-random sequences, for example in a flow or a convection system where the molecules are selected as macroscopic agglomerate (Mast et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an interpretation, supported by Figure 3 and a citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "1af448ba-90bf-4ae1-ba0e-d290cf9eabb3",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C100",
+      "claim": "Another selection pressure could stem from the biased hydrolysis of double-stranded nucleotide backbones, which favors assembled complexes over the initial hairpins.",
+      "claim_type": "EXPLICIT",
+      "source": "Another selection pressure could stem from the biased hydrolysis of double-stranded nucleotide backbones, which favors assembled complexes over the initial hairpins (Obermayer et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculation, supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "5772bb53-33c4-498b-aba7-67aca49997ca",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C101",
+      "claim": "The replication mechanism could serve as a mutable assembly strategy for larger functional RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "The replication mechanism could serve as a mutable assembly strategy for larger functional RNAs (Mutschler et al., 2015; Vaidya et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculation, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "62414541-6303-4be2-866a-db692ed96218",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C102",
+      "claim": "The proposed replication mechanism of assemblies from tRNA-like sequences allows speculation about a transition from autonomous replication of successions of information domains to the translation of codon sequences encoded in modern mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The proposed replication mechanism of assemblies from tRNA-like sequences allows to speculate about a transition from an autonomous replication of successions of information domains to the translation of codon sequences encoded in modern mRNA (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as speculation, supported by Figure 1a.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "301e4bb7-eab1-44da-85c8-729a6d3d84df",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C103",
+      "claim": "Short peptide-RNA hybrids, combined with specific interactions between 3'-terminal amino acids and the anticodons, could have given rise to a primitive genetic code.",
+      "claim_type": "EXPLICIT",
+      "source": "Short peptide-RNA hybrids (Griesser et al., 2017; Jauker et al., 2015), combined with specific interactions between 3'-terminal amino acids and the anticodons, could have given rise to a primitive genetic code.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as speculation, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "9c057c2d-2d9c-44e1-8d63-eac9875f83da",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C104",
+      "claim": "The spatial arrangement of tRNA-like sequences that are replicated by the presented mechanism would translate into a spatial arrangement of the amino acid or short peptide tails that are attached to the strands in a codon-encoded manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The spatial arrangement of tRNA-like sequences that are replicated by the presented mechanism would translate into a spatial arrangement of the amino acid or short peptide tails that are attached to the strands in a codon-encoded manner (Schimmel and Henderson, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as speculation, supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "de0cfe10-df15-42f0-aeba-c85881f947b8",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C105",
+      "claim": "The mechanism proposes a hypothesis for the emergence of predecessors of tRNA, independent of protein translation.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism thus proposes a hypothesis for the emergence of predecessors of tRNA, independent of protein translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a hypothesis based on the work.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "a6fb0b62-4dff-4ac3-b38c-2707ac803658",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C106",
+      "claim": "This hypothesis is crucial for models of the evolution of translation, because it could justify the existence of tRNA before it was utilized in an early translation process.",
+      "claim_type": "EXPLICIT",
+      "source": "This is crucial for models of the evolution of translation, because it could justify the existence of tRNA before it was utilized in an early translation process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the significance of the hypothesis.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "88e878b2-cd6c-4097-bb9a-24dc2db431c4",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C107",
+      "claim": "Replication and translation could have, at an early stage, emerged along a common evolutionary trajectory.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, replication and translation could have, at an early stage, emerged along a common evolutionary trajectory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculative conclusion.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "77d75c7f-11db-44ab-becf-4fd6cb591522",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "claim_id": "C108",
+      "claim": "The demonstrated mechanism could jumpstart a non-enzymatic replication chemistry, which was most likely restricted in fidelity due to working on a nucleotide-by-nucleotide basis.",
+      "claim_type": "EXPLICIT",
+      "source": "The demonstrated mechanism could therefore jumpstart a non-enzymatic replication chemistry, which was most likely restricted in fidelity due to working on a nucleotide-by-nucleotide basis (Robertson and Joyce, 2012; Szathm\u00e1ry, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as speculation, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "661ac660-8c37-4c9d-b77a-ee0876873510",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors designed and implemented a replication system using tRNA-like DNA double-hairpin sequences (82-84 nt) that spontaneously form molecular assemblies and replicate information autonomously through reversible hybridization driven by thermal oscillations, without requiring covalent bond formation or catalytically active sequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C15-18, C26-28, C30, and C32 collectively describe the core experimental design and mechanism. The sequences are well-characterized (C26-28), structurally validated for both DNA and RNA (C32), and the mechanism is clearly defined as relying solely on reversible hybridization without ligation (C17-18). The experimental implementation is explicitly stated (C30).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "2072fc1c-3965-451d-a27f-b4dd622c2d4c",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The replication mechanism operates through a four-step thermal cycle: (0) fast cooling activates hairpins into closed state, (1) complementary strands bind to template at base temperature, (2) thermal fluctuations enable hairpin opening and adjacent strand binding, (3) heating separates replicate from template while maintaining backbone stability, enabling cross-catalytic replication with minimal background formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-39 provide a detailed mechanistic description supported by experimental observations. The four-step cycle is clearly articulated (C33-36), the cross-catalytic nature is explained (C37), and the kinetic discrimination between templated (minutes) and untemplated (hours) reactions is quantified (C38-39), providing strong mechanistic support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "441dd4db-e3a1-4b18-b3ce-48cbd0370684",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Native PAGE analysis confirmed that double hairpins assembled as designed, with friction coefficients 1.6-2.4-fold higher than linear dsDNA consistent with branched structure, and the instability of single information domain bonds during electrophoresis enabled differentiation of fully assembled complexes from partial assemblies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-49 describe structural validation through PAGE. The assembly is confirmed (C44-45), friction coefficients are quantified and interpreted (C46-47), and the electrophoretic behavior provides a useful analytical tool (C48-49). Figure 2 and supplements provide clear visual support for these observations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "c3d1f812-1e75-4565-b2b7-32b4d3ec0e24",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The pool of cross-complementary hairpins self-selected through sequence-specific agglomeration and sedimentation under gravity when all eight matching sequences were present, but not with seven sequences or random controls, demonstrating a potential autonomous pathway for system emergence from semi-random sequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C20, C50-54, C56, C97-99 describe the self-selection mechanism. The experimental observations are clear (C50-54), controls are appropriate (C52, C54), concentration dependence is documented (C53), and the interpretation as a selection mechanism is reasonable (C56, C99). Figure 3 provides strong visual evidence. The connection to prior work (C98) strengthens the claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "93d3f63b-bdaa-4012-adc4-8b0e6e9f22a0",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Template-directed assembly kinetics at 45\u00b0C achieved 40% yield in 10 minutes at 120 nM template, significantly faster than untemplated reaction (1.4% yield), with strong temperature dependence explained by hairpin opening dynamics and information domain melting temperatures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-62 describe templating kinetics with specific quantitative data (C58-59), temperature dependence (C60), and mechanistic explanations (C61-62). Figure 4b,c provides clear supporting data. The mechanistic interpretations are consistent with the melting temperature data shown in Figure 4\u2014figure supplement 1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "83673270-da6a-4fff-9ccf-e044b97f74a7",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Thermal oscillations drove exponential, cross-catalytic replication that was fast (few 20-min cycles), robust to peak temperatures below 74\u00b0C, withstood serial dilutions, and showed velocity comparable to other replicators, with linear dependence of reaction velocity on template concentration confirming exponential growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C42, C64, C66-70, C85-87 describe exponential amplification with multiple lines of evidence: linear template dependence (C64), temperature robustness (C66-67), serial transfer experiments (C68-70), and comparative velocity (C87). Figure 5 provides comprehensive supporting data. The cross-catalytic model fitting (C69-70) provides quantitative validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "48c15f86-5c92-4053-ada3-691b11be39f4",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The replicator encoded and replicated binary sequences with ~60% fidelity per information domain, corresponding to 85-90% per nucleotide fidelity, with ~10% unspecific amplification without template (significantly improved from >50% in prior work), and error rates attributable to spontaneous background formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C42-43, C75, C78-79, C81, C84 describe replication fidelity with quantitative measurements. The per-domain fidelity is calculated from defect experiments (C79), the conversion to per-nucleotide fidelity is justified (C84), background rates are characterized (C43, C78), and improvement over prior work is documented (C42-43). Figure 6 provides supporting data, though the per-nucleotide conversion involves assumptions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "424cc90c-f21a-4df4-bcd0-85f34102c15c",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The overall replication fidelity is limited by spontaneous bond formation between hairpin pairs in free solution, which would decrease at lower concentrations at the expense of slower overall reaction rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-92 identify the key limitation and predict concentration effects. This is consistent with the kinetic data showing untemplated background formation (C39, C59, C78) and represents a reasonable mechanistic interpretation of the fidelity limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "fc4ce870-eee1-46e4-9eea-a514cb40076e",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The mechanism is expected to work equally well for DNA and RNA, with RNA potentially surviving days to weeks under the experimental conditions, and shorter strands predicted to function if melting temperature order is preserved, potentially with improved selectivity and easier prebiotic synthesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C29, C31, C93-95 make predictions about system variants. While C29 is reasonable given the hybridization-based mechanism, and C31 is supported by citations, these remain predictions. C32 provides some support for RNA equivalence, but actual RNA replication experiments are not shown. The predictions about shorter strands (C93-95) are logical but untested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "af2ea528-b0df-4b52-892b-e44186300950",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors propose that early forms of tRNA could have been involved in molecular replication before translation, potentially linking the evolution of replication and translation along a common evolutionary trajectory through spatial arrangement of amino acid-bearing tRNA-like sequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C6-7, C102-107 present evolutionary hypotheses. While the experimental demonstration of tRNA-like sequence replication is solid, the evolutionary implications are speculative (all claims marked as SPECULATION or INFERENCE). The hypothesis is interesting and the experimental work provides a proof-of-concept, but direct evidence for evolutionary relevance is lacking.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "577f7eac-959e-4b45-9f92-a514acc0ff52",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The basic replication principle was previously explored by Krammer et al. using four hairpins (36 nt) that amplified into dimers but could not encode information and suffered from >50% unspecific amplification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-41 accurately describe prior work with appropriate citations. This provides important context for evaluating the improvements in the current study (C42-43).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "b7558eaf-0271-41b8-8254-8a8bede48046",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The required thermal oscillations can be obtained through natural convection in thermal gradients, though prebiotic synthesis of >80 nt RNA remains unclear; the mechanism could potentially be supplemented by slower ligation chemistry or serve as a mutable assembly strategy for larger functional RNAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C88-90, C100-101, C108 discuss prebiotic plausibility and extensions. C88 is well-supported by citations, but C89 acknowledges a major limitation. C90, C100-101, and C108 are speculative extensions (marked as SPECULATION). These represent interesting future directions but lack experimental validation in the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    },
+    {
+      "id": "cf185a28-b49a-429a-be3e-ea9ecdb914e0",
+      "content_id": "fb639253-025f-4212-8553-7338d8f2bc98",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The manuscript provides appropriate background on modern replication machinery, the RNA world hypothesis, ribozyme capabilities, and prior approaches to strand separation and replication, establishing context for the current work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-14, C21-25, C55, C96 provide background knowledge and citations to prior work. These are appropriately referenced and provide necessary context. The citations appear accurate based on the stated content.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:43:18.622398Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8f4543f0-de62-48e8-81dd-37e7b43f287f",
+      "result_id": "661ac660-8c37-4c9d-b77a-ee0876873510"
+    },
+    {
+      "claim_id": "17578b17-b065-47b4-b596-285ceea24266",
+      "result_id": "661ac660-8c37-4c9d-b77a-ee0876873510"
+    },
+    {
+      "claim_id": "9e332725-a39c-467c-98ff-a7b3562884b8",
+      "result_id": "661ac660-8c37-4c9d-b77a-ee0876873510"
+    },
+    {
+      "claim_id": "d76a4baf-9ee3-4876-8350-bb4ec41f32d2",
+      "result_id": "661ac660-8c37-4c9d-b77a-ee0876873510"
+    },
+    {
+      "claim_id": "a08a5bf7-6bfb-4de6-82c0-aa59144b396d",
+      "result_id": "661ac660-8c37-4c9d-b77a-ee0876873510"
+    },
+    {
+      "claim_id": "b7c4679f-647e-411b-a1f2-249e2cc3ed14",
+      "result_id": "661ac660-8c37-4c9d-b77a-ee0876873510"
+    },
+    {
+      "claim_id": "517fccdb-ad32-48b7-a522-8fb5fbc8ae80",
+      "result_id": "661ac660-8c37-4c9d-b77a-ee0876873510"
+    },
+    {
+      "claim_id": "71ee9433-cb97-4c68-a2ed-ffb2917ebeb9",
+      "result_id": "661ac660-8c37-4c9d-b77a-ee0876873510"
+    },
+    {
+      "claim_id": "47cf4056-66a1-4a14-9c7e-376e30c617d3",
+      "result_id": "661ac660-8c37-4c9d-b77a-ee0876873510"
+    },
+    {
+      "claim_id": "eaa04236-76d9-4e1f-a0d7-bb3b6d4b0a95",
+      "result_id": "661ac660-8c37-4c9d-b77a-ee0876873510"
+    },
+    {
+      "claim_id": "9c6458b2-bf91-412e-81b4-fe08d3a79939",
+      "result_id": "2072fc1c-3965-451d-a27f-b4dd622c2d4c"
+    },
+    {
+      "claim_id": "84feec73-ce27-43dd-b797-33edcbbaef0e",
+      "result_id": "2072fc1c-3965-451d-a27f-b4dd622c2d4c"
+    },
+    {
+      "claim_id": "a63046f5-f948-4c40-ae23-3bfe93114a90",
+      "result_id": "2072fc1c-3965-451d-a27f-b4dd622c2d4c"
+    },
+    {
+      "claim_id": "29a6712c-e014-471b-8d52-51a218f85ce3",
+      "result_id": "2072fc1c-3965-451d-a27f-b4dd622c2d4c"
+    },
+    {
+      "claim_id": "86c8ddbe-bdf0-44cf-aef4-d55e3caceb54",
+      "result_id": "2072fc1c-3965-451d-a27f-b4dd622c2d4c"
+    },
+    {
+      "claim_id": "cbd22837-39aa-44c5-a848-8246a636485d",
+      "result_id": "2072fc1c-3965-451d-a27f-b4dd622c2d4c"
+    },
+    {
+      "claim_id": "533941e0-22fa-4f97-b6b7-2cce2c3e83c0",
+      "result_id": "2072fc1c-3965-451d-a27f-b4dd622c2d4c"
+    },
+    {
+      "claim_id": "f6be42a2-c861-4c11-a7df-fc71fabaa7c0",
+      "result_id": "441dd4db-e3a1-4b18-b3ce-48cbd0370684"
+    },
+    {
+      "claim_id": "f810eb94-06d1-4101-8f77-52d167903c66",
+      "result_id": "441dd4db-e3a1-4b18-b3ce-48cbd0370684"
+    },
+    {
+      "claim_id": "2ec17e00-5d65-4350-86d1-745e88f3a933",
+      "result_id": "441dd4db-e3a1-4b18-b3ce-48cbd0370684"
+    },
+    {
+      "claim_id": "ae931d48-6499-44f0-ad70-555ce9c28782",
+      "result_id": "441dd4db-e3a1-4b18-b3ce-48cbd0370684"
+    },
+    {
+      "claim_id": "5abdc147-169f-4c0b-bb39-551bce4d50df",
+      "result_id": "441dd4db-e3a1-4b18-b3ce-48cbd0370684"
+    },
+    {
+      "claim_id": "d0248890-98b0-4c9a-a735-f56a151b38a7",
+      "result_id": "441dd4db-e3a1-4b18-b3ce-48cbd0370684"
+    },
+    {
+      "claim_id": "851a2438-b123-4b90-b3b8-dfa2a6ff8e8b",
+      "result_id": "c3d1f812-1e75-4565-b2b7-32b4d3ec0e24"
+    },
+    {
+      "claim_id": "96dd2a57-f4a8-44f6-a5f9-ce179a830269",
+      "result_id": "c3d1f812-1e75-4565-b2b7-32b4d3ec0e24"
+    },
+    {
+      "claim_id": "d56f7691-5aa0-49f3-8263-656574461773",
+      "result_id": "c3d1f812-1e75-4565-b2b7-32b4d3ec0e24"
+    },
+    {
+      "claim_id": "5c81ff18-4d67-49bc-af72-4e93e3771221",
+      "result_id": "c3d1f812-1e75-4565-b2b7-32b4d3ec0e24"
+    },
+    {
+      "claim_id": "4c1378e5-fe73-49eb-84dc-5dd4cb22c7ae",
+      "result_id": "c3d1f812-1e75-4565-b2b7-32b4d3ec0e24"
+    },
+    {
+      "claim_id": "c5bb6fe0-6ffd-4c92-9352-758936ea345b",
+      "result_id": "c3d1f812-1e75-4565-b2b7-32b4d3ec0e24"
+    },
+    {
+      "claim_id": "8a0cb497-803f-4ec3-b34c-3cc593744be3",
+      "result_id": "c3d1f812-1e75-4565-b2b7-32b4d3ec0e24"
+    },
+    {
+      "claim_id": "aa648935-ae09-4563-a8f3-0904f0071090",
+      "result_id": "c3d1f812-1e75-4565-b2b7-32b4d3ec0e24"
+    },
+    {
+      "claim_id": "c198bbc8-a162-4b0f-a2f3-b8703b6ae94f",
+      "result_id": "c3d1f812-1e75-4565-b2b7-32b4d3ec0e24"
+    },
+    {
+      "claim_id": "7aeefcd3-ddb9-4edd-8aed-420e30d99a6d",
+      "result_id": "c3d1f812-1e75-4565-b2b7-32b4d3ec0e24"
+    },
+    {
+      "claim_id": "bb491f14-8a41-402d-a03f-8f07b28e649a",
+      "result_id": "c3d1f812-1e75-4565-b2b7-32b4d3ec0e24"
+    },
+    {
+      "claim_id": "ddfbcd1f-07ec-49bb-a50e-35f8a9510bac",
+      "result_id": "93d3f63b-bdaa-4012-adc4-8b0e6e9f22a0"
+    },
+    {
+      "claim_id": "0fe1e32e-d1e3-4345-a3c4-bfe32de9426a",
+      "result_id": "93d3f63b-bdaa-4012-adc4-8b0e6e9f22a0"
+    },
+    {
+      "claim_id": "63224b2f-81da-4bd2-84e0-62219a013758",
+      "result_id": "93d3f63b-bdaa-4012-adc4-8b0e6e9f22a0"
+    },
+    {
+      "claim_id": "f0c8549d-8651-45e3-b714-3ed8db74e7c0",
+      "result_id": "93d3f63b-bdaa-4012-adc4-8b0e6e9f22a0"
+    },
+    {
+      "claim_id": "38dda8d7-a557-4381-9e82-eec96a6cffd6",
+      "result_id": "93d3f63b-bdaa-4012-adc4-8b0e6e9f22a0"
+    },
+    {
+      "claim_id": "2df2e7ba-6aa9-4ca1-a03b-2fb05eb5645e",
+      "result_id": "83673270-da6a-4fff-9ccf-e044b97f74a7"
+    },
+    {
+      "claim_id": "8c684eae-c03d-4ba2-a093-b062ca712496",
+      "result_id": "83673270-da6a-4fff-9ccf-e044b97f74a7"
+    },
+    {
+      "claim_id": "51eafd82-8dbd-457c-b710-6440baddfda6",
+      "result_id": "83673270-da6a-4fff-9ccf-e044b97f74a7"
+    },
+    {
+      "claim_id": "6849bf1b-2bf5-4f99-86df-ba72db50fbf8",
+      "result_id": "83673270-da6a-4fff-9ccf-e044b97f74a7"
+    },
+    {
+      "claim_id": "ad9a1252-8f8f-4f7e-9447-111de1c846a9",
+      "result_id": "83673270-da6a-4fff-9ccf-e044b97f74a7"
+    },
+    {
+      "claim_id": "2998a322-5d7d-4e34-a5fd-696c59cf1af4",
+      "result_id": "83673270-da6a-4fff-9ccf-e044b97f74a7"
+    },
+    {
+      "claim_id": "49e77058-8944-44e7-8d58-6a34b5d2ee06",
+      "result_id": "83673270-da6a-4fff-9ccf-e044b97f74a7"
+    },
+    {
+      "claim_id": "8adb7b1b-4d83-452e-8996-df264aa7166e",
+      "result_id": "83673270-da6a-4fff-9ccf-e044b97f74a7"
+    },
+    {
+      "claim_id": "0ce986aa-6510-4052-bbb8-8e98f1c0bdd9",
+      "result_id": "83673270-da6a-4fff-9ccf-e044b97f74a7"
+    },
+    {
+      "claim_id": "bb8bd9e6-5aa0-4b43-922f-54613f6f2fd1",
+      "result_id": "83673270-da6a-4fff-9ccf-e044b97f74a7"
+    },
+    {
+      "claim_id": "bb57e91d-381c-4357-8058-2326da3accd8",
+      "result_id": "83673270-da6a-4fff-9ccf-e044b97f74a7"
+    },
+    {
+      "claim_id": "0aee33f6-cc8b-4265-80d6-8e203103f6e5",
+      "result_id": "48c15f86-5c92-4053-ada3-691b11be39f4"
+    },
+    {
+      "claim_id": "8c684eae-c03d-4ba2-a093-b062ca712496",
+      "result_id": "48c15f86-5c92-4053-ada3-691b11be39f4"
+    },
+    {
+      "claim_id": "b50bc13d-f2e0-4b26-b11d-91b1961a56c8",
+      "result_id": "48c15f86-5c92-4053-ada3-691b11be39f4"
+    },
+    {
+      "claim_id": "4f8eb53e-e9c9-4e59-a963-a09246cf5a21",
+      "result_id": "48c15f86-5c92-4053-ada3-691b11be39f4"
+    },
+    {
+      "claim_id": "104e2cbd-f19e-48d2-b8d3-2bd49d45e2ee",
+      "result_id": "48c15f86-5c92-4053-ada3-691b11be39f4"
+    },
+    {
+      "claim_id": "97fe2835-9267-4db5-a58e-d363ff46367e",
+      "result_id": "48c15f86-5c92-4053-ada3-691b11be39f4"
+    },
+    {
+      "claim_id": "97c04bcb-3058-4c16-9203-f4523194ca28",
+      "result_id": "48c15f86-5c92-4053-ada3-691b11be39f4"
+    },
+    {
+      "claim_id": "6d0f12e6-1dc2-4eff-9bab-db1cffec5c0d",
+      "result_id": "48c15f86-5c92-4053-ada3-691b11be39f4"
+    },
+    {
+      "claim_id": "079f6096-4267-4671-9757-aab32db66f04",
+      "result_id": "424cc90c-f21a-4df4-bcd0-85f34102c15c"
+    },
+    {
+      "claim_id": "143c63da-bc66-4d60-bc51-1fea73ed4653",
+      "result_id": "424cc90c-f21a-4df4-bcd0-85f34102c15c"
+    },
+    {
+      "claim_id": "6897923c-37b6-4228-adf2-869bd4479d48",
+      "result_id": "fc4ce870-eee1-46e4-9eea-a514cb40076e"
+    },
+    {
+      "claim_id": "d7a0acb1-6968-46ec-8e36-8691ab62ff0e",
+      "result_id": "fc4ce870-eee1-46e4-9eea-a514cb40076e"
+    },
+    {
+      "claim_id": "1ed518e4-1f39-49c4-897e-54948927ca43",
+      "result_id": "fc4ce870-eee1-46e4-9eea-a514cb40076e"
+    },
+    {
+      "claim_id": "26f51fb3-6550-421d-927d-1d30f599bda9",
+      "result_id": "fc4ce870-eee1-46e4-9eea-a514cb40076e"
+    },
+    {
+      "claim_id": "fe0b5dc0-4a52-40b1-a4c0-30e3b3ce8625",
+      "result_id": "fc4ce870-eee1-46e4-9eea-a514cb40076e"
+    },
+    {
+      "claim_id": "6ae73153-506c-42b5-a7bb-4f6e9acacc95",
+      "result_id": "af2ea528-b0df-4b52-892b-e44186300950"
+    },
+    {
+      "claim_id": "40624ce5-4784-4531-9af0-3909ae73d690",
+      "result_id": "af2ea528-b0df-4b52-892b-e44186300950"
+    },
+    {
+      "claim_id": "62414541-6303-4be2-866a-db692ed96218",
+      "result_id": "af2ea528-b0df-4b52-892b-e44186300950"
+    },
+    {
+      "claim_id": "301e4bb7-eab1-44da-85c8-729a6d3d84df",
+      "result_id": "af2ea528-b0df-4b52-892b-e44186300950"
+    },
+    {
+      "claim_id": "9c057c2d-2d9c-44e1-8d63-eac9875f83da",
+      "result_id": "af2ea528-b0df-4b52-892b-e44186300950"
+    },
+    {
+      "claim_id": "de0cfe10-df15-42f0-aeba-c85881f947b8",
+      "result_id": "af2ea528-b0df-4b52-892b-e44186300950"
+    },
+    {
+      "claim_id": "a6fb0b62-4dff-4ac3-b38c-2707ac803658",
+      "result_id": "af2ea528-b0df-4b52-892b-e44186300950"
+    },
+    {
+      "claim_id": "88e878b2-cd6c-4097-bb9a-24dc2db431c4",
+      "result_id": "af2ea528-b0df-4b52-892b-e44186300950"
+    },
+    {
+      "claim_id": "0bc5f0d8-2a25-4b99-bdbf-7e10e208b10e",
+      "result_id": "577f7eac-959e-4b45-9f92-a514acc0ff52"
+    },
+    {
+      "claim_id": "15064bb8-77f2-4cb3-9db5-e6a9ea629630",
+      "result_id": "577f7eac-959e-4b45-9f92-a514acc0ff52"
+    },
+    {
+      "claim_id": "dd1a6672-86e5-43d9-a7ed-958bcdbed957",
+      "result_id": "b7558eaf-0271-41b8-8254-8a8bede48046"
+    },
+    {
+      "claim_id": "b68f7322-308b-4149-ae19-e76e434a006d",
+      "result_id": "b7558eaf-0271-41b8-8254-8a8bede48046"
+    },
+    {
+      "claim_id": "421afac8-9c33-4689-a8f8-0858a0439b1a",
+      "result_id": "b7558eaf-0271-41b8-8254-8a8bede48046"
+    },
+    {
+      "claim_id": "1af448ba-90bf-4ae1-ba0e-d290cf9eabb3",
+      "result_id": "b7558eaf-0271-41b8-8254-8a8bede48046"
+    },
+    {
+      "claim_id": "5772bb53-33c4-498b-aba7-67aca49997ca",
+      "result_id": "b7558eaf-0271-41b8-8254-8a8bede48046"
+    },
+    {
+      "claim_id": "77d75c7f-11db-44ab-becf-4fd6cb591522",
+      "result_id": "b7558eaf-0271-41b8-8254-8a8bede48046"
+    },
+    {
+      "claim_id": "af720dcb-b4df-401e-bffd-e3ee850a99c8",
+      "result_id": "cf185a28-b49a-429a-be3e-ea9ecdb914e0"
+    },
+    {
+      "claim_id": "4bc52706-5df0-4493-9a8b-26f8e4de8e38",
+      "result_id": "cf185a28-b49a-429a-be3e-ea9ecdb914e0"
+    },
+    {
+      "claim_id": "4edd9586-8ad8-42b6-b8b8-8742400ad4da",
+      "result_id": "cf185a28-b49a-429a-be3e-ea9ecdb914e0"
+    },
+    {
+      "claim_id": "6ca020cd-060b-46f5-80a9-1af1dc57544c",
+      "result_id": "cf185a28-b49a-429a-be3e-ea9ecdb914e0"
+    },
+    {
+      "claim_id": "bf426893-f70c-4d32-8be1-f6bec1228db8",
+      "result_id": "cf185a28-b49a-429a-be3e-ea9ecdb914e0"
+    },
+    {
+      "claim_id": "d2ae2694-68a8-48d5-822a-7bbf6c762164",
+      "result_id": "cf185a28-b49a-429a-be3e-ea9ecdb914e0"
+    },
+    {
+      "claim_id": "958ec58f-b7b8-46aa-8566-0bc2d3bf6f66",
+      "result_id": "cf185a28-b49a-429a-be3e-ea9ecdb914e0"
+    },
+    {
+      "claim_id": "96a5c478-612b-406e-b618-c356f97c6c0b",
+      "result_id": "cf185a28-b49a-429a-be3e-ea9ecdb914e0"
+    },
+    {
+      "claim_id": "82d72e4d-f6cf-4f25-9c73-70d4b7d0a9c3",
+      "result_id": "cf185a28-b49a-429a-be3e-ea9ecdb914e0"
+    },
+    {
+      "claim_id": "bce916cc-00de-44b5-8f84-ee043cf6327b",
+      "result_id": "cf185a28-b49a-429a-be3e-ea9ecdb914e0"
+    },
+    {
+      "claim_id": "497ce3e5-a374-444e-b366-837d2d11c9e1",
+      "result_id": "cf185a28-b49a-429a-be3e-ea9ecdb914e0"
+    },
+    {
+      "claim_id": "b115e223-8798-4f38-baa7-4610c0bfe603",
+      "result_id": "cf185a28-b49a-429a-be3e-ea9ecdb914e0"
+    },
+    {
+      "claim_id": "8a9bd4fb-bf2c-43d5-9940-a69fa38cdfa3",
+      "result_id": "cf185a28-b49a-429a-be3e-ea9ecdb914e0"
+    },
+    {
+      "claim_id": "ff994d2a-3ece-4fff-b3bc-63927e24afd6",
+      "result_id": "cf185a28-b49a-429a-be3e-ea9ecdb914e0"
+    }
+  ],
+  "comparisons": []
+}

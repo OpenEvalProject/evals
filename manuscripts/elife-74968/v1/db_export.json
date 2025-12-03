@@ -1,0 +1,1623 @@
+{
+  "submission": {
+    "id": "07a09d61-934f-4055-a0bd-bce2f3d94908",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T14:11:15.845914Z",
+    "updated_at": "2025-12-03T14:11:15.845914Z"
+  },
+  "content": [
+    {
+      "id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "submission_id": "07a09d61-934f-4055-a0bd-bce2f3d94908",
+      "content_type": "manuscript",
+      "content_text": "# Intact Drosophila central nervous system cellular quantitation reveals sexual dimorphism\n\n## Authors\n\n- Wei Jiao<sup>1</sup> ([ORCID: 0000-0003-1536-5937](https://orcid.org/0000-0003-1536-5937))\n- Gard Spreemann<sup>1</sup>\n- Evelyne Ruchti<sup>1</sup>\n- Soumya Banerjee<sup>1</sup>\n- Samuel Vernon<sup>1</sup>\n- Ying Shi<sup>1</sup>\n- R Steven Stowers<sup>2</sup>\n- Kathryn Hess<sup>1</sup>\n- Brian D McCabe<sup>1</sup> ([ORCID: 0000-0003-1620-0501](https://orcid.org/0000-0003-1620-0501)) \u2020\n\n### Affiliations\n\n1. Brain Mind Institute, EPFL - Swiss Federal Institute of Technology Lausanne Switzerland ([ROR:02s376052](https://ror.org/02s376052))\n2. Department of Microbiology and Cell Biology, Montana State University Bozeman United States ([ROR:02w0trx84](https://ror.org/02w0trx84))\n\n\u2020 Corresponding author\n\n## Abstract\n\nEstablishing with precision the quantity and identity of the cell types of the brain is a prerequisite for a detailed compendium of gene and protein expression in the central nervous system (CNS). Currently, however, strict quantitation of cell numbers has been achieved only for the nervous system of Caenorhabditis elegans. Here, we describe the development of a synergistic pipeline of molecular genetic, imaging, and computational technologies designed to allow high-throughput, precise quantitation with cellular resolution of reporters of gene expression in intact whole tissues with complex cellular constitutions such as the brain. We have deployed the approach to determine with exactitude the number of functional neurons and glia in the entire intact larval Drosophila CNS, revealing fewer neurons and more glial cells than previously predicted. We also discover an unexpected divergence between the sexes at this juvenile developmental stage, with the female CNS having significantly more neurons than that of males. Topological analysis of our data establishes that this sexual dimorphism extends to deeper features of CNS organisation. We additionally extended our analysis to quantitate the expression of voltage-gated potassium channel family genes throughout the CNS and uncover substantial differences in abundance. Our methodology enables robust and accurate quantification of the number and positioning of cells within intact organs, facilitating sophisticated analysis of cellular identity, diversity, and gene expression characteristics.\n\n## Introduction\n\nEstablishing the precise number of cells in the brain is essential to create organ-wide catalogues of cell types and their gene expression (Lent et al., 2012; Devor et al., 2013). However, apart from the nervous system of the nematode Caenorhabditis elegans (302 neurons, 56 glia) (White et al., 1986), the exact numbers of cells within the central nervous system (CNS) of model organisms or that of humans is currently unknown, with estimates, including those based on extrapolation from direct quantification of brain sub-regions, varying widely (Silbereis et al., 2016; Keller et al., 2018; von Bartheld et al., 2016).\n\nStudies of the CNS of Drosophila melanogaster, which in scale and behavioural repertoire has been viewed as intermediate between nematodes and rodents (Bellen et al., 2010; Alivisatos et al., 2012), currently include large-scale efforts to establish both a neuronal connectome and a cell atlas (Scheffer and Meinertzhagen, 2019; Allen et al., 2020; Li et al., 2022). Nonetheless, the precise number of cells (neurons or glia) in either the smaller larval or larger adult Drosophila CNS, comprised of both a brain and ventral nerve cord (VNC), remain unknown, though several approximations have been suggested. For the larval CNS, a range of 10,000\u201315,000 active neurons has been proposed (Scott et al., 2001; Meinertzhagen, 2018; Eschbach and Zlatic, 2020) across developmental time points. For adult Drosophila, approximations have been suggested in the range of 100,000\u2013199,000 neurons in the brain (Simpson, 2009; Chiang et al., 2011; Kaiser, 2015; Scheffer and Meinertzhagen, 2019; Raji and Potter, 2021) together with a range of 10,000\u201320,000 cells in the VNC (Birkholz et al., 2015; Lacin et al., 2019; Bates et al., 2019; Allen et al., 2020). The other major CNS cell type, glia, has been estimated to be approximately 10% of the number of neurons (Kremer et al., 2017; Meinertzhagen, 2018; Raji and Potter, 2021). Given the large diversity of these estimates, precise quantification of the numbers of Drosophila neurons and glia would seem a desirable goal, beginning with the smaller larval CNS, which enables the wide compendium of larval Drosophila behaviours (Gerber et al., 2009; Neckameyer and Bhatt, 2016; Eschbach and Zlatic, 2020; Louis, 2020; Gowda et al., 2021).\n\nComplicating the aspiration to quantitate the Drosophila larval CNS, in addition to the general problem of separating and quantifying primary cell types such as neurons and glia, are two specific confounding factors that limit simple total cell quantification approaches. First, encompassed within and surrounding the larval CNS are dividing neuroblasts, which will give rise to adult neurons (Doe, 2017). Relatedly, imbedded within the larval CNS are substantial numbers of immature adult neurons, observed from electron micrograph reconstructions as having few or no dendrites and axons that terminate in filopodia lacking synapses (Eichler et al., 2017). These immature neurons are unlikely to contribute to larval CNS function and are generally excluded when considering larval neuronal circuit architecture (Eichler et al., 2017; Scheffer and Meinertzhagen, 2019). It has been suggested that only a small fraction of the total number of larval CNS cells may actually contribute to CNS function (Ravenscroft et al., 2020).\n\nHere, we have sought to develop a synergistic molecular genetic, imaging, and computational pipeline designed de novo to allow automated neuron, glia, or other gene expression features to be precisely quantitated with cellular resolution in an intact whole CNS. Central to the approach are high signal-to-noise gene expression reporters that produce a punctate, nucleus-localised output, facilitating downstream automated computational measurements and analysis. Exploiting multiple genetic reagents designed to selectively identify only functional neurons with active synaptic protein expression, we identify substantially fewer neurons than most previous estimates in the Drosophila larval CNS and, in addition, substantially more glia. We also discover a previously unsuspected sexual dimorphism in the numbers of both cell types at larval stages. The generation of whole CNS point clouds from our data enables us to apply the tools of topological data analysis (TDA) to summarise the CNS in terms of multiscale topological structures. Utilisation of these topological summaries in a support vector machine also supports that sexual dimorphism extends to deeper features of CNS organisation. Finally, we applied our pipeline to quantitate the whole CNS expression frequency of the Drosophila family of voltage-gated potassium channels, which revealed divergent channel expression frequencies throughout the CNS. We envision that our method can be employed to allow precise quantitation of gene expression characteristics of the constituent cells of the brain, and potentially other intact whole organs, in a format suitable for sophisticated downstream analysis.\n\n## Results\n\n### Genetic and imaging tools designed to facilitate automated whole CNS cellular quantitation\n\nTo establish a robust quantitative method to measure gene expression frequency and quantify the number of cells that contribute to Drosophila larval CNS function, we sought to develop a pipeline utilising genetic reporters designed to expediate automated neuron and glia quantitation from three-dimensional intact organ images. While membrane-associated reporters are generally employed to label Drosophila neurons (Pfeiffer et al., 2008; Jenett et al., 2012; Ravenscroft et al., 2020), we generated UAS-driven (Brand and Perrimon, 1993; Wang et al., 2012) fluorescent reporters fused to histone proteins (Sherer et al., 2020) to target fluorescence only to the nucleus, in order to facilitate subsequent automated segmentation and counting. Through empirical selection of transgene genomic integration sites, we established a set of reporter lines that produced a strong and specific punctate nucleus signal when expression was induced, with little to no unwanted background expression. We then developed a procedure to capture the entire microdissected larval CNS volume by light sheet microscopy at multiple angles and with high resolution, imaging only animals within the ~2 hr developmental time window of the wandering third instar larval stage (Ainsley et al., 2008). These multiview datasets were then processed to register, fuse, and deconvolve the entire larval CNS volume. The volume was then segmented and cell numbers were automatically quantified (Figure 1a\u2013d).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/74968/elife-74968-fig1-v1.jpg)\n\n**Figure 1.:** (a\u2013d) Illustration of an intact whole central nervous system (CNS) genetic, imaging and computational pipeline. (a) Genetic reagents: GAL4 is introduced into the exons of genes encoding synaptic proteins (e.g. bruchpilot [brp]) to capture their expression pattern with high fidelity. GAL4 expression regulates the production of UAS fluorescent-histone reporters, which target to the nucleus of cells, producing a punctate signal. (b) Imaging: the intact CNS is imaged at high resolution using light-sheet microscopy. Images are captured at five different angles at 72\u00b0 intervals. (c) Assembly: multiview light sheet images are registered, fused, and deconvolved. (d) Quantitation: the volume is segmented, and the nucleus number and relative position are measured. Three-dimensional coordinates of the geometric centre of every nucleus can be calculated to produce a point cloud of nuclei positions.(e\u2013h) Pipeline validation. Three-dimensional images before segmentation (above) and subsequent to segmentation (below) of (e) dopaminergic (TH-GAL4) neurons, (f) serotonergic neurons (Trh-GAL4) and (g) dopa decarboxylase expressing (Ddc-GAL4) neurons. (h) Manual or automated quantification of nuclei numbers in these volumes are similar. Scale squares in (e) and (g) are 100 \u03bcm and in (f) is 50 \u03bcm. (h) Bars indicate minimum and maximum values.\n\nTo evaluate the reliability of the procedure, we began by comparing automated counts of distinct neuronal subtypes with manual counting. We separately labelled all dopaminergic neurons (Figure 1e, TH-GAL4, Video 1; Friggi-Grelin et al., 2003a; Mao and Davis, 2009), serotonergic neurons (Figure 1f, Trh-GAL4, Video 2; Alekseyenko et al., 2010) and neurons that produce both types of neurotransmitter (Figure 1g, Ddc-GAL4, Video 3; Lundell and Hirsh, 1994) in the larval CNS. Quantification revealed a high level of concordance (Figure 1h, +/-0.21%, n=5 for TH-GAL4, +/-1%, n=5 for Trh-GAL4, +/-0.38%, n=6 for Ddc-GAL4, Figure 1\u2014source data 1) between automated and manual measurements of these neuronal subtypes establishing confidence in the procedure.\n\n![Video 1.](https://cdn.elifesciences.org/articles/74968/elife-74968-video1.mp4.jpg)\n\n![Video 2.](https://cdn.elifesciences.org/articles/74968/elife-74968-video2.mp4.jpg)\n\n![Video 3.](https://cdn.elifesciences.org/articles/74968/elife-74968-video3.mp4.jpg)\n\n### Number of neurons and glia in the female larval CNS\n\nEncouraged by our neuronal subset quantitation results, we next sought to generate GAL4 lines for genes likely to be expressed only in active larval neurons with synaptic connections but not by neuroblasts or by immature neurons (Figure 2\u2014figure supplement 1). We biased towards generating GAL4 insertions within endogenous genomic loci in order to reproduce endogenous patterns of gene expression with high fidelity.\n\nBruchpilot (Brp) is a critical presynaptic active zone component widely used to label Drosophila synapses, including for large-scale circuit analyses (Wagh et al., 2006). We employed CRISPR/Cas9 genome editing to insert GAL4 within exon 2 of the brp gene, utilising a T2A self-cleaving peptide sequence (Diao et al., 2015) to efficiently release GAL4. While this exonic insertion generated a hypomorphic allele of brp (data not shown) when homozygous, the line was employed in heterozygotes to capture Brp protein expression with high fidelity. To complement this line, we used the Trojan/MiMIC technique (Diao et al., 2015), to generate a GAL4 insertion in the Syt1 gene, which encodes Synaptotagmin 1 (Littleton et al., 1994), the fast calcium sensor for synaptic neurotransmitter release (Qui\u00f1ones-Fr\u00edas and Littleton, 2021). Lastly, we examined a transgenic line where an enhancer of nSyb (neuronal Synaptobrevin) (Deitcher et al., 1998), which encodes an essential presynaptic vSNARE (S\u00fcdhof and Rothman, 2009), is used to control GAL4 expression (Aso et al., 2014). All three lines were expressed in a similar pattern, labelling a substantial fraction but not all of the total cells in the larval CNS (Figure 2a\u2013c, brp-GAL4 female Video 4, Syt1-GAL4 female Video 5, nSyb-GAL4 female Video 6). These lines contrasted with the widely used elav-GAL4 (Lin and Goodman, 1994), which was expressed in larval neurons, but also apparently in some immature neurons and potentially in some glia as well (Berger et al., 2007; Figure 2\u2014figure supplement 1). To characterise our lines, we examined their expression throughout development, beginning with embryogenesis. We detected no expression from any of the three lines prior to embryonic stage 16 (Figure 2\u2014figure supplement 2a). However, beginning at stage 17 of embryonic development, when synaptic activity begins (Baines and Bate, 1998), all three lines displayed expression in both the CNS and peripheral nervous system (Figure 2\u2014figure supplement 2a). We also examined if these lines were expressed in neural stem cells during larval stages by co-labelling the larval CNS with the transcription factor Deadpan, a neuroblast marker (Bier et al., 1992). We found that labelling by all three lines did not overlap with Deadpan expression (Figure 2\u2014figure supplement 2b), suggesting these lines are not expressed in neuroblasts. We also examined expression of all three lines in the adult brain and, as in the larval CNS, observed labelling of a large fraction but not all of the total cells in the adult brain (Figure 2\u2014figure supplement 2c). Lastly, to ensure that the cells labelled by our lines were exclusively neurons, we compared their expression to that of glial cells labelled by glial specific transcription factor Repo (Xiong et al., 1994; Lin and Potter, 2016) using independent and mutually exclusive QF2 dependent labelling. We found complete exclusion of cells labelled by brp, Syt1 and nSyb GAL4 lines from cells labelled by repo (Figure 2d, brp-GAL4 & repo-QF2 Video 7, Syt1-GAL4 & repo-QF2 Video 8, nSyb-GAL4 & repo-QF2 Video 9), consistent with the brp, Syt1 and nSyb GAL4 lines labelling only neurons that express synaptic protein genes and not glial cells.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/74968/elife-74968-fig2-v1.jpg)\n\n**Figure 2.:** (a\u2013d) Multiview deconvolved images (left) and z-stack projections (right) (colours represent z position) of the central nervous system (CNS) of (a) brp-GAL4, (b) Syt1-GAL4, (c)nSyb-GAL4, and (d) repo-GAL4. (e) Distribution of inter-nuclei distances for each line. (f) Quantification of the number of labelled nuclei in each line. (a\u2013d) left; scale squares (a) and (c) = 50 \u03bcm, (b) and (d) = 100 \u03bcm; right images identical magnification, scale bar = 100 \u03bcm. (f) Bars indicate minimum and maximum values.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74968/elife-74968-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Central nervous system (CNS) projections labelled with (a) insc-GAL4 and (b) elav-GAL4. insc-GAL4 labels neuronal stem cells. elav-GAL4 also labels a fraction of stem cells in addition to potentially glial cells. Colours represent z position. Scale bar: 50 \u03bcm.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/74968/elife-74968-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a) Expression UAS_smFP(myc) (green) under control of brp-GAL4, Syt1-GAL4, and nSyb-GAL4 at embryonic stages 15\u201316 (upper) and stage 17 (lower). Neuronal membranes are labelled with anti Horseradish Peroxidase (HRP) (red) (b) Labelling of L3 larval central nervous system (CNS) with Deadpan (red) and UAS_histone-sfGFP (green) under control of brp-GAL4, Syt1-GAL4, or nSyb-GAL4 (c) histone-sfGFP expression in the adult brain under control of brp-GAL4, Syt1-GAL4, or nSyb-GAL4. Scale bar = 50 \u03bcm in (a), (b), and (c).\n\n![Video 4.](https://cdn.elifesciences.org/articles/74968/elife-74968-video4.mp4.jpg)\n\n![Video 5.](https://cdn.elifesciences.org/articles/74968/elife-74968-video5.mp4.jpg)\n\n![Video 6.](https://cdn.elifesciences.org/articles/74968/elife-74968-video6.mp4.jpg)\n\n![Video 7.](https://cdn.elifesciences.org/articles/74968/elife-74968-video7.mp4.jpg)\n\n![Video 8.](https://cdn.elifesciences.org/articles/74968/elife-74968-video8.mp4.jpg)\n\n![Video 9.](https://cdn.elifesciences.org/articles/74968/elife-74968-video9.mp4.jpg)\n\nTo further compare these lines, beginning with the CNS of female animals, we calculated three-dimensional coordinates for the geometric centre of all nuclei labelled in the brp, Syt1 and nSyb GAL4 lines to generate point cloud mathematical objects and compared them to point clouds of glial nuclei labelled by the repo-GAL4 line. We then plotted and compared the distributions of inter-nuclei distances in these lines. Using this measurement, we found that the inter-nuclei distance of glial cell nuclei exhibited a unimodal distribution (Figure 2e). In contrast, all three neuronal lines exhibited a bimodal distribution of inter-nuclei distances (Figure 2e). We thus observed two patterns of labelled nuclei, one shared among neuronal lines and the other distinct for glia (Figure 2e), again consistent with these lines labelling different cell types.\n\nWe next counted the number of nuclei labelled by these neuronal and glial lines, again beginning with females (Figure 2f). We found that the CNS labelled by brp-GAL4 had 10,776 (\u00b12.65%, n=6) neurons, Syt1-GAL4 had 10,097 (\u00b15.96%, n=5) neurons, and nSyb-GAL4 had 9971 (\u00b11.35%, n=5) neurons (Figure 2f). We tested the statistical difference in the numbers of neurons labelled by these lines and found that while nSyb-GAL4 and Syt1-GAL4 were not statistically different from each other, brp-GAL4 did label significantly more neurons than either Syt1 or nSyb GAL4 lines (brp-GAL4 vs Syt1-GAL4+6.72%, p=0.03, brp-GAL4 vs nSyb-GAL4 +8.07%, p=0.01). Averaging across the lines, we found that the female third instar larval CNS had 10,312 \u00b15.03%, n=16, neurons (Figure 2\u2014source data 1). To ensure that our method did not introduce bias in dense datasets, we also manually counted a brp-GAL4 labelled CNS and compared it to the automated count. Similar to our experiments with sparse neuronal labelling, we found good agreement between manual and automated quantification with a difference of just 14 neurons (9430 nuclei manual vs 9444 nuclei automated for this individual CNS).\n\nWe next counted the number of glia labelled by the repo-GAL4 line (Figure 2d and f, repo-GAL4 female, Video 10). We measured 3860 \u00b13.37%, n=7, glia in the female CNS (Figure 2\u2014source data 1). This amounted to 37% of the number of neurons, far more than previously estimated (Meinertzhagen, 2018; Raji and Potter, 2021). In sum, we found that the female Drosophila larval CNS had 10,312 neurons, fewer than most previous predictions, and several fold more glia than previously thought.\n\n![Video 10.](https://cdn.elifesciences.org/articles/74968/elife-74968-video10.mp4.jpg)\n\n### Males have fewer neurons and more glia than females\n\nWe next carried out a similar analysis on the CNS of male larvae (Figure 3a\u2013c). We found that brp-GAL4 labelled 9888 (\u00b13.15%, n=5) neurons, Syt1-GAL4 labelled 9012 (\u00b13.8%, n=5) neurons, and nSyb-GAL4 labelled 9286 (\u00b15.38%, n=5) neurons in male larvae (Figure 3e, Figure 3\u2014source data 1). In males, brp-GAL4 did not label significantly more neurons than nSyb-GAL4 but did label more than Syt1-GAL4 (brp-GAL4 vs Syt1-GAL4 +9.72%, p=0.01), while the number of neurons labelled by nSyb-GAL4 was not significantly different from Syt1-GAL4, similar to what we had found in females. Averaging across the lines, we found that the male third instar larval CNS had 9396 \u00b15.59%, n=15 neurons, significantly fewer than those of females (\u20139.75%, p<0.0001). This difference was also consistent within individual genotypes with brp-GAL4 labelling (\u20138.98%, p=0.0008), Syt1-GAL4 labelling (\u201312.04%, p=0.008) and nSyb-GAL4 labelling (\u20137.38%, p=0.0182) less neurons in males than in females.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/74968/elife-74968-fig3-v1.jpg)\n\n**Figure 3.:** (a\u2013d) Example z-stack projections (colours represent z position) of male larval central nervous system (CNS) of (a) brp-GAL4, (b) Syt1-GAL4, (c) nSyb-GAL4, and (d) repo-GAL4. (e) Quantification of the number of labelled nuclei in each line. (f) The distribution of correlations between the ground truth and the prediction made by the support vector machine (SVM) using topological features is indicative of sexual dimorphism of the higher order structure of neuron point clouds (g) Simpler point cloud features such as properties of the distributions of inter-nuclei distances are not indicative of this. (a\u2013d): identical magnification, scale bar = 100 \u03bcm. (e) Bars indicate minimum and maximum values.\n\nWe also counted the number of glia labelled by repo-GAL4 in males (Figure 3d and e). We found that males had 4015 \u00b11.98%, n=6, glia far more than previous estimates (Figure 3\u2014source data 1). The number of glia in the male larval CNS was significantly more than in females (+3.86%, p=0.0284). In summary, male Drosophila larva have significantly fewer CNS neurons than females but more glia.\n\n### Topological analysis detects CNS structural differences between males and females\n\nWe next wished to determine if the differences between point clouds derived from the positions of neuronal nuclei of the male and female CNS went beyond simple numerics. To do this, we applied the tools of TDA (Rabad\u00e1n and Blumberg, 2019; Chazal and Michel, 2021) to summarise the CNS in terms of multiscale topological structures (Expert et al., 2019). These topological summaries, the construction of which is described in the methods, can be thought of as multiscale descriptions of the shape of the dataset. Topological summaries, which can be compared by standard methods despite the lack of common reference points, could then be used as the classification features in a support vector machine (SVM). Since the total number of point clouds was relatively small for this type of analysis (Supplementary file 1), we down-sampled each whole CNS point cloud randomly to 8000 points 100 times, producing a total of 3100 point clouds, for each of which we then computed a certain topological summary, called the degree-1 persistence diagram of its alpha complex (Edelsbrunner and M\u00fccke, 1994).\n\nAfter fixing the necessary hyperparameters, sex classification experiments were run across 5000 random train/test splits of the topological summaries. In each split, the summaries derived from subsamplings of a single CNS point cloud were either all in the training set or all in the testing set, to avoid leaking information. Each time, the SVM was trained once with the animal\u2019s true sex as the target class and once with a randomly assigned sex as the target as a control. We then computed the Pearson\u2019s correlation between the classifier\u2019s output on the testing set and the true (respectively randomised) sex of the animal.\n\nThe 5000 splits were used to produce 5000 correlations with the true sex and 5000 correlations with a randomly assigned sex. The distribution of these correlations (Figure 3f), exhibiting clearly that the SVM is able to extract the sex of the animal reliably: only about 1.9% of the splits result in a higher correlation in the control set than in the true data. Moreover, repeating the procedure with simpler point cloud features, like properties of the distributions of inter-nuclei distances, did not produce a significant signal (Figure 3g). Thus, the pattern, which seems hard to describe concisely, is not revealed through simpler descriptors of the neuron configurations, leading us to suspect that CNS sexual dimorphism extends to deeper features of organisation that are both subtle and widely distributed. These results, in addition to the differences in total cell numbers, support sexual dimorphism of the male and female Drosophila CNS at the larval stage.\n\n### Potassium channel family member gene expression density in the CNS\n\nHaving established a baseline of total numbers of neurons in the larval CNS, we next sought to deploy the quantification pipeline to measure the expression frequency of key neuronal function genes throughout the CNS. We chose to examine the family of voltage-gated potassium channels, which are essential for many aspects of neuronal function and for which Drosophila studies defined the founding members (McCormack, 2003). We generated GAL4 insertions in the Shaker (Sh) (Kv1 family), Shab (Shab) (Kv 2 family), Shaw (Shaw) (Kv3 family), and Shal (Shal) (Kv4 family) (McCormack, 2003) genes using the Trojan/Mimic technique (Diao et al., 2015). As the Sh gene is x-linked, we carried out our quantitation analysis in the male CNS only to avoid potential gene dosage effects. To determine whether our GAL4 reporter lines had patterns of expression consistent with the known properties of these channels, we examined the expression of all four lines in motor neurons, where functional activity for Shaker, Shab, Shaw, and Shal had previously been demonstrated by electrophysiological measurements (Covarrubias et al., 1991; Ryglewski and Duch, 2009). We found that the GAL4 reporters for all 4 channels were expressed as expected in motor neurons (Figure 4\u2014figure supplement 1), consistent with accurate reproduction of the established expression of these proteins.\n\nWe next examined the expression frequency of these genes in the entire CNS (Figure 4a\u2013d, Sh-GAL4 Video 11, Shal-GAL4 Video 12, Shab-GAL4 Video 13, Shaw-GAL4 Video 14). We found that Sh and Shal were expressed in large numbers of neurons 8204 \u00b15.67%, n=10 and 8261 \u00b13.1%, n=5 respectively, though significantly less (\u201312.7% and \u221212.1%, p<0.0001) than the average number of all male neurons (Figure 4a, b and e, Figure 4\u2014source data 1). In contrast, Shab (3057 \u00b18.21%, n=10) and Shaw (1737 \u00b14.3%, n=11) were expressed in smaller numbers of neurons (Figure 4c\u2013e), with expression observed in only 32.5% or 18.5% of total male neurons respectively, suggesting more discrete functions within CNS neurons, contrasting with the collective expression of all four genes within motor neurons (Figure 4\u2014figure supplement 1). In particular, Shab and Shaw had very reduced expression in the brain lobes of larva (Figure 4c and d) compared with Sh and Shal (Figure 4a and b). These results establish that our genetic-imaging pipeline can enable quantitation of the expression frequency of families of genes essential for neuronal properties across the entire CNS.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/74968/elife-74968-fig4-v1.jpg)\n\n**Figure 4.:** (a\u2013d) Multiview deconvolved images (left) and z-stack projections (right) (colours represent z position) of potassium channel family members: (a) Sh-GAL4, (b) Shal-GAL4, (c) Shab-GAL4, and (d) Shaw-GAL4. (e) Quantification of the number of labelled nuclei in each line. (a\u2013d) left, scale squares = 50 \u03bcm, right, identical magnification, scale bar = 50 \u03bcm. (e) Bars indicate minimum and maximum values.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74968/elife-74968-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Expression in example motor neurons and neuromuscular junction terminals of UAS_mKO-CAAX by (a) Sh-GAL4, (b) Shal-GAL4, (c) Shab-GAL4, and (d) Shaw-GAL4. All four lines express in motor neurons as predicted from mutant analysis. All images identical magnification, scale bar = 10 \u03bcm.\n\n![Video 11.](https://cdn.elifesciences.org/articles/74968/elife-74968-video11.mp4.jpg)\n\n![Video 12.](https://cdn.elifesciences.org/articles/74968/elife-74968-video12.mp4.jpg)\n\n![Video 13.](https://cdn.elifesciences.org/articles/74968/elife-74968-video13.mp4.jpg)\n\n![Video 14.](https://cdn.elifesciences.org/articles/74968/elife-74968-video14.mp4.jpg)\n\n## Discussion\n\nEstablishing the number and identity of cells in the CNS is a foundational metric upon which to construct molecular, developmental, connectomic, and evolutionary atlases of central nervous systems across species (Lent et al., 2012; Devor et al., 2013). Here, we develop and deploy a methodological pipeline to label discrete cell types in the intact Drosophila CNS with genetic reporters designed to facilitate the subsequent segmentation and automated quantification of cell types, in addition to capturing positional coordinates of relative nucleus positions throughout the organ. Using this toolset, we find fewer active neurons, as defined by expression of synaptic protein genes, in the Drosophila larval CNS than most previous predictions and also substantially more glia. We additionally discover previously unsuspected differences in both neuron and glial density and CNS topology between the sexes at the larval stage, when external sex organs are absent, with females possessing both more neurons and fewer glia than males. Topological analysis of point clouds derived from neuronal nucleus position, which can detect potentially subtle and complex geometric structure in the data, also strongly support the existence of differences between the male and female CNS. In addition, deploying these tools, we find that while all members of the Drosophila voltage-gated potassium channel family are expressed in motor neurons, consistent with prior mutant analyses, the Kv2 channel Shab and Kv3 channel Shaw are expressed in a much smaller number of neurons in the CNS than the Kv1 channel Shaker and the Kv4 channel Shal, suggesting conclusions drawn about the coordinated activity of these channels from studies of motor neurons may not be broadly applicable across the CNS, where the genes encoding these channels are frequently not co-expressed.\n\nA number of semiquantitative methods have been employed to estimate the number of neurons in the brains of humans and model organisms, including Drosophila (Lent et al., 2012; Keller et al., 2018). For example, the number of neurons or other cells in the brain has been estimated using stereological counting of subregions. A major limitation of this approach is the assumption of homogenous cell density across the organ or within subregions, which is not supported by the high variability of counts even between samples of similar regions, and thus likely introduces large errors (von Bartheld et al., 2016; Keller et al., 2018). Rough extrapolation of neuronal counts of electron microscope volumes of regions of the Drosophila larval CNS had suggested an estimate of ~15,000 neurons (Meinertzhagen, 2018; Eschbach and Zlatic, 2020). An alternate approach is isotropic fractionation, where all cells in large regions or the entire CNS are dissociated to produce a homogeneous single-cell suspension. Nuclei in the suspension can then be labelled by immunohistochemistry and cells in a subvolume counted in a Neubauer chamber to estimate the total number of cells present. Limitations of the approach include the necessity to ensure complete dissociation of cells while avoiding tissue loss, the requirement for homogenous antibody labelling, and highly accurate dilution (Deniz et al., 2018). This approach has recently been used to estimate the total number of neurons and glia in the adult Drosophila brain and suggested a number of 199,000 neurons (Raji and Potter, 2021), twice prior estimates (Scheffer and Meinertzhagen, 2019; Allen et al., 2020). In contrast to our results in the larval CNS, this study found no significant differences in the number of neurons between the sexes and also found that \u2018non-neuronal\u2019 cells, which should include glia, accounted for less than 9% of the total cells counted. In addition to the inherent inaccuracy of the isotropic fractionation technique, which the authors both observed and acknowledge (Raji and Potter, 2021), their use of anti-Elav antibody labelling, which can label some glia in addition to neurons (Berger et al., 2007), or perhaps differences in life stage, may explain some of the discrepancies between our results.\n\nAn unpredicted result from our whole CNS neuron quantitation was substantial differences in neuron and glial numbers between the sexes in larva. In adult Drosophila, sexually dimorphic neural circuitry has been observed in the olfactory system (Kimura et al., 2005), and human females have also been reported to have more olfactory bulb neurons and glia than males (Oliveira-Pinto et al., 2014). While sex-specific behavioural differences are obvious in adult Drosophila (Jazin and Cahill, 2010), few sexually dimorphic behavioural differences have been reported in larva (Aleman-Meza et al., 2015). However, male and female larva do differ in nutritional preference (Rodrigues et al., 2015; Davies et al., 2018), which could potentially account for some aspects of the dimorphism we observe. In addition to differences in total cell numbers, our topological methods, which take into account multiscale structure, suggest that differences in CNS structure between the sexes are both subtle (in the mathematical sense) and non-localised in nature, and indeed are not observable with simpler methods of analysis of CNS organisation.\n\nIn addition to enabling precise counting of genetically labelled cells, our method allows the relative measurement of discrete cell types or gene expression frequencies throughout the CNS. For example, the relative frequency of glial cells to neurons in the human brain has been long debated (von Bartheld et al., 2016) and in the adult Drosophila brain it has been suggested there are 0.1 glial per neuron (Kremer et al., 2017; Scheffer and Meinertzhagen, 2019; Raji and Potter, 2021). In the larval Drosophila CNS, we found closer to 0.4 glial cells per neuron on average, more similar to the glial-neuron ratios reported for rodents or rabbits (Verkhratsky and Butt, 2018). An important potential caveat, however, is that the large relative ratio of glia we observe in the third instar larva could conceivably be glia produced in advance of adult CNS development. As adult specific neuron numbers expand during pupation, the relative ratio of glia could potentially decline. Additional glial-neuron ratio measurements in the adult CNS will be required to examine this possibility.\n\nOur approach may also allow the assignment of potential functional classes of neurons. For example, from our examination of voltage-gated potassium channel family gene expression, all these channels are collectively expressed in motor neurons; however, the Shab and Shaw genes have more discrete expression patterns in other CNS neuron classes, potentially imbuing these neurons with unique functional characteristics (Chow and Leung, 2020). Future multiplexing of binary genetic expression systems and reporters (Simpson, 2009; del Valle Rodr\u00edguez et al., 2011; Diao et al., 2015) should enable neurons or glia to be further quantitively subclassified by gene expression features throughout the entire intact CNS.\n\n## Materials and methods\n\n### Drosophila stocks\n\nThe following stocks were employed - y[1] w[*]; Mi{y[+mDint2]=MIC}Syt1[MI02197] (BDSC#35973) (Venken et al., 2011), y(1) w(*) Mi(y[+mDint2]=MIC) Sh(MI10885) (BDSC#56260), y(1) w(*);Mi(y[+mDint2]=MIC)Shal(MI10881) (BDSC#56089) (Venken et al., 2011), y(1) w(*); Mi(y[+mDint2]=MIC) Shab(MI00848) (BDSC#34115) (Venken et al., 2011), nSyb-GAL4(GMR57C10)(BDSC#39171) (Pfeiffer et al., 2008), repo-GAL4 (BDSC#7415) (Sepp et al., 2001), repo-QF2 (BDSC#66477) (Lin and Potter, 2016), Shaw-GAL4 (BDSC#60325) (Venken et al., 2011; Li-Kroeger et al., 2018), Ddc-GAL4(BDSC#7009) (Feany and Bender, 2000), TH-GAL4(BDSC#8848) (Friggi-Grelin et al., 2003b), Trh-GAL4(BDSC#38389) (Alekseyenko et al., 2010), UAS_H2A-GFP (Sherer et al., 2020), QUAS_H2B-mCherry (Sherer et al., 2020), brp-GAL4 (this manuscript), UAS_H2A::GFP-T2A-mKok::Caax (this manuscript). All lines were raised on standard media at 25\u00b0C, 50% RH.\n\n### Generation of brp-GAL4 exon 2 insertion line\n\nA GAL4.2 sequence was inserted in genome, immediately after the start codon of the Brp-RD isoform using CRISPR based gene editing employing the following constructs. brp gRNA pCDF3: two gRNA sequences targeting each side of the insertion location in exon 2 of brp, were selected using the FlyCRISPR algorithm (http://flycrispr.molbio.wisc.edu/), consisting of 20 nucleotides each (PAM excluded), and predicted to have minimal off-targets. Each individual 20-nucleotide gRNA sequence were inserted into pCFD3 plasmid (Addgene #49,410) using the KLD enzyme mix (New England Biolabs). brp-GAL4 insertion construct: the seven following PCR amplified fragments were assembled using HIFI technology: (1) 1198 bp homology arm covering 5\u2019 UTR until 5\u2019 target site; (2) the region between 5\u2019 target site and the start codon were amplified from Drosophila nos-cas9 (attp2) genomic DNA (a modified Pam sequence was inserted using overlapping primers); (3) Linker-T2A-GAL4.2 sequence was amplified from pBID-DSCP-G-GAL4 (Wang et al., 2012) (the linker-T2A sequence was added upstream of the forward primer); (4) P10-3\u2019UTR was amplified from pJFRC81-10XUAS-IVS-Syn21-GFP-p10 (Addgene 36432); (5) 3xP3-Hsp70pro-dsRed2-SV40polyA selection cassette, flanked by two LoxP sites, was amplified from pHD-sfGFP scareless dsRed (Addgene 80811); (6) The region covering the end of DsRed cassette until 3\u2019 target site; and (7) the 1079 bp homology arm two covering from the 3\u2019 target site to exon 2, were amplified from Drosophila nos-cas9 (attp2) genomic DNA. Full length assembly was topo cloned in zero-blunt end pCR4 vector (Invitrogen), all constructs have been verified by sequencing (Microsynth AG, Switzerland) and injections were carried out into a nos-cas9 (attp2) strain (Ren et al., 2013). Correct insertion of GAL4 was verified by genome sequencing. All primer sequences are included in Appendix 1\u2014key resources table.\n\n### Construction of UAS_H2A::GFP-T2A-mKok::Caax\n\nPCR amplifications were performed using Platinium Superfi polymerase (Invitrogen). The three PCR fragments were assembled together using Hifi technology (Invitrogen): (1) Histone2A (H2A) cDNA was amplified from pDESTP10 LexO-H2A-GFP template (Gift from Steve Stowers) with a synthetic 5\u2019UTR sequence (syn21) added upstream to H2A on the forward primer; (2) sfGFP was amplified from template pHD-sfGFP Scareless dsRed (Addgene 80811); and (3) mKok amplified from pCS2 +ChMermaid S188 (Addgene 53617) with the CAAX membrane tag sequence (Sutcliffe et al., 2017) added at the 3\u2019 end of the protein using the reverse primer. A Thosea asigna virus 2 A(T2A) self-cleaving peptide sequence (Diao et al., 2015), was inserted between sfGFP and mKok, using sfGFP reverse and mKok forward overlapping primers. The full length assembly was TOPO cloned into pCR8GW-TOPO vector (Invitrogen) generating pCR8GW-H2A::GFP-T2A-mKok::Caax. The insert, H2A::GFP-T2A-mKok::Caax was, then, transferred to pBID_UASC_G destination vector (Wang et al., 2012) using LR II clonase kit (Invitrogen) to generate pBID_UAS-H2A::GFP-T2A-mKok::Caax. The transgene was generated by injection into the JK66B landing site. All primer sequences are included in Appendix 1\u2014key resources table.\n\n### Generation of novel Trojan GAL4 lines\n\nMiMIC lines generated by the group of Hugo Bellen (Venken et al., 2011) were acquired from the Bloomington Stock Center. Conversion of Mimic lines to Trojan GAL4 lines was performed as described previously (Diao et al., 2015).\n\n### Larval CNS preparation and image acquisition\n\nWandering third instar larvae were dissected in 1 \u00d7 PBS (Mediatech) and fixed with 4% formaldehyde (Sigma-Aldrich) for 20 mins. 1 \u00d7 PBS were added to remove the fixative, and then the CNS was dissected (Hafer and Schedl, 2006) and rinsed with 1 \u00d7 PBS with 4% Triton-X 100 for 2 days at 4\u00b0C. After rinses, the CNS was embedded in 1% low melting temperature agarose (Peq gold) mixed with 200 nm red fluorescent beads (1:50,000), then introduced into a glass capillary and positioned well separated from each other. After solidification of the agarose, the capillary was mounted to sample holder, transferred to a Zeiss Lightsheet Z.1 microscope and the samples were extruded from the capillary for imaging. CNS images were acquired with a 20 \u00d7/1.0 Apochromat immersion detection objective and two 10 \u00d7/0.2 illumination objectives at five different views, with 1 \u00b5m z-intervals. Voxel resolution was 0.317 um.\n\n### Image processing and data analysis\n\nCollected multiview datasets were registered and fused with the Fiji Multiview Reconstruction plugin (Preibisch et al., 2010; Schindelin et al., 2012). Image datasets after multiview deconvolution were analysed with Vision4D 3.0.0 (Arivis AG). A curvature flow filter was first used to denoise the image dataset. Subsequently, a Blob Finder algorithm (Najman and Couprie, 2003) was applied to detect and segment bright rounded three-dimensional sphere-like structures in the images with 4.5 \u00b5m set as the diameter. Segmented objects with volume less than 15 \u00b5m3 were removed from analysis by segmentation filter to avoid unspecific signals. Subsequently, the number of nuclei and the x, y, z coordinates of the geometric center of each nucleus were output from Vision4D. Where manual counting was employed (Figure 1 and a randomly selected brp-GAL4 labelled CNS), Vision4D was used to visualise and iteratively proceed through and manually annotate the dataset. Example whole CNS datasets where functional neurons or glia are labelled are available (Jiao and McCabe, 2021a; Jiao and McCabe, 2021b). Raw coordinates of the centre of geometry for the nuclei for whole male and female CNS are available in Supplementary file 1. In two-dimensional representations, Z position is indicated by colour coding using the scheme below.\n\n![Scheme 1.](https://cdn.elifesciences.org/articles/74968/elife-74968-scheme1-v1.jpg)\n\n### Mathematical analysis\n\nThe topological summaries methods employed have previously been introduced (Edelsbrunner and Harer, 2010; Ghrist, 2014; Rabad\u00e1n and Blumberg, 2019; Chazal and Michel, 2021). For a motivating example of the principles underlying topological summaries, one could think of pearls forming a necklace. Topological summaries express the global structure of the necklace formed by the relationships between the positions of the individual pearls, but are invariant under translation and rotation of the necklace overall. Two such necklaces have topological summaries that are comparable even if the pearls in one have no relationship to the pearls in the other. It is the global structures\u2014such as its circular shape on a large scale, or bulges on a smaller scale\u2014formed by the relationships of the individual pearls of each one that matter.\n\nWe trained a machine learning classifier, specifically an SVM, on the CNS nuclei positions in order to evaluate its power in determining characteristics of the animal from which it was derived. The data encompassed all point clouds generated from all CNS lines (brp-GAL4, Syt1-GAL4, nSyb-GAL4, repo-GAL4, Supplementary file 1). Correlation significance (classification power) is determined by comparing the performance of the SVM on the actual classification task to one where each larva is randomly assigned a class.\n\nMathematically speaking, the nuclei positions from a single CNS form a point cloud, a finite set of points in R3. A possible, naive approach to SVM feature selection for point clouds would be to consider the mean, variance, or other modes of the distribution of pairwise distances within the cloud. These real-valued features could then be passed through, for example, radial basis function kernels for use in SVMs. We focused on very different kind of features, namely ones obtained from the topology of the point clouds. When the point cloud is of low dimension, such as the three-dimensional point clouds arising from nuclei position data, the following approach is relevant. Let X be a finite point cloud in R3. For any r\u22650, we let Xr denote the same point cloud, but with each point replaced by a ball of radius r. As r increases, the sequence formed by the Xr expresses different topological features of X. By topological features, we here mean the presence or absence of multiple connected components, unfilled loops, and unfilled cavities.\n\nThe figure below illustrates this process in the case of a synthetic two-dimensional point cloud, but the idea extends to any dimension including whole CNS point clouds. When r is small, Xr is topologically very similar to X=X0, and is essentially a collection of disjoint points. When r is very large, Xr is topologically very similar to X\u221e, i.e., one giant, featureless blob. As the sequence Xr progresses through the continuum of scales between these two trivial extremes, it undergoes non-trivial topological changes: components merge, and loops form and later get filled. In higher dimensions, cavities of various dimensions likewise form and get filled in.\n\n![Scheme 2.](https://cdn.elifesciences.org/articles/74968/elife-74968-scheme2-v1.jpg)\n\nA small two-dimensional point cloud X viewed at four different scales 0<a<b<c, forming the filtration X=X0\u2282 Xa\u2282 Xb\u2282 Xc.\n\nIn the parlance of TDA, we refer to this appearance and disappearance of topological structures as the birth and death of homology classes in various degrees. We capture the whole life cycle with a mathematical object called the persistent homology of the point cloud, which can be fully described by its persistence diagram, a planar collection of points (labelled by multiplicity), whose coordinates encode the birth and death of homological features. For the filtration in the figure above, the persistence diagram that tracks one-dimensional features (i.e. unfilled loops) contains only a single point with coordinates (x, y). Here, the first coordinate, x, is the radius at which the loop is first formed, and the second coordinate, y, is the radius at which the loop has just been filled in. In the example it is clear that a<x<b<y< c.\n\nAs multisets of points in the plane, persistence diagrams are not immediately usable as features for SVMs. One way to vectorise persistence diagrams and thus render them digestible by SVMs is to define kernels based on the diagrams, with the heat kernel (Reininghaus et al., 2015) being an oft-used candidate with nice properties. For persistence diagrams P and Q, the heat kernel can informally be defined by the inner product of two solutions of the heat equation\u2014one with an initial condition defined by P, and the other one defined by Q.\n\nIn this analysis, we calculated the persistent homology of the alpha complex (Edelsbrunner and M\u00fccke, 1994) of the point clouds, using GUDHI (The GUDHI Editorial Board, 2019). The heat kernels were computed using RFPKOG (Spreemann, 2021). Only the persistence diagrams in degree 1 were used. Since the number of whole CNS point clouds was relatively small, we subsampled each one randomly to 8000 points 100 times, producing a total of 3100 point clouds. This was done both in order to test the stability of the method and to ensure that the variability in the number of points in each cloud is not the source of any signal.\n\nThe hyperparameters involved, i.e., the SVM regulariser and the heat kernel bandwidth, were determined by a parameter search in the following way. Six point clouds from males and six from females were randomly selected. All 100 subsampled versions of each of these 12 constituted a training set, for a total of 1200 training point clouds. The remaining 1900 subsampled point clouds constituted the testing set. The Pearson\u2019s correlation between the gender predicted by the SVM on the testing set and the ground truth was computed for each choice of hyperparameters, and a choice in a stable region with high correlation was selected: a regularisation parameter c=10 in the notation of Pedregosa et al., 2011 and a bandwidth of \u03c3=1/100 in the notation of Reininghaus et al., 2015. For the simple distance distribution features, a similar parameter selection process yielded c=10 and a radial kernel bandwidth of 10^5.\n\n### Immunofluorescence and confocal microscopy\n\nEmbryos were collected and staged at 25\u00b0C on apple agar plates supplemented with yeast paste. Standard methods were used for dechorionation, removal of the vitelline membrane and fixation (Bashaw, 2010). Embryos were stored in 100% ethanol at \u201320\u00b0C before IHC labelling. Embryos were stained with mouse anti-myc9EH10 (1:100, DSHB), visualised with goat anti mouse Alexa Fluor 488 (1:400, Jackson ImmunoResearch) together with conjugated goat anti HRP Alexa Fluor 647 (1:200, Jackson ImmunoResearch) and mounted in VectaShield (Vector Laboratories). Duel colour Z-stack images of stage 15/16 and late stage 17 embryos were obtained on a CSU-W1 Confocal Scanner Unit (Yokogowa, Japan) using two prime BSI express cameras (Teledyne Photometrics). For motor neuron and adult brain preparations, larval fillets from the third instar larvae, or brains from adults were dissected and fixed with 4% formaldehyde (Sigma-Aldrich) for 20 mins. After fixation, samples were rinsed with 1 \u00d7 PBS and were washed in PBT overnight at 4\u00b0C, and then mounted in Vectashield antifade mounting medium. Z-stack images were obtained with a Leica SP8 upright confocal microscope.\n\nFor Deadpan staining, the CNS from the third instar larvae were dissected out and fixed with 4% PFA for 20 mins. After fixation, samples were rinsed with 1 \u00d7 PBS, and permealised with PBT (1 \u00d7 PBS + 4% Triton-X 100). Antibody stainings were done in PBT +5% normal goat serum. The dilution for chicken anti-GFP (Abcam) was 1:500, for rat anti-Deadpan (Abcam) was 1:50. Goat anti-chicken Alexa Fluor 488, and goat anti-rat Alexa Fluor 594 secondary antibodies were obtained from ThermoFisher and used at the 1:500 dilutions. The CNS were mounted in VectaShield antifade mounting medium, and imaged using a Leica SP8 upright confocal microscope.\n\n### Statistical analysis\n\nColumn statistics analyses were performed using GraphPad Prism 9 (GraphPad Software). For Figure 1, statistical significance was determined by unpaired t-test. For Figures 2\u20144, statistical significances were determined by ordinary one-way ANOVA, followed by a Tukey\u2019s honestly significant difference test when multiple comparisons were required. The distribution analysis in Figure 2 were performed using matlab (MathWorks). Distances between nuclei coordinates were calculated in matlab using code available at https://doi.org/10.5281/zenodo.6574838 and plotted as a histogram of distance distribution.\n",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "d5c999be-884b-43f7-8561-b772beeb2293",
+      "submission_id": "07a09d61-934f-4055-a0bd-bce2f3d94908",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sonia Sen, https://ror.org/04xf4yw96 Tata Institute for Genetics and Society India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.74968.sa0](https://doi.org/10.7554/eLife.74968.sa0)\n\nThis manuscript describes a pipeline involving whole brain imaging, automated neuronal segmentation, and topographical analysis, to assess the number of specific cell types in the larval Drosophila brain. The authors uncover unexpected sexual dimorphism at this early stage. This paper will be of interest to neuroscientists \u2013 from those who use larval Drosophila as their study model to others who are generally interested in connectomics and transcriptomics.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Sonia Sen, https://ror.org/04xf4yw96 Tata Institute for Genetics and Society India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.74968.sa1](https://doi.org/10.7554/eLife.74968.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Intact Drosophila Whole Brain Cellular Quantitation reveals Sexual Dimorphism\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, including Sonia Sen as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by K VijayRaghavan as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nWhile noting the value and general rigour of this work, we had a few concerns that the authors could address. These are listed below.\n\n1) The new Gal4 lines: These lines form the basis of this study and we anticipate that they will be of value to the broader community. For both these reasons, we request that the authors verify them better, for example, with neuroblast-specific markers and/or co-labels with markers of mature neurons.\n\n2) Comparison with previous studies: We were concerned about the comparison with previous studies \u2013 please see detailed reviews below. Could the authors please revisit the text surrounding this, and perhaps provide a systematic comparison of the previous studies that have 'counted' cell numbers?\n\n3) Interpretation of some of the findings: Some of the findings are interesting, but we were not sure what they meant (please see the detailed comments below). Could the authors discuss this? If they feel it would be too speculative, they could perhaps use the Ideas and Speculation section within discussion to do this.\n\n4) Description of methods: Could the authors please describe some of their methods in more detail? Please see the detailed reviews below, but, for example, the procedures leading to the topographical comparisons, or the comparison of 3D coordinates across brains.\n\nReviewer #1 (Recommendations for the authors):\n\n\u2013 The authors have generated invaluable Gal4 lines through their study. We would have liked to have seen a better characterization of them particularly because we think they will be of value to the broader community. For example with neuroblast-specific markers or co-labels with markers of mature neurons.\n\n\u2013 It would be nice to have a more systematic description of previous studies that have estimated cell numbers in larval and adult brains. The authors have done this, but the larval and adult studies are listed together, making it hard to assess the different approaches and their advantages and limitations. Could the authors please look into discussing it systematically in this way?\n\n\u2013 The authors quote previous studies suggesting glia constitute 10% of the cell in the brain \u2013 this is for the adult, isn't it? Significant neurogenesis occurs between early L3 and the adult and so is it possible that the 30% observed in this study transitions to 10%?\n\n\u2013 I did not quite understand how one can compare 3D coordinates of nuclei across brains if there isn't a common reference? Could the authors please elaborate on this?\n\n\u2013 What do the authors interpret from the nuclear distance distribution patterns of neurons and glia?\n\n\u2013 Similarly, the authors say that the sexual dimorphism extends to deeper features, is subtle, but widespread. Could the authors speculate what these subtle, widespread features might be?\n\nReviewer #2 (Recommendations for the authors):\n\nThe conclusions of this paper are supported mainly by data, but some aspects of data analysis and interpretation need to be clarified and extended to solidify their findings.\n\n1) The paper is generally written well, but some data interpretations are based on inaccurate and shaky estimates, which are better avoided. In my understanding, none of the precedents formally publish the number of neurons and glia in the whole nervous system of third instar larvae. As mentioned in the text, there are indeed some estimates that range from 10,000 to 15,000 (P3, L15, Scott, et al., 2001), but they are not published as data and are not of the same age as their animal. Therefore, it is better for the authors to avoid direct comparisons with this wide range of statistics to draw numerical arguments (e.g., P8. L137-138). Instead, those studies collectively suggest the present results are in good agreement with them, solidifying their work rather than contradicting.\n\n2) Usage of the term \"brain\" has to be strict to avoid any future confusion (cf. title and abstract). While I agree that they found sexual dimorphism in the larval nervous system, I am unsure whether it is about the brain. The central nervous system of larvae consists of the brain and ventral nervous system, and the methodology of the current study analyzes both. Numerically speaking, the latter is the majority (4~5 times more), suggesting that the difference is somewhat related to other peripheral parts of the nervous system than the brain. I suggest the authors revise the relevant points and put their work in the proper context.\n\n3) Text writing in the methodological part could work better to substantiate their main findings further. In particular, the procedures leading to the topographical comparisons that contribute to their main conclusion (P8. 4th paragraph \u2013 P9. 2nd paragraph) uses many unfamiliar mathematical terms without proper explanations that make it difficult for non-specialists to follow.\n\n4) In the distribution of inter-nuclei distances (Figure 2e), I see fractions of the cells fall into the range of distance 0, suggestive of double counting. Some questions about nuclei counting accuracy.\n\n5) I would like to know the specific citation behind their notion that \"genes likely to be expressed only in active larval neurons with synaptic connections but not by neuroblasts or by immature neurons\". Brp is known to be expressed in the developing embryo (Wagh et al., Neuron, 2006).\n\n6) (P9. L192) \"As the Sh gene is x-linked, we carried out our quantification analysis in male brains only to avoid potential gene dosage effects.\"\n\nHow does the dosage effect affect their cell counting? In other words, is this data appropriate being here without contributing the main conclusion of sexual dimorphism?\n\n7) A list of questions for methodological clarifications.\n\n\u2013 What genotypes were used for the topographical comparisons (Figure 3f 3g)?\n\n\u2013 (P8. L160) What are the \"multi-scale topological structures\"?\n\n\u2013 (P8. L162-164) I do not follow this part. The authors need to elaborate on the explanation.\n\n\u2013 What is the voxel resolution of their images?\n\n\u2013 How are inter-nuclei distances calculated (Figure 2e)?\n\n\u2013 (P16. L356) How is the volume cutoff (15um3) determined?\n\n\u2013 What is coded by the color in Figure 2a-2d and others?\n\n\u2013 What is the unit of the abscissa in Figure 2e?\n\n\u2013 (P8. L137) What is the denominator to get the value (~15 to 30%)?\n\n8) (Figure 1, 2, 3, 4) GeneName>GAL4. Is this the standard way to describe the genotype?\n",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "aac65043-6a3b-44db-a3fe-597107198df1",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C1",
+      "claim": "The nervous system of Caenorhabditis elegans has 302 neurons and 56 glia.",
+      "claim_type": "EXPLICIT",
+      "source": "apart from the nervous system of the nematode Caenorhabditis elegans (302 neurons, 56 glia) (White et al., 1986)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to White et al., 1986.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "a25e76f7-100d-434d-be64-a8f91a938ba9",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C2",
+      "claim": "The exact numbers of cells within the central nervous system of model organisms or humans is currently unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "the exact numbers of cells within the central nervous system (CNS) of model organisms or that of humans is currently unknown, with estimates, including those based on extrapolation from direct quantification of brain sub-regions, varying widely (Silbereis et al., 2016; Keller et al., 2018; von Bartheld et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple sources discussing the variability of estimates.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "3b5ac334-c0bb-41c8-8f62-88c91fa79605",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C3",
+      "claim": "A range of 10,000\u201315,000 active neurons has been proposed for the larval Drosophila CNS.",
+      "claim_type": "EXPLICIT",
+      "source": "For the larval CNS, a range of 10,000\u201315,000 active neurons has been proposed (Scott et al., 2001; Meinertzhagen, 2018; Eschbach and Zlatic, 2020) across developmental time points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Scott et al., 2001; Meinertzhagen, 2018; Eschbach and Zlatic, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "aca9cf44-3c3a-4d23-aee6-f9707060b8d4",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C4",
+      "claim": "For adult Drosophila, approximations have been suggested in the range of 100,000\u2013199,000 neurons in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "For adult Drosophila, approximations have been suggested in the range of 100,000\u2013199,000 neurons in the brain (Simpson, 2009; Chiang et al., 2011; Kaiser, 2015; Scheffer and Meinertzhagen, 2019; Raji and Potter, 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple sources.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "b2702050-53bf-4c3b-9392-74480d9af6a2",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C5",
+      "claim": "The adult Drosophila VNC has a range of 10,000\u201320,000 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "together with a range of 10,000\u201320,000 cells in the VNC (Birkholz et al., 2015; Lacin et al., 2019; Bates et al., 2019; Allen et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Birkholz et al., 2015; Lacin et al., 2019; Bates et al., 2019; Allen et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "2d5a85ab-1936-41f3-98cb-4ae829876f3b",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C6",
+      "claim": "Glia has been estimated to be approximately 10% of the number of neurons in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "The other major CNS cell type, glia, has been estimated to be approximately 10% of the number of neurons (Kremer et al., 2017; Meinertzhagen, 2018; Raji and Potter, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Kremer et al., 2017; Meinertzhagen, 2018; Raji and Potter, 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "21dfcc24-ddad-48d6-98c4-7781be22c84d",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C7",
+      "claim": "Immature neurons within the larval CNS are unlikely to contribute to larval CNS function.",
+      "claim_type": "EXPLICIT",
+      "source": "These immature neurons are unlikely to contribute to larval CNS function and are generally excluded when considering larval neuronal circuit architecture (Eichler et al., 2017; Scheffer and Meinertzhagen, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Eichler et al., 2017; Scheffer and Meinertzhagen, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "6f69f0a3-e4b8-420a-a6a3-9cb52a84bd6b",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C8",
+      "claim": "Only a small fraction of the total number of larval CNS cells may actually contribute to CNS function.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been suggested that only a small fraction of the total number of larval CNS cells may actually contribute to CNS function (Ravenscroft et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Ravenscroft et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "600f3239-a5fa-4b66-ac37-3ab1563a6114",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C9",
+      "claim": "The female third instar larval CNS had 10,312 \u00b15.03%, n=16, neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Averaging across the lines, we found that the female third instar larval CNS had 10,312 \u00b15.03%, n=16, neurons (Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from quantification of neurons in female larvae.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "1a6fcf73-af14-4b77-a4c2-c8dd5b044c86",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C10",
+      "claim": "The female Drosophila larval CNS had 3860 \u00b13.37%, n=7, glia.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured 3860 \u00b13.37%, n=7, glia in the female CNS (Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from quantification of glia in female larvae.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "8f9ddc3a-c626-4af1-8fa9-7b6bc7e7d02d",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C11",
+      "claim": "The number of glia in the female larval CNS amounted to 37% of the number of neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This amounted to 37% of the number of neurons, far more than previously estimated (Meinertzhagen, 2018; Raji and Potter, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data and comparison to previous estimates cited.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "13d1469b-5da4-440b-a552-6a091d38e11f",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C12",
+      "claim": "The male third instar larval CNS had 9396 \u00b15.59%, n=15 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Averaging across the lines, we found that the male third instar larval CNS had 9396 \u00b15.59%, n=15 neurons, significantly fewer than those of females (\u20139.75%, p<0.0001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from quantification of neurons in male larvae.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "80fd5a20-f954-4e8c-9ee9-87f0e8e40964",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C13",
+      "claim": "Males have significantly fewer CNS neurons than females.",
+      "claim_type": "EXPLICIT",
+      "source": "Averaging across the lines, we found that the male third instar larval CNS had 9396 \u00b15.59%, n=15 neurons, significantly fewer than those of females (\u20139.75%, p<0.0001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "ad5c7594-0214-4a40-a1d3-71f5eea426d3",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C14",
+      "claim": "Males had 4015 \u00b11.98%, n=6, glia.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that males had 4015 \u00b11.98%, n=6, glia far more than previous estimates (Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from quantification of glia in male larvae.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "d575fa0a-2940-41f5-b0fa-e4ff2355ce77",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C15",
+      "claim": "The number of glia in the male larval CNS was significantly more than in females.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of glia in the male larval CNS was significantly more than in females (+3.86%, p=0.0284).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "82b8d40b-4f29-4aca-b61a-c47b4155d920",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C16",
+      "claim": "Male Drosophila larva have significantly fewer CNS neurons than females but more glia.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, male Drosophila larva have significantly fewer CNS neurons than females but more glia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "ffe511eb-03fa-4924-ae68-6f4152bde5d1",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C17",
+      "claim": "Bruchpilot is a critical presynaptic active zone component widely used to label Drosophila synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Bruchpilot (Brp) is a critical presynaptic active zone component widely used to label Drosophila synapses, including for large-scale circuit analyses (Wagh et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Wagh et al., 2006.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "41882b53-b8fc-46a8-a9cf-60227ad4ffbe",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C18",
+      "claim": "The brp-GAL4 line labeled 10,776 (\u00b12.65%, n=6) neurons in the female CNS.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the CNS labelled by brp-GAL4 had 10,776 (\u00b12.65%, n=6) neurons",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from quantification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "3a02bbb7-282c-43b4-a6d8-e7022da5353b",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C19",
+      "claim": "The Syt1-GAL4 line labeled 10,097 (\u00b15.96%, n=5) neurons in the female CNS.",
+      "claim_type": "EXPLICIT",
+      "source": "Syt1-GAL4 had 10,097 (\u00b15.96%, n=5) neurons",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from quantification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "d5e1169e-472c-46d9-8cb2-1243158f47a1",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C20",
+      "claim": "The nSyb-GAL4 line labeled 9971 (\u00b11.35%, n=5) neurons in the female CNS.",
+      "claim_type": "EXPLICIT",
+      "source": "nSyb-GAL4 had 9971 (\u00b11.35%, n=5) neurons",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from quantification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "f04adaa0-c3af-4b8f-91c4-379ceddf83c8",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C21",
+      "claim": "brp-GAL4 labeled significantly more neurons than either Syt1 or nSyb GAL4 lines in females.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested the statistical difference in the numbers of neurons labelled by these lines and found that while nSyb-GAL4 and Syt1-GAL4 were not statistically different from each other, brp-GAL4 did label significantly more neurons than either Syt1 or nSyb GAL4 lines (brp-GAL4 vs Syt1-GAL4+6.72%, p=0.03, brp-GAL4 vs nSyb-GAL4 +8.07%, p=0.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "25f734c1-dc8a-4311-bdbe-030f6325311f",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C22",
+      "claim": "The brp, Syt1 and nSyb GAL4 lines label only neurons and not glial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found complete exclusion of cells labelled by brp, Syt1 and nSyb GAL4 lines from cells labelled by repo (Figure 2d, brp-GAL4 & repo-QF2 Video 7, Syt1-GAL4 & repo-QF2 Video 8, nSyb-GAL4 & repo-QF2 Video 9), consistent with the brp, Syt1 and nSyb GAL4 lines labelling only neurons that express synaptic protein genes and not glial cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing complete exclusion of labeling between neuronal and glial markers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "b38c3ed5-19e7-455b-b469-b36379e37329",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C23",
+      "claim": "The inter-nuclei distance of glial cell nuclei exhibited a unimodal distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this measurement, we found that the inter-nuclei distance of glial cell nuclei exhibited a unimodal distribution (Figure 2e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "6a105c94-7efd-4833-a2a3-2d6c84a88e5e",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C24",
+      "claim": "All three neuronal lines exhibited a bimodal distribution of inter-nuclei distances.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, all three neuronal lines exhibited a bimodal distribution of inter-nuclei distances (Figure 2e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "86325ac3-f2eb-490b-a914-d9b35372657d",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C25",
+      "claim": "brp-GAL4 labeled 9888 (\u00b13.15%, n=5) neurons in males.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that brp-GAL4 labelled 9888 (\u00b13.15%, n=5) neurons",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from quantification in male larvae.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "933405ef-74e1-48f8-afba-9effe06a43c9",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C26",
+      "claim": "Syt1-GAL4 labeled 9012 (\u00b13.8%, n=5) neurons in males.",
+      "claim_type": "EXPLICIT",
+      "source": "Syt1-GAL4 labelled 9012 (\u00b13.8%, n=5) neurons",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from quantification in male larvae.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "d6cc42a1-f061-4482-b8f1-9798400ba09e",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C27",
+      "claim": "nSyb-GAL4 labeled 9286 (\u00b15.38%, n=5) neurons in male larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "nSyb-GAL4 labelled 9286 (\u00b15.38%, n=5) neurons in male larvae",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from quantification in male larvae.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "1fb0b99d-293f-4cae-aac2-3eaaa0a2dcec",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C28",
+      "claim": "Topological analysis supports that sexual dimorphism extends to deeper features of CNS organisation.",
+      "claim_type": "EXPLICIT",
+      "source": "Utilisation of these topological summaries in a support vector machine also supports that sexual dimorphism extends to deeper features of CNS organisation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by topological data analysis and machine learning results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "22a32122-6867-4c72-aa40-67eeb6f29af2",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C29",
+      "claim": "The SVM is able to extract the sex of the animal reliably from topological features.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of these correlations (Figure 3f), exhibiting clearly that the SVM is able to extract the sex of the animal reliably: only about 1.9% of the splits result in a higher correlation in the control set than in the true data.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 3f demonstrating SVM performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "489077f9-7f09-4596-8ffd-ba936e3739dc",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C30",
+      "claim": "Simpler point cloud features like properties of the distributions of inter-nuclei distances did not produce a significant signal for sex classification.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, repeating the procedure with simpler point cloud features, like properties of the distributions of inter-nuclei distances, did not produce a significant signal (Figure 3g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 3g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "0419b216-2f3d-4bfb-9d06-9f1d5c8b3ab1",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C31",
+      "claim": "Sh was expressed in 8204 \u00b15.67%, n=10 neurons in males.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Sh and Shal were expressed in large numbers of neurons 8204 \u00b15.67%, n=10 and 8261 \u00b13.1%, n=5 respectively",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from quantification of Sh expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "83a67db1-44f5-4ef0-8719-9e486e564094",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C32",
+      "claim": "Shal was expressed in 8261 \u00b13.1%, n=5 neurons in males.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Sh and Shal were expressed in large numbers of neurons 8204 \u00b15.67%, n=10 and 8261 \u00b13.1%, n=5 respectively",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from quantification of Shal expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "44b65687-2174-4f4f-ae8c-c6390fca1b95",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C33",
+      "claim": "Sh and Shal were expressed in significantly less neurons than the average number of all male neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Sh and Shal were expressed in large numbers of neurons 8204 \u00b15.67%, n=10 and 8261 \u00b13.1%, n=5 respectively, though significantly less (\u201312.7% and \u221212.1%, p<0.0001) than the average number of all male neurons",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "2b269c66-1a95-410f-bd83-2ae8ac02bff3",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C34",
+      "claim": "Shab was expressed in 3057 \u00b18.21%, n=10 neurons in males.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Shab (3057 \u00b18.21%, n=10) and Shaw (1737 \u00b14.3%, n=11) were expressed in smaller numbers of neurons",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from quantification of Shab expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "0f8499af-aae6-47c4-832e-9a17ac5ea987",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C35",
+      "claim": "Shaw was expressed in 1737 \u00b14.3%, n=11 neurons in males.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Shab (3057 \u00b18.21%, n=10) and Shaw (1737 \u00b14.3%, n=11) were expressed in smaller numbers of neurons",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from quantification of Shaw expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "638441a9-e4a0-4199-a6d7-ae353eb5a440",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C36",
+      "claim": "Shab was expressed in only 32.5% of total male neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "with expression observed in only 32.5% or 18.5% of total male neurons respectively",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data calculating the percentage of neurons expressing Shab.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "0c624c3e-f073-481b-ad0a-337025190a35",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C37",
+      "claim": "Shaw was expressed in only 18.5% of total male neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "with expression observed in only 32.5% or 18.5% of total male neurons respectively",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data calculating the percentage of neurons expressing Shaw.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "cd872a73-0ac1-4706-9ba9-c2377f4fab73",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C38",
+      "claim": "Shab and Shaw had very reduced expression in the brain lobes of larva compared with Sh and Shal.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, Shab and Shaw had very reduced expression in the brain lobes of larva (Figure 4c and d) compared with Sh and Shal (Figure 4a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "47078201-c89c-42f9-a5d8-af6c59b081b3",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C39",
+      "claim": "All four potassium channel GAL4 lines express in motor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "All four lines express in motor neurons as predicted from mutant analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "3f310daf-15b7-4096-b6dc-696057c5a190",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C40",
+      "claim": "The brp, Syt1 and nSyb GAL4 lines were not expressed prior to embryonic stage 16.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected no expression from any of the three lines prior to embryonic stage 16 (Figure 2\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2\u2014figure supplement 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "1aa9d5c8-d4be-4b3f-8565-e258dcc0f484",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C41",
+      "claim": "Beginning at stage 17 of embryonic development, all three lines displayed expression in both the CNS and peripheral nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "However, beginning at stage 17 of embryonic development, when synaptic activity begins (Baines and Bate, 1998), all three lines displayed expression in both the CNS and peripheral nervous system (Figure 2\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2\u2014figure supplement 2a and a citation to Baines and Bate, 1998.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "883ca59c-1172-4b3b-8d9f-0a4e47bde06e",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C42",
+      "claim": "Labelling by all three lines did not overlap with Deadpan expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that labelling by all three lines did not overlap with Deadpan expression (Figure 2\u2014figure supplement 2b), suggesting these lines are not expressed in neuroblasts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2\u2014figure supplement 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "9dd529a1-650f-430e-8654-85bbd90ae176",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C43",
+      "claim": "The three neuronal lines are not expressed in neuroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that labelling by all three lines did not overlap with Deadpan expression (Figure 2\u2014figure supplement 2b), suggesting these lines are not expressed in neuroblasts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the lack of overlap with Deadpan, a neuroblast marker.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "80627e53-476b-4fd1-b60d-4b874e5d4bb2",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C44",
+      "claim": "All three lines labeled a large fraction but not all of the total cells in the adult brain.",
+      "claim_type": "EXPLICIT",
+      "source": "We also examined expression of all three lines in the adult brain and, as in the larval CNS, observed labelling of a large fraction but not all of the total cells in the adult brain (Figure 2\u2014figure supplement 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2\u2014figure supplement 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "6eb30fb6-802e-40f2-b122-4bcebee166a9",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C45",
+      "claim": "Manual and automated quantification of nuclei numbers in dopaminergic, serotonergic, and dopa decarboxylase expressing neurons are similar.",
+      "claim_type": "EXPLICIT",
+      "source": "(h) Manual or automated quantification of nuclei numbers in these volumes are similar.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1h comparing manual and automated counts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "ca8d14c5-8880-476c-8c48-107fdc5c6823",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C46",
+      "claim": "The automated count of a brp-GAL4 labelled CNS differed from manual count by just 14 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to our experiments with sparse neuronal labelling, we found good agreement between manual and automated quantification with a difference of just 14 neurons (9430 nuclei manual vs 9444 nuclei automated for this individual CNS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data comparing manual and automated quantification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "60743b90-04a5-4064-b07c-ccfc796c3e79",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C47",
+      "claim": "The female Drosophila larval CNS had 10,312 neurons, fewer than most previous predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, we found that the female Drosophila larval CNS had 10,312 neurons, fewer than most previous predictions, and several fold more glia than previously thought.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data and comparison to previous estimates.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "8db56a18-8d51-4720-934b-9436f16d515b",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C48",
+      "claim": "The female Drosophila larval CNS had several fold more glia than previously thought.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, we found that the female Drosophila larval CNS had 10,312 neurons, fewer than most previous predictions, and several fold more glia than previously thought.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data and comparison to previous estimates.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "f01e6100-44d0-4989-8f0b-73f105df20f8",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C49",
+      "claim": "Synaptic activity begins at embryonic stage 17.",
+      "claim_type": "EXPLICIT",
+      "source": "However, beginning at stage 17 of embryonic development, when synaptic activity begins (Baines and Bate, 1998)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Baines and Bate, 1998.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "11c5dfa3-4d12-4a48-8d25-9476455159e1",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C50",
+      "claim": "Deadpan is a neuroblast marker.",
+      "claim_type": "EXPLICIT",
+      "source": "We also examined if these lines were expressed in neural stem cells during larval stages by co-labelling the larval CNS with the transcription factor Deadpan, a neuroblast marker (Bier et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Bier et al., 1992.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "1c8be874-b452-4b7f-8ca4-49399c25712b",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C51",
+      "claim": "Repo is a glial specific transcription factor.",
+      "claim_type": "EXPLICIT",
+      "source": "we compared their expression to that of glial cells labelled by glial specific transcription factor Repo (Xiong et al., 1994; Lin and Potter, 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Xiong et al., 1994; Lin and Potter, 2016.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "a5503a85-d0ae-4dea-9fe4-da28cccb3390",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C52",
+      "claim": "Synaptotagmin 1 is the fast calcium sensor for synaptic neurotransmitter release.",
+      "claim_type": "EXPLICIT",
+      "source": "which encodes Synaptotagmin 1 (Littleton et al., 1994), the fast calcium sensor for synaptic neurotransmitter release (Qui\u00f1ones-Fr\u00edas and Littleton, 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Littleton et al., 1994 and Qui\u00f1ones-Fr\u00edas and Littleton, 2021.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "cd421901-60d6-465b-a23e-038059c1c262",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C53",
+      "claim": "neuronal Synaptobrevin encodes an essential presynaptic vSNARE.",
+      "claim_type": "EXPLICIT",
+      "source": "which encodes an essential presynaptic vSNARE (S\u00fcdhof and Rothman, 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to S\u00fcdhof and Rothman, 2009.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "816fe439-1b8a-440b-97b3-d77aba47e791",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C54",
+      "claim": "The large relative ratio of glia observed in the third instar larva could conceivably be glia produced in advance of adult CNS development.",
+      "claim_type": "EXPLICIT",
+      "source": "An important potential caveat, however, is that the large relative ratio of glia we observe in the third instar larva could conceivably be glia produced in advance of adult CNS development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning about the interpretation of the data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "c311ff28-9c23-41ec-9572-c46a8359fc87",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C55",
+      "claim": "As adult specific neuron numbers expand during pupation, the relative ratio of glia could potentially decline.",
+      "claim_type": "EXPLICIT",
+      "source": "As adult specific neuron numbers expand during pupation, the relative ratio of glia could potentially decline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning about future developmental changes.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "543137df-b75e-4ba3-aa37-b2018ca26a17",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C56",
+      "claim": "The Drosophila CNS is comprised of both a brain and ventral nerve cord.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, the precise number of cells (neurons or glia) in either the smaller larval or larger adult Drosophila CNS, comprised of both a brain and ventral nerve cord (VNC), remain unknown",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge of Drosophila CNS anatomy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "9bdfe025-1df7-4c40-b471-1e53434b25cd",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C57",
+      "claim": "Encompassed within and surrounding the larval CNS are dividing neuroblasts, which will give rise to adult neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "First, encompassed within and surrounding the larval CNS are dividing neuroblasts, which will give rise to adult neurons (Doe, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Doe, 2017.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "7da89c9a-fc2d-4894-97e9-b6ecd0f1639d",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C58",
+      "claim": "Imbedded within the larval CNS are substantial numbers of immature adult neurons, observed from electron micrograph reconstructions as having few or no dendrites and axons that terminate in filopodia lacking synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Relatedly, imbedded within the larval CNS are substantial numbers of immature adult neurons, observed from electron micrograph reconstructions as having few or no dendrites and axons that terminate in filopodia lacking synapses (Eichler et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Eichler et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "3697ddc8-7493-4150-a387-0d3348cea051",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C59",
+      "claim": "Sexually dimorphic neural circuitry has been observed in the olfactory system of adult Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "In adult Drosophila, sexually dimorphic neural circuitry has been observed in the olfactory system (Kimura et al., 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Kimura et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "f480ae6b-8f33-466b-8cbd-db44014e3127",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C60",
+      "claim": "Human females have more olfactory bulb neurons and glia than males.",
+      "claim_type": "EXPLICIT",
+      "source": "and human females have also been reported to have more olfactory bulb neurons and glia than males (Oliveira-Pinto et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Oliveira-Pinto et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "2589ce09-9235-4ce2-8721-5a12be39ded5",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C61",
+      "claim": "Few sexually dimorphic behavioural differences have been reported in Drosophila larva.",
+      "claim_type": "EXPLICIT",
+      "source": "While sex-specific behavioural differences are obvious in adult Drosophila (Jazin and Cahill, 2010), few sexually dimorphic behavioural differences have been reported in larva (Aleman-Meza et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Jazin and Cahill, 2010 and Aleman-Meza et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "197c5048-0d8e-49c2-8174-9617c1829c64",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C62",
+      "claim": "Male and female Drosophila larva differ in nutritional preference.",
+      "claim_type": "EXPLICIT",
+      "source": "However, male and female larva do differ in nutritional preference (Rodrigues et al., 2015; Davies et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Rodrigues et al., 2015; Davies et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "b2b06a31-f273-466f-bcf0-12a9c78a0cc7",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C63",
+      "claim": "The glial-neuron ratio in the larval Drosophila CNS is closer to 0.4 glial cells per neuron on average.",
+      "claim_type": "EXPLICIT",
+      "source": "In the larval Drosophila CNS, we found closer to 0.4 glial cells per neuron on average, more similar to the glial-neuron ratios reported for rodents or rabbits (Verkhratsky and Butt, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data and comparison to ratios in other species cited.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "2458e056-b5cc-44c4-9e81-59c2bf1b73df",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C64",
+      "claim": "The glial-neuron ratios for rodents or rabbits are similar to the 0.4 ratio found in larval Drosophila CNS.",
+      "claim_type": "EXPLICIT",
+      "source": "In the larval Drosophila CNS, we found closer to 0.4 glial cells per neuron on average, more similar to the glial-neuron ratios reported for rodents or rabbits (Verkhratsky and Butt, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Verkhratsky and Butt, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "12d88d33-dd95-4919-b53e-60467db2d0f1",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C65",
+      "claim": "All voltage-gated potassium channels are collectively expressed in motor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, from our examination of voltage-gated potassium channel family gene expression, all these channels are collectively expressed in motor neurons",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "12ff5d1d-cbcd-4b99-8231-b3cab1485487",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C66",
+      "claim": "The Shab and Shaw genes have more discrete expression patterns in other CNS neuron classes.",
+      "claim_type": "EXPLICIT",
+      "source": "however, the Shab and Shaw genes have more discrete expression patterns in other CNS neuron classes, potentially imbuing these neurons with unique functional characteristics (Chow and Leung, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data and a citation to Chow and Leung, 2020.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "344ec9d2-ce67-4fb4-aae8-fac30c81c58a",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C67",
+      "claim": "Stereological counting of subregions assumes homogenous cell density across the organ or within subregions.",
+      "claim_type": "EXPLICIT",
+      "source": "A major limitation of this approach is the assumption of homogenous cell density across the organ or within subregions, which is not supported by the high variability of counts even between samples of similar regions, and thus likely introduces large errors (von Bartheld et al., 2016; Keller et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to von Bartheld et al., 2016; Keller et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "1ec0fd87-fbf5-4a79-b00a-60bad95defe2",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C68",
+      "claim": "Rough extrapolation of neuronal counts of electron microscope volumes of regions of the Drosophila larval CNS suggested an estimate of ~15,000 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Rough extrapolation of neuronal counts of electron microscope volumes of regions of the Drosophila larval CNS had suggested an estimate of ~15,000 neurons (Meinertzhagen, 2018; Eschbach and Zlatic, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Meinertzhagen, 2018; Eschbach and Zlatic, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "2c299b57-2180-49d1-b3ab-af205ca496fb",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C69",
+      "claim": "A recent study using isotropic fractionation suggested a number of 199,000 neurons in the adult Drosophila brain.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach has recently been used to estimate the total number of neurons and glia in the adult Drosophila brain and suggested a number of 199,000 neurons (Raji and Potter, 2021), twice prior estimates (Scheffer and Meinertzhagen, 2019; Allen et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Raji and Potter, 2021; Scheffer and Meinertzhagen, 2019; Allen et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "77f4592b-791f-4b22-90d5-416394e550dd",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C70",
+      "claim": "A recent study found no significant differences in the number of neurons between the sexes in adult Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to our results in the larval CNS, this study found no significant differences in the number of neurons between the sexes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparison to results from Raji and Potter, 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "15194efb-a50f-4448-83c7-b3f93ea90b88",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C71",
+      "claim": "A recent study found that 'non-neuronal' cells accounted for less than 9% of the total cells counted in adult Drosophila brain.",
+      "claim_type": "EXPLICIT",
+      "source": "and also found that 'non-neuronal' cells, which should include glia, accounted for less than 9% of the total cells counted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparison to results from Raji and Potter, 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "e902c9ba-23ac-4765-b38f-d2cb20222436",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C72",
+      "claim": "The use of anti-Elav antibody labelling can label some glia in addition to neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "their use of anti-Elav antibody labelling, which can label some glia in addition to neurons (Berger et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Berger et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "0408fda8-251c-42ac-a1f6-5085a889f68b",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C73",
+      "claim": "The methodology enables robust and accurate quantification of the number and positioning of cells within intact organs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our methodology enables robust and accurate quantification of the number and positioning of cells within intact organs, facilitating sophisticated analysis of cellular identity, diversity, and gene expression characteristics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental results presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "dbd49d1f-7673-4fe9-a54c-e91ed254f50f",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C74",
+      "claim": "The methodology facilitates sophisticated analysis of cellular identity, diversity, and gene expression characteristics.",
+      "claim_type": "EXPLICIT",
+      "source": "Our methodology enables robust and accurate quantification of the number and positioning of cells within intact organs, facilitating sophisticated analysis of cellular identity, diversity, and gene expression characteristics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental results and topological analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "9c591677-723f-448b-b286-3e5b6110683b",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C75",
+      "claim": "The method can be employed to allow precise quantitation of gene expression characteristics of the constituent cells of the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "We envision that our method can be employed to allow precise quantitation of gene expression characteristics of the constituent cells of the brain, and potentially other intact whole organs, in a format suitable for sophisticated downstream analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the demonstrated capabilities of the method in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "11472f80-4475-44b4-953b-2e0ad0a761dc",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C76",
+      "claim": "The method can potentially be applied to other intact whole organs.",
+      "claim_type": "EXPLICIT",
+      "source": "We envision that our method can be employed to allow precise quantitation of gene expression characteristics of the constituent cells of the brain, and potentially other intact whole organs, in a format suitable for sophisticated downstream analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative about future applications of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "32389ddb-b254-43f3-868f-fa562492ada7",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C77",
+      "claim": "CNS images were acquired with a 20\u00d7/1.0 Apochromat immersion detection objective and two 10\u00d7/0.2 illumination objectives at five different views, with 1 \u00b5m z-intervals.",
+      "claim_type": "EXPLICIT",
+      "source": "CNS images were acquired with a 20 \u00d7/1.0 Apochromat immersion detection objective and two 10 \u00d7/0.2 illumination objectives at five different views, with 1 \u00b5m z-intervals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "0638c7c2-a3bc-49c4-893a-26413bacb772",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C78",
+      "claim": "Voxel resolution was 0.317 um.",
+      "claim_type": "EXPLICIT",
+      "source": "Voxel resolution was 0.317 um.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "8e6545c1-22f5-4721-9fb0-625df4b04a34",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C79",
+      "claim": "Segmented objects with volume less than 15 \u00b5m3 were removed from analysis to avoid unspecific signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Segmented objects with volume less than 15 \u00b5m3 were removed from analysis by segmentation filter to avoid unspecific signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the data processing methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "994ad004-7fa4-4de7-91d3-6db702017cdd",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C80",
+      "claim": "The exonic insertion of GAL4 in the brp gene generated a hypomorphic allele of brp when homozygous.",
+      "claim_type": "EXPLICIT",
+      "source": "While this exonic insertion generated a hypomorphic allele of brp (data not shown) when homozygous, the line was employed in heterozygotes to capture Brp protein expression with high fidelity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental observation mentioned in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "275982b2-eb93-4d34-a632-91955b5aa4b2",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C81",
+      "claim": "The brp-GAL4 line was employed in heterozygotes to capture Brp protein expression with high fidelity.",
+      "claim_type": "EXPLICIT",
+      "source": "While this exonic insertion generated a hypomorphic allele of brp (data not shown) when homozygous, the line was employed in heterozygotes to capture Brp protein expression with high fidelity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental approach used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "7573916e-e2be-4fbc-96c1-123c0a38ad44",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C82",
+      "claim": "elav-GAL4 was expressed in larval neurons, but also apparently in some immature neurons and potentially in some glia as well.",
+      "claim_type": "EXPLICIT",
+      "source": "These lines contrasted with the widely used elav-GAL4 (Lin and Goodman, 1994), which was expressed in larval neurons, but also apparently in some immature neurons and potentially in some glia as well (Berger et al., 2007; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations and data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "72b1d56f-b8cf-45e5-bc1a-97dc8626cb0f",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "claim_id": "C83",
+      "claim": "Wandering third instar larvae were dissected within a ~2 hr developmental time window.",
+      "claim_type": "EXPLICIT",
+      "source": "imaging only animals within the ~2 hr developmental time window of the wandering third instar larval stage (Ainsley et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental methods and is supported by a citation to Ainsley et al., 2008.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "91a66007-b8b9-4184-af9c-029e09eefcfd",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The automated quantification pipeline accurately counts neurons in sparse labeling conditions. Manual and automated counts of dopaminergic, serotonergic, and dopa decarboxylase expressing neurons showed high concordance (C45), and automated counting of a densely labeled brp-GAL4 CNS differed from manual count by only 14 neurons (C46).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45 and C46 provide strong validation of the automated quantification method through direct comparison with manual counting in both sparse and dense labeling conditions. The minimal discrepancy (14 neurons in ~9400) demonstrates the reliability and accuracy of the computational pipeline for cell counting.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "631a47a4-3697-48ee-82d4-7c1e15264f55",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The female third instar larval Drosophila CNS contains 10,312 neurons and 3,860 glia. This represents fewer neurons than most previous predictions and substantially more glia than previously estimated, with glia comprising 37% of the neuronal count rather than the previously estimated 10%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C11, C47-C48 collectively establish precise cell counts for the female larval CNS using validated methodology. The neuron count is based on averaging across three independent GAL4 lines (n=16 total), and the glial count uses repo-GAL4 (n=7). The findings contradict prior estimates (C6) with direct experimental evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "462f4a34-fc73-40e1-8f70-b24d44ad0092",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Male third instar larval Drosophila CNS exhibits sexual dimorphism with 9,396 neurons (9.75% fewer than females, p<0.0001) and 4,015 glia (3.86% more than females, p=0.0284). This represents a previously unrecognized sex difference at the larval stage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C16 establish statistically significant sexual dimorphism in both neuron and glial cell numbers. The neuron difference is consistent across all three GAL4 lines tested, and statistical significance is properly demonstrated with appropriate p-values and sample sizes (n=15 for neurons, n=6 for glia in males).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "0e7e8880-3fd1-47ea-ab82-928d27590384",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Three synaptic protein GAL4 lines (brp-GAL4, Syt1-GAL4, nSyb-GAL4) label similar but not identical numbers of neurons in both female and male larval CNS. In females, brp-GAL4 labeled significantly more neurons than the other two lines, while in males this difference was only significant compared to Syt1-GAL4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C21 and C25-C27 provide quantitative data with appropriate statistical testing showing that while all three lines label functional neurons, brp-GAL4 consistently labels more cells. The statistical comparisons are properly conducted with stated p-values and sample sizes (n=5-6 per line).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "51e3387b-5537-4173-b711-e33f41a37bbf",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The brp, Syt1, and nSyb GAL4 lines specifically label neurons and not glia or neuroblasts. Complete exclusion from repo-labeled glial cells was demonstrated, and no overlap with Deadpan-expressing neuroblasts was observed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22, C42-C43 establish cell-type specificity through independent labeling systems (GAL4/QF2) and marker analysis. The complete exclusion from glial and neuroblast markers provides strong evidence that these lines specifically label differentiated neurons, which is critical for the validity of the neuron counts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "13ed52dd-5960-4fa5-b0f5-15ebf9173ea7",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Inter-nuclei distance distributions differ between neuronal and glial populations. Glial nuclei exhibit a unimodal distribution while all three neuronal GAL4 lines show bimodal distributions of inter-nuclei distances.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C24 describe distinct spatial organization patterns between cell types based on quantitative analysis of nuclear positions. The bimodal vs. unimodal distinction provides additional validation that the neuronal and glial lines label different cell populations with different spatial arrangements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "792d7944-2a4d-478a-b864-17d043ccc5cf",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Topological data analysis reveals that sexual dimorphism extends beyond cell numbers to deeper organizational features of CNS structure. A support vector machine using topological features reliably classified sex (only 1.9% false positives), while simpler features like inter-nuclei distance distributions did not produce significant classification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C30 demonstrate that sexual dimorphism involves complex structural differences using sophisticated mathematical analysis. The SVM classification performance (C29) with proper controls (C30) provides strong evidence for subtle, distributed organizational differences beyond simple cell counts. The methodology appears sound with appropriate train/test splits and controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "74b6b039-b752-4266-a005-44d685205474",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Voltage-gated potassium channel family members show divergent expression patterns in the male larval CNS. Sh and Shal are broadly expressed (8,204 and 8,261 neurons, ~87% of total), while Shab and Shaw show restricted expression (3,057 and 1,737 neurons, 32.5% and 18.5% of total), with particularly reduced expression in brain lobes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C38 establish differential expression patterns across the potassium channel family with appropriate quantification (n=5-11 per line) and statistical testing (p<0.0001 for Sh/Shal vs. total neurons). The spatial analysis (C38) is supported by figure data. This demonstrates the utility of the method for gene expression frequency analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "bed30cbc-8950-4d48-8cc7-e93ff7040b33",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "All four voltage-gated potassium channel GAL4 lines are expressed in motor neurons, consistent with prior functional studies, despite their divergent expression patterns elsewhere in the CNS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39 and C65 validate the GAL4 reporter lines against established knowledge from electrophysiological studies. The motor neuron expression provides important validation that the lines accurately report endogenous gene expression, supporting the reliability of CNS-wide quantification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "82c4fbd4-f4e0-4fe5-a381-b76f49cd8791",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The brp, Syt1, and nSyb GAL4 lines show no expression before embryonic stage 16 but display expression in both CNS and peripheral nervous system beginning at stage 17, coinciding with the onset of synaptic activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 establish the developmental timing of synaptic protein gene expression with appropriate citation (C49) for when synaptic activity begins. The temporal correlation between gene expression onset and functional synapse formation supports that these lines label functionally active neurons.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "c9aaf05b-9354-40ca-a8f2-16167ead40ce",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The three neuronal GAL4 lines label a large fraction but not all cells in the adult brain, similar to the pattern observed in larval CNS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C44 extends the characterization of the GAL4 lines to adult stages, showing consistency in labeling patterns across developmental stages. This supports the interpretation that these lines label functional neurons rather than all neurons, though the claim is primarily descriptive without quantification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "4edd3f6b-0e2b-4cff-accd-f752b1229098",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The glial-to-neuron ratio in larval Drosophila CNS is approximately 0.4:1, more similar to ratios in rodents and rabbits than to previous estimates of 0.1:1 in adult Drosophila.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63 and C11 establish a revised glial-to-neuron ratio based on direct quantification (3,860 glia / 10,312 neurons = 0.37). The comparison to mammalian ratios (C64) is appropriately cited. However, the caveat raised in C54-C55 about developmental timing should be considered when interpreting this ratio.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "57634ae4-35f0-4489-938b-791dc59c107b",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Shab and Shaw potassium channels have discrete expression patterns in CNS neuron classes beyond motor neurons, potentially conferring unique functional characteristics to specific neuronal populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66 and C38 interpret the restricted expression patterns of Shab and Shaw as functionally significant, with appropriate citation (Chow and Leung, 2020). The experimental data showing limited expression (32.5% and 18.5% of neurons) and reduced brain lobe expression supports this interpretation, though the functional implications remain inferential.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "1790ad34-2996-4da5-af67-c0ee86e68e1c",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The developed methodology enables robust quantification of cell numbers and positions in intact organs, facilitating sophisticated analysis of cellular identity, diversity, and gene expression characteristics throughout the brain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C75 summarize the capabilities demonstrated throughout the manuscript. The validation studies (C45-C46), successful cell-type quantification (C9-C16), spatial analysis (C23-C24, C28-C30), and gene expression frequency measurements (C31-C38) collectively support these methodological claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "a1009f03-1724-4121-8f43-b51affe0b1f3",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The high glial-to-neuron ratio observed in third instar larvae may represent glia produced in advance of adult CNS development, and this ratio could potentially decline as adult-specific neurons expand during pupation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C54-C55 are explicitly speculative (\"could conceivably,\" \"could potentially\") and represent important caveats about interpreting the glial ratio. The authors appropriately acknowledge this limitation, but no data is provided to test this hypothesis. Additional measurements at pupal or adult stages would be needed to resolve this uncertainty.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "463d716e-4edc-4bea-9769-8d5127b93949",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The method can potentially be applied to other intact whole organs beyond the brain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C76 is explicitly speculative (\"potentially\") about future applications. While the methodology is sound for CNS analysis, no data is provided demonstrating application to other organs. This represents a reasonable extrapolation but remains unvalidated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "9167acda-7617-460b-957c-7b676e9c97a1",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The CRISPR-generated brp-GAL4 exonic insertion creates a hypomorphic allele when homozygous but was used in heterozygotes to capture Brp protein expression with high fidelity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C81 describe the genetic strategy used to generate a key reagent. The hypomorphic nature is mentioned as observed (\"data not shown\") and the heterozygous use is a standard approach to avoid phenotypic effects while maintaining reporter expression. The validation through cell counting supports that the heterozygous line functions as intended.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "56c8f8d5-1da5-4c8a-85bc-d9444d6a1148",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The widely used elav-GAL4 line labels larval neurons but also some immature neurons and potentially some glia, contrasting with the more specific synaptic protein GAL4 lines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C82 explains why elav-GAL4 was not used for quantification, with appropriate citations (Berger et al., 2007) and supporting figure data. This justifies the development of alternative GAL4 lines for more specific functional neuron labeling.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    },
+    {
+      "id": "cb3343c0-7846-4588-bbbf-122eb6bdcd52",
+      "content_id": "077f51ba-3f78-4635-b65c-255df470f0d6",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The imaging and analysis pipeline uses light-sheet microscopy with specific parameters (20\u00d7/1.0 detection objective, five views at 72\u00b0 intervals, 1 \u03bcm z-intervals, 0.317 \u03bcm voxel resolution) and applies volume thresholds (>15 \u03bcm\u00b3) to filter non-specific signals, with samples collected within a narrow developmental window (~2 hours).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C79, C83 describe the technical methodology in detail. These parameters are appropriate for the application and the narrow developmental window (C83) is important for reducing biological variability. The volume threshold (C79) is a reasonable approach to exclude artifacts, though the specific cutoff value is not independently validated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:11:15.845914Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6eb30fb6-802e-40f2-b122-4bcebee166a9",
+      "result_id": "91a66007-b8b9-4184-af9c-029e09eefcfd"
+    },
+    {
+      "claim_id": "ca8d14c5-8880-476c-8c48-107fdc5c6823",
+      "result_id": "91a66007-b8b9-4184-af9c-029e09eefcfd"
+    },
+    {
+      "claim_id": "600f3239-a5fa-4b66-ac37-3ab1563a6114",
+      "result_id": "631a47a4-3697-48ee-82d4-7c1e15264f55"
+    },
+    {
+      "claim_id": "1a6fcf73-af14-4b77-a4c2-c8dd5b044c86",
+      "result_id": "631a47a4-3697-48ee-82d4-7c1e15264f55"
+    },
+    {
+      "claim_id": "8f9ddc3a-c626-4af1-8fa9-7b6bc7e7d02d",
+      "result_id": "631a47a4-3697-48ee-82d4-7c1e15264f55"
+    },
+    {
+      "claim_id": "60743b90-04a5-4064-b07c-ccfc796c3e79",
+      "result_id": "631a47a4-3697-48ee-82d4-7c1e15264f55"
+    },
+    {
+      "claim_id": "8db56a18-8d51-4720-934b-9436f16d515b",
+      "result_id": "631a47a4-3697-48ee-82d4-7c1e15264f55"
+    },
+    {
+      "claim_id": "13d1469b-5da4-440b-a552-6a091d38e11f",
+      "result_id": "462f4a34-fc73-40e1-8f70-b24d44ad0092"
+    },
+    {
+      "claim_id": "80fd5a20-f954-4e8c-9ee9-87f0e8e40964",
+      "result_id": "462f4a34-fc73-40e1-8f70-b24d44ad0092"
+    },
+    {
+      "claim_id": "ad5c7594-0214-4a40-a1d3-71f5eea426d3",
+      "result_id": "462f4a34-fc73-40e1-8f70-b24d44ad0092"
+    },
+    {
+      "claim_id": "d575fa0a-2940-41f5-b0fa-e4ff2355ce77",
+      "result_id": "462f4a34-fc73-40e1-8f70-b24d44ad0092"
+    },
+    {
+      "claim_id": "82b8d40b-4f29-4aca-b61a-c47b4155d920",
+      "result_id": "462f4a34-fc73-40e1-8f70-b24d44ad0092"
+    },
+    {
+      "claim_id": "41882b53-b8fc-46a8-a9cf-60227ad4ffbe",
+      "result_id": "0e7e8880-3fd1-47ea-ab82-928d27590384"
+    },
+    {
+      "claim_id": "3a02bbb7-282c-43b4-a6d8-e7022da5353b",
+      "result_id": "0e7e8880-3fd1-47ea-ab82-928d27590384"
+    },
+    {
+      "claim_id": "d5e1169e-472c-46d9-8cb2-1243158f47a1",
+      "result_id": "0e7e8880-3fd1-47ea-ab82-928d27590384"
+    },
+    {
+      "claim_id": "f04adaa0-c3af-4b8f-91c4-379ceddf83c8",
+      "result_id": "0e7e8880-3fd1-47ea-ab82-928d27590384"
+    },
+    {
+      "claim_id": "86325ac3-f2eb-490b-a914-d9b35372657d",
+      "result_id": "0e7e8880-3fd1-47ea-ab82-928d27590384"
+    },
+    {
+      "claim_id": "933405ef-74e1-48f8-afba-9effe06a43c9",
+      "result_id": "0e7e8880-3fd1-47ea-ab82-928d27590384"
+    },
+    {
+      "claim_id": "d6cc42a1-f061-4482-b8f1-9798400ba09e",
+      "result_id": "0e7e8880-3fd1-47ea-ab82-928d27590384"
+    },
+    {
+      "claim_id": "25f734c1-dc8a-4311-bdbe-030f6325311f",
+      "result_id": "51e3387b-5537-4173-b711-e33f41a37bbf"
+    },
+    {
+      "claim_id": "883ca59c-1172-4b3b-8d9f-0a4e47bde06e",
+      "result_id": "51e3387b-5537-4173-b711-e33f41a37bbf"
+    },
+    {
+      "claim_id": "9dd529a1-650f-430e-8654-85bbd90ae176",
+      "result_id": "51e3387b-5537-4173-b711-e33f41a37bbf"
+    },
+    {
+      "claim_id": "b38c3ed5-19e7-455b-b469-b36379e37329",
+      "result_id": "13ed52dd-5960-4fa5-b0f5-15ebf9173ea7"
+    },
+    {
+      "claim_id": "6a105c94-7efd-4833-a2a3-2d6c84a88e5e",
+      "result_id": "13ed52dd-5960-4fa5-b0f5-15ebf9173ea7"
+    },
+    {
+      "claim_id": "1fb0b99d-293f-4cae-aac2-3eaaa0a2dcec",
+      "result_id": "792d7944-2a4d-478a-b864-17d043ccc5cf"
+    },
+    {
+      "claim_id": "22a32122-6867-4c72-aa40-67eeb6f29af2",
+      "result_id": "792d7944-2a4d-478a-b864-17d043ccc5cf"
+    },
+    {
+      "claim_id": "489077f9-7f09-4596-8ffd-ba936e3739dc",
+      "result_id": "792d7944-2a4d-478a-b864-17d043ccc5cf"
+    },
+    {
+      "claim_id": "0419b216-2f3d-4bfb-9d06-9f1d5c8b3ab1",
+      "result_id": "74b6b039-b752-4266-a005-44d685205474"
+    },
+    {
+      "claim_id": "83a67db1-44f5-4ef0-8719-9e486e564094",
+      "result_id": "74b6b039-b752-4266-a005-44d685205474"
+    },
+    {
+      "claim_id": "44b65687-2174-4f4f-ae8c-c6390fca1b95",
+      "result_id": "74b6b039-b752-4266-a005-44d685205474"
+    },
+    {
+      "claim_id": "2b269c66-1a95-410f-bd83-2ae8ac02bff3",
+      "result_id": "74b6b039-b752-4266-a005-44d685205474"
+    },
+    {
+      "claim_id": "0f8499af-aae6-47c4-832e-9a17ac5ea987",
+      "result_id": "74b6b039-b752-4266-a005-44d685205474"
+    },
+    {
+      "claim_id": "638441a9-e4a0-4199-a6d7-ae353eb5a440",
+      "result_id": "74b6b039-b752-4266-a005-44d685205474"
+    },
+    {
+      "claim_id": "0c624c3e-f073-481b-ad0a-337025190a35",
+      "result_id": "74b6b039-b752-4266-a005-44d685205474"
+    },
+    {
+      "claim_id": "cd872a73-0ac1-4706-9ba9-c2377f4fab73",
+      "result_id": "74b6b039-b752-4266-a005-44d685205474"
+    },
+    {
+      "claim_id": "47078201-c89c-42f9-a5d8-af6c59b081b3",
+      "result_id": "bed30cbc-8950-4d48-8cc7-e93ff7040b33"
+    },
+    {
+      "claim_id": "12d88d33-dd95-4919-b53e-60467db2d0f1",
+      "result_id": "bed30cbc-8950-4d48-8cc7-e93ff7040b33"
+    },
+    {
+      "claim_id": "3f310daf-15b7-4096-b6dc-696057c5a190",
+      "result_id": "82c4fbd4-f4e0-4fe5-a381-b76f49cd8791"
+    },
+    {
+      "claim_id": "1aa9d5c8-d4be-4b3f-8565-e258dcc0f484",
+      "result_id": "82c4fbd4-f4e0-4fe5-a381-b76f49cd8791"
+    },
+    {
+      "claim_id": "80627e53-476b-4fd1-b60d-4b874e5d4bb2",
+      "result_id": "c9aaf05b-9354-40ca-a8f2-16167ead40ce"
+    },
+    {
+      "claim_id": "b2b06a31-f273-466f-bcf0-12a9c78a0cc7",
+      "result_id": "4edd3f6b-0e2b-4cff-accd-f752b1229098"
+    },
+    {
+      "claim_id": "8f9ddc3a-c626-4af1-8fa9-7b6bc7e7d02d",
+      "result_id": "4edd3f6b-0e2b-4cff-accd-f752b1229098"
+    },
+    {
+      "claim_id": "12ff5d1d-cbcd-4b99-8231-b3cab1485487",
+      "result_id": "57634ae4-35f0-4489-938b-791dc59c107b"
+    },
+    {
+      "claim_id": "cd872a73-0ac1-4706-9ba9-c2377f4fab73",
+      "result_id": "57634ae4-35f0-4489-938b-791dc59c107b"
+    },
+    {
+      "claim_id": "0408fda8-251c-42ac-a1f6-5085a889f68b",
+      "result_id": "1790ad34-2996-4da5-af67-c0ee86e68e1c"
+    },
+    {
+      "claim_id": "dbd49d1f-7673-4fe9-a54c-e91ed254f50f",
+      "result_id": "1790ad34-2996-4da5-af67-c0ee86e68e1c"
+    },
+    {
+      "claim_id": "9c591677-723f-448b-b286-3e5b6110683b",
+      "result_id": "1790ad34-2996-4da5-af67-c0ee86e68e1c"
+    },
+    {
+      "claim_id": "816fe439-1b8a-440b-97b3-d77aba47e791",
+      "result_id": "a1009f03-1724-4121-8f43-b51affe0b1f3"
+    },
+    {
+      "claim_id": "c311ff28-9c23-41ec-9572-c46a8359fc87",
+      "result_id": "a1009f03-1724-4121-8f43-b51affe0b1f3"
+    },
+    {
+      "claim_id": "11472f80-4475-44b4-953b-2e0ad0a761dc",
+      "result_id": "463d716e-4edc-4bea-9769-8d5127b93949"
+    },
+    {
+      "claim_id": "994ad004-7fa4-4de7-91d3-6db702017cdd",
+      "result_id": "9167acda-7617-460b-957c-7b676e9c97a1"
+    },
+    {
+      "claim_id": "275982b2-eb93-4d34-a632-91955b5aa4b2",
+      "result_id": "9167acda-7617-460b-957c-7b676e9c97a1"
+    },
+    {
+      "claim_id": "7573916e-e2be-4fbc-96c1-123c0a38ad44",
+      "result_id": "56c8f8d5-1da5-4c8a-85bc-d9444d6a1148"
+    },
+    {
+      "claim_id": "32389ddb-b254-43f3-868f-fa562492ada7",
+      "result_id": "cb3343c0-7846-4588-bbbf-122eb6bdcd52"
+    },
+    {
+      "claim_id": "0638c7c2-a3bc-49c4-893a-26413bacb772",
+      "result_id": "cb3343c0-7846-4588-bbbf-122eb6bdcd52"
+    },
+    {
+      "claim_id": "8e6545c1-22f5-4721-9fb0-625df4b04a34",
+      "result_id": "cb3343c0-7846-4588-bbbf-122eb6bdcd52"
+    },
+    {
+      "claim_id": "72b1d56f-b8cf-45e5-bc1a-97dc8626cb0f",
+      "result_id": "cb3343c0-7846-4588-bbbf-122eb6bdcd52"
+    }
+  ],
+  "comparisons": []
+}

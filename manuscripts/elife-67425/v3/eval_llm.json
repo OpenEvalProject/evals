@@ -1,0 +1,365 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The authors developed a bacterial growth assay that reports on Ire1 RNase promiscuity. Expression of S. pombe Ire1-KR is toxic to E. coli cells due to its promiscuous RNase activity, while S. cerevisiae Ire1-KR is not toxic due to its stringent substrate specificity. The RNase inhibitor 4\u00b58C and an RNase-dead mutant both alleviate toxicity, confirming that toxicity results from endonuclease activity rather than indirect effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C31 provide converging evidence from bacterial growth curves (C21-C22), inhibitor rescue experiments (C26-C28), and RNase-dead mutant controls (C29) that collectively support the development and validation of a bacterial growth assay for assessing Ire1 RNase promiscuity. The mechanistic interpretation (C30) is well-supported by the experimental controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The authors identified 17 candidate residues at the RNase domain interfaces and near the helix-loop element that may regulate Ire1 RNase promiscuity. A mutant Sc Ire1-KR with all 17 residues replaced by their S. pombe counterparts (Sc Ire1-KR-mut17) efficiently cleaved all four stem-loop RNA substrates tested, including both Sc HAC1 and Sp RIDD substrates, rendering it 'pombe-like' in substrate acceptance. This mutant was toxic in the bacterial growth assay, confirming its broadened substrate range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 describe a systematic mutagenesis approach with clear experimental validation. The in vitro RNA cleavage data (C34) and bacterial toxicity assay (C36) provide complementary evidence that the 17 mutations confer promiscuous RNase activity. The structural rationale for residue selection (C32-C33) is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Through revertant analysis, the authors narrowed down the critical residues to three positions: K992, H1044, and Y1059. Sc Ire1-KR(K992D,Y1059R) cleaved both Sc and Sp RNA substrates efficiently, while Sc Ire1-KR(H1044D) retained only Sc substrate specificity. This suggests that the two cerevisiae-to-pombe mutations at positions K992 and Y1059 at the RNase-RNase dimer interface confer Ire1 RNase promiscuity, while H1044D appears to be a false positive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 describe a systematic dissection of the 17-residue mutant through revertant analysis and targeted mutagenesis. The experimental data (C39-C41) clearly demonstrate that K992D and Y1059R are sufficient to confer promiscuity, while H1044D is not. The interpretation of H1044D as a false positive (C43) is reasonable given the limitations of the bacterial assay.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The authors characterized the RNA sequence and structural requirements for cleavage by WT Sc Ire1-KR and Sc Ire1-KR(K992D,Y1059R). WT Sc Ire1-KR recognizes the stringent motif CNG|(C/A)NGN and requires specific loop sizes, while Sc Ire1-KR(K992D,Y1059R) recognizes the less stringent motif CNG|NNGN, tolerates base substitutions at the +1 position, and accepts a range of loop sizes (7-, 9-membered loops). This demonstrates that the two interface mutations render the enzyme more tolerant to both RNA sequence and loop size variations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C52 provide comprehensive characterization of substrate specificity through systematic mutagenesis of RNA substrates. The data show clear differences in sequence motif recognition (C44-C45, C50) and loop size tolerance (C46-C47, C51) between WT and mutant enzymes. The conclusions (C48, C52) are well-supported by the experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Molecular dynamics simulations predict that the K992D and Y1059R mutations cause structural rearrangement at the Ire1 dimer interface. In WT Sc Ire1-KR, residues E988 and K992 form symmetric salt bridges across the dimer interface. These salt bridges are absent in Sc Ire1-KR(K992D,Y1059R) due to charge reversal. Instead, new salt bridges form between D992 and R1059 across the protomer interface, which are predicted to be stable throughout the MD simulation. This salt bridge rewiring allows Sc Ire1 to assume a promiscuous 'pombe-like' state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 describe computational predictions from MD simulations. The structural models are based on established crystal structures and standard MD protocols. The predicted salt bridge rewiring (C55-C57) is internally consistent and provides a mechanistic hypothesis. However, the simulations are relatively short (20 ns) and the predictions require experimental validation, which is provided in subsequent claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The predicted new salt bridges in Sc Ire1-KR(K992D,Y1059R) are mediated by guanidinium-carboxylate bidentate interactions, which are stronger than the ammonium-carboxylate interactions in WT Sc Ire1-KR. This predicts that the mutant enzyme should be more prone to form dimers/oligomers. Experimental validation by protein crosslinking and analytical ultracentrifugation confirmed that Sc Ire1-KR(K992D,Y1059R) forms more dimers and tetramers than WT, with a ~60-fold decrease in KD (0.98 \u00b5M vs 57 \u00b5M). This suggests that the stronger salt bridges increase dimer affinity and oligomerization propensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 combine computational predictions with experimental validation. The chemical reasoning about interaction strengths (C60-C61) is supported by literature. The experimental data from crosslinking (C63) and AUC (C64) provide strong quantitative support for the prediction (C62). The interpretation (C65) is reasonable and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The authors experimentally validated the predicted salt bridges through mutagenesis. Sc Ire1-KR(K992D,Y1059A) did not form dimers and showed ~100-fold reduced cleavage efficiency on HAC1 substrate and ~10,000-fold reduction on BIP1 substrate, restoring substrate discrimination by ~100-fold. Sc Ire1-KR(K992A,Y1059R) abolished RNase activity (>10,000-fold reduction). The charge-reversal mutant Sc Ire1-KR(K992R,Y1059D) regained activity towards BIP1 substrate and formed dimers. These experiments validate the predicted salt bridges and demonstrate that salt bridge rewiring to a pombe-like arrangement confers promiscuity to Ire1 RNase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C73 provide systematic experimental validation of the computational predictions through mutagenesis. The data from crosslinking (C66, C71), RNA cleavage assays (C67, C69, C70), and substrate discrimination analysis (C68) are internally consistent and support the salt bridge model. The charge-reversal experiment (C70-C71) is particularly compelling evidence for the importance of the predicted salt bridges.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Sequence comparison of 230 Ire1 orthologs revealed that 175 orthologs (including human Ire1\u03b1 and Ire1\u03b2) have the S. pombe-like salt bridge pattern (varying amino acid at position 988, D/E at 992, K/R at 1059), while 33 orthologs have the S. cerevisiae-like pattern (D/E at 988, K/R at 992, mostly Y at 1059). The apparent co-evolution of positions 992 and 1059 (in pombe-like) and positions 988 and 992 (in cerevisiae-like) supports the existence of inter-molecular salt bridges at the dimer interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 describe phylogenetic analysis of Ire1 orthologs. The sequence comparison data (C74, C76) are clearly presented and the evolutionary inference about co-evolution (C75, C77) is reasonable. This provides independent support for the functional importance of the identified salt bridge patterns across diverse species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Structural analysis of MD simulations revealed that the salt bridge rewiring causes changes in protomer alignment. The new D992-R1059' salt bridge reduces the distance between \u03b11- and \u03b14-helices, while loss of E988-K992 salt bridges increases the distance between \u03b11-helices. Quantitatively, the distance between centers of mass of the two \u03b11-helices increased by ~3 \u00c5, while the distance between R1039 (substrate binding) and H1061' (catalysis) decreased by ~5 \u00c5 in Sc Ire1-KR(K992D,Y1059R) compared to WT. This demonstrates that the mutations change both the RNase-RNase interface and the relative alignment of catalytic elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 provide detailed structural analysis from MD simulations with specific quantitative measurements. The structural changes are clearly described and the metrics used (C80-C81) are appropriate for characterizing protomer alignment. The conclusion (C82) is well-supported by the structural data, though it remains a computational prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Structural comparison revealed that RNase L, which has promiscuous RNase activity, shares a similar protomer alignment with Sc Ire1-KR(K992D,Y1059R). At the RNase-RNase dimer interface of RNase L, N601' and E671 form intermolecular hydrogen bonds between \u03b11- and \u03b14-helices, similar to the arrangement in Sc Ire1-KR(K992D,Y1059R). Analysis using the same structural metrics confirmed that RNase L's protomer alignment closely resembles that of Sc Ire1-KR(K992D,Y1059R), suggesting that promiscuous RNase activity correlates with this protomer alignment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 describe structural comparison with RNase L, providing independent support for the relationship between protomer alignment and RNase promiscuity. The structural analysis (C86, C88) is based on published crystal structures and the comparison uses consistent metrics (C88). The conclusion (C89) is reasonable but somewhat speculative as it is based on structural similarity rather than functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The authors found that S. cerevisiae Ire1's RNase specificity becomes promiscuous when only two amino acids, K992 and Y1059, are replaced by aspartate and arginine respectively. However, Sc Ire1-KR(K992D,Y1059R) retained activity towards HAC1 mRNA-derived stem-loops (which Sp Ire1 cannot cleave), making it even more promiscuous than Sp Ire1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 summarize the main finding regarding the minimal mutations required for promiscuity. The data supporting these claims are presented throughout the manuscript (particularly in claims C39-C42, C45, C50). The observation that the mutant is more promiscuous than Sp Ire1 (C95) is an interesting finding supported by the substrate specificity data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "MD simulations and biochemical assays revealed that the K992D and Y1059R mutations cause rewiring of two symmetry-related inter-molecular salt bridges at the RNase-RNase interface within the back-to-back dimer. Based on sequence comparison, the vast majority of species is predicted to have RIDD-enabled Ire1s as indicated by their S. pombe-like salt bridge pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 summarize the mechanistic findings and their evolutionary implications. C96 is well-supported by the combined computational and experimental data (claims C54-C73). C97 is an inference from the phylogenetic analysis (C74-C77) and is reasonable, though it assumes that the salt bridge pattern correlates with RIDD activity across all species, which has not been experimentally validated for most orthologs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The authors identified the RNase-RNase interface, rather than regions involved in substrate binding or catalysis, as a determinant for Ire1's RNase specificity. Conserved salt bridges at this interface determine the relative protomer alignment, which changes the relative distance of residues that contribute to cleavage from both protomers in the composite RNase active site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 summarize the key mechanistic insight of the study. This conclusion is well-supported by the combined structural, computational, and biochemical data presented throughout the manuscript. The finding is surprising (C102) because substrate specificity is typically determined by active site residues, not by interface residues that affect protomer alignment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C113"
+    ],
+    "result": "The authors conclude that Ire1 RNase domain's dimer interface is a dynamic site through which both activity and substrate specificity can be regulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C113 represents the main conclusion of the study. This is well-supported by the comprehensive data showing that interface mutations affect both oligomerization (activity) and substrate specificity. The term 'dynamic' is appropriate given the evidence for conformational changes and the potential for regulation through phosphorylation-driven oligomerization (C111-C112).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The authors provide background on the unfolded protein response (UPR) and Ire1 function, describing how Ire1 maintains ER protein folding homeostasis through two functional outputs: non-conventional mRNA splicing (of HAC1/XBP1) and regulated Ire1-dependent mRNA decay (RIDD).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C16 provide established background knowledge about the UPR and Ire1 function, supported by extensive citations to previous work. These claims set the context for the study but do not represent novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The authors describe the functional specialization of Ire1 orthologs: S. cerevisiae Ire1 is specialized for splicing with stringent RNase specificity restricted to HAC1 mRNA, while S. pombe Ire1 exclusively performs RIDD with promiscuous RNase activity enabling cleavage of a wide range of mRNA targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C17-C20 describe established knowledge about Ire1 functional specialization, supported by citations to previous work including the authors' own prior study (Li et al., 2018). This provides important context but is not a novel finding of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "Active Sc Ire1 oligomers are composed of multiple Ire1 back-to-back dimers that stack in a helical arrangement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 describes established structural knowledge about Ire1 oligomerization, supported by citation to previous work (Korennykh et al., 2009). This provides important structural context for interpreting the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The authors describe RNase L, a homologous enzyme that mediates antiviral and apoptotic effects of interferons in mammalian cells. Upon activation, RNase L forms homodimers and cleaves mRNAs with the promiscuous sequence motif UN|N.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 provide background on RNase L, supported by citations to previous work. This provides important comparative context for understanding Ire1 function and protomer alignment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The authors summarize the evolutionary puzzle of how two modalities of Ire1 function arose, with S. cerevisiae Ire1 being highly specific for HAC1 mRNA splicing and S. pombe Ire1 being highly promiscuous for RIDD. Previous domain swapping experiments showed that the cytosolic kinase/RNase domains determine functional modality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 provide context from previous work, including the authors' own prior studies. This sets up the motivation for the current study but does not represent novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "Both human Ire1\u03b1 and Ire1\u03b2 have a S. pombe-like interface pattern, consistent with both isoforms being able to perform RIDD, despite having different RNase specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 apply the findings to human Ire1 isoforms. The sequence analysis (C98) is supported by the phylogenetic data, and the functional interpretation (C99) is supported by citations to previous work. This represents an application of the findings rather than a primary discovery.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "The ability of Sc Ire1-KR(K992D,Y1059R) to conduct both HAC1-specific and promiscuous cleavage resembles that of human Ire1\u03b1 in its fully phosphorylated, oligomeric state, while the more restricted activity of Sc Ire1 resembles that of dimeric human Ire1\u03b1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 draw parallels between the yeast mutant and human Ire1\u03b1 oligomeric states, supported by citation to recent work (Le Thomas et al., 2021). This represents an interesting connection but is somewhat speculative as it is based on analogy rather than direct experimental comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The small molecule quercetin stabilizes S. cerevisiae Ire1's dimers/oligomers and increases its RNase activity by binding to the same site where the two mutations identified in this study are located. However, quercetin binding does not change Ire1 protomer alignment and is not expected to alter RNase specificity. Nevertheless, modulation of RNase selectivity by targeting the quercetin pocket is conceivable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 describe the relationship between the findings and quercetin binding, supported by citations to previous work. The speculation about potential modulation (C108) is reasonable but remains untested. This represents a discussion point rather than a primary finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "In human Ire1, crystal structures showed that RNase domains are further apart in the inactive state than in the active state. The authors' data similarly indicate that breaking salt bridges in Sc Ire1-KR(K992D,Y1059R) leads to profound reduction of activity. Related work demonstrates that the promiscuous RIDD modality of human Ire1\u03b1 requires phosphorylation-driven oligomerization, which can be prevented by an oligomer-disrupting mutation at the RNase-RNase interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112 connect the findings to human Ire1 structure and regulation, supported by citations to previous work. The connection between the authors' data (C110) and human Ire1 structures (C109) is reasonable. The discussion of phosphorylation-driven oligomerization (C111-C112) provides important context from recent work.",
+    "result_type": "MINOR"
+  }
+]

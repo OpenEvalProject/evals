@@ -1,0 +1,1419 @@
+{
+  "submission": {
+    "id": "12c851f7-9ca7-47ca-8df3-2eea50abcade",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T01:25:20.524982Z",
+    "updated_at": "2025-12-03T01:25:20.524982Z"
+  },
+  "content": [
+    {
+      "id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "submission_id": "12c851f7-9ca7-47ca-8df3-2eea50abcade",
+      "content_type": "manuscript",
+      "content_text": "# The origins and consequences of UPF1 variants in pancreatic adenosquamous carcinoma\n\n## Authors\n\n- Jacob T Polaski<sup>1</sup> ([ORCID: 0000-0001-6570-1789](https://orcid.org/0000-0001-6570-1789))\n- Dylan B Udy<sup>1</sup>\n- Luisa F Escobar-Hoyos<sup>4</sup>\n- Gokce Askan<sup>4</sup>\n- Steven D Leach<sup>4</sup>\n- Andrea Ventura<sup>10</sup>\n- Ram Kannan<sup>10</sup> \u2020\n- Robert K Bradley<sup>1</sup> ([ORCID: 0000-0002-8046-1063](https://orcid.org/0000-0002-8046-1063)) \u2020\n\n### Affiliations\n\n1. Computational Biology Program, Public Health Sciences Division, Fred Hutchinson Cancer Research Center Seattle United States\n2. Basic Sciences Division, Fred Hutchinson Cancer Research Center Seattle United States\n3. Molecular and Cellular Biology Graduate Program, University of Washington Seattle United States\n4. David M. Rubenstein Center for Pancreatic Cancer Research, Memorial Sloan Kettering Cancer Center New York United States\n5. Human Oncology and Pathogenesis Program, Memorial Sloan Kettering Cancer Center New York United States\n6. Department of Pathology, Stony Brook University New York United States\n7. Yale University School of Medicine New Haven United States\n8. Department of Surgery, Memorial Sloan Kettering Cancer Center New York United States\n9. Dartmouth Norris Cotton Cancer Center Lebanon United States\n10. Cancer Biology and Genetics Program, Memorial Sloan Kettering Cancer Center New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nPancreatic adenosquamous carcinoma (PASC) is an aggressive cancer whose mutational origins are poorly understood. An early study reported high-frequency somatic mutations affecting UPF1, a nonsense-mediated mRNA decay (NMD) factor, in PASC, but subsequent studies did not observe these lesions. The corresponding controversy about whether UPF1 mutations are important contributors to PASC has been exacerbated by a paucity of functional studies. Here, we modeled two UPF1 mutations in human and mouse cells to find no significant effects on pancreatic cancer growth, acquisition of adenosquamous features, UPF1 splicing, UPF1 protein, or NMD efficiency. We subsequently discovered that 45% of UPF1 mutations reportedly present in PASCs are identical to standing genetic variants in the human population, suggesting that they may be non-pathogenic inherited variants rather than pathogenic mutations. Our data suggest that UPF1 is not a common functional driver of PASC and motivate further attempts to understand the genetic origins of these malignancies.\n\n## Introduction\n\nPancreatic adenosquamous carcinoma (PASC) is a rare and aggressive disease that constitutes 1\u20134% of pancreatic exocrine tumors (Madura et al., 1999). Patient prognosis is extremely poor, with a median survival of 8 months (Simone et al., 2013). Although PASC is clinically and histologically distinct from the more common disease pancreatic adenocarcinoma, the genetic and molecular origins of PASC\u2019s unique features are unknown.\n\nA recent study reported a potential breakthrough in our understanding of PASC etiology. Liu et al., 2014 reported high-frequency mutations affecting UPF1, which encodes a core component of the nonsense-mediated mRNA decay (NMD) pathway, in 78% (18 of 23) of PASC patients. These mutations were absent from patient-matched normal pancreatic tissue (0 of 18) and from non-PASC tumors (0 of 29 non-adenosquamous pancreatic carcinomas and 0 of 21 lung squamous cell carcinomas). The authors used a combination of molecular and histological assays to find that the UPF1 mutations caused UPF1 mis-splicing, loss of UPF1 protein, and impaired NMD, resulting in stable expression of aberrant mRNAs containing premature termination codons that would normally be degraded by NMD. The recurrent, PASC-specific, and focal nature of the reported UPF1 mutations, together with their dramatic effects on NMD activity, suggested that UPF1 mutations are a key feature of PASC biology.\n\nThree subsequent studies of distinct PASC cohorts, however, did not report somatic mutations in UPF1 (Fang et al., 2017; Hayashi et al., 2020; Witkiewicz et al., 2015). This absence of UPF1 mutations is significantly different from the high rate reported by Liu et al. (0 of 34 total PASC samples from three cohorts [Fang et al., 2017; Hayashi et al., 2020; Witkiewicz et al., 2015] vs. 18 of 23 PASC samples from Liu et al; p<10\u22128 by the two-sided binomial proportion test). Although these other studies relied on whole-exome and/or genome sequencing instead of targeted UPF1 gene sequencing, those technologies yield good coverage of the relevant UPF1 gene regions because the affected introns are very short. Given this discrepancy, we sought to directly assess the functional contribution of UPF1 mutations to PASC using a combination of biological and molecular assays.\n\n## Results\n\nWe first tested the role of the reported UPF1 mutations during tumorigenesis in vivo. Liu et al. reported that the majority of UPF1 mutations caused skipping of UPF1 exons 10 and 11, disrupting UPF1\u2019s RNA helicase domain that is essential for its NMD activity (Lee et al., 2015). We therefore modeled UPF1 mutation-induced exon skipping by designing paired guide RNAs flanking Upf1 exons 10 and 11, such that these exons would be deleted upon Cas9 expression (Figure 1A). We chose mouse pancreatic cancer cells (KPC cells: KrasG12D; Trp53R172H/null; Pdx1-Cre) as a model system. KPC cells are defined by mutations affecting KRAS and p53 (encoded by Kras and Trp53 in mouse) that also occur in the vast majority of PASC cases (Borazanci et al., 2015; Fang et al., 2017; Hayashi et al., 2020), making them a genetically appropriate system. We delivered Upf1-targeting paired guide RNAs to KPC cells using recombinant adenoviral vectors and confirmed that guide delivery resulted in\u00a0the production of UPF1 mRNA lacking exons 10 and 11 and a corresponding reduction in full-length UPF1 protein levels (Figure 1\u2014figure supplement 1A\u2013G). We injected subcloned control and Upf1-targeted KPC cells into the tails of the pancreata of B6 albino mice (n\u00a0=\u00a010 mice per treatment) and monitored tumor growth and animal survival. We detected no significant differences in tumor volume or survival in mice implanted with control or Upf1-targeted KPC cells (Figure 1B\u2013D and Figure 1\u2014source datas 1\u00a0and\u00a02). Tumors derived from control as well as Upf1-targeted cells displayed similar histopathological features characteristic of moderately to poorly differentiated pancreatic ductal adenocarcinomas (Figure 1E\u2013G). Moderately differentiated areas were composed of medium to small duct-like structures or tubules with lower mucin production, while poorly differentiated components were characterized by solid sheets or nests of tumor cells with large eosinophilic cytoplasms and large pleomorphic nuclei. No squamous differentiation was identified by histomorphologic evaluation and no expression of the squamous marker p40 (\u0394Np63) was detected (Figure 1H and Supplementary file 1a). We concluded that inducing the reported Upf1 exon skipping in vivo had no detectable effects on pancreatic cancer growth or acquisition of adenosquamous features in the KPC model. However, there are several important caveats to our data. First, we cannot rule out the possibility that inducing Upf1 exon skipping in a different model system or cell type could influence tumorigenesis. Second, as our assays were performed in the complex setting of in vivo tumorigenesis, we cannot infer how inducing the reported Upf1 exon skipping might affect tumor cell proliferation in the controlled setting of in vitro growth. Third, as accurate measurement of Upf1 spicing and UPF1 protein isoforms was only possible for KPC cells prior to orthotopic injection, we cannot infer how the relative frequencies of mis-spliced UPF1 mRNA and the resulting truncated proteins may have changed during tumorigenesis.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/62209/elife-62209-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of UPF1 gene structure and corresponding encoded protein domains. Intron 10 (I10) contains the bulk of the mutations reported by Liu et al. Scissors indicate the sites targeted by the paired guide RNAs used to excise exons 10 and 11 (E10 and E11). Red nucleotides represent positions subject to point mutations reported in Liu et al. Arrows indicate specific mutations that we modeled in 293 T cells. The horizontal black line indicates the nucleotide within the protospacer adjacent motif (PAM) site that we mutated to prevent repeated cutting by Cas9 in 293 T cells. (B) Top, experimental strategy for testing whether mimicking UPF1 mis-splicing by deleting exons 10 and 11 promoted pancreatic cancer growth. Mice were orthotopically injected with mouse pancreatic cancer cells (KPC cells: KrasG12D; Trp53R172H/null; Pdx1-Cre) lacking Upf1 exons 10 and 11. Bottom, hematoxylin and eosin (H and E) stain of pancreatic tumor tissue harvested from the mice. (C) Line graph comparing tumor volume between mice injected with control (AdCas9; Cas9 only) or treatment (AdUpf1; Cas9 with Upf1-targeting guide RNAs) KPC cells. Tumor volume measured by ultrasound imaging. Error bars, standard deviation computed over surviving animals (n\u00a0=\u00a010 at first time point). n.s., not significant (p>0.05). p-values at each timepoint were calculated relative to the control group with an unpaired, two-tailed t-test. (D) Survival curves for the control (AdCas9) or treatment (AdUpf1) cohorts. Error bars, standard deviation computed over biological replicates (n\u00a0=\u00a010, each group). p-value was calculated relative to the control group by a logrank test. (E) Representative hematoxylin and eosin (H and E) staining of a pancreatic tumor resulting from orthotopic injection of control KPC cells displaying features of a moderately to poorly differentiated pancreatic ductal adenocarcinoma. Tumors were composed of medium-size duct-like structures and small tubular glands with lower mucin production. (F) Representative H and E image illustrating a moderately to poorly differentiated pancreatic ductal adenocarcinoma resulting from orthotopic injection of Upf1-targeted KPC cells. Depicted here is a section of the poorly differentiated component (arrow), which was characterized by solid sheets of tumor cells with large eosinophilic cytoplasms and marked nuclear polymorphism. (G) Representative H and E image of a pancreatic tumor resulting from orthotopic injection of Upf1-targeted KPC cells. The dashed circle marks a moderately differentiated component; the remainder is poorly differentiated. (H) Representative IHC image of a pancreatic tumor resulting from orthotopic injection of Upf1-targeted KPC cells for the squamous marker p40 (\u0394Np63). No expression of the marker was observed in tumor cells.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62209/elife-62209-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Titration of adenovirus expressing Cas9 only (AdCas9) or Cas9 and guide RNAs targeting intron 9 and intron 11 of mouse Upf1 (AdUpf1) in KPC cells. Gel corresponds to PCR using genomic DNA with primers in exons 9 and 12 (E9, E12). The lower band, corresponding to excision of exons 10 and 11, was only observed in AdUpf1 conditions. This band was excised and sequence-verified by Sanger sequencing (sequence trace displayed below). (B) As (A), but assaying a cDNA library instead of genomic DNA using RT-PCR. The lower band, corresponding to spliced mRNA lacking exons 10 and 11, was only observed in AdUpf1 conditions. (C) Immunoblot with a probe against UPF1. Levels of full-length UPF1 protein are lower in AdUpf1 conditions, as expected. 1 and 2 indicate biological replicates. Tubulin serves as a loading control. (D) Raw gel image for the genomic DNA PCR shown in (A). The cropped region is boxed in white. (E) Raw gel image for the RT-PCR shown in (B). The cropped region is boxed in white. (F) Raw image of the western blot shown in (C). The cropped region is boxed in white. (G) Raw image of the western blot for the mouse tubulin loading control shown in (C). The cropped region is boxed in white.\n\nWe next assessed molecular phenotypes induced with UPF1 mutations. Liu et al. measured the effects of each mutation on UPF1 splicing using a minigene assay, in which each mutation was introduced into a plasmid containing a small fragment of the UPF1 gene that was subsequently transfected into 293 T cells. Liu et al. concluded that all reported UPF1 mutations caused dramatic UPF1 mis-splicing that disrupted key protein domains that are essential for UPF1 function in NMD. Minigenes are common tools for studying splicing, but they are frequently spliced less efficiently than endogenous genes, presumably because they are gene fragments that lack potentially important sequence features that promote splicing and incompletely capture the close relationship between chromatin and splicing (Luco et al., 2011; Naftelberg et al., 2015).\n\nWe modeled UPF1 mutations in 293 T cells in order to mimic Liu et al.\u2019s experimental strategy, but introduced mutations into their endogenous genomic contexts rather than using minigenes. We selected two distinct UPF1 mutations in intron 10 for these studies. We selected IVS10+31G>A (patient 1; P1) because it was reportedly recurrent across three different patients (making it equally or more common than any other mutation) and induced strong mis-splicing on its own (36% mis-spliced mRNA, versus 0% for wild-type UPF1); we selected IVS10-17G>A (patient 9; P9) because it had one of the strongest effects on splicing (90% mis-spliced mRNA). IVS10+31G>A was present in a homozygous state in two of the three patients carrying it, while IVS10-17G>A was present in a heterozygous state.\n\nWe introduced each mutation into its endogenous context by transiently transfecting a plasmid expressing Cas9 and a single guide RNA (sgRNA) targeting UPF1 intron 10 as well as appropriate donor DNA for homology-directed repair, screened the resulting cells for the desired genotypes, and established clonal lines. The resulting cell lines contained the desired mutations in the correct copy numbers as well as a point mutation disrupting the protospacer adjacent motif (PAM) site (Figure 2\u2014figure supplement 1A\u2013C). As neither the PAM site itself nor nearby positions were reported as mutated in Liu et al., we additionally established a cell line in which only the PAM site was mutated as a wild-type control.\n\nWe systematically tested the functional consequences of UPF1 mutations for NMD efficiency, UPF1 protein levels, and UPF1 splicing. We measured NMD efficiency in our engineered cells using the well-established beta-globin reporter system, which permits controlled measurement of the relative levels of mRNAs that do or do not contain an NMD-inducing premature termination codon, but which are otherwise identical (Zhang et al., 1998). We did not observe decreased NMD efficiency in UPF1-mutant versus wild-type cells; instead, UPF1-mutant cells exhibited evidence of modestly more efficient NMD, although these differences were not statistically significant (Figure 2A and Figure 2\u2014source data 1). To confirm these results from reporter experiments, we then queried levels of endogenous NMD substrates across the transcriptome. We performed high-coverage RNA-seq on each of the three 293 T cell lines that we engineered to lack or contain defined UPF1 mutations in biological triplicate, quantified transcript expression, and identified differentially expressed transcripts. We focused on NMD substrates arising from alternative splicing, as these are abundant and sensitive biomarkers of NMD efficiency that are internally controlled for gene expression variation (Feng et al., 2015). These analyses revealed that neither UPF1-mutant cell line exhibited global increases in the expression of NMD substrates relative to wild-type cells. Instead, both UPF1-mutant cell lines exhibited modestly lower global levels of endogenous NMD substrates than did wild-type cells, mimicking the trend observed with our NMD reporter experiments. Together, these data confirm that the tested mutations in UPF1 intron 10 do not affect NMD activity (Figure 2B\u2013D and Supplementary file 1b\u00a0and\u00a0c).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/62209/elife-62209-fig2-v2.jpg)\n\n**Figure 2.:** (A) Box plot of NMD efficiency in 293 T cells engineered to contain wild-type (WT) or mutant (P1, P9) UPF1. P1 and P9 correspond to the IVS10+31G>A and IVS10-17G>A mutations reported by Liu et al. All cells have the protospacer adjacent motif\u00a0(PAM) site mutation illustrated in\u00a0Figure 1A. NMD efficiency estimated via the beta-globin reporter assay11. Middle line, notches, and whiskers indicate median, first and third quartiles, and range of data. Each point corresponds to a single biological replicate. n.s., not significant (p>0.05). p-values were calculated for each variant relative to the control by a two-sided Mann\u2013Whitney U\u00a0test (p=0.40 for P1, 0.30 for P9). (B) Scatter plot showing transcriptome-wide quantification of transcripts containing NMD-promoting features in 293 T cells carrying the UPF1 mutation that was reportedly observed in patient 1 relative to control, wild-type cells. Each point corresponds to a single isoform that is a predicted NMD substrate (NMD(+)). Purple points represent NMD substrates that are significantly increased in UPF1-mutant cells relative to wild-type cells; black points represent NMD substrates that exhibit the opposite behavior. Plot is restricted to NMD substrates arising from differential inclusion of cassette exons. Significantly increased/decreased NMD substrates were defined as transcripts that displayed either an absolute increase/decrease in isoform ratio of\u00a0\u226510% or an absolute log fold-change in expression of\u00a0\u22652 with associated p\u22640.05 (two-sided t-test). (C) As (B), but for 293 T cells carrying the UPF1 mutation that was reportedly observed in patient 9. Gold points represent NMD substrates that are significantly increased in UPF1-mutant cells relative to wild-type cells. (D) Summary of the numbers of NMD substrates arising from differential alternative splicing that exhibit significantly higher or lower levels in UPF1-mutant cells relative to wild-type cells. Analysis is identical to (B) and (C), but extended to the illustrated different types of alternative splicing. (E) Left, immunoblot of full-length UPF1 protein for the 293 T cell lines. Each lane represents a single biological replicate with the indicated genotype. GAPDH serves as a loading control. Equal amounts of protein were loaded in each lane (measured by fluorescence). Right, box plot illustrating UPF1 protein levels relative to GAPDH for each genotype. Middle line, notches, and whiskers indicate median, first and third quartiles, and range of data. Each point corresponds to a single biological replicate. Data was quantified with Fiji (v2.0.0). A.U., arbitrary units. n.s., not significant (p>0.05). p-values were calculated for each variant relative to the control by a two-sided Mann\u2013Whitney U\u00a0test (p=0.10 for P1, 1.0 for P9). (F) PCR using primers that amplify both full-length UPF1 mRNA (FL) and mRNA lacking exons 10 and 11 (\u0394E10-11). UPF1 mRNA lacking exons 10 and 11 was only detected in the positive control lanes (\u0394E10-11 spike in), in which DNA corresponding to UPF1 cDNA lacking exons 10 and 11 was synthesized and added to cDNA libraries created from WT cells prior to PCR. Numbers above each lane indicate biological replicates. Numbers below each lane represent the abundance of the lower band as a percentage of total intensity (see Materials\u00a0and\u00a0methods). Data was quantified with Fiji (v2.0.0). (G) RNA-seq read coverage across the genomic locus containing UPF1 exons 9\u201312 in the indicated 293 T cell lines. Each sample corresponds to a distinct biological replicate. Numbers represent read counts that\u00a0supported each indicated splice junction (Katz et al., 2015).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62209/elife-62209-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Sanger sequencing of genomic DNA from engineered 293 T cells verifying introduction of the mutation IVS10+31G>A in a homozygous state, as reported by Liu et al. for patient P1, as well as a single protospacer adjacent motif\u00a0(PAM) site mutation. (B) Sanger sequencing of genomic DNA from engineered 293 T cells verifying introduction of the IVS10-17G>A mutation in a heterozygous state, as reported by Liu et al.\u00a0for patient P9, as well as a single PAM site mutation. (C) Sanger sequencing of genomic DNA from engineered 293 T cells verifying introduction of a single PAM site mutation as a wild-type control. (D) Raw image of the western blot from Figure 2E. The cropped regions for UPF1 and GAPDH are boxed in red. (E) Raw image of the RT-PCR gel from Figure 2F. The cropped region for full-length UPF1 is boxed in red.\n\nConsistent with similar NMD activity independent of UPF1 mutational status, UPF1 mutations did not cause loss of full-length UPF1 protein (Figure 2E, Figure 2\u2014figure supplement 1D, and Figure 2\u2014source data 2). Although UPF1 protein levels varied between the individual cell lines, this variation in UPF1 protein levels was not associated with variation in NMD efficiency and did not segregate with UPF1 mutational status. We therefore measured the levels of normally spliced and mis-spliced UPF1 mRNA. We readily detected normally spliced UPF1 mRNA in all samples by RT-PCR, but found no evidence of mis-spliced UPF1 mRNA, except in positive control samples in which we spiked in synthesized DNA corresponding to the exon skipping isoform reported in Liu et al. (Figure 2F, Figure 2\u2014figure supplement 1E, and Figure 2\u2014source data 3). We confirmed these results with our RNA-seq data by mapping all reads against all possible splice junctions connecting exons 9, 10, 11, and 12. These analyses revealed no evidence of splice junctions consistent with the reported exon 10 and 11 skipping or other abnormal exon skipping isoforms (Figure 2G).\n\nGiven the differences between Liu et al.\u2019s findings of common UPF1 mutations and their absence from subsequent studies of PASC, we wondered whether some of the UPF1 mutations reported by Liu et al. might correspond to inherited genetic variation rather than somatically acquired mutations. We searched for each mutation reported by Liu et al. within databases compiled by the 1000 Genomes Project, NHLBI Exome Sequencing Project, Exome Aggregation Consortium (ExAC), and the genome aggregation database (gnomAD) (Auton et al., 2015; Karczewski et al., 2020; Exome Aggregation Consortium et al., 2016; Server EV, 2016). These databases were constructed from a mix of whole-genome and whole-exome sequencing, both of which are effective for discovering variants within the relevant regions of UPF1 (because UPF1 introns 10, 21, and 22 are very short, they are well\u00a0covered by exon-capture technologies). We found genetic variants identical to 45% (18 of 40) of the reported UPF1 mutations, one of which is present in the reference human genome. Eighty-nine\u00a0percent (16 of 18) of UPF1-mutant patients had one or more reported mutations that corresponded to standing genetic variation (Figure 3A\u2013F and Supplementary file 1d). The distribution of overlaps between reported UPF1 mutations and standing genetic variation depended strongly upon genic context. A large fraction of reported intronic UPF1 mutations were identical to standing genetic variation, while the majority of reported exonic UPF1 mutations were not (Supplementary file 1d).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/62209/elife-62209-fig3-v2.jpg)\n\n**Figure 3.:** (A) Illustration of the mutations in UPF1 intron 10 (I10) reported by Liu et al. Each row indicates the wild-type (WT) sequence from the reference human genome or mutations reported by Liu et al. (P1, patient 1). Purple and gold arrows indicate the mutations that we modeled with genome engineering in 293 T cells for patient 1 and patient 9, respectively. Red nucleotides represent positions subject to point mutations reported in Liu et al. The horizontal black line indicates the nucleotide within the protospacer adjacent motif (PAM) site that we mutated to prevent repeated cutting by Cas9. Parentheses indicate where we found genetic variation at a reported mutation position that differed from the specific mutated nucleotide reported by Liu et al. (B) As (A), but for UPF1 exon 10 (E10). (C) As (A), but for UPF1 exon 11 (E11). (D) As (A), but for UPF1 exon 21 (E21). (E) As (A), but for UPF1 intron 22 (I22). (F) As (A), but for UPF1 exon 23 (E23).\n\nOur discovery that a large fraction of the reported UPF1 mutations are present in databases of germline genetic variation was surprising for two reasons. First, when strongly cancer-linked mutations occur as germline variants, they frequently manifest as cancer predisposition syndromes. However, no such relationship is known for UPF1 genetic variants, despite their reportedly high prevalence as identical somatic mutations in PASC. Second, UPF1 is essential for embryonic viability and development in mammals (Medghalchi et al., 2001), zebrafish (Wittkopp et al., 2009), and Drosophila (Avery et al., 2011). As Liu et al. reported that all UPF1 mutations caused mis-splicing that is expected to disable UPF1 protein function (Liu et al., 2014), then those mutations should be incompatible with life when present as inherited genetic variants. Our finding that two reported mutations had no effect on UPF1 splicing when introduced into their endogenous genomic contexts offers a way to explain this incongruity, at least for the two reported lesions that\u00a0we studied.\n\nGiven these discrepancies, we next sought to verify the somatic nature of the UPF1 mutations described in Liu et al., which was reportedly determined by sequencing both tumors and patient-matched controls. The GenBank accession codes reported in Liu et al. corresponded to short nucleotide sequences containing UPF1 mutations, without corresponding data for patient-matched controls. We contacted the senior author (Dr. YanJun Lu) to request primary sequencing data from patient-matched tumor and normal samples, but neither primary sequencing data from matched samples nor the samples themselves were available.\n\nTo further explore whether UPF1 is recurrently mutated in PASC, we reanalyzed sequencing data from Fang et al., 2017 to manually search for UPF1 mutations (Supplementary file 1e-f). We focused on the two loci that\u00a0contained all mutations reported by Liu et al. (UPF1 exons 10-11 and exons 21\u201323).\u00a0Because the relevant introns are very short, they were well\u00a0covered by both the whole-exome and whole-genome sequencing used by Fang et al. Using relaxed mutation-calling criteria to maximize sensitivity (details in Materials\u00a0and\u00a0methods), we identified somatic UPF1 mutations in samples from 6 of 17 PASC patients. However, those mutations exhibited genetic characteristics expected of passenger, not driver, mutations. None of those UPF1 mutations matched the UPF1 mutations reported by Liu et al., and only one was present at an allelic frequency equal to the allelic frequency of mutant KRAS, which is a known driver and which we detected in samples from all PASC patients (median allelic frequencies of 12% versus 34% for UPF1 versus KRAS mutations). Furthermore, we also identified UPF1 mutations in samples from patients with non-adenosquamous tumors (3 of 34 pancreatic ductal adenocarcinomas), whereas Liu et al. reported finding no UPF1 mutations in non-adenosquamous pancreatic cancers (0 of 29). In concert with the reports of Witkiewicz et al., 2015 and Hayashi et al., 2020 of finding no UPF1 mutations in their PASC samples, these analyses suggest that UPF1 is not a frequent or adenosquamous-specific mutational target in most PASC cohorts.\n\n## Discussion\n\nUPF1\u2019s role in the pathogenesis of PASC has been unclear and controversial given the seeming discrepancies between its mutational spectrum in different PASC cohorts. Although it is difficult to conclusively prove that a specific genetic change does not promote cancer, we were unable to detect biological or molecular changes arising from two mutations reported by Liu et al. UPF1\u2019s status as an essential gene and our discovery that many reported UPF1 mutations occur as germline genetic variants of no known pathogenicity together suggest that other UPF1 mutations reported by Liu et al. could similarly represent genetic differences that do not functionally contribute to PASC. Our study highlights the need for continued study of the PASC mutational spectrum in order to understand the molecular basis of this disease.\n\n## Materials and methods\n\n### Construction of mouse KPC cells carrying a deletion of Upf1 exons 10 and 11\n\nMouse KPC cells (KrasG12D; Trp53R172H/null; Pdx1-Cre) were obtained from Dr. Robert Vonderheide and were cultured in DMEM (GIBCO) supplemented with 10% fetal bovine serum (FBS) and 1% Penicillin/Streptomycin (GIBCO). All cell lines were incubated at 37\u00b0C and 5% CO2. Guide RNAs targeting mouse Upf1 introns 9 and 11 were cloned into a paired guide expression vector (px333) as previously described (Maddalo et al., 2014). An EcoRI-XhoI fragment containing the double U6-sgRNA cassette and Flag-tagged Cas9 was then ligated into the EcoRI-XhoI-digested pacAd5 shuttle vector. Recombinant adenoviruses were generated by Viraquest (Ad-Upf1 and Ad-Cas9) or purchased from the University of Iowa (Ad-Cre). KPC cells were infected with (5 \u00d7 106 PFU) of Ad-Cas9 or Ad-Upf1 in each well of a 6-well plate.\n\nGenomic DNA was extracted 48 hr post infection to confirm excision of Upf1 exons 10 and 11. For PCR analysis of genomic DNA, cells were collected in lysis buffer (100 nM Tris-HCl at pH 8.5, 5 mM EDTA, 0.2% SDS, 200 mM NaCl supplemented with fresh proteinase K at a final concentration of 100 ng/mL). Genomic DNA was extracted with phenol\u2013chloroform\u2013isoamylic alcohol and precipitated in ethanol, and the DNA pellet was dried and resuspended in double-distilled water. For RT-PCR, total RNA was extracted with TRIzol (Life Technologies) following the manufacturer\u2019s instructions. cDNA was synthesized using SuperScript III (ThermoFisher) following the manufacturer\u2019s instructions.\n\n### Immunoblots in mouse KPC cells\n\nCells were lysed in 1X RIPA buffer with protease and phosphatase inhibitors. Fifteen micrograms of protein was separated on 4\u201310% acrylamide/bisacrylamide gels, transferred onto PVDF membranes, and blocked for 1 hr in 5% milk in 1\u00d7 TBST. The membranes were incubated with rabbit UPF1 antibody (CST #9435) used at 1:1000 dilution in 5% BSA 1\u00d7 TBST overnight at 4\u00b0C or mouse Tubulin (Sigma T9206) used at 1:2000 dilution in 5% milk 1\u00d7 TBST for 1 hr at room temperature. Following primary antibody incubation, the membranes were washed three times with 1\u00d7 TBST buffer at room temperature and probed with rabbit or mouse horseradish peroxidase-linked secondary antibody (1:5000; ECL NA931 mouse, NA934V Rabbit). The western blot signal was detected using the ECL Prime (RPN322) kit and the blot was exposed to an X-Ray film, which was developed using the Konica Minolta SRX 101A film processor.\n\n### Tumorigenicity and metastasis assays\n\nKPC cells carrying Upf1 \u0394E10-11 or an empty Cas9 control were mixed in 1:1 Matrigel (BD Biosciences) and simple media to a final concentration of 100,000 cells in 30 \u03bcL of total volume. Cells were orthotopically implanted into the tails of the pancreata of B6 albino mice (Charles River). Ten mice were implanted with each stable, genetically engineered cell line. Tumor growth was measured weekly via 3D-ultrasound starting at 10 days post-implantation. For survival assessment, animals were sacrificed following the endpoints approved by IACUC: (i) animals showing signs of significant discomfort, (ii) ascites or overt signs of tumor metastasis or gastrointestinal bleeding (blood in stool), (iii) animals losing\u00a0>15% of their body weight, and (iv) animals with tumors\u00a0>2 cm in diameter. Investigators responsible for monitoring and measuring the xenografts of individual tumors were not blinded. All animal studies were performed in accordance with institutional and national animal regulations. Animal protocols were approved by the Memorial Sloan-Kettering Cancer Center Institutional Animal Care and Use Committee (14-08-009 and 11-12-029). Power analysis was used to determine appropriate sample size to detect significant changes in animal median survival, which was based on previous survival analyses (Escobar-Hoyos et al., 2020). Survival curves and statistics were performed using PRISM.\n\n### Immunohistochemistry (IHC) and histopathological analysis\n\nParaffin sections were dewaxed in xylene and hydrated in graded alcohols. Endogenous peroxidase activity was blocked by immersing the slides in 1% hydrogen peroxide in PBS for 15 min. Pretreatment was performed in a steamer using 10 mM citrate buffer (pH 6.0) for 30 min. Sections were incubated overnight with a primary rabbit polyclonal antibody against p40-DeltaNp63 (Abcam, ab166857) diluted at a ratio of 1:100. Sections were washed with PBS and incubated with an appropriate secondary antibody followed by avidin\u2013biotin complexes (Vector Laboratories, Burlingame, CA, PK-6100). The antibody reaction was visualized with 3\u20133' diaminobenzidine (Sigma, D8001) followed by counterstaining with hematoxylin. Tissue sections were dehydrated in graded alcohols, cleared in xylene, and mounted. For p40 (\u0394Np63) IHC, expression was defined based on nuclear labeling.\n\n### Culture and genome engineering of HEK 293 T cells\n\nHEK 293 T cells were cultured in DMEM media (GIBCO) supplemented with 10% FBS (GIBCO), 100 IU penicillin, and 100 mg/mL streptomycin (PenStrep, GIBCO). Cells were cultured at 37\u00b0C and 5% CO2. Cells were split at a ratio of 1:10 once they reached 90\u2013100% confluency as needed. Cell lines were authenticated using ATCC fingerprinting and tested regularly for mycoplasma contamination.\n\nGuide RNAs for all cell lines were designed using the GuideScan 1.0 software package (Perez et al., 2017) and sequences were chosen among those predicted to have the highest cutting efficiency and specificity scores. DNA oligos for all guide RNAs were synthesized by IDT and amplified using primers that appended homology arms to facilitate ligation into the pX459/Cas9 expression plasmid (Ran et al., 2013) by Gibson assembly (Gibson et al., 2009). Gibson assembly reactions were transformed into NEB Stable Competent E. coli and resulting sgRNA expression plasmids were amplified and purified using standard protocols.\n\nUltramers for homology directed repair (HDR) were designed using previously described strategies (Richardson et al., 2016) and synthesized by IDT, Inc. HEK 293 T cells were transiently transfected with 1 \u03bcg/mL sgRNA/pX459 Cas9 expression plasmid and 20 nM HDR Ultramer using Lipofectamine 2000 that was diluted in Opti-MEM Reduced Serum Medium (ThermoFisher). Cells were incubated at 37\u00b0C for 24 hr, at which time the transfection medium was replaced with DMEM media (GIBCO) supplemented with 10% FBS (GIBCO), 100 IU penicillin, 100 mg/mL streptomycin (PenStrep, GIBCO), and 2 mg/mL puromycin. Cells were then incubated for 48\u201372 hr in DMEM media (GIBCO) supplemented with 10% FBS (GIBCO), 100 IU penicillin, 100 mg/mL streptomycin (PenStrep, GIBCO), and 2 mg/mL puromycin, at which time genomic DNA was extracted and regions of interest were amplified using the appropriate oligos.\n\nGenome engineering was validated using genomic DNA as follows. Amplicons from genomic DNA PCR were ligated into vectors using the Zero Blunt TOPO PCR cloning system (ThermoFisher) and the presence of the desired mutations was validated using Sanger sequencing (GENEWIZ). Polyclonal cell populations were then diluted and sorted into 96-well plates using a BD FACS Aria II flow cytometer (BD Biosciences), such that each well contained on average one cell, which were grown in DMEM media (GIBCO) supplemented with 20% FBS (GIBCO), 100 IU penicillin, and 100 mg/mL streptomycin (PenStrep, GIBCO). Once cells in 96-well plates reached confluency, they were transferred to 24-well plates and allowed to grow to confluency for genomic DNA extraction and Sanger sequencing.\n\n### NMD efficiency measurement\n\nNMD efficiency was estimated using the beta-globin reporter system (Zhang et al., 1998). HEK 293 T cells engineered with the reported mutations were plated at 10\u201315% confluency on pol-L-lysine coated 12-well plates. Cells were co-transfected 24 hr later with 1 \u00b5g of phCMV-MUP plasmid (transfection control) and 1 \u00b5g of either pmCMV-Gl-Norm (normal termination codon) or pmCMV-Gl-39Ter (premature termination codon) using Lipofectamine 3000 (Invitrogen) according to the manufacturer\u2019s protocol. After 48 hr the cells were close to confluency, at which time they were lysed using 1 mL of Trizol Reagent (Invitrogen) per well. The lysate was collected, and total RNA was extracted according to the manufacturer\u2019s protocol. The RNA was further purified and DNase treated using the Direct-zol RNA MiniPrep Kit (Zymo Research) according to the manufacturer\u2019s protocol.\n\nResidual plasmid DNA was removed using DNaseI (Amplification Grade, Invitrogen) according to the manufacturer\u2019s protocol from 600 ng of the extracted RNA. cDNA synthesis was then performed using SuperScript IV Reverse Transcriptase (Invitrogen) with oligo dT primers according to the manufacturer's protocol. The cDNA synthesis reaction was diluted 1:50 and 4 \u00b5L was used for a 10 \u00b5L qPCR reaction with PowerUp SYBR Green Master Mix (ThermoFisher) and primers specific for the reporter mRNA diluted to a working concentration of 100 nM for each primer. qPCR reactions were performed in technical triplicate for three different biological replicates in 384-well plates (ThermoFisher) using an ABI QuantStudio 5 Real-Time PCR System (ThermoFisher). The levels of pmCMV-Gl-Norm and pmCMV-Gl-39Ter cDNA were normalized to phCMV-MUP mRNA abundance for each sample, and levels of pmCMV-Gl-39Ter cDNA were plotted relative to levels of pmCMV-Gl-Norm for each replicate in each cell type. Statistical analysis was performed using PRISM.\n\n### Immunoblots in HEK 293 T cells\n\nCells were lysed using a buffer containing 150 mM NaCl, 1% NP-40, and 50 mM Tris pH 8.0 supplemented with a phosphatase inhibitor (ThermoFisher) and protease inhibitor (ThermoFisher). After the lysis buffer was added, cells were frozen at \u221280\u00b0C and thawed for three cycles,\u00a0and then incubated on ice for 15 min. The lysed cells were centrifuged at 10,000 \u00d7 g for 15 min, and the supernatant was collected to determine total protein concentration. Total protein concentration was determined using a Qubit (ThermoFisher) and 20 \u03bcg of total protein was used for electrophoresis. Following electrophoresis, protein was transferred to nitrocellulose membrane (Novex) in transfer buffer containing 10% methanol overnight at 4\u00b0C. The blot was blocked with Odyssey Blocking Buffer (LI-COR Biosciences) for 1 hr at room temperature and probed using a 1:1000 dilution of 0.514 mg/mL UPF1 antibody (Abcam, 109363) overnight with shaking at 4\u00b0C. Following overnight incubation, the blot was washed three times with 1\u00d7 TBST buffer at room temperature and probed with rabbit secondary antibody (IRDye 680RD goat anti-rabbit) for 1 hr at room temperature. The blot was then imaged and UPF1 abundance was quantified using band intensity in Fiji (v2.0.0). Statistical analysis was performed using PRISM.\n\n### Isoform detection by RT-PCR in HEK 293 T cell lines\n\nTotal RNA was extracted using the RNeasy Plus Mini Kit (Qiagen). cDNA was synthesized using oligo dT primers and SuperScript IV Reverse Transcriptase (ThermoFisher) following the manufacturer's protocol. PCR was carried out with primers targeting UPF1 exons 9 and 12 using Q5 High-Fidelity DNA Polymerase (NEB). PCR products were run in a 2% agarose slab gel and stained with ethidium bromide for visualization by UV shadowing (Bio-Rad Molecular Imager Gel Doc XR+).\n\nA positive control for the amplification of the truncated UPF1 variant missing exons 10 and 11 was synthesized as a double-stranded DNA gBlock (IDT). Two different amounts (10 fg and 1 fg) of this \u2018spike in\u2019 control was added to separate PCRs containing cDNA from wild-type HEK 293 T cells and amplified in the same manner as described above.\n\nTo quantify the degree of exon skipping (percent \u0394E10-11), a background subtraction across the entire gel was first performed in Fiji using a rolling ball radius of 100 pixels. Next, the integrated density of each band was determined, and the density of the lower band in each lane was divided by the total density in that same lane by summing the integrated densities of the upper and lower bands.\n\n### Reanalysis of genomic DNA sequencing data from Fang et al.\n\nWhole-genome and whole-exome sequencing data from Fang et al., 2017 were downloaded from the Sequence Read Archive (accession number SRP107982) and mapped to the UPF1 (chr19:18940305\u201318979266; hg19/GRCh37 assembly) and KRAS (chr12:25356390\u201325405419; hg19/GRCh37 assembly) gene loci. The first 10 nt of all reads were trimmed off due to low sequencing quality and the trimmed reads were mapped with Bowtie v1.0.0 (Langmead et al., 2009) with the arguments '-v 3 k 1 m 1 --best --strata --minins 0 --maxins 1000 --fr'. Mapped reads were visualized in IGV (Robinson et al., 2011). Mutation/genetic variant calling thresholds (read coverage depth\u00a0\u22659 reads and\u00a0\u22652 reads supporting the mutation/variant) were chosen in order to allow detection of a hotspot KRAS mutation (G12 or G13) in every PASC sample in the cohort. That criteria ensured that our thresholds were appropriate for discovering known cancer driver mutations in all samples. A genetic difference from the reference genome was defined as a somatic mutation if it was called in a tumor sample but not in the corresponding patient-matched normal control sample.\n\n### Genome annotations\n\nGenome and transcriptome annotations for mapping RNA-seq data to the human (NCBI GRCh37/UCSC hg19) genome were generated as described previously (Dvinge et al., 2014). Briefly, transcriptome annotations from Ensembl (Flicek et al., 2013) were merged with isoform annotations from the MISO v2.0 database (Katz et al., 2010) and the UCSC knownGene track (Meyer et al., 2013). NMD substrates were defined as those isoforms containing a premature termination codon\u00a0>50 nt upstream of the last exon\u2013exon junction.\n\n### RNA-seq read mapping\n\nRNA-seq reads were mapped to the transcriptome with RSEM v1.2.4 (Li and Dewey, 2011) and Bowtie v1.0.0 (Langmead et al., 2009), where RSEM was modified to invoke Bowtie with the \u2018-v2\u2019 option. Reads that are unaligned after this transcriptome mapping were then aligned to the genome with TopHat v2.0.8 (Trapnell et al., 2009), as well as mapped to a database of splice junctions that was defined by creating all possible co-linear combinations of 5' and 3' splice sites within every gene. A final file of aligned reads was created by merging the read alignments from TopHat with the read alignments from RSEM.\n\n### Differential splicing analysis\n\nMISO v2.0 (Katz et al., 2010) was used to quantify isoform expression for alternative splicing events. Differentially spliced events were defined as those that met the following criteria: (1) had at least 20 informative reads (reads that\u00a0uniquely distinguish between isoforms of a given splicing event), (2) exhibited either an absolute change in isoform ratio\u00a0\u226510% or an absolute fold-change\u00a0\u22652, and (3) had an associated p\u22640.05 (computed using a two-sided t-test). Differential splicing analyses were restricted to splicing events arising from U2-type (major) introns, which constitute\u00a0>99% of all introns, in order to ensure that no potential confounding effects arose from intron type. Splicing events were defined as NMD relevant if at least one, but not all, of the child isoforms was predicted NMD substrates.\n",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "76e9e566-62c1-46f4-bd5f-aa558b6f26d1",
+      "submission_id": "12c851f7-9ca7-47ca-8df3-2eea50abcade",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Eric J Wagner, University of Texas Medical Branch at Galveston United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.62209.sa1](https://doi.org/10.7554/eLife.62209.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe authors have sought to address what has become a considerably debated topic of whether mutations in Upf1 are tumorigenic in pancreatic adenosquamous carcinoma. Specifically, the authors introduced Upf1 mutants found in pancreatic tumors into pancreatic adenosquamous carcinoma cells, and found they did not provide significant advantage for tumor progression. Moreover, the authors described how a significant percentage of Upf1 mutants observed in pancreatic carcinoma are also present as germline variants in the human population, raising further doubts about their potential role as cancer drivers. Altogether, this work provides further evidence as to whether Upf1 disruptive mutations represent driving factors in pancreatic adenosquamous carcinoma.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"The origins and consequences of UPF1 variants in pancreatic adenosquamous carcinoma\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Erica Golemis as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Wei Li (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, when editors judge that a submitted work as a whole belongs in eLife but that some conclusions require a modest amount of additional new data, as they do with your paper, we are asking that the manuscript be revised to either limit claims to those supported by data in hand, or to explicitly state that the relevant conclusions require additional supporting data.\n\nOur expectation is that the authors will eventually carry out the additional experiments and report on how they affect the relevant conclusions either in a preprint on bioRxiv or medRxiv, or if appropriate, as a Research Advance in eLife, either of which would be linked to the original paper.\n\nSummary:\n\nThe authors have sought to address what has become a considerably debated topic of whether mutations in Upf1 are tumorigenic in pancreatic adenosquamous carcinoma. Specifically, the authors introduced Upf1 mutants found in pancreatic tumors into pancreatic adenosquamous carcinoma cells, and found they did not provide significant advantage for tumor progression. Moreover, the authors described how a significant percentage of Upf1 mutants observed in pancreatic carcinoma are also present as variants in the human population, raising further doubts about their potential role as cancer drivers. Altogether, this work provides further evidence as to whether Upf1 disruptive mutations represent driving factors in pancreatic adenosquamous carcinoma.\n\nEssential Revisions:\n\nAlthough we append the specific reviewer comments below to aid in your revision, discussion amongst reviewers has generated the following Essential Revision list:\n\n1) Test additional NMD targets: reviewer 1 mentions doing this in the CRISPR-E10/E11 KPC cells and mining RNA-seq data from previous Upf1 variant data; reviewer 2 mentions analyzing other NMD targets in 293T Upf1 splicing mutant cells, to extend results beyond use of a reporter assay.\n\n2) Perform in vitro growth competition assay to rigorously determine if CRISPR-Exon10/Exon11 KPC cells display any difference from control KPC cells.\n\n3) Conduct additional database queries regarding Upf1 mutations and conduct some additional analyses of their data (as described by reviewer 3).\n\nReviewer #1:\n\nThis manuscript identifies that the UPF1 variants previously reported as frequent somatic mutations in pancreatic adenosquamous carcinoma are actually germline genetic variants with no clear effects on UPF1 splicing, protein splicing, or nonsense mediated decay. Given that the manuscript challenges a striking finding from a prior study that has not been validated in subsequent studies, it is important to publish to correct the literature. At the same time, several points should be clarified to make sure the data are as comprehensive as possible:\n\n1) In the experiments evaluating the effect of skipping exons 10-11 of UPF1, It is surprising that this genetic perturbation in UPF1 is actually tolerated in these cells as UPF1 is an essential gene in most cancer cell lines (this point also has likely motivated this current study). Also, the Western blots for UPF1 protein are not particularly clear (Figure 1\u2014figure supplement 1C) and the fact that the cells don't perturb the growth of KPC cells does not prove that UPF1 alterations is not tumorigenic. Have the authors checked to see if UPF1 is downregulated and mis-spliced in the cells following in vivo growth? A simple in vitro competition assay between UPF1 exon 10-11 targeted cells and control sgRNA cells would also be helpful. It would also be helpful to evaluate if NMD is altered in these cells given these issues.\n\n2) Although it is clear that the authors have used similar minigene assays as were used in the original publication, a more systematic evaluation for potential alteration in NMD with UPF1 variants (via RNA-seq) would be helpful given that this work questions the prior publication.\n\n3) Do the authors believe that the UPF1 variants reported as mutations initially in PASC are actually SNPs? The terminology describing what these variants are could be a little clearer in the Abstract and Discussion.\n\nReviewer #2:\n\nThis paper aims to resolve the disparity between one report (Liu et al., 2014), which described somatic mutations in pancreatic adenosquamous carcinoma (PASC) that did not typify normal pancreatic tissue of the patients, and other reports (Witkiewicz et al., 2015; Fang et al., 2017; Hayashi et al., 2020), which did not find these mutations. The authors show here that many (40%) of the mutations described by Liu et al. typify genetic variations in the human population at large, and they suggest that these mutations are not pathogenic, e.g. are not drivers of PASC, and also not somatic but, rather, are genetic in origin.\n\nThe authors use CRISPR-Cas9 to generate in mouse pancreatic cancer (KPC) cells, which harbor Kras and Tp53 gene mutations (as do PASC patients), a Upf1 gene, and thus its product mRNA, lacking exons 10 and 11. Liu et al. previously reported this Upf1 variant not only inhibits NMD by disrupting UPF1 helicase activity, but also promotes tumorigenesis. After injection into mice, the authors found no detectable effects on pancreatic cancer growth compared to the injection of control cells.\n\nThe authors acknowledge that mice may differ from humans. Thus next, rather than using mini-UPF1 genes, as did Liu et al., the authors introduced two of the Liu et al. mutations separately into the UPF1 gene of HEK293T cells. In contrast to Liu et al., the authors found modestly increased NMD efficiency and no evidence of UPF1 pre-mRNA mis-splicing. The authors note that this makes sense since these mutations are found in people not as somatic mutations but genetic mutations, and thus would not be expected to inhibit NMD given the importance of NMD to aspects of human development in utero and beyond.\n\nThis is a very well-written paper describing carefully executed experiments that lead the reader to discount three claims made about UPF1 gene mutations in PANC as described by Liu et al., namely, that these mutations: (i) have a somatic origin, (ii) lead to UPF1 pre-mRNA mis-splicing so as to inhibit NMD, and (iii) promote tumorigenesis. The authors are careful not to over-interpret their data.\n\nResults, in reference to Figure 1F. It is unexpected that the variations in UPF1 protein levels were \"uncorrelated with NMD efficiency\". Possibly, this reviewer doesn't understand what the authors mean. Please clarify.\n\nAdditionally, in this regard, it is better to draw conclusions about NMD efficiency by measuring more than just the efficiency with which mRNA from a reporter construct is targeted for NMD. It is recommended that the authors assay the levels of a few (e.g. three) cellular NMD targets, normalized to the level of their pre-mRNA to control for any changes to gene transcription.\n\nReviewer #3:\n\nIn the manuscript, Polaski et al. compared the reported UPF1 mutations with a collection of three databases and found 42.5% of these mutations are identical to germline genetic variation. However, most of these overlapped mutations are located within introns, and only present in Exome Aggregation Consortium (ExAC) database (Figure 2). This raised some concerns since the ExAC database mainly report exon variants rather than intron variants. The authors need provide other information such as allele frequency to examine whether these intronic mutations are rare or low-frequency variants.\n\nAnother suggestion is that the authors may cross-reference UPF1 mutations with the recent gnomAD v3 database (Nature 2020), which provided non-coding genetic variants within much better resolution. In addition, most of the other UPF1 exon mutations are indeed novel as they are not present in any databases (Figure 2\u2014figure supplement 1). The authors need to provide some additional analysis such as separating these two types of variants (exon/intron variants) and analyzing the frequency of overlapped UPF1 mutations.\n",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6cecc6d0-b788-475e-b883-240cead4e6a2",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C1",
+      "claim": "Pancreatic adenosquamous carcinoma (PASC) constitutes 1\u20134% of pancreatic exocrine tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Pancreatic adenosquamous carcinoma (PASC) is a rare and aggressive disease that constitutes 1\u20134% of pancreatic exocrine tumors (Madura et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Madura et al., 1999",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "d1cd0d18-dabe-40ea-84a1-9e15e7f8b4bb",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C2",
+      "claim": "PASC patient median survival is 8 months.",
+      "claim_type": "EXPLICIT",
+      "source": "Patient prognosis is extremely poor, with a median survival of 8 months (Simone et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Simone et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "ed8d0aef-2f07-4a36-a51e-478a62373e1d",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C3",
+      "claim": "Liu et al., 2014 reported high-frequency mutations affecting UPF1 in 78% (18 of 23) of PASC patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Liu et al., 2014 reported high-frequency mutations affecting UPF1, which encodes a core component of the nonsense-mediated mRNA decay (NMD) pathway, in 78% (18 of 23) of PASC patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Liu et al., 2014 and specific numerical data",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "8fde2efb-8154-4e92-8b82-0223ce866ea4",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C4",
+      "claim": "UPF1 mutations reported by Liu et al. were absent from patient-matched normal pancreatic tissue (0 of 18).",
+      "claim_type": "EXPLICIT",
+      "source": "These mutations were absent from patient-matched normal pancreatic tissue (0 of 18) and from non-PASC tumors (0 of 29 non-adenosquamous pancreatic carcinomas and 0 of 21 lung squamous cell carcinomas).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Liu et al., 2014 with specific numerical data",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "064d0a73-48cf-4966-8f00-869e75f1c246",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C5",
+      "claim": "UPF1 mutations reported by Liu et al. were absent from non-PASC tumors (0 of 29 non-adenosquamous pancreatic carcinomas and 0 of 21 lung squamous cell carcinomas).",
+      "claim_type": "EXPLICIT",
+      "source": "These mutations were absent from patient-matched normal pancreatic tissue (0 of 18) and from non-PASC tumors (0 of 29 non-adenosquamous pancreatic carcinomas and 0 of 21 lung squamous cell carcinomas).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Liu et al., 2014 with specific numerical data",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "5c08b331-b1d4-4eb0-841c-5f09db559a08",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C6",
+      "claim": "Three subsequent studies of distinct PASC cohorts did not report somatic mutations in UPF1.",
+      "claim_type": "EXPLICIT",
+      "source": "Three subsequent studies of distinct PASC cohorts, however, did not report somatic mutations in UPF1 (Fang et al., 2017; Hayashi et al., 2020; Witkiewicz et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to three independent studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "c91af287-80b3-453b-8336-94cac6a8733e",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C7",
+      "claim": "The absence of UPF1 mutations in three subsequent studies (0 of 34 total PASC samples) is significantly different from the high rate reported by Liu et al. (18 of 23 PASC samples) with p<10\u22128.",
+      "claim_type": "EXPLICIT",
+      "source": "This absence of UPF1 mutations is significantly different from the high rate reported by Liu et al. (0 of 34 total PASC samples from three cohorts [Fang et al., 2017; Hayashi et al., 2020; Witkiewicz et al., 2015] vs. 18 of 23 PASC samples from Liu et al; p<10\u22128 by the two-sided binomial proportion test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of data from multiple cited studies",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "ac57e754-8261-4615-a7f2-d5fb028d6886",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C8",
+      "claim": "The majority of UPF1 mutations reported by Liu et al. caused skipping of UPF1 exons 10 and 11.",
+      "claim_type": "EXPLICIT",
+      "source": "Liu et al. reported that the majority of UPF1 mutations caused skipping of UPF1 exons 10 and 11, disrupting UPF1's RNA helicase domain that is essential for its NMD activity (Lee et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Liu et al. and Lee et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "c274fb9f-7209-4b2a-a6c2-063cb2a6fa40",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C9",
+      "claim": "UPF1's RNA helicase domain is essential for its NMD activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Liu et al. reported that the majority of UPF1 mutations caused skipping of UPF1 exons 10 and 11, disrupting UPF1's RNA helicase domain that is essential for its NMD activity (Lee et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lee et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "7026a8a2-1302-4fca-9fb3-f39198c17097",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C10",
+      "claim": "KPC cells are defined by mutations affecting KRAS and p53 that also occur in the vast majority of PASC cases.",
+      "claim_type": "EXPLICIT",
+      "source": "KPC cells are defined by mutations affecting KRAS and p53 (encoded by Kras and Trp53 in mouse) that also occur in the vast majority of PASC cases (Borazanci et al., 2015; Fang et al., 2017; Hayashi et al., 2020), making them a genetically appropriate system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to three studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "aee038cd-b5ec-427b-9e4e-cb20db246781",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C11",
+      "claim": "Guide delivery resulted in the production of UPF1 mRNA lacking exons 10 and 11 in KPC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We delivered Upf1-targeting paired guide RNAs to KPC cells using recombinant adenoviral vectors and confirmed that guide delivery resulted in the production of UPF1 mRNA lacking exons 10 and 11 and a corresponding reduction in full-length UPF1 protein levels (Figure 1\u2014figure supplement 1A\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 1A\u2013G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "52fb9023-c854-4f0e-854b-b4c781679f29",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C12",
+      "claim": "Guide delivery resulted in a corresponding reduction in full-length UPF1 protein levels in KPC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We delivered Upf1-targeting paired guide RNAs to KPC cells using recombinant adenoviral vectors and confirmed that guide delivery resulted in the production of UPF1 mRNA lacking exons 10 and 11 and a corresponding reduction in full-length UPF1 protein levels (Figure 1\u2014figure supplement 1A\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 1A\u2013G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "afc7be0c-fadf-4ee1-8dde-13da4ad859fb",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C13",
+      "claim": "No significant differences in tumor volume were detected in mice implanted with control or Upf1-targeted KPC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected no significant differences in tumor volume or survival in mice implanted with control or Upf1-targeted KPC cells (Figure 1B\u2013D and Figure 1\u2014source datas 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1B\u2013D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "d997f72e-0a4d-4bdd-b1bc-44213da9aff8",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C14",
+      "claim": "No significant differences in survival were detected in mice implanted with control or Upf1-targeted KPC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected no significant differences in tumor volume or survival in mice implanted with control or Upf1-targeted KPC cells (Figure 1B\u2013D and Figure 1\u2014source datas 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1B\u2013D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "7af62793-3258-4560-9d6c-693c32b4d992",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C15",
+      "claim": "Tumors derived from control and Upf1-targeted cells displayed similar histopathological features characteristic of moderately to poorly differentiated pancreatic ductal adenocarcinomas.",
+      "claim_type": "EXPLICIT",
+      "source": "Tumors derived from control as well as Upf1-targeted cells displayed similar histopathological features characteristic of moderately to poorly differentiated pancreatic ductal adenocarcinomas (Figure 1E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by histopathological analysis shown in Figure 1E\u2013G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "28862e46-bacc-4eba-bc36-84d2314aa7e4",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C16",
+      "claim": "No squamous differentiation was identified by histomorphologic evaluation in tumors from control or Upf1-targeted KPC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "No squamous differentiation was identified by histomorphologic evaluation and no expression of the squamous marker p40 (\u0394Np63) was detected (Figure 1H and Supplementary file 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by histomorphologic evaluation and IHC data shown in Figure 1H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "b146bac8-f884-4707-b842-6c82d75652e8",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C17",
+      "claim": "No expression of the squamous marker p40 (\u0394Np63) was detected in tumors from control or Upf1-targeted KPC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "No squamous differentiation was identified by histomorphologic evaluation and no expression of the squamous marker p40 (\u0394Np63) was detected (Figure 1H and Supplementary file 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by IHC data shown in Figure 1H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "f360b9d8-86f1-45b0-bc17-2f156c35d91f",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C18",
+      "claim": "Inducing the reported Upf1 exon skipping in vivo had no detectable effects on pancreatic cancer growth in the KPC model.",
+      "claim_type": "EXPLICIT",
+      "source": "We concluded that inducing the reported Upf1 exon skipping in vivo had no detectable effects on pancreatic cancer growth or acquisition of adenosquamous features in the KPC model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from experimental data presented in Figure 1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "2e1a076f-204a-4c7d-93a6-79000ece3f4c",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C19",
+      "claim": "Inducing the reported Upf1 exon skipping in vivo had no detectable effects on acquisition of adenosquamous features in the KPC model.",
+      "claim_type": "EXPLICIT",
+      "source": "We concluded that inducing the reported Upf1 exon skipping in vivo had no detectable effects on pancreatic cancer growth or acquisition of adenosquamous features in the KPC model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from experimental data presented in Figure 1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "97c91808-f491-4723-a2fd-cfe8585c3d94",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C20",
+      "claim": "Minigenes are frequently spliced less efficiently than endogenous genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Minigenes are common tools for studying splicing, but they are frequently spliced less efficiently than endogenous genes, presumably because they are gene fragments that lack potentially important sequence features that promote splicing and incompletely capture the close relationship between chromatin and splicing (Luco et al., 2011; Naftelberg et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Luco et al., 2011 and Naftelberg et al., 2015",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "add68629-0feb-42e6-83ab-c0dc3439451c",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C21",
+      "claim": "IVS10+31G>A (patient 1; P1) was reportedly recurrent across three different patients.",
+      "claim_type": "EXPLICIT",
+      "source": "We selected IVS10+31G>A (patient 1; P1) because it was reportedly recurrent across three different patients (making it equally or more common than any other mutation) and induced strong mis-splicing on its own (36% mis-spliced mRNA, versus 0% for wild-type UPF1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by reference to Liu et al.'s reported data",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "5ab1e993-5f90-4eb8-81dd-978e8e763a46",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C22",
+      "claim": "IVS10+31G>A induced strong mis-splicing on its own (36% mis-spliced mRNA, versus 0% for wild-type UPF1) according to Liu et al.",
+      "claim_type": "EXPLICIT",
+      "source": "We selected IVS10+31G>A (patient 1; P1) because it was reportedly recurrent across three different patients (making it equally or more common than any other mutation) and induced strong mis-splicing on its own (36% mis-spliced mRNA, versus 0% for wild-type UPF1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by reference to Liu et al.'s reported data",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "02a00d8e-37f4-412d-97cd-b14f9d8d7ee3",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C23",
+      "claim": "IVS10-17G>A (patient 9; P9) had one of the strongest effects on splicing (90% mis-spliced mRNA) according to Liu et al.",
+      "claim_type": "EXPLICIT",
+      "source": "we selected IVS10-17G>A (patient 9; P9) because it had one of the strongest effects on splicing (90% mis-spliced mRNA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by reference to Liu et al.'s reported data",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "1c8e00c3-09b6-4692-979b-2d6ffe9ee893",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C24",
+      "claim": "IVS10+31G>A was present in a homozygous state in two of the three patients carrying it according to Liu et al.",
+      "claim_type": "EXPLICIT",
+      "source": "IVS10+31G>A was present in a homozygous state in two of the three patients carrying it, while IVS10-17G>A was present in a heterozygous state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by reference to Liu et al.'s reported data",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "e74ab324-c55b-4ccf-af62-852e79b6e51d",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C25",
+      "claim": "IVS10-17G>A was present in a heterozygous state according to Liu et al.",
+      "claim_type": "EXPLICIT",
+      "source": "IVS10+31G>A was present in a homozygous state in two of the three patients carrying it, while IVS10-17G>A was present in a heterozygous state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by reference to Liu et al.'s reported data",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "10047507-385d-4453-8d2b-c08940fd6355",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C26",
+      "claim": "UPF1-mutant cells did not exhibit decreased NMD efficiency compared to wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe decreased NMD efficiency in UPF1-mutant versus wild-type cells; instead, UPF1-mutant cells exhibited evidence of modestly more efficient NMD, although these differences were not statistically significant (Figure 2A and Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by beta-globin reporter assay data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "0f7868e5-3c6c-40ad-923f-bb603bfdd7c6",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C27",
+      "claim": "UPF1-mutant cells exhibited evidence of modestly more efficient NMD, although these differences were not statistically significant.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe decreased NMD efficiency in UPF1-mutant versus wild-type cells; instead, UPF1-mutant cells exhibited evidence of modestly more efficient NMD, although these differences were not statistically significant (Figure 2A and Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by beta-globin reporter assay data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "75f5b984-ebe7-483d-9684-6ece53c3fb3d",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C28",
+      "claim": "Neither UPF1-mutant cell line exhibited global increases in the expression of NMD substrates relative to wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These analyses revealed that neither UPF1-mutant cell line exhibited global increases in the expression of NMD substrates relative to wild-type cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNA-seq analysis of endogenous NMD substrates",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "f5d7fdc2-640a-4d87-bbd0-6c03a0eb6637",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C29",
+      "claim": "Both UPF1-mutant cell lines exhibited modestly lower global levels of endogenous NMD substrates than did wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, both UPF1-mutant cell lines exhibited modestly lower global levels of endogenous NMD substrates than did wild-type cells, mimicking the trend observed with our NMD reporter experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNA-seq analysis of endogenous NMD substrates",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "6482d2fc-c744-4c80-b947-90e4f06c3cc1",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C30",
+      "claim": "The tested mutations in UPF1 intron 10 do not affect NMD activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data confirm that the tested mutations in UPF1 intron 10 do not affect NMD activity (Figure 2B\u2013D and Supplementary file 1b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Conclusion drawn from NMD reporter and RNA-seq data shown in Figure 2B\u2013D",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "c9923be4-33e3-4db1-9eed-e60f09b9dfeb",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C31",
+      "claim": "UPF1 mutations did not cause loss of full-length UPF1 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with similar NMD activity independent of UPF1 mutational status, UPF1 mutations did not cause loss of full-length UPF1 protein (Figure 2E, Figure 2\u2014figure supplement 1D, and Figure 2\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunoblot data shown in Figure 2E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "275103d3-4942-4a5d-a0ba-247aac485a5d",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C32",
+      "claim": "No evidence of mis-spliced UPF1 mRNA was found in UPF1-mutant cells, except in positive control samples with spiked-in synthesized DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "We readily detected normally spliced UPF1 mRNA in all samples by RT-PCR, but found no evidence of mis-spliced UPF1 mRNA, except in positive control samples in which we spiked in synthesized DNA corresponding to the exon skipping isoform reported in Liu et al. (Figure 2F, Figure 2\u2014figure supplement 1E, and Figure 2\u2014source data 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RT-PCR data shown in Figure 2F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "35cf9842-1fe2-4fca-af39-6b6553b0c470",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C33",
+      "claim": "RNA-seq analyses revealed no evidence of splice junctions consistent with the reported exon 10 and 11 skipping or other abnormal exon skipping isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed these results with our RNA-seq data by mapping all reads against all possible splice junctions connecting exons 9, 10, 11, and 12. These analyses revealed no evidence of splice junctions consistent with the reported exon 10 and 11 skipping or other abnormal exon skipping isoforms (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data shown in Figure 2G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "a27269b1-30ea-462a-b56f-8eac54e6c462",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C34",
+      "claim": "45% (18 of 40) of the reported UPF1 mutations are identical to standing genetic variants in the human population.",
+      "claim_type": "EXPLICIT",
+      "source": "We found genetic variants identical to 45% (18 of 40) of the reported UPF1 mutations, one of which is present in the reference human genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison with genetic variant databases",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "47cc76b1-53c3-4fe9-af74-6b720b80fc00",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C35",
+      "claim": "One of the reported UPF1 mutations is present in the reference human genome.",
+      "claim_type": "EXPLICIT",
+      "source": "We found genetic variants identical to 45% (18 of 40) of the reported UPF1 mutations, one of which is present in the reference human genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison with reference genome",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "efcbe004-bb51-4b6f-a7cf-4c41e911217e",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C36",
+      "claim": "89% (16 of 18) of UPF1-mutant patients had one or more reported mutations that corresponded to standing genetic variation.",
+      "claim_type": "EXPLICIT",
+      "source": "Eighty-nine percent (16 of 18) of UPF1-mutant patients had one or more reported mutations that corresponded to standing genetic variation (Figure 3A\u2013F and Supplementary file 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison with genetic variant databases shown in Figure 3A\u2013F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "23a213d9-81b2-4258-ad1b-8a7077f125d5",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C37",
+      "claim": "A large fraction of reported intronic UPF1 mutations were identical to standing genetic variation.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of overlaps between reported UPF1 mutations and standing genetic variation depended strongly upon genic context. A large fraction of reported intronic UPF1 mutations were identical to standing genetic variation, while the majority of reported exonic UPF1 mutations were not (Supplementary file 1d).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of genetic variant databases",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "b08434d2-9398-49ce-9e41-ad122c45665b",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C38",
+      "claim": "The majority of reported exonic UPF1 mutations were not identical to standing genetic variation.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of overlaps between reported UPF1 mutations and standing genetic variation depended strongly upon genic context. A large fraction of reported intronic UPF1 mutations were identical to standing genetic variation, while the majority of reported exonic UPF1 mutations were not (Supplementary file 1d).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of genetic variant databases",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "5057523c-7b17-44a9-b786-72dceae4d91d",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C39",
+      "claim": "UPF1 is essential for embryonic viability and development in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, UPF1 is essential for embryonic viability and development in mammals (Medghalchi et al., 2001), zebrafish (Wittkopp et al., 2009), and Drosophila (Avery et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Medghalchi et al., 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "9781c33e-314f-4a3d-9dec-58113a019f44",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C40",
+      "claim": "UPF1 is essential for embryonic viability and development in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, UPF1 is essential for embryonic viability and development in mammals (Medghalchi et al., 2001), zebrafish (Wittkopp et al., 2009), and Drosophila (Avery et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wittkopp et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "8e0f4617-69c2-435f-bac4-7336921367e2",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C41",
+      "claim": "UPF1 is essential for embryonic viability and development in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, UPF1 is essential for embryonic viability and development in mammals (Medghalchi et al., 2001), zebrafish (Wittkopp et al., 2009), and Drosophila (Avery et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Avery et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "92c208b3-6b36-4ca0-98c5-3f09c30188a7",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C42",
+      "claim": "Liu et al. reported that all UPF1 mutations caused mis-splicing that is expected to disable UPF1 protein function.",
+      "claim_type": "EXPLICIT",
+      "source": "As Liu et al. reported that all UPF1 mutations caused mis-splicing that is expected to disable UPF1 protein function (Liu et al., 2014), then those mutations should be incompatible with life when present as inherited genetic variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Liu et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "a10ee468-6d97-422d-8060-a133448de831",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C43",
+      "claim": "Two reported UPF1 mutations had no effect on UPF1 splicing when introduced into their endogenous genomic contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding that two reported mutations had no effect on UPF1 splicing when introduced into their endogenous genomic contexts offers a way to explain this incongruity, at least for the two reported lesions that we studied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from experimental data presented in Figure 2",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "505ca84a-b8f4-4b72-a553-e83327e4c459",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C44",
+      "claim": "Primary sequencing data from patient-matched tumor and normal samples from Liu et al. were not available.",
+      "claim_type": "EXPLICIT",
+      "source": "We contacted the senior author (Dr. YanJun Lu) to request primary sequencing data from patient-matched tumor and normal samples, but neither primary sequencing data from matched samples nor the samples themselves were available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on direct communication with the senior author",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "2c55e995-c249-4351-bd1b-e3b3e98087ca",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C45",
+      "claim": "Somatic UPF1 mutations were identified in samples from 6 of 17 PASC patients in the Fang et al. dataset using relaxed mutation-calling criteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Using relaxed mutation-calling criteria to maximize sensitivity (details in Materials and methods), we identified somatic UPF1 mutations in samples from 6 of 17 PASC patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by reanalysis of sequencing data from Fang et al., 2017",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "6864253a-7e69-4796-b2e1-8ab223cc936a",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C46",
+      "claim": "None of the UPF1 mutations identified in the Fang et al. dataset matched the UPF1 mutations reported by Liu et al.",
+      "claim_type": "EXPLICIT",
+      "source": "None of those UPF1 mutations matched the UPF1 mutations reported by Liu et al., and only one was present at an allelic frequency equal to the allelic frequency of mutant KRAS, which is a known driver and which we detected in samples from all PASC patients (median allelic frequencies of 12% versus 34% for UPF1 versus KRAS mutations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by reanalysis of sequencing data from Fang et al., 2017",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "91f04451-933f-4eb1-aaf2-a30bbee31c15",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C47",
+      "claim": "Only one UPF1 mutation in the Fang et al. dataset was present at an allelic frequency equal to the allelic frequency of mutant KRAS.",
+      "claim_type": "EXPLICIT",
+      "source": "None of those UPF1 mutations matched the UPF1 mutations reported by Liu et al., and only one was present at an allelic frequency equal to the allelic frequency of mutant KRAS, which is a known driver and which we detected in samples from all PASC patients (median allelic frequencies of 12% versus 34% for UPF1 versus KRAS mutations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by reanalysis of sequencing data from Fang et al., 2017",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "80bc2076-10a3-4382-a04a-17976bac602e",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C48",
+      "claim": "Median allelic frequencies were 12% for UPF1 mutations versus 34% for KRAS mutations in the Fang et al. dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "None of those UPF1 mutations matched the UPF1 mutations reported by Liu et al., and only one was present at an allelic frequency equal to the allelic frequency of mutant KRAS, which is a known driver and which we detected in samples from all PASC patients (median allelic frequencies of 12% versus 34% for UPF1 versus KRAS mutations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by reanalysis of sequencing data from Fang et al., 2017",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "339d7f58-c68b-4c60-8611-7694a8aee2a7",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C49",
+      "claim": "UPF1 mutations were identified in samples from 3 of 34 pancreatic ductal adenocarcinomas in the Fang et al. dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we also identified UPF1 mutations in samples from patients with non-adenosquamous tumors (3 of 34 pancreatic ductal adenocarcinomas), whereas Liu et al. reported finding no UPF1 mutations in non-adenosquamous pancreatic cancers (0 of 29).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by reanalysis of sequencing data from Fang et al., 2017",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "eb365cfc-1e98-440f-8057-a46ce4302316",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C50",
+      "claim": "UPF1 is not a frequent or adenosquamous-specific mutational target in most PASC cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "In concert with the reports of Witkiewicz et al., 2015 and Hayashi et al., 2020 of finding no UPF1 mutations in their PASC samples, these analyses suggest that UPF1 is not a frequent or adenosquamous-specific mutational target in most PASC cohorts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from multiple studies and reanalysis of Fang et al. data",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "a04db6e0-37ce-4dbb-b29b-f2ff7e5b8bc8",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C51",
+      "claim": "Many reported UPF1 mutations occur as germline genetic variants of no known pathogenicity.",
+      "claim_type": "EXPLICIT",
+      "source": "UPF1's status as an essential gene and our discovery that many reported UPF1 mutations occur as germline genetic variants of no known pathogenicity together suggest that other UPF1 mutations reported by Liu et al. could similarly represent genetic differences that do not functionally contribute to PASC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison with genetic variant databases",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "ded4fd12-0bb1-4b69-b565-0cd6e2e154c9",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C52",
+      "claim": "Other UPF1 mutations reported by Liu et al. could represent genetic differences that do not functionally contribute to PASC.",
+      "claim_type": "EXPLICIT",
+      "source": "UPF1's status as an essential gene and our discovery that many reported UPF1 mutations occur as germline genetic variants of no known pathogenicity together suggest that other UPF1 mutations reported by Liu et al. could similarly represent genetic differences that do not functionally contribute to PASC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative conclusion based on experimental findings and genetic variant analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "a746d972-1f61-496e-94f5-8c4beac67132",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C53",
+      "claim": "UPF1 encodes a core component of the nonsense-mediated mRNA decay (NMD) pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Liu et al., 2014 reported high-frequency mutations affecting UPF1, which encodes a core component of the nonsense-mediated mRNA decay (NMD) pathway, in 78% (18 of 23) of PASC patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge about UPF1 function",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "4f4b0ab8-fdd2-4fa3-bf3f-78ba86f624c2",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C54",
+      "claim": "Liu et al. used a combination of molecular and histological assays to find that the UPF1 mutations caused UPF1 mis-splicing, loss of UPF1 protein, and impaired NMD.",
+      "claim_type": "EXPLICIT",
+      "source": "The authors used a combination of molecular and histological assays to find that the UPF1 mutations caused UPF1 mis-splicing, loss of UPF1 protein, and impaired NMD, resulting in stable expression of aberrant mRNAs containing premature termination codons that would normally be degraded by NMD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Liu et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "37ae0025-536a-48cd-b8a5-d3a5a3cffc4b",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C55",
+      "claim": "Liu et al. found that UPF1 mutations resulted in stable expression of aberrant mRNAs containing premature termination codons that would normally be degraded by NMD.",
+      "claim_type": "EXPLICIT",
+      "source": "The authors used a combination of molecular and histological assays to find that the UPF1 mutations caused UPF1 mis-splicing, loss of UPF1 protein, and impaired NMD, resulting in stable expression of aberrant mRNAs containing premature termination codons that would normally be degraded by NMD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Liu et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "b73bdad6-c229-410d-ae53-65b8cf219d61",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C56",
+      "claim": "The relevant UPF1 introns are very short and well covered by whole-exome and whole-genome sequencing technologies.",
+      "claim_type": "EXPLICIT",
+      "source": "Although these other studies relied on whole-exome and/or genome sequencing instead of targeted UPF1 gene sequencing, those technologies yield good coverage of the relevant UPF1 gene regions because the affected introns are very short.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on knowledge of sequencing technologies and gene structure",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "cfc5feba-9ab4-4c29-9473-eb6ac2ccdce5",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C57",
+      "claim": "KPC cells were obtained from Dr. Robert Vonderheide.",
+      "claim_type": "EXPLICIT",
+      "source": "Mouse KPC cells (KrasG12D; Trp53R172H/null; Pdx1-Cre) were obtained from Dr. Robert Vonderheide and were cultured in DMEM (GIBCO) supplemented with 10% fetal bovine serum (FBS) and 1% Penicillin/Streptomycin (GIBCO).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about source of materials",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "5bd29973-2a5e-4416-abce-9688dbb37557",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C58",
+      "claim": "NMD substrates arising from alternative splicing are abundant and sensitive biomarkers of NMD efficiency that are internally controlled for gene expression variation.",
+      "claim_type": "EXPLICIT",
+      "source": "We focused on NMD substrates arising from alternative splicing, as these are abundant and sensitive biomarkers of NMD efficiency that are internally controlled for gene expression variation (Feng et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Feng et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "132c732e-a54c-4b65-adec-9e2d5bdbb432",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C59",
+      "claim": "Liu et al. measured the effects of each mutation on UPF1 splicing using a minigene assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Liu et al. measured the effects of each mutation on UPF1 splicing using a minigene assay, in which each mutation was introduced into a plasmid containing a small fragment of the UPF1 gene that was subsequently transfected into 293 T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Liu et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "65dee410-3895-4c22-9384-59ac9a25c45d",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C60",
+      "claim": "Liu et al. concluded that all reported UPF1 mutations caused dramatic UPF1 mis-splicing that disrupted key protein domains that are essential for UPF1 function in NMD.",
+      "claim_type": "EXPLICIT",
+      "source": "Liu et al. concluded that all reported UPF1 mutations caused dramatic UPF1 mis-splicing that disrupted key protein domains that are essential for UPF1 function in NMD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Liu et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "c1538e03-957d-4164-acc1-1f4b382a9867",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C61",
+      "claim": "Minigenes are gene fragments that lack potentially important sequence features that promote splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "Minigenes are common tools for studying splicing, but they are frequently spliced less efficiently than endogenous genes, presumably because they are gene fragments that lack potentially important sequence features that promote splicing and incompletely capture the close relationship between chromatin and splicing (Luco et al., 2011; Naftelberg et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Luco et al., 2011 and Naftelberg et al., 2015",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "78dd902d-33ee-4c23-8364-ba62f3c01629",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C62",
+      "claim": "Minigenes incompletely capture the close relationship between chromatin and splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "Minigenes are common tools for studying splicing, but they are frequently spliced less efficiently than endogenous genes, presumably because they are gene fragments that lack potentially important sequence features that promote splicing and incompletely capture the close relationship between chromatin and splicing (Luco et al., 2011; Naftelberg et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Luco et al., 2011 and Naftelberg et al., 2015",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "6a0d09f6-445b-4546-a217-de6926f90406",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C63",
+      "claim": "The GenBank accession codes reported in Liu et al. corresponded to short nucleotide sequences containing UPF1 mutations, without corresponding data for patient-matched controls.",
+      "claim_type": "EXPLICIT",
+      "source": "The GenBank accession codes reported in Liu et al. corresponded to short nucleotide sequences containing UPF1 mutations, without corresponding data for patient-matched controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on examination of GenBank records",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "4342fc86-d846-4470-a22d-2f6f01ca0906",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C64",
+      "claim": "The samples from Liu et al. were not available.",
+      "claim_type": "EXPLICIT",
+      "source": "We contacted the senior author (Dr. YanJun Lu) to request primary sequencing data from patient-matched tumor and normal samples, but neither primary sequencing data from matched samples nor the samples themselves were available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on direct communication with the senior author",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "e496fc47-5956-4ba4-bbb6-e3a528fc4989",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C65",
+      "claim": "The relevant UPF1 introns were well covered by both the whole-exome and whole-genome sequencing used by Fang et al.",
+      "claim_type": "EXPLICIT",
+      "source": "We focused on the two loci that contained all mutations reported by Liu et al. (UPF1 exons 10-11 and exons 21\u201323). Because the relevant introns are very short, they were well covered by both the whole-exome and whole-genome sequencing used by Fang et al.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on knowledge of sequencing technologies and gene structure",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "ba45f675-00ea-4549-9946-8180a8391930",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C66",
+      "claim": "KRAS is a known driver mutation in PASC.",
+      "claim_type": "EXPLICIT",
+      "source": "None of those UPF1 mutations matched the UPF1 mutations reported by Liu et al., and only one was present at an allelic frequency equal to the allelic frequency of mutant KRAS, which is a known driver and which we detected in samples from all PASC patients (median allelic frequencies of 12% versus 34% for UPF1 versus KRAS mutations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge about KRAS in pancreatic cancer",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "eccaccca-fb54-4ab7-b517-ffa7c86086fb",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C67",
+      "claim": "Mutant KRAS was detected in samples from all PASC patients in the Fang et al. dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "None of those UPF1 mutations matched the UPF1 mutations reported by Liu et al., and only one was present at an allelic frequency equal to the allelic frequency of mutant KRAS, which is a known driver and which we detected in samples from all PASC patients (median allelic frequencies of 12% versus 34% for UPF1 versus KRAS mutations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by reanalysis of sequencing data from Fang et al., 2017",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "512bef1a-0ce8-4d88-ab25-45b49abfdc68",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C68",
+      "claim": "Witkiewicz et al., 2015 found no UPF1 mutations in their PASC samples.",
+      "claim_type": "EXPLICIT",
+      "source": "In concert with the reports of Witkiewicz et al., 2015 and Hayashi et al., 2020 of finding no UPF1 mutations in their PASC samples, these analyses suggest that UPF1 is not a frequent or adenosquamous-specific mutational target in most PASC cohorts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Witkiewicz et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "648599f5-c941-462d-be79-49a0ccc334e4",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "claim_id": "C69",
+      "claim": "Hayashi et al., 2020 found no UPF1 mutations in their PASC samples.",
+      "claim_type": "EXPLICIT",
+      "source": "In concert with the reports of Witkiewicz et al., 2015 and Hayashi et al., 2020 of finding no UPF1 mutations in their PASC samples, these analyses suggest that UPF1 is not a frequent or adenosquamous-specific mutational target in most PASC cohorts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hayashi et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "706e994e-5cf2-4388-8624-6126ca4f14d9",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "PASC is a rare pancreatic cancer subtype constituting 1-4% of pancreatic exocrine tumors with a median survival of 8 months.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C2 accurately report established epidemiological data about PASC from the literature (Madura et al., 1999; Simone et al., 2013). These are well-documented background facts about the disease.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "5d699630-c845-4b59-9df1-58c2f10b2b29",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Liu et al. (2014) reported high-frequency UPF1 mutations in 78% of PASC patients that were tumor-specific, caused exon 10-11 skipping, and disrupted NMD function based on minigene assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5, C8, C21-C25, C42, C54-C55, C59-C60 accurately summarize the findings reported by Liu et al. (2014). These are appropriately cited descriptions of prior work, though the current manuscript questions their validity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "dcd98b24-5d14-4e66-ab77-005397a69853",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Three subsequent independent studies found no UPF1 mutations in their PASC cohorts (0/34 samples), which is statistically significantly different (p<10\u207b\u2078) from Liu et al.'s reported rate (18/23 samples).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7, C68-C69 accurately report the absence of UPF1 mutations in three subsequent studies and provide appropriate statistical analysis. The binomial proportion test is appropriate for comparing mutation frequencies between cohorts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "b85c7b66-6b02-45b1-a8a9-79b398426246",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Inducing Upf1 exon 10-11 deletion in KPC mouse pancreatic cancer cells had no effect on tumor growth, survival, histopathology, or acquisition of adenosquamous features in orthotopic xenograft experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C19 are supported by the experimental data in Figure 1 and supplementary figures showing successful exon deletion, no differences in tumor volume or survival (n=10 per group), and absence of squamous differentiation markers. However, the authors appropriately note important caveats about model system limitations and inability to track splicing changes during tumorigenesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "e4eb53c9-1ebb-45f1-b524-449c5c7afccb",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Two UPF1 mutations (IVS10+31G>A and IVS10-17G>A) introduced into their endogenous genomic contexts in 293T cells did not impair NMD efficiency as measured by beta-globin reporter assays and RNA-seq analysis of endogenous NMD substrates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C30 are supported by multiple complementary assays shown in Figure 2A-D. The beta-globin reporter data and transcriptome-wide analysis of NMD substrates both indicate no loss of NMD function. The use of multiple independent measurements strengthens these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "68de9e74-00ee-4f1e-becc-d70d4f793ffe",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The two tested UPF1 mutations did not cause loss of full-length UPF1 protein or produce mis-spliced UPF1 mRNA lacking exons 10-11 when introduced into endogenous genomic contexts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33, C43 are supported by immunoblot data (Figure 2E), RT-PCR (Figure 2F), and RNA-seq splice junction analysis (Figure 2G). The positive control with spiked-in DNA demonstrates the assays could detect mis-splicing if present. This directly contradicts the minigene-based findings from Liu et al.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "2b4e813b-f3dc-4881-9a05-94309893e803",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Minigenes are frequently spliced less efficiently than endogenous genes because they lack important sequence features and incompletely capture chromatin-splicing relationships.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20, C61-C62 accurately cite established knowledge about minigene limitations (Luco et al., 2011; Naftelberg et al., 2015). This provides important context for why the authors' endogenous genome editing approach may yield different results than Liu et al.'s minigene assays.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "0777fa88-a889-489e-8db8-c783547b2fb2",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "45% (18/40) of UPF1 mutations reported by Liu et al. are identical to standing genetic variants in human population databases, with 89% (16/18) of patients having at least one such variant, predominantly in intronic regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C38, C51 are supported by systematic comparison with multiple genetic variant databases (1000 Genomes, ExAC, gnomAD). The finding that nearly half of reported somatic mutations match germline variants raises serious questions about their pathogenic nature. The context-dependent distribution (intronic vs. exonic) is appropriately noted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "8082f415-3fdd-4001-8277-5a6a35ff1206",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "UPF1 is essential for embryonic viability and development in mammals, zebrafish, and Drosophila.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 accurately cite established findings about UPF1 essentiality across multiple model organisms (Medghalchi et al., 2001; Wittkopp et al., 2009; Avery et al., 2011). This provides important biological context for why function-disrupting mutations should not exist as viable germline variants.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "cf2d3e00-f976-4bf5-a5da-c5dfd275d50d",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Primary sequencing data and samples from Liu et al. were not available for independent verification, and GenBank accessions contained only short sequences without patient-matched controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44, C63-C64 document the authors' attempts to obtain primary data and the limitations of publicly available data. This is appropriately transparent about data availability issues that prevent direct verification of the original findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "fd1203b0-a4d9-4f08-8da6-294e766d37cd",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Reanalysis of Fang et al. sequencing data identified UPF1 mutations in 6/17 PASC samples, but these had characteristics of passenger mutations (low allelic frequency, median 12% vs. 34% for KRAS), did not match Liu et al.'s mutations, and were also found in non-adenosquamous tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C50 describe a systematic reanalysis with appropriate methodology. The comparison of UPF1 vs. KRAS allelic frequencies provides important context, as KRAS is a known driver. The finding of UPF1 mutations in non-adenosquamous tumors contradicts the tumor-type specificity reported by Liu et al. The conclusion that UPF1 is not a frequent PASC driver is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "5a4b474e-d0ce-4f7a-8827-7f06a6a63a28",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Other UPF1 mutations reported by Liu et al. could represent non-pathogenic genetic differences that do not functionally contribute to PASC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C52 is explicitly speculative, extrapolating from the two tested mutations to all reported mutations. While the logic is reasonable given UPF1 essentiality and the presence of many variants in population databases, this remains a hypothesis that would require testing each mutation individually to confirm.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "57d9435a-6668-42d3-8791-4eaa90af1bf1",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "KPC cells (with KRAS and p53 mutations) are a genetically appropriate model for PASC, as these mutations occur in the vast majority of PASC cases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10 and C57 appropriately justify the choice of model system with citations to three studies (Borazanci et al., 2015; Fang et al., 2017; Hayashi et al., 2020). The genetic similarity to human PASC supports the model's relevance, though the authors appropriately note limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    },
+    {
+      "id": "103e9cc0-52f3-498d-9a3c-41ed4f0ad2ca",
+      "content_id": "3a7d89c0-9f50-4ce9-8bf1-3390e513cccd",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background biological and technical context about UPF1 function, NMD substrates, sequencing coverage, and KRAS as a driver mutation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53, C9, C58, C56, C65-C67 provide appropriate background information and technical context, supported by citations or established knowledge. These support the experimental design and interpretation but are not primary findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:25:20.524982Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6cecc6d0-b788-475e-b883-240cead4e6a2",
+      "result_id": "706e994e-5cf2-4388-8624-6126ca4f14d9"
+    },
+    {
+      "claim_id": "d1cd0d18-dabe-40ea-84a1-9e15e7f8b4bb",
+      "result_id": "706e994e-5cf2-4388-8624-6126ca4f14d9"
+    },
+    {
+      "claim_id": "ed8d0aef-2f07-4a36-a51e-478a62373e1d",
+      "result_id": "5d699630-c845-4b59-9df1-58c2f10b2b29"
+    },
+    {
+      "claim_id": "8fde2efb-8154-4e92-8b82-0223ce866ea4",
+      "result_id": "5d699630-c845-4b59-9df1-58c2f10b2b29"
+    },
+    {
+      "claim_id": "064d0a73-48cf-4966-8f00-869e75f1c246",
+      "result_id": "5d699630-c845-4b59-9df1-58c2f10b2b29"
+    },
+    {
+      "claim_id": "ac57e754-8261-4615-a7f2-d5fb028d6886",
+      "result_id": "5d699630-c845-4b59-9df1-58c2f10b2b29"
+    },
+    {
+      "claim_id": "add68629-0feb-42e6-83ab-c0dc3439451c",
+      "result_id": "5d699630-c845-4b59-9df1-58c2f10b2b29"
+    },
+    {
+      "claim_id": "5ab1e993-5f90-4eb8-81dd-978e8e763a46",
+      "result_id": "5d699630-c845-4b59-9df1-58c2f10b2b29"
+    },
+    {
+      "claim_id": "02a00d8e-37f4-412d-97cd-b14f9d8d7ee3",
+      "result_id": "5d699630-c845-4b59-9df1-58c2f10b2b29"
+    },
+    {
+      "claim_id": "1c8e00c3-09b6-4692-979b-2d6ffe9ee893",
+      "result_id": "5d699630-c845-4b59-9df1-58c2f10b2b29"
+    },
+    {
+      "claim_id": "e74ab324-c55b-4ccf-af62-852e79b6e51d",
+      "result_id": "5d699630-c845-4b59-9df1-58c2f10b2b29"
+    },
+    {
+      "claim_id": "92c208b3-6b36-4ca0-98c5-3f09c30188a7",
+      "result_id": "5d699630-c845-4b59-9df1-58c2f10b2b29"
+    },
+    {
+      "claim_id": "4f4b0ab8-fdd2-4fa3-bf3f-78ba86f624c2",
+      "result_id": "5d699630-c845-4b59-9df1-58c2f10b2b29"
+    },
+    {
+      "claim_id": "37ae0025-536a-48cd-b8a5-d3a5a3cffc4b",
+      "result_id": "5d699630-c845-4b59-9df1-58c2f10b2b29"
+    },
+    {
+      "claim_id": "132c732e-a54c-4b65-adec-9e2d5bdbb432",
+      "result_id": "5d699630-c845-4b59-9df1-58c2f10b2b29"
+    },
+    {
+      "claim_id": "65dee410-3895-4c22-9384-59ac9a25c45d",
+      "result_id": "5d699630-c845-4b59-9df1-58c2f10b2b29"
+    },
+    {
+      "claim_id": "5c08b331-b1d4-4eb0-841c-5f09db559a08",
+      "result_id": "dcd98b24-5d14-4e66-ab77-005397a69853"
+    },
+    {
+      "claim_id": "c91af287-80b3-453b-8336-94cac6a8733e",
+      "result_id": "dcd98b24-5d14-4e66-ab77-005397a69853"
+    },
+    {
+      "claim_id": "512bef1a-0ce8-4d88-ab25-45b49abfdc68",
+      "result_id": "dcd98b24-5d14-4e66-ab77-005397a69853"
+    },
+    {
+      "claim_id": "648599f5-c941-462d-be79-49a0ccc334e4",
+      "result_id": "dcd98b24-5d14-4e66-ab77-005397a69853"
+    },
+    {
+      "claim_id": "aee038cd-b5ec-427b-9e4e-cb20db246781",
+      "result_id": "b85c7b66-6b02-45b1-a8a9-79b398426246"
+    },
+    {
+      "claim_id": "52fb9023-c854-4f0e-854b-b4c781679f29",
+      "result_id": "b85c7b66-6b02-45b1-a8a9-79b398426246"
+    },
+    {
+      "claim_id": "afc7be0c-fadf-4ee1-8dde-13da4ad859fb",
+      "result_id": "b85c7b66-6b02-45b1-a8a9-79b398426246"
+    },
+    {
+      "claim_id": "d997f72e-0a4d-4bdd-b1bc-44213da9aff8",
+      "result_id": "b85c7b66-6b02-45b1-a8a9-79b398426246"
+    },
+    {
+      "claim_id": "7af62793-3258-4560-9d6c-693c32b4d992",
+      "result_id": "b85c7b66-6b02-45b1-a8a9-79b398426246"
+    },
+    {
+      "claim_id": "28862e46-bacc-4eba-bc36-84d2314aa7e4",
+      "result_id": "b85c7b66-6b02-45b1-a8a9-79b398426246"
+    },
+    {
+      "claim_id": "b146bac8-f884-4707-b842-6c82d75652e8",
+      "result_id": "b85c7b66-6b02-45b1-a8a9-79b398426246"
+    },
+    {
+      "claim_id": "f360b9d8-86f1-45b0-bc17-2f156c35d91f",
+      "result_id": "b85c7b66-6b02-45b1-a8a9-79b398426246"
+    },
+    {
+      "claim_id": "2e1a076f-204a-4c7d-93a6-79000ece3f4c",
+      "result_id": "b85c7b66-6b02-45b1-a8a9-79b398426246"
+    },
+    {
+      "claim_id": "10047507-385d-4453-8d2b-c08940fd6355",
+      "result_id": "e4eb53c9-1ebb-45f1-b524-449c5c7afccb"
+    },
+    {
+      "claim_id": "0f7868e5-3c6c-40ad-923f-bb603bfdd7c6",
+      "result_id": "e4eb53c9-1ebb-45f1-b524-449c5c7afccb"
+    },
+    {
+      "claim_id": "75f5b984-ebe7-483d-9684-6ece53c3fb3d",
+      "result_id": "e4eb53c9-1ebb-45f1-b524-449c5c7afccb"
+    },
+    {
+      "claim_id": "f5d7fdc2-640a-4d87-bbd0-6c03a0eb6637",
+      "result_id": "e4eb53c9-1ebb-45f1-b524-449c5c7afccb"
+    },
+    {
+      "claim_id": "6482d2fc-c744-4c80-b947-90e4f06c3cc1",
+      "result_id": "e4eb53c9-1ebb-45f1-b524-449c5c7afccb"
+    },
+    {
+      "claim_id": "c9923be4-33e3-4db1-9eed-e60f09b9dfeb",
+      "result_id": "68de9e74-00ee-4f1e-becc-d70d4f793ffe"
+    },
+    {
+      "claim_id": "275103d3-4942-4a5d-a0ba-247aac485a5d",
+      "result_id": "68de9e74-00ee-4f1e-becc-d70d4f793ffe"
+    },
+    {
+      "claim_id": "35cf9842-1fe2-4fca-af39-6b6553b0c470",
+      "result_id": "68de9e74-00ee-4f1e-becc-d70d4f793ffe"
+    },
+    {
+      "claim_id": "a10ee468-6d97-422d-8060-a133448de831",
+      "result_id": "68de9e74-00ee-4f1e-becc-d70d4f793ffe"
+    },
+    {
+      "claim_id": "97c91808-f491-4723-a2fd-cfe8585c3d94",
+      "result_id": "2b4e813b-f3dc-4881-9a05-94309893e803"
+    },
+    {
+      "claim_id": "c1538e03-957d-4164-acc1-1f4b382a9867",
+      "result_id": "2b4e813b-f3dc-4881-9a05-94309893e803"
+    },
+    {
+      "claim_id": "78dd902d-33ee-4c23-8364-ba62f3c01629",
+      "result_id": "2b4e813b-f3dc-4881-9a05-94309893e803"
+    },
+    {
+      "claim_id": "a27269b1-30ea-462a-b56f-8eac54e6c462",
+      "result_id": "0777fa88-a889-489e-8db8-c783547b2fb2"
+    },
+    {
+      "claim_id": "47cc76b1-53c3-4fe9-af74-6b720b80fc00",
+      "result_id": "0777fa88-a889-489e-8db8-c783547b2fb2"
+    },
+    {
+      "claim_id": "efcbe004-bb51-4b6f-a7cf-4c41e911217e",
+      "result_id": "0777fa88-a889-489e-8db8-c783547b2fb2"
+    },
+    {
+      "claim_id": "23a213d9-81b2-4258-ad1b-8a7077f125d5",
+      "result_id": "0777fa88-a889-489e-8db8-c783547b2fb2"
+    },
+    {
+      "claim_id": "b08434d2-9398-49ce-9e41-ad122c45665b",
+      "result_id": "0777fa88-a889-489e-8db8-c783547b2fb2"
+    },
+    {
+      "claim_id": "a04db6e0-37ce-4dbb-b29b-f2ff7e5b8bc8",
+      "result_id": "0777fa88-a889-489e-8db8-c783547b2fb2"
+    },
+    {
+      "claim_id": "5057523c-7b17-44a9-b786-72dceae4d91d",
+      "result_id": "8082f415-3fdd-4001-8277-5a6a35ff1206"
+    },
+    {
+      "claim_id": "9781c33e-314f-4a3d-9dec-58113a019f44",
+      "result_id": "8082f415-3fdd-4001-8277-5a6a35ff1206"
+    },
+    {
+      "claim_id": "8e0f4617-69c2-435f-bac4-7336921367e2",
+      "result_id": "8082f415-3fdd-4001-8277-5a6a35ff1206"
+    },
+    {
+      "claim_id": "505ca84a-b8f4-4b72-a553-e83327e4c459",
+      "result_id": "cf2d3e00-f976-4bf5-a5da-c5dfd275d50d"
+    },
+    {
+      "claim_id": "6a0d09f6-445b-4546-a217-de6926f90406",
+      "result_id": "cf2d3e00-f976-4bf5-a5da-c5dfd275d50d"
+    },
+    {
+      "claim_id": "4342fc86-d846-4470-a22d-2f6f01ca0906",
+      "result_id": "cf2d3e00-f976-4bf5-a5da-c5dfd275d50d"
+    },
+    {
+      "claim_id": "2c55e995-c249-4351-bd1b-e3b3e98087ca",
+      "result_id": "fd1203b0-a4d9-4f08-8da6-294e766d37cd"
+    },
+    {
+      "claim_id": "6864253a-7e69-4796-b2e1-8ab223cc936a",
+      "result_id": "fd1203b0-a4d9-4f08-8da6-294e766d37cd"
+    },
+    {
+      "claim_id": "91f04451-933f-4eb1-aaf2-a30bbee31c15",
+      "result_id": "fd1203b0-a4d9-4f08-8da6-294e766d37cd"
+    },
+    {
+      "claim_id": "80bc2076-10a3-4382-a04a-17976bac602e",
+      "result_id": "fd1203b0-a4d9-4f08-8da6-294e766d37cd"
+    },
+    {
+      "claim_id": "339d7f58-c68b-4c60-8611-7694a8aee2a7",
+      "result_id": "fd1203b0-a4d9-4f08-8da6-294e766d37cd"
+    },
+    {
+      "claim_id": "eb365cfc-1e98-440f-8057-a46ce4302316",
+      "result_id": "fd1203b0-a4d9-4f08-8da6-294e766d37cd"
+    },
+    {
+      "claim_id": "ded4fd12-0bb1-4b69-b565-0cd6e2e154c9",
+      "result_id": "5a4b474e-d0ce-4f7a-8827-7f06a6a63a28"
+    },
+    {
+      "claim_id": "7026a8a2-1302-4fca-9fb3-f39198c17097",
+      "result_id": "57d9435a-6668-42d3-8791-4eaa90af1bf1"
+    },
+    {
+      "claim_id": "cfc5feba-9ab4-4c29-9473-eb6ac2ccdce5",
+      "result_id": "57d9435a-6668-42d3-8791-4eaa90af1bf1"
+    },
+    {
+      "claim_id": "a746d972-1f61-496e-94f5-8c4beac67132",
+      "result_id": "103e9cc0-52f3-498d-9a3c-41ed4f0ad2ca"
+    },
+    {
+      "claim_id": "c274fb9f-7209-4b2a-a6c2-063cb2a6fa40",
+      "result_id": "103e9cc0-52f3-498d-9a3c-41ed4f0ad2ca"
+    },
+    {
+      "claim_id": "5bd29973-2a5e-4416-abce-9688dbb37557",
+      "result_id": "103e9cc0-52f3-498d-9a3c-41ed4f0ad2ca"
+    },
+    {
+      "claim_id": "b73bdad6-c229-410d-ae53-65b8cf219d61",
+      "result_id": "103e9cc0-52f3-498d-9a3c-41ed4f0ad2ca"
+    },
+    {
+      "claim_id": "e496fc47-5956-4ba4-bbb6-e3a528fc4989",
+      "result_id": "103e9cc0-52f3-498d-9a3c-41ed4f0ad2ca"
+    },
+    {
+      "claim_id": "ba45f675-00ea-4549-9946-8180a8391930",
+      "result_id": "103e9cc0-52f3-498d-9a3c-41ed4f0ad2ca"
+    },
+    {
+      "claim_id": "eccaccca-fb54-4ab7-b517-ffa7c86086fb",
+      "result_id": "103e9cc0-52f3-498d-9a3c-41ed4f0ad2ca"
+    }
+  ],
+  "comparisons": []
+}

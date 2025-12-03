@@ -1,0 +1,2482 @@
+{
+  "submission": {
+    "id": "c5e29d5f-2dfb-4c8d-834c-72687d66e6b5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T17:11:13.103106Z",
+    "updated_at": "2025-12-03T17:11:13.103106Z"
+  },
+  "content": [
+    {
+      "id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "submission_id": "c5e29d5f-2dfb-4c8d-834c-72687d66e6b5",
+      "content_type": "manuscript",
+      "content_text": "# Taxonium, a web-based tool for exploring large phylogenetic trees\n\n## Authors\n\n- Theo Sanderson<sup>1</sup> ([ORCID: 0000-0003-4177-2851](https://orcid.org/0000-0003-4177-2851)) \u2020\n\n### Affiliations\n\n1. The Francis Crick Institute London United Kingdom ([ROR:04tnbqb63](https://ror.org/04tnbqb63))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe COVID-19 pandemic has resulted in a step change in the scale of sequencing data, with more genomes of SARS-CoV-2 having been sequenced than any other organism on earth. These sequences reveal key insights when represented as a phylogenetic tree, which captures the evolutionary history of the virus, and allows the identification of transmission events and the emergence of new variants. However, existing web-based tools for exploring phylogenies do not scale to the size of datasets now available for SARS-CoV-2. We have developed Taxonium, a new tool that uses WebGL to allow the exploration of trees with tens of millions of nodes in the browser for the first time. Taxonium links each node to associated metadata and supports mutation-annotated trees, which are able to capture all known genetic variation in a dataset. It can either be run entirely locally in the browser, from a server-based backend, or as a desktop application. We describe insights that analysing a tree of five million sequences can provide into SARS-CoV-2 evolution, and provide a tool at cov2tree.org for exploring a public tree of more than five million SARS-CoV-2 sequences. Taxonium can be applied to any tree, and is available at taxonium.org, with source code at github.com/theosanderson/taxonium.\n\n## Introduction\n\nGenomic researchers responded to the emergence of SARS-CoV-2 with rapid collaboration at unprecedented scale. Open protocols were quickly generated for amplicon sequencing (Tyson et al., 2020), and allowed researchers across the globe to produce ever-growing genomic datasets stored both in the INSDC databases (Cochrane et al., 2016), and in GISAID (Shu and McCauley, 2017), with the latter recently surpassing 11 million sequences. Importantly, new tools were also developed to understand the functional diversity of these samples, by assigning them into lineages proposed by the community (Rambaut et al., 2020; O\u2019Toole et al., 2021), and allowing interactive exploration of trends in these data over time (Hodcroft, 2021; Chen et al., 2021; Tsueng et al., 2022).\n\nThe fundamental representation of a viral epidemic for genomic epidemiology is a phylogenetic tree, which approximates the transmission tree and can allow insights into the direction of migration of viral lineages (Wohl et al., 2016). When trees are annotated with the mutations that have occurred at each internal node, they capture information about parallel and convergent evolution, which can identify recurrent mutations of concern.\n\nThe unparalleled size of SARS-CoV-2 datasets has posed challenges for the array of tools that researchers have previously relied upon to manipulate, analyse, and visualise genomic data. In particular, the construction of phylogenetic trees, and the visualisation of these trees, have been major bottlenecks preventing full-scale analyses. There are two broad responses possible to this issue. One is to downsample the sequences analysed in order to create a smaller dataset with which existing tools are able to work efficiently. This has been an important approach, and has allowed Nextstrain (Hadfield et al., 2018) to provide one of the most widely-used and important tools for exploring SARS-CoV-2 genetic diversity. Briefly, the Nextstrain pipeline downsamples sequences in a rational way, and then uses iqtree (Minh et al., 2020) to assemble them into a tree, assigns chronology and ancestral states to this tree using TreeTime (Sagulenko et al., 2018), and displays the results in a user-friendly interactive interface using Auspice (Hadfield et al., 2018). All three of these post-downsampling stages are bottlenecks which prevent the use of full datasets, and so Nextstrain analyses are typically limited to ~4000 sequences \u2013 sampled in a structured way to ensure they either provide an overview of the pandemic or hone in on particular sequences of interest.\n\nThe new scale of data available provides an impetus to develop new tools that are able to operate on these large datasets directly without downsampling. Recently the development of UShER (Turakhia et al., 2021) has permitted larger trees to be built than ever previously. UShER takes a starting tree, built with iqtree or a similar approach, and incrementally adds sequences by maximum parsimony. For densely sampled sequencing efforts, as in the SARS-CoV-2 pandemic, such an approach still yields tree topologies of very high quality (Thornlow et al., 2022). To turn this distance tree into a time tree, by estimating a time associated with each node in the tree, we recently developed Chronumental (Sanderson, 2021) which uses stochastic gradient descent to efficiently construct chronologies from very large trees, which was not possible with previous approaches. A final necessary component is a tool for exploring these large trees, ideally in a browser.\n\nHere, we describe Taxonium, a web-based tool for for analysing and exploring large trees. Taxonium scales to trees with millions of nodes, and allows for rapid panning and zooming using WebGL. In addition to reading Newick format trees, Taxonium can also display UShER mutation-annotated trees which capture genotype information in mutations at internal branches. It permits searching for nodes by metadata or genotype, and a range of annotation options. Taxonium is available in a server-backed mode, which in a matter of seconds loads to allow exploration of all publicly available SARS-CoV-2 sequences, and also a fully client-side mode suitable for exploring custom datasets, including those with sensitive data.\n\n## Results\n\n### The Taxonium web client allows exploration of million-node phylogenies in the browser\n\nTo allow interactive examination of very large phylogenies, we built the Taxonium web client, a React application available at taxonium.org. One major bottleneck for previous approaches was the use of web technologies involving SVG or Canvas to visualize the tree, which have performance limitations. We instead use WebGL, a web standard that allows a computer\u2019s GPU to display web graphics, for efficient visualisation of the tree \u2013 we implement this using DeckGL (Uber, 2016). Even so, rendering every node in the tree would still be too slow, and would involve hundreds of nodes overplotted on each pixel when a tree was zoomed out. We address this by rendering a sparsified version of the tree, with the sparsification dependent on the zoom level such that only nodes that overlap other nodes are excluded (see Materials and methods). This approach allows for fast and responsive tree exploration.\n\nThe input to Taxonium is a tree (e.g. in Newick format) and, optionally, metadata. Metadata is associated with each node of the tree, and the tree can be coloured by any chosen metadata item. Colours are by default selected using an algorithm that hashes the metadata\u2019s string value into a unique colour, ensuring consistency over time without the need for comprehensive look-up tables. In addition, the tree can be searched based on the metadata, with identified nodes circled. Complex hierarchical boolean combination queries using AND, OR, or NOT are supported.\n\nThe user interface of the Taxonium web client is shown in Figure 1. The tree, at the left hand side of the screen, can be panned, and can be zoomed in the vertical and horizontal axes independently. The latter is a crucial feature for large trees, which are invariably much larger in their y-axis. A toggleable minimap is provided for orientation. The right hand panel allows users to search for nodes of interest, to select how the tree is coloured, and to select between a chronological and a distance tree. It also displays information about the selected node; similar information is available upon hovering over a node of interest.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/82392/elife-82392-fig1-v2.jpg)\n\n**Figure 1.:** This figure presents a screenshot of the Taxonium web client displaying a 5,151,952 sequence tree of SARS-CoV-2 sequences. The left hand panel shows the zoomable tree with a minimap for orientation, and the right hand panel provides options for searching for nodes and for changing the colour scheme. Hovering over a node shows information in a tooltip, while clicking on a node displays further information in the right-hand panel. A search has been carried out for mutations at S:501 to Y, filtered to such nodes with at least 5,000 descendants, which are circled in red. Genomes are coloured by their PANGO lineage.\n\nIn addition to accepting traditional trees, Taxonium also supports mutation annotated trees (MATs, McBroome et al., 2021a), generated by UShER, where internal nodes are annotated with mutations inferred to have occurred at that branch of the phylogeny (Figure 2). Since an MAT essentially captures the full sequence of each sample in the tree, its use as an input permits the user to colour the tree by genotype at any desired site (Figure 3), or alternatively to search for particular mutations in internal modes (Figure 4), and to filter by how many terminal nodes these mutations gave rise to.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/82392/elife-82392-fig2-v2.jpg)\n\n**Figure 2.:** At the core of Taxonium is a graphical interface that runs in the web browser. It can connect either to a web-worker running in the same browser (for purely local use) or to an API web-server that serves parts of the tree on demand. Trees can be loaded from Newick format files with metadata TSVs (tab-separated value files), or from a specialised Taxonium JSONL (JSON-lines) format which is able to capture mutation-annotated trees. Taxonium JSONLs can be produced using the Taxoniumtools library.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/82392/elife-82392-fig3-v2.jpg)\n\n**Figure 3.:** In this screenshot, genotype data at position Spike 681 is overlaid onto the full SARS-CoV-2 tree with Taxonium. This analysis can be reproduced by setting the \u2018Color by\u2019 field to genotype.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/82392/elife-82392-fig4-v2.jpg)\n\n**Figure 4.:** This figure shows a tree zoomed in on Omicron (B.1.1.529), with 1,422,024 sequences until late May 2022. Circled nodes feature a mutation at S:452 to either M or Q which have more than 10 descendants. These (independent) mutation are much more common on the BA.2 genetic background, revealing epistasis.\n\nTaxonium can allow visualisation of trees entirely in the client (Figure 2, l.h.s.), which is especially important for trees which may contain sensitive patient-level data. Trees are loaded either from a Newick file and TSV metadata file, or from a custom preprocessed Taxonium JSONL format combining the two. The Taxonium JSONL format contains a pre-computed layout for the tree, reducing the amount of computation required for its display, but Newick files can also be laid out in the client, which is achieved using an approach heavily based on JStree (Li, 2021). More expensive computational operations, such as the sparsification of the tree for display, are performed in a web worker in order to maintain a responsive interface.\n\n### An optional server-based implementation empowers rapid analysis\n\nThe client-side only version of Taxonium is highly responsive, and permits loading trees with millions of nodes on typical consumer computers. However, the process of deserialising tree data from disk into Javascript objects in memory is a bottleneck, requiring one minute and 20 s for a tree of 5.4 million sequences. Large trees also demand increasing amounts of RAM and download bandwidth which might rule out the use of lower spec devices. To allow near instantaneous access to trees with millions of nodes on almost any internet-connected device, we built a server-backed mode for Taxonium, in which a server reads trees from disk in advance and then serves required parts of them to each client on demand (Figure 2, r.h.s.). The server-backed mode is more efficient, as it does not require all data to be sent to the client, and the computationally expensive operations can be performed on a more powerful machine. Using this mode, a 5.4 million sequence tree can initially load in seconds. We continue to offer the client-side mode, which has the advantage that it can be used with custom data, and especially for data that may be sensitive and not suitable for uploading.\n\nThe Taxonium backend is implemented in NodeJS using Express. It runs from the same codebase that runs in the web worker in the browser. We made substantial efforts to make this backend code as efficient as possible. Nodes are stored sorted by their y coordinates, meaning that two binary searches can be used to identify the slice of nodes that lie within a supplied window.\n\n### The Taxonium desktop application enables local loading of particularly large trees\n\nLike most other tools for tree exploration, Taxonium stores data on nodes in random-access memory (RAM). Most computers now have 8 GB or more of RAM, which is sufficient to store data from a very large tree. However memory limits in the browser can be significantly lower than the total system memory, and efficiency of storage can depend on the specific web browser, which can limit the size of trees which can be loaded locally in the Taxonium web client to ~6 M terminal nodes on some systems. This could be avoided by manually starting an instance of the Taxonium backend, but this would be a difficult procedure for non-expert users. In response to this issue, we built the Taxonium Desktop App.\n\nThe app is developed using Electron and is available in binary format for MacOS, Linux, and Windows. It automatically starts an instance of the backend using a packaged version of NodeJS, which can use as much system memory as is available, and then starts a client to connect to this backend, running in Chromium. We were able to use the Taxonium Desktop App to explore a mutation-annotated phylogeny of 12.5 M sequences and metadata on a laptop with 8 GB of RAM.\n\n### User-friendly tooling for tree generation\n\nWe provide a simple Python package, taxoniumtools, which allows straightforward generation of a Taxonium JSONL file from an UShER MAT or a Newick tree using the command-line. The Taxonium JSONL format combines tree topology, node metadata, and mutations, in a row-wise format. The tree\u2019s structure is encoded only in the parent_id property of each node.\n\nTaxoniumtools uses TreeSwift (Moshiri, 2020) for rapid loading of the Newick string located within the UShER MAT file. Optionally it can run Chronumental (Sanderson, 2021) as part of the building process and integrate the resulting time tree into the final JSONL file.\n\nFull documentation for Taxonium and Taxoniumtools is available at docs.taxonium.org.\n\n### A resource for the phylogenetic analysis of all public SARS-CoV-2 genomes\n\nWe used Taxonium to build the Cov2Tree web application (cov2tree.org), which allows users to explore the full global diversity of public SARS-CoV-2 sequences (Figure 3).\n\nCov2Tree is based on the daily-updated UShER tree built by McBroome et al., 2021b, which currently contains 5.6 million sequences. We provide a time tree inferred by Chronumental, and also provide a daily-updated file containing the date placements inferred by Chronumental which can allow the identification of sequences with metadata errors (Sanderson, 2021).\n\nWe run a backend server that supports the Cov2Tree application, meaning that the user needs only to load the data for the region of the tree on which they have zoomed in. This helps to enable analysis in lower bandwidth settings. Users can colour the tree by PANGO lineage, by sample country, or by genotype, and use searches to conduct complex queries.\n\nThe application of Taxonium to global SARS-CoV-2 datasets provides important insights into the evolution of the virus. Taxonium readily displays the number of independent times a given mutation has occurred during viral evolution, and the lineages in which these mutations evolved. This can be a key analytical approach to understand evolutionary processes such as epistasis. For example, Taxonium reveals a very heavy enrichment for occurrences of S:452 M/S:452Q are within the BA.2 lineage (Figure 3), providing evidence of epistatic interactions between this position and BA.2 defining mutations. Similar effects are seen at S:212.(see this tree).\n\nTaxonium has also been used to probe regional introduction events and transmission clusters during the SARS-CoV-2 pandemic (McBroome et al., 2022), to identify a convergent origin for two sets of mutations which each create a new ORF (Mears et al., 2022), and to examine new tools for pandemic-scale tree reconstruction (De Maio et al., 2022).\n\n### Taxonium has applications beyond SARS-CoV-2\n\nWe have used Taxonium to create a tool that allows exploration of the NCBI Taxonomy database (Federhen, 2012). The resulting visualisation, which can be found at taxonomy.taxonium.org, allows interactive viewing of the taxonomic relationships between 2.2 million species, as well as searches (Figure 5).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/82392/elife-82392-fig5-v2.jpg)\n\n**Figure 5.:** (A) Phylogeny of monkeypox sequences at mpx.taxonium.org. The large clade represents the current outbreak (B) NCBI\u2019s taxonomy of 2.2 M species as explorable at taxonomy.taxonium.org.\n\nWe have also collaborated with the Serratus project (Edgar et al., 2022) to allow visualisation of trees of viral RdRP sequences identified in a search of petabases of reads from the Sequence Read Archive. Each viral order and family at serratus.io/trees now provides an option to open a custom Taxonium tree.\n\nWith the arrival of the 2022 monkeypox outbreak in Europe, we launched mpx.taxonium.org (Figure 5) to allow exploration of an open genomic dataset from LAPIS (Chen, 2022).\n\n### Taxonium scales to larger trees than any existing tool\n\nWe argue that Taxonium is currently the tool that best scales to the largest trees. To examine this we here compare a number of tools for their ability to load a very large tree. We stress that many of these tools were likely not specifically designed to be able to load trees of this size, unlike Taxonium.\n\nWe used the example of a Newick tree derived from a recent UShER public tree (McBroome et al., 2021b) featuring 5,326,538 sequences(tree can be downloaded here). On a Macbook Pro (2018 version, 2.3 GHz quad-core i5), Taxonium loaded this tree from the Newick file in 31 s.\n\nArchaeopteryx (Han and Zmasek, 2009) took >5 min to load this tree with stack size set to 5 GB, and then was essentially unresponsive. Empress 1.20 (Cantrell, 2021) did not load this tree in the browser in any reasonable length of time. We were unable to upload this file to iTOL (Letunic and Bork, 2021) or the ETE Tree Explorer (Huerta-Cepas et al., 2010).\n\nWe attempted to load the same file on Microreact.org (Argim\u00f3n et al., 2016) (which now uses Phylocanvas.gl), but the screen locked up and had not loaded within a reasonable time. A Phylocanvas.GL demo does show that the library (Abudahab et al., 2021) is able to load a SARS-CoV-2 tree with >1 M leaves, panning relatively slowly on our hardware.\n\nWe found it difficult to evaluate the performance of Dendroscope (Huson et al., 2007): we were able to open this file \u2013 for which we increased its allotted RAM to 5 GB. The tree loaded in 1 min and 23 s. However, it rendered as a single black rectangle which only began to resolve upon zooming in substantially, making it difficult to extract insights about the tree. Dendroscope used all available RAM whereas Taxonium used 1.7 GB. In general, Taxonium felt substantially more responsive.\n\nIt must be noted that all these tools have different feature sets. Many of the tools above allow for features absent from Taxonium, such as re-rooting, displaying trees radially, collapsing subtrees, and more. Support for these features to an extent trades-off against scale. Conversely, Taxonium is unique among these tools in supporting mutation-annotated trees, and perhaps in its ability to toggle to a time tree \u2013 features shared with, and inspired by, Auspice (Hadfield et al., 2018) \u2013 which is limited to phylogenies of <~10,000 tips (around 0.2% of Taxonium scale). In sum, we argue that Taxonium is the only tool able to fluidly explore the largest trees in current use on consumer-grade hardware.\n\n## Discussion\n\nThe increased scale of recent genomic datasets has prevented existing tools from being used to explore entire phylogenies in the case of SARS-CoV-2. While unprecedented, these SARS-CoV-2 datasets likely provide a preview of future data volumes for many other organisms given the decreasing costs of sequencing and increasing infrastructure for genomic surveillance.\n\nTaxonium allows exploration of these large phylogenies, and is also one of few tools to allow the visualisation of a mutation-annotated tree capturing all known sequence diversity in an organism. It is open-source and highly configurable for use with any tree. We have used Taxonium to build the Cov2Tree website, which has been widely used to explore the global diversity of SARS-CoV-2.\n\nSome tools for phylogenetic trees are designed primarily for generating static figures suited for publications. These may offer features Taxonium lacks, such as the ability to visualise phylogenies in a circular layout, and the ability to output vector graphics. In contrast, Taxonium is intended primarily for exploring a tree dynamically \u2013 in the case of very large trees, this is often the only way to extract useful information.\n\nOne challenge in this new era of vast datasets is the variable quality of sequences, and therefore resultant phylogenies. Artifacts in sequences (e.g. Heguy et al., 2022; Sanderson and Barrett, 2021; Sanderson et al., 2021) are often systematic, and in such cases can create entire clades brought together by shared errors. Existing efforts to tackle these issues have been important, for example pooling knowledge of known sites of common spurious mutations (De Maio et al., 2020). The development of new pipelines and assemblers that minimize artifacts will be important in the future, and the development of tree-building algorithms that are able to consider the possibility of variation due to artifacts, or pre-tree masking steps that mask different sites in each sequence, may be valuable. Widespread deposition of raw reads would allow systematic assembly by pipelines designed to minimise errors. In Taxonium, we provide a search option that highlights \u2018revertant\u2019 mutations in which a branch apparently mutates back towards the reference genome. In large SARS-CoV-2 phylogenies, many of these mutations appear to in fact represent sequencing artifacts, or reversion from them, and so this approach may help identify areas of a tree that have technical issues.\n\nEven where sequences are accurate, phylogenetic topology is often uncertain, and finding ways to communicate this at scale, building on prior work (Bouckaert, 2010) would be useful. A further challenge is the vastly different densities of sampling in different geographic regions. Because Cov2Tree does not downsample sequences from countries which are able to sequence a greater proportion of their cases, the number of tips in a particular region of the tree is not always indicative of the size of an outbreak, and in some cases even inferences of the directionality of migration may be confounded. There would be value in the development of techniques that allow visual normalisation of trees for sampling biases, which might allow for less biased phylogenetic representations without downsampling.\n\nTaxonium is an ongoing project to create and maintain a tree viewer able to scale to the latest phylogenies. It forms part of an ecosystem of open-source tools that together turn an avalanche of sequencing data into actionable insights into ongoing evolution. We welcome contributions from the community and hope that the features described here will be useful to those working on epidemiological surveillance and outbreak response.\n\n## Methods\n\n### Data sources\n\nIn order to be able to share trees through a web application, we present data at Cov2Tree and in this paper derived from SARS-CoV-2 sequences made available openly in the INSDC databases. We are fortunate to be able to use a pre-computed UShER tree also made available openly on a daily basis (McBroome et al., 2021b).\n\n### The Taxonium web client\n\nThe Taxonium web client is implemented in React. All source code is available at https://github.com/theosanderson/taxonium/tree/master/taxonium_web_client (Sanderson, 2022). The core of the visualisation runs in DeckGL, which is heavily modified to allow independent zooming in X and Y. The data consumed by DeckGL is generated either in a web worker (local mode) or in from an external API running the Taxonium backend (remote mode).\n\nIn either case, the key endpoint provides a sparsified tree, a pruned version focused on nodes in the currently visible region, with overlying nodes reduced (see Reducing overplotting below). Outputting a full pruned tree means that the genotypes of all terminal nodes can be computed by traversing the mutations associated with each node.\n\nThe returned dataset includes all metadata for each included node, meaning that users can select any item to colour nodes by, or alternatively can colour nodes by genotype.\n\nAlternatively the Search endpoint allows users to search across the whole dataset, with nodes matching the search circled in the interface.\n\nTaxonium is capable of storing two different distance metrics in the same tree, allowing users to switch between the genetic distance and the temporal phylogeny.\n\n### Taxonium backend\n\nThe Taxonium backend is implemented in NodeJS in an Express-based framework. Full source code is available at https://github.com/theosanderson/taxonium/tree/master/taxonium_backend. The core code for filtering and searching that runs in the web-worker for the front-end is reused through a shared package, taxonium_data_handling.\n\nThe backend keeps the full tree in memory, then serves filtered slices of it to users on demand. In the case of the SARS-CoV-2 dataset, the server backend requires around 5 GB of RAM per server instance. We run Cov2Tree on an autoscaling Kubernetes cluster.\n\n### Reducing overplotting\n\n#### Nodes\n\nTo minimise both the overhead for displaying data in DeckGL, and the amount of data that needs to be transferred from a backend to the client, it is necessary to filter the tree so that we do not aim to draw every single node. Drawing every single node is unnecessary given that a tree with 5 M terminal nodes contains more nodes than there are pixels available on a typical screen, meaning that many nodes lie on top of one another. Therefore, we aim to filter out some of these overlying nodes while ensuring that the user sees essentially the same tree that they would have done without filtering.\n\nThis approach is assisted by the fact that the tree\u2019s layout is pre-calculated, with each node assigned an X and Y value which is stored in the Taxonium JSONL (or generated at load-time from a Newick file).\n\nWhen the user zooms to a particular region of the tree, we create a bounding box, which is a little larger than the area visible on the screen. We then calculate a \u2018precision\u2019 value for the X and Y axes, which is a value <1, inversely proportional of the dimensions of the bounding box in X and Y, so that as the bounding box targets a smaller area the precision value increases. We initially select all the nodes which are within the bounding box, and then filter down overlying nodes, using the following approach which is designed to be as streamlined as possible to minimise computational work:\n\n#### Search\n\nIn order to ensure that search results are always comprehensive, but at the same time to avoid overplotting, we take the following approach:\n\n### Taxoniumtools and tree processing\n\nThe taxoniumtools package is written in Python and distributed with PyPI. Tree manipulation is performed with TreeSwift (Moshiri, 2020). The package includes the ability to number internal nodes, with a numbering scheme that matches UShER newick exports. An optional feature, used for display on Cov2Tree, \u2018shears\u2019 off outlier nodes with very few descendants, which often represent sequencing errors or occasionally recombinants. This pruning can help to make large trees more interpretable.\n\n### Data availability statement\n\nThe input mutation-annotated trees from publicly available SARS-CoV-2 genomes are described in McBroome et al., 2021b and made available at http://hgdownload.soe.ucsc.edu/goldenPath/wuhCor1/UShER_SARS-CoV-2/.\n\nThe code for Taxonium is available at https://github.com/theosanderson/taxonium (Sanderson, 2022).\n",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "f2c39153-de33-4a83-88b8-a7beb3be8c69",
+      "submission_id": "c5e29d5f-2dfb-4c8d-834c-72687d66e6b5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Richard A Neher, https://ror.org/02s6k3f65 University of Basel Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82392.sa0](https://doi.org/10.7554/eLife.82392.sa0)\n\nSanderson developed novel interactive software for visualizing phylogenetic trees representing millions of sequences. This is a fundamental advance over previous software that is typically limited to trees with a few thousand tips. Taxonium has been used intensively by the virus evolution community over the past months and has thus already proven its utility and performance.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Richard A Neher, https://ror.org/02s6k3f65 University of Basel Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82392.sa1](https://doi.org/10.7554/eLife.82392.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Exploration of million-sequence viral phylogenies with Taxonium\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Richard A Neher as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by a Reviewing Editor and Neil Ferguson as the Senior Editor. The following individuals involved in the review of your submission have agreed to reveal their identity: Art FY Poon (Reviewer #2); James Hadfield (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nAll reviewers agreed that Taxonium enables the interactive exploration of phylogenies orders of magnitude larger than what was possible before and represents an urgently needed technological advance given the large volume of SARS-CoV-2 data that was generated over the last 3 years. The reviewer comments mostly represent clarifications and suggestions for a more precise description of the tool, its scientific context, or prior work. The most essential revision is the following:\n\nWe would like to see a more detailed description of the \"sparsification\" algorithm. How are the tips selected that is being rendered? how does this interact with the search? Could this (possibly as in future development) be made dependent on metadata (hosts, geography)?\n\nIn addition to improvements to the manuscript, the reviewers have identified a number of points that might be useful to consider during the future development of Taxonium.\n\nReviewer #3 (Recommendations for the authors):\n\nTerminology: the term \"nodes\" is used in the manuscript to represent tips (as far as I can tell), whereas this typically refers to both internal nodes and terminal nodes (tips).\n\nExamples: \"Taxonium scales to trees with millions of nodes' and \"NextStrain analyses are typically limited to ~4,000 nodes\". I suggest changing to \"tips\" or \"terminal nodes\".\n\nThe introduction talks about 11 million sequences, but Cov2Tree only uses the NCBI set (~6 million). I presume this is due to GISAID data-sharing conditions and not a technical limitation of Taxonium. This is a delicate situation however it was strange to introduce the former but then present the latter.\n\nThe following points should be thought of as suggestions to improve Taxonium rather than requirements for publication:\n\n\u2013 A legend to explain the colours is needed \u2013 you essentially add this in Figure 3 but it should be part of the software.\n\n\u2013 Panning of trees (x + y direction) is intuitive but it's easy to get lost and pan the tree off the screen! It should be possible to prevent panning outside the bounds of the tree.\n",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2e1e0228-d91d-4e80-be30-b5cdd901a10b",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C1",
+      "claim": "The COVID-19 pandemic has resulted in more genomes of SARS-CoV-2 having been sequenced than any other organism on earth.",
+      "claim_type": "EXPLICIT",
+      "source": "The COVID-19 pandemic has resulted in a step change in the scale of sequencing data, with more genomes of SARS-CoV-2 having been sequenced than any other organism on earth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the scale of SARS-CoV-2 sequencing, presented as established knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "fcff5e68-3a3f-4f0e-ba78-8bec3a95198e",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C2",
+      "claim": "Phylogenetic trees reveal key insights into SARS-CoV-2 by capturing the evolutionary history of the virus and allowing identification of transmission events and emergence of new variants.",
+      "claim_type": "EXPLICIT",
+      "source": "These sequences reveal key insights when represented as a phylogenetic tree, which captures the evolutionary history of the virus, and allows the identification of transmission events and the emergence of new variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the utility of phylogenetic trees based on established scientific understanding of their applications.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "1c6a86cf-7d24-47fb-851e-a30da17697e4",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C3",
+      "claim": "Existing web-based tools for exploring phylogenies do not scale to the size of datasets now available for SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "However, existing web-based tools for exploring phylogenies do not scale to the size of datasets now available for SARS-CoV-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assertion about the limitations of existing tools, which is later supported by comparative performance data in the Results section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "e89e94da-5978-4953-9812-92c6cb2848e1",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C4",
+      "claim": "Taxonium uses WebGL to allow the exploration of trees with tens of millions of nodes in the browser for the first time.",
+      "claim_type": "EXPLICIT",
+      "source": "We have developed Taxonium, a new tool that uses WebGL to allow the exploration of trees with tens of millions of nodes in the browser for the first time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct claim about the capabilities of Taxonium, supported by the technical implementation described in the manuscript and performance data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "358aee24-dbf1-48b4-885f-c1e7631483dd",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C5",
+      "claim": "Taxonium links each node to associated metadata and supports mutation-annotated trees.",
+      "claim_type": "EXPLICIT",
+      "source": "Taxonium links each node to associated metadata and supports mutation-annotated trees, which are able to capture all known genetic variation in a dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes features of Taxonium that are demonstrated in the figures and methods sections.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "7c0fae62-2467-4f6e-918c-3e1da605c6fa",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C6",
+      "claim": "Mutation-annotated trees are able to capture all known genetic variation in a dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Taxonium links each node to associated metadata and supports mutation-annotated trees, which are able to capture all known genetic variation in a dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the capability of mutation-annotated trees, based on their design and implementation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "fc6920da-5fa1-4802-b131-82847e973ca1",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C7",
+      "claim": "Taxonium can be run entirely locally in the browser, from a server-based backend, or as a desktop application.",
+      "claim_type": "EXPLICIT",
+      "source": "It can either be run entirely locally in the browser, from a server-based backend, or as a desktop application.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the deployment options for Taxonium, which are detailed in the Methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "1affe8d8-4350-4b49-b2c9-5340240870b6",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C8",
+      "claim": "A public tree of more than five million SARS-CoV-2 sequences is available at cov2tree.org.",
+      "claim_type": "EXPLICIT",
+      "source": "We describe insights that analysing a tree of five million sequences can provide into SARS-CoV-2 evolution, and provide a tool at cov2tree.org for exploring a public tree of more than five million SARS-CoV-2 sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the availability of a resource, which can be verified by visiting the website.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "0eaa9574-83ef-4296-81b5-14b7d548eee8",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C9",
+      "claim": "Taxonium source code is available at github.com/theosanderson/taxonium.",
+      "claim_type": "EXPLICIT",
+      "source": "Taxonium can be applied to any tree, and is available at taxonium.org, with source code at github.com/theosanderson/taxonium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about code availability that can be verified.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "403c5931-abc1-44e1-9f9e-8f60728c4a68",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C10",
+      "claim": "GISAID recently surpassed 11 million SARS-CoV-2 sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Open protocols were quickly generated for amplicon sequencing (Tyson et al., 2020), and allowed researchers across the globe to produce ever-growing genomic datasets stored both in the INSDC databases (Cochrane et al., 2016), and in GISAID (Shu and McCauley, 2017), with the latter recently surpassing 11 million sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the size of the GISAID database, presented as current knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "46b0009e-921d-4acf-a002-99b7e9ad9b18",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C11",
+      "claim": "New tools were developed to assign SARS-CoV-2 samples into lineages proposed by the community.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, new tools were also developed to understand the functional diversity of these samples, by assigning them into lineages proposed by the community (Rambaut et al., 2020; O'Toole et al., 2021), and allowing interactive exploration of trends in these data over time (Hodcroft, 2021; Chen et al., 2021; Tsueng et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published work describing these tools.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "b1fd01ab-fc43-4b88-8e2e-cf8f6ce776b0",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C12",
+      "claim": "A phylogenetic tree is the fundamental representation of a viral epidemic for genomic epidemiology.",
+      "claim_type": "EXPLICIT",
+      "source": "The fundamental representation of a viral epidemic for genomic epidemiology is a phylogenetic tree, which approximates the transmission tree and can allow insights into the direction of migration of viral lineages (Wohl et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the role of phylogenetic trees in genomic epidemiology, supported by citation and established scientific knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "b1df0346-ca28-44b7-8705-0e9b633ece78",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C13",
+      "claim": "Phylogenetic trees approximate the transmission tree and can allow insights into the direction of migration of viral lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "The fundamental representation of a viral epidemic for genomic epidemiology is a phylogenetic tree, which approximates the transmission tree and can allow insights into the direction of migration of viral lineages (Wohl et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "d890248c-1151-43e0-9b4d-dd8acbff4d17",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C14",
+      "claim": "Trees annotated with mutations at internal nodes capture information about parallel and convergent evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "When trees are annotated with the mutations that have occurred at each internal node, they capture information about parallel and convergent evolution, which can identify recurrent mutations of concern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established understanding of how mutation-annotated trees work.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "1428df81-c466-4c70-9ff7-d0b672515891",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C15",
+      "claim": "Mutation-annotated trees can identify recurrent mutations of concern.",
+      "claim_type": "EXPLICIT",
+      "source": "When trees are annotated with the mutations that have occurred at each internal node, they capture information about parallel and convergent evolution, which can identify recurrent mutations of concern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a capability of mutation-annotated trees based on their design.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "9f6ee44b-a42c-4286-a5e8-de403f56a808",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C16",
+      "claim": "The construction of phylogenetic trees and the visualisation of these trees have been major bottlenecks preventing full-scale analyses of SARS-CoV-2 datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the construction of phylogenetic trees, and the visualisation of these trees, have been major bottlenecks preventing full-scale analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assertion about computational challenges, which is supported by the comparative analysis of tools later in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "cad44472-40d2-411e-ac8c-399250ac04c3",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C17",
+      "claim": "Nextstrain provides one of the most widely-used and important tools for exploring SARS-CoV-2 genetic diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "This has been an important approach, and has allowed Nextstrain (Hadfield et al., 2018) to provide one of the most widely-used and important tools for exploring SARS-CoV-2 genetic diversity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the importance and usage of Nextstrain, supported by citation and general knowledge in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "001041cc-ebf8-482c-8337-606be42e212c",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C18",
+      "claim": "The Nextstrain pipeline downsamples sequences in a rational way and uses iqtree to assemble them into a tree.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, the Nextstrain pipeline downsamples sequences in a rational way, and then uses iqtree (Minh et al., 2020) to assemble them into a tree, assigns chronology and ancestral states to this tree using TreeTime (Sagulenko et al., 2018), and displays the results in a user-friendly interactive interface using Auspice (Hadfield et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the Nextstrain pipeline, supported by citations to the relevant tools.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "cb3f9ceb-e7ac-4f81-a4cf-57de639e8ed9",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C19",
+      "claim": "Nextstrain analyses are typically limited to approximately 4000 sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "All three of these post-downsampling stages are bottlenecks which prevent the use of full datasets, and so Nextstrain analyses are typically limited to ~4000 sequences \u2013 sampled in a structured way to ensure they either provide an overview of the pandemic or hone in on particular sequences of interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the scale limitations of Nextstrain, based on knowledge of the tool's typical usage.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "3799aa7a-1099-4ff7-81b9-76b81ebca9cd",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C20",
+      "claim": "UShER permits larger trees to be built than ever previously.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently the development of UShER (Turakhia et al., 2021) has permitted larger trees to be built than ever previously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the UShER publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "86a7824f-51d7-4ffe-a261-5412fd99cd70",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C21",
+      "claim": "UShER takes a starting tree and incrementally adds sequences by maximum parsimony.",
+      "claim_type": "EXPLICIT",
+      "source": "UShER takes a starting tree, built with iqtree or a similar approach, and incrementally adds sequences by maximum parsimony.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology of UShER, based on cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "9ec6fc65-4e26-4db8-a659-d436743be215",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C22",
+      "claim": "For densely sampled sequencing efforts, UShER's approach still yields tree topologies of very high quality.",
+      "claim_type": "EXPLICIT",
+      "source": "For densely sampled sequencing efforts, as in the SARS-CoV-2 pandemic, such an approach still yields tree topologies of very high quality (Thornlow et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a publication evaluating UShER's performance.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "a510d0d8-b955-4add-b892-0a4b1e4ca132",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C23",
+      "claim": "Chronumental uses stochastic gradient descent to efficiently construct chronologies from very large trees.",
+      "claim_type": "EXPLICIT",
+      "source": "To turn this distance tree into a time tree, by estimating a time associated with each node in the tree, we recently developed Chronumental (Sanderson, 2021) which uses stochastic gradient descent to efficiently construct chronologies from very large trees, which was not possible with previous approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology of Chronumental, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "4c9ab38b-cb02-42bb-a76d-19fd123b7a4f",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C24",
+      "claim": "Constructing chronologies from very large trees was not possible with previous approaches before Chronumental.",
+      "claim_type": "EXPLICIT",
+      "source": "To turn this distance tree into a time tree, by estimating a time associated with each node in the tree, we recently developed Chronumental (Sanderson, 2021) which uses stochastic gradient descent to efficiently construct chronologies from very large trees, which was not possible with previous approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the limitations of previous methods, implied by the development of Chronumental.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "11868618-3d5a-4af2-9eb9-1778e12caa4d",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C25",
+      "claim": "Taxonium scales to trees with millions of nodes.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we describe Taxonium, a web-based tool for for analysing and exploring large trees. Taxonium scales to trees with millions of nodes, and allows for rapid panning and zooming using WebGL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by performance data presented later in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "4c48dbb8-ccef-466d-b177-51c6ffbca9c0",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C26",
+      "claim": "Taxonium allows for rapid panning and zooming using WebGL.",
+      "claim_type": "EXPLICIT",
+      "source": "Taxonium scales to trees with millions of nodes, and allows for rapid panning and zooming using WebGL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a technical feature of Taxonium, demonstrated in the implementation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "71394846-af6a-41d8-b6cb-f5baea0aef5b",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C27",
+      "claim": "Taxonium can display UShER mutation-annotated trees which capture genotype information in mutations at internal branches.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to reading Newick format trees, Taxonium can also display UShER mutation-annotated trees which capture genotype information in mutations at internal branches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a capability of Taxonium demonstrated in the figures and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "c92a0669-91f6-4095-b4a4-546dc6735fc7",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C28",
+      "claim": "Taxonium permits searching for nodes by metadata or genotype.",
+      "claim_type": "EXPLICIT",
+      "source": "It permits searching for nodes by metadata or genotype, and a range of annotation options.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes features of Taxonium shown in the interface screenshots.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "1344f09f-0643-4b70-870f-44a3a2d2023e",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C29",
+      "claim": "Taxonium is available in a server-backed mode which loads in seconds to allow exploration of all publicly available SARS-CoV-2 sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Taxonium is available in a server-backed mode, which in a matter of seconds loads to allow exploration of all publicly available SARS-CoV-2 sequences, and also a fully client-side mode suitable for exploring custom datasets, including those with sensitive data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by performance measurements provided in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "38a764c4-06ae-4398-997d-c2ce6f5d76cc",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C30",
+      "claim": "Taxonium has a fully client-side mode suitable for exploring custom datasets, including those with sensitive data.",
+      "claim_type": "EXPLICIT",
+      "source": "Taxonium is available in a server-backed mode, which in a matter of seconds loads to allow exploration of all publicly available SARS-CoV-2 sequences, and also a fully client-side mode suitable for exploring custom datasets, including those with sensitive data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a deployment mode of Taxonium detailed in the Methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "378d3022-3e99-4505-9c9f-9904efccb09c",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C31",
+      "claim": "A major bottleneck for previous approaches was the use of web technologies involving SVG or Canvas to visualize trees.",
+      "claim_type": "EXPLICIT",
+      "source": "One major bottleneck for previous approaches was the use of web technologies involving SVG or Canvas to visualize the tree, which have performance limitations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assertion about limitations of previous visualization technologies, based on technical understanding.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "0290a1fb-cc38-4d2c-b0bb-647babd73529",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C32",
+      "claim": "SVG and Canvas web technologies have performance limitations for tree visualization.",
+      "claim_type": "EXPLICIT",
+      "source": "One major bottleneck for previous approaches was the use of web technologies involving SVG or Canvas to visualize the tree, which have performance limitations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established technical knowledge about these rendering technologies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "3c8c9af1-3e9f-42cf-a6c5-54fbdd544575",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C33",
+      "claim": "Taxonium uses WebGL, a web standard that allows a computer's GPU to display web graphics, for efficient visualisation of the tree.",
+      "claim_type": "EXPLICIT",
+      "source": "We instead use WebGL, a web standard that allows a computer's GPU to display web graphics, for efficient visualisation of the tree \u2013 we implement this using DeckGL (Uber, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical implementation of Taxonium, with citation to the DeckGL library.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "74cea5f0-66ef-42bf-aeaf-a0fd62c7c927",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C34",
+      "claim": "Taxonium implements WebGL visualization using DeckGL.",
+      "claim_type": "EXPLICIT",
+      "source": "We instead use WebGL, a web standard that allows a computer's GPU to display web graphics, for efficient visualisation of the tree \u2013 we implement this using DeckGL (Uber, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the implementation, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "ced06d30-58f4-45de-ae16-8707829cd0c9",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C35",
+      "claim": "Rendering every node in a large tree would be too slow and would involve hundreds of nodes overplotted on each pixel when zoomed out.",
+      "claim_type": "EXPLICIT",
+      "source": "Even so, rendering every node in the tree would still be too slow, and would involve hundreds of nodes overplotted on each pixel when a tree was zoomed out.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a technical inference about rendering performance based on the scale of the trees.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "f1db1b89-b50c-48f6-9de9-c68dba9e1257",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C36",
+      "claim": "Taxonium renders a sparsified version of the tree, with sparsification dependent on zoom level such that only nodes that overlap other nodes are excluded.",
+      "claim_type": "EXPLICIT",
+      "source": "We address this by rendering a sparsified version of the tree, with the sparsification dependent on the zoom level such that only nodes that overlap other nodes are excluded (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sparsification algorithm implemented in Taxonium, detailed in the Methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "9aac6042-033e-4754-bc05-c2f6f10f9034",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C37",
+      "claim": "The input to Taxonium is a tree (e.g. in Newick format) and, optionally, metadata.",
+      "claim_type": "EXPLICIT",
+      "source": "The input to Taxonium is a tree (e.g. in Newick format) and, optionally, metadata.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the input requirements for Taxonium.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "cd98ddbb-010c-4f2a-b02a-2026ddc1af41",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C38",
+      "claim": "Metadata is associated with each node of the tree, and the tree can be coloured by any chosen metadata item.",
+      "claim_type": "EXPLICIT",
+      "source": "Metadata is associated with each node of the tree, and the tree can be coloured by any chosen metadata item.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature of Taxonium shown in the interface.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "bad7534d-628d-4243-b98d-174795cacd6c",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C39",
+      "claim": "Colours in Taxonium are by default selected using an algorithm that hashes the metadata's string value into a unique colour.",
+      "claim_type": "EXPLICIT",
+      "source": "Colours are by default selected using an algorithm that hashes the metadata's string value into a unique colour, ensuring consistency over time without the need for comprehensive look-up tables.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the color assignment algorithm used in Taxonium.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "01c47822-77a6-4534-99b6-d33cefb085d7",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C40",
+      "claim": "The tree in Taxonium can be searched based on metadata, with identified nodes circled.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the tree can be searched based on the metadata, with identified nodes circled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a search feature shown in the interface screenshots.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "e2acad05-eff7-4d20-97bd-e17049829d42",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C41",
+      "claim": "Taxonium supports complex hierarchical boolean combination queries using AND, OR, or NOT.",
+      "claim_type": "EXPLICIT",
+      "source": "Complex hierarchical boolean combination queries using AND, OR, or NOT are supported.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a search capability of Taxonium.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "016adcc3-e6d5-4cad-8fe6-f9888c683d0c",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C42",
+      "claim": "The tree in Taxonium can be panned and zoomed in the vertical and horizontal axes independently.",
+      "claim_type": "EXPLICIT",
+      "source": "The tree, at the left hand side of the screen, can be panned, and can be zoomed in the vertical and horizontal axes independently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an interface feature demonstrated in the application.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "ed5f4f31-730d-4747-84dc-6bb2224c9fd7",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C43",
+      "claim": "Independent zooming in vertical and horizontal axes is a crucial feature for large trees, which are invariably much larger in their y-axis.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter is a crucial feature for large trees, which are invariably much larger in their y-axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the importance of this feature based on the structure of phylogenetic trees.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "c760a5be-cecc-4be2-a070-adb533a854d4",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C44",
+      "claim": "Taxonium provides a toggleable minimap for orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "A toggleable minimap is provided for orientation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an interface feature shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "f87717d4-b1ce-43f1-b33a-0e234cded5c9",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C45",
+      "claim": "Figure 1 presents a screenshot of the Taxonium web client displaying a 5,151,952 sequence tree of SARS-CoV-2 sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "This figure presents a screenshot of the Taxonium web client displaying a 5,151,952 sequence tree of SARS-CoV-2 sequences.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of Figure 1, which shows the actual interface.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "9850888d-d123-4181-8dcb-a464e574bf04",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C46",
+      "claim": "Taxonium supports mutation annotated trees (MATs) generated by UShER, where internal nodes are annotated with mutations inferred to have occurred at that branch of the phylogeny.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to accepting traditional trees, Taxonium also supports mutation annotated trees (MATs, McBroome et al., 2021a), generated by UShER, where internal nodes are annotated with mutations inferred to have occurred at that branch of the phylogeny (Figure 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a capability of Taxonium, supported by citation and demonstrated in Figure 2.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "ca95cea9-d720-4437-9185-dc3295059a63",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C47",
+      "claim": "An MAT essentially captures the full sequence of each sample in the tree.",
+      "claim_type": "EXPLICIT",
+      "source": "Since an MAT essentially captures the full sequence of each sample in the tree, its use as an input permits the user to colour the tree by genotype at any desired site (Figure 3), or alternatively to search for particular mutations in internal modes (Figure 4), and to filter by how many terminal nodes these mutations gave rise to.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the information content of MATs, based on their design.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "d12b9d03-f776-49f6-81b7-a387238f343f",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C48",
+      "claim": "Using an MAT as input permits the user to colour the tree by genotype at any desired site.",
+      "claim_type": "EXPLICIT",
+      "source": "Since an MAT essentially captures the full sequence of each sample in the tree, its use as an input permits the user to colour the tree by genotype at any desired site (Figure 3), or alternatively to search for particular mutations in internal modes (Figure 4), and to filter by how many terminal nodes these mutations gave rise to.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature enabled by MAT support, demonstrated in Figure 3.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "5088c25f-73c0-45bc-b3fe-3461318d5f71",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C49",
+      "claim": "MAT input allows users to search for particular mutations in internal nodes and filter by how many terminal nodes these mutations gave rise to.",
+      "claim_type": "EXPLICIT",
+      "source": "Since an MAT essentially captures the full sequence of each sample in the tree, its use as an input permits the user to colour the tree by genotype at any desired site (Figure 3), or alternatively to search for particular mutations in internal modes (Figure 4), and to filter by how many terminal nodes these mutations gave rise to.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes features enabled by MAT support, demonstrated in Figure 4.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "4810aa61-15b1-4016-ae0a-92a949aa583a",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C50",
+      "claim": "Taxonium can allow visualisation of trees entirely in the client.",
+      "claim_type": "EXPLICIT",
+      "source": "Taxonium can allow visualisation of trees entirely in the client (Figure 2, l.h.s.), which is especially important for trees which may contain sensitive patient-level data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a deployment mode shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "d36fb1b6-1eea-4b7a-b1b4-b8a539d2c072",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C51",
+      "claim": "Client-side visualization is especially important for trees which may contain sensitive patient-level data.",
+      "claim_type": "EXPLICIT",
+      "source": "Taxonium can allow visualisation of trees entirely in the client (Figure 2, l.h.s.), which is especially important for trees which may contain sensitive patient-level data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the importance of client-side processing for data privacy.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "a8f6d60f-4f85-4b39-b2f7-00a6269d4e9c",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C52",
+      "claim": "Trees in Taxonium are loaded either from a Newick file and TSV metadata file, or from a custom preprocessed Taxonium JSONL format combining the two.",
+      "claim_type": "EXPLICIT",
+      "source": "Trees are loaded either from a Newick file and TSV metadata file, or from a custom preprocessed Taxonium JSONL format combining the two.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the input formats supported by Taxonium.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "7ad3627e-39c8-42ff-8491-94bbe2968b19",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C53",
+      "claim": "The Taxonium JSONL format contains a pre-computed layout for the tree, reducing the amount of computation required for its display.",
+      "claim_type": "EXPLICIT",
+      "source": "The Taxonium JSONL format contains a pre-computed layout for the tree, reducing the amount of computation required for its display, but Newick files can also be laid out in the client, which is achieved using an approach heavily based on JStree (Li, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a design feature of the JSONL format.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "a9b7bed1-7076-4ee0-924d-815b5ecef428",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C54",
+      "claim": "Newick files can be laid out in the Taxonium client using an approach heavily based on JStree.",
+      "claim_type": "EXPLICIT",
+      "source": "The Taxonium JSONL format contains a pre-computed layout for the tree, reducing the amount of computation required for its display, but Newick files can also be laid out in the client, which is achieved using an approach heavily based on JStree (Li, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the layout algorithm used, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "1a628c15-8c5f-458a-8af0-d8ab16484fd5",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C55",
+      "claim": "More expensive computational operations in Taxonium, such as tree sparsification, are performed in a web worker to maintain a responsive interface.",
+      "claim_type": "EXPLICIT",
+      "source": "More expensive computational operations, such as the sparsification of the tree for display, are performed in a web worker in order to maintain a responsive interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical implementation strategy for maintaining performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "b38af49d-b02c-4d3e-a1cd-07dc27112e47",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C56",
+      "claim": "The client-side only version of Taxonium permits loading trees with millions of nodes on typical consumer computers.",
+      "claim_type": "EXPLICIT",
+      "source": "The client-side only version of Taxonium is highly responsive, and permits loading trees with millions of nodes on typical consumer computers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about performance supported by the testing described later.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "bfc819db-9893-4536-be74-cf1de675fa92",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C57",
+      "claim": "The process of deserialising tree data from disk into Javascript objects in memory requires one minute and 20 seconds for a tree of 5.4 million sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the process of deserialising tree data from disk into Javascript objects in memory is a bottleneck, requiring one minute and 20 s for a tree of 5.4 million sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a performance measurement from testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "20c59976-11ee-4e34-916b-2011eecdeb2a",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C58",
+      "claim": "Large trees demand increasing amounts of RAM and download bandwidth which might rule out the use of lower spec devices.",
+      "claim_type": "EXPLICIT",
+      "source": "Large trees also demand increasing amounts of RAM and download bandwidth which might rule out the use of lower spec devices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about resource requirements based on the scale of the data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "fd0b3476-0a50-4a1d-8def-8c9e073e1456",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C59",
+      "claim": "In server-backed mode, a server reads trees from disk in advance and then serves required parts of them to each client on demand.",
+      "claim_type": "EXPLICIT",
+      "source": "To allow near instantaneous access to trees with millions of nodes on almost any internet-connected device, we built a server-backed mode for Taxonium, in which a server reads trees from disk in advance and then serves required parts of them to each client on demand (Figure 2, r.h.s.).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the architecture of the server-backed mode, shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "a292d4a3-a729-4cf9-842f-13cb72d1a3be",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C60",
+      "claim": "The server-backed mode is more efficient as it does not require all data to be sent to the client.",
+      "claim_type": "EXPLICIT",
+      "source": "The server-backed mode is more efficient, as it does not require all data to be sent to the client, and the computationally expensive operations can be performed on a more powerful machine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the efficiency benefits of the server-backed architecture.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "5bd832c3-0fd3-40d4-916f-e36dc3d63a6e",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C61",
+      "claim": "Using server-backed mode, a 5.4 million sequence tree can initially load in seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this mode, a 5.4 million sequence tree can initially load in seconds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a performance measurement from testing the server-backed mode.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "d88f45e2-acc7-42d8-a6b1-0c8bef5a15e2",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C62",
+      "claim": "The Taxonium backend is implemented in NodeJS using Express.",
+      "claim_type": "EXPLICIT",
+      "source": "The Taxonium backend is implemented in NodeJS using Express.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical implementation of the backend.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "1bb820b5-65b4-46d7-9bc1-87ef24fdf966",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C63",
+      "claim": "Nodes in the Taxonium backend are stored sorted by their y coordinates, allowing two binary searches to identify the slice of nodes within a supplied window.",
+      "claim_type": "EXPLICIT",
+      "source": "Nodes are stored sorted by their y coordinates, meaning that two binary searches can be used to identify the slice of nodes that lie within a supplied window.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an optimization in the backend implementation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "a07bf860-b030-4002-9cf6-2fa50cdcb11c",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C64",
+      "claim": "Taxonium is capable of storing two different distance metrics in the same tree, allowing users to switch between genetic distance and temporal phylogeny.",
+      "claim_type": "EXPLICIT",
+      "source": "Taxonium is capable of storing two different distance metrics in the same tree, allowing users to switch between the genetic distance and the temporal phylogeny.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature of Taxonium demonstrated in the interface.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "0a36286d-700b-4732-a959-2fe466dc3fb4",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C65",
+      "claim": "Memory limits in the browser can be significantly lower than the total system memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Most computers now have 8 GB or more of RAM, which is sufficient to store data from a very large tree. However memory limits in the browser can be significantly lower than the total system memory, and efficiency of storage can depend on the specific web browser, which can limit the size of trees which can be loaded locally in the Taxonium web client to ~6 M terminal nodes on some systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on technical knowledge about browser memory limitations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "7ef1cda7-d1c1-49fb-b4a1-460fc962b5d8",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C66",
+      "claim": "Efficiency of storage in browsers can depend on the specific web browser.",
+      "claim_type": "EXPLICIT",
+      "source": "However memory limits in the browser can be significantly lower than the total system memory, and efficiency of storage can depend on the specific web browser, which can limit the size of trees which can be loaded locally in the Taxonium web client to ~6 M terminal nodes on some systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on technical knowledge about browser differences.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "f29e71bf-0f19-477e-9cc6-caa93f3f39b2",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C67",
+      "claim": "The size of trees which can be loaded locally in the Taxonium web client is limited to approximately 6 million terminal nodes on some systems.",
+      "claim_type": "EXPLICIT",
+      "source": "However memory limits in the browser can be significantly lower than the total system memory, and efficiency of storage can depend on the specific web browser, which can limit the size of trees which can be loaded locally in the Taxonium web client to ~6 M terminal nodes on some systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a performance limitation observed during testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "caf3dc17-f141-40b1-adc7-b9b8c758d4c9",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C68",
+      "claim": "The Taxonium Desktop App is developed using Electron and is available in binary format for MacOS, Linux, and Windows.",
+      "claim_type": "EXPLICIT",
+      "source": "The app is developed using Electron and is available in binary format for MacOS, Linux, and Windows.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the implementation and availability of the desktop application.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "7508e632-8e93-403d-93a0-4347365fb5b2",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C69",
+      "claim": "The Taxonium Desktop App automatically starts an instance of the backend using a packaged version of NodeJS.",
+      "claim_type": "EXPLICIT",
+      "source": "It automatically starts an instance of the backend using a packaged version of NodeJS, which can use as much system memory as is available, and then starts a client to connect to this backend, running in Chromium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how the desktop app works.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "03f7c3ae-2b26-40b8-ad73-0cbebdd07529",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C70",
+      "claim": "The Taxonium Desktop App was able to explore a mutation-annotated phylogeny of 12.5 million sequences and metadata on a laptop with 8 GB of RAM.",
+      "claim_type": "EXPLICIT",
+      "source": "We were able to use the Taxonium Desktop App to explore a mutation-annotated phylogeny of 12.5 M sequences and metadata on a laptop with 8 GB of RAM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a performance test result demonstrating the capability of the desktop app.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "800cb79d-a994-4726-a8f7-5a8ff3ad9515",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C71",
+      "claim": "The taxoniumtools Python package allows straightforward generation of a Taxonium JSONL file from an UShER MAT or a Newick tree using the command-line.",
+      "claim_type": "EXPLICIT",
+      "source": "We provide a simple Python package, taxoniumtools, which allows straightforward generation of a Taxonium JSONL file from an UShER MAT or a Newick tree using the command-line.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the functionality of the taxoniumtools package.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "d102c7ca-d368-4eb9-8402-82bea0761f2f",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C72",
+      "claim": "The Taxonium JSONL format combines tree topology, node metadata, and mutations in a row-wise format.",
+      "claim_type": "EXPLICIT",
+      "source": "The Taxonium JSONL format combines tree topology, node metadata, and mutations, in a row-wise format.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the structure of the JSONL format.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "43da554d-d088-4e10-b0b4-335176b03266",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C73",
+      "claim": "The tree's structure in Taxonium JSONL is encoded only in the parent_id property of each node.",
+      "claim_type": "EXPLICIT",
+      "source": "The tree's structure is encoded only in the parent_id property of each node.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how tree structure is represented in the JSONL format.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "3bee7b3d-60e8-409e-830c-3c65373faf7a",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C74",
+      "claim": "Taxoniumtools uses TreeSwift for rapid loading of the Newick string located within the UShER MAT file.",
+      "claim_type": "EXPLICIT",
+      "source": "Taxoniumtools uses TreeSwift (Moshiri, 2020) for rapid loading of the Newick string located within the UShER MAT file.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the implementation of taxoniumtools, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "31ec64ae-a25a-4938-a9bd-3076fe5fbe61",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C75",
+      "claim": "Taxoniumtools can optionally run Chronumental as part of the building process and integrate the resulting time tree into the final JSONL file.",
+      "claim_type": "EXPLICIT",
+      "source": "Optionally it can run Chronumental (Sanderson, 2021) as part of the building process and integrate the resulting time tree into the final JSONL file.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an optional feature of taxoniumtools.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "cf38126c-1046-440f-903e-5e2b75b31c69",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C76",
+      "claim": "Cov2Tree allows users to explore the full global diversity of public SARS-CoV-2 sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "We used Taxonium to build the Cov2Tree web application (cov2tree.org), which allows users to explore the full global diversity of public SARS-CoV-2 sequences (Figure 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the purpose and capability of Cov2Tree.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "71cf501c-b345-43df-825d-c97ef59052f4",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C77",
+      "claim": "Cov2Tree is based on the daily-updated UShER tree built by McBroome et al., which currently contains 5.6 million sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Cov2Tree is based on the daily-updated UShER tree built by McBroome et al., 2021b, which currently contains 5.6 million sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the data source for Cov2Tree, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "ecfe1513-39cb-4101-b516-67ebab392d5c",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C78",
+      "claim": "Cov2Tree provides a time tree inferred by Chronumental.",
+      "claim_type": "EXPLICIT",
+      "source": "We provide a time tree inferred by Chronumental, and also provide a daily-updated file containing the date placements inferred by Chronumental which can allow the identification of sequences with metadata errors (Sanderson, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature of Cov2Tree.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "718afd73-a3d0-4cc2-b827-06697ef44a39",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C79",
+      "claim": "Cov2Tree provides a daily-updated file containing date placements inferred by Chronumental which can allow the identification of sequences with metadata errors.",
+      "claim_type": "EXPLICIT",
+      "source": "We provide a time tree inferred by Chronumental, and also provide a daily-updated file containing the date placements inferred by Chronumental which can allow the identification of sequences with metadata errors (Sanderson, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature and application of Cov2Tree, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "8436ae9b-5835-4b70-937b-4f8ac5d3fcf7",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C80",
+      "claim": "Users can colour the Cov2Tree tree by PANGO lineage, by sample country, or by genotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Users can colour the tree by PANGO lineage, by sample country, or by genotype, and use searches to conduct complex queries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes features of Cov2Tree shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "1c769fdf-2df8-4154-93b5-b5d66267d6ce",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C81",
+      "claim": "Taxonium readily displays the number of independent times a given mutation has occurred during viral evolution and the lineages in which these mutations evolved.",
+      "claim_type": "EXPLICIT",
+      "source": "Taxonium readily displays the number of independent times a given mutation has occurred during viral evolution, and the lineages in which these mutations evolved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an analytical capability of Taxonium.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "6c7380b1-c199-4b40-afab-a88e946d2895",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C82",
+      "claim": "Taxonium reveals a heavy enrichment for occurrences of S:452 M/S:452Q within the BA.2 lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Taxonium reveals a very heavy enrichment for occurrences of S:452 M/S:452Q are within the BA.2 lineage (Figure 3), providing evidence of epistatic interactions between this position and BA.2 defining mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from analysis using Taxonium, shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "27369afb-3485-4bcf-b3ad-4444fb0db19c",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C83",
+      "claim": "The enrichment of S:452 M/S:452Q mutations in BA.2 provides evidence of epistatic interactions between this position and BA.2 defining mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Taxonium reveals a very heavy enrichment for occurrences of S:452 M/S:452Q are within the BA.2 lineage (Figure 3), providing evidence of epistatic interactions between this position and BA.2 defining mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about epistasis based on the observed enrichment pattern.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "d6b40ab5-e0c0-4102-9120-4db8bb4ae328",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C84",
+      "claim": "Taxonium has been used to probe regional introduction events and transmission clusters during the SARS-CoV-2 pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "Taxonium has also been used to probe regional introduction events and transmission clusters during the SARS-CoV-2 pandemic (McBroome et al., 2022), to identify a convergent origin for two sets of mutations which each create a new ORF (Mears et al., 2022), and to examine new tools for pandemic-scale tree reconstruction (De Maio et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes applications of Taxonium, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "71a22adb-48db-4d57-bccf-9f1977c6c585",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C85",
+      "claim": "Taxonium has been used to identify a convergent origin for two sets of mutations which each create a new ORF.",
+      "claim_type": "EXPLICIT",
+      "source": "Taxonium has also been used to probe regional introduction events and transmission clusters during the SARS-CoV-2 pandemic (McBroome et al., 2022), to identify a convergent origin for two sets of mutations which each create a new ORF (Mears et al., 2022), and to examine new tools for pandemic-scale tree reconstruction (De Maio et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an application of Taxonium, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "3140f7e5-dfb6-4474-be90-dbc9aff5d5ac",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C86",
+      "claim": "Taxonium has been used to examine new tools for pandemic-scale tree reconstruction.",
+      "claim_type": "EXPLICIT",
+      "source": "Taxonium has also been used to probe regional introduction events and transmission clusters during the SARS-CoV-2 pandemic (McBroome et al., 2022), to identify a convergent origin for two sets of mutations which each create a new ORF (Mears et al., 2022), and to examine new tools for pandemic-scale tree reconstruction (De Maio et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an application of Taxonium, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "ad9c0186-8c49-40d1-86c4-c7f8fd270db8",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C87",
+      "claim": "Taxonium has been used to create a tool that allows exploration of the NCBI Taxonomy database.",
+      "claim_type": "EXPLICIT",
+      "source": "We have used Taxonium to create a tool that allows exploration of the NCBI Taxonomy database (Federhen, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an application of Taxonium beyond SARS-CoV-2, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "b9032e67-a730-4fc6-a790-da4246e1d43d",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C88",
+      "claim": "The NCBI Taxonomy visualization at taxonomy.taxonium.org allows interactive viewing of the taxonomic relationships between 2.2 million species.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting visualisation, which can be found at taxonomy.taxonium.org, allows interactive viewing of the taxonomic relationships between 2.2 million species, as well as searches (Figure 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the capability of the taxonomy visualization, shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "1a6900c4-a471-438e-b266-d924d45db937",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C89",
+      "claim": "Taxonium has been used to collaborate with the Serratus project to allow visualisation of trees of viral RdRP sequences identified in a search of petabases of reads from the Sequence Read Archive.",
+      "claim_type": "EXPLICIT",
+      "source": "We have also collaborated with the Serratus project (Edgar et al., 2022) to allow visualisation of trees of viral RdRP sequences identified in a search of petabases of reads from the Sequence Read Archive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a collaboration and application of Taxonium, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "9c9203c9-b4eb-4115-b1c8-7b33121ff62d",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C90",
+      "claim": "Each viral order and family at serratus.io/trees provides an option to open a custom Taxonium tree.",
+      "claim_type": "EXPLICIT",
+      "source": "Each viral order and family at serratus.io/trees now provides an option to open a custom Taxonium tree.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an integration of Taxonium with the Serratus project.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "702c37aa-3966-4329-92c6-ec4a823c50a2",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C91",
+      "claim": "mpx.taxonium.org was launched to allow exploration of an open genomic dataset from the 2022 monkeypox outbreak in Europe.",
+      "claim_type": "EXPLICIT",
+      "source": "With the arrival of the 2022 monkeypox outbreak in Europe, we launched mpx.taxonium.org (Figure 5) to allow exploration of an open genomic dataset from LAPIS (Chen, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an application of Taxonium to monkeypox data, shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "53ddb0d6-926b-4406-8740-76e75cc0ea0c",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C92",
+      "claim": "Taxonium is currently the tool that best scales to the largest trees.",
+      "claim_type": "EXPLICIT",
+      "source": "We argue that Taxonium is currently the tool that best scales to the largest trees.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim supported by the comparative analysis that follows.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "a72ccb98-0d0d-4b2e-acf4-70025a5da827",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C93",
+      "claim": "Taxonium loaded a 5,326,538 sequence Newick tree in 31 seconds on a 2018 Macbook Pro.",
+      "claim_type": "EXPLICIT",
+      "source": "On a Macbook Pro (2018 version, 2.3 GHz quad-core i5), Taxonium loaded this tree from the Newick file in 31 s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a performance measurement from testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "0e429660-4c18-4567-af7e-b47e1c55f4c6",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C94",
+      "claim": "Archaeopteryx took more than 5 minutes to load a 5,326,538 sequence tree and then was essentially unresponsive.",
+      "claim_type": "EXPLICIT",
+      "source": "Archaeopteryx (Han and Zmasek, 2009) took >5 min to load this tree with stack size set to 5 GB, and then was essentially unresponsive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a performance comparison result, supported by citation to the tool.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "95b86d14-fd6a-4a92-b304-fc9dd44f5de9",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C95",
+      "claim": "Empress 1.20 did not load a 5,326,538 sequence tree in the browser in any reasonable length of time.",
+      "claim_type": "EXPLICIT",
+      "source": "Empress 1.20 (Cantrell, 2021) did not load this tree in the browser in any reasonable length of time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a performance comparison result, supported by citation to the tool.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "37b7712e-80da-4df7-91f5-eb51ec2090e1",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C96",
+      "claim": "The authors were unable to upload a 5,326,538 sequence tree file to iTOL or the ETE Tree Explorer.",
+      "claim_type": "EXPLICIT",
+      "source": "We were unable to upload this file to iTOL (Letunic and Bork, 2021) or the ETE Tree Explorer (Huerta-Cepas et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a performance comparison result, supported by citations to the tools.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "2c338b26-9a39-4cbb-8a6a-6f6a6c3a993c",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C97",
+      "claim": "Microreact.org screen locked up and had not loaded a 5,326,538 sequence tree within a reasonable time.",
+      "claim_type": "EXPLICIT",
+      "source": "We attempted to load the same file on Microreact.org (Argim\u00f3n et al., 2016) (which now uses Phylocanvas.gl), but the screen locked up and had not loaded within a reasonable time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a performance comparison result, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "26944306-16ab-466a-8f3a-59637cd56877",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C98",
+      "claim": "A Phylocanvas.GL demo shows that the library is able to load a SARS-CoV-2 tree with more than 1 million leaves.",
+      "claim_type": "EXPLICIT",
+      "source": "A Phylocanvas.GL demo does show that the library (Abudahab et al., 2021) is able to load a SARS-CoV-2 tree with >1 M leaves, panning relatively slowly on our hardware.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from testing another tool, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "f65bd99a-071a-49d1-b61e-ac40fd776d76",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C99",
+      "claim": "Dendroscope loaded a 5,326,538 sequence tree in 1 minute and 23 seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "The tree loaded in 1 min and 23 s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a performance measurement from testing Dendroscope.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "d0660ce9-aa29-4bdb-a24a-22585cb40e8f",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C100",
+      "claim": "Dendroscope rendered a 5,326,538 sequence tree as a single black rectangle which only began to resolve upon zooming in substantially.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it rendered as a single black rectangle which only began to resolve upon zooming in substantially, making it difficult to extract insights about the tree.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from testing Dendroscope.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "e8990219-ea9b-43a1-9f5f-7d385196a6d7",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C101",
+      "claim": "Dendroscope used all available RAM whereas Taxonium used 1.7 GB for a 5,326,538 sequence tree.",
+      "claim_type": "EXPLICIT",
+      "source": "Dendroscope used all available RAM whereas Taxonium used 1.7 GB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a performance comparison measurement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "ea274828-efb6-42f2-b92f-c36e74164344",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C102",
+      "claim": "Taxonium is unique among compared tools in supporting mutation-annotated trees.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, Taxonium is unique among these tools in supporting mutation-annotated trees, and perhaps in its ability to toggle to a time tree \u2013 features shared with, and inspired by, Auspice (Hadfield et al., 2018) \u2013 which is limited to phylogenies of <~10,000 tips (around 0.2% of Taxonium scale).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative claim about features, supported by citation to Auspice.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "f950c80a-9a85-4825-a792-3ae17d9f371e",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C103",
+      "claim": "Taxonium's ability to toggle to a time tree is a feature shared with and inspired by Auspice.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, Taxonium is unique among these tools in supporting mutation-annotated trees, and perhaps in its ability to toggle to a time tree \u2013 features shared with, and inspired by, Auspice (Hadfield et al., 2018) \u2013 which is limited to phylogenies of <~10,000 tips (around 0.2% of Taxonium scale).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges the inspiration from Auspice, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "01869f7c-dba6-4e2e-8009-adf92426b908",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C104",
+      "claim": "Auspice is limited to phylogenies of less than approximately 10,000 tips.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, Taxonium is unique among these tools in supporting mutation-annotated trees, and perhaps in its ability to toggle to a time tree \u2013 features shared with, and inspired by, Auspice (Hadfield et al., 2018) \u2013 which is limited to phylogenies of <~10,000 tips (around 0.2% of Taxonium scale).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the scale limitations of Auspice.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "87cd6b20-f540-412c-8a1f-463c710ccbec",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C105",
+      "claim": "Taxonium is the only tool able to fluidly explore the largest trees in current use on consumer-grade hardware.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, we argue that Taxonium is the only tool able to fluidly explore the largest trees in current use on consumer-grade hardware.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim supported by the comparative performance analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "6894a8cc-07e4-4085-9523-b97cd7526080",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C106",
+      "claim": "SARS-CoV-2 datasets likely provide a preview of future data volumes for many other organisms given the decreasing costs of sequencing and increasing infrastructure for genomic surveillance.",
+      "claim_type": "EXPLICIT",
+      "source": "While unprecedented, these SARS-CoV-2 datasets likely provide a preview of future data volumes for many other organisms given the decreasing costs of sequencing and increasing infrastructure for genomic surveillance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference about future trends based on current observations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "d804b476-6ee3-4d46-9f3a-aa7331e7da76",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C107",
+      "claim": "Taxonium is one of few tools to allow the visualisation of a mutation-annotated tree capturing all known sequence diversity in an organism.",
+      "claim_type": "EXPLICIT",
+      "source": "Taxonium allows exploration of these large phylogenies, and is also one of few tools to allow the visualisation of a mutation-annotated tree capturing all known sequence diversity in an organism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative claim about Taxonium's capabilities.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "53dc812f-0238-45c7-bb7e-5581cffad191",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C108",
+      "claim": "Some tools for phylogenetic trees are designed primarily for generating static figures suited for publications.",
+      "claim_type": "EXPLICIT",
+      "source": "Some tools for phylogenetic trees are designed primarily for generating static figures suited for publications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the purpose of some phylogenetic tools, based on knowledge of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "227a58b6-3445-4f7c-a067-24541b1ecf8b",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C109",
+      "claim": "Taxonium is intended primarily for exploring a tree dynamically.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Taxonium is intended primarily for exploring a tree dynamically \u2013 in the case of very large trees, this is often the only way to extract useful information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the design intent of Taxonium.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "5091f465-5b07-4e69-b72a-08c213e50f12",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C110",
+      "claim": "In the case of very large trees, dynamic exploration is often the only way to extract useful information.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Taxonium is intended primarily for exploring a tree dynamically \u2013 in the case of very large trees, this is often the only way to extract useful information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the necessity of dynamic exploration for large trees.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "af77256e-537c-42ef-9da0-b022070ac9e8",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C111",
+      "claim": "Artifacts in sequences are often systematic and can create entire clades brought together by shared errors.",
+      "claim_type": "EXPLICIT",
+      "source": "Artifacts in sequences (e.g. Heguy et al., 2022; Sanderson and Barrett, 2021; Sanderson et al., 2021) are often systematic, and in such cases can create entire clades brought together by shared errors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about sequencing artifacts, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "373c2631-46b3-427d-a711-a7b1b0830b21",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C112",
+      "claim": "In large SARS-CoV-2 phylogenies, many revertant mutations appear to represent sequencing artifacts or reversion from them.",
+      "claim_type": "EXPLICIT",
+      "source": "In large SARS-CoV-2 phylogenies, many of these mutations appear to in fact represent sequencing artifacts, or reversion from them, and so this approach may help identify areas of a tree that have technical issues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from analyzing SARS-CoV-2 trees with Taxonium.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "4684093e-4a46-45bd-bf27-227a54ddacb6",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C113",
+      "claim": "Taxonium provides a search option that highlights 'revertant' mutations in which a branch apparently mutates back towards the reference genome.",
+      "claim_type": "EXPLICIT",
+      "source": "In Taxonium, we provide a search option that highlights 'revertant' mutations in which a branch apparently mutates back towards the reference genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature of Taxonium designed to identify potential artifacts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "7cff64ea-f006-4374-915b-78ccd93d0d8c",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C114",
+      "claim": "The number of tips in a particular region of the Cov2Tree tree is not always indicative of the size of an outbreak due to vastly different densities of sampling in different geographic regions.",
+      "claim_type": "EXPLICIT",
+      "source": "A further challenge is the vastly different densities of sampling in different geographic regions. Because Cov2Tree does not downsample sequences from countries which are able to sequence a greater proportion of their cases, the number of tips in a particular region of the tree is not always indicative of the size of an outbreak, and in some cases even inferences of the directionality of migration may be confounded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the interpretation challenges due to sampling bias.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "58c411bf-6f10-40bf-8b69-24fc0f93112c",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C115",
+      "claim": "In some cases, inferences of the directionality of migration may be confounded by different sampling densities.",
+      "claim_type": "EXPLICIT",
+      "source": "Because Cov2Tree does not downsample sequences from countries which are able to sequence a greater proportion of their cases, the number of tips in a particular region of the tree is not always indicative of the size of an outbreak, and in some cases even inferences of the directionality of migration may be confounded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about potential biases in phylogeographic interpretation.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "bd8f37c5-a494-4f1b-980e-59486c128ff9",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C116",
+      "claim": "The Taxonium web client is implemented in React.",
+      "claim_type": "EXPLICIT",
+      "source": "The Taxonium web client is implemented in React.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical implementation of the web client.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "77d874d3-ad8d-41b0-a9c5-b43d36508465",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C117",
+      "claim": "The core of the Taxonium visualization runs in DeckGL, which is heavily modified to allow independent zooming in X and Y.",
+      "claim_type": "EXPLICIT",
+      "source": "The core of the visualisation runs in DeckGL, which is heavily modified to allow independent zooming in X and Y.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical implementation and modifications made to DeckGL.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "b3bcd03d-de01-443b-9559-60924368985f",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C118",
+      "claim": "The data consumed by DeckGL in Taxonium is generated either in a web worker (local mode) or from an external API running the Taxonium backend (remote mode).",
+      "claim_type": "EXPLICIT",
+      "source": "The data consumed by DeckGL is generated either in a web worker (local mode) or in from an external API running the Taxonium backend (remote mode).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the architecture of data flow in Taxonium.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "9664aa6b-a5a9-444f-831d-a52fd9aa61e4",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C119",
+      "claim": "The Taxonium backend keeps the full tree in memory, then serves filtered slices of it to users on demand.",
+      "claim_type": "EXPLICIT",
+      "source": "The backend keeps the full tree in memory, then serves filtered slices of it to users on demand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how the backend operates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "bf19f9a0-c385-4b0e-b036-4eed3e55f944",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C120",
+      "claim": "In the case of the SARS-CoV-2 dataset, the server backend requires around 5 GB of RAM per server instance.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of the SARS-CoV-2 dataset, the server backend requires around 5 GB of RAM per server instance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a resource requirement measurement for the backend.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "80518df2-4a4a-4408-aa99-36a08549467c",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C121",
+      "claim": "Cov2Tree runs on an autoscaling Kubernetes cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "We run Cov2Tree on an autoscaling Kubernetes cluster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the deployment infrastructure for Cov2Tree.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "6497f409-2f64-42dc-94e5-6ea63889b72f",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C122",
+      "claim": "The taxoniumtools package is written in Python and distributed with PyPI.",
+      "claim_type": "EXPLICIT",
+      "source": "The taxoniumtools package is written in Python and distributed with PyPI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the implementation and distribution of taxoniumtools.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "04e15427-7d4c-43f8-a88d-9bce9a255ca5",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C123",
+      "claim": "Tree manipulation in taxoniumtools is performed with TreeSwift.",
+      "claim_type": "EXPLICIT",
+      "source": "Tree manipulation is performed with TreeSwift (Moshiri, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the implementation of taxoniumtools, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "a26dcc4c-bc79-40a2-8e34-2449104039dc",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C124",
+      "claim": "The taxoniumtools package includes the ability to number internal nodes with a numbering scheme that matches UShER newick exports.",
+      "claim_type": "EXPLICIT",
+      "source": "The package includes the ability to number internal nodes, with a numbering scheme that matches UShER newick exports.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature of taxoniumtools.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "e7184054-6f6c-45ea-b3f9-9515d2a264bd",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C125",
+      "claim": "Taxoniumtools has an optional feature that 'shears' off outlier nodes with very few descendants, which often represent sequencing errors or occasionally recombinants.",
+      "claim_type": "EXPLICIT",
+      "source": "An optional feature, used for display on Cov2Tree, 'shears' off outlier nodes with very few descendants, which often represent sequencing errors or occasionally recombinants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an optional feature and its rationale.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "8db09f41-dc57-4b46-98af-7a13c845a7cb",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "claim_id": "C126",
+      "claim": "Pruning outlier nodes can help to make large trees more interpretable.",
+      "claim_type": "EXPLICIT",
+      "source": "This pruning can help to make large trees more interpretable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the benefit of the pruning feature.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9451b185-3265-4d4d-89c4-bdde18a6d696",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The COVID-19 pandemic has resulted in unprecedented sequencing scale, with SARS-CoV-2 having more sequenced genomes than any other organism, with GISAID surpassing 11 million sequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C10 establish the unprecedented scale of SARS-CoV-2 sequencing data. These are factual statements about database sizes that are verifiable and represent established knowledge in the field at the time of publication.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "cd3e317a-58bc-4194-b21f-93fda3160ae5",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Phylogenetic trees are the fundamental representation for genomic epidemiology, capturing evolutionary history, approximating transmission trees, enabling identification of transmission events and new variants, and when mutation-annotated, revealing parallel/convergent evolution and recurrent mutations of concern.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C12-C15 describe well-established principles of phylogenetic analysis in genomic epidemiology, supported by citations (C13) and general knowledge in the field. These represent foundational concepts rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "1b6095e5-3d93-4ac5-a387-34ccf06b80ea",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Existing web-based phylogenetic visualization tools do not scale to current SARS-CoV-2 dataset sizes due to bottlenecks in tree construction and visualization, with tools like Nextstrain limited to ~4000 sequences and previous approaches constrained by SVG/Canvas rendering technologies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C16, C19, C31-C32 establish the motivation for Taxonium by documenting limitations of existing tools. These are supported by comparative performance data (C92-C105) and represent accurate characterizations of the field's challenges, though C19 relies on general knowledge rather than systematic benchmarking.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "4efebaf6-a80a-47c7-994d-9bef27ec4d21",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Taxonium uses WebGL via DeckGL to enable browser-based exploration of trees with tens of millions of nodes through GPU-accelerated rendering and zoom-dependent sparsification that excludes only overlapping nodes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C25-C26, C33-C36 describe Taxonium's core technical innovation. The WebGL/DeckGL implementation is documented with citations (C34), and the sparsification algorithm is detailed in Methods. Performance is demonstrated through benchmarking (C93-C105).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "c8acebea-c6bc-4d66-9e30-f3c0d3a1f12d",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Taxonium supports mutation-annotated trees (MATs) that capture all known genetic variation, enabling users to color trees by genotype at any site and search for mutations in internal nodes with filtering by descendant count\u2014a capability unique among compared tools.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6, C27, C46-C49, C102 describe MAT support as a key feature. This is demonstrated in Figures 2-4 and supported by comparative analysis (C102). The claim that MATs capture 'all known genetic variation' (C6, C47) is reasonable given their design but slightly overstated\u2014they capture variation present in the input sequences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "011aef74-5551-49f1-9730-ef5fb99da0a6",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Taxonium operates in three modes: fully client-side (loading trees with millions of nodes but requiring 80 seconds for 5.4M sequences), server-backed (loading in seconds), and desktop application, with client-side mode particularly important for sensitive data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C29-C30, C50-C58 describe Taxonium's deployment architecture. Performance measurements are provided (C57: 80s load time, C61: seconds for server mode). The privacy benefit of client-side processing (C51) is a reasonable inference. Technical details about JSONL format and web workers are documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "e2928a16-fbcd-45ea-b3ae-eef0f863416d",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The server-backed mode uses a NodeJS/Express backend that pre-loads trees and serves filtered slices on-demand using binary search on y-coordinate sorted nodes, requiring ~5GB RAM for 5.4M sequences and enabling loading in seconds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C64, C119-C121 describe the server architecture with specific technical details and performance metrics. The binary search optimization (C63) and RAM requirements (C120) are concrete specifications. The 'seconds' loading claim (C61) is supported by the comparative analysis showing 31s client-side load (C93).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "81d19828-4a09-4f3b-aa54-4d87eec00fa7",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Browser memory limitations restrict the web client to ~6M nodes on some systems, addressed by a desktop Electron app that uses packaged NodeJS to access full system memory, successfully handling 12.5M sequences on 8GB RAM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C70 identify a limitation and solution. The browser memory constraint (C65-C67) is based on technical knowledge and testing. The desktop app's capability is demonstrated by the 12.5M sequence test (C70), though this is a single data point without details on performance characteristics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "9d2442b6-4c13-4f2c-a567-77b9d6366dba",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The taxoniumtools Python package converts UShER MATs or Newick trees to Taxonium JSONL format using TreeSwift, with optional Chronumental integration and a 'shearing' feature to remove outlier nodes representing likely sequencing errors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C75, C122-C126 describe the preprocessing pipeline. Implementation details are provided with citations (TreeSwift: C74, C123). The shearing feature (C125-C126) is described with its rationale, though the characterization of outliers as 'often' representing errors is an inference without quantitative validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "6a318c0b-6a74-4d22-8646-a2332a3c4f9c",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Cov2Tree provides public access to explore 5.6 million SARS-CoV-2 sequences from the daily-updated UShER tree, with Chronumental-inferred time trees and features for coloring by lineage, country, or genotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C76-C80 describe the Cov2Tree application. The data source is documented with citation (C77), and features are demonstrated in figures. The availability at cov2tree.org (C8) is verifiable. This represents a practical application of Taxonium rather than a methodological advance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "49ddd00a-e505-4031-89aa-a4aeda48d467",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Taxonium analysis of the global SARS-CoV-2 tree reveals heavy enrichment of S:452M/Q mutations within the BA.2 lineage, providing evidence of epistatic interactions between this position and BA.2-defining mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C83 present a biological finding enabled by Taxonium. The enrichment pattern is shown in Figure 3 (C82). However, the inference of epistasis (C83) from enrichment alone is somewhat speculative\u2014enrichment could also reflect founder effects or sampling bias. The claim is reasonable but would benefit from statistical quantification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "a97ff947-9d26-44ab-a65d-b3c39940e89c",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Taxonium has been applied beyond SARS-CoV-2 to: probe transmission clusters, identify convergent mutations creating new ORFs, examine tree reconstruction tools, visualize 2.2M species from NCBI Taxonomy, integrate with Serratus viral RdRP trees, and analyze the 2022 monkeypox outbreak.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C91 document diverse applications of Taxonium, all supported by citations to published work (C84-C86, C89, C91) or verifiable resources (C87-C88, C90). These demonstrate the tool's generalizability beyond its primary SARS-CoV-2 use case.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "66e134f1-1539-4279-bd2d-a528bf98416a",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Comparative benchmarking shows Taxonium is the only tool able to fluidly explore the largest trees (5.3M sequences) on consumer hardware, loading in 31s and using 1.7GB RAM, while Archaeopteryx, Empress, iTOL, ETE, and Microreact failed to load or were unresponsive, and Dendroscope loaded in 83s but rendered poorly using all available RAM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C101, C105 provide systematic performance comparison. Specific metrics are given for multiple tools with appropriate citations. However, the comparison has limitations: (1) tools were not designed for this scale, (2) 'reasonable time' is subjective (C95, C97), (3) single hardware configuration tested, (4) Phylocanvas.GL showed some capability at 1M nodes (C98). The conclusion (C105) is supported but should acknowledge these caveats.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "b718993d-9aab-4e49-bbad-da7a6294968f",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Taxonium's interface accepts Newick trees with optional metadata, supports coloring by metadata using consistent hashing, enables complex boolean searches with circled results, allows independent X/Y axis zooming (crucial for large trees), and provides a minimap for orientation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C45 describe interface features demonstrated in Figure 1 and the application. The color hashing algorithm (C39) ensures consistency. The importance of independent zooming (C43) is a reasonable design inference. All features are verifiable through the figures and described implementation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "3323bc8a-6add-4760-b855-8428d8f71734",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "UShER enables larger trees than previously possible through maximum parsimony incremental addition, yielding high-quality topologies for dense sampling, while Chronumental uses stochastic gradient descent to construct chronologies from very large trees, which was not possible with previous approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C24 describe prior work (UShER, Chronumental) that enables Taxonium's scale. All claims are supported by citations to published work. These establish the ecosystem context but are not contributions of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "d2b14da2-dfa2-4768-ad82-20033fa06b8b",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Taxonium is unique among compared tools in supporting mutation-annotated trees and one of few tools to visualize MATs capturing all sequence diversity in an organism, with time-tree toggling inspired by Auspice (limited to <10,000 tips).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C104, C107 make comparative feature claims. MAT support uniqueness (C102) is supported by the tool comparison. The Auspice limitation (C104) is stated as knowledge. The 'one of few' claim (C107) is appropriately hedged. These accurately position Taxonium in the tool landscape.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "07691edb-3b2d-4cab-bfc1-75b02041bb84",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "SARS-CoV-2 datasets likely preview future data volumes for other organisms given decreasing sequencing costs, and while some tools focus on static publication figures, Taxonium is designed for dynamic exploration, which is often the only way to extract information from very large trees.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C106, C108-C110 provide context and design philosophy. The future data volume prediction (C106) is reasonable speculation based on trends. The distinction between static and dynamic tools (C108-C109) is valid. The necessity claim (C110) is a reasonable inference but somewhat overstated\u2014other approaches like downsampling can also extract information.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "4e969241-f24b-4ddd-b621-2346eebb8d51",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Systematic sequencing artifacts can create entire clades with shared errors, and Taxonium provides a 'revertant mutation' search feature to identify branches mutating toward the reference, which in SARS-CoV-2 trees often represent artifacts or reversions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C111-C113 address data quality challenges. The systematic nature of artifacts (C111) is supported by citations. The revertant mutation feature (C113) is described. However, the interpretation that revertants 'often' represent artifacts (C112) is based on observation without quantitative validation or statistical analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "0cc19b6f-ac20-4a15-b9fa-21421e93cbe1",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Due to vastly different sampling densities across geographic regions, the number of tips in Cov2Tree regions is not always indicative of outbreak size, and in some cases inferences of migration directionality may be confounded.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C114-C115 acknowledge important limitations of unsampled trees for epidemiological inference. These are reasonable inferences about sampling bias effects, appropriately presented as caveats in the Discussion. The 'in some cases' hedging (C115) is appropriate given the complexity of the issue.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "518da6e4-81db-48c5-ae42-4a6d4d7273fc",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The Taxonium web client is implemented in React with visualization in heavily modified DeckGL enabling independent X/Y zooming, consuming data from either a local web worker or external API backend.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C116-C118 provide technical implementation details. The React framework (C116), DeckGL modifications (C117), and dual-mode architecture (C118) are documented with code availability. These are verifiable technical specifications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    },
+    {
+      "id": "4331467f-5cfb-48f1-95e8-c226ca539a10",
+      "content_id": "8d48080e-54e9-408b-a7f5-54667ff9f176",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "New tools were developed for SARS-CoV-2 lineage assignment and trend exploration, with Nextstrain providing one of the most widely-used tools through a pipeline that downsamples sequences, builds trees with iqtree, and assigns chronology with TreeTime.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C17-C18 describe the prior tool landscape, all supported by appropriate citations. These establish context but represent background knowledge rather than contributions of this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:11:13.103106Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2e1e0228-d91d-4e80-be30-b5cdd901a10b",
+      "result_id": "9451b185-3265-4d4d-89c4-bdde18a6d696"
+    },
+    {
+      "claim_id": "403c5931-abc1-44e1-9f9e-8f60728c4a68",
+      "result_id": "9451b185-3265-4d4d-89c4-bdde18a6d696"
+    },
+    {
+      "claim_id": "fcff5e68-3a3f-4f0e-ba78-8bec3a95198e",
+      "result_id": "cd3e317a-58bc-4194-b21f-93fda3160ae5"
+    },
+    {
+      "claim_id": "b1fd01ab-fc43-4b88-8e2e-cf8f6ce776b0",
+      "result_id": "cd3e317a-58bc-4194-b21f-93fda3160ae5"
+    },
+    {
+      "claim_id": "b1df0346-ca28-44b7-8705-0e9b633ece78",
+      "result_id": "cd3e317a-58bc-4194-b21f-93fda3160ae5"
+    },
+    {
+      "claim_id": "d890248c-1151-43e0-9b4d-dd8acbff4d17",
+      "result_id": "cd3e317a-58bc-4194-b21f-93fda3160ae5"
+    },
+    {
+      "claim_id": "1428df81-c466-4c70-9ff7-d0b672515891",
+      "result_id": "cd3e317a-58bc-4194-b21f-93fda3160ae5"
+    },
+    {
+      "claim_id": "1c6a86cf-7d24-47fb-851e-a30da17697e4",
+      "result_id": "1b6095e5-3d93-4ac5-a387-34ccf06b80ea"
+    },
+    {
+      "claim_id": "9f6ee44b-a42c-4286-a5e8-de403f56a808",
+      "result_id": "1b6095e5-3d93-4ac5-a387-34ccf06b80ea"
+    },
+    {
+      "claim_id": "cb3f9ceb-e7ac-4f81-a4cf-57de639e8ed9",
+      "result_id": "1b6095e5-3d93-4ac5-a387-34ccf06b80ea"
+    },
+    {
+      "claim_id": "378d3022-3e99-4505-9c9f-9904efccb09c",
+      "result_id": "1b6095e5-3d93-4ac5-a387-34ccf06b80ea"
+    },
+    {
+      "claim_id": "0290a1fb-cc38-4d2c-b0bb-647babd73529",
+      "result_id": "1b6095e5-3d93-4ac5-a387-34ccf06b80ea"
+    },
+    {
+      "claim_id": "e89e94da-5978-4953-9812-92c6cb2848e1",
+      "result_id": "4efebaf6-a80a-47c7-994d-9bef27ec4d21"
+    },
+    {
+      "claim_id": "11868618-3d5a-4af2-9eb9-1778e12caa4d",
+      "result_id": "4efebaf6-a80a-47c7-994d-9bef27ec4d21"
+    },
+    {
+      "claim_id": "4c48dbb8-ccef-466d-b177-51c6ffbca9c0",
+      "result_id": "4efebaf6-a80a-47c7-994d-9bef27ec4d21"
+    },
+    {
+      "claim_id": "3c8c9af1-3e9f-42cf-a6c5-54fbdd544575",
+      "result_id": "4efebaf6-a80a-47c7-994d-9bef27ec4d21"
+    },
+    {
+      "claim_id": "74cea5f0-66ef-42bf-aeaf-a0fd62c7c927",
+      "result_id": "4efebaf6-a80a-47c7-994d-9bef27ec4d21"
+    },
+    {
+      "claim_id": "ced06d30-58f4-45de-ae16-8707829cd0c9",
+      "result_id": "4efebaf6-a80a-47c7-994d-9bef27ec4d21"
+    },
+    {
+      "claim_id": "f1db1b89-b50c-48f6-9de9-c68dba9e1257",
+      "result_id": "4efebaf6-a80a-47c7-994d-9bef27ec4d21"
+    },
+    {
+      "claim_id": "358aee24-dbf1-48b4-885f-c1e7631483dd",
+      "result_id": "c8acebea-c6bc-4d66-9e30-f3c0d3a1f12d"
+    },
+    {
+      "claim_id": "7c0fae62-2467-4f6e-918c-3e1da605c6fa",
+      "result_id": "c8acebea-c6bc-4d66-9e30-f3c0d3a1f12d"
+    },
+    {
+      "claim_id": "71394846-af6a-41d8-b6cb-f5baea0aef5b",
+      "result_id": "c8acebea-c6bc-4d66-9e30-f3c0d3a1f12d"
+    },
+    {
+      "claim_id": "9850888d-d123-4181-8dcb-a464e574bf04",
+      "result_id": "c8acebea-c6bc-4d66-9e30-f3c0d3a1f12d"
+    },
+    {
+      "claim_id": "ca95cea9-d720-4437-9185-dc3295059a63",
+      "result_id": "c8acebea-c6bc-4d66-9e30-f3c0d3a1f12d"
+    },
+    {
+      "claim_id": "d12b9d03-f776-49f6-81b7-a387238f343f",
+      "result_id": "c8acebea-c6bc-4d66-9e30-f3c0d3a1f12d"
+    },
+    {
+      "claim_id": "5088c25f-73c0-45bc-b3fe-3461318d5f71",
+      "result_id": "c8acebea-c6bc-4d66-9e30-f3c0d3a1f12d"
+    },
+    {
+      "claim_id": "ea274828-efb6-42f2-b92f-c36e74164344",
+      "result_id": "c8acebea-c6bc-4d66-9e30-f3c0d3a1f12d"
+    },
+    {
+      "claim_id": "fc6920da-5fa1-4802-b131-82847e973ca1",
+      "result_id": "011aef74-5551-49f1-9730-ef5fb99da0a6"
+    },
+    {
+      "claim_id": "1344f09f-0643-4b70-870f-44a3a2d2023e",
+      "result_id": "011aef74-5551-49f1-9730-ef5fb99da0a6"
+    },
+    {
+      "claim_id": "38a764c4-06ae-4398-997d-c2ce6f5d76cc",
+      "result_id": "011aef74-5551-49f1-9730-ef5fb99da0a6"
+    },
+    {
+      "claim_id": "4810aa61-15b1-4016-ae0a-92a949aa583a",
+      "result_id": "011aef74-5551-49f1-9730-ef5fb99da0a6"
+    },
+    {
+      "claim_id": "d36fb1b6-1eea-4b7a-b1b4-b8a539d2c072",
+      "result_id": "011aef74-5551-49f1-9730-ef5fb99da0a6"
+    },
+    {
+      "claim_id": "a8f6d60f-4f85-4b39-b2f7-00a6269d4e9c",
+      "result_id": "011aef74-5551-49f1-9730-ef5fb99da0a6"
+    },
+    {
+      "claim_id": "7ad3627e-39c8-42ff-8491-94bbe2968b19",
+      "result_id": "011aef74-5551-49f1-9730-ef5fb99da0a6"
+    },
+    {
+      "claim_id": "a9b7bed1-7076-4ee0-924d-815b5ecef428",
+      "result_id": "011aef74-5551-49f1-9730-ef5fb99da0a6"
+    },
+    {
+      "claim_id": "1a628c15-8c5f-458a-8af0-d8ab16484fd5",
+      "result_id": "011aef74-5551-49f1-9730-ef5fb99da0a6"
+    },
+    {
+      "claim_id": "b38af49d-b02c-4d3e-a1cd-07dc27112e47",
+      "result_id": "011aef74-5551-49f1-9730-ef5fb99da0a6"
+    },
+    {
+      "claim_id": "bfc819db-9893-4536-be74-cf1de675fa92",
+      "result_id": "011aef74-5551-49f1-9730-ef5fb99da0a6"
+    },
+    {
+      "claim_id": "20c59976-11ee-4e34-916b-2011eecdeb2a",
+      "result_id": "011aef74-5551-49f1-9730-ef5fb99da0a6"
+    },
+    {
+      "claim_id": "fd0b3476-0a50-4a1d-8def-8c9e073e1456",
+      "result_id": "e2928a16-fbcd-45ea-b3ae-eef0f863416d"
+    },
+    {
+      "claim_id": "a292d4a3-a729-4cf9-842f-13cb72d1a3be",
+      "result_id": "e2928a16-fbcd-45ea-b3ae-eef0f863416d"
+    },
+    {
+      "claim_id": "5bd832c3-0fd3-40d4-916f-e36dc3d63a6e",
+      "result_id": "e2928a16-fbcd-45ea-b3ae-eef0f863416d"
+    },
+    {
+      "claim_id": "d88f45e2-acc7-42d8-a6b1-0c8bef5a15e2",
+      "result_id": "e2928a16-fbcd-45ea-b3ae-eef0f863416d"
+    },
+    {
+      "claim_id": "1bb820b5-65b4-46d7-9bc1-87ef24fdf966",
+      "result_id": "e2928a16-fbcd-45ea-b3ae-eef0f863416d"
+    },
+    {
+      "claim_id": "a07bf860-b030-4002-9cf6-2fa50cdcb11c",
+      "result_id": "e2928a16-fbcd-45ea-b3ae-eef0f863416d"
+    },
+    {
+      "claim_id": "9664aa6b-a5a9-444f-831d-a52fd9aa61e4",
+      "result_id": "e2928a16-fbcd-45ea-b3ae-eef0f863416d"
+    },
+    {
+      "claim_id": "bf19f9a0-c385-4b0e-b036-4eed3e55f944",
+      "result_id": "e2928a16-fbcd-45ea-b3ae-eef0f863416d"
+    },
+    {
+      "claim_id": "80518df2-4a4a-4408-aa99-36a08549467c",
+      "result_id": "e2928a16-fbcd-45ea-b3ae-eef0f863416d"
+    },
+    {
+      "claim_id": "0a36286d-700b-4732-a959-2fe466dc3fb4",
+      "result_id": "81d19828-4a09-4f3b-aa54-4d87eec00fa7"
+    },
+    {
+      "claim_id": "7ef1cda7-d1c1-49fb-b4a1-460fc962b5d8",
+      "result_id": "81d19828-4a09-4f3b-aa54-4d87eec00fa7"
+    },
+    {
+      "claim_id": "f29e71bf-0f19-477e-9cc6-caa93f3f39b2",
+      "result_id": "81d19828-4a09-4f3b-aa54-4d87eec00fa7"
+    },
+    {
+      "claim_id": "caf3dc17-f141-40b1-adc7-b9b8c758d4c9",
+      "result_id": "81d19828-4a09-4f3b-aa54-4d87eec00fa7"
+    },
+    {
+      "claim_id": "7508e632-8e93-403d-93a0-4347365fb5b2",
+      "result_id": "81d19828-4a09-4f3b-aa54-4d87eec00fa7"
+    },
+    {
+      "claim_id": "03f7c3ae-2b26-40b8-ad73-0cbebdd07529",
+      "result_id": "81d19828-4a09-4f3b-aa54-4d87eec00fa7"
+    },
+    {
+      "claim_id": "800cb79d-a994-4726-a8f7-5a8ff3ad9515",
+      "result_id": "9d2442b6-4c13-4f2c-a567-77b9d6366dba"
+    },
+    {
+      "claim_id": "d102c7ca-d368-4eb9-8402-82bea0761f2f",
+      "result_id": "9d2442b6-4c13-4f2c-a567-77b9d6366dba"
+    },
+    {
+      "claim_id": "43da554d-d088-4e10-b0b4-335176b03266",
+      "result_id": "9d2442b6-4c13-4f2c-a567-77b9d6366dba"
+    },
+    {
+      "claim_id": "3bee7b3d-60e8-409e-830c-3c65373faf7a",
+      "result_id": "9d2442b6-4c13-4f2c-a567-77b9d6366dba"
+    },
+    {
+      "claim_id": "31ec64ae-a25a-4938-a9bd-3076fe5fbe61",
+      "result_id": "9d2442b6-4c13-4f2c-a567-77b9d6366dba"
+    },
+    {
+      "claim_id": "6497f409-2f64-42dc-94e5-6ea63889b72f",
+      "result_id": "9d2442b6-4c13-4f2c-a567-77b9d6366dba"
+    },
+    {
+      "claim_id": "04e15427-7d4c-43f8-a88d-9bce9a255ca5",
+      "result_id": "9d2442b6-4c13-4f2c-a567-77b9d6366dba"
+    },
+    {
+      "claim_id": "a26dcc4c-bc79-40a2-8e34-2449104039dc",
+      "result_id": "9d2442b6-4c13-4f2c-a567-77b9d6366dba"
+    },
+    {
+      "claim_id": "e7184054-6f6c-45ea-b3f9-9515d2a264bd",
+      "result_id": "9d2442b6-4c13-4f2c-a567-77b9d6366dba"
+    },
+    {
+      "claim_id": "8db09f41-dc57-4b46-98af-7a13c845a7cb",
+      "result_id": "9d2442b6-4c13-4f2c-a567-77b9d6366dba"
+    },
+    {
+      "claim_id": "1affe8d8-4350-4b49-b2c9-5340240870b6",
+      "result_id": "6a318c0b-6a74-4d22-8646-a2332a3c4f9c"
+    },
+    {
+      "claim_id": "cf38126c-1046-440f-903e-5e2b75b31c69",
+      "result_id": "6a318c0b-6a74-4d22-8646-a2332a3c4f9c"
+    },
+    {
+      "claim_id": "71cf501c-b345-43df-825d-c97ef59052f4",
+      "result_id": "6a318c0b-6a74-4d22-8646-a2332a3c4f9c"
+    },
+    {
+      "claim_id": "ecfe1513-39cb-4101-b516-67ebab392d5c",
+      "result_id": "6a318c0b-6a74-4d22-8646-a2332a3c4f9c"
+    },
+    {
+      "claim_id": "718afd73-a3d0-4cc2-b827-06697ef44a39",
+      "result_id": "6a318c0b-6a74-4d22-8646-a2332a3c4f9c"
+    },
+    {
+      "claim_id": "8436ae9b-5835-4b70-937b-4f8ac5d3fcf7",
+      "result_id": "6a318c0b-6a74-4d22-8646-a2332a3c4f9c"
+    },
+    {
+      "claim_id": "1c769fdf-2df8-4154-93b5-b5d66267d6ce",
+      "result_id": "49ddd00a-e505-4031-89aa-a4aeda48d467"
+    },
+    {
+      "claim_id": "6c7380b1-c199-4b40-afab-a88e946d2895",
+      "result_id": "49ddd00a-e505-4031-89aa-a4aeda48d467"
+    },
+    {
+      "claim_id": "27369afb-3485-4bcf-b3ad-4444fb0db19c",
+      "result_id": "49ddd00a-e505-4031-89aa-a4aeda48d467"
+    },
+    {
+      "claim_id": "d6b40ab5-e0c0-4102-9120-4db8bb4ae328",
+      "result_id": "a97ff947-9d26-44ab-a65d-b3c39940e89c"
+    },
+    {
+      "claim_id": "71a22adb-48db-4d57-bccf-9f1977c6c585",
+      "result_id": "a97ff947-9d26-44ab-a65d-b3c39940e89c"
+    },
+    {
+      "claim_id": "3140f7e5-dfb6-4474-be90-dbc9aff5d5ac",
+      "result_id": "a97ff947-9d26-44ab-a65d-b3c39940e89c"
+    },
+    {
+      "claim_id": "ad9c0186-8c49-40d1-86c4-c7f8fd270db8",
+      "result_id": "a97ff947-9d26-44ab-a65d-b3c39940e89c"
+    },
+    {
+      "claim_id": "b9032e67-a730-4fc6-a790-da4246e1d43d",
+      "result_id": "a97ff947-9d26-44ab-a65d-b3c39940e89c"
+    },
+    {
+      "claim_id": "1a6900c4-a471-438e-b266-d924d45db937",
+      "result_id": "a97ff947-9d26-44ab-a65d-b3c39940e89c"
+    },
+    {
+      "claim_id": "9c9203c9-b4eb-4115-b1c8-7b33121ff62d",
+      "result_id": "a97ff947-9d26-44ab-a65d-b3c39940e89c"
+    },
+    {
+      "claim_id": "702c37aa-3966-4329-92c6-ec4a823c50a2",
+      "result_id": "a97ff947-9d26-44ab-a65d-b3c39940e89c"
+    },
+    {
+      "claim_id": "53ddb0d6-926b-4406-8740-76e75cc0ea0c",
+      "result_id": "66e134f1-1539-4279-bd2d-a528bf98416a"
+    },
+    {
+      "claim_id": "a72ccb98-0d0d-4b2e-acf4-70025a5da827",
+      "result_id": "66e134f1-1539-4279-bd2d-a528bf98416a"
+    },
+    {
+      "claim_id": "0e429660-4c18-4567-af7e-b47e1c55f4c6",
+      "result_id": "66e134f1-1539-4279-bd2d-a528bf98416a"
+    },
+    {
+      "claim_id": "95b86d14-fd6a-4a92-b304-fc9dd44f5de9",
+      "result_id": "66e134f1-1539-4279-bd2d-a528bf98416a"
+    },
+    {
+      "claim_id": "37b7712e-80da-4df7-91f5-eb51ec2090e1",
+      "result_id": "66e134f1-1539-4279-bd2d-a528bf98416a"
+    },
+    {
+      "claim_id": "2c338b26-9a39-4cbb-8a6a-6f6a6c3a993c",
+      "result_id": "66e134f1-1539-4279-bd2d-a528bf98416a"
+    },
+    {
+      "claim_id": "26944306-16ab-466a-8f3a-59637cd56877",
+      "result_id": "66e134f1-1539-4279-bd2d-a528bf98416a"
+    },
+    {
+      "claim_id": "f65bd99a-071a-49d1-b61e-ac40fd776d76",
+      "result_id": "66e134f1-1539-4279-bd2d-a528bf98416a"
+    },
+    {
+      "claim_id": "d0660ce9-aa29-4bdb-a24a-22585cb40e8f",
+      "result_id": "66e134f1-1539-4279-bd2d-a528bf98416a"
+    },
+    {
+      "claim_id": "e8990219-ea9b-43a1-9f5f-7d385196a6d7",
+      "result_id": "66e134f1-1539-4279-bd2d-a528bf98416a"
+    },
+    {
+      "claim_id": "87cd6b20-f540-412c-8a1f-463c710ccbec",
+      "result_id": "66e134f1-1539-4279-bd2d-a528bf98416a"
+    },
+    {
+      "claim_id": "9aac6042-033e-4754-bc05-c2f6f10f9034",
+      "result_id": "b718993d-9aab-4e49-bbad-da7a6294968f"
+    },
+    {
+      "claim_id": "cd98ddbb-010c-4f2a-b02a-2026ddc1af41",
+      "result_id": "b718993d-9aab-4e49-bbad-da7a6294968f"
+    },
+    {
+      "claim_id": "bad7534d-628d-4243-b98d-174795cacd6c",
+      "result_id": "b718993d-9aab-4e49-bbad-da7a6294968f"
+    },
+    {
+      "claim_id": "01c47822-77a6-4534-99b6-d33cefb085d7",
+      "result_id": "b718993d-9aab-4e49-bbad-da7a6294968f"
+    },
+    {
+      "claim_id": "e2acad05-eff7-4d20-97bd-e17049829d42",
+      "result_id": "b718993d-9aab-4e49-bbad-da7a6294968f"
+    },
+    {
+      "claim_id": "016adcc3-e6d5-4cad-8fe6-f9888c683d0c",
+      "result_id": "b718993d-9aab-4e49-bbad-da7a6294968f"
+    },
+    {
+      "claim_id": "ed5f4f31-730d-4747-84dc-6bb2224c9fd7",
+      "result_id": "b718993d-9aab-4e49-bbad-da7a6294968f"
+    },
+    {
+      "claim_id": "c760a5be-cecc-4be2-a070-adb533a854d4",
+      "result_id": "b718993d-9aab-4e49-bbad-da7a6294968f"
+    },
+    {
+      "claim_id": "f87717d4-b1ce-43f1-b33a-0e234cded5c9",
+      "result_id": "b718993d-9aab-4e49-bbad-da7a6294968f"
+    },
+    {
+      "claim_id": "3799aa7a-1099-4ff7-81b9-76b81ebca9cd",
+      "result_id": "3323bc8a-6add-4760-b855-8428d8f71734"
+    },
+    {
+      "claim_id": "86a7824f-51d7-4ffe-a261-5412fd99cd70",
+      "result_id": "3323bc8a-6add-4760-b855-8428d8f71734"
+    },
+    {
+      "claim_id": "9ec6fc65-4e26-4db8-a659-d436743be215",
+      "result_id": "3323bc8a-6add-4760-b855-8428d8f71734"
+    },
+    {
+      "claim_id": "a510d0d8-b955-4add-b892-0a4b1e4ca132",
+      "result_id": "3323bc8a-6add-4760-b855-8428d8f71734"
+    },
+    {
+      "claim_id": "4c9ab38b-cb02-42bb-a76d-19fd123b7a4f",
+      "result_id": "3323bc8a-6add-4760-b855-8428d8f71734"
+    },
+    {
+      "claim_id": "ea274828-efb6-42f2-b92f-c36e74164344",
+      "result_id": "d2b14da2-dfa2-4768-ad82-20033fa06b8b"
+    },
+    {
+      "claim_id": "f950c80a-9a85-4825-a792-3ae17d9f371e",
+      "result_id": "d2b14da2-dfa2-4768-ad82-20033fa06b8b"
+    },
+    {
+      "claim_id": "01869f7c-dba6-4e2e-8009-adf92426b908",
+      "result_id": "d2b14da2-dfa2-4768-ad82-20033fa06b8b"
+    },
+    {
+      "claim_id": "d804b476-6ee3-4d46-9f3a-aa7331e7da76",
+      "result_id": "d2b14da2-dfa2-4768-ad82-20033fa06b8b"
+    },
+    {
+      "claim_id": "6894a8cc-07e4-4085-9523-b97cd7526080",
+      "result_id": "07691edb-3b2d-4cab-bfc1-75b02041bb84"
+    },
+    {
+      "claim_id": "53dc812f-0238-45c7-bb7e-5581cffad191",
+      "result_id": "07691edb-3b2d-4cab-bfc1-75b02041bb84"
+    },
+    {
+      "claim_id": "227a58b6-3445-4f7c-a067-24541b1ecf8b",
+      "result_id": "07691edb-3b2d-4cab-bfc1-75b02041bb84"
+    },
+    {
+      "claim_id": "5091f465-5b07-4e69-b72a-08c213e50f12",
+      "result_id": "07691edb-3b2d-4cab-bfc1-75b02041bb84"
+    },
+    {
+      "claim_id": "af77256e-537c-42ef-9da0-b022070ac9e8",
+      "result_id": "4e969241-f24b-4ddd-b621-2346eebb8d51"
+    },
+    {
+      "claim_id": "373c2631-46b3-427d-a711-a7b1b0830b21",
+      "result_id": "4e969241-f24b-4ddd-b621-2346eebb8d51"
+    },
+    {
+      "claim_id": "4684093e-4a46-45bd-bf27-227a54ddacb6",
+      "result_id": "4e969241-f24b-4ddd-b621-2346eebb8d51"
+    },
+    {
+      "claim_id": "7cff64ea-f006-4374-915b-78ccd93d0d8c",
+      "result_id": "0cc19b6f-ac20-4a15-b9fa-21421e93cbe1"
+    },
+    {
+      "claim_id": "58c411bf-6f10-40bf-8b69-24fc0f93112c",
+      "result_id": "0cc19b6f-ac20-4a15-b9fa-21421e93cbe1"
+    },
+    {
+      "claim_id": "bd8f37c5-a494-4f1b-980e-59486c128ff9",
+      "result_id": "518da6e4-81db-48c5-ae42-4a6d4d7273fc"
+    },
+    {
+      "claim_id": "77d874d3-ad8d-41b0-a9c5-b43d36508465",
+      "result_id": "518da6e4-81db-48c5-ae42-4a6d4d7273fc"
+    },
+    {
+      "claim_id": "b3bcd03d-de01-443b-9559-60924368985f",
+      "result_id": "518da6e4-81db-48c5-ae42-4a6d4d7273fc"
+    },
+    {
+      "claim_id": "46b0009e-921d-4acf-a002-99b7e9ad9b18",
+      "result_id": "4331467f-5cfb-48f1-95e8-c226ca539a10"
+    },
+    {
+      "claim_id": "cad44472-40d2-411e-ac8c-399250ac04c3",
+      "result_id": "4331467f-5cfb-48f1-95e8-c226ca539a10"
+    },
+    {
+      "claim_id": "001041cc-ebf8-482c-8337-606be42e212c",
+      "result_id": "4331467f-5cfb-48f1-95e8-c226ca539a10"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,241 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The canonical Hippo pathway model describes sequential cytoplasmic phosphorylation of kinases that controls YAP/TAZ subcellular localization, nuclear exclusion, and transcriptional activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C8-C11 collectively describe established knowledge about the canonical Hippo pathway topology. These claims are well-supported by citations to prior work and represent the accepted model in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "YAP and TAZ play distinct roles in tissue regeneration and disease, with YAP/TAZ deficiency reducing regenerative capacity while TAZ specifically contributes to hepatic steatosis and YAP protects from ischemia-reperfusion injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 are supported by multiple citations to prior studies demonstrating differential roles of YAP and TAZ in various tissues and disease contexts. The evidence from literature is consistent and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Hep3B cells expressing fluorescently tagged YAP and TAZ show cell density-dependent nuclear-cytoplasmic shuttling, with YAP exhibiting more pronounced dynamic behavior than TAZ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C25 are supported by experimental data from live cell imaging (Figure 1) showing differential localization patterns of YAP and TAZ under varying cell density conditions. The image analysis pipeline provides quantitative evidence for these observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C60"
+    ],
+    "result": "The canonical Hippo pathway model with only cytoplasmic phosphorylation cannot sufficiently explain the experimentally observed spatial distribution patterns of YAP and TAZ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C27, and C60 are supported by PDE modeling results showing poor fit between canonical model simulations and experimental data (Figure 2B). The residual analysis demonstrates systematic deviations, particularly in nuclear and perinuclear regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C61",
+      "C64",
+      "C65"
+    ],
+    "result": "An alternative PDE model incorporating nuclear phosphorylation of YAP/TAZ accurately reproduces experimental localization patterns, with differential phosphorylation/dephosphorylation ratios explaining the distinct shuttling dynamics between YAP and TAZ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C3, C28-C33, C61, C64-C65 describe the alternative model and its predictions. While the model fits experimental data better than the canonical model (Figure 2C-E), the authors acknowledge parameter non-identifiability due to steady-state-only fitting and arbitrary concentration units. The model establishes a 'possible mechanism' but does not definitively prove nuclear phosphorylation is the sole or primary mechanism. Additional dynamic experimental validation would strengthen these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "LATS1/2 kinases are present in the nucleus and physically interact with YAP in both cytoplasmic and nuclear compartments, with significantly higher interaction counts in nuclei.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 are supported by subcellular fractionation experiments (Figure 2F) and proximity ligation assays with quantitative analysis (Figure 2G-H). The PLA data show statistically significant enrichment of YAP-pLATS1/2 interactions in nuclei (p=0.01).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C68",
+      "C69"
+    ],
+    "result": "APAP treatment induces biphasic YAP regulation with early phosphorylation/inactivation (up to 3 hr) followed by late dephosphorylation/activation (24-48 hr) and nuclear enrichment, while TAZ shows minimal response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C37-C44, C68-C69 are supported by multiple complementary experimental approaches: live cell imaging (Figure 3A-B), Western blotting showing temporal phosphorylation changes (Figure 3C), qPCR demonstrating YAP target gene induction (Figure 3D), and rescue experiments with YAP knockdown (Figure 3E). The biphasic response is consistently observed across methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C66"
+    ],
+    "result": "APAP-dependent YAP regulation involves sequential induction of ROS, AKT phosphorylation, and YAP phosphorylation, with AKT inhibition reducing YAP phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C45-C49, C66 are supported by ROS assays (Figure 4B), Western blots showing coordinated phosphorylation of AKT and YAP (Figure 4A, C-D), and pharmacological inhibition experiments demonstrating AKT-dependent YAP phosphorylation (Figure 4E-F). The sequential relationship is established through temporal analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C71"
+    ],
+    "result": "AKT and YAP physically interact in the nucleus, with APAP treatment increasing nuclear YAP-AKT interaction at 6 hr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52, C71 are supported by proximity ligation assays showing nuclear colocalization of AKT/YAP and pAKT/pYAP (Figure 4G-H), with quantitative analysis demonstrating APAP-induced increase in nuclear interactions (Figure 4I, p=0.0155). This provides direct evidence for nuclear phosphorylation mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "In vivo mouse experiments confirm sequential activation of ROS (6-12 hr), AKT (12 hr-1 day), and YAP (1-2 days) gene signatures and protein localization following APAP administration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C53-C59 are supported by comprehensive in vivo data including gene expression profiling showing temporal signature activation (Figure 5A-D) and immunohistochemistry with automated quantification demonstrating sequential nuclear accumulation of AKT (6 hr) followed by YAP (1-2 days) (Figure 5E-F). The temporal sequence matches in vitro observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7"
+    ],
+    "result": "YAP and TAZ exhibit different shuttling dynamics that explain distinct cellular responses under physiological and tissue-damaging conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C7 is supported by the collective experimental and modeling evidence showing differential responses of YAP and TAZ to cell density (C23-C25), APAP treatment (C37-C38), and modeling predictions of distinct phosphorylation requirements (C31-C33, C64-C65). This represents the main integrative conclusion of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Prior studies show conflicting results regarding YAP's role in APAP-induced liver injury, with YAP silencing promoting regeneration while MST1/2 inhibition also being protective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 accurately cite prior work (Poudel et al., 2021; Fan et al., 2016) describing contradictory findings about YAP's role in APAP-induced liver damage. These citations provide appropriate context for the current study's investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Prior studies have demonstrated nuclear LATS1/2 control of YAP phosphorylation and the importance of nuclear export for YAP distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 appropriately cite prior work (Li et al., 2014; Ege et al., 2018) that supports the concept of nuclear regulation of YAP. These citations provide important precedent for the alternative model proposed in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C70",
+      "C72"
+    ],
+    "result": "Additional mechanisms may contribute to APAP-induced YAP regulation, including direct effects on MST1/2 kinases and indirect AKT-mediated phosphorylation of MST2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67, C70, C72 appropriately cite prior work (Ghallab et al., 2022; Fan et al., 2016; Romano et al., 2014) acknowledging alternative mechanisms. This demonstrates appropriate scientific caution in not over-interpreting the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "While YAP acts as an oncogene, epidemiological evidence argues against a relationship between APAP exposure and cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 appropriately cite prior work on YAP's oncogenic role (Dong et al., 2007; Weiler et al., 2017) and epidemiological analysis of APAP and cancer (Weinstein et al., 2021). This provides important context for interpreting the biological significance of APAP-induced YAP activation.",
+    "result_type": "MINOR"
+  }
+]

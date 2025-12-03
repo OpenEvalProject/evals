@@ -1,0 +1,375 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C26",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Poly(A) site isoforms occur disproportionately in clusters within 3' UTRs. The prevalence of clustered isoform endpoints is far higher than expected by random distribution, and this clustering is statistically significant across genes with varying numbers of isoforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C26, C42-C45 collectively demonstrate clustering through visual inspection (C42), randomization analysis (C43), and statistical testing (C44). The computational analysis in Figure 1 provides strong quantitative evidence that clustering is non-random and significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "In yeast, slow Pol II mutants cause upstream-shifted poly(A) profiles while fast mutants cause downstream shifts. Within isoform clusters, these shifts occur continuously at single-nucleotide resolution, with steeper slopes for slower mutants. Between clusters, shifts are minimal regardless of distance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6 and C47-C51 are strongly supported by the data in Figures 2 and 3, showing nucleotide-level continuous changes within clusters and flat trends between clusters. The dose-response relationship (slower mutants show steeper slopes) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "In human cells, the slow R749H Pol II mutant causes upstream shifts in poly(A) profiles that occur continuously at single-nucleotide resolution within clusters but not between clusters, mirroring the pattern observed in yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C57-C59 are supported by data in Figure 4 showing continuous nucleotide-level changes within clusters in human cells. The conservation of this pattern across species strengthens the mechanistic interpretation. The independence from cluster definition parameters (C59) demonstrates robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "GC content in a region 13-30 nt downstream of isoform clusters correlates with cluster sensitivity to Pol II elongation rate. This region coincides with the DNA protected by elongating Pol II, suggesting DNA sequence elements contribute to cluster formation by affecting Pol II speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C65-C70 are supported by correlation analysis in Figure 6. The contrasting relationships between slow/fast mutants and GC content (C66-C67) provide strong evidence for the mechanistic role. The spatial coincidence with Pol II footprint (C69) adds structural plausibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C71",
+      "C72",
+      "C75",
+      "C76"
+    ],
+    "result": "Pol II occupancy increases just downstream of poly(A) sites in human cells, with a biphasic pattern showing initial increase at 10-25 nt and stronger increase at 30-100 nt downstream. This suggests transcriptional slowdown linked to polyadenylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C71-C72, C75-C76 are supported by eNETseq data in Figure 7A. The biphasic pattern is clearly demonstrated, and the interpretation of increased occupancy as slowdown is standard. The specificity is confirmed by control sites (C78-C79).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C91"
+    ],
+    "result": "Pol II elongation speed affects nucleotide-level dwell time, creating a 'window of opportunity' for polyadenylation. Poly(A) site clusters are linked to local elongation rate rather than arising from intrinsic imprecision of the cleavage machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C84-C87, C91 represent the core mechanistic interpretation supported by the nucleotide-level data. The window of opportunity model (C86-C87) is well-supported by the continuous changes within clusters. The argument against intrinsic imprecision (C11) is logical given the Pol II speed effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C13",
+      "C99",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The cleavage/polyadenylation and Pol II elongation complexes are spatially and likely physically coupled, such that polyadenylation occurs rapidly upon RNA emergence from the Pol II complex. Cleavage occurs at a constrained distance from the Pol II active site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C99, C125-C127 represent the proposed model of spatial/physical coupling. This is strongly supported by the nucleotide-level linkage data and is consistent with prior studies showing CpA factors travel with Pol II (C126). The model explains the observed patterns well.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C93"
+    ],
+    "result": "Cluster-independent analysis shows that the effect of Pol II speed on poly(A) site choice depends on inter-isoform spacing rather than total distance traveled. The magnitude of upstream shift increases slightly from 1-5 nt spacing but plateaus beyond 5 nt.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64, C93 are supported by the distance-independent analysis in Figure 5. This clarifies that the within/between cluster distinction reflects spacing rather than absolute distance, strengthening the mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "Pol II elongation rate has no effect on whether isoforms cluster or the pattern of clustering itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 is supported by data in Figure 1\u2014figure supplement 2 showing similar clustering patterns across wild-type and mutant strains. This is an important control demonstrating that Pol II speed affects usage within existing clusters rather than creating or destroying clusters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C122"
+    ],
+    "result": "Pol II occupancy downstream of intronic AATAAA 'decoy' sites does not show the increased occupancy observed at true poly(A) sites, indicating that transcriptional slowdown is specific to functional polyadenylation sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79, C122 are supported by eNETseq data in Figure 7B showing flat Pol II occupancy at control sites. This is a critical control demonstrating specificity of the Pol II slowdown to functional CpA sites.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The pattern of Pol II occupancy around poly(A) sites is conserved between yeast and mammalian cells, suggesting evolutionary conservation of the linkage between CpA machinery and Pol II slowdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 are supported by citation to prior yeast data (Harlen et al., 2016) showing similar patterns to the mammalian eNETseq data. The conservation across species strengthens the biological significance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The prevailing model that poly(A) site clustering reflects intrinsic imprecision of the CpA complex cannot explain why Pol II elongation rate affects relative isoform levels within clusters. Instead, clustering reflects stereo-positioning of the CpA complex relative to Pol II.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C113 present a logical argument against the intrinsic imprecision model. The reasoning is sound: if clustering were due to intrinsic imprecision, Pol II speed should not affect relative isoform usage. The data showing Pol II speed effects (Figures 2-4) directly contradict the imprecision model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "GC-rich regions downstream of clusters may impede Pol II elongation, with slow Pol II being more impaired than wild-type and fast Pol II being less impaired. This mechanism contributes to cluster formation in wild-type cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C114-C116 are explicitly speculative and represent a proposed mechanism. While the correlation data (C65-C67) and prior studies (C117) support the plausibility, direct evidence that GC content causes Pol II slowdown at these specific positions is lacking. The mechanism remains a reasonable hypothesis requiring further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The local decrease in Pol II speed 10-25 nt downstream of poly(A) sites could be due to DNA sequences or to CpA machinery binding affecting Pol II elongation properties. Either mechanism would increase dwell time and contribute to clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119-C121 present alternative speculative mechanisms for the observed Pol II slowdown. While the eNETseq data clearly show the slowdown (C71-C72), the manuscript does not distinguish between these mechanisms. Both remain plausible hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "The second increase in Pol II occupancy 30-100 nt downstream may reflect slower Pol II speed during transcriptional termination involving 5'-3' exonucleolytic degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C77 is explicitly speculative. While the increased occupancy is observed (C76) and the termination mechanism is established by citations, the causal link between termination and this specific occupancy increase is not directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The proposed model involves two steps: (1) CpA machinery binds exposed RNA sequences making RNA permissive for cleavage, and (2) coupled CpA and Pol II travel nucleotide-by-nucleotide making cleavage decisions at each position based on sequence and dwell time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C137 describe the detailed mechanistic model. While speculative in some details (C130, C132-C133), the overall model is well-supported by the nucleotide-level data and provides a coherent explanation for all major observations. The model is presented appropriately as an interpretation rather than proven fact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C2",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Prior work established that Pol II elongation rate regulates poly(A) profiles in yeast, with slow mutants causing upstream shifts and fast mutants causing downstream shifts. These effects are due to elongation rate rather than processivity and are physiologically relevant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C34-C39 summarize prior work by the authors (Geisberg et al., 2020) that provides the foundation for the current study. These are appropriately cited and provide essential context. The current manuscript builds on this foundation by examining fine structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "CpA at individual sites is inefficient due to short dwell times, resulting in multiple 3' isoforms per gene. This may have evolved to generate functional diversity among isoforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C138 is a reasonable inference from the model and data. Claim C139 is well-supported by the data showing many isoforms. Claim C140 is explicitly speculative about evolutionary purpose and cannot be evaluated from the presented data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C40",
+      "C41"
+    ],
+    "result": "Background on mRNA 3' end formation: polyadenylation occurs co-transcriptionally via the CpA complex, generates multiple isoforms, is restricted to 3' UTRs, involves degenerate sequence motifs, and is connected to transcriptional elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C33, C40-C41 provide established background knowledge supported by appropriate citations. These contextual claims are well-documented in the literature and provide necessary foundation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Analogous RNA processing events (splicing, integrator cleavage) can occur soon after RNA exits the Pol II complex. Homology between integrator and CpA complexes suggests conserved stereo-specific cleavage mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 are supported by citations to prior studies. Claim C107 is speculative but reasonable given the homology. These comparisons strengthen the plausibility of rapid co-transcriptional CpA.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C92",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Mechanistic reasoning: each mRNA is cleaved once, creating population-level competition between sites. The timing mechanism operates with sequence specificity elements. Pol II position matters because CpA machinery tracks with Pol II and acts on newly accessible RNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90, C92, C94-C98, C100-C103 present logical reasoning about the mechanism. These inferences are well-supported by the data and represent sound scientific reasoning about how the observed patterns arise from molecular mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C141"
+    ],
+    "result": "Major 3' isoforms (>5% of maximum) account for >97% of overall steady-state mRNA expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C141 is supported by the data analysis described in the methods. This justifies the focus on major isoforms and demonstrates that the analysis captures the vast majority of polyadenylation events.",
+    "result_type": "MINOR"
+  }
+]

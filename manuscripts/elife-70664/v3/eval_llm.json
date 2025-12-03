@@ -1,0 +1,331 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "All three calsyntenin isoforms (Clstn1, Clstn2, Clstn3) are expressed in the hippocampus with overlapping patterns across CA1, CA3, and dentate gyrus regions, suggesting that most hippocampal neurons co-express multiple calsyntenin isoforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 are directly supported by single-molecule in situ hybridization data shown in Figure 1A. Claim C29 is a reasonable inference from the overlapping expression patterns observed, though it represents an interpretation rather than direct measurement. The data quality and methodology appear sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Purkinje cells in the cerebellum selectively express Clstn3 at levels >15-20 fold higher than Clstn1 or Clstn2, while other cerebellar cell types (granule cells, basket cells) primarily express Clstn1. This was confirmed using multiple independent approaches including single-cell RNAseq analysis, in situ hybridization, single-cell qRT-PCR, and ribotag-based mRNA isolation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result is strongly supported by convergent evidence from four independent methodologies (C30-C38), all showing consistent patterns of Clstn3 enrichment in Purkinje cells. The use of multiple orthogonal approaches strengthens confidence in the findings. The quantitative measurements (>15-20 fold enrichment) are consistent across methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "CRISPR-mediated deletion of Clstn3 using AAV-DJ viral delivery in vivo was highly effective, reducing Clstn3 mRNA by >60% and protein by ~80% in the cerebellum, with primary infection of Purkinje cells and no detectable off-target mutations at predicted sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The CRISPR deletion efficiency is well-documented through multiple measurements (C39-C40) including qRT-PCR and immunoblotting. Cell-type specificity is demonstrated by tdTomato expression patterns (C41-C42). Off-target analysis (C43) provides important validation, though it only examines the top predicted sites and cannot rule out all possible off-target effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Cerebellar Clstn3 knockout mice exhibit selective motor impairments including deficits in motor learning (rotarod) and altered gait, while maintaining normal open field behavior, beam walking, and social behaviors. These phenotypes are consistent with constitutive Clstn3 KO mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The behavioral phenotypes are well-characterized across multiple assays (C44-C47) with appropriate controls. The consistency with constitutive KO mice (C48) provides independent validation. However, the manuscript notes that contributions from non-Purkinje cell types cannot be completely ruled out at this stage, which is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "CRISPR-mediated Clstn3 deletion in cerebellum causes a robust decrease in inhibitory synapse density throughout the cerebellar cortex, with the most extensive reduction (~60-70%) in the deep molecular layer, as measured by both presynaptic (vGAT) and postsynaptic (GABA-A\u03b11 receptor) markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The decrease in inhibitory synapse density is supported by quantitative immunohistochemistry using both pre- and postsynaptic markers (C49-C52), providing convergent evidence. The measurements are layer-specific and show consistent effects. The use of two independent markers strengthens the conclusion. Statistical significance is reported for the key findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Clstn3 deletion produces a large decrease (~60%) in miniature IPSC frequency without changing amplitude, with similar impairments in both large (>60 pA) and small (<60 pA) mIPSCs, suggesting effects on both basket and stellate cell synapses. Basic Purkinje cell properties (capacitance, input resistance) remain unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The electrophysiological characterization of mIPSCs is thorough (C53-C58), with appropriate analysis of amplitude, frequency, and kinetics. The separation of events by amplitude (C57-C58) provides insight into differential effects on synapse subtypes, though the authors appropriately note this is an approximation. The preservation of basic cell properties (C56) is an important control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Evoked inhibitory synaptic responses show a ~40% decrease in amplitude after Clstn3 deletion, without changes in coefficient of variation, paired-pulse ratio, or kinetics, suggesting the decrease reflects reduced synapse numbers rather than altered release probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The evoked IPSC measurements (C59-C60) complement the mIPSC data and support a synapse number interpretation. The analysis of release probability indicators (CV, PPR) is appropriate. However, the interpretation that changes reflect synapse number rather than function relies on the assumption that these measures fully capture release probability, which may be an oversimplification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Clstn3 deletion causes a robust increase in parallel-fiber synapse markers, including >25% increase in presynaptic vGluT1 staining, ~80% increase in postsynaptic GluA2 staining, and ~25% increase in glial GluA1 staining in the molecular layer of cerebellar cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The increase in parallel-fiber synapses is supported by three independent markers (C64-C66) representing presynaptic, postsynaptic, and glial compartments. This convergent evidence from multiple synaptic compartments strongly supports the conclusion. The magnitude of effects varies across markers, which could reflect differential sensitivity or biological differences in compartment responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Climbing-fiber synapses, marked by vGluT2, show no significant changes in number or size after Clstn3 deletion, though there is a slight non-significant trend toward decreased density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lack of effect on climbing-fiber synapses (C67) is an important negative control demonstrating specificity of the Clstn3 deletion effects. The trend toward decrease (C68) is appropriately reported as non-significant. This selectivity strengthens the overall conclusions about Clstn3 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Morphological reconstruction of Purkinje cells shows Clstn3 deletion causes a ~30% increase in dendritic spine density in the superficial cerebellar cortex without significantly altering overall dendritic architecture, with the increase particularly pronounced for thin spines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The morphological analysis (C71-C74) provides independent confirmation of increased parallel-fiber synapses through spine density measurements. The full 3D reconstruction approach is rigorous. The specificity for thin spines (C74) is interesting but the functional significance is unclear. The authors appropriately note that spine density alone doesn't prove synapse density due to possible 'naked' spines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Clstn3 deletion increases both miniature EPSC amplitude (~25%) and frequency (~15%), and robustly enhances evoked parallel-fiber synaptic responses (~60% increase) without changing release probability, consistent with increased synapse numbers and enhanced synaptic efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The electrophysiological evidence for enhanced parallel-fiber transmission (C75-C78) is comprehensive and consistent with the morphological and immunohistochemical data. The analysis of release probability (C78) supports a synapse number interpretation. The combination of increased mEPSC frequency and amplitude, plus enhanced evoked responses, provides strong functional evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "Climbing-fiber EPSCs show no changes in amplitude, coefficient of variation, paired-pulse ratio, or kinetics after Clstn3 deletion, confirming the specificity of effects to parallel-fiber synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lack of effect on climbing-fiber function (C79) provides important specificity control and is consistent with the morphological data (C67-C68). This selectivity is crucial for establishing that Clstn3 differentially regulates specific synapse types rather than having global effects on Purkinje cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Sparse deletion of Clstn3 specifically in Purkinje cells (without affecting surrounding neurons) recapitulates both the decrease in inhibitory synapse strength (~60%) and increase in parallel-fiber synapse strength (~100%), demonstrating cell-autonomous postsynaptic action of Clstn3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sparse deletion experiment (C80-C84) is critical for establishing cell-autonomous function. The single-cell qRT-PCR validation (C80-C81) confirms specificity. The recapitulation of both phenotypes in sparse deletion strongly supports a postsynaptic mechanism. The even larger effect size in sparse deletion (~100% vs ~60% for parallel fibers) is interesting but not explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Clstn3 functions as a postsynaptic adhesion molecule in Purkinje cells that regulates the excitatory/inhibitory balance by simultaneously promoting inhibitory synapse formation and suppressing excitatory parallel-fiber synapse formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion (C85-C87) is well-supported by the comprehensive dataset showing opposite effects on different synapse types. The cell-autonomous postsynaptic mechanism is established by sparse deletion. However, the molecular mechanism remains unknown, and the authors appropriately acknowledge this limitation in the discussion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Calsyntenins are evolutionarily conserved atypical cadherins (three genes in mammals, one in invertebrates) that are type I membrane proteins with two N-terminal cadherin domains, an LNS domain, a transmembrane region, and a short cytoplasmic tail, primarily expressed in neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C1-C4) are well-established in the literature and supported by appropriate citations. They provide necessary context but represent prior knowledge rather than new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Previous studies have shown that calsyntenins localize to postsynaptic densities, induce presynaptic specializations in heterologous assays, and that knockout mice exhibit modest decreases in synapse density (20-30% for excitatory synapses in Clstn3 KO, 10-20% for inhibitory synapses in Clstn2 KO) with some inconsistencies between studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C5-C13) accurately summarize prior literature with appropriate citations. The authors correctly note inconsistencies between studies (C8-C9), which motivates their current work. This represents accurate literature review rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The literature on calsyntenin-neurexin interactions is contradictory, with different studies reporting binding through different domains (LNS domain to \u03b1-neurexin N-terminus vs. cadherin domains to neurexin 6th LNS domain), one study detecting no binding, and no successful reconstitution of stable complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C14-C17) accurately represent the contradictory state of the literature regarding calsyntenin-neurexin interactions. The citations are appropriate and the summary is fair. This contradiction provides important context for interpreting the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Previous studies suggested calsyntenins function as presynaptic kinesin adaptors in vesicular transport of APP, based on localization and binding studies, but knockout mice show only modest or no changes in APP transport and processing, with some paradoxical results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C18-C24) accurately summarize the alternative hypothesis about calsyntenin function with appropriate citations. The authors correctly note the modest and sometimes paradoxical effects in knockout mice, which weakens this hypothesis. This represents fair literature review.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C69",
+      "C70"
+    ],
+    "result": "Parallel-fiber and climbing-fiber synapses in cerebellum can be distinguished by their use of different vesicular glutamate transporters (vGluT1 vs. vGluT2), and parallel-fiber synapses form tripartite structures with Bergmann glia. Spine density is an imperfect proxy for parallel-fiber synapses because some mutations can produce 'naked' spines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C61-C63, C69-C70) represent established knowledge about cerebellar synapse organization, appropriately cited. The caveat about naked spines (C70) is important for interpreting the spine density data and shows appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "Among synaptic adhesion molecules, only latrophilins and BAIs have been shown to have major impacts on synapse numbers, while most SAMs (including neurexins and LAR-type phosphatases) appear to specify properties of existing synapses rather than establish connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C88-C89) provide important context about SAM functions with appropriate citations. This framing helps position the current findings about Clstn3 within the broader field. The distinction between synapse formation and specification is well-established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The study demonstrates that acute CRISPR-mediated deletion of Clstn3 in cerebellum causes opposite effects on different synapse types (decreased inhibitory, increased excitatory parallel-fiber) without affecting dendritic architecture or climbing-fiber synapses, acting through a cell-autonomous postsynaptic mechanism to regulate excitatory/inhibitory balance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims (C90-C98) accurately represent the main findings of the study and are well-supported by the comprehensive dataset. The conclusions are appropriately qualified and the authors acknowledge limitations regarding mechanism. This represents a fair summary of the major contributions.",
+    "result_type": "MAJOR"
+  }
+]

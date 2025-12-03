@@ -1,0 +1,1470 @@
+{
+  "submission": {
+    "id": "989bec9c-99ec-4c6a-9920-ee6a4055a722",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T10:42:13.009437Z",
+    "updated_at": "2025-12-03T10:42:13.009437Z"
+  },
+  "content": [
+    {
+      "id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "submission_id": "989bec9c-99ec-4c6a-9920-ee6a4055a722",
+      "content_type": "manuscript",
+      "content_text": "# Zinc finger protein Zfp335 controls early T-cell development and survival through \u03b2-selection-dependent and -independent mechanisms\n\n## Authors\n\n- Xin Wang<sup>1</sup> ([ORCID: 0000-0002-1624-8241](https://orcid.org/0000-0002-1624-8241))\n- Anjun Jiao<sup>1</sup>\n- Lina Sun<sup>1</sup>\n- Wenhua Li<sup>1</sup>\n- Biao Yang<sup>1</sup>\n- Yanhong Su<sup>1</sup>\n- Renyi Ding<sup>1</sup>\n- Cangang Zhang<sup>1</sup>\n- Haiyan Liu<sup>1</sup>\n- Xiaofeng Yang<sup>1</sup>\n- Chenming Sun<sup>1</sup>\n- Baojun Zhang<sup>1</sup> ([ORCID: 0000-0001-5972-1011](https://orcid.org/0000-0001-5972-1011)) \u2020\n\n### Affiliations\n\n1. Department of Pathogenic Microbiology and Immunology, School of Basic Medical Sciences, Xi'an Jiaotong University Xi'an China ([ROR:017zhmm22](https://ror.org/017zhmm22))\n2. Institute of Infection and Immunity, Translational Medicine Institute, Xi\u2019an Jiaotong University Health Science Center Xi\u2019an China ([ROR:017zhmm22](https://ror.org/017zhmm22))\n3. Key Laboratory of Environment and Genes Related to Diseases (Xi'an Jiaotong University), Ministry of Education Shaanxi China ([ROR:017zhmm22](https://ror.org/017zhmm22))\n4. Xi\u2019an Key Laboratory of Immune Related Diseases Shaanxi China\n\n\u2020 Corresponding author\n\n## Abstract\n\nT-cell development in the thymus undergoes the process of differentiation, selective proliferation, and survival from CD4\u2212CD8\u2212 double negative (DN) stage to CD4+CD8+ double positive (DP) stage prior to the formation of CD4+ helper and CD8+ cytolytic T cells ready for circulation. Each developmental stage is tightly regulated by sequentially operating molecular networks, of which only limited numbers of transcription regulators have been deciphered. Here, we identified Zfp335 transcription factor as a new player in the regulatory network controlling thymocyte development in mice. We demonstrate that Zfp335 intrinsically controls DN to DP transition, as T-cell-specific deficiency in Zfp335 leads to a substantial accumulation of DN3 along with reduction of DP, CD4+, and CD8+ thymocytes. This developmental blockade at DN stage results from the impaired intracellular TCR\u03b2 (iTCR\u03b2) expression as well as increased susceptibility to apoptosis in thymocytes. Transcriptomic and ChIP-seq analyses revealed a direct regulation of transcription factors Bcl6 and Rorc by Zfp335. Importantly, enhanced expression of TCR\u03b2 and Bcl6/Rorc restores the developmental defect during DN3 to DN4 transition and improves thymocytes survival, respectively. These findings identify a critical role of Zfp335 in controlling T-cell development by maintaining iTCR\u03b2 expression-mediated \u03b2-selection and independently activating cell survival signaling.\n\n## Introduction\n\nT-cell development proceeds in a series of developmental stages, which is precisely orchestrated by multiple signaling and molecular networks (Hosokawa and Rothenberg, 2021; L\u00f3pez-Rodr\u00edguez et al., 2015; Rothenberg, 2014). Prethymic progenitor cells originated from bone marrow migrate into the thymus and sequentially differentiate into CD4\u2212CD8\u2212 (DN), CD4+CD8+ (DP), and the CD4+ or CD8+ (SP) stage. Based on the expression of CD44 and CD25, DN thymocytes are divided into several phenotypically distinct stages, including DN1 to DN4 (Rothenberg et al., 2008; Yang et al., 2010; Yui and Rothenberg, 2014; Kurd and Robey, 2016). In the presence of Notch signaling, early thymic progenitor (ETP)-DN1 cells transit into DN2a stage, initiating the T-cell lineage commitment, which is immediately accompanied by TCR\u03b2 gene arrangement. The majority of DN2 cells enter the DN3 stage with \u03b1\u03b2 lineage potential (Godfrey et al., 1993). Only DN3 cells with a complete pre-TCR complex, which consists of the functional TCR\u03b2 protein, pre-T\u03b1 (pT\u03b1) chain, and CD3 molecule, can successfully trigger the subsequent maturation into DN4 and DP thymocytes. Further differentiation into mature CD4+ or CD8+ T cells requires positive and negative selection at DP stage before they migrate to peripheral lymphoid organs (Dudley et al., 1994; Hoffman et al., 1996; von Boehmer and Fehling, 1997; Malissen et al., 1999).\n\nPre-TCR signals regulate thymocyte differentiation by mediating protection from apoptosis, stimulating proliferation, and inducing allelic exclusion at the TCR\u03b2 locus in post-\u03b2-selection DN3b cells and promoting DN to DP transition (Hoffman et al., 1996; Aifantis et al., 1997; Kruisbeek et al., 2000). Inactivation of pre-TCR components dampens T-lymphocyte development by arresting thymocytes at the DN3 stage and inducing apoptosis (Fehling et al., 1995; Malissen et al., 1995; Mombaerts et al., 1992a; Mombaerts et al., 1992b). Multiple transcription factors downstream of pre-TCR signaling are involved in T-cell differentiation and survival. The major pre-TCR signaling is conducted through the dose-dependent expression of Notch controlled by the Id3\u2013E2A axis (Liu et al., 2021). Abrogation of either Notch or E2A expression may lead to the developmental block of thymocytes at multiple stages (Ikawa et al., 2006; Shah and Z\u00fa\u00f1iga-Pfl\u00fccker, 2014; Belle and Zhuang, 2014). In addition, activation of NF-\u03baB (Voll et al., 2000), Ets1 (Eyquem et al., 2004), and NFAT5 (Berga-Bola\u00f1os et al., 2013) by pre-TCR signals also contributes to the developmental block. The transcription factor T-cell factor 1 (TCF1), together with its downstream Bcl-11b, not only increases the potential to differentiate into T cells (Li et al., 2010; Ikawa et al., 2010), but also positively regulates thymocyte development via promoting TCR\u03b2 recombination and expression, as well as DP cell survival (Albu et al., 2007; Li et al., 2013). Apart from the essential role in the T follicular helper cell lineage commitment (Yu et al., 2009), Bcl6 induced by pre-TCR signals is also involved in the DN to DP transition and protection of DN4 cells from apoptosis (Solanki et al., 2020). Additionally, abrogation of Rorc expression in thymocytes leads to a decreased DP proportion and impaired DP survival in a Bcl-xl-dependent manner (Villey et al., 1999; Sun et al., 2000; Xi et al., 2006).\n\nAlthough pre-TCR signaling is crucial for the \u03b2-selection checkpoint, it is not sufficient for progression to the DN3 stage. Other pathways or transcription factors coupled with or independent of conventional pre-TCR signaling are found to play important roles in the process (Ciofani et al., 2004). The developmental blockade in Smarca5- or Nkap-deficient thymocytes is confirmed by intact pre-TCR signals in these mice (Pajerowski et al., 2009; Zikmund et al., 2019). Overall, it remains largely unknown which factors are crucial for T-cell development through mechanisms independent of pre-TCR signaling.\n\nZfp335, also known as the nuclear hormone receptor coregulator (NRC) \u2013 interacting factor 1 (NIF-1), is a zinc finger protein with a 13 C2H2 zinc finger repeating structure consisting of 1337 amino acids (Han et al., 2016). The C2H2-ZF family encodes more than 700 proteins in the human genome, some of which play important roles in ontogenesis, immune cell differentiation, and disease occurrence (Li et al., 2010; Heizmann et al., 2018), yet the biological characteristics and functions of most members are unclear (Stubbs et al., 2011; Emerson and Thomas, 2009). Zfp335 regulates gene transcription by recruiting H3K4 methyltransferase complexes, interacting with coactivators, or directly binding to certain gene promoters (Han et al., 2016; Yang et al., 2012; Mahajan et al., 2002; Wolfe et al., 2000). Zfp335 plays important regulatory roles in early embryonic development and neurogenesis (Yang et al., 2012). Germline knockout of Zfp335 is embryonic lethal, while deletion of Zfp335 gene in nerve cells impairs the proliferation and differentiation of nerve progenitor cells in mice, eventually leading to severe microcephaly (Yang et al., 2012). Function of Zfp335 in T-cell development has been observed in the study of the Zfp335bloto allele, a missense mutation derived from ENU mutagenesis. While thymocyte development is not significantly affected by this hypomorph mutation, there is a significant reduction in the number of peripheral T cells due to defects in the maturation and migration of thymocytes (Han et al., 2014). Without loss of function studies, it remains to be determined whether Zfp335 is required for intrathymic T-cell development.\n\nIn this study, we investigated Zfp335 expression during different thymocyte stages, as well as its function at the \u03b2-selection checkpoint and during DN to DP transition. We found that in the thymus, Zfp335 has the highest expression in DN3 thymocytes. Zfp335 is indispensable for thymocyte \u03b2-selection and supports the transition from DN to DP stage by maintaining intracellular TCR\u03b2 (iTCR\u03b2) expression, as well as by promoting DN and DP thymocyte survival via directly regulating Bcl6 and Rorc expression.\n\n## Results\n\n### Impaired thymic \u03b1\u03b2 T-cell development in Zfp335-deficient mice\n\nTo study the role of Zfp335 in T-cell development, we first assessed the expression of Zfp335 among different thymocyte subsets, including DN3, DN4, DP, CD4, CD8, NKT, and \u03b3\u03b4 T cells. We found that DN3 cells displayed a relatively high level of Zfp335 mRNA expression (Figure 1A). Flow cytometry analysis also revealed that Zfp335 protein had the highest expression in DN3 thymocytes (Figure 1\u2014figure supplement 1A, B). Consistently, microarray data from ImmGen showed higher expression of Zfp335 specifically at the DN3a stage during T-cell development from ETP to CD4/CD8 SP (Figure 1\u2014figure supplement 2A). Although RNA-seq data from ImmGen exhibited the highest expression of Zfp335 in DP thymocytes, a gradually increased expression was observed from ETP to DN3 (Figure 1\u2014figure supplement 2B). Given the importance of DN3 stage during \u03b2-selection checkpoint, we obtained T-cell-specific Zfp335 mice by crossing Zfp335fl/fl strain with Lck-Cre strain (Figure 1\u2014figure supplement 3A). Zfp335 deletion was confirmed by real-time PCR (qPCR) analysis in DN4 cells (Figure 1\u2014figure supplement 3B). Strikingly, LckCre+Zfp335fl/fl (KO) mice exhibited significantly smaller thymi and drastically decreased thymocyte numbers than WT control (Figure 1B). Further analysis showed that both percentages and numbers of DP cells, as well as CD4 SP and CD8 SP cells, were considerably reduced in KO mice (Figure 1C\u2013E). Conversely, the percentage of DN cells was increased by nearly 10\u201315-folds, although the total number was decreased (Figure 1C\u2013E). In secondary lymphoid organs, we also observed reduced CD4+ and CD8+ cells in the spleen and lymph nodes (Figure 1F\u2013J). Thus, Zfp335 is essential for the development of \u03b1\u03b2T cells in the thymus.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/75508/elife-75508-fig1-v2.jpg)\n\n**Figure 1.:** (A) DN3, DN4, DP, CD4, CD8, NKT, and \u03b3\u03b4T cells were sorted from C57BL/6 thymocytes by flow cytometry. The mRNA levels of Zfp335 were measured by qPCR. (B) Thymi from LckCre+Zfp335+/+ (WT) and LckCre+Zfp335fl/fl (KO) mice. Representative thymi and total cell number of thymocytes. Scale bar, 1 cm. (C\u2013E) The different stages of thymocyte development in WT and KO mice were measured by flow cytometry. (C) Representative flow cytometry (FACS) plots of DN, DP, CD4, and CD8 thymocytes. (D) The percentages of DN, DP, CD4, and CD8 thymocytes. (E) The numbers of DN, DP, CD4, and CD8 thymocytes. (F\u2013J) CD4+ and CD8+ cells in spleen and lymph nodes from WT and KO mice were measured by flow cytometry. (F) Representative FACS plots of CD4+ and CD8+ cells in spleen and lymph nodes. The percentage and number of CD4+ T cells (G) and CD8+ T cells (H) in the spleen from WT and KO mice. The percentage and number of CD4+ T cells (I) and CD8+ T cells (J) in the lymph nodes from WT and KO mice. Results represent three independent experiments. n = 4 mice per group. *p < 0.05, **p < 0.01, ***p < 0.001, and ****p < 0.0001.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75508/elife-75508-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Representative FACS plots of Zfp335 protein expression in DN3, DN4, DP, CD4 SP, and CD8 SP thymocytes. (B) Mean fluorescence intensity (MFI) of Zfp335 in (A). Results shown represent three independent experiments. n = 3 per group. *p < 0.05, **p < 0.01, and ***p < 0.001.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/75508/elife-75508-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The RNA profiling datasets of Zfp335 generated by microarray (A) or RNA-seq (B) data on the ImmGen database.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/75508/elife-75508-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A\u2013B) Zfp335fl/fl mice were crossed with LckCre mice to generate LckCre+Zfp335fl/fl mice. (A) The size of Zfp335 DNA in WT and KO mice. (B) The mRNA level of Zfp335 in DN4 cells from WT and KO mice. n = 3, ****p < 0.0001.\n\n### Zfp335 intrinsically regulates T-cell development in the thymus\n\nTo address whether Zfp335 deletion intrinsically affects T-cell development, Lin\u2212CD25+CD44\u2212 DN3 cells from WT or KO mice were harvested and plated with OP9-DL1 cells in the presence of Flt3L and IL-7, an in vitro model for T-cell development (Figure 2A; Kondo et al., 2017). On both days 2 and 4, KO group produced fewer DP cells than WT control (Figure 2B\u2013D, Figure 2\u2014figure supplement 1A). When DN3 cells from WT (CD45.1+) and KO (CD45.2+) mice were mixed and cocultured at a 1:4 ratio (KO cells were rapidly competed out when used at a 1:1 ratio), significantly lower percentage and cell proportion of DP cells were also observed in KO group (Figure 2E\u2013G, Figure 2\u2014figure supplement 1B). Furthermore, in vivo T-cell development was investigated by adoptively transferring T- and B-cell-depleted bone marrow cells from WT (CD45.1+) and KO (CD45.2+) mice with a 1:4 ratio into WT (CD45.1+CD45.2+) recipients (Figure 2H). When thymocytes were analyzed 6 weeks post transfer, both the percentages and cell numbers of DP, CD4, and CD8 cells were significantly reduced while DN percentage was increased in the mice that received KO cells (Figure 2I, J, Figure 2\u2014figure supplement 1C). Consistently, when WT and KO bone marrow cells were mixed at a 1:4 ratio for cotransfer experiments, fewer DP cell proportion detected in KO compared to WT group (Figure 2K, L; Figure 2\u2014figure supplement 1D). In addition, DN3 cells from KO mice also generated fewer \u03b3\u03b4 T cells, despite a higher percentage, in comparison to WT controls after culturing for 4 days (Figure 2\u2014figure supplement 2A\u2013C). Together, we demonstrate that Zfp335 intrinsically regulates thymocyte development from DN to DP stage.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/75508/elife-75508-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic overview of the in vitro OP9-DL1 stromal coculture assay for T-cell differentiation from WT (CD45.1+) and KO (CD45.2+) DN3 thymocytes to DP and SP thymocytes. (B\u2013D) WT and KO DN3 thymocytes were cultured with OP9-DL1 feeder cells in vitro in the presence of IL-7 (1 ng/ml) and Flt3L (5 ng/ml) for 2 and 4 days. The DN and DP thymocytes were measured by flow cytometry (n = 3). (B) Representative FACS plots of DN, DP, CD4+, and CD8+ thymocytes. (C) The percentages of DN, DP, CD4+, and CD8+ thymocytes 2 days post culture in vitro. (D) The percentage of DN, DP, CD4+, and CD8+ thymocytes 4 days post culture in vitro. (E\u2013G) A mixed population of WT and KO DN3 thymocytes at a 1:4 ratio was cocultured with OP9-DL1 feeder cells in vitro in the presence of IL-7 (1 ng/ml) and Flt3L (5 ng/ml) for 2 and 4 days. The DN and DP thymocytes were phenotyped by flow cytometry (n = 3). (E) Representative FACS plots of DN, DP, CD4+, and CD8+ thymocytes. (F) Percentages of DN, DP, CD4+, and CD8+ thymocytes 2 days post culture in vitro. (G) Percentages of DN, DP, CD4+, and CD8+ thymocytes 4 days postculture in vitro. (H) Schematic overview of the in vivo bone marrow chimeric mice model for T-cell differentiation from WT (CD45.1+) and KO (CD45.2+) progenitors cells to DP and SP thymocytes. (I, J) Full chimeric mice were generated by transplanting WT (CD45.1+) or KO (CD45.2+) bone marrow progenitor cells into lethally irradiated (8.5 Gy) WT recipient mice (CD45.1+CD45.2+). Six weeks after transplantation, thymi from recipient mice were harvested. (I) Representative FACS plots of DN, DP, CD4+, and CD8+ thymocytes. (J) The percentages of DN, DP, CD4+, and CD8+ thymocytes. (K, L) Full chimeric mice were generated by transplanting a mixed population of WT (CD45.1+) and KO (CD45.2+) bone marrow progenitor cells at a 1:4 ratio into lethally irradiated WT recipients (CD45.1+CD45.2+) with 8.5 Gy. Six weeks after transplantation, thymi from recipient mice were harvested. (K) Representative FACS plots of DN, DP, CD4+, and CD8+ thymocytes. (L) Percentages of DN, DP, CD4+, and CD8+ thymocytes. Results represent three independent experiments. n = 4 mice per group. *p < 0.05, **p < 0.01, ***p < 0.001, and ****p < 0.0001.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75508/elife-75508-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) WT and KO DN3 thymocytes were cultured with OP9-DL1 feeder cells in vitro in the presence of IL-7 (1 ng/ml) and Flt3L (5 ng/ml) for 2 and 4 days. Thymocytes were analyzed by flow cytometry. The numbers of DN, DP, CD4+, and CD8+ thymocytes 2 days (left) and 4 days (right) post culture in vitro (n = 3). (B) WT and KO DN3 thymocytes were mixed and cocultured in the in vitro development model. The numbers of DN, DP, CD4+, and CD8+ thymocytes 2 and 4 days post culture (n = 3). (C) Full chimeric mice were generated by transplanting WT (CD45.1+) or KO (CD45.2+) bone marrow progenitor cells into lethally irradiated (8.5 Gy) WT recipient mice (CD45.1+CD45.2+). Six weeks after transplantation, thymi from recipient mice were harvested. The numbers of DN, DP, CD4+, and CD8+ thymocytes are indicated (n = 4). (D) WT and KO mixed bone marrow chimeric mice were generated and thymi from recipient mice were harvested. The numbers of DN, DP, CD4+, and CD8+ thymocytes are indicated (n = 4). Results shown represent three independent experiments. *p < 0.05, **p < 0.01, ***p < 0.001, and ****p < 0.0001.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/75508/elife-75508-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** WT and KO DN3 thymocytes were cultured with OP9-DL1 feeder cells in vitro in the presence of IL-7 (1 ng/ml) and Flt3L (5 ng/ml) for 2 and 4 days. The \u03b3\u03b4 T cells were measured by flow cytometry (n = 3). (A) Representative FACS plots of \u03b3\u03b4 T cells. The percentages of \u03b3\u03b4 T cells on day 2 (B) and day 4 (C). Data are representative of at least three independent experiments shown as the mean \u00b1 standard error of the mean (SEM). Two-tailed, unpaired t-tests were used for statistical analyses; *p < 0.05 and ***p < 0.001.\n\n### Loss of Zfp335 blocks the transition from DN3 to DN4 stage\n\nWe further examined the impact of Zfp335 deletion on DN thymocyte development. Staining of CD44 and CD25 on pregated lineage (CD4/CD8/TCR\u03b2/TCR\u03b4/NK1.1/CD19/CD11b/CD11c)-negative thymocytes was performed in WT and KO mice. The results showed that a higher percentage of CD44\u2212CD25+ DN3 cells but a lower percentage of CD44\u2212CD25\u2212 DN4 cells were found in KO group compared to WT group (Figure 3A, B), in which the numbers of both DN3 and DN4 thymocytes were decreased (Figure 3C). The developmental blockade from DN3 to DN4 in Zfp335-deficient cells was verified by in vitro coculture assays on day 2 using OP9-DL1 cultured with WT and KO DN3 cells, respectively (Figure 3D, E) or mixed at a 1:4 ratio (Figure 3F, G) as described above. The in vivo bone marrow chimera models further confirmed the development block at the DN3 stage (Figure 3H\u2013K), indicating that Zfp335 is indispensable for DN3 to DN4 transition during early-stage differentiation.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/75508/elife-75508-fig3-v2.jpg)\n\n**Figure 3.:** (A\u2013C) Thymi were harvested from 6- to 8-week-old WT and KO mice. The different stages of DN thymocytes in WT and KO mice were measured by flow cytometry (n = 4). (A) Representative FACS plots of DN1 (CD25\u2212CD44+), DN2 (CD25+CD44+), DN3 (CD25+CD44\u2212), and DN4 (CD25\u2212CD44\u2212) thymocytes. (B) The percentages of DN3 and DN4 thymocytes. (C) The numbers of DN3 and DN4 thymocytes. (D\u2013E) WT and KO DN3 thymocytes were cultured with OP9-DL1 feeder cells in vitro in the presence of IL-7 (1 ng/ml) and Flt3L (5 ng/ml) for 2 days. The expression of CD44 versus CD25 was measured by flow cytometry (n = 3). (D) Representative FACS plots of DN3 and DN4 thymocytes. (E) The ratio of DN3 to DN4 thymocytes 2 days post culture in vitro. (F\u2013G) A mixed population of WT and KO DN3 thymocytes at a 1:4 ratio was cocultured with OP9-DL1 feeder cells in vitro in the presence of IL-7 (1 ng/ml) and Flt3L (5 ng/ml) for 2 days. The expression of CD44 versus CD25 was measured by flow cytometry (n = 3). (F) Representative FACS plots of DN3 and DN4 thymocytes. (G) The ratio of DN3 to DN4 thymocytes 2 days post culture in vitro. (H, I) Full chimeric mice were generated by transplanting WT (CD45.1+) or KO (CD45.2+) bone marrow progenitor cells into lethally irradiated (8.5 Gy) WT recipients (CD45.1+CD45.2+). Six weeks after transplantation, thymi from recipient mice were harvested. The expression of CD44 versus CD25 was measured by flow cytometry (n = 4). (H) Representative FACS plots of DN3 and DN4 cells. (I) The ratio of DN3 to DN4 thymocytes. (J, K) Full chimeric mice were generated by transplanting a mixed population of WT (CD45.1+) and KO (CD45.2+) bone marrow progenitor cells at a 1:4 ratio into lethally irradiated (8.5 Gy) WT recipient mice (CD45.1+CD45.2+). Six weeks after transplantation, thymi from recipient mice were harvested. The expression of CD44 versus CD25 was measured by flow cytometry (n = 4). (J) Representative FACS plots of DN3 and DN4 thymocytes. (K) The ratio of DN3 to DN4 thymocytes. Results represent three independent experiments. *p < 0.05, **p < 0.01, and ***p < 0.001.\n\n### Ablation of Zfp335 promotes apoptosis in thymocytes\n\nDuring the \u03b2-selection, efficient proliferation of pre-T cells is necessary for DN to DP progression (Kreslavsky et al., 2012), during which the pre-TCR signal functions as a positive regulator of thymocyte survival, allowing for differentiation from pre-T cells into DP thymocytes. We sought to examine whether the defect in Zfp335 KO thymocyte development is due to impaired proliferation or survival. The in vivo BrdU incorporation assay showed comparable or even higher percentages of BrdU+ DN3 and DN4 cells (Figure 4A, B) as well as Ki67+ DN3 and DN4 cells (Figure 4\u2014figure supplement 1). Nevertheless, when we examined thymocyte apoptosis, KO mice showed a remarkably higher percentages of Annexin V+ DN3 and DN4 cells compared to WT cells (Figure 4C, D). After coculture with OP9-DL1 for 4 days, both Zfp335-deficient DN3 and DN4 cells showed an increased percentage of Annexin V+ cells (Figure 4E, F). Further examination of the transition between the DN3a and DN3b stages found that the frequencies of both DN3a and DN3b were comparable between WT and Zfp335-deficient groups (Figure 4\u2014figure supplement 2A\u2013C). However, both cell populations showed enhanced cell apoptosis in Zfp335-deficient cells (Figure 4\u2014figure supplement 2D\u2013F), indicating that Zfp335 regulates thymocyte apoptosis in a TCR-independent manner. Moreover, in mixed bone marrow chimeras, Zfp335-deficient DN3 and DN4 cells also displayed significantly higher Annexin V+ cells (Figure 4G, H), indicating an intrinsic role of Zfp355 in regulating thymocyte survival.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/75508/elife-75508-fig4-v2.jpg)\n\n**Figure 4.:** (A, B) Thymi were harvested from 6- to 8-week-old WT and KO mice. The expression of BrdU in DN3 and DN4 thymocytes from WT and KO thymi was measured by flow cytometry (n = 3). (A) Representative FACS plots of BrdU expression in DN3 and DN4 thymocytes. (B) The percentages of BrdU+ thymocytes in DN3 and DN4 cells. (C, D) The binding of Annexin V in DN3 and DN4 thymocytes from WT and KO thymi was measured by flow cytometry (n = 3). (C) Representative FACS plots of Annexin V binding in DN3 and DN4 thymocytes. (D) The percentages of Annexin V+ DN3 and DN4 cells. (E, F) A mixed population of WT and KO DN3 thymocytes at a 1:4 ratio was cocultured with OP9-DL1 feeder cells in vitro in the presence of IL-7 (1 ng/ml) and Flt3L (5 ng/ml) for 4 days. The binding of Annexin V was measured by flow cytometry (n = 3). (E) Representative FACS plots of Annexin V+ DN3 and DN4 cells. (F) The percentage of Annexin V+ DN3 and DN4 cells. (G, H) Full chimeric mice were generated by transplanting a mixed population of WT (CD45.1+) and KO (CD45.2+) bone marrow progenitor cells at a 1:4 ratio into lethally irradiated WT recipient mice (CD45.1+CD45.2+) with 8.5 Gy. Five weeks after transplantation, thymi from recipient mice were harvested. The binding of Annexin V was measured by flow cytometry (n = 4). (G) Representative FACS plots of Annexin V+ DN3 and DN4 cells. (H) The percentage of Annexin V binding in DN3 and DN4 thymocytes. Results represent three independent experiments. **p < 0.01 and ****p < 0.0001.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75508/elife-75508-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A, B) Thymi from WT and KO mice were harvested. The expressions of Ki67 in DN3 and DN4 thymocytes from WT and KO thymi was measured by flow cytometry (n = 3). (A) Representative FACS plots of Ki67 expression in DN3 and DN4 thymocytes. (B) The percentages of Ki67+ thymocytes in DN3 and DN4 cells. Data are representative of at least three independent experiments shown as the mean \u00b1 standard error of the mean (SEM). Two-tailed, unpaired t-tests were used for statistical analyses; *p < 0.05.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/75508/elife-75508-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Representative FACS plots of WT and Zfp335 KO DN3a and DN3b cells gated in DN3 thymocytes from 6- to 8-week-old mice. The percentages of DN3a (B) and DN3b (C) cells in (A). (D) Histograms showing the Annexin V expression in WT and Zfp335 KO DN3a and DN3b thymocytes. The percentages of Annexin V+ DN3a (E) and DN3b (F) cells in (D). Results represent three independent experiments. n = 3 per group. **p < 0.01.\n\n### Ectopic expression of TCR\u03b1\u03b2 overcomes DN3 stage block in Zfp335-deficient mice\n\nThe pre-TCR signal-controlled \u03b2-selection is essential for thymocyte differentiation from DN3 to DN4 stage (Zhao et al., 2019). We then examined the expression of genes involved in the pre-TCR complex in DN3 and DN4 cell populations. The expression of Ptcra (encoding pT\u03b1) was slightly increased while Trbc1, Trbc2, and Cd3e in DN3 and DN4 cells were comparable in WT and KO group (Figure 5\u2014figure supplement 1A, B). Additionally, the expression of intracellular CD3 (iCD3) was also unaffected in both Zfp335-deficient DN3 and DN4 cells (Figure 5\u2014figure supplement 2A, B). Interestingly, flow cytometry analysis showed no substantial difference in iTCR\u03b2 expression between WT and KO DN3 cells, whereas Zfp335-deficient mice displayed a significant decrease in the percentage of iTCR\u03b2+ DN4 cells (Figure 5A, B). To further address whether Zfp335 deficiency affects TCR\u03b2 expression, we compared differential usage of TCR\u03b2 in DN4 cells between WT and KO mice, in which the expression of TCR V\u03b25, V\u03b26, V\u03b28, and V\u03b212 were decreased concomitantly (Figure 5C\u2013F). However, genomic DNA analysis for V-DJ\u03b25 and V-DJ\u03b28 rearrangements showed no difference between WT and KO DN3 cells (Figure 5\u2014figure supplement 3). Thus, the reduced iTCR\u03b2 expression may be a consequence of protein degradation.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/75508/elife-75508-fig5-v2.jpg)\n\n**Figure 5.:** (A, B) Thymi were harvested from 6- to 8-week-old WT and KO mice. The expression of iTCR\u03b2 in DN3 and DN4 thymocytes was measured by flow cytometry (WT n = 3; KO n = 4). (A) Representative FACS plots of iTCR\u03b2 expression in DN3 and DN4 thymocytes. (B) Percentages and numbers of iTCR\u03b2+ thymocytes in DN3 and DN4 cells. Representative FACS plots of intercellular TCR V\u03b25 (C), V\u03b26 (D), V\u03b28 (E), and V\u03b212 (F) expression in DN4 cells from WT and KO mice. (G\u2013I) Thymi from WT, KO, OT1+ (OT1Tg), and OT1+LckCre+Zfp335fl/fl (OT1Tg KO) mice were harvested. The expressions of iTCR\u03b2 in DN3 (up) and DN4 (down) thymocytes were measured by flow cytometry (WT n = 3; KO n = 5; OT1Tg n = 3; OT1Tg KO n = 5). (G) Representative FACS plots of iTCR\u03b2 expression in DN3 and DN4 thymocytes. (H) The percentage of iTCR\u03b2+ DN3 and DN4 cells in WT, KO, OT1Tg, and OT1Tg KO mice. (I) The numbers of iTCR\u03b2+ DN3 and DN4 cells in WT, KO, OT1Tg, and OT1Tg KO mice. (J\u2013L) The different stages of DN thymocytes in WT, KO, OT1Tg, and OT1Tg KO mice were measured by flow cytometry (WT n = 3; KO n = 5; OT1Tg n = 3; OT1Tg KO n = 5). (J) Representative FACS plots of DN3 and DN4 thymocytes. (K) The percentages of DN3 and DN4 thymocytes. (L) The numbers of DN3 and DN4 thymocytes. (M, N) The different stages of thymocyte development in WT, KO, OT1Tg, and OT1Tg KO mice were measured by flow cytometry (WT n = 3; KO n = 5; OT1Tg n = 3; OT1Tg KO n = 5). (M) Representative FACS plots of thymocytes. (N) The percentages of DN, DP, CD4+CD8\u2212, and CD4\u2212CD8+ thymocytes. Results represent three independent experiments. n = 3 per group. *p < 0.05, **p < 0.01, ***p < 0.001, and ****p < 0.0001.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75508/elife-75508-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** qPCR analysis of Ptcr\u03b1, Trbc1,Trbc2, and CD3e expression in DN3 (A) and DN4 (B) cells from WT and KO mice.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/75508/elife-75508-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Representative FACS plots of iCD3 expression in DN3 and DN4 thymocytes. (B) The percentages of iCD3+ DN3 and DN4 cells in WT and KO mice. Data are representative of at least three independent experiments shown as the mean \u00b1 standard error of the mean (SEM). Two-tailed, unpaired t-tests were used for statistical analyses, WT n = 3; KO n = 4.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/75508/elife-75508-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** PCR analysis of TCR\u03b2 gene rearrangements. Genomic DNA isolated from thymocytes of B6, recombinase-activating gene-2-deficient (Rag2\u2212/\u2212), WT, and KO mice was amplified with primers that detect rearrangements both V\u03b25 and V\u03b28. Data are representative of three replicates.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/75508/elife-75508-fig5-figsupp4-v2.jpg)\n\n**Figure 5\u2014figure supplement 4.:** (A) Representative FACS plots of Annexin V expression in DN3 and DN4 thymocytes from WT, KO, OT1Tg, and OT1Tg KO mice. (B, C) The percentages of Annexin V+ DN3 and DN4 cells in each group in (A). Results shown represent three independent experiments. **p < 0.01, ***p < 0.001, and ****p < 0.0001.\n\n![Figure 5\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/75508/elife-75508-fig5-figsupp5-v2.jpg)\n\n**Figure 5\u2014figure supplement 5.:** The numbers of DN, DP, CD4+CD8\u2212, and CD4\u2212CD8+ thymocytes in WT, KO, OT1Tg, and OT1Tg KO mice were measured (WT n = 3; KO n = 5; OT1Tg n = 3; OT1Tg KO n = 5). **p < 0.01, ***p < 0.001, and ****p < 0.0001.\n\nGiven that Zfp355 deficiency led to diminished iTCR\u03b2 expression in DN4 cells, we next investigated the effect of TCR overexpression on aberrant thymocyte development caused by Zfp335 deficiency. Offspring (LckCre+Zfp335fl/flOT1+) of LckCre+Zfp335fl/fl mice crossed to OT1 transgenic (Tg) mice was generated to constitutively express Tcra-V2 and Tcrb-V5 Tg gene (OT1Tg KO). Notably, forced expression of \u03b1\u03b2TCR successfully restored the decreased percentage of iTCR\u03b2+ DN4 cells in the KO mice, despite with little impact on the number of iTCR\u03b2+ DN4 cells (Figure 5G\u2013I). Importantly, developmental arrest at the DN3 stage in Zfp335-deficient mice was fully rescued by OT1 transgene (Figure 5J\u2013L). Unfortunately, DN3 and DN4 cells from OT1Tg KO mice still exhibited a similar degree of apoptosis with Zfp335-deficient cells (Figure 5\u2014figure supplement 4), suggesting Zfp335 affects thymocyte apoptosis in a TCR-independent manner. Consistently, the proportions of DN, DP, CD4, and CD8 were still comparable in KO and OT1Tg KO mice (Figure 5M, N; Figure 5\u2014figure supplement 5), demonstrating that the aberrant DP development has not yet been restored by \u03b1\u03b2TCR overexpression.\n\n### Zfp335 directly targets Bcl6 and Rorc in DN thymocytes\n\nTo address the underlying molecular mechanisms of Zfp335-mediated thymocyte development, we performed comprehensive RNA-seq analysis comparing DN4 cells from WT and KO mice. Volcano plot showed that Zfp335-deficient DN4 cells had a total 566 downregulated and 899 upregulated genes (fold change >1.25, p < 0.05) (Figure 6A, Supplementary file 1). Gene ontology (GO) analysis highlighted a large fraction of genes downregulated in KO group belonging to lymphocyte differentiation and apoptotic pathways (Figure 6B). Prominently downregulated genes associated with lymphocyte differentiation and apoptosis were summarized in the heatmap (Figure 6C). To further determine genes directly regulated by Zfp335, we analyzed Zfp335 by chromatin immunoprecipitation followed by deep sequencing (ChIP-seq). We screened a total of 2797 Zfp335-binding sites (Supplementary file 2) and the prevalence of binding peaks across genomic regions was displayed as a pie chart (Figure 6\u2014figure supplement 1). To identify the Zfp335-targeting candidates, 119 profoundly downregulated genes were further selected out by a cutoff of twofold change, and 22 genes were overlapped with Zfp335-targeting genes from ChIP-seq data (Figure 6\u2014figure supplement 2A, Supplementary file 3). Among these genes, top 10 genes were listed based upon their expression level from RNA-seq result (Figure 6\u2014figure supplement 2B). qPCR analysis was performed to confirm their downregulation in KO DN4 cells (Figure 6\u2014figure supplement 2C). Next, we focused on genes related to lymphocyte differentiation and apoptosis. In line with RNA-seq results (Figure 6C), qPCR analysis verified that Bcl6 and Rorc were significantly downregulated in KO DN4 cells (Figure 6D). Importantly, Zfp335 directly targeted the promoter regions of Bcl6 and Rorc in ChIP-seq analysis (Figure 6E), which were further verified by luciferase assay (Figure 6F). Taken together, in depth genomic analysis of DN thymocytes supports that Zfp335 directly regulates the transcription of Bcl6 and Rorc.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/75508/elife-75508-fig6-v2.jpg)\n\n**Figure 6.:** (A) Volcano plot depicting log2 (fold change) (x-axis) and \u2212log10 (p value) (y-axis) for differentially expressed genes (FC >1.25, p < 0.05) in DN4 thymocytes sorted from WT and KO mice; upregulated (red) and downregulated (blue). n = 2 per group. (B) Gene ontology (GO) analysis of genes that downregulated in Zfp335-deficient DN4 thymocytes, showing the GO terms related to lymphocyte differentiation and apoptosis (left), the number of genes overlapped with database from the indicated terms (middle left column), p values (middle column) and Q values (middle right column) and genes annotated to the indicated term (right). (C) Heatmap of representative genes related to lymphocyte differentiation and apoptosis. The scale ranges from minimum (green boxes) to medium (black boxes) to maximum (red boxes) relative expression. (D) The mRNA level of Bcl6 (top) and Rorc (bottom) in DN4 thymocytes from WT and KO mice (n = 3). (E) ChIP-seq analysis for binding of Zfp335 to the Bcl6 and Rorc loci in wild-type DN4 cells. (F) Luciferase assay for the binding of different domains of Zfp335 to the promoter regions of Bcl6 and Rorc. The pGL4.16 plasmid was transfected into 293T cells together with MSCV vector carrying different domains (n = 3). Data represent three independent experiments. *p < 0.05, **p < 0.01, and ****p < 0.0001.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75508/elife-75508-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** The distribution of Zfp335-binding peaks in various regions of the genome was calculated.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/75508/elife-75508-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Venn diagram depicting the overlapping portion of differentially expressed genes in RNA-seq (red) and Zfp335-binding regions in ChIP-seq (blue). One hundred and nineteen profoundly downregulated genes from RNA-seq were selected out by a cutoff of twofold change. (B) The shared top 10 overlapped genes from the RNA- and ChIP-seq. (C) qPCR analysis of the top 10 overlapped genes depicted in (B). **p < 0.01, ***p<0.001 and ****p < 0.0001.\n\n### Defects in thymocyte development caused by Zfp335 deficiency can be rescued by Bcl6 and Rorc\n\nTo determine whether Bcl6 and Rorc participate in the regulation of thymocyte development downstream of Zfp335, overexpression of Bcl6 and Rorc was conducted in vitro in the thymocyte development model (Figure 7A). DN3 cells from KO mice were cocultured with OP9-DL1 cells and transduced with retrovirus encoding Mock-GFP, Zfp335-GFP, Bcl6-GFP, or Rorc-GFP. After 3.5 days, overexpression of Bcl6 and Rorc resulted in a substantial DP generation, particularly in the Bcl6 group, resulting in a similar DP proportion to that in Zfp335-overexpressing cells (Figure 7B, C). Of note, overexpression of Psmg2, Dctn1, Ankle2, Cep76, Fgf13, and Ddx31 identified in the qPCR results (Figure 6\u2014figure supplement 2B, C) in KO DN3 cells did not restore DP generation in vitro (Figure 7\u2014figure supplement 1). Importantly, enhanced expression of Bcl6 in DN3 cells rescued DN thymocyte apoptosis (Figure 7D, E), while overexpression of both Bcl6 and Rorc rescued DP thymocytes from enhanced apoptosis (Figure 7F, G). p53, negatively regulated by Bcl6, is involved in lymphocyte apoptosis (Haks et al., 1999; Guidos et al., 1996; Mombaerts et al., 1995). Thus, we crossed Zfp335 KO strain with Trp53 KO strain to obtain double knockout mice, in which Trp53 deletion resulted in a partial recovery of DP percentage, but not cell number (Figure 7\u2014figure supplement 2), further supporting the role of Bcl6 in Zfp335-controlled thymocyte survival. Together, these data demonstrate that Zfp335 controls DN thymocyte survival through direct regulation of Bcl6 and Rorc expression.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/75508/elife-75508-fig7-v2.jpg)\n\n**Figure 7.:** (A) Schematic overview of the in vitro gene overexpression in KO DN3 thymocytes and following T-cell differentiation in OP9-DL1 coculture system. (B, C) Zfp335-deficient DN3 thymocytes (KO) were cultured with OP9-DL1 feeder cells in vitro, then transduced with either Mock, Zfp335-, Bcl6-, or Rorc-overexpressing vector for 3.5 days. The different stages of thymocyte development from GFP-positive cells were measured by flow cytometry (n = 3). (B) Representative FACS plots of DN and DP thymocytes from the indicated groups. (C) The percentage of DP thymocytes from GFP-positive cells. (D\u2013G) KO DN3 thymocytes were cultured with OP9-DL1 feeder cells in vitro, then transduced with either Mock, Zfp335-, Bcl6-, or Rorc-overexpressing vector for 3.5 days. The expressions of Annexin V in DN and DP thymocytes were measured by flow cytometry (n = 3). (D) Representative FACS plots of Annexin V+ DN thymocytes from the indicated groups. (E) The percentage of Annexin V+ DN thymocytes from GFP-positive cells. (F) Representative FACS plots of Annexin V+ DP thymocytes from the indicated groups. (G) The percentage of Annexin V+ DP thymocytes from GFP-positive cells. Results shown represent three independent experiments. **p < 0.01, ***p < 0.001, and ****p < 0.0001.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75508/elife-75508-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Zfp335 deficiency DN3 thymocytes (KO) were cultured with OP9-DL1 feeder cells in vitro, then transduced with the top 10 overlapped genes overexpression vector for 3.5 days. The different stages of thymocyte development were measured by flow cytometry.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/75508/elife-75508-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** Thymi from WT, KO, and Trp53KOLckCre+Zfp335fl/fl (Trp53DKO) mice were harvested. The different stages of thymocyte development in WT, KO, and Trp53DKO mice were measured by flow cytometry (WT n = 4; KO n = 4; Trp53DKO n = 3). (A) Representative FACS plots of thymocytes. (B) The percentages of DN, DP, CD4+CD8\u2212, and CD4\u2212CD8+ thymocytes. (C) The numbers of DN, DP, CD4+CD8\u2212, and CD4\u2212CD8+ thymocytes. Data are representative of at least three independent experiments shown as the mean \u00b1 standard error of the mean (SEM). Two-tailed, unpaired t-tests were used for statistical analyses; *p < 0.05, **p < 0.01, ***p < 0.001, and ****p < 0.0001.\n\n![Figure 7\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/75508/elife-75508-fig7-figsupp3-v2.jpg)\n\n**Figure 7\u2014figure supplement 3.:** WT and Zfp335 KO DN3 cells were isolated and infected with Mock (WT and KO), Zfp335, Bcl6, and Rorc (KO) overexpression retrovirus. Three days later, iTCR\u03b2 expression was examined. Histogram plot (A) and mean fluorescence intensity (MFI) (B) of iTCR\u03b2 expression in each group (n = 3). *p < 0.05, **p < 0.01, and ***p < 0.001.\n\n## Discussion\n\nIn this study, we reveal that Zfp335 is essential for thymocyte development, particularly during DN to DP transition. Zfp335 deficiency in T cells led to a significant loss of DP, CD4 SP, and CD8 SP cells while an accumulation of DN3 cells. Mechanistically, the developmental blockade is attributed to both impaired pre-TCR signal and increased susceptibility to apoptosis. Serving as a transcription factor, Zfp335 directly promotes Bcl6 and Rorc expression in DN thymocytes to ensure their survival during early development.\n\nZfp335 was previously demonstrated to be crucial for early embryonic development as homozygous deletion of this gene resulted in neonatal death (Garapaty et al., 2009). Conditional knockout of Zfp335 in neural system led to severely reduced cortical size and impaired neurogenesis. Mechanistically, Zfp335 was required for neural progenitor cell self-renewal and proliferation, and neuronal differentiation (Yang et al., 2012) and neuronal morphogenesis (Zhao et al., 2015). Besides, deficiency of naive T cells in mice carrying a hypomorph allele of Zfp335 (Zfp335bloto) uncovered its role in immune system (Han et al., 2014). So far, there is still very limited information about the functions of Zfp335 in other aspects of immune system. Here, we found that Zfp335 is absolutely required for multiple steps of early T-cell development. Of note, it will be worth investigating whether and how Zfp335 is involved in the regulation of mature T-cell differentiation and functions under static and immunized conditions in future.\n\nWe have shown that Zfp335 expression was upregulated specifically in DN3 thymocytes and significantly decreased in the subsequent stages, suggesting a critical role at the DN3 stage. Of note, loss of Zfp335 led to a dramatic reduction in both thymus size and thymocyte number. The accumulation of DN3 cells results from an intrinsic mechanism that hinders the transition from DN3 to DN4 stage, leading to the reduction of DP thymocytes and mature T cells in the periphery. These data are in line with another recent study reporting that Zfp335 mutation led to a reduction in peripheral T cells as a result of defective naive T cells and SP thymocytes (Han et al., 2014). However, given the intact thymic selection with Zfp335 mutation, the report was inconsistent with our observation of decreased \u03b2-selection with Zfp335 deficiency. The discrepancy is likely due to the different approaches used to disrupt Zfp335 function since a single-nucleotide missense mutation of Zfp335 may affect its function differently. Nevertheless, by knocking out the entire Zfp335 protein, we provide evidence that Zfp335 is indispensable for early thymocyte development.\n\nThymocyte \u03b2-selection is a critical developmental checkpoint allowing for the progression from DN3 to DN4 stage and the maintenance of DP cell numbers, which is primarily dependent on TCR\u03b2 and pre-TCR signals constituted with a functional iTCR\u03b2 paired with a pT\u03b1 chain (Yamasaki and Saito, 2007). Pre-TCR signaling regulates thymocytes differentiation, proliferation, and survival in the full developmental process (Koch and Radtke, 2011). In addition, there are reports that other pathways or transcription factors coupled with or independent of conventional pre-TCR signaling are found to play important roles in the process (Ciofani et al., 2004; Pajerowski et al., 2009; Zikmund et al., 2019). While Zfp335-deficient DN4 cells exhibited no defects in the rearrangement of TCR\u03b2 chain genes and pT\u03b1 gene expression, our results clearly demonstrated that Zfp335 deficiency markedly impaired iTCR\u03b2 expression and led to an unbiased reduction of the majority of V\u03b2 genes in DN4 populations. Future studies will investigate the mechanisms how Zfp335 regulates iTCR\u03b2 expression. Importantly, forced iTCR\u03b2 expression in DN3 and DN4 cells by transduction of OT1-TCR completely rescued the developmental impairment during the DN3-DN4 transition in Zfp335-deficient mice despite the failure to rescue the DN3, DN4, and DP population size. This suggests that Zfp335 controls the DN3\u2013DN4 transition dependent on pre-TCR signals, but other mechanisms may also regulate the DP population size.\n\nThe large population of DP thymocytes is maintained by both cell proliferation and survival mechanisms. Zfp335-deficient DN3 and DN4 cells showed slightly higher or unchanged incorporation of BrdU, suggesting that cell proliferation was not affected. However, our data revealed a significant increase in apoptosis in Zfp335-deficient DN3 and DN4 thymocytes. Transcriptomic analysis (RNA-seq and qPCR) unveiled the downregulation of Bcl6 and Rorc signaling which are critically involved in thymocyte apoptosis (Solanki et al., 2020; Xi et al., 2006). Indeed, we have demonstrated that Zfp335, a transcription factor, direct bound to the promoter regions of Bcl6 and Rorc genes. More importantly, enhanced expression of Bcl6 and Rorc could improve thymocyte survival and substantially restore the DP thymocyte population. Trp53 deletion resulted in a partial recovery of DP cells, further supporting the role of Bcl6 in Zfp335-controlled thymocyte survival. Of note, Zfp335 may also control thymocyte survival through directly regulating other targets.\n\nIn our study, Zfp335 is indispensable for thymocyte \u03b2-selection given that T-cell-specific deficiency in Zfp335 leads to impaired iTCR\u03b2 expression, blockade of thymocytes at DN stage as well as a substantial DN cell apoptosis. Though enhanced expression of TCR\u03b2 restores the developmental defect during DN3 to DN4 transition, it had little impact on the population size of DN3, DN4, and DP cells, suggesting the regulation of Zfp335 on DN cell apoptosis through mechanisms more than \u03b2-selection. Indeed, we provided the evidence that Zfp335-controlled DN cell survival through regulating Bcl6 and Rorc expression. Moreover, Zfp335 regulates TCR\u03b2 expression independent on Bcl6 and Rorc since overexpression of neither Bcl6 or Rorc in Zfp335-deficient DN3 thymocytes could restore the decreased iTCR\u03b2 expression (Figure 7\u2014figure supplement 3).\n\nSeveral key factors have been shown to involve in the regulation of T-cell developmental process from DN3 to DP stages. Notch signaling is required for early T-cell commitment and \u03b2-selection (Radtke et al., 2010; Ciofani and Z\u00fa\u00f1iga-Pfl\u00fccker, 2005; Hosokawa and Rothenberg, 2018), which is subsequently weaken by Bcl6 repression for the differentiation from DN to DP stage development (Solanki et al., 2020). Consistently, our results found that Zfp335 could directly target Bcl6, and Zfp335 deficiency led to decreased expression of Bcl6 and upregulation of Notch target genes such as Dtx1 and Notch1 (data not shown), which collectively contributing to the developmental block from DN to DP stage. In addition, Tcf1 plays a vital role in T-cell lineage commitment since Tcf1\u2212/\u2212 DN3 thymocytes failed to progress to DN4 and subsequent DP stage through regulating Bcl11b and Gata3 expression (Garcia-Perez et al., 2020). Bcl11b and Gata3 also differentially regulate the differentiation and survival of thymocytes at DN3, DN4, and subsequent ISP stages via TCR or/and survival signals (Inoue et al., 2006; Pai et al., 2003). However, we did not detect reduced expression of Tcf1, Bcl11b, or Gata3 in Zfp335-deficient DN4 cells, suggesting that Zfp335 regulates DN3 to DP thymocyte development independent on these molecules.\n\nIn conclusion, our study reveals that the C2H2 zinc finger protein Zfp335 plays a novel and crucial role during thymocyte development, specifically during the transition from DN to DP stage. Mechanistically, Zfp335 promotes Bcl6 and Rorc signaling to prevent thymocytes apoptosis and ensure the survival and differentiation of thymocytes. Collectively, we provide evidence that Zfp335 is essential for thymocyte development through both pre-TCR-dependent and -independent mechanisms.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>C57BL/6J background</td>\n      <td>Jackson Laboratory</td>\n      <td>Stock No. 000664</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>C57BL/6-Zfp335tm1Caw</td>\n      <td>Jackson Laboratory</td>\n      <td>Stock No. 022413</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>C57BL/6-Tg(TcraTcrb)1,100Mjb/J</td>\n      <td>Jackson Laboratory</td>\n      <td>Stock No. 003831</td>\n      <td>Common Name: OT-1</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>B6.Cg-Tg(Lck-cre)548Jxm/J</td>\n      <td>Jackson Laboratory</td>\n      <td>Stock No. 003802</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>C3Ou.129S2(B6)-Trp53tm1Tyj/J</td>\n      <td>Jackson Laboratory</td>\n      <td>Stock No. 002547</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-mouse CD4 APC/Cyanine7 (Rat monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat# 100414; RRID:AB_312699</td>\n      <td>cell surface staining 1:400</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-mouse CD8a PE (Rat monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat# 100708; RRID:AB_312747</td>\n      <td>cell surface staining 1:400</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-mouse CD8a Pacific Blue (Rat monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat# 100725; RRID:AB_493425</td>\n      <td>cell surface staining 1:400</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-mouse CD8a PE/Cyanine7 (Rat monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat# 100722; RRID:AB_312761</td>\n      <td>cell surface staining 1:400</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-mouse TCR V\u03b25.1, 5.2 PE (Mouse monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat# 139504, RRID:AB_10613279</td>\n      <td>cell surface staining 1:400</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-mouse TCR V\u03b26 PE (Rat monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat# 140004; RRID:AB_10643583</td>\n      <td>cell surface staining 1:400</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-mouse TCR V\u03b28.1, 8.2 PE (Mouse monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat# 140104; RRID:AB_10639942</td>\n      <td>cell surface staining 1:400</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-mouse TCR V\u03b212 PE (Mouse monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat# 139704; RRID:AB_10639729</td>\n      <td>cell surface staining 1:400</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-mouse TCR \u03b2 chain APC/Cyanine7 (Armenian Hamster monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat# 109220; RRID:AB_893624</td>\n      <td>cell surface staining 1:400</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-mouse TCR \u03b2 chain PE/Cyanine5 (Armenian Hamster monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat# 109210; RRID:AB_313433</td>\n      <td>cell surface staining 1:400</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-mouse TCR \u03b2 chain PE/Cyanine7 (Armenian Hamster monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat# 109222; RRID:AB_893625</td>\n      <td>cell surface staining 1:400</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-mouse TCR \u03b3/\u03b4 FITC (Armenian Hamster monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat# 118106; RRID:AB_313830</td>\n      <td>cell surface staining 1:400</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-mouse TCR \u03b3/\u03b4 PerCP/Cyaninne5.5 (Armenian Hamster monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat# 118118; RRID:AB_10612756</td>\n      <td>cell surface staining 1:400</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-mouse TCR \u03b3/\u03b4 APC (Armenian Hamster monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat# 118116; RRID:AB_1731813</td>\n      <td>cell surface staining 1:400</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-mouse/human CD44 PE/Cyanine7 (Rat monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat# 103030; RRID:AB_830787</td>\n      <td>cell surface staining 1:400</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-mouse CD25 PE (Rat monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat# 102008; RRID:AB_312857</td>\n      <td>cell surface staining 1:400</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-mouse CD25 PE/Cyanine5 (Rat monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat# 102010; RRID:AB_312859</td>\n      <td>cell surface staining 1:400</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-mouse CD4 FITC (Rat monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat# 100510; RRID:AB_312713</td>\n      <td>cell surface staining 1:400</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-mouse CD8a FITC (Rat monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat# 100706; RRID:AB_312745</td>\n      <td>cell surface staining 1:400</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-mouse TCR \u03b2 chain FITC (Armenian Hamster monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat# 109206; RRID:AB_313429</td>\n      <td>cell surface staining 1:400</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-mouse NK-1.1 FITC (Mouse monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat# 108706; RRID:AB_313393</td>\n      <td>cell surface staining 1:400</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-mouse CD19 FITC (Rat monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat# 115506; RRID:AB_313641</td>\n      <td>cell surface staining 1:400</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-mouse CD11b FITC (Rat monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat# 101206; RRID:AB_312789</td>\n      <td>cell surface staining 1:400</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-mouse CD11c FITC (Armenian Hamster monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat# 117306; RRID:AB_313775</td>\n      <td>cell surface staining 1:400</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-mouse TER-119/Erythroid Cells FITC (Rat monoclonal)</td>\n      <td>Biolegend</td>\n      <td colspan=\"2\">Cat# 116206; RRID:AB_313707</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-mouse TCR \u03b2 chain Pacific Blue (Armenian Hamster monoclonal)</td>\n      <td>Biolegend</td>\n      <td colspan=\"2\">Cat# 109226; RRID:AB_1027649</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-mouse CD45.1 APC/Cy7 (Mouse monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat# 110716; RRID:AB_313505</td>\n      <td>cell surface staining 1:400</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-mouse CD45.2 PE (Mouse monoclonal)</td>\n      <td>Biolegend</td>\n      <td colspan=\"2\">Cat# 109808; RRID:AB_313445</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-mouse CD45.2 APC (Mouse monoclonal)</td>\n      <td>Biolegend</td>\n      <td colspan=\"2\">Cat# 109814; RRID:AB_389211</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-mouse CD3 Pacific Blue (Armenian Hamster monoclonal)</td>\n      <td>Biolegend</td>\n      <td colspan=\"2\">Cat# 640918; RRID:AB_493645</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-mouse CD27 FITC (Armenian Hamster monoclonal)</td>\n      <td>Biolegend</td>\n      <td colspan=\"2\">Cat# 124208; RRID:AB_1236466</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-BrdU FITC (Mouse monoclonal)</td>\n      <td>Biolegend</td>\n      <td colspan=\"2\">Cat# 364104; RRID:AB_2564481</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-BrdU FITC (3D4)</td>\n      <td>Biolegend</td>\n      <td colspan=\"2\">Cat# 364104; RRID:AB_2564481</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-mouse Ki-67 PE (16A8)</td>\n      <td>Biolegend</td>\n      <td colspan=\"2\">Cat# 652404; RRID:AB_2561525</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Zfp335 antibody</td>\n      <td>Novus</td>\n      <td colspan=\"2\">Cat# NB100-2579</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Annexin V Pacific Blue</td>\n      <td>Biolegend</td>\n      <td colspan=\"2\">Cat# 640918; RRID:AB_1279044</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>DNaseI</td>\n      <td>Solarbio</td>\n      <td colspan=\"2\">Cat# D8071</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Fixation Buffer</td>\n      <td>Biolegend</td>\n      <td colspan=\"2\">Cat# 420,801</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Intracellular Staining Permeabilization Wash Buffer (10\u00d7)</td>\n      <td>Biolegend</td>\n      <td colspan=\"2\">Cat# 421,002</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>MojoSort Streptavidin Nanobeads</td>\n      <td>Biolegend</td>\n      <td colspan=\"2\">Cat# 480,016</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Fixation/Permeabilization Solution Kit with BD GolgiPlug</td>\n      <td>BD biosciences</td>\n      <td colspan=\"2\">Cat# 555,028</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>One-Day Chromatin Immunoprecipitation Kits</td>\n      <td>MILLIPORE</td>\n      <td colspan=\"2\">Cat# 17-10085</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Quick-RNA MicroPrep Kit</td>\n      <td>QIAGEN</td>\n      <td colspan=\"2\">Cat# R1051</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Fixation Buffer</td>\n      <td>Biolegend</td>\n      <td colspan=\"2\">Cat# 420,801</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FlowJo software v10.7</td>\n      <td>FlowJo LLC</td>\n      <td colspan=\"2\">https://www.flowjo.com/; RRID:SCR_008520</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GSEA</td>\n      <td>Broad Institute</td>\n      <td colspan=\"2\">https://www.broadinstitute.org/gsea; RRID:SCR_003199</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Prism8 (v8.1.0)</td>\n      <td>GraphPad Software</td>\n      <td colspan=\"2\">https://www.graphpad.com/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>RStudio</td>\n      <td>RStudio</td>\n      <td colspan=\"2\">https://rstudio.com/; RRID: SCR_000432</td>\n    </tr>\n  </tbody>\n</table>\n\n### Mice\n\nZfp335f/f, LckCre, Trp53DKO, and OT-1 strains were purchased from The Jackson Laboratory (Bar Harbor, ME, USA). LckCre mice were crossed with Zfp335f/f mice to generate LckCre+Zfp335f/f (KO) mice and LckCre+Zfp335+/+ (WT) mice. Mice aged 6\u20138 weeks were used for analyses in the study. All mice were housed in specific-pathogen-free conditions by the Xi\u2019an Jiaotong University Division of Laboratory Animal Research. All animal procedures were approved by the Institutional Animal Care and Use Committee of Xi\u2019an Jiaotong University.\n\n### Antibodies and reagents\n\nThe following antibodies and kits were purchased from Biolegend (San Diego, CA, USA): APC/Cy7 anti-CD4 (clone GK1.5), PE anti-CD8\u03b1 (clone 53\u20136.7), Pacific Blue anti-CD8\u03b1 (clone 53\u20136.7), PE/Cyanine7 anti-CD8\u03b1 (clone 53\u20136.7), PE anti-TCRV\u03b25.1, 5.2 (clone MR9-4), PE anti-TCRV\u03b26 (clone RR4-7), PE anti-TCRV\u03b28.1, 8.2 (clone MR5-2), PE anti-TCRV\u03b212 (clone MR11-1), APC/Cyanine7 anti-TCR\u03b2 (clone H57-597), PE/Cyanine5 anti-TCR\u03b2 (clone H57-597), PE/Cy7 anti-TCR\u03b2 (clone H57-597), FITC anti-TCR\u03b3\u03b4 (clone GL3), PE/Cyanine5 anti-TCR\u03b3\u03b4 (clone GL3), APC anti-TCR\u03b3\u03b4 (clone GL3), PE/Cy7 anti-CD44 (clone IM7), PE anti-CD25 (clone PC61), PE/Cyanine5 anti-CD25 (clone PC61), FITC anti-CD4 (clone GK1.5), FITC anti-CD8 (clone 53-6.7), FITC anti-TCR\u03b2 (clone H57-597), FITC anti-NK1.1 (clone PK136), FITC anti-CD19 (clone 6D5), FITC anti-CD11b (clone M1/70), FITC anti-CD11c (clone N418), FITC anti-TER-119/Erythroid Cells (TER-119), Pacific Blue anti-TCR\u03b2 (clone H57-597), APC/Cy7 anti-CD45.1 (clone A20), PE anti-CD45.2 (clone 104), APC anti-CD45.2 (clone 104), Pacific Blue anti-Annexin V (Cat # 640918), Pacific Blue anti-CD3 (clone 17A2), FITC anti-CD27 (clone LG.3A10), FITC anti-BrdU (clone Bu20a), and the Fixation/Permeabilization Solution Kit (Cat # 554722). PE anti-Ki67 monoclonal antibody (clone SolA15) was purchased from eBioscience (San Diego, CA, USA). Quick-RNA Microprep Kit (Cat # R1051) was obtained from Zymo Research (Irvine, CA, USA).\n\n### FACS analysis and Sorting\n\nLymphocytes from LckCre+Zfp335+/+ and LckCre+Zfp335fl/fl mice were isolated. For surface staining, single cell suspension was prepared. A total of 1 \u00d7 106 cells were stained in the dark at 4\u2103 for 30 min with indicated antibodies. The analysis was performed on a CytoFLEX flow cytometer (Beckman Coulter; Brea, CA, USA). DN3 (Lin\u2212CD25+CD44\u2212) and DN4 (Lin\u2212CD25\u2212CD44\u2212) cells were collected by BD FACSAria \u2161 cell sorter (BD Biosciences, San Jose, CA, USA). FACS data were recorded and analysed using CytExpert software (Version 2.3.0.84; Beckman Coulter; Indianapolis, IN, USA).\n\n### Intracellular staining\n\nDN and DP thymocytes were phenotyped using a combination of surface antibodies against lineage markers (CD4, CD8\u03b1, TCR\u03b2, TCR\u03b3\u03b4, NK1.1, CD19, CD11b, CD11c, and Ter119), together with CD44 and CD25 antibodies. For intracellular cytokine staining, the thymocytes were fixed and permeabilized using a Fixation/Permeabilization Solution Kit (Biolegend), followed by staining using indicated antibodies. The cells were analyzed on a CytoFLEX flow cytometer (Beckman Coulter).\n\n### Quantitative RT-PCR\n\nCell lysis was performed with RNA extraction and cDNA synthesis using Quick-RNA Microprep Kit (Zymo Research) and ReverTra Ace qPCR RT Master Mix Kit (TOYOBO), respectively. The qRT-PCR reactions were carried out using StepOnePlus Real-Time PCR Systems (ABI) with SYBR mixture (Genstar) to determine relative gene expression. The sequences for the primers are list in Supplementary file 4.\n\n### Bone marrow transplantation\n\nLineage-negative BM cells from CD45.1+ mice and LckCre+Zfp335fl/fl mice (CD45.2+) were sorted, and mixed at a 1:4 ratio and cotransferred into lethally irradiated (8.5 Gy) recipient mice (CD45.1+CD45.2+). Six weeks after bone marrow transplantation, thymocytes from recipient mice were harvested for FACS analysis.\n\n### In vitro OP9-DL1 cell coculture\n\nBoth Lin\u2212CD25+CD44\u2212 DN3 cells and Lin\u2212CD25\u2212CD44\u2212 DN4 cells were sorted from the thymi of LckCre+Zfp335+/+ and LckCre+Zfp335fl/fl mice and cocultured with OP9-DL1 feeder cells in \u03b1-MEM medium in the presence of IL-7 (1 ng/ml, PeproTech) and Flt3-L (5 ng/ml, PeproTech). On days 2 and 4, total cells were collected and stained with indicated antibodies for FACS analysis.\n\n### Retroviral transduction of DN3 thymocytes\n\nRetroviruses were produced from BOSC cells transfected with Mock-GFP, Zfp335-GFP, Bcl6-GFP, and Rorc-GFP retroviral plasmids. For retroviral transduction, Lin\u2212CD25+CD44\u2212 DN3 thymocytes were sorted by FACSAria flow cytometry (BD) and cocultured with OP9-DL1 feeder cells overnight in the presence of 1 ng/ml IL-7 and 5 ng/ml Flt3L. Retroviral infection was performed 16 hr later by centrifugation (2500 rpm for 90 min at 37\u00b0C) in the presence of retroviral supernatants and 8 \u00b5g/ml polybrene. After spinning, supernatants were replaced by \u03b1-MEM medium with 10% FCS supplemented with 1 ng/ml IL-7 and 5 ng/ml Flt3L. 3.5 days later, GFP+ cells were examined using flow cytometry analysis.\n\n### Luciferase assay\n\nTo assess whether Zfp335 regulates Bcl6 and Rorc by directly binding to their promoter regions, the DNA fragments were cloned into the pGL4.16 (luc2CP/Hgro) vector (Promega) which contains the luciferase reporter gene luc2CP. The pGL4.16 plasmid, control vector pGL4.74 (hRluc/TK) encoding the luciferase reporter gene hRluc (Renilla reniformis), along with plasmids expressing candidate genes were transfected separately into 293T cell line (ATCC). Forty-eight hours post-transfection, the luciferase activity of both Firefly and Renilla luciferase was measured using a Dual-Luciferase Reporter kit (Promega) on SYNERGY Neo2 multimode reader (BioTek).\n\n### RNA-seq library preparation and sequencing\n\nLin\u2212CD25\u2212CD44\u2212 DN4 cells were sorted from the thymi of LckCre+Zfp335+/+ and LckCre+Zfp335fl/fl mice. The DN4 cell numbers in each group were as followed: WT1, 8 \u00d7 105 cells pulled from 4 mice; WT2, 9 \u00d7 105 cells from 5 mice; KO1, 6.7 \u00d7 105 cells from 13 mice; KO2, 7 \u00d7 105 cells from 15 mice. RNA isolation was performed using the RNeasy Mini Kit (Qiagen) according to the manufacturer\u2019s protocol. RNA quality and quantity were detected by the Qubit RNA broad range assay in the Qubit Fluorometer (Invitrogen). After quality control using RNase-free agarose gel and Agilent 2100 (Agilent Technologies, Palo Alto, CA, USA), RNA-seq libraries were prepared by using 200 ng total RNA with TruSeq RNA sample prep kit (Illumina). Oligo(dT)-enriched mRNAs were fragmented randomly with fragmentation buffer, followed by first- and second-strand cDNA synthesis. After a series of terminal repair, the double-stranded cDNA library was obtained through PCR enrichment and size selection. cDNA libraries were sequenced with the Illumina Hiseq 2000 sequencer (Illumina HiSeq 2000 v4 Single-Read 50 bp) after pooling according to its expected data volume and effective concentration.\n\nTwo biological replicates were performed in the RNA-seq analysis. Raw reads were then aligned to the mouse genome (GRCm38) using Tophat2 RNA-seq alignment software, and unique reads were retained to quantify gene expression counts from Tophat2 alignment files. Data were analyzed and preprocessed in the R environment. Differential expression analysis was performed using R package DESeq2 (adjusted p value < 0.05 and fold change >1.25). Heat maps and volcano plots were visualized using the R package.\n\n### ChIP-seq library preparation and sequencing\n\nBoth Lin\u2212CD25+CD44\u2212 DN3 cells and Lin\u2212CD25\u2212CD44\u2212 DN4 cells were sorted from the thymi of 100 WT mice by FACSAria flow cytometry (BD). Anti-Zfp335 antibody (Novus) and Millipore 17-10,085 ChIP kit were used in the ChIP assay. Immunoprecipitated DNA was used for Illumina ChIP-seq sample preparation. In brief, 5 \u00d7 107 cells were crosslinked to chromatin with 1% formaldehyde. Reaction was stopped with 0.125 M glycine. Cells were then resuspended in cold nuclear lysis buffer and sonicated to obtain DNA with ~300\u2013500 bp size, followed by precipitation by incubation with immunoprecipitation-grade anti-Zfp335 antibody and Magnetic Protein A/G Beads overnight. The following day, beads were sequentially washed by low-salt, high-salt, LiCl, and TE buffers. Bound complexes were eluted in 150 \u03bcl of elution buffer at 62\u00b0C for 2 hr with shaking, followed by reversal of formaldehyde crosslinking at 95\u00b0C for 10 min. DNA was eventually purified with spin columns.\n\nThe concentration of immunoprecipitated DNA was detected by the Qubit DNA broad range assay in the Qubit Fluorometer (Invitrogen). 10 ng immunoprecipitated DNA was prepared for sequencing using the Illumina ChIP-seq sample preparation protocol. Blunt-end DNA fragments were ligated to Illumina adaptors, amplified, and sequenced using the SE150 model. Raw reads were filtered firstly to remove low-quality or adaptor sequences by SOAPnuke (version 1.5.6). Clean reads were mapped to the reference genome of GRCm39 with SOAPaligner/soap2 (version 2.21t) using default settings. The MACS2 software (Version 2.1.1) was used to process peak calling. MACS (Model-based Analysis of ChIP-Seq) is a commonly used computational method which is designed to identify peaks from ChIP-seq data. MACS assigns every candidate region an enrichment p value, and targeted genes are identified as final peaks passing the threshold p value < 1e\u22125 (Feng et al., 2012; Feng et al., 2011). The different enrichment peaks from different samples were plotted by MAnorm (version 1.1). Genomic graphs were generated and viewed with the IGV (Integrative Genomics Viewer).\n\n### Statistical analysis\n\nData were presented as mean \u00b1 standard error of the mean. Statistical analyses were applied to biologically independent mice or technical replicates for each experiment which was independently repeated at least three times. Two-tailed Student\u2019s t-test was used for all statistical calculations using GraphPad Prism seven software. All bar graphs include means with error bars to show the distribution of the data. The level of significance is indicated as follows: *p < 0.05, **p < 0.01, ***p < 0.001, and ****p < 0.0001.\n",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "28b3c848-1a83-45d5-a64e-741ecf3e8c33",
+      "submission_id": "989bec9c-99ec-4c6a-9920-ee6a4055a722",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sarah Russell, https://ror.org/02a8bt934 Peter MacCallum Cancer Centre Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75508.sa0](https://doi.org/10.7554/eLife.75508.sa0)\n\nThe authors have discovered that the transcription factor Zfp335 is an important regulator of early T cell development in the thymus. This paper will be of interest to scientists within the field of T cell development. The authors show that Bcl6 and Rorc are direct gene targets of Zfp335 and dysregulation of these are at least partly responsible for the impaired T cell development in Zfp335 mice.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Sarah Russell, https://ror.org/02a8bt934 Peter MacCallum Cancer Centre Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75508.sa1](https://doi.org/10.7554/eLife.75508.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Zinc finger protein Zfp335 controls early T cell development and survival through \u03b2-selection-dependent and -independent mechanisms\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Tadatsugu Taniguchi as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. Better characterise the functional relationship between Zfp335 and \u03b2 selection.\n\n2. Control for the possibility that overexpression of Zfp335, Bcl6 or Rorc caused the effects in a Zfp335-independent manner by expressing the genes in a similar manner in WT cells.\n\n3. Confirm stage-specific expression of Zfp335 with antibody staining.\n\n4. Include information on cell counts.\n\n5. Show the effects on pT\u03b1 gene expression.\n\n6. Explain how the downstream target genes were validated and triaged, including whether Bcl6 and RORc stood out from a bioinformatics perspective, or were selected based upon their known biology.\n\n7. Justify the rationale for a 1:4 ratio of WT:KO\n\nReviewer #1 (Recommendations for the authors):\n\na) Overall the figures were clear and well laid out. However, it was sometimes quite complicated to decipher why there was a difference in the trends between % cells and cell counts (e.g. DN cells Figure 1 D versus E). I presume that this is because Zfp335 deficiency caused a drop in overall cell number but it might be helpful to show the overall cell counts data to help the reader interpret the data. The cell counts data should also be included in figure 2.\n\nb) In the paper you identified a number of processes that were impacted by this transcription factor but did not look at the interaction between them. For instance, you demonstrated that intracellular TCR\u03b2 is reduced and apoptosis is increased by Zfp335 deficiency, and that forced expression of intracellular TCR\u03b2 partially elevated the effect on development but did not examine the effect on apoptosis. This would of be particularly interesting to examine given the recent work showing that pre-TCR increases the expression of Bcl6, which in turn protects DN4 cells from apoptosis (Development 2020 Oct 7;147(19):dev192203. doi: 10.1242/dev.192203).\n\nc) The discussion would benefit from more discussion of the literature. I appreciate that there is only a limited amount of literature on the role of Zfp335, apart from the paper that you already mentioned, however you could discuss what is known about the role of this transcription factor in other developmental systems. Furthermore, it would be interesting to discuss how Zfp335 regulatory pathways compares to other regulatory pathways already known to control T cell development and how it might interplay.\n\nd) In the discussion you state \"While Zfp335-deficient DN4 cells exhibited no defects in the rearrangement of TCR\u03b2 chain genes and pT\u03b1 gene expression\". My apologies if I missed it but I could find the pT\u03b1 data\n\nReviewer #2 (Recommendations for the authors):\n\nOverall this manuscript starts with an interesting developmental phenotype however there are several problems with the approaches and experimental details that I indicated above. These include: (a) disregarding experimental issues like assessing DN3a versus DN3b, which would have located the initiation of the defect, (b) failing to explain approaches like the 1 to 4 ratio of WT to KO in the mixed cultures and chimeras, (c) specifically focusing on downregulated genes, (d) failing to explain how they narrow down to 97+22 genes from the original 566 downregulated and 899 upregulated genes when they compare with the genes associated with ChIP-seq peaks, (e) failing to explain how they identify the genes associated with each peak (f) failing to control how the overexpression of Rorc and Bcl6 affects the development of WT cells. In view of all these widespread issues, this reviewer has serious problems with the interpretations and mechanistic conclusions of the manuscript\n\nReviewer #3 (Recommendations for the authors):\n\nThis is an interesting study from Wang et al. The data presented is strong, thorough, well-controlled and largely support the conclusions made. However, I do have some suggestions that the authors should attempt to address.\n\n1. While the qPCR analysis for Zfp335 expression validates the microarray data from ImmGen, this of course is still only RNA analysis. If would be good to validate the expression of Zfp335 protein, either by intracellular staining + FACS or by Western blotting of DN, DP and SP sorted cells. Commercial antibodies are available.\n\n2. The authors showed that there is increased apoptosis of DN3 cells. Is this occurring pre-\u03b2-selection (DN3a) or post-\u03b2-select (DN3b)? Co-staining for additional markers, e.g. intracellular TCRbeta would address this. This is relevant given that authors suggest that the block is due to impaired i.c.TCRbeta expression.\n\n3. Initially, the authors suggest that the block in Zfp335 knockout mice is due to impaired TCRbeta expression and that this can be rescued by the OT-1 transgene. However, they then suggest that Zfp335 functions by regulating Bcl6 and Rorc. How do the authors connect these two observations? Is the TCRb impairment a result of dysregulated Bcl6 and/or Rorc expression?\n\n4. Bcl6 is normally expressed in DN3 thymocytes and regulates survival at that stage, while Rorc is normally expressed in DP thymocytes and regulates survival at that stage. The timing of Zfp335 expression aligns with Bcl6 but not with Rorc. How do the authors reconcile this discordance given that Zfp335 is downregulated in DP thymocytes?\n",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3cc11f05-047b-4757-b1ed-5b774c4ae7d4",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C1",
+      "claim": "DN3 cells displayed a relatively high level of Zfp335 mRNA expression compared to DN4, DP, CD4, CD8, NKT, and \u03b3\u03b4 T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that DN3 cells displayed a relatively high level of Zfp335 mRNA expression (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data shown in Figure 1A comparing Zfp335 expression across different thymocyte subsets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "3306d995-0a78-4a54-a159-2711ad15243d",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C2",
+      "claim": "Zfp335 protein had the highest expression in DN3 thymocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Flow cytometry analysis also revealed that Zfp335 protein had the highest expression in DN3 thymocytes (Figure 1\u2014figure supplement 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data showing mean fluorescence intensity of Zfp335 in different thymocyte populations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "1fd4f73d-1107-4d87-9088-0d92bf4acf12",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C3",
+      "claim": "Microarray data from ImmGen showed higher expression of Zfp335 specifically at the DN3a stage during T-cell development from ETP to CD4/CD8 SP.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, microarray data from ImmGen showed higher expression of Zfp335 specifically at the DN3a stage during T-cell development from ETP to CD4/CD8 SP (Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by publicly available microarray data from the ImmGen database.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "24597f01-f2eb-4f26-9b7d-355124403db1",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C4",
+      "claim": "RNA-seq data from ImmGen exhibited the highest expression of Zfp335 in DP thymocytes, with a gradually increased expression from ETP to DN3.",
+      "claim_type": "EXPLICIT",
+      "source": "Although RNA-seq data from ImmGen exhibited the highest expression of Zfp335 in DP thymocytes, a gradually increased expression was observed from ETP to DN3 (Figure 1\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by publicly available RNA-seq data from the ImmGen database.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "7831652b-5d8d-4f18-84e5-4df9d4d79445",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C5",
+      "claim": "LckCre+Zfp335fl/fl (KO) mice exhibited significantly smaller thymi and drastically decreased thymocyte numbers than WT control.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, LckCre+Zfp335fl/fl (KO) mice exhibited significantly smaller thymi and drastically decreased thymocyte numbers than WT control (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by measurements of thymus size and total thymocyte counts shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "c0d4964e-5db5-4246-938b-63d8adbcefd0",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C6",
+      "claim": "Both percentages and numbers of DP cells, as well as CD4 SP and CD8 SP cells, were considerably reduced in KO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Further analysis showed that both percentages and numbers of DP cells, as well as CD4 SP and CD8 SP cells, were considerably reduced in KO mice (Figure 1C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data showing percentages and absolute numbers of different thymocyte populations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "9e24c723-4470-4596-832f-fbdc2e54e38a",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C7",
+      "claim": "The percentage of DN cells was increased by nearly 10\u201315-folds in KO mice, although the total number was decreased.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the percentage of DN cells was increased by nearly 10\u201315-folds, although the total number was decreased (Figure 1C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data showing DN cell percentages and numbers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "1dfbec4e-2c17-4832-9137-4aa45c91fcd0",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C8",
+      "claim": "Reduced CD4+ and CD8+ cells were observed in the spleen and lymph nodes of KO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In secondary lymphoid organs, we also observed reduced CD4+ and CD8+ cells in the spleen and lymph nodes (Figure 1F\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry analysis of peripheral lymphoid organs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "9fc4814e-f53e-4985-abee-cde806aad788",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C9",
+      "claim": "Zfp335 is essential for the development of \u03b1\u03b2T cells in the thymus.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Zfp335 is essential for the development of \u03b1\u03b2T cells in the thymus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the observed developmental defects in Zfp335-deficient mice.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "8bdbf308-7ac3-42fb-96ea-890561b2a531",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C10",
+      "claim": "KO group produced fewer DP cells than WT control on both days 2 and 4 in OP9-DL1 coculture.",
+      "claim_type": "EXPLICIT",
+      "source": "On both days 2 and 4, KO group produced fewer DP cells than WT control (Figure 2B\u2013D, Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vitro OP9-DL1 coculture experiments measuring DP cell generation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "c34dfe00-9167-490f-adb0-d555b0e1f04b",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C11",
+      "claim": "When DN3 cells from WT and KO mice were mixed and cocultured at a 1:4 ratio, significantly lower percentage and cell proportion of DP cells were observed in KO group.",
+      "claim_type": "EXPLICIT",
+      "source": "When DN3 cells from WT (CD45.1+) and KO (CD45.2+) mice were mixed and cocultured at a 1:4 ratio (KO cells were rapidly competed out when used at a 1:1 ratio), significantly lower percentage and cell proportion of DP cells were also observed in KO group (Figure 2E\u2013G, Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mixed coculture experiments with congenic markers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "a1c9bae6-8cf0-4ae9-b5ee-490b50b79e22",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C12",
+      "claim": "Both the percentages and cell numbers of DP, CD4, and CD8 cells were significantly reduced while DN percentage was increased in mice that received KO bone marrow cells 6 weeks post transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "When thymocytes were analyzed 6 weeks post transfer, both the percentages and cell numbers of DP, CD4, and CD8 cells were significantly reduced while DN percentage was increased in the mice that received KO cells (Figure 2I, J, Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by bone marrow chimera experiments analyzing thymocyte development in vivo.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "10bd3bea-f931-4f8f-8877-54bca18146b5",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C13",
+      "claim": "When WT and KO bone marrow cells were mixed at a 1:4 ratio for cotransfer experiments, fewer DP cell proportion was detected in KO compared to WT group.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, when WT and KO bone marrow cells were mixed at a 1:4 ratio for cotransfer experiments, fewer DP cell proportion detected in KO compared to WT group (Figure 2K, L; Figure 2\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mixed bone marrow chimera experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "af3bc923-0e86-42d7-a1ef-5ef24860fd2b",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C14",
+      "claim": "DN3 cells from KO mice generated fewer \u03b3\u03b4 T cells, despite a higher percentage, in comparison to WT controls after culturing for 4 days.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, DN3 cells from KO mice also generated fewer \u03b3\u03b4 T cells, despite a higher percentage, in comparison to WT controls after culturing for 4 days (Figure 2\u2014figure supplement 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vitro differentiation assays measuring \u03b3\u03b4 T cell generation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "bb111acf-7740-4e54-8b8c-da374f544c10",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C15",
+      "claim": "Zfp335 intrinsically regulates thymocyte development from DN to DP stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, we demonstrate that Zfp335 intrinsically regulates thymocyte development from DN to DP stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from multiple in vitro and in vivo experiments showing cell-intrinsic defects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "cff8b468-da59-4bd4-91e1-79c1c46f6864",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C16",
+      "claim": "A higher percentage of CD44\u2212CD25+ DN3 cells but a lower percentage of CD44\u2212CD25\u2212 DN4 cells were found in KO group compared to WT group.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed that a higher percentage of CD44\u2212CD25+ DN3 cells but a lower percentage of CD44\u2212CD25\u2212 DN4 cells were found in KO group compared to WT group (Figure 3A, B), in which the numbers of both DN3 and DN4 thymocytes were decreased (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry analysis of DN thymocyte subsets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "2dcccc68-c5ee-4350-b956-b2a6d5345ec8",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C17",
+      "claim": "The numbers of both DN3 and DN4 thymocytes were decreased in KO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed that a higher percentage of CD44\u2212CD25+ DN3 cells but a lower percentage of CD44\u2212CD25\u2212 DN4 cells were found in KO group compared to WT group (Figure 3A, B), in which the numbers of both DN3 and DN4 thymocytes were decreased (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by absolute cell counts of DN3 and DN4 populations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "3fd1a708-9a63-4b60-9f81-39682752c5ac",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C18",
+      "claim": "The developmental blockade from DN3 to DN4 in Zfp335-deficient cells was verified by in vitro coculture assays on day 2 using OP9-DL1.",
+      "claim_type": "EXPLICIT",
+      "source": "The developmental blockade from DN3 to DN4 in Zfp335-deficient cells was verified by in vitro coculture assays on day 2 using OP9-DL1 cultured with WT and KO DN3 cells, respectively (Figure 3D, E) or mixed at a 1:4 ratio (Figure 3F, G) as described above.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vitro OP9-DL1 coculture experiments measuring DN3 to DN4 transition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "51d006b7-e36b-4eac-9c75-031f29001579",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C19",
+      "claim": "The in vivo bone marrow chimera models confirmed the development block at the DN3 stage.",
+      "claim_type": "EXPLICIT",
+      "source": "The in vivo bone marrow chimera models further confirmed the development block at the DN3 stage (Figure 3H\u2013K), indicating that Zfp335 is indispensable for DN3 to DN4 transition during early-stage differentiation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by bone marrow chimera experiments showing DN3/DN4 ratios.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "79905679-116d-4a77-ae48-3e3f603c75b1",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C20",
+      "claim": "Zfp335 is indispensable for DN3 to DN4 transition during early-stage differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "The in vivo bone marrow chimera models further confirmed the development block at the DN3 stage (Figure 3H\u2013K), indicating that Zfp335 is indispensable for DN3 to DN4 transition during early-stage differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from multiple experimental approaches showing DN3 to DN4 blockade.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "0fc54020-4176-4e9d-8305-caf552899cc7",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C21",
+      "claim": "The in vivo BrdU incorporation assay showed comparable or even higher percentages of BrdU+ DN3 and DN4 cells in KO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The in vivo BrdU incorporation assay showed comparable or even higher percentages of BrdU+ DN3 and DN4 cells (Figure 4A, B) as well as Ki67+ DN3 and DN4 cells (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by BrdU incorporation and Ki67 staining experiments measuring cell proliferation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "1ae9553d-868b-4493-ab6c-2ba8912f4a64",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C22",
+      "claim": "KO mice showed a remarkably higher percentages of Annexin V+ DN3 and DN4 cells compared to WT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, when we examined thymocyte apoptosis, KO mice showed a remarkably higher percentages of Annexin V+ DN3 and DN4 cells compared to WT cells (Figure 4C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Annexin V staining measuring apoptosis in DN thymocytes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "02e04159-42e3-457d-8a3e-fec02ae748c9",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C23",
+      "claim": "After coculture with OP9-DL1 for 4 days, both Zfp335-deficient DN3 and DN4 cells showed an increased percentage of Annexin V+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "After coculture with OP9-DL1 for 4 days, both Zfp335-deficient DN3 and DN4 cells showed an increased percentage of Annexin V+ cells (Figure 4E, F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vitro apoptosis assays in OP9-DL1 coculture system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "d132829b-b258-4046-bf80-c12bf8475b2c",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C24",
+      "claim": "The frequencies of both DN3a and DN3b were comparable between WT and Zfp335-deficient groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Further examination of the transition between the DN3a and DN3b stages found that the frequencies of both DN3a and DN3b were comparable between WT and Zfp335-deficient groups (Figure 4\u2014figure supplement 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry analysis of DN3a and DN3b subpopulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "bc22453c-6325-4ed3-8411-bf0bfca75053",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C25",
+      "claim": "Both DN3a and DN3b cell populations showed enhanced cell apoptosis in Zfp335-deficient cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, both cell populations showed enhanced cell apoptosis in Zfp335-deficient cells (Figure 4\u2014figure supplement 2D\u2013F), indicating that Zfp335 regulates thymocyte apoptosis in a TCR-independent manner.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Annexin V staining of DN3a and DN3b subsets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "c83f43d9-741e-4bef-b003-18777c2d3874",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C26",
+      "claim": "Zfp335 regulates thymocyte apoptosis in a TCR-independent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "However, both cell populations showed enhanced cell apoptosis in Zfp335-deficient cells (Figure 4\u2014figure supplement 2D\u2013F), indicating that Zfp335 regulates thymocyte apoptosis in a TCR-independent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that both pre- and post-\u03b2-selection DN3 cells show increased apoptosis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "4233ab45-87e9-4dd8-b618-07a27130a6af",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C27",
+      "claim": "In mixed bone marrow chimeras, Zfp335-deficient DN3 and DN4 cells displayed significantly higher Annexin V+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in mixed bone marrow chimeras, Zfp335-deficient DN3 and DN4 cells also displayed significantly higher Annexin V+ cells (Figure 4G, H), indicating an intrinsic role of Zfp355 in regulating thymocyte survival.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by apoptosis analysis in mixed bone marrow chimeras.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "deaaa03d-d85a-44c7-85ba-57444ffa54dd",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C28",
+      "claim": "Zfp335 has an intrinsic role in regulating thymocyte survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in mixed bone marrow chimeras, Zfp335-deficient DN3 and DN4 cells also displayed significantly higher Annexin V+ cells (Figure 4G, H), indicating an intrinsic role of Zfp355 in regulating thymocyte survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from competitive bone marrow chimera experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "55b8cdbc-46d9-4266-990c-459adbc3a87e",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C29",
+      "claim": "The expression of Ptcra (encoding pT\u03b1) was slightly increased in Zfp335-deficient DN3 and DN4 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of Ptcra (encoding pT\u03b1) was slightly increased while Trbc1, Trbc2, and Cd3e in DN3 and DN4 cells were comparable in WT and KO group (Figure 5\u2014figure supplement 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR analysis of pre-TCR component genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "dfa20d43-86ae-4799-a96f-69eb09a21365",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C30",
+      "claim": "Trbc1, Trbc2, and Cd3e expression in DN3 and DN4 cells were comparable in WT and KO group.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of Ptcra (encoding pT\u03b1) was slightly increased while Trbc1, Trbc2, and Cd3e in DN3 and DN4 cells were comparable in WT and KO group (Figure 5\u2014figure supplement 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR analysis of pre-TCR component genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "d8aec6a2-701a-46b2-b8a7-5b046eaaaa7a",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C31",
+      "claim": "The expression of intracellular CD3 (iCD3) was unaffected in both Zfp335-deficient DN3 and DN4 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the expression of intracellular CD3 (iCD3) was also unaffected in both Zfp335-deficient DN3 and DN4 cells (Figure 5\u2014figure supplement 2A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry analysis of intracellular CD3 expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "83353f22-2a41-406e-b21c-1a0d3c7a55d3",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C32",
+      "claim": "Flow cytometry analysis showed no substantial difference in iTCR\u03b2 expression between WT and KO DN3 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, flow cytometry analysis showed no substantial difference in iTCR\u03b2 expression between WT and KO DN3 cells, whereas Zfp335-deficient mice displayed a significant decrease in the percentage of iTCR\u03b2+ DN4 cells (Figure 5A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry analysis of intracellular TCR\u03b2 expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "b414b791-e8fd-4797-af13-decadcac9d59",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C33",
+      "claim": "Zfp335-deficient mice displayed a significant decrease in the percentage of iTCR\u03b2+ DN4 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, flow cytometry analysis showed no substantial difference in iTCR\u03b2 expression between WT and KO DN3 cells, whereas Zfp335-deficient mice displayed a significant decrease in the percentage of iTCR\u03b2+ DN4 cells (Figure 5A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry analysis of intracellular TCR\u03b2 expression in DN4 cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "ab9b510b-e624-40e2-b45c-0058bce90759",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C34",
+      "claim": "The expression of TCR V\u03b25, V\u03b26, V\u03b28, and V\u03b212 were decreased concomitantly in KO DN4 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To further address whether Zfp335 deficiency affects TCR\u03b2 expression, we compared differential usage of TCR\u03b2 in DN4 cells between WT and KO mice, in which the expression of TCR V\u03b25, V\u03b26, V\u03b28, and V\u03b212 were decreased concomitantly (Figure 5C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry analysis of different TCR V\u03b2 chain usage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "0df13f15-d111-46d3-8e24-e90eea13942a",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C35",
+      "claim": "Genomic DNA analysis for V-DJ\u03b25 and V-DJ\u03b28 rearrangements showed no difference between WT and KO DN3 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, genomic DNA analysis for V-DJ\u03b25 and V-DJ\u03b28 rearrangements showed no difference between WT and KO DN3 cells (Figure 5\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by PCR analysis of TCR\u03b2 gene rearrangements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "77fc3f97-a8cd-4eb8-8124-1c05ab255e08",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C36",
+      "claim": "The reduced iTCR\u03b2 expression may be a consequence of protein degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the reduced iTCR\u03b2 expression may be a consequence of protein degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from normal gene rearrangement but reduced protein expression.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "b9f8d9bc-1e33-4ff5-85bd-a9c0ded823a4",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C37",
+      "claim": "Forced expression of \u03b1\u03b2TCR successfully restored the decreased percentage of iTCR\u03b2+ DN4 cells in the KO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, forced expression of \u03b1\u03b2TCR successfully restored the decreased percentage of iTCR\u03b2+ DN4 cells in the KO mice, despite with little impact on the number of iTCR\u03b2+ DN4 cells (Figure 5G\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry analysis of OT1 transgenic rescue experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "b9a4295e-b89f-43de-91c1-94d92442ff66",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C38",
+      "claim": "Developmental arrest at the DN3 stage in Zfp335-deficient mice was fully rescued by OT1 transgene.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, developmental arrest at the DN3 stage in Zfp335-deficient mice was fully rescued by OT1 transgene (Figure 5J\u2013L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by analysis of DN3/DN4 ratios in OT1 transgenic rescue experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "d30d2536-d510-4470-bffb-23969b05e8cd",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C39",
+      "claim": "DN3 and DN4 cells from OT1Tg KO mice still exhibited a similar degree of apoptosis with Zfp335-deficient cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, DN3 and DN4 cells from OT1Tg KO mice still exhibited a similar degree of apoptosis with Zfp335-deficient cells (Figure 5\u2014figure supplement 4), suggesting Zfp335 affects thymocyte apoptosis in a TCR-independent manner.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Annexin V staining in OT1 transgenic rescue experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "616b336f-1d86-43b4-a899-40815e468980",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C40",
+      "claim": "Zfp335 affects thymocyte apoptosis in a TCR-independent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, DN3 and DN4 cells from OT1Tg KO mice still exhibited a similar degree of apoptosis with Zfp335-deficient cells (Figure 5\u2014figure supplement 4), suggesting Zfp335 affects thymocyte apoptosis in a TCR-independent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from persistent apoptosis despite TCR rescue.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "39ddd96d-4489-468c-b661-b306cc350a37",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C41",
+      "claim": "The proportions of DN, DP, CD4, and CD8 were still comparable in KO and OT1Tg KO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, the proportions of DN, DP, CD4, and CD8 were still comparable in KO and OT1Tg KO mice (Figure 5M, N; Figure 5\u2014figure supplement 5), demonstrating that the aberrant DP development has not yet been restored by \u03b1\u03b2TCR overexpression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry analysis of thymocyte populations in OT1 transgenic mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "0ba2255d-d3fa-425a-ae40-efe16fb9e249",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C42",
+      "claim": "The aberrant DP development has not been restored by \u03b1\u03b2TCR overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, the proportions of DN, DP, CD4, and CD8 were still comparable in KO and OT1Tg KO mice (Figure 5M, N; Figure 5\u2014figure supplement 5), demonstrating that the aberrant DP development has not yet been restored by \u03b1\u03b2TCR overexpression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from persistent DP defects despite TCR rescue.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "581d9315-367a-473b-9a0c-c50142460677",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C43",
+      "claim": "Zfp335-deficient DN4 cells had a total 566 downregulated and 899 upregulated genes (fold change >1.25, p < 0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Volcano plot showed that Zfp335-deficient DN4 cells had a total 566 downregulated and 899 upregulated genes (fold change >1.25, p < 0.05) (Figure 6A, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq analysis comparing WT and KO DN4 cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "e8b964c2-a9d5-4ba5-ae65-2ec934dec831",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C44",
+      "claim": "Gene ontology (GO) analysis highlighted a large fraction of genes downregulated in KO group belonging to lymphocyte differentiation and apoptotic pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene ontology (GO) analysis highlighted a large fraction of genes downregulated in KO group belonging to lymphocyte differentiation and apoptotic pathways (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GO enrichment analysis of RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "a4bf14a6-38e7-4c3a-85f9-b08be51c7761",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C45",
+      "claim": "A total of 2797 Zfp335-binding sites were identified by ChIP-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "To further determine genes directly regulated by Zfp335, we analyzed Zfp335 by chromatin immunoprecipitation followed by deep sequencing (ChIP-seq). We screened a total of 2797 Zfp335-binding sites (Supplementary file 2) and the prevalence of binding peaks across genomic regions was displayed as a pie chart (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-seq analysis of Zfp335 binding in DN thymocytes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "56ca5d50-77b5-4a01-8efd-f6de8ed981cf",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C46",
+      "claim": "22 genes were overlapped between profoundly downregulated genes (twofold change cutoff) and Zfp335-targeting genes from ChIP-seq data.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify the Zfp335-targeting candidates, 119 profoundly downregulated genes were further selected out by a cutoff of twofold change, and 22 genes were overlapped with Zfp335-targeting genes from ChIP-seq data (Figure 6\u2014figure supplement 2A, Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by integration of RNA-seq and ChIP-seq datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "c8d30fc7-0ce3-4176-8e0a-f79ae7d5032b",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C47",
+      "claim": "Bcl6 and Rorc were significantly downregulated in KO DN4 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with RNA-seq results (Figure 6C), qPCR analysis verified that Bcl6 and Rorc were significantly downregulated in KO DN4 cells (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by both RNA-seq and qPCR validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "6edfe687-7a0a-42ac-a8e7-92cd9f185313",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C48",
+      "claim": "Zfp335 directly targeted the promoter regions of Bcl6 and Rorc in ChIP-seq analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, Zfp335 directly targeted the promoter regions of Bcl6 and Rorc in ChIP-seq analysis (Figure 6E), which were further verified by luciferase assay (Figure 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-seq showing Zfp335 binding peaks at Bcl6 and Rorc loci.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "ddc5c3a8-3da9-401c-9dfa-dd1ef1c0d50d",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C49",
+      "claim": "Zfp335 binding to Bcl6 and Rorc promoters was verified by luciferase assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, Zfp335 directly targeted the promoter regions of Bcl6 and Rorc in ChIP-seq analysis (Figure 6E), which were further verified by luciferase assay (Figure 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by luciferase reporter assays showing transcriptional activation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "2c1feb21-93a5-4df0-a8b4-16ff4a674f21",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C50",
+      "claim": "Zfp335 directly regulates the transcription of Bcl6 and Rorc.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, in depth genomic analysis of DN thymocytes supports that Zfp335 directly regulates the transcription of Bcl6 and Rorc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from combined ChIP-seq, RNA-seq, and luciferase assay data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "9fb73fc3-5a6e-4e03-b874-b021558d30f3",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C51",
+      "claim": "Overexpression of Bcl6 and Rorc resulted in a substantial DP generation in KO DN3 cells cocultured with OP9-DL1.",
+      "claim_type": "EXPLICIT",
+      "source": "After 3.5 days, overexpression of Bcl6 and Rorc resulted in a substantial DP generation, particularly in the Bcl6 group, resulting in a similar DP proportion to that in Zfp335-overexpressing cells (Figure 7B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by retroviral overexpression experiments in OP9-DL1 coculture.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "65c67119-015a-450d-88d4-f412358f32e2",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C52",
+      "claim": "Overexpression of Psmg2, Dctn1, Ankle2, Cep76, Fgf13, and Ddx31 in KO DN3 cells did not restore DP generation in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, overexpression of Psmg2, Dctn1, Ankle2, Cep76, Fgf13, and Ddx31 identified in the qPCR results (Figure 6\u2014figure supplement 2B, C) in KO DN3 cells did not restore DP generation in vitro (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by retroviral overexpression experiments showing no rescue.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "a1a9debc-cbaf-4c00-a0df-f13e8db6debd",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C53",
+      "claim": "Enhanced expression of Bcl6 in DN3 cells rescued DN thymocyte apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, enhanced expression of Bcl6 in DN3 cells rescued DN thymocyte apoptosis (Figure 7D, E), while overexpression of both Bcl6 and Rorc rescued DP thymocytes from enhanced apoptosis (Figure 7F, G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Annexin V staining in Bcl6 overexpression experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "b87d18ff-2541-446f-880d-7822580ad433",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C54",
+      "claim": "Overexpression of both Bcl6 and Rorc rescued DP thymocytes from enhanced apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, enhanced expression of Bcl6 in DN3 cells rescued DN thymocyte apoptosis (Figure 7D, E), while overexpression of both Bcl6 and Rorc rescued DP thymocytes from enhanced apoptosis (Figure 7F, G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Annexin V staining in Bcl6 and Rorc overexpression experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "3e7e273b-26be-48d6-b7d4-ee5174a51265",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C55",
+      "claim": "p53 is negatively regulated by Bcl6.",
+      "claim_type": "EXPLICIT",
+      "source": "p53, negatively regulated by Bcl6, is involved in lymphocyte apoptosis (Haks et al., 1999; Guidos et al., 1996; Mombaerts et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "78bfe4cb-6403-40d7-9710-455e0a466d0b",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C56",
+      "claim": "Trp53 deletion resulted in a partial recovery of DP percentage, but not cell number, in Zfp335 KO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we crossed Zfp335 KO strain with Trp53 KO strain to obtain double knockout mice, in which Trp53 deletion resulted in a partial recovery of DP percentage, but not cell number (Figure 7\u2014figure supplement 2), further supporting the role of Bcl6 in Zfp335-controlled thymocyte survival.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by analysis of double knockout mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "2513236e-df1c-4fdf-9c9c-f57a0f36f713",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C57",
+      "claim": "Zfp335 controls DN thymocyte survival through direct regulation of Bcl6 and Rorc expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data demonstrate that Zfp335 controls DN thymocyte survival through direct regulation of Bcl6 and Rorc expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from rescue experiments and genetic analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "aaf9e5b9-5925-45c5-a6a6-f230b2bfd9b8",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C58",
+      "claim": "Zfp335 intrinsically controls DN to DP transition.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that Zfp335 intrinsically controls DN to DP transition, as T-cell-specific deficiency in Zfp335 leads to a substantial accumulation of DN3 along with reduction of DP, CD4+, and CD8+ thymocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement based on multiple experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "96f04eed-aaa8-4e4e-b7e7-237caf960fca",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C59",
+      "claim": "T-cell-specific deficiency in Zfp335 leads to a substantial accumulation of DN3 along with reduction of DP, CD4+, and CD8+ thymocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that Zfp335 intrinsically controls DN to DP transition, as T-cell-specific deficiency in Zfp335 leads to a substantial accumulation of DN3 along with reduction of DP, CD4+, and CD8+ thymocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of phenotypic observations in Zfp335-deficient mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "cbc3335a-e8cf-4857-8fe7-36fff984d56f",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C60",
+      "claim": "The developmental blockade at DN stage results from the impaired intracellular TCR\u03b2 (iTCR\u03b2) expression as well as increased susceptibility to apoptosis in thymocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "This developmental blockade at DN stage results from the impaired intracellular TCR\u03b2 (iTCR\u03b2) expression as well as increased susceptibility to apoptosis in thymocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of mechanistic findings from multiple experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "03c98b88-fd7b-4e84-99e3-b3967d56b588",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C61",
+      "claim": "Enhanced expression of TCR\u03b2 restores the developmental defect during DN3 to DN4 transition.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, enhanced expression of TCR\u03b2 and Bcl6/Rorc restores the developmental defect during DN3 to DN4 transition and improves thymocytes survival, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of rescue experiment results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "1af49d3f-d5b0-439a-8a9c-c6142dfb500e",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C62",
+      "claim": "Enhanced expression of Bcl6/Rorc improves thymocyte survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, enhanced expression of TCR\u03b2 and Bcl6/Rorc restores the developmental defect during DN3 to DN4 transition and improves thymocytes survival, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of rescue experiment results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "c38262ee-bbf6-4ac1-9663-339b55e36f8e",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C63",
+      "claim": "Zfp335 plays a critical role in controlling T-cell development by maintaining iTCR\u03b2 expression-mediated \u03b2-selection and independently activating cell survival signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings identify a critical role of Zfp335 in controlling T-cell development by maintaining iTCR\u03b2 expression-mediated \u03b2-selection and independently activating cell survival signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Overall conclusion summarizing the main findings of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "0b68ca8d-643f-45f6-91c1-19f3d9a5e430",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C64",
+      "claim": "Pre-TCR signals regulate thymocyte differentiation by mediating protection from apoptosis, stimulating proliferation, and inducing allelic exclusion at the TCR\u03b2 locus in post-\u03b2-selection DN3b cells and promoting DN to DP transition.",
+      "claim_type": "EXPLICIT",
+      "source": "Pre-TCR signals regulate thymocyte differentiation by mediating protection from apoptosis, stimulating proliferation, and inducing allelic exclusion at the TCR\u03b2 locus in post-\u03b2-selection DN3b cells and promoting DN to DP transition (Hoffman et al., 1996; Aifantis et al., 1997; Kruisbeek et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "7260d939-0f5b-4ea9-965a-94680f9c7ef2",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C65",
+      "claim": "Inactivation of pre-TCR components dampens T-lymphocyte development by arresting thymocytes at the DN3 stage and inducing apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Inactivation of pre-TCR components dampens T-lymphocyte development by arresting thymocytes at the DN3 stage and inducing apoptosis (Fehling et al., 1995; Malissen et al., 1995; Mombaerts et al., 1992a; Mombaerts et al., 1992b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "4502fa38-2364-425b-8ba0-d48553323312",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C66",
+      "claim": "Bcl6 induced by pre-TCR signals is involved in the DN to DP transition and protection of DN4 cells from apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Apart from the essential role in the T follicular helper cell lineage commitment (Yu et al., 2009), Bcl6 induced by pre-TCR signals is also involved in the DN to DP transition and protection of DN4 cells from apoptosis (Solanki et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "1b9b6d51-0a2b-4d77-803d-aa25ad2c4bb3",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C67",
+      "claim": "Abrogation of Rorc expression in thymocytes leads to a decreased DP proportion and impaired DP survival in a Bcl-xl-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, abrogation of Rorc expression in thymocytes leads to a decreased DP proportion and impaired DP survival in a Bcl-xl-dependent manner (Villey et al., 1999; Sun et al., 2000; Xi et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "cdebaa96-62cc-4cd2-bdf2-53576b190a49",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C68",
+      "claim": "Germline knockout of Zfp335 is embryonic lethal.",
+      "claim_type": "EXPLICIT",
+      "source": "Germline knockout of Zfp335 is embryonic lethal, while deletion of Zfp335 gene in nerve cells impairs the proliferation and differentiation of nerve progenitor cells in mice, eventually leading to severe microcephaly (Yang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "6f1328dd-390d-45e9-8b0a-c1cd31371031",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C69",
+      "claim": "Deletion of Zfp335 gene in nerve cells impairs the proliferation and differentiation of nerve progenitor cells in mice, eventually leading to severe microcephaly.",
+      "claim_type": "EXPLICIT",
+      "source": "Germline knockout of Zfp335 is embryonic lethal, while deletion of Zfp335 gene in nerve cells impairs the proliferation and differentiation of nerve progenitor cells in mice, eventually leading to severe microcephaly (Yang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "8443893b-f0ad-4276-a0c9-1f0b74c80946",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C70",
+      "claim": "The Zfp335bloto allele, a missense mutation derived from ENU mutagenesis, does not significantly affect thymocyte development but causes a significant reduction in the number of peripheral T cells due to defects in the maturation and migration of thymocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Function of Zfp335 in T-cell development has been observed in the study of the Zfp335bloto allele, a missense mutation derived from ENU mutagenesis. While thymocyte development is not significantly affected by this hypomorph mutation, there is a significant reduction in the number of peripheral T cells due to defects in the maturation and migration of thymocytes (Han et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "70c3215d-a67f-4465-8689-a38f24f31e36",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C71",
+      "claim": "Overexpression of neither Bcl6 nor Rorc in Zfp335-deficient DN3 thymocytes could restore the decreased iTCR\u03b2 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Zfp335 regulates TCR\u03b2 expression independent on Bcl6 and Rorc since overexpression of neither Bcl6 or Rorc in Zfp335-deficient DN3 thymocytes could restore the decreased iTCR\u03b2 expression (Figure 7\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry analysis of iTCR\u03b2 expression in rescue experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "5002cf0e-614d-4ec4-96f1-32faad0b6349",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "claim_id": "C72",
+      "claim": "Zfp335 regulates TCR\u03b2 expression independent of Bcl6 and Rorc.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Zfp335 regulates TCR\u03b2 expression independent on Bcl6 and Rorc since overexpression of neither Bcl6 or Rorc in Zfp335-deficient DN3 thymocytes could restore the decreased iTCR\u03b2 expression (Figure 7\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from failure of Bcl6/Rorc to rescue iTCR\u03b2 expression.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ff17bf58-c50f-4fa9-ba2a-e6a84bd11b3c",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Zfp335 expression is highest in DN3 thymocytes during T-cell development, as demonstrated by qPCR, flow cytometry, and publicly available microarray and RNA-seq data from ImmGen.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 provide converging evidence from multiple independent methods (qPCR, flow cytometry, microarray, RNA-seq) showing elevated Zfp335 expression in DN3 cells. The consistency across different experimental approaches and public databases strengthens the conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "a6efb299-5108-44ac-8bb1-cf26a057ea9d",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "T-cell-specific deletion of Zfp335 causes severe thymic hypoplasia with drastically reduced DP, CD4 SP, and CD8 SP cells, increased DN cell percentage (but decreased absolute numbers), and reduced peripheral T cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C9 demonstrate a clear and severe phenotype in Zfp335 KO mice with consistent measurements of thymus size, cell numbers, and percentages across multiple compartments. The data support the conclusion that Zfp335 is essential for \u03b1\u03b2 T-cell development.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "baa9d613-2963-4f51-a50c-f8a9fbd6ecc9",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Zfp335 intrinsically regulates thymocyte development from DN to DP stage, as demonstrated by in vitro OP9-DL1 coculture and in vivo bone marrow chimera experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C15 provide strong evidence for cell-intrinsic function through multiple complementary approaches including separate culture, mixed culture with congenic markers, and competitive bone marrow chimeras. The consistency across in vitro and in vivo systems supports the intrinsic role conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "0ceb361a-67db-4172-b44c-df547524f8be",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Zfp335 deficiency causes a developmental block at the DN3 to DN4 transition, with increased DN3 percentage but decreased absolute numbers of both DN3 and DN4 cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C20 demonstrate the specific developmental block using multiple experimental systems (in vivo analysis, in vitro OP9-DL1 coculture, bone marrow chimeras). The convergence of evidence from different approaches supports the conclusion that Zfp335 is indispensable for DN3 to DN4 transition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "1455852d-1c47-48bd-b8a4-f138beb7dd98",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Zfp335 deficiency causes increased apoptosis in DN3 and DN4 thymocytes without affecting proliferation, and this occurs in both DN3a and DN3b subsets, indicating a TCR-independent mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C28 provide comprehensive evidence that the developmental defect is due to increased apoptosis rather than impaired proliferation. The observation that both DN3a (pre-\u03b2-selection) and DN3b (post-\u03b2-selection) show increased apoptosis supports the TCR-independent mechanism. Competitive bone marrow chimeras confirm the cell-intrinsic nature of the survival defect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "1f59087d-45cc-461d-b58e-023538cd8009",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Zfp335 deficiency results in reduced intracellular TCR\u03b2 protein expression in DN4 cells without affecting gene rearrangement or expression of other pre-TCR components, suggesting post-transcriptional regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C36 demonstrate that iTCR\u03b2 expression is specifically reduced in DN4 cells (C33, C34) while gene rearrangement is normal (C35) and other pre-TCR components are unaffected (C29-C31). The inference of protein degradation (C36) is reasonable given normal rearrangement but reduced protein, though the mechanism is not directly tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "849ef3c7-fca5-4c3c-abe4-921991804e80",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Forced expression of \u03b1\u03b2TCR via OT1 transgene rescues the DN3 to DN4 developmental block but does not restore DP cell numbers or rescue increased apoptosis, demonstrating TCR-dependent and TCR-independent functions of Zfp335.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C42 provide clear genetic rescue evidence showing partial restoration of the phenotype. The OT1 transgene rescues the DN3/DN4 block (C38) but not apoptosis (C39) or DP development (C41-C42), supporting the conclusion of dual TCR-dependent and TCR-independent mechanisms. This is a well-designed experiment that dissects the two functions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "7011bffb-d1bb-43ef-a69e-d5d7b8ff0885",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Zfp335 directly regulates transcription of Bcl6 and Rorc by binding to their promoter regions, as demonstrated by integration of RNA-seq and ChIP-seq data and validation by luciferase assay.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C50 provide strong mechanistic evidence through multiple complementary approaches: RNA-seq identifies downregulated genes (C43-C44), ChIP-seq identifies direct binding targets (C45-C46), integration identifies candidate genes (C46-C47), and luciferase assays validate functional binding (C48-C49). The convergence of these approaches supports direct transcriptional regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "444431a9-cab8-45da-b81d-5398a879c276",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Overexpression of Bcl6 and Rorc rescues thymocyte survival and DP generation in Zfp335-deficient cells, and p53 deletion partially rescues DP percentage, confirming that Zfp335 controls thymocyte survival through Bcl6 and Rorc.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54, C56-C57 provide functional validation through gain-of-function experiments. Bcl6 overexpression rescues DN apoptosis (C53) and DP generation (C51), while both Bcl6 and Rorc rescue DP apoptosis (C54). The p53 deletion experiment (C56) provides additional genetic support for the Bcl6 pathway. Negative controls with other genes (C52) strengthen the specificity of the rescue.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "7f9c28b3-dd7e-4ed1-b93d-96237e14d563",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Zfp335 regulates TCR\u03b2 expression independently of Bcl6 and Rorc, as overexpression of neither gene restores iTCR\u03b2 expression in Zfp335-deficient cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72 demonstrate pathway independence through negative rescue experiments. The failure of Bcl6/Rorc overexpression to restore iTCR\u03b2 expression supports the conclusion that Zfp335 regulates TCR\u03b2 through a separate mechanism from its regulation of survival genes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "26b8d6e7-2024-4589-bc8e-a001cf8d792c",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Zfp335 plays a critical dual role in T-cell development by maintaining iTCR\u03b2 expression for \u03b2-selection and independently promoting thymocyte survival through Bcl6/Rorc signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C63 represent the overall conclusions of the study, synthesizing the major findings. These conclusions are well-supported by the experimental evidence showing both TCR-dependent (C61) and TCR-independent (C62) mechanisms. The dual function model is supported by the OT1 rescue experiments and the Bcl6/Rorc overexpression studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "e1f5317b-6c26-4427-8e3a-1f7982606f01",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Pre-TCR signaling regulates thymocyte differentiation and survival, and downstream factors Bcl6 and Rorc are involved in DN to DP transition and thymocyte survival.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C67 represent background knowledge from the literature, supported by appropriate citations. These claims establish the context for the current study and are well-established in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "eb3fdf97-9ede-49ca-af9a-e9f07751f652",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Previous studies have shown that germline Zfp335 knockout is embryonic lethal, neural-specific deletion causes microcephaly, and a hypomorphic mutation affects peripheral T cells without major thymic defects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C70 accurately represent prior work on Zfp335 function, supported by appropriate citations. These claims provide important context distinguishing the current complete knockout approach from previous hypomorphic studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    },
+    {
+      "id": "6c842914-1171-4468-a7d2-c1e8afdd33bd",
+      "content_id": "1ebf4bb1-170e-4c10-b65d-5219c8a1e872",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "p53 is negatively regulated by Bcl6 and is involved in lymphocyte apoptosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C55 represents established knowledge from the literature, supported by appropriate citations. This provides mechanistic context for the p53 deletion experiment.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:42:13.009437Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3cc11f05-047b-4757-b1ed-5b774c4ae7d4",
+      "result_id": "ff17bf58-c50f-4fa9-ba2a-e6a84bd11b3c"
+    },
+    {
+      "claim_id": "3306d995-0a78-4a54-a159-2711ad15243d",
+      "result_id": "ff17bf58-c50f-4fa9-ba2a-e6a84bd11b3c"
+    },
+    {
+      "claim_id": "1fd4f73d-1107-4d87-9088-0d92bf4acf12",
+      "result_id": "ff17bf58-c50f-4fa9-ba2a-e6a84bd11b3c"
+    },
+    {
+      "claim_id": "24597f01-f2eb-4f26-9b7d-355124403db1",
+      "result_id": "ff17bf58-c50f-4fa9-ba2a-e6a84bd11b3c"
+    },
+    {
+      "claim_id": "7831652b-5d8d-4f18-84e5-4df9d4d79445",
+      "result_id": "a6efb299-5108-44ac-8bb1-cf26a057ea9d"
+    },
+    {
+      "claim_id": "c0d4964e-5db5-4246-938b-63d8adbcefd0",
+      "result_id": "a6efb299-5108-44ac-8bb1-cf26a057ea9d"
+    },
+    {
+      "claim_id": "9e24c723-4470-4596-832f-fbdc2e54e38a",
+      "result_id": "a6efb299-5108-44ac-8bb1-cf26a057ea9d"
+    },
+    {
+      "claim_id": "1dfbec4e-2c17-4832-9137-4aa45c91fcd0",
+      "result_id": "a6efb299-5108-44ac-8bb1-cf26a057ea9d"
+    },
+    {
+      "claim_id": "9fc4814e-f53e-4985-abee-cde806aad788",
+      "result_id": "a6efb299-5108-44ac-8bb1-cf26a057ea9d"
+    },
+    {
+      "claim_id": "8bdbf308-7ac3-42fb-96ea-890561b2a531",
+      "result_id": "baa9d613-2963-4f51-a50c-f8a9fbd6ecc9"
+    },
+    {
+      "claim_id": "c34dfe00-9167-490f-adb0-d555b0e1f04b",
+      "result_id": "baa9d613-2963-4f51-a50c-f8a9fbd6ecc9"
+    },
+    {
+      "claim_id": "a1c9bae6-8cf0-4ae9-b5ee-490b50b79e22",
+      "result_id": "baa9d613-2963-4f51-a50c-f8a9fbd6ecc9"
+    },
+    {
+      "claim_id": "10bd3bea-f931-4f8f-8877-54bca18146b5",
+      "result_id": "baa9d613-2963-4f51-a50c-f8a9fbd6ecc9"
+    },
+    {
+      "claim_id": "af3bc923-0e86-42d7-a1ef-5ef24860fd2b",
+      "result_id": "baa9d613-2963-4f51-a50c-f8a9fbd6ecc9"
+    },
+    {
+      "claim_id": "bb111acf-7740-4e54-8b8c-da374f544c10",
+      "result_id": "baa9d613-2963-4f51-a50c-f8a9fbd6ecc9"
+    },
+    {
+      "claim_id": "cff8b468-da59-4bd4-91e1-79c1c46f6864",
+      "result_id": "0ceb361a-67db-4172-b44c-df547524f8be"
+    },
+    {
+      "claim_id": "2dcccc68-c5ee-4350-b956-b2a6d5345ec8",
+      "result_id": "0ceb361a-67db-4172-b44c-df547524f8be"
+    },
+    {
+      "claim_id": "3fd1a708-9a63-4b60-9f81-39682752c5ac",
+      "result_id": "0ceb361a-67db-4172-b44c-df547524f8be"
+    },
+    {
+      "claim_id": "51d006b7-e36b-4eac-9c75-031f29001579",
+      "result_id": "0ceb361a-67db-4172-b44c-df547524f8be"
+    },
+    {
+      "claim_id": "79905679-116d-4a77-ae48-3e3f603c75b1",
+      "result_id": "0ceb361a-67db-4172-b44c-df547524f8be"
+    },
+    {
+      "claim_id": "0fc54020-4176-4e9d-8305-caf552899cc7",
+      "result_id": "1455852d-1c47-48bd-b8a4-f138beb7dd98"
+    },
+    {
+      "claim_id": "1ae9553d-868b-4493-ab6c-2ba8912f4a64",
+      "result_id": "1455852d-1c47-48bd-b8a4-f138beb7dd98"
+    },
+    {
+      "claim_id": "02e04159-42e3-457d-8a3e-fec02ae748c9",
+      "result_id": "1455852d-1c47-48bd-b8a4-f138beb7dd98"
+    },
+    {
+      "claim_id": "d132829b-b258-4046-bf80-c12bf8475b2c",
+      "result_id": "1455852d-1c47-48bd-b8a4-f138beb7dd98"
+    },
+    {
+      "claim_id": "bc22453c-6325-4ed3-8411-bf0bfca75053",
+      "result_id": "1455852d-1c47-48bd-b8a4-f138beb7dd98"
+    },
+    {
+      "claim_id": "c83f43d9-741e-4bef-b003-18777c2d3874",
+      "result_id": "1455852d-1c47-48bd-b8a4-f138beb7dd98"
+    },
+    {
+      "claim_id": "4233ab45-87e9-4dd8-b618-07a27130a6af",
+      "result_id": "1455852d-1c47-48bd-b8a4-f138beb7dd98"
+    },
+    {
+      "claim_id": "deaaa03d-d85a-44c7-85ba-57444ffa54dd",
+      "result_id": "1455852d-1c47-48bd-b8a4-f138beb7dd98"
+    },
+    {
+      "claim_id": "55b8cdbc-46d9-4266-990c-459adbc3a87e",
+      "result_id": "1f59087d-45cc-461d-b58e-023538cd8009"
+    },
+    {
+      "claim_id": "dfa20d43-86ae-4799-a96f-69eb09a21365",
+      "result_id": "1f59087d-45cc-461d-b58e-023538cd8009"
+    },
+    {
+      "claim_id": "d8aec6a2-701a-46b2-b8a7-5b046eaaaa7a",
+      "result_id": "1f59087d-45cc-461d-b58e-023538cd8009"
+    },
+    {
+      "claim_id": "83353f22-2a41-406e-b21c-1a0d3c7a55d3",
+      "result_id": "1f59087d-45cc-461d-b58e-023538cd8009"
+    },
+    {
+      "claim_id": "b414b791-e8fd-4797-af13-decadcac9d59",
+      "result_id": "1f59087d-45cc-461d-b58e-023538cd8009"
+    },
+    {
+      "claim_id": "ab9b510b-e624-40e2-b45c-0058bce90759",
+      "result_id": "1f59087d-45cc-461d-b58e-023538cd8009"
+    },
+    {
+      "claim_id": "0df13f15-d111-46d3-8e24-e90eea13942a",
+      "result_id": "1f59087d-45cc-461d-b58e-023538cd8009"
+    },
+    {
+      "claim_id": "77fc3f97-a8cd-4eb8-8124-1c05ab255e08",
+      "result_id": "1f59087d-45cc-461d-b58e-023538cd8009"
+    },
+    {
+      "claim_id": "b9f8d9bc-1e33-4ff5-85bd-a9c0ded823a4",
+      "result_id": "849ef3c7-fca5-4c3c-abe4-921991804e80"
+    },
+    {
+      "claim_id": "b9a4295e-b89f-43de-91c1-94d92442ff66",
+      "result_id": "849ef3c7-fca5-4c3c-abe4-921991804e80"
+    },
+    {
+      "claim_id": "d30d2536-d510-4470-bffb-23969b05e8cd",
+      "result_id": "849ef3c7-fca5-4c3c-abe4-921991804e80"
+    },
+    {
+      "claim_id": "616b336f-1d86-43b4-a899-40815e468980",
+      "result_id": "849ef3c7-fca5-4c3c-abe4-921991804e80"
+    },
+    {
+      "claim_id": "39ddd96d-4489-468c-b661-b306cc350a37",
+      "result_id": "849ef3c7-fca5-4c3c-abe4-921991804e80"
+    },
+    {
+      "claim_id": "0ba2255d-d3fa-425a-ae40-efe16fb9e249",
+      "result_id": "849ef3c7-fca5-4c3c-abe4-921991804e80"
+    },
+    {
+      "claim_id": "581d9315-367a-473b-9a0c-c50142460677",
+      "result_id": "7011bffb-d1bb-43ef-a69e-d5d7b8ff0885"
+    },
+    {
+      "claim_id": "e8b964c2-a9d5-4ba5-ae65-2ec934dec831",
+      "result_id": "7011bffb-d1bb-43ef-a69e-d5d7b8ff0885"
+    },
+    {
+      "claim_id": "a4bf14a6-38e7-4c3a-85f9-b08be51c7761",
+      "result_id": "7011bffb-d1bb-43ef-a69e-d5d7b8ff0885"
+    },
+    {
+      "claim_id": "56ca5d50-77b5-4a01-8efd-f6de8ed981cf",
+      "result_id": "7011bffb-d1bb-43ef-a69e-d5d7b8ff0885"
+    },
+    {
+      "claim_id": "c8d30fc7-0ce3-4176-8e0a-f79ae7d5032b",
+      "result_id": "7011bffb-d1bb-43ef-a69e-d5d7b8ff0885"
+    },
+    {
+      "claim_id": "6edfe687-7a0a-42ac-a8e7-92cd9f185313",
+      "result_id": "7011bffb-d1bb-43ef-a69e-d5d7b8ff0885"
+    },
+    {
+      "claim_id": "ddc5c3a8-3da9-401c-9dfa-dd1ef1c0d50d",
+      "result_id": "7011bffb-d1bb-43ef-a69e-d5d7b8ff0885"
+    },
+    {
+      "claim_id": "2c1feb21-93a5-4df0-a8b4-16ff4a674f21",
+      "result_id": "7011bffb-d1bb-43ef-a69e-d5d7b8ff0885"
+    },
+    {
+      "claim_id": "9fb73fc3-5a6e-4e03-b874-b021558d30f3",
+      "result_id": "444431a9-cab8-45da-b81d-5398a879c276"
+    },
+    {
+      "claim_id": "65c67119-015a-450d-88d4-f412358f32e2",
+      "result_id": "444431a9-cab8-45da-b81d-5398a879c276"
+    },
+    {
+      "claim_id": "a1a9debc-cbaf-4c00-a0df-f13e8db6debd",
+      "result_id": "444431a9-cab8-45da-b81d-5398a879c276"
+    },
+    {
+      "claim_id": "b87d18ff-2541-446f-880d-7822580ad433",
+      "result_id": "444431a9-cab8-45da-b81d-5398a879c276"
+    },
+    {
+      "claim_id": "78bfe4cb-6403-40d7-9710-455e0a466d0b",
+      "result_id": "444431a9-cab8-45da-b81d-5398a879c276"
+    },
+    {
+      "claim_id": "2513236e-df1c-4fdf-9c9c-f57a0f36f713",
+      "result_id": "444431a9-cab8-45da-b81d-5398a879c276"
+    },
+    {
+      "claim_id": "70c3215d-a67f-4465-8689-a38f24f31e36",
+      "result_id": "7f9c28b3-dd7e-4ed1-b93d-96237e14d563"
+    },
+    {
+      "claim_id": "5002cf0e-614d-4ec4-96f1-32faad0b6349",
+      "result_id": "7f9c28b3-dd7e-4ed1-b93d-96237e14d563"
+    },
+    {
+      "claim_id": "aaf9e5b9-5925-45c5-a6a6-f230b2bfd9b8",
+      "result_id": "26b8d6e7-2024-4589-bc8e-a001cf8d792c"
+    },
+    {
+      "claim_id": "96f04eed-aaa8-4e4e-b7e7-237caf960fca",
+      "result_id": "26b8d6e7-2024-4589-bc8e-a001cf8d792c"
+    },
+    {
+      "claim_id": "cbc3335a-e8cf-4857-8fe7-36fff984d56f",
+      "result_id": "26b8d6e7-2024-4589-bc8e-a001cf8d792c"
+    },
+    {
+      "claim_id": "03c98b88-fd7b-4e84-99e3-b3967d56b588",
+      "result_id": "26b8d6e7-2024-4589-bc8e-a001cf8d792c"
+    },
+    {
+      "claim_id": "1af49d3f-d5b0-439a-8a9c-c6142dfb500e",
+      "result_id": "26b8d6e7-2024-4589-bc8e-a001cf8d792c"
+    },
+    {
+      "claim_id": "c38262ee-bbf6-4ac1-9663-339b55e36f8e",
+      "result_id": "26b8d6e7-2024-4589-bc8e-a001cf8d792c"
+    },
+    {
+      "claim_id": "0b68ca8d-643f-45f6-91c1-19f3d9a5e430",
+      "result_id": "e1f5317b-6c26-4427-8e3a-1f7982606f01"
+    },
+    {
+      "claim_id": "7260d939-0f5b-4ea9-965a-94680f9c7ef2",
+      "result_id": "e1f5317b-6c26-4427-8e3a-1f7982606f01"
+    },
+    {
+      "claim_id": "4502fa38-2364-425b-8ba0-d48553323312",
+      "result_id": "e1f5317b-6c26-4427-8e3a-1f7982606f01"
+    },
+    {
+      "claim_id": "1b9b6d51-0a2b-4d77-803d-aa25ad2c4bb3",
+      "result_id": "e1f5317b-6c26-4427-8e3a-1f7982606f01"
+    },
+    {
+      "claim_id": "cdebaa96-62cc-4cd2-bdf2-53576b190a49",
+      "result_id": "eb3fdf97-9ede-49ca-af9a-e9f07751f652"
+    },
+    {
+      "claim_id": "6f1328dd-390d-45e9-8b0a-c1cd31371031",
+      "result_id": "eb3fdf97-9ede-49ca-af9a-e9f07751f652"
+    },
+    {
+      "claim_id": "8443893b-f0ad-4276-a0c9-1f0b74c80946",
+      "result_id": "eb3fdf97-9ede-49ca-af9a-e9f07751f652"
+    },
+    {
+      "claim_id": "3e7e273b-26be-48d6-b7d4-ee5174a51265",
+      "result_id": "6c842914-1171-4468-a7d2-c1e8afdd33bd"
+    }
+  ],
+  "comparisons": []
+}

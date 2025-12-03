@@ -1,0 +1,514 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "NKX2-1 loss in lung adenocarcinoma leads to invasive mucinous adenocarcinoma (IMA), a subtype characterized by gastric differentiation and a distinct spectrum of driver oncogenes, with KRAS mutations enriched (62%), BRAF mutations present but less frequent (3%), and EGFR mutations rare (0.6%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C35-C39 establish the relationship between NKX2-1 loss and IMA characteristics based on prior literature (citations provided). The mutation frequencies are cited from published work (Cha and Shim, 2017), providing established context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "In BRAFV600E-driven lung adenocarcinoma, NKX2-1 is required for early tumorigenesis but dispensable for established tumor growth. Nkx2-1 deletion at tumor initiation significantly impaired early tumorigenesis (lower tumor burden at 8 weeks, prolonged survival), yet high-grade BPN tumors comprised ~74% of tumor burden at endpoint, indicating NKX2-1 loss is compatible with progression to high-grade states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C65-C73 are supported by experimental data shown in Figures 1B-D. The dual observation that Nkx2-1 deletion impairs initiation but permits progression is demonstrated through tumor burden measurements, survival analysis, and histopathological grading. The interpretation that BP mice succumb to abundant low-grade tumors while BPN mice have time for high-grade progression is logically consistent with the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Using a dual recombinase system to delete Nkx2-1 in established BRAFV600E-driven tumors, Nkx2-1 deletion drove transition to IMA but had no significant effect on tumor burden at early timepoints (3 weeks) or overall survival. This contrasts with KRASG12D-driven tumors where Nkx2-1 deletion greatly enhanced tumor burden, demonstrating that NKX2-1 loss is tolerated but does not augment growth in established BRAFV600E tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C84 are supported by data from the dual recombinase experiments shown in Figures 2B-E. The comparison between BRAFV600E and KRASG12D models (C77) strengthens the conclusion by demonstrating oncogene-specific effects. The lack of effect on proliferation (C78, MCM2 analysis) and survival (C79) supports the conclusion that NKX2-1 is dispensable for established BRAFV600E tumor growth.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The differential effects of NKX2-1 loss in KRAS versus BRAF-driven tumors explain why KRAS mutations are enriched in IMA relative to LUAD overall, whereas BRAF mutations are diminished in frequency but not excluded, and EGFR mutations are excluded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 represent a logical inference from the experimental findings (C65-C84) combined with known mutation frequencies in IMA (C37-C39). The reasoning is sound: since NKX2-1 loss augments KRAS-driven tumors but impairs BRAF tumor initiation (while permitting progression), this would lead to enrichment of KRAS and relative depletion of BRAF in IMA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Nkx2-1-deficient BPN tumors exhibit mucin production and gastrointestinal differentiation, expressing gastric markers (HNF4A, PDX1, Gastrokine 1, Cathepsin E, Galectin-4) while lacking pulmonary markers (pro-surfactant proteins B and C, CD36), closely resembling KRASG12D GEMM tumors and human IMA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C64 are supported by histological and IHC data shown in Figure 1A and Figure 1\u2014figure supplement 1A-B. The characterization includes both positive markers (gastric) and negative markers (pulmonary), providing comprehensive evidence for the gastric differentiation phenotype. The comparison to prior models (C64) is appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Nkx2-1 deletion in BRAFV600E-driven tumors led to increased MAPK signaling downstream of oncogenic BRAF, with BPN tumors showing strong pERK staining compared to weak, patchy staining in BP tumors. BPN tumors also exhibited increased phosphorylation of p90RSK, 4E-BP1, and S6 proteins, indicating hyperactivation of both MAPK and mTORC1 pathways. These features were conserved in vitro in primary tumor spheroid cultures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C99 are supported by IHC data shown in Figure 3A-C and Figure 3\u2014figure supplement 1. The observation that pMEK levels are similar between BP and BPN (C93) while pERK differs suggests regulation downstream of MEK (C94), which is a reasonable interpretation. The conservation of findings in organoid cultures (C99) strengthens the result by demonstrating reproducibility across experimental systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "In human tumor samples, strong pERK staining was detectable in the majority of mucinous tumors (14/17, with 7 showing diffuse staining), while NKX2-1-positive LUAD showed a trend toward lower pERK staining (only 20% diffusely positive vs. 41% of mucinous tumors, and 35% negative vs. 18% of mucinous tumors), demonstrating that high pERK levels in IMA mouse models can be observed in many cases of human IMA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C105 are supported by IHC analysis of human tumor samples shown in Figure 3D and Figure 3\u2014figure supplement 1D. The sample sizes are modest (n=17 mucinous, n=51 NKX2-1-positive) but adequate for the descriptive analysis presented. The authors appropriately note that staining patterns reflect both biological heterogeneity and variable specimen processing, acknowledging a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Combined BRAF/MEK inhibition (PLX4720 + PD0325901) effectively suppressed ERK phosphorylation and led to dramatically lower tumor burden in both BP and BPN mice at 2 and 4 weeks. The decrease in BPN tumor burden was two-fold greater than in BP mice, suggesting BPN tumors were more sensitive to MAPK inhibition. Residual MAPK-inhibited BPN tumors resembled hyperplasia induced by Nkx2-1 deletion alone, and both BP and BPN cells readily regrew after drug withdrawal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C112 are supported by data shown in Figures 4A-C and Figure 4\u2014figure supplement 1A. The tumor burden measurements at multiple timepoints (2 and 4 weeks) strengthen the findings. The observation that tumors regrow after drug withdrawal (C112) is important for understanding the clinical implications and is appropriately documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "RNA sequencing analysis revealed that the four experimental groups (control and MAPKi-treated BP and BPN tumors) could be distinguished transcriptomically. PC1 reflected Nkx2-1 deletion (greatest source of diversity), while PC2 reflected MAPK inhibition effects (more strongly distinguishing BPN than BP tumors). BP tumors expressed higher levels of pulmonary genes (Sftpb, Sftpc) and BPN tumors expressed higher levels of gastric genes (Pdx1, HNF4A targets), with Dusp6 (ERK readout) significantly downregulated by MAPK inhibition in both genotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C118 are supported by RNA-seq data shown in Figure 4D and Figure 4\u2014figure supplement 1B-D. The PCA analysis appropriately identifies the major sources of transcriptomic variation. The differential expression of lineage markers (C116-C117) is consistent with the histological characterization, and the Dusp6 downregulation (C118) validates effective MAPK pathway inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Single-cell RNA sequencing of 6,807 high-quality BPN tumor cells identified eight major clusters. The majority (70%) fell into three NKX2-1-low clusters (1-3) expressing gastric markers, representing complete recombinants. The remaining 30% (clusters 4-8) exhibited abundant Nkx2-1 expression including splicing from Cre-target exons, representing incomplete recombinants. Cluster analysis confirmed BPN tumors display higher MAPK signaling than BP tumors, and RAF/MEK inhibition reduces pathway output in both genotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C132 are supported by single-cell RNA-seq data shown in Figures 4E-F and Figure 4\u2014figure supplement 1E-H. The validation of recombination status by examining bam files for splice junctions (C124) is rigorous. The identification of incomplete recombinants (C127-C128) addresses a potential confounding factor and strengthens the interpretation of whole-tumor RNA-seq data. The use of the MEK18 signature (C131-C132) provides orthogonal validation of MAPK pathway differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "MAPKi treatment of BP tumors led to a significant decline in MCM2-positive cells, BrdU incorporation, and pHH3-positive cells, indicating that MAPK inhibition blocks proliferation and induces cell cycle exit into quiescence. In contrast, MAPKi treatment of BPN tumors led to a paradoxical increase in MCM2-positive cells despite decreased tumor burden, although BrdU and pHH3 declined similarly to BP cells, suggesting residual BPN cells fail to exit the cell cycle and enter quiescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C139 are supported by IHC data shown in Figures 5A-B and Figure 5\u2014figure supplement 1A-C. The differential response between BP and BPN tumors is striking and well-documented. The paradoxical increase in MCM2 in BPN tumors (C137) despite decreased proliferation markers (C138) is appropriately interpreted as failure to exit the cell cycle (C139), though the mechanism requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "RNA-seq and single-cell analysis demonstrated that BP and BPN tumor cells exhibit differential cell cycle responses to MAPK inhibition. Multiple cell cycle-related pathways declined in treated BP tumors but not in treated BPN tumors. In single-cell analysis using diffusion mapping, treatment of BP cells caused marked redistribution toward the G0-enriched extreme, while BPN cell distribution was minimally affected by MAPK inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C145 are supported by RNA-seq pathway analysis (Figure 5C-D) and novel single-cell diffusion mapping analysis (Figures 5E-G). The development of a new methodology for analyzing quiescence in scRNA-seq data (C144-C145) is a strength, though the approach would benefit from additional validation. The convergence of multiple analytical approaches strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Suppression of MAPK activity led to decreased Ccnd1 transcript and protein levels in both BP and BPN tumors, suggesting MAPK is a major activator of Ccnd1. In contrast, Ccnd2 mRNA levels were significantly higher in BPN than BP tumors, and BRAF/MEK inhibition in BPN tumors led to further increases in Ccnd2. Cyclin D2 protein was only detectable by IHC in MAPKi-treated BPN tumors. Two weeks of BRAF/MEK inhibition significantly decreased phospho-RB-positive cells in BP tumors but caused no change in BPN tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C152 are supported by RNA-seq, qRT-PCR, and IHC data shown in Figures 5H-I and Figure 5\u2014figure supplement 1E-G. The differential regulation of Ccnd1 vs. Ccnd2 (C146-C149) provides a mechanistic explanation for the differential cell cycle response. The phospho-RB data (C151-C152) supports the proposed mechanism linking Cyclin D2 to maintained CDK4/6 activity in BPN tumors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "In organoid-derived subcutaneous tumors, MAPK inhibition failed to reduce the MCM2 rate in control BPN adenocarcinomas, whereas the MCM2 rate declined in tumors with Cyclin D2 knockdown upon RAF/MEK inhibitor treatment. This provides evidence that Cyclin D2 plays a role in the response of NKX2-1-negative lung adenocarcinoma to MAPK inhibition, potentially by maintaining CDK4/6 activity and RB phosphorylation to prevent cell cycle exit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C156 are supported by data from Cyclin D2 knockdown experiments shown in Figures 5J and Figure 5\u2014figure supplement 1H. The authors appropriately acknowledge that organoid-derived subcutaneous tumors do not perfectly mimic the autochthonous model, which is an important caveat. The proposed mechanism (C156) is reasonable but speculative, as indicated by the evidence type.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "BPN tumor cells normally express high levels of surface mucous cell markers (Muc5ac, Gkn1), which decline significantly upon MAPK pathway inhibition. In parallel, chief cell markers (Pgc, Cym, Pga5, Clps) were highly upregulated by RAF/MEK inhibitor treatment. Cym is expressed predominantly during neonatal stomach development, suggesting MAPKi-treated tumor cells may adopt an immature chief cell-like phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C163 are supported by RNA-seq data shown in Figure 6A and Figure 4\u2014figure supplement 1D. The identification of specific gastric lineage markers and their differential regulation provides strong evidence for a lineage switch within the gastric compartment. The interpretation regarding immature chief cell phenotype (C163) is appropriately qualified as speculative based on the Cym expression pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "MAPK inhibition in NKX2-1-negative tumor cells was associated with induction of tuft cell markers (Pou2f3, Gfi1b, Gnat3) and progenitor marker Tff2. GSEA showed signatures of both Lgr5-expressing gastric chief cells and tuft cells were significantly enriched in MAPK-inhibited BPN cells. Single-cell analysis confirmed downregulation of surface mucous markers and induction of chief markers, with MAPK inhibition appearing to increase the fraction of Pou2f3-positive cells rather than absolute transcript levels per cell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C170 are supported by RNA-seq, GSEA, and single-cell data shown in Figures 6A-C. The distinction between increased fraction of positive cells versus increased expression per cell (C169) demonstrates careful analysis of the single-cell data. The convergence of bulk and single-cell RNA-seq findings strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "IHC validation showed GKN1 protein was abundant in control BPN tumors but depleted in MAPK inhibitor-treated BPN tumors. Control BPN tumors were entirely negative for Pepsinogen C, whereas a subset of drug-treated BPN cells were positive. A small subset of control BPN cells were POU2F3 positive, with higher fraction upon MAPK inhibition. All three gastric lineage markers were undetectable in BP tumors. Within 2 weeks of drug withdrawal, GKN1, mucin production, and POU2F3 levels returned to control levels, demonstrating BPN cells readily transition back to their original identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C171-C181 are supported by IHC data shown in Figures 6D and Figure 6\u2014figure supplement 1A, 2. The protein-level validation of RNA-seq findings strengthens the conclusions. The drug withdrawal experiment (C178-C181) is important for demonstrating the plasticity of the lineage switch and is well-documented. The observation that all three markers are undetectable in BP tumors (C177) serves as an appropriate negative control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186"
+    ],
+    "result": "In human tumor samples, almost all IMA tumors (15/16) harbored a minority population of POU2F3-positive cells (~5% or less of tumor cells overall). In contrast, most NKX2-1-positive human lung adenocarcinomas were entirely POU2F3-negative (44/51), though a minor population was detected in seven NKX2-1-positive cases. This demonstrates that a rare population of POU2F3-positive tumor cells is readily detectable in both human IMA and murine models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C182-C186 are supported by IHC analysis of human tumor samples shown in Figure 6\u2014figure supplement 1B-C. The sample sizes are adequate for the descriptive analysis. The finding that POU2F3-positive cells are present in some NKX2-1-positive tumors (C185) is interesting and suggests complexity in lineage marker expression that warrants further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192"
+    ],
+    "result": "MEK inhibitor stimulated expression of chief (Cym, Gif, Pgc) and tuft (Pou2f3, Gfi1b) cell markers in both KPN and BPN organoid cultures. Induction of chief cell markers occurred rapidly (2 hr for Cym, 6 hr for Pgc) before changes in cell number, with kinetics more consistent with true lineage switch rather than selection. Multiple MAPK pathway inhibitors (ERK-inhibitor GDC-0994, MEK inhibitor PD0325901, BRAF inhibitor PLX4720) all induced Cym, demonstrating the MAPK pathway modulates gastric lineage in IMA cells driven by distinct oncogenes (KRAS and BRAF) in both in vivo and in vitro settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C187-C192 are supported by organoid culture data shown in Figures 6E and Figure 6\u2014figure supplement 1E-G. The rapid kinetics of induction (C188) before changes in cell viability (shown in Figure 6E bottom panel) strongly supports a lineage switch mechanism rather than selection (C189). Testing multiple inhibitors (C190) and both KRAS and BRAF-driven models (C187) demonstrates the generalizability of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201"
+    ],
+    "result": "Several WNT pathway genes that are direct transcriptional targets of canonical WNT signaling (Axin2, Lgr5, Wnt11, Fzd, Fgf9, Notum, Sox9, Lrp1, Sox4, Znrf3, Wnt3a) were significantly activated in MAPK-inhibited BPN tumors. IPA identified \u03b2-catenin as the second top upstream regulator with an activation z-score suggesting activated state due to MAPK inhibition. WNT targets Axin2 and Lgr5 were induced in single-cell analysis, with imputation analysis supporting robust increases. MEK inhibition induced Lgr5 and Axin2 within 4 hr before changes in cell number or viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C195-C201 are supported by RNA-seq, IPA, and time course data shown in Figures 7A and Figure 7\u2014figure supplement 1A-D. The convergence of multiple analytical approaches (pathway analysis, upstream regulator analysis, regulatory motif analysis, single-cell analysis, time course experiments) provides strong evidence for WNT pathway activation. The rapid kinetics (C201) support a direct effect rather than secondary consequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206"
+    ],
+    "result": "Using a WNT reporter construct (7TGP), sorted WNTrep-low cells re-equilibrated to a mix of WNTrep-high and WNTrep-low cells when cultured in 50% L-WRN media. Culture in 5% L-WRN reduced the WNTrep-high percentage, whereas MEK inhibitor increased it. These experiments indicate WNT signaling can be induced in WNTrep-low cells with rapid kinetics, and pure selection for a WNTrep-high subpopulation is unlikely to account for the overall state change of tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C202-C206 are supported by WNT reporter experiments shown in Figures 7D-E. The experimental design directly addresses whether the observed changes reflect induction versus selection, which is a critical mechanistic question. The authors appropriately acknowledge they cannot exclude differential tolerance of WNTrep-high cells to MEK inhibition (C206), but the data argue against pure selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C207",
+      "C208",
+      "C209"
+    ],
+    "result": "Several Wnt genes were induced by MAPKi treatment in BPN tumor cells (Wnt2b, Wnt4, Wnt8b, Wnt10b), while additional Wnt ligands (Wnt2, Wnt5b, Wnt6) were more highly expressed in stromal cells co-isolated during lung tumor preparation. This indicates multiple potential in vivo sources of WNT ligand, including both treated BPN tumor cells and the tumor stroma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C207-C209 are supported by analysis of Wnt transcript levels in scRNA-seq data shown in Figure 7\u2014figure supplement 2. The identification of both tumor cell and stromal sources of WNT ligands is important for understanding the mechanism of WNT pathway activation. However, the relative contributions of these sources remain unclear and would require additional experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C212",
+      "C213",
+      "C214",
+      "C215",
+      "C216",
+      "C217",
+      "C218"
+    ],
+    "result": "Levels of Axin2 and Lgr5 were lower in organoids cultured in 5% L-WRN than 50% L-WRN, with LGK-974 causing further reduction, suggesting endogenous WNT ligand production complements L-WRN media. MEK inhibitor stimulated canonical WNT signaling (increased Axin2 and Lgr5) within 24 hr. Induction of chief markers (Cym, Pgc, Gif) by Cobimetinib was partially impaired when WNT signaling was reduced, while tuft cell markers (Pou2f3, Gfi1b) were largely unaffected. This demonstrates one component of lineage switching (chief cell marker induction) is partially WNT-dependent, whereas tuft cell marker induction is largely WNT-independent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C212-C218 are supported by organoid culture experiments with WNT modulation shown in Figures 8A and Figure 8\u2014figure supplement 1A. The experimental design using both reduced L-WRN media and LGK-974 provides complementary approaches to reduce WNT signaling. The differential effects on chief versus tuft cell markers (C215-C218) reveal mechanistic complexity and are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C219",
+      "C220"
+    ],
+    "result": "Using a novel NKX2-1-negative organoid line harboring conditional alleles of Foxa1 and Foxa2, Foxa1/2 deletion abrogated induction of chief cell markers but not tuft cell markers upon MEK inhibition. This demonstrates the surface to chief gastric lineage switch is driven by both WNT signaling and FoxA1/2 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C219-C220 are supported by Foxa1/2 deletion experiments shown in Figures 8B and Figure 8\u2014figure supplement 1B. The genetic approach provides strong evidence for the role of FoxA1/2 in chief cell marker induction. The convergence with WNT signaling findings (C217-C218) suggests these pathways may act in parallel or cooperatively.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C222",
+      "C223",
+      "C224",
+      "C225",
+      "C226"
+    ],
+    "result": "In single-cell data, MEK activity was positively correlated with Ccnd1 levels, while Ccnd2 levels were inversely correlated with the MEK signature score and positively correlated with WNT activity signature. This suggests Ccnd1 levels may be primarily dependent on MAPK activity, whereas Ccnd2 levels may be more directly dependent on WNT activity in this specific context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C222-C226 are supported by correlation analysis of single-cell data shown in Figure 8\u2014figure supplement 1C. The correlations provide evidence linking WNT signaling to Ccnd2 expression, which is mechanistically important for understanding the cell cycle phenotype. However, the interpretation (C225-C226) is appropriately qualified as speculative, as correlation does not establish causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C227",
+      "C228",
+      "C229",
+      "C230"
+    ],
+    "result": "Four weeks of RAF/MEK inhibitor treatment led to a significant increase in MCM2-positive cells in BPN tumors. Treatment with LGK-974 alone had no effect on MCM2, but additional treatment with LGK-974 was sufficient to block the induction of MCM2 by RAF/MEK inhibition, resulting in an MCM2-positive rate similar to controls. This demonstrates that induction of WNT signaling after RAF/MEK inhibition acts to prevent residual BPN tumor cells from entering quiescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C227-C230 are supported by in vivo drug treatment experiments shown in Figure 8C. The experimental design directly tests the role of WNT signaling in the cell cycle phenotype by combining MAPK and WNT inhibition. The result provides strong evidence that WNT signaling mediates the failure of BPN cells to enter quiescence after MAPK inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C233",
+      "C234",
+      "C235",
+      "C236",
+      "C237",
+      "C238"
+    ],
+    "result": "Vehicle and LGK-974-treated BPN tumors exhibited predominantly membranous \u03b2-catenin staining with no nuclear \u03b2-catenin. MAPK inhibition alone elicited accumulation of \u03b2-catenin throughout the cell, including the nucleus, which diminished with combined MAPK and LGK-974 treatment. These findings are consistent with the possibility that \u03b2-catenin mediates MAPK-inhibition-induced WNT pathway activation and lineage switching in BPN tumors. In contrast, control BP tumors had lower levels of active \u03b2-catenin than BPN tumors, with no appreciable increase with MAPK inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C233-C238 are supported by IHC data shown in Figure 8\u2014figure supplement 2A-B. The \u03b2-catenin localization data provides additional evidence for WNT pathway activation by MAPK inhibition. However, the interpretation (C236) is appropriately qualified as speculative, as the IHC data alone do not establish causation. The differential response between BP and BPN tumors (C237-C238) is consistent with other findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C239",
+      "C240",
+      "C241",
+      "C242"
+    ],
+    "result": "Adding either LGK-974 or Palbociclib to RAF/MEK inhibitors increased the number of cells in quiescence compared to RAF/MEK inhibitor alone. Addition of Palbociclib also reduced phospho-RB (S807/811) in tumors. These data suggest a model in which elevated WNT signaling in MAPKi-treated BPN tumors prevents cell cycle exit by maintaining higher levels of CDK4/6 activity than in BP tumors, with Cyclin D2 being the most likely CDK4/6 partner based on gene expression data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C239-C242 are supported by in vivo drug combination experiments shown in Figures 8D-E. The convergence of WNT inhibition and CDK4/6 inhibition effects on cell cycle exit provides strong support for the proposed model. However, the model (C241-C242) remains somewhat speculative as direct evidence for Cyclin D2-CDK4/6 complexes maintaining activity is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C243",
+      "C244"
+    ],
+    "result": "Despite short-term effects of adding LGK-974 or Palbociclib to RAF/MEK inhibitor on cell cycle exit, there was no significant increase in survival when either drug was added. This indicates that driving residual BPN cells out of the cell cycle is not sufficient to prevent tumor rebound after drug cessation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C243-C244 are supported by survival data shown in Figure 8\u2014figure supplement 1E. This negative result is important for understanding the limitations of the therapeutic approach and is appropriately reported. The interpretation (C244) is reasonable given the data, though the mechanisms of tumor rebound remain unclear and would require additional investigation.",
+    "result_type": "MAJOR"
+  }
+]

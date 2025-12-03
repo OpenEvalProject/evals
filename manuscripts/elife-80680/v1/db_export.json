@@ -1,0 +1,1532 @@
+{
+  "submission": {
+    "id": "8c8dacee-7174-4b5f-8f1f-e587dd57b109",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T19:49:09.117171Z",
+    "updated_at": "2025-12-03T19:49:09.117171Z"
+  },
+  "content": [
+    {
+      "id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "submission_id": "8c8dacee-7174-4b5f-8f1f-e587dd57b109",
+      "content_type": "manuscript",
+      "content_text": "# Neural learning rules for generating flexible predictions and computing the successor representation\n\n## Authors\n\n- Ching Fang<sup>1</sup> ([ORCID: 0000-0003-3653-0057](https://orcid.org/0000-0003-3653-0057))\n- Dmitriy Aronov<sup>1</sup> ([ORCID: 0000-0002-8277-5074](https://orcid.org/0000-0002-8277-5074))\n- LF Abbott<sup>1</sup>\n- Emily L Mackevicius<sup>1</sup> ([ORCID: 0000-0001-6593-4398](https://orcid.org/0000-0001-6593-4398)) \u2020\n\n### Affiliations\n\n1. Zuckerman Institute, Department of Neuroscience, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))\n2. Basis Research Institute New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe predictive nature of the hippocampus is thought to be useful for memory-guided cognitive behaviors. Inspired by the reinforcement learning literature, this notion has been formalized as a predictive map called the successor representation (SR). The SR captures a number of observations about hippocampal activity. However, the algorithm does not provide a neural mechanism for how such representations arise. Here, we show the dynamics of a recurrent neural network naturally calculate the SR when the synaptic weights match the transition probability matrix. Interestingly, the predictive horizon can be flexibly modulated simply by changing the network gain. We derive simple, biologically plausible learning rules to learn the SR in a recurrent network. We test our model with realistic inputs and match hippocampal data recorded during random foraging. Taken together, our results suggest that the SR is more accessible in neural circuits than previously thought and can support a broad range of cognitive functions.\n\n## Introduction\n\nTo learn from the past, plan for the future, and form an understanding of our world, we require memories of personal experiences. These memories depend on the hippocampus for formation and recall (Scoville and Milner, 1957; Penfield and Milner, 1958; Corkin, 2002), but an algorithmic and mechanistic understanding of memory formation and retrieval in this region remains elusive. From a computational perspective, a key function of memory is to use past experiences to inform predictions of possible futures (Bubic et al., 2010; Wayne et al., 2018; Whittington et al., 2020; Momennejad, 2020). This suggests that hippocampal memory is stored in a way that is particularly suitable for forming predictions. Consistent with this hypothesis, experimental work has shown that, across species and tasks, hippocampal activity is predictive of the future experience of an animal (Skaggs and McNaughton, 1996; Lisman and Redish, 2009; Mehta et al., 1997; Payne et al., 2021; Muller and Kubie, 1989; Pfeiffer and Foster, 2013; Schapiro et al., 2016; Garvert et al., 2017). Furthermore, theoretical work has found that models endowed with predictive objectives tend to resemble hippocampal activity (Blum and Abbott, 1996; Mehta et al., 2000; Stachenfeld et al., 2017; Momennejad et al., 2017; Geerts et al., 2020; Recanatesi et al., 2021; Whittington et al., 2020; George et al., 2021). Thus, it is clear that predictive representations are an important aspect of hippocampal memory.\n\nInspired by work in the reinforcement learning (RL) field, these observations have been formalized by describing hippocampal activity as a predictive map under the successor representation (SR) algorithm (Dayan, 1993; Gershman et al., 2012; Stachenfeld et al., 2017). Under this framework, an animal\u2019s experience in the world is represented as a trajectory through some defined state space, and hippocampal activity predicts the future experience of an animal by integrating over the likely states that an animal will visit given its current state. This algorithm further explains how, in addition to episodic memory, the hippocampus may support relational reasoning and decision making (Recanatesi et al., 2021; Mattar and Daw, 2018), consistent with differences in hippocampal representations in different tasks (Markus et al., 1995; Jeffery, 2021). The SR framework captures many experimental observations of neural activity, leading to a proposed computational function for the hippocampus (Stachenfeld et al., 2017).\n\nWhile the SR algorithm convincingly argues for a computational function of the hippocampus, it is unclear what biological mechanisms might compute the SR in a neural circuit. Thus, several relevant questions remain that are difficult to probe with the current algorithm. What kind of neural architecture should one expect in a region that can support this computation? Are there distinct forms of plasticity and neuromodulation needed in this system? What is the structure of hippocampal inputs to be expected? A biologically plausible model can explore these questions and provide insight into both mechanism and function (Marr and Poggio, 1976; Frank, 2015; Love, 2021).\n\nIn other systems, it has been possible to derive biological mechanisms with the goal of achieving a particular network function or property (Zeldenrust et al., 2021; Karimi et al., 2022; Pehlevan et al., 2017; Olshausen and Field, 1996; Burbank, 2015; Aitchison et al., 2021; F\u00f6ldi\u00e1k, 1990; Tyulmankov et al., 2022). Key to many of these models is the constraint that learning rules at any given neuron can only use information local to that neuron. A promising direction towards such a neural model of the SR is to use the dynamics of a recurrent neural network (RNN) to perform SR computations (V\u00e9rtes and Sahani, 2019; Russek et al., 2017). An RNN model is particularly attractive as the hippocampus is highly recurrent, and its connectivity patterns are thought to support associative learning and recall (Gardner-Medwin, 1976; McNaughton and Morris, 1987; Marr et al., 1991; Liu et al., 2012). However, an RNN model of the SR has not been tied to neural learning rules that support its operation and allow for testing of specific hypotheses.\n\nHere, we show that an RNN with local learning rules and an adaptive learning rate exactly calculates the SR at steady state. We test our model with realistic inputs and make comparisons to neural data. In addition, we compare our results to the standard SR algorithm with respect to the speed of learning and the learned representations in cases where multiple solutions exist. Our work provides a mechanistic account for an algorithm that has been frequently connected to the hippocampus, but could only be interpreted at an algorithmic level. This network-level perspective allows us to make specific predictions about hippocampal mechanisms and activity.\n\n## Results\n\n### The successor representation\n\nThe SR algorithm described in Stachenfeld et al., 2017 first discretizes the environment explored by an animal (whether a physical or abstract space) into a set of $n$ states that the animal transitions through over time (Figure 1A). The animal\u2019s behavior can then be thought of as a Markov chain with a corresponding transition probability matrix $T_{N\\timesN}$ (Figure 1B). $T$ gives the probability that the animal transitions to a state $s^{\u2032}$ from the state $s$ in one time step: $T_{j\u2062i}=P\u2062(s^{\u2032}=i|s=j)$. The SR matrix is defined as\n\n$$\nM=\\sumt=0\u221e\\gamma^{t}T^{t}=(I\u2212\\gammaT)^{\u22121}\n$$\n\nHere, $\\gamma\\in(0,1)$ is a temporal discount factor. $M_{j\u2062i}$ can be seen as a measure of the occcupancy of state $i$ over time if the animal starts at state $j$, with $\\gamma$ controlling how much to discount time steps in the future (Figure 1C). The SR of state $j$ is the $j$th row of $M$ and represents the states that an animal is likely to transition to from state $j$. Stachenfeld et al., 2017 demonstrate that, if one assumes each state drives a single neuron, the SR of $j$ resembles the population activity of hippocampal neurons when the animal is at state $j$ (Figure 1D). They also show that the $i$th column of $M$ resembles the place field (activity as a function of state) of a hippocampal neuron representing state $i$ (Figure 1E). In addition, the $i$th column of $M$ shows which states are likely to lead to state $i$.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/80680/elife-80680-fig1-v1.jpg)\n\n**Figure 1.:** (A) The behavior of an animal running down a linear track can be described as a transition between discrete states where the states encode spatial location. (B) By counting the transitions between different states, the behavior of an animal can be summarized in a transition probability matrix $T$. (C) The successor representation matrix is defined as $M=\\sum_{t=0}^{\u221e}\\gamma^{t}\u2062T^{t}$. Here, $M$ is shown for $\\gamma=0.6$. Dashed boxes indicate the slices of $M$ shown in (D) and (E). (D) The fourth row of the $M$ matrix describes the activity of each state-encoding neuron when the animal is at the fourth state. (E) The fourth column of the $M$ matrix describes the place field of the neuron encoding the fourth state. (F) Recurrent network model of the SR (RNN-S). The current state of the animal is one-hot encoded by a layer of input neurons. Inputs connect one-to-one onto RNN neurons with synaptic connectivity matrix $J=T^{\u22ba}$. The activity of the RNN neurons are represented by $x$. SR activity is read out from one-to-one connections from the RNN neurons to the output neurons. The example here shows inputs and outputs when the animal is at state 4. (G) Feedforward neural network model of the SR (FF-TD). The $M$ matrix is encoded in the weights from the input neurons to the output layer neurons, where the SR activity is read out. (H) Diagram of the terms used for the RNN-S learning rule. Terms in red are used for potentiation while terms in blue are used for normalization (Equation 4). (I) As in (H) but for the feedforward-TD model (Equation 11). To reduce the notation indicating time steps, we use $\u2032$ in place of $(t)$ and no added notation for $(t-1)$.\n\n### Recurrent neural network computes SR at steady state\n\nWe begin by drawing connections between the SR algorithm (Stachenfeld et al., 2017) and an analogous neural network architecture. The input to the network encodes the current state of the animal and is represented by a layer of input neurons (Figure 1FG). These neurons feed into the rest of the network that computes the SR (Figure 1FG). The SR is then read out by a layer of output neurons so that downstream systems receive a prediction of the upcoming states (Figure 1FG). We will first model the inputs $\u03d5$ as one-hot encodings of the current state of the animal (Figure 1FG). That is, each input neuron represents a unique state, and input neurons are one-to-one connected to the hidden neurons.\n\nWe first consider an architecture in which a recurrent neural network (RNN) is used to compute the SR (Figure 1F). Let us assume that the $T$ matrix is encoded in the synaptic weights of the RNN. In this case, the steady state activity of the network in response to input $\u03d5$ retrieves a row of the SR matrix, $M^{\u22ba}\u03d5$ (Figure 1F, subsection 4.14). Intuitively, this is because each recurrent iteration of the RNN progresses the prediction by one transition. In other words, the $t$th recurrent iteration raises $T$ to the $t$th power as in Equation 1. To formally derive this result, we first start by defining the dynamics of our RNN with classical rate network equations (Amarimber, 1972). At time $t$, the firing rate $x(t)$ of $N$ neurons given each neurons\u2019 input $\u03d5(t)$ follows the discrete-time dynamics (assuming a step size $\u0394\u2062t=1$)\n\n$$\n\u0394x=\u2212x(t)+\\gammaJf(x(t))+\u03d5(t)\n$$\n\nHere, $\\gamma$ scales the recurrent activity and is a constant factor for all neurons. The synaptic weight matrix $J\\in\u211b_{N\\timesN}$ is defined such that $J_{i\u2062j}$ is the synaptic weight from neuron $j$ to neuron $i$. Notably, this notation is transposed from what is used in RL literature, where conventions have the first index as the starting state. Generally, $f$ is some nonlinear function in Equation 2. For now, we will consider $f$ to be the identity function, rendering this equation linear. Under this assumption, we can solve for the steady state activity $x_{ss}$ as\n\n$$\nx_{ss}=(I\u2212\\gammaJ)^{\u22121}\u03d5\n$$\n\nEquivalence between Equation 1 and Equation 3 is clearly reached when $J=T^{\u22ba}$ (Russek et al., 2017; V\u00e9rtes and Sahani, 2019). Thus, if the network can learn $T$ in its synaptic weight matrix, it will exactly compute the SR.\n\nHere, the factor $\\gamma$ represents the gain of the neurons in the network, which is factored out of the synaptic strengths characterized by  $J$. Thus, $\\gamma$ is an independently adjustable factor that can flexibly control the strength of the recurrent dynamics (see Sompolinsky et al., 1988). A benefit of this flexibility is that the system can retrieve successor representations of varying predictive strengths by modulating the gain factor $\\gamma$. In this way, the predictive horizon can be dynamically controlled without any additional learning required. We will refer to the $\\gamma$ used during learning of the SR as the baseline $\\gamma$, or $\\gamma_{B}$.\n\nWe next consider what is needed in a learning rule such that $J$ approximates $T^{\u22ba}$. In order to learn a transition probability matrix, a learning rule must associate states that occur sequentially and normalize the synaptic weights into a valid probability distribution. We derive a learning rule that addresses both requirements (Figure 1H, Appendix 2),\n\n$$\n\u0394J_{ij}=\u03b7x_{i}(t)x_{j}(t\u22121)\u2212\u03b7x_{j}(t\u22121)\\sumkJ_{ik}x_{k}(t\u22121),\n$$\n\nwhere $\u03b7$ is the learning rate. The first term in Equation 4 is a temporally asymmetric potentiation term that counts states that occur in sequence. This is similar to spike-timing dependent plasticity, or STDP (Bi and Poo, 1998; Skaggs and McNaughton, 1996; Abbott and Blum, 1996).\n\nThe second term in Equation 4 is a form of synaptic depotentiation. Depotentiation has been hypothesized to be broadly useful for stabilizing patterns and sequence learning (F\u00f6ldi\u00e1k, 1990; Fiete et al., 2010), and similar inhibitory effects are known to be elements of hippocampal learning (Kullmann and Lamsa, 2007; Lamsa et al., 2007). In our model, the depotentiation term in Equation 4 imposes local anti-Hebbian learning at each neuron\u2013 that is, each column of $J$ is normalized independently. This normalizes the observed transitions from each state by the number of visits to that state, such that transition statistics are correctly captured. We note, however, that other ways of column-normalizing the synaptic weight matrix may give similar representations (Appendix 7).\n\nCrucially, the update rule (Equation 4) uses information local to each neuron (Figure 1H), an important aspect of biologically plausible learning rules. We show that, in the asymptotic limit, the update rule extracts information about the inputs $\u03d5$ and learns $T$ exactly despite having access only to neural activity $x$ (Appendix 3). We will refer to an RNN using Equation 4 as the RNN-Successor, or RNN-S. Combined with recurrent dynamics (Equation 3), RNN-S computes the SR exactly (Figure 1H).\n\nAs an alternative to the RNN-S model, we consider the conditions necessary for a feedforward neural network to compute the SR. Under this architecture, the $M$ matrix must be encoded in the weights from the input neurons to the hidden layer neurons (Figure 1G). This can be achieved by updating the synaptic weights with a temporal difference (TD) learning rule, the standard update used to learn the SR in the usual algorithm. Although the TD update learns the SR, it requires information about multiple input layer neurons to make updates for the synapse from input neuron $j$ to output neuron $i$ (Figure 1I). Thus, it is useful to explore other possible mechanisms that are simpler to compute locally. We refer to the model described in Figure 1I as the feedforward-TD (FF-TD) model. The FF-TD model implements the canonical SR algorithm.\n\n### Evaluating SR learning by biologically plausible learning rules\n\nTo evaluate the effectiveness of the RNN-S learning rule, we tested its accuracy in learning the SR matrix for random walks. Specifically, we simulated random walks with different transition biases in a 1D circular track environment (Figure 2A). The RNN-S can learn the SR for these random walks (Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/80680/elife-80680-fig2-v1.jpg)\n\n**Figure 2.:** (A) Sample one-minute segments from random walks on a 1 meter circular track. Possible actions in this 1D walk are to move forward, stay in one place, or move backward. Action probabilities are uniform (top), biased to move forward (middle), or biased to stay in one place (bottom). (B) $M$ matrices estimated by the RNN-S model in the full random walks from (A).(C) The proposed learning rate normalization. The learning rate $\u03b7_{j}$ for synapses out of neuron $j$ changes as a function of its activity $x_{j}$ and recency bias $\\lambda$. Dotted lines are at $[0.0,0.5,1.0]$. (D) The mean row sum of $T$ over time computed by the RNN-S with an adaptive learning rate (blue) or the RNN-S with static learning rates (orange). Darker lines indicate larger static learning rates. Lines show the average over 5 simulations from walks with a forward bias, and shading shows 95% confidence interval. A correctly normalized $T$ matrix should have a row sum of 1.0. (E) As in (D), but for the mean absolute error in estimating $T$. (F) As in (E), but for mean absolute error in estimating the real $M$, and with performance of FF-TD included, with darker lines indicating slower learning rates for FF-TD. (G) Lap-based activity map of a neuron from RNN-S with static learning rate $\u03b7=10^{-1.5}$. The neuron encodes the state at 45cm on a circular track. The simulated agent is moving according to forward-biased transition statistics. (H) As in (G), but for RNN-S with adaptive learning rate. (I) The learning rate over time for the neuron in (G) (orange) and the neuron in (H) (blue). (J) Mean-squared error (MSE) at the end of meta-learning for different plasticity kernels. The pre\u2192post (K+) and post\u2192pre (K-) sides of each kernel were modeled by $A\u2062e^{-\\frac{1}{\\tau}}$. Heatmap indices indicate the values $\\tau$ s were fixed to. Here, K+ is always a positive function (i.e., $A$ was positive), because performance was uniformly poor when K+ was negative. K- could be either positive (left, \u201cPost \u2192 Pre Potentiation\") or negative (right, \u201cPost \u2192 Pre Depression\"). Regions where the learned value for $A$ was negligibly small were set to high errors. Errors are max-clipped at 0.03 for visualization purposes. 40 initializations were used for each K+ and K- pairing, and the heatmap shows the minimum error acheived over all intializations. (K) Plasticity kernels chosen from the areas of lowest error in the grid search from (J). Left is post \u2192 pre potentiation. Right is post \u2192 pre depression. Kernels are normalized by the maximum, and dotted lines are at one second intervals.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80680/elife-80680-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a-c) As in Figure 2D\u2013F of the main document, but for a walk with uniform action probabilities.\n\nBecause equivalence is only reached in the asymptotic limit of learning (i.e. $\u0394\u2062J\u21920$), our RNN-S model learns the SR slowly. In contrast, animals are thought to be able to learn the structure of an environment quickly (Zhang et al., 2021), and neural representations in an environment can also develop quickly (Monaco et al., 2014; Sheffield and Dombeck, 2015; Bittner et al., 2015). To remedy this, we introduce a dynamic learning rate that allows for faster normalization of the synaptic weight matrix, similar to the formula for calculating a moving average (Appendix 4). For each neuron, suppose that a trace $n$ of its recent activity is maintained with some time constant $\\lambda\\in(0,1)$,\n\n$$\nn(t)=\\sumt^{\u2032}<t\\lambda^{(t\u2212t^{\u2032})}x(t^{\u2032})\n$$\n\nIf the learning rate of the outgoing synapses from each neuron $j$ is inversely proportional to $n_{j}(\u03b7=\\frac{1}{n_{j}(t)})$, the update equation quickly normalizes the synapses to maintain a valid transition probability matrix (Appendix 4). Modulating synaptic learning rates as a function of neural activity is consistent with experimental observations of metaplasticity (Abraham and Bear, 1996; Abraham, 2008; Hulme et al., 2014). We refer to this as an adaptive learning rate and contrast it with the previous static learning rate. We consider the setting where $\\lambda=1$, so the learning rate monotonically decreases over time (Figure 2C). In general, however, the learning rate could increase or decrease over time if $\\lambda<1$ (Figure 2C), and $n$ could be reset, allowing for rapid learning. Our learning rule with the adaptive learning rate is the same as in Equation 4, with the exception that $\u03b7=min\u2062(\\frac{1}{n_{j}\u2062(t)},1.0)$ for synapses $J_{*j}$. This learning rule still relies only on information local to the neuron as in Figure 1H.\n\nThe RNN-S with an adaptive learning rate normalizes the synapses more quickly than a network with a static learning rate (Figure 2D, Figure 2\u2014figure supplement 1) and learns $T$ faster (Figure 2E, Figure 2\u2014figure supplement 1). The RNN-S with a static learning rate exhibits more of a tradeoff between normalizing synapses quickly (Figure 2D, Figure 2\u2014figure supplement 1A) and learning $M$ accurately (Figure 2E, Figure 2\u2014figure supplement 1). However, both versions of the RNN-S estimate $M$ more quickly than the FF-TD model (Figure 2F, Figure 2\u2014figure supplement 1).\n\nPlace fields can form quickly, but over time the place fields may skew if transition statistics are consistently biased (Stachenfeld et al., 2017; Monaco et al., 2014; Sheffield and Dombeck, 2015; Bittner et al., 2015). The adaptive learning rate recapitulates both of these effects, which are thought to be caused by slow and fast learning processes, respectively. A low learning rate can capture the biasing of place fields, which develops over many repeated experiences. This is seen in the RNN-S with a static learning rate (Figure 2G). However, a high learning rate is needed for hippocampal place cells to develop sizeable place fields in one-shot. Both these effects of slow and fast learning can be seen in the neural activity of an example RNN-S neuron with an adaptive learning rate (Figure 2H). After the first lap, a sizeable field is induced in a one-shot manner, centered at the cell\u2019s preferred location. In subsequent laps, the place field slowly distorts to reflect the bias of the transition statistics (Figure 2H). The model is able to capture these learning effects because the adaptive learning rate transitions between high and low learning rates, unlike the static version (Figure 2I).\n\nThus far, we have assumed that the RNN-S learning rule uses pre\u2192post activity over two neighboring time steps (Equation 4). A more realistic framing is that a convolution with a plasticity kernel determines the weight change at any synapse. We tested how this affects our model and what range of plasticity kernels best supports the estimation of the SR. We do this by replacing the pre\u2192post potentiation term in Equation 4 with a convolution:\n\n$$\n\u0394J_{ij}=x_{i}(t)\\sumt^{\u2032}=\u2212\u221etK_{+}(t\u2212t^{\u2032})x_{j}(t^{\u2032})+x_{j}(t)\\sumt^{\u2032}=\u2212\u221etK_{\u2212}(t\u2212t^{\u2032})x_{i}(t^{\u2032})\u2212\u03b7x_{j}(t\u22121)\\sumkJ_{ik}x_{k}(t\u22121)\n$$\n\nIn the above equation, the full kernel $K$ is split into a pre\u2192post kernel ($K_{+}$) and a post\u2192pre kernel ($K_{-}$). $K_{+}$ and $K_{-}$ are parameterized as independent exponential functions, $A\u2062e^{-t/\\tau}$.\n\nTo systematically explore the space of plasticity kernels that can be used to learn the SR, we performed a grid search over the sign and the time constants of the pre\u2192post and post\u2192pre sides of the plasticity kernels. For each fixed sign and time constant, we used an evolutionary algorithm to learn the remaining parameters that determine the plasticity kernel. We find that plasticity kernels that are STDP-like are more effective than others, although plasticity kernels with slight post\u2192pre potentiation work as well (Figure 2J). The network is sensitive to the time constant and tends to find solutions for time constants around a few hundred milliseconds (Figure 2JK). Our robustness analysis indicates the timescale of a plasticity rule in such a circuit may be longer than expected by standard STDP, but within the timescale of changes in behavioral states. We note that this also contrasts with behavioral timescale plasticity (Bittner et al., 2015), which integrates over a window that is several seconds long. Finally, we see that even plasticity kernels with slightly different time constants may give results with minimal error from the SR matrix, even if they do not estimate the SR exactly (Figure 2J). This suggests that, although other plasticity rules could be used to model long-horizon predictions, the SR is a reasonable \u2013although not strictly unique\u2013 model to describe this class of predictive representations.\n\n### RNN-S can compute the SR with arbitrary \u03b3R under a stable regime of \u03b3B\n\nWe next investigate how robust the RNN-S model is to the value of $\\gamma$. Typically, for purposes of fitting neural data or for RL simulations, $\\gamma$ will take on values as high as 0.9 (Stachenfeld et al., 2017; Barreto et al., 2017). However, previous work that used RNN models reported that recurrent dynamics become unstable if the gain $\\gamma$ exceeds a critical value (Sompolinsky et al., 1988; Zhang et al., 2021). This could be problematic as we show analytically that the RNN-S update rule is effective only when the network dynamics are stable and do not have non-normal amplification (Appendix 2). If these conditions are not satisfied during learning, the update rule no longer optimizes for fitting the SR and the learned weight matrix will be incorrect.\n\nWe first test how the value of $\\gamma_{B}$, the gain of the network during learning, affects the RNN-S dynamics. The dynamics become unstable when $\\gamma_{B}$ exceeds 0.6 (Figure 3\u2014figure supplement 1). Specifically, the eigenvalues of the synaptic weight matrix exceed the critical threshold for learning when $\\gamma_{B}>0.6$ (Figure 3A, \u2018Linear\u2019). As expected from our analytical results, the stability of the network is tied to the network\u2019s ability to estimate $M$. RNN-S cannot estimate $M$ well when $\\gamma_{B}>0.6$ (Figure 3B, \u2018Linear\u2019). We explored two strategies to enable RNN-S to learn at high $\\gamma$.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/80680/elife-80680-fig3-v1.jpg)\n\n**Figure 3.:** RNN-S requires a stable choice of $\\gamma_{B}$ during learning, and can compute SR with any $\\gamma_{R}$ (A) Maximum real eigenvalue of the $J$ matrix at the end of random walks under different $\\gamma_{B}$.The network dynamics were either fully linear (solid) or had a tanh nonlinearity (dashed). Red line indicates the transition into an unstable regime. 45 simulations were run for each $\\gamma_{B}$, line indicates mean, and shading shows 95% confidence interval. (B) MAE of $M$ matrices learned by RNN-S with different $\\gamma_{B}$. RNN-S was simulated with linear dynamics (solid line) or with a tanh nonlinearity added to the recurrent dynamics (dashed line). Test datasets used various biases in action probability selection. (C) $M$ matrix learned by RNN-S with tanh nonlinearity added in the recurrent dynamics. A forward-biased walk on a circular track was simulated, and $\\gamma_{B}=0.8$. (D) The true $M$ matrix of the walk used to generate (C). (E) Simulated population activity over the first ten laps in a circular track with $\\gamma_{B}=0.4$. Dashed box indicates the retrieval phase, where learning is turned off and $\\gamma_{R}=0.9$. Boxes are zoomed in on three minute windows.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80680/elife-80680-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Mean absolute error (MAE) of $M$ matrices learned by RNN-S with different baseline $\\gamma$ and different numbers of recurrent steps in dynamics. Test datasets used various biases in action probability selection. Errors are max-clipped at 101 for visualization purposes. (B) $M$ matrix learned by RNN-S with two recurrent steps in dynamics and baseline $\\gamma=0.8$. A forward-biased walk on a circular track was simulated. (C) As in (B), but for four recurrent steps. (D) As in (B), but for five recurrent steps. Three examples are shown from different sampled walks to highlight the runaway activity of the network. (E) As in (B) but for the RNN-S activity calculated as $(I-\\gamma\u2062J)^{-1}$. Note that this calculation amounts to an unstable fixed point in the dynamics that cannot be reached when the network is in an unstable regime. (F) Mean absolute error (MAE) in $T$ made by RNN-S with linear dynamics using $\\gamma_{B}$ during learning. (G) MAE in $M$ for $\\gamma_{R}$ made by RNN-S with linear dynamics using $\\gamma_{B}$ during learning. (H) As in (G), but the dynamics now have a tanh nonlinearity.\n\nOne way to tame this instability is to add a saturating nonlinearity into the dynamics of the network. This is a feature of biological neurons that is often incorporated in models to prevent unbounded activity (Dayan and Abbott, 2001) Specifically, instead of assuming the network dynamics are linear ($f$ is the identity function in Equation 2), we add a hyperbolic tangent into the dynamics equation. This extends the stable regime of the network\u2013 the eigenvalues do not exceed the critical threshold until $\\gamma_{B}>0.8$ (Figure 3A). Similar to the linear case, the network with nonlinear dynamics fits $M$ well until the critical threshold for stability (Figure 3b). These differences are clear visually as well. While the linear network does not estimate $M$ well for $\\gamma_{B}=0.8$ (Figure 3B), the estimate of the nonlinear network (Figure 3c) is a closer match to the true $M$ (Figure 3D). However, there is a tradeoff between the stabilizing effect of the nonlinearity and the potential loss of accuracy in calculating $M$ with a nonlinearity (Figure 3\u2014figure supplement 1).\n\nWe explore an alternative strategy for computing $M$ with arbitrarily high $\\gamma$ in the range $0\\leq\\gamma<1$. We have thus far pushed the limits of the model in learning the SR for different $\\gamma_{B}$. However, an advantage of our recurrent architecture is that $\\gamma$ is a global gain modulated independently of the synaptic weights. Thus, an alternative strategy for computing $M$ with high $\\gamma$ is to consider two distinct modes that the network can operate under. First, there is a learning phase in which the plasticity mechanism actively learns the structure of the environment and the model is in a stable regime (i.e. $\\gamma_{B}$ is small). Separately, there is a retrieval phase during which the gain $\\gamma_{R}$ of the network can be flexibly modulated. By changing the gain, the network can compute the SR with arbitrary prediction horizons, without any changes to the synaptic weights. We show the effectiveness of separate network phases by simulating a 1D walk where the learning phase uses a small $\\gamma_{B}$ (Figure 3E). Halfway through the walk, the animal enters a retrieval mode and accurately computes the SR with higher $\\gamma_{R}$ (Figure 3E).\n\nUnder this scheme, the model can compute the SR for any $\\gamma<1$ (Figure 3\u2014figure supplement 1). The separation of learning and retrieval phases stabilizes neural dynamics and allows flexible tuning of predictive power depending on task context.\n\n### RNN-S can be generalized to more complex inputs with successor features\n\nWe wondered how RNN-S performs given more biologically realistic inputs. We have so far assumed that an external process has discretized the environment into uncorrelated states so that each possible state is represented by a unique input neuron. In other words, the inputs $\u03d5$ are one-hot vectors. However, inputs into the hippocampus are expected to be continuous and heterogeneous, with states encoded by overlapping sets of neurons (Hardcastle et al., 2017). When inputs are not one-hot, there is not always a canonical ground-truth $T$ matrix to fit and the predictive representations are referred to as successor features (Barreto et al., 2017; Kulkarni et al., 2016). In this setting, the performance of a model estimating successor features is evaluated by the temporal difference (TD) loss function.\n\nUsing the RNN-S model and update rule (Equation 4), we explore more realistic inputs $\u03d5$ and refer to $\u03d5$ as \u2018input features\u2019 for consistency with the successor feature literature. We vary the sparsity and spatial correlation of the input features (Figure 4A). As before (Figure 3H), the network will operate in separate learning and retrieval modes, where $\\gamma_{B}$ is below the critical value for stability. Under these conditions, the update rule will learn\n\n$$\nJ=R_{\u03d5\u2062\u03d5}\u2062(-1)\u2062R_{\u03d5\u2062\u03d5}\u2062(0)^{-1}\n$$\n\nat steady state, where $R_{\u03d5\u2062\u03d5}\u2062(\\tau)$ is the correlation matrix of $\u03d5$ with time lag $\\tau$ (Appendix 3). Thus, the RNN-S update rule has the effect of normalizing the input feature via a decorrelative factor ($R_{\u03d5\u2062\u03d5}\u2062(0)^{-1}$) and mapping the normalized input to the feature expected at the next time step in a STDP-like manner ($R_{\u03d5\u2062\u03d5}\u2062(-1)$). This interpretation generalizes the result that $J=T^{\u22ba}$ in the one-hot encoding case (Appendix 3).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/80680/elife-80680-fig4-v1.jpg)\n\n**Figure 4.:** (A) Illustration of possible feature encodings $\u03d5$ for two spatially adjacent states in green and red. Feature encodings may vary in sparsity level and spatial correlation. (B) Average value of the STDP component (red) and the decorrelative normalization (solid blue) component of the gradient update over the course of a random walk. In dashed blue is a simpler Oja-like independent normalization update for comparison. Twenty-five simulations of forward-biased walks on a circular track were run, and shading shows 95% confidence interval. Input features are 3% sparse, with 10 cm spatial correlation. (C) Top: Example population activity of neurons in the RNN-S using the full decorrelative normalization rule over a 2min window of a forward-biased random walk. Population activity is normalized by the maximum firing rate. Bottom: As above, but for RNN-S using the simplified normalization update. (D) Shifts in place field peaks after a half hour simulation from the first two minutes of a 1D walk. Proportion of shifts in RNN-S with one-hot inputs shown in gray. Proportion of shifts in RNN-S with feature encodings (10% sparsity, 7.5 cm spatial correlation, $\\gamma_{R}=0.8$) shown in blue. Each data point is the average shift observed in one simulated walk, and each histogram is over 40 simulated walks. Solid line indicates the reported measure from Mehta et al., 2000.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80680/elife-80680-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A\u2013D) Average firing rate as a function of position on a circular track for four example neurons. The walk and feature encodings were generated as in Figure 4D of the main text. Each neuron is sampled from a different walk. \u2018Before Learning\u2019 refers to firing fields made from the first 2-minute window of the walk. \u2018After Learning\u2019 refers to firing fields made from the entire walk. (E\u2013F) As in (A\u2013D), but for two neurons from a walk where the features were one-hot encoded.\n\nWe wanted to further explore the function of the normalization term. In the one-hot case, it operates over each synapse independently and makes a probability distribution. With more realistic inputs, it operates over a set of synapses and has a decorrelative effect. We first ask how the decorrelative term changes over learning of realistic inputs. We compare the mean value of the STDP term of the update ($x_{i}\u2062(t)\u2062x_{j}\u2062(t-1)$) to the normalization term of the update ($x_{j}\u2062(t-1)\u2062\\sum_{k}J_{i\u2062k}\u2062x_{k}\u2062(t-1)$) during a sample walk (Figure 4B). The RNN-S learning rule has stronger potentiating effects in the beginning of the walk. As the model learns more of the environment and converges on the correct transition structure, the strength of the normalization term balances out the potentiation term. It may be that the normalization term is particularly important in maintaining this balance as inputs become more densely encoded. We test this hypothesis by using a normalization term that operates on each synapse independently (similar to Oja\u2019s Rule, Oja, 1982, Appendix 5). We see that the equilibrium between potentiating and depressing effects is not achieved by this type of independent normalization (Figure 4B, Appendix 6).\n\nWe wondered whether the decorrelative normalization term is necessary for the RNN-S to develop accurate representations. By replacing the decorrelative term with an independent normalization, features from non-adjacent states begin to be associated together and the model activity becomes spatially non-specific over time (Figure 4C, top). In contrast, using the decorrelative term, the RNN-S population activity is more localized (Figure 4C, bottom).\n\nInterestingly, we noticed an additional feature of place maps as we transitioned from one-hot feature encodings to more complex feature encodings. We compared the representations learned by the RNN-S in a circular track walk with one-hot features versus more densely encoded features. For both input distributions, the RNN-S displayed the same skewing in place fields seen in Figure 2 (Figure 4\u2014figure supplement 1). However, the place field peaks of the RNN-S model additionally shifted backwards in space for the more complex feature encodings (Figure 4D). This was not seen for the one-hot encodings (Figure 4D). The shifting in the RNN-S model is consistent with the observations made in Mehta et al., 2000 and demonstrates the utility of considering more complex input conditions. A similar observation was made in Stachenfeld et al., 2017 with noisy state inputs. In both cases, field shifts could be caused by neurons receiving external inputs at more than one state, particularly at states leading up to its original field location.\n\n### RNN-S estimates successor features even with naturalistic trajectories\n\nWe ask whether RNN-S can accurately estimate successor features, particularly under conditions of natural behavior. Specifically, we used the dataset from Payne et al., 2021, gathered from foraging Tufted Titmice in a 2D arena (Figure 5A). We discretize the arena into a set of states and encode each state as in Section 2.5. Using position-tracking data from Payne et al., 2021, we simulate the behavioral trajectory of the animal as transitions through the discrete state space. The inputs into the successor feature model are the features associated with the states in the behavioral trajectory.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/80680/elife-80680-fig5-v1.jpg)\n\n**Figure 5.:** (A) We use behavioral data from Payne et al, where a Tufted Titmouse randomly forages in a 2D environment while electrophysiological data is collected (replicated with permission from authors). Two example trajectories are shown on the right. (B) Temporal difference (TD) loss versus the spatial correlation of the input dataset, aggregated over all sparsity levels. Here, $\\gamma_{R}=0.75$. Line shows mean, and shading shows 95% confidence interval. (C) As in (B), but measuring TD loss versus the sparsity level of the input dataset, aggregated over all spatial correlation levels. (D) TD loss for RNN-S with datasets with different spatial correlations and sparsities. Gray areas were not represented in the input dataset due to the feature generation process. Here, $\\gamma_{R}=0.75$, and three simulations were run for each spatial correlation and sparsity pairing under each chosen $\\gamma_{R}$. (E) As in (G), but for FF-TD. (F) TD loss of each model as a function of $\\gamma_{R}$, aggregated over all input encodings. Line shows mean, and shading shows 95% confidence interval.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80680/elife-80680-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) The values of P (initial sparsity of random vectors before spatial smoothing) and \u03c3 sampled in our parameter sweep for Figures 5 and 6 in the main text. See methods 4.10 for more details of how feature encodings were generated. (B) The values of S (final sparsity of features, measured after spatial smoothing) and \u03c3 sampled in our parameter sweep for Figures 5 and 6 in the main text. (C) A sample state encoded by the firing rate of 200 input neurons. Here, $s=0.11$ and $\\sigma=2$. (D) As in Figure 5F of the main text, with the results from a random feedforward network included (\u201cShuffle\u201d). The random network was constructed by randomly drawing weights from the distribution of weights learned by the FF-TD network. The random network is representative of a model without learned structure but with a similar magnitude of weights as the FF-TD model. (E) Spatial correlation of the feature encoding for an example state with the features of all other states. The $14\\times14$ states are laid out in their position in the 2D arena. Here, the sample state is the state in the center of the 2D arena and $\\sigma=2.0$. (F) As in (E), but for $\\sigma=0.0$. (G) As in Figure 5D of the main text, but for RNN-S (first row) and FF-TD (second row) with $\\gamma_{R}=0.4$ (left column), $\\gamma_{R}=0.6$ (middle column), and $\\gamma_{R}=0.8$ (right column).\n\nWe first wanted to test whether the RNN-S model was robust across a range of different types of input features. We calculate the TD loss of the model as a function of the spatial correlation across inputs $\u03d5$ (Figure 5B). We find that the model performs well across a range of inputs but loss is higher when inputs are spatially uncorrelated. This is consistent with the observation that behavioral transitions are spatially local, such that correlations across spatially adjacent features aid in the predictive power of the model. We next examine the model performance as a function of the sparsity of inputs $\u03d5$ (Figure 5C). We find the model also performs well across a range of feature sparsity, with lowest loss when features are sparse.\n\nTo understand the interacting effects of spatial correlation and feature sparsity in more detail, we performed a parameter sweep over both of these parameters (Figure 5D, Figure 5\u2014figure supplement 1A-F). We generated random patterns according to the desired sparsity and smoothness with a spatial filter to generate correlations. This means that the entire parameter space is not covered in our sweep (e.g. the top-left area with high correlation and high sparsity is not explored). Note that since we generate $\u03d5$ by randomly drawing patterns, the special case of one-hot encoding is also not included in the parameter sweep (one-hot encoding is already explored in Figure 2). The RNN-S seems to perform well across a wide range, with highest loss in regions of low spatial correlation and low sparsity.\n\nWe want to compare the TD loss of RNN-S to that of a non-biological model designed to minimize TD loss. We repeat the same parameter sweep over input features with the FF-TD model (Figure 5E, Figure 5\u2014figure supplement 1G). The FF-TD model performs similarly to the RNN-S model, with lower TD loss in regions with low sparsity or higher correlation. We also tested how the performance of both models is affected by the strength of $\\gamma_{R}$ (Figure 5F). Both models show a similar increase in TD loss as $\\gamma_{R}$ increases, although the RNN-S has a slightly lower TD loss at high $\\gamma$ than the FF-TD model. Both models perform substantially better than a random network with weights of comparable magnitude (Figure 5\u2014figure supplement 1D).\n\nUnlike in the one-hot case, there is no ground-truth $T$ matrix for non-one-hot inputs, so representations generated by RNN-S and FF-TD may look different, even at the same TD loss. Therefore, to compare the two models, it is important to compare representations to neural data.\n\n### RNN-S fits neural data in a random foraging task\n\nFinally, we tested whether the neural representations learned by the models with behavioral trajectories from Figure 5 match hippocampal firing patterns. We performed new analysis on neural data from Payne et al., 2021 to establish a dataset for comparison. The neural data from Payne et al., 2021 was collected from electrophysiological recordings in titmouse hippocampus during freely foraging behavior (Figure 6A). Payne et al., 2021 discovered the presence of place cells in this area. We analyzed statistics of place cells recorded in the anterior region of the hippocampus, where homology with rodent dorsal hippocampus is hypothesized (Tosches et al., 2018). We calculated the distribution of place field size measured relative to the arena size (Figure 6B), as well as the distribution of the number of place fields per place cell (Figure 6C). Interestingly, with similar analysis methods, Henriksen et al., 2010 see similar statistics in the proximal region of dorsal CA1 in rats, indicating that our analyses could be applicable across organisms.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/80680/elife-80680-fig6-v1.jpg)\n\n**Figure 6.:** (A) Dataset is from Payne et al, where a Tufted Titmouse randomly forages in a 2D environment while electrophysiological data is collected (replicated with permission from authors). (B) Distribution of place cells with some number of fields, aggregated over all cells recorded in all birds. (C) Distribution of place cells with some field size as a ratio of the size of the arena, aggregated over all cells recorded in all birds. (D) Average proportion of non-place cells in RNN-S, aggregated over simulations of randomly drawn trajectories from Payne et al. Feature encodings are varied by spatial correlation and sparsity as in Figure 5. Each simulation used 196 neurons. As before, three simulations were run for each spatial correlation and sparsity pairing under each chosen $\\gamma_{R}$. (E) As in (D), but for average field size of place cells. (F) As in (D), but for average number of fields per place cell. (G) As in (D) and (E), but comparing place cell statistics using the KL divergence ($D_{K\u2062L}$) between RNN-S and data from Payne et al. At each combination of input spatial correlation and sparsity, the distribution of field sizes is compared to the neural data, as is the distribution of number of fields per neuron, then the two $D_{K\u2062L}$ values are summed. Contour lines are drawn at $D_{K\u2062L}$ values of 1, 1.5, and 2 bits. (H) Place fields of cells chosen from the region of lowest KL divergence. (I) As in (G) but for FF-TD. (J) Change in KL divergence for field size as function of $\\gamma$. Line shows mean, and shading shows 95% confidence interval. (K) Same as (J), but for number of fields.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80680/elife-80680-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) As in Figure 6E\u2013G of the main text, but for $\\gamma_{R}=0.4$ (left column) and $\\gamma_{R}=0.8$ (right column). In addition, the plots showing KL divergence (in bits) for the distribution of field sizes and number of fields per cell are shown. (B) As in (A) but for FF-TD. (C) A in Figure 6H of the main text, but for FF-TD with $\\gamma_{R}=0.4$ and (D) FF-TD with $\\gamma_{R}=0.8$. (E) Total KL divergence across $\\gamma_{R}$ for RNN-S, FF-TD, the random network from Figure 6D (\u2018Shuffle\u2019), and the split-half noise floor from the Payne et al. dataset (\u2018Data\u2019). This noise floor is calculated by comparing the place field statistics of a random halves of the neurons from Payne et al. We measure the KL divergence between the distributions calculated from each random half. This is repeated 500 times, and it is representative of a lower bound on KL divergence. Intuitively, it should not be possible to fit the data of Payne et al as well as the dataset itself can.\n\nIn order to test how spatial representations in the RNN-S are impacted by input features, we performed parameter sweeps over input statistics. As in Payne et al., 2021, we define place cells in the model as cells with at least one statistically significant place field under permutation tests. Under most of the parameter range, all RNN-S neurons would be identified as a place cell (Figure 6D). However, under conditions of high spatial correlation and low sparsity, a portion of neurons (12%) do not have any fields in the environment. These cells are excluded from further analysis. We measured how the size of place fields varies across the parameter range (Figure 6E). The size of the fields increases as a function of the spatial correlation of the inputs, but is relatively insensitive to sparsity. This effect can be explained as the spatial correlation of the inputs introducing an additional spatial spread in the neural activity. Similarly, we measured how the number of place fields per cell varies across the parameter range (Figure 6F). The number of fields is maximal for conditions in which input features are densely encoded and spatial correlation is low. These are conditions in which each neuron receives inputs from multiple, spatially distant states.\n\nFinally, we wanted to identify regions of parameter space that were similar to the data of Payne et al., 2021. We measured the KL divergence between our model\u2019s place field statistics (Figure 6DE) and the statistics measured in Payne et al., 2021 (Figure 6BC). We combined the KL divergence of both these distributions to find the parameter range in which the RNN-S best fits neural data (Figure 6G). This optimal parameter range occurs when inputs have a spatial correlation of $\\sigma\u22488.75$ cm and sparsity $\u22480.15$. We note that the split-half noise floor of the dataset of Payne et al., 2021 is a KL divergence of 0.12 bits (Figure 6\u2014figure supplement 1E). We can visually confirm that the model fits the data well by plotting the place fields of RNN-S neurons (Figure 6H).\n\nWe wondered whether the predictive gain ($\\gamma_{R}$) of the representations affects the ability of the RNN-S to fit data. The KL divergence changes only slightly as a function of $\\gamma_{R}$. Mainly, the KL-divergence of the place field size increases as $\\gamma_{R}$ increases (Figure 6I), but little effect is seen in the distribution of the number of place fields per neuron (Figure 6J).\n\nWe next tested whether the neural data was better fit by representations generated by RNN-S or the FF-TD model. Across all parameters of the input features, despite having similar TD loss (Figure 5DE), the FF-TD model has much higher divergence from neural data (Figure 6GI, Figure 6\u2014figure supplement 1), similar to a random feedforward network (Figure 6\u2014figure supplement 1E).\n\nOverall, our RNN-S model seems to strike a balance between performance in estimating successor features, similarity to data, and biological plausibility. Furthermore, our analyses provide a prediction of the input structure into the hippocampus that is otherwise not evident in an algorithmic description or in a model that only considers one-hot feature encodings.\n\n## Discussion\n\nHippocampal memory is thought to support a wide range of cognitive processes, especially those that involve forming associations or making predictions. However, the neural mechanisms that underlie these computations in the hippocampus are not fully understood. A promising biological substrate is the recurrent architecture of the CA3 region of the hippocampus and the plasticity rules observed. Here, we showed how a recurrent network with local learning rules can implement the successor representation, a predictive algorithm that captures many observations of hippocampal activity. We used our neural circuit model to make specific predictions of biological processes in this region.\n\nA key component of our plasticity rule is a decorrelative term that depresses synapses based on coincident activity. Such anti-Hebbian or inhibitory effects are hypothesized to be broadly useful for learning, especially in unsupervised learning with overlapping input features (Litwin-Kumar and Doiron, 2014; Sadeh and Clopath, 2021; Pehlevan et al., 2018; Payne et al., 2021). Consistent with this hypothesis, anti-Hebbian learning has been implicated in circuits that perform a wide range of computations, from distinguishing patterns (F\u00f6ldi\u00e1k, 1990), to familiarity detection (Tyulmankov et al., 2022), to learning birdsong syllables (Mackevicius et al., 2020). This inhibitory learning may be useful because it decorrelates redundant information, allowing for greater specificity and capacity in a network (Sadeh and Clopath, 2021; F\u00f6ldi\u00e1k, 1990). Our results provide further support of these hypotheses and predict that anti-Hebbian learning is fundamental to a predictive neural circuit.\n\nWe derive an adaptive learning rate that allows our model to quickly learn a probability distribution, and generally adds flexibility to the learning process. The adaptive learning rate changes such that neurons that are more recently active have a slower learning rate. This is consistent with experimental findings of metaplasticity at synapses (Abraham and Bear, 1996; Abraham, 2008; Hulme et al., 2014), and theoretical proposals that metaplasticity tracks the uncertainty of information (Aitchison et al., 2021). In RNN-S, the adaptive learning rate improves the speed of learning and better recapitulates hippocampal data. Our adaptive learning rate also has interesting implications for flexible learning. Memory systems must be able to quickly learn new associations throughout their lifetime without catastrophe. Our learning rate is parameterized by a forgetting term $\\lambda$ that controls the timescale in which environmental statistics are expected to be stationary. Although we fixed $\\lambda=1$ in our simulations, there are computational benefits in considering cases where $\\lambda<1$. This parameter provides a natural way for a memory system to forget gradually over time and prioritize recent experiences, in line with other theoretical studies that have also suggested that learning and forgetting on multiple timescales allow for more flexible behavior (Kaplanis et al., 2018; Fusi et al., 2007).\n\nWe tested the sensitivity of our network to various parameters and found a broad range of valid solutions. Prior work has sought to understand how an emergent property of a network could be generated by multiple unique solutions (Goldman et al., 2001; Prinz et al., 2004; Bittner et al., 2021; Hert\u00e4g and Clopath, 2022). It has been suggested that redundancy in solution space makes systems more robust, accounting for margins of error in the natural world (Marder and Goaillard, 2006; Marder and Taylor, 2011). In a similar vein, our parameter sweep over plasticity kernels revealed that a sizeable variety of kernels give solutions that resemble the SR. Although our model was initially sensitive to the value of $\\gamma$, we found that adding biological components, such as nonlinear dynamics and separate network modes, broadened the solution space of the network.\n\nSeveral useful features arise from the fact that RNN-S learns the transition matrix $T$ directly, while separating out the prediction timescale, $\\gamma$, as a global gain factor. It is important for animals to engage in different horizons of prediction depending on task or memory demands (Mattar and Lengyel, 2022; Bellmund et al., 2020). In RNN-S, changing the prediction time horizon is as simple as increasing or decreasing the global gain of the network. Mechanistically, this could be accomplished by a neuromodulatory gain factor that boosts $\\gamma$, perhaps by increasing the excitability of all neurons (Heckman et al., 2009; Nadim and Bucher, 2014). In RNN-S, it was useful to have low network gain during learning ($\\gamma_{B}$), while allowing higher gain during retrieval to make longer timescale predictions ($\\gamma_{R}$). This could be accomplished by a neuromodulatory factor that switches the network into a learning regime (Pawlak et al., 2010; Brzosko et al., 2019), for example acetylcholine, which reduces the gain of recurrent connections and increases learning rates (Hasselmo, 1999; Hasselmo, 2006). The idea that the hippocampus might compute the SR with flexible $\\gamma$ could help reconcile recent results that hippocampal activity does not always match high-$\\gamma$ SR (Widloski and Foster, 2022; Duvelle et al., 2021). Additionally, flexibility in predictive horizons could explain the different timescales of prediction observed across the anatomical axes of the hippocampus and entorhinal cortex (Jung et al., 1994; Dolorfo and Amaral, 1998; Brun et al., 2008; Kjelstrup et al., 2008; Strange et al., 2014; Poppenk et al., 2013; Brunec and Momennejad, 2022). Specifically, a series of successor networks with different values of $\\gamma$ used in retrieval could establish a gradient of predictive timescales. Functionally, this may allow for learning hierarchies of state structure and could be useful for hierarchical planning (McKenzie et al., 2014; Momennejad and Howard, 2018; Ribas-Fernandes et al., 2019).\n\nEstimating $T$ directly provides RNN-S with a means to sample likely future trajectories, or distributions of trajectories, which is computationally useful for many memory-guided cognitive tasks beyond reinforcement learning, including reasoning and inference (Ostojic and Fusi, 2013; Goodman et al., 2016). The representation afforded by $T$ may also be particularly accessible in neural circuits. Ostojic and Fusi, 2013 note that only few general assumptions are needed for synaptic plasticity rules to estimate transition statistics. Thus, it is reasonable to assume that some form of transition statistics are encoded broadly across the brain.\n\nInterestingly, we also found that the recurrent network fit hippocampal data better than a feedforward network. An interesting direction for further work involves untangling which brain areas and cognitive functions can be explained by deep (feed forward) neural networks (Bonnen et al., 2021), and which rely on recurrent architectures, or even richer combinations of generative structures (Das et al., 2021). Recurrent networks, such as RNN-S, support generative sequential sampling, reminiscent of hippocampal replay, which has been proposed as a substrate for planning, imagination, and structural inference (Foster and Wilson, 2006; Singer et al., 2013; Momennejad and Howard, 2018; Evans and Burgess, 2020; Kay et al., 2020).\n\nThere are inherent limitations to the approach of using a recurrent network to estimate the SR. For instance, network dynamics can be prone to issues of instability due to the recurrent buildup of activity. To prevent this instability, we introduce two different modes of operation, \u2018learning\u2019 and \u2018retrieval\u2019. An additional limitation is that errors in the estimated one-step transition can propagate over the course of the predictive rollout. This is especially problematic if features are more densely coded or more correlated, which makes one-step transition estimations more difficult. These insights into vulnerabilities of a recurrent network have interesting parallels in biology. Some hippocampal subfields are known to be highly recurrent (Schaffer, 1892; Ram\u00f3n and Cajal, 1904; Miles and Wong, 1986; Le Duigou et al., 2014). This recurrency has been linked to the propensity of the hippocampus to enter unstable regimes, such as those that produce seizures (Sparks et al., 2020; Thom, 2014; Lothman et al., 1991; Knight et al., 2012). It remains an open question how a healthy hippocampus maintains stable activity, and to what extent the findings in models such as ours can suggest biological avenues to tame instability.\n\nOther recent theoretical works have also sought to find biological mechanisms to learn successor representations, albeit with different approaches (Brea et al., 2016; de Cothi and Barry, 2020; Bono et al., 2023; Lee, 2022; George et al., 2023). For instance, the model from George et al., 2023 explores a feedforward network that takes advantage of theta phase-precession to learn the SR. They analyze how place cells deform around boundaries and the function of the dorsal-ventral gradient in field size. The model introduced by Bono et al., 2023 uses a feedforward network with hippocampal replay. They explore how replay can modulate the bias-variance tradeoff of their SR estimate and apply their model to fear-conditioning data. It is important to note that these mechanisms are not mutually exclusive with RNN-S. Taken together with our work, these models suggest that there are multiple ways to learn the SR in a biological circuit and that these representations may be more accessible to neural circuits than previously thought.\n\n## Methods\n\n### Code availability\n\nCode is posted on Github: https://github.com/chingf/sr-project; Fang, 2022.\n\n### Random walk simulations\n\nWe simulated random walks in 1D (circular track) and 2D (square) arenas. In 1D simulations, we varied the probability of staying in the current state and transitioning forwards or backwards to test different types of biases on top of a purely random walk. In 2D simulations, the probabilities of each possible action were equal. In our simulations, one timestep corresponds to 1/3 second and spatial bins are assumed to be 5 cm apart. This speed of movement (15 cm/s) was chosen to be consistent with previous experiments. In theory, one can imagine different choices of timestep size to access different time horizons of prediction\u2013 that is, the choice of timestep interacts with the choice of $\\gamma$ in determining the prediction horizon.\n\n### RNN-S model\n\nThis section provides details and pseudocode of the RNN-S simulation. Below are explanations of the most relevant variables:\n\n<table>\n  <tbody>\n    <tr>\n      <td>N</td>\n      <td>Number of states, also equal to the number of neurons in the RNN</td>\n    </tr>\n    <tr>\n      <td>x</td>\n      <td>N-length vector of RNN neural activity</td>\n    </tr>\n    <tr>\n      <td>J</td>\n      <td>(N\u00d7N)  synaptic weight matrix</td>\n    </tr>\n    <tr>\n      <td>M</td>\n      <td>(N\u00d7N)  SR matrix</td>\n    </tr>\n    <tr>\n      <td>\u03d5</td>\n      <td>N-length input vector into network</td>\n    </tr>\n    <tr>\n      <td>b</td>\n      <td>binary variable indicating learning (0) or retrieval (1) mode</td>\n    </tr>\n    <tr>\n      <td>\u03b3B</td>\n      <td>Value of \u03b3 the network uses to calculate M in learning mode</td>\n    </tr>\n    <tr>\n      <td>\u03b3R</td>\n      <td>Value of \u03b3 the network uses to calculate M in retrieval mode</td>\n    </tr>\n    <tr>\n      <td>n</td>\n      <td>Variable that tracks the activity of neurons integrated over time</td>\n    </tr>\n    <tr>\n      <td>\u03bb</td>\n      <td>Discount value the network uses to calculate n</td>\n    </tr>\n    <tr>\n      <td>\u03b7</td>\n      <td>Learning rate</td>\n    </tr>\n  </tbody>\n</table>\n\nThe RNN-S algorithm is as follows:\n\n<table>\n  <tbody>\n    <tr>\n      <td>Algorithm 1 RNN-S.</td>\n    </tr>\n    <tr>\n      <td>Inputs:\u2002\u2003\u03d5(t) for t\u22081,\u2026,T\u2002\u2003b\u2062(t) for t\u22081,\u2026,T Initialize:\u2002\u2003J\u21900N\u00d7N\u2002\u2003n\u21900N\u2002\u2003x(t)\u21900N for t\u22081,\u2026,T for t\u22081,\u2026,T do \u2002\u2003if b(t)==1 then\u2002\u2003\u2002\u2003\u2002\u2003\u2002\u2003\u2002\u2003\u2002\u2003\u2002\u2003\u2002\u2003\u2002\u2003\u2002\u2003\u2002\u2003\u2002\u2003\u2009\u2002\u2003\u2002\u2002\u2003\u2002 // Retrieval Mode \u2002\u2003\u2002\u2003M\u22ba\u2190(1\u2212\u03b3RJ)\u22121\u2002\u2003\u2002\u2003x(t)\u2190M\u22ba\u03d5(t) \u2002\u2003else\u2002\u2003\u2002\u2003\u2002\u2003\u2002\u2003\u2002\u2003\u2002\u2003\u2002\u2003\u2002\u2003\u2002\u2003\u2002\u2003\u2002\u2003\u2002\u2003\u2002\u2003\u2002\u2003\u2002\u2003\u2002\u2003\u2002\u2009\u2003\u2009\u2002\u2003\u2002 // Learning Mode \u2002\u2003\u2002\u2003M\u22ba\u2190(1\u2212\u03b3BJ)\u22121\u2002\u2003\u2002\u2003x(t)\u2190M\u22ba\u03d5(t)\u2002\u2003\u2002\u2003n\u2190x(t)+\u03bbn \u2002\u2003\u2002\u2003\u2002\u2003\u2002\u2003\u2002\u2003\u2002\u2003\u2002\u2003\u2002\u2003\u2002\u2003\u2002\u2003\u2002\u2003\u2002\u2003\u2002\u2003// Learning rate update \u2002\u2003\u2002\u2003\u0394J\u2190x(t)x(t\u22121)\u22ba\u2212(Jx(t\u22121))x(t\u22121)\u22ba \u2002\u2002\u2003\u2002\u2003\u2002\u2003\u2002 \u2002 // Calculate weight update \u2002\u2003\u2002\u2003\u03b7=1n \u2002\u2003\u2002\u2003\u2002\u2003\u2002\u2003\u2002\u2002\u2003\u2002\u2003\u2003\u2002 \u2003\u2003\u2002// Get learning rates (elementwise inversion) \u2002\u2003\u2002\u2003\u03b7=min(\u03b7,1.0) \u2002\u2003\u2002\u2003\u2002\u2003 \u2002\u2002\u2003 \u2002\u2003\u2002\u2003 \u2002\u2003\u2003\u2009\u2003\u2002 // Learning rates can\u2019t exceed 1.0 \u2002\u2003\u2002\u2003Ji\u2062j\u2190Ji\u2062j+\u03b7j\u2062\u0394\u2062Ji\u2062j \u2002\u2003\u2002\u2003\u2002\u2003\u2002\u2003\u2002 \u2003\u2009\u2003\u2009\u2002\u2003\u2002\u2002\u2003\u2002 // Update synaptic weight matrix\u2002\u2003end ifend forreturn x</td>\n    </tr>\n  </tbody>\n</table>\n\n### RNN-S with plasticity kernels\n\nWe introduce additional kernel-related variables to the RNN-S model above that are optimized by an evolutionary algorithm (see following methods subsection for more details):\n\n<table>\n  <tbody>\n    <tr>\n      <td>A+,\u03c4+</td>\n      <td>pre\u2192 post side of the plasticity kernel\u2009K+\u2062(t)=A+\u2062E-t/\u03c4+</td>\n    </tr>\n    <tr>\n      <td>A\u2212,\u03c4\u2212</td>\n      <td>As above, but for the post\u2192 pre side</td>\n    </tr>\n    <tr>\n      <td>\u03b1d</td>\n      <td>Scaling term to allow for different self-synapse updates</td>\n    </tr>\n    <tr>\n      <td>\u03b1n</td>\n      <td>Scaling term to allow for different learning rate updates</td>\n    </tr>\n  </tbody>\n</table>\n\nWe also define the variable $t_{k}=20$, which is the length of the temporal support for the plasticity kernel. The value of tk was chosen such that $e^{-t_{k}/\\tau}$ was negligibly small for the range of $\\tau$ we were interested in. The update algorithm is the same as in Algorithm 1, except lines 15-16 are replaced with the following:\n\n<table>\n  <thead>\n    <tr>\n      <th>Algorithm 2 Plasticity kernel update</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>n\u2190\u03b1nx+\u03bbn\u2002\u2003\u2002\u2003\u2002\u2003\u2002\u2003\u2002\u2003\u2002\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2002\u2003\u2003\u2003\u2002\u2009\u2003\u2009\u2003\u2003\u2002 // Learning rate updatek+\u2190A+\u2211t\u2032=0tkx(t\u2212t\u2032)e\u2212t\u2032/\u03c4+\u2002\u2003\u2002\u2003\u2003\u2003\u2003\u2003\u2003\u2002\u2003\u2003\u2009\u2003\u2009// Convolution with plasticity kernelk\u2212\u2190A\u2212\u2211t\u2032=0tkx(t\u2212t\u2032)e\u2212t\u2032/\u03c4\u2212\u0394JK\u2190x(t)k+\u22ba+k\u2212x(t)\u22ba\u2002\u2003\u2009\u2003\u2009\u2002\u2002\u2002 // Calculate contribution to update from plasticity kernel\u0394JK[ii]\u2190\u03b1dx(t)k+\u22ba\u2002\u2003\u2002\u2003\u2002\u2003\u2002\u2003\u2003\u2002\u2003\u2009\u2003\u2002 // Updates to self-synapses use separate scaling\u0394J\u2190\u0394JK\u2212(Jx)x\u22ba\u2002\u2003\u2002\u2003\u2002\u2003\u2002\u2003\u2003\u2003\u2003\u2003\u2003\u2002\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2002// Calculate weight update</td>\n    </tr>\n  </tbody>\n</table>\n\n### Metalearning of RNN parameters\n\nTo learn parameters of the RNN-S model, we use covariance matrix adaptation evolution strategy (CMA-ES) to learn the parameters of the plasticity rule. The training data provided are walks simulated from a random distribution of 1D walks. Walks varied in the number of states, the transition statistics, and the number of timesteps simulated. The loss function was the mean-squared error (MSE) loss between the RNN $J$ matrix and the ideal estimated $T$ matrix at the end of the walk.\n\n### RNN-S with truncated recurrent steps and nonlinearity\n\nFor the RNN-S model with $t_{m\u2062a\u2062x}$ recurrent steps, lines 10 and 13 in Algorithm 1 is replaced with $M^{\u22ba}\u2190\\sum_{t=0}^{t_{m\u2062a\u2062x}}\\gamma^{t}\u2062J^{t}$.\n\nFor RNN-S with nonlinear dynamics, there is no closed form solution. So, we select a value for $t_{m\u2062a\u2062x}$ and replace lines 10 and 13 in Algorithm 1 with an iterative update for $t_{m\u2062a\u2062x}$ steps: $\u0394x=\u2212x+\\gammaJtanh(x^{\u2032})+\u03d5$. We choose $t_{m\u2062a\u2062x}$ such that $\\gamma_{max}^{t}<10^{\u22124}$.\n\n### RNN-S with successor features\n\nWe use a tanh nonlinearity as described above. For simplicity, we set $\\gamma_{B}=0$.\n\n### RNN-S with independent normalization\n\nAs in Algorithm 1, but with the following in place of line 16\n\n$$\n\u0394J_{ij}\u2190x_{i}(t)x_{j}(t\u22121)\u2212J_{ij}x_{j}(t\u22121)^{2}\n$$\n\n### FF-TD Model\n\nIn all simulations of the FF-TD model, we use the temporal difference update. We perform a small grid search over the learning rate $\u03b7$ to minimize error (for SR, this is the MSE between the true $M$ and estimated $M$; for successor features, this is the temporal difference error). In the one-hot SR case, the temporal difference update given an observed transition from state $s$ to state $s^{\u2032}$ is:\n\n$$\n\u0394M_{ji}={\\gammaM_{s^{\u2032}i}\u2212M_{si}if\u00a0s=j\\neqi1+\\gammaM_{s^{\u2032}i}\u2212M_{si}if\u00a0s=j=i0otherwise\n$$\n\nfor all synapses $j\u2192i$. Given arbitrarily structured inputs (as in the successor feature case), the temporal difference update is:\n\n$$\n\u0394M^{\u22ba}=\u03b7(\u03d5+\\gammaM\u03d5^{\u2032}\u2212M\u03d5)\u03d5^{\u22ba}\n$$\n\nor, equivalently,\n\n$$\n\u0394M_{ji}=\u03b7(\u03d5_{i}+\\gamma\\sumkM_{ki}\u03d5_{k}^{\u2032}\u2212\\sumkM_{ki}\u03d5_{k})\u03d5_{j}\n$$\n\n### Generation of feature encodings for successor feature models\n\nFor a walk with $N$ states, we created $N$-dimensional feature vectors for each state. We choose an initial sparsity probability $p$ and create feature vectors as random binary vectors with probability $p$ of being \u2018on\u2019. The feature vectors were then blurred by a 2D Gaussian filter with variance $\\sigma$ with 1 standard deviation of support. The blurred features were then min-subtracted and max-normalized. The sparsity of each feature vector was calculated as the L1 norm divided by $N$. The sparsity $s$ of the dataset then was the median of all the sparsity values computed from the feature vectors. To vary the spatial correlation of the dataset we need only vary $\\sigma$. To vary the sparsity $s$ of the dataset we need to vary $p$, then measure the final $s$ after blurring with $\\sigma$. Note that, at large $\\sigma$, the lowest sparsity values in our parameter sweep were not possible to achieve.\n\n### Measuring TD loss for successor feature models\n\nWe use the standard TD loss function (Equation 18). To measure TD loss, at the end of the walk we take a random sample of observed transition pairs $(\u03d5,\u03d5^{\u2032})$. We use these transitions as the dataset to evaluate the loss function.\n\n### Analysis of place field statistics\n\nWe use the open source dataset from Payne et al., 2021. We select for excitatory cells in the anterior tip of the hippocampus. We then select for place cells using standard measures (significantly place-modulated and stable over the course of the experiment).\n\nWe determined place field boundaries with a permutation test as in Payne et al., 2021. We then calculated the number of fields per neuron and the field size as in Henriksen et al., 2010. The same analyses were conducted for simulated neural data from the RNN-S and FF-TD models.\n\n### Behavioral simulation of Payne et al\n\nWe use behavioral tracking data from Payne et al., 2021. For each simulation, we randomly select an experiment and randomly sample a 28-min window from that experiment. If the arena coverage is less than 85% during the window, we redo the sampling until the coverage requirement is satisfied. We then downsample the behavioral data so that the frame rate is the same as our simulation (3 FPS). Then, we divide the arena into a $14\\times14$ grid. We discretize the continuous X/Y location data into these states. This sequence of states makes up the behavioral transitions that the model simulates.\n\n### Place field plots\n\nFrom the models, we get the activity of each model neuron over time. We make firing field plots with the same smoothing parameters as Payne et al., 2021.\n\n### Citation diversity statement\n\nSystemic discriminatory practices have been identified in neuroscience citations, and a \u2018citation diversity statement\u2019 has been proposed as an intervention (Dworkin et al., 2020; Zurn et al., 2020). There is evidence that quantifying discriminatory practices can lead to systemic improvements in academic settings (Hopkins, 2002). Many forms of discrimination could lead to a paper being under-cited, for example authors being less widely known or less respected due to discrimination related to gender, race, sexuality, disability status, or socioeconomic background. We manually estimated the number of male and female first and last authors that we cited, acknowledging that this quantification ignores many known forms of discrimination, and fails to account for nonbinary/intersex/trans folks. In our citations, first-last author pairs were 62% male-male, 19% female-male, 9% male-female, and 10% female-female, somewhat similar to base rates in our field (biaswatchneuro.com). To familiarize ourselves with the literature, we used databases intended to counteract discrimination (blackinneuro.com, anneslist.net, connectedpapers.com). The process of making this statement improved our paper, and encouraged us to adopt less biased practices in selecting what papers to read and cite in the future. We were somewhat surprised and disappointed at how low the number of female authors were, despite being a female-female team ourselves. Citation practices alone are not enough to correct the power imbalances endemic in academic practice National Academies of Sciences, 2018 \u2014 this requires corrections to how concrete power and resources are distributed.\n",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "de0e3046-86d7-4346-95fb-241628383ba6",
+      "submission_id": "8c8dacee-7174-4b5f-8f1f-e587dd57b109",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Srdjan Ostojic, https://ror.org/00hx6zz33 \u00c9cole Normale Sup\u00e9rieure Paris France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80680.sa0](https://doi.org/10.7554/eLife.80680.sa0)\n\nThis important work provides compelling evidence for the biological plausibility of the Successor Representation (SR) algorithm. The SR is a leading computational hypothesis to explore whether neural representations are consistent with the hypothesis that the neural networks in specific brain areas perform predictive computations. Establishing a biologically plausible learning rule for SR representations to form is of high significance in the field of neuroscience.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Srdjan Ostojic, https://ror.org/00hx6zz33 \u00c9cole Normale Sup\u00e9rieure Paris France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80680.sa1](https://doi.org/10.7554/eLife.80680.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Neural learning rules for generating flexible predictions and computing the successor representation\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Timothy Behrens as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Stefano Recanatesi (Reviewer #1); Arthur Juliani (Reviewer #2); Srdjan Ostojic (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nMain Comments:\n\n1) The form of the plasticity rule in Equation 4 is motivated by the requirement that synaptic weights encode a properly normalised transition probability matrix (lines 92-96). But why is the normalisation important? What would change if synaptic weights were simply monotonic functions of transition probabilities, without normalisation? Presumably that would allow for a broader range of plasticity rules.\n\n2) As the results of the paper strongly rely on the normalizing term in Equation 4. One of the reviewers suggests potentially moving upfront part of the discussion of this term, and enlarging the paragraph that discusses the biological plausibility of this specific term. Clearly laying out, for the non-expert reader, why it is biologically plausible compared to other learning rules. Also consider moving the required material to establish the novelty of such term: a targeted review of the relevant literature (current lines 358-366 and 413-433). This would allow the reader to understand immediately the significance and relative novelty of such term. For example, this reviewer personally wondered while reading the paper of how different was such term from the basic idea of Fiete et al., Neuron 2010 (DOI 10.1016/j.neuron.2010.02.003).\n\n3) Related to the first point, the text insists on the fact that \\\u03b3 is not encoded in the synaptic weights (eg line 89). Again, it is not entirely clear why this is important and justified, since \u03b3 is an ad-hoc factor in Equation 2. Presumably the proper normalisation of \u03b3 relies on the normalisation of J discussed above? It seems that this constraint could be relaxed.\n\n4) As a consequence of the body of the text being devoted to the analysis of the design choices behind the proposed model, a relatively smaller portion of the work involves direct comparisons with neural data. In these comparisons, while it is apparent that there is a reasonable match between the proposed model and the empirical data, it is difficult to interpret these results. This is because it is unclear what should be expected of a good or bad model given the data being analyzed (TD error and KL divergence), and reasonable baselines to compare against are not presented outside of the traditional TD algorithm, which is shown to be comparable to the proposed RNN based method in a number of cases.\n\n5) It would be useful to have a \"limitations\" paragraph in the discussion clearly outlining what this learning rule couldn't achieve. For example, Stachenfeld et al., Nat.Neuro. have many examples where the SR is deployed. Does the learning rule suggested by the authors would always work across the board, or are there limitations that could be highlighted where the framework suggested would not work well. No need to perform more experiments/simulations but simply to share insight regarding the results and the capability of the proposed learning rule.\n\nOther comments/suggestions:\n\n\u2013 Page 1: The introduction motivates this work with a discussion of hippocampal memory (storage and retrieval), but the work focuses on the SR which is inherently prospective. The first paragraph of the text could be revised to better make this connection beyond simply stating that the hippocampus is involved in both memory and future prediction.\n\n\u2013 Page 2: The end of the introduction would be stronger if the motivation for an RNNs usage was tied to the literature on the known recurrent dynamics of the hippocampus. See for example: https://www.frontiersin.org/articles/10.3389/fncel.2013.00262/full\n\n\u2013 Page 6: It is not clear the extent to which the FF-TD model differs from a canonical tabular SR algorithm or linear SF algorithm. My understanding is that it is the same, but the presentation in Figure 1i for example makes this somewhat unclear.\n\n\u2013 Pages 6 \u2013 11: it may be of benefit to more strongly support the various modifications to the model with connections to known or hypothesized hippocampal neural dynamics.\n\n\u2013 Page 14: It states that \"We discretize the arena into a set of states and encode each state as a randomly drawn feature \u03d5.\" If I understand correctly, these features are not completely random, and instead follow the distribution described in Section 2.5. As it currently reads, it seems that these features might be drawn from a uniform random distribution, which would be misleading.\n\n\u2013 Page 14: In Section 2.6 there is an assumption that a certain level of TD error corresponds to good performance. It is not clear what should objectively be considered a reasonable TD error. This is especially difficult to interpret in the case where both the RNN-S and FF-TD models display comparable performance. Is there perhaps some other baseline you would expect to perform considerably worse?\n\n\u2013 Page 17: In Figure 4 it is somewhat confusing that the KL divergence (subplots G and I) has reversed shading (dark for low values) compared to the other subplots. It would be easier to interpret these graphs if their color coding was more consistent.\n\n\u2013 Page 18: Similar to the difficulty of interpreting the TD error results, it is not clear what a \"good\" or \"bad\" KL divergence from the neural data would be. Any hypotheses on how to ground the numbers provided here would help to improve the quality of the results.\n\n\u2013 Page 20: It is mentioned that the predictive timescale may be a separate gain term which the hippocampus takes as input, but there is evidence that different regions of the hippocampus seem to operate on different timescales. See for example: https://www.jneurosci.org/content/42/2/299.abstract. Is there a way to reconcile these ideas?\n\n\u2013 Page 23: Section 4.5 describes the procedure for learning the parameters of the weight update rule as CMA-ES. Mentioning the fact that an evolutionary algorithm is used for learning these weights would help to make Section 2.3 more clear.\n\n\u2013 Figures 5D-E and similar supplementary figures: if there is a parameter region that is unexplored then the color used for such region should be outside of the colormap. One of the reviewers suggests replacing white with gray for such region in these figures.\n\n\u2013 Line 173: the text makes the distinction between an \"SR-like\" representation, and an \"exact SR\". What is the difference? Why is it important to have an exact of the SR in the neural activity, rather then eg a monotonic encoding of the SR?\n\n\u2013 The RNN described in Equation 2 is not of the standard form (the non-linearity is applied after the connectivity matrix, ie f(J x) instead of Jf(x)). Is this detail important? If not, why not use the more standard form to avoid confusion?\n\n\u2013 A line of work in the Fusi lab has examined plasticity rules that lead to the encoding of transition probabilities (eg Fusi et al., Neuron 2007). In particular, a paper by the reviewing editor (Ostojic and Fusi Front Comp Neuro 2013) examined the encoding of transition probabilities using plasticity rules that look similar to this manuscript. This is mentioned just for information, the authors should decide if those papers are relevant.\n\n\u2013 Figures 5D-E and similar supplementary figures: if there is a parameter region that is unexplored then the color used for such region should be outside of the colormap. One of the reviewers suggests replacing white with gray for such region in these figures.\n",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9004f2a0-5226-4282-9a31-aba5754ec7f3",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C1",
+      "claim": "The hippocampus is required for formation and recall of memories of personal experiences.",
+      "claim_type": "EXPLICIT",
+      "source": "These memories depend on the hippocampus for formation and recall (Scoville and Milner, 1957; Penfield and Milner, 1958; Corkin, 2002), but an algorithmic and mechanistic understanding of memory formation and retrieval in this region remains elusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "367a673e-1c3f-4c73-ac9d-609ae72dc5c0",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C2",
+      "claim": "Hippocampal activity is predictive of the future experience of an animal across species and tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this hypothesis, experimental work has shown that, across species and tasks, hippocampal activity is predictive of the future experience of an animal (Skaggs and McNaughton, 1996; Lisman and Redish, 2009; Mehta et al., 1997; Payne et al., 2021; Muller and Kubie, 1989; Pfeiffer and Foster, 2013; Schapiro et al., 2016; Garvert et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to experimental work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "f090bc17-d5b7-4023-a7dc-cf0241e86607",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C3",
+      "claim": "Models with predictive objectives tend to resemble hippocampal activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, theoretical work has found that models endowed with predictive objectives tend to resemble hippocampal activity (Blum and Abbott, 1996; Mehta et al., 2000; Stachenfeld et al., 2017; Momennejad et al., 2017; Geerts et al., 2020; Recanatesi et al., 2021; Whittington et al., 2020; George et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to theoretical work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "b41ed7fa-bb47-4976-8a24-57927471d307",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C4",
+      "claim": "The successor representation (SR) algorithm formalizes hippocampal activity as a predictive map.",
+      "claim_type": "EXPLICIT",
+      "source": "Inspired by work in the reinforcement learning (RL) field, these observations have been formalized by describing hippocampal activity as a predictive map under the successor representation (SR) algorithm (Dayan, 1993; Gershman et al., 2012; Stachenfeld et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work on SR algorithm",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "2fcc7cbe-842a-4125-be27-bf790c2a4ade",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C9",
+      "claim": "The RNN-S learning rule uses information local to each neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, the update rule (Equation 4) uses information local to each neuron (Figure 1H), an important aspect of biologically plausible learning rules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Property of the derived learning rule",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "83480699-07a4-42c9-9944-42c4c72ed07a",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C11",
+      "claim": "The RNN-S can learn the SR for random walks with different transition biases.",
+      "claim_type": "EXPLICIT",
+      "source": "The RNN-S can learn the SR for these random walks (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through simulation results shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "53266dfe-193c-4bf5-b352-057d2db3a413",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C14",
+      "claim": "The adaptive learning rate allows the model to capture both quick place field formation and slow place field biasing.",
+      "claim_type": "EXPLICIT",
+      "source": "Both these effects of slow and fast learning can be seen in the neural activity of an example RNN-S neuron with an adaptive learning rate (Figure 2H). After the first lap, a sizeable field is induced in a one-shot manner, centered at the cell's preferred location. In subsequent laps, the place field slowly distorts to reflect the bias of the transition statistics (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through simulation results shown in Figure 2H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "6a63810e-846d-4aac-9a10-e1cd5ad9f20a",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C15",
+      "claim": "Plasticity kernels that are STDP-like are more effective than others for learning the SR.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that plasticity kernels that are STDP-like are more effective than others, although plasticity kernels with slight post\u2192pre potentiation work as well (Figure 2J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through grid search results shown in Figure 2J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "bf251feb-839d-47b6-8e55-b3190c39983a",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C16",
+      "claim": "The network is sensitive to the time constant of the plasticity kernel and tends to find solutions for time constants around a few hundred milliseconds.",
+      "claim_type": "EXPLICIT",
+      "source": "The network is sensitive to the time constant and tends to find solutions for time constants around a few hundred milliseconds (Figure 2JK).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through grid search results shown in Figure 2J and 2K",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "b1af8397-3ad2-4a80-b1da-7a502cfbcd25",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C21",
+      "claim": "The decorrelative normalization term is necessary for the RNN-S to develop accurate representations with complex inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "By replacing the decorrelative term with an independent normalization, features from non-adjacent states begin to be associated together and the model activity becomes spatially non-specific over time (Figure 4C, top). In contrast, using the decorrelative term, the RNN-S population activity is more localized (Figure 4C, bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through simulation results shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "84ad019c-fcb6-4396-aa4b-9b3da68a774c",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C22",
+      "claim": "The RNN-S model with complex feature encodings displays backward shifts in place field peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the place field peaks of the RNN-S model additionally shifted backwards in space for the more complex feature encodings (Figure 4D). This was not seen for the one-hot encodings (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through simulation results shown in Figure 4D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "4368f307-3a92-400b-9b73-409de36cc1c8",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C23",
+      "claim": "The shifting in the RNN-S model is consistent with observations made in Mehta et al., 2000.",
+      "claim_type": "EXPLICIT",
+      "source": "The shifting in the RNN-S model is consistent with the observations made in Mehta et al., 2000 and demonstrates the utility of considering more complex input conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison to prior experimental work",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "ef9d7098-fd59-45e4-81fb-1fcf2b42997e",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C24",
+      "claim": "The RNN-S model performs well across a range of input feature spatial correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the model performs well across a range of inputs but loss is higher when inputs are spatially uncorrelated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through parameter sweep results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "4fc85e38-7bf4-4318-81af-2987e1ef902f",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C26",
+      "claim": "The FF-TD model performs similarly to the RNN-S model in terms of TD loss.",
+      "claim_type": "EXPLICIT",
+      "source": "The FF-TD model performs similarly to the RNN-S model, with lower TD loss in regions with low sparsity or higher correlation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through parameter sweep results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "3172c2cc-13ac-4f0b-8b6a-968f898dc9d3",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C28",
+      "claim": "Both models perform substantially better than a random network with weights of comparable magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Both models perform substantially better than a random network with weights of comparable magnitude (Figure 5\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through simulation results shown in Figure 5\u2014figure supplement 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "cf56a3ff-66b0-4389-b225-e8d15bc735b4",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C29",
+      "claim": "Place cells were discovered in the anterior region of titmouse hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "Payne et al., 2021 discovered the presence of place cells in this area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "bd289228-443f-488a-b659-9a0ffc0e32c0",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C30",
+      "claim": "Under most of the parameter range, all RNN-S neurons would be identified as place cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Under most of the parameter range, all RNN-S neurons would be identified as a place cell (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through simulation results shown in Figure 6D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "82b5f29e-407e-43cd-952d-1a2beaa2cb9b",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C31",
+      "claim": "Under conditions of high spatial correlation and low sparsity, 12% of RNN-S neurons do not have any fields in the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "However, under conditions of high spatial correlation and low sparsity, a portion of neurons (12%) do not have any fields in the environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through simulation results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "d57e8b81-6966-4383-a7da-8731bdd2ee02",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C32",
+      "claim": "The size of place fields in RNN-S increases as a function of the spatial correlation of the inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "The size of the fields increases as a function of the spatial correlation of the inputs, but is relatively insensitive to sparsity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through parameter sweep results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "9bac8b19-892a-451c-815d-347c3c4451c9",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C33",
+      "claim": "The number of place fields per cell in RNN-S is maximal for conditions in which input features are densely encoded and spatial correlation is low.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of fields is maximal for conditions in which input features are densely encoded and spatial correlation is low.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through parameter sweep results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "8e267233-bb47-455c-b74d-e653bba1b07e",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C35",
+      "claim": "The split-half noise floor of the Payne et al., 2021 dataset is a KL divergence of 0.12 bits.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that the split-half noise floor of the dataset of Payne et al., 2021 is a KL divergence of 0.12 bits (Figure 6\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Calculated from the Payne et al., 2021 dataset",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "bd4e0ff1-e764-4170-b5b3-38aff980a8d4",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C37",
+      "claim": "The FF-TD model has much higher divergence from neural data than RNN-S across all parameters of the input features.",
+      "claim_type": "EXPLICIT",
+      "source": "Across all parameters of the input features, despite having similar TD loss (Figure 5DE), the FF-TD model has much higher divergence from neural data (Figure 6GI, Figure 6\u2014figure supplement 1), similar to a random feedforward network (Figure 6\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through KL divergence analysis shown in Figure 6G and 6I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "ab2b051b-91ea-4351-81bb-2d02a48eb6eb",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C38",
+      "claim": "Anti-Hebbian learning may be useful because it decorrelates redundant information.",
+      "claim_type": "EXPLICIT",
+      "source": "This inhibitory learning may be useful because it decorrelates redundant information, allowing for greater specificity and capacity in a network (Sadeh and Clopath, 2021; F\u00f6ldi\u00e1k, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior theoretical work",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "cf6c2758-49c6-478a-b747-59168ab33dc9",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C40",
+      "claim": "Changing the prediction time horizon in RNN-S is as simple as increasing or decreasing the global gain of the network.",
+      "claim_type": "EXPLICIT",
+      "source": "In RNN-S, changing the prediction time horizon is as simple as increasing or decreasing the global gain of the network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Property of the RNN-S model",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "4a3f0796-dd72-4ddc-90ec-f73bfd880567",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C42",
+      "claim": "Acetylcholine could switch the network into a learning regime by reducing the gain of recurrent connections and increasing learning rates.",
+      "claim_type": "EXPLICIT",
+      "source": "This could be accomplished by a neuromodulatory factor that switches the network into a learning regime (Pawlak et al., 2010; Brzosko et al., 2019), for example acetylcholine, which reduces the gain of recurrent connections and increases learning rates (Hasselmo, 1999; Hasselmo, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative mechanism supported by citations",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "961ed4db-cc4a-4d7b-89f0-ed50432985d5",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C43",
+      "claim": "Flexibility in predictive horizons could explain the different timescales of prediction observed across the anatomical axes of the hippocampus and entorhinal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, flexibility in predictive horizons could explain the different timescales of prediction observed across the anatomical axes of the hippocampus and entorhinal cortex (Jung et al., 1994; Dolorfo and Amaral, 1998; Brun et al., 2008; Kjelstrup et al., 2008; Strange et al., 2014; Poppenk et al., 2013; Brunec and Momennejad, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation supported by citations",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "9df18628-253c-456f-adde-0da3e49c7afe",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C45",
+      "claim": "The recurrent buildup of activity in recurrent networks can lead to instability.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, network dynamics can be prone to issues of instability due to the recurrent buildup of activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Known property of recurrent networks",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "38949244-d7c0-461e-b88b-983318f7cbdd",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C46",
+      "claim": "Errors in the estimated one-step transition can propagate over the course of the predictive rollout in recurrent networks.",
+      "claim_type": "EXPLICIT",
+      "source": "An additional limitation is that errors in the estimated one-step transition can propagate over the course of the predictive rollout.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Property of the model",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "3954125d-9586-4926-8d4d-bdd28b93bc75",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C47",
+      "claim": "The recurrency of hippocampal subfields has been linked to the propensity of the hippocampus to enter unstable regimes such as seizures.",
+      "claim_type": "EXPLICIT",
+      "source": "This recurrency has been linked to the propensity of the hippocampus to enter unstable regimes, such as those that produce seizures (Sparks et al., 2020; Thom, 2014; Lothman et al., 1991; Knight et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "e56a9658-2f98-4747-a814-89444c1be3a1",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C48",
+      "claim": "The hippocampus is highly recurrent.",
+      "claim_type": "EXPLICIT",
+      "source": "An RNN model is particularly attractive as the hippocampus is highly recurrent, and its connectivity patterns are thought to support associative learning and recall (Gardner-Medwin, 1976; McNaughton and Morris, 1987; Marr et al., 1991; Liu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "7398647b-646a-4e5e-9c5c-bf518332d915",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C49",
+      "claim": "The SR framework captures many experimental observations of neural activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The SR framework captures many experimental observations of neural activity, leading to a proposed computational function for the hippocampus (Stachenfeld et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "22dfde9b-61aa-4ef0-9c73-65c729bb075c",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C50",
+      "claim": "The SR algorithm explains how the hippocampus may support relational reasoning and decision making.",
+      "claim_type": "EXPLICIT",
+      "source": "This algorithm further explains how, in addition to episodic memory, the hippocampus may support relational reasoning and decision making (Recanatesi et al., 2021; Mattar and Daw, 2018), consistent with differences in hippocampal representations in different tasks (Markus et al., 1995; Jeffery, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "340f3844-c31e-4cfd-ab6f-3adad9d2e93f",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C51",
+      "claim": "The first term in the RNN-S learning rule is similar to spike-timing dependent plasticity (STDP).",
+      "claim_type": "EXPLICIT",
+      "source": "The first term in Equation 4 is a temporally asymmetric potentiation term that counts states that occur in sequence. This is similar to spike-timing dependent plasticity, or STDP (Bi and Poo, 1998; Skaggs and McNaughton, 1996; Abbott and Blum, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison to known plasticity mechanism with citations",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "928940d4-6f88-4028-9d84-eea3ce708775",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C52",
+      "claim": "Depotentiation has been hypothesized to be broadly useful for stabilizing patterns and sequence learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Depotentiation has been hypothesized to be broadly useful for stabilizing patterns and sequence learning (F\u00f6ldi\u00e1k, 1990; Fiete et al., 2010), and similar inhibitory effects are known to be elements of hippocampal learning (Kullmann and Lamsa, 2007; Lamsa et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "ea6912fa-697a-4841-aea1-0bbbe4027109",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C53",
+      "claim": "Modulating synaptic learning rates as a function of neural activity is consistent with experimental observations of metaplasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Modulating synaptic learning rates as a function of neural activity is consistent with experimental observations of metaplasticity (Abraham and Bear, 1996; Abraham, 2008; Hulme et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to experimental work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "e870bffc-15ba-431a-9a34-78a056dec099",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C54",
+      "claim": "Place fields can form quickly, but over time the place fields may skew if transition statistics are consistently biased.",
+      "claim_type": "EXPLICIT",
+      "source": "Place fields can form quickly, but over time the place fields may skew if transition statistics are consistently biased (Stachenfeld et al., 2017; Monaco et al., 2014; Sheffield and Dombeck, 2015; Bittner et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to experimental work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "c05412b9-89dc-45f5-90ef-1e6c342dc32b",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C55",
+      "claim": "Animals are thought to be able to learn the structure of an environment quickly.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, animals are thought to be able to learn the structure of an environment quickly (Zhang et al., 2021), and neural representations in an environment can also develop quickly (Monaco et al., 2014; Sheffield and Dombeck, 2015; Bittner et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "db9ec0ce-152e-42cf-9b57-4c2d88f1fd9a",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C56",
+      "claim": "Inputs into the hippocampus are expected to be continuous and heterogeneous, with states encoded by overlapping sets of neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "However, inputs into the hippocampus are expected to be continuous and heterogeneous, with states encoded by overlapping sets of neurons (Hardcastle et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "d8fd3288-59e9-4e58-a402-c079b611e813",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C57",
+      "claim": "The RNN-S model strikes a balance between performance in estimating successor features, similarity to data, and biological plausibility.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our RNN-S model seems to strike a balance between performance in estimating successor features, similarity to data, and biological plausibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of model properties based on simulation results",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "3f401170-5f16-43d1-9c77-5a945aa023a5",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C58",
+      "claim": "The analyses provide a prediction of the input structure into the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our analyses provide a prediction of the input structure into the hippocampus that is otherwise not evident in an algorithmic description or in a model that only considers one-hot feature encodings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Prediction based on model fitting to neural data",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "637bdda0-72de-4bc6-b04a-76b215c513b9",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C59",
+      "claim": "The timescale of a plasticity rule in such a circuit may be longer than expected by standard STDP, but within the timescale of changes in behavioral states.",
+      "claim_type": "EXPLICIT",
+      "source": "The network is sensitive to the time constant and tends to find solutions for time constants around a few hundred milliseconds (Figure 2JK). Our robustness analysis indicates the timescale of a plasticity rule in such a circuit may be longer than expected by standard STDP, but within the timescale of changes in behavioral states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from grid search results",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "4e0bd242-4864-4868-b34d-2aa7dba5ba37",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C60",
+      "claim": "The timescale of the plasticity rule contrasts with behavioral timescale plasticity, which integrates over a window that is several seconds long.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that this also contrasts with behavioral timescale plasticity (Bittner et al., 2015), which integrates over a window that is several seconds long.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison to prior work",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "c9bebd05-1de7-4e9b-8d0c-450547ff2b2e",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C61",
+      "claim": "The SR is a reasonable model to describe the class of predictive representations, although not strictly unique.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that, although other plasticity rules could be used to model long-horizon predictions, the SR is a reasonable \u2013although not strictly unique\u2013 model to describe this class of predictive representations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from robustness analysis",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "3b2e6847-1c42-463b-9142-c130cce957cf",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C63",
+      "claim": "If network dynamics are not stable during learning, the update rule no longer optimizes for fitting the SR and the learned weight matrix will be incorrect.",
+      "claim_type": "EXPLICIT",
+      "source": "If these conditions are not satisfied during learning, the update rule no longer optimizes for fitting the SR and the learned weight matrix will be incorrect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from analytical results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "b5349f74-7603-49ff-8070-19ed4953d6d9",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C65",
+      "claim": "Adding a saturating nonlinearity is a feature of biological neurons often incorporated in models to prevent unbounded activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This is a feature of biological neurons that is often incorporated in models to prevent unbounded activity (Dayan and Abbott, 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "0ef114cb-481b-4df4-be9b-6c050fb07853",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C67",
+      "claim": "The separation of learning and retrieval phases stabilizes neural dynamics and allows flexible tuning of predictive power depending on task context.",
+      "claim_type": "EXPLICIT",
+      "source": "The separation of learning and retrieval phases stabilizes neural dynamics and allows flexible tuning of predictive power depending on task context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Property of the model",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "6ba2db82-e831-48f2-999a-ba01dc1dc5b6",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C70",
+      "claim": "The decorrelative normalization term may be particularly important in maintaining balance as inputs become more densely encoded.",
+      "claim_type": "EXPLICIT",
+      "source": "It may be that the normalization term is particularly important in maintaining this balance as inputs become more densely encoded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesis based on model behavior",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "b8c2d35b-c8e9-4824-a44a-ba5a47c3663b",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C71",
+      "claim": "The equilibrium between potentiating and depressing effects is not achieved by independent normalization.",
+      "claim_type": "EXPLICIT",
+      "source": "We see that the equilibrium between potentiating and depressing effects is not achieved by this type of independent normalization (Figure 4B, Appendix 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through simulation results shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "05815060-b1f5-4067-8946-6a978e0223a9",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C72",
+      "claim": "Field shifts in the RNN-S model could be caused by neurons receiving external inputs at more than one state, particularly at states leading up to its original field location.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, field shifts could be caused by neurons receiving external inputs at more than one state, particularly at states leading up to its original field location.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesis to explain observed phenomenon",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "9966566c-5fc1-4518-afa6-9caf0785c1e7",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C73",
+      "claim": "A similar observation of field shifts was made in Stachenfeld et al., 2017 with noisy state inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar observation was made in Stachenfeld et al., 2017 with noisy state inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison to prior work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "e69f8cd5-687e-466c-ae6a-f481c4bd4e0c",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C74",
+      "claim": "Behavioral transitions are spatially local, such that correlations across spatially adjacent features aid in the predictive power of the model.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the observation that behavioral transitions are spatially local, such that correlations across spatially adjacent features aid in the predictive power of the model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of simulation results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "0a3a1f58-6ae1-4047-9ded-1523f489b538",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C76",
+      "claim": "Henriksen et al., 2010 see similar place cell statistics in the proximal region of dorsal CA1 in rats.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, with similar analysis methods, Henriksen et al., 2010 see similar statistics in the proximal region of dorsal CA1 in rats, indicating that our analyses could be applicable across organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison to prior work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "b961349f-2645-4367-bc39-da55173e1859",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C77",
+      "claim": "The effect of spatial correlation on field size can be explained as the spatial correlation of the inputs introducing an additional spatial spread in the neural activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect can be explained as the spatial correlation of the inputs introducing an additional spatial spread in the neural activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of simulation results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "655d2bff-9406-48cb-bf56-794848faffb1",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C78",
+      "claim": "Conditions where each neuron receives inputs from multiple, spatially distant states lead to maximal number of fields per cell.",
+      "claim_type": "EXPLICIT",
+      "source": "These are conditions in which each neuron receives inputs from multiple, spatially distant states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of simulation results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "9c16486a-acf8-42e0-bee9-1630e5158225",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C80",
+      "claim": "A gradient of predictive timescales may allow for learning hierarchies of state structure and could be useful for hierarchical planning.",
+      "claim_type": "EXPLICIT",
+      "source": "Functionally, this may allow for learning hierarchies of state structure and could be useful for hierarchical planning (McKenzie et al., 2014; Momennejad and Howard, 2018; Ribas-Fernandes et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative function with citations to related work",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "df4e8df7-b343-4ebc-97fe-f0c99dd7a8f7",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C81",
+      "claim": "Only few general assumptions are needed for synaptic plasticity rules to estimate transition statistics.",
+      "claim_type": "EXPLICIT",
+      "source": "Ostojic and Fusi, 2013 note that only few general assumptions are needed for synaptic plasticity rules to estimate transition statistics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "a6edbd98-fb16-4cd9-8d44-d8c01c39d2d7",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C82",
+      "claim": "It is reasonable to assume that some form of transition statistics are encoded broadly across the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is reasonable to assume that some form of transition statistics are encoded broadly across the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from prior work",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "c93a215d-c322-44eb-ae58-aacbcaa6f721",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C83",
+      "claim": "Recurrent networks support generative sequential sampling, reminiscent of hippocampal replay.",
+      "claim_type": "EXPLICIT",
+      "source": "Recurrent networks, such as RNN-S, support generative sequential sampling, reminiscent of hippocampal replay, which has been proposed as a substrate for planning, imagination, and structural inference (Foster and Wilson, 2006; Singer et al., 2013; Momennejad and Howard, 2018; Evans and Burgess, 2020; Kay et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Property of recurrent networks with citations to related work",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "5229b94d-1c61-44bb-8c66-18005c619f5c",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C84",
+      "claim": "Errors in one-step transition estimations are especially problematic if features are more densely coded or more correlated.",
+      "claim_type": "EXPLICIT",
+      "source": "This is especially problematic if features are more densely coded or more correlated, which makes one-step transition estimations more difficult.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Property of the model",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "17de7653-f09d-4aa5-b274-e9fef87be04f",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C85",
+      "claim": "Some hippocampal subfields are known to be highly recurrent.",
+      "claim_type": "EXPLICIT",
+      "source": "Some hippocampal subfields are known to be highly recurrent (Schaffer, 1892; Ram\u00f3n and Cajal, 1904; Miles and Wong, 1986; Le Duigou et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "e3baf3a1-6fda-40dd-8ca1-309c51fa035a",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C86",
+      "claim": "It remains an open question how a healthy hippocampus maintains stable activity.",
+      "claim_type": "EXPLICIT",
+      "source": "It remains an open question how a healthy hippocampus maintains stable activity, and to what extent the findings in models such as ours can suggest biological avenues to tame instability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Acknowledgment of open question",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "80ace0d2-7f45-43ef-8ca2-e07005264e12",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C87",
+      "claim": "Other recent theoretical works have also sought to find biological mechanisms to learn successor representations with different approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "Other recent theoretical works have also sought to find biological mechanisms to learn successor representations, albeit with different approaches (Brea et al., 2016; de Cothi and Barry, 2020; Bono et al., 2023; Lee, 2022; George et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to recent work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "47a26d31-7ed3-4b61-a12b-63145507faec",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C88",
+      "claim": "The model from George et al., 2023 explores a feedforward network that takes advantage of theta phase-precession to learn the SR.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the model from George et al., 2023 explores a feedforward network that takes advantage of theta phase-precession to learn the SR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to recent work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "3ac9a336-b45f-4c75-8a8b-aafee9d94d1f",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C89",
+      "claim": "The model introduced by Bono et al., 2023 uses a feedforward network with hippocampal replay.",
+      "claim_type": "EXPLICIT",
+      "source": "The model introduced by Bono et al., 2023 uses a feedforward network with hippocampal replay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to recent work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "c32a96c2-ea62-4dc1-a98d-4900f5a44e30",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C90",
+      "claim": "These mechanisms are not mutually exclusive with RNN-S.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to note that these mechanisms are not mutually exclusive with RNN-S.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of relationship to other work",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "8247c97d-6227-40b3-99ce-5a52c2d8f59b",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C91",
+      "claim": "There are multiple ways to learn the SR in a biological circuit.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together with our work, these models suggest that there are multiple ways to learn the SR in a biological circuit and that these representations may be more accessible to neural circuits than previously thought.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from comparison to other models",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "7b0b0794-dee0-49b4-8165-6f9756179301",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C92",
+      "claim": "One timestep in the simulations corresponds to 1/3 second.",
+      "claim_type": "EXPLICIT",
+      "source": "In our simulations, one timestep corresponds to 1/3 second and spatial bins are assumed to be 5 cm apart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Simulation parameter",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "663115b8-858b-48aa-9d63-c42a9a2735ec",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C93",
+      "claim": "The speed of movement in the simulations was chosen to be 15 cm/s to be consistent with previous experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "This speed of movement (15 cm/s) was chosen to be consistent with previous experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Simulation parameter choice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "38e79aba-74e7-4054-816c-5a16e5fcc3fd",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C96",
+      "claim": "The FF-TD model implements the canonical SR algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "We refer to the model described in Figure 1I as the feedforward-TD (FF-TD) model. The FF-TD model implements the canonical SR algorithm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Definition of the FF-TD model",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "6a6f9fff-2793-4807-a5c8-828d63881722",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C98",
+      "claim": "The learning rule with adaptive learning rate still relies only on information local to the neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "This learning rule still relies only on information local to the neuron as in Figure 1H.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Property of the learning rule",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "975f0eb9-80da-4292-9621-2bf4b2a5da7d",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C99",
+      "claim": "The behavioral data was downsampled so that the frame rate is the same as the simulation (3 FPS).",
+      "claim_type": "EXPLICIT",
+      "source": "We then downsample the behavioral data so that the frame rate is the same as our simulation (3 FPS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data processing step",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "73eaea58-7837-418b-b365-11dbc554098f",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C101",
+      "claim": "Place cells in the model are defined as cells with at least one statistically significant place field under permutation tests.",
+      "claim_type": "EXPLICIT",
+      "source": "As in Payne et al., 2021, we define place cells in the model as cells with at least one statistically significant place field under permutation tests.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Definition used in analysis",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "a4027132-64d7-4e8e-a339-c71b41a468bf",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C102",
+      "claim": "The citation practices of the authors were 62% male-male, 19% female-male, 9% male-female, and 10% female-female for first-last author pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "In our citations, first-last author pairs were 62% male-male, 19% female-male, 9% male-female, and 10% female-female, somewhat similar to base rates in our field (biaswatchneuro.com).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Self-reported citation statistics",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "019868fe-9691-4e5c-aed8-e25f1b844da6",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "claim_id": "C103",
+      "claim": "The authors were somewhat surprised and disappointed at how low the number of female authors were, despite being a female-female team themselves.",
+      "claim_type": "EXPLICIT",
+      "source": "We were somewhat surprised and disappointed at how low the number of female authors were, despite being a female-female team ourselves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Self-reflection by authors",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "459c44b4-8810-4bbb-8f01-47aeef0d82c5",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The RNN-S model implements a biologically plausible learning rule with local information that successfully learns the successor representation. The learning rule consists of an STDP-like potentiation term and a decorrelative depotentiation term, both using only information local to each neuron.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C11, C51, C52, and C98 collectively demonstrate that the RNN-S learning rule is biologically plausible (uses local information), mathematically grounded (similar to STDP and depotentiation), and functionally effective (learns SR for random walks). The simulation results in Figure 2B and the mathematical derivation provide strong evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "d6d88fad-fb8f-4b24-bf2a-7895a2076056",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "An adaptive learning rate mechanism allows the RNN-S model to capture both rapid one-shot place field formation and slow place field biasing over repeated experiences. This adaptive mechanism is consistent with experimental observations of metaplasticity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14, C53, C54, and C55 are well-supported by simulation results (Figure 2H) showing both fast and slow learning dynamics. The adaptive learning rate transitions from high to low values, enabling the model to match biological observations of rapid initial learning and gradual refinement. The connection to metaplasticity provides biological plausibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "48db6d47-4154-4c95-9d37-9e50d3b62f08",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Systematic exploration of plasticity kernel parameters reveals that STDP-like kernels with time constants around a few hundred milliseconds are most effective for learning the SR, though multiple kernel configurations can produce similar results. This timescale is longer than standard STDP but shorter than behavioral timescale plasticity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15, C16, C59, C60, and C61 are supported by the grid search results in Figure 2J-K. The systematic parameter sweep provides strong evidence for the optimal kernel properties, and the comparison to known plasticity mechanisms (STDP and behavioral timescale plasticity) is appropriate. The acknowledgment that multiple solutions exist adds nuance to the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "273b9ffb-9277-436a-950d-3e69abf01f58",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The RNN-S model requires stable network dynamics during learning for the update rule to correctly optimize the SR. Stability can be achieved through saturating nonlinearities or by separating learning and retrieval phases with different gain parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63, C65, and C67 are supported by analytical results and simulations shown in Figure 3. The stability analysis is mathematically grounded, and the proposed solutions (nonlinearity and phase separation) are both biologically plausible and empirically validated. The tradeoffs between these approaches are appropriately discussed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "59c87a21-3f56-4f81-8c05-9c51d88d268e",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The RNN-S architecture allows flexible modulation of predictive time horizons by adjusting the global gain parameter \u03b3, potentially through neuromodulatory mechanisms like acetylcholine. This flexibility could explain different timescales of prediction across hippocampal and entorhinal cortex anatomical axes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C40, C42, C43, and C80 present an interesting theoretical framework, but the evidence is primarily speculative. While C40 is a mathematical property of the model that is well-supported, C42, C43, and C80 are speculative hypotheses about biological implementation and function. The citations provide plausibility but not direct experimental validation of these specific mechanisms in the RNN-S context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "16e95284-0f45-4a35-a635-f41797916b35",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The decorrelative normalization term in the RNN-S learning rule is necessary for developing accurate spatial representations with complex, overlapping input features. This anti-Hebbian component prevents non-adjacent states from becoming spuriously associated and maintains spatially specific activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21, C38, C70, and C71 are well-supported by simulation results in Figure 4B-C. The comparison between decorrelative and independent normalization clearly demonstrates the necessity of the decorrelative term for maintaining spatial specificity. The theoretical justification for anti-Hebbian learning is supported by appropriate citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "efc94a57-760b-4624-8a6b-803c06d5e165",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The RNN-S model with complex feature encodings exhibits backward shifts in place field peaks, consistent with experimental observations by Mehta et al., 2000. This phenomenon may arise from neurons receiving inputs at multiple states leading up to their preferred location.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22, C23, C72, and C73 are supported by simulation results in Figure 4D and comparison to prior experimental work. The model reproduces an experimentally observed phenomenon that was not explicitly designed into the system, which strengthens the claim. The mechanistic explanation (C72) is speculative but reasonable given the model architecture.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "56574eed-933e-4708-915b-ca179f13af7b",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Both RNN-S and FF-TD models perform well across a range of input feature parameters in estimating successor features from naturalistic behavioral trajectories. Performance is best when input features have spatial correlation, consistent with the spatially local nature of behavioral transitions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24, C26, C28, and C74 are supported by parameter sweep results in Figure 5. The systematic exploration of input feature space and comparison to random networks provides strong evidence. The interpretation that spatial correlation aids prediction due to local transitions is logical and well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "1beadb14-e0c3-44be-8bda-af27e76fe4ea",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Place field statistics in the RNN-S model vary systematically with input feature properties. Field size increases with spatial correlation, while the number of fields per cell is maximal when features are densely encoded with low spatial correlation. Under most parameter ranges, all RNN-S neurons are classified as place cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C33, C77, and C78 are well-supported by systematic parameter sweeps shown in Figure 6D-F. The relationships between input statistics and place field properties are clearly demonstrated and mechanistically interpretable. The explanations for these effects (C77, C78) are logical given the model architecture.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "e61cc925-263e-46a0-a636-808876838038",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The RNN-S model fits hippocampal place cell data from foraging titmice better than the FF-TD model, with optimal fit at input feature sparsity ~0.15 and spatial correlation ~8.75 cm. This analysis provides predictions about the structure of hippocampal inputs and demonstrates that recurrent architecture is important for matching neural data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29, C35, C37, C57, C58, and C76 are strongly supported by KL divergence analysis in Figure 6G-I and comparison to the Payne et al. 2021 dataset. The systematic parameter sweep identifies a specific region of input parameter space that best matches neural data. The comparison to FF-TD and random networks strengthens the conclusion that the recurrent architecture is important. The cross-species comparison (C76) adds generalizability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "0e5fdf1e-c460-4881-8494-308a8fd4bd71",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Recurrent network architectures for computing the SR face inherent limitations including instability due to recurrent activity buildup and error propagation in one-step transition estimates. These vulnerabilities have parallels in hippocampal biology, including the propensity for seizures in highly recurrent hippocampal subfields.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47, C84-C86 appropriately identify limitations of the recurrent architecture and connect them to biological observations. The citations supporting the link between recurrency and seizures (C47, C85) are appropriate. The acknowledgment of open questions (C86) is scientifically honest. These are well-reasoned limitations grounded in both model properties and biological knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "b0feed52-649e-4986-a2c0-61a384bab0ae",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior work establishes that the hippocampus is critical for memory formation and recall, that hippocampal activity is predictive of future experience, and that the successor representation algorithm captures many observations of hippocampal activity. The hippocampus is highly recurrent, making it suitable for RNN-based models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4, C48-C50 accurately summarize prior work with appropriate citations. These claims establish the scientific context and motivation for the current work. The citations are to seminal papers in the field and the characterizations of prior work appear accurate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "249eeed6-3743-48f0-a4b4-9c3530ce9ea5",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Hippocampal inputs are expected to be continuous and heterogeneous with overlapping neural representations. Transition statistics can be learned with minimal assumptions and may be encoded broadly across the brain. Recurrent networks support generative sequential sampling relevant to hippocampal replay.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56, C81-C83 are supported by appropriate citations to prior work. These claims establish biological constraints and theoretical context for the model. The characterizations of prior work appear accurate and the inferences drawn (C82, C83) are reasonable given the cited evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "6e58e98d-3474-4b73-8655-368ca7eb1083",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Other recent theoretical works have proposed alternative biological mechanisms for learning successor representations, including feedforward networks using theta phase-precession or hippocampal replay. These mechanisms are not mutually exclusive with RNN-S, suggesting multiple viable biological implementations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C91 appropriately contextualize the current work within recent literature. The characterizations of other models (C88, C89) appear accurate based on the citations. The interpretation that multiple mechanisms may coexist (C90, C91) is reasonable and scientifically mature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "2b67c4dd-2316-42cd-b339-06316ce9868d",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Methodological details specify simulation parameters (timestep = 1/3 second, spatial bins = 5 cm, movement speed = 15 cm/s), model definitions (FF-TD implements canonical SR algorithm), and analysis procedures (place cell definition, data downsampling to 3 FPS).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92, C93, C96, C99, and C101 provide clear methodological specifications that enable reproducibility. These are straightforward factual statements about the methods used in the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    },
+    {
+      "id": "180a93cb-1d96-4cbc-82be-48d51e22d2d7",
+      "content_id": "8853bd6d-b821-4842-a23e-41929692a8dc",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors' citation practices were 62% male-male, 19% female-male, 9% male-female, and 10% female-female for first-last author pairs. The authors expressed disappointment at the low representation of female authors despite being a female-female team.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102 and C103 are self-reported statistics and reflections by the authors. These are factual statements about their citation practices and personal reactions. While this is an important discussion, it is not a scientific result of the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:49:09.117171Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2fcc7cbe-842a-4125-be27-bf790c2a4ade",
+      "result_id": "459c44b4-8810-4bbb-8f01-47aeef0d82c5"
+    },
+    {
+      "claim_id": "83480699-07a4-42c9-9944-42c4c72ed07a",
+      "result_id": "459c44b4-8810-4bbb-8f01-47aeef0d82c5"
+    },
+    {
+      "claim_id": "340f3844-c31e-4cfd-ab6f-3adad9d2e93f",
+      "result_id": "459c44b4-8810-4bbb-8f01-47aeef0d82c5"
+    },
+    {
+      "claim_id": "928940d4-6f88-4028-9d84-eea3ce708775",
+      "result_id": "459c44b4-8810-4bbb-8f01-47aeef0d82c5"
+    },
+    {
+      "claim_id": "6a6f9fff-2793-4807-a5c8-828d63881722",
+      "result_id": "459c44b4-8810-4bbb-8f01-47aeef0d82c5"
+    },
+    {
+      "claim_id": "53266dfe-193c-4bf5-b352-057d2db3a413",
+      "result_id": "d6d88fad-fb8f-4b24-bf2a-7895a2076056"
+    },
+    {
+      "claim_id": "ea6912fa-697a-4841-aea1-0bbbe4027109",
+      "result_id": "d6d88fad-fb8f-4b24-bf2a-7895a2076056"
+    },
+    {
+      "claim_id": "e870bffc-15ba-431a-9a34-78a056dec099",
+      "result_id": "d6d88fad-fb8f-4b24-bf2a-7895a2076056"
+    },
+    {
+      "claim_id": "c05412b9-89dc-45f5-90ef-1e6c342dc32b",
+      "result_id": "d6d88fad-fb8f-4b24-bf2a-7895a2076056"
+    },
+    {
+      "claim_id": "6a63810e-846d-4aac-9a10-e1cd5ad9f20a",
+      "result_id": "48db6d47-4154-4c95-9d37-9e50d3b62f08"
+    },
+    {
+      "claim_id": "bf251feb-839d-47b6-8e55-b3190c39983a",
+      "result_id": "48db6d47-4154-4c95-9d37-9e50d3b62f08"
+    },
+    {
+      "claim_id": "637bdda0-72de-4bc6-b04a-76b215c513b9",
+      "result_id": "48db6d47-4154-4c95-9d37-9e50d3b62f08"
+    },
+    {
+      "claim_id": "4e0bd242-4864-4868-b34d-2aa7dba5ba37",
+      "result_id": "48db6d47-4154-4c95-9d37-9e50d3b62f08"
+    },
+    {
+      "claim_id": "c9bebd05-1de7-4e9b-8d0c-450547ff2b2e",
+      "result_id": "48db6d47-4154-4c95-9d37-9e50d3b62f08"
+    },
+    {
+      "claim_id": "3b2e6847-1c42-463b-9142-c130cce957cf",
+      "result_id": "273b9ffb-9277-436a-950d-3e69abf01f58"
+    },
+    {
+      "claim_id": "b5349f74-7603-49ff-8070-19ed4953d6d9",
+      "result_id": "273b9ffb-9277-436a-950d-3e69abf01f58"
+    },
+    {
+      "claim_id": "0ef114cb-481b-4df4-be9b-6c050fb07853",
+      "result_id": "273b9ffb-9277-436a-950d-3e69abf01f58"
+    },
+    {
+      "claim_id": "cf6c2758-49c6-478a-b747-59168ab33dc9",
+      "result_id": "59c87a21-3f56-4f81-8c05-9c51d88d268e"
+    },
+    {
+      "claim_id": "4a3f0796-dd72-4ddc-90ec-f73bfd880567",
+      "result_id": "59c87a21-3f56-4f81-8c05-9c51d88d268e"
+    },
+    {
+      "claim_id": "961ed4db-cc4a-4d7b-89f0-ed50432985d5",
+      "result_id": "59c87a21-3f56-4f81-8c05-9c51d88d268e"
+    },
+    {
+      "claim_id": "9c16486a-acf8-42e0-bee9-1630e5158225",
+      "result_id": "59c87a21-3f56-4f81-8c05-9c51d88d268e"
+    },
+    {
+      "claim_id": "b1af8397-3ad2-4a80-b1da-7a502cfbcd25",
+      "result_id": "16e95284-0f45-4a35-a635-f41797916b35"
+    },
+    {
+      "claim_id": "ab2b051b-91ea-4351-81bb-2d02a48eb6eb",
+      "result_id": "16e95284-0f45-4a35-a635-f41797916b35"
+    },
+    {
+      "claim_id": "6ba2db82-e831-48f2-999a-ba01dc1dc5b6",
+      "result_id": "16e95284-0f45-4a35-a635-f41797916b35"
+    },
+    {
+      "claim_id": "b8c2d35b-c8e9-4824-a44a-ba5a47c3663b",
+      "result_id": "16e95284-0f45-4a35-a635-f41797916b35"
+    },
+    {
+      "claim_id": "84ad019c-fcb6-4396-aa4b-9b3da68a774c",
+      "result_id": "efc94a57-760b-4624-8a6b-803c06d5e165"
+    },
+    {
+      "claim_id": "4368f307-3a92-400b-9b73-409de36cc1c8",
+      "result_id": "efc94a57-760b-4624-8a6b-803c06d5e165"
+    },
+    {
+      "claim_id": "05815060-b1f5-4067-8946-6a978e0223a9",
+      "result_id": "efc94a57-760b-4624-8a6b-803c06d5e165"
+    },
+    {
+      "claim_id": "9966566c-5fc1-4518-afa6-9caf0785c1e7",
+      "result_id": "efc94a57-760b-4624-8a6b-803c06d5e165"
+    },
+    {
+      "claim_id": "ef9d7098-fd59-45e4-81fb-1fcf2b42997e",
+      "result_id": "56574eed-933e-4708-915b-ca179f13af7b"
+    },
+    {
+      "claim_id": "4fc85e38-7bf4-4318-81af-2987e1ef902f",
+      "result_id": "56574eed-933e-4708-915b-ca179f13af7b"
+    },
+    {
+      "claim_id": "3172c2cc-13ac-4f0b-8b6a-968f898dc9d3",
+      "result_id": "56574eed-933e-4708-915b-ca179f13af7b"
+    },
+    {
+      "claim_id": "e69f8cd5-687e-466c-ae6a-f481c4bd4e0c",
+      "result_id": "56574eed-933e-4708-915b-ca179f13af7b"
+    },
+    {
+      "claim_id": "bd289228-443f-488a-b659-9a0ffc0e32c0",
+      "result_id": "1beadb14-e0c3-44be-8bda-af27e76fe4ea"
+    },
+    {
+      "claim_id": "82b5f29e-407e-43cd-952d-1a2beaa2cb9b",
+      "result_id": "1beadb14-e0c3-44be-8bda-af27e76fe4ea"
+    },
+    {
+      "claim_id": "d57e8b81-6966-4383-a7da-8731bdd2ee02",
+      "result_id": "1beadb14-e0c3-44be-8bda-af27e76fe4ea"
+    },
+    {
+      "claim_id": "9bac8b19-892a-451c-815d-347c3c4451c9",
+      "result_id": "1beadb14-e0c3-44be-8bda-af27e76fe4ea"
+    },
+    {
+      "claim_id": "b961349f-2645-4367-bc39-da55173e1859",
+      "result_id": "1beadb14-e0c3-44be-8bda-af27e76fe4ea"
+    },
+    {
+      "claim_id": "655d2bff-9406-48cb-bf56-794848faffb1",
+      "result_id": "1beadb14-e0c3-44be-8bda-af27e76fe4ea"
+    },
+    {
+      "claim_id": "cf56a3ff-66b0-4389-b225-e8d15bc735b4",
+      "result_id": "e61cc925-263e-46a0-a636-808876838038"
+    },
+    {
+      "claim_id": "8e267233-bb47-455c-b74d-e653bba1b07e",
+      "result_id": "e61cc925-263e-46a0-a636-808876838038"
+    },
+    {
+      "claim_id": "bd4e0ff1-e764-4170-b5b3-38aff980a8d4",
+      "result_id": "e61cc925-263e-46a0-a636-808876838038"
+    },
+    {
+      "claim_id": "d8fd3288-59e9-4e58-a402-c079b611e813",
+      "result_id": "e61cc925-263e-46a0-a636-808876838038"
+    },
+    {
+      "claim_id": "3f401170-5f16-43d1-9c77-5a945aa023a5",
+      "result_id": "e61cc925-263e-46a0-a636-808876838038"
+    },
+    {
+      "claim_id": "0a3a1f58-6ae1-4047-9ded-1523f489b538",
+      "result_id": "e61cc925-263e-46a0-a636-808876838038"
+    },
+    {
+      "claim_id": "9df18628-253c-456f-adde-0da3e49c7afe",
+      "result_id": "0e5fdf1e-c460-4881-8494-308a8fd4bd71"
+    },
+    {
+      "claim_id": "38949244-d7c0-461e-b88b-983318f7cbdd",
+      "result_id": "0e5fdf1e-c460-4881-8494-308a8fd4bd71"
+    },
+    {
+      "claim_id": "3954125d-9586-4926-8d4d-bdd28b93bc75",
+      "result_id": "0e5fdf1e-c460-4881-8494-308a8fd4bd71"
+    },
+    {
+      "claim_id": "5229b94d-1c61-44bb-8c66-18005c619f5c",
+      "result_id": "0e5fdf1e-c460-4881-8494-308a8fd4bd71"
+    },
+    {
+      "claim_id": "17de7653-f09d-4aa5-b274-e9fef87be04f",
+      "result_id": "0e5fdf1e-c460-4881-8494-308a8fd4bd71"
+    },
+    {
+      "claim_id": "e3baf3a1-6fda-40dd-8ca1-309c51fa035a",
+      "result_id": "0e5fdf1e-c460-4881-8494-308a8fd4bd71"
+    },
+    {
+      "claim_id": "9004f2a0-5226-4282-9a31-aba5754ec7f3",
+      "result_id": "b0feed52-649e-4986-a2c0-61a384bab0ae"
+    },
+    {
+      "claim_id": "367a673e-1c3f-4c73-ac9d-609ae72dc5c0",
+      "result_id": "b0feed52-649e-4986-a2c0-61a384bab0ae"
+    },
+    {
+      "claim_id": "f090bc17-d5b7-4023-a7dc-cf0241e86607",
+      "result_id": "b0feed52-649e-4986-a2c0-61a384bab0ae"
+    },
+    {
+      "claim_id": "b41ed7fa-bb47-4976-8a24-57927471d307",
+      "result_id": "b0feed52-649e-4986-a2c0-61a384bab0ae"
+    },
+    {
+      "claim_id": "e56a9658-2f98-4747-a814-89444c1be3a1",
+      "result_id": "b0feed52-649e-4986-a2c0-61a384bab0ae"
+    },
+    {
+      "claim_id": "7398647b-646a-4e5e-9c5c-bf518332d915",
+      "result_id": "b0feed52-649e-4986-a2c0-61a384bab0ae"
+    },
+    {
+      "claim_id": "22dfde9b-61aa-4ef0-9c73-65c729bb075c",
+      "result_id": "b0feed52-649e-4986-a2c0-61a384bab0ae"
+    },
+    {
+      "claim_id": "db9ec0ce-152e-42cf-9b57-4c2d88f1fd9a",
+      "result_id": "249eeed6-3743-48f0-a4b4-9c3530ce9ea5"
+    },
+    {
+      "claim_id": "df4e8df7-b343-4ebc-97fe-f0c99dd7a8f7",
+      "result_id": "249eeed6-3743-48f0-a4b4-9c3530ce9ea5"
+    },
+    {
+      "claim_id": "a6edbd98-fb16-4cd9-8d44-d8c01c39d2d7",
+      "result_id": "249eeed6-3743-48f0-a4b4-9c3530ce9ea5"
+    },
+    {
+      "claim_id": "c93a215d-c322-44eb-ae58-aacbcaa6f721",
+      "result_id": "249eeed6-3743-48f0-a4b4-9c3530ce9ea5"
+    },
+    {
+      "claim_id": "80ace0d2-7f45-43ef-8ca2-e07005264e12",
+      "result_id": "6e58e98d-3474-4b73-8655-368ca7eb1083"
+    },
+    {
+      "claim_id": "47a26d31-7ed3-4b61-a12b-63145507faec",
+      "result_id": "6e58e98d-3474-4b73-8655-368ca7eb1083"
+    },
+    {
+      "claim_id": "3ac9a336-b45f-4c75-8a8b-aafee9d94d1f",
+      "result_id": "6e58e98d-3474-4b73-8655-368ca7eb1083"
+    },
+    {
+      "claim_id": "c32a96c2-ea62-4dc1-a98d-4900f5a44e30",
+      "result_id": "6e58e98d-3474-4b73-8655-368ca7eb1083"
+    },
+    {
+      "claim_id": "8247c97d-6227-40b3-99ce-5a52c2d8f59b",
+      "result_id": "6e58e98d-3474-4b73-8655-368ca7eb1083"
+    },
+    {
+      "claim_id": "7b0b0794-dee0-49b4-8165-6f9756179301",
+      "result_id": "2b67c4dd-2316-42cd-b339-06316ce9868d"
+    },
+    {
+      "claim_id": "663115b8-858b-48aa-9d63-c42a9a2735ec",
+      "result_id": "2b67c4dd-2316-42cd-b339-06316ce9868d"
+    },
+    {
+      "claim_id": "38e79aba-74e7-4054-816c-5a16e5fcc3fd",
+      "result_id": "2b67c4dd-2316-42cd-b339-06316ce9868d"
+    },
+    {
+      "claim_id": "975f0eb9-80da-4292-9621-2bf4b2a5da7d",
+      "result_id": "2b67c4dd-2316-42cd-b339-06316ce9868d"
+    },
+    {
+      "claim_id": "73eaea58-7837-418b-b365-11dbc554098f",
+      "result_id": "2b67c4dd-2316-42cd-b339-06316ce9868d"
+    },
+    {
+      "claim_id": "a4027132-64d7-4e8e-a339-c71b41a468bf",
+      "result_id": "180a93cb-1d96-4cbc-82be-48d51e22d2d7"
+    },
+    {
+      "claim_id": "019868fe-9691-4e5c-aed8-e25f1b844da6",
+      "result_id": "180a93cb-1d96-4cbc-82be-48d51e22d2d7"
+    }
+  ],
+  "comparisons": []
+}

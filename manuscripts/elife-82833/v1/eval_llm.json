@@ -1,0 +1,434 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C56",
+      "C57",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The study recorded 3017 single units from mPFC across 8 rats (4M, 4F) aged 9-15 months over 104 sessions using linear silicon probes spanning nearly 3mm of the medial wall. Cells were classified as 2441 putative principal cells and 576 interneurons based on firing rates and waveform width.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C56, C57, C144-C146 provide consistent methodological details about subjects, recording approach, and cell classification. The sample size (n=8), recording methodology (silicon probes), and cell counts are clearly stated with appropriate classification criteria. Ethical approval is documented (C146).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Rats performed the Restaurant Row task where they had 1 hour to forage at four restaurants offering different flavored rewards with delays of 1-30s. Behavioral analysis showed economically rational strategies with threshold-based decisions that varied across rats and restaurants but were consistent across sessions for individual rats, reflecting subjective value assessments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C44 describe the task design and behavioral findings with supporting figures and statistical tests (Wilcoxon Signed-rank, p<0.05). The threshold consistency analysis appropriately compares within-rat variance across sessions vs. across restaurants. Behavioral patterns are consistent with prior work (C40 cites previous studies).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "In the Offer Zone, acceptance probability increased with better offers and rats made accept decisions faster than skip decisions (1-3s, z=-6.6, p<0.001). Reaction time was inversely related to subjective value for positive-value offers (r=-0.31, p<0.01), suggesting accepting is the default response and skipping reflects an override process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 present behavioral timing data with appropriate statistical tests and figures. The interpretation that accepting is the default response (C51) is supported by reaction time differences and is consistent with prior studies. The correlation analysis appropriately separates positive and negative value offers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "In the Wait Zone, quit decisions were more common early in the delay period with time-to-quit inversely related to subjective value (r=-0.52, p<0.001). In the Reward Zone, rats lingered at least 5s with a skewed distribution, but no significant relationship was found between linger time and offer value (r=0.05, p=0.51), contrasting with previous studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 report behavioral patterns with statistical support. The lack of correlation between linger time and value (C55) is appropriately noted as contrasting with prior work (Sweis et al., 2018a), suggesting potential task or subject differences. Statistical tests are appropriate for the data type.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Basic spiking properties showed higher firing rates in dorsal mPFC and more variable spiking in ventral mPFC. All task-relevant variables were significantly represented in mPFC (all z>23.5, p<0.001), with distributed, multimodal coding across cells. This pattern persisted even after stepwise removal of correlated variables.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C65 describe neural activity patterns with appropriate statistical comparisons against shuffled controls (Wilcoxon Signed-Rank tests). The multimodal coding analysis (C63-C64) includes controls for correlated variables through stepwise regression. Findings are consistent with mixed selectivity literature (C65 cites Duncan 2001, Rigotti et al. 2013).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Transfer entropy analysis revealed that 77% of cell pairs showed above-chance communication (z=230.1, p<0.001), with elevated TE along the identity diagonal indicating increased local communication. Quantitative analysis identified four peaks separated by valleys (Hartigan's Dip Test, D=0.0291, p<0.001), revealing four distinct functional subunits within mPFC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 present transfer entropy findings with appropriate statistical tests. The use of Hartigan's Dip Test to establish multimodality is appropriate. TE was normalized against shuffled spike times (30 iterations), providing proper controls. The identification of four peaks is supported by quantitative analysis of the identity diagonal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C31",
+      "C32"
+    ],
+    "result": "The functionally defined boundaries closely aligned with anatomical boundaries between ACC/PL and PL/IL, but revealed a novel transition bisecting the prelimbic cortex. This provides direct evidence for four functionally separable mPFC components (ACC, dorsal PL, ventral PL, IL), corresponding to predictions from anatomical connectivity studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32, C72-C74 present a major finding supported by both functional (TE) and anatomical data. The division of PL into dorsal and ventral components is novel but has anatomical precedent (cites Berendse et al. 1992, Heidbreder & Groenewegen 2003). The correspondence between functional and anatomical boundaries strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Intra-regional TE (within subregions) was significantly larger than inter-regional TE (Mann-Whitney U, z=19.87, p<0.001). Functional connectivity varied with distance between subregions, with adjacent areas showing stronger interactions than distant areas (ANOVA F(3)=179.5, p<0.001; correlation r=-0.07, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 quantify functional connectivity patterns with appropriate statistical tests. The distance-dependent connectivity gradient is well-supported by ANOVA and correlation analyses. This provides additional validation for the four-subregion model beyond the initial boundary identification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Each behavioral variable (task phase, session time, reward rank, offer delay, OZ choice) was encoded across all four mPFC subdivisions (all z>7.4, p<0.001), but to varying degrees. Task phase coding was strongest in ACC and dPL, weaker in vPL, and elevated again in IL (ANOVA F(3)=39.3, p<0.001; all pairwise comparisons p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 present mutual information analyses with appropriate statistical tests (Wilcoxon Signed-Rank, ANOVA with HSD post-hoc). The finding that all variables are represented across subregions but with different magnitudes supports both distributed and gradient models of mPFC function. Statistical power is adequate with 3017 cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "Session time was significantly coded across all four mPFC subregions (all z>5.9, p<0.001), but coding was strongest in ventral components vPL and IL (ANOVA F(3)=21.4, p<0.001; ACC vs dPL p=0.24; vPL vs IL p=0.66; all other comparisons p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 show differential encoding of session time with appropriate statistics. The stronger ventral representation suggests involvement in motivational/satiety factors that change over the session. Post-hoc tests appropriately control for multiple comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "Reward ranking was coded in each mPFC subregion (all z>7.0, p<0.001), but mutual information was most robust in dorsal areas ACC and dPL compared to ventral areas vPL and IL (ANOVA F(3)=45.4, p<0.001; ACC vs dPL p=0.29; vPL vs IL p<0.05; all other comparisons p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 demonstrate differential reward rank coding with appropriate statistical tests. The stronger dorsal representation is consistent with a role in value-based decision making. The pattern complements the session time findings, supporting a dorsal-ventral functional gradient.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Offer delay and OZ choice were both significantly coded throughout mPFC (all z>6.9, p<0.001), with choice coding strongest in dorsal subregions (ANOVA F(3)=134.0, p<0.001). However, coding for offer delay was largely eliminated when accounting for OZ choice, suggesting neural responses were more associated with decision-making than the presented delay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 present a critical finding that mPFC encodes choice but not offer delay per se. The conditional analysis (C88) appropriately tests whether delay coding depends on choice. This suggests mPFC receives decision information from other brain regions rather than directly encoding stimulus properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "Integrating findings across behavioral variables reveals a functional bias: task phase, reward ranking, and OZ choice were stronger in dorsal mPFC (ACC and dPL), while session time was more strongly represented in ventral mPFC (vPL and IL).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 synthesize multiple mutual information results (C78-C88) into a coherent functional gradient. This interpretation is well-supported by the individual analyses and represents a major conceptual advance in understanding mPFC organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "During OZ decisions, choice coding was initially at chance before entering the OZ, then increased above chance and remained elevated through the decision period (Repeated measures ANOVA Interaction F(75)=87.9, p<0.001). Choice coding emerged strongest in ACC, peaking just before rats exited the OZ (ANOVA F(3)=144.4, p<0.001; ACC vs others all p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 present time-resolved mutual information analysis with appropriate repeated measures ANOVA. The temporal dynamics (chance before OZ entry, increasing during decision) support a causal role in decision-making. The ACC predominance is consistent with prior literature on ACC function in choice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Net firing rate changes between accept and skip decisions were dramatically larger in ACC and dPL than in ventral mPFC. ACC cells were biased toward skip decisions (68% net skip, \u03c7\u00b2=4.9, p<0.05), dPL toward accept (55%, \u03c7\u00b2=4.8, p<0.05), vPL toward skip (55%, \u03c7\u00b2=6.2, p<0.05), and IL was balanced (50%, \u03c7\u00b2=0.0, p=0.93).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C98 quantify firing rate biases with appropriate chi-square tests for proportions. The ACC bias toward skip decisions is consistent with literature on ACC's role in bypassing default options (cites Hayden et al. 2011, Tervo et al. 2021). The differential biases across subregions support functional specialization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "During OZ decisions, restaurant identity was abundantly coded across all four mPFC subregions (Rm ANOVA Accept F(75)=7.0, p<0.001), but neural coding for offer delay was absent (no time bins reached significance, all p>0.05). Although mPFC encoded the decision made, firing rates never consistently represented the quality of the offer being considered, suggesting mPFC requires communication with other brain areas containing delay information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 present a striking dissociation: mPFC encodes choice and context (restaurant) but not the stimulus (delay) driving the choice. Statistical tests are appropriate with multiple comparison corrections. The inference (C102) that mPFC requires input from other regions is logical but speculative\u2014it's a reasonable interpretation but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "At the beginning of the WZ, there was no coding for choice across subregions (Rm ANOVA Interaction F(207)=1.3, p<0.01; no time bins significant). At the end of the WZ, mutual information for re-evaluative choice significantly increased (Rm ANOVA Interaction F(207)=4.4, p<0.001), stronger in dorsal mPFC (ANOVA F(3)=17.3, p<0.001), occurring earliest and persisting longest in dPL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106 demonstrate temporal dynamics of re-evaluative decision coding with appropriate repeated measures ANOVA. The late emergence of choice coding in WZ (vs. early in OZ) suggests different decision processes. The dPL predominance in WZ vs. ACC in OZ suggests functional specialization for initial vs. re-evaluative decisions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "After entering the WZ, firing rates in dPL, vPL, and IL varied systematically with accepted offer delay (higher rates for longer delays), but not in ACC (p>0.62). Significant correlations existed at both the beginning and end of WZ (Early: dPL, vPL, IL all p<0.01; Late: dPL p=0.06, vPL and IL p<0.01), persisting past the delay period (Post WZ: dPL and vPL p<0.05, IL p=0.06).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 reveal that value coding emerges in WZ despite being absent in OZ (C100). This temporal dissociation is well-supported by correlation analyses across time windows. The persistence of value coding after reward delivery suggests a role in learning or outcome evaluation. The ACC exception is notable given its strong choice coding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "At reward delivery, qualitatively different neural responses were observed across subregions (ANOVA F(3)=13.1, p<0.001). ACC showed a strong, sustained decrease in firing rate. Responding to reward delivery occurred sooner in ventral mPFC (ANOVA F(3)=10.5, p<0.001; dmPFC vs vmPFC z=4.8, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113 characterize reward responses with appropriate statistics. The ACC decrease is distinctive and may reflect outcome evaluation or task disengagement. The earlier ventral responses could reflect proximity to reward-processing circuits. Figures support the qualitative differences described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Firing rates varied systematically with lingering behavior. In the first half of lingering, significant relationships existed in ventral mPFC (vPL p<0.05, IL p=0.07). In the second half, this relationship disappeared in ventral mPFC and an opposing relationship developed in dPL (Late RZ: dPL p<0.01; Post RZ: all p>0.39).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C116 show temporal dynamics of linger-related activity with appropriate correlation analyses. The shift from ventral to dorsal engagement suggests different processes: ventral may reflect motivational state while dorsal may reflect the decision to leave. However, these relationships were obscured in subsampled data (Figure 7 supplement), suggesting limited statistical power.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The study revealed four distinct functional domains within mPFC (ACC, dorsal PL, ventral PL, IL) that closely mirrored anatomical subregions, including novel evidence to divide prelimbic cortex. Dorsal aspects (ACC, dPL) were more involved in processing active decisions, while ventral aspects (vPL, IL) were more engaged in motivational factors. This represents a strong correspondence between functional and anatomical understanding of mPFC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7, C117-C121 synthesize the major findings. The four-subregion model is supported by multiple independent analyses: transfer entropy (C66-C71), mutual information for different variables (C78-C90), and temporal dynamics (C91-C116). The dorsal-ventral functional gradient is consistently demonstrated across analyses. The novel PL subdivision is a significant contribution supported by both functional and anatomical evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The study demonstrates that mPFC function can be characterized in three complementary ways: (1) distributed coding where each variable is represented across all subregions and cells respond to multiple variables; (2) discrete subregions identified by transfer entropy; and (3) a functional gradient with dorsal areas more engaged in decisions and ventral areas in motivation. These perspectives combine to show discrete subregions that multiplex cognitive information along a dorso-ventral gradient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C133 present a sophisticated synthesis reconciling apparently contradictory views of mPFC organization. The distributed coding (C124-C125) is supported by correlation analyses (C60-C65). The discrete subregions (C126) are supported by TE analysis (C66-C71). The gradient (C127-C131) is supported by differential encoding strengths (C78-C90). This integrative framework is well-supported by the data and represents a conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Restaurant Row provides an important middle ground for studying decision making, engaging diverse neural processes while providing controlled decision windows. The findings match prior work (Sul et al. 2010): stronger choice coding in ACC vs PL/IL, and limited value coding in mPFC. The data suggest decision processing is a stronger driver of mPFC activity than motor output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C140 contextualize the findings within prior literature. The comparison to Sul et al. 2010 (C136-C139) shows consistency with previous findings, strengthening confidence in the results. The motor control analysis (C140) is supported by hemisphere-specific analyses showing no contralateral bias (Figure 5 supplement 1), though this could be more thoroughly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The functional biasing between dorsal and ventral mPFC has a strong anatomical basis: dorsal mPFC projects to dorsal hippocampus, dorsal striatum, and premotor cortex (involved in action selection), while ventral mPFC connects with ventral hippocampus, ventral striatum, amygdala, and hypothalamus (tied to motivation). The data suggest ACC engagement during primary decision making (OZ) with dPL engaged during re-evaluation (WZ).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C143 integrate the functional findings with anatomical connectivity literature (cites Heidbreder & Groenewegen 2003, Voorn et al. 2004). The correspondence between functional gradients and anatomical connectivity patterns strengthens the interpretation. The ACC/dPL distinction for initial vs. re-evaluative decisions (C143) is well-supported by the temporal dynamics data (C91-C106).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The introduction establishes that mPFC is central to decision-making but past studies have yielded controversial results. The standard anatomical view divides mPFC into ACC, PL, and IL, each with different functional roles based on prior literature. ACC has been linked to choice between options, outcome evaluation, and cost-benefit analysis. PL has been implicated in strategy representations, learned associations, and working memory. IL has been linked to extinction behavior and habitual actions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C30 provide appropriate background from the literature with extensive citations. These claims accurately characterize the state of the field and the controversy motivating the study. The functional roles attributed to each subregion are well-supported by the cited literature, though the authors note these prior findings are controversial and sometimes contradictory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C12",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Using linear silicon probes spanning nearly 3mm of the medial wall, the study found that the four mPFC components process information about different aspects of the Restaurant Row task. Dorsal components are more engaged in action selection while ventral components are more engaged in motivational aspects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C33-C35 summarize the methodological approach and main findings. These are well-supported by the detailed analyses presented in the results section. The silicon probe methodology enabled simultaneous recording across the full mPFC extent, which was critical for the comparative analyses.",
+    "result_type": "MAJOR"
+  }
+]

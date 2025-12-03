@@ -1,0 +1,235 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C70"
+    ],
+    "result": "The study analyzed 777 paired antibody profiles from a cohort in Guangzhou, China, measured at baseline (2010) and follow-up (2014), testing responses to 21 A(H3N2) strains isolated over 47 years. With only 0.6% vaccination rate, observed HI titer changes were attributed to natural exposures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C3, and C70 provide clear cohort characteristics and establish the study design. The low vaccination rate (C2) reasonably supports the inference that titer changes reflect natural exposure (C3), though self-reported vaccination data may underestimate actual vaccination rates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Fourier analysis revealed that 33.6% (95% CI, 30.3\u201337.0%) of participants exhibited long-term periodicity (20\u201340 years, ~24-year cycle) in antibody responses at baseline, significantly higher than null expectation, accounting for a median 22.1% of variance. Similar periodicity at follow-up suggested the pattern was stable and not affected by recent exposures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C9 collectively demonstrate statistically significant long-term periodicity using appropriate Fourier analysis with permutation testing. The consistency between baseline and follow-up (C8) strengthens the finding. The variance explained (22.1%) is modest but meaningful given the complexity of immune responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C30",
+      "C31"
+    ],
+    "result": "The observed long-term periodicity in antibody responses was robust across multiple sensitivity analyses, including different analytical methods (weighted frequency, Lomb-Scargle periodograms, EMD detrending), strain exclusion analyses, and interpolation methods. Independent validation in a Vietnam cohort showed similar periodicity, suggesting generalizability across populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 and C30-C31 demonstrate thorough sensitivity analyses and external validation. The Vietnam cohort analysis (C13) provides important out-of-sample validation, though differences in study design (annual sampling, different age structure) limit direct comparability. The robustness checks are comprehensive and appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C33",
+      "C34",
+      "C42",
+      "C57",
+      "C58",
+      "C65"
+    ],
+    "result": "Simulation studies demonstrated that individual-level cross-reactions between antigenically similar strains, particularly broad-range cross-reactions, were necessary and sufficient to recover the observed long-term periodicity. Models with only repeated exposures or population-level viral activity failed to reproduce the observed cycles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C33, C34, C42, C57, C58, and C65 present consistent simulation results identifying cross-reactivity as the key mechanism. The systematic comparison of models with different components (Figure 3) provides strong evidence. However, the simulations only qualitatively recovered patterns (C67), and depend on simplifying assumptions (C66).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C32"
+    ],
+    "result": "The phase of antibody response cycles was predictable at individual and cohort levels, with 73% consistency for phase I predictions. Individuals in phase IV were 14% (95% CI, 4\u201326%) more likely to seroconvert to recent strains (A/Texas/2012 or A/HongKong/2014) compared to phase I, after adjusting for age and pre-existing titers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 and C32 demonstrate that cycle phases are predictable and associated with seroconversion risk. The 73% prediction accuracy (C21) and 14% increased risk (C19) with appropriate statistical adjustment support the clinical relevance. However, the effect size is modest and confidence intervals are wide, suggesting limited predictive power at the individual level.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C53",
+      "C54"
+    ],
+    "result": "Birth cohorts showed diversity in phase distribution, with younger cohorts (1986-90) having higher proportions in phase IV (55%) compared to older cohorts (1961-65, 17%). Cohort-specific phase composition correlated with predicted phase IV distribution (r=0.67, p=0.01) and seroconversion proportions (r=0.63, p=0.02), with correlations disappearing for unsupported periodicities (35 or 6 years).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 and C53-C54 demonstrate cohort-level patterns consistent with individual-level cycles. The correlations (C23, C24) are moderate and statistically significant, and the specificity to the observed 24-year periodicity (C25) strengthens the finding. However, within-cohort diversity (C26) indicates substantial individual variation not captured by cohort effects alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C40"
+    ],
+    "result": "Human antibody responses to influenza A(H3N2) display long-term periodicity (~24 years) consistent with nonlinear adaptive immune responses involving cross-reactions. The periodicity represents a retrospective characterization of antibody profiles from multiple exposures and should not be interpreted as the duration of protection. Cross-reactions may drive periodicity through temporal cross-protection (positive feedback) and blunting of specific antibody generation (negative feedback).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29, C35-C38, and C40 synthesize the main findings and propose a mechanistic interpretation. The interpretation is consistent with simulation results and prior literature (C35). The cautionary note about not equating periodicity with protection duration (C37) is appropriate. The proposed mechanism (C38) is speculative but biologically plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Simulations showed that antigenic evolution rates significantly affect periodicity in individual antibody responses. Slower evolution rates shift cycles to longer periodicities (potentially lifelong immunity for stable viruses like measles), while high evolution rates could diminish periodicity through frequent re-exposures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 describe simulation results exploring the relationship between antigenic evolution and periodicity. The findings are logical and supported by simulation data (Figure 3\u2014figure supplement 2). The measles example (C45) provides useful context, though the comparison is somewhat limited given fundamental differences between measles and influenza immunity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Phase of antibody response cycles was associated with seroconversion risk after accounting for pre-existing titers. The findings suggest that cyclic patterns in antibody responses may explain previously reported heterogeneity in infection risk among individuals with similar homologous titers, and that measuring responses to both current and historical strains could improve risk characterization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 connect the findings to prior literature on heterogeneous infection risk (C49) and propose practical implications. The inference that cycles contribute to heterogeneity (C50) is reasonable but not definitively proven. The recommendation to measure responses to multiple strains (C52) is a logical extension but requires validation in prospective studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "The findings could potentially be used to identify and vaccinate high-risk groups based on shared exposure histories within birth cohorts. The authors speculate that antigens with faster evolution may attack age groups more uniformly, while slower-evolving antigens tend to affect children more.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55-C56 are explicitly speculative (C55 states 'potentially useful' and C56 begins with 'we speculate'). While the speculation is reasonable given the cohort-level patterns observed, no data are presented to support these specific applications. These represent hypotheses for future work rather than supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The study has several acknowledged limitations: HI-binding antibodies mediate only ~50% of protection; other immunity forms may show different patterns; between-subtype interactions were not incorporated; simulations made simplifying assumptions and only qualitatively recovered patterns; and the exact periodicity value depends on strain sampling density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C69 appropriately acknowledge study limitations. The recognition that HI titers represent only partial immunity (C59-C60) is important. The limitations regarding simulation assumptions (C66-C67) and analytical constraints (C68-C69) are honestly stated. The discussion of between-subtype interactions (C62-C64) acknowledges an important gap while noting it likely doesn't affect the main conclusions (C65).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The introduction establishes background knowledge about influenza burden, antigenic evolution, cross-reactive immunity, antibody dynamics, and immune interactions (OAS, immunodominance, back-boosting, cross-protection, immune imprinting, antigenic seniority). The authors hypothesize that feedback mechanisms from these interactions might create intrinsic temporal cycles in immune responses, which have not been extensively investigated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C90 provide background context from established literature with appropriate citations. The hypothesis that feedback mechanisms might create cycles (C86) is reasonable by analogy to other biological systems (C85). The statement that such cycles have not been well-investigated (C87) justifies the study. These claims appropriately set up the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C39",
+      "C41",
+      "C43"
+    ],
+    "result": "The findings are consistent with prior literature showing that cross-protection wanes over time, people show little cross-reaction to strains isolated >20 years before birth, and antigenic evolution rates determine the breadth of cross-reactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C41, and C43 cite prior literature to support the interpretation of current findings. The citations are appropriate and the consistency with prior work strengthens the conclusions. These claims effectively connect the current findings to the broader literature.",
+    "result_type": "MINOR"
+  }
+]

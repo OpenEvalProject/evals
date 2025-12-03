@@ -1,0 +1,380 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "CIN is defined as persistent chromosome gain or loss through abnormal mitotic segregation and is a hallmark of cancer that drives aneuploidy in approximately 80% of solid tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C11-C14 provide consistent definitions and context for CIN supported by foundational citations (Hanahan and Weinberg, 2011; Hancock et al., 2004; Knouse et al., 2017; Weaver and Cleveland, 2006). These are well-established facts in cancer biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "CIN is associated with tumorigenesis, therapeutic resistance, metastasis, and poor survival outcomes in cancer patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 are supported by multiple citations to published studies demonstrating these clinical associations. These represent established knowledge about CIN's role in cancer progression and treatment outcomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Current methods for measuring CIN (FISH, mitotic visualization, gene expression scores) have significant limitations including being labor-intensive, indirect, and lacking standardization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C24-C29 provide a critical assessment of existing CIN measurement methods supported by citations and logical reasoning about methodological limitations. This establishes the rationale for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C31",
+      "C32"
+    ],
+    "result": "Selection against aneuploid cells reduces observable karyotype diversity, confounding CIN measurement even when mitotic errors are directly observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C31, C32 are supported by citations to recent single-cell sequencing studies (Bolhaqueiro et al., 2019; Gao et al., 2016; Kim et al., 2018; Nelson et al., 2020; Wang et al., 2014; Gerstung et al., 2020; Ippolito et al., 2020; Lukow et al., 2020) demonstrating this phenomenon. This is a key motivation for the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The authors developed a computational framework using agent-based modeling and approximate Bayesian computation to measure CIN while accounting for karyotype selection, and applied it to paclitaxel-treated cells and clinical samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, C33-C36 describe the methodological approach which is detailed in the manuscript with figures and methods sections. The framework is clearly presented and applied to multiple datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Three selection models were implemented: Gene Abundance (fitness declines with deviation from euploidy), Driver Density (fitness weighted by oncogene/tumor suppressor ratio), and Hybrid (combination of both).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 describe the selection models with citations to supporting literature (Sheltzer and Amon, 2011; Zhu et al., 2012; Davoli et al., 2013; Laughney et al., 2015) and are illustrated in Figure 1. The models are clearly defined and justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Simulations were initialized with 100 euploid cells with defined parameters for division probability (0.5), mis-segregation probability (Pmisseg), and population limits (pseudo-Moran or Wright-Fisher), which did not significantly affect extracted measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 describe simulation parameters that are detailed in methods and validated in Figure 1\u2014figure supplement 2. The robustness check (C47) provides evidence that population limits don't bias results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Simulations show that karyotype diversity increases with mis-segregation rate and decreases with selection, with different selection models producing distinct patterns: Abundance model yields low heterogeneity, Driver model shows sharp increases even at low mis-segregation rates, and Hybrid model is intermediate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C56 describe simulation results shown in Figure 2 with consistent patterns across different population models (pseudo-Moran and Wright-Fisher). The findings are well-documented with figures and represent expected outcomes from the model design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Mean ploidy tends to increase over time in simulations, particularly without selection, with different dynamics under different selection models: Abundance maintains near-diploid, Driver increases rapidly, and Hybrid shows modest increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 describe ploidy dynamics shown in Figure 2D with mechanistic explanation (C58) and consistency with prior work (C61 cites Davoli et al., 2013; Laughney et al., 2015). The interpretation is reasonable given model constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Genome doubling buffers against chromosome loss and both diploid and tetraploid populations converge toward near-triploid states, with tetraploidy providing selective advantage in the Abundance model but not the Driver model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 describe findings from diploid vs. tetraploid simulations shown in Figure 2F-G, consistent with cited literature (Bielski et al., 2018; Gerstung et al., 2020; Carter et al., 2012; L\u00f3pez et al., 2020). The results align with known cancer biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "The agent-based model recapitulates key aspects of tumor evolution and demonstrates that selection pressure profoundly shapes karyotype diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 are summary conclusions drawn from the simulation results (C48-C68). The model's ability to reproduce known phenomena (genome doubling effects, ploidy convergence) supports its validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Long-term simulations (3000 steps) show that the Abundance model produces limited diversity with stabilizing selection around euploidy, while Driver Density and Hybrid models generate more diversity, and populations are strongly shaped by selection model but insensitive to other model features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C78 describe long-term simulation results shown in Figure 3 with robustness checks across different model variations (tetraploid, relaxed ploidy constraints, Wright-Fisher). The consistency across variations supports the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Phylogenetic topology measures (Colless index, cherries) combined with heterogeneity measures (aneuploidy, MKV) can quantify underlying evolutionary processes, with different measures showing distinct relationships to mis-segregation rate and selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84 describe the phylogenetic analysis approach supported by citations (Colijn and Plazzotta, 2018; Dayarian and Shraiman, 2014; Manceau et al., 2015; Neher et al., 2014; Scott et al., 2020) and results shown in Figure 4C. The selection of four parameters is justified by the analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Combining heterogeneity measures with phylogenetic topology can discriminate between simulations with disparate CIN and selection levels, while heterogeneity alone cannot, demonstrating that phylogenetic topology preserves information about mis-segregation rates and selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 describe key findings from dimensionality reduction analysis shown in Figure 4E. This is a critical result demonstrating the value of phylogenetic topology for CIN inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Treatment with 20 nM paclitaxel for 48 hours causes extensive chromosome mis-segregation at a rate of 18.5 \u00b1 0.5 chromosomes per division (Pmisseg ~0.42), with virtually all cells showing extensive aneuploidy, primarily whole-chromosome mis-segregations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C93 describe experimental results from paclitaxel treatment shown in Figure 5 and Figure 5\u2014figure supplements 1-2. The measurements are quantitative with error estimates and supported by flow cytometry and single-cell sequencing data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "ABC inference from paclitaxel-treated cells yielded a mis-segregation rate of 0.396 \u00b1 0.003 (17.4 \u00b1 0.1 chromosomes), closely matching the experimentally observed rate of 18.5 \u00b1 0.5, with low inferred selection (21 \u00b1 0.4) consistent with the short experimental timeframe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 describe ABC inference results shown in Figure 5D-E. The close agreement between inferred (17.4 \u00b1 0.1) and observed (18.5 \u00b1 0.5) rates validates the method. The interpretation about low selection is reasonable for a 48-hour experiment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Simulated populations showed higher nullisomy incidence than paclitaxel-treated cells, possibly due to spindle pole clustering causing non-random mis-segregations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C98 identify a discrepancy between simulation and experiment (Figure 5\u2014figure supplement 4A) with a speculative explanation. The explanation is plausible but not tested, making this result uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Sample size analysis shows that 60 cells achieved 99.5% accuracy for paclitaxel-treated cells, while 200 cells provided \u226590% accuracy across all simulated conditions with median standard error of 0.0003 (\u00b10.0138 chromosomes per division).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 describe sample size optimization shown in Figure 5\u2014figure supplement 5. The analysis is systematic with quantitative accuracy and error estimates. The recommendation of 200 cells is data-driven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "ABC analysis of tumor samples and organoids using the Abundance model inferred mis-segregation rates of 0.001-0.006 (5-38% of divisions with one mis-segregation), falling within the range of rates observed in cancer cell lines and tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106 describe ABC inference results for clinical samples shown in Figure 6 and Tables 3-5. Model selection favored Abundance model (Table 3), and inferred rates match published observations with extensive citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "Higher inferred mis-segregation rates correlated with lower inferred selection in tumor samples, with posterior distributions indicating stabilizing selection in all cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 describe relationships between inferred parameters shown in Figure 6F and Figure 6\u2014figure supplement 3. The interpretation about stabilizing selection is consistent with the Abundance model selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "Inferred mis-segregation rates from CRC PDOs showed strong correlation with directly measured rates from live imaging, following a positive linear trend with slightly lower slope than 1:1, possibly reflecting overestimation in microscopy data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C110 describe validation against direct observations shown in Figure 6G-H. The strong correlation validates the method, though two outliers (14T, U1T) are noted. The interpretation about microscopy overestimation is speculative but reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C22",
+      "C23",
+      "C113"
+    ],
+    "result": "CIN measurement has potential clinical utility for prognosis and predicting response to anti-microtubule agents like paclitaxel, and may influence immune system interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C3, C4, C22, C23, C113 make forward-looking statements about clinical utility supported by citations but represent speculation about future applications rather than demonstrated results from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "Clinical outcomes depend on specific chromosome aneuploidies, and very high CIN levels suppress tumor growth beyond a critical threshold due to loss of essential genes and gene dosage imbalance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 are supported by citations to published studies (Davoli et al., 2013; Sheltzer et al., 2017; Vasudevan et al., 2020; Funk et al., 2021; Silk et al., 2013; Weaver and Cleveland, 2008; Zasadil et al., 2014) and represent established knowledge motivating the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C30",
+      "C111",
+      "C112",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Single-cell DNA sequencing with at least 200 cells, coupled with computational models and ABC, provides the best measure of tumor CIN by accounting for selective pressure, offering a framework for clinical biomarker development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C111, C112, C114-C116 represent the main conclusions of the study, supported by the experimental validation (C92-C96), sample size analysis (C99-C102), and clinical sample analysis (C103-C110). The recommendation is data-driven.",
+    "result_type": "MAJOR"
+  }
+]

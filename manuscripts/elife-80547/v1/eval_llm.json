@@ -1,0 +1,432 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "The manuscript establishes the clinical context for early stage NSCLC, noting that lung cancer is the leading cause of cancer mortality worldwide (1.8M deaths in 2021), surgical resection is the standard treatment for stages I-II NSCLC, but 40-55% of tumors recur post-surgery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 are well-supported by appropriate citations (Siegel et al., 2021; Ambrogi et al., 2011) and reflect established clinical knowledge. These background claims provide necessary context for the study's motivation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The manuscript reviews limitations of current prognostic approaches, noting that while TNM staging is widely used, individual variation exists within stage groups, and proposed refinements using gene profiling face practical barriers including tissue sampling limitations, inability to capture intratumoral heterogeneity, and deployment challenges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C8 are supported by appropriate citations and reflect established knowledge about TNM staging limitations and gene profiling challenges. These provide appropriate motivation for developing alternative prognostic approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The manuscript reviews prior work on AI-based prognostic methods, noting that radiomics and deep learning models have been used for tumor characterization, but most AI methods don't account for anatomical interdependencies. The Transformer model has shown exceptional performance in NLP and computer vision and has been applied to medical imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C15 are supported by multiple appropriate citations documenting the use of radiomics, deep learning, and Transformer models. These establish the technical foundation and motivation for the proposed approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The manuscript identifies gaps in current prognostic methods, noting that most focus on single data modalities (e.g., imaging only), while clinical practice requires integration of non-imaging data. Multi-modal approaches exist but lack interpretability. Graph neural networks offer flexible ways to embed various data types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 are supported by appropriate citations and establish the rationale for using GNNs to integrate imaging and clinical data in an interpretable manner. This provides clear motivation for the methodological approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The study proposes a GNN-based model integrating imaging and non-imaging data for survival prediction in early stage NSCLC. Patients are represented as a population graph where nodes contain Transformer-generated tumor features and edges represent similarity based on clinical phenotypic data. A GraphSAGE model is trained to classify individual patient risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 clearly describe the proposed methodology with appropriate technical detail and citation of the GraphSAGE architecture. The approach is novel and well-motivated by the preceding background.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The study includes 1705 patients with stages I-II NSCLC from Shanghai Pulmonary Hospital (2011-2013) and 127 patients from an external validation dataset (NSCLC Radiogenomics). Inclusion criteria required pathologically confirmed stage I/II NSCLC, preoperative CT imaging, and complete follow-up data. Patients receiving neoadjuvant therapy were excluded. The study received IRB approval with waived informed consent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27, C37-C42 provide clear description of patient selection, inclusion/exclusion criteria, and ethical approval. The sample size is substantial (n=1705 internal, n=127 external) and criteria are appropriate for the study objectives.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "CT imaging was acquired using specified scanners with standardized reconstruction parameters (1mm slice thickness, 512\u00d7512 matrix). Contrast administration followed institutional practice. Overall survival (OS) was defined as time from surgery to death/last follow-up, and recurrence-free survival (RFS) as time to recurrence/death/last follow-up.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 provide adequate technical detail about imaging acquisition and outcome definitions. However, the variation in contrast administration ('institutional practice') introduces potential heterogeneity that could affect results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Tumor regions were manually annotated using 3D Slicer by two junior surgeons with consensus from a senior radiologist. Images were normalized, bones removed by thresholding, tumor segments standardized to 128\u00d7128\u00d764mm\u00b3 with zero-padding for small tumors, then resized to 64\u00d764\u00d736mm\u00b3 and rearranged as 384\u00d7384mm\u00b2 2D images.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 describe the annotation and preprocessing pipeline with appropriate detail. The consensus annotation approach is reasonable, though inter-rater reliability metrics are not reported. The dimensional transformations are clearly specified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The study used a Vision Transformer (ViT) pretrained on ImageNet-21k as the feature generator. Input images were divided into 36 patches with position embedding, processed through a Transformer Encoder, with the classification layer replaced by a fully connected layer to generate 1D feature vectors assigned as node features in the graph network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 describe the Transformer architecture implementation with appropriate citations. Using a pretrained ViT is reasonable, though the appropriateness of ImageNet pretraining for medical CT images could be questioned. The architectural modifications are clearly described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The population graph construction represents each patient as a node with Transformer-generated features. Edge weights are derived from similarity scores based on demographics, tumor location, histology, and TNM staging. Patients are connected if they share similar component scores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 describe the graph construction methodology. However, the specific formula for computing similarity scores is referenced to an appendix, making it difficult to fully evaluate the approach. The choice of similarity components appears reasonable but lacks justification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "A GraphSAGE network with two layers and global mean pooling was implemented. The network takes the population graph with edge and node features as input and generates risk scores for each patient. Node features are updated by aggregating information from neighbors weighted by edge weights. Cox proportional hazards loss replaced cross-entropy loss. Implementation used Python with Deep Graph Library and PyTorch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67 provide adequate technical detail about the GraphSAGE implementation with appropriate citations. The use of Cox loss for survival prediction is appropriate. However, hyperparameter choices (e.g., two layers, pooling strategy) lack justification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The internal dataset was split 75%/12.5%/12.5% into training/validation/testing sets. The model was compared against TNM staging and a ResNet-Graph baseline. Performance was evaluated using AUC for OS and RFS prediction, Kaplan-Meier survival analysis with log-rank tests, and net benefit metrics (NRI, IDI, DCA). Analysis used Python with Lifelines package.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C76 describe appropriate evaluation methodology with suitable metrics for survival prediction. The comparison baselines are reasonable. However, details about random seed setting for reproducibility and handling of class imbalance are not mentioned.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "A subanalysis explored relationships between clinical information and imaging features. Sub-graph visualizations were generated using PyVis with KM analysis to evaluate separation of high-risk patients. Two patients' node feature changes before/after layer processing were analyzed using correlation heatmaps and edge weight analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 describe interpretability analyses that are valuable for understanding model behavior. However, the selection criteria for the two example patients (No. 44 and No. 182) are not specified, raising concerns about cherry-picking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The main cohort included 1705 NSCLC patients (from 2309 initially enrolled) with median age 61 years, 59.2% male, 59.7% upper lobe tumors, 72.4% adenocarcinoma, 22.9% squamous cell carcinoma. Stage distribution: 46.4% IA, 35.6% IB, 7.8% IIA, 10.2% IIB. OS and RFS rates were 78.2% and 74.2% respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C87 provide comprehensive demographic and clinical characteristics of the main cohort. The data are clearly presented with appropriate confidence intervals. The cohort appears representative of early stage NSCLC populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The external validation set included 127 patients: 25.2% female, 74.8% male, median age 69 years, 59.8% upper lobe tumors, 74.8% adenocarcinoma, 23.6% squamous cell carcinoma. OS and RFS rates were 68.5% and 59.1% respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 describe the external validation cohort characteristics. Notable differences from the internal cohort include older age (69 vs 61 years) and lower survival rates, which are acknowledged in the discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C92",
+      "C93"
+    ],
+    "result": "The Transformer-Graph model achieved AUC of 0.785 (testing) and 0.695 (external) for OS prediction, and 0.726 (testing) and 0.700 (external) for RFS prediction. This compared favorably to TNM (OS: 0.690/0.634; RFS: not fully reported) and ResNet-Graph (OS: 0.730/0.626; RFS: not fully reported) models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31, C92-C93 report model performance with confidence intervals. The Transformer-Graph model shows improvement over baselines on the testing set, though performance drops on external validation. The results support the model's utility but generalization concerns exist.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "All three models (Transformer-Graph, TNM, ResNet-Graph) showed statistically significant differences in 5-year OS. For RFS prediction, ResNet-Graph failed to distinguish high/low risk groups (p>0.05), while Transformer-Graph and TNM models achieved significant separation (p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 report Kaplan-Meier survival analysis results. The finding that ResNet-Graph fails for RFS prediction is notable and suggests the Transformer features provide advantages. However, the specific p-values and survival curves should be examined for clinical significance beyond statistical significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C32"
+    ],
+    "result": "The Transformer-Graph model significantly improved survival prediction compared to TNM with NRI (OS: 0.284, p<0.0001; RFS: 0.175, p<0.0001) and IDI (OS: 0.159, p=0.00032; RFS: 0.137, p=0.00074). The model outperformed TNM and ResNet-Graph in terms of net benefit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100, C32 report net benefit metrics showing significant improvements over TNM. The NRI and IDI values with confidence intervals and p-values support the claim of improved prediction. However, the clinical significance of these improvements should be considered alongside statistical significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C110",
+      "C111"
+    ],
+    "result": "Graph visualization analysis showed that while the similarity-based graph structure could broadly separate at-risk patients, some clusters contained mixed high/low-risk patients difficult to separate using clinical information alone. Transformer-generated features enabled significant discrimination in these challenging cases and helped determine differences when demographic information was similar.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102, C110-C111 describe interpretability findings supported by visualizations in Figures 5B-D. The analysis demonstrates complementary roles of clinical and imaging features. However, the generalizability of findings from selected subgraphs is uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Analysis of patient No. 44 (high-risk) showed that Transformer-generated features of high/low-risk neighbors were initially highly correlated (no direct discriminative information). However, high-risk neighbors had slightly higher median similarity scores (2.50 vs 2.00). After one GraphSAGE layer, high-risk neighbors became more correlated with the target patient, indicating both node and edge features contributed survival information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C105 describe detailed analysis of one patient example. While the correlation analysis is interesting, the interpretation relies on a single case without clear selection criteria. The small difference in median similarity scores (2.50 vs 2.00) may not be meaningful. More systematic analysis across multiple patients would strengthen these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "Analysis of patient No. 182 (low-risk) showed that 22/25 neighbors were low-risk with significantly higher median similarity scores than high-risk neighbors (3.00 vs 1.00). Edge weights (clinical data) enabled separation of high-risk neighbors after one layer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C107 describe another single patient example. While the larger difference in similarity scores (3.00 vs 1.00) is more convincing than patient No. 44, the analysis still relies on cherry-picked examples. The claim about edge weights enabling separation needs more systematic validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C112",
+      "C113"
+    ],
+    "result": "The proposed model outperformed TNM on both testing and external datasets despite different data distributions, demonstrating generalizability. The good performance indicates both Transformer-generated imaging features and population graph structure contained useful survival information. Transformer features didn't contain directly discriminative information before learning, but with edge weights, effective information could be determined and node features effectively updated for better discrimination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109, C112-C113 synthesize the main findings. The performance on external validation supports generalizability claims, though performance degradation is notable. The interpretation about feature learning is reasonable but somewhat speculative without ablation studies isolating contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C34",
+      "C35"
+    ],
+    "result": "The subanalysis concluded that using a similarity score function based on non-imaging characteristics (age, gender, histology, tumor location), the majority of high-risk patients can be separated. When patients shared similar demographics, TNM information combined with imaging features provided additional survival prediction information. Transformer-generated features demonstrated additional benefits for patients whose non-imaging characteristics were non-discriminatory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C125, C34-C35 summarize key findings about the complementary roles of clinical and imaging features. These conclusions are supported by the subanalysis results, though the quantification of 'majority' and 'additional benefits' could be more precise.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Study strengths include: (1) relatively large dataset with both contrast and non-contrast CT scans, aiding generalization and clinical flexibility; (2) graph model's ability to combine imaging and non-imaging features in an understandable manner; (3) efforts to understand roles of different feature types in determining high-risk nodes, aiding clinical interpretation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C117 identify legitimate study strengths. The large sample size and inclusion of varied imaging protocols are valuable. The interpretability efforts are commendable, though the actual interpretability achieved is debatable given the complexity of the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The model's performance on external validation was lower than testing set (AUC 0.785\u21920.695 for OS, 0.726\u21920.700 for RFS). Potential reasons include demographic differences (age, staging, gender), different countries of origin, and differences in ethnicity, treatment, and follow-up strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C120 acknowledge performance degradation on external validation and propose reasonable explanations. The demographic differences are documented in Table 1. However, these remain speculative explanations without systematic investigation of which factors most impact performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C121"
+    ],
+    "result": "Smoking history plays an important role in lung cancer development and may help improve model performance and reduce performance differences between testing and external sets, though this information was not collected in the main cohort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C121 identifies a legitimate limitation. Smoking is a well-established risk factor for lung cancer, and its absence from the model is a notable gap. However, the claim about potential improvement remains speculative without empirical testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "A limitation is that tumor identification and bounding box annotation required manual human input. As automatic tumor detection and segmentation pipelines mature, this step could potentially be automated for easier clinical translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C123 identify a practical limitation and propose a reasonable future direction. The manual annotation requirement is a barrier to clinical deployment, though the consensus approach used helps ensure quality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C126"
+    ],
+    "result": "The authors claim this is the first work demonstrating feasibility of using Transformer in survival prediction with a graph data structure and exploratory analysis of model intuitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C126 asserts novelty but lacks systematic comparison with related work. While the specific combination of Transformer + GNN for NSCLC survival prediction may be novel, similar approaches exist in other domains. The 'first work' claim is difficult to verify without comprehensive literature review.",
+    "result_type": "MINOR"
+  }
+]

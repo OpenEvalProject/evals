@@ -1,0 +1,194 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "In vitro transcription through 5hmC-rich DNA templates increases R-loop formation. DNA templates containing 5hmC showed increased DNA:RNA hybrids by dot blot (C29) and more frequent R-loop structures by AFM (C31) compared to unmodified or 5mC-containing templates. The S9.6 antibody recognizes all cytosine variants equally (C30), and both 5hmC and 5mC reduce transcript levels in vitro (C32).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 provide converging evidence from multiple orthogonal methods (dot blot, AFM) that 5hmC promotes R-loop formation in vitro. C30 validates the detection method is unbiased. C32 shows reduced transcription with modified cytosines, which strengthens the conclusion since more R-loops are detected despite lower transcription with 5hmC templates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Depletion of TET enzymes reduces global R-loop levels without affecting gene expression in mES cells and mouse fibroblasts. Tet3 depletion or triple Tet1/2/3 knockdown significantly reduced 5hmC (C33, C37) and R-loops (C36, C38, C39) without changing 5mC levels (C34, C37) or gene expression (C40). This suggests partial redundancy among Tet enzymes (C35) and that TET activity promotes R-loop formation independently of transcription (C41).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C40 provide consistent evidence across multiple cell types and assays (dot blot, DRIP, RT-qPCR) that TET depletion reduces R-loops without affecting transcription. The control for gene expression (C40) is critical and strengthens the causal link between TET activity and R-loop formation. The redundancy observation (C35) is well-supported by differential effects of single vs. triple knockdowns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "CRISPR-mediated tethering of catalytically active TET1 to a specific genomic locus increases local R-loop formation. Targeting dCas9-TET1 to the APOE gene increased local 5hmC (C42) and R-loop levels (C43) compared to catalytically inactive dCas9-dTET1. R-loops extended beyond the target site (C44), supporting that editing 5hmC density influences R-loop formation (C45).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 demonstrate gain-of-function evidence complementing the loss-of-function experiments. The use of catalytically inactive TET1 as a control is appropriate. C44 provides mechanistic insight consistent with known R-loop biology. Together, these claims establish a causal relationship between TET activity and R-loop formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Genome-wide analysis reveals significant overlap between 5hmC and R-loops in active genes. Computational analysis showed marked overlap (C46), statistically significant correlation (C47, p<0.05), with approximately half of R-loops at 5hmC loci (C48) and 51% of active genes showing overlap (C49). Both marks peak at transcription termination sites (C50), while R-loops but not 5hmC are abundant at TSS (C51), indicating 5hmC is not necessary for all R-loop formation (C52).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 provide comprehensive genome-wide evidence from multiple cell types (mES, HEK293) supporting the 5hmC-R-loop relationship. The statistical significance (C47) and quantification (C48-C49) are clearly stated. C51-C52 appropriately acknowledge that 5hmC is not universally required for R-loops, showing nuanced interpretation. The distinct distribution patterns are acknowledged but correlation is still significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C68"
+    ],
+    "result": "TET1 deficiency leads to transcription readthrough, and 5hmC/R-loops overlap at transcription termination sites, suggesting TET enzymes regulate transcription termination through R-loop formation. TET1-KO cells show increased readthrough transcripts (C53), and 5hmC/R-loops overlap robustly at TTS (C68).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53 and C68 together support a role for TET enzymes in transcription termination via R-loops. The readthrough phenotype in TET1-KO cells (C53) provides functional evidence, while the genomic overlap at TTS (C68) provides mechanistic context. This is consistent with known roles of R-loops in transcription termination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "Proximity ligation assay demonstrates spatial co-localization of 5hmC and R-loops in individual mES cells. PLA signal was detected with both S9.6 and anti-5hmC antibodies and was lost upon RNase H treatment (C54).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 provides single-cell evidence complementing the genome-wide analyses. The RNase H control validates specificity. This orthogonal approach strengthens the conclusion that 5hmC and R-loops co-occur at the same genomic loci.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C67"
+    ],
+    "result": "5hmC-rich loci are associated with DNA damage markers genome-wide. Metagene analysis showed enrichment of \u03b3H2AX at 5hmC-rich loci (C55) with statistically significant correlation (C56, p<0.05), indicating 5hmC-rich loci are hotspots for DNA damage (C67).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 provide computational evidence from ChIP-seq data showing correlation between 5hmC and DNA damage markers. The correlation is low (C56) but statistically significant. C67 is a reasonable interpretation given that R-loops are known sources of DNA damage and 5hmC promotes R-loops. However, the causal relationship is not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "R-loops at 5hmC-rich regions regulate gene expression programs related to stem cell proliferation and diapause. RNase H overexpression differentially affected genes with 5hmC/R-loop overlap (C57), enriched in mTOR (downregulated, C58, C76) and MYC (upregulated, C58, C77) pathways that control diapause (C59, C60, C74, C75). Expression of pluripotency and germ layer genes decreased (C62) without cell cycle changes (C61), supporting that R-loops formed by TET activity regulate stem cell gene expression (C63).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 and C74-C77 provide transcriptomic evidence linking R-loops at 5hmC sites to specific gene expression programs. The pathway analysis (C58, C76, C77) is well-supported and biologically coherent with known roles of mTOR and MYC in stem cell biology (C59, C60, C75). The lack of cell cycle effects (C61) with changes in pluripotency markers (C62) suggests specific regulatory roles rather than general toxicity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Proposed mechanisms by which 5hmC promotes R-loop formation include DNA duplex destabilization and altered RNA polymerase II elongation. 5hmC may destabilize DNA or alter polymerase kinetics (C64), supported by known effects on DNA structure and stability (C65) and histone interactions (C66).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64-C66 are largely speculative (C64 explicitly states 'may impact') and cite prior work rather than providing new experimental evidence. While the proposed mechanisms are plausible based on known 5hmC properties (C65, C66), the study does not directly test these mechanisms. Future experiments would be needed to distinguish between these possibilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Discussion of TET enzymes' dual roles in cancer and DNA damage response. TETs may act as oncogenes or tumor suppressors (C69), and TET-driven 5hmC changes may promote genome instability (C70). A TET1 isoform lacking regulatory domains is enriched in cancer (C71), while TET activity can also prevent chromosome segregation defects (C72).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69-C72 are primarily citations of prior work and speculation about implications. C70 is speculative ('may as well drive') and not directly tested. These claims provide context and suggest future directions but do not constitute new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C73"
+    ],
+    "result": "Background knowledge and literature context about TET enzymes, R-loops, DNA methylation, and their biological roles. These claims establish the scientific foundation for the study, citing established knowledge about TET enzyme function (C1, C20), R-loop biology (C8-C17), DNA methylation (C18-C19), 5hmC properties (C21-C28), and developmental roles (C73).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C28, and C73 are appropriately cited background information from prior literature. These provide necessary context but are not novel findings of this study. They are accurately represented based on the citations provided.",
+    "result_type": "MINOR"
+  }
+]

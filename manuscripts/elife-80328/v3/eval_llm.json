@@ -1,0 +1,391 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C30",
+      "C31",
+      "C39",
+      "C41",
+      "C42",
+      "C43",
+      "C48",
+      "C50",
+      "C51"
+    ],
+    "result": "HIV-1 evolved high-level resistance to DRV and UMASS inhibitors through two distinct pathways anchored by I84V or I50V mutations. Selections starting with wild-type virus reached at least 5 \u03bcM inhibitor concentration (approximating therapeutic DRV levels), accumulating 8-14 mutations in the most abundant variant, with resistance increasing ~100-fold and the number of mutations at 100 nM being approximately half that at >1 \u03bcM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C30, C31, C39, C41-C43, C48, C50-C51 collectively demonstrate that resistance evolved through two pathways with substantial mutation accumulation. The data from NGS sequencing (Figure 2A), EC50 measurements (Figure 2C, Table 1), and longitudinal analysis (Figure 2B) provide converging evidence for the two-pathway model and the high genetic barrier to resistance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The size of the P1'/R1 chemical group determines which resistance pathway is selected: smaller R1 groups (R1-1 and DRV's butyl) preferentially select I84V (6/7 and 4/5 cultures respectively), while larger R1-2 groups preferentially select I50V (8/9 cultures, p=0.009).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C71-C75, C97-C99 are strongly supported by sequencing data showing statistically significant pathway preference based on R1 size. The Fisher's exact test (p=0.009) and consistency across multiple independent selections provide robust statistical support. DRV selections further validate this relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C86",
+      "C87",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C96"
+    ],
+    "result": "The P2'/R2 chemical structure, particularly R2-2 and R2-5 groups, determines residual potency against resistant variants. R2-2 inhibitors showed enhanced potency against I50V/A71V mutant enzymes and retained greater potency against I84V pathway variants, with R1-2 inhibitors maintaining lower EC50 values than R1-1 inhibitors against resistant viruses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C34-C38, C86-C87, C90-C93, C96 are supported by extensive Ki measurements (Table 1, Figures 5, 6) and EC50 data showing R2-2 and R2-5 groups confer enhanced potency. Statistical analyses (Figures 5A-E, 6A-E) demonstrate significant trends, though some comparisons show trends rather than statistical significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The two resistance pathways show differential selection of compensatory Gag cleavage site mutations: I84V pathway viruses select NC/SP2 P2 mutations (A\u2192V/I) and SP2/p6 mutations, while I50V pathway viruses select only SP2/p6 mutations. Viruses with both I84V and I50V mutations show only SP2/p6 mutations, often with both P1' and P5' changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C102-C107, C110 are directly supported by sequencing data in Figure 7A with statistical validation (p=0.03, Fisher's exact test). Claims C108-C109, C111-C112 are mechanistic inferences based on structural modeling (Figure 7B-C) and cited literature, representing reasonable interpretations but not directly tested experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C126"
+    ],
+    "result": "I84V and I50V mutations are not mutually exclusive and became linked on the same genome in three cultures (V2wt, V5wt, V2mut) selected with the most potent inhibitors (UMASS-2 and UMASS-5), suggesting that high inhibitor potency drives co-selection of both primary resistance mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47, C126 are supported by sequencing data (Figure 2A) showing linked mutations in specific cultures. The correlation with the most potent inhibitors (Table 1, Figure 2\u2014figure supplement 2) supports the inference that potency drives co-selection, though this is correlative rather than causally demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C128",
+      "C129"
+    ],
+    "result": "Resistance mutations show pathway-specific linkage patterns: I84V links to V32I, while I50V links to I47V, F53L, and I13V. Several mutations (L10F, L33F, M46I, I54L, A71V, V82I) appear in both pathways with differential frequency, with at least 16 resistance-associated positions detected across multiple selections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C85, C128-C129 are supported by pooled NGS data analysis (Figure 4A) showing mutation linkage patterns. The inference that linked mutations are structurally proximal and likely interact directly with primary mutations (C129) is reasonable but not experimentally validated. Stochastic elements are acknowledged (C85).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "I50V pathway viruses accumulated more mutations at intermediate drug concentrations (100 nM, p=0.03) and maintained higher Shannon entropy than I84V pathway viruses. Cultures starting with mutant mixtures showed nearly twofold higher entropy than wild-type selections (3.0 vs 1.6, p<0.0001), suggesting I50V confers higher resistance but greater fitness cost, and that recombination maintains diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49, C63-C64, C68 are supported by statistical analysis of mutation counts and entropy data (Figures 2B, 3B-D, Figure 3\u2014figure supplement 1). Claims C65-C66, C69 are interpretations/inferences about fitness costs and recombination rates that are plausible but speculative, not directly tested. Citation C67 supports the fitness differential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C132",
+      "C133"
+    ],
+    "result": "Selection to 100 nM inhibitor resulted in 100-1000-fold reduction in viral fitness, which rebounded to ~1% relative infectivity at 5 \u03bcM. There is a strong correlation between increasing resistance (higher Ki) and reduced catalytic efficiency (kcat/Km), suggesting compensatory mutations attenuate but do not restore fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56, C132-C133 are supported by infectivity measurements (Figure 2D) and the correlation between Ki and catalytic efficiency (Figure 2E). The inference that compensatory mutations attenuate but don't restore fitness (C133) is reasonable based on the persistent correlation, though alternative explanations are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C32",
+      "C33"
+    ],
+    "result": "All UMASS inhibitors bind tightly to wild-type HIV-1 protease with Ki <5 pM and retain robust binding to multidrug-resistant variants. EC50 values for DRV and UMASS analogues ranged from 2.4-9.1 nM, significantly more potent than second- and third-generation PIs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28, C32-C33 are directly supported by Ki measurements (Table 1) and EC50 data (Figure 2\u2014figure supplement 1). The comparison to older generation PIs is supported by comparative data, establishing the enhanced potency of these fifth-generation inhibitors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Structural analysis reveals that the R1-1 group is directed at protease I84 sidechain (consistent with I84V resistance), while the larger R1-2 group is oriented between I84 and I50 (drawing in I50V resistance). The I50V pathway requires more rapid accumulation of compensatory mutations, representing an enhanced genetic barrier during therapy initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C119 are supported by structural data (Figure 8A-C) and citations, with C119 supported by longitudinal data (Figure 4). Claim C120 is an inference about clinical implications that is reasonable but speculative, as it extrapolates from in vitro selection to in vivo therapy without direct clinical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Less potent inhibitors interact with protease D29/D30 through water molecules, while the more potent R2-2 group replaces water-mediated interactions with direct backbone interactions in the S2' subsite, mimicking the glutamine P2' interaction in the optimized SP1/NC cleavage site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C124 are supported by structural data (Figure 8D-F) showing the distinct binding modes. Claim C125 provides independent validation from another study. The structural explanation for enhanced potency is well-supported by crystallographic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C94",
+      "C95"
+    ],
+    "result": "Highly resistant enzymes with I84V remained more sensitive to all inhibitors than I50V enzymes. I50V proteases showed similar Ki values to both R1-1 and R1-2 inhibitors, while I84V proteases were more sensitive to larger R1-2 inhibitors. Viruses in the I50V pathway showed higher resistance than I84V pathway viruses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89, C94-C95 are supported by Ki measurements (Figure 5C-D) and EC50 data (Figure 6C-D). The data consistently show that I50V confers higher resistance across multiple assay formats, supporting the conclusion that I50V is a more resistant but more fitness-costly pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C70"
+    ],
+    "result": "NGS analysis revealed few fixed variants until inhibitor concentration reached ~3-5 nM (approaching EC50), with cultures started from mutant library selecting for outgrowth by 1 nM. Transition through EC50 provided significant selective pressure for fixing mutations, with high genetic diversity maintained above 3 nM. No wild-type variants were detected at selection endpoint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62, C70 are supported by longitudinal NGS data (Figure 3A) showing the dynamics of mutation fixation and diversity. The observations about timing of fixation relative to EC50 and maintenance of diversity are directly supported by the sequencing data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "DRV represents a potent antiviral due to high blood levels and high genetic barrier, but resistance usually follows the less deleterious I84V pathway. UMASS-2 anchors R2-2 to the protease backbone, allowing co-selection of both I84V and I50V pathways, creating an even higher genetic barrier that could potentially enable reduced drug levels for longer coverage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C113-C115 are supported by the experimental data showing DRV's properties and UMASS-2's unique selection profile. However, claim C116 is purely speculative about potential clinical applications without any pharmacokinetic data or clinical validation. The therapeutic implications require substantial additional work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Analysis of the Stanford HIV Drug Resistance Database shows ~25,000 sequences with protease resistance mutations, with sequences showing >200-fold DRV resistance averaging 5.4 mutations (maximum 7), approaching the levels obtained in these selections and highlighting potential for higher genetic barriers in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C137 are supported by database analysis providing clinical context. The comparison between clinical and experimental mutation levels is valid, though the inference about potential for higher genetic barriers (C137) is somewhat speculative as it depends on achieving similar drug exposures in vivo.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C134"
+    ],
+    "result": "Distal mutations modulate enzymatic activity and fitness by altering the dynamic ensemble of the enzyme and can enhance activity while contributing to resistance. The same compensatory mutation can participate in different pathways with differing selective pressure, indicating pathway-specific contributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C131 are supported by citations to previous work and data from this study showing distal mutations contribute to resistance. Claim C134 is supported by data in Figure 4B showing differential mutation frequencies between pathways, though the mechanistic interpretation is inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "One inhibitor can select for different pathways in separate selections even when both major mutations are maintained in the population, suggesting either pathway can provide resistance to most inhibitors and that chance addition of initial compensatory mutations may determine the major resistant population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are supported by observations of pathway variability (Figure 2\u2014figure supplement 4, Figure 3\u2014figure supplement 2). However, the mechanistic explanation (C78) is speculative, as the role of stochastic compensatory mutations in determining pathway choice was not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C26"
+    ],
+    "result": "The designed fifth-generation inhibitors have modified chemical moieties that relative to DRV further fill the substrate envelope at the P1' and P2' positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 is supported by the structural description in the text and illustration in Figure 1, establishing the design rationale for the UMASS inhibitor series.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C13"
+    ],
+    "result": "DRV is a fourth-generation PI that achieves drug levels in plasma (>1 \u03bcM) that are 1000-fold greater than its inhibitory activity in cell culture, making it exceptional among potent HIV-1 PIs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C12-C13 are supported by citations to previous studies establishing DRV's pharmacokinetic properties. This provides important context for the study but represents established knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C2",
+      "C22"
+    ],
+    "result": "Little is known about the de novo resistance pathway for DRV, with no reports of selection of high-level resistance starting with unmutated wild-type virus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C22 accurately describe a gap in the literature that motivates this study. This is supported by the absence of such reports in the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C127"
+    ],
+    "result": "Anchoring to the backbone with R2-2 for UMASS-2 may make the R1-1 group less mobile, reducing the effect of I84V mutation and allowing interaction with I50, though this was not directly tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C127 is explicitly acknowledged as speculation that was not directly tested. While it's a reasonable hypothesis based on the structural data, the lack of experimental validation (e.g., molecular dynamics simulations or mobility measurements) means this remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C23",
+      "C24",
+      "C25",
+      "C100",
+      "C101"
+    ],
+    "result": "Background claims about HIV-1 protease inhibitor development, clinical trials, resistance patterns, and design principles based on the substrate envelope concept.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C11, C14-C21, C23-C25, C100-C101 are all supported by appropriate citations to prior work. These establish the scientific context and rationale for the study but do not represent new findings from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C40"
+    ],
+    "result": "Only five of the selections starting with the mixture of mutants reached an inhibitor concentration as high as 400 nM due to technical reasons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 is a straightforward methodological statement supported by the experimental design description. The 'technical reasons' are not elaborated, which limits full evaluation of whether this represents a systematic limitation.",
+    "result_type": "MINOR"
+  }
+]

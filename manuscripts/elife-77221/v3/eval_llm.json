@@ -1,0 +1,434 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C32",
+      "C88"
+    ],
+    "result": "Visual noise increases the probability of the rubber hand illusion. Participants reported the illusion more frequently when visual noise increased (F[2, 28]=22.35, p<0.001), with post-hoc tests showing significant differences between noise levels. This effect was consistent across different levels of visuotactile asynchrony.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C32, and C88 are well-supported by experimental data showing a statistically significant main effect of visual noise on illusion probability. The effect is demonstrated with appropriate statistical tests (ANOVA with post-hoc comparisons) and effect sizes. The finding is consistent with Bayesian predictions about the role of sensory uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C33",
+      "C48",
+      "C69"
+    ],
+    "result": "The Bayesian Causal Inference (BCI) model successfully predicts body ownership judgments. The BCI model, which computes the probability of visual and tactile signals coming from a common source while accounting for trial-by-trial sensory uncertainty, fits the observed ownership data well at the individual level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C33, C48, and C69 are supported by model fitting results showing good fit between BCI predictions and observed data (Figure 2A). The model successfully captures individual differences through estimated parameters (psame, \u03c3 values, \u03bb). This represents the first direct quantitative test of BCI for body ownership at the individual level.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C37",
+      "C38",
+      "C39",
+      "C78",
+      "C87"
+    ],
+    "result": "The BCI model outperforms non-Bayesian alternatives. Model comparison using AIC and BIC shows that the BCI model provides a better fit than the Fixed Criterion (FC) model that does not account for sensory uncertainty. Adding observer-specific stimulation uncertainty (BCI* model) did not improve fit over the standard BCI model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C37, C38, C39, C78, and C87 are supported by formal model comparison results (Table 1) showing BCI superiority over FC model using both AIC and BIC criteria. Bootstrapped confidence intervals confirm the robustness of this finding. The exceedance probability analysis further supports the Bayesian family of models over the FC model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C44",
+      "C50",
+      "C107"
+    ],
+    "result": "Prior probabilities for common cause inference are correlated between body ownership and synchrony tasks. Individual differences in psame for ownership judgments correlate significantly with psame for synchrony judgments (Pearson correlation: p=0.002, r=0.71), suggesting shared computational processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C44, C50, and C107 are supported by correlation analysis showing a significant positive relationship between prior probabilities across tasks (Figure 3A). The correlation is statistically significant and of substantial magnitude (r=0.71), indicating that individuals with higher priors for one task tend to have higher priors for the other.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C49",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Prior probability of common cause is higher for body ownership than for synchrony detection. The psame parameter was significantly lower for synchrony judgment (0.65\u00b10.04) than for ownership judgment (0.83\u00b10.04, paired t-test: t=5.9141, df=14, p<0.001). Model comparison confirms that different priors for each task provide better fit than a shared prior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C49, C97, C98, and C99 are supported by statistical comparison showing significant difference in psame between tasks and by model comparison results (Table 2) demonstrating that modeling different priors improves fit. The transfer analysis (Table 3) provides converging evidence for task-specific priors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The rubber hand illusion is successfully induced and modulated by visuotactile asynchrony. Participants reported the illusion in 94\u00b12% of synchronous trials, with prevalence decreasing systematically as asynchrony increased. At \u00b1500 ms asynchrony, illusion reports dropped to approximately 20%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C29, C30, and C31 are supported by direct experimental observations showing high illusion rates for synchronous stimulation and systematic decreases with increasing asynchrony (main effect: F[6,84]=5.97, p<0.001). The pattern was consistent across all 15 participants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C109",
+      "C110"
+    ],
+    "result": "Individual differences in the rubber hand illusion can be explained by differences in prior probability usage. The computational modeling suggests that individual susceptibility to the illusion reflects differences in how prior information about common cause likelihood is used in multisensory causal inference, rather than hard-wired differences in temporal windows or trait cognitive differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C109, and C110 are supported by the model's ability to capture individual differences through the psame parameter and by the correlation of this parameter across tasks. This provides a novel computational explanation for individual variability that goes beyond traditional descriptive accounts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C47",
+      "C51",
+      "C60",
+      "C65",
+      "C114",
+      "C115"
+    ],
+    "result": "Body ownership is determined by uncertainty-based probabilistic inference of a common cause, following the same statistical principles as perception of the external world. The study demonstrates that body ownership detection can be described at the individual level by Bayesian causal inference that takes into account trial-to-trial sensory uncertainty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C47, C51, C60, C65, C114, and C115 are supported by the collective findings: successful BCI model fit, superiority over non-Bayesian alternatives, shared computational principles between ownership and synchrony tasks, and the role of sensory uncertainty. This represents the main theoretical conclusion of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C46",
+      "C93",
+      "C94"
+    ],
+    "result": "Body ownership and visuotactile synchrony follow similar computational principles. The BCI model fits the combined dataset from both tasks well, with shared sensory parameters (\u03c3 values, \u03bb) but different prior probabilities (psame), indicating similar underlying processes with task-specific biases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C46, C93, and C94 are supported by extension analysis results showing good model fit to combined data (Figure 3B-C, Figure 3\u2014figure supplement 1) and by transfer analysis demonstrating that sensory parameters generalize across tasks while priors do not. This supports the hypothesis of shared computational principles with task-specific priors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The study recruited 18 participants, of whom 15 met inclusion criteria and participated in the main experiment. Three participants were excluded for not showing a reliable rubber hand illusion in the screening test. The study received ethical approval from the Swedish Ethics Review Authority.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C25, C26, and C27 are straightforward factual statements about participant recruitment, exclusion, and ethical approval. These are adequately documented in the methods section. The exclusion rate (16.7%) is consistent with the cited literature on non-responders to the rubber hand illusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C81"
+    ],
+    "result": "The study represents the first direct, individual-level quantitative test of BCI for body ownership using perceptual judgments. This psychophysics-based approach is more appropriate for computational studies than traditional measures like questionnaires or proprioceptive drift, and improves upon previous group-level or indirect (reaching error) approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C53, C54, C55, and C81 are supported by comparison with previous literature (Samad et al., 2015; Fang et al., 2019) and by the methodological innovation of using trial-by-trial ownership judgments for individual-level model fitting. The novelty claim is justified given the limitations of prior work cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C61",
+      "C63",
+      "C90"
+    ],
+    "result": "The BCI computational framework provides advantages over traditional descriptive models of body ownership. Unlike previous models focusing on temporal/spatial windows of integration, BCI explains how sensory signals and prior information are dynamically integrated at the computational level, accounting for changes in uncertainty and making quantitative predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C57, C58, C59, C61, C63, and C90 are supported by the demonstrated superiority of BCI over simpler models and by its ability to explain effects (like visual noise increasing illusion probability) that classical descriptive models cannot account for. The theoretical advantages are substantiated by the empirical results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "The authors consider but reject the alternative explanation that participants learn separate criteria for each noise level. They argue this is unlikely because multiple noise levels were interleaved without feedback, making criterion learning difficult.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79 and C80 present an alternative explanation and the authors' reasoning for rejecting it. While the reasoning is plausible (interleaved conditions without feedback make learning difficult), this alternative was not formally tested. The argument is based on experimental design considerations rather than direct evidence, making the evaluation uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "The higher prior for ownership than synchrony makes theoretical sense because a human-like hand in an anatomically plausible position is a priori more likely to be one's own than for arbitrary visual-tactile events to be coincidental. This is consistent with previous findings that the rubber hand illusion can occur with asynchronies up to 300 ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100 and C101 provide a theoretical explanation for the observed difference in priors, supported by consistency with previous empirical findings (Shimada et al., 2009). The explanation is plausible and aligns with the ecological validity of body ownership versus arbitrary synchrony judgments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "While psame may reflect real-world prior probabilities, it could also be influenced by experimental task properties, demand characteristics, and cognitive biases. The formation of priors under different perceptual contexts remains an open question.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102 and C103 appropriately acknowledge limitations and alternative interpretations of the psame parameter. This represents good scientific practice in recognizing that model parameters may reflect multiple influences beyond the theoretical construct of interest. The acknowledgment of uncertainty is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "The correlation between priors across tasks provides a computational explanation for previously observed behavioral correlations between rubber hand illusion susceptibility and temporal resolution in synchrony perception. Individual differences reflect differences in prior usage rather than temporal window width.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108 and C109 connect the current findings to previous literature (Costantini et al., 2016) and offer a novel computational interpretation. The explanation is supported by the correlation data and represents a theoretical advance over traditional interpretations, though it remains somewhat speculative as a reinterpretation of others' findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C82",
+      "C83"
+    ],
+    "result": "The BCI framework for body ownership can be used in future neuroimaging studies to investigate neural mechanisms, potentially identifying activity in posterior parietal and premotor cortex that correlates with model parameters. Future computational studies are needed to compare different theories of body ownership.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66, C67, C68, C82, and C83 are speculations about future research directions. While the suggestions are reasonable and grounded in previous neuroimaging work, they represent proposed future work rather than current findings. The neural localization hypothesis (C68) is plausible but untested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C22",
+      "C23"
+    ],
+    "result": "Background claims about body ownership, the rubber hand illusion, and Bayesian causal inference models. These include established knowledge about body ownership being multisensory and automatic, the rubber hand illusion paradigm, neuroimaging correlates, and the application of BCI models to multisensory perception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C19, C22-C23 are background statements supported by appropriate citations to established literature. These provide context for the study but are not novel findings. The characterization of previous work appears accurate based on the citations provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "The study aims to test whether body ownership is determined by Bayesian inference of a common cause, with the specific prediction that Bayesian observers would adjust decision criteria based on trial-to-trial sensory uncertainty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20 and C21 clearly state the study's objectives and theoretical predictions. These are well-motivated by previous literature and provide clear hypotheses that are subsequently tested. The predictions are specific and testable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "Spatial congruence and other types of multisensory congruence would naturally fit within the same BCI computational framework, though the current study focuses on temporal congruence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C64 is a theoretical assertion about the generalizability of the framework, supported by citations to relevant work. However, this generalization is not directly tested in the current study. The claim is plausible but represents an extrapolation beyond the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Background on BCI models and their limitations. BCI is widely used but behaviors can deviate from Bayesian optimality. Few studies have investigated sensory uncertainty in own-limb perception from a computational perspective, and none have investigated common cause inference or compared Bayesian to non-Bayesian models for body ownership.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C77 provide literature context supported by appropriate citations. The characterization of gaps in the literature appears accurate and motivates the current study's contributions. These are factual statements about the state of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Fixed criterion strategies could represent simple heuristics arising from limited processing resources. Given the body's stability and importance, a heuristic strategy that disregards sensory uncertainty might be beneficial for body ownership judgments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84, C85, and C86 present theoretical speculation about why a fixed criterion strategy might be plausible for body ownership. While the reasoning is interesting, it is speculative and not directly tested. The empirical results actually argue against this strategy, making these claims more about alternative hypotheses than supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "The effect of visual noise on body ownership makes intuitive sense, as it is easier to mistake another's hand for one's own under poor viewing conditions (e.g., semidarkness) than under good viewing conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 provides an intuitive explanation for the visual noise effect that aligns with everyday experience. While not a formal empirical test, this intuition is consistent with the experimental findings and helps interpret them. The reasoning is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "The significant impact of sensory uncertainty on the rubber hand illusion advances understanding of computational principles of body ownership and multisensory bodily perception more generally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 is a summary statement about the significance of the findings. It is supported by the demonstrated effect of visual noise and the success of the BCI model in accounting for this effect. The claim appropriately characterizes the contribution of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "The study extends BCI principles from audiovisual synchrony detection (previously demonstrated) to visuotactile synchrony detection in the rubber hand illusion context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92 and C93 are supported by the successful application of BCI to the synchrony task and by citations to previous work on audiovisual synchrony. This represents an incremental but valuable extension of BCI principles to a new sensory modality combination.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "The study did not investigate whether the rubber hand illusion influences synchrony perception, as tasks were designed to be as similar as possible. Previous literature shows divergent results on this question, warranting future investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95 and C96 appropriately acknowledge a limitation of the study and note inconsistencies in previous literature. This represents good scientific practice in identifying boundaries of the current work and directions for future research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Prior probabilities may be shaped by experience, effector-specific factors, developmental processes, and genetic/anatomical factors related to cortical organization. However, the formation of priors remains an open question.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104, C105, and C106 cite relevant literature on factors that might shape priors, but these are speculations about mechanisms not tested in the current study. The citations support the plausibility of these factors, but direct evidence for their role in body ownership priors is lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "Other multisensory factors not studied here, particularly proprioceptive signal reliability, may contribute to individual differences in the rubber hand illusion. Future model extensions could incorporate spatial disparity and visuoproprioceptive integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111 and C112 appropriately acknowledge limitations and suggest future extensions. The acknowledgment of proprioception's potential role is supported by citation (Horv\u00e1th et al., 2020) and represents good scientific practice in recognizing factors not addressed in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The study extends the BCI framework to body ownership, a core aspect of self-representation. The findings suggest that even our sense of bodily self results from active probabilistic inference, using the same principles that govern perception of the external world. This is relevant to Bayesian theories of the human mind.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C117 summarize the broad theoretical implications of the work. These conclusions are supported by the empirical findings showing that body ownership follows BCI principles similar to external object perception. The theoretical significance is appropriately characterized, though the broader implications remain somewhat speculative.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,224 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C34",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Notional distractor effects (positive and interacting) were observed in binary trials where the distractor was absent, indicating that the distractor variable (DV-HV or DV) covaries with target-related properties that modulate choice accuracy. GLM analysis showed that neither the main distractor effect nor the interaction effect differed significantly between ternary and binary conditions (|t(143)| < 0.92, p > 0.72), demonstrating that previously reported distractor effects in ternary trials can be attributed to confounding covariations rather than genuine distractor influence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C59-C62 provide converging evidence from GLM analyses showing statistically significant notional distractor effects in binary trials with appropriate statistical tests and p-values. The finding that distractor effects do not differ between conditions where the distractor is present vs. absent is a strong diagnostic of confounding covariations. The baselining approach (C53) provides a methodologically sound control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "Using a novel baselining approach that controls for unintended covariations, distractor effects are eradicated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C35 states that distractor effects are eradicated when controlling for covariations, but this appears to conflict with later claims (C95-C96) reporting a modest negative distractor effect when using AU-based variables. The claim lacks specific statistical evidence and the methodology for 'eradicating' effects is not clearly distinguished from the reinterpretation using AU variables.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C68",
+      "C69",
+      "C70",
+      "C78",
+      "C79",
+      "C80",
+      "C82",
+      "C83",
+      "C85",
+      "C86",
+      "C87",
+      "C91"
+    ],
+    "result": "Participants integrated reward and probability additively rather than multiplicatively, as demonstrated by the additive utility (AU) model decisively outperforming expected value (EV), divisive normalization (DN), and other multiplicative models in Bayesian model comparison (Ppexc > 0.99). The AU model reproduced the notional distractor effects in binary trials, including the negative interaction effect, while EV+DN did not. The key distractor variable DV-HV positively covaries with \u0394(AU) (r=0.314, p<0.0001), with stronger correlation in difficult trials (r=0.52, shared variance=27%) than easy trials (r=0.43, shared variance=19%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C68-C70, C78-C80, C82-C83, C85-C87, C91 provide comprehensive evidence from multiple analyses: correlation statistics with appropriate p-values, qualitative model predictions matching human data patterns, and rigorous Bayesian model comparison with protected exceedance probabilities. The convergence of evidence from correlational analysis, model predictions, and formal model comparison strongly supports additive integration. Cross-validation and robustness checks (C83, C85) strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "When distractor and target variables are defined using subjective additive utility (AU) rather than expected value (EV), a modest negative main distractor effect emerges (AUD \u00d7 C: t(143)=-2.27, p=0.024 uncorrected; or marginally significant with relative variable AUD-AUH: t(143)=-1.86, p=0.065 uncorrected), while the interacting distractor effect remains non-significant (t(143)<-0.54, p>0.1). In contrast, EV-based GLMs showed no significant distractor effects (p>0.3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C99 report statistical results, but the negative distractor effect is only marginally significant or significant without multiple comparison correction. The p-values (0.024 and 0.065 uncorrected) are borderline, and given the multiple analyses conducted throughout the study, the lack of correction for multiple comparisons is concerning. The effect is characterized as 'modest' by the authors themselves (C140), and its interpretation is complicated by potential confounding with multiattribute effects (C141-C142).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C100",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Classic multiattribute decoy effects were robustly observed: strong attraction effects when inferior distractors were close to targets (|t(143)|>4.88, p<0.0001), and significant repulsion effects when superior distractors dominated targets (t(143)=-2.53, p=0.025), with a significant interaction between similarity and dominance (F(1,143)=30.6, p<0.0001, partial \u03b7\u00b2=0.18). The effects were asymmetric, with stronger effects when targeting the high-value option H. A significant main effect of distractor AU dominance on accuracy was observed (F(1,143)=6.51, p=0.012, partial \u03b7\u00b2=0.044), which correlated positively across participants with the AU-based negative distractor effect (Spearman's \u03c1=0.28, p=0.00074).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39, C100, C106-C112 provide strong statistical evidence with appropriate tests (t-tests, ANOVA, correlation), significant p-values, and effect sizes. The bias-correction procedure (C105) addresses potential confounds. The correlation between distractor dominance and the negative distractor effect (C111) provides convergent evidence linking the two phenomena. Sample size (N=144) is adequate for the reported effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The selective integration (SI) model, which shapes subjective utilities through intra-attribute information distortion, successfully reproduces all observed multiattribute decoy effects (attraction and repulsion) and, as an epiphenomenon, the negative distractor effect. Bayesian model comparison shows SI decisively prevails over all other models including dual-route, divisive normalization, and adaptive gain models (Ppexc>0.99). The SI model reproduces the negative AU dominance effect without requiring additional mechanisms (F(1,143)=78.4, p<0.00001, partial \u03b7\u00b2=0.35), while models designed to produce unidimensional distractor effects (dual-route, DN) failed to describe multiattribute decoy effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C119-C129 provide strong evidence from computational modeling with rigorous Bayesian model comparison (Ppexc>0.99), model recovery validation (C123), and quantitative reproduction of empirical effects with appropriate statistics. The SI model's ability to reproduce both multiattribute and unidimensional effects parsimoniously, without dedicated mechanisms for the latter, is compelling. The failure of alternative models (C125) strengthens the conclusion through elimination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The selective integration mechanism has an adaptive role, with the SI gating parameter w positively correlating with decision noise (Spearman's \u03c1>0.43, p<0.0001 for both binary and ternary choices) and negatively correlating with utility drift sensitivity. This suggests SI selectively exaggerates attribute differences in proportion to decision noise, potentially maximizing robustness to noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C134 provide statistical evidence (correlations with appropriate p-values) and parameter recovery simulations (C132) ruling out parameter trade-offs. The interpretation that SI adapts to decision noise is supported by the correlation patterns and is consistent with prior theoretical work (C130). However, the causal interpretation of 'adaptive role' is somewhat speculative as these are correlational findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C136",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The previously reported positive distractor effect can be explained by confounding covariations between the distractor's EV and subjective utility differences between targets. When these covariations are controlled for, only a modest negative distractor effect on subjective utility survives, along with robust classic multiattribute decoy effects. The negative distractor effect may be driven, at least in part, by asymmetric multiattribute context effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C136, C139-C143 synthesize the major findings of the study. The reinterpretation of the positive distractor effect as arising from confounding is well-supported by the notional distractor effect analyses (C34, C59-C62). The modest negative effect (C5, C140) is supported by C95-C99, though with caveats about statistical significance. The link to multiattribute effects (C141-C143) is supported by the correlation (C111) and modeling results (C124-C127), though the authors appropriately note interpretive caution (C144).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C161",
+      "C162"
+    ],
+    "result": "Participants integrated probability and payoff information additively rather than multiplicatively, contrary to normative expectations. This additive integration likely spurs contextual preference reversal in risky choice. While additive integration has limited generalizability to all risky choice tasks, it shows descriptive superiority in simpler tasks like the one examined. The stimulus format may determine integration strategy, with multiplicative integration in numerically explicit gambles and additive integration with abstract perceptual dimensions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C156, C161-C162 are supported by the comprehensive modeling results (C82-C91) showing AU model superiority. The scope limitations (C158-C161) are appropriately acknowledged. The conjecture about stimulus format (C162) is speculative but supported by citations to relevant literature. The interpretation that additive integration drives context effects (C156) is consistent with the modeling results but somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C51",
+      "C53"
+    ],
+    "result": "The study re-analyzed five datasets (N=144 participants) from published studies using a speeded multiattribute decision-making task where participants chose between options varying in reward magnitude and probability. The task included ternary trials (with an unavailable distractor) and matched binary trials (without the distractor), allowing for a novel baselining approach to assess confounding covariations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46, C51, C53 describe the data sources and experimental design. These are factual statements about the datasets and task structure, supported by citations to the original studies (C43) and consistent with the Methods section. The baselining approach (C53) is a methodological innovation that is clearly described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "For ternary-choice trials, GLM analysis revealed a significant main effect of the relative distractor variable DV-HV (t(143)=3.89, p<0.001) and a significant interaction with decision difficulty HV-LV (t(143)=-3.67, p<0.001), replicating previous reports.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 report statistical results with appropriate tests and significant p-values, replicating prior findings. The statistics are clearly reported and the comparison to previous work (C58) provides validation. This serves as a baseline for the subsequent novel analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C137",
+      "C138"
+    ],
+    "result": "The multiattribute context effects observed were technically 'phantom' effects (distractor could not be chosen) and, contrary to most previous demonstrations with nearly equal alternatives, arose even with noticeable value differences between target and competitor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C138 characterize the nature of the observed effects with appropriate citations. The 'phantom' designation (C137) is a technical classification supported by citation. The comparison to previous work (C138) is supported by citation and is consistent with the experimental design where HV and LV differ substantially.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The link between distractor and decoy effects should be interpreted with caution due to methodological differences in quantification (continuous vs. categorical variables). A hybrid model combining unidimensional and multiattribute mechanisms has not been ruled out, and definitive conclusions await new experimental designs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C147 appropriately acknowledge limitations and uncertainties in the interpretation. These cautionary statements are scientifically appropriate given the methodological differences noted (C145) and the inability to fully rule out alternative explanations (C146). The call for future work (C147) is reasonable.",
+    "result_type": "MINOR"
+  }
+]

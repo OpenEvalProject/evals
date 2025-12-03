@@ -1,0 +1,242 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Conventional methods for measuring protein-protein interactions have significant limitations including reliance on mass action, requirement for high protein concentrations, and inability to measure weak interactions effectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C11-C17 collectively establish well-documented limitations of existing PPI measurement techniques through citations and general knowledge. These claims accurately describe constraints of methods like NMR, SPR, BLI, and others, providing appropriate context for the need for METRIS.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C32",
+      "C34",
+      "C35",
+      "C95",
+      "C96",
+      "C105",
+      "C107"
+    ],
+    "result": "METRIS is a novel method that measures PPI affinity by converting rotational motion of magnetic particles into translational displacement, with displacement scaling with effective friction induced by PPIs. The method is not dependent on mass action and requires only ~20 pmols of reagent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C19-C24, C32-C35, and C95-C96 describe the fundamental principle and advantages of METRIS with internal consistency. The biological inspiration (neutrophil rolling) and physical mechanism (magnetic torque converting rotation to translation via friction) are clearly articulated. However, C107 acknowledges lack of a theoretical model relating force to rolling, indicating the mechanism is empirically rather than theoretically grounded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C114",
+      "C115",
+      "C116",
+      "C118",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The rolling parameter (RP) is defined as a dimensionless metric (0-1) calculated from translational displacement normalized by theoretical maximum displacement. METRIS achieves high measurement precision with subpixel resolution (~0.1 \u03bcm) and uses streptavidin-coated 10 \u03bcm ferromagnetic beads on avidin-coated substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C43 and C114-C123 provide clear operational definitions and technical specifications. The RP metric is well-defined mathematically, calibration points are established (avidin-streptavidin as null, biotin-streptavidin as strong binding), and experimental parameters are specified. Statistical methods and sample sizes are appropriate (\u226510 particles, 36 measurements each).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C57",
+      "C60"
+    ],
+    "result": "METRIS successfully measured DIDO1-PHD binding to H3K4 methylation states, reproducing known preferences (H3K4me3 > me2 > me1) and additionally measuring weak interactions with unmodified H3 and H3T3pK4me3. A log-log linear relationship (R\u00b2=0.995) between RP and Kd was observed spanning 15 orders of magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C54 demonstrate successful validation against known interactions with appropriate statistical significance (C48). The linear log-log relationship (C49-C50) provides an empirical calibration, though METRIS-Kd values were ~2-fold tighter than published values (C52). Novel measurements of weak interactions (C53-C54) represent new data, and the \u0394\u0394G analysis (C57, C60) provides quantitative energetic insights into the phospho/methyl switch.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C77",
+      "C97",
+      "C109"
+    ],
+    "result": "METRIS requires significantly less protein (20 pmol) compared to microarrays (250 pmol) and demonstrates superior sensitivity and quantitative resolution. The method has high statistical power due to single-particle measurements with 36 RP measurements per particle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 and C77 provide direct experimental comparison showing METRIS can distinguish interactions that microarrays cannot resolve statistically. The advantage stems from high statistical power (C109) with multiple measurements per particle and low percentage error (<5%). This represents a clear technical advantage over comparable low-reagent methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C70",
+      "C71",
+      "C76"
+    ],
+    "result": "METRIS measured ORC1-BAH binding preferences for H4K20 methylation states, reproducing known preferences (H4K20me2 > me1 > me3) and detecting previously unmeasured binding to unmodified H4 (44-fold weaker than H4K20me2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C71 demonstrate successful validation with a second protein system. The measured preferences match literature values, and detection of unmodified H4 binding (C70-C71) represents novel data. Comparison with microarrays (C76) again shows superior resolution. This provides independent validation of the METRIS approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "METRIS measured weak interactions between ubiquitin/UBL domains and Ube2D1 in the 10\u207b\u2074 M range, and provided the first direct measurement of the UHRF1 UBL-SRA interdomain interaction. The W2V mutation significantly reduced binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 establish literature values for comparison. C82-C86 demonstrate METRIS can measure weak interactions (100-200 \u03bcM range) and interdomain interactions. The SRA-UBL measurement (C84-C85) represents novel data, and the W2V mutation effect (C86) validates the interaction specificity. METRIS-Kd values were 5-fold weaker than published but maintained correct fold-differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C111"
+    ],
+    "result": "METRIS has limitations including inability to directly compare RP values across different PPI types, reliance on literature values for Kd calibration, and requirement for protein biotinylation. Global fitting was less accurate than individual fitting for each protein system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 and C111 honestly acknowledge methodological limitations. The inability to use a single global calibration (C91-C92) indicates system-specific factors affect the RP-Kd relationship. The need for scaling factors and literature values (C111) limits absolute Kd determination. These are appropriately recognized constraints that do not invalidate the method's utility for relative measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C18",
+      "C6",
+      "C7"
+    ],
+    "result": "METRIS can measure Kd values ranging from 10\u207b\u00b2 to 10\u207b\u00b9\u2075 M using as little as 20 pmols of reagent with high resolution and sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While C18 claims a 10\u207b\u00b2 to 10\u207b\u00b9\u2075 M range, the actual experimental data spans from ~10\u207b\u2074 M (weak interactions) to 10\u207b\u00b9\u2075 M (biotin-streptavidin). The 10\u207b\u00b2 M endpoint is based on assumptions about null interactions (C43) rather than direct measurement. The claimed range may be overstated, though the method clearly covers a wide dynamic range.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "METRIS reproduced well-characterized binding preferences for DIDO1-PHD and ORC1-BAH reader domains, measured weak E2-UBL interactions (10\u207b\u2074 to 10\u207b\u2076 M range), quantified \u0394\u0394Gs for the DIDO1 phospho/methyl switch, and measured the UHRF1 UBL-SRA interdomain interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 summarize the main experimental validations. These are supported by detailed results in subsequent claims and figures. The validation strategy appropriately uses known interactions to establish method validity before measuring novel interactions. Citations support the characterization of known interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C104"
+    ],
+    "result": "METRIS enables quantitative \u0394\u0394G measurements for PTM interplay (central to the epigenetic code) and can measure difficult interdomain interactions. The method could aid computational binding score function parametrization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 establish the biological significance of the measurements enabled by METRIS. The ability to measure \u0394\u0394G values for weak interactions and interdomain contacts addresses recognized gaps (C100-C101). C104 is speculative about future applications but reasonable given the data generated. The UHRF1 UBL-SRA Kd estimate of 60 \u03bcM (C102) is acknowledged as having limited biological relevance for tethered domains.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C106",
+      "C108",
+      "C110",
+      "C112",
+      "C113"
+    ],
+    "result": "METRIS robustness derives from independence of protein concentration (at saturation), high statistical power, and amplification through multiple bead-surface interactions. Future development aims to derive better mathematical models relating affinity to rolling parameter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C110 provide reasonable explanations for method robustness, though some are speculative (C110). C108 correctly identifies that RP is independent of concentration at saturation, a key advantage. C112-C113 acknowledge need for better theoretical understanding while maintaining the method's current utility. The lack of a mechanistic model (C107) is a limitation but doesn't invalidate the empirical approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Low-affinity interactions are commonly leveraged in biological systems including multivalent recognition, epigenetic PTM interplay, and allosteric regulation through weak interdomain interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 establish biological context through appropriate citations. These are well-established concepts in the field that motivate the need for methods to measure weak interactions. The claims accurately represent prior knowledge.",
+    "result_type": "MINOR"
+  }
+]

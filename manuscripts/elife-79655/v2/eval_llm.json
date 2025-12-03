@@ -1,0 +1,527 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C168"
+    ],
+    "result": "A systematic review identified 212 original studies investigating ncRNAs in sarcomas from 930 initial records. The studies were distributed across different treatment modalities (178 chemotherapy, 14 targeted therapy, 1 immunotherapy, 6 radiotherapy, 13 biomarker studies) and sarcoma types (179 osteosarcoma, 16 GIST, 4 chondrosarcoma, 3 Ewing's sarcoma, 2 synovial sarcoma), with 135 studies on miRNAs, 54 on lncRNAs, and 23 on circRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C19 and C168 provide consistent numerical data from the systematic review methodology, including search results, inclusion criteria, and distribution across treatment types and sarcoma subtypes. The flowchart in Figure 1 (C168) visually confirms these numbers. The data are internally consistent and represent straightforward descriptive statistics from the review process.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Quality assessment using W-MeQS revealed that most included studies had compromised quality, with scores ranging from 3-10 (average 5.42), 95% scoring below 9, and only 10 articles scoring 9 or above. Most articles exhibited distribution bias, selection bias, and reporting bias due to their reliance on animal or cell experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 present a coherent quality assessment of the included studies. The W-MeQS scores are clearly reported with specific ranges and distributions. The identification of biases (C23) is appropriately linked to the predominance of in vitro/in vivo studies. This represents a critical evaluation of the evidence base and is well-supported by the systematic application of the quality assessment tool.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Among chemotherapy resistance studies, 166 of 179 focused on osteosarcoma, examining 43 lncRNAs, 101 miRNAs, and 21 circRNAs. The studies primarily investigated cisplatin resistance (n=79), doxorubicin resistance (n=49), and multidrug resistance (n=27). From these studies, 82 ncRNAs were identified as enhancing chemoresistance while 84 contributed to chemosensitivity, with 19 overlapping ncRNAs reported in multiple studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C46 provide detailed quantitative breakdown of the osteosarcoma chemotherapy resistance literature. The numbers are internally consistent (166 total studies broken down by ncRNA type and drug specificity). The identification of both resistance-promoting and sensitivity-promoting ncRNAs (C45-C46) demonstrates balanced reporting. The overlap analysis (C41) adds methodological rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Four studies examined miRNAs in Ewing's sarcoma chemotherapy resistance. miRNA-193a-5p controls cisplatin resistance in both osteosarcoma and Ewing's sarcoma, while miR-34a and miR-708 increased sensitivity to multiple drugs (vincristine, doxorubicin, etoposide), and miR-125b overexpression reduced drug sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 are well-supported by specific citations to individual studies. The findings show both resistance-promoting (C51) and sensitivity-promoting (C49-C50) miRNAs, demonstrating balanced reporting. The cross-sarcoma finding for miRNA-193a-5p (C48) is particularly notable and properly cited to Jacques et al., 2016.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Three studies investigated miRNAs in chondrosarcoma chemotherapy resistance, showing that miR-100, miR-23b, and miR-125b all increased cisplatin or doxorubicin sensitivity in chondrosarcoma cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 are supported by specific citations (Zhu et al., 2014; Huang et al., 2017; Tang et al., 2016). All three miRNAs show the same directional effect (increased sensitivity), which is consistent. The small number of studies (n=3) is appropriately noted, limiting overgeneralization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "In soft-tissue sarcomas, miR-27a enhanced vincristine sensitivity in rhabdomyosarcoma both in vitro and in vivo, while miR-17 promoted doxorubicin resistance in synovial sarcoma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by specific citations (Bharathy et al., 2018; Minami et al., 2014) and demonstrate both in vitro and in vivo validation. The contrasting effects (sensitivity vs. resistance) across different sarcoma types are appropriately distinguished.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Three studies examined miRNAs in osteosarcoma resistance to targeted therapies, showing that miR-34a, miR-596, and miR-499a enhanced sensitivity to cabozantinib, anlotinib, and erlotinib, respectively, in both in vitro and in vivo models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 are supported by specific citations (Wang et al., 2021; Wang et al., 2019a; Wang et al., 2019b) and demonstrate both in vitro and in vivo validation. Each miRNA-drug pair is clearly specified, and all show enhanced sensitivity rather than resistance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Ten studies examined ncRNAs in GIST imatinib resistance. lncRNA CCDC26 reduced resistance while HOTAIR and RP11-616M22.7 enhanced resistance. Among miRNAs, four (miR-218, miR-30a, miR-518-5p, miR-21) sensitized cells to imatinib, while two (miR-125-5p, miR-107) enhanced resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C71 provide a comprehensive summary of GIST imatinib resistance studies with specific citations for each ncRNA. The findings show bidirectional effects (both resistance and sensitivity) which is biologically plausible. The mechanistic details (targeting c-KIT, ATG2B, IGF-1R, Hippo pathways) add credibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "miR-761 enhanced pazopanib resistance in synovial sarcoma cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 is supported by a specific citation (Shiozawa et al., 2018). While this is a single study finding, it is appropriately reported without overgeneralization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Only one bioinformatic study met criteria for ncRNAs in sarcoma immunotherapy resistance, reporting that overexpression of nine lncRNAs (ADAM6, C5orf58, CXCR2P1, FCGR2C, HCP5, HLA-H, NAPSB, NCF1B, NCF1C) reduced sensitivity to immune checkpoint inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C74 are based on a single bioinformatic analysis (Pang and Hao, 2021) without experimental validation. While the study is properly cited, bioinformatic predictions require experimental confirmation. The lack of validation cohorts and functional studies limits confidence in these findings. The authors appropriately note this is the only study meeting their criteria, highlighting the limited evidence base.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Six studies examined ncRNAs in sarcoma radioresistance. In osteosarcoma, LINC00210 and miR-214 induced radioresistance while miR-328-3p and miR-513a-5p enhanced radiosensitivity. Rapamycin combined with miR-34 mimic may overcome carbon ion irradiation resistance in chondrosarcoma, and miR-142-3p increased radiosensitivity in ATRT cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C82 are supported by specific citations for each finding. The studies show both resistance-promoting and sensitivity-promoting ncRNAs, demonstrating balanced reporting. The combination therapy approach (C81) is appropriately qualified with 'may overcome.' The diversity of sarcoma types and radiation modalities is clearly specified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Twelve studies evaluated ncRNAs as biomarkers for treatment response, but none included external validation cohorts. Circulating miR-125b distinguished chemotherapy-resistant from sensitive osteosarcoma (AUC=0.793, sensitivity=76.9%, specificity=79.1%). miR-518e-5p showed potential for predicting secondary imatinib resistance in GIST (AUC=0.9938, sensitivity=99.8%, specificity=82.1%). lncRNA HAR1B expression was higher in pazopanib responders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "While claims C84-C86 report specific diagnostic performance metrics with citations, claim C83 critically notes that none of the 12 biomarker studies included external validation cohorts. This is a major methodological limitation that undermines confidence in the reported diagnostic accuracies. Without external validation, these biomarkers cannot be considered clinically validated. The high reported performance (especially C85 with 99.8% sensitivity) without validation raises concerns about overfitting. The result is unsupported for clinical application, though the data are accurately reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "The majority of ncRNA targets identified were members of PI3K/AKT, Wnt/\u03b2-catenin, and NF-\u03baB signaling pathways. ncRNAs were involved in epithelial-to-mesenchymal transition, cancer stem cells, cell cycle dysregulation, glucose metabolism, multidrug resistance genes, DNA repair abnormality, apoptosis, autophagy, and drug efflux transporters across multiple sarcoma types, with all these phenotypes disordered in osteosarcoma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 and C169-C173 provide a comprehensive mechanistic summary supported by Figures 2 and 3. The identification of common signaling pathways (PI3K/AKT, Wnt/\u03b2-catenin, NF-\u03baB) across multiple studies provides convergent evidence. The breadth of biological processes affected (EMT, CSCs, cell cycle, metabolism, etc.) is consistent with the pleiotropic nature of ncRNA regulation. The visual evidence in Figures 2 and 3 supports these summary claims. The specific notation that all phenotypes are disordered in osteosarcoma (C173) is consistent with osteosarcoma being the most studied sarcoma type (179/212 studies).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "High-dose methotrexate, ifosfamide, doxorubicin, and cisplatin are the most active agents for osteosarcoma treatment. PI3K/AKT pathway components are frequently altered in cancers and contribute to resistance. lncRNAPTV1 and miR-221 promoted resistance by activating PI3K/AKT, while miR-29b increased doxorubicin sensitivity by inhibiting PI3K/AKT through spin1 regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 connect established clinical practice (C89) with mechanistic findings. The PI3K/AKT pathway's role in resistance (C90) is well-established and properly cited. The specific ncRNA findings (C91-C93) are supported by individual citations and show bidirectional regulation (both activation and inhibition of the pathway), which is biologically plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Aberrant Wnt/\u03b2-catenin signaling is linked with therapy response in cancers. lncRNA HOTTIP, circ_001569, and circPRKAR1B promoted drug resistance by activating Wnt/\u03b2-catenin signaling, with circPRKAR1 acting through miR-361-3p sponging to upregulate FZD4. Conversely, miR-342-5p sensitized cells to doxorubicin by inhibiting Wnt7b and \u03b2-catenin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C99 provide mechanistic details for Wnt/\u03b2-catenin pathway regulation by ncRNAs. The general statement (C94) is properly cited. The specific ncRNA findings (C95-C99) include both direct and indirect mechanisms (e.g., miRNA sponging in C98), demonstrating mechanistic depth. The bidirectional regulation (activation vs. inhibition) is biologically plausible and supported by specific citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Dysregulation of the NF-\u03baB pathway causes cancers and enhances drug resistance. lncRNA NORAD promoted cisplatin resistance by sponging miR-410-3p and activating NF-\u03baB, while miR-410-3p promoted drug sensitivity by downregulating HMGB1 and inhibiting NF-\u03baB activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 establish the NF-\u03baB pathway's role in resistance (C100-C101) with proper citations, then provide specific ncRNA mechanisms (C102-C103). The competing endogenous RNA mechanism (lncRNA sponging miRNA) is well-established. The bidirectional regulation through the same miRNA (miR-410-3p) by different upstream regulators demonstrates mechanistic coherence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Overexpression of anti-apoptotic Bcl-2 fortifies drug resistance, while upregulation of pro-apoptotic Bax and caspase-3 promotes sensitivity. lncRNA NCK-AS1 and lncRNA NEAT1 enhanced drug resistance by upregulating Bcl-2 and downregulating Bax and cleaved caspase-3 through miRNA sponging mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 connect established apoptosis biology (C104-C105) with specific lncRNA mechanisms (C106-C107). The opposing roles of Bcl-2 vs. Bax/caspase-3 are well-established. The lncRNA findings are supported by specific citations and include mechanistic details (miRNA sponging). Both in vitro and in vivo validation is noted for C107.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "MCL1, an antiapoptotic BCL2 family member, contributes to chemotherapy resistance. lncRNA SNHG12 and circ_0004674 enhanced doxorubicin resistance by upregulating MCL1 through miRNA sponging (miR-320a and miR-142-5p, respectively), while miR-26a reversed multidrug resistance by directly inhibiting MCL1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 establish MCL1's role in resistance (C108) then provide specific ncRNA mechanisms (C109-C111). The findings include both lncRNA and circRNA regulation, with specific miRNA intermediates identified. The direct targeting by miR-26a (C111) contrasts with indirect regulation by lncRNA/circRNA, demonstrating multiple regulatory layers. In vivo validation is noted for C111.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "HMGB1 facilitates autophagy following cytotoxic agent administration, and its overexpression in osteosarcoma cells confers resistance to doxorubicin, cisplatin, and methotrexate. miR-22 hindered resistance by inhibiting HMGB1-promoted autophagy. LC3-II overexpression promotes autophagy and drug resistance; miR-155 enhanced chemoresistance by increasing LC3-I to LC3-II conversion, while miR-199-5p reduced resistance by downregulating LC3-II.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C117 establish autophagy's role in resistance through HMGB1 (C112-C114) and LC3 (C115-C117). The mechanistic details include specific autophagy markers (LC3-I/LC3-II conversion) and bidirectional regulation by different miRNAs. The findings are supported by specific citations and demonstrate coherent autophagy biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "ABCB-1, a classical MDR-related protein, is regulated by ncRNAs in osteosarcoma. lncRNA FOXC2-AS1 and circPVT1 promoted doxorubicin/cisplatin resistance by facilitating ABCB1 expression, while miR-34b reversed drug resistance by directly lowering ABCB-1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C121 establish ABCB-1's role in MDR (C118) then provide specific ncRNA mechanisms (C119-C121). The findings include both lncRNA and circRNA regulation, with the lncRNA acting through a transcription factor intermediate (FOXC2). The bidirectional regulation (upregulation vs. downregulation) is biologically plausible and supported by specific citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Wild-type p53 maintains genomic stability while mutant p53 is associated with drug resistance. WIP1 inhibits the ATM/ATR-p53 DNA damage signaling pathway. miR-590 inhibited doxorubicin resistance by negatively regulating WIP1, subsequently reducing ATM and p53 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C124 establish p53's dual role in cancer (C122) and WIP1's regulatory function (C123), then provide a specific miRNA mechanism (C124). The pathway logic (miR-590 \u2192 WIP1 \u2192 ATM/p53) is coherent and properly cited. The indirect regulation of p53 through WIP1 demonstrates mechanistic sophistication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "HIF-1\u03b1 is associated with chemotherapy failure in cancers, and JMJD2C serves as a co-activator for HIF-1\u03b1. miR-216b enhanced cisplatin sensitivity by downregulating JMJD2C and HIF-1\u03b1, inhibiting HES1 gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C127 establish the HIF-1\u03b1 pathway's role in resistance (C125-C126) then provide a specific miRNA mechanism (C127). The pathway logic (miR-216b \u2192 JMJD2C \u2192 HIF-1\u03b1 \u2192 HES1) demonstrates a multi-step regulatory cascade. All claims are supported by specific citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Ewing's sarcoma has a 5-year survival rate of 65-75% for localized disease and <30% for metastatic disease. miR-125b overexpression is associated with downregulation of pro-apoptotic p53 and Bak, enhancing drug resistance, while miR-34a overexpression in wild-type p53 cells decreased malignancy and increased sensitivity to doxorubicin and vincristine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C130 provide clinical context (C128) then specific miRNA mechanisms in Ewing's sarcoma (C129-C130). The opposing effects of miR-125b (resistance) vs. miR-34a (sensitivity) are both linked to p53 regulation, demonstrating mechanistic coherence. The p53 status dependency (wild-type for miR-34a effect) adds biological nuance. All claims are properly cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Chondrosarcoma, the second most common primary malignant bone sarcoma, usually exhibits chemotherapy resistance. miR-23b increased cisplatin sensitivity by inhibiting the Src-Akt pathway, and miR-125b increased doxorubicin sensitivity by targeting ErbB2 and inhibiting glucose metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C133 provide clinical context (C131) then specific miRNA mechanisms (C132-C133). The mechanisms involve different pathways (Src-Akt vs. ErbB2/glucose metabolism), demonstrating multiple routes to chemosensitization. Both findings are properly cited to specific studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "In soft-tissue sarcomas, the PAX3:FOXO1 fusion oncogene mediates chemotherapy tolerance in rhabdomyosarcoma, and miR-27a overexpression led to PAX3:FOXO1 mRNA destabilization and chemotherapy sensitization. In fibrosarcoma, miR-197-5p sensitizes cells to doxorubicin by suppressing MDR genes. miR-206 inhibited malignant fibrous histiocytoma proliferation by regulating cancer stem cell properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C138 provide context for soft-tissue sarcomas (C134) then specific mechanisms in different subtypes (C135-C138). The PAX3:FOXO1 targeting by miR-27a (C135-C136) is particularly notable as a fusion oncogene-specific mechanism. The diversity of mechanisms across sarcoma subtypes (fusion oncogene, MDR genes, CSC properties) is appropriately captured. All findings are properly cited with in vitro and in vivo validation noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "GISTs are the most common soft-tissue sarcoma subtype, and imatinib is the gold standard therapy that effectively prolongs survival. lncRNA HOTAIR promoted imatinib resistance by activating autophagy through ATG2B upregulation via miR-130a, while miR-30a sensitized cells by inactivating autophagy through Beclin1 downregulation. miR-125a-5p enhanced resistance by suppressing PTPN18 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C145 provide clinical context for GIST (C139-C141) then specific ncRNA mechanisms (C142-C145). The autophagy regulation by lncRNA HOTAIR vs. miR-30a demonstrates bidirectional control of the same process through different autophagy proteins (ATG2B vs. Beclin1). The PTPN family's role in prognosis (C144) and miR-125a-5p's targeting of PTPN18 (C145) add mechanistic diversity. All claims are properly cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "The Notch pathway mediates drug resistance in cancers, and miR-34a overexpression promoted osteosarcoma sensitivity to cabozantinib by suppressing Notch signaling. SHKBP1 prevents EGFR degradation, and the TGF\u03b2-miR-499a-SHKBP1 network orchestrates EMT-associated kinase switching, inducing erlotinib resistance in CD166+ osteosarcoma cancer stem cell-like cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C149 establish pathway roles in resistance (C146, C148) then provide specific mechanisms for targeted therapy resistance (C147, C149). The TGF\u03b2-miR-499a-SHKBP1 network (C149) demonstrates a complex regulatory cascade involving EMT and kinase switching in CSC-like cells, showing mechanistic sophistication. Both findings are properly cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Anti-CTLA-4 drug ipilimumab was well tolerated but showed no obvious efficacy in synovial sarcoma, while anti-PD-1 antibody SARC028 showed partial response in bone sarcomas. Primary immunotherapy resistance may be caused by an immunosuppressive environment lacking pre-existing antitumor response. Elevated lncRNA expression correlated with reduced immune cell infiltration and reduced ICI sensitivity in sarcomas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C153 provide clinical context for immunotherapy in sarcomas (C150-C151) then mechanistic insights (C152-C153). The contrasting clinical outcomes (no efficacy vs. partial response) for different ICIs are properly cited. The mechanistic explanation (C152) and lncRNA correlation (C153) are appropriately qualified and cited. However, the evidence base is limited (only one ncRNA study, C73-C74), which is appropriately reflected in the discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Radiotherapy is widely used in sarcomas and activates multiple tumor microenvironment processes affecting radiosensitivity. Cancer stem cell radioresistance involves multiple mechanisms. In osteosarcoma, LINC00210 knockdown enhances radiosensitivity by acting as miR-342-3p sponge to regulate GFRA1, while miR-328-3p overexpression enhances radiosensitivity by targeting H2AX. miR-34a overexpression enables chondrosarcoma cells to overcome carbon-ion irradiation resistance through FOXO3 upregulation and KLF4 repression. miR-142-3p reduced \u03b3 radiation resistance in ATRT by inhibiting SOX2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C161 provide comprehensive context for radiotherapy in sarcomas (C154-C157) then specific ncRNA mechanisms across different sarcoma types (C158-C161). The mechanisms involve different molecular targets (GFRA1, H2AX, FOXO3/KLF4, SOX2) and radiation types (X-ray, carbon-ion, \u03b3 radiation), demonstrating mechanistic diversity. All findings are properly cited with appropriate qualification (e.g., 'may overcome' in C81).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "Sarcomas lack specific tumor markers, and existing serum indicators (LDH, alkaline phosphatase) lack specificity and sensitivity, making diagnosis dependent on imaging and invasive biopsies. Exosomes have been considered as potential biomarkers. ncRNAs may have potential as biomarkers for drug resistance and predicting therapeutic responses, and as ideal candidates for treatment monitoring and future therapeutic targets in sarcomas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C162-C167 establish the clinical need for biomarkers (C162-C164) and propose ncRNAs as potential solutions (C165-C167). However, the conclusions (C166-C167) are appropriately qualified with 'may have potential' and 'ideal candidates,' reflecting the lack of validation noted in C83. The exosome context (C165) is properly cited but doesn't directly support ncRNA biomarker validity. The optimistic framing in C167 ('ideal biomarker candidates') is not fully supported given the absence of external validation cohorts in all 12 biomarker studies (C83). The result represents a reasonable hypothesis but lacks sufficient validation for clinical application.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Sarcomas comprise approximately 1% of human malignancies with an annual incidence of 2.4 per 100,000 population. Treatment resistance is a major reason for poor prognosis. Treatment strategies include surgical resection, chemotherapy, targeted therapy, immunotherapy, and radiotherapy, but primary or acquired resistance leads to treatment failure. ncRNAs are important molecules involved in resistance to chemotherapy, targeted therapy, and radiotherapy via various pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C24-C26 provide well-established epidemiological and clinical context for sarcomas, properly supported by citations. The incidence rate (C1, C24), treatment modalities (C25), and resistance as a cause of poor outcomes (C2, C26) are standard clinical knowledge appropriately referenced. The role of ncRNAs in treatment resistance (C3) is supported by multiple citations and serves as the rationale for the systematic review.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "miRNAs (18-25 nucleotides) inhibit target gene expression through mRNA degradation or translational repression, and can indirectly upregulate genes by targeting their repressors. lncRNAs (>200 nucleotides) modulate gene transcription and translation through multiple mechanisms and can act as miRNA sponges. circRNAs (1-5 introns/exons) form covalently closed loops and function as miRNA sponges, RNA-binding protein sequesterers, and gene expression regulators by controlling mRNA transcription or interacting with polymerase-II.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C35 provide comprehensive background on ncRNA biology, properly supported by citations to established literature. The size definitions (C27, C30, C33), mechanisms of action (C28-C29, C31-C32, C34-C35), and structural features are standard molecular biology knowledge appropriately referenced. This background is essential for understanding the subsequent findings.",
+    "result_type": "MINOR"
+  }
+]

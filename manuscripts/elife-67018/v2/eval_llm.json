@@ -1,0 +1,231 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C34",
+      "C35",
+      "C36",
+      "C56",
+      "C57"
+    ],
+    "result": "The study quantified physiological competence of vertebrate hosts for RRV by measuring viremic responses. Rats and macropods showed the strongest responses, sheep/rabbits/humans/possums formed a middle cluster, while dogs and cats showed no detectable viremia. Horses had low average competence despite occasional high viremia because <15% of exposed horses develop viremia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9, C34-C36 are well-supported by experimental infection data (N=10 for dogs/cats) and statistical modeling of titer profiles shown in Figure 2A and Appendix figures. The aggregation of bird and macropod species (C56-C57) is justified by similar viremic responses shown in Appendix 1-figure 2. Sample sizes and statistical approaches are appropriate for the conclusions drawn.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C37",
+      "C65"
+    ],
+    "result": "Mosquito physiological competence for RRV was quantified using infection and transmission probability data. Coquillettidia linealis had the highest competence (though overlapping with 4 other species), while Culex annulirostris, Cx. quinquefasciatus, Ae. notoscriptus, and Cx. sitiens had low competence. No single species was dominant, supporting RRV as a generalist virus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 are supported by GLMM analysis of experimental infection data shown in Figure 3A and Appendix figures. The wide confidence intervals appropriately reflect uncertainty. The conclusion about RRV being a generalist virus (C37, C65) is a reasonable inference from the data showing multiple competent species, though the overlapping CIs limit definitive ranking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C64"
+    ],
+    "result": "When ecological factors were integrated with physiological competence, humans emerged as having the highest potential for infecting mosquitoes in Brisbane, primarily infecting Ae. vigilax, Ae. procax, and Cx. annulirostris. Rats and macropods dropped in importance despite high physiological competence. Birds' importance was driven by association with Cq. linealis rather than abundance (5% of community) or physiological competence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C12-C14 show dramatic shifts from physiological to ecological importance, but the authors acknowledge 'large uncertainty' and 'overlapping 95% CIs obscure our ability to determine which host is able to infect more mosquitoes.' The human data (C38) is empirical, but the modeling assumptions (40 mosquitoes/host, identical mosquito survival across species, aggregated bird/macropod responses) introduce substantial unquantified uncertainty. The inference about birds (C41) is reasonable but speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "For vector-to-host transmission, Cq. linealis, Ae. procax, Ae. vigilax, and Ve. funerea were estimated to infect the most hosts. Cq. linealis primarily infected birds, while Ae. procax and Ae. vigilax infected diverse hosts. Despite high individual competence, Ve. funerea and Ma. uniformis are unlikely to be important due to rarity (0.27% and 0.14% of community).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17, C24-C26 are supported by modeling results integrating physiological competence with ecological data (Figure 3B-C). The authors appropriately acknowledge wide overlapping CIs making differentiation difficult. The conclusion about rare species (C26) is well-reasoned: even high individual competence cannot overcome extreme rarity in community-level transmission. The empirical abundance data (Supplementary file 2) supports this inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "For complete-cycle (host-vector-host) transmission, humans, birds, possums, horses, and macropods remained the top cluster. Humans primarily caused 'self-infections' followed by birds and dogs. This result was robust to sensitivity analysis reducing human titer duration, supporting that humans likely contribute to RRV transmission in Brisbane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C18, C20-C21 are based on next-generation matrix modeling (Figure 2C), but the authors acknowledge wide overlapping CIs. The sensitivity analysis (C22) strengthens confidence, but human titer data comes from observational studies during symptomatic infection (not experimental), introducing potential bias. The conclusion (C23) is reasonable but the large uncertainty and multiple untested assumptions (mosquito survival, feeding preferences, 40 mosquitoes/host) limit confidence. The result requires field validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Multi-generation modeling starting with one infected human showed infections propagating through humans, birds, dogs, and horses, with dominant pathways converging by generation 3 to bird-bird, human-human, human-bird, horse-human transmission, plus wasted transmissions to dogs. Starting with Ma. uniformis mosquito, infections quickly shifted to Ae. vigilax, Ae. procax, and Cq. linealis by generation 3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C27-C30 are based on discrete-generation NGM approximations (Figure 4) that the authors acknowledge 'does not fully represent time-dependent epidemic dynamics.' The approach assumes discrete rather than overlapping generations, ignores seasonality, and compounds all previous modeling uncertainties. While useful for identifying potential pathways, the authors appropriately note this is 'only a coarse approximation' and 'illustrative.' The results generate hypotheses but require dynamic epidemic modeling and field validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The study identifies two overlapping RRV transmission cycles in Brisbane: an enzootic cycle (birds and Cq. linealis) and a domestic cycle (human-to-human via Ae. vigilax and Ae. procax), linked by feeding generalist mosquitoes. Dogs play a diluting role by absorbing infectious bites without transmitting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C31-C33 represent high-level inferences synthesizing multiple modeling results. The authors appropriately state 'despite large uncertainty' when presenting this conclusion. While the two-cycle hypothesis is plausible and supported by the modeling framework, it remains speculative without field validation. The dog dilution effect (C33) is well-supported by the viremia data (C9) showing no transmission capability. This is a hypothesis-generating result requiring further empirical testing, particularly seasonal studies to distinguish enzootic vs. domestic transmission timing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The study predicts Cx. annulirostris and Ae. notoscriptus are less competent vectors than Ae. vigilax, Ae. procax, and Cq. linealis, despite being frequently cited as key vectors and detected in field-caught mosquitoes. This suggests they may be secondary vectors (supplemental role) rather than primary vectors (capable of maintaining epidemics).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C44, C48-C49, C51-C52 present a novel hypothesis contradicting previous literature (C45-C47). The modeling results support lower transmission capability, but the authors acknowledge this is a 'new hypothesis' (C49). The distinction between field detection and transmission capability (C51) is conceptually sound. However, the prediction relies on the same uncertain modeling assumptions as other results. The primary/secondary vector distinction (C50) is established for other arboviruses but remains untested for RRV. Field studies measuring actual transmission rates are needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The modeling assumed identical mosquito survival across all species using exponential decay with daily survival probability half that of Cx. annulirostris in optimal lab conditions, falling to zero after day 38. The mosquito-to-host ratio was assumed to be 40:1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claims C53-C55 describe critical modeling assumptions that introduce substantial unquantified uncertainty. The authors acknowledge survival data 'may over-estimate survival rates in nature' and that the 40:1 ratio 'may be an over- (or under-) estimate.' Crucially, they state 'uncertainty we present is an underestimate' because survival contributed no uncertainty to CIs. These assumptions could dramatically affect results but lack empirical validation for Brisbane. Species-specific field mortality data is identified as 'crucial' but missing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "Nine mosquito species were retained for analysis, accounting for 90% of the Brisbane mosquito community by abundance, though many potentially relevant species were excluded due to lack of both abundance and blood meal data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 is supported by empirical abundance data (Supplementary file 1). The 90% coverage provides reasonable community representation, though the authors appropriately acknowledge that excluded species could be locally important. The requirement for both abundance and blood meal data is a reasonable methodological constraint, though it may bias results toward well-studied species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "The study suggests vector control of Ae. vigilax populations as a potentially fruitful path for reducing human RRV infections, noting this species is already a primary target of mosquito control operations in Brisbane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C42 is a management recommendation based on modeling results (Figure 2B) showing humans infect many Ae. vigilax. However, given the large uncertainties acknowledged throughout the study, this recommendation is premature without field validation. Claim C43 (current targeting) is supported by citation. The recommendation conflates modeling predictions with actionable management strategy without discussing potential unintended consequences or alternative approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C72",
+      "C73"
+    ],
+    "result": "The study presents a nested modeling framework integrating physiological competence with ecological traits across three metrics of increasing complexity (physiological, half-cycle, complete-cycle transmission). The framework propagates uncertainty from statistical sub-models and has potential application to other zoonotic pathogens for hypothesis testing and guiding data collection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62, C66-C67 accurately describe the methodological framework, which is conceptually sound and well-structured. The uncertainty propagation (C62) is implemented for fitted models, though not for all parameters. Claims C68-C70, C72-C73 about the framework's utility and the limitations of partial-cycle approaches are reasonable and supported by citations. The claim of direct application to other pathogens (C63) is plausible but not demonstrated. The framework's main limitation is that uncertainty propagation is incomplete (excludes survival, abundance measurement error).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C59",
+      "C60",
+      "C61",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The introduction establishes that >60% of human infectious diseases are multi-host pathogens, ~75% of emerging diseases have non-human origin, and identifying key vectors/hosts is difficult but critical. RRV causes ~5000 annual cases in Australia, has caused major Pacific Island epidemics, and has been considered zoonotic because winter human cases are too low to sustain transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6, C59-C61, C74-C76 are background/context claims supported by appropriate citations to published literature. These establish the study rationale and are not novel findings. The citations appear appropriate for the claims made, though the accuracy of cited work is not independently verified here. These are standard literature review claims providing context for the research questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "Studies characterizing zoonotic arbovirus transmission often focus on pairwise transmission between non-human hosts and vectors, or vectors and humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 is a literature review statement supported by multiple citations across different pathogen systems (WNV, RRV, leishmaniasis, Chagas). This accurately characterizes a gap in the field that the current study addresses. The claim is appropriately scoped and supported.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,350 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "STAT3 positively regulates Pol III-directed transcription in multiple cell lines. STAT3 silencing in HepG2, HuH7, and 293T cells reduced expression of Pol III products (5S rRNA, U6 snRNA, 7SL RNA) and tRNA genes, while STAT3 overexpression enhanced their expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 provide consistent RT-qPCR data across multiple cell lines (HepG2, HuH7, 293T) showing that STAT3 manipulation bidirectionally affects Pol III product levels. The data are reproducible across cell types and use appropriate controls (GAPDH), supporting the conclusion in C57.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "STAT3 positively regulates cancer cell growth both in vitro and in vivo. STAT3 silencing reduced proliferation in multiple assays (cell counting, CCK-8, EdU incorporation, colony formation) and tumor growth in nude mice, while STAT3 overexpression enhanced these parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C72 provide convergent evidence from multiple independent assays (cell counting, CCK-8, EdU, colony formation, xenograft) demonstrating STAT3's role in cell growth. The in vivo data (C66-C69) with n=6 mice per group and statistical significance strengthen the conclusion. Colony formation data (C70-C72) appropriately distinguish survival from proliferation effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C100",
+      "C101"
+    ],
+    "result": "Pol III transcription activation contributes to STAT3-mediated enhancement of cell proliferation. The Pol III inhibitor ML-60218 reversed the proliferation and Pol III transcription increases induced by STAT3 overexpression or TP73 silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 and C100-C101 use pharmacological inhibition (ML-60218) to establish causality between Pol III activity and proliferation. The rescue experiments appropriately demonstrate that Pol III transcription is necessary for STAT3-mediated proliferation effects, though the authors acknowledge other factors may contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "STAT3 regulates Pol III transcription indirectly by affecting recruitment of transcription machinery to target loci without directly binding to Pol III genes or altering expression of transcription factors. STAT3 knockdown reduced occupancy of TBP, BRF1, GTF3C2, GTF3C3, and POLR3A at Pol III target loci, but STAT3 does not bind these loci and does not affect protein levels of these factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C79 combine ChIP data (C73-C74) showing reduced occupancy with negative ChIP data (C75-C76) and western blots (C78) to establish indirect regulation. The logic is sound: STAT3 affects recruitment without binding DNA or changing protein levels, necessitating an intermediate mechanism. Controls (BCL2 promoter, IgG) are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C80",
+      "C81",
+      "C82",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "STAT3 inhibits TP73 expression at the mRNA level. RNA-seq analysis revealed that STAT3 silencing caused upregulation of 356 genes including TP73, while not affecting Pol III machinery component expression. RT-qPCR validation confirmed STAT3 negatively regulates TP73 mRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C88 use RNA-seq (C80, C84, C87) with appropriate validation by RT-qPCR (C85-C86) across multiple cell lines. The RNA-seq shows differential expression with n=3 replicates and p<0.05 threshold. The finding that Pol III machinery is unchanged (C81) appropriately rules out direct transcriptional regulation and supports the alternative pathway hypothesis (C82).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "STAT3 suppresses TP73 expression at the protein level. Western blot analysis showed STAT3 depletion enhanced TP73 protein expression while STAT3 overexpression reduced TP73 protein levels in HepG2 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 provide western blot data consistent with the mRNA findings. The bidirectional effects (depletion vs. overexpression) strengthen the conclusion. Claim C91 appropriately integrates mRNA and protein data, though quantification of western blots would strengthen the analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "TP73 is required for STAT3-mediated regulation of Pol III transcription and cell proliferation. TP73 knockdown reversed the inhibition of Pol III products and proliferation caused by STAT3 silencing, indicating TP73 plays a negative role in this pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 use genetic rescue experiments (double knockdown) to establish epistasis. The reversal of STAT3 silencing effects by TP73 knockdown (C92-C93) appropriately demonstrates that TP73 acts downstream of STAT3 and is required for STAT3's regulatory effects. This is a well-designed epistasis experiment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "TP73 independently suppresses Pol III-dependent transcription and cell proliferation. TP73 knockdown alone enhanced Pol III product levels and cell proliferation, while TP73 activation using dCas9-VP48 inhibited both processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C99 demonstrate TP73's independent function through both loss-of-function (C95-C96) and gain-of-function (C98) experiments. The dCas9-VP48 activation system (C98-C99) provides orthogonal evidence and controls for off-target effects of shRNA. The bidirectional manipulation strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "TP73 inhibits Pol III transcription by disrupting TFIIIB assembly through interaction with TBP. TP73 silencing enhanced occupancy of Pol III machinery at target loci and increased TBP-BRF1 interaction. Co-IP experiments showed TP73 interacts with TBP, GTF3C2, and GTF3C3, but not BRF1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C109 provide a mechanistic model supported by ChIP (C102), western blot (C104), and co-IP data (C106-C107). The finding that TP73 interacts with TBP but not BRF1, and that TP73 depletion enhances TBP-BRF1 interaction, logically supports the disruption model (C108). The mechanism is distinct from p53 (C134-C136), adding novelty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C102",
+      "C103"
+    ],
+    "result": "TP73 inhibits occupancy of TFIIIB subunits at Pol III target loci. ChIP assays showed TP73 silencing enhanced occupancy of TBP, BRF1, BRF2, GTF3C2, GTF3C3, and POLR3A at DNA loci encoding 5S rRNA, 7SL RNA, and tRNA-Met.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 provide ChIP data showing increased occupancy upon TP73 depletion at multiple loci. The data are consistent across different Pol III target genes and multiple transcription factors, supporting the general mechanism. Appropriate controls (input, IgG) are used.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "miR-106a-5p activates Pol III transcription by targeting TP73 mRNA 3'UTR. Luciferase assays showed miR-106a-5p mimics reduced activity of reporters containing wild-type but not mutant TP73 3'UTR. Transfection of miR-106a-5p mimics reduced TP73 protein and enhanced Pol III product expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C123 use standard luciferase reporter assays (C118-C119) with appropriate wild-type and mutant controls to demonstrate direct targeting. The functional validation (C121-C122) showing reduced TP73 protein and increased Pol III products upon miR-106a-5p transfection supports the regulatory relationship. The mechanism is well-established for miRNA function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C110",
+      "C111",
+      "C112",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "STAT3 activates miR-106a-5p expression by binding to its promoter. STAT3 silencing reduced miR-106a-5p expression while overexpression enhanced it. ChIP assays showed STAT3 binds to the miR-106a-5p promoter, which contains STAT3 binding motifs. Luciferase assays confirmed STAT3 regulates promoter activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 and C129-C133 provide convergent evidence from RT-qPCR (C110-C111), bioinformatics (C129), ChIP (C130), and luciferase assays (C131-C132). The data demonstrate direct transcriptional regulation by STAT3. The specificity for miR-106a-5p over other miRNAs (C110) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C11",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "miR-106a-5p links STAT3 with TP73 to regulate Pol III transcription. Transfection of miR-106a-5p mimics reversed the effects of STAT3 silencing on TP73 expression, Pol III products, and cell proliferation, indicating miR-106a-5p is required for STAT3-mediated regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C126 use rescue experiments showing miR-106a-5p mimics reverse STAT3 silencing effects. This epistasis analysis appropriately demonstrates that miR-106a-5p acts downstream of STAT3 and upstream of TP73. The pathway STAT3\u2192miR-106a-5p\u2192TP73\u2192Pol III is well-supported by the collective data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C12"
+    ],
+    "result": "STAT3 functions as a positive regulator in Pol III-directed transcription by controlling the miR-106a-5p/TP73 axis. This is the main conclusion integrating all findings into a regulatory pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C12 is the central conclusion supported by the collective evidence from all previous results. The pathway is established through: (1) STAT3 activates miR-106a-5p transcription, (2) miR-106a-5p inhibits TP73 translation, (3) TP73 disrupts TFIIIB assembly, (4) reduced TFIIIB assembly decreases Pol III transcription. Each step is independently validated with appropriate controls and rescue experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "miR-106a-5p expression levels have potential biomedical significance as a cancer biomarker. Transformed cell lines showed increased miR-106a-5p expression compared to normal cells. TCGA analysis revealed that high miR-106a-5p expression correlates with lower survival probability in liver and kidney cancer patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C113-C117 provide correlative data from cell lines (C113) and TCGA survival analysis (C115-C116). While the survival analysis shows statistical significance, this is purely correlational and does not establish causality. The claim of \"biomedical significance\" (C114, C117) is speculative without validation in independent patient cohorts or functional studies linking miR-106a-5p levels to disease outcomes. Additional validation would be needed to support clinical utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C136",
+      "C137"
+    ],
+    "result": "The regulatory mechanism of Pol III transcription by TP73 is distinct from p53 but resembles PTEN/AKT. TP73 disrupts TBP-BRF1 interaction, whereas p53 does not disrupt this interaction but prevents TFIIIB association with TFIIIC2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C137 appropriately compare the current findings with published mechanisms (C134-C135, C138). The co-IP data showing TP73 affects TBP-BRF1 interaction (C107) contrasts with cited literature showing p53 does not (C135). This comparative analysis adds context and highlights the novelty of the TP73 mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "STAT3 promotes cell proliferation by activating both Pol I and Pol III transcription. ML-60218 inhibitor experiments suggest Pol III activation contributes to proliferation, and unpublished data indicate STAT3 also drives Pol I transcription via RPA34.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C144 is supported by the ML-60218 data in the current manuscript (C64-C65), but claims C145-C146 rely on an unpublished \"manuscript accepted\" which cannot be fully evaluated. While the authors acknowledge other factors may contribute (C144), the relative contributions of Pol I vs. Pol III vs. other pathways remain unclear. The conclusion would be strengthened by the published Pol I data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C58",
+      "C83",
+      "C134",
+      "C135",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C147",
+      "C148"
+    ],
+    "result": "Background and context claims about Pol III biology, STAT3 signaling, and prior literature. These claims establish the scientific context and rationale for the study but do not represent novel findings from the current work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C13-C50, C58, C83, C134-C135, C138-C143, C147-C148) are primarily literature citations and established knowledge that provide context. They are appropriately cited and generally accurate based on the references provided. These are not experimental results from the current study but necessary background information.",
+    "result_type": "MINOR"
+  }
+]

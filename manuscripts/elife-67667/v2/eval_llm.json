@@ -1,0 +1,399 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "AGNOSTOS implements a conceptual framework that partitions genes into four categories (Known with Pfam, Known without Pfam, Genomic Unknown, and Environmental Unknown) based on their level of functional characterization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C17-C21 describe the conceptual framework and categorization system. The framework is clearly defined with explicit criteria for each category, supported by Figure 1A and methodological descriptions. The categorization logic is internally consistent and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "AGNOSTOS processed 322 million genes from environmental metagenomes, clustering them into 32 million gene clusters, of which 2.9 million passed validation with 43% classified as unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C22-C28 provide quantitative results from the initial metagenomic analysis. The numbers are internally consistent and follow a logical processing pipeline (prediction \u2192 clustering \u2192 validation \u2192 classification). The workflow is described in detail in methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Integration of 28,941 GTDB genomes showed that 72% of genomic genes were already captured in environmental gene clusters, with 90% of these being known, while 22% created new clusters that were predominantly unknown (84%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C36 describe the genomic integration results with consistent quantitative data. The finding that environmental metagenomes already capture most genomic diversity is surprising but well-documented. The increase in unknown proportion from 43% to 54% after integration is clearly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "AGNOSTOS identified 203,217 high-quality gene clusters, including 12,313 encoding small proteins (\u226450 amino acids), of which 66% are unknown, and the KWP category contains the largest proportion of incomplete genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 describe quality-filtered subsets with specific quantitative findings. The high proportion of unknowns in small proteins agrees with cited prior work (Sberro et al., 2019). The observation about incomplete genes in KWP is consistent with the category definition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Gene cluster communities (GCCs) were inferred using remote homology, reducing the collection by 87% to 673,601 GCCs, with validation showing successful grouping of proteorhodopsins (99% in one community) and improved ribosomal protein clustering with high-quality GCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 describe the GCC inference and validation. The proteorhodopsin validation is strong (99% capture), while ribosomal proteins show limitations that are acknowledged. The use of high-quality GCs improves results, demonstrating method refinement. Validation against known gene families provides credibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "AGNOSTOS classified 71% of human and 65% of marine metagenomic genes as known, with genomic unknowns at 21% in both environments, while genomic analysis showed 75% of bacterial and 64% of archaeal genes as known, with archaea having more unknowns (30%) than bacteria (20%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52 present the main classification results across environments and domains. The proportions are internally consistent and represent a key finding that the unknown fraction is smaller than previously reported. The archaeal-bacterial difference is clearly quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The unknown sequence space is exceptionally diverse, with accumulation rates 3\u00d7 higher than known in metagenomes and 2\u00d7 in genomes, with curves far from plateau for GCs but reaching plateau for GCCs, driven largely by singletons especially from environmental unknowns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C53-C59 describe diversity through accumulation curves. The quantitative differences (3\u00d7 vs 2\u00d7) are clearly stated and supported by Figure 3B. The plateau behavior difference between GCs and GCCs is important for understanding sequence space structure. The role of singletons is explicitly analyzed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The AGNOSTOS database covers 76% of sequence space across seven external datasets, with freshwater, soil, and human non-digestive biomes less covered, and reclassifies 20% of FunkFams and 44% of Price et al. unknowns as known.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 demonstrate database coverage and comparison to prior work. The 76% coverage despite limited input environments is notable. The reclassification of previously defined unknowns validates the approach's ability to extend functional annotation through remote homology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "At the amino acid level, 74-80% are in known sequence space with ~40% in Pfam domains, while only 22% in metagenomes and 15% in genomes are unknown, with surprisingly only 2% of amino acids in DUF domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 provide amino acid-level analysis from 90 billion amino acids. The low proportion of DUF amino acids (2%) despite higher gene-level unknowns suggests DUFs are shorter or that many unknowns lack domain structure. This is an important observation for understanding the unknown fraction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Genomic unknowns can account for >40% of gene abundance in some metagenomes, with the gastrointestinal tract significantly enriched in unknowns, and virus-enriched samples (including crAssphages and HPV in human, viruses and giant viruses in marine) showing the highest unknown ratios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 describe ecological patterns of unknowns. The association with viral sequences is well-supported with specific examples (crAssphages, HPV). The gastrointestinal enrichment is consistent with its ecological complexity. These patterns provide biological context for the unknown fraction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "The narrow distribution of unknown GCs suggests selective advantage for environmental adaptation, with >80% of broadly distributed environmental unknowns not associated with any MAG, indicating uncharacterized ubiquitous organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C74 present interpretations about selective advantage and ubiquitous organisms. While the narrow distribution is observed (C73), the interpretation of selective advantage is speculative. The MAG association data (C74) is quantitative but the interpretation of 'ubiquitous organisms' requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The unknown sequence space is phylogenetically more conserved than known (p<0.0001), predominantly taxonomically restricted at species level with 4\u00d7 more unknown lineage-specific GCs at species level, though lineage-specific unknowns are less conserved than lineage-specific knowns, with only 37,163 lineage-specific GCs found in prophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C75-C81 describe phylogenetic patterns with statistical support (p<0.0001). The apparent contradiction (unknowns more conserved overall but lineage-specific unknowns less conserved) is explained by the distinction between all unknowns vs lineage-specific unknowns. The prophage analysis rules out viral origin as a major confounding factor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Phyla with more MAGs are enriched in unknown GCs, with Cand. Riflebacteria and Cand. Patescibacteria having the largest unknown-to-known ratios, and a collection of 54,343 lineage-specific unknown GCs (283,874 genes) was compiled for Cand. Patescibacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 describe phylum-level patterns and the CPR resource. The association between MAG-rich phyla and unknowns is clearly demonstrated in Figure 5D. The CPR catalog (C85, matching C8) represents a concrete deliverable for future research on this unusual phylum.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Integration of OM-RGC v2 assigned 26.2M genes to known, 11.4M to genomic unknowns, 8.7M to environmental unknowns, with 3.3M genomic unknowns associated with GTDB genomes and 113,175 identified as lineage-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 demonstrate application to an external marine gene catalog. The quantitative results are internally consistent and show how AGNOSTOS can reclassify and contextualize existing resources. This validates the approach on independent data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Gene AO356_08590 in P. fluorescens shows strong spectinomycin phenotype (fitness=-3.1, t=-9.1), belongs to genomic unknown GC GU_19737823 found mainly in non-human metagenomes, is part of GCC GU_c_21103 constrained to Gammaproteobacteria and Pseudomonadales, with conserved gene order after rpsF::rpsR operon (encoding 30S ribosomal proteins), supporting the hypothesis of involvement in spectinomycin resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C99 demonstrate hypothesis generation by integrating experimental fitness data with AGNOSTOS contextual information. The genomic neighborhood analysis showing proximity to ribosomal protein genes (spectinomycin targets) provides strong circumstantial evidence. However, this remains a hypothesis requiring experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Gene clusters provide a structured sequence space that reduces complexity, are independent of known/unknown classification, are conserved across environments and organisms, and can aggregate information from multiple sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 describe the conceptual properties of gene clusters as analytical units. These properties are demonstrated throughout the manuscript through the successful integration of metagenomic and genomic data, cross-environment comparisons, and information aggregation. The framework's utility is validated by the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C7",
+      "C8"
+    ],
+    "result": "71 million genes were identified as unknown, with 283,874 lineage-specific unknown genes compiled for Cand. Patescibacteria (CPR).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 provide key quantitative outcomes. These numbers are consistent with other claims (C85 provides the same CPR numbers with more detail). The CPR resource represents a significant contribution for studying this unusual phylum.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "AGNOSTOS integrates into standard metagenomic workflows, and the findings support the hypothesis that unknown genes, especially lineage-specific ones, are associated with microbial diversification and niche adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C104 describes workflow integration with citation to standard procedures. Claim C105 presents a hypothesis supported by the phylogenetic conservation patterns, lineage-specificity, and narrow ecological distributions observed. The hypothesis is appropriately framed as interpretation rather than proven fact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Metagenome-assembled genomes comprise 42% of GTDB_r86 and are enriching the tree of life with unknown genes, with Cand. Patescibacteria (CPR) being a notable example of unusual biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 provide context about MAGs and CPR. The 42% MAG composition of GTDB is a concrete data point. The statements about MAGs enriching unknowns and CPR's unusual biology are supported by citations to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Assembly and gene prediction quality remain challenges, with many recovered ribosomal genes being incomplete, and gene prediction methods becoming outdated and unable to cope with current data volumes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 discuss limitations. The incomplete ribosomal genes (C111) are observed in the authors' own validation. The statements about outdated gene prediction methods are supported by citations. These represent honest assessment of current challenges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Protein-level assembly and assembly graph exploration are attractive alternatives, discriminating genuine from artifactual singletons remains challenging with no scalable solutions, though deep learning language models could potentially address this.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C114-C116 discuss potential solutions to identified problems. These are speculative discussions of future directions supported by citations to relevant methods. The lack of current scalable solutions for singleton discrimination is acknowledged, and the deep learning suggestion is appropriately framed as potential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The approach uses conservative measures to avoid mixing multi-domain proteins, acknowledges that low sequence diversity can limit GCC inference effectiveness, is affected by database contamination, and relies solely on Pfam for annotation due to its quality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C120 describe methodological choices and limitations. These represent transparent discussion of the approach's constraints. The reliance on Pfam is justified by its curation quality, and the acknowledgment of contamination issues shows awareness of data quality concerns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The work lays foundations for defining levels of unknown and should encourage collaborative efforts, with new protein structure prediction methods like AlphaFold2 enabling deeper connections between known and unknown through GCCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C123 discuss broader impact and future directions. The foundation-laying claim is supported by the comprehensive framework presented. The AlphaFold2 discussion is appropriately speculative about future possibilities, supported by citations to recent methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C1",
+      "C11"
+    ],
+    "result": "40-60% of predicted genes in microbial systems are of unknown function, representing a major challenge in molecular biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C11 establish the motivation for the study. Both are supported by multiple citations to prior work and represent established knowledge in the field. This provides context for why the AGNOSTOS framework is needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The study analyzed 583 marine metagenomes from four major surveys, 1,246 HMP metagenomes (totaling 156M contigs and 12.8M long-reads), and 28,941 prokaryotic genomes from GTDB_r86, using Prodigal for gene prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C129 describe the datasets and methods. The data sources are well-documented with citations, sample sizes are clearly stated, and methods are specified with version numbers. This provides the foundation for reproducibility.",
+    "result_type": "MINOR"
+  }
+]

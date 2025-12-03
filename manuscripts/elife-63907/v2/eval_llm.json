@@ -1,0 +1,292 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The chick retina has a conserved laminar structure with three cellular layers (ONL, INL, GCL) separated by two synaptic layers (OPL, IPL), containing photoreceptors, interneurons (horizontal, bipolar, amacrine cells), M\u00fcller glia, retinal ganglion cells, and oligodendrocytes in characteristic positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 describe well-established anatomical features of vertebrate retina that are supported by both the histological image (Figure 1A) and the schematic diagram (Figure 1B). These are foundational anatomical observations consistent with prior knowledge and directly visualized in the provided data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Single-cell RNA sequencing of E18 chick retina yielded 30,022 high-quality transcriptomes identifying five neuronal classes and two glial types. RGC enrichment using Thy1 antibodies from E16 retina yielded 8,107 RGCs (89% of 9,159 cells), and reclustering generated 150 total clusters representing putative cell types, developmental intermediates, or positional variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C13 describe the scRNA-seq experimental design and initial clustering results, supported by stated cell counts, figures (1D-H), and methodological details. The interpretation that clusters represent types, intermediates, or variants (C13) is appropriately qualified as presumptive pending further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C73"
+    ],
+    "result": "The eCHIKIN method was developed for CRISPR-based somatic cell integration of fluorescent reporters into endogenous genes via in ovo electroporation, successfully labeling cell types with 80% efficiency (16/20 fragments) as validated by appropriate cell-type-specific localization of VSX2 (bipolar cells), TFAP2A (amacrine cells), and RBPMS2 (RGCs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 and C73 describe the eCHIKIN method with clear experimental validation shown in Figure 2. The 80% success rate is explicitly stated with appropriate caveats about validation. The method successfully labels predicted cell types in expected retinal layers, providing strong evidence for its utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Chick photoreceptors comprise tetrachromatic single cones (expressing red, green, blue, or violet opsins), rods (expressing rhodopsin), and double cones (expressing OPN1LW). ScRNA-seq identified 12 PR clusters including 4 single cone types (PR3, 5, 8, 11), 1 rod type (PR3), red single cones (PR7), and three double cone components (PR1, 2, 4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 are supported by prior literature (cited), scRNA-seq data showing opsin expression patterns (Figure 3A-B), and in situ hybridization validation (Figure 3C-G). The identification of PR types based on opsin expression is well-established methodology, and the eCHIKIN labeling of CALB1+ double cones provides morphological confirmation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Four PR clusters expressing PRDM1 but lacking opsin expression represent immature photoreceptors. Developmental analysis shows ARHGAP18 is transiently expressed in immature PRs (present at E12, absent at E20), while mature markers like OPN1LW show the opposite pattern, consistent with the known central-to-peripheral gradient of retinal development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 are supported by gene expression data (PRDM1 expression, lack of opsins), temporal in situ hybridization at E12, E16, and E20 (Figure 3\u2014supplement 2), and consistency with established developmental gradients (cited literature). The inference that these are immature cells is well-supported by multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Five horizontal cell clusters (HC1-5) were identified, all expressing ONECUT3. HC1 and HC3 represent mature and immature Type I HCs (LHX1+/ISL1-), respectively, based on spatiotemporal expression patterns. HC2, HC4, and HC5 represent Type II HCs (ISL1+/LHX1-) distinguished by non-overlapping expression of receptor tyrosine kinases NTRK1, EGFR, and LTK.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 are supported by scRNA-seq clustering (Figure 4A-B), marker gene expression validated by in situ hybridization (Figure 4C-L), and spatiotemporal analysis showing OXT (HC3) is peripheral/early and IPCEF1 (HC1) is central/late. The assignment to Type I/II is consistent with prior immunohistochemical studies (cited).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Twenty-two bipolar cell types were identified, all expressing VSX2 and OTX2. Based on mutually exclusive expression of GRIK1 (OFF) versus TRPM1/ISL1 (ON), 10 OFF and 11 ON types were identified, with BC19 likely representing rod BCs (PRKCA+) and BC10 potentially having mixed ON-OFF properties. eCHIKIN and immunohistochemistry revealed type-specific lamination patterns in the IPL, with soma position in the INL generally correlating with axon terminal position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C40 are supported by scRNA-seq data (Figure 5A-C), eCHIKIN labeling of 5 BC types showing distinct lamination (Figure 5D-H), immunohistochemistry (Figure 5I-K), and quantitative analysis of soma/terminal positions (Figure 5\u2014supplement 1P, Figure 5L). The ON/OFF assignments are appropriately qualified as 'likely' or 'putative' pending physiological confirmation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Fifty-nine amacrine cell types were identified, representing the most heterogeneous retinal class. All express SLC32A1, with 40 GABAergic and 19 glycinergic types. TFAP2A distinguishes INL-localized ACs from TFAP2B+ ACs in both layers. Specific types include ON (AC7) and OFF (AC25) starburst ACs identified by differential marker expression, and VG3 glutamatergic ACs (AC37) expressing SLC17A8 and SDK2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 are supported by scRNA-seq clustering (Figure 6A-C), marker gene expression (Figure 6B), immunohistochemistry (Figure 6D-F), and in situ hybridization (Figure 6\u2014supplements). The assignment of SAC subtypes is based on conserved markers from mouse (cited), and the VG3 AC identification is supported by SDK2 expression, a validated marker in mammals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Forty-one RGC types were identified from 8,107 transcriptomes, all expressing canonical markers RBPMS, THY1, and POU4F transcription factors. GC11 represents an intrinsically photosensitive RGC type (ipRGC) based on OPN4.1 and EOMES expression. Based on prior marker studies, GC25 projects to tectal lamina B and GC1 to lamina F.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 are supported by scRNA-seq data (Figure 7A-C), marker gene expression (Figure 7B), in situ hybridization (Figure 7\u2014supplement 1), and eCHIKIN labeling showing morphology (Figure 7F-H). The tectal projection assignments (C50) rely on prior marker studies (cited) rather than direct tracing, which is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Five M\u00fcller glia clusters were distinguished with positional heterogeneity: CHRDL1 (MG1) in ventral, WIF1 (MG2) in dorsal, FOXI2 (MG5) in temporal, FOXG1 in nasal, PSCA (MG3) in central, and TMEM123 (MG4) in peripheral retina. MG3 represents a positionally restricted mature group, while MG4 likely represents immature MGs based on developmental analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 are supported by scRNA-seq clustering (Figure 8A-C), extensive in situ hybridization on whole mounts and sections showing position-specific expression (Figure 8D-Q), and developmental analysis at E12 showing TMEM123 is broadly expressed early but becomes peripherally restricted (Figure 8\u2014supplements 2-3). The positional basis is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Five oligodendrocyte clusters were identified, all expressing OLIG2, representing different developmental stages based on differential expression of maturation markers. Pseudotime analysis ordered them as OL5\u2192OL3\u2192OL1\u2192OL2\u2192OL4. Mature BCAS1+/PLP1+ oligodendrocytes are more abundant centrally near the optic disc, while PDGFRA+ precursors are more abundant peripherally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 are supported by scRNA-seq clustering (Figure 9A-B), pseudotime analysis, marker expression consistent with known oligodendrocyte development stages (cited review), and in situ hybridization showing spatial gradients (Figure 9C-L). The developmental interpretation is consistent with known central-to-peripheral oligodendrocyte migration patterns (cited).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Cross-species analysis combining chick, mouse, macaque, and human retinal atlases generated nine clusters, all containing cells from all species. Six clusters corresponded to major cell classes (rods, cones, HCs, BCs, RGCs, MG), and three to AC subtypes (GABAergic, glycinergic, cholinergic SACs). Despite >300 million years of divergence, all retinal cell classes remained transcriptomically similar across species and share expression of key class-defining genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 are supported by integrated clustering analysis (Figure 10A-B), marker gene expression (Figure 10C), and confusion matrix validation (Figure 10D). The finding that all species contribute to all clusters demonstrates class-level conservation. The evolutionary timeframe is appropriately cited (Kumar and Hedges, 1998).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C80"
+    ],
+    "result": "Cell types within classes are less well conserved across species than the classes themselves. Only in minority cases (PRs, SACs, VG3-ACs, ipRGCs) do chick types have orthologous mammalian types as their closest relatives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64 and C80 are supported by the dendrogram analyses (Figure 11 and supplements) showing that while classes cluster together across species, most types within classes do not have clear one-to-one orthologs between chick and mammals. The exceptions noted (PRs, SACs, VG3-ACs, ipRGCs) are documented in the figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C70",
+      "C71"
+    ],
+    "result": "The chick retinal atlas contains 136 mature cell types (8 PRs, 4 HCs, 22 BCs, 59 ACs, 41 RGCs, 1 MG, 1 oligodendrocyte), substantially more than previous morphological surveys (11 BCs, 26 RGCs). The number is similar to mouse and nearly two-fold higher than macaque or human, though the true number may be higher given sampling limitations and the larger mouse dataset (~140,000 vs ~40,000 cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 and C70-C71 are supported by the clustering data presented throughout and summarized in Table 1. The comparison to prior morphological studies is appropriately cited. The caveat about potential undersampling (C71) is reasonable given the downsampling analysis (Figure 12) showing AC clusters are not saturated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The dataset has limitations: microglia, astrocytes, and diacytes were not detected despite being known to be present. Downsampling analysis indicates the AC dataset was likely too small to capture all types within this class, as cluster number declined with removal of even 10% of cells, unlike BCs and RGCs which were more saturated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 acknowledge important limitations. C67 is supported by the absence of these cell types in the data and citation of their known presence. C69 is directly supported by the downsampling analysis (Figure 12) showing AC clusters are not saturated, while BC and RGC clusters are stable with 60-80% of cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C72",
+      "C77",
+      "C78"
+    ],
+    "result": "An additional 14 clusters represented developmental or positional variants rather than mature cell types: four PRs, one HC, one M\u00fcller glia, and four oligodendrocytes. Multiple lines of evidence (temporal expression patterns, spatial gradients, E12 profiling, expression of developmental genes) indicate these are developmental intermediates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72, C77-C78 are supported by the developmental analyses presented for PRs (Figure 3, C24-C27), HCs (Figure 4, C31), M\u00fcller glia (Figure 8, C55), and oligodendrocytes (Figure 9, C56-C57). The evidence includes spatiotemporal expression patterns, E12 profiling, and expression of stage-specific markers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Unlike mice and primates where only a single M\u00fcller glial type has been identified by scRNA-seq, unsupervised analysis of chick M\u00fcller glia generated five clusters with positional heterogeneity. Five groups appear authentically position-dependent based on earlier developmental stages, while the sixth (peripheral) may largely reflect the central-to-peripheral developmental gradient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 are supported by comparison to prior mammalian studies (cited), the positional in situ hybridization data (Figure 8), and developmental analysis distinguishing authentic positional identity from developmental gradients (Figure 8\u2014supplements). The distinction between MG3 (positional) and MG4 (developmental) is well-supported by temporal analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C79",
+      "C81"
+    ],
+    "result": "Despite >300 million years since mammalian-avian divergence, all retinal cell classes remained transcriptomically similar among chick, mouse, macaque, and human, sharing expression of key class-defining genes. This supports the idea that classes form a common plan within which species evolve distinct types to enable visual behaviors appropriate for their environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79 and C81 are supported by the cross-species clustering analysis (Figure 10) showing class-level conservation and the dendrogram analyses (Figure 11) showing type-level divergence. C79 is a data-driven observation, while C81 is an appropriately qualified interpretation ('supports the idea') of the evolutionary pattern observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "Hatching (P0) occurs at embryonic day 21 in chicks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 states a well-established fact about chick development that is consistent with general knowledge and the developmental timeline shown in Figure 1C.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,339 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Experimental validation in CA1 pyramidal neurons demonstrates that compensatory upregulation of a different ion channel (virtual IAHP) can restore firing rate after blocking native IM, but disrupts firing pattern, confirming that single-channel compensation for one property disrupts other properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C22 provide comprehensive experimental evidence with appropriate statistical tests (one-way ANOVA with Tukey post-hoc, all p<0.001) showing that blocking IM disrupts multiple properties (membrane potential, spike amplitude, firing rate, firing pattern), and that compensatory insertion of virtual IAHP restores some properties but not others (specifically disrupting CVISI and spike timing). The experimental design includes proper controls (baseline, block, virtual IM replacement, virtual IAHP replacement) and the data directly support the central hypothesis about pleiotropy complicating regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Computational modeling demonstrates that ion channel density combinations producing the same value for one property (e.g., rheobase, firing rate, or energy efficiency) yield different values for other properties, establishing that single-output solution sets do not guarantee consistent multioutput performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 are well-supported by systematic computational exploration shown in Figure 3. The modeling approach uses grid searches across parameter space to identify iso-contours for different properties and demonstrates that these contours do not align. The evidence is internally consistent and the computational methods are clearly described, though the choice of specific properties and parameter ranges could affect generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The multioutput solution set corresponds to the intersection of single-output solution sets, with dimensionality determined by nin - nout. When nin=2 and nout=2, the solution is unique (a point); when nin=3 and nout=2, the solution is degenerate (a curve). This establishes that robust regulation of n properties requires >n adjustable channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 are strongly supported by the geometric analysis in Figure 5, which clearly demonstrates how solution set dimensionality depends on the relationship between nin and nout. The mathematical framework is sound and the visualizations effectively illustrate the concept. The conclusion that nin must exceed nout for robust regulation follows logically from the demonstrated geometry, though the manuscript acknowledges this relationship has been shown before (Olypher and Prinz, 2010).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C35",
+      "C37"
+    ],
+    "result": "The dimensionality of solution space (nin - nout) determines the strength of ion channel correlations during homeostatic regulation. When solutions are constrained to low-dimensional manifolds (curves), correlations are strong and become independent of relative regulation rates; when solutions occupy higher-dimensional manifolds (surfaces, volumes), correlations weaken.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C35, and C37 are well-supported by systematic computational experiments shown in Figures 6-7. The modeling demonstrates clear relationships between solution space dimensionality and correlation strength, with appropriate quantification (correlation coefficients shown). The finding that correlations become independent of regulation rates in low-dimensional spaces (Figure 7B) is particularly well-demonstrated and represents a novel insight beyond prior work (O'Leary et al., 2013).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "Noise causes solutions to spread across available solution space, but the effect on correlations depends on dimensionality: in high-dimensional spaces (single property regulation), noise can create or modify correlations; in low-dimensional spaces (multiple property coregulation), correlations remain relatively robust to noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 are supported by simulations in Figure 8 showing how noise affects solution distributions over many iterations. The distinction between high- and low-dimensional solution spaces is clearly demonstrated. However, the manuscript acknowledges that the regulatory mechanism used (O'Leary et al., 2013) cannot control drift along the solution manifold, and alternative mechanisms (Franci et al., 2020) might behave differently. This caveat is appropriately discussed but doesn't undermine the core finding for the mechanism tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C48"
+    ],
+    "result": "Homeostatic regulation can fail to converge on multioutput solutions even when those solutions exist, demonstrating that the existence of solutions does not guarantee their accessibility through negative feedback mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 and C48 are supported by Figure 9C, which shows failed coregulation despite successful single-property regulation with the same channels and initial conditions. The manuscript notes that other regulation rates or initial conditions could succeed, suggesting the failure reflects accessibility rather than solution existence. This is an important distinction between mathematical solution existence and biological achievability, though more systematic exploration of the parameter space determining success vs. failure would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C47",
+      "C49"
+    ],
+    "result": "As single-output solution sets begin to separate, multioutput solution sets become lower-dimensional and ion channel correlations increase, presaging eventual regulation failure when solution sets no longer intersect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C47, and C49 are well-supported by the systematic analysis in Figure 10, which shows three scenarios with progressively increasing energy efficiency requirements. The progression from intersecting surfaces (10A) to intersecting at a curve (10B) to non-intersecting (10C) clearly demonstrates how solution accessibility decreases and correlations increase as constraints tighten. The correlation analysis provides a potential early warning signal for impending regulation failure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C50",
+      "C51",
+      "C52",
+      "C66"
+    ],
+    "result": "Neurons can coregulate multiple properties by coadjusting ion channels, but this requires that nin exceeds nout, and that feedback loops allow channels to be coadjusted with different ratios for different properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C50-C52, and C66 represent the main conclusions synthesized from all the modeling and experimental work. These are well-supported by the cumulative evidence from experiments (Figure 2), geometric analysis (Figure 5), correlation studies (Figures 6-8), and regulation failure analysis (Figures 9-10). The requirement for nin > nout is mathematically sound and empirically demonstrated. The need for different coadjustment ratios follows logically from the different ways channels affect different properties (Figure 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C68"
+    ],
+    "result": "Regulating different properties requires ion channels to be coadjusted with different ratios, necessitating separate master regulators (multiple independent error signals) rather than a single master regulator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C68 are supported by the modeling results and illustrated in Figure 11. The logic is sound: if different properties require different coadjustment ratios, then error signals cannot be amalgamated into a single control signal. However, the manuscript acknowledges that the mechanistic details of how this is implemented biologically remain unclear, and discusses several possibilities (calcium variations, membrane potential, AMP:ATP ratio, etc.) with appropriate citations. The conclusion is well-reasoned but the biological implementation remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Neurons regulate excitability through homeostatic adjustment of ion channel levels, facilitated by degeneracy (different channel combinations producing equivalent excitability), which enables compensatory changes when one channel is disrupted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C8-C10 establish the background context for the study and are well-supported by extensive citations to established literature. These represent accepted knowledge in the field rather than novel findings of this manuscript. The claims are appropriately cited and provide necessary foundation for the experimental and modeling work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3"
+    ],
+    "result": "Pleiotropy (one channel affecting multiple properties) complicates regulation because compensatory changes that restore one property often disrupt others.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C3 is the central motivating hypothesis of the manuscript and is directly validated by both the experimental work (Figure 2) and computational modeling (Figures 3-4). This represents a key conceptual contribution that frames the entire study, though the general concept of pleiotropy creating regulatory challenges is not entirely novel. The specific demonstration in the context of neuronal homeostasis is valuable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "Ion channel correlations emerge during homeostatic regulation when the dimensionality of solution space (nin \u2212 nout) is low.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C5 is well-supported by Figures 6-8 and represents a major finding. The relationship between solution space dimensionality and correlation strength is clearly demonstrated and quantified. This provides a mechanistic explanation for observed ion channel correlations in biological systems and extends previous work (O'Leary et al., 2013) by showing how the number of regulated properties affects correlations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "Regulation fails if single-output solution sets do not intersect, even if each property can be regulated individually.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 is clearly demonstrated in Figures 9-10, particularly Figure 10C. This is an important insight that the ability to regulate properties individually does not guarantee the ability to coregulate them. The geometric framework makes this intuitive and the simulations confirm it. This has important implications for understanding homeostatic regulation failure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "The minimum sustainable firing rate (fmin) reflects spike initiation dynamics, with fmin >> 0 indicating class 2 excitability/coincidence detection and fmin \u2248 0 indicating class 1 excitability/integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by established knowledge and appropriate citations (Hodgkin, 1948; Ratt\u00e9 et al., 2014a). This provides context for interpreting the modeling results in Figure 3 but represents background knowledge rather than a novel finding. The claims are accurate and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Spike energy efficiency varies based on temporal overlap of sodium and potassium channel activation, with efficiency decreasing propagation safety factor, suggesting target efficiency values emerge from balancing competing interests.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 are supported by citations and illustrated in Figure 3\u2014figure supplement 2. The relationship between channel overlap and efficiency is clearly demonstrated. However, C57 (target value emerging from balance) is somewhat speculative, though reasonably supported by citation (Speakman et al., 2011). These claims provide important context for why energy efficiency is a relevant property to regulate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Degeneracy is synonymous with underdetermination in systems of equations. Extra degrees of freedom broaden available solutions, while overdetermined systems (constraints exceeding degrees of freedom) lose solutions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 establish the mathematical framework by analogy to systems of linear equations. This is a valid and useful analogy that helps interpret the biological findings. The logic is sound and the connection between mathematical underdetermination and biological degeneracy is well-articulated. This provides important conceptual framing for the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "Ion channel diversity may have been selected for because it enables addition of new functionality without causing overdetermination that would compromise pre-existing functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C61 is explicitly speculative (\"One might reasonably speculate\") and represents an evolutionary hypothesis that cannot be directly tested with the data presented. While the speculation is reasonable given the mathematical framework established, it remains speculative. The manuscript appropriately frames this as speculation rather than a supported conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Fitting models to multiple outputs yields better parameter estimates than fitting to single outputs, but degeneracy makes the inverse problem difficult. Neurons solve the forward problem (producing properties from channels) rather than the inverse problem (inferring channels from properties), and have evolved to be degenerate rather than parsimonious.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 discuss the relationship between the modeling work and parameter estimation/inverse problems. C62-C63 are supported by appropriate citations. C64 makes a valid logical point about neurons not needing to solve the inverse problem. C65 involves some evolutionary reasoning that is logical but somewhat speculative. Overall, these claims provide useful perspective on the implications of the work for modeling and parameter estimation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "For coadjustments to work, channels must differ in how they affect each property, emphasizing the distinction between degeneracy and redundancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is supported by the modeling results and illustrated in Figure 1. This is an important conceptual point that channels must have differential effects on properties for coadjustment to be effective. If channels affected all properties identically (redundancy), coadjustment would not help. This distinction between degeneracy and redundancy is well-articulated and important for understanding the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Multiple biological signals beyond calcium (membrane potential, AMP:ATP ratio, amino acids, mTOR) could encode error signals for different properties, with spatial or temporal segregation enabling multiple master regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 discuss potential biological mechanisms for implementing multiple master regulators. These are supported by appropriate citations to experimental work. C69 is somewhat speculative (\"could encode\") but reasonably grounded in cited evidence. These claims provide important biological context for how the theoretical requirements identified in the modeling might be implemented, though the specific mechanisms remain to be fully elucidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C45",
+      "C74"
+    ],
+    "result": "Coregulation of multiple properties is incompatible with amalgamation of error signals or bottlenecks in feedback loops that reduce degrees of freedom, even if nin exceeds nout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45 and C74 make an important point that having sufficient channels (nin > nout) is necessary but not sufficient if feedback architecture creates bottlenecks. This is a logical inference from the modeling results and the analogy with multiobjective optimization. The claim is well-reasoned though not directly tested experimentally. This highlights an important constraint on regulatory architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C46",
+      "C75"
+    ],
+    "result": "Neurons might regulate as many properties as their ion channel diversity allows (nout approaching nin), leading to low-dimensional solution spaces. The existence of pairwise correlations suggests solution space dimensionality is relatively low.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C46 and C75 involve inference from the modeling to biological systems. C46 is explicitly speculative (\"might take advantage\"). C75 makes a logical inference that observed correlations suggest low dimensionality, but this assumes the modeling framework accurately captures biological regulation and that other factors (like molecular interactions per Franci et al., 2020) don't dominate. These are reasonable inferences but involve assumptions that aren't fully validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Failed homeostatic regulation may have similar consequences regardless of failure mode, consistent with common disease phenotypes from different pathologies, but subtle differences in failure mechanisms may provide clues to underlying causes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C77 are speculative (C76 explicitly so, with citation support; C77 is logical speculation). These represent reasonable hypotheses about implications for disease but are not directly tested. The speculation is appropriately framed and provides useful perspective on potential translational relevance, but remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Evolution may have yielded diverse channels and complicated transcriptional regulation to enable coregulation of multiple properties, and accounting for this coregulation may be crucial for understanding neuronal design.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C79 are speculative (\"may account for,\" \"may be crucial\") but represent reasonable inferences from the work. C78 has some citation support (Gabel et al., 2015). These claims articulate the broader significance of the findings but involve evolutionary reasoning and predictions about future research that cannot be directly validated with the current data. The speculation is reasonable and appropriately framed.",
+    "result_type": "MINOR"
+  }
+]

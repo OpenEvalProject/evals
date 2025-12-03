@@ -1,0 +1,149 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "SARS-CoV-2 infection of primary human lung epithelial cells and COVID-19 patient samples induces a Warburg-like metabolic shift characterized by increased glycolysis (85% increase in intracellular glucose, 50% increase in lactate production, glycolytic index shift from 1.0 to 1.7) and significant lipid accumulation (23% increase in triglycerides, 41% increase in phospholipids), with downregulation of lipid catabolism genes CPT1A and ACSL1 (FDR <0.01). This metabolic signature was consistent across four independent sample types (bronchial culture, small airway culture, autopsy, lavage) with 58\u00b13% of differentially expressed genes being metabolism-related.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The result is well-supported by convergent evidence from multiple experimental approaches (RNA-Seq, microscopy, metabolic assays) across different sample types (n=3-6 biological replicates) with appropriate statistical thresholds (FDR <0.05). The consistency across primary cells, patient lavage, and autopsy samples strengthens the findings. However, the small sample sizes (n=3 for some experiments) and lack of independent validation cohorts for the transcriptional data represent minor limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Expression of specific SARS-CoV-2 viral proteins (N, ORF3a, NSP7, ORF8, NSP5, NSP12) in primary bronchial epithelial cells recapitulates the metabolic phenotype observed in infected cells, inducing glucose accumulation, increased lactate production (p<0.01), elevated glycolytic index (p<0.01), disrupted oxidative phosphorylation (N, ORF3a, NSP7; p<0.05), inhibited fatty acid oxidation (ORF9c, M, N, ORF3a, NSP7, ORF8, NSP5, NSP12; p<0.05), and phospholipid accumulation (p<0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The viral protein expression experiments (n=4-6) provide mechanistic insight linking specific viral proteins to metabolic changes. Multiple independent assays (microscopy, direct sensors, Seahorse) converge on consistent findings. However, the lentiviral overexpression system may not perfectly recapitulate physiological protein levels during infection, and the lack of dose-response data limits interpretation of whether these effects are physiologically relevant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C102"
+    ],
+    "result": "Fenofibrate and other PPAR\u03b1 agonists (bezafibrate, WY-14643, conjugated linoleic acid) reverse SARS-CoV-2-induced lipid accumulation and inhibit viral replication by 2-5 logs (p<0.001) in primary lung cells infected with alpha and delta variants at clinically relevant concentrations (20 \u03bcM fenofibrate, Cmax 25-30 \u03bcM). This antiviral effect is mediated through PPAR\u03b1-dependent fatty acid oxidation, as demonstrated by reversal with CPT1A inhibitor etomoxir and loss of efficacy in PPAR\u03b1 CRISPR knockout cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanistic experiments are well-designed with appropriate controls (etomoxir inhibition, PPAR\u03b1 knockout) demonstrating PPAR\u03b1-dependency. Multiple structurally different PPAR\u03b1 agonists show similar effects, supporting a class mechanism. Testing in both alpha and delta variants strengthens generalizability. The use of clinically achievable concentrations is a strength. However, the experiments were conducted in only 2 donor cell lines (n=3-6 replicates per donor), and the lack of animal model validation (acknowledged due to hamster unresponsiveness to fibrates) is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "In a retrospective observational study of 3,233 Israeli COVID-19 patients, fibrate users (n=21) were significantly underrepresented in hospitalizations (p=0.02) and showed favorable outcomes including shorter hospitalization duration (p=0.03), rapid decline in CRP within 5 days, consistently low NLR throughout hospitalization, and no deaths (n=16 in mortality analysis). In contrast, patients taking thiazolidinediones or SGLT2 inhibitors had significantly higher mortality (aHR=3.6, p=0.043 and aHR=2.6, p=0.034, respectively), while metformin, statins, and telmisartan showed no significant benefit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The observational study suffers from critical limitations: extremely small fibrate user cohort (n=21 for hospitalization, n=16 for mortality analysis), lack of randomization, significant baseline differences in comorbidities between groups, and potential confounding by indication. The authors acknowledge these limitations but do not adequately address them through propensity score matching or other methods. The zero deaths in the fibrate group (n=16) prevents reliable hazard ratio estimation despite using Firth's correction. The consistency with in vitro findings is suggestive but insufficient to overcome the methodological weaknesses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Independent observational cohorts from Italy (n=2,123 lipid clinic patients) and the US Veterans Health Administration (n=920,922 veterans with hypertension, propensity-matched analysis) showed that fenofibrate users had less COVID-19 history, less severe illness, and shorter hospitalization duration compared to non-users or users of other metabolic drugs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While these international cohorts provide some external validation, critical methodological details are missing or relegated to supplementary files. The Italian study lacks information on statistical methods, adjustment for confounders, and effect sizes. The VHA study mentions propensity matching but provides minimal outcome data in the main text. The heterogeneity in study populations (lipid clinic patients vs. veterans with hypertension) and lack of detailed results presentation limit the ability to assess the strength of evidence. These studies are better characterized as hypothesis-generating rather than confirmatory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "In a prospective non-randomized open-label interventional study, 15 severe COVID-19 patients treated with 145 mg/day nanocrystallized fenofibrate plus standard-of-care showed significantly shorter hospitalization (p<0.001), higher discharge rate (HR=3.6, 95% CI 2.1-6.4, p<0.001), rapid CRP decline by days 3-5 (p<0.001), lower NLR (p=0.002), increased oxygen withdrawal by day 7 (26.1 percentage point difference, p=0.003), and minimal post-acute sequelae at 6 months (1/15 patients) compared to historical controls (n=144) from the same time period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "This result is critically undermined by severe methodological flaws that the authors acknowledge but do not adequately address. The non-randomized design with historical controls from different hospitals introduces substantial confounding. Paradoxically, the fenofibrate group had higher comorbidity burden yet better outcomes, which the authors speculate may reflect lower admission thresholds\u2014this alternative explanation directly contradicts their therapeutic efficacy claim. The small sample size (n=15) provides insufficient power for mortality analysis (requiring Firth's correction for zero events). Selection bias is evident as non-consenting patients at the same hospital had worse outcomes. The lack of blinding and use of multiple endpoints without correction for multiple testing further weakens the findings. While the results are consistent with prior observations, the study design cannot establish causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The authors acknowledge that baseline differences, lack of randomization, and potential confounding (including possible selection bias from lower admission thresholds in the higher-comorbidity fenofibrate group) limit causal inference from the clinical studies. Two ongoing randomized placebo-controlled trials (FERMIN: NCT04517396; FENOC: NCT04661930) are needed to definitively establish fenofibrate efficacy for COVID-19 treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge the major limitations of their clinical studies and correctly identify the need for randomized controlled trials. This transparent discussion of limitations is a strength of the manuscript. The existence of ongoing RCTs with trial registration numbers is verifiable and represents the appropriate next step to address the methodological weaknesses of the observational and non-randomized interventional studies.",
+    "result_type": "MINOR"
+  }
+]

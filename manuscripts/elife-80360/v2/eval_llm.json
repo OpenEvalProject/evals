@@ -1,0 +1,282 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C27",
+      "C28",
+      "C29",
+      "C76",
+      "C96"
+    ],
+    "result": "The study generated comprehensive mutational data for five self-cleaving ribozymes (CPEB3, HDV, twister, hairpin, and hammerhead) using a high-throughput sequencing approach with 97% wild-type/1% mutant synthesis strategy, achieving 100% coverage of all single and double mutants across triplicate experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C27, C28, C29, C76, and C96 collectively establish the experimental scope and completeness. The mutagenesis strategy (C28-C29), triplicate design (C96), and confirmed 100% coverage (C76) provide strong evidence for comprehensive data generation across all five ribozymes (C27). The methodology is well-documented and internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Paired regions in all five ribozymes showed characteristic epistasis patterns: positive epistasis on the anti-diagonal (compensatory mutations restoring base pairs) and negative epistasis off-diagonal (disrupting two base pairs). The trend was statistically significant (p<0.05-0.001) across all ribozymes, with the highest epistasis for mutations creating new Watson-Crick or GU wobble pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C37 describe a consistent pattern observed across all five ribozymes with statistical validation (C37). The heatmap visualizations (Figures 1-5) and violin plot analyses support the systematic relationship between base-pair disruption and epistasis values. The pattern is biologically coherent and reproducible across different ribozyme structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The magnitude of epistatic effects in paired regions depends on thermodynamic stability: short paired regions (3-4 bp) showed large differences between on-diagonal and off-diagonal epistasis, while longer regions (14 bp) showed minimal differences. A significant negative correlation exists between median mutational effects and minimum free energy of paired regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C44 establish a thermodynamic basis for epistasis patterns supported by Figure 6 and Figure 6\u2014supplement 1. The correlation analysis (C44) provides quantitative support, and the HDV P4 example (C41-C42) demonstrates how stability affects mutational tolerance. The interpretation is consistent with cited prior work (C43) on thermodynamic dependence of mutational effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Catalytic residues in all five ribozymes were identified by their characteristic signature: all mutations at these positions abolished activity with no compensatory mutations possible. The comprehensive double-mutant coverage definitively ruled out any rescue mutations for catalytic nucleotides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C53 establish both the biological basis (C45-C46) and experimental identification (C52-C53) of catalytic residues. The specific catalytic residues for each ribozyme (C48-C51) are supported by literature citations and confirmed by the heatmap data (Figures 1-5, Figure 6\u2014supplement 2). The comprehensive coverage (C53, C76) provides certainty about the absence of compensatory mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Terminal loops not involved in tertiary structure (L4 of CPEB3 and HDV, L1 and L3 of hairpin) showed high activity for most mutations with minimal epistasis, while structurally important internal loops (LA and LB of hairpin) showed low activity for single mutations and significant positive epistasis for double mutants, with distributions significantly different from terminal loops.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C63 establish a clear distinction between structurally important and peripheral loop regions supported by Figure 4 and Figure 4\u2014supplement 1. The statistical comparison (C62) and specific examples of compensatory mutations (C63) provide strong evidence. The structural basis is supported by citations (C57-C59) and crystal structure data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The hammerhead ribozyme CUGA turn motif showed strict sequence requirements with only one compensatory mutation (C20G/G25C base pair swap) restoring activity, while the loop-loop tertiary interactions showed unexpected mutational robustness with most single and double mutations maintaining activity, indicating compensatory interactions between multiple contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C72 describe two contrasting structural elements in the hammerhead ribozyme. The CUGA turn data (C64-C66, Figure 5) shows strict requirements, while the loop-loop interaction data (C67-C71, Figure 5\u2014supplement 1) demonstrates robustness. Both observations are supported by crystal structure citations (C64, C68) and natural sequence variation (C69). The bioengineering application (C72) provides independent validation of the robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The CPEB3 T1 pseudoknot shows evidence for a two-nucleotide structure involving a non-canonical U:U base pair that can be functionally replaced by G:C and C:G Watson-Crick pairs, supporting NMR and Tb3+ cleavage data identifying this as a magnesium binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 provide mutational evidence for the CPEB3 T1 structure that corroborates prior structural studies (C74). The ability of Watson-Crick pairs to substitute (C75) is demonstrated in the data and provides functional validation of the structural model in the absence of a crystal structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C86",
+      "C87"
+    ],
+    "result": "Heatmap visualization of comprehensive mutational data revealed structural features including paired regions, unpaired loops, non-canonical structures, tertiary contacts, and catalytic residues across all five ribozymes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C86, and C87 are summary statements supported by the detailed analyses in other result groups. The heatmap approach (Figures 1-5) successfully revealed multiple structural features as demonstrated by the specific findings for paired regions, loops, and catalytic residues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C84",
+      "C85"
+    ],
+    "result": "The pairwise epistasis analysis approach adds capability beyond previous methods (rescue analysis) by detecting both positive and negative epistatic interactions. Results were highly similar to a previous study on the twister ribozyme despite different experimental conditions, demonstrating reproducibility of the sequencing-based approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 establish comparisons to prior work showing consistency (C80) despite methodological differences (C79, C82). Claims C84-C85 position the epistasis analysis as complementary to existing approaches. The comparison provides validation of the method, though C85 is somewhat speculative about future utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The activity-based mutational data provides information complementary to existing training data for machine learning models (crystal structures, SHAPE, sequence conservation), offering quantitative functional effects rather than just frequency, and may help identify structural elements beyond canonical base pairs that comparative approaches miss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88-C89 establish the context of machine learning approaches (supported by citations), while C90-C91 make reasonable comparisons to existing methods. However, C92-C93 are speculative about the limitations of comparative approaches and the potential impact of this data on computational predictions. No direct evidence is provided that this data type improves machine learning predictions or identifies features missed by other approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "HDV showed the lowest sequencing depth among the five ribozymes, possibly due to its larger size (87 nt) resulting in fewer reads mapping to single and double mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 is directly supported by Table 1 data showing HDV had the lowest total mapped reads (3,316,380) compared to other ribozymes. The explanation relating size to read depth is plausible, though the causal relationship is not definitively established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C105"
+    ],
+    "result": "The experimental workflow included DNA library synthesis with doped oligonucleotides, co-transcriptional self-cleavage, template-switching reverse transcription with phased oligos, indexed PCR amplification, Illumina HiSeq 4000 sequencing, and analysis using custom Julia scripts with Mann-Whitney U tests for statistical comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C102 and C105 describe the complete methodological pipeline. Each step is clearly documented with appropriate technical details, citations to prior methods, and software availability. The methods are standard for this type of analysis and internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Self-cleaving ribozymes are catalytic RNAs found across all domains of life that have been used for bioengineering applications. Their small size, requirement for precise 3D structure for activity, and amenability to high-throughput sequencing make them suitable models for studying RNA sequence-structure-function relationships through mutational analysis and epistasis calculations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C26 provide background knowledge and conceptual framework supported by appropriate citations. These establish the biological context (C1-C2, C11-C16), technical feasibility (C17, C21-C22), and analytical framework (C18-C20, C23-C26) for the study. All claims are well-established in the literature or are logical inferences from established principles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Machine learning approaches for RNA structure prediction have made considerable advancements but rely heavily on crystal structures and sequence conservation data, both of which are more limited for RNA compared to proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 are supported by appropriate citations to recent literature (Calonaci et al., 2020; Townshend et al., 2021). These establish the motivation for developing alternative data types for RNA structure prediction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C30",
+      "C95"
+    ],
+    "result": "All ribozyme constructs cleave near the 5\u2032-end of the RNA, and a constant structured RNA cassette was appended to provide a common reverse transcription primer binding site for both cleaved and uncleaved molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30 and C95 describe a key design feature enabling the internal control aspect of the method. This is a standard approach cited to prior work (Wilkinson et al., 2006) and is essential for the quantitative activity measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "Epistasis values greater than 1 indicate positive epistasis, and values less than 0 indicate negative epistasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C104 is a definitional statement that correctly describes the interpretation of the epistasis metric used throughout the study. This is consistent with standard definitions in the field.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,372 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C26",
+      "C34",
+      "C35",
+      "C93",
+      "C94"
+    ],
+    "result": "Using F1-hybrid MEFs derived from crosses between C57BL/6J and nine inbred mouse strains, the study identified 76,517 unique active CREs, with 24.4% showing allele-specific H3K27ac levels. Among allele-specific enhancers, 56.2% and 15.3% exhibited >2-fold and >4-fold differences in H3K27ac signal, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C26, C34, C35, C93, and C94 provide consistent quantitative data from the F1-hybrid experimental system. The numbers are specific, internally consistent, and supported by the described methodology (ATAC-seq, ChIP-seq, CUT&RUN). The experimental design using F1 hybrids to compare alleles in the same cellular environment is well-established and appropriate for this analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C28",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Genetic variants within the central ~50 bp of enhancer sequences are most likely to alter TF binding and enhancer activity. Single SNPs at 1-SNP enhancers are likely causal for observed functional differences, suggesting that SNPs in the central region of enhancers should be prioritized in GWAS studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C28, C62, and C63 are supported by data showing enrichment of SNPs in the central region of allele-specific enhancers (Figure 2H-J). The logic that single SNPs at 1-SNP enhancers are likely causal (C63) is sound. However, C64 is a recommendation rather than a finding, though it follows logically from the data. The spatial distribution analysis is appropriate and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C29",
+      "C30",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "AP-1 binding is frequently required for TEAD TF binding to enhancers, whereas TEAD is generally dispensable for AP-1 binding. This hierarchical relationship suggests AP-1 functions as a pioneer factor facilitating binding of additional TFs during enhancer selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C29, C125-C128 present quantitative data showing asymmetric dependency: 50.2% of allele-specific Fos sites show loss of Tead1 binding, while only 8.7% of allele-specific Tead1 sites show loss of Fos signal. AP-1 motif mutations are enriched at allele-specific TEAD peaks. The pioneer factor interpretation (C30) is reasonable given the data, though it remains a model rather than direct demonstration of pioneer activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C31",
+      "C81",
+      "C106",
+      "C107",
+      "C145",
+      "C146"
+    ],
+    "result": "Sequence variants outside core AP-1 and TEAD motifs impact enhancer function, including sequences flanking core TF motifs and AP-1 half sites. A ~2-fold greater frequency of AP-1 half sites containing SNPs was observed in allele-specific versus shared Fos peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C31, C81, C106, C107, C145, and C146 are supported by data showing enrichment of SNPs in flanking sequences (9.9% vs 5.6% in \u00b13 bp flanking regions) and AP-1 half sites (mean 0.25 vs 0.13 occurrences per peak). The quantitative differences are modest but statistically supported. The interpretation that these features contribute to binding (C146) is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "Allele-specific enhancers are more likely to interact with genes showing allele-specific transcriptional differences than enhancers with similar H3K27ac levels (14.5% vs 9.1%), indicating that allele-specific H3K27ac differences reflect functional differences in transcriptional regulatory activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36 and C37 are supported by Hi-ChIP and RNA-seq data showing correlation between allele-specific enhancer activity and allele-specific gene expression. The percentages are specific and the logic connecting enhancer activity to gene expression is sound. The interpretation is consistent with cited previous studies (Creyghton et al., 2010; Arnold et al., 2013; Fulco et al., 2019).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Promoter-associated H3K4me3 (3.6%) and gene-distal CTCF binding (2.6%) are less likely to exhibit allele-specific differences than enhancer H3K27ac (24.4%). The frequency of allele-specific sites is proportional to SNP frequency, and the number of allele-specific genes scales with total SNPs per strain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C40, and C41 provide quantitative comparisons showing that enhancers are more variable than promoters and CTCF sites, consistent with evolutionary conservation patterns cited in C39. The proportionality between SNP frequency and allele-specific activity (C40, C41) is a key validation of the approach. The data are internally consistent and well-supported by figures and supplementary files.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C54"
+    ],
+    "result": "Loss of H3K27ac at enhancers is generally not genetically separable from loss of H3K4me1/2 and chromatin accessibility. At the top decile of allele-specific enhancers, 70.1% show concordant loss of H3K4me1, suggesting enhancer priming/selection and activation are not separable steps in MEFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 and C54 present data showing concordant changes in multiple histone modifications (70.1% vs 0.6% for top vs bottom deciles). The interpretation that priming and activation are not separable (C45) is supported by the data, though it is specific to MEFs and may not generalize. The analysis appropriately compares top and bottom deciles to control for technical variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Only 9.1% of 0-SNP enhancers show allele-specific H3K27ac compared to 22.1% of enhancers with SNPs, suggesting SNPs outside enhancer sequences rarely influence function. Allele-specific 0-SNP enhancers are not closer to allele-specific CTCF peaks, indicating CTCF-dependent TAD rearrangement is not a major contributor. However, they are more likely to be near other allele-specific enhancers in clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C53 address the contribution of locus-scale cis-acting mechanisms. The 0-SNP enhancer analysis is clever and well-controlled. The data showing limited proximity to CTCF peaks (C48) and modest proximity to other allele-specific enhancers (C50) support the interpretation that locus-scale effects are limited (C53). The analysis appropriately uses signal-matched controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Greater numbers of SNPs at enhancers correlate with higher probabilities of allele-specific activity, and allele-specific enhancers are less conserved across species than shared enhancers. This is consistent with rapid enhancer turnover due to functional redundancy at many loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59 and C60 are supported by data in Figure 2F-G and phastCons analysis. The correlation between SNP number and allele-specificity is clear. The evolutionary interpretation (C61) is supported by citation to Osterwalder et al., 2018 and is consistent with the data, though the mechanism (functional redundancy) is not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C103",
+      "C104",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "KMAC analysis identified enriched k-mers for AP-1 (VTGACTCAB, 30.8% of enhancers) and TEAD (GGAATK, 10.9% of enhancers) that include core motifs plus restricted flanking nucleotides. Allele-specific analysis shows enrichment of SNPs at these motifs, functionally validating the importance of motif-flanking nucleotides for TF binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 and C103-C112 describe KMAC analysis and validation using allele-specific data. The k-mer identification is systematic and the enrichment values are specific. The functional validation through allele-specific SNP enrichment (C103, C109, C110) is appropriate. The conclusion about flanking nucleotide importance (C112) is well-supported by the convergence of KMAC and allele-specific analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Motif-disrupting SNPs cause marked but incomplete loss of TF binding. Loss of AP-1 binding is associated with substantial decreases in chromatin accessibility, H3K4me1/2, and H3K27ac, while loss of TEAD occupancy has less severe consequences. Both AP-1 and TEAD motifs play central roles in enhancer function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C118 present data from Figure 3F-M showing effects of motif disruption. The incomplete loss of binding (C113) is an important observation suggesting complexity beyond core motifs. The differential effects of AP-1 vs TEAD loss (C114-C117) are clearly shown in the data. The conclusion (C118) is appropriately qualified. The analysis uses appropriate controls (single-motif sites).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Only 13.3% of top-decile allele-specific enhancers have SNPs in core AP-1, TEAD, or ETS motifs, compared to 21.5% of allele-specific CTCF sites with SNPs in CTCF motifs. This suggests SNPs outside core TF-binding motifs collectively modulate enhancer activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121 provide quantitative evidence that core motif disruption explains only a minority of allele-specific enhancer activity. The comparison to CTCF (C120) is appropriate as a control showing that motif disruption can explain a larger fraction when TF binding is less dependent on collaborating factors. The interpretation (C121) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "AP-1-only peaks contain consensus AP-1 k-mers more frequently (65.9%) than AP-1/TEAD co-bound peaks (53.8%). Similarly, TEAD-only peaks have TEAD k-mers more frequently (44.0%) than co-bound peaks (36.0%), suggesting motif requirements are more flexible at co-bound sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C133 present data from Figure 4C-D showing differential motif requirements at different classes of binding sites. The quantitative differences are clear and the interpretation (C133) is reasonable. This observation is consistent with the concept of composite motifs having different requirements than individual motifs, as mentioned in the text.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "SNPs/indels are enriched within ~100 bp of ATAC-seq summits at allele-specific TF binding sites, and within \u00b150 bp of AP-1 and TEAD motifs. This pattern is consistent with a collaborative competition model where simultaneous binding of multiple TFs within <75 bp is required to outcompete histone octamers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C137 present data from Figure 5A-E showing spatial distribution of functional SNPs. The ~100 bp and \u00b150 bp windows are clearly shown in the data. The interpretation invoking collaborative competition (C137-C139) is reasonable and supported by citations to biophysical studies (Miller and Widom, 2003; Moyle-Heyrman et al., 2011). The model is consistent with the observed SNP distribution patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "At allele-specific CTCF peaks, SNPs show narrow enrichment within \u00b110 bp of the CTCF motif, indicating a more restricted length scale for functional variants than observed for AP-1 and TEAD. This suggests CTCF binding is less dependent on collaborating TFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C142 present data from Figure 5F showing a distinct pattern for CTCF compared to AP-1 and TEAD. The narrow enrichment window (\u00b110 bp) contrasts with the broader windows for AP-1 and TEAD. The interpretation that CTCF is less dependent on collaborating factors (C142) is reasonable and consistent with CTCF's known function as an architectural protein.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "gkm-SVM analysis of Fos peaks achieved AUROC=0.872 and AUPRC=0.881, indicating reliable classification of Fos-bound sites. The central 60 bp is sufficient for classification, with only slight improvement from longer sequences. When core AP-1 sites are masked, performance drops modestly (AUROC 0.874\u21920.804), suggesting the model retains some predictive capacity from flanking sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C157 present gkm-SVM analysis results with specific performance metrics. The AUROC and AUPRC values indicate good model performance. The analysis of sequence length requirements (C153-C154) and masked motifs (C156-C157) is systematic. The interpretation that flanking sequences contribute to prediction (C157) is supported by the modest performance drop when core motifs are masked.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "Analysis of human DNase-seq data identified 164,705 AP-1 footprints (VTGACTCAB motifs) that are centrally enriched within CREs. Most footprints are <30 bp wide (83.3%), consistent with single AP-1 dimers. CREs with AP-1 footprints typically have ~3-4 additional TF footprints at median distance ~24 bp, with enrichment of TEAD and ETS k-mers nearby.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C165 extend the findings to human data using DNase-seq footprinting. The quantitative findings (164,705 footprints, 83.3% <30 bp, ~3-4 additional footprints, ~24 bp spacing) are specific and internally consistent. The enrichment of TEAD and ETS k-mers (C163) is consistent with the mouse data. The interpretation about AP-1's critical role across cell types (C164) is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "The gkm-SVM has limited ability to predict activity levels of AP-1 bound sites, suggesting deep learning approaches might be required to delineate higher order sequence features associated with active enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67 and C68 acknowledge limitations of the gkm-SVM approach for predicting enhancer activity levels (as opposed to TF binding). The suggestion that deep learning might be needed (C68) is speculative but reasonable and supported by citations (Avsec et al., 2021; de Almeida et al., 2022). This is an honest assessment of the method's limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C33",
+      "C72",
+      "C73"
+    ],
+    "result": "The data suggest Ras/MAPK-induced AP-1 can play an instructive role in determining Hippo/YAP/TAZ/TEAD transcriptional output, providing a mechanism for crosstalk between these signaling pathways. This is similar to AP-1's role in facilitating binding of other signaling pathway effectors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C33, C72, and C73 propose a mechanism for pathway crosstalk based on the hierarchical AP-1-TEAD binding relationship. While the AP-1-TEAD dependency is well-supported, the specific claim about instructive control of Hippo pathway output (C33, C72) is more speculative. The comparison to other pathways (C73) is supported by citations but the direct demonstration of pathway crosstalk would require additional experiments (e.g., pathway perturbation studies).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C82",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "A model is proposed where AP-1 recognizes full motifs at nucleosome edges, binds both halves of the core site upon nucleosome breathing, facilitates binding of dependent TFs via collaborative competition, and might bind half motifs at any nucleosome position absent breathing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82 and C84-C87 present a detailed mechanistic model for AP-1 binding to nucleosomal enhancers. While the model is consistent with the data (enrichment of SNPs in half sites, flanking sequences) and supported by citations to structural studies, it remains speculative. The model integrates multiple observations but lacks direct experimental validation (e.g., nucleosome positioning data, structural studies of these specific enhancers).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C147",
+      "C148"
+    ],
+    "result": "Disruption of one half site within an AP-1 consensus motif has a strong effect on AP-1 binding in most cases, suggesting AP-1 half sites play an accessory role in modulating occupancy levels and are unlikely to be sufficient for binding without a full AP-1 motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147 and C148 interpret the data on AP-1 half sites in the context of full motif disruption data (Figure 3C, F). The interpretation that half sites are accessory rather than sufficient (C148) is reasonable given the strong effects of disrupting one half of a full motif. However, this is somewhat speculative as it's based on inference rather than direct testing of half sites in isolation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Enhancer sequence variation contributes to phenotypic variation in human populations, but predicting variant effects remains difficult due to motif complexity. A significant proportion of trait-associated variants occur in ~2-3\u00d710^6 CREs, most of which are gene-distal enhancers, but distinguishing functional from neutral variants is challenging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C7-C10 provide background context supported by established knowledge and citations. These claims accurately represent the current state of the field and the motivation for the study. They are not novel findings but rather well-established facts that frame the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The F1-hybrid approach is a powerful tool for uncovering sequence determinants of TF binding that cannot be easily detected from PWM-based searches. The datasets identify thousands of enhancer allele pairs with subtle sequence differences but strongly allele-specific properties, and can accelerate identification of functional non-coding variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 summarize the utility and implications of the F1-hybrid approach. These conclusions are well-supported by the extensive data presented throughout the study. The claim that the approach identifies features not detectable by PWM searches (C89) is demonstrated by the findings on flanking sequences and half sites. Claims C91-C92 about future applications are somewhat speculative but reasonable.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1846 @@
+{
+  "submission": {
+    "id": "62080971-8a38-4b87-afdd-7147ece93899",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T04:22:07.609661Z",
+    "updated_at": "2025-12-03T04:22:07.609661Z"
+  },
+  "content": [
+    {
+      "id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "submission_id": "62080971-8a38-4b87-afdd-7147ece93899",
+      "content_type": "manuscript",
+      "content_text": "# Endogenous p53 expression in human and mouse is not regulated by its 3\u2032UTR\n\n## Authors\n\n- Sibylle Mitschka<sup>1</sup>\n- Christine Mayr<sup>1</sup> ([ORCID: 0000-0002-7084-7608](https://orcid.org/0000-0002-7084-7608)) \u2020\n\n### Affiliations\n\n1. Cancer Biology and Genetics Program, Memorial Sloan Kettering Cancer Center New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe TP53 gene encodes the tumor suppressor p53 which is functionally inactivated in many human cancers. Numerous studies suggested that 3\u2032UTR-mediated p53 expression regulation plays a role in tumorigenesis and could be exploited for therapeutic purposes. However, these studies did not investigate post-transcriptional regulation of the native TP53 gene. Here, we used CRISPR/Cas9 to delete the human and mouse TP53/Trp53 3\u2032UTRs while preserving endogenous mRNA processing. This revealed that the endogenous 3\u2032UTR is not involved in regulating p53 mRNA or protein expression neither in steady state nor after genotoxic stress. Using reporter assays, we confirmed the previously observed repressive effects of the isolated 3\u2032UTR. However, addition of the TP53 coding region to the reporter had a dominant negative impact on expression as its repressive effect was stronger and abrogated the contribution of the 3\u2032UTR. Our data highlight the importance of genetic models in the validation of post-transcriptional gene regulatory effects.\n\n## Introduction\n\nThe transcription factor p53 coordinates the cellular stress response. p53 regulates expression of genes involved in cell cycle control, DNA repair, apoptosis, metabolism, and cell differentiation (Kastenhuber and Lowe, 2017), thus allowing cells to adequately respond to various stimuli. In contrast to most other stress sensors, p53 is not dependent on de novo transcription as the TP53 gene is continuously transcribed even in unstressed cells. This mechanism reduces the time of delay between signal detection and downstream responses. To avoid activation of p53 in unstressed cells, p53 protein levels are controlled by rapid protein degradation induced by MDM2 (Haupt et al., 1997; Kubbutat et al., 1997).\n\nReduced levels or insufficient p53 activity are major risk factors for the development of cancer and more than half of all human cancers exhibit diminished p53 expression or function (Kastenhuber and Lowe, 2017). In contrast, hyperactive p53 has been linked to impaired wound healing, obesity, and accelerated aging (Rufini et al., 2013). These phenomena highlight the importance of p53 protein abundance and activity regulation in human health.\n\nFor many years, the 3\u2032 untranslated region (3\u2032UTR) of the TP53 mRNA has been a widely studied element of p53 expression regulation. 3\u2032UTRs are essential for facilitating pre-mRNA processing. In addition, they can also recruit microRNAs (miRNAs), RNA-binding proteins, and lncRNAs which can modulate mRNA stability and protein translation (Tian and Manley, 2017; Mayr, 2019). The human TP53 3\u2032UTR contains experimentally characterized binding sites for 23 miRNAs, 1 lncRNA, and 6 RNA-binding proteins (Haronikova et al., 2019). A large number of experiments demonstrated the repressive nature of the TP53 3\u2032UTR using synthetic reporter assays under steady-state conditions (Table 1;\u00a0Haronikova et al., 2019). In addition, the TP53 3\u2032UTR was shown to facilitate an increase in p53 translation after genotoxic stress (Fu and Benchimol, 1997; Mazan-Mamczarz et al., 2003; Chen and Kastan, 2010). Together, this large body of work strongly suggested that miRNAs and RNA-binding proteins prevent p53 hyperactivation under normal conditions and help to upregulate p53 protein translation after exposure to genotoxic stress (Fu and Benchimol, 1997; Mazan-Mamczarz et al., 2003; Chen and Kastan, 2010).\n\n**Table 1.**\n Previously reported evidence of miRNAs, lncRNAs, and RNA-binding proteins that target the TP53 3\u2032UTR.\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"7\">Interactors of the human TP53 mRNA mapping to the last exon</th>\n    </tr>\n    <tr>\n      <th>Name</th>\n      <th>Type</th>\n      <th>Binding region (NM_000546.6)</th>\n      <th>Affected in dUTR allele?</th>\n      <th>Experiments</th>\n      <th>References (PMID)</th>\n      <th>Average PhyloP score</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>miR-1228\u20133 p</td>\n      <td>miRNA</td>\n      <td>1422\u20131428</td>\n      <td>yes</td>\n      <td>LRA, RT-qPCR, IHC, WB</td>\n      <td>25422913</td>\n      <td>1.003</td>\n    </tr>\n    <tr>\n      <td>miR-125a-5p</td>\n      <td>miRNA</td>\n      <td>2044\u20132063</td>\n      <td>yes</td>\n      <td>LRA, NB, RT-qPCR, WB</td>\n      <td>19818772</td>\n      <td>\u22120.120</td>\n    </tr>\n    <tr>\n      <td>miR-125b-5p</td>\n      <td>miRNA</td>\n      <td>2043\u20132064</td>\n      <td>yes</td>\n      <td>LRA, ISH, RT-qPCR, WB</td>\n      <td>19293287, 21935352, 27592685</td>\n      <td>\u22120.105</td>\n    </tr>\n    <tr>\n      <td>miR-1285\u20133 p</td>\n      <td>miRNA</td>\n      <td>2113\u20132134</td>\n      <td>yes</td>\n      <td>LRA, RT-qPCR, WB</td>\n      <td>20417621</td>\n      <td>\u22120.061</td>\n    </tr>\n    <tr>\n      <td>miR-150\u20135 p</td>\n      <td>miRNA</td>\n      <td>1568\u20131580</td>\n      <td>yes</td>\n      <td>LRA, WB</td>\n      <td>23747308</td>\n      <td>\u22120.323</td>\n    </tr>\n    <tr>\n      <td>miR-151a-5p</td>\n      <td>miRNA</td>\n      <td>2304\u20132325</td>\n      <td>yes</td>\n      <td>LRA, ChIP-seq, RT-qPCR, WB</td>\n      <td>27191259</td>\n      <td>\u22120.053</td>\n    </tr>\n    <tr>\n      <td>miR-200a-3p</td>\n      <td>miRNA</td>\n      <td>2269\u20132291</td>\n      <td>yes</td>\n      <td>LRA, WB</td>\n      <td>23144891</td>\n      <td>\u22120.039</td>\n    </tr>\n    <tr>\n      <td>miR-24\u20133 p</td>\n      <td>miRNA</td>\n      <td>2352\u20132374</td>\n      <td>yes</td>\n      <td>LRA, IHC, RT-qPCR, WB</td>\n      <td>27780140</td>\n      <td>0.018</td>\n    </tr>\n    <tr>\n      <td>miR-25\u20133 p</td>\n      <td>miRNA</td>\n      <td>1401\u20131423</td>\n      <td>yes</td>\n      <td>LRA, RT-qPCR, WB</td>\n      <td>20935678</td>\n      <td>0.438</td>\n    </tr>\n    <tr>\n      <td>miR-30d-5p</td>\n      <td>miRNA</td>\n      <td>1596\u20131618</td>\n      <td>yes</td>\n      <td>LRA, RT-qPCR, WB</td>\n      <td>20935678</td>\n      <td>\u22120.432</td>\n    </tr>\n    <tr>\n      <td>miR-375</td>\n      <td>miRNA</td>\n      <td>1462\u20131483</td>\n      <td>yes</td>\n      <td>LRA, Flow, RT-qPCR, WB, IF</td>\n      <td>23835407</td>\n      <td>\u22120.595</td>\n    </tr>\n    <tr>\n      <td>miR-663a</td>\n      <td>miRNA</td>\n      <td>1260\u20131281</td>\n      <td>no (in CDS)</td>\n      <td>LRA</td>\n      <td>27105517</td>\n      <td>1.520</td>\n    </tr>\n    <tr>\n      <td>miR-504</td>\n      <td>miRNA</td>\n      <td>2059\u20132066, 2387\u20132395</td>\n      <td>yes, no</td>\n      <td>LRA, RT-qPCR, WB</td>\n      <td>20542001</td>\n      <td>0.130 0.203</td>\n    </tr>\n    <tr>\n      <td>miR-92</td>\n      <td>miRNA</td>\n      <td>1417\u20131422</td>\n      <td>yes</td>\n      <td>LRA, WB</td>\n      <td>21112562</td>\n      <td>0.102</td>\n    </tr>\n    <tr>\n      <td>miR-141</td>\n      <td>miRNA</td>\n      <td>2285\u20132290</td>\n      <td>yes</td>\n      <td>LRA, WB</td>\n      <td>21112562</td>\n      <td>\u22120.031</td>\n    </tr>\n    <tr>\n      <td>miR-638</td>\n      <td>miRNA</td>\n      <td>1381\u20131404</td>\n      <td>yes</td>\n      <td>LRA, WB, IP</td>\n      <td>25088422</td>\n      <td>0.313</td>\n    </tr>\n    <tr>\n      <td>miR-3151</td>\n      <td>miRNA</td>\n      <td>1337\u20131354</td>\n      <td>yes</td>\n      <td>LRA, WB, RT-qPCR</td>\n      <td>24736457</td>\n      <td>\u22120.329</td>\n    </tr>\n    <tr>\n      <td>miR-33</td>\n      <td>miRNA</td>\n      <td>1957\u20131980</td>\n      <td>yes</td>\n      <td>LRA, WB</td>\n      <td>20703086</td>\n      <td>0.138</td>\n    </tr>\n    <tr>\n      <td>miR-380\u20135 p</td>\n      <td>miRNA</td>\n      <td>1909\u20131936, 1943\u20131974</td>\n      <td>yes, yes</td>\n      <td>LRA, WB</td>\n      <td>20871609</td>\n      <td>0.121 0.089</td>\n    </tr>\n    <tr>\n      <td>miR-19b</td>\n      <td>miRNA</td>\n      <td>1712\u20131734</td>\n      <td>yes</td>\n      <td>LRA, WB</td>\n      <td>24742936</td>\n      <td>0.402</td>\n    </tr>\n    <tr>\n      <td>miR-15a</td>\n      <td>miRNA</td>\n      <td>2394\u20132414</td>\n      <td>no</td>\n      <td>LRA, WB</td>\n      <td>21205967</td>\n      <td>0.045</td>\n    </tr>\n    <tr>\n      <td>miR-16</td>\n      <td>miRNA</td>\n      <td>2394\u20132415</td>\n      <td>no</td>\n      <td>LRA, WB</td>\n      <td>21205967</td>\n      <td>0.015</td>\n    </tr>\n    <tr>\n      <td>miR-584</td>\n      <td>miRNA</td>\n      <td>1263\u20131284</td>\n      <td>no (in CDS)</td>\n      <td>LRA, WB, IP</td>\n      <td>25088422</td>\n      <td>1.646</td>\n    </tr>\n    <tr>\n      <td>WIG1</td>\n      <td>RBP</td>\n      <td>2064\u20132106</td>\n      <td>yes</td>\n      <td>LRA, IP, RT-qPCR</td>\n      <td>19805223</td>\n      <td>\u22120.071</td>\n    </tr>\n    <tr>\n      <td>PARN</td>\n      <td>RBP</td>\n      <td>2071\u20132102</td>\n      <td>yes</td>\n      <td>LRA, EMSA, IP, RT-qPCR</td>\n      <td>23401530</td>\n      <td>\u22120.097</td>\n    </tr>\n    <tr>\n      <td>CPEB1</td>\n      <td>RBP</td>\n      <td>2458\u20132500</td>\n      <td>no</td>\n      <td>IP, RT-PCR</td>\n      <td>19141477</td>\n      <td>1.654</td>\n    </tr>\n    <tr>\n      <td>RBM38 (RNPC1)</td>\n      <td>RBP</td>\n      <td>2064\u20132106</td>\n      <td>yes</td>\n      <td>EMSA, IP, RT-PCR, Polysome gradient</td>\n      <td>21764855, 24142875, 25823026</td>\n      <td>\u22120.071</td>\n    </tr>\n    <tr>\n      <td>RBM24</td>\n      <td>RBP</td>\n      <td>2064\u20132106</td>\n      <td>yes</td>\n      <td>LRA, EMSA, IP, RT-qPCR,</td>\n      <td>29358667</td>\n      <td>\u22120.071</td>\n    </tr>\n    <tr>\n      <td>HUR</td>\n      <td>RBP</td>\n      <td>2064\u20132106, 2393\u20132412, 2458\u20132505</td>\n      <td>yes, yes, no</td>\n      <td>LRA, EMSA, WB, RT-qPCR</td>\n      <td>12821781, 14517280, 16690610, 18680106</td>\n      <td>\u22120.071 0.007 1.496</td>\n    </tr>\n    <tr>\n      <td>7SL</td>\n      <td>lncRNA</td>\n      <td>2107\u20132149, 2194\u20132240, 2269\u20132301, 2307\u20132362</td>\n      <td>yes, yes, yes, yes</td>\n      <td>LRA, IP, WB</td>\n      <td>25123665</td>\n      <td>\u22120.158 \u22120.110 0.015 \u22120.015</td>\n    </tr>\n    <tr>\n      <td>miR-92a-3p</td>\n      <td>miRNA</td>\n      <td>1646\u20131666</td>\n      <td>yes</td>\n      <td>LRA, WB</td>\n      <td>22451425</td>\n      <td>\u22120.122</td>\n    </tr>\n    <tr>\n      <td>TIA1</td>\n      <td>RBP</td>\n      <td>1426\u20131442 1702\u20131731</td>\n      <td>yes, no</td>\n      <td>LRA, iCLIP</td>\n      <td>28904350</td>\n      <td>0.066 0.715</td>\n    </tr>\n    <tr>\n      <td>Hzf</td>\n      <td>RBP</td>\n      <td>1345\u20131395 1529\u20131574</td>\n      <td>yes, yes</td>\n      <td>LRA, EMSA, WB, IP, RT-qPCR, Polysome gradient</td>\n      <td>21402775</td>\n      <td>\u22120.450 0.156</td>\n    </tr>\n  </tbody>\n</table>\n\n_LRA: luciferase reporter assay; WB: western blot; IP: co-immunoprecipitation assay; RT-qPCR: quantitative reverse transcription PCR; NB: northern blot; IHC: immunohistochemistry; ISH: In situ hybridization; EMSA: electromobility shift assay._\n\nThese findings also suggested that deregulation of p53 expression through mechanisms involving its 3\u2032UTR could be a major disease driver as well as a potential target for treatment (Kasinski and Slack, 2011; Hermeking, 2012). In particular, miRNAs targeting the TP53 mRNA were previously established as putative gatekeepers that prevent p53 hyperactivation and some of these miRNAs are also elevated in cancer, e.g. miR-504, miR-30d, and miR-125 (Hu et al., 2010; Li et al., 2012; Banzhaf-Strathmann and Edbauer, 2014). This has sparked an interest in exploiting 3\u2032UTR-mediated expression regulation for therapeutic applications using novel miRNA-based approaches (Kasinski and Slack, 2011; Hermeking, 2012). However, the role of the 3\u2032UTR in regulating p53 expression regulation has not been investigated using the endogenous TP53 mRNA and the potential benefit of these approaches remains unknown.\n\nIn order to evaluate the contribution of the TP53 3\u2032UTR to p53 expression regulation, we removed the TP53 and Trp53 3\u2032UTRs at orthologous human and mouse gene loci while keeping mRNA processing intact. In HCT116 cells and in mouse tissues, we did not observe 3\u2032UTR-dependent differences in p53 mRNA or protein levels under normal conditions or after DNA damage. These results suggest that the 3\u2032UTR of TP53 typically has no function in regulating p53 abundance in its endogenous context. Consistent with previous reports, we did observe that the TP53 3\u2032UTR in isolation represses reporter expression in reporter assays. However, adding the TP53 coding region to the reporters entirely eliminated 3\u2032UTR-dependent expression differences. Together, our results suggest that the TP53 coding region masks the repressive effects of the 3\u2032UTR in the endogenous TP53 mRNA.\n\n## Results\n\n### Removal of the endogenous 3\u2032UTR does not alter TP53 mRNA expression\n\n3\u2032UTRs are known to perform two general functions: They contain regulatory elements that enable mRNA 3\u2032 end processing and they harbor elements that allow post-transcriptional gene regulation (Matoulkova et al., 2012). 3\u2032 end processing is an essential part of mRNA maturation and is facilitated by the poly(A) signal together with surrounding sequence elements that bind the polyadenylation machinery (Martin et al., 2012). Based on genome-wide mapping of polyadenylation factor binding sites by CLIP, we consider the 3\u2032UTR sequence that is located up to 100\u2013150 nucleotides upstream of the cleavage site as essential for pre-mRNA processing (Martin et al., 2012). As the human TP53 3\u2032UTR has a total length of about 1200 nucleotides, the additional sequence may enable regulatory functions by recruiting miRNAs and RNA-binding proteins. Indeed, the vast majority of previously characterized binding sites for miRNAs and RNA-binding proteins are located in the upstream, non-essential part of the TP53 3\u2032UTR (Figure 1A, Table 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/65700/elife-65700-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of the human TP53 gene. The sequence deleted in dUTR cells is shown in blue. Tracks of binding sites for miRNAs, RNA-binding proteins, and lncRNAs are depicted below (see also Table 1). URE, U-rich element. CRISPR/Cas9-mediated deletions at the nucleotide level are shown in Figure 1\u2014figure supplement 1. (B) Northern blot analysis of TP53 mRNA from WT and dUTR HEK293 cells. A probe that hybridizes to the TP53 coding region (CDS) reveals expression of a shortened TP53 mRNA in dUTR cells. The size difference is consistent with the length of the CRISPR/Cas9-induced deletion. A probe designed to bind the TP53 3\u2032UTR does not produce a signal in the mRNA of dUTR cells, confirming deletion of this sequence element. The band of 18S rRNA is used as a loading control. * indicates an unspecific band originating from ribosomal RNA. (C) TP53 mRNA expression measured by RT-qPCR with a primer pair located in the 3\u2032UTR in the indicated samples derived from HCT116 cells. KO, HCT116 TP53-/- cells. Data are shown as mean\u00a0+s.d. of n\u00a0=\u00a05 independent experiments after normalization to GAPDH. Statistical analysis using ANOVA and Tukey\u2019s post-hoc test with ***p<0.001, ns, not significant. (D) TP53 mRNA expression measured by RT-qPCR with a primer pair located in the CDS in the indicated samples derived from HCT116 cells. Data are shown as mean\u00a0+s.d. of n\u00a0=\u00a05 independent experiments after normalization to GAPDH. Statistical analysis using ANOVA and Tukey\u2019s post-hoc test with ***p<0.001, ns, not significant. (E) Experimental setup to estimate TP53 mRNA half-life. Metabolic labeling with 4-thiouridine (4sU) was used to enrich newly transcribed mRNAs. The newly transcribed RNAs were thiol-alkylated and biotinylated, followed by Streptavidin pull-down. Their relative abundance was measured using RT-qPCR. (F) TP53 mRNA half-life obtained by 4sU labeling as described in (E) is shown for the indicated samples derived from HCT116 cells in the presence or absence of etoposide for 4 hr (Eto, 20 \u00b5M). Shown is mean\u00a0+\u00a0s.d. from n\u00a0=\u00a03 independent experiments. Statistical analysis using ANOVA and Tukey\u2019s post-hoc test with *p<0.05, **p<0.01, ns, not significant.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65700/elife-65700-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Sequence alignment of TP53 alleles spanning the deletion sites in WT and dUTR HEK293 and HCT116 cell clones analyzed in this study. Binding sites of gRNAs used to generate the deletion are underlined in the WT reference sequence and predicted cutting sites are marked by a scissor symbol. gRNA dUTR2.2 harboring a specific point mutation relative to the WT allele was used to create homozygous dUTR HCT116 cell lines during a second round of transfection. (B) TP53 mRNA expression was measured by RT-qPCR with a primer pair located in the CDS in the indicated samples derived from HEK293 cells. Shown is mean\u00a0+s.d. of n\u00a0=\u00a07 independent experiments after normalization to GAPDH. Statistical analysis using ANOVA and Tukey\u2019s post-hoc test with ***p<0.001; ns, not significant. (C) Immunoblot showing p53 protein level in HEK293 cells, grown under steady-state conditions. (D) Quantification of immunoblot data for steady-state p53 protein level in cells derived from HEK293. Shown is mean\u00a0+s.d. of n\u00a0=\u00a04 independent experiments after normalization to Actin and the WT parental cell line. Statistical analysis using ANOVA and Tukey\u2019s post-hoc test with ***p<0.001; ns, not significant.\n\nTo investigate the role of the endogenous human TP53 3\u2032UTR in post-transcriptional p53 regulation, we used a pair of CRISPR/Cas9 guide RNAs to delete the non-essential part of the 3\u2032UTR in HEK293 cells and in the human colon carcinoma cell line HCT116, an established model for investigating p53-dependent functions (Figure 1A, blue, Figure 1\u2014figure supplement 1A). The homozygous 3\u2032UTR deletion, called \u0394UTR (dUTR), removed 1048 nucleotides, corresponding to 88% of the 3\u2032UTR in wild-type (WT) cells. The deletion affected almost all previously reported binding sites for regulatory miRNAs, lncRNAs, and RNA-binding proteins (Figure 1A, Table 1). We confirmed intact 3\u2032 end processing of the mRNA by Northern blot analysis and observed expression of the expected shorter TP53 mRNA in dUTR cells (Figure 1B). As controls for all experiments, we used the HCT116 parental cell line and control (Ctrl) clones that underwent the genome editing procedure but have intact 3\u2032UTRs (Figure 1\u2014figure supplement 1A). We confirmed the presence and absence of the TP53 3\u2032UTR in all HCT116 WT clones and dUTR clones by RT-qPCR using a primer pair in the deleted part of the 3\u2032UTR (Figure 1C). We observed that one control clone showed slightly increased TP53 mRNA level compared to the parental WT cell line (Figure 1C). We then used a primer pair in the coding region and measured TP53 mRNA level in all control cells and the dUTR clones and observed similar TP53 mRNA level (Figure 1D). This was also true for HEK293 cells carrying the homozygous dUTR deletion (Figure 1\u2014figure supplement 1B and C). This indicates that removal of the endogenous 3\u2032UTR does not influence p53 steady-state mRNA levels.\n\nNotably, mRNA levels are determined by transcription and degradation rates and both pathways could be affected by the deletion of the TP53 3\u2032UTR. We measured TP53 mRNA half-lives in the absence and presence of DNA damage in all cell lines. To do so, we used 4-tiouridine (4sU) labeling followed by enrichment of newly transcribed mRNAs (Figure 1E;\u00a0Russo et al., 2017). Among all clones, regardless of WT or dUTR genotype, we observed no difference in TP53 mRNA half-life (Figure 1F). However, all clones exhibited a slightly reduced TP53 mRNA half-life in comparison to the parental WT cell line (Figure 1F). This might be caused by metabolic changes occurring during clonal expansion of the cell lines. Overall, our data suggest that the 3\u2032UTR does not impact TP53 mRNA level or half-life.\n\n### The endogenous 3\u2032UTR is not involved in regulating p53 protein levels in steady state or after genotoxic stress\n\nNext, we measured p53 protein levels in WT and dUTR cells using western blot analysis. We did not detect a significant difference in p53 protein level between WT and dUTR cells in steady-state conditions (Figure 2A and B). We also investigated the expression of shorter p53 protein isoforms that can be generated by alternative splicing or through alternative translation initiation. A prior study had proposed an interplay between cis-regulatory elements in the TP53 3\u2032UTR and usage of a downstream start codon resulting in a p53 protein isoform lacking one of the N-terminal transactivation domains (Katoch et al., 2017). Importantly, the region that has been implicated in this process is deleted in our TP53 dUTR allele. Using a different monoclonal p53 antibody with broad isoform specificity, we found no differences in the expression pattern in p53 protein isoforms between dUTR and WT cells (Figure 2\u2014figure supplement 1A and B). This suggests that under steady-state conditions, the TP53 3\u2032UTR is not necessary for the regulation of p53 protein levels.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/65700/elife-65700-fig2-v2.jpg)\n\n**Figure 2.:** (A) Representative immunoblot showing steady-state p53 protein expression in the indicated samples derived from HCT116 cells. Actin serves as loading control. See Figure 2\u2014figure supplement 1 for additional information on p53 isoform expression. (B) Quantification of immunoblot data for steady-state p53 protein level. p53 expression data were normalized to Actin and the WT parental cell line. For each sample at least five biological replicates were measured. Statistical analysis using ANOVA. ns, not significant. (C) Representative immunoblots showing p53 protein levels after 4 hr of etoposide (Eto) treatment (0\u201332 \u00b5M) in WT, Ctrl clone #1, and dUTR clone #1 derived from HCT116 cells. Actin serves as loading control. (D) As in (C). Quantification of p53 protein expression from n\u00a0=\u00a04 independent experiments is shown as mean\u00a0+\u00a0s.d. Statistical analysis of cell line effect using ANOVA. ns, not significant. See Figure 2\u2014source data 1 for raw data. (E) Representative immunoblot of samples from WT parental, Ctrl clone #1, and dUTR clone #1 derived from HCT116 cells that were treated with 0.5 \u00b5M Eto for 0, 24, or 48 hr (h). Actin serves as loading control. (F) As in (E). Quantification of p53 protein expression from n\u00a0=\u00a03 biological replicates is shown as mean\u00a0+s.d. Statistical analysis of cell line effect using ANOVA. ns, not significant. See Figure 2\u2014source data 1 for raw data. (G) As in (C), but cells were treated with 20 \u00b5M etoposide (Eto), 40 \u00b5M 5-fluorouridine (5-FU), or 50 J/m2 UV. Actin serves as loading control. (H) As in (G). Quantification of p53 protein expression after drug treatment. For each drug at least three biological replicates were measured. Shown is mean\u00a0+\u00a0s.d. Statistical analysis using ANOVA. ns, not significant.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65700/elife-65700-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Domain architecture of full-length (FL) p53 and all described alternative p53 protein isoforms. The respective binding epitopes of two antibodies used for isoform expression analysis, shown in (B) are highlighted in red. TAD, transactivation domain; PRD, proline-rich domain; DBD, DNA-binding domain; HR, hinge region; OD, oligomerization domain; RD, regulatory domain. The figure was adapted from Figure 3 from Joruiz and Bourdon, 2016. (B) Western blot analysis of p53 isoform expression pattern in HCT116 cell lines using two different monoclonal p53 antibodies. Increased expression of FL p53 protein was observed in samples treated with 20 \u00b5M Nutlin-3 (N) for 4 hr.\n\nNext, we investigated the possibility that the TP53 3\u2032UTR might have a role in stress-dependent p53 protein expression regulation. While TP53 mRNA expression does not change upon DNA damage, upregulation of p53 protein expression is achieved through increased translation rates and lower protein turnover (Kumari et al., 2014). Previous studies had suggested a role of the 3\u2032UTR in the upregulation of p53 translation after exposure to genotoxic stress (Fu and Benchimol, 1997; Mazan-Mamczarz et al., 2003; Chen and Kastan, 2010). To assess stress-induced p53 expression regulation in dUTR cells, we treated cells with the topoisomerase inhibitor etoposide which is known to upregulate p53 protein expression by causing DNA double-strand breaks. We found that concentration-dependent upregulation of p53 protein expression was similar in parental, control clone, and dUTR cells (Figure 2C and D). In addition, p53 levels analyzed over a period of 2 days revealed similar p53 expression kinetics (Figure 2E and F). Finally, we tested additional stress stimuli including 5-fluorouracil (a thymidylate synthase inhibitor) or UV irradiation. These treatments robustly upregulated p53 protein across all cell lines, but with no significant differences in p53 expression between WT and dUTR cells (Figure 2G and H). We therefore concluded that the endogenous TP53 3\u2032UTR is not required for p53 expression regulation neither in steady state nor after DNA damage.\n\n### The endogenous 3\u2032UTR does not regulate p53 translation rates\n\nWe wondered whether a potential difference in translation rates of the TP53 mRNA lacking the 3\u2032UTR might be masked by changes to p53 protein turnover. p53 protein turnover is primarily regulated by the ubiquitin ligase MDM2 (Momand et al., 1992; Haupt et al., 1997; Kubbutat et al., 1997). As transcription of MDM2 itself is activated by p53, the expression of both proteins is balanced by a negative feedback loop that could obscure a change in p53 synthesis rate. In order to assess p53 synthesis in the absence of MDM2-mediated degradation, we treated HCT116 cells with increasing concentrations of the MDM2 inhibitor Nutlin-3. If p53 translation rates from dUTR transcripts were indeed altered, the inhibition of MDM2-mediated p53 degradation would lead to differences in p53 accumulation. However, we observed that the concentration-dependent increase of p53 protein was similar between parental, control clone, and dUTR cells (Figure 3A and B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/65700/elife-65700-fig3-v2.jpg)\n\n**Figure 3.:** (A) Immunoblot showing p53 protein levels after 4 hr of Nutlin-3 treatment (0\u201320 \u00b5M) in WT, Ctrl clone #1, and dUTR clone #1 derived from HCT116 cells. Actin serves as loading control. (B) As in (A). Quantification of p53 protein expression from n\u00a0=\u00a04 biological replicates is shown as mean\u00a0+s.d. Statistical analysis of cell line effect using ANOVA. ns, not significant. See Figure 3\u2014source data 1 for raw data. (C) Experimental setup to analyze p53 protein synthesis by metabolic labeling of proteins using the methionine analog azidohomoalanine (AHA) in the presence or absence of 20 \u00b5M etoposide. (D) Representative immunoblot for p53 synthesis assessed by metabolic labeling as shown in (C). The black triangle indicates the signal specific to p53 protein. (E) As in (D). Quantification of newly synthesized p53 protein using AHA-labeling for 2 hr. At least three biological replicates were measured in the presence or absence of 20 \u00b5M etoposide. Shown is mean\u00a0+s.d. Statistical analysis using ANOVA. ns, not significant.\n\nIn addition, we measured de novo p53 protein synthesis directly through metabolic labeling of proteins. For this purpose, we incubated HCT116 cells with the methionine analog azidohomoalanine (AHA) and quantified the relative abundance of labeled p53 protein in steady\u00a0state and in the presence of etoposide (Figure 3C). As expected, etoposide treatment increased the amount of newly synthesiszed p53 protein. However, we observed that p53 protein synthesis was not significantly different between cell lines containing or lacking the TP53 3\u2032UTR (Figure 3D and E). We therefore conclude that the mechanisms involved in regulating p53 protein synthesis and degradation are independent of the 3\u2032UTR.\n\n### The TP53 coding region has a dominant repressive effect on reporter gene expression and overrides the contribution of the 3\u2032UTR\n\nWe next wanted to understand why the removal of the 3\u2032UTR in an endogenous context had such a different effect compared to what was observed in previous studies. Notably, earlier studies that investigated 3\u2032UTR-dependent p53 regulation often used reporter genes as a proxy for endogenous p53 regulation (Table 1). We therefore cloned the human TP53 3\u2032UTR (1207 nucleotides) or the dUTR fragment (159 nucleotides) downstream of a GFP open reading frame and expressed these constructs in TP53-/- HCT116 cells (Figure 4A). In the context of this reporter, the full-length TP53 3\u2032UTR significantly reduced expression of both GFP mRNA and protein (Figure 4B and C) in comparison to the dUTR fragment or the commonly used BGH terminator sequence contained in the vector. This result was recapitulated when luciferase was used instead of GFP as a reporter, thus confirming previous findings (Figure 4\u2014figure supplement 1A). We also included the 3\u2032UTRs of three highly expressed human housekeeping genes (GAPDH, HPRT, and PGK1) to evaluate their effect on reporter gene expression. All three yielded higher reporter mRNA and protein expression than the full-length TP53 3\u2032UTR but resulted in lower reporter gene expression than the TP53 dUTR construct, suggesting that the remaining 3\u2032UTR fragment in dUTR cells is unlikely to contain additional repressive elements (Figure 4C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/65700/elife-65700-fig4-v2.jpg)\n\n**Figure 4.:** (A) FACS gating strategy to measure GFP protein expression in TP53-/- HCT116 cells. Live cells and single cells were used for downstream analysis. (B) Histogram plots from a representative FACS experiment. The gray area represents the untransfected, GFP-negative control population. Shown is GFP fluorescence intensity. (C) GFP protein levels were measured as mean fluorescence intensity (MFI) by FACS and GFP mRNA levels were measured by RT-qPCR using GAPDH as housekeeping gene in TP53-/- HCT116 cells. Shown is mean\u00a0+\u00a0s.d. of at least n\u00a0=\u00a03 independent experiments. CDS, coding sequence. Statistical analysis using ANOVA and Tukey\u2019s post-hoc test with *p<0.05, **p<0.01, ***p<0.0001; ns, not significant. See Figure 4\u2014figure supplement 1 for additional information.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65700/elife-65700-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Renilla luciferase activity after expression of the indicated constructs containing either the human dUTR fragment or full-length 3\u2032UTR in TP53-/- HCT116 cells. Shown is mean\u00a0+\u00a0s.d. of n\u00a0=\u00a03 independent experiments after normalization to firefly luciferase. (B) As in Figure 4C, but shown are additional constructs. GFP protein levels were quantified by FACS and GFP mRNA levels were measured by RT-qPCR using GAPDH as housekeeping gene in TP53-/- HCT116 cells. Shown is mean\u00a0+\u00a0s.d. of at least n\u00a0=\u00a04 independent experiments. CDS, coding sequence. Statistical analysis using ANOVA and Tukey\u2019s post-hoc test with *p<0.05, **p<0.01, ***p<0.0001; ns, not significant.\n\nWe created a reporter construct called TP53 3\u2032UTR (U-del) in which a\u00a0~\u00a040 nucleotide long U-rich element (URE) was deleted which contained the majority of previously annotated binding sites for RNA-binding proteins (Figure 1A). Relative to the original full-length 3\u2032UTR, this construct increased mRNA and protein expression of the reporter (Figure 4C). These data confirm the negative impact of this U-rich element on reporter gene expression.\n\nWe next asked whether the endogenous sequence context could explain the apparent discrepancies between reporter assays and endogenous regulation. To address this question, we examined whether different parts of the TP53 mRNA can impact the expression of our reporter. We added the TP53 coding region (CDS) to our reporter constructs. We observed that the CDS-GFP fusion protein was expressed at much lower levels than GFP alone (Figure 4C, left panel). This could be due, at least in part, to the high p53 turnover stimulated by MDM2. Surprisingly though, we also observed significantly reduced levels of p53 CDS-GFP reporter mRNA compared to the GFP reporter. These data suggest a strong contribution of the CDS to TP53 mRNA stability regulation (Figure 4C, right panel). Notably, the relative effect size of the CDS on the mRNA levels of the reporter was larger than with any of the tested 3\u2032UTR constructs. Moreover, in the context of the coding region, none of the tested 3\u2032UTR sequences (including the 3\u2032UTRs of different housekeeping genes) had any impact on mRNA or protein expression of the reporter (Figure 4C). Together, these results suggest that the coding region\u2019s impact on TP53 mRNA levels and protein expression is dominant over the 3\u2032UTR and masks the loss of the TP53 3\u2032UTR.\n\nAdditionally, we asked whether the TP53 5\u2032UTR contributes to the regulation of our reporter constructs. Inclusion of the sequence of the endogenous human TP53 5\u2032UTR to the reporter constructs that contained the TP53 CDS did not reveal additional effects on reporter mRNA or protein expression and reporter gene expression remained 3\u2032UTR-independent (Figure 4\u2014figure supplement 1B). Together, these results indicate that the TP53 3\u2032UTR and CDS functionally interact in the regulation of p53 expression and that the effects of the individual parts are not additive.\n\n### A Trp53 dUTR mouse model reveals 3\u2032UTR-independent p53 expression in vivo\n\nWe reasoned that 3\u2032UTR-dependent p53 expression regulation may still play a role in certain developmental stages, tissues or cell types. In order to explore this possibility, we created an analogous mouse model to investigate the role of the 3\u2032UTR in an organism. We used zygotic injection of a pair of CRISPR/Cas9 guide RNAs to create mice in which we deleted the non-essential part of the mouse Trp53 3\u2032UTR (Figure 5A). After backcrossing, we analyzed Trp53 dUTR mice harboring a homozygous 3\u2032UTR deletion (Figure 5\u2014figure supplement 1A\u2013C). These mice were viable, fertile, and did not show any developmental defects (Figure 5\u2014figure supplement 1D and E). We measured Trp53 mRNA expression in ten different tissues and did not detect significant differences between samples derived from WT and dUTR mice (Figure 5B). To examine the role of the 3\u2032UTR in the regulation of stimulus-dependent p53 expression, we performed total body irradiation of WT and dUTR mice. At 4 hr post-irradiation, p53 protein expression was upregulated in spleen, liver, and colon samples to a similar extent in WT and dUTR mice (Figure 5C, Figure 5\u2014figure supplement 2). We also analyzed expression of Cdkn1a, a highly dosage-sensitive p53 target gene that encodes the cell cycle regulator p21 (el-Deiry et al., 1993). Four hours after irradiation, Cdkn1a mRNA level were equally induced in WT and dUTR mice, suggesting that p53 target gene activation is 3\u2032UTR-independent in mouse tissues (Figure 5D). These results demonstrate that the non-essential part of the Trp53 3\u2032UTR is not required for steady-state or stimulus-dependent regulation of p53 mRNA or protein level in mice.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/65700/elife-65700-fig5-v2.jpg)\n\n**Figure 5.:** (A) Schematic of the murine Trp53 gene. The sequence deleted in dUTR cells is shown in blue. (B), Trp53 mRNA in tissues from WT and dUTR mice was normalized to Gapdh. Shown is mean +\u00a0s.d. from n\u00a0=\u00a03 independent experiments. Statistical analysis using ANOVA. ns, not significant. CRISPR/Cas9-mediated deletions at the nucleotide level are shown in Figure 5\u2014figure supplement 1C. (C) Representative immunoblots of p53 protein from tissues obtained 4 hr after total body irradiation. Gy, Gray. Tubulin or Actin serve as loading controls. Quantification of p53 protein expression values obtained from n\u00a0=\u00a03 mice is shown in Figure 5\u2014figure supplement 2. (D) Cdkn1a mRNA expression of samples from (C) was normalized to Gapdh. Shown is mean +\u00a0s.d. from three mice. Statistical analysis using ANOVA. ns, not significant.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65700/elife-65700-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Schematic of the mouse Trp53 gene. The sequence deleted in dUTR cells is shown in blue and binding sites of primers used for PCR screening are marked with arrows. (B) Screening-PCR of mice that were born after zygotic injection of CRISPR/Cas9 RNPs targeting the Trp53 3\u2032UTR. The predicted lengths of the PCR products from WT and dUTR alleles are indicated. Mice that were selected for validation by sequencing are labeled in red. (C) Sequence alignments of Trp53 dUTR alleles of founder select mice shown in (B). Male mice #3 and #26 harboring identical DNA deletions were used to establish a mouse colony. Primer sequences used for screening can be found in Supplementary file 1. (D) Genotypes of pups from 28 Trp53 dUTR heterozygous intercrosses. Unknown refers to mice that died before weening. (E) Weights of mice at 10\u201311 weeks of age are shown for WT, Trp53 dUTR heterozygous and homozygous males. Data are shown as mean\u00a0+s.d. with n\u00a0=\u00a06 in each group. Statistical analysis using ANOVA. ns, not significant.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65700/elife-65700-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Quantification p53 protein expression levels from immunoblot data in the indicated tissues. Tissue samples were analyzed 4 hr after total body irradiation as shown in Figure 5C. p53 expression levels were normalized to Actin or Tubulin, respectively and normalized to the maximum value within each data set. Data are shown as mean\u00a0+s.d. from three mice. Gy, Gray. Statistical analysis using ANOVA. ns, not significant.\n\n## Discussion\n\nThe lack of experimental data for 3\u2032UTR-mediated expression regulation in native gene contexts has been a longstanding problem in the field of post-transcriptional gene regulation. Until recently, research on 3\u2032UTR functions has mostly been conducted using overexpression systems and reporter gene assays. In contrast, gene knockouts that disrupt the production of proteins from endogenous gene loci have long been considered the gold standard for analyzing gene functions. The advent of CRISPR/Cas9 gene editing tools has made the generation of 3\u2032UTR knockouts using genomic deletion feasible in both cell lines and organisms.\n\nUsing these tools, we conclude that the endogenous TP53 3\u2032UTR does not have a significant impact on p53 abundance regulation under standard conditions used to study p53, including induction of DNA damage in HCT116 cells and total body irradiation of mice (Figures 1D, 2B, D, H, 5B and D). These observations are in stark contrast to the data obtained by overexpression of synthetic constructs in previous studies (Table 1). While we could reproduce earlier reporter studies with respect to a repressive function of the TP53 3\u2032UTR when used in isolation, we found that the 3\u2032UTR-mediated repressive effect was eliminated in the context of an mRNA containing the TP53 coding region (Figure 4C).\n\nNotably, the TP53 coding region was the most repressive sequence tested in our reporter system. Our data further support the recently established role of the coding region as a major regulator of mRNA stability and translation (Presnyak et al., 2015; Eraslan et al., 2019; Mauger et al., 2019; Narula et al., 2019; Wu et al., 2019). Genome-wide comparisons of human coding regions showed that codon optimality and RNA structure in coding regions have the potential to modulate mRNA stability and translation efficiency to a similar extent as 3\u2032UTRs (Narula et al., 2019). These effects were often found to be translation-dependent, suggesting the involvement of ribosome-associated protein complexes (Wu et al., 2019). The stronger contribution of the coding region is supported by the observation that the coding sequence of TP53 is more conserved than the 3\u2032UTR sequence. Although this is true for the majority of human genes, the conservation of the TP53 3\u2032UTR is among the 20% poorest conserved 3\u2032UTRs of protein coding genes. Given the fatal consequences of p53 deregulation, we speculate that a basic mechanism for p53 expression control may have first evolved in the coding region.\n\nMoreover, we found that the TP53 coding region abrogated the effect of additional suppressive elements in the 3\u2032UTR. These results corroborated our findings from endogenous p53 regulation, where all sequence elements are located on the same transcript. The impact of sequence context on the effect of cis-regulatory elements has been previously described: The 5\u2032UTR, codon optimality and splicing have all been shown to modulate the impact of 3\u2032UTR elements in specific genes (Cottrell et al., 2017; Paolantoni et al., 2018; Theil et al., 2018). However, most studies investigate the effect of untranslated regions in isolation and hence the prevalence of this phenomenon is entirely unknown. Mechanistically, a different sequence context may lead to changes in RNA folding which could create constraints on RNA-binding motif accessibility. In addition, saturation effects and epistatic interactions might limit or modulate the impact of additional suppressive cis-regulatory elements provided by the sequence context (Cottrell et al., 2018). Our data indicate that the different parts of mRNAs do not act autonomously, but are part of a regulatory unit and functionally cooperate with each other (Cottrell et al., 2017; ; Zrimec et al., 2020).\n\n3\u2032UTR knockouts can be used to discriminate between direct and indirect targets of miRNAs and RNA-binding proteins. Both miRNAs and RNA-binding proteins usually regulate hundreds of mRNAs. This makes it difficult to assign phenotypes to the deregulation of specific target mRNAs. Moreover, miRNAs and RNA-binding proteins often target several genes in the same pathway (Ben-Hamo and Efroni, 2015; Zanzoni et al., 2019). Therefore, the results of overexpression or knockdown experiments with miRNAs and RNA-binding proteins may be confounded. This problem has likely contributed to the hypothesis that the 3\u2032UTR is involved in p53 expression regulation. For example, the tumor suppressor RBM38 (also called RNPC1) was proposed to bind to the human TP53 3\u2032UTR resulting in lower p53 expression in the presence of RBM38 (Zhang et al., 2011). However, apart from TP53, RBM38 targets several other genes in the p53 pathway, including MDM2, PPMID, and CDKN1A (Shu et al., 2006; Xu et al., 2013; Zhang et al., 2015). Expression changes of these genes can indirectly upregulate p53 or result in phenotypes that mimic p53 overexpression. Indeed, while RBM38 knockout mice show phenotypes consistent with p53 hyperactivation (Zhang et al., 2014), Trp53 dUTR mice are apparently normal. This suggests that the repressive effects of RBM38 on p53, that were previously attributed to be mediated by direct 3\u2032UTR-dependent expression regulation, may be indirect. Similarly, HUR was shown to bind and regulate expression of both MDM2 and CDKN1A. HUR-deficient mouse embryonic fibroblasts have cell cycle defects that can be rescued by MDM2 overexpression (Wang et al., 2000; Ghosh et al., 2009).\n\nIn addition to the direct regulation of genes in the p53 pathway, we believe it is plausible that some prior studies observed p53 upregulation as a result of general cell stress. Overexpression and knockdown of RNA-binding proteins and miRNAs often result in expression changes across large sets of genes, which could lead to dysfunction in any number of pathways. As an integrator of the cellular stress response, p53 activation is uniquely sensitive to altered cell states. The anti-proliferative transcriptional program that is controlled by p53 is activated upon various stress signals not related to genotoxicity, including ribosomal stress, oxidative stress, loss of adhesion, and oncogene activation (Horn and Vousden, 2007). Hence, p53 protein stability may be indirectly regulated by these stress-response pathways as a function of p53 activation. These effects are highly reproducible and extremely difficult to control for.\n\nWe want to point out that a recent study that deleted endogenous 3\u2032UTR sequences in several cytokine genes also found discrepancies between reporter-based assays and gene expression from native contexts (Zhao et al., 2017). In other cases, endogenous 3\u2032UTR deletions led to the discovery of 3\u2032UTR-dependent mRNA localization phenotypes (Terenzio et al., 2018). Although our data indicate that p53 abundance regulation is 3\u2032UTR-independent, the 3\u2032UTR may still have important functions possibly through control of protein localization or protein activity as has been shown for other proteins (Berkovits and Mayr, 2015; Moretti et al., 2015; Terenzio et al., 2018; Lee and Mayr, 2019; Mayr, 2019; Bae et al., 2020; Fernandes and Buchan, 2020; Kwon et al., 2020). Finally, while our experimental conditions were highly similar to conditions tested in previous studies, we cannot fully exclude the possibility of 3\u2032UTR-dependent expression regulation in select cell types or under specific conditions.\n\nThe unexpected finding that the endogenous TP53 mRNA does not depend on the 3\u2032UTR for post-transcriptional expression regulation as predicted by reporter assays makes a strong case for revising standard experimental procedures. 3\u2032UTR knockouts allow to distinguish between direct and indirect effects associated with post-transcriptional regulation and they enable investigators to perform experiments under endogenous expression conditions. We think that this kind of genetic validation is critical for identifying the most promising gene targets for potential sequence-based miRNA therapeutics that aim to influence gene expression in human patients (Kasinski and Slack, 2011; Hermeking, 2012; Bonneau et al., 2019).\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>C57Bl/6J</td>\n      <td>Jackson Laboratory</td>\n      <td>#000664 RRID:IMSR_JAX:000664</td>\n      <td>used to generate TP53 dUTR mouse strain</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>Trp53 dUTR</td>\n      <td>This paper</td>\n      <td></td>\n      <td>C57Bl/6J background, see Materials and methods Supplementary file 1</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>FLP In T-REx 293</td>\n      <td>From Dr. Thomas Tuschl (Rockefeller University)</td>\n      <td>RRID:CVCL_U427</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>FLP In T-REx 293 TP53 dUTR</td>\n      <td>This paper</td>\n      <td></td>\n      <td>see Materials and methods Supplementary file 1</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>FLP In T-REx 293 TP53-/-</td>\n      <td>This paper</td>\n      <td></td>\n      <td>see Materials and methods Supplementary file 1</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HCT116</td>\n      <td>ATCC</td>\n      <td>ATCC CCL-247 RRID:CVCL_0291</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HCT116 Ctrl (two clones)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>see Materials and methods Supplementary file 1</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HCT116 TP53 dUTR (three clones)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>see Materials and methods Supplementary file 1</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HCT116 TP53-/-</td>\n      <td>This paper</td>\n      <td></td>\n      <td>see Materials and methods Supplementary file 1</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Cas9 protein with NLS</td>\n      <td>PNA Bio</td>\n      <td>CP01-20</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Costum Alt-R CRISPR Cas9 crRNA (Trp53_gRNA upstream)</td>\n      <td>IDT</td>\n      <td>GTGATGGGGACGGGATGCAG</td>\n      <td>used for CRISPR RNP formation</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Costum Alt-R CRISPR Cas9crRNA (Trp53_gRNA downstream)</td>\n      <td>IDT</td>\n      <td>CATAGGGTCCATATC CTCCA</td>\n      <td>used for CRISPR RNP formation</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Alt-R CRISPR-Cas9 tracrRNA</td>\n      <td>IDT</td>\n      <td>1072532</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-p53 clone DO-7 (mouse monoclonal)</td>\n      <td>Santa Cruz</td>\n      <td>sc-47698 RRID:AB_628083</td>\n      <td>(1:250)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-p53 clone PAb240 (mouse monoclonal)</td>\n      <td>Santa Cruz</td>\n      <td>sc-99 RRID:AB_628086</td>\n      <td>(1:250)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-p53 clone 1C12 (mouse monoclonal)</td>\n      <td>Cell Signaling</td>\n      <td>#2524 RRID:AB_331743</td>\n      <td>(1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Actin (rabbit polyclonal)</td>\n      <td>Sigma</td>\n      <td>A2066 RRID:AB_476693</td>\n      <td>(1:1,000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Tubulin (mouse monoclonal)</td>\n      <td>Sigma</td>\n      <td>T9026 RRID:AB_477593</td>\n      <td>(1:1,000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>IRDye 800CW anti-Mouse (goat polyclonal)</td>\n      <td>LI-COR</td>\n      <td>926\u201332210 RRID:AB_621842</td>\n      <td>(1:10,000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>IRDye 680RD anti-Rabbit (goat polyclonal)</td>\n      <td>LI-COR</td>\n      <td>926\u201368071 RRID:AB_10956166</td>\n      <td>(1:10,000)</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (synthetic)</td>\n      <td>pX330-U6-Chimeric_BB-CBh-hSpCas9</td>\n      <td>Addgene</td>\n      <td>RRID:Addgene_42230</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Homo sapiens)</td>\n      <td>pX330-gRNA dUTR1</td>\n      <td>This paper</td>\n      <td></td>\n      <td>see Materials and methods Supplementary file 1</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Homo sapiens)</td>\n      <td>pX330-gRNA dUTR2.1</td>\n      <td>This paper</td>\n      <td></td>\n      <td>see Materials and methods Supplementary file 1</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Homo sapiens)</td>\n      <td>pX330-gRNA dUTR2.2</td>\n      <td>This paper</td>\n      <td></td>\n      <td>see Materials and methods Supplementary file 1</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (synthetic)</td>\n      <td>pCDNA3-puro eGFP</td>\n      <td>PMID:30449617</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Homo sapiens)</td>\n      <td>pCDNA3-puro p53(CDS)-eGFP</td>\n      <td>This paper</td>\n      <td></td>\n      <td>see Materials and methods Supplementary file 1</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Homo sapiens)</td>\n      <td>pCDNA3-puro eGFP_TP53-3UTR</td>\n      <td>This paper</td>\n      <td></td>\n      <td>see Materials and methods Supplementary file 1</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Homo sapiens)</td>\n      <td>pCDNA3-puro p53(CDS)-eGFP_TP53-3UTR</td>\n      <td>This paper</td>\n      <td></td>\n      <td>see Materials and methods Supplementary file 1</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Homo sapiens)</td>\n      <td>pCDNA3-puro eGFP_dUTR</td>\n      <td>This paper</td>\n      <td></td>\n      <td>see Materials and methods Supplementary file 1</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Homo sapiens)</td>\n      <td>pCDNA3-puro p53(CDS)-eGFP_dUTR</td>\n      <td>This paper</td>\n      <td></td>\n      <td>see Materials and methods Supplementary file 1</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Homo sapiens)</td>\n      <td>pCDNA3-puro eGFP_TP53-3UTR(U-del)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>see Materials and methods Supplementary file 1</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Homo sapiens)</td>\n      <td>pCDNA3-puro p53(CDS)-eGFP_TP53-3UTR(U-del)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>see Materials and methods Supplementary file 1</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Homo sapiens)</td>\n      <td>pCDNA3-puro eGFP_GAPDH-3UTR</td>\n      <td>This paper</td>\n      <td></td>\n      <td>see Materials and methods Supplementary file 1</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Homo sapiens)</td>\n      <td>pCDNA3-puro p53(CDS)-eGFP_GAPDH-3UTR</td>\n      <td>This paper</td>\n      <td></td>\n      <td>see Materials and methods Supplementary file 1</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Homo sapiens)</td>\n      <td>pCDNA3-puro eGFP_HPRT-3UTR</td>\n      <td>This paper</td>\n      <td></td>\n      <td>see Materials and methods Supplementary file 1</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Homo sapiens)</td>\n      <td>pCDNA3-puro p53(CDS)-eGFP_HPRT-3UTR</td>\n      <td>This paper</td>\n      <td></td>\n      <td>see Materials and methods Supplementary file 1</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Homo sapiens)</td>\n      <td>pCDNA3-puro eGFP_PGK1-3UTR</td>\n      <td>This paper</td>\n      <td></td>\n      <td>see Materials and methods Supplementary file 1</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Homo sapiens)</td>\n      <td>pCDNA3-puro p53(CDS)-eGFP_PGK1-3UTR</td>\n      <td>This paper</td>\n      <td></td>\n      <td>see Materials and methods Supplementary file 1</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Homo sapiens)</td>\n      <td>pCDNA3-puro 5UTR_p53(CDS)-eGFP</td>\n      <td>This paper</td>\n      <td></td>\n      <td>see Materials and methods Supplementary file 1</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Homo sapiens)</td>\n      <td>pCDNA3-puro 5UTR_p53(CDS)-eGFP_dUTR</td>\n      <td>This paper</td>\n      <td></td>\n      <td>see Materials and methods Supplementary file 1</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Homo sapiens)</td>\n      <td>pCDNA3-puro 5UTR_p53(CDS)-eGFP_TP53-3UTR</td>\n      <td>This paper</td>\n      <td></td>\n      <td>see Materials and methods Supplementary file 1</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (synthetic)</td>\n      <td>psiCHECK-2</td>\n      <td>Promega</td>\n      <td>C8021</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Homo sapiens)</td>\n      <td>psiCHECK-2_TP53-3UTR</td>\n      <td>This paper</td>\n      <td></td>\n      <td>see Materials and methods Supplementary file 1</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Homo sapiens)</td>\n      <td>psiCHECK-2_dUTR</td>\n      <td>This paper</td>\n      <td></td>\n      <td>see Materials and methods Supplementary file 1</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>IRDye 680LT Streptavidin</td>\n      <td>LI-COR</td>\n      <td>926\u201368031</td>\n      <td>(1:2,000)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Nutlin-3</td>\n      <td>Seleckchem</td>\n      <td>S1061</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Etoposide</td>\n      <td>Sigma</td>\n      <td>341205\u201325 MG</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>5-Fluorouracil</td>\n      <td>Sigma</td>\n      <td>F6627</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>MTSEA-biotin-XX</td>\n      <td>Biotium</td>\n      <td>900661</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Biotin Alkyne (PEG4 carboxamide-Propargyl Biotin)</td>\n      <td>This paper</td>\n      <td>B10185</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>4-Thiouridine</td>\n      <td>MP Biomedicals</td>\n      <td>MP215213425</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Yeast tRNA</td>\n      <td>Invitrogen</td>\n      <td>15401029</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>dCTP [\u03b1\u221232P]</td>\n      <td>Perkin Elmer</td>\n      <td>NEG013H100UC</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Click-iT Protein Reaction Buffer Kit</td>\n      <td>Invitrogen</td>\n      <td>C10276</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Click-iT AHA (L-Azidohomoalanine)</td>\n      <td>Invitrogen</td>\n      <td>C10102</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>SuperScript IV Vilo Master Mix</td>\n      <td>Invitrogen</td>\n      <td>11756050</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Dual-Glo Luciferase Assay System</td>\n      <td>Promega</td>\n      <td>E2940</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Megaprime DNA labeling system, dCTP</td>\n      <td>Cytiva</td>\n      <td>RPN1606</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Lipofectmaine LTX Reagent with PLUS Reagent</td>\n      <td>Invitrogen</td>\n      <td>A12621</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Dynabeads Protein G for Immunoprecipitation</td>\n      <td>Invitrogen</td>\n      <td>10004D</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Dynabeads MyOne Streptavidin C1</td>\n      <td>Invitrogen</td>\n      <td>65001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Oligotex mRNA mini Kit</td>\n      <td>Quiagen</td>\n      <td>70022</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>ULTRAhyb Ultrasensistive Hybridization buffer</td>\n      <td>Invitrogen</td>\n      <td>AM8670</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>QuickExtract DNA Extraction Solution</td>\n      <td>Lucigen</td>\n      <td>QE09050</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>RNAlater-ICE Frozen Tissue Transition Solution</td>\n      <td>Invitrogen</td>\n      <td>AM7030</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>SuperScript IV VILO Master Mix with ezDNAse Enzyme</td>\n      <td>Invitrogen</td>\n      <td>11766050</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>FastStart Universal SYBR Green Master (ROX)</td>\n      <td>Roche/Sigma</td>\n      <td>4913850001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FlowJo (Version 10.5.3)</td>\n      <td>FlowJo, LLC</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Prism 8\u00a0for OS X (Version 8.4.3)</td>\n      <td>Graph Pad Software, LLC</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Image Studio (Version 5.2)</td>\n      <td>LI-COR Biosciences</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Generation of the Trp53 dUTR mouse strain using CRISPR/Cas9\n\nFemale C57Bl/6 mice between 3\u00a0and\u00a04 weeks of age were superovulated by intraperitoneal injection of Gestyl followed by human chorionic gonadotropin according to standard procedures (Behringer et al., 2014). After superovulation, the females were setup with male studs for mating. After mating, fertilized eggs were recovered at the one-cell stage from oviducts of superovulated female mice. One\u00a0to\u00a02 pl of CRISPR/Cas9 RNP complexes were injected into the pronuclei of fertilized eggs (see details below). Surviving eggs were surgically reimplanted into the oviducts of pseudo-pregnant females previously primed for pregnancy by mating with vasectomized males. The resulting pubs were screened using PCR for the deletion amplicon at 2 weeks of age (primers are listed in Supplementary file 1). Suitable candidates were further validated by sequencing.\n\n#### Preparation of CRISPR-Cas9 RNP injection mixture\n\nTwo target-specific crRNAs and a tracrRNA were purchased from IDT (Supplementary file 1). In two separate tubes, 2.5 \u00b5g of each crRNA was mixed with 5 \u00b5g tracrRNA, heated to 95\u00b0C for 5 min and then slowly cooled down to room temperature for annealing. The annealed duplexes were combined and mixed with 1 \u00b5g recombinant Cas9 enzyme (PNA Bio) and 625 ng in vitro transcribed Cas9 mRNA and the total volume was adjusted to 50 \u00b5l with sterile water.\n\n#### Screening for homozygous and heterozygous dUTR mice\n\nTwo heterozygous founder males with an identical 295-nucleotide deletion (Figure 4\u2014figure supplement 1C) were used to establish a mouse colony. Two or more rounds of backcrossing into wild-type C57Bl/6 mice were performed prior to analysis of Trp53 dUTR mouse phenotypes. Mouse genotypes from tail biopsies were determined using RT-PCR with specific probes designed for each Trp53 allele (Transnetyx, Cordova, TN).\n\n#### Irradiation of mice\n\nWhere indicated, adult mice underwent total body irradiation with 2 or 8 Gy using a Cs-137 source in a Gammacell 40 Exactor (MDS Nordion) at 77 cGy/min. Four hours later irradiated mice were euthanized to collect samples. All procedures were approved by the Institutional Animal Care and Use Committee at MSKCC under protocol 18-07-010.\n\n### Extraction of total RNA from mouse tissues and human cells for RT-qPCR analysis\n\nFor RNA extraction from mouse tissue, freshly collected tissue samples were flash-frozen and transferred to RNAlater-ICE Frozen Tissue Transition Solution (Invitrogen). After soaking overnight at \u221220\u00b0C, the tissue samples were homogenized in vials containing 1.4 mm ceramic beads (Fisherbrand) and 400 \u00b5l RLT buffer (Qiagen) using a bead mill (Bead Ruptor 24, Biotage). 200 \u00b5l of the tissue homogenate was mixed with 1 ml of TRI Reagent (Invitrogen). For extraction of RNA from cultured cells, the cell pellet was directly resuspended in TRI Reagent. Total RNA extraction was performed according to the manufacturer\u2019s protocol. The resulting RNA was treated with 2U DNaseI enzyme (NEB) for 30 min at 37\u00b0C, followed by acidic phenol extraction and isopropanol precipitation. To generate cDNA, about 200 ng of RNA was used in a reverse transcription reaction with SuperScript IV VILO Master Mix (Invitrogen). To measure the relative expression levels of mRNAs by RT-qPCR, FastStart Universal SYBR Green Master (ROX) from Roche was used together with gene-specific primers listed in Supplementary file 1. GAPDH/Gapdh was used as housekeeping gene.\n\n### Generation of the TP53 3\u2032UTR deletion in HCT116 and HEK293 cells\n\nTo generate CRISPR/Cas9 constructs, we annealed target-specific DNA sequences and inserted them into a BbsI-digested pX330-U6-Chimeric_BB-CBh-hSpCas9 vector (Addgene plasmid #42230) (Cong et al., 2013; Ran et al., 2013). One \u00b5g of each pX330-gRNA plasmid plus 0.1 \u00b5g of pmaxGFP plasmid (Lonza) were transiently transfected into exponentially growing cells using Lipofectamine 2000 (Invitrogen). Three days after transfection, single GFP-positive cells were sorted into 96-well plates and cultured until colonies formed. The genomic DNA from individual cell clones was extracted using QuickExtract DNA Extraction Solution (Lucigen) and screened by PCR for the deletion amplicon using the DNA primers listed in Supplementary file 1. In the case of HCT116 cells, we repeated the above-described process using two different heterozygous clones with a new downstream gRNA to obtain homozygous TP53 dUTR cells. Finally, to validate positive cell clones, all TP53 alleles of candidate clones were sequenced (Figure 1\u2014figure supplement 1A).\n\n### Generation of TP53 knock-out (KO) HCT116 and HEK293 cells\n\nHCT116 cells were purchased from ATCC and Flp-In T-REx 293 cells were a gift from the lab of Thomas Tuschl (Rockefeller University). The cell lines were not authenticated. They are free of mycoplasma. Mycoplasma detection was performed by DAPI staining. We generated our own TP53-deficient HEK293 and HCT116 cell lines by targeting exon 6 of the TP53 coding region with a gRNA causing frame shift mutations. Specifically, pX330 plasmid harboring a TP53-specific gRNA (Supplementary file 1) was transfected into HEK293 and HCT116 cells using Lipofectamine 2000 (Invitrogen). Two days later, the cells were split and seeded sparsely on a 10 cm dish in the presence of 10 \u00b5M Nutlin-3 (Seleckchem), which was used to select against growth of p53-competent cells. After 10 days, single colonies were picked, and individual clones were validated by western blot for loss of p53 expression.\n\n### Western blot analysis\n\nRIPA buffer (10 mM Tris-HCL pH 7.5, 150 mM NaCl, 0.5 mM EDTA, 0.1% SDS, 1% Triton X-100, 1% deoxycholate, Halt Protease Inhibitor Cocktail [Thermo Scientific]) was used to extract total protein from cultured cells or mouse tissues. Cell pellets were washed with PBS and directly resuspended in lysis buffer and incubated on ice for 30 min. Mouse tissue samples were homogenized in RIPA buffer using a bead mill in vials filled with 1.4 mm ceramic beads. Tissue lysates were sonicated to shear genomic DNA prior to removing insoluble components by centrifugation (10 min, 15,000 g). The proteins in the supernatant were precipitated by adding 0.11 volumes of ice-cold 100% Trichloroacetic acid (TCA) and incubated at \u221220\u00b0C for 1 hr. The samples were centrifuged (10 min, 15,000 g) and the pellet was washed twice in ice-cold acetone before resuspending in reducing 2x Laemmli buffer (Alfa Aesar). Proteins were separated by size on a 4\u201312% Bis-Tris SDS-PAGE gels (Invitrogen) and blotted on a 0.2 \u00b5m nitrocellulose membrane (Bio-Rad). The membrane was then incubated with primary antibody in Odyssey Blocking buffer (LI-COR) overnight at 4\u00b0C. The following primary antibodies were used in this study: anti-human p53 DO-7 (Santa Cruz, sc-47698, mouse, 1:250), anti-human p53 PAb240 (Santa Cruz, sc-99, mouse, 1:250), anti-mouse p53 1C12 (Cell Signaling, #2524, mouse, 1:500), anti-Actin (Sigma, A2008, rabbit, 1:1000), anti-Tubulin (Sigma, T9026, mouse 1:1000), and anti-GAPDH (Sigma, G8705, mouse, 1:1000). After washing, the membrane was incubated with fluorescently-labeled secondary antibodies (IRDye 800CW Goat anti-Mouse, 926\u201332210; IRDye 680LT Goat anti-Rabbit, 926\u201368071 LI-COR; IRDye 680LT Streptavidin 926\u201368031) and signals were recorded using the Odyssey Infrared Imaging system (LI-COR). Signals were quantified using the Image Studio 5.2 software.\n\n### Northern blot\n\nTotal RNA from cells was extracted as described above. Afterwards, polyA+\u00a0mRNA was enriched from total RNA using the Oligotex suspension (Qiagen) according to the manufacturer\u2019s instructions. 1.2 \u00b5g of polyA+\u00a0mRNA was glyoxylated and run on an agarose gel as described previously (Mayr and Bartel, 2009, dx.doi.org/10.17504/protocols.io.bqqymvxw). The RNA was transferred overnight using the Nytran SuPerCharge TurboBlotter system (Whatman) and UV-crosslinked.\n\nDNA probes complementary to the TP53 coding region or the 3\u2032UTR were labeled with dCTP [\u03b1-32P] using the Megaprime DNA labeling system (Cytiva). Primers used for probe synthesis from human cDNA are listed in Supplementary file 1. Labeled probes were denatured by heat for 5 min at 90\u00b0C and then incubated with the blot in ULTRAhyp Ultrasensitive Hybridization Buffer (Invitrogen) overnight at 42\u00b0C. The blot was washed three times and exposed on a phosphorimaging screen. The radioactive signal was acquired using the Fujifilm FLA700 phosphorimager.\n\n### Human cell culture and drug treatment\n\nHuman cell cultures were maintained in a 5% CO2/37\u00b0C humidified environment. HEK293 cells were cultured in DMEM (high glucose) and HCT116 cells were cultured in McCoy\u2019s 5A medium which were supplemented with 10% FBS and 1% Penicillin/Streptomycin. Where indicated, HCT116 cells were treated with etoposide (0.125\u201332 \u00b5M, Sigma), 5-fluorouracil (40 \u00b5M, Sigma), Nutlin-3 (1.25\u201320 \u00b5M, Seleckchem), or UV (50 J/m2) prior to downstream analysis.\n\n### Measurement of mRNA half-life\n\nTP53 mRNA half-lives were estimated following the protocol described by Russo et al., 2017 with minor modifications. Briefly, HCT116 cells were treated with 250 \u00b5M 4-thiouridine (4sU, MP Biomedicals) in the presence or absence of 20 \u00b5M etoposide for four hours. Additionally, reference samples with saturated 4sU-labeled RNA were generated by incubating HCT116 cells at a concentration of 100 \u00b5M 4sU for 3 days. After labeling, TRI Reagent (Invitrogen) was used to extract total RNA from cells. In the subsequent biotinylation reaction 40 \u00b5g of total RNA was mixed with 0.4 \u00b5g unlabeled yeast RNA, 10x biotinylation buffer (100 mM HEPES pH 7.5, 10 mM EDTA) and 10 \u00b5g MTSEA-biotin-XX (Biotium) in a total volume of 150 \u00b5l. The reaction was incubated for 30 min at room temperature and the RNA was recovered by ethanol precipitation. Then, half of the biotinylated RNA was mixed with 100 \u00b5M DTT and retained as the total RNA fraction. The other half was incubated with Dynabeads MyOne Streptavidin C1 magnetic beads (Invitrogen, blocked with 1% BSA and 1 \u00b5g/ml yeast tRNA) for 20 min at room temperature. Subsequently, the beads were washed three times with high-salt buffer (100 \u00b5M Tris-HCl pH 7.5, 1M NaCl and 0.1% NP40) using a magnet. The bead-bound, newly synthesized RNA fraction was eluted twice in 100 \u00b5M DTT and the resulting pooled RNA fraction was precipitated with ethanol. Total and newly synthesized RNA were reverse transcribed using the SuperScript VILO master mix kit. Relative enrichment of TP53 mRNA in newly synthesized over total fractions was determined by RT-qPCR relative to two yeast mRNAs (see Supplementary file 1 for primer sequences). Reference values obtained from fully labeled RNA samples were used to estimate the fraction of labeled TP53 mRNA (R) in each experiment. mRNA half-lives were then calculated according to the following formula:\n\n$$\nt_{\\frac{1}{2}}=-4h*\\frac{ln\u2061(2)}{ln\u2061(1-R)}\n$$\n\n\n\n$$\nR=\\frac{\\frac{newlysynthesized}{total}RNA(sample)}{\\frac{newlysynthesized}{total}RNA(reference)}\n$$\n\n### Detection of newly synthesized p53 protein by metabolic labeling\n\nHCT116 cells were grown in a 10 cm dish until 70\u201380% confluency. Cells were washed with PBS, and methionine-free McCoys medium was added for one hour to deplete cellular methionine reserves. Afterwards, Click-IT AHA (Invitrogen) was added to a final concentration of 50 \u00b5M and incubated for two hours at 37\u00b0C. Where indicated, 20 \u00b5M etoposide was added together with AHA.\n\nCells were trypsinized and cell pellets were resuspended in 1 ml lysis buffer (10 mM Tris-HCL pH 7.5, 150 mM NaCl, 0.5% NP-40, and protease inhibitors). After brief sonication, the cleared lysate was mixed with p53 antibody DO-7 (Santa Cruz, sc-47698) at a concentration of 1 \u00b5g/ml and incubated for 4 hr at 4\u00b0C while rotating. Equilibrated Dynabeads Protein G (Invitrogen) were added to each lysate and incubated for another hour at 4\u00b0C. The beads were separated by a magnet and washed three times with lysis buffer. Bead-bound, AHA-labeled p53 protein was biotinylated using the Click-IT AHA protein labeling kit (Invitrogen) according to the manufacturer\u2019s instructions. Free biotin was removed by washing the beads twice in PBS using a magnet. The beads were resuspended in Laemmli SDS sample buffer and heated to 95\u00b0C for 5 min. The samples were loaded on a 4\u201312% NuPAGE Bis-Tris gel (Invitrogen) and blotted on a nitrocellulose membrane (Bio-Rad). The blots were stained with IRDye680LT Streptavidin (LI-COR) and signals were recorded with the Odyssey Infrared Imager (LI-COR).\n\n### Reporter assays\n\n#### Constructs\n\nWe PCR-amplified the TP53 3\u2032UTR sequence (nucleotides 1380 to 2586 of the reference mRNA NM_000546, May 2018) from WT HCT116 cDNA. This sequence was cloned downstream of the stop codon in pcDNA3.1-puro-eGFP using EcoRI/NotI restriction enzymes. For the dUTR construct, cDNA from TP53 dUTR HCT116 cells was used to amplify the remaining 3\u2032UTR sequence after CRISPR-mediated deletion, representing a fusion of the first 12 and the last 147 nucleotides of the full-length TP53 3\u2032UTR. A TP53 3\u2032UTR construct with a deletion of a poly-U stretch (deletion of nucleotides 2123 to 2162 of the reference mRNA NM_000546, May 2018) was generated by overlap extension PCR with the primers listed in Supplementary file 1. The TP53 coding region, encoding the \u03b1 protein isoform (1182 nucleotides), was cloned upstream and in- frame of the GFP-cassette using HindIII/BamHI restriction sites. The 3\u2032UTRs of human GAPDH, HPRT and PGK1 housekeeping genes were PCR-amplified from a cDNA library with primers listed in Supplementary file 1 and inserted into the vector using EcoRV/NotI restriction sites. The 5\u2032UTR of human TP53 (nucleotides 1 to 202 of reference mRNA NM_000546, May 2018) was synthesized as a Geneblock from Genewiz and inserted into the vector upstream of the TP53 coding region using NheI/HindIII restriction sites. For luciferase reporter studies, the full-length 3\u2032UTR and dUTR sequences described above were cloned into a SmaI-digested psiCHECK2 (Promega) vector via blunt-end cloning.\n\n#### GFP reporter\n\nTP53-/- HCT116 cells were transfected with equimolar amounts of GFP-containing reporter constructs using Lipofectamine LTX Reagent (Invitrogen) according to the manufacturer\u2019s instructions. 24 hr after transfection, cells were harvested for analysis of GFP mRNA and protein expression. GFP protein levels were analyzed by flow cytometry using a BD LSRFortessa Flow Cytometer. Raw data were analyzed using the FlowJo software package and mean fluorescence intensity (MFI) values of live single cells were normalized to values obtained from GFP-BGH poly(A) constructs. mRNA abundance of the GFP reporter was measured using RT-qPCR as described above using primers listed in Supplementary file 1. The GFP reporter mRNA was normalized to GAPDH mRNA.\n\n#### Luciferase reporter assay\n\nLuciferase activity was measured 24 hr after transfection of equimolar amounts of psiCHECK2 plasmids (Promega) containing the TP53 3\u2032UTR, the dUTR sequence or no insert downstream of the Renilla luciferase translational stop codon. Cells were lysed in passive lysis buffer and Renilla and firefly luciferase activity were measured in duplicates using the Dual-Glo Luciferase Assay System (Promega) according to the manufacturer\u2019s instructions in a GloMax 96 Microplate Luminometer (Promega). Relative light units of Renilla luciferase were normalized to firefly luciferase activity.\n\n### Conservation analysis\n\nUCSC phastCons conservation scores for the human genome (hg19) were calculated from multiple alignments with 99 vertebrate species and the mean value for each 3\u2032UTR was obtained. The conservation analysis of binding sites in the 3\u2032UTR sequence as shown in Table 1 was performed by averaging the phyloP scores of the corresponding genomic regions (100way for human and 35way for mouse).\n\n### Statistics and reproducibility\n\nStatistical analysis of the mRNA and protein expression data was performed using a Student\u2019s t-test or ANOVA followed by a Tukey\u2019s multiple comparison test. We use ns (p>0.05), * 0.01\u00a0<\u00a0p\u00a0<\u00a00.05, ** 0.001\u00a0<\u00a0p\u00a0<\u00a00.01, and ***p<0.001 to indicate the levels of p-values in figures. No data were excluded. The results for immunoblotting are representative of at least three biologically independent experiments. All statistical analyses and visualizations were performed using GraphPad (Prism 8).\n",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "dda2a638-3c3e-404e-a2ba-2694a16815f8",
+      "submission_id": "62080971-8a38-4b87-afdd-7147ece93899",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ashish Lal, National Institutes of Health United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.65700.sa1](https://doi.org/10.7554/eLife.65700.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThrough a series of elegant data, this study is the first to show that the 3'UTR of p53 mRNA is not important for p53 expression. This work emphasizes the need for genetic approaches to study post-transcriptional gene regulation.\n\nDecision letter after peer review:\n\nThank you for sending your article entitled \"Endogenous p53 expression in human and mouse is not regulated by its 3\u2032UTR\" for peer review at eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Maureen Murphy as the Senior Editor.\n\nAlthough the Reviewers all acknowledged the novelty of your system and the rigor of the findings presented, all three felt that certain key experiments were missing, particularly regarding RNA half-life and translation, in both stressed and unstressed cells. After conferring, the reviewers felt that the amount of new work requested was likely to be considerable, and potentially prohibitive.\n\nReviewer #1:\n\nIn this manuscript the authors investigated the role of the 3'UTR of p53 mRNA on endogenous p53 expression in human and mouse cells. The authors utilized CRISPR/Cas9 to delete the p53 3'UTR and found that deletion of the 3'UTR does not significantly affect the expression of the p53 protein and that of p21 mRNA, a well-established transcriptional target of p53. Although the data presented are interesting and contradicts several previous reports from different labs where the p53 3'UTR was shown to be regulated by miRNAs and RNA-binding proteins such as HuR, there are many concerns that should be addressed before further consideration. Indeed, even if the authors find that the 3UTR of p53 is not important for basal p53 expression and p53 induction in response to the DNA damaging agent, from a broader perspective, the significance of these findings is unclear to this reviewer.\n\nSpecific comments that need to be addressed are:\n\n1. The authors should specifically describe how portions of the p53 3'UTR were determined to be essential or non-essential when determining the region to delete.\n\n2. P53 is known to play an important role in G1 arrest in response to DNA damage. For example, in HCT116 cells, loss of p53 results in almost no G1 arrest upon Doxorubicin treatment. The authors should determine if there are differences in cell cycle distribution between the WT, dUTR and p53KO cells upon Doxorubicin treatment (300 nM, 48 to 72 hr of continuous treatment).\n\n3. In Figure 3c, it is more beneficial to clone both the p53 coding sequence and the 3'UTR or dUTR fragment downstream of GFP, rather than having the coding sequence upstream and the 3'UTR downstream. Having the 3'UTR proximal to the coding sequence is more representative of biological conditions.\n\n4. It appears that the WT 293T or HCT116 cells are parental cells. This may not be a rigorous control because these cells were not transfected and did not go through the process of clonal selection during CRISPR/Cas9. The ideal control for the dUTR cell lines would be to use clonal cell lines generated in parallel to the dUTR cells using a non-targeting gRNA or a wild-type clone. All Western blots and RT-qPCR experiments should be repeated using one of these proper negative controls.\n\n5. p53 is regulated predominantly at the level of protein stability. Because miRNAs or RNA-binding proteins might be involved in fine-tuning p53 expression, the role of the 3'UTR might be underestimated if the immunoblots were not quantitated. The authors to provide quantifications of the immunoblot images, assuming they can use a detection system in the linear range.\n\n6. It is important to determine if deletion of the 3'UTR results in compensatory mechanisms to restore p53 expression. To test this, the authors should compare the stability of endogenous p53 protein between the WT clones and dUTR clones in HCT116 and HEK293T cells. Additionally, by S35 methionine pulse chase experiments, the authors should compare the rate of translation of endogenous p53 in HCT116 and HEK293T WT vs dUTR clones. Is it possible that deletion of the 3'UTR results in decreased translation and increased p53 protein stability to restore p53 expression? The experiments to address this question should be repeated at least 3 times to get statistically relevant data.\n\n7. The TP53 gene also expresses other p53 isoforms and an antisense transcript called Wrap53. Does deletion of the 3'UTR have any effect on the p53 isoforms and the antisense lncRNA? Addressing this could be important because loss of the p53 3UTR can affect the expression of these genes and profoundly alter the response of cells to DNA damaging agents.\n\n8. The authors claim that others have shown regulation of p53 3UTR using reporter assays only. However, endogenous p53 mRNA translation was shown to be regulated by HuR. PMID: 14517280, 12821781.\n\n9. In figure 1a, within the 3'UTR there is a particular segment in which binding sites for multiple RNA-binding proteins overlap. Is there any effect of deleting only this segment?\n\nReviewer #2:\n\nIn this interesting manuscript \"Endogenous p53 expression in human and mouse is not regulated by its 3\u2032UTR\" Mitschka and Mayr examine the gene-regulatory potential of the evolutionarily conserved 3'untranslated region (UTR) of the human and mouse p53 gene (TP53). Using CRISPR-Cas9-mediated gene editing they carefully deleted the entire 3'UTR in human cell lines and mice, leaving processing elements intact. They show that deleting the potential regulatory elements in the TP53 3'UTR does not influence steady state p53 protein expression, as well as p53 protein activation after genotoxic stress.\n\nThe authors strongly imply that the TP53 3'UTR does not play an important role in TP53 gene function, nevertheless, the conservation of recognizable regulatory elements, such as miRNA binding sites is difficult to square with a lack of function. It would seem necessary to adress this seeming contradiction constructively, considering that it appears to undercut the importance of untranslated regions \u2013 if the conserved UTR of a key gene, such as TP53 does not convey some function, are UTRs even important?\n\nThe presented experiments are unobjectionable and performed to a high standard. That being said, the author's assays, particularly the experiments relating to p53 activation under genotoxic stress mainly cover two aspects: a) translational regulation of the TP53 mRNA and b) posttranslational activation of p53 protein. Considering that the vast majority of the literature points to p53 being activated by genotoxic stress by increasing p53 protein halflife, mainly due to prevention of p53 ubiquitination by MDM2, it is not particularly surprising that once steady-state levels of p53 protein are set, the 3'UTR itself should not play any important role. It is furthermore not surprising that expression of their reporter with the GFP-p53CDS fusion is efficiently suppressed, given that its levels will be controlled by MDM2 in a posttranslational manner. What would happen if steady-state levels of p53 are manipulated, e.g. by simultaneous depletion of MDM2?\n\nWith p53 being a key protein for cell survival, it is conceivable that its levels are tightly controlled, possibly by multiple buffer systems, not just the UTR alone. E.g. the authors never test whether the half-life of the mRNA itself is impacted \u2013 in Figure 1c, they show a trend towards downregulation of steady-state mRNA levels; this in turn could indicate that either transcriptional activity or mRNA half-life are affected. Putting numbers on these parameters might shed light on the presence of additional buffer systems in the cell/mouse ensuring proper p53 protein levels in a sort of fail-safe mechanism.\n\nFinally, the authors do not explore the possibility that the effects of their knockouts can be buffered by compensatory mechanisms (e.g. described by the Stainier group that shows that for some genes acute loss by shRNA/siRNAs shows different and more severe phenotypes than gene editing). Of course, this is difficult to test; possibly rescue of full TP53 KO with constructs containing or lacking the TP53 UTR could shed some light on the mRNA dynamics.\n\nIn summary, by heavily relying on their genotoxic assays that are likely to depend on steady-state p53 protein levels, the authors may have been looking in the wrong place to observe an effect of the TP53 UTR on mRNA dynamics. While their main observation that TP53 UTR deletion by itself does not have a clear phenotype, and miRNA based therapies explored in the context of p53 are likely to fail, they miss the opportunity to address the question whether the TP53 UTR impacts mRNA dynamics and whether the presence of additional buffering mechanisms obscures a direct phenotype.\n\nThree major points to be considered:\n\n\u2013 mRNA halflife and transcription: Putting numbers on these parameters might shed light on the presence of additional buffer systems in the cell/mouse ensuring proper p53 protein levels in a sort of fail-safe mechanism.\n\n\u2013 Acute vs chronic loss of p53 UTR: possibly rescue of full TP53 KO with constructs containing or lacking the TP53 UTR could shed some light on the mRNA dynamics.\n\n\u2013 Considering that once p53 steady-state levels are set by the activity of MDM2, the effect of genotoxic stress may be predictable: What would happen if steady-state levels of p53 are manipulated, e.g. by simultaneous depletion of MDM2?\n\nReviewer #3:\n\nBy utilizing the CRISPR approach, authors specifically delete the majority of the 3'UTR from the endogenous p53 gene in multiple human cell lines as well in mouse. Their study revealed that deletion of the 3'UTR does not alter the mRNA as well as protein levels of p53 under normal as well as DNA damage. Based on these studies, the authors propose that unlike the findings of others in the literature, the 3'UTR does not seem to play crucial roles in regulating p53 mRNA levels or translation of the endogenous TP53 gene.\n\nIn general, this is a nicely articulated manuscript with interesting data. The data argue against the role of 3'UTR in the differential expression of p53. However the significance of the findings are not entirely clear to this reviewer, and it is felt that the authors may need to perform experiments to test the role of other elements (5'UTR as well as coding region) in regulating p53 stability as well as translation.\n\n1. The steady state levels of a protein is dictated by regulated translation versus protein degradation, and each of these processes are controlled by distinct sequence elements located within the transcript. Does the 3'UTR of p53 influence differential translation? The authors really should check the polysome association of WT as well dUTR p53 mRNA.\n\n2. Both the WT and the 3'UTR present in the dUTR constructs contain a small region, which based on earlier studies, can support the binding of a few RBPs and miRNAs. It cannot be completely ruled out that those interactions might influence the post transcriptional processing of the p53 mRNA. It might be worth doing an experiment in which the entire 3'UTR of the endogenous p53 could be replaced with the 3'UTR of a house-keeping gene to see the effect on p53 mRNA stability, polysome association and translation.\n\n3. The reporter assays indicated that both the 3'UTR as well as the CDS region contribute to the steady state levels of p53 mRNA. It is not clear why the dUTR alone containing reporter showed increased steady state levels of reporter mRNA compared to WT, if the 3'UTR of p53 does not have any function in regulating the stability of p53 mRNA. This needs to be better-explained.\n",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c716cb3f-67f4-4995-aaac-897b6903a848",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C1",
+      "claim": "The TP53 gene encodes the tumor suppressor p53 which is functionally inactivated in many human cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "The TP53 gene encodes the tumor suppressor p53 which is functionally inactivated in many human cancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in cancer biology, supported by extensive scientific literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "818103e1-9975-4b69-bdbd-02a7b8b15e63",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C2",
+      "claim": "Numerous studies suggested that 3\u2032UTR-mediated p53 expression regulation plays a role in tumorigenesis and could be exploited for therapeutic purposes.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerous studies suggested that 3\u2032UTR-mediated p53 expression regulation plays a role in tumorigenesis and could be exploited for therapeutic purposes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references prior research findings, as indicated by the phrase 'numerous studies suggested'.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "e828d1ec-efde-41da-aefb-948a13133729",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C3",
+      "claim": "Previous studies did not investigate post-transcriptional regulation of the native TP53 gene.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these studies did not investigate post-transcriptional regulation of the native TP53 gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the authors' review of the literature and their rationale for conducting the current study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "0cfc21bb-1ffe-416a-b142-9b89259f727b",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C4",
+      "claim": "CRISPR/Cas9 was used to delete the human and mouse TP53/Trp53 3\u2032UTRs while preserving endogenous mRNA processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we used CRISPR/Cas9 to delete the human and mouse TP53/Trp53 3\u2032UTRs while preserving endogenous mRNA processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "44f83f0c-6580-4d8c-a344-8065c339d328",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C5",
+      "claim": "The endogenous 3\u2032UTR is not involved in regulating p53 mRNA or protein expression neither in steady state nor after genotoxic stress.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed that the endogenous 3\u2032UTR is not involved in regulating p53 mRNA or protein expression neither in steady state nor after genotoxic stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary finding of the study, supported by experimental data from CRISPR/Cas9 deletion experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "886e4d6d-7ba1-4de2-9520-f9b819064adb",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C6",
+      "claim": "The isolated TP53 3\u2032UTR has repressive effects on reporter expression in reporter assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Using reporter assays, we confirmed the previously observed repressive effects of the isolated 3\u2032UTR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is confirmed by the authors' own reporter assay experiments and is consistent with previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "569fc4f2-0fef-4c3d-b884-b45bbeec574e",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C7",
+      "claim": "Addition of the TP53 coding region to the reporter had a dominant negative impact on expression that abrogated the contribution of the 3\u2032UTR.",
+      "claim_type": "EXPLICIT",
+      "source": "However, addition of the TP53 coding region to the reporter had a dominant negative impact on expression as its repressive effect was stronger and abrogated the contribution of the 3\u2032UTR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from the authors' reporter assay experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "6863ec17-66b9-4dcf-97db-da1a7238c8ec",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C8",
+      "claim": "p53 regulates expression of genes involved in cell cycle control, DNA repair, apoptosis, metabolism, and cell differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "p53 regulates expression of genes involved in cell cycle control, DNA repair, apoptosis, metabolism, and cell differentiation (Kastenhuber and Lowe, 2017), thus allowing cells to adequately respond to various stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kastenhuber and Lowe, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "dfc88dc5-3bdd-474f-8722-6022625e4baa",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C9",
+      "claim": "The TP53 gene is continuously transcribed even in unstressed cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to most other stress sensors, p53 is not dependent on de novo transcription as the TP53 gene is continuously transcribed even in unstressed cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about p53 regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "f4c1ecdf-5e7a-439a-b47a-5abc9a493c08",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C10",
+      "claim": "p53 protein levels are controlled by rapid protein degradation induced by MDM2.",
+      "claim_type": "EXPLICIT",
+      "source": "To avoid activation of p53 in unstressed cells, p53 protein levels are controlled by rapid protein degradation induced by MDM2 (Haupt et al., 1997; Kubbutat et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Haupt et al., 1997 and Kubbutat et al., 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "30db425c-c849-4364-839d-295874a7274a",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C11",
+      "claim": "More than half of all human cancers exhibit diminished p53 expression or function.",
+      "claim_type": "EXPLICIT",
+      "source": "Reduced levels or insufficient p53 activity are major risk factors for the development of cancer and more than half of all human cancers exhibit diminished p53 expression or function (Kastenhuber and Lowe, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kastenhuber and Lowe, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "8b5d87f4-63ef-4728-a42a-54fd128bce0a",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C12",
+      "claim": "Hyperactive p53 has been linked to impaired wound healing, obesity, and accelerated aging.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, hyperactive p53 has been linked to impaired wound healing, obesity, and accelerated aging (Rufini et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Rufini et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "ae084780-a0ce-4bce-b5d3-72d7d4ab9259",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C13",
+      "claim": "The human TP53 3\u2032UTR contains experimentally characterized binding sites for 23 miRNAs, 1 lncRNA, and 6 RNA-binding proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The human TP53 3\u2032UTR contains experimentally characterized binding sites for 23 miRNAs, 1 lncRNA, and 6 RNA-binding proteins (Haronikova et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Haronikova et al., 2019 and is also shown in Table 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "ab768916-f2a5-4c5c-b2f7-f1ca62afce2d",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C14",
+      "claim": "A large number of experiments demonstrated the repressive nature of the TP53 3\u2032UTR using synthetic reporter assays under steady-state conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "A large number of experiments demonstrated the repressive nature of the TP53 3\u2032UTR using synthetic reporter assays under steady-state conditions (Table 1; Haronikova et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Haronikova et al., 2019 and Table 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "0c57c258-b427-4aa7-adce-1fdf69b2d4dd",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C15",
+      "claim": "The TP53 3\u2032UTR was shown to facilitate an increase in p53 translation after genotoxic stress.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the TP53 3\u2032UTR was shown to facilitate an increase in p53 translation after genotoxic stress (Fu and Benchimol, 1997; Mazan-Mamczarz et al., 2003; Chen and Kastan, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Fu and Benchimol, 1997; Mazan-Mamczarz et al., 2003; and Chen and Kastan, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "509717f9-5960-4972-a98d-6a0b112fa31f",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C16",
+      "claim": "The homozygous 3\u2032UTR deletion removed 1048 nucleotides, corresponding to 88% of the 3\u2032UTR in wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The homozygous 3\u2032UTR deletion, called \u0394UTR (dUTR), removed 1048 nucleotides, corresponding to 88% of the 3\u2032UTR in wild-type (WT) cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the specific deletion created in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "cee609ba-12e9-49cc-99cd-9af2221ac069",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C17",
+      "claim": "The deletion affected almost all previously reported binding sites for regulatory miRNAs, lncRNAs, and RNA-binding proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The deletion affected almost all previously reported binding sites for regulatory miRNAs, lncRNAs, and RNA-binding proteins (Figure 1A, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Figure 1A and Table 1 showing the binding sites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "4e427aea-19ce-47f6-8b77-8497f78ad4b2",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C18",
+      "claim": "Removal of the endogenous 3\u2032UTR does not influence p53 steady-state mRNA levels.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that removal of the endogenous 3\u2032UTR does not influence p53 steady-state mRNA levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on RT-qPCR data shown in Figure 1D and Figure 1\u2014figure supplement 1B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "4984bce5-97ec-4ea6-85c7-c34492913bf1",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C19",
+      "claim": "The 3\u2032UTR does not impact TP53 mRNA half-life.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our data suggest that the 3\u2032UTR does not impact TP53 mRNA level or half-life.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on 4sU labeling experiments shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "d29304bb-4b18-462b-80c6-9631fe56fc08",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C20",
+      "claim": "There is no significant difference in p53 protein level between WT and dUTR cells in steady-state conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not detect a significant difference in p53 protein level between WT and dUTR cells in steady-state conditions (Figure 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on western blot data shown in Figure 2A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "104da68d-9c5e-4bba-bd6d-6b921cbe8c63",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C21",
+      "claim": "Under steady-state conditions, the TP53 3\u2032UTR is not necessary for the regulation of p53 protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that under steady-state conditions, the TP53 3\u2032UTR is not necessary for the regulation of p53 protein levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the western blot data showing no difference in p53 protein levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "17283ea6-df93-4d40-af3f-e03e08478bfe",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C22",
+      "claim": "Concentration-dependent upregulation of p53 protein expression by etoposide was similar in parental, control clone, and dUTR cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that concentration-dependent upregulation of p53 protein expression was similar in parental, control clone, and dUTR cells (Figure 2C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on western blot data shown in Figure 2C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "85c0c331-2760-4c0d-a400-185a9b127a10",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C23",
+      "claim": "The endogenous TP53 3\u2032UTR is not required for p53 expression regulation neither in steady state nor after DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore concluded that the endogenous TP53 3\u2032UTR is not required for p53 expression regulation neither in steady state nor after DNA damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on multiple experiments including etoposide, 5-fluorouracil, and UV treatments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "30ca63ae-ce9b-40c2-a72f-9fa8cdca5de0",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C24",
+      "claim": "The concentration-dependent increase of p53 protein with Nutlin-3 treatment was similar between parental, control clone, and dUTR cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we observed that the concentration-dependent increase of p53 protein was similar between parental, control clone, and dUTR cells (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on western blot data shown in Figure 3A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "51c2439d-ef39-43af-9d7b-ad8bd8ce1f4d",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C25",
+      "claim": "p53 protein synthesis was not significantly different between cell lines containing or lacking the TP53 3\u2032UTR.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we observed that p53 protein synthesis was not significantly different between cell lines containing or lacking the TP53 3\u2032UTR (Figure 3D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on metabolic labeling experiments shown in Figure 3D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "10ae9e72-299d-48bc-bb8b-7e0f4bc920c8",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C26",
+      "claim": "The mechanisms involved in regulating p53 protein synthesis and degradation are independent of the 3\u2032UTR.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore conclude that the mechanisms involved in regulating p53 protein synthesis and degradation are independent of the 3\u2032UTR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the metabolic labeling and Nutlin-3 experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "3818232c-0c78-460f-afa9-bfaeb2b187f1",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C27",
+      "claim": "The full-length TP53 3\u2032UTR significantly reduced expression of both GFP mRNA and protein in reporter assays.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of this reporter, the full-length TP53 3\u2032UTR significantly reduced expression of both GFP mRNA and protein (Figure 4B and C) in comparison to the dUTR fragment or the commonly used BGH terminator sequence contained in the vector.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on reporter assay data shown in Figure 4B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "4955487d-a180-45fc-aabf-f67b679283d6",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C28",
+      "claim": "The TP53 coding region was expressed at much lower levels than GFP alone in reporter assays.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the CDS-GFP fusion protein was expressed at much lower levels than GFP alone (Figure 4C, left panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on reporter assay data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "68082267-6c44-4c24-a799-ba6e991b6ff7",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C29",
+      "claim": "The TP53 coding region significantly reduced levels of reporter mRNA compared to the GFP reporter.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly though, we also observed significantly reduced levels of p53 CDS-GFP reporter mRNA compared to the GFP reporter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on RT-qPCR data from reporter assays shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "0c37232b-ea23-4f22-8c76-90440dcb6e85",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C30",
+      "claim": "The relative effect size of the CDS on the mRNA levels of the reporter was larger than with any of the tested 3\u2032UTR constructs.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the relative effect size of the CDS on the mRNA levels of the reporter was larger than with any of the tested 3\u2032UTR constructs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of reporter assay data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "3a230437-7103-43ab-9c7d-84e5fadaf838",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C31",
+      "claim": "In the context of the coding region, none of the tested 3\u2032UTR sequences had any impact on mRNA or protein expression of the reporter.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in the context of the coding region, none of the tested 3\u2032UTR sequences (including the 3\u2032UTRs of different housekeeping genes) had any impact on mRNA or protein expression of the reporter (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on reporter assay data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "ba1cf812-b247-4009-b0d0-17d84b02da13",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C32",
+      "claim": "The coding region's impact on TP53 mRNA levels and protein expression is dominant over the 3\u2032UTR and masks the loss of the TP53 3\u2032UTR.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that the coding region's impact on TP53 mRNA levels and protein expression is dominant over the 3\u2032UTR and masks the loss of the TP53 3\u2032UTR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the reporter assay data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "914c4cb5-51dc-4380-ad46-531bbe22f812",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C33",
+      "claim": "Trp53 dUTR mice were viable, fertile, and did not show any developmental defects.",
+      "claim_type": "EXPLICIT",
+      "source": "These mice were viable, fertile, and did not show any developmental defects (Figure 5\u2014figure supplement 1D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on observations of the mouse model shown in Figure 5\u2014figure supplement 1D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "47935c96-ac92-4e55-aeb3-e15b3f81e76e",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C34",
+      "claim": "There were no significant differences in Trp53 mRNA expression between samples derived from WT and dUTR mice across ten different tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured Trp53 mRNA expression in ten different tissues and did not detect significant differences between samples derived from WT and dUTR mice (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RT-qPCR data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "2528436e-385f-4337-b44c-1739f2200a81",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C35",
+      "claim": "At 4 hr post-irradiation, p53 protein expression was upregulated in spleen, liver, and colon samples to a similar extent in WT and dUTR mice.",
+      "claim_type": "EXPLICIT",
+      "source": "At 4 hr post-irradiation, p53 protein expression was upregulated in spleen, liver, and colon samples to a similar extent in WT and dUTR mice (Figure 5C, Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on western blot data shown in Figure 5C and Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "59d40544-d820-41b5-a41d-dbc071c865ca",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C36",
+      "claim": "Four hours after irradiation, Cdkn1a mRNA levels were equally induced in WT and dUTR mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Four hours after irradiation, Cdkn1a mRNA level were equally induced in WT and dUTR mice, suggesting that p53 target gene activation is 3\u2032UTR-independent in mouse tissues (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RT-qPCR data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "b4503802-482a-438f-ad80-968857c7ff20",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C37",
+      "claim": "The non-essential part of the Trp53 3\u2032UTR is not required for steady-state or stimulus-dependent regulation of p53 mRNA or protein level in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that the non-essential part of the Trp53 3\u2032UTR is not required for steady-state or stimulus-dependent regulation of p53 mRNA or protein level in mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the mouse model data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "5097b4f9-1d08-4549-b9df-7aa66b809faf",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C38",
+      "claim": "The endogenous TP53 mRNA does not depend on the 3\u2032UTR for post-transcriptional expression regulation as predicted by reporter assays.",
+      "claim_type": "EXPLICIT",
+      "source": "The unexpected finding that the endogenous TP53 mRNA does not depend on the 3\u2032UTR for post-transcriptional expression regulation as predicted by reporter assays makes a strong case for revising standard experimental procedures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the discrepancy between endogenous and reporter assay results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "50bccac1-4217-4064-9028-07307b3ba9fc",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C39",
+      "claim": "The TP53 coding region is the most repressive sequence tested in the reporter system.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the TP53 coding region was the most repressive sequence tested in our reporter system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on reporter assay data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "6f7a2aa0-a6d9-41e4-99b5-fd0d366ccd7c",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C40",
+      "claim": "Codon optimality and RNA structure in coding regions have the potential to modulate mRNA stability and translation efficiency to a similar extent as 3\u2032UTRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide comparisons of human coding regions showed that codon optimality and RNA structure in coding regions have the potential to modulate mRNA stability and translation efficiency to a similar extent as 3\u2032UTRs (Narula et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Narula et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "e79963f8-a93c-4735-83e0-258bcb682997",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C41",
+      "claim": "The coding sequence of TP53 is more conserved than the 3\u2032UTR sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "The stronger contribution of the coding region is supported by the observation that the coding sequence of TP53 is more conserved than the 3\u2032UTR sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on conservation analysis mentioned in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "d4c39013-0c77-4b01-8c2c-9753ec09447b",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C42",
+      "claim": "The conservation of the TP53 3\u2032UTR is among the 20% poorest conserved 3\u2032UTRs of protein coding genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Although this is true for the majority of human genes, the conservation of the TP53 3\u2032UTR is among the 20% poorest conserved 3\u2032UTRs of protein coding genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on conservation analysis mentioned in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "33dbc03f-714e-4de2-bc79-4cf6e5b3fc8c",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C43",
+      "claim": "The TP53 coding region abrogated the effect of additional suppressive elements in the 3\u2032UTR.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we found that the TP53 coding region abrogated the effect of additional suppressive elements in the 3\u2032UTR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on reporter assay data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "993abd74-d809-4922-b917-53735830d9b1",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C44",
+      "claim": "The 5\u2032UTR, codon optimality and splicing have all been shown to modulate the impact of 3\u2032UTR elements in specific genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The impact of sequence context on the effect of cis-regulatory elements has been previously described: The 5\u2032UTR, codon optimality and splicing have all been shown to modulate the impact of 3\u2032UTR elements in specific genes (Cottrell et al., 2017; Paolantoni et al., 2018; Theil et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Cottrell et al., 2017; Paolantoni et al., 2018; and Theil et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "de053264-9574-48a7-b359-352f2897a9e2",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C45",
+      "claim": "The different parts of mRNAs do not act autonomously, but are part of a regulatory unit and functionally cooperate with each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data indicate that the different parts of mRNAs do not act autonomously, but are part of a regulatory unit and functionally cooperate with each other (Cottrell et al., 2017; ; Zrimec et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the authors' data and is supported by citations to Cottrell et al., 2017 and Zrimec et al., 2020.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "63853461-b6d4-45cb-aa81-27d40e6bbf15",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C46",
+      "claim": "3\u2032UTR knockouts can be used to discriminate between direct and indirect targets of miRNAs and RNA-binding proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "3\u2032UTR knockouts can be used to discriminate between direct and indirect targets of miRNAs and RNA-binding proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general principle inferred from the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "52c3d869-aec6-4d2a-9ee2-6a5217fc3f1d",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C47",
+      "claim": "miRNAs and RNA-binding proteins usually regulate hundreds of mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Both miRNAs and RNA-binding proteins usually regulate hundreds of mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about miRNA and RNA-binding protein function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "7f259b82-29b4-4e1c-8203-0f5f7c145524",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C48",
+      "claim": "miRNAs and RNA-binding proteins often target several genes in the same pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, miRNAs and RNA-binding proteins often target several genes in the same pathway (Ben-Hamo and Efroni, 2015; Zanzoni et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ben-Hamo and Efroni, 2015 and Zanzoni et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "bb9a4f17-eec3-4f9a-9a7c-f73e6f12f882",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C49",
+      "claim": "RBM38 targets several other genes in the p53 pathway, including MDM2, PPMID, and CDKN1A.",
+      "claim_type": "EXPLICIT",
+      "source": "However, apart from TP53, RBM38 targets several other genes in the p53 pathway, including MDM2, PPMID, and CDKN1A (Shu et al., 2006; Xu et al., 2013; Zhang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Shu et al., 2006; Xu et al., 2013; and Zhang et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "cd74c877-79b2-4b79-a7d2-56008598ef5a",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C50",
+      "claim": "RBM38 knockout mice show phenotypes consistent with p53 hyperactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, while RBM38 knockout mice show phenotypes consistent with p53 hyperactivation (Zhang et al., 2014), Trp53 dUTR mice are apparently normal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Zhang et al., 2014 and the authors' own data on Trp53 dUTR mice.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "64b615b0-025a-4ba6-a0f3-aef1b9517302",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C51",
+      "claim": "The repressive effects of RBM38 on p53, that were previously attributed to be mediated by direct 3\u2032UTR-dependent expression regulation, may be indirect.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the repressive effects of RBM38 on p53, that were previously attributed to be mediated by direct 3\u2032UTR-dependent expression regulation, may be indirect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparison of RBM38 knockout and Trp53 dUTR mice phenotypes.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "5b4144bb-1c44-45b0-b5e8-fd97ba36f2f0",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C52",
+      "claim": "HUR was shown to bind and regulate expression of both MDM2 and CDKN1A.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, HUR was shown to bind and regulate expression of both MDM2 and CDKN1A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about HUR function.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "bbce8a4d-1b3c-40f3-be86-a5d621ba055b",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C53",
+      "claim": "HUR-deficient mouse embryonic fibroblasts have cell cycle defects that can be rescued by MDM2 overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "HUR-deficient mouse embryonic fibroblasts have cell cycle defects that can be rescued by MDM2 overexpression (Wang et al., 2000; Ghosh et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Wang et al., 2000 and Ghosh et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "e9c986df-bbd6-4e02-9687-762ddbf16ed6",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C54",
+      "claim": "Overexpression and knockdown of RNA-binding proteins and miRNAs often result in expression changes across large sets of genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression and knockdown of RNA-binding proteins and miRNAs often result in expression changes across large sets of genes, which could lead to dysfunction in any number of pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is general knowledge about the effects of manipulating RNA-binding proteins and miRNAs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "16f50101-1d3a-4e32-a157-d2421a3c8194",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C55",
+      "claim": "p53 activation is uniquely sensitive to altered cell states.",
+      "claim_type": "EXPLICIT",
+      "source": "As an integrator of the cellular stress response, p53 activation is uniquely sensitive to altered cell states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about p53 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "52162556-61b3-4032-ad27-1168229a03f3",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C56",
+      "claim": "The anti-proliferative transcriptional program that is controlled by p53 is activated upon various stress signals not related to genotoxicity, including ribosomal stress, oxidative stress, loss of adhesion, and oncogene activation.",
+      "claim_type": "EXPLICIT",
+      "source": "The anti-proliferative transcriptional program that is controlled by p53 is activated upon various stress signals not related to genotoxicity, including ribosomal stress, oxidative stress, loss of adhesion, and oncogene activation (Horn and Vousden, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Horn and Vousden, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "328f6085-129a-4fcc-85b4-59e6c3ec38b9",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C57",
+      "claim": "A recent study that deleted endogenous 3\u2032UTR sequences in several cytokine genes also found discrepancies between reporter-based assays and gene expression from native contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "We want to point out that a recent study that deleted endogenous 3\u2032UTR sequences in several cytokine genes also found discrepancies between reporter-based assays and gene expression from native contexts (Zhao et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Zhao et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "3da1bb99-7091-4e4e-b669-d6a65d2c26ee",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C58",
+      "claim": "In other cases, endogenous 3\u2032UTR deletions led to the discovery of 3\u2032UTR-dependent mRNA localization phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "In other cases, endogenous 3\u2032UTR deletions led to the discovery of 3\u2032UTR-dependent mRNA localization phenotypes (Terenzio et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Terenzio et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "6737fc85-230c-4ae1-ad87-10083569d5cf",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C59",
+      "claim": "The 3\u2032UTR may still have important functions possibly through control of protein localization or protein activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Although our data indicate that p53 abundance regulation is 3\u2032UTR-independent, the 3\u2032UTR may still have important functions possibly through control of protein localization or protein activity as has been shown for other proteins (Berkovits and Mayr, 2015; Moretti et al., 2015; Terenzio et al., 2018; Lee and Mayr, 2019; Mayr, 2019; Bae et al., 2020; Fernandes and Buchan, 2020; Kwon et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on findings in other proteins, supported by multiple citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "31c1e496-d86e-46a0-a1e7-4b2c5c741692",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C60",
+      "claim": "3\u2032UTR knockouts allow to distinguish between direct and indirect effects associated with post-transcriptional regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "3\u2032UTR knockouts allow to distinguish between direct and indirect effects associated with post-transcriptional regulation and they enable investigators to perform experiments under endogenous expression conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general principle inferred from the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "15076438-fea6-4a05-a2f2-f4c487172660",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C61",
+      "claim": "Genetic validation is critical for identifying the most promising gene targets for potential sequence-based miRNA therapeutics.",
+      "claim_type": "EXPLICIT",
+      "source": "We think that this kind of genetic validation is critical for identifying the most promising gene targets for potential sequence-based miRNA therapeutics that aim to influence gene expression in human patients (Kasinski and Slack, 2011; Hermeking, 2012; Bonneau et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an opinion based on the study's findings, supported by citations to Kasinski and Slack, 2011; Hermeking, 2012; and Bonneau et al., 2019.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "d94f4ea8-5424-497e-9e5a-08e32bb93085",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C62",
+      "claim": "Northern blot analysis confirmed intact 3\u2032 end processing of the mRNA and expression of the expected shorter TP53 mRNA in dUTR cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed intact 3\u2032 end processing of the mRNA by Northern blot analysis and observed expression of the expected shorter TP53 mRNA in dUTR cells (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on Northern blot data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "4bb4d9b7-83d9-41d7-b3a1-308d2932805c",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C63",
+      "claim": "One control clone showed slightly increased TP53 mRNA level compared to the parental WT cell line.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that one control clone showed slightly increased TP53 mRNA level compared to the parental WT cell line (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RT-qPCR data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "d0d13eab-b717-4fb7-896f-0c10c47feb1e",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C64",
+      "claim": "All clones exhibited a slightly reduced TP53 mRNA half-life in comparison to the parental WT cell line.",
+      "claim_type": "EXPLICIT",
+      "source": "However, all clones exhibited a slightly reduced TP53 mRNA half-life in comparison to the parental WT cell line (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on 4sU labeling data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "a10074e2-43e8-40d8-89a4-b05fcbccb661",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C65",
+      "claim": "The slightly reduced TP53 mRNA half-life in all clones might be caused by metabolic changes occurring during clonal expansion of the cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "This might be caused by metabolic changes occurring during clonal expansion of the cell lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation to explain the observed reduction in mRNA half-life.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "d59648e8-c158-4df7-99f4-fede18ed65ef",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C66",
+      "claim": "There were no differences in the expression pattern of p53 protein isoforms between dUTR and WT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a different monoclonal p53 antibody with broad isoform specificity, we found no differences in the expression pattern in p53 protein isoforms between dUTR and WT cells (Figure 2\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on western blot data shown in Figure 2\u2014figure supplement 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "eea09233-0b91-4a4f-b451-7ca0234bf721",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C67",
+      "claim": "Etoposide treatment robustly upregulated p53 protein across all cell lines, but with no significant differences in p53 expression between WT and dUTR cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These treatments robustly upregulated p53 protein across all cell lines, but with no significant differences in p53 expression between WT and dUTR cells (Figure 2G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on western blot data shown in Figure 2G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "193fe0c0-141e-4770-9757-b654b9ede779",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C68",
+      "claim": "p53 protein turnover is primarily regulated by the ubiquitin ligase MDM2.",
+      "claim_type": "EXPLICIT",
+      "source": "p53 protein turnover is primarily regulated by the ubiquitin ligase MDM2 (Momand et al., 1992; Haupt et al., 1997; Kubbutat et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Momand et al., 1992; Haupt et al., 1997; and Kubbutat et al., 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "116a33d9-564a-4932-8641-980cedbd5f09",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C69",
+      "claim": "Transcription of MDM2 itself is activated by p53.",
+      "claim_type": "EXPLICIT",
+      "source": "As transcription of MDM2 itself is activated by p53, the expression of both proteins is balanced by a negative feedback loop that could obscure a change in p53 synthesis rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the p53-MDM2 feedback loop.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "6ad1c4fb-426b-488f-9881-8840174c6bfe",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C70",
+      "claim": "Etoposide treatment increased the amount of newly synthesized p53 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, etoposide treatment increased the amount of newly synthesiszed p53 protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on metabolic labeling data shown in Figure 3D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "8bf7dffa-c518-4019-bece-b66be338e7f2",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C71",
+      "claim": "The full-length TP53 3\u2032UTR resulted in lower reporter gene expression than the TP53 dUTR construct.",
+      "claim_type": "EXPLICIT",
+      "source": "All three yielded higher reporter mRNA and protein expression than the full-length TP53 3\u2032UTR but resulted in lower reporter gene expression than the TP53 dUTR construct, suggesting that the remaining 3\u2032UTR fragment in dUTR cells is unlikely to contain additional repressive elements (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on reporter assay data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "c69ab9b1-dbe4-4f18-a21b-873aa5761a13",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C72",
+      "claim": "The remaining 3\u2032UTR fragment in dUTR cells is unlikely to contain additional repressive elements.",
+      "claim_type": "EXPLICIT",
+      "source": "All three yielded higher reporter mRNA and protein expression than the full-length TP53 3\u2032UTR but resulted in lower reporter gene expression than the TP53 dUTR construct, suggesting that the remaining 3\u2032UTR fragment in dUTR cells is unlikely to contain additional repressive elements (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the comparison of reporter expression levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "e866e666-82bd-4210-84bc-e0c9ce087c18",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C73",
+      "claim": "A reporter construct with a deletion of a U-rich element increased mRNA and protein expression relative to the original full-length 3\u2032UTR.",
+      "claim_type": "EXPLICIT",
+      "source": "We created a reporter construct called TP53 3\u2032UTR (U-del) in which a ~ 40 nucleotide long U-rich element (URE) was deleted which contained the majority of previously annotated binding sites for RNA-binding proteins (Figure 1A). Relative to the original full-length 3\u2032UTR, this construct increased mRNA and protein expression of the reporter (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on reporter assay data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "143ba1d9-7b06-4bb1-a331-eea8621e5aa8",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C74",
+      "claim": "The U-rich element has a negative impact on reporter gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "These data confirm the negative impact of this U-rich element on reporter gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the increased expression when the U-rich element is deleted.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "8d3e6de8-fd03-40d3-abac-4114fb5bab75",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C75",
+      "claim": "The CDS-GFP fusion protein was expressed at much lower levels than GFP alone, which could be due, at least in part, to the high p53 turnover stimulated by MDM2.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the CDS-GFP fusion protein was expressed at much lower levels than GFP alone (Figure 4C, left panel). This could be due, at least in part, to the high p53 turnover stimulated by MDM2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on reporter assay data and is speculation about the mechanism.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "be137d1b-bacd-4004-8788-8bd5ff0ef43d",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C76",
+      "claim": "The TP53 3\u2032UTR and CDS functionally interact in the regulation of p53 expression and the effects of the individual parts are not additive.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results indicate that the TP53 3\u2032UTR and CDS functionally interact in the regulation of p53 expression and that the effects of the individual parts are not additive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the reporter assay data showing non-additive effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "2eca7e71-699d-4bee-a6c9-786990d10e9c",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C77",
+      "claim": "Inclusion of the sequence of the endogenous human TP53 5\u2032UTR to the reporter constructs that contained the TP53 CDS did not reveal additional effects on reporter mRNA or protein expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we asked whether the TP53 5\u2032UTR contributes to the regulation of our reporter constructs. Inclusion of the sequence of the endogenous human TP53 5\u2032UTR to the reporter constructs that contained the TP53 CDS did not reveal additional effects on reporter mRNA or protein expression and reporter gene expression remained 3\u2032UTR-independent (Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on reporter assay data shown in Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "76185a7a-b5df-4b26-bcc9-dfaad22d8094",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C78",
+      "claim": "Reporter gene expression remained 3\u2032UTR-independent when the 5\u2032UTR was included.",
+      "claim_type": "EXPLICIT",
+      "source": "Inclusion of the sequence of the endogenous human TP53 5\u2032UTR to the reporter constructs that contained the TP53 CDS did not reveal additional effects on reporter mRNA or protein expression and reporter gene expression remained 3\u2032UTR-independent (Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on reporter assay data shown in Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "d09863e7-ed35-484c-81ab-d16b04947928",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C79",
+      "claim": "3\u2032UTR-dependent p53 expression regulation may still play a role in certain developmental stages, tissues or cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "We reasoned that 3\u2032UTR-dependent p53 expression regulation may still play a role in certain developmental stages, tissues or cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential contexts where 3\u2032UTR regulation might occur.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "b6d2e2fe-ddcc-4104-ad7e-5c7327eda443",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C80",
+      "claim": "The experimental conditions were highly similar to conditions tested in previous studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, while our experimental conditions were highly similar to conditions tested in previous studies, we cannot fully exclude the possibility of 3\u2032UTR-dependent expression regulation in select cell types or under specific conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the experimental design and its limitations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "07e954d0-e935-46ed-aca1-c057b4e280ec",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C81",
+      "claim": "The possibility of 3\u2032UTR-dependent expression regulation in select cell types or under specific conditions cannot be fully excluded.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, while our experimental conditions were highly similar to conditions tested in previous studies, we cannot fully exclude the possibility of 3\u2032UTR-dependent expression regulation in select cell types or under specific conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of the limitations of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "1587b9c7-56e0-4efc-bf58-fa3b14dc2d08",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C82",
+      "claim": "The coding region of TP53 is more conserved than the 3\u2032UTR sequence for the majority of human genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Although this is true for the majority of human genes, the conservation of the TP53 3\u2032UTR is among the 20% poorest conserved 3\u2032UTRs of protein coding genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is general knowledge about gene conservation patterns.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "4aecc029-4246-4cf2-94aa-eb5cc67758df",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C83",
+      "claim": "A basic mechanism for p53 expression control may have first evolved in the coding region.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the fatal consequences of p53 deregulation, we speculate that a basic mechanism for p53 expression control may have first evolved in the coding region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the conservation data and the importance of p53 regulation.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "81bbd8ca-de9b-4bdf-a067-c248cbb84436",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C84",
+      "claim": "A different sequence context may lead to changes in RNA folding which could create constraints on RNA-binding motif accessibility.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, a different sequence context may lead to changes in RNA folding which could create constraints on RNA-binding motif accessibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the mechanism by which sequence context affects 3\u2032UTR function.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "ff1a95b6-3c5c-4d2d-bbf9-074fd3da07b4",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C85",
+      "claim": "Saturation effects and epistatic interactions might limit or modulate the impact of additional suppressive cis-regulatory elements provided by the sequence context.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, saturation effects and epistatic interactions might limit or modulate the impact of additional suppressive cis-regulatory elements provided by the sequence context (Cottrell et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by a citation to Cottrell et al., 2018.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "738a7307-25e1-45f1-9c04-82239769b629",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C86",
+      "claim": "The results of overexpression or knockdown experiments with miRNAs and RNA-binding proteins may be confounded.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the results of overexpression or knockdown experiments with miRNAs and RNA-binding proteins may be confounded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the complexity of miRNA and RNA-binding protein regulation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "6c68a26d-ca2f-42b6-92d4-02681b086124",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C87",
+      "claim": "RBM38 targets several other genes in the p53 pathway, and expression changes of these genes can indirectly upregulate p53 or result in phenotypes that mimic p53 overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "However, apart from TP53, RBM38 targets several other genes in the p53 pathway, including MDM2, PPMID, and CDKN1A (Shu et al., 2006; Xu et al., 2013; Zhang et al., 2015). Expression changes of these genes can indirectly upregulate p53 or result in phenotypes that mimic p53 overexpression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known targets of RBM38 and their roles in the p53 pathway.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "c9f13847-d2d6-4b62-9a4f-12aa1ac66789",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C88",
+      "claim": "Some prior studies observed p53 upregulation as a result of general cell stress.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the direct regulation of genes in the p53 pathway, we believe it is plausible that some prior studies observed p53 upregulation as a result of general cell stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the interpretation of previous studies.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "738fe161-0c0d-4eb5-aa0b-bfab38f435e4",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C89",
+      "claim": "p53 protein stability may be indirectly regulated by stress-response pathways as a function of p53 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, p53 protein stability may be indirectly regulated by these stress-response pathways as a function of p53 activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the role of p53 in stress response.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "09a44094-0959-45d2-98af-d08589b3ce98",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "claim_id": "C90",
+      "claim": "These effects are highly reproducible and extremely difficult to control for.",
+      "claim_type": "EXPLICIT",
+      "source": "These effects are highly reproducible and extremely difficult to control for.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the challenges in studying p53 regulation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "dca6f70a-eb58-4a1e-8b14-39f95546e61e",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors successfully generated CRISPR/Cas9-mediated deletions of the TP53/Trp53 3\u2032UTR in human cell lines and mice. The deletion removed 1048 nucleotides (88% of the 3\u2032UTR) in human cells, affecting almost all previously reported binding sites for regulatory miRNAs, lncRNAs, and RNA-binding proteins. Northern blot analysis confirmed intact 3\u2032 end processing and expression of the expected shorter TP53 mRNA in dUTR cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C16, C17, and C62 collectively describe the successful generation and validation of the 3\u2032UTR deletion model. The methodology is clearly described, the deletion is well-characterized, and Northern blot data (Figure 1B) confirms proper mRNA processing. The deletion design is appropriate for testing the role of the 3\u2032UTR while preserving essential processing elements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "c79e000e-5bbf-491d-be8a-07998559d1d7",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Deletion of the endogenous TP53 3\u2032UTR does not significantly affect p53 steady-state mRNA levels or mRNA half-life in human cell lines. RT-qPCR analysis showed similar TP53 mRNA levels between WT and dUTR cells, and 4sU labeling experiments revealed no significant differences in mRNA half-life, though all clones showed slightly reduced half-life compared to parental cells, possibly due to clonal expansion effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18, C19, C63, C64, and C65 are supported by RT-qPCR data (Figures 1C, 1D) and 4sU labeling experiments (Figure 1F). The authors appropriately note the slight reduction in mRNA half-life across all clones (including controls) and provide a reasonable speculation about clonal expansion effects (C65). The use of multiple control clones strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "789af37d-2f54-40cb-83f0-30a2006383c0",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Under steady-state conditions, there is no significant difference in p53 protein levels between WT and dUTR cells, and the expression pattern of p53 protein isoforms is unchanged. Western blot analysis using multiple antibodies showed similar p53 protein expression in cells with or without the 3\u2032UTR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20, C21, and C66 are supported by western blot data (Figures 2A, 2B, and Figure 2\u2014figure supplement 1). The use of multiple antibodies with different epitope specificities (DO-7 and PAb240) to examine both total p53 and isoform expression patterns strengthens the conclusion. Statistical analysis (ANOVA) confirms no significant differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "fe8e915f-de4f-4df2-9626-0f8eb27e2c9f",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The endogenous TP53 3\u2032UTR is not required for stress-induced p53 protein upregulation. Treatment with etoposide, 5-fluorouracil, or UV irradiation resulted in similar concentration-dependent and time-dependent p53 protein upregulation in WT and dUTR cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22, C23, and C67 are supported by western blot data showing similar p53 upregulation in response to multiple genotoxic stressors (Figures 2C-H). The use of multiple stress conditions (etoposide at various concentrations and time points, 5-FU, UV) and multiple cell clones provides robust evidence. Statistical analysis confirms no significant differences between genotypes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "3ee049fd-74f8-45fe-8399-aab84e893109",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The 3\u2032UTR does not regulate p53 protein synthesis or degradation rates. Nutlin-3 treatment (MDM2 inhibitor) resulted in similar p53 accumulation in WT and dUTR cells, and metabolic labeling with AHA showed no significant differences in de novo p53 protein synthesis between genotypes, both in steady state and after etoposide treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24, C25, C26, and C70 are supported by western blot data with Nutlin-3 treatment (Figures 3A, 3B) and metabolic labeling experiments (Figures 3D, 3E). The experimental design appropriately addresses the potential confounding effect of the p53-MDM2 feedback loop by using MDM2 inhibition. The metabolic labeling directly measures protein synthesis rates, providing strong evidence for the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "da9c38af-41d3-48b2-b803-d62e6e62317e",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In reporter assays, the isolated TP53 3\u2032UTR significantly reduces GFP mRNA and protein expression compared to control sequences. Deletion of a U-rich element within the 3\u2032UTR partially relieves this repression, confirming the negative regulatory impact of this element on reporter gene expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27, C71, C73, and C74 are supported by reporter assay data (Figure 4B, 4C). The experiments confirm previous findings about the repressive nature of the TP53 3\u2032UTR when tested in isolation. The U-rich element deletion experiment provides additional mechanistic insight. The data are consistent with prior literature (C6, C14).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "0ff9593d-29d0-485a-930f-7933167b7bc9",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The TP53 coding region has a dominant repressive effect on reporter expression that overrides the contribution of the 3\u2032UTR. When the TP53 CDS is included in reporter constructs, it reduces both mRNA and protein levels more strongly than any tested 3\u2032UTR sequence, and the presence of different 3\u2032UTR sequences (including TP53, housekeeping genes, or dUTR) has no additional impact on expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C32, C39, C43, C75, and C76 are supported by comprehensive reporter assay data (Figure 4C). The experiments systematically test the effects of the CDS alone and in combination with various 3\u2032UTR sequences. The finding that the CDS effect is larger than any 3\u2032UTR effect and that 3\u2032UTR effects disappear in the presence of the CDS is well-documented. The speculation about MDM2-mediated turnover (C75) is reasonable but not directly tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "829fb56e-ef74-483b-a8e3-fd2ccf6824aa",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Inclusion of the TP53 5\u2032UTR in reporter constructs containing the TP53 CDS does not reveal additional effects on reporter mRNA or protein expression, and reporter gene expression remains 3\u2032UTR-independent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77 and C78 are supported by reporter assay data (Figure 4\u2014figure supplement 1B). This experiment addresses whether the 5\u2032UTR might modulate the CDS-3\u2032UTR interaction, and the negative result strengthens the conclusion that the CDS effect is dominant.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "0d3665e5-a0c1-4b06-9405-bafa5fc0a5a1",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Trp53 dUTR mice are viable and fertile with no developmental defects. In multiple mouse tissues, there are no significant differences in Trp53 mRNA expression between WT and dUTR mice under steady-state conditions or after total body irradiation. p53 protein upregulation and target gene (Cdkn1a) activation following irradiation are similar in WT and dUTR mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C37 are supported by mouse phenotyping data (Figure 5\u2014figure supplement 1D, E), RT-qPCR data from 10 tissues (Figure 5B), western blot data after irradiation (Figures 5C, Figure 5\u2014figure supplement 2), and Cdkn1a expression data (Figure 5D). The in vivo validation across multiple tissues and conditions provides strong evidence that the findings in cell culture are physiologically relevant.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "6a317b2c-3cc2-4876-9880-97c386905600",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study reveals a discrepancy between reporter assays and endogenous gene regulation: while the isolated TP53 3\u2032UTR is repressive in reporter assays (confirming previous studies), the endogenous TP53 mRNA does not depend on the 3\u2032UTR for post-transcriptional expression regulation. This indicates that different parts of mRNAs do not act autonomously but are part of a regulatory unit that functionally cooperates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C7, C38, and C45 represent the central finding of the paper. The discrepancy between reporter assays and endogenous regulation is well-documented through systematic experiments. The conclusion that mRNA regions functionally interact is supported by the data showing that the CDS masks 3\u2032UTR effects. This finding challenges the common practice of using reporter assays to infer endogenous regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "02777c66-0b52-41f6-81f5-b8ad190575aa",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The TP53 coding region is more conserved than the 3\u2032UTR sequence, with the TP53 3\u2032UTR being among the 20% poorest conserved 3\u2032UTRs of protein-coding genes. The authors speculate that a basic mechanism for p53 expression control may have first evolved in the coding region, given the importance of proper p53 regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42 are supported by conservation analysis data and citation to Narula et al., 2019. The conservation data support the hypothesis that the CDS plays a more important regulatory role than the 3\u2032UTR. The speculation in C83 is reasonable given the data but remains speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "4166098e-3045-4ee0-9145-2b7ae991c8a5",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "3\u2032UTR knockouts can discriminate between direct and indirect effects of miRNAs and RNA-binding proteins. The authors argue that previous studies attributing p53 regulation to direct 3\u2032UTR binding by factors like RBM38 and HUR may have observed indirect effects, since these factors target multiple genes in the p53 pathway and their knockout/knockdown phenotypes could result from indirect mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C53, C86, and C87 present a well-reasoned argument supported by the comparison of RBM38 knockout mice (which show p53 hyperactivation phenotypes) with Trp53 dUTR mice (which are normal). The logic is sound: if RBM38 directly regulated p53 through its 3\u2032UTR, then dUTR mice should show similar phenotypes to RBM38 knockout mice. The absence of phenotypes in dUTR mice suggests indirect regulation through other p53 pathway genes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "1fc5b5cc-e7ac-4496-b6f3-ad29d1b478ed",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors propose that some prior studies may have observed p53 upregulation as a result of general cell stress rather than direct 3\u2032UTR-mediated regulation. Overexpression and knockdown of RNA-binding proteins and miRNAs cause widespread gene expression changes, and p53, as an integrator of cellular stress responses, is uniquely sensitive to altered cell states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56, C88-C90 present a reasonable alternative explanation for previous findings. The argument is well-supported by established knowledge about p53's role as a stress sensor (C55, C56 with citation to Horn and Vousden, 2007) and the pleiotropic effects of manipulating RNA-binding proteins and miRNAs (C54). This provides a plausible mechanism for why previous studies observed p53 changes that were not due to direct 3\u2032UTR regulation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "4eaa9c00-daff-4a6a-a1a3-ecb33538dd98",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The impact of sequence context on cis-regulatory elements has been previously described, with 5\u2032UTR, codon optimality, and splicing shown to modulate 3\u2032UTR element effects. Mechanistically, sequence context may affect RNA folding and RNA-binding motif accessibility, and saturation effects or epistatic interactions might limit the impact of additional suppressive elements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44, C84, and C85 are supported by citations to prior work (Cottrell et al., 2017, 2018; Paolantoni et al., 2018; Theil et al., 2018). The mechanistic explanations (C84, C85) are speculative but reasonable and supported by literature. This contextualizes the findings within the broader field of post-transcriptional regulation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "be95a633-d455-4361-b2a6-881c330ae9c3",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Other studies have found discrepancies between reporter assays and endogenous gene regulation (Zhao et al., 2017), while some endogenous 3\u2032UTR deletions have revealed 3\u2032UTR-dependent mRNA localization phenotypes (Terenzio et al., 2018).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57 and C58 are supported by citations to relevant literature. These claims place the current findings in the context of other studies using endogenous 3\u2032UTR deletions, showing that the approach can reveal both cases where 3\u2032UTRs are not important for abundance regulation and cases where they have other functions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "163ff0d3-2f23-4114-8151-39bcea07be26",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors acknowledge limitations of their study: while the 3\u2032UTR does not regulate p53 abundance, it may have other functions such as controlling protein localization or activity. Additionally, while experimental conditions were similar to previous studies, 3\u2032UTR-dependent regulation in select cell types or specific conditions cannot be fully excluded.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59, C79, C80, and C81 appropriately acknowledge the limitations and scope of the study. The speculation about alternative 3\u2032UTR functions (C59) is supported by citations to studies showing such functions in other proteins. The acknowledgment of potential context-specific regulation (C79, C81) is scientifically appropriate and honest about the study's limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "4b97b764-5d0d-4aa6-b7d1-cebe05e86879",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The authors conclude that 3\u2032UTR knockouts enable investigators to distinguish between direct and indirect effects of post-transcriptional regulation and to perform experiments under endogenous expression conditions. They argue that genetic validation is critical for identifying promising gene targets for miRNA-based therapeutics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60 and C61 represent reasonable conclusions based on the study's findings. The argument for genetic validation is well-supported by the discrepancy between reporter assays and endogenous regulation demonstrated in this study. The implications for therapeutic development are appropriately cautious and supported by citations (Kasinski and Slack, 2011; Hermeking, 2012; Bonneau et al., 2019).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "3315e940-4e41-4f88-9a43-dc656349f108",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The manuscript provides extensive background on p53 biology, including its role as a tumor suppressor, its regulation by MDM2-mediated degradation, its continuous transcription in unstressed cells, and the characterization of binding sites for regulatory factors in the TP53 3\u2032UTR. Previous studies using reporter assays demonstrated the repressive nature of the TP53 3\u2032UTR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8-C15, C47, C52, C68, C69, and C82 provide well-established background information supported by appropriate citations to the literature. These claims accurately represent prior knowledge in the field and provide necessary context for understanding the significance of the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    },
+    {
+      "id": "db8f35f7-704e-4382-9a68-1ff30530bae3",
+      "content_id": "4e516ff8-d5c2-40ab-8575-b63404d48eb3",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Prior to this study, numerous studies suggested that 3\u2032UTR-mediated p53 expression regulation plays a role in tumorigenesis and could be exploited therapeutically, but these studies did not investigate post-transcriptional regulation of the native TP53 gene.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2 and C3 accurately characterize the state of the field prior to this study and provide the rationale for the current work. The claim that previous studies did not investigate the native TP53 gene (C3) is supported by the literature review presented in Table 1, which shows that prior studies used reporter assays or overexpression systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:22:07.609661Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0cfc21bb-1ffe-416a-b142-9b89259f727b",
+      "result_id": "dca6f70a-eb58-4a1e-8b14-39f95546e61e"
+    },
+    {
+      "claim_id": "509717f9-5960-4972-a98d-6a0b112fa31f",
+      "result_id": "dca6f70a-eb58-4a1e-8b14-39f95546e61e"
+    },
+    {
+      "claim_id": "cee609ba-12e9-49cc-99cd-9af2221ac069",
+      "result_id": "dca6f70a-eb58-4a1e-8b14-39f95546e61e"
+    },
+    {
+      "claim_id": "d94f4ea8-5424-497e-9e5a-08e32bb93085",
+      "result_id": "dca6f70a-eb58-4a1e-8b14-39f95546e61e"
+    },
+    {
+      "claim_id": "4e427aea-19ce-47f6-8b77-8497f78ad4b2",
+      "result_id": "c79e000e-5bbf-491d-be8a-07998559d1d7"
+    },
+    {
+      "claim_id": "4984bce5-97ec-4ea6-85c7-c34492913bf1",
+      "result_id": "c79e000e-5bbf-491d-be8a-07998559d1d7"
+    },
+    {
+      "claim_id": "4bb4d9b7-83d9-41d7-b3a1-308d2932805c",
+      "result_id": "c79e000e-5bbf-491d-be8a-07998559d1d7"
+    },
+    {
+      "claim_id": "d0d13eab-b717-4fb7-896f-0c10c47feb1e",
+      "result_id": "c79e000e-5bbf-491d-be8a-07998559d1d7"
+    },
+    {
+      "claim_id": "a10074e2-43e8-40d8-89a4-b05fcbccb661",
+      "result_id": "c79e000e-5bbf-491d-be8a-07998559d1d7"
+    },
+    {
+      "claim_id": "d29304bb-4b18-462b-80c6-9631fe56fc08",
+      "result_id": "789af37d-2f54-40cb-83f0-30a2006383c0"
+    },
+    {
+      "claim_id": "104da68d-9c5e-4bba-bd6d-6b921cbe8c63",
+      "result_id": "789af37d-2f54-40cb-83f0-30a2006383c0"
+    },
+    {
+      "claim_id": "d59648e8-c158-4df7-99f4-fede18ed65ef",
+      "result_id": "789af37d-2f54-40cb-83f0-30a2006383c0"
+    },
+    {
+      "claim_id": "17283ea6-df93-4d40-af3f-e03e08478bfe",
+      "result_id": "fe8e915f-de4f-4df2-9626-0f8eb27e2c9f"
+    },
+    {
+      "claim_id": "85c0c331-2760-4c0d-a400-185a9b127a10",
+      "result_id": "fe8e915f-de4f-4df2-9626-0f8eb27e2c9f"
+    },
+    {
+      "claim_id": "eea09233-0b91-4a4f-b451-7ca0234bf721",
+      "result_id": "fe8e915f-de4f-4df2-9626-0f8eb27e2c9f"
+    },
+    {
+      "claim_id": "30ca63ae-ce9b-40c2-a72f-9fa8cdca5de0",
+      "result_id": "3ee049fd-74f8-45fe-8399-aab84e893109"
+    },
+    {
+      "claim_id": "51c2439d-ef39-43af-9d7b-ad8bd8ce1f4d",
+      "result_id": "3ee049fd-74f8-45fe-8399-aab84e893109"
+    },
+    {
+      "claim_id": "10ae9e72-299d-48bc-bb8b-7e0f4bc920c8",
+      "result_id": "3ee049fd-74f8-45fe-8399-aab84e893109"
+    },
+    {
+      "claim_id": "6ad1c4fb-426b-488f-9881-8840174c6bfe",
+      "result_id": "3ee049fd-74f8-45fe-8399-aab84e893109"
+    },
+    {
+      "claim_id": "3818232c-0c78-460f-afa9-bfaeb2b187f1",
+      "result_id": "da9c38af-41d3-48b2-b803-d62e6e62317e"
+    },
+    {
+      "claim_id": "8bf7dffa-c518-4019-bece-b66be338e7f2",
+      "result_id": "da9c38af-41d3-48b2-b803-d62e6e62317e"
+    },
+    {
+      "claim_id": "e866e666-82bd-4210-84bc-e0c9ce087c18",
+      "result_id": "da9c38af-41d3-48b2-b803-d62e6e62317e"
+    },
+    {
+      "claim_id": "143ba1d9-7b06-4bb1-a331-eea8621e5aa8",
+      "result_id": "da9c38af-41d3-48b2-b803-d62e6e62317e"
+    },
+    {
+      "claim_id": "4955487d-a180-45fc-aabf-f67b679283d6",
+      "result_id": "0ff9593d-29d0-485a-930f-7933167b7bc9"
+    },
+    {
+      "claim_id": "68082267-6c44-4c24-a799-ba6e991b6ff7",
+      "result_id": "0ff9593d-29d0-485a-930f-7933167b7bc9"
+    },
+    {
+      "claim_id": "0c37232b-ea23-4f22-8c76-90440dcb6e85",
+      "result_id": "0ff9593d-29d0-485a-930f-7933167b7bc9"
+    },
+    {
+      "claim_id": "3a230437-7103-43ab-9c7d-84e5fadaf838",
+      "result_id": "0ff9593d-29d0-485a-930f-7933167b7bc9"
+    },
+    {
+      "claim_id": "ba1cf812-b247-4009-b0d0-17d84b02da13",
+      "result_id": "0ff9593d-29d0-485a-930f-7933167b7bc9"
+    },
+    {
+      "claim_id": "50bccac1-4217-4064-9028-07307b3ba9fc",
+      "result_id": "0ff9593d-29d0-485a-930f-7933167b7bc9"
+    },
+    {
+      "claim_id": "33dbc03f-714e-4de2-bc79-4cf6e5b3fc8c",
+      "result_id": "0ff9593d-29d0-485a-930f-7933167b7bc9"
+    },
+    {
+      "claim_id": "8d3e6de8-fd03-40d3-abac-4114fb5bab75",
+      "result_id": "0ff9593d-29d0-485a-930f-7933167b7bc9"
+    },
+    {
+      "claim_id": "be137d1b-bacd-4004-8788-8bd5ff0ef43d",
+      "result_id": "0ff9593d-29d0-485a-930f-7933167b7bc9"
+    },
+    {
+      "claim_id": "2eca7e71-699d-4bee-a6c9-786990d10e9c",
+      "result_id": "829fb56e-ef74-483b-a8e3-fd2ccf6824aa"
+    },
+    {
+      "claim_id": "76185a7a-b5df-4b26-bcc9-dfaad22d8094",
+      "result_id": "829fb56e-ef74-483b-a8e3-fd2ccf6824aa"
+    },
+    {
+      "claim_id": "914c4cb5-51dc-4380-ad46-531bbe22f812",
+      "result_id": "0d3665e5-a0c1-4b06-9405-bafa5fc0a5a1"
+    },
+    {
+      "claim_id": "47935c96-ac92-4e55-aeb3-e15b3f81e76e",
+      "result_id": "0d3665e5-a0c1-4b06-9405-bafa5fc0a5a1"
+    },
+    {
+      "claim_id": "2528436e-385f-4337-b44c-1739f2200a81",
+      "result_id": "0d3665e5-a0c1-4b06-9405-bafa5fc0a5a1"
+    },
+    {
+      "claim_id": "59d40544-d820-41b5-a41d-dbc071c865ca",
+      "result_id": "0d3665e5-a0c1-4b06-9405-bafa5fc0a5a1"
+    },
+    {
+      "claim_id": "b4503802-482a-438f-ad80-968857c7ff20",
+      "result_id": "0d3665e5-a0c1-4b06-9405-bafa5fc0a5a1"
+    },
+    {
+      "claim_id": "886e4d6d-7ba1-4de2-9520-f9b819064adb",
+      "result_id": "6a317b2c-3cc2-4876-9880-97c386905600"
+    },
+    {
+      "claim_id": "569fc4f2-0fef-4c3d-b884-b45bbeec574e",
+      "result_id": "6a317b2c-3cc2-4876-9880-97c386905600"
+    },
+    {
+      "claim_id": "5097b4f9-1d08-4549-b9df-7aa66b809faf",
+      "result_id": "6a317b2c-3cc2-4876-9880-97c386905600"
+    },
+    {
+      "claim_id": "de053264-9574-48a7-b359-352f2897a9e2",
+      "result_id": "6a317b2c-3cc2-4876-9880-97c386905600"
+    },
+    {
+      "claim_id": "6f7a2aa0-a6d9-41e4-99b5-fd0d366ccd7c",
+      "result_id": "02777c66-0b52-41f6-81f5-b8ad190575aa"
+    },
+    {
+      "claim_id": "e79963f8-a93c-4735-83e0-258bcb682997",
+      "result_id": "02777c66-0b52-41f6-81f5-b8ad190575aa"
+    },
+    {
+      "claim_id": "d4c39013-0c77-4b01-8c2c-9753ec09447b",
+      "result_id": "02777c66-0b52-41f6-81f5-b8ad190575aa"
+    },
+    {
+      "claim_id": "4aecc029-4246-4cf2-94aa-eb5cc67758df",
+      "result_id": "02777c66-0b52-41f6-81f5-b8ad190575aa"
+    },
+    {
+      "claim_id": "63853461-b6d4-45cb-aa81-27d40e6bbf15",
+      "result_id": "4166098e-3045-4ee0-9145-2b7ae991c8a5"
+    },
+    {
+      "claim_id": "52c3d869-aec6-4d2a-9ee2-6a5217fc3f1d",
+      "result_id": "4166098e-3045-4ee0-9145-2b7ae991c8a5"
+    },
+    {
+      "claim_id": "7f259b82-29b4-4e1c-8203-0f5f7c145524",
+      "result_id": "4166098e-3045-4ee0-9145-2b7ae991c8a5"
+    },
+    {
+      "claim_id": "bb9a4f17-eec3-4f9a-9a7c-f73e6f12f882",
+      "result_id": "4166098e-3045-4ee0-9145-2b7ae991c8a5"
+    },
+    {
+      "claim_id": "cd74c877-79b2-4b79-a7d2-56008598ef5a",
+      "result_id": "4166098e-3045-4ee0-9145-2b7ae991c8a5"
+    },
+    {
+      "claim_id": "64b615b0-025a-4ba6-a0f3-aef1b9517302",
+      "result_id": "4166098e-3045-4ee0-9145-2b7ae991c8a5"
+    },
+    {
+      "claim_id": "5b4144bb-1c44-45b0-b5e8-fd97ba36f2f0",
+      "result_id": "4166098e-3045-4ee0-9145-2b7ae991c8a5"
+    },
+    {
+      "claim_id": "bbce8a4d-1b3c-40f3-be86-a5d621ba055b",
+      "result_id": "4166098e-3045-4ee0-9145-2b7ae991c8a5"
+    },
+    {
+      "claim_id": "738a7307-25e1-45f1-9c04-82239769b629",
+      "result_id": "4166098e-3045-4ee0-9145-2b7ae991c8a5"
+    },
+    {
+      "claim_id": "6c68a26d-ca2f-42b6-92d4-02681b086124",
+      "result_id": "4166098e-3045-4ee0-9145-2b7ae991c8a5"
+    },
+    {
+      "claim_id": "e9c986df-bbd6-4e02-9687-762ddbf16ed6",
+      "result_id": "1fc5b5cc-e7ac-4496-b6f3-ad29d1b478ed"
+    },
+    {
+      "claim_id": "16f50101-1d3a-4e32-a157-d2421a3c8194",
+      "result_id": "1fc5b5cc-e7ac-4496-b6f3-ad29d1b478ed"
+    },
+    {
+      "claim_id": "52162556-61b3-4032-ad27-1168229a03f3",
+      "result_id": "1fc5b5cc-e7ac-4496-b6f3-ad29d1b478ed"
+    },
+    {
+      "claim_id": "c9f13847-d2d6-4b62-9a4f-12aa1ac66789",
+      "result_id": "1fc5b5cc-e7ac-4496-b6f3-ad29d1b478ed"
+    },
+    {
+      "claim_id": "738fe161-0c0d-4eb5-aa0b-bfab38f435e4",
+      "result_id": "1fc5b5cc-e7ac-4496-b6f3-ad29d1b478ed"
+    },
+    {
+      "claim_id": "09a44094-0959-45d2-98af-d08589b3ce98",
+      "result_id": "1fc5b5cc-e7ac-4496-b6f3-ad29d1b478ed"
+    },
+    {
+      "claim_id": "993abd74-d809-4922-b917-53735830d9b1",
+      "result_id": "4eaa9c00-daff-4a6a-a1a3-ecb33538dd98"
+    },
+    {
+      "claim_id": "81bbd8ca-de9b-4bdf-a067-c248cbb84436",
+      "result_id": "4eaa9c00-daff-4a6a-a1a3-ecb33538dd98"
+    },
+    {
+      "claim_id": "ff1a95b6-3c5c-4d2d-bbf9-074fd3da07b4",
+      "result_id": "4eaa9c00-daff-4a6a-a1a3-ecb33538dd98"
+    },
+    {
+      "claim_id": "328f6085-129a-4fcc-85b4-59e6c3ec38b9",
+      "result_id": "be95a633-d455-4361-b2a6-881c330ae9c3"
+    },
+    {
+      "claim_id": "3da1bb99-7091-4e4e-b669-d6a65d2c26ee",
+      "result_id": "be95a633-d455-4361-b2a6-881c330ae9c3"
+    },
+    {
+      "claim_id": "6737fc85-230c-4ae1-ad87-10083569d5cf",
+      "result_id": "163ff0d3-2f23-4114-8151-39bcea07be26"
+    },
+    {
+      "claim_id": "d09863e7-ed35-484c-81ab-d16b04947928",
+      "result_id": "163ff0d3-2f23-4114-8151-39bcea07be26"
+    },
+    {
+      "claim_id": "b6d2e2fe-ddcc-4104-ad7e-5c7327eda443",
+      "result_id": "163ff0d3-2f23-4114-8151-39bcea07be26"
+    },
+    {
+      "claim_id": "07e954d0-e935-46ed-aca1-c057b4e280ec",
+      "result_id": "163ff0d3-2f23-4114-8151-39bcea07be26"
+    },
+    {
+      "claim_id": "31c1e496-d86e-46a0-a1e7-4b2c5c741692",
+      "result_id": "4b97b764-5d0d-4aa6-b7d1-cebe05e86879"
+    },
+    {
+      "claim_id": "15076438-fea6-4a05-a2f2-f4c487172660",
+      "result_id": "4b97b764-5d0d-4aa6-b7d1-cebe05e86879"
+    },
+    {
+      "claim_id": "c716cb3f-67f4-4995-aaac-897b6903a848",
+      "result_id": "3315e940-4e41-4f88-9a43-dc656349f108"
+    },
+    {
+      "claim_id": "6863ec17-66b9-4dcf-97db-da1a7238c8ec",
+      "result_id": "3315e940-4e41-4f88-9a43-dc656349f108"
+    },
+    {
+      "claim_id": "dfc88dc5-3bdd-474f-8722-6022625e4baa",
+      "result_id": "3315e940-4e41-4f88-9a43-dc656349f108"
+    },
+    {
+      "claim_id": "f4c1ecdf-5e7a-439a-b47a-5abc9a493c08",
+      "result_id": "3315e940-4e41-4f88-9a43-dc656349f108"
+    },
+    {
+      "claim_id": "30db425c-c849-4364-839d-295874a7274a",
+      "result_id": "3315e940-4e41-4f88-9a43-dc656349f108"
+    },
+    {
+      "claim_id": "8b5d87f4-63ef-4728-a42a-54fd128bce0a",
+      "result_id": "3315e940-4e41-4f88-9a43-dc656349f108"
+    },
+    {
+      "claim_id": "ae084780-a0ce-4bce-b5d3-72d7d4ab9259",
+      "result_id": "3315e940-4e41-4f88-9a43-dc656349f108"
+    },
+    {
+      "claim_id": "ab768916-f2a5-4c5c-b2f7-f1ca62afce2d",
+      "result_id": "3315e940-4e41-4f88-9a43-dc656349f108"
+    },
+    {
+      "claim_id": "0c57c258-b427-4aa7-adce-1fdf69b2d4dd",
+      "result_id": "3315e940-4e41-4f88-9a43-dc656349f108"
+    },
+    {
+      "claim_id": "52c3d869-aec6-4d2a-9ee2-6a5217fc3f1d",
+      "result_id": "3315e940-4e41-4f88-9a43-dc656349f108"
+    },
+    {
+      "claim_id": "5b4144bb-1c44-45b0-b5e8-fd97ba36f2f0",
+      "result_id": "3315e940-4e41-4f88-9a43-dc656349f108"
+    },
+    {
+      "claim_id": "193fe0c0-141e-4770-9757-b654b9ede779",
+      "result_id": "3315e940-4e41-4f88-9a43-dc656349f108"
+    },
+    {
+      "claim_id": "116a33d9-564a-4932-8641-980cedbd5f09",
+      "result_id": "3315e940-4e41-4f88-9a43-dc656349f108"
+    },
+    {
+      "claim_id": "1587b9c7-56e0-4efc-bf58-fa3b14dc2d08",
+      "result_id": "3315e940-4e41-4f88-9a43-dc656349f108"
+    },
+    {
+      "claim_id": "818103e1-9975-4b69-bdbd-02a7b8b15e63",
+      "result_id": "db8f35f7-704e-4382-9a68-1ff30530bae3"
+    },
+    {
+      "claim_id": "e828d1ec-efde-41da-aefb-948a13133729",
+      "result_id": "db8f35f7-704e-4382-9a68-1ff30530bae3"
+    }
+  ],
+  "comparisons": []
+}

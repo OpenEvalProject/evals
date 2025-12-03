@@ -1,0 +1,277 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Mobility patterns in four Sub-Saharan African countries show that trips generally decrease with distance and increase with population size, with varying proportions of intra-regional travel (30-72%) and different distributions of urban-rural trips across countries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C42 provide detailed descriptive statistics from mobile phone data analysis across four countries, showing consistent patterns of distance decay and population effects, with specific quantitative findings for trip distributions. The data are presented with supporting figures and represent direct observations from the datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The basic gravity model overestimated trip counts and failed to capture important features such as higher short-distance and within-region trip counts, particularly overestimating travel involving rural locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 describe specific shortcomings of the basic gravity model when compared to observed data, supported by figures showing model-data comparisons. These findings directly motivate the development of more complex model variants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "All parameterized gravity models outperformed the basic model, with the regional-urbanicity model providing the best fit across all four countries, reducing DIC by 16-41% depending on country.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C53 present the core comparative results using DIC as the model selection criterion. The findings are quantitative, specific to each country, and supported by Table 1 and supplementary files. The statistical approach using DIC for Bayesian model comparison is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The radiation model showed variable performance across countries, performing poorly in Namibia, Burkina Faso, and Zambia but outperforming the basic gravity model in Kenya, possibly due to differences in population distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 describe the radiation model's performance with specific country-level results and offer a plausible explanation based on population heterogeneity. The inference about population distribution is supported by citations and visual evidence in Figure 1\u2014figure supplement 9.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C86"
+    ],
+    "result": "Model improvements from including urbanicity and region were consistent across administrative levels 1-3, suggesting general applicability across spatial scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57 and C86 report findings from sensitivity analyses testing the robustness of results across different spatial aggregations. This addresses the modifiable areal unit problem and strengthens the generalizability of the findings, supported by Supplementary file 2B.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The regional-urbanicity model produced the most accurate estimates (\u00b110% of observed) for most trip types in Namibia, Kenya, and Burkina Faso, while the regional model performed best in Zambia, with accuracy varying substantially by country (3-7% in Kenya vs >30% in Namibia).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C92 provide detailed accuracy assessments using a \u00b110% threshold, showing country-specific patterns in model performance. The findings are supported by Supplementary file 3A and demonstrate that overall model fit (DIC) doesn't always correspond to accuracy for specific trip types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Simpler models may be sufficient for specific trip types: the regional model best captures rural-to-rural and inter-regional travel in Namibia, the radiation model performs well for various trip types in Kenya, and the basic exponential model works well in Zambia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 provide practical guidance on model selection for specific applications, based on the trip-type-specific accuracy analysis. These findings are important for applied work but represent secondary analyses of the main results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Mobile phone data have inherent biases in LMICs, and the Burkina Faso dataset was limited to 1.4% of subscribers, which may have caused models to overestimate routes with small trip counts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 acknowledge important limitations of the data sources. C58 is supported by citations, C59 is a factual description of the dataset, and C60 is reasonable speculation about the impact of limited sampling. These are appropriately discussed as caveats.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Longer distance trips (>20 km) show similar patterns across income settings, while rural-urban differences exist globally, suggesting findings may generalize to other countries at the district/region level but require further investigation at smaller spatial scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C64 are supported by citations to prior work, but claims C65-C66 make inferences about generalizability that extend beyond the data presented. While the reasoning is plausible, the generalizability claims require validation in additional settings not included in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The study used WorldPop data for population and urbanicity classification (50% urban threshold), mobile phone CDRs from four countries with varying temporal coverage, haversine distances between district centroids, Bayesian MCMC fitting via JAGS, and DIC for model comparison.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C85 describe the methodological details including data sources, processing steps, model fitting procedures, and evaluation metrics. These are clearly documented and appropriate for the analysis, though some choices (e.g., 50% urban threshold, \u00b110% accuracy criterion) are somewhat arbitrary.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The study identified clear travel patterns not well approximated by basic gravity models, with the best-fitting model allowing flexibility for different trip types, though optimal models varied by country and trip type, necessitating context-specific model selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C100 summarize the main conclusions of the study. These are well-supported by the empirical findings (C43-C95) and represent appropriate synthesis of the results. The recommendation for context-specific model selection (C100) follows logically from the observed heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Future work could develop ensemble models to improve mobility estimates, as demonstrated in Australia, and high-income countries may also benefit from accounting for urbanicity and regionality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101 and C103 are speculative suggestions for future work, appropriately framed as possibilities. C102 provides supporting evidence from prior work via citation. These represent reasonable extensions of the findings but are not tested in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11"
+    ],
+    "result": "Human mobility is a core component of human behavior with applications in disease transmission, traffic forecasting, intervention strategies, and other domains, encompassing both routine and irregular movement patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C10-C11 provide background context supported by general knowledge and multiple citations. These establish the importance and scope of mobility research but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C96"
+    ],
+    "result": "Spatial interaction models, particularly gravity models, are widely used when mobility data are limited, but have not been extensively validated in LMICs and may fail to capture patterns in rural and heterogeneous areas even with adjustments, suggesting models accounting for regional heterogeneity may improve estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C13-C19, C22-C26, and C96 establish the research gap and motivation for the study. These are supported by citations to prior work and accurately characterize the state of knowledge, identifying the specific problem this study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C27"
+    ],
+    "result": "The study analyzed mobile phone data from four Sub-Saharan African countries selected to capture a range of urbanization levels and population distributions, finding that adjusting gravity models for different trip types improved fit and suggesting alternative models may be more useful in LMIC settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 and C27 describe the study design and main conclusion. These are well-supported by the detailed results presented in other claim groups. The selection of countries is justified and the main conclusion follows from the empirical findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C12",
+      "C20",
+      "C21",
+      "C61",
+      "C62"
+    ],
+    "result": "Various data sources can quantify travel, with mobile phone data (67% global ownership in 2019) providing valuable resources for evaluating mobility models in LMICs despite procurement challenges and potential differences when using different data sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C20-C21, C61-C62 discuss data sources for mobility research, supported by citations. These provide context for the methodological choices and acknowledge limitations, though C62's point about different data sources producing different outcomes is noted but not explored in this study.",
+    "result_type": "MINOR"
+  }
+]

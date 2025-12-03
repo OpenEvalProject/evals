@@ -1,0 +1,1379 @@
+{
+  "submission": {
+    "id": "2bd72a9e-1316-4bc2-8f94-5d16d418804c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T16:31:53.070225Z",
+    "updated_at": "2025-12-03T16:31:53.070225Z"
+  },
+  "content": [
+    {
+      "id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "submission_id": "2bd72a9e-1316-4bc2-8f94-5d16d418804c",
+      "content_type": "manuscript",
+      "content_text": "# Arguments for the biological and predictive relevance of the proportional recovery rule\n\n## Authors\n\n- Jeff Goldsmith<sup>1</sup> ([ORCID: 0000-0002-6150-8997](https://orcid.org/0000-0002-6150-8997)) \u2020\n- Tomoko Kitago<sup>2</sup>\n- Angel Garcia de la Garza<sup>1</sup>\n- Robinson Kundert<sup>4</sup>\n- Andreas Luft<sup>4</sup>\n- Cathy Stinear<sup>6</sup>\n- Winston D Byblow<sup>7</sup>\n- Gert Kwakkel<sup>8</sup>\n- John W Krakauer<sup>10</sup> ([ORCID: 0000-0002-4316-1846](https://orcid.org/0000-0002-4316-1846))\n\n### Affiliations\n\n1. Department of Biostatistics, Columbia Mailman School of Public Health New York United States\n2. Burke Neurological Institute White Plains United States\n3. Weill Cornell Medicine New York United States\n4. Cereneo, Center for Neurology and Rehabilitation Vitznau Switzerland ([ROR:04c8h1e65](https://ror.org/04c8h1e65))\n5. Vascular Neurology and Neurorehabilitation, Department of Neurology, University Hospital Zurich, University of Zurich Zurich Switzerland ([ROR:02crff812](https://ror.org/02crff812))\n6. Department of Medicine, University of Auckland Auckland New Zealand ([ROR:03b94tp07](https://ror.org/03b94tp07))\n7. Department of Exercise Sciences, University of Auckland Auckland New Zealand ([ROR:03b94tp07](https://ror.org/03b94tp07))\n8. Rehabilitation Research Centre, Reade Amsterdam Netherlands ([ROR:00bp9f906](https://ror.org/00bp9f906))\n9. Rehabilitation Medicine, Amsterdam UMC - Location VUMC, Amsterdam Movement Sciences Amsterdam Netherlands ([ROR:00q6h8f30](https://ror.org/00q6h8f30))\n10. Department of Neurology, Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))\n11. Department of Neuroscience, Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))\n12. Department of Physical Medicine and Rehabilitation Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))\n13. Santa Fe Institute Santa Fe NM United States ([ROR:01arysc35](https://ror.org/01arysc35))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe proportional recovery rule (PRR) posits that most stroke survivors can expect to reduce a fixed proportion of their motor impairment. As a statistical model, the PRR explicitly relates change scores to baseline values \u2013 an approach that arises in many scientific domains but has the potential to introduce artifacts and flawed conclusions. We describe approaches that can assess associations between baseline and changes from baseline while avoiding artifacts due either to mathematical coupling or to regression to the mean. We also describe methods that can compare different biological models of recovery. Across several real datasets in stroke recovery, we find evidence for non-artifactual associations between baseline and change, and support for the PRR compared to alternative models. We also introduce a statistical perspective that can be used to assess future models. We conclude that the PRR remains a biologically relevant model of stroke recovery.\n\n## Introduction\n\nIntuition, experience, and data suggest that patients with worse motor impairment in the immediate post-stroke period will also typically see the largest absolute reductions in impairment during the first 3\u20136 months of recovery. However, rigorously quantifying this observation has proved challenging. The proportional recovery rule (PRR) was an early attempt to describe the relationship between initial impairment and recovery through the investigation of upper-extremity Fugl-Meyer assessments (FMA-UE) at baseline and at subsequent follow-up visits, with recovery defined as the change over time (Prabhakaran et al., 2008; Krakauer and Marshall, 2015). This work indicated that, on average, a large subset of patients recovered roughly 70% of the maximal potential recovery from impairment, but a biologically distinct and smaller subgroup recovered much less (\u2018non-recoverers\u2019). Since its introduction, the PRR has been applied across several neurological domains, implemented in various ways across studies, and evaluated using several different statistical metrics (Lazar et al., 2010; Winters et al., 2015; Winters et al., 2017; Veerbeek et al., 2018; Byblow et al., 2015). In a recent article, we sought to reestablish the original conceptualization of the PRR as a regression model for describing of recovery from upper limb impairment (Kundert et al., 2019).\n\nThe PRR has, in recent years, come under fire. The criticisms echo concerns raised anytime change as an outcome is related to the baseline value, particularly before and after an intervention \u2013 whether the outcome of interest is blood pressure, CD4 cell count, or behavior. The concern hinges on statistical questions about the relationship between baseline values and change scores \u2013 a relationship that is often fraught, counterintuitive, and has confounded researchers and statisticians for decades (Oldham, 1962; Gill et al., 1985; Tu, 2016). Bringing these issues to the fore and illustrating the ways they affect the specific case of stroke recovery has spurred an important and informative debate. Specifically, there are questions about the usefulness of correlations in the case when there is mathematical coupling from inclusion of the baseline value in the change score, the distinction between population-level descriptions and patient-level predictions; the usefulness of the PRR in functional domains other than upper-extremity motor control; the identification of \u2018non-recoverers\u2019, both prospectively and retrospectively; and the possibility that ceiling effects exaggerate associations or introduce non-linearity not accounted for by the PRR (Hope et al., 2018; Hawe et al., 2018; Bonkhoff et al., 2020; Bowman et al., 2021).\n\nAlthough the critiques of the PRR have been rigorous and careful, never asserting that the PRR was entirely irrelevant for recovery, the tone and content of some of this work might make it understandable for readers to infer otherwise. In \u2018Recovery after stroke: not so proportional after all?\u2019 (Hope et al., 2018), the authors say in their discussion that they \u2018are not claiming that the proportional recovery rule is wrong\u2019, only that they do not see evidence that the rule holds and that other models for recovery are possible. Hawe et al., 2018, included some similar caveats in the discussion of a paper titled \u2018Taking proportional out of recovery\u2019. Senesh and Reinkensmeyer, 2019 (title: \u2018Breaking proportional recovery after stroke\u2019) summarized these two papers in their abstract by saying they \u2018explained that [proportional recovery] should be expected because of mathematical coupling between the baseline and change score\u2019. Some of the authors of the original criticisms have since moderated their stance and important points of consensus are emerging; see, for example, Bonkhoff et al., 2020, and Bonkhoff et al., 2022. Against this rapidly evolving and potentially confusing backdrop, we hope to bring together all the thorny issues so that readers can reach some degree of closure on the PRR.\n\nThe growing meta-literature often discusses the PRR in an abstract way, focusing on a baseline $x$, a single follow-up $y$, the change $\\delta=y-x$, and all the various correlations among them. Readers could be forgiven for asking how an intuitive formula for expected recovery spawned its own cottage industry, and why arguments about the PRR have become so esoteric. We suspect that many, by now, would prefer a simple judgment on the truth of the PRR without a winding statistical detour. We\u2019re sympathetic to this perspective, but find the detour necessary as the nuanced and sometimes counterintuitive statistical arguments are critical to get right for the sake of furthering our understanding of the biological mechanisms of recovery.\n\nOur goals are to synthesize and discuss the statistical issues relevant to the PRR clearly, to describe appropriate analysis techniques, to identify areas of emerging consensus, and to resolve arguments where possible. We discuss valid but non-standard hypothesis tests for correlations, framed to distinguish true signal from artifact. This is not the same as distinguishing between the PRR and other recovery mechanisms that induce strong correlations; we therefore evaluate competing models based on their ability to predict outcomes. Much of this discussion assumes that \u2018recoverers\u2019 and \u2018non-recoverers\u2019 can be differentiated, and mainly focuses on models for recoverers. That said, the existence of distinct recovery groups complicates the quantification of recovery. We discuss the hazards of applying advanced statistical methods in settings where they aren\u2019t justified by the data, and discuss ways of testing whether observed data are consistent with a hypothesized mechanism. Throughout, we use generated datasets and data taken from several published studies of recovery to illustrate our statistical points. In some places, the discussion is unavoidably technical, but the aim is to focus on the details that are pertinent to the core question: Is there a true systematic relationship between impairment and change in impairment after stroke? If the answer is yes, then this would imply that there is important biological work to be done to explain the mechanism for this phenomenological regularity.\n\n## Results\n\n### Limitations of the correlation between baseline and change as a measure of association\n\nAlthough the PRR is best understood as a regression model (Kundert et al., 2019), correlations between baseline and follow-up, and between baseline and change, have often been used to summarize data and are presented as evidence for the rule. A focus on $cor(x,\\delta)$, where $\\delta=y-x$ is the change between follow-up ($y$) and baseline ($x$), is intuitive in the context of recovery. The value of this correlation can be affected in unexpected ways due to mathematical coupling, most broadly defined as the setting where one value ($x$) is also included in the definition of the second ($\\delta$). The following relationship is known to hold:\n\n$$\ncorx,\\delta=\\frac{\\sigma_{y}corx,y-\\sigma_{x}}{\\sqrt{\\sigma_{y}^{2}+\\sigma_{x}^{2}-2\\sigma_{x}\\sigma_{y}corx,y}}= \\frac{\\sqrt{k}corx,y-1}{\\sqrt{1+k-2\\sqrt{k}corx,y}}\n$$\n\nThis equation shows the dependence of $cor(x,\\delta)$ on $cor(x,y)$ and the variance ratio $k=\\frac{\\sigma_{y}^{2}}{\\sigma_{x}^{2}}$ . The relationship between these quantities, visualized first by Bartko and Pettigrew, 1968, and more recently as a three-dimensional surface by Hope et al., 2018, is shown as a contour plot in Figure 1. For reasons that will become clear shortly, we highlight the contour corresponding to $k=1$, where baseline and follow-up have equal variance. Other contour lines in this figure correspond to fixed values of $k$ ranging between 0.01 and 4.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/80458/elife-80458-fig1-v2.jpg)\n\n**Figure 1.:** In the top row, panels show outcome values and baseline (x) and follow-up (y). In the bottom row, panels show change ($\\delta$) against initial impairment (66 \u2212 x). The right panel shows a contour plot of Equation 1, with contours corresponding to values of the variance ratio k and the contour for k=1 highlighted. Points on this surface show correlation values obtained for Datasets A through D. A figure similar to the contour plot is shown in Hope et al., 2018, with different axes and orientations.\n\nAn immediate observation from this plot is that the range of possible values for $cor(x,\\delta)$ depends on $cor(x,y)$. When $cor(x,y)=0$, for example, $cor(x,\\delta)$ is restricted to lie in [-1,0] rather than [-1,1]. By itself, this suggests that usual tests for the significance of a correlation in which the null value is assumed to be 0 are inappropriate for investigations of recovery. However, as we\u2019ll see shortly, this does not mean that hypothesis tests are impossible \u2013 only that more appropriate ones are necessary.\n\nThe dependence of $cor(x,\\delta)$ on $cor(x,y)$ and $k=\\frac{\\sigma_{y}^{2}}{\\sigma_{x}^{2}}$ is the basis for two related criticisms of using the correlation between baseline and change as a statistical measure of recovery. First, the canonical example of coupling is the setting in which baseline ($x$) and follow-up ($y$) are uncorrelated and have the same variance. This situation is represented by the point on the surface where $cor(x,y)=0$ and the variance ratio $k=\\frac{\\sigma_{y}^{2}}{\\sigma_{x}^{2}}=1$. In this setting $cor(x,\\delta)=-0.71$ \u2013 a value that, for some, is unexpectedly high and casts doubt on any large correlation between baseline and change (Hope et al., 2018; Hawe et al., 2018).\n\nA broader argument relates to settings where measurements at follow-up have much lower variance than initial values, as is typically the case for studies of recovery. In cases where $k$ is small, $cor(x,\\delta)$ may be \u2018(non-trivially) stronger than $cor(x,y)$\u2019 and therefore spurious or misleading (Hope et al., 2018). Settings with small values of $k$ have been described as \u2018degenerate\u2019 in that $cor(x,\\delta)$ will approach \u22121 (Bowman et al., 2021); as Figure 1 makes clear, this is a concern for any value of $cor(x,y)$.\n\nThe recognition of these statistical issues, and the role they have played in understanding recovery, reveals some limitations of using correlation to measure the association between baseline and change and produce evidence for the significance of this association. By itself, $cor(x,\\delta)$ will give at best an incomplete understanding of recovery, and traditional hypothesis tests (focusing on 0 as a null value) are inappropriate. That said, these criticisms don\u2019t invalidate the PRR \u2013 they aren\u2019t even directly relevant to the PRR. Instead, they clarify the importance of understanding the relationship between $cor(x,\\delta)$, $cor(x,y)$, and the variance ratio $k=\\frac{\\sigma_{y}^{2}}{\\sigma_{x}^{2}}$ ; the importance of each these in the studies of recovery; and the use of appropriate summaries of the data.\n\n### Distinguishing true and artifactual signals\n\nTo paraphrase the previous section, when the variance ratio is small, large values of $cor(x,\\delta)$ can arise from a wide range of $cor(x,y)$. It has been argued that high correlations between baseline and change are invalid unless they are accompanied by high correlations between baseline and follow-up.\n\nRefutation of this view has a long history in the statistical literature. Oldham, 1962, argues that a variance ratio other than 1 is evidence for some real effect or process: \u2018Unless some agent has caused a change of standard deviation between the two occasions, $\\sigma_{x}^{2}$ will equal $\\sigma_{y}^{2}$ \u2019. This argument is slightly more complicated when the outcome measure is bounded, a setting Oldham did not consider but that arises in stroke recovery. Heterogeneous recovery that depends on initial impairment could be the agent that causes a reduction in variance; alternatively, variance may be reduced because recovery is homogeneous but subject to ceiling effects or because the impairment scale is non-linear. In any case, when $k<1$ the amount of recovery is related to the baseline value in a way that is not attributable to mathematical coupling, and differentiating between explanations is necessary after ruling out coupling. Oldham\u2019s method, which derives from the role of the variance ratio in studies where baseline and change are important, formalizes this concept and is a commonly used approach for understanding the relationship between baseline and change; it will be presented in the next section.\n\nThe value of $cor(x,\\delta)$ depends on the variance ratio $k$ and on $cor(x,y)$. The variance ratio can be used as a measure of the extent to which $\\delta$ depends on baseline values, regardless of the value of $cor(x,y)$, with the understanding that this dependence can arise from the PRR or other recovery mechanisms. Meanwhile, $cor(x,y)$ indicates whether follow-up values are related to baseline, regardless of $k$. Thus $cor(x,y)$ is relevant for questions of patient-level prediction although, as we\u2019ll argue later, correlations are less useful than direct measures of prediction accuracy.\n\nWe simulate four datasets with different values of $cor(x,y)$ and $k$:\n\nAll datasets have $x$ values generated from a Normal distribution with mean 30 and standard deviation 14, and consist of 30 generated subjects. Datasets A and B have follow-up values ($y$) with mean 30, while Datasets C and D have follow-up values with mean 53 (variances at follow-up are determined by the variance ratio). Generated datasets did not include values below 0 or above 66. These datasets were generated to clarify the relationship between $cor(x,y)$, $k$, and $cor(x,\\delta)$: they are not assumed to follow the PRR or any other explicit model for recovery. The left panels in Figure 1 show baseline and follow-up values (top row) and scatterplots of $\\delta$ against initial impairment (bottom row), with initial impairment defined as $FM_{max}\u2212x=66\u2212x$. The right panel indicates the placement of these datasets on the contour plot of $cor(x,\\delta)$.\n\nDataset A is a canonical example of mathematical coupling, a setting that results in $cor(x,\\delta)=-0.71$. Like Dataset A, Dataset C has $cor(x,y)=0$, but the variance ratio is lower. Given our emphasis on $k$ and on $cor(x,y)$, any debate about whether $cor(x,\\delta)$ for this dataset might be called \u2018spurious\u2019 is less relevant than (i) the true reduction in variance that results from recovery and (ii) the true association between the baseline value and the magnitude of change. Indeed, despite the inability of the baseline value to usefully predict follow-up in Dataset C, these data represent a case in which baseline values can be used to predict change in a non-artifactual way, which is a setting that Oldham and many others since have argued is important (Oldham, 1962; Tu and Gilthorpe, 2007).\n\nIn contrast, Datasets B and D have large $cor(x,y)$, which suggests an ability to predict follow-up using baseline with some degree of accuracy. In Dataset B, change from baseline to follow-up is constant with some patient-level noise, and accurate predictions at follow-up are a simple byproduct of that constancy. Dataset B is also, arguably, irrelevant: whether due to measurements that are truly non-linear, ceiling effects, or proportionality, motor impairment recovery is marked by heterogenous recovery across subjects.\n\nDataset D represents the least controversial scenario among our generated data: there is recovery heterogeneity that is predictable based on initial values and results in a variance ratio that is less than one, and the initial values meaningfully predict outcomes at follow-up. The variance ratio and correlations don\u2019t arise either from mathematical coupling or from regression to the mean due to measurement error. Real data that are similar to these are suggestive of an underlying biological recovery process in which baseline values predict change and final outcomes.\n\nTaken together, the generated datasets in this section illustrate the relationship between $cor(x,y)$, $k$, and $corx,\\delta$ , as well as the kinds of observed data that can give rise to various combinations of these values. The examples highlight discrepancies between $cor(x,y)$ and $corx,\\delta$ to illustrate their shortcomings when viewed individually. We also identify a setting, typified by Dataset D, in which each measure suggests the presence of a relevant association. However, it is not the case that data like these necessarily imply that recovery follows the PRR. Other biological models, the presence of strong ceiling effects, or other mechanisms could produce data similar to Dataset D, and how to compare competing models will be considered in later sections.\n\n### Recasting Oldham\u2019s method\n\nEquation (1) and Figure 1 show that $cor(x,y)$ and $k$ determine the value of $cor(x,\\delta)$ in ways that can be counterintuitive. When $cor(x,y)=0$, for example, an appropriate null value for a hypothesis test of $cor(x,\\delta)$ is \u20130.71 rather than 0, because this corresponds to \u2018no recovery\u2019 or $k=1$; a table in the appendix provides null values for hypothesis tests of $cor(x,\\delta)$ under a range of values of $cor(x,y)$. However, like others, we think the possible confusion around $cor(x,\\delta)$ as a measure of evidence make it less suitable than other approaches.\n\nOldham\u2019s method suggests to use $cor(\\frac{x+y}{2},x-y)$, or simply $cor(x+y,x-y)$, in place of $cor(x,\\delta)$. This correlation is zero, rather than \u22120.71, in the canonical example of mathematical coupling. Indeed, this correlation is zero if and only if $k=1$ \u2013 regardless of $cor(x,y)$, and even in many cases where measurement error or other processes might affect the ability to reliably measure outcomes at baseline and follow-up. Thus, Oldham\u2019s method often guards against false conclusions due to mathematical coupling and regression to the mean due to measurement error.\n\nInstead of $cor(x+y,x-y)$, we prefer to focus on the variance ratio $k$. Values of $k$ that differ from 1 suggest associations between baseline and change that do not arise from mathematical coupling or regression to the mean. In parallel, we examine the correlation $cor(x,y)$, which is equal to zero under the null hypothesis that follow-up values are uncorrelated with baseline. These are important but distinct; a suggestion that very small values of $k$ can only produce spurious correlations $cor(x,y)$ would stem from conflating the two. We again emphasize that these tests are intended to assess whether correlations are \u2018artifactual\u2019 (arising from mathematical coupling or regression to the mean), but not to evaluate support for the PRR in comparison to competing models. For instance, as noted by both (Hope et al., 2018 and Hawe et al., 2018), Oldham\u2019s method does not address the possibility of ceiling effects; in our view, determining which process gives rise to observed correlations comes after assessing whether those correlations are artifacts driven by coupling.\n\nParametric hypothesis tests are available for both $k$ and $cor(x,y)$, but depend on assumptions that may be unmet in the context of stroke recovery. We also argue for specific null values of both $k$ and $cor(x,y)$, although other choices are possible; one might instead choose \u2018random recovery\u2019 described in Lohse et al., 2021, as a null distribution and identify corresponding values. Instead of a parametric or simulation-based approach (Tu et al., 2005), we suggest a resampling-based one that can compare to the null values we suggest, and we describe how this method can be used for other null distributions. See Methods for details. A web-based app is available to carry out this analysis (https://jeff-goldsmith.shinyapps.io/prr_dashboard/).\n\nThe statistical significance of the recovery proportion and $R^{2}$ values have often been used as evidence for the PRR. Appendix 1 provides a detailed description of the connections between these and $cor(x,\\delta)$, $k$, and $cor(x,y)$. In short, null-value hypothesis testing for the recovery proportion and the interpretation of $R^{2}$ values can be difficult for reasons that are analogous to those for correlations: appropriate null values are available but non-standard, and the range of possible values for $R^{2}$ can be limited. We urge caution in interpreting these quantities and so prefer to use other measures of association.\n\n### Comparing distinct biological models for recovery\n\nThe PRR was developed as a model to explain recovery from motor impairment after stroke. Quantitative results, illustrated in Dataset C, show it\u2019s possible for recovery, defined as the change from baseline to follow-up, to be related to baseline values even when follow-up is not predicted well by baseline. But the ability to predict patient outcomes at follow-up is important in itself, and predictive performance can form a basis for comparing the PRR to alternative biological models for recovery. We suggest cross validation (CV) as a means to compare models, using median absolute prediction error (MAPE) in held-out data to measure predictive accuracy (lower MAPE values reflect higher prediction accuracy). Details are available in Methods.\n\nTo illustrate how prediction accuracy might be used to distinguish between competing models for recovery, we generate three datasets under different recovery mechanisms and use CV to evaluate candidate models. The first two datasets, which we\u2019ll label C200 and D200, are generated using the same process as Datasets C and D above but consist of 200 patients. Dataset E200 is similar to Dataset B, but has a latent follow-up mean of 70 rather than 30. Follow-up values greater than 66 are subject to strict threshold. That is, Dataset E200 implements large, constant recovery (with some noise) and imposes a ceiling.\n\nWe consider several models for the association between $y$ and $x$. First, we assume that $y$ values are randomly distributed around a common mean value, and do not depend on $x$; this is an intercept-only regression model, and the mean of observed $y$ values is used to predict future outcomes. We implement constant recovery with a ceiling effect as a special case of Tobit regression, assuming $y=min\u2061{x+c+\u03f5, 66}$, where the only free parameter is the constant $c$. This uses all data points, including those at ceiling, when estimating model parameters. We adopt an exponential form for recovery, motivated by van der Vliet et al., 2020, which includes an explicit ceiling. Next, we assume that $y$ depends on $x$, but allow the association to be smooth and non-linear using an additive model (generalized additive model [GAM]); details of this model are given in Appendix 1. Finally, we implement the PRR to estimate $\\delta$ given $x$, with $y$ taken to be $x+\\delta$. In all cases, we use available data to estimate model parameters. Note that except for the PRR, models focus on predicting the follow-up value directly. Also, the additive model includes several other models as special cases, but may overfit due to its flexibility.\n\nThe top row in Figure 2 shows baseline and follow-up values, and the bottom row shows scatterplots of observed (ceiled) $y$ against $x$. The panels in the bottom row of Figure 2 clarify the relationship between the data generating mechanism and the ability of $x$ to predict $y$; in each panel, fitted values from each of the candidate models are overlaid. Unsurprisingly, for Dataset C200, there is no apparent relationship between $x$ and $y$ \u2013 these data are generated under $cor(x,y)=0$. Dataset D200 is a case when baseline values are predictive of change and outcomes. In Dataset E200, the expected $y$ increases linearly with $x$ until reaching a plateau, and then is uniformly near the maximum value.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/80458/elife-80458-fig2-v2.jpg)\n\n**Figure 2.:** In the bottom row, panels show the observed (ceiled) value at follow-up against the baseline value. Fitted values from an intercept-only model (Int), a generalized additive model (GAM), and the proportional recovery rule (PRR) are shown in the bottom row.\n\nFigure 3 shows the result of our CV procedure applied to Datasets C200, D200, and E200; panels show the distribution of MAPE across repeated training/testing splits. For Dataset C200, the intercept-only, exponential, and additive models are the best performers; the PRR suffers from the lack of an intercept, which produces a bias in the predictions, while constant recovery with a ceiling is not well suited to this mechanism. For Dataset D200, the intercept-only and constant recovery models are the worst performers, while the (true) PRR, exponential, and additive models are similar. Finally, for Dataset E200, the (true) constant recovery model performs best. The additive model is flexible enough to capture the underlying non-linear association between $y$ and $x$, and very slightly underperforms compared to constant recovery. The exponential model is a reasonable approximation, but the PRR makes relatively poor predictions.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/80458/elife-80458-fig3-v2.jpg)\n\n**Figure 3.:** Panels correspond to the generated datasets shown in Figure 2. Models compared are an intercept-only model (Int), a generalized additive model (GAM), and the proportional recovery rule (PRR).\n\nThese results suggest that CV can effectively identify a best (or worst) model for prediction accuracy. When two or more models are similarly accurate, other considerations may be relevant. In Datasets C200 and D200, for example, the additive model contains the true, simpler model as a special case and is needlessly complex. We also emphasize a limitation of CV, which is the exclusive focus on prediction accuracy. This is analogous to using only $cor(x,y)$ to understand recovery, rather than $cor(x,y)$ and $k$ together. As we have discussed elsewhere, dismissing observations like those in Dataset C200 as uninteresting because baseline does not predict follow-up would be a mistake: the correlation between baseline and change does not arise from mathematical coupling and may reflect important recovery mechanisms. We therefore suggest CV as one component of a careful analysis.\n\n### Results for reported datasets\n\nWe now evaluate three previously reported datasets, described in the Methods section, using the statistical techniques given above.\n\nFigure 4 illustrates these example datasets. In the left panels, we show observed FM values for patients at baseline and follow-up (top row), and scatterplots of change against baseline (bottom row). Throughout, we differentiate recoverers and non-recoverers as specified in the original analyses. The right panel shows the contour plot of $cor(x,\\delta)$, with points corresponding to observed values among recoverers for each dataset. These values cluster in the bottom right corner, with reasonably large values of $cor(x,y)$ and $k<1$.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/80458/elife-80458-fig4-v2.jpg)\n\n**Figure 4.:** In the top row, panels show outcome values and baseline (x) and follow-up (y); points are colored to indicate recoverers (purple) and non-recoverers (yellow) using the definitions from each paper describing the data. In the bottom row, panels show change (delta) against initial impairment (66 \u2212 x), again separating recoverers and non-recoverers. The right panel shows a contour plot of Equation 1, with contours corresponding to values of the variance ratio k and the contour for k=1 highlighted. Points on this surface show correlation values obtained for the real datasets.\n\nWe next conducted a bootstrap analysis on the subsample of recoverers to obtain inference for $k$ and $cor(x,y)$. We display the results using 1000 bootstrap samples for each dataset in the contour plot in Figure 5, showing the null value corresponding to random recovery for reference, and summarize the results using 95% confidence intervals in Table 1. For each dataset, there is strong evidence that $k$ and $cor(x,y)$ differ from our suggested null values (1 and 0, respectively), and from those corresponding to random recovery. That is, we have evidence both that recovery is related to baseline values in a way that reduces variance at follow-up, and that baseline values are predictive of follow-up. These results inform conclusions about the statistical significance of observed associations between baseline, change, and follow-up values using plausible null hypotheses, and specifically address concerns about high correlations induced by canonical mathematical coupling. However, several mechanisms (including the PRR and constant recovery in the presence of strong ceiling effects) could give rise to these correlations.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/80458/elife-80458-fig5-v2.jpg)\n\n**Figure 5.:** Red points are the values obtained for the full dataset, and blue points are values obtained in each of 1000 bootstrap samples; points are overlaid on the contour plot of Equation 1.\n\n**Table 1.**\n Values and 95% confidence intervals for $k$ and $cor(x,y)$ for each of three datasets.Confidence intervals are obtained through a bootstrap procedure with 1000 bootstrap samples.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Dataset name</th>\n      <th>k</th>\n      <th>cor(x,y)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Stinear and Byblow</td>\n      <td>0.39 [0.27, 0.54]</td>\n      <td>0.73 [0.66, 0.79]</td>\n    </tr>\n    <tr>\n      <td>Winters</td>\n      <td>0.07 [0.05, 0.09]</td>\n      <td>0.59 [0.49, 0.69]</td>\n    </tr>\n    <tr>\n      <td>Zarahn</td>\n      <td>0.13 [0.03, 0.24]</td>\n      <td>0.75 [0.55, 0.92]</td>\n    </tr>\n  </tbody>\n</table>\n\nWe next compared the performance of five models in terms of predictive accuracy using CV. As for generated data, we considered an intercept-only model, a model assuming constant recovery with a ceiling effect, an additive model, an exponential model, and the PRR. For each dataset, we generated 1000 training/testing splits and summarize prediction accuracy using MAPEs. The plots below show the distribution of MAPE across splits for each model and dataset. In these examples, constant recovery with a ceiling underperforms against competing methods. The exponential model, additive model, and PRR prediction accuracies are often comparable, although the PRR appears superior for the Stinear and Byblow and Zarahn datasets. A figure in Appendix 1 shows fitted values for each model applied to training datasets. In keeping with the results for prediction accuracy, the constant recovery model is visually a poor fit. In some instances, the additive model is too flexible, especially for the Zarahn data. The additive and exponential models are similar to the PRR in terms of fitted values despite their additional flexibility and complexity.\n\nTo provide some frame of reference for the MAPEs reported in Figure 6, in Table 2, we provide values for the percent of outcome variation explained by the PRR for each dataset.\n\n**Table 2.**\n The proportion of follow-up ($y$) variation explained by the proportional recovery rule (PRR) for each of three datasets.Follow-up fitted $y^_{}^{PRR}$ values are obtained by adding predicted change from the PRR to observed baseline values, and we compute $\u27ee1\u2212\\frac{\\sum(y_{i}\u2212y^\u00a0_{i}^{PRR})^{2}}{\\sum(y_{i}\u2212y\u00af)^{2}}\u27ef$.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Dataset name</th>\n      <th>Percent of outcome variation explained</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Stinear and Byblow</td>\n      <td>0.55</td>\n    </tr>\n    <tr>\n      <td>Winters</td>\n      <td>0.35</td>\n    </tr>\n    <tr>\n      <td>Zarahn</td>\n      <td>0.56</td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 6.](https://cdn.elifesciences.org/articles/80458/elife-80458-fig6-v2.jpg)\n\n**Figure 6.:** Panels correspond to the datasets shown in Figure 4. Models compared are an intercept-only model, a generalized additive model, and the proportional recovery rule (PRR).\n\nThe preceding results suggest that data among recoverers is consistent with the PRR for each study. The strong correlations between baseline and follow-up are not driven by canonical forms of mathematical coupling or regression to the mean. While similar values of $k$ and $cor(x,y)$ can arise from a variety of mechanisms, the PRR clearly outperforms a model that assumes constant recovery in the presence of a ceiling effect in terms of prediction accuracy. Competing models for recovery, specifically those allowing for non-linear association between baseline and follow-up, do not produce more accurate predictions than the PRR, and are similar in their fitted values.\n\n### Distinguishing between recoverers and non-recoverers\n\nTo this point, we have focused on recoverers under the implicit assumption that a biologically distinct group of non-recoverers exists and can be identified. This assumption is supported by prior studies of upper limb motor control and deficits in other domains (Prabhakaran et al., 2008; Byblow et al., 2015; Winters et al., 2016; Zandvliet et al., 2020), and promising work suggests that it is possible to identify non-recoverers using baseline characteristics (Byblow et al., 2015). However, the identification of non-recoverers has not been approached in the same way across studies, and there is concern that data-driven methods can produce misleading results in some circumstances (Hawe et al., 2018; Lohse et al., 2021). It is necessary to understand the limitations of some methods for data-driven subgroup identification before assessing related arguments about recovery and the PRR.\n\nClustering refers to a collection of methods for unsupervised learning that has several weaknesses in the context of recovery. It is unclear what clustering approach is best, and results can be sensitive to this choice. Perhaps more critically, determining the \u2018true\u2019 number of clusters present is imprecise and open to interpretation. Although tools like the Gap statistic (Tibshirani et al., 2002; James et al., 2013) can provide guidance, the choice between one, two, or more clusters is not supported by hypothesis tests, confidence intervals, or other methods for statistical inference. Practitioners are encouraged to try several numbers of clusters and cautioned to be aware that there is rarely a single best selection (James et al., 2013). Results are typically considered exploratory and assessed for validity based on visual inspection or additional supporting information. As such, clustering can provide only limited evidence for or against the existence of recoverers and non-recoverers (or finer partitions of patients) when examining a specific dataset. At worst, one might simply assume that distinct recoverer and non-recoverer clusters exist and can be separated using clustering. Failure to critically examine this assumption using visual and quantitative data checks can yield misleading results.\n\nThe weaknesses inherent to cluster identification can lead to flawed scientific conclusions. Hawe et al., 2018, and Lohse et al., 2021, show how errors can arise using \u2018random\u2019 recovery. Put briefly, random recovery assumes that follow-up values $y$ are uniformly distributed between the baseline $x$ and the maximum possible value. If data arise via this mechanism and it is assumed that two groups exist, the use of clustering will often uncover one cluster that appears to follow the PRR with a recovery proportion of roughly 0.75. Building on this observation, Lohse et al., 2021, propose an approach for comparing the PRR to random recovery. Data under random recovery can be generated by drawing baseline values $x$ from the observed values with replacement (to mimic the distribution of baseline values in the sample) and then drawing follow-up values $y$ from a uniform distribution between the baseline $x$ and the maximum possible value. This generated data can be analyzed through clustering followed by regression to obtain an observed slope in the \u2018recoverer\u2019 cluster. By repeating this process many times, one can obtain the distribution of slopes in the \u2018recoverer\u2019 cluster under random recovery. Treating this as a null distribution, Lohse et al., 2021, argue, provides a way to quantify whether a slope obtained through the same analysis of real data is consistent with random recovery. The authors assert that \u2018current data do not support the claim that recovery is proportional any more than that recovery is random\u2019.\n\nHowever, this narrow focus on the distribution of slopes that arises from random recovery bypasses a critical question \u2013 whether the results of the clustering analysis themselves are consistent with random recovery. Put differently, one must first ask whether there is evidence for the existence of distinct clusters in observed data using random recovery to generate a null distribution. Viewing data generated under random recovery alongside data obtained in a study of upper limb motor control recovery, as in Figure 7, emphasizes this difference. While clustering can misleadingly identify a \u2018recoverer\u2019 group when data actually follow random recovery, visual inspection suggests that an obviously different mechanism underlies the Winters dataset. The null distribution of within-cluster dispersion, rather than slopes, provides a way to quantify this difference; see Methods for details. Given the contrast between panels in Figure 7, it is not surprising that this approach rejects the null of random recovery for these data (p<0.001).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/80458/elife-80458-fig7-v2.jpg)\n\n**Figure 7.:** Left panel shows data generated under a \u2018random recovery\u2019 process, in which outcome values are drawn from a uniform distribution over the baseline value and ceiling. Right panel presents again data from Winters et al., 2015.\n\nFrom this, we conclude that an inappropriate application of unsupervised learning (i.e. one that presumes two clusters exists) can produce misleading results. This problem is exacerbated by the lack of concrete statistical guidance for determining the number of clusters in a sample. (Similar issues can arise in other ways, for example from a definition of non-recoverers as those who recover less than expected under the PRR.) Simulations of random recovery, like those in Hawe et al., 2018, and Lohse et al., 2021, are useful for illustrating these issues but should not be misinterpreted: the ability to produce slopes like the PRR through analyses of generated data does not refute the PRR (or any other model of recovery). Nor does it argue against the existence of meaningful recoverer and non-recoverer groups. In many studies of upper limb motor control recovery, a distinct group of non-recoverers is clear from a visualization of the data (and supported through appropriate hypothesis tests) or can be identified through a distinct biomarker, and does not artifactually arise through clustering.\n\nFinally, we distinguish the identification of a biologically distinct group comprising non-recoverers from the stratification of patients into severe and non-severe groups based on initial impairment. Zarahn et al., 2011, for example, used a subjective approach to classify patients with baseline FM \u2264 10 as severely affected. More recently, Bonkhoff et al., 2022, used Bayesian hierarchical models and formal model selection approaches to identify a threshold (also found to be FM = 10) above and below which patients exhibit different recovery patterns. Our point in this section, meanwhile, is that the severely affected population contains biologically meaningful subgroups \u2013 recoverers and non-recoverers \u2013 and that these can be identified using appropriate unsupervised learning methods.\n\n## Discussion\n\nThe PRR was discovered while searching for a possible regularity in the relationship between initial impairment, as measured by the FM-UE, and recovery in the context of upper limb paresis in the time shortly after stroke (Krakauer and Marshall, 2015). It was understood as a description of the biological change process that underlies observed recovery, and subsequently evaluated in other recovery settings. Although it was not intended to form the basis for patient-level predictions, the strong correlations between initial impairment and recovery has suggested that accurate predictions are possible. At its core, the PRR models the association between baseline and change; this is always a fraught statistical problem, and recent publications on the PRR have revived longstanding concerns in the context of stroke recovery (Hope et al., 2018; Hawe et al., 2018; Bonkhoff et al., 2020).\n\nWe have revisited the arguments for the PRR as a descriptive and predictive model, focusing on key statistical questions at each step. We identified scenarios in which observed correlations are \u2018artifactual\u2019 \u2013 induced either by mathematical coupling or by regression to the mean due to measurement error \u2013 versus those when they are real signals, emphasizing the variance ratio and tests similar to Oldham\u2019s method. For non-artifactual signals, we used CV to compare models for recovery (e.g. PRR versus constant recovery with a ceiling); this also provides a concrete metric for the clinical usefulness of predictions made by each method. Finally, we considered the problem of distinguishing recoverers from non-recoverers, and the limitations of unsupervised learning for this problem.\n\nOur findings in these datasets suggest that the association between initial impairment and change is non-artifactual, and the PRR is better as a biological and predictive model than several competing models, including constant recovery with a ceiling effect. These data also suggest that a biologically distinct group of non-recoverers exists. We distinguish between the usefulness of the PRR as a biological and a predictive model deliberately: biological models are important for understanding the recovery process itself, and accurate predictions are important in clinical care. Although the PRR is useful for both, it isn\u2019t necessary that a single model address both considerations simultaneously.\n\nWe acknowledge several limitations and caveats. The statistical considerations for recovery are nuanced and often counterintuitive. Our arguments deviate from usual null-value hypothesis testing, and recognize that zero is often not the appropriate null value. This is related to the important observation that \u2018large\u2019 correlation values can arise in a variety of settings, which complicates but does not invalidate statistical approaches. While we distinguish between the usefulness of a model as either biological or predictive, our preferred method for comparing models is based only on their predictive accuracy. CV can identify models that have better or worse predictive performance, but in itself does not examine the validity of underlying model assumptions or ensure that better-performing models are accurate enough to make meaningful clinical predictions. Recoverers and non-recoverers should be identified in a way that is not artificial, and that does not serve to introduce evidence for a model of recovery that would not otherwise exist. Lastly, we recognize that not every dataset will be similar to those we presented; in those cases, we hope the tools we suggest will be used to evaluate the PRR against other models.\n\nIndeed, a recent large-scale cohort study examining the PRR presents data that differ in notable ways from the studies we consider (Lee et al., 2021). The authors are concerned about ceiling effects in the FMA-UE, but use an analysis approach that differs from the framework presented here. Lee et al., 2021, use a logistic regression to model the probability of achieving full recovery; they observe that more than half of all patients, and more than 60% of patients with baseline FMA-UE above 46, recover to the maximum possible value. These data mimic those in our generated Dataset E200, and might benefit from the comparison between the PRR and a non-linear model in terms of predictive accuracy. Certainly, the FMA-UE lacks resolution, especially at higher values, and a refined outcome measure that ameliorates such ceiling effects is needed. There is nothing in this study that precludes the possibility that PRR would apply for this new measure. Meanwhile, we\u2019re skeptical of broader claims made regarding the non-generalizability of the PRR. The cohort in Lee et al., 2021, is much more mildly impaired at baseline than data we have observed; this could have several causes, but the choice to exclude patients with FMA-UE hand subscore of 0 at day 7 likely removes many moderate and severely affected patients who are unlikely to recover to ceiling. Thus, in a sense the study selected for a cohort that is not only clinically non-representative, but one that makes it hard to derive the PRR by looking for changes at the high-end of the FMA-UE, a range known to fail to detect subtle residual deficits.\n\nThe PRR provides an appealingly simple model for understanding recovery, even if the statistical approaches for evaluating it are not direct. We argue that the PRR is and will continue to be relevant as a model for recovery, but we agree with others that more complex analytic strategies are necessary to move beyond it. Recovery depends on factors other than initial impairment. The PRR estimates an average recovery proportion, but individuals will recover more or less than that average; determining whether this is \u2018noise\u2019 or heterogeneity that can be predicted using other forms of measure at baseline is an important next step. Similarly, reliable techniques to identify non-recoverers at baseline are needed. Different outcome measures and different recovery settings may not be well described by the PRR. A specific focus on predicting long-term outcomes is an important goal; supervised learning methods may be helpful in this, although many of these methods have unclear interpretations.\n\nMore complex models than the PRR do not inherently resolve the statistical issues we\u2019ve raised and may in fact make them harder to identify. For example, it\u2019s been suggested that mixed models could account for differences in baseline values and change across subjects in a way that avoids mathematical coupling by modeling baseline and follow-up values directly (van der Vliet et al., 2020). This is not the case. Consider a model for outcome values at baseline (time = 0) and a single follow-up (time = 1) that includes both random intercepts and random slopes. When such a model is applied to Datasets A, C, and D, the random intercepts and slopes will be correlated; low random intercepts will suggest steeper random slopes in a way that mimics baseline and change scores. Put differently, to predict a follow-up value from baseline, one must use the baseline value to predict a random slope using the correlation between random effects. Indeed, for Dataset A that correlation will equal \u20130.71 \u2013 the same as $cor(x,\\delta)$. Distinguishing between mathematical coupling and recovery that changes the variance ratio remains a problem, but now one that involves the correlation of random effects. Alternative coding for the time variable can induce a model that mimics Oldham\u2019s method, and avoids coupling based on similar arguments (Blance et al., 2005).\n\nOur point is not that mixed models are a wrong choice \u2013 in fact, we are enthusiastic about work that combines serial measurement, non-linear trends, random effects, and mixture models (van der Vliet et al., 2020). Taken together, these elements can overcome many of the limitations introduced by studies that include only baseline and single follow-up observations. Serial measurements and careful modeling provide insight into patients\u2019 recovery trajectory, reduce effects of measurement error, and identify non-recoverers early in the recovery process. Nonetheless, non-linear mixed models fit to serial measurements are not a panacea, and do not avoid the challenges described in this paper. The same fundamental issues that arise from within-subject correlation and changing variances over time due to recovery and measurement ceilings should be considered when using this or any other model framework. Indeed, more complex models may serve to mask these basic issues by making them implicit rather than explicit.\n\nAllowing for differences in datasets, implementations, and performance criteria, our results are consistent with those reported in recent papers examining the PRR as a predictive model. Bonkhoff et al., 2020, fit several models to a subset of patients selected to mitigate ceiling effects and avoid including non-recoverers, and found that that PRR was among the best performing models in terms of out-of-sample prediction accuracy. The percent of outcome variation explained was lower in their work than in our analyses (21% versus 35\u201356%), leading the authors to suggest that the PRR may be better than other models but insufficient for making clinical predictions in the context of precision neurology. Our view is a less pessimistic take on the same information: that the PRR outperforms competing models (including those intended to account for ceiling effects) attests to its value, and the percent of outcome variation explained is suggestive of an important biological mechanism that should be investigated and understood \u2014 even if $R^{2}$ values are not as high as has been suggested. After all, if it were found that a risk factor accounted for greater than 20% of the variance in the chance of getting a disease it would immediately be investigated and prevention attempted. From the standpoint of clinical prediction, it seems likely that accurate models developed in the future will include initial impairment as a covariate, and may include a term that reflects proportional recovery.\n\nThere is growing consensus around the need for careful comparisons of different models for recovery and for analytic strategies that minimize the impact of ceiling effects. Bonkhoff et al., 2020, and Bonkhoff et al., 2022, use a statistically rigorous model selection approach based on leave-one-out cross-validated deviances, which is particularly well suited to comparing Bayesian hierarchical models. These papers also consider only patients with initial impairments below 45 to avoid ceiling effects induced by mildly affected stroke patients. We use cross-validated MAPE because it explicitly focuses on prediction accuracy, and the results can therefore be interpreted in the context of single-subject predictions. We also hesitate to discard a substantial fraction of our data and miss the opportunity to model recovery for mildly affected patients at baseline, although we recognize that the narrower outcome distribution for patients at or near ceiling can affect measures of model performance. These analytic preferences reflect different approaches to questions and challenges whose importance is increasingly agreed upon.\n\nIn light of this, we stress again that the PRR is intended as a model for recovery from a specific form of impairment as measured by the FM, and is best understood as an attempt to mathematically capture a component of the recovery process. The emphasis on change between baseline and follow-up is deliberate: biological recovery is a process that causes a change, which then leads to the final value. Understanding whether recovery varies across patients and what mechanism might drive such variability is a fundamental scientific question. That the PRR also has some value for predicting final outcomes is to be welcomed but not necessary for its biological importance.\n\nApplications of the PRR in studies of upper limb motor control recovery have often found that, averaging across recoverers, roughly 70% of lost function is regained in the time shortly after stroke. We\u2019ve argued that this is attributable to spontaneous biological recovery (Cramer, 2008; Zeiler and Krakauer, 2013; Cassidy and Cramer, 2017). The existence of such a mechanism does not imply that behavioral interventions are unable to improve patient outcomes. Instead, future clinical trials should seek to improve on the proportion of impairment reduction, reduce the proportion of non-recoverers, or induce changes that are distinct from (and better than) those expected under the PRR.\n\n### Conclusions\n\nConsideration of associations between baseline, follow-up, and change continues to be of interest across scientific domains despite the statistical challenges, and for good reason: these can be and often are related in ways that are not due to artifacts. Our goal here was to clarify statistical reasoning concerning the problem of relating baseline to change in the context of stroke recovery. It is for the reader to decide whether the work presented here is either a bumpy statistical detour or an interesting scenic route. In either case, rigor about this issue is essential for continued biological and clinical progress, and it would be unfortunate if the recent spate of papers leads to dismissal of the PRR out of either confusion or exhaustion.\n\nAs a model that relates baseline values to change, the PRR requires the application of careful, and sometimes counterintuitive, statistical techniques. We have described well-established but non-standard approaches to distinguish between artifacts due to coupling from signals that arise from true associations, introduced tools to compare competing models for recovery based on their predictive accuracy, and elaborated on issues that can arise when using some data-driven methods to distinguish recoverers and non-recoverers. In our analyses of real data, we found evidence for signals not attributable to coupling, and obtained better predictions using the PRR than a model that assumes constant recovery (with some noise) up to a ceiling. This suggests that the PRR is non-artifactual and remains relevant, at the very least, as a model for recovery. Future work should seek to both explain the mechanistic basis for PRR and improve upon it as a predictive model.\n\n## Methods\n\n### Reported datasets\n\nDetails of inclusion and exclusion criteria are available in the referenced literature. All patients received usual care according to evidence-based stroke guidelines for physical therapists, but no systematic interventions.\n\nEthical approvals were obtained for each dataset; see referenced literature for details. The Winters and Zarahn datasets are included in supplementary materials. The Stinear and Byblow data were collected under ethical approvals that do not permit placing data online. Data can be made available under reasonable request to the author.\n\n### Resampling approach for inference on cor(x,y) and k\n\nWe suggest a bootstrap procedure to obtain confidence intervals for $cor(x,y)$ and $k$. A single bootstrap sample can be constructed by selecting subjects (pairs of both $x$ and $y$ values) from a full dataset with replacement. Next, we compute the values $k$ and $cor(x,y)$ for the bootstrap sample. This is repeated a large number of times (e.g. 1000) to produce an empirical distribution for the quantities of interest, which can be used to derive corresponding confidence intervals. Simulations evaluating this approach suggest that coverage of 95% CIs is roughly 0.95 for moderate sample sizes.\n\nOur suggested null values for $k$ and $cor(x,y)$ are 1 and 0, respectively, but other values can be used. For null hypotheses framed in terms of data generating mechanisms rather than parameter values, such as the \u2018random\u2019 recovery null hypothesis (Lohse et al., 2021), it can be difficult to derive the corresponding null values. In these cases, we suggest to obtain empirical values by generating a large dataset under the null and computing the $k$ and $cor(x,y)$ directly.\n\n### CV to compare models\n\nData are divided into training and testing sets; training data are used to fit models, and these models are applied to data in the testing set to obtain predicted outcomes. The difference between predicted and observed outcomes in the testing data reflects each model\u2019s ability to make accurate predictions of data not used in model development. Comparing models in terms of their MAPE is an established technique for choosing among candidate models, and the MAPE provides a measure of the anticipated prediction error for a given model.\n\nCV has several possible implementations; here, random training and testing splits are comprised of 80% and 20% of the data, respectively, and the training data is used to fit each model. Given model fits, predictions are made for the testing dataset and compared to actual outcomes, and the difference is summarized using the MAPE. This process is then repeated 1000 times, so that the distribution of MAPE across training and testing splits is obtained.\n\n### Defining a null distribution for within-cluster dispersion\n\nAlthough the Gap statistic does not allow for inference to determine the number of clusters within a sample, it provides a useful metric for comparing observed data to a null hypothesis of random recovery. Intuitively, for a given number of clusters $k$, the Gap statistic $Gap(k)$ compares the observed degree of within-cluster similarity to the expected degree of within-cluster similarity under a reference distribution. Suppose a clustering analysis has produced clusters $C_{1}, C_{2}, \u2026, C_{k}$ . Assuming the Euclidean distance is used to measure distance between observations in the same cluster, we measure overall within-cluster dispersion using the pooled within cluster sum of squares around the cluster mean:\n\n$$\nW_{k}=\\sumr=1k\\sumz_{i} \\inC_{r}z_{i}- \\mu_{r}^{2}.\n$$\n\nHere, $\\mu_{r}$ is the within-cluster mean and $z_{i}$ is the vector of observed values for subject $1\\leqi\\leqn$ (e.g. $z_{i}=(x_{i}, y_{i})$).\n\nThe value of $W_{k}$ decreases as $k$ increases, regardless of whether additional true clusters are identified. The Gap statistic therefore standardizes $log(W_{k})$ to provide guidance on the choice of $k$ within a dataset. To standardize $log(W_{k})$, one compares the observed value to its expectation under a reference distribution:\n\n$$\nGap_{n}(k)=E_{n}^{\u2217}{log(W_{k})}\u2212log(W_{k}).\n$$\n\nThe expectation $E_{n}^{*}logW_{k}$ is approximated through the analysis of multiple datasets generated under the reference distribution. For each dataset one computes $log(W_{k}^{\u2217})$, and the expected value is taken as the average across these. The reference distribution in the calculation of the Gap statistic is often uniform over the range of each feature in the clustering analysis. In the context of recovery, this suggests a square over all possible values of $x$ and $y$ rather than the triangular region defined by random recovery, but the spirit is similar.\n\nWe use the Gap statistic to measure the strength within-cluster dispersion against that expected under a reference distribution. To compare observed data to a null distribution, we suggest a resampling-based approach to construct a null distribution for $Gap_{n}(k)$. For random recovery, to construct a single resampled dataset, we suggest to sample observed $x$ values with replacement; generate corresponding $y$ values under random recovery; and obtain $Gap_{n}^{\u2217}(k)$. This process is repeated many times, and the observed value $Gap_{n}(k)$ is compared to the distribution of $Gap_{n}^{\u2217}(k)$. This process is very similar to one suggested by Lohse et al., 2021, with the exception that we focus on evidence for clustering through $Gap_{n}(k)$ rather that the distribution of slope values obtained in analyses of resulting clusters.\n\nThe Gap statistic can be computed for any clustering method. By extension, our method for comparing the observed amount of within-cluster dispersion to that expected under a null distribution can as well. In our analyses we follow recent literature, and use hierarchical clustering based on Mahalanobis distances between points. Simulations suggest that our testing approach achieves nominal size: when data are in fact generated under random recovery, we reject the null hypothesis 5% of the time under $\\alpha=0.05$.\n\n### Implementation and reproducibility\n\nAll analyses were implemented in R; supplementary materials contain source code and RMarkdown documents to reproduce all figures and analyses.\n",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "c08b4aae-2255-43e4-8047-81a8854a85f4",
+      "submission_id": "2bd72a9e-1316-4bc2-8f94-5d16d418804c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Taraz Lee, https://ror.org/00jmfr291 University of Michigan United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80458.sa0](https://doi.org/10.7554/eLife.80458.sa0)\n\nThis fundamental work provides a comprehensive look at validity of the Proportional Recovery Rule, which states that patients will recover a fixed proportion of lost function after stroke. By undertaking a thorough investigation of the statistical properties of the analysis of change and baseline values the authors elucidate the statistical framework that can be used regardless of the topic of study. In a compelling model comparison across several large sets of data, the authors confirm support for the Proportional Recovery Rule over other models of recovery.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Taraz Lee, https://ror.org/00jmfr291 University of Michigan United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80458.sa1](https://doi.org/10.7554/eLife.80458.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting the paper \"The proportional recovery rule redux: Arguments for its biological and predictive relevance\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Howard Bowman (Reviewer #3).\n\nComments to the Authors:\n\nWe are sorry to say that, after consultation with the reviewers, we have decided that this work will not be considered further for publication by eLife.\n\nThe reviewers had significant concerns about both the clarity of the manuscript and the methods employed. They felt that there remained confounds in the analyses that cannot be sufficiently ruled out. Ultimately, there was not sufficient enthusiasm that the manuscript would have broad appeal to the readership of eLife.\n\nReviewer #2 (Recommendations for the authors):\n\nThis paper addresses the inherent potential of motor recovery after stroke. The authors would like to validate the concept of proportional recovery which assumes that stroke patient typically show a fixed amount of recovery of about 70% irrespective of where they start. The authors suggest that after controlling for possibly confounding variables like ceiling effects or mathematical coupling, they still could validate the proportional recovery rule. The Results section is difficult to read for a non-statistician. However, the findings reported in the paper are rather incremental than novel. Most importantly, there are no data that explain the neurobiological basis of proportional recovery. Hence, the novelty of this submission remains low apart from more sophisticated statistical models which ultimately come to a similar conclusion than reported years before.\n\nAs stated above, the Results section is very difficult to read and appears somewhat lengthy. Lesion analyses or any other data about the possible neurobiological foundations of the proportional recovery are missing. I acknowledge the relatively large sample size, but the Fugl-Meyer score based view without any further para-clinical evidence is somewhat meager. Therefore, I do not see that this paper has a major impact on the field, as in the best case it confirms the proportional recovery rule which has been published many years before.\n\nReviewer #3 (Recommendations for the authors):\n\nThis paper presents a defence of the proportional recovery theory of how stroke patients with upper limb motor impairments recover. This is a theory that has come under attack due to confounds associated with the analyses used to assess the theory. The paper acknowledges these confounds, which include compression (to ceiling) enhanced mathematical coupling and over-fitting in the differentiation of recovers and non-recovers. The paper then presents a number of methods: use of non-zero nulls; focus on the variance-ratio; bootstrapping to assess variability in parameter and model fits; comparison of model fits; etc. These certainly improve upon the methods classically used in the literature to justify the proportional recovery hypothesis. Additionally, we appreciate the constructive tone of this paper and its effort to arrive at a consensus position on the proportional recovery issue. Indeed, the overall conclusion that there is a proportional (to lost) recovery pattern amongst the moderately impaired group is a position that we have sympathy with, although that pattern is much weaker than some previous claims in the literature.\n\nHowever, there seem to be remaining problems with the analyses employed, although, it is difficult to definitively judge the methods employed without more detail than the paper currently offers.\n\nThe two most important issues that seem to be weaknesses are as follows.\n\n1) Remaining confounds with key measures: Goldsmith et al. argue that particular combinations of correlation between baseline and follow-up, i.e. cor(x,y); correlation between baseline and change, i.e. cor(x,\u03b4); and the variance-ratio, i.e. k, is diagnostic of proportional recovery (PPR). In particular, they argue that the combination of cor(x,y), cor(x,\u03b4) and k shown in table 1 and figure 5 justify their claim that the three datasets they consider, Stinear and Byblow, Winters and Zarahn, definitively exhibit a PPR pattern. However, the simulations presented in Bonkhoff et al. (2020), show that this same combination of measures can be exhibited by a constant recovery model in the presence of ceiling. Indeed, this is the fundamental confound described by Hope et al., Bonkhoff et al. and Bowman et al., which led to the conclusion that the only way the ceiling confound could be avoided is by throwing data points at ceiling away. (This is actually what I believe you should do with the data in this paper. Note, in Bonkhoff et al. (2020), we verified with model recovery simulations that the throwing away procedure enables the correct model to be recovered.) To make this completely clear, I have prepared a figure, which I am assured will be attached with this review.\n\nhttps://submit.elifesciences.org/eLife_files/2021/09/17/00098237/00/98237_0_attach_15_32737_convrt.pdf\n\nThis shows table 1 and figure 5 from Goldsmith et al. on the left and figure 6 from Bonkhoff et al. on the right. I have added annotations to figure 6, which show where the Stinear and Byblow and Winters data sets would sit in the panels for constant recovery. The Zarahn data set does not so obviously correspond to a vertical line, but fits with the general combination of measurements.\n\n2) Limitations of model fits: certainly, the effort to fit models to the three data sets is welcome. However, there is a concern that this model comparison is not a completely fair test of competing theories to proportional recovery. The model fitting comparison in figure 6 is interesting to see. Although, I do find it difficult to interpret the findings, for the following reasons: (a) a criterion has not been given to judge when one model is, in a statistical sense, doing better than another model. I would have expected an assessment of where the MAPE for the best model sits in the bootstrap distribution of MAPEs for each of the other models. This would enable an inference of the kind that the MAPE of the best model is beyond the 95% confidence level of the second best model, and similar for the third. Something of this kind was done in Bonkhoff et al. (2020). (b) I suspect the reason that the Generalised Additive Model does not win is because it is too flexible. It would have been very useful to have seen (perhaps in an appendix) the exact functional form of the Generalised Additive Model. So, I cannot be sure, but I suspect it was not set up to be specifically for saturation at ceiling patterns, with a positive slope leading to a saturation on the right. Consequently, I suspect that the model overfits for many of the bootstrap samples. van der Vliet et al. (2020) give a strong precedent for using a simple exponential, which I suspect would fit the data much better. (c) when I look at figure 4, left panels, lower row, I feel that I do see a strong ceiling pattern in the data. However, this would be much easier to assess if simple x against y (baseline against followup) scatter plots were also presented and model fits for each model were depicted on the scatter plot. This could for example go into an appendix.\n\nvan der Vliet, R., Selles, R. W., Andrinopoulou, E. R., Nijland, R., Ribbers, G. M., Frens, M. A., \u2026 and Kwakkel, G. (2020). Predicting upper limb motor impairment recovery after stroke: a mixture model. Annals of neurology, 87(3), 383-393.\n\nI have the following more specific comments for the authors.\n\nAbstract: the following statement is made,\" We describe approaches that can assess associations between baseline and changes from baseline while avoiding artifacts either due to mathematical coupling or regression to the mean due to measurement error\". For reasons justified above, and below, I am doubtful that this statement and similar statements made elsewhere in this paper are appropriate.\n\nIntroduction section, paragraph beginning \"The growing meta-literature discusses \u2026\", statement: \"the nuanced and sometimes counterintuitive statistical arguments are critical to get right for the sake of furthering our understanding of the biological mechanisms of recovery.\" I could not agree more than I do with this statement.\n\nResults section, paragraph beginning \"A broader argument relates to settings..\", with regard to the reference to Bonkhoff et al. (2020) in this paragraph, the reference to \"degenerate\" is actually most explicitly made in Bowman et al. (2021).\n\nResults section, subsection \"Distinguishing true and artifactual signals\", paragraph beginning \"The value of cor(x, \u03b4) depends on the variance ratio k and..\", statement: \"The variance ratio can be used as a measure of the extent to which recovery depends on baseline values, regardless of the value of cor(x, y).\" As indicated above, if this statement is suggesting that the variance-ratio can be used to unambiguously identify a proportional recovery pattern, we do not agree. Indeed, the variance-ratio could be small even when there is no recovery at all; that is, if the mean at follow-up is the same, or indeed below, the mean at baseline.\n\nResults section, subsection \"Distinguishing true and artifactual signals\", paragraph beginning \"All datasets have x values generated from a Normal distribution\u2026\", how is ceiling handled in these simulations \u2013 I would have expected that sometimes a followup score there would be, \"by chance\", above 66. Can you add a explanation of what happens to these?\n\nResults section, subsection \"Distinguishing true and artifactual signals\", a minor frustration is that the contour plot on the right of figure 1 is the opposite way around to the surface plot in Hope et al., with a baseline by follow-up correlation of one furthest to the right. At the least, could this discrepancy be mentioned in the caption to help the reader.\n\nResults section, subsection \"Distinguishing true and artifactual signals\", para beginning \"Dataset A is a canonical example of mathematical coupling\", I am unsure about quite a lot of the points made in this paragraph. It seems to me that a lot of what is said in this paragraph does not sit well with point 1 above.\n\nResults section, subsection \"Distinguishing true and artifactual signals\", para beginning \"Dataset D represents the least controversial..\": I would agree that dataset D is a clear example of proportional recovery. However, our central point in previous publications is that on the basis of the methods typically used, including in this paper, that judgment has to be made informally on the basis of visual inspection. This is because one can obtain exactly the same values of statistical measures (r(X,Y), r(x,\u03b4), k), in a dataset without PRR, but which contains a strong ceiling effect, and indeed, datasets do typically exhibit strong ceiling effects; that is, from what I have seen, empirically collected datasets do not typically look like dataset D, because of the ceiling effect.\n\nResults section, subsection \"Distinguishing true and artifactual signals\", para beginning \"Taken together, the..\", text: \"We also identify a setting, typified by Dataset D, in which each measure suggests the presence of a relevant association. It is not the case that data like these necessarily imply that recovery follows the PRR. Other biological models could produce data similar to Dataset D, and how to compare competing models will be considered in later sections.\" Just to say, I was a little confused here. What you are saying here seems to be inconsistent with what you said in the previous paragraph in re. what can be deduced from dataset D.\n\nResults section, subsection \"Recasting Oldham's method\", paragraph beginning \"Instead of cor(x + y, x \u2212 y), we prefer to focus\u2026\": again, some of what is said in this paragraph seems to ignore the confounds that arise from ceiling effects.\n\nResults section, subsection \"Correlations, variance ratios, and regression\", paragraph beginning \"The following expressions relate..\", Would it be possible to see a derivation of these two equations? These are not completely standard since \\\u03b4 = y-x and ii = max-x. This could go in an appendix.\n\nResults section, subsection \"Comparing distinct biological models for recovery\", paragraph beginning \"To illustrate how prediction accuracy\u2026\", last sentence: can you give more details of how ceiling is enforced?\n\nResults section, subsection \"Comparing distinct biological models for recovery\", paragraph beginning \"We consider three models for the association \u2026\", you say that \"Second, we implement the PRR (without intercept) to estimate \u03b4 given x, with y taken to be x + \u03b4.\", Don't you need to tell us the slope in this eqn, in order to know it is proportional to lost? This is required to rule out proportional to spared or constant recovery. Also, you refer to using a \"generalized additive model\". Could you give more details of the functional form of this model, perhaps in an appendix? At the least, could you include a relevant reference?\n\nResults section, subsection \"Results for reported datasets\", paragraph beginning \"We next conducted the bootstrap analysis on the subsample\u2026\": again, the confound created by ceiling effects impacts this paragraph.\n\nResults section, subsection \"Results for reported datasets\", paragraph beginning \"We compared the performance of three models \u2026\": this is where my second point above applies.\n\nResults section, subsection \"Results for reported datasets\", table 2 caption. Sorry for being dumb, but could you give more explanation of how the R-squared is being calculated here. In particular, could you confirm whether the R-squared equation given in the \"Correlations, variance ratios, and regression\" subsection is the one being applied here. If it is not this one, can you give the equation that is being used. This is a key issue, since the R-squared values here are much smaller than those given in relevant papers published for some of these data sets.\n\nResults section, subsection \"Results for reported datasets\", paragraph beginning \"The preceding results for \u2026\": as previously discussed, the central finding of the work of Hope et al. and Bonkhoff et al. is that, in the presence of ceiling, recovery patterns completely different to the PRR, for example proportional to spared function, can look like PRR, when the measures considered in this paper, cor(\\\u03b4, x), cor(x,y), var ratio, are taken. How has the work presented here countered that criticism? I cannot see that it has.\n\nDiscussion section, paragraph beginning \"Indeed, a recent large-scale cohort study \u2026\", it is stated that, \"Where Hope et al. (2018) and Bowman et al. (2021) note ceiling effects can compress scores in a way that induces a variance reduction, Lee et al. (2021) observe more than half of all patients, and more than 60% of patients with baseline FMA-UE above 46, recover to the maximum possible value.\" I do not understand what is being said here. Lee et al. is put in opposition to Hope et al. and Bowman et al., but isn't the Lee et al. ceiling effect going to exactly lead to a reduction in variance at followup?\n\nDiscussion section, paragraph beginning \"More complex models than the PRR do..\" What is being said in this paragraph about Bowman et al. (2020) is not completely clear to me and this may well be a presentational failure on our part when writing Bowman et al. The only place in Bowman et al. (2020) where we refer to mixed models is the following statement, \"In particular, van der Vliet et al. present an impressive Bayesian mixture modeling of Fugl-Meyer upper extremity measurements following stroke. Importantly, the authors avoid the confounded correlation of initial scores with change by simply fitting their models to behavioral time-series, that is, raw Fugl-Meyer upper extremity scores, without involving the recovery measure.\"\n\nHowever, in the next paragraph, you commend van der Vliet et al. for the same piece of work that we are referring to. Indeed, we were under the impression that the above quoted statement in Bowman et al. (2020), was only a reiteration of what van der Vliet et al. say themselves, which is as follows, \"Our current longitudinal mixture model of FM-UE recovery, as opposed to the proportional recovery model, cannot be confounded by mathematical coupling. Hope et al. showed that the correlations between baseline FMUE score (distribution X) and the amount of recovery defined as endpoint FM-UE minus baseline FM-UE (distribution Y-X) found in proportional recovery research could be inflated by mathematical coupling. However, because mathematical coupling applies to correlations of data points (baseline and endpoint FM-UE) and not to models of longitudinal data, the recovery coefficients in our research represent nonconfounded measures of recovery as a proportion of potential recovery. In addition, mathematical coupling does not apply to the outcomes of the cross-validation, as we report correlations between the model predictions and the observed values for endpoint FM-UE and \u0394FM-UE rather than correlations of the form X and Y-X.\"\n\nThis leaves us confused, as to what about Bowman et al. (2020) is being criticised in your paragraph beginning \"More complex models \u2026.\".\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"The proportional recovery rule redux: Arguments for its biological and predictive relevance\" for further consideration by eLife. Your revised article has been evaluated by Michael Frank (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed for further consideration, as outlined below:\n\nEssential revisions:\n\n1) Please expand your discussion of the similarities between the current work and previous critiques of the PRR. This should include a brief comment on the justification of some of the analysis choices (e.g. inclusion/exclusion of patients at ceiling) and the relevance of the findings presented here to other areas of research.\n\n2) Address the statistical concerns raised by Reviewer #2\n\n3) Based on some of the reviewers' comments, you may decide to move some of the analyses to a supplement. This is at your discretion.\n\nReviewer #1 (Recommendations for the authors):\n\nThe authors have completed an extensive reworking of their paper, which does a good job of responding to the majority of my comments. Perhaps most importantly, the authors have convincingly countered the argument that I made in my first review that their findings could have arisen from a Constant model with a ceiling. It is excellent to see this rebuttal of my concern. So, I am basically happy with this revision.\n\nIt is again good to see the emphasis in this paper on model comparison \u2013 that certainly seems to be the right way to go. I also note that the findings in this paper are somewhat consistent with what we have reported in Bonkhoff et al., 2020 \u2013 a PRR effect, although considerably weaker than had previously been claimed. So, as the authors point out, there does seem to be convergence in the field, which is excellent.\n\nIt remains a pity that the claim that PRR is definitively better on the basis of the presented model fits is still a weak claim. In particular, violin plots for GAM, Exp and PRR are heavily overlapping in figure 6. As you surely know, what is needed is a more sophisticated model comparison, most likely of a Bayesian variety, using something like the model evidence, free energy or deviance information criterion.\n\nThe key inference suggested in the paper hinges on an Occams razor argument that if one cannot distinguish between GAM, Exp and PRR, one should pick PRR, since it is more simple. [Although note, I do not believe that Exp is a supermodel of PRR, i.e. I don't think one can get the PRR pattern from Exp, which slightly complicates this line of argument.]\n\nI think that in the absence of a more sophisticated model comparison, of the kind I just highlighted, the Occams razor argument probably is the best one can do. However, since the cross validation is out-of-sample, the flexibility of the model is actually taken into account there.\n\nObviously, it would be great if this issue could be resolved with a more sophisticated model comparison in a further re-write, however, I don't think this is fair to require at this stage of the review process, but it would be good to acknowledge this weakness in the discussion, and note that competitor approaches are doing better in this respect.\n\nSpecific points:\n\nI did not pick this up in the first review, but I spent a lot of time on this review being confused by the right panel of figure 1, which re-represents the surface plot from Hope et al. (2018). I'm now pretty sure your colour bar needs to be inverted. As it is, the yellow contour corresponds to the degenerate region in Hope et al's surface plot, i.e. it does not matter what the value of cor(x,y) is, you always get a correlation of x with change near to -1. However, shouldn't that be for low values of the variability ratio (i.e. log(k) substantially smaller than zero)? Your yellow contour corresponds to log(k) much *bigger* than zero. This issue is also present in Figures 4 and 5.\n\nTop of page 8: \"which when baseline (x) and follow-up (y) are uncorrelated and have the same variance.\" Should the \"when\" be deleted here?\n\nPage 9, towards bottom: \"relationship between of\".\n\nPage 10, 2nd para: \"data represent in which baseline values\".\n\nPage 17, beginning of last para: you talk about there being five models, but in the next sentence you only list 4.\n\nPage 26: you reference Lohse et al. 2021, but I couldn't find this in the bibliography.\n\nPage 38 top of page: there are a couple of typos here. Also, you again talk about there being five models, but in the next sentence you only list 4.\n\nReviewer #2 (Recommendations for the authors):\n\n1. I think this paper could be made more succinct. It is quite long because the authors used many examples to demonstrate their arguments. Although I feel this approach is well-suited to clinical audience, I am not sure whether the targeted readers may get lost in the technical discussion. For example, I am not sure using bootstrapping is necessary, as we can either directly test the spurious correlation against a more appropriate null hypothesis or using simulation (see the paper in Eur J Oral Sci 2005; 113: 279-288).\n\n2. There are two major issues involving in assessing the relation between change and the baseline. The first is the hypothesis testing and the other is the prediction. Because of mathematical coupling, the usual null hypothesis that the correlation coefficient is zero is inappropriate. This is because the distribution of correlation coefficient is in a restricted space defined by the correlation between x and y, as shown in Figure 1. By the way, I think the paper by Bartko, J. J. and Pettigrew, K. D. (The Teacher's Corner: A Note on the Correlation of Parts with Wholes. Am Stat 22, 41-41, 1968) should be cited, as they are the first to produce such a figure for the correlation between change and the baseline. Another paper of interest is the one by Sutherland, T. M. (The correlation between feed efficiency and rate of gain, a ratio and its denominator. Biometrics 21, 739-749, 1965). Oldham's method is to address this issue of wrong null hypothesis by testing the difference in the variances of X and Y. Other methods are also available as discussed in my previous paper (Tu and Gilthorpe 2007) cited by the authors. As discussed by the authors, Oldham's method or any others based on the same idea has its limitation, if data may be truncated. A possible solution is to design a more sensitive tool to measure the outcome.\n\n3. For the prediction, I think we need to be cautious to use R2 for comparing the performance of different studies. Because R2 is the square of r, i.e. the correlation coefficient. Consequently, the range of R2 is also restricted by the same conditions as r is. Therefore, if different studies have different correlations between X and Y, I do not think their R2 are directly comparable.\n\n4. Moreover, a high R2 does not necessarily mean that patients' recovery can be precisely predicted. Suppose a zero correlation between X and Y, the R2 for using X to predict Y \u2013 X will be 0.71^2 = 0.5. Although half of the change's variance can be predicted by the model (i.e. by the baseline value X), this model is useless. This is because R2=0.5 is what we would expect from two sets of random numbers. The baseline and the follow-up values behave like two random variables with zero correlation, this means that X has no use for predicting Y.\n\n5. Regarding to subgroups of patients with different responses, the authors are correct in giving warnings on identifying clusters of patients by using unsupervised methods. Due to regression to the mean, patients with greater baseline diseases are more likely to be identified as good responders, while those with milder diseases are more likely to be identified as poor responders. In fact, the response is actually a continuous spectrum.\n\n6. Finally, I feel a little uneasy that equating the relation between change and the baseline values to the proportional recovery rule. I feel the latter is more akin to the percentage change. Please see the paper: Testing the relation between percentage change and baseline value. Sci Rep 6, 23247 (2016).\n\nI think the authors made great efforts to clarify various misconceptions about testing the relation between change and the baseline. To get your messages across the intended readers, I suggest making your discussion more focused. For example, I do not feel that introducing bootstrapping or GAM is necessary. In contrast, the key concepts of mathematical coupling and regression to the mean were not explained in the paper. In my experience, they are among the most different concepts to comprehend even for statisticians.\n\nReviewer #3 (Recommendations for the authors):\n\nThis is a defence of the Proportional Recovery Rule (PRR), which asserts that stroke survivors recover a fixed proportion of lost function after stroke, from recent, formal/statistical inspired criticisms. The analyses and data show that the PRR is likely to be relevant to ongoing efforts to understand and model post-stroke recovery, and the initial severity of upper limb motor impairments (hemiparesis) after stroke predicts 35-55% of the variance in their subsequent recovery from those deficits.\n\nThis manuscript includes a lot of careful analyses that seem reasonable to me and are novel as far as I know in this specific domain. The authors' conclusions also appear to be supported by their methods and data \u2013 and their data are impressive, with three large, relevant datasets. I note that other reviewers have identified some detailed issues with the analysis and the text, but in the main the authors have done a very good job of addressing those concerns. The one exception, in my view at least, concerns the best strategy for dealing with patients at or near ceiling in the first two weeks post-stroke. This issue was raised by another reviewer, with whom I co-authored a paper outlining our favoured response, which is to exclude these patients from analyses seeking to quantify the explanatory power of the PRR (Bonkhoff et al., 2021, JNNP). By failing to exclude those acute-near-ceiling patients, the authors have left me somewhat sceptical of the reliability of the variances explained that they report. But this is perhaps more a matter of taste than of statistical rigour, and I can certainly appreciate the authors' reluctance to exclude hard-won empirical data. In their place, I might reference this issue as a possible limitation in the manuscript.\n\nIn other words, this paper is not 'broken' in my view, so I have no objection to its publication \u2013 and no real requirements for revisions.\n\nThat said, I also do not believe that this paper makes a particularly compelling contribution to the field: it 'defeats' a straw man caricature of the criticisms made of the PRR, and offers evidence in support of a position with which even the rule's most critical commentators already agree (and indeed for which some of them have already published supporting evidence).\n\nThe original criticism of the PRR was that the analyses used to support it would yield apparently enormous effect sizes entirely regardless of whether the PRR was really relevant to recovery (Hope et al., 2019, Brain). There was never any assertion that the PRR was irrelevant to recovery: that conclusion could never have been justified merely from the recognition that the empirical support for the PRR was unreliable. A follow-up analysis with a large dataset (albeit not as large as that used here) suggested that the PRR was indeed really relevant to recovery, but that it explained a less of the variance in recovery than prior empirical analyses had suggested (Bonkhoff et al., 2020, Brain). That latter work shares much in common with the analyses presented here: i.e., it is a model comparison analysis, with the PRR as one of the considered models. The current work is also a model comparison analysis, with the PRR as one of the considered models, but implemented with different methods and tested against a lot more data. In other words, this paper is in my view a conceptual replication of the earlier study: using different methods and data to run a broadly similar analysis, which yields broadly similar conclusions to those reported previously. Similarly, while the lengthy discussion of clustering is well done, it adds little (in my view) to the conclusions already drawn in Bonkhoff et al., 2022, JNNP.\n\nIn other words, much of what this manuscript claims to prove, in response to the critics, has already been reported by some of those same critics. In this sense, the paper is akin to a conceptual replication; using excellent data and novel methods (for the domain at least) to draw conclusions that converge with what has come before, and expressing it all in an accessible manner. These are all strengths in my view: I would merely ask that the links to prior results be made more explicit, at least so that others can follow the timeline of the debate more easily. Or indeed if it's the authors' view that I am wrong, that this be justified more explicitly.\n\nFinally, I am concerned that this issue is rather too narrow to appeal to the readership of eLife. To bolster the more general appeal, I would recommend adding a paragraph or two on variants of this debate that have raged in other subjects \u2013 examples of which the authors themselves have given in other papers on this topic.\n",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e33a7dfd-0003-4b2f-be8d-d29fce099ba3",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C1",
+      "claim": "The proportional recovery rule (PRR) posits that most stroke survivors can expect to reduce a fixed proportion of their motor impairment.",
+      "claim_type": "EXPLICIT",
+      "source": "The proportional recovery rule (PRR) posits that most stroke survivors can expect to reduce a fixed proportion of their motor impairment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement about the PRR presented in the abstract, representing the authors' characterization of the model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "ddf4bb69-69f8-4c7f-bd8c-454a0e774990",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C2",
+      "claim": "Patients with worse motor impairment in the immediate post-stroke period will typically see the largest absolute reductions in impairment during the first 3\u20136 months of recovery.",
+      "claim_type": "EXPLICIT",
+      "source": "Intuition, experience, and data suggest that patients with worse motor impairment in the immediate post-stroke period will also typically see the largest absolute reductions in impairment during the first 3\u20136 months of recovery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by reference to intuition, experience, and data, though specific data is not provided in this statement.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "413f5bf9-b546-4165-86aa-28d62cea33b1",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C3",
+      "claim": "The PRR was developed through investigation of upper-extremity Fugl-Meyer assessments (FMA-UE) at baseline and at subsequent follow-up visits.",
+      "claim_type": "EXPLICIT",
+      "source": "The proportional recovery rule (PRR) was an early attempt to describe the relationship between initial impairment and recovery through the investigation of upper-extremity Fugl-Meyer assessments (FMA-UE) at baseline and at subsequent follow-up visits, with recovery defined as the change over time (Prabhakaran et al., 2008; Krakauer and Marshall, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Prabhakaran et al., 2008 and Krakauer and Marshall, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "03e06d01-cdd4-4040-8171-c452f0f87d54",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C4",
+      "claim": "On average, a large subset of patients recovered roughly 70% of the maximal potential recovery from impairment.",
+      "claim_type": "EXPLICIT",
+      "source": "This work indicated that, on average, a large subset of patients recovered roughly 70% of the maximal potential recovery from impairment, but a biologically distinct and smaller subgroup recovered much less ('non-recoverers').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on prior work referenced in the context of the PRR development.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "bd0a12e8-46c3-45a0-8efb-31df3d69c71e",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C5",
+      "claim": "A biologically distinct and smaller subgroup of patients recovered much less than the average ('non-recoverers').",
+      "claim_type": "EXPLICIT",
+      "source": "This work indicated that, on average, a large subset of patients recovered roughly 70% of the maximal potential recovery from impairment, but a biologically distinct and smaller subgroup recovered much less ('non-recoverers').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on prior work referenced in the context of the PRR development.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "c682300a-4a2a-4964-bf6e-f6ee7523a897",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C6",
+      "claim": "The PRR has been applied across several neurological domains since its introduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Since its introduction, the PRR has been applied across several neurological domains, implemented in various ways across studies, and evaluated using several different statistical metrics (Lazar et al., 2010; Winters et al., 2015; Winters et al., 2017; Veerbeek et al., 2018; Byblow et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations documenting applications of the PRR.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "0bd61bdb-04d9-4825-886e-512e301169cc",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C7",
+      "claim": "The PRR was reestablished as a regression model for describing recovery from upper limb impairment in Kundert et al., 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "In a recent article, we sought to reestablish the original conceptualization of the PRR as a regression model for describing of recovery from upper limb impairment (Kundert et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Kundert et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "b1f7ff37-4a13-487e-84b9-6a28fe806c1f",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C8",
+      "claim": "There are concerns about mathematical coupling from inclusion of the baseline value in the change score when relating change as an outcome to baseline value.",
+      "claim_type": "EXPLICIT",
+      "source": "The concern hinges on statistical questions about the relationship between baseline values and change scores \u2013 a relationship that is often fraught, counterintuitive, and has confounded researchers and statisticians for decades (Oldham, 1962; Gill et al., 1985; Tu, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to statistical literature spanning decades.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "98254be4-2f53-4f03-811b-461a495a49cd",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C9",
+      "claim": "Hope et al., 2018 raised questions about the usefulness of correlations in the case of mathematical coupling.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, there are questions about the usefulness of correlations in the case when there is mathematical coupling from inclusion of the baseline value in the change score, the distinction between population-level descriptions and patient-level predictions; the usefulness of the PRR in functional domains other than upper-extremity motor control; the identification of 'non-recoverers', both prospectively and retrospectively; and the possibility that ceiling effects exaggerate associations or introduce non-linearity not accounted for by the PRR (Hope et al., 2018; Hawe et al., 2018; Bonkhoff et al., 2020; Bowman et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Hope et al., 2018 and other papers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "ba9c44bb-e596-442d-831d-da4f8c9a1f19",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C10",
+      "claim": "Ceiling effects may exaggerate associations or introduce non-linearity not accounted for by the PRR.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, there are questions about the usefulness of correlations in the case when there is mathematical coupling from inclusion of the baseline value in the change score, the distinction between population-level descriptions and patient-level predictions; the usefulness of the PRR in functional domains other than upper-extremity motor control; the identification of 'non-recoverers', both prospectively and retrospectively; and the possibility that ceiling effects exaggerate associations or introduce non-linearity not accounted for by the PRR (Hope et al., 2018; Hawe et al., 2018; Bonkhoff et al., 2020; Bowman et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple papers raising this concern.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "6a87151e-815f-45e2-aec7-4c001b74cf58",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C12",
+      "claim": "Traditional hypothesis tests focusing on 0 as a null value are inappropriate for investigations of recovery.",
+      "claim_type": "EXPLICIT",
+      "source": "By itself, this suggests that usual tests for the significance of a correlation in which the null value is assumed to be 0 are inappropriate for investigations of recovery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the mathematical relationship between cor(x,\u03b4), cor(x,y), and k.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "889394f8-b3b2-494b-a1a3-13fe68b72ff3",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C15",
+      "claim": "The correlation cor(x+y, x-y) is zero in the canonical example of mathematical coupling.",
+      "claim_type": "EXPLICIT",
+      "source": "This correlation is zero, rather than \u22120.71, in the canonical example of mathematical coupling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical property of Oldham's method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "768b6f8d-a397-4012-82b1-147b3e7c4c2a",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C17",
+      "claim": "Oldham's method guards against false conclusions due to mathematical coupling and regression to the mean due to measurement error.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Oldham's method often guards against false conclusions due to mathematical coupling and regression to the mean due to measurement error.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the properties of Oldham's method based on its mathematical characteristics.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "1c55e8b6-97d5-40b2-8ac8-7112334f2d46",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C19",
+      "claim": "Oldham's method does not address the possibility of ceiling effects.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, as noted by both (Hope et al., 2018 and Hawe et al., 2018), Oldham's method does not address the possibility of ceiling effects; in our view, determining which process gives rise to observed correlations comes after assessing whether those correlations are artifacts driven by coupling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Hope et al., 2018 and Hawe et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "ade18cee-330a-495d-9bcf-680f177d3e49",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C20",
+      "claim": "For Dataset C200, the intercept-only, exponential, and additive models are the best performers in cross-validation.",
+      "claim_type": "EXPLICIT",
+      "source": "For Dataset C200, the intercept-only, exponential, and additive models are the best performers; the PRR suffers from the lack of an intercept, which produces a bias in the predictions, while constant recovery with a ceiling is not well suited to this mechanism.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the cross-validation results shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "bd11eec4-d7f5-4bb9-9bc7-381557d7f5ab",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C21",
+      "claim": "For Dataset D200, the PRR, exponential, and additive models are similar in cross-validation performance.",
+      "claim_type": "EXPLICIT",
+      "source": "For Dataset D200, the intercept-only and constant recovery models are the worst performers, while the (true) PRR, exponential, and additive models are similar.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the cross-validation results shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "b465349f-e2a6-48d4-95c1-8825375f4afd",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C22",
+      "claim": "For Dataset E200, the constant recovery model performs best in cross-validation.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, for Dataset E200, the (true) constant recovery model performs best.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the cross-validation results shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "63f176f2-a184-4d72-98a2-3c9bed29996a",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C23",
+      "claim": "Cross-validation can effectively identify a best or worst model for prediction accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that CV can effectively identify a best (or worst) model for prediction accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the cross-validation results on generated datasets.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "27dc9e66-aeca-4aa8-a659-11b1ba286999",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C25",
+      "claim": "For the Stinear and Byblow dataset, k = 0.39 [0.27, 0.54] and cor(x,y) = 0.73 [0.66, 0.79].",
+      "claim_type": "EXPLICIT",
+      "source": "Stinear and Byblow\t0.39 [0.27, 0.54]\t0.73 [0.66, 0.79]",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in Table 1 with confidence intervals obtained through bootstrap procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "d2232d07-7233-4701-9121-4349f421aa4f",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C26",
+      "claim": "For the Winters dataset, k = 0.07 [0.05, 0.09] and cor(x,y) = 0.59 [0.49, 0.69].",
+      "claim_type": "EXPLICIT",
+      "source": "Winters\t0.07 [0.05, 0.09]\t0.59 [0.49, 0.69]",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in Table 1 with confidence intervals obtained through bootstrap procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "d1631bb8-f56d-4aee-bcfe-a1d67640fc7c",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C27",
+      "claim": "For the Zarahn dataset, k = 0.13 [0.03, 0.24] and cor(x,y) = 0.75 [0.55, 0.92].",
+      "claim_type": "EXPLICIT",
+      "source": "Zarahn\t0.13 [0.03, 0.24]\t0.75 [0.55, 0.92]",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in Table 1 with confidence intervals obtained through bootstrap procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "31e9c06c-89a0-4a5e-bfc2-58efcbd15375",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C28",
+      "claim": "For the real datasets, constant recovery with a ceiling underperforms against competing methods in cross-validation.",
+      "claim_type": "EXPLICIT",
+      "source": "In these examples, constant recovery with a ceiling underperforms against competing methods.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the cross-validation results shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "165a22cb-7723-4a17-9407-40a37931824c",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C29",
+      "claim": "The PRR appears superior for the Stinear and Byblow and Zarahn datasets in terms of prediction accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "The exponential model, additive model, and PRR prediction accuracies are often comparable, although the PRR appears superior for the Stinear and Byblow and Zarahn datasets.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the cross-validation results shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "055a8166-5089-4e3e-9153-b0ac5f0c8439",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C30",
+      "claim": "The PRR explains 55% of outcome variation for the Stinear and Byblow dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Stinear and Byblow\t0.55",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "4fed4749-a09c-448d-bdd4-a6de1dbbcb05",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C31",
+      "claim": "The PRR explains 35% of outcome variation for the Winters dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Winters\t0.35",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "0c82219c-6cfd-49e2-8944-6ce620473d8b",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C32",
+      "claim": "The PRR explains 56% of outcome variation for the Zarahn dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Zarahn\t0.56",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "a9bb784a-c4ce-4927-88fe-382a8154f074",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C33",
+      "claim": "Data among recoverers is consistent with the PRR for each study examined.",
+      "claim_type": "EXPLICIT",
+      "source": "The preceding results suggest that data among recoverers is consistent with the PRR for each study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the bootstrap and cross-validation analyses of the three real datasets.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "4468196b-be69-439c-9dae-ab2bb5f9cdd1",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C34",
+      "claim": "The strong correlations between baseline and follow-up are not driven by canonical forms of mathematical coupling or regression to the mean.",
+      "claim_type": "EXPLICIT",
+      "source": "The strong correlations between baseline and follow-up are not driven by canonical forms of mathematical coupling or regression to the mean.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the bootstrap analyses showing k differs from 1 and cor(x,y) differs from 0.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "ddd651a9-0046-41d8-a7ac-ab7f95b2de8d",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C36",
+      "claim": "Competing models for recovery allowing for non-linear association between baseline and follow-up do not produce more accurate predictions than the PRR.",
+      "claim_type": "EXPLICIT",
+      "source": "Competing models for recovery, specifically those allowing for non-linear association between baseline and follow-up, do not produce more accurate predictions than the PRR, and are similar in their fitted values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the cross-validation results shown in Figure 6.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "75ce5d32-4a89-449b-8f74-3070dca03664",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C37",
+      "claim": "Prior studies support the existence of a biologically distinct group of non-recoverers in upper limb motor control and deficits in other domains.",
+      "claim_type": "EXPLICIT",
+      "source": "This assumption is supported by prior studies of upper limb motor control and deficits in other domains (Prabhakaran et al., 2008; Byblow et al., 2015; Winters et al., 2016; Zandvliet et al., 2020), and promising work suggests that it is possible to identify non-recoverers using baseline characteristics (Byblow et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "8e66a581-cc48-4c52-a668-f56000f5617d",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C38",
+      "claim": "It is possible to identify non-recoverers using baseline characteristics.",
+      "claim_type": "EXPLICIT",
+      "source": "This assumption is supported by prior studies of upper limb motor control and deficits in other domains (Prabhakaran et al., 2008; Byblow et al., 2015; Winters et al., 2016; Zandvliet et al., 2020), and promising work suggests that it is possible to identify non-recoverers using baseline characteristics (Byblow et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Byblow et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "50017640-4df9-4e9d-90db-c5a91f65068d",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C39",
+      "claim": "Clustering methods have several weaknesses in the context of recovery.",
+      "claim_type": "EXPLICIT",
+      "source": "Clustering refers to a collection of methods for unsupervised learning that has several weaknesses in the context of recovery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about clustering methods in the context of recovery analysis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "267fa54b-7bd6-42a7-9469-b0dd0cef82ab",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C40",
+      "claim": "Determining the 'true' number of clusters present is imprecise and open to interpretation.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps more critically, determining the 'true' number of clusters present is imprecise and open to interpretation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of clustering methods based on statistical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "408bfebe-61e7-4a09-968c-bf6bdb00258b",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C43",
+      "claim": "The null hypothesis of random recovery is rejected for the Winters dataset (p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Given the contrast between panels in Figure 7, it is not surprising that this approach rejects the null of random recovery for these data (p<0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the hypothesis test result and visual comparison in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "7cdd982c-b963-4f07-ad5a-b470f69793ec",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C44",
+      "claim": "An inappropriate application of unsupervised learning that presumes two clusters exist can produce misleading results.",
+      "claim_type": "EXPLICIT",
+      "source": "From this, we conclude that an inappropriate application of unsupervised learning (i.e. one that presumes two clusters exists) can produce misleading results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the analysis of random recovery and clustering.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "b177b9a6-4f7f-441b-921a-154d1e13d176",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C45",
+      "claim": "The ability to produce slopes like the PRR through analyses of generated data does not refute the PRR.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulations of random recovery, like those in Hawe et al., 2018, and Lohse et al., 2021, are useful for illustrating these issues but should not be misinterpreted: the ability to produce slopes like the PRR through analyses of generated data does not refute the PRR (or any other model of recovery).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the interpretation of simulation studies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "0ee0b014-1e96-4e5f-a01c-13a28634c840",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C46",
+      "claim": "In many studies of upper limb motor control recovery, a distinct group of non-recoverers is clear from a visualization of the data.",
+      "claim_type": "EXPLICIT",
+      "source": "In many studies of upper limb motor control recovery, a distinct group of non-recoverers is clear from a visualization of the data (and supported through appropriate hypothesis tests) or can be identified through a distinct biomarker, and does not artifactually arise through clustering.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the observability of non-recoverers in real data.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "731ad5a7-df40-47e9-9455-50dfd298b061",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C47",
+      "claim": "Zarahn et al., 2011 classified patients with baseline FM \u2264 10 as severely affected.",
+      "claim_type": "EXPLICIT",
+      "source": "Zarahn et al., 2011, for example, used a subjective approach to classify patients with baseline FM \u2264 10 as severely affected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Zarahn et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "6f578a36-6bab-4c80-a65d-98751dbe6617",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C48",
+      "claim": "Bonkhoff et al., 2022 used Bayesian hierarchical models and formal model selection approaches to identify a threshold (FM = 10) above and below which patients exhibit different recovery patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, Bonkhoff et al., 2022, used Bayesian hierarchical models and formal model selection approaches to identify a threshold (also found to be FM = 10) above and below which patients exhibit different recovery patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Bonkhoff et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "58a8c9ae-7c1c-428b-bd05-48c1f6a3cf67",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C49",
+      "claim": "The severely affected population contains biologically meaningful subgroups \u2013 recoverers and non-recoverers.",
+      "claim_type": "EXPLICIT",
+      "source": "Our point in this section, meanwhile, is that the severely affected population contains biologically meaningful subgroups \u2013 recoverers and non-recoverers \u2013 and that these can be identified using appropriate unsupervised learning methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assertion by the authors based on their analysis and interpretation of the data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "b30879bd-9db0-4296-bf97-cc9ef061aa8f",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C50",
+      "claim": "The association between initial impairment and change is non-artifactual in the examined datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings in these datasets suggest that the association between initial impairment and change is non-artifactual, and the PRR is better as a biological and predictive model than several competing models, including constant recovery with a ceiling effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary inference drawn from the analyses of the three real datasets.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "8d4eedfa-e9cc-423f-8efc-c9532ab3854c",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C51",
+      "claim": "The PRR is better as a biological and predictive model than several competing models, including constant recovery with a ceiling effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings in these datasets suggest that the association between initial impairment and change is non-artifactual, and the PRR is better as a biological and predictive model than several competing models, including constant recovery with a ceiling effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary inference drawn from the cross-validation analyses of the three real datasets.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "26b1e2f5-ecd8-40a6-8e3a-14eaaec6b5d9",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C52",
+      "claim": "A biologically distinct group of non-recoverers exists.",
+      "claim_type": "EXPLICIT",
+      "source": "These data also suggest that a biologically distinct group of non-recoverers exists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the analyses and visualizations of the real datasets.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "f314ffea-95f5-46f8-b1bd-f7496a1738a2",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C53",
+      "claim": "Lee et al., 2021 observed that more than half of all patients, and more than 60% of patients with baseline FMA-UE above 46, recover to the maximum possible value.",
+      "claim_type": "EXPLICIT",
+      "source": "Lee et al., 2021, use a logistic regression to model the probability of achieving full recovery; they observe that more than half of all patients, and more than 60% of patients with baseline FMA-UE above 46, recover to the maximum possible value.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Lee et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "4b328524-cc90-418e-842d-60f7c01c5a6d",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C54",
+      "claim": "The FMA-UE lacks resolution, especially at higher values.",
+      "claim_type": "EXPLICIT",
+      "source": "Certainly, the FMA-UE lacks resolution, especially at higher values, and a refined outcome measure that ameliorates such ceiling effects is needed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of the FMA-UE measurement scale.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "799c25e4-6a20-4647-8a33-fc2959862c71",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C55",
+      "claim": "The cohort in Lee et al., 2021 is much more mildly impaired at baseline than data observed in the current study.",
+      "claim_type": "EXPLICIT",
+      "source": "The cohort in Lee et al., 2021, is much more mildly impaired at baseline than data we have observed; this could have several causes, but the choice to exclude patients with FMA-UE hand subscore of 0 at day 7 likely removes many moderate and severely affected patients who are unlikely to recover to ceiling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the characteristics of the Lee et al., 2021 cohort based on their exclusion criteria.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "99350abd-5244-4d16-bb32-b0502bcfdb23",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C56",
+      "claim": "The PRR provides an appealingly simple model for understanding recovery.",
+      "claim_type": "EXPLICIT",
+      "source": "The PRR provides an appealingly simple model for understanding recovery, even if the statistical approaches for evaluating it are not direct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the PRR by the authors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "416df9ed-91ab-4103-82c8-d6c7ec8ce4a8",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C57",
+      "claim": "The PRR is and will continue to be relevant as a model for recovery.",
+      "claim_type": "EXPLICIT",
+      "source": "We argue that the PRR is and will continue to be relevant as a model for recovery, but we agree with others that more complex analytic strategies are necessary to move beyond it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn by the authors based on their analyses.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "6c61a2eb-949e-458a-8185-399622b092e4",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C58",
+      "claim": "Recovery depends on factors other than initial impairment.",
+      "claim_type": "EXPLICIT",
+      "source": "Recovery depends on factors other than initial impairment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about recovery mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "f92946c6-b6e5-4b9e-9623-b361cc9745d8",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C59",
+      "claim": "The PRR estimates an average recovery proportion, but individuals will recover more or less than that average.",
+      "claim_type": "EXPLICIT",
+      "source": "The PRR estimates an average recovery proportion, but individuals will recover more or less than that average; determining whether this is 'noise' or heterogeneity that can be predicted using other forms of measure at baseline is an important next step.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the PRR and its limitations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "8b6ff067-77a9-4772-8eff-3768911ec936",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C60",
+      "claim": "Mixed models that include both random intercepts and random slopes will have correlated random effects when applied to datasets with baseline and follow-up measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "Consider a model for outcome values at baseline (time = 0) and a single follow-up (time = 1) that includes both random intercepts and random slopes. When such a model is applied to Datasets A, C, and D, the random intercepts and slopes will be correlated; low random intercepts will suggest steeper random slopes in a way that mimics baseline and change scores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the behavior of mixed models based on statistical theory.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "889a29de-43a7-421f-b981-0773b286c6b6",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C62",
+      "claim": "Non-linear mixed models fit to serial measurements do not avoid the challenges of mathematical coupling and changing variances over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, non-linear mixed models fit to serial measurements are not a panacea, and do not avoid the challenges described in this paper. The same fundamental issues that arise from within-subject correlation and changing variances over time due to recovery and measurement ceilings should be considered when using this or any other model framework.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the limitations of mixed models in the context of recovery analysis.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "e3a4acb4-080b-483b-96ad-9d038b22ba7d",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C63",
+      "claim": "Bonkhoff et al., 2020 found that the PRR was among the best performing models in terms of out-of-sample prediction accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "Bonkhoff et al., 2020, fit several models to a subset of patients selected to mitigate ceiling effects and avoid including non-recoverers, and found that that PRR was among the best performing models in terms of out-of-sample prediction accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Bonkhoff et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "6009ffd4-b3de-4106-b4f0-0c6cb4e17e75",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C64",
+      "claim": "The percent of outcome variation explained by the PRR was lower in Bonkhoff et al., 2020 than in the current analyses (21% versus 35\u201356%).",
+      "claim_type": "EXPLICIT",
+      "source": "The percent of outcome variation explained was lower in their work than in our analyses (21% versus 35\u201356%), leading the authors to suggest that the PRR may be better than other models but insufficient for making clinical predictions in the context of precision neurology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim compares results from Bonkhoff et al., 2020 to the current study's results in Table 2.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "44754cb1-1673-4890-ac79-95a3284929bf",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C65",
+      "claim": "Bonkhoff et al., 2020 and Bonkhoff et al., 2022 use a statistically rigorous model selection approach based on leave-one-out cross-validated deviances.",
+      "claim_type": "EXPLICIT",
+      "source": "Bonkhoff et al., 2020, and Bonkhoff et al., 2022, use a statistically rigorous model selection approach based on leave-one-out cross-validated deviances, which is particularly well suited to comparing Bayesian hierarchical models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Bonkhoff et al., 2020 and Bonkhoff et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "17b4bfdd-dc59-4f55-8351-12f042d32d9b",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C66",
+      "claim": "Bonkhoff et al., 2020 and Bonkhoff et al., 2022 consider only patients with initial impairments below 45 to avoid ceiling effects.",
+      "claim_type": "EXPLICIT",
+      "source": "These papers also consider only patients with initial impairments below 45 to avoid ceiling effects induced by mildly affected stroke patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Bonkhoff et al., 2020 and Bonkhoff et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "66ca04c5-3573-4419-abb1-855db3a69a1a",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C67",
+      "claim": "The PRR is intended as a model for recovery from a specific form of impairment as measured by the FM.",
+      "claim_type": "EXPLICIT",
+      "source": "In light of this, we stress again that the PRR is intended as a model for recovery from a specific form of impairment as measured by the FM, and is best understood as an attempt to mathematically capture a component of the recovery process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the intended scope of the PRR.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "d402057f-677a-4c3d-ab75-ef7a38de8612",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C68",
+      "claim": "The emphasis on change between baseline and follow-up in the PRR is deliberate.",
+      "claim_type": "EXPLICIT",
+      "source": "The emphasis on change between baseline and follow-up is deliberate: biological recovery is a process that causes a change, which then leads to the final value.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the conceptual basis for the PRR.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "a9c764e6-e6f4-41d8-bd74-d2ad1394c21e",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C69",
+      "claim": "Applications of the PRR in studies of upper limb motor control recovery have often found that, averaging across recoverers, roughly 70% of lost function is regained in the time shortly after stroke.",
+      "claim_type": "EXPLICIT",
+      "source": "Applications of the PRR in studies of upper limb motor control recovery have often found that, averaging across recoverers, roughly 70% of lost function is regained in the time shortly after stroke.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from multiple studies applying the PRR.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "b8ef3d24-a5c7-413f-83b6-a0da0f1d22ed",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C70",
+      "claim": "The 70% recovery proportion is attributable to spontaneous biological recovery.",
+      "claim_type": "EXPLICIT",
+      "source": "We've argued that this is attributable to spontaneous biological recovery (Cramer, 2008; Zeiler and Krakauer, 2013; Cassidy and Cramer, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Cramer, 2008; Zeiler and Krakauer, 2013; and Cassidy and Cramer, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "77163d1b-eb72-4d9d-815c-c127a7a0fe2b",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C71",
+      "claim": "The existence of a spontaneous biological recovery mechanism does not imply that behavioral interventions are unable to improve patient outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The existence of such a mechanism does not imply that behavioral interventions are unable to improve patient outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the implications of the PRR for interventions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "9ba9d7ae-b027-4a3d-9606-beb30c6a12ef",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C72",
+      "claim": "Future clinical trials should seek to improve on the proportion of impairment reduction, reduce the proportion of non-recoverers, or induce changes that are distinct from and better than those expected under the PRR.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, future clinical trials should seek to improve on the proportion of impairment reduction, reduce the proportion of non-recoverers, or induce changes that are distinct from (and better than) those expected under the PRR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for future research based on the authors' conclusions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "7fffaddb-e1cf-41d6-8bf2-5000a5c564bf",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C73",
+      "claim": "The PRR remains a biologically relevant model of stroke recovery.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the PRR remains a biologically relevant model of stroke recovery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the paper, drawn from all the analyses presented.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "aaeab7f3-e5fe-4949-a079-06107eb209d4",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C74",
+      "claim": "All patients in the reported datasets received usual care according to evidence-based stroke guidelines for physical therapists, but no systematic interventions.",
+      "claim_type": "EXPLICIT",
+      "source": "All patients received usual care according to evidence-based stroke guidelines for physical therapists, but no systematic interventions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the treatment received by patients in the datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "d26f366e-83c1-4592-9c8e-149778514f73",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "claim_id": "C75",
+      "claim": "Coverage of 95% confidence intervals using the bootstrap procedure is roughly 0.95 for moderate sample sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulations evaluating this approach suggest that coverage of 95% CIs is roughly 0.95 for moderate sample sizes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from simulations evaluating the bootstrap method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "84297b4f-a22a-4822-b43a-ebc823fe3b0f",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The proportional recovery rule (PRR) is a model describing stroke recovery where most patients recover approximately 70% of maximal potential recovery from motor impairment, with a distinct subgroup of 'non-recoverers' showing much less recovery. The PRR was developed through investigation of upper-extremity Fugl-Meyer assessments and has been applied across multiple neurological domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 provide a well-documented historical and conceptual foundation for the PRR, supported by multiple citations to prior work (C3, C4, C5, C6, C7). These claims establish the background and context for the PRR as a biological model of stroke recovery.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "a6812c51-7535-4c24-85c1-ad12698bf89a",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Statistical concerns have been raised about the PRR, including mathematical coupling from including baseline values in change scores, ceiling effects potentially exaggerating associations, and the inappropriateness of traditional hypothesis tests with null value of 0 for recovery investigations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C12 accurately summarize criticisms of the PRR from the literature, supported by citations to statistical work spanning decades (C8) and recent critiques (C9, C10). These represent legitimate methodological concerns that the manuscript addresses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "1aa436a7-dfb8-47c6-9832-e1f1ba524f14",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Oldham's method, which examines cor(x+y, x-y), guards against false conclusions from mathematical coupling and regression to the mean, yielding zero correlation in canonical coupling examples rather than -0.71. However, this method does not address ceiling effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15 and C17 describe well-established mathematical properties of Oldham's method supported by statistical theory. Claim C19 acknowledges a limitation cited in prior work (Hope et al., 2018; Hawe et al., 2018), providing a balanced assessment.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "e16caf40-ff6a-45a3-b82e-5a5510776d15",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Cross-validation on simulated datasets (C200, D200, E200) demonstrates that different recovery models perform best depending on the underlying data-generating mechanism, and cross-validation can effectively identify the best or worst model for prediction accuracy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C23 are directly supported by the cross-validation results shown in Figures 2 and 3. The simulated datasets with known properties provide clear evidence that CV can distinguish model performance, though the authors appropriately note CV focuses only on prediction accuracy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "8efcf173-b734-4501-b2f3-533888cb0091",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Bootstrap analyses of three real datasets (Stinear & Byblow, Winters, Zarahn) show that variance ratios k differ significantly from 1 and correlations cor(x,y) differ from 0, indicating that strong correlations between baseline and follow-up are not driven by mathematical coupling or regression to the mean, and data among recoverers are consistent with the PRR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27 present specific statistical estimates with confidence intervals from bootstrap analyses (Table 1, Figure 5). Claims C33-C34 draw appropriate inferences from these results. The bootstrap procedure is described in Methods with simulation validation (C75), providing methodological rigor.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "08aabe55-1d72-4b83-af2e-82a073f77df4",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Cross-validation on real datasets shows that constant recovery with ceiling underperforms competing methods, the PRR appears superior for Stinear & Byblow and Zarahn datasets, and the PRR explains 35-56% of outcome variation. Competing non-linear models do not produce more accurate predictions than the PRR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C32 are directly supported by cross-validation results (Figure 6) and variance explained calculations (Table 2). Claim C36 appropriately summarizes the comparative model performance. The evidence consistently shows PRR performs well relative to alternatives across multiple real datasets.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "a0f9e3ec-d38a-40f3-bd61-0149f885f7ce",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Prior studies support the existence of biologically distinct recoverer and non-recoverer groups in stroke recovery, which can be identified using baseline characteristics or appropriate unsupervised learning methods. The severely affected population contains these meaningful subgroups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 are supported by multiple citations to prior work. Claims C46, C49, and C52 represent inferences from data visualizations and analyses. Claims C47-C48 cite specific threshold identification approaches. The evidence converges to support distinct recovery subgroups, though the authors acknowledge methodological challenges in identification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "837e71b4-7b17-4211-a0b2-e62ea9c5a973",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Clustering methods have weaknesses in recovery analysis, particularly in determining the true number of clusters. Inappropriate application of clustering assuming two clusters can produce misleading results. The Winters dataset rejects random recovery (p<0.001), and simulation studies showing PRR-like slopes do not refute the PRR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C40 describe well-known limitations of clustering methods. Claim C43 presents a specific hypothesis test result with visual support (Figure 7). Claims C44-C45 draw appropriate inferences about the interpretation of clustering and simulation studies. The statistical reasoning is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "b2c94771-628e-47a8-bffe-d723b3687dcb",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The association between initial impairment and change is non-artifactual in the examined datasets, the PRR is better as a biological and predictive model than competing models including constant recovery with ceiling, and the PRR remains a biologically relevant model of stroke recovery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51 and C73 represent the main conclusions synthesized from all analyses presented (bootstrap, cross-validation, clustering). The evidence from multiple datasets and analytical approaches converges to support these conclusions, though the authors appropriately acknowledge limitations and the need for future work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "1acbded3-b5ca-4dda-91ef-b42cf5becd52",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Lee et al., 2021 observed high rates of ceiling recovery, but the FMA-UE lacks resolution at higher values and their cohort was more mildly impaired at baseline due to exclusion criteria that likely removed moderate and severely affected patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C53 accurately cites findings from Lee et al., 2021. Claim C54 states a known limitation of the FMA-UE scale. Claim C55 provides a reasonable inference about cohort characteristics based on the exclusion criteria described in the cited work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "d23c491c-54b9-427e-8a43-c678854a32dd",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The PRR provides an appealingly simple model for understanding recovery and will continue to be relevant, though recovery depends on factors beyond initial impairment and the PRR estimates an average with individual variation that requires further investigation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59 represent balanced conclusions acknowledging both the value and limitations of the PRR. These are appropriate inferences from the analyses presented and align with the evidence showing the PRR explains 35-56% of variance, indicating both utility and room for improvement.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "85b13ed9-2a46-4462-a18a-5a9d6bc90701",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Mixed models with random intercepts and slopes will have correlated random effects when applied to baseline and follow-up data, and non-linear mixed models do not avoid the fundamental challenges of mathematical coupling and changing variances over time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60 and C62 present valid statistical inferences about the behavior of mixed models based on established statistical theory. The authors correctly note that more complex models do not inherently resolve the statistical issues discussed, which is an important methodological point.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "e018d4d1-87f8-4392-a5a3-3aaab2c640d8",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Bonkhoff et al., 2020 and 2022 found the PRR among the best performing models using rigorous Bayesian model selection, though with lower variance explained (21%) than the current analyses (35-56%). These studies used leave-one-out cross-validation and excluded patients with initial impairments above 45.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C66 accurately summarize findings and methods from Bonkhoff et al., 2020 and 2022 based on citations. The comparison of variance explained (C64) appropriately contextualizes the current findings relative to prior work using different analytical approaches and patient selection criteria.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "99aa630a-a98c-4505-b738-b52b012b06c9",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The PRR is intended as a model for recovery from impairment as measured by the FM, with deliberate emphasis on change between baseline and follow-up. Applications have found approximately 70% recovery of lost function, attributable to spontaneous biological recovery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 clarify the conceptual scope and rationale of the PRR. Claims C69-C70 summarize findings from multiple studies with appropriate citations (Cramer, 2008; Zeiler and Krakauer, 2013; Cassidy and Cramer, 2017). These provide important context for interpreting the PRR.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "3e370577-e8ee-4149-b6c9-2664175833bf",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The existence of spontaneous biological recovery does not preclude behavioral interventions from improving outcomes. Future trials should aim to improve the recovery proportion, reduce non-recoverers, or induce changes better than those expected under the PRR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C71 presents a logical inference about the implications of the PRR for interventions. Claim C72 provides reasonable recommendations for future research based on the findings. These represent appropriate forward-looking conclusions from the work presented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    },
+    {
+      "id": "f5faef79-6d2c-4977-b307-16547f6cfd55",
+      "content_id": "7a5ef4e6-5288-48ff-af60-9f0f56e80c46",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Patients in the reported datasets received usual care without systematic interventions, and simulations show the bootstrap procedure achieves approximately 95% coverage for 95% confidence intervals at moderate sample sizes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C74 describes the treatment conditions in the datasets analyzed. Claim C75 reports simulation validation of the bootstrap method used for inference. Both provide important methodological context, with C75 supporting the validity of the statistical approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:31:53.070225Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e33a7dfd-0003-4b2f-be8d-d29fce099ba3",
+      "result_id": "84297b4f-a22a-4822-b43a-ebc823fe3b0f"
+    },
+    {
+      "claim_id": "ddf4bb69-69f8-4c7f-bd8c-454a0e774990",
+      "result_id": "84297b4f-a22a-4822-b43a-ebc823fe3b0f"
+    },
+    {
+      "claim_id": "413f5bf9-b546-4165-86aa-28d62cea33b1",
+      "result_id": "84297b4f-a22a-4822-b43a-ebc823fe3b0f"
+    },
+    {
+      "claim_id": "03e06d01-cdd4-4040-8171-c452f0f87d54",
+      "result_id": "84297b4f-a22a-4822-b43a-ebc823fe3b0f"
+    },
+    {
+      "claim_id": "bd0a12e8-46c3-45a0-8efb-31df3d69c71e",
+      "result_id": "84297b4f-a22a-4822-b43a-ebc823fe3b0f"
+    },
+    {
+      "claim_id": "c682300a-4a2a-4964-bf6e-f6ee7523a897",
+      "result_id": "84297b4f-a22a-4822-b43a-ebc823fe3b0f"
+    },
+    {
+      "claim_id": "0bd61bdb-04d9-4825-886e-512e301169cc",
+      "result_id": "84297b4f-a22a-4822-b43a-ebc823fe3b0f"
+    },
+    {
+      "claim_id": "b1f7ff37-4a13-487e-84b9-6a28fe806c1f",
+      "result_id": "a6812c51-7535-4c24-85c1-ad12698bf89a"
+    },
+    {
+      "claim_id": "98254be4-2f53-4f03-811b-461a495a49cd",
+      "result_id": "a6812c51-7535-4c24-85c1-ad12698bf89a"
+    },
+    {
+      "claim_id": "ba9c44bb-e596-442d-831d-da4f8c9a1f19",
+      "result_id": "a6812c51-7535-4c24-85c1-ad12698bf89a"
+    },
+    {
+      "claim_id": "6a87151e-815f-45e2-aec7-4c001b74cf58",
+      "result_id": "a6812c51-7535-4c24-85c1-ad12698bf89a"
+    },
+    {
+      "claim_id": "889394f8-b3b2-494b-a1a3-13fe68b72ff3",
+      "result_id": "1aa436a7-dfb8-47c6-9832-e1f1ba524f14"
+    },
+    {
+      "claim_id": "768b6f8d-a397-4012-82b1-147b3e7c4c2a",
+      "result_id": "1aa436a7-dfb8-47c6-9832-e1f1ba524f14"
+    },
+    {
+      "claim_id": "1c55e8b6-97d5-40b2-8ac8-7112334f2d46",
+      "result_id": "1aa436a7-dfb8-47c6-9832-e1f1ba524f14"
+    },
+    {
+      "claim_id": "ade18cee-330a-495d-9bcf-680f177d3e49",
+      "result_id": "e16caf40-ff6a-45a3-b82e-5a5510776d15"
+    },
+    {
+      "claim_id": "bd11eec4-d7f5-4bb9-9bc7-381557d7f5ab",
+      "result_id": "e16caf40-ff6a-45a3-b82e-5a5510776d15"
+    },
+    {
+      "claim_id": "b465349f-e2a6-48d4-95c1-8825375f4afd",
+      "result_id": "e16caf40-ff6a-45a3-b82e-5a5510776d15"
+    },
+    {
+      "claim_id": "63f176f2-a184-4d72-98a2-3c9bed29996a",
+      "result_id": "e16caf40-ff6a-45a3-b82e-5a5510776d15"
+    },
+    {
+      "claim_id": "27dc9e66-aeca-4aa8-a659-11b1ba286999",
+      "result_id": "8efcf173-b734-4501-b2f3-533888cb0091"
+    },
+    {
+      "claim_id": "d2232d07-7233-4701-9121-4349f421aa4f",
+      "result_id": "8efcf173-b734-4501-b2f3-533888cb0091"
+    },
+    {
+      "claim_id": "d1631bb8-f56d-4aee-bcfe-a1d67640fc7c",
+      "result_id": "8efcf173-b734-4501-b2f3-533888cb0091"
+    },
+    {
+      "claim_id": "a9bb784a-c4ce-4927-88fe-382a8154f074",
+      "result_id": "8efcf173-b734-4501-b2f3-533888cb0091"
+    },
+    {
+      "claim_id": "4468196b-be69-439c-9dae-ab2bb5f9cdd1",
+      "result_id": "8efcf173-b734-4501-b2f3-533888cb0091"
+    },
+    {
+      "claim_id": "31e9c06c-89a0-4a5e-bfc2-58efcbd15375",
+      "result_id": "08aabe55-1d72-4b83-af2e-82a073f77df4"
+    },
+    {
+      "claim_id": "165a22cb-7723-4a17-9407-40a37931824c",
+      "result_id": "08aabe55-1d72-4b83-af2e-82a073f77df4"
+    },
+    {
+      "claim_id": "055a8166-5089-4e3e-9153-b0ac5f0c8439",
+      "result_id": "08aabe55-1d72-4b83-af2e-82a073f77df4"
+    },
+    {
+      "claim_id": "4fed4749-a09c-448d-bdd4-a6de1dbbcb05",
+      "result_id": "08aabe55-1d72-4b83-af2e-82a073f77df4"
+    },
+    {
+      "claim_id": "0c82219c-6cfd-49e2-8944-6ce620473d8b",
+      "result_id": "08aabe55-1d72-4b83-af2e-82a073f77df4"
+    },
+    {
+      "claim_id": "ddd651a9-0046-41d8-a7ac-ab7f95b2de8d",
+      "result_id": "08aabe55-1d72-4b83-af2e-82a073f77df4"
+    },
+    {
+      "claim_id": "75ce5d32-4a89-449b-8f74-3070dca03664",
+      "result_id": "a0f9e3ec-d38a-40f3-bd61-0149f885f7ce"
+    },
+    {
+      "claim_id": "8e66a581-cc48-4c52-a668-f56000f5617d",
+      "result_id": "a0f9e3ec-d38a-40f3-bd61-0149f885f7ce"
+    },
+    {
+      "claim_id": "0ee0b014-1e96-4e5f-a01c-13a28634c840",
+      "result_id": "a0f9e3ec-d38a-40f3-bd61-0149f885f7ce"
+    },
+    {
+      "claim_id": "731ad5a7-df40-47e9-9455-50dfd298b061",
+      "result_id": "a0f9e3ec-d38a-40f3-bd61-0149f885f7ce"
+    },
+    {
+      "claim_id": "6f578a36-6bab-4c80-a65d-98751dbe6617",
+      "result_id": "a0f9e3ec-d38a-40f3-bd61-0149f885f7ce"
+    },
+    {
+      "claim_id": "58a8c9ae-7c1c-428b-bd05-48c1f6a3cf67",
+      "result_id": "a0f9e3ec-d38a-40f3-bd61-0149f885f7ce"
+    },
+    {
+      "claim_id": "26b1e2f5-ecd8-40a6-8e3a-14eaaec6b5d9",
+      "result_id": "a0f9e3ec-d38a-40f3-bd61-0149f885f7ce"
+    },
+    {
+      "claim_id": "50017640-4df9-4e9d-90db-c5a91f65068d",
+      "result_id": "837e71b4-7b17-4211-a0b2-e62ea9c5a973"
+    },
+    {
+      "claim_id": "267fa54b-7bd6-42a7-9469-b0dd0cef82ab",
+      "result_id": "837e71b4-7b17-4211-a0b2-e62ea9c5a973"
+    },
+    {
+      "claim_id": "408bfebe-61e7-4a09-968c-bf6bdb00258b",
+      "result_id": "837e71b4-7b17-4211-a0b2-e62ea9c5a973"
+    },
+    {
+      "claim_id": "7cdd982c-b963-4f07-ad5a-b470f69793ec",
+      "result_id": "837e71b4-7b17-4211-a0b2-e62ea9c5a973"
+    },
+    {
+      "claim_id": "b177b9a6-4f7f-441b-921a-154d1e13d176",
+      "result_id": "837e71b4-7b17-4211-a0b2-e62ea9c5a973"
+    },
+    {
+      "claim_id": "b30879bd-9db0-4296-bf97-cc9ef061aa8f",
+      "result_id": "b2c94771-628e-47a8-bffe-d723b3687dcb"
+    },
+    {
+      "claim_id": "8d4eedfa-e9cc-423f-8efc-c9532ab3854c",
+      "result_id": "b2c94771-628e-47a8-bffe-d723b3687dcb"
+    },
+    {
+      "claim_id": "7fffaddb-e1cf-41d6-8bf2-5000a5c564bf",
+      "result_id": "b2c94771-628e-47a8-bffe-d723b3687dcb"
+    },
+    {
+      "claim_id": "f314ffea-95f5-46f8-b1bd-f7496a1738a2",
+      "result_id": "1acbded3-b5ca-4dda-91ef-b42cf5becd52"
+    },
+    {
+      "claim_id": "4b328524-cc90-418e-842d-60f7c01c5a6d",
+      "result_id": "1acbded3-b5ca-4dda-91ef-b42cf5becd52"
+    },
+    {
+      "claim_id": "799c25e4-6a20-4647-8a33-fc2959862c71",
+      "result_id": "1acbded3-b5ca-4dda-91ef-b42cf5becd52"
+    },
+    {
+      "claim_id": "99350abd-5244-4d16-bb32-b0502bcfdb23",
+      "result_id": "d23c491c-54b9-427e-8a43-c678854a32dd"
+    },
+    {
+      "claim_id": "416df9ed-91ab-4103-82c8-d6c7ec8ce4a8",
+      "result_id": "d23c491c-54b9-427e-8a43-c678854a32dd"
+    },
+    {
+      "claim_id": "6c61a2eb-949e-458a-8185-399622b092e4",
+      "result_id": "d23c491c-54b9-427e-8a43-c678854a32dd"
+    },
+    {
+      "claim_id": "f92946c6-b6e5-4b9e-9623-b361cc9745d8",
+      "result_id": "d23c491c-54b9-427e-8a43-c678854a32dd"
+    },
+    {
+      "claim_id": "8b6ff067-77a9-4772-8eff-3768911ec936",
+      "result_id": "85b13ed9-2a46-4462-a18a-5a9d6bc90701"
+    },
+    {
+      "claim_id": "889a29de-43a7-421f-b981-0773b286c6b6",
+      "result_id": "85b13ed9-2a46-4462-a18a-5a9d6bc90701"
+    },
+    {
+      "claim_id": "e3a4acb4-080b-483b-96ad-9d038b22ba7d",
+      "result_id": "e018d4d1-87f8-4392-a5a3-3aaab2c640d8"
+    },
+    {
+      "claim_id": "6009ffd4-b3de-4106-b4f0-0c6cb4e17e75",
+      "result_id": "e018d4d1-87f8-4392-a5a3-3aaab2c640d8"
+    },
+    {
+      "claim_id": "44754cb1-1673-4890-ac79-95a3284929bf",
+      "result_id": "e018d4d1-87f8-4392-a5a3-3aaab2c640d8"
+    },
+    {
+      "claim_id": "17b4bfdd-dc59-4f55-8351-12f042d32d9b",
+      "result_id": "e018d4d1-87f8-4392-a5a3-3aaab2c640d8"
+    },
+    {
+      "claim_id": "66ca04c5-3573-4419-abb1-855db3a69a1a",
+      "result_id": "99aa630a-a98c-4505-b738-b52b012b06c9"
+    },
+    {
+      "claim_id": "d402057f-677a-4c3d-ab75-ef7a38de8612",
+      "result_id": "99aa630a-a98c-4505-b738-b52b012b06c9"
+    },
+    {
+      "claim_id": "a9c764e6-e6f4-41d8-bd74-d2ad1394c21e",
+      "result_id": "99aa630a-a98c-4505-b738-b52b012b06c9"
+    },
+    {
+      "claim_id": "b8ef3d24-a5c7-413f-83b6-a0da0f1d22ed",
+      "result_id": "99aa630a-a98c-4505-b738-b52b012b06c9"
+    },
+    {
+      "claim_id": "77163d1b-eb72-4d9d-815c-c127a7a0fe2b",
+      "result_id": "3e370577-e8ee-4149-b6c9-2664175833bf"
+    },
+    {
+      "claim_id": "9ba9d7ae-b027-4a3d-9606-beb30c6a12ef",
+      "result_id": "3e370577-e8ee-4149-b6c9-2664175833bf"
+    },
+    {
+      "claim_id": "aaeab7f3-e5fe-4949-a079-06107eb209d4",
+      "result_id": "f5faef79-6d2c-4977-b307-16547f6cfd55"
+    },
+    {
+      "claim_id": "d26f366e-83c1-4592-9c8e-149778514f73",
+      "result_id": "f5faef79-6d2c-4977-b307-16547f6cfd55"
+    }
+  ],
+  "comparisons": []
+}

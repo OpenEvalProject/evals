@@ -1,0 +1,374 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Immunoprecipitation-mass spectrometry identified 1904 peptides mapping to 606 protein groups from MSL10-GFP pulldowns, with 239 proteins having at least 8 peptide spectral matches and a number of proteins significantly enriched compared to wild-type controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C9 describe the experimental workflow and quantitative results from the mass spectrometry experiment. The methods are clearly described (C3-C6), and the quantitative results (C7-C9) are reported with appropriate detail and supported by Figure 1A. The experimental design includes proper controls (mock immunoprecipitations from WT).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Most proteins identified in MSL10-GFP pulldowns were also pulled down with the inactive MSL107D-GFP variant, and no proteins showed significantly altered abundance between MSL10 and MSL107D proteomes, suggesting interactions are independent of MSL10 cell death-inducing activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 are supported by data in Figure 1\u2014figure supplement 1A and 1B, with appropriate statistical thresholds (fold change > 4, p-value < 0.05). The inference that interactions are independent of cell death activity (C12) is reasonable given the data, though it remains an interpretation rather than direct demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "VAP27-1, VAP27-3, and SYT1 were among the most enriched proteins in MSL10-GFP pulldowns, with peptide coverage exceeding 30% for MSL10 and VAP27s and 11% for SYT1, and these proteins are known components of plant EPCSs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C21 report specific findings from the mass spectrometry data with quantitative peptide coverage metrics. The identification of these proteins is supported by the data, and their known association with EPCSs (C17) is appropriately cited to prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C31"
+    ],
+    "result": "Twenty percent of proteins co-immunoprecipitating with MSL10-GFP were detected in at least one EPCS interactome (SYT1, VST1, VAP27-1/3, RTNLB3/6), with MSL10 sharing 23, 15, and 14 interacting proteins with VST1, SYT1, and RTNLB3/6 respectively, strongly suggesting MSL10 physically associates with EPCS protein complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C31 describe a meta-analysis comparing the MSL10 interactome with published EPCS interactomes. The quantitative overlap data (C22, C27-C29) are supported by Figure 1B. The inference that MSL10 associates with EPCS complexes (C23, C31) is reasonable given the substantial overlap, though the claim acknowledges this is suggestive rather than definitive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Using the yeast mating-based split-ubiquitin system (mbSUS), only NubG-VAP27-1 and NubG-VAP27-3 survived on minimal media when mated with MSL10-Cub among 14 tested proteins, while MSL10-Cub interacted with MSL10-NubG but not with KAT1-NubG or untagged NubG controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 describe the mbSUS experimental approach and results. The methodology is appropriate for testing direct protein-protein interactions in yeast (C35-C36). The positive control (MSL10 self-interaction, C37) and negative controls (KAT1, untagged NubG, C38-C39) are appropriate. The selective interaction with VAP27-1 and VAP27-3 (C40) is supported by Figure 2A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The interaction between MSL10 and VAP27s was maintained with inactive (MSL107D) and overactive (MSL107A, MSL10S640L) MSL10 variants, and did not require the conserved major sperm protein domains of VAP27s, indicating MSL10 interacts with VAP27-1 and VAP27-3 in a non-canonical way independent of MSL10 signaling activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C47 are supported by data in Figure 2\u2014figure supplement 1A and 1B. The observation that multiple MSL10 variants interact with VAP27s (C41-C43) supports the inference that interaction is independent of signaling state (C44). The lack of requirement for the MSP domain (C45) and absence of known VAP27-binding motifs (C46) support the conclusion of non-canonical interaction (C47).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "FRET-FLIM analysis showed MSL10-GFP fluorescence lifetime decreased from 2.3 \u00b1 0.1 ns to 1.8 \u00b1 0.2 ns (22% decrease) with mRFP-VAP27-1 and to 1.6 \u00b1 0.3 ns (30% decrease) with mRFP-VAP27-3, while co-expression with free mRFP had no effect, providing additional evidence for direct interaction in plant cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C54 describe FRET-FLIM experiments with appropriate controls. The methodology is sound (C48-C49), the quantitative results are reported with error estimates (C50-C52), the negative control is appropriate (C53), and the fluorescence lifetimes are consistent with prior literature (C54). The decreases in fluorescence lifetime support proximity consistent with direct interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C62",
+      "C63",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "In stable transgenic Arabidopsis lines and transiently transformed tobacco, approximately 33% of MSL10-GFP co-localized with mRFP-VAP27-3 in leaf epidermal cells, with MSL10-GFP localizing to the plasma membrane and mRFP-VAP27s to the ER, indicating a subpopulation of MSL10 interacts with VAP27s to create EPCSs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C68 describe co-localization studies in both Arabidopsis and tobacco. The quantitative co-localization data (C59-C60) are supported by Figure 3B using appropriate Mander's overlap coefficients. The partial co-localization (C63) is consistent with a subpopulation interaction (C67). The inference that this interaction creates EPCSs (C68) is logical given the PM localization of MSL10 and ER localization of VAP27s.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "MAPPER-GFP puncta were similar in wild-type and msl10-1 plants but expanded in msl10-3G plants, occupying 13.1 \u00b1 3.1% of cellular area in msl10-3G leaf epidermal cells compared to 8.7 \u00b1 2.9% in wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 describe the effect of MSL10 alleles on EPCS morphology using MAPPER-GFP as a marker. The experimental design is appropriate (C71), and the quantitative results (C72-C75) are supported by Figure 4A-C with statistical analysis. The expansion in msl10-3G but not msl10-1 suggests a gain-of-function effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Genetic crosses between MSL10 mutants and lines overexpressing EPCS proteins revealed genetic interactions, with inability to isolate plants carrying UBQ:VAP27-3-GFP in msl10-1 or msl10-3G backgrounds and fewer msl10-1; UBQ:SYT1-GFP plants than expected by Mendelian segregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 describe genetic interactions revealed through crossing experiments. The segregation data (C78-C79) are supported by Table 1 with chi-squared statistical analysis showing significant deviations from expected ratios. These genetic interactions provide additional evidence for functional relationships between MSL10 and EPCS proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "SYT1-GFP displayed punctate localization that was unchanged in msl10-1 but expanded in msl10-3G leaf epidermal cells, leading to a modest but significant increase in SYT1-GFP area relative to cellular area, resembling the MAPPER-GFP pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 describe the effect of MSL10 alleles on SYT1-GFP localization. The results are supported by Figure 4E-G with statistical analysis showing significant differences. The expansion in msl10-3G but not msl10-1 (C84-C85) parallels the MAPPER-GFP results, and the similarity between patterns (C87) is supported by visual comparison of Figure 4A and 4E.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C94",
+      "C95"
+    ],
+    "result": "MAPPER-GFP-marked EPCSs expanded after 16 hr exposure to 100 mM NaCl in wild-type, msl10-1, and msl10-3G seedlings, and decreased 24 hr after hypo-osmotic shock in all genotypes, indicating MSL10 does not influence EPCS expansion during salinity stress or shrinking after hypo-osmotic shock.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C95 describe EPCS responses to osmotic perturbations. The results are supported by Figure 4\u2014figure supplement 1A and 1B. The similar responses across genotypes (C90, C95) support the inference that MSL10 does not influence these particular EPCS rearrangements (C91), though this is a negative result that should be interpreted cautiously.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "A forward genetic screen of EMS-mutagenized msl10-3G plants identified 40 suppressor mutants (sdm), of which 35 had intragenic mutations in MSL10 and 5 were presumed extragenic, with successful mapping of two extragenic suppressors (sdm26 and sdm34).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C103 describe the forward genetic screen design and initial results. The screen design is appropriate (C98-C99), the sequencing approach is sound (C100), and the quantitative results (C101-C102) are supported by Figure 5\u2014figure supplement 1A. The successful mapping of two extragenic suppressors (C103) sets up subsequent analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "sdm26 and sdm34 mutants showed intermediate height between msl10-3G and wild-type, with BC1F2 plants segregating approximately 3:1 for suppressed versus dwarf phenotypes, and recovery of msl10-3G phenotype in F2 crosses to msl10-1, confirming dominant extragenic suppression with reduced but not eliminated ectopic cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C111 describe the phenotypic characterization of sdm mutants. The height phenotypes (C104-C105) are supported by Figure 5B, the segregation ratios (C106) by Figure 5C, and the dominance inference (C107) is appropriate. The outcross results (C108-C109) confirm extragenic suppression. The cell death phenotypes (C110-C111) are supported by Figure 5D.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Whole-genome sequencing of pooled BC1F2 plants identified intervals on chromosome 1 (sdm26, 8 genes) and chromosome 3 (sdm34, 13 genes) containing missense mutations in SYT5 (Ser66\u2192Phe) and SYT7 (Gly427\u2192Arg) respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C120 describe the mapping-by-sequencing strategy and identification of causal mutations. The methodology is appropriate for dominant mutations (C112-C113), the mapping results are supported by Figure 6\u2014figure supplements 1 and 2 (C114-C115), and the specific mutations identified (C119-C120) are supported by Figure 6B. The gene counts (C117-C118) provide context for candidate prioritization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Expression of SYT5 S66F or SYT7 G427R transgenes in msl10-3G plants recreated the sdm phenotypes with increased height and suppressed cell death in T1 plants, while wild-type SYT5g-mRFP or SYT7g-mRFP had no effect, providing strong evidence these mutations cause suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C130 describe complementation experiments that validate the causal mutations. The experimental design is appropriate (C124-C125), the results are supported by Figure 6D (C126-C128), the negative control is proper (C129), and the inference of causality (C130) is well-supported by the complementation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Double mutants syt5; msl10-3G and syt7; msl10-3G resembled msl10-3G plants, and null syt1-2 had no effect on msl10-3G phenotypes, indicating the sdm26 and sdm34 alleles do not cause suppression by impairing wild-type SYT function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C135 describe genetic tests for dominant-negative effects. The experimental design is appropriate (C131), the results are supported by Figure 7\u2014figure supplement 1A and 1B (C132-C133, C135), and the inference that suppression is not through loss of function (C134) is logical given that null alleles do not suppress.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The sdm mutations did not alter SYT5/SYT7 localization, dynamics, or transcript stability in tobacco, nor MSL10-GFP protein levels in Arabidopsis, indicating suppression occurs through a mechanism other than affecting protein expression, stability, or localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C146 describe characterization of the sdm mutations' effects on protein properties. The localization and dynamics data (C140-C141) are supported by Figure 7\u2014figure supplement 1C and Videos 1-4, transcript stability (C142) by Figure 7\u2014figure supplement 1D, and MSL10 levels (C143-C144) by Figure 7\u2014figure supplement 1E and 1F. The inference (C145-C146) appropriately rules out trivial explanations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "The larger EPCS area in msl10-3G plants (13.7 \u00b1 4.2%) was not suppressed in sdm26 (13.5 \u00b1 3.7%) or sdm34 leaf epidermal cells, indicating differences in ER-PM connectivity as marked by MAPPER-GFP do not drive the phenotypic differences between wild-type, msl10-3G, and sdm plants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C154 describe a key negative result testing whether EPCS expansion drives msl10-3G phenotypes. The experimental design is appropriate (C151), the quantitative results are supported by Figure 7A-D (C152-C153), and the inference (C154) is logical. This is an important finding that rules out a simple model and suggests more complex mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "MSL10-GFP has the same electrophysiological and cell death signaling properties as untagged MSL10.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 establish that the GFP-tagged version used throughout the study is functionally equivalent to untagged MSL10. This is supported by citations to previous studies (Maksaev and Haswell, 2012; Basu et al., 2020b) that characterized these properties. This validation is essential for interpreting all subsequent experiments using MSL10-GFP.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "The partial overlap between MSL10 and other EPCS interactomes may be due to incomplete interactomes, large and difficult-to-survey protein complexes, and/or different EPCS complexes in different cell types or conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C30 offers speculative explanations for the partial overlap observed in the interactome comparisons. While these are reasonable hypotheses, they are not directly tested in the manuscript. The claim appropriately acknowledges uncertainty by using speculative language, but no experimental evidence is provided to distinguish among these possibilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The SYT5 S66F and SYT7 G427R mutations occur outside predicted functional domains but at conserved residues (S66 fully conserved in SYT5 homologs, G427 partially conserved in SYT7 homologs), suggesting they may be important for structure or function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C139 describe the location and conservation of the sdm mutations. The domain locations (C136) are supported by Figure 6B and citations, the conservation data (C137-C138) are supported by Figure 6C, and the speculation about importance (C139) is appropriately tentative given the conservation data.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1355 @@
+{
+  "submission": {
+    "id": "5bf99100-f36e-4f39-8123-06bfa486831d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T11:53:05.218138Z",
+    "updated_at": "2025-12-03T11:53:05.218138Z"
+  },
+  "content": [
+    {
+      "id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "submission_id": "5bf99100-f36e-4f39-8123-06bfa486831d",
+      "content_type": "manuscript",
+      "content_text": "# A light-gated transcriptional recorder for detecting cell-cell contacts\n\n## Authors\n\n- Kelvin F Cho<sup>1</sup> ([ORCID: 0000-0003-2917-9713](https://orcid.org/0000-0003-2917-9713))\n- Shawn M Gillespie<sup>1</sup>\n- Nicholas A Kalogriopoulos<sup>2</sup>\n- Michael A Quezada<sup>3</sup>\n- Martin Jacko<sup>4</sup>\n- Michelle Monje<sup>3</sup> ([ORCID: 0000-0002-3547-237X](https://orcid.org/0000-0002-3547-237X))\n- Alice Y Ting<sup>2</sup> ([ORCID: 0000-0002-8277-5226](https://orcid.org/0000-0002-8277-5226)) \u2020\n\n### Affiliations\n\n1. Cancer Biology Program, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))\n2. Department of Genetics, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))\n3. Department of Neurology and Neurological Sciences, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))\n4. BridgeBio Palo Alto United States ([ROR:0394gjn55](https://ror.org/0394gjn55))\n5. Department of Pathology, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))\n6. Department of Pediatrics, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))\n7. Department of Neurosurgery, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))\n8. Howard Hughes Medical Institute, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))\n9. Department of Biology, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))\n10. Department of Chemistry, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))\n11. Chan Zuckerberg Biohub San Francisco United States ([ROR:00knt4f32](https://ror.org/00knt4f32))\n\n\u2020 Corresponding author\n\n## Abstract\n\nTechnologies for detecting cell-cell contacts are powerful tools for studying a wide range of biological processes, from neuronal signaling to cancer-immune interactions within the tumor microenvironment. Here, we report TRACC (Transcriptional Readout Activated by Cell-cell Contacts), a GPCR-based transcriptional recorder of cellular contacts, which converts contact events into stable transgene expression. TRACC is derived from our previous protein-protein interaction recorders, SPARK (Kim et al., 2017) and SPARK2 (Kim et al., 2019), reported in this journal. TRACC incorporates light gating via the light-oxygen-voltage-sensing (LOV) domain, which provides user-defined temporal control of tool activation and reduces background. We show that TRACC detects cell-cell contacts with high specificity and sensitivity in mammalian cell culture and that it can be used to interrogate interactions between neurons and glioma, a form of brain cancer.\n\n## Introduction\n\nCell-cell interactions are integral to maintaining cellular and organismal homeostasis; signaling that occurs from direct physical cellular contacts mediates a diverse range of biological processes, including embryonic development, neuronal signaling, and immune-cancer interactions (Armingol et al., 2021; Dustin, 2014; Zhang and Liu, 2019). Consequently, several molecular tools have been developed to visualize and detect cell-cell interactions between different cell populations. Technologies based on enzymatic labeling strategies result in chemical labeling at contact sites, which allows for direct visualization. For example, LIPSTIC uses sortase A to catalyze labeling on the cell surface of interacting cells and has been applied to study T cell interactions (Pasqual et al., 2018). Similarly, the biotin ligase BirA and lipoic acid ligase LplA have been engineered for labeling across synaptic contacts to visualize neuronal synapses (Liu et al., 2013). Split forms of horseradish peroxidase (HRP) (Martell et al., 2016) and the biotin ligase TurboID (Cho et al., 2020; Takano et al., 2020) have also been engineered to perform both extracellular and intracellular labeling at cell-cell contact sites; mGRASP (Kim et al., 2011) and SynView (Tsetsenis et al., 2014) reconstitute GFP across neuronal synapses.\n\nWhile direct visualization of cellular contacts is useful, it is often desirable to also highlight the entire contacting cell, so that cell anatomy, transcriptomic signature, and functional properties can be further characterized. Various tools have been engineered that result in the release of an orthogonal transcription factor (TF) in the receiver cell after contact with a sender cell, allowing for a range of user-desired outputs. These include the Notch-based systems synNotch (Morsut et al., 2016) and TRACT (Huang et al., 2017), and the GPCR-based system trans-Tango (Talay et al., 2017). Other approaches involving trans-cellular uptake of protein cargo have also been developed; in BAcTrace, the botulinum neurotoxin is transferred to the receiver cell, which also results in proteolytic release of a TF (Cachero et al., 2020), while in G-baToN, a fluorescent protein is transferred, which labels the receiver cell (Tang et al., 2020). These aforementioned tools (TRACT, trans-Tango, and BAcTrace) have not yet been tested in mammalian systems and lack temporal gating, which can provide temporal specificity and reduce background signal (Kim et al., 2017).\n\nHere, we describe a different and complementary technology for transcriptional recording of cell-cell contacts. In TRACC (Transcriptional Readout Activated by Cell-cell Contacts), a GPCR in the receiver cell is activated upon interaction with a ligand expressed on sender cells, resulting in the release of a TF, which allows for versatile outputs. By incorporating an engineered light-oxygen-voltage-sensing (LOV) domain, the tool becomes light-gated, and tool activation requires both cell contact and exogenous blue light, restricting activation only to user-defined time windows. We show that TRACC can detect cellular contacts with high specificity and sensitivity in HEK293T culture. We further demonstrate its utility by extending to neuronal cultures and assaying interactions in co-culture between glioma cells and neurons.\n\n## Results\n\n### Design and development of TRACC\n\nTo design TRACC, we built upon our previously published tool SPARK, which detects protein-protein interactions with transcriptional readout (Kim et al., 2019; Kim et al., 2017). TRACC is comprised of four components, as shown in Figure 1A\u2013B. On the sender cell, a ligand is presented on the cell surface by fusion to pre-mGRASP, a construct that contains the transmembrane domain of CD4 and the intracellular domain of the pre-synaptic protein neurexin (Kim et al., 2011). On the receiver cell, a corresponding GPCR is expressed and fused to an LOV domain, a TEV cleavage site (TEVcs; ENLYFQM), and a TF. Additionally, the receiver cell expresses arrestin fused to the TEV protease (TEVp) and a reporter construct of interest. Upon cell-cell contact, the ligand on the sender cell activates the GPCR on the receiver cell, resulting in recruitment of arrestin-TEVp. However, in the absence of light, the LOV domain cages the TEVcs, rendering it inaccessible to the TEVp. With the addition of exogenous blue light, the LOV domain uncages, resulting in subsequent cleavage and release of a TF and reporter activation. Thus, TRACC is designed as an \u2018AND\u2019 logic gate, simultaneously requiring contact with a sender cell and exogenous blue light.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/70881/elife-70881-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic of TRACC. A ligand is presented on sender cells; a GPCR specifically activated by the selected ligand is expressed in receiver cells. The GPCR is fused to the light-oxygen-voltage-sensing (LOV) domain, TEV protease cleavage site (TEVcs), and transcription factor (TF). Upon both cell-cell contact and exposure to blue light, the GPCR is activated and recruits arrestin fused to TEV protease (TEVp); blue light uncages the LOV domain, allowing cleavage of the TEVcs and subsequent release of the TF, which translocates to the nucleus and drives expression of a reporter of interest. (B) Constructs used in TRACC. The sender construct is comprised of a peptide ligand fused to pre-mGRASP (Kim et al., 2011) and the HA epitope tag. Receiver constructs include the corresponding GPCR fused to the LOV domain, TEVcs, and TF (Gal4), arrestin fused to TEVp, and a reporter construct. (C) Luciferase assay to screen a panel of GPCR-ligand pairs in cis. HEK293T cells were transfected with both sender and receiver constructs corresponding to each GPCR-ligand pair indicated, using the reporter UAS-luciferase. Approximately 8 hr after 10 min blue light exposure, the UAS-luciferase luminescence was recorded using a plate reader (n = 4 replicates per condition). The CCR6-CCL20 pair (red) showed the highest \u00b1light and \u00b1ligand signal ratios of 2.6-fold and 3.2-fold, respectively. A receiver construct using the glucagon receptor (GCGR), but omitting the LOV domain, analogous to that of previously published trans-Tango (Talay et al., 2017), was included as a control.\n\nTo first test our design in HEK293T cells, we utilized eLOV, a previously engineered LOV domain that has improved light caging (Wang et al., 2017), and the orthogonal Gal4-UAS TF system. To ensure that TRACC would be orthogonal for eventual applications in neuroscience, we selected six GPCR-ligand pairs that are not expressed or lowly expressed in the brain according to the GTEx database (Lonsdale et al., 2013). These are CCR3-CCL13, CCR6-CCL20, CCR7-CCL19, GHRHR-GHRH, GNRHR-GnRH, and GCGR-GCG, the last of which was utilized in trans-Tango (Talay et al., 2017). GPCR-ligand pairs were cloned into TRACC constructs and co-expressed in HEK293T cells in cis along with a UAS-luciferase reporter. We adopted previously optimized experimental parameters from SPARK (Kim et al., 2017) and SPARK2 (Kim et al., 2019), including DNA transfection amounts, incubation times, and light stimulation time (Methods). Approximately 8 hr following 10 min stimulation with blue light, TRACC activation was measured via a luciferase assay on a plate reader (Figure 1C). Of the GPCR-ligand pairs tested, the CCR6-CCL20 pair showed the highest \u00b1light and \u00b1ligand signal ratios (2.6- and 3.2-fold, respectively). Thus, we selected this GPCR-ligand pair for subsequent experiments. Of note, we included a construct that omitted the LOV domain, a design similar to trans-Tango (Talay et al., 2017), and observed high background reporter expression and ligand-independent activation (\u00b1ligand signal ratio of 1.1-fold), suggesting that the additional light-gate is crucial for minimizing background.\n\n### Detecting cellular contacts in HEK293T cultures\n\nNext, we tested whether TRACC could successfully detect cell-cell contacts in trans. To do this, sender and receiver HEK293T cells were separately transfected with the corresponding TRACC constructs (Figure 2A). Sender and receiver cell populations were co-plated together; approximately 8 hr following 10 min blue light stimulation, TRACC activation of UAS-luciferase expression was measured on a plate reader (Figure 2B). We observed a robust increase in luciferase reporter expression with \u00b1light and \u00b1sender signal ratios of 5.6-fold each. To demonstrate the versatility of a transcriptional reporter, we repeated the assay using a UAS-mCherry reporter in place of UAS-luciferase and performed immunostaining and confocal fluorescence imaging (Figure 2C\u2013D). From the imaging assay, we observed robust light-dependent activation of the mCherry reporter in V5-positive (receiver-positive) cells that were in direct contact with HA-positive (sender-positive) cells. Quantitation of fluorescence intensities of cells across 50 fields of view (FOVs) showed that TRACC was highly specific; of 94 mCherry-expressing cells analyzed, 80.0% were in direct contact with an HA-positive sender cell (Figure 2E). While we did observe mCherry reporter activation in V5-positive cells not touching sender cells (20% of mCherry-expressing cells were not in direct contact with a sender cell), it is possible that these cells were previously in contact, but the sender cells were dislodged during the course of the experiment or during the washing steps in immunostaining. It is also possible that background activation may occur in cells expressing the arrestin-TEVp component at particularly high levels, which can result in GPCR activation-independent release of the TF (Sanchez et al., 2020). V5 intensity distributions were consistent across high-mCherry and low-mCherry populations (Figure 2\u2014figure supplement 1A), suggesting that reporter activation is sender-dependent and not a result of differential receiver expression levels.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/70881/elife-70881-fig2-v1.jpg)\n\n**Figure 2.:** (A) Experimental design for co-plating sender and receiver cells. (B) Luciferase assay using the CCR6-CCL20 GPCR-ligand pair in trans. HEK293T cells transfected with the CCL20 sender construct were co-plated with HEK293T cells transfected with receiver constructs and UAS-luciferase. Approximately 8 hr after 10 min blue light exposure, the UAS-luciferase luminescence was recorded (n = 4 replicates per condition). (C) Confocal fluorescence imaging of sender cells co-plated with receiver cells, using UAS-mCherry reporter. Approximately 8 hr after 10 min blue light exposure, cells were fixed and immunostained. mCherry activation occurs in receiver cells (V5-positive) that contact sender cells (HA-positive). Yellow arrowheads denote examples in which receiver cells are in contact with sender cells. Scale bar, 60 \u03bcm. (D) Confocal fluorescence imaging of sender cells co-plated with receiver cells, using UAS-mCherry at higher magnification. Cells were treated as in (C). Scale bars, 20 \u03bcm. (E) Quantification of mCherry/V5 intensity ratios for all V5-positive cells in the +light condition. The mCherry/V5 ratio was significantly higher in V5-positive cells that were in contact with HA-positive sender cells. (no contact, n = 108 cells; contact, n = 106 cells; two-tailed t-test, **p < 0.005).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70881/elife-70881-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Distribution of V5 intensity in V5-positive cells in Figure 2E. The distributions of sender-contacting cells and non-contacting cells are similar, suggesting that mCherry activation is sender-dependent and not a result of differential V5 expression (not expressing, n = 50 cells, expressing without contact, n = 108 cells, expressing with contact, n = 106 cells). (B) Distribution of HA (sender) intensity within the same ROI (region of interest) for each V5-positive cell in contact with a sender cell. Cells were ranked based on their mCherry/V5 intensity ratios and split into groups corresponding to the top and bottom 50 percentiles. Distributions of HA intensity are similar between the two groups, suggesting factors other than differential HA (sender) expression may explain why ~ 19.8% of contacting cells have low mCherry (reporter) expression.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70881/elife-70881-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Confocal fluorescence imaging of sender cells co-plated with receiver cells using UAS-mCherry. TRACC components were introduced by lentivirus transduction. Approximately 8 hr after 10 min blue light exposure, cells were fixed and immunostained. Scale bars, 30 \u03bcm. FOV, field of view.\n\nTo assess sensitivity, we determined that 80.2% of receiver cells in contact with sender cells showed reporter expression above background (n = 106 cells from 50 FOVs; above background defined as having a fluorescence signal 1.5-fold or greater above a blank region). Furthermore, of the receiver cells in contact with an HA-positive (sender) cell, we also observed that the HA intensity within the same region of interest (ROI) was similar across both highly expressing and lowly expressing cells (Figure 2\u2014figure supplement 1B), suggesting the difference in activation levels is not dependent on the expression levels of the sender construct. One possible explanation for contacting cells that do not turn on TF is that they may lack one of the other two receiver components (arrestin-TEVp or UAS-mCherry) that need to be co-transfected into the same cell for TRACC to function. We also performed this experiment using lentivirus transduction instead of transient transfection and similarly observed sender- and light-dependent reporter activation (Figure 2\u2014figure supplement 2).\n\n### Extending TRACC to neuronal systems\n\nRecently developed non-viral tools for trans-synaptic tracing in neurons have expanded our ability to map synaptically connected cell populations. However, trans-Tango (Talay et al., 2017), TRACT (Huang et al., 2017), and BAcTrace (Cachero et al., 2020) have so far only been demonstrated in Drosophila and do not include mechanisms for temporal gating. To explore whether it would be feasible to adapt TRACC to neuronal systems, we cloned our constructs into AAV vectors driven by the synapsin promoter and utilized the orthogonal tTA-TRE TF system (Figure 3A). We generated mixed serotype AAV1/2 viruses for infecting cultured rat neurons. First, we verified that the individual constructs expressed and localized as expected in primary rat cortical neuron culture; we were able to detect the CCR6 and arrestin receiver components and observed that these constructs trafficked to neuronal processes as expected (Figure 3\u2014figure supplement 1A). We also verified that the CCL20 sender construct localized properly to pre-synaptic terminals via colocalization with endogenous synapsin (Figure 3\u2014figure supplement 1B-C). Deletion of the intracellular neurexin domain disrupted its targeting specificity.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/70881/elife-70881-fig3-v1.jpg)\n\n**Figure 3.:** (A) Constructs used in TRACC in neuron culture. CCR6 is the GPCR and CCL20 is its activating peptide ligand. For expression in neurons, the transcription factor (TF) is changed from Gal4 to tTA and the reporter gene is driven by TRE rather than a UAS promoter. (B) Luciferase assay using TRACC constructs expressed in cis in neuron culture. Primary rat cortical neurons were infected with AAV1/2 viruses encoding both sender and receiver constructs, including the reporter TRE-luciferase, on DIV5 and light-stimulated on DIV10. Approximately 24 hr after 10 min blue light exposure, the TRE-luciferase luminescence was recorded using a plate reader (n = 4 replicates per condition). (C) Experimental design for co-plating sender neurons and receiver HEK293T cells. (D) Luciferase assay using sender neurons co-cultured with receiver HEK293T cells. Primary rat cortical neurons were infected with AAV1/2 viruses encoding the sender construct on DIV5. HEK293T cells expressing receiver constructs and UAS-luciferase were co-plated onto sender neurons on DIV9, and the resulting co-culture was light-stimulated on DIV10. Approximately 8 hr after 10 min blue light exposure, the UAS-luciferase luminescence was recorded (n = 4 replicates per condition). (E) Confocal fluorescence imaging of receiver HEK293T cells co-cultured with sender neurons, using UAS-mCherry. GFP driven by the synapsin promoter was included as an infection marker to visualize transduced neurons. Cells were treated as in (D). Scale bars, 20 \u03bcm.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70881/elife-70881-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Confocal imaging of receiver constructs expressed in primary rat cortical neurons. Neurons were fixed and immunostained with anti-VP16 and anti-V5 to detect the GPCR and arrestin components, respectively. Scale bars, 20 \u03bcm. (B) Confocal imaging of the CCL20 sender construct expressed in neuron culture. Neurons were fixed and immunostained with anti-HA to detect the CCL20 sender construct. Neurofilament (NFH) and synapsin were co-stained to visualize neurons and pre-synaptic terminals, respectively. A sender construct omitting the intracellular neurexin domain was included as a control. Scale bars, 20 \u03bcm. (C) Quantification of colocalization between HA (sender) and synapsin signals (n = 3 fields of view [FOVs] per condition). (D) Experimental design for co-plating receiver neurons and sender HEK293T cells. (E) Luciferase assay using receiver neurons co-cultured with sender HEK293T cells. Primary rat cortical neurons were infected with AAV1/2 viruses encoding the receiver constructs, using TRE-luciferase on DIV5. HEK293T cells expressing the sender construct were co-plated onto sender neurons on DIV9, and the resulting co-culture was light-stimulated on DIV10. Approximately 24 hr after 10 min blue light exposure, the TRE-luciferase luminescence was recorded using a plate reader (n = 4 replicates per condition). (F) Confocal fluorescence imaging of sender HEK293T cells co-cultured with receiver neurons, using TRE-mCherry. Cells were treated as in (E). Scale bars, 20 \u03bcm.\n\nTo test TRACC in neuron culture, we first co-expressed both receiver and sender constructs in the same population of neurons in cis and performed a luciferase assay. Approximately 24 hr after 10 min blue light stimulation, we measured luciferase reporter levels on a plate reader and observed robust activation of the TRE-luciferase reporter with high \u00b1light and \u00b1ligand signal ratios of 11.4- and 7.5-fold, respectively (Figure 3B). Next, we tested our tool in a co-culture system in which HEK293T cells expressing receiver constructs were co-plated onto neurons expressing a sender construct (Figure 3C). In the luciferase assay, we detected light- and sender-dependent gene expression, with \u00b1light and \u00b1sender signal ratios of 4.2- and 3.2-fold, respectively (Figure 3D). We repeated the assay with confocal microscopy imaging and again observed robust expression of the mCherry reporter only in the presence of both light and sender (Figure 3E). Lastly, we showed trans-cellular activation of TRACC in the reverse configuration, with sender HEK293T cells co-plated onto neurons expressing receiver constructs; both luciferase and imaging assays are shown in Figure 3\u2014figure supplement 1D-F.\n\n### Detecting interactions between neurons and glioma cells\n\nHigh-grade gliomas are lethal brain cancers and the leading cause of brain tumor death in both children and adults (Johung and Monje, 2017). Recent studies have shown that neuronal interactions with glioma cells drive glioma progression (Pan et al., 2021; Venkatesh et al., 2019; Venkatesh et al., 2017; Venkatesh et al., 2015). Gliomas integrate into neural circuits, and one key mechanism driving glioma progression is signaling through functional neuron-to-glioma synapses (Venkataramani et al., 2019; Venkatesh et al., 2019). In these connections, pre-synaptic neurons communicate electrochemically to post-synaptic glioma cells, and the consequent inward current promotes glioma cell proliferation through membrane voltage-sensitive mechanisms (Venkatesh et al., 2019). How the synaptic connectivity evolves over the course of the cancer, which neurons form synapses with glioma cells, and which subpopulations of these cellularly heterogeneous tumors (Filbin et al., 2018; Venteicher et al., 2017) engage in neuron-to-glioma synapses has yet to be determined. We hypothesized that applying TRACC to experimental model systems of glioma may open the door to future studies of neuron-to-glioma connectivity at various timepoints in the evolution of the disease course as well as isolation of synaptic subpopulations for subsequent molecular analysis.\n\nTo see whether TRACC could be adapted for detecting contacts between neurons and glioma cells, we generated transposon-integrated cell lines stably expressing receiver constructs using patient-derived diffuse intrinsic pontine glioma (DIPG) cells (Figure 4A). We observed that SU-DIPG-VI cells stably expressing TRACC components exhibited low sensitivity; only a small fraction of cells showed mCherry reporter expression upon activation of TRACC with recombinant ligand and exogenous blue light (Figure 4A; Figure 4\u2014figure supplement 1A). To further optimize TRACC in this system, we generated five additional receiver cell lines containing variants of either the LOV domain or the TEVp. We compared eLOV versus hLOV, which combines features of eLOV and iLiD (Kim et al., 2017). We also compared wild-type TEVp with faster variants that were engineered via directed evolution, uTEV1 and uTEV2 (Sanchez and Ting, 2020). From screening the SU-DIPG-VI cell lines expressing the different combinations of LOV and TEVp, we found that eLOV in combination with uTEV2 showed the highest sensitivity (Figure 4A; Figure 4\u2014figure supplement 1A). Furthermore, while the proportion of cells that became activated increased, this activation was still highly specific and required the presence of both recombinant ligand and blue light (Figure 4A). We tested this cell line in a co-culture system in which SU-DIPG-VI cells stably expressing receiver constructs (with eLOV and uTEV2) were co-plated onto neurons expressing the sender construct (Figure 4B). In this assay, we observed robust activation of the mCherry reporter only in the presence of both light and sender expression in sender neurons (Figure 4C; Figure 4\u2014figure supplement 1B), demonstrating the potential to map neuron-glioma cell-cell contact interactions in patient-derived glioma model systems.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/70881/elife-70881-fig4-v1.jpg)\n\n**Figure 4.:** (A) Optimization of TRACC components in transposon-integrated SU-DIPG-VI stable cell lines. We compared TRACC constructs containing eLOV or hLOV, and WT TEVp, uTEV1, or uTEV2. Cells were plated and treated with 0.2 \u03bcg/mL recombinant CCL20 and 10 min blue light. Approximately 24 hr after blue light exposure, cells were fixed and immunostained. Scale bar, 30 \u03bcm. (B) Experimental design for co-plating sender neurons and receiver DIPG cells. (C) Confocal fluorescence imaging of DIPG glioma expressing receiver constructs containing eLOV and uTEV2 co-plated with sender neurons. Primary rat cortical neurons were infected with AAV1/2 viruses encoding the sender construct on DIV5. DIPG cells were co-plated onto sender neurons on DIV9, and the resulting co-culture was light-stimulated on DIV11. Approximately 24 hr after 10 min blue light exposure, cells were fixed and immunostained. GFP driven by the synapsin promoter was included as an infection marker to visualize transduced neurons; Nestin is a marker for DIPG cells. Scale bar, 20 \u03bcm.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70881/elife-70881-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Quantification of mCherry activation upon recombinant CCL20 addition and light stimulation for each transposon-integrated DIPG stable line. 97\u2013208 cells were analyzed for each condition. (B) Quantification of mCherry/Nestin intensity ratios for all Nestin-positive DIPG cells in Figure 4C. 10\u201335 cells were analyzed for each condition.\n\n## Discussion\n\nWe have adapted our previously published SPARK tool (Kim et al., 2017), an assay for detecting protein-protein interactions, into a tool for detecting cell-cell contacts. TRACC is a GPCR-based detector of cell-cell interactions with transcriptional readout, offering versatile outputs for detection and downstream manipulation. TRACC incorporates the light-sensitive LOV domain, such that tool activation can only occur in a user-defined window during which exogenous blue light is supplied. Compared to tools that directly label contact sites such as LIPSTIC (Pasqual et al., 2018), split-HRP (Martell et al., 2016), and mGRASP (Kim et al., 2011), TRACC provides genetic access to contacting cell populations for downstream analysis and potential manipulation. Furthermore, in comparison to other TF-based tools like synNotch (Morsut et al., 2016) and trans-Tango (Talay et al., 2017), the incorporation of light gating in TRACC substantially reduces background signal and provides temporal specificity for detecting cell-cell contacts during user-defined time windows.\n\nWe used TRACC to detect cell-cell contacts between separately transfected HEK293T cell populations and observed specific and sensitive tool activation. We further showed that TRACC can be applied to detect cellular contacts in both neuron and glioma systems, and that the sender construct localizes properly to pre-synaptic terminals. In future studies, TRACC may be useful for synapse-specific tracing, particularly in the anterograde direction (pre-synaptic to post-synaptic) for which tools are currently lacking. This will first require careful validation of TRACC component localization in vivo and testing of TRACC specificity and sensitivity in a well-characterized circuit in vivo. TRACC may also be useful for future investigations of neuron-glioma circuitry, allowing identification and subsequent analysis of connected subpopulations.\n\n## Materials and methods\n\nTable of plasmids used in this study.\n\n<table>\n  <thead>\n    <tr>\n      <th>Plasmid name</th>\n      <th>Plasmid vector</th>\n      <th>Promoter</th>\n      <th>Features</th>\n      <th>Variants</th>\n      <th>Details</th>\n      <th>Used for</th>\n      <th>Used in</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>P1-P6</td>\n      <td>pAAV</td>\n      <td>CMV</td>\n      <td>HindIII-GPCR-SpeI-NES-NheI-eLOV-TEVcs-FLAG-Gal4-V5</td>\n      <td>GPCRs: CCR3, CCR6, CCR7, GHRHR, GNRHR, GCGR</td>\n      <td>NES: ELAEKLAGLDIN; TEVcs:ENLYFQM; FLAG: DYKDDDDK; V5: GKPIPNPLLGLDST</td>\n      <td>Transient expression</td>\n      <td>Figures 1\u20143; Figure 2\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>P7</td>\n      <td>pAAV</td>\n      <td>CMV</td>\n      <td>HindIII-GPCR-SpeI-NES-NheI- TEVcs-FLAG-Gal4-V5</td>\n      <td>GPCR: GCGR</td>\n      <td>NES: ELAEKLAGLDIN; TEVcs:ENLYFQM; FLAG: DYKDDDDK; V5: GKPIPNPLLGLDST</td>\n      <td>Transient expression</td>\n      <td>Figure 1</td>\n    </tr>\n    <tr>\n      <td>P8-13</td>\n      <td>pCAG</td>\n      <td>CAG</td>\n      <td>KpnI-Ligand-18 aa linker-AgeI-3xHA-AgeI-pre-mGRASP</td>\n      <td>Ligands: CCL13, CCL20, CCL19, GHRH, GnRH, GCG</td>\n      <td>18 aa linker:GNGNGNGNGNGNGNGNGN; 3xHA: AAVYPYDVPDYAGYPYDVPDYAGSYPYDVPDYAPAA</td>\n      <td>Transient expression</td>\n      <td>Figures 1 and 2; Figure 2\u2014figure supplements 1 and 2</td>\n    </tr>\n    <tr>\n      <td>P14</td>\n      <td>pCDNA3</td>\n      <td>CMV</td>\n      <td>BsaI-myc-Arrestin-10 aa linker-TEVp</td>\n      <td></td>\n      <td>10 aa linker: GGSGSGSGGS</td>\n      <td>Transient expression</td>\n      <td>Figures 1\u20143; Figure 2\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>P15-16</td>\n      <td>pAAV</td>\n      <td>UAS</td>\n      <td>Reporter</td>\n      <td>Reporters: Luciferase, mCherry</td>\n      <td></td>\n      <td>Transient expression</td>\n      <td>Figures 1\u20143; Figure 2\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>P17</td>\n      <td>AAV1</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>Producing AAV1/2 virus</td>\n      <td>Figures 3 and 4; Figure 3\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>P18</td>\n      <td>AAV2</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>Producing AAV1/2 virus</td>\n      <td>Figures 3 and 4; Figure 3\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>P19</td>\n      <td>DF6</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>Producing AAV1/2 virus</td>\n      <td>Figures 3 and 4; Figure 3\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>P20</td>\n      <td>pAAV</td>\n      <td>Synapsin</td>\n      <td>BamHI-CCL20-18 aa linker-AgeI-3xHA-AgeI-pre-mGRASP</td>\n      <td></td>\n      <td>18 aa linker: GNGNGNGNGNGNGNGNGN;3xHA:AAVYPYDVPDYAGYPYDVPDYAGSYPYDVPDYAPAA</td>\n      <td>AAV-induced expression in neurons</td>\n      <td>Figures 3 and 4; Figure 3\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>P21</td>\n      <td>pAAV</td>\n      <td>Synapsin</td>\n      <td>BamHI- CCR6-SpeI-NES-NheI-eLOV-TEVcs-FLAG-tTA</td>\n      <td></td>\n      <td>NES: ELAEKLAGLDIN; TEVcs: ENLYFQM;FLAG: DYKDDDDK</td>\n      <td>AAV-induced expression in neurons</td>\n      <td>Figure 3; Figure 3\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>P22</td>\n      <td>pAAV</td>\n      <td>Synapsin</td>\n      <td>Arrestin-10 aa linker-TEVp-V5</td>\n      <td></td>\n      <td>10 aa linker: GGSGSGSGGS; V5: GKPIPNPLLGLDST</td>\n      <td>AAV-induced expression in neurons</td>\n      <td>Figure 3; Figure 3\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>P23-24</td>\n      <td>pAAV</td>\n      <td>TRE</td>\n      <td>Reporter</td>\n      <td>Reporters: Luciferase, mCherry</td>\n      <td></td>\n      <td>AAV-induced expression in neurons</td>\n      <td>Figure 3; Figure 3\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>P25</td>\n      <td>pAAV</td>\n      <td>Synapsin</td>\n      <td>GFP</td>\n      <td></td>\n      <td></td>\n      <td>AAV-induced expression in neurons</td>\n      <td>Figure 3, 4</td>\n    </tr>\n    <tr>\n      <td>P26-27</td>\n      <td>pPB</td>\n      <td>EF-1\u03b1</td>\n      <td>AgeI-CCR6- SpeI-NES-NheI-LOV-TEVcs-FLAG-Gal4</td>\n      <td>LOV variants: eLOV, hLOV</td>\n      <td>NES: ELAEKLAGLDIN; TEVcs: ENLYFQM; FLAG: DYKDDDDK</td>\n      <td>Stable expression in DIPG</td>\n      <td>Figure 4; Figure 4\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>P28-30</td>\n      <td>pPB</td>\n      <td>UbC; UAS</td>\n      <td>Arrestin-10 aa linker-TEVp-V5; UAS-mCherry</td>\n      <td>TEVp variants: WT TEVp, uTEV1, uTEV2</td>\n      <td>10 aa linker: GGSGSGSGGS; V5: GKPIPNPLLGLDST</td>\n      <td>Stable expression in DIPG</td>\n      <td>Figure 4; Figure 4\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>P31</td>\n      <td>pPB</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>Super PiggyBac Transposase Expression Vector (System Biosciences)</td>\n      <td>Stable expression in DIPG</td>\n      <td>Figure 4; Figure 4\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>P31</td>\n      <td>pCMV</td>\n      <td>CMV</td>\n      <td>dR8.91</td>\n      <td></td>\n      <td></td>\n      <td>Producing lentivirus</td>\n      <td>Figure 2\u2014figure supplement 2</td>\n    </tr>\n    <tr>\n      <td>P32</td>\n      <td>pCMV</td>\n      <td>CMV</td>\n      <td>VSV-G</td>\n      <td></td>\n      <td></td>\n      <td>Producing lentivirus</td>\n      <td>Figure 2\u2014figure supplement 2</td>\n    </tr>\n    <tr>\n      <td>P33</td>\n      <td>pLX208</td>\n      <td>CMV</td>\n      <td>CCR6- SpeI-NES-NheI-eLOV-TEVcs-FLAG-Gal4</td>\n      <td></td>\n      <td>NES: ELAEKLAGLDIN; TEVcs:ENLYFQM; FLAG: DYKDDDDK</td>\n      <td>Lentivirus-induced expression in HEK293T</td>\n      <td>Figure 2\u2014figure supplement 2</td>\n    </tr>\n    <tr>\n      <td>P34</td>\n      <td>pLX208</td>\n      <td>CMV</td>\n      <td>Arrestin-10 aa linker-TEVp</td>\n      <td></td>\n      <td>10 aa linker: GGSGSGSGGS</td>\n      <td>Lentivirus-induced expression in HEK293T</td>\n      <td>Figure 2\u2014figure supplement 2</td>\n    </tr>\n    <tr>\n      <td>P35</td>\n      <td>pLX208</td>\n      <td>CMV</td>\n      <td>CCL20-18 aa linker-AgeI-3xHA-AgeI-pre-mGRASP</td>\n      <td></td>\n      <td>18 aa linker: GNGNGNGNGNGNGNGNGN; 3xHA:AAVYPYDVPDYAGYPYDVPDYAGSYPYDVPDYAPAA</td>\n      <td>Lentivirus-induced expression in HEK293T</td>\n      <td>Figure 2\u2014figure supplement 2</td>\n    </tr>\n    <tr>\n      <td>P36</td>\n      <td>pLX208</td>\n      <td>UAS</td>\n      <td>mCherry</td>\n      <td></td>\n      <td></td>\n      <td>Lentivirus-induced expression in HEK293T</td>\n      <td>Figure 2\u2014figure supplement 2</td>\n    </tr>\n  </tbody>\n</table>\n\nTable of antibodies used in this study.\n\n<table>\n  <thead>\n    <tr>\n      <th>Antibody</th>\n      <th>Source</th>\n      <th>Vendor</th>\n      <th>Catalog number</th>\n      <th>Dilution(s)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Anti-V5</td>\n      <td>Mouse</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>R96025</td>\n      <td>WB: 1:10,000; IF: 1:1000</td>\n    </tr>\n    <tr>\n      <td>Anti-HA</td>\n      <td>Rabbit</td>\n      <td>Cell Signaling Technology</td>\n      <td>C29F4</td>\n      <td>WB: 1:5000; IF: 1:1000</td>\n    </tr>\n    <tr>\n      <td>DAPI</td>\n      <td>-</td>\n      <td>Enzo Life Sciences</td>\n      <td>AP402-0010</td>\n      <td>IF: 1 \u03bcg/mL final concentration</td>\n    </tr>\n    <tr>\n      <td>Anti-mouse-AlexaFluor488</td>\n      <td>Goat</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>A11029</td>\n      <td>IF: 1:1000</td>\n    </tr>\n    <tr>\n      <td>Anti-mouse-AlexaFluor568</td>\n      <td>Goat</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>A11031</td>\n      <td>IF: 1:1000</td>\n    </tr>\n    <tr>\n      <td>Anti-mouse-AlexaFluor647</td>\n      <td>Goat</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>A21236</td>\n      <td>IF: 1:1000</td>\n    </tr>\n    <tr>\n      <td>Anti-rabbit-AlexaFluor488</td>\n      <td>Goat</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>A11008</td>\n      <td>IF: 1:1000</td>\n    </tr>\n    <tr>\n      <td>Anti-rabbit-AlexaFluor568</td>\n      <td>Goat</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>A11036</td>\n      <td>IF: 1:1000</td>\n    </tr>\n    <tr>\n      <td>Anti-rabbit-AlexaFluor647</td>\n      <td>Goat</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>A21245</td>\n      <td>IF: 1:1000</td>\n    </tr>\n    <tr>\n      <td>Anti-RFP</td>\n      <td>Rabbit</td>\n      <td>Rockland</td>\n      <td>600-401-379</td>\n      <td>IF: 1:1000</td>\n    </tr>\n    <tr>\n      <td>Anti-VP16</td>\n      <td>Rabbit</td>\n      <td>Abcam</td>\n      <td>Ab4808</td>\n      <td>IF: 1:1000</td>\n    </tr>\n    <tr>\n      <td>Anti-Synapsin</td>\n      <td>Guinea Pig</td>\n      <td>Synaptic Systems</td>\n      <td>106 004</td>\n      <td>IF: 1:500</td>\n    </tr>\n    <tr>\n      <td>Anti-NFH</td>\n      <td>Chicken</td>\n      <td>Aves Labs</td>\n      <td>NFH</td>\n      <td>IF: 1:2000</td>\n    </tr>\n    <tr>\n      <td>RFP-Booster AlexaFluor 568</td>\n      <td>Alpaca</td>\n      <td>Chromotek</td>\n      <td>rb2AF568-50</td>\n      <td>IF: 1:500</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cloning\n\nAll constructs were generated using standard cloning techniques. PCR fragments were amplified using Q5 polymerase (NEB). Vectors were digested using enzymatic restriction digest and ligated to gel purified PCR products using Gibson assembly. Ligated plasmid products were transformed into either competent XL1-Blue bacteria or competent NEB Stable bacteria (C3040H).\n\n### Cell lines\n\nHEK293T cells were obtained from ATCC; SU-DIPG cell lines were patient derived. All cell lines have been tested mycoplasma negative.\n\n### HEK293T cell culture and transfection\n\nHEK293T cells from ATCC were cultured as a monolayer in complete media: Dulbecco\u2019s modified Eagle\u2019s medium (DMEM) with 4.5 g/L glucose and L-glutamine supplemented with 10% (w/v) fetal bovine serum, 1% (v/v) GlutaMAX, 50 units/mL penicillin, and 50 \u03bcg/mL streptomycin at 37\u00b0C under 5% CO2. For confocal imaging experiments, glass coverslips were coated with 50 \u03bcg/mL fibronectin in DPBS for at least 20 min at room temperature before plating; cells were grown on glass coverslips in 24-well plates with 500 \u03bcL growth medium. For luciferase assays, cells were grown in 24-well plates with 500 \u03bcL growth medium, transfected, and replated into 96-well plates with 100 \u03bcL growth medium (20,000 cells/well) 4 hr after transfection.\n\nFor transient expression, cells were transfected at approximately 70% confluency using 5 \u03bcL/mL Lipofectamine2000 and corresponding expression plasmids in serum-free media. Complete transfection protocols for individual experiments are described below. Note that for all HEK293T cell experiments expressing receiver constructs, it is critical to light-stimulate cultures 15\u201318 hr post-transfection and to perform the assay (luciferase or fixation for imaging) 7\u20139 hr post-stimulation to avoid background accumulation.\n\n### Primary rat cortical neuron culture and AAV infection\n\nCortical neurons were harvested from rat embryos euthanized at embryonic day 18 and plated in 24-well plates or 48-well plates as previously described (Loh et al., 2016; Wang et al., 2017). Plates were coated with 0.001% (w/v) poly-L-ornithine in DPBS at room temperature overnight, washed twice with DPBS, and subsequently coated with 5 \u03bcg/mL of mouse laminin in DPBS at 37\u00b0C for at least 4 hr. Neurons were cultured in complete neuronal media: 1:1 Advanced DMEM:neurobasal, supplemented with 2% (v/v) B27 supplement, 5% (v/v) fetal bovine serum, 1% GlutaMAX, 50 units/mL penicillin, 50 \u03bcg/mL streptomycin, 0.1% (v/v) \u03b2-mercaptoethanol, 5 ng/mL glial-derived neurotrophic factor, and 5 \u03bcM TRO19622 at 37\u00b0C under 5% CO2. At DIV2, half of the media was removed from each well and replaced with complete neuronal media supplemented with 10 \u03bcM 5-fluorodeoxyuridine to inhibit glial cell growth. Half of the media was replaced with complete neuronal media every 2 days afterwards.\n\n### SU-DIPG-VI culture and transposon integration\n\nDIPG cells (SU-DIPG, an H3.3K27M + patient-derived neurosphere culture) were cultured in tumor stem media: neurobasal (-A), supplemented with 20 ng/mL human bFGF, 20 ng/mL human EGF, 10 ng/mL human PDGF-AA, 10 ng/mL PDGF-BB, and 2 ng/mL heparin at 37\u00b0C under 5% CO2.\n\nTo generate transposon-integrated stable cell lines, naive glioma cells were plated in tumor stem media in six-well plates. Plates were coated first with 0.01% poly-D-lysine for 20 min and then with 5 \u03bcg/mL of mouse laminin for 3 hr. Approximately 400,000 cells were plated per well, and cells were incubated overnight. Receiver constructs were introduced sequentially. Once cells were fully adhered, 1.5 \u03bcg of a receiver construct was added to 8.5 \u03bcL of FuGene HD (Promega), 0.8 \u03bcg of Super PiggyBac Transposase Expression Vector, and 30 \u03bcL of OptiMEM serum-free media per condition. Approximately 5 hr after transfection, a half-media change was performed to remove FuGene HD toxicity. Adherent glioma cells were expanded into 10 cm2 Petri dishes, after which antibiotic selection was initiated (1 \u03bcg/mL blasticidin or 100 \u03bcg/mL G418 [Geneticin]). The transfection protocol was repeated to introduce the second receiver construct. Cells were maintained under double selection conditions until needed for in vitro experiments.\n\n### Sample-size estimation and replication\n\nNo statistical methods were used to determine sample size, and instead relied on guidelines from previously published works. For luminescence assays, we used at least four technical replicates. Sample sizes are listed in figure legends. All experiments were replicated at least once (biological replicates). Replicates are listed in figure legends.\n\n### Luciferase assays with HEK293T\n\nFor experiments with a luciferase reporter, HEK293T cells were cultured in 24-well plates and transfected with 70 ng of pAAV-CMV-GPCR-eLOV-TEVcs-Gal4, 20 ng of pAAV-CMV-Arrestin-TEVp, and 30 ng of pAAV-UAS-luciferase. For conditions with cis activation, 50 ng of pCAG-CAG-Sender-pre-mGRASP was also included. For each condition, plasmid DNA was mixed with 2.5 \u03bcL Lipofectamine2000 in 50 \u03bcL serum-free DMEM and incubated at room temperature for 20 min. The DNA-Lipofectamine2000 mix was then added directly to each well. Cells were then incubated for 4 hr in a 37\u00b0C incubator. Cells were then lifted using 100 \u03bcL Trypsin and resuspended in complete media and pelleted by centrifugation for 3 min at 200 g. Cells were then replated into 96-well white, clear-bottom microplates at a density of 20,000 cells/well. Plates were wrapped in aluminum foil and incubated for an additional 12 hr in a 37\u00b0C incubator.\n\nFor light stimulation, cells were exposed to an LED light array (467 nm, 60 mW/cm2, 1 s of light every 3 s) at 37\u00b0C for 10 min. After light stimulation, the plate was rewrapped in aluminum foil and incubated for an additional 8 hr in a 37\u00b0C incubator.\n\nFor luciferase reporter measurements, the Bright-Glo Luciferase Assay System (Promega) was used. The Bright-Glo reagent was thawed at room temperature 1 hr prior to use. Media was aspirated from each well, and each well was then washed with 100 \u03bcL DPBS. Next, 50 \u03bcL DPBS and 50 mL Bright-Glo reagent were added to each well. Luminescence was analyzed 3 min later at 25\u00b0C on a plate reader (Tecan Infinite M1000 Pro) using a 1000 ms acquisition time, the Green-1 filter, and linear shaking for 3 s.\n\n### HEK293T co-culture for trans assays\n\nFor trans assays using HEK293T cells, cells were cultured in 24-well plates as described above. Receiver cells were transfected with 70 ng of pAAV-CMV-CCR6-eLOV-TEVcs-Gal4, 20 ng of pAAV-CMV-Arrestin-TEVp, and 30 ng of pAAV-UAS-luciferase. Sender cells were transfected with 50 ng of pCAG-CAG-CCL20-pre-mGRASP. For each condition, plasmid DNA was mixed with 2.5 \u03bcL Lipofectamine2000 in 50 \u03bcL serum-free DMEM and incubated at room temperature for 20 min. The DNA-Lipofectamine2000 mix was then added directly to each well. Cells were then incubated for 4 hr in a 37\u00b0C incubator. Cells were then lifted using 100 \u03bcL Trypsin and resuspended in complete media and pelleted by centrifugation for 3 min at 200 g, and further washed with DPBS twice. Receiver and sender cells were mixed at a 1:1 ratio and cells were then replated into 96-well white, clear-bottom microplates at a density of 20,000 cells/well. Plates were wrapped in aluminum foil and incubated for an additional 12 hr in a 37\u00b0C incubator. The luciferase reporter assay was performed as described above.\n\n### Lentivirus generation and HEK293T co-culture for trans assays via lentivirus\n\nTo generate lentivirus, HEK293T cells were cultured in T75 flasks and transfected at approximately 70% confluency with 7500 ng of the lentiviral vector of interest and packaging plasmids pCMV-dR8.91 (6750 ng) and pCMV-VSV-G (750 ng) with 75 \u00b5L of polyethyleneimine (PEI, 1 mg/mL; Polysciences). Approximately 72 hr after transfection, the cell medium was collected, centrifuged for 3 min at 300 g to remove cell debris, and filtered through a 0.45 \u00b5m filter. Filtered media containing lentivirus was then centrifuged at 3000 g in 100 K Millipore Amicon Filters until concentrated approximately fourfold, and then aliquoted into 0.5 mL aliquots, flash-frozen in liquid nitrogen, and stored at \u201380\u00b0C. Prior to infection, viral aliquots were thawed at 37\u00b0C.\n\nFor lentivirus trans assays in HEK293T cells, cells were cultured in 12-well plates coated with 50 \u03bcg/mL fibronectin in DPBS for at least 20 min at room temperature before plating. Cells were infected with lentivirus at approximately 30% confluency. Receiver cells were infected with 100 \u00b5L of concentrated pLX208-CMV-CCR6-eLOV-TEVcs-Gal4, 50 \u00b5L of pLX208-CMV-Arrestin-TEVp, and 50 \u00b5L of pLX208-UAS-mCherry. Sender cells were infected with 100 \u00b5L of pLX208-CMV-CCL20-pre-mGRASP. Cells were wrapped in aluminum foil to protect them from light and incubated for 48 hr in a 37\u00b0C incubator. After 48 hr, cells were lifted and co-plated under red light to not expose cells to white/blue light. Cells were lifted using 500 \u03bcL Trypsin, resuspended in complete media, and pelleted by centrifugation for 3 min at 300 g. Receiver and sender cells were resuspended in complete media and mixed at a 1:1 ratio and cells were then replated onto fibronectin-coated glass coverslips in 24-well plates at a density of 200,000 cells/well. Plates were wrapped in aluminum foil and incubated for an additional 18 hr in a 37\u00b0C incubator. The mCherry reporter assay was performed as described above, with the additional use of RFP-Booster AlexaFluor 568 (Chromotek) for amplifying mCherry signal.\n\n### AAV1/2 production in HEK293T\n\nTo generate supernatant AAV, HEK293T cells were cultured in T25 flasks and transfected at approximately 70% confluency with 900 ng of the AAV vector containing the gene of interest and AAV packaging/helper plasmids AAV1 (450 ng), AAV2 (450 ng), and DF6 (1800 ng) with 25 \u03bcL PEI in water (pH 7.3, 1 mg/mL) in serum-free media. After 48 hr, the cell medium containing the AAV was harvested and filtered using a 0.45 \u03bcm filter.\n\n### Luciferase assays with neuron culture\n\nPrimary rat cortical neurons were harvested and cultured in 48-well plates as described above. At DIV5, supernatant AAV1/2 generated as described above were added to each well as follows. For expression of receiver constructs, 50 \u03bcL of AAV1/2 encoding pAAV-Syn-CCR6-eLOV-TEVcs-tTA, 20 \u03bcL of AAV1/2 encoding pAAV-Syn-Arrestin-TEVp, and 20 \u03bcL of AAV1/2 encoding pAAV-TRE-luciferase were added directly to the well. For conditions with cis activation, 50 \u03bcL of AAV1/2 encoding pAAV-Syn-CCL20-pre-mGRASP was also added to the well. After the media change on DIV8, plates were wrapped in aluminum foil. At DIV10, cells were exposed to an LED light array (467 nm, 60 mW/cm2, 1 s of light every 3 s) at 37\u00b0C for 10 min. After light stimulation, the plate was rewrapped in aluminum foil and incubated for an additional 24 hr in a 37\u00b0C incubator.\n\nFor luciferase reporter measurements, the Bright-Glo Luciferase Assay System (Promega) was used. The Bright-Glo reagent was thawed at room temperature 1 hr prior to use. Media was aspirated from each well, and each well was then washed with 200 \u03bcL DPBS. Next, 50 \u03bcL DPBS and 50 mL Bright-Glo reagent were added to each well, and the resulting lysates were transferred to 96-well white, clear-bottom microplates. Luminescence was analyzed at 25\u00b0C on a plate reader (Tecan Infinite M1000 Pro) using a 1000 ms acquisition time, the Green-1 filter, and linear shaking for 3 s.\n\n### Neuron and HEK293T co-culture\n\nPrimary rat cortical neurons and HEK293T cells were cultured as described above. For co-culture assays with sender neurons and receiver HEK293T cells, 50 \u03bcL of AAV1/2 encoding pAAV-Syn-CCL20-pre-mGRASP was added to neurons at DIV5. At DIV9, HEK293T cells were separately transfected with 70 ng of pAAV-CMV-CCR6-eLOV-TEVcs-Gal4, 20 ng of pAAV-CMV-Arrestin-TEVp, and 30 ng of pAAV-UAS-luciferase, as described above. After 4 hr, HEK293T cells were then lifted using 100 \u03bcL Trypsin and resuspended in complete media and pelleted by centrifugation for 3 min at 200 g, and further washed with DPBS twice. HEK293T cells were then resuspended in complete neuronal media and added directly to the neuron culture at a density of 5000 cells/well for a 48-well plate or 10,000 cells/well for a 24-well plate; plates were then wrapped in aluminum foil. At DIV10, cells were exposed to an LED light array (467 nm, 60 mW/cm2, 1 s of light every 3 s) at 37\u00b0C for 10 min. After light stimulation, the plate was rewrapped in aluminum foil and incubated for an additional 8 hr in a 37\u00b0C incubator. The luciferase reporter assay was performed as described above.\n\nFor co-culture assays with receiver neurons and sender HEK293T cells, 50 \u03bcL of AAV1/2 encoding pAAV-Syn-CCR6-eLOV-TEVcs-tTA, 20 \u03bcL of AAV1/2 encoding pAAV-Syn-Arrestin-TEVp, and 20 \u03bcL of AAV1/2 encoding pAAV-TRE-luciferase were added to neurons at DIV5. At DIV9, HEK293T cells were separately transfected with 50 ng of pCAG-CAG-CCL20-pre-mGRASP, as described above. After 4 hr, HEK293T cells were then lifted using 100 \u03bcL Trypsin and resuspended in complete media and pelleted by centrifugation for 3 min at 200 g, and further washed with DPBS twice. HEK293T cells were then resuspended in complete neuronal media and added directly to the neuron culture at a density of 5000 cells/well for a 48-well plate or 10,000 cells/well for a 24-well plate; plates were then wrapped in aluminum foil. At DIV10, cells were exposed to an LED light array (467 nm, 60 mW/cm2, 1 s of light every 3 s) at 37\u00b0C for 10 min. After light stimulation, the plate was rewrapped in aluminum foil and incubated for an additional 24 hr in a 37\u00b0C incubator. The luciferase reporter assay was performed as described above.\n\n### Cell culture fixation, staining, and confocal imaging\n\nFor immunofluorescence experiments, cells were cultured, transfected, infected, and/or co-plated as described above. pAAV-UAS-mCherry and pAAV-TRE-mCherry were used in place of pAAV-UAS-luciferase and pAAV-TRE-luciferase. After incubation for the indicated times post-stimulation, cell cultures or co-cultures were fixed with 4% (v/v) paraformaldehyde diluted in serum-free media and 20% (v/v) 5\u00d7 PHEM buffer (300 mM PIPES, 125 mM HEPES, 50 mM EGTA, 10 mM MgCl2, 0.6 M sucrose, pH 7.3) for 10 min. The solution was removed and cells were then permeabilized with cold methanol at 4\u00b0C for 10 min. Cells were then washed three times with PBS and blocked in 1% BSA (w/v) in PBS for 30 min at room temperature. Cells were incubated with primary antibody in 1% BSA (w/v) in PBS for 3 hr at room temperature. After washing three times with PBS, cells were incubated with DAPI, secondary antibodies, and neutravidin-AlexaFluor 647 in 1% BSA (w/v) in PBS for 1 hr at room temperature. Cells were then washed with PBS three times, mounted onto glass slides, and imaged by confocal fluorescence microscopy. Confocal imaging was performed with a Zeiss AxioObserver inverted microscope with a 20\u00d7 air objective, and 40\u00d7 and 63\u00d7 oil-immersion objectives. The following combinations of laser excitation and emission filters were used for various fluorophores: DAPI (405 nm laser excitation, 445/40 nm emission), AlexaFluor 488 (491 nm laser excitation, 528/38 nm emission), AlexaFluor 568 (561 nm laser excitation, 617/73 nm emission), and AlexaFluor 647 (647 nm laser excitation, 680/30 nm emission). All images were collected with SlideBook (Intelligent Imaging Innovations) and processed with ImageJ.\n\n### Neuron and DIPG co-culture\n\nPrimary rat cortical neurons and SU-DIPG-VI cells were cultured as described above. For co-culture assays with sender neurons and receiver SU-DIPG-VI cells, 50 \u03bcL of AAV1/2 encoding pAAV-Syn-CCL20-pre-mGRASP was added to neurons at DIV5. For subsequent media changes after neuron infection with AAV, complete neuronal media without serum was used instead. At DIV9, stable DIPG cells expressing receiver constructs were dissociated using TrypLE and then pelleted by centrifugation for 3 min at 200 g, and further washed with DPBS twice. DIPG cells were then resuspended in complete neuronal media without serum and added directly to the neuron culture at a density of 10,000 cells/well for a 24-well plate; plates were then wrapped in aluminum foil. At DIV11, cells were exposed to an LED light array (467 nm, 60 mW/cm2, 1 s of light every 3 s) at 37\u00b0C for 10 min. After light stimulation, the plate was rewrapped in aluminum foil and incubated for an additional 24 hr in a 37\u00b0C incubator. Cells were then fixed and immunostained as described above.\n\n### Specificity and sensitivity analysis for HEK293T trans assay\n\nFor specificity analysis of imaging data in Figure 2C-E, an ROI was generated for each V5-positive cell (receiver). The average pixel intensities in each channel for each manually drawn ROI were measured. Pixel intensities were corrected for background by subtracting the average pixel intensities of 50 V5-, mCherry-, and HA-negative cells for each channel. Measurements for each ROI were separated into either V5-positive cells in contact (n = 106 cells) with an HA-positive (sender) cell or not in contact (n = 108 cells), and the mCherry/V5 signal ratios were plotted (Figure 2E).\n\nFor sensitivity analysis of imaging data in Figure 2C\u2013E, the mCherry signal in V5-positive (receiver) cells in contact with an HA-positive (sender) cell were measured as described above. Cells were considered mCherry-positive if the signal was greater than 1.5-fold over background, as determined from V5-negative cells. From this analysis, 80.2% of V5-positive cells in contact with an HA-positive cell showed TRACC activation and mCherry expression (n = 106 cells from 50 FOVs).\n\n### Colocalization analysis of sender construct\n\nSender construct colocalization with endogenous synapsin expression in neurons (Figure 3\u2014figure supplement 1B-C) was quantified using the Coloc2 test for image colocalization in Fiji (Schindelin et al., 2012), which measures the correlation of pixel intensity at each location to compare HA and synapsin intensity levels.\n",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "2f2fbd73-ca6e-4649-948c-0b5af14f7c7f",
+      "submission_id": "5bf99100-f36e-4f39-8123-06bfa486831d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Volker D\u00f6tsch, https://ror.org/04cvxnb49 Goethe University Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70881.sa0](https://doi.org/10.7554/eLife.70881.sa0)\n\nThis manuscript describes engineering of a new system (TRACC) for marking cells that have come into contact with another population of cells. In contrast with previous systems, TRACC is gated temporally and spatially by blue light application. The system comprises a GPCR and ligand that interact at the surface of the two cells, as well as a TEV protease-arrestin fusion that gets recruited following the interaction. The GCPR is fused to a LOV light sensitive domain, a LOV-masked TEV cleavage site and transcriptional activator. TEV cleavage, in the presence of a sender cell and light, releases a transcriptional activator to drive expression of a reporter transgene in the receiver cell. This system provides a new tool for studying cell-cell contacts.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Volker D\u00f6tsch, https://ror.org/04cvxnb49 Goethe University Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70881.sa1](https://doi.org/10.7554/eLife.70881.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A light-gated transcriptional recorder for detecting cell-cell contacts\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Volker D\u00f6tsch as Reviewing Editor and Reviewer #2, and the evaluation has been overseen by a Reviewing Editor and Philip Cole as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) There is no quantification of the detection of neuron-glioma cell interactions in Figure 4 as there is for the other experiments.\n\n2) The authors note that about 80% of cells in contact light up above background, and that some cells not in contact also light up. But \"above background\" is not defined, nor is what they mean by \"some\" cells. The data presented in Figure 2E indicate a shift in the distribution as claimed, but a bit more precision in the analysis would be beneficial. It might help to present the data as a violin or box-whisker plot. In addition, the false discovery rate should be assessed.\n\n3) This assay is affinity based, unlike biotin ligase strategies. Therefore, in principle, it might force, rather than detect, interactions between cells. Have the authors seen evidence or such a thing? It would be nice to include data addressing this concern, or cite appropriate evidence assessing this previously with other similar detection strategies.\n\n4) When describing alternative methods that have been published already the authors say that TRACT, transTango, and BAcTrace have been tested only in Drosophila cells. This is not necessarily a disadvantage. The authors should say why they think that showing a method for cell-cell contacts in Drosophila cells is a disadvantage or remove that statement.\n\nReviewer #1:\n\nCho and colleagues report the engineering of a light-gated transcriptional reporter of cell-cell contacts (TRACC). The system comprises a GPCR and ligand that interact at the surface of the two cells, as well as a TEV protease-arrestin fusion that gets recruited following the interaction. The GCPR is fused to a LOV light sensitive domain, a LOV-masked TEV cleavage site and transcriptional activator. TEV cleavage, in the presence of a sender cell and light, releases a transcriptional activator to drive expression of a reporter transgene in the receiver cell.\n\nIn general, the paper is well-written, and the figures clearly explain the experiments and results.\n\nTRACC is closely related to previous tools from this group, although the permutation described here is novel. It does not seem to perform as well as their other related tools, with higher false positive and false negative rates (~20% each). They also do not really demonstrate the advantage of including a light gate. Although they argue that the light gating provides higher contrast, I can see applications where the requirement for light delivery would make tool use more problematic. There are no real biological applications of the tool presented here.\n\nReviewer #2:\n\nCho et al., describe the adaption of their previously developed methods SPARK and SPARK2 that detect protein-protein contacts to the detection of cell-cell contacts. The system is elegantly designed and has the advantage that it requires the integration of two independent activation signals. The presence of a ligand for a receptor is not enough, in addition a light stimulus has to occur that results in the proteolytic cleavage of a linker that tethers a transcription factor to the receptor.\n\nThe expansion of their previously published method is well designed. The author show the functionality of their system on different cellular systems including HEK293T cells, neurons and neuron-glioma cell contacts.\n\nReviewer #3:\n\nI think this paper describes an interesting method. It also adds an interesting proof-of-principle regarding the detection of neuron-glioma cell interactions. The method is based on a previously described light-gated reporter of GPCR activation (SPARC) combined with a trans-tethered agonist (trans-Tango). In general the data appear solid and interpretation appears reasonable.\n\nOverall I think this is a strong paper, but I do have a couple of specific concerns:\n\n1. The authors note that about 80% of cells in contact light up above background, and that some cells not in contact also light up. But \"above background\" is not defined, nor is what they mean by \"some\" cells. The data presented in Figure 2E indicate a shift in the distribution as claimed, but I suggest a bit more precision in the analysis. It might help to present the data as a violin or box-whisker plot. Also, is it possible to include something like a false discovery rate assessment?\n\n2. This assay is affinity based, unlike biotin ligase strategies. Therefore, in principle, it might force, rather than detect, interactions between cells. I don't see any data testing this. Have the authors seen evidence or such a thing? It would be nice to include data addressing this concern, or cite appropriate evidence assessing this previously with other similar detection strategies.\n",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2c3c479c-874a-42ae-a93f-fef7087298a2",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C1",
+      "claim": "TRACC is a GPCR-based transcriptional recorder of cellular contacts that converts contact events into stable transgene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report TRACC (Transcriptional Readout Activated by Cell-cell Contacts), a GPCR-based transcriptional recorder of cellular contacts, which converts contact events into stable transgene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary description of the tool presented in the abstract, supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "6a23a040-2459-4af3-a744-1804132362a1",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C2",
+      "claim": "TRACC is derived from SPARK and SPARK2.",
+      "claim_type": "EXPLICIT",
+      "source": "TRACC is derived from our previous protein-protein interaction recorders, SPARK (Kim et al., 2017) and SPARK2 (Kim et al., 2019), reported in this journal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous publications describing SPARK and SPARK2.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "2214df24-aeb1-4b3e-85cf-09defb4fb20d",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C3",
+      "claim": "TRACC incorporates light gating via the light-oxygen-voltage-sensing (LOV) domain.",
+      "claim_type": "EXPLICIT",
+      "source": "TRACC incorporates light gating via the light-oxygen-voltage-sensing (LOV) domain, which provides user-defined temporal control of tool activation and reduces background.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated experimentally throughout the manuscript with light-dependent activation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "52c153a4-5304-4c4a-8fe8-70ee6b0292c1",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C4",
+      "claim": "The LOV domain provides user-defined temporal control of tool activation and reduces background.",
+      "claim_type": "EXPLICIT",
+      "source": "TRACC incorporates light gating via the light-oxygen-voltage-sensing (LOV) domain, which provides user-defined temporal control of tool activation and reduces background.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing light-dependent activation and comparison with constructs lacking LOV domain.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "3d128aa5-256c-4ba1-aa9a-b3490304f49b",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C5",
+      "claim": "TRACC detects cell-cell contacts with high specificity and sensitivity in mammalian cell culture.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that TRACC detects cell-cell contacts with high specificity and sensitivity in mammalian cell culture and that it can be used to interrogate interactions between neurons and glioma, a form of brain cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative data in Figure 2E showing 80.0% specificity and 80.2% sensitivity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "f31d9785-5b8f-4372-86a1-add21dbbcd4f",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C6",
+      "claim": "TRACC can be used to interrogate interactions between neurons and glioma.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that TRACC detects cell-cell contacts with high specificity and sensitivity in mammalian cell culture and that it can be used to interrogate interactions between neurons and glioma, a form of brain cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated experimentally in Figure 4 with neuron-glioma co-culture experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "8d6f18a7-e275-4815-bfd7-5f7c07a877aa",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C7",
+      "claim": "Cell-cell interactions are integral to maintaining cellular and organismal homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell-cell interactions are integral to maintaining cellular and organismal homeostasis; signaling that occurs from direct physical cellular contacts mediates a diverse range of biological processes, including embryonic development, neuronal signaling, and immune-cancer interactions (Armingol et al., 2021; Dustin, 2014; Zhang and Liu, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "afb5e75b-80f3-4f7c-828a-789698926819",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C8",
+      "claim": "Signaling from direct physical cellular contacts mediates embryonic development, neuronal signaling, and immune-cancer interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell-cell interactions are integral to maintaining cellular and organismal homeostasis; signaling that occurs from direct physical cellular contacts mediates a diverse range of biological processes, including embryonic development, neuronal signaling, and immune-cancer interactions (Armingol et al., 2021; Dustin, 2014; Zhang and Liu, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "a07eb3b5-bcc5-4318-9ac4-7f43b4651922",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C9",
+      "claim": "LIPSTIC uses sortase A to catalyze labeling on the cell surface of interacting cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, LIPSTIC uses sortase A to catalyze labeling on the cell surface of interacting cells and has been applied to study T cell interactions (Pasqual et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the LIPSTIC publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "14c26568-cec8-4d2b-a381-3f723aa9a5b7",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C10",
+      "claim": "LIPSTIC has been applied to study T cell interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, LIPSTIC uses sortase A to catalyze labeling on the cell surface of interacting cells and has been applied to study T cell interactions (Pasqual et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the LIPSTIC publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "b3ba9a37-40c6-47d4-94e8-cbbe4ba08ac9",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C11",
+      "claim": "The biotin ligase BirA and lipoic acid ligase LplA have been engineered for labeling across synaptic contacts to visualize neuronal synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the biotin ligase BirA and lipoic acid ligase LplA have been engineered for labeling across synaptic contacts to visualize neuronal synapses (Liu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "2dc424dc-bce9-42f5-a620-dc83bdc49202",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C12",
+      "claim": "Split forms of horseradish peroxidase (HRP) have been engineered to perform both extracellular and intracellular labeling at cell-cell contact sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Split forms of horseradish peroxidase (HRP) (Martell et al., 2016) and the biotin ligase TurboID (Cho et al., 2020; Takano et al., 2020) have also been engineered to perform both extracellular and intracellular labeling at cell-cell contact sites; mGRASP (Kim et al., 2011) and SynView (Tsetsenis et al., 2014) reconstitute GFP across neuronal synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "2a070e73-83f2-4578-b850-e4dfd90f2068",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C13",
+      "claim": "Split forms of the biotin ligase TurboID have been engineered to perform both extracellular and intracellular labeling at cell-cell contact sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Split forms of horseradish peroxidase (HRP) (Martell et al., 2016) and the biotin ligase TurboID (Cho et al., 2020; Takano et al., 2020) have also been engineered to perform both extracellular and intracellular labeling at cell-cell contact sites; mGRASP (Kim et al., 2011) and SynView (Tsetsenis et al., 2014) reconstitute GFP across neuronal synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "20aedba6-322d-4b43-84e5-fc89ab4b466e",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C14",
+      "claim": "mGRASP reconstitutes GFP across neuronal synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Split forms of horseradish peroxidase (HRP) (Martell et al., 2016) and the biotin ligase TurboID (Cho et al., 2020; Takano et al., 2020) have also been engineered to perform both extracellular and intracellular labeling at cell-cell contact sites; mGRASP (Kim et al., 2011) and SynView (Tsetsenis et al., 2014) reconstitute GFP across neuronal synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "99751672-a857-4266-ac42-80eca59c79eb",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C15",
+      "claim": "SynView reconstitutes GFP across neuronal synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Split forms of horseradish peroxidase (HRP) (Martell et al., 2016) and the biotin ligase TurboID (Cho et al., 2020; Takano et al., 2020) have also been engineered to perform both extracellular and intracellular labeling at cell-cell contact sites; mGRASP (Kim et al., 2011) and SynView (Tsetsenis et al., 2014) reconstitute GFP across neuronal synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "e8088678-fa93-4381-9fc8-8b9aedf13866",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C16",
+      "claim": "Direct visualization of cellular contacts is useful, but it is often desirable to also highlight the entire contacting cell for further characterization.",
+      "claim_type": "EXPLICIT",
+      "source": "While direct visualization of cellular contacts is useful, it is often desirable to also highlight the entire contacting cell, so that cell anatomy, transcriptomic signature, and functional properties can be further characterized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reasoning statement that motivates the development of transcriptional reporter tools.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "8b8d923a-d1f0-467c-89ce-c410f88bbd5e",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C17",
+      "claim": "synNotch is a Notch-based system that results in the release of an orthogonal transcription factor in the receiver cell after contact with a sender cell.",
+      "claim_type": "EXPLICIT",
+      "source": "These include the Notch-based systems synNotch (Morsut et al., 2016) and TRACT (Huang et al., 2017), and the GPCR-based system trans-Tango (Talay et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published work and the context describing TF-based tools.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "2d01d054-8d67-43de-b1f3-50c852c7cbd0",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C18",
+      "claim": "TRACT is a Notch-based system that results in the release of an orthogonal transcription factor in the receiver cell after contact with a sender cell.",
+      "claim_type": "EXPLICIT",
+      "source": "These include the Notch-based systems synNotch (Morsut et al., 2016) and TRACT (Huang et al., 2017), and the GPCR-based system trans-Tango (Talay et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published work and the context describing TF-based tools.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "d92a5dcc-87a1-4528-a338-66ade046a9c4",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C19",
+      "claim": "trans-Tango is a GPCR-based system that results in the release of an orthogonal transcription factor in the receiver cell after contact with a sender cell.",
+      "claim_type": "EXPLICIT",
+      "source": "These include the Notch-based systems synNotch (Morsut et al., 2016) and TRACT (Huang et al., 2017), and the GPCR-based system trans-Tango (Talay et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published work and the context describing TF-based tools.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "4b34150a-f8d2-4149-aafb-d81872cba7be",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C20",
+      "claim": "In BAcTrace, the botulinum neurotoxin is transferred to the receiver cell, which results in proteolytic release of a transcription factor.",
+      "claim_type": "EXPLICIT",
+      "source": "in BAcTrace, the botulinum neurotoxin is transferred to the receiver cell, which also results in proteolytic release of a TF (Cachero et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "c204ddb2-cdf1-42ec-ad18-377359506de5",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C21",
+      "claim": "In G-baToN, a fluorescent protein is transferred to the receiver cell, which labels the receiver cell.",
+      "claim_type": "EXPLICIT",
+      "source": "while in G-baToN, a fluorescent protein is transferred, which labels the receiver cell (Tang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "18e5e376-5724-4cf4-abce-cdda67ab1220",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C25",
+      "claim": "TRACC is comprised of four components.",
+      "claim_type": "EXPLICIT",
+      "source": "TRACC is comprised of four components, as shown in Figure 1A\u2013B.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and illustrated in Figure 1A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "3bda81b4-7867-44e8-9ced-6026b6d072d4",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C26",
+      "claim": "On the sender cell, a ligand is presented on the cell surface by fusion to pre-mGRASP.",
+      "claim_type": "EXPLICIT",
+      "source": "On the sender cell, a ligand is presented on the cell surface by fusion to pre-mGRASP, a construct that contains the transmembrane domain of CD4 and the intracellular domain of the pre-synaptic protein neurexin (Kim et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "b6dd2c51-9f59-4cf5-9b9f-2c3c346ee767",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C27",
+      "claim": "pre-mGRASP contains the transmembrane domain of CD4 and the intracellular domain of the pre-synaptic protein neurexin.",
+      "claim_type": "EXPLICIT",
+      "source": "On the sender cell, a ligand is presented on the cell surface by fusion to pre-mGRASP, a construct that contains the transmembrane domain of CD4 and the intracellular domain of the pre-synaptic protein neurexin (Kim et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "0c22cad8-d49a-4ea2-812e-6f8bc28eb5f3",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C28",
+      "claim": "On the receiver cell, a corresponding GPCR is expressed and fused to an LOV domain, a TEV cleavage site, and a transcription factor.",
+      "claim_type": "EXPLICIT",
+      "source": "On the receiver cell, a corresponding GPCR is expressed and fused to an LOV domain, a TEV cleavage site (TEVcs; ENLYFQM), and a TF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "3f6ecbc0-bcdc-481f-aa99-01c835035ecd",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C29",
+      "claim": "The receiver cell expresses arrestin fused to the TEV protease.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the receiver cell expresses arrestin fused to the TEV protease (TEVp) and a reporter construct of interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "6fe8be7c-792b-42d6-bfd4-90d94ab5469a",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C30",
+      "claim": "Upon cell-cell contact, the ligand on the sender cell activates the GPCR on the receiver cell, resulting in recruitment of arrestin-TEVp.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon cell-cell contact, the ligand on the sender cell activates the GPCR on the receiver cell, resulting in recruitment of arrestin-TEVp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the proposed mechanism shown in Figure 1A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "9e2a4551-0441-4396-9e45-91a9c2e03fcd",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C31",
+      "claim": "In the absence of light, the LOV domain cages the TEVcs, rendering it inaccessible to the TEVp.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the absence of light, the LOV domain cages the TEVcs, rendering it inaccessible to the TEVp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the proposed mechanism shown in Figure 1A and supported by light-dependent activation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "57eb6968-c143-47c3-b250-6954e57f9e60",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C32",
+      "claim": "With the addition of exogenous blue light, the LOV domain uncages, resulting in subsequent cleavage and release of a transcription factor and reporter activation.",
+      "claim_type": "EXPLICIT",
+      "source": "With the addition of exogenous blue light, the LOV domain uncages, resulting in subsequent cleavage and release of a TF and reporter activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the proposed mechanism shown in Figure 1A and supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "ad546048-c07c-48e5-aaae-375966ab5a46",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C33",
+      "claim": "TRACC is designed as an 'AND' logic gate, simultaneously requiring contact with a sender cell and exogenous blue light.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, TRACC is designed as an 'AND' logic gate, simultaneously requiring contact with a sender cell and exogenous blue light.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and demonstrated by experimental data showing both light and sender dependence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "7142ff65-b0d4-46e4-9f38-7d92c2d64052",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C34",
+      "claim": "eLOV is a previously engineered LOV domain that has improved light caging.",
+      "claim_type": "EXPLICIT",
+      "source": "To first test our design in HEK293T cells, we utilized eLOV, a previously engineered LOV domain that has improved light caging (Wang et al., 2017), and the orthogonal Gal4-UAS TF system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "07850ae8-b603-42e9-8629-84d2a9c95ca2",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C35",
+      "claim": "Six GPCR-ligand pairs were selected that are not expressed or lowly expressed in the brain according to the GTEx database.",
+      "claim_type": "EXPLICIT",
+      "source": "To ensure that TRACC would be orthogonal for eventual applications in neuroscience, we selected six GPCR-ligand pairs that are not expressed or lowly expressed in the brain according to the GTEx database (Lonsdale et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by citation to the GTEx database.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "b281c187-e7c1-46a1-a4c8-ace6a8b2a1a4",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C36",
+      "claim": "The six GPCR-ligand pairs tested are CCR3-CCL13, CCR6-CCL20, CCR7-CCL19, GHRHR-GHRH, GNRHR-GnRH, and GCGR-GCG.",
+      "claim_type": "EXPLICIT",
+      "source": "These are CCR3-CCL13, CCR6-CCL20, CCR7-CCL19, GHRHR-GHRH, GNRHR-GnRH, and GCGR-GCG, the last of which was utilized in trans-Tango (Talay et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "8f25ad26-d090-4a1a-92e4-6811e2d03070",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C37",
+      "claim": "GCGR-GCG was utilized in trans-Tango.",
+      "claim_type": "EXPLICIT",
+      "source": "These are CCR3-CCL13, CCR6-CCL20, CCR7-CCL19, GHRHR-GHRH, GNRHR-GnRH, and GCGR-GCG, the last of which was utilized in trans-Tango (Talay et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the trans-Tango publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "f55771f8-2388-498f-a611-6df247dddf5d",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C38",
+      "claim": "The CCR6-CCL20 pair showed the highest \u00b1light and \u00b1ligand signal ratios of 2.6-fold and 3.2-fold, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the GPCR-ligand pairs tested, the CCR6-CCL20 pair showed the highest \u00b1light and \u00b1ligand signal ratios (2.6- and 3.2-fold, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "087da8d6-7ba9-44ec-9c68-468634d1bf55",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C39",
+      "claim": "A construct omitting the LOV domain showed high background reporter expression and ligand-independent activation with a \u00b1ligand signal ratio of 1.1-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, we included a construct that omitted the LOV domain, a design similar to trans-Tango (Talay et al., 2017), and observed high background reporter expression and ligand-independent activation (\u00b1ligand signal ratio of 1.1-fold), suggesting that the additional light-gate is crucial for minimizing background.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "05777f2d-2b08-4e94-8915-1078aecaf241",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C40",
+      "claim": "The additional light-gate is crucial for minimizing background.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, we included a construct that omitted the LOV domain, a design similar to trans-Tango (Talay et al., 2017), and observed high background reporter expression and ligand-independent activation (\u00b1ligand signal ratio of 1.1-fold), suggesting that the additional light-gate is crucial for minimizing background.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison data showing high background without LOV domain.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "f89d028a-05bd-49c9-9bcb-60f12213ad03",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C41",
+      "claim": "In trans assays with HEK293T cells, TRACC showed \u00b1light and \u00b1sender signal ratios of 5.6-fold each.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a robust increase in luciferase reporter expression with \u00b1light and \u00b1sender signal ratios of 5.6-fold each.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "e0cf3dbd-82df-4a3b-bb97-b2357ccad4a3",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C42",
+      "claim": "TRACC was highly specific, with 80.0% of mCherry-expressing cells in direct contact with an HA-positive sender cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitation of fluorescence intensities of cells across 50 fields of view (FOVs) showed that TRACC was highly specific; of 94 mCherry-expressing cells analyzed, 80.0% were in direct contact with an HA-positive sender cell (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "5450845e-f109-412c-87cc-656b5fe29ad4",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C43",
+      "claim": "20% of mCherry-expressing cells were not in direct contact with a sender cell.",
+      "claim_type": "EXPLICIT",
+      "source": "While we did observe mCherry reporter activation in V5-positive cells not touching sender cells (20% of mCherry-expressing cells were not in direct contact with a sender cell), it is possible that these cells were previously in contact, but the sender cells were dislodged during the course of the experiment or during the washing steps in immunostaining.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "c9f9908d-6de1-4055-94ac-4b89995b5e68",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C44",
+      "claim": "Background activation may occur in cells expressing the arrestin-TEVp component at particularly high levels, which can result in GPCR activation-independent release of the transcription factor.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also possible that background activation may occur in cells expressing the arrestin-TEVp component at particularly high levels, which can result in GPCR activation-independent release of the TF (Sanchez et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation supported by citation to published work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "c12e0d4e-7e19-47f2-b70b-d4ec129e85e6",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C45",
+      "claim": "V5 intensity distributions were consistent across high-mCherry and low-mCherry populations.",
+      "claim_type": "EXPLICIT",
+      "source": "V5 intensity distributions were consistent across high-mCherry and low-mCherry populations (Figure 2\u2014figure supplement 1A), suggesting that reporter activation is sender-dependent and not a result of differential receiver expression levels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "417ae08f-08a5-4a0d-b375-0c6bed74f040",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C46",
+      "claim": "Reporter activation is sender-dependent and not a result of differential receiver expression levels.",
+      "claim_type": "EXPLICIT",
+      "source": "V5 intensity distributions were consistent across high-mCherry and low-mCherry populations (Figure 2\u2014figure supplement 1A), suggesting that reporter activation is sender-dependent and not a result of differential receiver expression levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the V5 intensity distribution data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "d6fa9374-42c5-4ec0-8ed3-4ebb77ede3bf",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C47",
+      "claim": "80.2% of receiver cells in contact with sender cells showed reporter expression above background.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess sensitivity, we determined that 80.2% of receiver cells in contact with sender cells showed reporter expression above background (n = 106 cells from 50 FOVs; above background defined as having a fluorescence signal 1.5-fold or greater above a blank region).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text based on quantitative analysis of imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "ba38f772-84ac-4c22-a953-8b2005e0ff57",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C50",
+      "claim": "Contacting cells that do not turn on transcription factor may lack one of the other two receiver components (arrestin-TEVp or UAS-mCherry) that need to be co-transfected into the same cell for TRACC to function.",
+      "claim_type": "EXPLICIT",
+      "source": "One possible explanation for contacting cells that do not turn on TF is that they may lack one of the other two receiver components (arrestin-TEVp or UAS-mCherry) that need to be co-transfected into the same cell for TRACC to function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the experimental design.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "bfb0be3c-2944-4d99-8b31-ff464386cc86",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C51",
+      "claim": "TRACC can be delivered via lentivirus transduction and shows sender- and light-dependent reporter activation.",
+      "claim_type": "EXPLICIT",
+      "source": "We also performed this experiment using lentivirus transduction instead of transient transfection and similarly observed sender- and light-dependent reporter activation (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "acf17d91-b036-423c-b6ca-857a13f31f4d",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C53",
+      "claim": "The CCR6 and arrestin receiver components trafficked to neuronal processes as expected.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we verified that the individual constructs expressed and localized as expected in primary rat cortical neuron culture; we were able to detect the CCR6 and arrestin receiver components and observed that these constructs trafficked to neuronal processes as expected (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "74a290ff-ed8d-4dd5-8903-af25f71ac57d",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C54",
+      "claim": "The CCL20 sender construct localized properly to pre-synaptic terminals via colocalization with endogenous synapsin.",
+      "claim_type": "EXPLICIT",
+      "source": "We also verified that the CCL20 sender construct localized properly to pre-synaptic terminals via colocalization with endogenous synapsin (Figure 3\u2014figure supplement 1B-C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3\u2014figure supplement 1B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "bd6c96f7-4ebc-41be-bc65-9b92f9bdc413",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C55",
+      "claim": "Deletion of the intracellular neurexin domain disrupted the targeting specificity of the sender construct.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of the intracellular neurexin domain disrupted its targeting specificity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3\u2014figure supplement 1B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "7155edf2-4a60-4536-abd3-81f09ba45655",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C56",
+      "claim": "In neuron culture with cis expression, TRACC showed \u00b1light and \u00b1ligand signal ratios of 11.4- and 7.5-fold, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 24 hr after 10 min blue light stimulation, we measured luciferase reporter levels on a plate reader and observed robust activation of the TRE-luciferase reporter with high \u00b1light and \u00b1ligand signal ratios of 11.4- and 7.5-fold, respectively (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "5d963084-152b-4fe3-9eb0-1158d53b2b6a",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C57",
+      "claim": "In co-culture with HEK293T receiver cells and neuron sender cells, TRACC showed \u00b1light and \u00b1sender signal ratios of 4.2- and 3.2-fold, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In the luciferase assay, we detected light- and sender-dependent gene expression, with \u00b1light and \u00b1sender signal ratios of 4.2- and 3.2-fold, respectively (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "dfad787b-5ab1-460e-9d8e-d9773d3e429e",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C58",
+      "claim": "High-grade gliomas are lethal brain cancers and the leading cause of brain tumor death in both children and adults.",
+      "claim_type": "EXPLICIT",
+      "source": "High-grade gliomas are lethal brain cancers and the leading cause of brain tumor death in both children and adults (Johung and Monje, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "b6dc5a2e-573e-4240-af20-22be36376e4b",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C59",
+      "claim": "Neuronal interactions with glioma cells drive glioma progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have shown that neuronal interactions with glioma cells drive glioma progression (Pan et al., 2021; Venkatesh et al., 2019; Venkatesh et al., 2017; Venkatesh et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "6e8f458b-b3f4-4647-96c3-c3815fba5f4f",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C60",
+      "claim": "Gliomas integrate into neural circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Gliomas integrate into neural circuits, and one key mechanism driving glioma progression is signaling through functional neuron-to-glioma synapses (Venkataramani et al., 2019; Venkatesh et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "c8c3c3cc-5775-4546-b2ac-7cd2958a5777",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C61",
+      "claim": "One key mechanism driving glioma progression is signaling through functional neuron-to-glioma synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Gliomas integrate into neural circuits, and one key mechanism driving glioma progression is signaling through functional neuron-to-glioma synapses (Venkataramani et al., 2019; Venkatesh et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "ff5b1114-9fc9-49f7-a434-b701d79761ac",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C62",
+      "claim": "In neuron-to-glioma synapses, pre-synaptic neurons communicate electrochemically to post-synaptic glioma cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In these connections, pre-synaptic neurons communicate electrochemically to post-synaptic glioma cells, and the consequent inward current promotes glioma cell proliferation through membrane voltage-sensitive mechanisms (Venkatesh et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "d75a7be3-8e51-44e4-bec8-2a5aa4243cab",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C63",
+      "claim": "The inward current from neuron-to-glioma synapses promotes glioma cell proliferation through membrane voltage-sensitive mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "In these connections, pre-synaptic neurons communicate electrochemically to post-synaptic glioma cells, and the consequent inward current promotes glioma cell proliferation through membrane voltage-sensitive mechanisms (Venkatesh et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "8764f27b-772e-4281-8ddc-eda92d81a3ba",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C64",
+      "claim": "SU-DIPG-VI cells stably expressing TRACC components exhibited low sensitivity initially.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that SU-DIPG-VI cells stably expressing TRACC components exhibited low sensitivity; only a small fraction of cells showed mCherry reporter expression upon activation of TRACC with recombinant ligand and exogenous blue light (Figure 4A; Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4A and Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "ef1794bb-22a4-4291-95b9-b8eb516c5039",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C65",
+      "claim": "eLOV in combination with uTEV2 showed the highest sensitivity in SU-DIPG-VI cells.",
+      "claim_type": "EXPLICIT",
+      "source": "From screening the SU-DIPG-VI cell lines expressing the different combinations of LOV and TEVp, we found that eLOV in combination with uTEV2 showed the highest sensitivity (Figure 4A; Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4A and Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "9daf509f-71c7-4be9-a757-b7559c803002",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C66",
+      "claim": "The optimized TRACC activation in DIPG cells was highly specific and required the presence of both recombinant ligand and blue light.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, while the proportion of cells that became activated increased, this activation was still highly specific and required the presence of both recombinant ligand and blue light (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "ac57b8ed-447e-47fb-9efe-37f179b53353",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C67",
+      "claim": "In co-culture with DIPG receiver cells and neuron sender cells, robust activation of the mCherry reporter was observed only in the presence of both light and sender expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In this assay, we observed robust activation of the mCherry reporter only in the presence of both light and sender expression in sender neurons (Figure 4C; Figure 4\u2014figure supplement 1B), demonstrating the potential to map neuron-glioma cell-cell contact interactions in patient-derived glioma model systems.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4C and Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "2da0e9ac-4628-4244-b298-f555257cec09",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C68",
+      "claim": "TRACC demonstrates the potential to map neuron-glioma cell-cell contact interactions in patient-derived glioma model systems.",
+      "claim_type": "EXPLICIT",
+      "source": "In this assay, we observed robust activation of the mCherry reporter only in the presence of both light and sender expression in sender neurons (Figure 4C; Figure 4\u2014figure supplement 1B), demonstrating the potential to map neuron-glioma cell-cell contact interactions in patient-derived glioma model systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text based on the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "0c64db54-40ea-4f7e-8757-bffe0f3d8108",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C69",
+      "claim": "Compared to tools that directly label contact sites, TRACC provides genetic access to contacting cell populations for downstream analysis and potential manipulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to tools that directly label contact sites such as LIPSTIC (Pasqual et al., 2018), split-HRP (Martell et al., 2016), and mGRASP (Kim et al., 2011), TRACC provides genetic access to contacting cell populations for downstream analysis and potential manipulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison statement based on the design of TRACC.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "62595974-e311-403d-ad74-699e1b3f2f46",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C70",
+      "claim": "In comparison to synNotch and trans-Tango, the incorporation of light gating in TRACC substantially reduces background signal and provides temporal specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in comparison to other TF-based tools like synNotch (Morsut et al., 2016) and trans-Tango (Talay et al., 2017), the incorporation of light gating in TRACC substantially reduces background signal and provides temporal specificity for detecting cell-cell contacts during user-defined time windows.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison statement supported by the experimental data showing light-dependent activation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "2f90ce34-9000-4c6a-bef2-1aa5084d7669",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C71",
+      "claim": "The sender construct localizes properly to pre-synaptic terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "We further showed that TRACC can be applied to detect cellular contacts in both neuron and glioma systems, and that the sender construct localizes properly to pre-synaptic terminals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and shown in Figure 3\u2014figure supplement 1B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "cbe9b7b6-c1b9-4e02-a138-eecdb8c18128",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C72",
+      "claim": "TRACC may be useful for synapse-specific tracing, particularly in the anterograde direction (pre-synaptic to post-synaptic).",
+      "claim_type": "EXPLICIT",
+      "source": "In future studies, TRACC may be useful for synapse-specific tracing, particularly in the anterograde direction (pre-synaptic to post-synaptic) for which tools are currently lacking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "bc1d3829-bf66-47d7-89c1-3a4778321896",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C73",
+      "claim": "Tools for anterograde synapse-specific tracing are currently lacking.",
+      "claim_type": "EXPLICIT",
+      "source": "In future studies, TRACC may be useful for synapse-specific tracing, particularly in the anterograde direction (pre-synaptic to post-synaptic) for which tools are currently lacking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "bbc2f144-b401-4fb1-a19e-b2997dd9c068",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C74",
+      "claim": "TRACC will require careful validation of component localization in vivo and testing of specificity and sensitivity in a well-characterized circuit in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "This will first require careful validation of TRACC component localization in vivo and testing of TRACC specificity and sensitivity in a well-characterized circuit in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future work needed.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "9cecc464-c3be-418d-b71a-d3a6a6e74621",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "claim_id": "C75",
+      "claim": "TRACC may be useful for future investigations of neuron-glioma circuitry, allowing identification and subsequent analysis of connected subpopulations.",
+      "claim_type": "EXPLICIT",
+      "source": "TRACC may also be useful for future investigations of neuron-glioma circuitry, allowing identification and subsequent analysis of connected subpopulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "38a33437-953e-4ac5-a1e7-76ce9e14beef",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "TRACC is a GPCR-based transcriptional recorder that detects cell-cell contacts through an 'AND' logic gate requiring both ligand-GPCR interaction and blue light activation. The tool comprises four components: a ligand-pre-mGRASP sender construct, a GPCR-LOV-TEVcs-TF receiver construct, an arrestin-TEVp construct, and a reporter construct.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C33 provide a clear mechanistic description supported by Figure 1A-B. The design builds logically on prior SPARK tools (C2) with the addition of LOV domain light-gating (C3-C4). The experimental data throughout the manuscript consistently demonstrate both light- and sender-dependent activation, validating the AND gate logic (C33).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "644402bc-d1b1-4ffb-8902-5fcdc8bce849",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Screening of six GPCR-ligand pairs in HEK293T cells identified CCR6-CCL20 as optimal, showing 2.6-fold \u00b1light and 3.2-fold \u00b1ligand signal ratios. A control construct lacking the LOV domain showed high background (1.1-fold \u00b1ligand ratio), demonstrating that light-gating is crucial for reducing background.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40 are directly supported by Figure 1C data showing quantitative luciferase measurements. The comparison with the no-LOV control is particularly important for validating the design principle. However, the modest signal ratios (2.6-3.2 fold) in the initial screen suggest room for optimization, which is addressed in later experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "5827a5b1-3452-4328-90e6-0293f06aded1",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In trans assays with separately transfected HEK293T sender and receiver cells, TRACC showed 5.6-fold \u00b1light and \u00b1sender signal ratios, with 80.0% specificity (mCherry+ cells in contact with sender) and 80.2% sensitivity (contacting cells showing reporter expression above background).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C47 are well-supported by quantitative data in Figures 2B-E, with clear statistical analysis (n=94-108 cells from 50 FOVs). The 20% false positive rate (C43) is acknowledged and potential explanations provided (C44, C50). The consistency of V5 intensity across mCherry-high and -low populations (C45-C46) strengthens the conclusion of sender-dependence. Lentiviral delivery validation (C51) extends applicability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "68932ec2-5ba0-4fe4-a55c-e9e1cad53221",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "TRACC components properly localize in primary rat cortical neurons, with the sender construct targeting pre-synaptic terminals via the neurexin domain. In neuronal systems, TRACC showed robust activation with 11.4-fold \u00b1light and 7.5-fold \u00b1ligand ratios in cis, and 4.2-fold \u00b1light and 3.2-fold \u00b1sender ratios in neuron-HEK293T co-culture.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C57 are supported by Figure 3 and supplements showing proper localization and functional activation. The colocalization analysis with synapsin (C54) and the demonstration that neurexin domain deletion disrupts targeting (C55) provide important validation. The higher signal ratios in neurons (C56) compared to initial HEK293T screens suggest cell-type optimization, though the trans configuration shows reduced performance (C57).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "e61516c2-50f9-4cb3-aa32-74f8ebc1425a",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "TRACC was optimized for patient-derived DIPG glioma cells through screening LOV and TEVp variants, with eLOV-uTEV2 showing highest sensitivity while maintaining specificity. In neuron-DIPG co-culture, robust mCherry activation occurred only with both light and sender expression, demonstrating potential for mapping neuron-glioma interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C68 are supported by Figure 4 data showing systematic optimization and successful application. The initial low sensitivity (C64) and subsequent improvement through variant screening (C65) demonstrates rigorous optimization. The maintained specificity despite increased sensitivity (C66) is important. However, C68's claim about 'potential' is appropriately cautious given this is proof-of-concept data in culture, not in vivo validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "db61945b-4197-4ef9-a27f-3314c3e9c0ec",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "TRACC provides advantages over existing tools: compared to direct labeling methods (LIPSTIC, split-HRP, mGRASP), it enables genetic access to contacting cells; compared to other transcriptional tools (synNotch, trans-Tango), the LOV domain substantially reduces background and provides temporal specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C69-C70 make comparative statements but lack direct head-to-head experimental validation. While C70 is partially supported by the no-LOV control data (C39-C40) showing background reduction, the claim of 'substantial' reduction versus synNotch/trans-Tango specifically is not directly tested. C69's advantage is conceptually valid but not experimentally demonstrated. These are reasonable inferences but would benefit from direct comparisons.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "bb6b0b23-51a0-4e14-b022-039dafc74f30",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Background activation in 20% of non-contacting cells may result from high arrestin-TEVp expression causing GPCR-independent TF release, or from incomplete co-transfection of all three receiver components required for TRACC function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C44 and C50 are speculative explanations for observed false positives. C44 cites prior work (Sanchez et al., 2020) but doesn't directly test this mechanism. C50 is a reasonable hypothesis about transfection efficiency but lacks experimental validation. Neither explanation is definitively supported, though both are plausible. Additional experiments (e.g., measuring arrestin-TEVp levels in false positive cells, or using stable cell lines) would be needed to distinguish between these possibilities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "b271bb32-9f74-4ffd-8ef0-e0f9762fcd99",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "TRACC may be useful for anterograde synapse-specific tracing and neuron-glioma circuit mapping in future studies, but will require in vivo validation of component localization, specificity, and sensitivity in well-characterized circuits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C72-C75 are explicitly speculative about future applications. C73 correctly identifies a gap in available tools, but C72's potential utility is unproven. C74 appropriately acknowledges that in vivo validation is required before these applications can be realized. These are reasonable future directions but represent proposed rather than demonstrated capabilities. The current work is limited to in vitro culture systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "fbeae74c-7b06-46c8-aa70-671d3e677ec2",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Background claims establish that cell-cell interactions are fundamental to biological processes and describe existing tools for detecting contacts, including enzymatic labeling methods (LIPSTIC, BirA/LplA, split-HRP, split-TurboID, mGRASP, SynView) and transcriptional reporters (synNotch, TRACT, trans-Tango, BAcTrace, G-baToN).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C21 provide literature context supported by appropriate citations. These accurately describe the field and motivate the development of TRACC. C16 provides the key rationale for transcriptional reporters over direct labeling. The descriptions of existing tools appear accurate based on the cited literature, though I cannot independently verify all cited work without access to those papers.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    },
+    {
+      "id": "3c28e7fc-20ed-439a-b2eb-5fe6a25a58cd",
+      "content_id": "da23cdab-78f4-49b2-a0fb-4b336582bece",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background claims establish that high-grade gliomas are lethal brain cancers, that neuronal interactions drive glioma progression through functional neuron-to-glioma synapses, and that synaptic signaling promotes glioma proliferation via membrane voltage-sensitive mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C63 provide biological context for the glioma application, supported by appropriate citations to recent literature. These claims accurately represent current understanding of neuron-glioma interactions and motivate the application of TRACC to this system. The citations appear appropriate and recent (2015-2021), reflecting active research in this area.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:53:05.218138Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2c3c479c-874a-42ae-a93f-fef7087298a2",
+      "result_id": "38a33437-953e-4ac5-a1e7-76ce9e14beef"
+    },
+    {
+      "claim_id": "6a23a040-2459-4af3-a744-1804132362a1",
+      "result_id": "38a33437-953e-4ac5-a1e7-76ce9e14beef"
+    },
+    {
+      "claim_id": "2214df24-aeb1-4b3e-85cf-09defb4fb20d",
+      "result_id": "38a33437-953e-4ac5-a1e7-76ce9e14beef"
+    },
+    {
+      "claim_id": "52c153a4-5304-4c4a-8fe8-70ee6b0292c1",
+      "result_id": "38a33437-953e-4ac5-a1e7-76ce9e14beef"
+    },
+    {
+      "claim_id": "18e5e376-5724-4cf4-abce-cdda67ab1220",
+      "result_id": "38a33437-953e-4ac5-a1e7-76ce9e14beef"
+    },
+    {
+      "claim_id": "3bda81b4-7867-44e8-9ced-6026b6d072d4",
+      "result_id": "38a33437-953e-4ac5-a1e7-76ce9e14beef"
+    },
+    {
+      "claim_id": "b6dd2c51-9f59-4cf5-9b9f-2c3c346ee767",
+      "result_id": "38a33437-953e-4ac5-a1e7-76ce9e14beef"
+    },
+    {
+      "claim_id": "0c22cad8-d49a-4ea2-812e-6f8bc28eb5f3",
+      "result_id": "38a33437-953e-4ac5-a1e7-76ce9e14beef"
+    },
+    {
+      "claim_id": "3f6ecbc0-bcdc-481f-aa99-01c835035ecd",
+      "result_id": "38a33437-953e-4ac5-a1e7-76ce9e14beef"
+    },
+    {
+      "claim_id": "6fe8be7c-792b-42d6-bfd4-90d94ab5469a",
+      "result_id": "38a33437-953e-4ac5-a1e7-76ce9e14beef"
+    },
+    {
+      "claim_id": "9e2a4551-0441-4396-9e45-91a9c2e03fcd",
+      "result_id": "38a33437-953e-4ac5-a1e7-76ce9e14beef"
+    },
+    {
+      "claim_id": "57eb6968-c143-47c3-b250-6954e57f9e60",
+      "result_id": "38a33437-953e-4ac5-a1e7-76ce9e14beef"
+    },
+    {
+      "claim_id": "ad546048-c07c-48e5-aaae-375966ab5a46",
+      "result_id": "38a33437-953e-4ac5-a1e7-76ce9e14beef"
+    },
+    {
+      "claim_id": "7142ff65-b0d4-46e4-9f38-7d92c2d64052",
+      "result_id": "644402bc-d1b1-4ffb-8902-5fcdc8bce849"
+    },
+    {
+      "claim_id": "07850ae8-b603-42e9-8629-84d2a9c95ca2",
+      "result_id": "644402bc-d1b1-4ffb-8902-5fcdc8bce849"
+    },
+    {
+      "claim_id": "b281c187-e7c1-46a1-a4c8-ace6a8b2a1a4",
+      "result_id": "644402bc-d1b1-4ffb-8902-5fcdc8bce849"
+    },
+    {
+      "claim_id": "8f25ad26-d090-4a1a-92e4-6811e2d03070",
+      "result_id": "644402bc-d1b1-4ffb-8902-5fcdc8bce849"
+    },
+    {
+      "claim_id": "f55771f8-2388-498f-a611-6df247dddf5d",
+      "result_id": "644402bc-d1b1-4ffb-8902-5fcdc8bce849"
+    },
+    {
+      "claim_id": "087da8d6-7ba9-44ec-9c68-468634d1bf55",
+      "result_id": "644402bc-d1b1-4ffb-8902-5fcdc8bce849"
+    },
+    {
+      "claim_id": "05777f2d-2b08-4e94-8915-1078aecaf241",
+      "result_id": "644402bc-d1b1-4ffb-8902-5fcdc8bce849"
+    },
+    {
+      "claim_id": "f89d028a-05bd-49c9-9bcb-60f12213ad03",
+      "result_id": "5827a5b1-3452-4328-90e6-0293f06aded1"
+    },
+    {
+      "claim_id": "e0cf3dbd-82df-4a3b-bb97-b2357ccad4a3",
+      "result_id": "5827a5b1-3452-4328-90e6-0293f06aded1"
+    },
+    {
+      "claim_id": "5450845e-f109-412c-87cc-656b5fe29ad4",
+      "result_id": "5827a5b1-3452-4328-90e6-0293f06aded1"
+    },
+    {
+      "claim_id": "c12e0d4e-7e19-47f2-b70b-d4ec129e85e6",
+      "result_id": "5827a5b1-3452-4328-90e6-0293f06aded1"
+    },
+    {
+      "claim_id": "417ae08f-08a5-4a0d-b375-0c6bed74f040",
+      "result_id": "5827a5b1-3452-4328-90e6-0293f06aded1"
+    },
+    {
+      "claim_id": "d6fa9374-42c5-4ec0-8ed3-4ebb77ede3bf",
+      "result_id": "5827a5b1-3452-4328-90e6-0293f06aded1"
+    },
+    {
+      "claim_id": "bfb0be3c-2944-4d99-8b31-ff464386cc86",
+      "result_id": "5827a5b1-3452-4328-90e6-0293f06aded1"
+    },
+    {
+      "claim_id": "acf17d91-b036-423c-b6ca-857a13f31f4d",
+      "result_id": "68932ec2-5ba0-4fe4-a55c-e9e1cad53221"
+    },
+    {
+      "claim_id": "74a290ff-ed8d-4dd5-8903-af25f71ac57d",
+      "result_id": "68932ec2-5ba0-4fe4-a55c-e9e1cad53221"
+    },
+    {
+      "claim_id": "bd6c96f7-4ebc-41be-bc65-9b92f9bdc413",
+      "result_id": "68932ec2-5ba0-4fe4-a55c-e9e1cad53221"
+    },
+    {
+      "claim_id": "7155edf2-4a60-4536-abd3-81f09ba45655",
+      "result_id": "68932ec2-5ba0-4fe4-a55c-e9e1cad53221"
+    },
+    {
+      "claim_id": "5d963084-152b-4fe3-9eb0-1158d53b2b6a",
+      "result_id": "68932ec2-5ba0-4fe4-a55c-e9e1cad53221"
+    },
+    {
+      "claim_id": "2f90ce34-9000-4c6a-bef2-1aa5084d7669",
+      "result_id": "68932ec2-5ba0-4fe4-a55c-e9e1cad53221"
+    },
+    {
+      "claim_id": "8764f27b-772e-4281-8ddc-eda92d81a3ba",
+      "result_id": "e61516c2-50f9-4cb3-aa32-74f8ebc1425a"
+    },
+    {
+      "claim_id": "ef1794bb-22a4-4291-95b9-b8eb516c5039",
+      "result_id": "e61516c2-50f9-4cb3-aa32-74f8ebc1425a"
+    },
+    {
+      "claim_id": "9daf509f-71c7-4be9-a757-b7559c803002",
+      "result_id": "e61516c2-50f9-4cb3-aa32-74f8ebc1425a"
+    },
+    {
+      "claim_id": "ac57b8ed-447e-47fb-9efe-37f179b53353",
+      "result_id": "e61516c2-50f9-4cb3-aa32-74f8ebc1425a"
+    },
+    {
+      "claim_id": "2da0e9ac-4628-4244-b298-f555257cec09",
+      "result_id": "e61516c2-50f9-4cb3-aa32-74f8ebc1425a"
+    },
+    {
+      "claim_id": "0c64db54-40ea-4f7e-8757-bffe0f3d8108",
+      "result_id": "db61945b-4197-4ef9-a27f-3314c3e9c0ec"
+    },
+    {
+      "claim_id": "62595974-e311-403d-ad74-699e1b3f2f46",
+      "result_id": "db61945b-4197-4ef9-a27f-3314c3e9c0ec"
+    },
+    {
+      "claim_id": "c9f9908d-6de1-4055-94ac-4b89995b5e68",
+      "result_id": "bb6b0b23-51a0-4e14-b022-039dafc74f30"
+    },
+    {
+      "claim_id": "ba38f772-84ac-4c22-a953-8b2005e0ff57",
+      "result_id": "bb6b0b23-51a0-4e14-b022-039dafc74f30"
+    },
+    {
+      "claim_id": "cbe9b7b6-c1b9-4e02-a138-eecdb8c18128",
+      "result_id": "b271bb32-9f74-4ffd-8ef0-e0f9762fcd99"
+    },
+    {
+      "claim_id": "bc1d3829-bf66-47d7-89c1-3a4778321896",
+      "result_id": "b271bb32-9f74-4ffd-8ef0-e0f9762fcd99"
+    },
+    {
+      "claim_id": "bbc2f144-b401-4fb1-a19e-b2997dd9c068",
+      "result_id": "b271bb32-9f74-4ffd-8ef0-e0f9762fcd99"
+    },
+    {
+      "claim_id": "9cecc464-c3be-418d-b71a-d3a6a6e74621",
+      "result_id": "b271bb32-9f74-4ffd-8ef0-e0f9762fcd99"
+    },
+    {
+      "claim_id": "8d6f18a7-e275-4815-bfd7-5f7c07a877aa",
+      "result_id": "fbeae74c-7b06-46c8-aa70-671d3e677ec2"
+    },
+    {
+      "claim_id": "afb5e75b-80f3-4f7c-828a-789698926819",
+      "result_id": "fbeae74c-7b06-46c8-aa70-671d3e677ec2"
+    },
+    {
+      "claim_id": "a07eb3b5-bcc5-4318-9ac4-7f43b4651922",
+      "result_id": "fbeae74c-7b06-46c8-aa70-671d3e677ec2"
+    },
+    {
+      "claim_id": "14c26568-cec8-4d2b-a381-3f723aa9a5b7",
+      "result_id": "fbeae74c-7b06-46c8-aa70-671d3e677ec2"
+    },
+    {
+      "claim_id": "b3ba9a37-40c6-47d4-94e8-cbbe4ba08ac9",
+      "result_id": "fbeae74c-7b06-46c8-aa70-671d3e677ec2"
+    },
+    {
+      "claim_id": "2dc424dc-bce9-42f5-a620-dc83bdc49202",
+      "result_id": "fbeae74c-7b06-46c8-aa70-671d3e677ec2"
+    },
+    {
+      "claim_id": "2a070e73-83f2-4578-b850-e4dfd90f2068",
+      "result_id": "fbeae74c-7b06-46c8-aa70-671d3e677ec2"
+    },
+    {
+      "claim_id": "20aedba6-322d-4b43-84e5-fc89ab4b466e",
+      "result_id": "fbeae74c-7b06-46c8-aa70-671d3e677ec2"
+    },
+    {
+      "claim_id": "99751672-a857-4266-ac42-80eca59c79eb",
+      "result_id": "fbeae74c-7b06-46c8-aa70-671d3e677ec2"
+    },
+    {
+      "claim_id": "e8088678-fa93-4381-9fc8-8b9aedf13866",
+      "result_id": "fbeae74c-7b06-46c8-aa70-671d3e677ec2"
+    },
+    {
+      "claim_id": "8b8d923a-d1f0-467c-89ce-c410f88bbd5e",
+      "result_id": "fbeae74c-7b06-46c8-aa70-671d3e677ec2"
+    },
+    {
+      "claim_id": "2d01d054-8d67-43de-b1f3-50c852c7cbd0",
+      "result_id": "fbeae74c-7b06-46c8-aa70-671d3e677ec2"
+    },
+    {
+      "claim_id": "d92a5dcc-87a1-4528-a338-66ade046a9c4",
+      "result_id": "fbeae74c-7b06-46c8-aa70-671d3e677ec2"
+    },
+    {
+      "claim_id": "4b34150a-f8d2-4149-aafb-d81872cba7be",
+      "result_id": "fbeae74c-7b06-46c8-aa70-671d3e677ec2"
+    },
+    {
+      "claim_id": "c204ddb2-cdf1-42ec-ad18-377359506de5",
+      "result_id": "fbeae74c-7b06-46c8-aa70-671d3e677ec2"
+    },
+    {
+      "claim_id": "dfad787b-5ab1-460e-9d8e-d9773d3e429e",
+      "result_id": "3c28e7fc-20ed-439a-b2eb-5fe6a25a58cd"
+    },
+    {
+      "claim_id": "b6dc5a2e-573e-4240-af20-22be36376e4b",
+      "result_id": "3c28e7fc-20ed-439a-b2eb-5fe6a25a58cd"
+    },
+    {
+      "claim_id": "6e8f458b-b3f4-4647-96c3-c3815fba5f4f",
+      "result_id": "3c28e7fc-20ed-439a-b2eb-5fe6a25a58cd"
+    },
+    {
+      "claim_id": "c8c3c3cc-5775-4546-b2ac-7cd2958a5777",
+      "result_id": "3c28e7fc-20ed-439a-b2eb-5fe6a25a58cd"
+    },
+    {
+      "claim_id": "ff5b1114-9fc9-49f7-a434-b701d79761ac",
+      "result_id": "3c28e7fc-20ed-439a-b2eb-5fe6a25a58cd"
+    },
+    {
+      "claim_id": "d75a7be3-8e51-44e4-bec8-2a5aa4243cab",
+      "result_id": "3c28e7fc-20ed-439a-b2eb-5fe6a25a58cd"
+    }
+  ],
+  "comparisons": []
+}

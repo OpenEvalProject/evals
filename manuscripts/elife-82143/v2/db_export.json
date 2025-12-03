@@ -1,0 +1,2384 @@
+{
+  "submission": {
+    "id": "1ae67095-5928-434b-84f7-2b0ac1b344ed",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T16:53:50.514455Z",
+    "updated_at": "2025-12-03T16:53:50.514455Z"
+  },
+  "content": [
+    {
+      "id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "submission_id": "1ae67095-5928-434b-84f7-2b0ac1b344ed",
+      "content_type": "manuscript",
+      "content_text": "# Altered basal ganglia output during self-restraint\n\n## Authors\n\n- Bon-Mi Gu<sup>1</sup> ([ORCID: 0000-0002-3060-0803](https://orcid.org/0000-0002-3060-0803)) \u2020\n- Joshua D Berke<sup>1</sup> ([ORCID: 0000-0003-1436-6823](https://orcid.org/0000-0003-1436-6823))\n\n### Affiliations\n\n1. Department of Neurology, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n2. Department of Neurology and Neurological Sciences, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))\n3. Department of Psychiatry and Behavioral Sciences, Neuroscience Graduate Program, Kavli Institute for Fundamental Neuroscience, Weill Institute for Neurosciences, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n\n\u2020 Corresponding author\n\n## Abstract\n\nSuppressing actions is essential for flexible behavior. Multiple neural circuits involved in behavioral inhibition converge upon a key basal ganglia output nucleus, the substantia nigra pars reticulata (SNr). To examine how changes in basal ganglia output contribute to self-restraint, we recorded SNr neurons during a proactive behavioral inhibition task. Rats responded to Go! cues with rapid leftward or rightward movements, but also prepared to cancel one of these movement directions on trials when a Stop! cue might occur. This action restraint \u2013 visible as direction-selective slowing of reaction times \u2013 altered both rates and patterns of SNr spiking. Overall firing rate was elevated before the Go! cue, and this effect was driven by a subpopulation of direction-selective SNr neurons. In neural state space, this corresponded to a shift away from the restrained movement. SNr neurons also showed more variable inter-spike intervals during proactive inhibition. This corresponded to more variable state-space trajectories, which may slow reaction times via reduced preparation to move. These findings open new perspectives on how basal ganglia dynamics contribute to movement preparation and cognitive control.\n\n## Introduction\n\nFluid, efficient behavior often involves simply triggering well-learned behaviors. However, flexibility requires that such behaviors can be suppressed, should circumstances change. This capacity for behavioral inhibition is considered central to cognitive control (Bari and Robbins, 2013), and is compromised in a range of neurological and psychiatric disorders (Chambers et al., 2009).\n\nBehavioral inhibition can be \u2018reactive\u2019 \u2013 for example, promptly responding to an unexpected Stop! cue by cancelling upcoming actions. Reactive inhibition has been shown to involve fast cue responses in frontal cortex and basal ganglia pathways (Jahanshahi et al., 2015; Wager et al., 2005), including from the subthalamic nucleus (STN) to SNr (Schmidt et al., 2013). This rapid response to stimuli can transiently, and broadly, retard action initiation, providing time for a second set of basal ganglia mechanisms to cancel actions (Mallet et al., 2016; Schmidt and Berke, 2017).\n\nBy contrast, \u2018proactive\u2019 inhibition refers to an altered state of preparation, in which particular actions are restrained (Cai et al., 2011; Claffey et al., 2010). Proactive inhibition has been argued to be especially important for human life (Aron, 2011), and is behaviorally apparent as longer reaction times (RTs) selectively for the restrained action. The underlying mechanisms are not well understood, but have been proposed (Aron, 2011) to involve the pathway from striatum \u2018indirectly\u2019 to SNr, via globus pallidus pars externa (GPe). In a prior study (Gu et al., 2020) we therefore recorded from GPe neurons as rats engaged proactive inhibition toward a specific action. The state of being prepared to stop did not involve an overall net change in GPe firing rate, but rather a shift at the level of neural population dynamics away from action initiation, and toward the alternative action. One objective of the present work was to determine whether a corresponding preparatory change in population dynamics is visible \u2018downstream\u2019 in SNr, thereby altering basal ganglia output.\n\nBasal ganglia output neurons are thought to affect behavior not just via their firing rates, but also via their firing patterns and synchrony (Rubin et al., 2012). In particular, Parkinson\u2019s disease (PD) is associated with an increase in firing variability and synchronous bursting, often without rate changes (Lobb, 2014; Willard et al., 2019). As PD is characterized by slowed movement initiation (Low et al., 2002), we assessed whether related physiological changes are present when movements are slowed as the result of proactive inhibition.\n\n## Results\n\n### RTs are selectively slowed with proactive inhibition\n\nWe used a selective proactive inhibition task (Gu et al., 2020), a variant of our extensively characterized rat stop-signal task (Leventhal et al., 2012; Schmidt et al., 2013; Mallet et al., 2016; Figure 1A). Rats start a trial by nose-poking an illuminated start port. To proceed, they need to maintain this position for a variable delay (500\u20131250 ms, uniform distribution) until a Go! cue is presented (1 or 4 kHz tone, indicating a leftward or rightward movement, respectively). If the movement is initiated rapidly after the Go! cue (RT limit <800 ms), and completed correctly and promptly (movement time limit, MT <500 ms), rats are rewarded with a sugar pellet dispensed at a separate food hopper. On a subset of trials, the Go! cue is followed by a Stop! cue (white noise burst; delay after Go! cue onset = 100\u2013250 ms). This indicates that the rat should not initiate a movement, and instead hold their nose in the Center port for at least 800 ms (after Go! cue onset) to trigger reward delivery.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/82143/elife-82143-fig1-v2.jpg)\n\n**Figure 1.:** (A) Left, operant box configuration, with dashed red lines indicating photobeams for nose detection; right, event sequence for Go and Stop trials. RT, reaction time; MT, movement time; SSD, stop-signal delay; Reward, delivery of a sugar pellet to the food port. (B) Trial start location indicates stop probabilities. In this example configuration with left SNr recording, illumination of the middle hole indicates that Go! cues instructing rightward movement may be followed by a Stop! cue, but Go! cues instructing leftward movements will not (\u2018Maybe-Stop-Contra\u2019). (C) Overall, the sessions in which SNr units were successfully recorded showed strong proactive inhibition effect (n=85, Wilcoxon signed rank tests on median RT differences between Maybe-Stop-Contra and No-Stop-Contra conditions, p=8.2 \u00d7 10-15). Among them, the individual sessions are considered to show proactive inhibition (red) if the reaction time difference between Maybe-Stop-Contra and No-Stop trials is statistically significant (one-tail Wilcoxon rank sum test, p<0.05). (D) Cumulative distribution functions (cdf) of RTs of Maybe-Stop-Contra condition show selective slowing for the contra-cued trials, but not for the ipsi-cued trials. Response ratios also show selective increase of wrong choice and RT limit errors for the Maybe-Stop direction. Shaded band and error bars, SEM across n=60 sessions with proactive inhibition effect. RT limit error = nose remained in Center port for >800 ms after Go! cue onset; MT limit error = movement time between Center Out and Side port entry >500 ms.\n\nTo probe selective proactive inhibition, the three possible start ports were associated with different Stop! cue probabilities (counterbalanced across rats; Gu et al., 2020, Figure 1B, Table 1). These were: no possibility of Stop! cue (\u2018No-Stop\u2019); 50% probability that a left Go! cue will be followed by the Stop! cue (\u2018Maybe-Stop-left\u2019); and 50% probability that a right Go! cue will be followed by the Stop! cue (\u2018Maybe-Stop-right\u2019). We obtained SNr microelectrode recordings from rats (n=10) that had successfully learned this proactive task, as indicated by significant and selective slowing of RTs for movements contraversive to the implant side (Figure 1C). For example, if electrodes were placed in the right SNr, contraversive proactive inhibition would mean longer RTs for Maybe-Stop-left trials, compared to No-Stop trials. In the same rats we compared SNr activity in sessions in which this proactive effect was significant (n=60), to sessions in which it was not (n=25; Figure 1C).\n\n**Table 1.**\n Information on individual rats.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">RAT</th>\n      <th rowspan=\"2\">Port location with stop probability(port1, port2 port3)</th>\n      <th rowspan=\"2\"># of sessions (with/ without proactive inhibition effect)</th>\n      <th rowspan=\"2\"># of cells (from sessions with/ without proactive inhibition effect)</th>\n      <th colspan=\"4\">Sessions with contralateral proactive inhibition effect (Mean \u00b1 SD)</th>\n    </tr>\n    <tr>\n      <th># of trials per session (Maybe-Stop-Contra/No-Stop conditions)*</th>\n      <th>Contralateral RTs (Maybe-Stop-Contra/No-Stop conditions, ms)</th>\n      <th>Ipsilateral RTs (Maybe-Stop-Contra/No-Stop conditions, ms)</th>\n      <th>Stop success rates (%)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>1015</td>\n      <td>0, L50, R50%</td>\n      <td>7/1</td>\n      <td>184/20</td>\n      <td>104\u00b127/103\u00b112</td>\n      <td>563\u00b139/363\u00b135</td>\n      <td>428\u00b145/415\u00b142</td>\n      <td>55.3\u00b110.3</td>\n    </tr>\n    <tr>\n      <td>1019</td>\n      <td>L50, 0, R50%</td>\n      <td>5/2</td>\n      <td>6/4</td>\n      <td>110\u00b133/122\u00b125</td>\n      <td>369\u00b147/275\u00b130</td>\n      <td>271\u00b130/321\u00b111</td>\n      <td>47.8\u00b110.9</td>\n    </tr>\n    <tr>\n      <td>1042</td>\n      <td>L50, 0, R50%</td>\n      <td>2/0</td>\n      <td>3/0</td>\n      <td>94\u00b15/88\u00b110</td>\n      <td>399\u00b127/293\u00b110</td>\n      <td>277\u00b14/377\u00b137</td>\n      <td>81.1\u00b15.5</td>\n    </tr>\n    <tr>\n      <td>1043</td>\n      <td>L50, R50, 0%</td>\n      <td>8/1</td>\n      <td>30/5</td>\n      <td>124\u00b125/131\u00b135</td>\n      <td>474\u00b149/353\u00b148</td>\n      <td>384\u00b151/38747</td>\n      <td>70.5\u00b15.6</td>\n    </tr>\n    <tr>\n      <td>1063</td>\n      <td>L50, R50, 0%</td>\n      <td>8/4</td>\n      <td>21/15</td>\n      <td>124\u00b131/110\u00b125</td>\n      <td>347\u00b157/226\u00b129</td>\n      <td>266\u00b149/191\u00b118</td>\n      <td>26.2\u00b15.6</td>\n    </tr>\n    <tr>\n      <td>1064</td>\n      <td>L50, 0, R50%</td>\n      <td>6/4</td>\n      <td>23/26</td>\n      <td>121\u00b120/123\u00b118</td>\n      <td>446\u00b134/338\u00b135</td>\n      <td>303\u00b113/309\u00b120</td>\n      <td>57.3\u00b14.8</td>\n    </tr>\n    <tr>\n      <td>1098</td>\n      <td>0, L50, R50%</td>\n      <td>5/2</td>\n      <td>5/2</td>\n      <td>102\u00b118/109\u00b127</td>\n      <td>456\u00b117/330\u00b138</td>\n      <td>324\u00b121/327\u00b154</td>\n      <td>41.7\u00b13.1</td>\n    </tr>\n    <tr>\n      <td>1202</td>\n      <td>0, R50, L50%</td>\n      <td>10/1</td>\n      <td>114/12</td>\n      <td>107\u00b123/118\u00b132</td>\n      <td>494\u00b149/328\u00b136</td>\n      <td>359\u00b138/356\u00b128</td>\n      <td>56.3\u00b110.6</td>\n    </tr>\n    <tr>\n      <td>1296</td>\n      <td>R50, 0, L50%</td>\n      <td>7/2</td>\n      <td>53/11</td>\n      <td>101\u00b117/92\u00b111</td>\n      <td>435\u00b139/330\u00b138</td>\n      <td>344\u00b141/345\u00b128</td>\n      <td>61.5\u00b113.0</td>\n    </tr>\n    <tr>\n      <td>1328</td>\n      <td>R50, L50, 0%</td>\n      <td>2/8</td>\n      <td>7/78</td>\n      <td>127\u00b12/147\u00b119</td>\n      <td>370\u00b113/298\u00b136</td>\n      <td>275\u00b118/368\u00b165</td>\n      <td>51.8\u00b12.5</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Number of trials includes only those trials in which the Go! cue was presented (i.e. trials with premature center out are excluded)._\n\nThe sessions with significant proactive inhibition effect show RT slowing selectively for the Maybe-Stop direction (Wilcoxon signed rank tests on median RTs of Maybe-Stop-Contra versus No-Stop: Contra cues: z=6.8, p=1.1 \u00d7 10-11), but not for the other direction (Ipsi cues: z=\u20131.2, p=0.22) (Figure 1D). Additionally, on Maybe-Stop-Contra trials rats were more likely to fail to respond quickly enough (RT limit errors; Wilcoxon signed rank tests, z=6.4, p=1.5 \u00d7 10-10) and to select the wrong choice (i.e. not matching the Go! cue; Wilcoxon signed rank tests, z=6.5, p=1.1 \u00d7 10-10).\n\n### Selective proactive inhibition recruits specific SNr subpopulations\n\nWe examined the activity of individual SNr neurons (n=446; mean firing rate = 38 Hz, locations are shown in Figure 2\u2014figure supplement 1) recorded during the sessions with significant proactive inhibition. We first compared overall cell activity between Maybe-Stop-Contra and No-Stop trials, within the same sessions. We focused on the epoch just before the Go! cue, as we presume that this time is critical for being \u2018prepared-to-stop\u2019. Since this time epoch is before any Stop cue could occur, we included Maybe-Stop trials regardless of whether a Stop cue was subsequently presented or not. Average firing rates were significantly higher in the Maybe-Stop-Contra condition (Figure 2A, top), and this difference was generated by a significant fraction of SNr neurons (Figure 2A, bottom). Example cells show significant differences before the Go! cue between conditions (Figure 2B). This elevated SNr firing with action restraint was not observed in the sessions without significant behavioral evidence for proactive inhibition (Figure 2A, right; 173 neurons, mean FR = 44 Hz).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/82143/elife-82143-fig2-v2.jpg)\n\n**Figure 2.:** (A) Top left: before the Go! cue SNr firing is elevated in Maybe-Stop-Contra compared to No-Stop conditions. This occurs selectively in sessions with behavioral evidence of proactive inhibition (left). Each neuron\u2019s firing rate is Z-scored and averaged (over all trials in which a Go! cue was presented, regardless of Stop! cues). Shaded band, \u00b1 SEM across n=446 (left) or n=173 neurons (right). Thicker lines indicate significant differences between conditions (p<0.05; Wilcoxon signed rank tests at each time point) and red lines at the bottom indicate times with significant difference remaining after Bonferroni correction (by the number of 50 ms time bins; p<0.05). Bottom left: fraction of SNr neurons whose firing rate significantly differs between conditions, across time (p<0.05; Wilcoxon rank sum tests in each 50 ms bin). Higher firing with Maybe-Stop-Contra, No-Stop conditions are shown as positive (orange) or negative (blue), respectively. Horizontal gray lines indicate thresholds for a significant proportion of neurons (binomial test, p<0.05 without or with multiple-comparisons correction, light and dark gray lines, respectively). Light and dark color-filled bars are those for which the threshold was crossed without or with multiple-comparisons correction. Right, sessions without significant behavioral evidence of proactive inhibition do not show this firing rate difference between conditions (same format as left panels; n=173 neurons). (B) Two individual example neurons demonstrating the proactive elevation of firing rate before the Go! cue. Top: averaged firing rates in each condition. Shaded band, \u00b1 SEM across trials. Bottom: raster plots of individual trials. Trials are sorted by reaction times (RTs). (C) Neurons were categorized as decrease-type or increase-type, based on an \u2018Initiation Score\u2019. We defined the \u2018Initiation Score\u2019 for each neuron as the change in (Z-scored) firing rate in the 0.2 s before Center Out (inset shows example neuron). Plots show average firing of each subpopulation (top; \u00b1 SEM) and individual cells (normalized average firing, subtracting \u2018baseline\u2019 firing at 0.2 s before Center Out) sorted by Initiation Score (bottom). (D) No relation between Initiation Score and proactive inhibition (assessed as the difference between Maybe-Stop-Contra and No-Stop trials, in the 200 ms before Go! cue). Bar graph (inset) shows that on average, both increase- and decrease-type neurons modestly increase firing with proactive inhibition (Wilcoxon signed rank tests in each group). Error bar is \u00b1 SEM across neurons. (E) We defined the \u2018Selection Score\u2019 for each neuron as the integral of the difference in (Z-scored) firing rate between Contra and Ipsi actions during the 0.2 s epoch before Center Out. Remainder of panel is as C, but for Selection Score (individual cell plots show normalized firing rate for Contra minus Ipsi actions). (F) Significant negative correlation between Selection Score and proactive inhibition. Bar graph (inset) shows that Ipsi>Contra neurons preferentially increase activity on Maybe-Stop-Contra trials. (G) Same result as F, using the format of panel A to illustrate time course.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82143/elife-82143-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Brain slice examples of using CD11 antibody or Cresyl violet to mark electrode tip after making lesion. The grid represents 1mm. (B) Estimated locations of recorded cells, within coronal atlas sections (Paxinos and Watson, 2006).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/82143/elife-82143-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) (B) Ipsi>Contra type cells are further divided into increase (A) and decrease (B) type cells.Both group of cells show significantly increase firing rates before Go! cues. Same formats as Figure 2.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/82143/elife-82143-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) The normalized firing rates of categorized increase and decrease type neurons are shown separately for Contra and Ipsi movements. The cells are sorted by Initiation score (same as in Figure 2C). (B) Same as in (A) for Ipsi>Contra and Contra >Ipsi type cells and sorted by Selection score (same as Figure 2D).\n\nA common categorization of SNr neurons distinguishes those that increase, versus decrease, firing rate in conjunction with behavioral events (e.g. Bryden et al., 2011; Fan et al., 2012; Gulley et al., 2002; Sato and Hikosaka, 2002). Decreases in firing shortly before movement onset are thought to enable movements, by disinhibiting downstream structures including the superior colliculus (Hikosaka and Wurtz, 1983b). If \u2018decrease-type\u2019 neurons are receiving more excitation during proactive inhibition, this might delay their decrease to the level needed to release movements, resulting in longer RTs. We therefore hypothesized that proactive inhibition is associated with elevated firing specifically of decrease-type neurons.\n\nWe categorized cells as increase-type or decrease-type based on their change in firing rate during the 200 ms preceding movement onset (Figure 2C, Figure 2\u2014figure supplement 3). Increase-type were more numerous, as previously reported (Bryden et al., 2011; Joshua et al., 2009). Contrary to our hypothesis, both increase-type and decrease-type neurons contributed to elevated SNr activity with action restraint (Figure 2D, left). There was no relationship between the extent of elevated firing in Maybe-Stop trials, and the firing rate change before movement onset (Figure 2D, right).\n\nWe then examined whether proactive inhibition effects were related to neurons\u2019 response selectivity, operationally defined as the firing rate difference between Contra and Ipsi actions just before Center Out (Figure 2E, inset). We found a significant relationship: neurons more active just before Ipsi compared to just before Contra movements (\u2018Ipsi>Contra\u2019) showed elevated firing when Contra actions might need to be cancelled (Figure 2F and G). No such relationship was found for neurons with the opposite selectivity (\u2018Contra>Ipsi\u2019; Figure 2F and G).\n\nWe next considered the interaction between direction selectivity and increases versus decreases in firing, in proactive inhibition. A cell could be classified as \u2018Ipsi>Contra\u2019 because it preferentially increases firing with Ipsi movements, or because it preferentially decreases firing with Contra movements. We found that both subtypes had elevated firing before the Go! cue on Maybe-Stop-Contra trials (Figure 2\u2014figure supplement 2). Therefore, the proactive effect was not simply a matter of SNr cells that pause with Contra movements starting from a higher baseline rate, though this may contribute.\n\n### Restraining one action biases population dynamics toward the alternative action\n\nThe elevated average firing rate of Ipsi>Contra cells suggests a preparatory bias toward Ipsi action, at times when Contra actions might need to be cancelled. To examine this further we turned to a state-space analysis. This allows us to examine the effects of proactive inhibition at the level of SNr neural populations, and compare to our prior results for GPe populations (Gu et al., 2020). We extracted principal components from the average firing rates of each neuron during Contra and Ipsi movements (Figure 3\u2014figure supplement 1) and used these to visualize neural population trajectories (Figure 3A, top). We wished to assess a potential bias toward movement initiation in general, rather than withholding action (\u2018Initiation\u2019) and separately assess bias toward one specific action versus the other (\u2018Selection\u2019). We therefore defined \u2018Initiation\u2019 and \u2018Selection\u2019 axes using the common, and distinct, aspects of the neural trajectories respectively, during the 200 ms before action initiation. Specifically, the Initiation Axis is a line drawn between the average state-space positions at -200 and 0 ms relative to Center Out (disregarding the direction of movement). The Selection Axis connects the midpoints of the Contra and Ipsi trajectories (averaging across the same time epoch).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/82143/elife-82143-fig3-v2.jpg)\n\n**Figure 3.:** (A) Top, Overall SNr state-space trajectories before and during Contra (blue) and Ipsi movements (green), in the state space of the first three principal components (PCs). Trajectories show \u00b1250 ms around detected movement onset (Center Out, larger circles), with each small circle separated by 4 ms. \u2018Initiation Axis\u2019 joins the positions (black asterisks) 200 ms before and at action initiation (averaging Contra and Ipsi actions). \u2018Selection Axis\u2019 joins the means of each trajectory in the same epoch (colored asterisks). Middle, Comparing Maybe-Stop-Contra (orange) and No-Stop (blue) trials (\u00b1100 ms around Go! cue) in the same state space as above. Overall population state is visibly biased toward Ipsi along the Selection Axis. Bottom, Permutation tests of bias along each axis (average during \u2013200 to 0 ms relative to Go! cue), using all 10 PCs. Red bars, observed results; gray, distributions of surrogate data from 10,000 random shuffles of trial-type labels. Dark gray indicates 5% of distributions at each tail. (B) As A, but for Ipsi>Contra cells only. The proactive bias toward Ipsi along the Selection Axis is more clearly visible. For comparisons, the PC dimension scale and Initiation/Selection axis are matched to the graph in A. (C) As A\u2013B, but for Contra>Ipsi cells. These do not show a proactive bias on the Selection Axis, but on the Initiation Axis instead.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82143/elife-82143-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) PCA was performed using 500 ms epoch around Center Out for Contra and Ipsi movements (averaged, normalized firing rates were concatenated). (B) Variance explained by each of the first 10 principal components (PCs). (C) The first 10 PCs. (D) Population dynamics of different trial outcomes (200 ms around Go! cue) show different neural trajectory patterns. Permutation test shows positioning differences at Go! cue compared to correct contra go trials. The trials with wrong choice are biased toward Ipsi action initiation at the time of Go! cue. Formats of permutation histograms are same as in Figure 3.\n\nWhen we projected Maybe-Stop-Contra data onto these axes, we found that overall SNr population activity showed a clear shift before the Go! cue (Figure 3A, middle). This shift was especially pronounced on the Selection Axis, with a highly significant bias toward Ipsi (Figure 3A, bottom). There was also a significant bias on the Initiation Axis (toward movement). These two biases were associated with distinct functional cell classes (Figure 3B and C). Ipsi>Contra cells showed a strong Selection Axis bias, without a significant Initiation Axis bias (Figure 3B), and the converse was seen for Contra>Ipsi cells (Figure 3C). This finding provides further evidence that Ipsi>Contra cells generate an Ipsi bias during selective proactive inhibition.\n\nMoreover, the specific neural state of preparation was related to the subsequent specific behavioral outcome of the trial. Trajectories during wrong choice trials were biased both toward Ipsi action and toward initiation at the time of Go! cue (Figure 3\u2014figure supplement 1D), consistent with our prior GPe results (Gu et al., 2020). Trials in which rats failed to initiate actions (limited hold violations) did not show any statistically significant bias at the Go! cue time, although after the Go! cue the neural trajectory showed movement in the direction away from action initiation (Figure 3\u2014figure supplement 1D).\n\n### Less regular firing with proactive inhibition\n\nMovement slowing in PD has been associated with changes in basal ganglia firing patterns (Sharott et al., 2014; Tai, 2022). We therefore examined whether the slower movement initiation during proactive inhibition is similarly accompanied by changes in SNr firing patterns. For each neuron we calculated the coefficient of variation (CV) of inter-spike intervals, and the proportion of spikes within bursts (Figure 4A and B; using the Poisson surprise method; Leg\u00e9ndy and Salcman, 1985). To obtain sufficient numbers of inter-spike intervals, both analyses used longer (3 s) epochs before the Go! cue.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/82143/elife-82143-fig4-v2.jpg)\n\n**Figure 4.:** (A) An example neuron from a session with proactive inhibition effect, showing spike rasters (top; aligned on contra Go! cues, sorted by reaction times [RTs]), CVs of individual trials (bottom left, for the 3 s preceding Go! cues, Wilcoxon rank sum test) and autocorrelograms (bottom right; for the 3 s preceding Go! cues). CV: coefficient of variation of inter-spike intervals. (B) An example neuron from a session without a proactive inhibition effect. Same format as in (A). (C) Elevated CV and burst ratio of neurons recorded in sessions with behavioral evidence of proactive inhibition, compared to sessions without (Wilcoxon rank sum tests). This effect was also seen at the level of individual rats (Figure 4\u2014figure supplement 1C). Gray and red lines indicate mean of sessions with and without proactive inhibition effect, respectively. (D) Within-session comparison of Maybe-Stop-Contra and No-Stop trials shows increased CV and burst ratio when proactive inhibition is engaged (left). This effect is not present on sessions without significant proactive slowing of reaction times (right). Comparisons within each functional cell type and within each individual are shown in Figure 4\u2014figure supplements 2 and 3. Wilcoxon signed rank tests. Dotted black lines indicates zero and colored lines indicate mean of the neurons.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82143/elife-82143-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Sessions with high CV (averaged across units) shows longer reaction times (mean reaction times of all trials). Each data point shows the value of each session. (B) Sessions with bigger increase of CV during proactive inhibition shows bigger proactive inhibition effects. (C) Sessions with proactive inhibition effect show bigger CV compared to the sessions without proactive inhibition effect in individual rats (one-tailed Wilcoxon signed rank test, p<0.05).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/82143/elife-82143-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Both Contra>Ipsi and Ipsi>Contra type of cells show increased coefficient of variation(CV) and burst ratios with selective proactive inhibition, however only Contra>Ipsi cells shows a statistically significant effect (Wilcoxon signed rank test). Same format as in Figure 4D.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/82143/elife-82143-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Individual rat data shows firing rates (during 200 ms before Go! cue) and coefficient of variation (CV) (3 s before Go! cue) differences between two conditions. *p<0.05 without correction, **p<0.05 with Bonferroni correction (Wilcoxon signed rank tests in each subject). Error bar indicate \u00b1 SEM.\n\nProactive slowing was associated with altered spiking variability, in several distinct analyses. Neurons recorded in sessions with significant proactive inhibition behavior (n=446) showed more irregular and bursty firing compared to neurons (n=173) in sessions that did not (Figure 4C). The degree of irregularity was correlated with the mean session-wide RTs (Figure 4\u2014figure supplement 1A). Increased irregularity and bursting were also seen during Maybe-Stop-Contra trials compared to No-Stop trials; this occurred selectively in those sessions with a significant proactive inhibition effect (Figure 4D, left), and not those without (Figure 4D, right). Moreover, the degree of increased irregularity between conditions was correlated with the magnitude of the proactive effect on RTs on each session (Figure 4\u2014figure supplement 1B). Together, these results show that engaging proactive inhibition increases spiking variability both within- and between-sessions.\n\n### Proactive inhibition increases the variability of neural trajectories\n\nHow could increased spiking variability contribute to the slowing of RTs? At the population level, spike variability would correspond to more erratic state-space trajectories before the Go! cue (Figure 5A). This would result in a more variable state at the (unpredictable) time of Go! cue onset. If effective movement preparation involves positioning neural activity within a \u2018optimal subspace\u2019, as previously proposed (Churchland et al., 2006), this more variable state would in turn result in RTs that are longer (on average) and more variable (across trials).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/82143/elife-82143-fig5-v2.jpg)\n\n**Figure 5.:** (A) Conceptual illustration for the relationship between trajectory variability and reaction times (RTs). Larger fluctuations in trajectory will tend to result in a position further away from the \u2018optimal subspace\u2019 when the Go! cue arrives. (B) Individual trial trajectories (10 trials each for Contra and Ipsi movements) for one example session (n=46 neurons). Trajectories are shown after principal component analysis (PCA) for visualization. (C) Trajectory variability was defined as the mean of the Euclidean distances at each time point to the mean position over the trajectory (in the full neural state space, without PCA). (D) Example trajectories for Maybe-Stop-Contra (orange) and No-Stop (blue) trials, before the Go! cue. Trajectories are shown after PCA for visualization. (E) Correlations between coefficient of variation (CV) and trajectory variability for each session. (F) Trajectory variability increased on Maybe-Stop-Contra, compared to No-Stop trials. (G) Across trials, the state-space position at Go! cue (\u2013200 to 0 ms) was more variable for Maybe-Stop-Contra, compared to No-Stop trials. (H) Variability across trials of the state-space position at Go! cue (\u2013200 to 0 ms) was positively correlated with RT. Trials with less than 100 ms reaction times were excluded because they would have already initiated the movement trajectory. For (E\u2013H), sessions with more than five neurons (# of session = 27) were used for analysis (Wilcoxon signed rank test across session values). Dotted gray line indicates zero and red line indicates mean of the session values. Dark gray bars indicate sessions showing significant correlation (p<0.05 for (E), (H)), or conditional differences (Wilcoxon rank sum test, p<0.05 for (F), (G)).\n\nTo assess this idea we quantified trajectory fluctuations on individual trials (Figure 5B\u2013D). We included sessions (n=27) in which more than five neurons were recorded simultaneously, and examined trajectories in the 3 s window before the Go! cue (for comparison to our CV measure). In the same way as CV measures variability over time of an individual neuron (one dimension) compared to its mean rate, we can measure the within-trial variability of a population (n dimensions, without principal component analysis [PCA]) by comparing the Euclidean distance of each time point to the mean position (Figure 5C).\n\nAs expected, there was a strong relationship between CV of individual neurons and their corresponding population trajectory variability (Figure 5E). Furthermore, trajectory variability was significantly increased by proactive inhibition (Figure 5F). Trajectory variability increased during the hold period (examining the 0.8 s epoch just before the Go! cue, excluding trials with hold duration <0.8 s, Wilcoxon signed rank test, p=0.003), and was also observed even beforehand (0.8 s epoch before Nose In, Wilcoxon signed rank test, p=0.003). This increase in within-trial trajectory variability with proactive inhibition indeed resulted in a more variable state-space position at the time of Go! cue onset, across trials (Figure 5G). Consistent with our hypothesis, this variability of state-space position across trials was correlated with RT (Figure 5H).\n\n### Proactive modulation of firing rate, and variability, is dissociable\n\nChanges in preparation to move or stop can be evoked by explicit cues, as in our task design, but also by the subject\u2019s ongoing experience \u2013 notably, what happened on the previous trial (Bissett and Logan, 2011; Pouget et al., 2011). We therefore examined how such ongoing experience affects the proactive influences over SNr firing. Regardless of previous trial-type Maybe-Stop-Contra trials had slower RT (Figure 6, top row), and an Ipsi-biased SNr state-space position (Figure 6, third row). By contrast, the increased CV in SNr spiking was particularly apparent following Stop-fail trials (Figure 6, bottom). This suggests that increased spike variability occurs when rats are especially concerned to avoid hasty responses, having just failed to sufficiently restrain behavior on the previous trial. To further assess whether increased SNr variability is an adaptive response to excessive haste, we examined the CV of trials following other types of errors (Figure 6\u2014figure supplement 1). Consistent with the hypothesis, CV significantly increased after premature responses (Center-out before Go! cue), but not after other types of error trials (Wrong choices, and failures to respond within the RT limit).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/82143/elife-82143-fig6-v2.jpg)\n\n**Figure 6.:** Differences in reaction time, firing rates, selection axis positions, and coefficients of variation (CVs) of Maybe-Stop-Contra trials, compared to the No-stop condition (zero), and separated by previous trial type. The effect of previous trial type reached significance for the difference in CV (Friedman\u2019s test, X2(3)=13.38, p=0.004), but not for contra go RT (X2(3)=2.84, p=0.42) nor in firing rates (X2(3)=5.09, p=0.17). Firing rates and selection axis measures use Ipsi>Contra cells (during 200 ms before Go! cue); all cells are included in the CV calculation. *p<0.05 with Bonferroni multiple comparison correction (Compared to No-Stop trials, permutation test as in Figure 3 for Selection axis, and Wilcoxon signed rank test for others). Error bars are \u00b1 SEM across sessions (n=60) for reaction times and across neurons (n=446) for firing rates and CV.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82143/elife-82143-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Differences in reaction time, firing rates, and coefficients of variation (CVs) of post-error trials, compared to the No-stop condition (zero, including all trials), and separated by previous error type (same format as Figure 6).Premature response refers to action initiation before the Go! cue (Center Out during foreperiod; these premature responses are excluded in all other analyses). A significant CV increase was specifically observed after Stop-failures and premature responses, but not after other error types. The CV increase after premature responses is seen for both Maybe-Stop and No-stop conditions.\n\n## Discussion\n\nOur capacity to inhibit actions and thoughts can be influenced by a wide range of factors (Bari and Robbins, 2013). These include external cues (such as warning stimuli) and \u2018internal\u2019 processes such as attention and motivation (Meyer and Bucci, 2016). Our experimental design provides some useful constraints on which factors are relevant to our results. We used a standard, operational definition of selective proactive inhibition: slowing of RTs for the particular movement that might need to be cancelled. Since this behavioral effect was observed even when no Stop! cue was actually presented, and was direction-selective, it cannot be explained simply by (for example) priming of the more global, cue-evoked Stop mechanisms that support reactive inhibition (i.e. \u2018preparation to stop\u2019). Instead, it implies an altered state already present by the time of the Go! cue.\n\nWe found evidence for this altered state in two aspects of SNr spiking. A subpopulation of movement-selective SNr neurons showed elevated firing before the Go! cue, and this was associated with a shift in population activity away from the specific restrained action and toward the alternative. At the same time, more erratic SNr firing results in a more variable state at the time of the Go! cue. This variability is associated with slowed RTs, plausibly because effective movement preparation involves achieving a more constrained range of network activity. Moreover, these firing rate and variability modulations reflect two dissociable mechanisms for proactive control, as they were recruited differently depending on events on the prior trial.\n\n### Basal ganglia dynamics and the nature of restraint\n\nOur results add to prior evidence that, beyond simple sensory or motor correlates, SNr firing is modulated by internal factors such as task context (Hikosaka and Wurtz, 1983a; Lintz and Felsen, 2016). At the same time our operational definition of proactive inhibition does not fully constrain which internal factors are at play \u2013 and these may vary both within, and between, individual subjects. Basal ganglia activity is especially affected by changes in reward expectation (Lauwereyns et al., 2002) including in SNr (Sato and Hikosaka, 2002; Yasuda and Hikosaka, 2017), producing faster RTs toward more rewarding movements. In our proactive task the Maybe-Stop direction receives rewards at a lower rate (due to failures-to-Stop), so asymmetrical reward expectation might be at least partially responsible for the neural and choice bias toward Ipsi movements on Maybe-Stop-Contra trials. Moreover, this bias could have produced pre-selection of the Ipsi movement, a factor also known to modulate SNr activity (Basso and Wurtz, 2002). However, the slower Contra RTs on Maybe-Stop-Contra trials were not accompanied by faster Ipsi RTs, suggesting that slowing of Contra movements did not result simply from a greater preparation of Ipsi movements.\n\nAnother internal factor potentially at play is uncertainty: in the Maybe-Stop conditions there are more potential future action paths than under No-Stop. This could increase vacillation between different preparatory states as rats wait for the Go! cue (Kaufman et al., 2015; Rich and Wallis, 2016), with corresponding increases in neural variability.\n\nThe SNr state-space bias during proactive inhibition may arise from the \u2018indirect pathway\u2019 projection from GPe, which we found to have a similar neural bias toward Ipsi movements in a prior study (Gu et al., 2020). However, proactive inhibition also caused GPe population activity to shift further away from action initiation, which we did not observe for SNr. Furthermore, proactive inhibition produced no overall change in GPe firing rates, and we were not able to identify a distinct subpopulation of modulated GPe neurons. The reasons for these GPe: SNr differences are not clear. Recent modeling has demonstrated that the influence of the GABAergic GPe inputs over SNr neurons can be far more complex (Simmons et al., 2020) than shown in classic rate models of basal ganglia function, for example, switching from inhibitory to excitatory in an activity-dependent manner (Phillips et al., 2020). Alternatively, the shift in SNr Ipsi>Contra neuron firing with proactive inhibition may reflect other basal ganglia inputs, particularly the direct pathway input from striatum, or hyperdirect via the STN (Schmidt et al., 2013).\n\n### Impact on downstream targets\n\nHow might the elevated activity of SNr Ipsi>Contra cells help restrain actions? To some extent, this elevation is compatible with classic models in which pauses in basal ganglia outflow disinhibit downstream targets to evoke movement (Chevalier and Deniau, 1990). Increased SNr activity while waiting for a Go! cue would enhance inhibition of movements, and the release of this inhibition might require longer to achieve, extending RTs. However, many of the Ipsi>Contra cells with elevated firing in the Maybe-Stop condition did not have movement-related pauses, but rather increases (Figure 2\u2014figure supplement 2A). Such increasing-type SNr cells have been commonly reported (Bryden et al., 2011; Joshua et al., 2009; Lintz and Felsen, 2016), but their functional roles remain unclear. They may help suppress competing, alternative actions (Gulley et al., 2002), by acting either on downstream targets or through collateral inhibition of other SNr cells (Brown et al., 2014). Further studies, likely incorporating additional techniques, will be needed to resolve these and other possibilities.\n\n### Behavioral control and neural variability\n\nOur study also leaves unresolved the origins of the increased SNr spike variability we observed with proactive inhibition. Like GPe and STN neurons, SNr neurons are intrinsic pacemakers that spontaneously fire regularly even if their inputs are blocked (Zhou and Lee, 2011). These inputs \u2013 which include the aforementioned direct and indirect pathways, and also extensive local collaterals within SNr (Brown et al., 2014; Mailly et al., 2003) \u2013 thus alter SNr spiking by either accelerating or delaying the occurrence of the next spike. Changes in spike time variability presumably reflect either changes in local network properties, for example, due to neuromodulation (Delaville et al., 2012) or changes in the statistics of extrinsic inputs. Causal manipulation of specific incoming synapse sets within SNr (e.g. optogenetic suppression of GPe or STN inputs) might usefully reveal the origins of neural variability and establish its contribution to proactive inhibition.\n\nMore variable SNr inter-spike intervals within-trials were associated with more variable trajectories through a more variable network state at Go! cue, and longer and more variable RTs. In the cortex, decreases in spike variability have been previously linked to various processes including stimulus onset (Churchland et al., 2010), attention (Cohen and Maunsell, 2009), and movement preparation (Churchland et al., 2006). There is also evidence of within-trial changes in spike variability in the striatum (Berke, 2011). To our knowledge, there are no prior observations of specific task cues evoking increases in variability between or within trials. Our finding that variability increases with proactive inhibition \u2013 in particular following Stop-fail or premature trials \u2013 suggests that variability might be actively elevated as part of a behavioral strategy. This would fit with proposals that neural variability can confer behavioral advantages, such as increased flexibility (Waschke et al., 2021). Alternatively, increased neural variability with proactive inhibition may simply reflect the absence of a reduction in variability that accompanies movement preparation. In this way, preparation to stop would consist, at least in part, of less preparation to go. Either way, our results demonstrate that cognitive control strategies can operate through shifts in neural variability.\n\nConnecting single-neuron measures of variability to state-space concepts of movement preparation offers an intriguing perspective on PD, which is characterized by both slowed movements (Low et al., 2002) and elevated single-neuron spike variability (Dorval et al., 2008; Lobb, 2014; Willard et al., 2019). A more variable state of preparation may help explain why average RTs and movement times are slowed in PD, yet the fastest movements are still preserved (Mazzoni et al., 2007). An important goal for future studies is to better understand how shifts in neural variability occur in the basal ganglia, and whether they originate from the same mechanisms during both proactive inhibition and PD.\n\n## Materials and methods\n\n### Animals\n\nAll animal experiments were approved by the University of California, San Francisco Committee for the Use and Care of Animals (#AN181071). Adult male Long-Evans rats were housed on a 12 hr/12 hr reverse light-dark cycle, with training and testing performed during the dark phase.\n\n### Behavior\n\nThe rat proactive stop task has been previously described in detail (Gu et al., 2020). Briefly, rats were trained in an operant chamber (Med Associates, Fairfax, VT) which had five nose-poke holes on one wall, a food dispenser on the opposite wall, and a speaker located above the food port. Each trial starts with one of the three starting ports illuminated to indicate the Stop! cue probabilities (\u2018Light On\u2019), and the same start port was repeated for 10\u201315 trials. Inter-trial intervals were randomly selected between 5 and 7 s. The mapping of stop probabilities to nose-poke locations are counterbalanced between rats but maintained in each rat (Table 1).\n\n### Electrophysiology\n\nWe recorded SNr data from 10 rats (all animals in which we successfully recorded SNr neurons during contraversive proactive inhibition). Each rat was implanted with 15 or 30 tetrodes in bundles bilaterally targeting SNr (Figure 2\u2014figure supplement 1). Wide-band (0.1\u20139000 Hz) electrophysiological data were recorded with a sampling rate of 30,000/s using an Intan RHD2000 recording system (Intan Technologies). All signals were initially referenced to a skull screw (tip-flattened) on the midline 1 mm posterior to lambda. For spike detection we re-referenced to an electrode common average, and wavelet-filtered (Wiltschko et al., 2008) before thresholding. For spike sorting we performed automatic clustering units using MountainSort Chung et al., 2017 followed by manual curation of clusters. Approximately every two to three sessions, screws were turned to lower tetrodes by 100\u2013160 \u00b5m; to avoid duplicate neurons, we did not include units from the same tetrode from multiple sessions unless the tetrodes had been moved between those sessions. We further excluded a small number of neurons on the same tetrode that appeared to be potential duplicates based on waveforms and firing properties (e.g. firing rates, CV, and behavioral correlations), even though the tetrode had been moved. After recording was complete, we anesthetized rats and made small marker lesions by applying 5\u201310 \u00b5A current for 20 s on one or two wires of each tetrode. After perfusing the rats, tissue sections (at 40 \u00b5m) were stained with cresyl violet or with CD11b antibody and compared to the nearest atlas section (Paxinos and Watson, 2006).\n\n### Data analysis\n\n#### Firing rates and functional classification of neurons\n\nFiring rates were smoothed using a Gaussian kernel (30 ms SD) and normalized (Z-scored) using each neuron\u2019s session-wide mean and SD. Most analyses were done using these normalized firing rates, except the fraction of units (Figure 2A and G, bottom, using binned firing rates) and bursting analysis (Figure 4, see below).\n\nUnits were categorized into increase or decrease types using the \u2018Initiation score\u2019. For example, if the firing at movement onset was significantly increased compared to the 200 ms before movement onset (Wilcoxon signed rank test, p<0.05; including all successful go trials in the No-Stop condition), the cell is defined as \u2018increase type\u2019. The categorization into Contra>Ipsi or Ipsi>Contra types was done using the \u2018Selection score\u2019; for example, if the mean firing rates during the 200 ms preceding movement onset was significantly bigger for the Ipsiversive compared to Contraversive movement during the No-Stop condition (Wilcoxon signed rank test, p<0.05), the cell was defined as \u2018Ipsi>Contra type\u2019.\n\n#### Bursting\n\nSpike bursts were detected using the Poisson surprise method (Leg\u00e9ndy and Salcman, 1985) with a surprise threshold of 5, and the burst ratio was calculated as the number of spikes fired in bursts divided by the number of all spikes in each unit. The CV of inter-spike intervals and burst ratio were calculated in each trial using a 3 s time window before the Go! cue, and averaged across all trials (for sessions with/without proactive inhibition comparison) or across each trial type (for conditional differences).\n\nPCA was done largely as previously described (Gu et al., 2020). The smoothed, normalized average time series for Contra and Ipsi actions (500 ms each, around Center Out, Figure 3\u2014figure supplement 1A) were used for PCA. This population activity matrix R is zero-centered, and after using MATALB \u2018svd\u2019 function, the PC scores (S) was calculated as S=RW, where W is the right singular vectors.\n\nTo examine proactive inhibition effect at the level of the whole SNr population, we defined \u2018Selection\u2019 and \u2018Initiation\u2019 axes using activity during Contra and Ipsi actions. To match the analysis to the Initiation and Selection scores (Figure 2), we defined the Initiation Axis by connecting state-space points 200 ms before and at action initiation (averaging Contra and Ipsi trajectories together), and the Selection Axis by connecting the mean of Contra trajectories to the mean of Ipsi trajectories (again using the epoch from \u2013200 to 0 ms relative to action initiation). The projections onto the Initiation and Selection Axis were calculated as the dot product of the state-space position vector and the axis vector.\n\nFor mapping of before Go!cue time series data (R\u2019) into the Contra and Ipsi action related PC dimension, new PC scores were calculated by S\u2019=R\u2019W after matching the zero values of R\u2019 to the matrix R. For subpopulation analysis (Figure 3B, C), selected unit\u2019s population vector (e.g. R(ipsi)) and the right singular vectors (e.g. W(ipsi)) were used to calculate the selective unit\u2019s PC scores (S(ipsi)=R(ipsi)W(ipsi)).\n\n#### Permutation tests\n\nTo test if conditional differences are statistically significant, we ran permutation tests by randomly shuffling the two comparing trial conditions for each neuron (10,000 shuffles). The original distance between the two comparing conditions were compared to the distance between shuffled trial conditions after projecting the distances onto the Initiation or Selection axis.\n\n#### Variability of neural trajectories\n\nTo examine how the increased variability of individual neurons affects population dynamics, we calculated the temporal variability of neural state-space trajectories. We included data from 3 s time windows before the Go! cue, in each session (n=27) with at least 5 recorded units and a significant proactive inhibition effect. Trajectory variability V corresponds to the mean Euclidean distance between each time point of the trajectory and the center of the trajectory, that is, how much the trajectory wanders around. For this analysis, we did not apply PCA to reduce dimensionality. Also, the trajectory variability was normalized by the number of neurons in each session. Thus, for example, if the normalized FR of population neurons (N) at time (t) is defined as a vector $R_{t}\u20d1$ , and the center of trajectory (mean FR across t=1,\u2026,T, where T=1500 for 3 s time window with 500 Hz sampling rate) is defined as a vector $R_{c}\u20d1$. Variability (V) of a neural trajectory is defined as:\n\n$$\nV=\\frac{1}{T\\sqrt{N}}\\sumt=1T||R_{t}\u2192\u2212R_{c}\u2192\u00a0||\n$$\n",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "558a2b42-c598-4357-a348-6fb6999ce3e8",
+      "submission_id": "1ae67095-5928-434b-84f7-2b0ac1b344ed",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Aryn H Gittis, https://ror.org/05x2bcf33 Carnegie Mellon University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82143.sa0](https://doi.org/10.7554/eLife.82143.sa0)\n\nThe article provides an interesting and timely insight into the role of the basal ganglia output in proactive inhibition. By examining single-cell responses as well as population activity, the authors establish neural signals of behavioral control and show that animals' outcome history influences both firing rates and variability of basal ganglia output activity.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Aryn H Gittis, https://ror.org/05x2bcf33 Carnegie Mellon University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82143.sa1](https://doi.org/10.7554/eLife.82143.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Altered basal ganglia output during self-restraint\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Joshua Gold as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Gidon Felsen (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nEnthusiasm is high for this study which was viewed as important for advancing our understanding of the role of the basal ganglia in behavioral inhibition. Although no new experiments are requested, the manuscript would benefit from some revisions to increase its clarity and a clearer discussion of how these results fit into the broader field.\n\nA list of essential revisions to improve the clarity and presentation of the work are:\n\n1. An additional analysis where within-session performance is analyzed.\n\n2. Figure 2C-E: Population heat maps should be separated for ipsi vs. contra movements.\n\n3. Clarify whether data for \"maybe stop\" trials only include Go trials, or if it also includes (failed) stop trials, and consider comparing data for these two types of trials, if that was not already done.\n\n4. The Discussion section should be expanded to include more discussion of prior literature concerning how SNr neurons respond during movement and how upstream and downstream nuclei might be affected.\n\n5. The writing was too concise in some places, particularly for Figure 2 and 3. Expansion of the rationale and methods for the analytical approaches used in these figures will clarify the paper.\n\nReviewer #1 (Recommendations for the authors):\n\n\u2013 In Figure 2C, E, it would be helpful to see the population heat maps separately for ipsilateral and contralateral movements (as they are shown in the summary plots). Given that so many SNr neurons are direction selective, it is difficult to interpret activity averaged over both directions.\n\nReviewer #2 (Recommendations for the authors):\n\nI first recommend better describing and sometimes even motivating the methodologic choices of the present work. A significant part of the methods is described in figure legends. Sometimes the authors refer to a previous publication (Gu et al., 2020) instead of providing the information. This is fine to some extent, but I think that in the present case, including more information in the Methods section will help readers to better appreciate the authors' work. For example, it is unclear how \"task-related\" neurons have been categorized as such. It is also not clear to me what is the added value of the state-space analyses compared to the single-unit approach, especially those shown in Figure 3. As I understand it, the computation through the dynamics framework does not consider the \"task-related\" activity of cells as an important criterion. Instead, all cells are included to extract latent dynamics which, as a whole, are supposed to underlie behavior. I think that the two ways of analysing neural activity should be better motivated. Also, in the analysis shown in Figure 3, I wonder why trajectories of neurons recorded during sessions in which rats successfully applied proactive inhibition are not compared against trajectories depicted by neurons monitored during sessions in which rates failed to apply inhibition.\n\nMy second recommendation is to improve the Discussion section by commenting with more details on the points mentioned above: the unexpected modulation of SNr neurons given their pre-movement pattern; the comparison between GPe and SNr; the impact of SNr activity on target areas and, more globally, the broad picture of the role of the basal ganglia during movement inhibition control (both active and reactive).\n",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b9210f94-787a-4fca-9354-02b414112483",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C1",
+      "claim": "Multiple neural circuits involved in behavioral inhibition converge upon the substantia nigra pars reticulata (SNr).",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple neural circuits involved in behavioral inhibition converge upon a key basal ganglia output nucleus, the substantia nigra pars reticulata (SNr).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as established context for the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "5a9e6280-4f15-4fcc-a246-e55993dd1d2d",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C2",
+      "claim": "Action restraint is visible as direction-selective slowing of reaction times.",
+      "claim_type": "EXPLICIT",
+      "source": "This action restraint \u2013 visible as direction-selective slowing of reaction times \u2013 altered both rates and patterns of SNr spiking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript defines action restraint operationally through behavioral measurement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "529412e2-1ebd-41f2-ac81-8d4da0414cf1",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C3",
+      "claim": "Overall SNr firing rate was elevated before the Go! cue during proactive inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall firing rate was elevated before the Go! cue, and this effect was driven by a subpopulation of direction-selective SNr neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "62a65e49-27d7-4852-9a52-d289dee81c6a",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C4",
+      "claim": "The elevation in SNr firing rate before the Go! cue was driven by a subpopulation of direction-selective SNr neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall firing rate was elevated before the Go! cue, and this effect was driven by a subpopulation of direction-selective SNr neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated in Figure 2F-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "726a6a45-32a8-4809-a929-39ff416cfd5d",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C5",
+      "claim": "In neural state space, proactive inhibition corresponded to a shift away from the restrained movement.",
+      "claim_type": "EXPLICIT",
+      "source": "In neural state space, this corresponded to a shift away from the restrained movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated through state-space analysis in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "efad0b43-6bda-4efa-876a-5d49fc60bb87",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C6",
+      "claim": "SNr neurons showed more variable inter-spike intervals during proactive inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "SNr neurons also showed more variable inter-spike intervals during proactive inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "52d38e4d-777f-4930-a4c4-d749ed76af08",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C7",
+      "claim": "More variable inter-spike intervals corresponded to more variable state-space trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "This corresponded to more variable state-space trajectories, which may slow reaction times via reduced preparation to move.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "ca52cbc6-9a5c-465c-96ef-21a5d45d19b6",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C8",
+      "claim": "More variable state-space trajectories may slow reaction times via reduced preparation to move.",
+      "claim_type": "EXPLICIT",
+      "source": "This corresponded to more variable state-space trajectories, which may slow reaction times via reduced preparation to move.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation stated in the abstract.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "23ba18db-f10e-4c6c-9d42-521834aeeb55",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C9",
+      "claim": "Behavioral inhibition is central to cognitive control.",
+      "claim_type": "EXPLICIT",
+      "source": "This capacity for behavioral inhibition is considered central to cognitive control (Bari and Robbins, 2013), and is compromised in a range of neurological and psychiatric disorders (Chambers et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "b7ddbb4c-2c5c-401d-9cff-21d4724680fd",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C10",
+      "claim": "Behavioral inhibition is compromised in a range of neurological and psychiatric disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "This capacity for behavioral inhibition is considered central to cognitive control (Bari and Robbins, 2013), and is compromised in a range of neurological and psychiatric disorders (Chambers et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "d9f6bbc5-40c7-419f-99a7-b3eb46cc29f1",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C11",
+      "claim": "Reactive inhibition involves fast cue responses in frontal cortex and basal ganglia pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Reactive inhibition has been shown to involve fast cue responses in frontal cortex and basal ganglia pathways (Jahanshahi et al., 2015; Wager et al., 2005), including from the subthalamic nucleus (STN) to SNr (Schmidt et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "bfe8fe94-4c84-4c9c-b0f1-39fa59f940b9",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C12",
+      "claim": "Reactive inhibition involves fast cue responses from the subthalamic nucleus (STN) to SNr.",
+      "claim_type": "EXPLICIT",
+      "source": "Reactive inhibition has been shown to involve fast cue responses in frontal cortex and basal ganglia pathways (Jahanshahi et al., 2015; Wager et al., 2005), including from the subthalamic nucleus (STN) to SNr (Schmidt et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "3be69863-5aef-4ca7-89f7-2a954e5058ba",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C13",
+      "claim": "Rapid response to stimuli can transiently and broadly retard action initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "This rapid response to stimuli can transiently, and broadly, retard action initiation, providing time for a second set of basal ganglia mechanisms to cancel actions (Mallet et al., 2016; Schmidt and Berke, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "d0ec27f4-b651-406a-b983-7ff5b7bb7b48",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C14",
+      "claim": "Proactive inhibition refers to an altered state of preparation in which particular actions are restrained.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, 'proactive' inhibition refers to an altered state of preparation, in which particular actions are restrained (Cai et al., 2011; Claffey et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "60453617-2b3c-41c0-9b5c-09b55357960a",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C15",
+      "claim": "Proactive inhibition is behaviorally apparent as longer reaction times selectively for the restrained action.",
+      "claim_type": "EXPLICIT",
+      "source": "Proactive inhibition has been argued to be especially important for human life (Aron, 2011), and is behaviorally apparent as longer reaction times (RTs) selectively for the restrained action.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established behavioral signature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "df8c756b-bb49-42dc-9eb9-1d0051748508",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C16",
+      "claim": "Proactive inhibition has been argued to be especially important for human life.",
+      "claim_type": "EXPLICIT",
+      "source": "Proactive inhibition has been argued to be especially important for human life (Aron, 2011), and is behaviorally apparent as longer reaction times (RTs) selectively for the restrained action.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "904a22f5-7ade-4e90-a6b7-5ad64f1998ad",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C17",
+      "claim": "Proactive inhibition has been proposed to involve the pathway from striatum 'indirectly' to SNr, via globus pallidus pars externa (GPe).",
+      "claim_type": "EXPLICIT",
+      "source": "The underlying mechanisms are not well understood, but have been proposed (Aron, 2011) to involve the pathway from striatum 'indirectly' to SNr, via globus pallidus pars externa (GPe).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis from prior literature cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "fe23e62f-86dc-4a30-852a-d1887b84c354",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C18",
+      "claim": "The state of being prepared to stop did not involve an overall net change in GPe firing rate.",
+      "claim_type": "EXPLICIT",
+      "source": "In a prior study (Gu et al., 2020) we therefore recorded from GPe neurons as rats engaged proactive inhibition toward a specific action. The state of being prepared to stop did not involve an overall net change in GPe firing rate, but rather a shift at the level of neural population dynamics away from action initiation, and toward the alternative action.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a prior study by the same authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "800102c6-60dc-45ab-bbb3-fa43aeadb189",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C19",
+      "claim": "The state of being prepared to stop involved a shift at the level of GPe neural population dynamics away from action initiation, and toward the alternative action.",
+      "claim_type": "EXPLICIT",
+      "source": "In a prior study (Gu et al., 2020) we therefore recorded from GPe neurons as rats engaged proactive inhibition toward a specific action. The state of being prepared to stop did not involve an overall net change in GPe firing rate, but rather a shift at the level of neural population dynamics away from action initiation, and toward the alternative action.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a prior study by the same authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "c940e20c-b988-4f23-a3d9-6735138016d4",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C20",
+      "claim": "Basal ganglia output neurons are thought to affect behavior not just via their firing rates, but also via their firing patterns and synchrony.",
+      "claim_type": "EXPLICIT",
+      "source": "Basal ganglia output neurons are thought to affect behavior not just via their firing rates, but also via their firing patterns and synchrony (Rubin et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "0d284ae8-d3fb-4fc3-bc7b-e0ca6670caaa",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C21",
+      "claim": "Parkinson's disease (PD) is associated with an increase in firing variability and synchronous bursting, often without rate changes.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, Parkinson's disease (PD) is associated with an increase in firing variability and synchronous bursting, often without rate changes (Lobb, 2014; Willard et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "ab2680b9-6916-4e46-bdc6-14a46695dabf",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C22",
+      "claim": "Parkinson's disease is characterized by slowed movement initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "As PD is characterized by slowed movement initiation (Low et al., 2002), we assessed whether related physiological changes are present when movements are slowed as the result of proactive inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "dd86783a-fc77-4344-97ed-5f8a4d7b85af",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C23",
+      "claim": "Rats responded to Go! cues with rapid leftward or rightward movements.",
+      "claim_type": "EXPLICIT",
+      "source": "Rats responded to Go! cues with rapid leftward or rightward movements, but also prepared to cancel one of these movement directions on trials when a Stop! cue might occur.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the behavioral task used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "10fb1ef4-41b7-417a-8230-2f19bf134eff",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C24",
+      "claim": "Rats prepared to cancel one of the movement directions on trials when a Stop! cue might occur.",
+      "claim_type": "EXPLICIT",
+      "source": "Rats responded to Go! cues with rapid leftward or rightward movements, but also prepared to cancel one of these movement directions on trials when a Stop! cue might occur.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the behavioral task design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "3ea0dabf-c278-4b95-b3c1-c6ca5442b3d8",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C25",
+      "claim": "Rats needed to maintain their position in the start port for a variable delay (500\u20131250 ms, uniform distribution) until a Go! cue was presented.",
+      "claim_type": "EXPLICIT",
+      "source": "To proceed, they need to maintain this position for a variable delay (500\u20131250 ms, uniform distribution) until a Go! cue is presented (1 or 4 kHz tone, indicating a leftward or rightward movement, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the task structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "ef3c4869-7897-4356-8b41-66e5c56d8ee8",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C26",
+      "claim": "A 1 kHz tone indicated a leftward movement and a 4 kHz tone indicated a rightward movement.",
+      "claim_type": "EXPLICIT",
+      "source": "To proceed, they need to maintain this position for a variable delay (500\u20131250 ms, uniform distribution) until a Go! cue is presented (1 or 4 kHz tone, indicating a leftward or rightward movement, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the task cue structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "8f97e25d-488f-4efd-8755-3526b88070e3",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C27",
+      "claim": "If the movement was initiated rapidly after the Go! cue (RT limit <800 ms) and completed correctly and promptly (movement time limit, MT <500 ms), rats were rewarded with a sugar pellet.",
+      "claim_type": "EXPLICIT",
+      "source": "If the movement is initiated rapidly after the Go! cue (RT limit <800 ms), and completed correctly and promptly (movement time limit, MT <500 ms), rats are rewarded with a sugar pellet dispensed at a separate food hopper.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the task reward contingencies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "e3195b5c-3d85-4155-96fc-119ac8c461e7",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C28",
+      "claim": "On a subset of trials, the Go! cue was followed by a Stop! cue (white noise burst; delay after Go! cue onset = 100\u2013250 ms).",
+      "claim_type": "EXPLICIT",
+      "source": "On a subset of trials, the Go! cue is followed by a Stop! cue (white noise burst; delay after Go! cue onset = 100\u2013250 ms).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the task structure for stop trials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "cc3b6ce1-304f-489d-b8b8-0bbbbc1feae8",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C29",
+      "claim": "The Stop! cue indicated that the rat should not initiate a movement, and instead hold their nose in the Center port for at least 800 ms to trigger reward delivery.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the rat should not initiate a movement, and instead hold their nose in the Center port for at least 800 ms (after Go! cue onset) to trigger reward delivery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the task requirements for stop trials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "ed29ec2c-ccdb-4532-a43e-55ccece4450e",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C30",
+      "claim": "The three possible start ports were associated with different Stop! cue probabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "To probe selective proactive inhibition, the three possible start ports were associated with different Stop! cue probabilities (counterbalanced across rats; Gu et al., 2020, Figure 1B, Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the task design for probing selective proactive inhibition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "4e133c3b-ce88-4445-bde4-61b69d9d1f97",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C31",
+      "claim": "SNr microelectrode recordings were obtained from 10 rats that had successfully learned the proactive task.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained SNr microelectrode recordings from rats (n=10) that had successfully learned this proactive task, as indicated by significant and selective slowing of RTs for movements contraversive to the implant side (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental subjects and inclusion criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "3fbbceae-a29a-4ba9-a0c3-0e5ce85e341e",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C32",
+      "claim": "Successful learning of the proactive task was indicated by significant and selective slowing of RTs for movements contraversive to the implant side.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained SNr microelectrode recordings from rats (n=10) that had successfully learned this proactive task, as indicated by significant and selective slowing of RTs for movements contraversive to the implant side (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the behavioral criterion for task learning.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "95751830-cb75-43fd-bcf3-21bf8e679212",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C33",
+      "claim": "60 sessions showed significant proactive inhibition effect.",
+      "claim_type": "EXPLICIT",
+      "source": "In the same rats we compared SNr activity in sessions in which this proactive effect was significant (n=60), to sessions in which it was not (n=25; Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the number of sessions with the behavioral effect.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "3087e7d4-ddac-4963-8a25-99fab2818994",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C34",
+      "claim": "25 sessions did not show significant proactive inhibition effect.",
+      "claim_type": "EXPLICIT",
+      "source": "In the same rats we compared SNr activity in sessions in which this proactive effect was significant (n=60), to sessions in which it was not (n=25; Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the number of sessions without the behavioral effect.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "0f6544ad-f94b-4c70-8229-25a35c1e4ec2",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C35",
+      "claim": "Sessions with significant proactive inhibition effect showed RT slowing selectively for the Maybe-Stop direction (Wilcoxon signed rank tests on median RTs of Maybe-Stop-Contra versus No-Stop: Contra cues: z=6.8, p=1.1 \u00d7 10-11).",
+      "claim_type": "EXPLICIT",
+      "source": "The sessions with significant proactive inhibition effect show RT slowing selectively for the Maybe-Stop direction (Wilcoxon signed rank tests on median RTs of Maybe-Stop-Contra versus No-Stop: Contra cues: z=6.8, p=1.1 \u00d7 10-11), but not for the other direction (Ipsi cues: z=\u20131.2, p=0.22) (Figure 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from behavioral data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "0776139e-91b3-49ad-a084-898556de5f61",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C36",
+      "claim": "Sessions with significant proactive inhibition effect did not show RT slowing for the Ipsi direction (Ipsi cues: z=\u20131.2, p=0.22).",
+      "claim_type": "EXPLICIT",
+      "source": "The sessions with significant proactive inhibition effect show RT slowing selectively for the Maybe-Stop direction (Wilcoxon signed rank tests on median RTs of Maybe-Stop-Contra versus No-Stop: Contra cues: z=6.8, p=1.1 \u00d7 10-11), but not for the other direction (Ipsi cues: z=\u20131.2, p=0.22) (Figure 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from behavioral data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "5bab454d-95fd-46d2-bc8a-48dc37cea31b",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C37",
+      "claim": "On Maybe-Stop-Contra trials rats were more likely to fail to respond quickly enough (RT limit errors; Wilcoxon signed rank tests, z=6.4, p=1.5 \u00d7 10-10).",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, on Maybe-Stop-Contra trials rats were more likely to fail to respond quickly enough (RT limit errors; Wilcoxon signed rank tests, z=6.4, p=1.5 \u00d7 10-10) and to select the wrong choice (i.e. not matching the Go! cue; Wilcoxon signed rank tests, z=6.5, p=1.1 \u00d7 10-10).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from behavioral data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "9061016a-f7ea-40ba-840f-0c208eed7c94",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C38",
+      "claim": "On Maybe-Stop-Contra trials rats were more likely to select the wrong choice (Wilcoxon signed rank tests, z=6.5, p=1.1 \u00d7 10-10).",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, on Maybe-Stop-Contra trials rats were more likely to fail to respond quickly enough (RT limit errors; Wilcoxon signed rank tests, z=6.4, p=1.5 \u00d7 10-10) and to select the wrong choice (i.e. not matching the Go! cue; Wilcoxon signed rank tests, z=6.5, p=1.1 \u00d7 10-10).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from behavioral data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "013d2b87-cf19-4e28-93a0-c31d8f10f6a7",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C39",
+      "claim": "446 SNr neurons were recorded during sessions with significant proactive inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined the activity of individual SNr neurons (n=446; mean firing rate = 38 Hz, locations are shown in Figure 2\u2014figure supplement 1) recorded during the sessions with significant proactive inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample size for neural recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "af48b845-9c8f-4b08-ab00-05855082693c",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C40",
+      "claim": "The mean firing rate of recorded SNr neurons was 38 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined the activity of individual SNr neurons (n=446; mean firing rate = 38 Hz, locations are shown in Figure 2\u2014figure supplement 1) recorded during the sessions with significant proactive inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic of the neural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "7c9fd986-0b1f-4d25-b36a-82f8d052219d",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C41",
+      "claim": "Average firing rates were significantly higher in the Maybe-Stop-Contra condition before the Go! cue.",
+      "claim_type": "EXPLICIT",
+      "source": "Average firing rates were significantly higher in the Maybe-Stop-Contra condition (Figure 2A, top), and this difference was generated by a significant fraction of SNr neurons (Figure 2A, bottom).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the text and shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "44111976-ff17-4c27-ac49-5c088e613591",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C42",
+      "claim": "The difference in firing rates between Maybe-Stop-Contra and No-Stop conditions was generated by a significant fraction of SNr neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Average firing rates were significantly higher in the Maybe-Stop-Contra condition (Figure 2A, top), and this difference was generated by a significant fraction of SNr neurons (Figure 2A, bottom).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "c729f524-7a0b-4499-9967-997bfd1aa7e2",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C43",
+      "claim": "Elevated SNr firing with action restraint was not observed in the sessions without significant behavioral evidence for proactive inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "This elevated SNr firing with action restraint was not observed in the sessions without significant behavioral evidence for proactive inhibition (Figure 2A, right; 173 neurons, mean FR = 44 Hz).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a control comparison stated in the text and shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "bb29055e-0918-4e4a-a13c-5954cfef131e",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C44",
+      "claim": "173 neurons were recorded in sessions without significant behavioral evidence for proactive inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "This elevated SNr firing with action restraint was not observed in the sessions without significant behavioral evidence for proactive inhibition (Figure 2A, right; 173 neurons, mean FR = 44 Hz).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample size for control sessions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "447afef8-6f43-41d3-8405-fa5643532ee9",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C45",
+      "claim": "The mean firing rate of neurons in sessions without proactive inhibition was 44 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "This elevated SNr firing with action restraint was not observed in the sessions without significant behavioral evidence for proactive inhibition (Figure 2A, right; 173 neurons, mean FR = 44 Hz).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic of the neural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "06dedfa0-b36b-403a-96c8-480d5bc5588e",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C46",
+      "claim": "Decreases in SNr firing shortly before movement onset are thought to enable movements by disinhibiting downstream structures including the superior colliculus.",
+      "claim_type": "EXPLICIT",
+      "source": "Decreases in firing shortly before movement onset are thought to enable movements, by disinhibiting downstream structures including the superior colliculus (Hikosaka and Wurtz, 1983b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "7bb6074b-c096-40e8-8308-55bfd7c0fb2f",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C47",
+      "claim": "Both increase-type and decrease-type neurons contributed to elevated SNr activity with action restraint.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to our hypothesis, both increase-type and decrease-type neurons contributed to elevated SNr activity with action restraint (Figure 2D, left).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding stated in the text and shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "7db561a2-3d7c-49bd-be0d-9eee5d41d3ea",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C48",
+      "claim": "There was no relationship between the extent of elevated firing in Maybe-Stop trials and the firing rate change before movement onset.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no relationship between the extent of elevated firing in Maybe-Stop trials, and the firing rate change before movement onset (Figure 2D, right).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding stated in the text and shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "3d06296c-1ff5-4f6c-b319-9a426de1b369",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C49",
+      "claim": "Neurons more active just before Ipsi compared to just before Contra movements ('Ipsi>Contra') showed elevated firing when Contra actions might need to be cancelled.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a significant relationship: neurons more active just before Ipsi compared to just before Contra movements ('Ipsi>Contra') showed elevated firing when Contra actions might need to be cancelled (Figure 2F and G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the text and shown in Figure 2F and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "42f87a07-3021-4a0f-8303-f24cfd4375d1",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C50",
+      "claim": "No relationship was found between proactive inhibition and neurons with 'Contra>Ipsi' selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "No such relationship was found for neurons with the opposite selectivity ('Contra>Ipsi'; Figure 2F and G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding stated in the text and shown in Figure 2F and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "ec37daed-c2ae-4ff6-90c6-8785b0d6ee46",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C51",
+      "claim": "Both subtypes of 'Ipsi>Contra' cells (those that preferentially increase firing with Ipsi movements and those that preferentially decrease firing with Contra movements) had elevated firing before the Go! cue on Maybe-Stop-Contra trials.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that both subtypes had elevated firing before the Go! cue on Maybe-Stop-Contra trials (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding stated in the text and shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "7624d69c-ab57-45d9-8e40-4e19c200d98d",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C52",
+      "claim": "Overall SNr population activity showed a clear shift before the Go! cue during Maybe-Stop-Contra trials.",
+      "claim_type": "EXPLICIT",
+      "source": "When we projected Maybe-Stop-Contra data onto these axes, we found that overall SNr population activity showed a clear shift before the Go! cue (Figure 3A, middle).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding stated in the text and shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "e79de293-69d7-49a2-8be0-fef4e4846445",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C53",
+      "claim": "The shift in SNr population activity was especially pronounced on the Selection Axis, with a highly significant bias toward Ipsi.",
+      "claim_type": "EXPLICIT",
+      "source": "This shift was especially pronounced on the Selection Axis, with a highly significant bias toward Ipsi (Figure 3A, bottom).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding stated in the text and shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "a66eb001-f7a5-46e5-817d-f0a54c54d12d",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C54",
+      "claim": "There was a significant bias on the Initiation Axis toward movement.",
+      "claim_type": "EXPLICIT",
+      "source": "There was also a significant bias on the Initiation Axis (toward movement).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding stated in the text and shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "e3f56433-cccf-4c05-8049-2ddf8e35f85a",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C55",
+      "claim": "Ipsi>Contra cells showed a strong Selection Axis bias, without a significant Initiation Axis bias.",
+      "claim_type": "EXPLICIT",
+      "source": "Ipsi>Contra cells showed a strong Selection Axis bias, without a significant Initiation Axis bias (Figure 3B), and the converse was seen for Contra>Ipsi cells (Figure 3C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding stated in the text and shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "9fbc499f-4429-4ff0-95b3-66d8d578adee",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C56",
+      "claim": "Contra>Ipsi cells showed a significant Initiation Axis bias without a Selection Axis bias.",
+      "claim_type": "EXPLICIT",
+      "source": "Ipsi>Contra cells showed a strong Selection Axis bias, without a significant Initiation Axis bias (Figure 3B), and the converse was seen for Contra>Ipsi cells (Figure 3C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding stated in the text and shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "ab5fbd93-53e6-4c2e-90ee-b3488a7a29af",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C57",
+      "claim": "Trajectories during wrong choice trials were biased both toward Ipsi action and toward initiation at the time of Go! cue.",
+      "claim_type": "EXPLICIT",
+      "source": "Trajectories during wrong choice trials were biased both toward Ipsi action and toward initiation at the time of Go! cue (Figure 3\u2014figure supplement 1D), consistent with our prior GPe results (Gu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding stated in the text and shown in Figure 3\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "bd2d903c-5592-4f5c-9fb0-d88aff5b8201",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C58",
+      "claim": "Trials in which rats failed to initiate actions (limited hold violations) did not show any statistically significant bias at the Go! cue time.",
+      "claim_type": "EXPLICIT",
+      "source": "Trials in which rats failed to initiate actions (limited hold violations) did not show any statistically significant bias at the Go! cue time, although after the Go! cue the neural trajectory showed movement in the direction away from action initiation (Figure 3\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding stated in the text and shown in Figure 3\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "f8aca82d-70dc-4434-9c8b-668da76d2d60",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C59",
+      "claim": "After the Go! cue, the neural trajectory on limited hold violation trials showed movement in the direction away from action initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Trials in which rats failed to initiate actions (limited hold violations) did not show any statistically significant bias at the Go! cue time, although after the Go! cue the neural trajectory showed movement in the direction away from action initiation (Figure 3\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding stated in the text and shown in Figure 3\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "18879158-9f08-48bd-bd7e-b6f9dee836d3",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C60",
+      "claim": "Movement slowing in PD has been associated with changes in basal ganglia firing patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Movement slowing in PD has been associated with changes in basal ganglia firing patterns (Sharott et al., 2014; Tai, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "dc3f6256-da99-4c1e-a464-66f59d207317",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C61",
+      "claim": "Neurons recorded in sessions with significant proactive inhibition behavior showed more irregular and bursty firing compared to neurons in sessions that did not.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons recorded in sessions with significant proactive inhibition behavior (n=446) showed more irregular and bursty firing compared to neurons (n=173) in sessions that did not (Figure 4C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding stated in the text and shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "ea0990ba-57ec-47dc-a8c7-871f3b1b8c76",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C62",
+      "claim": "The degree of irregularity was correlated with the mean session-wide RTs.",
+      "claim_type": "EXPLICIT",
+      "source": "The degree of irregularity was correlated with the mean session-wide RTs (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding stated in the text and shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "faad1784-86c6-4cc2-aa9e-e604a15bcc26",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C63",
+      "claim": "Increased irregularity and bursting were seen during Maybe-Stop-Contra trials compared to No-Stop trials, selectively in sessions with a significant proactive inhibition effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased irregularity and bursting were also seen during Maybe-Stop-Contra trials compared to No-Stop trials; this occurred selectively in those sessions with a significant proactive inhibition effect (Figure 4D, left), and not those without (Figure 4D, right).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding stated in the text and shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "2e16eda2-e4eb-4fce-9602-2059d058f1ff",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C64",
+      "claim": "The degree of increased irregularity between conditions was correlated with the magnitude of the proactive effect on RTs on each session.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the degree of increased irregularity between conditions was correlated with the magnitude of the proactive effect on RTs on each session (Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding stated in the text and shown in Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "e7aa89a8-585d-4ed0-85ea-9acab00cae9e",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C65",
+      "claim": "Engaging proactive inhibition increases spiking variability both within- and between-sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results show that engaging proactive inhibition increases spiking variability both within- and between-sessions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the findings in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "a8e3f0ab-beb7-46a7-993c-8bd8c7974da1",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C66",
+      "claim": "More variable SNr inter-spike intervals within-trials were associated with more variable trajectories through a more variable network state at Go! cue, and longer and more variable RTs.",
+      "claim_type": "EXPLICIT",
+      "source": "More variable SNr inter-spike intervals within-trials were associated with more variable trajectories through a more variable network state at Go! cue, and longer and more variable RTs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from the trajectory variability analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "60ee4c2c-9eba-479c-994c-7da45e574d32",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C67",
+      "claim": "Decreases in spike variability have been previously linked to stimulus onset in the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "In the cortex, decreases in spike variability have been previously linked to various processes including stimulus onset (Churchland et al., 2010), attention (Cohen and Maunsell, 2009), and movement preparation (Churchland et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "81b7b068-1b76-468f-8064-d3be86a66ad2",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C68",
+      "claim": "Decreases in spike variability have been previously linked to attention in the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "In the cortex, decreases in spike variability have been previously linked to various processes including stimulus onset (Churchland et al., 2010), attention (Cohen and Maunsell, 2009), and movement preparation (Churchland et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "50bd3763-80fa-4a37-b4fd-179841bdb706",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C69",
+      "claim": "Decreases in spike variability have been previously linked to movement preparation in the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "In the cortex, decreases in spike variability have been previously linked to various processes including stimulus onset (Churchland et al., 2010), attention (Cohen and Maunsell, 2009), and movement preparation (Churchland et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "9a91b54c-4246-42e6-b3f5-8fe0352d2429",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C70",
+      "claim": "There is evidence of within-trial changes in spike variability in the striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "There is also evidence of within-trial changes in spike variability in the striatum (Berke, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "9ebf8d34-002d-421f-aeed-0adb989905a0",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C71",
+      "claim": "There are no prior observations of specific task cues evoking increases in variability between or within trials.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, there are no prior observations of specific task cues evoking increases in variability between or within trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the findings.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "257394d1-4a79-45e1-9d47-56cefcf4f9ae",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C72",
+      "claim": "There was a strong relationship between CV of individual neurons and their corresponding population trajectory variability.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, there was a strong relationship between CV of individual neurons and their corresponding population trajectory variability (Figure 5E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding stated in the text and shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "becb6209-7661-4fb8-84da-a5fc58cc9e19",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C73",
+      "claim": "Trajectory variability was significantly increased by proactive inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, trajectory variability was significantly increased by proactive inhibition (Figure 5F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding stated in the text and shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "84a52ca7-77ed-4c1f-97b1-5f84f6caa137",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C74",
+      "claim": "Trajectory variability increased during the hold period (examining the 0.8 s epoch just before the Go! cue, excluding trials with hold duration <0.8 s, Wilcoxon signed rank test, p=0.003).",
+      "claim_type": "EXPLICIT",
+      "source": "Trajectory variability increased during the hold period (examining the 0.8 s epoch just before the Go! cue, excluding trials with hold duration <0.8 s, Wilcoxon signed rank test, p=0.003), and was also observed even beforehand (0.8 s epoch before Nose In, Wilcoxon signed rank test, p=0.003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from trajectory variability analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "4df436c9-5e9b-4589-9ec6-751d42d8fe39",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C75",
+      "claim": "Trajectory variability was observed even before the hold period (0.8 s epoch before Nose In, Wilcoxon signed rank test, p=0.003).",
+      "claim_type": "EXPLICIT",
+      "source": "Trajectory variability increased during the hold period (examining the 0.8 s epoch just before the Go! cue, excluding trials with hold duration <0.8 s, Wilcoxon signed rank test, p=0.003), and was also observed even beforehand (0.8 s epoch before Nose In, Wilcoxon signed rank test, p=0.003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from trajectory variability analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "77526b25-dcca-4f18-88ec-2c9d9bd14e07",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C76",
+      "claim": "The increase in within-trial trajectory variability with proactive inhibition resulted in a more variable state-space position at the time of Go! cue onset, across trials.",
+      "claim_type": "EXPLICIT",
+      "source": "This increase in within-trial trajectory variability with proactive inhibition indeed resulted in a more variable state-space position at the time of Go! cue onset, across trials (Figure 5G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding stated in the text and shown in Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "8c12b9b7-5929-4621-871e-7fb5f05f3ee2",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C77",
+      "claim": "Variability of state-space position across trials was correlated with RT.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our hypothesis, this variability of state-space position across trials was correlated with RT (Figure 5H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding stated in the text and shown in Figure 5H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "fdd12e41-ec23-48f3-a006-562beb214b32",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C78",
+      "claim": "Regardless of previous trial-type, Maybe-Stop-Contra trials had slower RT.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of previous trial-type Maybe-Stop-Contra trials had slower RT (Figure 6, top row), and an Ipsi-biased SNr state-space position (Figure 6, third row).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding stated in the text and shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "36ae3ecc-2613-4c27-b795-d05383dba01d",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C79",
+      "claim": "Regardless of previous trial-type, Maybe-Stop-Contra trials had an Ipsi-biased SNr state-space position.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of previous trial-type Maybe-Stop-Contra trials had slower RT (Figure 6, top row), and an Ipsi-biased SNr state-space position (Figure 6, third row).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding stated in the text and shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "df788566-6690-475d-b651-056868b7a529",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C80",
+      "claim": "The increased CV in SNr spiking was particularly apparent following Stop-fail trials.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the increased CV in SNr spiking was particularly apparent following Stop-fail trials (Figure 6, bottom).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding stated in the text and shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "b165a5c2-3d3a-454d-8106-b5f98ff6a96f",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C81",
+      "claim": "Increased spike variability occurs when rats are especially concerned to avoid hasty responses, having just failed to sufficiently restrain behavior on the previous trial.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that increased spike variability occurs when rats are especially concerned to avoid hasty responses, having just failed to sufficiently restrain behavior on the previous trial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the finding about CV following Stop-fail trials.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "62b044fc-7f95-4dff-8fa0-077744002192",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C82",
+      "claim": "CV significantly increased after premature responses (Center-out before Go! cue).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the hypothesis, CV significantly increased after premature responses (Center-out before Go! cue), but not after other types of error trials (Wrong choices, and failures to respond within the RT limit).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding stated in the text and shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "bf6e1d20-9007-4bf2-a217-6317bc8ef4c0",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C83",
+      "claim": "CV did not significantly increase after wrong choices or failures to respond within the RT limit.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the hypothesis, CV significantly increased after premature responses (Center-out before Go! cue), but not after other types of error trials (Wrong choices, and failures to respond within the RT limit).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding stated in the text and shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "ccef696a-d1db-413a-98b1-94aa8d5c57ca",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C84",
+      "claim": "SNr firing is modulated by internal factors such as task context.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results add to prior evidence that, beyond simple sensory or motor correlates, SNr firing is modulated by internal factors such as task context (Hikosaka and Wurtz, 1983a; Lintz and Felsen, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "9081e359-50ca-4010-b9e2-1a0d71f78bcd",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C85",
+      "claim": "Basal ganglia activity is especially affected by changes in reward expectation.",
+      "claim_type": "EXPLICIT",
+      "source": "Basal ganglia activity is especially affected by changes in reward expectation (Lauwereyns et al., 2002) including in SNr (Sato and Hikosaka, 2002; Yasuda and Hikosaka, 2017), producing faster RTs toward more rewarding movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "a81beca8-9c83-4f17-bb04-0f1ab49db5a6",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C86",
+      "claim": "Changes in reward expectation produce faster RTs toward more rewarding movements.",
+      "claim_type": "EXPLICIT",
+      "source": "Basal ganglia activity is especially affected by changes in reward expectation (Lauwereyns et al., 2002) including in SNr (Sato and Hikosaka, 2002; Yasuda and Hikosaka, 2017), producing faster RTs toward more rewarding movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "941ac95e-7934-4219-833c-2e4c9abec45f",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C87",
+      "claim": "In the proactive task, the Maybe-Stop direction receives rewards at a lower rate due to failures-to-Stop.",
+      "claim_type": "EXPLICIT",
+      "source": "In our proactive task the Maybe-Stop direction receives rewards at a lower rate (due to failures-to-Stop), so asymmetrical reward expectation might be at least partially responsible for the neural and choice bias toward Ipsi movements on Maybe-Stop-Contra trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the task structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "32184c68-2516-4267-ae5e-fa46da152a88",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C88",
+      "claim": "Pre-selection of movements is known to modulate SNr activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, this bias could have produced pre-selection of the Ipsi movement, a factor also known to modulate SNr activity (Basso and Wurtz, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "8acce44c-0338-49a5-bb8e-af6fa82c609b",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C89",
+      "claim": "The slower Contra RTs on Maybe-Stop-Contra trials were not accompanied by faster Ipsi RTs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the slower Contra RTs on Maybe-Stop-Contra trials were not accompanied by faster Ipsi RTs, suggesting that slowing of Contra movements did not result simply from a greater preparation of Ipsi movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from behavioral data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "0def64e1-b30a-45c0-b10a-6dcb26cf75ba",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C90",
+      "claim": "The SNr state-space bias during proactive inhibition may arise from the 'indirect pathway' projection from GPe.",
+      "claim_type": "EXPLICIT",
+      "source": "The SNr state-space bias during proactive inhibition may arise from the 'indirect pathway' projection from GPe, which we found to have a similar neural bias toward Ipsi movements in a prior study (Gu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on prior findings.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "05063629-077f-4f6a-9c8f-7780fed975ab",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C91",
+      "claim": "Proactive inhibition caused GPe population activity to shift further away from action initiation, which was not observed for SNr.",
+      "claim_type": "EXPLICIT",
+      "source": "However, proactive inhibition also caused GPe population activity to shift further away from action initiation, which we did not observe for SNr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between current and prior findings.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "19a4f924-1fe5-44f8-b2d4-920d2f57dbe9",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C92",
+      "claim": "Proactive inhibition produced no overall change in GPe firing rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, proactive inhibition produced no overall change in GPe firing rates, and we were not able to identify a distinct subpopulation of modulated GPe neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a prior study by the same authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "a6040540-2522-4310-a014-7109fe9ac6d7",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C93",
+      "claim": "The authors were not able to identify a distinct subpopulation of modulated GPe neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, proactive inhibition produced no overall change in GPe firing rates, and we were not able to identify a distinct subpopulation of modulated GPe neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a prior study by the same authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "b21271a2-813b-4d4c-84f5-bb984ece6d5b",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C94",
+      "claim": "Recent modeling has demonstrated that the influence of the GABAergic GPe inputs over SNr neurons can be far more complex than shown in classic rate models of basal ganglia function.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent modeling has demonstrated that the influence of the GABAergic GPe inputs over SNr neurons can be far more complex (Simmons et al., 2020) than shown in classic rate models of basal ganglia function, for example, switching from inhibitory to excitatory in an activity-dependent manner (Phillips et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "880e2b25-983c-46ce-86ac-b6576605f4de",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C95",
+      "claim": "GPe inputs to SNr can switch from inhibitory to excitatory in an activity-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent modeling has demonstrated that the influence of the GABAergic GPe inputs over SNr neurons can be far more complex (Simmons et al., 2020) than shown in classic rate models of basal ganglia function, for example, switching from inhibitory to excitatory in an activity-dependent manner (Phillips et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "c957e01a-74e7-4cbc-aba2-f9ae523322b9",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C96",
+      "claim": "The shift in SNr Ipsi>Contra neuron firing with proactive inhibition may reflect other basal ganglia inputs, particularly the direct pathway input from striatum, or hyperdirect via the STN.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, the shift in SNr Ipsi>Contra neuron firing with proactive inhibition may reflect other basal ganglia inputs, particularly the direct pathway input from striatum, or hyperdirect via the STN (Schmidt et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative alternative explanation with citation support.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "95a9164a-2190-47d6-bf5d-c24ba77dea27",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C97",
+      "claim": "Increased SNr activity while waiting for a Go! cue would enhance inhibition of movements.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased SNr activity while waiting for a Go! cue would enhance inhibition of movements, and the release of this inhibition might require longer to achieve, extending RTs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation based on classic models.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "7f8b0ee1-f674-4f9c-86f7-a1b81bdd5efe",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C98",
+      "claim": "The release of enhanced SNr inhibition might require longer to achieve, extending RTs.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased SNr activity while waiting for a Go! cue would enhance inhibition of movements, and the release of this inhibition might require longer to achieve, extending RTs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "975e1b88-ce9c-45f2-80c6-8b3dfea1a37e",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C99",
+      "claim": "Many of the Ipsi>Contra cells with elevated firing in the Maybe-Stop condition did not have movement-related pauses, but rather increases.",
+      "claim_type": "EXPLICIT",
+      "source": "However, many of the Ipsi>Contra cells with elevated firing in the Maybe-Stop condition did not have movement-related pauses, but rather increases (Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding stated in the text and shown in Figure 2\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "9a6cc4ed-4122-48bb-b989-341fc9a4c2f2",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C100",
+      "claim": "Increasing-type SNr cells have been commonly reported.",
+      "claim_type": "EXPLICIT",
+      "source": "Such increasing-type SNr cells have been commonly reported (Bryden et al., 2011; Joshua et al., 2009; Lintz and Felsen, 2016), but their functional roles remain unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "99d0f146-59b5-492d-a6e7-4f74b3ea9c3f",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C101",
+      "claim": "The functional roles of increasing-type SNr cells remain unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "Such increasing-type SNr cells have been commonly reported (Bryden et al., 2011; Joshua et al., 2009; Lintz and Felsen, 2016), but their functional roles remain unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "409e7076-c694-49a4-b55f-0e4c0835deca",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C102",
+      "claim": "Increasing-type SNr cells may help suppress competing, alternative actions.",
+      "claim_type": "EXPLICIT",
+      "source": "They may help suppress competing, alternative actions (Gulley et al., 2002), by acting either on downstream targets or through collateral inhibition of other SNr cells (Brown et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "a383b493-c6ac-44ab-8a53-faeaa171bb6e",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C103",
+      "claim": "SNr neurons are intrinsic pacemakers that spontaneously fire regularly even if their inputs are blocked.",
+      "claim_type": "EXPLICIT",
+      "source": "Like GPe and STN neurons, SNr neurons are intrinsic pacemakers that spontaneously fire regularly even if their inputs are blocked (Zhou and Lee, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "3d36baa9-d941-412b-af5c-a3b51ac7e2b1",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C104",
+      "claim": "SNr inputs alter SNr spiking by either accelerating or delaying the occurrence of the next spike.",
+      "claim_type": "EXPLICIT",
+      "source": "These inputs \u2013 which include the aforementioned direct and indirect pathways, and also extensive local collaterals within SNr (Brown et al., 2014; Mailly et al., 2003) \u2013 thus alter SNr spiking by either accelerating or delaying the occurrence of the next spike.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the pacemaker properties and cited literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "6aa672de-f445-4f40-86f6-f4367895b56d",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C105",
+      "claim": "Changes in spike time variability presumably reflect either changes in local network properties or changes in the statistics of extrinsic inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Changes in spike time variability presumably reflect either changes in local network properties, for example, due to neuromodulation (Delaville et al., 2012) or changes in the statistics of extrinsic inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation with citation support.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "d1d7da51-65fe-4275-995e-6e4faeee03a4",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C106",
+      "claim": "Neural variability might be actively elevated as part of a behavioral strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding that variability increases with proactive inhibition \u2013 in particular following Stop-fail or premature trials \u2013 suggests that variability might be actively elevated as part of a behavioral strategy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "0f41c0cf-00e3-4074-bd96-6755a25bfc81",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C107",
+      "claim": "Neural variability can confer behavioral advantages, such as increased flexibility.",
+      "claim_type": "EXPLICIT",
+      "source": "This would fit with proposals that neural variability can confer behavioral advantages, such as increased flexibility (Waschke et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "9ad4e69a-71e0-4051-8547-aa24b7ce5b78",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C108",
+      "claim": "Increased neural variability with proactive inhibition may simply reflect the absence of a reduction in variability that accompanies movement preparation.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, increased neural variability with proactive inhibition may simply reflect the absence of a reduction in variability that accompanies movement preparation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an alternative speculative interpretation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "95b1d9df-37d1-46b1-abd9-af3297845005",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C109",
+      "claim": "Preparation to stop would consist, at least in part, of less preparation to go.",
+      "claim_type": "EXPLICIT",
+      "source": "In this way, preparation to stop would consist, at least in part, of less preparation to go.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "ab1568d5-c391-4bdf-ab44-5b73540b955d",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C110",
+      "claim": "Cognitive control strategies can operate through shifts in neural variability.",
+      "claim_type": "EXPLICIT",
+      "source": "Either way, our results demonstrate that cognitive control strategies can operate through shifts in neural variability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "b8509115-5985-4447-a9cb-a35f9453f3af",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C111",
+      "claim": "Parkinson's disease is characterized by both slowed movements and elevated single-neuron spike variability.",
+      "claim_type": "EXPLICIT",
+      "source": "Connecting single-neuron measures of variability to state-space concepts of movement preparation offers an intriguing perspective on PD, which is characterized by both slowed movements (Low et al., 2002) and elevated single-neuron spike variability (Dorval et al., 2008; Lobb, 2014; Willard et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "0a39c31e-93b8-4776-bfd2-8ba5fe52d02a",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C112",
+      "claim": "A more variable state of preparation may help explain why average RTs and movement times are slowed in PD, yet the fastest movements are still preserved.",
+      "claim_type": "EXPLICIT",
+      "source": "A more variable state of preparation may help explain why average RTs and movement times are slowed in PD, yet the fastest movements are still preserved (Mazzoni et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation with citation support.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "6a77e16b-5279-491e-9ed4-479c09a03c53",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C113",
+      "claim": "The fastest movements are still preserved in Parkinson's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "A more variable state of preparation may help explain why average RTs and movement times are slowed in PD, yet the fastest movements are still preserved (Mazzoni et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "9ac69ea7-122d-4e29-8106-a9d8f94204e1",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C114",
+      "claim": "All animal experiments were approved by the University of California, San Francisco Committee for the Use and Care of Animals (#AN181071).",
+      "claim_type": "EXPLICIT",
+      "source": "All animal experiments were approved by the University of California, San Francisco Committee for the Use and Care of Animals (#AN181071).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical approval.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "4f762e3c-6b60-44d2-b7e3-afdb0af54b2c",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C115",
+      "claim": "Adult male Long-Evans rats were housed on a 12 hr/12 hr reverse light-dark cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Adult male Long-Evans rats were housed on a 12 hr/12 hr reverse light-dark cycle, with training and testing performed during the dark phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental subjects and housing conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "e26ad990-f163-4bdf-bec3-bbaef1f63869",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C116",
+      "claim": "Training and testing were performed during the dark phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Adult male Long-Evans rats were housed on a 12 hr/12 hr reverse light-dark cycle, with training and testing performed during the dark phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "15f892ad-02b2-4c5e-a593-66971742cfa6",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C117",
+      "claim": "Each rat was implanted with 15 or 30 tetrodes in bundles bilaterally targeting SNr.",
+      "claim_type": "EXPLICIT",
+      "source": "Each rat was implanted with 15 or 30 tetrodes in bundles bilaterally targeting SNr (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the surgical procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "c01810fb-c067-4c57-9d38-5f2fc635cb8e",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C118",
+      "claim": "Wide-band (0.1\u20139000 Hz) electrophysiological data were recorded with a sampling rate of 30,000/s using an Intan RHD2000 recording system.",
+      "claim_type": "EXPLICIT",
+      "source": "Wide-band (0.1\u20139000 Hz) electrophysiological data were recorded with a sampling rate of 30,000/s using an Intan RHD2000 recording system (Intan Technologies).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the recording methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "57053689-273d-4294-93de-f52ef66fcae9",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C119",
+      "claim": "All signals were initially referenced to a skull screw (tip-flattened) on the midline 1 mm posterior to lambda.",
+      "claim_type": "EXPLICIT",
+      "source": "All signals were initially referenced to a skull screw (tip-flattened) on the midline 1 mm posterior to lambda.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the recording methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "c4dc3edc-dce0-4a1b-8ce8-87e35a73382d",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C120",
+      "claim": "For spike detection, signals were re-referenced to an electrode common average, and wavelet-filtered before thresholding.",
+      "claim_type": "EXPLICIT",
+      "source": "For spike detection we re-referenced to an electrode common average, and wavelet-filtered (Wiltschko et al., 2008) before thresholding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data processing methodology with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "51e521ff-8291-4fa6-a89a-7d9785b7d997",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C121",
+      "claim": "Automatic clustering of units was performed using MountainSort followed by manual curation of clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "For spike sorting we performed automatic clustering units using MountainSort Chung et al., 2017 followed by manual curation of clusters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the spike sorting methodology with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "a5178678-6314-4607-b292-23011b8ab044",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C122",
+      "claim": "Approximately every two to three sessions, screws were turned to lower tetrodes by 100\u2013160 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately every two to three sessions, screws were turned to lower tetrodes by 100\u2013160 \u00b5m; to avoid duplicate neurons, we did not include units from the same tetrode from multiple sessions unless the tetrodes had been moved between those sessions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "a6c5a1c5-b6f9-4101-82c7-7465f211dc97",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C123",
+      "claim": "Firing rates were smoothed using a Gaussian kernel (30 ms SD) and normalized (Z-scored) using each neuron's session-wide mean and SD.",
+      "claim_type": "EXPLICIT",
+      "source": "Firing rates were smoothed using a Gaussian kernel (30 ms SD) and normalized (Z-scored) using each neuron's session-wide mean and SD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data analysis methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "555ddd77-8a3e-4538-8e10-1564dc27fde1",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C124",
+      "claim": "Spike bursts were detected using the Poisson surprise method with a surprise threshold of 5.",
+      "claim_type": "EXPLICIT",
+      "source": "Spike bursts were detected using the Poisson surprise method (Leg\u00e9ndy and Salcman, 1985) with a surprise threshold of 5, and the burst ratio was calculated as the number of spikes fired in bursts divided by the number of all spikes in each unit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data analysis methodology with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "fb94119b-3a37-445a-a1c8-887e82ec413e",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C125",
+      "claim": "The burst ratio was calculated as the number of spikes fired in bursts divided by the number of all spikes in each unit.",
+      "claim_type": "EXPLICIT",
+      "source": "Spike bursts were detected using the Poisson surprise method (Leg\u00e9ndy and Salcman, 1985) with a surprise threshold of 5, and the burst ratio was calculated as the number of spikes fired in bursts divided by the number of all spikes in each unit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data analysis methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "a0384ccf-c20b-4eff-9d6a-c1699f4506aa",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "claim_id": "C126",
+      "claim": "The CV of inter-spike intervals and burst ratio were calculated in each trial using a 3 s time window before the Go! cue.",
+      "claim_type": "EXPLICIT",
+      "source": "The CV of inter-spike intervals and burst ratio were calculated in each trial using a 3 s time window before the Go! cue, and averaged across all trials (for sessions with/without proactive inhibition comparison) or across each trial type (for conditional differences).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data analysis methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3d103eee-6579-480e-aaff-bb55dba4ea88",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Rats successfully learned a selective proactive inhibition task, as evidenced by direction-selective slowing of reaction times. In 60 sessions, rats showed significant RT slowing for Maybe-Stop-Contra trials (z=6.8, p=1.1\u00d710\u207b\u00b9\u00b9) but not for Ipsi trials (z=\u22121.2, p=0.22). Rats also showed increased RT limit errors and wrong choices on Maybe-Stop-Contra trials.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C23-C38 collectively demonstrate successful behavioral training with appropriate statistical validation. The task design is clearly described (C23-C30), inclusion criteria are specified (C31-C32), and behavioral effects are quantified with significant p-values (C35-C38). The control comparison (no effect on Ipsi trials, C36) strengthens the conclusion of selective proactive inhibition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "9e56b186-c425-4f84-bfb6-d43ae801b213",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Overall SNr firing rate was elevated before the Go! cue during proactive inhibition, and this effect was driven by a subpopulation of direction-selective neurons. This elevation was observed in 446 neurons (mean FR=38 Hz) during sessions with significant proactive inhibition but not in 173 neurons (mean FR=44 Hz) from sessions without the behavioral effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4 and C39-C45 provide converging evidence for elevated SNr firing during proactive inhibition. The finding is supported by population-level analysis (C41-C42), appropriate control comparisons (C43), and adequate sample sizes (C39, C44). Figure 2A provides visual confirmation of the temporal dynamics and statistical significance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "dd5db91f-2819-4fbf-a419-55074c0b09db",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The elevation in SNr firing during proactive inhibition was specifically associated with 'Ipsi>Contra' neurons (those more active before Ipsi movements) but not with 'Contra>Ipsi' neurons. Both increase-type and decrease-type neurons contributed to this effect, contrary to the authors' initial hypothesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C51 identify the specific neuronal subpopulation responsible for the firing rate elevation. The finding is well-supported by functional classification (Figure 2E-G), statistical analysis showing selectivity (C49-C50), and additional analysis of subtypes (C51). The result contradicts the initial hypothesis (C47), which strengthens confidence in the data-driven conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "2da33c05-37d0-4cf3-a805-e2ce07d94709",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In neural state space, proactive inhibition corresponded to a shift away from the restrained movement, particularly along the Selection Axis with a bias toward Ipsi. This shift was driven by Ipsi>Contra cells showing Selection Axis bias, while Contra>Ipsi cells showed Initiation Axis bias. The neural state at Go! cue predicted subsequent behavioral outcomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5 and C52-C59 demonstrate population-level dynamics using state-space analysis. The results are supported by permutation tests (Figure 3A), functional dissociation between cell types (C55-C56), and correlation with behavioral outcomes (C57-C59). The methodology is clearly described and the findings are internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "6865d5a7-b5d9-4686-861e-2823b9fc40aa",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "SNr neurons showed more variable inter-spike intervals (increased CV) and increased bursting during proactive inhibition. This occurred both between sessions (comparing sessions with vs. without proactive inhibition) and within sessions (comparing Maybe-Stop-Contra vs. No-Stop trials). The degree of irregularity correlated with reaction times.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C61-C65 establish increased spike variability during proactive inhibition through multiple complementary analyses. The finding is supported by between-session comparisons (C61), within-session comparisons (C63), correlations with behavior (C62, C64), and appropriate control conditions (C63). Figure 4 provides comprehensive visualization of these effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "9d85decc-48ef-4fbc-a673-1121c1422841",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "More variable inter-spike intervals corresponded to more variable state-space trajectories. Trajectory variability was significantly increased by proactive inhibition (p=0.003 during hold period), resulted in more variable state-space positions at Go! cue onset, and this variability correlated with reaction times across trials.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7 and C66, C72-C77 link single-neuron variability to population dynamics and behavior. The analysis includes appropriate methodology (trajectory variability quantification), statistical validation (C74-C75), and demonstrates the predicted relationship between CV and trajectory variability (C72) and between trajectory variability and RT (C77). The mechanistic link is well-established through multiple levels of analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "1f914347-c574-443e-a9db-5cbc4f47a472",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors propose that more variable state-space trajectories may slow reaction times via reduced preparation to move. They suggest this could reflect either active elevation of variability as a control strategy or absence of variability reduction that normally accompanies movement preparation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C8, C98, C108-C110 present mechanistic interpretations that are plausible but speculative. While the correlation between trajectory variability and RT is established (C77), the causal mechanism remains uncertain. The authors appropriately present alternative explanations (C108-C109) but do not provide direct experimental evidence to distinguish between them. Additional causal manipulations would be needed to fully support these mechanistic claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "bde3a649-2db2-42f9-96f2-a96dc1aa7f42",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The effects of proactive inhibition on firing rate and variability are dissociable. Regardless of previous trial type, Maybe-Stop-Contra trials showed slower RTs and Ipsi-biased state-space position. However, increased CV was particularly apparent following Stop-fail trials and premature responses, but not after other error types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C83 demonstrate dissociation between rate and variability modulation through analysis of trial history effects. The findings are supported by appropriate statistical comparisons (Figure 6) and specificity of CV increases to particular error types (C82-C83). This dissociation strengthens the conclusion that these represent distinct control mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "c4eb1960-2ae8-4ff5-a506-f39f461be3d6",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors discuss potential mechanisms underlying the observed SNr changes, including asymmetrical reward expectation, pre-selection, and various basal ganglia pathways (indirect via GPe, direct from striatum, or hyperdirect via STN). They note differences between current SNr findings and prior GPe results.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C87, C89-C93, C96 present multiple potential mechanisms but do not provide definitive evidence to distinguish among them. The comparison with prior GPe findings (C91-C93) is informative but the mechanistic interpretations remain speculative. The behavioral observation that slower Contra RTs were not accompanied by faster Ipsi RTs (C89) provides some constraint but is insufficient to fully resolve the mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "0f9fd32f-67e0-4322-9d55-c533a54b2bc2",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors propose that their findings on neural variability and movement preparation offer a new perspective on Parkinson's disease, which is characterized by both slowed movements and elevated spike variability. They suggest that more variable preparation states may explain why average movements are slowed while fastest movements are preserved in PD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C111-C113 present an interesting translational hypothesis connecting the current findings to PD. While the parallel between proactive inhibition and PD symptoms is conceptually appealing, this remains speculative without direct experimental validation in PD models or patients. The cited literature supports the characterization of PD (C111, C113) but the mechanistic link to the current findings requires further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "1e4e9a5c-f4c7-446a-91b9-8e483efb7916",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The methods section describes appropriate experimental procedures including ethical approval, animal housing, surgical implantation of tetrodes, electrophysiological recording parameters, spike detection and sorting procedures, and data analysis approaches for firing rates, bursting, and variability measures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C114-C126 provide comprehensive methodological details with appropriate citations to established techniques (e.g., MountainSort for spike sorting C121, Poisson surprise method for burst detection C124). The procedures appear standard and well-documented. However, some details are missing such as specific parameters for spike detection thresholds and cluster quality metrics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "f96e6732-8b34-42c9-af28-6b78d86d03b0",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The introduction establishes the conceptual framework by reviewing prior literature on behavioral inhibition, distinguishing reactive from proactive inhibition, describing known neural circuits, and motivating the current study based on prior GPe findings and the relevance to Parkinson's disease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C9-C22 provide appropriate background context supported by citations to relevant literature. The distinction between reactive and proactive inhibition is clearly established (C11-C16), prior findings are accurately represented (C18-C19), and the motivation for studying firing patterns is well-justified (C20-C22). This provides solid foundation for the experimental work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "324aee75-46bc-4281-9bf3-a02dc53322d3",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The discussion contextualizes findings within existing literature on SNr function, basal ganglia circuitry, and neural variability. The authors discuss how SNr firing is modulated by internal factors, the complexity of GPe-SNr interactions, the functional roles of different SNr cell types, and potential behavioral advantages of neural variability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46, C84-C88, C94-C95, C97, C99-C107 provide appropriate scholarly discussion with relevant citations. The authors acknowledge uncertainties (e.g., C101 on unclear functional roles) and present multiple perspectives (e.g., C106-C107 on active vs. passive variability changes). The discussion appropriately distinguishes between established findings from literature and speculative interpretations of current results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    },
+    {
+      "id": "d5ceb828-22d0-466c-9b5d-22424f4805f3",
+      "content_id": "e85c9b58-cfb3-4b4b-933d-a482c2bcb321",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors claim novelty for their observation that specific task cues evoke increases in neural variability, contrasting with prior literature showing decreases in cortical spike variability associated with stimulus onset, attention, and movement preparation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C67-C71 assert novelty (C71) based on comparison with prior cortical studies (C67-C69) and limited striatal work (C70). While the specific finding of cue-evoked increases in variability may be novel, the claim 'to our knowledge, there are no prior observations' (C71) is difficult to verify without comprehensive literature review. The novelty claim would be strengthened by more systematic comparison with basal ganglia literature specifically.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:53:50.514455Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5a9e6280-4f15-4fcc-a246-e55993dd1d2d",
+      "result_id": "3d103eee-6579-480e-aaff-bb55dba4ea88"
+    },
+    {
+      "claim_id": "dd86783a-fc77-4344-97ed-5f8a4d7b85af",
+      "result_id": "3d103eee-6579-480e-aaff-bb55dba4ea88"
+    },
+    {
+      "claim_id": "10fb1ef4-41b7-417a-8230-2f19bf134eff",
+      "result_id": "3d103eee-6579-480e-aaff-bb55dba4ea88"
+    },
+    {
+      "claim_id": "3ea0dabf-c278-4b95-b3c1-c6ca5442b3d8",
+      "result_id": "3d103eee-6579-480e-aaff-bb55dba4ea88"
+    },
+    {
+      "claim_id": "ef3c4869-7897-4356-8b41-66e5c56d8ee8",
+      "result_id": "3d103eee-6579-480e-aaff-bb55dba4ea88"
+    },
+    {
+      "claim_id": "8f97e25d-488f-4efd-8755-3526b88070e3",
+      "result_id": "3d103eee-6579-480e-aaff-bb55dba4ea88"
+    },
+    {
+      "claim_id": "e3195b5c-3d85-4155-96fc-119ac8c461e7",
+      "result_id": "3d103eee-6579-480e-aaff-bb55dba4ea88"
+    },
+    {
+      "claim_id": "cc3b6ce1-304f-489d-b8b8-0bbbbc1feae8",
+      "result_id": "3d103eee-6579-480e-aaff-bb55dba4ea88"
+    },
+    {
+      "claim_id": "ed29ec2c-ccdb-4532-a43e-55ccece4450e",
+      "result_id": "3d103eee-6579-480e-aaff-bb55dba4ea88"
+    },
+    {
+      "claim_id": "4e133c3b-ce88-4445-bde4-61b69d9d1f97",
+      "result_id": "3d103eee-6579-480e-aaff-bb55dba4ea88"
+    },
+    {
+      "claim_id": "3fbbceae-a29a-4ba9-a0c3-0e5ce85e341e",
+      "result_id": "3d103eee-6579-480e-aaff-bb55dba4ea88"
+    },
+    {
+      "claim_id": "95751830-cb75-43fd-bcf3-21bf8e679212",
+      "result_id": "3d103eee-6579-480e-aaff-bb55dba4ea88"
+    },
+    {
+      "claim_id": "3087e7d4-ddac-4963-8a25-99fab2818994",
+      "result_id": "3d103eee-6579-480e-aaff-bb55dba4ea88"
+    },
+    {
+      "claim_id": "0f6544ad-f94b-4c70-8229-25a35c1e4ec2",
+      "result_id": "3d103eee-6579-480e-aaff-bb55dba4ea88"
+    },
+    {
+      "claim_id": "0776139e-91b3-49ad-a084-898556de5f61",
+      "result_id": "3d103eee-6579-480e-aaff-bb55dba4ea88"
+    },
+    {
+      "claim_id": "5bab454d-95fd-46d2-bc8a-48dc37cea31b",
+      "result_id": "3d103eee-6579-480e-aaff-bb55dba4ea88"
+    },
+    {
+      "claim_id": "9061016a-f7ea-40ba-840f-0c208eed7c94",
+      "result_id": "3d103eee-6579-480e-aaff-bb55dba4ea88"
+    },
+    {
+      "claim_id": "529412e2-1ebd-41f2-ac81-8d4da0414cf1",
+      "result_id": "9e56b186-c425-4f84-bfb6-d43ae801b213"
+    },
+    {
+      "claim_id": "62a65e49-27d7-4852-9a52-d289dee81c6a",
+      "result_id": "9e56b186-c425-4f84-bfb6-d43ae801b213"
+    },
+    {
+      "claim_id": "013d2b87-cf19-4e28-93a0-c31d8f10f6a7",
+      "result_id": "9e56b186-c425-4f84-bfb6-d43ae801b213"
+    },
+    {
+      "claim_id": "af48b845-9c8f-4b08-ab00-05855082693c",
+      "result_id": "9e56b186-c425-4f84-bfb6-d43ae801b213"
+    },
+    {
+      "claim_id": "7c9fd986-0b1f-4d25-b36a-82f8d052219d",
+      "result_id": "9e56b186-c425-4f84-bfb6-d43ae801b213"
+    },
+    {
+      "claim_id": "44111976-ff17-4c27-ac49-5c088e613591",
+      "result_id": "9e56b186-c425-4f84-bfb6-d43ae801b213"
+    },
+    {
+      "claim_id": "c729f524-7a0b-4499-9967-997bfd1aa7e2",
+      "result_id": "9e56b186-c425-4f84-bfb6-d43ae801b213"
+    },
+    {
+      "claim_id": "bb29055e-0918-4e4a-a13c-5954cfef131e",
+      "result_id": "9e56b186-c425-4f84-bfb6-d43ae801b213"
+    },
+    {
+      "claim_id": "447afef8-6f43-41d3-8405-fa5643532ee9",
+      "result_id": "9e56b186-c425-4f84-bfb6-d43ae801b213"
+    },
+    {
+      "claim_id": "7bb6074b-c096-40e8-8308-55bfd7c0fb2f",
+      "result_id": "dd5db91f-2819-4fbf-a419-55074c0b09db"
+    },
+    {
+      "claim_id": "7db561a2-3d7c-49bd-be0d-9eee5d41d3ea",
+      "result_id": "dd5db91f-2819-4fbf-a419-55074c0b09db"
+    },
+    {
+      "claim_id": "3d06296c-1ff5-4f6c-b319-9a426de1b369",
+      "result_id": "dd5db91f-2819-4fbf-a419-55074c0b09db"
+    },
+    {
+      "claim_id": "42f87a07-3021-4a0f-8303-f24cfd4375d1",
+      "result_id": "dd5db91f-2819-4fbf-a419-55074c0b09db"
+    },
+    {
+      "claim_id": "ec37daed-c2ae-4ff6-90c6-8785b0d6ee46",
+      "result_id": "dd5db91f-2819-4fbf-a419-55074c0b09db"
+    },
+    {
+      "claim_id": "726a6a45-32a8-4809-a929-39ff416cfd5d",
+      "result_id": "2da33c05-37d0-4cf3-a805-e2ce07d94709"
+    },
+    {
+      "claim_id": "7624d69c-ab57-45d9-8e40-4e19c200d98d",
+      "result_id": "2da33c05-37d0-4cf3-a805-e2ce07d94709"
+    },
+    {
+      "claim_id": "e79de293-69d7-49a2-8be0-fef4e4846445",
+      "result_id": "2da33c05-37d0-4cf3-a805-e2ce07d94709"
+    },
+    {
+      "claim_id": "a66eb001-f7a5-46e5-817d-f0a54c54d12d",
+      "result_id": "2da33c05-37d0-4cf3-a805-e2ce07d94709"
+    },
+    {
+      "claim_id": "e3f56433-cccf-4c05-8049-2ddf8e35f85a",
+      "result_id": "2da33c05-37d0-4cf3-a805-e2ce07d94709"
+    },
+    {
+      "claim_id": "9fbc499f-4429-4ff0-95b3-66d8d578adee",
+      "result_id": "2da33c05-37d0-4cf3-a805-e2ce07d94709"
+    },
+    {
+      "claim_id": "ab5fbd93-53e6-4c2e-90ee-b3488a7a29af",
+      "result_id": "2da33c05-37d0-4cf3-a805-e2ce07d94709"
+    },
+    {
+      "claim_id": "bd2d903c-5592-4f5c-9fb0-d88aff5b8201",
+      "result_id": "2da33c05-37d0-4cf3-a805-e2ce07d94709"
+    },
+    {
+      "claim_id": "f8aca82d-70dc-4434-9c8b-668da76d2d60",
+      "result_id": "2da33c05-37d0-4cf3-a805-e2ce07d94709"
+    },
+    {
+      "claim_id": "efad0b43-6bda-4efa-876a-5d49fc60bb87",
+      "result_id": "6865d5a7-b5d9-4686-861e-2823b9fc40aa"
+    },
+    {
+      "claim_id": "dc3f6256-da99-4c1e-a464-66f59d207317",
+      "result_id": "6865d5a7-b5d9-4686-861e-2823b9fc40aa"
+    },
+    {
+      "claim_id": "ea0990ba-57ec-47dc-a8c7-871f3b1b8c76",
+      "result_id": "6865d5a7-b5d9-4686-861e-2823b9fc40aa"
+    },
+    {
+      "claim_id": "faad1784-86c6-4cc2-aa9e-e604a15bcc26",
+      "result_id": "6865d5a7-b5d9-4686-861e-2823b9fc40aa"
+    },
+    {
+      "claim_id": "2e16eda2-e4eb-4fce-9602-2059d058f1ff",
+      "result_id": "6865d5a7-b5d9-4686-861e-2823b9fc40aa"
+    },
+    {
+      "claim_id": "e7aa89a8-585d-4ed0-85ea-9acab00cae9e",
+      "result_id": "6865d5a7-b5d9-4686-861e-2823b9fc40aa"
+    },
+    {
+      "claim_id": "52d38e4d-777f-4930-a4c4-d749ed76af08",
+      "result_id": "9d85decc-48ef-4fbc-a673-1121c1422841"
+    },
+    {
+      "claim_id": "a8e3f0ab-beb7-46a7-993c-8bd8c7974da1",
+      "result_id": "9d85decc-48ef-4fbc-a673-1121c1422841"
+    },
+    {
+      "claim_id": "257394d1-4a79-45e1-9d47-56cefcf4f9ae",
+      "result_id": "9d85decc-48ef-4fbc-a673-1121c1422841"
+    },
+    {
+      "claim_id": "becb6209-7661-4fb8-84da-a5fc58cc9e19",
+      "result_id": "9d85decc-48ef-4fbc-a673-1121c1422841"
+    },
+    {
+      "claim_id": "84a52ca7-77ed-4c1f-97b1-5f84f6caa137",
+      "result_id": "9d85decc-48ef-4fbc-a673-1121c1422841"
+    },
+    {
+      "claim_id": "4df436c9-5e9b-4589-9ec6-751d42d8fe39",
+      "result_id": "9d85decc-48ef-4fbc-a673-1121c1422841"
+    },
+    {
+      "claim_id": "77526b25-dcca-4f18-88ec-2c9d9bd14e07",
+      "result_id": "9d85decc-48ef-4fbc-a673-1121c1422841"
+    },
+    {
+      "claim_id": "8c12b9b7-5929-4621-871e-7fb5f05f3ee2",
+      "result_id": "9d85decc-48ef-4fbc-a673-1121c1422841"
+    },
+    {
+      "claim_id": "ca52cbc6-9a5c-465c-96ef-21a5d45d19b6",
+      "result_id": "1f914347-c574-443e-a9db-5cbc4f47a472"
+    },
+    {
+      "claim_id": "7f8b0ee1-f674-4f9c-86f7-a1b81bdd5efe",
+      "result_id": "1f914347-c574-443e-a9db-5cbc4f47a472"
+    },
+    {
+      "claim_id": "9ad4e69a-71e0-4051-8547-aa24b7ce5b78",
+      "result_id": "1f914347-c574-443e-a9db-5cbc4f47a472"
+    },
+    {
+      "claim_id": "95b1d9df-37d1-46b1-abd9-af3297845005",
+      "result_id": "1f914347-c574-443e-a9db-5cbc4f47a472"
+    },
+    {
+      "claim_id": "ab1568d5-c391-4bdf-ab44-5b73540b955d",
+      "result_id": "1f914347-c574-443e-a9db-5cbc4f47a472"
+    },
+    {
+      "claim_id": "fdd12e41-ec23-48f3-a006-562beb214b32",
+      "result_id": "bde3a649-2db2-42f9-96f2-a96dc1aa7f42"
+    },
+    {
+      "claim_id": "36ae3ecc-2613-4c27-b795-d05383dba01d",
+      "result_id": "bde3a649-2db2-42f9-96f2-a96dc1aa7f42"
+    },
+    {
+      "claim_id": "df788566-6690-475d-b651-056868b7a529",
+      "result_id": "bde3a649-2db2-42f9-96f2-a96dc1aa7f42"
+    },
+    {
+      "claim_id": "b165a5c2-3d3a-454d-8106-b5f98ff6a96f",
+      "result_id": "bde3a649-2db2-42f9-96f2-a96dc1aa7f42"
+    },
+    {
+      "claim_id": "62b044fc-7f95-4dff-8fa0-077744002192",
+      "result_id": "bde3a649-2db2-42f9-96f2-a96dc1aa7f42"
+    },
+    {
+      "claim_id": "bf6e1d20-9007-4bf2-a217-6317bc8ef4c0",
+      "result_id": "bde3a649-2db2-42f9-96f2-a96dc1aa7f42"
+    },
+    {
+      "claim_id": "941ac95e-7934-4219-833c-2e4c9abec45f",
+      "result_id": "c4eb1960-2ae8-4ff5-a506-f39f461be3d6"
+    },
+    {
+      "claim_id": "8acce44c-0338-49a5-bb8e-af6fa82c609b",
+      "result_id": "c4eb1960-2ae8-4ff5-a506-f39f461be3d6"
+    },
+    {
+      "claim_id": "0def64e1-b30a-45c0-b10a-6dcb26cf75ba",
+      "result_id": "c4eb1960-2ae8-4ff5-a506-f39f461be3d6"
+    },
+    {
+      "claim_id": "05063629-077f-4f6a-9c8f-7780fed975ab",
+      "result_id": "c4eb1960-2ae8-4ff5-a506-f39f461be3d6"
+    },
+    {
+      "claim_id": "19a4f924-1fe5-44f8-b2d4-920d2f57dbe9",
+      "result_id": "c4eb1960-2ae8-4ff5-a506-f39f461be3d6"
+    },
+    {
+      "claim_id": "a6040540-2522-4310-a014-7109fe9ac6d7",
+      "result_id": "c4eb1960-2ae8-4ff5-a506-f39f461be3d6"
+    },
+    {
+      "claim_id": "c957e01a-74e7-4cbc-aba2-f9ae523322b9",
+      "result_id": "c4eb1960-2ae8-4ff5-a506-f39f461be3d6"
+    },
+    {
+      "claim_id": "b8509115-5985-4447-a9cb-a35f9453f3af",
+      "result_id": "0f9fd32f-67e0-4322-9d55-c533a54b2bc2"
+    },
+    {
+      "claim_id": "0a39c31e-93b8-4776-bfd2-8ba5fe52d02a",
+      "result_id": "0f9fd32f-67e0-4322-9d55-c533a54b2bc2"
+    },
+    {
+      "claim_id": "6a77e16b-5279-491e-9ed4-479c09a03c53",
+      "result_id": "0f9fd32f-67e0-4322-9d55-c533a54b2bc2"
+    },
+    {
+      "claim_id": "9ac69ea7-122d-4e29-8106-a9d8f94204e1",
+      "result_id": "1e4e9a5c-f4c7-446a-91b9-8e483efb7916"
+    },
+    {
+      "claim_id": "4f762e3c-6b60-44d2-b7e3-afdb0af54b2c",
+      "result_id": "1e4e9a5c-f4c7-446a-91b9-8e483efb7916"
+    },
+    {
+      "claim_id": "e26ad990-f163-4bdf-bec3-bbaef1f63869",
+      "result_id": "1e4e9a5c-f4c7-446a-91b9-8e483efb7916"
+    },
+    {
+      "claim_id": "15f892ad-02b2-4c5e-a593-66971742cfa6",
+      "result_id": "1e4e9a5c-f4c7-446a-91b9-8e483efb7916"
+    },
+    {
+      "claim_id": "c01810fb-c067-4c57-9d38-5f2fc635cb8e",
+      "result_id": "1e4e9a5c-f4c7-446a-91b9-8e483efb7916"
+    },
+    {
+      "claim_id": "57053689-273d-4294-93de-f52ef66fcae9",
+      "result_id": "1e4e9a5c-f4c7-446a-91b9-8e483efb7916"
+    },
+    {
+      "claim_id": "c4dc3edc-dce0-4a1b-8ce8-87e35a73382d",
+      "result_id": "1e4e9a5c-f4c7-446a-91b9-8e483efb7916"
+    },
+    {
+      "claim_id": "51e521ff-8291-4fa6-a89a-7d9785b7d997",
+      "result_id": "1e4e9a5c-f4c7-446a-91b9-8e483efb7916"
+    },
+    {
+      "claim_id": "a5178678-6314-4607-b292-23011b8ab044",
+      "result_id": "1e4e9a5c-f4c7-446a-91b9-8e483efb7916"
+    },
+    {
+      "claim_id": "a6c5a1c5-b6f9-4101-82c7-7465f211dc97",
+      "result_id": "1e4e9a5c-f4c7-446a-91b9-8e483efb7916"
+    },
+    {
+      "claim_id": "555ddd77-8a3e-4538-8e10-1564dc27fde1",
+      "result_id": "1e4e9a5c-f4c7-446a-91b9-8e483efb7916"
+    },
+    {
+      "claim_id": "fb94119b-3a37-445a-a1c8-887e82ec413e",
+      "result_id": "1e4e9a5c-f4c7-446a-91b9-8e483efb7916"
+    },
+    {
+      "claim_id": "a0384ccf-c20b-4eff-9d6a-c1699f4506aa",
+      "result_id": "1e4e9a5c-f4c7-446a-91b9-8e483efb7916"
+    },
+    {
+      "claim_id": "b9210f94-787a-4fca-9354-02b414112483",
+      "result_id": "f96e6732-8b34-42c9-af28-6b78d86d03b0"
+    },
+    {
+      "claim_id": "23ba18db-f10e-4c6c-9d42-521834aeeb55",
+      "result_id": "f96e6732-8b34-42c9-af28-6b78d86d03b0"
+    },
+    {
+      "claim_id": "b7ddbb4c-2c5c-401d-9cff-21d4724680fd",
+      "result_id": "f96e6732-8b34-42c9-af28-6b78d86d03b0"
+    },
+    {
+      "claim_id": "d9f6bbc5-40c7-419f-99a7-b3eb46cc29f1",
+      "result_id": "f96e6732-8b34-42c9-af28-6b78d86d03b0"
+    },
+    {
+      "claim_id": "bfe8fe94-4c84-4c9c-b0f1-39fa59f940b9",
+      "result_id": "f96e6732-8b34-42c9-af28-6b78d86d03b0"
+    },
+    {
+      "claim_id": "3be69863-5aef-4ca7-89f7-2a954e5058ba",
+      "result_id": "f96e6732-8b34-42c9-af28-6b78d86d03b0"
+    },
+    {
+      "claim_id": "d0ec27f4-b651-406a-b983-7ff5b7bb7b48",
+      "result_id": "f96e6732-8b34-42c9-af28-6b78d86d03b0"
+    },
+    {
+      "claim_id": "60453617-2b3c-41c0-9b5c-09b55357960a",
+      "result_id": "f96e6732-8b34-42c9-af28-6b78d86d03b0"
+    },
+    {
+      "claim_id": "df8c756b-bb49-42dc-9eb9-1d0051748508",
+      "result_id": "f96e6732-8b34-42c9-af28-6b78d86d03b0"
+    },
+    {
+      "claim_id": "904a22f5-7ade-4e90-a6b7-5ad64f1998ad",
+      "result_id": "f96e6732-8b34-42c9-af28-6b78d86d03b0"
+    },
+    {
+      "claim_id": "fe23e62f-86dc-4a30-852a-d1887b84c354",
+      "result_id": "f96e6732-8b34-42c9-af28-6b78d86d03b0"
+    },
+    {
+      "claim_id": "800102c6-60dc-45ab-bbb3-fa43aeadb189",
+      "result_id": "f96e6732-8b34-42c9-af28-6b78d86d03b0"
+    },
+    {
+      "claim_id": "c940e20c-b988-4f23-a3d9-6735138016d4",
+      "result_id": "f96e6732-8b34-42c9-af28-6b78d86d03b0"
+    },
+    {
+      "claim_id": "0d284ae8-d3fb-4fc3-bc7b-e0ca6670caaa",
+      "result_id": "f96e6732-8b34-42c9-af28-6b78d86d03b0"
+    },
+    {
+      "claim_id": "ab2680b9-6916-4e46-bdc6-14a46695dabf",
+      "result_id": "f96e6732-8b34-42c9-af28-6b78d86d03b0"
+    },
+    {
+      "claim_id": "06dedfa0-b36b-403a-96c8-480d5bc5588e",
+      "result_id": "324aee75-46bc-4281-9bf3-a02dc53322d3"
+    },
+    {
+      "claim_id": "ccef696a-d1db-413a-98b1-94aa8d5c57ca",
+      "result_id": "324aee75-46bc-4281-9bf3-a02dc53322d3"
+    },
+    {
+      "claim_id": "9081e359-50ca-4010-b9e2-1a0d71f78bcd",
+      "result_id": "324aee75-46bc-4281-9bf3-a02dc53322d3"
+    },
+    {
+      "claim_id": "a81beca8-9c83-4f17-bb04-0f1ab49db5a6",
+      "result_id": "324aee75-46bc-4281-9bf3-a02dc53322d3"
+    },
+    {
+      "claim_id": "32184c68-2516-4267-ae5e-fa46da152a88",
+      "result_id": "324aee75-46bc-4281-9bf3-a02dc53322d3"
+    },
+    {
+      "claim_id": "b21271a2-813b-4d4c-84f5-bb984ece6d5b",
+      "result_id": "324aee75-46bc-4281-9bf3-a02dc53322d3"
+    },
+    {
+      "claim_id": "880e2b25-983c-46ce-86ac-b6576605f4de",
+      "result_id": "324aee75-46bc-4281-9bf3-a02dc53322d3"
+    },
+    {
+      "claim_id": "95a9164a-2190-47d6-bf5d-c24ba77dea27",
+      "result_id": "324aee75-46bc-4281-9bf3-a02dc53322d3"
+    },
+    {
+      "claim_id": "975e1b88-ce9c-45f2-80c6-8b3dfea1a37e",
+      "result_id": "324aee75-46bc-4281-9bf3-a02dc53322d3"
+    },
+    {
+      "claim_id": "9a6cc4ed-4122-48bb-b989-341fc9a4c2f2",
+      "result_id": "324aee75-46bc-4281-9bf3-a02dc53322d3"
+    },
+    {
+      "claim_id": "99d0f146-59b5-492d-a6e7-4f74b3ea9c3f",
+      "result_id": "324aee75-46bc-4281-9bf3-a02dc53322d3"
+    },
+    {
+      "claim_id": "409e7076-c694-49a4-b55f-0e4c0835deca",
+      "result_id": "324aee75-46bc-4281-9bf3-a02dc53322d3"
+    },
+    {
+      "claim_id": "a383b493-c6ac-44ab-8a53-faeaa171bb6e",
+      "result_id": "324aee75-46bc-4281-9bf3-a02dc53322d3"
+    },
+    {
+      "claim_id": "3d36baa9-d941-412b-af5c-a3b51ac7e2b1",
+      "result_id": "324aee75-46bc-4281-9bf3-a02dc53322d3"
+    },
+    {
+      "claim_id": "6aa672de-f445-4f40-86f6-f4367895b56d",
+      "result_id": "324aee75-46bc-4281-9bf3-a02dc53322d3"
+    },
+    {
+      "claim_id": "d1d7da51-65fe-4275-995e-6e4faeee03a4",
+      "result_id": "324aee75-46bc-4281-9bf3-a02dc53322d3"
+    },
+    {
+      "claim_id": "0f41c0cf-00e3-4074-bd96-6755a25bfc81",
+      "result_id": "324aee75-46bc-4281-9bf3-a02dc53322d3"
+    },
+    {
+      "claim_id": "60ee4c2c-9eba-479c-994c-7da45e574d32",
+      "result_id": "d5ceb828-22d0-466c-9b5d-22424f4805f3"
+    },
+    {
+      "claim_id": "81b7b068-1b76-468f-8064-d3be86a66ad2",
+      "result_id": "d5ceb828-22d0-466c-9b5d-22424f4805f3"
+    },
+    {
+      "claim_id": "50bd3763-80fa-4a37-b4fd-179841bdb706",
+      "result_id": "d5ceb828-22d0-466c-9b5d-22424f4805f3"
+    },
+    {
+      "claim_id": "9a91b54c-4246-42e6-b3f5-8fe0352d2429",
+      "result_id": "d5ceb828-22d0-466c-9b5d-22424f4805f3"
+    },
+    {
+      "claim_id": "9ebf8d34-002d-421f-aeed-0adb989905a0",
+      "result_id": "d5ceb828-22d0-466c-9b5d-22424f4805f3"
+    }
+  ],
+  "comparisons": []
+}

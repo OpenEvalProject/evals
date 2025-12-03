@@ -1,0 +1,1769 @@
+{
+  "submission": {
+    "id": "32fc4e91-82f4-4f54-b251-2b41c14b6701",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T04:00:08.358366Z",
+    "updated_at": "2025-12-03T04:00:08.358366Z"
+  },
+  "content": [
+    {
+      "id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "submission_id": "32fc4e91-82f4-4f54-b251-2b41c14b6701",
+      "content_type": "manuscript",
+      "content_text": "# Learning excitatory-inhibitory neuronal assemblies in recurrent networks\n\n## Authors\n\n- Owen Mackwood<sup>1</sup> ([ORCID: 0000-0001-8569-6614](https://orcid.org/0000-0001-8569-6614))\n- Laura B Naumann<sup>1</sup> ([ORCID: 0000-0002-7919-7349](https://orcid.org/0000-0002-7919-7349))\n- Henning Sprekeler<sup>1</sup> ([ORCID: 0000-0003-0690-3553](https://orcid.org/0000-0003-0690-3553)) \u2020\n\n### Affiliations\n\n1. Bernstein Center for Computational Neuroscience Berlin Berlin Germany\n2. Department for Electrical Engineering and Computer Science, Technische Universit\u00e4t Berlin Berlin Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nUnderstanding the connectivity observed in the brain and how it emerges from local plasticity rules is a grand challenge in modern neuroscience. In the primary visual cortex (V1) of mice, synapses between excitatory pyramidal neurons and inhibitory parvalbumin-expressing (PV) interneurons tend to be stronger for neurons that respond to similar stimulus features, although these neurons are not topographically arranged according to their stimulus preference. The presence of such excitatory-inhibitory (E/I) neuronal assemblies indicates a stimulus-specific form of feedback inhibition. Here, we show that activity-dependent synaptic plasticity on input and output synapses of PV interneurons generates a circuit structure that is consistent with mouse V1. Computational modeling reveals that both forms of plasticity must act in synergy to form the observed E/I assemblies. Once established, these assemblies produce a stimulus-specific competition between pyramidal neurons. Our model suggests that activity-dependent plasticity can refine inhibitory circuits to actively shape cortical computations.\n\n## Introduction\n\nWith the advent of modern optogenetics, the functional role of inhibitory interneurons has developed into one of the central topics of systems neuroscience (Fishell and Kepecs, 2020). Aside from the classical perspective that inhibition serves to stabilize recurrent excitatory feedback loops in neuronal circuits (van Vreeswijk and Sompolinsky, 1996; Brunel, 2000; Murphy and Miller, 2009; Sprekeler, 2017), it is increasingly recognised as an active player in cortical computation (Isaacson and Scanziani, 2011; Priebe and Ferster, 2008; Rubin et al., 2015; Pouille and Scanziani, 2001; Letzkus et al., 2011; Adesnik et al., 2012; Hennequin et al., 2014; Phillips et al., 2017; Barron et al., 2016; Barron et al., 2017; Tovote et al., 2015).\n\nWithin cortical neurons, excitatory and inhibitory currents are often highly correlated in their response to stimuli (Wehr and Zador, 2003; Froemke et al., 2007; Tan et al., 2011; Bhatia et al., 2019), in time (Okun and Lampl, 2008; Dipoppa et al., 2018) and across neurons (Xue et al., 2014). This co-tuning of excitatory and inhibitory currents has been attributed to different origins. In topographically organised sensory areas such as cat primary visual cortex\u00a0(V1), the co-tuning with respect to sensory stimuli could be a natural consequence of local feedback inhibition and does not impose strong constraints on inhibitory circuitry (Harris and Mrsic-Flogel, 2013). In the case of feedforward inhibition, co-tuning of excitatory and inhibitory currents was suggested to arise from homeostatic synaptic plasticity in GABAergic synapses (Vogels et al., 2011; Clopath et al., 2016; Weber and Sprekeler, 2018; Hennequin et al., 2017).\n\nIn sensory areas with poor feature topography, such as V1 of rodents (Ohki et al., 2005), feedback inhibition has been hypothesised to be largely unspecific for stimulus features, a property inferred from the dense connectivity (Fino and Yuste, 2011; Packer and Yuste, 2011) and reliable presence of synapses connecting pyramidal (Pyr) neurons to inhibitory interneurons with dissimilar stimulus tuning (Harris and Mrsic-Flogel, 2013; Bock et al., 2011; Hofer et al., 2011). However, recent results cast doubt on this idea of a \u2018blanket of inhibition\u2019 (Fino and Yuste, 2011; Packer and Yuste, 2011).\n\nIn mouse V1, Znamenskiy et al., 2018 report that although the presence of synaptic connections between Pyr cells and parvalbumin-expressing (PV) interneurons is independent of their respective stimulus responses, the efficacy of those synapses is correlated with their response similarity, both in PV \u2192 Pyr and in Pyr \u2192 PV connections. These mutual preferences in synaptic organisation suggest that feedback inhibition may be more stimulus-specific than previously thought and that Pyr and PV neurons form specialised\u2014albeit potentially overlapping\u2014excitatory-inhibitory (E/I) assemblies (Chenkov et al., 2017; Yoshimura et al., 2005; Litwin-Kumar and Doiron, 2012; Litwin-Kumar and Doiron, 2014). While the presence of such E/I assemblies (Znamenskiy et al., 2018; Rupprecht and Friedrich, 2018) suggests the need for an activity-dependent mechanism for their formation and/or refinement (Khan et al., 2018; Najafi et al., 2020), the requirements such a mechanism must fulfil remain unresolved.\n\nHere, we use a computational model to identify requirements for the development of stimulus-specific feedback inhibition. We find that the formation of E/I assemblies requires a synergistic action of plasticity on two synapse types: the excitatory synapses from Pyr neurons onto PV interneurons and the inhibitory synapses from those interneurons onto the Pyr cells. Using \u2018knock-out experiments\u2019, in which we block plasticity in either synapse type, we show that both must be plastic to account for the observed functional microcircuits in mouse V1. In addition, after the formation of E/I assemblies, perturbations of individual Pyr neurons lead to a feature-specific suppression of other Pyr neurons as recently found in mouse V1 (Chettih and Harvey, 2019). Thus, synergistic plasticity of the incoming and outgoing synapses of PV interneurons can drive the development of stimulus-specific feedback inhibition, resulting in a competition between Pyr neurons with similar stimulus preference.\n\n## Results\n\nTo understand which activity-dependent mechanisms can generate specific feedback inhibition in circuits without feature topography\u2014such as mouse V1 (Figure 1a), we studied a rate-based network model consisting of $N^{E}=512$ excitatory Pyr neurons and $N^{I}=64$ inhibitory PV neurons. To endow the excitatory neurons with a stimulus\u00a0tuning similar to Pyr cells in layer 2/3 of mouse V1 (Znamenskiy et al., 2018), each excitatory neuron receives external excitatory input that is tuned to orientation, temporal frequency and spatial frequency (Figure 1b). The preferred stimuli of the Pyr neurons cover the stimulus space evenly. Because we are interested under which conditions feedback inhibition can acquire a stimulus selectivity, inhibitory neurons receive external inputs without stimulus tuning, but are recurrently connected to Pyr neurons. While the network has no stimulus topography, Pyr neurons are preferentially connected to other Pyr neurons with similar stimulus tuning (Hofer et al., 2011; Cossell et al., 2015), and connection strength is proportional to the signal correlation of their external inputs. Note that the Pyr \u2192 Pyr connections only play a decisive role for the results in Figure 4 but are present in all simulations for consistency. Connection probability across the network is $p=0.6$, with the remaining network connectivity (Pyr \u2192 PV, PV \u2192 PV, PV \u2192 Pyr) initialised randomly according to a log-normal distribution (Song et al., 2005; Loewenstein et al., 2011), with a variability that is similar to that measured in the respective synapses (Znamenskiy et al., 2018).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/59715/elife-59715-fig1-v1.jpg)\n\n**Figure 1.:** (a) Emergence of E/I assemblies comprised of pyramidal\u00a0(Pyr) neurons (triangles) and parvalbumin-expressing\u00a0(PV) interneurons (circles) in circuits without feature topography. (b) Network architecture and stimulus tuning of external inputs to Pyr cells. (c) Stimulus selectivity of Pyr neurons and PV interneurons (before and after learning). Arrows indicate the median. (d) Example responses of reciprocally connected Pyr cells and PV interneurons. Examples chosen for large, intermediate, and low response similarity (RS). Numbers correspond to points marked in (e). (e) Relationship of synaptic efficacies of output (left) and input connections (centre) of PV interneurons with RS. Relationship of input and output efficacies (right). Black lines are obtained via linear regression. Reported r and associated p-value are Pearson\u2019s correlation. (f) Stimulus tuning of excitatory and inhibitory currents onto an example Pyr cell, before and after learning. For simplicity, currents are shown for spatial and temporal frequency only, averaged across all orientations. (g) Angle between the weight update and the gradient rule while following the local approximation for input (top) and output (bottom) connections of PV interneurons. Time course for first 4% of simulation (left) and final distribution (right) shown. Black lines are low-pass filtered time courses.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59715/elife-59715-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Schematics of PV \u2192 Pyr plasticity (left) and Pyr \u2192 PV plasticity (right). PV \u2192 Pyr plasticity follows a simple logic: A given inhibitory synapse is potentiated if the postsynaptic Pyr neuron fires above target and is depressed if below. The Pyr \u2192 PV plasticity compares the excitatory input current received by the postsynaptic PV neuron to a target value, and adjusts the incoming synapses in proportion to this error and to presynaptic activity. (b) Time plots of the Pyr population firing rate (top), mean of all PV \u2192 Pyr synaptic weights (middle) and Pyr \u2192 PV weights (bottom). Columns correspond to simulations in which both PV \u2192 Pyr and Pyr \u2192 PV plasticity are present (left), only Pyr \u2192 PV is present (middle), and only PV \u2192 Pyr is present (right).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/59715/elife-59715-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) In a network learning with the derived gradient rules of Equation 15, significant correlations are reliably detected between response similarity (RS) and excitatory weights (red bars), RS and inhibitory weights (blue bars), and excitatory and inhibitory weights for reciprocally connected pyramidal (Pyr)-PV cell pairs (black bars) only if both synapse types are plastic. (b) Interneurons fail to develop stimulus selectivity if their input weights do not change according to the gradient rule of Equation 15a. (c) Synaptic currents onto Pyr neurons only develop reliable, strong excitatory-inhibitory (E/I) co-tuning if both input and output synapses are updated using the gradient rules. Currents are averaged across all Pyr neurons after centring according to the neuron\u2019s preferred stimulus. The bottom row is a slice through the difference (third row) of the average excitatory (first row) and inhibitory currents (second row). (d) Violin plot of the distribution of E/I synaptic current similarity values for all Pyr neurons in the network (see Materials and methods).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/59715/elife-59715-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (a) Excitatory (red) and inhibitory (blue) synaptic currents onto a random selection of Pyr neurons, as a function of temporal and spatial stimulus frequency (averaged over all orientations), when both incoming and outgoing parvalbumin-expressing (PV) synapses are plastic. (b) The network-averaged excitatory (first row) and inhibitory (second row) synaptic currents onto Pyr neurons, both centred according to the peak excitatory current before averaging. After averaging, their difference is taken (third row) and a slice is plotted (bottom row). When both plasticities are present, currents are well\u00a0balanced across stimuli with a modest excitatory bias for preferred stimuli. (c) Quality of excitatory-inhibitory\u00a0(E-I) current co-tuning for every Pyr in the network quantified by the distribution of their cosine similarities. Only when both plasticities are present, do most Pyr neurons receive well co-tuned E-I synaptic currents.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/59715/elife-59715-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** In a network with both local rules (left column), the update to Pyr \u2192 PV synapses rapidly aligns to the gradient (i.e. when the angle between the approximate update and the gradient is below $\\pi/2$; bottom left). While updates to the Pyr \u2192 PV weights occasionally point away from the gradient, 79% of samples are below $\\pi/2$. For the knock-out (KO) experiments (right column), output plasticity closely follows the PV \u2192 Pyr gradient even if input plasticity is absent (upper right). In contrast, if output (PV \u2192 Pyr) plasticity is absent, the approximate Pyr \u2192 PV rule does not follow the gradient (lower right).\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/59715/elife-59715-fig1-figsupp5-v1.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (a) Plots of 2D histograms for PV \u2192 Pyr (top) and Pyr \u2192 PV (bottom) weight versus response similarity (RS), in different networks trained with the local plasticity rules (columns). White lines indicate the threshold of experimental detectability. Any weight <\u00a010-4 is not included when computing Pearson\u2019s correlation between RS and synaptic weight, or weight-weight correlations. (b) Same plots as (a), but for networks trained with the gradient rules.\n\n### E/I assemblies are formed by homeostatic plasticity rules in input and output connections of PV interneurons\n\nIn feedforward networks, a stimulus-specific balance of excitation and inhibition can arise from homeostatic inhibitory synaptic plasticity that aims to minimise the deviation of a neuron\u2019s firing rate from a target for all stimuli of a given set (Vogels et al., 2011; Clopath et al., 2016; Weber and Sprekeler, 2018). We wondered whether a stimulus-specific form of homeostasis can also generate stimulus-specific feedback inhibition by forming E/I assemblies. To that end, we derive synaptic plasticity rules for excitatory input and inhibitory output connections of PV interneurons that are homeostatic for the excitatory population (see 'Materials and methods'). A stimulus-specific homeostatic control can be seen as a \u2018trivial\u2019 supervised learning task, in which the objective is that all Pyr neurons should learn to fire at a given target rate $\u03c1_{0}$ for all stimuli. Hence, a gradient-based optimisation would effectively require a backpropagation of error (Rumelhart et al., 1985) through time (BPTT; Werbos, 1990).\n\nBecause backpropagation rules rely on non-local information that might not be available to the respective synapses, their biological plausibility is currently debated (Lillicrap et al., 2020; Sacramento et al., 2018; Guerguiev et al., 2017; Whittington and Bogacz, 2019; Bellec et al., 2020). However, a local approximation of the full BPTT update can be obtained under the following assumptions: First, we assume that the sensory input to the network changes on a time scale that is slower than the intrinsic time scales in the network. This eliminates the necessity of backpropagating information through time, albeit still through the synapses in the network. This assumption results in what we call the \u2018gradient-based\u2019 rules (Equation 15 in Appendix\u00a01), which are spatially non-local. Second, we assume that synaptic interactions in the network are sufficiently weak that higher-order synaptic interactions can be neglected. Third and finally, we assume that over the course of learning, the Pyr \u2192 PV connections and the PV \u2192 Pyr connections become positively correlated (Znamenskiy et al., 2018), such that we can replace PV \u2192 Pyr synapses by the reciprocal Pyr \u2192 PV synapse in the Pyr \u2192 PV learning rule, without rotating the update too far from the true gradient (see Appendix\u00a01).\n\nThe resulting learning rule for the output connections of the interneurons is similar to a previously suggested form of homeostatic inhibitory plasticity (Figure 1\u2014figure supplement 1a, left) (Vogels et al., 2011). Specifically, PV output synapses $W^{E\u2190I}$ undergo Hebbian changes in proportion to presynaptic interneuron activity $r_{j}^{I}$ and the signed deviation of total postsynaptic Pyr cell input $h_{i}^{E}$ from the homeostatic target:\n\n$$\n\u0394W_{ij}^{E\u2190I}\u221dr_{j}^{I}(h_{i}^{E}\u2212\u03c1_{0})+weight\u00a0decay.\n$$\n\nIn contrast, the PV input synapses $W^{I\u2190E}$ are changed such that the total excitatory drive $I_{i}^{E,rec}$ from the Pyr population to each interneuron is close to some target value I0 (Figure 1\u2014figure supplement 1a, right):\n\n$$\n\u0394W_{ij}^{I\u2190E}\u221dr_{j}^{E}(I_{i}^{E,rec}\u2212I_{0})+weight\u00a0decay.\n$$\n\nBoth synapse types are subject to a weak weight decay, to avoid the redundancy that a multiplicative rescaling of input synapses can be compensated by a rescaling of the output synapses.\n\nWhile our main results are obtained using the local approximations, we also simulated the gradient-based rules to verify that the approximation does not qualitatively change the results (Figure 1\u2014figure supplement 2).\n\nWhen we endow the synapses of an initially randomly connected network of Pyr neurons and PV interneurons with plasticity in both the input and the output synapses of the interneurons, the network develops a synaptic weight structure and stimulus response that closely resemble that of mouse V1 (Znamenskiy et al., 2018). Before learning, interneurons show poor stimulus selectivity (Figure 1c), in line with the notion that in a random network, interneurons pool over many Pyr neurons with different stimulus tuning (Harris and Mrsic-Flogel, 2013). The network is then exposed to randomly interleaved stimuli. By the end of learning, interneurons have developed a pronounced stimulus tuning, albeit weaker than that of Pyr neurons (Figure 1c,d). Interneurons form strong bidirectional connections preferentially with Pyr neurons with a similar stimulus tuning, whereas connections between Pyr-PV pairs with dissimilar stimulus tuning are weaker (Figure 1d,e). To make our results comparable to Znamenskiy et al., 2018, we randomly sample an experimentally feasible number of synaptic connections from the network ($n=100$). Both the efficacy of PV input and output connections are highly correlated with the response similarity\u00a0(RS) (see 'Materials and methods') of the associated Pyr neurons and interneurons (Figure 1e, left and centre). For bidirectionally connected cell pairs, the efficacies of the respective input and output connections are highly correlated (Figure 1e, right). The stimulus tuning of the inhibitory inputs onto the Pyr cells\u2014initially flat\u2014closely resembles that of the excitatory inputs after learning (Figure 1f, Figure 1\u2014figure supplement 3; Tan et al., 2011), that\u00a0is, the network develops a precise E/I balance (Hennequin et al., 2017).\n\nFinally, the optimal gradient rules produce very similar results to the local approximations (Figure 1\u2014figure supplement 2). Over the course of learning, the weight updates by the approximate rules align to the updates that would result from the gradient rules (Figure 1g, Figure 1\u2014figure supplement 4), presumably by a mechanism akin to feedback alignment (Lillicrap et al., 2016; Akrout et al., 2019).\n\nIn summary, these results show that combined homeostatic plasticity in input and output synapses of interneurons can generate a similar synaptic structure as observed in mouse V1, including the formation of E/I assemblies.\n\n### PV \u2192 Pyr plasticity is required for the formation of E/I assemblies\n\nHaving shown that homeostatic plasticity acting on both input and output synapses of interneurons are sufficient to learn E/I assemblies, we now turn to the question of whether both are necessary. To this end, we perform \u2018knock-out\u2019 experiments, in which we selectively block synaptic plasticity in either of the synapses. The motivation for these experiments is the observation that the incoming PV synapses follow a long-tailed distribution (Znamenskiy et al., 2018). This could provide a sufficient stimulus selectivity in the PV population for PV \u2192 Pyr plasticity alone to achieve a satisfactory E/I balance. A similar reasoning holds for static, but long-tailed outgoing PV synapses. This intuition is supported by results from Litwin-Kumar et al., 2017, where for a population of neurons analogous to our interneurons, the dimensionality of responses in that population can be high for static input synapses, when those are log-normally distributed.\n\nWhen we knock\u00a0out output plasticity but keep input plasticity intact, the network fails to develop E/I assemblies and a stimulus-specific E/I balance. While there is highly significant change in the distribution of PV interneuron stimulus selectivity (Mann-Whitney U test, $U=1207$, $p<10^{\u22124}$), the effect is much stronger when output plasticity is also present (Figure 2a,b). Importantly, excitatory and inhibitory currents in Pyr neurons are poorly co-tuned (Figure 2c, Figure 1\u2014figure supplement 3b). In particular, feedback inhibition remains largely untuned because output connections are still random, so that Pyr neurons pool inhibition from many interneurons with different stimulus tuning.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/59715/elife-59715-fig2-v1.jpg)\n\n**Figure 2.:** (a) Example responses of reciprocally connected pyramidal (Pyr) cells and PV interneurons. Numbers correspond to points marked in (d). (b) Stimulus selectivity of Pyr cells and PV interneurons (before and after learning; Mann-Whitney U test, $p<10^{\u22124}$). Arrows indicate median. (c) Stimulus tuning of excitatory and inhibitory input currents in a Pyr cell before and after learning. For simplicity, currents are shown for spatial and temporal frequency only, averaged across all orientations. (d) Relationship of output (left) and input (centre) synaptic efficacies of PV interneurons with response similarity. Relationship of input and output efficacies (right). Plotted lines are obtained via linear regression. Reported r and associated p-value are the Pearson\u2019s correlation. (e) Distribution of Pearson\u2019s correlation coefficients for multiple samples as shown in (d). Dashed line marks threshold of high significance ($p<0.01$). (f) Fraction of samples with highly significant positive correlation before plasticity, after plasticity in both input and output connections, and for KO of plasticity in PV output connections (based on 10,000 random samples of 100 synaptic connections).\n\nTo investigate whether the model without output plasticity is consistent with the synaptic structure of mouse V1, we repeatedly sample an experimentally feasible number of synapses ($n=100$, Figure 2d) and plot the distribution of the three pairwise Pearson\u2019s correlation coefficients between the two classes of synaptic weights and RS (Figure 2e). When both forms of plasticity are present in the network, a highly significant positive correlation ($p<0.01$) is detected in all samples for all three correlation types (Figure 2f). When output plasticity is knocked out, we still find a highly significant positive correlation between input weights and RS in 99% of the samples (Figure 2d\u2013f). In contrast, correlations between input and output synapses are weaker and cannot reliably be detected (2% of samples). Notably, we find a correlation between output weights and RS in <0.01% of samples (Figure 2f). Finally, for an experimentally realistic sample size of $n=100$, the probability of a correlation coefficient equal or higher than that observed by Znamenskiy et al., 2018 is <0.01% for the correlation between output weights and RS ($r=0.55$), and <0.01% for the correlation between input and output synapses ($r=0.52$).\n\nThe non-local gradient rule for the PV input synapses alone also does not permit the formation of E/I assemblies (Figure 1\u2014figure supplement 2). While the selectivity of interneurons increases more than for the local approximation (Figure 1\u2014figure supplement 2b), feedback inhibition still remains untuned in the absence of output plasticity (Figure 1\u2014figure supplement 2c,d).\n\nWe therefore conclude that input plasticity alone is insufficient to generate the synaptic microstructure observed in mouse V1.\n\n### Pyr \u2192 PV plasticity is required for assembly formation\n\nWhen we knock out input plasticity but keep output plasticity intact, we again observe no formation of E/I assemblies. This remains true even when using the gradient-based rule (Figure 1\u2014figure supplement 2). The underlying reason is that input weights remain random. Interneurons collect excitation from many Pyr neurons with different preferences, and absent plasticity on their input synapses, they maintain their initial poor stimulus selectivity (Figure 3a\u2013c). Because of the poor stimulus tuning of the interneurons, output plasticity cannot generate stimulus-specific inhibitory inputs to the Pyr neurons (Figure 3d). Instead, they essentially receive a tonic, unspecific background inhibition that is weakly modulated by the stimulus (Figure 1\u2014figure supplement 3b). While this weak modulation is correlated with the excitatory inputs, the overall similarity between excitatory and inhibitory input remains low (Figure 1\u2014figure supplement 3c).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/59715/elife-59715-fig3-v1.jpg)\n\n**Figure 3.:** (a) Example responses of reciprocally connected pyramidal (Pyr) cells and PV interneurons. (b) Stimulus selectivity of Pyr cells and PV interneurons (before and after learning). Arrows indicate median. (c) Violin plots of inhibitory stimulus selectivity before plasticity, after learning with plasticity in both input and output connections of PV interneurons and for knock-out\u00a0(KO) of plasticity in PV input connections. (d) Stimulus tuning of excitatory and inhibitory currents in a Pyr cell before and after learning. Dimensions correspond to spatial and temporal frequency of the stimuli averaged across all orientations. (e) Fraction of samples with highly significant ($p<0.01$) positive correlation before plasticity, after plasticity in both input and output connections, and for KO of plasticity in PV input connections (based on 10,000 random samples of 100 synaptic connections).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59715/elife-59715-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Scatter plots containing every synapse in networks without PV \u2192 Pyr plasticity (top), or without Pyr \u2192 PV plasticity (bottom). Pearson\u2019s correlation is always highly significant, though sometimes weak.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/59715/elife-59715-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** To ensure that the results of Figure 3 were not simply a consequence of our chosen Pyr \u2192 PV weight distribution ($\\sigma^{I\u2190E}=0.65$), we repeat those simulations with weights drawn from a log-normal distribution with a longer tail ($\\sigma^{I\u2190E}=1.6$). (a) The default and longer-tailed distributions of Pyr \u2192 PV weights. (b) PV neurons exhibit greater stimulus selectivity than in Figure 3, when Pyr\u2192 PV plasticity is knocked out. (c) Excitatory currents are more precisely balanced by inhibition (compare\u00a0with Figure 3). (d) When repeatedly sampling 100 synapses, the strength of inhibitory synapses that connect Pyr and PV cell pairs are always significantly correlated ($p<0.01$) with response similarity (RS). Excitatory synapses between cell pairs are only correlated with RS in about half of the samples. For reciprocally connected cell pairs, the strength of excitatory weights is rarely correlated with the inhibitory weights. (e) Similar to Figure 3\u2014figure supplement 1 (bottom), when all synapses for the Pyr \u2192 PV KO network are considered, Exc-RS and Exc-Inh correlations are weak but highly significant. Dashed lines indicate the threshold below which synapses are considered experimentally undetectable and discarded for the analysis in (d).\n\nThis modulation is made possible by the fact that interneurons still possess a weak, but consistent stimulus tuning arising from random variations in their input weights. A particularly strong input connection will cause the postsynaptic interneuron to prefer similar stimuli to the presynaptic Pyr. Because of the resulting correlated activity, the Hebbian nature of the output plasticity potentiates inhibitory weights for such cell pairs that are reciprocally connected. The tendency of strong input synapses to generate a strong corresponding output synapse is reflected in a positive correlation between output synapses and RS (Figure 3e, Figure 3\u2014figure supplement 1),\u00a0despite the fact that input synapses remain random.\n\nThis effect further increases when input synapses are drawn from a distribution with an even heavier tail, beyond what is observed in mouse V1 (Znamenskiy et al., 2018; Figure 3\u2014figure supplement 2a). In this case, the stimulus tuning of the interneurons is dominated by a small number of very large synapses. The resulting higher selectivity of the interneurons (Figure 3\u2014figure supplement 2b) allows a better co-tuning of excitation and inhibition in Pyr neurons (Figure 3\u2014figure supplement 2c), in line with theoretical arguments for sparse connectivity (Litwin-Kumar et al., 2017). However, the dominance of a small number of large synapses also makes it unlikely that those synapses are observed in an experiment in which a finite number of synapses are sampled. As a result, a heavier tail does not yield the correlation of reciprocal input and output synapses observed by Znamenskiy et al., 2018 (Figure 3\u2014figure supplement 2d,e), although it increases the probability of observing correlations between input synapses and RS when weak synapses are discarded. See Appendix 1\u00a0for a more extensive discussion.\n\nCollectively, these results indicate that plasticity of both the inhibitory output and the excitatory input synapses of PV interneurons is required for the formation of E/I assemblies in cortical areas without feature topography, such as mouse V1.\n\n### Single-neuron perturbations\n\nOur findings demonstrate that in networks without feature topography, only a synergy of excitatory and inhibitory plasticity can account for the emergence of E/I assemblies. But how does stimulus-specific feedback inhibition affect interactions between excitatory neurons? In layer 2/3 of V1, similarly tuned excitatory neurons tend to have stronger and more frequent excitatory connections (Ko et al., 2011). It has been hypothesised that this tuned excitatory connectivity supports reliable stimulus responses by amplifying the activity of similarly tuned neurons (Cossell et al., 2015). However, the presence of co-tuned feedback inhibition could also induce the opposite effect, such that similarly tuned excitatory neurons are in competition with each other (Chettih and Harvey, 2019; Moreno-Bote and Drugowitsch, 2015).\n\nTo investigate the effect of stimulus-specific inhibition in our network, we simulate the perturbation experiment of Chettih and Harvey, 2019: First, we again expose the network to the stimulus set, with PV input and output plasticity in place to learn E/I assemblies. Second, both before and after learning, we probe the network with randomly selected stimuli from the same stimulus set, while perturbing a single Pyr cell with additional excitatory input, and measure the resulting change in activity of other Pyr neurons in the network (Figure 4a).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/59715/elife-59715-fig4-v1.jpg)\n\n**Figure 4.:** (a) Perturbation of a single pyramidal (Pyr) neuron. Responses of other Pyr neurons are recorded for different stimuli, both with and without perturbation. (b) Perturbation-induced change in activity ($\u0394$ Act.) of a subset of Pyr cells, for a random subset of stimuli (with neuron 1 being perturbed). (c) Influence of perturbing a Pyr neuron on the other Pyr neurons, averaged across all stimuli, for a subset of Pyr neurons. (d) Dependence of influence among Pyr neurons on their receptive field correlation (Pearson\u2019s r), across all neurons in the network (see 'Materials and methods'). Dotted lines indicate plasticity knock-out (KO) experiments; see Figure 4\u2014figure supplement 1b for details. Error bars correspond to the standard error of the sample mean, but are not visible due to their small values. (e) Total strength of output synapses from a Pyr neuron predicts the average effect perturbing it has on other neurons. Dashed line is the result of a linear regression, while r and its associated p-value correspond to the Pearson\u2019s correlation.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59715/elife-59715-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) Receptive\u00a0field correlations (Pearson\u2019s) between Pyr neurons, before (top) and after (bottom) learning with both PV \u2192 Pyr and Pyr \u2192 PV synaptic plasticity. (b) The effect of perturbing a Pyr neuron on the response of other Pyr neurons (to random stimuli) as a function of their receptive\u00a0field correlation (see 'Materials and methods'). On their own, both Pyr \u2192 PV and PV \u2192 Pyr plasticity have little effect on the feature amplification observed prior to learning. (c) Despite the absence of feature competition on average in the KO networks, the total strength of Pyr \u2192 PV synapses from a given Pyr neuron is still predictive of its influence on the rest of the network: The stronger its total weight, the more likely a Pyr is to suppressing the response of other Pyr neurons.\n\nWhile the activity of the perturbed neuron increases, many of the other Pyr neurons are inhibited in response to the perturbation (Figure 4b). Although comparing the pairwise influence of Pyr neurons on each other does not reveal any apparent trend (Figure 4c), recent experiments report that the influence a single-cell perturbation has on other neurons depends on the similarity of their stimulus feature tuning (Chettih and Harvey, 2019). To test whether we observe the same feature-specific suppression, we compute the influence of perturbing a Pyr on the rest of the network as a function of the receptive field correlation of the perturbed cell and each measured cell. In line with recent perturbation studies (Chettih and Harvey, 2019; Sadeh and Clopath, 2020), we observe that\u2014on average\u2014neurons are more strongly inhibited if they have a similar tuning to the perturbed neuron (Figure 4d). The opposite holds before learning: the effect of single-neuron perturbations on the network is increasingly excitatory as receptive field correlation increases. Notably, the networks in which input or output plasticity was knocked out during learning (and therefore did not develop E/I assemblies) show the same excitatory effect (Figure 4d, Figure 4\u2014figure supplement 1b). This confirms that a \u2018blanket of inhibition\u2019 does not account for feature-specific suppression between excitatory neurons (Sadeh and Clopath, 2020).\n\nTo better understand this behaviour, we use the Pyr-Pyr receptive field correlations to compute the coefficient of determination for all pairs ($R^{2}$, which quantifies how well the receptive field of one Pyr neuron predicts that of another). Learning changes the correlative structure in the network (Figure 4\u2014figure supplement 1a) and thereby decreases the coefficient of determination on average, indicating a reduction in Pyr-Pyr correlations within the network ($E\u2062[R^{2}]=0.06$ before learning, 0.02 after). Thus, plasticity suppresses some of the strongest correlations, resulting in \u2018feature competition\u2019 which is believed to aid sensory processing (Lochmann et al., 2012; Moreno-Bote and Drugowitsch, 2015).\n\nWhile on average the network exhibits feature competition, the influence of individual Pyr neurons on the rest of the network is highly variable. According to recent modelling work (Sadeh and Clopath, 2020), the strength of Pyr \u2192 PV synapses strongly influences whether a network will exhibit feature competition. In our network, the total outgoing weight of a Pyr cell onto the PV neurons indeed predicts the average influence that neuron will have on the rest of the network when perturbed (Figure 4e; $r=-0.6$).\n\nIn summary, the stimulus-specific feedback inhibition that emerges in the model also captures the paradoxical suppression of similarly tuned excitatory neurons observed in single-cell perturbation experiments.\n\n## Discussion\n\nThe idea that feedback inhibition serves as a \u2018blanket of inhibition\u2019 (Packer and Yuste, 2011; Fino and Yuste, 2011) that can be selectively broken (Karnani et al., 2016) has been gradually relaxed over recent years and replaced by the notion that feedback inhibition can be rather selective (Rupprecht and Friedrich, 2018) and could thereby support specific neuronal computations (Vogels and Abbott, 2009; Hennequin et al., 2014; Den\u00e8ve and Machens, 2016; Najafi et al., 2020), even in networks without topographic organisation (Znamenskiy et al., 2018; Rupprecht and Friedrich, 2018). Here, we used a computational model to show that the development of E/I assemblies similar to those observed in mouse V1 (Znamenskiy et al., 2018) or zebrafish olfactory areas (Rupprecht and Friedrich, 2018) can be driven by a homeostatic form of plasticity of the incoming and outgoing synapses of inhibitory interneurons. Based on the results of virtual knock-out experiments, we suggest that, on their own, input or output plasticity of interneurons are insufficient to explain the Pyr-PV microcircuitry in mouse V1 and that input and output plasticity in interneurons must act in synergy for stimulus-specific feedback inhibition to develop. To investigate how the presence of E/I assemblies affects interactions between excitatory neurons, we mimicked a perturbation experiment and found that\u2014as in mouse visual cortex\u2014stimulating single excitatory cells paradoxically suppresses similarly tuned neurons (Chettih and Harvey, 2019). Our findings suggest that, by driving the development of tuned feedback inhibition, plasticity of interneurons can fundamentally shape cortical processing.\n\nThe learning rules for the input and output synapses of PV interneurons are based on a single homeostatic objective that aims to keep the net synaptic current onto Pyr neurons close to a given target for all stimuli. The two forms of plasticity fulfil different purposes, however. Plasticity of input synapses is required for interneurons to acquire a stimulus selectivity, whereas plasticity of output synapses can exploit interneuron selectivity to shape inhibitory currents onto excitatory cells. The output plasticity we derived for our recurrent network is very similar to a previously suggested form of inhibitory plasticity (Vogels et al., 2011; Sprekeler, 2017). Homeostatic plasticity rules for inhibitory synapses are now used regularly in computational studies to stabilise model circuits (Vogels et al., 2011; Hennequin et al., 2017; Landau et al., 2016). In contrast, a theoretically grounded approach for the plasticity of excitatory input synapses onto inhibitory neurons is missing.\n\nHomeostatic changes in excitatory synapses onto interneurons in response to lesions or sensory deprivation have been reported (Keck et al., 2011; Takesian et al., 2013; Kuhlman et al., 2013), but the specific mechanisms and functions of this form of interneuron plasticity are not resolved. The plasticity rule we derived for the input synapses of interneurons effectively changes the selectivity of those neurons according to the demands of the Pyr cells, that\u00a0is, such that the interneurons can best counteract deviations of Pyr activity from the target. By which mechanisms such a (nearly teleological) form of plasticity can be achieved is at its core a problem of credit assignment, whose biological implementation remains open (Lillicrap et al., 2016; Guerguiev et al., 2017; Sacramento et al., 2018).\n\nHere, we used a local approximation of the gradient, backpropagation rules, which produces qualitatively similar results, and which we interpret as a recurrent variant of feedback alignment, applied to the specific task of a stimulus-specific E/I balance (Lillicrap et al., 2016; Akrout et al., 2019). The excitatory input connections onto the interneurons serve as a proxy for the transpose of the output connections. The intuition why this replacement is reasonable is the following: The task of balancing excitation by feedback inhibition favours symmetric connections, because excitatory cells that strongly drive a particular PV interneuron should receive a strong feedback connection in return. Therefore, E/I balance favours a positive correlation between the incoming and outgoing synapses of PV neurons and thus the two weight matrices will be aligned in a final balanced state (Lillicrap et al., 2016; Akrout et al., 2019). This weight replacement effectively replaces the \u2018true\u2019 feedback errors by a deviation of the total excitatory input to the PV neurons from a target (Hert\u00e4g and Sprekeler, 2020). The rule therefore has the structure of a homeostatic rule for the recurrent excitatory drive received by PV neurons.\n\nA cellular implementation of such a plasticity rule would require the following ingredients: (i) a signal that reflects the cell-wide excitatory current and\u00a0(ii) a mechanism that changes Pyr \u2192 PV synapses in response to variations in this signal. For the detection of excitatory inputs, postsynaptic sodium or calcium concentrations are natural candidates. Due to the lack of spines in PV dendrites, both are expected to diffuse more broadly in the dendritic arbor than in spiny neurons (Hu et al., 2014; Kullmann and Lamsa, 2007) and may thus provide a signal for overall dendritic excitatory currents. Depending on how excitatory inputs are distributed on PV interneuron dendrites (Larkum and Nevian, 2008; Jia et al., 2010; Grienberger et al., 2015), the integration of the excitatory currents may not need to be cell-wide\u2014which could limit the temporal resolution of the plasticity\u2014but could be local, for\u00a0example, to a dendrite, if local excitatory input is a sufficient proxy for the global input. Notably, in PV interneurons, NMDA receptors are enriched in excitatory feedback relative to feedforward connections (Le Roux et al., 2013), suggesting those two sources of excitation are differentially treated on the postsynaptic side. As for many other excitatory synapses (Sj\u00f6str\u00f6m et al., 2008), postsynaptic calcium is likely a key factor also for the plasticity of excitatory input synapses onto interneurons. Blocking NMDA receptors interferes with Hebbian long-term plasticity in some of these synapses (Lamsa et al., 2007; Kullmann and Lamsa, 2007), as does a block of excitatory input (Le Roux et al., 2013). Furthermore, NMDAR-dependent plasticity in Pyr \u2192 PV synapses is expressed postsynaptically and seems to require presynaptic activation (Kullmann and Lamsa, 2007). In summary, we believe that there are no conceptual issues that would rule out an implementation of the suggested plasticity rule for excitatory inputs onto PV interneurons.\n\nWe also expect that the rules we suggest here are only one set of many that can establish E/I assemblies. Given that the role of the input plasticity in the interneurons is the formation of a stimulus specificity, it is tempting to assume that this could equally well be achieved by classical forms of plasticity like the Bienenstock-Cooper-Munro (BCM) rule (Bienenstock et al., 1982), which is commonly used in models of receptive field formation. However, in our hands, the combination of BCM plasticity in Pyr \u2192 PV synapses with homeostatic inhibitory plasticity in the PV \u2192 Pyr synapses showed complex dynamics, an analysis of which is beyond the scope of this article. In particular, this combination of rules often did not converge to a steady state, probably for the following reason. BCM rules tend to make the postsynaptic neuron as stimulus-selective as possible. Given the limited number of interneurons in our circuit, this can lead to a situation in which parts of stimulus space are not represented by any interneurons. As a result, Pyr neurons that respond to those stimuli cannot recruit inhibition and maintain a high firing rate far above the target. Other Pyr cells, which have access to interneurons with a similar stimulus tuning, can recruit inhibition to gradually reduce their firing rates towards the target rate. Because the BCM rule is Hebbian, it tends to strengthen input synapses from Pyr neurons with high activity. This shifts the stimulus tuning of the interneurons to those stimuli that were previously underrepresented. However, this in turn renders a different set of stimuli uncovered by inhibition and withdraws feedback inhibition from the corresponding set of Pyr cells, which can now fire at high rates.\n\nWe suspect that this instability can also arise for other Hebbian forms of plasticity in interneuron input synapses when they are combined with homeostatic inhibitory plasticity (Vogels et al., 2011) in their output synapses. The underlying reason is that for convergence, the two forms of plasticity need to work synergistically towards the same goal, that\u00a0is, the same steady state. For two arbitrary synaptic plasticity rules acting in different sets of synapses, it is likely that they aim for two different overall network configurations. Such competition can easily result in latching dynamics with a continuing turn-over of transiently stable states, in which the form of plasticity that acts more quickly gets to reach its goal transiently, only to be undermined by the other one later.\n\nBoth Pyr \u2192 PV and PV\u2192 Pyr plasticity have been studied in slice (for reviews, see, e.g., Kullmann and Lamsa, 2007; Vogels et al., 2013), but mostly in isolation. The idea that the two forms of plasticity should act in synergy suggests that it may be interesting to study both forms in the same system, for\u00a0example, in reciprocally connected Pyr-PV pairs.\n\nLike all computational models, the present one contains simplifying design choices. First, we did not include stimulus-specific feedforward inhibition, because the focus lay on the formation of stimulus-specific feedback inhibition. The model could be enriched by feedforward inhibition in different ways. In particular, we expect that the two forms of plasticity will establish E/I assemblies even in the presence of stimulus-selective external inputs to the interneurons, because stimulus-specific external excitation should always be more supportive of the homeostatic objective than unspecific inputs. It may be worth exploring whether adding feedforward inhibition leaves more room for replacing the PV input plasticity that we used by classical Hebbian rules, because the activity of the external inputs remains unaltered by the plasticity in the network (such that the complex instability described above may be mitigated). Given that the focus of this work was on feedback inhibition, an extensive evaluation of the different variants of feedforward inhibition is beyond the scope of the present article.\n\nSecond, we neglected much of the complexity of cortical interneuron circuits by including only one class of interneurons. We interpret these interneurons as PV interneurons, given that PV interneurons provide local feedback inhibition (Hu et al., 2014) and show a stimulus-selective circuitry akin to E/I assemblies (Znamenskiy et al., 2018). With their peri-somatic targets on Pyr cells, PV-expressing (basket) cells are also a prime candidate for the classical feedback model of E/I balance (van Vreeswijk and Sompolinsky, 1996). Note that our results do not hinge on any assumptions that are specific to PV neurons and may thus also hold for other interneuron classes that provide feedback inhibition (Tremblay et al., 2016). Given that the division of labour of the various cortical interneuron classes is far from understood, an extension to complex interneuron circuits (Litwin-Kumar et al., 2016; Hert\u00e4g and Sprekeler, 2019) is clearly beyond the present study.\n\nSimilarly tuned Pyr cells tend to be recurrently connected (Cossell et al., 2015; Harris and Mrsic-Flogel, 2013), in line with the notion that excitatory cells with similar tuning mutually excite each other. This notion is questioned by a recent perturbation experiment demonstrating feature-specific suppression between Pyr cells with similar tuning (Chettih and Harvey, 2019). It has been suggested that this apparently paradoxical effect requires strong and tuned connections between excitatory and inhibitory neurons (Sadeh and Clopath, 2020). The E/I assemblies that develop in our model provide sufficiently strong and specific inhibitory feedback to cause a suppression between similarly tuned Pyr neurons in response to perturbations. Hence, despite the presence of stimulus-specific excitatory recurrence, Pyr neurons with similar stimulus preference effectively compete. Computational arguments suggest that this feature competition may be beneficial for stimulus processing, for\u00a0example, by generating a sparser and more efficient representation of the stimuli (Olshausen and Field, 2004; Den\u00e8ve and Machens, 2016).\n\nIn addition to predicting that knocking out plasticity of inhibitory input or output synapses should prevent the development of E/I assemblies, our model also predicts different outcomes for single-neuron perturbation experiments in juvenile and adult mice. Given that in rodents, stimulus\u00a0tuning of inhibitory currents occurs later in development than that of excitation (Dorrn et al., 2010), we expect that in juvenile mice single-cell perturbations would not cause feature-specific suppression but amplification due to excitatory recurrence and unspecific feedback inhibition.\n\n## Materials and methods\n\n### Network and stimuli\n\nWe use custom software to simulate a rate-based recurrent network model containing $N^{E}=512$ excitatory and $N^{I}=64$ inhibitory neurons. The activation of the neurons follows Wilson-Cowan dynamics:\n\n$$\n(1a)\\tau_{E}\\frac{d}{dt}h^{E}=\u2212h^{E}+W^{E\u2190E}r^{E}\u2212W^{E\u2190I}r^{I}+I^{bg}+I(s)(1b)\\tau_{I}\\frac{d}{dt}h^{I}=\u2212h^{I}+W^{I\u2190E}r^{E}\u2212W^{I\u2190I}r^{I}+I^{bg}.\n$$\n\nHere, $r^{E}=[h^{E}]_{+}$, $r^{I}=[h^{I}]_{+}$ denote the firing rates of the excitatory and inhibitory neurons, which are given by their rectified activation. $W^{Y\u2190X}$ denotes the matrix of synaptic efficacies from population $X$\u00a0to population $Y$\u00a0($X,Y\\in{E,I}$). The external inputs $\ud835\udc08\u2062(\ud835\udc2c)$ to the excitatory neurons have a bell-shaped tuning in the three-dimensional stimulus space consisting of spatial frequency, temporal frequency,\u00a0and orientation (Znamenskiy et al., 2018). To avoid edge effects, the stimulus space is periodic in all three dimensions, with stimuli ranging from -$\\pi$ to $\\pi$. The stimulus tuning of the external inputs is modelled by a von Mises function with a maximum of 50 Hz and a tuning width $\u03ba=1$. The preferred stimuli of the $N^{E}=512$ excitatory cells cover the stimulus space evenly on a $12\\times12\\times12$ grid. All neurons receive a constant background input of $I^{bg}=5$ Hz.\n\nRecurrent connections $W^{E\u2190E}$ among excitatory neurons have synaptic weight between neurons i and j that grows linearly with the signal correlation of their external inputs:\n\n$$\nW_{i\u2062j}^{E\u2190E}=[c\u2062o\u2062r\u2062r\u2062(I_{i}\u2062(\ud835\udc2c),I_{j}\u2062(\ud835\udc2c))-C]_{+}.\n$$\n\nThe cropping threshold C is chosen such that the overall connection among the excitatory neurons probability is 0.6. The remaining synaptic connections (E\u2192I, I\u2192E, I\u2192I) are initially random, with a connection probability $p=0.6$ and log-normal weights. For parameters, please refer to Table 1.\n\n**Table 1.**\n Model parameters.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>NE</th>\n      <th>512</th>\n      <th>NI</th>\n      <th>64</th>\n      <th>Number of exc. and inh. neurons.</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>\u03c4E</td>\n      <td>50 ms</td>\n      <td>\u03c4I</td>\n      <td>25 ms</td>\n      <td>Rate dynamics time constants</td>\n    </tr>\n    <tr>\n      <td>d\u2062t</td>\n      <td>1 ms</td>\n      <td></td>\n      <td></td>\n      <td>Numerical integration time step</td>\n    </tr>\n    <tr>\n      <td>pE\u2190X</td>\n      <td>0.6</td>\n      <td>pI\u2190X</td>\n      <td>0.6</td>\n      <td>Connection probability to exc. and inh. neurons</td>\n    </tr>\n    <tr>\n      <td>JiE\u2190E</td>\n      <td>2</td>\n      <td>JiI\u2190E</td>\n      <td>5</td>\n      <td>Total of exc. weights onto neuron i: \u2211jWi\u2062jX\u2190E</td>\n    </tr>\n    <tr>\n      <td>JiE\u2190I</td>\n      <td>1</td>\n      <td>JiI\u2190I</td>\n      <td>1</td>\n      <td>Total of inh. weights onto neuron i: \u2211jWi\u2062jX\u2190I</td>\n    </tr>\n    <tr>\n      <td>\u03c3E\u2190X</td>\n      <td>0.65</td>\n      <td>\u03c3I\u2190X</td>\n      <td>0.65</td>\n      <td>Std. deviation of the logarithm of the weights</td>\n    </tr>\n    <tr>\n      <td>\u03b8E\u2190I</td>\n      <td>10-4</td>\n      <td>\u03b8I\u2190E</td>\n      <td>10-4</td>\n      <td>Experimental detection threshold for synapses</td>\n    </tr>\n    <tr>\n      <td>Ibg</td>\n      <td>5 Hz</td>\n      <td>max\u2061(\ud835\udc08\u2062(\ud835\udc2c))</td>\n      <td>50 Hz</td>\n      <td>Background and maximum stimulus-specific input</td>\n    </tr>\n    <tr>\n      <td>NS</td>\n      <td>12\u00d712\u00d712</td>\n      <td>Ntrials</td>\n      <td>500</td>\n      <td>Number of stimuli and trials</td>\n    </tr>\n    <tr>\n      <td>RS</td>\n      <td>2\u2062\u03c0\u00d72\u2062\u03c0\u00d72\u2062\u03c0</td>\n      <td>\u03ba</td>\n      <td>1</td>\n      <td>Range of stimuli and Pyr RF von Mises width</td>\n    </tr>\n    <tr>\n      <td>\u0394\u2062I</td>\n      <td>10 Hz</td>\n      <td></td>\n      <td></td>\n      <td>Change of input for perturbation experiments</td>\n    </tr>\n    <tr>\n      <td>\u03b7Approx.</td>\n      <td>10-5</td>\n      <td>\u03b7Grad.</td>\n      <td>10-3</td>\n      <td>Learning rates (approximate and gradient rules)</td>\n    </tr>\n    <tr>\n      <td>\u03b4E\u2190I</td>\n      <td>0.1</td>\n      <td>\u03b4I\u2190E</td>\n      <td>0.1</td>\n      <td>Weight decay rates</td>\n    </tr>\n    <tr>\n      <td>\u03c10</td>\n      <td>1 Hz</td>\n      <td></td>\n      <td></td>\n      <td>Homeostatic plasticity target</td>\n    </tr>\n    <tr>\n      <td>\u03b21</td>\n      <td>0.9</td>\n      <td>\u03b22</td>\n      <td>0.999</td>\n      <td>Adam parameters for gradient rules</td>\n    </tr>\n    <tr>\n      <td>\u03f5</td>\n      <td>10-9</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\nDuring learning, we repeatedly draw all 12\u00a0\u00d7\u00a012\u00a0\u00d7\u00a012 preferred stimuli of the Pyr neurons, in random order. This procedure is repeated 500 times to ensure convergence of synaptic weights. To reduce simulation time, we present each stimulus long enough for all firing rates to reach steady state and only then update the synaptic weights.\n\n### Synaptic plasticity\n\nThe PV \u2192 Pyr and Pyr \u2192 PV synapses follow plasticity rules that aim to minimise the deviation of the excitatory activations from a target rate $\u03c1_{0}$ ($\u03c1_{0}=1$ Hz):\n\n$$\n\u2130(h^{E})=\u27e8\\frac{1}{2}\\sumj=1N^{E}(h_{j}^{E}\u2212\u03c1_{0})^{2}\u27e9_{s},\n$$\n\nwhere $\u27e8\u22c5\u27e9_{\ud835\udc2c}$ denotes the average over all stimuli. When plastic, synaptic weights change according to\n\n$$\n(4a)\u0394W_{ji}^{E\u2190I}\u221d(h_{j}^{E}\u2212\u03c1_{0})r_{i}^{I},(4b)\u0394W_{ij}^{I\u2190E}\u221d[\\sumk=1N^{E}W_{ik}^{I\u2190E}(h_{k}^{E}\u2212\u03c1_{0})]r_{j}^{E}\u2248[\\sumk=1N^{E}W_{ik}^{I\u2190E}(r_{k}^{E}\u2212\u03c1_{0})]r_{j}^{E}(4c)=(I_{i}^{E,rec}\u2212I_{0})r_{j}^{E}.\n$$\n\nAfter every update of the Pyr \u2192 PV matrix, the incoming weights for each PV interneuron are multiplicatively scaled such that their sum is $J^{I\u2190E}$ (Akrout et al., 2019). In that case, the rule in Equation 4b is approximately local in that it compares the excitatory input current $I_{i}^{E,rec}$ received by the postsynaptic PV neuron to a target value $I_{0}=J^{I\u2190E}\u2062\u03c1_{0}$, and adjusts the incoming synapses in proportion to this error and to presynaptic activity (see Equation 4c).\n\nBoth plasticity rules are approximations of the gradient of the objective function Equation 3. Interested readers are referred to Appendix\u00a01 for their mathematical derivation. For the results in Figure 1\u2014figure supplement 2, we use the Adaptive Moment Estimation (Adam) algorithm (Kingma and Ba, 2014) to improve optimisation performance.\n\nWe used a standard reparameterisation method to ensure the sign constraints of an E/I network. Moreover, all weights are subject to a small weight-dependent decay term, which aids to keep the firing rates of the interneurons in a reasonable range. For details, please refer to Appendix\u00a01\u00a0. The learning rule Equation 4a for the output synapses of the inhibitory neurons is similar to the rule proposed by Vogels et al., 2011, wherein each inhibitory synapse increases in strength if the deviation of the postsynaptic excitatory cell from the homeostatic target $\u03c1_{0}$ is positive (and decreases it when negative). In contrast, the learning rule Equation 4b increases activated input synapses for an interneuron if the weighted sum of deviations in its presynaptic excitatory population is positive (and decreases them if it is negative). Though it is local, when operating in conjunction with the plasticity of Equation 4a, this leads to feedback alignment in our simulations and effectively performs backpropagation without the need for weight transport (Akrout et al., 2019).\n\nNote that the objective function Equation 3 can also be interpreted differently. The activation $h^{E}$ of a neuron is essentially the difference between its excitatory and inhibitory inputs. Therefore, the objective function Equation 3 is effectively the mean squared error between excitation and inhibition, aside from a small constant offset $\u03c1_{0}$. The derived learning rules can therefore be seen as supervised learning of the inhibitory inputs, with excitation as the label. They hence aim to establish the best co-tuning of excitation and inhibition that is possible given the circuitry.\n\n### Perturbation experiments\n\nThe perturbation experiments in Figure 4 are performed in a network in which both forms of plasticity have converged. The network is then exposed to different stimuli, while the afferent drive to a single excitatory cell i is transiently increased by $\u0394\u2062I=10$ Hz. For each stimulus, we compute the steady-state firing rates rj of all excitatory cells both with and without the perturbation. The influence of the perturbation of neuron i on neuron j is defined as the difference between these two firing rates, normalised by the pertubation magnitude (Sadeh and Clopath, 2020). This stimulation protocol is repeated for 90 randomly selected excitatory neurons. The dependence of the influence on the tuning similarity (Figure 4d) is obtained by binning the influence of the perturbed neuron i and the influenced neuron j according to their stimulus response correlation, and then averaging across all influences in the bin. During the perturbation experiments, synaptic plasticity was disabled.\n\n### Quantitative measures\n\nThe response similarity (RS) of the stimulus tuning of two neurons i and j is measured by the dot product of their steady-state firing rates in response to all stimuli, normalised by the product of their norms (Znamenskiy et al., 2018):\n\n$$\nRS\u2062(r_{i},r_{j})=\\frac{\\sum_{\ud835\udc2c}r_{i}\u2062(\ud835\udc2c)\u2062r_{j}\u2062(\ud835\udc2c)}{(\\sum_{\ud835\udc2c}(r_{i}\u2062(\ud835\udc2c))^{2}\u2062\\sum_{\ud835\udc2c}(r_{j}\u2062(\ud835\udc2c))^{2})^{1/2}}.\n$$\n\nThe same measure is used for the similarity of synaptic currents onto excitatory neurons in Figure 1\u2014figure supplement 3c and Figure 1\u2014figure supplement 2d.\n\nThere is no structural plasticity, that\u00a0is, synapses are never added or pruned. However, when calculating Pearson\u2019s correlation between synaptic weights and RS, we exclude synapses that are too weak to be detected using the experimental protocol employed by Znamenskiy et al., 2018. The threshold values $\\theta^{E\u2190I}$ and $\\theta^{I\u2190E}$ were chosen to be approximately four orders of magnitude weaker than the strongest synapses in the network. The rules that we investigate here tend to produce bimodal distributions of weights, with the lower mode well below this threshold (Figure 1\u2014figure supplement 5).\n\nThe stimulus selectivity of the neurons is measured by the skewness of their response distribution across all stimuli:\n\n$$\n\\gamma_{i}=\\frac{\u27e8(r_{i}\u2062(\ud835\udc2c)-r\u00af_{i})^{3}\u27e9_{\ud835\udc2c}}{\u27e8(r_{i}\u2062(\ud835\udc2c)-r\u00af_{i})^{2}\u27e9_{\ud835\udc2c}^{3/2}}\n$$\n\nwhere $r\u00af_{i}=\u27e8r_{i}\u2062(\ud835\udc2c)\u27e9_{\ud835\udc2c}$. Both the RS Equation 5 and the stimulus selectivity Equation 6 are adapted from Znamenskiy et al., 2018.\n\nFinally, the angle $\\theta$ between the gradient G from Equation 15 and its approximation A from Equation 4 is given by\n\n$$\n\\theta=arccos\u2061(\\frac{\\sum_{i\u2062j}G_{i\u2062j}\u2062A_{i\u2062j}}{(\\sum_{i\u2062j}G_{i\u2062j}^{2}\u2062\\sum_{i\u2062j}A_{i\u2062j}^{2})^{1/2}})\n$$\n",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "53d68706-cc51-4229-83db-396c594472c0",
+      "submission_id": "32fc4e91-82f4-4f54-b251-2b41c14b6701",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Stephanie E Palmer, University of Chicago United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.59715.sa1](https://doi.org/10.7554/eLife.59715.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nUnderstanding the connectivity patterns observed in the brain and how these connectivity patterns emerge from local, cell-to-cell plasticity is a grand challenge in modern neuroscience. This manuscript describes conditions under which synaptic plasticity can organize excitatory/inhibitory networks in the brain into assemblies in which both kinds of neurons have structured connectivity, as observed in real networks. The work makes predictions about what kinds of plasticity can give rise to this and accounts for recent experimental findings about manipulating inhibitory neurons and, thereby, the stimulus-dependence of their connectivity. It will be of interest to both the experimental and theoretical neuroscience community, and asks and answers a deep question about how the brain self-organizes its detailed connectivity patterns.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting your work entitled \"Learning excitatory-inhibitory neuronal assemblies in recurrent networks\" for consideration by eLife. Your article has been reviewed by two peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by a Senior Editor. The reviewers have opted to remain anonymous.\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nThe work detailed here explores model of recurrent cortical networks and shows that synaptic plasticity must be present in both excitatory to inhibitory neurons and vice versa to produce the known E/I assemblies found in cortex. There are some interesting findings about the consequences of assemblies formed in this way. A major claim in the manuscript (that argues for the broad impact of the work) is that this shows for the first time how a local approximation rule can instantiate feedback in a biologically plausible way.\n\nWhile the reviewers found the work to be solid and interesting, they failed to find that the work was appropriate for eLife, specifically because of other recent papers that show that a biologically plausible alternative to backpropagation can be instantiated in recurrent neural nets, e.g. a paper published here last year by J. Murray, Local online learning in recurrent networks with random feedback. It's understood that the authors were focusing here on the E/I interactions, but in that case it seems that the novelty of the result needs to be somewhat reframed.\n\nThe reviewers were also concerned about the exposition in the introduction and some results that could have been added to a few figures, and had questions about why exactly a BCM rule did not work in this model. Those technical concerns along with doubts about the strong novelty claim led to this decision.\n\nReviewer #1:\n\nThe manuscript investigates the situations in which stimulus-specific assemblies can emerge in a recurrent network of excitatory (E) and inhibitory (I, presumed parvalbumin-positive) neurons. The authors combine (1) Hebbian plasticity of I->E synapses that is proportional to the difference between the E neuron's firing rate and a homeostatic target and (2) plasticity of E->I synapses that is proportional to the difference between the total excitatory input to the I neuron and a homeostatic target. These are sufficient to produce E/I assemblies in a network in which only the excitatory recurrence exhibits tuning at the initial condition. While the full implementation of the plasticity rules, derived from gradient descent on an objective function, would rely on nonlocal weight information, local approximations of the rules still lead to the desired results.\n\nOverall the results make sense and represent a new unsupervised method for generating cell assemblies consisting of both excitatory and inhibitory neurons. My main concerns are that the proposed rule ends up predicting a rather nonstandard form of plasticity for certain synapses, and that the results could be fleshed out more.\n\n1) The main text would benefit from greater exposition of the plasticity rule and the distinction between the full expression and the approximation. While the general idea of backpropagation may be familiar to a good number of readers, here it is being used in a nonstandard way (to implement homeostasis), and this should be described more fully, with a few key equations.\n\nAdditionally, the point that, for a recurrent network, the proposed rules are only related to gradient descent under the assumption that the network adiabatically follows the stimulus, seems important enough to state in the main text.\n\n2) The paper has a clear and simple message, but not much exploration of that message or elaboration on the results. Figure 2 and Figure 3 do not convey much information, other than the fact that blocking either form of plasticity fails to produce the desired effects. This seems somewhat obvious -- almost by definition one can't have E/I assemblies if E->I or I->E connections are forced to remain random. I would think this point deserves at most one figure, or maybe even just a few panels.\n\n3) The derived plasticity rule for E->I synapses, which requires modulation of I synapses based on a difference from a target value for the excitatory subcomponent of the input current, does not take a typical form for biologically plausible learning rules (which usually operate on firing rates or voltages, for example). The authors should explore and discuss in more depth this assumption. Is there experimental evidence for it? It seems like it might be a difficult quantity to signal to the synapse in order to guide plasticity. The authors note in the discussion that BCM-type rules fail here -- are there other approaches that would work? What about a more local form of plasticity that involves only the excitatory current local to a dendrite, for example?\n\n4) Does the initial structure in excitatory recurrence play a role, or is it just there to match the data?\n\nReviewer #2:\n\nIn this work, the authors simulated a rate-based recurrent network with 512 excitatory and 64 inhibitory neurons. The authors use this model to investigate which forms of synaptic plasticity are needed to reproduce the stimulus-specific interactions observed between pyramidal neurons and parvalbumin-expressing (PV) interneurons in mouse V1. When there is homeostatic synaptic plasticity from both excitatory to inhibitory and reciprocally from inhibitory to excitatory neurons in the simulated networks, they showed that the emergent E/I assemblies are qualitatively similar to those observed in mouse V1, i.e., stronger synapses for neurons responding to similar stimuli. They also identified that synaptic plasticity must be present in both directions (from pyramidal neurons to PV neurons and vice versa) to produce such E/I assemblies. Furthermore, they identified that these E/I assemblies enable the excitatory population in their simulations to show feature-specific suppression. Therefore, the author claimed that they found evidence that these inhibitory circuits do not provide a \"blanket of inhibition\", but rather a specific, activity-dependent sculpting of the excitatory response. They also claim that the learning rule they developed in this model shows for the first time how a local approximation rule can instantiate feedback alignment in their network, which is a method for achieving an approximation to a backpropagation-like learning rule in realistic neural networks.\n\n1) The authors claim that their synaptic plastic rule implements a recurrent variant of feedback alignment. Namely, \"When we compare the weight updates the approximate rules perform to the updates that would occur using the gradient rule, the weight updates of the local approximations align to those of the gradient rules over learning\". They also claim that this is the first time feedback alignment is demonstrated in a recurrent network. It seems that the weight replacement in this synaptic plastic rule is uniquely motivated by E/I balance, but the feedback alignment in [Lillicrap et al., 2016] is much more general. Thus, the precise connections between feedback alignment and this work remains a bit unclear.\n\nIt would be good if the following things about this major claim of the manuscript could be expanded and/or clarified:\n\ni) In Figure 1\u2014figure supplement 3 (upper, right vs. left), it is surprising that the Pyr->PV knock-out seems to produce a better alignment in PV->Pyr. Comparing the upper right of Figure 1\u2014figure supplement 3 and the bottom figure of Figure 1G, it seems that the Pyr->PV knock-out performs equally well with a local approximation for the output connections of PV interneurons. Is this a special condition in this model that results in the emergence of the overall feedback alignment?\n\nii) In the feedback alignment paper [Lillicrap et al., 2016], they introduced a \"Random Feedback Weights Support\": this uses a random matrix B to replace the transpose of the backpropagation weight matrix. Here, the alignment seems to be based on the intuition that \"The excitatory input connections onto the interneurons serve as a proxy for the transpose of the output connections,\" and \"the task of balancing excitation by feedback inhibition favours symmetric connection.\" It seems synaptic plasticity here is mechanistically different; it is only similar to the feedback alignment [Lillicrap et al., 2016] because both reach a final balanced state. Please clarify how the results here are interpreted as an instantiation of feedback alignment \u2013 if it is simply that the end state is similar or if the mechanism is thought to be more deeply connected.\n\niii) The feedback alignment [Lillicrap et al., 2016] works when the weight matrix has its entries near zero (e^TWBe>0). Are there any analogous conditions for the synaptic plastic rule to succeed?\n\niv) In the Appendix, the local approximation rule is developed using a 0th-order truncation of Equations 15a and 15b. Is it noted that \"If synapses are sufficiently weak.\u2026, this approximation can be substituted into Equation 15a and yields an equation that resembles a backpropagation rule in a feedforward network (E -> I -> E) with one hidden layer -- the interneurons.\" It would be helpful if the authors can discuss how this learning rule works in a general recurrent network, or if it will work for any network with sufficiently weak synapses.\n\nv) This synaptic plasticity rule seems to be closely related to another local approximation of backpropagation in recurrent neural network: e-prop in (Bellec et al., 2020, https://www.nature.com/articles/s41467-020-17236-y) and broadcast alignment (N\u00f8kland, 2016, Samadi et al., 2017). These previous works do not consider E/I balance in their approximations, but is E/I balance necessary for successful local approximation to these rules?\n\n2) In the Discussion, it reads as if the BCM rule cannot apply to this recurrent network because of the limited number of interneurons in the simulation (\"parts of stimulus space are not represented by any interneurons\"). Is this a limitation of the size of the model? Would scaling up the simulation change how applicable the BCM learning rule is? It would be helpful if the authors offer a more detailed discussion on why Hebbian forms of plasticity in interneurons fail to produce stimulus specificity.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Learning excitatory-inhibitory neuronal assemblies in recurrent networks\" for consideration by eLife. Your article has been reviewed by two peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Richard Ivry as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nSummary:\n\nThe manuscript describes conditions under which synaptic plasticity can organize excitatory/inhibitory networks into assemblies in which both neurons have structured connectivity. The work makes predictions about what kinds of plasticity can give rise to this and accounts for recent experimental findings about manipulating inhibitory neurons and the stimulus-dependence of their connectivity.\n\nWhile recurrent networks in which connections between excitatory (E) neurons are structured into neural \"assemblies\" are a classic model for the cortex (e.g. the Hopfield model), inhibitory (I) neurons are often assumed to be unstructured in computational models. This simplification is at odds with the observation of E/I connectivity that is organized with respect to stimulus preference and the results of experiments in which activity of I neurons are perturbed. In brain regions spatially organized according to stimulus preference this may be a consequence of local connectivity, but in regions like mouse V1 that lack an obvious topography, it may arise from experience-dependent synaptic plasticity.\n\nThe manuscript investigates the situations in which stimulus-specific assemblies can emerge through synaptic plasticity in a recurrent network of E and I (presumed parvalbumin-positive) neurons. The authors combine (1) Hebbian plasticity of I->E synapses that is proportional to the difference between the E neuron's firing rate and a homeostatic target and (2) plasticity of E->I synapses that is proportional to the difference between the total excitatory input to the I neuron and a homeostatic target. These are sufficient to produce E/I assemblies in a network in which only the excitatory recurrence exhibits tuning at the initial condition. While the full implementation of the plasticity rules, derived from gradient descent on an objective function, would rely on nonlocal weight information, local approximations of the rules still lead to the desired results.\n\nThe manuscript makes predictions about the results of blocking plasticity of E->I or I->E synapses as well as accounting for the results of experiments in which activating a pyramidal neuron suppresses similarly tuned neurons through recurrent inhibition.\n\nAn interesting prediction of the analysis, that is derived through the approximation to the gradient-based weight update, is that synaptic plasticity rules depend on the deviation of recurrent excitatory input current to a neuron from a target value. This quantity is different from those often used in computational models of synaptic plasticity, such as firing rates or voltages. Experiments targeting this quantity and its influence on the results of synaptic plasticity protocols would be an interesting direction for future study.\n\nEssential revisions:\n\nThe modifications the authors have made have improved the manuscript. Addressing the following points will further enhance the clarity of the presentation, and will make the work suitable for publication in eLife.\n\n1) Could the authors please expand on the negative result about developing selectivity in PV neurons through quenched random connections? Would it be possible to adjust the parameters of the model, such as the weight distribution or number of connections onto PV neurons, so that they would exhibit enough selectivity?\n\n2) Relatedly, the text around Figure 3D says that, \"Because of the poor stimulus tuning of the interneurons, output plasticity cannot generate stimulus-specific inhibitory inputs to the Pyr neurons (Figure 3D).\" But it looks like there is a definite stimulus-specific inhibitory input that emerges. The authors should clarify what they mean.\n\n3) It would be good if the Abstract could be revised to be accessible to a broader audience of readers.\n",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0a928a2c-ab99-4f5f-bcff-8c212d4bb61c",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C1",
+      "claim": "In the primary visual cortex (V1) of mice, synapses between excitatory pyramidal neurons and inhibitory parvalbumin-expressing (PV) interneurons tend to be stronger for neurons that respond to similar stimulus features.",
+      "claim_type": "EXPLICIT",
+      "source": "In the primary visual cortex (V1) of mice, synapses between excitatory pyramidal neurons and inhibitory parvalbumin-expressing (PV) interneurons tend to be stronger for neurons that respond to similar stimulus features, although these neurons are not topographically arranged according to their stimulus preference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to experimental findings in mouse V1.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "0411cdb0-2aaf-46bf-b4d0-f850c4b166b2",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C2",
+      "claim": "Pyramidal neurons and PV interneurons in mouse V1 are not topographically arranged according to their stimulus preference.",
+      "claim_type": "EXPLICIT",
+      "source": "In the primary visual cortex (V1) of mice, synapses between excitatory pyramidal neurons and inhibitory parvalbumin-expressing (PV) interneurons tend to be stronger for neurons that respond to similar stimulus features, although these neurons are not topographically arranged according to their stimulus preference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to experimental findings in mouse V1.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "9d5f75ee-e6b9-4ffa-8640-8e08dc1501ee",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C3",
+      "claim": "Activity-dependent synaptic plasticity on input and output synapses of PV interneurons generates a circuit structure that is consistent with mouse V1.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that activity-dependent synaptic plasticity on input and output synapses of PV interneurons generates a circuit structure that is consistent with mouse V1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by computational modeling results presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "93e52de7-2644-46b5-9c15-b2cf84c44329",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C4",
+      "claim": "Both input and output plasticity must act in synergy to form E/I assemblies.",
+      "claim_type": "EXPLICIT",
+      "source": "Computational modeling reveals that both forms of plasticity must act in synergy to form the observed E/I assemblies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by computational modeling results, specifically knock-out experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "49a83ea2-d002-48dc-a894-a6c651653169",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C5",
+      "claim": "E/I assemblies produce a stimulus-specific competition between pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Once established, these assemblies produce a stimulus-specific competition between pyramidal neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by perturbation experiments in the computational model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "92c8d0d1-add5-4cb5-9d0c-5aa09b4ddf85",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C6",
+      "claim": "Inhibition serves to stabilize recurrent excitatory feedback loops in neuronal circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Aside from the classical perspective that inhibition serves to stabilize recurrent excitatory feedback loops in neuronal circuits (van Vreeswijk and Sompolinsky, 1996; Brunel, 2000; Murphy and Miller, 2009; Sprekeler, 2017), it is increasingly recognised as an active player in cortical computation (Isaacson and Scanziani, 2011; Priebe and Ferster, 2008; Rubin et al., 2015; Pouille and Scanziani, 2001; Letzkus et al., 2011; Adesnik et al., 2012; Hennequin et al., 2014; Phillips et al., 2017; Barron et al., 2016; Barron et al., 2017; Tovote et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "b46d6e70-826c-4009-96b8-8faacea97610",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C7",
+      "claim": "Inhibition is increasingly recognised as an active player in cortical computation.",
+      "claim_type": "EXPLICIT",
+      "source": "Aside from the classical perspective that inhibition serves to stabilize recurrent excitatory feedback loops in neuronal circuits (van Vreeswijk and Sompolinsky, 1996; Brunel, 2000; Murphy and Miller, 2009; Sprekeler, 2017), it is increasingly recognised as an active player in cortical computation (Isaacson and Scanziani, 2011; Priebe and Ferster, 2008; Rubin et al., 2015; Pouille and Scanziani, 2001; Letzkus et al., 2011; Adesnik et al., 2012; Hennequin et al., 2014; Phillips et al., 2017; Barron et al., 2016; Barron et al., 2017; Tovote et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "758f7b66-2219-4773-b79c-cc87e4cd05ab",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C8",
+      "claim": "Excitatory and inhibitory currents are often highly correlated in their response to stimuli within cortical neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Within cortical neurons, excitatory and inhibitory currents are often highly correlated in their response to stimuli (Wehr and Zador, 2003; Froemke et al., 2007; Tan et al., 2011; Bhatia et al., 2019), in time (Okun and Lampl, 2008; Dipoppa et al., 2018) and across neurons (Xue et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "630c819c-72c9-4bc9-af72-52e903b5a82e",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C9",
+      "claim": "Excitatory and inhibitory currents are often highly correlated in time within cortical neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Within cortical neurons, excitatory and inhibitory currents are often highly correlated in their response to stimuli (Wehr and Zador, 2003; Froemke et al., 2007; Tan et al., 2011; Bhatia et al., 2019), in time (Okun and Lampl, 2008; Dipoppa et al., 2018) and across neurons (Xue et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "573344da-9519-4e37-8883-1d25bfcd89bd",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C10",
+      "claim": "Excitatory and inhibitory currents are often highly correlated across neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Within cortical neurons, excitatory and inhibitory currents are often highly correlated in their response to stimuli (Wehr and Zador, 2003; Froemke et al., 2007; Tan et al., 2011; Bhatia et al., 2019), in time (Okun and Lampl, 2008; Dipoppa et al., 2018) and across neurons (Xue et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "fb155773-8bc8-4d68-a0c7-9c6a978d22bc",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C11",
+      "claim": "In topographically organised sensory areas such as cat primary visual cortex (V1), co-tuning of excitatory and inhibitory currents with respect to sensory stimuli could be a natural consequence of local feedback inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "In topographically organised sensory areas such as cat primary visual cortex (V1), the co-tuning with respect to sensory stimuli could be a natural consequence of local feedback inhibition and does not impose strong constraints on inhibitory circuitry (Harris and Mrsic-Flogel, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "bef115ea-6f08-4ef2-84a5-44ebe6b2afe1",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C12",
+      "claim": "Co-tuning of excitatory and inhibitory currents in feedforward inhibition was suggested to arise from homeostatic synaptic plasticity in GABAergic synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of feedforward inhibition, co-tuning of excitatory and inhibitory currents was suggested to arise from homeostatic synaptic plasticity in GABAergic synapses (Vogels et al., 2011; Clopath et al., 2016; Weber and Sprekeler, 2018; Hennequin et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "95563dff-5799-4bee-986e-3a3005832aff",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C13",
+      "claim": "V1 of rodents has poor feature topography.",
+      "claim_type": "EXPLICIT",
+      "source": "In sensory areas with poor feature topography, such as V1 of rodents (Ohki et al., 2005), feedback inhibition has been hypothesised to be largely unspecific for stimulus features, a property inferred from the dense connectivity (Fino and Yuste, 2011; Packer and Yuste, 2011) and reliable presence of synapses connecting pyramidal (Pyr) neurons to inhibitory interneurons with dissimilar stimulus tuning (Harris and Mrsic-Flogel, 2013; Bock et al., 2011; Hofer et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "b1041f83-7a83-47f9-a7ed-ca5484e0dc29",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C14",
+      "claim": "Feedback inhibition in rodent V1 has been hypothesised to be largely unspecific for stimulus features.",
+      "claim_type": "EXPLICIT",
+      "source": "In sensory areas with poor feature topography, such as V1 of rodents (Ohki et al., 2005), feedback inhibition has been hypothesised to be largely unspecific for stimulus features, a property inferred from the dense connectivity (Fino and Yuste, 2011; Packer and Yuste, 2011) and reliable presence of synapses connecting pyramidal (Pyr) neurons to inhibitory interneurons with dissimilar stimulus tuning (Harris and Mrsic-Flogel, 2013; Bock et al., 2011; Hofer et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental work and inference from connectivity patterns.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "45d4d4f9-755b-43d6-b93d-dd48558c329b",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C15",
+      "claim": "In mouse V1, although the presence of synaptic connections between Pyr cells and PV interneurons is independent of their respective stimulus responses, the efficacy of those synapses is correlated with their response similarity.",
+      "claim_type": "EXPLICIT",
+      "source": "In mouse V1, Znamenskiy et al., 2018 report that although the presence of synaptic connections between Pyr cells and parvalbumin-expressing (PV) interneurons is independent of their respective stimulus responses, the efficacy of those synapses is correlated with their response similarity, both in PV \u2192 Pyr and in Pyr \u2192 PV connections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to experimental work by Znamenskiy et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "b31b9006-3da2-4272-9561-14769bfcc6a0",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C16",
+      "claim": "The efficacy of PV \u2192 Pyr synapses is correlated with response similarity in mouse V1.",
+      "claim_type": "EXPLICIT",
+      "source": "In mouse V1, Znamenskiy et al., 2018 report that although the presence of synaptic connections between Pyr cells and parvalbumin-expressing (PV) interneurons is independent of their respective stimulus responses, the efficacy of those synapses is correlated with their response similarity, both in PV \u2192 Pyr and in Pyr \u2192 PV connections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to experimental work by Znamenskiy et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "68a2ac41-fe83-44c4-8515-d04c04c065b5",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C17",
+      "claim": "The efficacy of Pyr \u2192 PV synapses is correlated with response similarity in mouse V1.",
+      "claim_type": "EXPLICIT",
+      "source": "In mouse V1, Znamenskiy et al., 2018 report that although the presence of synaptic connections between Pyr cells and parvalbumin-expressing (PV) interneurons is independent of their respective stimulus responses, the efficacy of those synapses is correlated with their response similarity, both in PV \u2192 Pyr and in Pyr \u2192 PV connections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to experimental work by Znamenskiy et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "c8516c1e-3803-4d10-848b-7c40c3bf0b66",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C18",
+      "claim": "Mutual preferences in synaptic organisation between Pyr and PV neurons suggest that feedback inhibition may be more stimulus-specific than previously thought.",
+      "claim_type": "EXPLICIT",
+      "source": "These mutual preferences in synaptic organisation suggest that feedback inhibition may be more stimulus-specific than previously thought and that Pyr and PV neurons form specialised\u2014albeit potentially overlapping\u2014excitatory-inhibitory (E/I) assemblies (Chenkov et al., 2017; Yoshimura et al., 2005; Litwin-Kumar and Doiron, 2012; Litwin-Kumar and Doiron, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference from the observed synaptic organization patterns, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "cd539837-bb5c-42eb-9712-78b1d56fd605",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C19",
+      "claim": "Pyr and PV neurons form specialised excitatory-inhibitory (E/I) assemblies.",
+      "claim_type": "EXPLICIT",
+      "source": "These mutual preferences in synaptic organisation suggest that feedback inhibition may be more stimulus-specific than previously thought and that Pyr and PV neurons form specialised\u2014albeit potentially overlapping\u2014excitatory-inhibitory (E/I) assemblies (Chenkov et al., 2017; Yoshimura et al., 2005; Litwin-Kumar and Doiron, 2012; Litwin-Kumar and Doiron, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work and inference from synaptic organization.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "eabc789f-b810-48b4-be9e-db5906158b54",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C20",
+      "claim": "The presence of E/I assemblies suggests the need for an activity-dependent mechanism for their formation and/or refinement.",
+      "claim_type": "EXPLICIT",
+      "source": "While the presence of such E/I assemblies (Znamenskiy et al., 2018; Rupprecht and Friedrich, 2018) suggests the need for an activity-dependent mechanism for their formation and/or refinement (Khan et al., 2018; Najafi et al., 2020), the requirements such a mechanism must fulfil remain unresolved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference from the existence of E/I assemblies, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "efa5b1ae-23d9-4922-917c-699c356f5f15",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C22",
+      "claim": "Each excitatory neuron receives external excitatory input that is tuned to orientation, temporal frequency and spatial frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "To endow the excitatory neurons with a stimulus tuning similar to Pyr cells in layer 2/3 of mouse V1 (Znamenskiy et al., 2018), each excitatory neuron receives external excitatory input that is tuned to orientation, temporal frequency and spatial frequency (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement about the model design, with reference to Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "cb013056-f8a5-4c12-9420-f97a07c774a8",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C23",
+      "claim": "The preferred stimuli of the Pyr neurons cover the stimulus space evenly.",
+      "claim_type": "EXPLICIT",
+      "source": "The preferred stimuli of the Pyr neurons cover the stimulus space evenly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the model design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "888d1d00-2e67-43c3-989a-8b60fce6ffbc",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C24",
+      "claim": "Inhibitory neurons receive external inputs without stimulus tuning.",
+      "claim_type": "EXPLICIT",
+      "source": "Because we are interested under which conditions feedback inhibition can acquire a stimulus selectivity, inhibitory neurons receive external inputs without stimulus tuning, but are recurrently connected to Pyr neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the model design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "7427e4c3-1603-40c0-a5a0-c2a625d043c3",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C25",
+      "claim": "Pyr neurons are preferentially connected to other Pyr neurons with similar stimulus tuning.",
+      "claim_type": "EXPLICIT",
+      "source": "While the network has no stimulus topography, Pyr neurons are preferentially connected to other Pyr neurons with similar stimulus tuning (Hofer et al., 2011; Cossell et al., 2015), and connection strength is proportional to the signal correlation of their external inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the model design, supported by citations to experimental findings.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "33fdceb9-4f0e-4083-853d-7c5031468608",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C26",
+      "claim": "Connection strength between Pyr neurons is proportional to the signal correlation of their external inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "While the network has no stimulus topography, Pyr neurons are preferentially connected to other Pyr neurons with similar stimulus tuning (Hofer et al., 2011; Cossell et al., 2015), and connection strength is proportional to the signal correlation of their external inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the model design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "626247dd-179c-4ab0-b364-d8f56529f098",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C29",
+      "claim": "Before learning, interneurons show poor stimulus selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Before learning, interneurons show poor stimulus selectivity (Figure 1c), in line with the notion that in a random network, interneurons pool over many Pyr neurons with different stimulus tuning (Harris and Mrsic-Flogel, 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1c and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "318be454-cb9a-44fb-9496-b47c9a86d88d",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C30",
+      "claim": "By the end of learning, interneurons have developed a pronounced stimulus tuning, albeit weaker than that of Pyr neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "By the end of learning, interneurons have developed a pronounced stimulus tuning, albeit weaker than that of Pyr neurons (Figure 1c,d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figures 1c and 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "24b91a6b-6516-48e1-8b24-c7450b70155f",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C31",
+      "claim": "Interneurons form strong bidirectional connections preferentially with Pyr neurons with a similar stimulus tuning.",
+      "claim_type": "EXPLICIT",
+      "source": "Interneurons form strong bidirectional connections preferentially with Pyr neurons with a similar stimulus tuning, whereas connections between Pyr-PV pairs with dissimilar stimulus tuning are weaker (Figure 1d,e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figures 1d and 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "153e4274-e8c6-48cd-a808-53dea1ed10a5",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C32",
+      "claim": "Connections between Pyr-PV pairs with dissimilar stimulus tuning are weaker.",
+      "claim_type": "EXPLICIT",
+      "source": "Interneurons form strong bidirectional connections preferentially with Pyr neurons with a similar stimulus tuning, whereas connections between Pyr-PV pairs with dissimilar stimulus tuning are weaker (Figure 1d,e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figures 1d and 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "1e6bd610-049d-4e6a-9a27-1cdf97b99519",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C33",
+      "claim": "Both the efficacy of PV input and output connections are highly correlated with the response similarity of the associated Pyr neurons and interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the efficacy of PV input and output connections are highly correlated with the response similarity (RS) (see 'Materials and methods') of the associated Pyr neurons and interneurons (Figure 1e, left and centre).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "9779c4be-cfe8-48f5-ad0f-be409efb9fa6",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C34",
+      "claim": "For bidirectionally connected cell pairs, the efficacies of the respective input and output connections are highly correlated.",
+      "claim_type": "EXPLICIT",
+      "source": "For bidirectionally connected cell pairs, the efficacies of the respective input and output connections are highly correlated (Figure 1e, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "5f6fcab8-249d-4cde-81a3-e761cf00502d",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C35",
+      "claim": "The stimulus tuning of the inhibitory inputs onto the Pyr cells closely resembles that of the excitatory inputs after learning.",
+      "claim_type": "EXPLICIT",
+      "source": "The stimulus tuning of the inhibitory inputs onto the Pyr cells\u2014initially flat\u2014closely resembles that of the excitatory inputs after learning (Figure 1f, Figure 1\u2014figure supplement 3; Tan et al., 2011), that is, the network develops a precise E/I balance (Hennequin et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1f and Figure 1\u2014figure supplement 3, and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "fa2e4b07-9146-40cc-8e6c-4446f63d76a0",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C36",
+      "claim": "The network develops a precise E/I balance.",
+      "claim_type": "EXPLICIT",
+      "source": "The stimulus tuning of the inhibitory inputs onto the Pyr cells\u2014initially flat\u2014closely resembles that of the excitatory inputs after learning (Figure 1f, Figure 1\u2014figure supplement 3; Tan et al., 2011), that is, the network develops a precise E/I balance (Hennequin et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1f and Figure 1\u2014figure supplement 3, and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "89e36163-2bc7-4671-ac8f-9d1d25299617",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C37",
+      "claim": "The optimal gradient rules produce very similar results to the local approximations.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the optimal gradient rules produce very similar results to the local approximations (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "fe53587a-b9e1-4b3b-9d24-49053bbbe310",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C38",
+      "claim": "Over the course of learning, the weight updates by the approximate rules align to the updates that would result from the gradient rules.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the course of learning, the weight updates by the approximate rules align to the updates that would result from the gradient rules (Figure 1g, Figure 1\u2014figure supplement 4), presumably by a mechanism akin to feedback alignment (Lillicrap et al., 2016; Akrout et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1g and Figure 1\u2014figure supplement 4, and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "7fee7984-610c-4ff3-96ab-269ad0b76ffb",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C39",
+      "claim": "When output plasticity is knocked out but input plasticity is kept intact, the network fails to develop E/I assemblies and a stimulus-specific E/I balance.",
+      "claim_type": "EXPLICIT",
+      "source": "When we knock out output plasticity but keep input plasticity intact, the network fails to develop E/I assemblies and a stimulus-specific E/I balance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by knock-out experiment results in the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "4d52233c-1211-4332-be14-d92de3b48283",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C41",
+      "claim": "Excitatory and inhibitory currents in Pyr neurons are poorly co-tuned when output plasticity is knocked out.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, excitatory and inhibitory currents in Pyr neurons are poorly co-tuned (Figure 2c, Figure 1\u2014figure supplement 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2c and Figure 1\u2014figure supplement 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "7a1ee1f4-9e67-43f6-afb4-1d8c5df70a85",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C42",
+      "claim": "Feedback inhibition remains largely untuned when output plasticity is knocked out because output connections are still random.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, feedback inhibition remains largely untuned because output connections are still random, so that Pyr neurons pool inhibition from many interneurons with different stimulus tuning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model structure when output plasticity is absent.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "a80e5e80-5d7b-4cf2-9088-3e6709ce6ee8",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C44",
+      "claim": "When output plasticity is knocked out, a highly significant positive correlation between input weights and RS is found in 99% of the samples.",
+      "claim_type": "EXPLICIT",
+      "source": "When output plasticity is knocked out, we still find a highly significant positive correlation between input weights and RS in 99% of the samples (Figure 2d\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figures 2d-f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "add87e1a-38db-41f3-9c3b-a74486d9743a",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C45",
+      "claim": "When output plasticity is knocked out, correlations between input and output synapses are weaker and cannot reliably be detected (2% of samples).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, correlations between input and output synapses are weaker and cannot reliably be detected (2% of samples).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data from the knock-out experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "c9478e56-e290-4baf-8e16-cb75069935c4",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C46",
+      "claim": "When output plasticity is knocked out, a correlation between output weights and RS is found in <0.01% of samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we find a correlation between output weights and RS in <0.01% of samples (Figure 2f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "5fb86506-9128-49e6-9a38-9c361a845308",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C49",
+      "claim": "Input plasticity alone is insufficient to generate the synaptic microstructure observed in mouse V1.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore conclude that input plasticity alone is insufficient to generate the synaptic microstructure observed in mouse V1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the knock-out experiment results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "6bbe6d0f-8eb0-462a-95b3-d62d404cf2ee",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C50",
+      "claim": "When input plasticity is knocked out but output plasticity is kept intact, no formation of E/I assemblies is observed.",
+      "claim_type": "EXPLICIT",
+      "source": "When we knock out input plasticity but keep output plasticity intact, we again observe no formation of E/I assemblies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by knock-out experiment results in the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "8a72d767-e19e-4824-aa1f-f6d633e5c3c0",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C51",
+      "claim": "When input plasticity is knocked out, input weights remain random.",
+      "claim_type": "EXPLICIT",
+      "source": "The underlying reason is that input weights remain random.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the model state when input plasticity is absent.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "11f11c1c-46f1-41d3-b5a6-bc2778c651c1",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C52",
+      "claim": "When input plasticity is knocked out, interneurons collect excitation from many Pyr neurons with different preferences and maintain their initial poor stimulus selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Interneurons collect excitation from many Pyr neurons with different preferences, and absent plasticity on their input synapses, they maintain their initial poor stimulus selectivity (Figure 3a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figures 3a-c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "87127027-9513-4ccb-8456-2473e475e9c6",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C53",
+      "claim": "Because of the poor stimulus tuning of the interneurons when input plasticity is knocked out, output plasticity cannot generate stimulus-specific inhibitory inputs to the Pyr neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of the poor stimulus tuning of the interneurons, output plasticity cannot generate stimulus-specific inhibitory inputs to the Pyr neurons (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3d and inference from the model structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "bbd8bc2e-d116-4aa3-ba4c-df8981d5e43b",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C54",
+      "claim": "When input plasticity is knocked out, Pyr neurons essentially receive a tonic, unspecific background inhibition that is weakly modulated by the stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, they essentially receive a tonic, unspecific background inhibition that is weakly modulated by the stimulus (Figure 1\u2014figure supplement 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1\u2014figure supplement 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "924e9e48-d9fd-480f-b225-e157c1b01ed5",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C55",
+      "claim": "Plasticity of both the inhibitory output and the excitatory input synapses of PV interneurons is required for the formation of E/I assemblies in cortical areas without feature topography.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results indicate that plasticity of both the inhibitory output and the excitatory input synapses of PV interneurons is required for the formation of E/I assemblies in cortical areas without feature topography, such as mouse V1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the knock-out experiment results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "623436fa-9e3c-4da0-8b40-080b93c35b23",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C56",
+      "claim": "In layer 2/3 of V1, similarly tuned excitatory neurons tend to have stronger and more frequent excitatory connections.",
+      "claim_type": "EXPLICIT",
+      "source": "In layer 2/3 of V1, similarly tuned excitatory neurons tend to have stronger and more frequent excitatory connections (Ko et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "0fe767e5-cbe8-4add-a914-71afd2c4d5f7",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C57",
+      "claim": "It has been hypothesised that tuned excitatory connectivity supports reliable stimulus responses by amplifying the activity of similarly tuned neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been hypothesised that this tuned excitatory connectivity supports reliable stimulus responses by amplifying the activity of similarly tuned neurons (Cossell et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "55193a60-81da-4d8e-8c57-a1428ffe737d",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C58",
+      "claim": "The presence of co-tuned feedback inhibition could induce the opposite effect, such that similarly tuned excitatory neurons are in competition with each other.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the presence of co-tuned feedback inhibition could also induce the opposite effect, such that similarly tuned excitatory neurons are in competition with each other (Chettih and Harvey, 2019; Moreno-Bote and Drugowitsch, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "3947d867-166a-47e7-bd99-84dc5eb628c8",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C59",
+      "claim": "While the activity of the perturbed neuron increases, many of the other Pyr neurons are inhibited in response to the perturbation.",
+      "claim_type": "EXPLICIT",
+      "source": "While the activity of the perturbed neuron increases, many of the other Pyr neurons are inhibited in response to the perturbation (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "a914cb69-1c48-4b85-8744-1b55e7c58798",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C60",
+      "claim": "Neurons are more strongly inhibited if they have a similar tuning to the perturbed neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with recent perturbation studies (Chettih and Harvey, 2019; Sadeh and Clopath, 2020), we observe that\u2014on average\u2014neurons are more strongly inhibited if they have a similar tuning to the perturbed neuron (Figure 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4d and citations to experimental work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "dc2ac678-5aea-4f16-b6c3-1055974ff45d",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C61",
+      "claim": "Before learning, the effect of single-neuron perturbations on the network is increasingly excitatory as receptive field correlation increases.",
+      "claim_type": "EXPLICIT",
+      "source": "The opposite holds before learning: the effect of single-neuron perturbations on the network is increasingly excitatory as receptive field correlation increases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data from the perturbation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "4e2b6047-6c83-4a2a-8945-eacb1be711d3",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C62",
+      "claim": "Networks in which input or output plasticity was knocked out during learning show the same excitatory effect as before learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the networks in which input or output plasticity was knocked out during learning (and therefore did not develop E/I assemblies) show the same excitatory effect (Figure 4d, Figure 4\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4d and Figure 4\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "22be2a3f-ee40-4f90-9cd5-825c737537ff",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C63",
+      "claim": "A 'blanket of inhibition' does not account for feature-specific suppression between excitatory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This confirms that a 'blanket of inhibition' does not account for feature-specific suppression between excitatory neurons (Sadeh and Clopath, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the perturbation experiment results, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "2c5e44af-c4b1-4f1b-ace4-297906906f56",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C65",
+      "claim": "Plasticity suppresses some of the strongest correlations, resulting in 'feature competition'.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, plasticity suppresses some of the strongest correlations, resulting in 'feature competition' which is believed to aid sensory processing (Lochmann et al., 2012; Moreno-Bote and Drugowitsch, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the data, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "6dfd042b-de75-4135-a85b-36626941e9b9",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C67",
+      "claim": "The stimulus-specific feedback inhibition that emerges in the model captures the paradoxical suppression of similarly tuned excitatory neurons observed in single-cell perturbation experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the stimulus-specific feedback inhibition that emerges in the model also captures the paradoxical suppression of similarly tuned excitatory neurons observed in single-cell perturbation experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the perturbation experiment results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "2465bc63-9d6f-44d7-a541-b89bcf1839ad",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C68",
+      "claim": "The development of E/I assemblies similar to those observed in mouse V1 can be driven by a homeostatic form of plasticity of the incoming and outgoing synapses of inhibitory interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we used a computational model to show that the development of E/I assemblies similar to those observed in mouse V1 (Znamenskiy et al., 2018) or zebrafish olfactory areas (Rupprecht and Friedrich, 2018) can be driven by a homeostatic form of plasticity of the incoming and outgoing synapses of inhibitory interneurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main finding, supported by the modeling results.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "4e409959-8872-4367-bd31-cd5e35d76a47",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C69",
+      "claim": "Input and output plasticity in interneurons must act in synergy for stimulus-specific feedback inhibition to develop.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the results of virtual knock-out experiments, we suggest that, on their own, input or output plasticity of interneurons are insufficient to explain the Pyr-PV microcircuitry in mouse V1 and that input and output plasticity in interneurons must act in synergy for stimulus-specific feedback inhibition to develop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the knock-out experiment results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "7b781e6d-d54b-4d83-8cb6-3437f2f28b7f",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C70",
+      "claim": "Stimulating single excitatory cells paradoxically suppresses similarly tuned neurons in mouse visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate how the presence of E/I assemblies affects interactions between excitatory neurons, we mimicked a perturbation experiment and found that\u2014as in mouse visual cortex\u2014stimulating single excitatory cells paradoxically suppresses similarly tuned neurons (Chettih and Harvey, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to experimental work and comparison with model results.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "8ea59046-794a-416c-ae40-2bf7abd07b08",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C71",
+      "claim": "Activity-dependent plasticity can refine inhibitory circuits to actively shape cortical computations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that, by driving the development of tuned feedback inhibition, plasticity of interneurons can fundamentally shape cortical processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the overall modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "0fcf2ef6-59cc-4803-b6b7-1558acf6958d",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C72",
+      "claim": "Plasticity of input synapses is required for interneurons to acquire a stimulus selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Plasticity of input synapses is required for interneurons to acquire a stimulus selectivity, whereas plasticity of output synapses can exploit interneuron selectivity to shape inhibitory currents onto excitatory cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the knock-out experiment results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "16c595b6-df83-412a-b397-6118450a1b8d",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C73",
+      "claim": "Plasticity of output synapses can exploit interneuron selectivity to shape inhibitory currents onto excitatory cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Plasticity of input synapses is required for interneurons to acquire a stimulus selectivity, whereas plasticity of output synapses can exploit interneuron selectivity to shape inhibitory currents onto excitatory cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the knock-out experiment results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "7c8abbd6-3d15-4088-9b6f-18d2ddc8389e",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C74",
+      "claim": "The output plasticity derived for the recurrent network is very similar to a previously suggested form of inhibitory plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "The output plasticity we derived for our recurrent network is very similar to a previously suggested form of inhibitory plasticity (Vogels et al., 2011; Sprekeler, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison with cited previous work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "47ee4dbc-eae6-45a5-9c4e-1bc44c0b16ef",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C75",
+      "claim": "Homeostatic plasticity rules for inhibitory synapses are now used regularly in computational studies to stabilise model circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Homeostatic plasticity rules for inhibitory synapses are now used regularly in computational studies to stabilise model circuits (Vogels et al., 2011; Hennequin et al., 2017; Landau et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "b0c7e73c-8f4a-4199-8c6d-effcce144e9c",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C76",
+      "claim": "A theoretically grounded approach for the plasticity of excitatory input synapses onto inhibitory neurons is missing.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, a theoretically grounded approach for the plasticity of excitatory input synapses onto inhibitory neurons is missing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "34544b85-a26a-4f86-99ce-8dad899e5dbe",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C77",
+      "claim": "Homeostatic changes in excitatory synapses onto interneurons in response to lesions or sensory deprivation have been reported.",
+      "claim_type": "EXPLICIT",
+      "source": "Homeostatic changes in excitatory synapses onto interneurons in response to lesions or sensory deprivation have been reported (Keck et al., 2011; Takesian et al., 2013; Kuhlman et al., 2013), but the specific mechanisms and functions of this form of interneuron plasticity are not resolved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "bb73d4ab-0caf-4b53-bfd3-ec5c070803a1",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C78",
+      "claim": "The plasticity rule derived for the input synapses of interneurons effectively changes the selectivity of those neurons according to the demands of the Pyr cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The plasticity rule we derived for the input synapses of interneurons effectively changes the selectivity of those neurons according to the demands of the Pyr cells, that is, such that the interneurons can best counteract deviations of Pyr activity from the target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the derived plasticity rule.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "34febf73-db4c-4a70-b4d0-d1418b3b4b67",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C79",
+      "claim": "The local approximation of the gradient produces qualitatively similar results to the full gradient rules.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we used a local approximation of the gradient, backpropagation rules, which produces qualitatively similar results, and which we interpret as a recurrent variant of feedback alignment, applied to the specific task of a stimulus-specific E/I balance (Lillicrap et al., 2016; Akrout et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison of results from different plasticity rules.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "8d9a31d6-716e-4279-9398-ea6ba1ad3f9e",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C80",
+      "claim": "The task of balancing excitation by feedback inhibition favours symmetric connections.",
+      "claim_type": "EXPLICIT",
+      "source": "The intuition why this replacement is reasonable is the following: The task of balancing excitation by feedback inhibition favours symmetric connections, because excitatory cells that strongly drive a particular PV interneuron should receive a strong feedback connection in return.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical argument about the nature of E/I balance.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "99a320a0-fa11-4d2e-b98d-df6f08cc1a6e",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C81",
+      "claim": "E/I balance favours a positive correlation between the incoming and outgoing synapses of PV neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, E/I balance favours a positive correlation between the incoming and outgoing synapses of PV neurons and thus the two weight matrices will be aligned in a final balanced state (Lillicrap et al., 2016; Akrout et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical argument supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "51d07fa3-be60-4835-90c9-9ee7552cf575",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C82",
+      "claim": "In PV dendrites, postsynaptic sodium or calcium concentrations are expected to diffuse more broadly than in spiny neurons due to the lack of spines.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the lack of spines in PV dendrites, both are expected to diffuse more broadly in the dendritic arbor than in spiny neurons (Hu et al., 2014; Kullmann and Lamsa, 2007) and may thus provide a signal for overall dendritic excitatory currents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work and inference from structural properties.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "ff9ab650-d163-44e9-856d-03ca93259408",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C83",
+      "claim": "In PV interneurons, NMDA receptors are enriched in excitatory feedback relative to feedforward connections.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, in PV interneurons, NMDA receptors are enriched in excitatory feedback relative to feedforward connections (Le Roux et al., 2013), suggesting those two sources of excitation are differentially treated on the postsynaptic side.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "b3786209-84a5-4cb0-83b9-0fdbdcbb339e",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C84",
+      "claim": "Blocking NMDA receptors interferes with Hebbian long-term plasticity in some excitatory synapses onto interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Blocking NMDA receptors interferes with Hebbian long-term plasticity in some of these synapses (Lamsa et al., 2007; Kullmann and Lamsa, 2007), as does a block of excitatory input (Le Roux et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "ebb03c4b-5aa0-4642-8f95-8c1c72b89665",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C85",
+      "claim": "NMDAR-dependent plasticity in Pyr \u2192 PV synapses is expressed postsynaptically and seems to require presynaptic activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, NMDAR-dependent plasticity in Pyr \u2192 PV synapses is expressed postsynaptically and seems to require presynaptic activation (Kullmann and Lamsa, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "a182b2a6-2d71-4fa8-b980-97614d1ab846",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C86",
+      "claim": "The combination of BCM plasticity in Pyr \u2192 PV synapses with homeostatic inhibitory plasticity in the PV \u2192 Pyr synapses showed complex dynamics and often did not converge to a steady state.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in our hands, the combination of BCM plasticity in Pyr \u2192 PV synapses with homeostatic inhibitory plasticity in the PV \u2192 Pyr synapses showed complex dynamics, an analysis of which is beyond the scope of this article. In particular, this combination of rules often did not converge to a steady state, probably for the following reason.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "de999572-0bee-4f6f-93f6-b0be74ffce41",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C87",
+      "claim": "BCM rules tend to make the postsynaptic neuron as stimulus-selective as possible.",
+      "claim_type": "EXPLICIT",
+      "source": "BCM rules tend to make the postsynaptic neuron as stimulus-selective as possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the properties of BCM plasticity rules.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "4d384735-5ee3-4593-a603-15e0638a0d30",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C88",
+      "claim": "Both Pyr \u2192 PV and PV\u2192 Pyr plasticity have been studied in slice.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Pyr \u2192 PV and PV\u2192 Pyr plasticity have been studied in slice (for reviews, see, e.g., Kullmann and Lamsa, 2007; Vogels et al., 2013), but mostly in isolation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to review articles.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "ca36b479-e266-484f-8c5a-78a5fc789e6d",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C89",
+      "claim": "The model did not include stimulus-specific feedforward inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we did not include stimulus-specific feedforward inhibition, because the focus lay on the formation of stimulus-specific feedback inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the model design choices.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "708ef351-88df-4e24-a679-cab9f77e2d4d",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C90",
+      "claim": "The model includes only one class of interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we neglected much of the complexity of cortical interneuron circuits by including only one class of interneurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the model design choices.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "e616b88a-64ff-424b-aa95-a295383b7c19",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C91",
+      "claim": "PV interneurons provide local feedback inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "We interpret these interneurons as PV interneurons, given that PV interneurons provide local feedback inhibition (Hu et al., 2014) and show a stimulus-selective circuitry akin to E/I assemblies (Znamenskiy et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "4042612d-a84d-42c9-accf-19eeff3e2a84",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C92",
+      "claim": "PV-expressing (basket) cells are a prime candidate for the classical feedback model of E/I balance.",
+      "claim_type": "EXPLICIT",
+      "source": "With their peri-somatic targets on Pyr cells, PV-expressing (basket) cells are also a prime candidate for the classical feedback model of E/I balance (van Vreeswijk and Sompolinsky, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous theoretical work and knowledge of PV cell properties.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "ac6f968b-2875-4822-9608-bef087290fcd",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C93",
+      "claim": "Similarly tuned Pyr cells tend to be recurrently connected.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly tuned Pyr cells tend to be recurrently connected (Cossell et al., 2015; Harris and Mrsic-Flogel, 2013), in line with the notion that excitatory cells with similar tuning mutually excite each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "1194ebb4-f386-4e79-a14d-e13cdf67ec1b",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C94",
+      "claim": "A recent perturbation experiment demonstrates feature-specific suppression between Pyr cells with similar tuning.",
+      "claim_type": "EXPLICIT",
+      "source": "This notion is questioned by a recent perturbation experiment demonstrating feature-specific suppression between Pyr cells with similar tuning (Chettih and Harvey, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "60ac5af7-bf39-4da5-9396-79f0f5149320",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C95",
+      "claim": "Feature-specific suppression requires strong and tuned connections between excitatory and inhibitory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been suggested that this apparently paradoxical effect requires strong and tuned connections between excitatory and inhibitory neurons (Sadeh and Clopath, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous modeling work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "dbf9528d-548c-42a6-973b-62a729736405",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C96",
+      "claim": "Feature competition may be beneficial for stimulus processing by generating a sparser and more efficient representation of the stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Computational arguments suggest that this feature competition may be beneficial for stimulus processing, for example, by generating a sparser and more efficient representation of the stimuli (Olshausen and Field, 2004; Den\u00e8ve and Machens, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "c993aae8-11d6-48f8-9806-b0863156a62e",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C97",
+      "claim": "In rodents, stimulus tuning of inhibitory currents occurs later in development than that of excitation.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that in rodents, stimulus tuning of inhibitory currents occurs later in development than that of excitation (Dorrn et al., 2010), we expect that in juvenile mice single-cell perturbations would not cause feature-specific suppression but amplification due to excitatory recurrence and unspecific feedback inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "d4c251b7-3a7a-4729-b748-517dfcdd40f6",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "claim_id": "C98",
+      "claim": "In juvenile mice, single-cell perturbations would not cause feature-specific suppression but amplification due to excitatory recurrence and unspecific feedback inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that in rodents, stimulus tuning of inhibitory currents occurs later in development than that of excitation (Dorrn et al., 2010), we expect that in juvenile mice single-cell perturbations would not cause feature-specific suppression but amplification due to excitatory recurrence and unspecific feedback inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the model and cited developmental data.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7b865540-c297-442e-b004-657c5fc30bf3",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A computational model with homeostatic plasticity on both input (Pyr\u2192PV) and output (PV\u2192Pyr) synapses of PV interneurons successfully generates E/I assemblies consistent with mouse V1. After learning, interneurons develop stimulus tuning, form strong bidirectional connections with similarly tuned pyramidal neurons, and the network achieves precise E/I balance. The local approximation rules produce similar results to optimal gradient rules through feedback alignment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C29-C38 collectively demonstrate that the model with both forms of plasticity reproduces key features of mouse V1 circuitry. The data in Figures 1c-f show interneuron tuning development, preferential connectivity based on response similarity, and E/I balance. The comparison between local and gradient rules (C37-C38, Figure 1g) validates the approximation. The model design is clearly specified (C22-C26) and results are well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "2ee8f14a-c5f7-4004-b5c3-711ab65ac55b",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Knockout of output (PV\u2192Pyr) plasticity while maintaining input plasticity prevents E/I assembly formation. Although input weights correlate with response similarity (99% of samples), output weights do not (<0.01% of samples), and excitatory-inhibitory currents remain poorly co-tuned. This demonstrates that input plasticity alone is insufficient to generate the synaptic microstructure observed in mouse V1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39, C41-C46, C49 provide converging evidence from the output plasticity knockout experiment. The statistical analysis (Figures 2d-f) shows clear differences in correlation patterns compared to the full model, with quantitative thresholds for significance. The mechanistic explanation (C42) is consistent with the model structure. The conclusion (C49) is appropriately supported by the knockout data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "103566f9-424f-44c3-a4c0-da6925ae8708",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Knockout of input (Pyr\u2192PV) plasticity while maintaining output plasticity also prevents E/I assembly formation. Input weights remain random, interneurons maintain poor stimulus selectivity, and output plasticity cannot generate stimulus-specific inhibition. This demonstrates that both input and output plasticity must act synergistically for E/I assembly formation, with input plasticity required for interneuron selectivity and output plasticity required to shape inhibitory currents.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C55, C72-C73 provide comprehensive evidence from the input plasticity knockout experiment. The data in Figures 3a-d show maintained poor interneuron selectivity and lack of stimulus-specific inhibition. The mechanistic reasoning (C51-C53) logically explains why output plasticity alone is insufficient. The conclusion about synergistic action (C55, C72-C73) is well-supported by comparing both knockout conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "a18feeeb-790b-464d-98ed-096d6411862f",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Single-neuron perturbation experiments in the model with learned E/I assemblies show feature-specific suppression: perturbing one pyramidal neuron paradoxically suppresses similarly tuned neurons more strongly than dissimilarly tuned ones. This effect is absent before learning and in knockout networks, confirming that E/I assemblies (not blanket inhibition) mediate feature competition. The model reproduces experimental observations from mouse visual cortex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C63, C65, C67, C70 describe perturbation experiments with clear results shown in Figure 4b-d. The comparison across conditions (before learning, after learning, knockouts) provides strong evidence that E/I assemblies specifically mediate the suppression effect. The agreement with experimental data (C60, C70, citing Chettih and Harvey 2019) validates the model. The rejection of blanket inhibition (C63) is appropriately supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "9e389309-688b-4d4a-b323-cc5bdd30a1a9",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The study demonstrates that homeostatic plasticity of both incoming and outgoing synapses of inhibitory interneurons can drive the development of E/I assemblies similar to those in mouse V1 and zebrafish olfactory areas. This plasticity-driven development of tuned feedback inhibition fundamentally shapes cortical processing by enabling stimulus-specific competition between excitatory neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C69, C71 represent the main conclusions of the study, synthesizing results from the full model and knockout experiments. These conclusions are well-supported by the collective evidence from the modeling results (Result 1), knockout experiments (Results 2-3), and perturbation studies (Result 4). The claims appropriately acknowledge the computational nature of the work and cite relevant experimental systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "09e2402d-e5c2-4471-b46d-6159d80c2823",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The output plasticity rule derived is similar to previously suggested homeostatic inhibitory plasticity (Vogels et al. 2011), while the input plasticity rule represents a novel theoretically grounded approach. The local approximation produces qualitatively similar results to gradient rules through feedback alignment, with the intuition that E/I balance favors symmetric connections and positive correlation between input and output synapses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C81 discuss the theoretical basis and novelty of the plasticity rules. The comparison to prior work (C74-C77) is appropriately cited. The validation of the local approximation (C79) is supported by Figure 1\u2014figure supplement 2. The theoretical arguments about feedback alignment and symmetric connections (C80-C81) are logically sound and supported by citations. The acknowledgment of missing prior work on input plasticity (C76) is accurate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "987edc5a-1018-4eac-be63-8c04f7991871",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The proposed input plasticity rule for Pyr\u2192PV synapses has potential biological implementations involving postsynaptic calcium or sodium signals that diffuse broadly in PV dendrites due to lack of spines. NMDA receptors are enriched in feedback connections and their blockade interferes with plasticity, suggesting plausible molecular mechanisms for the proposed rule.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C82-C85 discuss potential biological implementations with appropriate citations to experimental work. However, these are largely speculative connections between known biological properties and the proposed plasticity rule. While the reasoning is plausible and well-cited, there is no direct experimental validation that the specific proposed rule is implemented biologically. The claims appropriately use cautious language ('expected', 'may', 'seems to').",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "3f617b1a-9395-4715-bc3b-75e765ff86c2",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Combining BCM plasticity in Pyr\u2192PV synapses with homeostatic inhibitory plasticity in PV\u2192Pyr synapses showed complex dynamics and often failed to converge to steady state. This instability likely arises because BCM rules maximize postsynaptic stimulus selectivity, which can lead to parts of stimulus space being unrepresented by interneurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C87 report negative results from alternative plasticity rules. The observation of non-convergence (C86) is stated as a modeling result, and the mechanistic explanation (C87) is logically sound given the properties of BCM rules. While the analysis is acknowledged as beyond scope, the basic observation and reasoning are appropriately reported as a limitation of alternative approaches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "65fe46b3-81e1-43ca-b2af-1fd80a9cef8f",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The model includes several simplifications: it excludes stimulus-specific feedforward inhibition (focusing on feedback inhibition) and includes only one class of interneurons, interpreted as PV interneurons based on their role in local feedback inhibition and stimulus-selective circuitry. PV basket cells are prime candidates for classical feedback E/I balance models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C92 clearly state model limitations and design choices. These are appropriately acknowledged with justifications (C89: focus on feedback; C91-C92: PV interneurons provide feedback inhibition and show E/I assemblies, with appropriate citations). The transparency about simplifications is appropriate for a computational modeling study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "450f43c9-a226-490e-b394-5d8158317a2b",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Prior work shows similarly tuned pyramidal cells are recurrently connected, initially suggesting mutual excitation. However, recent perturbation experiments demonstrate feature-specific suppression between similarly tuned neurons, which requires strong tuned E-I connections. Feature competition may benefit stimulus processing by generating sparser, more efficient representations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C96 accurately summarize relevant prior experimental and theoretical work with appropriate citations. The apparent contradiction between anatomical connectivity (C93) and functional suppression (C94) motivates the modeling study. The mechanistic requirement (C95) and computational benefit (C96) are appropriately cited to prior work. These claims provide important context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "138a6998-d921-407a-af8b-8fbec1fafa52",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Based on developmental data showing that stimulus tuning of inhibitory currents occurs later than excitation in rodents, the model predicts that juvenile mice would show feature-specific amplification (not suppression) in single-cell perturbation experiments due to excitatory recurrence and unspecific feedback inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C98 present a testable prediction based on the model and cited developmental data (Dorrn et al. 2010). The prediction logically follows from the model's mechanism: without tuned inhibition (as in juvenile animals), the excitatory recurrence should dominate. This is an appropriate and valuable prediction, though it remains untested. The use of 'expect' appropriately indicates this is a prediction.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "f22c5f72-5e7f-445a-a7fb-fc8c47edf10c",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior experimental work in mouse V1 shows that while pyramidal and PV neurons lack topographic organization, synaptic efficacy (not connection probability) correlates with response similarity in both directions (Pyr\u2192PV and PV\u2192Pyr). This suggests stimulus-specific feedback inhibition and formation of E/I assemblies, indicating a need for activity-dependent mechanisms for their formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C13-C20 accurately summarize key prior experimental findings, primarily from Znamenskiy et al. 2018, that motivate the study. The claims appropriately distinguish between connection probability (independent of tuning) and synaptic efficacy (correlated with tuning). The inference about E/I assemblies (C18-C19) and need for activity-dependent mechanisms (C20) are reasonable interpretations of the cited experimental data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "4fe8d278-2221-48f0-9757-1a612d1568db",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background literature establishes that inhibition serves both classical stabilization roles and active computational roles in cortex. Excitatory and inhibitory currents are often highly correlated in their stimulus responses, temporal dynamics, and across neurons. In topographically organized areas, this co-tuning may arise from local feedback inhibition, while in feedforward inhibition it was suggested to arise from homeostatic plasticity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C12 provide appropriate background context with extensive citations to prior literature. These claims accurately represent the current understanding of inhibitory function and E-I correlation in cortex. The distinction between topographic (C11) and non-topographic areas, and between feedback and feedforward inhibition (C12), appropriately frames the study's focus.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "431d34f4-8845-494b-9f77-143a9c164f98",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior work shows similarly tuned excitatory neurons in V1 layer 2/3 have stronger connections, hypothesized to amplify activity of similarly tuned neurons. However, co-tuned feedback inhibition could produce the opposite effect, causing similarly tuned neurons to compete.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C58 accurately summarize relevant prior work with appropriate citations (Ko et al. 2011, Cossell et al. 2015, Chettih and Harvey 2019, Moreno-Bote and Drugowitsch 2015). These claims set up the key question addressed by the perturbation experiments in the model. The contrast between amplification and competition hypotheses motivates the investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    },
+    {
+      "id": "35533ff0-676a-47d1-ba70-576149b17709",
+      "content_id": "2d3e5278-39df-4fff-8296-18b06c4803db",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Both Pyr\u2192PV and PV\u2192Pyr plasticity have been studied in slice preparations, but mostly in isolation rather than together.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C88 accurately summarizes the state of experimental plasticity studies with appropriate citations to review articles (Kullmann and Lamsa 2007, Vogels et al. 2013). This observation motivates the study's focus on synergistic action of both plasticity types and suggests future experimental directions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:00:08.358366Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9d5f75ee-e6b9-4ffa-8640-8e08dc1501ee",
+      "result_id": "7b865540-c297-442e-b004-657c5fc30bf3"
+    },
+    {
+      "claim_id": "93e52de7-2644-46b5-9c15-b2cf84c44329",
+      "result_id": "7b865540-c297-442e-b004-657c5fc30bf3"
+    },
+    {
+      "claim_id": "efa5b1ae-23d9-4922-917c-699c356f5f15",
+      "result_id": "7b865540-c297-442e-b004-657c5fc30bf3"
+    },
+    {
+      "claim_id": "cb013056-f8a5-4c12-9420-f97a07c774a8",
+      "result_id": "7b865540-c297-442e-b004-657c5fc30bf3"
+    },
+    {
+      "claim_id": "888d1d00-2e67-43c3-989a-8b60fce6ffbc",
+      "result_id": "7b865540-c297-442e-b004-657c5fc30bf3"
+    },
+    {
+      "claim_id": "7427e4c3-1603-40c0-a5a0-c2a625d043c3",
+      "result_id": "7b865540-c297-442e-b004-657c5fc30bf3"
+    },
+    {
+      "claim_id": "33fdceb9-4f0e-4083-853d-7c5031468608",
+      "result_id": "7b865540-c297-442e-b004-657c5fc30bf3"
+    },
+    {
+      "claim_id": "626247dd-179c-4ab0-b364-d8f56529f098",
+      "result_id": "7b865540-c297-442e-b004-657c5fc30bf3"
+    },
+    {
+      "claim_id": "318be454-cb9a-44fb-9496-b47c9a86d88d",
+      "result_id": "7b865540-c297-442e-b004-657c5fc30bf3"
+    },
+    {
+      "claim_id": "24b91a6b-6516-48e1-8b24-c7450b70155f",
+      "result_id": "7b865540-c297-442e-b004-657c5fc30bf3"
+    },
+    {
+      "claim_id": "153e4274-e8c6-48cd-a808-53dea1ed10a5",
+      "result_id": "7b865540-c297-442e-b004-657c5fc30bf3"
+    },
+    {
+      "claim_id": "1e6bd610-049d-4e6a-9a27-1cdf97b99519",
+      "result_id": "7b865540-c297-442e-b004-657c5fc30bf3"
+    },
+    {
+      "claim_id": "9779c4be-cfe8-48f5-ad0f-be409efb9fa6",
+      "result_id": "7b865540-c297-442e-b004-657c5fc30bf3"
+    },
+    {
+      "claim_id": "5f6fcab8-249d-4cde-81a3-e761cf00502d",
+      "result_id": "7b865540-c297-442e-b004-657c5fc30bf3"
+    },
+    {
+      "claim_id": "fa2e4b07-9146-40cc-8e6c-4446f63d76a0",
+      "result_id": "7b865540-c297-442e-b004-657c5fc30bf3"
+    },
+    {
+      "claim_id": "89e36163-2bc7-4671-ac8f-9d1d25299617",
+      "result_id": "7b865540-c297-442e-b004-657c5fc30bf3"
+    },
+    {
+      "claim_id": "fe53587a-b9e1-4b3b-9d24-49053bbbe310",
+      "result_id": "7b865540-c297-442e-b004-657c5fc30bf3"
+    },
+    {
+      "claim_id": "7fee7984-610c-4ff3-96ab-269ad0b76ffb",
+      "result_id": "2ee8f14a-c5f7-4004-b5c3-711ab65ac55b"
+    },
+    {
+      "claim_id": "4d52233c-1211-4332-be14-d92de3b48283",
+      "result_id": "2ee8f14a-c5f7-4004-b5c3-711ab65ac55b"
+    },
+    {
+      "claim_id": "7a1ee1f4-9e67-43f6-afb4-1d8c5df70a85",
+      "result_id": "2ee8f14a-c5f7-4004-b5c3-711ab65ac55b"
+    },
+    {
+      "claim_id": "a80e5e80-5d7b-4cf2-9088-3e6709ce6ee8",
+      "result_id": "2ee8f14a-c5f7-4004-b5c3-711ab65ac55b"
+    },
+    {
+      "claim_id": "add87e1a-38db-41f3-9c3b-a74486d9743a",
+      "result_id": "2ee8f14a-c5f7-4004-b5c3-711ab65ac55b"
+    },
+    {
+      "claim_id": "c9478e56-e290-4baf-8e16-cb75069935c4",
+      "result_id": "2ee8f14a-c5f7-4004-b5c3-711ab65ac55b"
+    },
+    {
+      "claim_id": "5fb86506-9128-49e6-9a38-9c361a845308",
+      "result_id": "2ee8f14a-c5f7-4004-b5c3-711ab65ac55b"
+    },
+    {
+      "claim_id": "6bbe6d0f-8eb0-462a-95b3-d62d404cf2ee",
+      "result_id": "103566f9-424f-44c3-a4c0-da6925ae8708"
+    },
+    {
+      "claim_id": "8a72d767-e19e-4824-aa1f-f6d633e5c3c0",
+      "result_id": "103566f9-424f-44c3-a4c0-da6925ae8708"
+    },
+    {
+      "claim_id": "11f11c1c-46f1-41d3-b5a6-bc2778c651c1",
+      "result_id": "103566f9-424f-44c3-a4c0-da6925ae8708"
+    },
+    {
+      "claim_id": "87127027-9513-4ccb-8456-2473e475e9c6",
+      "result_id": "103566f9-424f-44c3-a4c0-da6925ae8708"
+    },
+    {
+      "claim_id": "bbd8bc2e-d116-4aa3-ba4c-df8981d5e43b",
+      "result_id": "103566f9-424f-44c3-a4c0-da6925ae8708"
+    },
+    {
+      "claim_id": "924e9e48-d9fd-480f-b225-e157c1b01ed5",
+      "result_id": "103566f9-424f-44c3-a4c0-da6925ae8708"
+    },
+    {
+      "claim_id": "0fcf2ef6-59cc-4803-b6b7-1558acf6958d",
+      "result_id": "103566f9-424f-44c3-a4c0-da6925ae8708"
+    },
+    {
+      "claim_id": "16c595b6-df83-412a-b397-6118450a1b8d",
+      "result_id": "103566f9-424f-44c3-a4c0-da6925ae8708"
+    },
+    {
+      "claim_id": "3947d867-166a-47e7-bd99-84dc5eb628c8",
+      "result_id": "a18feeeb-790b-464d-98ed-096d6411862f"
+    },
+    {
+      "claim_id": "a914cb69-1c48-4b85-8744-1b55e7c58798",
+      "result_id": "a18feeeb-790b-464d-98ed-096d6411862f"
+    },
+    {
+      "claim_id": "dc2ac678-5aea-4f16-b6c3-1055974ff45d",
+      "result_id": "a18feeeb-790b-464d-98ed-096d6411862f"
+    },
+    {
+      "claim_id": "4e2b6047-6c83-4a2a-8945-eacb1be711d3",
+      "result_id": "a18feeeb-790b-464d-98ed-096d6411862f"
+    },
+    {
+      "claim_id": "22be2a3f-ee40-4f90-9cd5-825c737537ff",
+      "result_id": "a18feeeb-790b-464d-98ed-096d6411862f"
+    },
+    {
+      "claim_id": "2c5e44af-c4b1-4f1b-ace4-297906906f56",
+      "result_id": "a18feeeb-790b-464d-98ed-096d6411862f"
+    },
+    {
+      "claim_id": "6dfd042b-de75-4135-a85b-36626941e9b9",
+      "result_id": "a18feeeb-790b-464d-98ed-096d6411862f"
+    },
+    {
+      "claim_id": "7b781e6d-d54b-4d83-8cb6-3437f2f28b7f",
+      "result_id": "a18feeeb-790b-464d-98ed-096d6411862f"
+    },
+    {
+      "claim_id": "2465bc63-9d6f-44d7-a541-b89bcf1839ad",
+      "result_id": "9e389309-688b-4d4a-b323-cc5bdd30a1a9"
+    },
+    {
+      "claim_id": "4e409959-8872-4367-bd31-cd5e35d76a47",
+      "result_id": "9e389309-688b-4d4a-b323-cc5bdd30a1a9"
+    },
+    {
+      "claim_id": "8ea59046-794a-416c-ae40-2bf7abd07b08",
+      "result_id": "9e389309-688b-4d4a-b323-cc5bdd30a1a9"
+    },
+    {
+      "claim_id": "7c8abbd6-3d15-4088-9b6f-18d2ddc8389e",
+      "result_id": "09e2402d-e5c2-4471-b46d-6159d80c2823"
+    },
+    {
+      "claim_id": "47ee4dbc-eae6-45a5-9c4e-1bc44c0b16ef",
+      "result_id": "09e2402d-e5c2-4471-b46d-6159d80c2823"
+    },
+    {
+      "claim_id": "b0c7e73c-8f4a-4199-8c6d-effcce144e9c",
+      "result_id": "09e2402d-e5c2-4471-b46d-6159d80c2823"
+    },
+    {
+      "claim_id": "34544b85-a26a-4f86-99ce-8dad899e5dbe",
+      "result_id": "09e2402d-e5c2-4471-b46d-6159d80c2823"
+    },
+    {
+      "claim_id": "bb73d4ab-0caf-4b53-bfd3-ec5c070803a1",
+      "result_id": "09e2402d-e5c2-4471-b46d-6159d80c2823"
+    },
+    {
+      "claim_id": "34febf73-db4c-4a70-b4d0-d1418b3b4b67",
+      "result_id": "09e2402d-e5c2-4471-b46d-6159d80c2823"
+    },
+    {
+      "claim_id": "8d9a31d6-716e-4279-9398-ea6ba1ad3f9e",
+      "result_id": "09e2402d-e5c2-4471-b46d-6159d80c2823"
+    },
+    {
+      "claim_id": "99a320a0-fa11-4d2e-b98d-df6f08cc1a6e",
+      "result_id": "09e2402d-e5c2-4471-b46d-6159d80c2823"
+    },
+    {
+      "claim_id": "51d07fa3-be60-4835-90c9-9ee7552cf575",
+      "result_id": "987edc5a-1018-4eac-be63-8c04f7991871"
+    },
+    {
+      "claim_id": "ff9ab650-d163-44e9-856d-03ca93259408",
+      "result_id": "987edc5a-1018-4eac-be63-8c04f7991871"
+    },
+    {
+      "claim_id": "b3786209-84a5-4cb0-83b9-0fdbdcbb339e",
+      "result_id": "987edc5a-1018-4eac-be63-8c04f7991871"
+    },
+    {
+      "claim_id": "ebb03c4b-5aa0-4642-8f95-8c1c72b89665",
+      "result_id": "987edc5a-1018-4eac-be63-8c04f7991871"
+    },
+    {
+      "claim_id": "a182b2a6-2d71-4fa8-b980-97614d1ab846",
+      "result_id": "3f617b1a-9395-4715-bc3b-75e765ff86c2"
+    },
+    {
+      "claim_id": "de999572-0bee-4f6f-93f6-b0be74ffce41",
+      "result_id": "3f617b1a-9395-4715-bc3b-75e765ff86c2"
+    },
+    {
+      "claim_id": "ca36b479-e266-484f-8c5a-78a5fc789e6d",
+      "result_id": "65fe46b3-81e1-43ca-b2af-1fd80a9cef8f"
+    },
+    {
+      "claim_id": "708ef351-88df-4e24-a679-cab9f77e2d4d",
+      "result_id": "65fe46b3-81e1-43ca-b2af-1fd80a9cef8f"
+    },
+    {
+      "claim_id": "e616b88a-64ff-424b-aa95-a295383b7c19",
+      "result_id": "65fe46b3-81e1-43ca-b2af-1fd80a9cef8f"
+    },
+    {
+      "claim_id": "4042612d-a84d-42c9-accf-19eeff3e2a84",
+      "result_id": "65fe46b3-81e1-43ca-b2af-1fd80a9cef8f"
+    },
+    {
+      "claim_id": "ac6f968b-2875-4822-9608-bef087290fcd",
+      "result_id": "450f43c9-a226-490e-b394-5d8158317a2b"
+    },
+    {
+      "claim_id": "1194ebb4-f386-4e79-a14d-e13cdf67ec1b",
+      "result_id": "450f43c9-a226-490e-b394-5d8158317a2b"
+    },
+    {
+      "claim_id": "60ac5af7-bf39-4da5-9396-79f0f5149320",
+      "result_id": "450f43c9-a226-490e-b394-5d8158317a2b"
+    },
+    {
+      "claim_id": "dbf9528d-548c-42a6-973b-62a729736405",
+      "result_id": "450f43c9-a226-490e-b394-5d8158317a2b"
+    },
+    {
+      "claim_id": "c993aae8-11d6-48f8-9806-b0863156a62e",
+      "result_id": "138a6998-d921-407a-af8b-8fbec1fafa52"
+    },
+    {
+      "claim_id": "d4c251b7-3a7a-4729-b748-517dfcdd40f6",
+      "result_id": "138a6998-d921-407a-af8b-8fbec1fafa52"
+    },
+    {
+      "claim_id": "0a928a2c-ab99-4f5f-bcff-8c212d4bb61c",
+      "result_id": "f22c5f72-5e7f-445a-a7fb-fc8c47edf10c"
+    },
+    {
+      "claim_id": "0411cdb0-2aaf-46bf-b4d0-f850c4b166b2",
+      "result_id": "f22c5f72-5e7f-445a-a7fb-fc8c47edf10c"
+    },
+    {
+      "claim_id": "95563dff-5799-4bee-986e-3a3005832aff",
+      "result_id": "f22c5f72-5e7f-445a-a7fb-fc8c47edf10c"
+    },
+    {
+      "claim_id": "b1041f83-7a83-47f9-a7ed-ca5484e0dc29",
+      "result_id": "f22c5f72-5e7f-445a-a7fb-fc8c47edf10c"
+    },
+    {
+      "claim_id": "45d4d4f9-755b-43d6-b93d-dd48558c329b",
+      "result_id": "f22c5f72-5e7f-445a-a7fb-fc8c47edf10c"
+    },
+    {
+      "claim_id": "b31b9006-3da2-4272-9561-14769bfcc6a0",
+      "result_id": "f22c5f72-5e7f-445a-a7fb-fc8c47edf10c"
+    },
+    {
+      "claim_id": "68a2ac41-fe83-44c4-8515-d04c04c065b5",
+      "result_id": "f22c5f72-5e7f-445a-a7fb-fc8c47edf10c"
+    },
+    {
+      "claim_id": "c8516c1e-3803-4d10-848b-7c40c3bf0b66",
+      "result_id": "f22c5f72-5e7f-445a-a7fb-fc8c47edf10c"
+    },
+    {
+      "claim_id": "cd539837-bb5c-42eb-9712-78b1d56fd605",
+      "result_id": "f22c5f72-5e7f-445a-a7fb-fc8c47edf10c"
+    },
+    {
+      "claim_id": "eabc789f-b810-48b4-be9e-db5906158b54",
+      "result_id": "f22c5f72-5e7f-445a-a7fb-fc8c47edf10c"
+    },
+    {
+      "claim_id": "92c8d0d1-add5-4cb5-9d0c-5aa09b4ddf85",
+      "result_id": "4fe8d278-2221-48f0-9757-1a612d1568db"
+    },
+    {
+      "claim_id": "b46d6e70-826c-4009-96b8-8faacea97610",
+      "result_id": "4fe8d278-2221-48f0-9757-1a612d1568db"
+    },
+    {
+      "claim_id": "758f7b66-2219-4773-b79c-cc87e4cd05ab",
+      "result_id": "4fe8d278-2221-48f0-9757-1a612d1568db"
+    },
+    {
+      "claim_id": "630c819c-72c9-4bc9-af72-52e903b5a82e",
+      "result_id": "4fe8d278-2221-48f0-9757-1a612d1568db"
+    },
+    {
+      "claim_id": "573344da-9519-4e37-8883-1d25bfcd89bd",
+      "result_id": "4fe8d278-2221-48f0-9757-1a612d1568db"
+    },
+    {
+      "claim_id": "fb155773-8bc8-4d68-a0c7-9c6a978d22bc",
+      "result_id": "4fe8d278-2221-48f0-9757-1a612d1568db"
+    },
+    {
+      "claim_id": "bef115ea-6f08-4ef2-84a5-44ebe6b2afe1",
+      "result_id": "4fe8d278-2221-48f0-9757-1a612d1568db"
+    },
+    {
+      "claim_id": "623436fa-9e3c-4da0-8b40-080b93c35b23",
+      "result_id": "431d34f4-8845-494b-9f77-143a9c164f98"
+    },
+    {
+      "claim_id": "0fe767e5-cbe8-4add-a914-71afd2c4d5f7",
+      "result_id": "431d34f4-8845-494b-9f77-143a9c164f98"
+    },
+    {
+      "claim_id": "55193a60-81da-4d8e-8c57-a1428ffe737d",
+      "result_id": "431d34f4-8845-494b-9f77-143a9c164f98"
+    },
+    {
+      "claim_id": "4d384735-5ee3-4593-a603-15e0638a0d30",
+      "result_id": "35533ff0-676a-47d1-ba70-576149b17709"
+    }
+  ],
+  "comparisons": []
+}

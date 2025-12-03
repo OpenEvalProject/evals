@@ -1,0 +1,1647 @@
+{
+  "submission": {
+    "id": "19000ad8-02ce-4a6b-8221-3db2e9127c20",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T16:18:28.776239Z",
+    "updated_at": "2025-12-03T16:18:28.776239Z"
+  },
+  "content": [
+    {
+      "id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "submission_id": "19000ad8-02ce-4a6b-8221-3db2e9127c20",
+      "content_type": "manuscript",
+      "content_text": "# Putting perception into action with inverse optimal control for continuous psychophysics\n\n## Authors\n\n- Dominik Straub<sup>1</sup> ([ORCID: 0000-0001-5263-2622](https://orcid.org/0000-0001-5263-2622)) \u2020\n- Constantin A Rothkopf<sup>1</sup> ([ORCID: 0000-0002-5636-0801](https://orcid.org/0000-0002-5636-0801)) \u2020\n\n### Affiliations\n\n1. Centre for Cognitive Science, Technical University of Darmstadt Darmstadt Germany ([ROR:05n911h24](https://ror.org/05n911h24))\n2. Institute of Psychology, Technical University of Darmstadt Darmstadt Germany ([ROR:05n911h24](https://ror.org/05n911h24))\n3. Frankfurt Institute for Advanced Studies, Goethe University Frankfurt Frankfurt Germany ([ROR:04cvxnb49](https://ror.org/04cvxnb49))\n\n\u2020 Corresponding author\n\n## Abstract\n\nPsychophysical methods are a cornerstone of psychology, cognitive science, and neuroscience where they have been used to quantify behavior and its neural correlates for a vast range of mental phenomena. Their power derives from the combination of controlled experiments and rigorous analysis through signal detection theory. Unfortunately, they require many tedious trials and preferably highly trained participants. A recently developed approach, continuous psychophysics, promises to transform the field by abandoning the rigid trial structure involving binary responses and replacing it with continuous behavioral adjustments to dynamic stimuli. However, what has precluded wide adoption of this approach is that current analysis methods do not account for the additional variability introduced by the motor component of the task and therefore recover perceptual thresholds that are larger compared to equivalent traditional psychophysical experiments. Here, we introduce a computational analysis framework for continuous psychophysics based on Bayesian inverse optimal control. We show via simulations and previously published data that this not only recovers the perceptual thresholds but additionally estimates subjects\u2019 action variability, internal behavioral costs, and subjective beliefs about the experimental stimulus dynamics. Taken together, we provide further evidence for the importance of including acting uncertainties, subjective beliefs, and, crucially, the intrinsic costs of behavior, even in experiments seemingly only investigating perception.\n\n## Introduction\n\nPsychophysical methods such as forced-choice tasks are widely used in psychology, cognitive science, neuroscience, and behavioral economics because they provide precise and reliable quantitative measurements of the relationship between external stimuli and internal sensations (Gescheider, 1997; Wichmann and J\u00e4kel, 2018). The tasks employed by traditional psychophysics are typically characterized by a succession of hundreds of trials in which stimuli are presented briefly and the subject responds with a binary decision, for example, whether target stimuli at different contrast levels were perceived to be present or absent.\n\nThe analysis of such experimental data using signal detection theory (SDT; Green and Swets, 1966) employs a model that assumes that a sensory signal generates an internal representation corrupted by Gaussian variability. A putative comparison of this stochastic signal with an internal criterion leads to a binary decision. These assumptions render human response rates amenable to analysis based on Bayesian decision theory, by probabilistically inverting the model of the decision-generating process. This provides psychologically interpretable measures of perceptual uncertainty and of the decision criterion, for example, for contrast detection. Thus, the power of classical psychophysics derives from the combination of controlled experimental paradigms with computational analysis encapsulated in SDT.\n\nPsychophysical experiments and their analysis with SDT have revealed invaluable knowledge about perceptual and cognitive abilities and their neuronal underpinnings, and found widespread application to tasks as diverse as eyewitness identification and medical diagnosis (for recent reviews, see, e.g., Lynn and Barrett, 2014; Wixted, 2020). One central drawback, however, is that collecting data in such tasks is often tedious, as famously noted already by James, 1890. This leads to participants\u2019 engagement levels being low, particularly in untrained subjects, resulting in measurements contaminated by additional variability (Manning et al., 2018). A common solution is to rely on few but highly trained observers to achieve consistent measurements (Green and Swets, 1966; J\u00e4kel and Wichmann, 2006).\n\nRecent work has suggested overcoming this shortcoming by abandoning the rigid structure imposed by independent trials and instead eliciting continuous behavioral adjustments to dynamic stimuli (Bonnen et al., 2015; Bonnen et al., 2017; Kn\u00f6ll et al., 2018; Huk et al., 2018). In their first study using continuous psychophysics, Bonnen et al., 2015, used a tracking task, in which subjects moved a computer mouse to track targets of different contrasts moving according to a random walk governed by linear dynamics with additive Gaussian noise. This experimental protocol not only requires orders of magnitude less time compared to traditional psychophysical methods, but participants report it to be more natural, making it more suitable for untrained subjects and potentially children and infants. Similar approaches have recently been used to measure contrast sensitivity (Mooney et al., 2018), eye movements toward optic flow (Chow et al., 2021), or retinal sensitivity (Grillini et al., 2021).\n\nTo obtain measures of perceptual uncertainty from the tracking data, Bonnen et al., 2015, proposed analyzing these data with the Kalman filter (KF; Kalman, 1960), the Bayes-optimal estimator for sequential observations with Gaussian uncertainty. The KF, however, models the perceptual side of the tracking task only, that is, how an ideal observer (Geisler, 1989) sequentially computes an estimate of the target\u2019s position. Unfortunately, although the perceptual thresholds estimated with the KF from the tracking task were highly correlated with the perceptual uncertainties obtained with an equivalent classical forced-choice task employing stimuli with the same contrast, Bonnen et al., 2015, reported that these were systematically larger by a large margin.\n\nThis is not surprising since every perceptual laboratory task involves some motor control component at least for generating a response, albeit to different degrees. While a detection task may require pressing a button, a reproduction task involves a motor control component, and a tracking task involves continuous visuomotor control, as mentioned by Bonnen et al., 2015. In addition to the problem of estimating the current position of the target, a tracking task encompasses the motor control problem of moving the finger, computer mouse, or gaze toward the target. This introduces additional sources of variability and bias. First, repeated movements toward a target exhibit variability (Faisal et al., 2008), which arises because of neural variability during execution of movements (Jones et al., 2002) or their preparation (Churchland et al., 2006). Second, a subject might trade off the instructed behavioral goal of the tracking experiment with subjective costs, such as biomechanical energy expenditure (di Prampero, 1981) or mental effort (Shenhav et al., 2017). Third, subjects might have mistaken assumptions about the statistics of the task (Petzschner and Glasauer, 2011; Beck et al., 2012), which can lead to different behavior from a model that perfectly knows the task structure, that is, ideal observers. A model that only considers the perceptual side of the task will, therefore, tend to overestimate perceptual uncertainty because these additional factors get lumped into perceptual model parameters, as we will show in simulations.\n\nHere, we account for these factors by applying ideas from optimal control under uncertainty (see, e.g., Wolpert and Ghahramani, 2000; Todorov and Jordan, 2002; Shadmehr and Mussa-Ivaldi, 2012, for reviews in the context of sensorimotor neuroscience) to the computational analysis of continuous psychophysics. Partially observable Markov decision processes (POMDPs; \u00c5str\u00f6m, 1965; Kaelbling et al., 1998) offer a general framework for modeling sequential perception, and actions under sensory uncertainty, action variability, and explicitly include behavioral costs (Hoppe and Rothkopf, 2019). They can be seen as a generalization of Bayesian decision theory, on which classical analysis of psychophysics including SDT is based, to sequential tasks. Specifically, we employ the well-studied linear quadratic Gaussian framework (LQG; Anderson and Moore, 2007), which accommodates continuous states and actions under linear dynamics and Gaussian variability. While the KF, being the Bayes-optimal estimator for a linear-Gaussian system, can be shown to minimize the squared error between the latent target and its estimate, the optimal control framework can flexibly incorporate different kinds of costs such as the intrinsic costs of actions. Thus, it can accommodate task goals beyond estimation as well as physiological and cognitive costs of performing actions.\n\nModeling the particular task as it is implemented by the researcher allows deriving a normative model of behavior such as ideal observers in perceptual science (Green and Swets, 1966; Geisler, 1989) or optimal feedback control models in motor control (Wolpert and Ghahramani, 2000; Todorov and Jordan, 2002). This classic task analysis at the computational level (Marr, 1982) can now be used to produce predictions of behavior, which can be compared to the actual empirically observed behavior. However, the fundamental assumption in such a setting is that the subject is carrying out the instructed task and that subject\u2019s internal model of the task is identical to the underlying generative model of the task employed by the researcher. Here, instead, we allow for the possibility that the subject is not acting on the basis of the model the researcher has implemented in the experiment. Instead, we allow for the possibility that subjects\u2019 cost function does not only capture the instructed task goals but also the experienced subjective cost such as physiological and cognitive costs of performing actions. Such an approach is particularly useful in a more naturalistic task setting, where subjective costs and benefits of behavior are difficult to come by a priori. Similarly, we allow subjects\u2019 subjective internal model of stimulus dynamics to differ from the true model employed by the researcher. In the spirit of rational analysis (Simon, 1955; Anderson, 1991; Gershman et al., 2015), we subsequently invert this model of human behavior by developing a method for performing Bayesian inference of parameters describing the subject. Importantly, inversion of the model allows all parameters to be inferred from behavioral data and does not presuppose their value, so that, for example, if subjects\u2019 actions were not influenced by subjective internal behavioral costs, the internal cost parameter would be estimated to be zero. This approach therefore reconciles normative and descriptive approaches to sensorimotor behavior as it answers the question which subjective internal model, beliefs, and costs best explain observed behavior.\n\nWe show through simulations with synthetic data that models not accounting for behavioral cost and action variability overestimate perceptual uncertainty when applied to data that includes these factors. We apply our method to data from three previously published experiments, infer perceptual uncertainty, and obtain overwhelming evidence through Bayesian model comparison with the widely applicable information criterion (WAIC; Watanabe and Opper, 2010) that this model explains the data better than models only considering perceptual contributions to behavioral data. Additionally, the method provides inferences of subjects\u2019 action variability, subjective behavioral costs, and subjective beliefs about stimulus dynamics. Taken together, the methodology presented here improves current analyses and should be the preferred analysis technique for continuous psychophysics paradigms.\n\n## Results\n\n### Computational models of psychophysical tasks\n\nIn a classical psychophysics task (e.g., position discrimination; Figure 1A and B), the stimuli xt presented to the observer are usually independent and identically distributed between trials. This allows for straightforward application of Bayesian decision theory: in any trial, the observer receives a stochastic measurement $y_{t}\u223cp(y_{t}|x_{t},\\theta)$, forms a belief $p(x_{t}|y_{t},\\theta)\u221dp(y_{t}|x_{t},\\theta)p(x_{t},\\theta)$, and makes a single decision minimizing a cost function $u_{t}=argmin\\intJ(u_{t},x_{t},\\theta)p(x_{t}|y_{t},\\theta)dx_{t}$. In SDT, for example, observations are commonly assumed to be Gaussian distributed and the cost function J assigns a value to correct and wrong decisions. These assumptions make it straightforward to compute the observer\u2019s decision probabilities $p\u2062(u_{t}|x_{t})$ given parameters \u03b8 (e.g., sensitivity and criterion in SDT) and invert the model to infer those parameters from behavior, yielding a posterior distribution $p(\\theta|u_{1:T},x_{1:T})$ (see Figure 1C). Similarly, a psychometric curve can be interpreted as the decision probabilities of a Bayesian observer with a particular choice of measurement distribution, which determines the shape of the curve. The assumption of independence between trials is critical in the application of these modeling techniques.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/76635/elife-76635-fig1-v4.jpg)\n\n**Figure 1.:** (A) In a classical psychophysics task, the subject receives stimuli xt on independent trials, generates sensory observations yt, forms beliefs about the stimulus $x^_{t}$, and (B) makes a single decision ut (e.g., whether the target stimulus was present or absent). (C) The researcher has a model of how the agent makes decisions and measures the subject\u2019s sensitivity and decision criterion by inverting this model. For example, one can estimate the agent\u2019s visual uncertainty by computing the width of a psychometric function. (D) In a continuous psychophysics task, a continuous stream of stimuli is presented. The subject has an internal model of the dynamics of the task, which they use to form a belief about the state of the world and then perform continuously actions (E) based on their belief and subjective costs. (F) The researcher observes the subject\u2019s behavior and inverts this internal model, fo example, using Bayesian inference applied to optimal control under uncertainty.\n\nContinuous psychophysics abandons the independence of stimuli between individual trials. Instead, stimuli are presented in a continuous succession. For example, in a position-tracking task, the stimulus moves from frame to frame and the observer\u2019s goal is to track the stimulus with their mouse cursor (Figure 1D and E). In a computational model of a continuous task, the stimulus dynamics are characterized by a state transition probability $p(x_{t}|x_{t\u22121},u_{t\u22121},\\theta)$ and can potentially be influenced by the agent\u2019s actions $u_{t\u22121}$. As in the trial-based task, the agent receives a stochastic measurement $y_{t}\u223cp(y_{t}|x_{t},\\theta)$ and has the goal to perform a sequence of actions $u_{1:T}=argmin\\intJ(u_{1:T},x_{1:T})p(x_{1:T}|y_{1:T})dx_{1:T}$, minimizing the cost function. Formally, this problem of acting under uncertainty is a POMDP and is computationally intractable in the general case (\u00c5str\u00f6m, 1965; Kaelbling et al., 1998).\n\nIn target-tracking tasks used in previous continuous psychophysics studies (Bonnen et al., 2015; Bonnen et al., 2017; Huk et al., 2018; Kn\u00f6ll et al., 2018), in which the target is on a random walk, the dynamics of the stimulus are linear and the subjects\u2019 goal is to track the target. Tracking can be reasonably modeled with a quadratic cost function penalizing the separation between the target and the position of the tracking device. The variability in the dynamics and the uncertainty in the observation model can be modeled with Gaussian distributions. The resulting LQG control problem is a well-studied special case of the general POMDP setting, which can be solved exactly by determining an optimal estimator and an optimal controller (Edison, 1971; Anderson and Moore, 2007). It is defined by a discrete-time linear dynamical system with Gaussian noise,\n\n$$\nx_{t}=Ax_{t\u22121}+Bu_{t\u22121}+V\u03f5_{t},\u03f5_{t}\u223cN(0,I),\n$$\n\na linear observation model with Gaussian noise,\n\n$$\ny_{t}=Cx_{t}+W\u03b7_{t},\u03b7_{t}\u223cN(0,I),\n$$\n\nand a quadratic cost function,\n\n$$\nJ(u_{1:T})=\\sumt=1T[x_{t}^{T}Qx_{t}+u_{t}^{T}Ru_{t}],\n$$\n\nwhere Q defines the costs for the state (e.g., squared distance between the target and a mouse or hand) and R defines the cost of actions (biomechanical, cognitive, etc.).\n\nFor the LQG control problem, the separation principle between estimation and control holds (Davis and Vinter, 1985). This means that the optimal solutions for the estimator (KF) and controller (LQR) can be computed independently from one another. The KF (Kalman, 1960) is used to form a belief $x^_{t}$ about the current state based on the previous estimate and the current observation:\n\n$$\nx^_{t}=Ax^_{t\u22121}+Bu_{t\u22121}+K(y_{t}\u2212C(Ax^_{t\u22121}+Bu_{t\u22121})).\n$$\n\nThis belief is then used to compute the optimal action $u_{t}$ based on the linear quadratic regulator (LQR, Kalman, 1964): $u_{t}=\u2212Lx^_{t}$. For the derivations of $K$ and $L$, see section \u2018LQG control derivations\u2019.\n\nWe consider four models, each of which is a generalization of the previous one. Importantly, this means that the most general model contains the remaining three as special cases. We introduce the models in the following paragraphs and describe their respective free parameters. For a complete specification of how these parameters need to be set to model a tracking task and how this gives rise to the matrices defining the linear dynamical systems for each model, see Appendix 2\u2014table 1.\n\nFirst, the ideal observer model in the tracking task is the KF as it is the optimal Bayesian sequential estimator of the latent, unobserved state of the system (Figure 2A). The state represents the current position of the target and there is no explicit representation of the agent\u2019s response or action. The computational goal of the KF is to perform sequential inference about the position of the target given sensory measurements and an internal model of the target\u2019s dynamics. As a proxy for a behavioral response, one can therefore use the best estimate $x^_{t}$ that corresponds to the target\u2019s position. Because the ideal observer assumption implies that the task dynamics, that is, the standard deviation of the random walk are perfectly known to the subject, the KF has only one free parameter, the perceptual uncertainty \u03c3. This parameter describes the uncertainty in the sensory observation of target\u2019s true position.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/76635/elife-76635-fig2-v4.jpg)\n\n**Figure 2.:** (A) In the Kalman filter (KF) model, the subject makes an observation $y_{t}$ with Gaussian variability at each time step. They combine their prediction $x~_{t}$ with their observation to compute an optimal estimate $x^_{t}$. (B) In the optimal control models, this estimate is then used to compute an optimal action $u_{t}$ using the linear quadratic regulator (LQR). The optimal action can be based on the task goal only or (C) bounded by internal costs, which, for example, penalize large movements. (D) Finally, the subject may act rationally using optimal estimation and control, but may use a subjective internal model of stimulus dynamics that differs from the true generative model of the task. These four different models are illustrated with an example stimulus and tracking trajectory (left subplots) and corresponding cross-correlograms (CCG, right subplots; see Mulligan et al., 2013 and \u2018Cross-correlograms\u2019).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76635/elife-76635-fig2-figsupp1-v4.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The Pareto efficiency plot visualizes the trade-off between two costs contributing to the cost function. The cost function is composed of two terms: state costs $xQx^{T}$ and action costs $uu^{T}$, whose importance is balanced by the control cost parameter c. In a simulation, we computed these two terms separately for different values of c (see color bar) and plot them against each other. We did this for two levels each of action variability ($\\sigma_{m}$) and perceptual uncertainty (\u03c3). First, there is a trade-off between tracking the target (state costs) and expending control effort (action costs): the better you track the target, the more action costs you have to tolerate. Second, the tracking performance depends on the values of the other two parameters: For a specific level of action variability $\\sigma_{m}$ and perceptual uncertainty \u03c3, there is a minimum level of state costs incurred, which cannot be alleviated by decreasing action costs via c.\n\nSecond, the optimal actor model maintains a representation of its own response, that is, the position of the mouse cursor in addition to the target\u2019s position: the state space is now two-dimensional. This allows us, in addition to the sensory uncertainty about the target, to model sensory uncertainty about the position of the cursor $\\sigma_{p}$ (Figure 2B). It is now possible to explicitly model a behavioral goal different from optimal sensory inference, as in the case of the KF model. The behavioral goal is encapsulated in the cost function and for the optimal actor the cost function is fully determined by the task goal intended by the researcher, that is, the tracking of the target. Therefore, the cost function does not contain any free parameters in the optimal actor model. Different from the KF model that only carries out estimation, the optimal actor model generates a sequences of actions with their associated action variability $\\sigma_{m}$. The optimal behavior of the model is now to move the cursor as closely as possible toward the estimated position of the target.\n\nThird, the bounded actor model is based on the optimal actor model by also using a state representation involving the target and its own response as well as uncertain sensory observations of both these state variables. We use the term \"bounded actor\" as it is customary in parts of the cognitive science literature, where, according to Herbert Simon's definition (Simon, 1955), bounded rationality, which is related to the concept of resource-rationality, takes the limitations on cognitive capacity into a account. It is also a control model so that sequential actions are generated. The difference lies in the cost function, which now can additionally accommodate internal behavioral costs c (Figure 2C) that may penalize, for example, large actions and thus result in a larger lag between the response and the target. The control cost parameter c therefore can implement a trade-off between tracking the target and expending effort (see Figure 2\u2014figure supplement 1).\n\nFinally, the subjective actor is a version of the bounded actor but now bases its decisions on an internal model of the stimulus dynamics that may differ from the true generative model employed by the experimenter. The causes for differences in the internal model may be sensory, perceptual, cognitive, or stemming from constraints on planning. For example, in an experimental design with a target moving according to a random walk on position (Bonnen et al., 2015) with a true standard deviation $\\sigma_{rw}$, the subject could instead assume that the target follows a random walk on position with standard deviation $\\sigma_{s}$ and an additional random walk on the velocity with standard deviation $\\sigma_{v}$. These subjective assumptions about the target dynamics can, for example, lead the subjective actor to overshoot the target, for which they then have to correct (Figure 2D). For the subjective actor, the state space is three-dimensional because it contains the target\u2019s velocity in addition to the target and response positions (see Appendix 2). One could also formulate a version of any of the other models to include subjective beliefs. However, the subjective actor model is a generalization that includes all of these possible models. Accordingly, if the subjective beliefs played an important role but the costs or variability did not, we would infer the relevant parameters to have a value close to zero.\n\n### Bayesian inverse optimal control\n\nThe normative models described in the previous section treat the problem from the subject\u2019s point of view. That is, they describe how optimal actors with different internal models and different goals as encapsulated by the cost function should behave in a continuous psychophysics task. The above normative models may give rise to different sequences of actions, which are the optimal solutions given the respective models with their associated parameters and computational goals. From the subject\u2019s perspective, the true state of the experiment $x_{t}$ is only indirectly observed via the uncertain sensory observation $y_{t}$ (see Figure 1D). From the point of view of a researcher, the true state of the experiment is observed because it is under control of the experiment, for example, using a computer that presents the target and mouse position. The computational goal for the researcher is to estimate parameters \u03b8 that describe the perceptual, cognitive, and motor processes of the subject for each model, given observed trajectories $x_{1:T}$ (Figure 1F). In the case of continuous psychophysics, these parameters include the perceptual uncertainty about the target \u03c3 and about one\u2019s own cursor position $\\sigma_{p}$, the control cost c, and the action variability $\\sigma_{m}$, as well as parameters that describe how the subject\u2019s internal model differs from the true generative model of the experiment employed by the researcher. These properties are not directly observed and can only be inferred from the subject\u2019s behavior. Importantly, in the framework presented here, we subsequently need to carry out model comparison across the considered models potentially describing the subject as we do not assume to know the model describing the subject\u2019s internal beliefs, costs, and model a priori.\n\nTo compute the posterior distribution according to Bayes\u2019 theorem $p(\\theta|x_{1:T})\u221dp(x_{1:T}|\\theta)p(\\theta)$, we need the likelihood $p(x_{1:T}|\\theta)$, which we can derive using the probabilistic graphical model from the researcher\u2019s point of view (Figure 1F). The graph\u2019s structure is based on that describing the subject\u2019s point of view. However, because different variables are observed, the decoupling of the perceptual and control processes no longer holds and we need to marginalize out the latent internal observations of the subject: $p(x_{1:T}|\\theta)=\\int(x_{1:T},y_{1:T}|\\theta)dy_{1:T}$. The section \u2018Likelihood function\u2019 describes how to do this efficiently. We compute posterior distributions using probabilistic programming and Bayesian inference (see section \u2018Bayesian inference\u2019). In the following, we show empirically through simulations involving synthetic data that the models\u2019 parameters can indeed be recovered with Bayesian inverse optimal control.\n\n### Simulation results\n\nTo establish that the inference algorithm can recover the model parameters from ground truth data, we generated 200 sets of parameters from uniform distributions resulting in realistic tracking data (see Appendix 3, \u2018Parameter recovery\u2019 for details). For each set of parameters, we simulated datasets consisting of 10, 25, and 50 trials (corresponding to 2, 5, and 10 min) from the subjective actor model. Figure 3A shows one example posterior distribution. Average posterior means and credible intervals relative to the true value of the parameter are shown in Figure 3B. With only 2 min of tracking, the 95% posterior credible intervals of the perceptual uncertainty \u03c3 are [0.8, 1.3] relative to the true value on average. This means that the tracking data of an experiment lasting 2 min is sufficient to obtain posterior distributions over model parameters for which 95% of probability is within a range of 20% underestimation and 30% overestimation of the true values. As a comparison, we consider the simulations for estimating the width of a psychometric function in classical psychophysical tasks conducted by Sch\u00fctt et al., 2015. With 800 forced-choice trials (corresponding to roughly 20 min), the 95% posterior credible intervals are within [0.6, 1.6] relative to the true value on average. This suggests a temporal efficiency gain for continuous psychophysics of at least a factor of 10. These simulation results are in accordance with the empirical results of Bonnen et al., 2015, who had shown that the tracking task yields stable but biased estimates of perceptual uncertainty in under 2 min of data collection.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/76635/elife-76635-fig3-v4.jpg)\n\n**Figure 3.:** (A) Pairwise joint posterior distributions (0.5, 0.9, and 0.99 highest density intervals) inferred from simulated data from the subjective actor with parameters representative of real tracking data ($c=0.5$, $\\sigma=6.0$, $\\sigma_{p}=3.0$, $\\sigma_{m}=0.5$, $\\sigma_{s}=0.8$, and $\\sigma_{v}=0.4$). The pink dots mark the true value used to simulate the data, while the black dots mark the posterior mode. (B) Average posterior means and average 95% credible intervals relative to the true value for different numbers of trials (200 repetitions each). (C) Model recovery analysis. Inferring perceptual uncertainty ($\\sigma^/\\sigma$, posterior mean relative to the true value) with each of the four models from data simulated from the bounded actor model and subjective actor model, respectively.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76635/elife-76635-fig3-figsupp1-v4.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Model comparison using widely applicable information criterion (WAIC) between different models fit to data simulated from the bounded actor or subjective actor model. Error bars indicate 95% CIs across 20 simulated datasets.\n\nBehavior in a task with an interplay of perception and action such as a tracking task contains additional sources of variability and bias beyond sensory influences: repeated actions with the same goal are variable and the cost of actions may influence behavior. We model these factors as action variability $\\sigma_{m}$ and control cost c, respectively, in the bounded actor model. A model without these factors needs to attribute all the experimentally measured behavioral biases and variability to perceptual factors, even when they are potentially caused by additional cognitive and motor processes. We substantiate this theoretical argument via simulations. We simulated 20 datasets with different values for c and $\\sigma_{m}$ sampled from uniform ranges from the bounded actor model and the subjective actor model. Then, we fit each of the four different models presented in Figure 2 to the tracking data and computed posterior mean perceptual uncertainties. The results are shown in Figure 3C. The posterior means of \u03c3 from the bounded actor and subjective actor scatter around the true value, with the model used to simulate the data being the most accurate for estimating \u03c3. The other two models (KF and optimal actor), which do not contain intrinsic behavioral costs, both overestimate \u03c3. This overestimation is worse when the model does also not account for action variability (KF). Furthermore, Bayesian model comparison confirms that the model used to simulate the data is also the model with the highest predictive accuracy in all cases (Figure 3\u2014figure supplement 1).\n\n### Continuous psychophysics\n\nWe now show that the ability of the optimal control models to account for control costs and action variability results in more accurate estimates of perceptual uncertainty in a target-tracking task that are in closer agreement to the values obtained through an equivalent two-interval forced-choice (2IFC) task. We reanalyze data from three subjects in two previously published experiments (Bonnen et al., 2015, Appendix 4, \u2018Continuous psychophysics\u2019 for details): a position discrimination and a position-tracking task. Both experiments employed the same visual stimuli: Gaussian blobs with six different widths within white noise backgrounds were used to manipulate the stimulus contrast (see Figure 4A). In the 2IFC discrimination task, the psychophysical measurements of perceptual uncertainty increased with decreasing contrast (Figure 4A, green lines). In the tracking experiment, the same visual stimuli moved on a Gaussian random walk with a fixed standard deviation and subjects tracked the target with a small red mouse cursor.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/76635/elife-76635-fig4-v4.jpg)\n\n**Figure 4.:** (A) Perceptual uncertainty (\u03c3) parameter estimates (posterior means) for the two-interval forced-choice (2IFC) task and the tracking task (Kalman filter [KF] and linear quadratic Gaussian [LQG] models) in the six blob width conditions (Bonnen et al., 2015). The shaded area represents 95% posterior credible intervals. (B) Posterior distributions for action cost ($c$) and action variability ($\\sigma_{m}$). (C) Posterior distributions for subjective stimulus dynamics parameters (position: $\\sigma_{s}$, velocity: $\\sigma_{v}$). The true values of the target\u2019s random walk are marked by a green point. (D) Cross-correlograms (CCGs) of the empirical data and both models for all three subjects. (E) Model comparison. The difference in widely applicable information criterion (WAIC) w.r.t. the best model is shown with error bars representing WAIC standard error. Models without control cost (KF and optimal) fare worst, while the subjective model has the highest predictive accuracy.\n\nWe fit all four models presented in Figure 2 to the data of the tracking experiment. To a first approximation, it is reasonable to assume that action variability, perceptual uncertainty about the mouse position, and control costs are independent of the target blob width, so that these parameters are shared across the different contrast conditions. The perceptual uncertainty \u03c3 should be different across contrasts, so we inferred individual parameters \u03c3 per condition. We assume ideal temporal integration over individual frames, including for the reanalysis of the KF model (see Appendix 4). We focus on the KF and the subjective actor in the following.\n\nThe posterior means of estimated perceptual uncertainty in both models were highly correlated with the classical psychophysical measurements (r > 0.88 for both models and all subjects). However, the parameters from the subjective actor model are smaller in magnitude than KF\u2019s in all three subjects and all but one blob width condition (Figure 4A). The reason for this is that the KF attributes all variability to perceptual uncertainty, while the other models explicitly include cognitive and motor influences (see section \u2018Simulation results\u2019). The average factor between the posterior mean perceptual uncertainty in the continuous task and the 2IFC task in the five higher contrast conditions is 2.39 for the subjective actor, while it is 3.46 for the KF. Only in the lowest contrast condition, it increases to 4.40 and 5.87, respectively. Thus, accounting for action variability and control effort in our model leads to estimates of perceptual uncertainty closer to those obtained with the classical 2IFC psychophysics task. Note that a deviation between the two psychophysical tasks should not be surprising based on previous research comparing the thresholds obtained with different traditional paradigms, as we further discuss below.\n\nImportantly, in addition to the perceptual uncertainty parameter, we also obtain posterior distributions over the other model parameters (Figure 4B). The three subjects differ in how variable their actions are ($\\sigma_{m}$) and how much they subjectively penalize control effort (c). Additionally, the subjective actor model infers subjects\u2019 implicit assumptions about how the target blob moved. The model estimates that two of the three subjects assume a velocity component $\\sigma_{v}$ to the target\u2019s dynamics, although the target\u2019s true motion according to the experimenter\u2019s generative model does not contain such a motion component, while in the third participant this estimated velocity component is close to zero. Similarly, the model also infers the subjectively perceived randomness of the random walk, that is, the standard deviation $\\sigma_{s}$ (Figure 4C), for each subject, which can be smaller or larger than the true standard deviation used in generating the stimulus.\n\nAs an important test, previous research has proposed comparing the autocorrelation structure of the tracking data with that of the model\u2019s prediction (Bonnen et al., 2015; Kn\u00f6ll et al., 2018; Huk et al., 2018). We simulated data from both the KF and the subjective actor (20 trials, using the posterior mean parameter estimates) and compared it to the empirical data. To this end, we computed cross-correlograms (CCGs, i.e., the cross-correlation between the velocities of the target and the response, see section \u2018Cross-correlograms\u2019), for each trial of the real data and simulated data from both models (Figure 4C). Indeed, the subjective actor captures more of the autocorrelation structure of the tracking data, quantified by the correlation between the CCGs of the model and those of the data, which was 0.61 for the KF and 0.86 for the subjective actor.\n\nTo quantitatively compare the models, we employ Bayesian model comparison using the WAIC (Watanabe and Opper, 2010, see section \u2018Model comparison\u2019). WAIC is computed from posterior samples and estimates the out-of-sample predictive accuracy of a model, thereby taking into account that models with more parameters are more expressive. Overwhelming evidence for the subjective actor model is provided by Akaike weights larger than 0.98 in all three subjects, with the weight for the KF model being equal to 0 within floating point precision. This means that the behavioral data was overwhelmingly more likely under the subjective actor than the KF model, even after taking the wider expressivity of the model into account. Such strong evidence in favor of one of the models is the consequence of the large number of data samples obtained in continuous psychophysics paradigms.\n\n### Application to other datasets\n\nWe furthermore applied all four models to data from an additional experiment in which subjects tracked a target with their finger using a motion tracking device. Experiment 2 in the study by Bonnen et al., 2017 involved five conditions with different standard deviations for the target\u2019s random walk. These five conditions were presented in separate blocks (see Appendix 4, \u2018Motion tracking\u2019). Comparisons of CCGs for one subject are shown in Figure 5A (see Figure 5\u2014figure supplement 1 for all subjects). Qualitatively, the subjective actor captures the cross-correlation structure of the data better than the other models. To quantitatively evaluate the model fits, we again used WAIC (Figure 5B). In two of the three subjects, the subjective actor performs best, while in one subject the bounded actor with accurate stimulus model accounts better for the data. We also performed a cross-validation analysis by fitting the models to four of the conditions and evaluating it in the remaining condition. Our reasoning was that the quality of different models in capturing participants\u2019 behavior can be quantified by measuring the likelihood of parameters across conditions, that is, by cross-validation, and in the consistency of estimated parameters, that is, their respective variance. The cross-validation analysis provides additional support for the subjective model since it gives more consistent estimates of perceptual uncertainty and has higher log likelihood than the other models (Appendix 5\u2014figure 1). Again, we can also inspect and interpret the other model parameters such as control costs, action variability, and subjective belief about target dynamics (Figure 5\u2014figure supplement 2). Similarly, when applied to another experiment, in which one human participant, two monkeys, and a marmoset tracked optic flow fields with their gaze (Kn\u00f6ll et al., 2018), model selection favored the subjective actor (Appendix 5\u2014figure 2).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/76635/elife-76635-fig5-v4.jpg)\n\n**Figure 5.:** (A) Average cross-correlograms (CCGs) for S1 from Bonnen et al., 2017 and three models in different target random walk conditions. For the other two subjects, see Figure 3. (B) Difference in widely applicable information criterion (WAIC) w.r.t. best model.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76635/elife-76635-fig5-figsupp1-v4.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) CCGs as in Figure 5 for all three subjects separately based on the data in experiment 2 from Bonnen et al., 2017.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76635/elife-76635-fig5-figsupp2-v4.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Posterior distributions for action cost (c) and action variability ($\\sigma_{m}$). (B) Posterior distributions for subjective stimulus dynamics parameters (position: $\\sigma_{s}$, velocity: $\\sigma_{v}$).\n\n## Discussion\n\nWe introduce an analysis method for continuous psychophysics experiments (Bonnen et al., 2015; Kn\u00f6ll et al., 2018; Bonnen et al., 2017; Huk et al., 2018) that allows estimating subjects\u2019 perceptual uncertainty, the quantity of interest in the analysis of traditional psychophysics experiments with SDT. We validated the method on synthetic data and demonstrated its feasibility for actions involving human and nonhuman primate participants\u2019 tracking with a computer mouse (Bonnen et al., 2015), tracking by pointing a finger (Bonnen et al., 2017), and tracking using gaze (Kn\u00f6ll et al., 2018).\n\nImportantly, we applied our method to experimental data from a manual tracking task, which were collected together with equivalent stimuli in a 2IFC paradigm for the purpose of empirical validation (Bonnen et al., 2015). The perceptual uncertainties inferred using inverse optimal control were in better agreement with the 2IFC measurements than those inferred using the previously proposed KF. In the lowest contrast conditions, all models we considered show a large and systematic deviation in the estimated perceptual uncertainty compared to the equivalent 2IFC task. Note that when considering synthetic data we did not see such a discrepancy. Thus, the observed bias points toward additional mechanisms such as a computational cost or computational uncertainty that are not captured by the current models at very low contrast. One reason for this could be that the assumption of constant behavioral costs across different contrast conditions might not hold at very low contrasts because subjects might simply give up tracking the target although they can still perceive its location. Another possible explanation is that the visual system is known to integrate visual signals over longer times at lower contrasts (Dean and Tolhurst, 1986; Bair and Movshon, 2004), which could affect not only sensitivity in a nonlinear fashion but could also lead to nonlinear control actions extending across a longer time horizon. Further research will be required to isolate the specific reasons. The analysis methods presented in this study are well suited to investigate these questions systematically because they allow modeling these assumptions explicitly and quantifying parameters describing subjects\u2019 behavior.\n\nBecause subjects\u2019 behavior is conceptualized as optimal control under uncertainty (\u00c5str\u00f6m, 1965; Kaelbling et al., 1998; Anderson and Moore, 2007; Hoppe and Rothkopf, 2019), the optimal actor model additionally contains action variability and a cost function encapsulating the behavioral goal of tracking the target. The present analysis method probabilistically inverts this model similarly to approaches in inverse reinforcement learning (Ng and Russell, 2000; Ziebart et al., 2008; Rothkopf and Dimitrakakis, 2011) and inverse optimal control (Chen and Ziebart, 2015; Herman et al., 2016; Schmitt et al., 2017). The inferred action variability can be attributed to motor variability (Faisal et al., 2008) but also to other cognitive sources, including decision variability (Gold and Shadlen, 2007). We extended this model to a bounded actor model in the spirit of rational analysis (Simon, 1955; Anderson, 1991; Gershman et al., 2015) by including subjective costs for carrying out tracking actions. These behavioral costs correspond to intrinsic, subjective effort costs, which may include biomechanical costs (di Prampero, 1981), as well as cognitive effort (Shenhav et al., 2017), trading off with the subject\u2019s behavioral goal of tracking the target.\n\nThe model was furthermore extended to allow for the possibility that subjects may act upon beliefs about the dynamics of the target stimuli that differ from the true dynamics employed by the experimenter. Such a situation may arise due to perceptual biases in the observation of the target\u2019s dynamics. Model selection using WAIC (Watanabe and Opper, 2010) favored this bounded actor with subjective beliefs about stimulus dynamics in all four experiments involving human and monkey subjects with a single exception, in which the bounded actor model better accounted for the behavioral data. Thus, we found overwhelming evidence that subjects\u2019 behavior in the continuous psychophysics paradigm was better explained by a model that includes action variability and internal costs for actions increasing with the magnitude of the response.\n\nOne possible criticism of continuous psychophysics is that it introduces additional unmeasured factors such as action variability, intrinsic costs, and subjective internal models. While classical psychophysical paradigms take great care to minimize the influence of these factors by careful experimental design, they can nevertheless still be present, for example, as serial dependencies (Green, 1964; Fischer and Whitney, 2014; Fr\u00fcnd et al., 2014). Similarly, estimates of perceptual uncertainty often differ between classical psychophysical tasks when compared directly. For example, Yeshurun et al., 2008, reviewed previous psychophysical studies and conducted experiments to empirically test the theoretical predictions of SDT between Yes-No and 2IFC tasks. They found a broad range of deviations between the empirically measured perceptual uncertainty and the theoretical value predicted by SDT. Similarly, there are differences between 2AFC tasks, in which two stimuli are separated spatially, and their equivalent 2IFC tasks, in which the stimuli are separated in time (J\u00e4kel and Wichmann, 2006). While the former task engages spatial attention, the latter engages memory. These factors are typically also not accounted for in SDT-based models. Thus, substantial empirical evidence suggests that factors often not modeled by SDT, such as attention, memory, intrinsic costs, beliefs of the subject differing from the true task statistics, and learning, nevertheless very often influence the behavior in psychophysical experiments. This applies to classical trial-based tasks as well as continuous tasks. Crucially, the framework we employ here allows modeling and inferring some of these additional cognitive factors responsible for some of the observed deviations.\n\nOn a conceptual level, the results of this study underscore the fact that psychophysical methods, together with their analysis methods, always imply a generative model of behavior (Green and Swets, 1966; Swets, 1986; Wixted, 2020). Nevertheless, different models can be used in the analysis, that is, models that may or may not be aligned with the actual generative model of the experiment as designed by the researcher or with the internal model that the subject is implicitly using. For example, while classical SDT assumes independence between trials and an experiment may be designed in that way, the subject may assume temporal dependencies between trials. The analysis framework we use here accounts for both these possibilities. A participant may engage in an experiment with unknown subjective costs and false beliefs, as specified in the subjective actor model. Similarly, this analysis framework also allows for the researcher to consider multiple alternative models of behavior and quantify both the uncertainty over individual models\u2019 parameters as well as uncertainty over models through Bayesian model comparison.\n\nThe limitations of the current method are mainly due to the limitations of the LQG framework. For instance, the assumption that perceptual uncertainty is constant across the whole range of the stimulus domain is adequate for position stimuli, but would not be correct for stimuli that behave according to Weber\u2019s law (Weber, 1834). This could be addressed using an extension of the LQG to signal-dependent uncertainty (Todorov, 2005) to which our inverse optimal control method can be adapted, as we have recently shown (Schultheis et al., 2021). Similarly, the assumption of linear dynamics can be overcome using generalizations of the LQG framework (Todorov and Li, 2005) or policies parameterized with neural networks (Kwon et al., 2020). Finally, assuming independent noise across time steps at the experimental sampling rate of (60 Hz) is certainly a simplifying assumption. Nevertheless, the assumption of independent noise across time steps is very common both in models of perceptual inference as well as in models of motor control, and there is to our knowledge no computationally straightforward way around it in the LQG framework.\n\nTaken together, the current analysis framework opens up the prospect of a wider adoption of continuous psychophysics paradigms in psychology, cognitive science, and neuroscience as it alleviates the necessity of hundreds of repetitive trials with binary forced-choice responses in expert observers, recovering perceptual uncertainties closer to classical paradigms than previous analysis methods. Additionally, it extracts meaningful psychological quantities capturing behavioral variability, effort costs, and subjective perceptual beliefs and provides further evidence for the importance of modeling the behavioral goal and subjective costs in experiments seemingly only investigating perception as perception and action are inseparably intertwined.\n\n## Materials and methods\n\n### LQG control derivations\n\nFor the LQG control problem as defined in section \u2018Computational models of psychophysical tasks,\u2019 the separation principle between estimation and control holds (Davis and Vinter, 1985). This means that the optimal solutions for the estimator $K$ and controller $L$ can be computed independent from one another. Note that this does not mean that actions are independent of perception because $u_{t}$ depends on $x^_{t}$.\n\nThe optimal estimator is the KF (Kalman, 1960)\n\n$$\nx^_{t}=Ax^_{t\u22121}+Bu_{t\u22121}+K_{t}(y_{t}\u2212C(Ax^_{t\u22121}+Bu_{t\u22121})),\n$$\n\nwhere the Kalman gain $K_{t}=P_{t}C^{T}(CP_{t}C^{T}+WW^{T})^{\u22121}$ is computed using a discrete-time Riccati equation\n\n$$\nP_{t+1}=A(P_{t}\u2212P_{t}C^{T}(CP_{t}C^{T}+WW^{T})^{\u22121}CP_{t})A^{T}+VV^{T}\n$$\n\ninitialized with $x^_{0}=0$ and $P_{0}=VV^{T}$. Note that our analyses were insensitive to the initialization because state uncertainty and Kalman gains converged after a few time steps, while trials were about 1000 time steps long, which led to a negligible influence of the initial conditions. The optimal controller\n\n$$\nu_{t}=\u2212L_{t}x^_{t}\n$$\n\nis the LQR $L_{t}=(B^{T}\u2062S_{t+1}\u2062B+R)^{-1}\u2062B^{T}\u2062S_{t+1}\u2062A$ and is also computed with a discrete-time Riccati equation\n\n$$\nS_{t}=A^{T}(S_{t+1}\u2212S_{t+1}B(B^{T}S_{t+1}B+R)^{\u22121}B^{T}S_{t+1})A+Q\n$$\n\ninitialized with $S_{T}=Q$. In principle, all matrices of the dynamical system and thus also $K$ and $L$ could be time-dependent, but since this is not the case in the models considered in this work, we leave the time indices out for notational simplicity. Due to this time invariance of the dynamical system, the gain matrices $K_{t}$ and $L_{t}$ typically converge after a few time steps. This allows us to use the converged versions, which we call $K$ and $L$ in our inference method.\n\n### Cross-correlograms\n\nAs a summary statistic of the tracking data, we use CCGs as defined by Mulligan et al., 2013. The CCG at time lag $\\tau$ is the correlation between the velocities of the target $v_{t}^{(target)}$ at time $t$ and the velocity of the response $v_{t\u2212\\tau}^{(response)}$ at time $(t\u2212\\tau)$:\n\n$$\n\u03c1(\\tau)=\\frac{cov(v_{t}^{(target)},v_{t\u2212\\tau}^{(response)})}{s(v_{t}^{(target)})\u22c5s(v_{t\u2212\\tau}^{(response)})},\n$$\n\nwhere $cov\u2062(x,y)$ and $s\u2062(x)$ are the covariance and standard deviation across all time steps and trials. The velocities are estimated from position data via finite differences.\n\n### Likelihood function\n\nDue to the conditional independence assumption implied by the graphical model from the researcher\u2019s point of view (Figure 1F), the next state $x_{t+1}$ depends on the whole history of the subject\u2019s noisy observations $y_{1:t}$ and internal estimates $x^_{1:t}$. Since, for the researcher, the subject\u2019s observations $y_{t}$ are latent variables, the Markov property between the $x_{t}$ no longer holds and each $x_{t}$ depends on all previous $x_{1:t\u22121}$, that is, $p(x_{1:T}|\\theta)=\\prodt=1T\u22121p_{\\theta}(x_{t}|x_{1:t\u22121})$. We can, however, find a more manageable representation of the dynamical system by describing how the $x_{t}$ and $x^_{t}$ evolve jointly (van den Berg et al., 2011). This allows us to write down a joint dynamical system of $x_{t}$ and $x^_{t}$, which only depends on the previous time step:\n\n$$\nz_{t}=[x_{t}x^_{t}]=Fz_{t\u22121}+G\\omega_{t},\\omega_{t}\u223cN(0,I).\n$$\n\nFor the derivation of this joint dynamical system and the definitions of F and G, see Appendix 1, \u2018Derivation.\u2019 The derivation is extended to account for differences between the true generative model and the agent\u2019s subjective internal model in Appendix 1, \u2018Extension to subjective internal models\u2019.\n\nThis allows us to recursively compute the likelihood function in the following way. If we know the distribution $p(z_{t}|x_{1:t\u22121})=N(\\mu_{t|t\u22121},\u03a3_{t|t\u22121})$, we can compute the joint distribution $p(z_{t},z_{t+1}|x_{1:t\u22121})$ using the dynamical system from (10). Since this distribution is a multivariate Gaussian, we can condition on $x_{t}$ and marginalize out the $x^_{t}$ and $x^_{t+1}$ to arrive at $p_{\\theta}\u2062(x_{t+1}|x_{1:t})$. For details, see Appendix 1. The computation of the likelihood function involves looping over a possibly large number of time steps. To make computing gradients w.r.t. the parameters computationally tractable, we use the Python automatic differentiation library jax (Frostig et al., 2018). Our implementation is available at https://github.com/RothkopfLab/lqg; Straub, 2022.\n\n### Bayesian inference\n\nEquipped with the likelihood function derived above, we can use Bayes\u2019 theorem to compute the posterior distribution for the parameters of interest:\n\n$$\np(\\theta|x_{1:T})\u221dp(x_{1:T}|\\theta)p(\\theta).\n$$\n\nSince most parameters (except the internal costs c) are interpretable in degrees of visual angle, prior distributions $p(\\theta)$ can be chosen in a reasonable range depending on the experimental setup. We used half-Cauchy priors with the scale parameter \u03b3 set to 50 for \u03c3, 25 for $\\sigma_{p}$, 0.5 for $\\sigma_{m}$, and 1 for c. We verified that the prior distributions lead to reasonable tracking data using prior predictive checks with the CCGs of the tracking data.\n\nSamples from the posterior were drawn using NUTS (Hoffman and Gelman, 2014) as implemented in the probabilistic programming package numpyro (Phan et al., 2019).\n\n### Model comparison\n\nWe compare models using the WAIC (Watanabe and Opper, 2010), which approximates the expected log pointwise predictive density. Importantly, unlike AIC it does not make parametric assumptions about the form of the posterior distribution. It can be computed using samples from the posterior distribution (see Vehtari et al., 2017, for a detailed explanation):\n\n$$\nWAIC=\\sumi=1Nlog\u2061(\\frac{1}{S}\\sums=1Sp(x_{i}|\\theta_{s}))+\\sumi=1NV_{s=1}^{S}(log\u2061p(x_{i}|\\theta_{s})),\n$$\n\nwhere $V_{s=1}^{S}$ is the variance over samples from the posterior. Since WAIC requires individual data points $x_{i}$ to be independent given the parameters \u03b8, we define the terms $p(x_{i}|\\theta_{s})$ as the likelihood of a trial $i$ given posterior sample $s$, which is computed as explained in section \u2018Likelihood function.\u2019 We use the implementation from the Python package arviz (Kumar et al., 2019).\n\nWhen comparing multiple models, the WAIC values can be turned into Akaike weights summing to 1\n\n$$\nw_{i}=\\frac{exp\u2061\u22120.5\u0394_{i}}{\\sumjexp\u2061\u22120.5\u0394_{j}},\n$$\n\nwhere $\u0394_{i}$ is the difference between the current model\u2019s and the best model\u2019s WAIC. The Akaike weights can be interpreted as the relative likelihood of each model.\n\nNote that the assumption of independent noise across time steps might lead to WAIC values that are larger than those obtained under a more realistic noise model involving correlations across time. However, this should not necessarily affect the ranking between models in a systematic way, that is, favoring individual models disproportionately more than others.\n",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "748c0d6f-8c7b-4dec-a190-703463d8ac9d",
+      "submission_id": "19000ad8-02ce-4a6b-8221-3db2e9127c20",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- J\u00f6rn Diedrichsen, https://ror.org/02grkyz14 Western University Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76635.sa0](https://doi.org/10.7554/eLife.76635.sa0)\n\nThis important article presents a Bayesian model framework for estimating individual perceptual uncertainty from continuous tracking data \u2013 a powerful and exciting alternative to traditional binary-choice psychophysical experiments. The model takes into account motor variability, action cost, and possible misestimation of the generative dynamics. The analyses provide compelling evidence for the framework. The article is clearly written and provides a didactic resource for students wishing to implement similar models on continuous action data.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- J\u00f6rn Diedrichsen, https://ror.org/02grkyz14 Western University Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76635.sa1](https://doi.org/10.7554/eLife.76635.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Putting perception into action: Inverse optimal control for continuous psychophysics\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including J\u00f6rn Diedrichsen as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Joshua Gold as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission. Overall, all reviewers thought that the paper has the potential to become a very valuable contribution to the field. The revisions focus mainly on the clarity of the submission. The extensive original reviews are attached below and should be responded to in detail.\n\nEssential revisions:\n\n1) The assumption of independence of motor noise across observations (reviewer #1, comment #1) is likely problematic in terms of obtaining valid WAIC values \u2013 and this problem should be addressed.\n\n2) The technical exposition in the introduction is sometimes confusing and the clarity of the explanations should be improved. The specific comments provide a detailed list of constructive suggestions here.\n\n3) The discussion of the previous literature is not always as balanced and would be ideal (see reviewer #2)\n\n4) For a tools and resource paper, I would hold that the associated code and documentation should be visible to the reviewers at the point of submission, so the quality of the online resource can be reviewed together with the paper. So I would ask you to provide a working link with the revision of the paper.\n\nReviewer #1: All comments in public review.\n\nReviewer #2 (Recommendations for the authors):\n\nSpecific Remarks:\n\n\u2013 There are passages that read like poorly grounded indictments of well-established literature. Supplementary Section A, which functions as support for claims in the main text and the figure 3 caption, references a study by Yeshurun et al., (2008). The authors of the present paper write that Yeshurun et al., 'investigated the validity of the theoretical result (Green and Swets, 1966), that the forced-choice sensitivity d'FC differs from the sensitivity obtained through an equivalent Yes-No task d'YN by a factor of \u221a2, i.e. d'FC = \u221a2d'YN. Apart from running a serious of experiments targeted at evaluating the validity of this theoretical result, the authors reported the actual values of this factor based on extensive literature review involving numerous studies investigating perceptual sensitivities across sensory modalities. Indeed, the literature review collected a broad range of deviations from the theoretical value.'\n\nThe authors then go on to specifically reference two of the papers cited by Yeshurun (2008). One of these papers (Jesteadt and Bilger, 1974) reported that d-prime estimated with a forced-choice task was better by a factor of 2.1 than performance in an equivalent yes-no task. The other (Markowitz and Swets, 1967) reported d-prime estimated with a forced-choice task was better by only 1.15. These two studies deviated from the predicted 1.4 improvement by factors of 1.5x and 0.8x, respectively.\n\nThe logic of the passage is problematic, and the passage seems only tenuously connected to the aims of the paper. In my view, I think the supplementary passage and the connected threads in the main text are harmful to the paper's messaging and should be removed. Here is why: The theoretical result relating sensitivity in forced-choice and yes-no tasks as reported by Green and Swets (1966) is easy to derive in a few lines and is most certainly valid, presuming that certain assumptions hold. The authors can of course fairly question whether these assumptions hold in certain experiments (as did Yeshurun et al., 2008), but experiments do not, and could not, evaluate the 'validity of this theoretical result'. The theoretical result stands on its own. The authors' writing seems to conflate a lack of empirical variability (e.g. due to measurement error, assumptions not holding) with a lack of theoretical validity. I thought, initially, that this could perhaps be explained away by inattentive writing.\n\nBut the authors' then use the range of deviations aforementioned deviations-the 1.5x deviation reported by Jesteadt and Bliger was on auditory frequency and intensity discrimination; the 0.8x deviation reported by Markowitz and Swets, was on sound detection-to suggest that the observed 1.36x deviations between tracking- and forced-choice-based estimates (from Model 4 fits) are within an established range of deviations in the literature. The relevance of these numbers to the present work is dubious at best. Consider, for example, if some other pair of studies on gustatory sodium discrimination or detection had reported deviations ranging from 0.25x to 8x the theoretically predicted values. Would that somehow be relevant to the interpretation of the current work? I am not sure why the authors thought this a valuable addition to the paper. They seem to be using these studies to suggest that because other studies have deviated from predictions (whatever the causes) that discrepancies in the present study should be thought of as small. It all feels forced. After writing out these notes, I was concerned that perhaps I had been making too much of it. But the next issue has a similar flavor.\n\n\u2013 The manuscript appears both to misleadingly describe findings in Bonnen et al., (2015), and to self-contradict its own assertions regarding those findings. The authors several times write that Bonnen et al.,'s tracking-based estimates of position uncertainty (i.e. position discrimination thresholds) are an order of magnitude (i.e. ~10x) higher than corresponding forced-choice-based estimates. The authors contrast this discrepancy with their own results, saying that they 'infer values that differ by a factor of 1.36 on average'. It is true that the raw estimates of Bonnen et al., reported tracking-based estimates that were ~10x larger. But that was before Bonnen et al., took several obvious factors into account (e.g. the benefit of integrating across 15 frames of each stimulus presentation, the predicted improvement in sensitivity in 'two-look' forced choice tasks). After taking these factors into account (as it is appropriate to do), the ~10x difference between the tracking- and forced-choice-based was reduced to a ~2x difference. In the supplement, the authors acknowledge that Bonnen et al., took these factors into account, but their writing in the abstract, introduction, and discussion (references to order of magnitude differences) reads as if they are unaware. I am unclear about the reasons for this discrepancy, but it should be corrected.\n\nFurther, on page 5, left column the authors report that estimates of perceptual uncertainty of target position from the Kalman Filter model differ from the forced-choice-based estimates by approximately 2x. They write: 'The average factor between the posterior mean perceptual uncertainty in the continuous task and the 2IFC task in the 5 higher contrast conditions is 1.20 for the LQG model, while it is 1.73 for the KF. Only in the lowest contrast condition, it increases to 2.20 and 2.93 arcmin, respectively.'. This difference is in line with the conclusions of Bonnen et al., and does not square with the assertion that tracking-based estimates were off by an order of magnitude (~10x). Given that the current Kalman filter analysis essentially replicates the analysis performed by Bonnen et al., these two assertions (10x differences vs 2x differences) cannot both be correct. Again, in keeping with the first point above, all this seems like a forced attempt to convince the reader that observed deviations are small between the tracking- vs. forced-choice-based estimates of perceptual uncertainty about target position. But it seems unnecessary. Model 4 does a more accurate job of estimating perceptual uncertainty about target position than simpler models (and seems to provide a closer match to forced-choice-based estimates). Let those results stand on their own.\n\n\u2013 For a computational paper, in which the primary contribution is to develop methods for data analysis and parameter estimation, there should be substantially more discussion of which parameters have their values trade off of one another. For example, the authors have taken the trouble visualize a posterior distribution over the parameters (Figure 3A). They should help the reader develop an intuition for why the posterior has the structure that it does. All models other than the Kalman filter model include perceptual uncertainty about target position (\\\u03c3), perceptual uncertainty about cursor position (\\\u03c3_p), and motor variability. All of these quantities affect the reliability with which discrepancies between target and cursor position can be evaluated, and should have similar effects on performance. The figure shows that these parameters trade-off with each other (strong negative correlations in the posterior distributions over the model parameters). The authors should include some discussion of these trade-offs, helping to provide the reader intuition for why these parameters trade-off in the way that they do. Similarly for the positive correlation between motor variability (\\\u03c3_m) and perceptual uncertainty about cursor position.\n\n\u2013 Regarding their analysis of simulated data, the authors report that attempts to infer the value of the target position uncertainty (\\\u03c3) from Model 4 were accurate (Figure 3C). It would be helpful for the authors to describe in more detail the parameters of the simulation. Specifically, in would be useful to explain and provide intuition for how, if the observer had a mistaken belief regarding the drift dynamics, it is possible to accurately infer the value of perceptual uncertainty about target position. A na\u00efve reader might presume that, because there is an infinite number of pairs of position uncertainty (\\\u03c3) and presumed drift variance (\\\u03c3_s) that determine the Kalman gain, that \\\u03c3 could not in fact be accurately estimated if \\\u03c3_s does not equal the true drift parameter (\\\u03c3_rw). Please explain for the reader how this works.\n\nTone\n\nThe current paper describes shortcomings of the Bonnen et al., (2015) data analyses. Many of these shortcomings were explicitly acknowledged by Bonnen et al., It would help the tone and tenor of the manuscript if, when the current authors describe the acknowledged shortcomings, the current authors cite Bonnen et al., (2015).\n\nExamples include:\n\n\u2013 \"A model, which only considers the perceptual side of the task, will therefore tend to overestimate perceptual uncertainty because these additional factors get lumped into perceptual model parameters, as we will show in simulations.\"\n\n\u2013 \"A model without these factors needs to attribute all the experimentally measured behavioral biases and variability to perceptual factors, even when they are potentially caused by additional cognitive and motor processes.\"\n\nThe current paper makes a nice contribution in demonstrating these points quantitatively. But, in places (and in keeping with the flavor of remarks above), the writing seems concerned that readers might not recognize the paper's unique contribution. I think the paper's contribution is clear. And I think that their paper will read better, and leave a better impression, if it looks for ways to portray previous work in a more generous light.\n\nSpecific Comments\n\n\u2013 Experimentor/Participant distinction\n\nThe experimenter has access to the true target position and the true cursor position is available. The experimental participant him/herself has access only to the estimates of target and cursor positions. The article should more explicitly discuss this issue in the main text. Figure 2 and the Supplemental derivations allude to it, but it should be discussed more prominently.\n\n\u2013 Explanation of matrix values.\n\nThe authors should explain why the B=[0 dt]' parameter takes on the particular values that it does. Is the implication that the control action is best understood as a 'rate of change' so that result matrix-multiplying the control action with B is a position? Please explain. The value of the non-zero element of B trades off perfectly with the square root (?or similar?) of the movement cost parameter 'c'. So it would be valuable for the authors to explain why they chose to set B to have the value it does.\n\nTelegraphic mathematical development.\n\nIn the supplement, the mathematics associated with transitioning between Supplemental Equations S16-S18 needs to be expanded. Conditioning the nD Gaussian on x_t and marginalizing out x_hat_t are two separate steps, but the manner in which the passage is written encourages the reader to presume that they are a single step. Too much analytical work is foisted on the reader if he/she wants to carefully follow the derivation along. The derivation is correct (I worked it out myself), but it should be laid out more explicitly. Further, the final expression for the likelihood of the state (x_{t+1}) on time step t+1 should be provided. This likelihood is straightforwardly obtained by marginalizing out the estimate (x^{hat}_{t+1}) of the (2-vector) state, but it would be nice for the reader if the final expression was actually made explicit for the reader.\n\nSubjective model of state dynamics\n\nThe authors should make explicit in equation form the fallacious state dynamics that are assumed by the subjective observer. The authors describe it in words, but equations will prevent any uncertainty that the description may produce. Something like:\n\nposition walk: p_{t+1} = p_t + eps; where eps ~ N(0, \u03c3_{rw})\n\nvelocity walk: v_{t+1} = v_t + eta; where eta ~ N(0, \u03c3_v )\n\nx_{t+1} = p_{t+1} + sum( v_{ 0:(t+1) } ) where the sum goes from 0 to t+1\n\nSubjective model of estimate of velocity\n\nAlso, it is not made completely clear how the subjective observer's fallacious estimate of velocity is computed, how it resides in the model, whether the state is expressed as a 2-vector [ x_t x_p ] or a 3-vector [ x_t x_p v_t ], and whether the estimate of the state is expressed as a two-vector [ xhat_t xhat_p ] or a 3-vector [ xhat_t xhat_p vhat_t ]. An expanded discussion of these issues should be included. The expressions are correct but as they stand, but the mathematical development and discussion of these points are a bit too telegraphic.\n\nTypo in the supplementary equation.\n\nI believe that there is a typo in equation S2 of the supplement where the Ricatti equation is laid out. The term with the inverse currently reads ( C*P*C' )^-1 whereas this term in standard expressions for the Ricatti equation should be ( C*P*C' + W*W' )^-1. This term follows the same form as the inverse term in the expression for the Kalman gain (see the line above) which reflects the total covariance ( prior + observation covariances ).\n\nReviewer #3 (Recommendations for the authors):\n\nThe paper is already in a very polished state. I have only a few comments about clarity and completeness.\n\n\u2013 I found myself getting confused while reading the paper about what parameters were actually involved in each model (e.g. pg 3: \"the KF model has only one parameter: perceptual uncertainty \u03c3\"). My recommendation to the authors is to move equations 1-4 out of the Methods section and into the main text. Personally I would consider this part of the results (ie. \"what are the models we're using\"?) and so I would rather see this presented pedagogically within the main paper. Keep implementation details or other technical issues in the Methods, but present the models themselves in the Results section. Just a recommendation, but that's my 2 cents!\n\n\u2013 This leads to a related note on clarity: it's not entirely clear to me which parameters are being fit in each model. Presumably you're not fitting the C matrix in equation 2? What about B in equation 1? Come to think of it, I'm not sure where the cursor fits in, allowing for uncertainty in cursor position). (Does that become part of the state vector x_t? Please unpack this more clearly so that we can understand what these equations correspond to for each of the models discussed in the paper!\n\n\u2013 \"Our implementation will be made available on github\" -- I want to note that this should be a requirement for acceptance! (i.e., the code should be posted before the paper is accepted).\n\n\u2013 The name \"bounded actor\" seems like a poor one, since there aren't any bounds on the actor. (There are just costs). Figure 2 C refers to it as \"bounded actor with behavioral costs\" -- personally I would keep the \"with behavioral costs\" and drop the \"bounded\".\n\n\u2013 One other point that would be worth making: you could also formulate a \"with subjective belief\" version of any of the simpler models. Even in the simple KF model, you could allow for mismatch between the true dynamics and the subject's belief about the dynamics. I think it's probably ok to leave the model comparisons as is, since obviously it becomes a bit messy if we have to include \"optimal\" and \"subjective\" versions of each of the models, but you should at least mention somewhere in the paper that this can be used to improve the accuracy (in terms of matching observer behavior) for any of the models.\n\n\u2013 Can you say anything about the discrete time assumptions of the model? i.e., how would you expect the model parameters (or the accuracy of the fit) to change if you switched to 120 Hz frame rate or 20 Hz frame rate?\n\n\u2013 Finally, a small note on grammar/usage: the paper frequently uses \"\u2026 , which\u2026\" in cases where \"that\" (with no comma). e.g., in the abstract: \"recover perceptual thresholds, which are one order of magnitude larger compared to equivalent traditional psychophysical experiments\". This makes it sound like you're providing a definition of threshold, rather than describing a property of the recovered thresholds. More correct would be: \"We recover perceptual thresholds that are one order of magnitude larger than \u2026\". I found this issue repeatedly in the text. You could basically look for nearly every occurrence of \", which\" and replace by \"that\".\n",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0201eba6-d916-4fb2-a660-e4af466070ec",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C1",
+      "claim": "Psychophysical methods are a cornerstone of psychology, cognitive science, and neuroscience where they have been used to quantify behavior and its neural correlates for a vast range of mental phenomena.",
+      "claim_type": "EXPLICIT",
+      "source": "Psychophysical methods are a cornerstone of psychology, cognitive science, and neuroscience where they have been used to quantify behavior and its neural correlates for a vast range of mental phenomena.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the field supported by established scientific consensus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "9156b089-3bea-4777-b053-14983b2640ab",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C2",
+      "claim": "The power of psychophysical methods derives from the combination of controlled experiments and rigorous analysis through signal detection theory.",
+      "claim_type": "EXPLICIT",
+      "source": "Their power derives from the combination of controlled experiments and rigorous analysis through signal detection theory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects established understanding in the field of psychophysics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "58945f20-66c5-4c02-8a14-bdc1059d12eb",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C3",
+      "claim": "Traditional psychophysical methods require many tedious trials and preferably highly trained participants.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, they require many tedious trials and preferably highly trained participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations in the manuscript and established knowledge about traditional psychophysics.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "18cac4d4-61e3-468d-9fd4-21a414083760",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C4",
+      "claim": "Continuous psychophysics abandons the rigid trial structure involving binary responses and replaces it with continuous behavioral adjustments to dynamic stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "A recently developed approach, continuous psychophysics, promises to transform the field by abandoning the rigid trial structure involving binary responses and replacing it with continuous behavioral adjustments to dynamic stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach of continuous psychophysics as established in cited literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "26a14631-cb93-4bf8-94c6-c0e42cd93961",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C5",
+      "claim": "Current analysis methods for continuous psychophysics do not account for the additional variability introduced by the motor component of the task.",
+      "claim_type": "EXPLICIT",
+      "source": "However, what has precluded wide adoption of this approach is that current analysis methods do not account for the additional variability introduced by the motor component of the task and therefore recover perceptual thresholds that are larger compared to equivalent traditional psychophysical experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by inference from the literature and the problem statement of the study.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "bd62d050-7ba9-4ff0-a3c8-2ef367d69c5f",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C6",
+      "claim": "Current analysis methods for continuous psychophysics recover perceptual thresholds that are larger compared to equivalent traditional psychophysical experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "However, what has precluded wide adoption of this approach is that current analysis methods do not account for the additional variability introduced by the motor component of the task and therefore recover perceptual thresholds that are larger compared to equivalent traditional psychophysical experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work (Bonnen et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "4fb79dc6-f8e1-45ff-b796-1c0429905025",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C7",
+      "claim": "The computational analysis framework based on Bayesian inverse optimal control recovers perceptual thresholds from continuous psychophysics data.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we introduce a computational analysis framework for continuous psychophysics based on Bayesian inverse optimal control. We show via simulations and previously published data that this not only recovers the perceptual thresholds but additionally estimates subjects' action variability, internal behavioral costs, and subjective beliefs about the experimental stimulus dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through simulations and analysis of published data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "9e78172b-55eb-498b-a4d7-fd4386132735",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C8",
+      "claim": "The Bayesian inverse optimal control framework estimates subjects' action variability.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we introduce a computational analysis framework for continuous psychophysics based on Bayesian inverse optimal control. We show via simulations and previously published data that this not only recovers the perceptual thresholds but additionally estimates subjects' action variability, internal behavioral costs, and subjective beliefs about the experimental stimulus dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the data analysis presented in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "320e0c6b-eb4b-4856-837b-43c71ef1cb83",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C9",
+      "claim": "The Bayesian inverse optimal control framework estimates subjects' internal behavioral costs.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we introduce a computational analysis framework for continuous psychophysics based on Bayesian inverse optimal control. We show via simulations and previously published data that this not only recovers the perceptual thresholds but additionally estimates subjects' action variability, internal behavioral costs, and subjective beliefs about the experimental stimulus dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the data analysis presented in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "48773c28-a123-479e-af8a-855f233949f4",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C10",
+      "claim": "The Bayesian inverse optimal control framework estimates subjects' subjective beliefs about the experimental stimulus dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we introduce a computational analysis framework for continuous psychophysics based on Bayesian inverse optimal control. We show via simulations and previously published data that this not only recovers the perceptual thresholds but additionally estimates subjects' action variability, internal behavioral costs, and subjective beliefs about the experimental stimulus dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the data analysis presented in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "6f03123a-185f-4d1f-a2fa-d8efd076f255",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C11",
+      "claim": "Traditional psychophysical methods are characterized by a succession of hundreds of trials in which stimuli are presented briefly and the subject responds with a binary decision.",
+      "claim_type": "EXPLICIT",
+      "source": "The tasks employed by traditional psychophysics are typically characterized by a succession of hundreds of trials in which stimuli are presented briefly and the subject responds with a binary decision, for example, whether target stimuli at different contrast levels were perceived to be present or absent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes established methodology in psychophysics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "249e8980-636b-47ca-b3b4-5ccb958b8325",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C12",
+      "claim": "Signal detection theory assumes that a sensory signal generates an internal representation corrupted by Gaussian variability.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis of such experimental data using signal detection theory (SDT; Green and Swets, 1966) employs a model that assumes that a sensory signal generates an internal representation corrupted by Gaussian variability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of signal detection theory from cited literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "376d12e6-1d23-4866-a1f9-2fa83a265af4",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C13",
+      "claim": "Signal detection theory assumes that a putative comparison of a stochastic signal with an internal criterion leads to a binary decision.",
+      "claim_type": "EXPLICIT",
+      "source": "A putative comparison of this stochastic signal with an internal criterion leads to a binary decision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of signal detection theory from cited literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "d0c07fd1-08ba-4f7a-a9ea-1c52f73d6a20",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C14",
+      "claim": "Signal detection theory provides psychologically interpretable measures of perceptual uncertainty and of the decision criterion.",
+      "claim_type": "EXPLICIT",
+      "source": "This provides psychologically interpretable measures of perceptual uncertainty and of the decision criterion, for example, for contrast detection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about signal detection theory.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "1a2b7dd7-2192-4af7-a251-2d0997522b22",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C15",
+      "claim": "Collecting data in traditional psychophysical tasks is often tedious.",
+      "claim_type": "EXPLICIT",
+      "source": "One central drawback, however, is that collecting data in such tasks is often tedious, as famously noted already by James, 1890.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a historical citation to James, 1890.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "f8bb5379-88d8-47ce-8f98-94a621754b79",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C16",
+      "claim": "Low engagement levels in untrained subjects result in measurements contaminated by additional variability.",
+      "claim_type": "EXPLICIT",
+      "source": "This leads to participants' engagement levels being low, particularly in untrained subjects, resulting in measurements contaminated by additional variability (Manning et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Manning et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "9aff6c8b-cd31-4b7e-bd5d-71fbdb76b42d",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C17",
+      "claim": "A common solution to low engagement is to rely on few but highly trained observers to achieve consistent measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "A common solution is to rely on few but highly trained observers to achieve consistent measurements (Green and Swets, 1966; J\u00e4kel and Wichmann, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Green and Swets, 1966 and J\u00e4kel and Wichmann, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "e9736b5c-f9dd-45ed-afe8-a94a62a9a92d",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C18",
+      "claim": "Continuous psychophysics requires orders of magnitude less time compared to traditional psychophysical methods.",
+      "claim_type": "EXPLICIT",
+      "source": "This experimental protocol not only requires orders of magnitude less time compared to traditional psychophysical methods, but participants report it to be more natural, making it more suitable for untrained subjects and potentially children and infants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Bonnen et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "6464e23b-d524-4492-b9bc-becd165ee4c9",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C19",
+      "claim": "Participants report continuous psychophysics to be more natural than traditional methods.",
+      "claim_type": "EXPLICIT",
+      "source": "This experimental protocol not only requires orders of magnitude less time compared to traditional psychophysical methods, but participants report it to be more natural, making it more suitable for untrained subjects and potentially children and infants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Bonnen et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "805aa12f-e6eb-4318-b204-43eebd8cbe34",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C20",
+      "claim": "Continuous psychophysics is more suitable for untrained subjects and potentially children and infants.",
+      "claim_type": "EXPLICIT",
+      "source": "This experimental protocol not only requires orders of magnitude less time compared to traditional psychophysical methods, but participants report it to be more natural, making it more suitable for untrained subjects and potentially children and infants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the properties of continuous psychophysics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "25102732-7cb8-4292-b68a-06a1d82d5f14",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C21",
+      "claim": "Bonnen et al., 2015 proposed analyzing continuous psychophysics data with the Kalman filter.",
+      "claim_type": "EXPLICIT",
+      "source": "To obtain measures of perceptual uncertainty from the tracking data, Bonnen et al., 2015, proposed analyzing these data with the Kalman filter (KF; Kalman, 1960), the Bayes-optimal estimator for sequential observations with Gaussian uncertainty.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct citation to Bonnen et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "2233b2eb-6662-4ecc-80c6-c1b664abc9f1",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C22",
+      "claim": "The Kalman filter is the Bayes-optimal estimator for sequential observations with Gaussian uncertainty.",
+      "claim_type": "EXPLICIT",
+      "source": "To obtain measures of perceptual uncertainty from the tracking data, Bonnen et al., 2015, proposed analyzing these data with the Kalman filter (KF; Kalman, 1960), the Bayes-optimal estimator for sequential observations with Gaussian uncertainty.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the Kalman filter, supported by citation to Kalman, 1960.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "46dbc2ed-6c62-4f0c-a251-96a43b9aea17",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C23",
+      "claim": "The Kalman filter models the perceptual side of the tracking task only.",
+      "claim_type": "EXPLICIT",
+      "source": "The KF, however, models the perceptual side of the tracking task only, that is, how an ideal observer (Geisler, 1989) sequentially computes an estimate of the target's position.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the limitations of the Kalman filter approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "e1b6ca22-ecda-49e9-87c3-abf3caf3af27",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C24",
+      "claim": "Perceptual thresholds estimated with the Kalman filter from the tracking task were highly correlated with the perceptual uncertainties obtained with an equivalent classical forced-choice task.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, although the perceptual thresholds estimated with the KF from the tracking task were highly correlated with the perceptual uncertainties obtained with an equivalent classical forced-choice task employing stimuli with the same contrast, Bonnen et al., 2015, reported that these were systematically larger by a large margin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Bonnen et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "0fd43d19-dc11-4b84-87d6-1af5511d1906",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C25",
+      "claim": "Perceptual thresholds estimated with the Kalman filter from the tracking task were systematically larger than those obtained with an equivalent classical forced-choice task.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, although the perceptual thresholds estimated with the KF from the tracking task were highly correlated with the perceptual uncertainties obtained with an equivalent classical forced-choice task employing stimuli with the same contrast, Bonnen et al., 2015, reported that these were systematically larger by a large margin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Bonnen et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "7d0e9a04-051b-4de4-8dfd-1b1318152794",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C26",
+      "claim": "Every perceptual laboratory task involves some motor control component at least for generating a response.",
+      "claim_type": "EXPLICIT",
+      "source": "This is not surprising since every perceptual laboratory task involves some motor control component at least for generating a response, albeit to different degrees.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the nature of experimental tasks.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "53cc9e88-75b8-4c48-9f85-734629fbf6da",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C27",
+      "claim": "Repeated movements toward a target exhibit variability.",
+      "claim_type": "EXPLICIT",
+      "source": "First, repeated movements toward a target exhibit variability (Faisal et al., 2008), which arises because of neural variability during execution of movements (Jones et al., 2002) or their preparation (Churchland et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Faisal et al., 2008, Jones et al., 2002, and Churchland et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "bad466f6-1a2a-4abb-a498-5fdd66543445",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C28",
+      "claim": "Movement variability arises because of neural variability during execution of movements or their preparation.",
+      "claim_type": "EXPLICIT",
+      "source": "First, repeated movements toward a target exhibit variability (Faisal et al., 2008), which arises because of neural variability during execution of movements (Jones et al., 2002) or their preparation (Churchland et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Jones et al., 2002 and Churchland et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "6de79161-9de6-4624-9ad3-ca8d6d9b748c",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C29",
+      "claim": "A subject might trade off the instructed behavioral goal of the tracking experiment with subjective costs, such as biomechanical energy expenditure or mental effort.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, a subject might trade off the instructed behavioral goal of the tracking experiment with subjective costs, such as biomechanical energy expenditure (di Prampero, 1981) or mental effort (Shenhav et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to di Prampero, 1981 and Shenhav et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "64191749-6e37-412f-8feb-132d734bce03",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C30",
+      "claim": "Subjects might have mistaken assumptions about the statistics of the task.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, subjects might have mistaken assumptions about the statistics of the task (Petzschner and Glasauer, 2011; Beck et al., 2012), which can lead to different behavior from a model that perfectly knows the task structure, that is, ideal observers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Petzschner and Glasauer, 2011 and Beck et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "4b3ecc74-02ad-4277-b350-62030115df89",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C31",
+      "claim": "A model that only considers the perceptual side of the task will tend to overestimate perceptual uncertainty because additional factors get lumped into perceptual model parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "A model that only considers the perceptual side of the task will, therefore, tend to overestimate perceptual uncertainty because these additional factors get lumped into perceptual model parameters, as we will show in simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction that is subsequently tested with simulations in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "fe4b9087-7ecb-4cc0-835f-9a4392d27139",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C32",
+      "claim": "Partially observable Markov decision processes offer a general framework for modeling sequential perception and actions under sensory uncertainty, action variability, and explicitly include behavioral costs.",
+      "claim_type": "EXPLICIT",
+      "source": "Partially observable Markov decision processes (POMDPs; \u00c5str\u00f6m, 1965; Kaelbling et al., 1998) offer a general framework for modeling sequential perception, and actions under sensory uncertainty, action variability, and explicitly include behavioral costs (Hoppe and Rothkopf, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to \u00c5str\u00f6m, 1965, Kaelbling et al., 1998, and Hoppe and Rothkopf, 2019.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "8d990309-4540-4523-9c44-e452662a9e87",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C33",
+      "claim": "POMDPs can be seen as a generalization of Bayesian decision theory to sequential tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "They can be seen as a generalization of Bayesian decision theory, on which classical analysis of psychophysics including SDT is based, to sequential tasks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the relationship between POMDPs and Bayesian decision theory.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "86b1f99c-3f2c-4649-a240-956d443d1b35",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C34",
+      "claim": "The linear quadratic Gaussian framework accommodates continuous states and actions under linear dynamics and Gaussian variability.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we employ the well-studied linear quadratic Gaussian framework (LQG; Anderson and Moore, 2007), which accommodates continuous states and actions under linear dynamics and Gaussian variability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about LQG, supported by citation to Anderson and Moore, 2007.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "c141f14d-e5ec-498f-938b-3403f0fcca9c",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C35",
+      "claim": "The Kalman filter minimizes the squared error between the latent target and its estimate.",
+      "claim_type": "EXPLICIT",
+      "source": "While the KF, being the Bayes-optimal estimator for a linear-Gaussian system, can be shown to minimize the squared error between the latent target and its estimate, the optimal control framework can flexibly incorporate different kinds of costs such as the intrinsic costs of actions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the Kalman filter.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "8f6ec477-39dc-4e3e-a001-1654c16f8d19",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C36",
+      "claim": "The optimal control framework can flexibly incorporate different kinds of costs such as the intrinsic costs of actions.",
+      "claim_type": "EXPLICIT",
+      "source": "While the KF, being the Bayes-optimal estimator for a linear-Gaussian system, can be shown to minimize the squared error between the latent target and its estimate, the optimal control framework can flexibly incorporate different kinds of costs such as the intrinsic costs of actions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a property of optimal control frameworks.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "cda18d42-6e51-4f1b-b55e-39848ad88d9b",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C37",
+      "claim": "Models not accounting for behavioral cost and action variability overestimate perceptual uncertainty when applied to data that includes these factors.",
+      "claim_type": "EXPLICIT",
+      "source": "We show through simulations with synthetic data that models not accounting for behavioral cost and action variability overestimate perceptual uncertainty when applied to data that includes these factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through simulations presented in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "1bc8f888-3322-4b84-b677-fa49e7dfd9b7",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C38",
+      "claim": "The subjective actor model explains the data better than models only considering perceptual contributions to behavioral data.",
+      "claim_type": "EXPLICIT",
+      "source": "We apply our method to data from three previously published experiments, infer perceptual uncertainty, and obtain overwhelming evidence through Bayesian model comparison with the widely applicable information criterion (WAIC; Watanabe and Opper, 2010) that this model explains the data better than models only considering perceptual contributions to behavioral data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through Bayesian model comparison on empirical data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "def63e8e-174f-4bd2-96f6-61eba6fb3710",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C39",
+      "claim": "In a classical psychophysics task, the stimuli presented to the observer are usually independent and identically distributed between trials.",
+      "claim_type": "EXPLICIT",
+      "source": "In a classical psychophysics task (e.g., position discrimination; Figure 1A and B), the stimuli xt presented to the observer are usually independent and identically distributed between trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about classical psychophysics paradigms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "0482af9b-4e28-4bf6-9e20-d09e105e8dc2",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C40",
+      "claim": "In signal detection theory, observations are commonly assumed to be Gaussian distributed.",
+      "claim_type": "EXPLICIT",
+      "source": "In SDT, for example, observations are commonly assumed to be Gaussian distributed and the cost function J assigns a value to correct and wrong decisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about signal detection theory.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "4da123ef-f4ff-45bd-bd9c-6d44bec98ab5",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C41",
+      "claim": "In signal detection theory, the cost function assigns a value to correct and wrong decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "In SDT, for example, observations are commonly assumed to be Gaussian distributed and the cost function J assigns a value to correct and wrong decisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about signal detection theory.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "48d31fe2-10b7-4196-89b1-aeecef9d4221",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C42",
+      "claim": "A psychometric curve can be interpreted as the decision probabilities of a Bayesian observer with a particular choice of measurement distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, a psychometric curve can be interpreted as the decision probabilities of a Bayesian observer with a particular choice of measurement distribution, which determines the shape of the curve.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the interpretation of psychometric curves.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "af8f94d9-13e1-4060-9cb7-dfbbaded76e8",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C43",
+      "claim": "The assumption of independence between trials is critical in the application of classical psychophysical modeling techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "The assumption of independence between trials is critical in the application of these modeling techniques.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the requirements of classical psychophysical analysis.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "a59bb66d-d47d-4062-8f8c-5f5beac9c242",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C44",
+      "claim": "Continuous psychophysics abandons the independence of stimuli between individual trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Continuous psychophysics abandons the independence of stimuli between individual trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a defining characteristic of continuous psychophysics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "41ccdb45-4041-47e1-8d9a-8a468d773033",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C45",
+      "claim": "The linear quadratic Gaussian control problem is a well-studied special case of the general POMDP setting.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting LQG control problem is a well-studied special case of the general POMDP setting, which can be solved exactly by determining an optimal estimator and an optimal controller (Edison, 1971; Anderson and Moore, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations to Edison, 1971 and Anderson and Moore, 2007.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "9b5e30b3-c15f-4ac1-9f10-0d8c77fb0a30",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C46",
+      "claim": "For the LQG control problem, the separation principle between estimation and control holds.",
+      "claim_type": "EXPLICIT",
+      "source": "For the LQG control problem, the separation principle between estimation and control holds (Davis and Vinter, 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation to Davis and Vinter, 1985.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "43583d72-2a6a-4fba-98d7-096a18745a1c",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C47",
+      "claim": "The separation principle means that the optimal solutions for the estimator (KF) and controller (LQR) can be computed independently from one another.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that the optimal solutions for the estimator (KF) and controller (LQR) can be computed independently from one another.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the separation principle.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "82986bd3-10a6-42fe-a2c6-aec120b45a23",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C48",
+      "claim": "The ideal observer model in the tracking task is the Kalman filter.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the ideal observer model in the tracking task is the KF as it is the optimal Bayesian sequential estimator of the latent, unobserved state of the system (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and illustrated in Figure 2A.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "0f655259-5c53-4a55-8c86-baa28c93cfdb",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C49",
+      "claim": "The Kalman filter has only one free parameter, the perceptual uncertainty \u03c3.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the ideal observer assumption implies that the task dynamics, that is, the standard deviation of the random walk are perfectly known to the subject, the KF has only one free parameter, the perceptual uncertainty \u03c3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a property of the Kalman filter model as applied in this study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "8a52dbda-6c36-4cfa-a0d4-bddc0215e4e7",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C50",
+      "claim": "The optimal actor model maintains a representation of its own response in addition to the target's position.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the optimal actor model maintains a representation of its own response, that is, the position of the mouse cursor in addition to the target's position: the state space is now two-dimensional.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the optimal actor model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "f88322b4-5d57-47ec-9c72-ed70fde84fda",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C52",
+      "claim": "The bounded actor model can accommodate internal behavioral costs that may penalize large actions.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference lies in the cost function, which now can additionally accommodate internal behavioral costs c (Figure 2C) that may penalize, for example, large actions and thus result in a larger lag between the response and the target.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the bounded actor model illustrated in Figure 2C.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "ceb41026-e967-4d42-91b1-6ba47d567405",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C53",
+      "claim": "The subjective actor bases its decisions on an internal model of the stimulus dynamics that may differ from the true generative model employed by the experimenter.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the subjective actor is a version of the bounded actor but now bases its decisions on an internal model of the stimulus dynamics that may differ from the true generative model employed by the experimenter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the subjective actor model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "d6b8aec0-91ef-48ce-aaf8-96e1d8555d9e",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C54",
+      "claim": "With only 2 min of tracking, the 95% posterior credible intervals of the perceptual uncertainty \u03c3 are [0.8, 1.3] relative to the true value on average.",
+      "claim_type": "EXPLICIT",
+      "source": "With only 2 min of tracking, the 95% posterior credible intervals of the perceptual uncertainty \u03c3 are [0.8, 1.3] relative to the true value on average.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from simulations presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "20441d98-5128-40d0-9c27-07ba95f122d4",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C55",
+      "claim": "The tracking data of an experiment lasting 2 min is sufficient to obtain posterior distributions over model parameters for which 95% of probability is within a range of 20% underestimation and 30% overestimation of the true values.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that the tracking data of an experiment lasting 2 min is sufficient to obtain posterior distributions over model parameters for which 95% of probability is within a range of 20% underestimation and 30% overestimation of the true values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "30f1702a-3a08-404b-a1e9-0ea72acf7224",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C56",
+      "claim": "With 800 forced-choice trials (corresponding to roughly 20 min), the 95% posterior credible intervals for psychometric function width are within [0.6, 1.6] relative to the true value on average.",
+      "claim_type": "EXPLICIT",
+      "source": "As a comparison, we consider the simulations for estimating the width of a psychometric function in classical psychophysical tasks conducted by Sch\u00fctt et al., 2015. With 800 forced-choice trials (corresponding to roughly 20 min), the 95% posterior credible intervals are within [0.6, 1.6] relative to the true value on average.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citation to Sch\u00fctt et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "48655f00-f905-4ead-8029-07ee072669cf",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C57",
+      "claim": "Continuous psychophysics provides a temporal efficiency gain of at least a factor of 10 compared to classical psychophysics.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests a temporal efficiency gain for continuous psychophysics of at least a factor of 10.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparing simulation results with cited literature.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "29eea2bd-41a3-460c-bd76-63a2d9cd8a09",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C58",
+      "claim": "The bounded actor and subjective actor models scatter around the true value of perceptual uncertainty when fit to simulated data.",
+      "claim_type": "EXPLICIT",
+      "source": "The posterior means of \u03c3 from the bounded actor and subjective actor scatter around the true value, with the model used to simulate the data being the most accurate for estimating \u03c3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3C based on simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "1a9f413e-3044-482e-81a8-b63935c3dc64",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C59",
+      "claim": "The Kalman filter and optimal actor models overestimate perceptual uncertainty when they do not contain intrinsic behavioral costs.",
+      "claim_type": "EXPLICIT",
+      "source": "The other two models (KF and optimal actor), which do not contain intrinsic behavioral costs, both overestimate \u03c3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3C based on simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "88b61960-f1c0-466e-9505-aafdb4fe3deb",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C60",
+      "claim": "Bayesian model comparison confirms that the model used to simulate the data is also the model with the highest predictive accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Bayesian model comparison confirms that the model used to simulate the data is also the model with the highest predictive accuracy in all cases (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3\u2014figure supplement 1 based on simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "c8f49d79-74aa-4ac8-8810-18b90600fd78",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C61",
+      "claim": "The posterior means of estimated perceptual uncertainty in both KF and subjective actor models were highly correlated with the classical psychophysical measurements (r > 0.88 for both models and all subjects).",
+      "claim_type": "EXPLICIT",
+      "source": "The posterior means of estimated perceptual uncertainty in both models were highly correlated with the classical psychophysical measurements (r > 0.88 for both models and all subjects).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from analysis of empirical data from Bonnen et al., 2015.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "94715635-befd-4a21-82e1-4d0cded99091",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C62",
+      "claim": "The parameters from the subjective actor model are smaller in magnitude than KF's in all three subjects and all but one blob width condition.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the parameters from the subjective actor model are smaller in magnitude than KF's in all three subjects and all but one blob width condition (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4A based on analysis of empirical data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "e56ff051-4965-4afc-b31e-f32a0e1b128a",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C63",
+      "claim": "The Kalman filter attributes all variability to perceptual uncertainty, while the other models explicitly include cognitive and motor influences.",
+      "claim_type": "EXPLICIT",
+      "source": "The reason for this is that the KF attributes all variability to perceptual uncertainty, while the other models explicitly include cognitive and motor influences (see section 'Simulation results').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the model structures and simulation results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "10982342-63a1-4aa2-9c6d-3d9ffed64c45",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C64",
+      "claim": "The average factor between the posterior mean perceptual uncertainty in the continuous task and the 2IFC task in the five higher contrast conditions is 2.39 for the subjective actor.",
+      "claim_type": "EXPLICIT",
+      "source": "The average factor between the posterior mean perceptual uncertainty in the continuous task and the 2IFC task in the five higher contrast conditions is 2.39 for the subjective actor, while it is 3.46 for the KF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from analysis of empirical data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "d5977fa9-34bb-4b59-9d9b-52984e857d9d",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C65",
+      "claim": "The average factor between the posterior mean perceptual uncertainty in the continuous task and the 2IFC task in the five higher contrast conditions is 3.46 for the Kalman filter.",
+      "claim_type": "EXPLICIT",
+      "source": "The average factor between the posterior mean perceptual uncertainty in the continuous task and the 2IFC task in the five higher contrast conditions is 2.39 for the subjective actor, while it is 3.46 for the KF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from analysis of empirical data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "41ecaae2-9ad2-46fa-a87a-fc6cf0470157",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C66",
+      "claim": "Accounting for action variability and control effort leads to estimates of perceptual uncertainty closer to those obtained with the classical 2IFC psychophysics task.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, accounting for action variability and control effort in our model leads to estimates of perceptual uncertainty closer to those obtained with the classical 2IFC psychophysics task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparison of results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "224fede6-0942-43e1-a2ca-ca22ea0c1720",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C69",
+      "claim": "The subjective actor captures more of the autocorrelation structure of the tracking data than the Kalman filter.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the subjective actor captures more of the autocorrelation structure of the tracking data, quantified by the correlation between the CCGs of the model and those of the data, which was 0.61 for the KF and 0.86 for the subjective actor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of cross-correlograms from empirical data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "cf7d52e0-8807-4add-a0a8-43412cb55aab",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C70",
+      "claim": "Overwhelming evidence for the subjective actor model is provided by Akaike weights larger than 0.98 in all three subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "Overwhelming evidence for the subjective actor model is provided by Akaike weights larger than 0.98 in all three subjects, with the weight for the KF model being equal to 0 within floating point precision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on Bayesian model comparison using WAIC.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "58b28456-84f5-4b80-aa6f-846e144002bc",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C71",
+      "claim": "In two of the three subjects from Bonnen et al., 2017, the subjective actor performs best in model comparison.",
+      "claim_type": "EXPLICIT",
+      "source": "In two of the three subjects, the subjective actor performs best, while in one subject the bounded actor with accurate stimulus model accounts better for the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 5B based on WAIC model comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "e33ea90c-842b-4dff-a4d1-eacab0b59c77",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C72",
+      "claim": "In one subject from Bonnen et al., 2017, the bounded actor with accurate stimulus model accounts better for the data than the subjective actor.",
+      "claim_type": "EXPLICIT",
+      "source": "In two of the three subjects, the subjective actor performs best, while in one subject the bounded actor with accurate stimulus model accounts better for the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 5B based on WAIC model comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "ca5579af-78df-478a-b5e1-12889b34364c",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C73",
+      "claim": "The perceptual uncertainties inferred using inverse optimal control were in better agreement with the 2IFC measurements than those inferred using the previously proposed Kalman filter.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we applied our method to experimental data from a manual tracking task, which were collected together with equivalent stimuli in a 2IFC paradigm for the purpose of empirical validation (Bonnen et al., 2015). The perceptual uncertainties inferred using inverse optimal control were in better agreement with the 2IFC measurements than those inferred using the previously proposed KF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from analysis of empirical data from Bonnen et al., 2015.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "c0a2dd40-0fc8-4083-bead-d5b9baaaab38",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C74",
+      "claim": "In the lowest contrast conditions, all models show a large and systematic deviation in the estimated perceptual uncertainty compared to the equivalent 2IFC task.",
+      "claim_type": "EXPLICIT",
+      "source": "In the lowest contrast conditions, all models we considered show a large and systematic deviation in the estimated perceptual uncertainty compared to the equivalent 2IFC task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the analysis of empirical data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "3f79c345-f935-4b0d-b9bb-4169c240d4c1",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C75",
+      "claim": "The observed bias at low contrast points toward additional mechanisms such as a computational cost or computational uncertainty that are not captured by the current models.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the observed bias points toward additional mechanisms such as a computational cost or computational uncertainty that are not captured by the current models at very low contrast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the observed discrepancy in the data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "58d9f798-152a-477d-afe9-5bb33e5c9dc0",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C76",
+      "claim": "The visual system integrates visual signals over longer times at lower contrasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Another possible explanation is that the visual system is known to integrate visual signals over longer times at lower contrasts (Dean and Tolhurst, 1986; Bair and Movshon, 2004), which could affect not only sensitivity in a nonlinear fashion but could also lead to nonlinear control actions extending across a longer time horizon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Dean and Tolhurst, 1986 and Bair and Movshon, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "e75da5cc-2c26-4b44-a591-5f09e3d476b0",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C77",
+      "claim": "Model selection using WAIC favored the bounded actor with subjective beliefs about stimulus dynamics in all four experiments with a single exception.",
+      "claim_type": "EXPLICIT",
+      "source": "Model selection using WAIC (Watanabe and Opper, 2010) favored this bounded actor with subjective beliefs about stimulus dynamics in all four experiments involving human and monkey subjects with a single exception, in which the bounded actor model better accounted for the behavioral data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on Bayesian model comparison across multiple datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "b90db9c7-52b3-4a7d-9e9c-b823e8b62bdf",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C78",
+      "claim": "Overwhelming evidence was found that subjects' behavior in the continuous psychophysics paradigm was better explained by a model that includes action variability and internal costs for actions.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we found overwhelming evidence that subjects' behavior in the continuous psychophysics paradigm was better explained by a model that includes action variability and internal costs for actions increasing with the magnitude of the response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on Bayesian model comparison across multiple datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "22b31620-9a31-453a-b3fb-ce3588dfcb23",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C79",
+      "claim": "Estimates of perceptual uncertainty often differ between classical psychophysical tasks when compared directly.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, estimates of perceptual uncertainty often differ between classical psychophysical tasks when compared directly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and established knowledge in psychophysics.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "4cfbd218-6968-4bd0-b479-ae6e1fc91245",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C80",
+      "claim": "Yeshurun et al., 2008 found a broad range of deviations between the empirically measured perceptual uncertainty and the theoretical value predicted by SDT.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Yeshurun et al., 2008, reviewed previous psychophysical studies and conducted experiments to empirically test the theoretical predictions of SDT between Yes-No and 2IFC tasks. They found a broad range of deviations between the empirically measured perceptual uncertainty and the theoretical value predicted by SDT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Yeshurun et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "4dd5047b-383f-4d02-9c6d-5c412370c1b4",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C81",
+      "claim": "There are differences between 2AFC tasks and their equivalent 2IFC tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, there are differences between 2AFC tasks, in which two stimuli are separated spatially, and their equivalent 2IFC tasks, in which the stimuli are separated in time (J\u00e4kel and Wichmann, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to J\u00e4kel and Wichmann, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "bb367338-3f15-429a-b42f-2aada36dd30d",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C82",
+      "claim": "Factors such as attention, memory, intrinsic costs, beliefs of the subject differing from the true task statistics, and learning often influence behavior in psychophysical experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, substantial empirical evidence suggests that factors often not modeled by SDT, such as attention, memory, intrinsic costs, beliefs of the subject differing from the true task statistics, and learning, nevertheless very often influence the behavior in psychophysical experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the cited literature and discussion.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "0775995e-26c5-4ca4-904e-102c5798bdb8",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C83",
+      "claim": "The framework employed in this study allows modeling and inferring cognitive factors responsible for observed deviations in psychophysical experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, the framework we employ here allows modeling and inferring some of these additional cognitive factors responsible for some of the observed deviations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the capabilities of the proposed framework.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "a1fa6df2-4e71-4821-9d8f-23a81c909328",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C84",
+      "claim": "Psychophysical methods, together with their analysis methods, always imply a generative model of behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "On a conceptual level, the results of this study underscore the fact that psychophysical methods, together with their analysis methods, always imply a generative model of behavior (Green and Swets, 1966; Swets, 1986; Wixted, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Green and Swets, 1966, Swets, 1986, and Wixted, 2020.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "586ca597-43ad-4977-a341-6008299bcd68",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C85",
+      "claim": "The current analysis framework opens up the prospect of a wider adoption of continuous psychophysics paradigms.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the current analysis framework opens up the prospect of a wider adoption of continuous psychophysics paradigms in psychology, cognitive science, and neuroscience as it alleviates the necessity of hundreds of repetitive trials with binary forced-choice responses in expert observers, recovering perceptual uncertainties closer to classical paradigms than previous analysis methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the results presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "04977710-75f3-4088-a107-f221f1f9a031",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "claim_id": "C86",
+      "claim": "The framework provides further evidence for the importance of modeling the behavioral goal and subjective costs in experiments seemingly only investigating perception.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, it extracts meaningful psychological quantities capturing behavioral variability, effort costs, and subjective perceptual beliefs and provides further evidence for the importance of modeling the behavioral goal and subjective costs in experiments seemingly only investigating perception as perception and action are inseparably intertwined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the results and model comparisons.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9c492bdd-0f8e-4935-8084-c04dc608771f",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Traditional psychophysical methods, while powerful due to their combination of controlled experiments and signal detection theory analysis, suffer from practical limitations including the requirement for many tedious trials, highly trained participants, and low engagement levels in untrained subjects that contaminate measurements with additional variability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C17 collectively describe well-established characteristics of traditional psychophysics supported by citations and general knowledge in the field. The limitations described (C3, C15-C17) are documented in cited literature and represent consensus understanding of traditional psychophysical methods.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "781827a4-d7ea-428a-a9e3-352428146b01",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Continuous psychophysics represents a methodological innovation that abandons the rigid trial structure of traditional methods, replacing binary responses with continuous behavioral adjustments to dynamic stimuli, requiring orders of magnitude less time and being more natural and suitable for untrained subjects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C18-C20, and C44 describe the continuous psychophysics approach as established in cited literature (primarily Bonnen et al., 2015). The characterization of the method and its advantages are supported by citations, though claim C20 about suitability for children and infants is noted as inference rather than demonstrated fact.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "cd39bd9b-2639-44b8-a524-edabc3371cc0",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Current analysis methods for continuous psychophysics, specifically the Kalman filter approach proposed by Bonnen et al. (2015), only model the perceptual side of the tracking task and systematically overestimate perceptual thresholds compared to equivalent traditional psychophysical experiments, despite being highly correlated with classical measurements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6 and C21-C25 accurately describe the limitations of the Kalman filter approach as documented in Bonnen et al. (2015). The systematic overestimation (C6, C25) and high correlation (C24) are both cited findings that motivate the current study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "1d298cad-f6a8-49fe-8745-dade98b704d6",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Tracking tasks involve motor control components that introduce additional sources of variability and bias beyond perception, including movement variability from neural sources, subjective cost trade-offs, and mistaken assumptions about task statistics, which cause perception-only models to overestimate perceptual uncertainty by lumping these factors into perceptual parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C31 present a well-reasoned theoretical argument supported by multiple citations (Faisal et al., 2008; Jones et al., 2002; Churchland et al., 2006; di Prampero, 1981; Shenhav et al., 2017; Petzschner and Glasauer, 2011; Beck et al., 2012). The prediction in C31 is subsequently validated through simulations (C37), providing empirical support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "96c71ef6-f1c0-465f-8ba8-a6c000f10eaf",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The linear quadratic Gaussian (LQG) framework, a special case of partially observable Markov decision processes, provides a general framework for modeling sequential perception and action under uncertainty that generalizes Bayesian decision theory to sequential tasks and can flexibly incorporate behavioral costs, with the separation principle allowing independent computation of optimal estimation and control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C36 and C45-C47 describe well-established mathematical frameworks supported by appropriate citations (\u00c5str\u00f6m, 1965; Kaelbling et al., 1998; Anderson and Moore, 2007; Davis and Vinter, 1985). These are foundational theoretical results that are correctly characterized.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "e0e169de-badb-4c46-a866-5ee67e827793",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Four computational models of increasing complexity are proposed: the Kalman filter (ideal observer with one parameter), the optimal actor (adding action representation), the bounded actor (adding behavioral costs), and the subjective actor (adding subjective beliefs about stimulus dynamics that may differ from the true generative model).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C53 describe the four models presented in the study. These model descriptions are clearly defined and illustrated in Figure 2. The hierarchical structure where each model generalizes the previous one is logically sound and well-documented in the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "cf6f1d83-54d6-4556-8225-3a9f60d0b1a6",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Simulation results demonstrate that with only 2 minutes of tracking data, the method achieves 95% posterior credible intervals of [0.8, 1.3] relative to true parameter values, suggesting a temporal efficiency gain of at least 10-fold compared to classical psychophysics requiring 800 trials (~20 minutes) to achieve comparable precision.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C57 present simulation results from the manuscript (Figure 3B) and compare them to cited literature (Sch\u00fctt et al., 2015). The efficiency gain calculation (C57) is a reasonable inference based on comparing the credible interval widths and time requirements, though it involves some assumptions about comparability between methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "7b9b7cca-ace9-48cb-8f88-f42ebd8e0a2a",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Simulations demonstrate that models not accounting for behavioral costs and action variability (Kalman filter and optimal actor) systematically overestimate perceptual uncertainty when applied to data containing these factors, while bounded and subjective actor models accurately recover true parameter values, with Bayesian model comparison confirming the data-generating model has highest predictive accuracy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C60 describe simulation results shown in Figure 3C and Figure 3\u2014figure supplement 1. The simulations provide clear empirical validation of the theoretical prediction in C31, demonstrating that perception-only models misattribute motor and cognitive variability to perceptual uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "4e41089a-e88d-4717-979a-dbade54c2b80",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Analysis of empirical data from Bonnen et al. (2015) shows that both Kalman filter and subjective actor models yield perceptual uncertainty estimates highly correlated with classical 2IFC measurements (r > 0.88), but the subjective actor produces smaller estimates (average factor 2.39 vs. 3.46 for KF) that are closer to the 2IFC task by accounting for action variability and control effort.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C66 present empirical results from reanalysis of published data shown in Figure 4A. The high correlations and systematic differences between models are clearly documented. The interpretation that accounting for motor factors leads to more accurate perceptual estimates is well-supported by the data and consistent with simulation results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "12707f18-a04a-46e1-a4f2-6bc3141e5ac7",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The subjective actor model better captures the autocorrelation structure of tracking data (correlation 0.86 vs. 0.61 for Kalman filter) and receives overwhelming support from Bayesian model comparison with Akaike weights > 0.98 in all three subjects from the Bonnen et al. (2015) dataset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C70 present quantitative model comparison results from Figure 4D-E. The cross-correlogram analysis provides qualitative validation of model fit, while WAIC-based model comparison provides strong statistical evidence. The overwhelming evidence claim is justified by the extremely high Akaike weights.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "61879f01-32c7-4e31-a91a-096c697b74ad",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Application to additional datasets (Bonnen et al., 2017 finger tracking and Kn\u00f6ll et al., 2018 gaze tracking) shows that model selection using WAIC favored the subjective actor in most cases across human and non-human primate subjects, with one exception where the bounded actor performed best.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72 and C77 describe model comparison results across multiple datasets shown in Figure 5B and Appendix 5\u2014figure 2. The consistency of results across different experimental paradigms and species strengthens the evidence for the approach, though the single exception noted suggests some variability in which model best describes behavior.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "f239072c-ef9c-49db-99f2-2b0c639f9c38",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The Bayesian inverse optimal control framework successfully recovers perceptual thresholds from continuous psychophysics data and additionally estimates action variability, internal behavioral costs, and subjective beliefs about stimulus dynamics, with overwhelming evidence from model comparison that it explains data better than perception-only models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C10, C38, C73, and C78 summarize the main findings of the study. These claims are well-supported by the simulation results (C54-C60), empirical analyses (C61-C70), and cross-dataset validation (C71-C72, C77). The framework's ability to recover multiple parameters is demonstrated through posterior distributions shown in Figures 4B-C and Figure 5\u2014figure supplement 2.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "16dec728-dc2e-4c16-b265-a70de9865240",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "At the lowest contrast conditions, all models show large systematic deviations from 2IFC measurements, pointing toward additional mechanisms such as computational costs or uncertainty not captured by current models, possibly related to longer temporal integration at low contrasts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C74-C76 identify a limitation in the current models observed in Figure 4A. While C74 accurately describes the observed discrepancy and C76 cites relevant literature about temporal integration, C75 is explicitly speculative. The authors acknowledge this as an open question requiring further research, making the underlying mechanisms uncertain.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "4a113fc6-ed86-44d0-b6cc-7cf9f66d165d",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Perceptual uncertainty estimates often differ between classical psychophysical tasks due to factors like attention, memory, intrinsic costs, and subjective beliefs that are typically not modeled by signal detection theory, and the current framework allows modeling and inferring some of these cognitive factors, underscoring that psychophysical methods always imply a generative model of behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C84 present a conceptual discussion supported by citations (Yeshurun et al., 2008; J\u00e4kel and Wichmann, 2006; Green and Swets, 1966; Swets, 1986; Wixted, 2020). The argument that additional cognitive factors influence psychophysical measurements is well-established, and the claim that the current framework can model some of these factors is demonstrated by the empirical results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    },
+    {
+      "id": "3f790055-6af4-467d-8159-a2d142ae367c",
+      "content_id": "8e028572-7d71-4ccb-9aa4-be1a1ead4c3e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The analysis framework opens prospects for wider adoption of continuous psychophysics by recovering perceptual uncertainties closer to classical paradigms than previous methods while extracting meaningful psychological quantities, providing evidence for the importance of modeling behavioral goals and subjective costs even in experiments seemingly only investigating perception.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C86 present the main conclusions of the study. These are well-supported by the empirical results showing improved agreement with classical methods (C61-C66, C73), successful parameter recovery (C54-C55, C58), and consistent model selection results (C70-C72, C77-C78). The broader implications are reasonable inferences from the demonstrated results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:18:28.776239Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0201eba6-d916-4fb2-a660-e4af466070ec",
+      "result_id": "9c492bdd-0f8e-4935-8084-c04dc608771f"
+    },
+    {
+      "claim_id": "9156b089-3bea-4777-b053-14983b2640ab",
+      "result_id": "9c492bdd-0f8e-4935-8084-c04dc608771f"
+    },
+    {
+      "claim_id": "58945f20-66c5-4c02-8a14-bdc1059d12eb",
+      "result_id": "9c492bdd-0f8e-4935-8084-c04dc608771f"
+    },
+    {
+      "claim_id": "6f03123a-185f-4d1f-a2fa-d8efd076f255",
+      "result_id": "9c492bdd-0f8e-4935-8084-c04dc608771f"
+    },
+    {
+      "claim_id": "249e8980-636b-47ca-b3b4-5ccb958b8325",
+      "result_id": "9c492bdd-0f8e-4935-8084-c04dc608771f"
+    },
+    {
+      "claim_id": "376d12e6-1d23-4866-a1f9-2fa83a265af4",
+      "result_id": "9c492bdd-0f8e-4935-8084-c04dc608771f"
+    },
+    {
+      "claim_id": "d0c07fd1-08ba-4f7a-a9ea-1c52f73d6a20",
+      "result_id": "9c492bdd-0f8e-4935-8084-c04dc608771f"
+    },
+    {
+      "claim_id": "1a2b7dd7-2192-4af7-a251-2d0997522b22",
+      "result_id": "9c492bdd-0f8e-4935-8084-c04dc608771f"
+    },
+    {
+      "claim_id": "f8bb5379-88d8-47ce-8f98-94a621754b79",
+      "result_id": "9c492bdd-0f8e-4935-8084-c04dc608771f"
+    },
+    {
+      "claim_id": "9aff6c8b-cd31-4b7e-bd5d-71fbdb76b42d",
+      "result_id": "9c492bdd-0f8e-4935-8084-c04dc608771f"
+    },
+    {
+      "claim_id": "18cac4d4-61e3-468d-9fd4-21a414083760",
+      "result_id": "781827a4-d7ea-428a-a9e3-352428146b01"
+    },
+    {
+      "claim_id": "e9736b5c-f9dd-45ed-afe8-a94a62a9a92d",
+      "result_id": "781827a4-d7ea-428a-a9e3-352428146b01"
+    },
+    {
+      "claim_id": "6464e23b-d524-4492-b9bc-becd165ee4c9",
+      "result_id": "781827a4-d7ea-428a-a9e3-352428146b01"
+    },
+    {
+      "claim_id": "805aa12f-e6eb-4318-b204-43eebd8cbe34",
+      "result_id": "781827a4-d7ea-428a-a9e3-352428146b01"
+    },
+    {
+      "claim_id": "a59bb66d-d47d-4062-8f8c-5f5beac9c242",
+      "result_id": "781827a4-d7ea-428a-a9e3-352428146b01"
+    },
+    {
+      "claim_id": "26a14631-cb93-4bf8-94c6-c0e42cd93961",
+      "result_id": "cd39bd9b-2639-44b8-a524-edabc3371cc0"
+    },
+    {
+      "claim_id": "bd62d050-7ba9-4ff0-a3c8-2ef367d69c5f",
+      "result_id": "cd39bd9b-2639-44b8-a524-edabc3371cc0"
+    },
+    {
+      "claim_id": "25102732-7cb8-4292-b68a-06a1d82d5f14",
+      "result_id": "cd39bd9b-2639-44b8-a524-edabc3371cc0"
+    },
+    {
+      "claim_id": "46dbc2ed-6c62-4f0c-a251-96a43b9aea17",
+      "result_id": "cd39bd9b-2639-44b8-a524-edabc3371cc0"
+    },
+    {
+      "claim_id": "e1b6ca22-ecda-49e9-87c3-abf3caf3af27",
+      "result_id": "cd39bd9b-2639-44b8-a524-edabc3371cc0"
+    },
+    {
+      "claim_id": "0fd43d19-dc11-4b84-87d6-1af5511d1906",
+      "result_id": "cd39bd9b-2639-44b8-a524-edabc3371cc0"
+    },
+    {
+      "claim_id": "7d0e9a04-051b-4de4-8dfd-1b1318152794",
+      "result_id": "1d298cad-f6a8-49fe-8745-dade98b704d6"
+    },
+    {
+      "claim_id": "53cc9e88-75b8-4c48-9f85-734629fbf6da",
+      "result_id": "1d298cad-f6a8-49fe-8745-dade98b704d6"
+    },
+    {
+      "claim_id": "bad466f6-1a2a-4abb-a498-5fdd66543445",
+      "result_id": "1d298cad-f6a8-49fe-8745-dade98b704d6"
+    },
+    {
+      "claim_id": "6de79161-9de6-4624-9ad3-ca8d6d9b748c",
+      "result_id": "1d298cad-f6a8-49fe-8745-dade98b704d6"
+    },
+    {
+      "claim_id": "64191749-6e37-412f-8feb-132d734bce03",
+      "result_id": "1d298cad-f6a8-49fe-8745-dade98b704d6"
+    },
+    {
+      "claim_id": "4b3ecc74-02ad-4277-b350-62030115df89",
+      "result_id": "1d298cad-f6a8-49fe-8745-dade98b704d6"
+    },
+    {
+      "claim_id": "fe4b9087-7ecb-4cc0-835f-9a4392d27139",
+      "result_id": "96c71ef6-f1c0-465f-8ba8-a6c000f10eaf"
+    },
+    {
+      "claim_id": "8d990309-4540-4523-9c44-e452662a9e87",
+      "result_id": "96c71ef6-f1c0-465f-8ba8-a6c000f10eaf"
+    },
+    {
+      "claim_id": "86b1f99c-3f2c-4649-a240-956d443d1b35",
+      "result_id": "96c71ef6-f1c0-465f-8ba8-a6c000f10eaf"
+    },
+    {
+      "claim_id": "c141f14d-e5ec-498f-938b-3403f0fcca9c",
+      "result_id": "96c71ef6-f1c0-465f-8ba8-a6c000f10eaf"
+    },
+    {
+      "claim_id": "8f6ec477-39dc-4e3e-a001-1654c16f8d19",
+      "result_id": "96c71ef6-f1c0-465f-8ba8-a6c000f10eaf"
+    },
+    {
+      "claim_id": "41ccdb45-4041-47e1-8d9a-8a468d773033",
+      "result_id": "96c71ef6-f1c0-465f-8ba8-a6c000f10eaf"
+    },
+    {
+      "claim_id": "9b5e30b3-c15f-4ac1-9f10-0d8c77fb0a30",
+      "result_id": "96c71ef6-f1c0-465f-8ba8-a6c000f10eaf"
+    },
+    {
+      "claim_id": "43583d72-2a6a-4fba-98d7-096a18745a1c",
+      "result_id": "96c71ef6-f1c0-465f-8ba8-a6c000f10eaf"
+    },
+    {
+      "claim_id": "82986bd3-10a6-42fe-a2c6-aec120b45a23",
+      "result_id": "e0e169de-badb-4c46-a866-5ee67e827793"
+    },
+    {
+      "claim_id": "0f655259-5c53-4a55-8c86-baa28c93cfdb",
+      "result_id": "e0e169de-badb-4c46-a866-5ee67e827793"
+    },
+    {
+      "claim_id": "8a52dbda-6c36-4cfa-a0d4-bddc0215e4e7",
+      "result_id": "e0e169de-badb-4c46-a866-5ee67e827793"
+    },
+    {
+      "claim_id": "f88322b4-5d57-47ec-9c72-ed70fde84fda",
+      "result_id": "e0e169de-badb-4c46-a866-5ee67e827793"
+    },
+    {
+      "claim_id": "ceb41026-e967-4d42-91b1-6ba47d567405",
+      "result_id": "e0e169de-badb-4c46-a866-5ee67e827793"
+    },
+    {
+      "claim_id": "d6b8aec0-91ef-48ce-aaf8-96e1d8555d9e",
+      "result_id": "cf6f1d83-54d6-4556-8225-3a9f60d0b1a6"
+    },
+    {
+      "claim_id": "20441d98-5128-40d0-9c27-07ba95f122d4",
+      "result_id": "cf6f1d83-54d6-4556-8225-3a9f60d0b1a6"
+    },
+    {
+      "claim_id": "30f1702a-3a08-404b-a1e9-0ea72acf7224",
+      "result_id": "cf6f1d83-54d6-4556-8225-3a9f60d0b1a6"
+    },
+    {
+      "claim_id": "48655f00-f905-4ead-8029-07ee072669cf",
+      "result_id": "cf6f1d83-54d6-4556-8225-3a9f60d0b1a6"
+    },
+    {
+      "claim_id": "cda18d42-6e51-4f1b-b55e-39848ad88d9b",
+      "result_id": "7b9b7cca-ace9-48cb-8f88-f42ebd8e0a2a"
+    },
+    {
+      "claim_id": "29eea2bd-41a3-460c-bd76-63a2d9cd8a09",
+      "result_id": "7b9b7cca-ace9-48cb-8f88-f42ebd8e0a2a"
+    },
+    {
+      "claim_id": "1a9f413e-3044-482e-81a8-b63935c3dc64",
+      "result_id": "7b9b7cca-ace9-48cb-8f88-f42ebd8e0a2a"
+    },
+    {
+      "claim_id": "88b61960-f1c0-466e-9505-aafdb4fe3deb",
+      "result_id": "7b9b7cca-ace9-48cb-8f88-f42ebd8e0a2a"
+    },
+    {
+      "claim_id": "c8f49d79-74aa-4ac8-8810-18b90600fd78",
+      "result_id": "4e41089a-e88d-4717-979a-dbade54c2b80"
+    },
+    {
+      "claim_id": "94715635-befd-4a21-82e1-4d0cded99091",
+      "result_id": "4e41089a-e88d-4717-979a-dbade54c2b80"
+    },
+    {
+      "claim_id": "e56ff051-4965-4afc-b31e-f32a0e1b128a",
+      "result_id": "4e41089a-e88d-4717-979a-dbade54c2b80"
+    },
+    {
+      "claim_id": "10982342-63a1-4aa2-9c6d-3d9ffed64c45",
+      "result_id": "4e41089a-e88d-4717-979a-dbade54c2b80"
+    },
+    {
+      "claim_id": "d5977fa9-34bb-4b59-9d9b-52984e857d9d",
+      "result_id": "4e41089a-e88d-4717-979a-dbade54c2b80"
+    },
+    {
+      "claim_id": "41ecaae2-9ad2-46fa-a87a-fc6cf0470157",
+      "result_id": "4e41089a-e88d-4717-979a-dbade54c2b80"
+    },
+    {
+      "claim_id": "224fede6-0942-43e1-a2ca-ca22ea0c1720",
+      "result_id": "12707f18-a04a-46e1-a4f2-6bc3141e5ac7"
+    },
+    {
+      "claim_id": "cf7d52e0-8807-4add-a0a8-43412cb55aab",
+      "result_id": "12707f18-a04a-46e1-a4f2-6bc3141e5ac7"
+    },
+    {
+      "claim_id": "58b28456-84f5-4b80-aa6f-846e144002bc",
+      "result_id": "61879f01-32c7-4e31-a91a-096c697b74ad"
+    },
+    {
+      "claim_id": "e33ea90c-842b-4dff-a4d1-eacab0b59c77",
+      "result_id": "61879f01-32c7-4e31-a91a-096c697b74ad"
+    },
+    {
+      "claim_id": "e75da5cc-2c26-4b44-a591-5f09e3d476b0",
+      "result_id": "61879f01-32c7-4e31-a91a-096c697b74ad"
+    },
+    {
+      "claim_id": "4fb79dc6-f8e1-45ff-b796-1c0429905025",
+      "result_id": "f239072c-ef9c-49db-99f2-2b0c639f9c38"
+    },
+    {
+      "claim_id": "9e78172b-55eb-498b-a4d7-fd4386132735",
+      "result_id": "f239072c-ef9c-49db-99f2-2b0c639f9c38"
+    },
+    {
+      "claim_id": "320e0c6b-eb4b-4856-837b-43c71ef1cb83",
+      "result_id": "f239072c-ef9c-49db-99f2-2b0c639f9c38"
+    },
+    {
+      "claim_id": "48773c28-a123-479e-af8a-855f233949f4",
+      "result_id": "f239072c-ef9c-49db-99f2-2b0c639f9c38"
+    },
+    {
+      "claim_id": "1bc8f888-3322-4b84-b677-fa49e7dfd9b7",
+      "result_id": "f239072c-ef9c-49db-99f2-2b0c639f9c38"
+    },
+    {
+      "claim_id": "ca5579af-78df-478a-b5e1-12889b34364c",
+      "result_id": "f239072c-ef9c-49db-99f2-2b0c639f9c38"
+    },
+    {
+      "claim_id": "b90db9c7-52b3-4a7d-9e9c-b823e8b62bdf",
+      "result_id": "f239072c-ef9c-49db-99f2-2b0c639f9c38"
+    },
+    {
+      "claim_id": "c0a2dd40-0fc8-4083-bead-d5b9baaaab38",
+      "result_id": "16dec728-dc2e-4c16-b265-a70de9865240"
+    },
+    {
+      "claim_id": "3f79c345-f935-4b0d-b9bb-4169c240d4c1",
+      "result_id": "16dec728-dc2e-4c16-b265-a70de9865240"
+    },
+    {
+      "claim_id": "58d9f798-152a-477d-afe9-5bb33e5c9dc0",
+      "result_id": "16dec728-dc2e-4c16-b265-a70de9865240"
+    },
+    {
+      "claim_id": "22b31620-9a31-453a-b3fb-ce3588dfcb23",
+      "result_id": "4a113fc6-ed86-44d0-b6cc-7cf9f66d165d"
+    },
+    {
+      "claim_id": "4cfbd218-6968-4bd0-b479-ae6e1fc91245",
+      "result_id": "4a113fc6-ed86-44d0-b6cc-7cf9f66d165d"
+    },
+    {
+      "claim_id": "4dd5047b-383f-4d02-9c6d-5c412370c1b4",
+      "result_id": "4a113fc6-ed86-44d0-b6cc-7cf9f66d165d"
+    },
+    {
+      "claim_id": "bb367338-3f15-429a-b42f-2aada36dd30d",
+      "result_id": "4a113fc6-ed86-44d0-b6cc-7cf9f66d165d"
+    },
+    {
+      "claim_id": "0775995e-26c5-4ca4-904e-102c5798bdb8",
+      "result_id": "4a113fc6-ed86-44d0-b6cc-7cf9f66d165d"
+    },
+    {
+      "claim_id": "a1fa6df2-4e71-4821-9d8f-23a81c909328",
+      "result_id": "4a113fc6-ed86-44d0-b6cc-7cf9f66d165d"
+    },
+    {
+      "claim_id": "586ca597-43ad-4977-a341-6008299bcd68",
+      "result_id": "3f790055-6af4-467d-8159-a2d142ae367c"
+    },
+    {
+      "claim_id": "04977710-75f3-4088-a107-f221f1f9a031",
+      "result_id": "3f790055-6af4-467d-8159-a2d142ae367c"
+    }
+  ],
+  "comparisons": []
+}

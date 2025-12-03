@@ -1,0 +1,269 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C89",
+      "C114"
+    ],
+    "result": "The rs67785913 variant is a functional eQTL that regulates MTIF3 expression. Luciferase reporter assays showed that only the DNA fragment containing rs67785913 enhanced transcription (C2, C30). GTEx data and CRISPR-edited cells confirmed that the CTCT allele is associated with higher MTIF3 expression than the CT allele (C31, C32, C33).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple converging lines of evidence support this result: luciferase assays identified rs67785913 as the regulatory element (C2, C30), GTEx database showed eQTL effects (C31, C32), and CRISPR-edited cells validated allele-specific expression differences (C33). The experimental approaches are appropriate and the data are consistent across methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C110"
+    ],
+    "result": "MTIF3 knockout in mature adipocytes achieved >80% protein reduction without affecting adipogenic differentiation markers or baseline triglyceride content. Off-target effects were not detected by T7EI assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The knockout efficiency is well-documented by western blotting (C36), and multiple adipogenic markers (ACC, FABP4, FAS) and triglyceride measurements confirm no effect on differentiation (C38, C39, C110). Off-target analysis was performed (C37), though data were not shown. This establishes a clean experimental system for downstream functional studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C94",
+      "C95"
+    ],
+    "result": "MTIF3 deficiency disrupts mitochondrial DNA-encoded protein and gene expression in adipocytes. Western blotting showed decreased COX II and ND2 proteins, trending decrease in CYTB, and unchanged ATP8 (C40-C43). qPCR revealed altered expression of multiple mitochondrial genes (C44-C48), and mitochondrial content was significantly reduced (C49).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by appropriate experimental methods (western blotting and qPCR) with consistent results showing disrupted mitochondrial gene/protein expression (C40-C48, C94, C95). The reduced mitochondrial content (C49) provides additional supporting evidence. Statistical significance is reported for key findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C96",
+      "C115"
+    ],
+    "result": "MTIF3 deficiency disrupts OXPHOS complex assembly in adipocytes. Blue Native-PAGE showed decreased assembly of complexes III2/IV2 and IV1, trending decrease in complex V/III2+IV1, but increased complex II assembly (C50-C53). Undefined faster-migrating bands were observed (C54), and complex I+III2+IVn appeared less abundant (C55).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Blue Native-PAGE data demonstrate clear effects on OXPHOS complex assembly (C50-C53, C96, C115). The increased complex II (C53) is interesting as it's nuclear-encoded, suggesting compensatory mechanisms. The undefined bands (C54) and qualitative observation about complex I+III2+IVn (C55) add descriptive detail but lack quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C97",
+      "C116"
+    ],
+    "result": "MTIF3 knockout impairs mitochondrial respiration in adipocytes. Seahorse assays showed significantly lower basal OCR and ATP-forming capacity (C56, C57), trending decrease in maximal respiration (C58), but comparable proton leak, non-mitochondrial respiration, and coupling efficiency (C59-C61).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Seahorse data provide direct functional evidence of impaired mitochondrial respiration (C56, C57, C97, C116). The statistical significance for basal OCR and ATP production is clear, while maximal respiration shows a trend. The unchanged proton leak and coupling efficiency (C59-C61) suggest the defect is in respiratory capacity rather than mitochondrial coupling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C5",
+      "C117"
+    ],
+    "result": "MTIF3 deficiency reduces endogenous fatty acid oxidation in adipocytes. MTIF3 ablation mimicked the effect of etomoxir (CPT1 inhibitor) on fatty acid oxidation (C62). Etomoxir decreased fatty acid oxidation in control cells but not in MTIF3 knockout cells (C63, C64).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Seahorse fatty acid oxidation data demonstrate reduced fatty acid oxidation in MTIF3 knockout cells (C62-C64, C5, C117). The etomoxir experiment provides mechanistic insight, suggesting MTIF3 knockout cells have already maximally impaired fatty acid oxidation. The experimental design is appropriate for assessing endogenous fatty acid oxidation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C8",
+      "C104",
+      "C105",
+      "C118"
+    ],
+    "result": "MTIF3 knockout cells retain more triglycerides than control cells under glucose restriction. Both genotypes showed decreased triglyceride content after glucose restriction (C65), but control cells showed a more extensive decrease at 1 mM glucose (C66, p=0.053). This suggests MTIF3-deficient adipocytes have limited capacity for lipid metabolism under glucose restriction (C104, C105).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The key finding (C66) has borderline statistical significance (p=0.053), and the effect shows high coefficient of variation at 3 and 5 mM glucose. While the trend supports the hypothesis (C8, C104, C105, C118), the marginal statistical support and lack of mechanistic validation (e.g., lipolysis was unchanged C67) make this result uncertain. Additional replicates or complementary assays would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "MTIF3 knockout does not affect lipolysis-mediated glycerol release. Glycerol release was comparable between control and knockout cells under basal, insulin-attenuated, and isoproterenol-stimulated conditions (C67, C68). Glycerol release was significantly reduced in low versus high glucose medium (C69).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The glycerol release assays provide clear evidence that lipolysis is not affected by MTIF3 knockout (C67, C68). The glucose-dependent reduction in glycerol release (C69) is an expected metabolic response. This result helps rule out altered lipolysis as an explanation for the triglyceride retention phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "MTIF3 knockout selectively affects expression of mitochondrial and fatty acid oxidation genes. Knockout cells showed decreased expression of MT-CO1, ACADM, and ACAT1 (C70-C72), but unchanged expression of TFAM, TOMM20, PRDM16, CPT1B, ABHD5, PNPLA2, and ACACB (C73).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The qPCR data show selective effects on gene expression (C70-C73), with decreased expression of genes related to mitochondrial function and fatty acid oxidation, while other metabolic genes remain unchanged. This supports the specificity of MTIF3's role in mitochondrial function and fatty acid metabolism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Metabolomic profiling reveals glucose-dependent effects of MTIF3 ablation. PCA showed clear separation by glucose condition and genotype-specific differences along different principal components (C74-C77). OPLS-DA and ANOVA identified metabolites altered in MTIF3 knockout cells, including glycolysis intermediates (lower at both glucose levels), fatty acids (lower only at 25 mM glucose), and amino acids (lower under glucose restriction) (C78-C84).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The metabolomics data are comprehensive and analyzed with appropriate multivariate and univariate statistical methods (C74-C84). The glucose-dependent effects (C77) are particularly interesting and well-supported by the PCA showing different separation patterns. The ANOVA with FDR correction (q<0.05) provides robust statistical support for individual metabolite differences (C82-C84).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C106"
+    ],
+    "result": "The authors speculate that MTIF3 knockout cells re-esterify released fatty acids to triglycerides during glucose restriction, explaining triglyceride retention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is explicitly stated as speculation (C106) without experimental validation. While it's a reasonable hypothesis given the reduced fatty acid oxidation and unchanged lipolysis, no direct evidence for increased re-esterification is provided. This remains an untested mechanistic explanation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The authors infer that lower glycolysis intermediates and odd-chain fatty acids indicate blunted lipogenesis (C111), decreased amino acids reflect adaptation to lower energy supply (C112), and MTIF3 plays a vital role in triglyceride metabolism (C113).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are interpretations of the metabolomics data (C111-C113) but lack direct experimental validation. While the inferences are reasonable given the metabolite profiles, they remain speculative without measurements of lipogenesis rates, energy status markers, or direct triglyceride metabolism assays. The claims are based on inference rather than direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The authors conclude that higher MTIF3 content increases mitochondrial function (C119), explaining the interaction between MTIF3 locus and weight loss interventions (C120), and suggest that carriers of variants increasing MTIF3 expression may benefit more from lifestyle interventions (C121).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the in vitro data show that MTIF3 knockout reduces mitochondrial function, the inverse inference that higher MTIF3 increases function (C119) is not directly tested. The connection to weight loss interventions (C120) is reasonable but indirect. The clinical prediction (C121) is explicitly stated as speculation requiring demonstration. These claims extrapolate beyond the experimental data to in vivo and clinical contexts without validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C27",
+      "C87"
+    ],
+    "result": "Prior literature establishes that MTIF3 genetic variation is associated with obesity, BMI, and response to weight loss interventions in humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C12, C14-C19, C27, C87) are well-supported by citations to multiple prior studies including large clinical trials (DPP, Look AHEAD) and epidemiological cohorts. The associations are described as robust and replicated across different intervention types. This provides the rationale for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C88"
+    ],
+    "result": "The rs1885988 C allele is associated with higher MTIF3 expression in subcutaneous fat tissue according to GTEx database and experimental validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The GTEx eQTL data (C28, C29) provide population-level evidence with statistical significance (p=0.0000032), and the authors validated this association experimentally (C88). The convergence of database and experimental evidence supports this result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "While rs67785913 correlates with altered GTF3A expression in other tissues, no difference in GTF3A expression was found in rs67785913-edited adipocyte cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental data (C35) show no difference in GTF3A expression in the edited cells, despite correlations in other tissues (C34). This suggests tissue-specific regulatory effects and helps establish that the observed MTIF3 effects are not confounded by GTF3A changes in adipocytes.",
+    "result_type": "MINOR"
+  }
+]

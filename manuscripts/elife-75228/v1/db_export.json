@@ -1,0 +1,1439 @@
+{
+  "submission": {
+    "id": "bf5eb754-bb5d-4397-bdb4-4d7e087d3c80",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T11:43:52.773135Z",
+    "updated_at": "2025-12-03T11:43:52.773135Z"
+  },
+  "content": [
+    {
+      "id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "submission_id": "bf5eb754-bb5d-4397-bdb4-4d7e087d3c80",
+      "content_type": "manuscript",
+      "content_text": "# Boosting of cross-reactive antibodies to endemic coronaviruses by SARS-CoV-2 infection but not vaccination with stabilized spike\n\n## Authors\n\n- Andrew R Crowley<sup>1</sup>\n- Harini Natarajan<sup>1</sup>\n- Andrew P Hederman<sup>2</sup>\n- Carly A Bobak<sup>3</sup>\n- Joshua A Weiner<sup>2</sup>\n- Wendy Wieland-Alter<sup>4</sup>\n- Jiwon Lee<sup>2</sup>\n- Evan M Bloch<sup>5</sup>\n- Aaron AR Tobian<sup>5</sup>\n- Andrew D Redd<sup>6</sup>\n- Joel N Blankson<sup>6</sup>\n- Dana Wolf<sup>8</sup>\n- Tessa Goetghebuer<sup>9</sup>\n- Arnaud Marchant<sup>9</sup>\n- Ruth I Connor<sup>4</sup>\n- Peter F Wright<sup>4</sup>\n- Margaret E Ackerman<sup>1</sup> ([ORCID: 0000-0002-4253-3476](https://orcid.org/0000-0002-4253-3476)) \u2020\n\n### Affiliations\n\n1. Department of Microbiology and Immunology, Geisel School of Medicine at Dartmouth, Dartmouth College Hanover United States ([ROR:049s0rh22](https://ror.org/049s0rh22))\n2. Thayer School of Engineering, Dartmouth College Hanover United States ([ROR:049s0rh22](https://ror.org/049s0rh22))\n3. Biomedical Data Science, Dartmouth College Hanover United States ([ROR:049s0rh22](https://ror.org/049s0rh22))\n4. Department of Pediatrics, Geisel School of Medicine at Dartmouth, Dartmouth-Hitchcock Medical Center Lebanon United States ([ROR:00d1dhh09](https://ror.org/00d1dhh09))\n5. Department of Pathology, Johns Hopkins School of Medicine Baltimore United States ([ROR:037zgn354](https://ror.org/037zgn354))\n6. Department of Medicine, Division of Infectious Diseases, Johns Hopkins School of Medicine Baltimore United States ([ROR:037zgn354](https://ror.org/037zgn354))\n7. Division of Intramural Research, National Institute of Allergy and Infectious Diseases, National Institutes of Health Bethesda United States ([ROR:01cwqze88](https://ror.org/01cwqze88))\n8. Hadassah University Medical Center Jerusalem Israel\n9. Institute for Medical Immunology, Universit\u00e9 libre de Bruxelles Charleroi Belgium ([ROR:01r9htc13](https://ror.org/01r9htc13))\n10. Pediatric Department, CHU St Pierre Brussels Belgium ([ROR:05cmp5q80](https://ror.org/05cmp5q80))\n\n\u2020 Corresponding author\n\n## Abstract\n\nPreexisting antibodies to endemic coronaviruses (CoV) that cross-react with SARS-CoV-2 have the potential to influence the antibody response to COVID-19 vaccination and infection for better or worse. In this observational study of mucosal and systemic humoral immunity in acutely infected, convalescent, and vaccinated subjects, we tested for cross-reactivity against endemic CoV spike (S) protein at subdomain resolution. Elevated responses, particularly to the \u03b2-CoV OC43, were observed in all natural infection cohorts tested and were correlated with the response to SARS-CoV-2. The kinetics of this response and isotypes involved suggest that infection boosts preexisting antibody lineages raised against prior endemic CoV exposure that cross-react. While further research is needed to discern whether this recalled response is desirable or detrimental, the boosted antibodies principally targeted the better-conserved S2 subdomain of the viral spike and were not associated with neutralization activity. In contrast, vaccination with a stabilized spike mRNA vaccine did not robustly boost cross-reactive antibodies, suggesting differing antigenicity and immunogenicity. In sum, this study provides evidence that antibodies targeting endemic CoV are robustly boosted in response to SARS-CoV-2 infection but not to vaccination with stabilized S, and that depending on conformation or other factors, the S2 subdomain of the spike protein triggers a rapidly recalled, IgG-dominated response that lacks neutralization activity.\n\n## Introduction\n\nThe ongoing pandemic of SARS-CoV-2 represents the third time in just two decades that a novel coronavirus (CoV) with significant morbidity and mortality has begun to circulate among humans (Peeri et al., 2020). Given the alarming frequency of these occurrences, the COVID-19 pandemic serves as a call to action to safeguard against continued emergence of novel human CoV. Unlike in the earlier outbreaks of SARS-CoV and MERS-CoV, however, SARS-CoV-2 has proven to be highly transmissible, infecting a substantial portion of the global population \u2013 a conservative estimate of the prevalence of infection based on only confirmed cases corresponds to over 2% (COVID, 2021), while estimates of the total figure in the United States exceed 16% of the population (Reese et al., 2021). The extent to which the immune responses generated by these and other endemic CoV exposures might serve as an effective deterrent against the emergence of novel CoV strains remains an open question.\n\nInsights into the effect of exposure to endemic CoVs in the years leading up to the COVID-19 pandemic could suggest whether preexisting antibodies are likely to contribute beneficially or detrimentally to outcomes of infection by a novel strain. Under the hypothesis of original antigenic sin, preexisting humoral memory imprinted from prior exposure to related antigens partially predestines the antibody repertoire to focus on the epitopes of a new threat that closely resemble those for which there is an existing solution. Because neutralizing epitopes are subject to additional selective pressure, this recall and re-diversification of existing antibody lineages may hinder the immune system\u2019s ability to generate effective neutralizing antibodies (Kim et al., 2009). This phenomenon has been most convincingly established in the context of influenza virus infection, with support from both well-controlled animal model experiments (Kim et al., 2009; Nachbagauer et al., 2017) and observational studies of human natural infection histories (Francis et al., 1947; Fonville et al., 2014; Kucharski et al., 2015; Gostic et al., 2016; Lee et al., 2019). Similar observations have been made in the context of diverse dengue virus serotypes (Midgley et al., 2011). These and other studies have shown that despite being a key hallmark of effective long-term immune defense, anamnestic responses are not without potential downsides.\n\nAntibody-dependent enhancement (ADE), a phenomenon by which cross-reactive antibodies induced by a prior exposure to a related pathogen promote infection of cell types bearing antibody Fc receptors and potentially elevate morbidity and mortality (reviewed in Bournazos et al., 2020; Taylor et al., 2015), suggests further potential advantages of a humoral blank slate. Though observed in vitro (Wu et al., 2020; Li et al., 2021), there has not been abundant evidence for the biological relevance of classical ADE in the context of SARS-CoV-2 in vivo (Li et al., 2021; Wang et al., 2016). Nonetheless, the role of non-neutralizing antibodies resulting from cross-strain challenges in promoting ADE in cases of dengue fever (Katzelnick et al., 2017) has motivated concern about COVID-19 enhancement (Lee et al., 2020; Fierz and Walz, 2020; Arvin et al., 2020).\n\nThe extent to which preexisting responses to prior endemic CoV exposures may influence responses to SARS-CoV-2 infection and vaccination is not yet clear, but has been suggested from studies relating recent endemic CoV infection with reduced severity of COVID-19 (Sagar et al., 2021; Aran et al., 2020). Numerous studies have observed elevated responses to endemic CoV following SARS-CoV-2 infection (Guo et al., 2021; Morgenlander et al., 2021; Wang et al., 2021; Kaplonek et al., 2021; Ortega et al., 2021), and more recent work has shown that the magnitude of this \u2018back-boosting\u2019 effect is inversely correlated with the induction of IgG and IgM against SARS-CoV-2 spike (S) protein (Aydillo et al., 2021). Given differential degrees of homology between the receptor-binding domain (RBD) in S1 that is the target of the majority of neutralizing antibodies, and the better-conserved S2 domain that may be the target of antibodies with diverse effector functions but which are rarely neutralizing, the original antigenic sin hypothesis suggests that lower titers of neutralizing antibodies against SARS-CoV-2 may result from boosting of preexisting cross-reactive lineages. Here, this apparent boosting effect is evaluated in diverse cohorts with the goal of beginning to understand its implications.\n\n## Results\n\n### Structural analysis of SARS-CoV-2\n\nSequence conservation across the human CoV spike protein is not uniformly distributed: the N-terminal domain (NTD) of SARS-CoV-2 that contains the RBD responsible for interacting with human angiotensin-converting enzyme 2 (ACE2) and initiating viral entry has lower homology to the corresponding subdomains of other CoVs than do the S2 subdomains where the fusion peptide, heptad repeat, and central helix required for fusion are located (Figure 1A). In contrast to the S2 domain, structural comparison of various subdomains of the SARS-CoV-2 S protein shows that both the NTD and RBD of the spike protein are poorly conserved across CoV (Figure 1B). Superimposition of the SARS CoV-2 S1 and S2 domains with the most well-conserved widely circulating endemic human CoV, OC43, show high structural conservation in S2 and the NTD, and a complete lack of homology in the RBD that is consistent with the differing entry receptors used by these \u03b2-CoV (Figure 1C, Figure 1\u2014figure supplement 1). Based on both structural and sequence homology, it stands to reason that preexisting antibodies raised against endemic human CoV are more likely to target the better-conserved regions of SARS-CoV-2 such as S2, and less likely to recognize the RBD (Yuan et al., 2020; Wrapp et al., 2020).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig1-v1.jpg)\n\n**Figure 1.:** (A) Sequence alignment of SARS-CoV-2 spike protein to other human coronaviruses. Consensus identity is shown on a scale from red (least conserved) to green (most conserved). Color bars are used to indicate different regions of the spike protein: N-terminal domain (NTD, blue), receptor-binding domain (RBD, green) in the S1 domain and fusion peptide (FP, cyan), heptad repeat 1 (HR1, yellow), central helix (CH, orange), and connector domain (CD, purple) in the S2 domain. (B) Structural model of the spike protein monomer colored by percent sequence conservation across deposited coronaviridae sequences shown as a ribbon model for one protomer (left) and spacefill for the spike trimer (right). (C) Superimposed structural model of the spike protein S1 (left) and S2 (right) domains for SARS-CoV-2 (black) and OC43 (teal).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Structural models of the N-terminal domain (NTD) and receptor-binding domain (RBD) as ribbons, colored by strain: SARS-CoV-2 (black), 229E (orange), OC43 (blue), NL63 (green), and HKU1 (yellow). Structural alignments were restricted to the residues of the S1 domain. Right alignments between SARS-CoV2 and the endemic S1 domains shown individually rather than overlayed, with \u03b2-CoV at left, and \u03b1-CoV at right.\n\n### Subject cohorts\n\nA diversity of cohorts were evaluated in this observational study (Table 1). Subjects naturally infected with SARS-CoV-2 comprised a small cohort of convalescent subjects for which serum and mucosal samples were available, a larger cohort of convalescent plasma donors, acutely infected individuals, pregnant women infected in their third trimester, and a small set of subjects for whom pre- and post-infection samples were available. Subjects vaccinated against SARS-CoV-2 with mRNA included cohorts of healthy adults and pregnant women vaccinated in their third trimester. Samples were analyzed alongside samples from na\u00efve (n = 15) and commercial (n = 38) negative controls.\n\n**Table 1.**\n Cohort characteristics.NA: not applicable or available; IQR: interquartile range; DHMC: Dartmouth-Hitchcock Medical Center; JHMI: Johns Hopkins Medical Institutions. Partially reproduced from Natarajan et al., 2021.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Characteristic</th>\n      <th>DHMC naive</th>\n      <th colspan=\"2\">DHMC convalescent</th>\n      <th colspan=\"2\">JHMI convalescent</th>\n      <th colspan=\"2\">Acute</th>\n      <th colspan=\"2\">Pre- and post-infection</th>\n      <th colspan=\"3\">Pregnant infected</th>\n      <th colspan=\"2\">Pregnant vaccinated</th>\n      <th colspan=\"2\">Vaccinated</th>\n      <th colspan=\"2\">Commercial controls</th>\n    </tr>\n    <tr>\n      <th>n = 15</th>\n      <th colspan=\"2\">n = 26</th>\n      <th colspan=\"2\">n = 126</th>\n      <th colspan=\"2\">n = 10</th>\n      <th colspan=\"2\">n = 3</th>\n      <th colspan=\"3\">n = 38</th>\n      <th colspan=\"2\">n = 50</th>\n      <th colspan=\"2\">n = 37</th>\n      <th colspan=\"2\">n = 38</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Median age (IQR), years</td>\n      <td>34(28\u201352)</td>\n      <td colspan=\"2\">58(18\u201377)</td>\n      <td colspan=\"2\">42(29\u201353)</td>\n      <td colspan=\"2\">27(20\u201330)</td>\n      <td colspan=\"2\">62(61\u201364)</td>\n      <td colspan=\"3\">31(27\u201335)</td>\n      <td colspan=\"2\">32(29\u201335)</td>\n      <td colspan=\"2\">NA</td>\n      <td colspan=\"2\">39(28\u201350)</td>\n    </tr>\n    <tr>\n      <td>Sex (n, %)</td>\n      <td></td>\n      <td colspan=\"2\"></td>\n      <td colspan=\"2\"></td>\n      <td colspan=\"2\"></td>\n      <td colspan=\"2\"></td>\n      <td colspan=\"3\"></td>\n      <td colspan=\"2\"></td>\n      <td colspan=\"2\"></td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Female</td>\n      <td>8 (53%)</td>\n      <td colspan=\"2\">13 (50%)</td>\n      <td colspan=\"2\">58 (46%)</td>\n      <td colspan=\"2\">3 (30%)</td>\n      <td colspan=\"2\">2 (67%)</td>\n      <td colspan=\"3\">38 (100%)</td>\n      <td colspan=\"2\">50 (100%)</td>\n      <td colspan=\"2\">17 (46%)</td>\n      <td colspan=\"2\">22 (58%)</td>\n    </tr>\n    <tr>\n      <td>Male</td>\n      <td>7 (47%)</td>\n      <td colspan=\"2\">13 (50%)</td>\n      <td colspan=\"2\">68 (54%)</td>\n      <td colspan=\"2\">7 (70%)</td>\n      <td colspan=\"2\">1 (33%)</td>\n      <td colspan=\"3\">0 (0%)</td>\n      <td colspan=\"2\">0 (0%)</td>\n      <td colspan=\"2\">20 (54%)</td>\n      <td colspan=\"2\">16 (42%)</td>\n    </tr>\n    <tr>\n      <td>Hospitalized (severity)</td>\n      <td></td>\n      <td colspan=\"2\"></td>\n      <td colspan=\"2\"></td>\n      <td colspan=\"2\"></td>\n      <td colspan=\"2\"></td>\n      <td colspan=\"3\"></td>\n      <td colspan=\"2\"></td>\n      <td colspan=\"2\"></td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>No</td>\n      <td>NA</td>\n      <td colspan=\"2\">20 (77%)</td>\n      <td colspan=\"2\">114 (90.5%)</td>\n      <td colspan=\"2\">10 (100%)</td>\n      <td colspan=\"2\">3 (100%)</td>\n      <td colspan=\"3\">NA</td>\n      <td colspan=\"2\">NA</td>\n      <td colspan=\"2\">NA</td>\n      <td colspan=\"2\">NA</td>\n    </tr>\n    <tr>\n      <td>Yes</td>\n      <td></td>\n      <td colspan=\"2\">6 (23%)</td>\n      <td colspan=\"2\">12 (9.5%)</td>\n      <td colspan=\"2\">0 (0%)</td>\n      <td colspan=\"2\">0 (0%)</td>\n      <td colspan=\"3\"></td>\n      <td colspan=\"2\"></td>\n      <td colspan=\"2\"></td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Median days since PCR+ or symptom onset (IQR)</td>\n      <td>NA</td>\n      <td colspan=\"2\">42.5 (19\u2013154)</td>\n      <td colspan=\"2\">43 (38\u201348)</td>\n      <td colspan=\"2\">11 (9\u201314)</td>\n      <td colspan=\"2\">12 (11\u201314)</td>\n      <td colspan=\"3\">49 (22\u201378)</td>\n      <td colspan=\"2\">NA</td>\n      <td colspan=\"2\">NA</td>\n      <td colspan=\"2\">NA</td>\n    </tr>\n    <tr>\n      <td>Median days since second vaccine dose (IQR)</td>\n      <td>NA</td>\n      <td colspan=\"2\">NA</td>\n      <td colspan=\"2\">NA</td>\n      <td colspan=\"2\">NA</td>\n      <td colspan=\"2\">NA</td>\n      <td colspan=\"3\">NA</td>\n      <td colspan=\"2\">20 (12\u201329)</td>\n      <td colspan=\"2\">8 (7\u201311)</td>\n      <td colspan=\"2\">NA</td>\n    </tr>\n    <tr>\n      <td>Location</td>\n      <td>US</td>\n      <td colspan=\"2\">US</td>\n      <td colspan=\"2\">US</td>\n      <td colspan=\"2\">US</td>\n      <td colspan=\"2\">US</td>\n      <td colspan=\"3\">Belgium</td>\n      <td colspan=\"2\">Israel</td>\n      <td colspan=\"2\">US</td>\n      <td colspan=\"2\">US</td>\n    </tr>\n    <tr>\n      <td>IRB</td>\n      <td>DHMC</td>\n      <td colspan=\"2\">DHMC</td>\n      <td colspan=\"2\">JHMI</td>\n      <td colspan=\"2\">DHMC</td>\n      <td colspan=\"2\">DHMC</td>\n      <td colspan=\"3\">CHU St. Pierre</td>\n      <td colspan=\"2\">Hadassah Medical Center</td>\n      <td colspan=\"2\">JHMI</td>\n      <td colspan=\"2\">BioIVT clinical sites</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Elevated responses to endemic CoV in serum, nasal wash, and stool among SARS-CoV-2-infected subjects\n\nThe magnitude and specificity of IgM, IgA, and IgG responses were determined across a panel of SARS-CoV-2 and endemic CoV antigens in two previously described cohorts of convalescent subjects (Butler, 2020; Klein et al., 2020; Table 1). In the smaller (Dartmouth-Hitchcock Medical Center [DHMC], n = 26) cohort, mucosal samples were available, and responses in nasal wash and stool were also defined. Relative to SARS-CoV-2-na\u00efve controls, elevated serum IgA and IgG but not IgM responses to whole S of diverse endemic CoV were frequently observed (Figure 2). Among endemic CoV, elevated levels of OC43-specific responses in serum were most pronounced, but were largely restricted to the S2 domain and whole unstabilized S. Similarly, elevated IgG responses to other endemic CoV were observed in serum from convalescent subjects to the spike proteins of endemic CoV, but not to the S1 domain alone. Indeed, elevated serum responses specific to the S1 domain of these CoV were not observed for any antibody isotype or subclass (Figure 2B, Figure 2\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig2-v1.jpg)\n\n**Figure 2.:** (A) IgG responses in serum (top), nasal wash (middle), and stool (bottom) across antigens from CoV-2, OC43, and other endemic CoV S, and S1 proteins in the Dartmouth-Hitchcock Medical Center (DHMC) convalescent cohort. Samples from na\u00efve subjects are indicated in gray, SARS-CoV-2 convalescents at 1 month post infection in blue, and buffer blanks in hollow circles. (B) Volcano plot of fold change and significance (unpaired t-test) of differences between antibody responses observed in convalescent subjects of the DHMC (left) and Johns Hopkins Medical Institutions (JHMI) (right) cohorts 1 month post infection and na\u00efve subjects in serum (top) and nasal wash (bottom). Each symbol represents an antibody response feature, with Fc domain characteristics represented by color and Fv antigen specificity indicated by shape. Dotted horizontal line illustrates p=0.05. Statistical significance was defined by Mann\u2013Whitney U-test.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A, B) IgA (A) and IgM (B) responses in serum (top), nasal wash (middle), and stool (bottom) across antigens from CoV-2, OC43, and other endemic CoV S, and S1 proteins. Samples from na\u00efve subjects are indicated in gray, SARS-CoV-2 convalescents at 1 month post infection in color, and buffer blanks in hollow circles.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Heatmap of filtered and hierarchically clustered features and within-subject groups according to infection and hospitalization status. Ab responses to SARS CoV-2 features are shown on the left and those specific to endemic CoV on the right. Responses were scaled and centered within features, and the scale was truncated at \u00b13 SD. Antigen specificity (Fv) and Fc characteristics (Fc) are indicated in the color bars.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A, B) Comparison between IgG (A) and IgM (B) levels in na\u00efve, Dartmouth-Hitchcock Medical Center (DH), and Johns Hopkins Medical Institutions (JH) cohort samples to OC43 S, OC43 S2, and OC43 S-2P. Significant differences were defined by ANOVA with Dunnett\u2019s correction (****p<0.0001).\n\nThese observations were validated in a larger (Johns Hopkins Medical Institutions [JHMI], n = 126) cohort of convalescent plasma donors: elevated levels of IgG and IgA, but not IgM, to diverse endemic CoV were observed in plasma (Figure 2B, Figure 2\u2014figure supplement 2). Elevated responses were most pronounced for \u03b2-CoV (OC43 and HKU1) but were present for \u03b1-CoV as well. The absence of elevated IgM responses among convalescent subjects is consistent with recall of class-switched antibodies as opposed to the de novo elicitation of cross-reactive antibodies. Additionally, differential reactivity profiles were observed across three different OC43 antigens: proline-stabilized OC43 S (S-2P), OC43 S, and OC43 S2. Whereas elevated responses to OC43 S-2P among convalescent subjects in either cohort were not observed compared to na\u00efve controls, responses to both OC43 S and OC43 S2 (available only for the smaller cohort) were observed for IgG, but not IgM (Figure 2\u2014figure supplement 3).\n\nThis effect was not limited to serum; elevation of endemic CoV antibody responses was also observed in nasopharyngeal wash samples (Figure 2A and B, Figure 2\u2014figure supplement 1) and stool (Figure 2\u2014figure supplement 1). Again, these elevated responses were restricted to IgG and/or IgA isotypes, consistent with cross-reactive antibodies being boosted in a recall response during SARS-CoV-2 infection, and were observed for whole S or the S2 domain, but not S1.\n\n### OC43-specific antibody responses in acute infection\n\nTo better explore the kinetics of these responses, antibodies were measured in serum collected from a cohort of acutely infected subjects (n = 10, Table 1) 2 weeks after a positive PCR diagnosis afforded by twice-weekly surveillance. At this early timepoint, subjects appeared to have robustly elevated levels of CoV-2 unstabilized S-specific IgG compared to na\u00efve controls (Figure 3A). Again, these responses were observed for whole unstabilized S and the S2 domain, but not for the prefusion conformation-stabilized S-2P form of OC43 spike. In contrast, only a minor increase in IgM recognizing unstabilized OC43 S was observed (less than twofold) (Figure 3A). Though cross-sectional in nature and reliant on a small number of subjects, these isotype profiles in acute infection nonetheless further suggest a recalled rather than novel response against the relevant cross-reactive epitopes in S2 and unstabilized spike, presumably in the postfusion conformation.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig3-v1.jpg)\n\n**Figure 3.:** (A) OC43 and CoV-2-specific IgM (orange), IgA (purple), and IgG (blue) responses in 10 acutely infected subjects (color) 2 weeks post infection (WPI) as compared to na\u00efve subjects (black). Statistical significance was assessed by unpaired t-test (*p<0.05, ***p<0.0005, ****p<0.00005). Fold change in means between groups is presented in inset. (B) IgM (orange), IgA (purple), and IgG (blue) responses across CoV-2, other CoV, and control antigens in three subjects (indicated by shape) pre- (black) and post- (color) SARS-CoV-2 infection. Serum samples were taken 2 and 10 WPI.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Volcano plot of fold change and significance (paired t-test) of differences between antibody responses observed in convalescent subjects in the pre- and post-infection cohort. Dotted horizontal line indicates unadjusted p=0.05. Each symbol represents an antibody response feature, with Fc domain characteristics represented by color and Fv antigen specificity indicated by shape.\n\nIn an effort to resolve whether elevated responses to endemic \u03b2-CoV were driven by boosting of preexisting cross-reactive antibody lineages, a small cohort of subjects (n = 3) for which pre- and post-SARS-CoV-2 infection serum samples were available was analyzed (Table 1). The median increase in OC43 S2-specific IgA and IgG were 3.7- and 20-fold, respectively, between the pre- and post-infection timepoints (Figure 3B). In contrast, the median change in OC43 S2-specific IgM was within twofold, providing further support that the elevated responses to endemic \u03b2-CoV are due to boosting of preexisting cross-reactive antibodies originally raised against homologous epitopes found in endemic CoV. Like in other convalescent subject cohorts, this boosting effect was observed in response to OC43 S and S2, but not the prefusion conformation-stabilized S-2P form of OC43, which showed a median change less than 1.1-fold across isotypes. Boosting of IgG responses specific to the full-length spike of another endemic \u03b2-CoV, HKU1, was also observed. IgG and IgA but not IgM responses to whole unstabilized S, but not the S1 domain, of HKU1 were elevated following SARS-CoV-2 infection (Figure 3B, Figure 3\u2014figure supplement 1). Collectively, these results further suggest that recalled cross-reactive antibodies may be more likely to recognize both the better-conserved S2 domain and post- rather than prefusion conformations of spike.\n\n### Correlations between antibody responses to OC43 and SARS-CoV-2\n\nWe next examined correlative relationships between SARS-CoV-2- and OC43-specific IgG responses in convalescent cohorts. Whereas the magnitude of IgG responses to CoV-2 S2 were well correlated to those binding unstabilized OC43 S (RP = 0.61) and its S2 domain (RP = 0.45), they were less well correlated to responses to stabilized OC43 S-2P (RP = 0.29) (Figure 4A). Expanding this analysis to include additional CoV-2 specificities and other isotypes showed a hierarchy of correlative relationships (Figure 4B, Figure 4\u2014figure supplement 1). CoV-2-specific responses were better correlated to OC43 responses specific for unstabilized rather than stabilized spike. IgG responses showed stronger relationships than did IgA, which were in turn stronger than IgM. Consistent with the lack of elevated IgM to endemic CoV, these measures only rarely showed a statistically significant relationship with CoV-2-specific IgM responses. Lastly, among CoV-2 antigens tested, correlations with OC43 responses were strongest for the S2 domain and whole spike (S-2P), and weaker or absent for S1 and the RBD. Collectively, these correlative relationships are consistent with recall of class-switched antibodies recognizing shared epitopes in the S2 domain from prior endemic CoV exposure induced by SARS-CoV-2 infection.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig4-v1.jpg)\n\n**Figure 4.:** (A) Scatterplots of IgG responses specific to OC43 S, OC43 S2, and OC43 S-2P versus CoV-2 S2. Na\u00efve subjects were excluded from calculations of correlative relationships. (B) Correlations (RP) between IgG, IgA, and IgM specific to different stabilized SARS-CoV-2 spike and its subdomains with responses to OC43 S (maroon) and OC43 S-2P. Size and fill of symbols indicate statistical significance. Responses and relationships for na\u00efve subjects are shown in black and convalescent donors shown in maroon (OC43 S), salmon (OC43 S2), and gray (OC43 S-2P).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Heatmap of Pearson correlation coefficients observed among SARS-CoV-2- and OC43-specific IgM (left), IgA (center), and IgG (right) isotypes.\n\n### Direct evidence of molecular cross-reactivity of SARS-CoV-2 and OC43-specific antibodies\n\nTo date, antibody cross-reactivity has been inferred from indirect evidence in the form of boosted responses to endemic CoV (Guo et al., 2021; Morgenlander et al., 2021; Wang et al., 2021; Kaplonek et al., 2021; Ortega et al., 2021), and more conclusively observed for select monoclonal antibodies that have been cloned and cross-tested (Sakharkar et al., 2021; Dugan et al., 2021). To better generalize the more definitive monoclonal studies, we sought to directly define the cross-reactivity of polyclonal antibodies raised following SARS-CoV-2 infection. Antibodies specific to stabilized CoV-2 S-2P, RBD, and S2 and unstabilized OC43 S were selectively purified from serum samples from 30 SARS-CoV-2-infected subjects with a range of disease severity and humoral response profiles. Unfractionated and antigen-specific antibodies eluted from affinity purification matrices presenting various epitopes of the CoV-2 spike protein and OC43 were then characterized to determine their cross-reactivity and isotype profiles. Successful affinity purification was confirmed by comparison of antigen-specific binding signal relative to total Ig levels for each isotype (Figure 5A, Figure 5\u2014figure supplements 1\u201312). While relative binding signal was elevated for each targeted antigen, it was not observed for control antigens such as influenza hemagglutinin (HA) (Figure 5A) or tetanus toxoid (Figure 5\u2014figure supplements 1\u201312).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig5-v1.jpg)\n\n**Figure 5.:** (A) Antigen-binding profiles of IgG in unfractionated serum (load, black) and affinity-purified CoV-2 S-2P- (red, top) and OC43 S- (teal, bottom) fractions (eluate) from 30 SARS-CoV-2 convalescent subjects. Reactivity to CoV-2 S-2P, CoV-2 RBD, CoV-2 S2, OC43 S, and a control antigen (influenza hemagglutinin [HA]) are reported. (B) Antigen-binding profiles of IgG (top) and IgM (bottom) in unfractionated serum (load, black) and affinity-purified CoV-2 S2-specific (yellow) eluate. Reactivity to CoV-2 S2 (left) and OC43 S (right) is shown. For (A, B), responses to the matched antigen (positive control) used in purification are indicated by green asterisks and to HA (negative control) antigen with red asterisks. Smoothed curves and 95% confidence intervals are shown for both eluate and load fractions. (C) Neutralization activity of pooled elution fractions of antibodies affinity-purified against CoV-2 S-2P (gray square), CoV-2 RBD (red triangle), CoV-2 S2 (yellow triangle), and OC43 S (teal circle). Error bars depict standard error of the mean across assay duplicates.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Antigen-binding profiles of IgG in unfractionated serum (load, black) and affinity-purified CoV-2 S-2P- (eluate, red) fractions from 30 SARS-CoV-2 convalescent subjects across OC43, control, CoV-2, pathogenic CoV, and other endemic CoV. y-axis depicts binding signal for indicated antigen specificity, x-axis depicts signal from total IgG quantitation.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Antigen-binding profiles of IgG in unfractionated serum (load, black) and affinity-purified CoV-2 RBD- (eluate, pink) fractions from 30 SARS-CoV-2 convalescent subjects across OC43, control, CoV-2, pathogenic CoV, and other endemic CoV. y-axis depicts binding signal for indicated antigen specificity, x-axis depicts signal from total IgG quantitation.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig5-figsupp3-v1.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Antigen-binding profiles of IgG in unfractionated serum (load, black) and affinity-purified CoV-2 S2- (eluate, yellow) fractions from 30 SARS-CoV-2 convalescent subjects across OC43, control, CoV-2, pathogenic CoV, and other endemic CoV. y-axis depicts binding signal for indicated antigen specificity, x-axis depicts signal from total IgG quantitation.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig5-figsupp4-v1.jpg)\n\n**Figure 5\u2014figure supplement 4.:** Antigen-binding profiles of IgG in unfractionated serum (load, black) and affinity-purified OC43 S- (eluate teal) fractions from 30 SARS-CoV-2 convalescent subjects across OC43, control, CoV-2, pathogenic CoV, and other endemic CoV. y-axis depicts binding signal for indicated antigen specificity, x-axis depicts signal from total IgG quantitation.\n\n![Figure 5\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig5-figsupp5-v1.jpg)\n\n**Figure 5\u2014figure supplement 5.:** Antigen-binding profiles of IgA in unfractionated serum (load, black) and affinity-purified CoV-2 S-2P- (eluate, red) fractions from 30 SARS-CoV-2 convalescent subjects across OC43, control, CoV-2, pathogenic CoV, and other endemic CoV. y-axis depicts binding signal for indicated antigen specificity, x-axis depicts signal from total IgA quantitation.\n\n![Figure 5\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig5-figsupp6-v1.jpg)\n\n**Figure 5\u2014figure supplement 6.:** Antigen-binding profiles of IgA in unfractionated serum (load, black) and affinity-purified CoV-2 RBD- (eluate, pink) fractions from 30 SARS-CoV-2 convalescent subjects across OC43, control, CoV-2, pathogenic CoV, and other endemic CoV. y-axis depicts binding signal for indicated antigen specificity, x-axis depicts signal from total IgA quantitation.\n\n![Figure 5\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig5-figsupp7-v1.jpg)\n\n**Figure 5\u2014figure supplement 7.:** Antigen-binding profiles of IgA in unfractionated serum (load, black) and affinity-purified CoV-2 S2- (eluate, yellow) fractions from 30 SARS-CoV-2 convalescent subjects across OC43, control, CoV-2, pathogenic CoV, and other endemic CoV. y-axis depicts binding signal for indicated antigen specificity, x-axis depicts signal from total IgA quantitation.\n\n![Figure 5\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig5-figsupp8-v1.jpg)\n\n**Figure 5\u2014figure supplement 8.:** Antigen-binding profiles of IgA in unfractionated serum (load, black) and affinity-purified OC43 S- (eluate teal) fractions from 30 SARS-CoV-2 convalescent subjects across OC43, control, CoV-2, pathogenic CoV, and other endemic CoV. y-axis depicts binding signal for indicated antigen specificity, x-axis depicts signal from total IgA quantitation.\n\n![Figure 5\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig5-figsupp9-v1.jpg)\n\n**Figure 5\u2014figure supplement 9.:** Antigen-binding profiles of IgM in unfractionated serum (load, black) and affinity-purified CoV-2 S-2P- (eluate, red) fractions from 30 SARS-CoV-2 convalescent subjects across OC43, control, CoV-2, pathogenic CoV, and other endemic CoV. y-axis depicts binding signal for indicated antigen specificity, x-axis depicts signal from total IgM quantitation.\n\n![Figure 5\u2014figure supplement 10.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig5-figsupp10-v1.jpg)\n\n**Figure 5\u2014figure supplement 10.:** Antigen-binding profiles of IgM in unfractionated serum (load, black) and affinity-purified CoV-2 RBD- (eluate, pink) fractions from 30 SARS-CoV-2 convalescent subjects across OC43, control, CoV-2, pathogenic CoV, and other endemic CoV. y-axis depicts binding signal for indicated antigen specificity, x-axis depicts signal from total IgM quantitation.\n\n![Figure 5\u2014figure supplement 11.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig5-figsupp11-v1.jpg)\n\n**Figure 5\u2014figure supplement 11.:** Antigen-binding profiles of IgM in unfractionated serum (load, black) and affinity-purified CoV-2 S2- (eluate, yellow) fractions from 30 SARS-CoV-2 convalescent subjects across OC43, control, CoV-2, pathogenic CoV, and other endemic CoV. y-axis depicts binding signal for indicated antigen specificity, x-axis depicts signal from total IgM quantitation.\n\n![Figure 5\u2014figure supplement 12.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig5-figsupp12-v1.jpg)\n\n**Figure 5\u2014figure supplement 12.:** Antigen-binding profiles of IgM in unfractionated serum (load, black) and affinity-purified OC43 S- (eluate teal) fractions from 30 SARS-CoV-2 convalescent subjects across OC43, control, CoV-2, pathogenic CoV, and other endemic CoV. y-axis depicts binding signal for indicated antigen specificity, x-axis depicts signal from total IgM quantitation.\n\nA number of interesting differences in cross-reactivity for antibodies with differing isotypes and antigen-specificities were apparent. For example, OC43 S-specific fractions showed elevated recognition of CoV-2 S2 and S-2P, but not RBD (Figure 5A), demonstrating molecular cross-reactivity as a general feature of polyclonal IgG responses in convalescent subjects. Additionally, IgG in the CoV-2 S2-specific fractions cross-reacted robustly with OC43 S, but no cross-reactivity in the IgM fraction was observed, despite a robust IgM response to CoV-2 S2 (Figure 5B), suggesting that while SARS-CoV-2 infection elicits IgM responses to the S2 domain, these presumed de novo responses are not cross-reactive to OC43.\n\nTo begin to define the functional significance of these cross-reactive antibodies, eluted fractions were pooled and tested for neutralization potency. Whereas purified CoV-2 RBD and S-2P-specific fractions induced robust neutralization, neither purified OC43 S-specific nor SARS-CoV-2 S2 domain-specific serum antibodies had detectable neutralization activity (Figure 5C).\n\nTo quantify the extent of cross-reactivity across antigens and isotypes, the unfractionated and affinity-purified fractions from each subject were titrated, and enrichment of antigen-specific antibodies was computed by calculating the difference between the area under the curve (AUC) for the best-fit lines calculated from data points across subjects for each antibody specificity and each isotype in eluates versus unfractionated samples (Figure 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig6-v1.jpg)\n\n**Figure 6.:** The degree of enrichment (area under the curve, AUC) of affinity-purified SARS-CoV-2 receptor-binding domain (RBD-) (A), S-2P- (B), S2 domain- (C), or OC43 S- (D) specific antibodies of IgM (left), IgA (center), and IgG (right) isotypes across diverse CoV and control (ctl) proteins. Dotted line indicates no enrichment.\n\nIgM, IgA, and IgG antibodies purified based on binding to SARS-CoV-2 RBD cross-reacted with proline-stabilized spike (S-2P and S-6P) and, to a lesser extent, unstabilized S, but showed no evidence of cross-reactivity to SARS-CoV-2 S2 or to endemic CoV (Figure 6A). Because the overwhelming majority of neutralizing antibodies target the RBD, these results suggest that RBD-specific antibody responses raised by natural infection are unlikely to exhibit exceptionally broad CoV neutralization activity. Indeed, SARS-CoV-2 RBD-specific antibodies showed low, albeit detectable, cross-reactivity toward even SARS-CoV S and S1.\n\nSimilarly, across all isotypes, antibody pools purified based on binding to stabilized SARS-CoV-2 S-2P showed the expected cross-reactivity to SARS-CoV-2 RBD, S2, unstabilized S, and stabilized S with six proline substitutions (S-6P) (Figure 6B). However, while both IgA and IgG components of SARS-CoV-2 S-2P-specific serum antibody fractions showed binding to OC43, cross-reactive IgM was not evident. Similarly, IgA and IgG, but not IgM, specific for SARS-CoV-2 S2 bound as expected to SARS-CoV-2 proteins as well as OC43, SARS-CoV, MERS, and other endemic CoV S2 domains (Figure 6C).\n\nLastly, OC43 S-specific antibodies were similarly purified and profiled for cross-reactivity. Despite the presumption that subjects had not experienced OC43 infection recently, IgM, IgA, and IgG to OC43 S were all successfully enriched (Figure 6D). IgA and IgM fractions showed cross-reactivity to a broad array of endemic CoV S but not S1 proteins. Likewise, OC43-specific IgA and IgG antibodies showed cross-reactivity to SARS-CoV-2 proteins containing the S2 domain. In contrast, OC43 S-specific IgM antibodies showed elevated recognition of diverse pandemic, pathogenic, and endemic S proteins in unstabilized forms, but a lack of recognition of stabilized prefusion conformations of CoV-2 spike, or the S1 domains of most other CoV tested. Given binding to whole S but not the S1 domain, this recognition is presumably principally driven via recognition of S2.\n\n### Immunization with stabilized spike changes cross-reactivity profiles\n\nBased on the differential ability of affinity-purified antibodies to recognize stabilized and unstabilized forms of CoV spike proteins, we next sought to determine whether responses to natural infection differ from those that result from mRNA vaccination with stabilized SARS-CoV-2 spike (S-2P). To investigate this possibility, antibody responses were analyzed in two cohorts of pregnant women (Table 1) who were either infected (n = 38) or vaccinated (n = 50) during their third trimester, as well as a validation cohort of healthy vaccinated subjects (n = 37). Fascinatingly, despite inducing considerably greater levels of SARS-CoV-2-specific antibodies, immunization with stabilized spike (S-2P) failed to result in elevated IgG responses to endemic CoV among pregnant women (Figure 7). Similarly, elevated levels of OC43-reactive IgA responses were not observed among vaccinated mothers, and neither infected nor vaccinated mothers showed elevated levels of OC43-reactive IgM (Figure 7\u2014figure supplement 1). These differing immunogenicity profiles suggest that the presentation of native spike in the context of natural infection and stabilized spike in the context of mRNA vaccination are distinct. Lastly, to confirm this observation, responses, a validation cohort of mRNA-vaccinated healthy adults was evaluated (Table 1). In this cohort, while IgG responses to OC43 were statistically significantly elevated for S and S2 antigens, the effect was small (<2.5-fold) (Figure 7); elevated IgA or IgM responses were not observed (Figure 7\u2014figure supplement 1).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig7-v1.jpg)\n\n**Figure 7.:** IgG responses to SARS-CoV-2 (top) and OC43 (bottom) spike proteins. For each CoV strain, responses to S (left), the S2 domain (center), and stabilized S (S-2P, right) are shown. Responses in SARS-CoV-2-na\u00efve subjects are indicated in black, SARS-CoV-2-infected subjects in light blue, and SARS-CoV-2-vaccinated (mRNA) subjects in dark blue. Pregnant subjects are indicated with triangles. Statistical significance by ANOVA with Dunnett\u2019s correction (*p<0.05, **p<0.005, ****p<0.0001). Fold changes between mean response levels in seropositive and na\u00efve cohorts are shown below each graph.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Box plots of IgM (top) and IgA (bottom) responses to SARS CoV-2 S-2P (left) and OC43 (right) S, S2, and S-2P. Statistical significance by ANOVA with Dunnett\u2019s correction.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig7-figsupp2-v1.jpg)\n\n**Figure 7\u2014figure supplement 2.:** Heatmap of filtered and hierarchically clustered SARS CoV-2-specific Ab features defined by multiplex assay among contemporaneous commercial na\u00efve control subjects and vaccinated pregnant subject cohorts. Responses were scaled and centered by feature, and the scale was truncated at \u00b12 SD. Antigen specificity (Fv) and Fc characteristics (Fc) are indicated in the color bars. Cohort group is shown in the cohort color bar, with control subjects illustrated in red and vaccinated subjects in blue.\n\nIn sum, elevated IgA and IgG but not IgM responses to the endemic CoV OC43 were observed in five distinct cohorts, including acutely infected, cross-sectional, and longitudinal convalescent cohorts. In contrast, two cohorts of subjects immunized with stabilized spike in the form of mRNA-based vaccines showed no (IgA and IgM) or only a small (IgG only, and in only one cohort) elevation of binding to endemic CoV OC43 (Figure 8). In combination with the lack of boosting of responses that cross-react with endemic CoV, the high levels of neutralization activity observed to result from vaccination (Jackson et al., 2020) suggest favorable antigenicity of the prefusion conformation of S, and that, if detrimental, the costs of original antigenic sin might be avoided by immunogen design.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig8-v1.jpg)\n\n**Figure 8.:** Mean fold changes in the magnitude of the IgG response to OC43 S2 between the indicated cohort and na\u00efve control subjects, or median fold change between pre- (na\u00efve) and post-infection timepoints (pre-post cohort at 1 and 3 months) for the longitudinal cohort. Dotted line indicates no change. Vaccinated (vax) and infected cohorts are indicated in dark and light blue, respectively.\n\n## Discussion\n\nCross-reactivity of endemic CoV antibodies against SARS-CoV-2 is of potential clinical relevance. The original antigenic sin hypothesis suggests that preexisting immunity results in the reactivation of a response to an earlier strain, as opposed to the formation of an unbiased response against the current strain. While this recall could offer temporal advantages, it may reduce the formation of neutralizing antibodies, thereby dampening effective clearance of the novel virus, as has recently been reported in mouse models (Lapp et al., 2021; Lin et al., 2022). Seminal studies of responses to influenza, based on epidemiology, modeling, and repertoire profiling, suggest that the antibodies generated from childhood exposure to influenza are \u2018imprinted\u2019 and exert a major influence on the nature of the antibody response elicited upon subsequent exposures in humans (Francis et al., 1947; Fonville et al., 2014; Kucharski et al., 2015; Gostic et al., 2016; Lee et al., 2019). It has been suggested that this phenomenon may exist in SARS-CoV-2 infection (Aydillo et al., 2021).\n\nTo better understand the role that prior exposure to CoV plays in antibody responses to SARS-CoV-2, we examined antigen-specific antibody responses against endemic and pandemic human CoV in subjects 1 month after SARS-CoV-2 infection. We measured heightened OC43-specific responses in SARS-CoV-2 convalescent subjects when compared to na\u00efve controls and observed that the magnitude of these responses correlated with responses to SARS-CoV-2 spike protein and the S2 subdomain. Separately, we observed OC43-specific IgG, but not IgM, in acutely infected subjects 2 weeks post-positive COVID-19 diagnosis, indicating that these elevated responses were not likely to result from newly induced antibody lineages with cross-reactivity to OC43. Testing of serum samples pre- and post-SARS-CoV-2 infection reinforced the hypothesis that preexisting clonal families were boosted by the SARS-CoV-2 infection.\n\nBy isolating antigen-specific antibodies from convalescent serum, we determined that antibodies targeting SARS-CoV-2 S-2P and S2, but not the RBD, are cross-reactive with the spike of OC43. Similarly, antibodies isolated using OC43 were cross-reactive with SARS-CoV-2 S-2P and S2 but not the RBD. These results indicate that the cross-reactivity between these viral spike proteins is principally linked to the better-conserved S2 domain. Consistent with the observation that neutralizing antibodies tend to target the RBD of SARS-CoV-2 (Ju et al., 2020), we determined that both OC43 S-specific and SARS-CoV-2 S2-specific antibodies were non-neutralizing.\n\nOver the course of this work, differing degrees of cross-reactivity were observed depending on whether prefusion-stabilized or unstabilized forms of S were used. In a comparison of naturally infected and vaccinated subjects representing exposure to unstabilized and proline-stabilized S antigens, respectively, the immunogens starkly contrasted. The immune response that resulted from vaccination with SARS-CoV-2 S protein stabilized in the prefusion conformation did not share the degree of cross-reactivity observed in those recovering from COVID-19. Reciprocally, elevated responses to stabilized OC43 were not observed in either infection or vaccination cohorts. Collectively, this data suggests both the critical importance of the conformational state of S to resulting humoral responses, but also the prevalence of epitopes that are not shared between pre- and postfusion or other conformations.\n\nWhereas numerous studies have focused on the antibody responses elicited from vaccination toward the SARS-CoV-2 S protein and specifically the RBD, little is known about the effect previous exposure to endemic CoV may have on vaccination. However, our observations of limited boosting in the context of vaccination agree with other recent reports (Skelly et al., 2021; Amanat et al., 2021). Evaluation of a cohort vaccinated with a nonstabilized form of S will be required to begin to elucidate whether this is a feature of the stabilization itself, the mRNA-based vaccine modality, or if some other aspect of the vaccine formulation is responsible. Finally, this evidence of cross-reactivity has implications for the design of vaccines targeting SARS-CoV-2 variants. There is a risk that subsequent antibody responses might disregard the novel epitopes in favor of those already more familiar, although it should be emphasized that cross-reactivity was not a deterrent to the development of multiple highly efficacious SARS-CoV-2 vaccines.\n\nLimitations of this study include the use of several small cohorts, some collected from distinct geographic locations, from subjects of varying age, who experienced differing disease severity, with collection at disparate time intervals from infection/vaccination, and who were not confirmed to lack a recent exposure to endemic CoV. While all natural infection cohorts showed evidence of boosting toward the endemic CoV OC43, it would be beneficial to survey boosting in cohorts that better span a range of disease severity and ages to examine whether those variables impact the observed boosting effect and outcomes of infection. To the extent that question has been investigated, it appears that boosting of responses to endemic CoV may be associated with poorer responses to SARS-CoV-2 (Aydillo et al., 2021).\n\nLikewise, while both vaccination cohorts showed an absence of or reduction in boosting of cross-reactive responses, whether this absence is beneficial or detrimental cannot be determined from the data presented here. While some studies of natural infection have suggested that these boosted responses are not associated with protection, but instead with more severe disease (Guo et al., 2021; Aydillo et al., 2021; Dugan et al., 2021; Lin et al., 2022; Anderson et al., 2021; Gombar et al., 2021), others have supported the opposite conclusion (Aran et al., 2020; Dugas et al., 2021a; Dugas et al., 2021b). Collectively, these natural infection studies are challenged by the inability to distinguish between correlation and causation, and to separate contributions from humoral from cellular memory. While cross-reactive antibodies evaluated in this and other studies were non-neutralizing, neutralization is not the sole mechanism by which antibodies confer protection. Cross-reactive antibodies could interact with Fc receptors found on the surface of innate immune cells and promote protective effector function activities, including antibody-dependent cellular phagocytosis and antibody-dependent cellular cytotoxicity (Fox et al., 2019; Earnest et al., 2019; Clark, 1997). To this end, a subset of monoclonal antibodies isolated from SARS-CoV patients that were able to cross-react with, but not neutralize, SARS-CoV-2 were able to confer protection or reduce viral spread in mouse models (Shiakolas et al., 2021; Beaudoin-Bussi\u00e8res et al., 2022). Indeed, both passive transfer experiments of monoclonal antibodies (Atyeo et al., 2021; Suryadevara et al., 2021; Tortorici et al., 2020; Winkler et al., 2021; Chan et al., 2021; Sch\u00e4fer et al., 2021) and evaluation of polyclonal antibodies raised in the context of vaccination or infection (Alter et al., 2021; Francica et al., 2021; Adeniji et al., 2021) have shown that effector mechanisms contribute to antiviral activity in vivo. This evidence extends beyond correlative observations (Tortorici et al., 2020; Alter et al., 2021) to include mechanistic (Peeri et al., 2020) evidence of in vivo contributions via Fc sequence engineering to knock out or enhance these activities (Suryadevara et al., 2021; Winkler et al., 2021; Yamin et al., 2021), as well as on the basis of depletion of effector cells (Winkler et al., 2021). A full understanding of the contributions of effector activities of cross-reactive antibodies in the context of polyclonal responses in humans in general is also complicated by the likelihood that different S2 structural states may exist and different epitopes may be presented in the context of virions and infected cells, or among different tissue sites.\n\nIn sum, this study provides evidence that antibodies targeting OC43 are robustly boosted in response to SARS-CoV-2 infection but not vaccination with stabilized S, and that the S2 subdomain of the spike protein is likely responsible for triggering a recalled, IgG-dominated response (Figure 9). While non-neutralizing, the role of these cross-reactive antibodies in the context of infection is not yet known. Further work aimed at characterizing the effector function potential of these antibodies and understanding their role in vaccine-mediated protection could provide a more complete picture of the relative risks and benefits of this recall response relevant to vaccine design, particularly in the context of viral variants of concern.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig9-v1.jpg)\n\n**Figure 9.:** Antibody responses to SARS-CoV-2 and endemic CoV spike proteins were measured in diverse cohorts. While antibodies to SARS-CoV-2 were induced across all isotypes, only IgA and IgG responses to endemic CoV were robustly boosted, and only among naturally infected but not vaccinated individuals. These recalled, cross-reactive responses to endemic CoV primarily recognized the better-conserved S2 domain and were non-neutralizing. While other antiviral activities of broadly cross-reactive S2-specifc antibodies are not known, the differing antigenicity of natural infection and vaccination with stabilized prefusion spike has potential implications for the breadth and level of protection afforded by each.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>H1N1 HA1</td>\n      <td>Immune Technology</td>\n      <td>IT-003-00110p</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>HSV gE</td>\n      <td>Immune Technology</td>\n      <td>IT-005-005p</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Tetanus toxoid</td>\n      <td>Sigma</td>\n      <td>676570-37-9</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>SARS-CoV-2 N</td>\n      <td>Immune Technology</td>\n      <td>IT-002-033Ep</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>SARS-CoV-2 fusion peptide</td>\n      <td>New England Peptide</td>\n      <td></td>\n      <td>LCBiot-SKPSKRSFIEDLLFNKVTLADAGFIKQYGD</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>SARS-CoV-2 S1</td>\n      <td>ACROBiosystems</td>\n      <td>S1N-C52H3-100ug</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>SARS-CoV-2 RBD</td>\n      <td>BEI Resources</td>\n      <td>NR-52366</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>SARS-CoV-2 S2</td>\n      <td>Immune Technology</td>\n      <td>IT-002-034p</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>SARS-CoV-2 S-2P</td>\n      <td>Wrapp et al., 2020</td>\n      <td></td>\n      <td>Produced in Expi 293</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>SARS-CoV-2 S-6P</td>\n      <td>Hsieh et al., 2020</td>\n      <td></td>\n      <td>Produced in Expi 293</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>WIV1 S-2P</td>\n      <td>Plasmid provided by Jason McLellan</td>\n      <td></td>\n      <td>Produced in Expi 293</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>SARS-CoV-1 S</td>\n      <td>Sino Biological</td>\n      <td>40634-V08B</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>SARS-CoV-1 S1</td>\n      <td>Sino Biological</td>\n      <td>40150-V08B1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>MERS S</td>\n      <td>Sino Biological</td>\n      <td>40069-V08B</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>MERS S1</td>\n      <td>Sino Biological</td>\n      <td>40069-V08B1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>OC43 S</td>\n      <td>Sino Biological</td>\n      <td>40607-V08B</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>OC43 S-2P</td>\n      <td>Plasmid provided by Jason McLellan</td>\n      <td></td>\n      <td>Produced in HEK 293F</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>OC43 S2</td>\n      <td>Sino Biological</td>\n      <td>40069-V08B</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>229E S</td>\n      <td>Sino Biological</td>\n      <td>40601-V08H</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>229E S1</td>\n      <td>Sino Biological</td>\n      <td>40605-V08H</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>HKU1 S</td>\n      <td>Sino Biological</td>\n      <td>40606-V08H</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>HKU1 S1</td>\n      <td>Sino Biological</td>\n      <td>40606-V08H</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>NL63 S</td>\n      <td>Sino Biological</td>\n      <td>40606-V08B</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>NL63 S1</td>\n      <td>Sino Biological</td>\n      <td>40604-V08H</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human IgG Fc-PE (goat polyclonal)</td>\n      <td>SouthernBiotech</td>\n      <td>1030-09</td>\n      <td>Used at 0.65 \u00b5g/mL. 40 \u00b5L used per well in 384-well plates</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human IgG1 Fc-PE (mouse monoclonal)</td>\n      <td>SouthernBiotech</td>\n      <td>9054-09</td>\n      <td>Used at 0.65 \u00b5g/mL. 40 \u00b5L used per well in 384-well plates</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human IgG2 Fc-PE (mouse monoclonal)</td>\n      <td>SouthernBiotech</td>\n      <td>9070-09</td>\n      <td>Used at 0.65 \u00b5g/mL. 40 \u00b5L used per well in 384-well plates</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human IgG3 Fc-PE (mouse monoclonal)</td>\n      <td>SouthernBiotech</td>\n      <td>9210-09</td>\n      <td>Used at 0.65 \u00b5g/mL. 40 \u00b5L used per well in 384-well plates</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human IgG4 Fc-PE (mouse monoclonal)</td>\n      <td>SouthernBiotech</td>\n      <td>9200-09</td>\n      <td>Used at 0.65 \u00b5g/mL. 40 \u00b5L used per well in 384-well plates</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human IgA Fc-PE (goat polyclonal)</td>\n      <td>SouthernBiotech</td>\n      <td>2050-09</td>\n      <td>Used at 0.65 \u00b5g/mL. 40 \u00b5L used per well in 384-well plates</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human IgA1 Fc-PE (mouse monoclonal)</td>\n      <td>SouthernBiotech</td>\n      <td>9130-09</td>\n      <td>Used at 0.65 \u00b5g/mL. 40 \u00b5L used per well in 384-well plates</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human IgA2 Fc-PE (mouse monoclonal)</td>\n      <td>SouthernBiotech</td>\n      <td>9140-09</td>\n      <td>Used at 0.65 \u00b5g/mL. 40 \u00b5L used per well in 384-well plates</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human IgM Fc-PE (mouse monoclonal)</td>\n      <td>SouthernBiotech</td>\n      <td>9020-09</td>\n      <td>Used at 0.65 \u00b5g/mL. 40 \u00b5L used per well in 384-well plates</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human IgM mouse/bovine/horse SP ads-UNLB (goat polyclonal)</td>\n      <td>SouthernBiotech</td>\n      <td>2023-01</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Fab2 anti-human Fab2 (min \u00d7 abs) (goat polyclonal)</td>\n      <td>Jackson Laboratories</td>\n      <td>109-006-097</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human IgA (goat polyclonal)</td>\n      <td>SouthernBiotech</td>\n      <td>2053-01</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HEK Freestyle 293F</td>\n      <td>Thermo Fisher</td>\n      <td>R79007</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>Expi293F</td>\n      <td>Thermo Fisher</td>\n      <td>A14527</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>293T-ACE2</td>\n      <td>Takara</td>\n      <td>631289</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>VSV-SARS-CoV-2</td>\n      <td>Letko et al., 2020</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Dynabeads</td>\n      <td>Thermo Fisher</td>\n      <td>65011</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>EDC</td>\n      <td>Thermo Fisher</td>\n      <td>22980</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Sulfo-NHS</td>\n      <td>Thermo Fisher</td>\n      <td>24510</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad Prism version 9</td>\n      <td>GraphPad Prism version 9</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ChimeraX</td>\n      <td>ChimeraX</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>R version 3.6.1</td>\n      <td>R</td>\n      <td></td>\n      <td>Packages: pracma, ggplot2, pheatmap</td>\n    </tr>\n  </tbody>\n</table>\n\n### Structure visualization and manipulation\n\nThe sequence alignments were performed using Geneious 2021.1.1. Sequences and coordinates for CoV spike proteins were retrieved from the Protein Data Bank (PDB) entries SARS-CoV-2 (PDB 6XKL), 229E (PDB 6U7H), OC43 (PDB 6OHW), NL63 (PDB 5SZS), HKU1 (PDB 5I08), and SARS-CoV-2 Closed (PDB 6X6P). SARS-CoV-2 was structurally aligned to the other models by domain using the MatchMaker function with default parameters and visualized using Chimera version 1.15 (Pettersen et al., 2004). For structural characterization of conservation among the 60 complete genomes of the Coronaviridae suborder (https://www.ncbi.nlm.nih.gov/genomes/GenomesGroup.cgi?taxid=11118), Batch Entrez was used to find 585 associated proteins, which were then further downselected to spike proteins (N = 56) and aligned using Clustal Omega. This alignment was used to render by conservation and visualized using ChimeraX version 1.2 (Goddard et al., 2018).\n\n### Human subjects\n\nInitial study cohorts comprised 126 adult subjects interested in donating COVID-19 convalescent plasma. All were diagnosed with SARS-CoV-2 infection by PCR-based assays of nasopharyngeal swab, met the standard eligibility criteria for blood donation, and were collected in the Baltimore, MD, and Washington DC area (JHMI cohort), as previously described (Klein et al., 2020) and partially reported in Natarajan et al., 2021, and 26 SARS-CoV-2 convalescent individuals from the Lebanon, New Hampshire area (DHMC cohort) and partially reported previously in Butler, 2020. SARS-CoV-2 infection status was confirmed in all subjects by nasopharyngeal swab PCR. Plasma (JHMI) or serum (DHMC) was collected approximately 1 month after symptom onset or first positive PCR test.\n\nThe acute infection cohort comprised 10 subjects under the age of 30 with mostly asymptomatic infections diagnosed by positive results of PCR swabs in twice-weekly screening tests. Serum samples were collected 2 weeks following a positive test result. Three subsequently infected subjects over the age of 60 with mild symptoms for which pre-pandemic serum samples had been banked were evaluated pre-infection and at 2 and 10 weeks post-infection were also evaluated.\n\nTo support comparisons of natural infection and vaccination, two cohorts of pregnant women were evaluated. The first was a cohort of 38 subjects collected in Belgium who tested positive for SARS-CoV-2 in the third trimester of pregnancy. The second was a cohort of 50 subjects who were vaccinated with the Pfizer/BioNTech (BNT162) SARS-CoV-2 vaccine in the third trimester of pregnancy in Israel. Maternal serum samples were collected at the time of delivery.\n\nA final cohort of 37 healthy adults vaccinated with Pfizer/BioNTech (BNT162) (n = 35) or Moderna (n = 2) vaccines whose serum was collected approximately 1 week after the second vaccine dose was evaluated to confirm observations of the differing immunogenicity observed among pregnant vaccine recipients.\n\nNegative controls included samples from 15 na\u00efve subjects collected from the Hanover, New Hampshire area, and from 38 subjects collected between April 2020 and January 2021 with negative results by serology (Figure 7\u2014figure supplement 2) by a commercial vendor (BioIVT).\n\nHuman subject research was approved by the Johns Hopkins University School of Medicine\u2019s Institutional Review Board, the Dartmouth-Hitchcock Medical Center, CHU St. Pierre, Hadassah Medical Center, and BioIVT clinical site Committees for the Protection of Human Subjects as described in Table 1. Participants provided informed written consent. Table 1 provides the basic clinical and demographic information for each cohort.\n\n### Fc array assay\n\nSARS-CoV-2 antigens, including spike protein in its trimeric and subdomain forms (i.e., S1, S2, RBD), endemic CoV, and the control antigens influenza HA and tetanus toxoid were covalently coupled to Luminex Magplex magnetic microspheres by two-step carbodiimide chemistry as previously described (Brown et al., 2012). Anti-isotype and subclass primary antibodies were used to quantify the total amount of each immunoglobulin isotype in a sample before (load) and after (eluate) antigen-specific antibody purification. The load was diluted in 1\u00d7 PBS by 1:100 followed by seven fivefold serial dilutions. The eluate was diluted beginning from 1:10 with six fivefold serial dilutions. Antibody isotypes and subclasses were detected using R-phycoerythrin (PE)-conjugated secondary Abs as previously described (Brown et al., 2017). A FlexMap 3D array instrument was then used to measure the median fluorescence intensity (MFI) of the bead sets.\n\n### Antigen-specific antibody purification\n\nHuman CoV antigens were covalently attached to magnetic Dynabeads (Thermo Fisher, 65011) using carbodiimide chemistry and as per the manufacturer\u2019s instructions. Briefly, 1 nmol of antigen was coupled to 300 \u03bcL of beads using a solution of 10 mg/mL EDC and 10 mg/mL sulfo-NHS. Bead activation and antigen coupling took place at room temperature with end-over-end mixing for 30 min and overnight, respectively. Following washes, the beads were reconstituted to 150 \u03bcL in PBS-TBN (Teknova, P0220).\n\nThe initial DHMC and JHMI cohorts were downselected to a total of 30 subjects, 15 from each cohort, representing a range of responses. Briefly, the self-reported case severities provided by the subjects of the DHMC cohort were used to select four mild, five moderate, and six severe subjects\u2019 samples. From the JHMI cohort, the subjects were ranked by their anti-spike titers and the five subjects closest to the 25th, 50th, and 75th percentiles were selected for purification.\n\nIn a nonbinding, clear-bottom 96-well plate, 5 \u03bcL of beads were diluted with 5 \u03bcL of 1\u00d7 PBS before adding 50 \u03bcL of serum or plasma to the well. The plate was covered and shook at 800 rpm for 2.5 hr at room temperature. Using a magnetic base insert from a plate washer, the beads were pulled down from suspension for 1 min before decanting the waste. The beads were washed three times using 100 \u03bcL of PBS-TBN and 3 min of shaking for each wash. Following the third wash, the magnetic separation and decanting step was followed up by pipetting all residual buffer out of the wells while the plate sat on the magnetic base. Antibodies specific to the antigen found on the beads were eluted using 20 \u03bcL of 1% formic acid (pH 2.9). After incubating with shaking for 10 min at room temperature and separating the beads, the eluate was pipetted from each well and transferred to a plate with wells containing 8 \u03bcL of 0.5 M sodium phosphate.\n\n### Neutralization assay\n\nNeutralization was performed using a VSV-SARS-CoV-2 pseudovirus assay as previously described (Butler, 2020; Letko et al., 2020). Briefly, serum or plasma samples were serially diluted twofold starting from a 1:25 dilution and incubated at 37\u00b0C for 1 hr with VSV-SARS-CoV-2 pseudovirus. Virus-serum/plasma mixtures were then added to pre-plated 293T-ACE2-expressing target cells in white 96-well plates at a final volume of 100 \u03bcL per well and incubated at 37\u00b0C for 24 hr. To test for neutralization by antibody eluates, samples were first concentrated 10-fold using Amicon Ultra 0.5 mL centrifugal filter devices (molecular weight cutoff of 100K Da) followed by twofold serial dilution from 1:30, incubation with VSV-SARS-CoV-2 S pseudovirus, and addition of the mixtures to 293T-ACE2 target cells as described. Luciferase activity was measured using the Bright-Glo system and percent neutralization determined relative to control wells consisting of 293T-ACE2 cells infected with the pseudovirus alone.\n\n### Data analysis\n\nBasic statistical data analysis and visualization or raw Fc Array data were performed using GraphPad Prism, with statistical tests described in each figure legend. Heatmaps were visualized using the \u2018pheatmap\u2019 (pheatmap, 2019) package with hierarchical cluster analysis (Bridges, 2016) defined using Manhattan distance (Minkowski, 1910) in R version 3.6.1. Fc Array features were log transformed, then scaled and centered by their standard deviation from the mean (z-score).\n\nIn order to quantify the enrichment of antigen-specific antibodies, individual features (antigen-detection pair) were plotted relative to the total immunoglobulin isotype in serum across a titration range for each sample. A generalized additive model (GAM) (Hastie and Tibshirani, 2017) with a cubic spline basis was used to fit a smoothed curve to load and eluate sample data using the \u2018ggplot2\u2019 package in R (Wickham, 2016). To quantify the difference between the load and eluate curves, we fit a separate GAM curve to the differences of the predicted values from the load and eluate GAM curves over total antibody as previously suggested (Rose et al., 2012). We approximated the area under the difference curve (AUC) using the trapezoidal rule (Whittaker, 1967; Poisson, 1827) in the \u2018pracma\u2019 (Borchers, 2021) package in R.\n\n### Data availability\n\nData that support the findings of this study are available at https://github.com/AckermanLab/Crowley_et_al_SARS-CoV-2_Boosting, (copy archived at swh:1:rev:25dbaa42711c91ca06661794e8e11ab72eacdbae; AckermanLab, 2021).\n",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "41bf42f7-249d-4e7b-8703-332fc5e0f624",
+      "submission_id": "bf5eb754-bb5d-4397-bdb4-4d7e087d3c80",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Tomohiro Kurosaki, https://ror.org/035t8zc32 Osaka University Japan\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75228.sa0](https://doi.org/10.7554/eLife.75228.sa0)\n\nThis study is aimed to determine whether infection or vaccination affects activation of preexisting memory B cells. The data are clear and have implications for further development of a new generation of vaccines.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Tomohiro Kurosaki, https://ror.org/035t8zc32 Osaka University Japan\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75228.sa1](https://doi.org/10.7554/eLife.75228.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Boosting of cross-reactive antibodies to endemic coronaviruses by SARS-CoV-2 infection but not vaccination with stabilized spike\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen Tadatsugu Taniguchi as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) It was confused by the data in Figure 7 where the pregnant vaccinated cohort showed undetectable level of cross-reactivity, which is understandable based on data in Figure 1-6, but the vaccinated cohort showed detectable levels of cross-reactivity against OC43. From the information provided in the method section, I think the pregnant cohort had a longer collection time after 2nd vaccination compared to the non-pregnant cohort which is collected 1 week after their 2nd shot. Based on this, I presume that vaccination with stabilized-spike induces acute, short-lived cross-reactivity against endemic CoV. Or is this due to CoV-2 infection history in the non-pregnant cohort?\n\n2) The number of na\u00efve samples is different in the main text (page 7 line 94) and the methods (page 13 line 377).\n\n3) Please provide the time window of historical negative control sample collection.\n\n4) For readers, authors had better to discuss the Fc-mediated vaccine effect of non-neutralizing antibodies especially on the point of how non-neutralizing antibodies, such as ones described in this manuscript targeting the S2 domain (mainly exposed in the denatured state), recognize the denatured form of spike proteins during infection and how the immune complex of those denatured spike proteins and antibodies can turn into in vivo effect of protection as described in the Discussion section by authors.\n\nAs seen in the below reviewers' comments, all reviewers are essentially positive for this manuscript. But, they have several concerns.\n\nReviewer #1 (Recommendations for the authors):\n\nThis is a nice series of serological careful analysis, although isolating single cell Igs, and transfer of cross-reactive Abs into SARS-CoV2-infected mice are desirable. Nevertheless, this study have added the proof-of-concept that novel pandemic SARS-CoV-2 viruses, like influenza viruses, still can activate the pre-existing cross-reactive memory B cells.\n\nReviewer #2 (Recommendations for the authors):\n\n1. I was confused by the data in Figure 7 where the pregnant vaccinated cohort showed undetectable level of cross-reactivity, which is understandable based on data in Figure 1-6, but the vaccinated cohort showed detectable levels of cross-reactivity against OC43. From the information provided in the method section, I think the pregnant cohort had a longer collection time after 2nd vaccination compared to the non-pregnant cohort which is collected 1 week after their 2nd shot. Based on this, I presume that vaccination with stabilized-spike induces acute, short-lived cross-reactivity against endemic CoV. Or is this due to CoV-2 infection history in the non-pregnant cohort?\n\n2. The number of na\u00efve samples is different in the main text (page 7 line 94) and the methods (page 13 line 377).\n\n3. Please provide the time window of historical negative control sample collection.\n\nReviewer #3 (Recommendations for the authors):\n\nData presented in this manuscript using human samples are highly helpful for future vaccine studies. The authors carefully mention that the cross-reactive epitope which they found is not proved to be directly linked to the biological significance of the vaccine outcome. I have no major concern with both the data presentation and the manuscript. For readers, authors might want to discuss the Fc-mediated vaccine effect of non-neutralizing antibodies especially on the point of how non-neutralizing antibodies, such as ones described in this manuscript targeting the S2 domain (mainly exposed in the denatured state), recognize the denatured form of spike proteins during infection and how the immune complex of those denatured spike proteins and antibodies can turn into in vivo effect of protection as described in the Discussion section by authors.\n",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8a671f2a-48c0-41f5-b8b1-873fd3d68636",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C1",
+      "claim": "The N-terminal domain (NTD) of SARS-CoV-2 that contains the RBD has lower homology to the corresponding subdomains of other CoVs than do the S2 subdomains.",
+      "claim_type": "EXPLICIT",
+      "source": "the N-terminal domain (NTD) of SARS-CoV-2 that contains the RBD responsible for interacting with human angiotensin-converting enzyme 2 (ACE2) and initiating viral entry has lower homology to the corresponding subdomains of other CoVs than do the S2 subdomains where the fusion peptide, heptad repeat, and central helix required for fusion are located (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by sequence alignment data shown in Figure 1A and structural analysis described in the text",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "b1b54144-3b11-41d4-86b7-1d8f159c048a",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C2",
+      "claim": "Both the NTD and RBD of the SARS-CoV-2 spike protein are poorly conserved across CoV.",
+      "claim_type": "EXPLICIT",
+      "source": "structural comparison of various subdomains of the SARS-CoV-2 S protein shows that both the NTD and RBD of the spike protein are poorly conserved across CoV (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural comparison data presented in Figure 1B",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "81fb0767-119d-428c-8812-cb3598047c85",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C3",
+      "claim": "Superimposition of the SARS CoV-2 S1 and S2 domains with OC43 shows high structural conservation in S2 and the NTD, and a complete lack of homology in the RBD.",
+      "claim_type": "EXPLICIT",
+      "source": "Superimposition of the SARS CoV-2 S1 and S2 domains with the most well-conserved widely circulating endemic human CoV, OC43, show high structural conservation in S2 and the NTD, and a complete lack of homology in the RBD that is consistent with the differing entry receptors used by these \u03b2-CoV (Figure 1C, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural superimposition data shown in Figure 1C and Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "e912e727-36eb-4a05-ad5f-d3cc813c6c4b",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C4",
+      "claim": "Preexisting antibodies raised against endemic human CoV are more likely to target the better-conserved regions of SARS-CoV-2 such as S2, and less likely to recognize the RBD.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on both structural and sequence homology, it stands to reason that preexisting antibodies raised against endemic human CoV are more likely to target the better-conserved regions of SARS-CoV-2 such as S2, and less likely to recognize the RBD (Yuan et al., 2020; Wrapp et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on structural and sequence homology data, supported by citations to prior work",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "10ddf178-daec-4d85-b069-b3217f57554f",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C5",
+      "claim": "Elevated serum IgA and IgG but not IgM responses to whole S of diverse endemic CoV were frequently observed in SARS-CoV-2 convalescent subjects relative to na\u00efve controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Relative to SARS-CoV-2-na\u00efve controls, elevated serum IgA and IgG but not IgM responses to whole S of diverse endemic CoV were frequently observed (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "e1e2181a-11d1-4eda-97f3-7e5b2e7eb8a2",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C6",
+      "claim": "Elevated levels of OC43-specific responses in serum were most pronounced among endemic CoV, but were largely restricted to the S2 domain and whole unstabilized S.",
+      "claim_type": "EXPLICIT",
+      "source": "Among endemic CoV, elevated levels of OC43-specific responses in serum were most pronounced, but were largely restricted to the S2 domain and whole unstabilized S.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from serum analysis of convalescent subjects",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "1d859b7b-29a4-4066-a1b2-03354f0a300e",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C7",
+      "claim": "Elevated serum responses specific to the S1 domain of endemic CoV were not observed for any antibody isotype or subclass.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, elevated serum responses specific to the S1 domain of these CoV were not observed for any antibody isotype or subclass (Figure 2B, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2B and Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "9300e4ba-a191-4ed9-8d89-3dcba3ed37ec",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C8",
+      "claim": "Elevated responses to endemic CoV were most pronounced for \u03b2-CoV (OC43 and HKU1) but were present for \u03b1-CoV as well in the JHMI convalescent cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "Elevated responses were most pronounced for \u03b2-CoV (OC43 and HKU1) but were present for \u03b1-CoV as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from the JHMI convalescent cohort analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "445d5283-2bd7-4729-a273-bfad3da936a4",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C9",
+      "claim": "The absence of elevated IgM responses among convalescent subjects is consistent with recall of class-switched antibodies as opposed to the de novo elicitation of cross-reactive antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of elevated IgM responses among convalescent subjects is consistent with recall of class-switched antibodies as opposed to the de novo elicitation of cross-reactive antibodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the observed pattern of antibody isotypes in convalescent subjects",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "8b377ede-a74b-4726-bfe0-31b74e08706c",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C10",
+      "claim": "Elevated responses to OC43 S-2P among convalescent subjects in either cohort were not observed compared to na\u00efve controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas elevated responses to OC43 S-2P among convalescent subjects in either cohort were not observed compared to na\u00efve controls, responses to both OC43 S and OC43 S2 (available only for the smaller cohort) were observed for IgG, but not IgM (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "89a3fb43-91f4-4624-9a01-616468ba9ac8",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C11",
+      "claim": "Elevation of endemic CoV antibody responses was also observed in nasopharyngeal wash samples and stool.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect was not limited to serum; elevation of endemic CoV antibody responses was also observed in nasopharyngeal wash samples (Figure 2A and B, Figure 2\u2014figure supplement 1) and stool (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2A, 2B, and Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "28aad1d2-8cd4-4f0e-a1e7-ae7f74113017",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C12",
+      "claim": "Elevated responses in mucosal samples were restricted to IgG and/or IgA isotypes, consistent with cross-reactive antibodies being boosted in a recall response during SARS-CoV-2 infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, these elevated responses were restricted to IgG and/or IgA isotypes, consistent with cross-reactive antibodies being boosted in a recall response during SARS-CoV-2 infection, and were observed for whole S or the S2 domain, but not S1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the observed pattern of antibody isotypes in mucosal samples",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "5306ac01-ee28-4254-be8d-2556ac18ceba",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C13",
+      "claim": "Acutely infected subjects had robustly elevated levels of CoV-2 unstabilized S-specific IgG compared to na\u00efve controls at 2 weeks after a positive PCR diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "At this early timepoint, subjects appeared to have robustly elevated levels of CoV-2 unstabilized S-specific IgG compared to na\u00efve controls (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3A",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "34e5694b-1480-498e-9b6c-65506fcaa3fe",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C14",
+      "claim": "In acutely infected subjects, elevated responses to OC43 were observed for whole unstabilized S and the S2 domain, but not for the prefusion conformation-stabilized S-2P form of OC43 spike.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, these responses were observed for whole unstabilized S and the S2 domain, but not for the prefusion conformation-stabilized S-2P form of OC43 spike.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from acute infection cohort analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "3850a483-d012-49b2-8d18-bbd447102138",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C15",
+      "claim": "Only a minor increase in IgM recognizing unstabilized OC43 S was observed (less than twofold) in acutely infected subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, only a minor increase in IgM recognizing unstabilized OC43 S was observed (less than twofold) (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3A",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "67881eca-d8e7-4ac3-a37c-a240c626ee50",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C16",
+      "claim": "The isotype profiles in acute infection suggest a recalled rather than novel response against the relevant cross-reactive epitopes in S2 and unstabilized spike.",
+      "claim_type": "EXPLICIT",
+      "source": "Though cross-sectional in nature and reliant on a small number of subjects, these isotype profiles in acute infection nonetheless further suggest a recalled rather than novel response against the relevant cross-reactive epitopes in S2 and unstabilized spike, presumably in the postfusion conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the observed isotype profiles in acute infection cohort",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "3be456b3-9978-4862-965b-70eb5137f879",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C17",
+      "claim": "The median increase in OC43 S2-specific IgA and IgG were 3.7- and 20-fold, respectively, between the pre- and post-infection timepoints in the longitudinal cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "The median increase in OC43 S2-specific IgA and IgG were 3.7- and 20-fold, respectively, between the pre- and post-infection timepoints (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3B",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "b6c56f11-1603-42f5-a316-1b93d3752d66",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C18",
+      "claim": "The median change in OC43 S2-specific IgM was within twofold between pre- and post-infection timepoints.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the median change in OC43 S2-specific IgM was within twofold, providing further support that the elevated responses to endemic \u03b2-CoV are due to boosting of preexisting cross-reactive antibodies originally raised against homologous epitopes found in endemic CoV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from longitudinal cohort analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "7c9d01dc-9c49-4e6e-be9e-900bf157a86d",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C19",
+      "claim": "Boosting of IgG responses specific to the full-length spike of HKU1 was observed following SARS-CoV-2 infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Boosting of IgG responses specific to the full-length spike of another endemic \u03b2-CoV, HKU1, was also observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from longitudinal cohort analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "0df37d4c-30f2-41ae-b824-ff3aae11c996",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C20",
+      "claim": "IgG and IgA but not IgM responses to whole unstabilized S, but not the S1 domain, of HKU1 were elevated following SARS-CoV-2 infection.",
+      "claim_type": "EXPLICIT",
+      "source": "IgG and IgA but not IgM responses to whole unstabilized S, but not the S1 domain, of HKU1 were elevated following SARS-CoV-2 infection (Figure 3B, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3B and Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "ca155843-a8e2-49a8-95cf-3d9cc651543c",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C21",
+      "claim": "Recalled cross-reactive antibodies may be more likely to recognize both the better-conserved S2 domain and post- rather than prefusion conformations of spike.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results further suggest that recalled cross-reactive antibodies may be more likely to recognize both the better-conserved S2 domain and post- rather than prefusion conformations of spike.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the pattern of antibody responses to different spike conformations and domains",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "bd7b8dd5-45ee-47b0-ac6a-e9b357a1cb5e",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C22",
+      "claim": "The magnitude of IgG responses to CoV-2 S2 were well correlated to those binding unstabilized OC43 S (RP = 0.61).",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the magnitude of IgG responses to CoV-2 S2 were well correlated to those binding unstabilized OC43 S (RP = 0.61) and its S2 domain (RP = 0.45), they were less well correlated to responses to stabilized OC43 S-2P (RP = 0.29) (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis data shown in Figure 4A",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "0cd97ff3-d44e-442b-9a72-3a8344808da6",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C23",
+      "claim": "CoV-2-specific responses were better correlated to OC43 responses specific for unstabilized rather than stabilized spike.",
+      "claim_type": "EXPLICIT",
+      "source": "CoV-2-specific responses were better correlated to OC43 responses specific for unstabilized rather than stabilized spike.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by correlation analysis data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "8487761c-b67f-46e5-87a0-c66ea5d31370",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C24",
+      "claim": "IgG responses showed stronger correlative relationships with OC43 than did IgA, which were in turn stronger than IgM.",
+      "claim_type": "EXPLICIT",
+      "source": "IgG responses showed stronger relationships than did IgA, which were in turn stronger than IgM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by correlation analysis data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "776656ef-993d-4dd8-9c0c-81c27f1390a4",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C25",
+      "claim": "Among CoV-2 antigens tested, correlations with OC43 responses were strongest for the S2 domain and whole spike (S-2P), and weaker or absent for S1 and the RBD.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, among CoV-2 antigens tested, correlations with OC43 responses were strongest for the S2 domain and whole spike (S-2P), and weaker or absent for S1 and the RBD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by correlation analysis data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "86461b36-81ac-4a46-9a82-413e4058b0c3",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C26",
+      "claim": "The correlative relationships are consistent with recall of class-switched antibodies recognizing shared epitopes in the S2 domain from prior endemic CoV exposure induced by SARS-CoV-2 infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these correlative relationships are consistent with recall of class-switched antibodies recognizing shared epitopes in the S2 domain from prior endemic CoV exposure induced by SARS-CoV-2 infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the pattern of correlative relationships observed",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "e17bec15-ba06-4076-9ade-f317a020fcb3",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C27",
+      "claim": "OC43 S-specific fractions showed elevated recognition of CoV-2 S2 and S-2P, but not RBD.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, OC43 S-specific fractions showed elevated recognition of CoV-2 S2 and S-2P, but not RBD (Figure 5A), demonstrating molecular cross-reactivity as a general feature of polyclonal IgG responses in convalescent subjects.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by affinity purification and cross-reactivity testing data shown in Figure 5A",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "8c8d299e-53f1-4d2c-b894-a7d2a6c6bee5",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C28",
+      "claim": "IgG in the CoV-2 S2-specific fractions cross-reacted robustly with OC43 S, but no cross-reactivity in the IgM fraction was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, IgG in the CoV-2 S2-specific fractions cross-reacted robustly with OC43 S, but no cross-reactivity in the IgM fraction was observed, despite a robust IgM response to CoV-2 S2 (Figure 5B), suggesting that while SARS-CoV-2 infection elicits IgM responses to the S2 domain, these presumed de novo responses are not cross-reactive to OC43.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by affinity purification and cross-reactivity testing data shown in Figure 5B",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "bc038ae8-d708-49e1-9ebf-abf940fd67da",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C29",
+      "claim": "Purified CoV-2 RBD and S-2P-specific fractions induced robust neutralization.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas purified CoV-2 RBD and S-2P-specific fractions induced robust neutralization, neither purified OC43 S-specific nor SARS-CoV-2 S2 domain-specific serum antibodies had detectable neutralization activity (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by neutralization assay data shown in Figure 5C",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "651e6032-ce9c-41fd-9693-422d18af3183",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C30",
+      "claim": "Neither purified OC43 S-specific nor SARS-CoV-2 S2 domain-specific serum antibodies had detectable neutralization activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas purified CoV-2 RBD and S-2P-specific fractions induced robust neutralization, neither purified OC43 S-specific nor SARS-CoV-2 S2 domain-specific serum antibodies had detectable neutralization activity (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by neutralization assay data shown in Figure 5C",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "89012fbb-2a02-4b8d-b509-ef692fdc2fe1",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C31",
+      "claim": "IgM, IgA, and IgG antibodies purified based on binding to SARS-CoV-2 RBD cross-reacted with proline-stabilized spike (S-2P and S-6P) and, to a lesser extent, unstabilized S, but showed no evidence of cross-reactivity to SARS-CoV-2 S2 or to endemic CoV.",
+      "claim_type": "EXPLICIT",
+      "source": "IgM, IgA, and IgG antibodies purified based on binding to SARS-CoV-2 RBD cross-reacted with proline-stabilized spike (S-2P and S-6P) and, to a lesser extent, unstabilized S, but showed no evidence of cross-reactivity to SARS-CoV-2 S2 or to endemic CoV (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by affinity purification and cross-reactivity testing data shown in Figure 6A",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "28248f02-79b2-461c-800e-109fc66867c4",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C32",
+      "claim": "RBD-specific antibody responses raised by natural infection are unlikely to exhibit exceptionally broad CoV neutralization activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the overwhelming majority of neutralizing antibodies target the RBD, these results suggest that RBD-specific antibody responses raised by natural infection are unlikely to exhibit exceptionally broad CoV neutralization activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the lack of cross-reactivity of RBD-specific antibodies to endemic CoV and established knowledge about neutralizing antibodies",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "09b8d328-dd1e-458c-8cff-d92547e053fe",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C33",
+      "claim": "SARS-CoV-2 RBD-specific antibodies showed low, albeit detectable, cross-reactivity toward even SARS-CoV S and S1.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, SARS-CoV-2 RBD-specific antibodies showed low, albeit detectable, cross-reactivity toward even SARS-CoV S and S1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by affinity purification and cross-reactivity testing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "b7c2ba49-ba75-43fe-94f7-52829925966e",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C34",
+      "claim": "Both IgA and IgG components of SARS-CoV-2 S-2P-specific serum antibody fractions showed binding to OC43, but cross-reactive IgM was not evident.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while both IgA and IgG components of SARS-CoV-2 S-2P-specific serum antibody fractions showed binding to OC43, cross-reactive IgM was not evident.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by affinity purification and cross-reactivity testing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "cde458d4-9742-446d-9005-dcd564b67281",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C35",
+      "claim": "IgA and IgG, but not IgM, specific for SARS-CoV-2 S2 bound to SARS-CoV-2 proteins as well as OC43, SARS-CoV, MERS, and other endemic CoV S2 domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, IgA and IgG, but not IgM, specific for SARS-CoV-2 S2 bound as expected to SARS-CoV-2 proteins as well as OC43, SARS-CoV, MERS, and other endemic CoV S2 domains (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by affinity purification and cross-reactivity testing data shown in Figure 6C",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "3188781c-2fd4-4663-bd4d-7a04659a3f00",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C36",
+      "claim": "OC43 S-specific IgA and IgM fractions showed cross-reactivity to a broad array of endemic CoV S but not S1 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "IgA and IgM fractions showed cross-reactivity to a broad array of endemic CoV S but not S1 proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by affinity purification and cross-reactivity testing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "7cc50e94-f75b-479b-a1c4-25ad7869e644",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C37",
+      "claim": "OC43-specific IgA and IgG antibodies showed cross-reactivity to SARS-CoV-2 proteins containing the S2 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, OC43-specific IgA and IgG antibodies showed cross-reactivity to SARS-CoV-2 proteins containing the S2 domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by affinity purification and cross-reactivity testing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "31ceb17e-541f-44fa-a80c-b7eaeb302c05",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C38",
+      "claim": "OC43 S-specific IgM antibodies showed elevated recognition of diverse pandemic, pathogenic, and endemic S proteins in unstabilized forms, but a lack of recognition of stabilized prefusion conformations of CoV-2 spike, or the S1 domains of most other CoV tested.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, OC43 S-specific IgM antibodies showed elevated recognition of diverse pandemic, pathogenic, and endemic S proteins in unstabilized forms, but a lack of recognition of stabilized prefusion conformations of CoV-2 spike, or the S1 domains of most other CoV tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by affinity purification and cross-reactivity testing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "8040db23-308f-4386-a577-910859d4958f",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C39",
+      "claim": "Immunization with stabilized spike (S-2P) failed to result in elevated IgG responses to endemic CoV among pregnant women, despite inducing considerably greater levels of SARS-CoV-2-specific antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Fascinatingly, despite inducing considerably greater levels of SARS-CoV-2-specific antibodies, immunization with stabilized spike (S-2P) failed to result in elevated IgG responses to endemic CoV among pregnant women (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data comparing infected and vaccinated pregnant women shown in Figure 7",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "80d9d6ff-e617-4e7c-a360-5dd82d52b346",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C40",
+      "claim": "Elevated levels of OC43-reactive IgA responses were not observed among vaccinated mothers.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, elevated levels of OC43-reactive IgA responses were not observed among vaccinated mothers, and neither infected nor vaccinated mothers showed elevated levels of OC43-reactive IgM (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 7\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "8fc7f0d0-3c74-4002-9b55-80387c0027e8",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C41",
+      "claim": "In the validation cohort of mRNA-vaccinated healthy adults, while IgG responses to OC43 were statistically significantly elevated for S and S2 antigens, the effect was small (<2.5-fold).",
+      "claim_type": "EXPLICIT",
+      "source": "In this cohort, while IgG responses to OC43 were statistically significantly elevated for S and S2 antigens, the effect was small (<2.5-fold) (Figure 7); elevated IgA or IgM responses were not observed (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from vaccinated healthy adults shown in Figure 7 and Figure 7\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "7f759122-21be-4cf2-9e41-dc8b7d794db8",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C42",
+      "claim": "The differing immunogenicity profiles between natural infection and vaccination suggest that the presentation of native spike in the context of natural infection and stabilized spike in the context of mRNA vaccination are distinct.",
+      "claim_type": "EXPLICIT",
+      "source": "These differing immunogenicity profiles suggest that the presentation of native spike in the context of natural infection and stabilized spike in the context of mRNA vaccination are distinct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the observed differences in antibody responses between infected and vaccinated subjects",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "f4cde6af-dc46-4dcb-8a3f-15cd154cf976",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C43",
+      "claim": "Elevated IgA and IgG but not IgM responses to the endemic CoV OC43 were observed in five distinct cohorts of naturally infected subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, elevated IgA and IgG but not IgM responses to the endemic CoV OC43 were observed in five distinct cohorts, including acutely infected, cross-sectional, and longitudinal convalescent cohorts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental data across multiple cohorts",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "5bb5be6b-7f17-4c62-a8ee-6c56209427db",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C44",
+      "claim": "Two cohorts of subjects immunized with stabilized spike in the form of mRNA-based vaccines showed no (IgA and IgM) or only a small (IgG only, and in only one cohort) elevation of binding to endemic CoV OC43.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, two cohorts of subjects immunized with stabilized spike in the form of mRNA-based vaccines showed no (IgA and IgM) or only a small (IgG only, and in only one cohort) elevation of binding to endemic CoV OC43 (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Summary of experimental data from vaccinated cohorts shown in Figure 8",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "36ce9a92-434b-4d34-be58-030d48227baf",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C45",
+      "claim": "The lack of boosting of responses that cross-react with endemic CoV combined with high levels of neutralization activity from vaccination suggest favorable antigenicity of the prefusion conformation of S.",
+      "claim_type": "EXPLICIT",
+      "source": "In combination with the lack of boosting of responses that cross-react with endemic CoV, the high levels of neutralization activity observed to result from vaccination (Jackson et al., 2020) suggest favorable antigenicity of the prefusion conformation of S, and that, if detrimental, the costs of original antigenic sin might be avoided by immunogen design.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the observed differences between infection and vaccination, supported by citation to prior work on vaccine neutralization",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "00168fc6-661b-4209-8bd7-d528488a35fe",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C46",
+      "claim": "The COVID-19 pandemic represents the third time in just two decades that a novel coronavirus (CoV) with significant morbidity and mortality has begun to circulate among humans.",
+      "claim_type": "EXPLICIT",
+      "source": "The ongoing pandemic of SARS-CoV-2 represents the third time in just two decades that a novel coronavirus (CoV) with significant morbidity and mortality has begun to circulate among humans (Peeri et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "803cdd3c-5dd6-4f9b-a160-c66b6e3f5c84",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C47",
+      "claim": "SARS-CoV-2 has proven to be highly transmissible, infecting a substantial portion of the global population.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike in the earlier outbreaks of SARS-CoV and MERS-CoV, however, SARS-CoV-2 has proven to be highly transmissible, infecting a substantial portion of the global population \u2013 a conservative estimate of the prevalence of infection based on only confirmed cases corresponds to over 2% (COVID, 2021), while estimates of the total figure in the United States exceed 16% of the population (Reese et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to epidemiological data",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "09765315-4d26-46b0-b8a8-eb8428380a84",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C48",
+      "claim": "Under the hypothesis of original antigenic sin, preexisting humoral memory imprinted from prior exposure to related antigens partially predestines the antibody repertoire to focus on the epitopes of a new threat that closely resemble those for which there is an existing solution.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the hypothesis of original antigenic sin, preexisting humoral memory imprinted from prior exposure to related antigens partially predestines the antibody repertoire to focus on the epitopes of a new threat that closely resemble those for which there is an existing solution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the original antigenic sin hypothesis",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "fefe119b-8e21-4725-973b-94e10d3493d1",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C49",
+      "claim": "Original antigenic sin may hinder the immune system's ability to generate effective neutralizing antibodies because neutralizing epitopes are subject to additional selective pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "Because neutralizing epitopes are subject to additional selective pressure, this recall and re-diversification of existing antibody lineages may hinder the immune system's ability to generate effective neutralizing antibodies (Kim et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explanation of the mechanism of original antigenic sin, supported by citation",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "6990d4f2-59de-4e09-9d1e-251bc5449876",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C50",
+      "claim": "Original antigenic sin has been most convincingly established in the context of influenza virus infection.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomenon has been most convincingly established in the context of influenza virus infection, with support from both well-controlled animal model experiments (Kim et al., 2009; Nachbagauer et al., 2017) and observational studies of human natural infection histories (Francis et al., 1947; Fonville et al., 2014; Kucharski et al., 2015; Gostic et al., 2016; Lee et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior work on influenza",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "9a06a722-40e9-4d0c-9856-70b9b5e06031",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C51",
+      "claim": "Similar observations of original antigenic sin have been made in the context of diverse dengue virus serotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar observations have been made in the context of diverse dengue virus serotypes (Midgley et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work on dengue",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "f47112f8-7d0a-4e88-86f2-9f9da6d30d7e",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C52",
+      "claim": "Antibody-dependent enhancement (ADE) is a phenomenon by which cross-reactive antibodies induced by a prior exposure to a related pathogen promote infection of cell types bearing antibody Fc receptors and potentially elevate morbidity and mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibody-dependent enhancement (ADE), a phenomenon by which cross-reactive antibodies induced by a prior exposure to a related pathogen promote infection of cell types bearing antibody Fc receptors and potentially elevate morbidity and mortality (reviewed in Bournazos et al., 2020; Taylor et al., 2015), suggests further potential advantages of a humoral blank slate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Definition of ADE supported by citations to review articles",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "668ea403-d0d3-4d15-bf88-f5cbcacda982",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C53",
+      "claim": "ADE has been observed in vitro for SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Though observed in vitro (Wu et al., 2020; Li et al., 2021), there has not been abundant evidence for the biological relevance of classical ADE in the context of SARS-CoV-2 in vivo (Li et al., 2021; Wang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "cf8f1ad3-e4a7-43c1-aeb3-f0e4ff535a05",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C54",
+      "claim": "There has not been abundant evidence for the biological relevance of classical ADE in the context of SARS-CoV-2 in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Though observed in vitro (Wu et al., 2020; Li et al., 2021), there has not been abundant evidence for the biological relevance of classical ADE in the context of SARS-CoV-2 in vivo (Li et al., 2021; Wang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "3ce5c9a8-0f54-4602-b256-2f8e031842d0",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C55",
+      "claim": "The role of non-neutralizing antibodies resulting from cross-strain challenges in promoting ADE in cases of dengue fever has motivated concern about COVID-19 enhancement.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, the role of non-neutralizing antibodies resulting from cross-strain challenges in promoting ADE in cases of dengue fever (Katzelnick et al., 2017) has motivated concern about COVID-19 enhancement (Lee et al., 2020; Fierz and Walz, 2020; Arvin et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work on dengue and COVID-19",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "012330dd-b783-4b26-b6e9-180e358221aa",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C56",
+      "claim": "Studies have suggested that recent endemic CoV infection is associated with reduced severity of COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "The extent to which preexisting responses to prior endemic CoV exposures may influence responses to SARS-CoV-2 infection and vaccination is not yet clear, but has been suggested from studies relating recent endemic CoV infection with reduced severity of COVID-19 (Sagar et al., 2021; Aran et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "1be0d1a3-159b-4450-b516-7f196a8f08ec",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C57",
+      "claim": "Numerous studies have observed elevated responses to endemic CoV following SARS-CoV-2 infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerous studies have observed elevated responses to endemic CoV following SARS-CoV-2 infection (Guo et al., 2021; Morgenlander et al., 2021; Wang et al., 2021; Kaplonek et al., 2021; Ortega et al., 2021), and more recent work has shown that the magnitude of this 'back-boosting' effect is inversely correlated with the induction of IgG and IgM against SARS-CoV-2 spike (S) protein (Aydillo et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple prior studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "b96c024e-30c9-42a4-9c6d-5ed5f7c957d9",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C58",
+      "claim": "The magnitude of the 'back-boosting' effect to endemic CoV is inversely correlated with the induction of IgG and IgM against SARS-CoV-2 spike (S) protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerous studies have observed elevated responses to endemic CoV following SARS-CoV-2 infection (Guo et al., 2021; Morgenlander et al., 2021; Wang et al., 2021; Kaplonek et al., 2021; Ortega et al., 2021), and more recent work has shown that the magnitude of this 'back-boosting' effect is inversely correlated with the induction of IgG and IgM against SARS-CoV-2 spike (S) protein (Aydillo et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "4daac8a4-71ff-40a1-adc9-23ddb7750cf4",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C59",
+      "claim": "Lower titers of neutralizing antibodies against SARS-CoV-2 may result from boosting of preexisting cross-reactive lineages according to the original antigenic sin hypothesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Given differential degrees of homology between the receptor-binding domain (RBD) in S1 that is the target of the majority of neutralizing antibodies, and the better-conserved S2 domain that may be the target of antibodies with diverse effector functions but which are rarely neutralizing, the original antigenic sin hypothesis suggests that lower titers of neutralizing antibodies against SARS-CoV-2 may result from boosting of preexisting cross-reactive lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the original antigenic sin hypothesis and structural differences between spike domains",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "1b6ce68e-7408-4303-912e-668b76442d9a",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C60",
+      "claim": "Antibody cross-reactivity between SARS-CoV-2 and endemic CoV has been observed for select monoclonal antibodies that have been cloned and cross-tested.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, antibody cross-reactivity has been inferred from indirect evidence in the form of boosted responses to endemic CoV (Guo et al., 2021; Morgenlander et al., 2021; Wang et al., 2021; Kaplonek et al., 2021; Ortega et al., 2021), and more conclusively observed for select monoclonal antibodies that have been cloned and cross-tested (Sakharkar et al., 2021; Dugan et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work on monoclonal antibodies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "3aa08957-aa44-47b5-b73e-32f793114abe",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C61",
+      "claim": "Some studies of natural infection have suggested that boosted responses to endemic CoV are not associated with protection, but instead with more severe disease.",
+      "claim_type": "EXPLICIT",
+      "source": "While some studies of natural infection have suggested that these boosted responses are not associated with protection, but instead with more severe disease (Guo et al., 2021; Aydillo et al., 2021; Dugan et al., 2021; Lin et al., 2022; Anderson et al., 2021; Gombar et al., 2021), others have supported the opposite conclusion (Aran et al., 2020; Dugas et al., 2021a; Dugas et al., 2021b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple prior studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "d5ac1a30-b889-4835-80e3-4b563454a290",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C62",
+      "claim": "Some studies have supported the conclusion that boosted responses to endemic CoV are associated with protection.",
+      "claim_type": "EXPLICIT",
+      "source": "While some studies of natural infection have suggested that these boosted responses are not associated with protection, but instead with more severe disease (Guo et al., 2021; Aydillo et al., 2021; Dugan et al., 2021; Lin et al., 2022; Anderson et al., 2021; Gombar et al., 2021), others have supported the opposite conclusion (Aran et al., 2020; Dugas et al., 2021a; Dugas et al., 2021b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "f95cdd82-ffff-4c60-b5fd-79d1569b0fda",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C63",
+      "claim": "Cross-reactive antibodies could interact with Fc receptors found on the surface of innate immune cells and promote protective effector function activities, including antibody-dependent cellular phagocytosis and antibody-dependent cellular cytotoxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Cross-reactive antibodies could interact with Fc receptors found on the surface of innate immune cells and promote protective effector function activities, including antibody-dependent cellular phagocytosis and antibody-dependent cellular cytotoxicity (Fox et al., 2019; Earnest et al., 2019; Clark, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work on antibody effector functions",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "0b24ed91-da38-43ae-84b2-c7b3e055126f",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C64",
+      "claim": "A subset of monoclonal antibodies isolated from SARS-CoV patients that were able to cross-react with, but not neutralize, SARS-CoV-2 were able to confer protection or reduce viral spread in mouse models.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, a subset of monoclonal antibodies isolated from SARS-CoV patients that were able to cross-react with, but not neutralize, SARS-CoV-2 were able to confer protection or reduce viral spread in mouse models (Shiakolas et al., 2021; Beaudoin-Bussi\u00e8res et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work on monoclonal antibodies in mouse models",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "05b09952-dd4c-490f-8e46-dc70b89b39f7",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C65",
+      "claim": "Passive transfer experiments of monoclonal antibodies have shown that effector mechanisms contribute to antiviral activity in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, both passive transfer experiments of monoclonal antibodies (Atyeo et al., 2021; Suryadevara et al., 2021; Tortorici et al., 2020; Winkler et al., 2021; Chan et al., 2021; Sch\u00e4fer et al., 2021) and evaluation of polyclonal antibodies raised in the context of vaccination or infection (Alter et al., 2021; Francica et al., 2021; Adeniji et al., 2021) have shown that effector mechanisms contribute to antiviral activity in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple prior studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "2e0b55b1-424a-4caa-8b29-098a872c3490",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C66",
+      "claim": "Evaluation of polyclonal antibodies raised in the context of vaccination or infection have shown that effector mechanisms contribute to antiviral activity in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, both passive transfer experiments of monoclonal antibodies (Atyeo et al., 2021; Suryadevara et al., 2021; Tortorici et al., 2020; Winkler et al., 2021; Chan et al., 2021; Sch\u00e4fer et al., 2021) and evaluation of polyclonal antibodies raised in the context of vaccination or infection (Alter et al., 2021; Francica et al., 2021; Adeniji et al., 2021) have shown that effector mechanisms contribute to antiviral activity in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "db327912-9b9f-4674-a3b5-748cc2dbd7f9",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C67",
+      "claim": "Evidence of in vivo contributions of antibody effector mechanisms extends to mechanistic evidence via Fc sequence engineering to knock out or enhance these activities.",
+      "claim_type": "EXPLICIT",
+      "source": "This evidence extends beyond correlative observations (Tortorici et al., 2020; Alter et al., 2021) to include mechanistic (Peeri et al., 2020) evidence of in vivo contributions via Fc sequence engineering to knock out or enhance these activities (Suryadevara et al., 2021; Winkler et al., 2021; Yamin et al., 2021), as well as on the basis of depletion of effector cells (Winkler et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work on Fc engineering and effector cell depletion",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "f43eb60d-759f-421d-ae24-2d3835d085ad",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C68",
+      "claim": "This study provides evidence that antibodies targeting OC43 are robustly boosted in response to SARS-CoV-2 infection but not vaccination with stabilized S.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, this study provides evidence that antibodies targeting OC43 are robustly boosted in response to SARS-CoV-2 infection but not vaccination with stabilized S, and that the S2 subdomain of the spike protein is likely responsible for triggering a recalled, IgG-dominated response (Figure 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Summary of the study's main findings, supported by data presented throughout and illustrated in Figure 9",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "aaa36eef-cd88-4f2a-a1b8-a6a21ec3e7f5",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C69",
+      "claim": "The S2 subdomain of the spike protein is likely responsible for triggering a recalled, IgG-dominated response.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, this study provides evidence that antibodies targeting OC43 are robustly boosted in response to SARS-CoV-2 infection but not vaccination with stabilized S, and that the S2 subdomain of the spike protein is likely responsible for triggering a recalled, IgG-dominated response (Figure 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Summary of the study's main findings, supported by data presented throughout and illustrated in Figure 9",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "87f5a138-3eff-4227-8acb-7ca157333d0a",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C70",
+      "claim": "The recalled, cross-reactive response to endemic CoV is non-neutralizing.",
+      "claim_type": "EXPLICIT",
+      "source": "While non-neutralizing, the role of these cross-reactive antibodies in the context of infection is not yet known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by neutralization assay data presented in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "b0e9380c-b709-4807-a303-716aeaaf9e97",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "claim_id": "C71",
+      "claim": "The differing antigenicity of natural infection and vaccination with stabilized prefusion spike has potential implications for the breadth and level of protection afforded by each.",
+      "claim_type": "EXPLICIT",
+      "source": "While other antiviral activities of broadly cross-reactive S2-specifc antibodies are not known, the differing antigenicity of natural infection and vaccination with stabilized prefusion spike has potential implications for the breadth and level of protection afforded by each.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the observed differences in antibody responses between infection and vaccination",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5d6b8902-1572-4abb-90e6-ed4aee53e124",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Structural and sequence analysis reveals that the SARS-CoV-2 spike protein S2 domain is better conserved across coronaviruses than the S1 domain (containing NTD and RBD), suggesting preexisting antibodies from endemic CoV exposure would more likely target S2 than RBD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 provide direct structural and sequence evidence from multiple alignment and superimposition analyses (Figure 1A-C), while C4 draws a reasonable inference from this data supported by citations. The structural conservation patterns are clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "00a8178a-23d5-4c76-95be-eded1bfb9349",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "SARS-CoV-2 convalescent subjects show elevated IgA and IgG (but not IgM) responses to endemic CoV, particularly OC43, with responses restricted to S2 and unstabilized S but not S1 or stabilized S-2P, observed across serum and mucosal samples.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C12 collectively demonstrate a consistent pattern across multiple cohorts (DHMC and JHMI), sample types (serum, nasal wash, stool), and antigens. The absence of IgM elevation (C9) and restriction to specific domains (C6-C7) support the interpretation of recalled class-switched antibodies. Data shown in Figure 2 and supplements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "1d3abf1e-2ffa-42c9-a296-cbe59fdd902c",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Acutely infected subjects (2 weeks post-PCR+) show elevated OC43-specific IgG to unstabilized S and S2 but minimal IgM increase, with isotype profiles suggesting recalled rather than de novo responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While C13-C15 present data from acute infection (Figure 3A), the authors acknowledge the cohort is small (n=10) and cross-sectional (C16). The inference about recalled vs. novel responses is reasonable but limited by sample size and lack of longitudinal data at this early timepoint.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "bff72ecb-a8a0-4bc9-b679-f2d107863109",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Longitudinal analysis of subjects pre- and post-SARS-CoV-2 infection shows substantial increases in OC43 S2-specific IgA (3.7-fold) and IgG (20-fold) but minimal IgM change, with similar patterns for HKU1, supporting boosting of preexisting cross-reactive antibodies targeting S2 and post-fusion conformations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C17-C20 provide compelling longitudinal evidence (Figure 3B), but the cohort is very small (n=3), limiting generalizability. The fold-changes are substantial and the pattern is consistent with other results, but the small sample size prevents definitive conclusions despite the strong effect sizes observed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "797dd348-09cf-4886-a56d-93fed96739fc",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Correlative analysis reveals that SARS-CoV-2 S2-specific IgG responses correlate strongly with OC43 unstabilized S (Rp=0.61) and S2 (Rp=0.45) but weakly with stabilized S-2P (Rp=0.29), with IgG showing stronger correlations than IgA or IgM, consistent with recall of class-switched antibodies recognizing shared S2 epitopes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C26 present systematic correlation analysis (Figure 4) showing clear hierarchical patterns across isotypes and antigens. The correlations are statistically significant and the pattern is internally consistent, supporting the interpretation of recalled cross-reactive responses, though correlation does not prove causation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "c3b3db7a-d501-433e-82c9-55811365ffc7",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Affinity-purified antibodies demonstrate molecular cross-reactivity: OC43 S-specific and SARS-CoV-2 S2-specific antibodies cross-react with each other, but only for IgG/IgA (not IgM), and these cross-reactive antibodies lack neutralization activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C30 provide direct experimental evidence of cross-reactivity through affinity purification and functional testing (Figure 5). The demonstration that IgG but not IgM from S2-specific fractions cross-reacts (C28) and that cross-reactive antibodies are non-neutralizing (C29-C30) is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "2f944c0d-1233-4c65-9ae4-fbfaf031cdb5",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "SARS-CoV-2 RBD-specific antibodies show no cross-reactivity to endemic CoV and minimal cross-reactivity even to SARS-CoV, suggesting RBD-specific responses from natural infection are unlikely to provide broad CoV neutralization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33 are supported by affinity purification data (Figure 6A) showing lack of cross-reactivity of RBD-specific antibodies to endemic CoV. The inference about limited broad neutralization (C32) is reasonable given established knowledge that most neutralizing antibodies target RBD.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "f2c16d52-9cec-4daf-a3ff-457d08d19c1f",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Systematic characterization of affinity-purified antibodies reveals that SARS-CoV-2 S-2P and S2-specific IgA/IgG (but not IgM) cross-react broadly with endemic CoV S2 domains, while OC43-specific antibodies show reciprocal cross-reactivity patterns, with IgM preferentially recognizing unstabilized over stabilized spike conformations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C38 present comprehensive cross-reactivity profiling across multiple specificities and isotypes (Figure 6B-D). The consistent pattern of IgA/IgG but not IgM cross-reactivity, and the differential recognition of stabilized vs. unstabilized forms, is well-documented across 30 subjects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "d0f2fa7c-e5a6-4b7d-a3c5-67720f7e027a",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "mRNA vaccination with stabilized spike (S-2P) fails to boost IgG responses to endemic CoV OC43 in pregnant women and shows only minimal boosting (<2.5-fold) in healthy adults, contrasting with robust boosting during natural infection and suggesting distinct antigenicity between stabilized and native spike.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42 demonstrate a clear difference between infection and vaccination across two independent cohorts (Figure 7). The lack of or minimal boosting in vaccinated subjects compared to infected subjects is statistically significant and reproducible, though the mechanistic interpretation (C42) remains inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "30c7427b-40c0-4d23-8fe0-b908533ec679",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Summary finding: Elevated IgA/IgG responses to OC43 are consistently observed across five naturally infected cohorts but not in two mRNA-vaccinated cohorts, suggesting that stabilized prefusion spike in vaccines may avoid boosting cross-reactive responses and potentially the costs of original antigenic sin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45 synthesize findings across all cohorts (Figure 8). The consistency across multiple independent cohorts strengthens the conclusion, though the interpretation about avoiding original antigenic sin (C45) is speculative and depends on whether such boosting is actually detrimental (which remains unknown).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "2adaa5e4-71a7-43b3-ac44-351f5d3d141a",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Overall study conclusion: SARS-CoV-2 infection robustly boosts non-neutralizing, S2-specific, IgG-dominated antibodies to endemic CoV OC43, while vaccination with stabilized spike does not, with potential implications for breadth and level of protection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C71 accurately summarize the main findings supported by data throughout the manuscript (Figure 9). The characterization of boosted responses as non-neutralizing (C70) is directly demonstrated, though the functional implications (C71) remain speculative as the protective or detrimental role of these antibodies is not determined.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "32deca54-57b9-42df-97f4-aae30fc4af87",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background context: The manuscript situates the work within established concepts of original antigenic sin and ADE, noting that while cross-reactive boosting has been observed in prior studies, the functional consequences remain unclear with conflicting evidence about whether such responses are protective or detrimental.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C62 provide background context supported by appropriate citations. These claims accurately represent prior knowledge and conflicting findings in the literature (C61-C62), establishing the rationale for the current study. This is standard background material appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    },
+    {
+      "id": "0b9e8ebc-b34c-4229-9277-fc5a8f11589b",
+      "content_id": "16e72661-a2d9-4299-b2e7-02fe012b8d0c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background on antibody effector functions: Cross-reactive antibodies could mediate protection through Fc-dependent effector functions, with evidence from monoclonal antibody studies and passive transfer experiments demonstrating contributions of non-neutralizing mechanisms to antiviral activity in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C67 accurately summarize prior literature on antibody effector functions with appropriate citations. This background establishes that non-neutralizing antibodies can contribute to protection, providing important context for interpreting the non-neutralizing cross-reactive responses observed in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:43:52.773135Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8a671f2a-48c0-41f5-b8b1-873fd3d68636",
+      "result_id": "5d6b8902-1572-4abb-90e6-ed4aee53e124"
+    },
+    {
+      "claim_id": "b1b54144-3b11-41d4-86b7-1d8f159c048a",
+      "result_id": "5d6b8902-1572-4abb-90e6-ed4aee53e124"
+    },
+    {
+      "claim_id": "81fb0767-119d-428c-8812-cb3598047c85",
+      "result_id": "5d6b8902-1572-4abb-90e6-ed4aee53e124"
+    },
+    {
+      "claim_id": "e912e727-36eb-4a05-ad5f-d3cc813c6c4b",
+      "result_id": "5d6b8902-1572-4abb-90e6-ed4aee53e124"
+    },
+    {
+      "claim_id": "10ddf178-daec-4d85-b069-b3217f57554f",
+      "result_id": "00a8178a-23d5-4c76-95be-eded1bfb9349"
+    },
+    {
+      "claim_id": "e1e2181a-11d1-4eda-97f3-7e5b2e7eb8a2",
+      "result_id": "00a8178a-23d5-4c76-95be-eded1bfb9349"
+    },
+    {
+      "claim_id": "1d859b7b-29a4-4066-a1b2-03354f0a300e",
+      "result_id": "00a8178a-23d5-4c76-95be-eded1bfb9349"
+    },
+    {
+      "claim_id": "9300e4ba-a191-4ed9-8d89-3dcba3ed37ec",
+      "result_id": "00a8178a-23d5-4c76-95be-eded1bfb9349"
+    },
+    {
+      "claim_id": "445d5283-2bd7-4729-a273-bfad3da936a4",
+      "result_id": "00a8178a-23d5-4c76-95be-eded1bfb9349"
+    },
+    {
+      "claim_id": "8b377ede-a74b-4726-bfe0-31b74e08706c",
+      "result_id": "00a8178a-23d5-4c76-95be-eded1bfb9349"
+    },
+    {
+      "claim_id": "89a3fb43-91f4-4624-9a01-616468ba9ac8",
+      "result_id": "00a8178a-23d5-4c76-95be-eded1bfb9349"
+    },
+    {
+      "claim_id": "28aad1d2-8cd4-4f0e-a1e7-ae7f74113017",
+      "result_id": "00a8178a-23d5-4c76-95be-eded1bfb9349"
+    },
+    {
+      "claim_id": "5306ac01-ee28-4254-be8d-2556ac18ceba",
+      "result_id": "1d3abf1e-2ffa-42c9-a296-cbe59fdd902c"
+    },
+    {
+      "claim_id": "34e5694b-1480-498e-9b6c-65506fcaa3fe",
+      "result_id": "1d3abf1e-2ffa-42c9-a296-cbe59fdd902c"
+    },
+    {
+      "claim_id": "3850a483-d012-49b2-8d18-bbd447102138",
+      "result_id": "1d3abf1e-2ffa-42c9-a296-cbe59fdd902c"
+    },
+    {
+      "claim_id": "67881eca-d8e7-4ac3-a37c-a240c626ee50",
+      "result_id": "1d3abf1e-2ffa-42c9-a296-cbe59fdd902c"
+    },
+    {
+      "claim_id": "3be456b3-9978-4862-965b-70eb5137f879",
+      "result_id": "bff72ecb-a8a0-4bc9-b679-f2d107863109"
+    },
+    {
+      "claim_id": "b6c56f11-1603-42f5-a316-1b93d3752d66",
+      "result_id": "bff72ecb-a8a0-4bc9-b679-f2d107863109"
+    },
+    {
+      "claim_id": "7c9d01dc-9c49-4e6e-be9e-900bf157a86d",
+      "result_id": "bff72ecb-a8a0-4bc9-b679-f2d107863109"
+    },
+    {
+      "claim_id": "0df37d4c-30f2-41ae-b824-ff3aae11c996",
+      "result_id": "bff72ecb-a8a0-4bc9-b679-f2d107863109"
+    },
+    {
+      "claim_id": "ca155843-a8e2-49a8-95cf-3d9cc651543c",
+      "result_id": "bff72ecb-a8a0-4bc9-b679-f2d107863109"
+    },
+    {
+      "claim_id": "bd7b8dd5-45ee-47b0-ac6a-e9b357a1cb5e",
+      "result_id": "797dd348-09cf-4886-a56d-93fed96739fc"
+    },
+    {
+      "claim_id": "0cd97ff3-d44e-442b-9a72-3a8344808da6",
+      "result_id": "797dd348-09cf-4886-a56d-93fed96739fc"
+    },
+    {
+      "claim_id": "8487761c-b67f-46e5-87a0-c66ea5d31370",
+      "result_id": "797dd348-09cf-4886-a56d-93fed96739fc"
+    },
+    {
+      "claim_id": "776656ef-993d-4dd8-9c0c-81c27f1390a4",
+      "result_id": "797dd348-09cf-4886-a56d-93fed96739fc"
+    },
+    {
+      "claim_id": "86461b36-81ac-4a46-9a82-413e4058b0c3",
+      "result_id": "797dd348-09cf-4886-a56d-93fed96739fc"
+    },
+    {
+      "claim_id": "e17bec15-ba06-4076-9ade-f317a020fcb3",
+      "result_id": "c3b3db7a-d501-433e-82c9-55811365ffc7"
+    },
+    {
+      "claim_id": "8c8d299e-53f1-4d2c-b894-a7d2a6c6bee5",
+      "result_id": "c3b3db7a-d501-433e-82c9-55811365ffc7"
+    },
+    {
+      "claim_id": "bc038ae8-d708-49e1-9ebf-abf940fd67da",
+      "result_id": "c3b3db7a-d501-433e-82c9-55811365ffc7"
+    },
+    {
+      "claim_id": "651e6032-ce9c-41fd-9693-422d18af3183",
+      "result_id": "c3b3db7a-d501-433e-82c9-55811365ffc7"
+    },
+    {
+      "claim_id": "89012fbb-2a02-4b8d-b509-ef692fdc2fe1",
+      "result_id": "2f944c0d-1233-4c65-9ae4-fbfaf031cdb5"
+    },
+    {
+      "claim_id": "28248f02-79b2-461c-800e-109fc66867c4",
+      "result_id": "2f944c0d-1233-4c65-9ae4-fbfaf031cdb5"
+    },
+    {
+      "claim_id": "09b8d328-dd1e-458c-8cff-d92547e053fe",
+      "result_id": "2f944c0d-1233-4c65-9ae4-fbfaf031cdb5"
+    },
+    {
+      "claim_id": "b7c2ba49-ba75-43fe-94f7-52829925966e",
+      "result_id": "f2c16d52-9cec-4daf-a3ff-457d08d19c1f"
+    },
+    {
+      "claim_id": "cde458d4-9742-446d-9005-dcd564b67281",
+      "result_id": "f2c16d52-9cec-4daf-a3ff-457d08d19c1f"
+    },
+    {
+      "claim_id": "3188781c-2fd4-4663-bd4d-7a04659a3f00",
+      "result_id": "f2c16d52-9cec-4daf-a3ff-457d08d19c1f"
+    },
+    {
+      "claim_id": "7cc50e94-f75b-479b-a1c4-25ad7869e644",
+      "result_id": "f2c16d52-9cec-4daf-a3ff-457d08d19c1f"
+    },
+    {
+      "claim_id": "31ceb17e-541f-44fa-a80c-b7eaeb302c05",
+      "result_id": "f2c16d52-9cec-4daf-a3ff-457d08d19c1f"
+    },
+    {
+      "claim_id": "8040db23-308f-4386-a577-910859d4958f",
+      "result_id": "d0f2fa7c-e5a6-4b7d-a3c5-67720f7e027a"
+    },
+    {
+      "claim_id": "80d9d6ff-e617-4e7c-a360-5dd82d52b346",
+      "result_id": "d0f2fa7c-e5a6-4b7d-a3c5-67720f7e027a"
+    },
+    {
+      "claim_id": "8fc7f0d0-3c74-4002-9b55-80387c0027e8",
+      "result_id": "d0f2fa7c-e5a6-4b7d-a3c5-67720f7e027a"
+    },
+    {
+      "claim_id": "7f759122-21be-4cf2-9e41-dc8b7d794db8",
+      "result_id": "d0f2fa7c-e5a6-4b7d-a3c5-67720f7e027a"
+    },
+    {
+      "claim_id": "f4cde6af-dc46-4dcb-8a3f-15cd154cf976",
+      "result_id": "30c7427b-40c0-4d23-8fe0-b908533ec679"
+    },
+    {
+      "claim_id": "5bb5be6b-7f17-4c62-a8ee-6c56209427db",
+      "result_id": "30c7427b-40c0-4d23-8fe0-b908533ec679"
+    },
+    {
+      "claim_id": "36ce9a92-434b-4d34-be58-030d48227baf",
+      "result_id": "30c7427b-40c0-4d23-8fe0-b908533ec679"
+    },
+    {
+      "claim_id": "f43eb60d-759f-421d-ae24-2d3835d085ad",
+      "result_id": "2adaa5e4-71a7-43b3-ac44-351f5d3d141a"
+    },
+    {
+      "claim_id": "aaa36eef-cd88-4f2a-a1b8-a6a21ec3e7f5",
+      "result_id": "2adaa5e4-71a7-43b3-ac44-351f5d3d141a"
+    },
+    {
+      "claim_id": "87f5a138-3eff-4227-8acb-7ca157333d0a",
+      "result_id": "2adaa5e4-71a7-43b3-ac44-351f5d3d141a"
+    },
+    {
+      "claim_id": "b0e9380c-b709-4807-a303-716aeaaf9e97",
+      "result_id": "2adaa5e4-71a7-43b3-ac44-351f5d3d141a"
+    },
+    {
+      "claim_id": "00168fc6-661b-4209-8bd7-d528488a35fe",
+      "result_id": "32deca54-57b9-42df-97f4-aae30fc4af87"
+    },
+    {
+      "claim_id": "803cdd3c-5dd6-4f9b-a160-c66b6e3f5c84",
+      "result_id": "32deca54-57b9-42df-97f4-aae30fc4af87"
+    },
+    {
+      "claim_id": "09765315-4d26-46b0-b8a8-eb8428380a84",
+      "result_id": "32deca54-57b9-42df-97f4-aae30fc4af87"
+    },
+    {
+      "claim_id": "fefe119b-8e21-4725-973b-94e10d3493d1",
+      "result_id": "32deca54-57b9-42df-97f4-aae30fc4af87"
+    },
+    {
+      "claim_id": "6990d4f2-59de-4e09-9d1e-251bc5449876",
+      "result_id": "32deca54-57b9-42df-97f4-aae30fc4af87"
+    },
+    {
+      "claim_id": "9a06a722-40e9-4d0c-9856-70b9b5e06031",
+      "result_id": "32deca54-57b9-42df-97f4-aae30fc4af87"
+    },
+    {
+      "claim_id": "f47112f8-7d0a-4e88-86f2-9f9da6d30d7e",
+      "result_id": "32deca54-57b9-42df-97f4-aae30fc4af87"
+    },
+    {
+      "claim_id": "668ea403-d0d3-4d15-bf88-f5cbcacda982",
+      "result_id": "32deca54-57b9-42df-97f4-aae30fc4af87"
+    },
+    {
+      "claim_id": "cf8f1ad3-e4a7-43c1-aeb3-f0e4ff535a05",
+      "result_id": "32deca54-57b9-42df-97f4-aae30fc4af87"
+    },
+    {
+      "claim_id": "3ce5c9a8-0f54-4602-b256-2f8e031842d0",
+      "result_id": "32deca54-57b9-42df-97f4-aae30fc4af87"
+    },
+    {
+      "claim_id": "012330dd-b783-4b26-b6e9-180e358221aa",
+      "result_id": "32deca54-57b9-42df-97f4-aae30fc4af87"
+    },
+    {
+      "claim_id": "1be0d1a3-159b-4450-b516-7f196a8f08ec",
+      "result_id": "32deca54-57b9-42df-97f4-aae30fc4af87"
+    },
+    {
+      "claim_id": "b96c024e-30c9-42a4-9c6d-5ed5f7c957d9",
+      "result_id": "32deca54-57b9-42df-97f4-aae30fc4af87"
+    },
+    {
+      "claim_id": "4daac8a4-71ff-40a1-adc9-23ddb7750cf4",
+      "result_id": "32deca54-57b9-42df-97f4-aae30fc4af87"
+    },
+    {
+      "claim_id": "1b6ce68e-7408-4303-912e-668b76442d9a",
+      "result_id": "32deca54-57b9-42df-97f4-aae30fc4af87"
+    },
+    {
+      "claim_id": "3aa08957-aa44-47b5-b73e-32f793114abe",
+      "result_id": "32deca54-57b9-42df-97f4-aae30fc4af87"
+    },
+    {
+      "claim_id": "d5ac1a30-b889-4835-80e3-4b563454a290",
+      "result_id": "32deca54-57b9-42df-97f4-aae30fc4af87"
+    },
+    {
+      "claim_id": "f95cdd82-ffff-4c60-b5fd-79d1569b0fda",
+      "result_id": "0b9e8ebc-b34c-4229-9277-fc5a8f11589b"
+    },
+    {
+      "claim_id": "0b24ed91-da38-43ae-84b2-c7b3e055126f",
+      "result_id": "0b9e8ebc-b34c-4229-9277-fc5a8f11589b"
+    },
+    {
+      "claim_id": "05b09952-dd4c-490f-8e46-dc70b89b39f7",
+      "result_id": "0b9e8ebc-b34c-4229-9277-fc5a8f11589b"
+    },
+    {
+      "claim_id": "2e0b55b1-424a-4caa-8b29-098a872c3490",
+      "result_id": "0b9e8ebc-b34c-4229-9277-fc5a8f11589b"
+    },
+    {
+      "claim_id": "db327912-9b9f-4674-a3b5-748cc2dbd7f9",
+      "result_id": "0b9e8ebc-b34c-4229-9277-fc5a8f11589b"
+    }
+  ],
+  "comparisons": []
+}

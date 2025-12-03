@@ -1,0 +1,1981 @@
+{
+  "submission": {
+    "id": "7fc4bcb9-4092-46e6-aebb-7543b4aa9589",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T07:22:03.336687Z",
+    "updated_at": "2025-12-03T07:22:03.336687Z"
+  },
+  "content": [
+    {
+      "id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "submission_id": "7fc4bcb9-4092-46e6-aebb-7543b4aa9589",
+      "content_type": "manuscript",
+      "content_text": "# Structural variability and concerted motions of the T cell receptor \u2013 CD3 complex\n\n## Authors\n\n- Prithvi R Pandey<sup>1</sup>\n- Bartosz R\u00f3\u017cycki<sup>2</sup> ([ORCID: 0000-0001-5938-7308](https://orcid.org/0000-0001-5938-7308))\n- Reinhard Lipowsky<sup>1</sup> ([ORCID: 0000-0001-8417-8567](https://orcid.org/0000-0001-8417-8567))\n- Thomas R Weikl<sup>1</sup> ([ORCID: 0000-0002-0911-5328](https://orcid.org/0000-0002-0911-5328)) \u2020\n\n### Affiliations\n\n1. Max Planck Institute of Colloids and Interfaces, Department of Theory and Bio-Systems Potsdam Germany\n2. Institute of Physics, Polish Academy of Sciences Warsaw Poland\n\n\u2020 Corresponding author\n\n## Abstract\n\nWe investigate the structural and orientational variability of the membrane-embedded T cell receptor (TCR) \u2013 CD3 complex in extensive atomistic molecular dynamics simulations based on the recent cryo-EM structure determined by Dong et al., 2019. We find that the TCR extracellular (EC) domain is highly variable in its orientation by attaining tilt angles relative to the membrane normal that range from 15\u00b0 to 55\u00b0. The tilt angle of the TCR EC domain is both coupled to a rotation of the domain and to characteristic changes throughout the TCR \u2013 CD3 complex, in particular in the EC interactions of the C\u03b2 FG loop of the TCR, as well as in the orientation of transmembrane helices. The concerted motions of the membrane-embedded TCR \u2013 CD3 complex revealed in our simulations provide atomistic insights on conformational changes of the complex in response to tilt-inducing forces on antigen-bound TCRs.\n\n## Introduction\n\nT cells recognize peptide antigens presented by major histocompatibility complexes (MHC) on apposing cell surfaces as a central step in the initiation of adaptive immune responses (Rossjohn et al., 2015; Smith-Garvin et al., 2009; Dustin, 2014; Pettmann et al., 2018; Belardi et al., 2020). The antigen recognition is performed by the T-cell receptor (TCR) complex, a complex of four dimeric transmembrane proteins. In this complex, the heterodimeric TCR\u03b1\u03b2 contains the binding site for recognizing peptide antigens, and the associated CD3\u03b5\u03b4 and CD3\u03b5\u03b3 heterodimers and the CD3\u03b6\u03b6 homodimer contain the intracellular signaling motifs that transmit antigen binding to T cell activation (Wucherpfennig et al., 2010). While this stoichiometry of the complex has been known for nearly two decades (Call et al., 2002), the structure of the TCR \u2013 CD3 complex remained a puzzling problem (Fernandes et al., 2012; Birnbaum et al., 2014; Natarajan et al., 2016) that has only been recently solved by Dong et al., 2019 with cryogenic electron microscopy (cryo-EM). To determine the structure, Dong et al. expressed all proteins of the complex in cultured cells, replaced the cell membrane around the assembled TCR \u2013 CD3 complex by the detergent digitonin, and stabilized the interactions between the extracellular (EC) domains of TCR\u03b1\u03b2, CD3\u03b5\u03b4 and CD3\u03b5\u03b3 by chemical crosslinking. In the cryo-EM structure, the EC domains of CD3\u03b5\u03b4 and CD3\u03b5\u03b3 are both in contact with TCR\u03b1\u03b2 and with each other (see Figure 1), which explains the cooperative binding of CD3\u03b5\u03b4 and CD3\u03b5\u03b3 to TCR\u03b1\u03b2 observed in chain assembly (Call et al., 2002), mutational (Kuhns and Davis, 2007; Kuhns and Davis, 2012), and NMR experiments (He et al., 2015). As indicated by mutational experiments (Kuhns and Davis, 2007; Kuhns and Davis, 2012), the DE loop of the membrane-proximal constant domain C\u03b1 of TCR\u03b1 is in contact with the CD3\u03b5\u03b4 EC domain, and the CC\u2019 loop of the constant domain C\u03b2 of TCR\u03b2 is in contact with both the CD3\u03b5\u03b3 and CD3\u03b5\u03b4 EC domains in the assembled TCR \u2013 CD3 complex (see Figure 1). Outstanding questions concern the orientational variability of the TCR\u03b1\u03b2 EC domain relative to the membrane, in which the TCR \u2013 CD3 complex is embedded in its native environment, and the structural variability of the overall TCR \u2013 CD3 complex, which is constrained by the chemical crosslinking of the protein chains in the approach of Dong et al., 2019; Reinherz, 2019. The C\u03b2 FG loop, for example, has been suggested to play a key role in T cell activation (Kim et al., 2010; Touma et al., 2006), but exhibits only rather limited contacts with CD3\u03b5\u03b3 in the cryo-EM structure (see Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/67195/elife-67195-fig1-v2.jpg)\n\n**Figure 1.:** Here, two residues are taken to be in contact if the minimum distance between non-hydrogen atoms of the residues is smaller than 0.45 nm. The loops and strands of the membrane-proximal constant domains C\u03b1 and C\u03b2 of the proteins TCR\u03b1 and TCR\u03b2 and of the EC domains of CD3\u03b5, CD3\u03b3, and CD3\u03b4 are labeled according to the standard convention for immunoglobulin-like domains (Garcia et al., 1996; Wang et al., 1998; Sun et al., 2004).\n\nIn this article, we investigate the structural and orientational variability of the membrane-embedded TCR \u2013 CD3 complex in extensive, atomistic molecular dynamics (MD) simulations with a cumulative simulation length of 120 \u03bcs. Compared to the cryo-EM structure, significantly more residues of TCR\u03b1\u03b2 are involved in EC domain contacts along our simulation trajectories, in particular in the C\u03b2 FG loop, and notably also in the variable domain V\u03b1 of the TCR\u03b1 chain. We find that the TCR\u03b1\u03b2 EC domain is rather variable in its orientation, with tilt angles relative to the membrane normal that range from 15\u00b0 to 55\u00b0. The tilt of the TCR\u03b1\u03b2 EC domain is both coupled to a rotation of the domain and to characteristic changes in the overall structure of the TCR \u2013 CD3 complex. These structural changes include a clear decrease of contacts in the C\u03b2 FG loop and an increase of contacts in the V\u03b1 domain with increasing tilt angle of the TCR\u03b1\u03b2 EC domain, as well as changes in the orientation of the transmembrane (TM) helices of the TCR\u03b1 and CD3\u03b3 chain. The concerted motions of the membrane-embedded TCR \u2013 CD3 complex revealed in our simulations provide atomistic insights for force-based models of TCR signaling, which involve structural changes, in particular in the C\u03b2 FG loop, that are induced by transversal, tilt-inducing forces on bound TCRs (Brazin et al., 2015; Feng et al., 2018).\n\n## Results\n\nOur computational analysis of the structural and orientational variability of the membrane-embedded TCR \u2013 CD3 complex is based on 120 atomistic, explicit-water MD simulation trajectories with a length of 1 \u03bcs and, thus, on simulation data with a total length of 120 \u03bcs. We have conducted these simulations with the Amber99SB-ILDN protein force field (Lindorff-Larsen et al., 2010) and the Amber Lipid14 membrane force field (Dickson et al., 2014) at a simulation temperature of 30\u00b0C on graphics processing units (GPUs). The simulation trajectories start from initial system conformations in which the cryo-EM structure of the TCR \u2013 CD3 protein complex is embedded in a membrane composed of 456 POPC lipids and 114 cholesterol molecules. We find that the orientational and conformational ensembles sampled by the 120 trajectories equilibrate within the first 0.5 \u03bcs of the simulation trajectories (see Materials and methods) and, therefore, focus on the second 0.5 \u03bcs of the MD simulation trajectories in our analysis.\n\nCompared to the cryo-EM structure, a much larger set of residues is involved in contacts between the protein dimers of the TCR \u2013 CD3 complex in our MD simulations. Figure 2 illustrates the time-averaged contacts between residues of the TCR\u03b1\u03b2, CD3\u03b5\u03b3, and CD3\u03b5\u03b4 EC domains along the equilibrated second halves of the MD simulation trajectories. The fourth protein dimer in the complex, CD3\u03b6\u03b6, has no EC domain. The contact maps of Figure 2 include all residue-residue contacts that occur in the simulations with a probability larger than 0.5%. The probabilities of the contacts are calculated from 6000 simulation structures extracted at intervals of 10 ns from the second 0.5 \u03bcs of the 120 simulations, and indicated in grayscale in Figure 2. As in the contact maps for the cryo-EM structure shown in Figure 1, two residues are taken to be in contact in a simulation structure if the minimum distance between non-hydrogen atoms of the residues is smaller than 0.45 nm. The contacts are grouped in clusters (blue numbers) that correspond to interactions between loops and strands of the EC domains, which are labeled according to the standard convention for immunoglobulin(Ig)-like domains (Garcia et al., 1996; Wang et al., 1998; Sun et al., 2004). The EC domains of the proteins TCR\u03b1 and TCR\u03b2 consist of the membrane-proximal constant domains C\u03b1 and C\u03b2 and the variable domains V\u03b1 and V\u03b2, which are all Ig-like domains, as are the EC domains of the proteins CD3\u03b5, CD3\u03b3, and CD3\u03b4. In our MD simulations, significantly more loops and strands, and more residues of the protein dimers TCR\u03b1\u03b2, CD3\u03b5\u03b3, and CD3\u03b5\u03b4 participate in EC domain interactions, compared to the cryo-EM structure. The C\u03b2 FG loop, for example, exhibits only a single contact with an N-terminal residue of CD3\u03b3 in the cryo-EM structure (see Figure 1). In our MD simulations, in contrast, the C\u03b2 FG loop is involved in a large number of contacts with the N-terminus of CD3\u03b3 and with several loops and strand in the $\u03f5$ chain of the CD3\u03b5\u03b3 EC domain. Besides the C\u03b1 DE loop, C\u03b2 CC\u2019 loop, C\u03b2 EF loop, C\u03b2 FG loop, and C\u03b2 G strand with contacts in the cryo-EM structure, the MD contacts maps of Figure 2 include also the C\u03b1 AB loop and the C\u03b2 A and B strand in the constant domains of TCR\u03b1\u03b2 and, remarkably, the three loops A\u2019B, C\u201dD, and EF in the variable region V\u03b1 of TCR\u03b1. Residue-residue contacts between V\u03b1 and the \u03b4 chain of CD3\u03b5\u03b4 have probabilities smaller than 3%, but occur in 75 of the 120 trajectories and are, thus, a robust feature of our simulations. These contacts are grouped in four small, correlated contact clusters (see cluster-cluster correlation coefficients in Figure 2\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/67195/elife-67195-fig2-v2.jpg)\n\n**Figure 2.:** The shading of the contact disks indicates the contact probability, that\u00a0is the fraction of simulation structures in which the contact is present. The contact analysis is based on 120\u00a0\u00d7\u00a050\u00a0=\u00a06000 structures extracted at intervals of 10 ns from the second halves of the 120 \u03bcs-long trajectories, which reflect an equilibrated ensemble of simulation conformations (see Materials\u00a0and\u00a0methods) and are available at the Edmond Open Research Data Repository (Pandey and Weikl, 2021). For clarity, only contacts with a contact probability larger than 0.5% are represented. As in Figure 1, two residues are taken to be in contact in a simulation structure if the minimum distance between non-hydrogen atoms of the residues is smaller than 0.45 nm. The contacts occur in clusters with numbers labeled in blue.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67195/elife-67195-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The Spearman correlation coefficient assesses monotonic relations that can be linear or nonlinear and is calculated here for the numbers of contacts between non-hydrogen atoms of each cluster in the 6000 simulation frames of the contact analysis.\n\nIn our MD simulations, the TCR\u03b1\u03b2 EC domain is rather variable in its orientation relative to the membrane. The orientation can be quantified by two angles, a tilt angle and a rotation angle. To determine these angles, we choose two axes A and B in the TCR\u03b1\u03b2 EC domain: Axis A connects the centres of mass of C\u03b1\u03b2 and V\u03b1\u03b2, where C\u03b1\u03b2 is the dimer of the constant domains C\u03b1 and C\u03b2, and V\u03b1\u03b2 is the dimer of the variable domains V\u03b1 and V\u03b2. Axis B connects the centres of mass of the variable domains V\u03b1 and V\u03b2. The tilt angle of the TCR\u03b1\u03b2 EC domain then is the angle between axis A and the membrane normal, and the rotation angle is the angle between axis B and the normal of the plane spanned by axis A and the membrane normal. The rotation angle describes the rotation of the TCR\u03b1\u03b2 EC domain around axis A (see Figure 3(a) and (b)). In our MD simulations, the tilt angle of TCR\u03b1\u03b2 EC domain roughly varies between 15\u00b0 and 55\u00b0, while the rotation angle varies between 0\u00b0 and 55\u00b0. A rotation angle of 0\u00b0 indicates a TCR\u03b1\u03b2 EC domain orientation in which the centres of mass of the variable domains V\u03b1 and V\u03b2 are equally close to the membrane, and the rotation angle is larger than 0\u00b0 in conformations in which the variable domain V\u03b1 is closer to the membrane than the variable domain V\u03b2 (see Figure 3(a) and (b)).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/67195/elife-67195-fig3-v2.jpg)\n\n**Figure 3.:** The rotation angles of the TCR\u03b1\u03b2 ECdomain are 12.8\u00b0 and 42.9\u00b0 in the conformations (a) and (b), respectively. (c) Two-dimensional probability density function for the tilt angle and rotation angle of the 6000 equilibrated MD conformations from the 120 trajectories. (d) Numbers of residue-residue contacts with CD3 EC domains for the C\u03b2 FG loop and the V\u03b1 domain versus tilt angle. (e) Inclination angle of the TM helices in the TCR\u03b1 and CD3\u03b3 chain relative to the membrane normal as a function of the tilt angle of the TCR\u03b1\u03b2 ECdomain. The errors in (d) and (e) have been estimated as error of the mean of averages obtained for five independent subsets of the MD conformations.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67195/elife-67195-fig3-figsupp1-v2.jpg)\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/67195/elife-67195-fig3-figsupp2-v2.jpg)\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/67195/elife-67195-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (a) Force-free tilt-angle distribution of the TCR\u03b1\u03b2 EC domain obtained from our simulations (blue data points) and tilt-angle distributions under transversal forces $f=2$ pN and 5 pN acting on the TCR-MHC complex, estimated from the force-free distribution; (b) local membrane thickness around the TM domain of the TCR \u2013 CD3 complex as a function of the tilt angle of the TCR\u03b1\u03b2 ECdomain.The errors of the force-free tilt-angle distribution in (a) have been estimated as error of the mean of distributions obtained for 10 independent subsets of the MD conformations. The errors for the distributions under transversal force result from error propagation. The errors in (b) have been estimated as error of the mean of averages obtained for five independent subsets of the MD conformations.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/67195/elife-67195-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Tilt and rotation angle of the TCR\u03b1\u03b2\u00a0EC domain along the three trajectory segments shown in Figure 3\u2014videos 1, 2 and 3. Along these trajectory segments, the tilt angle increases from around 20\u00b0 to values above 50\u00b0. In Figure 3\u2014video 1, 2, the rotation angle increases with the title angle, which allows contacts of the three loops A\u2019B, C\u201dD, and EF in the variable region V\u03b1 of TCR\u03b1 (shown in red in the videos) and the $\u03f5$ chain of CD3\u03b5\u03b4. In Figure 3\u2014video 3, in contrast, the rotation angle does not increase with increasing tilt of the TCR\u03b1\u03b2 EC domain. Figure 3\u2014video 1 shows MD trajectory 36 from 0.05 to 0.4 \u03bcs, Figure 3\u2014video 2 shows MD trajectory 95 from 0.1 to 0.5 \u03bcs, and Figure 3\u2014video 3 shows MD trajectory 12 from 0.05 to 0.75 \u03bcs.\n\nThe two-dimensional probability distribution of the angles in Figure 3(c) indicates that the rotation of the TCR\u03b1\u03b2 EC domain is coupled to its tilt: For tilt angles between 15\u00b0 and 35\u00b0, the rotation angle predominantly adopts values between about 5\u00b0 and 25\u00b0. For a tilt angle of 40\u00b0, the most probable value of the rotation angle is about 32\u00b0, and further increases to 40\u00b0 for a tilt angle of 50\u00b0. The coupling between the tilt and rotation of the TCR\u03b1\u03b2 EC domain is also illustrated in Figure 3(a) and (b). In the structure of the membrane-embedded TCR \u2013 CD3 complex of Figure 3(a), the TCR\u03b1\u03b2 EC domain has a tilt angle of 32.8\u00b0 and a rotation angle of 12.8\u00b0. In the structure of Figure 3(b) with a larger tilt angle of 50.8\u00b0, the rotation angle of the TCR\u03b1\u03b2 EC domain is 42.9\u00b0. The rotation and tilt angle for the TCR\u03b1\u03b2 EC domain in the cryo-EM structure of the TCR \u2013 CD3 complex can be determined by aligning the TM domain of this structure to our simulation conformations. This structural alignment embeds and orients the cryo-EM structure in our simulated membranes. From TM domain alignment to the 120 final simulation conformations of our trajectories, we obtain the tilt angle 31.2\u00b10.4\u00b0 and the rotation angle 14.7\u00b10.7\u00b0 for the TCR\u03b1\u03b2 EC domain of the cryo-EM structure. The errors here have been estimated as the error of the mean of the 120 values obtained after structural alignment to these simulation conformations.\n\nThe tilt angle of the TCR\u03b1\u03b2 EC domain is associated with characteristic changes in the overall structure of the TCR \u2013 CD3 complex, in particular with changes in the number of residue-residue contacts of the V\u03b1 domain and of the C\u03b2 FG loop (see Figure 3(d)) and in the orientations of the transmembrane (TM) helices of the TCR\u03b1 and CD3\u03b3 chains (see Figure 3(e)). Residue-residue contacts of the A\u2019B, C\u201dD, and EF loops of the variable domain V\u03b1 with the protein CD3\u03b4 only occur for tilt angles of the TCR\u03b1\u03b2 EC domain larger than about 30\u00b0 (see Figure 3(d)). The average number of these residues-residue contacts increases to values around two for tilt angles of 50\u00b0 and larger. For the C\u03b2 FG loop, in contrast, the average number of residues-residue contacts decreases from a value around 30 at the tilt angle 15\u00b0 to values close 0 for tilt angles of 50\u00b0 and larger. A decrease in the average number of contacts with increasing tilt angle can also be observed for the C\u03b1 AB loop and the C\u03b2 A strand, CC\u2019 loop, and G strand (see Figure 3\u2014figure supplement 1). Only for the C\u03b1 DE loop and C\u03b2 EF loop, the average number of contacts is rather independent of the tilt angle. The tilt of the TCR\u03b1\u03b2 EC domain also affects the orientation of TM helices. The average inclination of the TCR\u03b1 TM helix relative to the membrane normal decreases from about 11.5\u00b0 to values around 8.5\u00b0 with increasing tilt angle of the TCR\u03b1\u03b2 EC domain, while the average inclination of the CD3\u03b3 TM helix increases from about 15.5\u00b0 to values around 24\u00b0 (see Figure 3(e)). An increase from about 19\u00b0 to values around 22\u00b0 with increasing tilt angle of the TCR\u03b1\u03b2 EC domain also occurs for the average inclination angle of the TM helix of the \u03b5 chain of CD3\u03b5\u03b3 (see Figure 3\u2014figure supplement 2). The average orientation of the other five TM helices relative to the membrane normal exhibits only small variations with the tilt angle of the TCR\u03b1\u03b2 EC domain.\n\n## Discussion\n\nThe coupling of the tilt angle of the TCR\u03b1\u03b2 EC domain to overall conformational changes in the TCR \u2013 CD3 complex, which we observe in our MD simulations, provides insights on conformational changes induced by transversal, tilt-inducing forces. Transversal forces acting on the TCR\u03b1\u03b2 EC domain after binding to MHC-peptide-antigen complexes arise during the scanning of antigen-presenting cells by T cells (G\u00f6hring et al., 2020; Cai et al., 2017; Huse, 2017; Rushdi et al., 2020). While experiments indicate that the TCR \u2013 CD3 complex responds to mechanical force (Kim et al., 2009; Feng et al., 2017) and that the C\u03b2 FG loop plays a key role in this response (Das et al., 2015), an outstanding question is how this force alters the conformation of the TCR \u2013 CD3 complex (Courtney et al., 2018). Our MD simulations show that an increased tilt of the TCR\u03b1\u03b2 EC domain leads to a marked decrease in the contacts between the C\u03b2 FG loop and the CD3\u03b5\u03b3 EC domain (see Figure 3(d)), and also to changes in the inclination of TM helices relative to the membrane normal (see Figure 3(e)). Such structural changes in the TM domain of the TCR \u2013 CD3 have been suggested to be involved in the transmission of forces from the EC domain to the signaling motifs on the intracellular segments of the CD3 chains (Brazin et al., 2015;\u00a0Brazin et al., 2018), which are not resolved in the cryo-EM structure. Similar to the C\u03b2 FG loop, we also find a decrease of contacts between the C\u03b1 AB loop, which has been implicated in TCR triggering (Beddoe et al., 2009), and the \u03b5 chain of the CD3\u03b5\u03b3 EC domain with increasing tilt angle of the TCR\u03b1\u03b2 EC domain (see Figure 3\u2014figure supplement 1).\n\nBased on our simulation results for the orientational variations of the unbound TCR EC domain, the tilt of the bound TCR-MHC complex induced by a transversal force $f$ parallel to the membrane can be estimated under the assumption that the membrane anchoring of the MHC EC domain is more flexible than the membrane anchoring of the TCR EC domain within the TCR - CD3 complex. This assumption appears reasonable because MHC class I and MHC class II EC domains are anchored by one and two peptide linkers, respectively, to a pair of transmembrane helices, whereas the three EC domains of the TCR - CD3 complex are jointly anchored by six linkers to a bundle of eight transmembrane helices. The anchoring flexibility of MHC class I molecules is also illustrated by a presumably binding-incompetent, supine conformation observed in two-dimensional crystals in which the MHC EC domains are positioned with their 'sides\u2019 on the membrane, rather than 'standing up' (Mitra et al., 2004). In the absence of transversal forces, the tilt-angle distribution of the TCR-MHC EC domain then can be approximated by the distribution of the TCR EC domain tilt angle observed in our simulations of the TCR \u2013 CD3 complex. From the energy contribution $-f\\betah\\betasin\u2061[\\tau]$ associated with a transversal force $f$ on the TCR-MHC EC complex with extension $h\u224313$ nm (Wang et al., 2009) along the tilt axis and tilt angle $\\tau$ in units of rad, the maximum of the tilt-angle distribution can be estimated to be shifted from 34\u00b0 for zero force to 41\u00b0 for a transversal force $f=2$ pN and to 49\u00b0 for a transversal force $f=5$ pN acting on the EC domain of the TCR-MHC complex (see Figure 3\u2014figure supplement 3(a) and Materials and methods). Such transversal forces on TCR-MHC complexes up to 5 pN are within the range measured with force sensors (G\u00f6hring et al., 2020).\n\nAn increased tilt of the TCR-MHC complex due to transversal forces also affects the membrane separation at the site of the complex and, thus, the size-based segregation of large surface molecules such as CD45 or of other receptor-ligand complexes from TCR-MHC complexes. In the kinetic segregation mechanism, a key step in T cell activation is the size-based segregation of the inhibitory tyrosine phosphatase CD45 from TCR-MHC complexes (Davis and van der Merwe, 2006; Choudhuri and van der Merwe, 2007; Chang et al., 2016). A change of the tilt angle of the EC domain of the TCR-MHC complex with length $h\u224313$ nm from 34\u00b0 to 49\u00b0 leads to a decrease of about 2.2 nm in the separation $h\\betacos\u2061[\\tau]$ between the membrane surfaces and, thus, to an increased segregation of large surface molecules. Such force-induced decreases of the membrane separation at the site of TCR-MHC complexes may also be relevant for the the recently observed segregation of CD2-CD58 complexes from TCR-MHC complexes, which both have EC domain lengths of about 13 nm (Demetriou et al., 2019).\n\nThe orientations of the TCR\u03b1\u03b2 EC domain within the TCR \u2013 CD3 complex are affected by the low-affinity interactions with the CD3\u03b5\u03b3 and CD3\u03b5\u03b4 EC domains (He et al., 2015). Because of the inherent limitations of coarse-grained models to describe such low-affinity interactions (Javanainen et al., 2017), we chose state-of-the-art atomistic force fields for our simulations of the TCR \u2013 CD3 complex. Our 120 simulation trajectories with a length of 1 \u03bcs provide a cumulative sampling on timescales that exceed the length of the individual trajectories (Pande et al., 2003; No\u00e9 et al., 2009) and lead to equilibrated conformational and orientational distributions of the EC domains (see Figure 4). The rather large orientational variations of the TCR\u03b1\u03b2 EC domain observed in our simulations make it plausible that processes on longer timescales do not contribute significantly to the overall EC domain conformations. Our sampling of the TM domain, in contrast, may be limited to conformations close to the cryo-EM structure of the TM domain, which is embedded in the detergent digitonin in the experiments. Larger conformational rearrangements of the TM helices such as the bending of the TCR\u03b1 TM helix at a helix hinge observed in NMR experiments (Brazin et al., 2018) may occur on longer timescales, and may also depend on the composition of the lipid membrane. The TCR\u03b1 TM helix remains intact on the microsecond timescales of our simulations and does not break into two helix halves connected by a hinge. Overall, our simulation result for the TM domain illustrate that the tilt of the TCR\u03b1\u03b2 EC domain is associated with statistically significant changes in the orientation of TM helices. How these orientational changes are affected by the membrane composition, and whether they can be related to conformational changes in the largely disordered intracellular signaling domains requires further simulations, likely with atomistic resolution because of limitations in modeling secondary structure propensities and disordered protein segments with coarse-grained force fields (Monticelli et al., 2008; Robustelli et al., 2018). In recent modeling based on the cryo-EM structure of the TCR \u2013 CD3 complex, the intracellular signaling domains have been included in coarse-grained simulations of the entire complex with a cumulative simulation time of 25 \u03bcs (Prakaash et al., 2021), and the conformations of the TM domain in a complex, asymmetric membrane have been explored in atomistic simulations with a cumulative simulation time of about 4 \u03bcs (Lanz et al., 2021). Future atomistic simulations of the TCR \u2013 CD3 complex bound to the MHC-peptide EC domain may provide insights on the role of binding-induced conformational changes in TCR activation (Hwang et al., 2020; Ayres et al., 2016). The orientational distributions of the TCR\u03b1\u03b2 EC domain complex obtained from our simulations also provide a basis for the coarse-grained or multiscale modeling of the TCR-MHC complex anchored to apposing membranes (Steink\u00fchler et al., 2019).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/67195/elife-67195-fig4-v2.jpg)\n\n**Figure 4.:** Each data point is an average over the simulation structures of the 120 trajectories at the indicated time point, with error bars representing the error of the mean for these 120 structures. The structural elements of C\u03b1 and C\u03b2 are defined in Figure 2.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67195/elife-67195-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Time-dependent trajectory averages for (a) the angle between the axes A and B of the TCR\u03b1\u03b2 EC domain and (b) minimal C\u03b1-atom root-mean-square deviations (RSMDs) of the TCR\u03b1\u03b2, CD3\u03b5\u03b3, and CD3\u03b5\u03b4 EC domains as well as the transmembrane (TM) domain relative to the cryo-EM structure of the T cell receptor \u2013 CD3 complex (Dong et al., 2019). Each data point is an average over the simulation structures of the 120 trajectories at the indicated time point, with error bars representing the error of the mean for these 120 structures. Axis A of the TCR\u03b1\u03b2 EC domain connects the centres of mass of C\u03b1\u03b2 and V\u03b1\u03b2, where C\u03b1\u03b2 is the dimer of the constant domains C\u03b1 and C\u03b2, and V\u03b1\u03b2 is the dimer of the variable domains V\u03b1 and V\u03b2. Axis B connects the centres of mass of the variable domains V\u03b1 and V\u03b2 (see 3(b) for illustration). The EC domains here are taken to span the residues V26 to C227 of TCR\u03b1, residues G22 to C264 of TCR\u03b2, residues Q33 to V118 of CD3\u03b5, residues F22 to M92 of CD3\u03b4, and residues S24 to M103 of CD3\u03b3.\n\nThe concerted conformational changes of the TCR \u2013 CD3 complex in our simulations are reflected in the correlations of contact clusters in the EC domain interactions. The largest positive correlations of clusters in the TCR\u03b1\u03b2/CD3\u03b5\u03b4 contact map of Figure 2 occur between the contact clusters 1 to 4 (see Figure 2\u2014figure supplement 1, top left), which correspond to interactions of the variable domain V\u03b1 of TCR\u03b1 and the \u03b4 chain of CD3\u03b5\u03b4. The large positive correlations of these four contact clusters can be understood from the coupling to the tilt of the TCR\u03b1\u03b2 EC domain, because the contacts of the V\u03b1 domain reported by the four contact clusters are only possible at high tilt angles of the TCR\u03b1\u03b2 EC domain (see Figure 3(d)). Relatively large positive correlations occur also between the clusters 13 to 21 of the TCR\u03b1\u03b2/CD3\u03b5\u03b3 contact map (see Figure 2\u2014figure supplement 1, bottom left). These clusters reflect interactions of the C\u03b2 FG loop and G strand with the $\u03f5$ chain and the N-terminus of the \u03b3 chain of CD3\u03b5\u03b3, which decrease with increasing tilt angle of the TCR\u03b1\u03b2 EC domain (see Figure 3(d) and Figure 3\u2014figure supplement 1). Besides these positive correlations that result from the concerted conformational changes coupled to the tilt angle of the TCR\u03b1\u03b2 EC domain, the overall weak correlations between the majority of the other contact clusters in Figure 2 indicate independent motions of the loops and strands involved in these EC domain contacts. In addition, relatively strongly negative correlations of several pairs of contact clusters point to alternative EC domain contacts. For example, the overall rather negative correlations between the clusters 13 to 21 and the cluster 22 of the TCR\u03b1\u03b2/CD3\u03b5\u03b3 contact map show that the interaction of the C\u03b2 G strand and the \u03b3 AB loop reported by cluster 22 is not compatible with the interactions of the C\u03b2 FG loop and G strand to the \u03b5 chain and the N-terminus of the \u03b3 chain of CD3\u03b5\u03b3, which are reflected by the clusters 13 to 21.\n\nOverall, our simulations reveal that the orientation of the\u00a0TCR EC domain relative to the membrane is coupled to structural changes throughout the TCR \u2013 CD3 complex. Besides this concerted structural motion, the overall weak correlations of the majority of EC domain interactions indicate additional independent motions of the loops and strands that are involved in these interactions.\n\n## Materials and methods\n\n### System setup\n\nTo embed the cryoEM structure of the human TCR-CD3 complex (PDB ID 6jxr) into a lipid membrane, we have first aligned the protein complex along the $z$-axis of the simulation box. In this alignment with the program Visual Molecular Dynamics (VMD) (Humphrey et al., 1996), the first principal axis of the protein complex is parallel to the z-axis. We then embedded the aligned TCR-CD3 complex with the CHARMM-GUI program (Wu et al., 2014; Jo et al., 2008; Lee et al., 2020) into a lipid membrane that is oriented along the x-y-plane of the simulation box and is composed of 228 palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine (POPC) and 57 cholesterol molecules in each monolayer, added missing atoms of the proteins with this program, and capped the N- and C-terminal ends of the eight protein chains with neutral ACE ($-COCH_{3}$) and NME ($-NHCH_{3}$) residues. We solvated this membrane-protein assembly at a salt concentration of 0.15 M KCl such that a 2.5 nm thick water layer is maintained above and below in $z$-direction. We performed the membrane embedding and solvation 10 times to obtain 10 system conformations as starting conformations of our simulations. The number of water molecules in this ten conformations slightly varies from 79,744 to 79,855.\n\n### System equilibration\n\nWe have equilibrated the ten system conformations with the Amber16 software (Case et al., 2017). In this equilibration, we have first performed an energy minimization with 5000 minimization steps of steepest decent and subsequent 5000 steps of the conjugent gradient algorithm. The positions of backbone atoms of the EC and TM domains of the proteins were harmonically restrained in this minimization with a force constant of 10 kcal mol-1 \u00c5-2. We have subsequently heated the systems in two simulation steps of 5 ps and 100 ps with harmonic restraints on all protein and lipid atoms: (1) from 0 K to 100 K at constant volume, and (2) from 100 K to 303 K at a constant pressure of 1 bar using the Berendsen barostat with anisotopic pressure coupling and a pressure relaxation time of 2 ps. In both heating steps, we used a Langevin thermostat with a collision frequency of 1 ps-1, a MD integration time step of 2 fs, and a force constant of 10 kcal mol-1 \u00c5-2 for the harmonic restraints. We have finally performed equilibration simulations with a total length of 20 ns at the temperature 303 K and a constant pressure of 1 bar. The equilibration simulations were carried out in ten steps of 2 ns with decreasing harmonic restraints on the protein backbone atoms of 10.0, 8.0, 6.0, 4.0, 2.0, 0.8, 0.6, 0.4, 0.2, and 0.1 kcal mol-1 \u00c5-2 in these steps. We used a Langevin thermostat with collision frequency 1.0 ps-1, a Berendsen barostat with a pressure relaxation time of 1 ps for the semi-isotropic pressure coupling, and in integration time step of 2 fs in these simulations. The lengths of all bond involving hydrogens were constrained with the SHAKE algorithm (Miyamoto and Kollman, 1992; Ryckaert et al., 1977), and a cutoff length of 1.0 nm was used in calculating the non-bonded interactions with the Particle Mesh Ewald (PME) algorithm Essmann et al., 1995; Darden et al., 1993.\n\n### Production simulations\n\nFor each of the 10 equilibrated system conformations, we have generated 12 independent MD trajectories with a length of 1\u00a0\u03bcs at a temperature of 303 K. The total simulation time of these 120 production trajectories thus is 120 \u03bcs. We conducted the production simulations with the Amber99SB-ILDN protein force field (Lindorff-Larsen et al., 2010), the Amber Lipid14 membrane force field (Dickson et al., 2014), and the software AMBER 16 GPU (Salomon-Ferrer et al., 2013; Le Grand et al., 2013). We used a Langevin thermostat with a Langevin collision frequency of 1.0 ps-1, and the Berendsen barostat with semi-isotropic pressure coupling and a relaxation time of 1 ps to apply a constant pressure of 1 bar in all directions at which the membrane is tensionless. As in the equilibration simulations, the lengths of all bond involving hydrogens were constrained with the SHAKE algorithm (Miyamoto and Kollman, 1992; Ryckaert et al., 1977), and a cutoff length of 1.0 nm was used in calculating the non-bonded interactions with the Particle Mesh Ewald (PME) algorithm (Essmann et al., 1995; Darden et al., 1993). In addition, we applied hydrogen mass repartitioning (Hopkins et al., 2015) to all the hydrogen atoms on protein and lipids in the production simulations, which allowed to increase to the MD integration time step to 4 fs.\n\n### Analysis of trajectories\n\nOur analysis of the structural and orientational variability of the TCR - CD3 complex along the simulation trajectories is based on the residue-residue contacts of the TCR\u03b1\u03b2, CD3\u03b5\u03b4, and CD3\u03b5\u03b3 EC domains, on the tilt and rotation angle of the TCR\u03b1\u03b2 EC domain relative the membrane plane, and on the inclination angles of the TM helices relative the membrane. We take two residues from different EC domains to be in contact if the minimum distance between non-hydrogen atoms of the residues is smaller than 0.45 nm. Our tilt and rotation angles of the TCR\u03b1\u03b2 EC domain are determined from two characteristic axes in the domain: Axis A connects the centres of mass of C\u03b1\u03b2 and V\u03b1\u03b2, where C\u03b1\u03b2\u00a0is the dimer of the constant domains C\u03b1 and C\u03b2, and V\u03b1\u03b2 is the dimer of the variable domains V\u03b1 and V\u03b2. Axis B connects the centres of mass of the variable domains V\u03b1 and V\u03b2. We define the tilt angle of the TCR\u03b1\u03b2 EC domain as the angle between axis A and the membrane normal, and the rotation angle as the angle between axis B and the normal of the plane spanned by axis A and the membrane normal. The rotation angle describes the rotation of the TCR\u03b1\u03b2 EC domain around axis A. To determine the inclination angles of the TM helices, we divide the residue span of the helices defined in the PDB file 6jxr of the cryo-EM structure (Dong et al., 2019) into two halves. We calculate the inclination angle of a TM helix as the angle between the membrane normal and the line that connects the centres of mass of the two helix halves.\n\nFigure 4 indicates that the structural and orientational ensembles sampled by our 120 production trajectories equilibrate within the first 0.5 \u03bcs of the trajectories. The data points in the figure represent averages over the 120 simulation structures of the trajectories at the indicated simulation times, with error bars representing the error of the mean for these 120 frames. The time-dependent trajectory averages for the tilt and rotation angle Figure 4(a) converge to average values of about 26\u00b0 for the rotation angle and between 33\u00b0 and 34\u00b0 for the tilt angle within 0.5 \u03bcs. Within this time, the inclination angles of TM helices in Figure 4(b) and the numbers of contacts for structural elements in the TCR constant domains C\u03b1 and C\u03b2 and for the variable domain V\u03b1 converge as well. We focus in our analysis therefore on the second trajectory halves and extract 50 structures at the simulations times 0.51 \u03bcs, 0.52 \u03bcs, 0.53 \u03bcs, \u2026 , 1.0 \u03bcs from each trajectory, which results in $120\\times50=6000$ structures that reflect an equilibrated ensemble of simulation conformations. The contacts, contact numbers, and angles presented in Figures 2 and 3 are calculated from these 6000 structures. The 6000 structures are available at the Edmond Open Research Data Repository at https://dx.doi.org/10.17617/3.5m (Pandey and Weikl, 2021).\n\nThe variations of the tilt and rotation angle of the TCR\u03b1\u03b2 EC domain are large compared to the variations of the angle between the axes A and B of the EC domain. The tilt angle distribution of the equilibrated ensemble of 6000 simulation structures has a mean of 33.4\u00b0 and a standard deviation of 8.9\u00b0, the rotation angle distributions has a mean of 26.1\u00b0 and a standard deviation of 15.1\u00b0, while the distribution of the angle between axis A and B of the TCR\u03b1\u03b2 EC domain has a mean of 86.5\u00b0 and a significantly smaller standard deviation of 1.9\u00b0. This small standard deviation indicates that the large TCR\u03b1\u03b2 EC domain can be seen as rather stable and rigid within the TCR - CD3 complex, which is supported by the small average root-mean-square deviation (RMSD) of about 2 \u00c5 for the C\u03b1 atoms of the TCR\u03b1\u03b2 EC domain simulation structures relative to the cryo-EM structure (see Figure 4\u2014figure supplement 1). The average C\u03b1 RMSDs of the CD3\u03b5\u03b4 and CD3\u03b5\u03b3 EC domains relatively to the cryo-EM structure are only slightly larger and exhibit a marginal increase of about 0.3 \u00c5 along the second trajectory halves. Overall, these RMSDs and the small variations of the angle between axis A and B of the TCR\u03b1\u03b2 EC domain indicate that the three EC domains of the TCR - CD3 complex are rather stable. The main structural variations of the complex arise from the orientational variations of TCR\u03b1\u03b2 EC domain relative to the membrane, which are associated with the characteristic changes in the quaternary interactions between the EC domains illustrated in Figure 3.\n\nWe estimate the tilt-angle distributions of bound TCR-MHC complexes that experience a transversal force $f$ under the assumption that the membrane anchoring of the MHC EC domain is more flexible than the membrane anchoring of the TCR EC domain. The force-free tilt angle distribution of the TCR-MHC EC domain then can be approximated by the distribution $P_{0}\\beta(\\tau)$ for the tilt angle \u03c4 of the TCR EC domain obtained from our simulations of the TCR - CD3 complex. From this distribution, an effective free energy $E_{0}\\beta(\\tau)$ associated with the tilt in the absence of transversal force can be estimated via\u00a0$P_{0}\\beta(\\tau)=exp\u2061[-E_{0}\\beta(\\tau)/k_{B}\\betaT]$ with Boltzmann constant $k_{B}$. A transversal force $f$ parallel to the membrane shifts the effective energy to $E_{f}\\beta(\\tau)=E_{0}\\beta(\\tau)-f\\betah\\betasin\u2061[\\tau]$ where $h\u224313$ nm is the length of the TCR-MHC EC domain (Wang et al., 2009) along the tilt axis, and $\\tau$ denotes the tilt angle in units of rad. This transversal force is transmitted by the T cell cytoskeleton via a frictional coupling to the intracellular side of the TCR \u2013 CD3 complex according to experiments of T cell adhesion to patterned supported membranes (DeMond et al., 2008; Mossman et al., 2005). We assume that the TCR-MHC complex rotates and aligns its tilt direction to the direction of the force. The tilt-angle distribution under a transversal force $f$ then follows as $P_{f}\\beta(\\tau)=exp\u2061[-E_{f}\\beta(\\tau)/k_{B}\\betaT]/\\intexp\u2061[-E_{f}\\beta(\\tau)/k_{B}\\betaT]\\betad\\tau$ (see Figure 3\u2014figure supplement 3(a)). This distribution thus is obtained by multiplication of $exp\u2061[fhsin\u2061[\\tau]/k_{B}T]$ to the force-free distribution and subsequent normalization.\n\nWe determined the membrane thickness in Figure 4\u2014figure supplement 1(b) as the thickness of the annulus of POPC lipids in contact with the TM domain. Here, POPC lipids are taken to be in contact with a protein chain if the minimum distance between the non-hydrogen atoms of the lipid and protein chain is smaller than 0.5 nm. The thickness of the POPC lipid annulus in a simulation conformation then was calculated as the distance between the centres of mass of the POPC lipid headgroups in the two monolayers of the annulus along the direction perpendicular to the membrane. Within the statistical accuracy, the membrane thickness does not change with increasing tilt angle of the TCR\u03b1\u03b2 EC domain.\n",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "3be9417b-18a6-407b-9b72-6ee75b52bb89",
+      "submission_id": "7fc4bcb9-4092-46e6-aebb-7543b4aa9589",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael L Dustin, University of Oxford United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.67195.sa1](https://doi.org/10.7554/eLife.67195.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nYour work shows, based on Molecular Dynamics simulations, the structural variability of the T cell receptor complex. Changes in the tilt angles of the extracellular antigen binding domains were observed to correlate with changes in the orientation of transmembrane helices, which may well impact signal transduction during antigen recognition. Your responses to the reviewers have improved the clarity of the approach and interpretations are well supported by experimental observations where available.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Structural variability and concerted motions of the T cell receptor \u2013 CD3 complex\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Michael L Dustin as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Tadatsugu Taniguchi as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Brian Baker (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nAll the reviewers found the early results on MD simulations of full TCR to be of great interest and potential value. The paper currently doesn't provide sufficient insight for publication in eLife, but it was felt that additional discussion could address this in different directions that might be best selected by the authors. The reviewers didn't reach a consensus, but hope that with the individual reviews below the authors can revise the manuscript to increase the value for immunology and signalling audiences along one or two of the lines suggested.\n\n1) There was some consensus regarding discussion of the limitations of the short simulations with implications for stability of the system and the ability to establish correlations. Is there potential to use the results from these simulations to develop coarser simulations over longer time that might get into the time frame of pMHC interaction and force application. A discussion of these future directions could be helpful in addition to pointing out current limitations.\n\n2) A video showing the TCR fluctuations would be nice.\n\nReviewer #1:\n\nIt would be important to determine if this atomistic simulation lasting 1 \u00b5s could be used to seed a coarse grained simulation that could operate in time frames relevant to natural ligand binding and capture the major movements documented here, for example the 4 clusters, to enable MD simulations of sufficient duration to ask questions about TCR signalling in a realistic time frame.\n\nReviewer #2:\n\nWhile the strengths of the paper are in the testable hypotheses that are generated, there are weaknesses that should be considered:\n\n\u2013 The simulations give a window into thermal fluctuations around the 'average' cryoEM structure. The extent these rapid motions give insight into signaling mechanisms is limited. For example, there is no comparison of how the motions of a pMHC bound structure might differ, or how fluctuations might be altered under load.\n\n\u2013 The authors do a limited analysis of equilibration, which is always needed in complex simulation papers to ensure the robustness of the data and conclusions.\n\n\u2013 There is a limited analysis of structural variance or correlated motion. Overall, the authors give very limited attention to the high level of detail that MD simulations are capable of and arguably best known for.\n\nComments for the authors:\n\nThere are major weaknesses that should be considered:\n\n1) The authors perform a total of 120 microseconds of simulation in explicit solvent, performed by compositing many shorter simulations. This is a considerable amount of simulation time. However, the authors are still looking at motions that would be comparable to experiments on the nanosecond timescale. It is highly unlikely that these simulations would capture what occurs upon binding or applied force, which would occur with higher barriers and over longer timescales. Instead, we are looking at thermal fluctuations around an equilibrium structure. While still providing testable hypotheses regarding how a TCR/CD3 might be 'poised' for signaling, the immediate insight into signaling mechanisms and thus impact is very limited. The authors need to consider this throughout their manuscript.\n\n2) The authors do not do a complete analysis of equilibration, using domain angles and contacts as a window into equilibration. There are none of the analyses that are traditionally performed with long simulations to ensure equilibration of the structure (e.g., is domain assembly maintained, how is secondary or tertiary structure maintained, what about membrane stability, etc.).\n\n3) Similar to the point above, the analysis is limited to contacts and angles. One might expect various higher frequency motions to be insightful \u2013 for example, what does the structure of the FG loop do over the course of the simulation? That about the \u03b2 chain AB loop, which has been implicated in triggering? The overall analysis is very high level and lacking in the kind of rich detail that extensive MD simulations are capable of.\n\n4) There are no direct connections to experiments here. Experimental data do not need to be included, but over the years there have been many mutation, perturbations, etc. performed that the authors could look at. Similarly, there are no pMHC bound or force experiments included that could give insight into actual signaling mechanisms as opposed to the ligand-free and force-free fluctuations that presumably occur as the molecule is waiting for something to happen.\n\n5) Related to the point above, there is data suggesting dynamic allostery as a mechanism contributing to TCR triggering. Dynamic allostery requires correlated motion \u2013 none of that is considered here.\n\nReviewer #3:\n\nWeikl and colleagues used the structure of the T cell receptor complex, which has recently been determined via cryo-electron microscopy, as basis for an atomistic modelling approach. This method offers the advantage to overcome a central limitation of cryo-EM, which is the choice of the membrane lipid environment: while experiments have been based on embedding the protein in detergent, Weikl et al. used here glycerophospholipids and cholesterol, which reflects the natural situation in the plasma membrane more appropriately. In addition, cryo-EM required the addition of fixatives, which is not necessary in the MD simulation approach.\n\nThe paper reveals interesting new dynamical information about the TCR complex. It would be informative, if the authors would include a discussion on the following points:\n\nFigure 2: How is contact between residues defined? Would an isolated 10ns encounter already qualify as contact? What about analyzing the contact duration? What is distance between two sites to qualify as contact?\n\nFigure 3a/b:\n\n\u2022 It would be helpful to indicate rotation angle 0; maybe by adding an en face view onto the axis A?\n\n\u2022 The tilting of the TM helices appears to be accompanied by slight local thinning of the membrane. Is that correct? Do lipids adjacent to the transmembrane helices follow the tilt, and/or is there different ordering of the fatty acids? Is the cholesterol distribution affected by the tilt? How would different lipids with different length or compressibility affect the helix tilting?\n\n\u2022 What would generally happen if different lipids were tested, particularly asymmetric lipid distributions across the membrane? In the natural plasma membrane environment lipids are distributed asymmetrically across the leaflets, with saturated and unsaturated lipids of different chain length being enriched in the extracellular and cytoplasmic leaflet, respectively. It would be interesting, whether this compensates or probably even amplifies the observed mechanism. Maybe the authors could add a discussion on this aspect.\n\nFigure 3 c and e: It would be informative to add the results of the cryo-EM study here.\n\nFigure 3: For better comparison, it would be nice to scale the y-axes with identical increments.\n\nIf fluctuations of the TCR \u03b1/\u03b2 would be similar in reality as it was revealed in the simulation, I would expect continuous fluctuations of helix tilt angles. If helix tilt angle was indeed a cause for signaling, wouldn't that lead to continuous aberrant activation of the TCR?\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Structural variability and concerted motions of the T cell receptor \u2013 CD3 complex\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, including Michael L Dustin as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Tadatsugu Taniguchi as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nThe paper is significantly improved by the inclusion of the videos and discussion of some biological implications.\n\n1) Is it correct that the rotation angle 0 is defined by the origination in the published cry-EM structure? Regardless, this should be defined more clearly in the text and figure.\n\n2) The authors should address the points raised by reviewer 3 regarding force induced tilt through clarification of the text and explanatory schematics if helpful. It may also be interesting in addressing the last comment to determine if the observation of supine orientation of MHC class I at a membrane surface is relevant to the discussion. see Mitra AK, Celia H, Ren G, Luz JG, Wilson IA, Teyton L. Supine orientation of a murine MHC class I molecule on the membrane bilayer. Curr Biol. 2004;14(8):718-24. Epub 2004/04/16. doi: 10.1016/j.cub.2004.04.004. PubMed PMID: 15084288. Is this natural orientation of MHC class I aligned with the tilt of the TCR when the interface is formed? Does the tilt angle of the TCR create a natural rudder to orient the TCR and would it matter which of the CD3 or zeta-zeta tails are pulled.\n\nReviewer #3:\n\nIn principle, all of my previous questions were adequately addressed. There was a misunderstanding concerning my previous comment on the specification of the rotational angle in Figure 3: My problem was to understand, which TCR conformation corresponds to a rotation angle 0. The authors may still consider to add this information.\n\nConcerning the new data on force-induced tilt, however, I have a few questions:\n\n\u2013 First, the authors mention on multiple locations in their paper a force-induced tilt of the TCR-MHC complex. The MHC, however, was not included in their simulations. I suggest being more precise in this aspect.\n\n\u2013 Second, if I understand correctly, force was not included in the simulations, but instead the effect was added a posteriori. I had difficulties to understand the rationale behind it. What is the justification for the equation given in line 346? What was actually multiplied by the exponential function?\n\n\u2013 Third, wouldn't one expect a directionality of the effect? In other words, if force acted, say, in the opposite direction to the naturally occurring tilt, is the idea that the TCR would align with the external force field?\n\n\u2013 Fourth, I would be more careful with speculations concerning CD45 segregation. The authors argue in the discussion (line 175 and following) that TCR tilt brings the two membranes in closer juxtaposition. But that would only be true if MHC would also be sufficiently flexible to compensate for the TCR tilt, keeping the two membranes parallel.\n",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a9d2a9b0-e755-4d64-bc44-285204c02986",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C1",
+      "claim": "The TCR extracellular (EC) domain attains tilt angles relative to the membrane normal that range from 15\u00b0 to 55\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the TCR extracellular (EC) domain is highly variable in its orientation by attaining tilt angles relative to the membrane normal that range from 15\u00b0 to 55\u00b0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data from atomistic molecular dynamics simulations showing the distribution of tilt angles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "dfd34be1-459d-4fa1-a82e-c6f56460bffa",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C2",
+      "claim": "The tilt angle of the TCR EC domain is coupled to a rotation of the domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The tilt angle of the TCR EC domain is both coupled to a rotation of the domain and to characteristic changes throughout the TCR \u2013 CD3 complex, in particular in the EC interactions of the C\u03b2 FG loop of the TCR, as well as in the orientation of transmembrane helices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation data showing correlation between tilt and rotation angles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "39a19aa6-a4ed-41a4-a476-8ad96db268e5",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C3",
+      "claim": "The tilt angle of the TCR EC domain is coupled to characteristic changes in the EC interactions of the C\u03b2 FG loop.",
+      "claim_type": "EXPLICIT",
+      "source": "The tilt angle of the TCR EC domain is both coupled to a rotation of the domain and to characteristic changes throughout the TCR \u2013 CD3 complex, in particular in the EC interactions of the C\u03b2 FG loop of the TCR, as well as in the orientation of transmembrane helices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation data showing changes in C\u03b2 FG loop contacts with tilt angle.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "5d49fc66-5ff8-467a-a1a6-c11df268fd74",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C4",
+      "claim": "The tilt angle of the TCR EC domain is coupled to changes in the orientation of transmembrane helices.",
+      "claim_type": "EXPLICIT",
+      "source": "The tilt angle of the TCR EC domain is both coupled to a rotation of the domain and to characteristic changes throughout the TCR \u2013 CD3 complex, in particular in the EC interactions of the C\u03b2 FG loop of the TCR, as well as in the orientation of transmembrane helices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation data showing changes in TM helix inclination angles with TCR EC domain tilt.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "e7f10e9a-a272-44dc-b422-4070e460be88",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C5",
+      "claim": "T cells recognize peptide antigens presented by major histocompatibility complexes (MHC) on apposing cell surfaces as a central step in the initiation of adaptive immune responses.",
+      "claim_type": "EXPLICIT",
+      "source": "T cells recognize peptide antigens presented by major histocompatibility complexes (MHC) on apposing cell surfaces as a central step in the initiation of adaptive immune responses (Rossjohn et al., 2015; Smith-Garvin et al., 2009; Dustin, 2014; Pettmann et al., 2018; Belardi et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "5328082a-f51e-471c-9114-4e28b4773dfd",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C6",
+      "claim": "The heterodimeric TCR\u03b1\u03b2 contains the binding site for recognizing peptide antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "In this complex, the heterodimeric TCR\u03b1\u03b2 contains the binding site for recognizing peptide antigens, and the associated CD3\u03b5\u03b4 and CD3\u03b5\u03b3 heterodimers and the CD3\u03b6\u03b6 homodimer contain the intracellular signaling motifs that transmit antigen binding to T cell activation (Wucherpfennig et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "5b12a81a-c30a-4235-876c-df5bdffdcc12",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C7",
+      "claim": "The CD3\u03b5\u03b4 and CD3\u03b5\u03b3 heterodimers and the CD3\u03b6\u03b6 homodimer contain the intracellular signaling motifs that transmit antigen binding to T cell activation.",
+      "claim_type": "EXPLICIT",
+      "source": "In this complex, the heterodimeric TCR\u03b1\u03b2 contains the binding site for recognizing peptide antigens, and the associated CD3\u03b5\u03b4 and CD3\u03b5\u03b3 heterodimers and the CD3\u03b6\u03b6 homodimer contain the intracellular signaling motifs that transmit antigen binding to T cell activation (Wucherpfennig et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "62ccd676-be5f-43e3-81cd-ca860d7e56d8",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C8",
+      "claim": "The stoichiometry of the TCR-CD3 complex has been known for nearly two decades.",
+      "claim_type": "EXPLICIT",
+      "source": "While this stoichiometry of the complex has been known for nearly two decades (Call et al., 2002), the structure of the TCR \u2013 CD3 complex remained a puzzling problem (Fernandes et al., 2012; Birnbaum et al., 2014; Natarajan et al., 2016) that has only been recently solved by Dong et al., 2019 with cryogenic electron microscopy (cryo-EM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Call et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "921c74d1-6a76-4ccc-ba08-1db8f0440520",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C9",
+      "claim": "The structure of the TCR \u2013 CD3 complex was solved by Dong et al., 2019 with cryogenic electron microscopy (cryo-EM).",
+      "claim_type": "EXPLICIT",
+      "source": "While this stoichiometry of the complex has been known for nearly two decades (Call et al., 2002), the structure of the TCR \u2013 CD3 complex remained a puzzling problem (Fernandes et al., 2012; Birnbaum et al., 2014; Natarajan et al., 2016) that has only been recently solved by Dong et al., 2019 with cryogenic electron microscopy (cryo-EM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Dong et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "8b1f7404-d07d-4da1-a4ce-099e6094bcda",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C10",
+      "claim": "Dong et al. expressed all proteins of the TCR-CD3 complex in cultured cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine the structure, Dong et al. expressed all proteins of the complex in cultured cells, replaced the cell membrane around the assembled TCR \u2013 CD3 complex by the detergent digitonin, and stabilized the interactions between the extracellular (EC) domains of TCR\u03b1\u03b2, CD3\u03b5\u03b4 and CD3\u03b5\u03b3 by chemical crosslinking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental methods used by Dong et al., cited in the text.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "d1de6581-0a16-4cdd-98b6-a573cfb26585",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C11",
+      "claim": "Dong et al. replaced the cell membrane around the assembled TCR \u2013 CD3 complex by the detergent digitonin.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine the structure, Dong et al. expressed all proteins of the complex in cultured cells, replaced the cell membrane around the assembled TCR \u2013 CD3 complex by the detergent digitonin, and stabilized the interactions between the extracellular (EC) domains of TCR\u03b1\u03b2, CD3\u03b5\u03b4 and CD3\u03b5\u03b3 by chemical crosslinking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental methods used by Dong et al., cited in the text.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "28bbc776-da0b-4442-b6f3-2b8ebbd03b5e",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C12",
+      "claim": "Dong et al. stabilized the interactions between the extracellular (EC) domains of TCR\u03b1\u03b2, CD3\u03b5\u03b4 and CD3\u03b5\u03b3 by chemical crosslinking.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine the structure, Dong et al. expressed all proteins of the complex in cultured cells, replaced the cell membrane around the assembled TCR \u2013 CD3 complex by the detergent digitonin, and stabilized the interactions between the extracellular (EC) domains of TCR\u03b1\u03b2, CD3\u03b5\u03b4 and CD3\u03b5\u03b3 by chemical crosslinking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental methods used by Dong et al., cited in the text.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "680b7bf3-5c23-4f31-9d18-690b4779a906",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C13",
+      "claim": "In the cryo-EM structure, the EC domains of CD3\u03b5\u03b4 and CD3\u03b5\u03b3 are both in contact with TCR\u03b1\u03b2 and with each other.",
+      "claim_type": "EXPLICIT",
+      "source": "In the cryo-EM structure, the EC domains of CD3\u03b5\u03b4 and CD3\u03b5\u03b3 are both in contact with TCR\u03b1\u03b2 and with each other (see Figure 1), which explains the cooperative binding of CD3\u03b5\u03b4 and CD3\u03b5\u03b3 to TCR\u03b1\u03b2 observed in chain assembly (Call et al., 2002), mutational (Kuhns and Davis, 2007; Kuhns and Davis, 2012), and NMR experiments (He et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by reference to the cryo-EM structure and Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "b94a70f3-39ce-47fd-b3d0-082bcf514e30",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C14",
+      "claim": "The contact arrangement of CD3\u03b5\u03b4 and CD3\u03b5\u03b3 with TCR\u03b1\u03b2 explains the cooperative binding of CD3\u03b5\u03b4 and CD3\u03b5\u03b3 to TCR\u03b1\u03b2 observed in chain assembly, mutational, and NMR experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "In the cryo-EM structure, the EC domains of CD3\u03b5\u03b4 and CD3\u03b5\u03b3 are both in contact with TCR\u03b1\u03b2 and with each other (see Figure 1), which explains the cooperative binding of CD3\u03b5\u03b4 and CD3\u03b5\u03b3 to TCR\u03b1\u03b2 observed in chain assembly (Call et al., 2002), mutational (Kuhns and Davis, 2007; Kuhns and Davis, 2012), and NMR experiments (He et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by inference from structural data and citations to experimental observations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "e3006a85-d1bc-4001-a04d-5145b4eabe8a",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C15",
+      "claim": "The DE loop of the membrane-proximal constant domain C\u03b1 of TCR\u03b1 is in contact with the CD3\u03b5\u03b4 EC domain.",
+      "claim_type": "EXPLICIT",
+      "source": "As indicated by mutational experiments (Kuhns and Davis, 2007; Kuhns and Davis, 2012), the DE loop of the membrane-proximal constant domain C\u03b1 of TCR\u03b1 is in contact with the CD3\u03b5\u03b4 EC domain, and the CC' loop of the constant domain C\u03b2 of TCR\u03b2 is in contact with both the CD3\u03b5\u03b3 and CD3\u03b5\u03b4 EC domains in the assembled TCR \u2013 CD3 complex (see Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations to mutational experiments and reference to Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "1ae7f40a-28ae-4066-aa76-b3c5efee0624",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C16",
+      "claim": "The CC' loop of the constant domain C\u03b2 of TCR\u03b2 is in contact with both the CD3\u03b5\u03b3 and CD3\u03b5\u03b4 EC domains in the assembled TCR \u2013 CD3 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "As indicated by mutational experiments (Kuhns and Davis, 2007; Kuhns and Davis, 2012), the DE loop of the membrane-proximal constant domain C\u03b1 of TCR\u03b1 is in contact with the CD3\u03b5\u03b4 EC domain, and the CC' loop of the constant domain C\u03b2 of TCR\u03b2 is in contact with both the CD3\u03b5\u03b3 and CD3\u03b5\u03b4 EC domains in the assembled TCR \u2013 CD3 complex (see Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations to mutational experiments and reference to Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "99ea729b-30ee-4579-8d06-29ec2c7fa703",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C17",
+      "claim": "The C\u03b2 FG loop has been suggested to play a key role in T cell activation.",
+      "claim_type": "EXPLICIT",
+      "source": "The C\u03b2 FG loop, for example, has been suggested to play a key role in T cell activation (Kim et al., 2010; Touma et al., 2006), but exhibits only rather limited contacts with CD3\u03b5\u03b3 in the cryo-EM structure (see Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Kim et al., 2010 and Touma et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "692664a4-ad0c-4c19-b8a9-c265aa96b42e",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C18",
+      "claim": "The C\u03b2 FG loop exhibits only rather limited contacts with CD3\u03b5\u03b3 in the cryo-EM structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The C\u03b2 FG loop, for example, has been suggested to play a key role in T cell activation (Kim et al., 2010; Touma et al., 2006), but exhibits only rather limited contacts with CD3\u03b5\u03b3 in the cryo-EM structure (see Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by reference to Figure 1 showing the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "585b5109-d8b1-45e9-a405-87eb494363c1",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C19",
+      "claim": "The simulations have a cumulative simulation length of 120 \u03bcs.",
+      "claim_type": "EXPLICIT",
+      "source": "In this article, we investigate the structural and orientational variability of the membrane-embedded TCR \u2013 CD3 complex in extensive, atomistic molecular dynamics (MD) simulations with a cumulative simulation length of 120 \u03bcs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the computational methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "79a76c5a-f461-4474-9e27-9c09e4401229",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C20",
+      "claim": "Significantly more residues of TCR\u03b1\u03b2 are involved in EC domain contacts along the simulation trajectories compared to the cryo-EM structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the cryo-EM structure, significantly more residues of TCR\u03b1\u03b2 are involved in EC domain contacts along our simulation trajectories, in particular in the C\u03b2 FG loop, and notably also in the variable domain V\u03b1 of the TCR\u03b1 chain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation data comparing to the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "fc8d816c-0cab-4713-8962-0aa94b2fcf9e",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C21",
+      "claim": "The C\u03b2 FG loop is involved in significantly more EC domain contacts in the simulations compared to the cryo-EM structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the cryo-EM structure, significantly more residues of TCR\u03b1\u03b2 are involved in EC domain contacts along our simulation trajectories, in particular in the C\u03b2 FG loop, and notably also in the variable domain V\u03b1 of the TCR\u03b1 chain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation data comparing to the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "687f27b6-0f6d-499e-8ac2-d4ed3fea4ea9",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C22",
+      "claim": "The variable domain V\u03b1 of the TCR\u03b1 chain is involved in significantly more EC domain contacts in the simulations compared to the cryo-EM structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the cryo-EM structure, significantly more residues of TCR\u03b1\u03b2 are involved in EC domain contacts along our simulation trajectories, in particular in the C\u03b2 FG loop, and notably also in the variable domain V\u03b1 of the TCR\u03b1 chain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation data comparing to the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "6bffc822-504e-4dd8-8fe7-3ae7b6da3a99",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C23",
+      "claim": "The tilt of the TCR\u03b1\u03b2 EC domain is coupled to characteristic changes in the overall structure of the TCR \u2013 CD3 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The tilt of the TCR\u03b1\u03b2 EC domain is both coupled to a rotation of the domain and to characteristic changes in the overall structure of the TCR \u2013 CD3 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation data showing correlations between tilt angle and structural changes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "66db5b78-1b8a-49d7-8e67-16c2c1ebc373",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C24",
+      "claim": "The structural changes associated with TCR\u03b1\u03b2 EC domain tilt include a clear decrease of contacts in the C\u03b2 FG loop with increasing tilt angle.",
+      "claim_type": "EXPLICIT",
+      "source": "These structural changes include a clear decrease of contacts in the C\u03b2 FG loop and an increase of contacts in the V\u03b1 domain with increasing tilt angle of the TCR\u03b1\u03b2 EC domain, as well as changes in the orientation of the transmembrane (TM) helices of the TCR\u03b1 and CD3\u03b3 chain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation data showing contact changes with tilt angle.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "6e1d57c8-5e6f-47ad-891c-ea0c609da376",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C25",
+      "claim": "The structural changes associated with TCR\u03b1\u03b2 EC domain tilt include an increase of contacts in the V\u03b1 domain with increasing tilt angle.",
+      "claim_type": "EXPLICIT",
+      "source": "These structural changes include a clear decrease of contacts in the C\u03b2 FG loop and an increase of contacts in the V\u03b1 domain with increasing tilt angle of the TCR\u03b1\u03b2 EC domain, as well as changes in the orientation of the transmembrane (TM) helices of the TCR\u03b1 and CD3\u03b3 chain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation data showing contact changes with tilt angle.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "540fbc17-3f92-410e-8394-cf919895d65a",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C26",
+      "claim": "The structural changes associated with TCR\u03b1\u03b2 EC domain tilt include changes in the orientation of the transmembrane (TM) helices of the TCR\u03b1 and CD3\u03b3 chain.",
+      "claim_type": "EXPLICIT",
+      "source": "These structural changes include a clear decrease of contacts in the C\u03b2 FG loop and an increase of contacts in the V\u03b1 domain with increasing tilt angle of the TCR\u03b1\u03b2 EC domain, as well as changes in the orientation of the transmembrane (TM) helices of the TCR\u03b1 and CD3\u03b3 chain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation data showing TM helix orientation changes with tilt angle.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "f42e4be0-9922-4389-a660-9a2298a07ed5",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C27",
+      "claim": "The concerted motions of the membrane-embedded TCR \u2013 CD3 complex provide atomistic insights on conformational changes of the complex in response to tilt-inducing forces on antigen-bound TCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "The concerted motions of the membrane-embedded TCR \u2013 CD3 complex revealed in our simulations provide atomistic insights on conformational changes of the complex in response to tilt-inducing forces on antigen-bound TCRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the simulation results about force-induced conformational changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "cfdc508f-9907-40dd-aac4-1a052a2b1d49",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C28",
+      "claim": "The simulations were conducted with the Amber99SB-ILDN protein force field.",
+      "claim_type": "EXPLICIT",
+      "source": "We have conducted these simulations with the Amber99SB-ILDN protein force field (Lindorff-Larsen et al., 2010) and the Amber Lipid14 membrane force field (Dickson et al., 2014) at a simulation temperature of 30\u00b0C on graphics processing units (GPUs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the computational methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "d2fec883-86b5-421c-a45d-fa9ab6f969f5",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C29",
+      "claim": "The simulations were conducted with the Amber Lipid14 membrane force field.",
+      "claim_type": "EXPLICIT",
+      "source": "We have conducted these simulations with the Amber99SB-ILDN protein force field (Lindorff-Larsen et al., 2010) and the Amber Lipid14 membrane force field (Dickson et al., 2014) at a simulation temperature of 30\u00b0C on graphics processing units (GPUs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the computational methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "81869f71-1357-44b3-ad29-24e55e14eab8",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C30",
+      "claim": "The simulations were conducted at a simulation temperature of 30\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "We have conducted these simulations with the Amber99SB-ILDN protein force field (Lindorff-Larsen et al., 2010) and the Amber Lipid14 membrane force field (Dickson et al., 2014) at a simulation temperature of 30\u00b0C on graphics processing units (GPUs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the computational methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "0d781a32-c905-4eb7-9f52-011ef1b3e503",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C31",
+      "claim": "The cryo-EM structure of the TCR \u2013 CD3 protein complex was embedded in a membrane composed of 456 POPC lipids and 114 cholesterol molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "The simulation trajectories start from initial system conformations in which the cryo-EM structure of the TCR \u2013 CD3 protein complex is embedded in a membrane composed of 456 POPC lipids and 114 cholesterol molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the computational system setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "14c07610-251a-46be-a1db-74f4eb2b7f4c",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C32",
+      "claim": "The orientational and conformational ensembles sampled by the 120 trajectories equilibrate within the first 0.5 \u03bcs of the simulation trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the orientational and conformational ensembles sampled by the 120 trajectories equilibrate within the first 0.5 \u03bcs of the simulation trajectories (see Materials and methods) and, therefore, focus on the second 0.5 \u03bcs of the MD simulation trajectories in our analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analysis of simulation data showing equilibration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "25263585-79ed-4d4e-811c-9178fcae6463",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C33",
+      "claim": "The contact maps include all residue-residue contacts that occur in the simulations with a probability larger than 0.5%.",
+      "claim_type": "EXPLICIT",
+      "source": "The contact maps of Figure 2 include all residue-residue contacts that occur in the simulations with a probability larger than 0.5%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the analysis method for contact maps.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "19840c92-c9e8-47f2-9177-f8b1f494ad2f",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C34",
+      "claim": "The probabilities of the contacts are calculated from 6000 simulation structures extracted at intervals of 10 ns from the second 0.5 \u03bcs of the 120 simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "The probabilities of the contacts are calculated from 6000 simulation structures extracted at intervals of 10 ns from the second 0.5 \u03bcs of the 120 simulations, and indicated in grayscale in Figure 2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the analysis method for contact probabilities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "f766bc71-3776-4ae4-bda9-fd645ab64975",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C35",
+      "claim": "Two residues are taken to be in contact in a simulation structure if the minimum distance between non-hydrogen atoms of the residues is smaller than 0.45 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "As in the contact maps for the cryo-EM structure shown in Figure 1, two residues are taken to be in contact in a simulation structure if the minimum distance between non-hydrogen atoms of the residues is smaller than 0.45 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the definition of a contact used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "ae98b0bf-efde-4527-9b6b-01a90960cc6a",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C37",
+      "claim": "The MD contact maps include the C\u03b1 AB loop and the C\u03b2 A and B strand in the constant domains of TCR\u03b1\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides the C\u03b1 DE loop, C\u03b2 CC' loop, C\u03b2 EF loop, C\u03b2 FG loop, and C\u03b2 G strand with contacts in the cryo-EM structure, the MD contacts maps of Figure 2 include also the C\u03b1 AB loop and the C\u03b2 A and B strand in the constant domains of TCR\u03b1\u03b2 and, remarkably, the three loops A'B, C\"D, and EF in the variable region V\u03b1 of TCR\u03b1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "f5389c07-c36e-48de-a7f1-1479cd88b681",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C38",
+      "claim": "The MD contact maps include the three loops A'B, C\"D, and EF in the variable region V\u03b1 of TCR\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides the C\u03b1 DE loop, C\u03b2 CC' loop, C\u03b2 EF loop, C\u03b2 FG loop, and C\u03b2 G strand with contacts in the cryo-EM structure, the MD contacts maps of Figure 2 include also the C\u03b1 AB loop and the C\u03b2 A and B strand in the constant domains of TCR\u03b1\u03b2 and, remarkably, the three loops A'B, C\"D, and EF in the variable region V\u03b1 of TCR\u03b1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "433473a6-a3bc-4858-8ebe-7690242d7b72",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C39",
+      "claim": "Residue-residue contacts between V\u03b1 and the \u03b4 chain of CD3\u03b5\u03b4 have probabilities smaller than 3%.",
+      "claim_type": "EXPLICIT",
+      "source": "Residue-residue contacts between V\u03b1 and the \u03b4 chain of CD3\u03b5\u03b4 have probabilities smaller than 3%, but occur in 75 of the 120 trajectories and are, thus, a robust feature of our simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation data on contact probabilities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "1a1e98d4-58f1-466f-9924-5f9fb0273196",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C40",
+      "claim": "Residue-residue contacts between V\u03b1 and the \u03b4 chain of CD3\u03b5\u03b4 occur in 75 of the 120 trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "Residue-residue contacts between V\u03b1 and the \u03b4 chain of CD3\u03b5\u03b4 have probabilities smaller than 3%, but occur in 75 of the 120 trajectories and are, thus, a robust feature of our simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation data on contact occurrence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "95c24830-5df3-436a-9116-e337a0883938",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C41",
+      "claim": "The tilt angle of TCR\u03b1\u03b2 EC domain roughly varies between 15\u00b0 and 55\u00b0 in the MD simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "In our MD simulations, the tilt angle of TCR\u03b1\u03b2 EC domain roughly varies between 15\u00b0 and 55\u00b0, while the rotation angle varies between 0\u00b0 and 55\u00b0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation data on tilt angle distribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "d84c0312-929c-40b4-b7a1-31b02ebe4a34",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C42",
+      "claim": "The rotation angle of TCR\u03b1\u03b2 EC domain varies between 0\u00b0 and 55\u00b0 in the MD simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "In our MD simulations, the tilt angle of TCR\u03b1\u03b2 EC domain roughly varies between 15\u00b0 and 55\u00b0, while the rotation angle varies between 0\u00b0 and 55\u00b0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation data on rotation angle distribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "75cba9d3-3db3-40d6-9ecd-1acadae761d5",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C43",
+      "claim": "For tilt angles between 15\u00b0 and 35\u00b0, the rotation angle predominantly adopts values between about 5\u00b0 and 25\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "For tilt angles between 15\u00b0 and 35\u00b0, the rotation angle predominantly adopts values between about 5\u00b0 and 25\u00b0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the two-dimensional probability distribution shown in Figure 3(c).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "4bfca0e4-5437-4550-9f86-21d385540369",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C44",
+      "claim": "For a tilt angle of 40\u00b0, the most probable value of the rotation angle is about 32\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "For a tilt angle of 40\u00b0, the most probable value of the rotation angle is about 32\u00b0, and further increases to 40\u00b0 for a tilt angle of 50\u00b0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the two-dimensional probability distribution shown in Figure 3(c).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "76f191e0-aa3d-4ded-baf9-7b46b590abdb",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C45",
+      "claim": "For a tilt angle of 50\u00b0, the most probable value of the rotation angle is about 40\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "For a tilt angle of 40\u00b0, the most probable value of the rotation angle is about 32\u00b0, and further increases to 40\u00b0 for a tilt angle of 50\u00b0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the two-dimensional probability distribution shown in Figure 3(c).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "97973d2f-ec26-43a7-af7d-715b72b200b5",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C46",
+      "claim": "The tilt angle for the TCR\u03b1\u03b2 EC domain in the cryo-EM structure is 31.2\u00b10.4\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "From TM domain alignment to the 120 final simulation conformations of our trajectories, we obtain the tilt angle 31.2\u00b10.4\u00b0 and the rotation angle 14.7\u00b10.7\u00b0 for the TCR\u03b1\u03b2 EC domain of the cryo-EM structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by structural alignment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "adf5b97d-3221-44f1-84ed-039e8b274a2d",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C47",
+      "claim": "The rotation angle for the TCR\u03b1\u03b2 EC domain in the cryo-EM structure is 14.7\u00b10.7\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "From TM domain alignment to the 120 final simulation conformations of our trajectories, we obtain the tilt angle 31.2\u00b10.4\u00b0 and the rotation angle 14.7\u00b10.7\u00b0 for the TCR\u03b1\u03b2 EC domain of the cryo-EM structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by structural alignment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "6fc94199-be02-46f9-b751-9b896d0b3c68",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C48",
+      "claim": "Residue-residue contacts of the A'B, C\"D, and EF loops of the variable domain V\u03b1 with the protein CD3\u03b4 only occur for tilt angles of the TCR\u03b1\u03b2 EC domain larger than about 30\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "Residue-residue contacts of the A'B, C\"D, and EF loops of the variable domain V\u03b1 with the protein CD3\u03b4 only occur for tilt angles of the TCR\u03b1\u03b2 EC domain larger than about 30\u00b0 (see Figure 3(d)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation data shown in Figure 3(d).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "f83bc73a-fd60-4023-9789-74fc8f671e90",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C49",
+      "claim": "The average number of V\u03b1-CD3\u03b4 residue-residue contacts increases to values around two for tilt angles of 50\u00b0 and larger.",
+      "claim_type": "EXPLICIT",
+      "source": "The average number of these residues-residue contacts increases to values around two for tilt angles of 50\u00b0 and larger.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation data shown in Figure 3(d).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "e07ba786-edd8-45d2-b525-9df506cb0e63",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C50",
+      "claim": "For the C\u03b2 FG loop, the average number of residues-residue contacts decreases from a value around 30 at the tilt angle 15\u00b0 to values close 0 for tilt angles of 50\u00b0 and larger.",
+      "claim_type": "EXPLICIT",
+      "source": "For the C\u03b2 FG loop, in contrast, the average number of residues-residue contacts decreases from a value around 30 at the tilt angle 15\u00b0 to values close 0 for tilt angles of 50\u00b0 and larger.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation data shown in Figure 3(d).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "fa7f131e-5b14-4577-aeda-acb47029df74",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C51",
+      "claim": "The average inclination of the TCR\u03b1 TM helix relative to the membrane normal decreases from about 11.5\u00b0 to values around 8.5\u00b0 with increasing tilt angle of the TCR\u03b1\u03b2 EC domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The average inclination of the TCR\u03b1 TM helix relative to the membrane normal decreases from about 11.5\u00b0 to values around 8.5\u00b0 with increasing tilt angle of the TCR\u03b1\u03b2 EC domain, while the average inclination of the CD3\u03b3 TM helix increases from about 15.5\u00b0 to values around 24\u00b0 (see Figure 3(e)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation data shown in Figure 3(e).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "c889d6b7-be0f-4728-bb99-dab371148fa1",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C52",
+      "claim": "The average inclination of the CD3\u03b3 TM helix increases from about 15.5\u00b0 to values around 24\u00b0 with increasing tilt angle of the TCR\u03b1\u03b2 EC domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The average inclination of the TCR\u03b1 TM helix relative to the membrane normal decreases from about 11.5\u00b0 to values around 8.5\u00b0 with increasing tilt angle of the TCR\u03b1\u03b2 EC domain, while the average inclination of the CD3\u03b3 TM helix increases from about 15.5\u00b0 to values around 24\u00b0 (see Figure 3(e)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation data shown in Figure 3(e).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "d696a8f4-1d13-437d-ab12-707a22667ce2",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C53",
+      "claim": "An increased tilt of the TCR\u03b1\u03b2 EC domain leads to a marked decrease in the contacts between the C\u03b2 FG loop and the CD3\u03b5\u03b3 EC domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Our MD simulations show that an increased tilt of the TCR\u03b1\u03b2 EC domain leads to a marked decrease in the contacts between the C\u03b2 FG loop and the CD3\u03b5\u03b3 EC domain (see Figure 3(d)), and also to changes in the inclination of TM helices relative to the membrane normal (see Figure 3(e)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation data shown in Figure 3(d).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "af87ae23-d39a-4c15-a2d1-7be098c98073",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C54",
+      "claim": "An increased tilt of the TCR\u03b1\u03b2 EC domain leads to changes in the inclination of TM helices relative to the membrane normal.",
+      "claim_type": "EXPLICIT",
+      "source": "Our MD simulations show that an increased tilt of the TCR\u03b1\u03b2 EC domain leads to a marked decrease in the contacts between the C\u03b2 FG loop and the CD3\u03b5\u03b3 EC domain (see Figure 3(d)), and also to changes in the inclination of TM helices relative to the membrane normal (see Figure 3(e)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation data shown in Figure 3(e).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "e8d027da-149c-4305-a951-a30daef1b0c2",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C55",
+      "claim": "Structural changes in the TM domain of the TCR \u2013 CD3 have been suggested to be involved in the transmission of forces from the EC domain to the signaling motifs on the intracellular segments of the CD3 chains.",
+      "claim_type": "EXPLICIT",
+      "source": "Such structural changes in the TM domain of the TCR \u2013 CD3 have been suggested to be involved in the transmission of forces from the EC domain to the signaling motifs on the intracellular segments of the CD3 chains (Brazin et al., 2015; Brazin et al., 2018), which are not resolved in the cryo-EM structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Brazin et al., 2015 and Brazin et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "7f4fd671-54ec-4199-8ea6-59f0e2fe371e",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C56",
+      "claim": "The intracellular segments of the CD3 chains are not resolved in the cryo-EM structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Such structural changes in the TM domain of the TCR \u2013 CD3 have been suggested to be involved in the transmission of forces from the EC domain to the signaling motifs on the intracellular segments of the CD3 chains (Brazin et al., 2015; Brazin et al., 2018), which are not resolved in the cryo-EM structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on knowledge of the cryo-EM structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "66a97a80-5f37-464b-94dc-55ec0f2907ec",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C57",
+      "claim": "The C\u03b1 AB loop has been implicated in TCR triggering.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the C\u03b2 FG loop, we also find a decrease of contacts between the C\u03b1 AB loop, which has been implicated in TCR triggering (Beddoe et al., 2009), and the \u03b5 chain of the CD3\u03b5\u03b3 EC domain with increasing tilt angle of the TCR\u03b1\u03b2 EC domain (see Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Beddoe et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "6091b77e-e0a3-4921-ab63-9e46a5849877",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C58",
+      "claim": "There is a decrease of contacts between the C\u03b1 AB loop and the \u03b5 chain of the CD3\u03b5\u03b3 EC domain with increasing tilt angle of the TCR\u03b1\u03b2 EC domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the C\u03b2 FG loop, we also find a decrease of contacts between the C\u03b1 AB loop, which has been implicated in TCR triggering (Beddoe et al., 2009), and the \u03b5 chain of the CD3\u03b5\u03b3 EC domain with increasing tilt angle of the TCR\u03b1\u03b2 EC domain (see Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "91a3e8ed-424b-4ff1-ab6a-e77ca4996484",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C60",
+      "claim": "MHC class I and MHC class II EC domains are anchored by one and two peptide linkers, respectively, to a pair of transmembrane helices.",
+      "claim_type": "EXPLICIT",
+      "source": "This assumption appears reasonable because MHC class I and MHC class II EC domains are anchored by one and two peptide linkers, respectively, to a pair of transmembrane helices, whereas the three EC domains of the TCR - CD3 complex are jointly anchored by six linkers to a bundle of eight transmembrane helices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established structural knowledge of MHC molecules.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "1f5b9f67-172c-455c-b1df-6fda1cf17f3a",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C61",
+      "claim": "The three EC domains of the TCR - CD3 complex are jointly anchored by six linkers to a bundle of eight transmembrane helices.",
+      "claim_type": "EXPLICIT",
+      "source": "This assumption appears reasonable because MHC class I and MHC class II EC domains are anchored by one and two peptide linkers, respectively, to a pair of transmembrane helices, whereas the three EC domains of the TCR - CD3 complex are jointly anchored by six linkers to a bundle of eight transmembrane helices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the cryo-EM structure and simulation setup.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "d11e8e04-d3e1-45c8-ad09-256dd95fe223",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C62",
+      "claim": "A presumably binding-incompetent, supine conformation of MHC class I molecules was observed in two-dimensional crystals in which the MHC EC domains are positioned with their 'sides' on the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The anchoring flexibility of MHC class I molecules is also illustrated by a presumably binding-incompetent, supine conformation observed in two-dimensional crystals in which the MHC EC domains are positioned with their 'sides' on the membrane, rather than 'standing up' (Mitra et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Mitra et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "23d1ce71-04c2-4021-a4ff-1f1efad9a45c",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C66",
+      "claim": "Transversal forces on TCR-MHC complexes up to 5 pN are within the range measured with force sensors.",
+      "claim_type": "EXPLICIT",
+      "source": "Such transversal forces on TCR-MHC complexes up to 5 pN are within the range measured with force sensors (G\u00f6hring et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to G\u00f6hring et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "38529c6a-37be-4fda-afee-1c400c7ee9ae",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C69",
+      "claim": "In the kinetic segregation mechanism, a key step in T cell activation is the size-based segregation of the inhibitory tyrosine phosphatase CD45 from TCR-MHC complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "In the kinetic segregation mechanism, a key step in T cell activation is the size-based segregation of the inhibitory tyrosine phosphatase CD45 from TCR-MHC complexes (Davis and van der Merwe, 2006; Choudhuri and van der Merwe, 2007; Chang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to established literature on the kinetic segregation mechanism.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "2f0d4a1a-c929-44ac-8902-afc71fa03341",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C70",
+      "claim": "CD2-CD58 complexes segregate from TCR-MHC complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Such force-induced decreases of the membrane separation at the site of TCR-MHC complexes may also be relevant for the the recently observed segregation of CD2-CD58 complexes from TCR-MHC complexes, which both have EC domain lengths of about 13 nm (Demetriou et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Demetriou et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "eace499e-c9b1-4811-8e71-e79b4d32724c",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C71",
+      "claim": "CD2-CD58 complexes and TCR-MHC complexes both have EC domain lengths of about 13 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Such force-induced decreases of the membrane separation at the site of TCR-MHC complexes may also be relevant for the the recently observed segregation of CD2-CD58 complexes from TCR-MHC complexes, which both have EC domain lengths of about 13 nm (Demetriou et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Demetriou et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "40b14fd6-6801-4332-a3b0-8f2d4374cc94",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C72",
+      "claim": "The orientations of the TCR\u03b1\u03b2 EC domain within the TCR \u2013 CD3 complex are affected by the low-affinity interactions with the CD3\u03b5\u03b3 and CD3\u03b5\u03b4 EC domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The orientations of the TCR\u03b1\u03b2 EC domain within the TCR \u2013 CD3 complex are affected by the low-affinity interactions with the CD3\u03b5\u03b3 and CD3\u03b5\u03b4 EC domains (He et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to He et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "f5987c13-e286-4023-b989-cb729c15d3a9",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C73",
+      "claim": "Coarse-grained models have inherent limitations in describing low-affinity interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of the inherent limitations of coarse-grained models to describe such low-affinity interactions (Javanainen et al., 2017), we chose state-of-the-art atomistic force fields for our simulations of the TCR \u2013 CD3 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Javanainen et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "d35545c2-5840-479d-b160-2b70b78b5af7",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C74",
+      "claim": "The 120 simulation trajectories with a length of 1 \u03bcs provide a cumulative sampling on timescales that exceed the length of the individual trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "Our 120 simulation trajectories with a length of 1 \u03bcs provide a cumulative sampling on timescales that exceed the length of the individual trajectories (Pande et al., 2003; No\u00e9 et al., 2009) and lead to equilibrated conformational and orientational distributions of the EC domains (see Figure 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Pande et al., 2003 and No\u00e9 et al., 2009 about cumulative sampling.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "da052815-57a3-4ed0-903c-b8c06a15b427",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C75",
+      "claim": "The TCR\u03b1 TM helix remains intact on the microsecond timescales of the simulations and does not break into two helix halves connected by a hinge.",
+      "claim_type": "EXPLICIT",
+      "source": "The TCR\u03b1 TM helix remains intact on the microsecond timescales of our simulations and does not break into two helix halves connected by a hinge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by observation from the simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "71fe0af6-47d4-42e9-a93d-0deab49eee7e",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C76",
+      "claim": "Bending of the TCR\u03b1 TM helix at a helix hinge was observed in NMR experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Larger conformational rearrangements of the TM helices such as the bending of the TCR\u03b1 TM helix at a helix hinge observed in NMR experiments (Brazin et al., 2018) may occur on longer timescales, and may also depend on the composition of the lipid membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Brazin et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "56883b0a-e0ea-4f4b-9775-616f2a0ebe60",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C77",
+      "claim": "Larger conformational rearrangements of the TM helices may occur on longer timescales than those simulated.",
+      "claim_type": "EXPLICIT",
+      "source": "Larger conformational rearrangements of the TM helices such as the bending of the TCR\u03b1 TM helix at a helix hinge observed in NMR experiments (Brazin et al., 2018) may occur on longer timescales, and may also depend on the composition of the lipid membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about processes beyond the simulation timescale.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "41a99270-a5b9-4c3f-8607-f71d650bbb20",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C78",
+      "claim": "Conformational rearrangements of the TM helices may depend on the composition of the lipid membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Larger conformational rearrangements of the TM helices such as the bending of the TCR\u03b1 TM helix at a helix hinge observed in NMR experiments (Brazin et al., 2018) may occur on longer timescales, and may also depend on the composition of the lipid membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about factors affecting TM helix conformations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "97c90f09-b14d-45af-8c32-1aab7f6bff9f",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C79",
+      "claim": "Coarse-grained force fields have limitations in modeling secondary structure propensities and disordered protein segments.",
+      "claim_type": "EXPLICIT",
+      "source": "How these orientational changes are affected by the membrane composition, and whether they can be related to conformational changes in the largely disordered intracellular signaling domains requires further simulations, likely with atomistic resolution because of limitations in modeling secondary structure propensities and disordered protein segments with coarse-grained force fields (Monticelli et al., 2008; Robustelli et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Monticelli et al., 2008 and Robustelli et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "a3a54463-472f-4bc6-885e-9713ded81148",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C80",
+      "claim": "Recent modeling based on the cryo-EM structure included the intracellular signaling domains in coarse-grained simulations of the entire complex with a cumulative simulation time of 25 \u03bcs.",
+      "claim_type": "EXPLICIT",
+      "source": "In recent modeling based on the cryo-EM structure of the TCR \u2013 CD3 complex, the intracellular signaling domains have been included in coarse-grained simulations of the entire complex with a cumulative simulation time of 25 \u03bcs (Prakaash et al., 2021), and the conformations of the TM domain in a complex, asymmetric membrane have been explored in atomistic simulations with a cumulative simulation time of about 4 \u03bcs (Lanz et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Prakaash et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "511915ac-ef43-4523-ba09-3d509c3b561e",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C81",
+      "claim": "The conformations of the TM domain in a complex, asymmetric membrane have been explored in atomistic simulations with a cumulative simulation time of about 4 \u03bcs.",
+      "claim_type": "EXPLICIT",
+      "source": "In recent modeling based on the cryo-EM structure of the TCR \u2013 CD3 complex, the intracellular signaling domains have been included in coarse-grained simulations of the entire complex with a cumulative simulation time of 25 \u03bcs (Prakaash et al., 2021), and the conformations of the TM domain in a complex, asymmetric membrane have been explored in atomistic simulations with a cumulative simulation time of about 4 \u03bcs (Lanz et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Lanz et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "fb83c0ea-14f3-4a77-8d0b-0136d32145c8",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C85",
+      "claim": "The production simulations used a Langevin thermostat with a Langevin collision frequency of 1.0 ps-1.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a Langevin thermostat with a Langevin collision frequency of 1.0 ps-1, and the Berendsen barostat with semi-isotropic pressure coupling and a relaxation time of 1 ps to apply a constant pressure of 1 bar in all directions at which the membrane is tensionless.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the simulation parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "43034bf0-afd5-4b35-8249-c6ee13300ecb",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C86",
+      "claim": "The production simulations used the Berendsen barostat with semi-isotropic pressure coupling and a relaxation time of 1 ps.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a Langevin thermostat with a Langevin collision frequency of 1.0 ps-1, and the Berendsen barostat with semi-isotropic pressure coupling and a relaxation time of 1 ps to apply a constant pressure of 1 bar in all directions at which the membrane is tensionless.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the simulation parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "605bb2f3-5b12-476c-a265-781da0884373",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C87",
+      "claim": "Hydrogen mass repartitioning was applied to all the hydrogen atoms on protein and lipids in the production simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we applied hydrogen mass repartitioning (Hopkins et al., 2015) to all the hydrogen atoms on protein and lipids in the production simulations, which allowed to increase to the MD integration time step to 4 fs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the simulation parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "f41a2dff-b94b-440a-959d-6dfdbf9f0afe",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C88",
+      "claim": "Hydrogen mass repartitioning allowed to increase the MD integration time step to 4 fs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we applied hydrogen mass repartitioning (Hopkins et al., 2015) to all the hydrogen atoms on protein and lipids in the production simulations, which allowed to increase to the MD integration time step to 4 fs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the effect of hydrogen mass repartitioning on simulation parameters.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "978caee1-fa87-4c2d-b478-d0d7bf42457e",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C89",
+      "claim": "The tilt angle distribution of the equilibrated ensemble of 6000 simulation structures has a mean of 33.4\u00b0 and a standard deviation of 8.9\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "The tilt angle distribution of the equilibrated ensemble of 6000 simulation structures has a mean of 33.4\u00b0 and a standard deviation of 8.9\u00b0, the rotation angle distributions has a mean of 26.1\u00b0 and a standard deviation of 15.1\u00b0, while the distribution of the angle between axis A and B of the TCR\u03b1\u03b2 EC domain has a mean of 86.5\u00b0 and a significantly smaller standard deviation of 1.9\u00b0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "07e69a17-8ba5-49fe-83b7-77718220f97f",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C90",
+      "claim": "The rotation angle distribution has a mean of 26.1\u00b0 and a standard deviation of 15.1\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "The tilt angle distribution of the equilibrated ensemble of 6000 simulation structures has a mean of 33.4\u00b0 and a standard deviation of 8.9\u00b0, the rotation angle distributions has a mean of 26.1\u00b0 and a standard deviation of 15.1\u00b0, while the distribution of the angle between axis A and B of the TCR\u03b1\u03b2 EC domain has a mean of 86.5\u00b0 and a significantly smaller standard deviation of 1.9\u00b0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "4290db8c-2784-4186-b5c7-85ff7ff64e3e",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C91",
+      "claim": "The distribution of the angle between axis A and B of the TCR\u03b1\u03b2 EC domain has a mean of 86.5\u00b0 and a standard deviation of 1.9\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "The tilt angle distribution of the equilibrated ensemble of 6000 simulation structures has a mean of 33.4\u00b0 and a standard deviation of 8.9\u00b0, the rotation angle distributions has a mean of 26.1\u00b0 and a standard deviation of 15.1\u00b0, while the distribution of the angle between axis A and B of the TCR\u03b1\u03b2 EC domain has a mean of 86.5\u00b0 and a significantly smaller standard deviation of 1.9\u00b0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "51ae9ee5-dbd6-4c1c-9c32-002569c73574",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C92",
+      "claim": "The small standard deviation of the angle between axes A and B indicates that the large TCR\u03b1\u03b2 EC domain can be seen as rather stable and rigid within the TCR - CD3 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "This small standard deviation indicates that the large TCR\u03b1\u03b2 EC domain can be seen as rather stable and rigid within the TCR - CD3 complex, which is supported by the small average root-mean-square deviation (RMSD) of about 2 \u00c5 for the C\u03b1 atoms of the TCR\u03b1\u03b2 EC domain simulation structures relative to the cryo-EM structure (see Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the statistical analysis of simulation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "6543d513-da6e-4495-9d5b-b0d354206764",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C93",
+      "claim": "The average root-mean-square deviation (RMSD) is about 2 \u00c5 for the C\u03b1 atoms of the TCR\u03b1\u03b2 EC domain simulation structures relative to the cryo-EM structure.",
+      "claim_type": "EXPLICIT",
+      "source": "This small standard deviation indicates that the large TCR\u03b1\u03b2 EC domain can be seen as rather stable and rigid within the TCR - CD3 complex, which is supported by the small average root-mean-square deviation (RMSD) of about 2 \u00c5 for the C\u03b1 atoms of the TCR\u03b1\u03b2 EC domain simulation structures relative to the cryo-EM structure (see Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RMSD analysis shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "30ea3b61-aae0-4e30-af1d-1354f5ea45c6",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C94",
+      "claim": "The average C\u03b1 RMSDs of the CD3\u03b5\u03b4 and CD3\u03b5\u03b3 EC domains relative to the cryo-EM structure are only slightly larger than those of TCR\u03b1\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "The average C\u03b1 RMSDs of the CD3\u03b5\u03b4 and CD3\u03b5\u03b3 EC domains relatively to the cryo-EM structure are only slightly larger and exhibit a marginal increase of about 0.3 \u00c5 along the second trajectory halves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RMSD analysis of simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "ab5d2317-9d9c-4abf-8e34-61862fdf65e0",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C95",
+      "claim": "The average C\u03b1 RMSDs of the CD3\u03b5\u03b4 and CD3\u03b5\u03b3 EC domains exhibit a marginal increase of about 0.3 \u00c5 along the second trajectory halves.",
+      "claim_type": "EXPLICIT",
+      "source": "The average C\u03b1 RMSDs of the CD3\u03b5\u03b4 and CD3\u03b5\u03b3 EC domains relatively to the cryo-EM structure are only slightly larger and exhibit a marginal increase of about 0.3 \u00c5 along the second trajectory halves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RMSD analysis of simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "b42850d7-35d8-4ac6-9900-4488e9601fa9",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C96",
+      "claim": "The three EC domains of the TCR - CD3 complex are rather stable.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these RMSDs and the small variations of the angle between axis A and B of the TCR\u03b1\u03b2 EC domain indicate that the three EC domains of the TCR - CD3 complex are rather stable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from RMSD and angle variation analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "5c256130-149a-422f-b6a9-2c35e6158c65",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C97",
+      "claim": "The main structural variations of the complex arise from the orientational variations of TCR\u03b1\u03b2 EC domain relative to the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The main structural variations of the complex arise from the orientational variations of TCR\u03b1\u03b2 EC domain relative to the membrane, which are associated with the characteristic changes in the quaternary interactions between the EC domains illustrated in Figure 3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the simulation data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "b6fb8196-0375-4835-b6cc-11695b0a8a22",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C98",
+      "claim": "The membrane thickness does not change with increasing tilt angle of the TCR\u03b1\u03b2 EC domain within the statistical accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the statistical accuracy, the membrane thickness does not change with increasing tilt angle of the TCR\u03b1\u03b2 EC domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by membrane thickness analysis shown in Figure 3\u2014figure supplement 3(b).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "ddf0b612-28d7-442e-a6db-b9dd9f4cd608",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C99",
+      "claim": "The largest positive correlations of clusters in the TCR\u03b1\u03b2/CD3\u03b5\u03b4 contact map occur between the contact clusters 1 to 4.",
+      "claim_type": "EXPLICIT",
+      "source": "The largest positive correlations of clusters in the TCR\u03b1\u03b2/CD3\u03b5\u03b4 contact map of Figure 2 occur between the contact clusters 1 to 4 (see Figure 2\u2014figure supplement 1, top left), which correspond to interactions of the variable domain V\u03b1 of TCR\u03b1 and the \u03b4 chain of CD3\u03b5\u03b4.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "f2e52c32-c21d-4eb6-a909-0e75cb48034d",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C100",
+      "claim": "Contact clusters 1 to 4 correspond to interactions of the variable domain V\u03b1 of TCR\u03b1 and the \u03b4 chain of CD3\u03b5\u03b4.",
+      "claim_type": "EXPLICIT",
+      "source": "The largest positive correlations of clusters in the TCR\u03b1\u03b2/CD3\u03b5\u03b4 contact map of Figure 2 occur between the contact clusters 1 to 4 (see Figure 2\u2014figure supplement 1, top left), which correspond to interactions of the variable domain V\u03b1 of TCR\u03b1 and the \u03b4 chain of CD3\u03b5\u03b4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the contact map analysis in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "5c1249f2-6d6f-440e-828c-da4834dca167",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C101",
+      "claim": "The large positive correlations of contact clusters 1 to 4 can be understood from the coupling to the tilt of the TCR\u03b1\u03b2 EC domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The large positive correlations of these four contact clusters can be understood from the coupling to the tilt of the TCR\u03b1\u03b2 EC domain, because the contacts of the V\u03b1 domain reported by the four contact clusters are only possible at high tilt angles of the TCR\u03b1\u03b2 EC domain (see Figure 3(d)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on inference from the correlation and tilt angle analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "c3cc851e-b71d-411f-b74d-b46cffed2091",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C102",
+      "claim": "Relatively large positive correlations occur between the clusters 13 to 21 of the TCR\u03b1\u03b2/CD3\u03b5\u03b3 contact map.",
+      "claim_type": "EXPLICIT",
+      "source": "Relatively large positive correlations occur also between the clusters 13 to 21 of the TCR\u03b1\u03b2/CD3\u03b5\u03b3 contact map (see Figure 2\u2014figure supplement 1, bottom left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "47dc947f-ae3a-4b39-98c4-feedefca079b",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C104",
+      "claim": "The overall weak correlations between the majority of the other contact clusters indicate independent motions of the loops and strands involved in these EC domain contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides these positive correlations that result from the concerted conformational changes coupled to the tilt angle of the TCR\u03b1\u03b2 EC domain, the overall weak correlations between the majority of the other contact clusters in Figure 2 indicate independent motions of the loops and strands involved in these EC domain contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the correlation analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "c1ac0987-bb9a-4159-8390-ba739469f591",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C105",
+      "claim": "Relatively strongly negative correlations of several pairs of contact clusters point to alternative EC domain contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, relatively strongly negative correlations of several pairs of contact clusters point to alternative EC domain contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the correlation analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "c6e2a462-814b-41d4-aecc-80b390e51b2d",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C106",
+      "claim": "The overall rather negative correlations between the clusters 13 to 21 and the cluster 22 show that the interaction of the C\u03b2 G strand and the \u03b3 AB loop is not compatible with the interactions of the C\u03b2 FG loop and G strand to the \u03b5 chain and the N-terminus of the \u03b3 chain of CD3\u03b5\u03b3.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the overall rather negative correlations between the clusters 13 to 21 and the cluster 22 of the TCR\u03b1\u03b2/CD3\u03b5\u03b3 contact map show that the interaction of the C\u03b2 G strand and the \u03b3 AB loop reported by cluster 22 is not compatible with the interactions of the C\u03b2 FG loop and G strand to the \u03b5 chain and the N-terminus of the \u03b3 chain of CD3\u03b5\u03b3, which are reflected by the clusters 13 to 21.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the correlation analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "99ef234a-7fee-4509-8165-d44709ff9f67",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C107",
+      "claim": "The orientation of the TCR EC domain relative to the membrane is coupled to structural changes throughout the TCR \u2013 CD3 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our simulations reveal that the orientation of the TCR EC domain relative to the membrane is coupled to structural changes throughout the TCR \u2013 CD3 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim summarizes the main finding from the simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "9616a746-07fb-455e-b616-52ba7121deca",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "claim_id": "C108",
+      "claim": "The overall weak correlations of the majority of EC domain interactions indicate additional independent motions of the loops and strands that are involved in these interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides this concerted structural motion, the overall weak correlations of the majority of EC domain interactions indicate additional independent motions of the loops and strands that are involved in these interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the correlation analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "667224c4-13a8-4624-ad5c-86153d2f413a",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The TCR extracellular (EC) domain exhibits substantial orientational variability with tilt angles ranging from 15\u00b0 to 55\u00b0 relative to the membrane normal, with a mean of 33.4\u00b0 and standard deviation of 8.9\u00b0 in equilibrated simulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C41, and C89 collectively demonstrate the tilt angle variability through simulation data. The range (15-55\u00b0) is consistently reported, and statistical measures (mean 33.4\u00b0, SD 8.9\u00b0) from 6000 equilibrated structures provide quantitative support. The equilibration analysis (C32) validates the sampling adequacy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "b820e3aa-5d8f-44c1-8313-11dc3bd9b4c8",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The tilt angle of the TCR EC domain is coupled to its rotation angle, with rotation angles varying from 0\u00b0 to 55\u00b0 and showing tilt-dependent distributions where higher tilt angles correlate with increased rotation angles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C42-C45, and C90 demonstrate coupling between tilt and rotation through the two-dimensional probability distribution (Figure 3c). The specific angle relationships (e.g., 40\u00b0 tilt \u2192 32\u00b0 rotation) are quantitatively supported by simulation data with appropriate statistical measures (mean 26.1\u00b0, SD 15.1\u00b0).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "1aadc93d-3ffc-4d57-acae-76be86135db4",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The tilt angle of the TCR EC domain is coupled to characteristic changes in extracellular domain contacts, specifically a decrease in C\u03b2 FG loop contacts (from ~30 to ~0) and an increase in V\u03b1 domain contacts (to ~2) with increasing tilt angle from 15\u00b0 to 50\u00b0.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C24, C48-C50, and C53 are supported by quantitative contact analysis shown in Figure 3d. The inverse relationship between tilt angle and C\u03b2 FG loop contacts, and the positive relationship with V\u03b1 contacts occurring only above 30\u00b0 tilt, are clearly demonstrated with error estimates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "fed1ae27-e13b-480d-9004-19721c6cc7a3",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The tilt angle of the TCR EC domain is coupled to changes in transmembrane helix orientations, with TCR\u03b1 TM helix inclination decreasing from ~11.5\u00b0 to ~8.5\u00b0 and CD3\u03b3 TM helix inclination increasing from ~15.5\u00b0 to ~24\u00b0 as tilt increases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C26, C51-C52, and C54 are supported by quantitative analysis in Figure 3e showing systematic changes in TM helix inclination angles correlated with TCR EC domain tilt. The measurements include error estimates and show statistically significant trends.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "df3ddd77-6409-45d1-9d80-1f183313f600",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "MD simulations reveal significantly more residue-residue contacts in the TCR-CD3 complex compared to the cryo-EM structure, including extensive C\u03b2 FG loop contacts and novel V\u03b1 domain contacts with CD3\u03b5\u03b4 occurring in 75 of 120 trajectories.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C22 and C37-C40 are supported by contact map analysis (Figure 2) showing contacts with >0.5% probability across 6000 structures. The V\u03b1-CD3\u03b4 contacts, though low probability (<3%), occur in 75/120 trajectories, demonstrating robustness. The comparison to cryo-EM structure is explicit and quantitative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "4335e59f-bd88-4f63-abe9-969b2f059aa3",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The concerted motions of the membrane-embedded TCR-CD3 complex revealed in simulations provide atomistic insights on conformational changes in response to tilt-inducing forces on antigen-bound TCRs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27 and C107 are supported by the comprehensive simulation data showing coupled tilt-rotation-contact-TM helix changes. While the connection to force-induced changes involves inference, it is reasonable given the demonstrated coupling between tilt and structural changes throughout the complex.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "22b7d3bc-5a39-4dc5-b524-b78fe437e488",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The TCR\u03b1\u03b2 EC domain is structurally stable and rigid within the TCR-CD3 complex, with small RMSD (~2 \u00c5) relative to cryo-EM structure and minimal variation in internal domain geometry (angle between axes A and B: mean 86.5\u00b0, SD 1.9\u00b0).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C96 are supported by RMSD analysis (Figure 4-supplement 1) and angle distribution statistics. The small standard deviation (1.9\u00b0) for the internal angle and low RMSD values demonstrate domain rigidity, while the inference about stability is reasonable given these quantitative measures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "1be9a556-73fd-4182-a42f-47dcf6e83a57",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The main structural variations of the TCR-CD3 complex arise from orientational variations of the TCR\u03b1\u03b2 EC domain relative to the membrane rather than from internal domain deformations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97 and C23 are supported by the combination of large tilt/rotation angle variations (SD 8.9\u00b0 and 15.1\u00b0) versus small internal domain angle variation (SD 1.9\u00b0) and low RMSD values. This inference is well-justified by the quantitative data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "1e53d4d7-96ed-4828-a5ac-ffa67d64cdfa",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Contact clusters show positive correlations that reflect coupling to TCR EC domain tilt: clusters 1-4 (V\u03b1-CD3\u03b4 interactions) correlate because they only occur at high tilt angles, while clusters 13-21 (C\u03b2 FG loop interactions) correlate because they decrease with tilt.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C102 are supported by correlation analysis (Figure 2-supplement 1) combined with tilt-dependent contact data (Figure 3d). The mechanistic explanation linking correlations to tilt-dependent contact formation/breaking is a reasonable inference from the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "4763cd60-b016-4475-962c-2dc5ced5e088",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Beyond concerted tilt-coupled motions, the majority of EC domain contact clusters show weak correlations indicating independent motions, with some negative correlations pointing to alternative, mutually exclusive contact configurations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C104-C106 and C108 are supported by the correlation analysis showing predominantly weak correlations and specific negative correlations (e.g., clusters 13-21 vs 22). The inference about independent motions and alternative contacts is reasonable given the correlation patterns.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "4367f116-a99c-4533-b9e1-9f7af1601b6c",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The 120 simulation trajectories of 1 \u03bcs each equilibrate within 0.5 \u03bcs and provide cumulative sampling on timescales exceeding individual trajectory lengths, yielding equilibrated conformational and orientational distributions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32 and C74 are supported by equilibration analysis (Figure 4) showing convergence of tilt/rotation angles and contact numbers within 0.5 \u03bcs. The cumulative sampling claim is supported by citations to established methods (Pande et al., No\u00e9 et al.) and demonstrated equilibration.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "72326cd0-16f0-4290-9642-90b0388bf84e",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study employed 120 \u03bcs cumulative atomistic MD simulations using Amber99SB-ILDN protein and Lipid14 membrane force fields at 30\u00b0C, with the TCR-CD3 complex embedded in a POPC/cholesterol membrane.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19, C28-C31 describe the computational methodology. These are straightforward methodological statements that are internally consistent and follow standard MD simulation practices. The force field choices are appropriate for the system studied.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "2913ee70-309d-4485-8860-73f0ea2d8c4d",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The cryo-EM structure of the TCR-CD3 complex has a tilt angle of 31.2\u00b10.4\u00b0 and rotation angle of 14.7\u00b10.7\u00b0 when aligned to simulation conformations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 are supported by structural alignment analysis with appropriate error estimates from 120 alignments. The values place the cryo-EM structure within the simulated distribution, providing validation of the simulation approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "599687f5-e39b-4d17-95cb-ae3b085cd3ce",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The C\u03b1 AB loop, implicated in TCR triggering, shows decreased contacts with CD3\u03b5\u03b3 with increasing tilt angle of the TCR\u03b1\u03b2 EC domain, similar to the C\u03b2 FG loop.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58 and C57 are supported by simulation data (Figure 3-supplement 1) showing tilt-dependent contact decrease. The citation to Beddoe et al. 2009 for the functional implication is appropriate background, and the simulation result is clearly demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "ea003a40-f008-4a5a-a434-e0531a465d34",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The TCR\u03b1 TM helix remains intact on microsecond timescales without breaking at a hinge, though larger conformational rearrangements observed in NMR may occur on longer timescales or depend on membrane composition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C75 is supported by direct observation in simulations. Claims C77-C78 are appropriately qualified as speculation about processes beyond the simulation timescale. The acknowledgment of limitations and citation to NMR data (C76, Brazin et al.) demonstrates appropriate scientific caution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "b05596e0-bca2-44d3-ae7b-864ce60a007b",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Membrane thickness does not change significantly with increasing tilt angle of the TCR\u03b1\u03b2 EC domain within statistical accuracy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C98 is supported by membrane thickness analysis (Figure 3-supplement 3b) with appropriate error estimates. This negative result is important for ruling out membrane deformation as a confounding factor in the observed structural changes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "b005f588-f07c-4c5c-afdd-202f07463803",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background on TCR-CD3 complex: T cells recognize MHC-peptide antigens via the TCR complex, where TCR\u03b1\u03b2 binds antigen and CD3 dimers contain signaling motifs; the complex stoichiometry was known for two decades before the structure was solved by cryo-EM in 2019.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C9 provide established background knowledge supported by appropriate citations to the literature. These are well-established facts in the field and the citations (Call et al. 2002, Dong et al. 2019, etc.) are appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "9b64835b-ef44-4a6d-b923-93bbcdbccb1c",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The cryo-EM structure determination by Dong et al. involved chemical crosslinking and detergent replacement, revealing EC domain contacts that explain cooperative binding, though the C\u03b2 FG loop shows limited contacts despite its proposed role in activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C18 accurately describe the Dong et al. cryo-EM structure and its features, with appropriate citations. The observation about limited C\u03b2 FG loop contacts in the cryo-EM structure (C18) sets up the motivation for the current simulation study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "a4d3d015-06db-4c8b-b1b9-39d46eac7da6",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Discussion of force-based mechanisms: MHC molecules have more flexible membrane anchoring than TCR-CD3; transversal forces up to 5 pN are physiologically relevant; force-induced tilt may affect CD45 segregation and other receptor-ligand segregation phenomena.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62, C66, C69-C71 provide appropriate context from the literature with proper citations. The structural comparison between MHC and TCR-CD3 anchoring (C60-C61) provides reasonable justification for the modeling assumptions, though the assumption itself requires experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "51dbeb0d-76a8-4e4d-8102-25df832d2719",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Methodological justification: Atomistic force fields were chosen over coarse-grained models due to limitations in describing low-affinity interactions and disordered segments; recent related studies used coarse-grained (25 \u03bcs) and atomistic (4 \u03bcs) approaches for different aspects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C73 and C79-C81 provide appropriate methodological justification with citations. The rationale for choosing atomistic simulations is sound given the importance of low-affinity EC domain interactions, and the comparison to other recent studies provides context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    },
+    {
+      "id": "670f9a52-f890-4c67-91cf-4a6203eb40a7",
+      "content_id": "35e9c9e3-f6a4-4243-83bb-632081606654",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Analysis and simulation parameters: Contacts defined as <0.45 nm separation, analyzed from 6000 structures at 10 ns intervals; simulations used Langevin thermostat, Berendsen barostat, and hydrogen mass repartitioning allowing 4 fs timestep.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 and C85-C88 describe standard analysis methods and simulation parameters. The contact definition (0.45 nm) is reasonable, the sampling (6000 structures) is adequate, and the simulation parameters follow established best practices for MD simulations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:22:03.336687Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a9d2a9b0-e755-4d64-bc44-285204c02986",
+      "result_id": "667224c4-13a8-4624-ad5c-86153d2f413a"
+    },
+    {
+      "claim_id": "95c24830-5df3-436a-9116-e337a0883938",
+      "result_id": "667224c4-13a8-4624-ad5c-86153d2f413a"
+    },
+    {
+      "claim_id": "978caee1-fa87-4c2d-b478-d0d7bf42457e",
+      "result_id": "667224c4-13a8-4624-ad5c-86153d2f413a"
+    },
+    {
+      "claim_id": "dfd34be1-459d-4fa1-a82e-c6f56460bffa",
+      "result_id": "b820e3aa-5d8f-44c1-8313-11dc3bd9b4c8"
+    },
+    {
+      "claim_id": "d84c0312-929c-40b4-b7a1-31b02ebe4a34",
+      "result_id": "b820e3aa-5d8f-44c1-8313-11dc3bd9b4c8"
+    },
+    {
+      "claim_id": "75cba9d3-3db3-40d6-9ecd-1acadae761d5",
+      "result_id": "b820e3aa-5d8f-44c1-8313-11dc3bd9b4c8"
+    },
+    {
+      "claim_id": "4bfca0e4-5437-4550-9f86-21d385540369",
+      "result_id": "b820e3aa-5d8f-44c1-8313-11dc3bd9b4c8"
+    },
+    {
+      "claim_id": "76f191e0-aa3d-4ded-baf9-7b46b590abdb",
+      "result_id": "b820e3aa-5d8f-44c1-8313-11dc3bd9b4c8"
+    },
+    {
+      "claim_id": "07e69a17-8ba5-49fe-83b7-77718220f97f",
+      "result_id": "b820e3aa-5d8f-44c1-8313-11dc3bd9b4c8"
+    },
+    {
+      "claim_id": "39a19aa6-a4ed-41a4-a476-8ad96db268e5",
+      "result_id": "1aadc93d-3ffc-4d57-acae-76be86135db4"
+    },
+    {
+      "claim_id": "66db5b78-1b8a-49d7-8e67-16c2c1ebc373",
+      "result_id": "1aadc93d-3ffc-4d57-acae-76be86135db4"
+    },
+    {
+      "claim_id": "6fc94199-be02-46f9-b751-9b896d0b3c68",
+      "result_id": "1aadc93d-3ffc-4d57-acae-76be86135db4"
+    },
+    {
+      "claim_id": "f83bc73a-fd60-4023-9789-74fc8f671e90",
+      "result_id": "1aadc93d-3ffc-4d57-acae-76be86135db4"
+    },
+    {
+      "claim_id": "e07ba786-edd8-45d2-b525-9df506cb0e63",
+      "result_id": "1aadc93d-3ffc-4d57-acae-76be86135db4"
+    },
+    {
+      "claim_id": "d696a8f4-1d13-437d-ab12-707a22667ce2",
+      "result_id": "1aadc93d-3ffc-4d57-acae-76be86135db4"
+    },
+    {
+      "claim_id": "5d49fc66-5ff8-467a-a1a6-c11df268fd74",
+      "result_id": "fed1ae27-e13b-480d-9004-19721c6cc7a3"
+    },
+    {
+      "claim_id": "540fbc17-3f92-410e-8394-cf919895d65a",
+      "result_id": "fed1ae27-e13b-480d-9004-19721c6cc7a3"
+    },
+    {
+      "claim_id": "fa7f131e-5b14-4577-aeda-acb47029df74",
+      "result_id": "fed1ae27-e13b-480d-9004-19721c6cc7a3"
+    },
+    {
+      "claim_id": "c889d6b7-be0f-4728-bb99-dab371148fa1",
+      "result_id": "fed1ae27-e13b-480d-9004-19721c6cc7a3"
+    },
+    {
+      "claim_id": "af87ae23-d39a-4c15-a2d1-7be098c98073",
+      "result_id": "fed1ae27-e13b-480d-9004-19721c6cc7a3"
+    },
+    {
+      "claim_id": "79a76c5a-f461-4474-9e27-9c09e4401229",
+      "result_id": "df3ddd77-6409-45d1-9d80-1f183313f600"
+    },
+    {
+      "claim_id": "fc8d816c-0cab-4713-8962-0aa94b2fcf9e",
+      "result_id": "df3ddd77-6409-45d1-9d80-1f183313f600"
+    },
+    {
+      "claim_id": "687f27b6-0f6d-499e-8ac2-d4ed3fea4ea9",
+      "result_id": "df3ddd77-6409-45d1-9d80-1f183313f600"
+    },
+    {
+      "claim_id": "ae98b0bf-efde-4527-9b6b-01a90960cc6a",
+      "result_id": "df3ddd77-6409-45d1-9d80-1f183313f600"
+    },
+    {
+      "claim_id": "f5389c07-c36e-48de-a7f1-1479cd88b681",
+      "result_id": "df3ddd77-6409-45d1-9d80-1f183313f600"
+    },
+    {
+      "claim_id": "433473a6-a3bc-4858-8ebe-7690242d7b72",
+      "result_id": "df3ddd77-6409-45d1-9d80-1f183313f600"
+    },
+    {
+      "claim_id": "1a1e98d4-58f1-466f-9924-5f9fb0273196",
+      "result_id": "df3ddd77-6409-45d1-9d80-1f183313f600"
+    },
+    {
+      "claim_id": "f42e4be0-9922-4389-a660-9a2298a07ed5",
+      "result_id": "4335e59f-bd88-4f63-abe9-969b2f059aa3"
+    },
+    {
+      "claim_id": "99ef234a-7fee-4509-8165-d44709ff9f67",
+      "result_id": "4335e59f-bd88-4f63-abe9-969b2f059aa3"
+    },
+    {
+      "claim_id": "4290db8c-2784-4186-b5c7-85ff7ff64e3e",
+      "result_id": "22b7d3bc-5a39-4dc5-b524-b78fe437e488"
+    },
+    {
+      "claim_id": "51ae9ee5-dbd6-4c1c-9c32-002569c73574",
+      "result_id": "22b7d3bc-5a39-4dc5-b524-b78fe437e488"
+    },
+    {
+      "claim_id": "6543d513-da6e-4495-9d5b-b0d354206764",
+      "result_id": "22b7d3bc-5a39-4dc5-b524-b78fe437e488"
+    },
+    {
+      "claim_id": "30ea3b61-aae0-4e30-af1d-1354f5ea45c6",
+      "result_id": "22b7d3bc-5a39-4dc5-b524-b78fe437e488"
+    },
+    {
+      "claim_id": "ab5d2317-9d9c-4abf-8e34-61862fdf65e0",
+      "result_id": "22b7d3bc-5a39-4dc5-b524-b78fe437e488"
+    },
+    {
+      "claim_id": "b42850d7-35d8-4ac6-9900-4488e9601fa9",
+      "result_id": "22b7d3bc-5a39-4dc5-b524-b78fe437e488"
+    },
+    {
+      "claim_id": "5c256130-149a-422f-b6a9-2c35e6158c65",
+      "result_id": "1be9a556-73fd-4182-a42f-47dcf6e83a57"
+    },
+    {
+      "claim_id": "6bffc822-504e-4dd8-8fe7-3ae7b6da3a99",
+      "result_id": "1be9a556-73fd-4182-a42f-47dcf6e83a57"
+    },
+    {
+      "claim_id": "ddf0b612-28d7-442e-a6db-b9dd9f4cd608",
+      "result_id": "1e53d4d7-96ed-4828-a5ac-ffa67d64cdfa"
+    },
+    {
+      "claim_id": "f2e52c32-c21d-4eb6-a909-0e75cb48034d",
+      "result_id": "1e53d4d7-96ed-4828-a5ac-ffa67d64cdfa"
+    },
+    {
+      "claim_id": "5c1249f2-6d6f-440e-828c-da4834dca167",
+      "result_id": "1e53d4d7-96ed-4828-a5ac-ffa67d64cdfa"
+    },
+    {
+      "claim_id": "c3cc851e-b71d-411f-b74d-b46cffed2091",
+      "result_id": "1e53d4d7-96ed-4828-a5ac-ffa67d64cdfa"
+    },
+    {
+      "claim_id": "47dc947f-ae3a-4b39-98c4-feedefca079b",
+      "result_id": "4763cd60-b016-4475-962c-2dc5ced5e088"
+    },
+    {
+      "claim_id": "c1ac0987-bb9a-4159-8390-ba739469f591",
+      "result_id": "4763cd60-b016-4475-962c-2dc5ced5e088"
+    },
+    {
+      "claim_id": "c6e2a462-814b-41d4-aecc-80b390e51b2d",
+      "result_id": "4763cd60-b016-4475-962c-2dc5ced5e088"
+    },
+    {
+      "claim_id": "9616a746-07fb-455e-b616-52ba7121deca",
+      "result_id": "4763cd60-b016-4475-962c-2dc5ced5e088"
+    },
+    {
+      "claim_id": "14c07610-251a-46be-a1db-74f4eb2b7f4c",
+      "result_id": "4367f116-a99c-4533-b9e1-9f7af1601b6c"
+    },
+    {
+      "claim_id": "d35545c2-5840-479d-b160-2b70b78b5af7",
+      "result_id": "4367f116-a99c-4533-b9e1-9f7af1601b6c"
+    },
+    {
+      "claim_id": "585b5109-d8b1-45e9-a405-87eb494363c1",
+      "result_id": "72326cd0-16f0-4290-9642-90b0388bf84e"
+    },
+    {
+      "claim_id": "cfdc508f-9907-40dd-aac4-1a052a2b1d49",
+      "result_id": "72326cd0-16f0-4290-9642-90b0388bf84e"
+    },
+    {
+      "claim_id": "d2fec883-86b5-421c-a45d-fa9ab6f969f5",
+      "result_id": "72326cd0-16f0-4290-9642-90b0388bf84e"
+    },
+    {
+      "claim_id": "81869f71-1357-44b3-ad29-24e55e14eab8",
+      "result_id": "72326cd0-16f0-4290-9642-90b0388bf84e"
+    },
+    {
+      "claim_id": "0d781a32-c905-4eb7-9f52-011ef1b3e503",
+      "result_id": "72326cd0-16f0-4290-9642-90b0388bf84e"
+    },
+    {
+      "claim_id": "97973d2f-ec26-43a7-af7d-715b72b200b5",
+      "result_id": "2913ee70-309d-4485-8860-73f0ea2d8c4d"
+    },
+    {
+      "claim_id": "adf5b97d-3221-44f1-84ed-039e8b274a2d",
+      "result_id": "2913ee70-309d-4485-8860-73f0ea2d8c4d"
+    },
+    {
+      "claim_id": "6091b77e-e0a3-4921-ab63-9e46a5849877",
+      "result_id": "599687f5-e39b-4d17-95cb-ae3b085cd3ce"
+    },
+    {
+      "claim_id": "66a97a80-5f37-464b-94dc-55ec0f2907ec",
+      "result_id": "599687f5-e39b-4d17-95cb-ae3b085cd3ce"
+    },
+    {
+      "claim_id": "da052815-57a3-4ed0-903c-b8c06a15b427",
+      "result_id": "ea003a40-f008-4a5a-a434-e0531a465d34"
+    },
+    {
+      "claim_id": "71fe0af6-47d4-42e9-a93d-0deab49eee7e",
+      "result_id": "ea003a40-f008-4a5a-a434-e0531a465d34"
+    },
+    {
+      "claim_id": "56883b0a-e0ea-4f4b-9775-616f2a0ebe60",
+      "result_id": "ea003a40-f008-4a5a-a434-e0531a465d34"
+    },
+    {
+      "claim_id": "41a99270-a5b9-4c3f-8607-f71d650bbb20",
+      "result_id": "ea003a40-f008-4a5a-a434-e0531a465d34"
+    },
+    {
+      "claim_id": "b6fb8196-0375-4835-b6cc-11695b0a8a22",
+      "result_id": "b05596e0-bca2-44d3-ae7b-864ce60a007b"
+    },
+    {
+      "claim_id": "e7f10e9a-a272-44dc-b422-4070e460be88",
+      "result_id": "b005f588-f07c-4c5c-afdd-202f07463803"
+    },
+    {
+      "claim_id": "5328082a-f51e-471c-9114-4e28b4773dfd",
+      "result_id": "b005f588-f07c-4c5c-afdd-202f07463803"
+    },
+    {
+      "claim_id": "5b12a81a-c30a-4235-876c-df5bdffdcc12",
+      "result_id": "b005f588-f07c-4c5c-afdd-202f07463803"
+    },
+    {
+      "claim_id": "62ccd676-be5f-43e3-81cd-ca860d7e56d8",
+      "result_id": "b005f588-f07c-4c5c-afdd-202f07463803"
+    },
+    {
+      "claim_id": "921c74d1-6a76-4ccc-ba08-1db8f0440520",
+      "result_id": "b005f588-f07c-4c5c-afdd-202f07463803"
+    },
+    {
+      "claim_id": "8b1f7404-d07d-4da1-a4ce-099e6094bcda",
+      "result_id": "9b64835b-ef44-4a6d-b923-93bbcdbccb1c"
+    },
+    {
+      "claim_id": "d1de6581-0a16-4cdd-98b6-a573cfb26585",
+      "result_id": "9b64835b-ef44-4a6d-b923-93bbcdbccb1c"
+    },
+    {
+      "claim_id": "28bbc776-da0b-4442-b6f3-2b8ebbd03b5e",
+      "result_id": "9b64835b-ef44-4a6d-b923-93bbcdbccb1c"
+    },
+    {
+      "claim_id": "680b7bf3-5c23-4f31-9d18-690b4779a906",
+      "result_id": "9b64835b-ef44-4a6d-b923-93bbcdbccb1c"
+    },
+    {
+      "claim_id": "b94a70f3-39ce-47fd-b3d0-082bcf514e30",
+      "result_id": "9b64835b-ef44-4a6d-b923-93bbcdbccb1c"
+    },
+    {
+      "claim_id": "e3006a85-d1bc-4001-a04d-5145b4eabe8a",
+      "result_id": "9b64835b-ef44-4a6d-b923-93bbcdbccb1c"
+    },
+    {
+      "claim_id": "1ae7f40a-28ae-4066-aa76-b3c5efee0624",
+      "result_id": "9b64835b-ef44-4a6d-b923-93bbcdbccb1c"
+    },
+    {
+      "claim_id": "99ea729b-30ee-4579-8d06-29ec2c7fa703",
+      "result_id": "9b64835b-ef44-4a6d-b923-93bbcdbccb1c"
+    },
+    {
+      "claim_id": "692664a4-ad0c-4c19-b8a9-c265aa96b42e",
+      "result_id": "9b64835b-ef44-4a6d-b923-93bbcdbccb1c"
+    },
+    {
+      "claim_id": "91a3e8ed-424b-4ff1-ab6a-e77ca4996484",
+      "result_id": "a4d3d015-06db-4c8b-b1b9-39d46eac7da6"
+    },
+    {
+      "claim_id": "1f5b9f67-172c-455c-b1df-6fda1cf17f3a",
+      "result_id": "a4d3d015-06db-4c8b-b1b9-39d46eac7da6"
+    },
+    {
+      "claim_id": "d11e8e04-d3e1-45c8-ad09-256dd95fe223",
+      "result_id": "a4d3d015-06db-4c8b-b1b9-39d46eac7da6"
+    },
+    {
+      "claim_id": "23d1ce71-04c2-4021-a4ff-1f1efad9a45c",
+      "result_id": "a4d3d015-06db-4c8b-b1b9-39d46eac7da6"
+    },
+    {
+      "claim_id": "38529c6a-37be-4fda-afee-1c400c7ee9ae",
+      "result_id": "a4d3d015-06db-4c8b-b1b9-39d46eac7da6"
+    },
+    {
+      "claim_id": "2f0d4a1a-c929-44ac-8902-afc71fa03341",
+      "result_id": "a4d3d015-06db-4c8b-b1b9-39d46eac7da6"
+    },
+    {
+      "claim_id": "eace499e-c9b1-4811-8e71-e79b4d32724c",
+      "result_id": "a4d3d015-06db-4c8b-b1b9-39d46eac7da6"
+    },
+    {
+      "claim_id": "40b14fd6-6801-4332-a3b0-8f2d4374cc94",
+      "result_id": "51dbeb0d-76a8-4e4d-8102-25df832d2719"
+    },
+    {
+      "claim_id": "f5987c13-e286-4023-b989-cb729c15d3a9",
+      "result_id": "51dbeb0d-76a8-4e4d-8102-25df832d2719"
+    },
+    {
+      "claim_id": "97c90f09-b14d-45af-8c32-1aab7f6bff9f",
+      "result_id": "51dbeb0d-76a8-4e4d-8102-25df832d2719"
+    },
+    {
+      "claim_id": "a3a54463-472f-4bc6-885e-9713ded81148",
+      "result_id": "51dbeb0d-76a8-4e4d-8102-25df832d2719"
+    },
+    {
+      "claim_id": "511915ac-ef43-4523-ba09-3d509c3b561e",
+      "result_id": "51dbeb0d-76a8-4e4d-8102-25df832d2719"
+    },
+    {
+      "claim_id": "25263585-79ed-4d4e-811c-9178fcae6463",
+      "result_id": "670f9a52-f890-4c67-91cf-4a6203eb40a7"
+    },
+    {
+      "claim_id": "19840c92-c9e8-47f2-9177-f8b1f494ad2f",
+      "result_id": "670f9a52-f890-4c67-91cf-4a6203eb40a7"
+    },
+    {
+      "claim_id": "f766bc71-3776-4ae4-bda9-fd645ab64975",
+      "result_id": "670f9a52-f890-4c67-91cf-4a6203eb40a7"
+    },
+    {
+      "claim_id": "fb83c0ea-14f3-4a77-8d0b-0136d32145c8",
+      "result_id": "670f9a52-f890-4c67-91cf-4a6203eb40a7"
+    },
+    {
+      "claim_id": "43034bf0-afd5-4b35-8249-c6ee13300ecb",
+      "result_id": "670f9a52-f890-4c67-91cf-4a6203eb40a7"
+    },
+    {
+      "claim_id": "605bb2f3-5b12-476c-a265-781da0884373",
+      "result_id": "670f9a52-f890-4c67-91cf-4a6203eb40a7"
+    },
+    {
+      "claim_id": "f41a2dff-b94b-440a-959d-6dfdbf9f0afe",
+      "result_id": "670f9a52-f890-4c67-91cf-4a6203eb40a7"
+    }
+  ],
+  "comparisons": []
+}

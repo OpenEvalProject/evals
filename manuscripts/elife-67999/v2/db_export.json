@@ -1,0 +1,2218 @@
+{
+  "submission": {
+    "id": "85ce17d9-0e0a-411d-892e-33c843c2cd92",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T05:38:24.987828Z",
+    "updated_at": "2025-12-03T05:38:24.987828Z"
+  },
+  "content": [
+    {
+      "id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "submission_id": "85ce17d9-0e0a-411d-892e-33c843c2cd92",
+      "content_type": "manuscript",
+      "content_text": "# Pak1 and PP2A antagonize aPKC function to support cortical tension induced by the Crumbs-Yurt complex\n\n## Authors\n\n- Cornelia Biehler<sup>1</sup>\n- Katheryn E Rothenberg<sup>3</sup> ([ORCID: 0000-0002-8191-7528](https://orcid.org/0000-0002-8191-7528))\n- Alexandra Jette<sup>1</sup> ([ORCID: 0000-0001-5423-2374](https://orcid.org/0000-0001-5423-2374))\n- Helori-Mael Gaude<sup>1</sup>\n- Rodrigo Fernandez-Gonzalez<sup>3</sup> ([ORCID: 0000-0003-0770-744X](https://orcid.org/0000-0003-0770-744X))\n- Patrick Laprise<sup>1</sup> ([ORCID: 0000-0001-9785-4376](https://orcid.org/0000-0001-9785-4376)) \u2020\n\n### Affiliations\n\n1. Centre de Recherche sur le Cancer, Universit\u00e9 Laval Qu\u00e9bec Canada\n2. axe oncologie du Centre de Recherche du Centre Hospitalier Universitaire de Qu\u00e9bec-UL Qu\u00e9bec Canada\n3. Institute of Biomedical Engineering, University of Toronto Toronto Canada\n4. Ted Rogers Centre for Heart Research, University of Toronto Toronto Canada\n5. Department of Cell and Systems Biology, University of Toronto Toronto Canada\n6. Developmental and Stem Cell Biology Program, The Hospital for Sick Children Toronto Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe Drosophila polarity protein Crumbs is essential for the establishment and growth of the apical domain in epithelial cells. The protein Yurt limits the ability of Crumbs to promote apical membrane growth, thereby defining proper apical/lateral membrane ratio that is crucial for forming and maintaining complex epithelial structures such as tubes or acini. Here, we show that Yurt also increases Myosin-dependent cortical tension downstream of Crumbs. Yurt overexpression thus induces apical constriction in epithelial cells. The kinase aPKC phosphorylates Yurt, thereby dislodging the latter from the apical domain and releasing apical tension. In contrast, the kinase Pak1 promotes Yurt dephosphorylation through activation of the phosphatase PP2A. The Pak1\u2013PP2A module thus opposes aPKC function and supports Yurt-induced apical constriction. Hence, the complex interplay between Yurt, aPKC, Pak1, and PP2A contributes to the functional plasticity of Crumbs. Overall, our data increase our understanding of how proteins sustaining epithelial cell polarization and Myosin-dependent cell contractility interact with one another to control epithelial tissue architecture.\n\n## Introduction\n\nSimple epithelia form cohesive barriers owing to specialized adherens junctions. For instance, the cadherin\u2013catenin complex, a major component of the zonula adherens (ZA), links cortical actin filaments of neighboring cells indirectly to ensure strong cell\u2013cell adhesion (Harris and Tepass, 2010). Association of the hexameric motor protein non-muscle myosin II (hereafter, myosin) with ZA-associated actin bundles ensures contractility (M\u00e8ge and Ishiyama, 2017). The ability of epithelial cells to support vectorial transport and secretion adjusts the biochemical environment on both sides of the epithelial layer. These unidirectional functions require the polarization of epithelial cells along the apical\u2013basal axis (Laprise and Tepass, 2011). Reciprocal interactions between the epithelial polarity protein network and ZA components not only define the functional architecture of individual epithelial cells, but also shape epithelial tissues (Tepass, 2012). A classic example is the formation of specialized epithelial structures, such as tubes or acini, resulting from concerted myosin-dependent apical constriction of a group of cells within epithelial sheets (Martin and Goldstein, 2014).\n\nThe apically localized protein Crumbs (Crb) acts as an apical determinant in Drosophila epithelia (Pocha and Knust, 2013; Tepass, 2012; Tepass et al., 1990; Wodarz et al., 1995). The cytoplasmic tail of Crb contains a PSD95/Dlg1/ZO-1 (PDZ)-domain binding motif (PBM), and a Four point one, Ezrin, Radixin, Moesin (FERM)-domain binding motif (FBM) (Klebes and Knust, 2000; Klose et al., 2013; Pocha and Knust, 2013; Tepass, 2012). The PBM recruits PDZ-containing proteins such as Stardust (Sdt), which cooperates with Crb in establishing the apical membrane and promoting its growth (Bachmann et al., 2001; Pocha and Knust, 2013; Tepass and Knust, 1993). The FBM interacts with several FERM domain proteins, including Yurt (Yrt) (Laprise et al., 2006; Tepass, 2009). The latter is localized to the lateral membrane throughout embryogenesis, and supports the stability of this membrane domain during organogenesis (Laprise et al., 2006; Laprise et al., 2009). During terminal differentiation of epithelial cells derived from the ectoderm, Yrt also occupies the apical membrane due to a direct interaction with Crb (Laprise et al., 2006). The apical recruitment of Yrt limits Crb-dependent apical membrane growth to establish a specific apical/basolateral membrane size ratio, which is crucial to defining the morphometric parameters of developing epithelial structures (Laprise et al., 2006; Laprise et al., 2010). Crb displays cooperative functional interactions with atypical protein kinase C (aPKC) and its binding partner Partitioning defective protein 6 (Par-6) (Kempkens et al., 2006; Morais-de-S\u00e1 et al., 2010; Tepass, 2012; Whitney et al., 2016). These latter apical proteins act downstream of the small GTPase Cdc42 to promote phospho-dependent inhibition of lateral polarity proteins such as Lethal (2) giant larvae [L(2)gl] and Yrt (Fletcher et al., 2012; Gamblin et al., 2014; Hutterer et al., 2004; Laprise and Tepass, 2011; Peterson et al., 2004; Tepass, 2012). In return, L(2)gl and Yrt repress aPKC function to prevent the spread of apical characteristics to the lateral domain (Bilder et al., 2003; Drummond and Prehoda, 2016; Fletcher et al., 2012; Gamblin et al., 2014; Hutterer et al., 2004; Laprise et al., 2006; Laprise et al., 2009; Tanentzapf and Tepass, 2003; Yamanaka et al., 2006). Mutual antagonism between apical and lateral protein modules thus establishes a sharp boundary between their respective membrane domains (Fletcher et al., 2012; Laprise and Tepass, 2011). Cdc42 also activates p21-activated kinase 1 (Pak1), which has substrates in common with aPKC in fly epithelial cells (Aguilar-Aragon et al., 2018). However, it remains to be determined whether Pak1 targets the full complement of aPKC substrates, and whether phosphorylation by these kinases always has the same functional impact on target proteins and epithelial cell polarity. In particular, the functional relationship linking Pak1 and Yrt remains unexplored.\n\nThe mammalian Yrt orthologs EPB41L4B and EPB41L5 (also known as EHM2/LULU2 and YMO1/LULU, respectively) support cell migration and invasion, and EPB41L5 is also essential for the epithelial\u2013mesenchymal transition (EMT) (Handa et al., 2018; Hashimoto et al., 2016; Hirano et al., 2008; Jeong et al., 2019; Lee et al., 2007; Otsuka et al., 2016; Saller et al., 2019; Wang et al., 2006; Yu et al., 2010). Given that Crb and human CRUMBS3 (CRB3) both repress EMT (Campbell et al., 2011; Whiteman et al., 2008), these observations are consistent with the aforementioned concept that fly and mammalian Yrt proteins repress the Crb/CRB3-containing apical machinery (Laprise et al., 2006; Laprise and Tepass, 2011). However, recent findings have shown that depletion of Crb or Yrt causes similar phenotypes in pupal wing cells. Specifically, DE-cadherin (DE-cad) staining is fragmented, and F-Actin and Myosin distribution is altered in the absence of these proteins (Salis et al., 2017). This suggests that Yrt controls cell contractility \u2013 a premise that awaits formal demonstration. Consistent with this model, it was shown that EPB41L4B and EPB41L5 promote apical constriction (Nakajima and Tanoue, 2010; Nakajima and Tanoue, 2011; Nakajima and Tanoue, 2012). Similar to EPB41L4B and EPB41L5, Drosophila Crb organizes the actomyosin cytoskeleton at cell\u2013cell contacts, thereby supporting ZA integrity and tissue morphogenesis (Letizia et al., 2011; Silver et al., 2019; Tepass, 1996). Crb fulfils this function in ectodermal cells in part through the apical recruitment of the Guanine exchange factor (GEF) Cysts (Cyst), which activates the Rho1\u2013Rho kinase (Rok)\u2013Myosin pathway (Arnold et al., 2017; Rubin et al., 2000; Silver et al., 2019). In contrast, other studies have reported that Crb stabilizes adherens junctions by repressing Myosin activity in amnioserosa cells, a function that requires the FERM-domain protein Moesin (Moe) (Flores-Benitez and Knust, 2015). Moreover, Crb was shown to reduce the membrane residence time of Rok, thereby preventing the formation of a supracellular actomyosin cable in cells expressing high Crb levels at the salivary gland placode boundary where Crb distribution is anisotropic (R\u00f6per, 2012; Sidor et al., 2020). These conflicting observations show that the functional relationship linking Crb and Myosin is complex, and likely context-dependent. Whether, and how, Yrt modulates the multifaceted function of Crb in regulating cytoskeletal dynamics remains as an outstanding puzzle. Here, we show that Crb recruits Yrt to the apical membrane to induce Myosin-dependent apical tension in Drosophila epithelial cells. This association and the ensuing increased Myosin activity is repressed by aPKC-dependent phosphorylation of Yrt. In contrast to aPKC, Pak1 maintains the pool of unphosphorylated Yrt via Protein phosphatase 2A (PP2A), thereby supporting Yrt-dependent cortical tension.\n\n## Results\n\n### Yrt increases Myosin-dependent cortical tension\n\nIt was previously shown that loss of Yrt expression increases cell diameter in pupal tissues (40), thus suggesting that Yrt may promote actomyosin-based contraction to define cell width. To test this hypothesis directly, we measured the\u00a0retraction velocity after laser ablation of cell borders in the Drosophila embryonic epidermis, which reflects Myosin-dependent cortical tension (Hutson et al., 2003). Knockdown of yrt expression decreased the retraction velocity after laser ablation by 49% with respect to controls (Figure 1A, B; Video 1). In contrast, Yrt overexpression increased the retraction velocity after ablation by 43% (Figure 1C, D; Video 2). We quantified changes to the material properties of the apical cell surface using a Kelvin-Voigt model to measure the relaxation times of laser ablation experiments, proportional to the viscosity-to-elasticity ratio (Fernandez-Gonzalez et al., 2009). yrt knockdown and Yrt overexpression did not affect tissue viscoelasticity: relaxation times were 12 \u00b1\u00a01 seconds for yrt knockdown vs. 11 \u00b1 2 seconds for controls, and 8 \u00b1 1 seconds for Yrt overexpression vs. 10 \u00b1 1 seconds for controls. Together, our data indicate that Yrt positively regulates cortical tension in the Drosophila embryonic epidermis.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/67999/elife-67999-fig1-v2.jpg)\n\n**Figure 1.:** (A)\u00a0Epidermal cells in stage 14 Drosophila embryos expressing DE-cad::GFP and shRNA against mCherry or yrt before (cyan in merge) and after (red in merge) laser ablation of a cell-cell interface (white arrowheads).\u00a0Scale bar,\u00a010\u00a0\u00b5m. Circular marks visible after ablation indicate where the UV laser passed through the vitelline membrane, creating autofluorescent holes. Bottom panel shows kymographs of interface retraction over time (scale bar, 4 s). Yellow asterisks indicate the position of the tracked vertices. (B) Retraction velocity after laser ablation in embryos expressing shRNA against mCherry (n = 17 junctions in 17 different embryos) or yrt (n = 12). (C) Epidermal cells in stage 14 Drosophila embryos expressing DE-cad::GFP and wild-type levels of Yrt expression (left panel; expression of LacZ as control) or overexpression of FLAG-Yrt (right panel) before (cyan in merge) and after (red in merge) ablation of a cell-cell interface (white arrowheads). Scale bar, 10 \u00b5m. (D) Retraction velocity after laser ablation in embryos with wild-type Yrt expression (n = 13 junctions in 13 different embryos) or overexpressing FLAG-Yrt (n = 12). In B and D, error bars indicate the standard deviation (s.d.), and the black bold line denotes the mean. ** p \u2264 0.01, *** p \u2264 0.001 (Mann-Whitney test).\n\n![Video 1.](https://cdn.elifesciences.org/articles/67999/elife-67999-video1.mp4.jpg)\n\n**Video 1.:** Video of representative laser ablation experiments in control and yrt knockdown embryos.\n\n![Video 2.](https://cdn.elifesciences.org/articles/67999/elife-67999-video2.mp4.jpg)\n\n**Video 2.:** Video of representative laser ablation experiments in control and Yrt-overexpressing embryos.\n\nKnockdown of yrt decreased cortical Spaghetti squash (Sqh; the Drosophila Myosin regulatory light chain) localization to cell boundaries without affecting Sqh intensity at the apex of epidermal cells from stage 14 of embryogenesis, a time point coinciding with the apical recruitment of Yrt (Laprise et al., 2006), whereas Yrt depletion had no major impact on Myosin distribution at earlier stages of development (Figure 2A\u2013D). In addition, FLAG-Yrt expression resulted in apical enrichment of Sqh in adult ovarian follicle cells (Figure 2E,F). These data suggest that Yrt controls contractility at the apical domain. Consistent with this premise, mosaic overexpression of FLAG-Yrt induced apical constriction in the embryonic epidermis (Figure 3A,B) and the adult ovarian follicular epithelium (mRFP-positive cells; Figure 3C,D). Knockdown of sqh suppressed Yrt-induced apical constriction in (Figure 3E,F). Taken together, these results establish that Yrt promotes Myosin-based changes in cell mechanics to support cortical tension and/or apical constriction in various epithelial tissues, thereby providing putative molecular insights into how Yrt controls tissue morphogenesis (Franke et al., 2005; Hoover and Bryant, 2002; Laprise et al., 2006).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/67999/elife-67999-fig2-v2.jpg)\n\n**Figure 2.:** (A, B) Expression of Sqh:GFP and shRNA targeting either mCherry or yrt in the embryonic epidermis at stages 13 (A) and 14 (B). Intensity vs. distance is plotted for indicated yellow lines.\u00a0(C, D) Mean Sqh intensity and heterogeneity of Sqh signal for antero-posterior linescans in stage 13 embryos (C; n = seven sh mCherry, nine sh yrt) and in stage 14 embryos (D; n = 14 sh mCherry, 11 sh yrt). Error bars indicate the standard deviation (s.d.), and black lines denote the mean. *** p < 0.001 (Mann-Whitney test). (E) Mosaic expression of FLAG-Yrt in follicular epithelial cells constitutively expression Sqh::GFP, which was visualized by immunofluorescence. FLAG-Yrt-expressing cells (right panels) are labeled with mRFP, which was co-expressed with LacZ in control clones (left panels). Scale bar represents 5 \u03bcm. (F) Quantification of the fluorescence intensity of apical Sqh::GFP in cells expressing the exogenous proteins described in E (stage 5 and 6 follicles were used for quantification). Results were calculated as a ratio between FLAG-Yrt-expressing cells and control cells in the same follicle (n = 18 follicles for the control and n = 19 follicles for FLAG-Yrt). **** p \u2264 0.0001 (one-way ANOVA), error bars indicate s.d.; bold black lines denote the mean in F.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/67999/elife-67999-fig3-v2.jpg)\n\n**Figure 3.:** (A)\u00a0Mosaic expression of FLAG-GFP or FLAG-Yrt in the embryonic epidermis at stage 14. Crb immunostaining (magenta) marks the apical domain, whereas immunolabeling of L(2)gl or Discs large 1 (Dlg1) label the lateral membrane. (B) Quantification of apical domain width (n = 13 for FLAG-GFP and n = 15 for FLAG-Yrt; images were acquired from seven individual embryos for each genotype). Results are expressed as the ratio between the width of cells expressing the transgenes and the width of control cells in the same segment (**** p \u2264 0.0001). Scale bar represents 5 \u03bcm. (C) Clonal expression of membrane-targeted RFP (mRFP) and LacZ (control; left panels), or mRFP and FLAG-Yrt (F-Yrt; right panels) in the follicular epithelium. Immunostaining of mRFP highlights cells expressing the transgenes, whereas immunolabeling of endogenous Dlg1 (green) marks the lateral membrane of all epithelial cells. (D) Quantification of apical domain width of cells expressing the transgenes listed in C. Results are expressed as the ratio between the width of cells expressing the transgenes and the width of control cells in the same follicle. (E) Mosaic expression of a shRNA targeting sqh (left panels), of FLAG-Yrt (center panels), or expression of both sh-sqh and FLAG-Yrt (right panels). mRFP was co-expressed with these constructs, and used to label positive cells. (F) Quantification of the apical diameter of cells expressing the transgenes indicated in E. Results are expressed as a ratio to the width of control cells. In B, D and F, error bars indicate s.d.; bold black lines denote the mean; n \u2265 20; **** p \u2264 0.0001 (Student\u2019s t-test was used in B, one-way ANOVA for D, F). Follicles shown in C and E were at stage 5. Scale bars represent 5 \u03bcm.\n\n### aPKC counteracts Yrt-induced apical constriction by preventing the Crb-dependent apical recruitment of Yrt\n\naPKC phosphorylates Yrt on evolutionarily conserved residues (Gamblin et al., 2014). This prevents Yrt oligomerization, thereby antagonizing its ability to support lateral membrane stability and to restrict apical membrane growth (Gamblin et al., 2018). Expression of membrane-targeted aPKC (aPKCCAAX) suppressed FLAG-Yrt-induced apical constriction (Figure 4A\u2013C,H), showing that aPKC has a broad impact on Yrt function and also alters its ability to promote Myosin activity. However, aPKCCAAX had no effect on apical constriction induced by FLAG-Yrt5A in which the amino acids targeted by aPKC were replaced by non-phosphorylatable alanine residues [(Gamblin et al., 2014; Figure 4D,E,H)]. In addition, mutation of the aPKC phosphorylation sites into aspartic acids to generate the phosphomimetic Yrt mutant protein FLAG-Yrt5D (Gamblin et al., 2014) abolished the ability of Yrt to induce apical constriction (Figure 4F,I). Similarly, another FLAG-Yrt mutant protein unable to oligomerize [FLAG-YrtFWA; (Gamblin et al., 2018)] failed to sustain apical constriction (Figure 4G,I). These results argue strongly that aPKC targets Yrt directly to inhibit its ability to support apical constriction.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/67999/elife-67999-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013G)\u00a0Clonal expression of the indicated proteins in the follicular epithelium. Clones were positively labeled with mRFP or Yrt staining. (H, I) Quantification of the apical diameter of cells expressing the transgenes indicated in A\u2013E (H) or F, G (I). Results are expressed as a ratio to the width of control cells in the same follicle (stage 5 and 6 follicles were used for quantification). Scale bars represent 5 \u03bcm. **** p \u2264 0.0001 (one-way ANOVA), error bars indicate s.d.; bold black lines denote the mean, n \u2265 19.\n\nTo gain further insights on how aPKC impacts on Yrt function in the follicular epithelium, we analyzed Yrt subcellular localization upon modulation of aPKC activity. We observed apical accumulation of Yrt in wild-type cells treated with a chemical inhibitor of aPKC or in aPKC knockdown cells (Figure 5A,B). These results show that aPKC normally acts to restrict Yrt apical localization, which depends on Crb in the embryonic epidermis and in pupal photoreceptor cells (Laprise et al., 2006). This is also the case in adult follicular epithelial cells, as Yrt failed to accumulate apically in crb mutant cells treated with the aPKC inhibitor (Figure 5C,D; crb mutant cells are positively labeled with GFP). Similarly, Yrt was absent from the apical membrane upon inhibition of aPKC in cells exclusively expressing a mutant Crb protein containing an amino acid substitution inactivating its FBM [CrbY10A; (Figure 5E,F; Klebes and Knust, 2000)], which prevents the direct association of Yrt and Crb proteins (Laprise et al., 2006). This suggests that Crb plays a pivotal role in Yrt-dependent apical constriction. Accordingly, FLAG-Yrt5A triggered apical constriction in wild-type cells, whereas it was unable to induce this phenotype in Crb-depleted cells or cells expressing specifically CrbY10A (Figure 5G\u2013J). Although our data establish that Crb and Yrt cooperate in promoting apical constriction, apical localization of Yrt in cells with suboptimal aPKC activity is not sufficient to induce prominently this phenotype (Figure 5A,B). Yrt and Moe, another FERM-domain protein binding to Crb, have opposite effects on Myosin-induced cortical tension [this study; (Flores-Benitez and Knust, 2015; Laprise et al., 2006; M\u00e9dina et al., 2002; Salis et al., 2017)]. It is thus possible that the amount of Yrt relocalized to the apical domain upon inhibition of aPKC is not sufficient to outcompete Moe, whereas Yrt overexpression reaches the threshold required to displace most Moe proteins from Crb. Accordingly, inhibition of aPKC in Moe knockdown cells caused apical constriction, in contrast to what was observed in control cells (Figure 6A,B). In addition, expression of active Moe (Karagiosis and Ready, 2004) suppressed Yrt-induced apical constriction (Figure 6C,D), thereby confirming that these proteins are involved in a competitive functional interaction. Together, these results establish that aPKC precludes cortical tension by repressing the Yrt\u2013Crb association, and that Moe antagonizes Yrt function.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/67999/elife-67999-fig5-v2.jpg)\n\n**Figure 5.:** (A)\u00a0Panels depict immunofluorescence of Yrt (green in merge) and Fasciclin 3 (Fas3; lateral marker, magenta) in the follicular epithelium treated for 2 hr with the aPKC inhibitor CRT-006-68-54. (B) aPKC knockdown cells (mRFP positive) were immunostained for Yrt. (C) crb11A22 (null allele) homozygous mutant clones were produced in adult crb/+ female flies (mutant clones are GFP positive). Dissected ovaries were incubated with the aPKC inhibitor CRT-006-68-54 prior to fixation and Yrt immunostaining. (D) Quantification of apical Yrt intensity in control or crb mutant cells within the same follicle in presence of the aPKC inhibitor CRT-006-68-54. (E) Analysis of Yrt localization in control or crb11A22 mutant cells expressing exogenous CrbY10A (GFP-positive cells) exposed to the aPKC inhibitor CRT-006-68-54. (F) Quantification of apical Yrt staining in control and crb null cells expressing exogenous CrbY10A treated with the aPKC inhibitor. (G) FLAG-Yrt5A was specifically expressed in crb mutant cell clones (right panels). Mosaic expression of FLAG-Yrt5A in control cells or crb mutant clones were used as controls (middle and left panels, respectively). Clones were labeled with GFP (left panels) or by Yrt immunostaining (middle and right panels). Dlg1 staining was used to label the lateral membrane. (H) Quantification of the apical domain width of cells expressing the transgenes listed in G. (I) Immunostaining of Yrt and Dlg1 in follicular epithelial cells expressing FLAG-Yrt5A and exogenous wild-type Crb (left panels), or FLAG-Yrt5A together with CrbY10A (right panels). (J) Quantification of the apical domain width of cells expressing the transgenes listed in I. Results are expressed as the ratio between the width of cells expressing the transgenes and the width of control cells in the same follicle. Stage three follicles were depicted in A and B, whereas panels C, E, G, and I display stage five follicles. In D, F, H, and J error bars indicate s.d.; bold black lines denote the mean; n \u2265 20; ** p \u2264 0.01, *** p \u2264 0.001, **** p \u2264 0.0001 (one-way ANOVA). All scale bars represent 5 \u03bcm.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/67999/elife-67999-fig6-v2.jpg)\n\n**Figure 6.:** (A)\u00a0Mosaic knockdown of Moe in absence or presence of the aPKC inhibitor CRT-006-68-54. Clones are positively labeled with membrane-targeted RFP. (B) Quantification of apical domain width of knockdown cells in absence or presence of the aPKC inhibitor CRT-006-68-54. Results were calculated as a ratio between clonal cells and control cells in the same follicle. (C) Clonal expression of FLAG-Yrt, Myc-MoeT559D (Karagiosis and Ready, 2004), or both proteins (clones are labeled with mRFP). (D) Quantification of the apical domain width of cells expressing the transgenes listed in C. Results are expressed as the ratio between the width of cells expressing transgenes and the width of control cells in the same follicle (quantification was performed using stage five follicles). In B and D, error bars indicate s.d.; bold black lines denote the mean; n \u2265 18; * p \u2264 0.05, **** p \u2264 0.0001 (one-way ANOVA). All scale bars represent 5 \u03bcm.\n\n### Pak1 and PP2A decrease Yrt phosphorylation and are required for Yrt-induced apical constriction\n\nIt was recently shown that aPKC and Pak1 share common phosphorylation targets, namely the polarity proteins L(2)gl, Bazooka (Baz), Par6, and Crb (Aguilar-Aragon et al., 2018). It was also proposed that aPKC and Pak1 act redundantly on these substrates (Aguilar-Aragon et al., 2018). However, it remains to be determined whether Pak1 impacts the function of other aPKC substrates such as Yrt. In addition, it is unclear if aPKC and Pak1 function is fully redundant in epithelial cells, or whether these kinases also have specific roles. Overexpression of Par6 together with aPKCCAAX, which accumulated ectopically at the lateral membrane (Figure 7A), strongly reduced membrane localization of Yrt (Figure 7A,B). Expression of membrane-targeted Pak1 [Pak1Myr; (Noren et al., 2000)] suppressed Yrt cortical release induced by aPKC and Par6 (Figure 7A,B). This result raises the intriguing possibility that Pak1 opposes aPKC function, a premise that we explored by investigating Yrt phosphorylation upon overexpression of these kinases. Overexpression of Par6 and aPKCCAAX is associated with an upward shift in the gel migration profile of Yrt (Figure 7C). This resulted from increased Yrt phosphorylation, as treatment of samples with the \u03bb Phosphatase prior to electrophoresis abolished the impact of aPKCCAAX on Yrt gel mobility (Figure 7C; Gamblin et al., 2014). In contrast to aPKC, Pak1Myr decreased Yrt phosphorylation levels (Figure 7C). Given that Pak1 is a kinase, this observation is counterintuitive. However, it has been shown that Pak1 can activate the phosphatase PP2A (Staser et al., 2013), thus raising the possibility that the latter targets Yrt downstream of Pak1. Accordingly, Yrt phosphorylation levels were increased strongly in PP2A-A mutant embryos, or in wild-type embryos treated with the PP2A inhibitor Cantharidin (Figure 7D,E). Strikingly, inhibition of PP2A suppressed the impact of Pak1Myr expression on Yrt phosphorylation (Figure 7F), arguing that PP2A acts downstream of Pak1.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/67999/elife-67999-fig7-v2.jpg)\n\n**Figure 7.:** (A)\u00a0Yrt immunostaining in control follicular epithelial cells or clones of cells expressing aPKCCAAX together with Par6, Pak1Myr, or aPKCCAAX with Par6 and Pak1Myr. Clones were positively labeled with RFP or aPKC immunostaining in stage four follicles. Scale bar represents 5 \u03bcm. (B) Quantification of lateral Yrt staining intensity in genotypes described in A. Error bars indicate s.d.; bold black lines denote the mean; n \u2265 16; **** p \u2264 0.0001 (one-way ANOVA). (C) Control embryos, embryos overexpressing Par-6 and aPKCCAAX, or embryos expressing Pak1Myr were homogenized. Samples were incubated or not with the \u03bb phosphatase and processed for SDS-PAGE. Western blotting using anti-Yrt antibodies showed the migration profile of phosphorylated (pYrt) or unphosphorylated Yrt, whereas \u03b2-Tubulin (\u03b2Tub) was used as loading control. (D) Western blots showing the migration profile of Yrt (pYrt stands for phosphorylated Yrt) extracted from wild-type (WT) or PP2A-A mutant embryos. The expression level of PP2A-A is also shown, and Actin was used as loading control. (E) Wild-type embryos were treated or not with the PP2A inhibitor Cantharidin, homogenized, and processed for SDS-PAGE. Western blotting using control samples shows the phosphorylation levels of Yrt (pYrt), whereas samples incubated with \u03bb Phosphatase prior to gel electrophoresis show unphosphorylated Yrt. \u03b2-Tubulin (\u03b2Tub) was used as loading control. (F) Embryos overexpressing Pak1Myr were treated or not with PP2A inhibitor and homogenized. Western blotting using anti-Yrt antibodies showed the migration profile of phosphorylated (pYrt) or unphosphorylated Yrt. \u03bb Phosphatase was used as a positive control of Yrt dephosphorylation, and \u03b2-Tubulin (\u03b2Tub) was used as loading control.\n\nWe then tested the functional impact of Pak1- and PP2A-dependent modulation of Yrt phosphorylation. Chemical inhibition of Pak1 or PP2A, or knockdown of their expression suppressed apical constriction induced by FLAG-Yrt (Figure 8A\u2013H). Of note, FLAG-Yrt5A maintained its ability to induce apical constriction in the presence of Cantharidin, or when Pak1 or PP2A were depleted (Figures 8C\u2013D,E\u2013H). Pak1 and PP2A are thus dispensable for Yrt-induced apical constriction when aPKC target sites on Yrt are mutated to non-phosphorylatable residues. Altogether, these data suggest that Pak1 acts upstream of PP2A that antagonizes aPKC function by dephosphorylating Yrt, thereby allowing the latter to induce apical tension (Figure 9).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/67999/elife-67999-fig8-v2.jpg)\n\n**Figure 8.:** (A)\u00a0Stage four follicles clonally overexpressing FLAG-Yrt were incubated with the vehicle DMSO or the Pak1 inhibitor (IPA-3; Pak1 inh.) prior to fixation and immunostaining with antibodies directed against Yrt and Dlg1. (B) Quantification of the apical diameter of cells expressing transgenes indicated in A incubated or not with IPA-3. Results are expressed as the ratio between the width of cells expressing the transgenes and the width of control cells in the same follicle. (C) Immunostaining of Dlg1 in follicles displaying mosaic expression of a shRNA targeting Pak1 and the indicated FLAG-Yrt constructs. Clones were labeled with mRFP or Yrt staining. (D) Quantification of the diameter of cells expressing the exogenous proteins described in C. Results were calculated as a ratio between transgene expressing cells and control cells within the same follicle. (E) Follicles containing cell clones expressing FLAG-Yrt or FLAG-Yrt5A (mRFP-positive cells) were incubated or not with the PP2A inhibitor Cantharidin (PP2A inh.) prior to immunostaining with indicated antibodies. (F) Quantification of the apical diameter of cells expressing transgenes indicated in E. Results are expressed as the ratio between the width of cells expressing the transgenes and the width of control cells in the same follicle. (G) Panels depict follicular epithelium displaying mosaic knockdown of PP2A-A (left panels), mosaic expression of FLAG-Yrt (middle panels), or the combination of the indicated FLAG-Yrt constructs with a shRNA targeting PP2A-A (middle and right panels). Immunostaining of mRFP or Yrt highlights cells expressing the transgenes, whereas immunolabeling of endogenous Dlg1 shows the lateral domain of all epithelial cells. (H) Quantification of the apical diameter of cells expressing transgenes indicated in G. Results are expressed as the ratio between the width of cells expressing the transgenes and the width of control cells in the same follicle. B, D, F, and H, error bars indicate s.d.; bold black lines denote the mean; n \u2265 16; * p \u2264 0.05, **** p \u2264 0.0001 (one-way ANOVA). (C, F and G) imaged follicles were at stages 5 or 6. All scale bars represent 5 \u03bcm.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/67999/elife-67999-fig9-v2.jpg)\n\n**Figure 9.:** Yrt is localized to the lateral membrane where it prevents the spread of apical characteristics in differentiating epithelial cells and controls the occluding function of septate junctions in fully differentiated cells (Laprise et al., 2006; Laprise et al., 2009; Laprise and Tepass, 2011; Sollier et al., 2015). Yrt also occupies the apical domain owing to its direct interaction with Crb (Laprise et al., 2006). Yrt promotes Crb-dependent cortical tension (this study) in contrast to Moe that represses Myosin function downstream of Crb (Flores-Benitez and Knust, 2015; Salis et al., 2017). Hence, these proteins contribute to the functional plasticity of Crb, and a fine regulation of their association with Crb is thus required to define and stabilize the functional architecture of epithelial cells. Our data indicate that aPKC plays a key role in this process through phospho-dependent exclusion of Yrt from the apical domain. In contrast, Pak1 promotes Yrt dephosphorylation through activation of PP2A. The Pak1\u2013PP2A module, which opposes aPKC function, is thus essential for Yrt-induced contractility. The equilibrium between aPKC and Pak1\u2013PP2A activities thus balances Yrt and Crb functions.\n\n## Discussion\n\nMyosin-mediated cell contractility impacts a broad range of cellular processes driving tissue morphogenesis, including apical constriction, convergent extension, and ZA establishment and maintenance (Miao and Blankenship, 2020; Perez-Vale and Peifer, 2020). Our data establish that Yrt increases Myosin-dependent cortical tension in embryonic and adult tissues, thereby providing further insights into how Yrt contributes to organize epithelial tissue architecture. Similarly, a recent study showed that loss of Yrt expression increases cell diameter in pupal wing cells (Salis et al., 2017), thus suggesting that Yrt controls the actomyosin network throughout the fly life cycle. This function is evolutionarily conserved, as the mammalian Yrt proteins EPB41L4B and EPB41L5 impact actomyosin organization and stimulate apical constriction (Nakajima and Tanoue, 2010; Nakajima and Tanoue, 2011; Nakajima and Tanoue, 2012). Regulation of actomyosin contractility by Yrt likely impacts ZA stability, as suggested by the fragmented distribution of ZA components in Yrt-depleted cells (Salis et al., 2017). This is in line with the fact that Yrt-induced apical constriction depends on Crb, which is also required for organization of junctional Myosin assembly and ZA stability (Pocha and Knust, 2013; Silver et al., 2019; Tepass, 1996).\n\nOur findings showing that Crb and Yrt cooperate in promoting cortical tension may seem at odds with previous studies demonstrating that Yrt inhibits the ability of Crb to support apical membrane growth (Laprise et al., 2006; Laprise et al., 2009). We propose that Yrt is not an inhibitor of Crb function, but rather acts downstream of Crb to specifically promote actomyosin contractility at the expense of other Crb-dependent roles such as apical membrane growth. It is possible that the recruitment of Yrt causes steric hindrance on the short cytoplasmic tail of Crb, thereby preventing the binding of Crb effectors mediating apical membrane growth. In addition, we found that Yrt competes with Moe, which binds to Crb and decreases cortical tension (Flores-Benitez and Knust, 2015; M\u00e9dina et al., 2002; Salis et al., 2017). Our model is that the numerous functions of Crb are specified by the presence or absence of different FERM domain proteins, which competitively binds to Crb. This paradigm is further supported by previous findings showing that Crb controls cell growth through recruitment of the FERM domain protein Expanded (Ex) (Ling et al., 2010; Robinson et al., 2010). Thus, fine regulation of the incorporation of different FERM-domain proteins within distinct Crb complexes most likely dictates the biological output downstream of Crb. This ordered equilibrium may explain the functional plasticity of Crb, which can both increase or decrease Myosin-dependent contractility to accommodate dynamic regulation of epithelial cell polarity, cell\u2013cell adhesion, and tissue morphogenesis (Bajur et al., 2019; Flores-Benitez and Knust, 2015; Letizia et al., 2011; R\u00f6per, 2012; Sidor et al., 2020; Silver et al., 2019).\n\nOur discoveries indicate that aPKC prevents the Crb\u2013Yrt association through direct phosphorylation of Yrt. Thereby, aPKC excludes Yrt from the apical membrane and represses Yrt-induced apical constriction. aPKC also inhibits the ability of Yrt to restrict Crb-dependent apical membrane growth (Gamblin et al., 2014; Gamblin et al., 2018). This is consistent with the aforementioned model, and with previous reports documenting functional cooperation between aPKC and Crb in establishing the apical domain (Fletcher et al., 2012; Sotillos et al., 2004; Tepass, 2012; Walther and Pichaud, 2010). We have shown that phosphorylation of Yrt on aPKC target sites prevents Yrt self-association, and that oligomerization-defective Yrt mutant proteins are unable to bind Crb (Gamblin et al., 2018). Together, these studies establish that the phospho-dependent repression of Yrt oligomerization is a key mechanism by which aPKC controls apical\u2013basal polarity, cortical tension, and epithelial cell architecture. Our data also show that ectopic localization of aPKC to the lateral domain dislodges Yrt from the membrane, indicating that aPKC controls both Crb-dependent and Crb-independent membrane localization of Yrt. One possibility is that phosphorylation of Yrt by aPKC generates electrostatic repulsion with negatively charged membrane phospholipids, as described for other aPKC substrates (Bailey and Prehoda, 2015).\n\nCdc42 is a key regulator of epithelial cell polarity acting upstream of aPKC and Pak1 (Aguilar-Aragon et al., 2018; Pichaud et al., 2019). These kinases share common substrates and have redundant functions in apical\u2013basal polarity regulation (Aguilar-Aragon et al., 2018). However, Yrt sequence does not contain a Pak1 consensus motif. Moreover, we found that expression of membrane-targeted Pak1 reduces Yrt phosphorylation levels, whereas membrane-bound aPKC has the opposite effect. This argues that Yrt is not a direct substrate of Pak1, and that this kinase does not phosphorylate the full complement of aPKC substrates within the polarity protein network. Finally, while Pak1 is required for Yrt-induced apical constriction, aPKC inhibits this function of Yrt. In the light of all of this evidence, we propose that Pak1 promotes the dephosphorylation of aPKC target sites on Yrt to support its functions. We provide evidence that Pak1 acts through the phosphatase PP2A to achieve this function in polarized epithelial cells. PP2A thus has a broad role in cell polarity, as it opposes aPKC and Par-1 signaling to control polarization of neuroblasts and photoreceptor cells (Krahn et al., 2009; Nam et al., 2007; Ogawa et al., 2009). In these cell types, PP2A targets Par6 and/or Baz. This implies that Pak1 may also decrease the phosphorylation level of Baz and/or Par6 in epithelial cells, although the kinase domain of Pak1 can phosphorylate Baz and Par6 in vitro (Aguilar-Aragon et al., 2018). At this point, a cell type-specific or context-dependent regulation of Baz and Par-6 by Pak1 cannot be ruled out. Alternatively, it is possible that Pak1 can both increase or decrease the phosphorylation of specific polarity proteins in regulatory feedback loops, thereby ensuring the delicate equilibrium required for epithelial tissue homeostasis. Combining our data with previous findings (Aguilar-Aragon et al., 2018) suggests that activation of aPKC and Pak1 downstream of Cdc42 has redundant activity on a subset of polarity proteins [e.g. Par6, L(2)gl, Baz], while having opposite effects on Yrt and apical tension. Identification of the molecular mechanisms selecting the engagement of aPKC or Pak1 downstream of Cdc42 remains an outstanding puzzle, solving of which will provide crucial insights into the understanding of epithelial cell polarity, cortical tension, and tissue morphogenesis.\n\nOverall, our work reveals a novel mechanism regulating cortical tension at the apical domain, which plays a crucial role in developing and adult epithelia. We also refine our understanding of the functional relationship linking Crb and Yrt by establishing that the latter contributes to the plasticity of Crb function rather than acting as an obligatory inhibitor of the apical protein machinery. We also highlight that the roles of aPKC and Pak1 are not fully redundant in epithelial cells, and that these kinases have opposite effects on cortical tension. We also provide evidence that Pak1 can decrease protein phosphorylation in epithelial cells through PP2A, thereby consolidating the broad role played by this phosphatase in cell polarity.\n\n## Materials and methods\n\n### Drosophila genetics\n\nThe UAS-GAL4 system was employed to drive the expression of transgenes (Brand et al., 1994). Mosaic analysis in the follicular epithelium was performed using the Flippase recognition target (FRT)/Flippase (FLP) system in which the FLP recombinase was under the control of a heat shock promoter (hsFLP) (Chou and Perrimon, 1996; Golic and Lindquist, 1989). Newly hatched females were heat-shocked for 3 hr at 37\u00b0C on two consecutive days. Ovaries were dissected and processed 48 hr after the second heat shock. Tables 1 and 2 depict the stock list and the complete genotype of flies used in this study, respectively.\n\n**Table 1.**\n List of fly stocks used in this study.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Genotype</th>\n      <th>Source</th>\n      <th>Identifier</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>D. melanogaster: UAS-FLAG-Yurt</td>\n      <td>Reference (Gamblin et al., 2014)</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: UAS-FLAG-Yurt[5A]</td>\n      <td>Reference (Gamblin et al., 2014)</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: UAS-FLAG-Yurt[FWA]</td>\n      <td>Reference (Gamblin et al., 2018)</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: UAS-FLAG-Yurt[5D]</td>\n      <td>Reference (Gamblin et al., 2014)</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: UAS-sh yurt</td>\n      <td>Drosophila Bloomington Stock Centre</td>\n      <td># 36118</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: UAS-sh squash</td>\n      <td>Drosophila Bloomington Stock Centre</td>\n      <td># 32439</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: UAS-aPKC[CAAX]</td>\n      <td>Reference (Sotillos et al., 2004)</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: UAS-aPKC[CAAX], Par6</td>\n      <td>Gift from T. Harris (Harris and Tepass, 2010)</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: UAS-sh mCherry</td>\n      <td>Drosophila Bloomington Stock Centre</td>\n      <td># 35785</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: FRT82b, crb[11a22]</td>\n      <td>Drosophila Bloomington Stock Centre</td>\n      <td># 3448</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: UAS-sh aPKC</td>\n      <td>Drosophila Bloomington Stock Centre</td>\n      <td># 34332</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: UAS-sh Pak1</td>\n      <td>Drosophila Bloomington Stock Centre</td>\n      <td># 41714</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: UAS-Pak[myr]</td>\n      <td>Drosophila Bloomington Stock Centre</td>\n      <td># 8804</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: foscrb[Y10A]; FRT82b, crb[11a22]</td>\n      <td>Reference (Klose et al., 2013)</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: UAS-LacZ</td>\n      <td>Drosophila Bloomington Stock Centre</td>\n      <td># 8529</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: sh Pp2a-A</td>\n      <td>Drosophila Bloomington Stock Centre</td>\n      <td># 55050</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: endo-E-Cadherin::GFP</td>\n      <td>Reference (Huang et al., 2009)</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: sqh-sqh::GFP</td>\n      <td>Reference (Royou et al., 2004)</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: mat\u03b1tub67;15 GAL4</td>\n      <td>Reference (Staller et al., 2013)</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: daughterless-GAL4</td>\n      <td>Drosophila Bloomington Stock Centre</td>\n      <td># 27608</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: hs-FLP;; tub-FRT-Gal80-FRT-Gal4, UAS\u2013mRFP</td>\n      <td>Gift from Y. Bellaiche, Institut Curie, PSL Research University, Paris, France.</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: hs-FLP; tub-GAL4, UAS-GFP; FRT82b, tub-GAL80</td>\n      <td>Gift from N. Perrimon, Harvard Medical School, Boston, USA</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: hs-FLP; sqh-Sqh::GFP; tub&gt;Gal80&gt;Gal4, UAS\u2013mRFP</td>\n      <td>Gift from Y. Bellaiche, Institut Curie, PSL Research University, Paris, France.</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: wild type</td>\n      <td>Drosophila Bloomington Stock Centre</td>\n      <td># 25210</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: PP2A-A[EP2332] / Cyo</td>\n      <td>Drosophila Bloomington Stock Centre</td>\n      <td># 1704</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: Patched-GAL4</td>\n      <td>Drosophila Bloomington Stock Centre</td>\n      <td># 65661</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: UAS-myc-Moesin[T559D]</td>\n      <td>Drosophila Bloomington Stock Centre</td>\n      <td># 8630</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: UAS-sh Moesin</td>\n      <td>Drosophila Bloomington Stock Centre</td>\n      <td># 8629</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: UAS-FLAG-GFP</td>\n      <td>Reference (Gamblin et al., 2018)</td>\n      <td>N/A</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 2.**\n Detailed genotypes.\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"2\">Figure 1</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>A</td>\n      <td>endo-E-Cadherin::GFP / +; UAS-sh mCherry / mat\u03b1tub67;15 GAL4</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>endo-E-Cadherin::GFP / +; UAS-sh yrt / mat\u03b1tub67;15 GAL4</td>\n    </tr>\n    <tr>\n      <td>B</td>\n      <td>endo-E-Cadherin::GFP / +; UAS-sh mCherry / mat\u03b1tub67;15 GAL4</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>endo-E-Cadherin::GFP / +; UAS-sh yrt / mat\u03b1tub67;15 GAL4</td>\n    </tr>\n    <tr>\n      <td>C</td>\n      <td>endo-E-Cadherin::GFP / UAS-LacZ; daughterless-GAL4 / +</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>endo-E-Cadherin::GFP / +; UAS-FLAG-Yrt / daughterless-GAL4</td>\n    </tr>\n    <tr>\n      <td>D</td>\n      <td>endo-E-Cadherin::GFP / UAS-LacZ; daughterless-GAL4 / +</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>endo-E-Cadherin::GFP / +; UAS-FLAG-Yrt / daughterless-GAL4</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Figure 2</td>\n    </tr>\n    <tr>\n      <td>A</td>\n      <td>sqh-Sqh::GFP; UAS-sh mCherry / mat\u03b1tub67;15 GAL4</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>sqh-Sqh::GFP ; UAS-sh yrt / mat\u03b1tub67;15 GAL4</td>\n    </tr>\n    <tr>\n      <td>B</td>\n      <td>sqh-Sqh::GFP; UAS-sh mCherry / mat\u03b1tub67;15 GAL4</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>sqh-Sqh::GFP ; UAS-sh yrt / mat\u03b1tub67;15 GAL4</td>\n    </tr>\n    <tr>\n      <td>C</td>\n      <td>sqh-Sqh::GFP; UAS-sh mCherry / mat\u03b1tub67;15 GAL4</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>sqh-Sqh::GFP ; UAS-sh yrt / mat\u03b1tub67;15 GAL4</td>\n    </tr>\n    <tr>\n      <td>D</td>\n      <td>sqh-Sqh::GFP; UAS-sh mCherry / mat\u03b1tub67;15 GAL4</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>sqh-Sqh::GFP ; UAS-sh yrt / mat\u03b1tub67;15 GAL4</td>\n    </tr>\n    <tr>\n      <td>E</td>\n      <td>hs-FLP; sqh-Sqh::GFP; UAS-LacZ / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>hs-FLP; sqh-Sqh::GFP; UAS-FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td>F</td>\n      <td>hs-FLP; sqh-Sqh::GFP; UAS-LacZ / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>hs-FLP; sqh-Sqh::GFP; UAS-FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Figure 3</td>\n    </tr>\n    <tr>\n      <td>A</td>\n      <td>Patched-GAL4 / +; UAS-FLAG-GFP / +</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Patched-GAL4 / +; IAS-FLAG-Yrt / +</td>\n    </tr>\n    <tr>\n      <td>B</td>\n      <td>Patched-GAL4 / +; UAS-FLAG-GFP / +</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Patched-GAL4 / +; IAS-FLAG-Yrt / +</td>\n    </tr>\n    <tr>\n      <td>C</td>\n      <td>hs-FLP / +; ; UAS- LacZ / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>hs-FLP / +; ; UAS- FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td>D</td>\n      <td>hs-FLP / +; ; UAS- LacZ / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>hs-FLP / +; ; UAS- FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td>E</td>\n      <td>hs-FLP / +; sh sqh / +; UAS- LacZ / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>hs-FLP / +; sh LexA / +; UAS- FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>hs-FLP / +; sh sqh / +; UAS- FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td>F</td>\n      <td>hs-FLP / +; sh sqh / +; UAS- LacZ / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>hs-FLP / +; sh LexA / +; UAS- FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>hs-FLP / +; sh sqh / +; UAS- FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Figure 4</td>\n    </tr>\n    <tr>\n      <td>A</td>\n      <td>hs-FLP / +; ; UAS- aPKC[CAAX] / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td>B</td>\n      <td>hs-FLP / +; UAS- LacZ / +; UAS- FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td>C</td>\n      <td>hs-FLP / +; ; UAS-aPKC[CAAX], UAS- FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td>D</td>\n      <td>hs-FLP / +; UAS- LacZ / +; UAS- FLAG-Yrt[5A] / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td>E</td>\n      <td>hs-FLP / +; ; UAS-aPKC[CAAX], UAS- FLAG-Yrt[5A] / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td>F</td>\n      <td>hs-FLP / +; ; UAS- FLAG-Yrt[5D] / tub-FRT-GAL80-FRT-Gal4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td>G</td>\n      <td>hs-FLP / +; ; UAS- FLAG-Yrt[FWA] / tub-FRT-GAL80-FRT-Gal4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td>H</td>\n      <td>hs-FLP / +; ; UAS- aPKC[CAAX] / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>hs-FLP / +; UAS- LacZ / +; UAS- FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>hs-FLP / +; ; UAS-aPKC[CAAX], UAS- FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>hs-FLP / +; UAS- LacZ / +; UAS- FLAG-Yrt[5A] / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>hs-FLP / +; ; UAS-aPKC[CAAX], UAS- FLAG-Yrt[5A] / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td>I</td>\n      <td>hs-FLP / +; UAS- LacZ / +; + / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>hs-FLP / +; ; UAS- FLAG-Yrt[5A] / tub-FRT-GAL80-FRT-Gal4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>hs-FLP / +; ; UAS- FLAG-Yrt[5D] / tub-FRT-GAL80-FRT-Gal4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>hs-FLP / +; ; UAS- FLAG-Yrt[FWA] / tub-FRT-GAL80-FRT-Gal4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Figure 5</td>\n    </tr>\n    <tr>\n      <td>A</td>\n      <td>wild type ovaries treated with DMSO or aPKC inhibitor</td>\n    </tr>\n    <tr>\n      <td>B</td>\n      <td>hs-FLP / +; ; sh aPKC / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td>C</td>\n      <td>hs-FLP; tub-GAL4, UAS-GFP / +; FRT82b, crb[11a22] / FRT82b, tub-GAL80 treated with aPKC inhibitor</td>\n    </tr>\n    <tr>\n      <td>D</td>\n      <td>hs-FLP; tub-GAL4, UAS-GFP / +; FRT82b, crb[11a22] / FRT82b, tub-GAL80 treated with aPKC inhibitor</td>\n    </tr>\n    <tr>\n      <td>E</td>\n      <td>hs-FLP; tub-GAL4, UAS-GFP / fosCrb[Y10A]; FRT82b, crb[11a22] / FRT82b,tub-GAL80 treated with aPKC inhibitor</td>\n    </tr>\n    <tr>\n      <td>F</td>\n      <td>hs-FLP; tub-GAL4, UAS-GFP / fosCrb[Y10A]; FRT82b, crb[11a22] / FRT82b,tub-GAL80 treated with aPKC inhibitor</td>\n    </tr>\n    <tr>\n      <td>G</td>\n      <td>hs-FLP; tub-GAL4, UAS-GFP / UAS-LacZ; FRT82b, crb[11a22] / FRT82b,tub-GAL80</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>hs-FLP; tub-GAL4, UAS-GFP / UAS-FLAG-Yrt[5A]; FRT82b / FRT82b,tub-GAL81</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>hs-FLP; tub-GAL4, UAS-GFP / UAS-FLAG-Yrt[5A]; FRT82b, crb[11a22] / FRT82b,tub-GAL80</td>\n    </tr>\n    <tr>\n      <td>H</td>\n      <td>hs-FLP; tub-GAL4, UAS-GFP / UAS-LacZ; FRT82b, crb[11a22] / FRT82b,tub-GAL80</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>hs-FLP; tub-GAL4, UAS-GFP / UAS-FLAG-Yrt[5A]; FRT82b / FRT82b,tub-GAL81</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>hs-FLP; tub-GAL4, UAS-GFP / UAS-FLAG-Yrt[5A]; FRT82b, crb[11a22] / FRT82b,tub-GAL80</td>\n    </tr>\n    <tr>\n      <td>I</td>\n      <td>hs-FLP; tub-GAL4, UAS-GFP / UAS-FLAG-Yrt[5A], fosCrb; FRT82b, crb[11a22] / FRT82b,tub-GAL80</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>hs-FLP; tub-GAL4, UAS-GFP / UAS-FLAG-Yrt[5A], fosCrb[Y10A]; FRT82b, crb[11a22] / FRT82b,tub-GAL80</td>\n    </tr>\n    <tr>\n      <td>J</td>\n      <td>hs-FLP; tub-GAL4, UAS-GFP / UAS-FLAG-Yrt[5A], fosCrb; FRT82b, crb[11a22] / FRT82b,tub-GAL80</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>hs-FLP; tub-GAL4, UAS-GFP / UAS-FLAG-Yrt[5A], fosCrb[Y10A]; FRT82b, crb[11a22] / FRT82b,tub-GAL80</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Figure 6</td>\n    </tr>\n    <tr>\n      <td>A</td>\n      <td>hs-FLP / +; ; UAS-sh moe / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP treated with H2O or aPKC inhibitor</td>\n    </tr>\n    <tr>\n      <td>B</td>\n      <td>hs-FLP / +; ; UAS-sh moe / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP treated with H2O or aPKC inhibitor</td>\n    </tr>\n    <tr>\n      <td>C</td>\n      <td>hs-FLP / +; UAS- myc-Moesin[T559D] / +; + / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>hs-FLP / +; UAS- LacZ / +; UAS- FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>hs-FLP / +; UAS- myc-Moesin[T559D] / +; UAS- FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td>D</td>\n      <td>hs-FLP / +; UAS- myc-Moesin[T559D] / +; + / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>hs-FLP / +; UAS- LacZ / +; UAS- FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>hs-FLP / +; UAS- myc-Moesin[T559D] / +; UAS- FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Figure 7</td>\n    </tr>\n    <tr>\n      <td>A</td>\n      <td>hs-FLP / +; ; UAS- LacZ / tub-FRT-Gal80-FRT-Gal4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>hs-FLP / +; ; UAS-aPKC[CAAX], Par6 / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>hs-FLP / +; ; UAS-Pak[Myr] / +; + / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>hs-FLP / +; ; UAS-Pak[Myr] / +; UAS-aPKC[CAAX], Par6 / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td>B</td>\n      <td>hs-FLP / +; ; UAS- LacZ / tub-FRT-Gal80-FRT-Gal4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>hs-FLP / +; ; UAS-aPKC[CAAX], Par6 / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>hs-FLP / +; ; UAS-Pak[Myr] / +; + / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>hs-FLP / +; ; UAS-Pak[Myr] / +; UAS-aPKC[CAAX], Par6 / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td>C</td>\n      <td>Daughterless-GAL4 / +; UAS-FLAG-GFP / Daughterless-GAL4</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Daughterless-GAL4 / +; UAS-aPKC[CAAX], Par6 / Daughterless-GAL4</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Daughterless-GAL4 / UAS-Pak[myr]; + / Daughterless-GAL4</td>\n    </tr>\n    <tr>\n      <td>D</td>\n      <td>wild type</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Pp2A-29b[EP2332]</td>\n    </tr>\n    <tr>\n      <td>E</td>\n      <td>wild type embryos treated with DMSO or PP2A inhibitor</td>\n    </tr>\n    <tr>\n      <td>F</td>\n      <td>Daughterless-GAL4 / UAS-Pak[myr]; + / Daughterless-GAL4 treated with DMSO or PP2A inhibitor</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Figure 8</td>\n    </tr>\n    <tr>\n      <td>A</td>\n      <td>hs-FLP / +; ; UAS- FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP treated with DMSO or Pak1 inhibitor</td>\n    </tr>\n    <tr>\n      <td>B</td>\n      <td>hs-FLP / +; ; UAS- FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP treated with DMSO or Pak1 inhibitor</td>\n    </tr>\n    <tr>\n      <td>C</td>\n      <td>hs-FLP / +; sh Pak1; + / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>hs-FLP / +; sh Pak1; UAS- FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>hs-FLP / +; sh Pak1; UAS- FLAG-Yrt[5A] / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td>D</td>\n      <td>hs-FLP / +; sh Pak1; + / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>hs-FLP / +; sh lexA; UAS- FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>hs-FLP / +; sh Pak1; UAS- FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>hs-FLP / +; sh lexA; UAS- FLAG-Yrt[5A] / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>hs-FLP / +; sh Pak1; UAS- FLAG-Yrt[5A] / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td>E</td>\n      <td>hs-FLP / +; ; UAS- FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP treated with DMSO or PP2A inhibitor</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>hs-FLP / +; ; UAS- FLAG-Yrt[5A] / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP treated with DMSO or PP2A inhibitor</td>\n    </tr>\n    <tr>\n      <td>F</td>\n      <td>hs-FLP / +; ; UAS- FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP treated with DMSO or PP2A inhibitor</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>hs-FLP / +; ; UAS- FLAG-Yrt[5A] / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP treated with DMSO or PP2A inhibitor</td>\n    </tr>\n    <tr>\n      <td>G</td>\n      <td>hs-FLP / +; ; sh Pp2A-29b / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>hs-FLP / +; UAS-FLAG-Yrt; sh Pp2A-29b / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>hs-FLP / +; UAS-FLAG-Yrt[5A]; sh Pp2A-29b / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td>H</td>\n      <td>hs-FLP / +; ; sh Pp2A-29b / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>hs-FLP / +; sh lexA; UAS- FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>hs-FLP / +; UAS-FLAG-Yrt; sh Pp2A-29b / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>hs-FLP / +; sh lexA; UAS- FLAG-Yrt[5A] / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>hs-FLP / +; UAS-FLAG-Yrt[5A]; sh Pp2A-29b / tub-FRT-GAL80-FRT-GAL4, UAS\u2013mRFP</td>\n    </tr>\n  </tbody>\n</table>\n\n### Laser ablation for measurement of mechanical properties\n\nStage 14 embryos were dechorionated for 2 min in 50% bleach, washed with water, and glued on a coverslip using heptane glue (Scepanovic et al., 2021). Ablations were induced using a pulsed Micropoint N2 laser (Andor) tuned to 365 nm on a Revolution XD spinning disk confocal microscope. The laser produces 120 \u03bcJ pulses at durations of 2\u20136 ns each. For ablation of cell junctions, 10 consecutive laser pulses were delivered to a single spot along a cell interface. Images were acquired every 4 s before and after ablation of a single interface using a 60x oil immersion lens (Olympus, NA 1.35). The positions of the tricellular vertices connected by the ablated interface were manually tracked prior to and for 36 s following ablation using the image analysis platform SIESTA (Fernandez-Gonzalez and Zallen, 2011; Leung and Fernandez-Gonzalez, 2015). To measure retraction velocity, the change in distance between the tricellular vertices was measured comparing images acquired immediately before and after ablation and divided by the time elapsed between the two images. To quantify the viscoelastic properties of the tissue, we modeled the laser ablation results as the damped recoil of an elastic fibre, using a Kelvin-Voigt mechanical-equivalent circuit (Fernandez-Gonzalez et al., 2009). Briefly, the Kelvin-Voigt circuit models cell interfaces as a spring (elasticity) and a dashpot (viscosity) configured in parallel. As a result, the distance between the ends of the interface when tension is released can be quantified as:\n\n$$\nLt=D1-e^{-\\frac{t}{\\tau}}\n$$\n\nwhere L(t) is the distance between the tricellular vertices at the end of the severed interface at time t after ablation, D is the asymptotic value of the distance between the tricellular junctions, and the relaxation time\u00a0$\\tau$:\n\n$$\n\\tau=\\frac{\\mu}{E}\n$$\n\nis the ratio of the viscosity (\u03bc) to the elasticity (\u0395) of the tissue. Statistical differences between groups were measured using the nonparametric Mann-Whitney U test.\n\n### Immunofluorescence\n\nDissected ovaries or dechorionated embryos were fixed for 15 min in 4% paraformaldehyde or heat fixed (aPKC, Yrt, Crb, and Arm stainings) as previously described (Gamblin et al., 2014). Fixed ovaries and embryos were blocked for 1 hr in NGT (2% normal goat serum, 0.3% Triton X-100 in PBS). Ovaries and embryos were incubated with the following primary antibodies overnight at 4\u00b0C: mouse anti-Dlg1 [4F3, Developmental Studies Hybridoma Bank at the University of Iowa (DSHB)], 1:25 dilution; rabbit anti-Yrt, 1:1000 (Biehler et al., 2020); guinea-pig anti-Yrt (Laprise et al., 2006), 1:250; mouse anti-GFP (Roche, Sigma Aldrich), 1:200; rabbit anti-GFP (A-11122, Invitrogen) 1:200; mouse anti-Fas3 (7G10, DSHB), 1:10; rabbit anti-RFP (600-401-379, Rockland), 1:400; rabbit anti-Lgl (d-300, Santa Cruz), 1:100; rabbit anti-aPKC (C-20, Santa Cruz Biotechnology), 1:200; rat anti-Crb (Sollier et al., 2015), 1:250. Ovaries and embryos were then washed three times in PBT (0.3% Triton X-100 in PBS) before and after incubation with secondary antibodies (1:400 in NGT, 1 hr at room temperature), which were conjugated to Cy3 (Jackson ImmunoResearch Laboratories) or Alexa Fluor 488 (Molecular Probes). Ovarioles were mechanically separated and mounted in Vectashield mounting medium (Vector Labs), and imaged with a LSM700 confocal (63\u00d7 Apochromat lens with a numerical aperture of 1.40). Embryos were mounted in Vectashield mounting medium and imaged with the Zeiss LSM700 confocal using LD C-Apochromat 40x 1.1 NA water Korr objective. Images were uniformly processed with ImageJ (National Institutes of Health).\n\n### Phosphatase assays\n\nDechorionated embryos were homogenized in ice-cold lysis buffer (1% Triton X-100, 50 mM TRIS-HCl pH 7.5, 5% glycerol, 150 mM NaCl, 1 mM PMSF, 0.5 \u03bcg/mL aprotinin, 0.7 \u03bcg/mL pepstatin, and 0.5 \u03bcg/mL leupeptin). Lysates were cleared by centrifugation at 4\u00b0C, and 400 units of \u03bb Phosphatase (New England Biolabs) was added to 30 \u03bcg of proteins extracted from embryos. The volume of the reaction mix was completed to 30 \u03bcl with the MetalloPhosphatase buffer (New England Biolabs) containing 1 mM of MnCl2 prior to a 30-min incubation at 30\u00b0C. The reaction was stopped by addition of Laemmli\u2019s buffer.\n\n### Western blotting\n\nDechorionated embryos were homogenized in ice-cold lysis buffer (1% Triton X-100, 50 mM TRIS HCl pH 7.5, 5% glycerol, 100 mM NaCl, 50 mM NaF, 5 mM EDTA pH 8, 40 mM \u03b2-glycerophosphate, 1 mM PMSF, 0.5 \u03bcg/mL aprotinin, 0.7 \u03bcg/mL pepstatin, 0.5 \u03bcg/mL leupeptin and 0.1 mM orthovanadate) and processed for SDS-PAGE and western blotting as previously described (Laprise et al., 2002). Primary antibodies used: Rabbit anti-Yrt (Biehler et al., 2020), 1:10,000; mouse anti-\u03b2\u2212Tubulin (E7, DSHB), 1:2000; rabbit anti-aPKC (C-20, Santa Cruz Biotechnology), 1:2000; rabbit anti-PP2A-A (Krahn et al., 2009), 1:10,000; mouse anti-Actin (NB-100\u201374340, Novus Biologicals), 1:2000. HRP-conjugated secondary antibodies were from GE Healthcare and used at a 1:2000 dilution.\n\n### Chemical treatment of embryos\n\nDechorionated embryos were incubated under agitation for 1 hr at room temperature in a 0.9% NaCl solution supplemented with 100 \u03bcM of Cantharidin under an octane phase (1:1). Embryos were then washed three times in PBT.\n\n### Chemical treatment of ovaries\n\nDissected ovaries were treated for 2 hr with inhibitors of aPKC (CRT-006-68-54, Bio-Techn Sales Corporation, 10 \u03bcM) or Pak1 (IPA-3, Millipore Sigma, 50 \u03bcM) as described (Chartier et al., 2012).\n\n### Measurements of apical domain size and quantification of fluorescence intensity\n\nStage 3-6\u00a0follicles were imaged, and the apical diameter or fluorescence intensity of genetically modified cells (positively labeled with mRFP or GFP) was measured using ImageJ (National Institutes of Health). Control cells facing labeled cells on the opposite side of the follicle were used as control. Results are expressed as the ratio between measurements in labeled cells and control cells. A minimum of 15 follicles were analyzed in each condition. A similar approach was used to analyse apical domain width of epidermal cells expressing FLAG-GFP (control) or FLAG-Yrt in stage 13 embryos (n \u2265 13 from 7 different embryos). FLAG-GFP- or FLAG-Yrt-negative cells in the same embryonic segment were used as control. Statistical differences between groups were determined using one-way ANOVA (apical domain size) or Student\u2019s t-test (fluorescence intensity).\n\n### Analysis of myosin distribution in the embryonic epidermis\n\nTo analyze myosin distribution in epidermal cells in stage 13 and stage 14 embryos, image stacks were acquired of embryos expressing sqh:GFP and either shRNA targeting mCherry or yrt. Maximum intensity projections were generated from slices representing the apical domain (5 slices of 0.5 \u03bcm each) of the epidermis. A 20 \u03bcm line was drawn along the anterior-posterior axis of the tissue in each embryo to calculate mean intensity and heterogeneity (Zulueta-Coarasa and Fernandez-Gonzalez, 2018) of the GFP signal. Here, heterogeneity is defined as:\n\n$$\n\\frac{standarddeviation(intensity)}{mean(intensity)}\n$$\n\nThis measurement captures the variability within each linescan, which increases when there are clear peaks and troughs.\n",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "d090a3ea-ec09-490b-b8c0-4cc77bf1b4b7",
+      "submission_id": "85ce17d9-0e0a-411d-892e-33c843c2cd92",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michel Bagnat, Duke University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.67999.sa1](https://doi.org/10.7554/eLife.67999.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\n[Editors' note: this paper was reviewed by Review Commons.]\n\nAcceptance summary:\n\nIn this manuscript, the authors investigated how the balance of apical and lateral membrane domains is regulated in epithelial cells of the Drosophila embryonic epidermis. They found that the protein Yurt, which controls the function of the apical determinant Crumbs, is regulated by a balance of phosphorylation/de-phosphorylation by PP2A and aPKC. Their results revealed that these interactions reciprocally regulate apical contractility and polarization, thereby providing a homeostatic mechanism that may link cell polarity and tissue mechanics.\n",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f3f67dc3-e5cd-44ec-b742-18f2752638d5",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C1",
+      "claim": "Crumbs is essential for the establishment and growth of the apical domain in Drosophila epithelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The Drosophila polarity protein Crumbs is essential for the establishment and growth of the apical domain in epithelial cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and is supported by citations to established literature in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "509cfdde-a699-4e56-8539-41070b6e1a62",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C2",
+      "claim": "Yurt limits the ability of Crumbs to promote apical membrane growth.",
+      "claim_type": "EXPLICIT",
+      "source": "The protein Yurt limits the ability of Crumbs to promote apical membrane growth, thereby defining proper apical/lateral membrane ratio that is crucial for forming and maintaining complex epithelial structures such as tubes or acini.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by prior work cited in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "e2e171fb-f3ad-4d0a-a1cb-f1bdcf1c738e",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C3",
+      "claim": "Yurt increases Myosin-dependent cortical tension downstream of Crumbs.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that Yurt also increases Myosin-dependent cortical tension downstream of Crumbs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by laser ablation experiments and myosin localization data shown in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "7bb3d7bf-ff30-42d0-8073-bbf9e5222094",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C4",
+      "claim": "Yurt overexpression induces apical constriction in epithelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Yurt overexpression thus induces apical constriction in epithelial cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "e95b5b8c-7636-49ab-bf17-f5be43887cfd",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C5",
+      "claim": "aPKC phosphorylates Yurt, thereby dislodging it from the apical domain and releasing apical tension.",
+      "claim_type": "EXPLICIT",
+      "source": "The kinase aPKC phosphorylates Yurt, thereby dislodging the latter from the apical domain and releasing apical tension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data in Figures 4, 5, and 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "23c08435-80b9-42f6-8d1e-50d9a90c98cb",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C6",
+      "claim": "Pak1 promotes Yurt dephosphorylation through activation of PP2A.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the kinase Pak1 promotes Yurt dephosphorylation through activation of the phosphatase PP2A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data in Figures 7 and 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "e802b6c5-a82e-4f73-992f-af15cfbaf1b4",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C7",
+      "claim": "The Pak1\u2013PP2A module opposes aPKC function and supports Yurt-induced apical constriction.",
+      "claim_type": "EXPLICIT",
+      "source": "The Pak1\u2013PP2A module thus opposes aPKC function and supports Yurt-induced apical constriction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "a31789e9-d03a-477e-a3a2-ab0870b7c89f",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C8",
+      "claim": "Knockdown of yrt expression decreased the retraction velocity after laser ablation by 49% with respect to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of yrt expression decreased the retraction velocity after laser ablation by 49% with respect to controls (Figure 1A, B; Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from laser ablation experiments shown in Figure 1A and 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "596046b6-b42f-47cb-86c7-15c0ecf80a21",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C9",
+      "claim": "Yrt overexpression increased the retraction velocity after ablation by 43%.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Yrt overexpression increased the retraction velocity after ablation by 43% (Figure 1C, D; Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from laser ablation experiments shown in Figure 1C and 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "99c5862f-1065-4535-b3f7-e8865d0b6f6b",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C10",
+      "claim": "yrt knockdown and Yrt overexpression did not affect tissue viscoelasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "yrt knockdown and Yrt overexpression did not affect tissue viscoelasticity: relaxation times were 12 \u00b1 1 seconds for yrt knockdown vs. 11 \u00b1 2 seconds for controls, and 8 \u00b1 1 seconds for Yrt overexpression vs. 10 \u00b1 1 seconds for controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from analysis of laser ablation experiments using a Kelvin-Voigt model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "bbb9171b-0590-4be4-ae4c-ba2ba0b47e64",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C11",
+      "claim": "Yrt positively regulates cortical tension in the Drosophila embryonic epidermis.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our data indicate that Yrt positively regulates cortical tension in the Drosophila embryonic epidermis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the laser ablation experiments shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "9c85200e-78d2-46eb-8a9e-914e256b3eb1",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C12",
+      "claim": "Knockdown of yrt decreased cortical Sqh localization to cell boundaries without affecting Sqh intensity at the apex of epidermal cells from stage 14 of embryogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of yrt decreased cortical Spaghetti squash (Sqh; the Drosophila Myosin regulatory light chain) localization to cell boundaries without affecting Sqh intensity at the apex of epidermal cells from stage 14 of embryogenesis, a time point coinciding with the apical recruitment of Yrt (Laprise et al., 2006), whereas Yrt depletion had no major impact on Myosin distribution at earlier stages of development (Figure 2A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 2A-D.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "38a6a725-c11b-4409-b30c-808a8ed3193d",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C13",
+      "claim": "FLAG-Yrt expression resulted in apical enrichment of Sqh in adult ovarian follicle cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, FLAG-Yrt expression resulted in apical enrichment of Sqh in adult ovarian follicle cells (Figure 2E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 2E and 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "5d6910d4-3d2e-4e0f-993c-965f5e3da733",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C14",
+      "claim": "Yrt controls contractility at the apical domain.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that Yrt controls contractility at the apical domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the myosin localization data in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "97ce838a-0c02-4ffd-9bcf-5a10571e38f7",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C15",
+      "claim": "Mosaic overexpression of FLAG-Yrt induced apical constriction in the embryonic epidermis.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this premise, mosaic overexpression of FLAG-Yrt induced apical constriction in the embryonic epidermis (Figure 3A,B) and the adult ovarian follicular epithelium (mRFP-positive cells; Figure 3C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 3A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "236195c9-18d5-44fb-917a-c41cd821941e",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C16",
+      "claim": "Knockdown of sqh suppressed Yrt-induced apical constriction.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of sqh suppressed Yrt-induced apical constriction in (Figure 3E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3E and 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "3b6dba7c-64ab-49e7-8459-1f9ed43767b7",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C17",
+      "claim": "Yrt promotes Myosin-based changes in cell mechanics to support cortical tension and/or apical constriction in various epithelial tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results establish that Yrt promotes Myosin-based changes in cell mechanics to support cortical tension and/or apical constriction in various epithelial tissues, thereby providing putative molecular insights into how Yrt controls tissue morphogenesis (Franke et al., 2005; Hoover and Bryant, 2002; Laprise et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data in Figures 1-3 and supported by citations to prior work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "b945a6a3-a631-47eb-aa3c-277b0bdfedf3",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C18",
+      "claim": "aPKC phosphorylates Yrt on evolutionarily conserved residues.",
+      "claim_type": "EXPLICIT",
+      "source": "aPKC phosphorylates Yrt on evolutionarily conserved residues (Gamblin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "d4209626-a127-4f11-aa37-7e74e0329750",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C19",
+      "claim": "Phosphorylation by aPKC prevents Yrt oligomerization, thereby antagonizing its ability to support lateral membrane stability and to restrict apical membrane growth.",
+      "claim_type": "EXPLICIT",
+      "source": "This prevents Yrt oligomerization, thereby antagonizing its ability to support lateral membrane stability and to restrict apical membrane growth (Gamblin et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "0cd1f591-e43d-4600-a1f2-dd3872550665",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C20",
+      "claim": "Expression of membrane-targeted aPKC (aPKCCAAX) suppressed FLAG-Yrt-induced apical constriction.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of membrane-targeted aPKC (aPKCCAAX) suppressed FLAG-Yrt-induced apical constriction (Figure 4A\u2013C,H), showing that aPKC has a broad impact on Yrt function and also alters its ability to promote Myosin activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A-C and 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "80b1ffa0-897f-4053-804b-66d6e5ddb163",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C21",
+      "claim": "aPKCCAAX had no effect on apical constriction induced by FLAG-Yrt5A in which the amino acids targeted by aPKC were replaced by non-phosphorylatable alanine residues.",
+      "claim_type": "EXPLICIT",
+      "source": "However, aPKCCAAX had no effect on apical constriction induced by FLAG-Yrt5A in which the amino acids targeted by aPKC were replaced by non-phosphorylatable alanine residues [(Gamblin et al., 2014; Figure 4D,E,H)].",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4D, 4E, and 4H.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "7c223d1a-ef15-4e52-aa62-db9c10a60890",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C22",
+      "claim": "The phosphomimetic Yrt mutant protein FLAG-Yrt5D abolished the ability of Yrt to induce apical constriction.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, mutation of the aPKC phosphorylation sites into aspartic acids to generate the phosphomimetic Yrt mutant protein FLAG-Yrt5D (Gamblin et al., 2014) abolished the ability of Yrt to induce apical constriction (Figure 4F,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4F and 4I.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "bf699059-4c3b-4792-bafa-71ab0e5bf0b4",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C23",
+      "claim": "FLAG-YrtFWA, a Yrt mutant protein unable to oligomerize, failed to sustain apical constriction.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, another FLAG-Yrt mutant protein unable to oligomerize [FLAG-YrtFWA; (Gamblin et al., 2018)] failed to sustain apical constriction (Figure 4G,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4G and 4I.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "a26fa905-4068-4d29-9747-2b59891f1daf",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C24",
+      "claim": "aPKC targets Yrt directly to inhibit its ability to support apical constriction.",
+      "claim_type": "EXPLICIT",
+      "source": "These results argue strongly that aPKC targets Yrt directly to inhibit its ability to support apical constriction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data in Figure 4 showing that phosphomimetic and oligomerization-defective Yrt mutants cannot induce apical constriction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "e6296837-ad6d-4fc6-aa52-59dac9524f1a",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C25",
+      "claim": "Apical accumulation of Yrt was observed in wild-type cells treated with a chemical inhibitor of aPKC or in aPKC knockdown cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed apical accumulation of Yrt in wild-type cells treated with a chemical inhibitor of aPKC or in aPKC knockdown cells (Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 5A and 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "d4c2046a-1472-468c-aa7e-ff8cca320b39",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C26",
+      "claim": "aPKC normally acts to restrict Yrt apical localization.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that aPKC normally acts to restrict Yrt apical localization, which depends on Crb in the embryonic epidermis and in pupal photoreceptor cells (Laprise et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data in Figure 5A-B and supported by citation to prior work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "c5459959-1c3b-4bc4-986d-371a4926511f",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C27",
+      "claim": "Yrt failed to accumulate apically in crb mutant cells treated with the aPKC inhibitor.",
+      "claim_type": "EXPLICIT",
+      "source": "This is also the case in adult follicular epithelial cells, as Yrt failed to accumulate apically in crb mutant cells treated with the aPKC inhibitor (Figure 5C,D; crb mutant cells are positively labeled with GFP).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5C and 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "c70844f9-b3ec-4f26-957f-ff3057d24a14",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C28",
+      "claim": "Yrt was absent from the apical membrane upon inhibition of aPKC in cells exclusively expressing CrbY10A, a mutant Crb protein with an inactivated FBM.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, Yrt was absent from the apical membrane upon inhibition of aPKC in cells exclusively expressing a mutant Crb protein containing an amino acid substitution inactivating its FBM [CrbY10A; (Figure 5E,F; Klebes and Knust, 2000)], which prevents the direct association of Yrt and Crb proteins (Laprise et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5E and 5F, and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "c1e9a277-1286-446d-b6bf-eb0445b94510",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C29",
+      "claim": "Crb plays a pivotal role in Yrt-dependent apical constriction.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that Crb plays a pivotal role in Yrt-dependent apical constriction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data in Figure 5C-F showing that Yrt requires Crb for apical localization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "de8e7e59-4578-4ac2-af23-7062f752ac0c",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C30",
+      "claim": "FLAG-Yrt5A triggered apical constriction in wild-type cells, whereas it was unable to induce this phenotype in Crb-depleted cells or cells expressing specifically CrbY10A.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, FLAG-Yrt5A triggered apical constriction in wild-type cells, whereas it was unable to induce this phenotype in Crb-depleted cells or cells expressing specifically CrbY10A (Figure 5G\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5G-J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "e4054574-33ca-42fd-b853-dace16966e08",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C31",
+      "claim": "Apical localization of Yrt in cells with suboptimal aPKC activity is not sufficient to induce prominently apical constriction.",
+      "claim_type": "EXPLICIT",
+      "source": "Although our data establish that Crb and Yrt cooperate in promoting apical constriction, apical localization of Yrt in cells with suboptimal aPKC activity is not sufficient to induce prominently this phenotype (Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the data in Figure 5A and 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "89c7b6bf-287d-4dbc-8434-e40df8a1ae2c",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C32",
+      "claim": "Yrt and Moe have opposite effects on Myosin-induced cortical tension.",
+      "claim_type": "EXPLICIT",
+      "source": "Yrt and Moe, another FERM-domain protein binding to Crb, have opposite effects on Myosin-induced cortical tension [this study; (Flores-Benitez and Knust, 2015; Laprise et al., 2006; M\u00e9dina et al., 2002; Salis et al., 2017)].",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work and the current study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "9924d4e9-9149-496f-ac7a-fd9462e92673",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C33",
+      "claim": "Inhibition of aPKC in Moe knockdown cells caused apical constriction, in contrast to what was observed in control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, inhibition of aPKC in Moe knockdown cells caused apical constriction, in contrast to what was observed in control cells (Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6A and 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "ff2f5b5f-7c90-4af8-8bc8-e3ebb2e182fd",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C34",
+      "claim": "Expression of active Moe suppressed Yrt-induced apical constriction.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, expression of active Moe (Karagiosis and Ready, 2004) suppressed Yrt-induced apical constriction (Figure 6C,D), thereby confirming that these proteins are involved in a competitive functional interaction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6C and 6D.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "3c291201-a4f8-497f-834b-854af67e9e61",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C35",
+      "claim": "aPKC precludes cortical tension by repressing the Yrt\u2013Crb association.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results establish that aPKC precludes cortical tension by repressing the Yrt\u2013Crb association, and that Moe antagonizes Yrt function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "3e4e4219-f1a1-43db-bff2-2bf78d942ab2",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C36",
+      "claim": "aPKC and Pak1 share common phosphorylation targets, namely the polarity proteins L(2)gl, Bazooka (Baz), Par6, and Crb.",
+      "claim_type": "EXPLICIT",
+      "source": "It was recently shown that aPKC and Pak1 share common phosphorylation targets, namely the polarity proteins L(2)gl, Bazooka (Baz), Par6, and Crb (Aguilar-Aragon et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "deff0314-074e-477e-b22b-0353549bc2f9",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C37",
+      "claim": "It was proposed that aPKC and Pak1 act redundantly on their common substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "It was also proposed that aPKC and Pak1 act redundantly on these substrates (Aguilar-Aragon et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "f3f10b64-b791-42e0-b091-620c4b010656",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C38",
+      "claim": "Overexpression of Par6 together with aPKCCAAX strongly reduced membrane localization of Yrt.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of Par6 together with aPKCCAAX, which accumulated ectopically at the lateral membrane (Figure 7A), strongly reduced membrane localization of Yrt (Figure 7A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 7A and 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "a5880e5e-5c29-4301-bed4-6b5a6b22408e",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C39",
+      "claim": "Expression of membrane-targeted Pak1 (Pak1Myr) suppressed Yrt cortical release induced by aPKC and Par6.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of membrane-targeted Pak1 [Pak1Myr; (Noren et al., 2000)] suppressed Yrt cortical release induced by aPKC and Par6 (Figure 7A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7A and 7B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "014c049c-d0c8-417e-a223-b7c59e31d619",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C40",
+      "claim": "Overexpression of Par6 and aPKCCAAX is associated with an upward shift in the gel migration profile of Yrt.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of Par6 and aPKCCAAX is associated with an upward shift in the gel migration profile of Yrt (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "c82f5617-b84a-4dd7-900a-86467de8508d",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C41",
+      "claim": "The upward shift in Yrt gel migration upon aPKCCAAX overexpression resulted from increased Yrt phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "This resulted from increased Yrt phosphorylation, as treatment of samples with the \u03bb Phosphatase prior to electrophoresis abolished the impact of aPKCCAAX on Yrt gel mobility (Figure 7C; Gamblin et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 7C and citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "87eab854-f6a6-4658-9b5c-1227f09388f9",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C42",
+      "claim": "Pak1Myr decreased Yrt phosphorylation levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to aPKC, Pak1Myr decreased Yrt phosphorylation levels (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "12b131d8-02a7-481d-9f9a-c974b94ce5e1",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C43",
+      "claim": "Yrt phosphorylation levels were increased strongly in PP2A-A mutant embryos, or in wild-type embryos treated with the PP2A inhibitor Cantharidin.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, Yrt phosphorylation levels were increased strongly in PP2A-A mutant embryos, or in wild-type embryos treated with the PP2A inhibitor Cantharidin (Figure 7D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 7D and 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "c5307a17-7e8d-4df9-9b7b-7b64c0c0cc84",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C44",
+      "claim": "Inhibition of PP2A suppressed the impact of Pak1Myr expression on Yrt phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, inhibition of PP2A suppressed the impact of Pak1Myr expression on Yrt phosphorylation (Figure 7F), arguing that PP2A acts downstream of Pak1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 7F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "c621a634-5e71-4ab8-9fc4-b6db81b669a4",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C45",
+      "claim": "Chemical inhibition of Pak1 or PP2A, or knockdown of their expression suppressed apical constriction induced by FLAG-Yrt.",
+      "claim_type": "EXPLICIT",
+      "source": "Chemical inhibition of Pak1 or PP2A, or knockdown of their expression suppressed apical constriction induced by FLAG-Yrt (Figure 8A\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 8A-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "58c3c5de-59aa-46c8-80e3-42b36570ef76",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C46",
+      "claim": "FLAG-Yrt5A maintained its ability to induce apical constriction in the presence of Cantharidin, or when Pak1 or PP2A were depleted.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, FLAG-Yrt5A maintained its ability to induce apical constriction in the presence of Cantharidin, or when Pak1 or PP2A were depleted (Figures 8C\u2013D,E\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 8C-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "7db45636-18af-4319-b604-a69781bd6f9a",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C47",
+      "claim": "Pak1 and PP2A are dispensable for Yrt-induced apical constriction when aPKC target sites on Yrt are mutated to non-phosphorylatable residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Pak1 and PP2A are thus dispensable for Yrt-induced apical constriction when aPKC target sites on Yrt are mutated to non-phosphorylatable residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data in Figure 8 showing that Yrt5A can induce apical constriction even when Pak1 or PP2A are inhibited.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "deca933c-4bec-4217-8201-f0317e822a2e",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C48",
+      "claim": "Pak1 acts upstream of PP2A that antagonizes aPKC function by dephosphorylating Yrt, thereby allowing the latter to induce apical tension.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these data suggest that Pak1 acts upstream of PP2A that antagonizes aPKC function by dephosphorylating Yrt, thereby allowing the latter to induce apical tension (Figure 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the data in Figures 7 and 8, and illustrated in Figure 9.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "329f9cc1-4cc7-4e7c-a99b-c894b7d4d2a4",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C49",
+      "claim": "Loss of Yrt expression increases cell diameter in pupal tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "It was previously shown that loss of Yrt expression increases cell diameter in pupal tissues (40), thus suggesting that Yrt may promote actomyosin-based contraction to define cell width.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "6b77c1c2-0fad-45e5-8e27-c972ea7fc207",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C50",
+      "claim": "The cadherin\u2013catenin complex links cortical actin filaments of neighboring cells indirectly to ensure strong cell\u2013cell adhesion.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the cadherin\u2013catenin complex, a major component of the zonula adherens (ZA), links cortical actin filaments of neighboring cells indirectly to ensure strong cell\u2013cell adhesion (Harris and Tepass, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "3fa493f9-a95e-4c92-a5e1-b64bb7676a65",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C51",
+      "claim": "Association of myosin with ZA-associated actin bundles ensures contractility.",
+      "claim_type": "EXPLICIT",
+      "source": "Association of the hexameric motor protein non-muscle myosin II (hereafter, myosin) with ZA-associated actin bundles ensures contractility (M\u00e8ge and Ishiyama, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "3d37afa9-07db-4bd1-b19b-8f18ff01981a",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C52",
+      "claim": "Epithelial cells require polarization along the apical\u2013basal axis for their ability to support vectorial transport and secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability of epithelial cells to support vectorial transport and secretion adjusts the biochemical environment on both sides of the epithelial layer. These unidirectional functions require the polarization of epithelial cells along the apical\u2013basal axis (Laprise and Tepass, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "b28bdaef-58fb-4c0d-a194-dca0ab134fb3",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C53",
+      "claim": "Reciprocal interactions between the epithelial polarity protein network and ZA components define the functional architecture of individual epithelial cells and shape epithelial tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Reciprocal interactions between the epithelial polarity protein network and ZA components not only define the functional architecture of individual epithelial cells, but also shape epithelial tissues (Tepass, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "da20c9eb-d277-46f3-8f58-6d60c45aa336",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C54",
+      "claim": "Formation of specialized epithelial structures, such as tubes or acini, results from concerted myosin-dependent apical constriction of a group of cells within epithelial sheets.",
+      "claim_type": "EXPLICIT",
+      "source": "A classic example is the formation of specialized epithelial structures, such as tubes or acini, resulting from concerted myosin-dependent apical constriction of a group of cells within epithelial sheets (Martin and Goldstein, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "e932d7b8-ff06-4890-9181-e0429fe2a9be",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C55",
+      "claim": "Crumbs acts as an apical determinant in Drosophila epithelia.",
+      "claim_type": "EXPLICIT",
+      "source": "The apically localized protein Crumbs (Crb) acts as an apical determinant in Drosophila epithelia (Pocha and Knust, 2013; Tepass, 2012; Tepass et al., 1990; Wodarz et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "e14beb5b-500c-4c35-93a6-a59ee2cc9142",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C56",
+      "claim": "The cytoplasmic tail of Crb contains a PDZ-domain binding motif (PBM) and a FERM-domain binding motif (FBM).",
+      "claim_type": "EXPLICIT",
+      "source": "The cytoplasmic tail of Crb contains a PSD95/Dlg1/ZO-1 (PDZ)-domain binding motif (PBM), and a Four point one, Ezrin, Radixin, Moesin (FERM)-domain binding motif (FBM) (Klebes and Knust, 2000; Klose et al., 2013; Pocha and Knust, 2013; Tepass, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "9257c261-f524-4b9b-921f-8bd74da5b8f9",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C57",
+      "claim": "The PBM of Crb recruits PDZ-containing proteins such as Stardust (Sdt), which cooperates with Crb in establishing the apical membrane and promoting its growth.",
+      "claim_type": "EXPLICIT",
+      "source": "The PBM recruits PDZ-containing proteins such as Stardust (Sdt), which cooperates with Crb in establishing the apical membrane and promoting its growth (Bachmann et al., 2001; Pocha and Knust, 2013; Tepass and Knust, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "21ac0fa3-88b5-4a0d-bbdc-5f10fe721ce8",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C58",
+      "claim": "The FBM of Crb interacts with several FERM domain proteins, including Yurt (Yrt).",
+      "claim_type": "EXPLICIT",
+      "source": "The FBM interacts with several FERM domain proteins, including Yurt (Yrt) (Laprise et al., 2006; Tepass, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "9403a057-6e4b-44a4-9486-545d630f2aab",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C59",
+      "claim": "Yrt is localized to the lateral membrane throughout embryogenesis, and supports the stability of this membrane domain during organogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter is localized to the lateral membrane throughout embryogenesis, and supports the stability of this membrane domain during organogenesis (Laprise et al., 2006; Laprise et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "b32040e8-2a7f-4b8c-968c-51648c71bd2a",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C60",
+      "claim": "During terminal differentiation of epithelial cells derived from the ectoderm, Yrt also occupies the apical membrane due to a direct interaction with Crb.",
+      "claim_type": "EXPLICIT",
+      "source": "During terminal differentiation of epithelial cells derived from the ectoderm, Yrt also occupies the apical membrane due to a direct interaction with Crb (Laprise et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "f58d7f54-63b2-49b9-87aa-4744ef1eac68",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C61",
+      "claim": "The apical recruitment of Yrt limits Crb-dependent apical membrane growth to establish a specific apical/basolateral membrane size ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "The apical recruitment of Yrt limits Crb-dependent apical membrane growth to establish a specific apical/basolateral membrane size ratio, which is crucial to defining the morphometric parameters of developing epithelial structures (Laprise et al., 2006; Laprise et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "18ec1172-8100-489f-a0ee-c3a47870c83e",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C62",
+      "claim": "Crb displays cooperative functional interactions with aPKC and Par-6.",
+      "claim_type": "EXPLICIT",
+      "source": "Crb displays cooperative functional interactions with atypical protein kinase C (aPKC) and its binding partner Partitioning defective protein 6 (Par-6) (Kempkens et al., 2006; Morais-de-S\u00e1 et al., 2010; Tepass, 2012; Whitney et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "2effa91a-18e2-48d6-8718-c550e746d8ea",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C63",
+      "claim": "aPKC and Par-6 act downstream of Cdc42 to promote phospho-dependent inhibition of lateral polarity proteins such as L(2)gl and Yrt.",
+      "claim_type": "EXPLICIT",
+      "source": "These latter apical proteins act downstream of the small GTPase Cdc42 to promote phospho-dependent inhibition of lateral polarity proteins such as Lethal (2) giant larvae [L(2)gl] and Yrt (Fletcher et al., 2012; Gamblin et al., 2014; Hutterer et al., 2004; Laprise and Tepass, 2011; Peterson et al., 2004; Tepass, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "943f0149-3f26-4212-a4d9-ef8b07451b42",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C64",
+      "claim": "L(2)gl and Yrt repress aPKC function to prevent the spread of apical characteristics to the lateral domain.",
+      "claim_type": "EXPLICIT",
+      "source": "In return, L(2)gl and Yrt repress aPKC function to prevent the spread of apical characteristics to the lateral domain (Bilder et al., 2003; Drummond and Prehoda, 2016; Fletcher et al., 2012; Gamblin et al., 2014; Hutterer et al., 2004; Laprise et al., 2006; Laprise et al., 2009; Tanentzapf and Tepass, 2003; Yamanaka et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "bd9cc615-e7a0-4037-aeef-be9b212306d7",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C65",
+      "claim": "Mutual antagonism between apical and lateral protein modules establishes a sharp boundary between their respective membrane domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutual antagonism between apical and lateral protein modules thus establishes a sharp boundary between their respective membrane domains (Fletcher et al., 2012; Laprise and Tepass, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "d22477d3-bed1-4e16-af33-b8d03ef29983",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C66",
+      "claim": "Cdc42 activates p21-activated kinase 1 (Pak1), which has substrates in common with aPKC in fly epithelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Cdc42 also activates p21-activated kinase 1 (Pak1), which has substrates in common with aPKC in fly epithelial cells (Aguilar-Aragon et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "e01138db-e18f-44a2-a66d-e5b0483f66ba",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C67",
+      "claim": "The mammalian Yrt orthologs EPB41L4B and EPB41L5 support cell migration and invasion.",
+      "claim_type": "EXPLICIT",
+      "source": "The mammalian Yrt orthologs EPB41L4B and EPB41L5 (also known as EHM2/LULU2 and YMO1/LULU, respectively) support cell migration and invasion, and EPB41L5 is also essential for the epithelial\u2013mesenchymal transition (EMT) (Handa et al., 2018; Hashimoto et al., 2016; Hirano et al., 2008; Jeong et al., 2019; Lee et al., 2007; Otsuka et al., 2016; Saller et al., 2019; Wang et al., 2006; Yu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "4fad73c2-5325-402d-ad8e-956f8a7b0c03",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C68",
+      "claim": "Crb and human CRUMBS3 (CRB3) both repress EMT.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that Crb and human CRUMBS3 (CRB3) both repress EMT (Campbell et al., 2011; Whiteman et al., 2008), these observations are consistent with the aforementioned concept that fly and mammalian Yrt proteins repress the Crb/CRB3-containing apical machinery (Laprise et al., 2006; Laprise and Tepass, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "96b5322f-7bb7-4cec-8434-2571b36d38f1",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C69",
+      "claim": "Depletion of Crb or Yrt causes similar phenotypes in pupal wing cells, including fragmented DE-cadherin staining and altered F-Actin and Myosin distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "However, recent findings have shown that depletion of Crb or Yrt causes similar phenotypes in pupal wing cells. Specifically, DE-cadherin (DE-cad) staining is fragmented, and F-Actin and Myosin distribution is altered in the absence of these proteins (Salis et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "cafaa711-1f64-438f-9e32-5649a40fc194",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C70",
+      "claim": "EPB41L4B and EPB41L5 promote apical constriction.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this model, it was shown that EPB41L4B and EPB41L5 promote apical constriction (Nakajima and Tanoue, 2010; Nakajima and Tanoue, 2011; Nakajima and Tanoue, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "e30ba13a-01f5-4977-b4e4-f347f7354e04",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C71",
+      "claim": "Drosophila Crb organizes the actomyosin cytoskeleton at cell\u2013cell contacts, thereby supporting ZA integrity and tissue morphogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to EPB41L4B and EPB41L5, Drosophila Crb organizes the actomyosin cytoskeleton at cell\u2013cell contacts, thereby supporting ZA integrity and tissue morphogenesis (Letizia et al., 2011; Silver et al., 2019; Tepass, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "e1f50fd7-979c-4056-a7ba-b0d1b81e8686",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C72",
+      "claim": "Crb fulfils its function in organizing the actomyosin cytoskeleton in ectodermal cells in part through the apical recruitment of Cysts, which activates the Rho1\u2013Rho kinase (Rok)\u2013Myosin pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Crb fulfils this function in ectodermal cells in part through the apical recruitment of the Guanine exchange factor (GEF) Cysts (Cyst), which activates the Rho1\u2013Rho kinase (Rok)\u2013Myosin pathway (Arnold et al., 2017; Rubin et al., 2000; Silver et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "85af733a-993f-4cb3-87ee-cd11d505e5d1",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C73",
+      "claim": "Crb stabilizes adherens junctions by repressing Myosin activity in amnioserosa cells, a function that requires Moesin.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, other studies have reported that Crb stabilizes adherens junctions by repressing Myosin activity in amnioserosa cells, a function that requires the FERM-domain protein Moesin (Moe) (Flores-Benitez and Knust, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "b9451adf-d4fe-4c0e-be4c-a3a5e0f1ccae",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C74",
+      "claim": "Crb reduces the membrane residence time of Rok, thereby preventing the formation of a supracellular actomyosin cable in cells expressing high Crb levels at the salivary gland placode boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Crb was shown to reduce the membrane residence time of Rok, thereby preventing the formation of a supracellular actomyosin cable in cells expressing high Crb levels at the salivary gland placode boundary where Crb distribution is anisotropic (R\u00f6per, 2012; Sidor et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "acb6ee58-7be0-4d1f-9226-a8bb06d39c2f",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C75",
+      "claim": "The functional relationship linking Crb and Myosin is complex, and likely context-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "These conflicting observations show that the functional relationship linking Crb and Myosin is complex, and likely context-dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the conflicting observations in the literature about Crb's effects on Myosin.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "b37c3103-4b90-4f0a-ac86-9503971d65c6",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C76",
+      "claim": "Crb recruits Yrt to the apical membrane to induce Myosin-dependent apical tension in Drosophila epithelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that Crb recruits Yrt to the apical membrane to induce Myosin-dependent apical tension in Drosophila epithelial cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by data in Figures 1-5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "4d70c7b1-0022-4809-a41c-c8a0e19a936e",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C77",
+      "claim": "The association of Crb and Yrt and the ensuing increased Myosin activity is repressed by aPKC-dependent phosphorylation of Yrt.",
+      "claim_type": "EXPLICIT",
+      "source": "This association and the ensuing increased Myosin activity is repressed by aPKC-dependent phosphorylation of Yrt.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by data in Figures 4, 5, and 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "a6e9df23-5323-41ba-9c2a-05a600d3f175",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C78",
+      "claim": "Pak1 maintains the pool of unphosphorylated Yrt via PP2A, thereby supporting Yrt-dependent cortical tension.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to aPKC, Pak1 maintains the pool of unphosphorylated Yrt via Protein phosphatase 2A (PP2A), thereby supporting Yrt-dependent cortical tension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by data in Figures 7 and 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "d2e05a53-2cb7-4807-bf83-af11c5820ed9",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C79",
+      "claim": "Myosin-mediated cell contractility impacts a broad range of cellular processes driving tissue morphogenesis, including apical constriction, convergent extension, and ZA establishment and maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "Myosin-mediated cell contractility impacts a broad range of cellular processes driving tissue morphogenesis, including apical constriction, convergent extension, and ZA establishment and maintenance (Miao and Blankenship, 2020; Perez-Vale and Peifer, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "79d83d5e-b2c9-4bfd-b86a-c1d642f395db",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C80",
+      "claim": "Loss of Yrt expression increases cell diameter in pupal wing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, a recent study showed that loss of Yrt expression increases cell diameter in pupal wing cells (Salis et al., 2017), thus suggesting that Yrt controls the actomyosin network throughout the fly life cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "c0e09c9b-c6d4-4ec2-93dd-332a69803ee3",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C81",
+      "claim": "Yrt's function in controlling actomyosin organization is evolutionarily conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "This function is evolutionarily conserved, as the mammalian Yrt proteins EPB41L4B and EPB41L5 impact actomyosin organization and stimulate apical constriction (Nakajima and Tanoue, 2010; Nakajima and Tanoue, 2011; Nakajima and Tanoue, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "3fa90389-9848-4c43-937b-8031c04ae51d",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C82",
+      "claim": "Regulation of actomyosin contractility by Yrt likely impacts ZA stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Regulation of actomyosin contractility by Yrt likely impacts ZA stability, as suggested by the fragmented distribution of ZA components in Yrt-depleted cells (Salis et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from prior work showing fragmented ZA components in Yrt-depleted cells.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "07bf4b49-8da2-4acc-a0b1-6117468324ec",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C83",
+      "claim": "Yrt-induced apical constriction depends on Crb, which is also required for organization of junctional Myosin assembly and ZA stability.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in line with the fact that Yrt-induced apical constriction depends on Crb, which is also required for organization of junctional Myosin assembly and ZA stability (Pocha and Knust, 2013; Silver et al., 2019; Tepass, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work and supported by data in Figure 5.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "0c348115-8aa7-458d-b7ed-aabd3833781e",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C84",
+      "claim": "Yrt acts downstream of Crb to specifically promote actomyosin contractility at the expense of other Crb-dependent roles such as apical membrane growth.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that Yrt is not an inhibitor of Crb function, but rather acts downstream of Crb to specifically promote actomyosin contractility at the expense of other Crb-dependent roles such as apical membrane growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model proposed by the authors based on their findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "73df7b59-fcc6-4092-9b6f-fca68dc21a4a",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C85",
+      "claim": "The recruitment of Yrt may cause steric hindrance on the short cytoplasmic tail of Crb, thereby preventing the binding of Crb effectors mediating apical membrane growth.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that the recruitment of Yrt causes steric hindrance on the short cytoplasmic tail of Crb, thereby preventing the binding of Crb effectors mediating apical membrane growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative mechanism proposed by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "6d420b36-25ac-4155-bf9e-a829cccbfb6c",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C86",
+      "claim": "The numerous functions of Crb are specified by the presence or absence of different FERM domain proteins, which competitively bind to Crb.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model is that the numerous functions of Crb are specified by the presence or absence of different FERM domain proteins, which competitively binds to Crb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model proposed by the authors based on their findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "73873144-9c29-4787-9894-cbfbfccc13e5",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C87",
+      "claim": "Crb controls cell growth through recruitment of the FERM domain protein Expanded (Ex).",
+      "claim_type": "EXPLICIT",
+      "source": "This paradigm is further supported by previous findings showing that Crb controls cell growth through recruitment of the FERM domain protein Expanded (Ex) (Ling et al., 2010; Robinson et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "f4688dd3-21c7-4a6c-8fc1-55e11c27a880",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C88",
+      "claim": "Fine regulation of the incorporation of different FERM-domain proteins within distinct Crb complexes dictates the biological output downstream of Crb.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, fine regulation of the incorporation of different FERM-domain proteins within distinct Crb complexes most likely dictates the biological output downstream of Crb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data and prior work showing that different FERM proteins have different effects downstream of Crb.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "4f11bba5-5171-4b24-b758-f33a8ef8dd9e",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C89",
+      "claim": "aPKC prevents the Crb\u2013Yrt association through direct phosphorylation of Yrt, thereby excluding Yrt from the apical membrane and repressing Yrt-induced apical constriction.",
+      "claim_type": "EXPLICIT",
+      "source": "Our discoveries indicate that aPKC prevents the Crb\u2013Yrt association through direct phosphorylation of Yrt. Thereby, aPKC excludes Yrt from the apical membrane and represses Yrt-induced apical constriction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data in Figures 4, 5, and 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "14c777a9-2c9e-4450-8e04-54fe4069326e",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C90",
+      "claim": "aPKC inhibits the ability of Yrt to restrict Crb-dependent apical membrane growth.",
+      "claim_type": "EXPLICIT",
+      "source": "aPKC also inhibits the ability of Yrt to restrict Crb-dependent apical membrane growth (Gamblin et al., 2014; Gamblin et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "a1c7aa63-0bbb-4f24-9e2f-5dfc2ae1b9ea",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C91",
+      "claim": "Phosphorylation of Yrt on aPKC target sites prevents Yrt self-association.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that phosphorylation of Yrt on aPKC target sites prevents Yrt self-association, and that oligomerization-defective Yrt mutant proteins are unable to bind Crb (Gamblin et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "0bad7177-9677-4c37-aa96-37f108de02ea",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C92",
+      "claim": "Phospho-dependent repression of Yrt oligomerization is a key mechanism by which aPKC controls apical\u2013basal polarity, cortical tension, and epithelial cell architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these studies establish that the phospho-dependent repression of Yrt oligomerization is a key mechanism by which aPKC controls apical\u2013basal polarity, cortical tension, and epithelial cell architecture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the current study and prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "6ca425a0-9f8b-4e64-abce-7a89d10f7151",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C93",
+      "claim": "Ectopic localization of aPKC to the lateral domain dislodges Yrt from the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data also show that ectopic localization of aPKC to the lateral domain dislodges Yrt from the membrane, indicating that aPKC controls both Crb-dependent and Crb-independent membrane localization of Yrt.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figure 7A and 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "703d3300-eb7a-4d01-913c-925ceb8b6972",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C94",
+      "claim": "Phosphorylation of Yrt by aPKC may generate electrostatic repulsion with negatively charged membrane phospholipids.",
+      "claim_type": "EXPLICIT",
+      "source": "One possibility is that phosphorylation of Yrt by aPKC generates electrostatic repulsion with negatively charged membrane phospholipids, as described for other aPKC substrates (Bailey and Prehoda, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative mechanism proposed by the authors based on prior work with other aPKC substrates.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "683c2d64-d0c7-492c-9edf-e72cd1654fdf",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C95",
+      "claim": "Cdc42 is a key regulator of epithelial cell polarity acting upstream of aPKC and Pak1.",
+      "claim_type": "EXPLICIT",
+      "source": "Cdc42 is a key regulator of epithelial cell polarity acting upstream of aPKC and Pak1 (Aguilar-Aragon et al., 2018; Pichaud et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "5313d4bf-431c-4e0e-87d8-84980d5c853a",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C96",
+      "claim": "aPKC and Pak1 share common substrates and have redundant functions in apical\u2013basal polarity regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "These kinases share common substrates and have redundant functions in apical\u2013basal polarity regulation (Aguilar-Aragon et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "ba855547-c4dd-4f94-9954-2931b2da67d8",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C97",
+      "claim": "Yrt sequence does not contain a Pak1 consensus motif.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Yrt sequence does not contain a Pak1 consensus motif.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation about Yrt sequence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "a20afc7e-1ea6-4783-b218-a29925f5580e",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C98",
+      "claim": "Yrt is not a direct substrate of Pak1.",
+      "claim_type": "EXPLICIT",
+      "source": "This argues that Yrt is not a direct substrate of Pak1, and that this kinase does not phosphorylate the full complement of aPKC substrates within the polarity protein network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that Pak1 decreases Yrt phosphorylation and that Yrt lacks a Pak1 consensus motif.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "eb243cf0-dae0-410c-b897-fe9d654adddd",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C99",
+      "claim": "Pak1 promotes the dephosphorylation of aPKC target sites on Yrt to support its functions.",
+      "claim_type": "EXPLICIT",
+      "source": "In the light of all of this evidence, we propose that Pak1 promotes the dephosphorylation of aPKC target sites on Yrt to support its functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data in Figures 7 and 8.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "f11c5224-2207-4d1d-af94-d85fbc3fc203",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C100",
+      "claim": "Pak1 acts through PP2A to promote Yrt dephosphorylation in polarized epithelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We provide evidence that Pak1 acts through the phosphatase PP2A to achieve this function in polarized epithelial cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figures 7 and 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "fb19b339-2ce6-44af-95c3-13d3b6097c07",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C101",
+      "claim": "PP2A opposes aPKC and Par-1 signaling to control polarization of neuroblasts and photoreceptor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "PP2A thus has a broad role in cell polarity, as it opposes aPKC and Par-1 signaling to control polarization of neuroblasts and photoreceptor cells (Krahn et al., 2009; Nam et al., 2007; Ogawa et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "d13f30c4-6f85-4554-b3d6-13f296179365",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C102",
+      "claim": "In neuroblasts and photoreceptor cells, PP2A targets Par6 and/or Baz.",
+      "claim_type": "EXPLICIT",
+      "source": "In these cell types, PP2A targets Par6 and/or Baz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "ee9e49eb-36e0-45ee-b6db-9f60b4f00d92",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C103",
+      "claim": "Pak1 may decrease the phosphorylation level of Baz and/or Par6 in epithelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that Pak1 may also decrease the phosphorylation level of Baz and/or Par6 in epithelial cells, although the kinase domain of Pak1 can phosphorylate Baz and Par6 in vitro (Aguilar-Aragon et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the finding that Pak1 activates PP2A, which targets Baz and Par6 in other cell types.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "dfd1cad6-9d17-4ecd-9e2d-432c3d18fab7",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C104",
+      "claim": "Activation of aPKC and Pak1 downstream of Cdc42 has redundant activity on a subset of polarity proteins [e.g. Par6, L(2)gl, Baz], while having opposite effects on Yrt and apical tension.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining our data with previous findings (Aguilar-Aragon et al., 2018) suggests that activation of aPKC and Pak1 downstream of Cdc42 has redundant activity on a subset of polarity proteins [e.g. Par6, L(2)gl, Baz], while having opposite effects on Yrt and apical tension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the current study and prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "3c45e38d-0a91-4b01-ae32-5f54c0e4a86d",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C105",
+      "claim": "The work reveals a novel mechanism regulating cortical tension at the apical domain, which plays a crucial role in developing and adult epithelia.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our work reveals a novel mechanism regulating cortical tension at the apical domain, which plays a crucial role in developing and adult epithelia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "99f69895-73d0-4c64-8f6c-01e2200d6b32",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C106",
+      "claim": "Yrt contributes to the plasticity of Crb function rather than acting as an obligatory inhibitor of the apical protein machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "We also refine our understanding of the functional relationship linking Crb and Yrt by establishing that the latter contributes to the plasticity of Crb function rather than acting as an obligatory inhibitor of the apical protein machinery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "6a9ad952-3cf9-4c0d-a637-b7b69799da20",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C107",
+      "claim": "The roles of aPKC and Pak1 are not fully redundant in epithelial cells, and these kinases have opposite effects on cortical tension.",
+      "claim_type": "EXPLICIT",
+      "source": "We also highlight that the roles of aPKC and Pak1 are not fully redundant in epithelial cells, and that these kinases have opposite effects on cortical tension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "86363a9a-cd86-40e1-a02b-afd2284646f3",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "claim_id": "C108",
+      "claim": "Pak1 can decrease protein phosphorylation in epithelial cells through PP2A.",
+      "claim_type": "EXPLICIT",
+      "source": "We also provide evidence that Pak1 can decrease protein phosphorylation in epithelial cells through PP2A, thereby consolidating the broad role played by this phosphatase in cell polarity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0e46d81e-a52b-40a7-8e91-ea2df953b49e",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Yurt positively regulates Myosin-dependent cortical tension in Drosophila embryonic epidermis. Knockdown of yrt decreased retraction velocity after laser ablation by 49%, while Yrt overexpression increased it by 43%, without affecting tissue viscoelasticity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C10 provide quantitative laser ablation data with appropriate controls and statistical analysis (Mann-Whitney test). The Kelvin-Voigt model analysis (C10) properly distinguishes tension from viscoelasticity. Sample sizes appear adequate (n=12-17 junctions from different embryos), and the bidirectional effects (loss vs. gain of function) provide strong converging evidence for C11.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "98c5610f-7fd8-4026-9e11-97bbc2975407",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Yurt controls Myosin localization at the apical domain. Yrt knockdown decreased cortical Sqh (Myosin regulatory light chain) localization at cell boundaries in stage 14 embryos, while FLAG-Yrt expression enriched Sqh apically in ovarian follicle cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C13 are supported by immunofluorescence data in Figure 2 showing stage-specific and tissue-specific effects. The temporal specificity (stage 14 vs. earlier stages) and spatial specificity (cortical vs. apical) are well-documented. Statistical significance is reported (p<0.001). The inference in C14 is reasonable given the localization data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "a8e5950d-f3f0-4e17-b5aa-ce701ee24222",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Yurt overexpression induces Myosin-dependent apical constriction in multiple epithelial tissues. Mosaic FLAG-Yrt expression caused apical constriction in embryonic epidermis and ovarian follicular epithelium, which was suppressed by sqh knockdown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C16 provide data from multiple tissue types (embryonic and adult) with appropriate controls and quantification (Figure 3). The sqh knockdown rescue experiment (C16) establishes Myosin-dependence. Statistical analysis shows significance (p\u22640.0001, one-way ANOVA). The conclusion C17 appropriately integrates findings from Figures 1-3.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "be87c351-f87d-4846-9646-49a4e0e4a62e",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "aPKC directly phosphorylates Yurt to inhibit its ability to induce apical constriction. Expression of aPKCCAAX suppressed FLAG-Yrt-induced apical constriction, but had no effect on non-phosphorylatable Yrt5A. Phosphomimetic Yrt5D and oligomerization-defective YrtFWA mutants failed to induce apical constriction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C23 provide strong genetic evidence using phospho-site mutants (Figure 4). The use of non-phosphorylatable (5A), phosphomimetic (5D), and oligomerization-defective (FWA) mutants provides converging evidence. Prior work (C18-C19) establishes the phosphorylation sites. Statistical significance is shown (p\u22640.0001). The inference C24 is well-supported by the mutant analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "727d07f0-79f9-48b4-9c2b-e43518810dec",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "aPKC restricts Yurt apical localization through a Crumbs-dependent mechanism. Inhibition of aPKC or aPKC knockdown caused apical accumulation of Yrt in wild-type cells, but not in crb mutant cells or cells expressing CrbY10A. FLAG-Yrt5A required Crb for apical constriction activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25, C27-C28, C30 provide complementary genetic and pharmacological evidence (Figure 5). The use of crb null mutants and CrbY10A (FBM-defective) mutants establishes Crb-dependence. Quantification shows statistical significance (p\u22640.001-0.0001). However, C31 notes that apical Yrt localization alone is insufficient for prominent apical constriction, suggesting additional factors are required.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "c221904d-1eb7-466a-9bb9-1a847172ba20",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Yurt and Moesin have opposite effects on Myosin-induced cortical tension downstream of Crumbs. aPKC inhibition in Moe knockdown cells caused apical constriction, and active Moe suppressed Yrt-induced apical constriction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C34 provide genetic interaction data (Figure 6) showing competitive interaction between Yrt and Moe. Statistical significance is demonstrated (p\u22640.05-0.0001). The conclusion C35 integrates findings from Figures 5-6. However, the mechanism of competition is not directly demonstrated\u2014it could involve competitive binding to Crb or other indirect mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "17a38b40-6323-45ee-b49c-2a6e4a6e9c2a",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Pak1 opposes aPKC function by decreasing Yurt phosphorylation. Overexpression of Par6 and aPKCCAAX reduced membrane Yrt and increased Yrt phosphorylation, while Pak1Myr suppressed these effects and decreased Yrt phosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39 show opposing effects of aPKC and Pak1 on Yrt localization (Figure 7A-B). Claims C40-C42 demonstrate opposing effects on Yrt phosphorylation using Western blots with lambda phosphatase controls (Figure 7C). The biochemical data directly support the opposing activities. Statistical significance is shown for localization data (p\u22640.0001).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "f3f68a6b-7d23-457e-830e-7ed80f988bfa",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Pak1 promotes Yurt dephosphorylation through activation of PP2A. Yrt phosphorylation increased in PP2A-A mutants and upon PP2A inhibition. PP2A inhibition suppressed the effect of Pak1Myr on Yrt phosphorylation, indicating PP2A acts downstream of Pak1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44 provide genetic and pharmacological evidence that PP2A acts downstream of Pak1 (Figure 7D-F). The epistasis experiment (C44) is particularly strong evidence. Western blot data show clear phosphorylation shifts. However, the mechanism by which Pak1 activates PP2A is not demonstrated\u2014this relies on prior work cited (Staser et al., 2013) showing Pak1 can activate PP2A in other systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "ac705aac-889c-4c7b-824d-8231cfa15563",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The Pak1-PP2A module is required for Yurt-induced apical constriction but is dispensable when aPKC phosphorylation sites are mutated. Chemical inhibition or knockdown of Pak1 or PP2A suppressed FLAG-Yrt-induced apical constriction, but FLAG-Yrt5A maintained activity under these conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 provide comprehensive functional data (Figure 8) using chemical inhibitors and genetic knockdowns. The key control (C46) showing Yrt5A is insensitive to Pak1/PP2A inhibition strongly supports the model that Pak1-PP2A acts by opposing aPKC phosphorylation. Statistical significance is demonstrated (p\u22640.05-0.0001). Sample sizes appear adequate (n\u226516).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "a81f1972-4fcb-4641-ae2a-1d2193ab0bfd",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Yurt is not a direct substrate of Pak1. Yrt sequence lacks a Pak1 consensus motif, and Pak1 decreases rather than increases Yrt phosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C97 is a straightforward sequence analysis observation. Claim C98 is a reasonable inference based on: (1) lack of consensus motif, (2) Pak1 decreasing phosphorylation (C42), and (3) PP2A acting downstream of Pak1 (C44). However, the absence of a consensus motif does not absolutely rule out direct phosphorylation, as kinases can sometimes phosphorylate non-consensus sites.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "9e8a3e9c-e6e2-4be8-94ab-a1b973dc2e52",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors propose a model where Yurt acts downstream of Crumbs to promote actomyosin contractility rather than inhibiting Crb function. Different FERM domain proteins competitively bind Crb to specify distinct biological outputs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C84-C86 are explicitly labeled as models and speculation by the authors. While the data support Yrt promoting contractility downstream of Crb (C76, C83), the proposed mechanisms (steric hindrance in C85, competitive binding in C86) are speculative. The model is consistent with the data but lacks direct mechanistic evidence. Additional experiments (e.g., structural studies, direct binding competition assays) would be needed to test these specific mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "abc2ff55-6472-41d6-a66a-7f6aa83d571f",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors suggest that Pak1 may decrease phosphorylation of Baz and/or Par6 in epithelial cells through PP2A, and that aPKC and Pak1 have redundant activity on some polarity proteins but opposite effects on Yurt.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C103 is explicitly speculative, extrapolating from PP2A targeting these proteins in other cell types. Claim C104 integrates current findings with prior work but the proposed differential effects on different substrates require direct testing. The evidence for opposite effects on Yrt is strong (C38-C42), but the claim about redundancy on other substrates relies primarily on cited work (C36-C37) rather than data in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "df861318-6815-4156-827a-3de5d1bc5bf8",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims about Crumbs and Yurt function in epithelial polarity. Crb is essential for apical domain establishment and growth. Yrt limits Crb-dependent apical membrane growth and localizes to both lateral and apical membranes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are well-established background claims (C1-C2, C55-C61) supported by extensive prior literature as indicated by multiple citations. These provide necessary context but are not novel findings of this study. The claims are appropriately cited and consistent with established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "93bb7e35-0db2-4c9f-acd7-71a30a990a8b",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background claims about epithelial cell polarity, cell adhesion, and the polarity protein network. These include the roles of cadherin-catenin complex, myosin, aPKC, Par-6, Cdc42, and Pak1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are established background claims (C50-C54, C62-C66) providing context for the study. All are appropriately cited to prior literature. These represent accepted knowledge in the epithelial polarity field rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "5bbdb7a8-001c-4049-9ade-b23a1c1daec4",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background claims about mammalian Yrt orthologs and the complex relationship between Crumbs and Myosin. EPB41L4B/EPB41L5 support cell migration and EMT. Crb has context-dependent effects on Myosin activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These background claims (C67-C75) are well-supported by citations to prior work. Claim C75 appropriately acknowledges conflicting observations in the literature about Crb-Myosin relationships, which motivates the current study. These provide important context but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "bd4b47c1-c053-4992-b8bb-70a2ee9197e4",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Discussion claims about the broader significance of Yrt controlling actomyosin contractility. Myosin-mediated contractility impacts multiple morphogenetic processes. Yrt's function in controlling actomyosin is conserved and likely impacts ZA stability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C81 appropriately cite prior work. Claim C82 is a reasonable inference based on prior observations of fragmented ZA components in Yrt-depleted cells (cited). These discussion points appropriately contextualize the findings but are not primary results of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "27fbf664-d233-46d5-a219-16db6e1c3200",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Summary and integration of findings about aPKC regulation of Yurt. aPKC phosphorylates Yrt to prevent Crb-Yrt association, exclude Yrt from apical membrane, and inhibit multiple Yrt functions including apical constriction and restriction of apical membrane growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C89-C93) integrate findings from the current study (Figures 4-5, 7) with prior work (C90-C91 cite previous studies). Claim C92 appropriately synthesizes the broader significance. Claim C93 adds a new observation about aPKC controlling Crb-independent Yrt localization (Figure 7A-B). The integration is well-supported by the collective evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "5e197c71-b664-460a-8bd3-46e8289c9879",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Speculation that aPKC phosphorylation of Yurt may generate electrostatic repulsion with membrane phospholipids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C94 is explicitly speculative, proposing a mechanism based on analogy to other aPKC substrates (cited). While plausible, this mechanism is not tested in the current study. Direct evidence would require biophysical measurements of Yrt-membrane interactions with phosphorylated vs. unphosphorylated Yrt.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "78f73178-801d-4925-ae95-185deee748ad",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Background and discussion claims about Cdc42, aPKC, Pak1, and PP2A in cell polarity. Cdc42 acts upstream of aPKC and Pak1. PP2A opposes aPKC signaling in multiple cell types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C95-C96, C101-C102) are appropriately cited to prior literature. They provide important context for interpreting the current findings but are not novel results of this study. The claims accurately represent the cited work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "f079ff2a-ada2-415e-a23c-910477390013",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Summary statements of the study's contributions. The work reveals a novel mechanism regulating cortical tension, refines understanding of Crb-Yrt relationship, shows aPKC and Pak1 are not fully redundant, and demonstrates Pak1 can decrease phosphorylation through PP2A.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These summary claims (C105-C108) appropriately synthesize the major findings of the study. They are well-supported by the collective evidence presented in the results. The claims accurately represent the significance and novelty of the work without overstating the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "79f49c5f-dfc3-4be8-9d99-b231e6d52499",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Prior observation that loss of Yrt expression increases cell diameter in pupal tissues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C49 appropriately cites prior work and provides motivation for testing whether Yrt promotes actomyosin-based contraction. This is background context rather than a novel finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "3cc2269e-539e-49aa-ad8d-b72b24d110ae",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Summary of major findings: Crb recruits Yrt to the apical membrane to induce Myosin-dependent apical tension, which is repressed by aPKC phosphorylation of Yrt. Yrt-induced apical constriction depends on Crb.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These summary claims (C76-C77, C83) integrate findings from multiple experiments (Figures 1-5). The evidence includes laser ablation (Figure 1), myosin localization (Figure 2), apical constriction assays (Figures 3-5), and genetic interactions with Crb mutants (Figure 5). The conclusions are well-supported by converging lines of evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "d8874088-6736-4a15-b1d1-fd5a880e405b",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Prior findings that aPKC and Pak1 share common phosphorylation targets and were proposed to act redundantly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37 appropriately cite recent prior work (Aguilar-Aragon et al., 2018). These provide important context for the current study, which challenges the complete redundancy model by showing opposite effects on Yrt. The citation appears accurate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    },
+    {
+      "id": "698aa748-bc05-4895-8744-8b27b8ead55e",
+      "content_id": "b3e46ecd-1e5e-451f-bd5a-a795223afcf3",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Prior finding that Crb controls cell growth through recruitment of the FERM domain protein Expanded.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C87 appropriately cites prior work to support the model that different FERM proteins binding to Crb specify different functions. This provides supporting context for the proposed model in C86.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:38:24.987828Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e2e171fb-f3ad-4d0a-a1cb-f1bdcf1c738e",
+      "result_id": "0e46d81e-a52b-40a7-8e91-ea2df953b49e"
+    },
+    {
+      "claim_id": "a31789e9-d03a-477e-a3a2-ab0870b7c89f",
+      "result_id": "0e46d81e-a52b-40a7-8e91-ea2df953b49e"
+    },
+    {
+      "claim_id": "596046b6-b42f-47cb-86c7-15c0ecf80a21",
+      "result_id": "0e46d81e-a52b-40a7-8e91-ea2df953b49e"
+    },
+    {
+      "claim_id": "99c5862f-1065-4535-b3f7-e8865d0b6f6b",
+      "result_id": "0e46d81e-a52b-40a7-8e91-ea2df953b49e"
+    },
+    {
+      "claim_id": "bbb9171b-0590-4be4-ae4c-ba2ba0b47e64",
+      "result_id": "0e46d81e-a52b-40a7-8e91-ea2df953b49e"
+    },
+    {
+      "claim_id": "9c85200e-78d2-46eb-8a9e-914e256b3eb1",
+      "result_id": "98c5610f-7fd8-4026-9e11-97bbc2975407"
+    },
+    {
+      "claim_id": "38a6a725-c11b-4409-b30c-808a8ed3193d",
+      "result_id": "98c5610f-7fd8-4026-9e11-97bbc2975407"
+    },
+    {
+      "claim_id": "5d6910d4-3d2e-4e0f-993c-965f5e3da733",
+      "result_id": "98c5610f-7fd8-4026-9e11-97bbc2975407"
+    },
+    {
+      "claim_id": "7bb3d7bf-ff30-42d0-8073-bbf9e5222094",
+      "result_id": "a8e5950d-f3f0-4e17-b5aa-ce701ee24222"
+    },
+    {
+      "claim_id": "97ce838a-0c02-4ffd-9bcf-5a10571e38f7",
+      "result_id": "a8e5950d-f3f0-4e17-b5aa-ce701ee24222"
+    },
+    {
+      "claim_id": "236195c9-18d5-44fb-917a-c41cd821941e",
+      "result_id": "a8e5950d-f3f0-4e17-b5aa-ce701ee24222"
+    },
+    {
+      "claim_id": "3b6dba7c-64ab-49e7-8459-1f9ed43767b7",
+      "result_id": "a8e5950d-f3f0-4e17-b5aa-ce701ee24222"
+    },
+    {
+      "claim_id": "e95b5b8c-7636-49ab-bf17-f5be43887cfd",
+      "result_id": "be87c351-f87d-4846-9646-49a4e0e4a62e"
+    },
+    {
+      "claim_id": "b945a6a3-a631-47eb-aa3c-277b0bdfedf3",
+      "result_id": "be87c351-f87d-4846-9646-49a4e0e4a62e"
+    },
+    {
+      "claim_id": "d4209626-a127-4f11-aa37-7e74e0329750",
+      "result_id": "be87c351-f87d-4846-9646-49a4e0e4a62e"
+    },
+    {
+      "claim_id": "0cd1f591-e43d-4600-a1f2-dd3872550665",
+      "result_id": "be87c351-f87d-4846-9646-49a4e0e4a62e"
+    },
+    {
+      "claim_id": "80b1ffa0-897f-4053-804b-66d6e5ddb163",
+      "result_id": "be87c351-f87d-4846-9646-49a4e0e4a62e"
+    },
+    {
+      "claim_id": "7c223d1a-ef15-4e52-aa62-db9c10a60890",
+      "result_id": "be87c351-f87d-4846-9646-49a4e0e4a62e"
+    },
+    {
+      "claim_id": "bf699059-4c3b-4792-bafa-71ab0e5bf0b4",
+      "result_id": "be87c351-f87d-4846-9646-49a4e0e4a62e"
+    },
+    {
+      "claim_id": "a26fa905-4068-4d29-9747-2b59891f1daf",
+      "result_id": "be87c351-f87d-4846-9646-49a4e0e4a62e"
+    },
+    {
+      "claim_id": "e6296837-ad6d-4fc6-aa52-59dac9524f1a",
+      "result_id": "727d07f0-79f9-48b4-9c2b-e43518810dec"
+    },
+    {
+      "claim_id": "d4c2046a-1472-468c-aa7e-ff8cca320b39",
+      "result_id": "727d07f0-79f9-48b4-9c2b-e43518810dec"
+    },
+    {
+      "claim_id": "c5459959-1c3b-4bc4-986d-371a4926511f",
+      "result_id": "727d07f0-79f9-48b4-9c2b-e43518810dec"
+    },
+    {
+      "claim_id": "c70844f9-b3ec-4f26-957f-ff3057d24a14",
+      "result_id": "727d07f0-79f9-48b4-9c2b-e43518810dec"
+    },
+    {
+      "claim_id": "c1e9a277-1286-446d-b6bf-eb0445b94510",
+      "result_id": "727d07f0-79f9-48b4-9c2b-e43518810dec"
+    },
+    {
+      "claim_id": "de8e7e59-4578-4ac2-af23-7062f752ac0c",
+      "result_id": "727d07f0-79f9-48b4-9c2b-e43518810dec"
+    },
+    {
+      "claim_id": "89c7b6bf-287d-4dbc-8434-e40df8a1ae2c",
+      "result_id": "c221904d-1eb7-466a-9bb9-1a847172ba20"
+    },
+    {
+      "claim_id": "9924d4e9-9149-496f-ac7a-fd9462e92673",
+      "result_id": "c221904d-1eb7-466a-9bb9-1a847172ba20"
+    },
+    {
+      "claim_id": "ff2f5b5f-7c90-4af8-8bc8-e3ebb2e182fd",
+      "result_id": "c221904d-1eb7-466a-9bb9-1a847172ba20"
+    },
+    {
+      "claim_id": "3c291201-a4f8-497f-834b-854af67e9e61",
+      "result_id": "c221904d-1eb7-466a-9bb9-1a847172ba20"
+    },
+    {
+      "claim_id": "f3f10b64-b791-42e0-b091-620c4b010656",
+      "result_id": "17a38b40-6323-45ee-b49c-2a6e4a6e9c2a"
+    },
+    {
+      "claim_id": "a5880e5e-5c29-4301-bed4-6b5a6b22408e",
+      "result_id": "17a38b40-6323-45ee-b49c-2a6e4a6e9c2a"
+    },
+    {
+      "claim_id": "014c049c-d0c8-417e-a223-b7c59e31d619",
+      "result_id": "17a38b40-6323-45ee-b49c-2a6e4a6e9c2a"
+    },
+    {
+      "claim_id": "c82f5617-b84a-4dd7-900a-86467de8508d",
+      "result_id": "17a38b40-6323-45ee-b49c-2a6e4a6e9c2a"
+    },
+    {
+      "claim_id": "87eab854-f6a6-4658-9b5c-1227f09388f9",
+      "result_id": "17a38b40-6323-45ee-b49c-2a6e4a6e9c2a"
+    },
+    {
+      "claim_id": "23c08435-80b9-42f6-8d1e-50d9a90c98cb",
+      "result_id": "f3f68a6b-7d23-457e-830e-7ed80f988bfa"
+    },
+    {
+      "claim_id": "12b131d8-02a7-481d-9f9a-c974b94ce5e1",
+      "result_id": "f3f68a6b-7d23-457e-830e-7ed80f988bfa"
+    },
+    {
+      "claim_id": "c5307a17-7e8d-4df9-9b7b-7b64c0c0cc84",
+      "result_id": "f3f68a6b-7d23-457e-830e-7ed80f988bfa"
+    },
+    {
+      "claim_id": "deca933c-4bec-4217-8201-f0317e822a2e",
+      "result_id": "f3f68a6b-7d23-457e-830e-7ed80f988bfa"
+    },
+    {
+      "claim_id": "a6e9df23-5323-41ba-9c2a-05a600d3f175",
+      "result_id": "f3f68a6b-7d23-457e-830e-7ed80f988bfa"
+    },
+    {
+      "claim_id": "eb243cf0-dae0-410c-b897-fe9d654adddd",
+      "result_id": "f3f68a6b-7d23-457e-830e-7ed80f988bfa"
+    },
+    {
+      "claim_id": "f11c5224-2207-4d1d-af94-d85fbc3fc203",
+      "result_id": "f3f68a6b-7d23-457e-830e-7ed80f988bfa"
+    },
+    {
+      "claim_id": "e802b6c5-a82e-4f73-992f-af15cfbaf1b4",
+      "result_id": "ac705aac-889c-4c7b-824d-8231cfa15563"
+    },
+    {
+      "claim_id": "c621a634-5e71-4ab8-9fc4-b6db81b669a4",
+      "result_id": "ac705aac-889c-4c7b-824d-8231cfa15563"
+    },
+    {
+      "claim_id": "58c3c5de-59aa-46c8-80e3-42b36570ef76",
+      "result_id": "ac705aac-889c-4c7b-824d-8231cfa15563"
+    },
+    {
+      "claim_id": "7db45636-18af-4319-b604-a69781bd6f9a",
+      "result_id": "ac705aac-889c-4c7b-824d-8231cfa15563"
+    },
+    {
+      "claim_id": "ba855547-c4dd-4f94-9954-2931b2da67d8",
+      "result_id": "a81f1972-4fcb-4641-ae2a-1d2193ab0bfd"
+    },
+    {
+      "claim_id": "a20afc7e-1ea6-4783-b218-a29925f5580e",
+      "result_id": "a81f1972-4fcb-4641-ae2a-1d2193ab0bfd"
+    },
+    {
+      "claim_id": "0c348115-8aa7-458d-b7ed-aabd3833781e",
+      "result_id": "9e8a3e9c-e6e2-4be8-94ab-a1b973dc2e52"
+    },
+    {
+      "claim_id": "73df7b59-fcc6-4092-9b6f-fca68dc21a4a",
+      "result_id": "9e8a3e9c-e6e2-4be8-94ab-a1b973dc2e52"
+    },
+    {
+      "claim_id": "6d420b36-25ac-4155-bf9e-a829cccbfb6c",
+      "result_id": "9e8a3e9c-e6e2-4be8-94ab-a1b973dc2e52"
+    },
+    {
+      "claim_id": "f4688dd3-21c7-4a6c-8fc1-55e11c27a880",
+      "result_id": "9e8a3e9c-e6e2-4be8-94ab-a1b973dc2e52"
+    },
+    {
+      "claim_id": "ee9e49eb-36e0-45ee-b6db-9f60b4f00d92",
+      "result_id": "abc2ff55-6472-41d6-a66a-7f6aa83d571f"
+    },
+    {
+      "claim_id": "dfd1cad6-9d17-4ecd-9e2d-432c3d18fab7",
+      "result_id": "abc2ff55-6472-41d6-a66a-7f6aa83d571f"
+    },
+    {
+      "claim_id": "f3f67dc3-e5cd-44ec-b742-18f2752638d5",
+      "result_id": "df861318-6815-4156-827a-3de5d1bc5bf8"
+    },
+    {
+      "claim_id": "509cfdde-a699-4e56-8539-41070b6e1a62",
+      "result_id": "df861318-6815-4156-827a-3de5d1bc5bf8"
+    },
+    {
+      "claim_id": "e932d7b8-ff06-4890-9181-e0429fe2a9be",
+      "result_id": "df861318-6815-4156-827a-3de5d1bc5bf8"
+    },
+    {
+      "claim_id": "e14beb5b-500c-4c35-93a6-a59ee2cc9142",
+      "result_id": "df861318-6815-4156-827a-3de5d1bc5bf8"
+    },
+    {
+      "claim_id": "9257c261-f524-4b9b-921f-8bd74da5b8f9",
+      "result_id": "df861318-6815-4156-827a-3de5d1bc5bf8"
+    },
+    {
+      "claim_id": "21ac0fa3-88b5-4a0d-bbdc-5f10fe721ce8",
+      "result_id": "df861318-6815-4156-827a-3de5d1bc5bf8"
+    },
+    {
+      "claim_id": "9403a057-6e4b-44a4-9486-545d630f2aab",
+      "result_id": "df861318-6815-4156-827a-3de5d1bc5bf8"
+    },
+    {
+      "claim_id": "b32040e8-2a7f-4b8c-968c-51648c71bd2a",
+      "result_id": "df861318-6815-4156-827a-3de5d1bc5bf8"
+    },
+    {
+      "claim_id": "f58d7f54-63b2-49b9-87aa-4744ef1eac68",
+      "result_id": "df861318-6815-4156-827a-3de5d1bc5bf8"
+    },
+    {
+      "claim_id": "6b77c1c2-0fad-45e5-8e27-c972ea7fc207",
+      "result_id": "93bb7e35-0db2-4c9f-acd7-71a30a990a8b"
+    },
+    {
+      "claim_id": "3fa493f9-a95e-4c92-a5e1-b64bb7676a65",
+      "result_id": "93bb7e35-0db2-4c9f-acd7-71a30a990a8b"
+    },
+    {
+      "claim_id": "3d37afa9-07db-4bd1-b19b-8f18ff01981a",
+      "result_id": "93bb7e35-0db2-4c9f-acd7-71a30a990a8b"
+    },
+    {
+      "claim_id": "b28bdaef-58fb-4c0d-a194-dca0ab134fb3",
+      "result_id": "93bb7e35-0db2-4c9f-acd7-71a30a990a8b"
+    },
+    {
+      "claim_id": "da20c9eb-d277-46f3-8f58-6d60c45aa336",
+      "result_id": "93bb7e35-0db2-4c9f-acd7-71a30a990a8b"
+    },
+    {
+      "claim_id": "18ec1172-8100-489f-a0ee-c3a47870c83e",
+      "result_id": "93bb7e35-0db2-4c9f-acd7-71a30a990a8b"
+    },
+    {
+      "claim_id": "2effa91a-18e2-48d6-8718-c550e746d8ea",
+      "result_id": "93bb7e35-0db2-4c9f-acd7-71a30a990a8b"
+    },
+    {
+      "claim_id": "943f0149-3f26-4212-a4d9-ef8b07451b42",
+      "result_id": "93bb7e35-0db2-4c9f-acd7-71a30a990a8b"
+    },
+    {
+      "claim_id": "bd9cc615-e7a0-4037-aeef-be9b212306d7",
+      "result_id": "93bb7e35-0db2-4c9f-acd7-71a30a990a8b"
+    },
+    {
+      "claim_id": "d22477d3-bed1-4e16-af33-b8d03ef29983",
+      "result_id": "93bb7e35-0db2-4c9f-acd7-71a30a990a8b"
+    },
+    {
+      "claim_id": "e01138db-e18f-44a2-a66d-e5b0483f66ba",
+      "result_id": "5bbdb7a8-001c-4049-9ade-b23a1c1daec4"
+    },
+    {
+      "claim_id": "4fad73c2-5325-402d-ad8e-956f8a7b0c03",
+      "result_id": "5bbdb7a8-001c-4049-9ade-b23a1c1daec4"
+    },
+    {
+      "claim_id": "96b5322f-7bb7-4cec-8434-2571b36d38f1",
+      "result_id": "5bbdb7a8-001c-4049-9ade-b23a1c1daec4"
+    },
+    {
+      "claim_id": "cafaa711-1f64-438f-9e32-5649a40fc194",
+      "result_id": "5bbdb7a8-001c-4049-9ade-b23a1c1daec4"
+    },
+    {
+      "claim_id": "e30ba13a-01f5-4977-b4e4-f347f7354e04",
+      "result_id": "5bbdb7a8-001c-4049-9ade-b23a1c1daec4"
+    },
+    {
+      "claim_id": "e1f50fd7-979c-4056-a7ba-b0d1b81e8686",
+      "result_id": "5bbdb7a8-001c-4049-9ade-b23a1c1daec4"
+    },
+    {
+      "claim_id": "85af733a-993f-4cb3-87ee-cd11d505e5d1",
+      "result_id": "5bbdb7a8-001c-4049-9ade-b23a1c1daec4"
+    },
+    {
+      "claim_id": "b9451adf-d4fe-4c0e-be4c-a3a5e0f1ccae",
+      "result_id": "5bbdb7a8-001c-4049-9ade-b23a1c1daec4"
+    },
+    {
+      "claim_id": "acb6ee58-7be0-4d1f-9226-a8bb06d39c2f",
+      "result_id": "5bbdb7a8-001c-4049-9ade-b23a1c1daec4"
+    },
+    {
+      "claim_id": "d2e05a53-2cb7-4807-bf83-af11c5820ed9",
+      "result_id": "bd4b47c1-c053-4992-b8bb-70a2ee9197e4"
+    },
+    {
+      "claim_id": "79d83d5e-b2c9-4bfd-b86a-c1d642f395db",
+      "result_id": "bd4b47c1-c053-4992-b8bb-70a2ee9197e4"
+    },
+    {
+      "claim_id": "c0e09c9b-c6d4-4ec2-93dd-332a69803ee3",
+      "result_id": "bd4b47c1-c053-4992-b8bb-70a2ee9197e4"
+    },
+    {
+      "claim_id": "3fa90389-9848-4c43-937b-8031c04ae51d",
+      "result_id": "bd4b47c1-c053-4992-b8bb-70a2ee9197e4"
+    },
+    {
+      "claim_id": "4f11bba5-5171-4b24-b758-f33a8ef8dd9e",
+      "result_id": "27fbf664-d233-46d5-a219-16db6e1c3200"
+    },
+    {
+      "claim_id": "14c777a9-2c9e-4450-8e04-54fe4069326e",
+      "result_id": "27fbf664-d233-46d5-a219-16db6e1c3200"
+    },
+    {
+      "claim_id": "a1c7aa63-0bbb-4f24-9e2f-5dfc2ae1b9ea",
+      "result_id": "27fbf664-d233-46d5-a219-16db6e1c3200"
+    },
+    {
+      "claim_id": "0bad7177-9677-4c37-aa96-37f108de02ea",
+      "result_id": "27fbf664-d233-46d5-a219-16db6e1c3200"
+    },
+    {
+      "claim_id": "6ca425a0-9f8b-4e64-abce-7a89d10f7151",
+      "result_id": "27fbf664-d233-46d5-a219-16db6e1c3200"
+    },
+    {
+      "claim_id": "703d3300-eb7a-4d01-913c-925ceb8b6972",
+      "result_id": "5e197c71-b664-460a-8bd3-46e8289c9879"
+    },
+    {
+      "claim_id": "683c2d64-d0c7-492c-9edf-e72cd1654fdf",
+      "result_id": "78f73178-801d-4925-ae95-185deee748ad"
+    },
+    {
+      "claim_id": "5313d4bf-431c-4e0e-87d8-84980d5c853a",
+      "result_id": "78f73178-801d-4925-ae95-185deee748ad"
+    },
+    {
+      "claim_id": "fb19b339-2ce6-44af-95c3-13d3b6097c07",
+      "result_id": "78f73178-801d-4925-ae95-185deee748ad"
+    },
+    {
+      "claim_id": "d13f30c4-6f85-4554-b3d6-13f296179365",
+      "result_id": "78f73178-801d-4925-ae95-185deee748ad"
+    },
+    {
+      "claim_id": "3c45e38d-0a91-4b01-ae32-5f54c0e4a86d",
+      "result_id": "f079ff2a-ada2-415e-a23c-910477390013"
+    },
+    {
+      "claim_id": "99f69895-73d0-4c64-8f6c-01e2200d6b32",
+      "result_id": "f079ff2a-ada2-415e-a23c-910477390013"
+    },
+    {
+      "claim_id": "6a9ad952-3cf9-4c0d-a637-b7b69799da20",
+      "result_id": "f079ff2a-ada2-415e-a23c-910477390013"
+    },
+    {
+      "claim_id": "86363a9a-cd86-40e1-a02b-afd2284646f3",
+      "result_id": "f079ff2a-ada2-415e-a23c-910477390013"
+    },
+    {
+      "claim_id": "329f9cc1-4cc7-4e7c-a99b-c894b7d4d2a4",
+      "result_id": "79f49c5f-dfc3-4be8-9d99-b231e6d52499"
+    },
+    {
+      "claim_id": "b37c3103-4b90-4f0a-ac86-9503971d65c6",
+      "result_id": "3cc2269e-539e-49aa-ad8d-b72b24d110ae"
+    },
+    {
+      "claim_id": "4d70c7b1-0022-4809-a41c-c8a0e19a936e",
+      "result_id": "3cc2269e-539e-49aa-ad8d-b72b24d110ae"
+    },
+    {
+      "claim_id": "07bf4b49-8da2-4acc-a0b1-6117468324ec",
+      "result_id": "3cc2269e-539e-49aa-ad8d-b72b24d110ae"
+    },
+    {
+      "claim_id": "3e4e4219-f1a1-43db-bff2-2bf78d942ab2",
+      "result_id": "d8874088-6736-4a15-b1d1-fd5a880e405b"
+    },
+    {
+      "claim_id": "deff0314-074e-477e-b22b-0353549bc2f9",
+      "result_id": "d8874088-6736-4a15-b1d1-fd5a880e405b"
+    },
+    {
+      "claim_id": "73873144-9c29-4787-9894-cbfbfccc13e5",
+      "result_id": "698aa748-bc05-4895-8744-8b27b8ead55e"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,320 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Spatial transcriptomics of healthy human oral mucosa identified 4-10 anatomical compartments per slide with distinct molecular signatures. The lamina propria showed functional specialization with subepithelial regions enriched for epithelial development genes and reticular regions enriched for ECM organization genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C30 describe the spatial transcriptomics methodology, technical validation with replicates (C20), sequencing depth (C21), and identification of anatomical compartments (C22, C26-C30). The use of BayesSpace for deconvolution (C24-C25) and GO enrichment analysis (C29-C30) provide computational validation. The findings are supported by figures and consistent with prior knowledge about tissue organization (C26, C31).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Spatial transcriptomics of diseased oral mucosa revealed pro-inflammatory tissue remodeling with upregulation of inflammatory gene signatures and vascular morphogenesis genes (CXCL12, CLDN5, TAGLN) in the stromal compartment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 describe spatial transcriptomics analysis of disease samples showing pro-inflammatory changes validated by IHC (C35). The findings of stromal upregulation of inflammatory and vascular genes are supported by differential expression analysis with figure references. The interpretation that tissue-specific properties reflect local organization (C38) is a reasonable inference from the spatial patterns observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C117"
+    ],
+    "result": "Periodontitis risk genes CDKN2B, IL1A, IL1B, and VAMP8 showed restricted expression in the junctional epithelium, suggesting that junctional epithelium dysfunction is a major driver of periodontitis pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C39 and C117 report spatial localization of GWAS risk genes to the junctional epithelium. While the spatial mapping data (C39) is supported, the causal interpretation that junctional epithelium dysfunction 'underlies' or is a 'major driver' of pathogenesis (C40, C117) is speculative. The spatial correlation of risk genes does not establish causality or mechanism, and no functional validation is provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The three anatomical regions of gingival epithelium (oral, sulcular, and junctional) were distinguished by distinct transcriptional signatures. SOX9 showed restricted expression to the junctional epithelium and may label stem cell/progenitor populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C48 describe the molecular characterization of the three epithelial regions with distinct keratin signatures and GO enrichment patterns, supported by spatial mapping data. The observation of SOX9 expression in junctional epithelium (C49) is data-supported, though the hypothesis that it labels stem cells (C51) is appropriately qualified as speculation based on its known role in other tissues (C50). The characterization of the basal layer (C52) is also data-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "A rare disease-associated proliferative epithelial population characterized by TOP2A and CENPF expression was identified, with TOP2A expression restricted to the junctional epithelium and significantly increased in disease, suggesting that inflammatory environments regulate stem cell behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53-C55 describe identification and spatial mapping of a proliferative population with increased expression in disease, which is data-supported. However, the interpretation that inflammatory environments 'lead to' increased proliferation (C56) and 'may regulate stem cell behaviour' (C57) is speculative. The causal relationship is not established, and no mechanistic experiments or lineage tracing are provided to support the stem cell regulation hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Distinct stromal regions adjacent to different epithelial compartments showed specialized functions, with the junctional epithelium stroma enriched for neutrophil activation genes and the sulcular stroma enriched for angiogenesis genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 describe spatial clustering of stromal regions adjacent to epithelial compartments with distinct GO enrichment patterns. The findings are supported by spatial mapping and GO enrichment analysis with figure references. The interpretation that these regions play a role in epithelial specification or dysregulation (C58) is a reasonable inference from the spatial organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Cell-cell communication analysis revealed that in health, dominant interactions occur between epithelial layers (MMP9-LRP1, ADAM17-NOTCH1), while in disease, stromal-immune-endothelial interactions emerge, particularly in reticular regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 describe specific ligand-receptor interactions identified using Giotto spatial neighborhood analysis, with clear differences between health and disease. The interpretation that stromal/immune/endothelial interactions dominate in disease while structural interactions shape healthy tissue physiology (C65) is supported by the network analysis data with figure references.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C76"
+    ],
+    "result": "Integration of scRNA-seq with spatial transcriptomics enabled mapping of cell types including melanocytes, \u03b3\u03b4 T cells, and Tregs that were undetected in scRNA-seq alone. Neutrophils were successfully mapped and showed significant increase in disease, confirming prior flow cytometry findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C73 and C76 describe the integration methodology and successful mapping of various cell types, including those missed by scRNA-seq alone. The detection of endothelial cells (C70), rare immune populations (C71), and neutrophils (C76) demonstrates the complementary value of spatial transcriptomics. The neutrophil findings confirm prior flow cytometry results (C74-C76), providing orthogonal validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Five fibroblast subtypes showed distinct spatial enrichment patterns. Fibroblast 2 (GREM1+, SFRP1+) was enriched in subepithelial regions and expressed ligands (RSPO1, CLEC11A, FLRT2) predicted to interact with epithelial cells, suggesting a role in epithelial niche maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 describe spatial mapping of fibroblast subtypes using BayesSpace and identification of Fb2 enrichment in subepithelial regions with specific ligand expression from NicheNet analysis. The hypothesis that Fb2 is required for epithelial niche maintenance (C84) is appropriately qualified as speculation but is supported by the spatial location, ligand expression data, and comparison to similar populations in other tissues (C131).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C93",
+      "C94",
+      "C96",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "A rare pathogenic fibroblast population (Fb5, <1% in health) was identified that is markedly increased in disease, co-localizes with immune cells, and expresses chemokines CXCL8 and CXCL10 along with ALOX5AP. Multiplex ISH validated the spatial distribution and co-localization with macrophages and B cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C96 describe the identification, characterization, and spatial mapping of Fb5, supported by scRNA-seq abundance data (C88-C89), spatial mapping (C90), marker gene expression (C91, C93-C94), and spatial co-localization with chemokines and immune cells (C96). The validation by multiplex ISH (C103-C105) provides orthogonal confirmation of the spatial transcriptomics findings. The data supporting this rare population is robust across multiple modalities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The chemokines and enzymes expressed by Fb5 have established roles in immune cell recruitment and angiogenesis. CXCL8 mediates neutrophil recruitment and angiogenesis, CXCL10 recruits leukocytes and regulates immune responses, and ALOX5AP controls leukotriene production and blood progenitor formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C102 and C134-C139 describe the known biological functions of CXCL8, CXCL10, and ALOX5AP, all supported by appropriate citations to the literature. These claims provide biological context for interpreting the expression of these genes by Fb5, though they do not directly test the function of Fb5 in this tissue.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C106",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Fibroblast 5 is hypothesized to facilitate the transition from innate to adaptive immunity by recruiting and maintaining lymphocyte populations through irregular chemokine gradients, contributing to persistent inflammation in periodontitis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106, C141-C144 present hypotheses about Fb5 function based on its spatial location, gene expression, and comparison to other chronic inflammatory diseases. While the spatial and expression data are supported, the mechanistic claims about chemokine gradients (C142), transition between immune responses (C143), and inability to return to homeostasis (C144) are speculative and lack direct experimental validation. These are reasonable hypotheses but require functional studies for confirmation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The study provides the first molecular mapping of the three distinct epithelia composing masticatory mucosa and demonstrates that the lamina propria is organized into specialized compartments for epithelial maintenance, ECM remodeling, and immune regulation, with region-specific stromal signatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C111 summarize the major findings about tissue organization. The claim of providing the 'first molecular mapping' (C110) is a novelty claim that cannot be fully verified without comprehensive literature review, but the spatial transcriptomics data supporting the functional compartmentalization (C107-C109, C111) is well-supported by the GO enrichment and spatial mapping analyses throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "A candidate cell-cell communication network was constructed showing emergence of a stromal-immune-endothelial axis in disease with increased WNT receptor expression in basal-subepithelial interactions, while healthy tissue showed increased ADAM17-NOTCH1 interactions between basal and suprabasal epithelial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C120 describe findings from the Giotto cell-cell communication analysis, identifying specific interaction patterns that differ between health and disease. These findings are supported by the spatial neighborhood network analysis with appropriate figure references and represent a data-driven characterization of the communication landscape.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background claims establish that oral mucosa is a complex, heterogeneous tissue with distinct anatomical regions and functional properties, and that spatial transcriptomics can overcome limitations of traditional approaches to study tissue organization and cell-cell communication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C16 provide background context about oral mucosa anatomy, function, disease associations, and the rationale for using spatial transcriptomics. These are either established anatomical knowledge (C1-C5, C10, C14) or supported by appropriate citations to the literature (C6-C9, C11, C16). They provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C31",
+      "C50",
+      "C92",
+      "C95",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C131",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Discussion claims contextualize findings within existing knowledge about tissue organization, stem cells, fibroblasts, and chronic inflammatory disease, noting limitations of prior approaches and comparisons to other tissues and diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C50, C92, C95, C112-C116, C121-C129, C131, C145-C149 provide context from the literature about related findings in other tissues, limitations of prior methods, and conceptual frameworks for interpreting the results. These are appropriately supported by citations and represent accurate characterization of the field, though they are not novel findings of this study.",
+    "result_type": "MINOR"
+  }
+]

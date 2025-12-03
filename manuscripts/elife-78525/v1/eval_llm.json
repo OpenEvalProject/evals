@@ -1,0 +1,301 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C14",
+      "C15"
+    ],
+    "result": "Experiment 1 demonstrates that bumblebees prefer flowers with higher ranking over equal absolute reward. When trained on flower pairs A:B (45%:30%) and C:D (30%:20%), bees significantly preferred C over B in tests (p=4.00e-3), despite both offering 30% sucrose during training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C14, and C15 are well-supported by statistical analysis (GLM with N=40, p=4.00e-3, 95% CI=[0.08, 0.38]) and experimental design. The preference for C over B, despite equal absolute reward, provides strong evidence for ranking-based memory. The experimental controls (counterbalanced colors and training sequences) are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Experiment 2 shows that bumblebees prefer flowers with higher ranking even over higher absolute reward. When B (30%) and C (15%) were tested, bees preferred C (p=3.30e-3), and this preference did not differ significantly from Experiment 1 (p=0.55), indicating no influence of absolute reward magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C16, C17, and C18 are supported by statistical analyses showing preference for C despite lower absolute reward (GLM: N=40, p=3.30e-3) and no significant difference between experiments (p=0.55). This provides strong evidence against absolute memory use and supports ranking-only memory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Experiment 3 demonstrates that bumblebees encode only qualitative (ordinal) ranking, not quantitative differences. When A (45%) and C (30%) were tested after training in contexts with different reward ratios (A:B=1.5:1 vs C:D=6:1), bees showed no preference (p=0.79), indicating they remember only that both were 'better' options.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C19, C20, C21, and C22 are well-supported by the lack of preference between A and C (GLM: N=40, p=0.79, 95% CI=[-0.16, 0.12]). The experimental design effectively tests quantitative vs qualitative ranking by manipulating reward ratios while maintaining ordinal positions. Combined with Experiments 1-2, this provides strong evidence for ordinal-only memory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C23",
+      "C24",
+      "C27"
+    ],
+    "result": "Experiment 4 reveals that absolute memory is not retained or retrievable after 1 hour when ranking information is absent. Bees trained on flowers A (45%) and B (30%) in temporal and spatial isolation (1-hour intervals) showed no preference in tests (p=0.69).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C23, C24, and C27 are supported by the lack of preference after 1-hour delay (GLM: N=20, p=0.69, 95% CI=[-0.15, 0.22]). The experimental design appropriately isolates absolute memory by removing ranking information. However, the sample size is smaller (N=20 vs N=40 in Experiments 1-3), which slightly reduces statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C35",
+      "C36"
+    ],
+    "result": "Experiment 5 shows that absolute information can be retained in short-term memory (minutes). When bees experienced flowers in alternating bouts without visual overlap, they preferred the higher-reward option (p=8.29e-3), indicating absolute memory persists for minutes but not hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C26, C27, C35, and C36 are supported by significant preference for higher reward (GLM: N=10, p=8.29e-3, 95% CI=[0.23, 0.87]). However, the small sample size (N=10) and lack of precise timing information about inter-bout intervals are limitations. The conclusion about 'several minutes' is somewhat imprecise given the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C37"
+    ],
+    "result": "Experiment 6 demonstrates ecological validity: in a semi-realistic foraging scenario with visually separated flower groups, bees successfully preferred the highest-reward option A (p=1.21e-6), showing that short-term absolute memory is sufficient for natural foraging contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C31, and C37 are well-supported by strong statistical evidence (GLM: N=20, p=1.21e-6, 95% CI=[0.94, 1.68]). The experimental design effectively simulates natural foraging conditions where flowers are visually separated but temporally accessible. This provides important ecological context for the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C2",
+      "C32",
+      "C34",
+      "C47",
+      "C48"
+    ],
+    "result": "The overall conclusion is that bumblebees' learned preferences are based only on ordinal ranking memories when comparing options in novel contexts, representing a fundamental difference from starlings and humans who use both absolute and ranking information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C32, C34, C47, and C48 are supported by the convergent evidence from all six experiments. The systematic experimental design effectively rules out alternative explanations (absolute memory, quantitative ranking, SDVL). The comparison to starlings and humans (C1) provides important context, though direct comparative experiments were not conducted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C33"
+    ],
+    "result": "Bumblebees use absolute information to initially rank flowers during learning, as this is necessary for any comparative judgment, but this absolute information is not retained for later use in novel contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C33 are logically supported by the experimental results showing successful discrimination during training and the necessity of absolute information for initial comparisons. However, this is more of a logical inference than directly tested, as the experiments focus on memory retrieval rather than initial encoding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "The results rule out state-dependent valuation learning (SDVL) as an explanation for bee preferences. SDVL would predict quantitative preferences based on environmental richness, but Experiment 3 showed equal preference for A and C despite different training contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38 and C39 are supported by the results of Experiment 3, which effectively test the SDVL hypothesis. The logic is sound: SDVL predicts quantitative differences based on context richness, but bees showed no such difference. This represents appropriate consideration of alternative mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C13",
+      "C55",
+      "C56"
+    ],
+    "result": "The experimental stimuli were appropriately designed: sucrose concentrations followed Weber's Law for perceptual equivalence, colors were discriminable (>0.14 hexagon units), and both color and concentration differences were within bumblebee discrimination abilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C55, and C56 are supported by appropriate citations and methodological validation. The use of Weber's Law (C13) is properly cited, color discriminability is verified by published thresholds (C55), and concentration discriminability is supported by neurophysiological and behavioral evidence (C56). These are important methodological validations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "A control experiment verified that bees could learn color-reward associations in the experimental setup, showing significant preference for higher-rewarded flowers (p=3.39e-5) after training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C64, and C65 are supported by the control experiment data (GLM: N=20, p=3.39e-5, 95% CI=[0.64, 1.37]). This is an important methodological control demonstrating that the experimental paradigm allows for learning and that null results in other experiments are not due to inability to learn the task.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Statistical analyses used appropriate methods (GLM with quasibinomial distribution) and controlled for potential confounds (colony, flower color, training sequence), with none of these factors showing significant effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C60, C61, and C62 describe appropriate statistical methods. The use of GLM with quasibinomial distribution is suitable for proportion data, and controlling for colony, color, and sequence effects is appropriate. The finding that none of these factors were significant (C62) strengthens the main conclusions by ruling out confounds.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The authors propose an evolutionary hypothesis that dietary breadth may explain differences in memory mechanisms: varied diets (humans, starlings) may favor absolute memory for cross-domain comparisons, while limited diets (bumblebees) may favor ordinal-only memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C40, C41, C42, and C43 represent speculative evolutionary hypotheses. While C40 and C41 are supported by citations and general knowledge, C42 and C43 are explicitly speculative ('Perhaps...'). This is appropriate speculation for a Discussion section, but lacks direct empirical support and would require comparative studies across species with varying dietary breadth.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The authors note that bumblebee gustatory neurons encode sucrose concentration as firing rates, suggesting neural capacity for absolute value encoding exists, though behavioral experiments show this information is not accessed in novel contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C45, and C46 are supported by appropriate citations to neurophysiological work (C45: Miriyala et al., 2018) and theoretical frameworks (C46: Schultz, 2015). This discussion appropriately distinguishes between neural capacity for encoding and behavioral utilization of information, though it remains somewhat speculative (C46: 'could theoretically').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "In natural foraging, bumblebees often cannot see different flower types simultaneously, but can traverse distances between flowers within minutes, matching their short-term memory capacity for absolute information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28 and C29 are supported by general knowledge about bee foraging (C28) and citations to published research on foraging range and memory timescales (C29: Osborne et al., 1999; Menzel, 2001). This provides important ecological context for interpreting the experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The study used appropriate animal care methods: colonies from commercial supplier, housed in standard conditions, experimental procedures guided by 3Rs principles, non-invasive behavioral tests, and appropriate feeding regimens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 describe standard and appropriate methods for bumblebee research. The adherence to 3Rs principles (C50) is commendable even without regulatory requirements. The feeding regimen (C53: 5-15% sucrose) appropriately ensures motivation for the experimental concentrations (20-45%).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "Training protocols were standardized: bees completed training after 50 flower visits from both color types, and test flowers were never previously experienced together, ensuring novel pairings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57 and C58 describe appropriate experimental protocols. The criterion of 50 visits (C57) provides standardized training, and ensuring novel pairings in tests (C58) is critical for the experimental logic. These are important methodological details that support the validity of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The authors provide clear theoretical predictions for each experiment, outlining expected outcomes under different memory mechanisms (absolute, ranking, combined, SDVL), which allows for strong inference from the results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C75 represent theoretical predictions and experimental logic. These are well-reasoned and appropriately cited where relevant (e.g., C66 cites Padoa-Schioppa and Assad, 2008). The clear articulation of alternative hypotheses and predictions strengthens the experimental design and interpretation, representing good scientific practice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Experimental designs systematically manipulated visual access to flowers: Experiments 1-3 allowed simultaneous viewing, Experiment 5 prevented simultaneous viewing through temporal separation, and Experiment 6 used physical barriers to separate flower groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76, C77, and C78 accurately describe key methodological variations across experiments. These manipulations are critical for testing the role of temporal adjacency and visual access in memory formation and retrieval. The descriptions are consistent with the figures and methods sections.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The introduction establishes context: contextual effects on choice are widespread across animals, but the roles of absolute vs. ranking memories in learned preferences have only been studied in starlings and humans, making bumblebees an important new model system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8, C9, C10, C11, and C12 are supported by appropriate citations to published literature. These claims establish the scientific context and rationale for the study. The citations appear appropriate and the knowledge gap (C10, C11) is clearly articulated, justifying the choice of bumblebees as a study system (C12).",
+    "result_type": "MINOR"
+  }
+]

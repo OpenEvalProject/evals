@@ -1,0 +1,279 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The study addresses a knowledge gap in electroporation mechanisms. While electroporation is used clinically for gene therapy, cancer treatment, and cardiac arrhythmias, the molecular mechanisms are not well understood, particularly regarding where pores form in the complex plasma membrane organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 establish the background and motivation for the study. These claims accurately describe established knowledge about plasma membranes (C1), electroporation phenomenon (C2), clinical applications (C3), and identify the knowledge gap (C4-C5) that the study addresses. The claims are well-supported by citations and represent accepted scientific understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Pores form non-homogeneously in plasma membranes, clustering in domains enriched with polyunsaturated (PU) lipids. Pores are favored in regions with higher PC lipid density, lower cholesterol, gangliosides, and fully saturated lipids, with greater area per lipid and lower lipid order. These features are independent of electric field polarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C32-C40 describe the primary finding that pores colocalize with specific membrane domains, particularly those enriched in PU lipids. This is supported by simulation data (Figure 2), Kullback-Leibler divergence analysis (Figure 3B), and visualization of pore-lipid colocalization (Figure 3A). The statistical analysis and visual evidence strongly support these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C93"
+    ],
+    "result": "Machine learning models can predict poration sites with >80% accuracy based on lipid distribution alone. The density of PU, GM, CHOL, and FS lipids is sufficient for prediction, with PU lipid density being the most important feature. Other membrane properties can be neglected for prediction purposes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C41-C46, C93 demonstrate that machine learning successfully predicts poration sites. Table 3 shows prediction accuracies typically >80% across different training/testing scenarios. Figure 4B confirms PU lipid density as the most important feature. The finding that only four lipid groups are needed for accurate prediction (C46) is validated by comparable accuracies when using reduced feature sets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Poration kinetics depends on membrane composition, electric field polarity, and membrane mechanical properties. APM membranes porate 2-5 times faster than BPM, and hyperpolarizing fields porate 2-3 times faster than depolarizing fields. The poration rate exhibits an initial transient regime (~3 ns) related to Maxwell stress-induced membrane thinning, followed by a steady-state regime. Poration rate correlates inversely with membrane area compressibility modulus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C47-C58 describe kinetic findings from Bayesian survival analysis. Figure 5A-C shows statistically significant differences in poration times between conditions. The two-regime kinetic model (C50-C53) is supported by Figure 5B and correlates with membrane mechanical changes (Figure 5\u2014figure supplements 4-6). The inverse correlation with compressibility modulus (C58, Figure 5D-E) is consistent with experimental findings (C71).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The study used coarse-grained molecular dynamics simulations of eight membrane patches (four APM, four BPM) with >60 lipid types, each subjected to 60 simulations under hyperpolarizing and 60 under depolarizing electric fields (\u00b1127.7 mV/nm), inducing pores within ~15 ns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31, C99-C101 describe the computational methodology. The membrane models are based on established work (Ing\u00f3lfsson et al. 2014, 2017) with compositions shown in Figure 1 and Tables 1-2. The simulation protocol is clearly described with appropriate parameters for studying poration on timescales that minimize lipid diffusion while allowing pore formation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "In the steady-state kinetic regime, the poration rate becomes constant with exponential time distribution, characteristic of Poisson behavior. This is consistent with accepted electroporation models but the current model additionally characterizes the transient initial regime important for nanosecond pulses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 connect the study's kinetic model to established theory. The steady-state Poisson behavior (C73-C74) is consistent with accepted models (C75, supported by citations). The advantage of characterizing the transient regime (C77) is a valid inference supported by the Bayesian analysis results and citations to nanosecond pulse literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "APM membranes contain less cholesterol and fully saturated lipids but more polyunsaturated lipids than BPM, favoring faster poration. This compositional difference may explain why different cell types exhibit different electroporation thresholds experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 interpret the kinetic differences between APM and BPM in terms of composition (supported by Tables 1-2 and Figure 1) and connect to experimental observations of cell-type differences (C79, supported by citations). The inference that lipid composition contributes to threshold differences (C80) is reasonable given the study's findings, though it acknowledges this is only partial explanation ('at least in part').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The asymmetric lipid composition of mammalian plasma membranes favors pore formation on the hyperpolarized (anodic) side due to more profound membrane thinning under hyperpolarization, possibly associated with electrophoretic drag of negatively charged lipids from the inner leaflet.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 explain the polarity dependence of poration. The faster poration under hyperpolarization (C84) is supported by simulation data (Figure 5A, C56-C57). The proposed mechanism involving membrane thinning (C84) is supported by simulation data, though the electrophoretic drag explanation (C85) is appropriately presented as speculative. The connection to experimental observations of asymmetric permeabilization (C82) is supported by citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Previous studies on simple membrane systems showed that poration depends on lipid head and tail architecture, with longer tails, larger headgroups, and stronger interactions reducing poration propensity. Pores preferentially form in fluid domains and liquid-disordered domains. In plasma membranes, >75% of PU lipids have PC or PE headgroups, which favor poration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64 summarize prior work and connect it to the current findings. The summary of previous studies (C59-C63) is supported by appropriate citations. The compositional analysis of PU lipids (C64) is supported by data in Figure 1\u2014figure supplement 1 and connects prior findings to the current membrane systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Polyunsaturated lipids are highly prone to oxidation by free radicals, which increases membrane permeability. Electroporation is associated with oxidative lipid damage, and pores forming in PU-rich domains might act as precursors for lipid oxidation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65-C68 about lipid oxidation are supported by citations to established literature. However, the proposed connection between pore formation and lipid oxidation (C69) is explicitly speculative ('If pores somehow act as precursors'). While this is an interesting hypothesis arising from the findings, it lacks direct experimental or computational validation in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The steady-state poration rate correlates inversely with membrane area compressibility modulus, consistent with experimental findings. Membrane thinning facilitates pore formation by reducing the distance water molecules must travel to bridge the membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 connect the computational findings to membrane mechanics. The inverse correlation with compressibility modulus (C70) is supported by Figure 5E and consistent with experimental work (C71, supported by citation). The mechanistic explanation involving membrane thinning (C72) is a reasonable inference based on the physical process of pore formation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Previous work showed pores in voltage-gated sodium channels form more easily under hyperpolarization. Whether cells are permeabilized more on the anodic or cathodic side may depend on the membrane's lipid-protein content and preferential pore formation sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 connect the current findings to previous work on protein poration and discuss implications. C86 is supported by citation to the authors' previous work. C87 is a reasonable speculation based on the findings, appropriately presented as uncertain ('might depend').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Molecular dynamics simulations can model pore formation in both lipid domains and membrane proteins but are limited to small membrane patches and cannot account for dynamic transmembrane voltage changes present in whole cells. In real cells, only sites with highest poration propensity are porated due to voltage drop after sufficient pore formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 discuss the limitations and context of MD simulations. The capabilities (C88) and limitations (C89-C90) are accurately described and supported by citations. The explanation of whole-cell dynamics (C91) is supported by citations to modeling literature. The inference about preferential poration sites in real cells (C92) is logical given these constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Coarse-grained simulations cannot study protein poration due to structural constraints and are more difficult to porate than atomistic systems. However, they can represent differences in energy barriers between lipid types and mechanical property influences on poration, validating their use for identifying poration-prone lipid domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C98 discuss the validity and limitations of coarse-grained simulations. The limitations (C94-C95) and capabilities (C96-C97) are supported by citations to comparative studies. The conclusion that coarse-grained simulations are valid for identifying poration-prone domains (C98) is a reasonable inference given the validation evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The imposed electric field strength in simulations (\u00b1127.7 mV/nm) is not directly comparable to experimental values. The macroscopic field in the aqueous compartment is ~100-fold lower (~1 mV/nm = 10 kV/cm) due to water's dielectric permittivity, which is within the experimental range for submicrosecond pulses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C105 provide important clarification about interpreting simulation parameters. The explanation of the dielectric screening effect (C103) is supported by citations and basic electrostatics. The comparison to experimental conditions (C104) and the exponential dependence on field strength (C105) are appropriately supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Current electroporation models assume pores form only in lipid domains with similar kinetics, but evidence shows poration depends on lipid type and phase state. Lipids organize in domains, creating locations more or less prone to poration. Pores can also form in membrane proteins and are affected by the cytoskeleton. Experimental methods lack sufficient spatiotemporal resolution, motivating the use of coarse-grained molecular dynamics simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C28 establish the rationale for the computational approach. The description of current models (C13-C14) and evidence for heterogeneity (C15-C20) are supported by appropriate citations. The experimental limitations (C23-C27) are accurately described with citations. The justification for using coarse-grained MD (C28) is well-supported.",
+    "result_type": "MINOR"
+  }
+]

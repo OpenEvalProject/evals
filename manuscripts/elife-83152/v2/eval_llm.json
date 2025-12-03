@@ -1,0 +1,401 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C48",
+      "C49",
+      "C50",
+      "C86"
+    ],
+    "result": "The study utilized extensive longitudinal microbiome data from 56 wild baboons in the Amboseli ecosystem, with 5534 fecal samples collected over 13 years (2000-2013), averaging 99 samples per host. The baboons share similar habitats, diets, and microbial colonization sources, and microbiome profiles were generated using 16S rRNA V4 region sequencing on Illumina HiSeq 2500.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C48, C49, C50, and C86 provide comprehensive and consistent documentation of the study design, sample collection, and sequencing methodology. The claims are explicit, well-documented with specific numbers, and supported by citations to prior work and methodological details.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The study implemented stringent filtering criteria to address zero-inflation bias in microbiome count data, reducing ASVs from 22,097 to 107 and retaining only taxon pairs with <5% joint absence frequency. This filtering was necessary because high-frequency joint zero abundances artificially inflated positive correlations, resulting in 1878 high-confidence ASV-ASV pairs for analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C62 describe a methodologically sound approach to addressing a known bias in compositional microbiome data. The filtering criteria are explicitly stated, the rationale is clearly explained with supporting figure evidence (C58), and the resulting dataset sizes are precisely documented at multiple taxonomic levels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Most bacterial correlations within individual baboons are weak and negative, with only 19% of ASV-ASV correlations stronger than expected by chance (FDR\u22640.05) and only 3.8% significantly positively correlated. At the ASV level, the median correlation was -0.072 with 60% negative correlations, and this negative bias was stronger at higher taxonomic levels (64% negative for phyla-phyla correlations).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C14-C18 provide consistent statistical evidence for weak, predominantly negative bacterial correlations. The findings are supported by appropriate statistical tests (binomial tests, FDR correction), specific quantitative values, and references to supporting figures. The pattern is consistent across multiple taxonomic levels, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C5"
+    ],
+    "result": "Taxon pairs with inconsistent correlation signs across hosts always had weak correlations within hosts, while pairs with the most consistent sign agreement exhibited the largest median absolute correlation coefficients (Spearman's r=0.844, p<0.0001). For ASV pairs with universal sign agreement, the median absolute correlation was 0.359 compared to 0.116 for pairs with no sign consistency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 and C5 present a coherent pattern linking correlation strength to consistency across hosts. The relationship is quantified with appropriate statistics (Spearman's correlation), specific numerical values are provided, and the findings are referenced to supporting figures. The logical consistency between claims strengthens the overall result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C4"
+    ],
+    "result": "Shared bacterial correlation patterns dominate over host-specific patterns by almost twofold, with population-level signatures contributing 60-80% (median 70%) to observed correlation patterns compared to 20-40% (median 30%) from host-level contributions, yielding a median population:host ratio of 2.33:1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C24, and C4 provide quantitative evidence for the dominance of shared correlation patterns using a novel mixture modeling approach. The methodology is clearly described in Figure 3\u2014figure supplement 2, the percentages are specific and consistent across claims, and the findings align with prior observations of 'universality' cited in the text.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C63",
+      "C64"
+    ],
+    "result": "A novel 'universality score' was developed to quantify the strength and consistency of bacterial correlations across hosts, calculated as the product of median absolute correlation and proportion of shared sign. Using this metric, 48% of scores were significantly higher than expected by chance (FDR\u22640.05), and the top 5% most universal pairs showed no bias toward positive or negative correlations (46 positive vs. 48 negative pairs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C26, C63, and C64 describe a methodologically sound approach to quantifying universality. The score calculation is clearly defined, validated against permutation tests, and the results are specific and internally consistent. The lack of directional bias in the most universal pairs is an important finding that contradicts potential expectations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C65",
+      "C66"
+    ],
+    "result": "The most universal bacterial correlations form a network enriched for same-family pairings (>3-fold enrichment, p<0.0001), with highly connected hub taxa including ASV1 (Bifidobacterium, 14 connections) and members of families Atopobiaceae, Eggerthellaceae, and Muribaculaceae. Prevotellaceae-Prevotellaceae pairs comprised two-thirds of same-family pairs in the most universal set.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C28, C65, and C66 provide specific network topology findings with appropriate statistical support (Fisher's exact test, enrichment analysis). The identification of hub taxa and family-level enrichment patterns is well-documented with references to supplementary files, and the findings are biologically interpretable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "Phylogenetic distance between ASV pairs predicts the nature and universality of their correlations: for positively correlated pairs, closely related taxa had higher universality scores (Pearson's r=-0.232, p<0.0001), while for negatively correlated pairs, there was a weak positive relationship between phylogenetic distance and universality (Pearson's r=0.106, p=0.004).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29 and C30 present a clear pattern linking phylogenetic relatedness to correlation patterns with appropriate statistical support. The opposite relationships for positive vs. negative correlations are biologically interpretable and supported by citations to relevant literature. The effect sizes are modest but statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C31",
+      "C6"
+    ],
+    "result": "Baseline microbiome community composition is the strongest predictor of similarity in bacterial correlation patterns between hosts, explaining 34% of variation (Mantel: r\u00b2=0.336, p=0.001). Host pairs with the most similar bacterial correlation patterns also had similar microbiome taxonomic compositions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31 and C6 provide strong statistical evidence for the relationship between compositional similarity and correlation pattern similarity using appropriate methods (Mantel test). The r\u00b2 value indicates substantial explanatory power, and the finding is consistent with assumptions underlying dissimilarity overlap analysis (DOA) methods cited in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C32",
+      "C7"
+    ],
+    "result": "Host genetic relatedness shows a weak but significant relationship with similarity in microbial correlation patterns (r\u00b2=0.009, partial Mantel p=0.002 after controlling for baseline composition). Genetically related hosts tend to have more similar bacterial correlation patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32 and C7 document a statistically significant but weak genetic effect on correlation patterns. The use of partial Mantel test to control for compositional similarity is methodologically appropriate, and the finding is consistent with prior heritability studies cited in the manuscript. However, the very small r\u00b2 (0.9%) indicates minimal practical importance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Social group membership and host sex do not predict similarity in microbial correlation patterns (social group: F=2.146, p=0.089; sex: F=2.026, p=0.160).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33 and C34 report null findings with appropriate statistical tests (ANOVA-like F-statistics). The p-values are above conventional significance thresholds, and the methodology is clearly described. These negative results are important for understanding which factors do not drive correlation pattern similarity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Host age has minimal effects on bacterial correlation patterns: correlations do not systematically strengthen or weaken with age, though correlation patterns are slightly more similar within versus between adjacent age classes (juvenile vs. prime age: ANOVA p=0.00175, 1.3% variance explained; prime age vs. older adult: ANOVA p=0.0112, 0.9% variance explained).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35 and C36 present consistent findings about age effects with appropriate statistical support. The very small variance explained (1.3% and 0.9%) indicates that while statistically significant, age effects are minimal in practical terms. The analysis is limited by the requirement for >35 samples per age class, reducing the sample size.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C69"
+    ],
+    "result": "Seasonal variation and diet have minimal impact on bacterial correlation patterns: removing seasonal trends had little effect on ASV-ASV correlations (Pearson's r=0.982 between original and detrended estimates), as seasonal oscillation explained only a small fraction of variance (median 1.1%, max 6%). ASV pairs with seasonal members had only slightly higher universality scores (difference of 0.018, p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C38, and C69 provide strong evidence that the observed universality is not primarily driven by shared seasonal responses. The high correlation (r=0.982) between original and detrended estimates, the small variance explained by seasonality, and the minimal difference in universality scores all support this conclusion. The modeling approach explicitly controlled for diet, strengthening the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Synchrony of bacterial dynamics across hosts is modest (median=0.187, range 0.033-0.474) and has only a weak relationship with universality scores (r=0.116, p<0.0001). Notably, ASVs in seasonally variable families are not more likely to have high synchrony than other families (ANOVA, p=0.434).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C40, and C41 provide evidence that universality is not simply explained by synchronized dynamics across hosts. The synchrony estimates are well-defined methodologically (Figure 4\u2014figure supplement 3), the statistical tests are appropriate, and the weak correlation with universality (r=0.116) indicates that other mechanisms contribute to universal correlation patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C8"
+    ],
+    "result": "Baboons in Amboseli exhibited comparable evidence of universality to human infants/toddlers in the DIABIMMUNE cohort (median universality 0.150 vs. 0.216) but stronger universality than human adults in the Johnson et al. dataset (median universality 0.086). The DIABIMMUNE cohort showed slightly higher universality scores driven by stronger average correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 and C8 provide quantitative cross-species comparisons with specific universality scores and correlation strengths. The findings are surprising given the expectation that baboons would show stronger universality, and the authors appropriately discuss potential explanations (sampling frequency, dietary variation). The comparison is limited by differences in study design and host populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C45",
+      "C70",
+      "C71"
+    ],
+    "result": "The most universal family-family associations skewed positive in both baboons and human infants: all top 5% pairs (30/30) were positively associated in DIABIMMUNE compared to 70% (23/33) in Amboseli baboons. The trend between correlation strength and sign consistency was strongest in Amboseli (power regression exponent b=1.72, p<0.0001), weaker in DIABIMMUNE (b=1.51), and weakest in Johnson et al. (b=1.19).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C70, and C71 document consistent patterns across datasets with appropriate statistical modeling (power regression). The positive skew in the most universal pairs contrasts with the overall negative bias in correlations, suggesting that the strongest universal relationships are cooperative. The quantitative comparison across datasets strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C72",
+      "C73",
+      "C74",
+      "C9"
+    ],
+    "result": "For overlapping bacterial family pairs, universality scores in Amboseli baboons predicted scores in the DIABIMMUNE human infant dataset (r=0.562, p=0.001, n=29 pairs) but not in the Johnson et al. adult dataset (r=-0.402, p=0.071, n=21 pairs). Only 10 family pairs overlapped between all three datasets, limiting cross-dataset comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C47, C72-C74, and C9 provide evidence for cross-species conservation of universal correlations between baboons and human infants, but not adults. The positive correlation with DIABIMMUNE is statistically significant and biologically meaningful, while the negative (non-significant) correlation with Johnson et al. may reflect methodological differences. The limited taxonomic overlap (10 pairs across all datasets) is an important limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The strongest negatively correlated ASV pair (Kiritimatiellae-Lachnospiraceae) had a median correlation of -0.520 (\u00b10.132 s.d.), while the strongest positively correlated pair (two Prevotella ASVs) had a median correlation of 0.801 (\u00b10.053 s.d.). The two Prevotella ASVs had 97.6% V4 16S sequence identity, indicating they are likely distinct species rather than duplicate gene copies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C55, and C56 provide specific examples of extreme correlations with appropriate taxonomic identification and sequence similarity analysis. The 97.6% sequence identity threshold is appropriately cited (Vetrovsk\u00fd and Baldrian, 2013) as evidence against duplicate gene copies. These examples illustrate the range of correlation strengths observed in the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Bacterial abundance is only a weak predictor of correlation strength (r=0.129 and r=0.223 for more and less abundant partners, p<0.0001), explaining only 6% of variance in median correlation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67 and C68 document that abundance is not a major driver of observed correlations, which is important for ruling out compositional artifacts. The correlations are statistically significant but explain minimal variance, and the analysis appropriately considers both partners in each pair.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "The multinomial logistic-normal modeling approach (basset/fido) controls for variation attributable to seasonal changes in diet, proportionality in count data, and irregular sampling to produce per-individual, per-taxon trajectories of log-ratio abundances for estimating pairwise correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 accurately describes the modeling framework used throughout the study. The approach is well-documented in the methods section and published literature (Silverman et al., 2022), and the controls for known confounders (seasonality, diet, sampling irregularity) are appropriate for longitudinal microbiome data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The study compared baboon data to two human datasets: DIABIMMUNE (285 samples from 15 infants/toddlers over 3 years, monthly sampling) and Johnson et al. (483 samples from 34 adults over 17 days, daily sampling). These were the only publicly available datasets with sufficient repeated sampling, and family/order/class taxonomic levels offered the greatest comparative power (10.1% overlap) compared to genera (3.1%) or ASVs (0%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 provide clear documentation of the comparative datasets and justify the taxonomic level chosen for comparison. The limitation to these two datasets is explicitly acknowledged, and the choice of family/order/class level is appropriately justified by taxonomic overlap. The different sampling frequencies (monthly vs. daily) are important for interpreting differences in universality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "The authors infer that personalized microbiota do not arise from host-specific microbiome ecologies, and that shared ecologies would make designing widely applicable microbiome interventions more attainable than personalized compositions would suggest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75 and C76 represent important interpretations and implications of the findings, but they are inferences rather than direct observations. While the data support shared correlation patterns (C23-C24), the causal claim that personalized compositions do NOT arise from host-specific ecologies is not definitively proven. Alternative explanations are discussed (C82, C83), and the correlational nature of the data limits causal inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The observed correlation patterns likely arise from a combination of ecological interactions between bacteria and shared environmental responses, but cannot be directly mapped to standard ecological interaction categories (mutualism, competition, etc.). Experimental approaches measuring direct effects on growth in vitro are better suited for characterizing these relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77, C78, and C79 appropriately acknowledge the limitations of correlational approaches for inferring ecological mechanisms. The discussion is balanced, recognizing that correlations may reflect both direct interactions and shared environmental responses, and appropriately recommends experimental validation with relevant citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "The lack of universality in the Johnson et al. adult dataset may be due to daily sampling (vs. monthly in baboons and DIABIMMUNE) or greater inter-individual dietary variation compared to the DIABIMMUNE infant cohort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80 and C81 present plausible explanations for the differences between datasets, but these are speculative hypotheses rather than tested conclusions. The manuscript appropriately presents these as possibilities ('may be due to'), but without the ability to subsample Johnson et al. to monthly intervals or quantify dietary variation, these explanations remain uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "ASV-level correlation patterns are expected to be less individualized than strain-level patterns due to functional redundancy, and personalized compositions may emerge from personalized assembly processes or interactions involving rare, host-specific strains excluded from analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82 and C83 present reasonable hypotheses about taxonomic resolution and the role of rare taxa, but these are speculative explanations for reconciling universal correlations with personalized compositions. The predictions about strain-level patterns and rare taxa are not tested in the current study and would require additional data and analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "Some bacterial families may exhibit consistent microbial relationships across hosts, populations, and species, potentially indicating strong partner fidelity or obligate partnerships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84 and C85 are supported by the cross-species comparison showing conservation of universal correlations between baboons and human infants (C46, C9). However, C85 is explicitly attributed to speculation from another study (Loftus et al., 2021), so the mechanistic interpretation (partner fidelity, obligate partnerships) remains speculative pending experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The manuscript establishes the biological context that ecological relationships between gut bacteria mediate important host functions (metabolism, synthesis of bioactive compounds) and span the full spectrum from mutualism to competition and predation. Ecological theory predicts strong positive interactions should be rare because they can hamper community assembly and stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 provide well-established background knowledge supported by appropriate citations. These claims set up the theoretical framework and expectations for the study. The ecological theory about positive interactions (C13) is particularly relevant for interpreting the finding that only 3.8% of ASV pairs are significantly positively correlated (C15).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "Each baboon exhibits a somewhat distinctive gut microbial community (p<0.0001, ANOVA) as visualized by principal components analysis of CLR-transformed ASV abundances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 documents the personalized nature of microbiome compositions, which provides important context for the main finding that correlation patterns are nevertheless shared. The statistical test is appropriate, and the finding is consistent with extensive prior literature on microbiome individuality. This creates the apparent paradox that the study addresses.",
+    "result_type": "MINOR"
+  }
+]

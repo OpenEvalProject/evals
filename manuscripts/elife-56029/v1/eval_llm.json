@@ -1,0 +1,193 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C13",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The study utilized the HCHS/SOL cohort, described as the largest genetic study of Hispanics/Latinos in the U.S., with 10,268 unrelated individuals analyzed for global ancestry estimates using genotype data from an Illumina custom array and a three-population reference panel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C13, C62-C67 provide comprehensive methodological details about the study cohort, sample sizes, genotyping platform, and reference panels. The claims are internally consistent and provide appropriate citations (C1, C64, C66, C67). The quality control procedures and sample sizes are clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C27"
+    ],
+    "result": "Amerindigenous (AI) ancestry increased by approximately 20% over a 50-year period (1940s-1990s) in Mexican Americans, with this trend consistent across multiple stratifications (recruitment region, US-born status, educational attainment, gender) and replicated in an independent cohort (HRS).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C17-C23, C27 collectively demonstrate a robust finding with appropriate statistical tests, effect sizes, confidence intervals, and p-values. The result is replicated in an independent cohort (C22), strengthening the conclusion. Bootstrap resampling (C21) and stratified analyses (C17-C20) support the robustness of the finding. The interaction analysis with parental birthplace (C27) provides additional mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C14",
+      "C15"
+    ],
+    "result": "Hispanic/Latino populations in HCHS/SOL exhibit varying proportions of Amerindigenous, African, and European genetic ancestries, with distinct population structure revealed by UMAP analysis showing Dominicans with highest African ancestry and Mexican Americans/Central-South Americans forming separate clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C14, C15 are supported by ternary plots (Figure 1A-B) and UMAP visualizations (Figure 1C-D). The analyses appropriately reveal population substructure that is masked in simple ancestry proportion plots. The findings are consistent with prior work (Conomos et al., 2016) and provide additional resolution through UMAP.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C31"
+    ],
+    "result": "There is minimal evidence for subcontinental population structure changes over time in Mexican Americans, with negligible FST estimates between birth-decades and no genome-wide significant loci associated with birth year in admixture mapping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28 and C31 are supported by FST analyses (Figure 3\u2014figure supplement 1) and admixture mapping results (Figure 3\u2014figure supplement 2). The negative findings are appropriately reported with statistical thresholds and multiple models tested. These results help rule out certain mechanisms for the observed ancestry changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Runs of homozygosity (ROH) overlapping Amerindigenous ancestry tracts increased significantly with birth year in Mexican Americans, driven primarily by short and medium ROH size classes, while ROH overlapping European ancestry tracts decreased.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 provide specific correlation coefficients, p-values, and stratified analyses by ROH size class. The statistical tests (Kendall's rank correlation) are appropriate, and the opposing patterns for AI vs European ancestry (C35) provide internal consistency. Figure 3C visualizes these trends with LOESS curves.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "Strong ancestry-based assortative mating was observed in HCHS/SOL Mexican Americans, with inferred parental AI ancestries significantly correlated (r=0.708) and consistent across birth decades (r=0.65-0.74).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 are supported by parental ancestry inference using ANCESTOR and statistical correlations with appropriate confidence intervals and p-values. Figure 3D visualizes the correlation. The consistency across decades (C37, Figure 3\u2014figure supplement 4) strengthens the finding. The method (ANCESTOR) is cited and appropriate for the analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Simulation analyses demonstrate that population growth and ancestry-based assortative mating alone do not cause systematic changes in mean ancestry proportions, but ancestry-based fecundity differences can induce such changes, with effects magnified by assortative mating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 are supported by Moran model simulations with results shown in Figure 3\u2014figure supplements 5-8. The simulations appropriately test different demographic scenarios and their effects on ancestry proportions. The theoretical reasoning (C38) is sound, and the simulation results are consistent with population genetic theory. The code is made available (cited GitHub repository).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C47",
+      "C54"
+    ],
+    "result": "18 of 69 biomedical traits (26%) are significantly associated with AI ancestry in Mexican Americans after controlling for multiple factors, with height showing the strongest association. All quartiles of AI ancestry increased in height over time at similar rates, though individuals with lower AI ancestry were taller on average.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C45, C47, C54 are supported by regression analyses with appropriate multiple testing correction (Bonferroni) and control for confounders. Figure 4A-B visualizes the results. The stratified analysis by AI ancestry quartiles (C47) provides nuanced insight. However, the authors acknowledge that unmeasured socioeconomic variables correlated with AI ancestry may contribute to these associations, which is an appropriate caveat.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C51",
+      "C55",
+      "C56",
+      "C57",
+      "C69",
+      "C70"
+    ],
+    "result": "Polygenic risk scores (PRS) for height based on UK Biobank GWAS summary statistics perform poorly in Mexican Americans, particularly in individuals with higher AI ancestry. The PRS showed significant association with height only in the lower two quartiles of AI ancestry, and there was no significant effect of birth year on PRS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C51, C55-C57, C69-C70 collectively demonstrate poor PRS performance in Mexican Americans with higher AI ancestry. The analysis uses 1,078 SNPs from UKBB GWAS (C69, C70) with good allele frequency concordance (C57, r=0.93). The stratified analysis by AI ancestry quartiles shows loss of association in higher AI ancestry groups. The lack of PRS change over time (C51) despite ancestry changes is notable. The findings are consistent with known limitations of European-based GWAS for non-European populations (C55, C56).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Historical and contemporary social factors, including shifts in migration patterns from Mexican states, rapid Hispanic/Latino population growth, historical caste systems, and persistent social inequalities based on skin color, provide context for understanding genetic ancestry patterns and their implications for health disparities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C53, C58-C60 provide important contextual information supported by appropriate citations. These claims connect genetic findings to social and historical factors. While these are primarily literature-based claims rather than novel findings from this study, they are appropriately cited and provide essential context for interpreting the genetic results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "The HCHS/SOL cohort is not representative of all US Hispanics/Latinos, representing a limitation of the study's generalizability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is an appropriate acknowledgment of study limitations by the authors. The HCHS/SOL cohort was recruited from four metropolitan areas (C62), which may not capture the full diversity of US Hispanic/Latino populations. This is a valid limitation that affects the generalizability of findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C68"
+    ],
+    "result": "Background claims establish the demographic context, genetic diversity of Hispanic/Latino populations, underrepresentation in genomics research, and relevant population genetic principles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C6-C12, C68 provide appropriate background information supported by citations to government documents, census data, and published research. These claims establish the rationale and context for the study. The citations appear appropriate and the claims are consistent with established knowledge in the field.",
+    "result_type": "MINOR"
+  }
+]

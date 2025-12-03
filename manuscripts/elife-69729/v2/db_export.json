@@ -1,0 +1,1715 @@
+{
+  "submission": {
+    "id": "0c169cdf-799e-4ed2-99e0-4372bb86c108",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T09:34:10.029003Z",
+    "updated_at": "2025-12-03T09:34:10.029003Z"
+  },
+  "content": [
+    {
+      "id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "submission_id": "0c169cdf-799e-4ed2-99e0-4372bb86c108",
+      "content_type": "manuscript",
+      "content_text": "# Rpl24Bst mutation suppresses colorectal cancer by promoting eEF2 phosphorylation via eEF2K\n\n## Authors\n\n- John RP Knight<sup>1</sup> ([ORCID: 0000-0002-8771-5484](https://orcid.org/0000-0002-8771-5484)) \u2020\n- Nikola Vlahov<sup>1</sup>\n- David M Gay<sup>1</sup>\n- Rachel A Ridgway<sup>1</sup>\n- William James Faller<sup>1</sup>\n- Christopher Proud<sup>3</sup>\n- Giovanna R Mallucci<sup>5</sup>\n- Tobias von der Haar<sup>6</sup> ([ORCID: 0000-0002-6031-9254](https://orcid.org/0000-0002-6031-9254))\n- Christopher Mark Smales<sup>6</sup>\n- Anne E Willis<sup>7</sup> ([ORCID: 0000-0002-1470-8531](https://orcid.org/0000-0002-1470-8531))\n- Owen J Sansom<sup>1</sup> ([ORCID: 0000-0001-9540-3010](https://orcid.org/0000-0001-9540-3010)) \u2020\n\n### Affiliations\n\n1. CRUK Beatson Institute, Garscube Estate Glasgow United Kingdom\n2. Institute of Cancer Sciences, University of Glasgow Glasgow United Kingdom\n3. Department of Biological Sciences, University of Adelaide Adelaide Australia\n4. Lifelong Health, South Australian Health and Medical Research Institute Adelaide Australia\n5. UK Dementia Research Institute at the University of Cambridge and Department of Clinical Neurosciences, University of Cambridge Cambridge United Kingdom\n6. School of Biosciences, Division of Natural Sciences, University of Kent Kent United Kingdom\n7. MRC Toxicology Unit, University of Cambridge Cambridge United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nIncreased protein synthesis supports the rapid cell proliferation associated with cancer. The Rpl24Bst mutant mouse reduces the expression of the ribosomal protein RPL24 and has been used to suppress translation and limit tumorigenesis in multiple mouse models of cancer. Here, we show that Rpl24Bst also suppresses tumorigenesis and proliferation in a model of colorectal cancer (CRC) with two common patient mutations, Apc and Kras. In contrast to previous reports, Rpl24Bst mutation has no effect on ribosomal subunit abundance but suppresses translation elongation through phosphorylation of eEF2, reducing protein synthesis by 40% in tumour cells. Ablating eEF2 phosphorylation in Rpl24Bst mutant mice by inactivating its kinase, eEF2K, completely restores the rates of elongation and protein synthesis. Furthermore, eEF2K activity is required for the Rpl24Bst mutant to suppress tumorigenesis. This work demonstrates that elevation of eEF2 phosphorylation is an effective means to suppress colorectal tumorigenesis with two driver mutations. This positions translation elongation as a therapeutic target in CRC, as well as in other cancers where the Rpl24Bst mutation has a tumour suppressive effect in mouse models.\n\n## Introduction\n\nTumour cells require rapid protein synthesis to acquire sufficient biomass in order to divide and, as such, protein synthesis is directly regulated by many oncogenic signalling pathways (Proud, 2019; Robichaud et al., 2019; Smith et al., 2021). As well as exploiting protein synthesis to drive cell division, cancers use translation to selectively synthesise a proteome geared towards proliferation, survival, and immune evasion. For example, in colorectal cancer (CRC) translation of the mRNA encoding the proto-oncogene c-MYC is selectively upregulated by eIF4E and mTORC1 signalling (Knight et al., 2020a). Likewise, independent reports have shown that the expression of the immune suppressive ligand PD-L1 is maintained on tumour cells by the activity of the translation factors eIF4A and eIF5B as well as phosphorylation of eIF4E and eIF2\u03b1 (Suresh et al., 2020; Xu et al., 2019; Cerezo et al., 2018).\n\nAPC is the most commonly mutated gene in CRC, followed by TP53 and then KRAS (Guinney et al., 2015). We have previously shown that Apc-deficient mouse models of CRC are dependent on fast translation elongation, a process which can be suppressed by rapamycin leading to near complete reversal of tumorigenesis (Faller et al., 2015). This approach has had clinical success, where rapamycin (sirolimus) regressed APC-deficient polyps of familial adenomatous polyposis patients in two independent clinical trials (Yuksekkaya et al., 2016; Roos et al., 2020). Clinical data also suggest that CRCs increase translation elongation to potentiate proliferation, exemplified by the lower expression of the inhibitory kinase eEF2K correlating with worse patient survival (Ng et al., 2019). However, the regulation of translation elongation in CRC is complex, notably being influenced by specific cancer-associated mutations. We have shown that mutation of Kras drives resistance to rapamycin in Apc-deficient models both in terms of its effect on elongation and on proliferation (Knight et al., 2020a). This is consistent with KRAS-mutant CRCs being resistant to rapalogues, and other therapeutics (Ng et al., 2013; Spindler et al., 2013; DeStefanis et al., 2019) and highlights the unmet need for effective therapies against KRAS-mutant cancers. Indeed, a recently developed compound covalently targeting the KrasG12C mutation has shown remarkable potency against this specific mutation (Hong et al., 2020).\n\nEvidence suggests that targeting translation in KRAS-mutant CRC can be effective. As well as our recent study re-sensitising Kras-mutant CRCs to rapamycin by targeting translation initiation (Knight et al., 2020a), we have demonstrated that Kras-mutant models of CRC depend upon the transporter SLC7A5 to maintain protein synthesis by facilitating the influx of amino acids (Najumudeen et al., 2021). These data support protein synthesis as a tractable target in CRC, with the discovery of additional factors regulating these pathways only improving the potential to target protein synthesis in the clinic (Knight and Sansom, 2021).\n\nIn this study, we analyse the previously characterised Rpl24Bst mutation in models of CRC with Apc deletion and Kras mutations. This spontaneously arising four nucleotide deletion in the Rpl24 gene, which encodes RPL24 (a component of the 60S ribosomal subunit also called large ribosomal protein subunit eL24), disrupts splicing of its mRNA, effectively resulting in a Rpl24 heterozygous animal (Oliver et al., 2004). Animals present with impaired dorsal pigmentation and malformed tails, among other defects, leading to the designation of a belly spot and tail (Bst) phenotype and the Rpl24Bst designation. This tool has been used to suppress overall protein synthesis in genetically engineered mouse models of c-MYC-driven B-cell lymphoma, Pten-deficient T-cell acute lymphoblastic leukaemia, T-cell-specific Akt2 activation and a carcinogen-driven model of bladder cancer (Barna et al., 2008; Signer et al., 2014; Hsieh et al., 2010; Jana et al., 2021). In these studies, tumorigenesis increased total protein synthesis, which was rescued by the Rpl24Bst mutation. Suppression of protein synthesis was sufficient to slow tumorigenesis, with some Rpl24Bst/+ mice surviving over three times longer than the median survival of tumour model mice wild-type for Rpl24. However, the means by which the Rpl24Bst mutation suppresses protein synthesis was not addressed in these studies, instead deferring to the original observation that there is likely a defect in ribosome production (Oliver et al., 2004).\n\nHere, we show that decreased expression of RPL24 suppresses proliferation and extends survival in an Apc-deficient Kras-mutant pre-clinical mouse model of CRC. Importantly, we find that reduced RPL24 does not alter the available pool of ribosomal subunits, as previously suggested, but instead alters signalling that regulates a translation factor. Specifically, we observe increased phosphorylation of eEF2, an event that inhibits translation elongation. We directly measure translation elongation to show that the Rpl24Bst mutation suppresses protein synthesis at the elongation step, consistent with increased phosphorylation of eEF2. Reducing P-eEF2 by inactivating its inhibitory kinase, eEF2K, completely restores translation elongation and protein synthesis rates as well as reversing the beneficial effect of Rpl24Bst mutation in our tumour models. Interestingly, we find that the Rpl24Bst mutation has no effect in Kras wild-type models. We attribute this to a specific requirement for physiological RPL24 in Kras-mutant cells, which may provide additional mechanisms to target these cells clinically.\n\nFinally, we provide evidence from transcriptomic and proteomic analyses of patient tissue that supports the signalling pathways uncovered in our pre-clinical models being altered in the human disease. Altogether this work demonstrates that the Rpl24Bst mutation is tumour suppressive in Kras-mutant CRC and elucidates an unexpected mode of action underlying its impact on protein synthesis. This has implications for targeting translation elongation in cancer and provides mechanistic insight to supplement the previously published efficacy of the Rpl24Bst mouse in models of cancer and other diseases.\n\n## Results\n\n### Rpl24Bst mutation does not alter intestinal homeostasis but suppresses the rate of translation\n\nPrior to addressing the role of RPL24 in intestinal tumorigenesis we first analysed whether the Rpl24Bst mutation had any effect on normal intestinal homeostasis (Figure 1A). We observed a reduction in RPL24 expression (Figure 1B), but no differences in intestinal architecture, proliferation shown by BrdU incorporation (Figure 1B) or abundance of stem cells (Olfm4), Paneth cells (lysozyme), or goblet cells (AB/PAS) (Figure 1\u2014figure supplement 1A). Similarly, homeostasis in the colons of Rpl24Bst mutant mice was unaffected, exemplified by no change in proliferation scored by BrdU incorporation (Figure 1\u2014figure supplement 1C). In accordance with these in vivo observations, ex vivo organoids made from the small intestines of Rpl24Bst/+ mice established in culture and grew comparably to wild-type controls (Figure 1C and Figure 1\u2014figure supplement 2A). Surprisingly, we measured a >40% reduction in total protein synthesis, by 35S-methionine labelling, in Rpl24Bst/+ organoids compared to wild-type counterparts (Figure 1D). Therefore, despite no change in homeostasis, Rpl24Bst mutation had a dramatic effect on protein synthesis. This indicates a resistance to reduced protein synthesis in the wild-type intestine, which appears to function normally despite a dramatic reduction in protein output.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/69729/elife-69729-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic representation of experimental procedure. Intestines from wild-type or Rpl24Bst/+ mice were analysed by histology or processed to make intestinal organoids. (B) Staining for H&E, BrdU, RPL24, and P-eEF2 T56 in sections from the small intestines of wild-type and Rpl24Bst/+ mice. Red brackets in P-eEF2 staining indicate crypts and villi, corresponding to quantification to the right. Bars represent 50 \u00b5m. Graphs on the right show scoring for BrdU-positive cells, and H-score calculated for RPL24 and P-eEF2 T-56, plotted \u00b1 standard error of the mean (SEM). Significance was determined by one-tailed Mann\u2013Whitney U test. (C) Micrographs of small intestinal organoids generated from wild-type or Rpl24Bst/+ mice. (D) Protein synthesis rate quantified by 35S-methionine incorporation in wild-type or Rpl24Bst/+ organoids (n = 3), expressed relative to the wild-type protein synthesis rate (=1). Data are from three biologically independent organoid lines for each genotype represented \u00b1 SEM with significance determine by Mann\u2013Whitney U test. (E) Representative polysome profiling from wild-type or Rpl24Bst/+ organoids. Average polysome:subpolysome ratios from three independent organoid lines per genotype are shown above each profile \u00b1 SEM. (F) Western blotting from protein lysates generated from three biologically independent organoid lines for each genotype. Values for RPL24 expression relative to \u03b2-actin and P-eEF2 T56 relative to eEF2 are shown under each lane. The average of the wild-type lanes in both cases has been set to 1. There is a 47% reduction in RPL24 and a 66% increase in P-eEF2 T56 in the Rpl24Bst/+ organoids. (G) Schematic of the potential role of RPL24 in regulating protein synthesis via eEF2. All scale bars are 50 \u03bcm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69729/elife-69729-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Representative images of staining for intestinal lineages and translation associated phosphorylation sites \u2013 P-4E-BP1 T37/46, P-RPS6 S240/4, and P-eIF2\u03b1 S51 of intestinal sections from wild-type and Rpl24Bst/+ mice. Olfm4 defines stem cells, lysozyme for Paneth cells, and AB/PAS (Alcian blue/periodic acid-Schiff) for goblet cells. Bars represent 50 \u00b5m. (B) H-Score quantification of P-RPS6 S240/4, P-4E-BP1 T37/46, and P-eIF2\u03b1 S51 from the same experiment as in (A). (C) BrdU staining of the medial colon from wild-type and Rpl24Bst mice, top, with scoring of BrdU-positive cells per half crypt/villus axis below. Scores are from 3 mice per genotype, each plotted as the average of at least 20 axes. All scale bars are 50 \u03bcm.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/69729/elife-69729-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Organoids either wild-type of mutant for Rpl24Bst were grown over 4 days and the change in growth plotted relative to day 1. Triplicate independent lines were used for each genotype, with the average of these plotted on the graph \u00b1 standard error of the mean (standard error of the mean, SEM). Lack of significance was determined by Mann\u2013Whitney U test. (B) Area under the curve for 40S and 60S ribosomal subunits was determined from the traces in Figure 1E. Data are from three independent biological replicates \u00b1 SEM. (C) Wild-type or Rpl24Bst mice were given 10 Gy of irradiation then sampled 72 hr later. The number of regenerative crypts was quantified from at least six cross sections and the average plotted relative to wild-type regeneration set as 1 (n = 4 per genotype). Micrograph insets show representative sections of intestine for wild-type (black box) and Rpl24Bst/+ (green box) mice. Red arrows indicate regenerating crypts. Bars represent 50 \u00b5m. Data are represented as the mean \u00b1 SEM with significance determined by Mann\u2013Whitney U test. All scale bars are 50 \u03bcm.\n\nWe then investigated how Rpl24Bst mutation suppresses translation. Performing sucrose density gradients to quantify the number of ribosomes engaged in active translation we observed an increase in ribosomes bound to mRNAs in polysomes in Rpl24Bst/+ organoids, particularly the heavy polysomes (Figure 1E). This appears to contradict the reduction in global protein synthesis observed in Figure 1D. However, we and others have previously observed increased polysomes in conjunction with reduced protein synthesis in model systems where translation elongation is reduced (e.g. Knight et al., 2015; Faller et al., 2015). In these instances, slowed translation elongation increased the abundance of polysomes via changes in the phosphorylation of the elongation factor eEF2. We therefore assayed the regulatory phosphorylation of eEF2 (threonine 56/T56) in wild-type and Rpl24Bst mutant samples. This phosphorylation event excludes eEF2 from the ribosome thereby impairing the translocation step of translation elongation, reducing protein synthesis (Ryazanov and Davydova, 1989; Carlberg et al., 1990).\n\nIn small intestinal tissue assayed by immunohistochemistry (IHC) we observed an increase in P-eEF2 T56, specifically in the proliferating crypt and transit amplifying zone of Rpl24Bst/+ mouse intestines (Figure 1B). Likewise, we observed a 66% increase in P-eEF2 T56 in lysates generated from Rpl24Bst/+ organoids compared to wild-type organoids (Figure 1F). These organoids also showed a 47% reduction in RPL24 expression by western blot (Figure 1F). Thus, in these two proliferative settings (intestinal crypts in situ and ex vivo organoids) Rpl24Bst mutation increases the phosphorylation of eEF2, which is known to suppress translation. Surprisingly, we observed that in the differentiated villus, Rpl24Bst mutation suppressed P-eEF2 T56 (Figure 1B). The reasons for this are unclear but may relate to different cell functions in the two compartments. This effect on P-eEF2 T56 is specific, as we observed no effect on the phosphorylation of other translation related proteins, 4E-BP1 or RPS6 (at S240/S244), readouts for modulation of signalling downstream of mTORC1 (Figure 1\u2014figure supplement 1A, B). Similarly, we saw no change in the phosphorylation of the translation stress marker eIF2\u03b1 in Rpl24Bst mutant mice (Figure 1\u2014figure supplement 1A, B).\n\nAltogether, this analysis of wild-type tissue indicates that physiological RPL24 expression is not required for proliferation or function, but reduction of RPL24 expression reduces the rate of translation. Interestingly, this involves regulation of translation elongation and correlates with increased P-eEF2 (Figure 1G). Previously the Rpl24Bst mutation had been suggested to suppress ribosome biogenesis, resulting in uneven 40S and 60S ratios. However, we observed no alteration in the relative levels of the 40S and 60S subunits in sucrose density gradients (Figure 1\u2014figure supplement 2B), consistent with previous reports that RPL24 deletion has negligible effect on ribosome biogenesis (Barki\u0107 et al., 2009).\n\nThe wild-type mouse intestine regenerates following \u03b3-irradiation, dependent on Wnt and mitogen-activated protein kinase (MAPK) signalling pathways. These pathways are often deregulated in colorectal tumours, such that this intestinal regeneration acts as a surrogate for oncogenic potential, with reduced regenerative capacity indicative of reduced tumorigenic proliferation (Faller et al., 2015). We observe that mutation of Rpl24 restricts regeneration of the small intestine (Figure 1\u2014figure supplement 2C). Thus, RPL24 expression enables regeneration, which may correlate with effects in tumorigenesis.\n\n### RPL24 is required for proliferation in Apc-deficient Kras-mutant intestinal tumours\n\nNext, we analysed the effect of the Rpl24Bst mutation on a model of CRC driven by tamoxifen inducible VillinCreER-mediated deletion of Apc and activation of KRAS with a G12D mutation. This model can be used with homozygous deletion of Apc (Apcfl/fl) where intestinal hyperproliferation generates a short-term (3\u20134 days) model or with heterozygous deletion of Apc (Apcfl/+) where intestinal adenomas form following spontaneous loss of the second copy of Apc. The recombination of a lox-STOP-lox allele at the endogenous Kras locus expresses a constitutively active G12D mutant form of the protein. Mice were generated with the Apcfl/fl and KrasG12D alleles with and without the Rpl24Bst mutation (Figure 2A). Hyperproliferation in the Apcfl/fl KrasG12D/+ Rpl24Bst/+ mutant mice was significantly suppressed compared to Apcfl/fl KrasG12D/+ control mice (Figure 2B, C). Reduced RPL24 expression was confirmed by IHC (Figure 2C) and coincided with increased P-eEF2 throughout the proliferative crypt area of the Apcfl/fl KrasG12D/+ Rpl24Bst/+ intestine (Figure 2C and Figure 2\u2014figure supplement 1). Hyperproliferation in the colon mirrored that of the small intestine, with reduced proliferation in mice mutant for Rpl24 compared to those expressing wild-type levels of RPL24 (Figure 2\u2014figure supplement 1). In parallel, organoids were derived from the small intestines of the same genotypes (Apcfl/fl KrasG12D/+ and Apcfl/fl KrasG12D/+ Rpl24Bst/+) and their growth compared. Rpl24Bst mutation resulted in significantly less proliferation ex vivo (Figure 2D), consistent with the in vivo experiment shown in Figure 2B.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/69729/elife-69729-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic representation of experimental protocols. VillinCreER Apcfl/fl KrasG12D/+ or VillinCreER Apcfl/fl KrasG12D/+ Rpl24Bst/+ mice were induced by intraperitoneal injection of tamoxifen at 80 mg/kg then intestinal tissue analysed 3 days later. Tissue was taken for histological analysis or processed into intestinal organoids. (B) Quantification of BrdU incorporation in small intestinal crypt/villus axes following deletion of Apc and activation of Kras, with (n = 4) or without (n = 3) Rpl24Bst mutation. Data are represented as the mean number of BrdU-positive cells per half crypt/villus from >20 axes per mouse \u00b1 standard error of the mean (SEM). Significance was determined by Mann\u2013Whitney U test. (C) Representative images of intestines from the same experiment as in (B), stained for H&E, BrdU, P-eEF2 T56, and RPL24. The red bar on the H&E images indicates the extent of the proliferative zone. Bars represent 50 \u00b5m. (D) Apcfl/fl KrasG12D/+ organoids with or without Rpl24Bst mutation were grown for 4 days and growth relative to day 1 determined by Cell-Titer Blue assay. Data show the mean \u00b1 SEM of n = 3 independent organoid lines. Significance was determined by one-tailed Mann\u2013Whitney U test. (E) Top: schematic of experimental protocol. VillinCreER Apcfl/+ KrasG12D/+ or VillinCreER Apcfl/+ KrasG12D/+ Rpl24Bst/+ mice induced with 80 mg/kg tamoxifen then monitored until clinical endpoint. Survival plot for these genotypes for the days post-induction that they reached endpoint. The median survival and n number for each cohort are shown and significance determined by Mantel\u2013Cox test. Censored subjects were removed from the study due to non-intestinal phenotypes. All scale bars are 50 \u03bcm.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69729/elife-69729-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Top: Schematic representation of experimental approach. VillinCreER Apcfl/fl KrasG12D/+, VillinCreER Apcfl/fl KrasG12D/+ Rpl24Bst/+, or VillinCreER Apcfl/fl KrasG12D/+ Rpl24Bst/+ Eef2kD273A/D273A mice were induced by intraperitoneal injection of tamoxifen at 80 mg/kg then intestinal tissue analysed 3 days later. Bottom: Staining for P\u20104E\u2010BP1 T37/46, P\u2010RPS6 S240/4, and P\u2010eIF2\u03b1 S51 from the genotypes above. VillinCreER Apcfl/fl KrasG12D/+ Rpl24Bst/+ Eef2kD273A/D273A intestines were not stained for P\u2010eIF2\u03b1 S51. Right: H\u2010score quantification for P\u2010eEF2 T56 (matched to images shown in Figures 2C and 5C), P\u20104E\u2010BP1 T37/46, P\u2010RPS6 S240/4, and P\u2010eIF2\u03b1 S51 . Small intestines from at least 3three animals from each genotype (Apcfl/+ KrasG12D/+, Apcfl/+ KrasG12D/+ Rpl24Bst/+, and Apcfl/fl KrasG12D/+ Rpl24Bst/+ Eef2kD273A/D273A) were stained and the intensity quantified from the proliferative crypt region. Data are plotted \u00b1 standard error of the mean (standard error of the mean, SEM). Significance was determined by one\u2010way analysis of variance (ANOVA) analysis with Tukey\u2019s multiple comparison. (B) Left: Representative micrograph images of each genotype stained for BrdU in the medial colons of VillinCreER Apcfl/fl KrasG12D/+ and VillinCreER Apcfl/fl KrasG12D/+ Rpl24Bst/+ mice. Right: Scores for BrdU positivity from 4 mice per genotype, each plotted as the average of at least 20 half crypt/villi. Significance was determined by Mann\u2013 Whitney U test.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/69729/elife-69729-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Top: schematic showing the generation of colonic adenoma cultures, where VillinCreER Apcfl/+ KrasG12D/+ and VillinCreER Apcfl/+ KrasG12D/+ Rpl24Bst/+ mice were induced and aged until colonic tumours were present. Individual adenomas were then excised and cells isolated. Bottom: Growth of these cultures over 4 days, plotted relative to day 1. Biologically independent triplicate organoid lines were used, with the averages plotted \u00b1 SEM. Significance was tested by Mann\u2013 Whitney U test. (B) Tumour number (left) and total tumour volume (right) for indicated tumour models. Each point represents and individual mouse. From left to right n = 16, 11, 21, 13, 19, and 8 mice.\n\nIn the tumour model, where a single copy of Apc is deleted, Apcfl/+ KrasG12D/+ Rpl24Bst/+ mice lived on average 32 days longer than Apcfl/+ KrasG12D/+ controls, an extension of survival of 45% (Figure 2E). Furthermore, Apcfl/+ KrasG12D/+ Rpl24Bst/+ organoids derived from the adenomas in this tumour model grew more slowly than controls (Figure 2\u2014figure supplement 2). There was no significant difference in the number or volume of tumours at experimental endpoint (Figure 2\u2014figure supplement 2), indicating that adenomas can form but take longer to reach a clinically significant burden. Therefore, RPL24 enables proliferation in Apc-deficient, KRAS-activated cells within the intestinal epithelium of the mouse.\n\n### RPL24 maintains translation elongation in Apc-deficient Kras-mutant intestinal tumour models\n\nThe suppression of tumorigenesis in the Apc-deficient Kras-mutant model correlated with increased phosphorylation of eEF2 (Figure 2C and Figure 2\u2014figure supplement 1). Increased P-eEF2 was not accompanied by increased P-eIF2\u03b1, which controls translation initiation in response to various stress signals (Figure 2\u2014figure supplement 1). This indicates that stress signalling to eIF2\u03b1 was not influenced by the Rpl24Bst mutation, highlighting the specificity in the RPL24-dependent regulation of eEF2. To investigate this further we used three methods to measure the rate of translation: polysome profiling, 35S-methionine labelling, and harringtonine run-off assays (Figure 3A). Polysome profiling from extracted crypts from Apcfl/fl KrasG12D/+ and Apcfl/fl KrasG12D/+ Rpl24Bst/+ mice showed an increase in polysomes with the Rpl24 mutation (Figure 3B), and notably a significant increase in the quantity of heavy polysomes (Figure 3C). Intestinal organoids of the same genotype showed a 35% reduction in 35S-methionine incorporation (Figure 3D). These same organoids had a greater than 40% decrease in elongation rate measured by harringtonine run-off (Figure 3E and Figure 3\u2014figure supplement 1A). Together these data provide compelling evidence that normal RPL24 expression is required to maintain translation elongation in this CRC model. Polysome profiles and protein synthesis rate measurements from Apcfl/+ KrasG12D/+ Rpl24Bst/+ adenoma cultures also showed more polysomes and lower protein synthesis compared to control adenoma cultures (Figure 3\u2014figure supplement 1B, C). The reduced protein synthesis rate does not correlate with differences in free ribosomal subunit availability as the ratio of 40S to 60S subunits is unchanged by the Rpl24 mutation in Apc-deficient Kras-mutant cells (Figure 3\u2014figure supplement 1D). To investigate this further we assayed selected ribosomal protein abundances in Apcfl/fl KrasG12D/+ and Apcfl/fl KrasG12D/+ Rpl24Bst/+ organoids by western blot. RPL10 expression was increased by the Rpl24 mutation, RPL22 was decreased, while RPS6 levels were unchanged (Figure 3\u2014figure supplement 1E). While the significance of these individual changes is unknown, the data show that there is not a global suppression of ribosomal protein expression in Rpl24 mutant cells, consistent with no change in free ribosomal subunit levels.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/69729/elife-69729-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic representation of experimental approach. VillinCreER Apcfl/fl KrasG12D/+ or VillinCreER Apcfl/fl KrasG12D/+ Rpl24Bst/+ mice were induced by intraperitoneal injection of tamoxifen at 80 mg/kg then intestinal tissue analysed 3 days later. Intestines were enriched for crypt epithelium for sucrose density analysis or processed into intestinal organoids. (B) Representative sucrose density polysome profiles generated from Apcfl/fl KrasG12D/+ intestinal extracts with or without the Rpl24Bst mutation. Subpolysomal components (40S, 60S, and 80S) and polysomes are labelled, with the polysomes also split pictorially into light and heavy. (C) Quantification of the heavy:light polysome ratio from the experiment in (B). Data show the mean of analysis from three mice \u00b1 standard error of the mean (standard error of the mean, SEM) with significance determined by one-tailed Mann\u2013Whitney U test. (D) Relative protein synthesis rate quantified by 35S-methionine incorporation in Apcfl/fl KrasG12D/+ three biologically independent organoid lines either wild-type or mutant for Rpl24Bst. Data are represented \u00b1 SEM with significance determine by Mann\u2013Whitney U test. (E) Ribosome run-off rate determined in Apcfl/fl KrasG12D/+ small intestinal organoid lines either wild-type or mutant for Rpl24Bst (n = 3 per genotype). Data are represented as the mean of three biological replicates \u00b1 SEM with significance determine by Mann\u2013Whitney U test. Raw data are available in Figure 3\u2014figure supplement 1A. (F) Schematics of the regulation of protein synthesis and tumour proliferation downstream of RPL24. Smaller RPL24 in bottom scheme represents reduced RPL24 expression. \u2018P\u2019 represents phosphorylation of eEF2.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69729/elife-69729-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Representative polysome profiles from Apcfl/fl KrasG12D/+ or Apcfl/fl KrasG12D/+ Rpl24Bst/+ small intestinal organoid cultures, pre-treated with harringtonine for 5 min/300 s (H300) or untreated (H0). These traces were analysed for the run-off rates shown in Figure 3E. (B) Representative polysome profiles from Apcfl/+ KrasG12D/+ or Apcfl/+ KrasG12D/+ Rpl24Bst/+ colonic adenoma cultures (left) and quantification of the polysome to subpolysome ratio from these (right). Two biologically independent lines were analysed per genotype and plotted \u00b1 standard error of the mean (SEM). Scheme above denotes the generation of adenoma cultures from distinct colonic tumours in aged VillinCreER Apcfl/+ KrasG12D/+ and VillinCreER Apcfl/+ KrasG12D/+ Rpl24Bst/+ mice. (C) Relative protein synthesis rates quantified by 35S-methionine incorporation in the colonic adenoma cultures described in (B) with n = 3. The average protein synthesis rates were plotted relative to Apcfl/+ KrasG12D/+ controls (=1) for three organoid lines per genotype \u00b1 SEM. Significance was determined by Mann\u2013Whitney U test. (D) 60S to 40S ratio from sucrose density gradients from lysates generated from the indicated genotypes. Data show the mean \u00b1 SEM. Representative traces are shown in Figure 3B and Figure 4\u2014figure supplement 2B. (E) Western blotting from protein lysates generated from three biologically independent organoid lines for each genotype. Mean values for RPL24, RPL10, RPL22, and RPS6 expression relative to \u03b2-actin and P-eEF2 T56 relative to eEF2 are shown next to the relevant blot \u00b1 SEM. The average of the VillinCreER Apcfl/+ KrasG12D/+ lanes in all cases has been set to 1.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/69729/elife-69729-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Top: protein purified from sucrose density gradients performed on VillinCreER Apcfl/+ KrasG12D/+ and VillinCreER Apcfl/+ KrasG12D/+ Rpl24Bst/+ organoids was resolved by sodium dodecyl sulphate\u2013polyacrylamide gel electrophoresis (SDS\u2013PAGE) and western blot performed for ribosomal proteins and \u03b2-tubulin, as a non-ribosomal control. Fractions within the gradient are annotated as non-ribosomal (non-ribo), 40S, 60S, 80S, and polysomes. Data are representative of three independent biological replicates. These gradients were also used in the analysis shown in Figure 3A, E, with these being the H0 replicates from that experiment. Bottom: quantification of RPL24 and RPL10 abundances, as a percentage of total cytoplasmic protein, across gradients from VillinCreER Apcfl/+ KrasG12D/+ and VillinCreER Apcfl/+ KrasG12D/+ Rpl24Bst/+ organoids. Circles show individual values from three replicates with bars plotting the mean of these \u00b1 standard error of the mean (standard error of the mean, SEM).\n\nThe reduced expression of RPL24, but maintained ribosomal subunit stoichiometry, in Rpl24Bst/+ mice raises the possibility of heterogeneous ribosomes (reviewed by Gay et al., 2021), with some potentially lacking RPL24. To address this, we purified protein from sucrose density gradients from Apcfl/fl KrasG12D/+ and Apcfl/fl KrasG12D/+ Rpl24Bst/+ organoids and analysed ribosomal protein expression within subpolysomes and polysomes (Figure 3\u2014figure supplement 2). The large subunit protein RPL10 showed little change in distribution between the two genotypes, consistent with no change in free ribosomal subunit levels and a shift from light to heavy polysomes, but similar overall polysome number. Importantly, RPL24 can incorporate into 60S, 80S, and polysomes in Apcfl/fl KrasG12D/+ Rpl24Bst/+ organoids. The distribution of RPL24 appeared altered, with less in the 60S and more in the polysomes, although this was not significant. It is difficult to interpret absolute amounts of protein in each fraction and to compare this between genotypes. However, considering that Apcfl/fl KrasG12D/+ Rpl24Bst/+ organoids express less RPL24 (Figure 3\u2014figure supplement 1E) the reduction in RPL24 in 60S subunits is even more striking. Thus, our data do not rule out the possibility of ribosome heterogeneity in that some 60S subunits in Apcfl/fl KrasG12D/+ Rpl24Bst/+ organoids may lack RPL24.\n\nInterpreting this molecular analysis in conjunction with the effects on tumorigenesis leads to the conclusion that RPL24 expression maintains translation elongation and protein synthesis rates, which in turn maintain tumour-related proliferation (Figure 3F). Suppressing RPL24 expression increases P-eEF2, an effect also seen in lysates from Apcfl/fl KrasG12D/+\u00a0Rpl24Bst/+ organoids (Figure 3\u2014figure supplement 1E), which decreases the rate of elongation and overall protein synthesis and correlates with suppressed tumorigenesis and proliferation in vivo.\n\n### Rpl24 mutation has no effect in CRC models expressing wild-type Kras\n\nIn parallel to analysing the effect of Rpl24 mutation in Apc-deficient Kras-mutant intestinal tumours, we also assessed its role in Apc-deficient models wild-type for Kras. We have previously shown that these are dependent on signalling from mTORC1 to maintain low levels of P-eEF2, and that rapamycin induces P-eEF2 to great therapeutic benefit (Faller et al., 2015). We observed that the hyperproliferation in the small intestine or colon of Apcfl/fl mice was not reduced by the Rpl24Bst mutation (Figure 4A, B and Figure 4\u2014figure supplement 1A). Furthermore, in both germline ApcMin/+ and inducible Apcfl/+ models of Apc deficiency we see no benefit of the Rpl24Bst mutation, with no difference in survival or tumour development (Figure 4C and Figure 4\u2014figure supplement 1B). In agreement, Apcfl/fl organoids with the Rpl24Bst mutation grew at an identical rate to those wild-type for Rpl24 in culture (Figure 4D). Together these data demonstrate that reduced RPL24 expression does not limit tumorigenesis in Apc-deficient CRC models with wild-type Kras.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/69729/elife-69729-fig4-v2.jpg)\n\n**Figure 4.:** (A) Schematic representation of experimental approach. VillinCreER Apcfl/fl or VillinCreER Apcfl/fl Rpl24Bst/+ mice were induced by two intraperitoneal injection of tamoxifen at 80 mg/kg on days 0 and 1 then intestinal tissue analysed on day 4. Intestines were analysed histologically or intestinal organoids generated. (B) Top: representative micrographs showing proliferation as BrdU positivity and extent of proliferation as a red bar in H&E image. RPL24 and P-eEF2 T56, staining is also shown for each genotype. Bars represent 50 \u00b5m. Below: BrdU scoring from Apcfl/fl or Apcfl/fl Rpl24Bst/+ mouse intestines and H-scores for RPL24 and P-eEF2 T56 protein levels. For BrdU scoring BrdU was administered 2 hr before sampling and at least 20 half crypt/villus axes were scored per animal and the mean plotted \u00b1 standard error of the mean (standard error of the mean, SEM). (C) ApcMin/+ tumour model survival curve, for mice with and without Rpl24Bst mutation. Lack of a significant difference was determined by Mantel\u2013Cox test. (D) Relative growth of Apcfl/fl and Apcfl/fl Rpl24Bst/+ small intestinal organoids over 3 days, measure by Cell-Titer Blue assay. The average change in proliferation is plotted from three independent biological replicates per genotype. (E) Relative protein synthesis rates quantified from 35S-methionine incorporation into Apcfl/fl, Apcfl/fl treated with 250 nM rapamycin for 24 hr and Apcfl/fl Rpl24Bst/+ small intestinal organoids. Significant changes were calculated by one-way analysis of variance (ANOVA) with Tukey\u2019s multiple comparison. N = 3 per genotype with the mean protein synthesis rate for each genotype plotted \u00b1 SEM. (F) Relative expression of ribosomal protein mRNAs in VillinCreER Apcfl/fl and VillinCreER Apcfl/fl KrasG12D/+ whole intestine samples, where wild-type tissue has been normalised to 1. The fold increase in expression from Apcfl/fl to Apcfl/fl KrasG12D/+ samples for Rpl24 and the average of all other RP mRNAs are shown. Statistical analysis was by one sample t-test of the other RP mRNA fold changes using the fold change for Rpl24 mRNA as the hypothetical mean. All scale bars are 50 \u03bcm.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69729/elife-69729-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Left: staining for BrdU in the medial colons of VillinCreER Apcfl/fl and VillinCreER Apcfl/fl Rpl24Bst/+ mice. Bottom: scores are from 3 and 5 mice per genotype, each plotted as the average of at least 20 half crypt/villi. Lack of significance was determined by Mann\u2013Whitney U test. (B) Left: schematic of experiment, VillinCreER Apcfl/+ mice with or without Rpl24Bst mutation were induced then aged until showing signs of intestinal tumours. Right: survival curve from the VillinCreER Apcfl/+ tumour model, with and without Rpl24Bst mutation. Censored subjects were sampled for health reasons not relating to the intestine. Lack of a significant difference was determined by Mantel\u2013Cox test. All scale bars are 50 \u03bcm.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/69729/elife-69729-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Schematic representation of experimental approach. VillinCreER Apcfl/fl or VillinCreER Apcfl/fl Rpl24Bst/+ mice were induced by two intraperitoneal injection of tamoxifen at 80 mg/kg on days 0 and 1 then intestinal tissue analysed on day 4. Intestines analysed histologically or by epithelial extraction for sucrose density gradient analysis. (B) Left: representative polysome profiles generated from Apcfl/fl intestinal extracts with or without the Rpl24Bst mutation. Subpolysomal components and polysomes are labelled. Right: quantification of the polysome:subpolysome ratio across three biologically independent replicates for each genotype. Data show the mean \u00b1 standard error of the mean (SEM). (C) Staining of small intestinal tissue for P-4E-BP1 T37/46, P-RPS6 S240/4, and P-eIF2\u03b1 S51 from VillinCreER Apcfl/fl or VillinCreER Apcfl/fl Rpl24Bst/+ mice alongside H-score quantification from the proliferative zones of the intestines of at least 3 mice per genotype. (D) Relative ribosomal protein mRNA abundances from RNA sequencing of wild-type, VillinCreER Apcfl/fl and VillinCreER Apcfl/fl KrasG12D/+ whole small intestinal tissue. Three independent biological samples were analysed per genotype with the averages used in this analysis. RNA sequencing reads for VillinCreER Apcfl/fl and VillinCreER Apcfl/fl KrasG12D/+ tissue was normalised to wild-type tissue set to 1. Values are shown horizontally scaled as fold changes to the wild-type tissue for each genotype. All scale bars are 50 \u03bcm.\n\nDespite no effect on proliferation, we observed an increase in P-eEF2 in Apcfl/fl Rpl24Bst/+ intestines compared to Apcfl/fl (Figure 4B), showing that P-eEF2 is consistently increased in the intestinal crypts of Rpl24Bst/+ mice. However, we detected no change in the ratio of polysomes to subpolysomes in Apcfl/fl Rpl24Bst/+ intestines compared to Apcfl/fl (Figure 4\u2014figure supplement 2A, B) and no change in protein synthesis rate between organoids of these same genotypes (Figure 4E). In contrast, rapamycin treatment significantly reduces protein synthesis in Apcfl/fl organoids treated in parallel (Figure 4E). From these data, we conclude that the change in P-eEF2 does not limit the rate of protein synthesis which allows efficient tumorigenesis in these Kras wild-type models of CRC. There was no alteration in the phosphorylation status of 4E-BP1, RPS6, or eIF2\u03b1 in the Rpl24Bst mutants in the Apcfl/fl model (Figure 4\u2014figure supplement 2C), indicating that translation promoting mTORC1 signalling remains high while translation stress signalling to eIF2\u03b1 is unchanged.\n\nWe hypothesised that the reason for the KRAS specificity seen with the Rpl24Bst mutation may relate to expression levels between the different genotypes analysed. Using unbiased RNA sequencing data from wild-type, Apcfl/fl and Apcfl/fl KrasG12D/+ small intestinal tissue we observed a consistent increase in ribosomal protein expression following Apc deletion, then again following KRAS activation (Figure 4\u2014figure supplement 2D). This is consistent with previous reports (Smit et al., 2020), and a requirement to increase protein synthesis as a direct consequence of KRAS activation. Indeed, the mRNAs for all ribosomal proteins with sufficient reads were increased on average nearly 1.5-fold by KRAS activation in the small intestine (Figure 4F). In contrast, the Rpl24 mRNA was only increased by 1.14-fold following Kras mutation, despite a nearly twofold increase following deletion of Apc (Figure 4F). This manifests as a significant difference in the RNA expression of Rpl24 compared to the other ribosomal proteins. Therefore, RPL24 expression may be sufficient in Rpl24Bst mice in Apc-deleted models, but then becomes limiting following Kras mutation due to the limited upregulation of Rpl24 expression accompanying KRAS activation.\n\n### Genetic inactivation of eEF2K completely reverses the anti-proliferative benefit of Rpl24 mutation\n\nThus far we have demonstrated a correlation between the increase in P-eEF2 and the slowing of translation elongation following Rpl24Bst mutation. To test whether the slowing of elongation caused by Rpl24Bst mutation was dependent on P-eEF2, we used a whole-body point mutant of eEF2K, the kinase that phosphorylates eEF2, which almost completely inactivates its kinase activity (Gildish et al., 2012). We crossed this Eef2kD273A/D273A allele to the Apcfl/fl KrasG12D/+ Rpl24Bst/+ mice to generate Apcfl/fl KrasG12D/+ Rpl24Bst/+ Eef2kD273A/D273A mice. In the short-term hyperproliferation model, the inactivation of Eef2k completely reversed the suppression of proliferation seen in Apcfl/fl KrasG12D/+ Rpl24Bst/+ small intestines (Figure 5A\u2013C), and the medial colon (Figure 5\u2014figure supplement 1A). The kinase inactive Eef2k allele resulted in P-eEF2 being undetectable (Figure 5C and Figure 2\u2014figure supplement 1), and we previously reported no difference in hyperproliferation between Apcfl/fl KrasG12D/+ and Apcfl/fl KrasG12D/+ Eef2kD273A/D273A models (Knight et al., 2020a). The reversal in proliferation rate with Eef2k and Rpl24Bst mutations was also seen in intestinal organoid growth after 3 days (Figure 5D). Furthermore, inactivation of eEF2K reverted the survival benefit of the Rpl24Bst mutation in the Apcfl/+ KrasG12D/+ tumour model (Figure 5E). This experiment also shows the lack of effect of the Eef2kD273A/D273A mutation on tumorigenesis. Indeed, Eef2kD273A/D273A had no impact on tumorigenesis in inducible Apcfl/+ and germline ApcMin/+ models of Apc-deficient intestinal tumorigenesis (i.e., expressing wild-type Kras) (Figure 5\u2014figure supplement 1B, C). Consistent with this, the Eef2kD273A/D273A allele had no effect on proliferation in the Apcfl/fl hyperproliferation model, either alone or in combination with Rpl24Bst mutation in both the small intestine and colon (Figure 5\u2014figure supplement 1D). Heterozygous inactivation of Eef2k resulted in a slight reversal of the extension of survival associated with Rpl24Bst mutation in the Apcfl/+ KrasG12D/+ tumour model (Figure 5\u2014figure supplement 2A).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/69729/elife-69729-fig5-v2.jpg)\n\n**Figure 5.:** (A) Schematic representation of experimental approach. VillinCreER Apcfl/fl KrasG12D/+, VillinCreER Apcfl/fl KrasG12D/+ Rpl24Bst/+, or VillinCreER Apcfl/fl KrasG12D/+ Rpl24Bst/+ Eef2kD273A/D273A mice were induced by intraperitoneal injection of tamoxifen at 80 mg/kg then intestinal tissue analysed 3 days later. Intestines were analysed histologically or processed into intestinal organoids. (B) BrdU incorporation quantified from within small intestinal crypt/villus axes following deletion of Apc and activation of Kras, either wild-type of mutant for Rpl24, or mutant for Rpl24 and Eef2k. Data are represented as the mean of at least 20 crypt/villi per mouse \u00b1 standard error of the mean (SEM) with significance determined by one-way analysis of variance (ANOVA) with Tukey\u2019s multiple comparison. N = 3 per genotype. (C) Representative images of H&E, BrdU, and P-eEF2 T56 staining of intestines from the same experiment as (B). Red bar on H&E indicates extent of proliferative zone. Bars represent 50 \u00b5m. (D) Organoids deficient for Apc and with activated Kras with or without Rpl24Bst mutation, or mutant for both Rpl24 and Eef2k were grown for 3 days and growth relative to day 1 determined by Cell-Titer Blue assay. Data show the mean \u00b1 SEM of n = 3 biologically independent organoid lines. Significance was determined by one-tailed Mann\u2013Whitney U test. (E) Survival plot for Apc Kras ageing mice with or without the Rpl24Bst mutation, Eef2K mutation and with both Rpl24 and Eef2k mutations. Median survival and n numbers for each cohort are shown and significance determined by Mantel\u2013Cox test. Censored subjects were removed from the study due to non-intestinal phenotypes. All scale bars are 50 \u03bcm.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69729/elife-69729-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Scoring for BrdU incorporation in the medial colons of Apcfl/fl KrasG12D/+, Apcfl/fl KrasG12D/+ Rpl24Bst/+, and Apcfl/fl KrasG12D/+ Rpl24Bst/+ Eef2kD273A/D273A mice. Scores are from 3, 4, and 3 mice, respectively, each plotted as the average of at least 20 half crypt/villi. Significance was determined by one-way analysis of variance (ANOVA) with Tukey\u2019s multiple comparison. (B) Survival curve from the Apcfl/+ tumour model for mice bearing the Eef2kD273A/D273A mutation or wild-type for Eef2k. Lack of a significant difference was determined by Mantel\u2013Cox test. (C) ApcMin/+ tumour model survival curve, for mice with wild-type Eef2k or the inactivating mutation, Eef2kD273A/D273A. Lack of a significant difference was determined by Mantel\u2013Cox test. (D) Scoring for BrdU-positive cells in the proximal small intestine and medial colons of Apcfl/fl, Apcfl/fl Rpl24Bst/+, Apcfl/fl Eef2kD273A/D273A, and Apcfl/fl Rpl24Bst/+ Eef2kD273A/D273A mice. Each point on the graphs is plotted as the average of at least 20 half crypt/villi.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/69729/elife-69729-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Survival curve from the Apcfl/+ KrasG12D/+ tumour model for mice bearing the Rpl24Bst mutation and/or one copy of the inactivating Eef2k mutation. Median survival in days and n numbers are shown for each genotype. Significance test was performed by Mantel\u2013Cox test. Apcfl/+ KrasG12D/+ and Apcfl/+ KrasG12D/+ Rpl24Bst/+ survival curves are reused from Figure 5E. (B) Tumour number (top) and total volume (bottom) scored macroscopically from Apcfl/+ KrasG12D/+ mice with or without Rpl24Bst mutation and with no, one, or two copies of the inactivating Eef2kD273A mutation. Each point is an individual mouse with the bars depicting the mean \u00b1 standard error of the mean (standard error of the mean, SEM). From left to right n = 20, 11, 14, 9, 18, and 11 mice.\n\nTherefore, mutation of Rpl24 requires functional eEF2K to suppress proliferation and extend survival in this model of CRC. There was no alteration in the number or cumulative size of tumours in the ageing model at endpoint (Figure 5\u2014figure supplement 2B), again identifying tumour cell proliferation, rather than tumour initiation, as the principal factor regulated by RPL24 and eEF2K. These data also confirm that the effect of Rpl24Bst mutation on the tumour phenotype is entirely dependent upon eEF2K activity.\n\n### Rpl24Bst mutation suppresses translation exclusively via eEF2K/P-eEF2\n\nNext, we addressed the molecular consequences of inactivation of eEF2K downstream of Rpl24Bst mutation. The reduction in protein synthesis that results from Rpl24Bst mutation is completely reversed by inactivating eEF2K (Figure 6A), with Apcfl/fl KrasG12D/+ Rpl24Bst/+ Eef2kD273A/D273A organoids having an almost identical translation capacity as Apcfl/fl KrasG12D/+ controls. Similarly, the rate of ribosome run-off was also reverted in Apcfl/fl KrasG12D/+ Rpl24Bst/+ Eef2kD273A/D273A compared to Apcfl/fl KrasG12D/+ Rpl24Bst/+ organoids, again to the same rate as controls with wild-type Rpl24 (Figure 6B and Figure 6\u2014figure supplement 1A). In agreement, crypt fractions from Apcfl/fl KrasG12D/+ Rpl24Bst/+ Eef2kD273A/D273A mice have a reduced, although not significant, the number of heavy polysomes compared to Apcfl/fl KrasG12D/+ Rpl24Bst/+ crypt cells (Figure 6\u2014figure supplement 2B), indicating faster translation elongation following eEF2K inactivation.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/69729/elife-69729-fig6-v2.jpg)\n\n**Figure 6.:** (A) 35S-methionine incorporation to determine relative protein synthesis by in Apcfl/fl KrasG12D/+ small intestinal organoids wild-type or mutant for Rpl24 or with both Rpl24 andConsistent with this, the Eef2k mutations. Data are represented \u00b1 standard error of the mean (standard error of the mean, SEM) with significance determined by one-way analysis of variance (ANOVA) with Tukey\u2019s multiple comparison. N = 3 per genotype, each representing an independent organoid line. (B) Ribosome run-off rate determined in Apcfl/fl KrasG12D/+ small intestinal organoids mutant or wild-type for Rpl24 or with both Rpl24 and Eef2k mutations. Data are the mean of three biologically independent organoid lines represented \u00b1 SEM with significance determined by Mann\u2013Whitney U test. Raw data are available in Figure 6\u2014figure supplement 1A. The run-off rate for Apcfl/fl KrasG12D/+ control organoids is reproduced from Figure 3E. (C) Schematic representation of findings in Apc-deficient Kras-mutant mouse and organoid models. Top: RPL24 expression maintains translation and proliferation by suppressing the phosphorylation of eEF2 by limiting eEF2K activity. Middle: reduced expression of RPL24 activates eEF2K, increasing P-eEF2, reducing translation elongation and suppressing tumorigenesis and proliferation. Bottom: inactivation of eEF2K reverts the phenotype in Rpl24Bst cells, due to the inability to phosphorylate and suppress eEF2. Elevated elongation rates correlate with increased proliferation following inactivation of eEF2K.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69729/elife-69729-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Polysome profiles from sucrose density gradients of Apcfl/fl KrasG12D/+ Rpl24Bst/+ or Apcfl/fl KrasG12D/+ Rpl24Bst/+ Eef2kD273A/D273A small intestinal organoid cultures, pre-treated with harringtonine for 5 min/300 s (H300) or untreated (H0). These traces are representative of those analysed for the run-off rates shown in Figure 6B. (B) Representative sucrose density profiles generated from Apcfl/fl KrasG12D/+ intestinal extracts with or without the Rpl24Bst mutation and inactivation of eEF2K. Subpolysomal components and polysomes are labelled, and the polysomes have been split pictorially into light and heavy. To the right of this is quantification of the heavy:light polysome ratio. Data show the mean \u00b1 standard error of the mean (standard error of the mean, SEM) of 5, 3, and 3 mice reading from left to right. Significance was determined by one-way analysis of variance (ANOVA) with Tukey\u2019s multiple comparison.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/69729/elife-69729-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Immunohistochemistry (IHC) staining for P-ERK T202/T204 in intestinal tissue form Apcfl/fl KrasG12D/+ or Apcfl/fl KrasG12D/+ Rpl24Bst/+ mice. Representative images from each genotype are shown on the right and H-score quantification from three animals per genotype on the left. (B) Western blotting on lysates from Apcfl/fl KrasG12D/+ or Apcfl/fl KrasG12D/+ Rpl24Bst/+ organoids, for P-ACC S79, ACC, and \u03b2-actin as a sample control. All scale bars are 50 \u03bcm.\n\nThis has important implications for the function of RPL24, showing that ribosomes in Rpl24Bst mutant cells can elongate efficiently despite the reduction in RPL24 expression. However, reduced RPL24 increases P-eEF2 which inhibits elongation, with an absolute requirement for eEF2K for this (Figure 6C). Importantly, the combination of the Rpl24 and eEF2K mutants shows that when P-eEF2 is abolished elongation occurs at normal speed, despite reduced expression of RPL24.\n\neEF2K activity is regulated by several upstream signalling pathways, as well as factors such as calcium ion and oxygen levels (Ballard et al., 2021). Given that the Rpl24Bst mutation increases phosphorylation of P-eEF2, we assessed what effect the mutation had on multiple kinases upstream of eEF2K in Apcfl/fl KrasG12D/+ and Apcfl/fl KrasG12D/+ Rpl24Bst/+ small intestinal tissue and organoids. mTORC1 suppresses eEF2K activity via p70 S6K. However, we saw no difference in the mTORC1-regulated phosphorylation of RPS6 (S240/4) and 4E-BP1 (T37/46) (Figure 2\u2014figure supplement 1). Similarly, MAPK signalling also suppresses eEF2K, via the RSK pathway. There was no difference in signalling through this pathway in Rpl24 mutant mice, as assayed via P-ERK1/2 (T202/Y204) (Figure 6\u2014figure supplement 2A). AMPK directly phosphorylates and activates eEF2K in response to changes in intracellular ATP:AMP ratio. Using phosphorylation of the canonical AMPK target acetyl-CoA carboxylase (P-ACC S79) as a read-out of AMPK activity, Rpl24 mutation had no effect on AMPK signalling (Figure 6\u2014figure supplement 2B). Thus, we find no evidence for RPL24 expression levels affecting the activity of three kinases that in turn regulate eEF2K.\n\n### The expression of RPL24, EEF2K, and EEF2 is indicative of fast elongation in human CRC\n\nUsing pre-clinical mouse models, we have demonstrated that physiological RPL24 expression maintains low eEF2K-mediated phosphorylation of eEF2 (Figure 7A). Hypo-phosphorylated eEF2 then ensures rapid protein synthesis enabling tumour proliferation in vivo. We next sought to position this pre-clinical work in the context of clinical studies of the human disease. Using publicly available datasets for RNA expression in normal and cancerous colon tissues we observe increased RPL24 and EEF2 expression in conjunction with reduced EEF2K expression (Figure 7B). This mirrors the signalling pathways in our mouse models and ensures high expression of active eEF2. Elevated EEF2 message and reduced EEF2K message levels in these clinical samples are consistent with conservation of this signalling in the clinic. Similar results are seen for the protein expression of RPL24, eEF2K, and eEF2 from colon adenocarcinoma samples (Figure 7\u2014figure supplement 1A), and for the three mRNAs in rectal adenocarcinoma (Figure 7\u2014figure supplement 1B). These expression analyses highlight the conservation of the proliferative tumour-associated signalling pathways characterised in our pre-clinical mouse models and patient samples.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/69729/elife-69729-fig7-v2.jpg)\n\n**Figure 7.:** (A) Schematic of the findings presented here from pre-clinical mouse models. KRAS activation requires RPL24 expression to maintain low eEF2 phosphorylation. This occurs via a double negative regulation of eEF2K, whereby RPL24 suppresses eEF2K, which suppresses eEF2. eEF2 activity correlates with protein synthesis and proliferation rates. Dashed lines indicate indirect or undefined regulatory pathways. (B) RNA expression levels of RPL24, EEF2K, and EEF2 between normal colon and colon adenocarcinoma samples using data extracted from The Cancer Genome Atlas by TNMplot. Relative expression changes are annotated, as well as p values for each transcript.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69729/elife-69729-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Protein levels of RPL24, eEF2K, and eEF2 in normal colon and colon adenocarcinoma collated from the Clinical Proteomic Tumor Analysis Consortium by UALCAN. Numbers of samples and p values are shown for each protein. (B) RNA expression levels of RPL24, EEF2K, and EEF2 between normal rectum and rectum adenocarcinoma samples using data extracted from The Cancer Genome Atlas by TNMplot. Relative expression changes are annotated, as well as p values for each transcript.\n\n## Discussion\n\nThe original characterisation of the Rpl24Bst mutation identified a defect in ribosome biogenesis affecting the synthesis of 60S subunits (Oliver et al., 2004). The evidence to support this was limited to analyses of fasted/refed mouse livers for nascent rRNAs and by polysome profiles purporting to show reductions in 28S rRNA precursors and mature 60S subunits, respectively. In contrast, RNAi depletion of RPL24 in human cell lines had no effect on ribosome biogenesis, or on the relative abundance of 40S and 60S subunits (Barki\u0107 et al., 2009; Wilson-Edell et al., 2014). Furthermore, two reports have identified RPL24 as an exclusively cytoplasmic protein, leading to the hypothesis that it is assembled into mature ribosomes in the cytoplasm after rRNA synthesis and processing has already occurred (Barki\u0107 et al., 2009; Saveanu et al., 2003). In agreement with this, in the hindbrain of E9.5 embryos, the Rpl24Bst mutation had no effect on nucleolar architecture, indicating that it is not required for nucleolar function (Herrlinger et al., 2019). Our data agree with these later examples, as we fail to see any effect of the Rpl24Bst mutation on 60S:40S ratio in wild-type or transformed mouse intestines. Of further importance to the field, we also demonstrate in our tumour model that the translation defect in Rpl24Bst mutant mice is restored to normal levels following inactivation of eEF2K in Rpl24Bst mutant mice, showing that the defect is dependent on eEF2K. From this, we conclude that although the ribosomes produced in Rpl24Bst/+ mice do allow protein synthesis to proceed at near physiological levels, this process is restricted via signalling through eEF2K/P-eEF2.\n\nRPL24 depletion suppresses tumorigenesis in Apc-deficient Kras-mutant (APC KRAS) mouse models of CRC, but not in Apc-deficient Kras wild-type (APC) models. In line with this, protein synthesis is reduced following depletion of RPL24 in our APC KRAS models, but not in APC models, despite induction of P-eEF2 in both cases. We previously showed that suppression of translation elongation via mTORC1/eEF2K/P-eEF2, using rapamycin, in the same APC models dramatically suppressed proliferation and extended survival (Faller et al., 2015). Thus, while RPL24 depletion or rapamycin treatment of Apc-deficient intestines each induce P-eEF2, only rapamycin treatment suppresses protein synthesis. The effect on protein synthesis appears to be the differential driving this divergence, with proliferation only impaired when protein synthesis is reduced. Crucially, RPL24 deficiency does not suppress mTORC1 activity since phosphorylation of the mTORC1 effectors 4E-BP1 and RPS6 (at S240/S244) is not reduced in Apc-deficient Rpl24Bst/+ intestines, providing an explanation of how proliferation and protein synthesis are maintained in Apc-deficient Rpl24Bst mutant animals. We also provide evidence that Rpl24 expression is lower than that of other ribosomal protein mRNAs following Kras mutation, which could explain why diminished RPL24 expression specifically suppresses proliferation in Kras-mutant models.\n\nIn view of the mechanisms we have described here, it is interesting to reflect on previous work with the Rpl24Bst mutant mouse. The Rpl24Bst mutation suppresses tumorigenesis in three mouse models of different types of blood cancer, and in a model of bladder cancer (Signer et al., 2014; Barna et al., 2008; Hsieh et al., 2010; Jana et al., 2021). In each case, the Rpl24Bst mutation was found to decrease translation, although how the translation was suppressed was not fully determined. Barna et al. demonstrated a reduction in cap-dependent translation using a luciferase reporter in Rpl24Bst MEFs (Barna et al., 2008). Furthermore, Rpl24Bst mutation dramatically suppressed translation following MYC activation, consistent with Rpl24Bst slowing tumorigenesis via reduced translation. We have shown that in mouse models of CRC the molecular mechanism by which normal levels of RPL24 maintain translation is via eEF2K and P-eEF2, therefore implicating this pathway in these previously studied blood cancer models.\n\nThe Rpl24Bst mutation has also been used to analyse brain development from neural progenitor cells and explored as a model for retinal degenerative disease (Riazifar et al., 2015; Herrlinger et al., 2019). These studies found a revertant phenotype in neural progenitor cells overexpressing LIN28A and a defect in subretinal angiogenesis in Rpl24Bst/+ mice. The role of translation elongation should now be analysed with respect to these phenotypes. eEF2K, and the many upstream pathways it integrates, are potential targets for intervention in these in vivo models. It will also be of interest to determine how the inactivation of eEF2K affects the whole-body phenotypes of the Rpl24Bst mouse, such as the coat pigmentation and tail defects.\n\neEF2K has a pleiotropic effect in tumorigenesis, acting akin to a tumour suppressor or promoter dependent on the context (Knight et al., 2020b). In some cancers, eEF2K promotes tumorigenesis. For example, under nutrient deprivation eEF2K acts as a pro-survival factor in transformed fibroblasts and tumour cell lines by suppressing protein synthesis to ensure survival (Leprivier et al., 2013). Here, we show that eEF2K inactivation does not modify intestinal tumorigenesis. However, eEF2K is required for the suppression of tumorigenesis and protein synthesis following mTORC1 inhibition in APC cells (Faller et al., 2015) or Rpl24Bst mutation in APC KRAS cells (this work). Therefore, although eEF2K does not directly drive tumorigenesis, low eEF2K activity ensures there is no blockade of translation or proliferation in tumour cells. Furthermore, eEF2K expression is required for drug or signalling responses that suppress tumorigenesis, giving it tumour suppressive activity. In accordance, CRC patients with low eEF2K protein expression suffer a significantly worse prognosis (Ng et al., 2019). Furthermore, we present mRNA and protein expression data showing that eEF2K is reduced in clinical CRC samples compared to normal tissue. This agrees with a model where low eEF2K allows rapid translation elongation to promote proliferation.\n\nUsing the same clinical datasets we demonstrate that both RPL24 and eEF2 are elevated in CRC, consistent with their roles in promoting translation and proliferation. This presents the possibility of directly targeting either RPL24 or eEF2 for anti-cancer benefit. In agreement with this, RNAi against RPL24 in human breast cancer cell lines dramatically reduced proliferation (Wilson-Edell et al., 2014). Similarly, inhibiting eEF2, using a compound reported to slow its exit from the ribosome and thus the rate of protein synthesis, reduces cell line and patient derived organoid growth (Stickel et al., 2015; Keysar et al., 2020). These reports agree with the data presented here suggesting that targeting of RPL24 or eEF2 would be beneficial in CRC. Identifying the mechanistic link between RPL24 and eEF2K is part of our ongoing work, but here we have ruled out mTORC1, MAPK, and AMPK signalling as contributing factors.\n\nThis work uncovers an unexpected role for the ribosomal protein RPL24 in the regulation of translation elongation, acting via eEF2K/P-eEF2. We demonstrate that depletion of RPL24 suppresses tumorigenesis in a pre-clinical mouse model of a CRC. We provide genetic evidence supported by molecular assays of translation elongation to demonstrate that RPL24 depletion activates eEF2K to elicit tumour suppression in our models. We also speculate as to the role of eEF2K in the previously published blood cancer models where RPL24 depletion was beneficial. This work provides additional evidence for the anti-tumorigenic role of eEF2K in CRC, highlighting the potential for targeting translation elongation for this disease.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>Tg(Vil1-cre/ERT2)23Syr</td>\n      <td>el Marjou et al., 2004</td>\n      <td>RRID:MGI:3053826</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>Apctm1Tno</td>\n      <td>Shibata et al., 1997</td>\n      <td>RRID:MGI:1857966</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>Krastm4Tyj</td>\n      <td>Jackson et al., 2001</td>\n      <td>RRID:MGI:2429948</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>Rpl24Bst</td>\n      <td>Oliver et al., 2004</td>\n      <td>RRID:MGI:1856685</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>Eef2kD273A</td>\n      <td>Gildish et al., 2012</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>ApcMin</td>\n      <td>Moser et al., 1990</td>\n      <td>RRID:MGI:1856318</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Mus musculus)</td>\n      <td>VillinCreER Apcfl/fl KrasG12D/+ small intestinal organoids</td>\n      <td>This study</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Mus musculus)</td>\n      <td>VillinCreER Apcfl/fl small intestinal organoids</td>\n      <td>This study</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Mus musculus)</td>\n      <td>VillinCreER Apcfl/fl KrasG12D/+ Rpl24Bst/+ small intestinal organoids</td>\n      <td>This study</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Mus musculus)</td>\n      <td>VillinCreER Apcfl/fl Rpl24Bst/+ small intestinal organoids</td>\n      <td>This study</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>BrdU(mouse monoclonal)</td>\n      <td>BD Biosciences #347,580</td>\n      <td>RRID:AB_400326</td>\n      <td>IHC: (1:250)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>P-eEF2 T56(rabbit polyclonal)</td>\n      <td>Cell Signaling Technology #2,331</td>\n      <td>RRID:AB_10015204</td>\n      <td>WB: (1:2000)IHC: (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>eEF2(rabbit polyclonal)</td>\n      <td>Cell Signaling Technology #2,332</td>\n      <td>RRID:AB_10693546</td>\n      <td>WB: (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>P-4E-BP1(rabbit monoclonal)</td>\n      <td>Cell Signaling Technology #2,855</td>\n      <td>RRID:AB_560835</td>\n      <td>IHC: (1:250)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>P-RPS6 S240/4(rabbit monoclonal)</td>\n      <td>Cell Signaling Technology #5,364</td>\n      <td>RRID:AB_10694233</td>\n      <td>IHC: (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>P-eIF2\u03b1 S51(rabbit monoclonal)</td>\n      <td>Cell Signaling Technology#3,398</td>\n      <td>RRID:AB_2096481</td>\n      <td>IHC: (1:50)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>P-ERK T202/Y204(rabbit polyclonal)</td>\n      <td>Cell Signaling Technology #9,101</td>\n      <td>RRID:AB_331646</td>\n      <td>IHC: (1:400)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Lysozyme(rabbit polyclonal)</td>\n      <td>Dako A0099</td>\n      <td>RRID:AB_2341230</td>\n      <td>IHC: (1:300)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>RPS6(mouse monoclonal)</td>\n      <td>Cell Signaling Technology #2,317</td>\n      <td>RRID:AB_2238583</td>\n      <td>WB: (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>RPL10(rabbit polyclonal)</td>\n      <td>Novus NBP1-84037</td>\n      <td>RRID:AB_11007661</td>\n      <td>WB: (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>RPL22(rabbit polyclonal)</td>\n      <td>Abcam ab111073</td>\n      <td>RRID:AB_10863642</td>\n      <td>WB: (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Acetyl-CoA carboxylase(rabbit monoclonal)</td>\n      <td>Cell Signaling Technology #3,676</td>\n      <td>RRID:AB_2219397</td>\n      <td>WB: (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>P-acetyl-CoA carboxylase S79(rabbit monoclonal)</td>\n      <td>Cell Signaling Technology #3,661</td>\n      <td>RRID:AB_330337</td>\n      <td>WB: (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>\u03b2-Actin(mouse monoclonal)</td>\n      <td>Sigma-Aldrich #A2228</td>\n      <td>RRID:AB_476697</td>\n      <td>WB: (1:10,000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>\u03b2-Tubulin(mouse monoclonal)</td>\n      <td>Cell Signaling Technology #2,128</td>\n      <td>RRID:AB_823664</td>\n      <td>WB: (1:4000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat Anti-Mouse Immunoglobulins/HRP(goat polyclonal)</td>\n      <td>Dako #P0447</td>\n      <td>RRID:AB_2617137</td>\n      <td>WB: (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat Anti-Rabbit Immunoglobulins/HRP(goat polyclonal)</td>\n      <td>Dako #P0448</td>\n      <td>RRID:AB_2617138</td>\n      <td>WB: (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Olfm4 RNAScope</td>\n      <td>ACD #311,838</td>\n      <td>RNAScope</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Recombinant Murine Noggin</td>\n      <td>Peprotech #250-38</td>\n      <td></td>\n      <td>100 ng/ml</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Animal-Free Recombinant Human EGF</td>\n      <td>Peprotech #AF-100-15</td>\n      <td></td>\n      <td>50 ng/ml</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Recombinant Mouse R-Spondin 1 Protein</td>\n      <td>R&amp;D Systems #3474-RS</td>\n      <td></td>\n      <td>500 ng/ml</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Vectorstain Elite ABC-HRP</td>\n      <td>Vector Laboratories PK-6102</td>\n      <td>RRIDs:AB_2336820</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Vectorstain Elite ABC-HRP</td>\n      <td>Vector Laboratories PK-PK-6101</td>\n      <td>RRIDs:AB_2336821</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Cell Proliferation Labelling Reagent</td>\n      <td>Amersham Bioscience RPN201</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Cell-Titer Blue</td>\n      <td>Promega #G8080</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Rapamycin</td>\n      <td>LC Laboratories #R-5000</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Harringtonine</td>\n      <td>Santa Cruz sc-204771</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>EasyTag EXPRESS 35S Protein Labeling Mix</td>\n      <td>Perkin Elmer #NEG772002MC</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>Image J</td>\n      <td>Rueden et al., 2017</td>\n      <td>RRID:SCR_003070</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>G*Power</td>\n      <td>Faul et al., 2009</td>\n      <td>RRID:SCR_013726</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Materials availability\n\nThe mouse strains used will be made available on request. However, this may require a Materials Transfer Agreement and/or a payment if there is potential for commercial application. We ourselves are limited by the terms of Materials Transfer Agreements agreed to by the suppliers of the mouse strains.\n\n### Mouse studies\n\nExperiments with mice were performed under licence from the UK Home Office (licence numbers 60/4183 and 70/8646). All mice used were inbred C57BL/6J (Generation \u22658) and were housed in conventional cages with a 12 hr light/dark cycle and ad libitum access to diet and water. Mice were genotyped by Transnetyx in Cordova, Tennessee. Experiments were performed on mice between the ages of 6 and 12 weeks; both male and female mice were used. Sample sizes for all experiments were calculated using the G*Power software (Faul et al., 2009) and are shown in the figures or legends. Researchers were not blinded during experiments. The VillinCreER allele (el Marjou et al., 2004) was used for intestinal recombination by intraperitoneal (IP) injection of tamoxifen in corn oil at a final in vivo concentration of 80 mg/kg. The Apc flox allele, ApcMin, KrasG12D lox-STOP-lox allele, Eef2kD273A and Rpl24Bst alleles were previously described (Jackson et al., 2001; Shibata et al., 1997; Gildish et al., 2012; Oliver et al., 2004; Moser et al., 1990). Tumour model experiments began with a single dose of tamoxifen after which mice were monitored until they showed signs of intestinal disease \u2013 paling feet from anaemia, weight loss and hunching behaviour. Tumours were scored macroscopically by counting and recording diameter after fixation of intestinal tissue. Tumour volumes were calculated from the tumour diameters assuming a spherical tumour shape. For short-term experiments, mice wild-type for Kras were induced on consecutive days (days 0 and 1) and sampled 4days after the first induction (day 4). Mice bearing the KrasG12D allele were induced once and sampled on day 3 post-induction. Where indicated, 250 \u03bcl of BrdU cell proliferation labelling reagent (Amersham Bioscience RPN201) was given by IP injection 2 hr prior to sampling. BrdU-positive cells were scored from crypt base to villus tip (a half crypt/villus axis) from the proximal small intestine or medial colon and represented as the mean number of positive cells from at least 20 axes per mouse. For the regeneration experiments, mice were exposed to 10 Gy of \u03b3-irradiation at a rate of 0.423 Gy/min from a caesium 137 source. They were then sampled 72 hr after irradiation and regenerative crypts scored from H&E stained sections as previously described (Faller et al., 2015). Batch correction was used by normalising each experiment to relevant wild-type controls.\n\n### Histology and IHC\n\nTissue was fixed in formalin and embedded in paraffin. IHC staining was carried out as previously (Faller et al., 2015), using the following antibodies: BrdU (BD Biosciences #347580), P-eEF2 T56 (Cell Signaling Technology [CST] #2331), P-4E-BP1 T37/46 (CST #2855), P-RPS6 S240/4 (CST #5364), P-eIF2\u03b1 S51 (CST #3398), P-ERK T202/Y204 (CST #9101), RPL24 (Sigma-Aldrich HPA051653), and Lysozyme (Dako A0099). The IHC protocol followed the Vector ABC kit (mouse #PK-6102, rabbit #PK-6101). RNAScope analysis was conducted according to the manufacturer\u2019s guidelines (ACD) using a probe to murine Olfm4 (#311838). For all staining, a minimum of three biological replicates were stained and representative images used throughout. For BrdU scoring in short-term model experiments tissue was fixed in methanol:chloroform:acetic acid at a ratio 4:2:1 then transferred to formalin and embedded in paraffin.\n\n### Intestinal organoid culture\n\nCrypt cultures were isolated and then maintained as previously described (Knight et al., 2020a). In all crypt culture experiments, multiple biologically independent cultures were generated and analysed from different animals of the shown genotypes. DMEM/F12 medium (Life Technologies #12634-028) was supplemented with 5 mM HEPES (Life Technologies #15630-080), 100 U/ml penicillin/streptomycin (Life Technologies #1540-122), 2 mM L-glutamine (Life Technologies #25030-024), 1\u00d7 N2, 1\u00d7 B27 (Invitrogen #17502-048 and #12587-010), 100 ng/ml noggin (Peprotech #250-38), and 50 ng/ml EGF (Peprotech #AF-100-15). Wild-type cultures were also supplemented with 500 ng/ml R-spondin (R&D Systems #3474-RS). For ex vivo growth assays, cells were plated in technical triplicate in 96-well plates, and proliferation measured using Cell-Titer Blue (Promega #G8080) added to previously untreated cells each day for up to 4 days. Rapamycin (LC Laboratories R-5000) was dissolved in DMSO and administered for 24 hr, comparing to DMSO vehicle-treated cells.\n\n### Western blotting\n\nSamples were lysed (10 mM Tris [pH 7.5], 50 mM NaCl, 0.5% NP40, 0.5% SDS supplemented with protease inhibitor cocktail [Roche #11836153001] PhosSTOP [Roche #04906837001] and benzonase [Sigma-Aldrich #E1014]) on ice and then the protein content estimated by BCA assay (Thermo Fisher Scientific #23225). 20 \u03bcg of protein were denatured in loading dye containing SDS then resolved by 4\u201312% sodium dodecyl sulphate\u2013polyacrylamide gel electrophoresis (Invitrogen #NP0336BOX). For western blots from gradients, equivalent volumes were loaded from each gradient fraction. Protein was transferred to nitrocellulose membranes, blocked with excess protein and immunoblotted overnight at 4\u00b0C using the following antibodies; P-eEF2 T56 (CST #2331), eEF2 (CST #2332), RPL24 (Sigma-Aldrich HPA051653), RPS6 (CST #2317), RPL10 (Novus NBP1-84037), RPL22 (Abcam ab111073), ACC (CST #3676), P-ACC S79 (CST #3661), \u03b2-tubulin (CST #2128), and \u03b2-actin (Sigma-Aldrich #A2228) as a sample control. One-hour incubation at room temperature with secondary antibodies (horseradish peroxidase [HRP]-conjugated anti-mouse secondary [Dako #P0447]; HRP-conjugated anti-rabbit secondary [Dako #P0448]) was followed by exposure to autoradiography films or a ChemiDoc MP imager (BioRad) with ECL reagent (Thermo Fisher Scientific #32106). Quantification was performed using Image J (Rueden et al., 2017).\n\n### Sucrose density gradients\n\nCells were replenished with fresh medium for the 6 hr before harvesting. This medium was then spiked with 200 \u00b5g/ml cycloheximide (Sigma-Aldrich #C7695) 3 min prior to harvesting on ice. Crypt fractions from mice were isolated by extraction of the epithelium from 10 cm of proximal small intestine. Each data point plotted represents an individual animal. PBS-flushed linearly opened small intestines were incubated in RPMI 1640 medium (Thermo Fisher Scientific #21875059) supplemented with 10 mM EDTA and 200 \u00b5g/ml cycloheximide for 7 min at 37\u00b0C with regular agitation to extract villi. Crypts were isolated by transferring remaining tissue to ice-cold PBS containing 10 mM EDTA and 200 \u00b5g/ml cycloheximide for a further 7 min, again with agitation. The remaining tissue was discarded. Samples were lysed (300 mM NaCl, 15 mM MgCl2, 15 mM Tris pH 7.5, 100 \u00b5g/ml cycloheximide, 0.1% Triton X-100, 2 mM DTT, and 5 U/ml SUPERase.In RNase Inhibitor (Thermo Fisher Scientific #AM2696)) on ice and post-nuclear extracts placed on top of 10\u201350% wt/vol sucrose gradients containing the same buffer (apart from no Triton X-100, DTT, or SUPERase.In). These were then spun in an SW40Ti rotor at 255,000 rcf for 2 hr at 4\u00b0C under a vacuum. Samples were then separated through a live 254 nM optical density reader (ISCO). Polysome to subpolysome (P:S), heavy to light polysome (H:L), or 60S to 40S (60S:40S) ratios were calculated using the manually defined trapezoid method. For harringtonine run-off assays, cultures were prepared in duplicate for each genotype. One was pre-treated with 2 \u00b5g/ml harringtonine (Santa Cruz sc-204771) for 5 min (300 s) prior to cycloheximide addition. This was then processed as above. Run-off rates were calculated as previously described (Knight et al., 2015). Trichloroacetic acid protein precipitation from sucrose density gradients was performed as before (Knight et al., 2013).\n\n### 35S-methionine incorporation assay\n\nOrganoids were replenished with medium 6 hr prior to analysis while in the optimal growth phase post-splitting. Technical triplicates were used from organoids from three different animals per experiments. 35S-methionine (Perkin Elmer #NEG772002MC) was used at 30 \u00b5Ci/ml for 30 min. Samples were lysed using the same buffer described for Western blotting. Protein was precipitated in 12.5% (wt/vol) trichloroacetic acid onto glass microfiber paper (Whatmann #1827-024) by use of a vacuum manifold. Precipitates were washed with 70% ethanol and acetone. Scintillation was read on a Wallac MicroBeta TriLux 1450 scintillation counter using Ecoscint scintillation fluid (SLS Ltd #LS271) from these microfiber papers. In parallel the total protein content was determined by BCA assay using unprecipitated sample. Protein synthesis rate was expressed as the scintillation normalised to the total protein content (CPM/\u00b5g/ml protein), which was then changed to a relative value compared to relevant controls for each experiment.\n\n### RNA sequencing\n\nThis was performed as previously described (Knight et al., 2020a), using three animals per genotype. The reads for each ribosomal protein mRNA were then averaged and the fold change compared to wild-type tissue calculated and plotted. Source data for this analysis are available linked to Figure 4F.\n\n### Publicly available clinical data analysis\n\nThe TNMplot and UALCAN web portals were used to analysis publicly available dataset from The Cancer Genome Atlas and Clinical Proteomic Tumor Analysis Consortium. Details of these portals are available in these publications (Bartha and Gy\u0151rffy, 2021; Chandrashekar et al., 2017).\n\n### Statistical analyses\n\nAll statistical analyses are detailed in the relevant figure legends. In all cases, calculated p values less than or equal to 0.05 were considered significant. N numbers for each experiment are detailed within each figure, as individual points on graphs or within figure legends.\n",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "78ff938e-c0b2-442b-a3e3-73fdbe6b21a1",
+      "submission_id": "0c169cdf-799e-4ed2-99e0-4372bb86c108",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Margaret C Frame, University of Edinburgh United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.69729.sa0](https://doi.org/10.7554/eLife.69729.sa0)\n\nBriefly, Knight and colleagues investigate the role of the ribosome and translational control in colorectal tumours. A mutation of a protein of the large ribosomal subunit, RPL24, is used to suppress tumours driven by two mutations found commonly in cancer, in APC and KRAS. The authors identify a mechanistic output of the RPL24 BST mutation, eEF2 phosphorylation, which they demonstrate is a major effector in inhibiting tumour cell translation and proliferation. By targeting the eEF2 kinase eEF2K, they restore protein synthesis in RPL24 mutant cells. The conclusion is well supported by the experimental data presented, which implies that translation elongation can be a potential therapeutic target of KRAS mutated CRC. Importantly, Rpl24Bst in wildtype intestine does not affect epithelial cell proliferation and differentiation, suggesting that translation elongation can be used as tumour-specific target.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Margaret C Frame, University of Edinburgh United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.69729.sa1](https://doi.org/10.7554/eLife.69729.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Rpl24Bst mutation suppresses colorectal cancer by promoting eEF2 phosphorylation via eEF2K\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and David Ron as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Vivian Li (Reviewer #1).\n\nThe Reviewing Editor has drafted this to help you prepare a revised submission.\n\nThe manuscript is well written with a strength being the design of experiments that combines genetically modified mouse models, organoid culture, biochemical assays, and transcriptomic analysis to address the role of RPL24 in CRC. The approach is thorough and comprehensive, and there is sufficient evidence provided to support the main conclusions. The only limitations of the work that the authors may wish to address are:\n\ni) It remains unclear why and how the tumour suppressive role of Rpl24Bst is specific to KRAS G12D mutation only, considering that increased eEF2 phosphorylation is also observed in the KRAS wildtype model, and\n\nii) The mechanism by which RPL24-bst induces eEF2-phosphorylation. How direct is this and does it involve ribosome heterogeneity and/or translational stress?\n\nImportantly this work enhances the concept of targeting translational control in tumours.\n\nEssential revisions:\n\n1. The authors provide convincing data showing that Rpl24Bst inhibits CRC proliferation and tumour growth by suppressing protein translation elongation via Eef2k-dependent eEF2 phosphorylation. They further show that the tumour suppressive role of Rpl24Bst is specific to Kras G12D mutation but not in Kras wildtype Apc-deficient animals. The Kras mutant specificity of Rpl24Bst model is very interesting, yet the underlying mechanism is largely unclear. Although we appreciate that the underlying full mechanism might be the scope of another story, it would be helpful if the authors were to elaborate on this point, taking into account the following considerations: In p.260-262, the authors suggest that Rpl24 expression might be sufficient for Apc-deleted models but not Kras mutation due to the limited upregulation of Rpl24 in Figure 4F. However, upregulation of eEF2 phosphorylation in the Apc-deleted models (Figure 4B) is apparently equivalent to the Kras mutant model (Figure S2A). Importantly, the authors show that abrogation of eEF2 phosphorylation via Eef2k inhibition has no effect on tumour growth in Apc-deleted only model (Figure S5B). Alternative explanation of Kras mutation specificity could be that eEF2 phosphorylation (and reduced translation elongation) is only required in Kras mutant tumours but not in Apc-deficient tumours. It will strengthen the hypothesis if the authors can evaluate whether translation elongation is affected in the Eef2k mutant and Apc-deficient tumours to see if translation elongation via Eef2k-p-eEF2-axis is important for Apc mutation.\n\n2. The BrdU cell counting throughout the manuscript is normalised \"per half crypt\". BrdU positive staining often goes beyond the crypts towards villi in Apc mutant and Apc/Kras mutant models. It is unclear how half crypt is defined in hyperproliferative crypts (such as Figure 2C) between genotypes.\n\n3. In Figure 4B, the BrdU staining is clearly reduced in Apcfl/flRpl24Bst/+ compared to Apcfl/fl intestine, yet quantitation shows no difference. Again, this may depend on how \"BrdU+ cells per half crypt\" is defined in different genotypes when there is massive crypt expansion in one but not the other.\n\n4. In figure S1F, the authors show that mutated Rpl24 restricts irradiation-induced regeneration by quantifying regenerative crypts. How did the authors define \"regenerative crypt\" without staining? Also, how was the data normalised with all wildtype controls set at = 1?\n\n5. The authors show that tumour numbers are not affected in Figure S2D and S5E. What about tumour size?\n\n6. There are multiple figure citation errors in the manuscripts, particularly in result session including line 148-9/figure 1D, lines 243,244/figure4D, line 274/figureS2A, line 277/figure4D, line 279/figure4E and line 287/figureS4E. Please proofread.\n\n7. The authors claim that there are 75% increase in P-eEF2 and 50% reduction in RPL24 expression in Figure 1F. Where's the quantitation?\n\n8. Please provide p-value for Figure 4B (H-score of Rpl24 and p-eEF2) and Figure S6B.\n\n9. Questions remain around the mechanism of action of RPL24-bst. Does RPL24-bst really not alter ribosome abundance? How are the polysome profiles normalised? Are cell equivalents loaded? Could the ratio of different poly fractions be maintained +/- RPL24-bst but total number of ribosomes be reduced?\n\n10. What is the protein expression level of other RPLs when RPL24bst is expressed? This information for a few RPLs would either support the concept that ribosome number is maintained or would reveal a co-ordinated reduction in large ribosome subunit proteins.\n\n11. Does reduced RPL24 expression lead to ribosome heterogeneity? If ribosome number is unaltered, but one subunit, RPL24, is reduced, presumably there is ribosome heterogeneity? Would this lead to translational stress?\n\n12. What is the mechanistic link between RPL24 and eEF2? Any hints at how eEF2 phosphorylation is influenced by RPL24? How direct is the mechanism? Is translational stress involved?\n",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e7109f0c-0f31-4bb5-b030-ba7c00b5e04d",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C1",
+      "claim": "The Rpl24Bst mutant mouse reduces the expression of the ribosomal protein RPL24.",
+      "claim_type": "EXPLICIT",
+      "source": "The Rpl24Bst mutant mouse reduces the expression of the ribosomal protein RPL24 and has been used to suppress translation and limit tumorigenesis in multiple mouse models of cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract and supported by western blot data showing reduced RPL24 expression in Rpl24Bst/+ mice.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "d0c854f4-485e-4669-8f9c-486c27f9bf48",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C2",
+      "claim": "Rpl24Bst mutation suppresses tumorigenesis in a model of colorectal cancer with Apc and Kras mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that Rpl24Bst also suppresses tumorigenesis and proliferation in a model of colorectal cancer (CRC) with two common patient mutations, Apc and Kras.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through survival experiments showing Apcfl/+ KrasG12D/+ Rpl24Bst/+ mice lived on average 32 days longer than controls.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "04bfb212-0e11-4d98-ab78-2e99758687b8",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C3",
+      "claim": "Rpl24Bst mutation has no effect on ribosomal subunit abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to previous reports, Rpl24Bst mutation has no effect on ribosomal subunit abundance but suppresses translation elongation through phosphorylation of eEF2, reducing protein synthesis by 40% in tumour cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by sucrose density gradient data showing no alteration in the relative levels of 40S and 60S subunits.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "d9cb96d7-1b5b-479c-99f6-6c5c95464704",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C4",
+      "claim": "Rpl24Bst mutation suppresses translation elongation through phosphorylation of eEF2.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to previous reports, Rpl24Bst mutation has no effect on ribosomal subunit abundance but suppresses translation elongation through phosphorylation of eEF2, reducing protein synthesis by 40% in tumour cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by increased P-eEF2 T56 staining in Rpl24Bst/+ tissues and reduced translation elongation rates measured by harringtonine run-off assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "710204ab-ed2c-4f76-b54c-837772e9d2d3",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C5",
+      "claim": "Rpl24Bst mutation reduces protein synthesis by 40% in tumour cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to previous reports, Rpl24Bst mutation has no effect on ribosomal subunit abundance but suppresses translation elongation through phosphorylation of eEF2, reducing protein synthesis by 40% in tumour cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured by 35S-methionine incorporation assays in organoids.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "3fac9aaa-c34e-4c92-9613-01f4d428e1e6",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C6",
+      "claim": "Ablating eEF2 phosphorylation by inactivating eEF2K completely restores the rates of elongation and protein synthesis in Rpl24Bst mutant mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Ablating eEF2 phosphorylation in Rpl24Bst mutant mice by inactivating its kinase, eEF2K, completely restores the rates of elongation and protein synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by harringtonine run-off assays and 35S-methionine incorporation showing restoration of translation rates in Apcfl/fl KrasG12D/+ Rpl24Bst/+ Eef2kD273A/D273A organoids.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "c7c4ac58-bca5-4dbc-9dce-4ca7d1b39a11",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C7",
+      "claim": "eEF2K activity is required for the Rpl24Bst mutant to suppress tumorigenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, eEF2K activity is required for the Rpl24Bst mutant to suppress tumorigenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Shown by survival experiments where inactivation of eEF2K reversed the survival benefit of Rpl24Bst mutation in the Apcfl/+ KrasG12D/+ tumour model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "3e265b20-5087-4627-9a2d-7eb3f257402c",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C8",
+      "claim": "APC is the most commonly mutated gene in CRC, followed by TP53 and then KRAS.",
+      "claim_type": "EXPLICIT",
+      "source": "APC is the most commonly mutated gene in CRC, followed by TP53 and then KRAS (Guinney et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "4322561f-a0b3-4ce0-8d09-8c2ad3ed5510",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C9",
+      "claim": "Apc-deficient mouse models of CRC are dependent on fast translation elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that Apc-deficient mouse models of CRC are dependent on fast translation elongation, a process which can be suppressed by rapamycin leading to near complete reversal of tumorigenesis (Faller et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "e40ab2bb-504d-416b-86fc-8d58e193055c",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C10",
+      "claim": "Rapamycin regressed APC-deficient polyps of familial adenomatous polyposis patients in two independent clinical trials.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach has had clinical success, where rapamycin (sirolimus) regressed APC-deficient polyps of familial adenomatous polyposis patients in two independent clinical trials (Yuksekkaya et al., 2016; Roos et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from clinical trial publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "316b3ba1-234c-44e1-9e98-acccc784669f",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C11",
+      "claim": "Lower expression of eEF2K correlates with worse patient survival in CRC.",
+      "claim_type": "EXPLICIT",
+      "source": "Clinical data also suggest that CRCs increase translation elongation to potentiate proliferation, exemplified by the lower expression of the inhibitory kinase eEF2K correlating with worse patient survival (Ng et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published clinical data analysis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "068cf635-7855-4698-b6f9-15630130d193",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C12",
+      "claim": "Mutation of Kras drives resistance to rapamycin in Apc-deficient models.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that mutation of Kras drives resistance to rapamycin in Apc-deficient models both in terms of its effect on elongation and on proliferation (Knight et al., 2020a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "80188edb-6e1e-4097-9277-c929cb53a0b8",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C13",
+      "claim": "KRAS-mutant CRCs are resistant to rapalogues and other therapeutics.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with KRAS-mutant CRCs being resistant to rapalogues, and other therapeutics (Ng et al., 2013; Spindler et al., 2013; DeStefanis et al., 2019) and highlights the unmet need for effective therapies against KRAS-mutant cancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from multiple published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "515db22d-0294-48e9-a2b4-1bc812150912",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C14",
+      "claim": "The Rpl24Bst mutation is a spontaneously arising four nucleotide deletion in the Rpl24 gene.",
+      "claim_type": "EXPLICIT",
+      "source": "This spontaneously arising four nucleotide deletion in the Rpl24 gene, which encodes RPL24 (a component of the 60S ribosomal subunit also called large ribosomal protein subunit eL24), disrupts splicing of its mRNA, effectively resulting in a Rpl24 heterozygous animal (Oliver et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from the original characterization of the mutation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "0376034c-bd3f-4e91-8471-5b1dfd51e994",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C15",
+      "claim": "The Rpl24Bst mutation disrupts splicing of Rpl24 mRNA, effectively resulting in a Rpl24 heterozygous animal.",
+      "claim_type": "EXPLICIT",
+      "source": "This spontaneously arising four nucleotide deletion in the Rpl24 gene, which encodes RPL24 (a component of the 60S ribosomal subunit also called large ribosomal protein subunit eL24), disrupts splicing of its mRNA, effectively resulting in a Rpl24 heterozygous animal (Oliver et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from the original characterization of the mutation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "78994be5-619c-4535-8bd4-2073aa0f7f82",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C16",
+      "claim": "Rpl24Bst mutation has been used to suppress overall protein synthesis in genetically engineered mouse models of c-MYC-driven B-cell lymphoma.",
+      "claim_type": "EXPLICIT",
+      "source": "This tool has been used to suppress overall protein synthesis in genetically engineered mouse models of c-MYC-driven B-cell lymphoma, Pten-deficient T-cell acute lymphoblastic leukaemia, T-cell-specific Akt2 activation and a carcinogen-driven model of bladder cancer (Barna et al., 2008; Signer et al., 2014; Hsieh et al., 2010; Jana et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from multiple published studies using the Rpl24Bst mouse.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "4c99cfd0-8913-46ce-99ca-f87cdad3fdcf",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C17",
+      "claim": "Some Rpl24Bst/+ mice survived over three times longer than the median survival of tumour model mice wild-type for Rpl24.",
+      "claim_type": "EXPLICIT",
+      "source": "Suppression of protein synthesis was sufficient to slow tumorigenesis, with some Rpl24Bst/+ mice surviving over three times longer than the median survival of tumour model mice wild-type for Rpl24.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous studies using the Rpl24Bst mouse in cancer models.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "de594c72-5b19-46e5-92f0-86d662e5175b",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C18",
+      "claim": "Rpl24Bst mutation does not alter intestinal homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to addressing the role of RPL24 in intestinal tumorigenesis we first analysed whether the Rpl24Bst mutation had any effect on normal intestinal homeostasis (Figure 1A). We observed a reduction in RPL24 expression (Figure 1B), but no differences in intestinal architecture, proliferation shown by BrdU incorporation (Figure 1B) or abundance of stem cells (Olfm4), Paneth cells (lysozyme), or goblet cells (AB/PAS) (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by histological analysis and BrdU incorporation assays showing no changes in wild-type intestines with Rpl24Bst mutation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "87610313-e512-44d4-8bb8-b1eaf18c2441",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C19",
+      "claim": "Rpl24Bst mutation results in a >40% reduction in total protein synthesis in small intestinal organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we measured a >40% reduction in total protein synthesis, by 35S-methionine labelling, in Rpl24Bst/+ organoids compared to wild-type counterparts (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured by 35S-methionine incorporation assay in organoids.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "8a2a28cf-399c-4fb7-9ea2-4a0bc5a55dd3",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C20",
+      "claim": "Rpl24Bst mutation increases phosphorylation of eEF2 T56 in the proliferating crypt and transit amplifying zone of mouse intestines.",
+      "claim_type": "EXPLICIT",
+      "source": "In small intestinal tissue assayed by immunohistochemistry (IHC) we observed an increase in P-eEF2 T56, specifically in the proliferating crypt and transit amplifying zone of Rpl24Bst/+ mouse intestines (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by IHC staining and quantification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "48a5f2a4-e2a1-4224-941d-829a4c0e0a21",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C21",
+      "claim": "Rpl24Bst mutation results in a 66% increase in P-eEF2 T56 in lysates from small intestinal organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, we observed a 66% increase in P-eEF2 T56 in lysates generated from Rpl24Bst/+ organoids compared to wild-type organoids (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured by western blot analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "b32832fb-f0fc-44a4-ab07-a554df73f381",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C22",
+      "claim": "Rpl24Bst mutation results in a 47% reduction in RPL24 expression in small intestinal organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "These organoids also showed a 47% reduction in RPL24 expression by western blot (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured by western blot analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "86da1fd8-6434-4771-82fe-956b344040b6",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C23",
+      "claim": "Rpl24Bst mutation suppresses P-eEF2 T56 in the differentiated villus.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we observed that in the differentiated villus, Rpl24Bst mutation suppressed P-eEF2 T56 (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed by IHC staining and quantification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "00552710-4a53-466d-a80c-88c027dbd8c2",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C24",
+      "claim": "Rpl24Bst mutation has no effect on the phosphorylation of 4E-BP1 or RPS6 (at S240/S244).",
+      "claim_type": "EXPLICIT",
+      "source": "This effect on P-eEF2 T56 is specific, as we observed no effect on the phosphorylation of other translation related proteins, 4E-BP1 or RPS6 (at S240/S244), readouts for modulation of signalling downstream of mTORC1 (Figure 1\u2014figure supplement 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by IHC staining and H-score quantification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "1c60927a-8afd-47d5-a5f4-76011ec29fc3",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C25",
+      "claim": "Rpl24Bst mutation has no effect on the phosphorylation of eIF2\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we saw no change in the phosphorylation of the translation stress marker eIF2\u03b1 in Rpl24Bst mutant mice (Figure 1\u2014figure supplement 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by IHC staining and H-score quantification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "38c9cd02-1037-4be6-93af-344c53d895c0",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C28",
+      "claim": "Rpl24 mutation restricts regeneration of the small intestine following \u03b3-irradiation.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe that mutation of Rpl24 restricts regeneration of the small intestine (Figure 1\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by quantification of regenerative crypts after irradiation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "af723bc5-d833-4197-8599-2eaeb106e999",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C29",
+      "claim": "Hyperproliferation in Apcfl/fl KrasG12D/+ Rpl24Bst/+ mutant mice is significantly suppressed compared to Apcfl/fl KrasG12D/+ control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Hyperproliferation in the Apcfl/fl KrasG12D/+ Rpl24Bst/+ mutant mice was significantly suppressed compared to Apcfl/fl KrasG12D/+ control mice (Figure 2B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by BrdU incorporation assays in intestinal tissue.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "af6b22ff-4a46-4eda-a502-86a21f29f4f0",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C30",
+      "claim": "Apcfl/+ KrasG12D/+ Rpl24Bst/+ mice lived on average 32 days longer than Apcfl/+ KrasG12D/+ controls, an extension of survival of 45%.",
+      "claim_type": "EXPLICIT",
+      "source": "In the tumour model, where a single copy of Apc is deleted, Apcfl/+ KrasG12D/+ Rpl24Bst/+ mice lived on average 32 days longer than Apcfl/+ KrasG12D/+ controls, an extension of survival of 45% (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by survival analysis in the tumour model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "1e94c20a-85e3-49f0-9a37-88f8b629aec6",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C31",
+      "claim": "Apcfl/+ KrasG12D/+ Rpl24Bst/+ organoids derived from adenomas grew more slowly than controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Apcfl/+ KrasG12D/+ Rpl24Bst/+ organoids derived from the adenomas in this tumour model grew more slowly than controls (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by organoid growth assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "8f7fdb85-e767-46b3-baa9-fc50a42c04ee",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C32",
+      "claim": "Intestinal organoids from Apcfl/fl KrasG12D/+ Rpl24Bst/+ mice showed a 35% reduction in 35S-methionine incorporation.",
+      "claim_type": "EXPLICIT",
+      "source": "Intestinal organoids of the same genotype showed a 35% reduction in 35S-methionine incorporation (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured by 35S-methionine incorporation assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "f2cca940-205e-4f21-ba74-1fd5d730e423",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C33",
+      "claim": "Apcfl/fl KrasG12D/+ Rpl24Bst/+ organoids had a greater than 40% decrease in elongation rate measured by harringtonine run-off.",
+      "claim_type": "EXPLICIT",
+      "source": "These same organoids had a greater than 40% decrease in elongation rate measured by harringtonine run-off (Figure 3E and Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured by harringtonine run-off assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "a4577efa-70cb-470c-bdb7-d77c1d020c02",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C34",
+      "claim": "The ratio of 40S to 60S subunits is unchanged by the Rpl24 mutation in Apc-deficient Kras-mutant cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduced protein synthesis rate does not correlate with differences in free ribosomal subunit availability as the ratio of 40S to 60S subunits is unchanged by the Rpl24 mutation in Apc-deficient Kras-mutant cells (Figure 3\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured by sucrose density gradient analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "9f739416-cd4a-4843-beab-9d23dbd42754",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C35",
+      "claim": "RPL10 expression is increased by the Rpl24 mutation in Apcfl/fl KrasG12D/+ organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "RPL10 expression was increased by the Rpl24 mutation, RPL22 was decreased, while RPS6 levels were unchanged (Figure 3\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured by western blot analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "3cdd2ce7-e99d-422a-812f-1683bc16e95e",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C36",
+      "claim": "RPL22 expression is decreased by the Rpl24 mutation in Apcfl/fl KrasG12D/+ organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "RPL10 expression was increased by the Rpl24 mutation, RPL22 was decreased, while RPS6 levels were unchanged (Figure 3\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured by western blot analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "737e800c-9cc9-487a-811c-79fefc77f4eb",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C37",
+      "claim": "RPS6 levels are unchanged by the Rpl24 mutation in Apcfl/fl KrasG12D/+ organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "RPL10 expression was increased by the Rpl24 mutation, RPL22 was decreased, while RPS6 levels were unchanged (Figure 3\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured by western blot analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "cbbfb6a2-6fb5-45b7-968a-cf78c1865e4a",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C38",
+      "claim": "Hyperproliferation in the small intestine or colon of Apcfl/fl mice is not reduced by the Rpl24Bst mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the hyperproliferation in the small intestine or colon of Apcfl/fl mice was not reduced by the Rpl24Bst mutation (Figure 4A, B and Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by BrdU incorporation assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "3c16fec0-2da9-4c95-8938-2dd8b62ae5b2",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C39",
+      "claim": "In both germline ApcMin/+ and inducible Apcfl/+ models of Apc deficiency there is no benefit of the Rpl24Bst mutation, with no difference in survival or tumour development.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in both germline ApcMin/+ and inducible Apcfl/+ models of Apc deficiency we see no benefit of the Rpl24Bst mutation, with no difference in survival or tumour development (Figure 4C and Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by survival analysis and tumour counting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "9a8b4ba3-9fcc-4c15-b1bd-020a462692ff",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C40",
+      "claim": "Apcfl/fl organoids with the Rpl24Bst mutation grew at an identical rate to those wild-type for Rpl24 in culture.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement, Apcfl/fl organoids with the Rpl24Bst mutation grew at an identical rate to those wild-type for Rpl24 in culture (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by organoid growth assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "70c8d3cf-bfa6-472a-b79b-b8985dc8a9f0",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C41",
+      "claim": "There is an increase in P-eEF2 in Apcfl/fl Rpl24Bst/+ intestines compared to Apcfl/fl.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite no effect on proliferation, we observed an increase in P-eEF2 in Apcfl/fl Rpl24Bst/+ intestines compared to Apcfl/fl (Figure 4B), showing that P-eEF2 is consistently increased in the intestinal crypts of Rpl24Bst/+ mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by IHC staining and H-score quantification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "69cf9e04-5294-4258-b231-b1902ca791fd",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C42",
+      "claim": "There is no change in the ratio of polysomes to subpolysomes in Apcfl/fl Rpl24Bst/+ intestines compared to Apcfl/fl.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we detected no change in the ratio of polysomes to subpolysomes in Apcfl/fl Rpl24Bst/+ intestines compared to Apcfl/fl (Figure 4\u2014figure supplement 2A, B) and no change in protein synthesis rate between organoids of these same genotypes (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured by sucrose density gradient analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "6ed4cc9f-864e-41f2-aaec-bc5d579b6540",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C43",
+      "claim": "There is no change in protein synthesis rate between Apcfl/fl and Apcfl/fl Rpl24Bst/+ organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we detected no change in the ratio of polysomes to subpolysomes in Apcfl/fl Rpl24Bst/+ intestines compared to Apcfl/fl (Figure 4\u2014figure supplement 2A, B) and no change in protein synthesis rate between organoids of these same genotypes (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured by 35S-methionine incorporation assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "28954ab6-e351-47cc-bf04-c58939ffad87",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C44",
+      "claim": "Rapamycin treatment significantly reduces protein synthesis in Apcfl/fl organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, rapamycin treatment significantly reduces protein synthesis in Apcfl/fl organoids treated in parallel (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured by 35S-methionine incorporation assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "c5872b1e-fc75-46a2-a5b2-6887aa668ddf",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C45",
+      "claim": "There is a consistent increase in ribosomal protein expression following Apc deletion, then again following KRAS activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Using unbiased RNA sequencing data from wild-type, Apcfl/fl and Apcfl/fl KrasG12D/+ small intestinal tissue we observed a consistent increase in ribosomal protein expression following Apc deletion, then again following KRAS activation (Figure 4\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by RNA sequencing analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "e20fba32-7656-409a-abed-bc9f4eef26e3",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C46",
+      "claim": "The mRNAs for all ribosomal proteins with sufficient reads were increased on average nearly 1.5-fold by KRAS activation in the small intestine.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the mRNAs for all ribosomal proteins with sufficient reads were increased on average nearly 1.5-fold by KRAS activation in the small intestine (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Calculated from RNA sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "9746a2e0-3bad-44ea-88d4-341c14fdd025",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C47",
+      "claim": "The Rpl24 mRNA was only increased by 1.14-fold following Kras mutation, despite a nearly twofold increase following deletion of Apc.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the Rpl24 mRNA was only increased by 1.14-fold following Kras mutation, despite a nearly twofold increase following deletion of Apc (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Calculated from RNA sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "6970398f-188c-46da-9c78-1267b671003a",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C48",
+      "claim": "There is a significant difference in the RNA expression of Rpl24 compared to the other ribosomal proteins following KRAS activation.",
+      "claim_type": "EXPLICIT",
+      "source": "This manifests as a significant difference in the RNA expression of Rpl24 compared to the other ribosomal proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from RNA sequencing data and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "b9675a4d-fe2f-424c-993f-fd0c91b1fe98",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C49",
+      "claim": "Inactivation of Eef2k completely reversed the suppression of proliferation seen in Apcfl/fl KrasG12D/+ Rpl24Bst/+ small intestines.",
+      "claim_type": "EXPLICIT",
+      "source": "In the short-term hyperproliferation model, the inactivation of Eef2k completely reversed the suppression of proliferation seen in Apcfl/fl KrasG12D/+ Rpl24Bst/+ small intestines (Figure 5A\u2013C), and the medial colon (Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by BrdU incorporation assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "8249b0d7-5828-4d98-8939-c753fcc2f47a",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C50",
+      "claim": "The kinase inactive Eef2k allele results in P-eEF2 being undetectable.",
+      "claim_type": "EXPLICIT",
+      "source": "The kinase inactive Eef2k allele resulted in P-eEF2 being undetectable (Figure 5C and Figure 2\u2014figure supplement 1), and we previously reported no difference in hyperproliferation between Apcfl/fl KrasG12D/+ and Apcfl/fl KrasG12D/+ Eef2kD273A/D273A models (Knight et al., 2020a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by IHC staining.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "50842328-036d-4c7a-b214-6d26026e4634",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C51",
+      "claim": "Inactivation of eEF2K reverted the survival benefit of the Rpl24Bst mutation in the Apcfl/+ KrasG12D/+ tumour model.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, inactivation of eEF2K reverted the survival benefit of the Rpl24Bst mutation in the Apcfl/+ KrasG12D/+ tumour model (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by survival analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "e70f1783-68ab-40d1-be8d-cedf0755193f",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C52",
+      "claim": "The Eef2kD273A/D273A mutation has no impact on tumorigenesis in inducible Apcfl/+ and germline ApcMin/+ models of Apc-deficient intestinal tumorigenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, Eef2kD273A/D273A had no impact on tumorigenesis in inducible Apcfl/+ and germline ApcMin/+ models of Apc-deficient intestinal tumorigenesis (i.e., expressing wild-type Kras) (Figure 5\u2014figure supplement 1B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by survival analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "48fa0844-d9ea-4d08-b297-c203ab9ff041",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C53",
+      "claim": "The Eef2kD273A/D273A allele has no effect on proliferation in the Apcfl/fl hyperproliferation model, either alone or in combination with Rpl24Bst mutation in both the small intestine and colon.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, the Eef2kD273A/D273A allele had no effect on proliferation in the Apcfl/fl hyperproliferation model, either alone or in combination with Rpl24Bst mutation in both the small intestine and colon (Figure 5\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by BrdU incorporation assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "c906ec5c-5fe8-48a1-b9a2-f9d34eaec3f1",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C54",
+      "claim": "The reduction in protein synthesis that results from Rpl24Bst mutation is completely reversed by inactivating eEF2K.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduction in protein synthesis that results from Rpl24Bst mutation is completely reversed by inactivating eEF2K (Figure 6A), with Apcfl/fl KrasG12D/+ Rpl24Bst/+ Eef2kD273A/D273A organoids having an almost identical translation capacity as Apcfl/fl KrasG12D/+ controls.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured by 35S-methionine incorporation assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "f9dc31fa-0804-4064-a135-4dbba4dc0ccc",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C55",
+      "claim": "The rate of ribosome run-off is reverted in Apcfl/fl KrasG12D/+ Rpl24Bst/+ Eef2kD273A/D273A compared to Apcfl/fl KrasG12D/+ Rpl24Bst/+ organoids, to the same rate as controls with wild-type Rpl24.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the rate of ribosome run-off was also reverted in Apcfl/fl KrasG12D/+ Rpl24Bst/+ Eef2kD273A/D273A compared to Apcfl/fl KrasG12D/+ Rpl24Bst/+ organoids, again to the same rate as controls with wild-type Rpl24 (Figure 6B and Figure 6\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured by harringtonine run-off assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "1b4a4527-7436-4a80-a095-63be740b17e3",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C56",
+      "claim": "Rpl24Bst mutation has no effect on mTORC1 activity as phosphorylation of the mTORC1 effectors 4E-BP1 and RPS6 (at S240/S244) is not reduced in Apc-deficient Rpl24Bst/+ intestines.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, RPL24 deficiency does not suppress mTORC1 activity since phosphorylation of the mTORC1 effectors 4E-BP1 and RPS6 (at S240/S244) is not reduced in Apc-deficient Rpl24Bst/+ intestines, providing an explanation of how proliferation and protein synthesis are maintained in Apc-deficient Rpl24Bst mutant animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by IHC staining and H-score quantification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "d58a940d-83d9-4fe1-a391-adc4576d0dca",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C57",
+      "claim": "Rpl24Bst mutation has no effect on MAPK signalling as assayed via P-ERK1/2 (T202/Y204).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, MAPK signalling also suppresses eEF2K, via the RSK pathway. There was no difference in signalling through this pathway in Rpl24 mutant mice, as assayed via P-ERK1/2 (T202/Y204) (Figure 6\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by IHC staining and H-score quantification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "f02052bd-7cd4-4fd3-bfaa-483ce0452ddb",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C58",
+      "claim": "Rpl24 mutation has no effect on AMPK signalling as assayed by phosphorylation of acetyl-CoA carboxylase (P-ACC S79).",
+      "claim_type": "EXPLICIT",
+      "source": "Using phosphorylation of the canonical AMPK target acetyl-CoA carboxylase (P-ACC S79) as a read-out of AMPK activity, Rpl24 mutation had no effect on AMPK signalling (Figure 6\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by western blot analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "1539df42-c07a-4d5f-8753-288b6f71883e",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C59",
+      "claim": "RPL24 expression is increased in colon adenocarcinoma compared to normal colon tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Using publicly available datasets for RNA expression in normal and cancerous colon tissues we observe increased RPL24 and EEF2 expression in conjunction with reduced EEF2K expression (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analyzed from publicly available TCGA datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "d0142e43-1dca-4858-934a-e2b6094a999d",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C60",
+      "claim": "EEF2 expression is increased in colon adenocarcinoma compared to normal colon tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Using publicly available datasets for RNA expression in normal and cancerous colon tissues we observe increased RPL24 and EEF2 expression in conjunction with reduced EEF2K expression (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analyzed from publicly available TCGA datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "df37c9ff-54b6-45a7-a2b9-b50d53c71ae7",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C61",
+      "claim": "EEF2K expression is reduced in colon adenocarcinoma compared to normal colon tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Using publicly available datasets for RNA expression in normal and cancerous colon tissues we observe increased RPL24 and EEF2 expression in conjunction with reduced EEF2K expression (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analyzed from publicly available TCGA datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "7d34c710-8416-4205-aa3b-09be0e131b64",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C62",
+      "claim": "RPL24 protein expression is elevated in colon adenocarcinoma samples compared to normal colon.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results are seen for the protein expression of RPL24, eEF2K, and eEF2 from colon adenocarcinoma samples (Figure 7\u2014figure supplement 1A), and for the three mRNAs in rectal adenocarcinoma (Figure 7\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analyzed from publicly available CPTAC datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "375a2cea-e0a8-4ead-a65f-8ac4cbb2aac9",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C63",
+      "claim": "eEF2 protein expression is elevated in colon adenocarcinoma samples compared to normal colon.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results are seen for the protein expression of RPL24, eEF2K, and eEF2 from colon adenocarcinoma samples (Figure 7\u2014figure supplement 1A), and for the three mRNAs in rectal adenocarcinoma (Figure 7\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analyzed from publicly available CPTAC datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "8140b694-ce1e-4d4e-a475-e6696a743591",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C64",
+      "claim": "eEF2K protein expression is reduced in colon adenocarcinoma samples compared to normal colon.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results are seen for the protein expression of RPL24, eEF2K, and eEF2 from colon adenocarcinoma samples (Figure 7\u2014figure supplement 1A), and for the three mRNAs in rectal adenocarcinoma (Figure 7\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analyzed from publicly available CPTAC datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "18e0400f-af49-48be-98ef-649d1b232452",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C65",
+      "claim": "Phosphorylation of eEF2 at threonine 56 excludes eEF2 from the ribosome thereby impairing the translocation step of translation elongation, reducing protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "This phosphorylation event excludes eEF2 from the ribosome thereby impairing the translocation step of translation elongation, reducing protein synthesis (Ryazanov and Davydova, 1989; Carlberg et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature on eEF2 function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "efd1bd70-d623-4451-a518-8b4adf5a1480",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C66",
+      "claim": "RNAi depletion of RPL24 in human cell lines had no effect on ribosome biogenesis, or on the relative abundance of 40S and 60S subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, RNAi depletion of RPL24 in human cell lines had no effect on ribosome biogenesis, or on the relative abundance of 40S and 60S subunits (Barki\u0107 et al., 2009; Wilson-Edell et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "2ed40e9f-4282-4acc-b625-96a3110d0fae",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C67",
+      "claim": "RPL24 is an exclusively cytoplasmic protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, two reports have identified RPL24 as an exclusively cytoplasmic protein, leading to the hypothesis that it is assembled into mature ribosomes in the cytoplasm after rRNA synthesis and processing has already occurred (Barki\u0107 et al., 2009; Saveanu et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "9f2155f1-b292-4bfd-ab33-4d70ee230aad",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C68",
+      "claim": "In the hindbrain of E9.5 embryos, the Rpl24Bst mutation had no effect on nucleolar architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with this, in the hindbrain of E9.5 embryos, the Rpl24Bst mutation had no effect on nucleolar architecture, indicating that it is not required for nucleolar function (Herrlinger et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "61c9969b-2534-40e2-ac50-d49c1f1c0560",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C69",
+      "claim": "RPL24 can incorporate into 60S, 80S, and polysomes in Apcfl/fl KrasG12D/+ Rpl24Bst/+ organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, RPL24 can incorporate into 60S, 80S, and polysomes in Apcfl/fl KrasG12D/+ Rpl24Bst/+ organoids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by western blot analysis of protein from sucrose density gradient fractions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "d96a15c9-3e96-41c3-afe7-e723b7fe76b7",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C70",
+      "claim": "Ribosomes in Rpl24Bst mutant cells can elongate efficiently despite the reduction in RPL24 expression when P-eEF2 is abolished.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the combination of the Rpl24 and eEF2K mutants shows that when P-eEF2 is abolished elongation occurs at normal speed, despite reduced expression of RPL24.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by harringtonine run-off assays showing restored elongation rates in Apcfl/fl KrasG12D/+ Rpl24Bst/+ Eef2kD273A/D273A organoids.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "8279dc54-ef78-48c2-ae83-28e36cfff352",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C71",
+      "claim": "The Rpl24Bst mutation suppresses tumorigenesis in Apc-deficient Kras-mutant pre-clinical mouse models of CRC but not in Apc-deficient Kras wild-type models.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we find that the Rpl24Bst mutation has no effect in Kras wild-type models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by survival and proliferation experiments showing no benefit in Apcfl/fl, Apcfl/+, or ApcMin/+ models without Kras mutation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "f7c88ab5-56fe-4fb9-9756-4bc1cc5fca82",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C72",
+      "claim": "There is a specific requirement for physiological RPL24 in Kras-mutant cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We attribute this to a specific requirement for physiological RPL24 in Kras-mutant cells, which may provide additional mechanisms to target these cells clinically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the differential effects of Rpl24Bst mutation in Kras-mutant versus Kras wild-type models.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "20d6d12f-9067-42c6-b64e-f8d378253321",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C73",
+      "claim": "Increased protein synthesis supports the rapid cell proliferation associated with cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased protein synthesis supports the rapid cell proliferation associated with cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established concept in cancer biology supported by the cited literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "c4fa42ba-6046-4de8-bd8d-8128262b0ca4",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C74",
+      "claim": "Protein synthesis is directly regulated by many oncogenic signalling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Tumour cells require rapid protein synthesis to acquire sufficient biomass in order to divide and, as such, protein synthesis is directly regulated by many oncogenic signalling pathways (Proud, 2019; Robichaud et al., 2019; Smith et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "9f01582a-b2d5-4388-857d-8de4d7af3d52",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C75",
+      "claim": "Translation of the mRNA encoding c-MYC is selectively upregulated by eIF4E and mTORC1 signalling in colorectal cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in colorectal cancer (CRC) translation of the mRNA encoding the proto-oncogene c-MYC is selectively upregulated by eIF4E and mTORC1 signalling (Knight et al., 2020a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "572f31f0-0499-4d0b-b042-9a88ff883cc4",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C76",
+      "claim": "The expression of PD-L1 is maintained on tumour cells by the activity of translation factors eIF4A and eIF5B as well as phosphorylation of eIF4E and eIF2\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, independent reports have shown that the expression of the immune suppressive ligand PD-L1 is maintained on tumour cells by the activity of the translation factors eIF4A and eIF5B as well as phosphorylation of eIF4E and eIF2\u03b1 (Suresh et al., 2020; Xu et al., 2019; Cerezo et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "ffdb9a56-bb69-439a-a3de-ed4a3cb88fca",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C77",
+      "claim": "Kras-mutant models of CRC depend upon the transporter SLC7A5 to maintain protein synthesis by facilitating the influx of amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "As well as our recent study re-sensitising Kras-mutant CRCs to rapamycin by targeting translation initiation (Knight et al., 2020a), we have demonstrated that Kras-mutant models of CRC depend upon the transporter SLC7A5 to maintain protein synthesis by facilitating the influx of amino acids (Najumudeen et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "aa98030f-4869-47fb-8632-7ceda8038fb9",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C78",
+      "claim": "The Rpl24Bst mutation has been used to suppress tumorigenesis in mouse models of Pten-deficient T-cell acute lymphoblastic leukaemia.",
+      "claim_type": "EXPLICIT",
+      "source": "This tool has been used to suppress overall protein synthesis in genetically engineered mouse models of c-MYC-driven B-cell lymphoma, Pten-deficient T-cell acute lymphoblastic leukaemia, T-cell-specific Akt2 activation and a carcinogen-driven model of bladder cancer (Barna et al., 2008; Signer et al., 2014; Hsieh et al., 2010; Jana et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "a92ace28-93b1-4191-83a5-a49ad9526373",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C79",
+      "claim": "The Rpl24Bst mutation has been used to suppress tumorigenesis in mouse models of T-cell-specific Akt2 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "This tool has been used to suppress overall protein synthesis in genetically engineered mouse models of c-MYC-driven B-cell lymphoma, Pten-deficient T-cell acute lymphoblastic leukaemia, T-cell-specific Akt2 activation and a carcinogen-driven model of bladder cancer (Barna et al., 2008; Signer et al., 2014; Hsieh et al., 2010; Jana et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "ac8babd9-9c80-44f7-a076-620998d5be08",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C80",
+      "claim": "The Rpl24Bst mutation has been used to suppress tumorigenesis in a carcinogen-driven model of bladder cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "This tool has been used to suppress overall protein synthesis in genetically engineered mouse models of c-MYC-driven B-cell lymphoma, Pten-deficient T-cell acute lymphoblastic leukaemia, T-cell-specific Akt2 activation and a carcinogen-driven model of bladder cancer (Barna et al., 2008; Signer et al., 2014; Hsieh et al., 2010; Jana et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "4b2d30e3-c4cc-4ba1-8252-bafad0a4857a",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C81",
+      "claim": "The Rpl24Bst mutation has been used to analyze brain development from neural progenitor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The Rpl24Bst mutation has also been used to analyse brain development from neural progenitor cells and explored as a model for retinal degenerative disease (Riazifar et al., 2015; Herrlinger et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "a5dd73be-cc26-453d-a7b6-90f89f76bfb0",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C82",
+      "claim": "The Rpl24Bst mutation has been explored as a model for retinal degenerative disease.",
+      "claim_type": "EXPLICIT",
+      "source": "The Rpl24Bst mutation has also been used to analyse brain development from neural progenitor cells and explored as a model for retinal degenerative disease (Riazifar et al., 2015; Herrlinger et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "32ce658f-5801-4674-ac52-ca894239a19f",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C83",
+      "claim": "eEF2K acts as a pro-survival factor under nutrient deprivation in transformed fibroblasts and tumour cell lines by suppressing protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, under nutrient deprivation eEF2K acts as a pro-survival factor in transformed fibroblasts and tumour cell lines by suppressing protein synthesis to ensure survival (Leprivier et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "4db5bebe-81a3-4766-988b-21eb84102b81",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C84",
+      "claim": "eEF2K is required for the suppression of tumorigenesis following mTORC1 inhibition in APC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, eEF2K is required for the suppression of tumorigenesis and protein synthesis following mTORC1 inhibition in APC cells (Faller et al., 2015) or Rpl24Bst mutation in APC KRAS cells (this work).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "9d839da4-be8f-4943-a247-b0ddcae3ae85",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C85",
+      "claim": "CRC patients with low eEF2K protein expression suffer a significantly worse prognosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance, CRC patients with low eEF2K protein expression suffer a significantly worse prognosis (Ng et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published clinical data analysis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "c064e58a-ecab-4156-8852-63336c46023b",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C86",
+      "claim": "RNAi against RPL24 in human breast cancer cell lines dramatically reduced proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with this, RNAi against RPL24 in human breast cancer cell lines dramatically reduced proliferation (Wilson-Edell et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "f5ec27f5-6dc5-4d7d-93ce-7ec50d6f697f",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "claim_id": "C87",
+      "claim": "Inhibiting eEF2 reduces cell line and patient derived organoid growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, inhibiting eEF2, using a compound reported to slow its exit from the ribosome and thus the rate of protein synthesis, reduces cell line and patient derived organoid growth (Stickel et al., 2015; Keysar et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9fcc4d11-550c-45d8-a028-aaa69fa12e86",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The Rpl24Bst mutation reduces RPL24 expression by ~47% in intestinal organoids and increases P-eEF2 T56 phosphorylation by 66% in proliferating crypts, while reducing protein synthesis by >40%, yet does not alter normal intestinal homeostasis, proliferation, or tissue architecture.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C23 provide convergent evidence from multiple assays (IHC, western blot, 35S-methionine incorporation) showing reduced RPL24, increased P-eEF2 in crypts, and reduced protein synthesis without affecting homeostasis. The data are internally consistent and use appropriate controls. The paradoxical maintenance of homeostasis despite reduced protein synthesis is acknowledged and documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "cce14c94-d6a3-42e2-b89f-d2a801e92bec",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Rpl24Bst mutation suppresses tumorigenesis in Apc-deficient Kras-mutant colorectal cancer models, extending survival by 45% (32 days) and reducing hyperproliferation and organoid growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C29-C31 demonstrate tumor suppression through multiple complementary approaches: in vivo survival analysis (C30), proliferation assays (C29), and ex vivo organoid growth (C31). Sample sizes appear adequate (n\u22653 per group), statistical tests are appropriate (Mann-Whitney, Mantel-Cox), and results are consistent across experimental systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "7d09e68e-4203-464d-888f-6f50c2f74ed5",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Contrary to previous reports, Rpl24Bst mutation does not alter ribosomal subunit abundance (40S:60S ratio), with RPL24 incorporating into 60S, 80S, and polysomes despite reduced expression, challenging the ribosome biogenesis defect hypothesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C34 provide direct experimental evidence (sucrose density gradients) showing unchanged 40S:60S ratios. Claims C66-C68 cite consistent prior literature, and C69 demonstrates RPL24 incorporation into ribosomal complexes. This contradicts the original Oliver et al. 2004 characterization but aligns with more recent RNAi studies. The data are clear and appropriately challenge prior assumptions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "553f1730-e990-4ed3-ac28-a08b8c735d8e",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Rpl24Bst mutation suppresses translation elongation through increased eEF2 phosphorylation at T56, reducing protein synthesis by 35-40% and elongation rates by >40% in Apc-deficient Kras-mutant tumor cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C5, C32-C33 provide mechanistic evidence linking P-eEF2 to reduced elongation using three complementary assays: 35S-methionine incorporation (protein synthesis), harringtonine run-off (elongation rate), and polysome profiling. Claim C65 provides the mechanistic basis from established literature. The convergence of multiple independent measurements strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "906108a4-26a9-4229-97b9-7c13ff0ac6f9",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Genetic inactivation of eEF2K completely reverses the effects of Rpl24Bst mutation, restoring translation elongation rates, protein synthesis, proliferation, and eliminating the survival benefit in tumor models, demonstrating absolute requirement for eEF2K activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C49, C51, C54-C55 provide comprehensive genetic epistasis analysis showing complete rescue of all Rpl24Bst phenotypes by eEF2K inactivation. The use of a kinase-dead allele (C50) is appropriate, and rescue is demonstrated at molecular (C54-C55), cellular (C49), and organismal (C51) levels. Claim C70 provides the key mechanistic interpretation. This is strong genetic evidence for pathway dependency.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "cde61faf-f614-4d1e-ab96-8ce4c47780ea",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Rpl24Bst mutation has no effect on tumorigenesis in Apc-deficient Kras wild-type models (Apcfl/fl, Apcfl/+, ApcMin/+), despite increasing P-eEF2, because protein synthesis rates remain unchanged, revealing Kras-specific dependency on RPL24.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40 demonstrate lack of effect through survival, proliferation, and organoid growth assays across three different Apc-deficient models. Claims C41-C43 show the paradox: P-eEF2 increases but protein synthesis is maintained. Claims C71-C72 provide the interpretation. The differential effect between Kras-mutant and wild-type models is well-documented and represents an important biological insight, though the mechanism remains incompletely understood.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "86aea95f-4455-460e-af34-3667672db61b",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "RNA sequencing reveals that while most ribosomal protein mRNAs increase 1.47-fold following KRAS activation, Rpl24 mRNA increases only 1.14-fold, significantly less than other ribosomal proteins, potentially explaining Kras-specific sensitivity to Rpl24 mutation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48 provide transcriptomic evidence for differential Rpl24 regulation. The statistical analysis (one-sample t-test, p<0.0001) appropriately tests whether Rpl24 differs from other ribosomal proteins. This provides a plausible molecular explanation for the Kras-specific phenotype, though it remains correlative rather than causative. The hypothesis is reasonable but would benefit from functional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "e140c571-26b8-4dd4-b03f-7ff8c7d2f1c6",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Rpl24Bst mutation does not affect mTORC1 (P-4E-BP1, P-RPS6), MAPK (P-ERK), or AMPK (P-ACC) signaling pathways, indicating the effect on eEF2K is independent of these major upstream regulators.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C58 systematically rule out three major known regulators of eEF2K using appropriate phospho-specific antibodies and quantification. The negative results are important for defining the mechanism and are supported by adequate controls. However, the actual mechanism linking RPL24 to eEF2K remains undefined, representing a significant gap in the mechanistic understanding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "d3427f4c-8476-44d3-b880-17eed535dbfd",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Analysis of human colorectal cancer datasets shows increased RPL24 and EEF2 expression with decreased EEF2K expression in tumors compared to normal tissue, consistent with the mouse model findings and supporting clinical relevance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C64 analyze publicly available TCGA and CPTAC datasets showing consistent expression patterns at both mRNA and protein levels. The use of established databases and appropriate statistical tests supports the findings. However, this is correlative data that does not establish causation or functional relevance in human disease. The consistency between mouse models and human tumors is noteworthy but requires functional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "86156c9b-a61a-4f6a-a685-9802c859aa12",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Rpl24Bst mutation specifically affects P-eEF2 without altering phosphorylation of other translation-related proteins (4E-BP1, RPS6, eIF2\u03b1), demonstrating pathway specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C25 provide important negative controls showing specificity of the eEF2 effect. IHC with H-score quantification from multiple animals demonstrates no changes in mTORC1 targets or stress response markers. This specificity strengthens the mechanistic conclusions and rules out general translation stress or mTORC1 inhibition.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "eb9f68f5-c6a4-4842-ab93-67027695f2b9",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Rpl24 mutation restricts intestinal regeneration following \u03b3-irradiation, suggesting reduced capacity for proliferative responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C28 shows reduced regenerative crypts after irradiation (n=4 per genotype). The experiment is appropriately designed and quantified. This result provides additional functional evidence for the role of RPL24 in proliferative contexts, though it is somewhat tangential to the main tumor suppression findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "03f5fc74-940f-46c8-b493-35216da1174a",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Rpl24 mutation differentially affects expression of other ribosomal proteins in tumor organoids: RPL10 increases, RPL22 decreases, while RPS6 remains unchanged.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 document changes in other ribosomal proteins by western blot. The data show heterogeneous responses rather than global suppression. However, the biological significance of these specific changes is unclear, and no functional consequences are demonstrated. This raises interesting questions about ribosome heterogeneity but remains descriptive.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "f9aff9f9-7aa8-4c82-89ce-65edab921677",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The Eef2kD273A/D273A mutation alone has no impact on tumorigenesis or proliferation in Apc-deficient Kras wild-type models, consistent with lack of Rpl24Bst effect in these models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 provide important controls showing that eEF2K inactivation alone does not affect Kras wild-type tumors. This is consistent with the lack of Rpl24Bst effect in these models and supports the model that the pathway is specifically relevant in Kras-mutant contexts. The data are from survival and proliferation assays with adequate sample sizes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "5f89f789-f6af-487a-bebf-75ea2aec583d",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background context: APC is the most commonly mutated gene in CRC; Apc-deficient models depend on translation elongation; rapamycin shows clinical efficacy but Kras mutation confers resistance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C13 provide appropriate background context from cited literature. These establish the rationale for studying translation control in CRC and the specific challenge of Kras-mutant tumors. The citations appear appropriate and the claims accurately represent the cited work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "6f3ef979-51cc-4f24-a3c1-78fd25eae37a",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The Rpl24Bst mutation is a characterized four-nucleotide deletion that has been previously used to suppress tumorigenesis in multiple cancer models and to study development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C17 and C78-C82 accurately describe the Rpl24Bst allele and cite appropriate prior literature. This provides essential background for interpreting the current work and positions it within the existing literature on this genetic tool.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    },
+    {
+      "id": "aa89e081-0a74-4b17-b37e-5c495df49802",
+      "content_id": "f5871171-5904-4629-9451-de63fda43a0a",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background context: Protein synthesis supports cancer proliferation; translation is regulated by oncogenic pathways; eEF2K has context-dependent roles in cancer; targeting translation components shows therapeutic potential.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C77 and C83-C87 provide general background on translation in cancer from cited literature. These establish the broader significance of the work. The citations appear appropriate and accurately represent established concepts in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:34:10.029003Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e7109f0c-0f31-4bb5-b030-ba7c00b5e04d",
+      "result_id": "9fcc4d11-550c-45d8-a028-aaa69fa12e86"
+    },
+    {
+      "claim_id": "de594c72-5b19-46e5-92f0-86d662e5175b",
+      "result_id": "9fcc4d11-550c-45d8-a028-aaa69fa12e86"
+    },
+    {
+      "claim_id": "87610313-e512-44d4-8bb8-b1eaf18c2441",
+      "result_id": "9fcc4d11-550c-45d8-a028-aaa69fa12e86"
+    },
+    {
+      "claim_id": "8a2a28cf-399c-4fb7-9ea2-4a0bc5a55dd3",
+      "result_id": "9fcc4d11-550c-45d8-a028-aaa69fa12e86"
+    },
+    {
+      "claim_id": "48a5f2a4-e2a1-4224-941d-829a4c0e0a21",
+      "result_id": "9fcc4d11-550c-45d8-a028-aaa69fa12e86"
+    },
+    {
+      "claim_id": "b32832fb-f0fc-44a4-ab07-a554df73f381",
+      "result_id": "9fcc4d11-550c-45d8-a028-aaa69fa12e86"
+    },
+    {
+      "claim_id": "86da1fd8-6434-4771-82fe-956b344040b6",
+      "result_id": "9fcc4d11-550c-45d8-a028-aaa69fa12e86"
+    },
+    {
+      "claim_id": "d0c854f4-485e-4669-8f9c-486c27f9bf48",
+      "result_id": "cce14c94-d6a3-42e2-b89f-d2a801e92bec"
+    },
+    {
+      "claim_id": "af723bc5-d833-4197-8599-2eaeb106e999",
+      "result_id": "cce14c94-d6a3-42e2-b89f-d2a801e92bec"
+    },
+    {
+      "claim_id": "af6b22ff-4a46-4eda-a502-86a21f29f4f0",
+      "result_id": "cce14c94-d6a3-42e2-b89f-d2a801e92bec"
+    },
+    {
+      "claim_id": "1e94c20a-85e3-49f0-9a37-88f8b629aec6",
+      "result_id": "cce14c94-d6a3-42e2-b89f-d2a801e92bec"
+    },
+    {
+      "claim_id": "04bfb212-0e11-4d98-ab78-2e99758687b8",
+      "result_id": "7d09e68e-4203-464d-888f-6f50c2f74ed5"
+    },
+    {
+      "claim_id": "a4577efa-70cb-470c-bdb7-d77c1d020c02",
+      "result_id": "7d09e68e-4203-464d-888f-6f50c2f74ed5"
+    },
+    {
+      "claim_id": "efd1bd70-d623-4451-a518-8b4adf5a1480",
+      "result_id": "7d09e68e-4203-464d-888f-6f50c2f74ed5"
+    },
+    {
+      "claim_id": "2ed40e9f-4282-4acc-b625-96a3110d0fae",
+      "result_id": "7d09e68e-4203-464d-888f-6f50c2f74ed5"
+    },
+    {
+      "claim_id": "9f2155f1-b292-4bfd-ab33-4d70ee230aad",
+      "result_id": "7d09e68e-4203-464d-888f-6f50c2f74ed5"
+    },
+    {
+      "claim_id": "61c9969b-2534-40e2-ac50-d49c1f1c0560",
+      "result_id": "7d09e68e-4203-464d-888f-6f50c2f74ed5"
+    },
+    {
+      "claim_id": "d9cb96d7-1b5b-479c-99f6-6c5c95464704",
+      "result_id": "553f1730-e990-4ed3-ac28-a08b8c735d8e"
+    },
+    {
+      "claim_id": "710204ab-ed2c-4f76-b54c-837772e9d2d3",
+      "result_id": "553f1730-e990-4ed3-ac28-a08b8c735d8e"
+    },
+    {
+      "claim_id": "8f7fdb85-e767-46b3-baa9-fc50a42c04ee",
+      "result_id": "553f1730-e990-4ed3-ac28-a08b8c735d8e"
+    },
+    {
+      "claim_id": "f2cca940-205e-4f21-ba74-1fd5d730e423",
+      "result_id": "553f1730-e990-4ed3-ac28-a08b8c735d8e"
+    },
+    {
+      "claim_id": "18e0400f-af49-48be-98ef-649d1b232452",
+      "result_id": "553f1730-e990-4ed3-ac28-a08b8c735d8e"
+    },
+    {
+      "claim_id": "3fac9aaa-c34e-4c92-9613-01f4d428e1e6",
+      "result_id": "906108a4-26a9-4229-97b9-7c13ff0ac6f9"
+    },
+    {
+      "claim_id": "c7c4ac58-bca5-4dbc-9dce-4ca7d1b39a11",
+      "result_id": "906108a4-26a9-4229-97b9-7c13ff0ac6f9"
+    },
+    {
+      "claim_id": "b9675a4d-fe2f-424c-993f-fd0c91b1fe98",
+      "result_id": "906108a4-26a9-4229-97b9-7c13ff0ac6f9"
+    },
+    {
+      "claim_id": "8249b0d7-5828-4d98-8939-c753fcc2f47a",
+      "result_id": "906108a4-26a9-4229-97b9-7c13ff0ac6f9"
+    },
+    {
+      "claim_id": "50842328-036d-4c7a-b214-6d26026e4634",
+      "result_id": "906108a4-26a9-4229-97b9-7c13ff0ac6f9"
+    },
+    {
+      "claim_id": "c906ec5c-5fe8-48a1-b9a2-f9d34eaec3f1",
+      "result_id": "906108a4-26a9-4229-97b9-7c13ff0ac6f9"
+    },
+    {
+      "claim_id": "f9dc31fa-0804-4064-a135-4dbba4dc0ccc",
+      "result_id": "906108a4-26a9-4229-97b9-7c13ff0ac6f9"
+    },
+    {
+      "claim_id": "d96a15c9-3e96-41c3-afe7-e723b7fe76b7",
+      "result_id": "906108a4-26a9-4229-97b9-7c13ff0ac6f9"
+    },
+    {
+      "claim_id": "cbbfb6a2-6fb5-45b7-968a-cf78c1865e4a",
+      "result_id": "cde61faf-f614-4d1e-ab96-8ce4c47780ea"
+    },
+    {
+      "claim_id": "3c16fec0-2da9-4c95-8938-2dd8b62ae5b2",
+      "result_id": "cde61faf-f614-4d1e-ab96-8ce4c47780ea"
+    },
+    {
+      "claim_id": "9a8b4ba3-9fcc-4c15-b1bd-020a462692ff",
+      "result_id": "cde61faf-f614-4d1e-ab96-8ce4c47780ea"
+    },
+    {
+      "claim_id": "70c8d3cf-bfa6-472a-b79b-b8985dc8a9f0",
+      "result_id": "cde61faf-f614-4d1e-ab96-8ce4c47780ea"
+    },
+    {
+      "claim_id": "69cf9e04-5294-4258-b231-b1902ca791fd",
+      "result_id": "cde61faf-f614-4d1e-ab96-8ce4c47780ea"
+    },
+    {
+      "claim_id": "6ed4cc9f-864e-41f2-aaec-bc5d579b6540",
+      "result_id": "cde61faf-f614-4d1e-ab96-8ce4c47780ea"
+    },
+    {
+      "claim_id": "8279dc54-ef78-48c2-ae83-28e36cfff352",
+      "result_id": "cde61faf-f614-4d1e-ab96-8ce4c47780ea"
+    },
+    {
+      "claim_id": "f7c88ab5-56fe-4fb9-9756-4bc1cc5fca82",
+      "result_id": "cde61faf-f614-4d1e-ab96-8ce4c47780ea"
+    },
+    {
+      "claim_id": "c5872b1e-fc75-46a2-a5b2-6887aa668ddf",
+      "result_id": "86aea95f-4455-460e-af34-3667672db61b"
+    },
+    {
+      "claim_id": "e20fba32-7656-409a-abed-bc9f4eef26e3",
+      "result_id": "86aea95f-4455-460e-af34-3667672db61b"
+    },
+    {
+      "claim_id": "9746a2e0-3bad-44ea-88d4-341c14fdd025",
+      "result_id": "86aea95f-4455-460e-af34-3667672db61b"
+    },
+    {
+      "claim_id": "6970398f-188c-46da-9c78-1267b671003a",
+      "result_id": "86aea95f-4455-460e-af34-3667672db61b"
+    },
+    {
+      "claim_id": "1b4a4527-7436-4a80-a095-63be740b17e3",
+      "result_id": "e140c571-26b8-4dd4-b03f-7ff8c7d2f1c6"
+    },
+    {
+      "claim_id": "d58a940d-83d9-4fe1-a391-adc4576d0dca",
+      "result_id": "e140c571-26b8-4dd4-b03f-7ff8c7d2f1c6"
+    },
+    {
+      "claim_id": "f02052bd-7cd4-4fd3-bfaa-483ce0452ddb",
+      "result_id": "e140c571-26b8-4dd4-b03f-7ff8c7d2f1c6"
+    },
+    {
+      "claim_id": "1539df42-c07a-4d5f-8753-288b6f71883e",
+      "result_id": "d3427f4c-8476-44d3-b880-17eed535dbfd"
+    },
+    {
+      "claim_id": "d0142e43-1dca-4858-934a-e2b6094a999d",
+      "result_id": "d3427f4c-8476-44d3-b880-17eed535dbfd"
+    },
+    {
+      "claim_id": "df37c9ff-54b6-45a7-a2b9-b50d53c71ae7",
+      "result_id": "d3427f4c-8476-44d3-b880-17eed535dbfd"
+    },
+    {
+      "claim_id": "7d34c710-8416-4205-aa3b-09be0e131b64",
+      "result_id": "d3427f4c-8476-44d3-b880-17eed535dbfd"
+    },
+    {
+      "claim_id": "375a2cea-e0a8-4ead-a65f-8ac4cbb2aac9",
+      "result_id": "d3427f4c-8476-44d3-b880-17eed535dbfd"
+    },
+    {
+      "claim_id": "8140b694-ce1e-4d4e-a475-e6696a743591",
+      "result_id": "d3427f4c-8476-44d3-b880-17eed535dbfd"
+    },
+    {
+      "claim_id": "00552710-4a53-466d-a80c-88c027dbd8c2",
+      "result_id": "86156c9b-a61a-4f6a-a685-9802c859aa12"
+    },
+    {
+      "claim_id": "1c60927a-8afd-47d5-a5f4-76011ec29fc3",
+      "result_id": "86156c9b-a61a-4f6a-a685-9802c859aa12"
+    },
+    {
+      "claim_id": "38c9cd02-1037-4be6-93af-344c53d895c0",
+      "result_id": "eb9f68f5-c6a4-4842-ab93-67027695f2b9"
+    },
+    {
+      "claim_id": "9f739416-cd4a-4843-beab-9d23dbd42754",
+      "result_id": "03f5fc74-940f-46c8-b493-35216da1174a"
+    },
+    {
+      "claim_id": "3cdd2ce7-e99d-422a-812f-1683bc16e95e",
+      "result_id": "03f5fc74-940f-46c8-b493-35216da1174a"
+    },
+    {
+      "claim_id": "737e800c-9cc9-487a-811c-79fefc77f4eb",
+      "result_id": "03f5fc74-940f-46c8-b493-35216da1174a"
+    },
+    {
+      "claim_id": "e70f1783-68ab-40d1-be8d-cedf0755193f",
+      "result_id": "f9aff9f9-7aa8-4c82-89ce-65edab921677"
+    },
+    {
+      "claim_id": "48fa0844-d9ea-4d08-b297-c203ab9ff041",
+      "result_id": "f9aff9f9-7aa8-4c82-89ce-65edab921677"
+    },
+    {
+      "claim_id": "3e265b20-5087-4627-9a2d-7eb3f257402c",
+      "result_id": "5f89f789-f6af-487a-bebf-75ea2aec583d"
+    },
+    {
+      "claim_id": "4322561f-a0b3-4ce0-8d09-8c2ad3ed5510",
+      "result_id": "5f89f789-f6af-487a-bebf-75ea2aec583d"
+    },
+    {
+      "claim_id": "e40ab2bb-504d-416b-86fc-8d58e193055c",
+      "result_id": "5f89f789-f6af-487a-bebf-75ea2aec583d"
+    },
+    {
+      "claim_id": "316b3ba1-234c-44e1-9e98-acccc784669f",
+      "result_id": "5f89f789-f6af-487a-bebf-75ea2aec583d"
+    },
+    {
+      "claim_id": "068cf635-7855-4698-b6f9-15630130d193",
+      "result_id": "5f89f789-f6af-487a-bebf-75ea2aec583d"
+    },
+    {
+      "claim_id": "80188edb-6e1e-4097-9277-c929cb53a0b8",
+      "result_id": "5f89f789-f6af-487a-bebf-75ea2aec583d"
+    },
+    {
+      "claim_id": "515db22d-0294-48e9-a2b4-1bc812150912",
+      "result_id": "6f3ef979-51cc-4f24-a3c1-78fd25eae37a"
+    },
+    {
+      "claim_id": "0376034c-bd3f-4e91-8471-5b1dfd51e994",
+      "result_id": "6f3ef979-51cc-4f24-a3c1-78fd25eae37a"
+    },
+    {
+      "claim_id": "78994be5-619c-4535-8bd4-2073aa0f7f82",
+      "result_id": "6f3ef979-51cc-4f24-a3c1-78fd25eae37a"
+    },
+    {
+      "claim_id": "4c99cfd0-8913-46ce-99ca-f87cdad3fdcf",
+      "result_id": "6f3ef979-51cc-4f24-a3c1-78fd25eae37a"
+    },
+    {
+      "claim_id": "aa98030f-4869-47fb-8632-7ceda8038fb9",
+      "result_id": "6f3ef979-51cc-4f24-a3c1-78fd25eae37a"
+    },
+    {
+      "claim_id": "a92ace28-93b1-4191-83a5-a49ad9526373",
+      "result_id": "6f3ef979-51cc-4f24-a3c1-78fd25eae37a"
+    },
+    {
+      "claim_id": "ac8babd9-9c80-44f7-a076-620998d5be08",
+      "result_id": "6f3ef979-51cc-4f24-a3c1-78fd25eae37a"
+    },
+    {
+      "claim_id": "4b2d30e3-c4cc-4ba1-8252-bafad0a4857a",
+      "result_id": "6f3ef979-51cc-4f24-a3c1-78fd25eae37a"
+    },
+    {
+      "claim_id": "a5dd73be-cc26-453d-a7b6-90f89f76bfb0",
+      "result_id": "6f3ef979-51cc-4f24-a3c1-78fd25eae37a"
+    },
+    {
+      "claim_id": "20d6d12f-9067-42c6-b64e-f8d378253321",
+      "result_id": "aa89e081-0a74-4b17-b37e-5c495df49802"
+    },
+    {
+      "claim_id": "c4fa42ba-6046-4de8-bd8d-8128262b0ca4",
+      "result_id": "aa89e081-0a74-4b17-b37e-5c495df49802"
+    },
+    {
+      "claim_id": "9f01582a-b2d5-4388-857d-8de4d7af3d52",
+      "result_id": "aa89e081-0a74-4b17-b37e-5c495df49802"
+    },
+    {
+      "claim_id": "572f31f0-0499-4d0b-b042-9a88ff883cc4",
+      "result_id": "aa89e081-0a74-4b17-b37e-5c495df49802"
+    },
+    {
+      "claim_id": "ffdb9a56-bb69-439a-a3de-ed4a3cb88fca",
+      "result_id": "aa89e081-0a74-4b17-b37e-5c495df49802"
+    },
+    {
+      "claim_id": "32ce658f-5801-4674-ac52-ca894239a19f",
+      "result_id": "aa89e081-0a74-4b17-b37e-5c495df49802"
+    },
+    {
+      "claim_id": "4db5bebe-81a3-4766-988b-21eb84102b81",
+      "result_id": "aa89e081-0a74-4b17-b37e-5c495df49802"
+    },
+    {
+      "claim_id": "9d839da4-be8f-4943-a247-b0ddcae3ae85",
+      "result_id": "aa89e081-0a74-4b17-b37e-5c495df49802"
+    },
+    {
+      "claim_id": "c064e58a-ecab-4156-8852-63336c46023b",
+      "result_id": "aa89e081-0a74-4b17-b37e-5c495df49802"
+    },
+    {
+      "claim_id": "f5ec27f5-6dc5-4d7d-93ce-7ec50d6f697f",
+      "result_id": "aa89e081-0a74-4b17-b37e-5c495df49802"
+    }
+  ],
+  "comparisons": []
+}
